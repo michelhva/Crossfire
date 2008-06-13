@@ -36,17 +36,17 @@ public abstract class GUILabel extends AbstractLabel
     /**
      * The font for rendering the label text.
      */
-    private final Font font;
+    private final Font textFont;
 
     /**
      * The text color.
      */
-    private final Color color;
+    private final Color textColor;
 
     /**
      * The text alignment.
      */
-    private final Alignment alignment;
+    private final Alignment textAlignment;
 
     /**
      * The text alignment.
@@ -81,20 +81,20 @@ public abstract class GUILabel extends AbstractLabel
      * @param picture The background image; <code>null</code> for no
      * background.
      *
-     * @param font The font for rendering the label text.
+     * @param textFont The font for rendering the label text.
      *
-     * @param color The font color.
+     * @param textColor The font color.
      *
      * @param backgroundColor The background color.
      *
-     * @param alignment The text alignment.
+     * @param textAlignment The text alignment.
      */
-    protected GUILabel(final JXCWindow window, final String name, final int x, final int y, final int w, final int h, final BufferedImage picture, final Font font, final Color color, final Color backgroundColor, final Alignment alignment)
+    protected GUILabel(final JXCWindow window, final String name, final int x, final int y, final int w, final int h, final BufferedImage picture, final Font textFont, final Color textColor, final Color backgroundColor, final Alignment textAlignment)
     {
         super(window, name, x, y, w, h, picture, backgroundColor);
-        this.font = font;
-        this.color = color;
-        this.alignment = alignment;
+        this.textFont = textFont;
+        this.textColor = textColor;
+        this.textAlignment = textAlignment;
     }
 
     /** {@inheritDoc} */
@@ -118,17 +118,17 @@ public abstract class GUILabel extends AbstractLabel
      */
     protected int drawLine(final Graphics2D g, final int y0, final int h0, final String text)
     {
-        if (font == null)
+        if (textFont == null)
         {
             return 0;
         }
 
         g.setBackground(new Color(0, 0, 0, 0.0f));
-        g.setFont(font);
-        g.setColor(color);
-        final Rectangle2D rect = font.getStringBounds(text, g.getFontRenderContext());
+        g.setFont(textFont);
+        g.setColor(textColor);
+        final Rectangle2D rect = textFont.getStringBounds(text, g.getFontRenderContext());
         final int y = y0+(int)Math.round((h0-rect.getMaxY()-rect.getMinY()))/2;
-        switch (alignment)
+        switch (textAlignment)
         {
         case LEFT:
             g.drawString(text, 0, y);
@@ -151,8 +151,8 @@ public abstract class GUILabel extends AbstractLabel
      *
      * @return The font.
      */
-    protected Font getFont()
+    protected Font getTextFont()
     {
-        return font;
+        return textFont;
     }
 }

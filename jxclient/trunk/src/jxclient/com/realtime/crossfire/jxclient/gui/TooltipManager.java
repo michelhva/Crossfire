@@ -162,24 +162,24 @@ public class TooltipManager
         final String tooltipText = activeGuiElement.getTooltipText();
         if (tooltipText == null)
         {
-            tooltip.setVisible(false);
+            tooltip.setElementVisible(false);
             return;
         }
 
-        tooltip.setVisible(true);
+        tooltip.setElementVisible(true);
         tooltip.setText(tooltipText);
 
-        final int tx = Math.max(0, Math.min(activeGuiElement.getX()+activeGuiElement.getWidth()/2-tooltip.getWidth()/2, window.getWindowWidth()-tooltip.getWidth()));
+        final int tx = Math.max(0, Math.min(activeGuiElement.setElementX()+activeGuiElement.getWidth()/2-tooltip.getWidth()/2, window.getWindowWidth()-tooltip.getWidth()));
         final int ty;
-        if (activeGuiElement.getY()+activeGuiElement.getHeight()+TOOLTIP_DISTANCE+tooltip.getHeight() <= window.getWindowHeight())
+        if (activeGuiElement.setElementY()+activeGuiElement.getHeight()+TOOLTIP_DISTANCE+tooltip.getHeight() <= window.getWindowHeight())
         {
-            ty = activeGuiElement.getY()+activeGuiElement.getHeight()+TOOLTIP_DISTANCE;
+            ty = activeGuiElement.setElementY()+activeGuiElement.getHeight()+TOOLTIP_DISTANCE;
         }
         else
         {
-            ty = activeGuiElement.getY()-tooltip.getHeight()-TOOLTIP_DISTANCE;
+            ty = activeGuiElement.setElementY()-tooltip.getHeight()-TOOLTIP_DISTANCE;
         }
-        tooltip.setLocation(tx, ty);
+        tooltip.setElementLocation(tx, ty);
     }
 
     /**
@@ -189,7 +189,7 @@ public class TooltipManager
     {
         if (tooltip != null)
         {
-            tooltip.setVisible(false);
+            tooltip.setElementVisible(false);
         }
     }
 }

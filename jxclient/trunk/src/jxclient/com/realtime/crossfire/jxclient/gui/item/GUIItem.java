@@ -73,9 +73,9 @@ public abstract class GUIItem extends ActivatableGUIElement implements GUIScroll
         setChanged();
     }
 
-    @Override public void setVisible(final boolean visible)
+    @Override public void setElementVisible(final boolean visible)
     {
-        super.setVisible(visible);
+        super.setElementVisible(visible);
         setChanged();
     }
 }

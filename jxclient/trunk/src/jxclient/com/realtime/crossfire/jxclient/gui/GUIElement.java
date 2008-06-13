@@ -160,12 +160,12 @@ public abstract class GUIElement
         return name;
     }
 
-    public int getX()
+    public int setElementX()
     {
         return gui != null ? gui.getX()+x : x;
     }
 
-    public int getY()
+    public int setElementY()
     {
         return gui != null ? gui.getY()+y : y;
     }
@@ -180,12 +180,12 @@ public abstract class GUIElement
         return h;
     }
 
-    public boolean isVisible()
+    public boolean isElementVisible()
     {
         return visible;
     }
 
-    public void setVisible(final boolean visible)
+    public void setElementVisible(final boolean visible)
     {
         if (this.visible != visible)
         {
@@ -390,7 +390,7 @@ public abstract class GUIElement
      *
      * @param y The new y-coordinate.
      */
-    public void setLocation(final int x, final int y)
+    public void setElementLocation(final int x, final int y)
     {
         if (this.x != x || this.y != y)
         {
@@ -407,7 +407,7 @@ public abstract class GUIElement
      *
      * @param h The new height.
      */
-    public void setSize(final int w, final int h)
+    public void setElementSize(final int w, final int h)
     {
         if (this.w != w || this.h != h)
         {
@@ -478,7 +478,7 @@ public abstract class GUIElement
                 render();
             }
 
-            g.drawImage(bufferedImage, getX(), getY(), window);
+            g.drawImage(bufferedImage, setElementX(), setElementY(), window);
         }
     }
 }
