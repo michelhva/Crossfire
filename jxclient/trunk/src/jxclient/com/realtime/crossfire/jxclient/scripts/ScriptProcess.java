@@ -147,19 +147,19 @@ public class ScriptProcess extends Thread
         return filename;
     }
 
-    private static void cmd_watch(final String cmdline)
+    private static void cmdWatch(final String cmdline)
     {
         final String parms = cmdline.substring(6);
         System.out.println(" - Watch   :"+parms);
     }
 
-    private static void cmd_unwatch(final String cmdline)
+    private static void cmdUnwatch(final String cmdline)
     {
         final String parms = cmdline.substring(8);
         System.out.println(" - Unwatch :"+parms);
     }
 
-    private void cmd_request(final String cmdline)
+    private void cmdRequest(final String cmdline)
     {
         final String parms = cmdline.substring(8);
         System.out.println(" - Request :"+parms);
@@ -266,15 +266,15 @@ public class ScriptProcess extends Thread
     {
         if (cmdline.startsWith("watch "))
         {
-            cmd_watch(cmdline);
+            cmdWatch(cmdline);
         }
         else if (cmdline.startsWith("unwatch "))
         {
-            cmd_unwatch(cmdline);
+            cmdUnwatch(cmdline);
         }
         else if (cmdline.startsWith("request "))
         {
-            cmd_request(cmdline);
+            cmdRequest(cmdline);
         }
         else if (cmdline.startsWith("issue mark "))
         {
