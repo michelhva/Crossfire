@@ -354,7 +354,7 @@ public class GUIMagicMap extends GUIElement
         }
         if (map.isFogOfWar(x, y) || x < 0 || y < 0 || x >= mapWidth || y >= mapHeight)
         {
-            g.setColor(GUIMap.fogOfWarColor);
+            g.setColor(GUIMap.FOG_OF_WAR_COLOR);
             g.fillRect(x*TILE_SIZE+offsetX, y*TILE_SIZE+offsetY, TILE_SIZE, TILE_SIZE);
         }
         final int darkness = map.getDarkness(x, y);

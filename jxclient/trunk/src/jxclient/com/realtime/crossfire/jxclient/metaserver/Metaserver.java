@@ -48,9 +48,9 @@ public class Metaserver
      */
     public static final long EXPIRE_INTERVAL = 60*60*24*2;
 
-    private static final String metaserver_name = "crossfire.real-time.com";
+    private static final String METASERVER_NAME = "crossfire.real-time.com";
 
-    private static final int metaserver_port = 13326;
+    private static final int METASERVER_PORT = 13326;
 
     private final List<MetaserverEntry> metalist = new ArrayList<MetaserverEntry>();
 
@@ -160,7 +160,7 @@ public class Metaserver
         parseEntry(oldEntries, "127.0.0.1|0|localhost|0|--|Local server. Start server before you try to connect.|0|0|0");
         try
         {
-            final Socket socket = new Socket(metaserver_name, metaserver_port);
+            final Socket socket = new Socket(METASERVER_NAME, METASERVER_PORT);
             try
             {
                 final DataInputStream in = new DataInputStream(socket.getInputStream());

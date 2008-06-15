@@ -54,7 +54,7 @@ public class GUIMap extends GUIElement
     /**
      * The color to use for overlaying fog-of-war tiles.
      */
-    public static final Color fogOfWarColor = new Color(0, 0, 0.5F, 0.5F);
+    public static final Color FOG_OF_WAR_COLOR = new Color(0, 0, 0.5F, 0.5F);
 
     /**
      * The minimum darkness alpha value; it is used for completely black tiles.
@@ -404,7 +404,7 @@ public class GUIMap extends GUIElement
         redrawSquare(g, px, py, mapSquare);
         if (map.isFogOfWar(x, y))
         {
-            g.setColor(fogOfWarColor);
+            g.setColor(FOG_OF_WAR_COLOR);
             g.fillRect(offsetX+x*tileSize, offsetY+y*tileSize, tileSize, tileSize);
         }
         final int darkness = map.getDarkness(x, y);

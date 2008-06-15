@@ -28,7 +28,7 @@ public class HexCodec
     /**
      * Hex characters for values 0-15.
      */
-    private static final String hexChars = "0123456789abcdef";
+    private static final String HEX_CHARS = "0123456789abcdef";
 
     /**
      * Private constructor to prevent instantiation.
@@ -44,8 +44,8 @@ public class HexCodec
      */
     public static void hexEncode2(final StringBuilder sb, final int value)
     {
-        sb.append(hexChars.charAt((value>>4)&15));
-        sb.append(hexChars.charAt(value&15));
+        sb.append(HEX_CHARS.charAt((value>>4)&15));
+        sb.append(HEX_CHARS.charAt(value&15));
     }
 
     /**

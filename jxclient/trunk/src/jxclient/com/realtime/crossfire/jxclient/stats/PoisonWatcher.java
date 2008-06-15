@@ -46,12 +46,12 @@ public class PoisonWatcher
     /**
      * The text message the server sends in poisoned state.
      */
-    private static final String assertMessage = "You feel very sick...";
+    private static final String ASSERT_MESSAGE = "You feel very sick...";
 
     /**
      * The text message the server sends when the poison wears off.
      */
-    private static final String deassertMessage = "You feel much better now.";
+    private static final String DEASSERT_MESSAGE = "You feel much better now.";
 
     /**
      * The object used for synchronization.
@@ -127,11 +127,11 @@ public class PoisonWatcher
      */
     private void check(final String message)
     {
-        if (message.equals(assertMessage))
+        if (message.equals(ASSERT_MESSAGE))
         {
             setActive(true);
         }
-        else if (message.equals(deassertMessage))
+        else if (message.equals(DEASSERT_MESSAGE))
         {
             setActive(false);
         }
