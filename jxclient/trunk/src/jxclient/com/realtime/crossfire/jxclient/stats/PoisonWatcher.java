@@ -54,6 +54,11 @@ public class PoisonWatcher
     private static final String deassertMessage = "You feel much better now.";
 
     /**
+     * The object used for synchronization.
+     */
+    private final Object sync = new Object();
+
+    /**
      * The stats instance to notify.
      */
     private final Stats stats;
@@ -139,7 +144,7 @@ public class PoisonWatcher
      */
     private void setActive(final boolean active)
     {
-        synchronized (this)
+        synchronized (sync)
         {
             if (active)
             {
