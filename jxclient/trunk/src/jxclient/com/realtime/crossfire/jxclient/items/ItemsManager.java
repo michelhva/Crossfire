@@ -173,7 +173,7 @@ public class ItemsManager
         {
             removeItem(item);
         }
-        assert items.size() == 0;
+        assert items.isEmpty();
         fireEvents();
         currentFloorManager.setCurrentFloor(0);
         floorManager.reset();
