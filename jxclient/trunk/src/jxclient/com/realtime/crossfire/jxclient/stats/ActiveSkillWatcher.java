@@ -35,6 +35,11 @@ import com.realtime.crossfire.jxclient.server.CrossfireServerConnection;
 public class ActiveSkillWatcher
 {
     /**
+     * The object used for synchronization.
+     */
+    private final Object sync = new Object();
+
+    /**
      * The stats instance to notify.
      */
     private final Stats stats;
@@ -144,7 +149,7 @@ public class ActiveSkillWatcher
             normalizedActiveSkill = activeSkill;
         }
 
-        synchronized (this)
+        synchronized (sync)
         {
             if (this.activeSkill.equals(normalizedActiveSkill))
             {
