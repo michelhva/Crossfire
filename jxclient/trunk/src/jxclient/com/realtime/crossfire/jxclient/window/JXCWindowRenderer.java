@@ -367,7 +367,7 @@ public class JXCWindowRenderer
         }
 
         dialog.setAutoCloseOnDeactivate(false);
-        if (openDialogs.size() > 0 && openDialogs.get(openDialogs.size()-1) == dialog)
+        if (!openDialogs.isEmpty() && openDialogs.get(openDialogs.size()-1) == dialog)
         {
             return false;
         }
@@ -394,7 +394,7 @@ public class JXCWindowRenderer
             return;
         }
 
-        if (openDialogs.size() > 0 && openDialogs.get(openDialogs.size()-1) == dialog)
+        if (!openDialogs.isEmpty() && openDialogs.get(openDialogs.size()-1) == dialog)
         {
             return;
         }
