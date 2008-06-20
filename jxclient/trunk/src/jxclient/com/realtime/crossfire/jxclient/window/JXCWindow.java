@@ -226,8 +226,6 @@ public class JXCWindow extends JFrame implements KeyListener, CrossfireDrawextin
     public static final int KEY_SHIFT_ALT = 2;
     public static final int KEY_SHIFT_ALTGR = 3;
 
-    private boolean isRunActive = false;
-
     /**
      * The semaphore used to synchronized map model updates and map view
      * redraws.
@@ -335,7 +333,7 @@ public class JXCWindow extends JFrame implements KeyListener, CrossfireDrawextin
         @Override public void windowLostFocus(final WindowEvent e)
         {
             Arrays.fill(keyShift, false);
-            stopRunning();
+            commandQueue.stopRunning();
         }
     };
 
@@ -467,11 +465,6 @@ public class JXCWindow extends JFrame implements KeyListener, CrossfireDrawextin
         addWindowFocusListener(windowFocusListener);
         addWindowListener(windowListener);
         updateTitle();
-    }
-
-    public boolean checkRun()
-    {
-        return isRunActive;
     }
 
     public static boolean checkFire()
@@ -852,162 +845,6 @@ public class JXCWindow extends JFrame implements KeyListener, CrossfireDrawextin
 
         switch (e.getKeyCode())
         {
-        case KeyEvent.VK_KP_UP:
-        case KeyEvent.VK_UP:
-        case KeyEvent.VK_NUMPAD8:
-            if (getKeyShift(KEY_SHIFT_CTRL))
-            {
-                commandQueue.sendNcom(false, 0, "run 1");
-                isRunActive = true;
-            }
-            else if (getKeyShift(KEY_SHIFT_SHIFT))
-            {
-                commandQueue.sendNcom(false, "north f");
-            }
-            else
-            {
-                commandQueue.sendNcom(false, 0, "north");
-            }
-            break;
-
-        case KeyEvent.VK_PAGE_UP:
-        case KeyEvent.VK_NUMPAD9:
-            if (getKeyShift(KEY_SHIFT_CTRL))
-            {
-                commandQueue.sendNcom(false, 0, "run 2");
-                isRunActive = true;
-            }
-            else if (getKeyShift(KEY_SHIFT_SHIFT))
-            {
-                commandQueue.sendNcom(false, "northeast f");
-            }
-            else
-            {
-                commandQueue.sendNcom(false, 0, "northeast");
-            }
-            break;
-
-        case KeyEvent.VK_KP_RIGHT:
-        case KeyEvent.VK_RIGHT:
-        case KeyEvent.VK_NUMPAD6:
-            if (getKeyShift(KEY_SHIFT_CTRL))
-            {
-                commandQueue.sendNcom(false, 0, "run 3");
-                isRunActive = true;
-            }
-            else if (getKeyShift(KEY_SHIFT_SHIFT))
-            {
-                commandQueue.sendNcom(false, "east f");
-            }
-            else
-            {
-                commandQueue.sendNcom(false, 0, "east");
-            }
-            break;
-
-        case KeyEvent.VK_PAGE_DOWN:
-        case KeyEvent.VK_NUMPAD3:
-            if (getKeyShift(KEY_SHIFT_CTRL))
-            {
-                commandQueue.sendNcom(false, 0, "run 4");
-                isRunActive = true;
-            }
-            else if (getKeyShift(KEY_SHIFT_SHIFT))
-            {
-                commandQueue.sendNcom(false, "southeast f");
-            }
-            else
-            {
-                commandQueue.sendNcom(false, 0, "southeast");
-            }
-            break;
-
-        case KeyEvent.VK_KP_DOWN:
-        case KeyEvent.VK_DOWN:
-        case KeyEvent.VK_NUMPAD2:
-            if (getKeyShift(KEY_SHIFT_CTRL))
-            {
-                commandQueue.sendNcom(false, 0, "run 5");
-                isRunActive = true;
-            }
-            else if (getKeyShift(KEY_SHIFT_SHIFT))
-            {
-                commandQueue.sendNcom(false, "south f");
-            }
-            else
-            {
-                commandQueue.sendNcom(false, 0, "south");
-            }
-            break;
-
-        case KeyEvent.VK_END:
-        case KeyEvent.VK_NUMPAD1:
-            if (getKeyShift(KEY_SHIFT_CTRL))
-            {
-                commandQueue.sendNcom(false, 0, "run 6");
-                isRunActive = true;
-            }
-            else if (getKeyShift(KEY_SHIFT_SHIFT))
-            {
-                commandQueue.sendNcom(false, "southwest f");
-            }
-            else
-            {
-                commandQueue.sendNcom(false, 0, "southwest");
-            }
-            break;
-
-        case KeyEvent.VK_KP_LEFT:
-        case KeyEvent.VK_LEFT:
-        case KeyEvent.VK_NUMPAD4:
-            if (getKeyShift(KEY_SHIFT_CTRL))
-            {
-                commandQueue.sendNcom(false, 0, "run 7");
-                isRunActive = true;
-            }
-            else if (getKeyShift(KEY_SHIFT_SHIFT))
-            {
-                commandQueue.sendNcom(false, "west f");
-            }
-            else
-            {
-                commandQueue.sendNcom(false, 0, "west");
-            }
-            break;
-
-        case KeyEvent.VK_HOME:
-        case KeyEvent.VK_NUMPAD7:
-            if (getKeyShift(KEY_SHIFT_CTRL))
-            {
-                commandQueue.sendNcom(false, 0, "run 8");
-                isRunActive = true;
-            }
-            else if (getKeyShift(KEY_SHIFT_SHIFT))
-            {
-                commandQueue.sendNcom(false, "northwest f");
-            }
-            else
-            {
-                commandQueue.sendNcom(false, 0, "northwest");
-            }
-            break;
-
-        case KeyEvent.VK_BEGIN:
-        case KeyEvent.VK_NUMPAD5:
-            if (getKeyShift(KEY_SHIFT_CTRL))
-            {
-                // ignore
-            }
-            else if (getKeyShift(KEY_SHIFT_SHIFT))
-            {
-                commandQueue.sendNcom(false, "stay f");
-            }
-            else
-            {
-                commandQueue.sendNcom(false, 0, "stay");
-            }
-            break;
-
         case KeyEvent.VK_0:
             commandQueue.addToRepeatCount(0);
             break;
@@ -1073,69 +910,6 @@ public class JXCWindow extends JFrame implements KeyListener, CrossfireDrawextin
         if (skin.getDefaultKeyBindings().handleKeyTyped(e))
         {
             return;
-        }
-
-        switch (e.getKeyChar())
-        {
-        case 'a':
-            commandQueue.sendNcom(false, "apply");
-            break;
-
-        case 'd':
-            commandQueue.sendNcom(false, "use_skill disarm traps");
-            break;
-
-        case 'e':
-            commandQueue.sendNcom(false, "examine");
-            break;
-
-        case 'i':
-            commandQueue.sendNcom(false, "mapinfo");
-            break;
-
-        case 'j':
-            commandQueue.sendNcom(false, "use_skill jumping");
-            break;
-
-        case 'm':
-            activateCommandInput("maps ");
-            break;
-
-        case 's':
-            commandQueue.sendNcom(false, "use_skill find traps");
-            break;
-
-        case 'p':
-            commandQueue.sendNcom(false, "use_skill praying");
-            break;
-
-        case 't':
-            commandQueue.sendNcom(false, "ready_skill throwing");
-            break;
-
-        case 'w':
-            commandQueue.sendNcom(false, "who");
-            break;
-
-        case '?':
-            commandQueue.sendNcom(false, "help");
-            break;
-
-        case ',':
-            commandQueue.sendNcom(false, "get");
-            break;
-
-        case '/':
-        case '\'':
-            activateCommandInput();
-            break;
-
-        case '"':
-            activateCommandInput("say ");
-            break;
-
-        default:
-            break;
         }
     }
 
@@ -1303,23 +1077,8 @@ public class JXCWindow extends JFrame implements KeyListener, CrossfireDrawextin
         setKeyShift(KEY_SHIFT_ALTGR, (mask&InputEvent.ALT_GRAPH_DOWN_MASK) != 0);
         if (!getKeyShift(KEY_SHIFT_CTRL))
         {
-            stopRunning();
+            commandQueue.stopRunning();
         }
-    }
-
-    /**
-     * Tell the server to stop running. If the character is not running, do
-     * nothing.
-     */
-    private void stopRunning()
-    {
-        if (!isRunActive)
-        {
-            return;
-        }
-
-        commandQueue.sendNcom(true, 0, "run_stop");
-        isRunActive = false;
     }
 
     public void commandDrawextinfoReceived(final CrossfireCommandDrawextinfoEvent evt)

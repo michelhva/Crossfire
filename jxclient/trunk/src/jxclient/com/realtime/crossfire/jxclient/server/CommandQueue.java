@@ -53,6 +53,12 @@ public class CommandQueue
     private int repeatCount = 0;
 
     /**
+     * Whether a "run" command has been sent without a following "run_stop"
+     * command.
+     */
+    private boolean isRunning = false;
+
+    /**
      * The listener to track comc commands.
      */
     private final CrossfireComcListener crossfireComcListener = new CrossfireComcListener()
@@ -130,7 +136,11 @@ public class CommandQueue
     public void clear()
     {
         resetRepeatCount();
-        pendingCommands.clear();
+        synchronized (pendingCommands)
+        {
+            pendingCommands.clear();
+            isRunning = false;
+        }
     }
 
     /**
@@ -172,6 +182,37 @@ public class CommandQueue
 
             final int packetNo = crossfireServerConnection.sendNcom(repeat, command);
             pendingCommands.add(packetNo);
+
+            if (command.startsWith("run "))
+            {
+                isRunning = true;
+            }
+            else if (command.startsWith("run_stop"))
+            {
+                isRunning = false;
+            }
         }
+    }
+
+    /**
+     * Tell the server to stop running. If the character is not running, do
+     * nothing.
+     */
+    public void stopRunning()
+    {
+        if (isRunning)
+        {
+            sendNcom(true, 0, "run_stop");
+            assert !isRunning;
+        }
+    }
+
+    /**
+     * Returns whether the character is running.
+     * @return whether the character is running
+     */
+    public boolean checkRun()
+    {
+        return isRunning;
     }
 }
