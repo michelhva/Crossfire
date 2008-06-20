@@ -454,7 +454,7 @@ public class JXCWindow extends JFrame implements KeyListener, CrossfireDrawextin
         windowRenderer.init(commands);
         queryDialog = new Gui(this, mouseTracker, commands);
         keybindDialog = new Gui(this, mouseTracker, commands);
-        keyBindings = new KeyBindings(Filenames.getKeybindingsFile(null, null), commands);
+        keyBindings = new KeyBindings(Filenames.getKeybindingsFile(null, null), commands, this);
         try
         {
             characterPickup = new Pickup(commandQueue, optionManager);
@@ -1538,10 +1538,10 @@ public class JXCWindow extends JFrame implements KeyListener, CrossfireDrawextin
      *
      * @param newText the new command text if non-<code>null</code>
      */
-    private void activateCommandInput(final String newText)
+    public void activateCommandInput(final String newText)
     {
         final GUIText textArea = activateCommandInput();
-        if (textArea != null && newText != null)
+        if (textArea != null && newText != null && newText.length() > 0)
         {
             textArea.setText(newText);
         }
@@ -1798,7 +1798,7 @@ public class JXCWindow extends JFrame implements KeyListener, CrossfireDrawextin
 
         if (hostname != null && character != null)
         {
-            characterKeyBindings = new KeyBindings(Filenames.getKeybindingsFile(hostname, character), commands);
+            characterKeyBindings = new KeyBindings(Filenames.getKeybindingsFile(hostname, character), commands, this);
             try
             {
                 characterKeyBindings.loadKeyBindings(this);
