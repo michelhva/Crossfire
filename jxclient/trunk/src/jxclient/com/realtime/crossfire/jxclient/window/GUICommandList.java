@@ -19,6 +19,7 @@
 //
 package com.realtime.crossfire.jxclient.window;
 
+import com.realtime.crossfire.jxclient.gui.commands.ActivateCommandInputCommand;
 import com.realtime.crossfire.jxclient.gui.commands.ExecuteCommandCommand;
 import com.realtime.crossfire.jxclient.gui.commands.GUICommand;
 import java.util.ArrayList;
@@ -139,7 +140,16 @@ public class GUICommandList
         boolean firstCommand = true;
         for (final GUICommand guiCommand : commandList)
         {
-            if (!(guiCommand instanceof ExecuteCommandCommand))
+            final String commandString;
+            if (guiCommand instanceof ExecuteCommandCommand)
+            {
+                commandString = ((ExecuteCommandCommand)guiCommand).getCommand();
+            }
+            else if (guiCommand instanceof ActivateCommandInputCommand)
+            {
+                commandString = "-e "+((ActivateCommandInputCommand)guiCommand).getCommandText();
+            }
+            else
             {
                 throw new AssertionError("Cannot encode command of type "+guiCommand.getClass().getName());
             }
@@ -152,7 +162,7 @@ public class GUICommandList
             {
                 sb.append(';');
             }
-            sb.append(((ExecuteCommandCommand)guiCommand).getCommand());
+            sb.append(commandString);
         }
         return sb.toString();
     }
