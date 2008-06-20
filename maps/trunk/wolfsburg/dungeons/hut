@@ -7,7 +7,7 @@ height 16
 enter_x 3
 enter_y 3
 msg
-Modified: 2008-05-23 Arvid Norlander
+Modified: 2008-06-20 Arvid Norlander
 endmsg
 end
 arch woodfloor
@@ -739,6 +739,7 @@ hp 5
 sp 2
 x 7
 y 10
+is_animated 0
 end
 arch woodfloor
 x 7
@@ -941,13 +942,14 @@ x 9
 y 10
 end
 arch teleporter
-name woodfloor
+name wood floor
 slaying hut
 face woodfloor.111
 hp 7
 sp 6
 x 9
 y 10
+is_animated 0
 end
 arch woodfloor
 x 9
