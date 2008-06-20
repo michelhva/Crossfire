@@ -19,7 +19,6 @@
 //
 package com.realtime.crossfire.jxclient.window;
 
-import com.realtime.crossfire.jxclient.commands.Commands;
 import com.realtime.crossfire.jxclient.gui.commands.ExecuteCommandCommand;
 import com.realtime.crossfire.jxclient.gui.commands.GUICommand;
 import java.util.ArrayList;
@@ -62,23 +61,6 @@ public class GUICommandList
     public GUICommandList(final Type type)
     {
         this.type = type;
-    }
-
-    /**
-     * Create a new instance from a string. The passed string contains a list
-     * of commands to be sent to the server. The commands are separated by ';'
-     * characters.
-     *
-     * @param type The command list type.
-     *
-     * @param commandList The commands.
-     *
-     * @param commands the commands instance to execute the commands
-     */
-    public GUICommandList(final Type type, final String commandList, final Commands commands)
-    {
-        this(type);
-        this.commandList.add(new ExecuteCommandCommand(commands, commandList));
     }
 
     /**

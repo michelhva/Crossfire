@@ -24,6 +24,7 @@ import com.realtime.crossfire.jxclient.server.CrossfireServerConnection;
 import com.realtime.crossfire.jxclient.settings.options.OptionManager;
 import com.realtime.crossfire.jxclient.stats.Stats;
 import com.realtime.crossfire.jxclient.util.Patterns;
+import com.realtime.crossfire.jxclient.util.StringUtils;
 import com.realtime.crossfire.jxclient.window.JXCWindow;
 import com.realtime.crossfire.jxclient.window.JXCWindowRenderer;
 import java.util.HashMap;
@@ -74,8 +75,7 @@ public class Commands
      */
     public void executeCommand(final String commands)
     {
-
-        String cmds = commands.trim();
+        String cmds = StringUtils.trimLeading(commands);
         while (cmds.length() > 0)
         {
             final String[] cmd = cmds.split(" *; *", 2);
@@ -108,7 +108,7 @@ public class Commands
             return false;
         }
 
-        final String[] args = Patterns.patternWhitespace.split(command.trim(), 2);
+        final String[] args = Patterns.patternWhitespace.split(StringUtils.trimLeading(command), 2);
         final Command cmd = commands.get(args[0]);
         if (cmd == null)
         {
@@ -123,7 +123,7 @@ public class Commands
         }
 
         assert commandList.startsWith(command);
-        final String[] argsList = Patterns.patternWhitespace.split(commandList.trim(), 2);
+        final String[] argsList = Patterns.patternWhitespace.split(StringUtils.trimLeading(commandList), 2);
         assert argsList[0].equals(args[0]);
 
         cmd.execute(argsList.length >= 2 ? argsList[1] : "");

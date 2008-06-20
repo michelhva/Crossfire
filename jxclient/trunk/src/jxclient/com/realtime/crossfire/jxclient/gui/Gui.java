@@ -133,7 +133,7 @@ public class Gui
     {
         this.window = window;
         this.mouseTracker = mouseTracker;
-        keyBindings = new KeyBindings(null, commands);
+        keyBindings = new KeyBindings(null, commands, window);
     }
 
     /**

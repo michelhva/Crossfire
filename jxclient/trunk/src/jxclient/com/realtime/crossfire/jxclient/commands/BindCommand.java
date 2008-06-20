@@ -19,7 +19,9 @@
 //
 package com.realtime.crossfire.jxclient.commands;
 
+import com.realtime.crossfire.jxclient.gui.commands.GUICommandFactory;
 import com.realtime.crossfire.jxclient.server.CrossfireServerConnection;
+import com.realtime.crossfire.jxclient.util.StringUtils;
 import com.realtime.crossfire.jxclient.window.GUICommandList;
 import com.realtime.crossfire.jxclient.window.JXCWindow;
 
@@ -75,7 +77,7 @@ public class BindCommand extends AbstractCommand
         else if (args.startsWith("-c "))
         {
             perCharacterBinding = true;
-            commandList = args.substring(3).trim();
+            commandList = StringUtils.trimLeading(args.substring(3));
         }
         else
         {
@@ -89,7 +91,9 @@ public class BindCommand extends AbstractCommand
             return;
         }
 
-        if (!window.createKeyBinding(perCharacterBinding, new GUICommandList(GUICommandList.Type.AND, commandList, commands)))
+        final GUICommandList commandList2 = new GUICommandList(GUICommandList.Type.AND);
+        commandList2.add(GUICommandFactory.createCommand(commandList, window, commands));
+        if (!window.createKeyBinding(perCharacterBinding, commandList2))
         {
             drawInfoError("Cannot use bind -c since no character is logged in.");
             return;
