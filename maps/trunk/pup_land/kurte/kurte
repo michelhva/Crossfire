@@ -6,7 +6,7 @@ width 23
 height 25
 msg
 Created:  1996-02-03
-Modified: 2008-05-23 Arvid Norlander
+Modified: 2008-06-20 Arvid Norlander
 endmsg
 end
 arch blocked
@@ -747,6 +747,7 @@ x 6
 y 8
 end
 arch key2
+slaying no_door
 x 6
 y 8
 end
@@ -821,6 +822,7 @@ x 6
 y 18
 end
 arch key2
+slaying no_door
 x 6
 y 18
 end
@@ -2269,6 +2271,7 @@ x 16
 y 8
 end
 arch key2
+slaying no_door
 x 16
 y 8
 end
@@ -2343,6 +2346,7 @@ x 16
 y 18
 end
 arch key2
+slaying no_door
 x 16
 y 18
 end
