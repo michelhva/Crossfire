@@ -91,7 +91,7 @@ public class BindCommand extends AbstractCommand
             return;
         }
 
-        final GUICommandList commandList2 = new GUICommandList(GUICommandList.Type.AND);
+        final GUICommandList commandList2 = new GUICommandList(GUICommandList.CommandType.AND);
         commandList2.add(GUICommandFactory.createCommand(commandList, window, commands));
         if (!window.createKeyBinding(perCharacterBinding, commandList2))
         {

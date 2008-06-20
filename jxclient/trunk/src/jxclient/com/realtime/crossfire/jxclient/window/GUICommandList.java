@@ -35,7 +35,7 @@ public class GUICommandList
     /**
      * The command list type.
      */
-    public enum Type
+    public enum CommandType
     {
         /** List is executed if all entries can execute. */
         AND,
@@ -47,7 +47,7 @@ public class GUICommandList
     /**
      * The command list type.
      */
-    private final Type type;
+    private final CommandType commandType;
 
     /**
      * The list of {@link GUICommand}s in execution order.
@@ -57,11 +57,11 @@ public class GUICommandList
     /**
      * Create a new instance as an empty command list.
      *
-     * @param type The command list type.
+     * @param commandType The command list type.
      */
-    public GUICommandList(final Type type)
+    public GUICommandList(final CommandType commandType)
     {
-        this.type = type;
+        this.commandType = commandType;
     }
 
     /**
@@ -80,7 +80,7 @@ public class GUICommandList
      */
     public boolean canExecute()
     {
-        switch (type)
+        switch (commandType)
         {
         case AND:
             for (final GUICommand command : commandList)
