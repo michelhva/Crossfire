@@ -845,6 +845,11 @@ public class JXCWindow extends JFrame implements KeyListener, CrossfireDrawextin
             return;
         }
 
+        if (skin.getDefaultKeyBindings().handleKeyPress(e))
+        {
+            return;
+        }
+
         switch (e.getKeyCode())
         {
         case KeyEvent.VK_KP_UP:
@@ -1061,6 +1066,11 @@ public class JXCWindow extends JFrame implements KeyListener, CrossfireDrawextin
         }
 
         if (keyBindings.handleKeyTyped(e))
+        {
+            return;
+        }
+
+        if (skin.getDefaultKeyBindings().handleKeyTyped(e))
         {
             return;
         }
@@ -1494,15 +1504,16 @@ public class JXCWindow extends JFrame implements KeyListener, CrossfireDrawextin
     {
         // check for skin in directory
         final File dir = new File(skinName);
+        final KeyBindings defaultKeyBindings = new KeyBindings(null, commands, this);
         final JXCSkin newSkin;
         if (dir.exists() && dir.isDirectory())
         {
-            newSkin = new JXCSkinDirLoader(itemsManager, spellsManager, facesManager, stats, mapUpdater, dir);
+            newSkin = new JXCSkinDirLoader(itemsManager, spellsManager, facesManager, stats, mapUpdater, dir, defaultKeyBindings);
         }
         else
         {
             // fallback: built-in resource
-            newSkin = new JXCSkinClassLoader(itemsManager, spellsManager, facesManager, stats, mapUpdater, "com/realtime/crossfire/jxclient/skins/"+skinName);
+            newSkin = new JXCSkinClassLoader(itemsManager, spellsManager, facesManager, stats, mapUpdater, "com/realtime/crossfire/jxclient/skins/"+skinName, defaultKeyBindings);
         }
         newSkin.load(server, this, mouseTracker, metaserver, commandQueue, resolution, optionManager, experienceTable, shortcuts, commands);
         return newSkin;
