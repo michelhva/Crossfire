@@ -231,7 +231,7 @@ public class ScriptProcess extends Thread
         }
         else if (parms.equals("flags"))
         {
-            commandSent((window.checkFire() ? "1" : "0")+","+(window.checkRun() ? "1" : "0"));
+            commandSent((window.checkFire() ? "1" : "0")+","+(commandQueue.checkRun() ? "1" : "0"));
         }
         else if (parms.equals("items inv"))
         {

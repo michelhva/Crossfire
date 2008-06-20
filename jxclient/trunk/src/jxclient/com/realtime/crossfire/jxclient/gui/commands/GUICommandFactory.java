@@ -22,6 +22,7 @@ package com.realtime.crossfire.jxclient.gui.commands;
 import com.realtime.crossfire.jxclient.commands.Commands;
 import com.realtime.crossfire.jxclient.util.StringUtils;
 import com.realtime.crossfire.jxclient.window.JXCWindow;
+import java.util.regex.Pattern;
 
 /**
  * Factory for creating {@link GUICommand} instances from string
@@ -31,10 +32,31 @@ import com.realtime.crossfire.jxclient.window.JXCWindow;
 public class GUICommandFactory
 {
     /**
+     * Pattern matching lines that need a {@link #TRAILING_ESCAPE} appended.
+     */
+    private static final Pattern patternEncode = Pattern.compile(".*[- \t]$");
+    /**
+     * Character appended to lines ending with whitespace.
+     */
+    private static final String TRAILING_ESCAPE = "-";
+
+    /**
      * Private constructor to prevent instantiation.
      */
     private GUICommandFactory()
     {
+    }
+
+    /**
+     * Create a new {@link GUICommand} instance from string representation.
+     * @param encodedCommandString the command string representation
+     * @param window the window instance to use
+     * @param commands the commands instance to use
+     * @return the new command instance
+     */
+    public static GUICommand createCommandDecode(final String encodedCommandString, final JXCWindow window, final Commands commands)
+    {
+        return createCommand(decode(encodedCommandString), window, commands);
     }
 
     /**
@@ -58,5 +80,25 @@ public class GUICommandFactory
         {
             return new ExecuteCommandCommand(commands, commandString);
         }
+    }
+
+    /**
+     * Encodes a key binding if necessary.
+     * @param command the key binding
+     * @return the encoded key binding
+     */
+    public static String encode(final String command)
+    {
+        return patternEncode.matcher(command).matches() ? command+TRAILING_ESCAPE : command;
+    }
+
+    /**
+     * Decodes a key binding if necessary.
+     * @param command the key binding
+     * @return the decoded key binding
+     */
+    private static String decode(final String command)
+    {
+        return command.endsWith(TRAILING_ESCAPE) ? command.substring(0, command.length()-TRAILING_ESCAPE.length()) : command;
     }
 }

@@ -306,7 +306,7 @@ public class KeyBindings
                             bw.write(' ');
                             bw.write(Integer.toString(keyCodeKeyBinding.getModifiers()));
                             bw.write(' ');
-                            bw.write(keyCodeKeyBinding.getCommandString());
+                            bw.write(GUICommandFactory.encode(keyCodeKeyBinding.getCommandString()));
                             bw.newLine();
                         }
                         else if (keyBinding instanceof KeyCharKeyBinding)
@@ -315,7 +315,7 @@ public class KeyBindings
                             bw.write("char ");
                             bw.write(Integer.toString(keyCharKeyBinding.getKeyChar()));
                             bw.write(' ');
-                            bw.write(keyCharKeyBinding.getCommandString());
+                            bw.write(GUICommandFactory.encode(keyCharKeyBinding.getCommandString()));
                             bw.newLine();
                         }
                         else
@@ -408,7 +408,7 @@ public class KeyBindings
             {
                 final char keyChar = (char)Integer.parseInt(tmp[0]);
                 final GUICommandList commandList = new GUICommandList(GUICommandList.Type.AND);
-                commandList.add(GUICommandFactory.createCommand(tmp[1], window, commands));
+                commandList.add(GUICommandFactory.createCommandDecode(tmp[1], window, commands));
                 addKeyBindingAsKeyChar(keyChar, commandList, isDefault);
             }
             catch (final NumberFormatException ex)
@@ -450,7 +450,7 @@ public class KeyBindings
             }
 
             final GUICommandList commandList = new GUICommandList(GUICommandList.Type.AND);
-            commandList.add(GUICommandFactory.createCommand(tmp[2], window, commands));
+            commandList.add(GUICommandFactory.createCommandDecode(tmp[2], window, commands));
             addKeyBindingAsKeyCode(keyCode, modifiers, commandList, isDefault);
         }
         else

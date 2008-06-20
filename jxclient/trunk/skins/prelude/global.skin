@@ -56,3 +56,83 @@ key code F9 0 exec command_shortcut8
 key code F10 0 exec command_shortcut9
 key code F11 0 exec command_shortcutA
 key code F12 0 exec command_shortcutB
+
+key char 97 apply
+key char 100 use_skill disarm traps
+key char 101 examine
+key char 105 mapinfo
+key char 106 use_skill jumping
+key char 109 -e maps -
+key char 115 use_skill find traps
+key char 112 use_skill praying
+key char 116 ready_skill throwing
+key char 119 who
+key char 63 help
+key char 44 get
+key char 47 -e
+key char 92 -e
+key char 34 -e say -
+key code UP 2 run 1
+key code KP_UP 2 run 1
+key code NUMPAD8 2 run 1
+key code UP 1 north f
+key code KP_UP 1 north f
+key code NUMPAD8 1 north f
+key code UP 0 north
+key code KP_UP 0 north
+key code NUMPAD8 0 north
+key code PAGE_UP 2 run 2
+key code NUMPAD9 2 run 2
+key code PAGE_UP 1 northeast f
+key code NUMPAD9 1 northeast f
+key code PAGE_UP 0 northeast
+key code NUMPAD9 0 northeast
+key code RIGHT 2 run 3
+key code KP_RIGHT 2 run 3
+key code NUMPAD6 2 run 3
+key code RIGHT 1 east f
+key code KP_RIGHT 1 east f
+key code NUMPAD6 1 east f
+key code RIGHT 0 east
+key code KP_RIGHT 0 east
+key code NUMPAD6 0 east
+key code PAGE_DOWN 2 run 4
+key code NUMPAD3 2 run 4
+key code PAGE_DOWN 1 southeast f
+key code NUMPAD3 1 southeast f
+key code PAGE_DOWN 0 sotheast
+key code NUMPAD3 0 southeast
+key code DOWN 2 run 5
+key code KP_DOWN 2 run 5
+key code NUMPAD2 2 run 5
+key code DOWN 1 south f
+key code KP_DOWN 1 south f
+key code NUMPAD2 1 south f
+key code DOWN 0 south
+key code KP_DOWN 0 south
+key code NUMPAD2 0 south
+key code END 2 run 6
+key code NUMPAD1 2 run 6
+key code END 1 southwest f
+key code NUMPAD1 1 southwest f
+key code END 0 sothwest
+key code NUMPAD1 0 southwest
+key code LEFT 2 run 7
+key code KP_LEFT 2 run 7
+key code NUMPAD4 2 run 7
+key code LEFT 1 west f
+key code KP_LEFT 1 west f
+key code NUMPAD4 1 west f
+key code LEFT 0 west
+key code KP_LEFT 0 west
+key code NUMPAD4 0 west
+key code HOME 2 run 8
+key code NUMPAD7 2 run 8
+key code HOME 1 northwest f
+key code NUMPAD7 1 northwest f
+key code HOME 0 northwest
+key code NUMPAD7 0 northwest
+key code BEGIN 1 stay f
+key code NUMPAD5 1 stay f
+key code BEGIN 0 stay
+key code NUMPAD5 0 stay

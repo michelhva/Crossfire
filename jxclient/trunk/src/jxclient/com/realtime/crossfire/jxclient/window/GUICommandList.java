@@ -147,7 +147,8 @@ public class GUICommandList
             }
             else if (guiCommand instanceof ActivateCommandInputCommand)
             {
-                commandString = "-e "+((ActivateCommandInputCommand)guiCommand).getCommandText();
+                final String commandText = ((ActivateCommandInputCommand)guiCommand).getCommandText();
+                commandString = commandText.length() > 0 ? "-e "+commandText : "-e";
             }
             else
             {
