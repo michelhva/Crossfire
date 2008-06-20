@@ -754,8 +754,8 @@ public abstract class JXCSkinLoader implements JXCSkin
                             }
 
                             final String commandListName = args[1];
-                            final GUICommandList.Type commandListType = parseEnum(GUICommandList.Type.class, args[2], "type");
-                            final GUICommandList commandList = new GUICommandList(commandListType);
+                            final GUICommandList.CommandType commandListCommandType = parseEnum(GUICommandList.CommandType.class, args[2], "type");
+                            final GUICommandList commandList = new GUICommandList(commandListCommandType);
                             definedCommandLists.insert(commandListName, commandList);
                             if (args.length >= 5)
                             {

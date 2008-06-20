@@ -407,7 +407,7 @@ public class KeyBindings
             try
             {
                 final char keyChar = (char)Integer.parseInt(tmp[0]);
-                final GUICommandList commandList = new GUICommandList(GUICommandList.Type.AND);
+                final GUICommandList commandList = new GUICommandList(GUICommandList.CommandType.AND);
                 commandList.add(GUICommandFactory.createCommandDecode(tmp[1], window, commands));
                 addKeyBindingAsKeyChar(keyChar, commandList, isDefault);
             }
@@ -449,7 +449,7 @@ public class KeyBindings
                 throw new InvalidKeyBindingException("invalid modifier: "+tmp[1]);
             }
 
-            final GUICommandList commandList = new GUICommandList(GUICommandList.Type.AND);
+            final GUICommandList commandList = new GUICommandList(GUICommandList.CommandType.AND);
             commandList.add(GUICommandFactory.createCommandDecode(tmp[2], window, commands));
             addKeyBindingAsKeyCode(keyCode, modifiers, commandList, isDefault);
         }
