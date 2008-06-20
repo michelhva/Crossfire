@@ -80,7 +80,7 @@ public class ScriptCommand extends AbstractCommand
     {
         if (args.length() == 0)
         {
-            drawInfoError("Which script to you want to run?");
+            drawInfoError("Which script do you want to run?");
             return;
         }
 

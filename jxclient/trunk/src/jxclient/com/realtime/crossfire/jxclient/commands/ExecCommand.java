@@ -60,7 +60,7 @@ public class ExecCommand extends AbstractCommand
     {
         if (args.length() == 0)
         {
-            drawInfoError("Which command to you want to run?");
+            drawInfoError("Which command do you want to run?");
             return;
         }
 
