@@ -20,6 +20,7 @@
 package com.realtime.crossfire.jxclient.skin;
 
 import com.realtime.crossfire.jxclient.faces.FacesManager;
+import com.realtime.crossfire.jxclient.gui.keybindings.KeyBindings;
 import com.realtime.crossfire.jxclient.items.ItemsManager;
 import com.realtime.crossfire.jxclient.mapupdater.CfMapUpdater;
 import com.realtime.crossfire.jxclient.spells.SpellsManager;
@@ -48,9 +49,9 @@ public class JXCSkinDirLoader extends JXCSkinLoader
      *
      * @throws JXCSkinException if the skin cannot be loaded
      */
-    public JXCSkinDirLoader(final ItemsManager itemsManager, final SpellsManager spellsManager, final FacesManager facesManager, final Stats stats, final CfMapUpdater mapUpdater, final File dir) throws JXCSkinException
+    public JXCSkinDirLoader(final ItemsManager itemsManager, final SpellsManager spellsManager, final FacesManager facesManager, final Stats stats, final CfMapUpdater mapUpdater, final File dir, final KeyBindings defaultKeyBindings) throws JXCSkinException
     {
-        super(itemsManager, spellsManager, facesManager, stats, mapUpdater);
+        super(itemsManager, spellsManager, facesManager, stats, mapUpdater, defaultKeyBindings);
         if (dir == null) throw new IllegalArgumentException();
         this.dir = dir;
         checkAccess();

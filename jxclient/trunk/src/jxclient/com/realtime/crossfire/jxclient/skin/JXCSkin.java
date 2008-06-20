@@ -22,6 +22,7 @@ package com.realtime.crossfire.jxclient.skin;
 import com.realtime.crossfire.jxclient.commands.Commands;
 import com.realtime.crossfire.jxclient.experience.ExperienceTable;
 import com.realtime.crossfire.jxclient.gui.Gui;
+import com.realtime.crossfire.jxclient.gui.keybindings.KeyBindings;
 import com.realtime.crossfire.jxclient.metaserver.Metaserver;
 import com.realtime.crossfire.jxclient.server.CommandQueue;
 import com.realtime.crossfire.jxclient.server.CrossfireServerConnection;
@@ -131,4 +132,10 @@ public interface JXCSkin extends Iterable<Gui>
      * @return Whether the dialog state should be saved.
      */
     boolean hasChangedDialog();
+
+    /**
+     * Returns the default key bindings for this skin.
+     * @return the default key bindings
+     */
+    KeyBindings getDefaultKeyBindings();
 }

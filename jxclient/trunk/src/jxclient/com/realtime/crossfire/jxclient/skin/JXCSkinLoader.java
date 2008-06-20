@@ -232,13 +232,19 @@ public abstract class JXCSkinLoader implements JXCSkin
      */
     private final List<GUICommandList> initEvents = new ArrayList<GUICommandList>();
 
-    protected JXCSkinLoader(final ItemsManager itemsManager, final SpellsManager spellsManager, final FacesManager facesManager, final Stats stats, final CfMapUpdater mapUpdater)
+    /**
+     * The default key bindings; 
+     */
+    private final KeyBindings defaultKeyBindings;
+
+    protected JXCSkinLoader(final ItemsManager itemsManager, final SpellsManager spellsManager, final FacesManager facesManager, final Stats stats, final CfMapUpdater mapUpdater, final KeyBindings defaultKeyBindings)
     {
         this.itemsManager = itemsManager;
         this.spellsManager = spellsManager;
         this.facesManager = facesManager;
         this.stats = stats;
         this.mapUpdater = mapUpdater;
+        this.defaultKeyBindings = defaultKeyBindings;
     }
 
     /**
@@ -1252,7 +1258,7 @@ public abstract class JXCSkinLoader implements JXCSkin
                                 throw new IOException("syntax error");
                             }
 
-                            final KeyBindings keyBindings = gui != null ? gui.getKeyBindings() : window.getKeyBindings(false);
+                            final KeyBindings keyBindings = gui != null ? gui.getKeyBindings() : defaultKeyBindings;
                             try
                             {
                                 keyBindings.parseKeyBinding(line.substring(4).trim(), true);
@@ -2663,5 +2669,11 @@ public abstract class JXCSkinLoader implements JXCSkin
         }
 
         return false;
+    }
+
+    /** {@inheritDoc} */
+    public KeyBindings getDefaultKeyBindings()
+    {
+        return defaultKeyBindings;
     }
 }

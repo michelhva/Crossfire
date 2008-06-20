@@ -20,6 +20,7 @@
 package com.realtime.crossfire.jxclient.skin;
 
 import com.realtime.crossfire.jxclient.faces.FacesManager;
+import com.realtime.crossfire.jxclient.gui.keybindings.KeyBindings;
 import com.realtime.crossfire.jxclient.items.ItemsManager;
 import com.realtime.crossfire.jxclient.mapupdater.CfMapUpdater;
 import com.realtime.crossfire.jxclient.spells.SpellsManager;
@@ -46,9 +47,9 @@ public class JXCSkinClassLoader extends JXCSkinLoader
      *
      * @throws JXCSkinException if the skin cannot be loaded
      */
-    public JXCSkinClassLoader(final ItemsManager itemsManager, final SpellsManager spellsManager, final FacesManager facesManager, final Stats stats, final CfMapUpdater mapUpdater, final String baseName) throws JXCSkinException
+    public JXCSkinClassLoader(final ItemsManager itemsManager, final SpellsManager spellsManager, final FacesManager facesManager, final Stats stats, final CfMapUpdater mapUpdater, final String baseName, final KeyBindings defaultKeyBindings) throws JXCSkinException
     {
-        super(itemsManager, spellsManager, facesManager, stats, mapUpdater);
+        super(itemsManager, spellsManager, facesManager, stats, mapUpdater, defaultKeyBindings);
         if (baseName == null) throw new IllegalArgumentException();
         this.baseName = baseName;
         checkAccess();
