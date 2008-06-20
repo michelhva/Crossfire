@@ -55,4 +55,13 @@ public class ActivateCommandInputCommand implements GUICommand
     {
         jxcWindow.activateCommandInput(commandText);
     }
+
+    /**
+     * Returns the command text to set.
+     * @return the command text
+     */
+    public String getCommandText()
+    {
+        return commandText;
+    }
 }
