@@ -1088,13 +1088,7 @@ public class JXCWindow extends JFrame implements KeyListener, CrossfireDrawextin
             break;
 
         case 'm':
-            {
-                final GUIText textArea = activateCommandInput();
-                if (textArea != null)
-                {
-                    textArea.setText("maps ");
-                }
-            }
+            activateCommandInput("maps ");
             break;
 
         case 's':
@@ -1127,13 +1121,7 @@ public class JXCWindow extends JFrame implements KeyListener, CrossfireDrawextin
             break;
 
         case '"':
-            {
-                final GUIText textArea = activateCommandInput();
-                if (textArea != null)
-                {
-                    textArea.setText("say ");
-                }
-            }
+            activateCommandInput("say ");
             break;
 
         default:
@@ -1538,6 +1526,25 @@ public class JXCWindow extends JFrame implements KeyListener, CrossfireDrawextin
     public int getWindowHeight()
     {
         return resolution.getHeight();
+    }
+
+    /**
+     * Activate the command input text field. If the skin defined more than one
+     * input field, the first matching one is selected.
+     *
+     * <p>If neither the main gui nor any visible dialog has an input text
+     * field, invisible guis are checked as well. If one is found, it is made
+     * visible.
+     *
+     * @param newText the new command text if non-<code>null</code>
+     */
+    private void activateCommandInput(final String newText)
+    {
+        final GUIText textArea = activateCommandInput();
+        if (textArea != null && newText != null)
+        {
+            textArea.setText(newText);
+        }
     }
 
     /**
