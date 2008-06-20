@@ -8,7 +8,7 @@ enter_x 23
 enter_y 19
 msg
 Created:  2000-06-05
-Modified: 2008-03-24 Nicolas Weeger
+Modified: 2008-06-20 Arvid Norlander
 endmsg
 maplore
 @quest Scorn Royalty Quest
@@ -745,6 +745,7 @@ x 5
 y 4
 end
 arch locked_door1
+slaying no_key
 x 5
 y 4
 end
@@ -1462,6 +1463,7 @@ x 9
 y 18
 end
 arch locked_door1
+slaying no_key
 x 9
 y 18
 end
