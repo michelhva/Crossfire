@@ -188,7 +188,7 @@ public class GUIItemSpelllist extends GUIItem
 
         final Graphics2D g2 = (Graphics2D)g;
         g2.setBackground(BACKGROUND_COLOR);
-        g.clearRect(0, 0, w, h);
+        g.clearRect(0, 0, getWidth(), getHeight());
 
         if (spell == null)
         {

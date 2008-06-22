@@ -152,7 +152,7 @@ public abstract class GUIItemItem extends GUIItem
 
         final Graphics2D g2 = (Graphics2D)g;
         g2.setBackground(BACKGROUND_COLOR);
-        g.clearRect(0, 0, w, h);
+        g.clearRect(0, 0, getWidth(), getHeight());
 
         final CfItem tmpItem = item;
         if (tmpItem == null)
@@ -177,7 +177,7 @@ public abstract class GUIItemItem extends GUIItem
         paintImage(g, lockedImage, tmpItem.isLocked());
         paintImage(g, selectorImage, isActive());
         paintImage(g, unpaidImage, tmpItem.isUnpaid());
-        if (w <= h)
+        if (getWidth() <= getHeight())
         {
             if (tmpItem.getNrOf() > 0)
             {
@@ -191,8 +191,8 @@ public abstract class GUIItemItem extends GUIItem
             g.setFont(font);
             g.setColor(nrofColor);
             g2.setBackground(new Color(0, 0, 0, 0.0f));
-            renderText(g2, h, 0, h/2, tmpItem.getTooltipText1());
-            renderText(g2, h, h/2, h/2, tmpItem.getTooltipText2());
+            renderText(g2, getHeight(), 0, getHeight()/2, tmpItem.getTooltipText1());
+            renderText(g2, getHeight(), getHeight()/2, getHeight()/2, tmpItem.getTooltipText2());
         }
     }
 
@@ -214,7 +214,7 @@ public abstract class GUIItemItem extends GUIItem
         if (isActive && color != null)
         {
             g.setColor(color);
-            g.fillRect(0, 0, w, h);
+            g.fillRect(0, 0, getWidth(), getHeight());
         }
     }
 

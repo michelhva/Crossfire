@@ -134,7 +134,7 @@ public class GUIMagicMap extends GUIElement
                 final byte[] data = evt.getData();
                 final Graphics2D g = bufferedImage.createGraphics();
                 g.setColor(Color.BLACK);
-                g.fillRect(0, 0, w, h);
+                g.fillRect(0, 0, getWidth(), getHeight());
                 final int offsetX = playerX-evt.getPX()*TILE_SIZE;
                 final int offsetY = playerY-evt.getPY()*TILE_SIZE;
                 for (int y = 0; y < evt.getHeight(); y++)
@@ -170,29 +170,29 @@ public class GUIMagicMap extends GUIElement
                 final CfMap map = mapUpdater.getMap();
                 final int dxPixels = dx*TILE_SIZE;
                 final int dyPixels = dy*TILE_SIZE;
-                if (Math.abs(dxPixels) >= w || Math.abs(dyPixels) >= h)
+                if (Math.abs(dxPixels) >= getWidth() || Math.abs(dyPixels) >= getHeight())
                 {
-                    redrawTiles(g, map, 0, 0, w/TILE_SIZE, h/TILE_SIZE);
+                    redrawTiles(g, map, 0, 0, getWidth()/TILE_SIZE, getHeight()/TILE_SIZE);
                 }
                 else
                 {
-                    g.copyArea(dxPixels <= 0 ? 0 : dxPixels, dyPixels <= 0 ? 0 : dyPixels, dxPixels == 0 ? w : w-Math.abs(dxPixels), dyPixels == 0 ? h : h-Math.abs(dyPixels), -dxPixels, -dyPixels);
+                    g.copyArea(dxPixels <= 0 ? 0 : dxPixels, dyPixels <= 0 ? 0 : dyPixels, dxPixels == 0 ? getWidth() : getWidth()-Math.abs(dxPixels), dyPixels == 0 ? getHeight() : getHeight()-Math.abs(dyPixels), -dxPixels, -dyPixels);
                     g.setColor(Color.BLACK);
                     if (dxPixels < 0)
                     {
-                        redrawTiles(g, map, 0, 0, -dxPixels/TILE_SIZE, h/TILE_SIZE);
+                        redrawTiles(g, map, 0, 0, -dxPixels/TILE_SIZE, getHeight()/TILE_SIZE);
                     }
                     else if (dxPixels > 0)
                     {
-                        redrawTiles(g, map, w/TILE_SIZE-dxPixels/TILE_SIZE, 0, w/TILE_SIZE, h/TILE_SIZE);
+                        redrawTiles(g, map, getWidth()/TILE_SIZE-dxPixels/TILE_SIZE, 0, getWidth()/TILE_SIZE, getHeight()/TILE_SIZE);
                     }
                     if (dyPixels < 0)
                     {
-                        redrawTiles(g, map, 0, 0, w/TILE_SIZE, -dyPixels/TILE_SIZE);
+                        redrawTiles(g, map, 0, 0, getWidth()/TILE_SIZE, -dyPixels/TILE_SIZE);
                     }
                     else if (dyPixels > 0)
                     {
-                        redrawTiles(g, map, 0, h/TILE_SIZE-dyPixels/TILE_SIZE, w/TILE_SIZE, h/TILE_SIZE);
+                        redrawTiles(g, map, 0, getHeight()/TILE_SIZE-dyPixels/TILE_SIZE, getWidth()/TILE_SIZE, getHeight()/TILE_SIZE);
                     }
                 }
                 redrawSquare(g, map, (mapWidth-1)/2-dx, (mapHeight-1)/2-dy);
@@ -242,7 +242,7 @@ public class GUIMagicMap extends GUIElement
             {
                 final Graphics2D g = bufferedImage.createGraphics();
                 g.setColor(Color.BLACK);
-                g.fillRect(0, 0, w, h);
+                g.fillRect(0, 0, getWidth(), getHeight());
                 markPlayer(g);
                 g.dispose();
             }
@@ -265,8 +265,8 @@ public class GUIMagicMap extends GUIElement
             offsetY = playerY-((mapHeight-1)/2)*TILE_SIZE;
             final Graphics2D g = bufferedImage.createGraphics();
             g.setColor(Color.BLACK);
-            g.fillRect(0, 0, w, h);
-            redrawTiles(g, mapUpdater.getMap(), 0, 0, w/TILE_SIZE, h/TILE_SIZE);
+            g.fillRect(0, 0, getWidth(), getHeight());
+            redrawTiles(g, mapUpdater.getMap(), 0, 0, getWidth()/TILE_SIZE, getHeight()/TILE_SIZE);
             g.dispose();
         }
     };

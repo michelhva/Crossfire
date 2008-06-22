@@ -148,7 +148,7 @@ public class GUIDupGauge extends GUIElement implements GUIGaugeListener
         super.paintComponent(g);
         final Graphics2D g2 = (Graphics2D)g;
         g2.setBackground(new Color(0, 0, 0, 0.0f));
-        g.clearRect(0, 0, w, h);
+        g.clearRect(0, 0, getWidth(), getHeight());
         if (emptyImage != null)
         {
             g.drawImage(emptyImage, 0, 0, null);

@@ -142,7 +142,7 @@ public abstract class GUIText extends ActivatableGUIElement implements KeyListen
             tmp = getDisplayText();
             final Graphics2D g2 = (Graphics2D)g;
             final Rectangle2D rect = font.getStringBounds(tmp, g2.getFontRenderContext());
-            y = (int)Math.round((h-rect.getMaxY()-rect.getMinY()))/2;
+            y = (int)Math.round((getHeight()-rect.getMaxY()-rect.getMinY()))/2;
             if (isActive())
             {
                 final String tmpPrefix = tmp.substring(0, cursor-offset);
@@ -152,7 +152,7 @@ public abstract class GUIText extends ActivatableGUIElement implements KeyListen
                 final int cursorX1 = (int)(rectPrefix.getWidth()+0.5);
                 final int cursorX2 = (int)(rectCursor.getWidth()+0.5);
                 g.setColor(inactiveColor);
-                g.fillRect(margin+cursorX1, 0, cursorX2-cursorX1, h);
+                g.fillRect(margin+cursorX1, 0, cursorX2-cursorX1, getHeight());
             }
         }
         g.setColor(isActive() ? activeColor : inactiveColor);
@@ -412,7 +412,7 @@ public abstract class GUIText extends ActivatableGUIElement implements KeyListen
                     final String tmpCursor = tmp.substring(0, cursor-offset+1);
                     final Rectangle2D rectCursor = font.getStringBounds(tmpCursor, g.getFontRenderContext());
                     final int cursorX = (int)(rectCursor.getWidth()+0.5);
-                    if (cursorX < w)
+                    if (cursorX < getWidth())
                     {
                         break;
                     }

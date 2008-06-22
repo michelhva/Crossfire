@@ -196,7 +196,7 @@ public class GUIScrollBar extends ActivatableGUIElement implements ScrollableLis
      */
     private int getSliderPos(final int yPixels)
     {
-        return (int)(yPixels*(double)(valueSize-sliderSize)/(h-getSliderHeightPixels())+0.5);
+        return (int)(yPixels*(double)(valueSize-sliderSize)/(getHeight()-getSliderHeightPixels())+0.5);
     }
 
     public void setPosition(final int pos)
@@ -223,7 +223,7 @@ public class GUIScrollBar extends ActivatableGUIElement implements ScrollableLis
      */
     private int getSliderHeightPixels()
     {
-        return proportionalSlider ? (int)(h*(double)sliderSize/valueSize+0.5) : w;
+        return proportionalSlider ? (int)(getHeight()*(double)sliderSize/valueSize+0.5) : getWidth();
     }
 
     /**
@@ -235,7 +235,7 @@ public class GUIScrollBar extends ActivatableGUIElement implements ScrollableLis
      */
     private int getSliderPosPixels(final int sh)
     {
-        return (int)(sliderPos*(double)(h-sh)/(valueSize-sliderSize)+0.5);
+        return (int)(sliderPos*(double)(getHeight()-sh)/(valueSize-sliderSize)+0.5);
     }
 
     /** {@inheritDoc} */
@@ -245,9 +245,9 @@ public class GUIScrollBar extends ActivatableGUIElement implements ScrollableLis
         final int sh = getSliderHeightPixels();
         final int sy = getSliderPosPixels(sh);
         g.setColor(colorBackground);
-        g.fillRect(0, 0, w, sy);
-        g.fillRect(0, sy+sh, w, h-sy-sh);
+        g.fillRect(0, 0, getWidth(), sy);
+        g.fillRect(0, sy+sh, getWidth(), getHeight()-sy-sh);
         g.setColor(colorForeground);
-        g.fillRect(0, sy, w, sh);
+        g.fillRect(0, sy, getWidth(), sh);
     }
 }

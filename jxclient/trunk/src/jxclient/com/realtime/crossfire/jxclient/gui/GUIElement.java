@@ -56,12 +56,12 @@ public abstract class GUIElement
     /**
      * The width for drawing this element to screen.
      */
-    protected int w;
+    private int w;
 
     /**
      * The height for drawing this element to screen.
      */
-    protected int h;
+    private int h;
 
     protected BufferedImage bufferedImage;
 

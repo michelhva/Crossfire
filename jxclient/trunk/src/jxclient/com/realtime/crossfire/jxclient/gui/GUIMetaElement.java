@@ -113,7 +113,7 @@ public class GUIMetaElement extends ActivatableGUIElement implements GUIScrollab
         final MetaserverEntry metaEntry = metaserver.getEntry(index);
         final Graphics2D g2 = (Graphics2D)g;
         g2.setBackground(new Color(0, 0, 0, 0.0f));
-        g.clearRect(0, 0, w, h);
+        g.clearRect(0, 0, getWidth(), getHeight());
         g.setFont(font);
         g.setColor(isActive() ? Color.RED : Color.GRAY);
         if (tcpImage != null)
