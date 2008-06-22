@@ -460,7 +460,7 @@ public abstract class GUIElement
      *
      * @param g The gaphics to paint to.
      */
-    protected void paintComponent(final Graphics2D g)
+    public void paintComponent(final Graphics2D g)
     {
     }
 

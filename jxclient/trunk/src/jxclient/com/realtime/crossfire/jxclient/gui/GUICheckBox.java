@@ -128,7 +128,7 @@ public class GUICheckBox extends ActivatableGUIElement
     }
 
     /** {@inheritDoc} */
-    @Override protected void paintComponent(final Graphics2D g)
+    @Override public void paintComponent(final Graphics2D g)
     {
         g.setBackground(new Color(0, 0, 0, 0.0f));
         g.clearRect(0, 0, w, h);

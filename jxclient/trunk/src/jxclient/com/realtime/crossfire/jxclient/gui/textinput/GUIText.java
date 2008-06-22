@@ -128,7 +128,7 @@ public abstract class GUIText extends ActivatableGUIElement implements KeyListen
     }
 
     /** {@inheritDoc} */
-    @Override protected void paintComponent(final Graphics2D g)
+    @Override public void paintComponent(final Graphics2D g)
     {
         super.paintComponent(g);
 

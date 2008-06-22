@@ -92,7 +92,7 @@ public class GUIMultiLineLabel extends GUILabel
     }
 
     /** {@inheritDoc} */
-    @Override protected void paintComponent(final Graphics2D g)
+    @Override public void paintComponent(final Graphics2D g)
     {
         super.paintComponent(g);
 

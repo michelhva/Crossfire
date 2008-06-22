@@ -121,7 +121,7 @@ public class GUITextButton extends AbstractButton
     }
 
     /** {@inheritDoc} */
-    @Override protected void paintComponent(final Graphics2D g)
+    @Override public void paintComponent(final Graphics2D g)
     {
         super.paintComponent(g);
         g.setFont(font);
