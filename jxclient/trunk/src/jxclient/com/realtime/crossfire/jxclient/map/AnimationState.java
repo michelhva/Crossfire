@@ -43,7 +43,7 @@ public class AnimationState
      * The {@link CfMapUpdater} instance to use.
      */
     private final CfMapUpdater mapUpdater;
-    
+
     /**
      * The animation speed.
      */

@@ -126,7 +126,7 @@ public class JXCWindow extends JFrame implements KeyListener, CrossfireDrawextin
      * The {@link FacesManager} instance.
      */
     private final FacesManager facesManager;
-    
+
     /**
      * The {@link ItemsManager} instance.
      */

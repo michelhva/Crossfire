@@ -52,7 +52,7 @@ public class ScriptCommand extends AbstractCommand
      * The {@link Stats} instance to watch.
      */
     private final Stats stats;
-    
+
     /**
      * Creates a new instance.
      * @param window the window to execute in

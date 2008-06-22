@@ -40,7 +40,7 @@ import java.util.Set;
 /**
  * Utility class to update a {@link CfMap} model from protocol commands.
  * <p>
- * The map updater is called from two threads: the {@link 
+ * The map updater is called from two threads: the {@link
  * com.realtime.crossfire.jxclient.server.ClientSocket} reading commands
  * received from the Crossfire server, and {@link
  * com.realtime.crossfire.jxclient.faces.FileCacheFaceQueue} reading faces from
@@ -482,7 +482,7 @@ public class CfMapUpdater
         if (facesManager != null)
         {
             // request face information for later use
-            facesManager.getFaceImages(faceNum); 
+            facesManager.getFaceImages(faceNum);
         }
         return faceNum == 0 ? null : faceCache.getFace(faceNum);
     }

@@ -48,7 +48,7 @@ public class GUIItemShortcut extends GUIItem
      * The {@link FacesManager} instance for looking up faces.
      */
     private final FacesManager facesManager;
-    
+
     private final BufferedImage cursedImage;
 
     private final BufferedImage appliedImage;

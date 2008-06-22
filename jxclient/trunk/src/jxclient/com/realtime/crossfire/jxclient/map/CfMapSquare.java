@@ -78,7 +78,7 @@ public class CfMapSquare
      * Create a new (empty) square.
      *
      * @param mapSquareListener the map square listener to notify
-     * 
+     *
      * @param x The absolute map x-coordinate of the top left corner of this
      * patch.
      *

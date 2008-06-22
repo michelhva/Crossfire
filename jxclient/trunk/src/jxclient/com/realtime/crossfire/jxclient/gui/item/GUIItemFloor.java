@@ -39,7 +39,7 @@ public class GUIItemFloor extends GUIItemItem
      * The command queue for sending commands.
      */
     private final CommandQueue commandQueue;
-    
+
     /**
      * The connection instance.
      */

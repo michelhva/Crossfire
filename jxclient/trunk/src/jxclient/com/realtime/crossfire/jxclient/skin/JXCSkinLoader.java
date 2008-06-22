@@ -233,7 +233,7 @@ public abstract class JXCSkinLoader implements JXCSkin
     private final List<GUICommandList> initEvents = new ArrayList<GUICommandList>();
 
     /**
-     * The default key bindings; 
+     * The default key bindings;
      */
     private final KeyBindings defaultKeyBindings;
 
@@ -2237,7 +2237,7 @@ public abstract class JXCSkinLoader implements JXCSkin
      * @param mouseTracker the mouse tracker instance
      *
      * @param commands the commands instance for executing commands
-     * 
+     *
      * @param lnr The source to read more parameters from.
      *
      * @return The command arguments.

@@ -150,7 +150,7 @@ public class GUISpellLabel extends GUIHTMLLabel
      * ignored for type <code>SPELL_ICON</code>.
      *
      * @param facesManager the instance for looking up faces
-     * 
+     *
      * @param font The font to use.
      *
      * @param type The display type.

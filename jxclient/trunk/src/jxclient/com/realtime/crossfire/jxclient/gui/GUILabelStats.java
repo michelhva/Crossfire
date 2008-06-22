@@ -144,7 +144,7 @@ public class GUILabelStats extends GUIOneLineLabel
      * @param alignment The text alignment.
      *
      * @param stats the stats instance to use
-     * 
+     *
      * @param experienceTable the experience table to use
      */
     public GUILabelStats(final JXCWindow window, final String name, final int x, final int y, final int w, final int h, final Font font, final Color color, final Color backgroundColor, final int stat, final Alignment alignment, final Stats stats, final ExperienceTable experienceTable)

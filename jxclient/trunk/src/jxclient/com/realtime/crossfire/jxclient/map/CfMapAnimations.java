@@ -49,7 +49,7 @@ public class CfMapAnimations
      * The {@link CfMapUpdater} instance to update.
      */
     private final CfMapUpdater mapUpdater;
-    
+
     /**
      * The animations in the visible map area.
      */
