@@ -162,12 +162,22 @@ public abstract class GUIElement
 
     public int getElementX()
     {
-        return gui != null ? gui.getX()+x : x;
+        return gui != null ? gui.getX()+getX() : getX();
     }
 
     public int getElementY()
     {
-        return gui != null ? gui.getY()+y : y;
+        return gui != null ? gui.getY()+getY() : getY();
+    }
+
+    public int getX()
+    {
+        return x;
+    }
+
+    public int getY()
+    {
+        return y;
     }
 
     public int getWidth()
@@ -392,7 +402,7 @@ public abstract class GUIElement
      */
     public void setElementLocation(final int x, final int y)
     {
-        if (this.x != x || this.y != y)
+        if (getX() != x || getY() != y)
         {
             this.x = x;
             this.y = y;
