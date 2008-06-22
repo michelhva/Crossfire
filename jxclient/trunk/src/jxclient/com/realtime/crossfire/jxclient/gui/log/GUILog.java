@@ -127,7 +127,7 @@ public abstract class GUILog extends GUIElement implements GUIScrollable2
     }
 
     /** {@inheritDoc} */
-    @Override protected void paintComponent(final Graphics2D g)
+    @Override public void paintComponent(final Graphics2D g)
     {
         if (renderStateManager == null)
         {
