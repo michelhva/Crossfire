@@ -21,9 +21,9 @@ package com.realtime.crossfire.jxclient.gui;
 
 import com.realtime.crossfire.jxclient.window.JXCWindow;
 import java.awt.Color;
+import java.awt.Graphics;
 import java.awt.Graphics2D;
 import java.awt.Transparency;
-import java.awt.Graphics;
 import java.awt.image.BufferedImage;
 import javax.swing.ImageIcon;
 
