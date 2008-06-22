@@ -49,7 +49,7 @@ public class GUIItemInventory extends GUIItemItem
      * The {@link ItemsManager} instance to watch.
      */
     private final ItemsManager itemsManager;
-    
+
     /**
      * The default scroll index.
      */

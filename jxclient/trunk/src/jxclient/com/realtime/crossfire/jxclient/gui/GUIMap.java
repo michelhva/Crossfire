@@ -312,7 +312,7 @@ public class GUIMap extends GUIElement
      * @param facesManager the instance for looking up faces
      *
      * @param mapUpdater the map updater instance
-     * 
+     *
      * @param tileSize The size of one tile in pixels.
      *
      * @throws IOException If an I/O error occurs.

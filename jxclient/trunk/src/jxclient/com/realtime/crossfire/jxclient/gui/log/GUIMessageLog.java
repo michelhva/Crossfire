@@ -52,7 +52,7 @@ public class GUIMessageLog extends GUILog
      * @param h The height for drawing this element to screen.
      *
      * @param crossfireServerConnection the connection instance
-     * 
+     *
      * @param backgroundImage The background image; may be <code>null</code> if
      * unused.
      *

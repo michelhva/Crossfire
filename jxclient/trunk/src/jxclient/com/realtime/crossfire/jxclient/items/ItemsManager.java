@@ -91,7 +91,7 @@ public class ItemsManager
     private CfPlayer player = null;
 
     /**
-     * The {@link CrossfireUpdateItemListener} to receive item updates.          
+     * The {@link CrossfireUpdateItemListener} to receive item updates.
      */
     private final CrossfireUpdateItemListener crossfireUpdateItemListener = new CrossfireUpdateItemListener()
     {
