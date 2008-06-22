@@ -137,9 +137,9 @@ public class GUIItemShortcut extends GUIItem
     }
 
     /* {@inheritDoc} */
-    @Override protected void render(final Graphics2D g)
+    @Override protected void paintComponent(final Graphics2D g)
     {
-        super.render(g);
+        super.paintComponent(g);
 
         g.setBackground(BACKGROUND_COLOR);
         g.clearRect(0, 0, w, h);
