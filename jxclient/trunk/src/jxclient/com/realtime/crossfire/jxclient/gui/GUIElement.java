@@ -419,7 +419,7 @@ public abstract class GUIElement
      */
     public void setElementSize(final int w, final int h)
     {
-        if (this.w != w || this.h != h)
+        if (getWidth() != w || getHeight() != h)
         {
             this.w = w;
             this.h = h;
@@ -432,7 +432,7 @@ public abstract class GUIElement
         final GraphicsEnvironment ge = GraphicsEnvironment.getLocalGraphicsEnvironment();
         final GraphicsDevice gd = ge.getDefaultScreenDevice();
         final GraphicsConfiguration gconf = gd.getDefaultConfiguration();
-        bufferedImage = gconf.createCompatibleImage(w, h, transparency);
+        bufferedImage = gconf.createCompatibleImage(getWidth(), getHeight(), transparency);
         setChanged();
     }
 
