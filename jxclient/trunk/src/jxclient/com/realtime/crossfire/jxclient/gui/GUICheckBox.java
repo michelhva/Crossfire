@@ -129,7 +129,8 @@ public class GUICheckBox extends ActivatableGUIElement
     }
 
     /** {@inheritDoc} */
-    @Override public void paintComponent(final Graphics g)
+    @Override
+    public void paintComponent(final Graphics g)
     {
         super.paintComponent(g);
         final Graphics2D g2 = (Graphics2D)g;
@@ -144,7 +145,8 @@ public class GUICheckBox extends ActivatableGUIElement
     }
 
     /** {@inheritDoc} */
-    @Override public void mouseReleased(final MouseEvent e)
+    @Override
+    public void mouseReleased(final MouseEvent e)
     {
         super.mouseReleased(e);
         final int b = e.getButton();
@@ -163,7 +165,8 @@ public class GUICheckBox extends ActivatableGUIElement
     }
 
     /** {@inheritDoc} */
-    @Override public void mousePressed(final MouseEvent e)
+    @Override
+    public void mousePressed(final MouseEvent e)
     {
         super.mousePressed(e);
         final int b = e.getButton();

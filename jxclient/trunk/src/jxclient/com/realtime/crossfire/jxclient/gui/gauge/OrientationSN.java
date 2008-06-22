@@ -34,7 +34,8 @@ public class OrientationSN extends AbstractOrientation
     }
 
     /** {@inheritDoc} */
-    @Override protected void recalc()
+    @Override
+    protected void recalc()
     {
         x = 0;
         w = width;

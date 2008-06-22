@@ -129,7 +129,8 @@ public abstract class GUIText extends ActivatableGUIElement implements KeyListen
     }
 
     /** {@inheritDoc} */
-    @Override public void paintComponent(final Graphics g)
+    @Override
+    public void paintComponent(final Graphics g)
     {
         super.paintComponent(g);
 
@@ -173,7 +174,8 @@ public abstract class GUIText extends ActivatableGUIElement implements KeyListen
     }
 
     /** {@inheritDoc} */
-    @Override public void mouseClicked(final MouseEvent e)
+    @Override
+    public void mouseClicked(final MouseEvent e)
     {
         super.mouseClicked(e);
         final int b = e.getButton();
@@ -193,7 +195,8 @@ public abstract class GUIText extends ActivatableGUIElement implements KeyListen
     }
 
     /** {@inheritDoc} */
-    @Override protected void activeChanged()
+    @Override
+    protected void activeChanged()
     {
         setChanged();
     }

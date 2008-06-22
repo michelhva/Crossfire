@@ -50,7 +50,8 @@ public class Timeouts
     private static final Thread deliverPendingTimeouts = new Thread()
     {
         /** {@inheritDoc} */
-        @Override public void run()
+        @Override
+        public void run()
         {
             boolean doWait = true;
             while (!isInterrupted())

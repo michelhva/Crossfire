@@ -40,7 +40,8 @@ public abstract class GUIItem extends ActivatableGUIElement implements GUIScroll
     }
 
     /** {@inheritDoc} */
-    @Override public void mouseClicked(final MouseEvent e)
+    @Override
+    public void mouseClicked(final MouseEvent e)
     {
         super.mouseClicked(e);
         final JXCWindow window = (JXCWindow)e.getSource();
@@ -68,12 +69,14 @@ public abstract class GUIItem extends ActivatableGUIElement implements GUIScroll
     public abstract void button3Clicked(final JXCWindow window);
 
     /** {@inheritDoc} */
-    @Override public void activeChanged()
+    @Override
+    public void activeChanged()
     {
         setChanged();
     }
 
-    @Override public void setElementVisible(final boolean visible)
+    @Override
+    public void setElementVisible(final boolean visible)
     {
         super.setElementVisible(visible);
         setChanged();

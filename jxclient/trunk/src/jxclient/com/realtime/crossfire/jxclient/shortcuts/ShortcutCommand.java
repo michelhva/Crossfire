@@ -60,7 +60,8 @@ public class ShortcutCommand extends Shortcut
     }
 
     /** {@inheritDoc} */
-    @Override public void execute()
+    @Override
+    public void execute()
     {
         commandQueue.sendNcom(false, command);
     }

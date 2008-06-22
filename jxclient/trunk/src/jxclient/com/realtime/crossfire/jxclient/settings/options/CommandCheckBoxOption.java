@@ -53,7 +53,8 @@ public class CommandCheckBoxOption extends CheckBoxOption
     }
 
     /** {@inheritDoc} */
-    @Override protected void execute(final boolean checked)
+    @Override
+    protected void execute(final boolean checked)
     {
         if (checked)
         {
@@ -66,7 +67,8 @@ public class CommandCheckBoxOption extends CheckBoxOption
     }
 
     /** {@inheritDoc} */
-    @Override public boolean isDefaultChecked()
+    @Override
+    public boolean isDefaultChecked()
     {
         return true;
     }

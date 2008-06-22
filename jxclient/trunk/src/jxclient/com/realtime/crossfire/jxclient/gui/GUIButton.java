@@ -66,13 +66,15 @@ public class GUIButton extends AbstractButton
     }
 
     /** {@inheritDoc} */
-    @Override public void activeChanged()
+    @Override
+    public void activeChanged()
     {
         setChanged();
     }
 
     /** {@inheritDoc} */
-    @Override public void paintComponent(final Graphics g)
+    @Override
+    public void paintComponent(final Graphics g)
     {
         super.paintComponent(g);
         g.setFont(font);

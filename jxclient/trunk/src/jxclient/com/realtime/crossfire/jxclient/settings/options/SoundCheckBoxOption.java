@@ -43,13 +43,15 @@ public class SoundCheckBoxOption extends CheckBoxOption
     }
 
     /** {@inheritDoc} */
-    @Override protected void execute(final boolean checked)
+    @Override
+    protected void execute(final boolean checked)
     {
         soundManager.setEnabled(checked);
     }
 
     /** {@inheritDoc} */
-    @Override public boolean isDefaultChecked()
+    @Override
+    public boolean isDefaultChecked()
     {
         return true;
     }

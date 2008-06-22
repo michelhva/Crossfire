@@ -82,7 +82,8 @@ public abstract class ActivatableGUIElement extends GUIElement
     }
 
     /** {@inheritDoc} */
-    @Override public void mousePressed(final MouseEvent e)
+    @Override
+    public void mousePressed(final MouseEvent e)
     {
         setActive(true);
     }

@@ -98,7 +98,8 @@ public abstract class GUILabel extends AbstractLabel
     }
 
     /** {@inheritDoc} */
-    @Override protected void textChanged()
+    @Override
+    protected void textChanged()
     {
         setChanged();
     }

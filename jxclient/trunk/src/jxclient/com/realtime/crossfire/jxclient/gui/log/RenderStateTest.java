@@ -188,7 +188,8 @@ public class RenderStateTest extends TestCase
     }
 
     /** {@inheritDoc} */
-    @Override public void setUp() throws FontFormatException, IOException
+    @Override
+    public void setUp() throws FontFormatException, IOException
     {
         final GraphicsEnvironment ge = GraphicsEnvironment.getLocalGraphicsEnvironment();
         final GraphicsDevice gd = ge.getDefaultScreenDevice();

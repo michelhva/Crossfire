@@ -111,7 +111,8 @@ public class Skill
     }
 
     /** {@inheritDoc} */
-    @Override public String toString()
+    @Override
+    public String toString()
     {
         return name;
     }

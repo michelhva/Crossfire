@@ -43,7 +43,8 @@ public class GUITextField extends GUIText
     }
 
     /** {@inheritDoc} */
-    @Override protected void execute(final JXCWindow window, final String command)
+    @Override
+    protected void execute(final JXCWindow window, final String command)
     {
         commandList.execute();
     }

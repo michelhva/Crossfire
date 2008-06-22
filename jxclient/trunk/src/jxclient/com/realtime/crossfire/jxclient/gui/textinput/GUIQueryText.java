@@ -37,7 +37,8 @@ public class GUIQueryText extends GUIText
     }
 
     /** {@inheritDoc} */
-    @Override protected void execute(final JXCWindow window, final String command)
+    @Override
+    protected void execute(final JXCWindow window, final String command)
     {
         window.sendReply(command);
         setText("");
