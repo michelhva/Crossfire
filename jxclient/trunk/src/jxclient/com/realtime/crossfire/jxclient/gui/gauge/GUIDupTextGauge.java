@@ -91,7 +91,7 @@ public class GUIDupTextGauge extends GUIDupGauge
         g.setFont(font);
         final String text = labelText;
         final Rectangle2D rect = font.getStringBounds(text, g2.getFontRenderContext());
-        g.drawString(text, (int)Math.round((w-rect.getWidth())/2), (int)Math.round((h-rect.getMaxY()-rect.getMinY()))/2);
+        g.drawString(text, (int)Math.round((getWidth()-rect.getWidth())/2), (int)Math.round((getHeight()-rect.getMaxY()-rect.getMinY()))/2);
     }
 
     /** {@inheritDoc} */

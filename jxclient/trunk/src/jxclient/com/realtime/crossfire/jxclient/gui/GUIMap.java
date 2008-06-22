@@ -185,7 +185,7 @@ public class GUIMap extends GUIElement
             try
             {
                 g.setColor(Color.BLACK);
-                g.fillRect(0, 0, w, h);
+                g.fillRect(0, 0, getWidth(), getHeight());
             }
             finally
             {
@@ -357,7 +357,7 @@ public class GUIMap extends GUIElement
     private void redrawAll(final Graphics g)
     {
         g.setColor(Color.BLACK);
-        g.fillRect(0, 0, w, h);
+        g.fillRect(0, 0, getWidth(), getHeight());
 
         final CfMap map = mapUpdater.getMap();
         for (int y = displayMinY; y < displayMaxY; y++)
@@ -518,34 +518,34 @@ public class GUIMap extends GUIElement
         this.mapWidth = mapWidth;
         this.mapHeight = mapHeight;
 
-        if (mapWidth*tileSize < w)
+        if (mapWidth*tileSize < getWidth())
         {
             displayMinX = 0;
             displayMaxX = mapWidth;
-            offsetX = (w-mapWidth*tileSize)/2;
+            offsetX = (getWidth()-mapWidth*tileSize)/2;
         }
         else
         {
-            final int n = (w+tileSize-1)/(2*tileSize);
+            final int n = (getWidth()+tileSize-1)/(2*tileSize);
             final int effectiveW = (1+2*n)*tileSize;
             displayMinX = (mapWidth-(2*n+1))/2;
             displayMaxX = displayMinX+(1+2*n);
-            offsetX = (w-effectiveW)/2;
+            offsetX = (getWidth()-effectiveW)/2;
         }
 
-        if (mapHeight*tileSize < h)
+        if (mapHeight*tileSize < getHeight())
         {
             displayMinY = 0;
             displayMaxY = mapHeight;
-            offsetY = (h-mapHeight*tileSize)/2;
+            offsetY = (getHeight()-mapHeight*tileSize)/2;
         }
         else
         {
-            final int n = (h+tileSize-1)/(2*tileSize);
+            final int n = (getHeight()+tileSize-1)/(2*tileSize);
             final int effectiveH = (1+2*n)*tileSize;
             displayMinY = (mapHeight-(2*n+1))/2;
             displayMaxY = displayMinY+(1+2*n);
-            offsetY = (h-effectiveH)/2;
+            offsetY = (getHeight()-effectiveH)/2;
         }
 
         final Graphics2D g = bufferedImage.createGraphics();

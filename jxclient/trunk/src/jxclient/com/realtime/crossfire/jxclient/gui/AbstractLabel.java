@@ -94,7 +94,7 @@ public abstract class AbstractLabel extends GUIElement
         {
             final Graphics2D g2 = (Graphics2D)g;
             g2.setBackground(backgroundColor);
-            g.clearRect(0, 0, w, h);
+            g.clearRect(0, 0, getWidth(), getHeight());
         }
     }
 

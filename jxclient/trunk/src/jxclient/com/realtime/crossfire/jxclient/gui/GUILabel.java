@@ -135,11 +135,11 @@ public abstract class GUILabel extends AbstractLabel
             break;
 
         case CENTER:
-            g.drawString(text, (int)Math.round((w-rect.getWidth())/2), y);
+            g.drawString(text, (int)Math.round((getWidth()-rect.getWidth())/2), y);
             break;
 
         case RIGHT:
-            g.drawString(text, (int)Math.round(w-rect.getWidth()), y);
+            g.drawString(text, (int)Math.round(getWidth()-rect.getWidth()), y);
             break;
         }
 
