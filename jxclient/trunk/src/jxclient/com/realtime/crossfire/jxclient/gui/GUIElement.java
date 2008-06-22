@@ -446,7 +446,7 @@ public abstract class GUIElement
             final Graphics2D g = bufferedImage.createGraphics();
             try
             {
-                render(g);
+                paintComponent(g);
             }
             finally
             {
@@ -460,7 +460,7 @@ public abstract class GUIElement
      *
      * @param g The gaphics to paint to.
      */
-    protected void render(final Graphics2D g)
+    protected void paintComponent(final Graphics2D g)
     {
     }
 

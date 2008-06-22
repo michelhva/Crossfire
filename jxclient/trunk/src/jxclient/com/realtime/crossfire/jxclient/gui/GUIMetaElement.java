@@ -105,9 +105,9 @@ public class GUIMetaElement extends ActivatableGUIElement implements GUIScrollab
     }
 
     /** {@inheritDoc} */
-    @Override protected void render(final Graphics2D g)
+    @Override protected void paintComponent(final Graphics2D g)
     {
-        super.render(g);
+        super.paintComponent(g);
 
         final MetaserverEntry metaEntry = metaserver.getEntry(index);
         g.setBackground(new Color(0, 0, 0, 0.0f));

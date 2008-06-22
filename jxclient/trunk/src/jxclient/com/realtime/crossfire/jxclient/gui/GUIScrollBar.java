@@ -239,7 +239,7 @@ public class GUIScrollBar extends ActivatableGUIElement implements ScrollableLis
     }
 
     /** {@inheritDoc} */
-    @Override protected void render(final Graphics2D g)
+    @Override protected void paintComponent(final Graphics2D g)
     {
         final int sh = getSliderHeightPixels();
         final int sy = getSliderPosPixels(sh);

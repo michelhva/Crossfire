@@ -142,9 +142,9 @@ public class GUIDupGauge extends GUIElement implements GUIGaugeListener
     }
 
     /** {@inheritDoc} */
-    @Override protected void render(final Graphics2D g)
+    @Override protected void paintComponent(final Graphics2D g)
     {
-        super.render(g);
+        super.paintComponent(g);
         g.setBackground(new Color(0, 0, 0, 0.0f));
         g.clearRect(0, 0, w, h);
         if (emptyImage != null)
