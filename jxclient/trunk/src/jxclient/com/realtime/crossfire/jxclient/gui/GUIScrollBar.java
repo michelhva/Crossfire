@@ -129,7 +129,8 @@ public class GUIScrollBar extends ActivatableGUIElement implements ScrollableLis
     }
 
     /** {@inheritDoc} */
-    @Override public void mousePressed(final MouseEvent e)
+    @Override
+    public void mousePressed(final MouseEvent e)
     {
         super.mousePressed(e);
         switch (e.getButton())
@@ -160,7 +161,8 @@ public class GUIScrollBar extends ActivatableGUIElement implements ScrollableLis
     }
 
     /** {@inheritDoc} */
-    @Override public void mouseReleased(final MouseEvent e)
+    @Override
+    public void mouseReleased(final MouseEvent e)
     {
         super.mouseReleased(e);
         switch (e.getButton())
@@ -178,7 +180,8 @@ public class GUIScrollBar extends ActivatableGUIElement implements ScrollableLis
     }
 
     /** {@inheritDoc} */
-    @Override public void mouseDragged(final MouseEvent e)
+    @Override
+    public void mouseDragged(final MouseEvent e)
     {
         super.mouseDragged(e);
         if (scrolling)
@@ -239,7 +242,8 @@ public class GUIScrollBar extends ActivatableGUIElement implements ScrollableLis
     }
 
     /** {@inheritDoc} */
-    @Override public void paintComponent(final Graphics g)
+    @Override
+    public void paintComponent(final Graphics g)
     {
         super.paintComponent(g);
         final int sh = getSliderHeightPixels();

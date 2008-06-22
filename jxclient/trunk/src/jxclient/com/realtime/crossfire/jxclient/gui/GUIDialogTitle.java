@@ -64,7 +64,8 @@ public class GUIDialogTitle extends GUIPicture
     }
 
     /* {@inheritDoc} */
-    @Override public void mousePressed(final MouseEvent e)
+    @Override
+    public void mousePressed(final MouseEvent e)
     {
         super.mousePressed(e);
         final Gui gui = getGui();
@@ -79,7 +80,8 @@ public class GUIDialogTitle extends GUIPicture
     }
 
     /* {@inheritDoc} */
-    @Override public void mouseReleased(final MouseEvent e)
+    @Override
+    public void mouseReleased(final MouseEvent e)
     {
         super.mouseReleased(e);
         moveTo(e);
@@ -87,7 +89,8 @@ public class GUIDialogTitle extends GUIPicture
     }
 
     /* {@inheritDoc} */
-    @Override public void mouseDragged(final MouseEvent e)
+    @Override
+    public void mouseDragged(final MouseEvent e)
     {
         super.mouseDragged(e);
         moveTo(e);

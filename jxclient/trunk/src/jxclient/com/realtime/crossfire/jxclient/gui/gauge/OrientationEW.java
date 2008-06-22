@@ -34,7 +34,8 @@ public class OrientationEW extends AbstractOrientation
     }
 
     /** {@inheritDoc} */
-    @Override protected void recalc()
+    @Override
+    protected void recalc()
     {
         if (isNegativeImage())
         {

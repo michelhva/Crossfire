@@ -145,7 +145,8 @@ public class GUIItemFloor extends GUIItemItem
     }
 
     /* {@inheritDoc} */
-    @Override public void button1Clicked(final JXCWindow window)
+    @Override
+    public void button1Clicked(final JXCWindow window)
     {
         final CfItem item = getItem();
         if (item == null)
@@ -157,7 +158,8 @@ public class GUIItemFloor extends GUIItemItem
     }
 
     /* {@inheritDoc} */
-    @Override public void button3Clicked(final JXCWindow window)
+    @Override
+    public void button3Clicked(final JXCWindow window)
     {
         final CfItem item = getItem();
         if (item == null)

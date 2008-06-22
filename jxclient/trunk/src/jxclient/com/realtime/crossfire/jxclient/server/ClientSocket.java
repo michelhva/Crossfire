@@ -128,7 +128,8 @@ public class ClientSocket extends Thread
     }
 
     /** {@inheritDoc} */
-    @Override public void run()
+    @Override
+    public void run()
     {
         try
         {

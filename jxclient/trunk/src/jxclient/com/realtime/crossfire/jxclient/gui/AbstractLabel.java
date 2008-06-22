@@ -83,7 +83,8 @@ public abstract class AbstractLabel extends GUIElement
     }
 
     /** {@inheritDoc} */
-    @Override public void paintComponent(final Graphics g)
+    @Override
+    public void paintComponent(final Graphics g)
     {
         super.paintComponent(g);
         if (backgroundImage != null)

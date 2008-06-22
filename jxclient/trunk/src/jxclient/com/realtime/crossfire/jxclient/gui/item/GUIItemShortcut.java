@@ -102,7 +102,8 @@ public class GUIItemShortcut extends GUIItem
     }
 
     /* {@inheritDoc} */
-    @Override public void button1Clicked(final JXCWindow window)
+    @Override
+    public void button1Clicked(final JXCWindow window)
     {
         final Shortcut shortcut = shortcuts.getShortcut(index);
         if (shortcut != null)
@@ -112,7 +113,8 @@ public class GUIItemShortcut extends GUIItem
     }
 
     /* {@inheritDoc} */
-    @Override public void button2Clicked(final JXCWindow window)
+    @Override
+    public void button2Clicked(final JXCWindow window)
     {
         final Shortcut shortcut = shortcuts.getShortcut(index);
         if (shortcut != null)
@@ -126,7 +128,8 @@ public class GUIItemShortcut extends GUIItem
     }
 
     /* {@inheritDoc} */
-    @Override public void button3Clicked(final JXCWindow window)
+    @Override
+    public void button3Clicked(final JXCWindow window)
     {
         final Spell spell = window.getCurrentSpellManager().getCurrentSpell();
         if (spell == null)
@@ -138,7 +141,8 @@ public class GUIItemShortcut extends GUIItem
     }
 
     /* {@inheritDoc} */
-    @Override public void paintComponent(final Graphics g)
+    @Override
+    public void paintComponent(final Graphics g)
     {
         super.paintComponent(g);
 

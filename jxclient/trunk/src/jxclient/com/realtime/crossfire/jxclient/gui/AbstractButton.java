@@ -93,7 +93,8 @@ public abstract class AbstractButton extends ActivatableGUIElement
     }
 
     /** {@inheritDoc} */
-    @Override public void mouseReleased(final MouseEvent e)
+    @Override
+    public void mouseReleased(final MouseEvent e)
     {
         super.mouseReleased(e);
         final int b = e.getButton();
@@ -120,7 +121,8 @@ public abstract class AbstractButton extends ActivatableGUIElement
     }
 
     /** {@inheritDoc} */
-    @Override public void mousePressed(final MouseEvent e)
+    @Override
+    public void mousePressed(final MouseEvent e)
     {
         super.mousePressed(e);
         final int b = e.getButton();
@@ -144,7 +146,8 @@ public abstract class AbstractButton extends ActivatableGUIElement
     }
 
     /** {@inheritDoc} */
-    @Override public void mouseExited(final MouseEvent e)
+    @Override
+    public void mouseExited(final MouseEvent e)
     {
         if (autoRepeat)
         {

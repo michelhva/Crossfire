@@ -157,7 +157,8 @@ public class Spell
         return internalName;
     }
 
-    @Override public String toString()
+    @Override
+    public String toString()
     {
         return "Name:"+name
             +" ID:"+tag

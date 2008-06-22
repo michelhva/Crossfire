@@ -27,13 +27,15 @@ package com.realtime.crossfire.jxclient.settings.options;
 public class PassiveCheckBoxOption extends CheckBoxOption
 {
     /** {@inheritDoc} */
-    @Override protected void execute(final boolean checked)
+    @Override
+    protected void execute(final boolean checked)
     {
         // nothing
     }
 
     /** {@inheritDoc} */
-    @Override public boolean isDefaultChecked()
+    @Override
+    public boolean isDefaultChecked()
     {
         return true;
     }

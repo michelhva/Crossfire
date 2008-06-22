@@ -130,7 +130,8 @@ public class Face
     }
 
     /** {@inheritDoc} */
-    @Override public String toString()
+    @Override
+    public String toString()
     {
         return faceName;
     }
@@ -154,13 +155,15 @@ public class Face
     }
 
     /** {@inheritDoc} */
-    @Override public int hashCode()
+    @Override
+    public int hashCode()
     {
         return faceChecksum;
     }
 
     /** {@inheritDoc} */
-    @Override public boolean equals(final Object obj)
+    @Override
+    public boolean equals(final Object obj)
     {
         if (obj == null) return false;
         if (obj.getClass() != Face.class) return false;

@@ -69,7 +69,8 @@ public class GUIHTMLLabel extends AbstractLabel
     }
 
     /** {@inheritDoc} */
-    @Override protected void textChanged()
+    @Override
+    protected void textChanged()
     {
         autoResize();
         setChanged();
@@ -92,7 +93,8 @@ public class GUIHTMLLabel extends AbstractLabel
     }
 
     /** {@inheritDoc} */
-    @Override public void paintComponent(final Graphics g)
+    @Override
+    public void paintComponent(final Graphics g)
     {
         super.paintComponent(g);
         if (font == null)

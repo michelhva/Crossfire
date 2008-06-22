@@ -330,7 +330,8 @@ public class JXCWindow extends JFrame implements KeyListener, CrossfireDrawextin
     private final WindowFocusListener windowFocusListener = new WindowAdapter()
     {
         /** {@inheritDoc} */
-        @Override public void windowLostFocus(final WindowEvent e)
+        @Override
+        public void windowLostFocus(final WindowEvent e)
         {
             Arrays.fill(keyShift, false);
             commandQueue.stopRunning();
@@ -383,7 +384,8 @@ public class JXCWindow extends JFrame implements KeyListener, CrossfireDrawextin
     private final WindowListener windowListener = new WindowAdapter()
     {
         /** {@inheritDoc} */
-        @Override public void windowClosing(final WindowEvent e)
+        @Override
+        public void windowClosing(final WindowEvent e)
         {
             if (keyBindingState != null)
             {
@@ -403,7 +405,8 @@ public class JXCWindow extends JFrame implements KeyListener, CrossfireDrawextin
         }
 
         /** {@inheritDoc} */
-        @Override public void windowClosed(final WindowEvent e)
+        @Override
+        public void windowClosed(final WindowEvent e)
         {
             endRendering();
         }
@@ -1220,7 +1223,8 @@ public class JXCWindow extends JFrame implements KeyListener, CrossfireDrawextin
     }
 
     /** {@inheritDoc} */
-    @Override public void paint(final Graphics g)
+    @Override
+    public void paint(final Graphics g)
     {
         windowRenderer.repaint();
     }

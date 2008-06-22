@@ -160,7 +160,8 @@ public class GUIItemSpelllist extends GUIItem
     }
 
     /* {@inheritDoc} */
-    @Override public void button1Clicked(final JXCWindow window)
+    @Override
+    public void button1Clicked(final JXCWindow window)
     {
         if (spell == null)
         {
@@ -172,17 +173,20 @@ public class GUIItemSpelllist extends GUIItem
     }
 
     /* {@inheritDoc} */
-    @Override public void button2Clicked(final JXCWindow window)
+    @Override
+    public void button2Clicked(final JXCWindow window)
     {
     }
 
     /* {@inheritDoc} */
-    @Override public void button3Clicked(final JXCWindow window)
+    @Override
+    public void button3Clicked(final JXCWindow window)
     {
     }
 
     /* {@inheritDoc} */
-    @Override public void paintComponent(final Graphics g)
+    @Override
+    public void paintComponent(final Graphics g)
     {
         super.paintComponent(g);
 

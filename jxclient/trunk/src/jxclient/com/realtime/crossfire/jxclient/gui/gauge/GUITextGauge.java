@@ -75,7 +75,8 @@ public class GUITextGauge extends GUIGauge
     }
 
     /** {@inheritDoc} */
-    @Override public void paintComponent(final Graphics g)
+    @Override
+    public void paintComponent(final Graphics g)
     {
         super.paintComponent(g);
 
@@ -94,7 +95,8 @@ public class GUITextGauge extends GUIGauge
     }
 
     /** {@inheritDoc} */
-    @Override public void setValues(final int curValue, final int minValue, final int maxValue, final String labelText, final String tooltipText)
+    @Override
+    public void setValues(final int curValue, final int minValue, final int maxValue, final String labelText, final String tooltipText)
     {
         super.setValues(curValue, minValue, maxValue, labelText, tooltipText);
         this.labelText = labelText;

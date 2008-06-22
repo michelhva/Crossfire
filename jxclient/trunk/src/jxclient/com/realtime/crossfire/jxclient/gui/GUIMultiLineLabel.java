@@ -86,14 +86,16 @@ public class GUIMultiLineLabel extends GUILabel
     }
 
     /** {@inheritDoc} */
-    @Override protected void textChanged()
+    @Override
+    protected void textChanged()
     {
         lines = lineSeparatorPattern.split(getText(), -1);
         super.textChanged();
     }
 
     /** {@inheritDoc} */
-    @Override public void paintComponent(final Graphics g)
+    @Override
+    public void paintComponent(final Graphics g)
     {
         super.paintComponent(g);
 

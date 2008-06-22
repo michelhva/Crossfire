@@ -73,7 +73,8 @@ public class Location
     }
 
     /** {@inheritDoc} */
-    @Override public boolean equals(final Object obj)
+    @Override
+    public boolean equals(final Object obj)
     {
         if (obj == null) return false;
         if (obj.getClass() != Location.class) return false;
@@ -82,13 +83,15 @@ public class Location
     }
 
     /** {@inheritDoc} */
-    @Override public int hashCode()
+    @Override
+    public int hashCode()
     {
         return x^y*0x1000^layer*0x1000000;
     }
 
     /** {@inheritDoc} */
-    @Override public String toString()
+    @Override
+    public String toString()
     {
         return x+"/"+y+"/"+layer;
     }

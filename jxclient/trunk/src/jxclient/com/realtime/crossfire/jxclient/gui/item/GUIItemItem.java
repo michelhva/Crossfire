@@ -146,7 +146,8 @@ public abstract class GUIItemItem extends GUIItem
     }
 
     /** {@inheritDoc} */
-    @Override public void paintComponent(final Graphics g)
+    @Override
+    public void paintComponent(final Graphics g)
     {
         super.paintComponent(g);
 
@@ -233,7 +234,8 @@ public abstract class GUIItemItem extends GUIItem
     }
 
     /* {@inheritDoc} */
-    @Override public void button2Clicked(final JXCWindow window)
+    @Override
+    public void button2Clicked(final JXCWindow window)
     {
         final CfItem tmpItem = item;
         if (tmpItem == null)

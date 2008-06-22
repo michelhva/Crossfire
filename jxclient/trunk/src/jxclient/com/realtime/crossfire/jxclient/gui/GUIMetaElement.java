@@ -106,7 +106,8 @@ public class GUIMetaElement extends ActivatableGUIElement implements GUIScrollab
     }
 
     /** {@inheritDoc} */
-    @Override public void paintComponent(final Graphics g)
+    @Override
+    public void paintComponent(final Graphics g)
     {
         super.paintComponent(g);
 
@@ -124,7 +125,8 @@ public class GUIMetaElement extends ActivatableGUIElement implements GUIScrollab
     }
 
     /** {@inheritDoc} */
-    @Override public void mouseClicked(final MouseEvent e)
+    @Override
+    public void mouseClicked(final MouseEvent e)
     {
         super.mouseClicked(e);
         final int b = e.getButton();
@@ -180,7 +182,8 @@ public class GUIMetaElement extends ActivatableGUIElement implements GUIScrollab
     }
 
     /** {@inheritDoc} */
-    @Override protected void activeChanged()
+    @Override
+    protected void activeChanged()
     {
         super.activeChanged();
 
