@@ -26,6 +26,7 @@ import com.realtime.crossfire.jxclient.window.JXCWindow;
 import java.awt.Color;
 import java.awt.Graphics2D;
 import java.awt.Transparency;
+import java.awt.Graphics;
 import java.awt.font.FontRenderContext;
 import java.awt.image.BufferedImage;
 import java.util.ArrayList;
@@ -127,14 +128,15 @@ public abstract class GUILog extends GUIElement implements GUIScrollable2
     }
 
     /** {@inheritDoc} */
-    @Override public void paintComponent(final Graphics2D g)
+    @Override public void paintComponent(final Graphics g)
     {
         if (renderStateManager == null)
         {
             return;
         }
 
-        g.setBackground(new Color(0, 0, 0, 0.0f));
+        final Graphics2D g2 = (Graphics2D)g;
+        g2.setBackground(new Color(0, 0, 0, 0.0f));
         g.clearRect(0, 0, w, h);
         if (backgroundImage != null)
         {
@@ -160,7 +162,7 @@ public abstract class GUILog extends GUIElement implements GUIScrollable2
      *
      * @param line The line to draw.
      */
-    private void drawLine(final Graphics2D g, final int y, final Line line)
+    private void drawLine(final Graphics g, final int y, final Line line)
     {
         for (final Segment segment : line)
         {

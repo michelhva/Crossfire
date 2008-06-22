@@ -23,6 +23,7 @@ import com.realtime.crossfire.jxclient.window.JXCWindow;
 import java.awt.Color;
 import java.awt.Font;
 import java.awt.Graphics2D;
+import java.awt.Graphics;
 import java.awt.geom.Rectangle2D;
 import java.awt.image.BufferedImage;
 
@@ -74,7 +75,7 @@ public class GUITextGauge extends GUIGauge
     }
 
     /** {@inheritDoc} */
-    @Override public void paintComponent(final Graphics2D g)
+    @Override public void paintComponent(final Graphics g)
     {
         super.paintComponent(g);
 
@@ -83,11 +84,12 @@ public class GUITextGauge extends GUIGauge
             return;
         }
 
-        g.setBackground(new Color(0, 0, 0, 0.0f));
+        final Graphics2D g2 = (Graphics2D)g;
+        g2.setBackground(new Color(0, 0, 0, 0.0f));
         g.setColor(color);
         g.setFont(font);
         final String text = labelText;
-        final Rectangle2D rect = font.getStringBounds(text, g.getFontRenderContext());
+        final Rectangle2D rect = font.getStringBounds(text, g2.getFontRenderContext());
         g.drawString(text, (int)Math.round((w-rect.getWidth())/2), (int)Math.round((h-rect.getMaxY()-rect.getMinY()))/2);
     }
 

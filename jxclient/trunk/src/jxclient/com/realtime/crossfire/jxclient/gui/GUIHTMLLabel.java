@@ -23,6 +23,7 @@ import com.realtime.crossfire.jxclient.window.JXCWindow;
 import java.awt.Color;
 import java.awt.Font;
 import java.awt.Graphics2D;
+import java.awt.Graphics;
 import java.awt.font.FontRenderContext;
 import java.awt.geom.Rectangle2D;
 import java.awt.image.BufferedImage;
@@ -91,7 +92,7 @@ public class GUIHTMLLabel extends AbstractLabel
     }
 
     /** {@inheritDoc} */
-    @Override public void paintComponent(final Graphics2D g)
+    @Override public void paintComponent(final Graphics g)
     {
         super.paintComponent(g);
         if (font == null)

@@ -32,6 +32,7 @@ import com.realtime.crossfire.jxclient.window.JXCWindow;
 import java.awt.Color;
 import java.awt.Font;
 import java.awt.Graphics2D;
+import java.awt.Graphics;
 import java.awt.image.BufferedImage;
 
 public class GUIItemShortcut extends GUIItem
@@ -137,11 +138,12 @@ public class GUIItemShortcut extends GUIItem
     }
 
     /* {@inheritDoc} */
-    @Override public void paintComponent(final Graphics2D g)
+    @Override public void paintComponent(final Graphics g)
     {
         super.paintComponent(g);
 
-        g.setBackground(BACKGROUND_COLOR);
+        final Graphics2D g2 = (Graphics2D)g;
+        g2.setBackground(BACKGROUND_COLOR);
         g.clearRect(0, 0, w, h);
 
         final Shortcut shortcut = shortcuts.getShortcut(index);

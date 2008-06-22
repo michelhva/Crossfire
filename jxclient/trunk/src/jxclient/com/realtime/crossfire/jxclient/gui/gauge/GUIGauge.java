@@ -24,6 +24,7 @@ import com.realtime.crossfire.jxclient.window.JXCWindow;
 import java.awt.Color;
 import java.awt.Graphics2D;
 import java.awt.Transparency;
+import java.awt.Graphics;
 import java.awt.image.BufferedImage;
 
 /**
@@ -126,10 +127,11 @@ public class GUIGauge extends GUIElement implements GUIGaugeListener
     }
 
     /** {@inheritDoc} */
-    @Override public void paintComponent(final Graphics2D g)
+    @Override public void paintComponent(final Graphics g)
     {
         super.paintComponent(g);
-        g.setBackground(new Color(0, 0, 0, 0.0f));
+        final Graphics2D g2 = (Graphics2D)g;
+        g2.setBackground(new Color(0, 0, 0, 0.0f));
         g.clearRect(0, 0, w, h);
         if (emptyImage != null)
         {

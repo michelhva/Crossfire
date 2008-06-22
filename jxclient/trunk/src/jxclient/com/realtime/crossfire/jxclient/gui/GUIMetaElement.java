@@ -28,6 +28,7 @@ import java.awt.Color;
 import java.awt.Font;
 import java.awt.Graphics2D;
 import java.awt.Transparency;
+import java.awt.Graphics;
 import java.awt.event.MouseEvent;
 import java.awt.image.BufferedImage;
 
@@ -105,12 +106,13 @@ public class GUIMetaElement extends ActivatableGUIElement implements GUIScrollab
     }
 
     /** {@inheritDoc} */
-    @Override public void paintComponent(final Graphics2D g)
+    @Override public void paintComponent(final Graphics g)
     {
         super.paintComponent(g);
 
         final MetaserverEntry metaEntry = metaserver.getEntry(index);
-        g.setBackground(new Color(0, 0, 0, 0.0f));
+        final Graphics2D g2 = (Graphics2D)g;
+        g2.setBackground(new Color(0, 0, 0, 0.0f));
         g.clearRect(0, 0, w, h);
         g.setFont(font);
         g.setColor(isActive() ? Color.RED : Color.GRAY);

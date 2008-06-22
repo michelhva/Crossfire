@@ -23,6 +23,7 @@ import com.realtime.crossfire.jxclient.window.JXCWindow;
 import java.awt.Color;
 import java.awt.Font;
 import java.awt.Graphics2D;
+import java.awt.Graphics;
 import java.awt.geom.Rectangle2D;
 import java.awt.image.BufferedImage;
 import java.util.regex.Pattern;
@@ -92,7 +93,7 @@ public class GUIMultiLineLabel extends GUILabel
     }
 
     /** {@inheritDoc} */
-    @Override public void paintComponent(final Graphics2D g)
+    @Override public void paintComponent(final Graphics g)
     {
         super.paintComponent(g);
 
@@ -107,13 +108,14 @@ public class GUIMultiLineLabel extends GUILabel
             return;
         }
 
-        final Rectangle2D rect = font.getStringBounds("X", g.getFontRenderContext());
+        final Graphics2D g2 = (Graphics2D)g;
+        final Rectangle2D rect = font.getStringBounds("X", g2.getFontRenderContext());
         lineHeight = (int)Math.round(rect.getMaxY()-rect.getMinY()+0.5);
 
         int y = 0;
         for (final String line : lines)
         {
-            y += drawLine(g, y, lineHeight, line);
+            y += drawLine(g2, y, lineHeight, line);
         }
     }
 }

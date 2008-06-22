@@ -23,6 +23,7 @@ import com.realtime.crossfire.jxclient.window.JXCWindow;
 import java.awt.Color;
 import java.awt.Graphics2D;
 import java.awt.Transparency;
+import java.awt.Graphics;
 import java.awt.image.BufferedImage;
 import javax.swing.ImageIcon;
 
@@ -82,7 +83,7 @@ public abstract class AbstractLabel extends GUIElement
     }
 
     /** {@inheritDoc} */
-    @Override public void paintComponent(final Graphics2D g)
+    @Override public void paintComponent(final Graphics g)
     {
         super.paintComponent(g);
         if (backgroundImage != null)
@@ -91,7 +92,8 @@ public abstract class AbstractLabel extends GUIElement
         }
         else
         {
-            g.setBackground(backgroundColor);
+            final Graphics2D g2 = (Graphics2D)g;
+            g2.setBackground(backgroundColor);
             g.clearRect(0, 0, w, h);
         }
     }

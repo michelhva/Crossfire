@@ -30,6 +30,7 @@ import com.realtime.crossfire.jxclient.window.JXCWindow;
 import java.awt.Color;
 import java.awt.Font;
 import java.awt.Graphics2D;
+import java.awt.Graphics;
 import java.awt.geom.Rectangle2D;
 import java.awt.image.BufferedImage;
 
@@ -145,11 +146,12 @@ public abstract class GUIItemItem extends GUIItem
     }
 
     /** {@inheritDoc} */
-    @Override public void paintComponent(final Graphics2D g)
+    @Override public void paintComponent(final Graphics g)
     {
         super.paintComponent(g);
 
-        g.setBackground(BACKGROUND_COLOR);
+        final Graphics2D g2 = (Graphics2D)g;
+        g2.setBackground(BACKGROUND_COLOR);
         g.clearRect(0, 0, w, h);
 
         final CfItem tmpItem = item;
@@ -188,9 +190,9 @@ public abstract class GUIItemItem extends GUIItem
         {
             g.setFont(font);
             g.setColor(nrofColor);
-            g.setBackground(new Color(0, 0, 0, 0.0f));
-            renderText(g, h, 0, h/2, tmpItem.getTooltipText1());
-            renderText(g, h, h/2, h/2, tmpItem.getTooltipText2());
+            g2.setBackground(new Color(0, 0, 0, 0.0f));
+            renderText(g2, h, 0, h/2, tmpItem.getTooltipText1());
+            renderText(g2, h, h/2, h/2, tmpItem.getTooltipText2());
         }
     }
 
@@ -207,7 +209,7 @@ public abstract class GUIItemItem extends GUIItem
      * @param color the color to use
      * @param isActive whether painting should be done at all
      */
-    private void paintColor(final Graphics2D g, final Color color, final boolean isActive)
+    private void paintColor(final Graphics g, final Color color, final boolean isActive)
     {
         if (isActive && color != null)
         {
@@ -222,7 +224,7 @@ public abstract class GUIItemItem extends GUIItem
      * @param image the image to paint
      * @param isActive whether painting should be done at all
      */
-    private static void paintImage(final Graphics2D g, final BufferedImage image, final boolean isActive)
+    private static void paintImage(final Graphics g, final BufferedImage image, final boolean isActive)
     {
         if (isActive)
         {
