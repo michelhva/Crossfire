@@ -23,6 +23,7 @@ import java.awt.Color;
 import java.awt.Font;
 import java.awt.FontMetrics;
 import java.awt.Graphics2D;
+import java.awt.Graphics;
 import java.util.Stack;
 import javax.swing.text.MutableAttributeSet;
 import javax.swing.text.html.HTML;
@@ -37,7 +38,7 @@ public class InternalHTMLRenderer extends HTMLEditorKit.ParserCallback
 
     private final Stack<Color> colors = new Stack<Color>();
 
-    private final Graphics2D gc;
+    private final Graphics gc;
 
     private int x = 0;
 
@@ -47,7 +48,7 @@ public class InternalHTMLRenderer extends HTMLEditorKit.ParserCallback
 
     private final int borderSize;
 
-    public InternalHTMLRenderer(final Font font, final Color color, final Graphics2D gc, final int x, final int y, final int borderSize)
+    public InternalHTMLRenderer(final Font font, final Color color, final Graphics gc, final int x, final int y, final int borderSize)
     {
         fonts.push(font);
         colors.push(color);

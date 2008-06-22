@@ -23,6 +23,7 @@ import com.realtime.crossfire.jxclient.window.JXCWindow;
 import java.awt.Color;
 import java.awt.Graphics2D;
 import java.awt.Transparency;
+import java.awt.Graphics;
 import java.awt.event.MouseEvent;
 
 /**
@@ -239,7 +240,7 @@ public class GUIScrollBar extends ActivatableGUIElement implements ScrollableLis
     }
 
     /** {@inheritDoc} */
-    @Override public void paintComponent(final Graphics2D g)
+    @Override public void paintComponent(final Graphics g)
     {
         final int sh = getSliderHeightPixels();
         final int sy = getSliderPosPixels(sh);

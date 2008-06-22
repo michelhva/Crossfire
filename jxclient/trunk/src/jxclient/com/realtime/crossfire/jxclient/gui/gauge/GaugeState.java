@@ -21,6 +21,7 @@ package com.realtime.crossfire.jxclient.gui.gauge;
 
 import com.realtime.crossfire.jxclient.gui.GUIElement;
 import java.awt.Graphics2D;
+import java.awt.Graphics;
 import java.awt.image.BufferedImage;
 
 /**
@@ -126,7 +127,7 @@ public class GaugeState
      * Draws the gauge image into the given graphics context.
      * @param g the graphics context
      */
-    public void draw(final Graphics2D g)
+    public void draw(final Graphics g)
     {
         if (filledPicture != null)
         {

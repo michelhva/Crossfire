@@ -27,6 +27,7 @@ import java.awt.Font;
 import java.awt.Graphics2D;
 import java.awt.Toolkit;
 import java.awt.Transparency;
+import java.awt.Graphics;
 import java.awt.datatransfer.Clipboard;
 import java.awt.datatransfer.DataFlavor;
 import java.awt.datatransfer.Transferable;
@@ -128,7 +129,7 @@ public abstract class GUIText extends ActivatableGUIElement implements KeyListen
     }
 
     /** {@inheritDoc} */
-    @Override public void paintComponent(final Graphics2D g)
+    @Override public void paintComponent(final Graphics g)
     {
         super.paintComponent(g);
 
@@ -139,14 +140,15 @@ public abstract class GUIText extends ActivatableGUIElement implements KeyListen
         synchronized (syncCursor)
         {
             tmp = getDisplayText();
-            final Rectangle2D rect = font.getStringBounds(tmp, g.getFontRenderContext());
+            final Graphics2D g2 = (Graphics2D)g;
+            final Rectangle2D rect = font.getStringBounds(tmp, g2.getFontRenderContext());
             y = (int)Math.round((h-rect.getMaxY()-rect.getMinY()))/2;
             if (isActive())
             {
                 final String tmpPrefix = tmp.substring(0, cursor-offset);
                 final String tmpCursor = tmp.substring(0, cursor-offset+1);
-                final Rectangle2D rectPrefix = font.getStringBounds(tmpPrefix, g.getFontRenderContext());
-                final Rectangle2D rectCursor = font.getStringBounds(tmpCursor, g.getFontRenderContext());
+                final Rectangle2D rectPrefix = font.getStringBounds(tmpPrefix, g2.getFontRenderContext());
+                final Rectangle2D rectCursor = font.getStringBounds(tmpCursor, g2.getFontRenderContext());
                 final int cursorX1 = (int)(rectPrefix.getWidth()+0.5);
                 final int cursorX2 = (int)(rectCursor.getWidth()+0.5);
                 g.setColor(inactiveColor);

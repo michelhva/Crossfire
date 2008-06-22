@@ -121,13 +121,14 @@ public class GUITextButton extends AbstractButton
     }
 
     /** {@inheritDoc} */
-    @Override public void paintComponent(final Graphics2D g)
+    @Override public void paintComponent(final Graphics g)
     {
         super.paintComponent(g);
         g.setFont(font);
         g.setColor(color);
         (isActive() ? down : up).render(g, getWidth());
-        final Rectangle2D rect = font.getStringBounds(text, g.getFontRenderContext());
+        final Graphics2D g2 = (Graphics2D)g;
+        final Rectangle2D rect = font.getStringBounds(text, g2.getFontRenderContext());
         final int y = (int)Math.round((h-rect.getMaxY()-rect.getMinY()))/2;
         g.drawString(text, (int)Math.round((w-rect.getWidth())/2), y);
     }

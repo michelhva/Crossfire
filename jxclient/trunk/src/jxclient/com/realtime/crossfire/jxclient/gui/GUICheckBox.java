@@ -26,6 +26,7 @@ import java.awt.Color;
 import java.awt.Font;
 import java.awt.Graphics2D;
 import java.awt.Transparency;
+import java.awt.Graphics;
 import java.awt.event.MouseEvent;
 import java.awt.geom.Rectangle2D;
 import java.awt.image.BufferedImage;
@@ -128,14 +129,15 @@ public class GUICheckBox extends ActivatableGUIElement
     }
 
     /** {@inheritDoc} */
-    @Override public void paintComponent(final Graphics2D g)
+    @Override public void paintComponent(final Graphics g)
     {
-        g.setBackground(new Color(0, 0, 0, 0.0f));
+        final Graphics2D g2 = (Graphics2D)g;
+        g2.setBackground(new Color(0, 0, 0, 0.0f));
         g.clearRect(0, 0, w, h);
         g.setFont(font);
         g.setColor(color);
         g.drawImage(option.isChecked() ? checkedImage : uncheckedImage, 0, 0, null);
-        final Rectangle2D rect = font.getStringBounds(text, g.getFontRenderContext());
+        final Rectangle2D rect = font.getStringBounds(text, g2.getFontRenderContext());
         final int y = (int)Math.round((h-rect.getMaxY()-rect.getMinY()))/2;
         g.drawString(text, checkedImage.getWidth()+4, y);
     }
