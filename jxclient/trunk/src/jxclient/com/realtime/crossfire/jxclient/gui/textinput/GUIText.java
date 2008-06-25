@@ -338,7 +338,7 @@ public abstract class GUIText extends ActivatableGUIElement implements KeyListen
             break;
 
         default:
-            if (ch != KeyEvent.CHAR_UNDEFINED && ch >= ' ')
+            if (ch != KeyEvent.CHAR_UNDEFINED && ch != (char)127 && ch >= ' ')
             {
                 insertChar(ch);
             }
