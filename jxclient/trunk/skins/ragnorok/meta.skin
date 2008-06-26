@@ -3,15 +3,15 @@ picture background_black 0 0 1600 1600 black 1
 picture background WIDTH/2-512 HEIGHT/2-384 1024 768 background_metaserver 1
 text metaurl WIDTH/2+18 HEIGHT/2+236 260 20 textarea_big_active textarea_big_inactive font_metaurl GRAY WHITE 2 command_metaconnect
 label_html metacomment WIDTH/2-312 HEIGHT/2+266 500 118 font_label WHITE
-meta_element metaselect1 WIDTH/2-242 HEIGHT/2-149 480 20 null font_metaurl metaurl metacomment 0 "(%P) %H (%V) - %D" "%C<br><br>Players online: %P<br>Server version: %V"
-meta_element metaselect2 WIDTH/2-242 HEIGHT/2-119 480 20 null font_metaurl metaurl metacomment 1 "(%P) %H (%V) - %D" "%C<br><br>Players online: %P<br>Server version: %V"
-meta_element metaselect3 WIDTH/2-242 HEIGHT/2-89 480 20 null font_metaurl metaurl metacomment 2 "(%P) %H (%V) - %D" "%C<br><br>Players online: %P<br>Server version: %V"
-meta_element metaselect4 WIDTH/2-242 HEIGHT/2-59 480 20 null font_metaurl metaurl metacomment 3 "(%P) %H (%V) - %D" "%C<br><br>Players online: %P<br>Server version: %V"
-meta_element metaselect5 WIDTH/2-242 HEIGHT/2-29 480 20 null font_metaurl metaurl metacomment 4 "(%P) %H (%V) - %D" "%C<br><br>Players online: %P<br>Server version: %V"
-meta_element metaselect6 WIDTH/2-242 HEIGHT/2+1 480 20 null font_metaurl metaurl metacomment 5 "(%P) %H (%V) - %D" "%C<br><br>Players online: %P<br>Server version: %V"
-meta_element metaselect7 WIDTH/2-242 HEIGHT/2+31 480 20 null font_metaurl metaurl metacomment 6 "(%P) %H (%V) - %D" "%C<br><br>Players online: %P<br>Server version: %V"
-meta_element metaselect8 WIDTH/2-242 HEIGHT/2+61 480 20 null font_metaurl metaurl metacomment 7 "(%P) %H (%V) - %D" "%C<br><br>Players online: %P<br>Server version: %V"
-meta_element metaselect9 WIDTH/2-242 HEIGHT/2+91 480 20 null font_metaurl metaurl metacomment 8 "(%P) %H (%V) - %D" "%C<br><br>Players online: %P<br>Server version: %V"
+meta_element metaselect1 WIDTH/2-242 HEIGHT/2-149 480 20 null font_metaurl metaurl metacomment 0 "(%P) %H (%V) - %D" "%C<br><br>Players online: %P<br><br>Archetypes: %A<br>Maps: %M<br>Server: %E (%V)"
+meta_element metaselect2 WIDTH/2-242 HEIGHT/2-119 480 20 null font_metaurl metaurl metacomment 1 "(%P) %H (%V) - %D" "%C<br><br>Players online: %P<br><br>Archetypes: %A<br>Maps: %M<br>Server: %E (%V)"
+meta_element metaselect3 WIDTH/2-242 HEIGHT/2-89 480 20 null font_metaurl metaurl metacomment 2 "(%P) %H (%V) - %D" "%C<br><br>Players online: %P<br><br>Archetypes: %A<br>Maps: %M<br>Server: %E (%V)"
+meta_element metaselect4 WIDTH/2-242 HEIGHT/2-59 480 20 null font_metaurl metaurl metacomment 3 "(%P) %H (%V) - %D" "%C<br><br>Players online: %P<br><br>Archetypes: %A<br>Maps: %M<br>Server: %E (%V)"
+meta_element metaselect5 WIDTH/2-242 HEIGHT/2-29 480 20 null font_metaurl metaurl metacomment 4 "(%P) %H (%V) - %D" "%C<br><br>Players online: %P<br><br>Archetypes: %A<br>Maps: %M<br>Server: %E (%V)"
+meta_element metaselect6 WIDTH/2-242 HEIGHT/2+1 480 20 null font_metaurl metaurl metacomment 5 "(%P) %H (%V) - %D" "%C<br><br>Players online: %P<br><br>Archetypes: %A<br>Maps: %M<br>Server: %E (%V)"
+meta_element metaselect7 WIDTH/2-242 HEIGHT/2+31 480 20 null font_metaurl metaurl metacomment 6 "(%P) %H (%V) - %D" "%C<br><br>Players online: %P<br><br>Archetypes: %A<br>Maps: %M<br>Server: %E (%V)"
+meta_element metaselect8 WIDTH/2-242 HEIGHT/2+61 480 20 null font_metaurl metaurl metacomment 7 "(%P) %H (%V) - %D" "%C<br><br>Players online: %P<br><br>Archetypes: %A<br>Maps: %M<br>Server: %E (%V)"
+meta_element metaselect9 WIDTH/2-242 HEIGHT/2+91 480 20 null font_metaurl metaurl metacomment 8 "(%P) %H (%V) - %D" "%C<br><br>Players online: %P<br><br>Archetypes: %A<br>Maps: %M<br>Server: %E (%V)"
 
 commandlist_add command_metaconnect metaurl CONNECT
 

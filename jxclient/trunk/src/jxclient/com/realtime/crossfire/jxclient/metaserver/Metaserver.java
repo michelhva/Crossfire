@@ -20,16 +20,18 @@
 package com.realtime.crossfire.jxclient.metaserver;
 
 import java.io.BufferedReader;
-import java.io.DataInputStream;
 import java.io.File;
 import java.io.IOException;
+import java.io.InputStream;
 import java.io.InputStreamReader;
-import java.net.Socket;
+import java.net.HttpURLConnection;
+import java.net.URL;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+import java.util.Properties;
 
 /**
  *
@@ -48,9 +50,10 @@ public class Metaserver
      */
     public static final long EXPIRE_INTERVAL = 60*60*24*2;
 
-    private static final String METASERVER_NAME = "crossfire.real-time.com";
-
-    private static final int METASERVER_PORT = 13326;
+    /**
+     * The metaserver URL.
+     */
+    private static final String METASERVER_URL = "http://crossfire.real-time.com/metaserver2/meta_client.php";
 
     private final List<MetaserverEntry> metalist = new ArrayList<MetaserverEntry>();
 
@@ -157,41 +160,62 @@ public class Metaserver
         serverCache.expire(EXPIRE_INTERVAL*1000);
         final Map<String, MetaserverEntry> oldEntries = serverCache.getAll();
 
-        parseEntry(oldEntries, "127.0.0.1|0|localhost|0|--|Local server. Start server before you try to connect.|0|0|0");
+        final MetaserverEntry localhostMetaserverEntry = MetaserverEntryParser.parseEntry("0|localhost|0|--|Local server. Start server before you try to connect.|0|0|0|||");
+        assert localhostMetaserverEntry != null;
+        metalist.add(localhostMetaserverEntry);
+        oldEntries.remove(ServerCache.makeKey(localhostMetaserverEntry));
+        serverCache.put(localhostMetaserverEntry);
+
         try
         {
-            final Socket socket = new Socket(METASERVER_NAME, METASERVER_PORT);
-            try
-            {
-                final DataInputStream in = new DataInputStream(socket.getInputStream());
-                try
-                {
-                    final BufferedReader bin = new BufferedReader(new InputStreamReader(in));
-                    try
-                    {
-                        for (;;)
-                        {
-                            final String entry = bin.readLine();
-                            if (entry == null)
-                            {
-                                break;
-                            }
-                            parseEntry(oldEntries, entry);
-                        }
-                    }
-                    finally
-                    {
-                        bin.close();
-                    }
-                }
-                finally
-                {
-                    in.close();
+            final URL url = new URL(METASERVER_URL);
+            final String httpProxy = System.getenv("http_proxy");
+            if (httpProxy != null && httpProxy.length() > 0) {
+                if (httpProxy.regionMatches(true, 0, "http://", 0, 7)) {
+                    final String[] tmp = httpProxy.substring(7).replaceAll("/.*", "").split(":", 2);
+                    final String proxy = tmp[0];
+                    final String port = tmp.length >= 2 ? tmp[1] : "80";
+                    final Properties systemProperties = System.getProperties();
+                    systemProperties.setProperty("http.proxyHost", proxy);
+                    systemProperties.setProperty("http.proxyPort", port);
+                } else {
+                    System.err.println("Warning: unsupported http_proxy protocol: "+httpProxy);
                 }
             }
-            finally
-            {
-                socket.close();
+            final HttpURLConnection conn = (HttpURLConnection)url.openConnection();
+            try {
+                conn.setRequestMethod("GET");
+                conn.setUseCaches(false);
+                conn.connect();
+                if (conn.getResponseCode() == HttpURLConnection.HTTP_OK) {
+                    final InputStream in = conn.getInputStream();
+                    final InputStreamReader isr = new InputStreamReader(in, "ISO-8859-1");
+                    try {
+                        final BufferedReader br = new BufferedReader(isr);
+                        try {
+                            final MetaserverEntryParser metaserverEntryParser = new MetaserverEntryParser();
+                            for (;;) {
+                                final String line = br.readLine();
+                                if (line == null) {
+                                    break;
+                                }
+
+                                final MetaserverEntry metaserverEntry = metaserverEntryParser.parseLine(line);
+                                if (metaserverEntry != null) {
+                                    metalist.add(metaserverEntry);
+                                    oldEntries.remove(ServerCache.makeKey(metaserverEntry));
+                                    serverCache.put(metaserverEntry);
+                                }
+                            }
+                        } finally {
+                            br.close();
+                        }
+                    } finally {
+                        isr.close();
+                    }
+                }
+            } finally {
+                conn.disconnect();
             }
         }
         catch (final IOException ex)
@@ -220,26 +244,6 @@ public class Metaserver
         }
 
         serverCache.save();
-    }
-
-    /**
-     * Parse a metaserver response line and add an entry to {@link #metalist}.
-     *
-     * @param oldEntries Previously known metaserver entries.
-     *
-     * @param entry The metaserver response lines to parse.
-     */
-    private void parseEntry(final Map<String, MetaserverEntry> oldEntries, final String entry)
-    {
-        final MetaserverEntry metaserverEntry = MetaserverEntryParser.parse(entry);
-        if (metaserverEntry == null)
-        {
-            System.err.println("Dropping invalid metaserver response line: "+entry);
-            return;
-        }
-        metalist.add(metaserverEntry);
-        oldEntries.remove(ServerCache.makeKey(metaserverEntry));
-        serverCache.put(metaserverEntry);
     }
 
     /**

@@ -33,8 +33,6 @@ public class MetaserverEntry implements Comparable<MetaserverEntry>
      */
     private static final Pattern htmlTagMatcher = Pattern.compile("<[^>]*>");
 
-    private final String ipAddress;
-
     private final int updateSeconds;
 
     private final String hostname;
@@ -51,9 +49,14 @@ public class MetaserverEntry implements Comparable<MetaserverEntry>
 
     private final int uptimeSeconds;
 
-    public MetaserverEntry(final String ipAddress, final int updateSeconds, final String hostname, final int players, final String version, final String comment, final long bytesIn, final long bytesOut, final int uptimeSeconds)
+    private final String archbase;
+
+    private final String mapbase;
+
+    private final String codebase;
+
+    public MetaserverEntry(final int updateSeconds, final String hostname, final int players, final String version, final String comment, final long bytesIn, final long bytesOut, final int uptimeSeconds, final String archbase, final String mapbase, final String codebase)
     {
-        this.ipAddress = ipAddress;
         this.updateSeconds = updateSeconds;
         this.hostname = hostname;
         this.players = players;
@@ -62,11 +65,9 @@ public class MetaserverEntry implements Comparable<MetaserverEntry>
         this.bytesIn = bytesIn;
         this.bytesOut = bytesOut;
         this.uptimeSeconds = uptimeSeconds;
-    }
-
-    public String getIpAddress()
-    {
-        return ipAddress;
+        this.archbase = archbase;
+        this.mapbase = mapbase;
+        this.codebase = codebase;
     }
 
     public int getUpdateSeconds()
@@ -109,11 +110,26 @@ public class MetaserverEntry implements Comparable<MetaserverEntry>
         return uptimeSeconds;
     }
 
+    public String getArchbase()
+    {
+        return archbase;
+    }
+
+    public String getMapbase()
+    {
+        return mapbase;
+    }
+
+    public String getCodebase()
+    {
+        return codebase;
+    }
+
     /** {@inheritDoc} */
     @Override
     public String toString()
     {
-        return "IP:"+ipAddress+" Host:"+hostname+" Version:"+version+" Players:"+players+" Comment:"+comment;
+        return "Host:"+hostname+" Version:"+version+" Players:"+players+" Comment:"+comment;
     }
 
     /** {@inheritDoc} */
@@ -136,16 +152,19 @@ public class MetaserverEntry implements Comparable<MetaserverEntry>
         final MetaserverEntry m = (MetaserverEntry)o;
         return m.hostname.equals(hostname);
     }
+
     /**
      * Return a formatted string using the given format.
      *
      * <p>Supported format strings:
      * <ul>
      * <li>%% - a literal % character
-     * <li>%A - ip address
+     * <li>%A - archbase
      * <li>%C - comment
+     * <li>%E - codebase
      * <li>%H - hostname
      * <li>%I - bytes in
+     * <li>%M - mapbase
      * <li>%O - bytes out
      * <li>%P - number of players
      * <li>%T - uptime
@@ -177,7 +196,7 @@ public class MetaserverEntry implements Comparable<MetaserverEntry>
                     break;
 
                 case 'A':
-                    sb.append(ipAddress);
+                    sb.append(archbase);
                     break;
 
                 case 'C':
@@ -188,12 +207,20 @@ public class MetaserverEntry implements Comparable<MetaserverEntry>
                     sb.append(htmlTagMatcher.matcher(comment).replaceAll(" "));
                     break;
 
+                case 'E':
+                    sb.append(codebase);
+                    break;
+
                 case 'H':
                     sb.append(hostname);
                     break;
 
                 case 'I':
                     sb.append(bytesIn);
+                    break;
+
+                case 'M':
+                    sb.append(mapbase);
                     break;
 
                 case 'O':
