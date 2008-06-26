@@ -457,7 +457,7 @@ public abstract class GUIElement
             final Graphics2D g = bufferedImage.createGraphics();
             try
             {
-                paintComponent(g);
+                render(g);
             }
             finally
             {
@@ -471,7 +471,7 @@ public abstract class GUIElement
      *
      * @param g The gaphics to paint to.
      */
-    public void paintComponent(final Graphics g)
+    public void render(final Graphics g)
     {
     }
 
@@ -479,7 +479,7 @@ public abstract class GUIElement
      * Draws this image into the given graphics instance.
      * @param g the graphics instance
      */
-    public void drawImage(final Graphics g)
+    public void paintComponent(final Graphics g)
     {
         synchronized (bufferedImage)
         {

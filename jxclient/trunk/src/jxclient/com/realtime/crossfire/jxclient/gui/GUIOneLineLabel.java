@@ -69,9 +69,9 @@ public class GUIOneLineLabel extends GUILabel
 
     /** {@inheritDoc} */
     @Override
-    public void paintComponent(final Graphics g)
+    public void render(final Graphics g)
     {
-        super.paintComponent(g);
+        super.render(g);
         final Graphics2D g2 = (Graphics2D)g;
         drawLine(g2, 0, getHeight(), getText());
     }
