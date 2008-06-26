@@ -132,8 +132,6 @@ public abstract class GUIText extends ActivatableGUIElement implements KeyListen
     @Override
     protected void render(final Graphics g)
     {
-        super.render(g);
-
         g.drawImage(isActive() ? activeImage : inactiveImage, 0, 0, null);
         g.setFont(font);
         final String tmp;

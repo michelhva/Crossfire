@@ -34,6 +34,7 @@ import com.realtime.crossfire.jxclient.server.CrossfireServerConnection;
 import com.realtime.crossfire.jxclient.server.MapSizeListener;
 import com.realtime.crossfire.jxclient.window.JXCWindow;
 import java.awt.Color;
+import java.awt.Graphics;
 import java.awt.Graphics2D;
 import java.awt.Transparency;
 import java.util.Set;
@@ -422,5 +423,11 @@ public class GUIMagicMap extends GUIElement
     {
         g.setColor(Color.RED);
         g.fillRect(playerX, playerY, TILE_SIZE, TILE_SIZE);
+    }
+
+    /** {@inheritDoc} */
+    @Override
+    protected void render(final Graphics g)
+    {
     }
 }

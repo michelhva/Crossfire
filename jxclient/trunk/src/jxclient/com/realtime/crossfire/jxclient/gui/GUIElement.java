@@ -471,9 +471,7 @@ public abstract class GUIElement
      *
      * @param g The gaphics to paint to.
      */
-    protected void render(final Graphics g)
-    {
-    }
+    protected abstract void render(final Graphics g);
 
     /**
      * Draws this image into the given graphics instance.

@@ -144,8 +144,6 @@ public class GUIItemShortcut extends GUIItem
     @Override
     protected void render(final Graphics g)
     {
-        super.render(g);
-
         final Graphics2D g2 = (Graphics2D)g;
         g2.setBackground(BACKGROUND_COLOR);
         g.clearRect(0, 0, getWidth(), getHeight());

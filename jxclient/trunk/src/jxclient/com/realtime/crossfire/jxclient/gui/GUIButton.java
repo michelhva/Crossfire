@@ -76,7 +76,6 @@ public class GUIButton extends AbstractButton
     @Override
     protected void render(final Graphics g)
     {
-        super.render(g);
         g.setFont(font);
         g.setColor(color);
         g.drawImage(isActive() ? imageDown : imageUp, 0, 0, null);
