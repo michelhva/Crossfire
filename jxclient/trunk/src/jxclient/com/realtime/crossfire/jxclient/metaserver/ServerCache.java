@@ -166,7 +166,7 @@ public class ServerCache
                                 System.err.println(file+":"+lnr.getLineNumber()+": syntax error");
                                 continue;
                             }
-                            final MetaserverEntry metaserverEntry = MetaserverEntryParser.parse(tmp[1]);
+                            final MetaserverEntry metaserverEntry = MetaserverEntryParser.parseEntry(tmp[1]);
                             if (metaserverEntry == null)
                             {
                                 System.err.println(file+":"+lnr.getLineNumber()+": syntax error");
