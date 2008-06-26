@@ -77,7 +77,7 @@ public class GUIDupTextGauge extends GUIDupGauge
 
     /** {@inheritDoc} */
     @Override
-    public void render(final Graphics g)
+    protected void render(final Graphics g)
     {
         super.render(g);
 

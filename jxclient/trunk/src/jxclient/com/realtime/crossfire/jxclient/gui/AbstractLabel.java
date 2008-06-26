@@ -84,7 +84,7 @@ public abstract class AbstractLabel extends GUIElement
 
     /** {@inheritDoc} */
     @Override
-    public void render(final Graphics g)
+    protected void render(final Graphics g)
     {
         super.render(g);
         if (backgroundImage != null)

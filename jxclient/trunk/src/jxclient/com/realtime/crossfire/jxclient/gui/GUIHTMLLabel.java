@@ -94,7 +94,7 @@ public class GUIHTMLLabel extends AbstractLabel
 
     /** {@inheritDoc} */
     @Override
-    public void render(final Graphics g)
+    protected void render(final Graphics g)
     {
         super.render(g);
         if (font == null)

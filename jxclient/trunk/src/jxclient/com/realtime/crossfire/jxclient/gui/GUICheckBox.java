@@ -130,7 +130,7 @@ public class GUICheckBox extends ActivatableGUIElement
 
     /** {@inheritDoc} */
     @Override
-    public void render(final Graphics g)
+    protected void render(final Graphics g)
     {
         super.render(g);
         final Graphics2D g2 = (Graphics2D)g;

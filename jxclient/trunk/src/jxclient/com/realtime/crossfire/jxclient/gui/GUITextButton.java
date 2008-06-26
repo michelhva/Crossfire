@@ -123,7 +123,7 @@ public class GUITextButton extends AbstractButton
 
     /** {@inheritDoc} */
     @Override
-    public void render(final Graphics g)
+    protected void render(final Graphics g)
     {
         super.render(g);
         g.setFont(font);
