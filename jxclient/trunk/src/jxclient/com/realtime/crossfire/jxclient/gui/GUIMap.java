@@ -559,4 +559,10 @@ public class GUIMap extends GUIElement
             g.dispose();
         }
     }
+
+    /** {@inheritDoc} */
+    @Override
+    protected void render(final Graphics g)
+    {
+    }
 }

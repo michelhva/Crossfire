@@ -21,6 +21,7 @@ package com.realtime.crossfire.jxclient.gui;
 
 import com.realtime.crossfire.jxclient.window.JXCWindow;
 import java.awt.AlphaComposite;
+import java.awt.Graphics;
 import java.awt.Graphics2D;
 import java.awt.Transparency;
 import java.awt.image.BufferedImage;
@@ -67,5 +68,11 @@ public class GUIPicture extends GUIElement
         {
             g.dispose();
         }
+    }
+
+    /** {@inheritDoc} */
+    @Override
+    protected void render(final Graphics g)
+    {
     }
 }

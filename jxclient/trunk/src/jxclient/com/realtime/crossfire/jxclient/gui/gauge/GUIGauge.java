@@ -130,7 +130,6 @@ public class GUIGauge extends GUIElement implements GUIGaugeListener
     @Override
     protected void render(final Graphics g)
     {
-        super.render(g);
         final Graphics2D g2 = (Graphics2D)g;
         g2.setBackground(new Color(0, 0, 0, 0.0f));
         g.clearRect(0, 0, getWidth(), getHeight());
