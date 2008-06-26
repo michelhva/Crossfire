@@ -73,8 +73,7 @@ public abstract class GUILog extends GUIElement implements GUIScrollable2
         /** {@inheritDoc} */
         public void stateChanged()
         {
-            render();
-
+            setChanged();
             for (final ScrollableListener listener : listeners)
             {
                 listener.setRange(0, buffer.getTotalHeight(), renderStateManager.getScrollPos(), GUILog.super.getHeight());
