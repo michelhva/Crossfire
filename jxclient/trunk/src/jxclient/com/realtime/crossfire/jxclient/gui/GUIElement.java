@@ -20,6 +20,7 @@
 package com.realtime.crossfire.jxclient.gui;
 
 import com.realtime.crossfire.jxclient.window.JXCWindow;
+import java.awt.Dimension;
 import java.awt.Graphics;
 import java.awt.Graphics2D;
 import java.awt.GraphicsConfiguration;
@@ -27,6 +28,7 @@ import java.awt.GraphicsDevice;
 import java.awt.GraphicsEnvironment;
 import java.awt.event.MouseEvent;
 import java.awt.image.BufferedImage;
+import javax.swing.JPanel;
 
 /**
  *
@@ -35,33 +37,13 @@ import java.awt.image.BufferedImage;
  * @author Andreas Kirschbaum
  * @since 1.0
  */
-public abstract class GUIElement
+public abstract class GUIElement extends JPanel
 {
     /**
      * The {@link Gui} this element is part of. Set to <code>null</code> if
      * this element is not part of any gui.
      */
     private Gui gui = null;
-
-    /**
-     * The x-coordinate for drawing this element to screen.
-     */
-    private int x;
-
-    /**
-     * The y-coordinate for drawing this element to screen.
-     */
-    private int y;
-
-    /**
-     * The width for drawing this element to screen.
-     */
-    private int w;
-
-    /**
-     * The height for drawing this element to screen.
-     */
-    private int h;
 
     protected BufferedImage bufferedImage;
 
@@ -121,13 +103,17 @@ public abstract class GUIElement
      */
     protected GUIElement(final JXCWindow window, final String name, final int x, final int y, final int w, final int h, final int transparency)
     {
+        super(false);
         this.window = window;
         this.name = name;
-        this.x = x;
-        this.y = y;
-        this.w = w;
-        this.h = h;
         this.transparency = transparency;
+        setOpaque(true);
+        final Dimension size = new Dimension(w, h);
+        setPreferredSize(size);
+        setMinimumSize(size);
+        setMaximumSize(size);
+        setSize(size);
+        setLocation(x, y);
         createBuffer();
     }
 
@@ -169,26 +155,6 @@ public abstract class GUIElement
     public int getElementY()
     {
         return gui != null ? gui.getY()+getY() : getY();
-    }
-
-    public int getX()
-    {
-        return x;
-    }
-
-    public int getY()
-    {
-        return y;
-    }
-
-    public int getWidth()
-    {
-        return w;
-    }
-
-    public int getHeight()
-    {
-        return h;
     }
 
     public boolean isElementVisible()
@@ -405,8 +371,7 @@ public abstract class GUIElement
     {
         if (getX() != x || getY() != y)
         {
-            this.x = x;
-            this.y = y;
+            setLocation(x, y);
             setChanged();
         }
     }
@@ -422,8 +387,11 @@ public abstract class GUIElement
     {
         if (getWidth() != w || getHeight() != h)
         {
-            this.w = w;
-            this.h = h;
+            final Dimension size = new Dimension(w, h);
+            setPreferredSize(size);
+            setMinimumSize(size);
+            setMaximumSize(size);
+            setSize(size);
             createBuffer();
         }
     }
@@ -473,10 +441,8 @@ public abstract class GUIElement
      */
     protected abstract void render(final Graphics g);
 
-    /**
-     * Draws this image into the given graphics instance.
-     * @param g the graphics instance
-     */
+    /** {@inheritDoc} */
+    @Override
     public void paintComponent(final Graphics g)
     {
         synchronized (bufferedImage)
