@@ -237,7 +237,7 @@ public class Gui
             hasChangedElements = false;
             for (final GUIElement element : visibleElements)
             {
-                element.drawImage(g);
+                element.paintComponent(g);
                 g.setColor(element == mouseElement ? Color.RED : Color.WHITE);
                 g.drawRect(element.getElementX(), element.getElementY(), element.getWidth()-1, element.getHeight()-1);
             }
@@ -255,7 +255,7 @@ public class Gui
             hasChangedElements = false;
             for (final GUIElement element : visibleElements)
             {
-                element.drawImage(g);
+                element.paintComponent(g);
             }
         }
     }

@@ -147,9 +147,9 @@ public abstract class GUIItemItem extends GUIItem
 
     /** {@inheritDoc} */
     @Override
-    public void paintComponent(final Graphics g)
+    public void render(final Graphics g)
     {
-        super.paintComponent(g);
+        super.render(g);
 
         final Graphics2D g2 = (Graphics2D)g;
         g2.setBackground(BACKGROUND_COLOR);
