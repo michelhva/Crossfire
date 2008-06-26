@@ -107,7 +107,7 @@ public class GUIMetaElement extends ActivatableGUIElement implements GUIScrollab
 
     /** {@inheritDoc} */
     @Override
-    public void render(final Graphics g)
+    protected void render(final Graphics g)
     {
         super.render(g);
 

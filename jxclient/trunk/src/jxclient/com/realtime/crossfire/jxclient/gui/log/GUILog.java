@@ -128,7 +128,7 @@ public abstract class GUILog extends GUIElement implements GUIScrollable2
 
     /** {@inheritDoc} */
     @Override
-    public void render(final Graphics g)
+    protected void render(final Graphics g)
     {
         if (renderStateManager == null)
         {

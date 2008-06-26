@@ -147,7 +147,7 @@ public abstract class GUIItemItem extends GUIItem
 
     /** {@inheritDoc} */
     @Override
-    public void render(final Graphics g)
+    protected void render(final Graphics g)
     {
         super.render(g);
 

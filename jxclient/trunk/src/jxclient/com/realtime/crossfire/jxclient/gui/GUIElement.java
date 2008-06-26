@@ -471,7 +471,7 @@ public abstract class GUIElement
      *
      * @param g The gaphics to paint to.
      */
-    public void render(final Graphics g)
+    protected void render(final Graphics g)
     {
     }
 
