@@ -935,6 +935,10 @@ public class JXCWindow extends JFrame implements KeyListener, CrossfireDrawextin
                     keyBindingState = null;
                     windowRenderer.closeDialog(keybindDialog);
                 }
+                else if (deactivateCommandInput())
+                {
+                    // ignore
+                }
                 else if (getStatus() != Status.UNCONNECTED)
                 {
                     if (dialogDisconnect == null)
@@ -1372,6 +1376,31 @@ public class JXCWindow extends JFrame implements KeyListener, CrossfireDrawextin
         }
 
         return null;
+    }
+
+    /**
+     * Deactivates the command input text field. Does nothing if the command
+     * input text field is not active.
+     * @return  whether the command input text field has been deactivated
+     */
+    private boolean deactivateCommandInput()
+    {
+        for (final Gui dialog : windowRenderer.getOpenDialogs())
+        {
+            if (!dialog.isHidden(windowRenderer.getGuiState()))
+            {
+                if (dialog.deactivateCommandInput())
+                {
+                    return true;
+                }
+                if (dialog.isModal())
+                {
+                    return false;
+                }
+            }
+        }
+
+        return windowRenderer.getCurrentGui().deactivateCommandInput();
     }
 
     /**

@@ -588,6 +588,34 @@ public class Gui
     }
 
     /**
+     * Deactivates the command text input field of this dialog. Does nothing if
+     * the command text input field is not active or if this dialog has no
+     * command text input field.
+     * @return whether the command text input field has been deactivated
+     */
+    public boolean deactivateCommandInput()
+    {
+        if (activeElement == null)
+        {
+            return false;
+        }
+
+        if (!(activeElement instanceof GUIText))
+        {
+            return false;
+        }
+
+        final GUIText textArea = (GUIText)activeElement;
+        if (!textArea.getName().equals("command"))
+        {
+            return false;
+        }
+
+        activeElement.setActive(false);
+        return true;
+    }
+
+    /**
      * Returns the first button of this gui matching a given name.
      * @param name the button's name
      * @return the button or <code>null</code> if no button matches
