@@ -130,6 +130,12 @@ public class GUIScrollBar extends ActivatableGUIElement implements ScrollableLis
 
     /** {@inheritDoc} */
     @Override
+    protected void activeChanged()
+    {
+    }
+
+    /** {@inheritDoc} */
+    @Override
     public void mousePressed(final MouseEvent e)
     {
         super.mousePressed(e);
