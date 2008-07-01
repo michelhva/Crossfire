@@ -183,8 +183,6 @@ public class GUIMetaElement extends ActivatableGUIElement implements GUIScrollab
     @Override
     protected void activeChanged()
     {
-        super.activeChanged();
-
         if (!isActive())
         {
             if (comment != null)

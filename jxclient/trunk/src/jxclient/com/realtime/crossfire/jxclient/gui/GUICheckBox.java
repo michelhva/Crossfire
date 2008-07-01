@@ -165,6 +165,12 @@ public class GUICheckBox extends ActivatableGUIElement
 
     /** {@inheritDoc} */
     @Override
+    protected void activeChanged()
+    {
+    }
+
+    /** {@inheritDoc} */
+    @Override
     public void mousePressed(final MouseEvent e)
     {
         super.mousePressed(e);
