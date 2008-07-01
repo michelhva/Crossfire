@@ -61,6 +61,7 @@ button metaup      WIDTH/2-12 HEIGHT/2-184  20 25 metaup metaup true command_met
 button metadown    WIDTH/2-12 HEIGHT/2+121  20 25 metadown metadown true command_metadown
 
 set_default metaurl
+#set_forced_active metaurl
 
 key code UP        0 exec command_metaprev
 key code DOWN      0 exec command_metanext
