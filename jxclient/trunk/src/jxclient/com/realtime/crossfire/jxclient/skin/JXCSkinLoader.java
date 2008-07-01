@@ -1581,6 +1581,20 @@ public abstract class JXCSkinLoader implements JXCSkin
                             final int margin = parseInt(args[11]);
                             definedGUIElements.insert(name, new GUIQueryText(window, name, x, y, w, h, activePicture, inactivePicture, font, inactiveColor, activeColor, margin, ""));
                         }
+                        else if (gui != null && args[0].equals("set_forced_active"))
+                        {
+                            if (args.length != 2)
+                            {
+                                throw new IOException("syntax error");
+                            }
+
+                            final GUIElement forcedActive = definedGUIElements.lookup(args[1]);
+                            if (!(forcedActive instanceof ActivatableGUIElement))
+                            {
+                                throw new IOException("argument to set_forced_active must be an activatable gui element");
+                            }
+                            gui.setForcedActive((ActivatableGUIElement)forcedActive);
+                        }
                         else if (gui != null && args[0].equals("set_default"))
                         {
                             if (args.length != 2)

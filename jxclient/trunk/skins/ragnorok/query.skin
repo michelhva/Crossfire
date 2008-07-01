@@ -6,3 +6,4 @@ label_query message 10 30       236 80 font_label BLACK
 query_text input  10 30+80+10 236 20 input_active input_inactive font_label GRAY BLACK 1
 
 set_default input
+set_forced_active input

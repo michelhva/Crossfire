@@ -77,6 +77,12 @@ public class Gui
     private final EnumSet<JXCWindowRenderer.GuiState> hideInStates = EnumSet.noneOf(JXCWindowRenderer.GuiState.class);
 
     /**
+     * If non-<code>null</code>, this element is always active. No other
+     * element can become active.
+     */
+    private ActivatableGUIElement forcedActive = null;
+
+    /**
      * The gui element which has the focus. Set to <code>null</code> if no such
      * element exists.
      */
@@ -440,6 +446,11 @@ public class Gui
         final ActivatableGUIElement previousActiveElement = this.activeElement;
         if (active)
         {
+            if (forcedActive != null && forcedActive != activeElement)
+            {
+                return;
+            }
+
             if (isActiveElement(activeElement))
             {
                 return;
@@ -805,5 +816,15 @@ public class Gui
         }
 
         return true;
+    }
+
+    /**
+     * Sets an {@link ActivatableGUIElement} that is always active. It prevents
+     * any other element from getting active.
+     * @param forcedActive the element to set or <code>null</code> to unset
+     */
+    public void setForcedActive(final ActivatableGUIElement forcedActive)
+    {
+        this.forcedActive = forcedActive;
     }
 }
