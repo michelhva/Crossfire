@@ -50,7 +50,7 @@ public abstract class ActivatableGUIElement extends GUIElement
      */
     protected ActivatableGUIElement(final JXCWindow window, final String name, final int x, final int y, final int w, final int h, final int transparency)
     {
-            super(window, name, x, y, w, h, transparency);
+        super(window, name, x, y, w, h, transparency);
     }
 
     /**
