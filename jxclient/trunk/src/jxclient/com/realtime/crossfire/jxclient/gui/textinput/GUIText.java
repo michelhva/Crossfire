@@ -33,7 +33,6 @@ import java.awt.datatransfer.DataFlavor;
 import java.awt.datatransfer.Transferable;
 import java.awt.datatransfer.UnsupportedFlavorException;
 import java.awt.event.KeyEvent;
-import java.awt.event.KeyListener;
 import java.awt.event.MouseEvent;
 import java.awt.geom.Rectangle2D;
 import java.awt.image.BufferedImage;
@@ -199,7 +198,7 @@ public abstract class GUIText extends ActivatableGUIElement implements KeyListen
         setChanged();
     }
 
-    public void keyPressed(final KeyEvent e)
+    public boolean keyPressed(final KeyEvent e)
     {
         switch (e.getKeyCode())
         {
@@ -212,7 +211,7 @@ public abstract class GUIText extends ActivatableGUIElement implements KeyListen
                     setCursor(cursor-1);
                 }
             }
-            break;
+            return true;
 
         case KeyEvent.VK_DELETE:
             synchronized (syncCursor)
@@ -223,7 +222,7 @@ public abstract class GUIText extends ActivatableGUIElement implements KeyListen
                     setChanged();
                 }
             }
-            break;
+            return true;
 
         case KeyEvent.VK_KP_LEFT:
         case KeyEvent.VK_LEFT:
@@ -234,7 +233,7 @@ public abstract class GUIText extends ActivatableGUIElement implements KeyListen
                     setCursor(cursor-1);
                 }
             }
-            break;
+            return true;
 
         case KeyEvent.VK_KP_RIGHT:
         case KeyEvent.VK_RIGHT:
@@ -245,17 +244,17 @@ public abstract class GUIText extends ActivatableGUIElement implements KeyListen
                     setCursor(cursor+1);
                 }
             }
-            break;
+            return true;
 
         case KeyEvent.VK_KP_UP:
         case KeyEvent.VK_UP:
             historyPrev();
-            break;
+            return true;
 
         case KeyEvent.VK_KP_DOWN:
         case KeyEvent.VK_DOWN:
             historyNext();
-            break;
+            return true;
 
         case KeyEvent.VK_HOME:
             synchronized (syncCursor)
@@ -265,7 +264,7 @@ public abstract class GUIText extends ActivatableGUIElement implements KeyListen
                     setCursor(0);
                 }
             }
-            break;
+            return true;
 
         case KeyEvent.VK_END:
             synchronized (syncCursor)
@@ -275,8 +274,10 @@ public abstract class GUIText extends ActivatableGUIElement implements KeyListen
                     setCursor(text.length());
                 }
             }
-            break;
+            return true;
         }
+
+        return false;
     }
 
     /**
@@ -301,12 +302,13 @@ public abstract class GUIText extends ActivatableGUIElement implements KeyListen
     }
 
     /** {@inheritDoc} */
-    public void keyReleased(final KeyEvent e)
+    public boolean keyReleased(final KeyEvent e)
     {
+        return false;
     }
 
     /** {@inheritDoc} */
-    public void keyTyped(final KeyEvent e)
+    public boolean keyTyped(final KeyEvent e)
     {
         final char ch = e.getKeyChar();
         switch (ch)
@@ -321,27 +323,30 @@ public abstract class GUIText extends ActivatableGUIElement implements KeyListen
                 commandHistory.addCommand(command);
             }
             setActive(false);
-            break;
+            return true;
 
         case 0x0e:              // CTRL-N
             historyNext();
-            break;
+            return true;
 
         case 0x10:              // CTRL-P
             historyPrev();
-            break;
+            return true;
 
         case 0x16:              // CTRL-V
             paste();
-            break;
+            return true;
 
         default:
             if (ch != KeyEvent.CHAR_UNDEFINED && ch != (char)127 && ch >= ' ')
             {
                 insertChar(ch);
+                return true;
             }
             break;
         }
+
+        return false;
     }
 
     /**
