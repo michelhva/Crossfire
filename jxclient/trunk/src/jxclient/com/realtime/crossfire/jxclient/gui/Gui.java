@@ -23,13 +23,13 @@ import com.realtime.crossfire.jxclient.commands.Commands;
 import com.realtime.crossfire.jxclient.gui.keybindings.KeyBindings;
 import com.realtime.crossfire.jxclient.gui.log.GUILabelLog;
 import com.realtime.crossfire.jxclient.gui.textinput.GUIText;
+import com.realtime.crossfire.jxclient.gui.textinput.KeyListener;
 import com.realtime.crossfire.jxclient.window.JXCWindow;
 import com.realtime.crossfire.jxclient.window.JXCWindowRenderer;
 import com.realtime.crossfire.jxclient.window.MouseTracker;
 import java.awt.Color;
 import java.awt.Graphics;
 import java.awt.event.KeyEvent;
-import java.awt.event.KeyListener;
 import java.util.EnumSet;
 import java.util.HashSet;
 import java.util.List;
@@ -517,8 +517,10 @@ public class Gui
         {
             if (activeElement instanceof KeyListener)
             {
-                ((KeyListener)activeElement).keyPressed(e);
-                return true;
+                if (((KeyListener)activeElement).keyPressed(e))
+                {
+                    return true;
+                }
             }
             else if (activeElement instanceof AbstractButton)
             {
@@ -556,8 +558,10 @@ public class Gui
         {
             if (activeElement instanceof KeyListener)
             {
-                ((KeyListener)activeElement).keyTyped(e);
-                return true;
+                if (((KeyListener)activeElement).keyTyped(e))
+                {
+                    return true;
+                }
             }
         }
 
