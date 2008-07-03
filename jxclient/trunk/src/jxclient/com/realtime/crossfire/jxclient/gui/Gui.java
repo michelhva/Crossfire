@@ -540,24 +540,6 @@ public class Gui
                     return true;
                 }
             }
-            else if (activeElement instanceof AbstractButton)
-            {
-                if (e.getKeyCode() == KeyEvent.VK_ENTER || e.getKeyCode() == KeyEvent.VK_SPACE)
-                {
-                    ((AbstractButton)activeElement).execute();
-                    return true;
-                }
-            }
-        }
-
-        if (e.getKeyCode() == KeyEvent.VK_ENTER || e.getKeyCode() == KeyEvent.VK_SPACE)
-        {
-            final GUIElement defaultElement = getDefaultElement();
-            if (defaultElement != null && defaultElement instanceof AbstractButton)
-            {
-                ((AbstractButton)defaultElement).execute();
-                return true;
-            }
         }
 
         return keyBindings.handleKeyPress(e);
@@ -580,6 +562,24 @@ public class Gui
                 {
                     return true;
                 }
+            }
+            else if (activeElement instanceof AbstractButton)
+            {
+                if (e.getKeyChar() == '\r' || e.getKeyChar() == '\n' || e.getKeyChar() == ' ')
+                {
+                    ((AbstractButton)activeElement).execute();
+                    return true;
+                }
+            }
+        }
+
+        if (e.getKeyChar() == '\r' || e.getKeyChar() == '\n' || e.getKeyChar() == ' ')
+        {
+            final GUIElement defaultElement = getDefaultElement();
+            if (defaultElement != null && defaultElement instanceof AbstractButton)
+            {
+                ((AbstractButton)defaultElement).execute();
+                return true;
             }
         }
 
