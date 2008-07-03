@@ -3,53 +3,19 @@ commandlist command_metaprev AND
 commandlist command_metanext AND
 
 picture background 0 0 1024 768 metaserver 1
-text metaurl 300 620 260 20 textarea_big_active textarea_big_inactive font_metaurl16 GRAY WHITE 2 command_metaconnect false
+text metaurl 300 620 260 20 textarea_big_active textarea_big_inactive font_metaurl16 GRAY WHITE 2 command_metaconnect true
 commandlist_add command_metaconnect metaurl CONNECT
 label_html metacomment 200 650 600 118 font_description WHITE
-meta_element metaselect1 300 250 440 20 metaentry_tcp font_metaurl16 metaurl metacomment 0 "P:%P L:%U - %H - %D" "%C<br><br>Players online: %P<br>Last update: %U seconds<br>Server address: %H<br><br>Archetypes: %A<br>Maps: %M<br>Server: %E (%V)"
-meta_element metaselect2 300 280 440 20 metaentry_tcp font_metaurl16 metaurl metacomment 1 "P:%P L:%U - %H - %D" "%C<br><br>Players online: %P<br>Last update: %U seconds<br>Server address: %H<br><br>Archetypes: %A<br>Maps: %M<br>Server: %E (%V)"
-meta_element metaselect3 300 310 440 20 metaentry_tcp font_metaurl16 metaurl metacomment 2 "P:%P L:%U - %H - %D" "%C<br><br>Players online: %P<br>Last update: %U seconds<br>Server address: %H<br><br>Archetypes: %A<br>Maps: %M<br>Server: %E (%V)"
-meta_element metaselect4 300 340 440 20 metaentry_tcp font_metaurl16 metaurl metacomment 3 "P:%P L:%U - %H - %D" "%C<br><br>Players online: %P<br>Last update: %U seconds<br>Server address: %H<br><br>Archetypes: %A<br>Maps: %M<br>Server: %E (%V)"
-meta_element metaselect5 300 370 440 20 metaentry_tcp font_metaurl16 metaurl metacomment 4 "P:%P L:%U - %H - %D" "%C<br><br>Players online: %P<br>Last update: %U seconds<br>Server address: %H<br><br>Archetypes: %A<br>Maps: %M<br>Server: %E (%V)"
-meta_element metaselect6 300 400 440 20 metaentry_tcp font_metaurl16 metaurl metacomment 5 "P:%P L:%U - %H - %D" "%C<br><br>Players online: %P<br>Last update: %U seconds<br>Server address: %H<br><br>Archetypes: %A<br>Maps: %M<br>Server: %E (%V)"
-meta_element metaselect7 300 430 440 20 metaentry_tcp font_metaurl16 metaurl metacomment 6 "P:%P L:%U - %H - %D" "%C<br><br>Players online: %P<br>Last update: %U seconds<br>Server address: %H<br><br>Archetypes: %A<br>Maps: %M<br>Server: %E (%V)"
-meta_element metaselect8 300 460 440 20 metaentry_tcp font_metaurl16 metaurl metacomment 7 "P:%P L:%U - %H - %D" "%C<br><br>Players online: %P<br>Last update: %U seconds<br>Server address: %H<br><br>Archetypes: %A<br>Maps: %M<br>Server: %E (%V)"
+meta_list metaselect 300 250 440 240 30 metaentry_tcp font_metaurl16 metaurl metacomment "P:%P L:%U - %H - %D" "%C<br><br>Players online: %P<br>Last update: %U seconds<br>Server address: %H<br><br>Archetypes: %A<br>Maps: %M<br>Server: %E (%V)"
 
-commandlist command_metaup AND
-commandlist_add command_metaup metaselect1 SCROLL -1
-commandlist_add command_metaup metaselect2 SCROLL -1
-commandlist_add command_metaup metaselect3 SCROLL -1
-commandlist_add command_metaup metaselect4 SCROLL -1
-commandlist_add command_metaup metaselect5 SCROLL -1
-commandlist_add command_metaup metaselect6 SCROLL -1
-commandlist_add command_metaup metaselect7 SCROLL -1
-commandlist_add command_metaup metaselect8 SCROLL -1
+commandlist command_metaup AND metaselect SCROLL_LIST -1
+commandlist command_metadown AND metaselect SCROLL_LIST 1
 
-commandlist command_metadown AND
-commandlist_add command_metadown metaselect1 SCROLL 1
-commandlist_add command_metadown metaselect2 SCROLL 1
-commandlist_add command_metadown metaselect3 SCROLL 1
-commandlist_add command_metadown metaselect4 SCROLL 1
-commandlist_add command_metadown metaselect5 SCROLL 1
-commandlist_add command_metadown metaselect6 SCROLL 1
-commandlist_add command_metadown metaselect7 SCROLL 1
-commandlist_add command_metadown metaselect8 SCROLL 1
+commandlist command_metapageup AND metaselect SCROLL_LIST -7
+commandlist command_metapagedown AND metaselect SCROLL_LIST 7
 
-commandlist_add command_metaprev metaselect2 SCROLLNEXT metaselect1
-commandlist_add command_metaprev metaselect3 SCROLLNEXT metaselect2
-commandlist_add command_metaprev metaselect4 SCROLLNEXT metaselect3
-commandlist_add command_metaprev metaselect5 SCROLLNEXT metaselect4
-commandlist_add command_metaprev metaselect6 SCROLLNEXT metaselect5
-commandlist_add command_metaprev metaselect7 SCROLLNEXT metaselect6
-commandlist_add command_metaprev metaselect8 SCROLLNEXT metaselect7
-
-commandlist_add command_metanext metaselect7 SCROLLNEXT metaselect8
-commandlist_add command_metanext metaselect6 SCROLLNEXT metaselect7
-commandlist_add command_metanext metaselect5 SCROLLNEXT metaselect6
-commandlist_add command_metanext metaselect4 SCROLLNEXT metaselect5
-commandlist_add command_metanext metaselect3 SCROLLNEXT metaselect4
-commandlist_add command_metanext metaselect2 SCROLLNEXT metaselect3
-commandlist_add command_metanext metaselect1 SCROLLNEXT metaselect2
+commandlist command_metaprev AND metaselect MOVE_SELECTION -1
+commandlist command_metanext AND metaselect MOVE_SELECTION 1
 
 button metaconnect 620 600 135 55 button_small_active button_small_pushed false command_metaconnect font_metaurl16 DARK_GRAY 42 34 Connect
 button metacancel  620 670 135 55 button_small_active button_small_pushed false command_metacancel  font_metaurl16 DARK_GRAY 42 34 Cancel
@@ -57,10 +23,12 @@ button metaup      270 250  20 25 metaup              metaup              true c
 button metadown    270 455  20 25 metadown            metadown            true command_metadown
 
 set_default metaurl
-#set_forced_active metaurl
+set_forced_active metaurl
 
 key code UP        0 exec command_metaprev
+key code KP_UP     0 exec command_metaprev
 key code DOWN      0 exec command_metanext
-key code PAGE_UP   0 exec command_metaup
-key code PAGE_DOWN 0 exec command_metadown
+key code KP_DOWN   0 exec command_metanext
+key code PAGE_UP   0 exec command_metapageup
+key code PAGE_DOWN 0 exec command_metapagedown
 key code ENTER     0 exec command_metaconnect
