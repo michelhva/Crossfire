@@ -31,9 +31,9 @@ import java.awt.image.BufferedImage;
  */
 public class GUIQueryText extends GUIText
 {
-    public GUIQueryText(final JXCWindow window, final String name, final int x, final int y, final int w, final int h, final BufferedImage activeImage, final BufferedImage inactiveImage, final Font font, final Color inactiveColor, final Color activeColor, final int margin, final String text)
+    public GUIQueryText(final JXCWindow window, final String name, final int x, final int y, final int w, final int h, final BufferedImage activeImage, final BufferedImage inactiveImage, final Font font, final Color inactiveColor, final Color activeColor, final int margin, final String text, final boolean ignoreUpDown)
     {
-        super(window, name, x, y, w, h, activeImage, inactiveImage, font, inactiveColor, activeColor, margin, text);
+        super(window, name, x, y, w, h, activeImage, inactiveImage, font, inactiveColor, activeColor, margin, text, ignoreUpDown);
     }
 
     /** {@inheritDoc} */

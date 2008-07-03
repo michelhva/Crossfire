@@ -3,7 +3,7 @@ commandlist command_metaprev AND
 commandlist command_metanext AND
 
 picture background 0 0 1024 768 metaserver 1
-text metaurl 300 620 260 20 textarea_big_active textarea_big_inactive font_metaurl16 GRAY WHITE 2 command_metaconnect
+text metaurl 300 620 260 20 textarea_big_active textarea_big_inactive font_metaurl16 GRAY WHITE 2 command_metaconnect false
 commandlist_add command_metaconnect metaurl CONNECT
 label_html metacomment 200 650 600 118 font_description WHITE
 meta_element metaselect1 300 250 440 20 metaentry_tcp font_metaurl16 metaurl metacomment 0 "P:%P L:%U - %H - %D" "%C<br><br>Players online: %P<br>Last update: %U seconds<br>Server address: %H<br><br>Archetypes: %A<br>Maps: %M<br>Server: %E (%V)"
