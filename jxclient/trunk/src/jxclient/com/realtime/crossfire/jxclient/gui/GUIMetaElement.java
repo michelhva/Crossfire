@@ -62,6 +62,11 @@ public class GUIMetaElement extends ActivatableGUIElement implements GUIScrollab
     private int index;
 
     /**
+     * If set, paint the element in "selected" state.
+     */
+    private boolean selected = false;
+
+    /**
      * The metaserver entry listener attached for the current {@link #index}.
      */
     private final MetaserverEntryListener metaserverEntryListener = new MetaserverEntryListener()
@@ -114,7 +119,7 @@ public class GUIMetaElement extends ActivatableGUIElement implements GUIScrollab
         g2.setBackground(new Color(0, 0, 0, 0.0f));
         g.clearRect(0, 0, getWidth(), getHeight());
         g.setFont(font);
-        g.setColor(isActive() ? Color.RED : Color.GRAY);
+        g.setColor(isActive() || selected ? Color.RED : Color.GRAY);
         if (tcpImage != null)
         {
             g.drawImage(tcpImage, 0, 0, null);
@@ -163,11 +168,7 @@ public class GUIMetaElement extends ActivatableGUIElement implements GUIScrollab
     /** {@inheritDoc} */
     public void scroll(final int distance)
     {
-        metaserver.removeMetaserverEntryListener(index, metaserverEntryListener);
-        index += distance;
-        metaserver.addMetaserverEntryListener(index, metaserverEntryListener);
-        setChanged();
-        updateTooltip();
+        setIndex(index+distance);
     }
 
     /** {@inheritDoc} */
@@ -216,11 +217,44 @@ public class GUIMetaElement extends ActivatableGUIElement implements GUIScrollab
     }
 
     /**
+     * Sets the index of this element.
+     * @param index the index
+     */
+    public void setIndex(final int index)
+    {
+        if (this.index == index)
+        {
+            return;
+        }
+
+        metaserver.removeMetaserverEntryListener(index, metaserverEntryListener);
+        this.index = index;
+        metaserver.addMetaserverEntryListener(index, metaserverEntryListener);
+        setChanged();
+        updateTooltip();
+    }
+
+    /**
      * Updates the tooltip text.
      */
     private void updateTooltip()
     {
         final MetaserverEntry metaEntry = metaserver.getEntry(index);
         setTooltipText(metaEntry == null ? null : metaEntry.format(tooltip));
+    }
+
+    /**
+     * Sets the selected state.
+     * @param selected whether this element should drawn as "selected"
+     */
+    public void setSelected(final boolean selected)
+    {
+        if (this.selected == selected)
+        {
+            return;
+        }
+
+        this.selected = selected;
+        setChanged();
     }
 }

@@ -1,61 +1,20 @@
 
 picture background_black 0 0 1600 1600 black 1
 picture background WIDTH/2-512 HEIGHT/2-384 1024 768 background_metaserver 1
-text metaurl WIDTH/2+18 HEIGHT/2+236 260 20 textarea_big_active textarea_big_inactive font_metaurl GRAY WHITE 2 command_metaconnect false
+text metaurl WIDTH/2+18 HEIGHT/2+236 260 20 textarea_big_active textarea_big_inactive font_metaurl GRAY WHITE 2 command_metaconnect true
 label_html metacomment WIDTH/2-312 HEIGHT/2+266 500 118 font_label WHITE
-meta_element metaselect1 WIDTH/2-242 HEIGHT/2-149 480 20 null font_metaurl metaurl metacomment 0 "(%P) %H (%V) - %D" "%C<br><br>Players online: %P<br><br>Archetypes: %A<br>Maps: %M<br>Server: %E (%V)"
-meta_element metaselect2 WIDTH/2-242 HEIGHT/2-119 480 20 null font_metaurl metaurl metacomment 1 "(%P) %H (%V) - %D" "%C<br><br>Players online: %P<br><br>Archetypes: %A<br>Maps: %M<br>Server: %E (%V)"
-meta_element metaselect3 WIDTH/2-242 HEIGHT/2-89 480 20 null font_metaurl metaurl metacomment 2 "(%P) %H (%V) - %D" "%C<br><br>Players online: %P<br><br>Archetypes: %A<br>Maps: %M<br>Server: %E (%V)"
-meta_element metaselect4 WIDTH/2-242 HEIGHT/2-59 480 20 null font_metaurl metaurl metacomment 3 "(%P) %H (%V) - %D" "%C<br><br>Players online: %P<br><br>Archetypes: %A<br>Maps: %M<br>Server: %E (%V)"
-meta_element metaselect5 WIDTH/2-242 HEIGHT/2-29 480 20 null font_metaurl metaurl metacomment 4 "(%P) %H (%V) - %D" "%C<br><br>Players online: %P<br><br>Archetypes: %A<br>Maps: %M<br>Server: %E (%V)"
-meta_element metaselect6 WIDTH/2-242 HEIGHT/2+1 480 20 null font_metaurl metaurl metacomment 5 "(%P) %H (%V) - %D" "%C<br><br>Players online: %P<br><br>Archetypes: %A<br>Maps: %M<br>Server: %E (%V)"
-meta_element metaselect7 WIDTH/2-242 HEIGHT/2+31 480 20 null font_metaurl metaurl metacomment 6 "(%P) %H (%V) - %D" "%C<br><br>Players online: %P<br><br>Archetypes: %A<br>Maps: %M<br>Server: %E (%V)"
-meta_element metaselect8 WIDTH/2-242 HEIGHT/2+61 480 20 null font_metaurl metaurl metacomment 7 "(%P) %H (%V) - %D" "%C<br><br>Players online: %P<br><br>Archetypes: %A<br>Maps: %M<br>Server: %E (%V)"
-meta_element metaselect9 WIDTH/2-242 HEIGHT/2+91 480 20 null font_metaurl metaurl metacomment 8 "(%P) %H (%V) - %D" "%C<br><br>Players online: %P<br><br>Archetypes: %A<br>Maps: %M<br>Server: %E (%V)"
+meta_list metaselect WIDTH/2-242 HEIGHT/2-154 480 270 30 null font_metaurl metaurl metacomment "(%P) %H (%V) - %D" "%C<br><br>Players online: %P<br><br>Archetypes: %A<br>Maps: %M<br>Server: %E (%V)"
 
 commandlist_add command_metaconnect metaurl CONNECT
 
-commandlist command_metaup AND
-commandlist_add command_metaup metaselect1 SCROLL -1
-commandlist_add command_metaup metaselect2 SCROLL -1
-commandlist_add command_metaup metaselect3 SCROLL -1
-commandlist_add command_metaup metaselect4 SCROLL -1
-commandlist_add command_metaup metaselect5 SCROLL -1
-commandlist_add command_metaup metaselect6 SCROLL -1
-commandlist_add command_metaup metaselect7 SCROLL -1
-commandlist_add command_metaup metaselect8 SCROLL -1
-commandlist_add command_metaup metaselect9 SCROLL -1
+commandlist command_metaup AND metaselect SCROLL_LIST -1
+commandlist command_metadown AND metaselect SCROLL_LIST 1
 
-commandlist command_metadown AND
-commandlist_add command_metadown metaselect1 SCROLL 1
-commandlist_add command_metadown metaselect2 SCROLL 1
-commandlist_add command_metadown metaselect3 SCROLL 1
-commandlist_add command_metadown metaselect4 SCROLL 1
-commandlist_add command_metadown metaselect5 SCROLL 1
-commandlist_add command_metadown metaselect6 SCROLL 1
-commandlist_add command_metadown metaselect7 SCROLL 1
-commandlist_add command_metadown metaselect8 SCROLL 1
-commandlist_add command_metadown metaselect9 SCROLL 1
+commandlist command_metapageup AND metaselect SCROLL_LIST -8
+commandlist command_metapagedown AND metaselect SCROLL_LIST 8
 
-commandlist command_metaprev AND
-commandlist_add command_metaprev metaselect2 SCROLLNEXT metaselect1
-commandlist_add command_metaprev metaselect3 SCROLLNEXT metaselect2
-commandlist_add command_metaprev metaselect4 SCROLLNEXT metaselect3
-commandlist_add command_metaprev metaselect5 SCROLLNEXT metaselect4
-commandlist_add command_metaprev metaselect6 SCROLLNEXT metaselect5
-commandlist_add command_metaprev metaselect7 SCROLLNEXT metaselect6
-commandlist_add command_metaprev metaselect8 SCROLLNEXT metaselect7
-commandlist_add command_metaprev metaselect9 SCROLLNEXT metaselect8
-
-commandlist command_metanext AND
-commandlist_add command_metanext metaselect8 SCROLLNEXT metaselect9
-commandlist_add command_metanext metaselect7 SCROLLNEXT metaselect8
-commandlist_add command_metanext metaselect6 SCROLLNEXT metaselect7
-commandlist_add command_metanext metaselect5 SCROLLNEXT metaselect6
-commandlist_add command_metanext metaselect4 SCROLLNEXT metaselect5
-commandlist_add command_metanext metaselect3 SCROLLNEXT metaselect4
-commandlist_add command_metanext metaselect2 SCROLLNEXT metaselect3
-commandlist_add command_metanext metaselect1 SCROLLNEXT metaselect2
+commandlist command_metaprev AND metaselect MOVE_SELECTION -1
+commandlist command_metanext AND metaselect MOVE_SELECTION 1
 
 textbutton metaconnect WIDTH/2+208 HEIGHT/2+266 70 18 false command_metaconnect Connect
 textbutton metacancel  WIDTH/2+208 HEIGHT/2+296 70 18 false command_metacancel  Cancel
@@ -63,10 +22,12 @@ button metaup      WIDTH/2-12 HEIGHT/2-184  20 25 metaup metaup true command_met
 button metadown    WIDTH/2-12 HEIGHT/2+121  20 25 metadown metadown true command_metadown
 
 set_default metaurl
-#set_forced_active metaurl
+set_forced_active metaurl
 
 key code UP        0 exec command_metaprev
+key code KP_UP     0 exec command_metaprev
 key code DOWN      0 exec command_metanext
-key code PAGE_UP   0 exec command_metaup
-key code PAGE_DOWN 0 exec command_metadown
+key code KP_DOWN   0 exec command_metanext
+key code PAGE_UP   0 exec command_metapageup
+key code PAGE_DOWN 0 exec command_metapagedown
 key code ENTER     0 exec command_metaconnect

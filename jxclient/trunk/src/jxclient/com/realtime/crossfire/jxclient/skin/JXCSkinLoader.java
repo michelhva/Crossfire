@@ -52,9 +52,11 @@ import com.realtime.crossfire.jxclient.gui.commands.ExecuteElementCommand;
 import com.realtime.crossfire.jxclient.gui.commands.GUICommand;
 import com.realtime.crossfire.jxclient.gui.commands.HideCommand;
 import com.realtime.crossfire.jxclient.gui.commands.MetaCommand;
+import com.realtime.crossfire.jxclient.gui.commands.MoveSelectionCommand;
 import com.realtime.crossfire.jxclient.gui.commands.PrintCommand;
 import com.realtime.crossfire.jxclient.gui.commands.QuitCommand;
 import com.realtime.crossfire.jxclient.gui.commands.ScrollCommand;
+import com.realtime.crossfire.jxclient.gui.commands.ScrollListCommand;
 import com.realtime.crossfire.jxclient.gui.commands.ScrollNeverCommand;
 import com.realtime.crossfire.jxclient.gui.commands.ScrollNextCommand;
 import com.realtime.crossfire.jxclient.gui.commands.ScrollResetCommand;
@@ -78,6 +80,8 @@ import com.realtime.crossfire.jxclient.gui.item.GUIItemShortcut;
 import com.realtime.crossfire.jxclient.gui.item.GUIItemSpelllist;
 import com.realtime.crossfire.jxclient.gui.keybindings.InvalidKeyBindingException;
 import com.realtime.crossfire.jxclient.gui.keybindings.KeyBindings;
+import com.realtime.crossfire.jxclient.gui.list.GUIList;
+import com.realtime.crossfire.jxclient.gui.list.GUIMetaElementList;
 import com.realtime.crossfire.jxclient.gui.log.Fonts;
 import com.realtime.crossfire.jxclient.gui.log.GUILabelLog;
 import com.realtime.crossfire.jxclient.gui.log.GUIMessageLog;
@@ -1544,6 +1548,29 @@ public abstract class JXCSkinLoader implements JXCSkin
                             final String tooltip = args[12];
                             definedGUIElements.insert(name, new GUIMetaElement(window, metaserver, name, x, y, w, h, pictureTcp, font, text, label, id, format, tooltip));
                         }
+                        else if (gui != null && args[0].equals("meta_list"))
+                        {
+                            if (args.length != 13)
+                            {
+                                throw new IOException("syntax error");
+                            }
+
+                            final String name = args[1];
+                            final int x = parseInt(args[2]);
+                            final int y = parseInt(args[3]);
+                            final int w = parseInt(args[4]);
+                            final int h = parseInt(args[5]);
+                            final int cellHeight = parseInt(args[6]);
+                            final BufferedImage pictureTcp = args[7].equals("null") ? null : getPicture(args[7]);
+                            final Font font = definedFonts.lookup(args[8]);
+                            final GUIText text = args[9].equals("null") ? null : lookupTextElement(args[9]);
+                            final AbstractLabel label = args[10].equals("null") ? null : lookupLabelElement(args[10]);
+                            final String format = args[11];
+                            final String tooltip = args[12];
+
+                            final GUIMetaElementList list = new GUIMetaElementList(window, name, x, y, w, h, cellHeight, metaserver, pictureTcp, font, format, tooltip, text, label);
+                            definedGUIElements.insert(name, list);
+                        }
                         else if (gui != null && args[0].equals("picture"))
                         {
                             if (args.length != 8)
@@ -2399,6 +2426,46 @@ public abstract class JXCSkinLoader implements JXCSkin
 
             final String commandString = parseText(args, argc, lnr);
             return new ExecuteCommandCommand(commands, commandString);
+        }
+        else if (command.equals("MOVE_SELECTION"))
+        {
+            if (args.length != argc+1)
+            {
+                throw new IOException("syntax error");
+            }
+
+            final int distance = parseInt(args[argc]);
+            if (distance == 0)
+            {
+                throw new IOException("Invalid zero scroll distance");
+            }
+
+            if (!(element instanceof GUIList))
+            {
+                throw new IOException("'"+element+"' must be a list");
+            }
+
+            return new MoveSelectionCommand((GUIList)element, distance);
+        }
+        else if (command.equals("SCROLL_LIST"))
+        {
+            if (args.length != argc+1)
+            {
+                throw new IOException("syntax error");
+            }
+
+            final int distance = parseInt(args[argc]);
+            if (distance == 0)
+            {
+                throw new IOException("Invalid zero scroll distance");
+            }
+
+            if (!(element instanceof GUIList))
+            {
+                throw new IOException("'"+element+"' must be a list");
+            }
+
+            return new ScrollListCommand((GUIList)element, distance);
         }
         else if (command.equals("SCROLL") || command.equals("SCROLL_NEVER"))
         {

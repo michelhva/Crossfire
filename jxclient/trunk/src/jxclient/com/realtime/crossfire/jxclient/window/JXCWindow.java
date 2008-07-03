@@ -31,6 +31,7 @@ import com.realtime.crossfire.jxclient.gui.Gui;
 import com.realtime.crossfire.jxclient.gui.TooltipManager;
 import com.realtime.crossfire.jxclient.gui.keybindings.KeyBindingState;
 import com.realtime.crossfire.jxclient.gui.keybindings.KeyBindings;
+import com.realtime.crossfire.jxclient.gui.list.GUIMetaElementList;
 import com.realtime.crossfire.jxclient.gui.log.GUILabelLog;
 import com.realtime.crossfire.jxclient.gui.textinput.GUIText;
 import com.realtime.crossfire.jxclient.items.CfPlayer;
@@ -736,7 +737,11 @@ public class JXCWindow extends JFrame implements KeyListener, CrossfireDrawextin
                 final String serverName = settings.getString("server", "crossfire.metalforge.net");
                 if (serverName.length() > 0)
                 {
-                    MetaserverUtils.selectEntry(windowRenderer.getCurrentGui(), metaserver, serverName);
+                    final GUIMetaElementList metaElementList = windowRenderer.getCurrentGui().getMetaElementList();
+                    if (metaElementList != null)
+                    {
+                        metaElementList.setSelectedHostname(serverName);
+                    }
                 }
                 break;
 

@@ -21,6 +21,7 @@ package com.realtime.crossfire.jxclient.gui;
 
 import com.realtime.crossfire.jxclient.commands.Commands;
 import com.realtime.crossfire.jxclient.gui.keybindings.KeyBindings;
+import com.realtime.crossfire.jxclient.gui.list.GUIMetaElementList;
 import com.realtime.crossfire.jxclient.gui.log.GUILabelLog;
 import com.realtime.crossfire.jxclient.gui.textinput.GUIText;
 import com.realtime.crossfire.jxclient.gui.textinput.KeyListener;
@@ -396,6 +397,23 @@ public class Gui
             if (element instanceof GUILabelLog)
             {
                 return (GUILabelLog)element;
+            }
+        }
+
+        return null;
+    }
+
+    /**
+     * Returns the first {@link GUIMetaElementList} gui element of this gui.
+     * @return the gzu element or <code>null</code> if not found
+     */
+    public GUIMetaElementList getMetaElementList()
+    {
+        for (final GUIElement element : visibleElements)
+        {
+            if (element instanceof GUIMetaElementList)
+            {
+                return (GUIMetaElementList)element;
             }
         }
 
