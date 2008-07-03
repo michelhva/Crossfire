@@ -62,7 +62,7 @@ public class JXCSkinClassLoader extends JXCSkinLoader
         final InputStream inputStream = getClassLoader().getResourceAsStream(baseName+"/"+name);
         if (inputStream == null)
         {
-            throw new IOException("resource not found");
+            throw new IOException("resource '"+baseName+"/"+name+"' not found");
         }
         return inputStream;
     }
