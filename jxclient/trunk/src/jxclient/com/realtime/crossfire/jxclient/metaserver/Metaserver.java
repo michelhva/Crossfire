@@ -103,7 +103,7 @@ public class Metaserver
         {
             return metalist.get(index);
         }
-        catch (IndexOutOfBoundsException ex)
+        catch (final IndexOutOfBoundsException ex)
         {
             return null;
         }
