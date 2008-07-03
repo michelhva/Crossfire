@@ -1,8 +1,8 @@
 
 picture background 0 0 1024 768 metaserver 1
-text metaurl 300 620 260 20 textarea_big_active textarea_big_inactive font_metaurl16 GRAY WHITE 2 command_metaconnect true
+text metaurl 382 620 260 20 textarea_big_active textarea_big_inactive font_metaurl16 GRAY WHITE 2 command_metaconnect true
 commandlist_add command_metaconnect metaurl CONNECT
-label_html metacomment 200 650 600 118 font_description WHITE
+label_html metacomment 212 650 600 118 font_description WHITE
 meta_list metaselect 300 250 440 240 30 metaentry_tcp font_metaurl16 metaurl metacomment "P:%P L:%U - %H - %D" "%C<br><br>Players online: %P<br>Last update: %U seconds<br>Server address: %H<br><br>Archetypes: %A<br>Maps: %M<br>Server: %E (%V)"
 
 commandlist command_metaup AND metaselect SCROLL_LIST -1
@@ -14,8 +14,7 @@ commandlist command_metapagedown AND metaselect SCROLL_LIST 7
 commandlist command_metaprev AND metaselect MOVE_SELECTION -1
 commandlist command_metanext AND metaselect MOVE_SELECTION 1
 
-button metaconnect 620 600 135 55 button_small_active button_small_pushed false command_metaconnect font_metaurl16 DARK_GRAY 42 34 Connect
-button metacancel  620 670 135 55 button_small_active button_small_pushed false command_metacancel  font_metaurl16 DARK_GRAY 42 34 Cancel
+button metaconnect 658 600  32 32 connect_up          connect_down       false command_metaconnect
 button metaup      270 250  20 25 metaup              metaup              true command_metaup
 button metadown    270 455  20 25 metadown            metadown            true command_metadown
 
