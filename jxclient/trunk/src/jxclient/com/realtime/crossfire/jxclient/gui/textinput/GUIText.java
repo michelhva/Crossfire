@@ -80,6 +80,12 @@ public abstract class GUIText extends ActivatableGUIElement implements KeyListen
     private final StringBuilder text;
 
     /**
+     * Whether UP and DOWN keys should be ignored. If unset, these keys cycle
+     * through the history.
+     */
+    private final boolean ignoreUpDown;
+
+    /**
      * If set, hide input; else show input.
      */
     private boolean hideInput = false;
@@ -100,7 +106,7 @@ public abstract class GUIText extends ActivatableGUIElement implements KeyListen
      */
     private final Object syncCursor = new Object();
 
-    protected GUIText(final JXCWindow window, final String name, final int x, final int y, final int w, final int h, final BufferedImage activeImage, final BufferedImage inactiveImage, final Font font, final Color inactiveColor, final Color activeColor, final int margin, final String text)
+    protected GUIText(final JXCWindow window, final String name, final int x, final int y, final int w, final int h, final BufferedImage activeImage, final BufferedImage inactiveImage, final Font font, final Color inactiveColor, final Color activeColor, final int margin, final String text, final boolean ignoreUpDown)
     {
         super(window, name, x, y, w, h, Transparency.TRANSLUCENT);
         if (2*margin >= w) throw new IllegalArgumentException("margin is too large");
@@ -112,6 +118,7 @@ public abstract class GUIText extends ActivatableGUIElement implements KeyListen
         this.activeColor = activeColor;
         this.margin = margin;
         this.text = new StringBuilder(text);
+        this.ignoreUpDown = ignoreUpDown;
         setCursor(this.text.length());
     }
 
@@ -248,13 +255,21 @@ public abstract class GUIText extends ActivatableGUIElement implements KeyListen
 
         case KeyEvent.VK_KP_UP:
         case KeyEvent.VK_UP:
-            historyPrev();
-            return true;
+            if (!ignoreUpDown)
+            {
+                historyPrev();
+                return true;
+            }
+            break;
 
         case KeyEvent.VK_KP_DOWN:
         case KeyEvent.VK_DOWN:
-            historyNext();
-            return true;
+            if (!ignoreUpDown)
+            {
+                historyNext();
+                return true;
+            }
+            break;
 
         case KeyEvent.VK_HOME:
             synchronized (syncCursor)

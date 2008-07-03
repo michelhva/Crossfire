@@ -794,7 +794,7 @@ public abstract class JXCSkinLoader implements JXCSkin
                             final Color inactiveColor = parseColor(args[9]);
                             final Color activeColor = parseColor(args[10]);
                             final int margin = parseInt(args[11]);
-                            definedGUIElements.insert(name, new GUICommandText(window, name, x, y, w, h, activePicture, inactivePicture, font, inactiveColor, activeColor, margin, "", commands));
+                            definedGUIElements.insert(name, new GUICommandText(window, name, x, y, w, h, activePicture, inactivePicture, font, inactiveColor, activeColor, margin, "", commands, false));
                         }
                         else if (args[0].equals("def"))
                         {
@@ -1579,7 +1579,7 @@ public abstract class JXCSkinLoader implements JXCSkin
                             final Color inactiveColor = parseColor(args[9]);
                             final Color activeColor = parseColor(args[10]);
                             final int margin = parseInt(args[11]);
-                            definedGUIElements.insert(name, new GUIQueryText(window, name, x, y, w, h, activePicture, inactivePicture, font, inactiveColor, activeColor, margin, ""));
+                            definedGUIElements.insert(name, new GUIQueryText(window, name, x, y, w, h, activePicture, inactivePicture, font, inactiveColor, activeColor, margin, "", false));
                         }
                         else if (gui != null && args[0].equals("set_forced_active"))
                         {
@@ -1661,7 +1661,7 @@ public abstract class JXCSkinLoader implements JXCSkin
                         }
                         else if (gui != null && args[0].equals("text"))
                         {
-                            if (args.length != 13)
+                            if (args.length != 14)
                             {
                                 throw new IOException("syntax error");
                             }
@@ -1678,7 +1678,8 @@ public abstract class JXCSkinLoader implements JXCSkin
                             final Color activeColor = parseColor(args[10]);
                             final int margin = parseInt(args[11]);
                             final GUICommandList commandList = getCommandList(args[12]);
-                            definedGUIElements.insert(name, new GUITextField(window, name, x, y, w, h, activePicture, inactivePicture, font, inactiveColor, activeColor, margin, "", commandList));
+                            final boolean ignoreUpDown = parseBoolean(args[13]);
+                            definedGUIElements.insert(name, new GUITextField(window, name, x, y, w, h, activePicture, inactivePicture, font, inactiveColor, activeColor, margin, "", commandList, ignoreUpDown));
                         }
                         else if (gui != null && args[0].equals("textbutton"))
                         {
