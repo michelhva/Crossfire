@@ -15,6 +15,7 @@ meta_element metaselect9 WIDTH/2-242 HEIGHT/2+91 480 20 null font_metaurl metaur
 
 commandlist_add command_metaconnect metaurl CONNECT
 
+commandlist command_metaup AND
 commandlist_add command_metaup metaselect1 SCROLL -1
 commandlist_add command_metaup metaselect2 SCROLL -1
 commandlist_add command_metaup metaselect3 SCROLL -1
@@ -25,6 +26,7 @@ commandlist_add command_metaup metaselect7 SCROLL -1
 commandlist_add command_metaup metaselect8 SCROLL -1
 commandlist_add command_metaup metaselect9 SCROLL -1
 
+commandlist command_metadown AND
 commandlist_add command_metadown metaselect1 SCROLL 1
 commandlist_add command_metadown metaselect2 SCROLL 1
 commandlist_add command_metadown metaselect3 SCROLL 1
