@@ -1915,7 +1915,7 @@ public abstract class JXCSkinLoader implements JXCSkin
         }
         catch (final NumberFormatException ex)
         {
-            throw new IOException("invalud number: "+str);
+            throw new IOException("invalid number: "+str);
         }
 
         return value;
