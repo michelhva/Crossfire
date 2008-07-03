@@ -15,6 +15,7 @@ meta_element metaselect6 300 400 440 20 metaentry_tcp font_metaurl16 metaurl met
 meta_element metaselect7 300 430 440 20 metaentry_tcp font_metaurl16 metaurl metacomment 6 "P:%P L:%U - %H - %D" "%C<br><br>Players online: %P<br>Last update: %U seconds<br>Server address: %H<br><br>Archetypes: %A<br>Maps: %M<br>Server: %E (%V)"
 meta_element metaselect8 300 460 440 20 metaentry_tcp font_metaurl16 metaurl metacomment 7 "P:%P L:%U - %H - %D" "%C<br><br>Players online: %P<br>Last update: %U seconds<br>Server address: %H<br><br>Archetypes: %A<br>Maps: %M<br>Server: %E (%V)"
 
+commandlist command_metaup AND
 commandlist_add command_metaup metaselect1 SCROLL -1
 commandlist_add command_metaup metaselect2 SCROLL -1
 commandlist_add command_metaup metaselect3 SCROLL -1
@@ -24,6 +25,7 @@ commandlist_add command_metaup metaselect6 SCROLL -1
 commandlist_add command_metaup metaselect7 SCROLL -1
 commandlist_add command_metaup metaselect8 SCROLL -1
 
+commandlist command_metadown AND
 commandlist_add command_metadown metaselect1 SCROLL 1
 commandlist_add command_metadown metaselect2 SCROLL 1
 commandlist_add command_metadown metaselect3 SCROLL 1

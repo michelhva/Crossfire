@@ -28,8 +28,6 @@ commandlist command_resume_quit AND null DIALOG_CLOSE quit
 
 commandlist command_metaconnect AND
 commandlist command_metacancel AND null GUI_START
-commandlist command_metaup AND
-commandlist command_metadown AND
 
 commandlist command_status AND null DIALOG_TOGGLE status
 commandlist command_status_open AND null DIALOG_OPEN status
