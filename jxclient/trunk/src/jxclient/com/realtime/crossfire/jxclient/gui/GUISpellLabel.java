@@ -21,7 +21,6 @@ package com.realtime.crossfire.jxclient.gui;
 
 import com.realtime.crossfire.jxclient.faces.FacesManager;
 import com.realtime.crossfire.jxclient.spells.Spell;
-import com.realtime.crossfire.jxclient.spells.SpellChangedEvent;
 import com.realtime.crossfire.jxclient.spells.SpellListener;
 import com.realtime.crossfire.jxclient.window.JXCWindow;
 import java.awt.Color;
@@ -83,9 +82,8 @@ public class GUISpellLabel extends GUIHTMLLabel
     private final SpellListener spellListener = new SpellListener()
     {
         /** {@inheritDoc} */
-        public void spellChanged(final SpellChangedEvent evt)
+        public void spellChanged(final Spell spell)
         {
-            final Spell spell = evt.getSpell();
             if (spell == null)
             {
                 setText("");
