@@ -44,10 +44,10 @@ import java.util.Set;
 import javax.swing.ImageIcon;
 
 /**
- *
- * @version 1.0
+ * Display the map view. It supports both normal sized (32x32 pixel) and double
+ * sized (64x64 pixel) sized tiles.
  * @author Lauwenmark
- * @since 1.0
+ * @author Andreas Kirschbaum
  */
 public class GUIMap extends GUIElement
 {
@@ -87,10 +87,19 @@ public class GUIMap extends GUIElement
      */
     private int mapHeight = 0;
 
+    /**
+     * The image used for empty tiles.
+     */
     private final ImageIcon blackTile;
 
+    /**
+     * Whether double sized imaged are displayed.
+     */
     private final boolean useBigImages;
 
+    /**
+     * The size of one tile. Either <code>32</code> or <code>64</code>.
+     */
     private final int tileSize;
 
     /**
@@ -296,29 +305,18 @@ public class GUIMap extends GUIElement
     };
 
     /**
-     * Create a new instance.
-     *
-     * @param window The <code>JXCWindow</code> this element belongs to.
-     *
-     * @param name The name of this element.
-     *
-     * @param x The x-coordinate for drawing this element to screen.
-     *
-     * @param y The y-coordinate for drawing this element to screen.
-     *
-     * @param w The width for drawing this element to screen.
-     *
-     * @param h The height for drawing this element to screen.
-     *
+     * Creates a new instance.
+     * @param window the <code>JXCWindow</code> this element belongs to
+     * @param name the name of this element
+     * @param x the x-coordinate for drawing this element to screen
+     * @param y the y-coordinate for drawing this element to screen
+     * @param w the width for drawing this element to screen
+     * @param h the height for drawing this element to screen
      * @param crossfireServerConnection the connection instance
-     *
      * @param facesManager the instance for looking up faces
-     *
      * @param mapUpdater the map updater instance
-     *
-     * @param tileSize The size of one tile in pixels.
-     *
-     * @throws IOException If an I/O error occurs.
+     * @param tileSize the size of one tile in pixels
+     * @throws IOException tf an I/O error occurs
      */
     public GUIMap(final JXCWindow window, final String name, final int tileSize, final int x, final int y, final int w, final int h, final CrossfireServerConnection crossfireServerConnection, final FacesManager facesManager, final CfMapUpdater mapUpdater) throws IOException
     {
@@ -373,13 +371,10 @@ public class GUIMap extends GUIElement
     }
 
     /**
-     * Redraw one square completely black.
-     *
-     * @param g The graphics to draw into.
-     *
-     * @param x The x-coordinate of the square to clear.
-     *
-     * @param y The y-coordinate of the square to clear.
+     * Redraws one square completely black.
+     * @param g the graphics to draw into
+     * @param x the x-coordinate of the square to clear
+     * @param y the y-coordinate of the square to clear
      */
     private void cleanSquare(final Graphics g, final int x, final int y)
     {
@@ -387,16 +382,12 @@ public class GUIMap extends GUIElement
     }
 
     /**
-     * Redraw one square if it has been changed. If it is unchanged ({@link
+     * Redraws one square if it has been changed. If it is unchanged ({@link
      * CfMapSquare#dirty} is unset), nothing is drawn.
-     *
-     * @param g The graphics to draw into.
-     *
-     * @param map The map to redraw.
-     *
-     * @param x The x-coordinate of the map tile to redraw.
-     *
-     * @param y The y-coordinate of the map tile to redraw.
+     * @param g the graphics to draw into
+     * @param map the map to redraw
+     * @param x the x-coordinate of the map tile to redraw
+     * @param y the y-coordinate of the map tile to redraw
      */
     private void redrawSquare(final Graphics g, final CfMap map, final int x, final int y)
     {
@@ -419,14 +410,10 @@ public class GUIMap extends GUIElement
     }
 
     /**
-     * Redraw one layer of a square.
-     *
-     * @param g The graphics to draw into.
-     *
-     * @param px The x coordinate of the square to redraw.
-     *
-     * @param py The y coordinate of the square to redraw.
-     *
+     * Redraws one layer of a square.
+     * @param g the graphics to draw into
+     * @param px the x coordinate of the square to redraw
+     * @param py the y coordinate of the square to redraw
      * @param mapSquare the map square
      */
     private void redrawSquare(final Graphics g, final int px, final int py, final CfMapSquare mapSquare)
@@ -494,11 +481,9 @@ public class GUIMap extends GUIElement
     }
 
     /**
-     * Return an overlay color for a darkness value.
-     *
-     * @param darkness The darkness value between 0 and 255.
-     *
-     * @return The overlay color.
+     * Returns an overlay color for a darkness value.
+     * @param darkness the darkness value between 0 and 255
+     * @return the overlay color
      */
     public static synchronized Color getDarknessColor(final int darkness)
     {

@@ -41,10 +41,10 @@ import java.util.Set;
 import javax.swing.ImageIcon;
 
 /**
- *
- * @version 1.0
+ * Displays magic map results. Fallback for unknown tiles is the normal map
+ * contents.
  * @author Lauwenmark
- * @since 1.0
+ * @author Andreas Kirschbaum
  */
 public class GUIMagicMap extends GUIElement
 {
@@ -275,6 +275,18 @@ public class GUIMagicMap extends GUIElement
         }
     };
 
+    /**
+     * Creates a new instance.
+     * @param window the <code>JXCWindow</code> this element belongs to
+     * @param name the name of this element
+     * @param x the x-coordinate for drawing this element to screen
+     * @param y the y-coordinate for drawing this element to screen
+     * @param w the width for drawing this element to screen
+     * @param h the height for drawing this element to screen
+     * @param crossfireServerConnection the server connection to monitor
+     * @param mapUpdater the map updater instance to use
+     * @param facesManager the faces manager instance to use
+     */
     public GUIMagicMap(final JXCWindow window, final String name, final int x, final int y, final int w, final int h, final CrossfireServerConnection crossfireServerConnection, final CfMapUpdater mapUpdater, final FacesManager facesManager)
     {
         super(window, name, x, y, w, h, Transparency.TRANSLUCENT);
@@ -298,19 +310,13 @@ public class GUIMagicMap extends GUIElement
     }
 
     /**
-     * Redraw a rectangular area of tiles.
-     *
-     * @param g The graphics to draw into.
-     *
-     * @param map The map to draw.
-     *
-     * @param x0 The left edge to redraw (inclusive).
-     *
-     * @param y0 The top edge to redraw (inclusive).
-     *
-     * @param x1 The right edge to redraw (exclusive).
-     *
-     * @param y1 The bottom edge to redraw (exclusive).
+     * Redraws a rectangular area of tiles.
+     * @param g the graphics to draw into
+     * @param map the map to draw
+     * @param x0 the left edge to redraw (inclusive)
+     * @param y0 the top edge to redraw (inclusive)
+     * @param x1 the right edge to redraw (exclusive)
+     * @param y1 the bottom edge to redraw (exclusive)
      */
     private void redrawTiles(final Graphics2D g, final CfMap map, final int x0, final int y0, final int x1, final int y1)
     {
@@ -324,13 +330,10 @@ public class GUIMagicMap extends GUIElement
     }
 
     /**
-     * Redraw one square completely black.
-     *
-     * @param g The graphics to draw into.
-     *
-     * @param x The x-coordinate of the square to clear.
-     *
-     * @param y The y-coordinate of the square to clear.
+     * Redraws one square completely black.
+     * @param g the graphics to draw into
+     * @param x the x-coordinate of the square to clear
+     * @param y the y-coordinate of the square to clear
      */
     private void cleanSquare(final Graphics2D g, final int x, final int y)
     {
@@ -339,15 +342,11 @@ public class GUIMagicMap extends GUIElement
     }
 
     /**
-     * Redraw one square.
-     *
-     * @param g The graphics to draw into.
-     *
-     * @param map The map to draw.
-     *
-     * @param x The x-coordinate of the map tile to redraw.
-     *
-     * @param y The y-coordinate of the map tile to redraw.
+     * Redraws one square.
+     * @param g the graphics to draw into
+     * @param map the map to draw
+     * @param x the x-coordinate of the map tile to redraw
+     * @param y the y-coordinate of the map tile to redraw
      */
     private void redrawSquare(final Graphics2D g, final CfMap map, final int x, final int y)
     {
@@ -370,17 +369,12 @@ public class GUIMagicMap extends GUIElement
     }
 
     /**
-     * Redraw one layer of a square.
-     *
-     * @param g The graphics to draw into.
-     *
-     * @param map The map to draw.
-     *
-     * @param x The x coordinate of the square to redraw.
-     *
-     * @param y The y coordinate of the square to redraw.
-     *
-     * @param layer The layer to redraw.
+     * Redraws one layer of a square.
+     * @param g the graphics to draw into
+     * @param map the map to draw
+     * @param x the x coordinate of the square to redraw
+     * @param y the y coordinate of the square to redraw
+     * @param layer the layer to redraw
      */
     private void redrawSquare(final Graphics2D g, final CfMap map, final int x, final int y, final int layer)
     {
@@ -418,9 +412,8 @@ public class GUIMagicMap extends GUIElement
     }
 
     /**
-     * Paint the player location.
-     *
-     * @param g The graphics to paint to.
+     * Paints the player location.
+     * @param g the graphics to paint to
      */
     private void markPlayer(final Graphics2D g)
     {

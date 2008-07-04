@@ -31,7 +31,6 @@ import java.awt.Font;
 /**
  * A {@link GUILabel} that displays a value of the last received "stats"
  * command.
- *
  * @author Lauwenmark
  * @author Andreas Kirschbaum
  */
@@ -48,8 +47,7 @@ public class GUILabelStats extends GUIOneLineLabel
     private final int stat;
 
     /**
-     * The {@link StatsListener} registered to be notified about stat
-     * changes.
+     * The {@link StatsListener} registered to be notified about stat changes.
      */
     private final StatsListener statsListener = new StatsListener()
     {
@@ -119,32 +117,19 @@ public class GUILabelStats extends GUIOneLineLabel
     };
 
     /**
-     * Create a new instance.
-     *
-     * @param window The <code>JXCWindow</code> this element belongs to.
-     *
-     * @param name The name of this element.
-     *
-     * @param x The x-coordinate for drawing this element to screen.
-     *
-     * @param y The y-coordinate for drawing this element to screen.
-     *
-     * @param w The width for drawing this element to screen.
-     *
-     * @param h The height for drawing this element to screen.
-     *
-     * @param font The font to use.
-     *
-     * @param color The color to use.
-     *
-     * @param backgroundColor The background color.
-     *
-     * @param stat The stat to display.
-     *
-     * @param alignment The text alignment.
-     *
+     * Creates a new instance.
+     * @param window the <code>JXCWindow</code> this element belongs to
+     * @param name the name of this element
+     * @param x the x-coordinate for drawing this element to screen
+     * @param y the y-coordinate for drawing this element to screen
+     * @param w the width for drawing this element to screen
+     * @param h the height for drawing this element to screen
+     * @param font the font to use
+     * @param color the color to use
+     * @param backgroundColor the background color
+     * @param stat the stat to display
+     * @param alignment the text alignment
      * @param stats the stats instance to use
-     *
      * @param experienceTable the experience table to use
      */
     public GUILabelStats(final JXCWindow window, final String name, final int x, final int y, final int w, final int h, final Font font, final Color color, final Color backgroundColor, final int stat, final Alignment alignment, final Stats stats, final ExperienceTable experienceTable)
@@ -156,14 +141,11 @@ public class GUILabelStats extends GUIOneLineLabel
     }
 
     /**
-     * Format a float stat value for display.
-     *
-     * @param value The float stat value.
-     *
-     * @param digits The number of fraction digits; must be between 1..3
-     * inclusive.
-     *
-     * @return The formatted value.
+     * Formats a float stat value for display.
+     * @param value the float stat value
+     * @param digits the number of fraction digits; must be between 1..3
+     * inclusive
+     * @return the formatted value
      */
     private static String formatFloatStat(final double value, final int digits)
     {
