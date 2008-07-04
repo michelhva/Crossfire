@@ -129,7 +129,7 @@ public class GUIMagicMap extends GUIElement
         /** {@inheritDoc} */
         public void commandMagicmapReceived(final CrossfireCommandMagicmapEvent evt)
         {
-            synchronized (bufferedImage)
+            synchronized (bufferedImageSync)
             {
                 int datapos = evt.getPos();
                 final byte[] data = evt.getData();
@@ -165,7 +165,7 @@ public class GUIMagicMap extends GUIElement
         /** {@inheritDoc} */
         public void mapScrolled(final int dx, final int dy)
         {
-            synchronized (bufferedImage)
+            synchronized (bufferedImageSync)
             {
                 final Graphics2D g = bufferedImage.createGraphics();
                 final CfMap map = mapUpdater.getMap();
@@ -212,7 +212,7 @@ public class GUIMagicMap extends GUIElement
         /** {@inheritDoc} */
         public void mapChanged(final CfMap map, final Set<CfMapSquare> changedSquares)
         {
-            synchronized (bufferedImage)
+            synchronized (bufferedImageSync)
             {
                 final int x0 = map.getOffsetX();
                 final int y0 = map.getOffsetY();
@@ -239,7 +239,7 @@ public class GUIMagicMap extends GUIElement
         /** {@inheritDoc} */
         public void commandNewmapReceived()
         {
-            synchronized (bufferedImage)
+            synchronized (bufferedImageSync)
             {
                 final Graphics2D g = bufferedImage.createGraphics();
                 g.setColor(Color.BLACK);
@@ -264,11 +264,14 @@ public class GUIMagicMap extends GUIElement
             GUIMagicMap.this.mapHeight = mapHeight;
             offsetX = playerX-((mapWidth-1)/2)*TILE_SIZE;
             offsetY = playerY-((mapHeight-1)/2)*TILE_SIZE;
-            final Graphics2D g = bufferedImage.createGraphics();
-            g.setColor(Color.BLACK);
-            g.fillRect(0, 0, getWidth(), getHeight());
-            redrawTiles(g, mapUpdater.getMap(), 0, 0, getWidth()/TILE_SIZE, getHeight()/TILE_SIZE);
-            g.dispose();
+            synchronized (bufferedImageSync)
+            {
+                final Graphics2D g = bufferedImage.createGraphics();
+                g.setColor(Color.BLACK);
+                g.fillRect(0, 0, getWidth(), getHeight());
+                redrawTiles(g, mapUpdater.getMap(), 0, 0, getWidth()/TILE_SIZE, getHeight()/TILE_SIZE);
+                g.dispose();
+            }
         }
     };
 

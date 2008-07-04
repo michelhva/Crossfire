@@ -143,7 +143,7 @@ public class GUIMap extends GUIElement
         /** {@inheritDoc} */
         public void mapChanged(final CfMap map, final Set<CfMapSquare> changedSquares)
         {
-            synchronized (bufferedImage)
+            synchronized (bufferedImageSync)
             {
                 final Graphics2D g = bufferedImage.createGraphics();
                 try
@@ -181,15 +181,18 @@ public class GUIMap extends GUIElement
         /** {@inheritDoc} */
         public void commandNewmapReceived()
         {
-            final Graphics2D g = bufferedImage.createGraphics();
-            try
+            synchronized (bufferedImageSync)
             {
-                g.setColor(Color.BLACK);
-                g.fillRect(0, 0, getWidth(), getHeight());
-            }
-            finally
-            {
-                g.dispose();
+                final Graphics2D g = bufferedImage.createGraphics();
+                try
+                {
+                    g.setColor(Color.BLACK);
+                    g.fillRect(0, 0, getWidth(), getHeight());
+                }
+                finally
+                {
+                    g.dispose();
+                }
             }
             setChanged();
         }
@@ -204,7 +207,7 @@ public class GUIMap extends GUIElement
         /** {@inheritDoc} */
         public void mapScrolled(final int dx, final int dy)
         {
-            synchronized (bufferedImage)
+            synchronized (bufferedImageSync)
             {
                 if (Math.abs(dx) >= mapWidth || Math.abs(dy) >= mapHeight)
                 {
@@ -549,14 +552,17 @@ public class GUIMap extends GUIElement
             offsetY = (getHeight()-effectiveH)/2;
         }
 
-        final Graphics2D g = bufferedImage.createGraphics();
-        try
+        synchronized (bufferedImageSync)
         {
-            redrawAll(g);
-        }
-        finally
-        {
-            g.dispose();
+            final Graphics2D g = bufferedImage.createGraphics();
+            try
+            {
+                redrawAll(g);
+            }
+            finally
+            {
+                g.dispose();
+            }
         }
     }
 

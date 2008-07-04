@@ -112,15 +112,18 @@ public abstract class GUILog extends GUIElement implements GUIScrollable2
         super(window, name, x, y, w, h, Transparency.TRANSLUCENT);
         this.backgroundImage = backgroundImage;
         this.fonts = fonts;
-        final Graphics2D g = super.bufferedImage.createGraphics();
         final FontRenderContext context;
-        try
+        synchronized (bufferedImageSync)
         {
-            context = g.getFontRenderContext();
-        }
-        finally
-        {
-            g.dispose();
+            final Graphics2D g = super.bufferedImage.createGraphics();
+            try
+            {
+                context = g.getFontRenderContext();
+            }
+            finally
+            {
+                g.dispose();
+            }
         }
         buffer = new Buffer(fonts, context, w);
         renderStateManager = new RenderStateManager(renderStateListener, buffer);

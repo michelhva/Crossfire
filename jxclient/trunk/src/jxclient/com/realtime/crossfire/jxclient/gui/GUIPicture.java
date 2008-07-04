@@ -58,15 +58,18 @@ public class GUIPicture extends GUIElement
     public GUIPicture(final JXCWindow window, final String name, final int x, final int y, final int w, final int h, final BufferedImage image, final float alpha)
     {
         super(window, name, x, y, w, h, alpha < 1F ? Transparency.TRANSLUCENT : image.getTransparency());
-        final Graphics2D g = bufferedImage.createGraphics();
-        try
+        synchronized (bufferedImageSync)
         {
-            g.setComposite(AlphaComposite.getInstance(AlphaComposite.SRC_OVER, alpha));
-            g.drawImage(image, 0, 0, image.getWidth(), image.getHeight(), null);
-        }
-        finally
-        {
-            g.dispose();
+            final Graphics2D g = bufferedImage.createGraphics();
+            try
+            {
+                g.setComposite(AlphaComposite.getInstance(AlphaComposite.SRC_OVER, alpha));
+                g.drawImage(image, 0, 0, image.getWidth(), image.getHeight(), null);
+            }
+            finally
+            {
+                g.dispose();
+            }
         }
     }
 
