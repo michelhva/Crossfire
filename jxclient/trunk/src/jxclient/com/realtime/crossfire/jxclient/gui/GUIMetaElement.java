@@ -33,25 +33,46 @@ import java.awt.event.MouseEvent;
 import java.awt.image.BufferedImage;
 
 /**
- *
- * @version 1.0
+ * Display a Crossfire server entry.
  * @author Lauwenmark
- * @since 1.0
+ * @author Andreas Kirschbaum
  */
 public class GUIMetaElement extends ActivatableGUIElement implements GUIScrollable
 {
+    /**
+     * The metaserver instance to monitor.
+     */
     private final Metaserver metaserver;
 
+    /**
+     * An image to draw before {@link #text}. May be <code>null</code> to draw
+     * no image.
+     */
     private final BufferedImage tcpImage;
 
+    /**
+     * The font to use.
+     */
     private final Font font;
 
+    /**
+     * The input field to update.
+     */
     private final GUIText text;
 
+    /**
+     * The comment element to update.
+     */
     private final AbstractLabel comment;
 
+    /**
+     * The format used for displaying {@link Metaserver} instances.
+     */
     private final String format;
 
+    /**
+     * The format used for displaying tooltips.
+     */
     private final String tooltip;
 
     /**
@@ -59,6 +80,9 @@ public class GUIMetaElement extends ActivatableGUIElement implements GUIScrollab
      */
     private final int defaultIndex;
 
+    /**
+     * The metaserver index.
+     */
     private int index;
 
     /**
@@ -93,6 +117,24 @@ public class GUIMetaElement extends ActivatableGUIElement implements GUIScrollab
         }
     };
 
+    /**
+     * Creates a new instance.
+     * @param window the <code>JXCWindow</code> this element belongs to
+     * @param metaserver the metaserver instance to monitor
+     * @param name the name of this element
+     * @param x the x-coordinate for drawing this element to screen
+     * @param y the y-coordinate for drawing this element to screen
+     * @param w the width for drawing this element to screen
+     * @param h the height for drawing this element to screen
+     * @param tcpImage an image to draw before {@link #text}. May be
+     * <code>null</code> to draw no image
+     * @param font the font to use
+     * @param text the input field to update
+     * @param comment the comment element to update
+     * @param defaultIndex the initial metaserver index
+     * @param format the format used to display metaserver instances
+     * @param tooltip the format used for displaying tooltips
+     */
     public GUIMetaElement(final JXCWindow window, final Metaserver metaserver, final String name, final int x, final int y, final int w, final int h, final BufferedImage tcpImage, final Font font, final GUIText text, final AbstractLabel comment, final int defaultIndex, final String format, final String tooltip)
     {
         super(window, name, x, y, w, h, Transparency.TRANSLUCENT);
