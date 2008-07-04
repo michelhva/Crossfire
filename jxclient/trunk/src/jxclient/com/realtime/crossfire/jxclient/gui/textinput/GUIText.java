@@ -418,7 +418,7 @@ public abstract class GUIText extends ActivatableGUIElement implements KeyListen
      *
      * @param cursor The new cursor position.
      */
-    public void setCursor(final int cursor)
+    private void setCursor(final int cursor)
     {
         synchronized (syncCursor)
         {
