@@ -1527,27 +1527,6 @@ public abstract class JXCSkinLoader implements JXCSkin
                             final GUIMap element = new GUIMap(window, name, tileSize, x, y, w, h, server, facesManager, mapUpdater);
                             definedGUIElements.insert(name, element);
                         }
-                        else if (gui != null && args[0].equals("meta_element"))
-                        {
-                            if (args.length != 13)
-                            {
-                                throw new IOException("syntax error");
-                            }
-
-                            final String name = args[1];
-                            final int x = parseInt(args[2]);
-                            final int y = parseInt(args[3]);
-                            final int w = parseInt(args[4]);
-                            final int h = parseInt(args[5]);
-                            final BufferedImage pictureTcp = args[6].equals("null") ? null : getPicture(args[6]);
-                            final Font font = definedFonts.lookup(args[7]);
-                            final GUIText text = lookupTextElement(args[8]);
-                            final AbstractLabel label = lookupLabelElement(args[9]);
-                            final int id = parseInt(args[10]);
-                            final String format = args[11];
-                            final String tooltip = args[12];
-                            definedGUIElements.insert(name, new GUIMetaElement(window, metaserver, name, x, y, w, h, pictureTcp, font, text, label, id, format, tooltip));
-                        }
                         else if (gui != null && args[0].equals("meta_list"))
                         {
                             if (args.length != 13)
