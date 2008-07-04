@@ -141,7 +141,7 @@ public class GUIMetaElementList extends GUIList
      */
     public GUIMetaElementList(final JXCWindow window, final String name, final int x, final int y, final int w, final int h, final int cellHeight, final Metaserver metaserver, final BufferedImage tcpImage, final Font font, final String format, final String tooltip, final GUIText hostname, final AbstractLabel comment)
     {
-        super(window, name, x, y, w, h, cellHeight, new MetaElementCellRenderer(new GUIMetaElement(window, metaserver, name+"_template", 0, 0, w, cellHeight, tcpImage, font, null, null, 0, format, tooltip)));
+        super(window, name, x, y, w, h, cellHeight, new MetaElementCellRenderer(new GUIMetaElement(window, metaserver, name+"_template", w, cellHeight, tcpImage, font, 0, format, tooltip)));
         this.metaserver = metaserver;
         this.window = window;
         this.name = name;
@@ -166,7 +166,7 @@ public class GUIMetaElementList extends GUIList
         {
             for (int i = oldSize; i < newSize; i++)
             {
-                final GUIMetaElement metaElement = new GUIMetaElement(window, metaserver, name+"i", 0, 0, 1, 1, tcpImage, font, null, null, i, format, tooltip);
+                final GUIMetaElement metaElement = new GUIMetaElement(window, metaserver, name+"i", 1, 1, tcpImage, font, i, format, tooltip);
                 addElement(metaElement);
                 metaserver.addMetaserverEntryListener(i, metaserverEntryListener);
             }
