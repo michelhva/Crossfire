@@ -19,7 +19,6 @@
 //
 package com.realtime.crossfire.jxclient.gui;
 
-import com.realtime.crossfire.jxclient.gui.textinput.GUIText;
 import com.realtime.crossfire.jxclient.metaserver.Metaserver;
 import com.realtime.crossfire.jxclient.metaserver.MetaserverEntry;
 import com.realtime.crossfire.jxclient.metaserver.MetaserverEntryListener;
@@ -45,8 +44,8 @@ public class GUIMetaElement extends ActivatableGUIElement implements GUIScrollab
     private final Metaserver metaserver;
 
     /**
-     * An image to draw before {@link #text}. May be <code>null</code> to draw
-     * no image.
+     * An image to draw before the server description. May be <code>null</code>
+     * to draw no image.
      */
     private final BufferedImage tcpImage;
 
@@ -54,16 +53,6 @@ public class GUIMetaElement extends ActivatableGUIElement implements GUIScrollab
      * The font to use.
      */
     private final Font font;
-
-    /**
-     * The input field to update.
-     */
-    private final GUIText text;
-
-    /**
-     * The comment element to update.
-     */
-    private final AbstractLabel comment;
 
     /**
      * The format used for displaying {@link Metaserver} instances.
@@ -122,27 +111,21 @@ public class GUIMetaElement extends ActivatableGUIElement implements GUIScrollab
      * @param window the <code>JXCWindow</code> this element belongs to
      * @param metaserver the metaserver instance to monitor
      * @param name the name of this element
-     * @param x the x-coordinate for drawing this element to screen
-     * @param y the y-coordinate for drawing this element to screen
      * @param w the width for drawing this element to screen
      * @param h the height for drawing this element to screen
-     * @param tcpImage an image to draw before {@link #text}. May be
+     * @param tcpImage an image to draw before the server description. May be
      * <code>null</code> to draw no image
      * @param font the font to use
-     * @param text the input field to update
-     * @param comment the comment element to update
      * @param defaultIndex the initial metaserver index
      * @param format the format used to display metaserver instances
      * @param tooltip the format used for displaying tooltips
      */
-    public GUIMetaElement(final JXCWindow window, final Metaserver metaserver, final String name, final int x, final int y, final int w, final int h, final BufferedImage tcpImage, final Font font, final GUIText text, final AbstractLabel comment, final int defaultIndex, final String format, final String tooltip)
+    public GUIMetaElement(final JXCWindow window, final Metaserver metaserver, final String name, final int w, final int h, final BufferedImage tcpImage, final Font font, final int defaultIndex, final String format, final String tooltip)
     {
-        super(window, name, x, y, w, h, Transparency.TRANSLUCENT);
+        super(window, name, 0, 0, w, h, Transparency.TRANSLUCENT);
         this.metaserver = metaserver;
         this.tcpImage = tcpImage;
         this.font = font;
-        this.text = text;
-        this.comment = comment;
         this.defaultIndex = defaultIndex;
         index = defaultIndex;
         this.format = format;
@@ -226,26 +209,6 @@ public class GUIMetaElement extends ActivatableGUIElement implements GUIScrollab
     @Override
     protected void activeChanged()
     {
-        if (!isActive())
-        {
-            if (comment != null)
-            {
-                comment.setText("");
-            }
-        }
-        else
-        {
-            final MetaserverEntry metaEntry = metaserver.getEntry(index);
-            if (comment != null)
-            {
-                comment.setText(metaEntry != null ? metaEntry.getComment() : "");
-            }
-            if (text != null)
-            {
-                text.setText(metaEntry != null ? metaEntry.getHostname() : "");
-            }
-        }
-
         setChanged();
     }
 
