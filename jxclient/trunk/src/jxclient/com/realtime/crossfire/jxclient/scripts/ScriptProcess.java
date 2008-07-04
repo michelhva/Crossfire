@@ -88,7 +88,6 @@ public class ScriptProcess extends Thread
         in = proc.getInputStream();
         out = proc.getOutputStream();
         osw = new OutputStreamWriter(out);
-        start();
     }
 
     @Override

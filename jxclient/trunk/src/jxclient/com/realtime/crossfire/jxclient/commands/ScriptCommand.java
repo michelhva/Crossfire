@@ -87,6 +87,7 @@ public class ScriptCommand extends AbstractCommand
         try
         {
             final ScriptProcess scriptProcess = new ScriptProcess(args, window, commandQueue, crossfireServerConnection, stats);
+            scriptProcess.start();
             // XXX: store scriptProcess
         }
         catch (final IOException ex)
