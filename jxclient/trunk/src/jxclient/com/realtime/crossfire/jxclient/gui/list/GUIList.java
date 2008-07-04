@@ -119,15 +119,18 @@ public abstract class GUIList extends ActivatableGUIElement
         scrollPane.setBorder(new EmptyBorder(0, 0, 0, 0));
 
         list.addListSelectionListener(listSelectionListener);
-        
-        final Graphics2D g = bufferedImage.createGraphics();
-        try
+
+        synchronized (bufferedImageSync)
         {
-            render(g);
-        }
-        finally
-        {
-            g.dispose();
+            final Graphics2D g = bufferedImage.createGraphics();
+            try
+            {
+                render(g);
+            }
+            finally
+            {
+                g.dispose();
+            }
         }
     }
 

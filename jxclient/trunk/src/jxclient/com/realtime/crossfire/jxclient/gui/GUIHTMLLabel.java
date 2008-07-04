@@ -128,23 +128,26 @@ public class GUIHTMLLabel extends AbstractLabel
             return;
         }
 
-        final Graphics2D g = bufferedImage.createGraphics();
-        try
+        synchronized (bufferedImageSync)
         {
-            final FontRenderContext context = g.getFontRenderContext();
-            int width = 0;
-            int height = 0;
-            for (final String str : patternLineBreak.split(getText(), -1))
+            final Graphics2D g = bufferedImage.createGraphics();
+            try
             {
-                final Rectangle2D size = font.getStringBounds(str, context);
-                width = Math.max(width, (int)size.getWidth());
-                height += (int)size.getHeight();
+                final FontRenderContext context = g.getFontRenderContext();
+                int width = 0;
+                int height = 0;
+                for (final String str : patternLineBreak.split(getText(), -1))
+                {
+                    final Rectangle2D size = font.getStringBounds(str, context);
+                    width = Math.max(width, (int)size.getWidth());
+                    height += (int)size.getHeight();
+                }
+                setElementSize(Math.max(1, width+2*AUTO_BORDER_SIZE), Math.max(1, height+2*AUTO_BORDER_SIZE));
             }
-            setElementSize(Math.max(1, width+2*AUTO_BORDER_SIZE), Math.max(1, height+2*AUTO_BORDER_SIZE));
-        }
-        finally
-        {
-            g.dispose();
+            finally
+            {
+                g.dispose();
+            }
         }
     }
 }

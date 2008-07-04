@@ -45,6 +45,11 @@ public abstract class GUIElement extends JPanel
      */
     private Gui gui = null;
 
+    /**
+     * Object used to synchonize on {@link #bufferedImage} contents.
+     */
+    protected final Object bufferedImageSync = new Object();
+
     protected BufferedImage bufferedImage;
 
     private boolean visible = true;
@@ -420,7 +425,7 @@ public abstract class GUIElement extends JPanel
      */
     private void render()
     {
-        synchronized (bufferedImage)
+        synchronized (bufferedImageSync)
         {
             final Graphics2D g = bufferedImage.createGraphics();
             try
@@ -445,7 +450,7 @@ public abstract class GUIElement extends JPanel
     @Override
     public void paintComponent(final Graphics g)
     {
-        synchronized (bufferedImage)
+        synchronized (bufferedImageSync)
         {
             if (changed)
             {

@@ -426,25 +426,28 @@ public abstract class GUIText extends ActivatableGUIElement implements KeyListen
             {
                 // cursor moved right
 
-                final Graphics2D g = bufferedImage.createGraphics();
-                for (;;)
+                synchronized (bufferedImageSync)
                 {
-                    final String tmp = getDisplayText();
-                    final String tmpCursor = tmp.substring(0, cursor-offset+1);
-                    final Rectangle2D rectCursor = font.getStringBounds(tmpCursor, g.getFontRenderContext());
-                    final int cursorX = (int)(rectCursor.getWidth()+0.5);
-                    if (cursorX < getWidth())
+                    final Graphics2D g = bufferedImage.createGraphics();
+                    for (;;)
                     {
-                        break;
-                    }
+                        final String tmp = getDisplayText();
+                        final String tmpCursor = tmp.substring(0, cursor-offset+1);
+                        final Rectangle2D rectCursor = font.getStringBounds(tmpCursor, g.getFontRenderContext());
+                        final int cursorX = (int)(rectCursor.getWidth()+0.5);
+                        if (cursorX < getWidth())
+                        {
+                            break;
+                        }
 
-                    if (offset+SCROLL_CHARS <= cursor)
-                    {
-                        offset += SCROLL_CHARS;
-                    }
-                    else
-                    {
-                        offset = cursor;
+                        if (offset+SCROLL_CHARS <= cursor)
+                        {
+                            offset += SCROLL_CHARS;
+                        }
+                        else
+                        {
+                            offset = cursor;
+                        }
                     }
                 }
             }
