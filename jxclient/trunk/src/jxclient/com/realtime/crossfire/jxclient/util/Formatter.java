@@ -46,4 +46,32 @@ public class Formatter
          final long tmp = (value+500000000L)/1000000000L;
          return tmp+" billion";
     }
+
+    /**
+     * Formats a float value for display.
+     * @param value the float value
+     * @param digits the number of fraction digits; must be between 1..3
+     * inclusive
+     * @return the formatted value
+     */
+    public static String formatFloat(final double value, final int digits)
+    {
+        final int tmp;
+        switch (digits)
+        {
+        case 1:
+            tmp = (int)(value*10+0.5);
+            return tmp/10+"."+tmp%10;
+
+        case 2:
+            tmp = (int)(value*100+0.5);
+            return tmp/100+"."+tmp/10%10+tmp%10;
+
+        case 3:
+            tmp = (int)(value*1000+0.5);
+            return tmp/1000+"."+tmp/100%10+tmp/10%10+tmp%10;
+        }
+
+        throw new IllegalArgumentException();
+    }
 }
