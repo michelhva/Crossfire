@@ -28,6 +28,7 @@ import java.awt.Graphics;
 import java.awt.Graphics2D;
 import java.awt.Toolkit;
 import java.awt.Transparency;
+import java.awt.font.FontRenderContext;
 import java.awt.datatransfer.Clipboard;
 import java.awt.datatransfer.DataFlavor;
 import java.awt.datatransfer.Transferable;
@@ -80,6 +81,11 @@ public abstract class GUIText extends ActivatableGUIElement implements KeyListen
     private final StringBuilder text;
 
     /**
+     * The context used to determine character extents.
+     */
+    private final FontRenderContext fontRenderContext;
+
+    /**
      * Whether UP and DOWN keys should be ignored. If unset, these keys cycle
      * through the history.
      */
@@ -119,6 +125,18 @@ public abstract class GUIText extends ActivatableGUIElement implements KeyListen
         this.margin = margin;
         this.text = new StringBuilder(text);
         this.ignoreUpDown = ignoreUpDown;
+        synchronized (bufferedImageSync)
+        {
+            final Graphics2D g = bufferedImage.createGraphics();
+            try
+            {
+                fontRenderContext = g.getFontRenderContext();
+            }
+            finally
+            {
+                g.dispose();
+            }
+        }
         setCursor(this.text.length());
     }
 
@@ -145,15 +163,14 @@ public abstract class GUIText extends ActivatableGUIElement implements KeyListen
         synchronized (syncCursor)
         {
             tmp = getDisplayText();
-            final Graphics2D g2 = (Graphics2D)g;
-            final Rectangle2D rect = font.getStringBounds(tmp, g2.getFontRenderContext());
+            final Rectangle2D rect = font.getStringBounds(tmp, fontRenderContext);
             y = (int)Math.round((getHeight()-rect.getMaxY()-rect.getMinY()))/2;
             if (isActive())
             {
                 final String tmpPrefix = tmp.substring(0, cursor-offset);
                 final String tmpCursor = tmp.substring(0, cursor-offset+1);
-                final Rectangle2D rectPrefix = font.getStringBounds(tmpPrefix, g2.getFontRenderContext());
-                final Rectangle2D rectCursor = font.getStringBounds(tmpCursor, g2.getFontRenderContext());
+                final Rectangle2D rectPrefix = font.getStringBounds(tmpPrefix, fontRenderContext);
+                final Rectangle2D rectCursor = font.getStringBounds(tmpCursor, fontRenderContext);
                 final int cursorX1 = (int)(rectPrefix.getWidth()+0.5);
                 final int cursorX2 = (int)(rectCursor.getWidth()+0.5);
                 g.setColor(inactiveColor);
@@ -426,28 +443,24 @@ public abstract class GUIText extends ActivatableGUIElement implements KeyListen
             {
                 // cursor moved right
 
-                synchronized (bufferedImageSync)
+                for (;;)
                 {
-                    final Graphics2D g = bufferedImage.createGraphics();
-                    for (;;)
+                    final String tmp = getDisplayText();
+                    final String tmpCursor = tmp.substring(0, cursor-offset+1);
+                    final Rectangle2D rectCursor = font.getStringBounds(tmpCursor, fontRenderContext);
+                    final int cursorX = (int)(rectCursor.getWidth()+0.5);
+                    if (cursorX < getWidth())
                     {
-                        final String tmp = getDisplayText();
-                        final String tmpCursor = tmp.substring(0, cursor-offset+1);
-                        final Rectangle2D rectCursor = font.getStringBounds(tmpCursor, g.getFontRenderContext());
-                        final int cursorX = (int)(rectCursor.getWidth()+0.5);
-                        if (cursorX < getWidth())
-                        {
-                            break;
-                        }
+                        break;
+                    }
 
-                        if (offset+SCROLL_CHARS <= cursor)
-                        {
-                            offset += SCROLL_CHARS;
-                        }
-                        else
-                        {
-                            offset = cursor;
-                        }
+                    if (offset+SCROLL_CHARS <= cursor)
+                    {
+                        offset += SCROLL_CHARS;
+                    }
+                    else
+                    {
+                        offset = cursor;
                     }
                 }
             }
