@@ -74,6 +74,7 @@ public abstract class ServerConnection implements PacketListener
             }
 
             clientSocket = new ClientSocket(hostname, port, this, scriptMonitorListeners, connectionListener);
+            clientSocket.start();
         }
     }
 
