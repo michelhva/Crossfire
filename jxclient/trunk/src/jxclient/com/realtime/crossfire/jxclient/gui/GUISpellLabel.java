@@ -100,7 +100,7 @@ public class GUISpellLabel extends GUIHTMLLabel
 
             case SPELL_ICON:
                 setText("");
-                setBackground(facesManager.getOriginalImageIcon(spell.getFaceNum()));
+                setBackgroundImage(facesManager.getOriginalImageIcon(spell.getFaceNum()));
                 break;
 
             case SPELL_COST:
