@@ -30,6 +30,7 @@ import java.awt.Transparency;
 import java.awt.image.BufferedImage;
 import java.io.FileInputStream;
 import java.io.IOException;
+import java.util.Iterator;
 import junit.framework.Test;
 import junit.framework.TestCase;
 import junit.framework.TestSuite;
@@ -343,9 +344,14 @@ public class ParserTest extends TestCase
     private static void dumpBuffer(final StringBuilder sb, final Buffer buffer)
     {
         sb.append("buffer:\n");
-        for (final Line line : buffer)
+        synchronized (buffer.getSyncObject())
         {
-            dumpLine(sb, line);
+            final Iterator<Line> it = buffer.iterator();
+            while (it.hasNext())
+            {
+                final Line line = it.next();
+                dumpLine(sb, line);
+            }
         }
     }
 

@@ -35,7 +35,7 @@ import java.util.ListIterator;
  *
  * @author Andreas Kirschbaum
  */
-public class Buffer implements Iterable<Line>
+public class Buffer
 {
     /**
      * The maximum number of lines the buffer can hold.
@@ -73,6 +73,12 @@ public class Buffer implements Iterable<Line>
     private int totalHeight = 0;
 
     /**
+     * Object to synchronized access to {@link #lines} and {@link
+     * #totalHeight}.
+     */
+    private final Object sync = new Object();
+
+    /**
      * Create a new instance.
      *
      * @param fonts The <code>Fonts</code> instance for looking up fonts.
@@ -93,9 +99,13 @@ public class Buffer implements Iterable<Line>
      */
     public void clear()
     {
-        final List<Line> removedLines = new ArrayList<Line>(lines);
-        totalHeight = 0;
-        lines.clear();
+        final List<Line> removedLines;
+        synchronized (sync)
+        {
+            removedLines = new ArrayList<Line>(lines);
+            totalHeight = 0;
+            lines.clear();
+        }
         for (final BufferListener listener : listeners)
         {
             listener.linesRemoved(removedLines);
@@ -111,8 +121,11 @@ public class Buffer implements Iterable<Line>
     {
         final int height = calculateHeight(line);
         line.setHeight(height);
-        totalHeight += height;
-        lines.add(line);
+        synchronized (sync)
+        {
+            totalHeight += height;
+            lines.add(line);
+        }
 
         for (final BufferListener listener : listeners)
         {
@@ -129,10 +142,13 @@ public class Buffer implements Iterable<Line>
     {
         final int height = calculateHeight(line);
         line.setHeight(height);
-        totalHeight += height;
-        final int lastIndex = lines.size()-1;
-        totalHeight -= lines.get(lastIndex).getHeight();
-        lines.set(lastIndex, line);
+        synchronized (sync)
+        {
+            totalHeight += height;
+            final int lastIndex = lines.size()-1;
+            totalHeight -= lines.get(lastIndex).getHeight();
+            lines.set(lastIndex, line);
+        }
 
         for (final BufferListener listener : listeners)
         {
@@ -145,17 +161,21 @@ public class Buffer implements Iterable<Line>
      */
     public void prune()
     {
-        if (lines.size() <= MAX_LINES)
+        final List<Line> removedLines;
+        synchronized (sync)
         {
-            return;
-        }
+            if (lines.size() <= MAX_LINES)
+            {
+                return;
+            }
 
-        final List<Line> removedLines = new ArrayList<Line>(lines.size()-MAX_LINES);
-        while (lines.size() > MAX_LINES)
-        {
-            final Line line = lines.remove(0);
-            removedLines.add(line);
-            totalHeight -= line.getHeight();
+            removedLines = new ArrayList<Line>(lines.size()-MAX_LINES);
+            while (lines.size() > MAX_LINES)
+            {
+                final Line line = lines.remove(0);
+                removedLines.add(line);
+                totalHeight -= line.getHeight();
+            }
         }
         for (final BufferListener listener : listeners)
         {
@@ -173,7 +193,10 @@ public class Buffer implements Iterable<Line>
      */
     public Line getLine(final int line)
     {
-        return lines.get(line);
+        synchronized (sync)
+        {
+            return lines.get(line);
+        }
     }
 
     /**
@@ -183,12 +206,20 @@ public class Buffer implements Iterable<Line>
      */
     public int getTotalHeight()
     {
-        return totalHeight;
+        synchronized (sync)
+        {
+            return totalHeight;
+        }
     }
 
-    /** {@inheritDoc} */
+    /**
+     * Return an {@link Iterator} for the lines in this buffer. The caller must
+     * hold {@link #sync}'s lock.
+     * @return the iterator
+     */
     public Iterator<Line> iterator()
     {
+        assert Thread.holdsLock(sync);
         return Collections.unmodifiableList(lines).iterator();
     }
 
@@ -201,6 +232,7 @@ public class Buffer implements Iterable<Line>
      */
     public ListIterator<Line> listIterator(final int line)
     {
+        assert Thread.holdsLock(sync);
         return Collections.unmodifiableList(lines).listIterator(line);
     }
 
@@ -211,7 +243,10 @@ public class Buffer implements Iterable<Line>
      */
     public int size()
     {
-        return lines.size();
+        synchronized (sync)
+        {
+            return lines.size();
+        }
     }
 
     /**
@@ -296,5 +331,15 @@ public class Buffer implements Iterable<Line>
     public void addBufferListener(final BufferListener listener)
     {
         listeners.add(listener);
+    }
+
+    /**
+     * Returns the object to synchronize on when calling {@link #iterator()} or
+     * {@link #listIterator(int)}.
+     * @return the object
+     */
+    public Object getSyncObject()
+    {
+        return sync;
     }
 }
