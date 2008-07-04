@@ -103,7 +103,7 @@ public abstract class AbstractLabel extends GUIElement
      *
      * @param backgroundImage The new background image.
      */
-    protected void setBackground(final ImageIcon backgroundImage)
+    protected void setBackgroundImage(final ImageIcon backgroundImage)
     {
         this.backgroundImage = backgroundImage;
         setChanged();
