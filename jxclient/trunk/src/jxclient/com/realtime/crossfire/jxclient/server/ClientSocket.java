@@ -97,7 +97,6 @@ public class ClientSocket extends Thread
         this.host = host;
         this.port = port;
         this.packetListener = packetListener;
-        start();
     }
 
     /**
