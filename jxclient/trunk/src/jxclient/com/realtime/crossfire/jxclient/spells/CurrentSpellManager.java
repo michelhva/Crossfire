@@ -52,10 +52,9 @@ public class CurrentSpellManager
         }
 
         currentSpell = spell;
-        final SpellChangedEvent event = new SpellChangedEvent(this, currentSpell);
         for (final SpellListener listener : listeners)
         {
-            listener.spellChanged(event);
+            listener.spellChanged(spell);
         }
     }
 
