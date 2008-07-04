@@ -144,12 +144,15 @@ public abstract class GUILog extends GUIElement implements GUIScrollable2
         }
 
         int y = -renderStateManager.getTopOffset();
-        final ListIterator<Line> it = buffer.listIterator(renderStateManager.getTopIndex());
-        while (y < getHeight() && it.hasNext())
+        synchronized (buffer.getSyncObject())
         {
-            final Line line = it.next();
-            drawLine(g, y, line);
-            y += line.getHeight();
+            final ListIterator<Line> it = buffer.listIterator(renderStateManager.getTopIndex());
+            while (y < getHeight() && it.hasNext())
+            {
+                final Line line = it.next();
+                drawLine(g, y, line);
+                y += line.getHeight();
+            }
         }
     }
 
