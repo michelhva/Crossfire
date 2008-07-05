@@ -24,8 +24,8 @@ import com.realtime.crossfire.jxclient.server.CrossfireStatsListener;
 import com.realtime.crossfire.jxclient.stats.Stats;
 import com.realtime.crossfire.jxclient.stats.StatsEvent;
 import com.realtime.crossfire.jxclient.stats.StatsListener;
-import com.realtime.crossfire.jxclient.window.JXCWindow;
 import com.realtime.crossfire.jxclient.util.Formatter;
+import com.realtime.crossfire.jxclient.window.JXCWindow;
 import java.awt.Color;
 import java.awt.Font;
 
