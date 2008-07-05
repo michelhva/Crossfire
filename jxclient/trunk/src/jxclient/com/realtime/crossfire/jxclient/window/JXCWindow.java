@@ -396,7 +396,7 @@ public class JXCWindow extends JFrame implements KeyListener, CrossfireDrawextin
 
             if (dialogQuit == null)
             {
-                endRendering();
+                quitApplication();
             }
             else
             {
@@ -409,7 +409,7 @@ public class JXCWindow extends JFrame implements KeyListener, CrossfireDrawextin
         @Override
         public void windowClosed(final WindowEvent e)
         {
-            endRendering();
+            quitApplication();
         }
     };
 
@@ -645,7 +645,7 @@ public class JXCWindow extends JFrame implements KeyListener, CrossfireDrawextin
         }
     }
 
-    public void endRendering()
+    public void quitApplication()
     {
         terminated = true;
     }
@@ -719,7 +719,7 @@ public class JXCWindow extends JFrame implements KeyListener, CrossfireDrawextin
                 windowRenderer.setGuiState(JXCWindowRenderer.GuiState.START);
                 if (DISABLE_START_GUI)
                 {
-                    endRendering();
+                    quitApplication();
                 }
                 else
                 {
@@ -966,7 +966,7 @@ public class JXCWindow extends JFrame implements KeyListener, CrossfireDrawextin
                 {
                     if (dialogQuit == null)
                     {
-                        endRendering();
+                        quitApplication();
                     }
                     else if (windowRenderer.openDialog(dialogQuit))
                     {
