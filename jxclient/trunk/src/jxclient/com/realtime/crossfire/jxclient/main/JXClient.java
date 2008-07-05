@@ -19,17 +19,11 @@
 //
 package com.realtime.crossfire.jxclient.main;
 
-import com.realtime.crossfire.jxclient.settings.Filenames;
-import com.realtime.crossfire.jxclient.settings.Settings;
 import com.realtime.crossfire.jxclient.settings.options.OptionException;
 import com.realtime.crossfire.jxclient.settings.options.OptionManager;
 import com.realtime.crossfire.jxclient.settings.options.SoundCheckBoxOption;
-import com.realtime.crossfire.jxclient.skin.Resolution;
 import com.realtime.crossfire.jxclient.sound.SoundManager;
 import com.realtime.crossfire.jxclient.window.JXCWindow;
-import java.awt.DisplayMode;
-import java.awt.GraphicsDevice;
-import java.awt.GraphicsEnvironment;
 import java.io.BufferedWriter;
 import java.io.FileOutputStream;
 import java.io.IOException;
@@ -47,11 +41,6 @@ import java.io.OutputStreamWriter;
 public class JXClient
 {
     /**
-     * The default skin name.
-     */
-    public static final String DEFAULT_SKIN = "ragnorok";
-
-    /**
      * The program entry point.
      * @param args The command line arguments.
      */
@@ -60,109 +49,32 @@ public class JXClient
         System.out.println("JXClient - Crossfire Java Client");
         System.out.println("(C)2005 by Lauwenmark.");
         System.out.println("This software is placed under the GPL License");
-        new JXClient(args);
+        final Options options = new Options();
+        try
+        {
+            options.parse(args);
+        }
+        catch (final IOException ex)
+        {
+            System.err.println(ex.getMessage());
+            System.exit(1);
+            throw new AssertionError();
+        }
+        new JXClient(options);
     }
 
     /**
      * The constructor of the class. This is where the main window is created.
      * Initialization of a JXCWindow is the only task performed here.
-     * @param args The command line arguments.
+     * @param options the options
      */
-    public JXClient(final String[] args)
+    public JXClient(final Options options)
     {
         try
         {
-            final Settings prefs = new Settings(Filenames.getSettingsFile());
-            Resolution resolution = Resolution.parse(false, prefs.getString("resolution", getScreenResolution()));
-            String skin = prefs.getString("skin", "default");
-            boolean fullScreen = true;
-            String server = null;
-            boolean debugGui = false;
-            String debugProtocolFilename = null;
-
-            // fix changed default skin name
-            if (skin.equals("com.realtime.crossfire.jxclient.JXCSkinPrelude"))
-            {
-                skin = "default";
-            }
-
-            for (int i = 0; i < args.length; i++)
-            {
-                if ((args[i].equals("-r") || args[i].equals("--resolution")) && i+1 < args.length)
-                {
-                    resolution = Resolution.parse(true, args[i+1]);
-                    if (resolution == null)
-                    {
-                        System.err.println("Invalid resolution: "+args[i+1]);
-                        System.exit(1);
-                    }
-                    i++;
-                }
-                else if (args[i].equals("-S") && i+1 < args.length)
-                {
-                    skin = args[i+1];
-                    if (skin.indexOf('@') != -1)
-                    {
-                        System.err.println("Invalid skin name: "+skin);
-                        System.exit(1);
-                    }
-                    i++;
-                }
-                else if (args[i].equals("-N"))
-                {
-                    fullScreen = false;
-                }
-                else if (args[i].equals("--opengl"))
-                {
-                    System.setProperty("sun.java2d.opengl", "True");
-                }
-                else if (args[i].equals("--server") && i+1 < args.length)
-                {
-                    server = args[i+1];
-                    i++;
-                }
-                else if (args[i].equals("--debug-gui"))
-                {
-                    debugGui = true;
-                }
-                else if (args[i].equals("--debug-protocol") && i+1 < args.length)
-                {
-                    debugProtocolFilename = args[i+1];
-                    i++;
-                }
-                else
-                {
-                    System.out.println("");
-                    System.out.println("Available options:");
-                    System.out.println(" -N             : Disable full-screen mode;");
-                    System.out.println(" --resolution <width>x<height>");
-                    System.out.println(" -r <width>x<height>");
-                    System.out.println("                : Resolution to use [default is maximum not exceeding current]");
-                    System.out.println(" -S <skin>      : Skin name to use. [default, prelude, ragnorok]");
-                    System.out.println(" --opengl       : Enable the OpenGL rendering pipeline.");
-                    System.out.println(" --server <host>: Select a server to connect to; skips main and metaserver");
-                    System.out.println("                  windows.");
-                    System.out.println(" --debug-gui    : Enable debugging of GUI elements.");
-                    System.out.println(" --debug-protocol <log-file>");
-                    System.out.println("                : Log messages exchanged with the server.");
-                    System.exit(1);
-                }
-            }
-            prefs.putString("resolution", resolution.toString());
-            prefs.remove("width"); // delete obsolete entry
-            prefs.remove("height"); // delete obsolete entry
-            prefs.putString("skin", skin);
-
-            // Map "default to actual skin name; must be after skin name has
-            // been written to preferences.
-            if (skin.equals("default"))
-            {
-                skin = DEFAULT_SKIN;
-            }
-
             final SoundManager soundManager = new SoundManager();
 
-            final FileOutputStream debugProtocolFileOutputStream = debugProtocolFilename == null ? null : new FileOutputStream(debugProtocolFilename);
+            final FileOutputStream debugProtocolFileOutputStream = options.getDebugProtocolFilename() == null ? null : new FileOutputStream(options.getDebugProtocolFilename());
             try
             {
                 final OutputStreamWriter debugProtocolOutputStreamWriter = debugProtocolFileOutputStream == null ? null : new OutputStreamWriter(debugProtocolFileOutputStream, "UTF-8");
@@ -171,8 +83,8 @@ public class JXClient
                     final BufferedWriter debugProtocolBufferedWriter = debugProtocolOutputStreamWriter == null ? null : new BufferedWriter(debugProtocolOutputStreamWriter);
                     try
                     {
-                        final OptionManager optionManager = new OptionManager(prefs);
-                        final JXCWindow window = new JXCWindow(debugGui, debugProtocolBufferedWriter, prefs, soundManager, optionManager);
+                        final OptionManager optionManager = new OptionManager(options.getPrefs());
+                        final JXCWindow window = new JXCWindow(options.isDebugGui(), debugProtocolBufferedWriter, options.getPrefs(), soundManager, optionManager);
                         try
                         {
                             optionManager.addOption("sound_enabled", "Whether sound is enabled.", new SoundCheckBoxOption(soundManager));
@@ -182,7 +94,7 @@ public class JXClient
                             throw new AssertionError();
                         }
 
-                        window.init(resolution, skin, fullScreen, server);
+                        window.init(options.getResolution(), options.getSkin(), options.isFullScreen(), options.getServer());
                     }
                     finally
                     {
@@ -215,17 +127,5 @@ public class JXClient
         }
 
         System.exit(0);
-    }
-
-    /**
-     * Returns the current screen's resolution.
-     * @return the screen's resolution.
-     */
-    public static String getScreenResolution()
-    {
-        final GraphicsEnvironment ge = GraphicsEnvironment.getLocalGraphicsEnvironment();
-        final GraphicsDevice gd = ge.getDefaultScreenDevice();
-        final DisplayMode displayMode = gd.getDisplayMode();
-        return new Resolution(true, displayMode.getWidth(), displayMode.getHeight()).toString();
     }
 }
