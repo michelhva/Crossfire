@@ -28,6 +28,8 @@ import java.io.BufferedWriter;
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.OutputStreamWriter;
+import java.lang.reflect.InvocationTargetException;
+import javax.swing.SwingUtilities;
 
 /**
  * This is the entry point for JXClient. Note that this class doesn't do much
@@ -84,7 +86,8 @@ public class JXClient
                     try
                     {
                         final OptionManager optionManager = new OptionManager(options.getPrefs());
-                        final JXCWindow window = new JXCWindow(options.isDebugGui(), debugProtocolBufferedWriter, options.getPrefs(), soundManager, optionManager);
+                        final Object terminateSync = new Object();
+                        final JXCWindow window = new JXCWindow(terminateSync, options.isDebugGui(), debugProtocolBufferedWriter, options.getPrefs(), soundManager, optionManager);
                         try
                         {
                             optionManager.addOption("sound_enabled", "Whether sound is enabled.", new SoundCheckBoxOption(soundManager));
@@ -94,7 +97,26 @@ public class JXClient
                             throw new AssertionError();
                         }
 
-                        window.init(options.getResolution(), options.getSkin(), options.isFullScreen(), options.getServer());
+                        synchronized (terminateSync)
+                        {
+                            SwingUtilities.invokeAndWait(new Runnable()
+                            {
+                                /** {@inheritDoc} */
+                                public void run()
+                                {
+                                    window.init(options.getResolution(), options.getSkin(), options.isFullScreen(), options.getServer());
+                                }
+                            });
+                            terminateSync.wait();
+                        }
+                        SwingUtilities.invokeAndWait(new Runnable()
+                        {
+                            /** {@inheritDoc} */
+                            public void run()
+                            {
+                                window.term();
+                            }
+                        });
                     }
                     finally
                     {
@@ -124,6 +146,19 @@ public class JXClient
         {
             e.printStackTrace();
             System.exit(1);
+            throw new AssertionError();
+        }
+        catch (final InterruptedException e)
+        {
+            e.printStackTrace();
+            System.exit(1);
+            throw new AssertionError();
+        }
+        catch (final InvocationTargetException e)
+        {
+            e.printStackTrace();
+            System.exit(1);
+            throw new AssertionError();
         }
 
         System.exit(0);

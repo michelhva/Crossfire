@@ -79,6 +79,8 @@ import java.awt.event.WindowAdapter;
 import java.awt.event.WindowEvent;
 import java.awt.event.WindowFocusListener;
 import java.awt.event.WindowListener;
+import java.awt.event.ActionListener;
+import java.awt.event.ActionEvent;
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.IOException;
@@ -86,6 +88,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 import javax.swing.JFrame;
+import javax.swing.Timer;
 
 /**
  *
@@ -117,6 +120,11 @@ public class JXCWindow extends JFrame implements KeyListener, CrossfireDrawextin
     private final List<ConnectionStateListener> connectionStateListeners = new ArrayList<ConnectionStateListener>();
 
     private int guiId = -1;
+
+    /**
+     * Terminate the application if set.
+     */
+    private final Object terminateSync;
 
     /**
      * Whether GUI elements should be highlighted.
@@ -180,11 +188,6 @@ public class JXCWindow extends JFrame implements KeyListener, CrossfireDrawextin
      * The {@link SoundManager} instance.
      */
     private final SoundManager soundManager;
-
-    /**
-     * Terminate the application if set.
-     */
-    private boolean terminated = false;
 
     private Gui queryDialog;
 
@@ -290,6 +293,26 @@ public class JXCWindow extends JFrame implements KeyListener, CrossfireDrawextin
      * Whether the currently shown query dialog is the character name prompt.
      */
     private boolean currentQueryDialogIsNamePrompt = false;
+
+    /**
+     * Called periodically to update the display contents.
+     */
+    private final ActionListener actionListener = new ActionListener()
+    {
+        /** {@inheritDoc} */
+        public void actionPerformed(final ActionEvent e)
+        {
+            synchronized (semaphoreDrawing)
+            {
+                windowRenderer.redrawGUI();
+            }
+        }
+    };
+
+    /**
+     * The timer used to update the display contents.
+     */
+    private final Timer timer = new Timer(10, actionListener);
 
     public enum Status
     {
@@ -416,6 +439,9 @@ public class JXCWindow extends JFrame implements KeyListener, CrossfireDrawextin
     /**
      * Create a new instance.
      *
+     * @param terminateSync Object to be notified when the application
+     * terminates
+     *
      * @param debugGui Whether GUI elements should be highlighted.
      *
      * @param debugProtocol If non-<code>null</code>, write all protocol
@@ -429,9 +455,10 @@ public class JXCWindow extends JFrame implements KeyListener, CrossfireDrawextin
      *
      * @throws IOException if a resource cannot be loaded
      */
-    public JXCWindow(final boolean debugGui, final Appendable debugProtocol, final Settings settings, final SoundManager soundManager, final OptionManager optionManager) throws IOException
+    public JXCWindow(final Object terminateSync, final boolean debugGui, final Appendable debugProtocol, final Settings settings, final SoundManager soundManager, final OptionManager optionManager) throws IOException
     {
         super(TITLE_PREFIX);
+        this.terminateSync = terminateSync;
         this.debugGui = debugGui;
         this.settings = settings;
         this.soundManager = soundManager;
@@ -647,7 +674,11 @@ public class JXCWindow extends JFrame implements KeyListener, CrossfireDrawextin
 
     public void quitApplication()
     {
-        terminated = true;
+        timer.stop();
+        synchronized (terminateSync)
+        {
+            terminateSync.notifyAll();
+        }
     }
 
     public void changeGUI(final int guiId)
@@ -778,43 +809,30 @@ public class JXCWindow extends JFrame implements KeyListener, CrossfireDrawextin
             }
         }
         windowRenderer.init(skin.getResolution());
-        try
-        {
-            initRendering(fullScreen);
-            try
-            {
-                if (serverInfo != null)
-                {
-                    connect(serverInfo);
-                }
-                else
-                {
-                    changeGUI(DISABLE_START_GUI ? GUI_METASERVER : GUI_START);
-                }
-                while (!terminated)
-                {
-                    synchronized (semaphoreDrawing)
-                    {
-                        windowRenderer.redrawGUI();
-                    }
-                    Thread.sleep(10);
-                }
-            }
-            finally
-            {
-                windowRenderer.endRendering();
-            }
+        initRendering(fullScreen);
 
-            saveShortcuts();
-            saveKeybindings();
-            DialogStateParser.save(skin, windowRenderer);
-            optionManager.saveOptions();
-            soundManager.shutdown();
-        }
-        catch (final InterruptedException e)
+        if (serverInfo != null)
         {
-            // ignore
+            connect(serverInfo);
         }
+        else
+        {
+            changeGUI(DISABLE_START_GUI ? GUI_METASERVER : GUI_START);
+        }
+        timer.start();
+    }
+
+    /**
+     * Frees all resources. Should be called before the application terminates.
+     */
+    public void term()
+    {
+        windowRenderer.endRendering();
+        saveShortcuts();
+        saveKeybindings();
+        DialogStateParser.save(skin, windowRenderer);
+        optionManager.saveOptions();
+        soundManager.shutdown();
     }
 
     public void connect(final String serverInfo)
