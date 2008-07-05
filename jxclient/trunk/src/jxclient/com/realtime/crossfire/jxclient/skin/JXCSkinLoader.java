@@ -32,7 +32,6 @@ import com.realtime.crossfire.jxclient.gui.GUILabelQuery;
 import com.realtime.crossfire.jxclient.gui.GUILabelStats;
 import com.realtime.crossfire.jxclient.gui.GUIMagicMap;
 import com.realtime.crossfire.jxclient.gui.GUIMap;
-import com.realtime.crossfire.jxclient.gui.GUIMetaElement;
 import com.realtime.crossfire.jxclient.gui.GUIMultiLineLabel;
 import com.realtime.crossfire.jxclient.gui.GUIOneLineLabel;
 import com.realtime.crossfire.jxclient.gui.GUIPicture;
