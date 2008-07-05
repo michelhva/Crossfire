@@ -37,7 +37,7 @@ import com.realtime.crossfire.jxclient.gui.textinput.GUIText;
 import com.realtime.crossfire.jxclient.items.CfPlayer;
 import com.realtime.crossfire.jxclient.items.ItemsManager;
 import com.realtime.crossfire.jxclient.items.PlayerListener;
-import com.realtime.crossfire.jxclient.jxclient;
+import com.realtime.crossfire.jxclient.main.JXClient;
 import com.realtime.crossfire.jxclient.mapupdater.CfMapUpdater;
 import com.realtime.crossfire.jxclient.metaserver.Metaserver;
 import com.realtime.crossfire.jxclient.server.CommandQueue;
@@ -765,13 +765,13 @@ public class JXCWindow extends JFrame implements KeyListener, CrossfireDrawextin
         addMouseMotionListener(mouseTracker);
         if (!setSkin(skinName))
         {
-            if (skinName.equals(jxclient.DEFAULT_SKIN))
+            if (skinName.equals(JXClient.DEFAULT_SKIN))
             {
                 System.exit(1);
             }
 
-            System.err.println("trying to load default skin "+jxclient.DEFAULT_SKIN);
-            if (!setSkin(jxclient.DEFAULT_SKIN))
+            System.err.println("trying to load default skin "+JXClient.DEFAULT_SKIN);
+            if (!setSkin(JXClient.DEFAULT_SKIN))
             {
                 System.exit(1);
                 throw new AssertionError();
