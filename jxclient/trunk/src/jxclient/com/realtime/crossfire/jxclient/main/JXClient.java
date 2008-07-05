@@ -17,7 +17,7 @@
 //
 // JXClient is (C)2005 by Yann Chachkoff.
 //
-package com.realtime.crossfire.jxclient;
+package com.realtime.crossfire.jxclient.main;
 
 import com.realtime.crossfire.jxclient.settings.Filenames;
 import com.realtime.crossfire.jxclient.settings.Settings;
@@ -44,7 +44,7 @@ import java.io.OutputStreamWriter;
  * @author Lauwenmark
  * @since 1.0
  */
-public class jxclient
+public class JXClient
 {
     /**
      * The default skin name.
@@ -60,7 +60,7 @@ public class jxclient
         System.out.println("JXClient - Crossfire Java Client");
         System.out.println("(C)2005 by Lauwenmark.");
         System.out.println("This software is placed under the GPL License");
-        new jxclient(args);
+        new JXClient(args);
     }
 
     /**
@@ -68,7 +68,7 @@ public class jxclient
      * Initialization of a JXCWindow is the only task performed here.
      * @param args The command line arguments.
      */
-    public jxclient(final String[] args)
+    public JXClient(final String[] args)
     {
         try
         {

@@ -15,7 +15,7 @@
         <jar href="http://www.ailesse.be/jxclient/jxcskin_prelude.jar"/>
         <jar href="http://www.ailesse.be/jxclient/javapng-2.0-rc3.jar"/>
     </resources>
-    <application-desc main-class="com.realtime.crossfire.jxclient.jxclient">
+    <application-desc main-class="com.realtime.crossfire.jxclient.main.JXClient">
         <argument>-opengl</argument>
     </application-desc>
 </jnlp>

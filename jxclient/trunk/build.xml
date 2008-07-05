@@ -23,7 +23,7 @@
             <zipfileset src="jxcskin_prelude.jar"/>
             <zipfileset src="jxcskin_ragnorok.jar"/>
             <manifest>
-                <attribute name="Main-Class" value="com.realtime.crossfire.jxclient.jxclient"/>
+                <attribute name="Main-Class" value="com.realtime.crossfire.jxclient.main.JXClient"/>
                 <attribute name="SplashScreen-Image" value="resource/splashscreen.png" />
             </manifest>
         </jar>
