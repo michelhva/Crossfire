@@ -50,6 +50,6 @@ public class QuitCommand implements GUICommand
     /** {@inheritDoc} */
     public void execute()
     {
-        window.endRendering();
+        window.quitApplication();
     }
 }
