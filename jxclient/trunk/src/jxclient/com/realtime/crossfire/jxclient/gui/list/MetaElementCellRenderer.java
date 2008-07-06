@@ -46,7 +46,7 @@ public class MetaElementCellRenderer extends JPanel implements ListCellRenderer
         super(new BorderLayout());
         setOpaque(false);
         this.template = template;
-        add(template, BorderLayout.NORTH);
+        add(template, BorderLayout.CENTER);
     }
 
     /** {@inheritDoc} */
