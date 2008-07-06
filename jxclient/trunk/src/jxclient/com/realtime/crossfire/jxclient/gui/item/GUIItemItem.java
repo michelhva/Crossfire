@@ -90,6 +90,11 @@ public abstract class GUIItemItem extends GUIItem
     private CfItem item = null;
 
     /**
+     * If set, paint the element in "selected" state.
+     */
+    private boolean selected = false;
+
+    /**
      * The {@link CfItemListener} used to detect attribute changes of
      * the displayed item.
      */
@@ -165,7 +170,7 @@ public abstract class GUIItemItem extends GUIItem
         paintColor(g, magicColor, tmpItem.isMagic());
         paintColor(g, blessedColor, tmpItem.isBlessed());
         paintColor(g, lockedColor, tmpItem.isLocked());
-        paintColor(g, selectorColor, isActive());
+        paintColor(g, selectorColor, selected || isActive());
         paintColor(g, unpaidColor, tmpItem.isUnpaid());
         g.drawImage(facesManager.getOriginalImageIcon(tmpItem.getFace().getFaceNum()).getImage(), 0, 0, null);
         paintImage(g, appliedImage, tmpItem.isApplied());
@@ -174,7 +179,7 @@ public abstract class GUIItemItem extends GUIItem
         paintImage(g, magicImage, tmpItem.isMagic());
         paintImage(g, blessedImage, tmpItem.isBlessed());
         paintImage(g, lockedImage, tmpItem.isLocked());
-        paintImage(g, selectorImage, isActive());
+        paintImage(g, selectorImage, selected || isActive());
         paintImage(g, unpaidImage, tmpItem.isUnpaid());
         if (getWidth() <= getHeight())
         {
@@ -282,5 +287,20 @@ public abstract class GUIItemItem extends GUIItem
         }
 
         setTooltipText(item.getTooltipText());
+    }
+
+    /**
+     * Sets the selected state.
+     * @param selected whether this element should drawn as "selected"
+     */
+    public void setSelected(final boolean selected)
+    {
+        if (this.selected == selected)
+        {
+            return;
+        }
+
+        this.selected = selected;
+        setChanged();
     }
 }
