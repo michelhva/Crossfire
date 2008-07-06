@@ -166,7 +166,7 @@ public class GUIMetaElementList extends GUIList
         {
             for (int i = oldSize; i < newSize; i++)
             {
-                final GUIMetaElement metaElement = new GUIMetaElement(window, metaserver, name+"i", 1, 1, tcpImage, font, i, format, tooltip);
+                final GUIMetaElement metaElement = new GUIMetaElement(window, metaserver, name+i, 1, 1, tcpImage, font, i, format, tooltip);
                 addElement(metaElement);
                 metaserver.addMetaserverEntryListener(i, metaserverEntryListener);
             }
