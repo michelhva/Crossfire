@@ -1,3 +1,18 @@
+2008-07-06  Andreas Kirschbaum
+
+	* Rewrite inventory dialog. Now key bindings are supported:
+	- cursor keys move the selection
+	- d drops the selected item
+	- e examines the selected item
+	- m marks the selected item
+	- l locks the selected item
+	- L unlocks the selected item
+	- a and ENTER apply the selected item
+	- page_up and page_down scroll the list
+	The inventory dialog is not modal. So all other keys are matched
+	against the key bindings which allows picking items from the
+	ground.
+
 2008-07-04  Andreas Kirschbaum
 
 	* Remove meta_element skin command since it is not needed anymore.

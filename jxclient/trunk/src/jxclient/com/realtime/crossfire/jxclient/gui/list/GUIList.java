@@ -21,7 +21,6 @@ package com.realtime.crossfire.jxclient.gui.list;
 
 import com.realtime.crossfire.jxclient.gui.ActivatableGUIElement;
 import com.realtime.crossfire.jxclient.gui.GUIElement;
-import com.realtime.crossfire.jxclient.util.MathUtils;
 import com.realtime.crossfire.jxclient.window.JXCWindow;
 import java.awt.AlphaComposite;
 import java.awt.Color;
@@ -97,6 +96,7 @@ public abstract class GUIList extends ActivatableGUIElement
     protected GUIList(final JXCWindow window, final String name, final int x, final int y, final int w, final int h, final int cellHeight, final ListCellRenderer listCellRenderer)
     {
         super(window, name, x, y, w, h, Transparency.TRANSLUCENT);
+        final Dimension size = new Dimension(w, h);
 
         this.cellHeight = cellHeight;
 
@@ -104,7 +104,7 @@ public abstract class GUIList extends ActivatableGUIElement
         list.setFixedCellHeight(cellHeight);
         list.setOpaque(false);
         list.setSelectionMode(ListSelectionModel.SINGLE_SELECTION);
-        final Dimension size = new Dimension(w, h);
+        list.setSize(size);
 
         scrollPane = new JScrollPane(list, ScrollPaneConstants.VERTICAL_SCROLLBAR_NEVER, ScrollPaneConstants.HORIZONTAL_SCROLLBAR_NEVER);
         scrollPane.getViewport().setScrollMode(JViewport.BLIT_SCROLL_MODE);
@@ -157,7 +157,6 @@ public abstract class GUIList extends ActivatableGUIElement
     {
         model.addElement(element);
         list.setSize(list.getPreferredSize());
-        setChanged();
     }
 
     /**
@@ -181,19 +180,31 @@ public abstract class GUIList extends ActivatableGUIElement
 
     /**
      * Returns whether the selection can be moved.
-     * @param distance the distance to move
+     * @param diffLines the distance in lines to move
+     * @param diffElements the distance in elements to move
      * @return whether moving is possible
      */
-    public boolean canMoveSelection(final int distance)
+    public boolean canMoveSelection(final int diffLines, final int diffElements)
     {
+        final int distance;
+        switch (list.getLayoutOrientation())
+        {
+        case JList.HORIZONTAL_WRAP:
+            distance = (list.getWidth()/cellHeight)*diffLines+diffElements;
+            break;
+
+        default:
+            distance = diffLines+diffElements;
+            break;
+        }
         final int index = list.getSelectedIndex();
         if (distance > 0)
         {
-            return index == -1 || index < list.getModel().getSize()-1;
+            return index == -1 || index+distance < list.getModel().getSize();
         }
         else if (distance < 0)
         {
-            return index == -1 || index > 0;
+            return index == -1 || index >= -distance;
         }
         else
         {
@@ -203,10 +214,22 @@ public abstract class GUIList extends ActivatableGUIElement
 
     /**
      * Moves the selection.
-     * @param distance the distance to move
+     * @param diffLines the distance in lines to move
+     * @param diffElements the distance in elements to move
      */
-    public void moveSelection(final int distance)
+    public void moveSelection(final int diffLines, final int diffElements)
     {
+        final int distance;
+        switch (list.getLayoutOrientation())
+        {
+        case JList.HORIZONTAL_WRAP:
+            distance = (list.getWidth()/cellHeight)*diffLines+diffElements;
+            break;
+
+        default:
+            distance = diffLines+diffElements;
+            break;
+        }
         final int index = list.getSelectedIndex();
         final int newIndex;
         if (distance > 0)
@@ -282,14 +305,48 @@ public abstract class GUIList extends ActivatableGUIElement
             final int firstIndex = list.getFirstVisibleIndex();
             if (index < firstIndex)
             {
-                setSelectedIndex(firstIndex);
+                switch (list.getLayoutOrientation())
+                {
+                case JList.HORIZONTAL_WRAP:
+                    final int columns = list.getWidth()/cellHeight;
+                    setSelectedIndex(firstIndex+index%columns);
+                    break;
+
+                default:
+                    setSelectedIndex(firstIndex);
+                    break;
+                }
             }
             else
             {
                 final int lastIndex = list.getLastVisibleIndex();
                 if (index > lastIndex)
                 {
-                    setSelectedIndex(lastIndex);
+                    switch (list.getLayoutOrientation())
+                    {
+                    case JList.HORIZONTAL_WRAP:
+                        final int columns = list.getWidth()/cellHeight;
+                        final int newTmpColumn = lastIndex-lastIndex%columns+index%columns;
+                        final int newColumn;
+                        if (newTmpColumn <= lastIndex)
+                        {
+                            newColumn = newTmpColumn;
+                        }
+                        else if (newTmpColumn >= columns)
+                        {
+                            newColumn = newTmpColumn-columns;
+                        }
+                        else
+                        {
+                            newColumn = lastIndex;
+                        }
+                        setSelectedIndex(newColumn);
+                        break;
+
+                    default:
+                        setSelectedIndex(lastIndex);
+                        break;
+                    }
                 }
             }
         }
@@ -300,8 +357,8 @@ public abstract class GUIList extends ActivatableGUIElement
     @Override
     public void mouseClicked(final MouseEvent e)
     {
-        super.mouseClicked(e);
         doSelect(e);
+        super.mouseClicked(e);
     }
 
     /** {@inheritDoc} */
@@ -350,7 +407,7 @@ public abstract class GUIList extends ActivatableGUIElement
      */
     private void doSelect(final MouseEvent e)
     {
-        setSelectedIndex(list.getFirstVisibleIndex()+MathUtils.div(e.getY(), cellHeight));
+        setSelectedIndex(list.getFirstVisibleIndex()+list.locationToIndex(e.getPoint()));
     }
 
     /**
@@ -359,7 +416,7 @@ public abstract class GUIList extends ActivatableGUIElement
      */
     private void doTooltip(final MouseEvent e)
     {
-        updateTooltip(list.getFirstVisibleIndex()+MathUtils.div(e.getY(), cellHeight));
+        updateTooltip(list.getFirstVisibleIndex()+list.locationToIndex(e.getPoint()));
     }
 
     /**
@@ -394,4 +451,25 @@ public abstract class GUIList extends ActivatableGUIElement
      * @param index the index to use
      */
     protected abstract void updateTooltip(final int index);
+
+    /**
+     * Sets the layout orientation. See {@link JList#setLayoutOrientation(int)}
+     * and {@link JList#setVisibleRowCount(int)}.
+     * @param layoutOrientation the layout orientation
+     * @param visibleRowCount the number of visible rows
+     */
+    public void setLayoutOrientation(final int layoutOrientation, final int visibleRowCount)
+    {
+        list.setLayoutOrientation(layoutOrientation);
+        list.setVisibleRowCount(visibleRowCount);
+    }
+
+    /**
+     * Returns the selected list object.
+     * @return the selected object or <code>null</code> if none is selected
+     */
+    protected Object getSelectedObject()
+    {
+        return list.getSelectedValue();
+    }
 }

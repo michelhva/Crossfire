@@ -61,9 +61,6 @@ commandlist command_ground_right AND
 commandlist command_newchar_up AND
 commandlist command_newchar_down AND
 
-commandlist command_inventory_up OR
-commandlist command_inventory_down OR
-
 commandlist command_messages_up_all AND
 commandlist command_messages_up_msg AND
 commandlist command_messages_up_chat AND

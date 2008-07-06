@@ -576,4 +576,22 @@ public class ItemsManager
             }
         }
     }
+
+    /**
+     * Returns the player's inventory.
+     * @return the inventory items; the list cannot be modified
+     */
+    public List<CfItem> getInventory()
+    {
+        if (player == null)
+        {
+            return Collections.<CfItem>emptyList();
+        }
+        final List<CfItem> inventory = items.get(player.getTag());
+        if (inventory == null)
+        {
+            return Collections.<CfItem>emptyList();
+        }
+        return Collections.unmodifiableList(inventory);
+    }
 }

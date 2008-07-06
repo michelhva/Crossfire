@@ -178,6 +178,7 @@ public class GUIMetaElementList extends GUIList
                 metaserver.removeMetaserverEntryListener(i, metaserverEntryListener);
             }
         }
+        setChanged();
     }
 
     /** {@inheritDoc} */

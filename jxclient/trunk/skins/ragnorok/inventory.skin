@@ -3,255 +3,51 @@ dialog border 220 340 504 186 true Inventory
 dialog_hide START META LOGIN NEWCHAR
 button button_close  484    4   16 16 close_up close_down false command_inventory_close
 
-item inventory inv0    4 30+4   32 32  0 #FF0000/0.6 #FF8000/0.6 #0000FF/0.6 #0080FF/0.6 marker_applied inventory_selector marker_locked marker_unpaid font_item BLACK
-item inventory inv1   36 30+4   32 32  1 #FF0000/0.6 #FF8000/0.6 #0000FF/0.6 #0080FF/0.6 marker_applied inventory_selector marker_locked marker_unpaid font_item BLACK
-item inventory inv2   68 30+4   32 32  2 #FF0000/0.6 #FF8000/0.6 #0000FF/0.6 #0080FF/0.6 marker_applied inventory_selector marker_locked marker_unpaid font_item BLACK
-item inventory inv3  100 30+4   32 32  3 #FF0000/0.6 #FF8000/0.6 #0000FF/0.6 #0080FF/0.6 marker_applied inventory_selector marker_locked marker_unpaid font_item BLACK
-item inventory inv4  132 30+4   32 32  4 #FF0000/0.6 #FF8000/0.6 #0000FF/0.6 #0080FF/0.6 marker_applied inventory_selector marker_locked marker_unpaid font_item BLACK
-item inventory inv5  164 30+4   32 32  5 #FF0000/0.6 #FF8000/0.6 #0000FF/0.6 #0080FF/0.6 marker_applied inventory_selector marker_locked marker_unpaid font_item BLACK
-item inventory inv6  196 30+4   32 32  6 #FF0000/0.6 #FF8000/0.6 #0000FF/0.6 #0080FF/0.6 marker_applied inventory_selector marker_locked marker_unpaid font_item BLACK
-item inventory inv7  228 30+4   32 32  7 #FF0000/0.6 #FF8000/0.6 #0000FF/0.6 #0080FF/0.6 marker_applied inventory_selector marker_locked marker_unpaid font_item BLACK
-item inventory inv8  260 30+4   32 32  8 #FF0000/0.6 #FF8000/0.6 #0000FF/0.6 #0080FF/0.6 marker_applied inventory_selector marker_locked marker_unpaid font_item BLACK
-item inventory inv9  292 30+4   32 32  9 #FF0000/0.6 #FF8000/0.6 #0000FF/0.6 #0080FF/0.6 marker_applied inventory_selector marker_locked marker_unpaid font_item BLACK
-item inventory inv10 324 30+4   32 32 10 #FF0000/0.6 #FF8000/0.6 #0000FF/0.6 #0080FF/0.6 marker_applied inventory_selector marker_locked marker_unpaid font_item BLACK
-item inventory inv11 356 30+4   32 32 11 #FF0000/0.6 #FF8000/0.6 #0000FF/0.6 #0080FF/0.6 marker_applied inventory_selector marker_locked marker_unpaid font_item BLACK
-item inventory inv12 388 30+4   32 32 12 #FF0000/0.6 #FF8000/0.6 #0000FF/0.6 #0080FF/0.6 marker_applied inventory_selector marker_locked marker_unpaid font_item BLACK
-item inventory inv13 420 30+4   32 32 13 #FF0000/0.6 #FF8000/0.6 #0000FF/0.6 #0080FF/0.6 marker_applied inventory_selector marker_locked marker_unpaid font_item BLACK
-item inventory inv14 452 30+4   32 32 14 #FF0000/0.6 #FF8000/0.6 #0000FF/0.6 #0080FF/0.6 marker_applied inventory_selector marker_locked marker_unpaid font_item BLACK
-item inventory inv15   4 30+36  32 32 15 #FF0000/0.6 #FF8000/0.6 #0000FF/0.6 #0080FF/0.6 marker_applied inventory_selector marker_locked marker_unpaid font_item BLACK
-item inventory inv16  36 30+36  32 32 16 #FF0000/0.6 #FF8000/0.6 #0000FF/0.6 #0080FF/0.6 marker_applied inventory_selector marker_locked marker_unpaid font_item BLACK
-item inventory inv17  68 30+36  32 32 17 #FF0000/0.6 #FF8000/0.6 #0000FF/0.6 #0080FF/0.6 marker_applied inventory_selector marker_locked marker_unpaid font_item BLACK
-item inventory inv18 100 30+36  32 32 18 #FF0000/0.6 #FF8000/0.6 #0000FF/0.6 #0080FF/0.6 marker_applied inventory_selector marker_locked marker_unpaid font_item BLACK
-item inventory inv19 132 30+36  32 32 19 #FF0000/0.6 #FF8000/0.6 #0000FF/0.6 #0080FF/0.6 marker_applied inventory_selector marker_locked marker_unpaid font_item BLACK
-item inventory inv20 164 30+36  32 32 20 #FF0000/0.6 #FF8000/0.6 #0000FF/0.6 #0080FF/0.6 marker_applied inventory_selector marker_locked marker_unpaid font_item BLACK
-item inventory inv21 196 30+36  32 32 21 #FF0000/0.6 #FF8000/0.6 #0000FF/0.6 #0080FF/0.6 marker_applied inventory_selector marker_locked marker_unpaid font_item BLACK
-item inventory inv22 228 30+36  32 32 22 #FF0000/0.6 #FF8000/0.6 #0000FF/0.6 #0080FF/0.6 marker_applied inventory_selector marker_locked marker_unpaid font_item BLACK
-item inventory inv23 260 30+36  32 32 23 #FF0000/0.6 #FF8000/0.6 #0000FF/0.6 #0080FF/0.6 marker_applied inventory_selector marker_locked marker_unpaid font_item BLACK
-item inventory inv24 292 30+36  32 32 24 #FF0000/0.6 #FF8000/0.6 #0000FF/0.6 #0080FF/0.6 marker_applied inventory_selector marker_locked marker_unpaid font_item BLACK
-item inventory inv25 324 30+36  32 32 25 #FF0000/0.6 #FF8000/0.6 #0000FF/0.6 #0080FF/0.6 marker_applied inventory_selector marker_locked marker_unpaid font_item BLACK
-item inventory inv26 356 30+36  32 32 26 #FF0000/0.6 #FF8000/0.6 #0000FF/0.6 #0080FF/0.6 marker_applied inventory_selector marker_locked marker_unpaid font_item BLACK
-item inventory inv27 388 30+36  32 32 27 #FF0000/0.6 #FF8000/0.6 #0000FF/0.6 #0080FF/0.6 marker_applied inventory_selector marker_locked marker_unpaid font_item BLACK
-item inventory inv28 420 30+36  32 32 28 #FF0000/0.6 #FF8000/0.6 #0000FF/0.6 #0080FF/0.6 marker_applied inventory_selector marker_locked marker_unpaid font_item BLACK
-item inventory inv29 452 30+36  32 32 29 #FF0000/0.6 #FF8000/0.6 #0000FF/0.6 #0080FF/0.6 marker_applied inventory_selector marker_locked marker_unpaid font_item BLACK
-item inventory inv30   4 30+68  32 32 30 #FF0000/0.6 #FF8000/0.6 #0000FF/0.6 #0080FF/0.6 marker_applied inventory_selector marker_locked marker_unpaid font_item BLACK
-item inventory inv31  36 30+68  32 32 31 #FF0000/0.6 #FF8000/0.6 #0000FF/0.6 #0080FF/0.6 marker_applied inventory_selector marker_locked marker_unpaid font_item BLACK
-item inventory inv32  68 30+68  32 32 32 #FF0000/0.6 #FF8000/0.6 #0000FF/0.6 #0080FF/0.6 marker_applied inventory_selector marker_locked marker_unpaid font_item BLACK
-item inventory inv33 100 30+68  32 32 33 #FF0000/0.6 #FF8000/0.6 #0000FF/0.6 #0080FF/0.6 marker_applied inventory_selector marker_locked marker_unpaid font_item BLACK
-item inventory inv34 132 30+68  32 32 34 #FF0000/0.6 #FF8000/0.6 #0000FF/0.6 #0080FF/0.6 marker_applied inventory_selector marker_locked marker_unpaid font_item BLACK
-item inventory inv35 164 30+68  32 32 35 #FF0000/0.6 #FF8000/0.6 #0000FF/0.6 #0080FF/0.6 marker_applied inventory_selector marker_locked marker_unpaid font_item BLACK
-item inventory inv36 196 30+68  32 32 36 #FF0000/0.6 #FF8000/0.6 #0000FF/0.6 #0080FF/0.6 marker_applied inventory_selector marker_locked marker_unpaid font_item BLACK
-item inventory inv37 228 30+68  32 32 37 #FF0000/0.6 #FF8000/0.6 #0000FF/0.6 #0080FF/0.6 marker_applied inventory_selector marker_locked marker_unpaid font_item BLACK
-item inventory inv38 260 30+68  32 32 38 #FF0000/0.6 #FF8000/0.6 #0000FF/0.6 #0080FF/0.6 marker_applied inventory_selector marker_locked marker_unpaid font_item BLACK
-item inventory inv39 292 30+68  32 32 39 #FF0000/0.6 #FF8000/0.6 #0000FF/0.6 #0080FF/0.6 marker_applied inventory_selector marker_locked marker_unpaid font_item BLACK
-item inventory inv40 324 30+68  32 32 40 #FF0000/0.6 #FF8000/0.6 #0000FF/0.6 #0080FF/0.6 marker_applied inventory_selector marker_locked marker_unpaid font_item BLACK
-item inventory inv41 356 30+68  32 32 41 #FF0000/0.6 #FF8000/0.6 #0000FF/0.6 #0080FF/0.6 marker_applied inventory_selector marker_locked marker_unpaid font_item BLACK
-item inventory inv42 388 30+68  32 32 42 #FF0000/0.6 #FF8000/0.6 #0000FF/0.6 #0080FF/0.6 marker_applied inventory_selector marker_locked marker_unpaid font_item BLACK
-item inventory inv43 420 30+68  32 32 43 #FF0000/0.6 #FF8000/0.6 #0000FF/0.6 #0080FF/0.6 marker_applied inventory_selector marker_locked marker_unpaid font_item BLACK
-item inventory inv44 452 30+68  32 32 44 #FF0000/0.6 #FF8000/0.6 #0000FF/0.6 #0080FF/0.6 marker_applied inventory_selector marker_locked marker_unpaid font_item BLACK
-item inventory inv45   4 30+100 32 32 45 #FF0000/0.6 #FF8000/0.6 #0000FF/0.6 #0080FF/0.6 marker_applied inventory_selector marker_locked marker_unpaid font_item BLACK
-item inventory inv46  36 30+100 32 32 46 #FF0000/0.6 #FF8000/0.6 #0000FF/0.6 #0080FF/0.6 marker_applied inventory_selector marker_locked marker_unpaid font_item BLACK
-item inventory inv47  68 30+100 32 32 47 #FF0000/0.6 #FF8000/0.6 #0000FF/0.6 #0080FF/0.6 marker_applied inventory_selector marker_locked marker_unpaid font_item BLACK
-item inventory inv48 100 30+100 32 32 48 #FF0000/0.6 #FF8000/0.6 #0000FF/0.6 #0080FF/0.6 marker_applied inventory_selector marker_locked marker_unpaid font_item BLACK
-item inventory inv49 132 30+100 32 32 49 #FF0000/0.6 #FF8000/0.6 #0000FF/0.6 #0080FF/0.6 marker_applied inventory_selector marker_locked marker_unpaid font_item BLACK
-item inventory inv50 164 30+100 32 32 50 #FF0000/0.6 #FF8000/0.6 #0000FF/0.6 #0080FF/0.6 marker_applied inventory_selector marker_locked marker_unpaid font_item BLACK
-item inventory inv51 196 30+100 32 32 51 #FF0000/0.6 #FF8000/0.6 #0000FF/0.6 #0080FF/0.6 marker_applied inventory_selector marker_locked marker_unpaid font_item BLACK
-item inventory inv52 228 30+100 32 32 52 #FF0000/0.6 #FF8000/0.6 #0000FF/0.6 #0080FF/0.6 marker_applied inventory_selector marker_locked marker_unpaid font_item BLACK
-item inventory inv53 260 30+100 32 32 53 #FF0000/0.6 #FF8000/0.6 #0000FF/0.6 #0080FF/0.6 marker_applied inventory_selector marker_locked marker_unpaid font_item BLACK
-item inventory inv54 292 30+100 32 32 54 #FF0000/0.6 #FF8000/0.6 #0000FF/0.6 #0080FF/0.6 marker_applied inventory_selector marker_locked marker_unpaid font_item BLACK
-item inventory inv55 324 30+100 32 32 55 #FF0000/0.6 #FF8000/0.6 #0000FF/0.6 #0080FF/0.6 marker_applied inventory_selector marker_locked marker_unpaid font_item BLACK
-item inventory inv56 356 30+100 32 32 56 #FF0000/0.6 #FF8000/0.6 #0000FF/0.6 #0080FF/0.6 marker_applied inventory_selector marker_locked marker_unpaid font_item BLACK
-item inventory inv57 388 30+100 32 32 57 #FF0000/0.6 #FF8000/0.6 #0000FF/0.6 #0080FF/0.6 marker_applied inventory_selector marker_locked marker_unpaid font_item BLACK
-item inventory inv58 420 30+100 32 32 58 #FF0000/0.6 #FF8000/0.6 #0000FF/0.6 #0080FF/0.6 marker_applied inventory_selector marker_locked marker_unpaid font_item BLACK
-item inventory inv59 452 30+100 32 32 59 #FF0000/0.6 #FF8000/0.6 #0000FF/0.6 #0080FF/0.6 marker_applied inventory_selector marker_locked marker_unpaid font_item BLACK
+inventory_list inv 4 30+4   480 128 32 #FF0000/0.6 #FF8000/0.6 #0000FF/0.6 #0080FF/0.6 marker_applied inventory_selector marker_locked marker_unpaid font_item BLACK
 
-button slider_up     484 30+4   16 16 slider_up_up slider_up_down true command_inventory_up
-button slider_down   484 30+116 16 16 slider_down_up slider_down_down true command_inventory_down
+commandlist command_inventory_scrollup AND inv SCROLL_LIST -1
+commandlist command_inventory_scrolldown AND inv SCROLL_LIST 1
+commandlist command_inventory_pageup AND inv SCROLL_LIST -4
+commandlist command_inventory_pagedown AND inv SCROLL_LIST 4
+
+commandlist command_inventory_up AND inv MOVE_SELECTION -1 0
+commandlist command_inventory_down AND inv MOVE_SELECTION 1 0
+commandlist command_inventory_prev AND inv MOVE_SELECTION 0 -1
+commandlist command_inventory_next AND inv MOVE_SELECTION 0 1
+
+commandlist command_inventory_apply AND inv EXEC_SELECTION APPLY
+commandlist command_inventory_drop AND inv EXEC_SELECTION DROP
+commandlist command_inventory_examine AND inv EXEC_SELECTION EXAMINE
+commandlist command_inventory_lock AND inv EXEC_SELECTION LOCK
+commandlist command_inventory_mark AND inv EXEC_SELECTION MARK
+commandlist command_inventory_unlock AND inv EXEC_SELECTION UNLOCK
+
+button slider_up     484 30+4   16 16 slider_up_up slider_up_down true command_inventory_scrollup
+button slider_down   484 30+116 16 16 slider_down_up slider_down_down true command_inventory_scrolldown
 
 label_text label_weight_label   4 30+136 50 16 font_label BLACK Weight:
 label_stat label_weight        54 30+136 45 16 font_label BLACK WEIGHT RIGHT
 label_text label_weight_sep    99 30+136  6 16 font_label BLACK /
 label_stat label_weight_limit 105 30+136 45 16 font_label BLACK WEIGHT_LIMIT LEFT
 
-commandlist_add command_inventory_up inv0 SCROLL -15
-commandlist_add command_inventory_up inv1 SCROLL -15
-commandlist_add command_inventory_up inv2 SCROLL -15
-commandlist_add command_inventory_up inv3 SCROLL -15
-commandlist_add command_inventory_up inv4 SCROLL -15
-commandlist_add command_inventory_up inv5 SCROLL -15
-commandlist_add command_inventory_up inv6 SCROLL -15
-commandlist_add command_inventory_up inv7 SCROLL -15
-commandlist_add command_inventory_up inv8 SCROLL -15
-commandlist_add command_inventory_up inv9 SCROLL -15
-commandlist_add command_inventory_up inv10 SCROLL -15
-commandlist_add command_inventory_up inv11 SCROLL -15
-commandlist_add command_inventory_up inv12 SCROLL -15
-commandlist_add command_inventory_up inv13 SCROLL -15
-commandlist_add command_inventory_up inv14 SCROLL -15
-commandlist_add command_inventory_up inv15 SCROLL_NEVER -15
-commandlist_add command_inventory_up inv16 SCROLL_NEVER -15
-commandlist_add command_inventory_up inv17 SCROLL_NEVER -15
-commandlist_add command_inventory_up inv18 SCROLL_NEVER -15
-commandlist_add command_inventory_up inv19 SCROLL_NEVER -15
-commandlist_add command_inventory_up inv20 SCROLL_NEVER -15
-commandlist_add command_inventory_up inv21 SCROLL_NEVER -15
-commandlist_add command_inventory_up inv22 SCROLL_NEVER -15
-commandlist_add command_inventory_up inv23 SCROLL_NEVER -15
-commandlist_add command_inventory_up inv24 SCROLL_NEVER -15
-commandlist_add command_inventory_up inv25 SCROLL_NEVER -15
-commandlist_add command_inventory_up inv26 SCROLL_NEVER -15
-commandlist_add command_inventory_up inv27 SCROLL_NEVER -15
-commandlist_add command_inventory_up inv28 SCROLL_NEVER -15
-commandlist_add command_inventory_up inv29 SCROLL_NEVER -15
-commandlist_add command_inventory_up inv30 SCROLL_NEVER -15
-commandlist_add command_inventory_up inv31 SCROLL_NEVER -15
-commandlist_add command_inventory_up inv32 SCROLL_NEVER -15
-commandlist_add command_inventory_up inv33 SCROLL_NEVER -15
-commandlist_add command_inventory_up inv34 SCROLL_NEVER -15
-commandlist_add command_inventory_up inv35 SCROLL_NEVER -15
-commandlist_add command_inventory_up inv36 SCROLL_NEVER -15
-commandlist_add command_inventory_up inv37 SCROLL_NEVER -15
-commandlist_add command_inventory_up inv38 SCROLL_NEVER -15
-commandlist_add command_inventory_up inv39 SCROLL_NEVER -15
-commandlist_add command_inventory_up inv40 SCROLL_NEVER -15
-commandlist_add command_inventory_up inv41 SCROLL_NEVER -15
-commandlist_add command_inventory_up inv42 SCROLL_NEVER -15
-commandlist_add command_inventory_up inv43 SCROLL_NEVER -15
-commandlist_add command_inventory_up inv44 SCROLL_NEVER -15
-commandlist_add command_inventory_up inv45 SCROLL_NEVER -15
-commandlist_add command_inventory_up inv46 SCROLL_NEVER -15
-commandlist_add command_inventory_up inv47 SCROLL_NEVER -15
-commandlist_add command_inventory_up inv48 SCROLL_NEVER -15
-commandlist_add command_inventory_up inv49 SCROLL_NEVER -15
-commandlist_add command_inventory_up inv50 SCROLL_NEVER -15
-commandlist_add command_inventory_up inv51 SCROLL_NEVER -15
-commandlist_add command_inventory_up inv52 SCROLL_NEVER -15
-commandlist_add command_inventory_up inv53 SCROLL_NEVER -15
-commandlist_add command_inventory_up inv54 SCROLL_NEVER -15
-commandlist_add command_inventory_up inv55 SCROLL_NEVER -15
-commandlist_add command_inventory_up inv56 SCROLL_NEVER -15
-commandlist_add command_inventory_up inv57 SCROLL_NEVER -15
-commandlist_add command_inventory_up inv58 SCROLL_NEVER -15
-commandlist_add command_inventory_up inv59 SCROLL_NEVER -15
+key code UP        0 exec command_inventory_up
+key code KP_UP     0 exec command_inventory_up
+key code DOWN      0 exec command_inventory_down
+key code KP_DOWN   0 exec command_inventory_down
+key code LEFT      0 exec command_inventory_prev
+key code KP_LEFT   0 exec command_inventory_prev
+key code RIGHT     0 exec command_inventory_next
+key code KP_RIGHT  0 exec command_inventory_next
+key code PAGE_UP   0 exec command_inventory_pageup
+key code PAGE_DOWN 0 exec command_inventory_pagedown
+key char 10        exec command_inventory_apply
+key char 13        exec command_inventory_apply
+key char 97        exec command_inventory_apply
+key char 100       exec command_inventory_drop
+key char 101       exec command_inventory_examine
+key char 108       exec command_inventory_lock
+key char 76        exec command_inventory_unlock
+key char 109       exec command_inventory_mark
+key char 117       exec command_inventory_unlock
 
-commandlist_add command_inventory_down inv0 SCROLL_NEVER 15
-commandlist_add command_inventory_down inv1 SCROLL_NEVER 15
-commandlist_add command_inventory_down inv2 SCROLL_NEVER 15
-commandlist_add command_inventory_down inv3 SCROLL_NEVER 15
-commandlist_add command_inventory_down inv4 SCROLL_NEVER 15
-commandlist_add command_inventory_down inv5 SCROLL_NEVER 15
-commandlist_add command_inventory_down inv6 SCROLL_NEVER 15
-commandlist_add command_inventory_down inv7 SCROLL_NEVER 15
-commandlist_add command_inventory_down inv8 SCROLL_NEVER 15
-commandlist_add command_inventory_down inv9 SCROLL_NEVER 15
-commandlist_add command_inventory_down inv10 SCROLL_NEVER 15
-commandlist_add command_inventory_down inv11 SCROLL_NEVER 15
-commandlist_add command_inventory_down inv12 SCROLL_NEVER 15
-commandlist_add command_inventory_down inv13 SCROLL_NEVER 15
-commandlist_add command_inventory_down inv14 SCROLL_NEVER 15
-commandlist_add command_inventory_down inv15 SCROLL_NEVER 15
-commandlist_add command_inventory_down inv16 SCROLL_NEVER 15
-commandlist_add command_inventory_down inv17 SCROLL_NEVER 15
-commandlist_add command_inventory_down inv18 SCROLL_NEVER 15
-commandlist_add command_inventory_down inv19 SCROLL_NEVER 15
-commandlist_add command_inventory_down inv20 SCROLL_NEVER 15
-commandlist_add command_inventory_down inv21 SCROLL_NEVER 15
-commandlist_add command_inventory_down inv22 SCROLL_NEVER 15
-commandlist_add command_inventory_down inv23 SCROLL_NEVER 15
-commandlist_add command_inventory_down inv24 SCROLL_NEVER 15
-commandlist_add command_inventory_down inv25 SCROLL_NEVER 15
-commandlist_add command_inventory_down inv26 SCROLL_NEVER 15
-commandlist_add command_inventory_down inv27 SCROLL_NEVER 15
-commandlist_add command_inventory_down inv28 SCROLL_NEVER 15
-commandlist_add command_inventory_down inv29 SCROLL_NEVER 15
-commandlist_add command_inventory_down inv30 SCROLL_NEVER 15
-commandlist_add command_inventory_down inv31 SCROLL_NEVER 15
-commandlist_add command_inventory_down inv32 SCROLL_NEVER 15
-commandlist_add command_inventory_down inv33 SCROLL_NEVER 15
-commandlist_add command_inventory_down inv34 SCROLL_NEVER 15
-commandlist_add command_inventory_down inv35 SCROLL_NEVER 15
-commandlist_add command_inventory_down inv36 SCROLL_NEVER 15
-commandlist_add command_inventory_down inv37 SCROLL_NEVER 15
-commandlist_add command_inventory_down inv38 SCROLL_NEVER 15
-commandlist_add command_inventory_down inv39 SCROLL_NEVER 15
-commandlist_add command_inventory_down inv40 SCROLL_NEVER 15
-commandlist_add command_inventory_down inv41 SCROLL_NEVER 15
-commandlist_add command_inventory_down inv42 SCROLL_NEVER 15
-commandlist_add command_inventory_down inv43 SCROLL_NEVER 15
-commandlist_add command_inventory_down inv44 SCROLL_NEVER 15
-commandlist_add command_inventory_down inv45 SCROLL 15
-commandlist_add command_inventory_down inv46 SCROLL 15
-commandlist_add command_inventory_down inv47 SCROLL 15
-commandlist_add command_inventory_down inv48 SCROLL 15
-commandlist_add command_inventory_down inv49 SCROLL 15
-commandlist_add command_inventory_down inv50 SCROLL 15
-commandlist_add command_inventory_down inv51 SCROLL 15
-commandlist_add command_inventory_down inv52 SCROLL 15
-commandlist_add command_inventory_down inv53 SCROLL 15
-commandlist_add command_inventory_down inv54 SCROLL 15
-commandlist_add command_inventory_down inv55 SCROLL 15
-commandlist_add command_inventory_down inv56 SCROLL 15
-commandlist_add command_inventory_down inv57 SCROLL 15
-commandlist_add command_inventory_down inv58 SCROLL 15
-commandlist_add command_inventory_down inv59 SCROLL 15
-
-commandlist command_inventory_reset OR
-commandlist_add command_inventory_reset inv0 SCROLL_RESET
-commandlist_add command_inventory_reset inv1 SCROLL_RESET
-commandlist_add command_inventory_reset inv2 SCROLL_RESET
-commandlist_add command_inventory_reset inv3 SCROLL_RESET
-commandlist_add command_inventory_reset inv4 SCROLL_RESET
-commandlist_add command_inventory_reset inv5 SCROLL_RESET
-commandlist_add command_inventory_reset inv6 SCROLL_RESET
-commandlist_add command_inventory_reset inv7 SCROLL_RESET
-commandlist_add command_inventory_reset inv8 SCROLL_RESET
-commandlist_add command_inventory_reset inv9 SCROLL_RESET
-commandlist_add command_inventory_reset inv10 SCROLL_RESET
-commandlist_add command_inventory_reset inv11 SCROLL_RESET
-commandlist_add command_inventory_reset inv12 SCROLL_RESET
-commandlist_add command_inventory_reset inv13 SCROLL_RESET
-commandlist_add command_inventory_reset inv14 SCROLL_RESET
-commandlist_add command_inventory_reset inv15 SCROLL_RESET
-commandlist_add command_inventory_reset inv16 SCROLL_RESET
-commandlist_add command_inventory_reset inv17 SCROLL_RESET
-commandlist_add command_inventory_reset inv18 SCROLL_RESET
-commandlist_add command_inventory_reset inv19 SCROLL_RESET
-commandlist_add command_inventory_reset inv20 SCROLL_RESET
-commandlist_add command_inventory_reset inv21 SCROLL_RESET
-commandlist_add command_inventory_reset inv22 SCROLL_RESET
-commandlist_add command_inventory_reset inv23 SCROLL_RESET
-commandlist_add command_inventory_reset inv24 SCROLL_RESET
-commandlist_add command_inventory_reset inv25 SCROLL_RESET
-commandlist_add command_inventory_reset inv26 SCROLL_RESET
-commandlist_add command_inventory_reset inv27 SCROLL_RESET
-commandlist_add command_inventory_reset inv28 SCROLL_RESET
-commandlist_add command_inventory_reset inv29 SCROLL_RESET
-commandlist_add command_inventory_reset inv30 SCROLL_RESET
-commandlist_add command_inventory_reset inv31 SCROLL_RESET
-commandlist_add command_inventory_reset inv32 SCROLL_RESET
-commandlist_add command_inventory_reset inv33 SCROLL_RESET
-commandlist_add command_inventory_reset inv34 SCROLL_RESET
-commandlist_add command_inventory_reset inv35 SCROLL_RESET
-commandlist_add command_inventory_reset inv36 SCROLL_RESET
-commandlist_add command_inventory_reset inv37 SCROLL_RESET
-commandlist_add command_inventory_reset inv38 SCROLL_RESET
-commandlist_add command_inventory_reset inv39 SCROLL_RESET
-commandlist_add command_inventory_reset inv40 SCROLL_RESET
-commandlist_add command_inventory_reset inv41 SCROLL_RESET
-commandlist_add command_inventory_reset inv42 SCROLL_RESET
-commandlist_add command_inventory_reset inv43 SCROLL_RESET
-commandlist_add command_inventory_reset inv45 SCROLL_RESET
-commandlist_add command_inventory_reset inv46 SCROLL_RESET
-commandlist_add command_inventory_reset inv47 SCROLL_RESET
-commandlist_add command_inventory_reset inv48 SCROLL_RESET
-commandlist_add command_inventory_reset inv49 SCROLL_RESET
-commandlist_add command_inventory_reset inv50 SCROLL_RESET
-commandlist_add command_inventory_reset inv51 SCROLL_RESET
-commandlist_add command_inventory_reset inv52 SCROLL_RESET
-commandlist_add command_inventory_reset inv53 SCROLL_RESET
-commandlist_add command_inventory_reset inv54 SCROLL_RESET
-commandlist_add command_inventory_reset inv55 SCROLL_RESET
-commandlist_add command_inventory_reset inv56 SCROLL_RESET
-commandlist_add command_inventory_reset inv57 SCROLL_RESET
-commandlist_add command_inventory_reset inv58 SCROLL_RESET
-commandlist_add command_inventory_reset inv59 SCROLL_RESET
-event connect command_inventory_reset
+# XXX: event connect command_inventory_reset
