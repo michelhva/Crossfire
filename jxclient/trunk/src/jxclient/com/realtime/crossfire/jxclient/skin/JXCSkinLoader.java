@@ -46,6 +46,7 @@ import com.realtime.crossfire.jxclient.gui.commands.DialogCloseCommand;
 import com.realtime.crossfire.jxclient.gui.commands.DialogOpenCommand;
 import com.realtime.crossfire.jxclient.gui.commands.DialogToggleCommand;
 import com.realtime.crossfire.jxclient.gui.commands.DisconnectCommand;
+import com.realtime.crossfire.jxclient.gui.commands.ExecSelectionCommand;
 import com.realtime.crossfire.jxclient.gui.commands.ExecuteCommandCommand;
 import com.realtime.crossfire.jxclient.gui.commands.ExecuteElementCommand;
 import com.realtime.crossfire.jxclient.gui.commands.GUICommand;
@@ -79,6 +80,8 @@ import com.realtime.crossfire.jxclient.gui.item.GUIItemShortcut;
 import com.realtime.crossfire.jxclient.gui.item.GUIItemSpelllist;
 import com.realtime.crossfire.jxclient.gui.keybindings.InvalidKeyBindingException;
 import com.realtime.crossfire.jxclient.gui.keybindings.KeyBindings;
+import com.realtime.crossfire.jxclient.gui.list.GUIItemInventoryList;
+import com.realtime.crossfire.jxclient.gui.list.GUIItemList;
 import com.realtime.crossfire.jxclient.gui.list.GUIList;
 import com.realtime.crossfire.jxclient.gui.list.GUIMetaElementList;
 import com.realtime.crossfire.jxclient.gui.log.Fonts;
@@ -763,7 +766,7 @@ public abstract class JXCSkinLoader implements JXCSkin
                             if (args.length >= 5)
                             {
                                 final GUIElement element = args[3].equals("null") ? null : definedGUIElements.lookup(args[3]);
-                                final GUICommand command = parseCommandArgs(args, 5, element, args[4], window, mouseTracker, commands, lnr);
+                                final GUICommand command = parseCommandArgs(args, 5, element, args[4], window, mouseTracker, commands, lnr, commandQueue, server);
                                 commandList.add(command);
                             }
                         }
@@ -776,7 +779,7 @@ public abstract class JXCSkinLoader implements JXCSkin
 
                             final GUICommandList commandList = getCommandList(args[1]);
                             final GUIElement element = args[2].equals("null") ? null : definedGUIElements.lookup(args[2]);
-                            final GUICommand command = parseCommandArgs(args, 4, element, args[3], window, mouseTracker, commands, lnr);
+                            final GUICommand command = parseCommandArgs(args, 4, element, args[3], window, mouseTracker, commands, lnr, commandQueue, server);
                             commandList.add(command);
                         }
                         else if (gui != null && args[0].equals("command_text"))
@@ -1156,6 +1159,41 @@ public abstract class JXCSkinLoader implements JXCSkin
 
                             final String name = args[1];
                             definedGUIElements.lookup(name).setIgnore();
+                        }
+                        else if (gui != null && args[0].equals("inventory_list"))
+                        {
+                            if (args.length != 17)
+                            {
+                                throw new IOException("syntax error");
+                            }
+
+                            final String name = args[1];
+                            final int x = parseInt(args[2]);
+                            final int y = parseInt(args[3]);
+                            final int w = parseInt(args[4]);
+                            final int h = parseInt(args[5]);
+                            final int cellHeight = parseInt(args[6]);
+                            final Color cursedColor = parseColorNull(args[7]);
+                            final BufferedImage cursedImage = getPicture(cursedColor, args[7]);
+                            final Color damnedColor = parseColorNull(args[8]);
+                            final BufferedImage damnedImage = getPicture(damnedColor, args[8]);
+                            final Color magicColor = parseColorNull(args[9]);
+                            final BufferedImage magicImage = getPicture(magicColor, args[9]);
+                            final Color blessedColor = parseColorNull(args[10]);
+                            final BufferedImage blessedImage = getPicture(blessedColor, args[10]);
+                            final Color appliedColor = parseColorNull(args[11]);
+                            final BufferedImage appliedImage = getPicture(appliedColor, args[11]);
+                            final Color selectorColor = parseColorNull(args[12]);
+                            final BufferedImage selectorImage = getPicture(selectorColor, args[12]);
+                            final Color lockedColor = parseColorNull(args[13]);
+                            final BufferedImage lockedImage = getPicture(lockedColor, args[13]);
+                            final Color unpaidColor = parseColorNull(args[14]);
+                            final BufferedImage unpaidImage = getPicture(unpaidColor, args[14]);
+                            final Font font = definedFonts.lookup(args[15]);
+                            final Color nrofColor = parseColor(args[16]);
+
+                            final GUIItemInventoryList element = new GUIItemInventoryList(window, commandQueue, name, x, y, w, h, cellHeight, cursedImage, damnedImage, magicImage, blessedImage, appliedImage, selectorImage, lockedImage, unpaidImage, cursedColor, damnedColor, magicColor, blessedColor, appliedColor, selectorColor, lockedColor, unpaidColor, server, facesManager, itemsManager, font, nrofColor);
+                            definedGUIElements.insert(name, element);
                         }
                         else if (gui != null && args[0].equals("item"))
                         {
@@ -2260,13 +2298,15 @@ public abstract class JXCSkinLoader implements JXCSkin
      *
      * @param lnr The source to read more parameters from.
      *
+     * @param commandQueue the command queue for executing commands
+     *
      * @return The command arguments.
      *
      * @throws IOException If a syntax error occurs.
      *
      * @throws JXCSkinException If an element cannot be found.
      */
-    private GUICommand parseCommandArgs(final String[] args, final int argc, final GUIElement element, final String command, final JXCWindow window, final MouseTracker mouseTracker, final Commands commands, final LineNumberReader lnr) throws IOException, JXCSkinException
+    private GUICommand parseCommandArgs(final String[] args, final int argc, final GUIElement element, final String command, final JXCWindow window, final MouseTracker mouseTracker, final Commands commands, final LineNumberReader lnr, final CommandQueue commandQueue, final CrossfireServerConnection crossfireServerConnection) throws IOException, JXCSkinException
     {
         if (command.equals("SHOW"))
         {
@@ -2405,15 +2445,32 @@ public abstract class JXCSkinLoader implements JXCSkin
             final String commandString = parseText(args, argc, lnr);
             return new ExecuteCommandCommand(commands, commandString);
         }
-        else if (command.equals("MOVE_SELECTION"))
+        else if (command.equals("EXEC_SELECTION"))
         {
             if (args.length != argc+1)
             {
                 throw new IOException("syntax error");
             }
 
-            final int distance = parseInt(args[argc]);
-            if (distance == 0)
+            final ExecSelectionCommand.CommandType commandType = parseEnum(ExecSelectionCommand.CommandType.class, args[argc], "command name");
+
+            if (!(element instanceof GUIItemList))
+            {
+                throw new IOException("'"+element+"' must be an item list");
+            }
+
+            return new ExecSelectionCommand((GUIItemList)element, commandType, crossfireServerConnection, itemsManager.getCurrentFloorManager(), commandQueue);
+        }
+        else if (command.equals("MOVE_SELECTION"))
+        {
+            if (args.length != argc+2)
+            {
+                throw new IOException("syntax error");
+            }
+
+            final int diffLines = parseInt(args[argc]);
+            final int diffElements = parseInt(args[argc+1]);
+            if (diffLines == 0 && diffElements == 0)
             {
                 throw new IOException("Invalid zero scroll distance");
             }
@@ -2423,7 +2480,7 @@ public abstract class JXCSkinLoader implements JXCSkin
                 throw new IOException("'"+element+"' must be a list");
             }
 
-            return new MoveSelectionCommand((GUIList)element, distance);
+            return new MoveSelectionCommand((GUIList)element, diffLines, diffElements);
         }
         else if (command.equals("SCROLL_LIST"))
         {

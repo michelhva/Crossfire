@@ -249,7 +249,7 @@ public abstract class GUIItemItem extends GUIItem
         crossfireServerConnection.sendApply(tmpItem.getTag());
     }
 
-    protected CfItem getItem()
+    public CfItem getItem()
     {
         return item;
     }

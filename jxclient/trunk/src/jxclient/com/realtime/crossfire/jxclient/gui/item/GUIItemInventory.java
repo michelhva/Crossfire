@@ -175,25 +175,37 @@ public class GUIItemInventory extends GUIItemItem
     }
 
     /**
+     * Returns the slot index.
+     * @return the slow tindex
+     */
+    public int getIndex()
+    {
+        return index;
+    }
+
+    /**
      * Set the inventory slot to display.
      *
      * @param index the inventory slot
      */
-    private void setIndex(final int index)
+    public void setIndex(final int index)
     {
-        if (this.index == index)
+        synchronized (this)
         {
-            return;
-        }
+            if (this.index == index)
+            {
+                return;
+            }
 
-        if (this.index >= 0)
-        {
-            itemsManager.getInventoryManager().removeLocationListener(this.index, inventoryLocationListener);
-        }
-        this.index = index;
-        if (this.index >= 0)
-        {
-            itemsManager.getInventoryManager().addLocationListener(this.index, inventoryLocationListener);
+            if (this.index >= 0)
+            {
+                itemsManager.getInventoryManager().removeLocationListener(this.index, inventoryLocationListener);
+            }
+            this.index = index;
+            if (this.index >= 0)
+            {
+                itemsManager.getInventoryManager().addLocationListener(this.index, inventoryLocationListener);
+            }
         }
 
         final CfPlayer player = itemsManager.getPlayer();

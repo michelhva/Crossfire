@@ -34,30 +34,37 @@ public class MoveSelectionCommand implements GUICommand
     private final GUIList list;
 
     /**
-     * The distance to scroll.
+     * The distance in lines to scroll.
      */
-    private final int distance;
+    private final int diffLines;
+
+    /**
+     * The distance in elements to scroll.
+     */
+    private final int diffElements;
 
     /**
      * Creates a new instance.
      * @param list the list to scroll
-     * @param distance the distance to scroll
+     * @param diffLines the distance in lines to scroll
+     * @param diffElements the distance in elements to scroll
      */
-    public MoveSelectionCommand(final GUIList list, final int distance)
+    public MoveSelectionCommand(final GUIList list, final int diffLines, final int diffElements)
     {
         this.list = list;
-        this.distance = distance;
+        this.diffLines = diffLines;
+        this.diffElements = diffElements;
     }
 
     /** {@inheritDoc} */
     public boolean canExecute()
     {
-        return list.canMoveSelection(distance);
+        return list.canMoveSelection(diffLines, diffElements);
     }
 
     /** {@inheritDoc} */
     public void execute()
     {
-        list.moveSelection(distance);
+        list.moveSelection(diffLines, diffElements);
     }
 }
