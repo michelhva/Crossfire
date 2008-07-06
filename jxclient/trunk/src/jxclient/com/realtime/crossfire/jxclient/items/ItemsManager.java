@@ -434,12 +434,17 @@ public class ItemsManager
     /**
      * Deliver outstanding change events.
      */
-    public synchronized void fireEvents()
+    public void fireEvents()
     {
         floorManager.fireEvents(getItems(currentFloorManager.getCurrentFloor()));
-        if (player != null)
+        final List<CfItem> newItems;
+        synchronized (this)
         {
-            inventoryManager.fireEvents(getItems(player.getTag()));
+            newItems = player != null ? getItems(player.getTag()) : null;
+        }
+        if (newItems != null)
+        {
+            inventoryManager.fireEvents(newItems);
         }
     }
 
