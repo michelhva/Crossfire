@@ -17,9 +17,9 @@
 //
 // JXClient is (C)2005 by Yann Chachkoff.
 //
-
 package com.realtime.crossfire.jxclient.items;
 
+import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.List;
@@ -46,11 +46,34 @@ public abstract class AbstractManager
     private final Map<Integer, EventListenerList> allListeners = new HashMap<Integer, EventListenerList>();
 
     /**
+     * Listeners interested in ranged changes.
+     */
+    private final List<LocationsListener> locationsListeners = new ArrayList<LocationsListener>();
+
+    /**
      * Reset the manager's state.
      */
     public void reset()
     {
         modifiedItems.clear();
+    }
+
+    /**
+     * Adds a {@link LocationsListener}s to be notified about changes.
+     * @param listener the listener to add
+     */
+    public void addLocationsListener(final LocationsListener listener)
+    {
+        locationsListeners.add(listener);
+    }
+
+    /**
+     * Removes a {@link LocationsListener}s to be notified about changes.
+     * @param listener the listener to remove
+     */
+    public void removeLocationsListener(final LocationsListener listener)
+    {
+        locationsListeners.remove(listener);
     }
 
     /**
@@ -147,8 +170,13 @@ public abstract class AbstractManager
      *
      * @param items the items that have changed
      */
-    private static void fireEvents(final Set<Integer> modified, final Map<Integer, EventListenerList> listeners, final List<CfItem> items)
+    private void fireEvents(final Set<Integer> modified, final Map<Integer, EventListenerList> listeners, final List<CfItem> items)
     {
+        for (final LocationsListener listener : locationsListeners)
+        {
+            listener.locationsModified(modified);
+        }
+
         for (final int index : modified)
         {
             final EventListenerList tileListeners = listeners.get(index);
