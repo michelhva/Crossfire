@@ -46,6 +46,12 @@ public abstract class GUIElement extends JPanel
     private Gui gui = null;
 
     /**
+     * The {@link GUIElementChangedListener} to be notified whenever the
+     * {@link #changed} flag is set.
+     */
+    private GUIElementChangedListener changedListener = null;
+
+    /**
      * Object used to synchonize on {@link #bufferedImage} contents.
      */
     protected final Object bufferedImageSync = new Object();
@@ -305,9 +311,17 @@ public abstract class GUIElement extends JPanel
         }
 
         changed = true;
-        if (visible && gui != null)
+        if (visible)
         {
-            gui.setChangedElements();
+            if (gui != null)
+            {
+                gui.setChangedElements();
+            }
+
+            if (changedListener != null)
+            {
+                changedListener.notifyChanged(this);
+            }
         }
     }
 
@@ -460,5 +474,15 @@ public abstract class GUIElement extends JPanel
 
             g.drawImage(bufferedImage, getElementX(), getElementY(), window);
         }
+    }
+
+    /**
+     * Sets the {@link GUIElementChangedListener} to be notified. Note that at
+     * most one such listener may be set per gui element.
+     * @param changedListener the listener or <code>null</code> to unset
+     */
+    public void setChangedListener(final GUIElementChangedListener changedListener)
+    {
+        this.changedListener = changedListener;
     }
 }
