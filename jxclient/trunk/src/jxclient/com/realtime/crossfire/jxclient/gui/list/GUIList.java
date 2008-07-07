@@ -157,6 +157,10 @@ public abstract class GUIList extends ActivatableGUIElement
     {
         model.addElement(element);
         list.setSize(list.getPreferredSize());
+        if (model.getSize() == 1)
+        {
+            setSelectedIndex(0);
+        }
     }
 
     /**
@@ -168,11 +172,16 @@ public abstract class GUIList extends ActivatableGUIElement
      */
     protected int resizeElements(final int newSize)
     {
+        final int index = list.getSelectedIndex();
         final int oldSize = model.getSize();
         if (newSize < oldSize)
         {
             model.removeRange(newSize, oldSize-1);
             list.setSize(list.getPreferredSize());
+            if (index >= newSize && newSize > 0)
+            {
+                setSelectedIndex(newSize-1);
+            }
             setChanged();
         }
         return oldSize;
