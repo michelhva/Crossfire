@@ -21,8 +21,8 @@ package com.realtime.crossfire.jxclient.gui.list;
 
 import com.realtime.crossfire.jxclient.gui.item.GUIItemItem;
 import com.realtime.crossfire.jxclient.window.JXCWindow;
-import javax.swing.ListCellRenderer;
 import java.awt.event.MouseEvent;
+import javax.swing.ListCellRenderer;
 
 /**
  * A {@link GUIList} instance that displays {@link GUIItemItem} instances.
