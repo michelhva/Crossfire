@@ -337,20 +337,17 @@ public class CfItem
     {
         final String tooltipText1 = getTooltipText1();
         final String tooltipText2 = getTooltipText2();
+        final String tooltipText3 = getTooltipText3();
         final StringBuilder sb = new StringBuilder(tooltipText1);
         if (tooltipText2.length() > 0)
         {
             sb.append("<br>");
             sb.append(tooltipText2);
         }
-        if ((flags&(F_BLESSED|F_MAGIC|F_CURSED|F_DAMNED|F_UNPAID)) != 0)
+        if (tooltipText3.length() > 0)
         {
             sb.append("<br>");
-            appendFlag(sb, F_BLESSED, "blessed");
-            appendFlag(sb, F_MAGIC, "magic");
-            appendFlag(sb, F_CURSED, "cursed");
-            appendFlag(sb, F_DAMNED, "damned");
-            appendFlag(sb, F_UNPAID, "unpaid");
+            sb.append(tooltipText3);
         }
         return sb.toString();
     }
@@ -386,6 +383,21 @@ public class CfItem
         }
         final int tmp = (totalWeight+500)/1000;
         return tmp+" kg";
+    }
+
+    /**
+     * Returns the third line of the tooltip text.
+     * @return the tooltip text
+     */
+    public String getTooltipText3()
+    {
+        final StringBuilder sb = new StringBuilder();
+        appendFlag(sb, F_BLESSED, "blessed");
+        appendFlag(sb, F_MAGIC, "magic");
+        appendFlag(sb, F_CURSED, "cursed");
+        appendFlag(sb, F_DAMNED, "damned");
+        appendFlag(sb, F_UNPAID, "unpaid");
+        return sb.toString();
     }
 
     /**

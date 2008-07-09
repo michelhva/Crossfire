@@ -1162,7 +1162,7 @@ public abstract class JXCSkinLoader implements JXCSkin
                         }
                         else if (gui != null && args[0].equals("inventory_list"))
                         {
-                            if (args.length != 17)
+                            if (args.length != 18)
                             {
                                 throw new IOException("syntax error");
                             }
@@ -1191,8 +1191,9 @@ public abstract class JXCSkinLoader implements JXCSkin
                             final BufferedImage unpaidImage = getPicture(unpaidColor, args[14]);
                             final Font font = definedFonts.lookup(args[15]);
                             final Color nrofColor = parseColor(args[16]);
+                            final AbstractLabel selectedItem = args[17].equals("null") ? null : lookupLabelElement(args[17]);
 
-                            final GUIItemInventoryList element = new GUIItemInventoryList(window, commandQueue, name, x, y, w, h, cellHeight, cursedImage, damnedImage, magicImage, blessedImage, appliedImage, selectorImage, lockedImage, unpaidImage, cursedColor, damnedColor, magicColor, blessedColor, appliedColor, selectorColor, lockedColor, unpaidColor, server, facesManager, itemsManager, font, nrofColor);
+                            final GUIItemInventoryList element = new GUIItemInventoryList(window, commandQueue, name, x, y, w, h, cellHeight, cursedImage, damnedImage, magicImage, blessedImage, appliedImage, selectorImage, lockedImage, unpaidImage, cursedColor, damnedColor, magicColor, blessedColor, appliedColor, selectorColor, lockedColor, unpaidColor, server, facesManager, itemsManager, font, nrofColor, selectedItem);
                             definedGUIElements.insert(name, element);
                         }
                         else if (gui != null && args[0].equals("item"))
