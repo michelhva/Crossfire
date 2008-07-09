@@ -76,7 +76,7 @@ public abstract class GUIList extends ActivatableGUIElement
         /** {@inheritDoc} */
         public void valueChanged(final ListSelectionEvent e)
         {
-            selectionChanged(list.getSelectedIndex());
+            selectionChanged();
         }
     };
 
@@ -447,6 +447,14 @@ public abstract class GUIList extends ActivatableGUIElement
             list.ensureIndexIsVisible(newIndex2);
         }
         setChanged();
+    }
+
+    /**
+     * Called whenever the selected list entry has changed.
+     */
+    protected void selectionChanged()
+    {
+        selectionChanged(list.getSelectedIndex());
     }
 
     /**

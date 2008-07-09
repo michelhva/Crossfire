@@ -20,6 +20,7 @@
 package com.realtime.crossfire.jxclient.gui.list;
 
 import com.realtime.crossfire.jxclient.faces.FacesManager;
+import com.realtime.crossfire.jxclient.gui.AbstractLabel;
 import com.realtime.crossfire.jxclient.gui.GUIElement;
 import com.realtime.crossfire.jxclient.gui.GUIElementChangedListener;
 import com.realtime.crossfire.jxclient.gui.item.GUIItemInventory;
@@ -93,6 +94,11 @@ public class GUIItemInventoryList extends GUIItemList
     private final Color nrofColor;
 
     /**
+     * The label to update with information about the selected item.
+     */
+    private final AbstractLabel currentItem;
+
+    /**
      * The {@link LocationsListener} to be notified about inventory changes.
      */
     private final LocationsListener locationsListener = new LocationsListener()
@@ -114,6 +120,7 @@ public class GUIItemInventoryList extends GUIItemList
         public void notifyChanged(final GUIElement element)
         {
             element.resetChanged();
+            selectionChanged();
             setChanged();
         }
     };
@@ -129,8 +136,9 @@ public class GUIItemInventoryList extends GUIItemList
      * @param w the width for drawing this element to screen
      * @param h the height for drawing this element to screen
      * @param cellHeight the height of each cell
+     * @param currentItem the label to update with information about the selected item.
      */
-    public GUIItemInventoryList(final JXCWindow window, final CommandQueue commandQueue, final String name, final int x, final int y, final int w, final int h, final int cellHeight, final BufferedImage cursedImage, final BufferedImage damnedImage, final BufferedImage magicImage, final BufferedImage blessedImage, final BufferedImage appliedImage, final BufferedImage selectorImage, final BufferedImage lockedImage, final BufferedImage unpaidImage, final Color cursedColor, final Color damnedColor, final Color magicColor, final Color blessedColor, final Color appliedColor, final Color selectorColor, final Color lockedColor, final Color unpaidColor, final CrossfireServerConnection crossfireServerConnection, final FacesManager facesManager, final ItemsManager itemsManager, final Font font, final Color nrofColor)
+    public GUIItemInventoryList(final JXCWindow window, final CommandQueue commandQueue, final String name, final int x, final int y, final int w, final int h, final int cellHeight, final BufferedImage cursedImage, final BufferedImage damnedImage, final BufferedImage magicImage, final BufferedImage blessedImage, final BufferedImage appliedImage, final BufferedImage selectorImage, final BufferedImage lockedImage, final BufferedImage unpaidImage, final Color cursedColor, final Color damnedColor, final Color magicColor, final Color blessedColor, final Color appliedColor, final Color selectorColor, final Color lockedColor, final Color unpaidColor, final CrossfireServerConnection crossfireServerConnection, final FacesManager facesManager, final ItemsManager itemsManager, final Font font, final Color nrofColor, final AbstractLabel currentItem)
     {
         super(window, name, x, y, w, h, cellHeight, new ItemInventoryCellRenderer(new GUIItemInventory(window, commandQueue, name+"_template", 0, 0, cellHeight, cellHeight, cursedImage, damnedImage, magicImage, blessedImage, appliedImage, selectorImage, lockedImage, unpaidImage, cursedColor, damnedColor, magicColor, blessedColor, appliedColor, selectorColor, lockedColor, unpaidColor, -1, crossfireServerConnection, facesManager, itemsManager, font, nrofColor)));
         this.window = window;
@@ -157,6 +165,7 @@ public class GUIItemInventoryList extends GUIItemList
         this.itemsManager = itemsManager;
         this.font = font;
         this.nrofColor = nrofColor;
+        this.currentItem = currentItem;
         setLayoutOrientation(JList.HORIZONTAL_WRAP, -1);
         itemsManager.getInventoryManager().addLocationsListener(locationsListener);
         rebuildList();
@@ -179,12 +188,31 @@ public class GUIItemInventoryList extends GUIItemList
             item.resetChanged();
             assert !item.isChanged();
         }
+        selectionChanged();
         setChanged();
     }
 
     /** {@inheritDoc} */
     protected void selectionChanged(final int selectedIndex)
     {
+        if (currentItem != null)
+        {
+            final List<CfItem> inventory = itemsManager.getInventory();
+            final CfItem item = selectedIndex >= 0 && selectedIndex < inventory.size() ? inventory.get(selectedIndex) : null;
+            if (item == null)
+            {
+                currentItem.setText("");
+                currentItem.setTooltipText("");
+            }
+            else
+            {
+                final String tooltipText1 = item.getTooltipText1();
+                final String tooltipText2 = item.getTooltipText2();
+                final String tooltipText3 = item.getTooltipText3();
+                currentItem.setText(tooltipText1+" ["+tooltipText2+"] "+tooltipText3);
+                currentItem.setTooltipText(item.getTooltipText());
+            }
+        }
     }
 
     /** {@inheritDoc} */

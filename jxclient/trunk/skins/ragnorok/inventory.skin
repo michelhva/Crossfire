@@ -3,7 +3,8 @@ dialog border 220 340 504 186 true Inventory
 dialog_hide START META LOGIN NEWCHAR
 button button_close  484    4   16 16 close_up close_down false command_inventory_close
 
-inventory_list inv 4 30+4   480 128 32 #FF0000/0.6 #FF8000/0.6 #0000FF/0.6 #0080FF/0.6 marker_applied inventory_selector marker_locked marker_unpaid font_item BLACK
+label_text inv_item 160 30+136 504-160-4 16 font_label BLACK
+inventory_list inv 4 30+4   480 128 32 #FF0000/0.6 #FF8000/0.6 #0000FF/0.6 #0080FF/0.6 marker_applied inventory_selector marker_locked marker_unpaid font_item BLACK inv_item
 
 commandlist command_inventory_scrollup AND inv SCROLL_LIST -1
 commandlist command_inventory_scrolldown AND inv SCROLL_LIST 1
