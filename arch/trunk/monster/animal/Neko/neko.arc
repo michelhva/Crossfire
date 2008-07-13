@@ -33,4 +33,5 @@ speed 0.3
 weight 30000
 run_away 90
 magicmap brown
+randomitems neko
 end
