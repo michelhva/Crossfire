@@ -2031,32 +2031,6 @@ treasure monk
   more
   arch sandals
   end
-treasure pl_half_orc
-  list fighter_skills
-  more
-  arch mace
-  more
-  arch round_shield
-  more
-  arch scale_mail
-  more
-  arch sack
-  more
-  arch skill_stealing
-  end
-treasure pl_troll
-  arch skill_clawing
-  more
-  arch skill_one_handed_weapon
-  more
-  arch skill_two_handed_weapon
-  more
-  list basic_skills
-  more
-  arch club
-  more
-  arch sack
-  end
 treasure elf
   list fighter_skills
   more
