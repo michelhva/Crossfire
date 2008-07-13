@@ -47,7 +47,7 @@ treasureone shop_potions
   arch vial_poison
     chance 1
   more
-  list list14
+  list random_magical
     chance 10
   end
 
