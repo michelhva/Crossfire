@@ -213,13 +213,17 @@ name human skeleton
 name_pl human skeletons
 x 1
 y 8
+nrof 0
 type 122
 material 32
+container 20000
 arch bones2
 name human skull
 name_pl human skulls
+nrof 0
 type 122
 material 32
+container 4000
 arch eyes
 name human eyes
 name_pl human eyes
@@ -256,8 +260,10 @@ name bird skeleton
 name_pl bird skeletons
 x 1
 y 13
+nrof 0
 type 122
 material 32
+container 1500
 arch bones3
 name sharp bones
 name_pl sharp bones
@@ -713,18 +719,24 @@ name human skeleton
 name_pl human skeletons
 x 4
 y 6
+nrof 0
 type 122
 material 32
+container 20000
 arch bones1
 name dog skeleton
 name_pl dog skeletons
+nrof 0
 type 122
 material 32
+container 10000
 arch bones4
 name bird skeleton
 name_pl bird skeletons
+nrof 0
 type 122
 material 32
+container 1500
 arch gem
 end
 end
@@ -846,9 +858,10 @@ name_pl strange skulls
 msg
 To be or not to be...
 endmsg
+nrof 0
 type 122
 material 32
-container 500
+container 4000
 arch ruby
 end
 end
