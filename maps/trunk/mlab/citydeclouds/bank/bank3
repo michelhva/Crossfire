@@ -6,7 +6,7 @@ width 17
 height 28
 msg
 Created:  2005-05-28
-Modified: 2008-05-29 Arvid Norlander
+Modified: 2008-07-17 Arvid Norlander
 endmsg
 end
 arch dungeon_magic
@@ -2809,10 +2809,10 @@ y 7
 end
 arch silver_converter
 name convert gold coins into small gold nugget bullion
-name_pl convert imperial notes into silver
+name_pl convert gold coins into small gold nugget bullion
 slaying goldcoin
 other_arch smallnugget
-food 1
+food 4
 x 7
 y 7
 end
@@ -3178,9 +3178,10 @@ y 7
 end
 arch silver_converter
 name convert gold coins into large gold nugget bullion
-name_pl convert imperial notes into silver
+name_pl convert gold coins into large gold nugget bullion
 slaying goldcoin
 other_arch largenugget
+food 40
 x 8
 y 7
 end
@@ -3561,7 +3562,7 @@ y 7
 end
 arch silver_converter
 name convert gold coins into gold bar bullion
-name_pl convert imperial notes into silver
+name_pl convert gold coins into gold bar bullion
 slaying goldcoin
 other_arch goldbar
 food 1000
