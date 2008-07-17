@@ -316,7 +316,8 @@ while (it.hasNext()) {
     File file = it.next();
     if (file.isFile()
     && file.getPath().startsWith(rootDirectory)
-    && !file.getName().equalsIgnoreCase("README")) {
+    && !file.getName().equalsIgnoreCase("README")
+    && !file.getName().endsWith(".msg")) {
         convertMap(file, file.getPath().substring(mapDefaultFolder.length()));
     }
 }
