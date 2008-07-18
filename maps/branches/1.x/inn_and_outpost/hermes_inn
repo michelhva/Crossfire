@@ -132,7 +132,7 @@ end
 arch longtable_1_4
 x 1
 y 3
-no_pass 1
+move_block all
 end
 arch woodfloor2
 x 1
@@ -227,7 +227,7 @@ end
 arch longtable_2_1_2
 x 2
 y 3
-no_pass 1
+move_block all
 end
 arch woodfloor2
 x 2
@@ -343,7 +343,7 @@ end
 arch longtable_2_1_2
 x 3
 y 3
-no_pass 1
+move_block all
 end
 arch woodfloor2
 x 3
@@ -425,7 +425,7 @@ end
 arch longtable_2_1_2
 x 4
 y 3
-no_pass 1
+move_block all
 end
 arch woodfloor2
 x 4
@@ -520,7 +520,7 @@ end
 arch longtable_2_1_2
 x 5
 y 3
-no_pass 1
+move_block all
 end
 arch woodfloor2
 x 5
@@ -623,7 +623,7 @@ end
 arch longtable_2_1_2
 x 6
 y 3
-no_pass 1
+move_block all
 end
 arch woodfloor2
 x 6
@@ -713,7 +713,7 @@ end
 arch longtable_2_1_2
 x 7
 y 3
-no_pass 1
+move_block all
 end
 arch woodfloor2
 x 7
@@ -812,7 +812,7 @@ end
 arch longtable_2_1_2
 x 8
 y 3
-no_pass 1
+move_block all
 end
 arch woodfloor2
 x 8
@@ -906,7 +906,7 @@ end
 arch longtable_2_1_2
 x 9
 y 3
-no_pass 1
+move_block all
 end
 arch woodfloor2
 x 9
@@ -996,7 +996,7 @@ end
 arch longtable_1_1
 x 10
 y 1
-no_pass 1
+move_block all
 end
 arch woodfloor2
 x 10
@@ -1005,7 +1005,7 @@ end
 arch longtable_2_1_1
 x 10
 y 2
-no_pass 1
+move_block all
 end
 arch woodfloor2
 x 10
@@ -1014,7 +1014,7 @@ end
 arch longtable_2_2_4
 x 10
 y 3
-no_pass 1
+move_block all
 end
 arch woodfloor2
 x 10
@@ -1670,7 +1670,7 @@ end
 arch longtable_1_1
 x 17
 y 1
-no_pass 1
+move_block all
 no_magic 1
 damned 1
 end
@@ -1681,7 +1681,7 @@ end
 arch longtable_2_1_1
 x 17
 y 2
-no_pass 1
+move_block all
 no_magic 1
 damned 1
 end
@@ -1692,7 +1692,7 @@ end
 arch longtable_2_2_1
 x 17
 y 3
-no_pass 1
+move_block all
 cursed 1
 damned 1
 end
@@ -1803,7 +1803,7 @@ end
 arch longtable_2_1_2
 x 18
 y 3
-no_pass 1
+move_block all
 cursed 1
 damned 1
 end
@@ -1893,7 +1893,7 @@ end
 arch longtable_2_1_2
 x 19
 y 3
-no_pass 1
+move_block all
 cursed 1
 damned 1
 end
@@ -1982,7 +1982,7 @@ end
 arch longtable_1_3
 x 20
 y 3
-no_pass 1
+move_block all
 cursed 1
 damned 1
 end

@@ -599,7 +599,7 @@ end
 arch longtable_1_1
 x 4
 y 3
-no_pass 1
+move_block all
 no_magic 1
 damned 1
 end
@@ -610,7 +610,7 @@ end
 arch longtable_2_1_1
 x 4
 y 4
-no_pass 1
+move_block all
 no_magic 1
 damned 1
 end
@@ -621,7 +621,7 @@ end
 arch longtable_2_2_1
 x 4
 y 5
-no_pass 1
+move_block all
 cursed 1
 damned 1
 end
@@ -771,7 +771,7 @@ end
 arch longtable_2_1_2
 x 5
 y 5
-no_pass 1
+move_block all
 cursed 1
 damned 1
 end
@@ -894,7 +894,7 @@ end
 arch longtable_2_1_2
 x 6
 y 5
-no_pass 1
+move_block all
 cursed 1
 damned 1
 end
@@ -1014,7 +1014,7 @@ end
 arch longtable_1_3
 x 7
 y 5
-no_pass 1
+move_block all
 cursed 1
 damned 1
 end
@@ -1314,7 +1314,7 @@ arch check_floor
 slaying sweets_inn_pass
 x 9
 y 5
-no_pass 1
+move_block all
 end
 arch woodfloor2
 x 9
@@ -1594,7 +1594,7 @@ end
 arch longtable_1_4
 x 11
 y 9
-no_pass 1
+move_block all
 end
 arch woodfloor
 x 11
@@ -1736,7 +1736,7 @@ end
 arch longtable_2_1_2
 x 12
 y 9
-no_pass 1
+move_block all
 end
 arch woodfloor
 x 12
@@ -1853,7 +1853,7 @@ end
 arch longtable_2_1_2
 x 13
 y 9
-no_pass 1
+move_block all
 end
 arch light4
 x 13
@@ -1972,7 +1972,7 @@ end
 arch longtable_2_1_2
 x 14
 y 9
-no_pass 1
+move_block all
 end
 arch woodfloor2
 x 14
@@ -2085,7 +2085,7 @@ end
 arch longtable_1_3
 x 15
 y 9
-no_pass 1
+move_block all
 end
 arch woodfloor
 x 15
