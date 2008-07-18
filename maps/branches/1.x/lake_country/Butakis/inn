@@ -6,6 +6,7 @@ width 16
 height 16
 msg
 Created:  1995-03-28 Kundi, Xue (xkd@soda.csua.berkeley.edu)
+Modified: 2008-05-23 Arvid Norlander
 endmsg
 end
 arch woodfloor
@@ -347,7 +348,7 @@ end
 arch door_look_2
 x 3
 y 7
-no_pass 0
+move_block 0
 end
 arch woodfloor
 x 3
@@ -426,7 +427,7 @@ end
 arch door_look_1
 x 4
 y 3
-no_pass 0
+move_block 0
 end
 arch woodfloor
 x 4
@@ -459,7 +460,7 @@ end
 arch door_look_1
 x 4
 y 10
-no_pass 0
+move_block 0
 end
 arch woodfloor
 x 4
@@ -871,7 +872,7 @@ end
 arch door_look_1
 x 7
 y 10
-no_pass 0
+move_block 0
 end
 arch woodfloor
 x 7
@@ -904,7 +905,7 @@ end
 arch door_look_1
 x 7
 y 15
-no_pass 0
+move_block 0
 end
 arch woodfloor
 x 8
@@ -931,7 +932,7 @@ end
 arch door_look_1
 x 8
 y 3
-no_pass 0
+move_block 0
 end
 arch woodfloor
 x 8
@@ -968,7 +969,7 @@ end
 arch door_look_1
 x 8
 y 10
-no_pass 0
+move_block 0
 end
 arch woodfloor
 x 8
@@ -1001,7 +1002,7 @@ end
 arch door_look_1
 x 8
 y 15
-no_pass 0
+move_block 0
 end
 arch woodfloor
 x 9
@@ -1213,7 +1214,7 @@ end
 arch door_look_2
 x 10
 y 12
-no_pass 0
+move_block 0
 end
 arch woodfloor
 x 10
@@ -1222,7 +1223,7 @@ end
 arch door_look_2
 x 10
 y 13
-no_pass 0
+move_block 0
 end
 arch woodfloor
 x 10
@@ -1261,7 +1262,7 @@ end
 arch door_look_1
 x 11
 y 3
-no_pass 0
+move_block 0
 end
 arch woodfloor
 x 11
@@ -1385,7 +1386,7 @@ end
 arch door_look_2
 x 12
 y 7
-no_pass 0
+move_block 0
 end
 arch woodfloor
 x 12
@@ -1536,7 +1537,7 @@ end
 arch table_3
 x 13
 y 11
-no_pass 1
+move_block all
 end
 arch woodfloor
 x 13
@@ -1545,7 +1546,7 @@ end
 arch table_3
 x 13
 y 12
-no_pass 1
+move_block all
 end
 arch woodfloor
 x 13
@@ -1554,7 +1555,7 @@ end
 arch table_3
 x 13
 y 13
-no_pass 1
+move_block all
 end
 arch woodfloor
 x 13
@@ -1563,7 +1564,7 @@ end
 arch table_3
 x 13
 y 14
-no_pass 1
+move_block all
 end
 arch woodfloor
 x 13
