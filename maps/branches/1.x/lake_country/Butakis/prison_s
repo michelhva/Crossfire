@@ -119,7 +119,7 @@ y 8
 end
 arch magic_ear
 msg
-@match hailstorm|Hailstorm
+@match hailstorm
 Click.
 endmsg
 x 1
@@ -846,7 +846,7 @@ y 15
 end
 arch magic_ear
 msg
-@match thunderbolt|Thunderbolt
+@match thunderbolt
 Click.
 endmsg
 x 6
@@ -860,7 +860,7 @@ end
 arch smith
 name High Court Wizard, Tasury
 msg
-@match thunderbolt|Thunderbolt
+@match thunderbolt
 You have the right word. Please go to
 the front and enter. Since you have
 this special code word for regular
@@ -869,7 +869,7 @@ tell you the code to open the front
 gate. It's "hailstorm". Speak it to
 the wall opposite to the gate of the
 chamber.
-@match yes|Yes
+@match yes
 Tell me the password that the Lord give
 you.
 @match use|travel|teleport|portal

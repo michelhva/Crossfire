@@ -1837,7 +1837,7 @@ connected 35
 end
 arch magic_ear
 msg
-@match reward|Reward|pay|payment|repay
+@match reward|pay|payment|repay
 endmsg
 x 12
 y 12
@@ -1860,15 +1860,15 @@ Find Fiery, my apprentice and get the
 chalice of fire from him. When you get
 the chalice, I will tell you what to do
 next.
-@match chalice|Chalice
+@match chalice
 Do you have the chalice of fire with
 you?
-@match yes|Yes
+@match yes
 Okay. Put it in the liquid that
 surrounds the cell. It will breach the
 antimagic power of it and restore my
 power fully.
-@match reward|Reward|pay|payment|repay
+@match reward|pay|payment|repay
 Did I promise reward?
 Ooh, okay.
 As reward, I grant you permission to my
