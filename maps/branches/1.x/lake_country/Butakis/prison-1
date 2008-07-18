@@ -6,6 +6,7 @@ width 16
 height 16
 msg
 Created:  1995-02-28
+Modified: 2008-05-23 Arvid Norlander
 endmsg
 end
 arch dungeon_floor
@@ -443,7 +444,7 @@ end
 arch dragonman
 name dragonman mercenary
 msg
-@match Hello|hello
+@match hello|hi
 What do you want to ask me about?
 Where am i from? what's my business
 here?
@@ -617,7 +618,7 @@ end
 arch dragonman
 name dragonman mercenary
 msg
-@match Hello|hello
+@match hello|hi
 What do you want to ask me about?
 Where am i from? what's my business
 here?
@@ -839,7 +840,7 @@ end
 arch dragonman
 name dragonman mercenary
 msg
-@match Hello|hello
+@match hello|hi
 What do you want to ask me about?
 Where am i from? what's my business
 here?
@@ -1212,7 +1213,7 @@ end
 arch dragonman
 name dragonman mercenary
 msg
-@match Hello|hello
+@match hello|hi
 What do you want to ask me about?
 Where am i from? what's my business
 here?
