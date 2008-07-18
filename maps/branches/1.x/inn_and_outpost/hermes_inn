@@ -310,16 +310,16 @@ end
 arch fatman
 name Hermes
 msg
-@match hello|Hello
+@match hi|hello
 Greetings, welcome to my inn.
 You must be cold and tired.
-@match room|Room|bed|Bed
+@match room|bed
 Need a room eh? Upstairs, cost ya 50 gold for one day.
-@match 50|fifty|Fifty
+@match 50|fifty
 Not much else around friend.
 @match ripoff|cheat|robbery
 You could always go sleep with the bears...
-@match Billy|billy|giant
+@match billy|giant
 Ya Billy has been with me for 10 years.
 He's a little slow on the uptake,
 but he's a good kid.
@@ -744,6 +744,12 @@ end
 arch woodfloor2
 x 7
 y 8
+end
+arch button_small
+x 7
+y 9
+invisible 1
+connected 1
 end
 arch woodfloor2
 x 7
