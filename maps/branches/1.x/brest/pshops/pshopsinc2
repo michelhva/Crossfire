@@ -5,7 +5,8 @@ region brest
 width 35
 height 14
 msg
-Created:  2004-10-17 majorwoo josh@woosworld.net
+Created:  2004-10-17 majorwoo (josh@woosworld.net)
+Modified: 2008-05-23 Arvid Norlander
 endmsg
 end
 arch dungeon_magic
@@ -388,11 +389,11 @@ end
 arch guard
 name private guard
 msg
-@match key|Key
+@match key
 Buy your key downstairs.
-@match manager|Manager
+@match manager
 The Manager is downstairs in his office.  Maybe you could ask his wife?
-@match wife|Wife
+@match wife
 The Managers wife is inside, I'm sorry but you can't pass without a key.
 @match *
 Key Holders and their escorted guests only!
@@ -675,17 +676,17 @@ end
 arch thief_1
 name Shady Character
 msg
-@match key|Key
+@match key
 Yes you need a key to get in through that door. Unless...
-@match Unless|unless
+@match unless
 Well I am a bit poor today, and I suppose I could...
 @match could
 Drop 2000 platinum in front of me.
-@match wife|Wife
+@match wife
 The managers wife is one of the most powerful female dragons you will ever meet.  Do not anger her.
-@match name|Name
+@match name
 So you want to know her name do you?  It's going to cost you..
-@match cost|Cost
+@match cost
 Hey man, nothing in this world is free.  If you want her name drop 1000 rubies in front of me.
 @match *
 Don't waste my time with that.
@@ -1593,7 +1594,7 @@ end
 arch fatwoman
 name Cook
 msg
-@match wife|Wife
+@match wife
 Dragons can eat all day!
 @match *
 Must... cook... faster...
@@ -2426,7 +2427,7 @@ blocksview 0
 end
 arch magic_ear
 msg
-@match Mireya|mireya
+@match mireya
 Click.
 endmsg
 x 22
@@ -2451,7 +2452,7 @@ end
 arch magic_mouth
 name Elite Dragon Guard
 msg
-@match Mireya|mireya
+@match mireya
 You may pass.
 @match *
 You may not enter.
@@ -3292,13 +3293,13 @@ end
 arch magic_mouth
 name Mireya
 msg
-@match hi|Hi|Hello|hello
+@match hi|hello
 Oh, hello!  Did my husband send you?
-@match yes|Yes
+@match yes
 Good!  I forgot what time our date is.  Be a dear and go downstairs ask him.
 @match 7
 Oh that's right, I remember our date is at 7.  Thank you.
-@match pen|Pen
+@match pen
 Here.  My husband left this up here, he will reward you for it.
 @match *
 Your beginning to bother me little man.
@@ -3308,7 +3309,7 @@ y 5
 end
 arch magic_ear
 msg
-@match pen|Pen
+@match pen
 endmsg
 x 31
 y 5
