@@ -6,63 +6,123 @@ width 20
 height 20
 msg
 Created:  1995-03-29 Kundi, Xue (xkd@soda.csua.berkeley.edu)
+Modified: 2008-06-01 Arvid Norlander
 endmsg
 end
+arch marble
+end
 arch dun8
+end
+arch marble
+y 1
 end
 arch dun3
 y 1
 end
+arch marble
+y 2
+end
 arch dun3
 y 2
+end
+arch marble
+y 3
 end
 arch dun3
 y 3
 end
+arch marble
+y 4
+end
 arch dun3
 y 4
+end
+arch marble
+y 5
 end
 arch dun3
 y 5
 end
+arch marble
+y 6
+end
 arch dun3
 y 6
+end
+arch marble
+y 7
 end
 arch dun3
 y 7
 end
+arch marble
+y 8
+end
 arch dun3
 y 8
+end
+arch marble
+y 9
 end
 arch dun3
 y 9
 end
+arch marble
+y 10
+end
 arch dun3
 y 10
+end
+arch marble
+y 11
 end
 arch dun3
 y 11
 end
+arch marble
+y 12
+end
 arch dun3
 y 12
+end
+arch marble
+y 13
 end
 arch dun3
 y 13
 end
+arch marble
+y 14
+end
 arch dun3
 y 14
+end
+arch marble
+y 15
 end
 arch dun3
 y 15
 end
+arch marble
+y 16
+end
 arch dun3
 y 16
+end
+arch marble
+y 17
 end
 arch dun3
 y 17
 end
+arch marble
+y 18
+end
 arch dun3
 y 18
+end
+arch marble
+y 19
 end
 arch dun4
 y 19
@@ -219,6 +279,10 @@ arch knight
 x 1
 y 18
 end
+arch marble
+x 1
+y 19
+end
 arch dun2
 x 1
 y 19
@@ -321,6 +385,10 @@ arch marble
 x 2
 y 18
 end
+arch marble
+x 2
+y 19
+end
 arch dun2
 x 2
 y 19
@@ -403,29 +471,57 @@ arch marble
 x 3
 y 10
 end
+arch marble
+x 3
+y 11
+end
 arch dun8
 x 3
 y 11
+end
+arch marble
+x 3
+y 12
 end
 arch dun11
 x 3
 y 12
 end
-arch dun3
+arch marble
 x 3
 y 13
 end
 arch dun3
 x 3
+y 13
+end
+arch marble
+x 3
 y 14
+end
+arch dun3
+x 3
+y 14
+end
+arch marble
+x 3
+y 15
 end
 arch dun11
 x 3
 y 15
 end
+arch marble
+x 3
+y 16
+end
 arch dun3
 x 3
 y 16
+end
+arch marble
+x 3
+y 17
 end
 arch dun5
 x 3
@@ -441,9 +537,16 @@ y 18
 speed 0.500000
 connected 1
 end
+arch marble
+x 3
+y 19
+end
 arch dun2
 x 3
 y 19
+end
+arch marble
+x 4
 end
 arch dun16
 x 4
@@ -463,6 +566,10 @@ end
 arch dun3
 x 4
 y 2
+end
+arch marble
+x 4
+y 3
 end
 arch dun11
 x 4
@@ -492,6 +599,10 @@ arch dun3
 x 4
 y 6
 end
+arch marble
+x 4
+y 7
+end
 arch dun4
 x 4
 y 7
@@ -520,6 +631,10 @@ arch knight
 x 4
 y 11
 end
+arch marble
+x 4
+y 12
+end
 arch dun2
 x 4
 y 12
@@ -544,6 +659,10 @@ end
 arch teleporter
 x 4
 y 14
+end
+arch marble
+x 4
+y 15
 end
 arch dun2
 x 4
@@ -575,9 +694,16 @@ arch marble
 x 4
 y 18
 end
+arch marble
+x 4
+y 19
+end
 arch dun2
 x 4
 y 19
+end
+arch marble
+x 5
 end
 arch dun2
 x 5
@@ -606,6 +732,10 @@ y 2
 attack_movement 4
 arch spell_small_bullet
 end
+end
+arch marble
+x 5
+y 3
 end
 arch dun2
 x 5
@@ -640,6 +770,10 @@ sp 6
 x 5
 y 6
 end
+arch marble
+x 5
+y 7
+end
 arch dun2
 x 5
 y 7
@@ -668,6 +802,10 @@ arch knight
 x 5
 y 11
 end
+arch marble
+x 5
+y 12
+end
 arch dun2
 x 5
 y 12
@@ -688,6 +826,10 @@ end
 arch marble
 x 5
 y 14
+end
+arch marble
+x 5
+y 15
 end
 arch dun2
 x 5
@@ -732,9 +874,16 @@ attack_movement 4
 arch spell_small_bullet
 end
 end
+arch marble
+x 5
+y 19
+end
 arch dun2
 x 5
 y 19
+end
+arch marble
+x 6
 end
 arch dun2
 x 6
@@ -755,6 +904,10 @@ y 2
 attack_movement 4
 arch spell_small_bullet
 end
+end
+arch marble
+x 6
+y 3
 end
 arch dun2
 x 6
@@ -786,6 +939,10 @@ arch marble
 x 6
 y 6
 end
+arch marble
+x 6
+y 7
+end
 arch dun2
 x 6
 y 7
@@ -814,6 +971,10 @@ arch knight
 x 6
 y 11
 end
+arch marble
+x 6
+y 12
+end
 arch dun2
 x 6
 y 12
@@ -839,6 +1000,10 @@ end
 arch marble
 x 6
 y 14
+end
+arch marble
+x 6
+y 15
 end
 arch dun2
 x 6
@@ -901,9 +1066,16 @@ attack_movement 4
 arch spell_small_bullet
 end
 end
+arch marble
+x 6
+y 19
+end
 arch dun2
 x 6
 y 19
+end
+arch marble
+x 7
 end
 arch dun2
 x 7
@@ -1058,13 +1230,24 @@ arch dun3
 x 7
 y 17
 end
+arch marble
+x 7
+y 18
+end
 arch dun3
 x 7
 y 18
 end
+arch marble
+x 7
+y 19
+end
 arch dun13
 x 7
 y 19
+end
+arch marble
+x 8
 end
 arch dun2
 x 8
@@ -1243,12 +1426,23 @@ arch teleporter
 x 8
 y 18
 end
+arch marble
+x 8
+y 19
+end
 arch dun2
 x 8
 y 19
 end
+arch marble
+x 9
+end
 arch dun16
 x 9
+end
+arch marble
+x 9
+y 1
 end
 arch dun3
 x 9
@@ -1408,13 +1602,24 @@ arch dun3
 x 9
 y 17
 end
+arch marble
+x 9
+y 18
+end
 arch dun3
 x 9
 y 18
 end
+arch marble
+x 9
+y 19
+end
 arch dun13
 x 9
 y 19
+end
+arch marble
+x 10
 end
 arch dun2
 x 10
@@ -1541,12 +1746,23 @@ arch teleporter
 x 10
 y 18
 end
+arch marble
+x 10
+y 19
+end
 arch dun2
 x 10
 y 19
 end
+arch marble
+x 11
+end
 arch dun16
 x 11
+end
+arch marble
+x 11
+y 1
 end
 arch dun3
 x 11
@@ -1650,13 +1866,24 @@ arch dun3
 x 11
 y 17
 end
+arch marble
+x 11
+y 18
+end
 arch dun3
 x 11
 y 18
 end
+arch marble
+x 11
+y 19
+end
 arch dun13
 x 11
 y 19
+end
+arch marble
+x 12
 end
 arch dun2
 x 12
@@ -1811,12 +2038,23 @@ arch teleporter
 x 12
 y 18
 end
+arch marble
+x 12
+y 19
+end
 arch dun2
 x 12
 y 19
 end
+arch marble
+x 13
+end
 arch dun16
 x 13
+end
+arch marble
+x 13
+y 1
 end
 arch dun3
 x 13
@@ -1920,13 +2158,24 @@ arch dun3
 x 13
 y 17
 end
+arch marble
+x 13
+y 18
+end
 arch dun3
 x 13
 y 18
 end
+arch marble
+x 13
+y 19
+end
 arch dun13
 x 13
 y 19
+end
+arch marble
+x 14
 end
 arch dun2
 x 14
@@ -2115,12 +2364,23 @@ attack_movement 4
 arch spell_small_bullet
 end
 end
+arch marble
+x 14
+y 19
+end
 arch dun2
 x 14
 y 19
 end
+arch marble
+x 15
+end
 arch dun16
 x 15
+end
+arch marble
+x 15
+y 1
 end
 arch dun5
 x 15
@@ -2272,13 +2532,24 @@ y 17
 speed 0.500000
 connected 12
 end
+arch marble
+x 15
+y 18
+end
 arch dun8
 x 15
 y 18
 end
+arch marble
+x 15
+y 19
+end
 arch dun13
 x 15
 y 19
+end
+arch marble
+x 16
 end
 arch dun2
 x 16
@@ -2304,6 +2575,10 @@ end
 arch marble
 x 16
 y 2
+end
+arch marble
+x 16
+y 3
 end
 arch dun2
 x 16
@@ -2331,6 +2606,10 @@ arch marble
 x 16
 y 5
 end
+arch marble
+x 16
+y 6
+end
 arch dun2
 x 16
 y 6
@@ -2356,6 +2635,10 @@ end
 arch marble
 x 16
 y 8
+end
+arch marble
+x 16
+y 9
 end
 arch dun2
 x 16
@@ -2387,6 +2670,10 @@ arch marble
 x 16
 y 12
 end
+arch marble
+x 16
+y 13
+end
 arch dun2
 x 16
 y 13
@@ -2412,6 +2699,10 @@ y 15
 attack_movement 4
 arch spell_small_bullet
 end
+end
+arch marble
+x 16
+y 16
 end
 arch dun2
 x 16
@@ -2439,9 +2730,16 @@ attack_movement 4
 arch spell_small_bullet
 end
 end
+arch marble
+x 16
+y 19
+end
 arch dun2
 x 16
 y 19
+end
+arch marble
+x 17
 end
 arch dun2
 x 17
@@ -2453,6 +2751,10 @@ end
 arch marble
 x 17
 y 2
+end
+arch marble
+x 17
+y 3
 end
 arch dun2
 x 17
@@ -2466,6 +2768,10 @@ arch marble
 x 17
 y 5
 end
+arch marble
+x 17
+y 6
+end
 arch dun2
 x 17
 y 6
@@ -2477,6 +2783,10 @@ end
 arch marble
 x 17
 y 8
+end
+arch marble
+x 17
+y 9
 end
 arch dun2
 x 17
@@ -2503,6 +2813,10 @@ arch marble
 x 17
 y 12
 end
+arch marble
+x 17
+y 13
+end
 arch dun2
 x 17
 y 13
@@ -2514,6 +2828,10 @@ end
 arch marble
 x 17
 y 15
+end
+arch marble
+x 17
+y 16
 end
 arch dun2
 x 17
@@ -2527,9 +2845,16 @@ arch marble
 x 17
 y 18
 end
+arch marble
+x 17
+y 19
+end
 arch dun2
 x 17
 y 19
+end
+arch marble
+x 18
 end
 arch dun2
 x 18
@@ -2549,6 +2874,10 @@ hp 36
 sp 45
 x 18
 y 2
+end
+arch marble
+x 18
+y 3
 end
 arch dun2
 x 18
@@ -2579,6 +2908,10 @@ sp 21
 x 18
 y 5
 end
+arch marble
+x 18
+y 6
+end
 arch dun2
 x 18
 y 6
@@ -2607,6 +2940,10 @@ hp 25
 sp 35
 x 18
 y 8
+end
+arch marble
+x 18
+y 9
 end
 arch dun2
 x 18
@@ -2641,6 +2978,10 @@ arch marble
 x 18
 y 12
 end
+arch marble
+x 18
+y 13
+end
 arch dun2
 x 18
 y 13
@@ -2661,6 +3002,10 @@ arch marble
 x 18
 y 15
 end
+arch marble
+x 18
+y 16
+end
 arch dun2
 x 18
 y 16
@@ -2677,84 +3022,167 @@ arch teleporter
 x 18
 y 18
 end
+arch marble
+x 18
+y 19
+end
 arch dun2
 x 18
 y 19
 end
+arch marble
+x 19
+end
 arch dun9
 x 19
 end
-arch dun3
+arch marble
 x 19
 y 1
 end
 arch dun3
 x 19
+y 1
+end
+arch marble
+x 19
 y 2
+end
+arch dun3
+x 19
+y 2
+end
+arch marble
+x 19
+y 3
 end
 arch dun14
 x 19
 y 3
 end
-arch dun3
+arch marble
 x 19
 y 4
 end
 arch dun3
 x 19
+y 4
+end
+arch marble
+x 19
 y 5
+end
+arch dun3
+x 19
+y 5
+end
+arch marble
+x 19
+y 6
 end
 arch dun14
 x 19
 y 6
 end
-arch dun3
+arch marble
 x 19
 y 7
 end
 arch dun3
 x 19
+y 7
+end
+arch marble
+x 19
 y 8
+end
+arch dun3
+x 19
+y 8
+end
+arch marble
+x 19
+y 9
 end
 arch dun14
 x 19
 y 9
 end
-arch dun3
+arch marble
 x 19
 y 10
 end
 arch dun3
 x 19
+y 10
+end
+arch marble
+x 19
 y 11
+end
+arch dun3
+x 19
+y 11
+end
+arch marble
+x 19
+y 12
 end
 arch dun3
 x 19
 y 12
 end
+arch marble
+x 19
+y 13
+end
 arch dun14
 x 19
 y 13
 end
-arch dun3
+arch marble
 x 19
 y 14
 end
 arch dun3
 x 19
+y 14
+end
+arch marble
+x 19
 y 15
+end
+arch dun3
+x 19
+y 15
+end
+arch marble
+x 19
+y 16
 end
 arch dun14
 x 19
 y 16
 end
-arch dun3
+arch marble
 x 19
 y 17
 end
 arch dun3
 x 19
+y 17
+end
+arch marble
+x 19
 y 18
+end
+arch dun3
+x 19
+y 18
+end
+arch marble
+x 19
+y 19
 end
 arch dun7
 x 19
