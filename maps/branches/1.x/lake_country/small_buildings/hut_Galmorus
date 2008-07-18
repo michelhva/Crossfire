@@ -7,6 +7,7 @@ height 24
 enter_x 9
 msg
 Created:  1995-03-24 Kundi, Xue (xkd@soda.csua.berkeley.edu)
+Modified: 2008-05-23 Arvid Norlander
 endmsg
 end
 arch grass
@@ -609,7 +610,7 @@ end
 arch priest
 name Artheus
 msg
-@match key|Key
+@match key
 This is the key to the private study.
 If Galmorus send you for it, you may
 get it.
@@ -2322,7 +2323,7 @@ end
 arch mage
 name Galmorus
 msg
-@match password|Password
+@match password
 There are a lot of passwords
 corresponding to different mechanisms
 in different parts of the land. Which
@@ -2340,7 +2341,7 @@ the name of one of the famous people.
 There were quite a few famous people
 in the past. Ragnarok, Zykie, Kashu
 are the few, now that I recall.
-@match fortress|Fortress
+@match fortress
 Which fortress are you talking about?
 @match Butakis
 Butakis has a royal library in his
@@ -2349,7 +2350,7 @@ information you can find from the books
 there.
 There password to enter the fortress
 of Butakis is 'windwalk'.
-@match the Sunset|sunset
+@match the sunset
 The Sunset Fortress?
 There is a password you need to tell
 the giant oak tree in the middle of the
@@ -2369,7 +2370,7 @@ may be disguised as something unlikely.
 One of the portal is supposed to
 transport you to the old wizard's
 tower.
-@match Hello|hello
+@match hello|hi
 Hello fellow. My time is precious.
 What do you want to ask me?
 @match *

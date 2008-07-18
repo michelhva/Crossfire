@@ -3276,7 +3276,7 @@ connected 8
 end
 arch magic_ear
 msg
-@match Kill|KILL|kill
+@match kill
 A line of guards appeared behide you
 grinning evilly.
 endmsg
@@ -3299,12 +3299,12 @@ end
 arch dragonman
 name dragonman guard
 msg
-@match Open|open|enter|gate|door
+@match open|enter|gate|door
 What's your name? What's your
 business?
 @match Orcus|Balrog|Asmodeus|Jessy
 Gatekeeper! OPEN!!.
-@match Kill|KILL|kill
+@match kill
 Great! We all need some excercises!
 @match sacrifice
 Aha, the more fresh flesh the better.
@@ -4751,7 +4751,7 @@ connected 8
 end
 arch magic_ear
 msg
-@match Kill|KILL|kill
+@match kill
 A line of guards appeared behide you
 grinning evilly.
 endmsg
@@ -4774,12 +4774,12 @@ end
 arch dragonman
 name dragonman guard
 msg
-@match Open|open|enter|gate|door
+@match open|enter|gate|door
 What's your name? What's your
 business?
 @match Orcus|Balrog|Asmodeus|Jessy
 Gatekeeper! OPEN!!.
-@match Kill|KILL|kill
+@match kill
 Great! We all need some excercises!
 @match sacrifice
 Aha, the more fresh flesh the better.
