@@ -9,7 +9,7 @@ enter_x 1
 enter_y 1
 msg
 Created:  2004-02-03 Mikeeusa
-Modified: 2008-05-31 Rick Tanner
+Modified: 2008-05-11 Andreas Kirschbaum
 endmsg
 outdoor 1
 end
@@ -2466,7 +2466,7 @@ end
 arch door_2
 x 7
 y 16
-no_pass 0
+move_block 0
 end
 arch blocked
 x 7
