@@ -2380,7 +2380,7 @@ y 23
 end
 arch magic_ear
 msg
-@match charge|Charge
+@match charge
 You feel temporarily dizzy.
 endmsg
 x 11
