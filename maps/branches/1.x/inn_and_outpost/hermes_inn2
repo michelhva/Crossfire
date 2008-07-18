@@ -5,6 +5,7 @@ width 22
 height 10
 msg
 Created:  2002-10-27 Todd Mitchell
+Modified: 2008-05-23 Arvid Norlander
 endmsg
 outdoor 1
 end
@@ -148,6 +149,12 @@ arch woodfloor2
 x 2
 y 2
 end
+arch button_small
+x 2
+y 3
+invisible 1
+connected 1
+end
 arch woodfloor2
 x 2
 y 3
@@ -176,6 +183,12 @@ end
 arch woodfloor2
 x 2
 y 5
+end
+arch button_small
+x 2
+y 6
+invisible 1
+connected 4
 end
 arch woodfloor2
 x 2
@@ -438,6 +451,12 @@ arch woodfloor2
 x 6
 y 2
 end
+arch button_small
+x 6
+y 3
+invisible 1
+connected 2
+end
 arch woodfloor2
 x 6
 y 3
@@ -466,6 +485,12 @@ end
 arch woodfloor2
 x 6
 y 5
+end
+arch button_small
+x 6
+y 6
+invisible 1
+connected 5
 end
 arch woodfloor2
 x 6
@@ -719,6 +744,12 @@ end
 arch woodfloor2
 x 10
 y 2
+end
+arch button_small
+x 10
+y 3
+invisible 1
+connected 3
 end
 arch woodfloor2
 x 10
@@ -748,6 +779,12 @@ end
 arch woodfloor2
 x 10
 y 5
+end
+arch button_small
+x 10
+y 6
+invisible 1
+connected 6
 end
 arch woodfloor2
 x 10
@@ -1041,6 +1078,12 @@ end
 arch woodfloor2
 x 14
 y 5
+end
+arch button_small
+x 14
+y 6
+invisible 1
+connected 7
 end
 arch woodfloor2
 x 14
