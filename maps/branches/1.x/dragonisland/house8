@@ -6,6 +6,7 @@ width 10
 height 10
 msg
 Created:  1997-09-12
+Modified: 2008-05-23 Arvid Norlander
 endmsg
 end
 arch afloor_left
@@ -153,7 +154,7 @@ end
 arch courier
 name Timothius
 msg
-@match [Hh][ae]llo|[Hh]i|[Gg]reet
+@match h[ae]llo|hi|greet
 My Greetigs to you! Welcome to my
 humble home. Have you heard of my
 friend, Carthon? He was heading of to
@@ -166,7 +167,7 @@ Oh dear!!!
 Please leave me alone for a while.
 @match yes
 Well, where have you seen him?
-@match [Cc]arthon
+@match carthon
 Carthon is a friend of mine. He's an
 adventurer and dragon hunter.
 @match mountain
@@ -262,7 +263,7 @@ end
 arch door_look_1
 x 3
 y 7
-no_pass 0
+move_block 0
 end
 arch afloor_left
 x 3
@@ -297,7 +298,7 @@ end
 arch door_look_2
 x 4
 y 2
-no_pass 0
+move_block 0
 end
 arch afloor_left
 x 4
@@ -470,7 +471,7 @@ end
 arch door_look_1
 x 6
 y 4
-no_pass 0
+move_block 0
 end
 arch afloor_left
 x 6
