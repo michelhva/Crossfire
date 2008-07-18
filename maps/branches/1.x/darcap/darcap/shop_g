@@ -7,6 +7,9 @@ shopitems food:100;flesh:50;*:-80
 shopmax 8000
 width 16
 height 16
+msg
+Modified: 2008-05-23 Arvid Norlander
+endmsg
 end
 arch woodfloor
 end
@@ -306,18 +309,18 @@ end
 arch man
 name Bob
 msg
-@match Hello|hello
+@match hello
 Hello. Would you like to buy some fish?
-@match Order|order|tower|Tower
+@match order|tower
 To open the Tower, you must uses each part
 in order of the sage's names.  Good Luck.
-@match sage|Sage
+@match sage
 I don't know.  Go ask them!
-@match name|Name
+@match name
 My name is Bob.  I own this place.
-@match bakery|Bakery|food|Fodd
+@match bakery|food
 yep, I get fresh fish every day.
-@match day|Day
+@match day
 Yes, every day. Now either buy
 something or leave. I'm busy.
 @match *
