@@ -3344,7 +3344,7 @@ end
 arch sage
 name Assistant
 msg
-@match yes|Yes|YES
+@match yes
 Then you only have to hit each different
 target with just one try.
 @match *
@@ -5151,7 +5151,7 @@ hp 14
 sp 13
 x 18
 y 13
-speed 0.0
+speed 0.000000
 connected 222
 end
 arch swall_2_1_2
