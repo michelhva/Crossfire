@@ -1099,7 +1099,7 @@ end
 arch door_look_2
 x 4
 y 11
-no_pass 0
+move_block 0
 blocksview 1
 end
 arch magic_banned
@@ -1120,7 +1120,7 @@ end
 arch door_look_2
 x 4
 y 12
-no_pass 0
+move_block 0
 blocksview 1
 end
 arch pstone_1
@@ -6498,7 +6498,7 @@ end
 arch door_look_2
 x 19
 y 11
-no_pass 0
+move_block 0
 blocksview 1
 end
 arch magic_banned
@@ -6519,7 +6519,7 @@ end
 arch door_look_2
 x 19
 y 12
-no_pass 0
+move_block 0
 blocksview 1
 end
 arch magic_banned
@@ -6756,7 +6756,7 @@ end
 arch door_look_2
 x 19
 y 36
-no_pass 0
+move_block 0
 blocksview 1
 end
 arch magic_banned
@@ -6781,7 +6781,7 @@ end
 arch door_look_2
 x 19
 y 37
-no_pass 0
+move_block 0
 blocksview 1
 end
 arch magic_banned
@@ -14636,7 +14636,7 @@ end
 arch door_look_2
 x 44
 y 11
-no_pass 0
+move_block 0
 blocksview 1
 end
 arch magic_banned
@@ -14661,7 +14661,7 @@ end
 arch door_look_2
 x 44
 y 12
-no_pass 0
+move_block 0
 blocksview 1
 end
 arch magic_banned
@@ -14898,7 +14898,7 @@ end
 arch door_look_2
 x 44
 y 36
-no_pass 0
+move_block 0
 blocksview 1
 end
 arch magic_banned
@@ -14923,7 +14923,7 @@ end
 arch door_look_2
 x 44
 y 37
-no_pass 0
+move_block 0
 blocksview 1
 end
 arch magic_banned

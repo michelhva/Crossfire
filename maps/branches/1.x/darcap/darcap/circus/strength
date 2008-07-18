@@ -6,6 +6,7 @@ width 20
 height 16
 msg
 Created:  1999-01-28 Cater & Wade (john_cater@yahoo.com)
+Modified: 2008-05-29 Nicolas Weeger
 endmsg
 end
 arch pstone_1
@@ -467,8 +468,8 @@ x 4
 y 3
 weight 150000
 pick_up 1
+move_block 0
 no_pick 0
-no_pass 0
 end
 arch pstone_1
 x 4
