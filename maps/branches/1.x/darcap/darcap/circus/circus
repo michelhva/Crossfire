@@ -1236,7 +1236,7 @@ end
 arch grass
 x 10
 y 10
-no_pass 1
+move_block all
 end
 arch collesium
 name The Big Top
@@ -1249,7 +1249,7 @@ end
 arch grass
 x 10
 y 11
-no_pass 1
+move_block all
 end
 arch grass
 x 10
@@ -1369,7 +1369,7 @@ end
 arch grass
 x 11
 y 11
-no_pass 1
+move_block all
 end
 arch grass
 x 11
@@ -1529,7 +1529,7 @@ end
 arch ggate_closed
 x 12
 y 17
-no_pass 0
+move_block 0
 end
 arch pstone_1
 x 12
@@ -1730,17 +1730,17 @@ end
 arch grass
 x 14
 y 10
-no_pass 1
+move_block all
 end
 arch grass
 x 14
 y 11
-no_pass 1
+move_block all
 end
 arch grass
 x 14
 y 12
-no_pass 1
+move_block all
 end
 arch grass
 x 14
