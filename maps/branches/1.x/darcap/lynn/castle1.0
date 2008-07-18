@@ -7,6 +7,7 @@ width 20
 height 19
 msg
 Created:  1999-01-17 Cater & Wade (john_cater@yahoo.com)
+Modified: 2008-05-22 Arvid Norlander
 endmsg
 end
 arch dungeon_floor
@@ -566,6 +567,7 @@ end
 arch torch_indigo
 x 4
 y 17
+no_pick 1
 end
 arch dungeon_floor
 x 4
@@ -1206,6 +1208,7 @@ end
 arch torch_indigo
 x 10
 y 1
+no_pick 1
 end
 arch dungeon_floor
 x 10
@@ -1242,6 +1245,7 @@ end
 arch torch_indigo
 x 10
 y 7
+no_pick 1
 end
 arch dungeon_floor
 x 10
@@ -1790,6 +1794,7 @@ end
 arch torch_indigo
 x 14
 y 17
+no_pick 1
 end
 arch dungeon_floor
 x 14
@@ -2294,6 +2299,7 @@ end
 arch torch_indigo
 x 18
 y 1
+no_pick 1
 end
 arch unholy_ground
 x 18
@@ -2441,6 +2447,7 @@ end
 arch torch_indigo
 x 18
 y 17
+no_pick 1
 end
 arch dungeon_floor
 x 18
