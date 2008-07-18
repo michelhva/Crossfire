@@ -966,9 +966,9 @@ end
 arch woman2
 name Jaskharella
 msg
-@hello
+@match hello|hi
 Hello! I'm sorry Myrnek is not here right now, perhaps I can give you an appointment?
-@appointment
+@match appointment
 Well, how about next thursday evening? Perhaps he's back by then
 endmsg
 Pow 20
