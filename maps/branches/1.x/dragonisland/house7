@@ -6,7 +6,7 @@ width 35
 height 20
 msg
 Created:  1997-06-28 Viola Krings
-Modified: 2007-11-04 Andreas Kirschbaum
+Modified: 2008-07-18 Nicolas Weeger
 endmsg
 end
 arch flagstone
@@ -1150,7 +1150,7 @@ end
 arch woman
 name Sabine
 msg
-@match [Hh][ae]llo|[Hh]i
+@match h[ae]llo|hi
 Hello, fool!
 @match fool
 All who enter here are fools! Else
