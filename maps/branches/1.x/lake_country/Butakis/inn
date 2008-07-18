@@ -890,15 +890,15 @@ arch woodfloor
 x 7
 y 14
 end
-arch woodfloor
-x 7
-y 15
-end
 arch exit
 name inn
 slaying Butakis0
 hp 19
 sp 8
+x 7
+y 15
+end
+arch woodfloor
 x 7
 y 15
 end
@@ -987,15 +987,15 @@ arch woodfloor
 x 8
 y 14
 end
-arch woodfloor
-x 8
-y 15
-end
 arch exit
 name inn
 slaying Butakis0
 hp 19
 sp 8
+x 8
+y 15
+end
+arch woodfloor
 x 8
 y 15
 end
