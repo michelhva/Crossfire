@@ -914,7 +914,7 @@ msg
 @match land
 You do not come from here, I can tell
 by your strange accent. Where are you from?
-@match Scorn|scorn
+@match scorn
 I have heard of that city. Far away it is, and in
 this age, many people do not travel far from
 their birthplace. You would do well to ask
@@ -1203,7 +1203,7 @@ y 2
 end
 arch crone
 msg
-@match scorn|Scorn
+@match scorn
 That city to the west? Yes, it is said a great
 wizard founded that place. He was a
 master of the etheric.
@@ -1221,7 +1221,6 @@ Few captains long to explore, and it
 is expensive to form an expedition. In this
 age they fear far waters, Navar, most of all
 fears.
-
 @match etheric
 Kaladon, the wise, has dabbled in the
 etheric plane. If he's not alseep, he
