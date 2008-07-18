@@ -6,7 +6,7 @@ width 16
 height 16
 msg
 Created:  1997-09-17
-Modified: 2007-11-04 Andreas Kirschbaum
+Modified: 2008-06-06 Arvid Norlander
 endmsg
 end
 arch dungeon_floor
@@ -961,15 +961,15 @@ arch dungeon_floor
 x 8
 y 1
 end
-arch dungeon_floor
-x 8
-y 2
-end
 arch check_inv
 slaying viohousewell
 x 8
 y 2
 connected 1
+end
+arch dungeon_floor
+x 8
+y 2
 end
 arch dungeon_floor
 x 8
@@ -1160,11 +1160,6 @@ arch awall_3_1
 x 9
 y 11
 end
-arch dungeon_floor
-x 9
-y 12
-unique 1
-end
 arch magic_ear
 msg
 @match spike
@@ -1177,7 +1172,7 @@ connected 3
 end
 arch dungeon_floor
 x 9
-y 13
+y 12
 unique 1
 end
 arch magic_ear
@@ -1189,6 +1184,11 @@ endmsg
 x 9
 y 13
 connected 3
+end
+arch dungeon_floor
+x 9
+y 13
+unique 1
 end
 arch dungeon_floor
 x 9
@@ -1412,11 +1412,6 @@ arch awall_2_2_4
 x 11
 y 11
 end
-arch dungeon_floor
-x 11
-y 12
-unique 1
-end
 arch magic_ear
 msg
 @match spike
@@ -1429,7 +1424,7 @@ connected 3
 end
 arch dungeon_floor
 x 11
-y 13
+y 12
 unique 1
 end
 arch magic_ear
@@ -1441,6 +1436,11 @@ endmsg
 x 11
 y 13
 connected 3
+end
+arch dungeon_floor
+x 11
+y 13
+unique 1
 end
 arch dungeon_floor
 x 11
