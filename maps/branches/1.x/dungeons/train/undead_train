@@ -1820,7 +1820,7 @@ name lich dust
 face pix_dust.111
 x 9
 y 12
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch dungeon_magic
@@ -2062,7 +2062,7 @@ name Spectre's ectoplasm
 face ectoplasm.111
 x 10
 y 12
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch dungeon_magic
@@ -2295,7 +2295,7 @@ name Skull's tooth
 face tooth.111
 x 11
 y 12
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch dungeon_magic
