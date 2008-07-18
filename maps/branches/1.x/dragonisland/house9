@@ -171,7 +171,7 @@ y 2
 end
 arch slave
 msg
-@match [Hh][ae]llo|[Hh]i|[Gg]reet
+@match h[ae]llo|hi|greet
 Hello! I'm waiting for my master.
 @match master
 Yes, he went adventuring and I await

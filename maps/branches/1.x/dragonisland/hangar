@@ -6,6 +6,7 @@ width 35
 height 32
 msg
 Created:  1997-06-19
+Modified: 2008-05-23 Arvid Norlander
 endmsg
 end
 arch magic_banned
@@ -3240,7 +3241,7 @@ end
 arch man
 name crying man
 msg
-@match Hi|Hello|hi|hello
+@match hi|hello
 Leave me alone.
 @match *
 You wouldn't understand.

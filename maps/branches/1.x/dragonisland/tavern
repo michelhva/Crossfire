@@ -419,13 +419,13 @@ end
 arch fatman
 name Tobias
 msg
-@match [Hh][ae]llo|[Hh]i|[Gg]reet
+@match h[ae]llo|hi|greet
 Hi there.
 *Tobias sighs deeply.*
 So, you're an adventurer, aren't you?
-@match [Nn]o
+@match no
 Oh well.
-@match [Yy]es|adventurer
+@match yes|adventurer
 Well, that this is probably the right
 place for you to live. The guild is
 famous. That's what I came here for,
@@ -607,7 +607,7 @@ end
 arch veiled_woman
 name Jalishea
 msg
-@match [Hh][ae]llo|[Hh]i|[Gg]reet
+@match h[ae]llo|hi|greet
 Hello !
 @match day
 Oh, a beautiful day indeed! Just don't
@@ -1049,7 +1049,7 @@ end
 arch c_man
 name barkeep
 msg
-@match [Dd]rink|[Bb]ooze|[Yy]es
+@match drink|booze|yes
 A drink costs 3 gp.
 @match *
 Do you want something to drink?
@@ -1897,7 +1897,7 @@ end
 arch dark_elf
 name Kharazzad Do'Bredin
 msg
-@match [Hh][ae]llo|[Hh]i
+@match h[ae]llo|hi
 Hello !
 You seem to be a nice person. Maybe
 you would like to visit my friends in
@@ -1944,12 +1944,12 @@ y 7
 end
 arch sailor
 msg
-@match [Hh][ae]llo|[Hh]i
+@match h[ae]llo|hi
 Hello, landrat! I'm so happy I can
 leave Stoneville with the next ship.
 You cannot imagine what kind of
 people live here!
-@match [Pp]eople|live|[Ss]toneville
+@match people|live|stoneville
 The people who live here are
 adventurers, and they got all their
 pet monsters with them! They have a
@@ -2094,7 +2094,7 @@ end
 arch elec_dragon
 name electric dragon child
 msg
-@match [Hh][ae]llo|[Hh]i
+@match h[ae]llo|hi
 Hello! This is a nice tavern the
 humans have build here! I wish my
 parents could see it!
@@ -2115,7 +2115,7 @@ end
 arch fire_dragon
 name red dragon child
 msg
-@match [Hh][ae]llo|[Hh]i
+@match h[ae]llo|hi
 Hello!
 endmsg
 x 16
