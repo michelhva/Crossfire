@@ -1418,7 +1418,7 @@ end
 arch door_look_1
 x 6
 y 8
-no_pass 0
+move_block 0
 end
 arch blackmarble
 x 6
@@ -1439,7 +1439,7 @@ end
 arch door_look_1
 x 6
 y 12
-no_pass 0
+move_block 0
 end
 arch blackmarble
 x 6
@@ -1539,7 +1539,7 @@ end
 arch door_look_1
 x 6
 y 31
-no_pass 0
+move_block 0
 end
 arch blackmarble
 x 6
@@ -1563,7 +1563,7 @@ end
 arch door_look_1
 x 6
 y 35
-no_pass 0
+move_block 0
 end
 arch blackmarble
 x 6
@@ -1896,7 +1896,7 @@ end
 arch door_look_2
 x 8
 y 6
-no_pass 0
+move_block 0
 end
 arch blackmarble
 x 8
@@ -1961,7 +1961,7 @@ end
 arch door_look_2
 x 8
 y 14
-no_pass 0
+move_block 0
 end
 arch blackmarble
 x 8
@@ -2050,7 +2050,7 @@ end
 arch door_look_2
 x 8
 y 29
-no_pass 0
+move_block 0
 end
 arch blackmarble
 x 8
@@ -2115,7 +2115,7 @@ end
 arch door_look_2
 x 8
 y 37
-no_pass 0
+move_block 0
 end
 arch blackmarble
 x 8
@@ -2469,7 +2469,7 @@ end
 arch door_look_1
 x 10
 y 8
-no_pass 0
+move_block 0
 end
 arch grass
 x 10
@@ -3042,7 +3042,7 @@ end
 arch door_look_2
 x 12
 y 6
-no_pass 0
+move_block 0
 end
 arch blackmarble
 x 12
@@ -3196,7 +3196,7 @@ end
 arch door_look_2
 x 12
 y 29
-no_pass 0
+move_block 0
 end
 arch blackmarble
 x 12
@@ -3261,7 +3261,7 @@ end
 arch door_look_2
 x 12
 y 37
-no_pass 0
+move_block 0
 end
 arch blackmarble
 x 12
@@ -3613,7 +3613,7 @@ end
 arch door_look_1
 x 14
 y 8
-no_pass 0
+move_block 0
 end
 arch blackmarble
 x 14
@@ -3739,7 +3739,7 @@ end
 arch door_look_1
 x 14
 y 31
-no_pass 0
+move_block 0
 end
 arch blackmarble
 x 14
@@ -3763,7 +3763,7 @@ end
 arch door_look_1
 x 14
 y 35
-no_pass 0
+move_block 0
 end
 arch blackmarble
 x 14
@@ -6128,7 +6128,7 @@ end
 arch door_look_1
 x 25
 y 4
-no_pass 0
+move_block 0
 end
 arch blackmarble
 x 25
@@ -7830,7 +7830,7 @@ end
 arch door_look_1
 x 31
 y 13
-no_pass 0
+move_block 0
 end
 arch blackmarble
 x 31
@@ -9076,7 +9076,7 @@ end
 arch door_look_1
 x 36
 y 9
-no_pass 0
+move_block 0
 end
 arch blackmarble
 x 36
@@ -11386,7 +11386,7 @@ end
 arch door_look_1
 x 46
 y 8
-no_pass 0
+move_block 0
 end
 arch blackmarble
 x 46
@@ -11410,7 +11410,7 @@ end
 arch door_look_1
 x 46
 y 12
-no_pass 0
+move_block 0
 end
 arch blackmarble
 x 46
@@ -11629,7 +11629,7 @@ end
 arch door_look_2
 x 48
 y 6
-no_pass 0
+move_block 0
 end
 arch blackmarble
 x 48
@@ -11694,7 +11694,7 @@ end
 arch door_look_2
 x 48
 y 14
-no_pass 0
+move_block 0
 end
 arch blackmarble
 x 48
@@ -12202,7 +12202,7 @@ end
 arch door_look_2
 x 52
 y 6
-no_pass 0
+move_block 0
 end
 arch blackmarble
 x 52
@@ -12267,7 +12267,7 @@ end
 arch door_look_2
 x 52
 y 14
-no_pass 0
+move_block 0
 end
 arch blackmarble
 x 52
@@ -12486,7 +12486,7 @@ end
 arch door_look_1
 x 54
 y 8
-no_pass 0
+move_block 0
 end
 arch blackmarble
 x 54
@@ -12510,7 +12510,7 @@ end
 arch door_look_1
 x 54
 y 12
-no_pass 0
+move_block 0
 end
 arch blackmarble
 x 54
