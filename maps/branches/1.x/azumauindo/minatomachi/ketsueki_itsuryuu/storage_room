@@ -19,7 +19,7 @@ end
 arch blocked
 name nothing
 name_pl nothing
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch invis_exit
@@ -32,7 +32,7 @@ arch blocked
 name nothing
 name_pl nothing
 y 1
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch invis_exit
@@ -45,7 +45,7 @@ arch blocked
 name nothing
 name_pl nothing
 y 2
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch invis_exit
@@ -58,7 +58,7 @@ arch blocked
 name nothing
 name_pl nothing
 y 3
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch invis_exit
@@ -71,7 +71,7 @@ arch blocked
 name nothing
 name_pl nothing
 y 4
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch invis_exit
@@ -84,7 +84,7 @@ arch blocked
 name nothing
 name_pl nothing
 y 5
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch invis_exit
@@ -97,7 +97,7 @@ arch blocked
 name nothing
 name_pl nothing
 y 6
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch invis_exit
@@ -110,7 +110,7 @@ arch blocked
 name nothing
 name_pl nothing
 y 7
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch invis_exit
@@ -123,7 +123,7 @@ arch blocked
 name nothing
 name_pl nothing
 y 8
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch invis_exit
@@ -136,7 +136,7 @@ arch blocked
 name nothing
 name_pl nothing
 y 9
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch invis_exit
@@ -149,7 +149,7 @@ arch blocked
 name nothing
 name_pl nothing
 y 10
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch invis_exit
@@ -162,7 +162,7 @@ arch blocked
 name nothing
 name_pl nothing
 y 11
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch invis_exit
@@ -175,7 +175,7 @@ arch blocked
 name nothing
 name_pl nothing
 y 12
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch invis_exit
@@ -188,7 +188,7 @@ arch blocked
 name nothing
 name_pl nothing
 y 13
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch invis_exit
@@ -201,7 +201,7 @@ arch blocked
 name nothing
 name_pl nothing
 y 14
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch invis_exit
@@ -214,7 +214,7 @@ arch blocked
 name nothing
 name_pl nothing
 y 15
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch invis_exit
@@ -227,7 +227,7 @@ arch blocked
 name nothing
 name_pl nothing
 y 16
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch invis_exit
@@ -240,7 +240,7 @@ arch blocked
 name nothing
 name_pl nothing
 y 17
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch invis_exit
@@ -253,7 +253,7 @@ arch blocked
 name nothing
 name_pl nothing
 y 18
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch invis_exit
@@ -266,7 +266,7 @@ arch blocked
 name nothing
 name_pl nothing
 y 19
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch invis_exit
@@ -279,7 +279,7 @@ arch blocked
 name nothing
 name_pl nothing
 y 20
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch dungeon_floor
