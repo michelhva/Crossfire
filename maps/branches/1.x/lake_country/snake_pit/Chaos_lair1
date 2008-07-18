@@ -9,8 +9,15 @@ enter_x 1
 enter_y 1
 msg
 Created:  1995-06-04 Kundi, Xue (xkd@soda.berkeley.edu)
-Modified: 2007-11-04 Andreas Kirschbaum
+Modified: 2008-05-07 Nicolas Weeger
 endmsg
+maplore
+@def ChaosLair
+The Lord of Chaos resides in this lair.
+@end
+@quest ChaosLair
+Main entrance, from Snake Pit.
+endmaplore
 end
 arch blocked
 end
