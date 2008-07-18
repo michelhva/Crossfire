@@ -2505,7 +2505,7 @@ face hide_white.111
 x 11
 y 9
 weight 150000000
-no_pass 0
+move_block 0
 end
 arch dungeon_magic
 x 11
@@ -2521,7 +2521,7 @@ face hide_white.111
 x 11
 y 10
 weight 150000000
-no_pass 0
+move_block 0
 end
 arch dungeon_magic
 x 11
@@ -2537,7 +2537,7 @@ face hide_white.111
 x 11
 y 11
 weight 150000000
-no_pass 0
+move_block 0
 end
 arch dungeon_magic
 x 11
@@ -2764,7 +2764,7 @@ face hide_white.111
 x 12
 y 9
 weight 150000000
-no_pass 0
+move_block 0
 end
 arch dungeon_magic
 x 12
@@ -2780,7 +2780,7 @@ face hide_black.111
 x 12
 y 10
 weight 150000000
-no_pass 0
+move_block 0
 end
 arch dungeon_magic
 x 12
@@ -2796,7 +2796,7 @@ face hide_white.111
 x 12
 y 11
 weight 150000000
-no_pass 0
+move_block 0
 end
 arch dungeon_magic
 x 12
@@ -2830,8 +2830,8 @@ arch check_floor
 slaying pshop2
 x 12
 y 14
+move_block all
 move_off walk
-no_pass 1
 end
 arch woodfloor
 x 12
@@ -2879,19 +2879,19 @@ y 17
 connected 2
 move_off walk
 end
+arch magic_mouth
+msg
+Owner Storage Room
+endmsg
+x 12
+y 17
+end
 arch woodfloor
 x 12
 y 17
 unique 1
 end
 arch dungeon_magic
-x 12
-y 17
-end
-arch magic_mouth
-msg
-Owner Storage Room
-endmsg
 x 12
 y 17
 end
@@ -2904,8 +2904,8 @@ arch check_floor
 slaying pshop2
 x 12
 y 18
+move_block all
 move_off walk
-no_pass 1
 end
 arch woodfloor
 x 12
@@ -3062,7 +3062,7 @@ face hide_white.111
 x 13
 y 9
 weight 150000000
-no_pass 0
+move_block 0
 end
 arch dungeon_magic
 x 13
@@ -3078,7 +3078,7 @@ face hide_white.111
 x 13
 y 10
 weight 150000000
-no_pass 0
+move_block 0
 end
 arch dungeon_magic
 x 13
@@ -3094,7 +3094,7 @@ face hide_white.111
 x 13
 y 11
 weight 150000000
-no_pass 0
+move_block 0
 end
 arch dungeon_magic
 x 13

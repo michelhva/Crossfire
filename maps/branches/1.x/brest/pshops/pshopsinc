@@ -6,6 +6,7 @@ width 36
 height 14
 msg
 Created:  2004-10-17 majorwoo (josh@woosworld.net)
+Modified: 2008-05-23 Arvid Norlander
 endmsg
 end
 arch dungeon_magic
@@ -4544,14 +4545,14 @@ end
 arch magic_mouth
 name Manager
 msg
-@match hi|Hi|Hello|hello
+@match hi|hello
 Well as long as you are here, make yourself useful and take these flowers to my wife.
 Put them on her vanity so she will see them.
-@match date|Date
+@match date
 *Sigh* She's starting to forget a lot of things.  Our date is at 7!
-@match contract|Contract
+@match contract
 I can't finish the contract until I find my pen!
-@match pen|Pen
+@match pen
 If you find my pen put it on my desk.
 @match *
 I'm in the middle of something.  Go away before I call the guards.
@@ -4561,7 +4562,7 @@ y 7
 end
 arch magic_ear
 msg
-@match hi|Hi|Hello|hello
+@match hi|hello
 endmsg
 x 32
 y 7
