@@ -11,7 +11,7 @@ Created:  1999-01-15 Cater/Wade (john_cater@yahoo.com)
 Creator: Cater/Wade
 Email: john_cater@yahoo.com
 Date: Fri Jan 15 12:02:40 1999
-Modified: 2008-01-03 Gene Alexander
+Modified: 2008-05-23 Arvid Norlander
 endmsg
 end
 arch cobblestones2
@@ -859,9 +859,9 @@ y 13
 end
 arch sage
 msg
-@match Hello|hello
+@match hello
 Well....
-@match Well|well
+@match well
 I'm not deaf you know
 Visit the well !!
 @match *
@@ -1389,16 +1389,16 @@ end
 arch fighter
 name TCI Representative
 msg
-@match TCI|tci
+@match tci
 Training Centers Incorporated is the best dang training
 you'll ever get. We have locations all over the world in
 exotic settings. Come fight with us! (heh, they tell us we
 have to say all that)
-@match Location|location
+@match location
 Well, I don't know about all of them. But our local TCI
 is off the road south of here. Just look for one of our
 signs!
-@match Hello|hello|Hi|hi
+@match hello|hi
 Well, hello there! Sit down and chat with me a bit. I am
 always looking for new people to tell about TCI.
 @match *
@@ -2213,7 +2213,7 @@ y 5
 end
 arch ninja2
 msg
-@match [Ll]and|[Ee]xiled
+@match land|exiled
 I lived north-east from here, until I took a
 boat out to talk to a forginer like you.
 They didn't let me go back.
