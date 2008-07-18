@@ -1198,7 +1198,7 @@ connected 11
 end
 arch dun2
 x 8
-no_pass 0
+move_block 0
 end
 arch cobblestones
 x 8
@@ -1394,7 +1394,7 @@ connected 10
 end
 arch dun2
 x 9
-no_pass 0
+move_block 0
 end
 arch boulder
 x 9
@@ -1938,7 +1938,7 @@ end
 arch dun14
 x 12
 y 6
-no_pass 0
+move_block 0
 end
 arch cobblestones
 x 12
@@ -1968,7 +1968,7 @@ end
 arch dun14
 x 12
 y 9
-no_pass 0
+move_block 0
 end
 arch cobblestones
 x 12
@@ -2021,7 +2021,7 @@ name illusionary bat screeches pass
 face giant_bat.111
 x 13
 y 1
-no_pass 0
+move_block 0
 end
 arch mover_3
 x 13
@@ -2037,7 +2037,7 @@ name illusionary bat screeches pass
 face giant_bat.111
 x 13
 y 2
-no_pass 0
+move_block 0
 end
 arch mover_2
 x 13
@@ -2053,7 +2053,7 @@ name illusionary bat screeches pass
 face giant_bat.111
 x 13
 y 3
-no_pass 0
+move_block 0
 end
 arch cobblestones
 x 13
@@ -2093,7 +2093,7 @@ name illusionary bat screeches pass
 face giant_bat.111
 x 13
 y 6
-no_pass 0
+move_block 0
 end
 arch cobblestones
 x 13
@@ -2126,7 +2126,7 @@ name illusionary bat screeches pass
 face giant_bat.111
 x 13
 y 9
-no_pass 0
+move_block 0
 end
 arch cobblestones
 x 13
@@ -2247,7 +2247,7 @@ name illusionary bat screeches pass
 face giant_bat.111
 x 14
 y 2
-no_pass 0
+move_block 0
 end
 arch mover_1
 x 14
@@ -2263,7 +2263,7 @@ name illusionary bat screeches pass
 face giant_bat.111
 x 14
 y 3
-no_pass 0
+move_block 0
 end
 arch cobblestones
 x 14
@@ -2295,7 +2295,7 @@ name illusionary bat screeches pass
 face giant_bat.111
 x 14
 y 6
-no_pass 0
+move_block 0
 end
 arch cobblestones
 x 14
@@ -2340,7 +2340,7 @@ name illusionary bat screeches pass
 face giant_bat.111
 x 14
 y 9
-no_pass 0
+move_block 0
 end
 arch cobblestones
 x 14
@@ -2373,7 +2373,7 @@ You find nothing interesting here
 endmsg
 x 14
 y 13
-no_pass 0
+move_block 0
 end
 arch teleporter
 slaying entrance1
