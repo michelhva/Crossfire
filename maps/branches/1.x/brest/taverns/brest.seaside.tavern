@@ -2004,29 +2004,32 @@ end
 arch man
 name Haemon
 msg
-@match Tavern|tavern
-I bought this *tavern* with part of my
-pension from *Zorn*.
-@match given name
-Do NOT tell *Zorn* I told you this. His
+@match tavern
+@question zorn You worked for Zorn?
+I bought this tavern with part of my
+pension from Zorn.
+@match given_name|given name
+Do NOT tell Zorn I told you this. His
 given name is Zacharus Zorn.
-@match kill Zorn|defeat Zorn
-I know of no sure way to *kill Zorn*. But
-there is a rumor in Brest that *Zorn* was
+@match defeat_zorn|kill zorn|defeat zorn
+I know of no sure way to kill Zorn. But
+there is a rumor in Brest that Zorn was
 a sickly child and has a weak immune
 system.
-@match Tough|tough
-It is true that *Zorn* is *tough*. Many
-people have tried to *kill Zorn* but
-very few have been able to *defeat Zorn*.
-@match Zorn
+@match tough
+It is true that Zorn is tough. Many
+people have tried to kill Zorn but
+very few have been able to defeat Zorn.
+@match zorn
+@question tough So Zorn is tough?
+@question given_name What is Zorn's given name?
 Yes, I used to be Zorn's manservant. He
 released me with a good pension many
-years ago. He is a *tough* but fair man.
+years ago. He is a tough but fair man.
 I am one of the few people to whom he
-entrusted his *given name*.
+entrusted his given name.
 @match *
-Hello! Welcome to my *tavern*.
+Hello! Welcome to my tavern.
 endmsg
 Con 50
 hp 18000
@@ -2983,12 +2986,12 @@ end
 arch fatman
 name bartender
 msg
-@match Haemon
+@match haemon
 He's over there in the private room
 with his wife Annie.
 @match *
 I know nothing. Ask Haemon. He owns
-this *tavern*.
+this tavern.
 endmsg
 x 24
 y 6
