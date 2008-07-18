@@ -9,7 +9,7 @@ enter_x 1
 enter_y 1
 msg
 Created:  1994-02-31
-Modified: 2007-11-04 Andreas Kirschbaum
+Modified: 2008-06-06 Arvid Norlander
 endmsg
 end
 arch pstone_2
@@ -5496,6 +5496,10 @@ arch pstone_2
 x 12
 y 13
 end
+arch pstone_2
+x 12
+y 14
+end
 arch bwall_0
 x 12
 y 14
@@ -6485,6 +6489,10 @@ arch pstone_2
 x 14
 y 13
 end
+arch pstone_2
+x 14
+y 14
+end
 arch bwall_0
 x 14
 y 14
@@ -6970,6 +6978,10 @@ arch small_stones
 x 15
 y 21
 end
+arch small_stones
+x 15
+y 22
+end
 arch bwall_0
 x 15
 y 22
@@ -7439,6 +7451,10 @@ end
 arch small_stones
 x 16
 y 21
+end
+arch small_stones
+x 16
+y 22
 end
 arch bwall_0
 x 16
@@ -8483,6 +8499,10 @@ end
 arch beholder
 x 18
 y 42
+end
+arch small_stones
+x 18
+y 43
 end
 arch bwall_0
 x 18
@@ -12244,13 +12264,25 @@ arch bwall_0
 x 29
 y 24
 end
-arch bwall_0
+arch pstone_2
 x 29
 y 25
 end
 arch bwall_0
 x 29
+y 25
+end
+arch pstone_2
+x 29
 y 26
+end
+arch bwall_0
+x 29
+y 26
+end
+arch pstone_2
+x 29
+y 27
 end
 arch bwall_0
 x 29
@@ -12268,17 +12300,33 @@ arch bwall_0
 x 29
 y 29
 end
-arch bwall_0
+arch pstone_2
 x 29
 y 30
 end
 arch bwall_0
 x 29
+y 30
+end
+arch pstone_2
+x 29
 y 31
 end
 arch bwall_0
 x 29
+y 31
+end
+arch pstone_2
+x 29
 y 32
+end
+arch bwall_0
+x 29
+y 32
+end
+arch pstone_2
+x 29
+y 33
 end
 arch bwall_0
 x 29
@@ -12292,6 +12340,10 @@ arch door_look_2
 x 29
 y 34
 end
+arch pstone_2
+x 29
+y 35
+end
 arch bwall_0
 x 29
 y 35
@@ -12304,9 +12356,17 @@ arch door_look_2
 x 29
 y 36
 end
+arch pstone_2
+x 29
+y 37
+end
 arch bwall_0
 x 29
 y 37
+end
+arch pstone_2
+x 29
+y 38
 end
 arch bwall_0
 x 29
@@ -12570,6 +12630,10 @@ y 29
 randomitems none
 arch spell_magic_bullet
 end
+end
+arch pstone_2
+x 30
+y 30
 end
 arch bwall_0
 x 30
@@ -12898,6 +12962,10 @@ arch pstone_2
 x 31
 y 29
 end
+arch pstone_2
+x 31
+y 30
+end
 arch bwall_0
 x 31
 y 30
@@ -13183,6 +13251,10 @@ end
 arch pstone_2
 x 32
 y 29
+end
+arch pstone_2
+x 32
+y 30
 end
 arch bwall_0
 x 32
@@ -13486,6 +13558,10 @@ arch pstone_2
 x 33
 y 29
 end
+arch pstone_2
+x 33
+y 30
+end
 arch bwall_0
 x 33
 y 30
@@ -13782,6 +13858,10 @@ end
 arch generate_devil
 x 34
 y 29
+end
+arch pstone_2
+x 34
+y 30
 end
 arch bwall_0
 x 34
