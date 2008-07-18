@@ -1950,7 +1950,7 @@ y 12
 end
 arch magic_ear
 msg
-@match ebonytiger|Ebony|ebony
+@match ebonytiger|ebony
 Click.
 endmsg
 x 13
@@ -1987,7 +1987,7 @@ x 14
 end
 arch magic_ear
 msg
-@match Yes|yes
+@match yes
 Click.
 endmsg
 x 14
@@ -2001,7 +2001,7 @@ end
 arch thief
 name low guildguard
 msg
-@match test|Test
+@match test
 You will find out ... hee ..
 Well I can give you few lucky numbers
 if you want.
@@ -2011,7 +2011,7 @@ have to find out the rest yourself.
 Now listen:
 10, 5 and 2.
 Now do you intend to take the test?
-@match yes|Yes
+@match yes
 So be it!
 @match *
 Hello, we don't welcome strangers.
