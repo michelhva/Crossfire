@@ -1605,7 +1605,7 @@ end
 arch large_stones
 x 4
 y 37
-no_pass 1
+move_block all
 end
 arch large_stones
 x 4
@@ -1862,7 +1862,7 @@ end
 arch large_stones
 x 5
 y 37
-no_pass 1
+move_block all
 end
 arch large_stones
 x 5
@@ -1890,7 +1890,7 @@ end
 arch large_stones
 x 6
 y 3
-no_pass 1
+move_block all
 end
 arch invis_exit
 slaying Chaos_lair4
@@ -2129,7 +2129,7 @@ end
 arch large_stones
 x 6
 y 37
-no_pass 1
+move_block all
 end
 arch large_stones
 x 6
@@ -2157,7 +2157,7 @@ end
 arch large_stones
 x 7
 y 3
-no_pass 1
+move_block all
 end
 arch invis_exit
 slaying Chaos_lair4
@@ -2424,7 +2424,7 @@ end
 arch large_stones
 x 7
 y 37
-no_pass 1
+move_block all
 end
 arch large_stones
 x 7
@@ -2452,7 +2452,7 @@ end
 arch large_stones
 x 8
 y 3
-no_pass 1
+move_block all
 end
 arch invis_exit
 slaying Chaos_lair4
@@ -2691,7 +2691,7 @@ end
 arch large_stones
 x 8
 y 37
-no_pass 1
+move_block all
 end
 arch large_stones
 x 8
@@ -2719,7 +2719,7 @@ end
 arch large_stones
 x 9
 y 3
-no_pass 1
+move_block all
 end
 arch invis_exit
 slaying Chaos_lair4
@@ -2976,7 +2976,7 @@ end
 arch large_stones
 x 9
 y 37
-no_pass 1
+move_block all
 end
 arch large_stones
 x 9
@@ -3262,7 +3262,7 @@ end
 arch large_stones
 x 10
 y 37
-no_pass 1
+move_block all
 end
 arch large_stones
 x 10
@@ -3503,7 +3503,7 @@ end
 arch large_stones
 x 11
 y 37
-no_pass 1
+move_block all
 end
 arch large_stones
 x 11
@@ -3743,7 +3743,7 @@ end
 arch large_stones
 x 12
 y 37
-no_pass 1
+move_block all
 end
 arch large_stones
 x 12

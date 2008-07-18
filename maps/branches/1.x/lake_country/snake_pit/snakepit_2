@@ -4820,7 +4820,7 @@ arch cave14
 name illusionary wall
 x 21
 y 26
-no_pass 0
+move_block 0
 end
 arch large_stones
 x 21
@@ -6956,7 +6956,7 @@ arch cave14
 name illusionary wall
 x 31
 y 20
-no_pass 0
+move_block 0
 end
 arch large_stones
 x 31
@@ -7142,7 +7142,7 @@ arch cave16
 name illusionary wall
 x 32
 y 20
-no_pass 0
+move_block 0
 end
 arch large_stones
 x 32
