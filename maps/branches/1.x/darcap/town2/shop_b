@@ -3367,7 +3367,7 @@ x 22
 y 4
 type 0
 material 0
-no_pass 1
+move_block all
 no_magic 1
 damned 1
 end
@@ -3380,7 +3380,7 @@ x 22
 y 5
 type 0
 material 0
-no_pass 1
+move_block all
 no_magic 1
 damned 1
 end
@@ -3393,7 +3393,7 @@ x 22
 y 6
 type 0
 material 0
-no_pass 1
+move_block all
 no_magic 1
 damned 1
 end
@@ -4160,7 +4160,7 @@ end
 arch door_look_2
 x 27
 y 4
-no_pass 0
+move_block 0
 end
 arch woodfloor
 x 27
@@ -4169,7 +4169,7 @@ end
 arch door_look_2
 x 27
 y 5
-no_pass 0
+move_block 0
 end
 arch woodfloor
 x 27
