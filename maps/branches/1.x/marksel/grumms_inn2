@@ -8,6 +8,7 @@ enter_y 3
 msg
 Grumm's Inn
 Created:  2002-10-27 Todd Mitchell
+Modified: 2008-05-23 Arvid Norlander
 endmsg
 outdoor 1
 end
@@ -158,6 +159,11 @@ arch woodfloor2
 x 2
 y 2
 end
+arch button_small
+x 2
+y 3
+connected 1
+end
 arch woodfloor2
 x 2
 y 3
@@ -184,6 +190,11 @@ end
 arch woodfloor2
 x 2
 y 5
+end
+arch button_small
+x 2
+y 6
+connected 2
 end
 arch woodfloor2
 x 2
@@ -708,6 +719,11 @@ arch woodfloor2
 x 10
 y 2
 end
+arch button_small
+x 10
+y 3
+connected 3
+end
 arch woodfloor2
 x 10
 y 3
@@ -734,6 +750,11 @@ end
 arch woodfloor2
 x 10
 y 5
+end
+arch button_small
+x 10
+y 6
+connected 4
 end
 arch woodfloor2
 x 10
@@ -1230,6 +1251,11 @@ end
 arch woodfloor2
 x 18
 y 5
+end
+arch button_small
+x 18
+y 6
+connected 5
 end
 arch woodfloor2
 x 18
