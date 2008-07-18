@@ -4,6 +4,9 @@ difficulty 1
 region darcap
 width 21
 height 21
+msg
+Modified: 2008-05-23 Arvid Norlander
+endmsg
 end
 arch woodfloor
 end
@@ -768,19 +771,19 @@ end
 arch guildmaster
 name Sage
 msg
-@match hello|Hello
+@match hello|hi
 Hello. I'm busy studying.
-@match name|Name
+@match name
 Joe the Sage
-@match job|Job|Study|study
+@match job|study
 I'm studying the tower
-@match tower|Tower
+@match tower
 I have discovered part of the rune of opening
-@match rune|Rune|open|Open
+@match rune|open
 My part is 'Ra'
-@match order|Order
+@match order
 I'm not sure of the order.  Ask Bob.
-@match Bob|bob
+@match bob
 Bob?   He owns Bob's Fish & Chips in town
 @match *
 I don't know any thing about that.
@@ -814,18 +817,18 @@ end
 arch guildmaster
 name Sage
 msg
-@match name|Name
+@match name
 John the Sage
-@match Hello|hello
+@match hello|hi
 Hello, I'm busy studying.
-@match job|Job|study|Study
+@match job|study
 I'm studying the tower
-@match tower|Tower
+@match tower
 I have discovered part of the rune of opening
-@match rune|Rune|open|Open
+@match rune|open
 My part is 'Blah', but I don't know the right
 order.
-@match order|Order
+@match order
 I'm not sure of the order. I'll keep studying.
 @match *
 I don't know any thing about that.
@@ -2071,18 +2074,18 @@ end
 arch guildmaster
 name Sage
 msg
-@match name|Name
+@match name
 Jim the Sage
-@match hello|Hello
+@match hello|hi
 Hello, I'm busy studying.
-@match job|Job|Study|study
+@match job|study
 I'm studying the tower
-@match tower|Tower
+@match tower
 I have discovered part of the rune of opening
-@match rune|Rune|open|Open
+@match rune|open
 My part is 'Hum', but I don't know the right
 order.
-@match order|Order
+@match order
 I'm not sure of the order. I'll keep studying.
 @match *
 I don't know any thing about that.
@@ -2116,18 +2119,18 @@ end
 arch guildmaster
 name Sage
 msg
-@match name|Name
+@match name
 Jack the Sage
-@match hello|Hello
+@match hello|hi
 Hello, I'm busy studying.
-@match job|Job|study|Study
+@match job|study
 I'm studying the tower
-@match tower|Tower
+@match tower
 I have discovered part of the rune of opening
-@match rune|Rune|open|Open
+@match rune|open
 My part is 'De', but I don't know the right
 order.
-@match order|Order
+@match order
 I'm not sure of the order. I'll keep studying.
 @match *
 I don't know any thing about that.
