@@ -167,7 +167,7 @@ end
 arch rubble
 x 1
 y 3
-no_pass 1
+move_block all
 end
 arch rock2
 x 1
@@ -216,7 +216,7 @@ y 8
 nrof 0
 type 122
 material 32
-container 20000
+container 80000
 arch bones2
 name human skull
 name_pl human skulls
@@ -722,7 +722,7 @@ y 6
 nrof 0
 type 122
 material 32
-container 20000
+container 80000
 arch bones1
 name dog skeleton
 name_pl dog skeletons
@@ -1412,7 +1412,7 @@ end
 arch rubble
 x 8
 y 7
-no_pass 1
+move_block all
 end
 arch rock2
 x 8
@@ -1425,7 +1425,7 @@ end
 arch rubble
 x 8
 y 8
-no_pass 1
+move_block all
 end
 arch rock2
 x 8

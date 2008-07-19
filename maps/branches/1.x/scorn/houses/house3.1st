@@ -388,8 +388,10 @@ name corpse
 name_pl corpses
 x 2
 y 7
+nrof 0
 type 122
 arch goldcoin
+container 80000
 nrof 4
 end
 end
@@ -533,7 +535,7 @@ end
 arch door_2
 x 3
 y 5
-no_pass 0
+move_block 0
 end
 arch woodfloor
 x 3
@@ -825,7 +827,7 @@ end
 arch door_2
 x 7
 y 5
-no_pass 0
+move_block 0
 end
 arch woodfloor
 x 7
