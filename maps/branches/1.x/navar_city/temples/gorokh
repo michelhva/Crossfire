@@ -931,7 +931,7 @@ end
 arch sage
 name old priest
 msg
-@match Gorokh|gorokh
+@match gorokh
 We worship Gorokh, our master, and we
 seek redemption in Hell.
 @match *
@@ -1080,7 +1080,7 @@ x 10
 end
 arch magic_ear
 msg
-@match ask|Ask
+@match ask
 Answer this lowly worm:
 What is the favored path of the Demon Lord?
 endmsg
@@ -1089,7 +1089,7 @@ y 1
 end
 arch magic_ear
 msg
-@match wounding|Wounding
+@match wounding
 You may pass.
 endmsg
 x 10
