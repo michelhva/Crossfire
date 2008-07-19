@@ -7,7 +7,7 @@ width 36
 height 36
 msg
 Created:  1995-04-26 Kundi, Xue (xkd@soda.berkeley.edu)
-Modified: 2007-11-04 Andreas Kirschbaum
+Modified: 2008-07-18 Arvid Norlander
 endmsg
 end
 arch large_stones
@@ -246,6 +246,10 @@ end
 arch bed_save
 x 1
 y 9
+end
+arch small_stones
+x 1
+y 10
 end
 arch cave2
 x 1

@@ -7,7 +7,7 @@ width 36
 height 36
 msg
 Created:  1995-04-26 Kundi, Xue (xkd@soda.berkeley.edu)
-Modified: 2008-05-24 Arvid Norlander
+Modified: 2008-07-18 Arvid Norlander
 endmsg
 end
 arch blocked
@@ -47,6 +47,9 @@ y 11
 end
 arch cave18
 y 12
+end
+arch small_stones
+y 13
 end
 arch cave3
 y 13
@@ -2610,6 +2613,10 @@ arch cave11
 x 12
 y 32
 end
+arch small_stones
+x 12
+y 33
+end
 arch cave1
 x 12
 y 33
@@ -3533,6 +3540,10 @@ end
 arch cave23
 x 17
 y 32
+end
+arch small_stones
+x 17
+y 33
 end
 arch cave4
 x 17
@@ -5300,6 +5311,10 @@ arch cave25
 x 26
 y 27
 end
+arch small_stones
+x 26
+y 28
+end
 arch cave1
 x 26
 y 28
@@ -6304,9 +6319,17 @@ arch cave24
 x 31
 y 27
 end
+arch small_stones
+x 31
+y 28
+end
 arch cave3
 x 31
 y 28
+end
+arch small_stones
+x 31
+y 29
 end
 arch cave3
 x 31
@@ -6492,6 +6515,10 @@ end
 arch cave12
 x 32
 y 22
+end
+arch small_stones
+x 32
+y 23
 end
 arch cave3
 x 32
@@ -6718,6 +6745,10 @@ end
 arch blocked
 x 33
 y 17
+end
+arch small_stones
+x 33
+y 18
 end
 arch cave4
 x 33
