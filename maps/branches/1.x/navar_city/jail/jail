@@ -506,7 +506,7 @@ slaying prisoner
 x 2
 y 5
 last_sp 0
-no_pass 1
+move_block all
 end
 arch dungeon_magic
 x 2
@@ -574,7 +574,7 @@ slaying prisoner
 x 2
 y 9
 last_sp 0
-no_pass 1
+move_block all
 end
 arch dungeon_magic
 x 2
@@ -1517,7 +1517,7 @@ slaying prisoner
 x 6
 y 5
 last_sp 0
-no_pass 1
+move_block all
 end
 arch dungeon_magic
 x 6
@@ -1585,7 +1585,7 @@ slaying prisoner
 x 6
 y 9
 last_sp 0
-no_pass 1
+move_block all
 end
 arch dungeon_magic
 x 6
@@ -2521,7 +2521,7 @@ slaying prisoner
 x 10
 y 5
 last_sp 0
-no_pass 1
+move_block all
 end
 arch dungeon_magic
 x 10
@@ -2589,7 +2589,7 @@ slaying prisoner
 x 10
 y 9
 last_sp 0
-no_pass 1
+move_block all
 end
 arch dungeon_magic
 x 10

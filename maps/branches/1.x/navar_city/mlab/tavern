@@ -2415,7 +2415,7 @@ end
 arch door_1
 x 4
 y 19
-no_pass 0
+move_block 0
 end
 arch flagstone
 x 4
@@ -2432,7 +2432,7 @@ end
 arch door_1
 x 4
 y 21
-no_pass 0
+move_block 0
 end
 arch stonefloor2
 name stonefloor
@@ -3531,8 +3531,8 @@ x 6
 y 49
 value 20000
 weight 9999999
+move_block 0
 no_pick 0
-no_pass 0
 end
 arch marble
 x 6
@@ -4548,8 +4548,8 @@ x 8
 y 47
 value 20000
 weight 9999999
+move_block 0
 no_pick 0
-no_pass 0
 end
 arch marble
 x 8
@@ -4578,8 +4578,8 @@ x 8
 y 51
 value 20000
 weight 9999999
+move_block 0
 no_pick 0
-no_pass 0
 end
 arch marble
 x 8
@@ -5727,8 +5727,8 @@ x 10
 y 49
 value 20000
 weight 9999999
+move_block 0
 no_pick 0
-no_pass 0
 end
 arch marble
 x 10
@@ -8726,7 +8726,7 @@ end
 arch bench_1_4
 x 16
 y 9
-no_pass 1
+move_block all
 end
 arch afloor_left
 name floor
@@ -9300,7 +9300,7 @@ end
 arch bench_2_2_3
 x 17
 y 9
-no_pass 1
+move_block all
 end
 arch afloor_left
 name floor
@@ -9311,7 +9311,7 @@ end
 arch bench_2_1_1
 x 17
 y 10
-no_pass 1
+move_block all
 end
 arch afloor_left
 name floor
@@ -9322,7 +9322,7 @@ end
 arch bench_2_1_1
 x 17
 y 11
-no_pass 1
+move_block all
 end
 arch afloor_left
 name floor
@@ -9333,7 +9333,7 @@ end
 arch bench_2_1_1
 x 17
 y 12
-no_pass 1
+move_block all
 end
 arch afloor_left
 name floor
@@ -9344,7 +9344,7 @@ end
 arch bench_2_1_1
 x 17
 y 13
-no_pass 1
+move_block all
 end
 arch afloor_left
 name floor
@@ -9355,7 +9355,7 @@ end
 arch bench_2_1_1
 x 17
 y 14
-no_pass 1
+move_block all
 end
 arch afloor_left
 name floor
@@ -9366,7 +9366,7 @@ end
 arch bench_2_1_1
 x 17
 y 15
-no_pass 1
+move_block all
 end
 arch afloor_left
 name floor
@@ -9377,7 +9377,7 @@ end
 arch bench_1_2
 x 17
 y 16
-no_pass 1
+move_block all
 end
 arch afloor_left
 name floor
@@ -14133,7 +14133,7 @@ end
 arch door_look_1
 x 25
 y 2
-no_pass 0
+move_block 0
 end
 arch magic_ear
 msg
@@ -14174,7 +14174,7 @@ end
 arch door_2
 x 25
 y 6
-no_pass 0
+move_block 0
 end
 arch flagstone
 x 25
@@ -15245,7 +15245,7 @@ end
 arch door_look_1
 x 27
 y 2
-no_pass 0
+move_block 0
 end
 arch woodfloor
 x 27
@@ -15298,7 +15298,7 @@ end
 arch door_2
 x 27
 y 6
-no_pass 0
+move_block 0
 end
 arch flagstone
 x 27
@@ -17176,7 +17176,7 @@ end
 arch door_look_1
 x 30
 y 18
-no_pass 0
+move_block 0
 end
 arch afloor_right
 name floor
@@ -17701,7 +17701,7 @@ end
 arch door_look_1
 x 31
 y 18
-no_pass 0
+move_block 0
 end
 arch afloor_right
 name floor
@@ -19192,8 +19192,8 @@ x 34
 y 7
 value 200
 weight 100000
+move_block 0
 no_pick 0
-no_pass 0
 end
 arch blackmarble
 x 34
@@ -22675,7 +22675,7 @@ end
 arch door_2
 x 40
 y 66
-no_pass 0
+move_block 0
 end
 arch grassmedium
 x 40
@@ -24661,7 +24661,7 @@ end
 arch bench_1_4
 x 44
 y 33
-no_pass 1
+move_block all
 end
 arch dungeon_floor
 x 44
@@ -25251,7 +25251,7 @@ end
 arch bench_2_1_2
 x 45
 y 33
-no_pass 1
+move_block all
 end
 arch dungeon_floor
 x 45
@@ -25798,7 +25798,7 @@ end
 arch bench_2_1_2
 x 46
 y 33
-no_pass 1
+move_block all
 end
 arch w_glass
 x 46
@@ -26311,7 +26311,7 @@ end
 arch bench_2_1_2
 x 47
 y 33
-no_pass 1
+move_block all
 end
 arch dungeon_floor
 x 47
@@ -26806,7 +26806,7 @@ end
 arch bench_2_1_2
 x 48
 y 33
-no_pass 1
+move_block all
 end
 arch dungeon_floor
 x 48
@@ -27404,7 +27404,7 @@ end
 arch bench_2_1_2
 x 49
 y 33
-no_pass 1
+move_block all
 end
 arch dungeon_floor
 x 49
@@ -27903,7 +27903,7 @@ end
 arch bench_2_1_2
 x 50
 y 33
-no_pass 1
+move_block all
 end
 arch dungeon_floor
 x 50
@@ -28377,7 +28377,7 @@ end
 arch bench_2_1_2
 x 51
 y 33
-no_pass 1
+move_block all
 end
 arch water
 x 51
@@ -28987,7 +28987,7 @@ end
 arch bench_2_1_2
 x 52
 y 33
-no_pass 1
+move_block all
 end
 arch dungeon_floor
 x 52
@@ -29578,7 +29578,7 @@ end
 arch bench_2_1_2
 x 53
 y 33
-no_pass 1
+move_block all
 end
 arch dungeon_floor
 x 53
@@ -30177,7 +30177,7 @@ end
 arch bench_2_2_3
 x 54
 y 33
-no_pass 1
+move_block all
 end
 arch dungeon_floor
 x 54
@@ -30186,7 +30186,7 @@ end
 arch bench_2_1_1
 x 54
 y 34
-no_pass 1
+move_block all
 end
 arch booze
 x 54
@@ -30199,7 +30199,7 @@ end
 arch bench_1_2
 x 54
 y 35
-no_pass 1
+move_block all
 end
 arch stonefloor2
 name stonefloor
@@ -30940,7 +30940,7 @@ end
 arch door_2
 x 55
 y 53
-no_pass 0
+move_block 0
 end
 arch dirtfloor
 x 55
@@ -40061,7 +40061,7 @@ end
 arch door_2
 x 74
 y 60
-no_pass 0
+move_block 0
 end
 arch woodfloor2
 name woodfloor
@@ -41279,7 +41279,7 @@ end
 arch door_1
 x 76
 y 62
-no_pass 0
+move_block 0
 end
 arch woodfloor2
 name woodfloor
@@ -42514,7 +42514,7 @@ end
 arch door_2
 x 78
 y 59
-no_pass 0
+move_block 0
 end
 arch woodfloor2
 name woodfloor
@@ -43761,7 +43761,7 @@ end
 arch door_1
 x 80
 y 56
-no_pass 0
+move_block 0
 end
 arch woodfloor2
 name woodfloor
@@ -44438,7 +44438,7 @@ end
 arch door_2
 x 81
 y 59
-no_pass 0
+move_block 0
 end
 arch woodfloor2
 name woodfloor
@@ -47657,7 +47657,7 @@ end
 arch door_2
 x 86
 y 62
-no_pass 0
+move_block 0
 end
 arch woodfloor2
 name woodfloor

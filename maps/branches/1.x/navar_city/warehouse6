@@ -2596,7 +2596,7 @@ end
 arch wwall_2_1_1
 x 15
 y 4
-no_pass 0
+move_block 0
 end
 arch woodfloor
 x 15
@@ -2957,7 +2957,7 @@ end
 arch wwall_2_1_2
 x 17
 y 5
-no_pass 0
+move_block 0
 end
 arch woodfloor
 x 17
@@ -3222,7 +3222,7 @@ end
 arch wwall_2_1_1
 x 19
 y 1
-no_pass 0
+move_block 0
 end
 arch woodfloor
 x 19

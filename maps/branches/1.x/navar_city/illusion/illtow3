@@ -1101,7 +1101,7 @@ end
 arch rough_wall_2_1_2
 x 8
 y 15
-no_pass 0
+move_block 0
 end
 arch large_stones
 x 8
@@ -1331,7 +1331,7 @@ end
 arch rough_wall_2_1_2
 x 10
 y 15
-no_pass 0
+move_block 0
 end
 arch large_stones
 x 10
@@ -1596,7 +1596,7 @@ end
 arch rough_wall_2_1_2
 x 12
 y 15
-no_pass 0
+move_block 0
 end
 arch large_stones
 x 12
