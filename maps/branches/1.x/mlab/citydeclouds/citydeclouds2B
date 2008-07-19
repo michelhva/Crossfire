@@ -4429,7 +4429,7 @@ end
 arch door_1
 x 11
 y 10
-no_pass 0
+move_block 0
 end
 arch flagstone
 x 11
@@ -4438,7 +4438,7 @@ end
 arch door_1
 x 11
 y 11
-no_pass 0
+move_block 0
 end
 arch flagstone
 x 11
@@ -13274,7 +13274,7 @@ name stout tree
 name_pl stout tree
 x 34
 y 2
-no_pass 1
+move_block all
 end
 arch brush
 x 34
@@ -13293,7 +13293,7 @@ name stout tree
 name_pl stout tree
 x 34
 y 5
-no_pass 1
+move_block all
 end
 arch brush
 x 34
@@ -13312,7 +13312,7 @@ name stout tree
 name_pl stout tree
 x 34
 y 8
-no_pass 1
+move_block all
 end
 arch brush
 x 34
@@ -14286,7 +14286,7 @@ name stout tree
 name_pl stout tree
 x 35
 y 30
-no_pass 1
+move_block all
 end
 arch brush
 x 35
@@ -14522,7 +14522,7 @@ name stout tree
 name_pl stout tree
 x 36
 y 3
-no_pass 1
+move_block all
 end
 arch brush
 x 36
@@ -14541,7 +14541,7 @@ name stout tree
 name_pl stout tree
 x 36
 y 6
-no_pass 1
+move_block all
 end
 arch brush
 x 36
@@ -15024,7 +15024,7 @@ arch tree3
 name stout tree
 name_pl stout tree
 x 37
-no_pass 1
+move_block all
 end
 arch brush
 x 37
@@ -15047,7 +15047,7 @@ name stout tree
 name_pl stout tree
 x 37
 y 4
-no_pass 1
+move_block all
 end
 arch brush
 x 37
@@ -15074,7 +15074,7 @@ name stout tree
 name_pl stout tree
 x 37
 y 9
-no_pass 1
+move_block all
 end
 arch brush
 x 37
@@ -18008,7 +18008,7 @@ end
 arch table_3
 x 43
 y 31
-no_pass 1
+move_block all
 end
 arch dungeon_magic
 x 43
@@ -18487,7 +18487,7 @@ end
 arch table_3
 x 44
 y 30
-no_pass 1
+move_block all
 end
 arch dungeon_magic
 x 44
@@ -18500,7 +18500,7 @@ end
 arch table_3
 x 44
 y 31
-no_pass 1
+move_block all
 end
 arch dungeon_magic
 x 44
