@@ -3,13 +3,13 @@ name Dried Up Well
 reset_timeout 7200
 difficulty 1
 darkness 3
-width 64
+width 53
 height 51
 enter_x 1
 enter_y 1
 msg
 Created:  2004-08-03 Mikeeusa
-Modified: 2008-05-31 Rick Tanner
+Modified: 2008-05-29 Arvid Norlander
 endmsg
 end
 arch blocked
@@ -8903,48 +8903,4 @@ end
 arch blocked
 x 52
 y 36
-end
-arch blocked
-x 53
-y 20
-end
-arch blocked
-x 54
-y 20
-end
-arch blocked
-x 55
-y 20
-end
-arch blocked
-x 56
-y 20
-end
-arch blocked
-x 57
-y 20
-end
-arch blocked
-x 58
-y 20
-end
-arch blocked
-x 59
-y 20
-end
-arch blocked
-x 60
-y 20
-end
-arch blocked
-x 61
-y 20
-end
-arch blocked
-x 62
-y 20
-end
-arch blocked
-x 63
-y 20
 end
