@@ -9,12 +9,12 @@ shopmin 1
 shopmax 50000
 shoprace human
 width 29
-height 64
+height 25
 enter_x 1
 enter_y 1
 msg
 Created:  2004-08-03 Mikeeusa
-Modified: 2008-05-31 Rick Tanner
+Modified: 2008-05-28 Arvid Norlander
 endmsg
 end
 arch dungeon_magic
@@ -347,24 +347,6 @@ y 23
 end
 arch blocked
 y 24
-end
-arch dungeon_magic
-y 61
-end
-arch blocked
-y 61
-end
-arch dungeon_magic
-y 62
-end
-arch blocked
-y 62
-end
-arch dungeon_magic
-y 63
-end
-arch blocked
-y 63
 end
 arch dungeon_magic
 x 1
@@ -911,47 +893,6 @@ x 1
 y 24
 end
 arch dungeon_magic
-x 1
-y 61
-end
-arch blocked
-x 1
-y 61
-end
-arch dungeon_magic
-x 1
-y 62
-end
-arch dungeon_floor
-x 1
-y 62
-end
-arch button_plate
-x 1
-y 62
-connected 5
-end
-arch grate_closed_2
-x 1
-y 62
-speed 0.500000
-connected 4
-end
-arch grate_closed_2
-x 1
-y 62
-speed 0.500000
-connected 3
-end
-arch dungeon_magic
-x 1
-y 63
-end
-arch blocked
-x 1
-y 63
-end
-arch dungeon_magic
 x 2
 end
 arch stonefloor2
@@ -1384,52 +1325,6 @@ end
 arch blocked
 x 2
 y 24
-end
-arch dungeon_magic
-x 2
-y 61
-end
-arch blocked
-x 2
-y 61
-end
-arch dungeon_magic
-x 2
-y 62
-end
-arch dungeon_floor
-x 2
-y 62
-end
-arch spikes_open
-x 2
-y 62
-speed 0.500000
-value 1
-connected 4
-end
-arch spikes_open
-x 2
-y 62
-speed 0.500000
-value 1
-connected 3
-end
-arch button_plate
-x 2
-y 62
-end
-arch boulder
-x 2
-y 62
-end
-arch dungeon_magic
-x 2
-y 63
-end
-arch blocked
-x 2
-y 63
 end
 arch dungeon_magic
 x 3
@@ -1926,30 +1821,6 @@ end
 arch blocked
 x 3
 y 24
-end
-arch dungeon_magic
-x 3
-y 61
-end
-arch blocked
-x 3
-y 61
-end
-arch dungeon_magic
-x 3
-y 62
-end
-arch blocked
-x 3
-y 62
-end
-arch dungeon_magic
-x 3
-y 63
-end
-arch blocked
-x 3
-y 63
 end
 arch dungeon_magic
 x 4
