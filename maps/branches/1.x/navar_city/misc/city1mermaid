@@ -6,6 +6,7 @@ width 21
 height 13
 msg
 Created:  1993-10-27
+Modified: 2008-05-23 Arvid Norlander
 endmsg
 end
 arch woodfloor
@@ -746,16 +747,16 @@ end
 arch fighter
 name TCI Representative
 msg
-@match TCI|tci
+@match tci
 Training Centers Incorporated is the best dang training
 you'll ever get. We have locations all over the world in
 exotic settings. Come fight with us! (heh, they tell us we
 have to say all that)
-@match Location|location
+@match location
 Well, I don't know about all of them. But our local TCI
 is off the road north of here. Just head north for Darcap
 and look for one of our signs!
-@match Hello|hello|Hi|hi
+@match hello|hi
 Well, hello there! Sit down and chat with me a bit. I am
 always looking for new people to tell about TCI.
 @match *
@@ -848,7 +849,7 @@ title the barkeep
 msg
 @match *
 What a rowdy lot!
-@match Rhyz|rhyz
+@match rhyz
 One of the rooms has stairs leading where you want to go.
 endmsg
 x 8
