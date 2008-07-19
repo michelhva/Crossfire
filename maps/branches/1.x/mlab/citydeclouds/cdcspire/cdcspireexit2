@@ -2,13 +2,14 @@ arch map
 name City de Clouds Spire
 reset_timeout 7200
 difficulty 1
+region citydeclouds
 width 5
 height 5
 enter_x 1
 enter_y 1
 msg
 Created:  2004-02-27 mikeeusa
-Modified: 2008-05-31 Rick Tanner
+Modified: 2008-05-29 Arvid Norlander
 endmsg
 end
 arch blocked
