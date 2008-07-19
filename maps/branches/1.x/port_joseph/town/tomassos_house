@@ -566,7 +566,7 @@ end
 arch door_look_2
 x 5
 y 11
-no_pass 0
+move_block 0
 end
 arch woodfloor2
 x 5
@@ -892,7 +892,7 @@ end
 arch door_look_1
 x 8
 y 13
-no_pass 0
+move_block 0
 end
 arch woodfloor2
 x 8
@@ -1127,7 +1127,7 @@ end
 arch door_look_2
 x 10
 y 17
-no_pass 0
+move_block 0
 end
 arch woodfloor2
 x 10
@@ -1837,7 +1837,7 @@ end
 arch door_2
 x 17
 y 19
-no_pass 0
+move_block 0
 end
 arch sea
 x 18
