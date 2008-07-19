@@ -20004,7 +20004,7 @@ y 25
 end
 arch magic_ear
 msg
-@match no|No
+@match no
 endmsg
 x 42
 y 25
@@ -20012,7 +20012,7 @@ connected 7703
 end
 arch magic_ear
 msg
-@match yes|Yes
+@match yes
 endmsg
 x 42
 y 25
@@ -20043,7 +20043,7 @@ fair city? There are troubling matters at
 hand.
 Do you accept this tenure that I am about
 to bestow upon you?
-@match yes|Yes
+@match yes
 Lying outside the city walls just
 under the cloud surface is a well
 hidden strike force of dragons
