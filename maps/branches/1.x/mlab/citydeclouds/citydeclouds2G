@@ -4899,6 +4899,10 @@ arch cwall_2_2_4
 x 10
 y 22
 end
+arch dungeon_magic
+x 10
+y 23
+end
 arch flagstone
 name floor
 name_pl floor
@@ -4911,10 +4915,6 @@ x 10
 y 23
 speed 0.500000
 connected 10421
-end
-arch dungeon_magic
-x 10
-y 23
 end
 arch flagstone
 name floor
@@ -7616,6 +7616,10 @@ arch dungeon_magic
 x 15
 y 19
 end
+arch dungeon_magic
+x 15
+y 20
+end
 arch grass
 x 15
 y 20
@@ -7625,10 +7629,6 @@ x 15
 y 20
 speed 0.500000
 connected 10422
-end
-arch dungeon_magic
-x 15
-y 20
 end
 arch dungeon_floor
 x 15
@@ -15727,6 +15727,10 @@ arch dungeon_magic
 x 29
 y 19
 end
+arch dungeon_magic
+x 29
+y 20
+end
 arch grass
 x 29
 y 20
@@ -15736,10 +15740,6 @@ x 29
 y 20
 speed 0.500000
 connected 1042
-end
-arch dungeon_magic
-x 29
-y 20
 end
 arch dungeon_floor
 x 29
