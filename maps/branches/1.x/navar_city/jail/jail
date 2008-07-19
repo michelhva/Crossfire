@@ -8,7 +8,7 @@ height 16
 enter_y 7
 msg
 Created:  2001-02-17
-Modified: 2008-05-31 Rick Tanner
+Modified: 2008-06-03 Arvid Norlander
 endmsg
 end
 arch dungeon_magic
@@ -179,10 +179,6 @@ end
 arch westcwall_2_1_2
 x 1
 end
-arch dungeon_magic
-x 1
-y 1
-end
 arch check_inv
 slaying prisoner
 x 1
@@ -202,10 +198,6 @@ arch bed_save
 x 1
 y 1
 end
-arch dungeon_magic
-x 1
-y 2
-end
 arch check_inv
 slaying prisoner
 x 1
@@ -221,10 +213,6 @@ arch flagstone
 x 1
 y 2
 end
-arch dungeon_magic
-x 1
-y 3
-end
 arch check_inv
 slaying prisoner
 x 1
@@ -239,10 +227,6 @@ end
 arch flagstone
 x 1
 y 3
-end
-arch dungeon_magic
-x 1
-y 4
 end
 arch check_inv
 slaying prisoner
@@ -307,10 +291,6 @@ arch swall_1_3
 x 1
 y 9
 end
-arch dungeon_magic
-x 1
-y 10
-end
 arch check_inv
 slaying prisoner
 x 1
@@ -325,10 +305,6 @@ end
 arch flagstone
 x 1
 y 10
-end
-arch dungeon_magic
-x 1
-y 11
 end
 arch check_inv
 slaying prisoner
@@ -345,10 +321,6 @@ arch flagstone
 x 1
 y 11
 end
-arch dungeon_magic
-x 1
-y 12
-end
 arch check_inv
 slaying prisoner
 x 1
@@ -363,10 +335,6 @@ end
 arch flagstone
 x 1
 y 12
-end
-arch dungeon_magic
-x 1
-y 13
 end
 arch check_inv
 slaying prisoner
@@ -374,6 +342,10 @@ x 1
 y 13
 last_sp 0
 connected 15
+end
+arch dungeon_magic
+x 1
+y 13
 end
 arch flagstone
 x 1
@@ -412,10 +384,6 @@ end
 arch westcwall_2_1_2
 x 2
 end
-arch dungeon_magic
-x 2
-y 1
-end
 arch check_inv
 slaying prisoner
 x 2
@@ -431,10 +399,6 @@ arch flagstone
 x 2
 y 1
 end
-arch dungeon_magic
-x 2
-y 2
-end
 arch check_inv
 slaying prisoner
 x 2
@@ -449,10 +413,6 @@ end
 arch flagstone
 x 2
 y 2
-end
-arch dungeon_magic
-x 2
-y 3
 end
 arch check_inv
 slaying prisoner
@@ -478,10 +438,6 @@ arch flagstone
 x 2
 y 3
 end
-arch dungeon_magic
-x 2
-y 4
-end
 arch check_inv
 slaying prisoner
 x 2
@@ -496,10 +452,6 @@ end
 arch flagstone
 x 2
 y 4
-end
-arch dungeon_magic
-x 2
-y 5
 end
 arch check_inv
 slaying prisoner
@@ -520,10 +472,6 @@ arch igateTrg1
 x 2
 y 5
 connected 16
-end
-arch dungeon_magic
-x 2
-y 6
 end
 arch check_inv
 slaying jailkey
@@ -547,10 +495,6 @@ arch flagstone
 x 2
 y 7
 end
-arch dungeon_magic
-x 2
-y 8
-end
 arch check_inv
 slaying jailkey
 x 2
@@ -564,10 +508,6 @@ end
 arch flagstone
 x 2
 y 8
-end
-arch dungeon_magic
-x 2
-y 9
 end
 arch check_inv
 slaying prisoner
@@ -589,10 +529,6 @@ x 2
 y 9
 connected 15
 end
-arch dungeon_magic
-x 2
-y 10
-end
 arch check_inv
 slaying prisoner
 x 2
@@ -607,10 +543,6 @@ end
 arch flagstone
 x 2
 y 10
-end
-arch dungeon_magic
-x 2
-y 11
 end
 arch check_inv
 slaying prisoner
@@ -636,10 +568,6 @@ arch flagstone
 x 2
 y 11
 end
-arch dungeon_magic
-x 2
-y 12
-end
 arch check_inv
 slaying prisoner
 x 2
@@ -654,10 +582,6 @@ end
 arch flagstone
 x 2
 y 12
-end
-arch dungeon_magic
-x 2
-y 13
 end
 arch check_inv
 slaying prisoner
@@ -705,10 +629,6 @@ x 3
 end
 arch westcwall_2_1_2
 x 3
-end
-arch dungeon_magic
-x 3
-y 1
 end
 arch check_inv
 slaying prisoner
@@ -743,10 +663,6 @@ arch table_4
 x 3
 y 1
 end
-arch dungeon_magic
-x 3
-y 2
-end
 arch check_inv
 slaying prisoner
 x 3
@@ -762,10 +678,6 @@ arch flagstone
 x 3
 y 2
 end
-arch dungeon_magic
-x 3
-y 3
-end
 arch check_inv
 slaying prisoner
 x 3
@@ -780,10 +692,6 @@ end
 arch flagstone
 x 3
 y 3
-end
-arch dungeon_magic
-x 3
-y 4
 end
 arch check_inv
 slaying prisoner
@@ -847,10 +755,6 @@ end
 arch swall_1_4
 x 3
 y 9
-end
-arch dungeon_magic
-x 3
-y 10
 end
 arch check_inv
 slaying prisoner
@@ -874,10 +778,6 @@ x 3
 y 10
 no_pick 1
 end
-arch dungeon_magic
-x 3
-y 11
-end
 arch check_inv
 slaying prisoner
 x 3
@@ -893,10 +793,6 @@ arch flagstone
 x 3
 y 11
 end
-arch dungeon_magic
-x 3
-y 12
-end
 arch check_inv
 slaying prisoner
 x 3
@@ -911,10 +807,6 @@ end
 arch flagstone
 x 3
 y 12
-end
-arch dungeon_magic
-x 3
-y 13
 end
 arch check_inv
 slaying prisoner
@@ -1182,10 +1074,6 @@ end
 arch westcwall_2_1_2
 x 5
 end
-arch dungeon_magic
-x 5
-y 1
-end
 arch check_inv
 slaying prisoner
 x 5
@@ -1205,10 +1093,6 @@ arch bed_save
 x 5
 y 1
 end
-arch dungeon_magic
-x 5
-y 2
-end
 arch check_inv
 slaying prisoner
 x 5
@@ -1224,10 +1108,6 @@ arch flagstone
 x 5
 y 2
 end
-arch dungeon_magic
-x 5
-y 3
-end
 arch check_inv
 slaying prisoner
 x 5
@@ -1242,10 +1122,6 @@ end
 arch flagstone
 x 5
 y 3
-end
-arch dungeon_magic
-x 5
-y 4
 end
 arch check_inv
 slaying prisoner
@@ -1310,10 +1186,6 @@ arch swall_1_3
 x 5
 y 9
 end
-arch dungeon_magic
-x 5
-y 10
-end
 arch check_inv
 slaying prisoner
 x 5
@@ -1328,10 +1200,6 @@ end
 arch flagstone
 x 5
 y 10
-end
-arch dungeon_magic
-x 5
-y 11
 end
 arch check_inv
 slaying prisoner
@@ -1348,10 +1216,6 @@ arch flagstone
 x 5
 y 11
 end
-arch dungeon_magic
-x 5
-y 12
-end
 arch check_inv
 slaying prisoner
 x 5
@@ -1366,10 +1230,6 @@ end
 arch flagstone
 x 5
 y 12
-end
-arch dungeon_magic
-x 5
-y 13
 end
 arch check_inv
 slaying prisoner
@@ -1423,10 +1283,6 @@ end
 arch westcwall_2_1_2
 x 6
 end
-arch dungeon_magic
-x 6
-y 1
-end
 arch check_inv
 slaying prisoner
 x 6
@@ -1442,10 +1298,6 @@ arch flagstone
 x 6
 y 1
 end
-arch dungeon_magic
-x 6
-y 2
-end
 arch check_inv
 slaying prisoner
 x 6
@@ -1460,10 +1312,6 @@ end
 arch flagstone
 x 6
 y 2
-end
-arch dungeon_magic
-x 6
-y 3
 end
 arch check_inv
 slaying prisoner
@@ -1489,10 +1337,6 @@ arch flagstone
 x 6
 y 3
 end
-arch dungeon_magic
-x 6
-y 4
-end
 arch check_inv
 slaying prisoner
 x 6
@@ -1507,10 +1351,6 @@ end
 arch flagstone
 x 6
 y 4
-end
-arch dungeon_magic
-x 6
-y 5
 end
 arch check_inv
 slaying prisoner
@@ -1531,10 +1371,6 @@ arch igateTrg1
 x 6
 y 5
 connected 14
-end
-arch dungeon_magic
-x 6
-y 6
 end
 arch check_inv
 slaying jailkey
@@ -1558,10 +1394,6 @@ arch flagstone
 x 6
 y 7
 end
-arch dungeon_magic
-x 6
-y 8
-end
 arch check_inv
 slaying jailkey
 x 6
@@ -1575,10 +1407,6 @@ end
 arch flagstone
 x 6
 y 8
-end
-arch dungeon_magic
-x 6
-y 9
 end
 arch check_inv
 slaying prisoner
@@ -1600,10 +1428,6 @@ x 6
 y 9
 connected 13
 end
-arch dungeon_magic
-x 6
-y 10
-end
 arch check_inv
 slaying prisoner
 x 6
@@ -1618,10 +1442,6 @@ end
 arch flagstone
 x 6
 y 10
-end
-arch dungeon_magic
-x 6
-y 11
 end
 arch check_inv
 slaying prisoner
@@ -1647,10 +1467,6 @@ arch flagstone
 x 6
 y 11
 end
-arch dungeon_magic
-x 6
-y 12
-end
 arch check_inv
 slaying prisoner
 x 6
@@ -1665,10 +1481,6 @@ end
 arch flagstone
 x 6
 y 12
-end
-arch dungeon_magic
-x 6
-y 13
 end
 arch check_inv
 slaying prisoner
@@ -1716,10 +1528,6 @@ x 7
 end
 arch westcwall_2_1_2
 x 7
-end
-arch dungeon_magic
-x 7
-y 1
 end
 arch check_inv
 slaying prisoner
@@ -1754,10 +1562,6 @@ arch table_4
 x 7
 y 1
 end
-arch dungeon_magic
-x 7
-y 2
-end
 arch check_inv
 slaying prisoner
 x 7
@@ -1773,10 +1577,6 @@ arch flagstone
 x 7
 y 2
 end
-arch dungeon_magic
-x 7
-y 3
-end
 arch check_inv
 slaying prisoner
 x 7
@@ -1791,10 +1591,6 @@ end
 arch flagstone
 x 7
 y 3
-end
-arch dungeon_magic
-x 7
-y 4
 end
 arch check_inv
 slaying prisoner
@@ -1859,10 +1655,6 @@ arch swall_1_4
 x 7
 y 9
 end
-arch dungeon_magic
-x 7
-y 10
-end
 arch check_inv
 slaying prisoner
 x 7
@@ -1877,10 +1669,6 @@ end
 arch flagstone
 x 7
 y 10
-end
-arch dungeon_magic
-x 7
-y 11
 end
 arch check_inv
 slaying prisoner
@@ -1897,10 +1685,6 @@ arch flagstone
 x 7
 y 11
 end
-arch dungeon_magic
-x 7
-y 12
-end
 arch check_inv
 slaying prisoner
 x 7
@@ -1915,10 +1699,6 @@ end
 arch flagstone
 x 7
 y 12
-end
-arch dungeon_magic
-x 7
-y 13
 end
 arch check_inv
 slaying prisoner
@@ -2186,10 +1966,6 @@ end
 arch westcwall_2_1_2
 x 9
 end
-arch dungeon_magic
-x 9
-y 1
-end
 arch check_inv
 slaying prisoner
 x 9
@@ -2209,10 +1985,6 @@ arch bed_save
 x 9
 y 1
 end
-arch dungeon_magic
-x 9
-y 2
-end
 arch check_inv
 slaying prisoner
 x 9
@@ -2228,10 +2000,6 @@ arch flagstone
 x 9
 y 2
 end
-arch dungeon_magic
-x 9
-y 3
-end
 arch check_inv
 slaying prisoner
 x 9
@@ -2246,10 +2014,6 @@ end
 arch flagstone
 x 9
 y 3
-end
-arch dungeon_magic
-x 9
-y 4
 end
 arch check_inv
 slaying prisoner
@@ -2314,10 +2078,6 @@ arch swall_1_3
 x 9
 y 9
 end
-arch dungeon_magic
-x 9
-y 10
-end
 arch check_inv
 slaying prisoner
 x 9
@@ -2332,10 +2092,6 @@ end
 arch flagstone
 x 9
 y 10
-end
-arch dungeon_magic
-x 9
-y 11
 end
 arch check_inv
 slaying prisoner
@@ -2352,10 +2108,6 @@ arch flagstone
 x 9
 y 11
 end
-arch dungeon_magic
-x 9
-y 12
-end
 arch check_inv
 slaying prisoner
 x 9
@@ -2370,10 +2122,6 @@ end
 arch flagstone
 x 9
 y 12
-end
-arch dungeon_magic
-x 9
-y 13
 end
 arch check_inv
 slaying prisoner
@@ -2427,10 +2175,6 @@ end
 arch westcwall_2_1_2
 x 10
 end
-arch dungeon_magic
-x 10
-y 1
-end
 arch check_inv
 slaying prisoner
 x 10
@@ -2446,10 +2190,6 @@ arch flagstone
 x 10
 y 1
 end
-arch dungeon_magic
-x 10
-y 2
-end
 arch check_inv
 slaying prisoner
 x 10
@@ -2464,10 +2204,6 @@ end
 arch flagstone
 x 10
 y 2
-end
-arch dungeon_magic
-x 10
-y 3
 end
 arch check_inv
 slaying prisoner
@@ -2493,10 +2229,6 @@ arch flagstone
 x 10
 y 3
 end
-arch dungeon_magic
-x 10
-y 4
-end
 arch check_inv
 slaying prisoner
 x 10
@@ -2511,10 +2243,6 @@ end
 arch flagstone
 x 10
 y 4
-end
-arch dungeon_magic
-x 10
-y 5
 end
 arch check_inv
 slaying prisoner
@@ -2535,10 +2263,6 @@ arch igateTrg1
 x 10
 y 5
 connected 12
-end
-arch dungeon_magic
-x 10
-y 6
 end
 arch check_inv
 slaying jailkey
@@ -2562,10 +2286,6 @@ arch flagstone
 x 10
 y 7
 end
-arch dungeon_magic
-x 10
-y 8
-end
 arch check_inv
 slaying jailkey
 x 10
@@ -2579,10 +2299,6 @@ end
 arch flagstone
 x 10
 y 8
-end
-arch dungeon_magic
-x 10
-y 9
 end
 arch check_inv
 slaying prisoner
@@ -2604,10 +2320,6 @@ x 10
 y 9
 connected 11
 end
-arch dungeon_magic
-x 10
-y 10
-end
 arch check_inv
 slaying prisoner
 x 10
@@ -2622,10 +2334,6 @@ end
 arch flagstone
 x 10
 y 10
-end
-arch dungeon_magic
-x 10
-y 11
 end
 arch check_inv
 slaying prisoner
@@ -2651,10 +2359,6 @@ arch flagstone
 x 10
 y 11
 end
-arch dungeon_magic
-x 10
-y 12
-end
 arch check_inv
 slaying prisoner
 x 10
@@ -2669,10 +2373,6 @@ end
 arch flagstone
 x 10
 y 12
-end
-arch dungeon_magic
-x 10
-y 13
 end
 arch check_inv
 slaying prisoner
@@ -2720,10 +2420,6 @@ x 11
 end
 arch westcwall_2_1_2
 x 11
-end
-arch dungeon_magic
-x 11
-y 1
 end
 arch check_inv
 slaying prisoner
@@ -2846,10 +2542,6 @@ arch swall_1_4
 x 11
 y 9
 end
-arch dungeon_magic
-x 11
-y 10
-end
 arch check_inv
 slaying prisoner
 x 11
@@ -2864,10 +2556,6 @@ end
 arch flagstone
 x 11
 y 10
-end
-arch dungeon_magic
-x 11
-y 11
 end
 arch check_inv
 slaying prisoner
@@ -2884,10 +2572,6 @@ arch flagstone
 x 11
 y 11
 end
-arch dungeon_magic
-x 11
-y 12
-end
 arch check_inv
 slaying prisoner
 x 11
@@ -2902,10 +2586,6 @@ end
 arch flagstone
 x 11
 y 12
-end
-arch dungeon_magic
-x 11
-y 13
 end
 arch check_inv
 slaying prisoner
@@ -3687,10 +3367,6 @@ end
 arch blocked
 x 16
 end
-arch dungeon_magic
-x 16
-y 1
-end
 arch magic_mouth
 msg
 You have been jailed for 15 minutes
@@ -3736,10 +3412,6 @@ arch blocked
 x 16
 y 2
 end
-arch dungeon_magic
-x 16
-y 3
-end
 arch magic_mouth
 msg
 You have been jailed for 30 minutes
@@ -3784,10 +3456,6 @@ end
 arch blocked
 x 16
 y 4
-end
-arch dungeon_magic
-x 16
-y 5
 end
 arch magic_mouth
 msg
@@ -3861,10 +3529,6 @@ arch blocked
 x 16
 y 8
 end
-arch dungeon_magic
-x 16
-y 9
-end
 arch magic_mouth
 msg
 You have been jailed for 2 hours
@@ -3910,10 +3574,6 @@ arch blocked
 x 16
 y 10
 end
-arch dungeon_magic
-x 16
-y 11
-end
 arch magic_mouth
 msg
 You have been jailed for 4 hours
@@ -3957,10 +3617,6 @@ end
 arch blocked
 x 16
 y 12
-end
-arch dungeon_magic
-x 16
-y 13
 end
 arch magic_mouth
 msg
