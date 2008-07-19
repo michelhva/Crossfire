@@ -1,5 +1,6 @@
 arch map
 name upper
+difficulty 1
 region navar
 width 20
 height 17
@@ -7,7 +8,7 @@ enter_x 12
 enter_y 11
 msg
 Created:  2002-01-11
-Modified: 2008-05-31 Rick Tanner
+Modified: 2008-07-17 Arvid Norlander
 endmsg
 end
 arch woodfloor
@@ -3171,7 +3172,6 @@ hp 0
 sp 0
 x 18
 y 9
-move_on 0
 end
 arch blocked
 x 18
