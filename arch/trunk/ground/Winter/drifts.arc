@@ -9,6 +9,6 @@ move_slow walk
 move_slow_penalty 3
 is_floor 1
 magicmap white
-smoothface drift.111 empty_S.111
+smoothface drifts.111 empty_S.111
 smoothlevel 24
 end
