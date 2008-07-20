@@ -10,6 +10,6 @@ move_slow walk
 move_slow_penalty 3
 is_wooded 1
 smoothlevel 125
-smoothface evergreens_1.111 empty_S.111
+smoothface evergreens_2.111 empty_S.111
 move_block boat swim
 end
