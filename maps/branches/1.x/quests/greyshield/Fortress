@@ -7,7 +7,7 @@ enter_x 16
 enter_y 30
 msg
 Created:  1996-09-24 Chris Jeske
-Modified: 2007-11-04 Andreas Kirschbaum
+Modified: 2008-06-12 Arvid Norlander
 endmsg
 end
 arch marble
@@ -831,57 +831,29 @@ arch cwall_2_1_2
 x 4
 y 20
 end
-arch marble
-x 4
-y 21
-end
 arch shop_books
 x 4
 y 21
 end
-arch marble
+arch shop_books
 x 4
 y 22
 end
 arch shop_books
 x 4
-y 22
-end
-arch marble
-x 4
 y 23
 end
 arch shop_books
-x 4
-y 23
-end
-arch marble
 x 4
 y 24
 end
 arch shop_books
 x 4
-y 24
-end
-arch marble
-x 4
 y 25
 end
 arch shop_books
 x 4
-y 25
-end
-arch marble
-x 4
 y 26
-end
-arch shop_books
-x 4
-y 26
-end
-arch marble
-x 4
-y 27
 end
 arch shop_books
 x 4
@@ -1017,17 +989,9 @@ arch cwall_2_1_2
 x 5
 y 20
 end
-arch marble
-x 5
-y 21
-end
 arch shop_books
 x 5
 y 21
-end
-arch marble
-x 5
-y 22
 end
 arch shop_empty
 x 5
@@ -1037,41 +1001,21 @@ arch shop_mat
 x 5
 y 22
 end
-arch marble
-x 5
-y 23
-end
 arch shop_empty
 x 5
 y 23
 end
-arch marble
+arch shop_empty
 x 5
 y 24
 end
 arch shop_empty
 x 5
-y 24
-end
-arch marble
-x 5
 y 25
 end
 arch shop_empty
 x 5
-y 25
-end
-arch marble
-x 5
 y 26
-end
-arch shop_empty
-x 5
-y 26
-end
-arch marble
-x 5
-y 27
 end
 arch shop_books
 x 5
@@ -1251,33 +1195,17 @@ arch cwall_1_4
 x 6
 y 23
 end
-arch marble
+arch shop_books
 x 6
 y 24
 end
 arch shop_books
 x 6
-y 24
-end
-arch marble
-x 6
 y 25
-end
-arch shop_books
-x 6
-y 25
-end
-arch marble
-x 6
-y 26
 end
 arch shop_empty
 x 6
 y 26
-end
-arch marble
-x 6
-y 27
 end
 arch shop_books
 x 6
@@ -1441,33 +1369,17 @@ arch cwall_2_1_2
 x 7
 y 23
 end
-arch marble
+arch shop_books
 x 7
 y 24
 end
 arch shop_books
 x 7
-y 24
-end
-arch marble
-x 7
 y 25
-end
-arch shop_books
-x 7
-y 25
-end
-arch marble
-x 7
-y 26
 end
 arch shop_empty
 x 7
 y 26
-end
-arch marble
-x 7
-y 27
 end
 arch shop_books
 x 7
@@ -1623,33 +1535,17 @@ arch cwall_2_1_2
 x 8
 y 23
 end
-arch marble
+arch shop_books
 x 8
 y 24
 end
 arch shop_books
 x 8
-y 24
-end
-arch marble
-x 8
 y 25
-end
-arch shop_books
-x 8
-y 25
-end
-arch marble
-x 8
-y 26
 end
 arch shop_empty
 x 8
 y 26
-end
-arch marble
-x 8
-y 27
 end
 arch shop_books
 x 8
@@ -1873,33 +1769,17 @@ arch cwall_2_1_2
 x 9
 y 23
 end
-arch marble
-x 9
-y 24
-end
 arch shop_books
 x 9
 y 24
 end
-arch marble
+arch shop_books
 x 9
 y 25
 end
 arch shop_books
 x 9
-y 25
-end
-arch marble
-x 9
 y 26
-end
-arch shop_books
-x 9
-y 26
-end
-arch marble
-x 9
-y 27
 end
 arch shop_books
 x 9
@@ -3265,16 +3145,16 @@ arch marble
 x 15
 y 25
 end
-arch marble
-x 15
-y 26
-end
 arch magic_ear
 msg
 @match altar|trigger
 The dragon appears to be daydreaming
 about a princess...
 endmsg
+x 15
+y 26
+end
+arch marble
 x 15
 y 26
 end
@@ -5459,25 +5339,13 @@ arch cwall_2_1_2
 x 25
 y 18
 end
-arch marble
+arch shop_potions
 x 25
 y 19
 end
 arch shop_potions
 x 25
-y 19
-end
-arch marble
-x 25
 y 20
-end
-arch shop_potions
-x 25
-y 20
-end
-arch marble
-x 25
-y 21
 end
 arch shop_potions
 x 25
@@ -5643,17 +5511,9 @@ level 10
 arch spell_create_fire_wall
 end
 end
-arch marble
-x 26
-y 13
-end
 arch shop_empty
 x 26
 y 13
-end
-arch marble
-x 26
-y 14
 end
 arch shop_empty
 x 26
@@ -5662,10 +5522,6 @@ end
 arch create_serpent_cloak
 x 26
 y 14
-end
-arch marble
-x 26
-y 15
 end
 arch shop_empty
 x 26
@@ -5711,25 +5567,13 @@ arch cwall_1_3
 x 26
 y 18
 end
-arch marble
+arch shop_potions
 x 26
 y 19
 end
 arch shop_potions
 x 26
-y 19
-end
-arch marble
-x 26
 y 20
-end
-arch shop_potions
-x 26
-y 20
-end
-arch marble
-x 26
-y 21
 end
 arch shop_potions
 x 26
@@ -5924,10 +5768,6 @@ arch cwall_2_1_2
 x 27
 y 12
 end
-arch marble
-x 27
-y 13
-end
 arch shop_empty
 x 27
 y 13
@@ -5936,10 +5776,6 @@ arch smith
 x 27
 y 13
 end
-arch marble
-x 27
-y 14
-end
 arch shop_empty
 x 27
 y 14
@@ -5947,10 +5783,6 @@ end
 arch create_mithril_ar_ele
 x 27
 y 14
-end
-arch marble
-x 27
-y 15
 end
 arch shop_empty
 x 27
@@ -5964,10 +5796,6 @@ arch swall_2_1_2
 x 27
 y 16
 end
-arch marble
-x 27
-y 17
-end
 arch shop_empty
 x 27
 y 17
@@ -5976,33 +5804,17 @@ arch shop_mat
 x 27
 y 17
 end
-arch marble
-x 27
-y 18
-end
 arch shop_potions
 x 27
 y 18
 end
-arch marble
+arch shop_potions
 x 27
 y 19
 end
 arch shop_potions
 x 27
-y 19
-end
-arch marble
-x 27
 y 20
-end
-arch shop_potions
-x 27
-y 20
-end
-arch marble
-x 27
-y 21
 end
 arch shop_potions
 x 27
@@ -6184,17 +5996,9 @@ level 10
 arch spell_create_fire_wall
 end
 end
-arch marble
-x 28
-y 13
-end
 arch shop_empty
 x 28
 y 13
-end
-arch marble
-x 28
-y 14
 end
 arch shop_empty
 x 28
@@ -6203,10 +6007,6 @@ end
 arch create_eyeshield
 x 28
 y 14
-end
-arch marble
-x 28
-y 15
 end
 arch shop_empty
 x 28
@@ -6220,41 +6020,21 @@ arch swall_2_1_2
 x 28
 y 16
 end
-arch marble
-x 28
-y 17
-end
 arch shop_empty
 x 28
 y 17
 end
-arch marble
-x 28
-y 18
-end
 arch shop_potions
 x 28
 y 18
 end
-arch marble
+arch shop_potions
 x 28
 y 19
 end
 arch shop_potions
 x 28
-y 19
-end
-arch marble
-x 28
 y 20
-end
-arch shop_potions
-x 28
-y 20
-end
-arch marble
-x 28
-y 21
 end
 arch shop_potions
 x 28
@@ -6438,10 +6218,6 @@ arch cwall_2_1_2
 x 29
 y 12
 end
-arch marble
-x 29
-y 13
-end
 arch shop_empty
 x 29
 y 13
@@ -6450,10 +6226,6 @@ arch smith
 x 29
 y 13
 end
-arch marble
-x 29
-y 14
-end
 arch shop_empty
 x 29
 y 14
@@ -6461,10 +6233,6 @@ end
 arch create_dragon_shield
 x 29
 y 14
-end
-arch marble
-x 29
-y 15
 end
 arch shop_empty
 x 29
@@ -6478,41 +6246,21 @@ arch swall_1_3
 x 29
 y 16
 end
-arch marble
-x 29
-y 17
-end
 arch shop_empty
 x 29
 y 17
 end
-arch marble
-x 29
-y 18
-end
 arch shop_potions
 x 29
 y 18
 end
-arch marble
+arch shop_potions
 x 29
 y 19
 end
 arch shop_potions
 x 29
-y 19
-end
-arch marble
-x 29
 y 20
-end
-arch shop_potions
-x 29
-y 20
-end
-arch marble
-x 29
-y 21
 end
 arch shop_potions
 x 29
@@ -6680,17 +6428,9 @@ level 10
 arch spell_create_fire_wall
 end
 end
-arch marble
-x 30
-y 13
-end
 arch shop_empty
 x 30
 y 13
-end
-arch marble
-x 30
-y 14
 end
 arch shop_empty
 x 30
@@ -6700,21 +6440,9 @@ arch create_dragon_mail
 x 30
 y 14
 end
-arch marble
-x 30
-y 15
-end
 arch shop_empty
 x 30
 y 15
-end
-arch marble
-x 30
-y 16
-end
-arch shop_empty
-x 30
-y 16
 end
 arch magic_mouth
 msg
@@ -6723,41 +6451,25 @@ endmsg
 x 30
 y 16
 end
-arch marble
+arch shop_empty
 x 30
-y 17
+y 16
 end
 arch shop_empty
 x 30
 y 17
 end
-arch marble
-x 30
-y 18
-end
 arch shop_potions
 x 30
 y 18
 end
-arch marble
+arch shop_potions
 x 30
 y 19
 end
 arch shop_potions
 x 30
-y 19
-end
-arch marble
-x 30
 y 20
-end
-arch shop_potions
-x 30
-y 20
-end
-arch marble
-x 30
-y 21
 end
 arch shop_potions
 x 30

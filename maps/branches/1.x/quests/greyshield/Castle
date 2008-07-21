@@ -2687,10 +2687,6 @@ arch dungeon_magic
 x 15
 y 23
 end
-arch cobblestones2
-x 15
-y 24
-end
 arch magic_ear
 msg
 @match Lothar
@@ -2700,6 +2696,10 @@ endmsg
 x 15
 y 24
 connected 1
+end
+arch cobblestones2
+x 15
+y 24
 end
 arch sea1
 name moat

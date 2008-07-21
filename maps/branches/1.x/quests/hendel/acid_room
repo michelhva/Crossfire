@@ -7,6 +7,7 @@ enter_x 10
 enter_y 49
 msg
 Created:  1993-11-17 Chris Hendelberg (hendel@ecst.csuchico.edu)
+Modified: 2008-05-06 Nicolas Weeger
 endmsg
 end
 arch blocked
@@ -1217,7 +1218,7 @@ end
 arch spell_sm_lightning
 end
 arch key2
-slaying set_individual_value ACID4
+slaying ACID4
 end
 end
 arch marble
@@ -2352,7 +2353,7 @@ can_use_weapon 1
 can_use_ring 1
 can_use_wand 1
 arch key2
-slaying set_individual_value ACID5
+slaying ACID5
 end
 end
 arch marble
@@ -3003,7 +3004,7 @@ x 10
 y 4
 end
 arch locked_door1
-slaying set_individual_value ACID5
+slaying ACID5
 x 10
 y 4
 end
@@ -3060,7 +3061,7 @@ x 10
 y 12
 end
 arch locked_door1
-slaying set_individual_value ACID4
+slaying ACID4
 x 10
 y 12
 end
@@ -3079,7 +3080,7 @@ x 10
 y 14
 end
 arch locked_door1
-slaying set_individual_value ACID3
+slaying ACID3
 x 10
 y 14
 blocksview 1
@@ -3130,7 +3131,7 @@ x 10
 y 23
 end
 arch locked_door1
-slaying set_individual_value ACID2
+slaying ACID2
 x 10
 y 23
 blocksview 1
@@ -3168,7 +3169,7 @@ end
 arch spell_sm_lightning
 end
 arch key2
-slaying set_individual_value ACID2
+slaying ACID2
 end
 end
 arch marble
@@ -3246,7 +3247,7 @@ x 10
 y 34
 end
 arch locked_door1
-slaying set_individual_value ACID1
+slaying ACID1
 x 10
 y 34
 blocksview 1
@@ -3257,7 +3258,7 @@ x 10
 y 35
 end
 arch key2
-slaying set_individual_value ACID1
+slaying ACID1
 x 10
 y 35
 end
@@ -4979,7 +4980,7 @@ end
 arch spell_mass_confusion
 end
 arch key2
-slaying set_individual_value ACID3
+slaying ACID3
 end
 end
 arch marble
