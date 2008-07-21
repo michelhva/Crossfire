@@ -6,7 +6,7 @@ width 22
 height 26
 msg
 Created:  1996-02-30
-Modified: 2008-05-31 Rick Tanner
+Modified: 2008-05-30 Andreas Kirschbaum
 endmsg
 end
 arch medium_stones
@@ -1373,7 +1373,7 @@ end
 arch sage
 name wise old man
 msg
-@match Ladder|ladder
+@match ladder
 You entered this cave by using a ladder,
 didn't you?
 @match *

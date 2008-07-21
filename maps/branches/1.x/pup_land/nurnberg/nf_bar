@@ -9,6 +9,7 @@ width 27
 height 20
 msg
 Created:  1996-02-10
+Modified: 2008-06-20 Arvid Norlander
 endmsg
 end
 arch cobblestones
@@ -3231,7 +3232,7 @@ y 12
 end
 arch conjurer
 msg
-@match Bauer|bauer
+@match bauer
 Bauer is a greedy and selfish person.
 After Dick built the castle for him,
 Bauer didn't pay enough money.
@@ -3246,7 +3247,7 @@ of Bauer.
 Dick is kinda sadistic sometimes.
 His dungeons are very tricky and
 dangerous. Be careful!
-@match yes|Yes
+@match yes
 You should try Dick's dungeons.
 @match *
 Hello!

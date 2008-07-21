@@ -6,6 +6,7 @@ width 16
 height 25
 msg
 Created:  1996-02-14
+Modified: 2008-06-20 Arvid Norlander
 endmsg
 end
 arch blocked
@@ -341,7 +342,7 @@ end
 arch guildmaster
 name Boss of the gang
 msg
-@match Nazgul|nazgul
+@match nazgul
 Nazgul is attacking Pupuly's tower.
 We cannot save Pupuly, Nazgul is too
 strong... Please look after Pupuly!

@@ -6,6 +6,7 @@ width 34
 height 16
 msg
 Created:  1996-02-28
+Modified: 2008-05-23 Arvid Norlander
 endmsg
 end
 arch cobblestones2
@@ -359,7 +360,7 @@ y 3
 end
 arch viking
 msg
-@match Liberation|liberation
+@match liberation
 Oops!
 @match *
 I cannot pass. Members of Liberation
@@ -652,9 +653,9 @@ arch guard
 msg
 @match Siegfried
 You may pass :-).
-@match yes|Yes
+@match yes
 Please bring up it.
-@match no|No
+@match no
 .. Are you a member of resistance,
 aren't you?
 @match *
@@ -1073,7 +1074,7 @@ arch guard
 msg
 @match yes|passport
 Please bring it up.
-@match no|No
+@match no
 .. So you're a member of resistance,
 aren't you?
 @match *
@@ -1258,7 +1259,7 @@ arch guard
 msg
 @match yes|passport
 Please bring it up.
-@match no|No
+@match no
 .. So you're a member of resistance,
 aren't you?
 @match *
@@ -1405,7 +1406,7 @@ arch guard
 msg
 @match yes|passport
 Please bring it up.
-@match no|No
+@match no
 .. So you're a member of resistance,
 aren't you?
 @match *
@@ -1497,7 +1498,7 @@ arch guard
 msg
 @match yes|passport
 Please bring it up.
-@match no|No
+@match no
 .. So you're a member of resistance,
 aren't you?
 @match *
@@ -1526,7 +1527,7 @@ arch guard
 msg
 @match yes|passport
 Please bring it up.
-@match no|No
+@match no
 .. So you're a member of resistance,
 aren't you?
 @match *
@@ -1561,7 +1562,7 @@ arch guard
 msg
 @match yes|passport
 Please bring it up.
-@match no|No
+@match no
 .. So you're a member of resistance,
 aren't you?
 @match *
@@ -1978,7 +1979,7 @@ arch guard
 msg
 @match yes|passport
 Please bring it up.
-@match no|No
+@match no
 .. So you're a member of resistance,
 aren't you?
 @match *

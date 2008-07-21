@@ -6,6 +6,7 @@ width 11
 height 13
 msg
 Created:  1996-02-27
+Modified: 2008-05-23 Arvid Norlander
 endmsg
 end
 arch pstone_4
@@ -506,23 +507,22 @@ end
 arch sage
 name Rufto
 msg
-@match WORD|word|holy|HOLY
+@match word|holy
 Oh. I forgot to tell you.
 The holy word is :
 SEVEN
 
-@match TEST|test
+@match test
 Yes. My test was over. You passed my
 test. Go next rayer, adventurer.
 
-@match GUARD|guard
-Yes. I TEST an adventurer whether he
+@match guard
+Yes. I test an adventurer whether he
 is enough to enter the heroes
 mousoleum.
 
 @match *
-Welcome. I am a GUARD of this ruin.
-
+Welcome. I am a guard of this ruin.
 endmsg
 hp 180
 x 6

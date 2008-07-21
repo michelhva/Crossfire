@@ -681,11 +681,11 @@ end
 arch bone_head
 name Bonehead
 msg
-@match yes|Yes
-I forbit you to pass!
-@match Prison|prison
+@match yes
+I forbid you to pass!
+@match prison
 Eureca's family lives in the prison.
-@match No|no
+@match no
 Good!
 Three toaches is required to go to
 prison.
