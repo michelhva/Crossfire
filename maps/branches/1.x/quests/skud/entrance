@@ -696,11 +696,11 @@ end
 arch lich
 name Guardian
 msg
-@match Skud|skud|great|Great
+@match skud|great
 Yes, he was one of the greatest wizards
 to walk this land. But he is no longer
 of this earth.
-@match Magic|wizard|Wizard
+@match Magic|wizard
 He summoned many creatures from the
 depths of the Abyss. I guard this
 entrance now, to insure that none of

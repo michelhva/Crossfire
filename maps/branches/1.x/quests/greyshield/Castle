@@ -6,6 +6,7 @@ enter_x 15
 enter_y 30
 msg
 Created:  1996-09-16 Chris Jeske
+Modified: 2008-06-06 Arvid Norlander
 endmsg
 end
 arch woods_3
@@ -1534,7 +1535,7 @@ arch dwarf_priest
 msg
 @match hi|hello
 Hi there.
-@match King|king|rey|hief|advisor|staff
+@match king|rey|hief|advisor|staff
 That advisor is good for nothing.
 If you want to see the Grey King, you must get the ring with his seal on it, and tell him the Chief of Staff sent you...
 @match seal|ring|see|sent
@@ -2818,7 +2819,7 @@ end
 arch guildmaster
 name Chief of Staff
 msg
-@match King|king|Grey|grey
+@match king|grey
 The king does not see visitors.
 Give me your request, and I will relay it to him.
 @match treasure|shield|secret
@@ -3927,7 +3928,7 @@ Hey there... How are you doing?
 That's good.
 @match bad|awful|tty|crappy|lousy
 Too bad. Tomorrow will be better...
-@match quest|shield|grey|Grey
+@match quest|shield|grey
 Ahh... I have heard the Grey King keeps his treasure in a secret underground fortress.
 @match underground|fortress|dungeon
 There is a passage from the dungeon to the underground caverns.
