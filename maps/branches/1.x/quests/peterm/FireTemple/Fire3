@@ -2408,7 +2408,7 @@ speed 0.000000
 type 20
 glow_radius 3
 move_type walk
-no_pass 1
+move_block all
 end
 arch pstone_1
 x 14
@@ -2429,7 +2429,7 @@ speed 0.000000
 type 20
 glow_radius 3
 move_type walk
-no_pass 1
+move_block all
 end
 arch pstone_1
 x 14
@@ -2450,7 +2450,7 @@ speed 0.000000
 type 20
 glow_radius 3
 move_type walk
-no_pass 1
+move_block all
 end
 arch pstone_1
 x 14
@@ -2471,7 +2471,7 @@ speed 0.000000
 type 20
 glow_radius 3
 move_type walk
-no_pass 1
+move_block all
 end
 arch pstone_1
 x 14
@@ -2492,7 +2492,7 @@ speed 0.000000
 type 20
 glow_radius 3
 move_type walk
-no_pass 1
+move_block all
 end
 arch pstone_1
 x 14
@@ -4653,7 +4653,7 @@ arch statue
 name Statue of the Fire God
 x 26
 y 14
-no_pass 0
+move_block 0
 end
 arch altar
 name Statue of the Fire Lord
@@ -5548,7 +5548,7 @@ end
 arch permanent_lava
 x 30
 y 24
-no_pass 1
+move_block all
 end
 arch dungeon_magic
 x 30
@@ -5561,7 +5561,7 @@ end
 arch permanent_lava
 x 30
 y 25
-no_pass 1
+move_block all
 end
 arch pstone_1
 x 30
@@ -5570,7 +5570,7 @@ end
 arch permanent_lava
 x 30
 y 26
-no_pass 1
+move_block all
 end
 arch pstone_1
 x 30
@@ -5579,7 +5579,7 @@ end
 arch permanent_lava
 x 30
 y 27
-no_pass 1
+move_block all
 end
 arch pstone_1
 x 30
@@ -5592,7 +5592,7 @@ end
 arch permanent_lava
 x 30
 y 28
-no_pass 1
+move_block all
 end
 arch dungeon_magic
 x 30
@@ -5770,7 +5770,7 @@ end
 arch permanent_lava
 x 31
 y 24
-no_pass 1
+move_block all
 end
 arch dungeon_magic
 x 31
@@ -5783,7 +5783,7 @@ end
 arch permanent_lava
 x 31
 y 25
-no_pass 1
+move_block all
 end
 arch pstone_1
 x 31
@@ -5792,7 +5792,7 @@ end
 arch permanent_lava
 x 31
 y 26
-no_pass 1
+move_block all
 end
 arch pstone_1
 x 31
@@ -5801,7 +5801,7 @@ end
 arch permanent_lava
 x 31
 y 27
-no_pass 1
+move_block all
 end
 arch pstone_1
 x 31
@@ -5814,7 +5814,7 @@ end
 arch permanent_lava
 x 31
 y 28
-no_pass 1
+move_block all
 end
 arch dungeon_magic
 x 31
@@ -5988,7 +5988,7 @@ end
 arch permanent_lava
 x 32
 y 24
-no_pass 1
+move_block all
 end
 arch dungeon_magic
 x 32
@@ -6001,7 +6001,7 @@ end
 arch permanent_lava
 x 32
 y 25
-no_pass 1
+move_block all
 end
 arch pstone_1
 x 32
@@ -6010,7 +6010,7 @@ end
 arch permanent_lava
 x 32
 y 26
-no_pass 1
+move_block all
 end
 arch pstone_1
 x 32
@@ -6019,7 +6019,7 @@ end
 arch permanent_lava
 x 32
 y 27
-no_pass 1
+move_block all
 end
 arch pstone_1
 x 32
@@ -6032,7 +6032,7 @@ end
 arch permanent_lava
 x 32
 y 28
-no_pass 1
+move_block all
 end
 arch dungeon_magic
 x 32
@@ -6230,7 +6230,7 @@ end
 arch permanent_lava
 x 33
 y 24
-no_pass 1
+move_block all
 end
 arch dungeon_magic
 x 33
@@ -6243,7 +6243,7 @@ end
 arch permanent_lava
 x 33
 y 25
-no_pass 1
+move_block all
 end
 arch pstone_1
 x 33
@@ -6252,7 +6252,7 @@ end
 arch permanent_lava
 x 33
 y 26
-no_pass 1
+move_block all
 end
 arch pstone_1
 x 33
@@ -6261,7 +6261,7 @@ end
 arch permanent_lava
 x 33
 y 27
-no_pass 1
+move_block all
 end
 arch pstone_1
 x 33
@@ -6274,7 +6274,7 @@ end
 arch permanent_lava
 x 33
 y 28
-no_pass 1
+move_block all
 end
 arch dungeon_magic
 x 33
@@ -6838,7 +6838,7 @@ end
 arch permanent_lava
 x 35
 y 24
-no_pass 1
+move_block all
 end
 arch dungeon_magic
 x 35
@@ -6851,7 +6851,7 @@ end
 arch permanent_lava
 x 35
 y 25
-no_pass 1
+move_block all
 end
 arch pstone_1
 x 35
@@ -6860,7 +6860,7 @@ end
 arch permanent_lava
 x 35
 y 26
-no_pass 1
+move_block all
 end
 arch pstone_1
 x 35
@@ -6869,7 +6869,7 @@ end
 arch permanent_lava
 x 35
 y 27
-no_pass 1
+move_block all
 end
 arch pstone_1
 x 35
@@ -6882,7 +6882,7 @@ end
 arch permanent_lava
 x 35
 y 28
-no_pass 1
+move_block all
 end
 arch dungeon_magic
 x 35
@@ -7056,7 +7056,7 @@ end
 arch permanent_lava
 x 36
 y 24
-no_pass 1
+move_block all
 end
 arch dungeon_magic
 x 36
@@ -7069,7 +7069,7 @@ end
 arch permanent_lava
 x 36
 y 25
-no_pass 1
+move_block all
 end
 arch pstone_1
 x 36
@@ -7078,7 +7078,7 @@ end
 arch permanent_lava
 x 36
 y 26
-no_pass 1
+move_block all
 end
 arch pstone_1
 x 36
@@ -7087,7 +7087,7 @@ end
 arch permanent_lava
 x 36
 y 27
-no_pass 1
+move_block all
 end
 arch pstone_1
 x 36
@@ -7100,7 +7100,7 @@ end
 arch permanent_lava
 x 36
 y 28
-no_pass 1
+move_block all
 end
 arch dungeon_magic
 x 36
@@ -7274,7 +7274,7 @@ end
 arch permanent_lava
 x 37
 y 24
-no_pass 1
+move_block all
 end
 arch dungeon_magic
 x 37
@@ -7287,7 +7287,7 @@ end
 arch permanent_lava
 x 37
 y 25
-no_pass 1
+move_block all
 end
 arch pstone_1
 x 37
@@ -7296,7 +7296,7 @@ end
 arch permanent_lava
 x 37
 y 26
-no_pass 1
+move_block all
 end
 arch pstone_1
 x 37
@@ -7305,7 +7305,7 @@ end
 arch permanent_lava
 x 37
 y 27
-no_pass 1
+move_block all
 end
 arch pstone_1
 x 37
@@ -7318,7 +7318,7 @@ end
 arch permanent_lava
 x 37
 y 28
-no_pass 1
+move_block all
 end
 arch dungeon_magic
 x 37
@@ -7492,7 +7492,7 @@ end
 arch permanent_lava
 x 38
 y 24
-no_pass 1
+move_block all
 end
 arch dungeon_magic
 x 38
@@ -7505,7 +7505,7 @@ end
 arch permanent_lava
 x 38
 y 25
-no_pass 1
+move_block all
 end
 arch pstone_1
 x 38
@@ -7514,7 +7514,7 @@ end
 arch permanent_lava
 x 38
 y 26
-no_pass 1
+move_block all
 end
 arch pstone_1
 x 38
@@ -7523,7 +7523,7 @@ end
 arch permanent_lava
 x 38
 y 27
-no_pass 1
+move_block all
 end
 arch pstone_1
 x 38
@@ -7536,7 +7536,7 @@ end
 arch permanent_lava
 x 38
 y 28
-no_pass 1
+move_block all
 end
 arch dungeon_magic
 x 38

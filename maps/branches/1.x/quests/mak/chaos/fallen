@@ -143,7 +143,7 @@ end
 arch pillars
 x 1
 y 2
-no_pass 1
+move_block all
 end
 arch flagstone
 x 1
@@ -164,7 +164,7 @@ end
 arch pillars
 x 1
 y 4
-no_pass 1
+move_block all
 end
 arch flagstone
 x 1
@@ -567,7 +567,7 @@ end
 arch pillars
 x 3
 y 2
-no_pass 1
+move_block all
 end
 arch flagstone
 x 3
@@ -588,7 +588,7 @@ end
 arch pillars
 x 3
 y 4
-no_pass 1
+move_block all
 end
 arch flagstone
 x 3

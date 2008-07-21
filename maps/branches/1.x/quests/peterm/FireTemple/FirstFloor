@@ -331,7 +331,7 @@ end
 arch pentagram_111
 x 1
 y 20
-no_pass 1
+move_block all
 end
 arch cobblestones2
 x 1
@@ -1598,7 +1598,7 @@ end
 arch pentagram_111
 x 7
 y 1
-no_pass 1
+move_block all
 end
 arch cobblestones2
 x 7
@@ -2400,7 +2400,7 @@ end
 arch pentagram_111
 x 10
 y 20
-no_pass 1
+move_block all
 end
 arch cobblestones2
 x 10
@@ -3858,7 +3858,7 @@ end
 arch pentagram_111
 x 17
 y 14
-no_pass 1
+move_block all
 end
 arch cobblestones2
 x 17
@@ -4353,7 +4353,7 @@ end
 arch pentagram_111
 x 20
 y 1
-no_pass 1
+move_block all
 is_floor 1
 end
 arch cobblestones2
@@ -5862,7 +5862,7 @@ end
 arch pentagram_111
 x 26
 y 1
-no_pass 1
+move_block all
 end
 arch cobblestones2
 x 26

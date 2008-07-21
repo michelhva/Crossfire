@@ -576,7 +576,7 @@ arch blocked
 name darkness
 x 2
 y 2
-no_pass 0
+move_block 0
 is_floor 1
 end
 arch invis_exit
@@ -965,8 +965,8 @@ stories.
 endmsg
 x 2
 y 38
+move_block all
 alive 0
-no_pass 1
 friendly 1
 stand_still 1
 end
@@ -1040,8 +1040,8 @@ to well and I might have to give up.
 endmsg
 x 2
 y 43
+move_block all
 alive 0
-no_pass 1
 friendly 1
 stand_still 1
 end
@@ -1448,8 +1448,8 @@ endmsg
 dam 0
 x 3
 y 36
+move_block all
 alive 0
-no_pass 1
 friendly 1
 stand_still 1
 random_movement 0
@@ -1966,8 +1966,8 @@ that might get me through.
 endmsg
 x 4
 y 39
+move_block all
 alive 0
-no_pass 1
 friendly 1
 stand_still 1
 end
@@ -2483,8 +2483,8 @@ exp 0
 ac 0
 x 5
 y 46
+move_block 0
 alive 0
-no_pass 0
 end
 arch dungeon_magic
 x 5
@@ -2741,8 +2741,8 @@ bearskin belt
 endmsg
 x 6
 y 18
+move_block all
 alive 0
-no_pass 1
 monster 0
 friendly 1
 stand_still 1
@@ -2996,8 +2996,8 @@ will show you how it's done!
 endmsg
 x 6
 y 43
+move_block all
 alive 0
-no_pass 1
 is_animated 0
 monster 0
 friendly 1
@@ -3328,8 +3328,8 @@ They must be eradicated at all costs.
 endmsg
 x 7
 y 27
+move_block all
 alive 0
-no_pass 1
 monster 0
 friendly 1
 stand_still 1
@@ -3662,8 +3662,8 @@ big guys
 endmsg
 x 8
 y 9
+move_block all
 alive 0
-no_pass 1
 friendly 1
 stand_still 1
 end
@@ -3957,8 +3957,8 @@ That statue is just to heavy for me.
 endmsg
 x 8
 y 38
+move_block all
 alive 0
-no_pass 1
 friendly 1
 stand_still 1
 end
@@ -4703,8 +4703,8 @@ exp 0
 ac 0
 x 10
 y 12
+move_block 0
 alive 0
-no_pass 0
 end
 arch marble
 x 10
@@ -4816,8 +4816,8 @@ exp 0
 ac 0
 x 10
 y 21
+move_block 0
 alive 0
-no_pass 0
 end
 arch marble
 x 10
@@ -4929,8 +4929,8 @@ exp 0
 ac 0
 x 10
 y 30
+move_block 0
 alive 0
-no_pass 0
 end
 arch marble
 x 10
@@ -5054,8 +5054,8 @@ exp 0
 ac 0
 x 10
 y 40
+move_block 0
 alive 0
-no_pass 0
 end
 arch marble
 x 10
@@ -5285,8 +5285,8 @@ Don't loiter
 endmsg
 x 11
 y 9
+move_block all
 alive 0
-no_pass 1
 end
 arch dungeon_magic
 x 11
@@ -5368,8 +5368,8 @@ Don't loiter
 endmsg
 x 11
 y 17
+move_block all
 alive 0
-no_pass 1
 end
 arch dungeon_magic
 x 11
@@ -5460,8 +5460,8 @@ Don't loiter
 endmsg
 x 11
 y 26
+move_block all
 alive 0
-no_pass 1
 end
 arch dungeon_magic
 x 11
@@ -5567,8 +5567,8 @@ Don't loiter
 endmsg
 x 11
 y 37
+move_block all
 alive 0
-no_pass 1
 end
 arch marble
 x 11
@@ -5641,8 +5641,8 @@ have enough mayhem in the test
 endmsg
 x 11
 y 43
+move_block all
 alive 0
-no_pass 1
 end
 arch dungeon_magic
 x 11
@@ -5661,8 +5661,8 @@ have enough mayhem in the test
 endmsg
 x 11
 y 44
+move_block all
 alive 0
-no_pass 1
 end
 arch dungeon_magic
 x 11
@@ -5681,8 +5681,8 @@ have enough mayhem in the test
 endmsg
 x 11
 y 45
+move_block all
 alive 0
-no_pass 1
 end
 arch dungeon_magic
 x 11
@@ -5701,8 +5701,8 @@ have enough mayhem in the test
 endmsg
 x 11
 y 46
+move_block all
 alive 0
-no_pass 1
 end
 arch dungeon_magic
 x 11
@@ -5721,8 +5721,8 @@ have enough mayhem in the test
 endmsg
 x 11
 y 47
+move_block all
 alive 0
-no_pass 1
 end
 arch dungeon_magic
 x 11
@@ -6609,8 +6609,8 @@ other student
 endmsg
 x 13
 y 39
+move_block all
 alive 0
-no_pass 1
 monster 0
 end
 arch dungeon_magic
@@ -6640,7 +6640,7 @@ end
 arch pillars
 x 13
 y 42
-no_pass 1
+move_block all
 end
 arch dungeon_magic
 x 13
@@ -6677,7 +6677,7 @@ end
 arch pillars
 x 13
 y 46
-no_pass 1
+move_block all
 end
 arch dungeon_magic
 x 13
@@ -7301,8 +7301,8 @@ exp 0
 ac 0
 x 15
 y 8
+move_block 0
 alive 0
-no_pass 0
 end
 arch dungeon_magic
 x 15
@@ -7575,8 +7575,8 @@ endmsg
 hp 5000
 x 15
 y 39
+move_block all
 alive 0
-no_pass 1
 friendly 1
 unaggressive 0
 stand_still 1
@@ -8533,8 +8533,8 @@ other student
 endmsg
 x 17
 y 39
+move_block all
 alive 0
-no_pass 1
 monster 0
 end
 arch dungeon_magic
@@ -8564,7 +8564,7 @@ end
 arch pillars
 x 17
 y 42
-no_pass 1
+move_block all
 end
 arch dungeon_magic
 x 17
@@ -8601,7 +8601,7 @@ end
 arch pillars
 x 17
 y 46
-no_pass 1
+move_block all
 end
 arch dungeon_magic
 x 17
@@ -8763,8 +8763,8 @@ the altars and the passage will open.
 endmsg
 x 18
 y 7
+move_block all
 alive 0
-no_pass 1
 friendly 1
 stand_still 1
 end
@@ -9224,8 +9224,8 @@ Don't loiter
 endmsg
 x 19
 y 9
+move_block all
 alive 0
-no_pass 1
 end
 arch dungeon_magic
 x 19
@@ -9348,8 +9348,8 @@ Don't loiter
 endmsg
 x 19
 y 21
+move_block all
 alive 0
-no_pass 1
 end
 arch dungeon_magic
 x 19
@@ -9513,8 +9513,8 @@ Don't loiter
 endmsg
 x 19
 y 37
+move_block all
 alive 0
-no_pass 1
 end
 arch marble
 x 19
@@ -9587,8 +9587,8 @@ have enough mayhem in the test
 endmsg
 x 19
 y 43
+move_block all
 alive 0
-no_pass 1
 end
 arch dungeon_magic
 x 19
@@ -9607,8 +9607,8 @@ have enough mayhem in the test
 endmsg
 x 19
 y 44
+move_block all
 alive 0
-no_pass 1
 end
 arch dungeon_magic
 x 19
@@ -9627,8 +9627,8 @@ have enough mayhem in the test
 endmsg
 x 19
 y 45
+move_block all
 alive 0
-no_pass 1
 end
 arch dungeon_magic
 x 19
@@ -9647,8 +9647,8 @@ have enough mayhem in the test
 endmsg
 x 19
 y 46
+move_block all
 alive 0
-no_pass 1
 end
 arch dungeon_magic
 x 19
@@ -9667,8 +9667,8 @@ have enough mayhem in the test
 endmsg
 x 19
 y 47
+move_block all
 alive 0
-no_pass 1
 end
 arch dungeon_magic
 x 19
@@ -9814,8 +9814,8 @@ exp 0
 ac 0
 x 20
 y 11
+move_block 0
 alive 0
-no_pass 0
 end
 arch marble
 x 20
@@ -9903,8 +9903,8 @@ exp 0
 ac 0
 x 20
 y 18
+move_block 0
 alive 0
-no_pass 0
 end
 arch marble
 x 20
@@ -10016,8 +10016,8 @@ exp 0
 ac 0
 x 20
 y 27
+move_block 0
 alive 0
-no_pass 0
 end
 arch marble
 x 20
@@ -10178,8 +10178,8 @@ exp 0
 ac 0
 x 20
 y 40
+move_block 0
 alive 0
-no_pass 0
 end
 arch marble
 x 20
@@ -11133,8 +11133,8 @@ to seek them out and end this threat.
 endmsg
 x 23
 y 13
+move_block all
 alive 0
-no_pass 1
 friendly 1
 stand_still 1
 end
@@ -11168,8 +11168,8 @@ specimens for you.
 endmsg
 x 23
 y 15
+move_block all
 alive 0
-no_pass 1
 friendly 1
 stand_still 1
 end
@@ -11262,8 +11262,8 @@ them back to rest.
 endmsg
 x 23
 y 24
+move_block all
 alive 0
-no_pass 1
 friendly 1
 stand_still 1
 end
@@ -13624,7 +13624,7 @@ end
 arch table_2
 x 28
 y 40
-no_pass 1
+move_block all
 end
 arch marble
 x 28
