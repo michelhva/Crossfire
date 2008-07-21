@@ -1,14 +1,31 @@
 arch map
 name Main Floor
 reset_timeout 7200
-difficulty 5
+difficulty 1
 width 31
 height 52
 enter_x 1
 enter_y 1
 msg
 Created:  2000-04-06 Magnus Kronhamn (mak@solace.mh.se)
+Modified: 2008-05-07 Nicolas Weeger
 endmsg
+maplore
+@def Warriors' Tower
+This tower lets one fight various high level enemies, and gives access to Lorkas.
+</p><p>
+No hint are known for this quest.
+</p>
+<p><font color="red">TODO: add hints</font>
+
+@end
+@quest Warriors' Tower
+Main entry, no combat but access to various places to fight.
+@end
+
+@quest ChaosLair
+The old crone talks about a fragment of chaos.
+endmaplore
 end
 arch blocked
 end
