@@ -6,6 +6,7 @@ width 19
 height 19
 msg
 Created:  1996-02-08
+Modified: 2008-06-06 Arvid Norlander
 endmsg
 end
 arch flagstone
@@ -169,6 +170,10 @@ end
 arch stair_3_up
 x 1
 y 5
+end
+arch flagstone
+x 1
+y 6
 end
 arch dun2
 x 1
@@ -388,6 +393,10 @@ arch flagstone
 x 2
 y 5
 end
+arch flagstone
+x 2
+y 6
+end
 arch dun2
 x 2
 y 6
@@ -562,6 +571,10 @@ arch flagstone
 x 3
 y 5
 end
+arch flagstone
+x 3
+y 6
+end
 arch dun2
 x 3
 y 6
@@ -731,6 +744,10 @@ can_use_armour 0
 can_use_weapon 0
 can_use_wand 1
 end
+arch flagstone
+x 4
+y 6
+end
 arch dun2
 x 4
 y 6
@@ -899,6 +916,10 @@ arch flagstone
 x 5
 y 5
 end
+arch flagstone
+x 5
+y 6
+end
 arch dun2
 x 5
 y 6
@@ -1004,6 +1025,10 @@ end
 arch flagstone
 x 6
 y 5
+end
+arch flagstone
+x 6
+y 6
 end
 arch dun2
 x 6
@@ -1180,6 +1205,10 @@ arch flagstone
 x 7
 y 5
 end
+arch flagstone
+x 7
+y 6
+end
 arch dun2
 x 7
 y 6
@@ -1211,6 +1240,10 @@ end
 arch flagstone
 x 7
 y 11
+end
+arch flagstone
+x 7
+y 12
 end
 arch dun2
 x 7
@@ -1309,6 +1342,10 @@ can_use_armour 0
 can_use_weapon 0
 can_use_wand 1
 end
+arch flagstone
+x 8
+y 6
+end
 arch dun2
 x 8
 y 6
@@ -1363,6 +1400,10 @@ end
 arch flagstone
 x 8
 y 11
+end
+arch flagstone
+x 8
+y 12
 end
 arch dun2
 x 8
@@ -1478,6 +1519,10 @@ arch flagstone
 x 9
 y 5
 end
+arch flagstone
+x 9
+y 6
+end
 arch dun2
 x 9
 y 6
@@ -1540,6 +1585,10 @@ end
 arch flagstone
 x 9
 y 11
+end
+arch flagstone
+x 9
+y 12
 end
 arch dun2
 x 9
@@ -1638,6 +1687,10 @@ arch flagstone
 x 10
 y 5
 end
+arch flagstone
+x 10
+y 6
+end
 arch dun2
 x 10
 y 6
@@ -1669,6 +1722,10 @@ end
 arch flagstone
 x 10
 y 11
+end
+arch flagstone
+x 10
+y 12
 end
 arch dun2
 x 10
@@ -1744,6 +1801,10 @@ arch flagstone
 x 11
 y 5
 end
+arch flagstone
+x 11
+y 6
+end
 arch dun2
 x 11
 y 6
@@ -1775,6 +1836,10 @@ end
 arch flagstone
 x 11
 y 11
+end
+arch flagstone
+x 11
+y 12
 end
 arch dun2
 x 11
@@ -1931,6 +1996,10 @@ end
 arch flagstone
 x 12
 y 11
+end
+arch flagstone
+x 12
+y 12
 end
 arch dun2
 x 12
@@ -2101,6 +2170,10 @@ arch flagstone
 x 13
 y 11
 end
+arch flagstone
+x 13
+y 12
+end
 arch dun2
 x 13
 y 12
@@ -2253,6 +2326,10 @@ arch swall_1_1
 x 14
 y 11
 end
+arch flagstone
+x 14
+y 12
+end
 arch dun2
 x 14
 y 12
@@ -2363,6 +2440,10 @@ end
 arch flagstone
 x 15
 y 11
+end
+arch flagstone
+x 15
+y 12
 end
 arch dun2
 x 15
@@ -2512,6 +2593,10 @@ arch flagstone
 x 16
 y 11
 end
+arch flagstone
+x 16
+y 12
+end
 arch dun2
 x 16
 y 12
@@ -2608,6 +2693,10 @@ end
 arch flagstone
 x 17
 y 11
+end
+arch flagstone
+x 17
+y 12
 end
 arch dun2
 x 17
