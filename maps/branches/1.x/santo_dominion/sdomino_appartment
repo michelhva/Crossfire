@@ -8,6 +8,7 @@ enter_x 5
 enter_y 1
 msg
 Created:  2000-11-15 Andreas Vogl (red.blaze@gmx.net)
+Modified: 2008-06-20 Arvid Norlander
 endmsg
 end
 arch blocked
@@ -331,12 +332,7 @@ sp 15
 x 5
 y 1
 end
-arch woodfloor
-x 5
-y 2
-unique 1
-end
-arch altar
+arch goldfloor
 name apartment costs 300 plat
 slaying platinacoin
 food 300
