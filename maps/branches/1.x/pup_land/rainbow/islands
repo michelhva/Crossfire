@@ -3,12 +3,12 @@ name Islands
 difficulty 1
 region pupland
 width 35
-height 35
+height 36
 msg
 Created:  1996-05-30
 Updated 2007.11.12 by Gene Alexander
  - made this an outdoor map
-Modified: 2007-11-12 crossfire
+Modified: 2008-05-24 Arvid Norlander
 endmsg
 outdoor 1
 end
@@ -17,8 +17,12 @@ end
 arch sea
 speed_left -0.900000
 end
+arch woods
+y 1
+end
 arch sea
 y 1
+speed_left -0.900000
 end
 arch sea
 y 2
@@ -27,9 +31,6 @@ arch sea
 y 3
 end
 arch sea
-y 3
-end
-arch sea
 y 4
 end
 arch sea
@@ -160,14 +161,14 @@ y 25
 end
 arch sea
 y 25
+end
+arch sea
+y 26
+end
+arch sea
+y 26
 end
 arch dungeon_magic
-y 26
-end
-arch sea
-y 26
-end
-arch sea
 y 27
 end
 arch sea
@@ -201,10 +202,16 @@ arch sea
 y 32
 end
 arch sea
+y 32
+end
+arch sea
 y 33
 end
 arch sea
 y 34
+end
+arch sea
+y 35
 end
 arch sea
 x 1
@@ -223,10 +230,6 @@ y 3
 end
 arch sea
 x 1
-y 3
-end
-arch sea
-x 1
 y 4
 end
 arch sea
@@ -280,28 +283,32 @@ end
 arch sea
 x 1
 y 10
+end
+arch sea
+x 1
+y 11
+end
+arch sea
+x 1
+y 11
 end
 arch grass
 x 1
-y 11
+y 12
 end
 arch sea
 x 1
-y 11
+y 12
 speed_left -0.900000
 end
 arch grass
 x 1
-y 12
-end
-arch sea
-x 1
-y 12
-speed_left -0.900000
+y 13
 end
 arch sea
 x 1
 y 13
+speed_left -0.900000
 end
 arch sea
 x 1
@@ -345,10 +352,6 @@ y 23
 end
 arch sea
 x 1
-y 23
-end
-arch sea
-x 1
 y 24
 end
 arch sea
@@ -362,16 +365,16 @@ end
 arch sea
 x 1
 y 25
+end
+arch sea
+x 1
+y 26
+end
+arch sea
+x 1
+y 26
 end
 arch dungeon_magic
-x 1
-y 26
-end
-arch sea
-x 1
-y 26
-end
-arch sea
 x 1
 y 27
 end
@@ -417,11 +420,19 @@ y 32
 end
 arch sea
 x 1
+y 32
+end
+arch sea
+x 1
 y 33
 end
 arch sea
 x 1
 y 34
+end
+arch sea
+x 1
+y 35
 end
 arch sea
 x 2
@@ -440,10 +451,6 @@ y 3
 end
 arch sea
 x 2
-y 3
-end
-arch sea
-x 2
 y 4
 end
 arch sea
@@ -458,14 +465,13 @@ arch sea
 x 2
 y 5
 end
-arch grass
+arch sea
 x 2
 y 6
 end
 arch sea
 x 2
 y 6
-speed_left -0.900000
 end
 arch grass
 x 2
@@ -484,10 +490,15 @@ arch sea
 x 2
 y 8
 speed_left -0.900000
+end
+arch grass
+x 2
+y 9
 end
 arch sea
 x 2
 y 9
+speed_left -0.900000
 end
 arch sea
 x 2
@@ -547,10 +558,6 @@ y 23
 end
 arch sea
 x 2
-y 23
-end
-arch sea
-x 2
 y 24
 end
 arch sea
@@ -564,16 +571,16 @@ end
 arch sea
 x 2
 y 25
+end
+arch sea
+x 2
+y 26
+end
+arch sea
+x 2
+y 26
 end
 arch dungeon_magic
-x 2
-y 26
-end
-arch sea
-x 2
-y 26
-end
-arch sea
 x 2
 y 27
 end
@@ -619,11 +626,19 @@ y 32
 end
 arch sea
 x 2
+y 32
+end
+arch sea
+x 2
 y 33
 end
 arch sea
 x 2
 y 34
+end
+arch sea
+x 2
+y 35
 end
 arch sea
 x 3
@@ -728,13 +743,13 @@ arch sea
 x 3
 y 25
 end
-arch dungeon_magic
-x 3
-y 26
-end
 arch sea
 x 3
 y 26
+end
+arch dungeon_magic
+x 3
+y 27
 end
 arch sea
 x 3
@@ -769,16 +784,16 @@ x 3
 y 34
 end
 arch sea
+x 3
+y 35
+end
+arch sea
 x 4
 end
 arch sea
 x 4
 y 1
 end
-arch dungeon_magic
-x 4
-y 2
-end
 arch sea
 x 4
 y 2
@@ -798,6 +813,10 @@ end
 arch sea
 x 4
 y 4
+end
+arch dungeon_magic
+x 4
+y 5
 end
 arch sea
 x 4
@@ -831,7 +850,7 @@ arch sea
 x 4
 y 12
 end
-arch grass
+arch sea
 x 4
 y 13
 end
@@ -851,7 +870,7 @@ arch grass
 x 4
 y 17
 end
-arch sea
+arch grass
 x 4
 y 18
 end
@@ -883,13 +902,13 @@ arch sea
 x 4
 y 25
 end
-arch dungeon_magic
-x 4
-y 26
-end
 arch sea
 x 4
 y 26
+end
+arch dungeon_magic
+x 4
+y 27
 end
 arch sea
 x 4
@@ -924,6 +943,10 @@ x 4
 y 34
 end
 arch sea
+x 4
+y 35
+end
+arch sea
 x 5
 end
 arch sea
@@ -938,13 +961,13 @@ arch sea
 x 5
 y 3
 end
-arch dungeon_magic
-x 5
-y 4
-end
 arch sea
 x 5
 y 4
+end
+arch dungeon_magic
+x 5
+y 5
 end
 arch sea
 x 5
@@ -958,7 +981,7 @@ arch sea
 x 5
 y 7
 end
-arch grass
+arch sea
 x 5
 y 8
 end
@@ -1022,7 +1045,7 @@ arch grass
 x 5
 y 23
 end
-arch sea
+arch grass
 x 5
 y 24
 end
@@ -1030,13 +1053,13 @@ arch sea
 x 5
 y 25
 end
-arch dungeon_magic
-x 5
-y 26
-end
 arch sea
 x 5
 y 26
+end
+arch dungeon_magic
+x 5
+y 27
 end
 arch sea
 x 5
@@ -1069,29 +1092,33 @@ end
 arch sea
 x 5
 y 34
+end
+arch sea
+x 5
+y 35
 end
 arch grass
 x 6
+end
+arch grass
+x 6
+y 1
 end
 arch evergreen
 x 6
-y 1
-end
-arch sea
-x 6
 y 2
 end
 arch sea
 x 6
 y 3
 end
-arch dungeon_magic
-x 6
-y 4
-end
 arch sea
 x 6
 y 4
+end
+arch dungeon_magic
+x 6
+y 5
 end
 arch sea
 x 6
@@ -1105,7 +1132,7 @@ arch sea
 x 6
 y 7
 end
-arch grass
+arch sea
 x 6
 y 8
 end
@@ -1173,17 +1200,17 @@ arch grass
 x 6
 y 24
 end
-arch sea
+arch grass
 x 6
 y 25
 end
-arch dungeon_magic
-x 6
-y 26
-end
 arch sea
 x 6
 y 26
+end
+arch dungeon_magic
+x 6
+y 27
 end
 arch sea
 x 6
@@ -1217,23 +1244,23 @@ arch sea
 x 6
 y 34
 end
+arch sea
+x 6
+y 35
+end
 arch grass
 x 7
 end
 arch grass
 x 7
 y 1
+end
+arch grass
+x 7
+y 2
 end
 arch brush
 x 7
-y 2
-end
-arch dungeon_magic
-x 7
-y 3
-end
-arch sea
-x 7
 y 3
 end
 arch dungeon_magic
@@ -1251,12 +1278,16 @@ end
 arch sea
 x 7
 y 5
+end
+arch dungeon_magic
+x 7
+y 6
 end
 arch sea
 x 7
 y 6
 end
-arch grass
+arch sea
 x 7
 y 7
 end
@@ -1268,63 +1299,63 @@ arch grass
 x 7
 y 9
 end
-arch dungeon_magic
-x 7
-y 10
-end
-arch sea
-x 7
-y 10
-end
-arch dungeon_magic
-x 7
-y 11
-end
-arch sea
-x 7
-y 11
-end
-arch dungeon_magic
-x 7
-y 12
-end
-arch sea
-x 7
-y 12
-end
-arch dungeon_magic
-x 7
-y 13
-end
-arch sea
-x 7
-y 13
-end
-arch dungeon_magic
-x 7
-y 14
-end
-arch sea
-x 7
-y 14
-end
-arch dungeon_magic
-x 7
-y 15
-end
-arch sea
-x 7
-y 15
-end
-arch dungeon_magic
-x 7
-y 16
-end
-arch sea
-x 7
-y 16
-end
 arch grass
+x 7
+y 10
+end
+arch dungeon_magic
+x 7
+y 11
+end
+arch sea
+x 7
+y 11
+end
+arch dungeon_magic
+x 7
+y 12
+end
+arch sea
+x 7
+y 12
+end
+arch dungeon_magic
+x 7
+y 13
+end
+arch sea
+x 7
+y 13
+end
+arch dungeon_magic
+x 7
+y 14
+end
+arch sea
+x 7
+y 14
+end
+arch dungeon_magic
+x 7
+y 15
+end
+arch sea
+x 7
+y 15
+end
+arch dungeon_magic
+x 7
+y 16
+end
+arch sea
+x 7
+y 16
+end
+arch dungeon_magic
+x 7
+y 17
+end
+arch sea
 x 7
 y 17
 end
@@ -1360,11 +1391,7 @@ arch grass
 x 7
 y 25
 end
-arch dungeon_magic
-x 7
-y 26
-end
-arch sea
+arch grass
 x 7
 y 26
 end
@@ -1375,6 +1402,10 @@ end
 arch sea
 x 7
 y 27
+end
+arch dungeon_magic
+x 7
+y 28
 end
 arch sea
 x 7
@@ -1404,18 +1435,22 @@ arch sea
 x 7
 y 34
 end
+arch sea
+x 7
+y 35
+end
 arch grass
 x 8
+end
+arch grass
+x 8
+y 1
 end
 arch tree
 x 8
-y 1
-end
-arch brush
-x 8
 y 2
 end
-arch sea
+arch brush
 x 8
 y 3
 end
@@ -1423,19 +1458,19 @@ arch sea
 x 8
 y 4
 end
-arch dungeon_magic
-x 8
-y 5
-end
 arch sea
 x 8
 y 5
+end
+arch dungeon_magic
+x 8
+y 6
 end
 arch sea
 x 8
 y 6
 end
-arch grass
+arch sea
 x 8
 y 7
 end
@@ -1443,27 +1478,27 @@ arch grass
 x 8
 y 8
 end
-arch dungeon_magic
-x 8
-y 9
-end
-arch sea
-x 8
-y 9
-end
-arch dungeon_magic
-x 8
-y 10
-end
-arch sea
-x 8
-y 10
-end
 arch grass
+x 8
+y 9
+end
+arch dungeon_magic
+x 8
+y 10
+end
+arch sea
+x 8
+y 10
+end
+arch dungeon_magic
 x 8
 y 11
 end
-arch swamp
+arch sea
+x 8
+y 11
+end
+arch grass
 x 8
 y 12
 end
@@ -1475,17 +1510,17 @@ arch swamp
 x 8
 y 14
 end
-arch sea
+arch swamp
 x 8
 y 15
 end
-arch dungeon_magic
-x 8
-y 16
-end
 arch sea
 x 8
 y 16
+end
+arch dungeon_magic
+x 8
+y 17
 end
 arch sea
 x 8
@@ -1499,7 +1534,7 @@ arch sea
 x 8
 y 19
 end
-arch grass
+arch sea
 x 8
 y 20
 end
@@ -1527,13 +1562,13 @@ arch grass
 x 8
 y 26
 end
-arch dungeon_magic
+arch grass
 x 8
 y 27
 end
-arch sea
+arch dungeon_magic
 x 8
-y 27
+y 28
 end
 arch sea
 x 8
@@ -1563,29 +1598,29 @@ arch sea
 x 8
 y 34
 end
+arch sea
+x 8
+y 35
+end
 arch grass
 x 9
 end
 arch grass
 x 9
 y 1
+end
+arch grass
+x 9
+y 2
 end
 arch tree
 x 9
-y 2
+y 3
 end
 arch brush
 x 9
-y 3
-end
-arch sea
-x 9
 y 4
 end
-arch dungeon_magic
-x 9
-y 5
-end
 arch sea
 x 9
 y 5
@@ -1622,7 +1657,11 @@ arch sea
 x 9
 y 9
 end
-arch grass
+arch dungeon_magic
+x 9
+y 10
+end
+arch sea
 x 9
 y 10
 end
@@ -1630,11 +1669,11 @@ arch grass
 x 9
 y 11
 end
-arch woods
+arch grass
 x 9
-y 11
+y 12
 end
-arch swamp
+arch woods
 x 9
 y 12
 end
@@ -1646,17 +1685,17 @@ arch swamp
 x 9
 y 14
 end
-arch sea
+arch swamp
 x 9
 y 15
 end
-arch dungeon_magic
-x 9
-y 16
-end
 arch sea
 x 9
 y 16
+end
+arch dungeon_magic
+x 9
+y 17
 end
 arch sea
 x 9
@@ -1674,7 +1713,7 @@ arch sea
 x 9
 y 20
 end
-arch grass
+arch sea
 x 9
 y 21
 end
@@ -1698,13 +1737,13 @@ arch grass
 x 9
 y 26
 end
-arch dungeon_magic
+arch grass
 x 9
 y 27
 end
-arch sea
+arch dungeon_magic
 x 9
-y 27
+y 28
 end
 arch sea
 x 9
@@ -1734,6 +1773,10 @@ arch sea
 x 9
 y 34
 end
+arch sea
+x 9
+y 35
+end
 arch grass
 x 10
 end
@@ -1744,40 +1787,36 @@ end
 arch grass
 x 10
 y 2
+end
+arch grass
+x 10
+y 3
 end
 arch brush
 x 10
-y 3
+y 4
 end
 arch sea
 x 10
-y 4
+y 5
 end
 arch dungeon_magic
 x 10
-y 5
-end
-arch sea
-x 10
-y 5
+y 6
 end
 arch sea
 x 10
 y 6
 end
-arch woods
+arch sea
 x 10
 y 7
 end
-arch grass
+arch woods
 x 10
 y 8
 end
 arch grass
-x 10
-y 9
-end
-arch jungle_1
 x 10
 y 9
 end
@@ -1809,75 +1848,79 @@ arch grass
 x 10
 y 13
 end
+arch jungle_1
+x 10
+y 13
+end
 arch grass
 x 10
 y 14
 end
-arch dungeon_magic
-x 10
-y 15
-end
-arch sea
-x 10
-y 15
-end
-arch dungeon_magic
-x 10
-y 16
-end
-arch sea
-x 10
-y 16
-end
-arch dungeon_magic
-x 10
-y 17
-end
-arch sea
-x 10
-y 17
-end
-arch dungeon_magic
-x 10
-y 18
-end
-arch sea
-x 10
-y 18
-end
-arch dungeon_magic
-x 10
-y 19
-end
-arch sea
-x 10
-y 19
-end
-arch dungeon_magic
-x 10
-y 20
-end
-arch sea
-x 10
-y 20
-end
-arch dungeon_magic
-x 10
-y 21
-end
-arch sea
-x 10
-y 21
-end
-arch dungeon_magic
-x 10
-y 22
-end
-arch sea
-x 10
-y 22
-end
 arch grass
+x 10
+y 15
+end
+arch dungeon_magic
+x 10
+y 16
+end
+arch sea
+x 10
+y 16
+end
+arch dungeon_magic
+x 10
+y 17
+end
+arch sea
+x 10
+y 17
+end
+arch dungeon_magic
+x 10
+y 18
+end
+arch sea
+x 10
+y 18
+end
+arch dungeon_magic
+x 10
+y 19
+end
+arch sea
+x 10
+y 19
+end
+arch dungeon_magic
+x 10
+y 20
+end
+arch sea
+x 10
+y 20
+end
+arch dungeon_magic
+x 10
+y 21
+end
+arch sea
+x 10
+y 21
+end
+arch dungeon_magic
+x 10
+y 22
+end
+arch sea
+x 10
+y 22
+end
+arch dungeon_magic
+x 10
+y 23
+end
+arch sea
 x 10
 y 23
 end
@@ -1893,13 +1936,13 @@ arch grass
 x 10
 y 26
 end
-arch dungeon_magic
+arch grass
 x 10
 y 27
 end
-arch sea
+arch dungeon_magic
 x 10
-y 27
+y 28
 end
 arch sea
 x 10
@@ -1928,6 +1971,10 @@ end
 arch sea
 x 10
 y 34
+end
+arch sea
+x 10
+y 35
 end
 arch grass
 x 11
@@ -1944,27 +1991,23 @@ arch grass
 x 11
 y 3
 end
-arch sea
+arch grass
 x 11
 y 4
 end
-arch dungeon_magic
-x 11
-y 5
-end
 arch sea
 x 11
 y 5
+end
+arch dungeon_magic
+x 11
+y 6
 end
 arch sea
 x 11
 y 6
 end
-arch grass
-x 11
-y 7
-end
-arch woods
+arch sea
 x 11
 y 7
 end
@@ -1972,46 +2015,46 @@ arch grass
 x 11
 y 8
 end
-arch jungle_1
+arch woods
 x 11
 y 8
 end
 arch grass
 x 11
 y 9
+end
+arch jungle_1
+x 11
+y 9
+end
+arch grass
+x 11
+y 10
 end
 arch jungle_2
 x 11
-y 9
+y 10
 end
 arch grass
 x 11
-y 10
+y 11
 end
 arch jungle_1
 x 11
-y 10
+y 11
 end
 arch grass
 x 11
-y 11
-end
-arch woods
-x 11
-y 11
+y 12
 end
 arch woods
 x 11
 y 12
 end
-arch sea
+arch woods
 x 11
 y 13
 end
-arch dungeon_magic
-x 11
-y 14
-end
 arch sea
 x 11
 y 14
@@ -2024,7 +2067,11 @@ arch sea
 x 11
 y 15
 end
-arch pstone_1
+arch dungeon_magic
+x 11
+y 16
+end
+arch sea
 x 11
 y 16
 end
@@ -2048,11 +2095,7 @@ arch pstone_1
 x 11
 y 21
 end
-arch dungeon_magic
-x 11
-y 22
-end
-arch sea
+arch pstone_1
 x 11
 y 22
 end
@@ -2071,6 +2114,10 @@ end
 arch sea
 x 11
 y 24
+end
+arch dungeon_magic
+x 11
+y 25
 end
 arch sea
 x 11
@@ -2080,19 +2127,19 @@ arch sea
 x 11
 y 26
 end
-arch dungeon_magic
-x 11
-y 27
-end
 arch sea
 x 11
 y 27
+end
+arch dungeon_magic
+x 11
+y 28
 end
 arch sea
 x 11
 y 28
 end
-arch grass
+arch sea
 x 11
 y 29
 end
@@ -2100,7 +2147,7 @@ arch grass
 x 11
 y 30
 end
-arch sea
+arch grass
 x 11
 y 31
 end
@@ -2115,6 +2162,10 @@ end
 arch sea
 x 11
 y 34
+end
+arch sea
+x 11
+y 35
 end
 arch grass
 x 12
@@ -2131,19 +2182,19 @@ arch grass
 x 12
 y 3
 end
-arch sea
+arch grass
 x 12
 y 4
 end
-arch dungeon_magic
-x 12
-y 5
-end
 arch sea
 x 12
 y 5
 end
-arch grass
+arch dungeon_magic
+x 12
+y 6
+end
+arch sea
 x 12
 y 6
 end
@@ -2155,16 +2206,12 @@ arch grass
 x 12
 y 8
 end
+arch grass
+x 12
+y 9
+end
 arch jungle_2
 x 12
-y 8
-end
-arch grass
-x 12
-y 9
-end
-arch jungle_1
-x 12
 y 9
 end
 arch grass
@@ -2175,15 +2222,15 @@ arch jungle_1
 x 12
 y 10
 end
-arch woods
+arch grass
 x 12
 y 11
 end
-arch dungeon_magic
+arch jungle_1
 x 12
-y 12
+y 11
 end
-arch sea
+arch woods
 x 12
 y 12
 end
@@ -2203,7 +2250,11 @@ arch sea
 x 12
 y 14
 end
-arch pstone_1
+arch dungeon_magic
+x 12
+y 15
+end
+arch sea
 x 12
 y 15
 end
@@ -2211,7 +2262,7 @@ arch pstone_1
 x 12
 y 16
 end
-arch grass
+arch pstone_1
 x 12
 y 17
 end
@@ -2219,15 +2270,15 @@ arch grass
 x 12
 y 18
 end
-arch woods
+arch grass
 x 12
 y 19
 end
-arch grass
+arch woods
 x 12
 y 20
 end
-arch pstone_1
+arch grass
 x 12
 y 21
 end
@@ -2239,11 +2290,7 @@ arch pstone_1
 x 12
 y 23
 end
-arch dungeon_magic
-x 12
-y 24
-end
-arch sea
+arch pstone_1
 x 12
 y 24
 end
@@ -2271,7 +2318,11 @@ arch sea
 x 12
 y 27
 end
-arch grass
+arch dungeon_magic
+x 12
+y 28
+end
+arch sea
 x 12
 y 28
 end
@@ -2283,7 +2334,7 @@ arch grass
 x 12
 y 30
 end
-arch sea
+arch grass
 x 12
 y 31
 end
@@ -2298,6 +2349,10 @@ end
 arch sea
 x 12
 y 34
+end
+arch sea
+x 12
+y 35
 end
 arch cobblestones
 x 13
@@ -2310,23 +2365,23 @@ arch cobblestones
 x 13
 y 2
 end
-arch brush
+arch cobblestones
 x 13
 y 3
 end
-arch sea
+arch brush
 x 13
 y 4
 end
-arch dungeon_magic
-x 13
-y 5
-end
 arch sea
 x 13
 y 5
 end
-arch grass
+arch dungeon_magic
+x 13
+y 6
+end
+arch sea
 x 13
 y 6
 end
@@ -2334,10 +2389,6 @@ arch grass
 x 13
 y 7
 end
-arch jungle_1
-x 13
-y 7
-end
 arch grass
 x 13
 y 8
@@ -2350,7 +2401,7 @@ arch grass
 x 13
 y 9
 end
-arch jungle_2
+arch jungle_1
 x 13
 y 9
 end
@@ -2358,7 +2409,7 @@ arch grass
 x 13
 y 10
 end
-arch woods
+arch jungle_2
 x 13
 y 10
 end
@@ -2366,19 +2417,23 @@ arch grass
 x 13
 y 11
 end
-arch dungeon_magic
+arch woods
+x 13
+y 11
+end
+arch grass
 x 13
 y 12
 end
-arch sea
+arch dungeon_magic
 x 13
-y 12
+y 13
 end
 arch sea
 x 13
 y 13
 end
-arch pstone_1
+arch sea
 x 13
 y 14
 end
@@ -2386,7 +2441,7 @@ arch pstone_1
 x 13
 y 15
 end
-arch jungle_1
+arch pstone_1
 x 13
 y 16
 end
@@ -2398,15 +2453,15 @@ arch jungle_1
 x 13
 y 18
 end
-arch grass
+arch jungle_1
 x 13
 y 19
 end
-arch brush
+arch grass
 x 13
 y 20
 end
-arch grass
+arch brush
 x 13
 y 21
 end
@@ -2414,7 +2469,7 @@ arch grass
 x 13
 y 22
 end
-arch pstone_1
+arch grass
 x 13
 y 23
 end
@@ -2422,7 +2477,7 @@ arch pstone_1
 x 13
 y 24
 end
-arch sea
+arch pstone_1
 x 13
 y 25
 end
@@ -2430,15 +2485,15 @@ arch sea
 x 13
 y 26
 end
-arch dungeon_magic
-x 13
-y 27
-end
 arch sea
 x 13
 y 27
 end
-arch grass
+arch dungeon_magic
+x 13
+y 28
+end
+arch sea
 x 13
 y 28
 end
@@ -2454,7 +2509,7 @@ arch grass
 x 13
 y 31
 end
-arch sea
+arch grass
 x 13
 y 32
 end
@@ -2466,6 +2521,10 @@ arch sea
 x 13
 y 34
 end
+arch sea
+x 13
+y 35
+end
 arch grass
 x 14
 end
@@ -2473,27 +2532,27 @@ arch grass
 x 14
 y 1
 end
-arch cobblestones
+arch grass
 x 14
 y 2
 end
-arch brush
+arch cobblestones
 x 14
 y 3
 end
-arch sea
+arch brush
 x 14
 y 4
 end
-arch dungeon_magic
-x 14
-y 5
-end
 arch sea
 x 14
 y 5
 end
-arch grass
+arch dungeon_magic
+x 14
+y 6
+end
+arch sea
 x 14
 y 6
 end
@@ -2501,15 +2560,11 @@ arch grass
 x 14
 y 7
 end
-arch woods
-x 14
-y 7
-end
 arch grass
 x 14
 y 8
 end
-arch jungle_1
+arch woods
 x 14
 y 8
 end
@@ -2517,7 +2572,7 @@ arch grass
 x 14
 y 9
 end
-arch jungle_2
+arch jungle_1
 x 14
 y 9
 end
@@ -2525,27 +2580,31 @@ arch grass
 x 14
 y 10
 end
+arch jungle_2
+x 14
+y 10
+end
 arch grass
 x 14
 y 11
 end
-arch dungeon_magic
+arch grass
 x 14
 y 12
 end
-arch sea
+arch dungeon_magic
 x 14
-y 12
+y 13
 end
 arch sea
 x 14
 y 13
 end
-arch pstone_1
+arch sea
 x 14
 y 14
 end
-arch jungle_1
+arch pstone_1
 x 14
 y 15
 end
@@ -2553,15 +2612,15 @@ arch jungle_1
 x 14
 y 16
 end
-arch jungle_2
+arch jungle_1
 x 14
 y 17
 end
-arch woods
+arch jungle_2
 x 14
 y 18
 end
-arch grass
+arch woods
 x 14
 y 19
 end
@@ -2569,27 +2628,23 @@ arch grass
 x 14
 y 20
 end
-arch brush
+arch grass
 x 14
 y 21
 end
-arch grass
+arch brush
 x 14
 y 22
 end
-arch brush
+arch grass
 x 14
 y 23
 end
-arch pstone_1
+arch brush
 x 14
 y 24
 end
-arch dungeon_magic
-x 14
-y 25
-end
-arch sea
+arch pstone_1
 x 14
 y 25
 end
@@ -2613,9 +2668,13 @@ arch dungeon_magic
 x 14
 y 28
 end
-arch grass
+arch sea
 x 14
 y 28
+end
+arch dungeon_magic
+x 14
+y 29
 end
 arch grass
 x 14
@@ -2629,7 +2688,7 @@ arch grass
 x 14
 y 31
 end
-arch sea
+arch grass
 x 14
 y 32
 end
@@ -2641,6 +2700,10 @@ arch sea
 x 14
 y 34
 end
+arch sea
+x 14
+y 35
+end
 arch grass
 x 15
 end
@@ -2648,25 +2711,25 @@ arch grass
 x 15
 y 1
 end
-arch cobblestones
+arch grass
 x 15
 y 2
 end
-arch grass
+arch cobblestones
 x 15
 y 3
 end
-arch sea
+arch grass
 x 15
 y 4
 end
-arch dungeon_magic
-x 15
-y 5
-end
 arch sea
 x 15
 y 5
+end
+arch dungeon_magic
+x 15
+y 6
 end
 arch sea
 x 15
@@ -2680,27 +2743,27 @@ arch sea
 x 15
 y 8
 end
-arch grass
+arch sea
 x 15
 y 9
 end
 arch grass
 x 15
 y 10
+end
+arch grass
+x 15
+y 11
 end
 arch swamp
 x 15
-y 11
+y 12
 end
 arch dungeon_magic
 x 15
-y 12
+y 13
 end
 arch sea
-x 15
-y 12
-end
-arch pstone_1
 x 15
 y 13
 end
@@ -2708,19 +2771,19 @@ arch pstone_1
 x 15
 y 14
 end
-arch jungle_2
+arch pstone_1
 x 15
 y 15
 end
-arch jungle_1
+arch jungle_2
 x 15
 y 16
 end
-arch woods
+arch jungle_1
 x 15
 y 17
 end
-arch grass
+arch woods
 x 15
 y 18
 end
@@ -2736,7 +2799,7 @@ arch grass
 x 15
 y 21
 end
-arch pstone_1
+arch grass
 x 15
 y 22
 end
@@ -2744,11 +2807,7 @@ arch pstone_1
 x 15
 y 23
 end
-arch dungeon_magic
-x 15
-y 24
-end
-arch sea
+arch pstone_1
 x 15
 y 24
 end
@@ -2759,6 +2818,10 @@ end
 arch sea
 x 15
 y 25
+end
+arch dungeon_magic
+x 15
+y 26
 end
 arch sea
 x 15
@@ -2768,15 +2831,15 @@ arch sea
 x 15
 y 27
 end
-arch dungeon_magic
-x 15
-y 28
-end
 arch sea
 x 15
 y 28
 end
-arch grass
+arch dungeon_magic
+x 15
+y 29
+end
+arch sea
 x 15
 y 29
 end
@@ -2788,7 +2851,7 @@ arch grass
 x 15
 y 31
 end
-arch sea
+arch grass
 x 15
 y 32
 end
@@ -2799,6 +2862,10 @@ end
 arch sea
 x 15
 y 34
+end
+arch sea
+x 15
+y 35
 end
 arch grass
 x 16
@@ -2807,22 +2874,18 @@ arch grass
 x 16
 y 1
 end
-arch cobblestones
+arch grass
 x 16
 y 2
 end
-arch grass
+arch cobblestones
 x 16
 y 3
 end
-arch sea
+arch grass
 x 16
 y 4
 end
-arch dungeon_magic
-x 16
-y 5
-end
 arch sea
 x 16
 y 5
@@ -2883,11 +2946,15 @@ arch sea
 x 16
 y 12
 end
-arch pstone_1
+arch dungeon_magic
 x 16
 y 13
 end
-arch jungle_1
+arch sea
+x 16
+y 13
+end
+arch pstone_1
 x 16
 y 14
 end
@@ -2895,11 +2962,11 @@ arch jungle_1
 x 16
 y 15
 end
-arch jungle_2
+arch jungle_1
 x 16
 y 16
 end
-arch grass
+arch jungle_2
 x 16
 y 17
 end
@@ -2915,55 +2982,55 @@ arch grass
 x 16
 y 20
 end
-arch pstone_1
+arch grass
 x 16
 y 21
 end
-arch dungeon_magic
+arch pstone_1
 x 16
 y 22
 end
-arch sea
+arch dungeon_magic
 x 16
-y 22
+y 23
 end
 arch sea
 x 16
 y 23
 end
-arch dungeon_magic
-x 16
-y 24
-end
 arch sea
 x 16
 y 24
 end
-arch woods
+arch dungeon_magic
 x 16
 y 25
 end
-arch grass
+arch sea
 x 16
-y 26
+y 25
 end
 arch woods
 x 16
 y 26
+end
+arch grass
+x 16
+y 27
 end
 arch woods
 x 16
 y 27
 end
+arch woods
+x 16
+y 28
+end
 arch dungeon_magic
 x 16
-y 28
+y 29
 end
 arch sea
-x 16
-y 28
-end
-arch grass
 x 16
 y 29
 end
@@ -2975,7 +3042,7 @@ arch grass
 x 16
 y 31
 end
-arch sea
+arch grass
 x 16
 y 32
 end
@@ -2986,51 +3053,59 @@ end
 arch sea
 x 16
 y 34
+end
+arch sea
+x 16
+y 35
 end
 arch grass
 x 17
+end
+arch dwall_2_2_2
+x 17
+end
+arch grass
+x 17
+y 1
 end
 arch dwall_2_1_1
 x 17
+y 1
 end
 arch grass
 x 17
-y 1
+y 2
 end
 arch dwall_2_1_1
 x 17
-y 1
+y 2
 end
 arch cobblestones
 x 17
-y 2
+y 3
 end
 arch guard_house_1
 name Barrier Station
 x 17
-y 2
+y 3
 end
 arch grass
-x 17
-y 3
-end
-arch dwall_2_2_1
-x 17
-y 3
-end
-arch sea
 x 17
 y 4
 end
-arch dungeon_magic
+arch dwall_2_2_1
 x 17
-y 5
+y 4
 end
 arch sea
 x 17
 y 5
 end
-arch grass
+arch dungeon_magic
+x 17
+y 6
+end
+arch sea
 x 17
 y 6
 end
@@ -3042,7 +3117,7 @@ arch grass
 x 17
 y 8
 end
-arch sea
+arch grass
 x 17
 y 9
 end
@@ -3054,19 +3129,19 @@ arch sea
 x 17
 y 11
 end
-arch dungeon_magic
-x 17
-y 12
-end
 arch sea
 x 17
 y 12
 end
-arch pstone_1
+arch dungeon_magic
 x 17
 y 13
 end
-arch jungle_1
+arch sea
+x 17
+y 13
+end
+arch pstone_1
 x 17
 y 14
 end
@@ -3074,19 +3149,19 @@ arch jungle_1
 x 17
 y 15
 end
-arch jungle_2
+arch jungle_1
 x 17
 y 16
+end
+arch jungle_2
+x 17
+y 17
 end
 arch tower_a
 slaying station
 hp 7
 sp 14
 x 17
-y 16
-end
-arch grass
-x 17
 y 17
 end
 arch grass
@@ -3096,6 +3171,10 @@ end
 arch grass
 x 17
 y 19
+end
+arch grass
+x 17
+y 20
 end
 arch invis_exit
 name sand
@@ -3104,17 +3183,13 @@ face pstone_1.111
 hp 7
 sp 1
 x 17
-y 20
+y 21
 invisible 0
 is_floor 1
 end
 arch dungeon_magic
 x 17
-y 21
-end
-arch sea
-x 17
-y 21
+y 22
 end
 arch sea
 x 17
@@ -3124,47 +3199,47 @@ arch sea
 x 17
 y 23
 end
-arch dungeon_magic
-x 17
-y 24
-end
 arch sea
 x 17
 y 24
 end
-arch grass
+arch dungeon_magic
 x 17
 y 25
 end
-arch woods
+arch sea
 x 17
 y 25
 end
 arch grass
 x 17
 y 26
+end
+arch woods
+x 17
+y 26
+end
+arch grass
+x 17
+y 27
 end
 arch jungle_1
 x 17
-y 26
+y 27
 end
 arch grass
 x 17
-y 27
+y 28
 end
 arch woods
 x 17
-y 27
+y 28
 end
 arch dungeon_magic
 x 17
-y 28
+y 29
 end
 arch sea
-x 17
-y 28
-end
-arch grass
 x 17
 y 29
 end
@@ -3176,7 +3251,7 @@ arch grass
 x 17
 y 31
 end
-arch sea
+arch grass
 x 17
 y 32
 end
@@ -3188,10 +3263,14 @@ arch sea
 x 17
 y 34
 end
+arch sea
+x 17
+y 35
+end
 arch grass
 x 18
 end
-arch dwall_2_1_1
+arch dwall_2_2_3
 x 18
 end
 arch grass
@@ -3201,37 +3280,41 @@ end
 arch dwall_2_1_1
 x 18
 y 1
+end
+arch grass
+x 18
+y 2
+end
+arch dwall_2_1_1
+x 18
+y 2
 end
 arch cobblestones
 x 18
-y 2
+y 3
 end
 arch guard_house_2
 name Barrier Station
 x 18
-y 2
+y 3
 end
 arch grass
-x 18
-y 3
-end
-arch dwall_2_2_4
-x 18
-y 3
-end
-arch sea
 x 18
 y 4
 end
-arch dungeon_magic
+arch dwall_2_2_4
 x 18
-y 5
+y 4
 end
 arch sea
 x 18
 y 5
 end
-arch grass
+arch dungeon_magic
+x 18
+y 6
+end
+arch sea
 x 18
 y 6
 end
@@ -3251,46 +3334,46 @@ arch grass
 x 18
 y 10
 end
-arch sea
+arch grass
 x 18
 y 11
 end
-arch dungeon_magic
-x 18
-y 12
-end
 arch sea
 x 18
 y 12
 end
-arch pstone_1
+arch dungeon_magic
 x 18
 y 13
 end
-arch grass
+arch sea
+x 18
+y 13
+end
+arch pstone_1
 x 18
 y 14
+end
+arch grass
+x 18
+y 15
 end
 arch well
 slaying well
 hp 3
 sp 2
 x 18
-y 14
+y 15
 end
 arch jungle_2
 x 18
-y 15
+y 16
 end
 arch jungle_1
 x 18
-y 16
-end
-arch grasspond
-x 18
 y 17
 end
-arch grass
+arch grasspond
 x 18
 y 18
 end
@@ -3302,7 +3385,7 @@ arch grass
 x 18
 y 20
 end
-arch pstone_1
+arch grass
 x 18
 y 21
 end
@@ -3310,17 +3393,9 @@ arch pstone_1
 x 18
 y 22
 end
-arch dungeon_magic
+arch pstone_1
 x 18
 y 23
-end
-arch sea
-x 18
-y 23
-end
-arch dungeon_magic
-x 18
-y 24
 end
 arch dungeon_magic
 x 18
@@ -3329,29 +3404,33 @@ end
 arch sea
 x 18
 y 24
+end
+arch dungeon_magic
+x 18
+y 25
+end
+arch dungeon_magic
+x 18
+y 25
+end
+arch sea
+x 18
+y 25
 end
 arch grass
 x 18
-y 25
+y 26
 end
 arch jungle_1
 x 18
-y 25
+y 26
 end
 arch invis_exit
 slaying woods
 hp 2
 sp 1
 x 18
-y 26
-end
-arch grass
-x 18
-y 26
-end
-arch jungle_1
-x 18
-y 26
+y 27
 end
 arch grass
 x 18
@@ -3360,20 +3439,24 @@ end
 arch jungle_1
 x 18
 y 27
+end
+arch grass
+x 18
+y 28
+end
+arch jungle_1
+x 18
+y 28
 end
 arch dungeon_magic
 x 18
-y 28
-end
-arch sea
-x 18
-y 28
+y 29
 end
 arch sea
 x 18
 y 29
 end
-arch grass
+arch sea
 x 18
 y 30
 end
@@ -3381,7 +3464,7 @@ arch grass
 x 18
 y 31
 end
-arch sea
+arch grass
 x 18
 y 32
 end
@@ -3393,45 +3476,42 @@ arch sea
 x 18
 y 34
 end
+arch sea
+x 18
+y 35
+end
 arch grass
 x 19
 end
-arch pillars
+arch stronghold
 name Castle of Eureca
-face stronghold.411
 x 19
 end
 arch grass
 x 19
 y 1
 end
-arch pillars
-name Castle of Eureca
-face stronghold.711
-x 19
-y 1
-end
-arch cobblestones
+arch grass
 x 19
 y 2
 end
-arch grass
+arch cobblestones
 x 19
 y 3
 end
-arch sea
+arch grass
 x 19
 y 4
 end
-arch dungeon_magic
-x 19
-y 5
-end
 arch sea
 x 19
 y 5
 end
-arch grass
+arch dungeon_magic
+x 19
+y 6
+end
+arch sea
 x 19
 y 6
 end
@@ -3455,15 +3535,15 @@ arch grass
 x 19
 y 11
 end
+arch grass
+x 19
+y 12
+end
 arch dungeon_magic
 x 19
-y 12
+y 13
 end
 arch sea
-x 19
-y 12
-end
-arch pstone_1
 x 19
 y 13
 end
@@ -3471,15 +3551,15 @@ arch pstone_1
 x 19
 y 14
 end
-arch jungle_1
+arch pstone_1
 x 19
 y 15
 end
-arch jungle_2
+arch jungle_1
 x 19
 y 16
 end
-arch woods
+arch jungle_2
 x 19
 y 17
 end
@@ -3487,15 +3567,15 @@ arch woods
 x 19
 y 18
 end
-arch grass
+arch woods
 x 19
 y 19
 end
-arch brush
+arch grass
 x 19
 y 20
 end
-arch grass
+arch brush
 x 19
 y 21
 end
@@ -3503,29 +3583,33 @@ arch grass
 x 19
 y 22
 end
-arch pstone_1
+arch grass
 x 19
 y 23
 end
+arch pstone_1
+x 19
+y 24
+end
 arch dungeon_magic
-x 19
-y 24
-end
-arch sea
-x 19
-y 24
-end
-arch grass
 x 19
 y 25
 end
-arch woods
+arch sea
 x 19
 y 25
 end
 arch grass
 x 19
 y 26
+end
+arch woods
+x 19
+y 26
+end
+arch grass
+x 19
+y 27
 end
 arch ruins
 name ancient ruins
@@ -3533,29 +3617,25 @@ slaying ../s_f/ruin
 hp 6
 sp 11
 x 19
-y 26
+y 27
 end
 arch grass
 x 19
-y 27
+y 28
 end
 arch jungle_1
 x 19
-y 27
+y 28
 end
 arch dungeon_magic
 x 19
-y 28
-end
-arch sea
-x 19
-y 28
+y 29
 end
 arch sea
 x 19
 y 29
 end
-arch grass
+arch sea
 x 19
 y 30
 end
@@ -3563,7 +3643,7 @@ arch grass
 x 19
 y 31
 end
-arch sea
+arch grass
 x 19
 y 32
 end
@@ -3575,29 +3655,22 @@ arch sea
 x 19
 y 34
 end
-arch grass
-x 20
+arch sea
+x 19
+y 35
 end
-arch pillars
-name Castle of Eureca
-face stronghold.511
+arch grass
 x 20
 end
 arch grass
 x 20
 y 1
 end
-arch pillars
-name Castle of Eureca
-face stronghold.811
-x 20
-y 1
-end
-arch cobblestones
+arch grass
 x 20
 y 2
 end
-arch sea
+arch cobblestones
 x 20
 y 3
 end
@@ -3605,15 +3678,15 @@ arch sea
 x 20
 y 4
 end
-arch dungeon_magic
-x 20
-y 5
-end
 arch sea
 x 20
 y 5
 end
-arch grass
+arch dungeon_magic
+x 20
+y 6
+end
+arch sea
 x 20
 y 6
 end
@@ -3637,11 +3710,7 @@ arch grass
 x 20
 y 11
 end
-arch dungeon_magic
-x 20
-y 12
-end
-arch sea
+arch grass
 x 20
 y 12
 end
@@ -3657,47 +3726,47 @@ arch dungeon_magic
 x 20
 y 14
 end
-arch pstone_1
+arch sea
 x 20
 y 14
+end
+arch dungeon_magic
+x 20
+y 15
 end
 arch pstone_1
 x 20
 y 15
 end
-arch jungle_1
+arch pstone_1
 x 20
 y 16
+end
+arch jungle_1
+x 20
+y 17
 end
 arch jungle_2
 x 20
-y 17
-end
-arch grass
-x 20
 y 18
 end
-arch woods
+arch grass
 x 20
 y 19
 end
-arch brush
+arch woods
 x 20
 y 20
 end
-arch grass
+arch brush
 x 20
 y 21
 end
-arch pstone_1
+arch grass
 x 20
 y 22
 end
-arch dungeon_magic
-x 20
-y 23
-end
-arch sea
+arch pstone_1
 x 20
 y 23
 end
@@ -3709,24 +3778,24 @@ arch sea
 x 20
 y 24
 end
-arch woods
+arch dungeon_magic
 x 20
 y 25
 end
-arch grass
+arch sea
+x 20
+y 25
+end
+arch woods
 x 20
 y 26
+end
+arch grass
+x 20
+y 27
 end
 arch jungle_1
 x 20
-y 26
-end
-arch dungeon_magic
-x 20
-y 27
-end
-arch sea
-x 20
 y 27
 end
 arch dungeon_magic
@@ -3737,7 +3806,11 @@ arch sea
 x 20
 y 28
 end
-arch grass
+arch dungeon_magic
+x 20
+y 29
+end
+arch sea
 x 20
 y 29
 end
@@ -3749,7 +3822,7 @@ arch grass
 x 20
 y 31
 end
-arch sea
+arch grass
 x 20
 y 32
 end
@@ -3761,45 +3834,38 @@ arch sea
 x 20
 y 34
 end
-arch grass
-x 21
+arch sea
+x 20
+y 35
 end
-arch pillars
-name Castle of Eureca
-face stronghold.611
+arch grass
 x 21
 end
 arch grass
 x 21
 y 1
 end
-arch pillars
-name Castle of Eureca
-face stronghold.911
-x 21
-y 1
-end
-arch cobblestones
+arch grass
 x 21
 y 2
 end
-arch grass
+arch cobblestones
 x 21
 y 3
 end
-arch sea
+arch grass
 x 21
 y 4
 end
-arch dungeon_magic
-x 21
-y 5
-end
 arch sea
 x 21
 y 5
 end
-arch grass
+arch dungeon_magic
+x 21
+y 6
+end
+arch sea
 x 21
 y 6
 end
@@ -3827,19 +3893,19 @@ arch grass
 x 21
 y 12
 end
-arch sea
+arch grass
 x 21
 y 13
 end
-arch dungeon_magic
-x 21
-y 14
-end
 arch sea
 x 21
 y 14
 end
-arch pstone_1
+arch dungeon_magic
+x 21
+y 15
+end
+arch sea
 x 21
 y 15
 end
@@ -3851,17 +3917,21 @@ arch pstone_1
 x 21
 y 17
 end
-arch woods
+arch pstone_1
 x 21
 y 18
 end
-arch grass
+arch woods
 x 21
 y 19
 end
-arch brush
+arch grass
 x 21
 y 20
+end
+arch brush
+x 21
+y 21
 end
 arch town_1
 name Red Town
@@ -3869,31 +3939,27 @@ slaying red_town/town
 hp 7
 sp 13
 x 21
-y 20
+y 21
 end
 arch pstone_1
 x 21
-y 21
+y 22
 end
 arch dungeon_magic
 x 21
-y 22
-end
-arch sea
-x 21
-y 22
+y 23
 end
 arch sea
 x 21
 y 23
 end
-arch dungeon_magic
-x 21
-y 24
-end
 arch sea
 x 21
 y 24
+end
+arch dungeon_magic
+x 21
+y 25
 end
 arch sea
 x 21
@@ -3907,15 +3973,15 @@ arch sea
 x 21
 y 27
 end
-arch dungeon_magic
-x 21
-y 28
-end
 arch sea
 x 21
 y 28
 end
-arch grass
+arch dungeon_magic
+x 21
+y 29
+end
+arch sea
 x 21
 y 29
 end
@@ -3927,7 +3993,7 @@ arch grass
 x 21
 y 31
 end
-arch sea
+arch grass
 x 21
 y 32
 end
@@ -3939,6 +4005,10 @@ arch sea
 x 21
 y 34
 end
+arch sea
+x 21
+y 35
+end
 arch grass
 x 22
 end
@@ -3946,11 +4016,11 @@ arch grass
 x 22
 y 1
 end
-arch cobblestones
+arch grass
 x 22
 y 2
 end
-arch grass
+arch cobblestones
 x 22
 y 3
 end
@@ -3958,23 +4028,23 @@ arch grass
 x 22
 y 4
 end
-arch dungeon_magic
-x 22
-y 5
-end
-arch sea
-x 22
-y 5
-end
-arch dungeon_magic
-x 22
-y 6
-end
-arch sea
-x 22
-y 6
-end
 arch grass
+x 22
+y 5
+end
+arch dungeon_magic
+x 22
+y 6
+end
+arch sea
+x 22
+y 6
+end
+arch dungeon_magic
+x 22
+y 7
+end
+arch sea
 x 22
 y 7
 end
@@ -3998,17 +4068,17 @@ arch grass
 x 22
 y 12
 end
-arch sea
+arch grass
 x 22
 y 13
 end
-arch dungeon_magic
-x 22
-y 14
-end
 arch sea
 x 22
 y 14
+end
+arch dungeon_magic
+x 22
+y 15
 end
 arch sea
 x 22
@@ -4018,7 +4088,7 @@ arch sea
 x 22
 y 16
 end
-arch pstone_1
+arch sea
 x 22
 y 17
 end
@@ -4034,13 +4104,13 @@ arch pstone_1
 x 22
 y 20
 end
-arch dungeon_magic
+arch pstone_1
 x 22
 y 21
 end
-arch sea
+arch dungeon_magic
 x 22
-y 21
+y 22
 end
 arch sea
 x 22
@@ -4050,13 +4120,13 @@ arch sea
 x 22
 y 23
 end
-arch dungeon_magic
-x 22
-y 24
-end
 arch sea
 x 22
 y 24
+end
+arch dungeon_magic
+x 22
+y 25
 end
 arch sea
 x 22
@@ -4070,15 +4140,15 @@ arch sea
 x 22
 y 27
 end
-arch dungeon_magic
-x 22
-y 28
-end
 arch sea
 x 22
 y 28
 end
-arch grass
+arch dungeon_magic
+x 22
+y 29
+end
+arch sea
 x 22
 y 29
 end
@@ -4090,7 +4160,7 @@ arch grass
 x 22
 y 31
 end
-arch sea
+arch grass
 x 22
 y 32
 end
@@ -4102,6 +4172,10 @@ arch sea
 x 22
 y 34
 end
+arch sea
+x 22
+y 35
+end
 arch grass
 x 23
 end
@@ -4109,35 +4183,35 @@ arch grass
 x 23
 y 1
 end
-arch cobblestones
+arch grass
 x 23
 y 2
 end
-arch grass
+arch cobblestones
 x 23
 y 3
 end
-arch dungeon_magic
-x 23
-y 4
-end
 arch grass
 x 23
 y 4
 end
-arch sea
+arch dungeon_magic
 x 23
 y 5
 end
-arch dungeon_magic
+arch grass
 x 23
-y 6
+y 5
 end
 arch sea
 x 23
 y 6
 end
-arch grass
+arch dungeon_magic
+x 23
+y 7
+end
+arch sea
 x 23
 y 7
 end
@@ -4153,7 +4227,7 @@ arch grass
 x 23
 y 10
 end
-arch sea
+arch grass
 x 23
 y 11
 end
@@ -4165,13 +4239,13 @@ arch sea
 x 23
 y 13
 end
-arch dungeon_magic
-x 23
-y 14
-end
 arch sea
 x 23
 y 14
+end
+arch dungeon_magic
+x 23
+y 15
 end
 arch sea
 x 23
@@ -4193,10 +4267,6 @@ arch sea
 x 23
 y 19
 end
-arch dungeon_magic
-x 23
-y 20
-end
 arch sea
 x 23
 y 20
@@ -4213,7 +4283,7 @@ arch dungeon_magic
 x 23
 y 22
 end
-arch pstone_1
+arch sea
 x 23
 y 22
 end
@@ -4229,7 +4299,7 @@ arch dungeon_magic
 x 23
 y 24
 end
-arch sea
+arch pstone_1
 x 23
 y 24
 end
@@ -4265,7 +4335,11 @@ arch sea
 x 23
 y 28
 end
-arch grass
+arch dungeon_magic
+x 23
+y 29
+end
+arch sea
 x 23
 y 29
 end
@@ -4277,7 +4351,7 @@ arch grass
 x 23
 y 31
 end
-arch sea
+arch grass
 x 23
 y 32
 end
@@ -4289,51 +4363,51 @@ arch sea
 x 23
 y 34
 end
+arch sea
+x 23
+y 35
+end
 arch grass
 x 24
 end
 arch grass
 x 24
 y 1
+end
+arch grass
+x 24
+y 2
 end
 arch statue
 x 24
-y 1
+y 2
 end
 arch cobblestones
 x 24
-y 2
+y 3
 end
 arch grass
 x 24
-y 3
+y 4
 end
 arch dungeon_magic
 x 24
-y 4
+y 5
 end
 arch grass
 x 24
-y 4
+y 5
 end
 arch invis_exit
 slaying /pup_land/world
 hp 27
 sp 36
 x 24
-y 5
+y 6
 invisible 0
 end
 arch grass
 x 24
-y 5
-end
-arch dungeon_magic
-x 24
-y 6
-end
-arch sea
-x 24
 y 6
 end
 arch dungeon_magic
@@ -4403,11 +4477,19 @@ end
 arch dungeon_magic
 x 24
 y 15
+end
+arch sea
+x 24
+y 15
+end
+arch dungeon_magic
+x 24
+y 16
 end
 arch mover_3
 maxhp 1
 x 24
-y 15
+y 16
 speed 1.000000
 speed_left -1.290000
 level 1
@@ -4415,22 +4497,6 @@ attacktype 1
 end
 arch sea
 x 24
-y 15
-no_pass 0
-end
-arch dungeon_magic
-x 24
-y 16
-end
-arch mover_1
-maxhp 1
-x 24
-y 16
-level 1
-attacktype 1
-end
-arch sea
-x 24
 y 16
 no_pass 0
 end
@@ -4470,9 +4536,17 @@ arch dungeon_magic
 x 24
 y 19
 end
+arch mover_1
+maxhp 1
+x 24
+y 19
+level 1
+attacktype 1
+end
 arch sea
 x 24
 y 19
+no_pass 0
 end
 arch dungeon_magic
 x 24
@@ -4481,10 +4555,18 @@ end
 arch sea
 x 24
 y 20
+end
+arch dungeon_magic
+x 24
+y 21
+end
+arch sea
+x 24
+y 21
 end
 arch pstone_1
 x 24
-y 21
+y 22
 end
 arch hut
 name To-jyo's hut
@@ -4492,25 +4574,21 @@ slaying ../s_f/to-jyo
 hp 9
 sp 13
 x 24
-y 21
-end
-arch pstone_1
-x 24
 y 22
 end
 arch pstone_1
 x 24
 y 23
+end
+arch pstone_1
+x 24
+y 24
 end
 arch galleon
 slaying red_town/town
 hp 13
 sp 12
 x 24
-y 23
-end
-arch sea
-x 24
 y 24
 end
 arch sea
@@ -4525,15 +4603,15 @@ arch sea
 x 24
 y 27
 end
-arch dungeon_magic
-x 24
-y 28
-end
 arch sea
 x 24
 y 28
 end
-arch grass
+arch dungeon_magic
+x 24
+y 29
+end
+arch sea
 x 24
 y 29
 end
@@ -4541,7 +4619,7 @@ arch grass
 x 24
 y 30
 end
-arch sea
+arch grass
 x 24
 y 31
 end
@@ -4557,50 +4635,54 @@ arch sea
 x 24
 y 34
 end
-arch grass
+arch sea
+x 24
+y 35
+end
+arch jungle_2
 x 25
 end
 arch grass
 x 25
 y 1
 end
-arch cobblestones
+arch grass
 x 25
 y 2
 end
-arch grass
+arch cobblestones
 x 25
 y 3
 end
-arch dungeon_magic
+arch grass
 x 25
 y 4
 end
+arch dungeon_magic
+x 25
+y 5
+end
 arch brush
 x 25
-y 4
+y 5
 end
 arch invis_exit
 slaying /pup_land/world
 hp 28
 sp 36
 x 25
-y 5
+y 6
 invisible 0
-end
-arch grass
-x 25
-y 5
 end
 arch grass
 x 25
 y 6
 end
-arch sea
+arch grass
 x 25
 y 7
 end
-arch grass
+arch sea
 x 25
 y 8
 end
@@ -4620,7 +4702,7 @@ arch grass
 x 25
 y 12
 end
-arch sea
+arch grass
 x 25
 y 13
 end
@@ -4628,16 +4710,9 @@ arch sea
 x 25
 y 14
 end
-arch mover_5
-x 25
-y 15
-level 1
-attacktype 1
-end
 arch sea
 x 25
 y 15
-no_pass 0
 end
 arch mover_5
 x 25
@@ -4659,33 +4734,40 @@ end
 arch sea
 x 25
 y 17
+no_pass 0
+end
+arch mover_5
+x 25
+y 18
+level 1
+attacktype 1
+end
+arch sea
+x 25
+y 18
 no_pass 0
 end
 arch dungeon_magic
 x 25
-y 18
+y 19
 end
 arch mover_3
 maxhp 1
 x 25
-y 18
+y 19
 level 1
 attacktype 1
 end
 arch sea
 x 25
-y 18
+y 19
 no_pass 0
 end
 arch dungeon_magic
 x 25
-y 19
+y 20
 end
 arch sea
-x 25
-y 19
-end
-arch pstone_1
 x 25
 y 20
 end
@@ -4693,17 +4775,17 @@ arch pstone_1
 x 25
 y 21
 end
-arch grass
+arch pstone_1
 x 25
 y 22
 end
-arch dungeon_magic
+arch grass
 x 25
 y 23
 end
-arch sea
+arch dungeon_magic
 x 25
-y 23
+y 24
 end
 arch sea
 x 25
@@ -4721,15 +4803,15 @@ arch sea
 x 25
 y 27
 end
-arch dungeon_magic
-x 25
-y 28
-end
 arch sea
 x 25
 y 28
 end
-arch grass
+arch dungeon_magic
+x 25
+y 29
+end
+arch sea
 x 25
 y 29
 end
@@ -4737,7 +4819,7 @@ arch grass
 x 25
 y 30
 end
-arch sea
+arch grass
 x 25
 y 31
 end
@@ -4753,44 +4835,48 @@ arch sea
 x 25
 y 34
 end
-arch grass
+arch sea
+x 25
+y 35
+end
+arch jungle_2
 x 26
 end
 arch grass
 x 26
 y 1
 end
-arch sign
-x 26
-y 1
-end
-arch cobblestones
+arch grass
 x 26
 y 2
 end
-arch grass
+arch sign
+x 26
+y 2
+end
+arch cobblestones
 x 26
 y 3
 end
-arch dungeon_magic
+arch grass
 x 26
 y 4
 end
+arch dungeon_magic
+x 26
+y 5
+end
 arch brush
 x 26
-y 4
+y 5
 end
 arch invis_exit
 slaying /pup_land/world
 hp 29
 sp 36
 x 26
-y 5
+y 6
 invisible 0
-end
-arch grass
-x 26
-y 5
 end
 arch grass
 x 26
@@ -4828,7 +4914,7 @@ arch grass
 x 26
 y 14
 end
-arch sea
+arch grass
 x 26
 y 15
 end
@@ -4840,35 +4926,35 @@ arch sea
 x 26
 y 17
 end
-arch dungeon_magic
+arch sea
 x 26
 y 18
+end
+arch dungeon_magic
+x 26
+y 19
 end
 arch invis_exit
 slaying l_hB
 hp 1
 sp 3
 x 26
-y 18
+y 19
 end
 arch sea
 x 26
-y 18
+y 19
 no_pass 0
 end
 arch dungeon_magic
 x 26
-y 19
+y 20
 end
 arch sea
 x 26
-y 19
-end
-arch pstone_1
-x 26
 y 20
 end
-arch grass
+arch pstone_1
 x 26
 y 21
 end
@@ -4876,7 +4962,7 @@ arch grass
 x 26
 y 22
 end
-arch pstone_1
+arch grass
 x 26
 y 23
 end
@@ -4884,7 +4970,7 @@ arch pstone_1
 x 26
 y 24
 end
-arch sea
+arch pstone_1
 x 26
 y 25
 end
@@ -4896,10 +4982,6 @@ arch sea
 x 26
 y 27
 end
-arch dungeon_magic
-x 26
-y 28
-end
 arch sea
 x 26
 y 28
@@ -4912,11 +4994,15 @@ arch sea
 x 26
 y 29
 end
-arch grass
+arch dungeon_magic
 x 26
 y 30
 end
 arch sea
+x 26
+y 30
+end
+arch grass
 x 26
 y 31
 end
@@ -4931,6 +5017,10 @@ end
 arch sea
 x 26
 y 34
+end
+arch sea
+x 26
+y 35
 end
 arch cobblestones
 x 27
@@ -4947,25 +5037,25 @@ arch cobblestones
 x 27
 y 3
 end
-arch dungeon_magic
-x 27
-y 4
-end
 arch cobblestones
 x 27
 y 4
+end
+arch dungeon_magic
+x 27
+y 5
+end
+arch cobblestones
+x 27
+y 5
 end
 arch invis_exit
 slaying /pup_land/world
 hp 30
 sp 36
 x 27
-y 5
+y 6
 invisible 0
-end
-arch cobblestones
-x 27
-y 5
 end
 arch cobblestones
 x 27
@@ -4983,7 +5073,7 @@ arch cobblestones
 x 27
 y 9
 end
-arch woods
+arch cobblestones
 x 27
 y 10
 end
@@ -4995,7 +5085,7 @@ arch woods
 x 27
 y 12
 end
-arch grass
+arch woods
 x 27
 y 13
 end
@@ -5011,31 +5101,31 @@ arch grass
 x 27
 y 16
 end
-arch dungeon_magic
+arch grass
 x 27
 y 17
 end
-arch sea
+arch dungeon_magic
 x 27
-y 17
+y 18
 end
 arch sea
 x 27
 y 18
 end
-arch dungeon_magic
-x 27
-y 19
-end
 arch sea
 x 27
 y 19
 end
-arch pstone_1
+arch dungeon_magic
 x 27
 y 20
 end
-arch grass
+arch sea
+x 27
+y 20
+end
+arch pstone_1
 x 27
 y 21
 end
@@ -5047,15 +5137,15 @@ arch grass
 x 27
 y 23
 end
-arch woods
+arch grass
 x 27
 y 24
 end
-arch grass
+arch woods
 x 27
 y 25
 end
-arch pstone_1
+arch grass
 x 27
 y 26
 end
@@ -5067,11 +5157,7 @@ arch pstone_1
 x 27
 y 28
 end
-arch dungeon_magic
-x 27
-y 29
-end
-arch sea
+arch pstone_1
 x 27
 y 29
 end
@@ -5090,6 +5176,10 @@ end
 arch sea
 x 27
 y 31
+end
+arch dungeon_magic
+x 27
+y 32
 end
 arch sea
 x 27
@@ -5103,40 +5193,44 @@ arch sea
 x 27
 y 34
 end
+arch sea
+x 27
+y 35
+end
 arch jungle_1
 x 28
 end
-arch jungle_2
+arch jungle_1
 x 28
 y 1
 end
-arch cobblestones
+arch jungle_2
 x 28
 y 2
 end
-arch grass
+arch cobblestones
 x 28
 y 3
 end
-arch dungeon_magic
-x 28
-y 4
-end
 arch grass
 x 28
 y 4
+end
+arch dungeon_magic
+x 28
+y 5
+end
+arch grass
+x 28
+y 5
 end
 arch invis_exit
 slaying /pup_land/world
 hp 31
 sp 36
 x 28
-y 5
+y 6
 invisible 0
-end
-arch grass
-x 28
-y 5
 end
 arch grass
 x 28
@@ -5146,11 +5240,11 @@ arch grass
 x 28
 y 7
 end
-arch woods
+arch grass
 x 28
 y 8
 end
-arch cobblestones
+arch woods
 x 28
 y 9
 end
@@ -5189,27 +5283,27 @@ end
 arch cobblestones
 x 28
 y 18
+end
+arch cobblestones
+x 28
+y 19
 end
 arch tower_tob
 name lighthouse
 slaying l_h1
 hp 3
 x 28
-y 18
+y 19
 end
 arch dungeon_magic
 x 28
-y 19
+y 20
 end
 arch sea
 x 28
-y 19
-end
-arch pstone_1
-x 28
 y 20
 end
-arch grass
+arch pstone_1
 x 28
 y 21
 end
@@ -5217,11 +5311,11 @@ arch grass
 x 28
 y 22
 end
-arch woods
+arch grass
 x 28
 y 23
 end
-arch jungle_1
+arch woods
 x 28
 y 24
 end
@@ -5233,11 +5327,11 @@ arch jungle_1
 x 28
 y 26
 end
-arch woods
+arch jungle_1
 x 28
 y 27
 end
-arch grass
+arch woods
 x 28
 y 28
 end
@@ -5245,11 +5339,11 @@ arch grass
 x 28
 y 29
 end
-arch pstone_1
+arch grass
 x 28
 y 30
 end
-arch sea
+arch pstone_1
 x 28
 y 31
 end
@@ -5265,40 +5359,44 @@ arch sea
 x 28
 y 34
 end
+arch sea
+x 28
+y 35
+end
 arch jungle_1
 x 29
 end
-arch jungle_2
+arch jungle_1
 x 29
 y 1
 end
-arch cobblestones
+arch jungle_2
 x 29
 y 2
 end
-arch jungle_2
+arch cobblestones
 x 29
 y 3
 end
-arch dungeon_magic
+arch jungle_2
 x 29
 y 4
 end
+arch dungeon_magic
+x 29
+y 5
+end
 arch grass
 x 29
-y 4
+y 5
 end
 arch invis_exit
 slaying /pup_land/world
 hp 32
 sp 36
 x 29
-y 5
+y 6
 invisible 0
-end
-arch grass
-x 29
-y 5
 end
 arch grass
 x 29
@@ -5308,11 +5406,11 @@ arch grass
 x 29
 y 7
 end
-arch jungle_2
+arch grass
 x 29
 y 8
 end
-arch woods
+arch jungle_2
 x 29
 y 9
 end
@@ -5320,11 +5418,11 @@ arch woods
 x 29
 y 10
 end
-arch jungle_2
+arch woods
 x 29
 y 11
 end
-arch grass
+arch jungle_2
 x 29
 y 12
 end
@@ -5340,7 +5438,7 @@ arch grass
 x 29
 y 15
 end
-arch sea
+arch grass
 x 29
 y 16
 end
@@ -5352,15 +5450,15 @@ arch sea
 x 29
 y 18
 end
-arch dungeon_magic
-x 29
-y 19
-end
 arch sea
 x 29
 y 19
 end
-arch pstone_1
+arch dungeon_magic
+x 29
+y 20
+end
+arch sea
 x 29
 y 20
 end
@@ -5376,7 +5474,7 @@ arch pstone_1
 x 29
 y 23
 end
-arch woods
+arch pstone_1
 x 29
 y 24
 end
@@ -5384,7 +5482,7 @@ arch woods
 x 29
 y 25
 end
-arch grass
+arch woods
 x 29
 y 26
 end
@@ -5392,7 +5490,7 @@ arch grass
 x 29
 y 27
 end
-arch pstone_1
+arch grass
 x 29
 y 28
 end
@@ -5404,7 +5502,7 @@ arch pstone_1
 x 29
 y 30
 end
-arch sea
+arch pstone_1
 x 29
 y 31
 end
@@ -5420,6 +5518,10 @@ arch sea
 x 29
 y 34
 end
+arch sea
+x 29
+y 35
+end
 arch jungle_2
 x 30
 end
@@ -5427,35 +5529,35 @@ arch jungle_2
 x 30
 y 1
 end
-arch cobblestones
+arch jungle_2
 x 30
 y 2
 end
-arch woods_2
+arch cobblestones
 x 30
 y 3
 end
-arch dungeon_magic
+arch woods_2
 x 30
 y 4
 end
+arch dungeon_magic
+x 30
+y 5
+end
 arch jungle_2
 x 30
-y 4
+y 5
 end
 arch invis_exit
 slaying /pup_land/world
 hp 33
 sp 36
 x 30
-y 5
+y 6
 invisible 0
 end
 arch brush
-x 30
-y 5
-end
-arch grass
 x 30
 y 6
 end
@@ -5467,15 +5569,15 @@ arch grass
 x 30
 y 8
 end
-arch jungle_2
+arch grass
 x 30
 y 9
 end
-arch woods
+arch jungle_2
 x 30
 y 10
 end
-arch grass
+arch woods
 x 30
 y 11
 end
@@ -5483,7 +5585,7 @@ arch grass
 x 30
 y 12
 end
-arch sea
+arch grass
 x 30
 y 13
 end
@@ -5507,13 +5609,13 @@ arch sea
 x 30
 y 18
 end
-arch dungeon_magic
-x 30
-y 19
-end
 arch sea
 x 30
 y 19
+end
+arch dungeon_magic
+x 30
+y 20
 end
 arch sea
 x 30
@@ -5523,7 +5625,7 @@ arch sea
 x 30
 y 21
 end
-arch pstone_1
+arch sea
 x 30
 y 22
 end
@@ -5551,7 +5653,7 @@ arch pstone_1
 x 30
 y 28
 end
-arch sea
+arch pstone_1
 x 30
 y 29
 end
@@ -5575,46 +5677,50 @@ arch sea
 x 30
 y 34
 end
+arch sea
+x 30
+y 35
+end
 arch jungle_1
 x 31
 end
-arch jungle_2
+arch jungle_1
 x 31
 y 1
 end
-arch cobblestones
+arch jungle_2
 x 31
 y 2
 end
-arch woods_2
+arch cobblestones
 x 31
 y 3
 end
-arch dungeon_magic
+arch woods_2
 x 31
 y 4
 end
+arch dungeon_magic
+x 31
+y 5
+end
 arch jungle_2
 x 31
-y 4
+y 5
 end
 arch invis_exit
 slaying /pup_land/world
 hp 34
 sp 36
 x 31
-y 5
+y 6
 invisible 0
 end
 arch woods
 x 31
-y 5
-end
-arch brush
-x 31
 y 6
 end
-arch grass
+arch brush
 x 31
 y 7
 end
@@ -5630,7 +5736,7 @@ arch grass
 x 31
 y 10
 end
-arch sea
+arch grass
 x 31
 y 11
 end
@@ -5662,13 +5768,13 @@ arch sea
 x 31
 y 18
 end
-arch dungeon_magic
-x 31
-y 19
-end
 arch sea
 x 31
 y 19
+end
+arch dungeon_magic
+x 31
+y 20
 end
 arch sea
 x 31
@@ -5730,42 +5836,46 @@ arch sea
 x 31
 y 34
 end
+arch sea
+x 31
+y 35
+end
 arch jungle_1
 x 32
 end
-arch jungle_2
+arch jungle_1
 x 32
 y 1
 end
-arch cobblestones
+arch jungle_2
 x 32
 y 2
 end
-arch jungle_1
+arch cobblestones
 x 32
 y 3
 end
-arch dungeon_magic
+arch jungle_1
 x 32
 y 4
 end
+arch dungeon_magic
+x 32
+y 5
+end
 arch jungle_2
 x 32
-y 4
+y 5
 end
 arch invis_exit
 slaying /pup_land/world
 hp 35
 sp 36
 x 32
-y 5
+y 6
 invisible 0
 end
 arch brush
-x 32
-y 5
-end
-arch grass
 x 32
 y 6
 end
@@ -5781,7 +5891,7 @@ arch grass
 x 32
 y 9
 end
-arch sea
+arch grass
 x 32
 y 10
 end
@@ -5813,10 +5923,6 @@ arch sea
 x 32
 y 17
 end
-arch dungeon_magic
-x 32
-y 18
-end
 arch sea
 x 32
 y 18
@@ -5828,6 +5934,10 @@ end
 arch sea
 x 32
 y 19
+end
+arch dungeon_magic
+x 32
+y 20
 end
 arch sea
 x 32
@@ -5889,46 +5999,50 @@ arch sea
 x 32
 y 34
 end
+arch sea
+x 32
+y 35
+end
 arch jungle_1
 x 33
 end
-arch jungle_2
+arch jungle_1
 x 33
 y 1
 end
-arch cobblestones
+arch jungle_2
 x 33
 y 2
 end
-arch jungle_2
+arch cobblestones
 x 33
 y 3
 end
-arch dungeon_magic
+arch jungle_2
 x 33
 y 4
 end
+arch dungeon_magic
+x 33
+y 5
+end
 arch woods
 x 33
-y 4
+y 5
 end
 arch invis_exit
 slaying /pup_land/world
 hp 36
 sp 36
 x 33
-y 5
+y 6
 invisible 0
-end
-arch brush
-x 33
-y 5
 end
 arch brush
 x 33
 y 6
 end
-arch grass
+arch brush
 x 33
 y 7
 end
@@ -5936,7 +6050,7 @@ arch grass
 x 33
 y 8
 end
-arch sea
+arch grass
 x 33
 y 9
 end
@@ -5972,13 +6086,13 @@ arch sea
 x 33
 y 17
 end
-arch dungeon_magic
-x 33
-y 18
-end
 arch sea
 x 33
 y 18
+end
+arch dungeon_magic
+x 33
+y 19
 end
 arch sea
 x 33
@@ -6044,42 +6158,46 @@ arch sea
 x 33
 y 34
 end
+arch sea
+x 33
+y 35
+end
 arch jungle_1
 x 34
 end
-arch jungle_2
+arch jungle_1
 x 34
 y 1
 end
-arch cobblestones
+arch jungle_2
 x 34
 y 2
 end
-arch woods
+arch cobblestones
 x 34
 y 3
 end
-arch dungeon_magic
+arch woods
 x 34
 y 4
 end
+arch dungeon_magic
+x 34
+y 5
+end
 arch grass
 x 34
-y 4
+y 5
 end
 arch invis_exit
 slaying /pup_land/world
 hp 37
 sp 36
 x 34
-y 5
+y 6
 invisible 0
 end
 arch brush
-x 34
-y 5
-end
-arch grass
 x 34
 y 6
 end
@@ -6091,7 +6209,7 @@ arch grass
 x 34
 y 8
 end
-arch sea
+arch grass
 x 34
 y 9
 end
@@ -6127,13 +6245,13 @@ arch sea
 x 34
 y 17
 end
-arch dungeon_magic
-x 34
-y 18
-end
 arch sea
 x 34
 y 18
+end
+arch dungeon_magic
+x 34
+y 19
 end
 arch sea
 x 34
@@ -6198,4 +6316,8 @@ end
 arch sea
 x 34
 y 34
+end
+arch sea
+x 34
+y 35
 end
