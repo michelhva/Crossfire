@@ -859,8 +859,8 @@ y 16
 level 0
 material 0
 randomitems none
+move_block 0
 alive 0
-no_pass 0
 end
 arch woodfloor
 x 5
@@ -1950,8 +1950,8 @@ y 16
 level 0
 material 0
 randomitems none
+move_block 0
 alive 0
-no_pass 0
 end
 arch woodfloor
 x 11
@@ -2572,8 +2572,8 @@ y 25
 level 0
 material 0
 randomitems none
+move_block 0
 alive 0
-no_pass 0
 end
 arch woodfloor
 x 14
@@ -3080,8 +3080,8 @@ y 3
 level 0
 material 0
 randomitems none
+move_block 0
 alive 0
-no_pass 0
 end
 arch woodfloor
 x 18
@@ -3264,8 +3264,8 @@ y 25
 level 0
 material 0
 randomitems none
+move_block 0
 alive 0
-no_pass 0
 end
 arch woodfloor
 x 18
@@ -3773,8 +3773,8 @@ y 12
 level 0
 material 0
 randomitems none
+move_block 0
 alive 0
-no_pass 0
 end
 arch woodfloor
 x 21
@@ -4415,7 +4415,7 @@ name cauldron
 face cauldron_open.111
 x 23
 y 25
-no_pass 0
+move_block 0
 can_roll 0
 end
 arch afloor_right
@@ -5085,8 +5085,8 @@ y 16
 level 0
 material 0
 randomitems none
+move_block 0
 alive 0
-no_pass 0
 end
 arch woodfloor
 x 27

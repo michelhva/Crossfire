@@ -268,7 +268,7 @@ end
 arch longtable_1_4
 x 2
 y 1
-no_pass 1
+move_block all
 end
 arch cobblestones2
 x 2
@@ -303,7 +303,7 @@ end
 arch longtable_1_4
 x 2
 y 5
-no_pass 1
+move_block all
 end
 arch cobblestones2
 x 2
@@ -324,7 +324,7 @@ end
 arch longtable_1_4
 x 2
 y 7
-no_pass 1
+move_block all
 end
 arch cobblestones2
 x 2
@@ -345,7 +345,7 @@ end
 arch longtable_1_4
 x 2
 y 11
-no_pass 1
+move_block all
 end
 arch cobblestones2
 x 2
@@ -399,7 +399,7 @@ end
 arch longtable_2_2_3
 x 3
 y 1
-no_pass 1
+move_block all
 end
 arch dungeon_magic
 x 3
@@ -412,7 +412,7 @@ end
 arch longtable_2_1_1
 x 3
 y 2
-no_pass 1
+move_block all
 end
 arch dungeon_magic
 x 3
@@ -425,7 +425,7 @@ end
 arch longtable_2_1_1
 x 3
 y 3
-no_pass 1
+move_block all
 end
 arch dungeon_magic
 x 3
@@ -438,7 +438,7 @@ end
 arch longtable_2_1_1
 x 3
 y 4
-no_pass 1
+move_block all
 end
 arch dungeon_magic
 x 3
@@ -451,7 +451,7 @@ end
 arch longtable_2_2_4
 x 3
 y 5
-no_pass 1
+move_block all
 end
 arch dungeon_magic
 x 3
@@ -476,7 +476,7 @@ end
 arch longtable_2_2_3
 x 3
 y 7
-no_pass 1
+move_block all
 end
 arch cobblestones2
 x 3
@@ -485,7 +485,7 @@ end
 arch longtable_2_1_1
 x 3
 y 8
-no_pass 1
+move_block all
 end
 arch cobblestones2
 x 3
@@ -494,7 +494,7 @@ end
 arch longtable_2_1_1
 x 3
 y 9
-no_pass 1
+move_block all
 end
 arch cobblestones2
 x 3
@@ -503,7 +503,7 @@ end
 arch longtable_2_1_1
 x 3
 y 10
-no_pass 1
+move_block all
 end
 arch cobblestones2
 x 3
@@ -512,7 +512,7 @@ end
 arch longtable_2_2_4
 x 3
 y 11
-no_pass 1
+move_block all
 end
 arch cobblestones2
 x 3
@@ -870,7 +870,7 @@ end
 arch door_1
 x 7
 y 3
-no_pass 0
+move_block 0
 end
 arch cobblestones2
 x 7
@@ -1181,7 +1181,7 @@ end
 arch door_2
 x 9
 y 18
-no_pass 0
+move_block 0
 end
 arch cobblestones2
 x 10
@@ -1275,7 +1275,7 @@ end
 arch door_2
 x 10
 y 18
-no_pass 0
+move_block 0
 end
 arch cobblestones2
 x 11
@@ -1365,7 +1365,7 @@ end
 arch door_2
 x 11
 y 18
-no_pass 0
+move_block 0
 end
 arch cobblestones2
 x 12
@@ -1505,7 +1505,7 @@ end
 arch door_1
 x 13
 y 3
-no_pass 0
+move_block 0
 end
 arch cobblestones2
 x 13
@@ -1969,7 +1969,7 @@ end
 arch longtable_2_2_2
 x 17
 y 1
-no_pass 1
+move_block all
 end
 arch dungeon_magic
 x 17
@@ -1982,7 +1982,7 @@ end
 arch longtable_2_1_1
 x 17
 y 2
-no_pass 1
+move_block all
 end
 arch dungeon_magic
 x 17
@@ -1995,7 +1995,7 @@ end
 arch longtable_2_1_1
 x 17
 y 3
-no_pass 1
+move_block all
 end
 arch dungeon_magic
 x 17
@@ -2008,7 +2008,7 @@ end
 arch longtable_2_1_1
 x 17
 y 4
-no_pass 1
+move_block all
 end
 arch dungeon_magic
 x 17
@@ -2021,7 +2021,7 @@ end
 arch longtable_2_2_1
 x 17
 y 5
-no_pass 1
+move_block all
 end
 arch dungeon_magic
 x 17
@@ -2046,7 +2046,7 @@ end
 arch longtable_2_2_2
 x 17
 y 7
-no_pass 1
+move_block all
 end
 arch cobblestones2
 x 17
@@ -2055,7 +2055,7 @@ end
 arch longtable_2_1_1
 x 17
 y 8
-no_pass 1
+move_block all
 end
 arch cobblestones2
 x 17
@@ -2064,7 +2064,7 @@ end
 arch longtable_2_1_1
 x 17
 y 9
-no_pass 1
+move_block all
 end
 arch cobblestones2
 x 17
@@ -2073,7 +2073,7 @@ end
 arch longtable_2_1_1
 x 17
 y 10
-no_pass 1
+move_block all
 end
 arch cobblestones2
 x 17
@@ -2082,7 +2082,7 @@ end
 arch longtable_2_2_1
 x 17
 y 11
-no_pass 1
+move_block all
 end
 arch cobblestones2
 x 17
@@ -2140,7 +2140,7 @@ end
 arch longtable_1_3
 x 18
 y 1
-no_pass 1
+move_block all
 end
 arch cobblestones2
 x 18
@@ -2171,7 +2171,7 @@ end
 arch longtable_1_3
 x 18
 y 5
-no_pass 1
+move_block all
 end
 arch cobblestones2
 x 18
@@ -2192,7 +2192,7 @@ end
 arch longtable_1_3
 x 18
 y 7
-no_pass 1
+move_block all
 end
 arch cobblestones2
 x 18
@@ -2213,7 +2213,7 @@ end
 arch longtable_1_3
 x 18
 y 11
-no_pass 1
+move_block all
 end
 arch cobblestones2
 x 18
