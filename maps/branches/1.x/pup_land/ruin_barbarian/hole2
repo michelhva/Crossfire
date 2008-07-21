@@ -7,33 +7,63 @@ width 32
 height 42
 msg
 Created:  1997-02-27
+Modified: 2008-06-06 Arvid Norlander
 endmsg
 end
+arch flagstone
+end
 arch dun8
+end
+arch flagstone
+y 1
 end
 arch dun3
 y 1
 end
+arch flagstone
+y 2
+end
 arch dun3
 y 2
+end
+arch flagstone
+y 3
 end
 arch dun3
 y 3
 end
+arch flagstone
+y 4
+end
 arch dun3
 y 4
+end
+arch flagstone
+y 5
 end
 arch dun3
 y 5
 end
+arch flagstone
+y 6
+end
 arch dun3
 y 6
+end
+arch flagstone
+y 7
 end
 arch dun3
 y 7
 end
+arch flagstone
+y 8
+end
 arch dun3
 y 8
+end
+arch afloor_right
+y 9
 end
 arch dun11
 y 9
@@ -12930,6 +12960,14 @@ end
 arch dun2
 x 30
 y 5
+end
+arch dungeon_magic
+x 30
+y 6
+end
+arch afloor_right
+x 30
+y 6
 end
 arch button_plate
 name button (lucky)

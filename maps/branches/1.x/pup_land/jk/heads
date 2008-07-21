@@ -6,6 +6,7 @@ width 23
 height 27
 msg
 Created:  1996-02-08
+Modified: 2008-06-03 Arvid Norlander
 endmsg
 end
 arch medium_stones
@@ -17,6 +18,9 @@ y 1
 end
 arch cave18
 y 1
+end
+arch medium_stones
+y 2
 end
 arch cave3
 y 2
@@ -138,6 +142,10 @@ end
 arch cave18
 x 1
 end
+arch medium_stones
+x 1
+y 1
+end
 arch cave8
 x 1
 y 1
@@ -202,25 +210,49 @@ arch cave3
 x 1
 y 9
 end
-arch cave3
+arch medium_stones
 x 1
 y 10
 end
 arch cave3
 x 1
+y 10
+end
+arch medium_stones
+x 1
 y 11
 end
 arch cave3
+x 1
+y 11
+end
+arch medium_stones
 x 1
 y 12
 end
 arch cave3
 x 1
+y 12
+end
+arch medium_stones
+x 1
 y 13
 end
 arch cave3
 x 1
+y 13
+end
+arch medium_stones
+x 1
 y 14
+end
+arch cave3
+x 1
+y 14
+end
+arch medium_stones
+x 1
+y 15
 end
 arch cave3
 x 1
@@ -364,45 +396,89 @@ arch medium_stones
 x 2
 y 15
 end
+arch medium_stones
+x 2
+y 16
+end
 arch cave16
 x 2
 y 16
 end
-arch cave3
+arch medium_stones
 x 2
 y 17
 end
 arch cave3
 x 2
+y 17
+end
+arch medium_stones
+x 2
 y 18
 end
 arch cave3
+x 2
+y 18
+end
+arch medium_stones
 x 2
 y 19
 end
 arch cave3
 x 2
+y 19
+end
+arch medium_stones
+x 2
 y 20
 end
 arch cave3
+x 2
+y 20
+end
+arch medium_stones
 x 2
 y 21
 end
 arch cave3
 x 2
+y 21
+end
+arch medium_stones
+x 2
 y 22
 end
 arch cave3
+x 2
+y 22
+end
+arch medium_stones
 x 2
 y 23
 end
 arch cave3
 x 2
+y 23
+end
+arch medium_stones
+x 2
 y 24
 end
 arch cave3
 x 2
+y 24
+end
+arch medium_stones
+x 2
 y 25
+end
+arch cave3
+x 2
+y 25
+end
+arch medium_stones
+x 2
+y 26
 end
 arch cave3
 x 2
@@ -687,21 +763,41 @@ arch cave6
 x 4
 y 16
 end
-arch cave1
+arch medium_stones
 x 4
 y 17
 end
 arch cave1
 x 4
+y 17
+end
+arch medium_stones
+x 4
 y 18
 end
 arch cave1
+x 4
+y 18
+end
+arch medium_stones
 x 4
 y 19
 end
 arch cave1
 x 4
+y 19
+end
+arch medium_stones
+x 4
 y 20
+end
+arch cave1
+x 4
+y 20
+end
+arch medium_stones
+x 4
+y 21
 end
 arch cave5
 x 4
@@ -711,15 +807,23 @@ arch medium_stones
 x 4
 y 22
 end
+arch medium_stones
+x 4
+y 23
+end
 arch cave6
 x 4
 y 23
+end
+arch medium_stones
+x 4
+y 24
 end
 arch cave1
 x 4
 y 24
 end
-arch blocked
+arch medium_stones
 x 4
 y 25
 end
@@ -727,7 +831,7 @@ arch cave1
 x 4
 y 25
 end
-arch blocked
+arch medium_stones
 x 4
 y 26
 end
@@ -793,6 +897,10 @@ arch dungeon_floor
 x 5
 y 10
 end
+arch medium_stones
+x 5
+y 11
+end
 arch cave21
 x 5
 y 11
@@ -812,6 +920,10 @@ end
 arch large_stones
 x 5
 y 15
+end
+arch medium_stones
+x 5
+y 16
 end
 arch cave2
 x 5
@@ -833,13 +945,25 @@ arch blocked
 x 5
 y 20
 end
+arch medium_stones
+x 5
+y 21
+end
 arch cave19
 x 5
 y 21
 end
+arch medium_stones
+x 5
+y 22
+end
 arch cave1
 x 5
 y 22
+end
+arch medium_stones
+x 5
+y 23
 end
 arch cave20
 x 5
@@ -930,6 +1054,10 @@ end
 arch medium_stones
 x 6
 y 15
+end
+arch medium_stones
+x 6
+y 16
 end
 arch cave2
 x 6
@@ -1054,9 +1182,17 @@ arch pstone_3
 x 7
 y 14
 end
+arch medium_stones
+x 7
+y 15
+end
 arch cave15
 x 7
 y 15
+end
+arch medium_stones
+x 7
+y 16
 end
 arch cave20
 x 7
@@ -1108,9 +1244,17 @@ end
 arch cave4
 x 8
 end
+arch medium_stones
+x 8
+y 1
+end
 arch cave11
 x 8
 y 1
+end
+arch medium_stones
+x 8
+y 2
 end
 arch cave10
 x 8
@@ -1144,6 +1288,10 @@ arch dungeon_floor
 x 8
 y 8
 end
+arch medium_stones
+x 8
+y 9
+end
 arch cave21
 x 8
 y 9
@@ -1171,6 +1319,10 @@ end
 arch cave6
 x 8
 y 14
+end
+arch medium_stones
+x 8
+y 15
 end
 arch cave20
 x 8
@@ -1226,9 +1378,17 @@ end
 arch cave4
 x 9
 end
+arch medium_stones
+x 9
+y 1
+end
 arch cave12
 x 9
 y 1
+end
+arch medium_stones
+x 9
+y 2
 end
 arch cave9
 x 9
@@ -1285,6 +1445,10 @@ end
 arch cave1
 x 9
 y 13
+end
+arch medium_stones
+x 9
+y 14
 end
 arch cave20
 x 9
@@ -1819,6 +1983,9 @@ arch medium_stones
 x 12
 y 26
 end
+arch medium_stones
+x 13
+end
 arch blocked
 x 13
 end
@@ -1841,10 +2008,6 @@ arch medium_stones
 x 13
 y 3
 end
-arch blocked
-x 13
-y 3
-end
 arch cave4
 x 13
 y 3
@@ -1857,6 +2020,10 @@ arch locked_door2
 slaying 9head
 x 13
 y 4
+end
+arch medium_stones
+x 13
+y 5
 end
 arch cave2
 x 13
@@ -1978,6 +2145,9 @@ arch medium_stones
 x 13
 y 26
 end
+arch medium_stones
+x 14
+end
 arch cave13
 x 14
 end
@@ -1985,7 +2155,7 @@ arch medium_stones
 x 14
 y 1
 end
-arch blocked
+arch medium_stones
 x 14
 y 2
 end
@@ -1993,7 +2163,11 @@ arch cave2
 x 14
 y 2
 end
-arch blocked
+arch dungeon_magic
+x 14
+y 3
+end
+arch medium_stones
 x 14
 y 3
 end
@@ -2008,6 +2182,14 @@ end
 arch dungeon_magic
 x 14
 y 4
+end
+arch dungeon_magic
+x 14
+y 5
+end
+arch medium_stones
+x 14
+y 5
 end
 arch cave2
 x 14
@@ -2135,6 +2317,10 @@ arch dungeon_floor
 x 14
 y 21
 end
+arch medium_stones
+x 14
+y 22
+end
 arch cave21
 x 14
 y 22
@@ -2168,13 +2354,13 @@ arch medium_stones
 x 15
 y 1
 end
-arch blocked
-x 15
-y 1
-end
 arch cave6
 x 15
 y 1
+end
+arch medium_stones
+x 15
+y 2
 end
 arch blocked
 x 15
@@ -2184,7 +2370,11 @@ arch cave20
 x 15
 y 2
 end
-arch blocked
+arch dungeon_magic
+x 15
+y 3
+end
+arch medium_stones
 x 15
 y 3
 end
@@ -2199,6 +2389,14 @@ end
 arch dungeon_magic
 x 15
 y 4
+end
+arch dungeon_magic
+x 15
+y 5
+end
+arch medium_stones
+x 15
+y 5
 end
 arch cave2
 x 15
@@ -2339,11 +2537,15 @@ arch medium_stones
 x 15
 y 26
 end
-arch blocked
+arch medium_stones
 x 16
 end
 arch cave1
 x 16
+end
+arch medium_stones
+x 16
+y 1
 end
 arch blocked
 x 16
@@ -2357,7 +2559,11 @@ arch blocked
 x 16
 y 2
 end
-arch blocked
+arch dungeon_magic
+x 16
+y 3
+end
+arch medium_stones
 x 16
 y 3
 end
@@ -2380,6 +2586,14 @@ end
 arch dungeon_magic
 x 16
 y 4
+end
+arch dungeon_magic
+x 16
+y 5
+end
+arch medium_stones
+x 16
+y 5
 end
 arch cave2
 x 16
@@ -2517,6 +2731,10 @@ arch pstone_3
 x 16
 y 25
 end
+arch medium_stones
+x 16
+y 26
+end
 arch cave15
 x 16
 y 26
@@ -2532,23 +2750,27 @@ arch blocked
 x 17
 y 2
 end
-arch blocked
+arch medium_stones
 x 17
 y 3
 end
-arch blocked
+arch cave19
+x 17
+y 3
+end
+arch medium_stones
 x 17
 y 4
 end
-arch cave5
+arch cave1
 x 17
 y 4
 end
-arch blocked
+arch medium_stones
 x 17
 y 5
 end
-arch cave2
+arch cave20
 x 17
 y 5
 end
@@ -2631,6 +2853,10 @@ arch blocked
 x 17
 y 13
 end
+arch medium_stones
+x 17
+y 14
+end
 arch pit_open
 hp 8
 sp 3
@@ -2671,6 +2897,10 @@ end
 arch dungeon_floor
 x 17
 y 19
+end
+arch medium_stones
+x 17
+y 20
 end
 arch cave21
 x 17
