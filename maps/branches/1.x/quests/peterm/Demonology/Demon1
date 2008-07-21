@@ -5,6 +5,7 @@ width 15
 height 15
 msg
 Created:  1994-05-30 peterm (peterm@soda.berkeley.edu)
+Modified: 2008-05-23 Arvid Norlander
 endmsg
 end
 arch woodfloor
@@ -1261,7 +1262,7 @@ end
 arch charwoman
 name overworked gossipy cleaning woman
 msg
-@match hi|Hi
+@match hi|hello
 Hello to you, and good day, please
 don't mind me, i'm just straightening
 up a bit.
@@ -1284,7 +1285,7 @@ of their own name, it strikes fear
 into them.  So if you can get the name
 of the elementals, you may be able to
 force them to tell you what you want.
-@match thank you|Thank you
+@match thank you
 Why you're welcome!  It's really rare
 to find adventurers these days who
 have any manners whatsoever

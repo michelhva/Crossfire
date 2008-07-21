@@ -3227,12 +3227,12 @@ name Guardian Dragon
 msg
 @match altar|trigger
 <mumble> <sigh>
-@match King|king|Grey|grey
+@match king|grey
 You better get the king's permission
 first, and then I will let you in!
 Unfortunately, the king is inside...
 <chortle>
-@match rincess
+@match princess
 Princess? mmm.... princess...
 I collect princess scalps, did you
 know?
@@ -3334,7 +3334,7 @@ end
 arch sage
 name Grey King
 msg
-@match Seal|seal
+@match seal
 Ahh, whats-his-face must have sent you.
 You may go upstairs and talk to the
 sphinx.
@@ -3345,7 +3345,7 @@ downstairs.
 @match door|open
 Do you have my seal? You need my seal
 to open the door.
-@match crown|Crown
+@match crown
 It's very simple, moron!
 Go upstairs, get my crown, and place
 it on the altar. THEN you may continue

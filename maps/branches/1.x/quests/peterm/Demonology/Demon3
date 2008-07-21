@@ -5,6 +5,7 @@ width 15
 height 25
 msg
 Created:  1994-05-30 peterm (peterm@soda.berkeley.edu)
+Modified: 2008-05-23 Arvid Norlander
 endmsg
 end
 arch woodfloor
@@ -389,7 +390,7 @@ end
 arch lich
 name Dead Master of Earth
 msg
-@match Word
+@match word
 HAHAHAHAHAHAHAHAHAHAHA!!!!!!!
 @match Ycronrcldeth
 AAAAAAARRRRRGGGGGGHHHHH.......
@@ -409,7 +410,7 @@ end
 arch lich
 name Dead Master of Air
 msg
-@match Word
+@match word
 You think I'm going to tell you the
 word?  Well, why should I?  You can't
 do anything to me, I'm already dead.
@@ -1029,20 +1030,20 @@ end
 arch charwoman
 name even more gossipy cleaning woman
 msg
-@match hello|Hi|hi|boo
+@match hello|hi|boo
 You're not planning on opening those
 doors are you????
 If you are, let me run downstairs.
 Opening the gates summons the
 Guardians!
-@match Guardians|Guardian|guardians
+@match guardian|guardians
 yes, two visible, and two invisible.
 They guard the Portals in the corners
 of the rooms.  The Dead can be
 summoned by means of those portals.
 The Masters used the portals to
 question those who have passed on.
-@match word|Word|password|teleport
+@match word|password|teleport
 The teleporters lead to the levels
 above.  Each of the Masters had a
 syllable of the Word.  They had to
@@ -1053,7 +1054,7 @@ share the Word.  They spoke the
 Word in the order of their power,
 Air, Earth, Water, Fire.  But
 the Word died with them.
-@match Portal
+@match portal
 Yes, you can summon the dead
 with those portals if you know
 their names.  Getting them to
@@ -1069,7 +1070,7 @@ end
 arch lich
 name Dead Master of Water
 msg
-@match word|Word
+@match word
 I will not tell you.
 @match Brenlorien
 huunnnnnhhh....
@@ -1086,7 +1087,7 @@ end
 arch lich
 name Dead Master of Fire
 msg
-@match Word|word
+@match word
 I will not speak it to you.
 @match Brunvelden
 ....'rachakamar'........
@@ -1359,20 +1360,20 @@ end
 arch charwoman
 name even more gossipy cleaning woman
 msg
-@match hello|Hi|hi|boo
+@match hello|hi|boo
 You're not planning on opening those
 doors are you????
 If you are, let me run downstairs.
 Opening the gates summons the
 Guardians!
-@match Guardians|Guardian|guardians
+@match guardian|guardians
 yes, two visible, and two invisibile.
 They guard the Portals in the corners
 of the rooms.  The Dead can be
 summoned by means of those portals.
 The Masters used the portals to
 question those who have passed on.
-@match word|Word|password|teleport
+@match word|password|teleport
 The teleporters lead to the levels
 above.  Each of the Masters had a
 syllable of the Word.  They had to
@@ -1383,7 +1384,7 @@ share the Word.  They spoke the
 Word in the order of their power,
 Air, Earth, Water, Fire.  But
 the Word died with them.
-@match Portal
+@match portal
 Yes, you can summon the dead
 with those portals if you know
 their names.  Getting them to

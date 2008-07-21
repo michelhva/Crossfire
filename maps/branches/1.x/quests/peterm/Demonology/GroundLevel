@@ -804,7 +804,7 @@ end
 arch guildmaster
 name receptionist
 msg
-@match admission|Admission|enroll|teach
+@match admission|enroll|teach
 Admission is 1500 gold.
 Be careful, the apprentices
 can be rambunctious.
