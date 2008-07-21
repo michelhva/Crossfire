@@ -6,6 +6,7 @@ width 17
 height 17
 msg
 Created:  1996-02-02
+Modified: 2008-06-20 Arvid Norlander
 endmsg
 end
 arch blocked
@@ -331,6 +332,7 @@ x 3
 y 5
 end
 arch locked_door2
+slaying no_key
 x 3
 y 5
 end
@@ -592,6 +594,7 @@ x 5
 y 13
 end
 arch locked_door1
+slaying no_key
 x 5
 y 13
 end
@@ -1191,6 +1194,7 @@ x 11
 y 13
 end
 arch locked_door1
+slaying no_key
 x 11
 y 13
 end
@@ -1353,6 +1357,7 @@ x 13
 y 5
 end
 arch locked_door2
+slaying no_key
 x 13
 y 5
 end
