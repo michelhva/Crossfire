@@ -526,7 +526,7 @@ end
 arch rough_wall_4
 x 2
 y 20
-no_pass 0
+move_block 0
 end
 arch medium_stones
 x 2
@@ -713,7 +713,7 @@ end
 arch rough_wall_4
 x 3
 y 20
-no_pass 0
+move_block 0
 end
 arch medium_stones
 x 3

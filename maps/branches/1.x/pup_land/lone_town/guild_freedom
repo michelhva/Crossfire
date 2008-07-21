@@ -669,8 +669,8 @@ y 7
 level 0
 material 0
 randomitems none
+move_block 0
 alive 0
-no_pass 0
 pass_thru 0
 end
 arch woodfloor
@@ -686,8 +686,8 @@ y 8
 level 0
 material 0
 randomitems none
+move_block 0
 alive 0
-no_pass 0
 pass_thru 0
 end
 arch woodfloor
@@ -1114,8 +1114,8 @@ y 7
 level 0
 material 0
 randomitems none
+move_block 0
 alive 0
-no_pass 0
 pass_thru 0
 end
 arch woodfloor
@@ -1131,8 +1131,8 @@ y 8
 level 0
 material 0
 randomitems none
+move_block 0
 alive 0
-no_pass 0
 pass_thru 0
 end
 arch woodfloor
@@ -1245,8 +1245,8 @@ x 12
 y 11
 material 0
 value 0
+move_block all
 no_pick 1
-no_pass 1
 end
 arch magic_ear
 name 2
@@ -1266,8 +1266,8 @@ x 12
 y 12
 material 0
 value 0
+move_block all
 no_pick 1
-no_pass 1
 end
 arch woodfloor
 x 12
@@ -1278,8 +1278,8 @@ x 12
 y 13
 material 0
 value 0
+move_block all
 no_pick 1
-no_pass 1
 end
 arch woodfloor
 x 12

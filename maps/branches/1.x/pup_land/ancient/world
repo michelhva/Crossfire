@@ -2055,7 +2055,7 @@ end
 arch mountain2
 x 12
 y 14
-no_pass 1
+move_block all
 blocksview 0
 end
 arch invis_exit
@@ -2231,13 +2231,13 @@ end
 arch mountain2
 x 13
 y 14
-no_pass 1
+move_block all
 blocksview 0
 end
 arch mountain2
 x 13
 y 15
-no_pass 1
+move_block all
 blocksview 0
 end
 arch dungeon_magic
@@ -2398,7 +2398,7 @@ end
 arch mountain2
 x 14
 y 14
-no_pass 1
+move_block all
 blocksview 0
 end
 arch invis_exit

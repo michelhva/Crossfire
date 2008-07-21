@@ -356,7 +356,7 @@ arch biglake_nw
 name hot water
 x 2
 y 11
-no_pass 0
+move_block 0
 end
 arch woodfloor
 x 2
@@ -366,7 +366,7 @@ arch biglake_center
 name hot water
 x 2
 y 12
-no_pass 0
+move_block 0
 end
 arch woodfloor
 x 2
@@ -376,7 +376,7 @@ arch biglake_sw
 name hot water
 x 2
 y 13
-no_pass 0
+move_block 0
 end
 arch woodfloor
 x 2
@@ -500,7 +500,7 @@ arch biglake_center
 name hot water
 x 3
 y 11
-no_pass 0
+move_block 0
 end
 arch magic_mouth
 msg
@@ -517,7 +517,7 @@ arch biglake_center
 name hot water
 x 3
 y 12
-no_pass 0
+move_block 0
 end
 arch fog
 x 3
@@ -531,7 +531,7 @@ arch biglake_center
 name hot water
 x 3
 y 13
-no_pass 0
+move_block 0
 end
 arch woodfloor
 x 3
@@ -683,7 +683,7 @@ arch biglake_ne
 name hot water
 x 4
 y 11
-no_pass 0
+move_block 0
 end
 arch woodfloor
 x 4
@@ -693,7 +693,7 @@ arch biglake_center
 name hot water
 x 4
 y 12
-no_pass 0
+move_block 0
 end
 arch woodfloor
 x 4
@@ -703,7 +703,7 @@ arch biglake_se
 name hot water
 x 4
 y 13
-no_pass 0
+move_block 0
 end
 arch woodfloor
 x 4
@@ -736,7 +736,7 @@ end
 arch door_look_2
 x 4
 y 17
-no_pass 0
+move_block 0
 blocksview 1
 end
 arch cobblestones2
@@ -770,7 +770,7 @@ end
 arch door_look_2
 x 4
 y 21
-no_pass 0
+move_block 0
 blocksview 1
 end
 arch cobblestones2
@@ -896,7 +896,7 @@ end
 arch door_look_1
 x 5
 y 15
-no_pass 0
+move_block 0
 blocksview 1
 end
 arch cobblestones2
@@ -1076,7 +1076,7 @@ end
 arch door_look_1
 x 6
 y 19
-no_pass 0
+move_block 0
 end
 arch cobblestones2
 x 6
@@ -1601,7 +1601,7 @@ end
 arch door_look_1
 x 9
 y 19
-no_pass 0
+move_block 0
 end
 arch cobblestones2
 x 9
@@ -1804,7 +1804,7 @@ end
 arch door_look_2
 x 10
 y 23
-no_pass 0
+move_block 0
 end
 arch cobblestones2
 x 10
@@ -1937,7 +1937,7 @@ end
 arch door_look_1
 x 11
 y 22
-no_pass 0
+move_block 0
 end
 arch cobblestones2
 x 11
@@ -2002,7 +2002,7 @@ end
 arch door_look_2
 x 12
 y 5
-no_pass 0
+move_block 0
 blocksview 1
 end
 arch cobblestones2
@@ -2044,7 +2044,7 @@ end
 arch door_look_2
 x 12
 y 10
-no_pass 0
+move_block 0
 blocksview 1
 end
 arch cobblestones2
@@ -2086,7 +2086,7 @@ end
 arch door_look_2
 x 12
 y 15
-no_pass 0
+move_block 0
 blocksview 1
 end
 arch cobblestones2
@@ -2128,7 +2128,7 @@ end
 arch door_look_2
 x 12
 y 20
-no_pass 0
+move_block 0
 blocksview 1
 end
 arch cobblestones2

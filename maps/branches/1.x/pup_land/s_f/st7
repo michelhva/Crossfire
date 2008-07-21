@@ -568,7 +568,7 @@ arch lake
 name fountain
 x 6
 y 6
-no_pass 0
+move_block 0
 end
 arch altar
 slaying golden axe
@@ -693,7 +693,7 @@ x 7
 y 7
 weight 2000000
 move_type 1
-no_pass 1
+move_block all
 can_roll 1
 end
 arch flagstone

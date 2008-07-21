@@ -114,17 +114,17 @@ end
 arch biglake_center
 x 1
 y 1
-no_pass 0
+move_block 0
 end
 arch biglake_center
 x 1
 y 2
-no_pass 0
+move_block 0
 end
 arch biglake_center
 x 1
 y 3
-no_pass 0
+move_block 0
 end
 arch dungeon_floor
 x 1
@@ -237,7 +237,7 @@ end
 arch biglake_center
 x 2
 y 1
-no_pass 0
+move_block 0
 end
 arch altar
 slaying A Huge Block of Frozen Water
@@ -249,12 +249,12 @@ end
 arch biglake_center
 x 2
 y 2
-no_pass 0
+move_block 0
 end
 arch biglake_center
 x 2
 y 3
-no_pass 0
+move_block 0
 end
 arch dungeon_floor
 x 2
@@ -398,17 +398,17 @@ end
 arch biglake_center
 x 3
 y 3
-no_pass 0
+move_block 0
 end
 arch biglake_center
 x 3
 y 4
-no_pass 0
+move_block 0
 end
 arch biglake_center
 x 3
 y 5
-no_pass 0
+move_block 0
 end
 arch dungeon_floor
 x 3
@@ -546,7 +546,7 @@ end
 arch biglake_center
 x 4
 y 5
-no_pass 0
+move_block 0
 end
 arch pit_open
 hp 17
@@ -1927,22 +1927,22 @@ end
 arch biglake_center
 x 17
 y 8
-no_pass 0
+move_block 0
 end
 arch biglake_center
 x 17
 y 9
-no_pass 0
+move_block 0
 end
 arch biglake_center
 x 17
 y 10
-no_pass 0
+move_block 0
 end
 arch biglake_center
 x 17
 y 11
-no_pass 0
+move_block 0
 end
 arch exit
 slaying ../aqueduct

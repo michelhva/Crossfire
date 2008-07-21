@@ -102,7 +102,7 @@ end
 arch blocked
 x 1
 y 5
-no_pass 0
+move_block 0
 is_floor 1
 end
 arch blocked
@@ -207,7 +207,7 @@ end
 arch wall_2_1_1
 x 2
 y 5
-no_pass 0
+move_block 0
 end
 arch afloor_right
 x 2
@@ -776,7 +776,7 @@ end
 arch blocked
 x 5
 y 24
-no_pass 0
+move_block 0
 is_floor 1
 end
 arch blocked
@@ -957,7 +957,7 @@ end
 arch wall_2_1_1
 x 6
 y 24
-no_pass 0
+move_block 0
 end
 arch afloor_right
 x 6
@@ -1461,7 +1461,7 @@ end
 arch blocked
 x 9
 y 1
-no_pass 0
+move_block 0
 end
 arch afloor_right
 x 9
@@ -1470,7 +1470,7 @@ end
 arch wall_2_1_2
 x 9
 y 2
-no_pass 0
+move_block 0
 end
 arch afloor_right
 x 9
@@ -1679,7 +1679,7 @@ end
 arch wall_2_1_2
 x 10
 y 8
-no_pass 0
+move_block 0
 end
 arch magic_ear
 msg
@@ -1692,19 +1692,19 @@ end
 arch blocked
 x 10
 y 9
-no_pass 0
+move_block 0
 is_floor 1
 end
 arch blocked
 x 10
 y 10
-no_pass 0
+move_block 0
 is_floor 1
 end
 arch blocked
 x 10
 y 11
-no_pass 0
+move_block 0
 is_floor 1
 end
 arch pedestal
@@ -1715,7 +1715,7 @@ end
 arch blocked
 x 10
 y 12
-no_pass 0
+move_block 0
 is_floor 1
 end
 arch blocked
@@ -2425,7 +2425,7 @@ end
 arch blocked
 x 13
 y 19
-no_pass 0
+move_block 0
 is_floor 1
 end
 arch pedestal
@@ -2437,7 +2437,7 @@ end
 arch blocked
 x 13
 y 20
-no_pass 0
+move_block 0
 is_floor 1
 end
 arch afloor_right
@@ -2447,7 +2447,7 @@ end
 arch wall_2_1_2
 x 13
 y 21
-no_pass 0
+move_block 0
 end
 arch afloor_right
 x 13
@@ -2671,7 +2671,7 @@ end
 arch wall_2_1_2
 x 14
 y 27
-no_pass 0
+move_block 0
 end
 arch invis_exit
 slaying siegfried.B5
@@ -2682,7 +2682,7 @@ end
 arch blocked
 x 14
 y 28
-no_pass 0
+move_block 0
 is_floor 1
 end
 arch blocked
@@ -3632,7 +3632,7 @@ end
 arch blocked
 x 18
 y 14
-no_pass 0
+move_block 0
 is_floor 1
 end
 arch blocked
@@ -3803,7 +3803,7 @@ end
 arch blocked
 x 19
 y 14
-no_pass 0
+move_block 0
 is_floor 1
 end
 arch blocked
@@ -3968,7 +3968,7 @@ end
 arch wall_2_1_1
 x 20
 y 14
-no_pass 0
+move_block 0
 end
 arch afloor_right
 x 20
@@ -4996,7 +4996,7 @@ end
 arch blocked
 x 27
 y 10
-no_pass 0
+move_block 0
 is_floor 1
 end
 arch afloor_right
@@ -5006,7 +5006,7 @@ end
 arch wall_2_1_2
 x 27
 y 11
-no_pass 0
+move_block 0
 end
 arch afloor_right
 x 27
@@ -5135,7 +5135,7 @@ end
 arch wall_2_1_2
 x 28
 y 17
-no_pass 0
+move_block 0
 end
 arch invis_exit
 slaying siegfried.B5
@@ -5146,7 +5146,7 @@ end
 arch blocked
 x 28
 y 18
-no_pass 0
+move_block 0
 is_floor 1
 end
 arch blocked

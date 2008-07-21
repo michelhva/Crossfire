@@ -1220,8 +1220,8 @@ arch power_crystal
 name Mysterious Crystal Pillar
 x 9
 y 8
+move_block all
 no_pick 1
-no_pass 1
 end
 arch flagstone
 x 9
@@ -1235,8 +1235,8 @@ arch power_crystal
 name Mysterious Crystal Pillar
 x 9
 y 10
+move_block all
 no_pick 1
-no_pass 1
 end
 arch flagstone
 x 9
@@ -1439,8 +1439,8 @@ arch power_crystal
 name Mysterious Crystal Pillar
 x 11
 y 8
+move_block all
 no_pick 1
-no_pass 1
 end
 arch flagstone
 x 11
@@ -1454,8 +1454,8 @@ arch power_crystal
 name Mysterious Crystal Pillar
 x 11
 y 10
+move_block all
 no_pick 1
-no_pass 1
 end
 arch flagstone
 x 11
@@ -2025,7 +2025,7 @@ name toy building block
 x 15
 y 18
 weight 10
-no_pass 0
+move_block 0
 can_roll 0
 end
 arch rock
@@ -2033,7 +2033,7 @@ name toy building block
 x 15
 y 18
 weight 10
-no_pass 0
+move_block 0
 can_roll 0
 end
 arch rock
@@ -2041,7 +2041,7 @@ name toy building block
 x 15
 y 18
 weight 10
-no_pass 0
+move_block 0
 can_roll 0
 end
 arch rock
@@ -2049,7 +2049,7 @@ name toy building block
 x 15
 y 18
 weight 10
-no_pass 0
+move_block 0
 can_roll 0
 end
 arch rock
@@ -2057,7 +2057,7 @@ name toy building block
 x 15
 y 18
 weight 10
-no_pass 0
+move_block 0
 can_roll 0
 end
 arch rock
@@ -2065,7 +2065,7 @@ name toy building block
 x 15
 y 18
 weight 10
-no_pass 0
+move_block 0
 can_roll 0
 end
 arch rock
@@ -2073,7 +2073,7 @@ name toy building block
 x 15
 y 18
 weight 10
-no_pass 0
+move_block 0
 can_roll 0
 end
 arch rock
@@ -2081,7 +2081,7 @@ name toy building block
 x 15
 y 18
 weight 10
-no_pass 0
+move_block 0
 can_roll 0
 end
 arch rock
@@ -2089,7 +2089,7 @@ name toy building block
 x 15
 y 18
 weight 10
-no_pass 0
+move_block 0
 can_roll 0
 end
 arch dungeon_floor
@@ -2106,8 +2106,8 @@ name pla-model
 x 15
 y 19
 weight 10
+move_block 0
 no_pick 0
-no_pass 0
 end
 arch angel
 x 15
@@ -2237,8 +2237,8 @@ name pla-model
 x 16
 y 19
 weight 10
+move_block 0
 no_pick 0
-no_pass 0
 end
 arch angel
 x 16
@@ -2376,8 +2376,8 @@ name pla-model
 x 17
 y 19
 weight 10
+move_block 0
 no_pick 0
-no_pass 0
 end
 arch angel
 x 17
@@ -2520,8 +2520,8 @@ name pla-model
 x 18
 y 19
 weight 10
+move_block 0
 no_pick 0
-no_pass 0
 end
 arch angel
 x 18
@@ -2657,8 +2657,8 @@ name pla-model
 x 19
 y 19
 weight 10
+move_block 0
 no_pick 0
-no_pass 0
 end
 arch angel
 x 19

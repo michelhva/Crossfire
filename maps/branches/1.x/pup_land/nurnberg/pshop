@@ -1414,7 +1414,7 @@ end
 arch door_look_1
 x 10
 y 4
-no_pass 0
+move_block 0
 end
 arch dungeon_floor
 x 10
@@ -1526,7 +1526,7 @@ end
 arch door_look_1
 x 11
 y 4
-no_pass 0
+move_block 0
 end
 arch dungeon_floor
 x 11
@@ -1646,7 +1646,7 @@ end
 arch door_look_1
 x 12
 y 4
-no_pass 0
+move_block 0
 end
 arch dungeon_floor
 x 12

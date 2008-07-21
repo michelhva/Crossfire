@@ -2564,7 +2564,7 @@ end
 arch door_2
 x 19
 y 22
-no_pass 0
+move_block 0
 end
 arch dungeon_magic
 x 19
@@ -2707,7 +2707,7 @@ end
 arch door_2
 x 20
 y 22
-no_pass 0
+move_block 0
 end
 arch dungeon_magic
 x 20

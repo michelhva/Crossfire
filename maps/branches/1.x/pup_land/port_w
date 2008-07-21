@@ -3208,7 +3208,7 @@ end
 arch sea
 x 23
 y 13
-no_pass 0
+move_block 0
 end
 arch longship
 slaying port_e_house
@@ -3307,7 +3307,7 @@ end
 arch sea
 x 24
 y 13
-no_pass 0
+move_block 0
 end
 arch sea
 x 24

@@ -320,7 +320,7 @@ end
 arch pillars
 x 3
 y 9
-no_pass 1
+move_block all
 end
 arch pstone_1
 x 3
@@ -586,7 +586,7 @@ end
 arch pillars
 x 7
 y 3
-no_pass 1
+move_block all
 end
 arch pstone_2
 x 7
@@ -622,7 +622,7 @@ end
 arch pillars
 x 7
 y 9
-no_pass 1
+move_block all
 end
 arch pstone_1
 x 7
@@ -743,7 +743,7 @@ end
 arch pillars
 x 9
 y 5
-no_pass 1
+move_block all
 end
 arch pstone_2
 x 9

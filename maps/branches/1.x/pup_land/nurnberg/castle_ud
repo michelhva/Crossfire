@@ -874,7 +874,7 @@ x 9
 end
 arch sea
 x 9
-no_pass 0
+move_block 0
 end
 arch cityport_a
 name gate
@@ -888,7 +888,7 @@ end
 arch sea
 x 9
 y 1
-no_pass 0
+move_block 0
 end
 arch dungeon_floor
 x 9
@@ -1051,7 +1051,7 @@ end
 arch sea
 x 10
 y 1
-no_pass 0
+move_block 0
 end
 arch dungeon_floor
 x 10
@@ -1142,7 +1142,7 @@ resist_confusion 100
 resist_drain 100
 move_block 0
 alive 1
-no_pass 0
+move_block 0
 tear_down 1
 end
 arch dungeon_floor
@@ -1191,7 +1191,7 @@ end
 arch sea
 x 11
 y 1
-no_pass 0
+move_block 0
 end
 arch dungeon_floor
 x 11
@@ -1275,7 +1275,7 @@ end
 arch sea
 x 12
 y 1
-no_pass 0
+move_block 0
 end
 arch dungeon_floor
 x 12
@@ -1359,7 +1359,7 @@ end
 arch sea
 x 13
 y 1
-no_pass 0
+move_block 0
 end
 arch dungeon_floor
 x 13
@@ -1443,7 +1443,7 @@ end
 arch sea
 x 14
 y 1
-no_pass 0
+move_block 0
 end
 arch dungeon_floor
 x 14
@@ -1526,7 +1526,7 @@ end
 arch sea
 x 15
 y 1
-no_pass 0
+move_block 0
 end
 arch grate_closed_2
 x 15
@@ -1650,7 +1650,7 @@ end
 arch sea
 x 16
 y 1
-no_pass 0
+move_block 0
 end
 arch dungeon_floor
 x 16
@@ -1770,7 +1770,7 @@ end
 arch sea
 x 17
 y 1
-no_pass 0
+move_block 0
 end
 arch dungeon_floor
 x 17
@@ -1842,7 +1842,7 @@ end
 arch sea
 x 18
 y 1
-no_pass 0
+move_block 0
 end
 arch dungeon_floor
 x 18
@@ -1946,7 +1946,7 @@ end
 arch sea
 x 19
 y 1
-no_pass 0
+move_block 0
 end
 arch dungeon_floor
 x 19
@@ -2038,7 +2038,7 @@ end
 arch sea
 x 20
 y 1
-no_pass 0
+move_block 0
 end
 arch dungeon_floor
 x 20
@@ -2110,7 +2110,7 @@ end
 arch sea
 x 21
 y 1
-no_pass 0
+move_block 0
 end
 arch dungeon_floor
 x 21
@@ -2182,7 +2182,7 @@ end
 arch sea
 x 22
 y 1
-no_pass 0
+move_block 0
 end
 arch mover_3
 x 22
@@ -2192,7 +2192,7 @@ end
 arch sea
 x 22
 y 2
-no_pass 0
+move_block 0
 end
 arch dungeon_floor
 x 22
@@ -2275,7 +2275,7 @@ end
 arch sea
 x 23
 y 2
-no_pass 0
+move_block 0
 end
 arch mover_5
 x 23
@@ -2285,7 +2285,7 @@ end
 arch sea
 x 23
 y 3
-no_pass 0
+move_block 0
 end
 arch mover_5
 x 23
@@ -2295,7 +2295,7 @@ end
 arch sea
 x 23
 y 4
-no_pass 0
+move_block 0
 end
 arch mover_5
 x 23
@@ -2305,7 +2305,7 @@ end
 arch sea
 x 23
 y 5
-no_pass 0
+move_block 0
 end
 arch mover_5
 x 23
@@ -2315,7 +2315,7 @@ end
 arch sea
 x 23
 y 6
-no_pass 0
+move_block 0
 end
 arch mover_5
 x 23
@@ -2325,7 +2325,7 @@ end
 arch sea
 x 23
 y 7
-no_pass 0
+move_block 0
 end
 arch mover_5
 x 23
@@ -2335,7 +2335,7 @@ end
 arch sea
 x 23
 y 8
-no_pass 0
+move_block 0
 end
 arch mover_5
 x 23
@@ -2345,7 +2345,7 @@ end
 arch sea
 x 23
 y 9
-no_pass 0
+move_block 0
 end
 arch mover_5
 x 23
@@ -2355,7 +2355,7 @@ end
 arch sea
 x 23
 y 10
-no_pass 0
+move_block 0
 end
 arch mover_5
 x 23
@@ -2365,7 +2365,7 @@ end
 arch sea
 x 23
 y 11
-no_pass 0
+move_block 0
 end
 arch mover_5
 maxhp 1
@@ -2377,7 +2377,7 @@ end
 arch sea
 x 23
 y 12
-no_pass 0
+move_block 0
 end
 arch mover_5
 maxhp 1
@@ -2389,7 +2389,7 @@ end
 arch sea
 x 23
 y 13
-no_pass 0
+move_block 0
 end
 arch mover_5
 maxhp 1
@@ -2401,7 +2401,7 @@ end
 arch sea
 x 23
 y 14
-no_pass 0
+move_block 0
 end
 arch invis_exit
 slaying aqueduct
@@ -2419,7 +2419,7 @@ end
 arch sea
 x 23
 y 15
-no_pass 0
+move_block 0
 end
 arch dungeon_floor
 x 24

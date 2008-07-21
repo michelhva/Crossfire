@@ -904,12 +904,12 @@ end
 arch biglake_center
 x 4
 y 5
-no_pass 0
+move_block 0
 end
 arch biglake_center
 x 4
 y 6
-no_pass 0
+move_block 0
 end
 arch dungeon_floor
 x 4
@@ -1157,7 +1157,7 @@ end
 arch biglake_center
 x 5
 y 4
-no_pass 0
+move_block 0
 end
 arch button_lever
 x 5
@@ -1182,17 +1182,17 @@ end
 arch biglake_center
 x 5
 y 5
-no_pass 0
+move_block 0
 end
 arch biglake_center
 x 5
 y 6
-no_pass 0
+move_block 0
 end
 arch biglake_center
 x 5
 y 7
-no_pass 0
+move_block 0
 end
 arch dungeon_floor
 x 5
@@ -1380,7 +1380,7 @@ end
 arch biglake_center
 x 6
 y 4
-no_pass 0
+move_block 0
 end
 arch firewall_5
 x 6
@@ -1394,17 +1394,17 @@ end
 arch biglake_center
 x 6
 y 5
-no_pass 0
+move_block 0
 end
 arch biglake_center
 x 6
 y 6
-no_pass 0
+move_block 0
 end
 arch biglake_center
 x 6
 y 7
-no_pass 0
+move_block 0
 end
 arch dungeon_floor
 x 6
@@ -1628,12 +1628,12 @@ end
 arch biglake_center
 x 7
 y 5
-no_pass 0
+move_block 0
 end
 arch biglake_center
 x 7
 y 6
-no_pass 0
+move_block 0
 end
 arch dungeon_floor
 x 7
@@ -3349,7 +3349,7 @@ x 14
 y 23
 speed -0.050000
 level 100
-no_pass 0
+move_block 0
 blocksview 0
 arch spell_counterwall
 end

@@ -316,7 +316,7 @@ end
 arch sea
 x 5
 y 3
-no_pass 0
+move_block 0
 end
 arch mover_3
 x 5
@@ -329,7 +329,7 @@ end
 arch sea
 x 5
 y 4
-no_pass 0
+move_block 0
 end
 arch mover_3
 x 5
@@ -342,7 +342,7 @@ end
 arch sea
 x 5
 y 5
-no_pass 0
+move_block 0
 end
 arch grassdark
 name grass
@@ -399,7 +399,7 @@ end
 arch sea
 x 6
 y 3
-no_pass 0
+move_block 0
 end
 arch mover_3
 x 6
@@ -412,7 +412,7 @@ end
 arch sea
 x 6
 y 4
-no_pass 0
+move_block 0
 end
 arch mover_1
 x 6
@@ -425,7 +425,7 @@ end
 arch sea
 x 6
 y 5
-no_pass 0
+move_block 0
 end
 arch grassdark
 name grass
@@ -485,7 +485,7 @@ end
 arch sea
 x 7
 y 3
-no_pass 0
+move_block 0
 end
 arch mover_3
 x 7
@@ -497,7 +497,7 @@ arch sea
 x 7
 y 4
 speed 0.500000
-no_pass 0
+move_block 0
 end
 arch mover_3
 face director.121
@@ -513,7 +513,7 @@ end
 arch sea
 x 7
 y 5
-no_pass 0
+move_block 0
 end
 arch grassdark
 name grass
@@ -578,7 +578,7 @@ end
 arch sea
 x 8
 y 4
-no_pass 0
+move_block 0
 end
 arch grassdark
 name grass
@@ -652,7 +652,7 @@ end
 arch sea
 x 9
 y 4
-no_pass 0
+move_block 0
 end
 arch dungeon_floor
 x 9
@@ -717,7 +717,7 @@ end
 arch sea
 x 10
 y 4
-no_pass 0
+move_block 0
 end
 arch dungeon_floor
 x 10
@@ -778,7 +778,7 @@ end
 arch sea
 x 11
 y 4
-no_pass 0
+move_block 0
 end
 arch dungeon_floor
 x 11
@@ -847,7 +847,7 @@ end
 arch sea
 x 12
 y 4
-no_pass 0
+move_block 0
 end
 arch grassdark
 name grass
@@ -914,7 +914,7 @@ end
 arch sea
 x 13
 y 4
-no_pass 0
+move_block 0
 end
 arch mover_5
 x 13
@@ -927,7 +927,7 @@ end
 arch sea
 x 13
 y 5
-no_pass 0
+move_block 0
 end
 arch mover_3
 x 13
@@ -940,7 +940,7 @@ end
 arch sea
 x 13
 y 6
-no_pass 0
+move_block 0
 end
 arch dungeon_floor
 x 13
@@ -1005,7 +1005,7 @@ end
 arch sea
 x 14
 y 6
-no_pass 0
+move_block 0
 end
 arch mover_3
 x 14
@@ -1018,7 +1018,7 @@ end
 arch sea
 x 14
 y 7
-no_pass 0
+move_block 0
 end
 arch dungeon_floor
 x 14
@@ -1084,7 +1084,7 @@ end
 arch sea
 x 15
 y 7
-no_pass 0
+move_block 0
 end
 arch dungeon_floor
 x 15
@@ -1144,7 +1144,7 @@ end
 arch sea
 x 16
 y 4
-no_pass 0
+move_block 0
 end
 arch mover_1
 x 16
@@ -1157,7 +1157,7 @@ end
 arch sea
 x 16
 y 5
-no_pass 0
+move_block 0
 end
 arch mover_1
 x 16
@@ -1170,7 +1170,7 @@ end
 arch sea
 x 16
 y 6
-no_pass 0
+move_block 0
 end
 arch mover_1
 x 16
@@ -1183,7 +1183,7 @@ end
 arch sea
 x 16
 y 7
-no_pass 0
+move_block 0
 end
 arch dungeon_floor
 x 16
@@ -1223,7 +1223,7 @@ end
 arch sea
 x 17
 y 2
-no_pass 0
+move_block 0
 end
 arch mover_1
 x 17
@@ -1236,7 +1236,7 @@ end
 arch sea
 x 17
 y 3
-no_pass 0
+move_block 0
 end
 arch mover_1
 x 17
@@ -1249,7 +1249,7 @@ end
 arch sea
 x 17
 y 4
-no_pass 0
+move_block 0
 end
 arch dungeon_floor
 x 17
@@ -1298,7 +1298,7 @@ end
 arch sea
 x 18
 y 1
-no_pass 0
+move_block 0
 end
 arch mover_1
 x 18
@@ -1311,7 +1311,7 @@ end
 arch sea
 x 18
 y 2
-no_pass 0
+move_block 0
 end
 arch grassdark
 name grass
@@ -1377,7 +1377,7 @@ end
 arch sea
 x 19
 y 1
-no_pass 0
+move_block 0
 end
 arch grassdark
 name grass
@@ -1463,7 +1463,7 @@ end
 arch sea
 x 20
 y 1
-no_pass 0
+move_block 0
 end
 arch mover_3
 x 20
@@ -1476,7 +1476,7 @@ end
 arch sea
 x 20
 y 2
-no_pass 0
+move_block 0
 end
 arch grassdark
 name grass
@@ -1558,7 +1558,7 @@ end
 arch sea
 x 21
 y 2
-no_pass 0
+move_block 0
 end
 arch mover_5
 x 21
@@ -1571,7 +1571,7 @@ end
 arch sea
 x 21
 y 3
-no_pass 0
+move_block 0
 end
 arch mover_5
 x 21
@@ -1584,7 +1584,7 @@ end
 arch sea
 x 21
 y 4
-no_pass 0
+move_block 0
 end
 arch mover_3
 x 21
@@ -1597,7 +1597,7 @@ end
 arch sea
 x 21
 y 5
-no_pass 0
+move_block 0
 end
 arch grassdark
 name grass
@@ -1676,7 +1676,7 @@ end
 arch sea
 x 22
 y 5
-no_pass 0
+move_block 0
 end
 arch mover_3
 x 22
@@ -1689,7 +1689,7 @@ end
 arch sea
 x 22
 y 6
-no_pass 0
+move_block 0
 end
 arch grassdark
 name grass
@@ -1766,7 +1766,7 @@ end
 arch sea
 x 23
 y 6
-no_pass 0
+move_block 0
 end
 arch hills_rocky
 x 23
@@ -1839,7 +1839,7 @@ end
 arch sea
 x 24
 y 6
-no_pass 0
+move_block 0
 end
 arch dungeon_floor
 x 24
@@ -1905,7 +1905,7 @@ end
 arch sea
 x 25
 y 6
-no_pass 0
+move_block 0
 end
 arch hills_rocky
 x 25
@@ -1965,7 +1965,7 @@ end
 arch sea
 x 26
 y 6
-no_pass 0
+move_block 0
 end
 arch hills_rocky
 x 26
@@ -2030,7 +2030,7 @@ end
 arch sea
 x 27
 y 6
-no_pass 0
+move_block 0
 end
 arch grassdark
 name grass
@@ -2089,7 +2089,7 @@ end
 arch sea
 x 28
 y 6
-no_pass 0
+move_block 0
 end
 arch grassdark
 name grass
@@ -2150,7 +2150,7 @@ end
 arch sea
 x 29
 y 6
-no_pass 0
+move_block 0
 end
 arch grassdark
 name grass
@@ -2207,7 +2207,7 @@ end
 arch sea
 x 30
 y 6
-no_pass 0
+move_block 0
 end
 arch sea
 x 30
@@ -2265,7 +2265,7 @@ end
 arch sea
 x 31
 y 6
-no_pass 0
+move_block 0
 end
 arch mover_3
 x 31
@@ -2278,7 +2278,7 @@ end
 arch sea
 x 31
 y 7
-no_pass 0
+move_block 0
 end
 arch grassdark
 name grass
@@ -2337,7 +2337,7 @@ end
 arch sea
 x 32
 y 7
-no_pass 0
+move_block 0
 end
 arch sea
 x 32
@@ -2386,7 +2386,7 @@ end
 arch sea
 x 33
 y 5
-no_pass 0
+move_block 0
 end
 arch mover_1
 x 33
@@ -2399,7 +2399,7 @@ end
 arch sea
 x 33
 y 6
-no_pass 0
+move_block 0
 end
 arch mover_1
 x 33
@@ -2412,7 +2412,7 @@ end
 arch sea
 x 33
 y 7
-no_pass 0
+move_block 0
 end
 arch sea
 x 33
@@ -2461,7 +2461,7 @@ end
 arch sea
 x 34
 y 5
-no_pass 0
+move_block 0
 end
 arch sea
 x 34
@@ -2517,7 +2517,7 @@ end
 arch sea
 x 35
 y 5
-no_pass 0
+move_block 0
 end
 arch sea
 x 35
@@ -2572,7 +2572,7 @@ end
 arch sea
 x 36
 y 5
-no_pass 0
+move_block 0
 end
 arch sea
 x 36
@@ -2626,7 +2626,7 @@ end
 arch sea
 x 37
 y 5
-no_pass 0
+move_block 0
 end
 arch sea
 x 37
@@ -2678,7 +2678,7 @@ end
 arch sea
 x 38
 y 5
-no_pass 0
+move_block 0
 end
 arch sea
 x 38
@@ -2730,7 +2730,7 @@ end
 arch sea
 x 39
 y 5
-no_pass 0
+move_block 0
 end
 arch sea
 x 39
@@ -2782,7 +2782,7 @@ end
 arch sea
 x 40
 y 5
-no_pass 0
+move_block 0
 end
 arch sea
 x 40
@@ -2834,7 +2834,7 @@ end
 arch sea
 x 41
 y 5
-no_pass 0
+move_block 0
 end
 arch sea
 x 41

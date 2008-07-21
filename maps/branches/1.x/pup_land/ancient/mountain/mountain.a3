@@ -9,59 +9,59 @@ Created:  1996-02-28
 endmsg
 end
 arch mountain2
-no_pass 1
+move_block all
 end
 arch mountain2
 y 1
-no_pass 1
+move_block all
 end
 arch mountain2
 y 2
-no_pass 1
+move_block all
 end
 arch mountain2
 y 3
-no_pass 1
+move_block all
 end
 arch mountain2
 y 4
-no_pass 1
+move_block all
 end
 arch mountain2
 y 5
-no_pass 1
+move_block all
 end
 arch mountain2
 y 6
-no_pass 1
+move_block all
 end
 arch mountain2
 y 7
-no_pass 1
+move_block all
 end
 arch mountain2
 y 8
-no_pass 1
+move_block all
 end
 arch mountain2
 y 9
-no_pass 1
+move_block all
 end
 arch mountain2
 y 10
-no_pass 1
+move_block all
 end
 arch mountain2
 y 11
-no_pass 1
+move_block all
 end
 arch mountain2
 y 12
-no_pass 1
+move_block all
 end
 arch mountain2
 y 13
-no_pass 1
+move_block all
 end
 arch mountain
 y 14
@@ -125,11 +125,11 @@ y 23
 end
 arch mountain2
 y 24
-no_pass 1
+move_block all
 end
 arch mountain2
 y 25
-no_pass 1
+move_block all
 end
 arch mountain
 y 26
@@ -163,105 +163,105 @@ y 29
 end
 arch mountain2
 y 30
-no_pass 1
+move_block all
 end
 arch mountain2
 y 31
-no_pass 1
+move_block all
 end
 arch mountain2
 x 1
-no_pass 1
+move_block all
 end
 arch mountain2
 x 1
 y 1
-no_pass 1
+move_block all
 end
 arch mountain2
 x 1
 y 2
-no_pass 1
+move_block all
 end
 arch mountain2
 x 1
 y 3
-no_pass 1
+move_block all
 end
 arch mountain2
 x 1
 y 4
-no_pass 1
+move_block all
 end
 arch mountain2
 x 1
 y 5
-no_pass 1
+move_block all
 end
 arch mountain2
 x 1
 y 6
-no_pass 1
+move_block all
 end
 arch mountain2
 x 1
 y 7
-no_pass 1
+move_block all
 end
 arch mountain2
 x 1
 y 8
-no_pass 1
+move_block all
 end
 arch mountain2
 x 1
 y 9
-no_pass 1
+move_block all
 end
 arch mountain2
 x 1
 y 10
-no_pass 1
+move_block all
 end
 arch mountain2
 x 1
 y 11
-no_pass 1
+move_block all
 end
 arch mountain2
 x 1
 y 12
-no_pass 1
+move_block all
 end
 arch mountain2
 x 1
 y 13
-no_pass 1
+move_block all
 end
 arch mountain2
 x 1
 y 14
-no_pass 1
+move_block all
 end
 arch mountain2
 x 1
 y 15
-no_pass 1
+move_block all
 end
 arch mountain2
 x 1
 y 16
-no_pass 1
+move_block all
 end
 arch mountain2
 x 1
 y 17
-no_pass 1
+move_block all
 end
 arch mountain2
 x 1
 y 18
-no_pass 1
+move_block all
 end
 arch large_stones
 x 1
@@ -286,12 +286,12 @@ end
 arch mountain2
 x 1
 y 24
-no_pass 1
+move_block all
 end
 arch mountain2
 x 1
 y 25
-no_pass 1
+move_block all
 end
 arch mountain
 x 1
@@ -312,61 +312,61 @@ end
 arch mountain2
 x 1
 y 30
-no_pass 1
+move_block all
 end
 arch mountain2
 x 1
 y 31
-no_pass 1
+move_block all
 end
 arch mountain2
 x 2
-no_pass 1
+move_block all
 end
 arch mountain2
 x 2
 y 1
-no_pass 1
+move_block all
 end
 arch mountain2
 x 2
 y 2
-no_pass 1
+move_block all
 end
 arch mountain2
 x 2
 y 3
-no_pass 1
+move_block all
 end
 arch mountain2
 x 2
 y 4
-no_pass 1
+move_block all
 end
 arch mountain2
 x 2
 y 5
-no_pass 1
+move_block all
 end
 arch mountain2
 x 2
 y 6
-no_pass 1
+move_block all
 end
 arch mountain2
 x 2
 y 7
-no_pass 1
+move_block all
 end
 arch mountain2
 x 2
 y 8
-no_pass 1
+move_block all
 end
 arch mountain2
 x 2
 y 9
-no_pass 1
+move_block all
 end
 arch mountain
 x 2
@@ -427,12 +427,12 @@ end
 arch mountain2
 x 2
 y 24
-no_pass 1
+move_block all
 end
 arch mountain2
 x 2
 y 25
-no_pass 1
+move_block all
 end
 arch large_stones
 x 2
@@ -457,36 +457,36 @@ end
 arch mountain2
 x 2
 y 30
-no_pass 1
+move_block all
 end
 arch mountain2
 x 2
 y 31
-no_pass 1
+move_block all
 end
 arch mountain2
 x 3
-no_pass 1
+move_block all
 end
 arch mountain2
 x 3
 y 1
-no_pass 1
+move_block all
 end
 arch mountain2
 x 3
 y 2
-no_pass 1
+move_block all
 end
 arch mountain2
 x 3
 y 3
-no_pass 1
+move_block all
 end
 arch mountain2
 x 3
 y 4
-no_pass 1
+move_block all
 end
 arch mountain
 x 3
@@ -567,12 +567,12 @@ end
 arch mountain2
 x 3
 y 24
-no_pass 1
+move_block all
 end
 arch mountain2
 x 3
 y 25
-no_pass 1
+move_block all
 end
 arch large_stones
 x 3
@@ -593,31 +593,31 @@ end
 arch mountain2
 x 3
 y 30
-no_pass 1
+move_block all
 end
 arch mountain2
 x 3
 y 31
-no_pass 1
+move_block all
 end
 arch mountain2
 x 4
-no_pass 1
+move_block all
 end
 arch mountain2
 x 4
 y 1
-no_pass 1
+move_block all
 end
 arch mountain2
 x 4
 y 2
-no_pass 1
+move_block all
 end
 arch mountain2
 x 4
 y 3
-no_pass 1
+move_block all
 end
 arch mountain
 x 4
@@ -706,17 +706,17 @@ end
 arch mountain2
 x 4
 y 23
-no_pass 1
+move_block all
 end
 arch mountain2
 x 4
 y 24
-no_pass 1
+move_block all
 end
 arch mountain2
 x 4
 y 25
-no_pass 1
+move_block all
 end
 arch grass
 x 4
@@ -741,21 +741,21 @@ end
 arch mountain2
 x 4
 y 31
-no_pass 1
+move_block all
 end
 arch mountain2
 x 5
-no_pass 1
+move_block all
 end
 arch mountain2
 x 5
 y 1
-no_pass 1
+move_block all
 end
 arch mountain2
 x 5
 y 2
-no_pass 1
+move_block all
 end
 arch mountain
 x 5
@@ -812,52 +812,52 @@ end
 arch mountain2
 x 5
 y 16
-no_pass 1
+move_block all
 end
 arch mountain2
 x 5
 y 17
-no_pass 1
+move_block all
 end
 arch mountain2
 x 5
 y 18
-no_pass 1
+move_block all
 end
 arch mountain2
 x 5
 y 19
-no_pass 1
+move_block all
 end
 arch mountain2
 x 5
 y 20
-no_pass 1
+move_block all
 end
 arch mountain2
 x 5
 y 21
-no_pass 1
+move_block all
 end
 arch mountain2
 x 5
 y 22
-no_pass 1
+move_block all
 end
 arch mountain2
 x 5
 y 23
-no_pass 1
+move_block all
 end
 arch mountain2
 x 5
 y 24
-no_pass 1
+move_block all
 end
 arch mountain2
 x 5
 y 25
-no_pass 1
+move_block all
 end
 arch grass
 x 5
@@ -890,16 +890,16 @@ end
 arch mountain2
 x 5
 y 31
-no_pass 1
+move_block all
 end
 arch mountain2
 x 6
-no_pass 1
+move_block all
 end
 arch mountain2
 x 6
 y 1
-no_pass 1
+move_block all
 end
 arch mountain
 x 6
@@ -960,52 +960,52 @@ end
 arch mountain2
 x 6
 y 16
-no_pass 1
+move_block all
 end
 arch mountain2
 x 6
 y 17
-no_pass 1
+move_block all
 end
 arch mountain2
 x 6
 y 18
-no_pass 1
+move_block all
 end
 arch mountain2
 x 6
 y 19
-no_pass 1
+move_block all
 end
 arch mountain2
 x 6
 y 20
-no_pass 1
+move_block all
 end
 arch mountain2
 x 6
 y 21
-no_pass 1
+move_block all
 end
 arch mountain2
 x 6
 y 22
-no_pass 1
+move_block all
 end
 arch mountain2
 x 6
 y 23
-no_pass 1
+move_block all
 end
 arch mountain2
 x 6
 y 24
-no_pass 1
+move_block all
 end
 arch mountain2
 x 6
 y 25
-no_pass 1
+move_block all
 end
 arch grass
 x 6
@@ -1030,16 +1030,16 @@ end
 arch mountain2
 x 6
 y 31
-no_pass 1
+move_block all
 end
 arch mountain2
 x 7
-no_pass 1
+move_block all
 end
 arch mountain2
 x 7
 y 1
-no_pass 1
+move_block all
 end
 arch mountain
 x 7
@@ -1124,12 +1124,12 @@ end
 arch mountain2
 x 7
 y 20
-no_pass 1
+move_block all
 end
 arch mountain2
 x 7
 y 21
-no_pass 1
+move_block all
 end
 arch mountain
 x 7
@@ -1174,16 +1174,16 @@ end
 arch mountain2
 x 7
 y 31
-no_pass 1
+move_block all
 end
 arch mountain2
 x 8
-no_pass 1
+move_block all
 end
 arch mountain2
 x 8
 y 1
-no_pass 1
+move_block all
 end
 arch mountain
 x 8
@@ -1264,17 +1264,17 @@ end
 arch mountain2
 x 8
 y 20
-no_pass 1
+move_block all
 end
 arch mountain2
 x 8
 y 21
-no_pass 1
+move_block all
 end
 arch mountain2
 x 8
 y 22
-no_pass 1
+move_block all
 end
 arch mountain
 x 8
@@ -1315,16 +1315,16 @@ end
 arch mountain2
 x 8
 y 31
-no_pass 1
+move_block all
 end
 arch mountain2
 x 9
-no_pass 1
+move_block all
 end
 arch mountain2
 x 9
 y 1
-no_pass 1
+move_block all
 end
 arch mountain
 x 9
@@ -1409,12 +1409,12 @@ end
 arch mountain2
 x 9
 y 21
-no_pass 1
+move_block all
 end
 arch mountain2
 x 9
 y 22
-no_pass 1
+move_block all
 end
 arch mountain
 x 9
@@ -1451,7 +1451,7 @@ end
 arch mountain
 x 9
 y 29
-no_pass 1
+move_block all
 blocksview 0
 end
 arch swall_2_2_2
@@ -1465,7 +1465,7 @@ end
 arch mountain
 x 9
 y 30
-no_pass 1
+move_block all
 blocksview 0
 end
 arch swall_2_1_1
@@ -1475,7 +1475,7 @@ end
 arch mountain
 x 9
 y 31
-no_pass 1
+move_block all
 blocksview 0
 end
 arch swall_1_2
@@ -1484,12 +1484,12 @@ y 31
 end
 arch mountain2
 x 10
-no_pass 1
+move_block all
 end
 arch mountain2
 x 10
 y 1
-no_pass 1
+move_block all
 end
 arch mountain
 x 10
@@ -1582,12 +1582,12 @@ end
 arch mountain2
 x 10
 y 21
-no_pass 1
+move_block all
 end
 arch mountain2
 x 10
 y 22
-no_pass 1
+move_block all
 end
 arch mountain
 x 10
@@ -1624,7 +1624,7 @@ end
 arch mountain
 x 10
 y 29
-no_pass 1
+move_block all
 blocksview 0
 end
 arch swall_2_1_2
@@ -1641,12 +1641,12 @@ y 31
 end
 arch mountain2
 x 11
-no_pass 1
+move_block all
 end
 arch mountain2
 x 11
 y 1
-no_pass 1
+move_block all
 end
 arch mountain
 x 11
@@ -1727,12 +1727,12 @@ end
 arch mountain2
 x 11
 y 21
-no_pass 1
+move_block all
 end
 arch mountain2
 x 11
 y 22
-no_pass 1
+move_block all
 end
 arch mountain
 x 11
@@ -1757,7 +1757,7 @@ end
 arch mountain
 x 11
 y 27
-no_pass 1
+move_block all
 blocksview 0
 end
 arch swall_2_2_2
@@ -1771,7 +1771,7 @@ end
 arch mountain
 x 11
 y 28
-no_pass 1
+move_block all
 blocksview 0
 end
 arch swall_2_1_1
@@ -1785,7 +1785,7 @@ end
 arch mountain
 x 11
 y 29
-no_pass 1
+move_block all
 blocksview 0
 end
 arch swall_2_2_4
@@ -1802,12 +1802,12 @@ y 31
 end
 arch mountain2
 x 12
-no_pass 1
+move_block all
 end
 arch mountain2
 x 12
 y 1
-no_pass 1
+move_block all
 end
 arch mountain
 x 12
@@ -1892,12 +1892,12 @@ end
 arch mountain2
 x 12
 y 21
-no_pass 1
+move_block all
 end
 arch mountain2
 x 12
 y 22
-no_pass 1
+move_block all
 end
 arch mountain
 x 12
@@ -1926,7 +1926,7 @@ end
 arch mountain
 x 12
 y 26
-no_pass 1
+move_block all
 blocksview 0
 end
 arch swall_2_2_2
@@ -1940,7 +1940,7 @@ end
 arch mountain
 x 12
 y 27
-no_pass 1
+move_block all
 blocksview 0
 end
 arch swall_2_2_4
@@ -1965,7 +1965,7 @@ y 31
 end
 arch mountain2
 x 13
-no_pass 1
+move_block all
 end
 arch mountain
 x 13
@@ -2050,12 +2050,12 @@ end
 arch mountain2
 x 13
 y 21
-no_pass 1
+move_block all
 end
 arch mountain2
 x 13
 y 22
-no_pass 1
+move_block all
 end
 arch mountain
 x 13
@@ -2068,7 +2068,7 @@ end
 arch mountain
 x 13
 y 24
-no_pass 1
+move_block all
 blocksview 0
 end
 arch swall_2_2_2
@@ -2082,7 +2082,7 @@ end
 arch mountain
 x 13
 y 25
-no_pass 1
+move_block all
 blocksview 0
 end
 arch swall_2_1_1
@@ -2096,7 +2096,7 @@ end
 arch mountain
 x 13
 y 26
-no_pass 1
+move_block all
 blocksview 0
 end
 arch swall_3_1
@@ -2129,11 +2129,11 @@ end
 arch sea
 x 13
 y 31
-no_pass 0
+move_block 0
 end
 arch mountain2
 x 14
-no_pass 1
+move_block all
 end
 arch mountain
 x 14
@@ -2226,7 +2226,7 @@ end
 arch mountain2
 x 14
 y 21
-no_pass 1
+move_block all
 end
 arch dungeon_magic
 x 14
@@ -2235,7 +2235,7 @@ end
 arch mountain
 x 14
 y 22
-no_pass 1
+move_block all
 blocksview 0
 end
 arch swall_1_1
@@ -2249,7 +2249,7 @@ end
 arch mountain
 x 14
 y 23
-no_pass 1
+move_block all
 blocksview 0
 end
 arch swall_2_1_1
@@ -2263,7 +2263,7 @@ end
 arch mountain
 x 14
 y 24
-no_pass 1
+move_block all
 blocksview 0
 end
 arch swall_2_2_4
@@ -2281,7 +2281,7 @@ end
 arch mountain
 x 14
 y 26
-no_pass 1
+move_block all
 blocksview 0
 end
 arch swall_2_1_2
@@ -2314,11 +2314,11 @@ end
 arch sea
 x 14
 y 31
-no_pass 0
+move_block 0
 end
 arch mountain2
 x 15
-no_pass 1
+move_block all
 end
 arch mountain
 x 15
@@ -2428,7 +2428,7 @@ end
 arch mountain
 x 15
 y 26
-no_pass 1
+move_block all
 blocksview 0
 end
 arch swall_2_1_2
@@ -2461,11 +2461,11 @@ end
 arch sea
 x 15
 y 31
-no_pass 0
+move_block 0
 end
 arch mountain2
 x 16
-no_pass 1
+move_block all
 end
 arch mountain
 x 16
@@ -2584,7 +2584,7 @@ end
 arch mountain
 x 16
 y 26
-no_pass 1
+move_block all
 blocksview 0
 end
 arch swall_2_1_2
@@ -2621,11 +2621,11 @@ end
 arch sea
 x 16
 y 31
-no_pass 0
+move_block 0
 end
 arch mountain2
 x 17
-no_pass 1
+move_block all
 end
 arch mountain
 x 17
@@ -2751,7 +2751,7 @@ end
 arch mountain
 x 17
 y 26
-no_pass 1
+move_block all
 blocksview 0
 end
 arch swall_2_1_2
@@ -2784,11 +2784,11 @@ end
 arch sea
 x 17
 y 31
-no_pass 0
+move_block 0
 end
 arch mountain2
 x 18
-no_pass 1
+move_block all
 end
 arch mountain
 x 18
@@ -2849,7 +2849,7 @@ end
 arch mountain
 x 18
 y 14
-no_pass 1
+move_block all
 blocksview 0
 end
 arch swall_2_2_2
@@ -2863,7 +2863,7 @@ end
 arch mountain
 x 18
 y 15
-no_pass 1
+move_block all
 blocksview 0
 end
 arch swall_2_1_1
@@ -2877,7 +2877,7 @@ end
 arch mountain
 x 18
 y 16
-no_pass 1
+move_block all
 blocksview 0
 end
 arch swall_2_2_1
@@ -2887,12 +2887,12 @@ end
 arch mountain2
 x 18
 y 17
-no_pass 1
+move_block all
 end
 arch mountain2
 x 18
 y 18
-no_pass 1
+move_block all
 end
 arch mountain
 x 18
@@ -2913,12 +2913,12 @@ end
 arch mountain2
 x 18
 y 23
-no_pass 1
+move_block all
 end
 arch mountain2
 x 18
 y 24
-no_pass 1
+move_block all
 end
 arch dungeon_magic
 x 18
@@ -2927,7 +2927,7 @@ end
 arch mountain
 x 18
 y 25
-no_pass 1
+move_block all
 blocksview 0
 end
 arch swall_1_1
@@ -2941,7 +2941,7 @@ end
 arch mountain
 x 18
 y 26
-no_pass 1
+move_block all
 blocksview 0
 end
 arch swall_2_2_4
@@ -2974,11 +2974,11 @@ end
 arch sea
 x 18
 y 31
-no_pass 0
+move_block 0
 end
 arch mountain2
 x 19
-no_pass 1
+move_block all
 end
 arch mountain
 x 19
@@ -3031,7 +3031,7 @@ end
 arch mountain
 x 19
 y 10
-no_pass 1
+move_block all
 blocksview 0
 end
 arch swall_2_2_2
@@ -3045,7 +3045,7 @@ end
 arch mountain
 x 19
 y 11
-no_pass 1
+move_block all
 blocksview 0
 end
 arch swall_2_1_1
@@ -3059,7 +3059,7 @@ end
 arch mountain
 x 19
 y 12
-no_pass 1
+move_block all
 blocksview 0
 end
 arch swall_2_1_1
@@ -3073,7 +3073,7 @@ end
 arch mountain
 x 19
 y 13
-no_pass 1
+move_block all
 blocksview 0
 end
 arch swall_2_1_1
@@ -3087,7 +3087,7 @@ end
 arch mountain
 x 19
 y 14
-no_pass 1
+move_block all
 blocksview 0
 end
 arch swall_2_2_4
@@ -3109,42 +3109,42 @@ end
 arch mountain2
 x 19
 y 17
-no_pass 1
+move_block all
 end
 arch mountain2
 x 19
 y 18
-no_pass 1
+move_block all
 end
 arch mountain2
 x 19
 y 19
-no_pass 1
+move_block all
 end
 arch mountain2
 x 19
 y 20
-no_pass 1
+move_block all
 end
 arch mountain2
 x 19
 y 21
-no_pass 1
+move_block all
 end
 arch mountain2
 x 19
 y 22
-no_pass 1
+move_block all
 end
 arch mountain2
 x 19
 y 23
-no_pass 1
+move_block all
 end
 arch mountain2
 x 19
 y 24
-no_pass 1
+move_block all
 end
 arch dungeon_magic
 x 19
@@ -3153,7 +3153,7 @@ end
 arch mountain
 x 19
 y 25
-no_pass 1
+move_block all
 blocksview 0
 end
 arch pstone_1
@@ -3186,11 +3186,11 @@ end
 arch sea
 x 19
 y 31
-no_pass 0
+move_block 0
 end
 arch mountain2
 x 20
-no_pass 1
+move_block all
 end
 arch mountain
 x 20
@@ -3219,7 +3219,7 @@ end
 arch mountain
 x 20
 y 6
-no_pass 1
+move_block all
 blocksview 0
 end
 arch swall_2_2_2
@@ -3233,7 +3233,7 @@ end
 arch mountain
 x 20
 y 7
-no_pass 1
+move_block all
 blocksview 0
 end
 arch swall_2_1_1
@@ -3247,7 +3247,7 @@ end
 arch mountain
 x 20
 y 8
-no_pass 1
+move_block all
 blocksview 0
 end
 arch swall_2_1_1
@@ -3261,7 +3261,7 @@ end
 arch mountain
 x 20
 y 9
-no_pass 1
+move_block all
 blocksview 0
 end
 arch swall_2_1_1
@@ -3275,7 +3275,7 @@ end
 arch mountain
 x 20
 y 10
-no_pass 1
+move_block all
 blocksview 0
 end
 arch swall_2_2_4
@@ -3325,32 +3325,32 @@ end
 arch mountain2
 x 20
 y 18
-no_pass 1
+move_block all
 end
 arch mountain2
 x 20
 y 19
-no_pass 1
+move_block all
 end
 arch mountain2
 x 20
 y 20
-no_pass 1
+move_block all
 end
 arch mountain2
 x 20
 y 21
-no_pass 1
+move_block all
 end
 arch mountain2
 x 20
 y 22
-no_pass 1
+move_block all
 end
 arch mountain2
 x 20
 y 23
-no_pass 1
+move_block all
 end
 arch dungeon_magic
 x 20
@@ -3359,7 +3359,7 @@ end
 arch mountain
 x 20
 y 24
-no_pass 1
+move_block all
 blocksview 0
 end
 arch dungeon_magic
@@ -3369,7 +3369,7 @@ end
 arch mountain
 x 20
 y 25
-no_pass 1
+move_block all
 blocksview 0
 end
 arch pstone_1
@@ -3402,11 +3402,11 @@ end
 arch sea
 x 20
 y 31
-no_pass 0
+move_block 0
 end
 arch mountain2
 x 21
-no_pass 1
+move_block all
 end
 arch mountain
 x 21
@@ -3431,7 +3431,7 @@ end
 arch mountain
 x 21
 y 3
-no_pass 1
+move_block all
 blocksview 0
 end
 arch swall_2_2_2
@@ -3445,7 +3445,7 @@ end
 arch mountain
 x 21
 y 4
-no_pass 1
+move_block all
 blocksview 0
 end
 arch swall_2_1_1
@@ -3459,7 +3459,7 @@ end
 arch mountain
 x 21
 y 5
-no_pass 1
+move_block all
 blocksview 0
 end
 arch swall_2_1_1
@@ -3473,7 +3473,7 @@ end
 arch mountain
 x 21
 y 6
-no_pass 1
+move_block all
 blocksview 0
 end
 arch swall_2_2_4
@@ -3534,32 +3534,32 @@ end
 arch mountain2
 x 21
 y 18
-no_pass 1
+move_block all
 end
 arch mountain2
 x 21
 y 19
-no_pass 1
+move_block all
 end
 arch mountain2
 x 21
 y 20
-no_pass 1
+move_block all
 end
 arch mountain2
 x 21
 y 21
-no_pass 1
+move_block all
 end
 arch mountain2
 x 21
 y 22
-no_pass 1
+move_block all
 end
 arch mountain2
 x 21
 y 23
-no_pass 1
+move_block all
 end
 arch dungeon_magic
 x 21
@@ -3568,7 +3568,7 @@ end
 arch mountain
 x 21
 y 24
-no_pass 1
+move_block all
 blocksview 0
 end
 arch pstone_1
@@ -3609,11 +3609,11 @@ end
 arch sea
 x 21
 y 31
-no_pass 0
+move_block 0
 end
 arch mountain2
 x 22
-no_pass 1
+move_block all
 end
 arch mountain
 x 22
@@ -3626,7 +3626,7 @@ end
 arch mountain
 x 22
 y 2
-no_pass 1
+move_block all
 blocksview 0
 end
 arch swall_2_2_2
@@ -3640,7 +3640,7 @@ end
 arch mountain
 x 22
 y 3
-no_pass 1
+move_block all
 blocksview 0
 end
 arch swall_2_2_4
@@ -3718,27 +3718,27 @@ end
 arch mountain2
 x 22
 y 18
-no_pass 1
+move_block all
 end
 arch mountain2
 x 22
 y 19
-no_pass 1
+move_block all
 end
 arch mountain2
 x 22
 y 20
-no_pass 1
+move_block all
 end
 arch mountain2
 x 22
 y 21
-no_pass 1
+move_block all
 end
 arch mountain2
 x 22
 y 22
-no_pass 1
+move_block all
 end
 arch dungeon_magic
 x 22
@@ -3747,7 +3747,7 @@ end
 arch mountain
 x 22
 y 23
-no_pass 1
+move_block all
 blocksview 0
 end
 arch dungeon_magic
@@ -3757,7 +3757,7 @@ end
 arch mountain
 x 22
 y 24
-no_pass 1
+move_block all
 blocksview 0
 end
 arch pstone_1
@@ -3794,14 +3794,14 @@ end
 arch sea
 x 22
 y 31
-no_pass 0
+move_block 0
 end
 arch dungeon_magic
 x 23
 end
 arch mountain
 x 23
-no_pass 1
+move_block all
 blocksview 0
 end
 arch swall_1_1
@@ -3814,7 +3814,7 @@ end
 arch mountain
 x 23
 y 1
-no_pass 1
+move_block all
 blocksview 0
 end
 arch swall_2_1_1
@@ -3828,7 +3828,7 @@ end
 arch mountain
 x 23
 y 2
-no_pass 1
+move_block all
 blocksview 0
 end
 arch swall_2_2_4
@@ -3902,7 +3902,7 @@ end
 arch mountain2
 x 23
 y 18
-no_pass 1
+move_block all
 end
 arch mountain
 x 23
@@ -3915,7 +3915,7 @@ end
 arch mountain
 x 23
 y 20
-no_pass 1
+move_block all
 blocksview 0
 end
 arch dungeon_magic
@@ -3925,7 +3925,7 @@ end
 arch mountain
 x 23
 y 21
-no_pass 1
+move_block all
 blocksview 0
 end
 arch dungeon_magic
@@ -3935,7 +3935,7 @@ end
 arch mountain
 x 23
 y 22
-no_pass 1
+move_block all
 blocksview 0
 end
 arch dungeon_magic
@@ -3945,7 +3945,7 @@ end
 arch mountain
 x 23
 y 23
-no_pass 1
+move_block all
 blocksview 0
 end
 arch pstone_1
@@ -3986,7 +3986,7 @@ end
 arch sea
 x 23
 y 31
-no_pass 0
+move_block 0
 end
 arch invis_exit
 slaying mountain.b3
@@ -4080,12 +4080,12 @@ end
 arch mountain2
 x 24
 y 18
-no_pass 1
+move_block all
 end
 arch mountain2
 x 24
 y 19
-no_pass 1
+move_block all
 end
 arch dungeon_magic
 x 24
@@ -4094,7 +4094,7 @@ end
 arch mountain
 x 24
 y 20
-no_pass 1
+move_block all
 blocksview 0
 end
 arch mountain_cave
@@ -4111,7 +4111,7 @@ end
 arch mountain
 x 24
 y 22
-no_pass 1
+move_block all
 blocksview 0
 end
 arch dungeon_magic
@@ -4121,7 +4121,7 @@ end
 arch mountain
 x 24
 y 23
-no_pass 1
+move_block all
 blocksview 0
 end
 arch pstone_1
@@ -4162,7 +4162,7 @@ end
 arch sea
 x 24
 y 31
-no_pass 0
+move_block 0
 end
 arch invis_exit
 slaying mountain.b3
@@ -4327,7 +4327,7 @@ end
 arch sea
 x 25
 y 31
-no_pass 0
+move_block 0
 end
 arch invis_exit
 slaying mountain.b3
@@ -4496,7 +4496,7 @@ end
 arch sea
 x 26
 y 31
-no_pass 0
+move_block 0
 end
 arch invis_exit
 slaying mountain.b3
@@ -4700,7 +4700,7 @@ end
 arch sea
 x 27
 y 31
-no_pass 0
+move_block 0
 end
 arch invis_exit
 slaying mountain.b3
@@ -4933,7 +4933,7 @@ end
 arch sea
 x 28
 y 31
-no_pass 0
+move_block 0
 end
 arch dungeon_magic
 x 29
@@ -5098,7 +5098,7 @@ end
 arch sea
 x 29
 y 31
-no_pass 0
+move_block 0
 end
 arch invis_exit
 slaying mountain.b3
@@ -5239,7 +5239,7 @@ end
 arch sea
 x 30
 y 31
-no_pass 0
+move_block 0
 end
 arch sea
 x 31
@@ -5374,5 +5374,5 @@ end
 arch sea
 x 31
 y 31
-no_pass 0
+move_block 0
 end

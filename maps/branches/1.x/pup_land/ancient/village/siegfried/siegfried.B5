@@ -16,7 +16,7 @@ end
 arch blocked
 name darkness
 y 1
-no_pass 0
+move_block 0
 is_floor 1
 end
 arch mover_3
@@ -517,7 +517,7 @@ end
 arch blocked
 x 9
 y 2
-no_pass 0
+move_block 0
 is_floor 1
 end
 arch blocked

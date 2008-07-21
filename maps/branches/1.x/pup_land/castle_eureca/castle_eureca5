@@ -576,7 +576,7 @@ arch mountain3
 name rocks
 x 1
 y 35
-no_pass 1
+move_block all
 end
 arch detector
 slaying stardust
@@ -1278,7 +1278,7 @@ arch mountain3
 name rocks
 x 3
 y 26
-no_pass 1
+move_block all
 end
 arch detector
 slaying stardust
@@ -2643,7 +2643,7 @@ arch mountain3
 name rocks
 x 6
 y 39
-no_pass 1
+move_block all
 end
 arch dirtfloor
 x 6
@@ -4298,7 +4298,7 @@ arch mountain3
 name rocks
 x 10
 y 28
-no_pass 1
+move_block all
 end
 arch detector
 slaying stardust
@@ -5684,7 +5684,7 @@ arch mountain3
 name rocks
 x 13
 y 35
-no_pass 1
+move_block all
 end
 arch detector
 slaying stardust
@@ -6721,7 +6721,7 @@ arch mountain3
 name rocks
 x 16
 y 25
-no_pass 1
+move_block all
 end
 arch detector
 slaying stardust
@@ -8066,7 +8066,7 @@ type 0
 attacktype 0
 weight 100
 pick_up 1
-move_type walk
+move_type 0
 end
 end
 arch blocked

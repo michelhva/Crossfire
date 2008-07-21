@@ -583,7 +583,7 @@ end
 arch door_look_1
 x 7
 y 3
-no_pass 0
+move_block 0
 end
 arch dungeon_floor
 x 7
@@ -600,7 +600,7 @@ end
 arch door_look_1
 x 7
 y 6
-no_pass 0
+move_block 0
 end
 arch dungeon_floor
 x 7
@@ -645,7 +645,7 @@ end
 arch door_look_2
 x 7
 y 13
-no_pass 0
+move_block 0
 end
 arch dungeon_floor
 x 7

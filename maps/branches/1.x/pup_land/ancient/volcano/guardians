@@ -484,7 +484,7 @@ name fearsome statue
 face wizard_blue.131
 x 1
 y 8
-no_pass 0
+move_block 0
 end
 arch dungeon_magic
 x 1
@@ -541,7 +541,7 @@ name fearsome statue
 face wizard_blue.131
 x 1
 y 12
-no_pass 0
+move_block 0
 end
 arch dungeon_magic
 x 1
@@ -1485,7 +1485,7 @@ name fearsome statue
 face wizard_blue.151
 x 4
 y 5
-no_pass 0
+move_block 0
 end
 arch dungeon_magic
 x 4
@@ -1602,7 +1602,7 @@ name fearsome statue
 face wizard_blue.111
 x 4
 y 15
-no_pass 0
+move_block 0
 end
 arch dungeon_magic
 x 4
@@ -2535,7 +2535,7 @@ x 6
 y 30
 speed -0.050000
 level 100
-no_pass 0
+move_block 0
 blocksview 0
 arch spell_counterwall
 end
@@ -3031,7 +3031,7 @@ name fearsome statue
 face wizard_blue.151
 x 8
 y 5
-no_pass 0
+move_block 0
 end
 arch dungeon_magic
 x 8
@@ -3152,7 +3152,7 @@ name fearsome statue
 face wizard_blue.111
 x 8
 y 15
-no_pass 0
+move_block 0
 end
 arch dungeon_magic
 x 8
@@ -4196,7 +4196,7 @@ name fearsome statue
 face wizard_blue.171
 x 11
 y 8
-no_pass 0
+move_block 0
 end
 arch dungeon_magic
 x 11
@@ -4257,7 +4257,7 @@ name fearsome statue
 face wizard_blue.171
 x 11
 y 12
-no_pass 0
+move_block 0
 end
 arch dungeon_magic
 x 11
@@ -4640,8 +4640,8 @@ x 12
 y 10
 speed -0.05
 level 110
+move_block 0
 no_pick 1
-no_pass 0
 blocksview 0
 arch spell_counterwall
 end
@@ -4864,8 +4864,8 @@ x 12
 y 23
 speed -0.05
 level 110
+move_block 0
 no_pick 1
-no_pass 0
 blocksview 0
 arch spell_counterwall
 end
@@ -5126,8 +5126,8 @@ x 13
 y 10
 speed -0.05
 level 110
+move_block 0
 no_pick 1
-no_pass 0
 blocksview 0
 arch spell_counterwall
 end
@@ -5350,8 +5350,8 @@ x 13
 y 23
 speed -0.05
 level 110
+move_block 0
 no_pick 1
-no_pass 0
 blocksview 0
 arch spell_counterwall
 end
@@ -5564,7 +5564,7 @@ name fearsome statue
 face wizard.131
 x 14
 y 8
-no_pass 0
+move_block 0
 end
 arch dungeon_magic
 x 14
@@ -5625,7 +5625,7 @@ name fearsome statue
 face wizard.131
 x 14
 y 12
-no_pass 0
+move_block 0
 end
 arch dungeon_magic
 x 14
@@ -5726,7 +5726,7 @@ name fearsome statue
 face wizard_yellow.131
 x 14
 y 21
-no_pass 0
+move_block 0
 end
 arch dungeon_magic
 x 14
@@ -5787,7 +5787,7 @@ name fearsome statue
 face wizard_yellow.131
 x 14
 y 25
-no_pass 0
+move_block 0
 end
 arch dungeon_magic
 x 14
@@ -6584,8 +6584,8 @@ end
 arch permanent_lava
 x 16
 y 32
+move_block all
 move_on 0
-no_pass 1
 end
 arch dungeon_magic
 x 16
@@ -6618,8 +6618,8 @@ end
 arch permanent_lava
 x 16
 y 34
+move_block all
 move_on 0
-no_pass 1
 end
 arch dungeon_magic
 x 16
@@ -6729,7 +6729,7 @@ name fearsome statue
 face wizard.151
 x 17
 y 5
-no_pass 0
+move_block 0
 end
 arch dungeon_magic
 x 17
@@ -6846,7 +6846,7 @@ name fearsome statue
 face wizard.111
 x 17
 y 15
-no_pass 0
+move_block 0
 end
 arch dungeon_magic
 x 17
@@ -6891,7 +6891,7 @@ name fearsome statue
 face wizard_yellow.151
 x 17
 y 18
-no_pass 0
+move_block 0
 end
 arch dungeon_magic
 x 17
@@ -7008,7 +7008,7 @@ name fearsome statue
 face wizard_yellow.111
 x 17
 y 28
-no_pass 0
+move_block 0
 end
 arch dungeon_magic
 x 17
@@ -7053,8 +7053,8 @@ end
 arch permanent_lava
 x 17
 y 32
+move_block all
 move_on 0
-no_pass 1
 end
 arch dungeon_magic
 x 17
@@ -7086,8 +7086,8 @@ end
 arch permanent_lava
 x 17
 y 34
+move_block all
 move_on 0
-no_pass 1
 end
 arch dungeon_magic
 x 17
@@ -7096,8 +7096,8 @@ end
 arch permanent_lava
 x 17
 y 35
+move_block all
 move_on 0
-no_pass 1
 end
 arch cave21
 name rock
@@ -7442,8 +7442,8 @@ end
 arch permanent_lava
 x 18
 y 32
+move_block all
 move_on 0
-no_pass 1
 end
 arch dungeon_magic
 x 18
@@ -7477,8 +7477,8 @@ end
 arch permanent_lava
 x 18
 y 34
+move_block all
 move_on 0
-no_pass 1
 end
 arch dungeon_magic
 x 18
@@ -7659,8 +7659,8 @@ x 19
 y 16
 speed -0.05
 level 100
+move_block 0
 no_pick 1
-no_pass 0
 blocksview 0
 arch spell_counterwall
 end
@@ -7686,8 +7686,8 @@ x 19
 y 17
 speed -0.05
 level 100
+move_block 0
 no_pick 1
-no_pass 0
 blocksview 0
 arch spell_counterwall
 end
@@ -8333,7 +8333,7 @@ name fearsome statue
 face wizard.151
 x 21
 y 5
-no_pass 0
+move_block 0
 end
 arch dungeon_magic
 x 21
@@ -8450,7 +8450,7 @@ name fearsome statue
 face wizard.111
 x 21
 y 15
-no_pass 0
+move_block 0
 end
 arch dungeon_magic
 x 21
@@ -8495,7 +8495,7 @@ name fearsome statue
 face wizard_yellow.151
 x 21
 y 18
-no_pass 0
+move_block 0
 end
 arch dungeon_magic
 x 21
@@ -8612,7 +8612,7 @@ name fearsome statue
 face wizard_yellow.111
 x 21
 y 28
-no_pass 0
+move_block 0
 end
 arch dungeon_magic
 x 21
@@ -9483,7 +9483,7 @@ name fearsome statue
 face wizard.171
 x 24
 y 8
-no_pass 0
+move_block 0
 end
 arch dungeon_magic
 x 24
@@ -9540,7 +9540,7 @@ name fearsome statue
 face wizard.171
 x 24
 y 12
-no_pass 0
+move_block 0
 end
 arch dungeon_magic
 x 24
@@ -9641,7 +9641,7 @@ name fearsome statue
 face wizard_yellow.171
 x 24
 y 21
-no_pass 0
+move_block 0
 end
 arch dungeon_magic
 x 24
@@ -9698,7 +9698,7 @@ name fearsome statue
 face wizard_yellow.171
 x 24
 y 25
-no_pass 0
+move_block 0
 end
 arch dungeon_magic
 x 24

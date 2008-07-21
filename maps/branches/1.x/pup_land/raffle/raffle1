@@ -546,7 +546,7 @@ end
 arch cobblestones2
 x 2
 y 1
-no_pass 1
+move_block all
 end
 arch pit_closed
 hp 16
@@ -714,8 +714,8 @@ x 2
 y 13
 material 0
 randomitems none
+move_block 0
 alive 0
-no_pass 0
 pass_thru 0
 end
 arch dungeon_magic
@@ -881,7 +881,7 @@ end
 arch cobblestones2
 x 3
 y 1
-no_pass 1
+move_block all
 end
 arch pit_closed
 hp 16
@@ -1218,7 +1218,7 @@ end
 arch cobblestones2
 x 4
 y 1
-no_pass 1
+move_block all
 end
 arch pit_closed
 hp 16
@@ -1561,7 +1561,7 @@ end
 arch cobblestones2
 x 5
 y 1
-no_pass 1
+move_block all
 end
 arch pit_closed
 hp 16
@@ -1897,7 +1897,7 @@ end
 arch cobblestones2
 x 6
 y 1
-no_pass 1
+move_block all
 end
 arch pit_closed
 hp 16
@@ -2252,7 +2252,7 @@ end
 arch cobblestones2
 x 7
 y 1
-no_pass 1
+move_block all
 end
 arch pit_closed
 hp 16
@@ -2592,7 +2592,7 @@ end
 arch cobblestones2
 x 8
 y 1
-no_pass 1
+move_block all
 end
 arch pit_closed
 hp 16
@@ -2947,7 +2947,7 @@ end
 arch cobblestones2
 x 9
 y 1
-no_pass 1
+move_block all
 end
 arch pit_closed
 hp 16
@@ -3299,7 +3299,7 @@ end
 arch cobblestones2
 x 10
 y 1
-no_pass 1
+move_block all
 end
 arch pit_closed
 hp 16
@@ -3654,7 +3654,7 @@ end
 arch cobblestones2
 x 11
 y 1
-no_pass 1
+move_block all
 end
 arch pit_closed
 hp 16
@@ -3992,7 +3992,7 @@ end
 arch cobblestones2
 x 12
 y 1
-no_pass 1
+move_block all
 end
 arch pit_closed
 hp 16
@@ -4340,7 +4340,7 @@ end
 arch cobblestones2
 x 13
 y 1
-no_pass 1
+move_block all
 end
 arch pit_closed
 hp 16
@@ -4690,7 +4690,7 @@ end
 arch cobblestones2
 x 14
 y 1
-no_pass 1
+move_block all
 end
 arch pit_closed
 hp 16
@@ -4985,7 +4985,7 @@ end
 arch cobblestones2
 x 15
 y 1
-no_pass 1
+move_block all
 end
 arch pit_closed
 hp 16
