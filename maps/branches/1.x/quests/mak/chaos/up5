@@ -990,7 +990,7 @@ end
 arch pillars
 x 8
 y 11
-no_pass 1
+move_block all
 end
 arch blackmarble
 x 8
@@ -1019,7 +1019,7 @@ end
 arch pillars
 x 8
 y 17
-no_pass 1
+move_block all
 end
 arch blackmarble
 x 8
@@ -1827,7 +1827,7 @@ end
 arch pillars
 x 14
 y 11
-no_pass 1
+move_block all
 end
 arch blackmarble
 x 14
@@ -1856,7 +1856,7 @@ end
 arch pillars
 x 14
 y 17
-no_pass 1
+move_block all
 end
 arch blackmarble
 x 14

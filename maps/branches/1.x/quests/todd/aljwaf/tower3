@@ -1365,7 +1365,7 @@ arch spikes_open
 x 16
 y 1
 connected 1
-no_pass 1
+move_block all
 end
 arch boulder
 x 16
@@ -1388,7 +1388,7 @@ arch spikes_open
 x 16
 y 5
 connected 3
-no_pass 1
+move_block all
 end
 arch boulder
 x 16
@@ -1472,7 +1472,7 @@ arch spikes_open
 x 19
 y 1
 connected 2
-no_pass 1
+move_block all
 end
 arch boulder
 x 19
@@ -1495,7 +1495,7 @@ arch spikes_open
 x 19
 y 5
 connected 4
-no_pass 1
+move_block all
 end
 arch boulder
 x 19
