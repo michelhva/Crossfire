@@ -2,6 +2,9 @@ arch map
 name Gem Shop
 difficulty 1
 region lonetown
+shopitems gem:100;ring:0;amulet:0;*:-100
+shopmin 20
+shopmax 35000
 width 20
 height 20
 msg
