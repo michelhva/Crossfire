@@ -1938,7 +1938,7 @@ end
 arch mine2
 x 7
 y 9
-no_pass 0
+move_block 0
 end
 arch dungeon_magic
 x 7
@@ -4814,7 +4814,7 @@ end
 arch mine2
 x 17
 y 9
-no_pass 0
+move_block 0
 end
 arch pedestal
 x 17

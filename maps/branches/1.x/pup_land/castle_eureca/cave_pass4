@@ -919,7 +919,7 @@ end
 arch cave2
 x 2
 y 32
-no_pass 0
+move_block 0
 end
 arch cobblestones2
 x 3
@@ -2317,19 +2317,19 @@ end
 arch pstone_1
 x 8
 y 26
-no_pass 1
+move_block all
 end
 arch river_sw-ne_l
 name sea
 x 8
 y 26
-no_pass 0
+move_block 0
 end
 arch river_nw-se_u
 name sea
 x 8
 y 26
-no_pass 0
+move_block 0
 end
 arch sea
 x 8
@@ -5888,7 +5888,7 @@ arch blocked
 name darkness
 x 25
 y 27
-no_pass 0
+move_block 0
 blocksview 0
 is_floor 1
 end
@@ -5913,7 +5913,7 @@ arch blocked
 name darkness
 x 25
 y 28
-no_pass 0
+move_block 0
 is_floor 1
 end
 arch blocked

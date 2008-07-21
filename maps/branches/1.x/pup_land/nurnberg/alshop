@@ -296,7 +296,7 @@ end
 arch door_look_1
 x 2
 y 3
-no_pass 0
+move_block 0
 end
 arch small_stones
 x 2
@@ -1951,7 +1951,7 @@ end
 arch door_look_1
 x 13
 y 6
-no_pass 0
+move_block 0
 end
 arch dungeon_floor
 x 13

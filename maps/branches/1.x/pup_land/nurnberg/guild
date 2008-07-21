@@ -741,8 +741,8 @@ level 0
 type 0
 material 0
 randomitems none
+move_block 0
 alive 0
-no_pass 0
 pass_thru 0
 end
 arch flagstone
@@ -1133,7 +1133,7 @@ end
 arch bench_1_1
 x 8
 y 10
-no_pass 1
+move_block all
 end
 arch dungeon_magic
 x 8
@@ -1146,7 +1146,7 @@ end
 arch bench_2_2_1
 x 8
 y 11
-no_pass 1
+move_block all
 end
 arch flagstone
 x 8
@@ -1287,7 +1287,7 @@ end
 arch bench_2_1_2
 x 9
 y 11
-no_pass 1
+move_block all
 end
 arch flagstone
 x 9
@@ -1331,8 +1331,8 @@ level 0
 type 0
 material 0
 randomitems none
+move_block 0
 alive 0
-no_pass 0
 pass_thru 0
 end
 arch cobblestones
@@ -1521,7 +1521,7 @@ end
 arch bench_2_1_2
 x 10
 y 11
-no_pass 1
+move_block all
 end
 arch altar
 name 3 - elec
@@ -1596,8 +1596,8 @@ level 0
 type 0
 material 0
 randomitems none
+move_block 0
 alive 0
-no_pass 0
 pass_thru 0
 end
 arch cobblestones
@@ -1700,7 +1700,7 @@ end
 arch bench_2_1_2
 x 11
 y 11
-no_pass 1
+move_block all
 end
 arch flagstone
 x 11
@@ -1744,8 +1744,8 @@ level 0
 type 0
 material 0
 randomitems none
+move_block 0
 alive 0
-no_pass 0
 pass_thru 0
 end
 arch cobblestones
@@ -1824,7 +1824,7 @@ end
 arch bench_1_1
 x 12
 y 10
-no_pass 1
+move_block all
 end
 arch dungeon_magic
 x 12
@@ -1837,7 +1837,7 @@ end
 arch bench_2_2_4
 x 12
 y 11
-no_pass 1
+move_block all
 end
 arch flagstone
 x 12
@@ -2193,8 +2193,8 @@ level 0
 type 0
 material 0
 randomitems none
+move_block 0
 alive 0
-no_pass 0
 pass_thru 0
 end
 arch flagstone

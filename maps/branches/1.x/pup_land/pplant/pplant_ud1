@@ -1774,7 +1774,7 @@ end
 arch mine_3_2
 x 19
 y 8
-no_pass 0
+move_block 0
 end
 arch dungeon_floor
 x 19
@@ -1856,7 +1856,7 @@ end
 arch blocked
 x 20
 y 8
-no_pass 0
+move_block 0
 end
 arch dungeon_floor
 x 20

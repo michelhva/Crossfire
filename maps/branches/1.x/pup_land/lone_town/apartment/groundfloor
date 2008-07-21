@@ -1920,21 +1920,21 @@ end
 arch small_stones
 x 9
 y 18
-no_pass 1
+move_block all
 no_magic 1
 damned 1
 end
 arch cobblestones2
 x 9
 y 19
-no_pass 1
+move_block all
 no_magic 1
 damned 1
 end
 arch grass
 x 9
 y 20
-no_pass 1
+move_block all
 no_magic 1
 damned 1
 end

@@ -2737,7 +2737,7 @@ arch check_inv
 slaying purple_butterfly
 x 12
 y 18
-no_pass 1
+move_block all
 end
 arch igate_closed_1
 x 12

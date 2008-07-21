@@ -739,7 +739,7 @@ end
 arch door_look_1
 x 5
 y 15
-no_pass 0
+move_block 0
 end
 arch grass
 x 5

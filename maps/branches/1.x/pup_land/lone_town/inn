@@ -148,8 +148,8 @@ exp 0
 ac 0
 x 2
 y 3
+move_block 0
 alive 0
-no_pass 0
 pass_thru 0
 end
 arch cobblestones
@@ -166,8 +166,8 @@ exp 0
 ac 0
 x 2
 y 5
+move_block 0
 alive 0
-no_pass 0
 pass_thru 0
 end
 arch flagstone
@@ -392,8 +392,8 @@ exp 0
 ac 0
 x 6
 y 3
+move_block 0
 alive 0
-no_pass 0
 pass_thru 0
 end
 arch cobblestones
@@ -410,8 +410,8 @@ exp 0
 ac 0
 x 6
 y 5
+move_block 0
 alive 0
-no_pass 0
 pass_thru 0
 end
 arch flagstone
@@ -631,8 +631,8 @@ exp 0
 ac 0
 x 10
 y 3
+move_block 0
 alive 0
-no_pass 0
 pass_thru 0
 end
 arch cobblestones
@@ -773,8 +773,8 @@ exp 0
 ac 0
 x 12
 y 5
+move_block 0
 alive 0
-no_pass 0
 pass_thru 0
 end
 arch flagstone
@@ -869,7 +869,7 @@ arch torch_1
 x 14
 y 1
 speed 0.000001
-no_pass 1
+move_block all
 end
 arch woodfloor
 x 14
@@ -897,8 +897,8 @@ exp 0
 ac 0
 x 14
 y 4
+move_block 0
 alive 0
-no_pass 0
 pass_thru 0
 end
 arch flagstone
@@ -947,8 +947,8 @@ arch uw_shield
 name Shield of Ornament
 x 15
 y 1
+move_block all
 no_pick 1
-no_pass 1
 end
 arch woodfloor
 x 15
@@ -1000,7 +1000,7 @@ arch torch_1
 x 16
 y 1
 speed 0.000001
-no_pass 1
+move_block all
 end
 arch woodfloor
 x 16

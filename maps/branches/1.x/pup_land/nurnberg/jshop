@@ -1400,7 +1400,7 @@ end
 arch door_look_1
 x 11
 y 21
-no_pass 0
+move_block 0
 end
 arch grass
 x 11
@@ -1535,7 +1535,7 @@ end
 arch door_look_1
 x 12
 y 21
-no_pass 0
+move_block 0
 end
 arch grass
 x 12
