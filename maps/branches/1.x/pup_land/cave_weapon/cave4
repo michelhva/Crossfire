@@ -528,13 +528,13 @@ end
 arch sage
 name mystery man
 msg
-@match Key|key
+@match key
 I'll give you a hint.
 "You'll never open the door which
  was closed first"
  You can open the door which was
  opened first"
-@match yes|Yes
+@match yes
 So, you have to get a Key.
 @match *
 Welcome adventurer!

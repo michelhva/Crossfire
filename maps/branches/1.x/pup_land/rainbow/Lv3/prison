@@ -1214,14 +1214,14 @@ y 6
 end
 arch prisoner
 msg
-@match DRAGONS|DRAGON|dragons|dragon
+@match dragons|dragon
 There names are :
 Will-Wips
 Gea-Ga-Ring
 Goraon
 Gran-Garan
 
-@match Rufto
+@match rufto
 He is a guard of this ruin. To enter
 his room you must get four keys. His
 four DRAGONS have the keys.
@@ -1229,7 +1229,6 @@ four DRAGONS have the keys.
 @match *
 ...help me. I captured by Rufto the
 wizard.
-
 
 
 endmsg

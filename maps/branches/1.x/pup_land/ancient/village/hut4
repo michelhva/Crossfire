@@ -6,6 +6,7 @@ width 16
 height 16
 msg
 Created:  1996-02-18
+Modified: 2008-05-23 Arvid Norlander
 endmsg
 end
 arch pstone_1
@@ -436,16 +437,16 @@ y 11
 end
 arch sage
 msg
-@match Robber|robber
+@match robber
 The castle was locked by Siegfried.
 How could they enter the castle?
 Isn't that remarkable?
-@match Mysterious|mysterious|crystal
+@match mysterious|crystal
 The monsters loved it.
 So, when they noticed that the crystal
 had been stolen they got very angry and
 destroyed the village.
-@match Destroy|destroy
+@match destroy
 Because of the Mysterious Crystal.
 Three robbers from that village
 robbed the crystal from evil masters'

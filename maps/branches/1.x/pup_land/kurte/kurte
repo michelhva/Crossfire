@@ -1465,7 +1465,7 @@ y 3
 end
 arch magic_ear
 msg
-@match Yes|yes
+@match yes
 Click.
 endmsg
 x 11
@@ -1479,12 +1479,12 @@ end
 arch unicorn
 name Kurte
 msg
-@match Family|family
+@match family
 I can look all over this country...
 So... I saw that the hideout of
 Eureca's family has been discovered by
 the monsters...
-@match Solve|solve|[Aa]nswer
+@match solve|answer
 I didn't know anything about Ghothwolte.
 So I did some research. Read the
 scrolls above. I found out that
@@ -1493,7 +1493,7 @@ Nothing can harm it. So I told Eureca,
  "There is only one way to defeat it.
   Travel to the Past, and kill Ghothwolte
   before it is getting invulnerable!"
-@match [Tt]rouble|[Ss]tart
+@match trouble|start
 One night, Eureca's castle was attacked
 by monsters. Eureca defended his castle
 bravely, but Ghothwolte, the leader of
@@ -1505,16 +1505,16 @@ secret room in the castle. Then he
 and his servant, Cordish, came here
 to ask me how they could solve their
 disaster.
-@match [Ss]aving [Ee]ureca
+@match saving eureca
 At first, I'll tell you how all of this
 trouble started...
-@match Yes|yes
+@match yes
 Find and save Eureca...
 I count on you!
-@match Cordish|cordish
+@match cordish
 He is one of Eureca's servants.
 He looked scared and coward...
-@match Past|past
+@match past
 Eureca and his servant went to the
 past... and they didn't return yet...
 They must have gotten into trouble

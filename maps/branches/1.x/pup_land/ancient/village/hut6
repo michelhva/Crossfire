@@ -6,6 +6,7 @@ width 16
 height 16
 msg
 Created:  1997-02-03
+Modified: 2008-05-23 Arvid Norlander
 endmsg
 end
 arch pstone_1
@@ -767,9 +768,9 @@ y 5
 end
 arch woman
 msg
-@match Artifact|artifact
+@match artifact
 I don't know any details about it.
-@match Necromancer|necromancer
+@match necromancer
 He lives at the tower in the east
 mountain. Maybe my husband is
 imprisoned near that tower. Please save

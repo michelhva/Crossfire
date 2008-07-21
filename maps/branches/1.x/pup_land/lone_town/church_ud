@@ -734,11 +734,11 @@ y 8
 end
 arch thief
 msg
-@match Boss|boss
+@match boss
 To meet our boss, you have to say
 the password:
  "racoon's head".
-@match Fox|fox|Tails|tails
+@match fox|tails
 We steal money and gems.
 But we never commit murder.
 By the way, you look quite strong...

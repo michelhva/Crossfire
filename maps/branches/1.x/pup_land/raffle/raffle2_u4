@@ -1819,7 +1819,7 @@ y 10
 end
 arch magic_ear
 msg
-@match FORCE|force|Force
+@match force
 Click.
 endmsg
 x 9
@@ -2445,7 +2445,7 @@ end
 arch dog
 name Pip the administrator
 msg
-@match password|PASSWORD
+@match password
 Huh? You ought to find it
 on the undead's floor.
 @match *
@@ -3187,7 +3187,7 @@ y 10
 end
 arch magic_ear
 msg
-@match ALLOW|allow|Allow
+@match allow
 Click.
 endmsg
 x 15

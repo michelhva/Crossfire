@@ -6,6 +6,7 @@ width 20
 height 16
 msg
 Created:  1996-02-18
+Modified: 2008-05-23 Arvid Norlander
 endmsg
 end
 arch woodfloor
@@ -254,15 +255,15 @@ y 1
 end
 arch cleric
 msg
-@match Nurnberg|nurnberg
+@match nurnberg
 Far east from Lone Town.
-@match Liberation|liberation
+@match liberation
 We are members of Liberation Army.
-@match Regular|regular
+@match regular
 We fight against Regular Army.
-@match No|no|Sumson|sumson
+@match no|sumson
 Sumson is the spy of Liberation Army. He entered the city of Nurnberg, to collected information about our enemies, the Regular Army.
-@match Yes|yes
+@match yes
 Really!? So, Where is he?
 @match *
 Do you know Sumson?
@@ -584,13 +585,13 @@ y 13
 end
 arch sage
 msg
-@match Barrier|barrier
+@match barrier
 There is the barrior station to the south-east from Lone Town.
-@match Regular|regular
+@match regular
 We fight against Regular Army.
-@match Bauer|bauer
+@match bauer
 He is the leader of Regular Army and he is the mayer of Nurnberg.
-@match Lone|lone|town|Town
+@match lone|town
 Welcome to lone town!
 @match *
 Mr.Bauer and his Regular Army built the Barrier station.
@@ -1057,12 +1058,12 @@ y 2
 end
 arch barbarian
 msg
-@match [Rr]esistance
+@match resistance
 We are not the "resistance"!
-@match Regular|regular
+@match regular
 They call us "Resistance". In fact,
 we want nothing but freedom.
-@match Liberation|liberation
+@match liberation
 We'll win the war against Regular Army.
 There's no doubt about that.
 @match *
@@ -1373,9 +1374,9 @@ name Reception of Liberation Army
 msg
 @match protect nature
 Good, you passed the test! Talk to the guildmaster now. He will provide you with further instructions.
-@match Tower|tower
+@match tower
 The Tower of Ordeal lies to the east of lone town. I'll give you the key when you are ready.
-@match key|Key
+@match key
 Here it is. The key for the Tower of Ordeal.
 @match scroll
 You must find the scroll by yourself.

@@ -509,7 +509,7 @@ y 5
 end
 arch fighter
 msg
-@match Eureca|eureca
+@match eureca
 I'm not Eureca. But I'm willing to
 change my name if you rescue me then.
 @match *
@@ -1030,7 +1030,7 @@ end
 arch elf
 name Spy of the goverment
 msg
-@match Eureca|eureca
+@match eureca
 He is not in here!
 @match *
 Help me.
@@ -1852,7 +1852,7 @@ y 4
 end
 arch prisoner
 msg
-@match Eureca|eureca
+@match eureca
 What is Eureca?
 Is it some kind of food?
 @match *

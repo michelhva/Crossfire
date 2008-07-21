@@ -3221,7 +3221,7 @@ y 29
 end
 arch magic_ear
 msg
-@match tree|Tree
+@match tree
 Click.
 endmsg
 x 13
@@ -3791,7 +3791,7 @@ y 27
 end
 arch magic_ear
 msg
-@match castle|Castle
+@match castle
 Click.
 endmsg
 x 15
@@ -4338,7 +4338,7 @@ y 27
 end
 arch magic_ear
 msg
-@match hotel|Hotel|Inn|inn
+@match hotel|inn
 Click.
 endmsg
 x 17
@@ -5162,7 +5162,7 @@ y 29
 end
 arch magic_ear
 msg
-@match treasure|Treasure
+@match treasure
 Click.
 endmsg
 x 20
@@ -5662,7 +5662,7 @@ y 20
 end
 arch magic_ear
 msg
-@match house|House
+@match house
 Click.
 endmsg
 x 22
@@ -6197,7 +6197,7 @@ y 20
 end
 arch magic_ear
 msg
-@match jungle|Jungle
+@match jungle
 Click.
 endmsg
 x 24
@@ -7032,7 +7032,7 @@ y 22
 end
 arch magic_ear
 msg
-@match treasure|Treasure
+@match treasure
 Click.
 endmsg
 x 27
@@ -7601,7 +7601,7 @@ y 20
 end
 arch magic_ear
 msg
-@match guild|Guild
+@match guild
 Click.
 endmsg
 x 29
@@ -8161,7 +8161,7 @@ y 20
 end
 arch magic_ear
 msg
-@match aque|Aque
+@match aque
 Click.
 endmsg
 x 31
@@ -8230,7 +8230,7 @@ y 27
 end
 arch magic_ear
 msg
-@match Eternal|eternal
+@match eternal
 Click.
 endmsg
 x 31
