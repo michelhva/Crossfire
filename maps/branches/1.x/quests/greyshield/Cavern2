@@ -6,6 +6,7 @@ enter_x 15
 enter_y 18
 msg
 Created:  1996-09-13 Chris Jeske
+Modified: 2008-06-06 Arvid Norlander
 endmsg
 end
 arch blocked
@@ -17,14 +18,8 @@ end
 arch blocked
 y 20
 end
-arch blackrock
-y 21
-end
 arch blocked
 y 21
-end
-arch blackrock
-y 22
 end
 arch blocked
 y 22
@@ -77,9 +72,6 @@ end
 arch cave17
 y 30
 end
-arch blackrock
-y 31
-end
 arch blocked
 y 31
 end
@@ -94,10 +86,6 @@ end
 arch blocked
 x 1
 y 20
-end
-arch blackrock
-x 1
-y 21
 end
 arch blocked
 x 1
@@ -174,10 +162,6 @@ end
 arch blocked
 x 2
 y 20
-end
-arch blackrock
-x 2
-y 21
 end
 arch blocked
 x 2
@@ -508,6 +492,10 @@ y 14
 end
 arch blocked
 x 6
+y 15
+end
+arch blocked
+x 6
 y 18
 end
 arch blocked
@@ -681,10 +669,6 @@ arch cave2
 x 7
 y 25
 end
-arch blackrock
-x 7
-y 26
-end
 arch blocked
 x 7
 y 26
@@ -721,10 +705,6 @@ arch cave20
 x 7
 y 30
 end
-arch blackrock
-x 7
-y 31
-end
 arch blocked
 x 7
 y 31
@@ -737,73 +717,37 @@ arch blocked
 x 8
 y 8
 end
-arch blackrock
-x 8
-y 9
-end
 arch blocked
 x 8
 y 9
 end
-arch blackrock
+arch blocked
 x 8
 y 10
 end
 arch blocked
 x 8
-y 10
-end
-arch blackrock
-x 8
 y 11
 end
 arch blocked
-x 8
-y 11
-end
-arch blackrock
 x 8
 y 12
 end
 arch blocked
 x 8
-y 12
-end
-arch blackrock
-x 8
 y 13
 end
 arch blocked
-x 8
-y 13
-end
-arch blackrock
 x 8
 y 14
 end
 arch blocked
 x 8
-y 14
-end
-arch blackrock
-x 8
 y 15
 end
 arch blocked
 x 8
-y 15
-end
-arch blackrock
-x 8
 y 16
-end
-arch blocked
-x 8
-y 16
-end
-arch blackrock
-x 8
-y 17
 end
 arch blocked
 x 8
@@ -857,49 +801,25 @@ arch cave20
 x 8
 y 25
 end
-arch blackrock
-x 8
-y 26
-end
 arch blocked
 x 8
 y 26
 end
-arch blackrock
+arch blocked
 x 8
 y 27
 end
 arch blocked
 x 8
-y 27
-end
-arch blackrock
-x 8
 y 28
 end
 arch blocked
-x 8
-y 28
-end
-arch blackrock
 x 8
 y 29
 end
 arch blocked
 x 8
-y 29
-end
-arch blackrock
-x 8
 y 30
-end
-arch blocked
-x 8
-y 30
-end
-arch blackrock
-x 8
-y 31
 end
 arch blocked
 x 8
@@ -913,17 +833,9 @@ arch blocked
 x 9
 y 8
 end
-arch blackrock
-x 9
-y 9
-end
 arch blocked
 x 9
 y 9
-end
-arch blackrock
-x 9
-y 10
 end
 arch blocked
 x 9
@@ -961,25 +873,13 @@ arch cave17
 x 9
 y 14
 end
-arch blackrock
+arch blocked
 x 9
 y 15
 end
 arch blocked
 x 9
-y 15
-end
-arch blackrock
-x 9
 y 16
-end
-arch blocked
-x 9
-y 16
-end
-arch blackrock
-x 9
-y 17
 end
 arch blocked
 x 9
@@ -1029,57 +929,29 @@ arch cave20
 x 9
 y 24
 end
-arch blackrock
-x 9
-y 25
-end
 arch blocked
 x 9
 y 25
 end
-arch blackrock
+arch blocked
 x 9
 y 26
 end
 arch blocked
 x 9
-y 26
-end
-arch blackrock
-x 9
 y 27
 end
 arch blocked
-x 9
-y 27
-end
-arch blackrock
 x 9
 y 28
 end
 arch blocked
 x 9
-y 28
-end
-arch blackrock
-x 9
 y 29
 end
 arch blocked
 x 9
-y 29
-end
-arch blackrock
-x 9
 y 30
-end
-arch blocked
-x 9
-y 30
-end
-arch blackrock
-x 9
-y 31
 end
 arch blocked
 x 9
@@ -1092,10 +964,6 @@ end
 arch blocked
 x 10
 y 8
-end
-arch blackrock
-x 10
-y 9
 end
 arch blocked
 x 10
@@ -1141,17 +1009,9 @@ arch cave17
 x 10
 y 15
 end
-arch blackrock
-x 10
-y 16
-end
 arch blocked
 x 10
 y 16
-end
-arch blackrock
-x 10
-y 17
 end
 arch blocked
 x 10
@@ -1220,10 +1080,6 @@ end
 arch blocked
 x 11
 y 8
-end
-arch blackrock
-x 11
-y 9
 end
 arch blocked
 x 11
@@ -1273,17 +1129,9 @@ arch cave2
 x 11
 y 15
 end
-arch blackrock
-x 11
-y 16
-end
 arch blocked
 x 11
 y 16
-end
-arch blackrock
-x 11
-y 17
 end
 arch blocked
 x 11
@@ -1352,10 +1200,6 @@ end
 arch blocked
 x 12
 y 8
-end
-arch blackrock
-x 12
-y 9
 end
 arch blocked
 x 12
@@ -1481,10 +1325,6 @@ arch blocked
 x 13
 y 8
 end
-arch blackrock
-x 13
-y 9
-end
 arch blocked
 x 13
 y 9
@@ -1601,17 +1441,9 @@ arch blocked
 x 14
 y 8
 end
-arch blackrock
-x 14
-y 9
-end
 arch blocked
 x 14
 y 9
-end
-arch blackrock
-x 14
-y 10
 end
 arch blocked
 x 14
@@ -1725,33 +1557,17 @@ arch blocked
 x 15
 y 8
 end
-arch blackrock
-x 15
-y 9
-end
 arch blocked
 x 15
 y 9
 end
-arch blackrock
+arch blocked
 x 15
 y 10
 end
 arch blocked
 x 15
-y 10
-end
-arch blackrock
-x 15
 y 11
-end
-arch blocked
-x 15
-y 11
-end
-arch blackrock
-x 15
-y 12
 end
 arch blocked
 x 15
@@ -1849,33 +1665,17 @@ arch blocked
 x 16
 y 8
 end
-arch blackrock
-x 16
-y 9
-end
 arch blocked
 x 16
 y 9
 end
-arch blackrock
+arch blocked
 x 16
 y 10
 end
 arch blocked
 x 16
-y 10
-end
-arch blackrock
-x 16
 y 11
-end
-arch blocked
-x 16
-y 11
-end
-arch blackrock
-x 16
-y 12
 end
 arch blocked
 x 16
@@ -1921,105 +1721,53 @@ arch cave17
 x 16
 y 18
 end
-arch blackrock
-x 16
-y 19
-end
 arch blocked
 x 16
 y 19
 end
-arch blackrock
+arch blocked
 x 16
 y 20
 end
 arch blocked
 x 16
-y 20
-end
-arch blackrock
-x 16
 y 21
 end
 arch blocked
-x 16
-y 21
-end
-arch blackrock
 x 16
 y 22
 end
 arch blocked
 x 16
-y 22
-end
-arch blackrock
-x 16
 y 23
 end
 arch blocked
-x 16
-y 23
-end
-arch blackrock
 x 16
 y 24
 end
 arch blocked
 x 16
-y 24
-end
-arch blackrock
-x 16
 y 25
 end
 arch blocked
-x 16
-y 25
-end
-arch blackrock
 x 16
 y 26
 end
 arch blocked
 x 16
-y 26
-end
-arch blackrock
-x 16
 y 27
 end
 arch blocked
-x 16
-y 27
-end
-arch blackrock
 x 16
 y 28
 end
 arch blocked
 x 16
-y 28
-end
-arch blackrock
-x 16
 y 29
 end
 arch blocked
 x 16
-y 29
-end
-arch blackrock
-x 16
 y 30
-end
-arch blocked
-x 16
-y 30
-end
-arch blackrock
-x 16
-y 31
 end
 arch blocked
 x 16
@@ -2029,41 +1777,21 @@ arch blocked
 x 17
 y 8
 end
-arch blackrock
-x 17
-y 9
-end
 arch blocked
 x 17
 y 9
 end
-arch blackrock
+arch blocked
 x 17
 y 10
 end
 arch blocked
 x 17
-y 10
-end
-arch blackrock
-x 17
 y 11
 end
 arch blocked
 x 17
-y 11
-end
-arch blackrock
-x 17
 y 12
-end
-arch blocked
-x 17
-y 12
-end
-arch blackrock
-x 17
-y 13
 end
 arch blocked
 x 17
@@ -2101,25 +1829,13 @@ arch cave2
 x 17
 y 18
 end
-arch blackrock
+arch blocked
 x 17
 y 19
 end
 arch blocked
 x 17
-y 19
-end
-arch blackrock
-x 17
 y 20
-end
-arch blocked
-x 17
-y 20
-end
-arch blackrock
-x 17
-y 21
 end
 arch blocked
 x 17
@@ -2181,25 +1897,13 @@ arch cave17
 x 17
 y 28
 end
-arch blackrock
+arch blocked
 x 17
 y 29
 end
 arch blocked
 x 17
-y 29
-end
-arch blackrock
-x 17
 y 30
-end
-arch blocked
-x 17
-y 30
-end
-arch blackrock
-x 17
-y 31
 end
 arch blocked
 x 17
@@ -2225,49 +1929,25 @@ arch blocked
 x 18
 y 8
 end
-arch blackrock
-x 18
-y 9
-end
 arch blocked
 x 18
 y 9
 end
-arch blackrock
+arch blocked
 x 18
 y 10
 end
 arch blocked
 x 18
-y 10
-end
-arch blackrock
-x 18
 y 11
 end
 arch blocked
-x 18
-y 11
-end
-arch blackrock
 x 18
 y 12
 end
 arch blocked
 x 18
-y 12
-end
-arch blackrock
-x 18
 y 13
-end
-arch blocked
-x 18
-y 13
-end
-arch blackrock
-x 18
-y 14
 end
 arch blocked
 x 18
@@ -2301,25 +1981,13 @@ arch cave2
 x 18
 y 18
 end
-arch blackrock
+arch blocked
 x 18
 y 19
 end
 arch blocked
 x 18
-y 19
-end
-arch blackrock
-x 18
 y 20
-end
-arch blocked
-x 18
-y 20
-end
-arch blackrock
-x 18
-y 21
 end
 arch blocked
 x 18
@@ -2385,10 +2053,6 @@ arch cave17
 x 18
 y 30
 end
-arch blackrock
-x 18
-y 31
-end
 arch blocked
 x 18
 y 31
@@ -2461,25 +2125,13 @@ arch cave2
 x 19
 y 18
 end
-arch blackrock
+arch blocked
 x 19
 y 19
 end
 arch blocked
 x 19
-y 19
-end
-arch blackrock
-x 19
 y 20
-end
-arch blocked
-x 19
-y 20
-end
-arch blackrock
-x 19
-y 21
 end
 arch blocked
 x 19
@@ -2665,10 +2317,6 @@ arch cave17
 x 20
 y 20
 end
-arch blackrock
-x 20
-y 21
-end
 arch blocked
 x 20
 y 21
@@ -2745,25 +2393,13 @@ arch cave2
 x 20
 y 31
 end
-arch blackrock
+arch blocked
 x 21
 y 2
 end
 arch blocked
 x 21
-y 2
-end
-arch blackrock
-x 21
 y 3
-end
-arch blocked
-x 21
-y 3
-end
-arch blackrock
-x 21
-y 4
 end
 arch blocked
 x 21
@@ -2827,6 +2463,10 @@ end
 arch blocked
 x 21
 y 14
+end
+arch blackrock
+x 21
+y 15
 end
 arch cave18
 x 21
@@ -2950,33 +2590,17 @@ end
 arch blocked
 x 22
 end
-arch blackrock
-x 22
-y 1
-end
 arch blocked
 x 22
 y 1
 end
-arch blackrock
+arch blocked
 x 22
 y 2
 end
 arch blocked
 x 22
-y 2
-end
-arch blackrock
-x 22
 y 3
-end
-arch blocked
-x 22
-y 3
-end
-arch blackrock
-x 22
-y 4
 end
 arch blocked
 x 22
@@ -3014,6 +2638,10 @@ arch cave6
 x 22
 y 9
 end
+arch blackrock
+x 22
+y 10
+end
 arch cave20
 x 22
 y 10
@@ -3033,6 +2661,10 @@ end
 arch blocked
 x 22
 y 14
+end
+arch blackrock
+x 22
+y 15
 end
 arch cave4
 x 22
@@ -3137,33 +2769,17 @@ end
 arch blocked
 x 23
 end
-arch blackrock
-x 23
-y 1
-end
 arch blocked
 x 23
 y 1
 end
-arch blackrock
+arch blocked
 x 23
 y 2
 end
 arch blocked
 x 23
-y 2
-end
-arch blackrock
-x 23
 y 3
-end
-arch blocked
-x 23
-y 3
-end
-arch blackrock
-x 23
-y 4
 end
 arch blocked
 x 23
@@ -3227,6 +2843,10 @@ end
 arch blocked
 x 23
 y 14
+end
+arch blackrock
+x 23
+y 15
 end
 arch cave19
 x 23
@@ -3323,17 +2943,9 @@ end
 arch blocked
 x 24
 end
-arch blackrock
-x 24
-y 1
-end
 arch blocked
 x 24
 y 1
-end
-arch blackrock
-x 24
-y 2
 end
 arch blocked
 x 24
@@ -3382,10 +2994,6 @@ end
 arch cave20
 x 24
 y 8
-end
-arch blackrock
-x 24
-y 9
 end
 arch blocked
 x 24
@@ -3507,17 +3115,9 @@ arch cave23
 x 24
 y 29
 end
-arch blackrock
-x 24
-y 30
-end
 arch blocked
 x 24
 y 30
-end
-arch blackrock
-x 24
-y 31
 end
 arch blocked
 x 24
@@ -3586,6 +3186,10 @@ arch cave3
 x 25
 y 9
 end
+arch blackrock
+x 25
+y 10
+end
 arch cave23
 x 25
 y 10
@@ -3610,25 +3214,13 @@ arch blocked
 x 25
 y 15
 end
-arch blackrock
+arch blocked
 x 25
 y 16
 end
 arch blocked
 x 25
-y 16
-end
-arch blackrock
-x 25
 y 17
-end
-arch blocked
-x 25
-y 17
-end
-arch blackrock
-x 25
-y 18
 end
 arch blocked
 x 25
@@ -3710,17 +3302,9 @@ arch cave2
 x 25
 y 29
 end
-arch blackrock
-x 25
-y 30
-end
 arch blocked
 x 25
 y 30
-end
-arch blackrock
-x 25
-y 31
 end
 arch blocked
 x 25
@@ -3820,41 +3404,21 @@ arch blocked
 x 26
 y 15
 end
-arch blackrock
-x 26
-y 16
-end
 arch blocked
 x 26
 y 16
 end
-arch blackrock
+arch blocked
 x 26
 y 17
 end
 arch blocked
 x 26
-y 17
-end
-arch blackrock
-x 26
 y 18
 end
 arch blocked
 x 26
-y 18
-end
-arch blackrock
-x 26
 y 19
-end
-arch blocked
-x 26
-y 19
-end
-arch blackrock
-x 26
-y 20
 end
 arch blocked
 x 26
@@ -3904,21 +3468,16 @@ arch cave2
 x 26
 y 29
 end
-arch blackrock
+arch blocked
 x 26
 y 30
 end
 arch blocked
 x 26
-y 30
+y 31
 end
 arch blackrock
-x 26
-y 31
-end
-arch blocked
-x 26
-y 31
+x 27
 end
 arch cave18
 x 27
@@ -4011,41 +3570,21 @@ arch blocked
 x 27
 y 15
 end
-arch blackrock
-x 27
-y 16
-end
 arch blocked
 x 27
 y 16
 end
-arch blackrock
+arch blocked
 x 27
 y 17
 end
 arch blocked
 x 27
-y 17
-end
-arch blackrock
-x 27
 y 18
 end
 arch blocked
 x 27
-y 18
-end
-arch blackrock
-x 27
 y 19
-end
-arch blocked
-x 27
-y 19
-end
-arch blackrock
-x 27
-y 20
 end
 arch blocked
 x 27
@@ -4107,17 +3646,9 @@ arch cave20
 x 27
 y 29
 end
-arch blackrock
-x 27
-y 30
-end
 arch blocked
 x 27
 y 30
-end
-arch blackrock
-x 27
-y 31
 end
 arch blocked
 x 27
@@ -4201,41 +3732,21 @@ arch blocked
 x 28
 y 15
 end
-arch blackrock
-x 28
-y 16
-end
 arch blocked
 x 28
 y 16
 end
-arch blackrock
+arch blocked
 x 28
 y 17
 end
 arch blocked
 x 28
-y 17
-end
-arch blackrock
-x 28
 y 18
 end
 arch blocked
 x 28
-y 18
-end
-arch blackrock
-x 28
 y 19
-end
-arch blocked
-x 28
-y 19
-end
-arch blackrock
-x 28
-y 20
 end
 arch blocked
 x 28
@@ -4293,33 +3804,17 @@ arch cave20
 x 28
 y 27
 end
-arch blackrock
-x 28
-y 28
-end
 arch blocked
 x 28
 y 28
 end
-arch blackrock
+arch blocked
 x 28
 y 29
 end
 arch blocked
 x 28
-y 29
-end
-arch blackrock
-x 28
 y 30
-end
-arch blocked
-x 28
-y 30
-end
-arch blackrock
-x 28
-y 31
 end
 arch blocked
 x 28
@@ -4435,21 +3930,41 @@ arch blocked
 x 29
 y 21
 end
+arch blackrock
+x 29
+y 22
+end
 arch cave19
 x 29
 y 22
+end
+arch blackrock
+x 29
+y 23
 end
 arch cave20
 x 29
 y 23
 end
+arch blackrock
+x 29
+y 24
+end
 arch cave19
 x 29
 y 24
 end
+arch blackrock
+x 29
+y 25
+end
 arch cave1
 x 29
 y 25
+end
+arch blackrock
+x 29
+y 26
 end
 arch cave20
 x 29
@@ -4474,6 +3989,9 @@ end
 arch blocked
 x 29
 y 31
+end
+arch blackrock
+x 30
 end
 arch cave19
 x 30
@@ -4540,6 +4058,10 @@ end
 arch cave1
 x 30
 y 9
+end
+arch blackrock
+x 30
+y 10
 end
 arch cave22
 x 30
@@ -4632,6 +4154,10 @@ end
 arch blocked
 x 31
 end
+arch blackrock
+x 31
+y 1
+end
 arch cave19
 x 31
 y 1
@@ -4652,9 +4178,17 @@ arch cave1
 x 31
 y 3
 end
+arch blackrock
+x 31
+y 4
+end
 arch cave20
 x 31
 y 4
+end
+arch blackrock
+x 31
+y 5
 end
 arch cave19
 x 31
@@ -4675,6 +4209,10 @@ end
 arch cave1
 x 31
 y 7
+end
+arch blackrock
+x 31
+y 8
 end
 arch cave22
 x 31

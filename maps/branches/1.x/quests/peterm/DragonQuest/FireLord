@@ -6,6 +6,7 @@ width 16
 height 31
 msg
 Created:  1994-08-19 peterm (peterm@soda.csua.berkeley.edu)
+Modified: 2008-06-06 Arvid Norlander
 endmsg
 end
 arch blocked
@@ -284,6 +285,10 @@ arch cave12
 x 1
 y 28
 end
+arch pstone_2
+x 1
+y 29
+end
 arch cave23
 x 1
 y 29
@@ -291,6 +296,9 @@ end
 arch blocked
 x 1
 y 30
+end
+arch pstone_2
+x 2
 end
 arch cave18
 x 2
@@ -362,6 +370,10 @@ end
 arch cave17
 x 2
 y 9
+end
+arch pstone_2
+x 2
+y 10
 end
 arch cave24
 x 2
@@ -487,6 +499,10 @@ arch cave11
 x 2
 y 28
 end
+arch pstone_2
+x 2
+y 29
+end
 arch cave22
 x 2
 y 29
@@ -494,6 +510,9 @@ end
 arch blocked
 x 2
 y 30
+end
+arch pstone_2
+x 3
 end
 arch cave4
 x 3
@@ -704,6 +723,9 @@ arch blocked
 x 3
 y 30
 end
+arch pstone_2
+x 4
+end
 arch cave4
 x 4
 end
@@ -897,6 +919,9 @@ end
 arch blocked
 x 4
 y 30
+end
+arch pstone_2
+x 5
 end
 arch cave4
 x 5
@@ -1107,10 +1132,6 @@ arch cave2
 x 5
 y 28
 end
-arch pstone_1
-x 5
-y 29
-end
 arch blocked
 x 5
 y 29
@@ -1118,6 +1139,9 @@ end
 arch blocked
 x 5
 y 30
+end
+arch pstone_2
+x 6
 end
 arch cave4
 x 6
@@ -1294,6 +1318,9 @@ arch blocked
 x 6
 y 30
 end
+arch pstone_2
+x 7
+end
 arch cave4
 x 7
 end
@@ -1368,6 +1395,10 @@ end
 arch cave20
 x 7
 y 9
+end
+arch pstone_2
+x 7
+y 10
 end
 arch cave25
 x 7
@@ -1472,6 +1503,9 @@ end
 arch blocked
 x 7
 y 30
+end
+arch pstone_2
+x 8
 end
 arch cave19
 x 8
@@ -1922,6 +1956,10 @@ arch cave12
 x 10
 y 29
 end
+arch pstone_2
+x 10
+y 30
+end
 arch cave23
 x 10
 y 30
@@ -2018,6 +2056,10 @@ arch cave15
 x 11
 y 29
 end
+arch pstone_2
+x 11
+y 30
+end
 arch cave22
 x 11
 y 30
@@ -2109,6 +2151,10 @@ end
 arch cave15
 x 12
 y 28
+end
+arch pstone_2
+x 12
+y 29
 end
 arch cave20
 x 12
