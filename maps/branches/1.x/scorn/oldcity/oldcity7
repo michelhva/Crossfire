@@ -6,6 +6,7 @@ width 20
 height 40
 msg
 Created:  1994-02-28
+Modified: 2008-06-06 Arvid Norlander
 endmsg
 tile_path_2 oldcity54
 tile_path_4 oldcity8
@@ -14,41 +15,80 @@ arch dungeon_floor
 end
 arch mine10
 end
+arch dungeon_floor
+y 1
+end
 arch mine3
 y 1
+end
+arch dungeon_floor
+y 2
 end
 arch mine3
 y 2
 end
+arch dungeon_floor
+y 3
+end
 arch mine3
 y 3
+end
+arch dungeon_floor
+y 4
 end
 arch mine3
 y 4
 end
+arch dungeon_floor
+y 5
+end
 arch mine3
 y 5
+end
+arch dungeon_floor
+y 6
 end
 arch mine3
 y 6
 end
+arch dungeon_floor
+y 7
+end
 arch mine3
 y 7
+end
+arch dungeon_floor
+y 8
 end
 arch mine11
 y 8
 end
+arch dungeon_floor
+y 9
+end
 arch mine3
 y 9
+end
+arch dungeon_floor
+y 10
 end
 arch mine3
 y 10
 end
-arch mine3
+arch dungeon_floor
 y 11
 end
 arch mine3
+y 11
+end
+arch dungeon_floor
 y 12
+end
+arch mine3
+y 12
+end
+arch dungeon_floor
+y 13
 end
 arch mine3
 y 13
@@ -62,38 +102,74 @@ end
 arch dungeon_floor
 y 15
 end
+arch dungeon_floor
+y 16
+end
 arch mine3
 y 16
+end
+arch dungeon_floor
+y 17
 end
 arch mine3
 y 17
 end
+arch dungeon_floor
+y 18
+end
 arch mine3
 y 18
+end
+arch dungeon_floor
+y 19
 end
 arch mine3
 y 19
 end
+arch dungeon_floor
+y 20
+end
 arch mine3
 y 20
+end
+arch dungeon_floor
+y 21
 end
 arch mine3
 y 21
 end
+arch dungeon_floor
+y 22
+end
 arch mine3
 y 22
+end
+arch dungeon_floor
+y 23
 end
 arch mine3
 y 23
 end
+arch dungeon_floor
+y 24
+end
 arch mine3
 y 24
+end
+arch dungeon_floor
+y 25
 end
 arch mine3
 y 25
 end
+arch dungeon_floor
+y 26
+end
 arch mine11
 y 26
+end
+arch dungeon_floor
+y 27
 end
 arch mine3
 y 27
@@ -169,6 +245,9 @@ y 39
 end
 arch mine13
 y 39
+end
+arch dungeon_floor
+x 1
 end
 arch mine2
 x 1
@@ -356,6 +435,9 @@ end
 arch mine2
 x 1
 y 39
+end
+arch dungeon_floor
+x 2
 end
 arch mine2
 x 2
@@ -640,6 +722,9 @@ arch mine2
 x 2
 y 39
 end
+arch dungeon_floor
+x 3
+end
 arch mine2
 x 3
 end
@@ -863,6 +948,9 @@ end
 arch mine2
 x 3
 y 39
+end
+arch dungeon_floor
+x 4
 end
 arch mine2
 x 4
@@ -1132,6 +1220,9 @@ arch mine2
 x 4
 y 39
 end
+arch dungeon_floor
+x 5
+end
 arch mine2
 x 5
 end
@@ -1366,6 +1457,9 @@ end
 arch mine2
 x 5
 y 39
+end
+arch dungeon_floor
+x 6
 end
 arch mine9
 x 6
@@ -1653,6 +1747,7 @@ hp 34
 sp 39
 x 7
 is_animated 0
+client_anim_random 0
 end
 arch dungeon_floor
 x 7
@@ -2116,6 +2211,9 @@ arch mine2
 x 8
 y 39
 end
+arch dungeon_floor
+x 9
+end
 arch mine2
 x 9
 end
@@ -2325,6 +2423,9 @@ end
 arch mine2
 x 9
 y 39
+end
+arch dungeon_floor
+x 10
 end
 arch mine2
 x 10
@@ -2593,6 +2694,9 @@ arch mine2
 x 10
 y 39
 end
+arch dungeon_floor
+x 11
+end
 arch mine2
 x 11
 end
@@ -2819,6 +2923,9 @@ end
 arch mine2
 x 11
 y 39
+end
+arch dungeon_floor
+x 12
 end
 arch mine2
 x 12
@@ -3079,6 +3186,9 @@ arch mine2
 x 12
 y 39
 end
+arch dungeon_floor
+x 13
+end
 arch mine2
 x 13
 end
@@ -3313,6 +3423,9 @@ end
 arch mine2
 x 13
 y 39
+end
+arch dungeon_floor
+x 14
 end
 arch mine16
 x 14
@@ -3581,6 +3694,9 @@ arch mine2
 x 14
 y 39
 end
+arch dungeon_floor
+x 15
+end
 arch mine2
 x 15
 end
@@ -3763,6 +3879,9 @@ end
 arch mine2
 x 15
 y 39
+end
+arch dungeon_floor
+x 16
 end
 arch mine2
 x 16
@@ -4055,6 +4174,9 @@ arch mine2
 x 16
 y 39
 end
+arch dungeon_floor
+x 17
+end
 arch mine2
 x 17
 end
@@ -4291,6 +4413,9 @@ end
 arch mine12
 x 17
 y 39
+end
+arch dungeon_floor
+x 18
 end
 arch mine9
 x 18

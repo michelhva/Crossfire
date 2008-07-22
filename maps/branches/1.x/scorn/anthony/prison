@@ -8,6 +8,7 @@ enter_x 9
 enter_y 23
 msg
 Created:  1998-12-26 Anthony Thyssen (anthony@cit.gu.edu.au)
+Modified: 2008-06-06 Arvid Norlander
 endmsg
 end
 arch cobblestones2
@@ -19,6 +20,9 @@ y 1
 end
 arch bwall_2_2_2
 y 1
+end
+arch grass
+y 2
 end
 arch bwall_2_2_1
 y 2
@@ -116,6 +120,10 @@ end
 arch bwall_4
 x 1
 y 2
+end
+arch flagstone
+x 1
+y 3
 end
 arch bwall_1_2
 x 1

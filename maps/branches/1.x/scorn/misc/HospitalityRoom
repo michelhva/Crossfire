@@ -8,6 +8,7 @@ width 35
 height 16
 msg
 Created:  2000-02-16
+Modified: 2008-06-20 Arvid Norlander
 endmsg
 end
 arch woodfloor2
@@ -4863,10 +4864,6 @@ x 33
 y 7
 connected 80
 end
-arch woodfloor2
-x 33
-y 8
-end
 arch magic_ear
 msg
 @match shazam
@@ -4875,6 +4872,10 @@ endmsg
 x 33
 y 8
 connected 6684
+end
+arch woodfloor2
+x 33
+y 8
 end
 arch longtable_2_1_1
 x 33

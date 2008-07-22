@@ -8,6 +8,7 @@ height 15
 enter_y 7
 msg
 Created:  2004-11-09 Casper and Salathar (salathar@hotmail.com)2004
+Modified: 2008-06-03 Arvid Norlander
 endmsg
 end
 arch dungeon_magic
@@ -195,13 +196,25 @@ arch swall_1_3
 x 1
 y 5
 end
-arch flagstone
+arch dungeon_magic
 x 1
 y 6
 end
 arch flagstone
 x 1
+y 6
+end
+arch dungeon_magic
+x 1
 y 7
+end
+arch flagstone
+x 1
+y 7
+end
+arch dungeon_magic
+x 1
+y 8
 end
 arch flagstone
 x 1
@@ -349,6 +362,10 @@ arch flagstone
 x 2
 y 6
 end
+arch dungeon_magic
+x 2
+y 7
+end
 arch flagstone
 x 2
 y 7
@@ -495,9 +512,17 @@ arch swall_1_4
 x 3
 y 5
 end
+arch dungeon_magic
+x 3
+y 6
+end
 arch flagstone
 x 3
 y 6
+end
+arch dungeon_magic
+x 3
+y 7
 end
 arch flagstone
 x 3
@@ -509,6 +534,10 @@ hp 3
 sp 7
 x 3
 y 7
+end
+arch dungeon_magic
+x 3
+y 8
 end
 arch flagstone
 x 3
@@ -639,6 +668,10 @@ arch swall_3_1
 x 4
 y 5
 end
+arch dungeon_magic
+x 4
+y 6
+end
 arch flagstone
 x 4
 y 6
@@ -648,9 +681,17 @@ name Waiting Cell Guard
 x 4
 y 6
 end
+arch dungeon_magic
+x 4
+y 7
+end
 arch flagstone
 x 4
 y 7
+end
+arch dungeon_magic
+x 4
+y 8
 end
 arch flagstone
 x 4
@@ -786,13 +827,25 @@ arch swall_1_3
 x 5
 y 5
 end
-arch flagstone
+arch dungeon_magic
 x 5
 y 6
 end
 arch flagstone
 x 5
+y 6
+end
+arch dungeon_magic
+x 5
 y 7
+end
+arch flagstone
+x 5
+y 7
+end
+arch dungeon_magic
+x 5
+y 8
 end
 arch flagstone
 x 5
@@ -940,6 +993,10 @@ arch flagstone
 x 6
 y 6
 end
+arch dungeon_magic
+x 6
+y 7
+end
 arch flagstone
 x 6
 y 7
@@ -1086,13 +1143,25 @@ arch swall_1_4
 x 7
 y 5
 end
-arch flagstone
+arch dungeon_magic
 x 7
 y 6
 end
 arch flagstone
 x 7
+y 6
+end
+arch dungeon_magic
+x 7
 y 7
+end
+arch flagstone
+x 7
+y 7
+end
+arch dungeon_magic
+x 7
+y 8
 end
 arch flagstone
 x 7
@@ -1223,6 +1292,10 @@ arch swall_3_1
 x 8
 y 5
 end
+arch dungeon_magic
+x 8
+y 6
+end
 arch flagstone
 x 8
 y 6
@@ -1232,9 +1305,17 @@ name Waiting Cell Guard
 x 8
 y 6
 end
+arch dungeon_magic
+x 8
+y 7
+end
 arch flagstone
 x 8
 y 7
+end
+arch dungeon_magic
+x 8
+y 8
 end
 arch flagstone
 x 8
@@ -1370,13 +1451,25 @@ arch swall_1_3
 x 9
 y 5
 end
-arch flagstone
+arch dungeon_magic
 x 9
 y 6
 end
 arch flagstone
 x 9
+y 6
+end
+arch dungeon_magic
+x 9
 y 7
+end
+arch flagstone
+x 9
+y 7
+end
+arch dungeon_magic
+x 9
+y 8
 end
 arch flagstone
 x 9
@@ -1524,6 +1617,10 @@ arch flagstone
 x 10
 y 6
 end
+arch dungeon_magic
+x 10
+y 7
+end
 arch flagstone
 x 10
 y 7
@@ -1670,13 +1767,25 @@ arch swall_1_4
 x 11
 y 5
 end
-arch flagstone
+arch dungeon_magic
 x 11
 y 6
 end
 arch flagstone
 x 11
+y 6
+end
+arch dungeon_magic
+x 11
 y 7
+end
+arch flagstone
+x 11
+y 7
+end
+arch dungeon_magic
+x 11
+y 8
 end
 arch flagstone
 x 11
@@ -1807,13 +1916,25 @@ arch swall_2_2_4
 x 12
 y 5
 end
-arch flagstone
+arch dungeon_magic
 x 12
 y 6
 end
 arch flagstone
 x 12
+y 6
+end
+arch dungeon_magic
+x 12
 y 7
+end
+arch flagstone
+x 12
+y 7
+end
+arch dungeon_magic
+x 12
+y 8
 end
 arch flagstone
 x 12
@@ -2095,6 +2216,10 @@ x 14
 y 1
 connected 12
 end
+arch dungeon_magic
+x 14
+y 2
+end
 arch flagstone
 x 14
 y 2
@@ -2117,6 +2242,10 @@ arch gateTrg1
 x 14
 y 3
 connected 22
+end
+arch dungeon_magic
+x 14
+y 4
 end
 arch flagstone
 x 14
@@ -2205,6 +2334,10 @@ x 14
 y 9
 connected 42
 end
+arch dungeon_magic
+x 14
+y 10
+end
 arch flagstone
 x 14
 y 10
@@ -2227,6 +2360,10 @@ arch gateTrg1
 x 14
 y 11
 connected 52
+end
+arch dungeon_magic
+x 14
+y 12
 end
 arch flagstone
 x 14
@@ -2297,6 +2434,10 @@ arch boulder
 x 15
 y 1
 end
+arch dungeon_magic
+x 15
+y 2
+end
 arch flagstone
 x 15
 y 2
@@ -2326,6 +2467,10 @@ end
 arch boulder
 x 15
 y 3
+end
+arch dungeon_magic
+x 15
+y 4
 end
 arch flagstone
 x 15
@@ -2423,6 +2568,10 @@ arch boulder
 x 15
 y 9
 end
+arch dungeon_magic
+x 15
+y 10
+end
 arch flagstone
 x 15
 y 10
@@ -2452,6 +2601,10 @@ end
 arch boulder
 x 15
 y 11
+end
+arch dungeon_magic
+x 15
+y 12
 end
 arch flagstone
 x 15
