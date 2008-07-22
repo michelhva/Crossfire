@@ -7,21 +7,21 @@ Created:  1998-02-19
 endmsg
 end
 arch tree4
-no_pass 1
+move_block all
 blocksview 1
 end
 arch tree3
 x 1
-no_pass 1
+move_block all
 blocksview 1
 end
 arch tree5
 x 2
-no_pass 1
+move_block all
 blocksview 1
 end
 arch fernsdense
 x 4
-no_pass 1
+move_block all
 blocksview 1
 end
