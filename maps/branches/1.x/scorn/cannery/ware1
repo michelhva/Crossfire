@@ -8,6 +8,7 @@ enter_x 19
 enter_y 39
 msg
 Created:  1993-10-15
+Modified: 2008-06-06 Arvid Norlander
 endmsg
 end
 arch cobblestones2
@@ -3963,6 +3964,7 @@ sp 26
 x 17
 y 39
 is_animated 0
+client_anim_random 0
 end
 arch cobblestones2
 x 18
@@ -4174,6 +4176,7 @@ sp 26
 x 18
 y 39
 is_animated 0
+client_anim_random 0
 end
 arch cobblestones2
 x 19
@@ -4374,6 +4377,7 @@ sp 26
 x 19
 y 39
 is_animated 0
+client_anim_random 0
 end
 arch cobblestones2
 x 20
@@ -4575,6 +4579,7 @@ sp 26
 x 20
 y 39
 is_animated 0
+client_anim_random 0
 end
 arch cobblestones2
 x 21
