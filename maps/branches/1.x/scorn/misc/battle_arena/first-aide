@@ -184,7 +184,7 @@ arch bench_1_4
 name desk
 x 1
 y 6
-no_pass 1
+move_block all
 end
 arch magic_banned
 x 1
@@ -306,7 +306,7 @@ arch bench_2_1_2
 name desk
 x 2
 y 6
-no_pass 1
+move_block all
 end
 arch magic_banned
 x 2
@@ -430,7 +430,7 @@ arch bench_2_1_2
 name desk
 x 3
 y 6
-no_pass 1
+move_block all
 end
 arch magic_banned
 x 3
@@ -581,7 +581,7 @@ arch bench_2_2_3
 name desk
 x 4
 y 6
-no_pass 1
+move_block all
 end
 arch dungeon_magic
 x 4
@@ -595,7 +595,7 @@ arch bench_2_1_1
 name desk
 x 4
 y 7
-no_pass 1
+move_block all
 end
 arch dungeon_magic
 x 4
@@ -609,7 +609,7 @@ arch bench_2_1_1
 name desk
 x 4
 y 8
-no_pass 1
+move_block all
 end
 arch dungeon_magic
 x 4
@@ -623,7 +623,7 @@ arch bench_1_2
 name desk
 x 4
 y 9
-no_pass 1
+move_block all
 end
 arch magic_banned
 x 4

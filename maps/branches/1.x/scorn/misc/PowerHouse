@@ -3324,7 +3324,7 @@ end
 arch longtable_1_1
 x 8
 y 28
-no_pass 1
+move_block all
 end
 arch magic_banned
 x 8
@@ -3341,7 +3341,7 @@ end
 arch longtable_2_2_1
 x 8
 y 29
-no_pass 1
+move_block all
 end
 arch magic_banned
 x 8
@@ -3813,7 +3813,7 @@ end
 arch longtable_2_1_2
 x 9
 y 29
-no_pass 1
+move_block all
 end
 arch magic_banned
 x 9
@@ -4107,7 +4107,7 @@ end
 arch door_look_1
 x 10
 y 23
-no_pass 0
+move_block 0
 end
 arch magic_banned
 x 10
@@ -4187,7 +4187,7 @@ end
 arch longtable_2_1_2
 x 10
 y 29
-no_pass 1
+move_block all
 end
 arch magic_banned
 x 10
@@ -4684,7 +4684,7 @@ end
 arch longtable_2_1_2
 x 11
 y 29
-no_pass 1
+move_block all
 end
 arch magic_banned
 x 11
@@ -5030,7 +5030,7 @@ end
 arch longtable_1_1
 x 12
 y 28
-no_pass 1
+move_block all
 end
 arch magic_banned
 x 12
@@ -5047,7 +5047,7 @@ end
 arch longtable_2_2_4
 x 12
 y 29
-no_pass 1
+move_block all
 end
 arch magic_banned
 x 12

@@ -855,7 +855,7 @@ end
 arch door_look_2
 x 9
 y 8
-no_pass 0
+move_block 0
 end
 arch woodfloor
 x 9
@@ -864,7 +864,7 @@ end
 arch door_look_2
 x 9
 y 9
-no_pass 0
+move_block 0
 blocksview 1
 end
 arch woodfloor
@@ -944,7 +944,7 @@ end
 arch door_look_1
 x 10
 y 10
-no_pass 0
+move_block 0
 blocksview 1
 end
 arch magic_mouth
@@ -1031,7 +1031,7 @@ end
 arch door_look_1
 x 11
 y 10
-no_pass 0
+move_block 0
 blocksview 1
 end
 arch magic_mouth
@@ -2061,7 +2061,7 @@ end
 arch door_look_2
 x 23
 y 6
-no_pass 0
+move_block 0
 end
 arch woodfloor
 x 23
@@ -2070,7 +2070,7 @@ end
 arch door_look_2
 x 23
 y 7
-no_pass 0
+move_block 0
 end
 arch woodfloor
 x 23

@@ -253,13 +253,13 @@ end
 arch tree
 x 1
 y 11
-no_pass 1
+move_block all
 blocksview 1
 end
 arch tree
 x 1
 y 12
-no_pass 1
+move_block all
 blocksview 1
 end
 arch woodfloor
@@ -1592,7 +1592,7 @@ end
 arch tree
 x 9
 y 12
-no_pass 1
+move_block all
 blocksview 1
 end
 arch brush
@@ -1602,7 +1602,7 @@ end
 arch hedge_2_1_2
 x 9
 y 13
-no_pass 1
+move_block all
 end
 arch grass
 x 9
@@ -1681,7 +1681,7 @@ end
 arch tree
 x 10
 y 2
-no_pass 1
+move_block all
 blocksview 1
 end
 arch grass
@@ -3346,13 +3346,13 @@ end
 arch tree
 x 20
 y 17
-no_pass 1
+move_block all
 blocksview 1
 end
 arch tree
 x 20
 y 18
-no_pass 1
+move_block all
 blocksview 1
 end
 arch grass
@@ -3528,13 +3528,13 @@ end
 arch tree
 x 21
 y 19
-no_pass 1
+move_block all
 blocksview 1
 end
 arch tree
 x 21
 y 20
-no_pass 1
+move_block all
 blocksview 1
 end
 arch grass
@@ -3548,13 +3548,13 @@ end
 arch tree
 x 21
 y 22
-no_pass 1
+move_block all
 blocksview 1
 end
 arch tree
 x 21
 y 23
-no_pass 1
+move_block all
 blocksview 1
 end
 arch grass
@@ -3654,7 +3654,7 @@ end
 arch tree
 x 22
 y 11
-no_pass 1
+move_block all
 blocksview 1
 end
 arch grass

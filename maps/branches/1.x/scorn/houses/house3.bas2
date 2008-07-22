@@ -189,7 +189,7 @@ end
 arch river_nw-se_l
 x 1
 y 5
-no_pass 0
+move_block 0
 end
 arch dungeon_magic
 x 1
@@ -687,7 +687,7 @@ end
 arch river_sw-ne_l
 x 3
 y 16
-no_pass 0
+move_block 0
 end
 arch dungeon_floor
 x 3
@@ -1357,7 +1357,7 @@ end
 arch tree6
 x 7
 y 12
-no_pass 1
+move_block all
 blocksview 1
 end
 arch flagstone
@@ -1367,7 +1367,7 @@ end
 arch tree6
 x 7
 y 13
-no_pass 1
+move_block all
 blocksview 1
 end
 arch flagstone
@@ -1573,7 +1573,7 @@ end
 arch tree6
 x 8
 y 13
-no_pass 1
+move_block all
 blocksview 1
 end
 arch flagstone
