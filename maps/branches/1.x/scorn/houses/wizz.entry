@@ -1122,7 +1122,7 @@ end
 arch charwoman
 name House Keeper
 msg
-@match hello|hello|hi|job|name
+@match hello|hi|job|name
 Oh good evening Zir, I am Charles,
 zee old wizzard's houze keeper!
 Can I HELP you, Zir?
@@ -1141,7 +1141,7 @@ me pazzword for gatz az he leavzz.
 You muzzt searzz for it. Good Luck!
 Charles pulls out a PAPER, looks at
 it, marks an X and puts it away again.
-@match paper|PAPER
+@match paper
 Oh nothing... I juzt write zown how
 many adventurerz entered zee DUNZEON
 zinze mazzter Yarid died. Zee number

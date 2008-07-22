@@ -161,10 +161,10 @@ end
 arch guard
 name gatehouse guard
 msg
-@match monster|Monster
+@match monster
 They keep trying to sneak in, but we
 always kill them.
-@match Open|Gate|open|gate
+@match open|gate
 The gate opens only for certain people.
 @match who|people
 Only those who are
@@ -446,10 +446,10 @@ end
 arch guard
 name gatehouse guard
 msg
-@match monster|Monster
+@match monster
 They keep trying to sneak in, but we
 always kill them.
-@match Open|Gate|open|gate
+@match open|gate
 The gate opens only for certain people.
 @match who|people
 Only those who are
@@ -1878,10 +1878,10 @@ end
 arch guard
 name gatehouse guard
 msg
-@match monster|Monster
+@match monster
 They keep trying to sneak in, but we
 always kill them.
-@match Open|Gate|open|gate
+@match open|gate
 The gate opens only for certain people.
 @match who|people
 Only those who are
@@ -2448,10 +2448,10 @@ end
 arch guard
 name gatehouse guard
 msg
-@match monster|Monster
+@match monster
 They keep trying to sneak in, but we
 always kill them.
-@match Open|Gate|open|gate
+@match open|gate
 The gate opens only for certain people.
 @match who|people
 Only those who are

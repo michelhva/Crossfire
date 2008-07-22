@@ -623,7 +623,7 @@ end
 arch dragon
 name Thalik Norois
 msg
-@match name|Name
+@match name
 Thalik Norois
 @match *
 Die fools.
@@ -3849,17 +3849,17 @@ y 26
 end
 arch dark_elf
 msg
-@match name|Name
+@match name
 That is not important.
 @match job
 I dabble in the black arts.
-@match Art|art|black|Black
+@match art|black
 I've killed many who have tried to test my
 power. Do you think you can kill me?
-@match yes|Yes
+@match yes
 I doubt it.
 *The dark elf grins evilly.*
-@match no|No
+@match no
 Smart, you are.
 @match pass
 I guard this passage and I will kill any who try

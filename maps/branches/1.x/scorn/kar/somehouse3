@@ -535,7 +535,7 @@ y 8
 end
 arch magic_ear
 msg
-@match key|Key
+@match key
 You hear a well-oiled door open.
 endmsg
 x 5

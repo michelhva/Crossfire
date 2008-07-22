@@ -1934,7 +1934,7 @@ end
 arch guard
 name prison guard
 msg
-@match poem|cleric|eric|Eric
+@match poem|cleric|eric
   A priestly young person called Eric,
    Whilst practicing to be a cleric,
     Misspelt his god's name,
@@ -2461,7 +2461,7 @@ the prisoner escaped.
 He dug a tunnel under his bed!
 Goblins are great tunnelers you know.
 Probably left for Goblin Isle.
-@match isle|Isle
+@match isle
 Yes that is where he said he lived.
 Also said that it was full of treasure.
 @match where|treasure

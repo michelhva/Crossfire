@@ -3090,12 +3090,12 @@ y 10
 end
 arch magic_ear
 msg
-@match P|price
+@match price
 Stuff not much. Buy lot!
-@match K|key
+@match key
 Manager office for employee only.
 You not go there.
-@match O|oorgh
+@match oorgh
 That my name. Not wear out.
 @match *
 Oorgh welcome you to shop!
