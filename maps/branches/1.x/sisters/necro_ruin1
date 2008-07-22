@@ -1156,7 +1156,7 @@ arch biglake_nw
 name pond
 x 8
 y 8
-no_pass 0
+move_block 0
 end
 arch cobblestones2
 x 8
@@ -1166,7 +1166,7 @@ arch biglake_ew
 name pond
 x 8
 y 9
-no_pass 0
+move_block 0
 end
 arch cobblestones2
 x 8
@@ -1176,7 +1176,7 @@ arch biglake_sw
 name pond
 x 8
 y 10
-no_pass 0
+move_block 0
 end
 arch cobblestones2
 x 8
@@ -1346,7 +1346,7 @@ arch biglake_ew
 name pond
 x 9
 y 8
-no_pass 0
+move_block 0
 end
 arch trapdoor_3
 msg
@@ -1377,7 +1377,7 @@ arch biglake_ew
 name pond
 x 9
 y 10
-no_pass 0
+move_block 0
 end
 arch cobblestones2
 x 9
@@ -1387,7 +1387,7 @@ arch biglake_sw
 name pond
 x 9
 y 11
-no_pass 0
+move_block 0
 end
 arch cobblestones2
 x 9
@@ -1533,7 +1533,7 @@ arch biglake_ne
 name pond
 x 10
 y 8
-no_pass 0
+move_block 0
 end
 arch cobblestones2
 x 10
@@ -1543,7 +1543,7 @@ arch biglake_s
 name pond
 x 10
 y 9
-no_pass 0
+move_block 0
 end
 arch cobblestones2
 x 10
@@ -1553,7 +1553,7 @@ arch biglake_s
 name pond
 x 10
 y 10
-no_pass 0
+move_block 0
 end
 arch cobblestones2
 x 10
@@ -1563,7 +1563,7 @@ arch biglake_se
 name pond
 x 10
 y 11
-no_pass 0
+move_block 0
 end
 arch cobblestones2
 x 10
