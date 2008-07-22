@@ -1859,11 +1859,11 @@ y 13
 end
 arch cobblestones2
 x 7
-y 12
+y 13
 end
 arch dungeon_magic
 x 7
-y 12
+y 13
 end
 arch magic_mouth
 msg
@@ -1873,23 +1873,6 @@ Religions are acquired by praying at an altar.  Any player with the praying skil
 The deities are very different from each other and can vastly affect how the game is played.  Beginning players should probably choose either Mostrai or Valriel, and should probably avoid Gaea and Ruggilli.
 Praying at an altar can have a number of advantages.  For example, your god may grant you extra grace points, or may spontaneously bless you with some unexpected boon.  Don't give up on praying at the altar as sometimes it takes quite a bit of prayer to convince your god that you are worthy.
 Temples for most of the religions may be found in the town of Scorn, where new players should go after selecting a class.
-endmsg
-x 7
-y 13
-end
-arch cobblestones2
-x 7
-y 13
-end
-arch dungeon_magic
-x 7
-y 13
-end
-arch magic_mouth
-msg
-To begin choosing a character class, walk into the room ahead.  Examine the different classes by stepping on the first tile of each aisle.  When you find a class that appeals to you, walk forward onto the teleport circle for that class.
-Note that your character's statistics like strength, dexterity, and so on, will be automatically adjusted according the chosen class.  Keep this in mind when making a selection. Some statistics will get higher, and others will get lower.
-It may be helpful to choose a class keeping in mind which statistics are high and low.  For example, it may not be wise to pick a warrior class if your character has very low strength, and electing a magical class with a very low power statistic may prevent your character from using magic until artifacts may be found that raise your characters statistics to a useful level.
 endmsg
 x 7
 y 14
