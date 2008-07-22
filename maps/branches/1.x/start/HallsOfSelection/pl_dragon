@@ -55,6 +55,9 @@ end
 arch blocked
 y 14
 end
+arch pstone_2
+y 16
+end
 arch cave15
 y 16
 end
@@ -160,6 +163,10 @@ arch blocked
 x 1
 y 14
 end
+arch pstone_2
+x 1
+y 15
+end
 arch cave6
 x 1
 y 15
@@ -191,6 +198,10 @@ end
 arch cave17
 x 1
 y 19
+end
+arch pstone_2
+x 1
+y 20
 end
 arch cave15
 x 1
@@ -1639,6 +1650,10 @@ arch cave12
 x 6
 y 33
 end
+arch pstone_2
+x 6
+y 34
+end
 arch cave23
 x 6
 y 34
@@ -2962,6 +2977,10 @@ end
 arch cave11
 x 10
 y 33
+end
+arch pstone_2
+x 10
+y 34
 end
 arch cave22
 x 10
