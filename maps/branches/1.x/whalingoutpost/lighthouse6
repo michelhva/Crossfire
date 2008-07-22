@@ -72,7 +72,7 @@ name nothing
 name_pl nothing
 x 1
 y 2
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch blocked
@@ -80,7 +80,7 @@ name nothing
 name_pl nothing
 x 1
 y 3
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch swall_2_2_2
@@ -96,7 +96,7 @@ name nothing
 name_pl nothing
 x 1
 y 4
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch swall_1_2
@@ -112,7 +112,7 @@ name nothing
 name_pl nothing
 x 1
 y 5
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch dungeon_floor
@@ -184,7 +184,7 @@ name nothing
 name_pl nothing
 x 1
 y 13
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch swall_2_2_1
@@ -200,7 +200,7 @@ name nothing
 name_pl nothing
 x 1
 y 14
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch blocked
@@ -208,7 +208,7 @@ name nothing
 name_pl nothing
 x 1
 y 15
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch blocked
@@ -216,7 +216,7 @@ name nothing
 name_pl nothing
 x 1
 y 16
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch fog
@@ -236,7 +236,7 @@ name nothing
 name_pl nothing
 x 2
 y 2
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch fog
@@ -256,7 +256,7 @@ name nothing
 name_pl nothing
 x 2
 y 3
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch swall_2_2_4
@@ -272,7 +272,7 @@ name nothing
 name_pl nothing
 x 2
 y 4
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch dungeon_floor
@@ -354,7 +354,7 @@ name nothing
 name_pl nothing
 x 2
 y 14
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch swall_2_2_1
@@ -370,7 +370,7 @@ name nothing
 name_pl nothing
 x 2
 y 15
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch blocked
@@ -378,7 +378,7 @@ name nothing
 name_pl nothing
 x 2
 y 16
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch blocked
@@ -402,7 +402,7 @@ name nothing
 name_pl nothing
 x 3
 y 2
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch swall_2_2_4
@@ -418,7 +418,7 @@ name nothing
 name_pl nothing
 x 3
 y 3
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch dungeon_floor
@@ -520,7 +520,7 @@ name nothing
 name_pl nothing
 x 3
 y 15
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch swall_2_2_1
@@ -536,7 +536,7 @@ name nothing
 name_pl nothing
 x 3
 y 16
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch blocked
@@ -560,7 +560,7 @@ name nothing
 name_pl nothing
 x 4
 y 2
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch dungeon_floor
@@ -690,7 +690,7 @@ name nothing
 name_pl nothing
 x 4
 y 16
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch blocked
@@ -1712,7 +1712,7 @@ name nothing
 name_pl nothing
 x 12
 y 2
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch dungeon_floor
@@ -1837,7 +1837,7 @@ name nothing
 name_pl nothing
 x 12
 y 16
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch blocked
@@ -1861,7 +1861,7 @@ name nothing
 name_pl nothing
 x 13
 y 2
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch swall_2_2_1
@@ -1877,7 +1877,7 @@ name nothing
 name_pl nothing
 x 13
 y 3
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch dungeon_floor
@@ -1971,7 +1971,7 @@ name nothing
 name_pl nothing
 x 13
 y 15
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch swall_2_2_4
@@ -1987,7 +1987,7 @@ name nothing
 name_pl nothing
 x 13
 y 16
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch blocked
@@ -2003,7 +2003,7 @@ name nothing
 name_pl nothing
 x 14
 y 2
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch fog
@@ -2023,7 +2023,7 @@ name nothing
 name_pl nothing
 x 14
 y 3
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch swall_2_2_1
@@ -2039,7 +2039,7 @@ name nothing
 name_pl nothing
 x 14
 y 4
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch dungeon_floor
@@ -2121,7 +2121,7 @@ name nothing
 name_pl nothing
 x 14
 y 14
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch swall_2_2_4
@@ -2137,7 +2137,7 @@ name nothing
 name_pl nothing
 x 14
 y 15
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch blocked
@@ -2145,7 +2145,7 @@ name nothing
 name_pl nothing
 x 14
 y 16
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch fog
@@ -2165,7 +2165,7 @@ name nothing
 name_pl nothing
 x 15
 y 2
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch blocked
@@ -2173,7 +2173,7 @@ name nothing
 name_pl nothing
 x 15
 y 3
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch swall_2_2_3
@@ -2189,7 +2189,7 @@ name nothing
 name_pl nothing
 x 15
 y 4
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch swall_1_2
@@ -2205,7 +2205,7 @@ name nothing
 name_pl nothing
 x 15
 y 5
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch dungeon_floor
@@ -2261,7 +2261,7 @@ name nothing
 name_pl nothing
 x 15
 y 13
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch swall_2_2_4
@@ -2277,7 +2277,7 @@ name nothing
 name_pl nothing
 x 15
 y 14
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch blocked
@@ -2285,7 +2285,7 @@ name nothing
 name_pl nothing
 x 15
 y 15
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch fog
@@ -2297,7 +2297,7 @@ name nothing
 name_pl nothing
 x 15
 y 16
-no_pass 0
+move_block 0
 blocksview 0
 end
 arch blocked

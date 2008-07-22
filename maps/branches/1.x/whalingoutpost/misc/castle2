@@ -2397,7 +2397,7 @@ end
 arch door_2
 x 9
 y 16
-no_pass 0
+move_block 0
 end
 arch flagstone
 x 9
@@ -2917,7 +2917,7 @@ end
 arch door_2
 x 10
 y 16
-no_pass 0
+move_block 0
 end
 arch flagstone
 x 10
@@ -4994,7 +4994,7 @@ end
 arch door_1
 x 16
 y 9
-no_pass 0
+move_block 0
 end
 arch istone
 x 16
@@ -5003,7 +5003,7 @@ end
 arch door_1
 x 16
 y 10
-no_pass 0
+move_block 0
 end
 arch istone
 x 16
@@ -6789,7 +6789,7 @@ end
 arch door_1
 x 27
 y 53
-no_pass 0
+move_block 0
 end
 arch istone
 x 27
@@ -6798,7 +6798,7 @@ end
 arch door_1
 x 27
 y 54
-no_pass 0
+move_block 0
 end
 arch istone
 x 27
@@ -9598,7 +9598,7 @@ end
 arch door_1
 x 36
 y 53
-no_pass 0
+move_block 0
 end
 arch istone
 x 36
@@ -9607,7 +9607,7 @@ end
 arch door_1
 x 36
 y 54
-no_pass 0
+move_block 0
 end
 arch istone
 x 36
@@ -11995,7 +11995,7 @@ end
 arch door_1
 x 47
 y 9
-no_pass 0
+move_block 0
 end
 arch istone
 x 47
@@ -12004,7 +12004,7 @@ end
 arch door_1
 x 47
 y 10
-no_pass 0
+move_block 0
 end
 arch istone
 x 47
@@ -12145,7 +12145,7 @@ end
 arch door_1
 x 47
 y 53
-no_pass 0
+move_block 0
 end
 arch istone
 x 47
@@ -12154,7 +12154,7 @@ end
 arch door_1
 x 47
 y 54
-no_pass 0
+move_block 0
 end
 arch istone
 x 47
@@ -14021,7 +14021,7 @@ end
 arch door_2
 x 53
 y 16
-no_pass 0
+move_block 0
 end
 arch flagstone
 x 53
@@ -14270,7 +14270,7 @@ end
 arch door_2
 x 53
 y 47
-no_pass 0
+move_block 0
 end
 arch woodfloor2
 name woodfloor
@@ -14537,7 +14537,7 @@ end
 arch door_2
 x 54
 y 16
-no_pass 0
+move_block 0
 end
 arch flagstone
 x 54
@@ -14786,7 +14786,7 @@ end
 arch door_2
 x 54
 y 47
-no_pass 0
+move_block 0
 end
 arch woodfloor2
 name woodfloor
