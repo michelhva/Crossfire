@@ -8,6 +8,7 @@ enter_x 7
 enter_y 5
 msg
 Created:  2005-12-25 Pippijn van Steenhoven (pip88nl@gmail.com)
+Modified: 2008-06-06 Arvid Norlander
 endmsg
 end
 arch blocked
@@ -194,6 +195,10 @@ end
 arch cave15
 x 1
 y 20
+end
+arch pstone_2
+x 1
+y 21
 end
 arch cave5
 x 1
@@ -719,7 +724,15 @@ arch cave21
 x 3
 y 31
 end
+arch dungeon_magic
+x 3
+y 32
+end
 arch pstone_2
+x 3
+y 32
+end
+arch dungeon_magic
 x 3
 y 32
 end
