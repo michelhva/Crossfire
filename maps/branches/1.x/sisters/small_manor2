@@ -711,7 +711,7 @@ end
 arch door_look_1
 x 6
 y 6
-no_pass 0
+move_block 0
 end
 arch woodfloor
 x 6
@@ -756,7 +756,7 @@ end
 arch door_look_2
 x 6
 y 10
-no_pass 0
+move_block 0
 end
 arch flagstone
 x 6
@@ -999,7 +999,7 @@ end
 arch door_look_1
 x 8
 y 6
-no_pass 0
+move_block 0
 end
 arch woodfloor
 x 8
@@ -1151,7 +1151,7 @@ end
 arch door_look_2
 x 9
 y 7
-no_pass 0
+move_block 0
 end
 arch flagstone
 x 9
@@ -1567,7 +1567,7 @@ end
 arch door_look_2
 x 12
 y 8
-no_pass 0
+move_block 0
 end
 arch flagstone
 x 12
