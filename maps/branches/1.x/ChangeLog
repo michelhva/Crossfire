@@ -1,3 +1,1624 @@
+2008-07-22 17:49  rjtanner
+
+	* styles/specialmaps/mini_jewlery, styles/specialmaps/mini_tanner,
+	  styles/specialmaps/mini_workbench, styles/specialmaps/minialch,
+	  styles/specialmaps/turret, styles/specialmaps/turret2,
+	  styles/specialmaps/turretswarm, styles/specialmaps/turrettrap,
+	  styles/wallstyles/hedge, styles/wallstyles/trees: Backport from
+	  trunk, replace no_pass with move_block
+
+2008-07-22 17:46  rjtanner
+
+	* styles/monsterstyles/nethack/nethack_12: Backport from trunk,
+	  remove empty msg
+
+2008-07-22 17:45  rjtanner
+
+	* styles/doorstyles/special/forest,
+	  styles/monsterstyles/chaos/chaos_1,
+	  styles/monsterstyles/chaos/chaos_2: Backport from trunk, remove
+	  trailing zeros on speed numbers and convert protected <value> to
+	  partial resistance <values>
+
+2008-07-22 17:38  rjtanner
+
+	* world/world_105_115: Backport from trunk, workaround for cfrhg
+	  (Crossfire Random House Generator) causing random maps when
+	  walking on gates to Castle of Scorn
+
+2008-07-22 17:28  rjtanner
+
+	* world/world_116_102: Backport from trunk, remove duplicate ground
+	  tiles in Darcap harbour
+
+2008-07-22 17:26  rjtanner
+
+	* world/world_116_102: Backport from trunk, building renamed to
+	  match new map name
+
+2008-07-22 17:14  rjtanner
+
+	* world/world_116_102: Backport from trunk, added in-game lore
+	  information
+
+2008-07-22 17:11  rjtanner
+
+	* world/world_128_101, world/world_128_128: Backport from trunk,
+	  update destination entrance coordinates due to layout changes
+	  made on the linked map
+
+2008-07-22 17:09  rjtanner
+
+	* world/world_101_114: Backport from trunk, @match is case
+	  insensitive - made dialog all lower case
+
+2008-07-22 17:04  rjtanner
+
+	* wolfsburg/etern_rew: Backport from trunk, updated map header with
+	  last modified info (missed in earlier commit)
+
+2008-07-22 17:02  rjtanner
+
+	* wolfsburg/dungeons/ship_deck2, wolfsburg/dungeons/underworld,
+	  wolfsburg/guilds/damned_heretics/ground,
+	  wolfsburg/guilds/damned_heretics/storage_room,
+	  wolfsburg/guilds/damned_heretics/upper, wolfsburg/inns,
+	  wolfsburg/magara/castle/floor_3, wolfsburg/slave_pit2,
+	  wolfsburg/slave_pit3, wolfsburg/volcano/vvmansion,
+	  wolfsburg/ware1: Backport from trunk, replace no_pass with
+	  move_block
+
+2008-07-22 16:59  rjtanner
+
+	* wolfsburg/dungeons/hut: Backport from trunk, allow the exits to
+	  be animated
+
+2008-07-22 16:58  rjtanner
+
+	* wolfsburg/apartments/wolfsburg.apartment, wolfsburg/dungeons/hut:
+	  Backport from trunk, typo correction with floor tiles (woodfloor
+	  -> wood floor)
+
+2008-07-22 16:56  rjtanner
+
+	* wolfsburg/dungeons/church.4b, wolfsburg/dungeons/hut,
+	  wolfsburg/dungeons/underworld, wolfsburg/etern_rew,
+	  wolfsburg/temple/temp_dung1, wolfsburg/tt/tta1,
+	  wolfsburg/volcano/vvmansion: Backport from trunk, @match is case
+	  insensitive - made dialog all lower case
+
+2008-07-22 03:01  rjtanner
+
+	* whalingoutpost/taverns/storehouse1: Backport from trunk, @match
+	  is case insensitive - made dialog all lower case
+
+2008-07-22 03:00  rjtanner
+
+	* whalingoutpost/misc/castle1: Backport from trunk, cosmetic wall
+	  updates
+
+2008-07-22 02:59  rjtanner
+
+	* whalingoutpost/houses/infestedhouse1,
+	  whalingoutpost/lightkeepershouseb1,
+	  whalingoutpost/misc/polarbearcave1,
+	  whalingoutpost/misc/polarbearcave2,
+	  whalingoutpost/misc/polarbearcave3,
+	  whalingoutpost/taverns/fishershall1: Backport from trunk, resized
+	  map to remove unused and empty space
+
+2008-07-22 02:56  rjtanner
+
+	* whalingoutpost/houses/fishershouse1: Backport from trunk, replace
+	  no_pass with move_block
+
+2008-07-22 02:55  rjtanner
+
+	* whalingoutpost/lighthouse1, whalingoutpost/lighthouse6,
+	  whalingoutpost/lightkeepershouse1, whalingoutpost/misc/castle1,
+	  whalingoutpost/misc/castle2, whalingoutpost/misc/castle4,
+	  whalingoutpost/misc/castleb1, whalingoutpost/misc/castleb1keep,
+	  whalingoutpost/misc/frostcavern1, whalingoutpost/misc/holeinice1,
+	  whalingoutpost/misc/icehole1, whalingoutpost/taverns/storehouse1:
+	  Backport from trunk, replace no_pass with move_block
+
+2008-07-22 02:41  rjtanner
+
+	* teamarena/twregister: Backport from trunk, @match is case
+	  insensitive - made dialog all lower case
+
+2008-07-22 02:41  rjtanner
+
+	* teamarena/teamwar, teamarena/twregister: Backport from trunk,
+	  replace no_pass with move_block
+
+2008-07-22 02:38  rjtanner
+
+	* start/HallsOfSelection/wraith_player: Backport from trunk, add
+	  movement blockers to prevent players from wandering all over the
+	  map
+
+2008-07-22 02:37  rjtanner
+
+	* start/HallsOfSelection/wraith_player: Backport from trunk, remove
+	  non-existant archetype
+
+2008-07-22 02:35  rjtanner
+
+	* start/HallsOfSelection/pl_dragon: Backport from trunk, adjust
+	  ground tile stacking order
+
+2008-07-22 02:35  rjtanner
+
+	* start/HallsOfSelection/pl_dragon: Backport from trunk, add
+	  missing ground tiles
+
+2008-07-22 02:32  rjtanner
+
+	* start/HallsOfSelection/fireborn_player,
+	  start/HallsOfSelection/pl_dragon,
+	  start/HallsOfSelection/wraith_player: Backport from trunk, add
+	  missing no magic tiles
+
+2008-07-22 02:22  rjtanner
+
+	* start/HallsOfSelection/fireborn_player,
+	  start/HallsOfSelection/pl_dragon,
+	  start/HallsOfSelection/wraith_player: Backport from trunk,
+	  removed line wrapping and copied over grammar updates
+
+2008-07-22 01:17  rjtanner
+
+	* start/Nexus: Backport from trunk, in-game text clarification and
+	  improvements
+
+2008-07-22 01:15  rjtanner
+
+	* sisters/shrine1: Backport from trunk, removed trailing zeros from
+	  speed setting
+
+2008-07-22 01:14  rjtanner
+
+	* sisters/entrance, sisters/necro_hole1, sisters/shrine_entrance:
+	  Backport from trunk, @match is case insensitive - made dialog all
+	  lower case
+
+2008-07-22 01:13  rjtanner
+
+	* sisters/compound1, sisters/compound2, sisters/necro_ruin1,
+	  sisters/shrine0, sisters/shrine0_east, sisters/shrine1,
+	  sisters/small_manor2, sisters/tower3: Backport from trunk,
+	  replace no_pass with move_block
+
+2008-07-22 01:08  rjtanner
+
+	* scorn/taverns/goths: Backport from trunk, floor tile
+	  re-arragenment
+
+2008-07-22 01:07  rjtanner
+
+	* scorn/taverns/goths: Backport from trunk, replace no_pass with
+	  move_block
+
+2008-07-22 01:06  rjtanner
+
+	* scorn/taverns/goths: Backport from trunk, added map lore to map
+	  header
+
+2008-07-22 01:05  rjtanner
+
+	* scorn/houses/resir: Backport from trunk, new content and updates
+	  for Resir's House
+
+2008-07-22 01:05  rjtanner
+
+	* scorn/misc/cityhall: Backport from trunk, title update since 'The
+	  Servant' is used elsewhere in scorn and 'the Good Citizen' fits
+	  the hints better
+
+2008-07-22 01:02  rjtanner
+
+	* scorn/houses/cornerbrook: Backport from trunk, correctly match
+	  connections to make right messages display for the right events
+
+2008-07-22 01:02  rjtanner
+
+	* scorn/peterm/undead_quest: Backport from trunk, syn last modified
+	  map header info
+
+2008-07-22 01:00  rjtanner
+
+	* scorn/shops/armourshop: Backport from trunk, multi-colored
+	  dragon_mail creators added to the Scorn Armour Shop
+
+2008-07-22 00:58  rjtanner
+
+	* scorn/misc/castle: Backport from trunk, ground tile
+	  re-arragenment
+
+2008-07-22 00:55  rjtanner
+
+	* scorn/peterm/undead_quest, scorn/shops/scorn.sale2: Backport from
+	  trunk, add slaying field to keys
+
+2008-07-22 00:53  rjtanner
+
+	* scorn/misc/church: Backport from trunk, replace no_pass with
+	  move_block
+
+2008-07-22 00:53  rjtanner
+
+	* scorn/misc/HallOfQuests, scorn/misc/castle, scorn/misc/church,
+	  scorn/peterm/undead_quest: Backport from trunk, added map lore to
+	  map header
+
+2008-07-22 00:51  rjtanner
+
+	* scorn/cannery/ware1: Backport from trunk, allow the exits to be
+	  animated
+
+2008-07-22 00:48  rjtanner
+
+	* scorn/guilds/mailed_fist/bigchest,
+	  scorn/guilds/mailed_fist/storage_room,
+	  scorn/guilds/mailed_fist/upper, scorn/houses/tannery,
+	  scorn/houses/wizz.entry, scorn/shops/oleds_cafe,
+	  scorn/shops/scorn.sale1: Backport from trunk, map difficulty
+	  level
+
+2008-07-22 00:46  rjtanner
+
+	* scorn/apartment/apartments, scorn/misc/library: Backport from
+	  trunk, removed duplicate and unused floor tile information
+
+2008-07-22 00:44  rjtanner
+
+	* scorn/anthony/prison, scorn/houses/breezy_under,
+	  scorn/houses/cornerbrook, scorn/houses/wizz.lev1.pass1,
+	  scorn/kar/creepy.house, scorn/kar/creepy.house2,
+	  scorn/mansion/garden, scorn/misc/HospitalityRoom,
+	  scorn/misc/castle, scorn/misc/gatehouse, scorn/misc/jail,
+	  scorn/misc/jail_upper, scorn/misc/port_arena, scorn/oldcity/end,
+	  scorn/oldcity/oldcity54, scorn/oldcity/oldcity6,
+	  scorn/oldcity/oldcity7, scorn/oldcity/oldcity8,
+	  scorn/shops/scorn.sale2, scorn/taverns/goths0,
+	  scorn/temples/ruggilli2: Backport from trunk, added missing floor
+	  tiles and tile stacking re-arrangement
+
+2008-07-22 00:34  rjtanner
+
+	* scorn/apartment/apartments, scorn/dtabb/cave,
+	  scorn/guilds/mailed_fist/ground,
+	  scorn/guilds/mailed_fist/storage_room,
+	  scorn/guilds/mailed_fist/upper, scorn/houses/bowyer,
+	  scorn/houses/breezy_under, scorn/houses/cornerbrook,
+	  scorn/houses/farmhouse, scorn/houses/house.haunted,
+	  scorn/houses/house1, scorn/houses/house2,
+	  scorn/houses/house3.bas2, scorn/houses/jeweler,
+	  scorn/houses/kitchen, scorn/houses/messhall,
+	  scorn/houses/riverside_manor, scorn/houses/tannery,
+	  scorn/kar/creepy.house, scorn/kar/creepy.house2,
+	  scorn/misc/HallOfQuests, scorn/misc/HouseofHealing,
+	  scorn/misc/PowerHouse, scorn/misc/battle_arena/entrance,
+	  scorn/misc/battle_arena/first-aide,
+	  scorn/misc/battle_arena/snack, scorn/misc/church,
+	  scorn/misc/dragon_guild, scorn/misc/gatehouse, scorn/misc/jail,
+	  scorn/misc/jail_upper, scorn/misc/library,
+	  scorn/misc/mercenaries, scorn/misc/zoo2,
+	  scorn/peterm/undead_quest, scorn/shops/IPO_scorn,
+	  scorn/shops/bank, scorn/shops/bowshop, scorn/shops/coffeeshop,
+	  scorn/shops/foodshop, scorn/shops/oleds_cafe,
+	  scorn/shops/potionshop, scorn/shops/scorn.sale1,
+	  scorn/taverns/barking_mule, scorn/taverns/inn,
+	  scorn/taverns/inn2: Backport from trunk, replace no_pass with
+	  move_block
+
+2008-07-22 00:10  rjtanner
+
+	* scorn/anthony/portgate, scorn/anthony/prison,
+	  scorn/apartment/apartments, scorn/houses/cornerbrook,
+	  scorn/houses/house2, scorn/houses/riverside_manor,
+	  scorn/houses/smithery, scorn/houses/wizz.entry,
+	  scorn/kar/somehouse3, scorn/misc/gatehouse, scorn/misc/library,
+	  scorn/misc/templelyth, scorn/misc/wizhide,
+	  scorn/oldcity/oldcity12, scorn/oldcity/oldcity3,
+	  scorn/oldcity/oldcity54, scorn/oldcity/oldcity6,
+	  scorn/shops/oleds_cafe, scorn/shops/scorn.sale1,
+	  scorn/shops/scorn.sale2, scorn/taverns/barking_mule,
+	  scorn/taverns/goths0, scorn/taverns/goths2, scorn/temples/gorokh,
+	  scorn/temples/mostrai, scorn/temples/ruggilli1,
+	  scorn/temples/sorig, scorn/temples/valriel2: Backport from trunk,
+	  @match is case insensitive - made dialog all lower case
+
+2008-07-21 23:18  rjtanner
+
+	* santo_dominion/sdomino_appartment: Backport from trunk, replaced
+	  altar with goldfloor for purchasing apartment ownership
+
+2008-07-21 23:16  rjtanner
+
+	* santo_dominion/tavern: Backport from trunk, @match is case
+	  insensitive - made dialog all lower case
+
+2008-07-21 23:15  rjtanner
+
+	* santo_dominion/north_barn: Backport from trunk, removed duplicate
+	  and unused floor tile information
+
+2008-07-21 23:12  rjtanner
+
+	* santo_dominion/city_hall,
+	  santo_dominion/guilds/drunken_barbarian/ground,
+	  santo_dominion/guilds/drunken_barbarian/storage_room,
+	  santo_dominion/guilds/drunken_barbarian/upper,
+	  santo_dominion/magara/opera, santo_dominion/magara/well/top,
+	  santo_dominion/mudman/mudman.1, santo_dominion/mudman/mudman.2,
+	  santo_dominion/mudman/mudman.3, santo_dominion/noble_rest,
+	  santo_dominion/shops/erash, santo_dominion/tavern,
+	  santo_dominion/tavern.2ndfloor,
+	  santo_dominion/temple_naive/templenaive.2: Backport from trunk,
+	  replace no_pass with move_block
+
+2008-07-21 22:32  rjtanner
+
+	* quests/skud/north_1: Backport from trunk, replace no_pass with
+	  move_block
+
+2008-07-21 22:30  rjtanner
+
+	* quests/mak/chaos/monsters.pick: Backport from trunk, import (user
+	  created) updated monster pick map
+
+2008-07-21 22:29  rjtanner
+
+	* quests/peterm/temple/InnerTemple: Backport from trunk, @match is
+	  case insensitive - made dialog all lower case
+
+2008-07-21 22:08  rjtanner
+
+	* quests/peterm/Demonology/AirTower2,
+	  quests/peterm/FireTemple/Fire1, quests/skud/east_1,
+	  quests/skud/north_1: Backport from trunk, removed trailing zeros
+	  from speed setting
+
+2008-07-21 22:05  rjtanner
+
+	* quests/peterm/CTower/Dungeon: Backport from trunk, add slaying
+	  field to keys
+
+2008-07-21 22:03  rjtanner
+
+	* quests/mak/chaos/fallen: Backport from trunk, replace no_pass
+	  with move_block
+
+2008-07-21 22:03  rjtanner
+
+	* quests/peterm/quests/dragonquest2: Backport from trunk, add
+	  missing floor tiles under walls
+
+2008-07-21 22:01  rjtanner
+
+	* quests/peterm/quests/TitanGate,
+	  quests/peterm/quests/dragonquest2,
+	  quests/peterm/quests/goblin_chief,
+	  quests/peterm/quests/mushroom_quest,
+	  quests/peterm/quests/ogre_chief,
+	  quests/peterm/quests/titan_quest,
+	  quests/peterm/quests/wyvern_quest: Backport from trunk, added map
+	  lore to map header
+
+2008-07-21 21:53  rjtanner
+
+	* quests/hendel/mountain_pass, quests/mak/MainFloor,
+	  quests/mak/chaos/down4, quests/mak/chaos/down5,
+	  quests/mak/chaos/fallen, quests/mak/chaos/tritemples,
+	  quests/mak/chaos/up1, quests/mak/chaos/up5,
+	  quests/mak/dragons/chaos, quests/mak/undead/catacombs,
+	  quests/mak/undead/mausoleum,
+	  quests/peterm/DragonQuest/ElectricHatchery,
+	  quests/peterm/DragonQuest/Entrance,
+	  quests/peterm/DragonQuest/FireHatchery,
+	  quests/peterm/DragonQuest/IceHatchery,
+	  quests/peterm/DragonQuest/WyvernNest,
+	  quests/peterm/FireTemple/Fire3, quests/peterm/FireTemple/Fire4,
+	  quests/peterm/FireTemple/FirstFloor,
+	  quests/peterm/quests/goblin_chief,
+	  quests/peterm/quests/ogre_chief,
+	  quests/peterm/quests/titan_quest, quests/peterm/temple/Temple,
+	  quests/todd/aljwaf/crypt4, quests/todd/aljwaf/tomb,
+	  quests/todd/aljwaf/tower3: Backport from trunk, replace no_pass
+	  with move_block
+
+2008-07-21 21:42  rjtanner
+
+	* quests/mak/MainFloor, quests/mak/chaos/down1,
+	  quests/mak/chaos/down2, quests/mak/chaos/down3,
+	  quests/mak/chaos/down4, quests/mak/chaos/down5,
+	  quests/mak/chaos/fallen, quests/mak/chaos/tritemples,
+	  quests/mak/chaos/up1, quests/mak/chaos/up2, quests/mak/chaos/up3,
+	  quests/mak/chaos/up4, quests/mak/chaos/up5: Backport from trunk,
+	  added map lore to map header and updated difficulty level
+
+2008-07-21 21:36  rjtanner
+
+	* quests/greyshield/Castle, quests/greyshield/Cave,
+	  quests/greyshield/Cavern, quests/greyshield/Cavern2,
+	  quests/greyshield/Chamber, quests/greyshield/Fortress,
+	  quests/greyshield/GreyMaster, quests/greyshield/Greysword,
+	  quests/hendel/acid_room, quests/hendel/pre_acid,
+	  quests/mcz/castle1, quests/mcz/castle_air,
+	  quests/mcz/castle_earth, quests/mcz/castle_fire,
+	  quests/mcz/castle_water, quests/peterm/DragonQuest/ElectricAnte,
+	  quests/peterm/DragonQuest/ElectricHatchery,
+	  quests/peterm/DragonQuest/ElectricLord,
+	  quests/peterm/DragonQuest/Entrance,
+	  quests/peterm/DragonQuest/FireAnte,
+	  quests/peterm/DragonQuest/FireHatchery,
+	  quests/peterm/DragonQuest/FireLord,
+	  quests/peterm/DragonQuest/IceAnte,
+	  quests/peterm/DragonQuest/IceHatchery,
+	  quests/peterm/DragonQuest/IceLord,
+	  quests/peterm/DragonQuest/WyvernNest,
+	  quests/peterm/FireTemple/Entrance,
+	  quests/peterm/FireTemple/LavaChamber,
+	  quests/peterm/FireTemple/Passageway,
+	  quests/peterm/temple/GemTunnel, quests/peterm/temple/InnerTemple:
+	  Backport from trunk, correct broken map paths for exits/entrances
+
+2008-07-21 20:26  rjtanner
+
+	* quests/greyshield/Castle, quests/greyshield/Fortress,
+	  quests/greyshield/Sphinx, quests/mcz/castle1,
+	  quests/peterm/CTower/Dungeon, quests/peterm/Demonology/AirStudy,
+	  quests/peterm/Demonology/Demon1, quests/peterm/Demonology/Demon3,
+	  quests/peterm/Demonology/EarthStudy,
+	  quests/peterm/Demonology/FireStudy,
+	  quests/peterm/Demonology/GroundLevel,
+	  quests/peterm/Demonology/HighTower1,
+	  quests/peterm/Demonology/WaterStudy,
+	  quests/peterm/FireTemple/Mezannine1, quests/skud/entrance,
+	  quests/skud/north_1, quests/todd/aljwaf/crypt4: Backport from
+	  trunk, @match is case insensitive - made dialog all lower case
+
+2008-07-21 20:03  rjtanner
+
+	* pup_land/kurte/jungle: Backport from trunk, correct a typo
+	  (scolar -> scholar)
+
+2008-07-21 20:00  rjtanner
+
+	* pup_land/rainbow/islands, pup_land/rainbow/l_h1,
+	  pup_land/rainbow/red_town/town, pup_land/rainbow/shore,
+	  pup_land/rainbow/station, pup_land/rainbow/well,
+	  pup_land/rainbow/woods, pup_land/s_f/ruin, pup_land/s_f/to-jyo,
+	  pup_land/world: Backport from trunk, make Castle of Eureca show
+	  up on the south pupland world map - required all map tiles to be
+	  shifted along with exit coordinates to be updated as well
+
+2008-07-21 19:47  rjtanner
+
+	* pup_land/ancient/castle/castle.4: Backport from trunk, cosmetic
+	  wall update
+
+2008-07-21 19:45  rjtanner
+
+	* pup_land/lone_town/town: Backport from trunk, make exit path
+	  relative
+
+2008-07-21 19:44  rjtanner
+
+	* pup_land/lone_town/gemshop, pup_land/lone_town/mshop: Backport
+	  from trunk, map header shop information
+
+2008-07-21 19:42  rjtanner
+
+	* pup_land/kurte/house, pup_land/kurte/kurte,
+	  pup_land/lone_town/gemshop_ud, pup_land/lone_town/thief_market,
+	  pup_land/rainbow/Lv3/prison, pup_land/rainbow/Lv4/alter,
+	  pup_land/s_f/st6: Backport from trunk, add slaying field to keys
+
+2008-07-21 19:34  rjtanner
+
+	* pup_land/nurnberg/reception/reception,
+	  pup_land/ruin_barbarian/hole2: Backport from trunk, replace
+	  no_pass with move_block
+
+2008-07-21 19:33  rjtanner
+
+	* pup_land/castle_eureca/chest, pup_land/lone_town/cordish2,
+	  pup_land/nurnberg/nf_bar: Backport from trunk, removed duplicate
+	  and unused floor tile information
+
+2008-07-21 19:28  rjtanner
+
+	* pup_land/guilds/laughing_skull/bigchest,
+	  pup_land/guilds/laughing_skull/storage_room,
+	  pup_land/guilds/laughing_skull/upper,
+	  pup_land/guilds/purple_butterfly/bigchest,
+	  pup_land/guilds/purple_butterfly/storage_room,
+	  pup_land/guilds/purple_butterfly/upper: Backport from trunk, map
+	  difficulty level
+
+2008-07-21 19:24  rjtanner
+
+	* pup_land/castle_eureca/cave_pass,
+	  pup_land/castle_eureca/cave_pass2, pup_land/cave_weapon/cave1,
+	  pup_land/cave_weapon/cave2, pup_land/cave_weapon/cave3,
+	  pup_land/cave_weapon/cave4, pup_land/cave_weapon/cave5,
+	  pup_land/jk/heads, pup_land/nurnberg/dick/bomb,
+	  pup_land/nurnberg/dick/click, pup_land/nurnberg/dick/heaven,
+	  pup_land/nurnberg/dick/hell, pup_land/pplant/pplant_ud2,
+	  pup_land/raffle/raffle3_u2a, pup_land/ruin_barbarian/hole2:
+	  Backport from trunk, added missing floor tiles
+
+2008-07-21 19:14  rjtanner
+
+	* pup_land/begin/adv: Backport from trunk, added trees
+
+2008-07-21 19:13  rjtanner
+
+	* pup_land/begin/adv: Backport from trunk, updated potion
+	  information
+
+2008-07-21 19:11  rjtanner
+
+	* pup_land/ancient/world: Backport from trunk, remove unconnected
+	  (unused) and hidden button
+
+2008-07-21 19:07  rjtanner
+
+	* pup_land/guilds/laughing_skull/ground,
+	  pup_land/guilds/purple_butterfly/ground: Backport from trunk,
+	  replace no_pass with move_block
+
+2008-07-21 19:06  rjtanner
+
+	* pup_land/ancient/castle/castle.4,
+	  pup_land/ancient/castle/castle.6,
+	  pup_land/ancient/castle/castle.ud1,
+	  pup_land/ancient/castle/gothwolte.3, pup_land/ancient/company,
+	  pup_land/ancient/kurte/house, pup_land/ancient/mountain/cave.b3,
+	  pup_land/ancient/mountain/tower.1,
+	  pup_land/ancient/mountain/tower.2,
+	  pup_land/ancient/mountain/tower.3,
+	  pup_land/ancient/ruin/underground,
+	  pup_land/ancient/village/hole/hole.B1,
+	  pup_land/ancient/village/hut1, pup_land/ancient/village/hut2,
+	  pup_land/ancient/village/hut3, pup_land/ancient/village/hut4,
+	  pup_land/ancient/village/hut5, pup_land/ancient/village/hut6,
+	  pup_land/ancient/village/inn, pup_land/ancient/village/library,
+	  pup_land/ancient/village/siegfried/siegfried.1,
+	  pup_land/ancient/village/siegfried/siegfried.3,
+	  pup_land/ancient/village/siegfried/siegfried.B1,
+	  pup_land/ancient/village/tavern,
+	  pup_land/ancient/village/tavern1, pup_land/barrier,
+	  pup_land/castle_eureca/castle_eureca5,
+	  pup_land/castle_eureca/castle_eureca6,
+	  pup_land/castle_eureca/castle_eureca9,
+	  pup_land/cave_weapon/cave4, pup_land/cave_weapon/cave5,
+	  pup_land/hq, pup_land/hq_ud, pup_land/kurte/eureca_road3,
+	  pup_land/kurte/hut2, pup_land/kurte/kurte,
+	  pup_land/lone_town/church_ud, pup_land/lone_town/cordish,
+	  pup_land/lone_town/guild_freedom, pup_land/lone_town/guild_law,
+	  pup_land/lone_town/tavern, pup_land/lone_town/thief_market,
+	  pup_land/lone_town/training, pup_land/nurnberg/agito,
+	  pup_land/nurnberg/aqueduct, pup_land/nurnberg/castle,
+	  pup_land/nurnberg/castle_ud, pup_land/nurnberg/dick/house,
+	  pup_land/nurnberg/guild, pup_land/nurnberg/nf_bar,
+	  pup_land/pplant/pplant2, pup_land/raffle/raffle2_u4,
+	  pup_land/raffle/raffle3, pup_land/raffle/raffle3_u1,
+	  pup_land/raffle/raffle3_u2, pup_land/rainbow/Lv2/Kum,
+	  pup_land/rainbow/Lv3/Rufto, pup_land/rainbow/Lv3/prison,
+	  pup_land/rainbow/Lv4/key, pup_land/ruin_barbarian/hole1,
+	  pup_land/s_f/st1, pup_land/s_f/st7: Backport from trunk, @match
+	  is case insensitive - made dialog all lower case
+
+2008-07-21 18:41  rjtanner
+
+	* pup_land/ancient/castle/castle.3: Backport from trunk, removed
+	  duplicate and unused floor tile information
+
+2008-07-21 18:39  rjtanner
+
+	* pup_land/ancient/castle/castle.1: Backport from trunk, removed
+	  trailing zeros from speed setting (missed one in previous commit)
+
+2008-07-21 18:39  rjtanner
+
+	* pup_land/ancient/castle/castle.1: Backport from trunk, removed
+	  trailing zeros from speed setting
+
+2008-07-21 18:30  rjtanner
+
+	* pup_land/ancient/castle/castle.1,
+	  pup_land/ancient/castle/gothwolte.2,
+	  pup_land/ancient/castle/gothwolte.3, pup_land/ancient/company,
+	  pup_land/ancient/kurte/house, pup_land/ancient/mountain/atelir1,
+	  pup_land/ancient/mountain/atelir2,
+	  pup_land/ancient/mountain/cave.b1,
+	  pup_land/ancient/mountain/mountain.a1,
+	  pup_land/ancient/mountain/mountain.a2,
+	  pup_land/ancient/mountain/mountain.a3,
+	  pup_land/ancient/mountain/mountain.b1,
+	  pup_land/ancient/mountain/mountain.b2,
+	  pup_land/ancient/mountain/mountain.b3,
+	  pup_land/ancient/mountain/tower.3, pup_land/ancient/ruin/house1,
+	  pup_land/ancient/ruin/house3, pup_land/ancient/ruin/house4,
+	  pup_land/ancient/ruin/path, pup_land/ancient/village/hut1,
+	  pup_land/ancient/village/hut2, pup_land/ancient/village/hut3,
+	  pup_land/ancient/village/hut4, pup_land/ancient/village/hut5,
+	  pup_land/ancient/village/hut6, pup_land/ancient/village/inn,
+	  pup_land/ancient/village/shop,
+	  pup_land/ancient/village/siegfried/lever,
+	  pup_land/ancient/village/siegfried/siegfried.B4,
+	  pup_land/ancient/village/siegfried/siegfried.B5,
+	  pup_land/ancient/village/tavern,
+	  pup_land/ancient/village/tavern1,
+	  pup_land/ancient/volcano/guardians,
+	  pup_land/ancient/volcano/treasure,
+	  pup_land/ancient/volcano/volcano.2,
+	  pup_land/ancient/volcano/volcano.3, pup_land/ancient/world,
+	  pup_land/begin/p1, pup_land/begin/p2, pup_land/begin/p3,
+	  pup_land/castle_eureca/castle_eureca2,
+	  pup_land/castle_eureca/castle_eureca3,
+	  pup_land/castle_eureca/castle_eureca4,
+	  pup_land/castle_eureca/castle_eureca5,
+	  pup_land/castle_eureca/cave_pass4, pup_land/cave_weapon/cave1,
+	  pup_land/cave_weapon/cave2,
+	  pup_land/guilds/laughing_skull/storage_room,
+	  pup_land/guilds/laughing_skull/upper,
+	  pup_land/guilds/purple_butterfly/ground,
+	  pup_land/guilds/purple_butterfly/storage_room,
+	  pup_land/guilds/purple_butterfly/upper, pup_land/jk/gs_house,
+	  pup_land/kurte/hut1, pup_land/kurte/hut2, pup_land/kurte/jungle,
+	  pup_land/kurte/penta, pup_land/lone_town/apartment/groundfloor,
+	  pup_land/lone_town/apartment/sharedcourtyard,
+	  pup_land/lone_town/apartment/upper1, pup_land/lone_town/bank,
+	  pup_land/lone_town/cave/b2, pup_land/lone_town/cave/b3,
+	  pup_land/lone_town/cordish,
+	  pup_land/lone_town/dragonhangar/hangar,
+	  pup_land/lone_town/dress1, pup_land/lone_town/guild_freedom,
+	  pup_land/lone_town/guild_law, pup_land/lone_town/heinrich,
+	  pup_land/lone_town/inn, pup_land/lone_town/magic,
+	  pup_land/lone_town/shops/buildshop, pup_land/lone_town/tavern,
+	  pup_land/lone_town/thief_market, pup_land/lone_town/town,
+	  pup_land/lone_town/town_ud1, pup_land/nurnberg/IPO_nurnberg,
+	  pup_land/nurnberg/alshop, pup_land/nurnberg/apartment/to_past,
+	  pup_land/nurnberg/aqueduct, pup_land/nurnberg/ashop,
+	  pup_land/nurnberg/bshop, pup_land/nurnberg/castle,
+	  pup_land/nurnberg/castle_bauer/castle3,
+	  pup_land/nurnberg/castle_bauer/castle4,
+	  pup_land/nurnberg/castle_ud, pup_land/nurnberg/church,
+	  pup_land/nurnberg/city, pup_land/nurnberg/dick/bomb,
+	  pup_land/nurnberg/dick/bomb1, pup_land/nurnberg/dick/house,
+	  pup_land/nurnberg/dick/house2, pup_land/nurnberg/dick/showinv,
+	  pup_land/nurnberg/dragonhangar/hangar, pup_land/nurnberg/fshop,
+	  pup_land/nurnberg/guild, pup_land/nurnberg/guild_ud,
+	  pup_land/nurnberg/hotel, pup_land/nurnberg/jshop,
+	  pup_land/nurnberg/nf_bar, pup_land/nurnberg/paslab,
+	  pup_land/nurnberg/pshop, pup_land/nurnberg/reception/fire5,
+	  pup_land/nurnberg/reception/reception,
+	  pup_land/nurnberg/reception/water2,
+	  pup_land/nurnberg/reception/water3,
+	  pup_land/nurnberg/reception/water4,
+	  pup_land/nurnberg/reception/water5,
+	  pup_land/nurnberg/reception/water6,
+	  pup_land/nurnberg/reception/water7, pup_land/nurnberg/washop,
+	  pup_land/nurnberg/wshop, pup_land/ordeal/tower_ordeal2,
+	  pup_land/ordeal/tower_ordeal5, pup_land/ordeal/tower_ordealB2,
+	  pup_land/ordeal/tower_ordealB3, pup_land/port_e,
+	  pup_land/port_e_house, pup_land/port_w, pup_land/pplant/pplant3,
+	  pup_land/pplant/pplant_ud1, pup_land/pplant/pplant_ud2,
+	  pup_land/raffle/raffle1, pup_land/raffle/raffle2,
+	  pup_land/raffle/raffle2_u2_a, pup_land/raffle/raffle2_u2_b,
+	  pup_land/raffle/raffle2_u3, pup_land/raffle/raffle2_u4,
+	  pup_land/raffle/raffle3, pup_land/raffle/raffle3_u2,
+	  pup_land/rainbow/Lv1/e_hall, pup_land/rainbow/Lv1/f_a,
+	  pup_land/rainbow/Lv1/g_road, pup_land/rainbow/Lv1/orc_f,
+	  pup_land/rainbow/Lv2/b_inner, pup_land/rainbow/Lv2/maze,
+	  pup_land/rainbow/Lv3/hidden, pup_land/rainbow/Lv3/name,
+	  pup_land/rainbow/Lv3/prison, pup_land/rainbow/Lv4/alter2,
+	  pup_land/rainbow/entrance1, pup_land/rainbow/l_hB,
+	  pup_land/rainbow/red_town/shop, pup_land/rainbow/red_town/town,
+	  pup_land/rainbow/river, pup_land/rainbow/roof,
+	  pup_land/rainbow/shore, pup_land/rainbow/w-tower,
+	  pup_land/ruin_barbarian/hole1, pup_land/s_f/Kira,
+	  pup_land/s_f/cave1, pup_land/s_f/ki2, pup_land/s_f/ruin,
+	  pup_land/s_f/st3, pup_land/s_f/st5, pup_land/s_f/st7,
+	  pup_land/terminal, pup_land/terminal_u1: Backport from trunk,
+	  replace no_pass with move_block
+
+2008-07-19 23:37  rjtanner
+
+	* lake_country/snake_pit/snakepit_1,
+	  lake_country/snake_pit/snakepit_2: Backport from trunk, add
+	  missing floor tiles under some walls in
+	  lake_country/snake_pit/snakepit_{1,2}
+
+2008-07-19 23:09  quinet
+
+	* pup_land/lone_town/gemshop, scorn/houses/house3.1st,
+	  scorn/houses/house3.bas1: Updated map header.
+
+2008-07-19 22:46  quinet
+
+	* scorn/houses/house3.1st, scorn/houses/house3.bas1: Backported fix
+	  for bug #2018391, also replaced no_pass by move_block.
+
+2008-07-19 21:34  quinet
+
+	* pup_land/lone_town/gemshop: Fix for bug #2022422.
+
+2008-07-19 06:20  rjtanner
+
+	* port_joseph/goblin/dungeon1, port_joseph/goblin/dungeon2,
+	  port_joseph/goblin/dungeon3, port_joseph/goblin/fortress,
+	  port_joseph/pirates/fortvsship, port_joseph/town/dshark,
+	  port_joseph/town/portia, port_joseph/town/portia2: Backport from
+	  trunk, @match is case insensitive - made dialog all lower case
+
+2008-07-19 06:18  rjtanner
+
+	* port_joseph/goblin/caves, port_joseph/pirates/tortcave: Backport
+	  from trunk, floor tile re-arragenment
+
+2008-07-19 06:15  rjtanner
+
+	* port_joseph/goblin/dungeon1, port_joseph/goblin/dungeon2,
+	  port_joseph/goblin/dungeon3, port_joseph/goblin/fort2,
+	  port_joseph/goblin/netower, port_joseph/town/church,
+	  port_joseph/town/tomassos_house: Backport from trunk, replace
+	  no_pass with move_block
+
+2008-07-19 06:11  rjtanner
+
+	* azumauindo/suno-yamatoshi/towers/tou1,
+	  azumauindo/suno-yamatoshi/towers/tou4: Backport from trunk,
+	  replace no_pass with move_block
+
+2008-07-19 06:10  rjtanner
+
+	* planes/harcanna_wood: Backport from trunk, replace no_pass with
+	  move_block
+
+2008-07-19 06:09  rjtanner
+
+	* darcap/darcap/circus/wurfbude: Backport from trunk, removed
+	  trailing zeros from speed setting
+
+2008-07-19 06:07  rjtanner
+
+	* mlab/mlabscrntrd1, mlab/mlabscrntrd2, mlab/mlabscrntrdb1,
+	  mlab/mlabscrntrdb2, mlab/mlabscrntrdb3: Backport from trunk,
+	  resized map to remove unused and empty space
+
+2008-07-19 02:10  rjtanner
+
+	* mlab/citydeclouds/IPO_citydeclouds: Backport from trunk, typo
+	  correction (ans -> and)
+
+2008-07-19 02:10  rjtanner
+
+	* mlab/citydeclouds/citydeclouds2F: Backport from trunk, exit
+	  coordinate correction
+
+2008-07-19 02:09  rjtanner
+
+	* mlab/citydeclouds/citydeclouds2G: Backport from trunk, make exit
+	  paths relative
+
+2008-07-19 02:09  rjtanner
+
+	* mlab/citydeclouds/citydeclouds2G: Backport from trunk, floor tile
+	  re-arragenment
+
+2008-07-19 02:08  rjtanner
+
+	* mlab/citydeclouds/citydeclouds2G: Backport from trunk, add
+	  no_pick to many objects to fix sorting order for arches
+
+2008-07-19 01:58  rjtanner
+
+	* mlab/citydeclouds/citydeclouds2H: Backport from trunk, smoothing
+	  corrections
+
+2008-07-19 01:58  rjtanner
+
+	* mlab/citydeclouds/IPO_citydeclouds,
+	  mlab/citydeclouds/cdccourthsuplvl1,
+	  mlab/citydeclouds/citydeclouds2I: Backport from trunk, cosmetic
+	  wall changes
+
+2008-07-19 01:52  rjtanner
+
+	* mlab/citydeclouds/IPO_citydeclouds,
+	  mlab/citydeclouds/castle/cwdccastlef1,
+	  mlab/citydeclouds/cdccloudre1,
+	  mlab/citydeclouds/cdccourthsuplvl1, mlab/citydeclouds/cdcgatea2,
+	  mlab/citydeclouds/cdcmesshluper1,
+	  mlab/citydeclouds/cdcnrkpdevtmp1, mlab/citydeclouds/cdcscasino,
+	  mlab/citydeclouds/citydeclouds2F,
+	  mlab/citydeclouds/citydeclouds2G,
+	  mlab/citydeclouds/citydeclouds2H,
+	  mlab/citydeclouds/cwdcguestofmarquis1,
+	  mlab/citydeclouds/misc/cwdcchessarenaa2,
+	  mlab/citydeclouds/misc/cwdcchessarenab2,
+	  mlab/citydeclouds/shops/cdcwcafe1,
+	  mlab/citydeclouds/shops/cwdcgenshop1,
+	  mlab/citydeclouds/shops/cwdckitchen,
+	  mlab/citydeclouds/shops/cwdcpotionshop1: Backport from trunk, map
+	  header formatting
+
+2008-07-19 01:48  rjtanner
+
+	* mlab/citydeclouds/cdcbigstore/cdcbigstore2f: Backport from trunk,
+	  replace no_pass with move_block
+
+2008-07-19 01:46  rjtanner
+
+	* mlab/citydeclouds/cdcapart1, mlab/citydeclouds/cdcapart2,
+	  mlab/citydeclouds/cdcnwgateuprlv1, mlab/citydeclouds/cdcwgrotto1:
+	  Backport from trunk, resized map to remove unused and empty space
+
+2008-07-19 01:42  rjtanner
+
+	* mlab/citydeclouds/castle/cwdccastleofmarquis1,
+	  mlab/citydeclouds/citydeclouds2I: Backport from trunk, @match is
+	  case insensitive - made dialog all lower case
+
+2008-07-19 01:39  rjtanner
+
+	* mlab/citydeclouds/IPO_citydeclouds, mlab/citydeclouds/cdcapart1,
+	  mlab/citydeclouds/cdcapart2,
+	  mlab/citydeclouds/cdcbigstore/cdcbigstore2f,
+	  mlab/citydeclouds/cdccastlekeep/cdccastlekeep1,
+	  mlab/citydeclouds/cdccastlekeep/cdccastlekeep2,
+	  mlab/citydeclouds/cdccastlekeep/cdccastlekeep3,
+	  mlab/citydeclouds/cdccastlekeep/cdccastlekeep4,
+	  mlab/citydeclouds/cdccastlekeep/cdccastlekeepb1,
+	  mlab/citydeclouds/cdccloudre1,
+	  mlab/citydeclouds/cdccourthsuplvl1, mlab/citydeclouds/cdcgatea2,
+	  mlab/citydeclouds/cdcnwgateuprlv1, mlab/citydeclouds/cdcwgrotto1,
+	  mlab/citydeclouds/citydeclouds2A,
+	  mlab/citydeclouds/citydeclouds2B,
+	  mlab/citydeclouds/citydeclouds2C,
+	  mlab/citydeclouds/citydeclouds2D,
+	  mlab/citydeclouds/citydeclouds2E,
+	  mlab/citydeclouds/citydeclouds2F,
+	  mlab/citydeclouds/citydeclouds2G,
+	  mlab/citydeclouds/citydeclouds2H,
+	  mlab/citydeclouds/citydeclouds2I,
+	  mlab/citydeclouds/citydecloudsA, mlab/citydeclouds/citydecloudsB,
+	  mlab/citydeclouds/citydecloudsC: Backport from trunk, replace
+	  no_pass with move_block
+
+2008-07-19 01:13  rjtanner
+
+	* mlab/citydeclouds/castle/cwdccastleb1,
+	  mlab/citydeclouds/cdcbigstore/cdcbigstore2f,
+	  mlab/citydeclouds/cdcbigstore/cdcbigstore3f,
+	  mlab/citydeclouds/cdccastlekeep/cdccastlekeep1,
+	  mlab/citydeclouds/cdccastlekeep/cdccastlekeep2,
+	  mlab/citydeclouds/cdccastlekeep/cdccastlekeep3,
+	  mlab/citydeclouds/cdccastlekeep/cdccastlekeep4,
+	  mlab/citydeclouds/cdccastlekeep/cdccastlekeepb1,
+	  mlab/citydeclouds/cdccastlekeep/cdckeepbarrack1,
+	  mlab/citydeclouds/cdcspire/cdcspire1,
+	  mlab/citydeclouds/cdcspire/cdcspireexit1,
+	  mlab/citydeclouds/cdcspire/cdcspireexit2: Backport from trunk,
+	  added missing region (citydeclouds) to maps
+
+2008-07-19 01:09  rjtanner
+
+	* mlab/citydeclouds/bank/bank2, mlab/citydeclouds/bank/bank3:
+	  Backport from trunk, fix for [ crossfire-Bugs-2002170 ]
+	  Conversion Profit Bug
+
+2008-07-19 01:06  rjtanner
+
+	* mlab/citydeclouds/bank/bank1, mlab/citydeclouds/bank/bank2,
+	  mlab/citydeclouds/bank/bank3, mlab/citydeclouds/bank/bank4,
+	  mlab/citydeclouds/bank/bank5, mlab/citydeclouds/bank/vaulta1,
+	  mlab/citydeclouds/bank/vaultb2, mlab/citydeclouds/bank/vaultc3,
+	  mlab/citydeclouds/bank/vaultd4, mlab/citydeclouds/bank/vaulte5:
+	  Backport from trunk, added missing region (citydeclouds) to bank
+	  maps
+
+2008-07-19 01:04  rjtanner
+
+	* mlab/citydeclouds/bank/bank1: Backport from trunk, replace
+	  no_pass with move_block
+
+2008-07-19 01:03  rjtanner
+
+	* mlab/citydeclouds/apartment/cwdctownhaus2lvl1,
+	  mlab/citydeclouds/apartment/cwdctownhaus3lvl1,
+	  mlab/citydeclouds/apartment/cwdctownhaus4lvl1: Backport from
+	  trunk, correct key slaying fields to match their corresponding
+	  townhaus
+
+2008-07-19 00:56  rjtanner
+
+	* navar_city/jail/jail, navar_city/misc/library,
+	  navar_city/misc/theater, navar_city/misc/theaterb4: Backport from
+	  trunk, floor tile re-arragenment
+
+2008-07-19 00:55  rjtanner
+
+	* navar_city/mlab/tavernb4: Backport from trunk, replace no_pass
+	  with move_block
+
+2008-07-19 00:54  rjtanner
+
+	* navar_city/misc/tannery: Backport from trunk, map difficulty
+	  level
+
+2008-07-19 00:54  rjtanner
+
+	* navar_city/misc/aliswell: Backport from trunk, resized map to
+	  remove unused and empty space
+
+2008-07-19 00:53  rjtanner
+
+	* navar_city/mlab/dream, navar_city/mlab/tadobebuild2,
+	  navar_city/mlab/tadobebuild3, navar_city/mlab/tavernb1,
+	  navar_city/mlab/tavernb3, navar_city/mlab/ttower12,
+	  navar_city/mlab/ttower23, navar_city/mlab/ttower24,
+	  navar_city/mlab/zealothouse2, navar_city/mlab/zealothouseb1:
+	  Backport from trunk, map header formatting
+
+2008-07-19 00:49  rjtanner
+
+	* navar_city/dreaming_sage/bigchest,
+	  navar_city/dreaming_sage/storage_room,
+	  navar_city/dreaming_sage/upper: Backport from trunk, map
+	  difficulty level
+
+2008-07-19 00:45  rjtanner
+
+	* navar_city/city1court, navar_city/mlab/ttower12: Backport from
+	  trunk, allow the exits to be animated
+
+2008-07-19 00:42  rjtanner
+
+	* navar_city/city1church1, navar_city/city1court,
+	  navar_city/city1enter, navar_city/city1prison,
+	  navar_city/misc/city1armour, navar_city/misc/city1gen,
+	  navar_city/misc/city1magic, navar_city/misc/city1mermaid,
+	  navar_city/misc/city1weapon, navar_city/misc/library,
+	  navar_city/misc/navarwiz, navar_city/temples/gorokh,
+	  navar_city/temples/ruggilli, navar_city/temples/ruggilli2,
+	  navar_city/temples/sorig, navar_city/temples/templelyth,
+	  navar_city/tower/magetower1, navar_city/tower/magetower4,
+	  navar_city/warehouse4: Backport from trunk, @match is case
+	  insensitive - made dialog all lower case
+
+2008-07-19 00:27  rjtanner
+
+	* navar_city/casino_infernal/casino_infernal1,
+	  navar_city/city1court, navar_city/city1enter,
+	  navar_city/city1houses2, navar_city/city1houses3,
+	  navar_city/collosium, navar_city/dragon_hangar/hangar,
+	  navar_city/dreaming_sage/ground,
+	  navar_city/dreaming_sage/storage_room,
+	  navar_city/dreaming_sage/upper, navar_city/illusion/illtow3,
+	  navar_city/illusion/illtow4, navar_city/illusion/illtow6,
+	  navar_city/jail/jail, navar_city/light/smugship,
+	  navar_city/misc/city1gen, navar_city/misc/city1mermaid,
+	  navar_city/misc/dragon_guild, navar_city/misc/kitchen,
+	  navar_city/misc/library, navar_city/misc/market2,
+	  navar_city/misc/theater, navar_city/misc/theater2,
+	  navar_city/misc/theater3, navar_city/misc/theater4,
+	  navar_city/misc/theaterb3, navar_city/mlab/dream,
+	  navar_city/mlab/tadobebuild2, navar_city/mlab/tadobebuild3,
+	  navar_city/mlab/tavern, navar_city/mlab/tavern2,
+	  navar_city/mlab/tavern3, navar_city/mlab/tavern4,
+	  navar_city/mlab/tavern5, navar_city/mlab/tavern6,
+	  navar_city/mlab/tavern7, navar_city/mlab/tavernb1,
+	  navar_city/mlab/ttower10, navar_city/mlab/ttower11,
+	  navar_city/mlab/ttower12, navar_city/mlab/ttower13,
+	  navar_city/mlab/ttower14, navar_city/mlab/ttower15,
+	  navar_city/mlab/ttower16, navar_city/mlab/ttower17,
+	  navar_city/mlab/ttower18, navar_city/mlab/ttower19,
+	  navar_city/mlab/ttower20, navar_city/mlab/ttower21,
+	  navar_city/mlab/ttower22, navar_city/mlab/ttower23,
+	  navar_city/mlab/ttower24, navar_city/mlab/ttower25,
+	  navar_city/mlab/ttower26, navar_city/mlab/ttower27,
+	  navar_city/mlab/ttower28, navar_city/mlab/ttower29,
+	  navar_city/mlab/ttower30, navar_city/mlab/ttower31,
+	  navar_city/mlab/ttower32, navar_city/mlab/ttower33,
+	  navar_city/mlab/ttower34, navar_city/mlab/ttower35,
+	  navar_city/mlab/ttower36, navar_city/mlab/ttower37,
+	  navar_city/mlab/ttower38, navar_city/mlab/ttower39,
+	  navar_city/mlab/ttower40, navar_city/mlab/ttower41,
+	  navar_city/mlab/ttower42, navar_city/mlab/ttower43,
+	  navar_city/mlab/ttower44, navar_city/mlab/ttower45,
+	  navar_city/mlab/ttower8, navar_city/mlab/ttower9,
+	  navar_city/mlab/ttowerchoswld1, navar_city/mlab/zealothouse2,
+	  navar_city/mouse_house, navar_city/smugglers_cove/sc_warehouse,
+	  navar_city/smugglers_cove/smugglercamp, navar_city/spyhouse,
+	  navar_city/temples/gaea, navar_city/temples/gorokh,
+	  navar_city/temples/ruggilli2, navar_city/warehouse3,
+	  navar_city/warehouse6: Backport from trunk, replace no_pass with
+	  move_block
+
+2008-07-18 23:34  rjtanner
+
+	* navar_city/apartments/apartment,
+	  navar_city/apartments/apartment_attic,
+	  navar_city/apartments/apartment_basement,
+	  navar_city/apartments/apartment_upstairs: Backport from trunk,
+	  map difficulty level
+
+2008-07-18 22:57  rjtanner
+
+	* marksel/wizard: Backport from trunk, more information for the cat
+	  in the map
+
+2008-07-18 22:55  rjtanner
+
+	* marksel/wizard: Backport from trunk, make torches non-pickup so
+	  they can not be used to bypass some maps in pupland
+
+2008-07-18 22:54  rjtanner
+
+	* marksel/church, marksel/grumms_inn, marksel/grumms_inn2: Backport
+	  from trunk, added an invisible button to help prevent players
+	  from taking damage from the closing door or gate
+
+2008-07-18 22:51  rjtanner
+
+	* marksel/grumms_inn: Backport from trunk, replace no_pass with
+	  move_block
+
+2008-07-18 22:41  rjtanner
+
+	* marksel/church, marksel/grumms_inn, marksel/wizard: Backport from
+	  trunk, @match is case insensitive - made dialog all lower case
+
+2008-07-18 22:34  rjtanner
+
+	* lake_country/snake_pit/Chaos_lair4: Backport from trunk, removed
+	  trailing zeros from speed setting
+
+2008-07-18 22:33  rjtanner
+
+	* lake_country/snake_pit/Chaos_lair1: Backport from trunk, added
+	  map lore to map header
+
+2008-07-18 22:33  rjtanner
+
+	* lake_country/shops/Mopoon_wshop: Backport from trunk, another
+	  spelling correction
+
+2008-07-18 22:32  rjtanner
+
+	* lake_country/RETower/tower2: Backport from trunk, spelling
+	  correction
+
+2008-07-18 22:31  rjtanner
+
+	* lake_country/RETower/tower1, lake_country/RETower/tower3,
+	  lake_country/shops/Mopoon_wshop,
+	  lake_country/small_buildings/hut_Galmorus,
+	  lake_country/snake_pit/Chaos_lair1,
+	  lake_country/snake_pit/snakepit_1: Backport from trunk, @match is
+	  case insensitive - made dialog all lower case
+
+2008-07-18 22:29  rjtanner
+
+	* lake_country/Mwizard/Mwizard6, lake_country/Mwizard/MwizardG,
+	  lake_country/RETower/tower0, lake_country/RETower/tower2,
+	  lake_country/RETower/tower3, lake_country/Sunset_Lake/inn,
+	  lake_country/small_buildings/LC_inn1,
+	  lake_country/small_buildings/hut_Galmorus,
+	  lake_country/snake_pit/Chaos_lair1,
+	  lake_country/snake_pit/Chaos_lair2,
+	  lake_country/snake_pit/Chaos_lair3,
+	  lake_country/snake_pit/Chaos_lair4,
+	  lake_country/snake_pit/Takuse_lair,
+	  lake_country/snake_pit/snakepit_1,
+	  lake_country/snake_pit/snakepit_2,
+	  lake_country/snake_pit/snakepit_3,
+	  lake_country/snake_pit/snakepit_4: Backport from trunk, replace
+	  no_pass with move_block
+
+2008-07-18 22:18  rjtanner
+
+	* lake_country/Mwizard/Mwizard5: Backport from trunk, removed
+	  trailing zeros from speed setting
+
+2008-07-18 22:09  rjtanner
+
+	* lake_country/RETower/tower0, lake_country/RETower/tower2,
+	  lake_country/ebony/entrance1, lake_country/ebony/entrance2,
+	  lake_country/ebony/masterlev,
+	  lake_country/elven_moon/elvenmoon.1,
+	  lake_country/elven_moon/elvenmoon.5, lake_country/marsh/marsh1_1,
+	  lake_country/marsh/marsh1_2, lake_country/marsh/marsh2_1,
+	  lake_country/marsh/marsh2_2: Backport from trunk, @match is case
+	  insensitive - made dialog all lower case
+
+2008-07-18 22:05  rjtanner
+
+	* lake_country/Mwizard/MwizardT, lake_country/dragon_hangar/hangar,
+	  lake_country/ebony/entrance1, lake_country/ebony/entrance2,
+	  lake_country/ebony/masterlev: Backport from trunk, replace
+	  no_pass with move_block
+
+2008-07-18 22:01  rjtanner
+
+	* lake_country/Butakis/Rlib2: Backport from trunk, make books
+	  appear on top of tables
+
+2008-07-18 22:00  rjtanner
+
+	* lake_country/Butakis/prison_s: Backport from trunk, add missing
+	  floor tiles under walls
+
+2008-07-18 21:53  rjtanner
+
+	* lake_country/Butakis/Wist_study: Backport from trunk, replace
+	  no_pass with move_block
+
+2008-07-18 21:53  rjtanner
+
+	* lake_country/Butakis/prison-1, lake_country/Butakis/prison_e,
+	  lake_country/Butakis/prison_s, lake_country/Butakis/prison_w:
+	  Backport from trunk, @match is case insensitive - made dialog all
+	  lower case
+
+2008-07-18 21:48  rjtanner
+
+	* lake_country/Butakis/inn: Backport from trunk, floor tile
+	  re-arragenment
+
+2008-07-18 21:48  rjtanner
+
+	* lake_country/Butakis/luck1, lake_country/Butakis/luck3: Backport
+	  from trunk, removed trailing zeros from speed setting
+
+2008-07-18 21:45  rjtanner
+
+	* lake_country/Butakis/gate_inner,
+	  lake_country/Butakis/houses/Bobs_house,
+	  lake_country/Butakis/houses/Jacks_house,
+	  lake_country/Butakis/houses/Jacobs_house,
+	  lake_country/Butakis/houses/James_house,
+	  lake_country/Butakis/houses/Sams_house,
+	  lake_country/Butakis/houses/Seans_house,
+	  lake_country/Butakis/inn, lake_country/Butakis/prison_e: Backport
+	  from trunk, replace no_pass with move_block
+
+2008-07-18 21:41  rjtanner
+
+	* lake_country/Butakis/arena, lake_country/Butakis/church-1,
+	  lake_country/Butakis/gate_outer: Backport from trunk: @match is
+	  case insensitive - made dialog all lower case
+
+2008-07-18 21:38  rjtanner
+
+	* inn_and_outpost/treehouse_df1, inn_and_outpost/treehouse_df2,
+	  inn_and_outpost/treehouse_df3, inn_and_outpost/treehouse_df4,
+	  inn_and_outpost/treehouse_df5, inn_and_outpost/treehouse_df6:
+	  Backport from trunk, map name correction in NPC dialog
+	  (DarkForest -> Dark forest)
+
+2008-07-18 21:34  rjtanner
+
+	* inn_and_outpost/hermes_inn2: Backport from trunk, added an
+	  invisible button to help prevent players from taking damage from
+	  the closing door or gate
+
+2008-07-18 21:33  rjtanner
+
+	* inn_and_outpost/hermes_inn: Backport from trunk: @match is case
+	  insensitive - made dialog all lower case, added an invisible
+	  button to help prevent players from taking damage from the
+	  closing door or gate
+
+2008-07-18 21:31  rjtanner
+
+	* inn_and_outpost/hermes_inn, inn_and_outpost/nirlas_house,
+	  inn_and_outpost/outpost_aranor1, inn_and_outpost/sweets_inn:
+	  Backport from trunk: @match is case insensitive - made dialog all
+	  lower case, map header information synchronized
+
+2008-07-18 21:28  rjtanner
+
+	* inn_and_outpost/hermes_inn, inn_and_outpost/hermes_inn2,
+	  inn_and_outpost/sweets_inn, inn_and_outpost/sweets_inn2: Backport
+	  from trunk, replace no_pass with move_block
+
+2008-07-18 21:25  rjtanner
+
+	* HallOfSelection: Backport from trunk, added missing dungeon_magic
+	  tile
+
+2008-07-18 21:24  rjtanner
+
+	* HallOfSelection: Backport from trunk, replace no_pass with
+	  move_block
+
+2008-07-18 21:23  rjtanner
+
+	* euthville/wiz3: Backport from trunk, replace no_pass with
+	  move_block
+
+2008-07-18 21:22  rjtanner
+
+	* euthville/demon_quest: Backport from trunk, quest map information
+	  added to map header
+
+2008-07-18 21:15  rjtanner
+
+	* dungeons/valriel/valriel_final: Backport from trunk, formatting
+	  change in regards to location of Python script in monster
+	  inventory
+
+2008-07-18 21:13  rjtanner
+
+	* dungeons/monkey_temple/m_temple1, dungeons/train/dragon_train,
+	  dungeons/train/humanoid_train, dungeons/train/undead_train:
+	  Backport from trunk, replace no_pass with move_block
+
+2008-07-18 21:11  rjtanner
+
+	* dungeons/hole: Backport from trunk, added missing floor tiles
+
+2008-07-18 21:07  rjtanner
+
+	* dungeons/castle_aaaarg: Backport from trunk, added missing floor
+	  tiles
+
+2008-07-18 20:57  rjtanner
+
+	* dragonisland/house4, dragonisland/house8, dragonisland/house9,
+	  dragonisland/housebrxzl, dragonisland/luxhouse,
+	  dragonisland/tavern: Backport from trunk: @match is case
+	  insensitive - made dialog all lower case, synchronized map header
+	  information
+
+2008-07-18 20:34  rjtanner
+
+	* dragonisland/hangar, dragonisland/house4, dragonisland/house9,
+	  dragonisland/tavern: Backport from trunk, @match is case
+	  insensitive - made dialog all lower case
+
+2008-07-18 20:30  rjtanner
+
+	* dragonisland/apartment3: Backport from trunk, re-arranged floor
+	  tile stacking order
+
+2008-07-18 20:27  rjtanner
+
+	* dragonisland/advguild, dragonisland/advguild3,
+	  dragonisland/advshop0: Backport from trunk: @match is case
+	  insensitive - made dialog all lower case
+
+2008-07-18 20:26  rjtanner
+
+	* dragonisland/advguild, dragonisland/advguild2: Backport from
+	  trunk, replace no_pass with move_block
+
+2008-07-18 20:22  rjtanner
+
+	* darcap/town2/shop_f, darcap/town2/towers: Backport from trunk,
+	  @match is case insensitive - made dialog all lower case
+
+2008-07-18 20:15  rjtanner
+
+	* darcap/town2/shop_b: Backport from trunk, replace no_pass with
+	  move_block
+
+2008-07-18 20:13  rjtanner
+
+	* darcap/quest/water: Backport from trunk, replace no_pass with
+	  move_block
+
+2008-07-18 20:12  rjtanner
+
+	* darcap/lynn/castle1.0: Backport from trunk, make torches
+	  non-pickup so they can not be used to bypass some maps in pupland
+
+2008-07-18 20:10  rjtanner
+
+	* darcap/darcap/pirates.1: Backport from trunk, region setting is
+	  case sensitive
+
+2008-07-18 20:10  rjtanner
+
+	* darcap/darcap/shop_g, darcap/darcap/tavern, darcap/darcap/temple:
+	  Backport from trunk: @match is case insensitive - made dialog all
+	  lower case
+
+2008-07-18 20:08  rjtanner
+
+	* darcap/darcap/maze: Backport from trunk, updated map name and new
+	  lore content
+
+2008-07-18 20:07  rjtanner
+
+	* darcap/darcap/maze: Backport from trunk, replace no_pass with
+	  move_block (missed some in first pass through)
+
+2008-07-18 20:02  rjtanner
+
+	* darcap/darcap/maze: Backport from trunk, replace no_pass with
+	  move_block
+
+2008-07-18 20:01  rjtanner
+
+	* darcap/darcap/inn: Backport from trunk, replace no_pass with
+	  move_block
+
+2008-07-18 20:00  rjtanner
+
+	* darcap/darcap/guilds/poisoned_dagger/ground,
+	  darcap/darcap/guilds/poisoned_dagger/storage_room,
+	  darcap/darcap/guilds/poisoned_dagger/upper,
+	  darcap/darcap/guilds/smoking_cauldron/ground,
+	  darcap/darcap/guilds/smoking_cauldron/storage_room,
+	  darcap/darcap/guilds/smoking_cauldron/upper: Backport from trunk,
+	  replace no_pass with move_block
+
+2008-07-18 19:58  rjtanner
+
+	* darcap/darcap/circus/wurfbude: Backport from trunk: @match is
+	  case insensitive - made dialog all lower case, removed trailing
+	  zeros from speed setting
+
+2008-07-18 19:55  rjtanner
+
+	* darcap/darcap/circus/ghost: Backport from trunk, make torches
+	  non-pickup so they can not be used to bypass some maps in pupland
+
+2008-07-18 19:53  rjtanner
+
+	* darcap/darcap/circus/circus, darcap/darcap/circus/illusions,
+	  darcap/darcap/circus/roller1, darcap/darcap/circus/strength:
+	  Backport from trunk, replace no_pass with move_block
+
+2008-07-18 19:51  rjtanner
+
+	* darcap/darcap/apartment: Backport from trunk, removed duplicate
+	  and unused floor tile information
+
+2008-07-18 19:49  rjtanner
+
+	* brest/zorn/castle.upper.floor.one: Backport from trunk: @match is
+	  case insensitive - made dialog all lower case
+
+2008-07-18 19:44  rjtanner
+
+	* brest/underground, brest/underground2: Backport from trunk, added
+	  missing floor tiles
+
+2008-07-18 19:43  rjtanner
+
+	* brest/taverns/brest.seaside.tavern: Backport from trunk: @match
+	  is case insensitive - made dialog all lower case, text and
+	  wording changes to NPC dialog
+
+2008-07-18 19:37  rjtanner
+
+	* brest/sow/sow.1: Backport from trunk, added missing region
+	  (brest) to the map
+
+2008-07-18 19:37  rjtanner
+
+	* brest/sow/sow: Backport from trunk, @match is case insensitive -
+	  made dialog all lower case
+
+2008-07-18 19:34  rjtanner
+
+	* brest/pshops/README, brest/pshops/pshop1/basement,
+	  brest/pshops/pshop1/floor1, brest/pshops/pshop1/floor2,
+	  brest/pshops/pshop1/gfloor, brest/pshops/pshop10/basement,
+	  brest/pshops/pshop10/floor1, brest/pshops/pshop10/floor2,
+	  brest/pshops/pshop10/gfloor, brest/pshops/pshop11/basement,
+	  brest/pshops/pshop11/floor1, brest/pshops/pshop11/floor2,
+	  brest/pshops/pshop11/gfloor, brest/pshops/pshop12/basement,
+	  brest/pshops/pshop12/floor1, brest/pshops/pshop12/floor2,
+	  brest/pshops/pshop12/gfloor, brest/pshops/pshop13/basement,
+	  brest/pshops/pshop13/floor1, brest/pshops/pshop13/floor2,
+	  brest/pshops/pshop13/gfloor, brest/pshops/pshop14/basement,
+	  brest/pshops/pshop14/floor1, brest/pshops/pshop14/floor2,
+	  brest/pshops/pshop14/gfloor, brest/pshops/pshop15/basement,
+	  brest/pshops/pshop15/floor1, brest/pshops/pshop15/floor2,
+	  brest/pshops/pshop15/gfloor, brest/pshops/pshop16/basement,
+	  brest/pshops/pshop16/floor1, brest/pshops/pshop16/floor2,
+	  brest/pshops/pshop16/gfloor, brest/pshops/pshop17/basement,
+	  brest/pshops/pshop17/floor1, brest/pshops/pshop17/floor2,
+	  brest/pshops/pshop17/gfloor, brest/pshops/pshop18/basement,
+	  brest/pshops/pshop18/floor1, brest/pshops/pshop18/floor2,
+	  brest/pshops/pshop18/gfloor, brest/pshops/pshop19/basement,
+	  brest/pshops/pshop19/floor1, brest/pshops/pshop19/floor2,
+	  brest/pshops/pshop19/gfloor, brest/pshops/pshop2/basement,
+	  brest/pshops/pshop2/floor1, brest/pshops/pshop2/floor2,
+	  brest/pshops/pshop2/gfloor, brest/pshops/pshop20/basement,
+	  brest/pshops/pshop20/floor1, brest/pshops/pshop20/floor2,
+	  brest/pshops/pshop20/gfloor, brest/pshops/pshop21/basement,
+	  brest/pshops/pshop21/floor1, brest/pshops/pshop21/floor2,
+	  brest/pshops/pshop21/gfloor, brest/pshops/pshop22/basement,
+	  brest/pshops/pshop22/floor1, brest/pshops/pshop22/floor2,
+	  brest/pshops/pshop22/gfloor, brest/pshops/pshop23/basement,
+	  brest/pshops/pshop23/floor1, brest/pshops/pshop23/floor2,
+	  brest/pshops/pshop23/gfloor, brest/pshops/pshop24/basement,
+	  brest/pshops/pshop24/floor1, brest/pshops/pshop24/floor2,
+	  brest/pshops/pshop24/gfloor, brest/pshops/pshop25/basement,
+	  brest/pshops/pshop25/floor1, brest/pshops/pshop25/floor2,
+	  brest/pshops/pshop25/gfloor, brest/pshops/pshop26/basement,
+	  brest/pshops/pshop26/floor1, brest/pshops/pshop26/floor2,
+	  brest/pshops/pshop26/gfloor, brest/pshops/pshop27/basement,
+	  brest/pshops/pshop27/floor1, brest/pshops/pshop27/floor2,
+	  brest/pshops/pshop27/gfloor, brest/pshops/pshop3/basement,
+	  brest/pshops/pshop3/floor1, brest/pshops/pshop3/floor2,
+	  brest/pshops/pshop3/gfloor, brest/pshops/pshop4/basement,
+	  brest/pshops/pshop4/floor1, brest/pshops/pshop4/floor2,
+	  brest/pshops/pshop4/gfloor, brest/pshops/pshop5/basement,
+	  brest/pshops/pshop5/floor1, brest/pshops/pshop5/floor2,
+	  brest/pshops/pshop5/gfloor, brest/pshops/pshop6/basement,
+	  brest/pshops/pshop6/floor1, brest/pshops/pshop6/floor2,
+	  brest/pshops/pshop6/gfloor, brest/pshops/pshop7/basement,
+	  brest/pshops/pshop7/floor1, brest/pshops/pshop7/floor2,
+	  brest/pshops/pshop7/gfloor, brest/pshops/pshop8/basement,
+	  brest/pshops/pshop8/floor1, brest/pshops/pshop8/floor2,
+	  brest/pshops/pshop8/gfloor, brest/pshops/pshop9/basement,
+	  brest/pshops/pshop9/floor1, brest/pshops/pshop9/floor2,
+	  brest/pshops/pshop9/gfloor, brest/pshops/pshop_copier,
+	  brest/pshops/pshops_main, brest/pshops/pshopsinc,
+	  brest/pshops/pshopsinc2, brest/pshops/ugriver1: Backport from
+	  trunk: replace no_pass with move_block, @match is case
+	  insensitive - made dialog all lower case, format corrections on
+	  map header - added paranthesis around author's email address
+
+2008-07-18 19:29  rjtanner
+
+	* brest/brest.scrolls.right: Backport from trunk, @match is case
+	  insensitive - made dialog all lower case
+
+2008-07-18 19:27  rjtanner
+
+	* brest/black_shield/ground, brest/black_shield/storage_room,
+	  brest/black_shield/upper: Backport from trunk, replace no_pass
+	  with move_block
+
+2008-07-18 19:26  rjtanner
+
+	* brest/amphis: Backport from trunk, added missing floor tiles
+
+2008-07-18 19:25  rjtanner
+
+	* azumauindo/zaseki_dzuki_ryoku/ground,
+	  azumauindo/zaseki_dzuki_ryoku/storage_room,
+	  azumauindo/zaseki_dzuki_ryoku/upper: Backport from trunk, replace
+	  no_pass with move_block
+
+2008-07-18 19:22  rjtanner
+
+	* azumauindo/suno-yamatoshi/tou/tou1,
+	  azumauindo/suno-yamatoshi/tou/tou4,
+	  azumauindo/suno-yamatoshi/tou/tou5: Backport from trunk, replace
+	  no_pass with move_block
+
+2008-07-18 19:20  rjtanner
+
+	* azumauindo/suno-yamatoshi/temples/ruggilli2: Backport from trunk,
+	  replace no_pass with move_block
+
+2008-07-18 19:20  rjtanner
+
+	* azumauindo/suno-yamatoshi/temples/ruggilli1: Backport from trunk,
+	  removed duplicate and unused floor tile information
+
+2008-07-18 19:19  rjtanner
+
+	* azumauindo/suno-yamatoshi/nenshou_youso/ground,
+	  azumauindo/suno-yamatoshi/nenshou_youso/storage_room,
+	  azumauindo/suno-yamatoshi/nenshou_youso/upper: Backport from
+	  trunk, replace no_pass with move_block
+
+2008-07-18 19:16  rjtanner
+
+	* azumauindo/suno-yamatoshi/buildings/dojoA1,
+	  azumauindo/suno-yamatoshi/buildings/dojoA2,
+	  azumauindo/suno-yamatoshi/buildings/dojoB1,
+	  azumauindo/suno-yamatoshi/buildings/tatemonoA2: Backport from
+	  trunk, replace no_pass with move_block
+
+2008-07-18 19:14  rjtanner
+
+	* azumauindo/suno-yamatoshi/apartments/lapartment1: Backport from
+	  trunk, removed duplicate and unused floor tile information
+
+2008-07-18 19:13  rjtanner
+
+	* azumauindo/suno-yamatoshi/apartments/lapartment1: Backport from
+	  trunk, @match is case insensitive - made dialog all lower case
+
+2008-07-18 19:09  rjtanner
+
+	* azumauindo/ranbounagisatoshi/towers/tou1,
+	  azumauindo/ranbounagisatoshi/towers/tou4,
+	  azumauindo/ranbounagisatoshi/towers/tou5: Backport from trunk,
+	  replace no_pass with move_block
+
+2008-07-18 19:08  rjtanner
+
+	* azumauindo/ranbounagisatoshi/temples/rruggilli2: Backport from
+	  trunk, replace no_pass with move_block
+
+2008-07-18 19:06  rjtanner
+
+	* azumauindo/misc/shrine3, azumauindo/misc/shrineb1: Backport from
+	  trunk, replace no_pass with move_block
+
+2008-07-18 19:05  rjtanner
+
+	* azumauindo/misc/entrance1: Backport from trunk, resized map to
+	  remove unused and empty space
+
+2008-07-18 19:03  rjtanner
+
+	* azumauindo/minatomachi/temples/templeruggilli2: Backport from
+	  trunk, replace no_pass with move_block
+
+2008-07-18 18:57  rjtanner
+
+	* azumauindo/minatomachi/temples/templeruggilli1: Backport from
+	  trunk, @match is case insensitive - made dialog all lower case
+
+2008-07-18 18:51  rjtanner
+
+	* azumauindo/minatomachi/stores/diamondex1: Backport from trunk,
+	  replace no_pass with move_block
+
+2008-07-18 18:49  rjtanner
+
+	* azumauindo/minatomachi/ketsueki_itsuryuu/ground,
+	  azumauindo/minatomachi/ketsueki_itsuryuu/storage_room,
+	  azumauindo/minatomachi/ketsueki_itsuryuu/upper: Backport from
+	  trunk, replace no_pass with move_block
+
+2008-07-18 18:47  rjtanner
+
+	* azumauindo/minatomachi/buildings/guildkeybuilding1: Backport from
+	  trunk, resized map to remove unused and empty space
+
+2008-07-18 18:18  rjtanner
+
+	* dragonisland/house7: Backport from trunk, fix invalid regexp
+	  (removed a [ from npc dialog)
+
+2008-07-17 18:42  akirschbaum
+
+	* editor/scripts/LegacySpellConverter,
+	  editor/scripts/MapNormalizer, editor/scripts/MapValidator: Ignore
+	  *.msg files in editor scripts.
+
+2008-07-16 21:08  quinet
+
+	* scorn/houses/house3.bas1: Partial fix for bug #2018391: set a
+	  weight limit to all containers and set their nrof to 0 so that
+	  they cannot be stacked.
+
+2008-06-24 17:33  rjtanner
+
+	* quests/skud/court, scorn/kar/creepy.house: Context correction in
+	  magic mouth messages, replaced parish (church community) with
+	  perish (to destroy)
+
+2008-06-13 17:01  rjtanner
+
+	* scorn/oldcity/oldcity1: Applied patch [ 1992525 ] Typo Fix in
+	  Scorn Oldcity by Creidieki M. Crouch with some additional
+	  spelling corrections
+
+2008-06-06 06:05  rjtanner
+
+	* ChangeLog: Updated ChangeLog file using svn2cl
+
 2008-06-06 05:05  rjtanner
 
 	* pup_land/lone_town/town: Correct broken map path in the dragon
