@@ -11,6 +11,7 @@ enter_x 12
 enter_y 12
 msg
 Created:  2003-09-25 Avion
+Modified: 2007-12-22 tchize
 endmsg
 end
 arch blocked
@@ -1635,7 +1636,7 @@ end
 arch sign_w
 msg
 To Scorn
-Scorn is the best place for new players to start.
+Scorn is the best place for new players to start when they have already completed the beginners tutorial.
 Players starting in Scorn have a lot of ready options for adventuring.
 This does however mean that many others may be adventuring in the same areas.
 endmsg
@@ -2675,12 +2676,11 @@ arch sign_e
 msg
 To Navar
 Navar is a good place for more experienced players to start.
-Adventurers starting in Navar might have to do a bit more exploring,
-but then it is more likely you will find things...
+Adventurers starting in Navar might have to do a bit more exploring, but then it is more likely you will find things...
 
 -=> WARNING <=-
-Navar is not a "Newbie Friendly" place. True novices should start
-either in beginners house or Scorn. You have been warned.
+Navar is not a "Newbie Friendly" place. True novices should start either in beginners house or Scorn.
+Consider yourself warned!
 endmsg
 x 15
 y 12
