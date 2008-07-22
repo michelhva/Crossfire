@@ -1399,7 +1399,7 @@ end
 arch sage
 name Holtsapple the Sage
 msg
-@match Hi|hi|hello
+@match hi|hello
 Err... well welcome (*harumph*). Please
 try to keep quiet in the library.
 @match door|gate|enter|entrance|help
@@ -2483,7 +2483,7 @@ end
 arch sage
 name Narweenle the Librarian
 msg
-@match Hi|hi|hello
+@match hi|hello
 Err... well welcome (*harumph*). Please
 try to keep quiet in the library.
 @match door|gate|enter|entrance|help

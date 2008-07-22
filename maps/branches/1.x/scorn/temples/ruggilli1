@@ -186,23 +186,23 @@ end
 arch faerie_dragon
 name Devotee of Ruggilli
 msg
-@match Ruggilli|ruggilli
+@match ruggilli
 Ruggilli, God of Destruction and
 Chaos! His Followers are feared among
 all living!
-@match flame|Flame
+@match flame
 Ruggilli will lend the immolating
 fires to any who choose to follow!
-@match immolating|Immolating|fires|Fires
+@match immolating|fires
 Yes! A Flame which will consume your
 enemies!
-@match follow|Follow|worship|Worship|Door|door|Gate|gate|stair|Stair
+@match follow|worship|door|gate|stair
 The Consuming worm Ruggilli will only
 accept followers who can pass his
 test. Descend down these stairs and
 destroy all the of His enemies and a
 pass shall be granted.
-@match quest|Quest
+@match quest
 When you are ready, your quest shall
 be given!
 @match *
@@ -441,7 +441,7 @@ end
 arch fire_elemental
 name Knight of Ruggilli
 msg
-@match ruggilli|Ruggilli
+@match ruggilli
 ....Massster...We...Live...In...His...
 rath....
 @match *
@@ -679,7 +679,7 @@ end
 arch fire_elemental
 name Templar of Ruggilli
 msg
-@match ruggilli|Ruggilli
+@match ruggilli
 ....My...Looord....and masssster...
 @match *
 ....We...are...Watchhhing...You...
@@ -1030,7 +1030,7 @@ end
 arch fire_elemental
 name Knight of Ruggilli
 msg
-@match ruggilli|Ruggilli
+@match ruggilli
 ....Massster...We...Live...In...His...
 rath....
 @match *
@@ -1141,7 +1141,7 @@ end
 arch fire_elemental
 name Templar of Ruggilli
 msg
-@match ruggilli|Ruggilli
+@match ruggilli
 ....My...Looord....and masssster...
 @match *
 ....We...are...Watchhhing...You...
@@ -1175,7 +1175,7 @@ end
 arch fire_elemental
 name Knight of Ruggilli
 msg
-@match ruggilli|Ruggilli
+@match ruggilli
 ....Massster...We...Live...In...His...
 rath....
 @match *

@@ -816,9 +816,9 @@ end
 arch conjurer
 name high priest of Sorig
 msg
-@match Sorig|sorig
+@match sorig
 Sorig the almighty, Lord of the Skies!
-@match Skies|skies|Sky|sky
+@match skies|sky
 The kingdom of Sorig has no limits.
 @match *
 Fear the wrath of Sorig!

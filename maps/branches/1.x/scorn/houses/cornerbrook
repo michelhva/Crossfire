@@ -2705,7 +2705,7 @@ end
 arch sailor
 name Swabbie
 msg
-@match Mark|mark
+@match mark
 Ya I know him,
 he told me not to tell anyone he was
 at Goth..Oh you said 'Mark'...
@@ -2798,10 +2798,10 @@ y 20
 end
 arch woman
 msg
-@match staff|Staff|stick|Stick
+@match staff|stick
 You'll know its his because he carved
 his name on it.
-@match father|Father|ear|earhorn
+@match father|ear|earhorn
 My father is a bit hard of hearing.
 He lost his earhorn too...
 @match *
@@ -3049,13 +3049,13 @@ y 3
 end
 arch pirate_lass
 msg
-@match ahoy|Ahoy
+@match ahoy
 Hey sailor, want some treasure?
 @match old|pirate|Swabbie
 I shouldn't have married him,
 I should have stuck with Tomasso the Pirate.
 I hear he found a treasure map.
-@match Tomasso|tomasso|map|Map
+@match tomasso|map
 There was a real pirate,
 he set sail for Port Joseph.
 Said he found a treasure map.
@@ -3644,12 +3644,12 @@ end
 arch sage
 name Gramps Malone
 msg
-@match staff|Staff|walking|Walking
+@match staff|walking
 Yup lost my walking stick - have ya seen it?
-@match stick|Stick
+@match stick
 Ya say yer sick?  That's a darn shame!
 I get a touch of the wind myself sometimes...
-@match ear|Ear
+@match ear
 You looking for deer?
 Used to be a woodsman myself.
 Try the woods to the east - lots of game there...

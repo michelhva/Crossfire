@@ -607,7 +607,7 @@ Yes you can only pass if you be...
 * A citizen of Scorn with a password.
 * Have a merchants ``Port Pass''.
 * Have been knighted ``Hero of Scorn''.
-@match hero|Hero|scorn|Scorn
+@match hero|scorn
 Only the king can grant `Hero' status.
 @match port|pass
 See the Office inside Scorn to your left.
@@ -717,7 +717,7 @@ Yes you can only pass if you are
 * Have a merchants ``Port Pass''
 * Are a known ``Hero of Scorn''
 * or know todays password.
-@match hero|Hero
+@match hero
 Only the king can grant `Hero' status.
 @match port|pass
 See the Office of Gate Passes.
@@ -751,7 +751,7 @@ x 7
 end
 arch magic_ear
 msg
-@match chain|CHAIN|Chain
+@match chain
 Oh you know the password! You must be
 a citizen of scorn. Pass Citizen.
 endmsg
@@ -881,7 +881,7 @@ y 10
 end
 arch magic_ear
 msg
-@match chain|CHAIN|Chain
+@match chain
 Oh you know the password! You must be
 a citizen of scorn. Pass Citizen.
 endmsg
@@ -1111,7 +1111,7 @@ x 10
 end
 arch magic_ear
 msg
-@match chain|CHAIN|Chain
+@match chain
 Oh you know the password! You must be
 a citizen of scorn. Pass Citizen.
 endmsg
@@ -1233,7 +1233,7 @@ y 10
 end
 arch magic_ear
 msg
-@match chain|CHAIN|Chain
+@match chain
 Oh you know the password! You must be
 a citizen of scorn. Pass Citizen.
 endmsg
@@ -1275,7 +1275,7 @@ Yes you can only pass if you be...
 * A citizen of scorn with a password.
 * Have a merchants ``Port Pass''.
 * Have been knighted ``Hero of Scorn''.
-@match hero|Hero|scorn|Scorn
+@match hero|scorn
 Only the king can grant `Hero' status.
 @match port|pass
 See the Office inside scorn to your left.
@@ -1393,7 +1393,7 @@ Yes you can only pass if you are
 * Have a merchants ``Port Pass''
 * Are a known ``Hero of Scorn''
 * or know todays password.
-@match hero|Hero
+@match hero
 Only the king can grant `Hero' status.
 @match port|pass
 See the Office of Gate Passes.

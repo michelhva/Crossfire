@@ -274,13 +274,13 @@ end
 arch man
 name Chris
 msg
-@match hello|Hello|hi|HI
+@match hello|hi
 Hello. Watch your step.
-@match name|Name|job|Job
+@match name|job
 My name is Chris. I'm pest control.
-@match Step|step
+@match step
 Yes. We have a bunch of pests down here.
-@match Pest|pest
+@match pest
 Goth's has been over run with pests.  I don't
 know where they are all coming from.
 
