@@ -361,7 +361,7 @@ end
 arch door_look_1
 x 2
 y 4
-no_pass 0
+move_block 0
 end
 arch dirtfloor
 x 2
@@ -709,7 +709,7 @@ end
 arch door_2
 x 4
 y 10
-no_pass 0
+move_block 0
 end
 arch blocked
 x 4
@@ -789,7 +789,7 @@ end
 arch door_2
 x 4
 y 23
-no_pass 0
+move_block 0
 end
 arch blocked
 x 4
@@ -2367,7 +2367,7 @@ end
 arch door_2
 x 16
 y 10
-no_pass 0
+move_block 0
 end
 arch blocked
 x 16
@@ -2435,7 +2435,7 @@ end
 arch door_2
 x 16
 y 23
-no_pass 0
+move_block 0
 end
 arch blocked
 x 16
@@ -3551,7 +3551,7 @@ end
 arch door_2
 x 27
 y 10
-no_pass 0
+move_block 0
 end
 arch blocked
 x 27
