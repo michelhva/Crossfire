@@ -2427,6 +2427,17 @@ x 9
 y 31
 elevation 213
 end
+arch archway_tree
+name Pygmy Forest
+slaying /darcap/pygmy_forest/pygmy_forest
+msg
+You enter a dark forest....there seems to be a very evil prescence here...you suddenly remember what its like to feel scared, and you realize you are not alone....
+endmsg
+hp 25
+sp 48
+x 9
+y 31
+end
 arch grass
 x 9
 y 32
@@ -2704,6 +2715,25 @@ arch grass
 x 10
 y 32
 elevation 740
+end
+arch bones5
+name Remains of a dead adventurer
+msg
+A rotting corpse holding a note.
+endmsg
+x 10
+y 32
+type 122
+material 0
+no_pick 1
+arch note
+msg
+Do not enter the forest! It is inhabited by some evil creatures more powerful than any I have previously met!  I was just exploring and came by this place and entered it..then I saw some creatures and attempted to slay them but failed.....I barely escaped the forest...my escape was in vain however, the wounds I received are sure to kill me, and I think I am poisoned....I write this note as a warning to any adventurers who come across this forest...do not enter if you wish to live...though, as I lay dieing, I wonder what all these creatures could be protecting...
+
+(This is a very dangerous map, only experienced lvl 100ish chars should attempt to clear it)
+endmsg
+no_pick 1
+end
 end
 arch grass
 x 10
