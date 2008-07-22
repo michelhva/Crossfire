@@ -6,6 +6,9 @@ width 46
 height 37
 enter_x 1
 enter_y 1
+msg
+Modified: 2008-05-23 Arvid Norlander
+endmsg
 end
 arch small_stones
 end
@@ -7154,9 +7157,9 @@ end
 arch faerie_dragon
 name Faerie Dragon Guardian
 msg
-@match hello|Hello|hi|Hi
+@match hello|hi
 Hello,  You should talk to Arborius.
-@match Arborius|arborius
+@match arborius
 He is the ent king.
 @match *
 I'm on guard go away
@@ -7195,9 +7198,9 @@ end
 arch faerie_dragon
 name Faerie Dragon Guardian
 msg
-@match hello|Hello|hi|Hi
+@match hello|hi
 Hello,  You should talk to Arborius.
-@match Arborius|arborius
+@match arborius
 He is the ent king.
 @match *
 I'm on guard go away
@@ -8022,9 +8025,9 @@ end
 arch faerie_dragon
 name Faerie Dragon Guardian
 msg
-@match hello|Hello|hi|Hi
+@match hello|hi
 Hello,  You should talk to Arborius.
-@match Arborius|arborius
+@match arborius
 He is the ent king.
 @match *
 I'm on guard go away
@@ -8063,9 +8066,9 @@ end
 arch faerie_dragon
 name Faerie Dragon Guardian
 msg
-@match hello|Hello|hi|Hi
+@match hello|hi
 Hello,  You should talk to Arborius.
-@match Arborius|arborius
+@match arborius
 He is the ent king.
 @match *
 I'm on guard go away
@@ -8894,9 +8897,9 @@ end
 arch faerie_dragon
 name Faerie Dragon Guardian
 msg
-@match hello|Hello|hi|Hi
+@match hello|hi
 Hello,  You should talk to Arborius.
-@match Arborius|arborius
+@match arborius
 He is the ent king.
 @match *
 I'm on guard go away
@@ -8935,9 +8938,9 @@ end
 arch faerie_dragon
 name Faerie Dragon Guardian
 msg
-@match hello|Hello|hi|Hi
+@match hello|hi
 Hello,  You should talk to Arborius.
-@match Arborius|arborius
+@match arborius
 He is the ent king.
 @match *
 I'm on guard go away
@@ -9665,18 +9668,18 @@ y 15
 end
 arch sphinx
 msg
-@match yes|Yes|riddle|Riddle
+@match yes|riddle
    Sometimes brass or gold,
    for each a hole and a ring,
    turning, ever turning,
    waiting for an opening.
 What is it?
-@match Key|key
+@match key
 You have guessed correctly.
 The first object you seek is in the
 Volcano.  The first word you seek is
 TIMELESSNESS
-@match Name|name
+@match name
 I am the Sphinx
 @match *
 Have you come for a riddle?
@@ -9771,9 +9774,9 @@ end
 arch faerie_dragon
 name Faerie Dragon Guardian
 msg
-@match hello|Hello|hi|Hi
+@match hello|hi
 Hello,  You should talk to Arborius.
-@match Arborius|arborius
+@match arborius
 He is the ent king.
 @match *
 I'm on guard go away
@@ -9795,23 +9798,22 @@ y 31
 end
 arch ent
 msg
-@match hi|hello|Hi|Hello
+@match hi|hello
 Hello, Sapling
-@match name|Name
+@match name
 I am Arborius the King of the Ents
-@match king|King|ents|Ents
+@match king|ents
 I rule the Ents, the living trees.
 We live in a forrest which is on a
 distant island.
-@match island|Island
+@match island
 There is a longboat in Wolfsburg that
 goes there regularly.
-@match autumn|Autumn
+@match autumn
 The second object is in my forest
 kingdom.  The second word is TWILIGHT
 @match *
 Be careful of my roots, sapling.
-
 endmsg
 x 43
 y 31
@@ -9835,9 +9837,9 @@ end
 arch faerie_dragon
 name Faerie Dragon Guardian
 msg
-@match hello|Hello|hi|Hi
+@match hello|hi
 Hello,  You should talk to Arborius.
-@match Arborius|arborius
+@match arborius
 He is the ent king.
 @match *
 I'm on guard go away
