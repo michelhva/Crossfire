@@ -3732,13 +3732,13 @@ end
 arch pirate
 name Percival
 msg
-@match hello|hi|howdy|Hello|Hi
+@match hello|hi|howdy
 Goodday to-ya.  Want a ride out to
 Goblin island?  (Simply press `A')
-@match Portia|portia
+@match portia
 Portia is a good woman.  You don't
 bother her now.
-@match Moogly|bill|Bill|moogly
+@match bill|moogly
 Eh, I sailed with Moogly Bill.
 @match grave
 Yes, I buried Moogly Bill, but
