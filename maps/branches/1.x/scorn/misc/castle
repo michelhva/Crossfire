@@ -1745,10 +1745,6 @@ arch cobblestones2
 x 11
 y 20
 end
-arch cobblestones2
-x 11
-y 21
-end
 arch exit
 slaying /world/world_104_115
 hp 42
@@ -1772,6 +1768,10 @@ arch exit
 slaying /world/world_104_115
 hp 42
 sp 47
+x 11
+y 23
+end
+arch cobblestones2
 x 11
 y 23
 end
@@ -1938,10 +1938,6 @@ arch cobblestones2
 x 12
 y 21
 end
-arch cobblestones2
-x 12
-y 21
-end
 arch exit
 slaying /world/world_104_115
 hp 42
@@ -1965,6 +1961,10 @@ arch exit
 slaying /world/world_104_115
 hp 42
 sp 47
+x 12
+y 23
+end
+arch cobblestones2
 x 12
 y 23
 end

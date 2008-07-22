@@ -9,6 +9,7 @@ enter_y 2
 msg
 Created:  Gene Alexander (gene@eracc.com)
 Using ideas of: Andreas Vogl (red.blaze@gmx.net)
+Modified: 2008-06-20 Arvid Norlander
 endmsg
 end
 arch shop_empty
@@ -1117,10 +1118,6 @@ end
 arch dwall_2_1_2
 x 5
 y 1
-end
-arch check_inv
-x 5
-y 2
 end
 arch dungeon_magic
 x 5

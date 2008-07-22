@@ -6,6 +6,7 @@ width 29
 height 40
 msg
 Created:  1993-10-19
+Modified: 2008-06-06 Arvid Norlander
 endmsg
 tile_path_4 oldcity3
 end
@@ -4349,6 +4350,10 @@ end
 arch blocked
 x 16
 y 12
+end
+arch pstone_1
+x 16
+y 13
 end
 arch cave_5
 x 16

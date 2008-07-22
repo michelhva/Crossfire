@@ -4,6 +4,9 @@ difficulty 1
 region scorn
 width 25
 height 25
+msg
+Modified: 2008-06-06 Arvid Norlander
+endmsg
 end
 arch dirtfloor
 end
@@ -1546,6 +1549,10 @@ arch wraith
 x 10
 y 14
 end
+arch dungeon_floor
+x 10
+y 15
+end
 arch mine2
 x 10
 y 15
@@ -1678,6 +1685,10 @@ end
 arch dungeon_floor
 x 11
 y 14
+end
+arch dungeon_floor
+x 11
+y 15
 end
 arch mine16
 x 11
@@ -1816,6 +1827,10 @@ arch dungeon_floor
 x 12
 y 14
 end
+arch dungeon_floor
+x 12
+y 15
+end
 arch mine2
 x 12
 y 15
@@ -1944,6 +1959,10 @@ arch dungeon_floor
 x 13
 y 14
 end
+arch dungeon_floor
+x 13
+y 15
+end
 arch mine16
 x 13
 y 15
@@ -2042,6 +2061,10 @@ arch dungeon_floor
 x 14
 y 7
 end
+arch dungeon_floor
+x 14
+y 8
+end
 arch mine2
 x 14
 y 8
@@ -2077,6 +2100,10 @@ end
 arch wraith
 x 14
 y 14
+end
+arch dungeon_floor
+x 14
+y 15
 end
 arch mine2
 x 14
@@ -2222,7 +2249,7 @@ arch mine3
 x 15
 y 14
 end
-arch dungeon_floor
+arch dirtfloor
 x 15
 y 15
 end
@@ -2810,6 +2837,9 @@ arch mine2
 x 19
 y 24
 end
+arch dungeon_floor
+x 20
+end
 arch mine2
 x 20
 end
@@ -2968,6 +2998,9 @@ end
 arch mine2
 x 20
 y 24
+end
+arch dungeon_floor
+x 21
 end
 arch mine2
 x 21
@@ -3143,6 +3176,9 @@ arch mine2
 x 21
 y 24
 end
+arch dungeon_floor
+x 22
+end
 arch mine2
 x 22
 end
@@ -3307,6 +3343,9 @@ end
 arch mine2
 x 22
 y 24
+end
+arch dungeon_floor
+x 23
 end
 arch mine2
 x 23
@@ -3475,6 +3514,9 @@ end
 arch mine2
 x 23
 y 24
+end
+arch dungeon_floor
+x 24
 end
 arch mine9
 x 24
