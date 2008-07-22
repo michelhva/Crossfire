@@ -1096,6 +1096,23 @@ arch chair_1.1
 x 9
 y 9
 end
+arch elf_man
+name Frightened Elf Man
+msg
+@match nightmares
+Yes, I keep having a nightmare where the Pygmys slaughter me and then eat me..like what I saw them doing to their prisoners when I stumbled upon that forest...
+
+@match pygmy|forest
+The Pygmys are these evil little creatures that live in a forest on an island north and slightly east of this town...I had to use dimension door to get there...they are really dangerous and I'm sure they are guarding something in that forest...
+
+@match *
+I still have nightmares about my visit to the Pygmy Forest.
+endmsg
+x 9
+y 9
+move_type 0
+no_damage 1
+end
 arch magic_banned
 x 9
 y 10
