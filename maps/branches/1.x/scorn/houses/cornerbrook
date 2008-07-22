@@ -753,13 +753,13 @@ end
 arch evergreen
 x 4
 y 11
-no_pass 1
+move_block all
 blocksview 1
 end
 arch evergreen
 x 4
 y 12
-no_pass 1
+move_block all
 blocksview 1
 end
 arch woodfloor
@@ -2881,7 +2881,7 @@ end
 arch door_1
 x 18
 y 5
-no_pass 0
+move_block 0
 end
 arch light3
 x 18

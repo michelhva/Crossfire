@@ -2755,7 +2755,7 @@ end
 arch table_3
 x 10
 y 29
-no_pass 1
+move_block all
 end
 arch woodfloor
 x 10
@@ -3099,7 +3099,7 @@ end
 arch table_3
 x 11
 y 29
-no_pass 1
+move_block all
 end
 arch woodfloor
 x 11
@@ -3328,7 +3328,7 @@ end
 arch table_3
 x 12
 y 28
-no_pass 1
+move_block all
 end
 arch dungeon_magic
 x 12
@@ -3341,7 +3341,7 @@ end
 arch table_3
 x 12
 y 29
-no_pass 1
+move_block all
 end
 arch woodfloor
 x 12

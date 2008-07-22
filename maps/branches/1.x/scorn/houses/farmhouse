@@ -1061,7 +1061,7 @@ end
 arch door_look_2
 x 10
 y 7
-no_pass 0
+move_block 0
 end
 arch woodfloor2
 x 10
@@ -1154,7 +1154,7 @@ end
 arch door_look_1
 x 11
 y 10
-no_pass 0
+move_block 0
 end
 arch invis_exit
 slaying /world/world_105_115
@@ -1241,7 +1241,7 @@ end
 arch door_look_1
 x 12
 y 10
-no_pass 0
+move_block 0
 end
 arch invis_exit
 slaying /world/world_105_115
@@ -1869,7 +1869,7 @@ arch igate_open_1
 x 19
 y 10
 connected 91
-no_pass 0
+move_block 0
 end
 arch invis_exit
 slaying /world/world_105_115
@@ -1974,7 +1974,7 @@ arch igate_open_1
 x 20
 y 10
 connected 91
-no_pass 0
+move_block 0
 end
 arch invis_exit
 slaying /world/world_105_115
@@ -2093,7 +2093,7 @@ arch igate_open_1
 x 21
 y 10
 connected 91
-no_pass 0
+move_block 0
 end
 arch invis_exit
 slaying /world/world_105_115
