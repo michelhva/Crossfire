@@ -10,6 +10,7 @@ enter_x 9
 enter_y 15
 msg
 Created:  1996-04-28 b.t. (thomas@astro.psu.edu)
+Modified: 2008-06-20 Arvid Norlander
 endmsg
 end
 arch grass
@@ -2512,7 +2513,7 @@ x 14
 y 12
 end
 arch shop_empty
-name woodfloor
+name wood floor
 face woodfloor.111
 x 14
 y 13
@@ -2522,13 +2523,13 @@ x 14
 y 13
 end
 arch shop_empty
-name woodfloor
+name wood floor
 face woodfloor.111
 x 14
 y 14
 end
 arch shop_empty
-name woodfloor
+name wood floor
 face woodfloor.111
 x 14
 y 15
@@ -2693,7 +2694,7 @@ x 15
 y 12
 end
 arch shop_empty
-name woodfloor
+name wood floor
 face woodfloor.111
 x 15
 y 13
@@ -2707,7 +2708,7 @@ value 5000
 unpaid 1
 end
 arch shop_empty
-name woodfloor
+name wood floor
 face woodfloor.111
 x 15
 y 14
@@ -2722,7 +2723,7 @@ unpaid 1
 identified 1
 end
 arch shop_empty
-name woodfloor
+name wood floor
 face woodfloor.111
 x 15
 y 15
