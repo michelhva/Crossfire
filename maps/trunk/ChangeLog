@@ -1,3 +1,302 @@
+2008-07-19 23:46  quinet
+
+	* scorn/temples/gaea, scorn/temples/gorokh, scorn/temples/mostrai,
+	  scorn/temples/mostrai2, scorn/temples/sorig,
+	  scorn/temples/sorig2, scorn/temples/valriel,
+	  scorn/temples/valriel2, scorn/temples/valriel3,
+	  styles/decorstyles/religious_gorokh,
+	  styles/decorstyles/religious_sorig,
+	  styles/decorstyles/religious_valriel: Replaced my old e-mail
+	  address in map headers by a working one.
+
+2008-07-19 23:02  quinet
+
+	* pup_land/lone_town/gemshop, scorn/houses/house3.1st,
+	  scorn/houses/house3.bas1: Updated map header.
+
+2008-07-19 22:12  quinet
+
+	* scorn/houses/house3.1st, scorn/houses/house3.bas1: More fixes for
+	  bug #2018391, set carrying limit for human skeletons to 80kg.
+
+2008-07-19 21:24  quinet
+
+	* pup_land/lone_town/gemshop: Fix for bug #2022422.
+
+2008-07-18 20:15  anmaster
+
+	* lake_country/snake_pit/snakepit_1,
+	  lake_country/snake_pit/snakepit_2: Add missing floor tiles under
+	  some walls in lake_country/snake_pit/snakepit_{1,2}
+
+2008-07-18 17:51  ryo_saeba
+
+	* dragonisland/house7: Fix invalid regexp.
+
+2008-07-17 18:42  akirschbaum
+
+	* editor/scripts/LegacySpellConverter,
+	  editor/scripts/MapNormalizer, editor/scripts/MapValidator: Ignore
+	  *.msg files in editor scripts.
+
+2008-07-17 16:21  anmaster
+
+	* mlab/citydeclouds/bank/bank2, mlab/citydeclouds/bank/bank3: Fix
+	  bug 2002170 "Conversion Profit Bug".
+
+2008-07-17 15:45  anmaster
+
+	* navar_city/apartments/apartment,
+	  navar_city/apartments/apartment_attic,
+	  navar_city/apartments/apartment_basement,
+	  navar_city/apartments/apartment_upstairs,
+	  navar_city/dreaming_sage/bigchest,
+	  navar_city/dreaming_sage/storage_room,
+	  navar_city/dreaming_sage/upper, navar_city/iscar,
+	  navar_city/misc/tannery, pup_land/guilds/laughing_skull/bigchest,
+	  pup_land/guilds/laughing_skull/storage_room,
+	  pup_land/guilds/laughing_skull/upper,
+	  pup_land/guilds/purple_butterfly/bigchest,
+	  pup_land/guilds/purple_butterfly/storage_room,
+	  pup_land/guilds/purple_butterfly/upper: Add missing "difficulty
+	  1" to some maps in Navar and Pupland containing no monsters (just
+	  NPC or empty).
+
+2008-07-17 15:28  anmaster
+
+	* scorn/guilds/mailed_fist/bigchest,
+	  scorn/guilds/mailed_fist/storage_room,
+	  scorn/guilds/mailed_fist/upper, scorn/houses/rolanda,
+	  scorn/houses/scorn_trappers, scorn/houses/tannery,
+	  scorn/houses/woodhouse, scorn/mansion/witherspoon_manor,
+	  scorn/misc/castle_kitchen, scorn/misc/cider_house,
+	  scorn/shops/oleds_cafe, scorn/shops/scorn.sale1: Add missing
+	  "difficulty 1" to some maps in Scorn containing no monsters (just
+	  NPC or empty).
+
+2008-07-16 21:07  quinet
+
+	* scorn/houses/house3.bas1: Partial fix for bug #2018391: set a
+	  weight limit to all containers and set their nrof to 0 so that
+	  they cannot be stacked.
+
+2008-06-29 05:38  kbulgrien
+
+	* scorn/misc/cityhall: - Change the title of this hint scroll since
+	  "the Servant" is a special
+	  character in Scorn. "the Good Citizen" fits the hints better
+	  anyway.
+
+2008-06-24 17:33  rjtanner
+
+	* quests/skud/court, scorn/kar/creepy.house: Context correction in
+	  magic mouth messages, replaced parish (church community) with
+	  perish (to destroy)
+
+2008-06-20 11:05  anmaster
+
+	* wolfsburg/apartments/pet-apartment/pet-apartment2,
+	  wolfsburg/apartments/wolfsburg.apartment, wolfsburg/dungeons/hut:
+	  In /wolfsburg: Change all "name woodfloor" to "name wood floor"
+	  (and remove them when that is the default in the arch). Also fix
+	  broken "hidden" teleporter in /wolfsburg/dungeons/hut.
+
+2008-06-20 10:56  anmaster
+
+	* pup_land/ancient/castle/castle.3, pup_land/castle_eureca/chest,
+	  pup_land/lone_town/cordish2, pup_land/nurnberg/nf_bar: In
+	  /pup_land: Change all "name woodfloor" to "name wood floor" (and
+	  remove them when that is the default in the arch).
+
+2008-06-20 10:51  anmaster
+
+	* navar_city/misc/library, navar_city/misc/theater,
+	  scorn/misc/library: Change more "name woodfloor" to "name wood
+	  floor" in some more maps.
+
+2008-06-20 10:47  anmaster
+
+	* azumauindo/suno-yamatoshi/apartments/lapartment1,
+	  azumauindo/suno-yamatoshi/temples/ruggilli1,
+	  lake_country/shops/Mopoon_wshop, santo_dominion/north_barn,
+	  scorn/apartment/apartments: Change more "name woodfloor" to "name
+	  wood floor" in misc places.
+
+2008-06-20 10:32  anmaster
+
+	* darcap/darcap/apartment, santo_dominion/sdomino_appartment: Make
+	  the Santo Dominion and Darcap apartments use goldfloors instead
+	  of altars, looks nicer. Also fix bad name for woodfloor2 (name
+	  was set to woodfloor but nowdays the arch got the name wood
+	  floor...).
+
+2008-06-20 09:45  anmaster
+
+	* pup_land/kurte/house, pup_land/kurte/kurte,
+	  pup_land/lone_town/gemshop_ud, pup_land/lone_town/thief_market,
+	  pup_land/rainbow/Lv4/alter, pup_land/s_f/st6: In /pup_land: Fix
+	  some invalid key string warnings from gridarta.
+
+2008-06-20 09:44  anmaster
+
+	* pup_land/nurnberg/dick/bomb, pup_land/nurnberg/dick/click,
+	  pup_land/nurnberg/dick/heaven, pup_land/nurnberg/dick/hell:
+	  /pup_land/nurnberg/dick/*: Add some floors to maps missing that.
+	  Set slaying values for some keys to prevent gridarta warnings.
+
+2008-06-20 09:32  anmaster
+
+	* scorn/misc/HospitalityRoom, scorn/peterm/undead_quest,
+	  scorn/shops/scorn.sale2: In /scorn: Fix some invalid key string
+	  warnings from gridarta. Move a magic ear under floor. Remove a
+	  pointless check_inv.
+
+2008-06-13 17:01  rjtanner
+
+	* scorn/oldcity/oldcity1: Applied patch [ 1992525 ] Typo Fix in
+	  Scorn Oldcity by Creidieki M. Crouch with some additional
+	  spelling corrections
+
+2008-06-13 12:43  anmaster
+
+	* marksel/grumms_inn: Add a button under the door in
+	  /marksel/grumms_inn to prevent crushing the player.
+
+2008-06-13 12:41  anmaster
+
+	* brest/amphis: Add missing floor tiles under some living trees in
+	  /brest/amphis. Also removing a ChangeLog message in the header of
+	  the same map related to last edit of the map (no longer the right
+	  author of that since it is no longer related to the last change.
+	  (And there is both svn log and the ChangeLog if anyone wants to
+	  find out).
+
+2008-06-13 12:37  anmaster
+
+	* pup_land/ancient/world: Remove a non-connected pointless large
+	  button hidden under the ground in pup_land/ancient/world, my
+	  guess it is was copied from a button in about the same place in
+	  the "modern" Pupland world.
+
+2008-06-13 12:35  anmaster
+
+	* quests/greyshield/Fortress, quests/greyshield/Greysword: In
+	  quests/greyshield/Greysword: Add missing woodfloor arches in some
+	  places. In quests/greyshield/Fortress: Remove some floor tiles
+	  hidden under another layer of floor tiles, fix a @match.
+
+2008-06-13 12:32  anmaster
+
+	* start/HallsOfSelection/fireborn_player,
+	  start/HallsOfSelection/wraith_player: Add some missing no magic
+	  arches to the Fireborn and Wraith Halls of Selection. Remove
+	  non-existant archtype in Wraith Hall of Selection.
+
+2008-06-13 12:23  anmaster
+
+	* start/newbieshouse: /star/newbieshouse: Remove some walls on top
+	  of walls, put some items under the floor, add button to prevent
+	  getting crushed in door to "bedroom" (but not to the other area
+	  with buttons/gate, newbies need to learn that gates sometimes try
+	  to close on you).
+
+2008-06-06 23:16  anmaster
+
+	* scorn/anthony/passoffice, scorn/anthony/prison: Add missing
+	  floors under walls in /scorn/anthony/{prison,passoffice}
+
+2008-06-06 23:13  anmaster
+
+	* scorn/taverns/goths: Move some magic_ear under floor in
+	  /scorn/taverns/goths.
+
+2008-06-06 23:13  anmaster
+
+	* scorn/cannery/ware1: Unbreak non-animated exits in
+	  /scorn/cannery/ware1
+
+2008-06-06 23:12  anmaster
+
+	* scorn/temples/ruggilli2: Remove floors under blocked arch in
+	  /scorn/temples/ruggilli2
+
+2008-06-06 18:46  anmaster
+
+	* scorn/mansion/garden: Add floors under walls as needed in
+	  /scorn/mansion/garden.
+
+2008-06-06 14:54  anmaster
+
+	* scorn/misc/gatehouse: In /scorn/misc/gatehouse: Move some
+	  magic_ear under floor, change the look of some wall tiles near
+	  the edge of the map to make it clearer that these continue
+	  outside map (they are part of the city wall).
+
+2008-06-06 14:51  anmaster
+
+	* scorn/misc/port_arena: In /scorn/misc/port_arena: change the
+	  floors under walls to match the floors around it. Fix broken
+	  animation for exit. Remove some duplicate arches on top of each
+	  other, remove unreachable and non-visible wall tiles in a corner
+	  of the map.
+
+2008-06-06 14:04  anmaster
+
+	* scorn/oldcity/end, scorn/oldcity/oldcity54,
+	  scorn/oldcity/oldcity6, scorn/oldcity/oldcity7,
+	  scorn/oldcity/oldcity8: In /scorn/oldcity/*: Add missing floor
+	  under wall tiles, move magic_ear under floor, fix broken "no
+	  animation and custom face" exit.
+
+2008-06-06 14:02  anmaster
+
+	* scorn/kar/creepy.house, scorn/kar/creepy.house2: Add missing
+	  floor arches under walls in /scorn/kar/creepy.house and
+	  /scorn/kar/creepy.house2.
+
+2008-06-06 13:42  anmaster
+
+	* scorn/houses/resir, scorn/houses/wizz.lev1.pass1: In
+	  /scorn/houses/resir move magic mouth to below floor, in
+	  /scorn/houses/wizz.lev1.pass1 remove duplicate wall tile under
+	  another wall tile.
+
+2008-06-06 13:31  anmaster
+
+	* scorn/houses/breezy_under: Add missing floors under walls in
+	  /scorn/houses/breezy_under
+
+2008-06-06 13:29  anmaster
+
+	* scorn/houses/cornerbrook: Fix two mixed up connections in
+	  /scorn/houses/cornerbrook to make the right messagess display for
+	  the right events.
+
+2008-06-06 12:56  anmaster
+
+	* dragonisland/apartment3: Hide magic_ear under floor in
+	  /dragonisland/apartment3
+
+2008-06-06 12:56  anmaster
+
+	* brest/underground, brest/underground2: Add missing floors under
+	  walls in /brest/underground and /brest/underground2.
+
+2008-06-06 12:36  anmaster
+
+	* dungeons/castle_aaaarg, dungeons/hole: Add missing floors under
+	  walls in /dungeons/hole and /dungeons/castle_aaaarg
+
+2008-06-06 12:34  anmaster
+
+	* port_joseph/goblin/caves, port_joseph/pirates/tortcave: Add
+	  missing floors under walls in /port_joseph/pirates/tortcave and
+	  /port_joseph/goblin/caves
+
+2008-06-06 06:05  rjtanner
+
+	* ChangeLog: Updated ChangeLog file using svn2cl
+
 2008-06-06 01:03  anmaster
 
 	* pup_land/lone_town/mshop: Unbreak the bargaining skill in
