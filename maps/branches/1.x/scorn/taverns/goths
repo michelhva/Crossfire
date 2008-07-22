@@ -9,6 +9,7 @@ enter_x 17
 enter_y 32
 msg
 Created:  1993-10-15
+Modified: 2008-06-06 Arvid Norlander
 endmsg
 maplore
 @quest Scorn Royalty Quest
@@ -427,10 +428,6 @@ arch woodfloor
 x 1
 y 17
 end
-arch woodfloor
-x 1
-y 18
-end
 arch magic_ear
 msg
 @match mountain
@@ -441,13 +438,13 @@ x 1
 y 18
 connected 7
 end
-arch chair_1.4
+arch woodfloor
 x 1
 y 18
 end
-arch woodfloor
+arch chair_1.4
 x 1
-y 19
+y 18
 end
 arch magic_ear
 msg
@@ -460,6 +457,10 @@ endmsg
 x 1
 y 19
 connected 7
+end
+arch woodfloor
+x 1
+y 19
 end
 arch wizard
 name wizard with an aura of great power
@@ -730,10 +731,6 @@ arch woodfloor
 x 2
 y 17
 end
-arch woodfloor
-x 2
-y 18
-end
 arch magic_ear
 msg
 @match cave
@@ -746,13 +743,13 @@ x 2
 y 18
 connected 7
 end
-arch table_3
+arch woodfloor
 x 2
 y 18
 end
-arch woodfloor
+arch table_3
 x 2
-y 19
+y 18
 end
 arch magic_ear
 msg
@@ -762,6 +759,10 @@ endmsg
 x 2
 y 19
 connected 7
+end
+arch woodfloor
+x 2
+y 19
 end
 arch chair_1.3
 x 2
@@ -2376,11 +2377,11 @@ arch chair_1.1
 x 10
 y 6
 end
-arch woodfloor
+arch magic_ear
 x 10
 y 7
 end
-arch magic_ear
+arch woodfloor
 x 10
 y 7
 end
@@ -2388,11 +2389,11 @@ arch table_3
 x 10
 y 7
 end
-arch woodfloor
+arch magic_ear
 x 10
 y 8
 end
-arch magic_ear
+arch woodfloor
 x 10
 y 8
 end
@@ -5086,15 +5087,15 @@ x 24
 y 3
 move_block all
 end
-arch woodfloor
-x 24
-y 4
-end
 arch magic_ear
 msg
 @match drink|booze|beer
 If you want something to drink, it will be 3 gp.
 endmsg
+x 24
+y 4
+end
+arch woodfloor
 x 24
 y 4
 end
