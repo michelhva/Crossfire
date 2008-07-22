@@ -6,6 +6,7 @@ width 32
 height 32
 msg
 Created:  1994-12-18 bt (thomas@nomad.astro.psu.edu)
+Modified: 2008-05-23 Arvid Norlander
 endmsg
 end
 arch sea
@@ -1737,20 +1738,20 @@ end
 arch troll
 name Cryax the sad hill troll
 msg
-@match sorrow|Sorrow|hi|Hi|hello
+@match sorrow|hi|hello
 Beware little one. These hills contain
 powerful evil magic. Know that my
 two older brothers lie further in and that
 the curse that has been laid upon
 us has affected them more strongly.
-@match curse|Curse
+@match curse
 Yes, long ago we were elven princes.
 For our love of the 3 sisters we each
 were cursed by jealous gods. We are
 to stand guard here for eternity. I alone
 repent my fate, for both my brothers
 are quite mad and are beyond reason.
-@match sister|Sister
+@match sister
 They were the 3 most beautiful creatures
 to walk the earth once. Together they
 had great magical powers of weaving-
@@ -1760,13 +1761,13 @@ no curse of any god may transmute them,
 but instead they have been mutilated.
 They live now in sorrow in the tower my
 brothers protect.
-@match tower|Tower|guard|Guard
+@match tower|guard
 We guard the tower of the sisters
 which lies within a maze of deadly
 creatures and false paths. The ultimate
 true path is hidden. Be careful if you
 choose to seek the tower!
-@match password|Password
+@match password
 Ah.. the entrance into the inner tower
 is protected by a password. I used to
 know it when I was young but its been
