@@ -61,9 +61,14 @@ void checkMap(File mapFile, String mapPath) {
             sb.append(" [").append(gameObject.getBestName()).append(']');
         }
 
-        String parameter = validationError.getParameter();
-        if (parameter != null) {
-            sb.append(" [").append(parameter).append(']');
+        String parameter0 = validationError.getParameter(0);
+        if (parameter0 != null) {
+            sb.append(" [").append(parameter0);
+            String parameter1 = validationError.getParameter(1);
+            if (parameter1 != null) {
+                sb.append(", ").append(parameter1);
+            }
+            sb.append(']');
         }
 
         log(sb.toString());
