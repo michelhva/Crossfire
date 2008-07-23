@@ -2,11 +2,14 @@ arch map
 name Ebony Tiger Thief Guild
 difficulty 1
 region lakecountry
+shopitems potion:95;gem:95;*:-100
+shopmin 2000
+shopmax 25000
 width 25
 height 25
 msg
 Created:  1995-04-24 Kundi, Xue (xkd@soda.csua.berkeley.edu)
-Modified: 2007-11-04 Andreas Kirschbaum
+Modified: 2008-07-22 Rick Tanner
 endmsg
 end
 arch woodfloor
