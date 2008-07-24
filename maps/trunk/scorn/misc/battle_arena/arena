@@ -8,7 +8,7 @@ height 45
 msg
 Created:  2000-11-08 Andreas Vogl (red.blaze@gmx.net)
 Modified: 2007-11-04 Andreas Kirschbaum
-Modified: 2008-07-24 Raphael Quinet
+Modified: 2008-07-24 Raphaël Quinet
 endmsg
 end
 arch cobblestones2
@@ -2939,6 +2939,38 @@ sp 37
 x 7
 y 8
 end
+arch duplicator
+other_arch glue
+x 7
+y 9
+level 0
+connected 3
+activate_on_release 0
+end
+arch creator
+x 7
+y 9
+connected 205
+lifesave 1
+activate_on_release 0
+arch glue
+material 0
+end
+arch glue
+material 0
+end
+arch glue
+material 0
+end
+arch glue
+name spider web
+face spider_web.111
+animation spider_web
+move_slow_penalty 7
+anim_speed 20
+material 0
+end
+end
 arch battleground
 hp 28
 sp 37
@@ -2962,6 +2994,38 @@ hp 28
 sp 37
 x 7
 y 12
+end
+arch duplicator
+other_arch glue
+x 7
+y 13
+level 0
+connected 3
+activate_on_release 0
+end
+arch creator
+x 7
+y 13
+connected 205
+lifesave 1
+activate_on_release 0
+arch glue
+material 0
+end
+arch glue
+material 0
+end
+arch glue
+material 0
+end
+arch glue
+name spider web
+face spider_web.111
+animation spider_web
+move_slow_penalty 7
+anim_speed 20
+material 0
+end
 end
 arch battleground
 hp 28
@@ -3086,6 +3150,38 @@ hp 28
 sp 37
 x 7
 y 24
+end
+arch duplicator
+other_arch glue
+x 7
+y 25
+level 0
+connected 3
+activate_on_release 0
+end
+arch creator
+x 7
+y 25
+connected 205
+lifesave 1
+activate_on_release 0
+arch glue
+material 0
+end
+arch glue
+material 0
+end
+arch glue
+material 0
+end
+arch glue
+name spider web
+face spider_web.111
+animation spider_web
+move_slow_penalty 7
+anim_speed 20
+material 0
+end
 end
 arch battleground
 hp 28
@@ -3310,6 +3406,38 @@ arch slevel_3_1
 x 8
 y 6
 end
+arch duplicator
+other_arch glue
+x 8
+y 7
+level 0
+connected 3
+activate_on_release 0
+end
+arch creator
+x 8
+y 7
+connected 205
+lifesave 1
+activate_on_release 0
+arch glue
+material 0
+end
+arch glue
+material 0
+end
+arch glue
+material 0
+end
+arch glue
+name spider web
+face spider_web.111
+animation spider_web
+move_slow_penalty 7
+anim_speed 20
+material 0
+end
+end
 arch battleground
 hp 28
 sp 37
@@ -3359,6 +3487,38 @@ sp 37
 x 8
 y 10
 end
+arch duplicator
+other_arch glue
+x 8
+y 11
+level 0
+connected 3
+activate_on_release 0
+end
+arch creator
+x 8
+y 11
+connected 205
+lifesave 1
+activate_on_release 0
+arch glue
+material 0
+end
+arch glue
+material 0
+end
+arch glue
+material 0
+end
+arch glue
+name spider web
+face spider_web.111
+animation spider_web
+move_slow_penalty 7
+anim_speed 20
+material 0
+end
+end
 arch battleground
 hp 28
 sp 37
@@ -3382,6 +3542,38 @@ hp 28
 sp 37
 x 8
 y 14
+end
+arch duplicator
+other_arch glue
+x 8
+y 15
+level 0
+connected 3
+activate_on_release 0
+end
+arch creator
+x 8
+y 15
+connected 205
+lifesave 1
+activate_on_release 0
+arch glue
+material 0
+end
+arch glue
+material 0
+end
+arch glue
+material 0
+end
+arch glue
+name spider web
+face spider_web.111
+animation spider_web
+move_slow_penalty 7
+anim_speed 20
+material 0
+end
 end
 arch battleground
 hp 28
@@ -3413,6 +3605,38 @@ sp 37
 x 8
 y 19
 end
+arch duplicator
+other_arch glue
+x 8
+y 20
+level 0
+connected 3
+activate_on_release 0
+end
+arch creator
+x 8
+y 20
+connected 205
+lifesave 1
+activate_on_release 0
+arch glue
+material 0
+end
+arch glue
+material 0
+end
+arch glue
+material 0
+end
+arch glue
+name spider web
+face spider_web.111
+animation spider_web
+move_slow_penalty 7
+anim_speed 20
+material 0
+end
+end
 arch battleground
 hp 28
 sp 37
@@ -3425,6 +3649,38 @@ sp 37
 x 8
 y 21
 end
+arch duplicator
+other_arch glue
+x 8
+y 22
+level 0
+connected 3
+activate_on_release 0
+end
+arch creator
+x 8
+y 22
+connected 205
+lifesave 1
+activate_on_release 0
+arch glue
+material 0
+end
+arch glue
+material 0
+end
+arch glue
+material 0
+end
+arch glue
+name spider web
+face spider_web.111
+animation spider_web
+move_slow_penalty 7
+anim_speed 20
+material 0
+end
+end
 arch battleground
 hp 28
 sp 37
@@ -3436,6 +3692,38 @@ hp 28
 sp 37
 x 8
 y 23
+end
+arch duplicator
+other_arch glue
+x 8
+y 24
+level 0
+connected 3
+activate_on_release 0
+end
+arch creator
+x 8
+y 24
+connected 205
+lifesave 1
+activate_on_release 0
+arch glue
+material 0
+end
+arch glue
+material 0
+end
+arch glue
+material 0
+end
+arch glue
+name spider web
+face spider_web.111
+animation spider_web
+move_slow_penalty 7
+anim_speed 20
+material 0
+end
 end
 arch battleground
 hp 28
@@ -3479,6 +3767,38 @@ hp 28
 sp 37
 x 8
 y 26
+end
+arch duplicator
+other_arch glue
+x 8
+y 27
+level 0
+connected 3
+activate_on_release 0
+end
+arch creator
+x 8
+y 27
+connected 205
+lifesave 1
+activate_on_release 0
+arch glue
+material 0
+end
+arch glue
+material 0
+end
+arch glue
+material 0
+end
+arch glue
+name spider web
+face spider_web.111
+animation spider_web
+move_slow_penalty 7
+anim_speed 20
+material 0
+end
 end
 arch battleground
 hp 28
@@ -3714,6 +4034,38 @@ sp 37
 x 9
 y 7
 end
+arch duplicator
+other_arch glue
+x 9
+y 8
+level 0
+connected 3
+activate_on_release 0
+end
+arch creator
+x 9
+y 8
+connected 205
+lifesave 1
+activate_on_release 0
+arch glue
+material 0
+end
+arch glue
+material 0
+end
+arch glue
+material 0
+end
+arch glue
+name spider web
+face spider_web.111
+animation spider_web
+move_slow_penalty 7
+anim_speed 20
+material 0
+end
+end
 arch battleground
 hp 28
 sp 37
@@ -3743,6 +4095,38 @@ hp 28
 sp 37
 x 9
 y 12
+end
+arch duplicator
+other_arch glue
+x 9
+y 13
+level 0
+connected 3
+activate_on_release 0
+end
+arch creator
+x 9
+y 13
+connected 205
+lifesave 1
+activate_on_release 0
+arch glue
+material 0
+end
+arch glue
+material 0
+end
+arch glue
+material 0
+end
+arch glue
+name spider web
+face spider_web.111
+animation spider_web
+move_slow_penalty 7
+anim_speed 20
+material 0
+end
 end
 arch battleground
 hp 28
@@ -3774,6 +4158,38 @@ sp 37
 x 9
 y 17
 end
+arch duplicator
+other_arch glue
+x 9
+y 18
+level 0
+connected 3
+activate_on_release 0
+end
+arch creator
+x 9
+y 18
+connected 205
+lifesave 1
+activate_on_release 0
+arch glue
+material 0
+end
+arch glue
+material 0
+end
+arch glue
+material 0
+end
+arch glue
+name spider web
+face spider_web.111
+animation spider_web
+move_slow_penalty 7
+anim_speed 20
+material 0
+end
+end
 arch battleground
 hp 28
 sp 37
@@ -3791,6 +4207,38 @@ hp 28
 sp 37
 x 9
 y 20
+end
+arch duplicator
+other_arch glue
+x 9
+y 21
+level 0
+connected 3
+activate_on_release 0
+end
+arch creator
+x 9
+y 21
+connected 205
+lifesave 1
+activate_on_release 0
+arch glue
+material 0
+end
+arch glue
+material 0
+end
+arch glue
+material 0
+end
+arch glue
+name spider web
+face spider_web.111
+animation spider_web
+move_slow_penalty 7
+anim_speed 20
+material 0
+end
 end
 arch battleground
 hp 28
@@ -4065,11 +4513,75 @@ sp 37
 x 10
 y 9
 end
+arch duplicator
+other_arch glue
+x 10
+y 10
+level 0
+connected 3
+activate_on_release 0
+end
+arch creator
+x 10
+y 10
+connected 205
+lifesave 1
+activate_on_release 0
+arch glue
+material 0
+end
+arch glue
+material 0
+end
+arch glue
+material 0
+end
+arch glue
+name spider web
+face spider_web.111
+animation spider_web
+move_slow_penalty 7
+anim_speed 20
+material 0
+end
+end
 arch battleground
 hp 28
 sp 37
 x 10
 y 10
+end
+arch duplicator
+other_arch glue
+x 10
+y 11
+level 0
+connected 3
+activate_on_release 0
+end
+arch creator
+x 10
+y 11
+connected 205
+lifesave 1
+activate_on_release 0
+arch glue
+material 0
+end
+arch glue
+material 0
+end
+arch glue
+material 0
+end
+arch glue
+name spider web
+face spider_web.111
+animation spider_web
+move_slow_penalty 7
+anim_speed 20
+material 0
+end
 end
 arch battleground
 hp 28
@@ -4107,6 +4619,38 @@ sp 37
 x 10
 y 16
 end
+arch duplicator
+other_arch glue
+x 10
+y 17
+level 0
+connected 3
+activate_on_release 0
+end
+arch creator
+x 10
+y 17
+connected 205
+lifesave 1
+activate_on_release 0
+arch glue
+material 0
+end
+arch glue
+material 0
+end
+arch glue
+material 0
+end
+arch glue
+name spider web
+face spider_web.111
+animation spider_web
+move_slow_penalty 7
+anim_speed 20
+material 0
+end
+end
 arch battleground
 hp 28
 sp 37
@@ -4143,6 +4687,38 @@ sp 37
 x 10
 y 22
 end
+arch duplicator
+other_arch glue
+x 10
+y 23
+level 0
+connected 3
+activate_on_release 0
+end
+arch creator
+x 10
+y 23
+connected 205
+lifesave 1
+activate_on_release 0
+arch glue
+material 0
+end
+arch glue
+material 0
+end
+arch glue
+material 0
+end
+arch glue
+name spider web
+face spider_web.111
+animation spider_web
+move_slow_penalty 7
+anim_speed 20
+material 0
+end
+end
 arch battleground
 hp 28
 sp 37
@@ -4155,11 +4731,75 @@ sp 37
 x 10
 y 24
 end
+arch duplicator
+other_arch glue
+x 10
+y 25
+level 0
+connected 3
+activate_on_release 0
+end
+arch creator
+x 10
+y 25
+connected 205
+lifesave 1
+activate_on_release 0
+arch glue
+material 0
+end
+arch glue
+material 0
+end
+arch glue
+material 0
+end
+arch glue
+name spider web
+face spider_web.111
+animation spider_web
+move_slow_penalty 7
+anim_speed 20
+material 0
+end
+end
 arch battleground
 hp 28
 sp 37
 x 10
 y 25
+end
+arch duplicator
+other_arch glue
+x 10
+y 26
+level 0
+connected 3
+activate_on_release 0
+end
+arch creator
+x 10
+y 26
+connected 205
+lifesave 1
+activate_on_release 0
+arch glue
+material 0
+end
+arch glue
+material 0
+end
+arch glue
+material 0
+end
+arch glue
+name spider web
+face spider_web.111
+animation spider_web
+move_slow_penalty 7
+anim_speed 20
+material 0
+end
 end
 arch battleground
 hp 28
@@ -4355,6 +4995,38 @@ arch slevel_3_1
 x 11
 y 6
 end
+arch duplicator
+other_arch glue
+x 11
+y 7
+level 0
+connected 3
+activate_on_release 0
+end
+arch creator
+x 11
+y 7
+connected 205
+lifesave 1
+activate_on_release 0
+arch glue
+material 0
+end
+arch glue
+material 0
+end
+arch glue
+material 0
+end
+arch glue
+name spider web
+face spider_web.111
+animation spider_web
+move_slow_penalty 7
+anim_speed 20
+material 0
+end
+end
 arch battleground
 hp 28
 sp 37
@@ -4366,6 +5038,38 @@ hp 28
 sp 37
 x 11
 y 8
+end
+arch duplicator
+other_arch glue
+x 11
+y 9
+level 0
+connected 3
+activate_on_release 0
+end
+arch creator
+x 11
+y 9
+connected 205
+lifesave 1
+activate_on_release 0
+arch glue
+material 0
+end
+arch glue
+material 0
+end
+arch glue
+material 0
+end
+arch glue
+name spider web
+face spider_web.111
+animation spider_web
+move_slow_penalty 7
+anim_speed 20
+material 0
+end
 end
 arch battleground
 hp 28
@@ -4391,6 +5095,38 @@ sp 37
 x 11
 y 12
 end
+arch duplicator
+other_arch glue
+x 11
+y 13
+level 0
+connected 3
+activate_on_release 0
+end
+arch creator
+x 11
+y 13
+connected 205
+lifesave 1
+activate_on_release 0
+arch glue
+material 0
+end
+arch glue
+material 0
+end
+arch glue
+material 0
+end
+arch glue
+name spider web
+face spider_web.111
+animation spider_web
+move_slow_penalty 7
+anim_speed 20
+material 0
+end
+end
 arch battleground
 hp 28
 sp 37
@@ -4402,6 +5138,38 @@ hp 28
 sp 37
 x 11
 y 14
+end
+arch duplicator
+other_arch glue
+x 11
+y 15
+level 0
+connected 3
+activate_on_release 0
+end
+arch creator
+x 11
+y 15
+connected 205
+lifesave 1
+activate_on_release 0
+arch glue
+material 0
+end
+arch glue
+material 0
+end
+arch glue
+material 0
+end
+arch glue
+name spider web
+face spider_web.111
+animation spider_web
+move_slow_penalty 7
+anim_speed 20
+material 0
+end
 end
 arch battleground
 hp 28
@@ -4421,6 +5189,38 @@ sp 37
 x 11
 y 17
 end
+arch duplicator
+other_arch glue
+x 11
+y 18
+level 0
+connected 3
+activate_on_release 0
+end
+arch creator
+x 11
+y 18
+connected 205
+lifesave 1
+activate_on_release 0
+arch glue
+material 0
+end
+arch glue
+material 0
+end
+arch glue
+material 0
+end
+arch glue
+name spider web
+face spider_web.111
+animation spider_web
+move_slow_penalty 7
+anim_speed 20
+material 0
+end
+end
 arch battleground
 hp 28
 sp 37
@@ -4438,6 +5238,38 @@ hp 28
 sp 37
 x 11
 y 20
+end
+arch duplicator
+other_arch glue
+x 11
+y 21
+level 0
+connected 3
+activate_on_release 0
+end
+arch creator
+x 11
+y 21
+connected 205
+lifesave 1
+activate_on_release 0
+arch glue
+material 0
+end
+arch glue
+material 0
+end
+arch glue
+material 0
+end
+arch glue
+name spider web
+face spider_web.111
+animation spider_web
+move_slow_penalty 7
+anim_speed 20
+material 0
+end
 end
 arch battleground
 hp 28
@@ -4457,6 +5289,38 @@ sp 37
 x 11
 y 23
 end
+arch duplicator
+other_arch glue
+x 11
+y 24
+level 0
+connected 3
+activate_on_release 0
+end
+arch creator
+x 11
+y 24
+connected 205
+lifesave 1
+activate_on_release 0
+arch glue
+material 0
+end
+arch glue
+material 0
+end
+arch glue
+material 0
+end
+arch glue
+name spider web
+face spider_web.111
+animation spider_web
+move_slow_penalty 7
+anim_speed 20
+material 0
+end
+end
 arch battleground
 hp 28
 sp 37
@@ -4474,6 +5338,38 @@ hp 28
 sp 37
 x 11
 y 26
+end
+arch duplicator
+other_arch glue
+x 11
+y 27
+level 0
+connected 3
+activate_on_release 0
+end
+arch creator
+x 11
+y 27
+connected 205
+lifesave 1
+activate_on_release 0
+arch glue
+material 0
+end
+arch glue
+material 0
+end
+arch glue
+material 0
+end
+arch glue
+name spider web
+face spider_web.111
+animation spider_web
+move_slow_penalty 7
+anim_speed 20
+material 0
+end
 end
 arch battleground
 hp 28
@@ -4604,7 +5500,7 @@ x 11
 y 39
 end
 arch button_handle
-name statues <yes | no>
+name statues   <yes | no>
 x 11
 y 39
 connected 101
@@ -4614,7 +5510,7 @@ x 11
 y 40
 end
 arch button_handle
-name fences <yes | no>
+name fences   <yes | no>
 x 11
 y 40
 connected 102
@@ -4624,7 +5520,7 @@ x 11
 y 41
 end
 arch button_handle
-name tunnel <yes | no>
+name archways   <yes | no>
 x 11
 y 41
 connected 103
@@ -4634,7 +5530,7 @@ x 11
 y 42
 end
 arch button_handle
-name swamp <yes | no>
+name escape tunnel  <yes | no>
 x 11
 y 42
 connected 104
@@ -4642,6 +5538,12 @@ end
 arch flagstone
 x 11
 y 43
+end
+arch button_handle
+name sticky ground   <yes | no>
+x 11
+y 43
+connected 105
 end
 arch flagstone
 x 11
@@ -4742,6 +5644,38 @@ hp 28
 sp 37
 x 12
 y 10
+end
+arch duplicator
+other_arch glue
+x 12
+y 11
+level 0
+connected 3
+activate_on_release 0
+end
+arch creator
+x 12
+y 11
+connected 205
+lifesave 1
+activate_on_release 0
+arch glue
+material 0
+end
+arch glue
+material 0
+end
+arch glue
+material 0
+end
+arch glue
+name spider web
+face spider_web.111
+animation spider_web
+move_slow_penalty 7
+anim_speed 20
+material 0
+end
 end
 arch battleground
 hp 28
@@ -4876,6 +5810,38 @@ arch slevel_2_2_1
 x 12
 y 22
 end
+arch duplicator
+other_arch glue
+x 12
+y 23
+level 0
+connected 3
+activate_on_release 0
+end
+arch creator
+x 12
+y 23
+connected 205
+lifesave 1
+activate_on_release 0
+arch glue
+material 0
+end
+arch glue
+material 0
+end
+arch glue
+material 0
+end
+arch glue
+name spider web
+face spider_web.111
+animation spider_web
+move_slow_penalty 7
+anim_speed 20
+material 0
+end
+end
 arch battleground
 hp 28
 sp 37
@@ -4887,6 +5853,38 @@ hp 28
 sp 37
 x 12
 y 24
+end
+arch duplicator
+other_arch glue
+x 12
+y 25
+level 0
+connected 3
+activate_on_release 0
+end
+arch creator
+x 12
+y 25
+connected 205
+lifesave 1
+activate_on_release 0
+arch glue
+material 0
+end
+arch glue
+material 0
+end
+arch glue
+material 0
+end
+arch glue
+name spider web
+face spider_web.111
+animation spider_web
+move_slow_penalty 7
+anim_speed 20
+material 0
+end
 end
 arch battleground
 hp 28
@@ -5117,6 +6115,38 @@ arch slevel_3_1
 x 13
 y 7
 end
+arch duplicator
+other_arch glue
+x 13
+y 8
+level 0
+connected 3
+activate_on_release 0
+end
+arch creator
+x 13
+y 8
+connected 205
+lifesave 1
+activate_on_release 0
+arch glue
+material 0
+end
+arch glue
+material 0
+end
+arch glue
+material 0
+end
+arch glue
+name spider web
+face spider_web.111
+animation spider_web
+move_slow_penalty 7
+anim_speed 20
+material 0
+end
+end
 arch battleground
 hp 28
 sp 37
@@ -5186,6 +6216,38 @@ hp 28
 sp 37
 x 13
 y 15
+end
+arch duplicator
+other_arch glue
+x 13
+y 16
+level 0
+connected 3
+activate_on_release 0
+end
+arch creator
+x 13
+y 16
+connected 205
+lifesave 1
+activate_on_release 0
+arch glue
+material 0
+end
+arch glue
+material 0
+end
+arch glue
+material 0
+end
+arch glue
+name spider web
+face spider_web.111
+animation spider_web
+move_slow_penalty 7
+anim_speed 20
+material 0
+end
 end
 arch battleground
 hp 28
@@ -5580,6 +6642,38 @@ sp 37
 x 14
 y 9
 end
+arch duplicator
+other_arch glue
+x 14
+y 10
+level 0
+connected 3
+activate_on_release 0
+end
+arch creator
+x 14
+y 10
+connected 205
+lifesave 1
+activate_on_release 0
+arch glue
+material 0
+end
+arch glue
+material 0
+end
+arch glue
+material 0
+end
+arch glue
+name spider web
+face spider_web.111
+animation spider_web
+move_slow_penalty 7
+anim_speed 20
+material 0
+end
+end
 arch battleground
 hp 28
 sp 37
@@ -5650,6 +6744,38 @@ sp 37
 x 14
 y 17
 end
+arch duplicator
+other_arch glue
+x 14
+y 18
+level 0
+connected 3
+activate_on_release 0
+end
+arch creator
+x 14
+y 18
+connected 205
+lifesave 1
+activate_on_release 0
+arch glue
+material 0
+end
+arch glue
+material 0
+end
+arch glue
+material 0
+end
+arch glue
+name spider web
+face spider_web.111
+animation spider_web
+move_slow_penalty 7
+anim_speed 20
+material 0
+end
+end
 arch battleground
 hp 28
 sp 37
@@ -5704,6 +6830,38 @@ sp 37
 x 14
 y 23
 end
+arch duplicator
+other_arch glue
+x 14
+y 24
+level 0
+connected 3
+activate_on_release 0
+end
+arch creator
+x 14
+y 24
+connected 205
+lifesave 1
+activate_on_release 0
+arch glue
+material 0
+end
+arch glue
+material 0
+end
+arch glue
+material 0
+end
+arch glue
+name spider web
+face spider_web.111
+animation spider_web
+move_slow_penalty 7
+anim_speed 20
+material 0
+end
+end
 arch battleground
 hp 28
 sp 37
@@ -5719,7 +6877,7 @@ end
 arch creator
 x 14
 y 26
-connected 203
+connected 204
 lifesave 1
 activate_on_release 0
 end
@@ -5734,7 +6892,7 @@ end
 arch creator
 x 14
 y 26
-connected 203
+connected 204
 lifesave 1
 activate_on_release 0
 arch phole_1
@@ -5997,6 +7155,38 @@ sp 37
 x 15
 y 8
 end
+arch duplicator
+other_arch glue
+x 15
+y 9
+level 0
+connected 3
+activate_on_release 0
+end
+arch creator
+x 15
+y 9
+connected 205
+lifesave 1
+activate_on_release 0
+arch glue
+material 0
+end
+arch glue
+material 0
+end
+arch glue
+material 0
+end
+arch glue
+name spider web
+face spider_web.111
+animation spider_web
+move_slow_penalty 7
+anim_speed 20
+material 0
+end
+end
 arch battleground
 hp 28
 sp 37
@@ -6063,6 +7253,38 @@ sp 37
 x 15
 y 15
 end
+arch duplicator
+other_arch glue
+x 15
+y 16
+level 0
+connected 3
+activate_on_release 0
+end
+arch creator
+x 15
+y 16
+connected 205
+lifesave 1
+activate_on_release 0
+arch glue
+material 0
+end
+arch glue
+material 0
+end
+arch glue
+material 0
+end
+arch glue
+name spider web
+face spider_web.111
+animation spider_web
+move_slow_penalty 7
+anim_speed 20
+material 0
+end
+end
 arch battleground
 hp 28
 sp 37
@@ -6081,6 +7303,38 @@ sp 37
 x 15
 y 18
 end
+arch duplicator
+other_arch glue
+x 15
+y 19
+level 0
+connected 3
+activate_on_release 0
+end
+arch creator
+x 15
+y 19
+connected 205
+lifesave 1
+activate_on_release 0
+arch glue
+material 0
+end
+arch glue
+material 0
+end
+arch glue
+material 0
+end
+arch glue
+name spider web
+face spider_web.111
+animation spider_web
+move_slow_penalty 7
+anim_speed 20
+material 0
+end
+end
 arch battleground
 hp 28
 sp 37
@@ -6090,12 +7344,12 @@ end
 arch creator
 x 15
 y 20
-connected 204
+connected 203
 lifesave 1
 activate_on_release 0
 end
 arch duplicator
-other_arch hedge_1_3
+other_arch hedge_0
 x 15
 y 20
 level 0
@@ -6105,12 +7359,14 @@ end
 arch creator
 x 15
 y 20
-connected 204
+connected 203
 lifesave 1
 activate_on_release 0
-arch hedge_1_3
-move_slow all
-move_slow_penalty 1
+arch hedge_0
+name archway made of tree
+face archtree.111
+move_block fly_low
+blocksview 0
 end
 end
 arch battleground
@@ -6148,6 +7404,38 @@ hp 28
 sp 37
 x 15
 y 25
+end
+arch duplicator
+other_arch glue
+x 15
+y 26
+level 0
+connected 3
+activate_on_release 0
+end
+arch creator
+x 15
+y 26
+connected 205
+lifesave 1
+activate_on_release 0
+arch glue
+material 0
+end
+arch glue
+material 0
+end
+arch glue
+material 0
+end
+arch glue
+name spider web
+face spider_web.111
+animation spider_web
+move_slow_penalty 7
+anim_speed 20
+material 0
+end
 end
 arch battleground
 hp 28
@@ -6420,6 +7708,38 @@ arch slevel_1_3
 x 16
 y 6
 end
+arch duplicator
+other_arch glue
+x 16
+y 7
+level 0
+connected 3
+activate_on_release 0
+end
+arch creator
+x 16
+y 7
+connected 205
+lifesave 1
+activate_on_release 0
+arch glue
+material 0
+end
+arch glue
+material 0
+end
+arch glue
+material 0
+end
+arch glue
+name spider web
+face spider_web.111
+animation spider_web
+move_slow_penalty 7
+anim_speed 20
+material 0
+end
+end
 arch battleground
 hp 28
 sp 37
@@ -6444,6 +7764,38 @@ sp 37
 x 16
 y 10
 end
+arch duplicator
+other_arch glue
+x 16
+y 11
+level 0
+connected 3
+activate_on_release 0
+end
+arch creator
+x 16
+y 11
+connected 205
+lifesave 1
+activate_on_release 0
+arch glue
+material 0
+end
+arch glue
+material 0
+end
+arch glue
+material 0
+end
+arch glue
+name spider web
+face spider_web.111
+animation spider_web
+move_slow_penalty 7
+anim_speed 20
+material 0
+end
+end
 arch battleground
 hp 28
 sp 37
@@ -6455,6 +7807,38 @@ hp 28
 sp 37
 x 16
 y 12
+end
+arch duplicator
+other_arch glue
+x 16
+y 13
+level 0
+connected 3
+activate_on_release 0
+end
+arch creator
+x 16
+y 13
+connected 205
+lifesave 1
+activate_on_release 0
+arch glue
+material 0
+end
+arch glue
+material 0
+end
+arch glue
+material 0
+end
+arch glue
+name spider web
+face spider_web.111
+animation spider_web
+move_slow_penalty 7
+anim_speed 20
+material 0
+end
 end
 arch battleground
 hp 28
@@ -6504,6 +7888,38 @@ sp 37
 x 16
 y 16
 end
+arch duplicator
+other_arch glue
+x 16
+y 17
+level 0
+connected 3
+activate_on_release 0
+end
+arch creator
+x 16
+y 17
+connected 205
+lifesave 1
+activate_on_release 0
+arch glue
+material 0
+end
+arch glue
+material 0
+end
+arch glue
+material 0
+end
+arch glue
+name spider web
+face spider_web.111
+animation spider_web
+move_slow_penalty 7
+anim_speed 20
+material 0
+end
+end
 arch battleground
 hp 28
 sp 37
@@ -6525,7 +7941,7 @@ end
 arch creator
 x 16
 y 20
-connected 204
+connected 203
 lifesave 1
 activate_on_release 0
 end
@@ -6540,7 +7956,7 @@ end
 arch creator
 x 16
 y 20
-connected 204
+connected 203
 lifesave 1
 activate_on_release 0
 arch hedge_0
@@ -6556,6 +7972,38 @@ sp 37
 x 16
 y 20
 end
+arch duplicator
+other_arch glue
+x 16
+y 21
+level 0
+connected 3
+activate_on_release 0
+end
+arch creator
+x 16
+y 21
+connected 205
+lifesave 1
+activate_on_release 0
+arch glue
+material 0
+end
+arch glue
+material 0
+end
+arch glue
+material 0
+end
+arch glue
+name spider web
+face spider_web.111
+animation spider_web
+move_slow_penalty 7
+anim_speed 20
+material 0
+end
+end
 arch battleground
 hp 28
 sp 37
@@ -6567,6 +8015,38 @@ hp 28
 sp 37
 x 16
 y 22
+end
+arch duplicator
+other_arch glue
+x 16
+y 23
+level 0
+connected 3
+activate_on_release 0
+end
+arch creator
+x 16
+y 23
+connected 205
+lifesave 1
+activate_on_release 0
+arch glue
+material 0
+end
+arch glue
+material 0
+end
+arch glue
+material 0
+end
+arch glue
+name spider web
+face spider_web.111
+animation spider_web
+move_slow_penalty 7
+anim_speed 20
+material 0
+end
 end
 arch battleground
 hp 28
@@ -6591,6 +8071,38 @@ hp 28
 sp 37
 x 16
 y 26
+end
+arch duplicator
+other_arch glue
+x 16
+y 27
+level 0
+connected 3
+activate_on_release 0
+end
+arch creator
+x 16
+y 27
+connected 205
+lifesave 1
+activate_on_release 0
+arch glue
+material 0
+end
+arch glue
+material 0
+end
+arch glue
+material 0
+end
+arch glue
+name spider web
+face spider_web.111
+animation spider_web
+move_slow_penalty 7
+anim_speed 20
+material 0
+end
 end
 arch battleground
 hp 28
@@ -6922,10 +8434,6 @@ sp 37
 x 17
 y 11
 end
-arch swall_2_2_2
-x 17
-y 12
-end
 arch creator
 x 17
 y 12
@@ -6955,10 +8463,6 @@ hp 28
 sp 37
 x 17
 y 12
-end
-arch swall_2_1_1
-x 17
-y 13
 end
 arch creator
 x 17
@@ -6990,10 +8494,6 @@ sp 37
 x 17
 y 13
 end
-arch swall_2_2_4
-x 17
-y 14
-end
 arch creator
 x 17
 y 14
@@ -7024,6 +8524,38 @@ sp 37
 x 17
 y 14
 end
+arch duplicator
+other_arch glue
+x 17
+y 15
+level 0
+connected 3
+activate_on_release 0
+end
+arch creator
+x 17
+y 15
+connected 205
+lifesave 1
+activate_on_release 0
+arch glue
+material 0
+end
+arch glue
+material 0
+end
+arch glue
+material 0
+end
+arch glue
+name spider web
+face spider_web.111
+animation spider_web
+move_slow_penalty 7
+anim_speed 20
+material 0
+end
+end
 arch battleground
 hp 28
 sp 37
@@ -7048,6 +8580,38 @@ sp 37
 x 17
 y 18
 end
+arch duplicator
+other_arch glue
+x 17
+y 19
+level 0
+connected 3
+activate_on_release 0
+end
+arch creator
+x 17
+y 19
+connected 205
+lifesave 1
+activate_on_release 0
+arch glue
+material 0
+end
+arch glue
+material 0
+end
+arch glue
+material 0
+end
+arch glue
+name spider web
+face spider_web.111
+animation spider_web
+move_slow_penalty 7
+anim_speed 20
+material 0
+end
+end
 arch battleground
 hp 28
 sp 37
@@ -7057,7 +8621,7 @@ end
 arch creator
 x 17
 y 20
-connected 204
+connected 203
 lifesave 1
 activate_on_release 0
 end
@@ -7072,7 +8636,7 @@ end
 arch creator
 x 17
 y 20
-connected 204
+connected 203
 lifesave 1
 activate_on_release 0
 arch hedge_0
@@ -7111,6 +8675,38 @@ hp 28
 sp 37
 x 17
 y 24
+end
+arch duplicator
+other_arch glue
+x 17
+y 25
+level 0
+connected 3
+activate_on_release 0
+end
+arch creator
+x 17
+y 25
+connected 205
+lifesave 1
+activate_on_release 0
+arch glue
+material 0
+end
+arch glue
+material 0
+end
+arch glue
+material 0
+end
+arch glue
+name spider web
+face spider_web.111
+animation spider_web
+move_slow_penalty 7
+anim_speed 20
+material 0
+end
 end
 arch battleground
 hp 28
@@ -7417,6 +9013,38 @@ sp 37
 x 18
 y 7
 end
+arch duplicator
+other_arch glue
+x 18
+y 8
+level 0
+connected 3
+activate_on_release 0
+end
+arch creator
+x 18
+y 8
+connected 205
+lifesave 1
+activate_on_release 0
+arch glue
+material 0
+end
+arch glue
+material 0
+end
+arch glue
+material 0
+end
+arch glue
+name spider web
+face spider_web.111
+animation spider_web
+move_slow_penalty 7
+anim_speed 20
+material 0
+end
+end
 arch battleground
 hp 28
 sp 37
@@ -7428,6 +9056,38 @@ hp 28
 sp 37
 x 18
 y 9
+end
+arch duplicator
+other_arch glue
+x 18
+y 10
+level 0
+connected 3
+activate_on_release 0
+end
+arch creator
+x 18
+y 10
+connected 205
+lifesave 1
+activate_on_release 0
+arch glue
+material 0
+end
+arch glue
+material 0
+end
+arch glue
+material 0
+end
+arch glue
+name spider web
+face spider_web.111
+animation spider_web
+move_slow_penalty 7
+anim_speed 20
+material 0
+end
 end
 arch battleground
 hp 28
@@ -7495,6 +9155,38 @@ sp 37
 x 18
 y 16
 end
+arch duplicator
+other_arch glue
+x 18
+y 17
+level 0
+connected 3
+activate_on_release 0
+end
+arch creator
+x 18
+y 17
+connected 205
+lifesave 1
+activate_on_release 0
+arch glue
+material 0
+end
+arch glue
+material 0
+end
+arch glue
+material 0
+end
+arch glue
+name spider web
+face spider_web.111
+animation spider_web
+move_slow_penalty 7
+anim_speed 20
+material 0
+end
+end
 arch battleground
 hp 28
 sp 37
@@ -7516,7 +9208,7 @@ end
 arch creator
 x 18
 y 20
-connected 204
+connected 203
 lifesave 1
 activate_on_release 0
 end
@@ -7531,7 +9223,7 @@ end
 arch creator
 x 18
 y 20
-connected 204
+connected 203
 lifesave 1
 activate_on_release 0
 arch hedge_0
@@ -7553,6 +9245,38 @@ sp 37
 x 18
 y 21
 end
+arch duplicator
+other_arch glue
+x 18
+y 22
+level 0
+connected 3
+activate_on_release 0
+end
+arch creator
+x 18
+y 22
+connected 205
+lifesave 1
+activate_on_release 0
+arch glue
+material 0
+end
+arch glue
+material 0
+end
+arch glue
+material 0
+end
+arch glue
+name spider web
+face spider_web.111
+animation spider_web
+move_slow_penalty 7
+anim_speed 20
+material 0
+end
+end
 arch battleground
 hp 28
 sp 37
@@ -7565,6 +9289,38 @@ sp 37
 x 18
 y 23
 end
+arch duplicator
+other_arch glue
+x 18
+y 24
+level 0
+connected 3
+activate_on_release 0
+end
+arch creator
+x 18
+y 24
+connected 205
+lifesave 1
+activate_on_release 0
+arch glue
+material 0
+end
+arch glue
+material 0
+end
+arch glue
+material 0
+end
+arch glue
+name spider web
+face spider_web.111
+animation spider_web
+move_slow_penalty 7
+anim_speed 20
+material 0
+end
+end
 arch battleground
 hp 28
 sp 37
@@ -7576,6 +9332,38 @@ hp 28
 sp 37
 x 18
 y 25
+end
+arch duplicator
+other_arch glue
+x 18
+y 26
+level 0
+connected 3
+activate_on_release 0
+end
+arch creator
+x 18
+y 26
+connected 205
+lifesave 1
+activate_on_release 0
+arch glue
+material 0
+end
+arch glue
+material 0
+end
+arch glue
+material 0
+end
+arch glue
+name spider web
+face spider_web.111
+animation spider_web
+move_slow_penalty 7
+anim_speed 20
+material 0
+end
 end
 arch battleground
 hp 28
@@ -7877,6 +9665,38 @@ arch slevel_3_1
 x 19
 y 6
 end
+arch duplicator
+other_arch glue
+x 19
+y 7
+level 0
+connected 3
+activate_on_release 0
+end
+arch creator
+x 19
+y 7
+connected 205
+lifesave 1
+activate_on_release 0
+arch glue
+material 0
+end
+arch glue
+material 0
+end
+arch glue
+material 0
+end
+arch glue
+name spider web
+face spider_web.111
+animation spider_web
+move_slow_penalty 7
+anim_speed 20
+material 0
+end
+end
 arch battleground
 hp 28
 sp 37
@@ -7892,7 +9712,7 @@ end
 arch creator
 x 19
 y 9
-connected 203
+connected 204
 lifesave 1
 activate_on_release 0
 end
@@ -7907,7 +9727,7 @@ end
 arch creator
 x 19
 y 9
-connected 203
+connected 204
 lifesave 1
 activate_on_release 0
 arch phole_1
@@ -7971,6 +9791,38 @@ sp 37
 x 19
 y 13
 end
+arch duplicator
+other_arch glue
+x 19
+y 14
+level 0
+connected 3
+activate_on_release 0
+end
+arch creator
+x 19
+y 14
+connected 205
+lifesave 1
+activate_on_release 0
+arch glue
+material 0
+end
+arch glue
+material 0
+end
+arch glue
+material 0
+end
+arch glue
+name spider web
+face spider_web.111
+animation spider_web
+move_slow_penalty 7
+anim_speed 20
+material 0
+end
+end
 arch battleground
 hp 28
 sp 37
@@ -7983,6 +9835,38 @@ sp 37
 x 19
 y 15
 end
+arch duplicator
+other_arch glue
+x 19
+y 16
+level 0
+connected 3
+activate_on_release 0
+end
+arch creator
+x 19
+y 16
+connected 205
+lifesave 1
+activate_on_release 0
+arch glue
+material 0
+end
+arch glue
+material 0
+end
+arch glue
+material 0
+end
+arch glue
+name spider web
+face spider_web.111
+animation spider_web
+move_slow_penalty 7
+anim_speed 20
+material 0
+end
+end
 arch battleground
 hp 28
 sp 37
@@ -7994,6 +9878,38 @@ hp 28
 sp 37
 x 19
 y 17
+end
+arch duplicator
+other_arch glue
+x 19
+y 18
+level 0
+connected 3
+activate_on_release 0
+end
+arch creator
+x 19
+y 18
+connected 205
+lifesave 1
+activate_on_release 0
+arch glue
+material 0
+end
+arch glue
+material 0
+end
+arch glue
+material 0
+end
+arch glue
+name spider web
+face spider_web.111
+animation spider_web
+move_slow_penalty 7
+anim_speed 20
+material 0
+end
 end
 arch battleground
 hp 28
@@ -8010,12 +9926,12 @@ end
 arch creator
 x 19
 y 20
-connected 204
+connected 203
 lifesave 1
 activate_on_release 0
 end
 arch duplicator
-other_arch hedge_1_4
+other_arch hedge_0
 x 19
 y 20
 level 0
@@ -8025,12 +9941,14 @@ end
 arch creator
 x 19
 y 20
-connected 204
+connected 203
 lifesave 1
 activate_on_release 0
-arch hedge_1_4
-move_slow all
-move_slow_penalty 1
+arch hedge_0
+name archway made of tree
+face archtree.111
+move_block fly_low
+blocksview 0
 end
 end
 arch battleground
@@ -8038,6 +9956,38 @@ hp 28
 sp 37
 x 19
 y 20
+end
+arch duplicator
+other_arch glue
+x 19
+y 21
+level 0
+connected 3
+activate_on_release 0
+end
+arch creator
+x 19
+y 21
+connected 205
+lifesave 1
+activate_on_release 0
+arch glue
+material 0
+end
+arch glue
+material 0
+end
+arch glue
+material 0
+end
+arch glue
+name spider web
+face spider_web.111
+animation spider_web
+move_slow_penalty 7
+anim_speed 20
+material 0
+end
 end
 arch battleground
 hp 28
@@ -8341,6 +10291,38 @@ sp 37
 x 20
 y 8
 end
+arch duplicator
+other_arch glue
+x 20
+y 9
+level 0
+connected 3
+activate_on_release 0
+end
+arch creator
+x 20
+y 9
+connected 205
+lifesave 1
+activate_on_release 0
+arch glue
+material 0
+end
+arch glue
+material 0
+end
+arch glue
+material 0
+end
+arch glue
+name spider web
+face spider_web.111
+animation spider_web
+move_slow_penalty 7
+anim_speed 20
+material 0
+end
+end
 arch battleground
 hp 28
 sp 37
@@ -8352,6 +10334,38 @@ hp 28
 sp 37
 x 20
 y 10
+end
+arch duplicator
+other_arch glue
+x 20
+y 11
+level 0
+connected 3
+activate_on_release 0
+end
+arch creator
+x 20
+y 11
+connected 205
+lifesave 1
+activate_on_release 0
+arch glue
+material 0
+end
+arch glue
+material 0
+end
+arch glue
+material 0
+end
+arch glue
+name spider web
+face spider_web.111
+animation spider_web
+move_slow_penalty 7
+anim_speed 20
+material 0
+end
 end
 arch battleground
 hp 28
@@ -8510,15 +10524,8 @@ arch slevel_2_2_1
 x 20
 y 22
 end
-arch creator
-x 20
-y 23
-connected 204
-lifesave 1
-activate_on_release 0
-end
 arch duplicator
-other_arch hedge_2_1_1
+other_arch glue
 x 20
 y 23
 level 0
@@ -8528,12 +10535,25 @@ end
 arch creator
 x 20
 y 23
-connected 204
+connected 205
 lifesave 1
 activate_on_release 0
-arch hedge_2_1_1
-move_slow all
-move_slow_penalty 1
+arch glue
+material 0
+end
+arch glue
+material 0
+end
+arch glue
+material 0
+end
+arch glue
+name spider web
+face spider_web.111
+animation spider_web
+move_slow_penalty 7
+anim_speed 20
+material 0
 end
 end
 arch battleground
@@ -8542,47 +10562,14 @@ sp 37
 x 20
 y 23
 end
-arch creator
-x 20
-y 24
-connected 204
-lifesave 1
-activate_on_release 0
-end
-arch duplicator
-other_arch hedge_2_1_1
-x 20
-y 24
-level 0
-connected 3
-activate_on_release 0
-end
-arch creator
-x 20
-y 24
-connected 204
-lifesave 1
-activate_on_release 0
-arch hedge_2_1_1
-move_slow all
-move_slow_penalty 1
-end
-end
 arch battleground
 hp 28
 sp 37
 x 20
 y 24
 end
-arch creator
-x 20
-y 25
-connected 204
-lifesave 1
-activate_on_release 0
-end
 arch duplicator
-other_arch hedge_2_1_1
+other_arch glue
 x 20
 y 25
 level 0
@@ -8592,12 +10579,25 @@ end
 arch creator
 x 20
 y 25
-connected 204
+connected 205
 lifesave 1
 activate_on_release 0
-arch hedge_2_1_1
-move_slow all
-move_slow_penalty 1
+arch glue
+material 0
+end
+arch glue
+material 0
+end
+arch glue
+material 0
+end
+arch glue
+name spider web
+face spider_web.111
+animation spider_web
+move_slow_penalty 7
+anim_speed 20
+material 0
 end
 end
 arch battleground
@@ -8605,32 +10605,6 @@ hp 28
 sp 37
 x 20
 y 25
-end
-arch creator
-x 20
-y 26
-connected 204
-lifesave 1
-activate_on_release 0
-end
-arch duplicator
-other_arch hedge_2_1_1
-x 20
-y 26
-level 0
-connected 3
-activate_on_release 0
-end
-arch creator
-x 20
-y 26
-connected 204
-lifesave 1
-activate_on_release 0
-arch hedge_2_1_1
-move_slow all
-move_slow_penalty 1
-end
 end
 arch battleground
 hp 28
@@ -9095,6 +11069,38 @@ sp 37
 x 21
 y 17
 end
+arch duplicator
+other_arch glue
+x 21
+y 18
+level 0
+connected 3
+activate_on_release 0
+end
+arch creator
+x 21
+y 18
+connected 205
+lifesave 1
+activate_on_release 0
+arch glue
+material 0
+end
+arch glue
+material 0
+end
+arch glue
+material 0
+end
+arch glue
+name spider web
+face spider_web.111
+animation spider_web
+move_slow_penalty 7
+anim_speed 20
+material 0
+end
+end
 arch battleground
 hp 28
 sp 37
@@ -9159,45 +11165,14 @@ sp 37
 x 21
 y 24
 end
-arch creator
-x 21
-y 25
-connected 204
-lifesave 1
-activate_on_release 0
-end
-arch duplicator
-other_arch swamp
-x 21
-y 25
-level 0
-connected 3
-activate_on_release 0
-end
-arch creator
-x 21
-y 25
-connected 204
-lifesave 1
-activate_on_release 0
-arch swamp
-end
-end
 arch battleground
 hp 28
 sp 37
 x 21
 y 25
 end
-arch creator
-x 21
-y 26
-connected 204
-lifesave 1
-activate_on_release 0
-end
 arch duplicator
-other_arch swamp
+other_arch glue
 x 21
 y 26
 level 0
@@ -9207,10 +11182,25 @@ end
 arch creator
 x 21
 y 26
-connected 204
+connected 205
 lifesave 1
 activate_on_release 0
-arch swamp
+arch glue
+material 0
+end
+arch glue
+material 0
+end
+arch glue
+material 0
+end
+arch glue
+name spider web
+face spider_web.111
+animation spider_web
+move_slow_penalty 7
+anim_speed 20
+material 0
 end
 end
 arch battleground
@@ -9432,6 +11422,38 @@ arch slevel_2_2_4
 x 22
 y 7
 end
+arch duplicator
+other_arch glue
+x 22
+y 8
+level 0
+connected 3
+activate_on_release 0
+end
+arch creator
+x 22
+y 8
+connected 205
+lifesave 1
+activate_on_release 0
+arch glue
+material 0
+end
+arch glue
+material 0
+end
+arch glue
+material 0
+end
+arch glue
+name spider web
+face spider_web.111
+animation spider_web
+move_slow_penalty 7
+anim_speed 20
+material 0
+end
+end
 arch battleground
 hp 28
 sp 37
@@ -9522,6 +11544,38 @@ sp 37
 x 22
 y 15
 end
+arch duplicator
+other_arch glue
+x 22
+y 16
+level 0
+connected 3
+activate_on_release 0
+end
+arch creator
+x 22
+y 16
+connected 205
+lifesave 1
+activate_on_release 0
+arch glue
+material 0
+end
+arch glue
+material 0
+end
+arch glue
+material 0
+end
+arch glue
+name spider web
+face spider_web.111
+animation spider_web
+move_slow_penalty 7
+anim_speed 20
+material 0
+end
+end
 arch battleground
 hp 28
 sp 37
@@ -9607,65 +11661,49 @@ arch slevel_2_2_4
 x 22
 y 22
 end
-arch creator
+arch battleground
+hp 28
+sp 37
 x 22
 y 23
-connected 204
-lifesave 1
-activate_on_release 0
 end
 arch duplicator
-other_arch swamp
+other_arch glue
 x 22
-y 23
+y 24
 level 0
 connected 3
 activate_on_release 0
 end
 arch creator
 x 22
-y 23
-connected 204
+y 24
+connected 205
 lifesave 1
 activate_on_release 0
-arch swamp
+arch glue
+material 0
 end
+arch glue
+material 0
 end
-arch battleground
-hp 28
-sp 37
-x 22
-y 23
+arch glue
+material 0
+end
+arch glue
+name spider web
+face spider_web.111
+animation spider_web
+move_slow_penalty 7
+anim_speed 20
+material 0
+end
 end
 arch battleground
 hp 28
 sp 37
 x 22
 y 24
-end
-arch creator
-x 22
-y 25
-connected 204
-lifesave 1
-activate_on_release 0
-end
-arch duplicator
-other_arch swamp
-x 22
-y 25
-level 0
-connected 3
-activate_on_release 0
-end
-arch creator
-x 22
-y 25
-connected 204
-lifesave 1
-activate_on_release 0
-arch swamp
-end
 end
 arch battleground
 hp 28
@@ -9898,6 +11936,38 @@ arch slevel_3_1
 x 23
 y 6
 end
+arch duplicator
+other_arch glue
+x 23
+y 7
+level 0
+connected 3
+activate_on_release 0
+end
+arch creator
+x 23
+y 7
+connected 205
+lifesave 1
+activate_on_release 0
+arch glue
+material 0
+end
+arch glue
+material 0
+end
+arch glue
+material 0
+end
+arch glue
+name spider web
+face spider_web.111
+animation spider_web
+move_slow_penalty 7
+anim_speed 20
+material 0
+end
+end
 arch battleground
 hp 28
 sp 37
@@ -9922,6 +11992,38 @@ sp 37
 x 23
 y 10
 end
+arch duplicator
+other_arch glue
+x 23
+y 11
+level 0
+connected 3
+activate_on_release 0
+end
+arch creator
+x 23
+y 11
+connected 205
+lifesave 1
+activate_on_release 0
+arch glue
+material 0
+end
+arch glue
+material 0
+end
+arch glue
+material 0
+end
+arch glue
+name spider web
+face spider_web.111
+animation spider_web
+move_slow_penalty 7
+anim_speed 20
+material 0
+end
+end
 arch battleground
 hp 28
 sp 37
@@ -9939,6 +12041,38 @@ hp 28
 sp 37
 x 23
 y 13
+end
+arch duplicator
+other_arch glue
+x 23
+y 14
+level 0
+connected 3
+activate_on_release 0
+end
+arch creator
+x 23
+y 14
+connected 205
+lifesave 1
+activate_on_release 0
+arch glue
+material 0
+end
+arch glue
+material 0
+end
+arch glue
+material 0
+end
+arch glue
+name spider web
+face spider_web.111
+animation spider_web
+move_slow_penalty 7
+anim_speed 20
+material 0
+end
 end
 arch battleground
 hp 28
@@ -9970,6 +12104,38 @@ sp 37
 x 23
 y 18
 end
+arch duplicator
+other_arch glue
+x 23
+y 19
+level 0
+connected 3
+activate_on_release 0
+end
+arch creator
+x 23
+y 19
+connected 205
+lifesave 1
+activate_on_release 0
+arch glue
+material 0
+end
+arch glue
+material 0
+end
+arch glue
+material 0
+end
+arch glue
+name spider web
+face spider_web.111
+animation spider_web
+move_slow_penalty 7
+anim_speed 20
+material 0
+end
+end
 arch battleground
 hp 28
 sp 37
@@ -9979,7 +12145,7 @@ end
 arch creator
 x 23
 y 20
-connected 204
+connected 203
 lifesave 1
 activate_on_release 0
 end
@@ -9994,7 +12160,7 @@ end
 arch creator
 x 23
 y 20
-connected 204
+connected 203
 lifesave 1
 activate_on_release 0
 arch hedge_0
@@ -10010,15 +12176,8 @@ sp 37
 x 23
 y 20
 end
-arch creator
-x 23
-y 21
-connected 204
-lifesave 1
-activate_on_release 0
-end
 arch duplicator
-other_arch swamp
+other_arch glue
 x 23
 y 21
 level 0
@@ -10028,10 +12187,25 @@ end
 arch creator
 x 23
 y 21
-connected 204
+connected 205
 lifesave 1
 activate_on_release 0
-arch swamp
+arch glue
+material 0
+end
+arch glue
+material 0
+end
+arch glue
+material 0
+end
+arch glue
+name spider web
+face spider_web.111
+animation spider_web
+move_slow_penalty 7
+anim_speed 20
+material 0
 end
 end
 arch battleground
@@ -10040,59 +12214,11 @@ sp 37
 x 23
 y 21
 end
-arch creator
-x 23
-y 22
-connected 204
-lifesave 1
-activate_on_release 0
-end
-arch duplicator
-other_arch swamp
-x 23
-y 22
-level 0
-connected 3
-activate_on_release 0
-end
-arch creator
-x 23
-y 22
-connected 204
-lifesave 1
-activate_on_release 0
-arch swamp
-end
-end
 arch battleground
 hp 28
 sp 37
 x 23
 y 22
-end
-arch creator
-x 23
-y 23
-connected 204
-lifesave 1
-activate_on_release 0
-end
-arch duplicator
-other_arch swamp
-x 23
-y 23
-level 0
-connected 3
-activate_on_release 0
-end
-arch creator
-x 23
-y 23
-connected 204
-lifesave 1
-activate_on_release 0
-arch swamp
-end
 end
 arch battleground
 hp 28
@@ -10100,45 +12226,14 @@ sp 37
 x 23
 y 23
 end
-arch creator
-x 23
-y 24
-connected 204
-lifesave 1
-activate_on_release 0
-end
-arch duplicator
-other_arch swamp
-x 23
-y 24
-level 0
-connected 3
-activate_on_release 0
-end
-arch creator
-x 23
-y 24
-connected 204
-lifesave 1
-activate_on_release 0
-arch swamp
-end
-end
 arch battleground
 hp 28
 sp 37
 x 23
 y 24
 end
-arch creator
-x 23
-y 25
-connected 204
-lifesave 1
-activate_on_release 0
-end
 arch duplicator
-other_arch swamp
+other_arch glue
 x 23
 y 25
 level 0
@@ -10148,10 +12243,25 @@ end
 arch creator
 x 23
 y 25
-connected 204
+connected 205
 lifesave 1
 activate_on_release 0
-arch swamp
+arch glue
+material 0
+end
+arch glue
+material 0
+end
+arch glue
+material 0
+end
+arch glue
+name spider web
+face spider_web.111
+animation spider_web
+move_slow_penalty 7
+anim_speed 20
+material 0
 end
 end
 arch battleground
@@ -10166,15 +12276,8 @@ sp 37
 x 23
 y 26
 end
-arch creator
-x 23
-y 27
-connected 204
-lifesave 1
-activate_on_release 0
-end
 arch duplicator
-other_arch swamp
+other_arch glue
 x 23
 y 27
 level 0
@@ -10184,10 +12287,25 @@ end
 arch creator
 x 23
 y 27
-connected 204
+connected 205
 lifesave 1
 activate_on_release 0
-arch swamp
+arch glue
+material 0
+end
+arch glue
+material 0
+end
+arch glue
+material 0
+end
+arch glue
+name spider web
+face spider_web.111
+animation spider_web
+move_slow_penalty 7
+anim_speed 20
+material 0
 end
 end
 arch battleground
@@ -10301,7 +12419,7 @@ x 23
 y 39
 end
 arch button_handle
-name statues <yes | no>
+name statues   <yes | no>
 x 23
 y 39
 connected 101
@@ -10311,7 +12429,7 @@ x 23
 y 40
 end
 arch button_handle
-name fences <yes | no>
+name fences   <yes | no>
 x 23
 y 40
 connected 102
@@ -10321,7 +12439,7 @@ x 23
 y 41
 end
 arch button_handle
-name tunnel <yes | no>
+name archways   <yes | no>
 x 23
 y 41
 connected 103
@@ -10331,7 +12449,7 @@ x 23
 y 42
 end
 arch button_handle
-name swamp <yes | no>
+name escape tunnel  <yes | no>
 x 23
 y 42
 connected 104
@@ -10339,6 +12457,12 @@ end
 arch flagstone
 x 23
 y 43
+end
+arch button_handle
+name sticky ground   <yes | no>
+x 23
+y 43
+connected 105
 end
 arch flagstone
 x 23
@@ -10432,6 +12556,38 @@ sp 37
 x 24
 y 9
 end
+arch duplicator
+other_arch glue
+x 24
+y 10
+level 0
+connected 3
+activate_on_release 0
+end
+arch creator
+x 24
+y 10
+connected 205
+lifesave 1
+activate_on_release 0
+arch glue
+material 0
+end
+arch glue
+material 0
+end
+arch glue
+material 0
+end
+arch glue
+name spider web
+face spider_web.111
+animation spider_web
+move_slow_penalty 7
+anim_speed 20
+material 0
+end
+end
 arch battleground
 hp 28
 sp 37
@@ -10443,6 +12599,38 @@ hp 28
 sp 37
 x 24
 y 11
+end
+arch duplicator
+other_arch glue
+x 24
+y 12
+level 0
+connected 3
+activate_on_release 0
+end
+arch creator
+x 24
+y 12
+connected 205
+lifesave 1
+activate_on_release 0
+arch glue
+material 0
+end
+arch glue
+material 0
+end
+arch glue
+material 0
+end
+arch glue
+name spider web
+face spider_web.111
+animation spider_web
+move_slow_penalty 7
+anim_speed 20
+material 0
+end
 end
 arch battleground
 hp 28
@@ -10474,6 +12662,38 @@ sp 37
 x 24
 y 16
 end
+arch duplicator
+other_arch glue
+x 24
+y 17
+level 0
+connected 3
+activate_on_release 0
+end
+arch creator
+x 24
+y 17
+connected 205
+lifesave 1
+activate_on_release 0
+arch glue
+material 0
+end
+arch glue
+material 0
+end
+arch glue
+material 0
+end
+arch glue
+name spider web
+face spider_web.111
+animation spider_web
+move_slow_penalty 7
+anim_speed 20
+material 0
+end
+end
 arch battleground
 hp 28
 sp 37
@@ -10495,7 +12715,7 @@ end
 arch creator
 x 24
 y 20
-connected 204
+connected 203
 lifesave 1
 activate_on_release 0
 end
@@ -10510,7 +12730,7 @@ end
 arch creator
 x 24
 y 20
-connected 204
+connected 203
 lifesave 1
 activate_on_release 0
 arch hedge_0
@@ -10526,30 +12746,6 @@ sp 37
 x 24
 y 20
 end
-arch creator
-x 24
-y 21
-connected 204
-lifesave 1
-activate_on_release 0
-end
-arch duplicator
-other_arch swamp
-x 24
-y 21
-level 0
-connected 3
-activate_on_release 0
-end
-arch creator
-x 24
-y 21
-connected 204
-lifesave 1
-activate_on_release 0
-arch swamp
-end
-end
 arch battleground
 hp 28
 sp 37
@@ -10562,35 +12758,43 @@ sp 37
 x 24
 y 22
 end
-arch battleground
-hp 28
-sp 37
+arch duplicator
+other_arch glue
 x 24
 y 23
-end
-arch creator
-x 24
-y 24
-connected 204
-lifesave 1
-activate_on_release 0
-end
-arch duplicator
-other_arch swamp
-x 24
-y 24
 level 0
 connected 3
 activate_on_release 0
 end
 arch creator
 x 24
-y 24
-connected 204
+y 23
+connected 205
 lifesave 1
 activate_on_release 0
-arch swamp
+arch glue
+material 0
 end
+arch glue
+material 0
+end
+arch glue
+material 0
+end
+arch glue
+name spider web
+face spider_web.111
+animation spider_web
+move_slow_penalty 7
+anim_speed 20
+material 0
+end
+end
+arch battleground
+hp 28
+sp 37
+x 24
+y 23
 end
 arch battleground
 hp 28
@@ -10609,30 +12813,6 @@ hp 28
 sp 37
 x 24
 y 26
-end
-arch creator
-x 24
-y 27
-connected 204
-lifesave 1
-activate_on_release 0
-end
-arch duplicator
-other_arch swamp
-x 24
-y 27
-level 0
-connected 3
-activate_on_release 0
-end
-arch creator
-x 24
-y 27
-connected 204
-lifesave 1
-activate_on_release 0
-arch swamp
-end
 end
 arch battleground
 hp 28
@@ -10881,6 +13061,38 @@ sp 37
 x 25
 y 7
 end
+arch duplicator
+other_arch glue
+x 25
+y 8
+level 0
+connected 3
+activate_on_release 0
+end
+arch creator
+x 25
+y 8
+connected 205
+lifesave 1
+activate_on_release 0
+arch glue
+material 0
+end
+arch glue
+material 0
+end
+arch glue
+material 0
+end
+arch glue
+name spider web
+face spider_web.111
+animation spider_web
+move_slow_penalty 7
+anim_speed 20
+material 0
+end
+end
 arch battleground
 hp 28
 sp 37
@@ -10917,6 +13129,38 @@ sp 37
 x 25
 y 13
 end
+arch duplicator
+other_arch glue
+x 25
+y 14
+level 0
+connected 3
+activate_on_release 0
+end
+arch creator
+x 25
+y 14
+connected 205
+lifesave 1
+activate_on_release 0
+arch glue
+material 0
+end
+arch glue
+material 0
+end
+arch glue
+material 0
+end
+arch glue
+name spider web
+face spider_web.111
+animation spider_web
+move_slow_penalty 7
+anim_speed 20
+material 0
+end
+end
 arch battleground
 hp 28
 sp 37
@@ -10941,6 +13185,38 @@ sp 37
 x 25
 y 17
 end
+arch duplicator
+other_arch glue
+x 25
+y 18
+level 0
+connected 3
+activate_on_release 0
+end
+arch creator
+x 25
+y 18
+connected 205
+lifesave 1
+activate_on_release 0
+arch glue
+material 0
+end
+arch glue
+material 0
+end
+arch glue
+material 0
+end
+arch glue
+name spider web
+face spider_web.111
+animation spider_web
+move_slow_penalty 7
+anim_speed 20
+material 0
+end
+end
 arch battleground
 hp 28
 sp 37
@@ -10956,7 +13232,7 @@ end
 arch creator
 x 25
 y 20
-connected 204
+connected 203
 lifesave 1
 activate_on_release 0
 end
@@ -10971,7 +13247,7 @@ end
 arch creator
 x 25
 y 20
-connected 204
+connected 203
 lifesave 1
 activate_on_release 0
 arch hedge_0
@@ -10987,15 +13263,8 @@ sp 37
 x 25
 y 20
 end
-arch creator
-x 25
-y 21
-connected 204
-lifesave 1
-activate_on_release 0
-end
 arch duplicator
-other_arch swamp
+other_arch glue
 x 25
 y 21
 level 0
@@ -11005,10 +13274,25 @@ end
 arch creator
 x 25
 y 21
-connected 204
+connected 205
 lifesave 1
 activate_on_release 0
-arch swamp
+arch glue
+material 0
+end
+arch glue
+material 0
+end
+arch glue
+material 0
+end
+arch glue
+name spider web
+face spider_web.111
+animation spider_web
+move_slow_penalty 7
+anim_speed 20
+material 0
 end
 end
 arch battleground
@@ -11016,30 +13300,6 @@ hp 28
 sp 37
 x 25
 y 21
-end
-arch creator
-x 25
-y 22
-connected 204
-lifesave 1
-activate_on_release 0
-end
-arch duplicator
-other_arch swamp
-x 25
-y 22
-level 0
-connected 3
-activate_on_release 0
-end
-arch creator
-x 25
-y 22
-connected 204
-lifesave 1
-activate_on_release 0
-arch swamp
-end
 end
 arch battleground
 hp 28
@@ -11053,45 +13313,14 @@ sp 37
 x 25
 y 23
 end
-arch creator
-x 25
-y 24
-connected 204
-lifesave 1
-activate_on_release 0
-end
-arch duplicator
-other_arch swamp
-x 25
-y 24
-level 0
-connected 3
-activate_on_release 0
-end
-arch creator
-x 25
-y 24
-connected 204
-lifesave 1
-activate_on_release 0
-arch swamp
-end
-end
 arch battleground
 hp 28
 sp 37
 x 25
 y 24
 end
-arch creator
-x 25
-y 25
-connected 204
-lifesave 1
-activate_on_release 0
-end
 arch duplicator
-other_arch swamp
+other_arch glue
 x 25
 y 25
 level 0
@@ -11101,10 +13330,25 @@ end
 arch creator
 x 25
 y 25
-connected 204
+connected 205
 lifesave 1
 activate_on_release 0
-arch swamp
+arch glue
+material 0
+end
+arch glue
+material 0
+end
+arch glue
+material 0
+end
+arch glue
+name spider web
+face spider_web.111
+animation spider_web
+move_slow_penalty 7
+anim_speed 20
+material 0
 end
 end
 arch battleground
@@ -11113,15 +13357,8 @@ sp 37
 x 25
 y 25
 end
-arch creator
-x 25
-y 26
-connected 204
-lifesave 1
-activate_on_release 0
-end
 arch duplicator
-other_arch swamp
+other_arch glue
 x 25
 y 26
 level 0
@@ -11131,10 +13368,25 @@ end
 arch creator
 x 25
 y 26
-connected 204
+connected 205
 lifesave 1
 activate_on_release 0
-arch swamp
+arch glue
+material 0
+end
+arch glue
+material 0
+end
+arch glue
+material 0
+end
+arch glue
+name spider web
+face spider_web.111
+animation spider_web
+move_slow_penalty 7
+anim_speed 20
+material 0
 end
 end
 arch battleground
@@ -11142,30 +13394,6 @@ hp 28
 sp 37
 x 25
 y 26
-end
-arch creator
-x 25
-y 27
-connected 204
-lifesave 1
-activate_on_release 0
-end
-arch duplicator
-other_arch swamp
-x 25
-y 27
-level 0
-connected 3
-activate_on_release 0
-end
-arch creator
-x 25
-y 27
-connected 204
-lifesave 1
-activate_on_release 0
-arch swamp
-end
 end
 arch battleground
 hp 28
@@ -11372,6 +13600,38 @@ arch slevel_3_1
 x 26
 y 6
 end
+arch duplicator
+other_arch glue
+x 26
+y 7
+level 0
+connected 3
+activate_on_release 0
+end
+arch creator
+x 26
+y 7
+connected 205
+lifesave 1
+activate_on_release 0
+arch glue
+material 0
+end
+arch glue
+material 0
+end
+arch glue
+material 0
+end
+arch glue
+name spider web
+face spider_web.111
+animation spider_web
+move_slow_penalty 7
+anim_speed 20
+material 0
+end
+end
 arch battleground
 hp 28
 sp 37
@@ -11421,6 +13681,38 @@ sp 37
 x 26
 y 10
 end
+arch duplicator
+other_arch glue
+x 26
+y 11
+level 0
+connected 3
+activate_on_release 0
+end
+arch creator
+x 26
+y 11
+connected 205
+lifesave 1
+activate_on_release 0
+arch glue
+material 0
+end
+arch glue
+material 0
+end
+arch glue
+material 0
+end
+arch glue
+name spider web
+face spider_web.111
+animation spider_web
+move_slow_penalty 7
+anim_speed 20
+material 0
+end
+end
 arch battleground
 hp 28
 sp 37
@@ -11444,6 +13736,38 @@ hp 28
 sp 37
 x 26
 y 14
+end
+arch duplicator
+other_arch glue
+x 26
+y 15
+level 0
+connected 3
+activate_on_release 0
+end
+arch creator
+x 26
+y 15
+connected 205
+lifesave 1
+activate_on_release 0
+arch glue
+material 0
+end
+arch glue
+material 0
+end
+arch glue
+material 0
+end
+arch glue
+name spider web
+face spider_web.111
+animation spider_web
+move_slow_penalty 7
+anim_speed 20
+material 0
+end
 end
 arch battleground
 hp 28
@@ -11478,7 +13802,7 @@ end
 arch creator
 x 26
 y 20
-connected 204
+connected 203
 lifesave 1
 activate_on_release 0
 end
@@ -11493,7 +13817,7 @@ end
 arch creator
 x 26
 y 20
-connected 204
+connected 203
 lifesave 1
 activate_on_release 0
 arch hedge_0
@@ -11515,41 +13839,81 @@ sp 37
 x 26
 y 21
 end
-arch battleground
-hp 28
-sp 37
+arch duplicator
+other_arch glue
 x 26
 y 22
-end
-arch creator
-x 26
-y 23
-connected 204
-lifesave 1
-activate_on_release 0
-end
-arch duplicator
-other_arch swamp
-x 26
-y 23
 level 0
 connected 3
 activate_on_release 0
 end
 arch creator
 x 26
-y 23
-connected 204
+y 22
+connected 205
 lifesave 1
 activate_on_release 0
-arch swamp
+arch glue
+material 0
+end
+arch glue
+material 0
+end
+arch glue
+material 0
+end
+arch glue
+name spider web
+face spider_web.111
+animation spider_web
+move_slow_penalty 7
+anim_speed 20
+material 0
 end
 end
 arch battleground
 hp 28
 sp 37
 x 26
+y 22
+end
+arch battleground
+hp 28
+sp 37
+x 26
 y 23
+end
+arch duplicator
+other_arch glue
+x 26
+y 24
+level 0
+connected 3
+activate_on_release 0
+end
+arch creator
+x 26
+y 24
+connected 205
+lifesave 1
+activate_on_release 0
+arch glue
+material 0
+end
+arch glue
+material 0
+end
+arch glue
+material 0
+end
+arch glue
+name spider web
+face spider_web.111
+animation spider_web
+move_slow_penalty 7
+anim_speed 20
+material 0
+end
 end
 arch battleground
 hp 28
@@ -11594,15 +13958,8 @@ sp 37
 x 26
 y 26
 end
-arch creator
-x 26
-y 27
-connected 204
-lifesave 1
-activate_on_release 0
-end
 arch duplicator
-other_arch swamp
+other_arch glue
 x 26
 y 27
 level 0
@@ -11612,10 +13969,25 @@ end
 arch creator
 x 26
 y 27
-connected 204
+connected 205
 lifesave 1
 activate_on_release 0
-arch swamp
+arch glue
+material 0
+end
+arch glue
+material 0
+end
+arch glue
+material 0
+end
+arch glue
+name spider web
+face spider_web.111
+animation spider_web
+move_slow_penalty 7
+anim_speed 20
+material 0
 end
 end
 arch battleground
@@ -11831,6 +14203,38 @@ sp 37
 x 27
 y 8
 end
+arch duplicator
+other_arch glue
+x 27
+y 9
+level 0
+connected 3
+activate_on_release 0
+end
+arch creator
+x 27
+y 9
+connected 205
+lifesave 1
+activate_on_release 0
+arch glue
+material 0
+end
+arch glue
+material 0
+end
+arch glue
+material 0
+end
+arch glue
+name spider web
+face spider_web.111
+animation spider_web
+move_slow_penalty 7
+anim_speed 20
+material 0
+end
+end
 arch battleground
 hp 28
 sp 37
@@ -11854,6 +14258,38 @@ hp 28
 sp 37
 x 27
 y 12
+end
+arch duplicator
+other_arch glue
+x 27
+y 13
+level 0
+connected 3
+activate_on_release 0
+end
+arch creator
+x 27
+y 13
+connected 205
+lifesave 1
+activate_on_release 0
+arch glue
+material 0
+end
+arch glue
+material 0
+end
+arch glue
+material 0
+end
+arch glue
+name spider web
+face spider_web.111
+animation spider_web
+move_slow_penalty 7
+anim_speed 20
+material 0
+end
 end
 arch battleground
 hp 28
@@ -11955,89 +14391,17 @@ arch slevel_2_2_1
 x 27
 y 20
 end
-arch creator
-x 27
-y 21
-connected 204
-lifesave 1
-activate_on_release 0
-end
-arch duplicator
-other_arch swamp
-x 27
-y 21
-level 0
-connected 3
-activate_on_release 0
-end
-arch creator
-x 27
-y 21
-connected 204
-lifesave 1
-activate_on_release 0
-arch swamp
-end
-end
 arch battleground
 hp 28
 sp 37
 x 27
 y 21
 end
-arch creator
-x 27
-y 22
-connected 204
-lifesave 1
-activate_on_release 0
-end
-arch duplicator
-other_arch swamp
-x 27
-y 22
-level 0
-connected 3
-activate_on_release 0
-end
-arch creator
-x 27
-y 22
-connected 204
-lifesave 1
-activate_on_release 0
-arch swamp
-end
-end
 arch battleground
 hp 28
 sp 37
 x 27
 y 22
-end
-arch creator
-x 27
-y 23
-connected 204
-lifesave 1
-activate_on_release 0
-end
-arch duplicator
-other_arch swamp
-x 27
-y 23
-level 0
-connected 3
-activate_on_release 0
-end
-arch creator
-x 27
-y 23
-connected 204
-lifesave 1
-activate_on_release 0
-arch swamp
-end
 end
 arch battleground
 hp 28
@@ -12051,15 +14415,8 @@ sp 37
 x 27
 y 24
 end
-arch creator
-x 27
-y 25
-connected 204
-lifesave 1
-activate_on_release 0
-end
 arch duplicator
-other_arch swamp
+other_arch glue
 x 27
 y 25
 level 0
@@ -12069,10 +14426,25 @@ end
 arch creator
 x 27
 y 25
-connected 204
+connected 205
 lifesave 1
 activate_on_release 0
-arch swamp
+arch glue
+material 0
+end
+arch glue
+material 0
+end
+arch glue
+material 0
+end
+arch glue
+name spider web
+face spider_web.111
+animation spider_web
+move_slow_penalty 7
+anim_speed 20
+material 0
 end
 end
 arch battleground
@@ -12081,59 +14453,11 @@ sp 37
 x 27
 y 25
 end
-arch creator
-x 27
-y 26
-connected 204
-lifesave 1
-activate_on_release 0
-end
-arch duplicator
-other_arch swamp
-x 27
-y 26
-level 0
-connected 3
-activate_on_release 0
-end
-arch creator
-x 27
-y 26
-connected 204
-lifesave 1
-activate_on_release 0
-arch swamp
-end
-end
 arch battleground
 hp 28
 sp 37
 x 27
 y 26
-end
-arch creator
-x 27
-y 27
-connected 204
-lifesave 1
-activate_on_release 0
-end
-arch duplicator
-other_arch swamp
-x 27
-y 27
-level 0
-connected 3
-activate_on_release 0
-end
-arch creator
-x 27
-y 27
-connected 204
-lifesave 1
-activate_on_release 0
-arch swamp
-end
 end
 arch battleground
 hp 28
@@ -14012,37 +16336,40 @@ arch blocked
 x 31
 y 35
 end
-arch lightningwall_5
+arch lightningwall_3
 x 31
 y 36
 speed 1.000000
 arch spell_sm_lightning
 end
 end
-arch igate_closed_1
-name 6
+arch lightningwall_3
 x 31
 y 37
-speed 0.500000
-connected 6
+speed 1.000000
+arch spell_sm_lightning
 end
-arch igate_closed_1
-name 101
+end
+arch lightningwall_3
 x 31
 y 38
-speed 0.500000
-connected 101
+speed 1.000000
+arch spell_sm_lightning
 end
-arch detector
-name 201 - add statues
-slaying lightning
+end
+arch lightningwall_3
 x 31
 y 39
-connected 201
+speed 1.000000
+arch spell_sm_lightning
 end
-arch blocked
+end
+arch lightningwall_3
 x 31
 y 40
+speed 1.000000
+arch spell_sm_lightning
+end
 end
 arch blocked
 x 31
@@ -14481,37 +16808,35 @@ arch blocked
 x 32
 y 35
 end
-arch lightningwall_5
+arch igate_closed_2
+name 6
 x 32
 y 36
-speed 1.000000
-arch spell_sm_lightning
+connected 6
 end
-end
-arch igate_closed_1
+arch igate_closed_2
 name 6
 x 32
 y 37
-speed 0.500000
 connected 6
 end
-arch igate_closed_1
-name 102
+arch igate_closed_2
+name 6
 x 32
 y 38
-speed 0.500000
-connected 102
+connected 6
 end
-arch detector
-name 202 - add fences
-slaying lightning
+arch igate_closed_2
+name 6
 x 32
 y 39
-connected 202
+connected 6
 end
-arch blocked
+arch igate_closed_2
+name 6
 x 32
 y 40
+connected 6
 end
 arch blocked
 x 32
@@ -14847,37 +17172,35 @@ arch blocked
 x 33
 y 35
 end
-arch lightningwall_5
+arch igate_closed_2
+name 101
 x 33
 y 36
-speed 1.000000
-arch spell_sm_lightning
+connected 101
 end
-end
-arch igate_closed_1
-name 6
+arch igate_closed_2
+name 102
 x 33
 y 37
-speed 0.500000
-connected 6
+connected 102
 end
-arch igate_closed_1
+arch igate_closed_2
 name 103
 x 33
 y 38
-speed 0.500000
 connected 103
 end
-arch detector
-name 203 - add tunnel
-slaying lightning
+arch igate_closed_2
+name 104
 x 33
 y 39
-connected 203
+connected 104
 end
-arch blocked
+arch igate_closed_2
+name 105
 x 33
 y 40
+connected 105
 end
 arch blocked
 x 33
@@ -15199,37 +17522,40 @@ arch blocked
 x 34
 y 35
 end
-arch lightningwall_5
+arch detector
+name 201 - add statues
+slaying lightning
 x 34
 y 36
-speed 1.000000
-arch spell_sm_lightning
-end
-end
-arch igate_closed_1
-name 6
-x 34
-y 37
-speed 0.500000
-connected 6
-end
-arch igate_closed_1
-name 104
-x 34
-y 38
-speed 0.500000
-connected 104
+connected 201
 end
 arch detector
-name 204 - add swamp
+name 202 - add fences
+slaying lightning
+x 34
+y 37
+connected 202
+end
+arch detector
+name 203 - add archways
+slaying lightning
+x 34
+y 38
+connected 203
+end
+arch detector
+name 204 - add tunnel
 slaying lightning
 x 34
 y 39
 connected 204
 end
-arch blocked
+arch detector
+name 205 - add glue
+slaying lightning
 x 34
 y 40
+connected 205
 end
 arch blocked
 x 34
