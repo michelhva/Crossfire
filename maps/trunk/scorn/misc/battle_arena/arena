@@ -8,6 +8,7 @@ height 45
 msg
 Created:  2000-11-08 Andreas Vogl (red.blaze@gmx.net)
 Modified: 2007-11-04 Andreas Kirschbaum
+Modified: 2008-07-24 Raphael Quinet
 endmsg
 end
 arch cobblestones2
@@ -3315,6 +3316,31 @@ sp 37
 x 8
 y 7
 end
+arch creator
+x 8
+y 8
+connected 201
+lifesave 1
+activate_on_release 0
+end
+arch duplicator
+other_arch statue2
+x 8
+y 8
+level 0
+connected 3
+activate_on_release 0
+end
+arch creator
+x 8
+y 8
+connected 201
+lifesave 1
+activate_on_release 0
+arch statue2
+name statue of a gladiator
+end
+end
 arch battleground
 hp 28
 sp 37
@@ -3422,6 +3448,31 @@ hp 28
 sp 37
 x 8
 y 25
+end
+arch creator
+x 8
+y 26
+connected 201
+lifesave 1
+activate_on_release 0
+end
+arch duplicator
+other_arch statue2
+x 8
+y 26
+level 0
+connected 3
+activate_on_release 0
+end
+arch creator
+x 8
+y 26
+connected 201
+lifesave 1
+activate_on_release 0
+arch statue2
+name statue of a gladiator
+end
 end
 arch battleground
 hp 28
@@ -3546,49 +3597,25 @@ speed 1.000000
 arch spell_sm_lightning
 end
 end
-arch flagstone
-x 8
-y 39
-end
 arch blocked
 x 8
 y 39
 end
-arch flagstone
+arch blocked
 x 8
 y 40
 end
 arch blocked
 x 8
-y 40
-end
-arch flagstone
-x 8
 y 41
 end
 arch blocked
-x 8
-y 41
-end
-arch flagstone
 x 8
 y 42
 end
 arch blocked
 x 8
-y 42
-end
-arch flagstone
-x 8
 y 43
-end
-arch blocked
-x 8
-y 43
-end
-arch flagstone
-x 8
-y 44
 end
 arch blocked
 x 8
@@ -3900,73 +3927,37 @@ arch blocked
 x 9
 y 35
 end
-arch flagstone
-x 9
-y 36
-end
 arch blocked
 x 9
 y 36
 end
-arch flagstone
+arch blocked
 x 9
 y 37
 end
 arch blocked
 x 9
-y 37
-end
-arch flagstone
-x 9
 y 38
 end
 arch blocked
-x 9
-y 38
-end
-arch flagstone
 x 9
 y 39
 end
 arch blocked
 x 9
-y 39
-end
-arch flagstone
-x 9
 y 40
 end
 arch blocked
-x 9
-y 40
-end
-arch flagstone
 x 9
 y 41
 end
 arch blocked
 x 9
-y 41
-end
-arch flagstone
-x 9
 y 42
 end
 arch blocked
 x 9
-y 42
-end
-arch flagstone
-x 9
 y 43
-end
-arch blocked
-x 9
-y 43
-end
-arch flagstone
-x 9
-y 44
 end
 arch blocked
 x 9
@@ -4018,10 +4009,10 @@ Gni hi hi... Mostrai rules!
 endmsg
 x 10
 y 3
+run_away 0
 pick_up 0
 will_apply 0
 friendly 1
-run_away 0
 random_movement 0
 end
 arch dungeon_magic
@@ -4600,21 +4591,53 @@ arch flagstone
 x 11
 y 38
 end
+arch sign
+msg
+Use these handles to add obstacles of your choice to the arena.
+You have to agree with your opponent on the selection of obstacles.
+endmsg
+x 11
+y 38
+end
 arch flagstone
 x 11
 y 39
+end
+arch button_handle
+name statues <yes | no>
+x 11
+y 39
+connected 101
 end
 arch flagstone
 x 11
 y 40
 end
+arch button_handle
+name fences <yes | no>
+x 11
+y 40
+connected 102
+end
 arch flagstone
 x 11
 y 41
 end
+arch button_handle
+name tunnel <yes | no>
+x 11
+y 41
+connected 103
+end
 arch flagstone
 x 11
 y 42
+end
+arch button_handle
+name swamp <yes | no>
+x 11
+y 42
+connected 104
 end
 arch flagstone
 x 11
@@ -4773,6 +4796,31 @@ hp 28
 sp 37
 x 12
 y 16
+end
+arch creator
+x 12
+y 17
+connected 201
+lifesave 1
+activate_on_release 0
+end
+arch duplicator
+other_arch statue
+x 12
+y 17
+level 0
+connected 3
+activate_on_release 0
+end
+arch creator
+x 12
+y 17
+connected 201
+lifesave 1
+activate_on_release 0
+arch statue
+name statue of a gladiator
+end
 end
 arch battleground
 hp 28
@@ -5203,11 +5251,59 @@ arch slevel_3_1
 x 13
 y 22
 end
+arch creator
+x 13
+y 23
+connected 202
+lifesave 1
+activate_on_release 0
+end
+arch duplicator
+other_arch swall_2_1_1
+x 13
+y 23
+level 0
+connected 3
+activate_on_release 0
+end
+arch creator
+x 13
+y 23
+connected 202
+lifesave 1
+activate_on_release 0
+arch swall_2_1_1
+end
+end
 arch battleground
 hp 28
 sp 37
 x 13
 y 23
+end
+arch creator
+x 13
+y 24
+connected 202
+lifesave 1
+activate_on_release 0
+end
+arch duplicator
+other_arch swall_2_1_1
+x 13
+y 24
+level 0
+connected 3
+activate_on_release 0
+end
+arch creator
+x 13
+y 24
+connected 202
+lifesave 1
+activate_on_release 0
+arch swall_2_1_1
+end
 end
 arch battleground
 hp 28
@@ -5215,11 +5311,59 @@ sp 37
 x 13
 y 24
 end
+arch creator
+x 13
+y 25
+connected 202
+lifesave 1
+activate_on_release 0
+end
+arch duplicator
+other_arch swall_2_1_1
+x 13
+y 25
+level 0
+connected 3
+activate_on_release 0
+end
+arch creator
+x 13
+y 25
+connected 202
+lifesave 1
+activate_on_release 0
+arch swall_2_1_1
+end
+end
 arch battleground
 hp 28
 sp 37
 x 13
 y 25
+end
+arch creator
+x 13
+y 26
+connected 202
+lifesave 1
+activate_on_release 0
+end
+arch duplicator
+other_arch swall_2_1_1
+x 13
+y 26
+level 0
+connected 3
+activate_on_release 0
+end
+arch creator
+x 13
+y 26
+connected 202
+lifesave 1
+activate_on_release 0
+arch swall_2_1_1
+end
 end
 arch battleground
 hp 28
@@ -5572,6 +5716,34 @@ sp 37
 x 14
 y 25
 end
+arch creator
+x 14
+y 26
+connected 203
+lifesave 1
+activate_on_release 0
+end
+arch duplicator
+other_arch phole_1
+x 14
+y 26
+level 0
+connected 3
+activate_on_release 0
+end
+arch creator
+x 14
+y 26
+connected 203
+lifesave 1
+activate_on_release 0
+arch phole_1
+name escape tunnel
+slaying arena
+hp 19
+sp 9
+end
+end
 arch battleground
 hp 28
 sp 37
@@ -5855,6 +6027,30 @@ sp 37
 x 15
 y 13
 end
+arch creator
+x 15
+y 14
+connected 202
+lifesave 1
+activate_on_release 0
+end
+arch duplicator
+other_arch swall_2_1_2
+x 15
+y 14
+level 0
+connected 3
+activate_on_release 0
+end
+arch creator
+x 15
+y 14
+connected 202
+lifesave 1
+activate_on_release 0
+arch swall_2_1_2
+end
+end
 arch battleground
 hp 28
 sp 37
@@ -5890,6 +6086,32 @@ hp 28
 sp 37
 x 15
 y 19
+end
+arch creator
+x 15
+y 20
+connected 204
+lifesave 1
+activate_on_release 0
+end
+arch duplicator
+other_arch hedge_1_3
+x 15
+y 20
+level 0
+connected 3
+activate_on_release 0
+end
+arch creator
+x 15
+y 20
+connected 204
+lifesave 1
+activate_on_release 0
+arch hedge_1_3
+move_slow all
+move_slow_penalty 1
+end
 end
 arch battleground
 hp 28
@@ -6240,6 +6462,30 @@ sp 37
 x 16
 y 13
 end
+arch creator
+x 16
+y 14
+connected 202
+lifesave 1
+activate_on_release 0
+end
+arch duplicator
+other_arch swall_2_1_2
+x 16
+y 14
+level 0
+connected 3
+activate_on_release 0
+end
+arch creator
+x 16
+y 14
+connected 202
+lifesave 1
+activate_on_release 0
+arch swall_2_1_2
+end
+end
 arch battleground
 hp 28
 sp 37
@@ -6275,6 +6521,34 @@ hp 28
 sp 37
 x 16
 y 19
+end
+arch creator
+x 16
+y 20
+connected 204
+lifesave 1
+activate_on_release 0
+end
+arch duplicator
+other_arch hedge_0
+x 16
+y 20
+level 0
+connected 3
+activate_on_release 0
+end
+arch creator
+x 16
+y 20
+connected 204
+lifesave 1
+activate_on_release 0
+arch hedge_0
+name archway made of tree
+face archtree.111
+move_block fly_low
+blocksview 0
+end
 end
 arch battleground
 hp 28
@@ -6648,17 +6922,101 @@ sp 37
 x 17
 y 11
 end
+arch swall_2_2_2
+x 17
+y 12
+end
+arch creator
+x 17
+y 12
+connected 202
+lifesave 1
+activate_on_release 0
+end
+arch duplicator
+other_arch swall_2_2_2
+x 17
+y 12
+level 0
+connected 3
+activate_on_release 0
+end
+arch creator
+x 17
+y 12
+connected 202
+lifesave 1
+activate_on_release 0
+arch swall_2_2_2
+end
+end
 arch battleground
 hp 28
 sp 37
 x 17
 y 12
 end
+arch swall_2_1_1
+x 17
+y 13
+end
+arch creator
+x 17
+y 13
+connected 202
+lifesave 1
+activate_on_release 0
+end
+arch duplicator
+other_arch swall_2_1_1
+x 17
+y 13
+level 0
+connected 3
+activate_on_release 0
+end
+arch creator
+x 17
+y 13
+connected 202
+lifesave 1
+activate_on_release 0
+arch swall_2_1_1
+end
+end
 arch battleground
 hp 28
 sp 37
 x 17
 y 13
+end
+arch swall_2_2_4
+x 17
+y 14
+end
+arch creator
+x 17
+y 14
+connected 202
+lifesave 1
+activate_on_release 0
+end
+arch duplicator
+other_arch swall_2_2_4
+x 17
+y 14
+level 0
+connected 3
+activate_on_release 0
+end
+arch creator
+x 17
+y 14
+connected 202
+lifesave 1
+activate_on_release 0
+arch swall_2_2_4
+end
 end
 arch battleground
 hp 28
@@ -6695,6 +7053,34 @@ hp 28
 sp 37
 x 17
 y 19
+end
+arch creator
+x 17
+y 20
+connected 204
+lifesave 1
+activate_on_release 0
+end
+arch duplicator
+other_arch hedge_0
+x 17
+y 20
+level 0
+connected 3
+activate_on_release 0
+end
+arch creator
+x 17
+y 20
+connected 204
+lifesave 1
+activate_on_release 0
+arch hedge_0
+name archway made of tree
+face archtree.111
+move_block fly_low
+blocksview 0
+end
 end
 arch battleground
 hp 28
@@ -7055,6 +7441,30 @@ sp 37
 x 18
 y 11
 end
+arch creator
+x 18
+y 12
+connected 202
+lifesave 1
+activate_on_release 0
+end
+arch duplicator
+other_arch swall_2_1_2
+x 18
+y 12
+level 0
+connected 3
+activate_on_release 0
+end
+arch creator
+x 18
+y 12
+connected 202
+lifesave 1
+activate_on_release 0
+arch swall_2_1_2
+end
+end
 arch battleground
 hp 28
 sp 37
@@ -7102,6 +7512,34 @@ hp 28
 sp 37
 x 18
 y 19
+end
+arch creator
+x 18
+y 20
+connected 204
+lifesave 1
+activate_on_release 0
+end
+arch duplicator
+other_arch hedge_0
+x 18
+y 20
+level 0
+connected 3
+activate_on_release 0
+end
+arch creator
+x 18
+y 20
+connected 204
+lifesave 1
+activate_on_release 0
+arch hedge_0
+name archway made of tree
+face archtree.111
+move_block fly_low
+blocksview 0
+end
 end
 arch battleground
 hp 28
@@ -7451,6 +7889,34 @@ sp 37
 x 19
 y 8
 end
+arch creator
+x 19
+y 9
+connected 203
+lifesave 1
+activate_on_release 0
+end
+arch duplicator
+other_arch phole_1
+x 19
+y 9
+level 0
+connected 3
+activate_on_release 0
+end
+arch creator
+x 19
+y 9
+connected 203
+lifesave 1
+activate_on_release 0
+arch phole_1
+name escape tunnel
+slaying arena
+hp 14
+sp 26
+end
+end
 arch battleground
 hp 28
 sp 37
@@ -7468,6 +7934,30 @@ hp 28
 sp 37
 x 19
 y 11
+end
+arch creator
+x 19
+y 12
+connected 202
+lifesave 1
+activate_on_release 0
+end
+arch duplicator
+other_arch swall_2_1_2
+x 19
+y 12
+level 0
+connected 3
+activate_on_release 0
+end
+arch creator
+x 19
+y 12
+connected 202
+lifesave 1
+activate_on_release 0
+arch swall_2_1_2
+end
 end
 arch battleground
 hp 28
@@ -7516,6 +8006,32 @@ hp 28
 sp 37
 x 19
 y 19
+end
+arch creator
+x 19
+y 20
+connected 204
+lifesave 1
+activate_on_release 0
+end
+arch duplicator
+other_arch hedge_1_4
+x 19
+y 20
+level 0
+connected 3
+activate_on_release 0
+end
+arch creator
+x 19
+y 20
+connected 204
+lifesave 1
+activate_on_release 0
+arch hedge_1_4
+move_slow all
+move_slow_penalty 1
+end
 end
 arch battleground
 hp 28
@@ -7885,6 +8401,31 @@ sp 37
 x 20
 y 15
 end
+arch creator
+x 20
+y 16
+connected 201
+lifesave 1
+activate_on_release 0
+end
+arch duplicator
+other_arch statue
+x 20
+y 16
+level 0
+connected 3
+activate_on_release 0
+end
+arch creator
+x 20
+y 16
+connected 201
+lifesave 1
+activate_on_release 0
+arch statue
+name statue of a gladiator
+end
+end
 arch battleground
 hp 28
 sp 37
@@ -7902,6 +8443,30 @@ hp 28
 sp 37
 x 20
 y 18
+end
+arch creator
+x 20
+y 19
+connected 201
+lifesave 1
+activate_on_release 0
+end
+arch duplicator
+other_arch cwall_1_1
+x 20
+y 19
+level 0
+connected 3
+activate_on_release 0
+end
+arch creator
+x 20
+y 19
+connected 201
+lifesave 1
+activate_on_release 0
+arch cwall_1_1
+end
 end
 arch battleground
 hp 28
@@ -7945,11 +8510,63 @@ arch slevel_2_2_1
 x 20
 y 22
 end
+arch creator
+x 20
+y 23
+connected 204
+lifesave 1
+activate_on_release 0
+end
+arch duplicator
+other_arch hedge_2_1_1
+x 20
+y 23
+level 0
+connected 3
+activate_on_release 0
+end
+arch creator
+x 20
+y 23
+connected 204
+lifesave 1
+activate_on_release 0
+arch hedge_2_1_1
+move_slow all
+move_slow_penalty 1
+end
+end
 arch battleground
 hp 28
 sp 37
 x 20
 y 23
+end
+arch creator
+x 20
+y 24
+connected 204
+lifesave 1
+activate_on_release 0
+end
+arch duplicator
+other_arch hedge_2_1_1
+x 20
+y 24
+level 0
+connected 3
+activate_on_release 0
+end
+arch creator
+x 20
+y 24
+connected 204
+lifesave 1
+activate_on_release 0
+arch hedge_2_1_1
+move_slow all
+move_slow_penalty 1
+end
 end
 arch battleground
 hp 28
@@ -7957,11 +8574,63 @@ sp 37
 x 20
 y 24
 end
+arch creator
+x 20
+y 25
+connected 204
+lifesave 1
+activate_on_release 0
+end
+arch duplicator
+other_arch hedge_2_1_1
+x 20
+y 25
+level 0
+connected 3
+activate_on_release 0
+end
+arch creator
+x 20
+y 25
+connected 204
+lifesave 1
+activate_on_release 0
+arch hedge_2_1_1
+move_slow all
+move_slow_penalty 1
+end
+end
 arch battleground
 hp 28
 sp 37
 x 20
 y 25
+end
+arch creator
+x 20
+y 26
+connected 204
+lifesave 1
+activate_on_release 0
+end
+arch duplicator
+other_arch hedge_2_1_1
+x 20
+y 26
+level 0
+connected 3
+activate_on_release 0
+end
+arch creator
+x 20
+y 26
+connected 204
+lifesave 1
+activate_on_release 0
+arch hedge_2_1_1
+move_slow all
+move_slow_penalty 1
+end
 end
 arch battleground
 hp 28
@@ -8223,11 +8892,59 @@ arch slevel_3_1
 x 21
 y 7
 end
+arch creator
+x 21
+y 8
+connected 202
+lifesave 1
+activate_on_release 0
+end
+arch duplicator
+other_arch swall_2_1_1
+x 21
+y 8
+level 0
+connected 3
+activate_on_release 0
+end
+arch creator
+x 21
+y 8
+connected 202
+lifesave 1
+activate_on_release 0
+arch swall_2_1_1
+end
+end
 arch battleground
 hp 28
 sp 37
 x 21
 y 8
+end
+arch creator
+x 21
+y 9
+connected 202
+lifesave 1
+activate_on_release 0
+end
+arch duplicator
+other_arch swall_2_1_1
+x 21
+y 9
+level 0
+connected 3
+activate_on_release 0
+end
+arch creator
+x 21
+y 9
+connected 202
+lifesave 1
+activate_on_release 0
+arch swall_2_1_1
+end
 end
 arch battleground
 hp 28
@@ -8235,11 +8952,59 @@ sp 37
 x 21
 y 9
 end
+arch creator
+x 21
+y 10
+connected 202
+lifesave 1
+activate_on_release 0
+end
+arch duplicator
+other_arch swall_2_1_1
+x 21
+y 10
+level 0
+connected 3
+activate_on_release 0
+end
+arch creator
+x 21
+y 10
+connected 202
+lifesave 1
+activate_on_release 0
+arch swall_2_1_1
+end
+end
 arch battleground
 hp 28
 sp 37
 x 21
 y 10
+end
+arch creator
+x 21
+y 11
+connected 202
+lifesave 1
+activate_on_release 0
+end
+arch duplicator
+other_arch swall_2_1_1
+x 21
+y 11
+level 0
+connected 3
+activate_on_release 0
+end
+arch creator
+x 21
+y 11
+connected 202
+lifesave 1
+activate_on_release 0
+arch swall_2_1_1
+end
 end
 arch battleground
 hp 28
@@ -8298,6 +9063,31 @@ hp 28
 sp 37
 x 21
 y 16
+end
+arch creator
+x 21
+y 17
+connected 201
+lifesave 1
+activate_on_release 0
+end
+arch duplicator
+other_arch statue
+x 21
+y 17
+level 0
+connected 3
+activate_on_release 0
+end
+arch creator
+x 21
+y 17
+connected 201
+lifesave 1
+activate_on_release 0
+arch statue
+name statue of a gladiator
+end
 end
 arch battleground
 hp 28
@@ -8369,11 +9159,59 @@ sp 37
 x 21
 y 24
 end
+arch creator
+x 21
+y 25
+connected 204
+lifesave 1
+activate_on_release 0
+end
+arch duplicator
+other_arch swamp
+x 21
+y 25
+level 0
+connected 3
+activate_on_release 0
+end
+arch creator
+x 21
+y 25
+connected 204
+lifesave 1
+activate_on_release 0
+arch swamp
+end
+end
 arch battleground
 hp 28
 sp 37
 x 21
 y 25
+end
+arch creator
+x 21
+y 26
+connected 204
+lifesave 1
+activate_on_release 0
+end
+arch duplicator
+other_arch swamp
+x 21
+y 26
+level 0
+connected 3
+activate_on_release 0
+end
+arch creator
+x 21
+y 26
+connected 204
+lifesave 1
+activate_on_release 0
+arch swamp
+end
 end
 arch battleground
 hp 28
@@ -8654,6 +9492,30 @@ arch slevel_2_2_4
 x 22
 y 14
 end
+arch creator
+x 22
+y 15
+connected 201
+lifesave 1
+activate_on_release 0
+end
+arch duplicator
+other_arch cwall_1_2
+x 22
+y 15
+level 0
+connected 3
+activate_on_release 0
+end
+arch creator
+x 22
+y 15
+connected 201
+lifesave 1
+activate_on_release 0
+arch cwall_1_2
+end
+end
 arch battleground
 hp 28
 sp 37
@@ -8671,6 +9533,31 @@ hp 28
 sp 37
 x 22
 y 17
+end
+arch creator
+x 22
+y 18
+connected 201
+lifesave 1
+activate_on_release 0
+end
+arch duplicator
+other_arch statue
+x 22
+y 18
+level 0
+connected 3
+activate_on_release 0
+end
+arch creator
+x 22
+y 18
+connected 201
+lifesave 1
+activate_on_release 0
+arch statue
+name statue of a gladiator
+end
 end
 arch battleground
 hp 28
@@ -8720,6 +9607,30 @@ arch slevel_2_2_4
 x 22
 y 22
 end
+arch creator
+x 22
+y 23
+connected 204
+lifesave 1
+activate_on_release 0
+end
+arch duplicator
+other_arch swamp
+x 22
+y 23
+level 0
+connected 3
+activate_on_release 0
+end
+arch creator
+x 22
+y 23
+connected 204
+lifesave 1
+activate_on_release 0
+arch swamp
+end
+end
 arch battleground
 hp 28
 sp 37
@@ -8731,6 +9642,30 @@ hp 28
 sp 37
 x 22
 y 24
+end
+arch creator
+x 22
+y 25
+connected 204
+lifesave 1
+activate_on_release 0
+end
+arch duplicator
+other_arch swamp
+x 22
+y 25
+level 0
+connected 3
+activate_on_release 0
+end
+arch creator
+x 22
+y 25
+connected 204
+lifesave 1
+activate_on_release 0
+arch swamp
+end
 end
 arch battleground
 hp 28
@@ -9041,11 +9976,63 @@ sp 37
 x 23
 y 19
 end
+arch creator
+x 23
+y 20
+connected 204
+lifesave 1
+activate_on_release 0
+end
+arch duplicator
+other_arch hedge_0
+x 23
+y 20
+level 0
+connected 3
+activate_on_release 0
+end
+arch creator
+x 23
+y 20
+connected 204
+lifesave 1
+activate_on_release 0
+arch hedge_0
+name archway made of tree
+face archtree.111
+move_block fly_low
+blocksview 0
+end
+end
 arch battleground
 hp 28
 sp 37
 x 23
 y 20
+end
+arch creator
+x 23
+y 21
+connected 204
+lifesave 1
+activate_on_release 0
+end
+arch duplicator
+other_arch swamp
+x 23
+y 21
+level 0
+connected 3
+activate_on_release 0
+end
+arch creator
+x 23
+y 21
+connected 204
+lifesave 1
+activate_on_release 0
+arch swamp
+end
 end
 arch battleground
 hp 28
@@ -9053,11 +10040,59 @@ sp 37
 x 23
 y 21
 end
+arch creator
+x 23
+y 22
+connected 204
+lifesave 1
+activate_on_release 0
+end
+arch duplicator
+other_arch swamp
+x 23
+y 22
+level 0
+connected 3
+activate_on_release 0
+end
+arch creator
+x 23
+y 22
+connected 204
+lifesave 1
+activate_on_release 0
+arch swamp
+end
+end
 arch battleground
 hp 28
 sp 37
 x 23
 y 22
+end
+arch creator
+x 23
+y 23
+connected 204
+lifesave 1
+activate_on_release 0
+end
+arch duplicator
+other_arch swamp
+x 23
+y 23
+level 0
+connected 3
+activate_on_release 0
+end
+arch creator
+x 23
+y 23
+connected 204
+lifesave 1
+activate_on_release 0
+arch swamp
+end
 end
 arch battleground
 hp 28
@@ -9065,11 +10100,59 @@ sp 37
 x 23
 y 23
 end
+arch creator
+x 23
+y 24
+connected 204
+lifesave 1
+activate_on_release 0
+end
+arch duplicator
+other_arch swamp
+x 23
+y 24
+level 0
+connected 3
+activate_on_release 0
+end
+arch creator
+x 23
+y 24
+connected 204
+lifesave 1
+activate_on_release 0
+arch swamp
+end
+end
 arch battleground
 hp 28
 sp 37
 x 23
 y 24
+end
+arch creator
+x 23
+y 25
+connected 204
+lifesave 1
+activate_on_release 0
+end
+arch duplicator
+other_arch swamp
+x 23
+y 25
+level 0
+connected 3
+activate_on_release 0
+end
+arch creator
+x 23
+y 25
+connected 204
+lifesave 1
+activate_on_release 0
+arch swamp
+end
 end
 arch battleground
 hp 28
@@ -9082,6 +10165,30 @@ hp 28
 sp 37
 x 23
 y 26
+end
+arch creator
+x 23
+y 27
+connected 204
+lifesave 1
+activate_on_release 0
+end
+arch duplicator
+other_arch swamp
+x 23
+y 27
+level 0
+connected 3
+activate_on_release 0
+end
+arch creator
+x 23
+y 27
+connected 204
+lifesave 1
+activate_on_release 0
+arch swamp
+end
 end
 arch battleground
 hp 28
@@ -9181,21 +10288,53 @@ arch flagstone
 x 23
 y 38
 end
+arch sign
+msg
+Use these handles to add obstacles of your choice to the arena.
+You have to agree with your opponent on the selection of obstacles.
+endmsg
+x 23
+y 38
+end
 arch flagstone
 x 23
 y 39
+end
+arch button_handle
+name statues <yes | no>
+x 23
+y 39
+connected 101
 end
 arch flagstone
 x 23
 y 40
 end
+arch button_handle
+name fences <yes | no>
+x 23
+y 40
+connected 102
+end
 arch flagstone
 x 23
 y 41
 end
+arch button_handle
+name tunnel <yes | no>
+x 23
+y 41
+connected 103
+end
 arch flagstone
 x 23
 y 42
+end
+arch button_handle
+name swamp <yes | no>
+x 23
+y 42
+connected 104
 end
 arch flagstone
 x 23
@@ -9353,11 +10492,63 @@ sp 37
 x 24
 y 19
 end
+arch creator
+x 24
+y 20
+connected 204
+lifesave 1
+activate_on_release 0
+end
+arch duplicator
+other_arch hedge_0
+x 24
+y 20
+level 0
+connected 3
+activate_on_release 0
+end
+arch creator
+x 24
+y 20
+connected 204
+lifesave 1
+activate_on_release 0
+arch hedge_0
+name archway made of tree
+face archtree.111
+move_block fly_low
+blocksview 0
+end
+end
 arch battleground
 hp 28
 sp 37
 x 24
 y 20
+end
+arch creator
+x 24
+y 21
+connected 204
+lifesave 1
+activate_on_release 0
+end
+arch duplicator
+other_arch swamp
+x 24
+y 21
+level 0
+connected 3
+activate_on_release 0
+end
+arch creator
+x 24
+y 21
+connected 204
+lifesave 1
+activate_on_release 0
+arch swamp
+end
 end
 arch battleground
 hp 28
@@ -9377,6 +10568,30 @@ sp 37
 x 24
 y 23
 end
+arch creator
+x 24
+y 24
+connected 204
+lifesave 1
+activate_on_release 0
+end
+arch duplicator
+other_arch swamp
+x 24
+y 24
+level 0
+connected 3
+activate_on_release 0
+end
+arch creator
+x 24
+y 24
+connected 204
+lifesave 1
+activate_on_release 0
+arch swamp
+end
+end
 arch battleground
 hp 28
 sp 37
@@ -9394,6 +10609,30 @@ hp 28
 sp 37
 x 24
 y 26
+end
+arch creator
+x 24
+y 27
+connected 204
+lifesave 1
+activate_on_release 0
+end
+arch duplicator
+other_arch swamp
+x 24
+y 27
+level 0
+connected 3
+activate_on_release 0
+end
+arch creator
+x 24
+y 27
+connected 204
+lifesave 1
+activate_on_release 0
+arch swamp
+end
 end
 arch battleground
 hp 28
@@ -9714,17 +10953,93 @@ sp 37
 x 25
 y 19
 end
+arch creator
+x 25
+y 20
+connected 204
+lifesave 1
+activate_on_release 0
+end
+arch duplicator
+other_arch hedge_0
+x 25
+y 20
+level 0
+connected 3
+activate_on_release 0
+end
+arch creator
+x 25
+y 20
+connected 204
+lifesave 1
+activate_on_release 0
+arch hedge_0
+name archway made of tree
+face archtree.111
+move_block fly_low
+blocksview 0
+end
+end
 arch battleground
 hp 28
 sp 37
 x 25
 y 20
 end
+arch creator
+x 25
+y 21
+connected 204
+lifesave 1
+activate_on_release 0
+end
+arch duplicator
+other_arch swamp
+x 25
+y 21
+level 0
+connected 3
+activate_on_release 0
+end
+arch creator
+x 25
+y 21
+connected 204
+lifesave 1
+activate_on_release 0
+arch swamp
+end
+end
 arch battleground
 hp 28
 sp 37
 x 25
 y 21
+end
+arch creator
+x 25
+y 22
+connected 204
+lifesave 1
+activate_on_release 0
+end
+arch duplicator
+other_arch swamp
+x 25
+y 22
+level 0
+connected 3
+activate_on_release 0
+end
+arch creator
+x 25
+y 22
+connected 204
+lifesave 1
+activate_on_release 0
+arch swamp
+end
 end
 arch battleground
 hp 28
@@ -9738,11 +11053,59 @@ sp 37
 x 25
 y 23
 end
+arch creator
+x 25
+y 24
+connected 204
+lifesave 1
+activate_on_release 0
+end
+arch duplicator
+other_arch swamp
+x 25
+y 24
+level 0
+connected 3
+activate_on_release 0
+end
+arch creator
+x 25
+y 24
+connected 204
+lifesave 1
+activate_on_release 0
+arch swamp
+end
+end
 arch battleground
 hp 28
 sp 37
 x 25
 y 24
+end
+arch creator
+x 25
+y 25
+connected 204
+lifesave 1
+activate_on_release 0
+end
+arch duplicator
+other_arch swamp
+x 25
+y 25
+level 0
+connected 3
+activate_on_release 0
+end
+arch creator
+x 25
+y 25
+connected 204
+lifesave 1
+activate_on_release 0
+arch swamp
+end
 end
 arch battleground
 hp 28
@@ -9750,11 +11113,59 @@ sp 37
 x 25
 y 25
 end
+arch creator
+x 25
+y 26
+connected 204
+lifesave 1
+activate_on_release 0
+end
+arch duplicator
+other_arch swamp
+x 25
+y 26
+level 0
+connected 3
+activate_on_release 0
+end
+arch creator
+x 25
+y 26
+connected 204
+lifesave 1
+activate_on_release 0
+arch swamp
+end
+end
 arch battleground
 hp 28
 sp 37
 x 25
 y 26
+end
+arch creator
+x 25
+y 27
+connected 204
+lifesave 1
+activate_on_release 0
+end
+arch duplicator
+other_arch swamp
+x 25
+y 27
+level 0
+connected 3
+activate_on_release 0
+end
+arch creator
+x 25
+y 27
+connected 204
+lifesave 1
+activate_on_release 0
+arch swamp
+end
 end
 arch battleground
 hp 28
@@ -9967,6 +11378,31 @@ sp 37
 x 26
 y 7
 end
+arch creator
+x 26
+y 8
+connected 201
+lifesave 1
+activate_on_release 0
+end
+arch duplicator
+other_arch statue2
+x 26
+y 8
+level 0
+connected 3
+activate_on_release 0
+end
+arch creator
+x 26
+y 8
+connected 201
+lifesave 1
+activate_on_release 0
+arch statue2
+name statue of a gladiator
+end
+end
 arch battleground
 hp 28
 sp 37
@@ -10039,6 +11475,34 @@ sp 37
 x 26
 y 19
 end
+arch creator
+x 26
+y 20
+connected 204
+lifesave 1
+activate_on_release 0
+end
+arch duplicator
+other_arch hedge_0
+x 26
+y 20
+level 0
+connected 3
+activate_on_release 0
+end
+arch creator
+x 26
+y 20
+connected 204
+lifesave 1
+activate_on_release 0
+arch hedge_0
+name archway made of tree
+face archtree.111
+move_block fly_low
+blocksview 0
+end
+end
 arch battleground
 hp 28
 sp 37
@@ -10056,6 +11520,30 @@ hp 28
 sp 37
 x 26
 y 22
+end
+arch creator
+x 26
+y 23
+connected 204
+lifesave 1
+activate_on_release 0
+end
+arch duplicator
+other_arch swamp
+x 26
+y 23
+level 0
+connected 3
+activate_on_release 0
+end
+arch creator
+x 26
+y 23
+connected 204
+lifesave 1
+activate_on_release 0
+arch swamp
+end
 end
 arch battleground
 hp 28
@@ -10075,11 +11563,60 @@ sp 37
 x 26
 y 25
 end
+arch creator
+x 26
+y 26
+connected 201
+lifesave 1
+activate_on_release 0
+end
+arch duplicator
+other_arch statue2
+x 26
+y 26
+level 0
+connected 3
+activate_on_release 0
+end
+arch creator
+x 26
+y 26
+connected 201
+lifesave 1
+activate_on_release 0
+arch statue2
+name statue of a gladiator
+end
+end
 arch battleground
 hp 28
 sp 37
 x 26
 y 26
+end
+arch creator
+x 26
+y 27
+connected 204
+lifesave 1
+activate_on_release 0
+end
+arch duplicator
+other_arch swamp
+x 26
+y 27
+level 0
+connected 3
+activate_on_release 0
+end
+arch creator
+x 26
+y 27
+connected 204
+lifesave 1
+activate_on_release 0
+arch swamp
+end
 end
 arch battleground
 hp 28
@@ -10163,57 +11700,29 @@ arch blocked
 x 26
 y 35
 end
-arch flagstone
-x 26
-y 36
-end
 arch blocked
 x 26
 y 36
 end
-arch flagstone
+arch blocked
 x 26
 y 37
 end
 arch blocked
 x 26
-y 37
-end
-arch flagstone
-x 26
 y 38
 end
 arch blocked
-x 26
-y 38
-end
-arch flagstone
 x 26
 y 39
 end
 arch blocked
 x 26
-y 39
-end
-arch flagstone
-x 26
 y 40
 end
 arch blocked
 x 26
-y 40
-end
-arch flagstone
-x 26
 y 41
-end
-arch blocked
-x 26
-y 41
-end
-arch flagstone
-x 26
-y 42
 end
 arch blocked
 x 26
@@ -10446,17 +11955,89 @@ arch slevel_2_2_1
 x 27
 y 20
 end
+arch creator
+x 27
+y 21
+connected 204
+lifesave 1
+activate_on_release 0
+end
+arch duplicator
+other_arch swamp
+x 27
+y 21
+level 0
+connected 3
+activate_on_release 0
+end
+arch creator
+x 27
+y 21
+connected 204
+lifesave 1
+activate_on_release 0
+arch swamp
+end
+end
 arch battleground
 hp 28
 sp 37
 x 27
 y 21
 end
+arch creator
+x 27
+y 22
+connected 204
+lifesave 1
+activate_on_release 0
+end
+arch duplicator
+other_arch swamp
+x 27
+y 22
+level 0
+connected 3
+activate_on_release 0
+end
+arch creator
+x 27
+y 22
+connected 204
+lifesave 1
+activate_on_release 0
+arch swamp
+end
+end
 arch battleground
 hp 28
 sp 37
 x 27
 y 22
+end
+arch creator
+x 27
+y 23
+connected 204
+lifesave 1
+activate_on_release 0
+end
+arch duplicator
+other_arch swamp
+x 27
+y 23
+level 0
+connected 3
+activate_on_release 0
+end
+arch creator
+x 27
+y 23
+connected 204
+lifesave 1
+activate_on_release 0
+arch swamp
+end
 end
 arch battleground
 hp 28
@@ -10470,17 +12051,89 @@ sp 37
 x 27
 y 24
 end
+arch creator
+x 27
+y 25
+connected 204
+lifesave 1
+activate_on_release 0
+end
+arch duplicator
+other_arch swamp
+x 27
+y 25
+level 0
+connected 3
+activate_on_release 0
+end
+arch creator
+x 27
+y 25
+connected 204
+lifesave 1
+activate_on_release 0
+arch swamp
+end
+end
 arch battleground
 hp 28
 sp 37
 x 27
 y 25
 end
+arch creator
+x 27
+y 26
+connected 204
+lifesave 1
+activate_on_release 0
+end
+arch duplicator
+other_arch swamp
+x 27
+y 26
+level 0
+connected 3
+activate_on_release 0
+end
+arch creator
+x 27
+y 26
+connected 204
+lifesave 1
+activate_on_release 0
+arch swamp
+end
+end
 arch battleground
 hp 28
 sp 37
 x 27
 y 26
+end
+arch creator
+x 27
+y 27
+connected 204
+lifesave 1
+activate_on_release 0
+end
+arch duplicator
+other_arch swamp
+x 27
+y 27
+level 0
+connected 3
+activate_on_release 0
+end
+arch creator
+x 27
+y 27
+connected 204
+lifesave 1
+activate_on_release 0
+arch swamp
+end
 end
 arch battleground
 hp 28
@@ -12359,21 +14012,33 @@ arch blocked
 x 31
 y 35
 end
-arch blocked
+arch lightningwall_5
 x 31
 y 36
+speed 1.000000
+arch spell_sm_lightning
 end
-arch blocked
+end
+arch igate_closed_1
+name 6
 x 31
 y 37
+speed 0.500000
+connected 6
 end
-arch blocked
+arch igate_closed_1
+name 101
 x 31
 y 38
+speed 0.500000
+connected 101
 end
-arch blocked
+arch detector
+name 201 - add statues
+slaying lightning
 x 31
 y 39
+connected 201
 end
 arch blocked
 x 31
@@ -12816,21 +14481,33 @@ arch blocked
 x 32
 y 35
 end
-arch blocked
+arch lightningwall_5
 x 32
 y 36
+speed 1.000000
+arch spell_sm_lightning
 end
-arch blocked
+end
+arch igate_closed_1
+name 6
 x 32
 y 37
+speed 0.500000
+connected 6
 end
-arch blocked
+arch igate_closed_1
+name 102
 x 32
 y 38
+speed 0.500000
+connected 102
 end
-arch blocked
+arch detector
+name 202 - add fences
+slaying lightning
 x 32
 y 39
+connected 202
 end
 arch blocked
 x 32
@@ -13170,21 +14847,33 @@ arch blocked
 x 33
 y 35
 end
-arch blocked
+arch lightningwall_5
 x 33
 y 36
+speed 1.000000
+arch spell_sm_lightning
 end
-arch blocked
+end
+arch igate_closed_1
+name 6
 x 33
 y 37
+speed 0.500000
+connected 6
 end
-arch blocked
+arch igate_closed_1
+name 103
 x 33
 y 38
+speed 0.500000
+connected 103
 end
-arch blocked
+arch detector
+name 203 - add tunnel
+slaying lightning
 x 33
 y 39
+connected 203
 end
 arch blocked
 x 33
@@ -13510,21 +15199,33 @@ arch blocked
 x 34
 y 35
 end
-arch blocked
+arch lightningwall_5
 x 34
 y 36
+speed 1.000000
+arch spell_sm_lightning
 end
-arch blocked
+end
+arch igate_closed_1
+name 6
 x 34
 y 37
+speed 0.500000
+connected 6
 end
-arch blocked
+arch igate_closed_1
+name 104
 x 34
 y 38
+speed 0.500000
+connected 104
 end
-arch blocked
+arch detector
+name 204 - add swamp
+slaying lightning
 x 34
 y 39
+connected 204
 end
 arch blocked
 x 34
