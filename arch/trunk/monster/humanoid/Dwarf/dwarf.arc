@@ -10,7 +10,7 @@ mina
 color_fg grey
 maxsp 9
 sp 9
-Pow 21.6
+Pow 21
 Int 15
 Str 20
 Dex 10
