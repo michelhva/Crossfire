@@ -6,6 +6,7 @@ height 11
 msg
 Created:  2008-07-24 Chad Opperman | cromagic@sbcglobal.net
 Modified: 2008-07-26 Chad Opperman | cromagic@sbcglobal.net
+Modified: 2008-08-01 Raphaël Quinet
 endmsg
 end
 arch stonefloor2
@@ -469,6 +470,10 @@ name Course Pending
 x 8
 y 3
 end
+arch dust_effect
+x 8
+y 3
+end
 arch stonefloor2
 x 8
 y 4
@@ -479,6 +484,10 @@ y 5
 end
 arch perm_magic_portal
 name Course Pending
+x 8
+y 5
+end
+arch dust_effect
 x 8
 y 5
 end
@@ -495,6 +504,10 @@ name Course Pending
 x 8
 y 7
 end
+arch dust_effect
+x 8
+y 7
+end
 arch stonefloor2
 x 8
 y 8
@@ -505,6 +518,10 @@ y 9
 end
 arch perm_magic_portal
 name Course Pending
+x 8
+y 9
+end
+arch dust_effect
 x 8
 y 9
 end

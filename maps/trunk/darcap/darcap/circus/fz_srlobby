@@ -6,6 +6,7 @@ height 11
 msg
 Created:  2008-07-24 Chad Opperman | cromagic@sbcglobal.net
 Modified: 2008-07-30 Chad Opperman | cromagic@sbcglobal.net
+Modified: 2008-08-01 Raphaël Quinet
 endmsg
 end
 arch stonefloor2
@@ -105,6 +106,10 @@ sp 6
 x 1
 y 3
 end
+arch dust_effect
+x 1
+y 3
+end
 arch stonefloor2
 x 1
 y 4
@@ -117,6 +122,10 @@ arch perm_magic_portal
 name Sphere Racing Course Pending
 hp 17
 sp 6
+x 1
+y 5
+end
+arch dust_effect
 x 1
 y 5
 end
@@ -135,6 +144,10 @@ sp 6
 x 1
 y 7
 end
+arch dust_effect
+x 1
+y 7
+end
 arch stonefloor2
 x 1
 y 8
@@ -147,6 +160,10 @@ arch perm_magic_portal
 name Sphere Racing Course Pending
 hp 17
 sp 6
+x 1
+y 9
+end
+arch dust_effect
 x 1
 y 9
 end
