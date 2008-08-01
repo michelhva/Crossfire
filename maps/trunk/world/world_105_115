@@ -10,6 +10,7 @@ enter_y 1
 msg
 Created:  2001-02-16
 Modified: 2008-05-19 Arvid Norlander
+Modified: 2008-08-01 Raphaël Quinet
 endmsg
 outdoor 1
 tile_path_1 world_105_114
@@ -1419,8 +1420,15 @@ y 21
 elevation -133
 end
 arch big_galleon
+name sailing big galleon
 x 3
 y 21
+speed 0.5
+type 2
+container 10000000
+move_type boat
+move_allow walk
+passenger_limit 4
 end
 arch dungeon_magic
 x 3
@@ -3637,11 +3645,10 @@ y 21
 elevation -406
 end
 arch s_ship
-name to Stoneville
-name_pl to Stoneville
-slaying /world/world_102_127
-hp 43
-sp 13
+name Ship to Santo Dominion
+slaying /world/world_102_108
+hp 15
+sp 10
 x 8
 y 21
 end
@@ -5911,8 +5918,15 @@ y 20
 elevation -2256
 end
 arch big_galleon
+name sailing big galleon
 x 13
 y 20
+speed 0.5
+type 2
+container 10000000
+move_type boat
+move_allow walk
+passenger_limit 4
 end
 arch dungeon_magic
 x 13
@@ -8195,8 +8209,7 @@ y 26
 elevation -2256
 end
 arch big_galleon
-name to Port Joseph
-name_pl to Port Joseph
+name Galleon to Port Joseph
 slaying /world/world_101_114
 hp 16
 sp 43

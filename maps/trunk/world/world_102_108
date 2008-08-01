@@ -10,6 +10,7 @@ enter_y 1
 msg
 Created:  2002-02-19
 Modified: 2007-12-24 tchize
+Modified: 2008-08-01 Raphaël Quinet
 endmsg
 outdoor 1
 tile_path_1 world_102_107
@@ -3254,10 +3255,10 @@ x 14
 y 9
 end
 arch s_ship
-name Ship to Stoneville
-slaying /world/world_102_127
-hp 43
-sp 11
+name Ship to Scorn
+slaying /world/world_105_115
+hp 9
+sp 22
 x 14
 y 9
 end
