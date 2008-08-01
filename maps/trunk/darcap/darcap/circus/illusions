@@ -9,6 +9,7 @@ enter_y 11
 msg
 Created:  1999-01-28 Cater & Wade (john_cater@yahoo.com)
 Modified: 2007-11-04 Andreas Kirschbaum
+Modified: 2008-07-31 Raphaël Quinet
 endmsg
 end
 arch small_stones
@@ -1086,9 +1087,9 @@ x 4
 y 11
 end
 arch invis_exit
-slaying circus
-hp 7
-sp 11
+slaying /world/world_116_102
+hp 31
+sp 18
 x 4
 y 11
 end
@@ -1107,9 +1108,9 @@ x 4
 y 12
 end
 arch invis_exit
-slaying circus
-hp 7
-sp 11
+slaying /world/world_116_102
+hp 31
+sp 18
 x 4
 y 12
 end
@@ -6485,9 +6486,9 @@ x 19
 y 11
 end
 arch invis_exit
-slaying circus
-hp 7
-sp 11
+slaying /world/world_116_102
+hp 31
+sp 18
 x 19
 y 11
 end
@@ -6506,9 +6507,9 @@ x 19
 y 12
 end
 arch invis_exit
-slaying circus
-hp 7
-sp 11
+slaying /world/world_116_102
+hp 31
+sp 18
 x 19
 y 12
 end
@@ -6743,9 +6744,9 @@ x 19
 y 36
 end
 arch invis_exit
-slaying circus
-hp 7
-sp 11
+slaying /world/world_116_102
+hp 31
+sp 18
 x 19
 y 36
 end
@@ -6768,9 +6769,9 @@ x 19
 y 37
 end
 arch invis_exit
-slaying circus
-hp 7
-sp 11
+slaying /world/world_116_102
+hp 31
+sp 18
 x 19
 y 37
 end
@@ -14623,9 +14624,9 @@ x 44
 y 11
 end
 arch invis_exit
-slaying circus
-hp 7
-sp 11
+slaying /world/world_116_102
+hp 31
+sp 18
 x 44
 y 11
 end
@@ -14648,9 +14649,9 @@ x 44
 y 12
 end
 arch invis_exit
-slaying circus
-hp 7
-sp 11
+slaying /world/world_116_102
+hp 31
+sp 18
 x 44
 y 12
 end
@@ -14885,9 +14886,9 @@ x 44
 y 36
 end
 arch invis_exit
-slaying circus
-hp 7
-sp 11
+slaying /world/world_116_102
+hp 31
+sp 18
 x 44
 y 36
 end
@@ -14910,9 +14911,9 @@ x 44
 y 37
 end
 arch invis_exit
-slaying circus
-hp 7
-sp 11
+slaying /world/world_116_102
+hp 31
+sp 18
 x 44
 y 37
 end

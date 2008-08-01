@@ -6,6 +6,7 @@ width 16
 height 8
 msg
 Created:  1999-01-29 Cater & Wade & Fouras (john_cater@yahoo.com)
+Modified: 2008-07-31 Raphaël Quinet
 endmsg
 end
 arch pstone_1
@@ -19,9 +20,9 @@ arch woodwall_1_2
 y 1
 end
 arch invis_exit
-slaying circus
-hp 14
-sp 7
+slaying /world/world_116_102
+hp 38
+sp 14
 y 2
 end
 arch pstone_1
@@ -36,9 +37,9 @@ y 2
 move_block 0
 end
 arch invis_exit
-slaying circus
-hp 14
-sp 7
+slaying /world/world_116_102
+hp 38
+sp 14
 y 3
 end
 arch pstone_1

@@ -12,6 +12,7 @@ enter_y 24
 msg
 Created:  2002-04-02 Bernd Edler (edler@heydernet.de)
 Modified: 2007-11-04 Andreas Kirschbaum
+Modified: 2008-07-31 Raphaël Quinet
 endmsg
 end
 arch dungeon_magic
@@ -2623,9 +2624,9 @@ x 7
 y 26
 end
 arch invis_exit
-slaying circus
-hp 12
-sp 8
+slaying /world/world_116_102
+hp 36
+sp 15
 x 7
 y 26
 end
@@ -2989,9 +2990,9 @@ x 8
 y 25
 end
 arch oakdoor
-slaying circus
-hp 12
-sp 7
+slaying /world/world_116_102
+hp 36
+sp 15
 x 8
 y 25
 end
@@ -3004,9 +3005,9 @@ x 8
 y 26
 end
 arch invis_exit
-slaying circus
-hp 12
-sp 8
+slaying /world/world_116_102
+hp 36
+sp 15
 x 8
 y 26
 end
@@ -3438,9 +3439,9 @@ x 9
 y 26
 end
 arch invis_exit
-slaying circus
-hp 12
-sp 8
+slaying /world/world_116_102
+hp 36
+sp 15
 x 9
 y 26
 end

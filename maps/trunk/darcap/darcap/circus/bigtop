@@ -8,6 +8,7 @@ enter_x 17
 enter_y 30
 msg
 Created:  1999-01-27 Cater & Wade & Fouras (john_cater@yahoo.com)
+Modified: 2008-07-31 Raphaël Quinet
 endmsg
 end
 arch grassmedium
@@ -3682,9 +3683,9 @@ x 16
 y 31
 end
 arch invis_exit
-slaying circus
-hp 11
-sp 10
+slaying /world/world_116_102
+hp 35
+sp 17
 x 17
 end
 arch pstone_1
@@ -3861,9 +3862,9 @@ x 17
 y 30
 end
 arch invis_exit
-slaying circus
-hp 11
-sp 12
+slaying /world/world_116_102
+hp 35
+sp 19
 x 17
 y 31
 end
@@ -6651,9 +6652,9 @@ x 29
 y 31
 end
 arch invis_exit
-slaying circus
-hp 13
-sp 10
+slaying /world/world_116_102
+hp 37
+sp 17
 x 30
 end
 arch pstone_1
@@ -6812,9 +6813,9 @@ x 30
 y 30
 end
 arch invis_exit
-slaying circus
-hp 13
-sp 12
+slaying /world/world_116_102
+hp 37
+sp 19
 x 30
 y 31
 end
