@@ -6,6 +6,7 @@ height 11
 msg
 Created:  2008-07-24 Chad Opperman | cromagic@sbcglobal.net
 Modified: 2008-07-29 Chad Opperman | cromagic@sbcglobal.net
+Modified: 2008-08-01 Raphaël Quinet
 endmsg
 end
 arch stonefloor2
@@ -105,6 +106,10 @@ sp 6
 x 1
 y 3
 end
+arch dust_effect
+x 1
+y 3
+end
 arch stonefloor2
 x 1
 y 4
@@ -117,6 +122,10 @@ arch perm_magic_portal
 name Deathmatch Area Pending
 hp 17
 sp 6
+x 1
+y 5
+end
+arch dust_effect
 x 1
 y 5
 end
@@ -135,6 +144,10 @@ sp 6
 x 1
 y 7
 end
+arch dust_effect
+x 1
+y 7
+end
 arch stonefloor2
 x 1
 y 8
@@ -147,6 +160,10 @@ arch perm_magic_portal
 name Deathmatch Area Pending
 hp 17
 sp 6
+x 1
+y 9
+end
+arch dust_effect
 x 1
 y 9
 end
@@ -387,7 +404,7 @@ end
 arch sign
 name Deathmatch Explanation
 msg
-This is the Deathmatch lobby.  Deathmatch is similar to arena dueling, except its really laid back.  It is not restricted to 2 people at once...any number of people can play.  Also, its open, meaning anyone can enter and leave whenever they want.  There is no trophies for killing either, since its so unofficial and laid back.  Also, the fighting areas are much larger than the arena, and offer varying circumstances to fight under.
+This is the Deathmatch lobby.  Deathmatch is similar to arena dueling, except it is really laid back.  It is not restricted to 2 people at once... any number of people can play.  Also, it is open, meaning anyone can enter and leave whenever they want.  There are no trophies for killing either, since it is so unofficial and laid back.  Also, the fighting areas are much larger than the traditional arena, and offer varying circumstances to fight under.
 endmsg
 x 6
 y 5
