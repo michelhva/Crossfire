@@ -7,7 +7,9 @@ enter_x 12
 enter_y 16
 msg
 Created:  1999-01-27 Cater & Wade & Fouras (john_cater@yahoo.com)
+Modified: 2008-07-31 Raphaël Quinet
 endmsg
+outdoor 1
 end
 arch grass
 end
@@ -1114,6 +1116,10 @@ arch grass
 x 9
 y 9
 end
+arch light3
+x 9
+y 9
+end
 arch grass
 x 9
 y 10
@@ -1130,6 +1136,10 @@ arch grass
 x 9
 y 13
 end
+arch light3
+x 9
+y 13
+end
 arch pstone_1
 x 9
 y 14
@@ -1139,7 +1149,10 @@ x 9
 y 15
 end
 arch market1
-name Food Stalls
+name Fun Zone - Multiplayer
+slaying fz_lobby
+hp 17
+sp 13
 x 9
 y 15
 end
@@ -1268,7 +1281,10 @@ x 10
 y 15
 end
 arch market2
-name Food Stalls
+name Fun Zone - Multiplayer
+slaying fz_lobby
+hp 17
+sp 13
 x 10
 y 15
 end
@@ -1388,7 +1404,10 @@ x 11
 y 15
 end
 arch market3
-name Food Stalls
+name Fun Zone - Multiplayer
+slaying fz_lobby
+hp 17
+sp 13
 x 11
 y 15
 end
@@ -1529,7 +1548,7 @@ end
 arch ggate_closed
 x 12
 y 17
-move_block 0
+move_block -all
 end
 arch pstone_1
 x 12
@@ -1634,6 +1653,10 @@ x 13
 y 15
 end
 arch market1
+name Fun Zone - Single Player
+slaying fz_lobby
+hp 46
+sp 13
 x 13
 y 15
 end
@@ -1755,6 +1778,10 @@ x 14
 y 15
 end
 arch market2
+name Fun Zone - Single Player
+slaying fz_lobby
+hp 46
+sp 13
 x 14
 y 15
 end
@@ -1848,6 +1875,10 @@ arch grass
 x 15
 y 9
 end
+arch light3
+x 15
+y 9
+end
 arch grass
 x 15
 y 10
@@ -1864,6 +1895,10 @@ arch grass
 x 15
 y 13
 end
+arch light3
+x 15
+y 13
+end
 arch pstone_1
 x 15
 y 14
@@ -1873,6 +1908,10 @@ x 15
 y 15
 end
 arch market3
+name Fun Zone - Single Player
+slaying fz_lobby
+hp 46
+sp 13
 x 15
 y 15
 end
