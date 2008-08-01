@@ -9594,10 +9594,10 @@ elevation 0
 move_block all
 end
 arch big_galleon
-name To Navar City
-slaying /world/world_122_116
-hp 21
-sp 43
+name to Wolfsburg
+slaying /world/world_128_109
+hp 43
+sp 20
 x 32
 y 36
 end
@@ -9627,6 +9627,10 @@ elevation 0
 move_block all
 end
 arch big_galleon
+name To Navar City
+slaying /world/world_122_116
+hp 21
+sp 43
 x 32
 y 40
 end

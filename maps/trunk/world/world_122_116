@@ -10,6 +10,7 @@ enter_y 1
 msg
 Created:  2002-06-02
 Modified: 2008-05-17 Nicolas Weeger
+Modified: 2008-08-01 Raphaël Quinet
 endmsg
 outdoor 1
 tile_path_1 world_122_115
@@ -7757,10 +7758,9 @@ move_block all
 end
 arch big_galleon
 name To Darcap
-name_pl To Darcap
 slaying /world/world_116_102
 hp 32
-sp 37
+sp 41
 x 21
 y 42
 end
@@ -7787,9 +7787,8 @@ move_block all
 end
 arch big_galleon
 name to Wolfsburg
-name_pl to Wolfsburg
 slaying /world/world_128_109
-hp 44
+hp 43
 sp 25
 x 21
 y 45
