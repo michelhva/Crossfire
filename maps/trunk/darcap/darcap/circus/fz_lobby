@@ -1,5 +1,6 @@
 arch map
 name Fun Zone Lobby
+difficulty 1
 region darcapcircus
 width 64
 height 20
@@ -11,17 +12,17 @@ endmsg
 outdoor 1
 end
 arch invis_exit
-slaying circus
-hp 8
-sp 15
+slaying /world/world_116_102
+hp 33
+sp 21
 move_on all
 end
 arch pstone_1
 end
 arch invis_exit
-slaying circus
-hp 8
-sp 15
+slaying /world/world_116_102
+hp 32
+sp 22
 y 1
 move_on all
 end
@@ -29,9 +30,9 @@ arch grass
 y 1
 end
 arch invis_exit
-slaying circus
-hp 8
-sp 15
+slaying /world/world_116_102
+hp 32
+sp 22
 y 2
 move_on all
 end
@@ -39,9 +40,9 @@ arch grass
 y 2
 end
 arch invis_exit
-slaying circus
-hp 8
-sp 15
+slaying /world/world_116_102
+hp 32
+sp 22
 y 3
 move_on all
 end
@@ -49,9 +50,9 @@ arch grass
 y 3
 end
 arch invis_exit
-slaying circus
-hp 8
-sp 15
+slaying /world/world_116_102
+hp 32
+sp 22
 y 4
 move_on all
 end
@@ -59,9 +60,9 @@ arch grass
 y 4
 end
 arch invis_exit
-slaying circus
-hp 8
-sp 15
+slaying /world/world_116_102
+hp 32
+sp 22
 y 5
 move_on all
 end
@@ -69,9 +70,9 @@ arch grass
 y 5
 end
 arch invis_exit
-slaying circus
-hp 8
-sp 15
+slaying /world/world_116_102
+hp 32
+sp 22
 y 6
 move_on all
 end
@@ -79,9 +80,9 @@ arch grass
 y 6
 end
 arch invis_exit
-slaying circus
-hp 8
-sp 15
+slaying /world/world_116_102
+hp 32
+sp 22
 y 7
 move_on all
 end
@@ -89,9 +90,9 @@ arch grass
 y 7
 end
 arch invis_exit
-slaying circus
-hp 8
-sp 15
+slaying /world/world_116_102
+hp 32
+sp 22
 y 8
 move_on all
 end
@@ -99,9 +100,9 @@ arch grass
 y 8
 end
 arch invis_exit
-slaying circus
-hp 8
-sp 15
+slaying /world/world_116_102
+hp 32
+sp 22
 y 9
 move_on all
 end
@@ -109,9 +110,9 @@ arch grass
 y 9
 end
 arch invis_exit
-slaying circus
-hp 8
-sp 15
+slaying /world/world_116_102
+hp 32
+sp 22
 y 10
 move_on all
 end
@@ -119,9 +120,9 @@ arch grass
 y 10
 end
 arch invis_exit
-slaying circus
-hp 8
-sp 15
+slaying /world/world_116_102
+hp 32
+sp 22
 y 11
 move_on all
 end
@@ -129,9 +130,9 @@ arch grass
 y 11
 end
 arch invis_exit
-slaying circus
-hp 8
-sp 15
+slaying /world/world_116_102
+hp 32
+sp 22
 y 12
 move_on all
 end
@@ -139,9 +140,9 @@ arch grass
 y 12
 end
 arch invis_exit
-slaying circus
-hp 8
-sp 15
+slaying /world/world_116_102
+hp 32
+sp 22
 y 13
 move_on all
 end
@@ -149,9 +150,9 @@ arch grass
 y 13
 end
 arch invis_exit
-slaying circus
-hp 8
-sp 15
+slaying /world/world_116_102
+hp 32
+sp 22
 y 14
 move_on all
 end
@@ -162,9 +163,9 @@ arch tree3
 y 14
 end
 arch invis_exit
-slaying circus
-hp 8
-sp 15
+slaying /world/world_116_102
+hp 32
+sp 22
 y 15
 move_on all
 end
@@ -172,9 +173,9 @@ arch grass
 y 15
 end
 arch invis_exit
-slaying circus
-hp 8
-sp 15
+slaying /world/world_116_102
+hp 32
+sp 22
 y 16
 move_on all
 end
@@ -182,9 +183,9 @@ arch grass
 y 16
 end
 arch invis_exit
-slaying circus
-hp 8
-sp 15
+slaying /world/world_116_102
+hp 32
+sp 22
 y 17
 move_on all
 end
@@ -195,9 +196,9 @@ arch tree3
 y 17
 end
 arch invis_exit
-slaying circus
-hp 8
-sp 15
+slaying /world/world_116_102
+hp 33
+sp 23
 y 18
 move_on all
 end
@@ -214,9 +215,9 @@ arch swall_2_1_2
 y 19
 end
 arch invis_exit
-slaying circus
-hp 9
-sp 14
+slaying /world/world_116_102
+hp 33
+sp 21
 x 1
 move_on all
 end
@@ -300,9 +301,9 @@ x 1
 y 17
 end
 arch invis_exit
-slaying circus
-hp 9
-sp 16
+slaying /world/world_116_102
+hp 33
+sp 23
 x 1
 y 18
 move_on all
@@ -324,9 +325,9 @@ x 1
 y 19
 end
 arch invis_exit
-slaying circus
-hp 9
-sp 14
+slaying /world/world_116_102
+hp 33
+sp 21
 x 2
 move_on all
 end
@@ -408,9 +409,9 @@ type 0
 no_pick 1
 end
 arch invis_exit
-slaying circus
-hp 9
-sp 16
+slaying /world/world_116_102
+hp 33
+sp 23
 x 2
 y 18
 move_on all
@@ -432,9 +433,9 @@ x 2
 y 19
 end
 arch invis_exit
-slaying circus
-hp 9
-sp 14
+slaying /world/world_116_102
+hp 33
+sp 21
 x 3
 move_on all
 end
@@ -514,9 +515,9 @@ x 3
 y 17
 end
 arch invis_exit
-slaying circus
-hp 9
-sp 16
+slaying /world/world_116_102
+hp 33
+sp 23
 x 3
 y 18
 move_on all
@@ -534,9 +535,9 @@ x 3
 y 19
 end
 arch invis_exit
-slaying circus
-hp 9
-sp 14
+slaying /world/world_116_102
+hp 33
+sp 21
 x 4
 move_on all
 end
@@ -616,9 +617,9 @@ x 4
 y 17
 end
 arch invis_exit
-slaying circus
-hp 9
-sp 16
+slaying /world/world_116_102
+hp 33
+sp 23
 x 4
 y 18
 move_on all
@@ -636,9 +637,9 @@ x 4
 y 19
 end
 arch invis_exit
-slaying circus
-hp 9
-sp 14
+slaying /world/world_116_102
+hp 33
+sp 21
 x 5
 move_on all
 end
@@ -738,9 +739,9 @@ x 5
 y 17
 end
 arch invis_exit
-slaying circus
-hp 9
-sp 16
+slaying /world/world_116_102
+hp 33
+sp 23
 x 5
 y 18
 move_on all
@@ -758,9 +759,9 @@ x 5
 y 19
 end
 arch invis_exit
-slaying circus
-hp 9
-sp 14
+slaying /world/world_116_102
+hp 33
+sp 21
 x 6
 move_on all
 end
@@ -860,9 +861,9 @@ x 6
 y 17
 end
 arch invis_exit
-slaying circus
-hp 9
-sp 16
+slaying /world/world_116_102
+hp 33
+sp 23
 x 6
 y 18
 move_on all
@@ -880,9 +881,9 @@ x 6
 y 19
 end
 arch invis_exit
-slaying circus
-hp 9
-sp 14
+slaying /world/world_116_102
+hp 33
+sp 21
 x 7
 move_on all
 end
@@ -1038,9 +1039,9 @@ x 7
 y 17
 end
 arch invis_exit
-slaying circus
-hp 9
-sp 16
+slaying /world/world_116_102
+hp 33
+sp 23
 x 7
 y 18
 move_on all
@@ -1058,9 +1059,9 @@ x 7
 y 19
 end
 arch invis_exit
-slaying circus
-hp 9
-sp 14
+slaying /world/world_116_102
+hp 33
+sp 21
 x 8
 move_on all
 end
@@ -1205,9 +1206,9 @@ x 8
 y 17
 end
 arch invis_exit
-slaying circus
-hp 9
-sp 16
+slaying /world/world_116_102
+hp 33
+sp 23
 x 8
 y 18
 move_on all
@@ -1225,9 +1226,9 @@ x 8
 y 19
 end
 arch invis_exit
-slaying circus
-hp 9
-sp 14
+slaying /world/world_116_102
+hp 33
+sp 21
 x 9
 move_on all
 end
@@ -1366,9 +1367,9 @@ x 9
 y 17
 end
 arch invis_exit
-slaying circus
-hp 9
-sp 16
+slaying /world/world_116_102
+hp 33
+sp 23
 x 9
 y 18
 move_on all
@@ -1386,9 +1387,9 @@ x 9
 y 19
 end
 arch invis_exit
-slaying circus
-hp 9
-sp 14
+slaying /world/world_116_102
+hp 33
+sp 21
 x 10
 move_on all
 end
@@ -1497,9 +1498,9 @@ x 10
 y 17
 end
 arch invis_exit
-slaying circus
-hp 9
-sp 16
+slaying /world/world_116_102
+hp 33
+sp 23
 x 10
 y 18
 move_on all
@@ -1517,9 +1518,9 @@ x 10
 y 19
 end
 arch invis_exit
-slaying circus
-hp 10
-sp 14
+slaying /world/world_116_102
+hp 33
+sp 21
 x 11
 move_on all
 end
@@ -1574,6 +1575,7 @@ end
 arch table_3
 x 11
 y 6
+type 0
 no_pick 1
 end
 arch afloor_left
@@ -1655,9 +1657,9 @@ x 11
 y 17
 end
 arch invis_exit
-slaying circus
-hp 10
-sp 16
+slaying /world/world_116_102
+hp 33
+sp 23
 x 11
 y 18
 move_on all
@@ -1675,9 +1677,9 @@ x 11
 y 19
 end
 arch invis_exit
-slaying circus
-hp 10
-sp 14
+slaying /world/world_116_102
+hp 33
+sp 21
 x 12
 move_on all
 end
@@ -1790,9 +1792,9 @@ x 12
 y 17
 end
 arch invis_exit
-slaying circus
-hp 10
-sp 16
+slaying /world/world_116_102
+hp 33
+sp 23
 x 12
 y 18
 move_on all
@@ -1810,9 +1812,9 @@ x 12
 y 19
 end
 arch invis_exit
-slaying circus
-hp 10
-sp 14
+slaying /world/world_116_102
+hp 33
+sp 21
 x 13
 move_on all
 end
@@ -1914,9 +1916,9 @@ x 13
 y 17
 end
 arch invis_exit
-slaying circus
-hp 10
-sp 16
+slaying /world/world_116_102
+hp 33
+sp 23
 x 13
 y 18
 move_on all
@@ -1934,9 +1936,9 @@ x 13
 y 19
 end
 arch invis_exit
-slaying circus
-hp 10
-sp 14
+slaying /world/world_116_102
+hp 33
+sp 21
 x 14
 move_on all
 end
@@ -2054,9 +2056,9 @@ x 14
 y 17
 end
 arch invis_exit
-slaying circus
-hp 10
-sp 16
+slaying /world/world_116_102
+hp 33
+sp 23
 x 14
 y 18
 move_on all
@@ -2074,9 +2076,9 @@ x 14
 y 19
 end
 arch invis_exit
-slaying circus
-hp 10
-sp 14
+slaying /world/world_116_102
+hp 35
+sp 21
 x 15
 move_on all
 end
@@ -2192,9 +2194,9 @@ x 15
 y 17
 end
 arch invis_exit
-slaying circus
-hp 10
-sp 16
+slaying /world/world_116_102
+hp 35
+sp 23
 x 15
 y 18
 move_on all
@@ -2212,9 +2214,9 @@ x 15
 y 19
 end
 arch invis_exit
-slaying circus
-hp 10
-sp 14
+slaying /world/world_116_102
+hp 35
+sp 21
 x 16
 move_on all
 end
@@ -2260,7 +2262,8 @@ end
 arch barrel
 x 16
 y 7
-move_block -all
+type 0
+move_block 0
 no_pick 1
 can_roll 0
 end
@@ -2322,9 +2325,9 @@ x 16
 y 17
 end
 arch invis_exit
-slaying circus
-hp 10
-sp 16
+slaying /world/world_116_102
+hp 35
+sp 23
 x 16
 y 18
 move_on all
@@ -2342,9 +2345,9 @@ x 16
 y 19
 end
 arch invis_exit
-slaying circus
-hp 10
-sp 14
+slaying /world/world_116_102
+hp 35
+sp 21
 x 17
 move_on all
 end
@@ -2479,9 +2482,9 @@ x 17
 y 17
 end
 arch invis_exit
-slaying circus
-hp 10
-sp 16
+slaying /world/world_116_102
+hp 35
+sp 23
 x 17
 y 18
 move_on all
@@ -2499,9 +2502,9 @@ x 17
 y 19
 end
 arch invis_exit
-slaying circus
-hp 10
-sp 14
+slaying /world/world_116_102
+hp 35
+sp 21
 x 18
 move_on all
 end
@@ -2603,9 +2606,9 @@ x 18
 y 17
 end
 arch invis_exit
-slaying circus
-hp 10
-sp 16
+slaying /world/world_116_102
+hp 35
+sp 23
 x 18
 y 18
 move_on all
@@ -2623,9 +2626,9 @@ x 18
 y 19
 end
 arch invis_exit
-slaying circus
-hp 10
-sp 14
+slaying /world/world_116_102
+hp 35
+sp 21
 x 19
 move_on all
 end
@@ -2725,9 +2728,9 @@ x 19
 y 17
 end
 arch invis_exit
-slaying circus
-hp 10
-sp 16
+slaying /world/world_116_102
+hp 35
+sp 23
 x 19
 y 18
 move_on all
@@ -2745,9 +2748,9 @@ x 19
 y 19
 end
 arch invis_exit
-slaying circus
-hp 10
-sp 14
+slaying /world/world_116_102
+hp 35
+sp 21
 x 20
 move_on all
 end
@@ -2865,9 +2868,9 @@ x 20
 y 17
 end
 arch invis_exit
-slaying circus
-hp 10
-sp 16
+slaying /world/world_116_102
+hp 35
+sp 23
 x 20
 y 18
 move_on all
@@ -2885,9 +2888,9 @@ x 20
 y 19
 end
 arch invis_exit
-slaying circus
-hp 10
-sp 14
+slaying /world/world_116_102
+hp 35
+sp 21
 x 21
 move_on all
 end
@@ -2939,6 +2942,7 @@ end
 arch table_2x1
 x 21
 y 7
+type 0
 end
 arch afloor_left
 x 21
@@ -3003,9 +3007,9 @@ x 21
 y 17
 end
 arch invis_exit
-slaying circus
-hp 10
-sp 16
+slaying /world/world_116_102
+hp 35
+sp 23
 x 21
 y 18
 move_on all
@@ -3023,9 +3027,9 @@ x 21
 y 19
 end
 arch invis_exit
-slaying circus
-hp 10
-sp 14
+slaying /world/world_116_102
+hp 35
+sp 21
 x 22
 move_on all
 end
@@ -3137,9 +3141,9 @@ x 22
 y 17
 end
 arch invis_exit
-slaying circus
-hp 10
-sp 16
+slaying /world/world_116_102
+hp 35
+sp 23
 x 22
 y 18
 move_on all
@@ -3157,9 +3161,9 @@ x 22
 y 19
 end
 arch invis_exit
-slaying circus
-hp 10
-sp 14
+slaying /world/world_116_102
+hp 35
+sp 21
 x 23
 move_on all
 end
@@ -3281,9 +3285,9 @@ x 23
 y 17
 end
 arch invis_exit
-slaying circus
-hp 10
-sp 16
+slaying /world/world_116_102
+hp 35
+sp 23
 x 23
 y 18
 move_on all
@@ -3301,9 +3305,9 @@ x 23
 y 19
 end
 arch invis_exit
-slaying circus
-hp 10
-sp 14
+slaying /world/world_116_102
+hp 35
+sp 21
 x 24
 move_on all
 end
@@ -3403,9 +3407,9 @@ x 24
 y 17
 end
 arch invis_exit
-slaying circus
-hp 10
-sp 16
+slaying /world/world_116_102
+hp 35
+sp 23
 x 24
 y 18
 move_on all
@@ -3423,9 +3427,9 @@ x 24
 y 19
 end
 arch invis_exit
-slaying circus
-hp 10
-sp 14
+slaying /world/world_116_102
+hp 35
+sp 21
 x 25
 move_on all
 end
@@ -3525,9 +3529,9 @@ x 25
 y 17
 end
 arch invis_exit
-slaying circus
-hp 10
-sp 16
+slaying /world/world_116_102
+hp 35
+sp 23
 x 25
 y 18
 move_on all
@@ -3545,9 +3549,9 @@ x 25
 y 19
 end
 arch invis_exit
-slaying circus
-hp 10
-sp 14
+slaying /world/world_116_102
+hp 35
+sp 21
 x 26
 move_on all
 end
@@ -3685,9 +3689,9 @@ x 26
 y 17
 end
 arch invis_exit
-slaying circus
-hp 10
-sp 16
+slaying /world/world_116_102
+hp 35
+sp 23
 x 26
 y 18
 move_on all
@@ -3705,9 +3709,9 @@ x 26
 y 19
 end
 arch invis_exit
-slaying circus
-hp 12
-sp 14
+slaying /world/world_116_102
+hp 36
+sp 21
 x 27
 move_on all
 end
@@ -3863,9 +3867,9 @@ x 27
 y 17
 end
 arch invis_exit
-slaying circus
-hp 12
-sp 16
+slaying /world/world_116_102
+hp 36
+sp 23
 x 27
 y 18
 move_on all
@@ -3883,9 +3887,9 @@ x 27
 y 19
 end
 arch invis_exit
-slaying circus
-hp 12
-sp 14
+slaying /world/world_116_102
+hp 36
+sp 21
 x 28
 move_on all
 end
@@ -3961,9 +3965,9 @@ x 28
 y 17
 end
 arch invis_exit
-slaying circus
-hp 12
-sp 16
+slaying /world/world_116_102
+hp 36
+sp 23
 x 28
 y 18
 move_on all
@@ -3981,9 +3985,9 @@ x 28
 y 19
 end
 arch invis_exit
-slaying circus
-hp 12
-sp 14
+slaying /world/world_116_102
+hp 36
+sp 21
 x 29
 move_on all
 end
@@ -4059,9 +4063,9 @@ x 29
 y 17
 end
 arch invis_exit
-slaying circus
-hp 12
-sp 16
+slaying /world/world_116_102
+hp 36
+sp 23
 x 29
 y 18
 move_on all
@@ -4079,9 +4083,9 @@ x 29
 y 19
 end
 arch invis_exit
-slaying circus
-hp 12
-sp 14
+slaying /world/world_116_102
+hp 36
+sp 21
 x 30
 move_on all
 end
@@ -4157,9 +4161,9 @@ x 30
 y 17
 end
 arch invis_exit
-slaying circus
-hp 12
-sp 16
+slaying /world/world_116_102
+hp 36
+sp 23
 x 30
 y 18
 move_on all
@@ -4177,9 +4181,9 @@ x 30
 y 19
 end
 arch invis_exit
-slaying circus
-hp 12
-sp 14
+slaying /world/world_116_102
+hp 36
+sp 21
 x 31
 move_on all
 end
@@ -4255,9 +4259,9 @@ x 31
 y 17
 end
 arch invis_exit
-slaying circus
-hp 12
-sp 16
+slaying /world/world_116_102
+hp 36
+sp 23
 x 31
 y 18
 move_on all
@@ -4270,15 +4274,14 @@ arch pstone_1
 x 31
 y 19
 end
-arch ggate_closed
+arch ggate_open
 x 31
 y 19
-move_block -all
 end
 arch invis_exit
-slaying circus
-hp 12
-sp 14
+slaying /world/world_116_102
+hp 36
+sp 21
 x 32
 move_on all
 end
@@ -4354,9 +4357,9 @@ x 32
 y 17
 end
 arch invis_exit
-slaying circus
-hp 12
-sp 16
+slaying /world/world_116_102
+hp 36
+sp 23
 x 32
 y 18
 move_on all
@@ -4369,15 +4372,14 @@ arch pstone_1
 x 32
 y 19
 end
-arch ggate_closed
+arch ggate_open
 x 32
 y 19
-move_block -all
 end
 arch invis_exit
-slaying circus
-hp 12
-sp 14
+slaying /world/world_116_102
+hp 36
+sp 21
 x 33
 move_on all
 end
@@ -4453,9 +4455,9 @@ x 33
 y 17
 end
 arch invis_exit
-slaying circus
-hp 12
-sp 16
+slaying /world/world_116_102
+hp 36
+sp 23
 x 33
 y 18
 move_on all
@@ -4473,9 +4475,9 @@ x 33
 y 19
 end
 arch invis_exit
-slaying circus
-hp 12
-sp 14
+slaying /world/world_116_102
+hp 36
+sp 21
 x 34
 move_on all
 end
@@ -4551,9 +4553,9 @@ x 34
 y 17
 end
 arch invis_exit
-slaying circus
-hp 12
-sp 16
+slaying /world/world_116_102
+hp 36
+sp 23
 x 34
 y 18
 move_on all
@@ -4571,9 +4573,9 @@ x 34
 y 19
 end
 arch invis_exit
-slaying circus
-hp 12
-sp 14
+slaying /world/world_116_102
+hp 36
+sp 21
 x 35
 move_on all
 end
@@ -4649,9 +4651,9 @@ x 35
 y 17
 end
 arch invis_exit
-slaying circus
-hp 12
-sp 16
+slaying /world/world_116_102
+hp 36
+sp 23
 x 35
 y 18
 move_on all
@@ -4669,9 +4671,9 @@ x 35
 y 19
 end
 arch invis_exit
-slaying circus
-hp 12
-sp 14
+slaying /world/world_116_102
+hp 36
+sp 21
 x 36
 move_on all
 end
@@ -4827,9 +4829,9 @@ x 36
 y 17
 end
 arch invis_exit
-slaying circus
-hp 12
-sp 16
+slaying /world/world_116_102
+hp 36
+sp 23
 x 36
 y 18
 move_on all
@@ -4847,9 +4849,9 @@ x 36
 y 19
 end
 arch invis_exit
-slaying circus
-hp 14
-sp 14
+slaying /world/world_116_102
+hp 37
+sp 21
 x 37
 move_on all
 end
@@ -4987,9 +4989,9 @@ x 37
 y 17
 end
 arch invis_exit
-slaying circus
-hp 14
-sp 16
+slaying /world/world_116_102
+hp 37
+sp 23
 x 37
 y 18
 move_on all
@@ -5007,9 +5009,9 @@ x 37
 y 19
 end
 arch invis_exit
-slaying circus
-hp 14
-sp 14
+slaying /world/world_116_102
+hp 37
+sp 21
 x 38
 move_on all
 end
@@ -5109,9 +5111,9 @@ x 38
 y 17
 end
 arch invis_exit
-slaying circus
-hp 14
-sp 16
+slaying /world/world_116_102
+hp 37
+sp 23
 x 38
 y 18
 move_on all
@@ -5129,9 +5131,9 @@ x 38
 y 19
 end
 arch invis_exit
-slaying circus
-hp 14
-sp 14
+slaying /world/world_116_102
+hp 37
+sp 21
 x 39
 move_on all
 end
@@ -5231,9 +5233,9 @@ x 39
 y 17
 end
 arch invis_exit
-slaying circus
-hp 14
-sp 16
+slaying /world/world_116_102
+hp 37
+sp 23
 x 39
 y 18
 move_on all
@@ -5251,9 +5253,9 @@ x 39
 y 19
 end
 arch invis_exit
-slaying circus
-hp 14
-sp 14
+slaying /world/world_116_102
+hp 37
+sp 21
 x 40
 move_on all
 end
@@ -5376,9 +5378,9 @@ x 40
 y 17
 end
 arch invis_exit
-slaying circus
-hp 14
-sp 16
+slaying /world/world_116_102
+hp 37
+sp 23
 x 40
 y 18
 move_on all
@@ -5396,9 +5398,9 @@ x 40
 y 19
 end
 arch invis_exit
-slaying circus
-hp 14
-sp 14
+slaying /world/world_116_102
+hp 37
+sp 21
 x 41
 move_on all
 end
@@ -5450,6 +5452,7 @@ end
 arch table_2x1
 x 41
 y 7
+type 0
 end
 arch afloor_left
 x 41
@@ -5514,9 +5517,9 @@ x 41
 y 17
 end
 arch invis_exit
-slaying circus
-hp 14
-sp 16
+slaying /world/world_116_102
+hp 37
+sp 23
 x 41
 y 18
 move_on all
@@ -5534,9 +5537,9 @@ x 41
 y 19
 end
 arch invis_exit
-slaying circus
-hp 14
-sp 14
+slaying /world/world_116_102
+hp 37
+sp 21
 x 42
 move_on all
 end
@@ -5648,9 +5651,9 @@ x 42
 y 17
 end
 arch invis_exit
-slaying circus
-hp 14
-sp 16
+slaying /world/world_116_102
+hp 37
+sp 23
 x 42
 y 18
 move_on all
@@ -5668,9 +5671,9 @@ x 42
 y 19
 end
 arch invis_exit
-slaying circus
-hp 14
-sp 14
+slaying /world/world_116_102
+hp 37
+sp 21
 x 43
 move_on all
 end
@@ -5789,9 +5792,9 @@ x 43
 y 17
 end
 arch invis_exit
-slaying circus
-hp 14
-sp 16
+slaying /world/world_116_102
+hp 37
+sp 23
 x 43
 y 18
 move_on all
@@ -5809,9 +5812,9 @@ x 43
 y 19
 end
 arch invis_exit
-slaying circus
-hp 14
-sp 14
+slaying /world/world_116_102
+hp 37
+sp 21
 x 44
 move_on all
 end
@@ -5911,9 +5914,9 @@ x 44
 y 17
 end
 arch invis_exit
-slaying circus
-hp 14
-sp 16
+slaying /world/world_116_102
+hp 37
+sp 23
 x 44
 y 18
 move_on all
@@ -5931,9 +5934,9 @@ x 44
 y 19
 end
 arch invis_exit
-slaying circus
-hp 14
-sp 14
+slaying /world/world_116_102
+hp 37
+sp 21
 x 45
 move_on all
 end
@@ -6035,9 +6038,9 @@ x 45
 y 17
 end
 arch invis_exit
-slaying circus
-hp 14
-sp 16
+slaying /world/world_116_102
+hp 37
+sp 23
 x 45
 y 18
 move_on all
@@ -6055,9 +6058,9 @@ x 45
 y 19
 end
 arch invis_exit
-slaying circus
-hp 14
-sp 14
+slaying /world/world_116_102
+hp 37
+sp 21
 x 46
 move_on all
 end
@@ -6193,9 +6196,9 @@ x 46
 y 17
 end
 arch invis_exit
-slaying circus
-hp 14
-sp 16
+slaying /world/world_116_102
+hp 37
+sp 23
 x 46
 y 18
 move_on all
@@ -6213,9 +6216,9 @@ x 46
 y 19
 end
 arch invis_exit
-slaying circus
-hp 14
-sp 14
+slaying /world/world_116_102
+hp 37
+sp 21
 x 47
 move_on all
 end
@@ -6261,7 +6264,8 @@ end
 arch barrel
 x 47
 y 7
-move_block -all
+type 0
+move_block 0
 no_pick 1
 can_roll 0
 end
@@ -6324,9 +6328,9 @@ x 47
 y 17
 end
 arch invis_exit
-slaying circus
-hp 14
-sp 16
+slaying /world/world_116_102
+hp 37
+sp 23
 x 47
 y 18
 move_on all
@@ -6344,9 +6348,9 @@ x 47
 y 19
 end
 arch invis_exit
-slaying circus
-hp 14
-sp 14
+slaying /world/world_116_102
+hp 39
+sp 21
 x 48
 move_on all
 end
@@ -6462,9 +6466,9 @@ x 48
 y 17
 end
 arch invis_exit
-slaying circus
-hp 14
-sp 16
+slaying /world/world_116_102
+hp 39
+sp 23
 x 48
 y 18
 move_on all
@@ -6482,9 +6486,9 @@ x 48
 y 19
 end
 arch invis_exit
-slaying circus
-hp 14
-sp 14
+slaying /world/world_116_102
+hp 39
+sp 21
 x 49
 move_on all
 end
@@ -6602,9 +6606,9 @@ x 49
 y 17
 end
 arch invis_exit
-slaying circus
-hp 14
-sp 16
+slaying /world/world_116_102
+hp 39
+sp 23
 x 49
 y 18
 move_on all
@@ -6622,9 +6626,9 @@ x 49
 y 19
 end
 arch invis_exit
-slaying circus
-hp 14
-sp 14
+slaying /world/world_116_102
+hp 39
+sp 21
 x 50
 move_on all
 end
@@ -6726,9 +6730,9 @@ x 50
 y 17
 end
 arch invis_exit
-slaying circus
-hp 14
-sp 16
+slaying /world/world_116_102
+hp 39
+sp 23
 x 50
 y 18
 move_on all
@@ -6746,9 +6750,9 @@ x 50
 y 19
 end
 arch invis_exit
-slaying circus
-hp 14
-sp 14
+slaying /world/world_116_102
+hp 39
+sp 21
 x 51
 move_on all
 end
@@ -6857,9 +6861,9 @@ x 51
 y 17
 end
 arch invis_exit
-slaying circus
-hp 14
-sp 16
+slaying /world/world_116_102
+hp 39
+sp 23
 x 51
 y 18
 move_on all
@@ -6877,9 +6881,9 @@ x 51
 y 19
 end
 arch invis_exit
-slaying circus
-hp 14
-sp 14
+slaying /world/world_116_102
+hp 39
+sp 21
 x 52
 move_on all
 end
@@ -6934,6 +6938,7 @@ end
 arch table_3
 x 52
 y 6
+type 0
 no_pick 1
 end
 arch afloor_left
@@ -7048,9 +7053,9 @@ x 52
 y 17
 end
 arch invis_exit
-slaying circus
-hp 14
-sp 16
+slaying /world/world_116_102
+hp 39
+sp 23
 x 52
 y 18
 move_on all
@@ -7068,9 +7073,9 @@ x 52
 y 19
 end
 arch invis_exit
-slaying circus
-hp 15
-sp 14
+slaying /world/world_116_102
+hp 39
+sp 21
 x 53
 move_on all
 end
@@ -7179,9 +7184,9 @@ x 53
 y 17
 end
 arch invis_exit
-slaying circus
-hp 15
-sp 16
+slaying /world/world_116_102
+hp 39
+sp 23
 x 53
 y 18
 move_on all
@@ -7199,9 +7204,9 @@ x 53
 y 19
 end
 arch invis_exit
-slaying circus
-hp 15
-sp 14
+slaying /world/world_116_102
+hp 39
+sp 21
 x 54
 move_on all
 end
@@ -7340,9 +7345,9 @@ x 54
 y 17
 end
 arch invis_exit
-slaying circus
-hp 15
-sp 16
+slaying /world/world_116_102
+hp 39
+sp 23
 x 54
 y 18
 move_on all
@@ -7360,9 +7365,9 @@ x 54
 y 19
 end
 arch invis_exit
-slaying circus
-hp 15
-sp 14
+slaying /world/world_116_102
+hp 39
+sp 21
 x 55
 move_on all
 end
@@ -7497,9 +7502,9 @@ x 55
 y 17
 end
 arch invis_exit
-slaying circus
-hp 15
-sp 16
+slaying /world/world_116_102
+hp 39
+sp 23
 x 55
 y 18
 move_on all
@@ -7517,9 +7522,9 @@ x 55
 y 19
 end
 arch invis_exit
-slaying circus
-hp 15
-sp 14
+slaying /world/world_116_102
+hp 39
+sp 21
 x 56
 move_on all
 end
@@ -7675,9 +7680,9 @@ x 56
 y 17
 end
 arch invis_exit
-slaying circus
-hp 15
-sp 16
+slaying /world/world_116_102
+hp 39
+sp 23
 x 56
 y 18
 move_on all
@@ -7695,9 +7700,9 @@ x 56
 y 19
 end
 arch invis_exit
-slaying circus
-hp 15
-sp 14
+slaying /world/world_116_102
+hp 39
+sp 21
 x 57
 move_on all
 end
@@ -7797,9 +7802,9 @@ x 57
 y 17
 end
 arch invis_exit
-slaying circus
-hp 15
-sp 16
+slaying /world/world_116_102
+hp 39
+sp 23
 x 57
 y 18
 move_on all
@@ -7817,9 +7822,9 @@ x 57
 y 19
 end
 arch invis_exit
-slaying circus
-hp 15
-sp 14
+slaying /world/world_116_102
+hp 39
+sp 21
 x 58
 move_on all
 end
@@ -7919,9 +7924,9 @@ x 58
 y 17
 end
 arch invis_exit
-slaying circus
-hp 15
-sp 16
+slaying /world/world_116_102
+hp 39
+sp 23
 x 58
 y 18
 move_on all
@@ -7939,9 +7944,9 @@ x 58
 y 19
 end
 arch invis_exit
-slaying circus
-hp 15
-sp 14
+slaying /world/world_116_102
+hp 39
+sp 21
 x 59
 move_on all
 end
@@ -8017,9 +8022,9 @@ x 59
 y 17
 end
 arch invis_exit
-slaying circus
-hp 15
-sp 16
+slaying /world/world_116_102
+hp 39
+sp 23
 x 59
 y 18
 move_on all
@@ -8037,9 +8042,9 @@ x 59
 y 19
 end
 arch invis_exit
-slaying circus
-hp 15
-sp 14
+slaying /world/world_116_102
+hp 39
+sp 21
 x 60
 move_on all
 end
@@ -8119,9 +8124,9 @@ x 60
 y 17
 end
 arch invis_exit
-slaying circus
-hp 15
-sp 16
+slaying /world/world_116_102
+hp 39
+sp 23
 x 60
 y 18
 move_on all
@@ -8139,9 +8144,9 @@ x 60
 y 19
 end
 arch invis_exit
-slaying circus
-hp 15
-sp 14
+slaying /world/world_116_102
+hp 39
+sp 21
 x 61
 move_on all
 end
@@ -8221,9 +8226,9 @@ x 61
 y 17
 end
 arch invis_exit
-slaying circus
-hp 15
-sp 16
+slaying /world/world_116_102
+hp 39
+sp 23
 x 61
 y 18
 move_on all
@@ -8245,9 +8250,9 @@ x 61
 y 19
 end
 arch invis_exit
-slaying circus
-hp 15
-sp 14
+slaying /world/world_116_102
+hp 39
+sp 21
 x 62
 move_on all
 end
@@ -8341,9 +8346,9 @@ x 62
 y 17
 end
 arch invis_exit
-slaying circus
-hp 15
-sp 16
+slaying /world/world_116_102
+hp 39
+sp 23
 x 62
 y 18
 move_on all
@@ -8365,9 +8370,9 @@ x 62
 y 19
 end
 arch invis_exit
-slaying circus
-hp 16
-sp 15
+slaying /world/world_116_102
+hp 39
+sp 21
 x 63
 move_on all
 end
@@ -8375,9 +8380,9 @@ arch pstone_1
 x 63
 end
 arch invis_exit
-slaying circus
-hp 16
-sp 15
+slaying /world/world_116_102
+hp 40
+sp 22
 x 63
 y 1
 move_on all
@@ -8387,9 +8392,9 @@ x 63
 y 1
 end
 arch invis_exit
-slaying circus
-hp 16
-sp 15
+slaying /world/world_116_102
+hp 40
+sp 22
 x 63
 y 2
 move_on all
@@ -8399,9 +8404,9 @@ x 63
 y 2
 end
 arch invis_exit
-slaying circus
-hp 16
-sp 15
+slaying /world/world_116_102
+hp 40
+sp 22
 x 63
 y 3
 move_on all
@@ -8411,9 +8416,9 @@ x 63
 y 3
 end
 arch invis_exit
-slaying circus
-hp 16
-sp 15
+slaying /world/world_116_102
+hp 40
+sp 22
 x 63
 y 4
 move_on all
@@ -8423,9 +8428,9 @@ x 63
 y 4
 end
 arch invis_exit
-slaying circus
-hp 16
-sp 15
+slaying /world/world_116_102
+hp 40
+sp 22
 x 63
 y 5
 move_on all
@@ -8435,9 +8440,9 @@ x 63
 y 5
 end
 arch invis_exit
-slaying circus
-hp 16
-sp 15
+slaying /world/world_116_102
+hp 40
+sp 22
 x 63
 y 6
 move_on all
@@ -8447,9 +8452,9 @@ x 63
 y 6
 end
 arch invis_exit
-slaying circus
-hp 16
-sp 15
+slaying /world/world_116_102
+hp 40
+sp 22
 x 63
 y 7
 move_on all
@@ -8459,9 +8464,9 @@ x 63
 y 7
 end
 arch invis_exit
-slaying circus
-hp 16
-sp 15
+slaying /world/world_116_102
+hp 40
+sp 22
 x 63
 y 8
 move_on all
@@ -8471,9 +8476,9 @@ x 63
 y 8
 end
 arch invis_exit
-slaying circus
-hp 16
-sp 15
+slaying /world/world_116_102
+hp 40
+sp 22
 x 63
 y 9
 move_on all
@@ -8483,9 +8488,9 @@ x 63
 y 9
 end
 arch invis_exit
-slaying circus
-hp 16
-sp 15
+slaying /world/world_116_102
+hp 40
+sp 22
 x 63
 y 10
 move_on all
@@ -8495,9 +8500,9 @@ x 63
 y 10
 end
 arch invis_exit
-slaying circus
-hp 16
-sp 15
+slaying /world/world_116_102
+hp 40
+sp 22
 x 63
 y 11
 move_on all
@@ -8507,9 +8512,9 @@ x 63
 y 11
 end
 arch invis_exit
-slaying circus
-hp 16
-sp 15
+slaying /world/world_116_102
+hp 40
+sp 22
 x 63
 y 12
 move_on all
@@ -8519,9 +8524,9 @@ x 63
 y 12
 end
 arch invis_exit
-slaying circus
-hp 16
-sp 15
+slaying /world/world_116_102
+hp 40
+sp 22
 x 63
 y 13
 move_on all
@@ -8531,9 +8536,9 @@ x 63
 y 13
 end
 arch invis_exit
-slaying circus
-hp 16
-sp 15
+slaying /world/world_116_102
+hp 40
+sp 22
 x 63
 y 14
 move_on all
@@ -8543,9 +8548,9 @@ x 63
 y 14
 end
 arch invis_exit
-slaying circus
-hp 16
-sp 15
+slaying /world/world_116_102
+hp 40
+sp 22
 x 63
 y 15
 move_on all
@@ -8555,9 +8560,9 @@ x 63
 y 15
 end
 arch invis_exit
-slaying circus
-hp 16
-sp 15
+slaying /world/world_116_102
+hp 40
+sp 22
 x 63
 y 16
 move_on all
@@ -8571,9 +8576,9 @@ x 63
 y 16
 end
 arch invis_exit
-slaying circus
-hp 16
-sp 15
+slaying /world/world_116_102
+hp 40
+sp 22
 x 63
 y 17
 move_on all
@@ -8587,9 +8592,9 @@ x 63
 y 17
 end
 arch invis_exit
-slaying circus
-hp 16
-sp 15
+slaying /world/world_116_102
+hp 39
+sp 23
 x 63
 y 18
 move_on all

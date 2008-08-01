@@ -8,9 +8,9 @@ region darcap
 width 18
 height 30
 msg
-Creator: Gnat the Gnu
-Email: gnu@foo.bar
-Date: Sun Dec 29 03:15:18 1996
+Created:  2007-10-28
+Modified: 2008-02-29
+Modified: 2008-08-01 Raphaël Quinet
 endmsg
 end
 arch blocked
@@ -78,7 +78,7 @@ end
 arch oakdoor
 slaying ../../world/world_116_102
 hp 39
-sp 24
+sp 9
 y 7
 end
 arch dungeon_magic
@@ -548,7 +548,7 @@ end
 arch cobblestones2
 x 2
 y 1
-no_pass 1
+move_block all
 end
 arch pit_closed
 hp 16
@@ -716,8 +716,8 @@ x 2
 y 13
 material 0
 randomitems none
+move_block 0
 alive 0
-no_pass 0
 pass_thru 0
 end
 arch dungeon_magic
@@ -883,7 +883,7 @@ end
 arch cobblestones2
 x 3
 y 1
-no_pass 1
+move_block all
 end
 arch pit_closed
 hp 16
@@ -1220,7 +1220,7 @@ end
 arch cobblestones2
 x 4
 y 1
-no_pass 1
+move_block all
 end
 arch pit_closed
 hp 16
@@ -1563,7 +1563,7 @@ end
 arch cobblestones2
 x 5
 y 1
-no_pass 1
+move_block all
 end
 arch pit_closed
 hp 16
@@ -1892,7 +1892,7 @@ end
 arch cobblestones2
 x 6
 y 1
-no_pass 1
+move_block all
 end
 arch pit_closed
 hp 16
@@ -2248,7 +2248,7 @@ end
 arch cobblestones2
 x 7
 y 1
-no_pass 1
+move_block all
 end
 arch pit_closed
 hp 16
@@ -2590,7 +2590,7 @@ end
 arch cobblestones2
 x 8
 y 1
-no_pass 1
+move_block all
 end
 arch pit_closed
 hp 16
@@ -2943,7 +2943,7 @@ end
 arch cobblestones2
 x 9
 y 1
-no_pass 1
+move_block all
 end
 arch pit_closed
 hp 16
@@ -3303,7 +3303,7 @@ end
 arch cobblestones2
 x 10
 y 1
-no_pass 1
+move_block all
 end
 arch pit_closed
 hp 16
@@ -3649,7 +3649,7 @@ end
 arch cobblestones2
 x 11
 y 1
-no_pass 1
+move_block all
 end
 arch pit_closed
 hp 16
@@ -3987,7 +3987,7 @@ end
 arch cobblestones2
 x 12
 y 1
-no_pass 1
+move_block all
 end
 arch pit_closed
 hp 16
@@ -4338,7 +4338,7 @@ end
 arch cobblestones2
 x 13
 y 1
-no_pass 1
+move_block all
 end
 arch pit_closed
 hp 16
@@ -4688,7 +4688,7 @@ end
 arch cobblestones2
 x 14
 y 1
-no_pass 1
+move_block all
 end
 arch pit_closed
 hp 16
@@ -4983,7 +4983,7 @@ end
 arch cobblestones2
 x 15
 y 1
-no_pass 1
+move_block all
 end
 arch pit_closed
 hp 16
