@@ -1,3 +1,98 @@
+2008-08-01 15:37  quinet
+
+	* world/world_116_102, world/world_122_116, world/world_128_109:
+	  Changed the route of the ships between Navar, Darcap and
+	  Wolfsburg in a way
+	  that makes more sense according to the world map. This should be
+	  less
+	  confusing for new players.
+
+2008-08-01 15:21  quinet
+
+	* world/world_102_108, world/world_102_127, world/world_104_115,
+	  world/world_105_115: Changed the route of the ships between
+	  Scorn, Stoneville and Santo Dominion
+	  in a way that makes more sense according to the world map. This
+	  should be
+	  less confusing for new players.
+
+2008-08-01 13:51  quinet
+
+	* darcap/darcap/circus/bigtop, darcap/darcap/circus/chess,
+	  darcap/darcap/circus/circus, darcap/darcap/circus/double,
+	  darcap/darcap/circus/fz_lobby, darcap/darcap/circus/ghost,
+	  darcap/darcap/circus/illusions, darcap/darcap/circus/roller1,
+	  darcap/darcap/circus/shooting, darcap/darcap/circus/strength,
+	  darcap/darcap/circus/wheel, darcap/darcap/circus/wurfbude,
+	  darcap/raffle/raffle1, world/world_116_102: Merged Darcap Circus
+	  into the world map world_116_102.
+	  Updated all exits of the affected maps.
+
+2008-08-01 09:53  quinet
+
+	* darcap/darcap/circus/fz_dlobby, darcap/darcap/circus/fz_olobby,
+	  darcap/darcap/circus/fz_srlobby: Added dust on top of the unused
+	  teleporters in the game lobbies so that players can see easily
+	  which ones are active.
+
+2008-08-01 09:19  quinet
+
+	* darcap/darcap/circus/circus, darcap/darcap/circus/fz_boulderball,
+	  darcap/darcap/circus/fz_d1, darcap/darcap/circus/fz_d1volcano,
+	  darcap/darcap/circus/fz_dlobby, darcap/darcap/circus/fz_lobby,
+	  darcap/darcap/circus/fz_lobby_ud, darcap/darcap/circus/fz_o1,
+	  darcap/darcap/circus/fz_olobby, darcap/darcap/circus/fz_sr1,
+	  darcap/darcap/circus/fz_srlobby,
+	  darcap/darcap/circus/fz_sumowrestling: Patch #2028361: Added the
+	  Fun Zone maps, courtesy of Chad Opperman.
+	  Created a new lobby for integration into the Darcap Circus,
+	  updated
+	  all map exits for that new lobby and set the region of all maps
+	  to
+	  darcapcircus,
+
+2008-07-29 11:48  quinet
+
+	* pup_land/castle_eureca/cave_pass2: Restored some important magic
+	  ears that were deleted in revision 9259.
+
+2008-07-24 21:55  quinet
+
+	* scorn/misc/battle_arena/arena: Removed optional swamp, replaced
+	  it with sticky floor (glue and spider webs).
+	  Added a new handle to control the archways separately from other
+	  obstacles.
+
+2008-07-24 14:57  quinet
+
+	* scorn/misc/battle_arena/arena: Added customizable obstacles to
+	  the arena: the players can add statues, walls
+	  or swamps in some parts of the arena before entering it.
+
+2008-07-23 21:09  akirschbaum
+
+	* editor/scripts/MapValidator: Adapt MapValidator script to
+	  Gridarta changes.
+
+2008-07-23 00:48  rjtanner
+
+	* marksel/shop: Add missing shop header code to the Marksel Shoppe
+	  (general store)
+
+2008-07-23 00:32  rjtanner
+
+	* lake_country/ebony/masterlev: Add missing shop header code to the
+	  Ebony Tiger Thief Guild
+
+2008-07-23 00:15  rjtanner
+
+	* dragonisland/advguild: Add missing shop header code to the
+	  Adventurers Guild map
+
+2008-07-22 06:01  rjtanner
+
+	* ChangeLog: Updated ChangeLog file using svn2cl
+
 2008-07-19 23:46  quinet
 
 	* scorn/temples/gaea, scorn/temples/gorokh, scorn/temples/mostrai,
