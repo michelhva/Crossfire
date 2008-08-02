@@ -1,3 +1,49 @@
+2008-07-29 11:51  quinet
+
+	* pup_land/castle_eureca/cave_pass2: Backport from trunk: restored
+	  some important magic ears that were deleted in revision 9259 and
+	  backported in branch revision 9595.
+
+2008-07-23 21:09  akirschbaum
+
+	* editor/scripts/MapValidator: Adapt MapValidator script to
+	  Gridarta changes.
+
+2008-07-23 00:48  rjtanner
+
+	* marksel/shop: Add missing shop header code to the Marksel Shoppe
+	  (general store)
+
+2008-07-23 00:32  rjtanner
+
+	* lake_country/ebony/masterlev: Add missing shop header code to the
+	  Ebony Tiger Thief Guild
+
+2008-07-23 00:15  rjtanner
+
+	* dragonisland/advguild: Add missing shop header code to the
+	  Adventurers Guild map
+
+2008-07-22 19:06  rjtanner
+
+	* darcap/darcap/tavern, darcap/pygmy_forest,
+	  darcap/pygmy_forest/pygmy_boss, darcap/pygmy_forest/pygmy_forest,
+	  darcap/pygmy_forest/pygmy_forest_a,
+	  darcap/pygmy_forest/pygmy_forest_b,
+	  darcap/pygmy_forest/pygmy_forest_c,
+	  darcap/pygmy_forest/pygmy_forest_d,
+	  darcap/pygmy_forest/pygmy_garden,
+	  darcap/pygmy_forest/pygmy_holes,
+	  darcap/pygmy_forest/pygmy_treehouse_a,
+	  darcap/pygmy_forest/pygmy_treehouse_b,
+	  darcap/pygmy_forest/pygmy_treehouse_c,
+	  darcap/pygmy_forest/pygmy_treehouse_d, world/world_117_101:
+	  Backport from trunk, Pygmy Forest mapset
+
+2008-07-22 18:12  rjtanner
+
+	* ChangeLog: Updated ChangeLog file using svn2cl
+
 2008-07-22 17:49  rjtanner
 
 	* styles/specialmaps/mini_jewlery, styles/specialmaps/mini_tanner,
