@@ -9,7 +9,7 @@ enter_x 1
 enter_y 1
 msg
 Created:  2005-07-16 Knut Ahlers (webmaster@knutshome.de)
-Modified: 2008-06-06 Arvid Norlander
+Modified: 2008-08-02 Nicolas Weeger
 endmsg
 maplore
 @def Resir's house
@@ -602,6 +602,7 @@ arch cobblestones2
 x 4
 end
 arch goblin
+other_arch goblin
 hp 30
 maxhp 30
 maxsp 20
@@ -679,6 +680,7 @@ x 4
 y 9
 end
 arch goblin
+other_arch goblin
 hp 30
 maxhp 30
 maxsp 20
