@@ -141,6 +141,16 @@ subtype 2
 face mbewall_0.111
 slaying ewall_0
 end
+Object building_swall
+name Fence material
+nrof 1
+weight 1200
+value 1200
+type 161
+subtype 2
+face mbswall_0.111
+slaying swall_0
+end
 Object building_vertical_gate
 name Vertical gate material
 nrof 1
