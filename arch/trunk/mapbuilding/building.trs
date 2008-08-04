@@ -32,6 +32,9 @@ treasureone building_material
   list building_objects
    chance 5
   more
+  arch building_window
+   chance 2
+  more
   arch building_vertical_gate_inv
     chance 1
   more

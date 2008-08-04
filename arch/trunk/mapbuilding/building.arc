@@ -222,3 +222,13 @@ subtype 3
 slaying igate_open_2
 face mbiron_gate_inv2.111
 end
+Object building_window
+name Window material
+nrof 1
+weight 200
+value 2000
+type 161
+subtype 4
+face mbwindow.111
+slaying dwall_win1
+end
