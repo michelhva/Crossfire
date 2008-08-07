@@ -42,11 +42,6 @@ public class GUIMultiLineLabel extends GUILabel
     private static final Pattern lineSeparatorPattern = Pattern.compile(" *\n");
 
     /**
-     * The height of one line.
-     */
-    private int lineHeight = 0;
-
-    /**
      * The text lines to draw.
      */
     private String[] lines = new String[0];
@@ -112,7 +107,7 @@ public class GUIMultiLineLabel extends GUILabel
 
         final Graphics2D g2 = (Graphics2D)g;
         final Rectangle2D rect = font.getStringBounds("X", g2.getFontRenderContext());
-        lineHeight = (int)Math.round(rect.getMaxY()-rect.getMinY()+0.5);
+        final int lineHeight = (int)Math.round(rect.getMaxY()-rect.getMinY()+0.5);
 
         int y = 0;
         for (final String line : lines)
