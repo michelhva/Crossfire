@@ -585,12 +585,12 @@ public class ItemsManager
     {
         if (player == null)
         {
-            return Collections.<CfItem>emptyList();
+            return Collections.emptyList();
         }
         final List<CfItem> inventory = items.get(player.getTag());
         if (inventory == null)
         {
-            return Collections.<CfItem>emptyList();
+            return Collections.emptyList();
         }
         return Collections.unmodifiableList(inventory);
     }
