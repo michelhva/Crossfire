@@ -187,12 +187,9 @@ public class KeyBindings
 
     /**
      * Load the key bindings from the given file.
-     *
-     * @param window The window to execute the commands in.
-     *
      * @throws IOException If the file cannot be read.
      */
-    public void loadKeyBindings(final JXCWindow window) throws IOException
+    public void loadKeyBindings() throws IOException
     {
         modified = false;
 
