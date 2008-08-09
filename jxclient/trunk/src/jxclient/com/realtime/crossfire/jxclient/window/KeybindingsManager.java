@@ -145,7 +145,7 @@ public class KeybindingsManager
         characterKeyBindings = new KeyBindings(Filenames.getKeybindingsFile(hostname, character), commands, jxcWindow);
         try
         {
-            characterKeyBindings.loadKeyBindings(jxcWindow);
+            characterKeyBindings.loadKeyBindings();
         }
         catch (final IOException ex)
         {
@@ -196,7 +196,7 @@ public class KeybindingsManager
     {
         try
         {
-            keyBindings.loadKeyBindings(jxcWindow);
+            keyBindings.loadKeyBindings();
         }
         catch (final IOException ex)
         {
