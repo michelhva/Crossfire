@@ -30,5 +30,5 @@ if (me.Applied == 0):
 		me.Identified=0
 	elif (r >= 0.99):
 		me.Cursed= 1
-		me.Con n= me.Con - 1
+		me.Con = me.Con - 1
 		me.Identified=0
