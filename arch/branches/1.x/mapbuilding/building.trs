@@ -103,7 +103,7 @@ treasureone shop_building_pupland
   list building_material
     chance 78
   more
-  list building_material_floor_pupland
+  list building_material_stonewall_pupland
     chance 20  
 end
 ##For areas like scorn area, sells DWall
@@ -131,7 +131,10 @@ treasureone building_material_stonewall_east
     chance 50
 end
 ## Dark wood floor is more likely in pupland (Gene Alexander)
-treasureone building_material_floor_pupland
+treasureone building_material_stonewall_pupland
+  arch building_wall2
+    chance 40
+  more
   arch building_woodfloor2
     chance 50
 end

@@ -1,5 +1,12 @@
 Changes for SVN top of tree:
 
+mapbuilding/building.trs: Backport from trunk, Fixed 
+a bug in the treasure list shop_building_pupland
+that prevented it from including any walls (replaced 
+the treasure list build_material_floor_pupland with 
+building_material_stonewall_pupland)
+Rick Tanner 2008-08-12
+
 mapbuilding/building.arc: Add missing "damned 1" to shop tiles.
 Andreas Kirschbaum 2008-04-24
 
