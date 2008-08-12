@@ -1,11 +1,13 @@
 arch map
 name Easy House Basement
+difficulty 5
 region scorn
 darkness 3
 width 16
 height 16
 msg
 Created:  2006-05-26 Bort
+Modified: 2008-08-11 Andrew Fuchs
 endmsg
 end
 arch cobblestones2

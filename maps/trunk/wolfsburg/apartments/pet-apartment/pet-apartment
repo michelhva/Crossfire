@@ -3,6 +3,7 @@ name pet_apartment
 swap_time 300
 reset_timeout 600
 fixed_resettime 1
+difficulty 1
 region wolfsburg
 darkness 2
 width 12
@@ -12,7 +13,7 @@ msg
 Creator: Philip Stolarczyk
 Date:    2007-06-11
 Personal pet apartment
-Modified: 2008-05-18 Arvid Norlander
+Modified: 2008-08-11 Andrew Fuchs
 endmsg
 end
 arch dungeon_magic
