@@ -29,15 +29,12 @@ move_block 0
 blocksview 0
 identified 1
 no_pick 1
-x 0
-y 0
 end
 More
 Object Machine.2
 face machine.x11
 move_block all
 x 1
-y 0
 end
 More
 Object Machine.3
@@ -45,14 +42,12 @@ face machine.x11
 move_block 0
 blocksview 0
 x 2
-y 0
 end
 More
 Object Machine.4
 face machine.x11
 move_block all
 blocksview 0
-x 0
 y 1
 end
 More
@@ -76,7 +71,6 @@ Object Machine.7
 face machine.x11
 move_block all
 blocksview 1
-x 0
 y 2
 end
 More
@@ -100,7 +94,6 @@ Object Machine.A
 face machine.x11
 move_block 0
 blocksview 0
-x 0
 y 3
 end
 More
