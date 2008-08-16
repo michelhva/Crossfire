@@ -4,7 +4,7 @@ width 10
 height 10
 msg
 Created:  2008-05-11 Nicolas Weeger
-Modified: 2008-05-13 Nicolas Weeger
+Modified: 2008-06-28 Nicolas Weeger
 endmsg
 end
 arch pstone_4
@@ -318,6 +318,8 @@ y 8
 end
 arch fighter
 msg
+@match left|right
+Left or right does match, yes.
 @match test
 Yes, to make sure everything works.
 @match dialog
