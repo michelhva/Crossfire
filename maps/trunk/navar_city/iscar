@@ -4,9 +4,11 @@ difficulty 1
 region navar
 width 10
 height 10
+enter_x 2
+enter_y 9
 msg
 Created:  2008-02-09 Nicolas Weeger
-Modified: 2008-07-17 Arvid Norlander
+Modified: 2008-08-15 Nicolas Weeger
 endmsg
 end
 arch whiteslate
@@ -224,10 +226,12 @@ msg
 @match why
 I lost my pen somewhere, and I don't have any spare one.
 @match what|job
+@question why Why can't you write?
 I'm a writer, I write books for children.
 
 But I can't write now...
 @match *
+@question job What are you doing?
 Hello.
 endmsg
 x 3
