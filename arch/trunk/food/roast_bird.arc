@@ -1,7 +1,7 @@
 Object roast_bird
 name roast bird
 face roast_bird.111
-color_fg orange
+magicmap orange
 food 450
 nrof 1
 type 6

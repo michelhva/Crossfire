@@ -1,7 +1,7 @@
 Object haggis
 name haggis
 face haggis.111
-color_fg orange
+magicmap orange
 food 500
 nrof 1
 type 6

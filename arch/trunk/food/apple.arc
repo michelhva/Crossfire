@@ -1,6 +1,6 @@
 Object apple
 face apple.111
-color_fg red
+magicmap red
 food 25
 nrof 1
 type 6

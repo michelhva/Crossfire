@@ -1,6 +1,6 @@
 Object cheeseburger
 face ch_burger.111
-color_fg dark_orange
+magicmap dark_orange
 food 350
 nrof 1
 type 6

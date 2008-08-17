@@ -6,7 +6,6 @@ nrof 1
 type 6
 material 32
 value 300
-color_fg green
 weight 32
 magicmap green
 name_pl pipeweed

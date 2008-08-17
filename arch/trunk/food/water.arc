@@ -1,7 +1,7 @@
 Object water
 face water.111
 on_use_yield wbottle_empty
-color_fg blue
+magicmap blue
 food 5
 nrof 1
 type 54

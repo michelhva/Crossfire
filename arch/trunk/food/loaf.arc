@@ -1,7 +1,7 @@
 Object loaf
 name bread
 face loaf.111
-color_fg brown
+magicmap brown
 food 100
 nrof 1
 type 6

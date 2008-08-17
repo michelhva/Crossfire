@@ -1,7 +1,7 @@
 Object carrot
 name carrots
 face carrot.111
-color_fg orange
+magicmap orange
 food 20
 nrof 1
 type 6

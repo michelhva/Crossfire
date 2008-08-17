@@ -1,6 +1,6 @@
 Object food
 face food.111
-color_fg dark_orange
+magicmap dark_orange
 food 200
 nrof 1
 type 6

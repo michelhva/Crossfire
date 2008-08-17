@@ -1,7 +1,7 @@
 Object mandrake_root
 name mandrake root
 face root.111
-color_fg orange
+magicmap orange
 food 15
 nrof 1
 type 6
