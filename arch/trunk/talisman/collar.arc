@@ -10,7 +10,7 @@ collar.112
 mina
 anim_speed 3
 client_anim_random 1
-color_fg red
+magicmap red
 type 39
 material 12
 weight 500

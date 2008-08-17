@@ -1,6 +1,6 @@
 Object player_changer
 face teleporter.111
-color_fg red
+magicmap red
 speed 0.1
 type 57
 no_pick 1

@@ -2,7 +2,7 @@ Object fishboat
 name fishing boat
 type 66
 face fishboat.x11
-color_fg brown
+magicmap brown
 no_pick 1
 move_allow walk
 move_block boat
@@ -13,7 +13,7 @@ More
 Object fishboat_2
 name fishing boat
 type 66
-color_fg brown
+magicmap brown
 face fishboat.x11
 x 1
 no_pick 1

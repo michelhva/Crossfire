@@ -12,7 +12,7 @@ blades.111
 blades.111
 mina
 level 1
-color_fg black
+magicmap black
 is_animated 0
 invisible 1
 no_pick 1

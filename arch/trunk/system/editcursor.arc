@@ -1,6 +1,6 @@
 Object editcursor
 face wizard.151
-color_fg black
+magicmap black
 anim
 wizard.111
 wizard.131

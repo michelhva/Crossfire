@@ -1,6 +1,6 @@
 Object galleon
 face galleon.111
-color_fg brown
+magicmap brown
 type 66
 no_pick 1
 move_allow walk

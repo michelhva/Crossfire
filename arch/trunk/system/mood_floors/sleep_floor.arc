@@ -1,7 +1,7 @@
 Object sleep_floor
 face sleep_floor.111
 no_pick 1
-color_fg orange
+magicmap orange
 last_sp 3
 speed 1
 type 65
