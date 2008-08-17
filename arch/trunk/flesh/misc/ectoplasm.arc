@@ -3,7 +3,7 @@ nrof 1
 name ectoplasm
 face ectoplasm.111
 type 72
-color_fg grey
+magicmap grey
 material 64
 weight 20
 value 200

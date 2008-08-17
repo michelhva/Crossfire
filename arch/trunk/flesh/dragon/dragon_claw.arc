@@ -2,7 +2,7 @@ Object dragonclaw
 name dragon's claw
 nrof 1
 face dragon_claw.111
-color_fg green
+magicmap green
 material 32
 weight 1
 value 55

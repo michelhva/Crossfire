@@ -3,7 +3,7 @@ name hide
 nrof 1
 face hide_grey.111
 material 32
-color_fg grey
+magicmap grey
 type 72
 weight 20
 value 300

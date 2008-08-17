@@ -24,7 +24,7 @@ ac 3
 resist_physical 10
 weight 25000
 value 50000
-color_fg black
+magicmap black
 body_arm -1
 item_power 5
 end
