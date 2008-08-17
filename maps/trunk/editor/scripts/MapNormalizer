@@ -10,7 +10,7 @@ import net.sf.gridarta.map.ShrinkMapSizeUtils;
 void normalizeMap(File mapFile, String mapPath) {
     print(mapPath);
 
-    map = mainControl.getMapManager().openMapFile(mapFile, false);
+    map = mapManager.openMapFile(mapFile, false);
     if (map == null) {
         print("Cannot load map file");
         return;
@@ -41,7 +41,7 @@ if (baseDirectory.endsWith("/")) {
     baseDirectory = baseDirectory.substring(0, baseDirectory.length() - 1);
 }
 
-String mapDefaultFolder = mainControl.getGlobalSettings().getMapDefaultFolder();
+String mapDefaultFolder = globalSettings.getMapDefaultFolder();
 String rootDirectory = mapDefaultFolder + baseDirectory;
 Iterator it = new RecursiveFileIterator(new File(rootDirectory));
 while (it.hasNext()) {

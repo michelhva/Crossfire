@@ -11,8 +11,6 @@ import net.sf.gridarta.map.MapSquare;
 
 int countMapFiles = 0;
 int countSpellObjects = 0;
-ArchetypeSet archetypeSet = mainControl.getArchetypeSet();
-ArchetypeParser archetypeParser = mainControl.getArchetypeParser();
 
 String[] spellMapping = {
     "spell_magic_bullet",               /* 0 */
@@ -255,7 +253,7 @@ void convertGameObject(GameObject gameObject) {
                 print("invalid spell number " + spellId + " in object " + gameObject.getBestName() + " at " + gameObject.getMapX() + "/" + gameObject.getMapY());
             } else {
                 GameObject spell = archetypeSet.getOrCreateArchetype(spellMapping[spellId]).createArch();
-                archetypeParser.postParseGameObject(spell, 0);
+                spell.postParseGameObject(0);
                 gameObject.addLast(spell);
                 countSpellObjects++;
             }
@@ -274,7 +272,7 @@ void convertGameObject(GameObject gameObject) {
 void convertMap(File mapFile, String mapPath) {
     print(mapPath);
 
-    mapControl = mainControl.getMapManager().openMapFile(mapFile, false);
+    mapControl = mapManager.openMapFile(mapFile, false);
     if (mapControl == null) {
         print("Cannot load map file");
         return;
@@ -309,7 +307,7 @@ if (baseDirectory.endsWith("/")) {
     baseDirectory = baseDirectory.substring(0, baseDirectory.length() - 1);
 }
 
-String mapDefaultFolder = mainControl.getGlobalSettings().getMapDefaultFolder();
+String mapDefaultFolder = globalSettings.getMapDefaultFolder();
 String rootDirectory = mapDefaultFolder + baseDirectory;
 Iterator it = new RecursiveFileIterator(new File(rootDirectory));
 while (it.hasNext()) {
