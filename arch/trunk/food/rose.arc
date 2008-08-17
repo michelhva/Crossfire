@@ -6,7 +6,6 @@ nrof 1
 type 6
 material 32
 value 60
-color_fg red
 weight 2
 magicmap red
 name_pl pink roses
@@ -20,7 +19,6 @@ nrof 1
 type 6
 material 32
 value 80
-color_fg red
 weight 2
 magicmap red
 name_pl red roses
@@ -60,7 +58,6 @@ nrof 1
 type 6
 material 32
 value 160
-color_fg black
 weight 2
 magicmap black
 name_pl black roses

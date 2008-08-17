@@ -1,7 +1,7 @@
 Object tomato
 name tomato
 face tomato.111
-color_fg red
+magicmap red
 food 50
 nrof 1
 type 6
@@ -16,7 +16,7 @@ end
 Object tomato_big
 name very large tomato
 face tomato_big.111
-color_fg red
+magicmap red
 food 200
 nrof 1
 type 6

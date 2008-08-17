@@ -12,5 +12,5 @@ maxhp 1
 speed -1.0
 invisible 1
 is_used_up 1
-color_fg black
+magicmap black
 end

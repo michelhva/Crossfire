@@ -1,7 +1,7 @@
 Object fishfood
 name fish
 face fishfood.111
-color_fg green
+magicmap green
 food 100
 nrof 1
 type 6

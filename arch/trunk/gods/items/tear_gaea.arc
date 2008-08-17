@@ -11,7 +11,7 @@ nrof 1
 level 10
 anim_speed 4
 client_anim_random 1
-color_fg blue
+magicmap blue
 type 5
 weight 10
 name_pl Gaea's tears

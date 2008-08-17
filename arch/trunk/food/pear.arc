@@ -1,6 +1,6 @@
 Object pear
 face pear.111
-color_fg green
+magicmap green
 food 25
 nrof 1
 type 6

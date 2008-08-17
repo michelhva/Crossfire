@@ -2,7 +2,7 @@ Object w_glass
 name glass of wine
 face w_glass.111
 on_use_yield w_glass_empty
-color_fg red
+magicmap red
 food 10
 nrof 1
 type 54

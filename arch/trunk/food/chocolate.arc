@@ -1,6 +1,6 @@
 Object chocolate
 face chocolate.111
-color_fg brown
+magicmap brown
 food 50
 nrof 1
 type 6
