@@ -18,7 +18,7 @@ anim_speed 2
 client_anim_random 1
 type 15
 nrof 1
-color_fg black
+magicmap black
 name_pl unicorn horns
 client_type 627
 item_power 2

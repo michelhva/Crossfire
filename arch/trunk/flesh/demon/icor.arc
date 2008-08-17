@@ -47,7 +47,7 @@ is_used_up 1
 material 32
 food 40
 type 72
-color_fg green
+magicmap green
 weight 45
 speed 0.03
 hp -100

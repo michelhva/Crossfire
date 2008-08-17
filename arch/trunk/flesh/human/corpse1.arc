@@ -1,6 +1,6 @@
 Object corpse1
 face corpse1.111
-color_fg blue
+magicmap blue
 nrof 1
 type 7
 material 32

@@ -3,7 +3,7 @@ nrof 1
 name wing
 face insect_wing.111
 type 72
-color_fg blue
+magicmap blue
 material 32
 weight 10
 value 20
