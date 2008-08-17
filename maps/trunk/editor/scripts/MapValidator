@@ -19,7 +19,7 @@ void log(String message) {
 }
 
 void checkMap(File mapFile, String mapPath) {
-    map = mainControl.getMapManager().openMapFile(mapFile, false);
+    map = mapManager.openMapFile(mapFile, false);
     if (map == null) {
         log(mapPath + ":");
         log("- cannot load map file");
@@ -27,11 +27,11 @@ void checkMap(File mapFile, String mapPath) {
     }
     ErrorCollector errorCollector;
     try {
-        mainControl.validateMap(map.getMapModel());
+        validators.validateAll(map.getMapModel());
     } finally {
         errorCollector = map.getMapModel().getErrors();
         if (map.nViews() <= 0) {
-            mainControl.getMapManager().closeLevel(map);
+            mapManager.closeLevel(map);
         }
     }
 
@@ -85,7 +85,7 @@ try {
         baseDirectory = baseDirectory.substring(0, baseDirectory.length() - 1);
     }
 
-    String mapDefaultFolder = mainControl.getGlobalSettings().getMapDefaultFolder();
+    String mapDefaultFolder = globalSettings.getMapDefaultFolder();
     String rootDirectory = mapDefaultFolder + baseDirectory;
     Iterator it = new RecursiveFileIterator(new File(rootDirectory));
     while (it.hasNext()) {

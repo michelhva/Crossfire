@@ -35,7 +35,7 @@ boolean updateMap(File mapFile, File pictureFile) {
         return false;
     }
     print("converting " + mapFile + " to " + pictureFile + ".");
-    map = mainControl.getMapManager().openMapFile(mapFile, false);
+    map = mapManager.openMapFile(mapFile, false);
     if (map == null) {
         return false;
     }
@@ -48,7 +48,7 @@ boolean updateMap(File mapFile, File pictureFile) {
         }
     } finally {
         if (map.nViews() <= 0) {
-            mainControl.getMapManager().closeLevel(map);
+            mapManager.closeLevel(map);
         }
     }
     return true;
@@ -74,7 +74,7 @@ void checkDaList() {
     DestHeight = TileHeight.intValue() * NumY.intValue();
 
     if (Location == null || Location.length() < 1) {
-        Location = mainControl.getGlobalSettings().getMapDefaultFolder();
+        Location = globalSettings.getMapDefaultFolder();
         print("autodetected location " + Location);
     }
 
