@@ -1,7 +1,7 @@
 Object rowboat
 type 66
 face rowboat.x11
-color_fg brown
+magicmap brown
 no_pick 1
 move_allow walk
 move_block boat
@@ -12,7 +12,7 @@ More
 Object rowboat_2
 name rowboat
 type 66
-color_fg brown
+magicmap brown
 face rowboat.x11
 x 1
 no_pick 1

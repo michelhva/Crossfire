@@ -1,7 +1,7 @@
 Object wagon
 type 66
 face wagon.111
-color_fg brown
+magicmap brown
 no_pick 1
 visibility 100
 client_type 25012

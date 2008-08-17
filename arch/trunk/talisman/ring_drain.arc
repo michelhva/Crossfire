@@ -8,7 +8,7 @@ ring_drain.112
 ring_drain.113
 ring_drain.114
 mina
-color_fg black
+magicmap black
 value 10000
 weight 40
 type 70
