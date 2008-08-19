@@ -2108,6 +2108,11 @@ arch farmland
 x 14
 y 6
 end
+arch light4
+x 14
+y 7
+glow_radius 50
+end
 arch grassdark
 name Thick Forest Terrain
 x 14
@@ -4344,8 +4349,6 @@ x 29
 y 7
 level 110
 invisible 1
-arch spell_daylight
-end
 end
 arch grassdark
 name Thick Forest Terrain

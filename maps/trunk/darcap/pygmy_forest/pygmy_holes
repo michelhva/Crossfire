@@ -1290,6 +1290,11 @@ arch cave4
 x 8
 y 10
 end
+arch light4
+x 8
+y 11
+glow_radius 50
+end
 arch cave2
 x 8
 y 12
@@ -1533,8 +1538,6 @@ x 8
 y 24
 level 110
 invisible 1
-arch spell_daylight
-end
 end
 arch cave2
 x 9
