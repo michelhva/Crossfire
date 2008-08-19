@@ -406,8 +406,6 @@ end
 arch pipeweed
 x 2
 y 17
-type 0
-material 0
 no_pick 1
 end
 arch invis_exit
@@ -683,8 +681,6 @@ end
 arch pipeweed
 x 5
 y 8
-type 0
-material 0
 no_pick 1
 end
 arch grass
@@ -694,8 +690,6 @@ end
 arch pipeweed
 x 5
 y 9
-type 0
-material 0
 no_pick 1
 end
 arch grass
@@ -705,8 +699,6 @@ end
 arch pipeweed
 x 5
 y 10
-type 0
-material 0
 no_pick 1
 end
 arch grass
@@ -716,8 +708,6 @@ end
 arch pipeweed
 x 5
 y 11
-type 0
-material 0
 no_pick 1
 end
 arch grass
@@ -809,8 +799,6 @@ end
 arch pipeweed
 x 6
 y 8
-type 0
-material 0
 no_pick 1
 end
 arch grass
@@ -820,8 +808,6 @@ end
 arch pipeweed
 x 6
 y 9
-type 0
-material 0
 no_pick 1
 end
 arch grass
@@ -831,8 +817,6 @@ end
 arch pipeweed
 x 6
 y 10
-type 0
-material 0
 no_pick 1
 end
 arch grass
@@ -842,8 +826,6 @@ end
 arch pipeweed
 x 6
 y 11
-type 0
-material 0
 no_pick 1
 end
 arch grass
@@ -1140,9 +1122,6 @@ arch bed_1
 name Medical Bed
 x 8
 y 8
-type 0
-material 0
-no_pick 1
 end
 arch locked_door1
 name Wounded Man
@@ -1161,8 +1140,6 @@ end
 arch chair_wv_1.4
 x 8
 y 9
-type 0
-material 0
 no_pick 1
 end
 arch afloor_left
@@ -1173,9 +1150,6 @@ arch bed_1
 name Medical Bed
 x 8
 y 10
-type 0
-material 0
-no_pick 1
 end
 arch afloor_left
 x 8
@@ -1184,8 +1158,6 @@ end
 arch chair_wv_1.4
 x 8
 y 11
-type 0
-material 0
 no_pick 1
 end
 arch dungeon_magic
@@ -1297,8 +1269,6 @@ end
 arch chair_wv_1.1
 x 9
 y 8
-type 0
-material 0
 no_pick 1
 end
 arch afloor_left
@@ -1447,8 +1417,6 @@ end
 arch chair_wv_1.4
 x 10
 y 6
-type 0
-material 0
 no_pick 1
 end
 arch afloor_left
@@ -1467,9 +1435,6 @@ arch bed_1
 name Medical Bed
 x 10
 y 8
-type 0
-material 0
-no_pick 1
 end
 arch afloor_left
 x 10
@@ -1591,11 +1556,9 @@ arch afloor_left
 x 11
 y 6
 end
-arch table_3
+arch table
 x 11
 y 6
-type 0
-material 0
 no_pick 1
 end
 arch afloor_left
@@ -1617,8 +1580,6 @@ end
 arch chair_wv_1.1
 x 11
 y 8
-type 0
-material 0
 no_pick 1
 end
 arch afloor_left
@@ -1742,8 +1703,6 @@ end
 arch chair_wv_1.2
 x 12
 y 6
-type 0
-material 0
 no_pick 1
 end
 arch afloor_left
@@ -1762,9 +1721,6 @@ arch bed_1
 name Medical Bed
 x 12
 y 8
-type 0
-material 0
-no_pick 1
 end
 arch afloor_left
 x 12
@@ -1891,8 +1847,6 @@ end
 arch chair_wv_1.1
 x 13
 y 8
-type 0
-material 0
 no_pick 1
 end
 arch afloor_left
@@ -2027,9 +1981,6 @@ arch bed_1
 name Medical Bed
 x 14
 y 8
-type 0
-material 0
-no_pick 1
 end
 arch afloor_left
 x 14
@@ -2046,8 +1997,6 @@ end
 arch chair_wv_1.2
 x 14
 y 11
-type 0
-material 0
 no_pick 1
 end
 arch dungeon_magic
@@ -2831,8 +2780,6 @@ end
 arch chair_wv_1.4
 x 20
 y 7
-type 0
-material 0
 no_pick 1
 end
 arch afloor_left
@@ -2960,8 +2907,6 @@ end
 arch chair_wv_1.1
 x 21
 y 6
-type 0
-material 0
 no_pick 1
 end
 arch afloor_left
@@ -2971,8 +2916,6 @@ end
 arch table_2x1
 x 21
 y 7
-type 0
-material 0
 end
 arch afloor_left
 x 21
@@ -2981,8 +2924,6 @@ end
 arch chair_wv_1.3
 x 21
 y 8
-type 0
-material 0
 no_pick 1
 end
 arch afloor_left
@@ -3102,8 +3043,6 @@ end
 arch chair_wv_1.1
 x 22
 y 6
-type 0
-material 0
 no_pick 1
 end
 arch afloor_left
@@ -3117,8 +3056,6 @@ end
 arch chair_wv_1.3
 x 22
 y 8
-type 0
-material 0
 no_pick 1
 end
 arch afloor_left
@@ -3254,8 +3191,6 @@ end
 arch chair_wv_1.2
 x 23
 y 7
-type 0
-material 0
 no_pick 1
 end
 arch afloor_left
@@ -5349,8 +5284,6 @@ end
 arch chair_wv_1.4
 x 40
 y 7
-type 0
-material 0
 no_pick 1
 end
 arch afloor_left
@@ -5478,8 +5411,6 @@ end
 arch chair_wv_1.1
 x 41
 y 6
-type 0
-material 0
 no_pick 1
 end
 arch afloor_left
@@ -5489,8 +5420,6 @@ end
 arch table_2x1
 x 41
 y 7
-type 0
-material 0
 end
 arch afloor_left
 x 41
@@ -5499,8 +5428,6 @@ end
 arch chair_wv_1.3
 x 41
 y 8
-type 0
-material 0
 no_pick 1
 end
 arch afloor_left
@@ -5620,8 +5547,6 @@ end
 arch chair_wv_1.1
 x 42
 y 6
-type 0
-material 0
 no_pick 1
 end
 arch afloor_left
@@ -5635,8 +5560,6 @@ end
 arch chair_wv_1.3
 x 42
 y 8
-type 0
-material 0
 no_pick 1
 end
 arch afloor_left
@@ -5770,8 +5693,6 @@ end
 arch chair_wv_1.2
 x 43
 y 7
-type 0
-material 0
 no_pick 1
 end
 arch afloor_left
@@ -6597,9 +6518,6 @@ arch bed_1
 name Medical Bed
 x 49
 y 8
-type 0
-material 0
-no_pick 1
 end
 arch afloor_left
 x 49
@@ -6616,8 +6534,6 @@ end
 arch chair_wv_1.4
 x 49
 y 11
-type 0
-material 0
 no_pick 1
 end
 arch dungeon_magic
@@ -6729,8 +6645,6 @@ end
 arch chair_wv_1.1
 x 50
 y 8
-type 0
-material 0
 no_pick 1
 end
 arch afloor_left
@@ -6842,8 +6756,6 @@ end
 arch chair_wv_1.4
 x 51
 y 6
-type 0
-material 0
 no_pick 1
 end
 arch afloor_left
@@ -6862,9 +6774,6 @@ arch bed_1
 name Medical Bed
 x 51
 y 8
-type 0
-material 0
-no_pick 1
 end
 arch afloor_left
 x 51
@@ -6986,11 +6895,9 @@ arch afloor_left
 x 52
 y 6
 end
-arch table_3
+arch table
 x 52
 y 6
-type 0
-material 0
 no_pick 1
 end
 arch afloor_left
@@ -7012,8 +6919,6 @@ end
 arch chair_wv_1.1
 x 52
 y 8
-type 0
-material 0
 no_pick 1
 end
 arch afloor_left
@@ -7170,8 +7075,6 @@ end
 arch chair_wv_1.2
 x 53
 y 6
-type 0
-material 0
 no_pick 1
 end
 arch afloor_left
@@ -7190,9 +7093,6 @@ arch bed_1
 name Medical Bed
 x 53
 y 8
-type 0
-material 0
-no_pick 1
 end
 arch afloor_left
 x 53
@@ -7315,8 +7215,6 @@ end
 arch chair_wv_1.1
 x 54
 y 8
-type 0
-material 0
 no_pick 1
 end
 arch afloor_left
@@ -7492,9 +7390,6 @@ arch bed_1
 name Medical Bed
 x 55
 y 8
-type 0
-material 0
-no_pick 1
 end
 arch afloor_left
 x 55
@@ -7503,8 +7398,6 @@ end
 arch chair_wv_1.2
 x 55
 y 9
-type 0
-material 0
 no_pick 1
 end
 arch afloor_left
@@ -7515,9 +7408,6 @@ arch bed_1
 name Medical Bed
 x 55
 y 10
-type 0
-material 0
-no_pick 1
 end
 arch afloor_left
 x 55
@@ -7526,8 +7416,6 @@ end
 arch chair_wv_1.2
 x 55
 y 11
-type 0
-material 0
 no_pick 1
 end
 arch dungeon_magic
@@ -7805,9 +7693,6 @@ end
 arch pipeweed
 x 57
 y 8
-type 0
-material 0
-no_pick 1
 end
 arch grass
 x 57
@@ -7816,8 +7701,6 @@ end
 arch pipeweed
 x 57
 y 9
-type 0
-material 0
 no_pick 1
 end
 arch grass
@@ -7827,8 +7710,6 @@ end
 arch pipeweed
 x 57
 y 10
-type 0
-material 0
 no_pick 1
 end
 arch grass
@@ -7838,8 +7719,6 @@ end
 arch pipeweed
 x 57
 y 11
-type 0
-material 0
 no_pick 1
 end
 arch grass
@@ -7931,8 +7810,6 @@ end
 arch pipeweed
 x 58
 y 8
-type 0
-material 0
 no_pick 1
 end
 arch grass
@@ -7942,8 +7819,6 @@ end
 arch pipeweed
 x 58
 y 9
-type 0
-material 0
 no_pick 1
 end
 arch grass
@@ -7953,8 +7828,6 @@ end
 arch pipeweed
 x 58
 y 10
-type 0
-material 0
 no_pick 1
 end
 arch grass
@@ -7964,8 +7837,6 @@ end
 arch pipeweed
 x 58
 y 11
-type 0
-material 0
 no_pick 1
 end
 arch grass
@@ -8403,8 +8274,6 @@ end
 arch pipeweed
 x 62
 y 16
-type 0
-material 0
 no_pick 1
 end
 arch grass
