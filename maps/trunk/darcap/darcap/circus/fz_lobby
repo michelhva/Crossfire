@@ -8,7 +8,7 @@ enter_x 31
 enter_y 16
 msg
 Created:  2008-07-31 Raphaël Quinet
-Modified: 2008-08-02 Raphaël Quinet
+Modified: 2008-08-18 Rick Tanner
 endmsg
 outdoor 1
 end
@@ -1104,6 +1104,7 @@ y 4
 end
 arch perm_magic_portal
 name Game Pending
+slaying fz_lobby
 x 8
 y 4
 end
@@ -1570,6 +1571,7 @@ y 4
 end
 arch perm_magic_portal
 name Game Pending
+slaying fz_lobby
 x 11
 y 4
 end
@@ -1993,6 +1995,7 @@ y 4
 end
 arch perm_magic_portal
 name Game Pending
+slaying fz_lobby
 x 14
 y 4
 end
@@ -2286,7 +2289,6 @@ end
 arch barrel
 x 16
 y 7
-type 0
 material 0
 move_block 0
 no_pick 1
@@ -5320,6 +5322,7 @@ y 4
 end
 arch perm_magic_portal
 name Game Pending
+slaying fz_lobby
 x 40
 y 4
 end
@@ -5744,6 +5747,7 @@ y 4
 end
 arch perm_magic_portal
 name Game Pending
+slaying fz_lobby
 x 43
 y 4
 end
@@ -6132,6 +6136,7 @@ y 4
 end
 arch perm_magic_portal
 name Game Pending
+slaying fz_lobby
 x 46
 y 4
 end
@@ -6303,7 +6308,6 @@ end
 arch barrel
 x 47
 y 7
-type 0
 material 0
 move_block 0
 no_pick 1
@@ -6561,6 +6565,7 @@ y 4
 end
 arch perm_magic_portal
 name Game Pending
+slaying fz_lobby
 x 49
 y 4
 end
@@ -6961,6 +6966,7 @@ y 4
 end
 arch perm_magic_portal
 name Game Pending
+slaying fz_lobby
 x 52
 y 4
 end
@@ -7450,6 +7456,7 @@ y 4
 end
 arch perm_magic_portal
 name Game Pending
+slaying fz_lobby
 x 55
 y 4
 end

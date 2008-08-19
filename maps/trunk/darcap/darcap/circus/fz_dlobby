@@ -1,11 +1,12 @@
 arch map
 name Fun Zone Deatchmatch Lobby
+difficulty 1
 region darcapcircus
 width 10
 height 11
 msg
 Created:  2008-07-24 Chad Opperman | cromagic@sbcglobal.net
-Modified: 2008-07-29 Chad Opperman | cromagic@sbcglobal.net
+Modified: 2008-08-18 Rick Tanner
 Modified: 2008-08-01 Raphaël Quinet
 endmsg
 end
@@ -101,6 +102,7 @@ y 3
 end
 arch perm_magic_portal
 name Deathmatch Area Pending
+slaying fz_dlobby
 hp 17
 sp 6
 x 1
@@ -120,6 +122,7 @@ y 5
 end
 arch perm_magic_portal
 name Deathmatch Area Pending
+slaying fz_dlobby
 hp 17
 sp 6
 x 1
@@ -139,6 +142,7 @@ y 7
 end
 arch perm_magic_portal
 name Deathmatch Area Pending
+slaying fz_dlobby
 hp 17
 sp 6
 x 1
@@ -158,6 +162,7 @@ y 9
 end
 arch perm_magic_portal
 name Deathmatch Area Pending
+slaying fz_dlobby
 hp 17
 sp 6
 x 1
