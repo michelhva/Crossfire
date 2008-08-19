@@ -8,7 +8,7 @@ msg
 Creator: Chad Opperman
 cromagic@sbcglobal.net
 Date:    2007-12-24
-Modified: 2008-01-03 Gene Alexander
+Modified: 2008-08-18 Chad Opperman | cromagic@sbcglobal.net
 endmsg
 end
 arch grassdark
@@ -187,30 +187,35 @@ move_block fly_high swim boat
 slow_move 3
 end
 arch unusual_kobold
-name Pygmy
+name Pygmy of the Forest
 race Pygmy
-Con 1500
-Wis 5
+msg
+@match *
+The Pygmy doesn't answer back...instead it gives you the evil eye.
+endmsg
+Con 25
+Wis 7
 Int 100
 hp 15000
 maxhp 15000
-exp 100000
+exp 400000
 dam 15
-wc -100
+wc -35
+ac -50
 x 1
 y 5
 speed 2.0
 level 120
 attacktype 1280
-resist_magic 75
-resist_fire 65
-resist_electricity 75
-resist_cold 75
+resist_magic 80
+resist_fire 80
+resist_electricity 80
+resist_cold 80
 resist_confusion 100
-resist_acid 75
+resist_acid 80
 resist_drain 100
-resist_weaponmagic 75
-resist_ghosthit 75
+resist_weaponmagic 80
+resist_ghosthit 80
 resist_poison 100
 resist_slow 100
 resist_paralyze 100
@@ -218,8 +223,8 @@ resist_turn_undead 100
 resist_fear 100
 resist_deplete 100
 resist_death 100
-resist_chaos 75
-resist_godpower 75
+resist_chaos 80
+resist_godpower 80
 resist_holyword 100
 resist_blind 100
 randomitems goblin_parts
@@ -280,30 +285,35 @@ move_block fly_high swim boat
 slow_move 3
 end
 arch unusual_kobold
-name Pygmy
+name Pygmy of the Forest
 race Pygmy
-Con 1500
-Wis 5
+msg
+@match *
+The Pygmy doesn't answer back...instead it gives you the evil eye.
+endmsg
+Con 25
+Wis 7
 Int 100
 hp 15000
 maxhp 15000
-exp 100000
+exp 400000
 dam 15
-wc -100
+wc -35
+ac -50
 x 1
 y 9
 speed 2.0
 level 120
 attacktype 1280
-resist_magic 75
-resist_fire 65
-resist_electricity 75
-resist_cold 75
+resist_magic 80
+resist_fire 80
+resist_electricity 80
+resist_cold 80
 resist_confusion 100
-resist_acid 75
+resist_acid 80
 resist_drain 100
-resist_weaponmagic 75
-resist_ghosthit 75
+resist_weaponmagic 80
+resist_ghosthit 80
 resist_poison 100
 resist_slow 100
 resist_paralyze 100
@@ -311,8 +321,8 @@ resist_turn_undead 100
 resist_fear 100
 resist_deplete 100
 resist_death 100
-resist_chaos 75
-resist_godpower 75
+resist_chaos 80
+resist_godpower 80
 resist_holyword 100
 resist_blind 100
 randomitems goblin_parts
@@ -981,30 +991,35 @@ move_block fly_high swim boat
 slow_move 3
 end
 arch unusual_kobold
-name Pygmy
+name Pygmy of the Forest
 race Pygmy
-Con 1500
-Wis 5
+msg
+@match *
+The Pygmy doesn't answer back...instead it gives you the evil eye.
+endmsg
+Con 25
+Wis 7
 Int 100
 hp 15000
 maxhp 15000
-exp 100000
+exp 400000
 dam 15
-wc -100
+wc -35
+ac -50
 x 6
 y 7
 speed 2.0
 level 120
 attacktype 1280
-resist_magic 75
-resist_fire 65
-resist_electricity 75
-resist_cold 75
+resist_magic 80
+resist_fire 80
+resist_electricity 80
+resist_cold 80
 resist_confusion 100
-resist_acid 75
+resist_acid 80
 resist_drain 100
-resist_weaponmagic 75
-resist_ghosthit 75
+resist_weaponmagic 80
+resist_ghosthit 80
 resist_poison 100
 resist_slow 100
 resist_paralyze 100
@@ -1012,8 +1027,8 @@ resist_turn_undead 100
 resist_fear 100
 resist_deplete 100
 resist_death 100
-resist_chaos 75
-resist_godpower 75
+resist_chaos 80
+resist_godpower 80
 resist_holyword 100
 resist_blind 100
 randomitems goblin_parts
@@ -1509,30 +1524,35 @@ move_block fly_high swim boat
 slow_move 3
 end
 arch unusual_kobold
-name Pygmy
+name Pygmy of the Forest
 race Pygmy
-Con 1500
-Wis 5
+msg
+@match *
+The Pygmy doesn't answer back...instead it gives you the evil eye.
+endmsg
+Con 25
+Wis 7
 Int 100
 hp 15000
 maxhp 15000
-exp 100000
+exp 400000
 dam 15
-wc -100
+wc -35
+ac -50
 x 9
 y 12
 speed 2.0
 level 120
 attacktype 1280
-resist_magic 75
-resist_fire 65
-resist_electricity 75
-resist_cold 75
+resist_magic 80
+resist_fire 80
+resist_electricity 80
+resist_cold 80
 resist_confusion 100
-resist_acid 75
+resist_acid 80
 resist_drain 100
-resist_weaponmagic 75
-resist_ghosthit 75
+resist_weaponmagic 80
+resist_ghosthit 80
 resist_poison 100
 resist_slow 100
 resist_paralyze 100
@@ -1540,8 +1560,8 @@ resist_turn_undead 100
 resist_fear 100
 resist_deplete 100
 resist_death 100
-resist_chaos 75
-resist_godpower 75
+resist_chaos 80
+resist_godpower 80
 resist_holyword 100
 resist_blind 100
 randomitems goblin_parts
@@ -1604,30 +1624,35 @@ move_block fly_high swim boat
 slow_move 3
 end
 arch unusual_kobold
-name Pygmy
+name Pygmy of the Forest
 race Pygmy
-Con 1500
-Wis 5
+msg
+@match *
+The Pygmy doesn't answer back...instead it gives you the evil eye.
+endmsg
+Con 25
+Wis 7
 Int 100
 hp 15000
 maxhp 15000
-exp 100000
+exp 400000
 dam 15
-wc -100
+wc -35
+ac -50
 x 10
 y 2
 speed 2.0
 level 120
 attacktype 1280
-resist_magic 75
-resist_fire 65
-resist_electricity 75
-resist_cold 75
+resist_magic 80
+resist_fire 80
+resist_electricity 80
+resist_cold 80
 resist_confusion 100
-resist_acid 75
+resist_acid 80
 resist_drain 100
-resist_weaponmagic 75
-resist_ghosthit 75
+resist_weaponmagic 80
+resist_ghosthit 80
 resist_poison 100
 resist_slow 100
 resist_paralyze 100
@@ -1635,8 +1660,8 @@ resist_turn_undead 100
 resist_fear 100
 resist_deplete 100
 resist_death 100
-resist_chaos 75
-resist_godpower 75
+resist_chaos 80
+resist_godpower 80
 resist_holyword 100
 resist_blind 100
 randomitems goblin_parts
@@ -2265,30 +2290,35 @@ move_block fly_high swim boat
 slow_move 3
 end
 arch unusual_kobold
-name Pygmy
+name Pygmy of the Forest
 race Pygmy
-Con 1500
-Wis 5
+msg
+@match *
+The Pygmy doesn't answer back...instead it gives you the evil eye.
+endmsg
+Con 25
+Wis 7
 Int 100
 hp 15000
 maxhp 15000
-exp 100000
+exp 400000
 dam 15
-wc -100
+wc -35
+ac -50
 x 14
 y 9
 speed 2.0
 level 120
 attacktype 1280
-resist_magic 75
-resist_fire 65
-resist_electricity 75
-resist_cold 75
+resist_magic 80
+resist_fire 80
+resist_electricity 80
+resist_cold 80
 resist_confusion 100
-resist_acid 75
+resist_acid 80
 resist_drain 100
-resist_weaponmagic 75
-resist_ghosthit 75
+resist_weaponmagic 80
+resist_ghosthit 80
 resist_poison 100
 resist_slow 100
 resist_paralyze 100
@@ -2296,8 +2326,8 @@ resist_turn_undead 100
 resist_fear 100
 resist_deplete 100
 resist_death 100
-resist_chaos 75
-resist_godpower 75
+resist_chaos 80
+resist_godpower 80
 resist_holyword 100
 resist_blind 100
 randomitems goblin_parts
@@ -2965,30 +2995,35 @@ x 19
 y 2
 end
 arch unusual_kobold
-name Pygmy
+name Pygmy of the Forest
 race Pygmy
-Con 1500
-Wis 5
+msg
+@match *
+The Pygmy doesn't answer back...instead it gives you the evil eye.
+endmsg
+Con 25
+Wis 7
 Int 100
 hp 15000
 maxhp 15000
-exp 100000
+exp 400000
 dam 15
-wc -100
+wc -35
+ac -50
 x 19
 y 2
 speed 2.0
 level 120
 attacktype 1280
-resist_magic 75
-resist_fire 65
-resist_electricity 75
-resist_cold 75
+resist_magic 80
+resist_fire 80
+resist_electricity 80
+resist_cold 80
 resist_confusion 100
-resist_acid 75
+resist_acid 80
 resist_drain 100
-resist_weaponmagic 75
-resist_ghosthit 75
+resist_weaponmagic 80
+resist_ghosthit 80
 resist_poison 100
 resist_slow 100
 resist_paralyze 100
@@ -2996,8 +3031,8 @@ resist_turn_undead 100
 resist_fear 100
 resist_deplete 100
 resist_death 100
-resist_chaos 75
-resist_godpower 75
+resist_chaos 80
+resist_godpower 80
 resist_holyword 100
 resist_blind 100
 randomitems goblin_parts
@@ -3408,30 +3443,35 @@ move_block fly_high swim boat
 slow_move 3
 end
 arch unusual_kobold
-name Pygmy
+name Pygmy of the Forest
 race Pygmy
-Con 1500
-Wis 5
+msg
+@match *
+The Pygmy doesn't answer back...instead it gives you the evil eye.
+endmsg
+Con 25
+Wis 7
 Int 100
 hp 15000
 maxhp 15000
-exp 100000
+exp 400000
 dam 15
-wc -100
+wc -35
+ac -50
 x 21
 y 11
 speed 2.0
 level 120
 attacktype 1280
-resist_magic 75
-resist_fire 65
-resist_electricity 75
-resist_cold 75
+resist_magic 80
+resist_fire 80
+resist_electricity 80
+resist_cold 80
 resist_confusion 100
-resist_acid 75
+resist_acid 80
 resist_drain 100
-resist_weaponmagic 75
-resist_ghosthit 75
+resist_weaponmagic 80
+resist_ghosthit 80
 resist_poison 100
 resist_slow 100
 resist_paralyze 100
@@ -3439,8 +3479,8 @@ resist_turn_undead 100
 resist_fear 100
 resist_deplete 100
 resist_death 100
-resist_chaos 75
-resist_godpower 75
+resist_chaos 80
+resist_godpower 80
 resist_holyword 100
 resist_blind 100
 randomitems goblin_parts
@@ -3634,30 +3674,35 @@ move_block fly_high swim boat
 slow_move 3
 end
 arch unusual_kobold
-name Pygmy
+name Pygmy of the Forest
 race Pygmy
-Con 1500
-Wis 5
+msg
+@match *
+The Pygmy doesn't answer back...instead it gives you the evil eye.
+endmsg
+Con 25
+Wis 7
 Int 100
 hp 15000
 maxhp 15000
-exp 100000
+exp 400000
 dam 15
-wc -100
+wc -35
+ac -50
 x 23
 y 1
 speed 2.0
 level 120
 attacktype 1280
-resist_magic 75
-resist_fire 65
-resist_electricity 75
-resist_cold 75
+resist_magic 80
+resist_fire 80
+resist_electricity 80
+resist_cold 80
 resist_confusion 100
-resist_acid 75
+resist_acid 80
 resist_drain 100
-resist_weaponmagic 75
-resist_ghosthit 75
+resist_weaponmagic 80
+resist_ghosthit 80
 resist_poison 100
 resist_slow 100
 resist_paralyze 100
@@ -3665,8 +3710,8 @@ resist_turn_undead 100
 resist_fear 100
 resist_deplete 100
 resist_death 100
-resist_chaos 75
-resist_godpower 75
+resist_chaos 80
+resist_godpower 80
 resist_holyword 100
 resist_blind 100
 randomitems goblin_parts
@@ -3930,30 +3975,35 @@ move_block fly_high swim boat
 slow_move 3
 end
 arch unusual_kobold
-name Pygmy
+name Pygmy of the Forest
 race Pygmy
-Con 1500
-Wis 5
+msg
+@match *
+The Pygmy doesn't answer back...instead it gives you the evil eye.
+endmsg
+Con 25
+Wis 7
 Int 100
 hp 15000
 maxhp 15000
-exp 100000
+exp 400000
 dam 15
-wc -100
+wc -35
+ac -50
 x 24
 y 12
 speed 2.0
 level 120
 attacktype 1280
-resist_magic 75
-resist_fire 65
-resist_electricity 75
-resist_cold 75
+resist_magic 80
+resist_fire 80
+resist_electricity 80
+resist_cold 80
 resist_confusion 100
-resist_acid 75
+resist_acid 80
 resist_drain 100
-resist_weaponmagic 75
-resist_ghosthit 75
+resist_weaponmagic 80
+resist_ghosthit 80
 resist_poison 100
 resist_slow 100
 resist_paralyze 100
@@ -3961,8 +4011,8 @@ resist_turn_undead 100
 resist_fear 100
 resist_deplete 100
 resist_death 100
-resist_chaos 75
-resist_godpower 75
+resist_chaos 80
+resist_godpower 80
 resist_holyword 100
 resist_blind 100
 randomitems goblin_parts
@@ -4107,30 +4157,35 @@ move_block fly_high swim boat
 slow_move 3
 end
 arch unusual_kobold
-name Pygmy
+name Pygmy of the Forest
 race Pygmy
-Con 1500
-Wis 5
+msg
+@match *
+The Pygmy doesn't answer back...instead it gives you the evil eye.
+endmsg
+Con 25
+Wis 7
 Int 100
 hp 15000
 maxhp 15000
-exp 100000
+exp 400000
 dam 15
-wc -100
+wc -35
+ac -50
 x 25
 y 10
 speed 2.0
 level 120
 attacktype 1280
-resist_magic 75
-resist_fire 65
-resist_electricity 75
-resist_cold 75
+resist_magic 80
+resist_fire 80
+resist_electricity 80
+resist_cold 80
 resist_confusion 100
-resist_acid 75
+resist_acid 80
 resist_drain 100
-resist_weaponmagic 75
-resist_ghosthit 75
+resist_weaponmagic 80
+resist_ghosthit 80
 resist_poison 100
 resist_slow 100
 resist_paralyze 100
@@ -4138,8 +4193,8 @@ resist_turn_undead 100
 resist_fear 100
 resist_deplete 100
 resist_death 100
-resist_chaos 75
-resist_godpower 75
+resist_chaos 80
+resist_godpower 80
 resist_holyword 100
 resist_blind 100
 randomitems goblin_parts

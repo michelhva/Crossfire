@@ -5,9 +5,10 @@ region darcap
 width 21
 height 20
 msg
-Creator: RON
+Creator: Chad Opperman
+cromagic@sbcglobal.net
 Date:    2007-12-27
-Modified: 2008-01-03 Gene Alexander
+Modified: 2008-08-18 Chad Opperman | cromagic@sbcglobal.net
 endmsg
 end
 arch grassdark
@@ -2379,11 +2380,10 @@ blocksview 1
 end
 arch bulletwall
 face jungle_2.111
+dam 160
 x 10
 level 110
 invisible 1
-arch spell_daylight
-end
 end
 arch grassdark
 name Thick Forest Terrain
@@ -2512,15 +2512,15 @@ msg
 @match *
 Prepare to die, mortal.
 endmsg
-Con 3277
+Con 50
 Wis 10
 Int 100
 hp 32765
 maxhp 32765
 exp 5000000
 dam 30
-wc -120
-ac -100
+wc -35
+ac -50
 x 10
 y 8
 speed 1.0
@@ -2618,6 +2618,11 @@ y 9
 invisible 1
 connected 5
 activate_on_push 0
+end
+arch light4
+x 10
+y 10
+glow_radius 50
 end
 arch grassdark
 name Thick Forest Terrain
