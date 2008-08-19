@@ -13805,6 +13805,13 @@ y 49
 move_block all
 blocksview 1
 end
+arch bulletwall
+face jungle_2.111
+dam 160
+x 27
+level 110
+invisible 1
+end
 arch grassdark
 x 27
 end
@@ -14573,15 +14580,6 @@ x 28
 y 24
 move_block all
 blocksview 1
-end
-arch bulletwall
-face jungle_2.111
-x 28
-y 24
-level 110
-invisible 1
-arch spell_daylight
-end
 end
 arch grassdark
 name Thick Forest Terrain
