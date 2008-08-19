@@ -5,7 +5,7 @@ width 48
 height 23
 msg
 Created:  2008-06-19 Chad Opperman | cromagic@sbcglobal.net
-Modified: 2008-07-26 Chad Opperman | cromagic@sbcglobal.net
+Modified: 2008-08-19 Nicolas Weeger
 endmsg
 end
 arch altar_trigger
@@ -8304,7 +8304,6 @@ move_on all
 move_off all
 end
 arch creator
-other_arch 0
 x 21
 y 11
 connected 20
