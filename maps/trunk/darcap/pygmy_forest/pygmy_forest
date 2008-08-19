@@ -15548,6 +15548,11 @@ y 25
 move_block fly_high swim boat
 slow_move 3
 end
+arch light4
+x 30
+y 25
+glow_radius 100
+end
 arch grassdark
 name Thick Forest Terrain
 x 30

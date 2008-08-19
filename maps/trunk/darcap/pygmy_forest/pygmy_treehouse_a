@@ -58,8 +58,6 @@ dam 160
 y 5
 level 110
 invisible 1
-arch spell_daylight
-end
 end
 arch jungle_1
 name Forest Below
@@ -1191,6 +1189,11 @@ arch woodfloor
 name Treehouse Floor
 x 13
 y 4
+end
+arch light4
+x 13
+y 5
+glow_radius 50
 end
 arch woodfloor
 name Treehouse Floor
