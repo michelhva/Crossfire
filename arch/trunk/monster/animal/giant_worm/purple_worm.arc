@@ -43,7 +43,7 @@ can_cast_spell 1
 can_see_in_dark 1
 see_invisible 1
 editable 1
-color_fg purple
+color_fg black
 end
 More
 Object purple_worm_2
@@ -56,7 +56,7 @@ purple_worm.x71
 mina
 x 1
 alive 1
-color_fg purple
+color_fg black
 end
 More
 Object purple_worm_3
@@ -69,7 +69,7 @@ purple_worm.x71
 mina
 y 1
 alive 1
-color_fg purple
+color_fg black
 end
 More
 Object purple_worm_4
@@ -83,6 +83,6 @@ mina
 x 1
 y 1
 alive 1
-color_fg purple
+color_fg black
 end
 
