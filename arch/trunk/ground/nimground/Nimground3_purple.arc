@@ -14,6 +14,6 @@ no_pick 1
 editable 8
 is_floor 1
 speed 0.3
-magicmap purple
+magicmap black
 end
 

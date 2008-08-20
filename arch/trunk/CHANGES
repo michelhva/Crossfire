@@ -1,5 +1,9 @@
 Changes for SVN top of tree:
 
+monster/animal/giant_worm/purple_worm.arc, ground/nimground/Nimground3_purple.arc:
+Replaced purple (unrecognized color) with black in magicmap and color_fg fields.
+Rick Tanner 2008-08-20
+
 disease/incontinence.arc, disease/diarrhea.arc, disease/rabies.arc: Make puddles
 from diseases go away after some time, for incontinence and rabies we should
 probably have shrinking animations, like for icor (and thus also for diarrhea),
