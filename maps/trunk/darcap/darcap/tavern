@@ -11,7 +11,7 @@ Created:  1999-01-15 Cater/Wade (john_cater@yahoo.com)
 Creator: Cater/Wade
 Email: john_cater@yahoo.com
 Date: Fri Jan 15 12:02:40 1999
-Modified: 2008-05-23 Arvid Norlander
+Modified: 2008-08-15 Chad Opperman | cromagic@sbcglobal.net
 endmsg
 end
 arch cobblestones2
@@ -1967,6 +1967,12 @@ arch woodfloor
 x 15
 y 8
 end
+arch torch_vermilion
+x 15
+y 8
+material 0
+no_pick 1
+end
 arch magic_banned
 x 15
 y 9
@@ -1986,6 +1992,12 @@ end
 arch woodfloor
 x 15
 y 10
+end
+arch torch_vermilion
+x 15
+y 10
+material 0
+no_pick 1
 end
 arch magic_banned
 x 15
@@ -2101,6 +2113,28 @@ end
 arch chair_1.1
 x 16
 y 8
+end
+arch guildmaster
+name Soothsayer
+msg
+@match hi|hey|hello
+We're all doomed! Doomed I tell ye! *Saromok* the Master Sorceror has began creating his orc army, were all doomed!
+@match saromok
+He is an incredibly powerful sorceror who plans to destroy everything with his orc army! He needs to be *stopped*!
+@match stopped
+Well, many have tried to stop him already, but none have succeeded.  But you seem different, I sense an aura about you.  Perhaps you will attempt to *save* us?
+@match save
+If you would try and stop him, look for his fortress northwest of here.  The best way to find it is to hug the northern shore west--you can't miss it, its a giant fortress with a lava motte and its surrounded by mountains.  But heed my warning, his fortress is an extremely dangerous place, not meant for the weak.
+endmsg
+face a_townsman2.111
+animation none
+x 16
+y 8
+monster 0
+friendly 1
+unaggressive 0
+stand_still 1
+no_damage 1
 end
 arch magic_banned
 x 16
@@ -2266,6 +2300,12 @@ arch woodfloor
 x 17
 y 8
 end
+arch torch_vermilion
+x 17
+y 8
+material 0
+no_pick 1
+end
 arch magic_banned
 x 17
 y 9
@@ -2285,6 +2325,12 @@ end
 arch woodfloor
 x 17
 y 10
+end
+arch torch_vermilion
+x 17
+y 10
+material 0
+no_pick 1
 end
 arch magic_banned
 x 17
