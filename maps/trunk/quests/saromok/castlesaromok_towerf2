@@ -4,7 +4,7 @@ width 15
 height 15
 msg
 Created:  2008-08-13 Chad Opperman | cromagic@sbcglobal.net
-Modified: 2008-08-18 Chad Opperman | cromagic@sbcglobal.net
+Modified: 2008-08-21 Chad Opperman | cromagic@sbcglobal.net
 endmsg
 end
 arch stonefloor2
@@ -1040,6 +1040,10 @@ end
 arch spell_burning_hands
 end
 arch spell_icestorm
+end
+arch key2
+name Floor 3 Key
+slaying castlesaromok_f3
 end
 end
 arch afloor_left
