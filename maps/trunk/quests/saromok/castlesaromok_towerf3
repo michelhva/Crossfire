@@ -1,10 +1,14 @@
 arch map
 name castlesaromok_towerf3
+difficulty 75
+region wilderness
 width 15
 height 15
+enter_x 7
+enter_y 13
 msg
 Created:  2008-08-13 Chad Opperman | cromagic@sbcglobal.net
-Modified: 2008-08-21 Chad Opperman | cromagic@sbcglobal.net
+Modified: 2008-08-22 Rick Tanner
 endmsg
 end
 arch stonefloor2

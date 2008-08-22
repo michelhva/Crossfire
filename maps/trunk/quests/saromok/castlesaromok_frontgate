@@ -1,10 +1,14 @@
 arch map
 name castlesaromok_frontgate
+difficulty 75
+region wilderness
 width 10
 height 8
+enter_x 5
+enter_y 6
 msg
 Created:  2008-08-11 Chad Opperman | cromagic@sbcglobal.net
-Modified: 2008-08-13 Chad Opperman | cromagic@sbcglobal.net
+Modified: 2008-08-22 Rick Tanner
 endmsg
 end
 arch cobblestones2

@@ -1,10 +1,14 @@
 arch map
 name castlesaromok_barracks3
+difficulty 75
+region wilderness
 width 30
 height 15
+enter_x 29
+enter_y 7
 msg
 Created:  2008-08-12 Chad Opperman | cromagic@sbcglobal.net
-Modified: 2008-08-21 Chad Opperman | cromagic@sbcglobal.net
+Modified: 2008-08-22 Rick Tanner
 endmsg
 end
 arch stonefloor2
