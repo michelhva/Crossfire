@@ -1,11 +1,16 @@
 arch map
 name castlesaromok_inside
+difficulty 75
+region wilderness
 width 30
 height 28
+enter_x 14
+enter_y 23
 msg
 Created:  2008-08-12 Chad Opperman | cromagic@sbcglobal.net
-Modified: 2008-08-21 Chad Opperman | cromagic@sbcglobal.net
+Modified: 2008-08-22 Rick Tanner
 endmsg
+outdoor 1
 end
 arch blackrock
 end

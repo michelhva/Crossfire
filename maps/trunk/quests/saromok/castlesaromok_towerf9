@@ -1,10 +1,14 @@
 arch map
 name castlesaromok_towerf9
+difficulty 75
+region wilderness
 width 41
 height 34
+enter_x 20
+enter_y 2
 msg
 Created:  2008-08-13 Chad Opperman | cromagic@sbcglobal.net
-Modified: 2008-08-18 Chad Opperman | cromagic@sbcglobal.net
+Modified: 2008-08-22 Rick Tanner
 endmsg
 end
 arch awall_0

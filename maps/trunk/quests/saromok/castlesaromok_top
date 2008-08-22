@@ -1,11 +1,16 @@
 arch map
 name castlesaromok_top
+difficulty 75
+region wilderness
 width 25
 height 50
+enter_x 12
+enter_y 6
 msg
 Created:  2008-08-14 Chad Opperman | cromagic@sbcglobal.net
-Modified: 2008-08-18 Chad Opperman | cromagic@sbcglobal.net
+Modified: 2008-08-22 Rick Tanner
 endmsg
+outdoor 1
 end
 arch awall_0
 name Clouds
