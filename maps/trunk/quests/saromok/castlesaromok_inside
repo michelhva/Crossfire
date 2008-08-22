@@ -4,7 +4,7 @@ width 30
 height 28
 msg
 Created:  2008-08-12 Chad Opperman | cromagic@sbcglobal.net
-Modified: 2008-08-18 Chad Opperman | cromagic@sbcglobal.net
+Modified: 2008-08-21 Chad Opperman | cromagic@sbcglobal.net
 endmsg
 end
 arch blackrock
@@ -848,17 +848,14 @@ arch blocked
 x 4
 y 13
 end
-arch blackrock
+arch invis_exit
+slaying castlesaromok_barracks1
+hp 7
+sp 28
 x 4
 y 14
 end
-arch perm_magic_portal
-name Door
-slaying castlesaromok_barracks1
-face odoor_2.111
-animation none
-hp 7
-sp 28
+arch blackrock
 x 4
 y 14
 end
@@ -2428,17 +2425,14 @@ arch stwall_1_2
 x 12
 y 19
 end
-arch blackrock
+arch invis_exit
+slaying castlesaromok_barracks3
+hp 28
+sp 7
 x 12
 y 20
 end
-arch perm_magic_portal
-name Door
-slaying castlesaromok_barracks3
-face odoor_1.111
-animation none
-hp 28
-sp 7
+arch blackrock
 x 12
 y 20
 end
@@ -3505,17 +3499,14 @@ arch stwall_1_2
 x 17
 y 19
 end
-arch blackrock
+arch invis_exit
+slaying castlesaromok_barracks4
+hp 1
+sp 7
 x 17
 y 20
 end
-arch perm_magic_portal
-name Door
-slaying castlesaromok_barracks4
-face odoor_1.111
-animation none
-hp 1
-sp 7
+arch blackrock
 x 17
 y 20
 end
@@ -4939,17 +4930,14 @@ arch blocked
 x 25
 y 13
 end
-arch blackrock
+arch invis_exit
+slaying castlesaromok_barracks2
+hp 7
+sp 28
 x 25
 y 14
 end
-arch perm_magic_portal
-name Door
-slaying castlesaromok_barracks2
-face odoor_2.111
-animation none
-hp 7
-sp 28
+arch blackrock
 x 25
 y 14
 end
