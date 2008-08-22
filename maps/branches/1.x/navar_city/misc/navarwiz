@@ -11,14 +11,12 @@ endmsg
 end
 arch dungeon_magic
 name no_spells
-face no_spells.111
 invisible 1
 no_pick 1
 no_magic 1
 damned 1
 end
 arch woodfloor
-face woodfloor.111
 smoothlevel 30
 no_pick 1
 is_floor 1
@@ -28,7 +26,6 @@ arch stwall_2_2_2
 end
 arch dungeon_magic
 name no_spells
-face no_spells.111
 y 1
 invisible 1
 no_pick 1
@@ -36,7 +33,6 @@ no_magic 1
 damned 1
 end
 arch woodfloor
-face woodfloor.111
 y 1
 smoothlevel 30
 no_pick 1
@@ -48,7 +44,6 @@ y 1
 end
 arch dungeon_magic
 name no_spells
-face no_spells.111
 y 2
 invisible 1
 no_pick 1
@@ -56,7 +51,6 @@ no_magic 1
 damned 1
 end
 arch woodfloor
-face woodfloor.111
 y 2
 smoothlevel 30
 no_pick 1
@@ -68,7 +62,6 @@ y 2
 end
 arch dungeon_magic
 name no_spells
-face no_spells.111
 y 3
 invisible 1
 no_pick 1
@@ -76,7 +69,6 @@ no_magic 1
 damned 1
 end
 arch woodfloor
-face woodfloor.111
 y 3
 smoothlevel 30
 no_pick 1
@@ -88,7 +80,6 @@ y 3
 end
 arch dungeon_magic
 name no_spells
-face no_spells.111
 y 4
 invisible 1
 no_pick 1
@@ -96,7 +87,6 @@ no_magic 1
 damned 1
 end
 arch woodfloor
-face woodfloor.111
 y 4
 smoothlevel 30
 no_pick 1
@@ -108,7 +98,6 @@ y 4
 end
 arch dungeon_magic
 name no_spells
-face no_spells.111
 y 5
 invisible 1
 no_pick 1
@@ -116,7 +105,6 @@ no_magic 1
 damned 1
 end
 arch woodfloor
-face woodfloor.111
 y 5
 smoothlevel 30
 no_pick 1
@@ -128,7 +116,6 @@ y 5
 end
 arch dungeon_magic
 name no_spells
-face no_spells.111
 y 6
 invisible 1
 no_pick 1
@@ -136,7 +123,6 @@ no_magic 1
 damned 1
 end
 arch woodfloor
-face woodfloor.111
 y 6
 smoothlevel 30
 no_pick 1
@@ -148,7 +134,6 @@ y 6
 end
 arch dungeon_magic
 name no_spells
-face no_spells.111
 x 1
 invisible 1
 no_pick 1
@@ -156,7 +141,6 @@ no_magic 1
 damned 1
 end
 arch woodfloor
-face woodfloor.111
 x 1
 smoothlevel 30
 no_pick 1
@@ -168,7 +152,6 @@ x 1
 end
 arch dungeon_magic
 name no_spells
-face no_spells.111
 x 1
 y 1
 invisible 1
@@ -177,7 +160,6 @@ no_magic 1
 damned 1
 end
 arch woodfloor
-face woodfloor.111
 x 1
 y 1
 smoothlevel 30
@@ -192,7 +174,6 @@ no_pick 1
 end
 arch dungeon_magic
 name no_spells
-face no_spells.111
 x 1
 y 2
 invisible 1
@@ -201,7 +182,6 @@ no_magic 1
 damned 1
 end
 arch woodfloor
-face woodfloor.111
 x 1
 y 2
 smoothlevel 30
@@ -211,7 +191,6 @@ smoothface woodfloor.111 empty_S.111
 end
 arch dungeon_magic
 name no_spells
-face no_spells.111
 x 1
 y 3
 invisible 1
@@ -220,7 +199,6 @@ no_magic 1
 damned 1
 end
 arch woodfloor
-face woodfloor.111
 x 1
 y 3
 smoothlevel 30
@@ -230,7 +208,6 @@ smoothface woodfloor.111 empty_S.111
 end
 arch dungeon_magic
 name no_spells
-face no_spells.111
 x 1
 y 4
 invisible 1
@@ -239,7 +216,6 @@ no_magic 1
 damned 1
 end
 arch woodfloor
-face woodfloor.111
 x 1
 y 4
 smoothlevel 30
@@ -249,7 +225,6 @@ smoothface woodfloor.111 empty_S.111
 end
 arch dungeon_magic
 name no_spells
-face no_spells.111
 x 1
 y 5
 invisible 1
@@ -258,7 +233,6 @@ no_magic 1
 damned 1
 end
 arch woodfloor
-face woodfloor.111
 x 1
 y 5
 smoothlevel 30
@@ -272,7 +246,6 @@ y 5
 end
 arch dungeon_magic
 name no_spells
-face no_spells.111
 x 1
 y 6
 invisible 1
@@ -281,7 +254,6 @@ no_magic 1
 damned 1
 end
 arch woodfloor
-face woodfloor.111
 x 1
 y 6
 smoothlevel 30
@@ -295,7 +267,6 @@ y 6
 end
 arch dungeon_magic
 name no_spells
-face no_spells.111
 x 2
 invisible 1
 no_pick 1
@@ -303,7 +274,6 @@ no_magic 1
 damned 1
 end
 arch woodfloor
-face woodfloor.111
 x 2
 smoothlevel 30
 no_pick 1
@@ -315,7 +285,6 @@ x 2
 end
 arch dungeon_magic
 name no_spells
-face no_spells.111
 x 2
 y 1
 invisible 1
@@ -345,7 +314,6 @@ value 0
 end
 end
 arch woodfloor
-face woodfloor.111
 x 2
 y 1
 smoothlevel 30
@@ -363,7 +331,6 @@ no_pick 1
 end
 arch dungeon_magic
 name no_spells
-face no_spells.111
 x 2
 y 2
 invisible 1
@@ -372,7 +339,6 @@ no_magic 1
 damned 1
 end
 arch woodfloor
-face woodfloor.111
 x 2
 y 2
 smoothlevel 30
@@ -382,7 +348,6 @@ smoothface woodfloor.111 empty_S.111
 end
 arch dungeon_magic
 name no_spells
-face no_spells.111
 x 2
 y 3
 invisible 1
@@ -391,7 +356,6 @@ no_magic 1
 damned 1
 end
 arch woodfloor
-face woodfloor.111
 x 2
 y 3
 smoothlevel 30
@@ -401,7 +365,6 @@ smoothface woodfloor.111 empty_S.111
 end
 arch dungeon_magic
 name no_spells
-face no_spells.111
 x 2
 y 4
 invisible 1
@@ -410,7 +373,6 @@ no_magic 1
 damned 1
 end
 arch woodfloor
-face woodfloor.111
 x 2
 y 4
 smoothlevel 30
@@ -420,7 +382,6 @@ smoothface woodfloor.111 empty_S.111
 end
 arch dungeon_magic
 name no_spells
-face no_spells.111
 x 2
 y 5
 invisible 1
@@ -429,7 +390,6 @@ no_magic 1
 damned 1
 end
 arch woodfloor
-face woodfloor.111
 x 2
 y 5
 smoothlevel 30
@@ -443,7 +403,6 @@ y 5
 end
 arch dungeon_magic
 name no_spells
-face no_spells.111
 x 2
 y 6
 invisible 1
@@ -452,7 +411,6 @@ no_magic 1
 damned 1
 end
 arch woodfloor
-face woodfloor.111
 x 2
 y 6
 smoothlevel 30
@@ -466,7 +424,6 @@ y 6
 end
 arch dungeon_magic
 name no_spells
-face no_spells.111
 x 3
 invisible 1
 no_pick 1
@@ -474,7 +431,6 @@ no_magic 1
 damned 1
 end
 arch woodfloor
-face woodfloor.111
 x 3
 smoothlevel 30
 no_pick 1
@@ -486,7 +442,6 @@ x 3
 end
 arch dungeon_magic
 name no_spells
-face no_spells.111
 x 3
 y 1
 invisible 1
@@ -495,7 +450,6 @@ no_magic 1
 damned 1
 end
 arch woodfloor
-face woodfloor.111
 x 3
 y 1
 smoothlevel 30
@@ -505,7 +459,6 @@ smoothface woodfloor.111 empty_S.111
 end
 arch dungeon_magic
 name no_spells
-face no_spells.111
 x 3
 y 2
 invisible 1
@@ -514,7 +467,6 @@ no_magic 1
 damned 1
 end
 arch woodfloor
-face woodfloor.111
 x 3
 y 2
 smoothlevel 30
@@ -524,7 +476,6 @@ smoothface woodfloor.111 empty_S.111
 end
 arch dungeon_magic
 name no_spells
-face no_spells.111
 x 3
 y 3
 invisible 1
@@ -533,7 +484,6 @@ no_magic 1
 damned 1
 end
 arch woodfloor
-face woodfloor.111
 x 3
 y 3
 smoothlevel 30
@@ -543,7 +493,6 @@ smoothface woodfloor.111 empty_S.111
 end
 arch dungeon_magic
 name no_spells
-face no_spells.111
 x 3
 y 4
 invisible 1
@@ -552,7 +501,6 @@ no_magic 1
 damned 1
 end
 arch woodfloor
-face woodfloor.111
 x 3
 y 4
 smoothlevel 30
@@ -562,7 +510,6 @@ smoothface woodfloor.111 empty_S.111
 end
 arch dungeon_magic
 name no_spells
-face no_spells.111
 x 3
 y 5
 invisible 1
@@ -571,7 +518,6 @@ no_magic 1
 damned 1
 end
 arch woodfloor
-face woodfloor.111
 x 3
 y 5
 smoothlevel 30
@@ -585,7 +531,6 @@ y 5
 end
 arch dungeon_magic
 name no_spells
-face no_spells.111
 x 3
 y 6
 invisible 1
@@ -594,7 +539,6 @@ no_magic 1
 damned 1
 end
 arch woodfloor
-face woodfloor.111
 x 3
 y 6
 smoothlevel 30
@@ -608,7 +552,6 @@ y 6
 end
 arch dungeon_magic
 name no_spells
-face no_spells.111
 x 4
 invisible 1
 no_pick 1
@@ -616,7 +559,6 @@ no_magic 1
 damned 1
 end
 arch woodfloor
-face woodfloor.111
 x 4
 smoothlevel 30
 no_pick 1
@@ -628,7 +570,6 @@ x 4
 end
 arch dungeon_magic
 name no_spells
-face no_spells.111
 x 4
 y 1
 invisible 1
@@ -637,7 +578,6 @@ no_magic 1
 damned 1
 end
 arch woodfloor
-face woodfloor.111
 x 4
 y 1
 smoothlevel 30
@@ -662,7 +602,6 @@ stand_still 1
 end
 arch dungeon_magic
 name no_spells
-face no_spells.111
 x 4
 y 2
 invisible 1
@@ -671,7 +610,6 @@ no_magic 1
 damned 1
 end
 arch woodfloor
-face woodfloor.111
 x 4
 y 2
 smoothlevel 30
@@ -681,7 +619,6 @@ smoothface woodfloor.111 empty_S.111
 end
 arch dungeon_magic
 name no_spells
-face no_spells.111
 x 4
 y 3
 invisible 1
@@ -690,7 +627,6 @@ no_magic 1
 damned 1
 end
 arch woodfloor
-face woodfloor.111
 x 4
 y 3
 smoothlevel 30
@@ -700,7 +636,6 @@ smoothface woodfloor.111 empty_S.111
 end
 arch dungeon_magic
 name no_spells
-face no_spells.111
 x 4
 y 4
 invisible 1
@@ -709,7 +644,6 @@ no_magic 1
 damned 1
 end
 arch woodfloor
-face woodfloor.111
 x 4
 y 4
 smoothlevel 30
@@ -719,7 +653,6 @@ smoothface woodfloor.111 empty_S.111
 end
 arch dungeon_magic
 name no_spells
-face no_spells.111
 x 4
 y 5
 invisible 1
@@ -728,7 +661,6 @@ no_magic 1
 damned 1
 end
 arch woodfloor
-face woodfloor.111
 x 4
 y 5
 smoothlevel 30
@@ -738,7 +670,6 @@ smoothface woodfloor.111 empty_S.111
 end
 arch dungeon_magic
 name no_spells
-face no_spells.111
 x 4
 y 6
 invisible 1
@@ -747,7 +678,6 @@ no_magic 1
 damned 1
 end
 arch woodfloor
-face woodfloor.111
 x 4
 y 6
 smoothlevel 30
@@ -761,7 +691,6 @@ y 6
 end
 arch dungeon_magic
 name no_spells
-face no_spells.111
 x 5
 invisible 1
 no_pick 1
@@ -769,7 +698,6 @@ no_magic 1
 damned 1
 end
 arch woodfloor
-face woodfloor.111
 x 5
 smoothlevel 30
 no_pick 1
@@ -781,7 +709,6 @@ x 5
 end
 arch dungeon_magic
 name no_spells
-face no_spells.111
 x 5
 y 1
 invisible 1
@@ -790,7 +717,6 @@ no_magic 1
 damned 1
 end
 arch woodfloor
-face woodfloor.111
 x 5
 y 1
 smoothlevel 30
@@ -804,7 +730,6 @@ y 1
 end
 arch dungeon_magic
 name no_spells
-face no_spells.111
 x 5
 y 2
 invisible 1
@@ -813,7 +738,6 @@ no_magic 1
 damned 1
 end
 arch woodfloor
-face woodfloor.111
 x 5
 y 2
 smoothlevel 30
@@ -823,7 +747,6 @@ smoothface woodfloor.111 empty_S.111
 end
 arch dungeon_magic
 name no_spells
-face no_spells.111
 x 5
 y 3
 invisible 1
@@ -832,7 +755,6 @@ no_magic 1
 damned 1
 end
 arch woodfloor
-face woodfloor.111
 x 5
 y 3
 smoothlevel 30
@@ -842,7 +764,6 @@ smoothface woodfloor.111 empty_S.111
 end
 arch dungeon_magic
 name no_spells
-face no_spells.111
 x 5
 y 4
 invisible 1
@@ -851,7 +772,6 @@ no_magic 1
 damned 1
 end
 arch woodfloor
-face woodfloor.111
 x 5
 y 4
 smoothlevel 30
@@ -861,7 +781,6 @@ smoothface woodfloor.111 empty_S.111
 end
 arch dungeon_magic
 name no_spells
-face no_spells.111
 x 5
 y 5
 invisible 1
@@ -870,7 +789,6 @@ no_magic 1
 damned 1
 end
 arch woodfloor
-face woodfloor.111
 x 5
 y 5
 smoothlevel 30
@@ -887,7 +805,6 @@ y 5
 end
 arch dungeon_magic
 name no_spells
-face no_spells.111
 x 5
 y 6
 invisible 1
@@ -896,7 +813,6 @@ no_magic 1
 damned 1
 end
 arch woodfloor
-face woodfloor.111
 x 5
 y 6
 smoothlevel 30
@@ -910,7 +826,6 @@ y 6
 end
 arch dungeon_magic
 name no_spells
-face no_spells.111
 x 6
 invisible 1
 no_pick 1
@@ -918,7 +833,6 @@ no_magic 1
 damned 1
 end
 arch woodfloor
-face woodfloor.111
 x 6
 smoothlevel 30
 no_pick 1
@@ -930,7 +844,6 @@ x 6
 end
 arch dungeon_magic
 name no_spells
-face no_spells.111
 x 6
 y 1
 invisible 1
@@ -939,7 +852,6 @@ no_magic 1
 damned 1
 end
 arch woodfloor
-face woodfloor.111
 x 6
 y 1
 smoothlevel 30
@@ -953,7 +865,6 @@ y 1
 end
 arch dungeon_magic
 name no_spells
-face no_spells.111
 x 6
 y 2
 invisible 1
@@ -962,7 +873,6 @@ no_magic 1
 damned 1
 end
 arch woodfloor
-face woodfloor.111
 x 6
 y 2
 smoothlevel 30
@@ -976,7 +886,6 @@ y 2
 end
 arch dungeon_magic
 name no_spells
-face no_spells.111
 x 6
 y 3
 invisible 1
@@ -985,7 +894,6 @@ no_magic 1
 damned 1
 end
 arch woodfloor
-face woodfloor.111
 x 6
 y 3
 smoothlevel 30
@@ -999,7 +907,6 @@ y 3
 end
 arch dungeon_magic
 name no_spells
-face no_spells.111
 x 6
 y 4
 invisible 1
@@ -1008,7 +915,6 @@ no_magic 1
 damned 1
 end
 arch woodfloor
-face woodfloor.111
 x 6
 y 4
 smoothlevel 30
@@ -1022,7 +928,6 @@ y 4
 end
 arch dungeon_magic
 name no_spells
-face no_spells.111
 x 6
 y 5
 invisible 1
@@ -1031,7 +936,6 @@ no_magic 1
 damned 1
 end
 arch woodfloor
-face woodfloor.111
 x 6
 y 5
 smoothlevel 30
@@ -1045,7 +949,6 @@ y 5
 end
 arch dungeon_magic
 name no_spells
-face no_spells.111
 x 6
 y 6
 invisible 1
@@ -1054,7 +957,6 @@ no_magic 1
 damned 1
 end
 arch woodfloor
-face woodfloor.111
 x 6
 y 6
 smoothlevel 30
