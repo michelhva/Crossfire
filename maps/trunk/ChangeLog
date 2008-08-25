@@ -1,3 +1,308 @@
+2008-08-22 20:52  rjtanner
+
+	* quests/saromok/castlesaromok_barracks1,
+	  quests/saromok/castlesaromok_barracks2,
+	  quests/saromok/castlesaromok_barracks3,
+	  quests/saromok/castlesaromok_barracks4,
+	  quests/saromok/castlesaromok_frontgate,
+	  quests/saromok/castlesaromok_inside,
+	  quests/saromok/castlesaromok_ltl,
+	  quests/saromok/castlesaromok_ltr,
+	  quests/saromok/castlesaromok_top,
+	  quests/saromok/castlesaromok_towerb1,
+	  quests/saromok/castlesaromok_towerf1,
+	  quests/saromok/castlesaromok_towerf10,
+	  quests/saromok/castlesaromok_towerf11,
+	  quests/saromok/castlesaromok_towerf12,
+	  quests/saromok/castlesaromok_towerf2,
+	  quests/saromok/castlesaromok_towerf3,
+	  quests/saromok/castlesaromok_towerf4,
+	  quests/saromok/castlesaromok_towerf5,
+	  quests/saromok/castlesaromok_towerf6,
+	  quests/saromok/castlesaromok_towerf7,
+	  quests/saromok/castlesaromok_towerf8,
+	  quests/saromok/castlesaromok_towerf9,
+	  quests/saromok/castlesaromok_towergroundfloor,
+	  quests/saromok/castlesaromok_volcano: Update maps with entrance
+	  coordinates, region setting and approximate difficulty level
+
+2008-08-22 19:16  rjtanner
+
+	* darcap/darcap/tavern: Remove no longer used (supported?)
+	  'animation none'
+
+2008-08-22 18:58  rjtanner
+
+	* quests/saromok/castlesaromok_towerf11: Redesign of the animated
+	  objects (chair, platter, wineglass, dinner knife) since they
+	  caused numerous server warnings and errors. They originally were
+	  merchant NPCs heavily modified and with a different face, I made
+	  them animated objects with monster-like behaviour.
+
+2008-08-22 16:30  rjtanner
+
+	* quests/saromok/castlesaromok_barracks3,
+	  quests/saromok/castlesaromok_barracks4,
+	  quests/saromok/castlesaromok_inside,
+	  quests/saromok/castlesaromok_towerf1,
+	  quests/saromok/castlesaromok_towerf2,
+	  quests/saromok/castlesaromok_towerf3,
+	  quests/saromok/castlesaromok_towerf4: Patch [ 2066208 ] Saromok
+	  Map Fix; Add missing keys and graphic corrections for map doors
+	  (except for barracks 1 and 2, those were already updated)
+
+2008-08-21 01:58  rjtanner
+
+	* quests/saromok/castlesaromok_barracks1,
+	  quests/saromok/castlesaromok_barracks2: Redesign the exit from
+	  two (other maps need similar updates) of the barrack maps,
+	  replaced the portal with a custom face to a standard door using
+	  an invis exit. This gives achieves the intended appearance in the
+	  map without the 'animation none' warning in the server logs and
+	  mapper.
+
+2008-08-21 01:15  rjtanner
+
+	* quests/saromok/castlesaromok_barracks1,
+	  quests/saromok/castlesaromok_barracks2,
+	  quests/saromok/castlesaromok_barracks3,
+	  quests/saromok/castlesaromok_barracks4: Cosmetic wall changes
+	  with wall sections adjacent to doors, replaced wall sections with
+	  the 'end cap' walls
+
+2008-08-21 00:32  rjtanner
+
+	* HallOfSelection, navar_city/misc/navarwiz,
+	  quests/peterm/quests/wyvern_quest,
+	  quests/saromok/castlesaromok_volcano,
+	  scorn/misc/battle_arena/arena, scorn/misc/wizhide,
+	  scorn/towers/brewery.4, start/HallsOfSelection/wraith_player: Map
+	  normalize, no functional changes
+
+2008-08-20 23:59  rjtanner
+
+	* darcap/darcap/tavern, quests/peterm/Demonology/EarthMaster,
+	  quests/peterm/Demonology/FireMaster,
+	  quests/peterm/Demonology/WaterMaster, quests/saromok,
+	  quests/saromok/castlesaromok_barracks1,
+	  quests/saromok/castlesaromok_barracks2,
+	  quests/saromok/castlesaromok_barracks3,
+	  quests/saromok/castlesaromok_barracks4,
+	  quests/saromok/castlesaromok_frontgate,
+	  quests/saromok/castlesaromok_inside,
+	  quests/saromok/castlesaromok_ltl,
+	  quests/saromok/castlesaromok_ltr,
+	  quests/saromok/castlesaromok_top,
+	  quests/saromok/castlesaromok_towerb1,
+	  quests/saromok/castlesaromok_towerf1,
+	  quests/saromok/castlesaromok_towerf10,
+	  quests/saromok/castlesaromok_towerf11,
+	  quests/saromok/castlesaromok_towerf12,
+	  quests/saromok/castlesaromok_towerf2,
+	  quests/saromok/castlesaromok_towerf3,
+	  quests/saromok/castlesaromok_towerf4,
+	  quests/saromok/castlesaromok_towerf5,
+	  quests/saromok/castlesaromok_towerf6,
+	  quests/saromok/castlesaromok_towerf7,
+	  quests/saromok/castlesaromok_towerf8,
+	  quests/saromok/castlesaromok_towerf9,
+	  quests/saromok/castlesaromok_towergroundfloor,
+	  quests/saromok/castlesaromok_volcano, world/world_111_100: Patch
+	  [ 2054365 ] Saromok Quest, with some changes in regards to
+	  directory layout and structure (tower and related maps inside the
+	  /quest directory)
+
+2008-08-19 22:25  ryo_saeba
+
+	* darcap/darcap/circus/fz_boulderball: Remove invalid and unused
+	  other_arch (inv is set)
+
+2008-08-19 22:10  rjtanner
+
+	* darcap/pygmy_forest/pygmy_forest,
+	  darcap/pygmy_forest/pygmy_forest_a,
+	  darcap/pygmy_forest/pygmy_forest_b,
+	  darcap/pygmy_forest/pygmy_forest_c,
+	  darcap/pygmy_forest/pygmy_forest_d: Missed change applied, [
+	  2058734 ] Pygmy Forest Update; Make traps work on
+	  levitating/flying players
+
+2008-08-19 20:33  rjtanner
+
+	* darcap/pygmy_forest/pygmy_garden: Final change applied, [ 2058734
+	  ] Pygmy Forest Update; Shield modification
+
+2008-08-19 20:28  rjtanner
+
+	* darcap/pygmy_forest/pygmy_forest_c: Partially applied patch, [
+	  2058734 ] Pygmy Forest Update; NPC dialog changes
+
+2008-08-19 20:27  rjtanner
+
+	* darcap/pygmy_forest/pygmy_garden: Partially applied patch, [
+	  2058734 ] Pygmy Forest Update; Shield modification
+
+2008-08-19 20:08  rjtanner
+
+	* darcap/pygmy_forest/pygmy_treehouse_a,
+	  darcap/pygmy_forest/pygmy_treehouse_b,
+	  darcap/pygmy_forest/pygmy_treehouse_c,
+	  darcap/pygmy_forest/pygmy_treehouse_d: Partially applied patch, [
+	  2058734 ] Pygmy Forest Update; Renamed the Pygmy Saws
+
+2008-08-19 19:59  rjtanner
+
+	* darcap/pygmy_forest/pygmy_forest,
+	  darcap/pygmy_forest/pygmy_forest_a,
+	  darcap/pygmy_forest/pygmy_forest_b,
+	  darcap/pygmy_forest/pygmy_forest_c,
+	  darcap/pygmy_forest/pygmy_forest_d,
+	  darcap/pygmy_forest/pygmy_garden,
+	  darcap/pygmy_forest/pygmy_holes,
+	  darcap/pygmy_forest/pygmy_treehouse_a,
+	  darcap/pygmy_forest/pygmy_treehouse_b,
+	  darcap/pygmy_forest/pygmy_treehouse_c,
+	  darcap/pygmy_forest/pygmy_treehouse_d: Partially applied patch, [
+	  2058734 ] Pygmy Forest Update; This checkin inclues the changes
+	  with lighting
+
+2008-08-19 19:21  rjtanner
+
+	* darcap/pygmy_forest/pygmy_forest,
+	  darcap/pygmy_forest/pygmy_forest_a,
+	  darcap/pygmy_forest/pygmy_forest_b,
+	  darcap/pygmy_forest/pygmy_forest_c,
+	  darcap/pygmy_forest/pygmy_forest_d,
+	  darcap/pygmy_forest/pygmy_garden,
+	  darcap/pygmy_forest/pygmy_holes,
+	  darcap/pygmy_forest/pygmy_treehouse_a,
+	  darcap/pygmy_forest/pygmy_treehouse_b,
+	  darcap/pygmy_forest/pygmy_treehouse_c,
+	  darcap/pygmy_forest/pygmy_treehouse_d: Partially applied patch, [
+	  2058734 ] Pygmy Forest Update; This checkin inclues the bullet
+	  wall changes
+
+2008-08-19 19:12  rjtanner
+
+	* darcap/pygmy_forest/pygmy_boss, darcap/pygmy_forest/pygmy_forest,
+	  darcap/pygmy_forest/pygmy_forest_a,
+	  darcap/pygmy_forest/pygmy_forest_b,
+	  darcap/pygmy_forest/pygmy_forest_c,
+	  darcap/pygmy_forest/pygmy_forest_d,
+	  darcap/pygmy_forest/pygmy_garden,
+	  darcap/pygmy_forest/pygmy_holes,
+	  darcap/pygmy_forest/pygmy_treehouse_a,
+	  darcap/pygmy_forest/pygmy_treehouse_b,
+	  darcap/pygmy_forest/pygmy_treehouse_c,
+	  darcap/pygmy_forest/pygmy_treehouse_d: Partially applied patch, [
+	  2058734 ] Pygmy Forest Update; This checkin inclues all the stat
+	  and ability updates for the Pygmy monsters
+
+2008-08-19 01:25  rjtanner
+
+	* darcap/darcap/circus/fz_lobby: Correct or fix warnings in regards
+	  to objects having the wrong type and material, also posted to the
+	  mailing list on 2008-Aug-08
+
+2008-08-19 00:44  rjtanner
+
+	* darcap/darcap/circus/fz_dlobby, darcap/darcap/circus/fz_lobby,
+	  darcap/darcap/circus/fz_olobby, darcap/darcap/circus/fz_srlobby:
+	  Removed /city/city reference in unused teleporters since that was
+	  causing a false positive (broken link alert) in mapper and added
+	  map level difficulty (level 1) to the lobby maps
+
+2008-08-17 19:08  akirschbaum
+
+	* editor/scripts/LegacySpellConverter,
+	  editor/scripts/MapNormalizer, editor/scripts/MapValidator,
+	  editor/scripts/WorldMaker: Make editor scripts work with current
+	  Gridarta.
+
+2008-08-16 07:49  ryo_saeba
+
+	* navar_city/iscar: Fix entry coordinates, use @question in dialog.
+
+2008-08-16 07:49  ryo_saeba
+
+	* test/say: Pipe test for regexp.
+
+2008-08-16 07:48  ryo_saeba
+
+	* world/world_116_102: Fix name.
+
+2008-08-12 03:26  bbotbuilder
+
+	* HallOfDMs, santo_dominion/guilds/drunken_barbarian/bigchest,
+	  santo_dominion/guilds/drunken_barbarian/storage_room,
+	  scorn/houses/easy_house.1.a, scorn/houses/easy_house.1.b,
+	  scorn/houses/easy_house.1.c, scorn/houses/house.haunted,
+	  scorn/houses/house.haunted2, scorn/misc/cider_house_top,
+	  wolfsburg/apartments/pet-apartment/pet-apartment,
+	  wolfsburg/apartments/pet-apartment/pet-apartment2,
+	  wolfsburg/apartments/pet-apartment/pet-apartment3,
+	  wolfsburg/apartments/pet-apartment/torture-chamber,
+	  wolfsburg/lursendis: set the 'difficulty' value on some maps
+
+2008-08-11 06:32  bbotbuilder
+
+	* port_joseph/pirates/tortship3: port_joseph/pirates/tortship3:
+	  * fix bug #2045976, wrong stair face (thanks goes to elliotbay)
+
+2008-08-11 05:56  bbotbuilder
+
+	* python/items/ring_occidental_mages.py:
+	  python/items/ring_occidental_mages.py:
+	  * fixed typo (thanks goes to buzzsaw)
+
+2008-08-10 23:32  bbotbuilder
+
+	* scorn/shops/potionshop: scorn/shops/potionshop:
+	  * replace a reference to the alchemy spell with one to the skill
+	  (thanks goes to elliotbay)
+
+2008-08-04 14:03  quinet
+
+	* brest/shops/buildshop, navar_city/misc/buildshop,
+	  pup_land/lone_town/shops/buildshop, scorn/shops/buildshop,
+	  wolfsburg/shops/buildshop: Mention how to add or remove windows
+	  in the building instructions.
+
+2008-08-03 20:11  quinet
+
+	* darcap/darcap/circus/fz_lobby: Protect the furniture against
+	  accidental destruction by spells.
+
+2008-08-03 20:11  quinet
+
+	* pup_land/lone_town/shops/buildshop: Use the shop tiles
+	  shop_building_pupland instead of the generic shop_building
+	  tiles. These shop tiles had been defined a while ago but were not
+	  giving
+	  good results due to an incomplete treasure list that is fixed
+	  now.
+
+2008-08-03 20:07  quinet
+
+	* pup_land/lone_town/shops/buildshop: Use the shop tiles
+	  shop_building_pupland instead of the generic shop_building
+	  tiles. These shop tiles had been defined a while ago but were not
+	  giving
+	  good results due to an incomplete treasure list that is fixed
+	  now.
+
+2008-08-02 10:01  ryo_saeba
+
+	* regions, regions.reg: Change regions file name to regions.reg.
+
+2008-08-02 09:27  ryo_saeba
+
+	* scorn/houses/resir: Add missing other_arch.
+
+2008-08-02 07:35  rjtanner
+
+	* ChangeLog: Updated ChangeLog file using svn2cl
+
 2008-08-01 15:37  quinet
 
 	* world/world_116_102, world/world_122_116, world/world_128_109:
