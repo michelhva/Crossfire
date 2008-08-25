@@ -1,3 +1,82 @@
+2008-08-22 21:21  rjtanner
+
+	* HallOfSelection,
+	  azumauindo/minatomachi/buildings/guildkeybuilding1,
+	  navar_city/misc/navarwiz, pup_land/nurnberg/castle_ud,
+	  quests/peterm/quests/wyvern_quest, scorn/houses/house3.1st,
+	  scorn/misc/wizhide, start/HallsOfSelection/wraith_player: Map
+	  normalize, no functional changes
+
+2008-08-17 19:08  akirschbaum
+
+	* editor/scripts/LegacySpellConverter,
+	  editor/scripts/MapNormalizer, editor/scripts/MapValidator,
+	  editor/scripts/WorldMaker: Make editor scripts work with current
+	  Gridarta.
+
+2008-08-12 18:09  rjtanner
+
+	* pup_land/lone_town/shops/buildshop: Backport from Trunk. Use the
+	  shop tiles shop_building_pupland instead of the generic
+	  shop_building tiles. These shop tiles had been defined a while
+	  ago but were not giving good results due to an incomplete
+	  treasure list that is fixed now. Requires archetype update r9740
+
+2008-08-11 22:21  rjtanner
+
+	* .: Initialized merge tracking via "svnmerge" with revisions
+	  "1-4945" from
+	  https://crossfire.svn.sourceforge.net/svnroot/crossfire/maps/trunk
+
+2008-08-11 21:48  rjtanner
+
+	* port_joseph/pirates/tortship3: Backport from trunk - fix bug
+	  #2045976, wrong stair face (thanks goes to elliotbay)
+
+2008-08-11 21:29  rjtanner
+
+	* mlab/citydeclouds/villa/citydecloudsvillab2: Backport from trunk,
+	  resized map to remove unused and empty space
+
+2008-08-11 21:27  rjtanner
+
+	* mlab/citydeclouds/villa/citydecloudsvillaC1,
+	  mlab/citydeclouds/villa/citydecloudsvillaC2,
+	  mlab/citydeclouds/villa/citydecloudsvillaC3,
+	  mlab/citydeclouds/villa/citydecloudsvillab1,
+	  mlab/citydeclouds/villa/citydecloudsvillab2,
+	  mlab/citydeclouds/villa/citydecloudsvillab3: Backport from trunk,
+	  replace no_pass with move_block
+
+2008-08-11 20:57  rjtanner
+
+	* dragonisland/hangar: Backport from trunk, replace no_pass with
+	  move_block
+
+2008-08-11 20:49  rjtanner
+
+	* brest/brest.inn, brest/brest.scrolls.right: Backport from trunk,
+	  @match is case insensitive - made dialog all lower case
+
+2008-08-11 05:59  bbotbuilder
+
+	* python/items/ring_occidental_mages.py: Backport changes from
+	  trunk
+	  python/items/ring_occidental_mages.py:
+	  * fixed typo (thanks goes to buzzsaw)
+
+2008-08-11 00:10  bbotbuilder
+
+	* scorn/shops/potionshop: Backporting a change from trunk:
+	  
+	  scorn/shops/potionshop:
+	  * replace a reference to the alchemy spell with one to the skill
+	  (thanks goes to elliotbay)
+
+2008-08-02 07:35  rjtanner
+
+	* ChangeLog: Updated ChangeLog file using svn2cl
+
 2008-07-29 11:51  quinet
 
 	* pup_land/castle_eureca/cave_pass2: Backport from trunk: restored
