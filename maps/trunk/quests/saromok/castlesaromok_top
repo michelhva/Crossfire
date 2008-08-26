@@ -8,7 +8,7 @@ enter_x 12
 enter_y 6
 msg
 Created:  2008-08-14 Chad Opperman | cromagic@sbcglobal.net
-Modified: 2008-08-23 Chad Opperman | cromagic@sbcglobal.net
+Modified: 2008-08-26 Chad Opperman | cromagic@sbcglobal.net
 endmsg
 outdoor 1
 end
@@ -7730,6 +7730,11 @@ speed 1
 invisible 0
 is_used_up 0
 end
+arch light4
+x 12
+y 28
+glow_radius 50
+end
 arch altar_trigger
 slaying sarodied
 exp 1
@@ -7948,6 +7953,11 @@ y 39
 move_block 0
 blocksview 0
 is_floor 1
+end
+arch light4
+x 12
+y 40
+glow_radius 50
 end
 arch altar_trigger
 slaying sarodied
