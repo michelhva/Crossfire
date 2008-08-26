@@ -8,7 +8,7 @@ enter_x 12
 enter_y 6
 msg
 Created:  2008-08-14 Chad Opperman | cromagic@sbcglobal.net
-Modified: 2008-08-22 Rick Tanner
+Modified: 2008-08-23 Chad Opperman | cromagic@sbcglobal.net
 endmsg
 outdoor 1
 end
@@ -7483,6 +7483,12 @@ y 12
 connected 5
 end
 arch duplicator
+other_arch magic_ear
+x 12
+y 12
+connected 5
+end
+arch duplicator
 other_arch awall_0
 x 12
 y 12
@@ -7553,10 +7559,12 @@ This key opens the access gate to the Focus Crystal of the Tower.
 endmsg
 end
 arch pyro_book
+randomitems none
 arch spell_comet
 end
 end
 arch evoker_book
+randomitems none
 arch spell_asteroid
 end
 end
@@ -8071,11 +8079,11 @@ face sorcerer.171
 animation sorcerer_class
 Con 10
 Wis 100
-Pow 5000
+Pow 50000
 Int 100
 hp 20000
 maxhp 20000
-sp 5000
+sp 50000
 maxsp 5000
 exp 5000000
 dam 0
