@@ -8,7 +8,7 @@ enter_x 20
 enter_y 2
 msg
 Created:  2008-08-13 Chad Opperman | cromagic@sbcglobal.net
-Modified: 2008-08-22 Rick Tanner
+Modified: 2008-08-23 Chad Opperman | cromagic@sbcglobal.net
 endmsg
 end
 arch awall_0
@@ -5302,6 +5302,24 @@ x 20
 y 7
 connected 5
 end
+arch duplicator
+other_arch magic_mouth
+x 20
+y 7
+connected 5
+end
+arch duplicator
+other_arch magic_ear
+x 20
+y 7
+connected 5
+end
+arch duplicator
+other_arch magic_mouth
+x 20
+y 7
+connected 5
+end
 arch light4
 x 20
 y 7
@@ -5405,7 +5423,7 @@ Pow 1
 Int 1
 sp 1
 ac 3
-resist_electricity 30
+resist_electricity 35
 path_attuned 8
 material 0
 item_power 5
@@ -5491,14 +5509,6 @@ can_cast_spell 0
 stand_still 1
 no_damage 1
 end
-arch teleporter
-hp 20
-sp 28
-x 20
-y 12
-speed 0.0
-connected 2
-end
 arch check_inv
 slaying castlesaromok_firekey
 x 20
@@ -5519,6 +5529,14 @@ x 20
 y 12
 last_heal 1
 connected 21
+end
+arch teleporter
+hp 20
+sp 28
+x 20
+y 12
+speed 0.0
+connected 2
 end
 arch afloor_left
 x 20
