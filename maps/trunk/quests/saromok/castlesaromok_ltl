@@ -8,7 +8,7 @@ enter_x 8
 enter_y 4
 msg
 Created:  2008-08-14 Chad Opperman | cromagic@sbcglobal.net
-Modified: 2008-08-22 Rick Tanner
+Modified: 2008-08-22 Chad Opperman | cromagic@sbcglobal.net
 endmsg
 end
 arch stonefloor2
@@ -976,7 +976,7 @@ Pow 1
 Int 1
 sp 1
 ac 3
-resist_fire 30
+resist_fire 35
 path_attuned 2
 material 0
 item_power 5
@@ -990,6 +990,24 @@ arch key2
 name Fire Key
 slaying castlesaromok_firekey
 end
+end
+arch duplicator
+other_arch magic_ear
+x 4
+y 5
+connected 5
+end
+arch duplicator
+other_arch magic_mouth
+x 4
+y 5
+connected 5
+end
+arch duplicator
+other_arch magic_mouth
+x 4
+y 5
+connected 5
 end
 arch duplicator
 other_arch magic_ear

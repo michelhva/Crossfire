@@ -8,7 +8,7 @@ enter_x 1
 enter_y 4
 msg
 Created:  2008-08-14 Chad Opperman | cromagic@sbcglobal.net
-Modified: 2008-08-22 Rick Tanner
+Modified: 2008-08-23 Chad Opperman | cromagic@sbcglobal.net
 endmsg
 end
 arch stonefloor2
@@ -1420,6 +1420,24 @@ arch key2
 name Ice Key
 slaying castlesaromok_icekey
 end
+end
+arch duplicator
+other_arch magic_ear
+x 5
+y 5
+connected 5
+end
+arch duplicator
+other_arch magic_mouth
+x 5
+y 5
+connected 5
+end
+arch duplicator
+other_arch magic_mouth
+x 5
+y 5
+connected 5
 end
 arch duplicator
 other_arch magic_ear
