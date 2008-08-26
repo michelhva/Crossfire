@@ -8,7 +8,7 @@ enter_x 7
 enter_y 29
 msg
 Created:  2008-08-12 Chad Opperman | cromagic@sbcglobal.net
-Modified: 2008-08-22 Rick Tanner
+Modified: 2008-08-26 Rick Tanner
 endmsg
 end
 arch stonefloor2
@@ -1851,10 +1851,6 @@ arch invis_exit
 slaying castlesaromok_inside
 hp 25
 sp 15
-x 7
-y 29
-end
-arch odoorn2_closed_1
 x 7
 y 29
 end
