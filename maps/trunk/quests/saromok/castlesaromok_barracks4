@@ -7,7 +7,7 @@ height 15
 enter_y 7
 msg
 Created:  2008-08-12 Chad Opperman | cromagic@sbcglobal.net
-Modified: 2008-08-22 Rick Tanner
+Modified: 2008-08-26 Rick Tanner
 endmsg
 end
 arch stonefloor2
@@ -1015,7 +1015,7 @@ arch stonefloor2
 x 11
 y 6
 end
-arch swall_2_1_1
+arch swall_1_2
 x 11
 y 6
 end
@@ -1043,7 +1043,7 @@ arch stonefloor2
 x 11
 y 8
 end
-arch swall_2_1_1
+arch swall_1_1
 x 11
 y 8
 end
@@ -2096,7 +2096,7 @@ arch stonefloor2
 x 19
 y 6
 end
-arch swall_2_1_1
+arch swall_1_2
 x 19
 y 6
 end
@@ -2124,7 +2124,7 @@ arch stonefloor2
 x 19
 y 8
 end
-arch swall_2_1_1
+arch swall_1_1
 x 19
 y 8
 end
