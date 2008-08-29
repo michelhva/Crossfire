@@ -7,6 +7,7 @@ enter_x 12
 enter_y 12
 msg
 Created:  2004-08-13 Avion
+Modified: 2008-08-28 Rick Tanner
 endmsg
 outdoor 1
 end
@@ -1201,6 +1202,7 @@ arch barrel
 x 5
 y 4
 type 122
+nrof 0
 arch random_food
 end
 arch random_food
