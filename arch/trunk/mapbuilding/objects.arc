@@ -66,6 +66,6 @@ value 900000
 type 161
 subtype 3
 level 30
-face altar.111
-slaying mbaltar_none
+face mbaltar_none.111
+slaying altar_none
 end
