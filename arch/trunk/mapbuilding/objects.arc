@@ -58,3 +58,14 @@ subtype 3
 face mbbed_save.111
 slaying bed_save
 end
+Object building_altar
+name Altar material
+nrof 1
+weight 25000
+value 900000
+type 161
+subtype 3
+level 30
+face altar.111
+slaying mbaltar_none
+end
