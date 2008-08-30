@@ -1,8 +1,35 @@
 Changes for SVN top of tree:
 
+mapbuilding/objects.trs, mapbuilding/objects.arc: Applied slightly modified
+patch #2084099 "buildable altars", courtesy of meflin.
+mapbuilding/mbaltar_none.base.111.png: New image.
+Raphaël Quinet 2008-08-30
+
 monster/animal/giant_worm/purple_worm.arc, ground/nimground/Nimground3_purple.arc:
 Replaced purple (unrecognized color) with black in magicmap and color_fg fields.
 Rick Tanner 2008-08-20
+
+mapbuilding/building.arc, mapbuilding/building.trs: Added new archetype
+building_window, a building material using the new subtype 4.  This allows
+the player to build windows in existing walls.
+mapbuilding/mbwindow.base.111.png: New image
+Raphaël Quinet 2008-08-04
+
+mapbuilding/building.arc, mapbuilding/building.trs: Added new buildable
+fence.  This is useful for those who want walls that do not block the view.
+Fixed a bug in the treasure list shop_building_pupland that prevented it
+from including any walls (replaced the treasure list
+build_material_floor_pupland by building_material_stonewall_pupland).
+mapbuilding/mbswall_0.base.111.png: New image.
+Raphaël Quinet 2008-08-03
+
+wall/swall/swall.arc: The name "fence" is more appropriate for the archetype
+"swall" (spiked wall).
+Raphaël Quinet 2008-08-03
+
+shop/Floors/shopweapoeast.trs: Fixed a broken treasure list that prevented
+the nine ring sword from being created.
+Raphaël Quinet 2008-08-01
 
 disease/incontinence.arc, disease/diarrhea.arc, disease/rabies.arc: Make puddles
 from diseases go away after some time, for incontinence and rabies we should
