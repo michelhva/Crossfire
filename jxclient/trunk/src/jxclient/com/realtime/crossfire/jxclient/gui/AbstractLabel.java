@@ -37,6 +37,11 @@ import javax.swing.ImageIcon;
 public abstract class AbstractLabel extends GUIElement
 {
     /**
+     * The serial version UID.
+     */
+    private static final long serialVersionUID = 1;
+
+    /**
      * The label contents.
      */
     private String text = "";

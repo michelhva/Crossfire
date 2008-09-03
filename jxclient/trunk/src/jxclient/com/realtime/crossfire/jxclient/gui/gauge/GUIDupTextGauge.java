@@ -35,6 +35,11 @@ import java.awt.image.BufferedImage;
 public class GUIDupTextGauge extends GUIDupGauge
 {
     /**
+     * The serial version UID.
+     */
+    private static final long serialVersionUID = 1;
+
+    /**
      * The text color.
      */
     private final Color color;

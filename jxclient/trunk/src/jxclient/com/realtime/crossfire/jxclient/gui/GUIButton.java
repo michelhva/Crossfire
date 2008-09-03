@@ -35,6 +35,11 @@ import java.awt.image.BufferedImage;
  */
 public class GUIButton extends AbstractButton
 {
+    /**
+     * The serial version UID.
+     */
+    private static final long serialVersionUID = 1;
+
     private final BufferedImage imageUp;
 
     private final BufferedImage imageDown;

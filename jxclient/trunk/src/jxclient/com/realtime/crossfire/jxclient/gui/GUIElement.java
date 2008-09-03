@@ -40,6 +40,11 @@ import javax.swing.JPanel;
 public abstract class GUIElement extends JPanel
 {
     /**
+     * The serial version UID.
+     */
+    private static final long serialVersionUID = 1;
+
+    /**
      * The {@link Gui} this element is part of. Set to <code>null</code> if
      * this element is not part of any gui.
      */

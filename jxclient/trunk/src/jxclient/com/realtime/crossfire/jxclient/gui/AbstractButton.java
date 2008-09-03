@@ -33,6 +33,11 @@ import java.awt.event.MouseEvent;
 public abstract class AbstractButton extends ActivatableGUIElement
 {
     /**
+     * The serial version UID.
+     */
+    private static final long serialVersionUID = 1;
+
+    /**
      * The autorepeat delay initially.
      */
     private static final int TIMEOUT_FIRST = 350;

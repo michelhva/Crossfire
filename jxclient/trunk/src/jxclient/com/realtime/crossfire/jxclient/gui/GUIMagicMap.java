@@ -49,6 +49,11 @@ import javax.swing.ImageIcon;
 public class GUIMagicMap extends GUIElement
 {
     /**
+     * The serial version UID.
+     */
+    private static final long serialVersionUID = 1;
+
+    /**
      * The size of one tile in pixels.
      */
     private static final int TILE_SIZE = 4;

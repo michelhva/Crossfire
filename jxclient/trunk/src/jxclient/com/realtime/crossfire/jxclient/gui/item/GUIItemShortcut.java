@@ -38,6 +38,11 @@ import java.awt.image.BufferedImage;
 public class GUIItemShortcut extends GUIItem
 {
     /**
+     * The serial version UID.
+     */
+    private static final long serialVersionUID = 1;
+
+    /**
      * The background color of this item.
      */
     private static final Color BACKGROUND_COLOR = new Color(0, 0, 0, 0.0f);

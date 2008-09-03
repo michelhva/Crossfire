@@ -37,6 +37,11 @@ import java.awt.image.BufferedImage;
 public class GUIMetaElementList extends GUIList
 {
     /**
+     * The serial version UID.
+     */
+    private static final long serialVersionUID = 1;
+
+    /**
      * The metaserver instacne to track.
      */
     private final Metaserver metaserver;

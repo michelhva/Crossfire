@@ -46,6 +46,11 @@ import java.io.IOException;
 public abstract class GUIText extends ActivatableGUIElement implements KeyListener
 {
     /**
+     * The serial version UID.
+     */
+    private static final long serialVersionUID = 1;
+
+    /**
      * The number of characters to scroll left/right when the cursor would move
      * outside of the visible area.
      */

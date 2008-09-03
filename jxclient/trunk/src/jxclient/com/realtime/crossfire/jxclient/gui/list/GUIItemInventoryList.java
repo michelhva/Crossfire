@@ -45,6 +45,11 @@ import javax.swing.JList;
  */
 public class GUIItemInventoryList extends GUIItemList
 {
+    /**
+     * The serial version UID.
+     */
+    private static final long serialVersionUID = 1;
+
     private final JXCWindow window;
 
     private final CommandQueue commandQueue;

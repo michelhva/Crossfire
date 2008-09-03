@@ -35,6 +35,11 @@ import java.awt.image.BufferedImage;
 public class GUIDupGauge extends GUIElement implements GUIGaugeListener
 {
     /**
+     * The serial version UID.
+     */
+    private static final long serialVersionUID = 1;
+
+    /**
      * The label text.
      */
     private String labelText = "";

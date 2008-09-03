@@ -52,6 +52,11 @@ import javax.swing.ImageIcon;
 public class GUIMap extends GUIElement
 {
     /**
+     * The serial version UID.
+     */
+    private static final long serialVersionUID = 1;
+
+    /**
      * The color to use for overlaying fog-of-war tiles.
      */
     public static final Color FOG_OF_WAR_COLOR = new Color(0, 0, 0.5F, 0.5F);

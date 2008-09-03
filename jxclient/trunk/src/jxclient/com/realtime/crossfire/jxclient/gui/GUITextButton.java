@@ -38,6 +38,11 @@ import java.awt.geom.Rectangle2D;
 public class GUITextButton extends AbstractButton
 {
     /**
+     * The serial version UID.
+     */
+    private static final long serialVersionUID = 1;
+
+    /**
      * The images comprising the "up" button state.
      */
     private final ButtonImages up;

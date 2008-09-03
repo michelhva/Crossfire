@@ -31,6 +31,11 @@ import java.awt.image.BufferedImage;
 public class GUILabelLog extends GUILog
 {
     /**
+     * The serial version UID.
+     */
+    private static final long serialVersionUID = 1;
+
+    /**
      * The {@link Parser} instance for parsing drawextinfo messages.
      */
     private final Parser parser = new Parser();

@@ -38,6 +38,11 @@ import java.awt.Font;
 public class GUILabelStats extends GUIOneLineLabel
 {
     /**
+     * The serial version UID.
+     */
+    private static final long serialVersionUID = 1;
+
+    /**
      * The experience table to use.
      */
     private final ExperienceTable experienceTable;

@@ -32,6 +32,11 @@ import java.awt.image.BufferedImage;
 public class GUIDialogTitle extends GUIPicture
 {
     /**
+     * The serial version UID.
+     */
+    private static final long serialVersionUID = 1;
+
+    /**
      * Set to the distance of the dialog cordinates relative to the mouse
      * position while dragging start. Else set to <code>null</code>.
      */

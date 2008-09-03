@@ -34,6 +34,11 @@ import java.awt.image.BufferedImage;
 public class GUIOneLineLabel extends GUILabel
 {
     /**
+     * The serial version UID.
+     */
+    private static final long serialVersionUID = 1;
+
+    /**
      * Create a new instance.
      *
      * @param window The <code>JXCWindow</code> this element belongs to.

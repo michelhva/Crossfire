@@ -32,6 +32,11 @@ import java.awt.image.BufferedImage;
 public class GUIMessageLog extends GUILog
 {
     /**
+     * The serial version UID.
+     */
+    private static final long serialVersionUID = 1;
+
+    /**
      * The message buffer updater for updating {@link #buffer}.
      */
     private final MessageBufferUpdater messageBufferUpdater;

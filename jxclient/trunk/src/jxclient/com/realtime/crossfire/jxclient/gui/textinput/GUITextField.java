@@ -33,6 +33,11 @@ import java.awt.image.BufferedImage;
  */
 public class GUITextField extends GUIText
 {
+    /**
+     * The serial version UID.
+     */
+    private static final long serialVersionUID = 1;
+
     private final GUICommandList commandList;
 
     public GUITextField(final JXCWindow window, final String name, final int x, final int y, final int w, final int h, final BufferedImage activePicture, final BufferedImage inactivePicture, final Font font, final Color inactiveColor, final Color activeColor, final int margin, final String text, final GUICommandList commandList, final boolean ignoreUpDown)
