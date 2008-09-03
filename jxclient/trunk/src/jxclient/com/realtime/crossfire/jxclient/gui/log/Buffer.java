@@ -262,7 +262,6 @@ public class Buffer
         int minY = 0;
         int maxY = 0;
         int beginIndex = 0;
-        final int imax = line.size();
         int i = 0;
         for (final Segment segment : line)
         {
@@ -292,7 +291,7 @@ public class Buffer
             i++;
         }
 
-        line.updateAttributes(beginIndex, imax, height, minY, fonts, context);
+        line.updateAttributes(beginIndex, i, height, minY, fonts, context);
         height += maxY-minY;
 
         return Math.max(1, height);
