@@ -264,9 +264,9 @@ public class Buffer
         int maxY = 0;
         int beginIndex = 0;
         final int imax = line.size();
-        for (int i = 0; i < imax; i++)
+        int i = 0;
+        for (final Segment segment : line)
         {
-            final Segment segment = line.getSegment(i);
             final String text = segment.getText();
             final Font font = segment.getFont(fonts);
             final Rectangle2D rect = font.getStringBounds(text, context);
@@ -289,6 +289,8 @@ public class Buffer
             x += width;
             minY = (int)Math.min(minY, Math.round(rect.getY()));
             maxY = (int)Math.max(maxY, Math.round(rect.getY()+rect.getHeight()));
+
+            i++;
         }
 
         updateAttributes(line, beginIndex, imax, height, minY);
