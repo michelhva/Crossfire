@@ -176,14 +176,14 @@ public class Parser
         if (lastCount > 0 && text.equals(lastText) && lastColor != null && lastColor.equals(defaultColor))
         {
             lastCount++;
-            buffer.replaceLine(parseLine(text+" [["+lastCount+" times]", defaultColor, true));
+            buffer.replaceLine(parseLine(text+" [["+lastCount+" times]", defaultColor));
         }
         else
         {
             lastCount = 1;
             lastText = text;
             lastColor = defaultColor;
-            buffer.addLine(parseLine(text, defaultColor, false));
+            buffer.addLine(parseLine(text, defaultColor));
         }
     }
 
@@ -194,12 +194,9 @@ public class Parser
      *
      * @param defaultColor The default color to use.
      *
-     * @param replaceLastLine If unset, append the new line; else replace the
-     * previously added line.
-     *
      * @return the <code>Line</code> instance
      */
-    private Line parseLine(final String text, final Color defaultColor, final boolean replaceLastLine)
+    private Line parseLine(final String text, final Color defaultColor)
     {
         final Line line = new Line();
 
