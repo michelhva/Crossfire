@@ -19,6 +19,7 @@
 //
 package com.realtime.crossfire.jxclient.gui.log;
 
+import java.awt.Color;
 import java.awt.Font;
 import java.awt.font.FontRenderContext;
 import java.awt.font.LineMetrics;
@@ -47,13 +48,17 @@ public class Line implements Iterable<Segment>
     private int height = -1;
 
     /**
-     * Append a {@link Segment} to the end of the line.
-     *
-     * @param segment The segment to append.
+     * Appends a {@link Segment} to the end of the line.
+     * @param text the text to display
+     * @param bold whether bold face is enabled
+     * @param italic whether italic face is enabled
+     * @param underline whether underlining is enabled
+     * @param font the font to use
+     * @param color the color to use; <code>null</code> means "default color"
      */
-    public void addSegment(final Segment segment)
+    public void addSegment(final String text, final boolean bold, final boolean italic, final boolean underline, final FontID font, final Color color)
     {
-        segments.add(segment);
+        segments.add(new Segment(text, bold, italic, underline, font, color));
     }
 
     /** {@inheritDoc} */

@@ -383,11 +383,11 @@ public class Parser
         final String[] words = wordSeparatorPattern.split(newText, -1);
         for (int i = 0; i < words.length-1; i++)
         {
-            line.addSegment(new Segment(words[i]+" ", bold, italic, underline, font, color));
+            line.addSegment(words[i]+" ", bold, italic, underline, font, color);
         }
         if (words[words.length-1].length() > 0)
         {
-            line.addSegment(new Segment(words[words.length-1], bold, italic, underline, font, color));
+            line.addSegment(words[words.length-1], bold, italic, underline, font, color);
         }
     }
 
