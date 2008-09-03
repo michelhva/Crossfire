@@ -1,3 +1,9 @@
+2008-09-03  Andreas Kirschbaum
+
+	* Suppress error messages "updateItem: undefined item ..." for
+	upditem commands updating face information only. Such messages are
+	sent by the server for invisible items.
+
 2008-07-07  Andreas Kirschbaum
 
 	* Display information about selected item in inventory view.
