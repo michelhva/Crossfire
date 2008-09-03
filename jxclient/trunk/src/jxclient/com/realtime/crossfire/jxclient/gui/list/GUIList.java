@@ -109,6 +109,7 @@ public abstract class GUIList extends ActivatableGUIElement
         list.setFixedCellHeight(cellHeight);
         list.setOpaque(false);
         list.setSelectionMode(ListSelectionModel.SINGLE_SELECTION);
+        list.setPreferredSize(size);
         list.setSize(size);
 
         scrollPane = new JScrollPane(list, ScrollPaneConstants.VERTICAL_SCROLLBAR_NEVER, ScrollPaneConstants.HORIZONTAL_SCROLLBAR_NEVER);
