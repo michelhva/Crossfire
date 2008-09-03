@@ -1,5 +1,7 @@
 2008-09-03  Andreas Kirschbaum
 
+	* Fix inventory window sometimes showing only one column.
+
 	* Suppress error messages "updateItem: undefined item ..." for
 	upditem commands updating face information only. Such messages are
 	sent by the server for invisible items.
