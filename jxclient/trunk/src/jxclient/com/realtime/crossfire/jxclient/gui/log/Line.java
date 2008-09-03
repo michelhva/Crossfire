@@ -63,16 +63,6 @@ public class Line implements Iterable<Segment>
     }
 
     /**
-     * Return the number of segments of this line.
-     *
-     * @return The number of segments.
-     */
-    public int size()
-    {
-        return segments.size();
-    }
-
-    /**
      * Return whether the line contains no segments.
      *
      * @return Whether the line contains no segments.
