@@ -73,13 +73,12 @@ public class Line implements Iterable<Segment>
     }
 
     /**
-     * Return the last segment. The line must not be empty.
-     *
-     * @return The last segment.
+     * Returns the last segment.
+     * @return the last segment or <code>null</code> if the line is empty
      */
     public Segment getLastSegment()
     {
-        return segments.get(segments.size()-1);
+        return segments.isEmpty() ? null : segments.get(segments.size()-1);
     }
 
     /**

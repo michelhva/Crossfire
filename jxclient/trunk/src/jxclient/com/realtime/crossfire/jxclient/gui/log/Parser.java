@@ -364,22 +364,16 @@ public class Parser
         }
 
         final String newText;
-        if (!line.isEmpty())
+        final Segment prevSegment = line.getLastSegment();
+        if (prevSegment != null
+        && prevSegment.isBold() == bold
+        && prevSegment.isItalic() == italic
+        && prevSegment.isUnderline() == underline
+        && prevSegment.getFontID() == font
+        && prevSegment.getColor() == color)
         {
-            final Segment prevSegment = line.getLastSegment();
-            if (prevSegment.isBold() == bold
-            && prevSegment.isItalic() == italic
-            && prevSegment.isUnderline() == underline
-            && prevSegment.getFontID() == font
-            && prevSegment.getColor() == color)
-            {
-                newText = prevSegment.getText()+text;
-                line.removeLastSegment();
-            }
-            else
-            {
-                newText = text;
-            }
+            newText = prevSegment.getText()+text;
+            line.removeLastSegment();
         }
         else
         {
