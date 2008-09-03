@@ -63,16 +63,6 @@ public class Line implements Iterable<Segment>
     }
 
     /**
-     * Return whether the line contains no segments.
-     *
-     * @return Whether the line contains no segments.
-     */
-    public boolean isEmpty()
-    {
-        return segments.isEmpty();
-    }
-
-    /**
      * Returns the last segment.
      * @return the last segment or <code>null</code> if the line is empty
      */
