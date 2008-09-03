@@ -224,7 +224,7 @@ public class GUIItemInventoryList extends GUIItemList
     protected void updateTooltip(final int index)
     {
         final List<CfItem> inventory = itemsManager.getInventory();
-        final CfItem item = index < inventory.size() ? inventory.get(index) : null;
+        final CfItem item = 0 <= index && index < inventory.size() ? inventory.get(index) : null;
         setTooltipText(item == null ? null : item.getTooltipText());
     }
 
