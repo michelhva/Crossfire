@@ -31,37 +31,6 @@ import java.awt.Font;
 public class Segment
 {
     /**
-     * Available font types.
-     */
-    public enum FontID
-    {
-        /**
-         * The default font.
-         */
-        PRINT,
-
-        /**
-         * The font used by the [fixed] tag.
-         */
-        FIXED,
-
-        /**
-         * The font used by the [arcane] tag.
-         */
-        ARCANE,
-
-        /**
-         * The font used by the [hand] tag.
-         */
-        HAND,
-
-        /**
-         * The font used by the [strange] tag.
-         */
-        STRANGE
-    }
-
-    /**
      * The text to display.
      */
     private final String text;

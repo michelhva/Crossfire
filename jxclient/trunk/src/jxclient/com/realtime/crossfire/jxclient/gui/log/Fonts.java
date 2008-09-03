@@ -29,42 +29,38 @@ import java.awt.Font;
 public class Fonts
 {
     /**
-     * The font to use for {@link Segment.FontID#PRINT}, {@link
-     * Segment.FontID#HAND}, and {@link Segment.FontID#STRANGE} text.
+     * The font to use for {@link FontID#PRINT}, {@link FontID#HAND}, and
+     * {@link FontID#STRANGE} text.
      */
     private final Font fontPrint;
 
     /**
-     * The font to use for {@link Segment.FontID#FIXED} text.
+     * The font to use for {@link FontID#FIXED} text.
      */
     private final Font fontFixed;
 
     /**
-     * The font to use for {@link Segment.FontID#FIXED} text which has bold
-     * enabled.
+     * The font to use for {@link FontID#FIXED} text which has bold enabled.
      */
     private final Font fontFixedBold;
 
     /**
-     * The font to use for {@link Segment.FontID#ARCANE} text.
+     * The font to use for {@link FontID#ARCANE} text.
      */
     private final Font fontArcane;
 
     /**
      * Create a new instance.
      *
-     * @param fontPrint The font to use for <code>Segment.Font.PRINT</code>,
-     * <code>Segment.Font.HAND</code>, and <code>Segment.Font.STANGE</code>
-     * text.
+     * @param fontPrint The font to use for <code>FontID.PRINT</code>,
+     * <code>FontID.HAND</code>, and <code>FontID.STANGE</code> text.
      *
-     * @param fontFixed The font to use for <code>Segment.Font.FIXED</code>
-     * text.
+     * @param fontFixed The font to use for <code>FontID.FIXED</code> text.
      *
-     * @param fontFixedBold The font to use for <code>Segment.Font.FIXED</code>
-     * text which has bold enabled.
+     * @param fontFixedBold The font to use for <code>FontID.FIXED</code> text
+     * which has bold enabled.
      *
-     * @param fontArcane The font to use for <code>Segment.Font.ARCANE</code>
-     * text.
+     * @param fontArcane The font to use for <code>FontID.ARCANE</code> text.
      */
     public Fonts(final Font fontPrint, final Font fontFixed, final Font fontFixedBold, final Font fontArcane)
     {
@@ -75,8 +71,8 @@ public class Fonts
     }
 
     /**
-     * Return the font to use for {@link Segment.FontID#PRINT}, {@link
-     * Segment.FontID#HAND}, and {@link Segment.FontID#STRANGE} text.
+     * Return the font to use for {@link FontID#PRINT}, {@link FontID#HAND},
+     * and {@link FontID#STRANGE} text.
      *
      * @return The font.
      */
@@ -86,7 +82,7 @@ public class Fonts
     }
 
     /**
-     * Return the font to use for {@link Segment.FontID#FIXED} text.
+     * Return the font to use for {@link FontID#FIXED} text.
      *
      * @return The font.
      */
@@ -96,8 +92,8 @@ public class Fonts
     }
 
     /**
-     * Return the font to use for {@link Segment.FontID#FIXED} text which has
-     * bold enabled.
+     * Return the font to use for {@link FontID#FIXED} text which has bold
+     * enabled.
      *
      * @return The font.
      */
@@ -107,7 +103,7 @@ public class Fonts
     }
 
     /**
-     * Return the font to use for {@link Segment.FontID#ARCANE} text.
+     * Return the font to use for {@link FontID#ARCANE} text.
      *
      * @return The font.
      */

@@ -35,14 +35,14 @@ public class Parser
     /**
      * Maps font tag name to font instance.
      */
-    private static final Map<String, Segment.FontID> fonts = new HashMap<String, Segment.FontID>();
+    private static final Map<String, FontID> fonts = new HashMap<String, FontID>();
     static
     {
-        fonts.put("print", Segment.FontID.PRINT);
-        fonts.put("fixed", Segment.FontID.FIXED);
-        fonts.put("arcane", Segment.FontID.ARCANE);
-        fonts.put("hand", Segment.FontID.HAND);
-        fonts.put("strange", Segment.FontID.STRANGE);
+        fonts.put("print", FontID.PRINT);
+        fonts.put("fixed", FontID.FIXED);
+        fonts.put("arcane", FontID.ARCANE);
+        fonts.put("hand", FontID.HAND);
+        fonts.put("strange", FontID.STRANGE);
     }
 
     /**
@@ -86,7 +86,7 @@ public class Parser
     /**
      * The font to use.
      */
-    private Segment.FontID font = Segment.FontID.PRINT;
+    private FontID font = FontID.PRINT;
 
     /**
      * The color to use. <code>null</code> means default color.
@@ -278,7 +278,7 @@ public class Parser
         bold = false;
         italic = false;
         underline = false;
-        font = Segment.FontID.PRINT;
+        font = FontID.PRINT;
         color = defaultColor;
     }
 
