@@ -19,6 +19,9 @@
 //
 package com.realtime.crossfire.jxclient.gui.log;
 
+import java.awt.Font;
+import java.awt.font.FontRenderContext;
+import java.awt.font.LineMetrics;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Iterator;
@@ -129,5 +132,28 @@ public class Line implements Iterable<Segment>
     public void setHeight(final int height)
     {
         this.height = height;
+    }
+
+    /**
+     * Update the cached attributes of some {@link Segment}s.
+     *
+     * @param begin The index of the first segment to update.
+     * @param end The index of the first segment not to update.
+     * @param y The top border of the line's bounding box.
+     * @param minY The minimum bottom offset of all segments' bounding boxes.
+     * @param fonts the fonts instance to use
+     * @param context the font render context to use
+     */
+    public void updateAttributes(final int begin, final int end, final int y, final int minY, final Fonts fonts, final FontRenderContext context)
+    {
+        for (int i = begin; i < end; i++)
+        {
+            final Segment segment = segments.get(i);
+            final String text = segment.getText();
+            final Font font = segment.getFont(fonts);
+            final LineMetrics lineMetrics = font.getLineMetrics(text, context);
+            segment.setY(y-minY);
+            segment.setUnderlineOffset(Math.round(lineMetrics.getUnderlineOffset()));
+        }
     }
 }

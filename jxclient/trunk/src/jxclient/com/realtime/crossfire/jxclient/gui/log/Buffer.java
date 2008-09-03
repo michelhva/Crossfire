@@ -21,7 +21,6 @@ package com.realtime.crossfire.jxclient.gui.log;
 
 import java.awt.Font;
 import java.awt.font.FontRenderContext;
-import java.awt.font.LineMetrics;
 import java.awt.geom.Rectangle2D;
 import java.util.ArrayList;
 import java.util.Collections;
@@ -273,7 +272,7 @@ public class Buffer
             final int width = (int)Math.round(rect.getWidth());
             if (x != 0 && x+width > renderWidth)
             {
-                updateAttributes(line, beginIndex, i, height, minY);
+                line.updateAttributes(beginIndex, i, height, minY, fonts, context);
 
                 height += maxY-minY;
                 x = 0;
@@ -293,36 +292,10 @@ public class Buffer
             i++;
         }
 
-        updateAttributes(line, beginIndex, imax, height, minY);
+        line.updateAttributes(beginIndex, imax, height, minY, fonts, context);
         height += maxY-minY;
 
         return Math.max(1, height);
-    }
-
-    /**
-     * Update the cached attributes of some {@link Segment}s of a {@link Line}.
-     *
-     * @param line The line to process.
-     *
-     * @param begin The index of the first segment to update.
-     *
-     * @param end The index of the first segment not to update.
-     *
-     * @param y The top border of the line's bounding box.
-     *
-     * @param minY The minimum bottom offset of all segments' bounding boxes.
-     */
-    private void updateAttributes(final Line line, final int begin, final int end, final int y, final int minY)
-    {
-        for (int i = begin; i < end; i++)
-        {
-            final Segment segment = line.getSegment(i);
-            final String text = segment.getText();
-            final Font font = segment.getFont(fonts);
-            final LineMetrics lineMetrics = font.getLineMetrics(text, context);
-            segment.setY(y-minY);
-            segment.setUnderlineOffset(Math.round(lineMetrics.getUnderlineOffset()));
-        }
     }
 
     /**
