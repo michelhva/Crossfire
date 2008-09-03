@@ -33,6 +33,11 @@ import java.awt.image.BufferedImage;
  */
 public class GUICommandText extends GUIText
 {
+    /**
+     * The serial version UID.
+     */
+    private static final long serialVersionUID = 1;
+
     private final Commands commands;
 
     public GUICommandText(final JXCWindow window, final String name, final int x, final int y, final int w, final int h, final BufferedImage activeImage, final BufferedImage inactiveImage, final Font font, final Color inactiveColor, final Color activeColor, final int margin, final String text, final Commands commands, final boolean ignoreUpDown)

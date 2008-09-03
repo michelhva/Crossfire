@@ -31,6 +31,11 @@ import javax.swing.ListCellRenderer;
 public abstract class GUIItemList extends GUIList
 {
     /**
+     * The serial version UID.
+     */
+    private static final long serialVersionUID = 1;
+
+    /**
      * Creates a new instance.
      * @param window the <code>JXCWindow</code> this element belongs to
      * @param name the name of this element

@@ -36,6 +36,11 @@ import java.util.List;
 public class GUIItemFloor extends GUIItemItem
 {
     /**
+     * The serial version UID.
+     */
+    private static final long serialVersionUID = 1;
+
+    /**
      * The command queue for sending commands.
      */
     private final CommandQueue commandQueue;

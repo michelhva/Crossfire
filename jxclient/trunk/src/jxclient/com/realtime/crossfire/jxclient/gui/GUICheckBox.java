@@ -39,6 +39,11 @@ import java.awt.image.BufferedImage;
 public class GUICheckBox extends ActivatableGUIElement
 {
     /**
+     * The serial version UID.
+     */
+    private static final long serialVersionUID = 1;
+
+    /**
      * The image for the checked [x] state.
      */
     private final BufferedImage checkedImage;

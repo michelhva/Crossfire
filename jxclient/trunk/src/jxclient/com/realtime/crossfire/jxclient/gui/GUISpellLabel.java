@@ -35,6 +35,11 @@ import java.awt.image.BufferedImage;
 public class GUISpellLabel extends GUIHTMLLabel
 {
     /**
+     * The serial version UID.
+     */
+    private static final long serialVersionUID = 1;
+
+    /**
      * The display type.
      */
     public enum Type

@@ -34,6 +34,11 @@ import java.awt.Font;
 public class GUILabelQuery extends GUIMultiLineLabel
 {
     /**
+     * The serial version UID.
+     */
+    private static final long serialVersionUID = 1;
+
+    /**
      * The {@link CrossfireQueryListener} registered to receive query commands.
      */
     private final CrossfireQueryListener crossfireQueryListener = new CrossfireQueryListener()

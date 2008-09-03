@@ -42,6 +42,11 @@ import java.util.ListIterator;
 public abstract class GUILog extends GUIElement implements GUIScrollable2
 {
     /**
+     * The serial version UID.
+     */
+    private static final long serialVersionUID = 1;
+
+    /**
      * The number of pixels to scroll.
      */
     public static final int SCROLL_PIXEL = 12;

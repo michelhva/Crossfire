@@ -34,6 +34,11 @@ import java.awt.image.BufferedImage;
 public abstract class GUILabel extends AbstractLabel
 {
     /**
+     * The serial version UID.
+     */
+    private static final long serialVersionUID = 1;
+
+    /**
      * The font for rendering the label text.
      */
     private final Font textFont;

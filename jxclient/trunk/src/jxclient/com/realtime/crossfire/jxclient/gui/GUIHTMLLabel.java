@@ -42,6 +42,11 @@ import javax.swing.text.html.parser.ParserDelegator;
 public class GUIHTMLLabel extends AbstractLabel
 {
     /**
+     * The serial version UID.
+     */
+    private static final long serialVersionUID = 1;
+
+    /**
      * Size of border around text in auto-resize mode.
      */
     public static final int AUTO_BORDER_SIZE = 2;

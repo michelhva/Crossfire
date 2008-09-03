@@ -39,6 +39,11 @@ import java.awt.image.BufferedImage;
 public class GUIMetaElement extends ActivatableGUIElement implements GUIScrollable
 {
     /**
+     * The serial version UID.
+     */
+    private static final long serialVersionUID = 1;
+
+    /**
      * The metaserver instance to monitor.
      */
     private final Metaserver metaserver;

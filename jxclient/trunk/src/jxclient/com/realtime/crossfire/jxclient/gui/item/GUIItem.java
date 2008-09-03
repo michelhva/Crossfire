@@ -34,6 +34,11 @@ import java.awt.event.MouseEvent;
  */
 public abstract class GUIItem extends ActivatableGUIElement implements GUIScrollable
 {
+    /**
+     * The serial version UID.
+     */
+    private static final long serialVersionUID = 1;
+
     protected GUIItem(final JXCWindow window, final String name, final int x, final int y, final int w, final int h)
     {
         super(window, name, x, y, w, h, Transparency.TRANSLUCENT);

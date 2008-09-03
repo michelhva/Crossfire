@@ -49,6 +49,11 @@ import javax.swing.event.ListSelectionListener;
 public abstract class GUIList extends ActivatableGUIElement
 {
     /**
+     * The serial version UID.
+     */
+    private static final long serialVersionUID = 1;
+
+    /**
      * The height of a list cell in pixels.
      */
     private final int cellHeight;

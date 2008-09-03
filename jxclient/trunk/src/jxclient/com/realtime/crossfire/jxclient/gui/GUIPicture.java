@@ -35,6 +35,11 @@ import java.awt.image.BufferedImage;
 public class GUIPicture extends GUIElement
 {
     /**
+     * The serial version UID.
+     */
+    private static final long serialVersionUID = 1;
+
+    /**
      * Create a new instance.
      *
      * @param window The <code>JXCWindow</code> this element belongs to.

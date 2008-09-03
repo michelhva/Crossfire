@@ -33,6 +33,11 @@ import java.awt.event.MouseEvent;
 public class GUIScrollBar extends ActivatableGUIElement implements ScrollableListener
 {
     /**
+     * The serial version UID.
+     */
+    private static final long serialVersionUID = 1;
+
+    /**
      * If set, make the slider size reflect the visible area; if unset, display
      * the slider as a square.
      */

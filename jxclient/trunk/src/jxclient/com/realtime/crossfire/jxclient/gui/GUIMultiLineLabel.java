@@ -37,6 +37,11 @@ import java.util.regex.Pattern;
 public class GUIMultiLineLabel extends GUILabel
 {
     /**
+     * The serial version UID.
+     */
+    private static final long serialVersionUID = 1;
+
+    /**
      * The pattern to split the text into lines.
      */
     private static final Pattern lineSeparatorPattern = Pattern.compile(" *\n");

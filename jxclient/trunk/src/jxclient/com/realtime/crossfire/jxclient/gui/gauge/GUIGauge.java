@@ -36,6 +36,11 @@ import java.awt.image.BufferedImage;
 public class GUIGauge extends GUIElement implements GUIGaugeListener
 {
     /**
+     * The serial version UID.
+     */
+    private static final long serialVersionUID = 1;
+
+    /**
      * The tooltip prefix. It is prepended to {@link #tooltipText} to form the
      * tooltip.
      */

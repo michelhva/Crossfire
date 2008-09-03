@@ -33,6 +33,11 @@ import javax.swing.ListCellRenderer;
 public class MetaElementCellRenderer extends JPanel implements ListCellRenderer
 {
     /**
+     * The serial version UID.
+     */
+    private static final long serialVersionUID = 1;
+
+    /**
      * The template used for painting.
      */
     private final GUIMetaElement template;

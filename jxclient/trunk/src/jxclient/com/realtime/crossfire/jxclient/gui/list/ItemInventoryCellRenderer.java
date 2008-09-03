@@ -34,6 +34,11 @@ import javax.swing.ListCellRenderer;
 public class ItemInventoryCellRenderer extends JPanel implements ListCellRenderer
 {
     /**
+     * The serial version UID.
+     */
+    private static final long serialVersionUID = 1;
+
+    /**
      * The template used for painting.
      */
     private final GUIItemInventory template;
