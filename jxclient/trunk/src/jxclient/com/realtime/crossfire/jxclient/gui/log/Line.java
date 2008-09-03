@@ -83,19 +83,6 @@ public class Line implements Iterable<Segment>
     }
 
     /**
-     * Return one {@link Segment} by segment index. The first segment has the
-     * index <code>0</code>.
-     *
-     * @param index The segment index.
-     *
-     * @return The segment.
-     */
-    public Segment getSegment(final int index)
-    {
-        return segments.get(index);
-    }
-
-    /**
      * Return the last segment. The line must not be empty.
      *
      * @return The last segment.
