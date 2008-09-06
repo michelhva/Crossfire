@@ -1,5 +1,8 @@
 2008-09-06  Andreas Kirschbaum
 
+	* Replace empty faces with arrows in "Click here to see
+	next/previous group of items" buttons.
+
 	* Remove arrow buttons from ground view. Requires a Crossfire
 	server supporting the "num_look_objects" setup option (r9810).
 	Older servers do work but ground view scrolling does not work.

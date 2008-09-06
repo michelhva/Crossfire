@@ -20,12 +20,13 @@
 package com.realtime.crossfire.jxclient.faces;
 
 import com.realtime.crossfire.jxclient.server.CrossfireServerConnection;
+import com.realtime.crossfire.jxclient.util.ResourceUtils;
 import java.awt.GraphicsConfiguration;
 import java.awt.GraphicsDevice;
 import java.awt.GraphicsEnvironment;
 import java.awt.Transparency;
+import java.awt.Image;
 import java.io.IOException;
-import java.net.URL;
 import java.util.LinkedList;
 import java.util.List;
 import javax.swing.ImageIcon;
@@ -45,6 +46,16 @@ public class FacesManager
      * The resource name of the "unknown" face.
      */
     private static final String UNKNOWN_PNG = "resource/unknown.png";
+
+    /**
+     * The resource for "Click here for next group of items" buttons.
+     */
+    private static final String NEXT_GROUP_FACE = "resource/next_group.png";
+
+    /**
+     * The resource for "Click here for previous group of items" buttons.
+     */
+    private static final String PREV_GROUP_FACE = "resource/prev_group.png";
 
     /**
      * The {@link FaceCache} instance used to look up in-memory faces.
@@ -71,6 +82,16 @@ public class FacesManager
      * The empty face; returned for face ID 0.
      */
     private final FaceImages emptyFaceImages;
+
+    /**
+     * The face to substitute into "Click here for next group of items".
+     */
+    private final Image nextGroupFace;
+
+    /**
+     * The face to substitute into "Click here for previous group of items".
+     */
+    private final Image prevGroupFace;
 
     /**
      * The {@link FaceQueueListener} registered to {@link #facesQueue}.
@@ -120,17 +141,9 @@ public class FacesManager
         final ImageIcon emptyMagicMapImageIcon = new ImageIcon(gconf.createCompatibleImage(Face.SQUARE_SIZE/8, Face.SQUARE_SIZE/8, Transparency.OPAQUE));
         emptyFaceImages = new FaceImages(emptyOriginalImageIcon, emptyScaledImageIcon, emptyMagicMapImageIcon);
 
-        final URL url = FacesManager.class.getClassLoader().getResource(UNKNOWN_PNG);
-        if (url == null)
-        {
-            throw new IOException("cannot find "+UNKNOWN_PNG);
-        }
-        final ImageIcon originalUnknownImageIcon = new ImageIcon(url);
-        if (originalUnknownImageIcon.getIconWidth() <= 0 || originalUnknownImageIcon.getIconHeight() <= 0)
-        {
-            throw new IOException("cannot load "+UNKNOWN_PNG);
-        }
-        unknownFaceImages = FaceImagesUtils.newFaceImages(originalUnknownImageIcon);
+        unknownFaceImages = FaceImagesUtils.newFaceImages(ResourceUtils.loadImage(UNKNOWN_PNG));
+        nextGroupFace = ResourceUtils.loadImage(NEXT_GROUP_FACE).getImage();
+        prevGroupFace = ResourceUtils.loadImage(PREV_GROUP_FACE).getImage();
     }
 
     /**
@@ -241,5 +254,25 @@ public class FacesManager
     public FacesQueue getFacesQueue()
     {
         return facesQueue;
+    }
+
+    /**
+     * Returns the face to substitute into "Click here for next group of
+     * items".
+     * @return the image
+     */
+    public Image getNextGroupFace()
+    {
+        return nextGroupFace;
+    }
+
+    /**
+     * Returns the face to substitute into "Click here for previous group of
+     * items".
+     * @return the image
+     */
+    public Image getPrevGroupFace()
+    {
+        return prevGroupFace;
     }
 }
