@@ -1,5 +1,10 @@
 2008-09-06  Andreas Kirschbaum
 
+	* Remove arrow buttons from ground view. Requires a Crossfire
+	server supporting the "num_look_objects" setup option (r9810).
+	Older servers do work but ground view scrolling does not work.
+	Makes prelude skin's ground view functional.
+
 	* Fix inventory window:
 	- Show items when scrolling down.
 	- When moving the selection, make sure the last row is shown even

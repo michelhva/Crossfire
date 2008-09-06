@@ -64,6 +64,11 @@ public class CrossfireServerConnection extends ServerConnection
     private int mapHeight = 13;
 
     /**
+     * The number of ground view objects requested from the server.
+     */
+    private int numLookObjects = 50;
+
+    /**
      * The {@link MapSizeListener}s to be notified.
      */
     private final List<MapSizeListener> mapSizeListeners = new ArrayList<MapSizeListener>();
@@ -1875,7 +1880,8 @@ public class CrossfireServerConnection extends ServerConnection
             "itemcmd 2",
             "spellmon 1",
             "tick 1",
-            "mapsize "+mapWidth+"x"+mapHeight);
+            "mapsize "+mapWidth+"x"+mapHeight,
+            "num_look_objects "+numLookObjects);
         sendRequestinfo("image_info");
         sendRequestinfo("skill_info");
         sendRequestinfo("exp_table");
@@ -2135,6 +2141,22 @@ public class CrossfireServerConnection extends ServerConnection
                 if (!value.equals("1"))
                 {
                     throw new UnknownCommandException("the server is too old for this client since it does not support the tick=1 setup option.");
+                }
+            }
+            else if (option.equals("num_look_objects"))
+            {
+                try
+                {
+                    if (Integer.parseInt(value) != numLookObjects)
+                    {
+                        System.err.println("Warning: the server didn't accept the num_look_objects setup option: requested "+numLookObjects+", returned "+value+".");
+                        System.err.println("Expect issues with the ground view display.");
+                    }
+                }
+                catch (final NumberFormatException ex)
+                {
+                    System.err.println("Warning: the server is too old for this client since it does not support the num_look_objects setup option.");
+                    System.err.println("Expect issues with the ground view display.");
                 }
             }
             else
@@ -2594,6 +2616,19 @@ public class CrossfireServerConnection extends ServerConnection
         {
             listener.mapSizeChanged(mapWidth, mapHeight);
         }
+    }
+
+    /**
+     * Sets the maximum number of objects in the ground view. Must not be
+     * called in connected state.
+     * @param numLookObjects the number of objects
+     * @throws IllegalArgumentException if the number of objects is invalid
+     */
+    public void setNumLookObjects(final int numLookObjects)
+    {
+        if (isConnected()) throw new IllegalStateException();
+        if (numLookObjects < 1) throw new IllegalArgumentException("num_look_objects is not positive");
+        this.numLookObjects = numLookObjects;
     }
 
     /**

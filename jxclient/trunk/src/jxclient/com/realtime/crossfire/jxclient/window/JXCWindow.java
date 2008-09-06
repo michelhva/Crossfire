@@ -706,6 +706,7 @@ public class JXCWindow extends JFrame implements KeyListener, CrossfireDrawextin
                 stats.reset();
                 SkillSet.clearNumberedSkills();
                 server.setMapSize(skin.getMapWidth(), skin.getMapHeight());
+                server.setNumLookObjects(skin.getNumLookObjects());
                 server.connect(hostname, port, connectionListener);
                 facesManager.reset();
                 commandQueue.clear();

@@ -286,6 +286,7 @@ set_invisible label_panel_spells_icon
 set_invisible label_panel_spells_name
 set_invisible label_panel_spells_description
 
+set_num_look_objects 11
 item floor floor0 0+199+9     0+551+165 32 32  0 marker_cursed marker_cursed marker_magic marker_magic marker_applied inventory_selector marker_locked marker_unpaid font_default_small WHITE
 item floor floor1 0+199+9+34  0+551+165 32 32  1 marker_cursed marker_cursed marker_magic marker_magic marker_applied inventory_selector marker_locked marker_unpaid font_default_small WHITE
 item floor floor2 0+199+9+68  0+551+165 32 32  2 marker_cursed marker_cursed marker_magic marker_magic marker_applied inventory_selector marker_locked marker_unpaid font_default_small WHITE
