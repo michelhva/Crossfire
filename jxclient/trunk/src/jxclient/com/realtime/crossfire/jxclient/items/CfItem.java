@@ -31,26 +31,59 @@ import javax.swing.event.EventListenerList;
  */
 public class CfItem
 {
+    /**
+     * The tag.
+     */
     private final int tag;
 
+    /**
+     * The flags.
+     */
     private int flags;
 
+    /**
+     * The weight.
+     */
     private int weight;
 
+    /**
+     * The face.
+     */
     private Face face;
 
+    /**
+     * The singular name.
+     */
     private String name;
 
+    /**
+     * The plural name.
+     */
     private String namePl;
 
+    /**
+     * The animation.
+     */
     private int anim;
 
+    /**
+     * The animatin speed.
+     */
     private int animSpeed;
 
+    /**
+     * The number of objects in the stack.
+     */
     private int nrof;
 
+    /**
+     * The location.
+     */
     private int location;
 
+    /**
+     * The type.
+     */
     private final int type;
 
     /**
@@ -59,24 +92,94 @@ public class CfItem
      */
     private boolean modified = true;
 
+    /**
+     * The flags mask for applied states.
+     */
     public static final int F_APPLIED      = 0x000F;
+
+    /**
+     * The location mask.
+     */
     public static final int F_LOCATION     = 0x00F0;
+
+    /**
+     * The flags value for blessed items.
+     */
     public static final int F_BLESSED      = 0x0100;
+
+    /**
+     * The flags value for unpaid items.
+     */
     public static final int F_UNPAID       = 0x0200;
+
+    /**
+     * The flags value for magical items.
+     */
     public static final int F_MAGIC        = 0x0400;
+
+    /**
+     * The flags value for cursed items.
+     */
     public static final int F_CURSED       = 0x0800;
+
+    /**
+     * The flags value for damned items.
+     */
     public static final int F_DAMNED       = 0x1000;
+
+    /**
+     * The flags value for opened items.
+     */
     public static final int F_OPEN         = 0x2000;
+
+    /**
+     * The flags value for non-pickable items.
+     */
     public static final int F_NOPICK       = 0x4000;
+
+    /**
+     * The flags value for locked items.
+     */
     public static final int F_LOCKED       = 0x8000;
 
+    /**
+     * The update flags value for location updates.
+     */
     public static final int UPD_LOCATION   = 0x01;
+
+    /**
+     * The update flags value for flags updates.
+     */
     public static final int UPD_FLAGS      = 0x02;
+
+    /**
+     * The update flags value for weight updates.
+     */
     public static final int UPD_WEIGHT     = 0x04;
+
+    /**
+     * The update flags value for face updates.
+     */
     public static final int UPD_FACE       = 0x08;
+
+    /**
+     * The update flags value for name updates.
+     */
     public static final int UPD_NAME       = 0x10;
+
+    /**
+     * The update flags value for animation updates.
+     */
     public static final int UPD_ANIM       = 0x20;
+
+    /**
+     * The update flags value for animation speed updates.
+     */
     public static final int UPD_ANIMSPEED  = 0x40;
+
+    /**
+     * The update flags value for nrof updates.
+     */
     public static final int UPD_NROF       = 0x80;
 
     /**
@@ -84,6 +187,20 @@ public class CfItem
      */
     private final EventListenerList listeners = new EventListenerList();
 
+    /**
+     * Creates a new instance.
+     * @param location the location
+     * @param tag the tag
+     * @param flags the flags
+     * @param weight the weight
+     * @param face the face
+     * @param name the singular name
+     * @param namePl the plural name
+     * @param anim the animation
+     * @param animSpeed the animation speed
+     * @param nrof the number of objects in the stack
+     * @param type the type
+     */
     public CfItem(final int location, final int tag, final int flags, final int weight, final Face face, final String name, final String namePl, final int anim, final int animSpeed, final int nrof, final int type)
     {
         this.location = location;
@@ -99,6 +216,10 @@ public class CfItem
         this.type = type;
     }
 
+    /**
+     * Updates the flags.
+     * @param flags the new flags
+     */
     public void setFlags(final int flags)
     {
         if (this.flags != flags)
@@ -108,6 +229,10 @@ public class CfItem
         }
     }
 
+    /**
+     * Updates the weight.
+     * @param weight the new weight
+     */
     public void setWeight(final int weight)
     {
         if (this.weight != weight)
@@ -117,6 +242,10 @@ public class CfItem
         }
     }
 
+    /**
+     * Updates the face.
+     * @param face the new face
+     */
     public void setFace(final Face face)
     {
         if (this.face != face)
@@ -126,6 +255,11 @@ public class CfItem
         }
     }
 
+    /**
+     * Updates the name.
+     * @param name the new singular name
+     * @param namePl the new plural name
+     */
     public void setName(final String name, final String namePl)
     {
         if (!this.name.equals(name) || !this.namePl.equals(namePl))
@@ -136,6 +270,10 @@ public class CfItem
         }
     }
 
+    /**
+     * Updates the animation.
+     * @param anim the new animation
+     */
     public void setAnim(final int anim)
     {
         if (this.anim != anim)
@@ -145,6 +283,10 @@ public class CfItem
         }
     }
 
+    /**
+     * Updates the animation speed.
+     * @param animSpeed the new animation speed
+     */
     public void setAnimSpeed(final int animSpeed)
     {
         if (this.animSpeed != animSpeed)
@@ -154,6 +296,10 @@ public class CfItem
         }
     }
 
+    /**
+     * Updates the number of objects in the stack.
+     * @param nrof the new number of objects
+     */
     public void setNrOf(final int nrof)
     {
         if (this.nrof != nrof)
@@ -164,40 +310,63 @@ public class CfItem
     }
 
     /**
-     * Update the location.
-     *
-     * @param location The new location.
+     * Updates the location.
+     * @param location the new location
      */
     public void setLocation(final int location)
     {
         this.location = location;
     }
 
+    /**
+     * Returns the tag.
+     * @return the tag
+     */
     public int getTag()
     {
         return tag;
     }
 
+    /**
+     * Returns the weight.
+     * @return the weight
+     */
     public int getWeight()
     {
         return weight;
     }
 
+    /**
+     * Returns the face.
+     * @return the face
+     */
     public Face getFace()
     {
         return face;
     }
 
+    /**
+     * Returns the name.
+     * @return the name
+     */
     public String getName()
     {
         return nrof > 1 ? namePl : name;
     }
 
+    /**
+     * Returns the number of objects in this item stack.
+     * @return whether the number of objects
+     */
     public int getNrOf()
     {
         return nrof;
     }
 
+    /**
+     * Returns whether this item is applied.
+     * @return whether this item is applied
+     */
     public boolean isApplied()
     {
         return (flags&F_APPLIED) != 0;
@@ -208,56 +377,108 @@ public class CfItem
         return (flags&F_LOCATION) != 0;
     }
 
+    /**
+     * Returns whether this item is blessed.
+     * @return whether this item is blessed
+     */
     public boolean isBlessed()
     {
         return (flags&F_BLESSED) != 0;
     }
 
+    /**
+     * Returns whether this item is unpaid.
+     * @return whether this item is unpaid
+     */
     public boolean isUnpaid()
     {
         return (flags&F_UNPAID) != 0;
     }
 
+    /**
+     * Returns whether this item is magical.
+     * @return whether this item is magical
+     */
     public boolean isMagic()
     {
         return (flags&F_MAGIC) != 0;
     }
 
+    /**
+     * Returns whether this item is cursed.
+     * @return whether this item is cursed
+     */
     public boolean isCursed()
     {
         return (flags&F_CURSED) != 0;
     }
 
+    /**
+     * Returns whether this item is damned.
+     * @return whether this item is damned
+     */
     public boolean isDamned()
     {
         return (flags&F_DAMNED) != 0;
     }
 
+    /**
+     * Returns whether this item is an opened container.
+     * @return whether this item is an opened container
+     */
     public boolean isOpen()
     {
         return (flags&F_OPEN) != 0;
     }
 
+    /**
+     * Returns whether this item cannot be picked up.
+     * @return whether this item cannot be picked up
+     */
     public boolean isNoPick()
     {
         return (flags&F_NOPICK) != 0;
     }
 
+    /**
+     * Returns whether this item is locked.
+     * @return whether this item is locked
+     */
     public boolean isLocked()
     {
         return (flags&F_LOCKED) != 0;
     }
 
+    /**
+     * Returns the location.
+     * @return the location
+     */
     public int getLocation()
     {
         return location;
     }
 
+    /**
+     * Returns the type.
+     * @return the type
+     */
     public int getType()
     {
         return type;
     }
 
+    /**
+     * Processes an "upditem" command.
+     * @param updateFlags the changed values
+     * @param flags the new flags
+     * @param weight the new weight
+     * @param face the new face
+     * @param name the new singular name
+     * @param namePl the new plural name
+     * @param anim the new animation ID
+     * @param animSpeed the new animation speed
+     * @param nrof the new number of items
+     */
     public void update(final int updateFlags, final int flags, final int weight, final Face face, final String name, final String namePl, final int anim, final int animSpeed, final int nrof)
     {
         if ((updateFlags&UPD_FLAGS) != 0)
@@ -292,7 +513,7 @@ public class CfItem
     }
 
     /**
-     * Notify all listener
+     * Notify all listener.
      */
     public void fireModified()
     {

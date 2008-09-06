@@ -549,6 +549,20 @@ public class ItemsManager
         return inventoryManager;
     }
 
+    /**
+     * Processes an "upditem" command.
+     * @param flags the changed values
+     * @param tag the item's tag
+     * @param valLocation the item's location
+     * @param valFlags the item's flags
+     * @param valWeight the item's weight
+     * @param valFaceNum the item's face ID
+     * @param valName the item's singular name
+     * @param valNamePl the item's plural name
+     * @param valAnim the item's animation ID
+     * @param valAnimSpeed the item's animation speed
+     * @param valNrof the number of items
+     */
     private void updateItem(final int flags, final int tag, final int valLocation, final int valFlags, final int valWeight, final int valFaceNum, final String valName, final String valNamePl, final int valAnim, final int valAnimSpeed, final int valNrof)
     {
         final CfItem item = getItemOrPlayer(tag);
