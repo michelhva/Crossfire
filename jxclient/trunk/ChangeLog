@@ -1,6 +1,9 @@
 2008-09-06  Andreas Kirschbaum
 
-	* Show items in inventory window when scrolling down.
+	* Fix inventory window:
+	- Show items when scrolling down.
+	- When moving the selection, make sure the last row is shown even
+	if only partially filled.
 
 2008-09-03  Andreas Kirschbaum
 
