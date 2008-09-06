@@ -23,6 +23,7 @@ package com.realtime.crossfire.jxclient.gui.item;
 import com.realtime.crossfire.jxclient.faces.Face;
 import com.realtime.crossfire.jxclient.faces.FacesManager;
 import com.realtime.crossfire.jxclient.faces.FacesManagerListener;
+import com.realtime.crossfire.jxclient.gui.GUIElement;
 import com.realtime.crossfire.jxclient.items.CfItem;
 import com.realtime.crossfire.jxclient.items.CfItemListener;
 import com.realtime.crossfire.jxclient.server.CrossfireServerConnection;
@@ -35,6 +36,10 @@ import java.awt.Image;
 import java.awt.geom.Rectangle2D;
 import java.awt.image.BufferedImage;
 
+/**
+ * A {@link GUIElement} instance representing an in-game item.
+ * @author Andreas Kirschbaum
+ */
 public abstract class GUIItemItem extends GUIItem
 {
     /**
@@ -52,40 +57,94 @@ public abstract class GUIItemItem extends GUIItem
      */
     private final CrossfireServerConnection crossfireServerConnection;
 
+    /**
+     * The {@link FacesManager} instance to use.
+     */
     private final FacesManager facesManager;
 
+    /**
+     * The overlay image for cursed objects.
+     */
     private final BufferedImage cursedImage;
 
+    /**
+     * The overlay image for damned objects.
+     */
     private final BufferedImage damnedImage;
 
+    /**
+     * The overlay image for magical objects.
+     */
     private final BufferedImage magicImage;
 
+    /**
+     * The overlay image for blessed objects.
+     */
     private final BufferedImage blessedImage;
 
+    /**
+     * The overlay image for applied objects.
+     */
     private final BufferedImage appliedImage;
 
+    /**
+     * The overlay image for selected objects.
+     */
     private final BufferedImage selectorImage;
 
+    /**
+     * The overlay image for locked objects.
+     */
     private final BufferedImage lockedImage;
 
+    /**
+     * The overlay image for unpaid objects.
+     */
     private final BufferedImage unpaidImage;
 
+    /**
+     * The background color for cursed objects.
+     */
     private final Color cursedColor;
 
+    /**
+     * The background color for damned objects.
+     */
     private final Color damnedColor;
 
+    /**
+     * The background color for magical objects.
+     */
     private final Color magicColor;
 
+    /**
+     * The background color for blessed objects.
+     */
     private final Color blessedColor;
 
+    /**
+     * The background color for applied objects.
+     */
     private final Color appliedColor;
 
+    /**
+     * The background color for selected objects.
+     */
     private final Color selectorColor;
 
+    /**
+     * The background color for locked objects.
+     */
     private final Color lockedColor;
 
+    /**
+     * The background color for unpaid objects.
+     */
     private final Color unpaidColor;
 
+    /**
+     * The font for the "nrof" text.
+     */
     private final Font font;
 
     /**
@@ -93,6 +152,9 @@ public abstract class GUIItemItem extends GUIItem
      */
     private final Color nrofColor;
 
+    /**
+     * The current item instance.
+     */
     private CfItem item = null;
 
     /**
@@ -129,6 +191,37 @@ public abstract class GUIItemItem extends GUIItem
         }
     };
 
+    /**
+     * Creates a new instance.
+     * @param window the window instance this element belongs to
+     * @param name the name of this element
+     * @param x the x-coordinate for drawing this element to screen; it is
+     * relative to <code>gui</code>
+     * @param y the y-coordinate for drawing this element to screen; it is
+     * relative to <code>gui</code>
+     * @param w the width for drawing this element to screen
+     * @param h the height for drawing this element to screen
+     * @param cursedImage the overlay image for cursed objects
+     * @param damnedImage the overlay image for damned objects
+     * @param magicImage the overlay image for magical objects
+     * @param blessedImage the overlay image for blessed objects
+     * @param appliedImage the overlay image for applied objects
+     * @param selectorImage the overlay image for selected objects
+     * @param lockedImage the overlay image for locked objects
+     * @param unpaidImage the overlay image for unpaid objects
+     * @param cursedColor the background color for cursed objects
+     * @param damnedColor the background color for damned objects
+     * @param magicColor the background color for magical objects
+     * @param blessedColor the background color for blessed objects
+     * @param appliedColor the background color for applied objects
+     * @param selectorColor the background color for selected objects
+     * @param lockedColor the background color for locked objects
+     * @param unpaidColor the background color for unpaid objects
+     * @param crossfireServerConnection the connection instance
+     * @param facesManager the faces manager instance to use
+     * @param font the font for nrof information
+     * @param nrofColor the color for nrof information
+     */
     protected GUIItemItem(final JXCWindow window, final String name, final int x, final int y, final int w, final int h, final BufferedImage cursedImage, final BufferedImage damnedImage, final BufferedImage magicImage, final BufferedImage blessedImage, final BufferedImage appliedImage, final BufferedImage selectorImage, final BufferedImage lockedImage, final BufferedImage unpaidImage, final Color cursedColor, final Color damnedColor, final Color magicColor, final Color blessedColor, final Color appliedColor, final Color selectorColor, final Color lockedColor, final Color unpaidColor, final CrossfireServerConnection crossfireServerConnection, final FacesManager facesManager, final Font font, final Color nrofColor)
     {
         super(window, name, x, y, w, h);
@@ -216,6 +309,14 @@ public abstract class GUIItemItem extends GUIItem
         return facesManager.getOriginalImageIcon(item.getFace().getFaceNum()).getImage();
     }
 
+    /**
+     * Renders a text string.
+     * @param g the graphics context to paint into
+     * @param dx the x-coordinate
+     * @param dy the y-coordinate
+     * @param height the text height
+     * @param text the text
+     */
     private void renderText(final Graphics2D g, final int dx, final int dy, final int height, final String text)
     {
         final Rectangle2D rect = font.getStringBounds(text, g.getFontRenderContext());
@@ -265,11 +366,19 @@ public abstract class GUIItemItem extends GUIItem
         crossfireServerConnection.sendApply(tmpItem.getTag());
     }
 
+    /**
+     * Returns the current item instance.
+     * @return the current item instance
+     */
     public CfItem getItem()
     {
         return item;
     }
 
+    /**
+     * Sets the current item instance.
+     * @param item the new current item instance
+     */
     protected void setItem(final CfItem item)
     {
         if (this.item == item)
