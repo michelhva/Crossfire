@@ -109,8 +109,7 @@ public abstract class GUIList extends ActivatableGUIElement
         list.setFixedCellHeight(cellHeight);
         list.setOpaque(false);
         list.setSelectionMode(ListSelectionModel.SINGLE_SELECTION);
-        list.setPreferredSize(size);
-        list.setSize(size);
+        list.setSize(getWidth(), Integer.MAX_VALUE);
 
         scrollPane = new JScrollPane(list, ScrollPaneConstants.VERTICAL_SCROLLBAR_NEVER, ScrollPaneConstants.HORIZONTAL_SCROLLBAR_NEVER);
         scrollPane.getViewport().setScrollMode(JViewport.BLIT_SCROLL_MODE);
@@ -162,7 +161,7 @@ public abstract class GUIList extends ActivatableGUIElement
     public void addElement(final GUIElement element)
     {
         model.addElement(element);
-        list.setSize(list.getPreferredSize());
+        list.setSize(getWidth(), Integer.MAX_VALUE);
         if (model.getSize() == 1)
         {
             setSelectedIndex(0);
@@ -183,7 +182,7 @@ public abstract class GUIList extends ActivatableGUIElement
         if (newSize < oldSize)
         {
             model.removeRange(newSize, oldSize-1);
-            list.setSize(list.getPreferredSize());
+            list.setSize(getWidth(), Integer.MAX_VALUE);
             if (index >= newSize && newSize > 0)
             {
                 setSelectedIndex(newSize-1);
