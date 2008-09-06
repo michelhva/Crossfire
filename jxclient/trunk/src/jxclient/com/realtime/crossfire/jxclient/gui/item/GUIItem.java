@@ -20,17 +20,16 @@
 package com.realtime.crossfire.jxclient.gui.item;
 
 import com.realtime.crossfire.jxclient.gui.ActivatableGUIElement;
+import com.realtime.crossfire.jxclient.gui.GUIElement;
 import com.realtime.crossfire.jxclient.gui.GUIScrollable;
 import com.realtime.crossfire.jxclient.window.JXCWindow;
 import java.awt.Transparency;
 import java.awt.event.MouseEvent;
 
 /**
- *
- * @version 1.0
+ * A {@link GUIElement} representing an in-game object.
  * @author Lauwenmark
  * @author Andreas Kirschbaum
- * @since 1.0
  */
 public abstract class GUIItem extends ActivatableGUIElement implements GUIScrollable
 {
@@ -39,6 +38,17 @@ public abstract class GUIItem extends ActivatableGUIElement implements GUIScroll
      */
     private static final long serialVersionUID = 1;
 
+    /**
+     * Creates a new instance.
+     * @param window the window instance this element belongs to
+     * @param name the name of this element
+     * @param x the x-coordinate for drawing this element to screen; it is
+     * relative to <code>gui</code>
+     * @param y the y-coordinate for drawing this element to screen; it is
+     * relative to <code>gui</code>
+     * @param w the width for drawing this element to screen
+     * @param h the height for drawing this element to screen
+     */
     protected GUIItem(final JXCWindow window, final String name, final int x, final int y, final int w, final int h)
     {
         super(window, name, x, y, w, h, Transparency.TRANSLUCENT);
@@ -67,10 +77,22 @@ public abstract class GUIItem extends ActivatableGUIElement implements GUIScroll
         }
     }
 
+    /**
+     * Called when the left mouse button was pressed.
+     * @param window the window instance this element belongs to
+     */
     public abstract void button1Clicked(final JXCWindow window);
 
+    /**
+     * Called when the middle mouse button was pressed.
+     * @param window the window instance this element belongs to
+     */
     public abstract void button2Clicked(final JXCWindow window);
 
+    /**
+     * Called when the right mouse button was pressed.
+     * @param window the window instance this element belongs to
+     */
     public abstract void button3Clicked(final JXCWindow window);
 
     /** {@inheritDoc} */
