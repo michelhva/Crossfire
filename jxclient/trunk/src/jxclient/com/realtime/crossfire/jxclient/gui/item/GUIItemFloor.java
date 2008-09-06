@@ -166,7 +166,14 @@ public class GUIItemFloor extends GUIItemItem
             return;
         }
 
-        crossfireServerConnection.sendExamine(item.getTag());
+        if (item.isItemGroupButton())
+        {
+            crossfireServerConnection.sendApply(item.getTag());
+        }
+        else
+        {
+            crossfireServerConnection.sendExamine(item.getTag());
+        }
     }
 
     /* {@inheritDoc} */
