@@ -59,12 +59,19 @@ public class MoveSelectionCommand implements GUICommand
     /** {@inheritDoc} */
     public boolean canExecute()
     {
-        return list.canMoveSelection(diffLines, diffElements);
+        return list.canMoveSelection(diffLines, diffElements) || list.canScroll(diffLines);
     }
 
     /** {@inheritDoc} */
     public void execute()
     {
-        list.moveSelection(diffLines, diffElements);
+        if (list.canMoveSelection(diffLines, diffElements))
+        {
+            list.moveSelection(diffLines, diffElements);
+        }
+        else
+        {
+            list.scroll(diffLines);
+        }
     }
 }
