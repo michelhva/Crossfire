@@ -146,6 +146,11 @@ import javax.imageio.ImageIO;
 public abstract class JXCSkinLoader implements JXCSkin
 {
     /**
+     * The default number of ground view objects.
+     */
+    private static final int DEFAULT_NUM_LOOK_OBJECTS = 50;
+
+    /**
      * Pattern to parse integer constants.
      */
     private static final Pattern patternExpr = Pattern.compile("([0-9]+|WIDTH|HEIGHT|WIDTH/2|HEIGHT/2)([-+])(.+)");
@@ -212,6 +217,11 @@ public abstract class JXCSkinLoader implements JXCSkin
      * The map height in tiles; zero if unset.
      */
     private int mapHeight = 0;
+
+    /**
+     * The maximum number of ground view objects.
+     */
+    private int numLookObjects = DEFAULT_NUM_LOOK_OBJECTS;
 
     /**
      * The text button factory. Set to <code>null</code> until defined.
@@ -364,6 +374,7 @@ public abstract class JXCSkinLoader implements JXCSkin
         skinName = "unknown";
         mapWidth = 0;
         mapHeight = 0;
+        numLookObjects = DEFAULT_NUM_LOOK_OBJECTS;
         definedDialogs.clear();
         definedImages.clear();
         addDialog("keybind", window, mouseTracker, commands);
@@ -429,6 +440,12 @@ public abstract class JXCSkinLoader implements JXCSkin
     public int getMapHeight()
     {
         return mapHeight;
+    }
+
+    /** {@inheritDoc} */
+    public int getNumLookObjects()
+    {
+        return numLookObjects;
     }
 
     private Gui addDialog(final String name, final JXCWindow window, final MouseTracker mouseTracker, final Commands commands)
@@ -1665,6 +1682,15 @@ public abstract class JXCSkinLoader implements JXCSkin
                             }
 
                             gui.setModal(true);
+                        }
+                        else if (gui != null && args[0].equals("set_num_look_objects"))
+                        {
+                            if (args.length != 2)
+                            {
+                                throw new IOException("syntax error");
+                            }
+
+                            numLookObjects = parseInt(args[1]);
                         }
                         else if (gui != null && args[0].equals("scrollbar"))
                         {

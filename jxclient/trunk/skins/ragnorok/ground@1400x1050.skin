@@ -2,139 +2,51 @@
 dialog border -5 HEIGHT-37 WIDTH+10 42 true
 dialog_hide START META LOGIN
 
-button button_left     5 5 12 32 scroll_left_up12 scroll_left_down12 true command_ground_left
-item floor floor0     17 5 32 32  0 #FF0000/0.5 #FF8000/0.5 #0000FF/0.5 #0080FF/0.5 marker_applied inventory_selector marker_locked marker_unpaid font_item BLACK
-item floor floor1     49 5 32 32  1 #FF0000/0.5 #FF8000/0.5 #0000FF/0.5 #0080FF/0.5 marker_applied inventory_selector marker_locked marker_unpaid font_item BLACK
-item floor floor2     81 5 32 32  2 #FF0000/0.5 #FF8000/0.5 #0000FF/0.5 #0080FF/0.5 marker_applied inventory_selector marker_locked marker_unpaid font_item BLACK
-item floor floor3    113 5 32 32  3 #FF0000/0.5 #FF8000/0.5 #0000FF/0.5 #0080FF/0.5 marker_applied inventory_selector marker_locked marker_unpaid font_item BLACK
-item floor floor4    145 5 32 32  4 #FF0000/0.5 #FF8000/0.5 #0000FF/0.5 #0080FF/0.5 marker_applied inventory_selector marker_locked marker_unpaid font_item BLACK
-item floor floor5    177 5 32 32  5 #FF0000/0.5 #FF8000/0.5 #0000FF/0.5 #0080FF/0.5 marker_applied inventory_selector marker_locked marker_unpaid font_item BLACK
-item floor floor6    209 5 32 32  6 #FF0000/0.5 #FF8000/0.5 #0000FF/0.5 #0080FF/0.5 marker_applied inventory_selector marker_locked marker_unpaid font_item BLACK
-item floor floor7    241 5 32 32  7 #FF0000/0.5 #FF8000/0.5 #0000FF/0.5 #0080FF/0.5 marker_applied inventory_selector marker_locked marker_unpaid font_item BLACK
-item floor floor8    273 5 32 32  8 #FF0000/0.5 #FF8000/0.5 #0000FF/0.5 #0080FF/0.5 marker_applied inventory_selector marker_locked marker_unpaid font_item BLACK
-item floor floor9    305 5 32 32  9 #FF0000/0.5 #FF8000/0.5 #0000FF/0.5 #0080FF/0.5 marker_applied inventory_selector marker_locked marker_unpaid font_item BLACK
-item floor floor10   337 5 32 32 10 #FF0000/0.5 #FF8000/0.5 #0000FF/0.5 #0080FF/0.5 marker_applied inventory_selector marker_locked marker_unpaid font_item BLACK
-item floor floor11   369 5 32 32 11 #FF0000/0.5 #FF8000/0.5 #0000FF/0.5 #0080FF/0.5 marker_applied inventory_selector marker_locked marker_unpaid font_item BLACK
-item floor floor12   401 5 32 32 12 #FF0000/0.5 #FF8000/0.5 #0000FF/0.5 #0080FF/0.5 marker_applied inventory_selector marker_locked marker_unpaid font_item BLACK
-item floor floor13   433 5 32 32 13 #FF0000/0.5 #FF8000/0.5 #0000FF/0.5 #0080FF/0.5 marker_applied inventory_selector marker_locked marker_unpaid font_item BLACK
-item floor floor14   465 5 32 32 14 #FF0000/0.5 #FF8000/0.5 #0000FF/0.5 #0080FF/0.5 marker_applied inventory_selector marker_locked marker_unpaid font_item BLACK
-item floor floor15   497 5 32 32 15 #FF0000/0.5 #FF8000/0.5 #0000FF/0.5 #0080FF/0.5 marker_applied inventory_selector marker_locked marker_unpaid font_item BLACK
-item floor floor16   529 5 32 32 16 #FF0000/0.5 #FF8000/0.5 #0000FF/0.5 #0080FF/0.5 marker_applied inventory_selector marker_locked marker_unpaid font_item BLACK
-item floor floor17   561 5 32 32 17 #FF0000/0.5 #FF8000/0.5 #0000FF/0.5 #0080FF/0.5 marker_applied inventory_selector marker_locked marker_unpaid font_item BLACK
-item floor floor18   593 5 32 32 18 #FF0000/0.5 #FF8000/0.5 #0000FF/0.5 #0080FF/0.5 marker_applied inventory_selector marker_locked marker_unpaid font_item BLACK
-item floor floor19   625 5 32 32 19 #FF0000/0.5 #FF8000/0.5 #0000FF/0.5 #0080FF/0.5 marker_applied inventory_selector marker_locked marker_unpaid font_item BLACK
-item floor floor20   657 5 32 32 20 #FF0000/0.5 #FF8000/0.5 #0000FF/0.5 #0080FF/0.5 marker_applied inventory_selector marker_locked marker_unpaid font_item BLACK
-item floor floor21   689 5 32 32 21 #FF0000/0.5 #FF8000/0.5 #0000FF/0.5 #0080FF/0.5 marker_applied inventory_selector marker_locked marker_unpaid font_item BLACK
-item floor floor22   721 5 32 32 22 #FF0000/0.5 #FF8000/0.5 #0000FF/0.5 #0080FF/0.5 marker_applied inventory_selector marker_locked marker_unpaid font_item BLACK
-item floor floor23   753 5 32 32 23 #FF0000/0.5 #FF8000/0.5 #0000FF/0.5 #0080FF/0.5 marker_applied inventory_selector marker_locked marker_unpaid font_item BLACK
-item floor floor24   785 5 32 32 24 #FF0000/0.5 #FF8000/0.5 #0000FF/0.5 #0080FF/0.5 marker_applied inventory_selector marker_locked marker_unpaid font_item BLACK
-item floor floor25   817 5 32 32 25 #FF0000/0.5 #FF8000/0.5 #0000FF/0.5 #0080FF/0.5 marker_applied inventory_selector marker_locked marker_unpaid font_item BLACK
-item floor floor26   849 5 32 32 26 #FF0000/0.5 #FF8000/0.5 #0000FF/0.5 #0080FF/0.5 marker_applied inventory_selector marker_locked marker_unpaid font_item BLACK
-item floor floor27   881 5 32 32 27 #FF0000/0.5 #FF8000/0.5 #0000FF/0.5 #0080FF/0.5 marker_applied inventory_selector marker_locked marker_unpaid font_item BLACK
-item floor floor28   913 5 32 32 28 #FF0000/0.5 #FF8000/0.5 #0000FF/0.5 #0080FF/0.5 marker_applied inventory_selector marker_locked marker_unpaid font_item BLACK
-item floor floor29   945 5 32 32 29 #FF0000/0.5 #FF8000/0.5 #0000FF/0.5 #0080FF/0.5 marker_applied inventory_selector marker_locked marker_unpaid font_item BLACK
-item floor floor30   977 5 32 32 30 #FF0000/0.5 #FF8000/0.5 #0000FF/0.5 #0080FF/0.5 marker_applied inventory_selector marker_locked marker_unpaid font_item BLACK
-item floor floor31  1009 5 32 32 31 #FF0000/0.5 #FF8000/0.5 #0000FF/0.5 #0080FF/0.5 marker_applied inventory_selector marker_locked marker_unpaid font_item BLACK
-item floor floor32  1041 5 32 32 32 #FF0000/0.5 #FF8000/0.5 #0000FF/0.5 #0080FF/0.5 marker_applied inventory_selector marker_locked marker_unpaid font_item BLACK
-item floor floor33  1073 5 32 32 33 #FF0000/0.5 #FF8000/0.5 #0000FF/0.5 #0080FF/0.5 marker_applied inventory_selector marker_locked marker_unpaid font_item BLACK
-item floor floor34  1105 5 32 32 34 #FF0000/0.5 #FF8000/0.5 #0000FF/0.5 #0080FF/0.5 marker_applied inventory_selector marker_locked marker_unpaid font_item BLACK
-item floor floor35  1137 5 32 32 35 #FF0000/0.5 #FF8000/0.5 #0000FF/0.5 #0080FF/0.5 marker_applied inventory_selector marker_locked marker_unpaid font_item BLACK
-item floor floor36  1169 5 32 32 36 #FF0000/0.5 #FF8000/0.5 #0000FF/0.5 #0080FF/0.5 marker_applied inventory_selector marker_locked marker_unpaid font_item BLACK
-item floor floor37  1201 5 32 32 37 #FF0000/0.5 #FF8000/0.5 #0000FF/0.5 #0080FF/0.5 marker_applied inventory_selector marker_locked marker_unpaid font_item BLACK
-item floor floor38  1233 5 32 32 38 #FF0000/0.5 #FF8000/0.5 #0000FF/0.5 #0080FF/0.5 marker_applied inventory_selector marker_locked marker_unpaid font_item BLACK
-item floor floor39  1265 5 32 32 39 #FF0000/0.5 #FF8000/0.5 #0000FF/0.5 #0080FF/0.5 marker_applied inventory_selector marker_locked marker_unpaid font_item BLACK
-item floor floor40  1297 5 32 32 40 #FF0000/0.5 #FF8000/0.5 #0000FF/0.5 #0080FF/0.5 marker_applied inventory_selector marker_locked marker_unpaid font_item BLACK
-item floor floor41  1329 5 32 32 41 #FF0000/0.5 #FF8000/0.5 #0000FF/0.5 #0080FF/0.5 marker_applied inventory_selector marker_locked marker_unpaid font_item BLACK
-item floor floor42  1361 5 32 32 42 #FF0000/0.5 #FF8000/0.5 #0000FF/0.5 #0080FF/0.5 marker_applied inventory_selector marker_locked marker_unpaid font_item BLACK
-button button_right 1393 5 12 32 scroll_right_up12 scroll_right_down12 true command_ground_right
+set_num_look_objects 43
 
-commandlist_add command_ground_left floor0 SCROLL -1
-commandlist_add command_ground_left floor1 SCROLL -1
-commandlist_add command_ground_left floor2 SCROLL -1
-commandlist_add command_ground_left floor3 SCROLL -1
-commandlist_add command_ground_left floor4 SCROLL -1
-commandlist_add command_ground_left floor5 SCROLL -1
-commandlist_add command_ground_left floor6 SCROLL -1
-commandlist_add command_ground_left floor7 SCROLL -1
-commandlist_add command_ground_left floor8 SCROLL -1
-commandlist_add command_ground_left floor9 SCROLL -1
-commandlist_add command_ground_left floor10 SCROLL -1
-commandlist_add command_ground_left floor11 SCROLL -1
-commandlist_add command_ground_left floor12 SCROLL -1
-commandlist_add command_ground_left floor13 SCROLL -1
-commandlist_add command_ground_left floor14 SCROLL -1
-commandlist_add command_ground_left floor15 SCROLL -1
-commandlist_add command_ground_left floor16 SCROLL -1
-commandlist_add command_ground_left floor17 SCROLL -1
-commandlist_add command_ground_left floor18 SCROLL -1
-commandlist_add command_ground_left floor19 SCROLL -1
-commandlist_add command_ground_left floor20 SCROLL -1
-commandlist_add command_ground_left floor21 SCROLL -1
-commandlist_add command_ground_left floor22 SCROLL -1
-commandlist_add command_ground_left floor23 SCROLL -1
-commandlist_add command_ground_left floor24 SCROLL -1
-commandlist_add command_ground_left floor25 SCROLL -1
-commandlist_add command_ground_left floor26 SCROLL -1
-commandlist_add command_ground_left floor27 SCROLL -1
-commandlist_add command_ground_left floor28 SCROLL -1
-commandlist_add command_ground_left floor29 SCROLL -1
-commandlist_add command_ground_left floor30 SCROLL -1
-commandlist_add command_ground_left floor31 SCROLL -1
-commandlist_add command_ground_left floor32 SCROLL -1
-commandlist_add command_ground_left floor33 SCROLL -1
-commandlist_add command_ground_left floor34 SCROLL -1
-commandlist_add command_ground_left floor35 SCROLL -1
-commandlist_add command_ground_left floor36 SCROLL -1
-commandlist_add command_ground_left floor37 SCROLL -1
-commandlist_add command_ground_left floor38 SCROLL -1
-commandlist_add command_ground_left floor39 SCROLL -1
-commandlist_add command_ground_left floor40 SCROLL -1
-commandlist_add command_ground_left floor41 SCROLL -1
-commandlist_add command_ground_left floor42 SCROLL -1
-
-commandlist_add command_ground_right floor0 SCROLL 1
-commandlist_add command_ground_right floor1 SCROLL 1
-commandlist_add command_ground_right floor2 SCROLL 1
-commandlist_add command_ground_right floor3 SCROLL 1
-commandlist_add command_ground_right floor4 SCROLL 1
-commandlist_add command_ground_right floor5 SCROLL 1
-commandlist_add command_ground_right floor6 SCROLL 1
-commandlist_add command_ground_right floor7 SCROLL 1
-commandlist_add command_ground_right floor8 SCROLL 1
-commandlist_add command_ground_right floor9 SCROLL 1
-commandlist_add command_ground_right floor10 SCROLL 1
-commandlist_add command_ground_right floor11 SCROLL 1
-commandlist_add command_ground_right floor12 SCROLL 1
-commandlist_add command_ground_right floor13 SCROLL 1
-commandlist_add command_ground_right floor14 SCROLL 1
-commandlist_add command_ground_right floor15 SCROLL 1
-commandlist_add command_ground_right floor16 SCROLL 1
-commandlist_add command_ground_right floor17 SCROLL 1
-commandlist_add command_ground_right floor18 SCROLL 1
-commandlist_add command_ground_right floor19 SCROLL 1
-commandlist_add command_ground_right floor20 SCROLL 1
-commandlist_add command_ground_right floor21 SCROLL 1
-commandlist_add command_ground_right floor22 SCROLL 1
-commandlist_add command_ground_right floor23 SCROLL 1
-commandlist_add command_ground_right floor24 SCROLL 1
-commandlist_add command_ground_right floor25 SCROLL 1
-commandlist_add command_ground_right floor26 SCROLL 1
-commandlist_add command_ground_right floor27 SCROLL 1
-commandlist_add command_ground_right floor28 SCROLL 1
-commandlist_add command_ground_right floor29 SCROLL 1
-commandlist_add command_ground_right floor30 SCROLL 1
-commandlist_add command_ground_right floor31 SCROLL 1
-commandlist_add command_ground_right floor32 SCROLL 1
-commandlist_add command_ground_right floor33 SCROLL 1
-commandlist_add command_ground_right floor34 SCROLL 1
-commandlist_add command_ground_right floor35 SCROLL 1
-commandlist_add command_ground_right floor36 SCROLL 1
-commandlist_add command_ground_right floor37 SCROLL 1
-commandlist_add command_ground_right floor38 SCROLL 1
-commandlist_add command_ground_right floor39 SCROLL 1
-commandlist_add command_ground_right floor40 SCROLL 1
-commandlist_add command_ground_right floor41 SCROLL 1
-commandlist_add command_ground_right floor42 SCROLL 1
+item floor floor0      5+12 5 32 32  0 #FF0000/0.5 #FF8000/0.5 #0000FF/0.5 #0080FF/0.5 marker_applied inventory_selector marker_locked marker_unpaid font_item BLACK
+item floor floor1     37+12 5 32 32  1 #FF0000/0.5 #FF8000/0.5 #0000FF/0.5 #0080FF/0.5 marker_applied inventory_selector marker_locked marker_unpaid font_item BLACK
+item floor floor2     69+12 5 32 32  2 #FF0000/0.5 #FF8000/0.5 #0000FF/0.5 #0080FF/0.5 marker_applied inventory_selector marker_locked marker_unpaid font_item BLACK
+item floor floor3    101+12 5 32 32  3 #FF0000/0.5 #FF8000/0.5 #0000FF/0.5 #0080FF/0.5 marker_applied inventory_selector marker_locked marker_unpaid font_item BLACK
+item floor floor4    133+12 5 32 32  4 #FF0000/0.5 #FF8000/0.5 #0000FF/0.5 #0080FF/0.5 marker_applied inventory_selector marker_locked marker_unpaid font_item BLACK
+item floor floor5    165+12 5 32 32  5 #FF0000/0.5 #FF8000/0.5 #0000FF/0.5 #0080FF/0.5 marker_applied inventory_selector marker_locked marker_unpaid font_item BLACK
+item floor floor6    197+12 5 32 32  6 #FF0000/0.5 #FF8000/0.5 #0000FF/0.5 #0080FF/0.5 marker_applied inventory_selector marker_locked marker_unpaid font_item BLACK
+item floor floor7    229+12 5 32 32  7 #FF0000/0.5 #FF8000/0.5 #0000FF/0.5 #0080FF/0.5 marker_applied inventory_selector marker_locked marker_unpaid font_item BLACK
+item floor floor8    261+12 5 32 32  8 #FF0000/0.5 #FF8000/0.5 #0000FF/0.5 #0080FF/0.5 marker_applied inventory_selector marker_locked marker_unpaid font_item BLACK
+item floor floor9    293+12 5 32 32  9 #FF0000/0.5 #FF8000/0.5 #0000FF/0.5 #0080FF/0.5 marker_applied inventory_selector marker_locked marker_unpaid font_item BLACK
+item floor floor10   325+12 5 32 32 10 #FF0000/0.5 #FF8000/0.5 #0000FF/0.5 #0080FF/0.5 marker_applied inventory_selector marker_locked marker_unpaid font_item BLACK
+item floor floor11   357+12 5 32 32 11 #FF0000/0.5 #FF8000/0.5 #0000FF/0.5 #0080FF/0.5 marker_applied inventory_selector marker_locked marker_unpaid font_item BLACK
+item floor floor12   389+12 5 32 32 12 #FF0000/0.5 #FF8000/0.5 #0000FF/0.5 #0080FF/0.5 marker_applied inventory_selector marker_locked marker_unpaid font_item BLACK
+item floor floor13   421+12 5 32 32 13 #FF0000/0.5 #FF8000/0.5 #0000FF/0.5 #0080FF/0.5 marker_applied inventory_selector marker_locked marker_unpaid font_item BLACK
+item floor floor14   453+12 5 32 32 14 #FF0000/0.5 #FF8000/0.5 #0000FF/0.5 #0080FF/0.5 marker_applied inventory_selector marker_locked marker_unpaid font_item BLACK
+item floor floor15   485+12 5 32 32 15 #FF0000/0.5 #FF8000/0.5 #0000FF/0.5 #0080FF/0.5 marker_applied inventory_selector marker_locked marker_unpaid font_item BLACK
+item floor floor16   517+12 5 32 32 16 #FF0000/0.5 #FF8000/0.5 #0000FF/0.5 #0080FF/0.5 marker_applied inventory_selector marker_locked marker_unpaid font_item BLACK
+item floor floor17   549+12 5 32 32 17 #FF0000/0.5 #FF8000/0.5 #0000FF/0.5 #0080FF/0.5 marker_applied inventory_selector marker_locked marker_unpaid font_item BLACK
+item floor floor18   581+12 5 32 32 18 #FF0000/0.5 #FF8000/0.5 #0000FF/0.5 #0080FF/0.5 marker_applied inventory_selector marker_locked marker_unpaid font_item BLACK
+item floor floor19   613+12 5 32 32 19 #FF0000/0.5 #FF8000/0.5 #0000FF/0.5 #0080FF/0.5 marker_applied inventory_selector marker_locked marker_unpaid font_item BLACK
+item floor floor20   645+12 5 32 32 20 #FF0000/0.5 #FF8000/0.5 #0000FF/0.5 #0080FF/0.5 marker_applied inventory_selector marker_locked marker_unpaid font_item BLACK
+item floor floor21   677+12 5 32 32 21 #FF0000/0.5 #FF8000/0.5 #0000FF/0.5 #0080FF/0.5 marker_applied inventory_selector marker_locked marker_unpaid font_item BLACK
+item floor floor22   709+12 5 32 32 22 #FF0000/0.5 #FF8000/0.5 #0000FF/0.5 #0080FF/0.5 marker_applied inventory_selector marker_locked marker_unpaid font_item BLACK
+item floor floor23   741+12 5 32 32 23 #FF0000/0.5 #FF8000/0.5 #0000FF/0.5 #0080FF/0.5 marker_applied inventory_selector marker_locked marker_unpaid font_item BLACK
+item floor floor24   773+12 5 32 32 24 #FF0000/0.5 #FF8000/0.5 #0000FF/0.5 #0080FF/0.5 marker_applied inventory_selector marker_locked marker_unpaid font_item BLACK
+item floor floor25   805+12 5 32 32 25 #FF0000/0.5 #FF8000/0.5 #0000FF/0.5 #0080FF/0.5 marker_applied inventory_selector marker_locked marker_unpaid font_item BLACK
+item floor floor26   837+12 5 32 32 26 #FF0000/0.5 #FF8000/0.5 #0000FF/0.5 #0080FF/0.5 marker_applied inventory_selector marker_locked marker_unpaid font_item BLACK
+item floor floor27   869+12 5 32 32 27 #FF0000/0.5 #FF8000/0.5 #0000FF/0.5 #0080FF/0.5 marker_applied inventory_selector marker_locked marker_unpaid font_item BLACK
+item floor floor28   901+12 5 32 32 28 #FF0000/0.5 #FF8000/0.5 #0000FF/0.5 #0080FF/0.5 marker_applied inventory_selector marker_locked marker_unpaid font_item BLACK
+item floor floor29   933+12 5 32 32 29 #FF0000/0.5 #FF8000/0.5 #0000FF/0.5 #0080FF/0.5 marker_applied inventory_selector marker_locked marker_unpaid font_item BLACK
+item floor floor30   965+12 5 32 32 30 #FF0000/0.5 #FF8000/0.5 #0000FF/0.5 #0080FF/0.5 marker_applied inventory_selector marker_locked marker_unpaid font_item BLACK
+item floor floor31   997+12 5 32 32 31 #FF0000/0.5 #FF8000/0.5 #0000FF/0.5 #0080FF/0.5 marker_applied inventory_selector marker_locked marker_unpaid font_item BLACK
+item floor floor32  1029+12 5 32 32 32 #FF0000/0.5 #FF8000/0.5 #0000FF/0.5 #0080FF/0.5 marker_applied inventory_selector marker_locked marker_unpaid font_item BLACK
+item floor floor33  1061+12 5 32 32 33 #FF0000/0.5 #FF8000/0.5 #0000FF/0.5 #0080FF/0.5 marker_applied inventory_selector marker_locked marker_unpaid font_item BLACK
+item floor floor34  1093+12 5 32 32 34 #FF0000/0.5 #FF8000/0.5 #0000FF/0.5 #0080FF/0.5 marker_applied inventory_selector marker_locked marker_unpaid font_item BLACK
+item floor floor35  1125+12 5 32 32 35 #FF0000/0.5 #FF8000/0.5 #0000FF/0.5 #0080FF/0.5 marker_applied inventory_selector marker_locked marker_unpaid font_item BLACK
+item floor floor36  1157+12 5 32 32 36 #FF0000/0.5 #FF8000/0.5 #0000FF/0.5 #0080FF/0.5 marker_applied inventory_selector marker_locked marker_unpaid font_item BLACK
+item floor floor37  1189+12 5 32 32 37 #FF0000/0.5 #FF8000/0.5 #0000FF/0.5 #0080FF/0.5 marker_applied inventory_selector marker_locked marker_unpaid font_item BLACK
+item floor floor38  1221+12 5 32 32 38 #FF0000/0.5 #FF8000/0.5 #0000FF/0.5 #0080FF/0.5 marker_applied inventory_selector marker_locked marker_unpaid font_item BLACK
+item floor floor39  1253+12 5 32 32 39 #FF0000/0.5 #FF8000/0.5 #0000FF/0.5 #0080FF/0.5 marker_applied inventory_selector marker_locked marker_unpaid font_item BLACK
+item floor floor40  1285+12 5 32 32 40 #FF0000/0.5 #FF8000/0.5 #0000FF/0.5 #0080FF/0.5 marker_applied inventory_selector marker_locked marker_unpaid font_item BLACK
+item floor floor41  1317+12 5 32 32 41 #FF0000/0.5 #FF8000/0.5 #0000FF/0.5 #0080FF/0.5 marker_applied inventory_selector marker_locked marker_unpaid font_item BLACK
+item floor floor42  1349+12 5 32 32 42 #FF0000/0.5 #FF8000/0.5 #0000FF/0.5 #0080FF/0.5 marker_applied inventory_selector marker_locked marker_unpaid font_item BLACK
 
 set_invisible border_nw
 set_invisible border_n

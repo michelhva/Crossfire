@@ -70,6 +70,12 @@ public interface JXCSkin extends Iterable<Gui>
     int getMapHeight();
 
     /**
+     * The number of ground view objects to request from the server.
+     * @return the number of ground view objects
+     */
+    int getNumLookObjects();
+
+    /**
      * Return all gui instances of this skin. The instances has no defined
      * order.
      *
