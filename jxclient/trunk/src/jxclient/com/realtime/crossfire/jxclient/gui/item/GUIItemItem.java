@@ -31,6 +31,7 @@ import java.awt.Color;
 import java.awt.Font;
 import java.awt.Graphics;
 import java.awt.Graphics2D;
+import java.awt.Image;
 import java.awt.geom.Rectangle2D;
 import java.awt.image.BufferedImage;
 
@@ -177,7 +178,7 @@ public abstract class GUIItemItem extends GUIItem
         paintColor(g, lockedColor, tmpItem.isLocked());
         paintColor(g, selectorColor, selected || isActive());
         paintColor(g, unpaidColor, tmpItem.isUnpaid());
-        g.drawImage(facesManager.getOriginalImageIcon(tmpItem.getFace().getFaceNum()).getImage(), 0, 0, null);
+        g.drawImage(getFace(tmpItem), 0, 0, null);
         paintImage(g, appliedImage, tmpItem.isApplied());
         paintImage(g, cursedImage, tmpItem.isCursed());
         paintImage(g, damnedImage, tmpItem.isDamned());
@@ -203,6 +204,16 @@ public abstract class GUIItemItem extends GUIItem
             renderText(g2, getHeight(), 0, getHeight()/2, tmpItem.getTooltipText1());
             renderText(g2, getHeight(), getHeight()/2, getHeight()/2, tmpItem.getTooltipText2());
         }
+    }
+
+    /**
+     * Returns the face for a {@link CfItem} instance.
+     * @param item the item instance
+     * @return the face
+     */
+    protected Image getFace(final CfItem item)
+    {
+        return facesManager.getOriginalImageIcon(item.getFace().getFaceNum()).getImage();
     }
 
     private void renderText(final Graphics2D g, final int dx, final int dy, final int height, final String text)

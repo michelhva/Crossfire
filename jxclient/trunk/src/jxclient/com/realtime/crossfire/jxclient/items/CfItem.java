@@ -416,4 +416,14 @@ public class CfItem
             sb.append(')');
         }
     }
+
+    /**
+     * Returns whether this object is a fake object for selecting object groups
+     * in the ground view.
+     * @return whether this object is a group button
+     */
+    public boolean isItemGroupButton()
+    {
+        return flags == 0 && weight == -1 && nrof == 0 && type == 0 && name.startsWith("Click here to see ");
+    }
 }

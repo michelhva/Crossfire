@@ -30,6 +30,7 @@ import com.realtime.crossfire.jxclient.server.CrossfireServerConnection;
 import com.realtime.crossfire.jxclient.window.JXCWindow;
 import java.awt.Color;
 import java.awt.Font;
+import java.awt.Image;
 import java.awt.image.BufferedImage;
 import java.util.List;
 
@@ -54,6 +55,11 @@ public class GUIItemFloor extends GUIItemItem
      * The {@link ItemsManager} instance to watch.
      */
     private final ItemsManager itemsManager;
+
+    /**
+     * The {@link FacesManager} instance to use.
+     */
+    private final FacesManager facesManager;
 
     /**
      * The default scroll index.
@@ -114,6 +120,7 @@ public class GUIItemFloor extends GUIItemItem
         this.commandQueue = commandQueue;
         this.crossfireServerConnection = crossfireServerConnection;
         this.itemsManager = itemsManager;
+        this.facesManager = facesManager;
         defaultIndex = index;
         containerTag = itemsManager.getCurrentFloorManager().getCurrentFloor();
         itemsManager.getCurrentFloorManager().addCurrentFloorListener(currentFloorListener);
@@ -247,5 +254,20 @@ public class GUIItemFloor extends GUIItemItem
         {
             setItem(itemsManager.getItem(containerTag));
         }
+    }
+
+    /** {@inheritDoc} */
+    protected Image getFace(final CfItem item)
+    {
+        if (!item.isItemGroupButton())
+        {
+            return super.getFace(item);
+        }
+
+        /*
+         * replace empty.111 with arrows for "Click here for next/previous
+         * group of items".
+         */
+        return index > 0 ? facesManager.getNextGroupFace() : facesManager.getPrevGroupFace();
     }
 }
