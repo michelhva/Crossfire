@@ -372,11 +372,6 @@ public class CfItem
         return (flags&F_APPLIED) != 0;
     }
 
-    public boolean isLocation()
-    {
-        return (flags&F_LOCATION) != 0;
-    }
-
     /**
      * Returns whether this item is blessed.
      * @return whether this item is blessed
