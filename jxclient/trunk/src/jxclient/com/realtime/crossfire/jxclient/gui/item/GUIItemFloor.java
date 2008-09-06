@@ -21,6 +21,7 @@
 package com.realtime.crossfire.jxclient.gui.item;
 
 import com.realtime.crossfire.jxclient.faces.FacesManager;
+import com.realtime.crossfire.jxclient.gui.GUIElement;
 import com.realtime.crossfire.jxclient.items.CfItem;
 import com.realtime.crossfire.jxclient.items.CurrentFloorListener;
 import com.realtime.crossfire.jxclient.items.ItemsManager;
@@ -34,6 +35,10 @@ import java.awt.Image;
 import java.awt.image.BufferedImage;
 import java.util.List;
 
+/**
+ * A {@link GUIElement} representing an in-game object in the ground view.
+ * @author Andreas Kirschbaum
+ */
 public class GUIItemFloor extends GUIItemItem
 {
     /**
@@ -114,6 +119,40 @@ public class GUIItemFloor extends GUIItemItem
         }
     };
 
+    /**
+     * Creates a new instance.
+     * @param window the window instance this element belongs to
+     * @param commandQueue the command queue for sending commands
+     * @param name the name of this element
+     * @param x the x-coordinate for drawing this element to screen; it is
+     * relative to <code>gui</code>
+     * @param y the y-coordinate for drawing this element to screen; it is
+     * relative to <code>gui</code>
+     * @param w the width for drawing this element to screen
+     * @param h the height for drawing this element to screen
+     * @param cursedImage the overlay image for cursed objects
+     * @param damnedImage the overlay image for damned objects
+     * @param magicImage the overlay image for magical objects
+     * @param blessedImage the overlay image for blessed objects
+     * @param appliedImage the overlay image for applied objects
+     * @param selectorImage the overlay image for selected objects
+     * @param lockedImage the overlay image for locked objects
+     * @param unpaidImage the overlay image for unpaid objects
+     * @param cursedColor the background color for cursed objects
+     * @param damnedColor the background color for damned objects
+     * @param magicColor the background color for magical objects
+     * @param blessedColor the background color for blessed objects
+     * @param appliedColor the background color for applied objects
+     * @param selectorColor the background color for selected objects
+     * @param lockedColor the background color for locked objects
+     * @param unpaidColor the background color for unpaid objects
+     * @param index the initial scroll index
+     * @param crossfireServerConnection the connection instance
+     * @param itemsManager the items manager instance to use
+     * @param facesManager the faces manager instance to use
+     * @param font the font for nrof information
+     * @param nrofColor the color for nrof information
+     */
     public GUIItemFloor(final JXCWindow window, final CommandQueue commandQueue, final String name, final int x, final int y, final int w, final int h, final BufferedImage cursedImage, final BufferedImage damnedImage, final BufferedImage magicImage, final BufferedImage blessedImage, final BufferedImage appliedImage, final BufferedImage selectorImage, final BufferedImage lockedImage, final BufferedImage unpaidImage, final Color cursedColor, final Color damnedColor, final Color magicColor, final Color blessedColor, final Color appliedColor, final Color selectorColor, final Color lockedColor, final Color unpaidColor, final int index, final CrossfireServerConnection crossfireServerConnection, final ItemsManager itemsManager, final FacesManager facesManager, final Font font, final Color nrofColor)
     {
         super(window, name, x, y, w, h, cursedImage, damnedImage, magicImage, blessedImage, appliedImage, selectorImage, lockedImage, unpaidImage, cursedColor, damnedColor, magicColor, blessedColor, appliedColor, selectorColor, lockedColor, unpaidColor, crossfireServerConnection, facesManager, font, nrofColor);
