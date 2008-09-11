@@ -1,11 +1,14 @@
 arch map
 name palace3
+difficulty 1
 region brest
 width 11
 height 13
+enter_x 6
+enter_y 6
 msg
 Created:  1994-09-20
-Modified: 2008-05-29 Arvid Norlander
+Modified: 2008-09-10 Rick Tanner
 endmsg
 end
 arch dungeon_magic
