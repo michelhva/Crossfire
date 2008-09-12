@@ -1,12 +1,13 @@
 arch map
 name Underground, Level 2
-difficulty 1
+difficulty 40
 region brest
 width 60
 height 60
+enter_y 6
 msg
 Created:  1994-02-31
-Modified: 2008-06-06 Arvid Norlander
+Modified: 2008-09-11 Rick Tanner
 endmsg
 end
 arch blocked

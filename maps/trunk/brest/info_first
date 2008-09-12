@@ -1,12 +1,14 @@
 arch map
 name Tower of Zoon
-difficulty 1
+difficulty 30
 region brest
 width 40
 height 80
+enter_x 37
+enter_y 66
 msg
 Created:  1994-02-31
-Modified: 2007-11-04 Andreas Kirschbaum
+Modified: 2008-09-11 Rick Tanner
 endmsg
 end
 arch woodfloor

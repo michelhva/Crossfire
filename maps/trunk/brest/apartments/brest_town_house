@@ -1,11 +1,14 @@
 arch map
-name brest_town_house
+name Brest Town House
 difficulty 1
 region brest
 width 35
 height 35
+enter_x 7
+enter_y 17
 msg
 Created:  2005-11-04 Gene Alexander
+Modified: 2008-09-11 Rick Tanner
 endmsg
 end
 arch grassmedium
