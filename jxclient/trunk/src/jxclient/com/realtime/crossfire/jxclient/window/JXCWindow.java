@@ -853,50 +853,53 @@ public class JXCWindow extends JFrame implements KeyListener, CrossfireDrawextin
             return;
         }
 
-        switch (e.getKeyCode())
+        if (e.getModifiers() == 0)
         {
-        case KeyEvent.VK_0:
-            commandQueue.addToRepeatCount(0);
-            break;
+            switch (e.getKeyCode())
+            {
+            case KeyEvent.VK_0:
+                commandQueue.addToRepeatCount(0);
+                break;
 
-        case KeyEvent.VK_1:
-            commandQueue.addToRepeatCount(1);
-            break;
+            case KeyEvent.VK_1:
+                commandQueue.addToRepeatCount(1);
+                break;
 
-        case KeyEvent.VK_2:
-            commandQueue.addToRepeatCount(2);
-            break;
+            case KeyEvent.VK_2:
+                commandQueue.addToRepeatCount(2);
+                break;
 
-        case KeyEvent.VK_3:
-            commandQueue.addToRepeatCount(3);
-            break;
+            case KeyEvent.VK_3:
+                commandQueue.addToRepeatCount(3);
+                break;
 
-        case KeyEvent.VK_4:
-            commandQueue.addToRepeatCount(4);
-            break;
+            case KeyEvent.VK_4:
+                commandQueue.addToRepeatCount(4);
+                break;
 
-        case KeyEvent.VK_5:
-            commandQueue.addToRepeatCount(5);
-            break;
+            case KeyEvent.VK_5:
+                commandQueue.addToRepeatCount(5);
+                break;
 
-        case KeyEvent.VK_6:
-            commandQueue.addToRepeatCount(6);
-            break;
+            case KeyEvent.VK_6:
+                commandQueue.addToRepeatCount(6);
+                break;
 
-        case KeyEvent.VK_7:
-            commandQueue.addToRepeatCount(7);
-            break;
+            case KeyEvent.VK_7:
+                commandQueue.addToRepeatCount(7);
+                break;
 
-        case KeyEvent.VK_8:
-            commandQueue.addToRepeatCount(8);
-            break;
+            case KeyEvent.VK_8:
+                commandQueue.addToRepeatCount(8);
+                break;
 
-        case KeyEvent.VK_9:
-            commandQueue.addToRepeatCount(9);
-            break;
+            case KeyEvent.VK_9:
+                commandQueue.addToRepeatCount(9);
+                break;
 
-        default:
-            break;
+            default:
+                break;
+            }
         }
     }
 
