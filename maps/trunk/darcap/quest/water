@@ -635,6 +635,10 @@ move_block 0
 move_slow walk
 move_slow_penalty 1.000000
 end
+arch water_elemental
+x 2
+y 5
+end
 arch sea
 exp 1000
 x 2
@@ -917,7 +921,7 @@ move_block 0
 move_slow walk
 move_slow_penalty 1.000000
 end
-arch water_elemental
+arch awall_2_2_1
 x 3
 y 5
 end
@@ -1001,7 +1005,7 @@ arch sea
 x 3
 y 13
 end
-arch awall_2_1_1
+arch awall_1_1
 x 3
 y 13
 end
@@ -2822,6 +2826,10 @@ move_block 0
 move_slow walk
 move_slow_penalty 1.000000
 end
+arch awall_win1
+x 9
+y 30
+end
 arch sea
 x 9
 y 31
@@ -3621,7 +3629,7 @@ arch sea
 x 12
 y 27
 end
-arch awall_2_2_4
+arch awall_1_3
 x 12
 y 27
 end
@@ -4167,6 +4175,10 @@ y 26
 move_block 0
 move_slow walk
 move_slow_penalty 1.000000
+end
+arch awall_1_4
+x 14
+y 26
 end
 arch sea
 exp 1000
@@ -5019,6 +5031,18 @@ end
 arch sea
 exp 1000
 x 17
+y 27
+move_block 0
+move_slow walk
+move_slow_penalty 1.000000
+end
+arch para_water
+x 17
+y 27
+end
+arch sea
+exp 1000
+x 17
 y 28
 move_block 0
 move_slow walk
@@ -5278,6 +5302,10 @@ move_block 0
 move_slow walk
 move_slow_penalty 1.000000
 end
+arch awall_1_3
+x 18
+y 25
+end
 arch sea
 exp 1000
 x 18
@@ -5287,20 +5315,20 @@ move_slow walk
 move_slow_penalty 1.000000
 end
 arch sea
-exp 1000
 x 18
 y 27
-move_block 0
-move_slow walk
-move_slow_penalty 1.000000
+end
+arch awall_1_1
+x 18
+y 27
 end
 arch sea
-exp 1000
 x 18
 y 28
-move_block 0
-move_slow walk
-move_slow_penalty 1.000000
+end
+arch awall_1_2
+x 18
+y 28
 end
 arch sea
 exp 1000
@@ -5556,15 +5584,15 @@ arch sea
 x 19
 y 26
 end
-arch awall_2_2_3
-x 19
-y 26
-end
 arch sea
+exp 1000
 x 19
 y 27
+move_block 0
+move_slow walk
+move_slow_penalty 1.000000
 end
-arch awall_1_2
+arch para_water
 x 19
 y 27
 end
@@ -5834,30 +5862,18 @@ move_slow walk
 move_slow_penalty 1.000000
 end
 arch sea
-exp 1000
 x 20
 y 26
-move_block 0
-move_slow walk
-move_slow_penalty 1.000000
 end
-arch para_water
+arch awall_1_4
 x 20
 y 26
 end
 arch sea
-exp 1000
 x 20
 y 27
-move_block 0
-move_slow walk
-move_slow_penalty 1.000000
 end
 arch sea
-x 20
-y 28
-end
-arch awall_4
 x 20
 y 28
 end
@@ -6105,35 +6121,23 @@ move_block 0
 move_slow walk
 move_slow_penalty 1.000000
 end
-arch sea
-exp 1000
-x 21
-y 26
-move_block 0
-move_slow walk
-move_slow_penalty 1.000000
-end
 arch para_water
 x 21
+y 25
+end
+arch sea
+x 21
 y 26
-end
-arch sea
-exp 1000
-x 21
-y 27
-move_block 0
-move_slow walk
-move_slow_penalty 1.000000
-end
-arch para_water
-x 21
-y 27
-end
-arch sea
-x 21
-y 28
 end
 arch awall_2_1_2
+x 21
+y 26
+end
+arch sea
+x 21
+y 27
+end
+arch sea
 x 21
 y 28
 end
@@ -6331,7 +6335,7 @@ arch sea
 x 22
 y 19
 end
-arch awall_2_1_1
+arch awall_1_2
 x 22
 y 19
 end
@@ -6387,7 +6391,7 @@ arch sea
 x 22
 y 26
 end
-arch awall_2_2_2
+arch awall_3_3
 x 22
 y 26
 end
@@ -6395,7 +6399,7 @@ arch sea
 x 22
 y 27
 end
-arch awall_2_1_1
+arch awall_1_2
 x 22
 y 27
 end
@@ -6403,9 +6407,18 @@ arch sea
 x 22
 y 28
 end
-arch awall_3_4
+arch sea
+exp 1000
 x 22
 y 28
+move_block 0
+move_slow walk
+move_slow_penalty 1.000000
+end
+arch grate_closed_2
+x 22
+y 28
+connected 1
 end
 arch sea
 exp 1000
@@ -6428,10 +6441,9 @@ move_block 0
 move_slow walk
 move_slow_penalty 1.000000
 end
-arch grate_closed_2
+arch awall_1_1
 x 22
 y 30
-connected 1
 end
 arch sea
 x 22
@@ -6692,7 +6704,7 @@ arch sea
 x 23
 y 31
 end
-arch awall_1_3
+arch awall_2_1_2
 x 23
 y 31
 end
@@ -7651,7 +7663,7 @@ arch sea
 x 27
 y 23
 end
-arch awall_2_1_2
+arch awall_1_3
 x 27
 y 23
 end
@@ -7896,12 +7908,17 @@ y 22
 speed_left -0.420000
 end
 arch sea
+exp 1000
 x 28
 y 23
+move_block 0
+move_slow walk
+move_slow_penalty 1.000000
 end
-arch awall_1_3
+arch grate_closed_1
 x 28
 y 23
+connected 1
 end
 arch sea1
 x 28
@@ -8430,10 +8447,9 @@ move_block 0
 move_slow walk
 move_slow_penalty 1.000000
 end
-arch grate_closed_1
+arch awall_1_4
 x 30
 y 23
-connected 1
 end
 arch sea1
 x 30
@@ -8560,7 +8576,7 @@ move_block 0
 move_slow walk
 move_slow_penalty 4.000000
 end
-arch awall_1_1
+arch awall_2_1_1
 x 31
 y 6
 end
@@ -8628,7 +8644,7 @@ move_block 0
 move_slow walk
 move_slow_penalty 1.000000
 end
-arch awall_2_1_1
+arch awall_1_1
 x 31
 y 12
 end
@@ -8684,7 +8700,7 @@ arch sea
 x 31
 y 17
 end
-arch awall_1_1
+arch awall_2_1_1
 x 31
 y 17
 end
