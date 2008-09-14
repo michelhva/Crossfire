@@ -11,100 +11,198 @@ Created:  1998-02-21
 Modified: 2008-09-14 Rick Tanner
 endmsg
 end
+arch stonefloor2
+end
 arch bwall_2_2_2
+end
+arch stonefloor2
+y 1
 end
 arch bwall_2_1_1
 y 1
 end
+arch stonefloor2
+y 2
+end
 arch bwall_2_1_1
 y 2
+end
+arch stonefloor2
+y 3
 end
 arch bwall_2_1_1
 y 3
 end
+arch stonefloor2
+y 4
+end
 arch bwall_2_1_1
 y 4
+end
+arch stonefloor2
+y 5
 end
 arch bwall_2_1_1
 y 5
 end
+arch stonefloor2
+y 6
+end
 arch bwall_2_1_1
 y 6
+end
+arch stonefloor2
+y 7
 end
 arch bwall_2_1_1
 y 7
 end
+arch stonefloor2
+y 8
+end
 arch bwall_2_1_1
 y 8
+end
+arch stonefloor2
+y 9
 end
 arch bwall_2_1_1
 y 9
 end
+arch stonefloor2
+y 10
+end
 arch bwall_2_1_1
 y 10
+end
+arch stonefloor2
+y 11
 end
 arch bwall_2_1_1
 y 11
 end
+arch stonefloor2
+y 12
+end
 arch bwall_2_1_1
 y 12
+end
+arch stonefloor2
+y 13
 end
 arch bwall_2_1_1
 y 13
 end
+arch stonefloor2
+y 14
+end
 arch bwall_2_1_1
 y 14
+end
+arch stonefloor2
+y 15
 end
 arch bwall_2_1_1
 y 15
 end
+arch stonefloor2
+y 16
+end
 arch bwall_2_1_1
 y 16
+end
+arch stonefloor2
+y 17
 end
 arch bwall_2_1_1
 y 17
 end
+arch stonefloor2
+y 18
+end
 arch bwall_2_1_1
 y 18
+end
+arch stonefloor2
+y 19
 end
 arch bwall_2_1_1
 y 19
 end
+arch stonefloor2
+y 20
+end
 arch bwall_2_1_1
 y 20
+end
+arch stonefloor2
+y 21
 end
 arch bwall_2_1_1
 y 21
 end
+arch stonefloor2
+y 22
+end
 arch bwall_2_1_1
 y 22
+end
+arch stonefloor2
+y 23
 end
 arch bwall_2_1_1
 y 23
 end
+arch stonefloor2
+y 24
+end
 arch bwall_2_1_1
 y 24
+end
+arch stonefloor2
+y 25
 end
 arch bwall_2_1_1
 y 25
 end
+arch stonefloor2
+y 26
+end
 arch bwall_2_1_1
 y 26
+end
+arch stonefloor2
+y 27
 end
 arch bwall_2_1_1
 y 27
 end
+arch stonefloor2
+y 28
+end
 arch bwall_2_1_1
 y 28
+end
+arch stonefloor2
+y 29
 end
 arch bwall_2_1_1
 y 29
 end
+arch stonefloor2
+y 30
+end
 arch bwall_2_1_1
 y 30
 end
+arch stonefloor2
+y 31
+end
 arch bwall_2_2_1
 y 31
+end
+arch stonefloor2
+x 1
 end
 arch bwall_2_1_2
 x 1
@@ -275,11 +373,18 @@ arch random_scroll
 x 1
 y 30
 end
-arch bwall_2_1_2
+arch stonefloor2
 x 1
 y 31
 end
 arch bwall_2_1_2
+x 1
+y 31
+end
+arch stonefloor2
+x 2
+end
+arch bwall_2_1_2
 x 2
 end
 arch stonefloor2
@@ -434,9 +539,16 @@ arch stonefloor2
 x 2
 y 30
 end
+arch stonefloor2
+x 2
+y 31
+end
 arch bwall_2_1_2
 x 2
 y 31
+end
+arch stonefloor2
+x 3
 end
 arch bwall_2_1_2
 x 3
@@ -573,9 +685,16 @@ arch stonefloor2
 x 3
 y 30
 end
+arch stonefloor2
+x 3
+y 31
+end
 arch bwall_2_1_2
 x 3
 y 31
+end
+arch stonefloor2
+x 4
 end
 arch bwall_2_1_2
 x 4
@@ -724,9 +843,16 @@ arch stonefloor2
 x 4
 y 30
 end
+arch stonefloor2
+x 4
+y 31
+end
 arch bwall_2_1_2
 x 4
 y 31
+end
+arch stonefloor2
+x 5
 end
 arch bwall_2_1_2
 x 5
@@ -939,11 +1065,18 @@ arch stonefloor2
 x 5
 y 30
 end
-arch bwall_2_1_2
+arch stonefloor2
 x 5
 y 31
 end
 arch bwall_2_1_2
+x 5
+y 31
+end
+arch stonefloor2
+x 6
+end
+arch bwall_2_1_2
 x 6
 end
 arch stonefloor2
@@ -1122,9 +1255,16 @@ arch stonefloor2
 x 6
 y 30
 end
+arch stonefloor2
+x 6
+y 31
+end
 arch bwall_2_1_2
 x 6
 y 31
+end
+arch stonefloor2
+x 7
 end
 arch bwall_2_1_2
 x 7
@@ -1273,9 +1413,16 @@ arch stonefloor2
 x 7
 y 30
 end
+arch stonefloor2
+x 7
+y 31
+end
 arch bwall_2_1_2
 x 7
 y 31
+end
+arch stonefloor2
+x 8
 end
 arch bwall_2_1_2
 x 8
@@ -1424,9 +1571,16 @@ arch stonefloor2
 x 8
 y 30
 end
+arch stonefloor2
+x 8
+y 31
+end
 arch bwall_2_1_2
 x 8
 y 31
+end
+arch stonefloor2
+x 9
 end
 arch bwall_2_1_2
 x 9
@@ -1575,9 +1729,16 @@ arch stonefloor2
 x 9
 y 30
 end
+arch stonefloor2
+x 9
+y 31
+end
 arch bwall_2_1_2
 x 9
 y 31
+end
+arch stonefloor2
+x 10
 end
 arch bwall_2_1_2
 x 10
@@ -1766,9 +1927,16 @@ arch stonefloor2
 x 10
 y 30
 end
+arch stonefloor2
+x 10
+y 31
+end
 arch bwall_2_1_2
 x 10
 y 31
+end
+arch stonefloor2
+x 11
 end
 arch bwall_2_1_2
 x 11
@@ -1953,9 +2121,16 @@ arch para_air
 x 11
 y 30
 end
+arch stonefloor2
+x 11
+y 31
+end
 arch bwall_2_1_2
 x 11
 y 31
+end
+arch stonefloor2
+x 12
 end
 arch bwall_2_1_2
 x 12
@@ -2150,9 +2325,16 @@ arch stonefloor2
 x 12
 y 30
 end
+arch stonefloor2
+x 12
+y 31
+end
 arch bwall_2_1_2
 x 12
 y 31
+end
+arch stonefloor2
+x 13
 end
 arch bwall_2_1_2
 x 13
@@ -2317,9 +2499,16 @@ arch stonefloor2
 x 13
 y 30
 end
+arch stonefloor2
+x 13
+y 31
+end
 arch bwall_2_1_2
 x 13
 y 31
+end
+arch stonefloor2
+x 14
 end
 arch bwall_2_1_2
 x 14
@@ -2500,9 +2689,16 @@ arch stonefloor2
 x 14
 y 30
 end
+arch stonefloor2
+x 14
+y 31
+end
 arch bwall_2_1_2
 x 14
 y 31
+end
+arch stonefloor2
+x 15
 end
 arch bwall_2_1_2
 x 15
@@ -2683,9 +2879,16 @@ arch stonefloor2
 x 15
 y 30
 end
+arch stonefloor2
+x 15
+y 31
+end
 arch bwall_2_1_2
 x 15
 y 31
+end
+arch stonefloor2
+x 16
 end
 arch bwall_2_1_2
 x 16
@@ -2866,9 +3069,16 @@ arch stonefloor2
 x 16
 y 30
 end
+arch stonefloor2
+x 16
+y 31
+end
 arch bwall_2_1_2
 x 16
 y 31
+end
+arch stonefloor2
+x 17
 end
 arch bwall_2_1_2
 x 17
@@ -3029,9 +3239,16 @@ arch stonefloor2
 x 17
 y 30
 end
+arch stonefloor2
+x 17
+y 31
+end
 arch bwall_2_1_2
 x 17
 y 31
+end
+arch stonefloor2
+x 18
 end
 arch bwall_2_1_2
 x 18
@@ -3196,9 +3413,16 @@ arch stonefloor2
 x 18
 y 30
 end
+arch stonefloor2
+x 18
+y 31
+end
 arch bwall_2_1_2
 x 18
 y 31
+end
+arch stonefloor2
+x 19
 end
 arch bwall_2_1_2
 x 19
@@ -3373,9 +3597,16 @@ arch stonefloor2
 x 19
 y 30
 end
+arch stonefloor2
+x 19
+y 31
+end
 arch bwall_2_1_2
 x 19
 y 31
+end
+arch stonefloor2
+x 20
 end
 arch bwall_2_1_2
 x 20
@@ -3552,9 +3783,16 @@ arch stonefloor2
 x 20
 y 30
 end
+arch stonefloor2
+x 20
+y 31
+end
 arch bwall_2_1_2
 x 20
 y 31
+end
+arch stonefloor2
+x 21
 end
 arch bwall_2_1_2
 x 21
@@ -3751,11 +3989,18 @@ arch stonefloor2
 x 21
 y 30
 end
-arch bwall_2_1_2
+arch stonefloor2
 x 21
 y 31
 end
 arch bwall_2_1_2
+x 21
+y 31
+end
+arch stonefloor2
+x 22
+end
+arch bwall_2_1_2
 x 22
 end
 arch stonefloor2
@@ -3930,9 +4175,16 @@ arch stonefloor2
 x 22
 y 30
 end
+arch stonefloor2
+x 22
+y 31
+end
 arch bwall_2_1_2
 x 22
 y 31
+end
+arch stonefloor2
+x 23
 end
 arch bwall_2_1_2
 x 23
@@ -4081,9 +4333,16 @@ arch stonefloor2
 x 23
 y 30
 end
+arch stonefloor2
+x 23
+y 31
+end
 arch bwall_2_1_2
 x 23
 y 31
+end
+arch stonefloor2
+x 24
 end
 arch bwall_2_1_2
 x 24
@@ -4244,9 +4503,16 @@ arch stonefloor2
 x 24
 y 30
 end
+arch stonefloor2
+x 24
+y 31
+end
 arch bwall_2_1_2
 x 24
 y 31
+end
+arch stonefloor2
+x 25
 end
 arch bwall_2_1_2
 x 25
@@ -4395,9 +4661,16 @@ arch stonefloor2
 x 25
 y 30
 end
+arch stonefloor2
+x 25
+y 31
+end
 arch bwall_2_1_2
 x 25
 y 31
+end
+arch stonefloor2
+x 26
 end
 arch bwall_2_1_2
 x 26
@@ -4618,11 +4891,18 @@ arch stonefloor2
 x 26
 y 30
 end
-arch bwall_2_1_2
+arch stonefloor2
 x 26
 y 31
 end
 arch bwall_2_1_2
+x 26
+y 31
+end
+arch stonefloor2
+x 27
+end
+arch bwall_2_1_2
 x 27
 end
 arch stonefloor2
@@ -4785,11 +5065,18 @@ arch stonefloor2
 x 27
 y 30
 end
-arch bwall_2_1_2
+arch stonefloor2
 x 27
 y 31
 end
 arch bwall_2_1_2
+x 27
+y 31
+end
+arch stonefloor2
+x 28
+end
+arch bwall_2_1_2
 x 28
 end
 arch stonefloor2
@@ -4920,9 +5207,16 @@ arch stonefloor2
 x 28
 y 30
 end
+arch stonefloor2
+x 28
+y 31
+end
 arch bwall_2_1_2
 x 28
 y 31
+end
+arch stonefloor2
+x 29
 end
 arch bwall_2_1_2
 x 29
@@ -5063,9 +5357,16 @@ arch para_air
 x 29
 y 30
 end
+arch stonefloor2
+x 29
+y 31
+end
 arch bwall_2_1_2
 x 29
 y 31
+end
+arch stonefloor2
+x 30
 end
 arch bwall_2_1_2
 x 30
@@ -5194,132 +5495,263 @@ arch stonefloor2
 x 30
 y 30
 end
+arch stonefloor2
+x 30
+y 31
+end
 arch bwall_2_1_2
 x 30
 y 31
+end
+arch stonefloor2
+x 31
 end
 arch bwall_2_2_3
 x 31
 end
-arch bwall_2_1_1
+arch stonefloor2
 x 31
 y 1
 end
 arch bwall_2_1_1
 x 31
+y 1
+end
+arch stonefloor2
+x 31
 y 2
 end
 arch bwall_2_1_1
+x 31
+y 2
+end
+arch stonefloor2
 x 31
 y 3
 end
 arch bwall_2_1_1
 x 31
+y 3
+end
+arch stonefloor2
+x 31
 y 4
 end
 arch bwall_2_1_1
+x 31
+y 4
+end
+arch stonefloor2
 x 31
 y 5
 end
 arch bwall_2_1_1
 x 31
+y 5
+end
+arch stonefloor2
+x 31
 y 6
 end
 arch bwall_2_1_1
+x 31
+y 6
+end
+arch stonefloor2
 x 31
 y 7
 end
 arch bwall_2_1_1
 x 31
+y 7
+end
+arch stonefloor2
+x 31
 y 8
 end
 arch bwall_2_1_1
+x 31
+y 8
+end
+arch stonefloor2
 x 31
 y 9
 end
 arch bwall_2_1_1
 x 31
+y 9
+end
+arch stonefloor2
+x 31
 y 10
 end
 arch bwall_2_1_1
+x 31
+y 10
+end
+arch stonefloor2
 x 31
 y 11
 end
 arch bwall_2_1_1
 x 31
+y 11
+end
+arch stonefloor2
+x 31
 y 12
 end
 arch bwall_2_1_1
+x 31
+y 12
+end
+arch stonefloor2
 x 31
 y 13
 end
 arch bwall_2_1_1
 x 31
+y 13
+end
+arch stonefloor2
+x 31
 y 14
 end
 arch bwall_2_1_1
+x 31
+y 14
+end
+arch stonefloor2
 x 31
 y 15
 end
 arch bwall_2_1_1
 x 31
+y 15
+end
+arch stonefloor2
+x 31
 y 16
 end
 arch bwall_2_1_1
+x 31
+y 16
+end
+arch stonefloor2
 x 31
 y 17
 end
 arch bwall_2_1_1
 x 31
+y 17
+end
+arch stonefloor2
+x 31
 y 18
 end
 arch bwall_2_1_1
+x 31
+y 18
+end
+arch stonefloor2
 x 31
 y 19
 end
 arch bwall_2_1_1
 x 31
+y 19
+end
+arch stonefloor2
+x 31
 y 20
 end
 arch bwall_2_1_1
+x 31
+y 20
+end
+arch stonefloor2
 x 31
 y 21
 end
 arch bwall_2_1_1
 x 31
+y 21
+end
+arch stonefloor2
+x 31
 y 22
 end
 arch bwall_2_1_1
+x 31
+y 22
+end
+arch stonefloor2
 x 31
 y 23
 end
 arch bwall_2_1_1
 x 31
+y 23
+end
+arch stonefloor2
+x 31
 y 24
 end
 arch bwall_2_1_1
+x 31
+y 24
+end
+arch stonefloor2
 x 31
 y 25
 end
 arch bwall_2_1_1
 x 31
+y 25
+end
+arch stonefloor2
+x 31
 y 26
 end
 arch bwall_2_1_1
+x 31
+y 26
+end
+arch stonefloor2
 x 31
 y 27
 end
 arch bwall_2_1_1
 x 31
+y 27
+end
+arch stonefloor2
+x 31
 y 28
 end
 arch bwall_2_1_1
+x 31
+y 28
+end
+arch stonefloor2
 x 31
 y 29
 end
 arch bwall_2_1_1
 x 31
+y 29
+end
+arch stonefloor2
+x 31
 y 30
+end
+arch bwall_2_1_1
+x 31
+y 30
+end
+arch stonefloor2
+x 31
+y 31
 end
 arch bwall_2_2_4
 x 31
