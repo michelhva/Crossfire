@@ -165,22 +165,25 @@ public class GUIMetaElementList extends GUIList
      */
     private void rebuildList()
     {
-        final int newSize = metaserver.size();
-        final int oldSize = resizeElements(newSize);
-        if (oldSize < newSize)
+        synchronized (getTreeLock())
         {
-            for (int i = oldSize; i < newSize; i++)
+            final int newSize = metaserver.size();
+            final int oldSize = resizeElements(newSize);
+            if (oldSize < newSize)
             {
-                final GUIMetaElement metaElement = new GUIMetaElement(window, metaserver, name+i, 1, 1, tcpImage, font, i, format, tooltip);
-                addElement(metaElement);
-                metaserver.addMetaserverEntryListener(i, metaserverEntryListener);
+                for (int i = oldSize; i < newSize; i++)
+                {
+                    final GUIMetaElement metaElement = new GUIMetaElement(window, metaserver, name+i, 1, 1, tcpImage, font, i, format, tooltip);
+                    addElement(metaElement);
+                    metaserver.addMetaserverEntryListener(i, metaserverEntryListener);
+                }
             }
-        }
-        else
-        {
-            for (int i = newSize; i < oldSize; i++)
+            else
             {
-                metaserver.removeMetaserverEntryListener(i, metaserverEntryListener);
+                for (int i = newSize; i < oldSize; i++)
+                {
+                    metaserver.removeMetaserverEntryListener(i, metaserverEntryListener);
+                }
             }
         }
         setChanged();
