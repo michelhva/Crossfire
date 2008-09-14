@@ -1,6 +1,6 @@
 arch map
 name Bob's Bakery
-difficulty 1
+difficulty 15
 region darcap
 shopitems food:100;flesh:90;*:-100
 width 15
@@ -9,7 +9,7 @@ enter_x 12
 enter_y 8
 msg
 Created:  1999-02-15
-Modified: 2008-05-23 Arvid Norlander
+Modified: 2008-09-14 Rick Tanner
 endmsg
 end
 arch woodfloor
