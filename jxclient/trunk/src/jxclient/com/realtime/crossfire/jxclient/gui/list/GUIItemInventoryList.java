@@ -181,19 +181,22 @@ public class GUIItemInventoryList extends GUIItemList
      */
     private void rebuildList()
     {
-        final List<CfItem> inventory = itemsManager.getInventory();
-        final int newSize = inventory.size();
-        final int oldSize = resizeElements(newSize);
-        for (int i = oldSize; i < newSize; i++)
+        synchronized (getTreeLock())
         {
-            final GUIItemInventory item = new GUIItemInventory(window, commandQueue, name+i, 0, 0, 1, 1, cursedImage, damnedImage, magicImage, blessedImage, appliedImage, selectorImage, lockedImage, unpaidImage, cursedColor, damnedColor, magicColor, blessedColor, appliedColor, selectorColor, lockedColor, unpaidColor, i, crossfireServerConnection, facesManager, itemsManager, font, nrofColor);
-            addElement(item);
-            item.setChangedListener(itemChangedListener);
-            assert item.isElementVisible();
-            item.resetChanged();
-            assert !item.isChanged();
+            final List<CfItem> inventory = itemsManager.getInventory();
+            final int newSize = inventory.size();
+            final int oldSize = resizeElements(newSize);
+            for (int i = oldSize; i < newSize; i++)
+            {
+                final GUIItemInventory item = new GUIItemInventory(window, commandQueue, name+i, 0, 0, 1, 1, cursedImage, damnedImage, magicImage, blessedImage, appliedImage, selectorImage, lockedImage, unpaidImage, cursedColor, damnedColor, magicColor, blessedColor, appliedColor, selectorColor, lockedColor, unpaidColor, i, crossfireServerConnection, facesManager, itemsManager, font, nrofColor);
+                addElement(item);
+                item.setChangedListener(itemChangedListener);
+                assert item.isElementVisible();
+                item.resetChanged();
+                assert !item.isChanged();
+            }
+            selectionChanged();
         }
-        selectionChanged();
         setChanged();
     }
 
