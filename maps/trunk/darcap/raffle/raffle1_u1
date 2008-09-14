@@ -2,14 +2,15 @@ arch map
 name Darcap Raffle 1
 swap_time 5
 reset_timeout 3600
-difficulty 1
+difficulty 15
 region darcap
 width 22
 height 19
+enter_x 2
+enter_y 16
 msg
-Creator: Gnat the Gnu
-Email: gnu@foo.bar
-Date: Mon Feb 24 21:58:23 1997
+Date: 2008-02-29
+Modified: 2008-09-14 Rick Tanner
 endmsg
 end
 arch blocked
