@@ -1,6 +1,6 @@
 arch map
 name Darcap General Store
-difficulty 1
+difficulty 10
 region darcap
 shopitems lamp:10;*:0
 shopmin 100
@@ -11,6 +11,7 @@ enter_x 15
 enter_y 6
 msg
 Created:  2000-11-19 Andreas Vogl (red.blaze@gmx.net)
+Modified: 2008-09-13 Rick Tanner
 endmsg
 end
 arch dungeon_floor
@@ -801,6 +802,10 @@ arch timberwall_2_2_1
 x 12
 y 3
 end
+arch swall_1_1_half
+x 12
+y 3
+end
 arch dungeon_magic
 x 12
 y 4
@@ -809,7 +814,7 @@ arch dungeon_floor
 x 12
 y 4
 end
-arch swall_1_1
+arch swall_2_1_1
 x 12
 y 4
 end
@@ -857,11 +862,15 @@ arch dungeon_floor
 x 12
 y 8
 end
-arch swall_1_2
+arch swall_2_1_1
 x 12
 y 8
 end
 arch dungeon_floor
+x 12
+y 9
+end
+arch swall_1_2_half
 x 12
 y 9
 end
