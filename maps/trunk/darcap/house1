@@ -1,12 +1,14 @@
 arch map
 name Tollhouse
-difficulty 1
+difficulty 8
 region darcap
 width 20
 height 20
-enter_y 1
+enter_x 4
+enter_y 7
 msg
-Created:  1994-02-19
+Created:  1994-10-19
+Modified: 2008-09-14 Rick Tanner
 endmsg
 end
 arch woodfloor2
