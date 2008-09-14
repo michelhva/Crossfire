@@ -9350,29 +9350,57 @@ arch dungeon_floor
 x 30
 y 9
 end
+arch pstone_2
+x 30
+y 10
+end
 arch bwall_2_2_2
 x 30
 y 10
 end
-arch bwall_3_2
+arch pstone_2
 x 30
 y 11
 end
 arch bwall_3_2
 x 30
+y 11
+end
+arch pstone_2
+x 30
 y 12
 end
 arch bwall_3_2
+x 30
+y 12
+end
+arch pstone_2
 x 30
 y 13
 end
 arch bwall_3_2
 x 30
+y 13
+end
+arch pstone_2
+x 30
 y 14
 end
 arch bwall_3_2
 x 30
+y 14
+end
+arch pstone_2
+x 30
 y 15
+end
+arch bwall_3_2
+x 30
+y 15
+end
+arch pstone_2
+x 30
+y 16
 end
 arch bwall_2_2_1
 x 30
@@ -9625,33 +9653,65 @@ arch dungeon_floor
 x 31
 y 8
 end
+arch pstone_2
+x 31
+y 9
+end
 arch bwall_2_2_2
 x 31
 y 9
 end
-arch bwall_4
+arch pstone_2
 x 31
 y 10
 end
 arch bwall_4
 x 31
+y 10
+end
+arch pstone_2
+x 31
 y 11
 end
 arch bwall_4
+x 31
+y 11
+end
+arch pstone_2
 x 31
 y 12
 end
 arch bwall_4
 x 31
+y 12
+end
+arch pstone_2
+x 31
 y 13
 end
 arch bwall_4
+x 31
+y 13
+end
+arch pstone_2
 x 31
 y 14
 end
 arch bwall_4
 x 31
+y 14
+end
+arch pstone_2
+x 31
 y 15
+end
+arch bwall_4
+x 31
+y 15
+end
+arch pstone_2
+x 31
+y 16
 end
 arch bwall_3_1
 x 31
@@ -9908,33 +9968,65 @@ arch small_stones
 x 32
 y 8
 end
+arch pstone_2
+x 32
+y 9
+end
 arch bwall_3_3
 x 32
 y 9
 end
-arch bwall_4
+arch pstone_2
 x 32
 y 10
 end
 arch bwall_4
 x 32
+y 10
+end
+arch pstone_2
+x 32
 y 11
 end
 arch bwall_4
+x 32
+y 11
+end
+arch pstone_2
 x 32
 y 12
 end
 arch bwall_4
 x 32
+y 12
+end
+arch pstone_2
+x 32
 y 13
 end
 arch bwall_4
+x 32
+y 13
+end
+arch pstone_2
 x 32
 y 14
 end
 arch bwall_4
 x 32
+y 14
+end
+arch pstone_2
+x 32
 y 15
+end
+arch bwall_4
+x 32
+y 15
+end
+arch pstone_2
+x 32
+y 16
 end
 arch bwall_3_1
 x 32
@@ -10159,33 +10251,65 @@ arch small_stones
 x 33
 y 8
 end
+arch pstone_2
+x 33
+y 9
+end
 arch bwall_3_3
 x 33
 y 9
 end
-arch bwall_4
+arch pstone_2
 x 33
 y 10
 end
 arch bwall_4
 x 33
+y 10
+end
+arch pstone_2
+x 33
 y 11
 end
 arch bwall_4
+x 33
+y 11
+end
+arch pstone_2
 x 33
 y 12
 end
 arch bwall_4
 x 33
+y 12
+end
+arch pstone_2
+x 33
 y 13
 end
 arch bwall_4
+x 33
+y 13
+end
+arch pstone_2
 x 33
 y 14
 end
 arch bwall_4
 x 33
+y 14
+end
+arch pstone_2
+x 33
 y 15
+end
+arch bwall_4
+x 33
+y 15
+end
+arch pstone_2
+x 33
+y 16
 end
 arch bwall_3_1
 x 33
@@ -10425,33 +10549,65 @@ arch small_stones
 x 34
 y 8
 end
+arch pstone_2
+x 34
+y 9
+end
 arch bwall_3_3
 x 34
 y 9
 end
-arch bwall_4
+arch pstone_2
 x 34
 y 10
 end
 arch bwall_4
 x 34
+y 10
+end
+arch pstone_2
+x 34
 y 11
 end
 arch bwall_4
+x 34
+y 11
+end
+arch pstone_2
 x 34
 y 12
 end
 arch bwall_4
 x 34
+y 12
+end
+arch pstone_2
+x 34
 y 13
 end
 arch bwall_4
+x 34
+y 13
+end
+arch pstone_2
 x 34
 y 14
 end
 arch bwall_4
 x 34
+y 14
+end
+arch pstone_2
+x 34
 y 15
+end
+arch bwall_4
+x 34
+y 15
+end
+arch pstone_2
+x 34
+y 16
 end
 arch bwall_3_1
 x 34
@@ -10699,41 +10855,81 @@ arch small_stones
 x 35
 y 8
 end
+arch pstone_2
+x 35
+y 9
+end
 arch bwall_3_3
 x 35
 y 9
 end
-arch bwall_4
+arch pstone_2
 x 35
 y 10
 end
 arch bwall_4
 x 35
+y 10
+end
+arch pstone_2
+x 35
 y 11
 end
 arch bwall_4
+x 35
+y 11
+end
+arch pstone_2
 x 35
 y 12
 end
 arch bwall_4
 x 35
+y 12
+end
+arch pstone_2
+x 35
 y 13
 end
 arch bwall_4
+x 35
+y 13
+end
+arch pstone_2
 x 35
 y 14
 end
 arch bwall_4
 x 35
+y 14
+end
+arch pstone_2
+x 35
 y 15
+end
+arch bwall_4
+x 35
+y 15
+end
+arch pstone_2
+x 35
+y 16
 end
 arch bwall_4
 x 35
 y 16
 end
+arch pstone_2
+x 35
+y 17
+end
 arch bwall_3_2
 x 35
 y 17
+end
+arch pstone_2
+x 35
+y 18
 end
 arch bwall_2_2_1
 x 35
@@ -10965,41 +11161,81 @@ arch small_stones
 x 36
 y 8
 end
+arch pstone_2
+x 36
+y 9
+end
 arch bwall_3_3
 x 36
 y 9
 end
-arch bwall_4
+arch pstone_2
 x 36
 y 10
 end
 arch bwall_4
 x 36
+y 10
+end
+arch pstone_2
+x 36
 y 11
 end
 arch bwall_4
+x 36
+y 11
+end
+arch pstone_2
 x 36
 y 12
 end
 arch bwall_4
 x 36
+y 12
+end
+arch pstone_2
+x 36
 y 13
 end
 arch bwall_4
+x 36
+y 13
+end
+arch pstone_2
 x 36
 y 14
 end
 arch bwall_4
 x 36
+y 14
+end
+arch pstone_2
+x 36
 y 15
 end
 arch bwall_4
+x 36
+y 15
+end
+arch pstone_2
 x 36
 y 16
 end
 arch bwall_4
 x 36
+y 16
+end
+arch pstone_2
+x 36
 y 17
+end
+arch bwall_4
+x 36
+y 17
+end
+arch pstone_2
+x 36
+y 18
 end
 arch bwall_3_1
 x 36
@@ -11231,41 +11467,81 @@ arch small_stones
 x 37
 y 8
 end
+arch pstone_2
+x 37
+y 9
+end
 arch bwall_3_3
 x 37
 y 9
 end
-arch bwall_4
+arch pstone_2
 x 37
 y 10
 end
 arch bwall_4
 x 37
+y 10
+end
+arch pstone_2
+x 37
 y 11
 end
 arch bwall_4
+x 37
+y 11
+end
+arch pstone_2
 x 37
 y 12
 end
 arch bwall_4
 x 37
+y 12
+end
+arch pstone_2
+x 37
 y 13
 end
 arch bwall_4
+x 37
+y 13
+end
+arch pstone_2
 x 37
 y 14
 end
 arch bwall_4
 x 37
+y 14
+end
+arch pstone_2
+x 37
 y 15
 end
 arch bwall_4
+x 37
+y 15
+end
+arch pstone_2
 x 37
 y 16
 end
 arch bwall_4
 x 37
+y 16
+end
+arch pstone_2
+x 37
 y 17
+end
+arch bwall_4
+x 37
+y 17
+end
+arch pstone_2
+x 37
+y 18
 end
 arch bwall_3_1
 x 37
@@ -11504,41 +11780,81 @@ arch small_stones
 x 38
 y 8
 end
+arch pstone_2
+x 38
+y 9
+end
 arch bwall_3_3
 x 38
 y 9
 end
-arch bwall_4
+arch pstone_2
 x 38
 y 10
 end
 arch bwall_4
 x 38
+y 10
+end
+arch pstone_2
+x 38
 y 11
 end
 arch bwall_4
+x 38
+y 11
+end
+arch pstone_2
 x 38
 y 12
 end
 arch bwall_4
 x 38
+y 12
+end
+arch pstone_2
+x 38
 y 13
 end
 arch bwall_4
+x 38
+y 13
+end
+arch pstone_2
 x 38
 y 14
 end
 arch bwall_4
 x 38
+y 14
+end
+arch pstone_2
+x 38
 y 15
 end
 arch bwall_4
+x 38
+y 15
+end
+arch pstone_2
 x 38
 y 16
 end
 arch bwall_4
 x 38
+y 16
+end
+arch pstone_2
+x 38
 y 17
+end
+arch bwall_4
+x 38
+y 17
+end
+arch pstone_2
+x 38
+y 18
 end
 arch bwall_3_1
 x 38
@@ -11762,41 +12078,81 @@ arch small_stones
 x 39
 y 8
 end
+arch pstone_2
+x 39
+y 9
+end
 arch bwall_3_3
 x 39
 y 9
 end
-arch bwall_4
+arch pstone_2
 x 39
 y 10
 end
 arch bwall_4
 x 39
+y 10
+end
+arch pstone_2
+x 39
 y 11
 end
 arch bwall_4
+x 39
+y 11
+end
+arch pstone_2
 x 39
 y 12
 end
 arch bwall_4
 x 39
+y 12
+end
+arch pstone_2
+x 39
 y 13
 end
 arch bwall_4
+x 39
+y 13
+end
+arch pstone_2
 x 39
 y 14
 end
 arch bwall_4
 x 39
+y 14
+end
+arch pstone_2
+x 39
 y 15
 end
 arch bwall_4
+x 39
+y 15
+end
+arch pstone_2
 x 39
 y 16
 end
 arch bwall_4
 x 39
+y 16
+end
+arch pstone_2
+x 39
 y 17
+end
+arch bwall_4
+x 39
+y 17
+end
+arch pstone_2
+x 39
+y 18
 end
 arch bwall_3_1
 x 39
@@ -12004,69 +12360,137 @@ arch small_stones
 x 40
 y 8
 end
+arch pstone_2
+x 40
+y 9
+end
 arch bwall_3_3
 x 40
 y 9
 end
-arch bwall_4
+arch pstone_2
 x 40
 y 10
 end
 arch bwall_4
 x 40
+y 10
+end
+arch pstone_2
+x 40
 y 11
 end
 arch bwall_4
+x 40
+y 11
+end
+arch pstone_2
 x 40
 y 12
 end
 arch bwall_4
 x 40
+y 12
+end
+arch pstone_2
+x 40
 y 13
 end
 arch bwall_4
+x 40
+y 13
+end
+arch pstone_2
 x 40
 y 14
 end
 arch bwall_4
 x 40
+y 14
+end
+arch pstone_2
+x 40
 y 15
 end
 arch bwall_4
+x 40
+y 15
+end
+arch pstone_2
 x 40
 y 16
 end
 arch bwall_4
 x 40
+y 16
+end
+arch pstone_2
+x 40
 y 17
+end
+arch bwall_4
+x 40
+y 17
+end
+arch pstone_2
+x 40
+y 18
 end
 arch bwall_4
 x 40
 y 18
 end
-arch bwall_3_2
+arch pstone_2
 x 40
 y 19
 end
 arch bwall_3_2
 x 40
+y 19
+end
+arch pstone_2
+x 40
 y 20
 end
 arch bwall_3_2
+x 40
+y 20
+end
+arch pstone_2
 x 40
 y 21
 end
 arch bwall_3_2
 x 40
+y 21
+end
+arch pstone_2
+x 40
 y 22
 end
 arch bwall_3_2
+x 40
+y 22
+end
+arch pstone_2
 x 40
 y 23
 end
 arch bwall_3_2
 x 40
+y 23
+end
+arch pstone_2
+x 40
 y 24
+end
+arch bwall_3_2
+x 40
+y 24
+end
+arch pstone_2
+x 40
+y 25
 end
 arch bwall_2_2_1
 x 40
@@ -12250,69 +12674,137 @@ arch small_stones
 x 41
 y 8
 end
+arch pstone_2
+x 41
+y 9
+end
 arch bwall_3_3
 x 41
 y 9
 end
-arch bwall_4
+arch pstone_2
 x 41
 y 10
 end
 arch bwall_4
 x 41
+y 10
+end
+arch pstone_2
+x 41
 y 11
 end
 arch bwall_4
+x 41
+y 11
+end
+arch pstone_2
 x 41
 y 12
 end
 arch bwall_4
 x 41
+y 12
+end
+arch pstone_2
+x 41
 y 13
 end
 arch bwall_4
+x 41
+y 13
+end
+arch pstone_2
 x 41
 y 14
 end
 arch bwall_4
 x 41
+y 14
+end
+arch pstone_2
+x 41
 y 15
 end
 arch bwall_4
+x 41
+y 15
+end
+arch pstone_2
 x 41
 y 16
 end
 arch bwall_4
 x 41
+y 16
+end
+arch pstone_2
+x 41
 y 17
 end
 arch bwall_4
+x 41
+y 17
+end
+arch pstone_2
 x 41
 y 18
 end
 arch bwall_4
 x 41
+y 18
+end
+arch pstone_2
+x 41
 y 19
 end
 arch bwall_4
+x 41
+y 19
+end
+arch pstone_2
 x 41
 y 20
 end
 arch bwall_4
 x 41
+y 20
+end
+arch pstone_2
+x 41
 y 21
 end
 arch bwall_4
+x 41
+y 21
+end
+arch pstone_2
 x 41
 y 22
 end
 arch bwall_4
 x 41
+y 22
+end
+arch pstone_2
+x 41
 y 23
 end
 arch bwall_4
 x 41
+y 23
+end
+arch pstone_2
+x 41
 y 24
+end
+arch bwall_4
+x 41
+y 24
+end
+arch pstone_2
+x 41
+y 25
 end
 arch bwall_3_1
 x 41
@@ -12492,69 +12984,137 @@ arch small_stones
 x 42
 y 8
 end
+arch pstone_2
+x 42
+y 9
+end
 arch bwall_3_3
 x 42
 y 9
 end
-arch bwall_4
+arch pstone_2
 x 42
 y 10
 end
 arch bwall_4
 x 42
+y 10
+end
+arch pstone_2
+x 42
 y 11
 end
 arch bwall_4
+x 42
+y 11
+end
+arch pstone_2
 x 42
 y 12
 end
 arch bwall_4
 x 42
+y 12
+end
+arch pstone_2
+x 42
 y 13
 end
 arch bwall_4
+x 42
+y 13
+end
+arch pstone_2
 x 42
 y 14
 end
 arch bwall_4
 x 42
+y 14
+end
+arch pstone_2
+x 42
 y 15
 end
 arch bwall_4
+x 42
+y 15
+end
+arch pstone_2
 x 42
 y 16
 end
 arch bwall_4
 x 42
+y 16
+end
+arch pstone_2
+x 42
 y 17
 end
 arch bwall_4
+x 42
+y 17
+end
+arch pstone_2
 x 42
 y 18
 end
 arch bwall_4
 x 42
+y 18
+end
+arch pstone_2
+x 42
 y 19
 end
 arch bwall_4
+x 42
+y 19
+end
+arch pstone_2
 x 42
 y 20
 end
 arch bwall_4
 x 42
+y 20
+end
+arch pstone_2
+x 42
 y 21
 end
 arch bwall_4
+x 42
+y 21
+end
+arch pstone_2
 x 42
 y 22
 end
 arch bwall_4
 x 42
+y 22
+end
+arch pstone_2
+x 42
 y 23
 end
 arch bwall_4
 x 42
+y 23
+end
+arch pstone_2
+x 42
 y 24
+end
+arch bwall_4
+x 42
+y 24
+end
+arch pstone_2
+x 42
+y 25
 end
 arch bwall_3_1
 x 42
@@ -12734,85 +13294,169 @@ arch small_stones
 x 43
 y 8
 end
+arch pstone_2
+x 43
+y 9
+end
 arch bwall_3_3
 x 43
 y 9
 end
-arch bwall_4
+arch pstone_2
 x 43
 y 10
 end
 arch bwall_4
 x 43
+y 10
+end
+arch pstone_2
+x 43
 y 11
 end
 arch bwall_4
+x 43
+y 11
+end
+arch pstone_2
 x 43
 y 12
 end
 arch bwall_4
 x 43
+y 12
+end
+arch pstone_2
+x 43
 y 13
 end
 arch bwall_4
+x 43
+y 13
+end
+arch pstone_2
 x 43
 y 14
 end
 arch bwall_4
 x 43
+y 14
+end
+arch pstone_2
+x 43
 y 15
 end
 arch bwall_4
+x 43
+y 15
+end
+arch pstone_2
 x 43
 y 16
 end
 arch bwall_4
 x 43
+y 16
+end
+arch pstone_2
+x 43
 y 17
 end
 arch bwall_4
+x 43
+y 17
+end
+arch pstone_2
 x 43
 y 18
 end
 arch bwall_4
 x 43
+y 18
+end
+arch pstone_2
+x 43
 y 19
 end
 arch bwall_4
+x 43
+y 19
+end
+arch pstone_2
 x 43
 y 20
 end
 arch bwall_4
 x 43
+y 20
+end
+arch pstone_2
+x 43
 y 21
 end
 arch bwall_4
+x 43
+y 21
+end
+arch pstone_2
 x 43
 y 22
 end
 arch bwall_4
 x 43
+y 22
+end
+arch pstone_2
+x 43
 y 23
 end
 arch bwall_4
+x 43
+y 23
+end
+arch pstone_2
 x 43
 y 24
 end
 arch bwall_4
 x 43
+y 24
+end
+arch pstone_2
+x 43
 y 25
 end
-arch bwall_3_2
+arch bwall_4
+x 43
+y 25
+end
+arch pstone_2
 x 43
 y 26
 end
 arch bwall_3_2
 x 43
+y 26
+end
+arch pstone_2
+x 43
 y 27
 end
 arch bwall_3_2
 x 43
+y 27
+end
+arch pstone_2
+x 43
 y 28
+end
+arch bwall_3_2
+x 43
+y 28
+end
+arch pstone_2
+x 43
+y 29
 end
 arch bwall_2_2_1
 x 43
@@ -13032,85 +13676,169 @@ arch small_stones
 x 44
 y 8
 end
+arch pstone_2
+x 44
+y 9
+end
 arch bwall_3_3
 x 44
 y 9
 end
-arch bwall_4
+arch pstone_2
 x 44
 y 10
 end
 arch bwall_4
 x 44
+y 10
+end
+arch pstone_2
+x 44
 y 11
 end
 arch bwall_4
+x 44
+y 11
+end
+arch pstone_2
 x 44
 y 12
 end
 arch bwall_4
 x 44
+y 12
+end
+arch pstone_2
+x 44
 y 13
 end
 arch bwall_4
+x 44
+y 13
+end
+arch pstone_2
 x 44
 y 14
 end
 arch bwall_4
 x 44
+y 14
+end
+arch pstone_2
+x 44
 y 15
 end
 arch bwall_4
+x 44
+y 15
+end
+arch pstone_2
 x 44
 y 16
 end
 arch bwall_4
 x 44
+y 16
+end
+arch pstone_2
+x 44
 y 17
 end
 arch bwall_4
+x 44
+y 17
+end
+arch pstone_2
 x 44
 y 18
 end
 arch bwall_4
 x 44
+y 18
+end
+arch pstone_2
+x 44
 y 19
 end
 arch bwall_4
+x 44
+y 19
+end
+arch pstone_2
 x 44
 y 20
 end
 arch bwall_4
 x 44
+y 20
+end
+arch pstone_2
+x 44
 y 21
 end
 arch bwall_4
+x 44
+y 21
+end
+arch pstone_2
 x 44
 y 22
 end
 arch bwall_4
 x 44
+y 22
+end
+arch pstone_2
+x 44
 y 23
 end
 arch bwall_4
+x 44
+y 23
+end
+arch pstone_2
 x 44
 y 24
 end
 arch bwall_4
 x 44
+y 24
+end
+arch pstone_2
+x 44
 y 25
 end
 arch bwall_4
+x 44
+y 25
+end
+arch pstone_2
 x 44
 y 26
 end
 arch bwall_4
 x 44
+y 26
+end
+arch pstone_2
+x 44
 y 27
 end
 arch bwall_4
 x 44
+y 27
+end
+arch pstone_2
+x 44
 y 28
+end
+arch bwall_4
+x 44
+y 28
+end
+arch pstone_2
+x 44
+y 29
 end
 arch bwall_3_1
 x 44
@@ -13307,85 +14035,169 @@ arch small_stones
 x 45
 y 8
 end
+arch pstone_2
+x 45
+y 9
+end
 arch bwall_3_3
 x 45
 y 9
 end
-arch bwall_4
+arch pstone_2
 x 45
 y 10
 end
 arch bwall_4
 x 45
+y 10
+end
+arch pstone_2
+x 45
 y 11
 end
 arch bwall_4
+x 45
+y 11
+end
+arch pstone_2
 x 45
 y 12
 end
 arch bwall_4
 x 45
+y 12
+end
+arch pstone_2
+x 45
 y 13
 end
 arch bwall_4
+x 45
+y 13
+end
+arch pstone_2
 x 45
 y 14
 end
 arch bwall_4
 x 45
+y 14
+end
+arch pstone_2
+x 45
 y 15
 end
 arch bwall_4
+x 45
+y 15
+end
+arch pstone_2
 x 45
 y 16
 end
 arch bwall_4
 x 45
+y 16
+end
+arch pstone_2
+x 45
 y 17
+end
+arch bwall_4
+x 45
+y 17
+end
+arch pstone_2
+x 45
+y 18
 end
 arch bwall_4
 x 45
 y 18
 end
-arch bwall_3_4
+arch pstone_2
 x 45
 y 19
 end
 arch bwall_3_4
 x 45
+y 19
+end
+arch pstone_2
+x 45
 y 20
 end
 arch bwall_3_4
+x 45
+y 20
+end
+arch pstone_2
 x 45
 y 21
 end
 arch bwall_3_4
 x 45
+y 21
+end
+arch pstone_2
+x 45
 y 22
+end
+arch bwall_3_4
+x 45
+y 22
+end
+arch pstone_2
+x 45
+y 23
 end
 arch bwall_3_4
 x 45
 y 23
 end
-arch bwall_4
+arch pstone_2
 x 45
 y 24
 end
 arch bwall_4
 x 45
+y 24
+end
+arch pstone_2
+x 45
 y 25
 end
 arch bwall_4
+x 45
+y 25
+end
+arch pstone_2
 x 45
 y 26
 end
 arch bwall_4
 x 45
+y 26
+end
+arch pstone_2
+x 45
 y 27
 end
 arch bwall_4
 x 45
+y 27
+end
+arch pstone_2
+x 45
 y 28
+end
+arch bwall_4
+x 45
+y 28
+end
+arch pstone_2
+x 45
+y 29
 end
 arch bwall_3_1
 x 45
@@ -13546,41 +14358,81 @@ arch small_stones
 x 46
 y 8
 end
+arch pstone_2
+x 46
+y 9
+end
 arch bwall_3_3
 x 46
 y 9
 end
-arch bwall_4
+arch pstone_2
 x 46
 y 10
 end
 arch bwall_4
 x 46
+y 10
+end
+arch pstone_2
+x 46
 y 11
 end
 arch bwall_4
+x 46
+y 11
+end
+arch pstone_2
 x 46
 y 12
 end
 arch bwall_4
 x 46
+y 12
+end
+arch pstone_2
+x 46
 y 13
 end
 arch bwall_4
+x 46
+y 13
+end
+arch pstone_2
 x 46
 y 14
 end
 arch bwall_4
 x 46
+y 14
+end
+arch pstone_2
+x 46
 y 15
 end
 arch bwall_4
+x 46
+y 15
+end
+arch pstone_2
 x 46
 y 16
 end
 arch bwall_4
 x 46
+y 16
+end
+arch pstone_2
+x 46
 y 17
+end
+arch bwall_4
+x 46
+y 17
+end
+arch pstone_2
+x 46
+y 18
 end
 arch bwall_3_1
 x 46
@@ -13614,25 +14466,49 @@ arch chest
 x 46
 y 23
 end
+arch pstone_2
+x 46
+y 24
+end
 arch bwall_3_3
 x 46
 y 24
 end
-arch bwall_4
+arch pstone_2
 x 46
 y 25
 end
 arch bwall_4
 x 46
+y 25
+end
+arch pstone_2
+x 46
 y 26
 end
 arch bwall_4
+x 46
+y 26
+end
+arch pstone_2
 x 46
 y 27
 end
 arch bwall_4
 x 46
+y 27
+end
+arch pstone_2
+x 46
 y 28
+end
+arch bwall_4
+x 46
+y 28
+end
+arch pstone_2
+x 46
+y 29
 end
 arch bwall_3_1
 x 46
@@ -13829,41 +14705,81 @@ arch food
 x 47
 y 8
 end
+arch pstone_2
+x 47
+y 9
+end
 arch bwall_3_3
 x 47
 y 9
 end
-arch bwall_4
+arch pstone_2
 x 47
 y 10
 end
 arch bwall_4
 x 47
+y 10
+end
+arch pstone_2
+x 47
 y 11
 end
 arch bwall_4
+x 47
+y 11
+end
+arch pstone_2
 x 47
 y 12
 end
 arch bwall_4
 x 47
+y 12
+end
+arch pstone_2
+x 47
 y 13
 end
 arch bwall_4
+x 47
+y 13
+end
+arch pstone_2
 x 47
 y 14
 end
 arch bwall_4
 x 47
+y 14
+end
+arch pstone_2
+x 47
 y 15
 end
 arch bwall_4
+x 47
+y 15
+end
+arch pstone_2
 x 47
 y 16
 end
 arch bwall_4
 x 47
+y 16
+end
+arch pstone_2
+x 47
 y 17
+end
+arch bwall_4
+x 47
+y 17
+end
+arch pstone_2
+x 47
+y 18
 end
 arch bwall_3_1
 x 47
@@ -13893,25 +14809,49 @@ arch chest
 x 47
 y 23
 end
+arch pstone_2
+x 47
+y 24
+end
 arch bwall_3_3
 x 47
 y 24
 end
-arch bwall_4
+arch pstone_2
 x 47
 y 25
 end
 arch bwall_4
 x 47
+y 25
+end
+arch pstone_2
+x 47
 y 26
 end
 arch bwall_4
+x 47
+y 26
+end
+arch pstone_2
 x 47
 y 27
 end
 arch bwall_4
 x 47
+y 27
+end
+arch pstone_2
+x 47
 y 28
+end
+arch bwall_4
+x 47
+y 28
+end
+arch pstone_2
+x 47
+y 29
 end
 arch bwall_3_1
 x 47
@@ -14092,41 +15032,81 @@ arch small_stones
 x 48
 y 8
 end
+arch pstone_2
+x 48
+y 9
+end
 arch bwall_3_3
 x 48
 y 9
 end
-arch bwall_4
+arch pstone_2
 x 48
 y 10
 end
 arch bwall_4
 x 48
+y 10
+end
+arch pstone_2
+x 48
 y 11
 end
 arch bwall_4
+x 48
+y 11
+end
+arch pstone_2
 x 48
 y 12
 end
 arch bwall_4
 x 48
+y 12
+end
+arch pstone_2
+x 48
 y 13
 end
 arch bwall_4
+x 48
+y 13
+end
+arch pstone_2
 x 48
 y 14
 end
 arch bwall_4
 x 48
+y 14
+end
+arch pstone_2
+x 48
 y 15
 end
 arch bwall_4
+x 48
+y 15
+end
+arch pstone_2
 x 48
 y 16
 end
 arch bwall_4
 x 48
+y 16
+end
+arch pstone_2
+x 48
 y 17
+end
+arch bwall_4
+x 48
+y 17
+end
+arch pstone_2
+x 48
+y 18
 end
 arch bwall_3_1
 x 48
@@ -14156,25 +15136,49 @@ arch random_wealth
 x 48
 y 23
 end
+arch pstone_2
+x 48
+y 24
+end
 arch bwall_3_3
 x 48
 y 24
 end
-arch bwall_4
+arch pstone_2
 x 48
 y 25
 end
 arch bwall_4
 x 48
+y 25
+end
+arch pstone_2
+x 48
 y 26
 end
 arch bwall_4
+x 48
+y 26
+end
+arch pstone_2
 x 48
 y 27
 end
 arch bwall_4
 x 48
+y 27
+end
+arch pstone_2
+x 48
 y 28
+end
+arch bwall_4
+x 48
+y 28
+end
+arch pstone_2
+x 48
+y 29
 end
 arch bwall_3_1
 x 48
@@ -14363,41 +15367,81 @@ arch small_stones
 x 49
 y 8
 end
+arch pstone_2
+x 49
+y 9
+end
 arch bwall_3_3
 x 49
 y 9
 end
-arch bwall_4
+arch pstone_2
 x 49
 y 10
 end
 arch bwall_4
 x 49
+y 10
+end
+arch pstone_2
+x 49
 y 11
 end
 arch bwall_4
+x 49
+y 11
+end
+arch pstone_2
 x 49
 y 12
 end
 arch bwall_4
 x 49
+y 12
+end
+arch pstone_2
+x 49
 y 13
 end
 arch bwall_4
+x 49
+y 13
+end
+arch pstone_2
 x 49
 y 14
 end
 arch bwall_4
 x 49
+y 14
+end
+arch pstone_2
+x 49
 y 15
 end
 arch bwall_4
+x 49
+y 15
+end
+arch pstone_2
 x 49
 y 16
 end
 arch bwall_4
 x 49
+y 16
+end
+arch pstone_2
+x 49
 y 17
+end
+arch bwall_4
+x 49
+y 17
+end
+arch pstone_2
+x 49
+y 18
 end
 arch bwall_3_1
 x 49
@@ -14423,25 +15467,49 @@ arch dungeon_floor
 x 49
 y 23
 end
+arch pstone_2
+x 49
+y 24
+end
 arch bwall_3_3
 x 49
 y 24
 end
-arch bwall_4
+arch pstone_2
 x 49
 y 25
 end
 arch bwall_4
 x 49
+y 25
+end
+arch pstone_2
+x 49
 y 26
 end
 arch bwall_4
+x 49
+y 26
+end
+arch pstone_2
 x 49
 y 27
 end
 arch bwall_4
 x 49
+y 27
+end
+arch pstone_2
+x 49
 y 28
+end
+arch bwall_4
+x 49
+y 28
+end
+arch pstone_2
+x 49
+y 29
 end
 arch bwall_3_1
 x 49
@@ -14626,41 +15694,81 @@ arch weak_wall_5
 x 50
 y 8
 end
+arch pstone_2
+x 50
+y 9
+end
 arch bwall_4
 x 50
 y 9
 end
-arch bwall_3_4
+arch pstone_2
 x 50
 y 10
 end
 arch bwall_3_4
 x 50
+y 10
+end
+arch pstone_2
+x 50
 y 11
 end
 arch bwall_3_4
+x 50
+y 11
+end
+arch pstone_2
 x 50
 y 12
 end
 arch bwall_3_4
 x 50
+y 12
+end
+arch pstone_2
+x 50
 y 13
 end
 arch bwall_3_4
+x 50
+y 13
+end
+arch pstone_2
 x 50
 y 14
 end
 arch bwall_3_4
 x 50
+y 14
+end
+arch pstone_2
+x 50
 y 15
 end
 arch bwall_3_4
+x 50
+y 15
+end
+arch pstone_2
 x 50
 y 16
 end
 arch bwall_3_4
 x 50
+y 16
+end
+arch pstone_2
+x 50
 y 17
+end
+arch bwall_3_4
+x 50
+y 17
+end
+arch pstone_2
+x 50
+y 18
 end
 arch bwall_2_2_4
 x 50
@@ -14690,25 +15798,49 @@ arch food
 x 50
 y 23
 end
+arch pstone_2
+x 50
+y 24
+end
 arch bwall_2_2_3
 x 50
 y 24
 end
-arch bwall_3_4
+arch pstone_2
 x 50
 y 25
 end
 arch bwall_3_4
 x 50
+y 25
+end
+arch pstone_2
+x 50
 y 26
 end
 arch bwall_3_4
+x 50
+y 26
+end
+arch pstone_2
 x 50
 y 27
 end
 arch bwall_3_4
 x 50
+y 27
+end
+arch pstone_2
+x 50
 y 28
+end
+arch bwall_3_4
+x 50
+y 28
+end
+arch pstone_2
+x 50
+y 29
 end
 arch bwall_4
 x 50
