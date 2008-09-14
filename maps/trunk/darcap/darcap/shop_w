@@ -1,16 +1,17 @@
 arch map
 name Spike's Weapons
 fixed_resettime 1
-difficulty 1
+difficulty 10
 region darcap
 shopitems weapon:80;bow:40;*:-50
 shopmax 8000
 width 16
 height 16
-enter_x 13
+enter_x 14
 enter_y 14
 msg
-Created:  1994-02-11
+Created:  1994-10-11
+Modified: 2008-09-14 Rick Tanner
 endmsg
 end
 arch shop_empty
