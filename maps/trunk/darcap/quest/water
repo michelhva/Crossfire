@@ -1,11 +1,14 @@
 arch map
 name Water Well
-difficulty 1
+difficulty 15
 region darcap
 width 32
 height 32
 enter_x 29
 enter_y 29
+msg
+Modified: 2008-09-14 Rick Tanner
+endmsg
 end
 arch sea
 exp 1000
