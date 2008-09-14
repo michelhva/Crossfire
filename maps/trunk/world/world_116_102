@@ -5,8 +5,7 @@ region darcap
 width 50
 height 50
 msg
-Modified: 2008-05-29 Nicolas Weeger
-Modified: 2008-07-31 Raphaël Quinet
+Modified: 2008-09-13 Rick Tanner
 endmsg
 outdoor 1
 tile_path_1 world_116_101
@@ -7551,9 +7550,9 @@ elevation 0
 end
 arch house_2
 name Fire House
-slaying /darcap/darcap/houses
-hp 8
-sp 1
+slaying ../darcap/darcap/firehouse
+hp 14
+sp 17
 x 26
 y 33
 end
@@ -7890,9 +7889,9 @@ elevation 0
 end
 arch house_2
 name Water House
-slaying /darcap/darcap/houses
-hp 24
-sp 1
+slaying ../darcap/darcap/waterhouse
+hp 13
+sp 17
 x 27
 y 33
 end
@@ -8212,9 +8211,9 @@ elevation 0
 end
 arch house_2
 name Air House
-slaying /darcap/darcap/houses
-hp 8
-sp 31
+slaying ../darcap/darcap/airhouse
+hp 14
+sp 17
 x 28
 y 33
 end
@@ -8551,9 +8550,9 @@ elevation 0
 end
 arch house_2
 name Earth House
-slaying /darcap/darcap/houses
-hp 24
-sp 31
+slaying ../darcap/darcap/earthhouse
+hp 14
+sp 17
 x 29
 y 33
 end
