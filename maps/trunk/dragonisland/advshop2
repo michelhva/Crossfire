@@ -1,14 +1,17 @@
 arch map
 name The Adventurous Shop
-difficulty 1
+difficulty 25
 region stoneville
 shopitems ring:80;amulet:80;potion:80;*:-70
 shopmin 1000
 shopmax 20000
 width 16
 height 16
+enter_x 7
+enter_y 3
 msg
-Created:  1997-02-22
+Created:  1997-07-22
+Modified: 2008-09-14 Rick Tanner
 endmsg
 end
 arch woodfloor

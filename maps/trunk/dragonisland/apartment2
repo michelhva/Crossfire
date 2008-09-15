@@ -4,8 +4,11 @@ difficulty 1
 region stoneville
 width 16
 height 16
+enter_x 7
+enter_y 14
 msg
-Created:  1997-02-09
+Created:  1997-07-09
+Modified: 2008-09-14 Rick Tanner
 endmsg
 end
 arch grass
@@ -232,7 +235,6 @@ Most people just want to kill me on sight, sniff!
 @match *
 Don't hurt me, please
 endmsg
-maxhp 10
 x 2
 y 1
 speed_left -2.100000

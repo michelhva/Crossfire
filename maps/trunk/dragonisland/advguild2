@@ -1,11 +1,14 @@
 arch map
 name Adventurers Guild
-difficulty 1
+difficulty 40
 region stoneville
 width 32
 height 32
+enter_x 9
+enter_y 26
 msg
 Created:  1997-07-15 Viola Krings
+Modified: 2008-09-14 Rick Tanner
 endmsg
 end
 arch woodfloor
