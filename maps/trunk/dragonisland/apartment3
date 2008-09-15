@@ -1,12 +1,14 @@
 arch map
 name House by the Well
-difficulty 1
+difficulty 20
 region stoneville
 width 16
 height 16
+enter_x 6
+enter_y 1
 msg
-Created:  1997-02-17
-Modified: 2008-06-06 Arvid Norlander
+Created:  1997-09-17
+Modified: 2008-09-14 Rick Tanner
 endmsg
 end
 arch dungeon_floor
