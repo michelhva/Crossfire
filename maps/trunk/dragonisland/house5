@@ -1,12 +1,14 @@
 arch map
 name Enter at Own Risk
-difficulty 1
+difficulty 20
 region stoneville
 width 16
 height 16
+enter_x 1
+enter_y 13
 msg
 Created:  1997-06-17 Viola Krings
-Modified: 2007-11-04 Andreas Kirschbaum
+Modified: 2008-09-15 Rick Tanner
 endmsg
 end
 arch dungeon_floor
