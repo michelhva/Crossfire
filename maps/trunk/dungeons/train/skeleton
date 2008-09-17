@@ -1,13 +1,15 @@
 arch map
 name Skeleton Training
 reset_timeout 3600
+difficulty 13
 region wilderness
 width 32
 height 17
+enter_x 18
+enter_y 11
 msg
-Created:  2003-06-19
-cvs #2
-Modified: 2007-11-04 Andreas Kirschbaum
+Created:  2003-06-19 crowbert
+Modified: 2008-09-17 Rick Tanner
 endmsg
 end
 arch flagstone
