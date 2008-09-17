@@ -1,16 +1,15 @@
 arch map
 name Hole
 reset_timeout 7200
-difficulty 5
+difficulty 12
+region wilderness
 width 36
 height 36
-enter_x 19
+enter_x 18
 enter_y 17
 msg
 Created:  1994-02-15
-Updated by Mark Wedel
-(master@rahul.net)
-Modified: 2008-06-06 Arvid Norlander
+Modified: 2008-09-17 Rick Tanner
 endmsg
 end
 arch cobblestones

@@ -1,14 +1,15 @@
 arch map
 name Castle of Aaaarg
 reset_timeout 7200
-difficulty 9
+difficulty 18
+region wilderness
 width 57
 height 57
 enter_x 15
 enter_y 13
 msg
 Created:  1994-05-01
-Modified: 2008-06-06 Arvid Norlander
+Modified: 2008-09-17 Rick Tanner
 endmsg
 end
 arch blocked
