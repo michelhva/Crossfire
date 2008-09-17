@@ -1100,6 +1100,10 @@ x 13
 y 12
 connected 5
 end
+arch blocked
+x 13
+y 13
+end
 arch sea
 x 14
 end
@@ -1175,6 +1179,14 @@ exp 9
 x 14
 y 11
 end
+arch blocked
+x 14
+y 12
+end
+arch blocked
+x 14
+y 13
+end
 arch sea
 x 15
 end
@@ -1241,6 +1253,14 @@ end
 arch random_wealth
 x 15
 y 11
+end
+arch blocked
+x 15
+y 12
+end
+arch blocked
+x 15
+y 13
 end
 arch sea
 x 16
@@ -1309,6 +1329,14 @@ arch random_wealth
 x 16
 y 11
 end
+arch blocked
+x 16
+y 12
+end
+arch blocked
+x 16
+y 13
+end
 arch sea
 x 17
 end
@@ -1364,6 +1392,18 @@ arch dungeon_magic
 x 17
 y 10
 end
+arch blocked
+x 17
+y 11
+end
+arch blocked
+x 17
+y 12
+end
+arch blocked
+x 17
+y 13
+end
 arch sea
 x 18
 end
@@ -1419,6 +1459,18 @@ arch dungeon_magic
 x 18
 y 10
 end
+arch blocked
+x 18
+y 11
+end
+arch blocked
+x 18
+y 12
+end
+arch blocked
+x 18
+y 13
+end
 arch sea
 x 19
 end
@@ -1478,6 +1530,18 @@ arch dungeon_magic
 x 19
 y 10
 end
+arch blocked
+x 19
+y 11
+end
+arch blocked
+x 19
+y 12
+end
+arch blocked
+x 19
+y 13
+end
 arch sea
 x 20
 end
@@ -1533,6 +1597,18 @@ arch dungeon_magic
 x 20
 y 10
 end
+arch blocked
+x 20
+y 11
+end
+arch blocked
+x 20
+y 12
+end
+arch blocked
+x 20
+y 13
+end
 arch sea
 x 21
 end
@@ -1587,6 +1663,18 @@ end
 arch dungeon_magic
 x 21
 y 10
+end
+arch blocked
+x 21
+y 11
+end
+arch blocked
+x 21
+y 12
+end
+arch blocked
+x 21
+y 13
 end
 arch sea
 x 22
@@ -1679,6 +1767,18 @@ arch dungeon_magic
 x 22
 y 10
 end
+arch blocked
+x 22
+y 11
+end
+arch blocked
+x 22
+y 12
+end
+arch blocked
+x 22
+y 13
+end
 arch sea
 x 23
 end
@@ -1734,6 +1834,18 @@ arch dungeon_magic
 x 23
 y 10
 end
+arch blocked
+x 23
+y 11
+end
+arch blocked
+x 23
+y 12
+end
+arch blocked
+x 23
+y 13
+end
 arch sea
 x 24
 end
@@ -1789,6 +1901,18 @@ arch dungeon_magic
 x 24
 y 10
 end
+arch blocked
+x 24
+y 11
+end
+arch blocked
+x 24
+y 12
+end
+arch blocked
+x 24
+y 13
+end
 arch sea
 x 25
 end
@@ -1844,6 +1968,18 @@ arch dungeon_magic
 x 25
 y 10
 end
+arch blocked
+x 25
+y 11
+end
+arch blocked
+x 25
+y 12
+end
+arch blocked
+x 25
+y 13
+end
 arch sea
 x 26
 end
@@ -1899,6 +2035,18 @@ arch dungeon_magic
 x 26
 y 10
 end
+arch blocked
+x 26
+y 11
+end
+arch blocked
+x 26
+y 12
+end
+arch blocked
+x 26
+y 13
+end
 arch sea
 x 27
 end
@@ -1957,6 +2105,18 @@ arch dungeon_magic
 x 27
 y 10
 end
+arch blocked
+x 27
+y 11
+end
+arch blocked
+x 27
+y 12
+end
+arch blocked
+x 27
+y 13
+end
 arch sea
 x 28
 end
@@ -2011,6 +2171,18 @@ end
 arch dungeon_magic
 x 28
 y 10
+end
+arch blocked
+x 28
+y 11
+end
+arch blocked
+x 28
+y 12
+end
+arch blocked
+x 28
+y 13
 end
 arch sea
 x 29
@@ -2108,4 +2280,16 @@ end
 arch dungeon_magic
 x 29
 y 10
+end
+arch blocked
+x 29
+y 11
+end
+arch blocked
+x 29
+y 12
+end
+arch blocked
+x 29
+y 13
 end
