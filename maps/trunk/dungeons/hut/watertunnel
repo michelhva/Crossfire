@@ -2,12 +2,14 @@ arch map
 name Watertunnel
 reset_timeout 7200
 difficulty 1
+region wilderness
 width 50
 height 19
 enter_x 8
 enter_y 13
 msg
-Created:  1994-02-17
+Created:  1994-05-17
+Modified: 2008-09-16 Rick Tanner
 endmsg
 end
 arch blocked
