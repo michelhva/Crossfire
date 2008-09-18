@@ -1,13 +1,15 @@
 arch map
 name Abyss
 reset_timeout 7200
-difficulty 8
+difficulty 15
 region euthville
 width 20
 height 16
 enter_x 3
+enter_y 1
 msg
 Created:  1993-10-22
+Modified: 2008-09-17 Rick Tanner
 endmsg
 end
 arch dungeon_floor
