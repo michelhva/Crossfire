@@ -1,13 +1,14 @@
 arch map
 name DF Outpost 1
 difficulty 10
+region wilderness
 width 15
 height 25
 enter_x 12
 enter_y 12
 msg
 Created:  2004-08-13 Avion
-Modified: 2008-08-28 Rick Tanner
+Modified: 2008-09-18 Rick Tanner
 endmsg
 outdoor 1
 end
@@ -1201,8 +1202,8 @@ end
 arch barrel
 x 5
 y 4
-type 122
 nrof 0
+type 122
 arch random_food
 end
 arch random_food
