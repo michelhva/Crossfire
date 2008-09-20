@@ -1,11 +1,13 @@
 arch map
 name Small Inn
-difficulty 1
+difficulty 10
 region lakecountry
 width 15
 height 15
+enter_y 3
 msg
-Created:  1995-02-23
+Created:  1995-03-23
+Modified: 2008-09-20 Rick Tanner
 endmsg
 end
 arch woodfloor

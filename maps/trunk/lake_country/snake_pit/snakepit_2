@@ -1,13 +1,15 @@
 arch map
 name Snake Pit
-difficulty 1
+difficulty 85
 region lakecountry
 darkness 5
 width 36
 height 36
+enter_x 32
+enter_y 27
 msg
 Created:  1995-04-26 Kundi, Xue (xkd@soda.berkeley.edu)
-Modified: 2008-07-18 Arvid Norlander
+Modified: 2008-09-20 Rick Tanner
 endmsg
 end
 arch large_stones
