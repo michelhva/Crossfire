@@ -1,11 +1,14 @@
 arch map
 name Prison
-difficulty 1
+difficulty 25
 region lakecountry
 width 24
 height 24
+enter_x 11
+enter_y 22
 msg
 Created:  1995-03-28 Kundi, Xue (xkd@soda.csua.berkeley.edu)
+Modified: 2008-09-19 Rick Tanner
 endmsg
 end
 arch dungeon_floor

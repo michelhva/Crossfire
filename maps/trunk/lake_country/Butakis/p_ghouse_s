@@ -1,11 +1,14 @@
 arch map
 name Prison Gatehouse, South
-difficulty 1
+difficulty 25
 region lakecountry
 width 16
 height 16
+enter_x 7
+enter_y 14
 msg
-Created:  1995-02-13
+Created:  1995-04-13
+Modified: 2008-09-19 Rick Tanner
 endmsg
 end
 arch dun10
