@@ -1,10 +1,13 @@
 arch map
 name Marksel Keep Cellar
-difficulty 1
+difficulty 8
 width 8
 height 10
+enter_x 1
+enter_y 2
 msg
-Created:  1999-02-28 King Zoobus
+Created:  1999-01-28 King Zoobus
+Modified: 2008-09-20 Rick Tanner
 endmsg
 end
 arch dungeon_floor
