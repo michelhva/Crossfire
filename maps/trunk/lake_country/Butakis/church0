@@ -1,11 +1,14 @@
 arch map
 name Royal Church
-difficulty 1
+difficulty 20
 region lakecountry
 width 20
 height 30
+enter_x 9
+enter_y 28
 msg
 Created:  1995-03-29 Kundi, Xue (xkd@soda.csua.berkeley.edu)
+Modified: 2008-09-19 Rick Tanner
 endmsg
 end
 arch woodfloor

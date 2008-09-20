@@ -1,12 +1,14 @@
 arch map
 name Prison
-difficulty 1
+difficulty 30
 region lakecountry
 width 16
 height 16
+enter_x 7
+enter_y 1
 msg
-Created:  1995-02-28
-Modified: 2008-05-23 Arvid Norlander
+Created:  1995-03-28
+Modified: 2008-09-19 Rick Tanner
 endmsg
 end
 arch dungeon_floor

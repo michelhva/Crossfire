@@ -1,11 +1,14 @@
 arch map
 name Royal Library
-difficulty 1
+difficulty 25
 region lakecountry
 width 18
 height 18
+enter_x 2
+enter_y 9
 msg
 Created:  1995-03-28 Kundi, Xue (xkd@soda.csua.berkeley.edu)
+Modified: 2008-09-19 Rick Tanner
 endmsg
 end
 arch evergreen

@@ -1,11 +1,14 @@
 arch map
 name Towers of Luck
-difficulty 1
+difficulty 60
 region lakecountry
 width 32
 height 32
+enter_x 30
+enter_y 17
 msg
 Created:  1995-05-01 Kundi, Xue (xkd@soda.berkeley.edu)
+Modified: 2008-09-19 Rick Tanner
 endmsg
 end
 arch button_plate

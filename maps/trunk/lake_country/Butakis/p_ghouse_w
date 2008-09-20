@@ -1,11 +1,14 @@
 arch map
 name Prison Gatehouse, West
-difficulty 1
+difficulty 25
 region lakecountry
 width 16
 height 16
+enter_x 14
+enter_y 4
 msg
-Created:  1995-02-29
+Created:  1995-03-29
+Modified: 2008-09-19 Rick Tanner
 endmsg
 end
 arch flagstone

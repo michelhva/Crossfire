@@ -1,12 +1,14 @@
 arch map
 name Inn, White Pigeon
-difficulty 1
+difficulty 20
 region lakecountry
 width 16
 height 16
+enter_x 7
+enter_y 14
 msg
 Created:  1995-03-28 Kundi, Xue (xkd@soda.csua.berkeley.edu)
-Modified: 2008-05-23 Arvid Norlander
+Modified: 2008-09-19 Rick Tanner
 endmsg
 end
 arch woodfloor

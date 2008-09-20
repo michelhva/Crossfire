@@ -1,11 +1,14 @@
 arch map
 name Wist Portal
-difficulty 1
+difficulty 40
 region lakecountry
 width 8
 height 8
+enter_x 3
+enter_y 3
 msg
-Created:  1995-02-13
+Created:  1995-04-13
+Modified: 2008-09-19 Rick Tanner
 endmsg
 end
 arch woodfloor
