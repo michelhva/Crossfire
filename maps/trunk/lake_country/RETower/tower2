@@ -1,12 +1,14 @@
 arch map
 name Butakis' Elite Training Tower
-difficulty 1
+difficulty 10
 region lakecountry
 width 25
 height 25
+enter_x 12
+enter_y 12
 msg
-Created:  1995-02-03
-Modified: 2008-05-23 Arvid Norlander
+Created:  1995-04-03
+Modified: 2008-09-20 Rick Tanner
 endmsg
 end
 arch dungeon_floor
