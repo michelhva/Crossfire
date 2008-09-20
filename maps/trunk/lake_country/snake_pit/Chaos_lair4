@@ -1,12 +1,15 @@
 arch map
 name Chaos Lair
-difficulty 1
+difficulty 100
 region lakecountry
 darkness 4
 width 20
 height 26
+enter_x 9
+enter_y 20
 msg
 Created:  1995-06-06 Kundi, Xue (xkd@soda.berkeley.edu)
+Modified: 2008-09-20 Rick Tanner
 endmsg
 end
 arch button_handle
