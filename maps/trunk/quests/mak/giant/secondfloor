@@ -1,10 +1,13 @@
 arch map
 name Giants Second Floor
-difficulty 1
+difficulty 25
 width 32
 height 27
+enter_x 26
+enter_y 24
 msg
 Created:  2000-04-13 Magnus Kronhamn (mak@solace.mh.se)
+Modified: 2008-09-21 Rick Tanner
 endmsg
 end
 arch woodfloor

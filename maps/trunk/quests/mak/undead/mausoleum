@@ -1,10 +1,13 @@
 arch map
 name Mausoleum
-difficulty 6
+difficulty 9
 width 20
 height 21
+enter_x 10
+enter_y 19
 msg
 Created:  2000-04-13 Magnus Kronhamn (mak@solace.mh.se)
+Modified: 2008-09-21 Rick Tanner
 endmsg
 end
 arch marble

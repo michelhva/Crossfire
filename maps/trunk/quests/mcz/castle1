@@ -1,11 +1,13 @@
 arch map
 name Castle of Ra-Gar
-difficulty 1
+difficulty 15
 width 20
 height 27
+enter_x 9
+enter_y 25
 msg
 Created:  1993-10-18
-Modified: 2008-05-06 Nicolas Weeger
+Modified: 2008-09-21 Rick Tanner
 endmsg
 end
 arch dungeon_floor
