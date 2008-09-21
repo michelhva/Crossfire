@@ -1,11 +1,14 @@
 arch map
 name Hole in the Ground
-difficulty 1
+difficulty 10
 region portjoseph
 width 15
 height 13
+enter_x 7
+enter_y 6
 msg
 Created:  1994-06-10 langley (langley@fermat.dartmouth.edu)
+Modified: 2008-09-21 Rick Tanner
 endmsg
 end
 arch small_stones

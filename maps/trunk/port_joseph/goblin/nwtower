@@ -1,11 +1,14 @@
 arch map
 name Goblin Fortress
-difficulty 1
+difficulty 7
 region portjoseph
 width 16
 height 16
+enter_x 3
+enter_y 3
 msg
 Created:  1994-07-23 langley (langley@fermat.dartmouth.edu)
+Modified: 2008-09-21 Rick Tanner
 endmsg
 end
 arch afloor_right

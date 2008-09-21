@@ -1,13 +1,15 @@
 arch map
 name Temple
-difficulty 1
+difficulty 12
 region portjoseph
 darkness 1
 width 15
 height 24
+enter_x 7
+enter_y 20
 msg
 Created:  1994-06-10 langley (langley@fermat.dartmouth.edu)
-Modified: 2007-11-04 Andreas Kirschbaum
+Modified: 2008-09-21 Rick Tanner
 endmsg
 end
 arch jungle_1

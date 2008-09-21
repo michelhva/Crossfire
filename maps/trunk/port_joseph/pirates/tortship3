@@ -1,11 +1,14 @@
 arch map
 name Shipwreck
-difficulty 1
+difficulty 8
 region portjoseph
 width 12
 height 21
+enter_x 11
+enter_y 6
 msg
 Created:  1994-06-10 langley (langley@fermat.dartmouth.edu)
+Modified: 2008-09-21 Rick Tanner
 endmsg
 end
 arch tree
