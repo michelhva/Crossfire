@@ -1,12 +1,14 @@
 arch map
 name Warehouse #3
-difficulty 1
+difficulty 9
 region navar
 width 20
 height 35
+enter_x 2
+enter_y 34
 msg
 Created:  1993-11-10
-Modified: 2007-11-04 Andreas Kirschbaum
+Modified: 2008-09-21 Rick Tanner
 endmsg
 end
 arch woodfloor

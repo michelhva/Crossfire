@@ -1,11 +1,14 @@
 arch map
 name Warehouse #5
-difficulty 1
+difficulty 17
 region navar
 width 25
 height 21
+enter_x 24
+enter_y 9
 msg
 Created:  1993-11-15
+Modified: 2008-09-21 Rick Tanner
 endmsg
 end
 arch woodfloor
