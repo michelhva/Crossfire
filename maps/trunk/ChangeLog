@@ -1,3 +1,790 @@
+2008-09-21 06:26  rjtanner
+
+	* navar_city/slums/Iggys_house, navar_city/slums/Iggys_house_lower,
+	  navar_city/slums/Iggys_house_upper, navar_city/slums/rockgardens,
+	  navar_city/temples/gaea, navar_city/temples/gorokh,
+	  navar_city/temples/gorokh2, navar_city/temples/ixalovh,
+	  navar_city/temples/ixalovh2, navar_city/temples/ruggilli,
+	  navar_city/temples/ruggilli2, navar_city/temples/templelyth,
+	  navar_city/temples/valriel, navar_city/tower/magetower1,
+	  navar_city/tower/magetower2, navar_city/tower/magetower3,
+	  navar_city/tower/magetower4, navar_city/tower/magetower5,
+	  navar_city/tower/magetower_low, navar_city/tower/magetowfinal:
+	  Map header updates: Update maps with entrance x & y coordinates,
+	  adjust map level difficulty to something slightly more realistic
+
+2008-09-21 06:24  rjtanner
+
+	* navar_city/troll_canyon/troll_canyon.0,
+	  navar_city/troll_canyon/troll_canyon.1,
+	  navar_city/troll_canyon/troll_canyon.10,
+	  navar_city/troll_canyon/troll_canyon.11,
+	  navar_city/troll_canyon/troll_canyon.12,
+	  navar_city/troll_canyon/troll_canyon.2,
+	  navar_city/troll_canyon/troll_canyon.3,
+	  navar_city/troll_canyon/troll_canyon.4,
+	  navar_city/troll_canyon/troll_canyon.5,
+	  navar_city/troll_canyon/troll_canyon.6,
+	  navar_city/troll_canyon/troll_canyon.7,
+	  navar_city/troll_canyon/troll_canyon.8,
+	  navar_city/troll_canyon/troll_canyon.9: Map header updates:
+	  Update maps with entrance x & y coordinates, adjust map level
+	  difficulty to something slightly more realistic, add navar as the
+	  region, added info for original map author with time stamp
+
+2008-09-21 05:46  rjtanner
+
+	* navar_city/mlab/tadobebuild2, navar_city/mlab/tadobebuild3,
+	  navar_city/mlab/tavern, navar_city/mlab/tavern2,
+	  navar_city/mlab/tavern3, navar_city/mlab/tavern4,
+	  navar_city/mlab/tavern5, navar_city/mlab/tavern6,
+	  navar_city/mlab/tavern7, navar_city/mlab/tavernb1,
+	  navar_city/mlab/tavernb2, navar_city/mlab/tavernb3,
+	  navar_city/mlab/tavernb4, navar_city/mlab/thehole,
+	  navar_city/mlab/ttower10, navar_city/mlab/ttower11,
+	  navar_city/mlab/ttower12, navar_city/mlab/ttower13,
+	  navar_city/mlab/ttower14, navar_city/mlab/ttower15,
+	  navar_city/mlab/ttower16, navar_city/mlab/ttower17,
+	  navar_city/mlab/ttower18, navar_city/mlab/ttower19,
+	  navar_city/mlab/ttower20, navar_city/mlab/ttower21,
+	  navar_city/mlab/ttower22, navar_city/mlab/ttower23,
+	  navar_city/mlab/ttower24, navar_city/mlab/ttower25,
+	  navar_city/mlab/ttower26, navar_city/mlab/ttower27,
+	  navar_city/mlab/ttower28, navar_city/mlab/ttower29,
+	  navar_city/mlab/ttower30, navar_city/mlab/ttower31,
+	  navar_city/mlab/ttower32, navar_city/mlab/ttower33,
+	  navar_city/mlab/ttower34, navar_city/mlab/ttower35,
+	  navar_city/mlab/ttower36, navar_city/mlab/ttower37,
+	  navar_city/mlab/ttower38, navar_city/mlab/ttower39,
+	  navar_city/mlab/ttower40, navar_city/mlab/ttower41,
+	  navar_city/mlab/ttower42, navar_city/mlab/ttower43,
+	  navar_city/mlab/ttower44, navar_city/mlab/ttower45,
+	  navar_city/mlab/ttower8, navar_city/mlab/ttower9,
+	  navar_city/mlab/ttowerchoswld1, navar_city/mlab/zealothouse2,
+	  navar_city/mlab/zealothouseb1: Map header updates: Update maps
+	  with entrance x & y coordinates, adjust map level difficulty to
+	  something slightly more realistic
+
+2008-09-21 04:12  rjtanner
+
+	* navar_city/misc/aliscave, navar_city/misc/aliswell,
+	  navar_city/misc/bowyer, navar_city/misc/buildshop,
+	  navar_city/misc/city1armour, navar_city/misc/city1bank,
+	  navar_city/misc/city1mermaid, navar_city/misc/city1smith,
+	  navar_city/misc/city1weapon, navar_city/misc/dragon_guild,
+	  navar_city/misc/midane, navar_city/misc/navarwiz,
+	  navar_city/misc/theater, navar_city/misc/theater2,
+	  navar_city/misc/theater3, navar_city/misc/theater4,
+	  navar_city/misc/theaterb1, navar_city/misc/theaterb2,
+	  navar_city/misc/theaterb3, navar_city/misc/theaterb4: Map header
+	  updates: Update maps with entrance x & y coordinates, adjust map
+	  level difficulty to something slightly more realistic, add navar
+	  as the region where necessary
+
+2008-09-21 04:09  rjtanner
+
+	* navar_city/magara/houses/family_house,
+	  navar_city/magara/houses/kaisas_place,
+	  navar_city/magara/houses/large_house,
+	  navar_city/magara/houses/museum: Map header updates: Correct
+	  creation date in map header that was changed in r7448, it was
+	  using the wrong month; Update maps with entrance x & y
+	  coordinates, adjust map level difficulty to something slightly
+	  more realistic
+
+2008-09-21 00:40  rjtanner
+
+	* navar_city/apartments/apartment,
+	  navar_city/apartments/apartment_attic,
+	  navar_city/apartments/apartment_basement,
+	  navar_city/casino_infernal/casino_infernal2,
+	  navar_city/dragon_hangar/hangar, navar_city/illusion/illexit,
+	  navar_city/illusion/illtow1, navar_city/illusion/illtow2,
+	  navar_city/illusion/illtow3, navar_city/illusion/illtow4,
+	  navar_city/illusion/illtow5, navar_city/illusion/illtow6,
+	  navar_city/illusion/illtow7, navar_city/light/light0,
+	  navar_city/light/light1, navar_city/light/light2,
+	  navar_city/light/light3, navar_city/light/light4,
+	  navar_city/light/smugship, navar_city/light/smugship1: Map header
+	  updates: Update maps with entrance x & y coordinates, adjust map
+	  level difficulty to something slightly more realistic
+
+2008-09-21 00:38  rjtanner
+
+	* navar_city/magara/houses/earth_house: Map header updates: Correct
+	  creation date in map header that was changed in r7448, it was
+	  using the wrong month; Update maps with entrance x & y
+	  coordinates, adjust map level difficulty to something slightly
+	  more realistic
+
+2008-09-21 00:38  rjtanner
+
+	* navar_city/jail/jail, navar_city/jail/jail2,
+	  navar_city/jail/jail3: Map header updates: Correct creation date
+	  in map header that was changed in r7448, it was using the wrong
+	  month; Update maps with entrance x & y coordinates, adjust map
+	  level difficulty to something slightly more realistic
+
+2008-09-20 23:51  rjtanner
+
+	* planes/IPO_storage, planes/greenway1, planes/greenway2,
+	  planes/greenway3, planes/greenway4, planes/greenway5,
+	  planes/greenway6, planes/greenway7, planes/greenway8,
+	  planes/greenway9, planes/purpleworm, planes/sorrow_ruin: Map
+	  header updates: Update maps with entrance x & y coordinates,
+	  adjust map level difficulty to something slightly more realistic
+
+2008-09-20 22:18  rjtanner
+
+	* marksel/cellar, marksel/church, marksel/grumms_inn,
+	  marksel/grumms_inn2, marksel/keep, marksel/mines, marksel/shop,
+	  marksel/wizard: Set region to wilderness
+
+2008-09-20 22:15  rjtanner
+
+	* marksel/cellar, marksel/church, marksel/grumms_inn,
+	  marksel/grumms_inn2, marksel/keep, marksel/mines, marksel/shop,
+	  marksel/wizard: Map header updates: Correct creation date in map
+	  header that was changed in r7448, it was using the wrong month;
+	  Update maps with entrance x & y coordinates, adjust map level
+	  difficulty to something slightly more realistic
+
+2008-09-20 22:03  rjtanner
+
+	* lake_country/Mwizard/Mwizard0, lake_country/Mwizard/Mwizard1,
+	  lake_country/Mwizard/Mwizard2, lake_country/Mwizard/Mwizard3,
+	  lake_country/Mwizard/Mwizard4, lake_country/Mwizard/Mwizard5,
+	  lake_country/Mwizard/Mwizard6, lake_country/Mwizard/MwizardD,
+	  lake_country/Mwizard/MwizardG, lake_country/Mwizard/MwizardT,
+	  lake_country/Sunset_Lake/gatehouse, lake_country/ebony/entrance1,
+	  lake_country/ebony/entrance2, lake_country/marsh/marsh1_1,
+	  lake_country/marsh/marsh1_2, lake_country/marsh/marsh2_1,
+	  lake_country/marsh/marsh2_2, lake_country/sentrio_farmhouse,
+	  lake_country/shops/Mopoon_wshop, lake_country/shops/Olds_jewel,
+	  lake_country/shops/clems_archery,
+	  lake_country/shops/klondors_wands,
+	  lake_country/small_buildings/LC_inn1,
+	  lake_country/small_buildings/burial_ground,
+	  lake_country/small_buildings/hut_Galmorus,
+	  lake_country/small_buildings/oak_twak1,
+	  lake_country/small_buildings/portal,
+	  lake_country/small_buildings/sentrio_house,
+	  lake_country/snake_pit/Chaos_lair1,
+	  lake_country/snake_pit/Chaos_lair2,
+	  lake_country/snake_pit/Chaos_lair3,
+	  lake_country/snake_pit/Chaos_lair4,
+	  lake_country/snake_pit/Takuse_lair, lake_country/snake_pit/pit,
+	  lake_country/snake_pit/snakepit_1,
+	  lake_country/snake_pit/snakepit_2,
+	  lake_country/snake_pit/snakepit_3,
+	  lake_country/snake_pit/snakepit_4,
+	  lake_country/snake_pit/snakepit_5: Map header updates: Correct
+	  creation date in map header that was changed in r7448, it was
+	  using the wrong month; Update maps with entrance x & y
+	  coordinates, adjust map level difficulty to something slightly
+	  more realistic
+
+2008-09-20 20:52  rjtanner
+
+	* lake_country/elven_moon/elvenmoon.1,
+	  lake_country/elven_moon/elvenmoon.2,
+	  lake_country/elven_moon/elvenmoon.3,
+	  lake_country/elven_moon/elvenmoon.4,
+	  lake_country/elven_moon/elvenmoon.5,
+	  lake_country/elven_moon/elvenmoon.6,
+	  lake_country/elven_moon/elvenmoon.7,
+	  lake_country/elven_moon/elvenmoon.8,
+	  lake_country/elven_moon/elvenmoon.9: Map header updates: Update
+	  maps with entrance x & y coordinates, adjust map level difficulty
+	  to something slightly more realistic, add lakecountry as the
+	  region, added info for original map author with time stamp
+
+2008-09-20 07:00  rjtanner
+
+	* lake_country/Butakis/Wist_study, lake_country/DA,
+	  lake_country/RETower/tower0, lake_country/RETower/tower1,
+	  lake_country/RETower/tower2, lake_country/RETower/tower3,
+	  lake_country/RETower/tower4, lake_country/RETower/tower5,
+	  lake_country/Sunset_Lake/fortress, lake_country/Sunset_Lake/inn,
+	  lake_country/dragon_hangar/hangar: Map header updates: Correct
+	  creation date in map header that was changed in r7448, it was
+	  using the wrong month; Update maps with entrance x & y
+	  coordinates, adjust map level difficulty to something slightly
+	  more realistic
+
+2008-09-20 00:07  rjtanner
+
+	* lake_country/Butakis/B_gshop, lake_country/Butakis/B_wshop,
+	  lake_country/Butakis/Butakis0, lake_country/Butakis/Rlib1,
+	  lake_country/Butakis/Rlib2, lake_country/Butakis/Wist_portal,
+	  lake_country/Butakis/alchemist, lake_country/Butakis/arena,
+	  lake_country/Butakis/blacksmith, lake_country/Butakis/church-1,
+	  lake_country/Butakis/church0, lake_country/Butakis/church1,
+	  lake_country/Butakis/gate_inner, lake_country/Butakis/gate_outer,
+	  lake_country/Butakis/houses/Bobs_house,
+	  lake_country/Butakis/houses/Jacks_house,
+	  lake_country/Butakis/houses/Jacobs_house,
+	  lake_country/Butakis/houses/James_house,
+	  lake_country/Butakis/houses/Sams_house,
+	  lake_country/Butakis/houses/Seans_house,
+	  lake_country/Butakis/inn, lake_country/Butakis/luck1,
+	  lake_country/Butakis/luck2, lake_country/Butakis/luck3,
+	  lake_country/Butakis/p_ghouse_s, lake_country/Butakis/p_ghouse_w,
+	  lake_country/Butakis/prison-1, lake_country/Butakis/prison0,
+	  lake_country/Butakis/prison1, lake_country/Butakis/prison_e,
+	  lake_country/Butakis/prison_n, lake_country/Butakis/prison_s,
+	  lake_country/Butakis/prison_w: Map header updates: Correct
+	  creation date in map header that was changed in r7448, it was
+	  using the wrong month; Update maps with entrance x & y
+	  coordinates, adjust map level difficulty to something slightly
+	  more realistic
+
+2008-09-19 00:11  rjtanner
+
+	* inn_and_outpost/nirlas_house: Insert blocked walls in empty area
+	  of the map
+
+2008-09-19 00:10  rjtanner
+
+	* inn_and_outpost/hermes_inn, inn_and_outpost/hermes_inn2,
+	  inn_and_outpost/nirlas_house, inn_and_outpost/outpost_aranor1,
+	  inn_and_outpost/pypers_treehouse, inn_and_outpost/sweets_inn,
+	  inn_and_outpost/sweets_inn2, inn_and_outpost/treehouse_df1,
+	  inn_and_outpost/treehouse_df2, inn_and_outpost/treehouse_df3,
+	  inn_and_outpost/treehouse_df4, inn_and_outpost/treehouse_df5,
+	  inn_and_outpost/treehouse_df6: Map header updates: Update maps
+	  with entrance x & y coordinates, adjust map level difficulty to
+	  something slightly more realistic, added region wilderness
+
+2008-09-18 00:47  rjtanner
+
+	* euthville/hallofbones, euthville/map.fr.3: Insert blocked walls
+	  in empty area of the map
+
+2008-09-18 00:42  rjtanner
+
+	* euthville/wiz1, euthville/wiz7: Cosmetic changes to walls for
+	  nicer merging with nearby walls
+
+2008-09-18 00:39  rjtanner
+
+	* euthville/boulder_inferno, euthville/demon_quest,
+	  euthville/devil.church1, euthville/devil.church2,
+	  euthville/devil.church3, euthville/devil.church4,
+	  euthville/devil.church5, euthville/hallofbones,
+	  euthville/map.fr.0, euthville/map.fr.1, euthville/map.fr.2,
+	  euthville/map.fr.3, euthville/wiz1, euthville/wiz2,
+	  euthville/wiz3, euthville/wiz4, euthville/wiz5, euthville/wiz6,
+	  euthville/wiz7: Map header updates: Correct creation date in map
+	  header that was changed in r7448, it was using the wrong month;
+	  Update maps with entrance x & y coordinates, adjust map level
+	  difficulty to something slightly more realistic
+
+2008-09-18 00:21  rjtanner
+
+	* euthville/magic.shop: Cosmetic wall changes with how swall merges
+	  with nearby walls
+
+2008-09-18 00:20  rjtanner
+
+	* euthville/magic.shop: Map header updates: adjust map level
+	  difficulty to something slightly more realistic, added region
+	  euthville
+
+2008-09-17 23:45  rjtanner
+
+	* dungeons/trollbridge: Insert blocked walls in empty area of the
+	  map
+
+2008-09-17 23:43  rjtanner
+
+	* dungeons/trollbridge: Removed spoilers - signs removed and map
+	  title changed from Trollbridge to Stonebridge
+
+2008-09-17 23:38  rjtanner
+
+	* dungeons/barad_dur, dungeons/castle_aaaarg, dungeons/hole,
+	  dungeons/ruins, dungeons/trollbridge, dungeons/xyzzy-mines: Map
+	  header updates: Correct creation date in map header that was
+	  changed in r7448, it was using the wrong month; Update maps with
+	  entrance x & y coordinates, adjust map level difficulty to
+	  something slightly more realistic, added region wilderness
+
+2008-09-17 23:10  rjtanner
+
+	* dungeons/train/demon_train, dungeons/train/dragon_train,
+	  dungeons/train/gobl_zomb_train, dungeons/train/goblin,
+	  dungeons/train/humanoid_train, dungeons/train/ogre,
+	  dungeons/train/ogre_skel_train, dungeons/train/skeleton,
+	  dungeons/train/undead_train, dungeons/train/zombie: Map header
+	  updates: Updated map creator information, update maps with
+	  entrance x & y coordinates, adjust map level difficulty to
+	  something slightly more realistic
+
+2008-09-17 01:02  rjtanner
+
+	* dungeons/hut/ancient_hut, dungeons/hut/kjerring,
+	  dungeons/hut/watertunnel: Map header updates: Correct creation
+	  date in map header that was changed in r7448, it was using the
+	  wrong month; Update maps with entrance x & y coordinates, adjust
+	  map level difficulty to something slightly more realistic, added
+	  region wilderness
+
+2008-09-17 01:02  rjtanner
+
+	* dungeons/grukks/grukks.1, dungeons/grukks/grukks.2,
+	  dungeons/grukks/grukks.3, dungeons/grukks/grukks.4: Map header
+	  updates: Correct creation date in map header that was changed in
+	  r7448, it was using the wrong month; Update maps with entrance x
+	  & y coordinates, adjust map level difficulty to something
+	  slightly more realistic, added region wilderness
+
+2008-09-17 01:00  rjtanner
+
+	* dungeons/monkey_temple/m_temple1,
+	  dungeons/monkey_temple/m_temple2: Updates maps with region
+	  wilderness
+
+2008-09-16 02:08  rjtanner
+
+	* dragonisland/drowmansion, dragonisland/hangar,
+	  dragonisland/hangar2, dragonisland/hangar3, dragonisland/house1,
+	  dragonisland/house4, dragonisland/house5, dragonisland/house6,
+	  dragonisland/house7, dragonisland/house8, dragonisland/house9,
+	  dragonisland/housebrxzl, dragonisland/intwell,
+	  dragonisland/keysale, dragonisland/luxhouse, dragonisland/tavern,
+	  dragonisland/thievesden: Map header updates: Correct creation
+	  date in map header that was changed in r7448, it was using the
+	  wrong month; Update maps with entrance x & y coordinates, adjust
+	  map level difficulty to something slightly more realistic
+
+2008-09-15 01:21  rjtanner
+
+	* dragonisland/dragonmountain1: Remove trailing zeros on speed
+	  setting to Infyrana (special named red dragon) and also removed
+	  redundant 'resist_fire 30' since she was already resist_fire 100
+
+2008-09-15 01:13  rjtanner
+
+	* dragonisland/advguild2, dragonisland/advshop0,
+	  dragonisland/advshop1, dragonisland/advshop2,
+	  dragonisland/advshop3, dragonisland/advshop4,
+	  dragonisland/advshop5, dragonisland/advshop6,
+	  dragonisland/apartment2, dragonisland/apartment3,
+	  dragonisland/bloodwell, dragonisland/damarishouse0,
+	  dragonisland/damarishouse1, dragonisland/damarishouse2,
+	  dragonisland/dragonmountain0, dragonisland/dragonmountain1: Map
+	  header updates: Correct creation date in map header that was
+	  changed in r7448, it was using the wrong month; Update maps with
+	  entrance x & y coordinates, adjust map level difficulty to
+	  something slightly more realistic
+
+2008-09-15 00:05  rjtanner
+
+	* dragonisland/advguild3: Remove redundant 'resisit_physical 30'
+	  field on the training demon. Map header updates: Update maps with
+	  entrance x & y coordinates, adjust map level difficulty to
+	  something slightly more realistic
+
+2008-09-14 22:57  rjtanner
+
+	* dragonisland/advguild: Update maps with entrance x & y
+	  coordinates, adjust map level difficulty to something slightly
+	  more realistic
+
+2008-09-14 22:55  rjtanner
+
+	* dragonisland/advguild: Cosmetic fence changes for better merging
+	  with nearby walls
+
+2008-09-14 22:39  rjtanner
+
+	* darcap/undead/undead.2, darcap/undead/undead.3: Cosmetic touchup
+	  on the cave walls so they merge and blend together nicer
+
+2008-09-14 22:27  rjtanner
+
+	* darcap/undead/undead.2, darcap/undead/undead.3: Map header
+	  updates: Correct creation date in map header that was changed in
+	  r7448, it was using the wrong month; Update maps with entrance x
+	  & y coordinates, adjust map level difficulty to something
+	  slightly more realistic
+
+2008-09-14 22:22  rjtanner
+
+	* darcap/undead/undead.1: Map header updates: Recovered creation
+	  date from SVN archives, updated map with entrance x & y
+	  coordinates, adjust map level difficulty to something slightly
+	  more realistic
+
+2008-09-14 22:12  rjtanner
+
+	* darcap/town2/towers: Cosmetic wall changes so they merge nicer
+	  with nearby doors
+
+2008-09-14 22:09  rjtanner
+
+	* darcap/town2/tower3, darcap/town2/tower4: Added missing floor
+	  tiles underneath walls
+
+2008-09-14 22:07  rjtanner
+
+	* darcap/town2/tower2: Added 'blocked' walls to the unused spaces
+	  outside of dungeon walls
+
+2008-09-14 22:04  rjtanner
+
+	* darcap/town2/shop_b, darcap/town2/shop_f, darcap/town2/tower1,
+	  darcap/town2/tower2, darcap/town2/tower3, darcap/town2/tower4,
+	  darcap/town2/towers: Map header updates: Correct creation date in
+	  map header that was changed in r7448, it was using the wrong
+	  month; Update maps with entrance x & y coordinates, adjust map
+	  level difficulty to something slightly more realistic
+
+2008-09-14 21:49  rjtanner
+
+	* darcap/temple_justice/temple_justice.10,
+	  darcap/temple_justice/temple_justice.11,
+	  darcap/temple_justice/temple_justice.12,
+	  darcap/temple_justice/temple_justice.13,
+	  darcap/temple_justice/temple_justice.14,
+	  darcap/temple_justice/temple_justice.2,
+	  darcap/temple_justice/temple_justice.3,
+	  darcap/temple_justice/temple_justice.4,
+	  darcap/temple_justice/temple_justice.5,
+	  darcap/temple_justice/temple_justice.6,
+	  darcap/temple_justice/temple_justice.7,
+	  darcap/temple_justice/temple_justice.8,
+	  darcap/temple_justice/temple_justice.9: Added 'blocked' walls to
+	  the unused spaces outside of the tower walls
+
+2008-09-14 21:44  rjtanner
+
+	* darcap/temple_justice/temple_justice.1,
+	  darcap/temple_justice/temple_justice.10,
+	  darcap/temple_justice/temple_justice.11,
+	  darcap/temple_justice/temple_justice.12,
+	  darcap/temple_justice/temple_justice.13,
+	  darcap/temple_justice/temple_justice.14,
+	  darcap/temple_justice/temple_justice.2,
+	  darcap/temple_justice/temple_justice.3,
+	  darcap/temple_justice/temple_justice.4,
+	  darcap/temple_justice/temple_justice.5,
+	  darcap/temple_justice/temple_justice.6,
+	  darcap/temple_justice/temple_justice.7,
+	  darcap/temple_justice/temple_justice.8,
+	  darcap/temple_justice/temple_justice.9: Map header updates:
+	  Update maps with entrance x & y coordinates, adjust map level
+	  difficulty to something slightly more realistic, added darcap as
+	  the region, added info for original map author with time stamp
+
+2008-09-14 21:15  rjtanner
+
+	* darcap/raffle/raffle1, darcap/raffle/raffle1_u1,
+	  darcap/raffle/raffle1_u2, darcap/raffle/raffle1_u3: Map header
+	  updates: Update maps with entrance x & y coordinates, adjust map
+	  level difficulty to something slightly more realistic
+
+2008-09-14 21:03  rjtanner
+
+	* darcap/quest/water: Cosmetic wall changes and monster location
+	  rearrangement
+
+2008-09-14 20:55  rjtanner
+
+	* darcap/quest/fire, darcap/quest/water: Adjust map level
+	  difficulty to something hopefully more realistic
+
+2008-09-14 06:43  rjtanner
+
+	* darcap/lynn/castle1.0, darcap/lynn/castle1.1,
+	  darcap/lynn/castle1.2, darcap/lynn/castle1.3: Map header updates:
+	  Correct creation date in map header that was changed in r7448, it
+	  was using the wrong month; Update maps with entrance x & y
+	  coordinates, adjust map level difficulty to something slightly
+	  more realistic
+
+2008-09-14 06:26  rjtanner
+
+	* darcap/village1: Updated map with corrected x & y coordinates,
+	  adjust map level difficulty to something slightly more realistic
+
+2008-09-14 06:22  rjtanner
+
+	* darcap/house1: Map header updates: Correct creation date in map
+	  header that was changed in r7448, it was using the wrong month;
+	  Update maps with entrance x & y coordinates, adjust map level
+	  difficulty to something slightly more realistic
+
+2008-09-14 06:17  rjtanner
+
+	* darcap/darcap/temple: Cosmetic fence update
+
+2008-09-14 06:16  rjtanner
+
+	* darcap/darcap/temple: Updated map with entrance x & y coordinates
+
+2008-09-14 05:55  rjtanner
+
+	* darcap/darcap/shop_w: Map header updates: Correct creation date
+	  in map header that was changed in r7448, it was using the wrong
+	  month; Update maps with entrance x & y coordinates, adjust map
+	  level difficulty to something slightly more realistic
+
+2008-09-14 05:54  rjtanner
+
+	* darcap/darcap/shop_m: Update maps with entrance x & y
+	  coordinates, adjust map level difficulty to something slightly
+	  more realistic
+
+2008-09-14 05:52  rjtanner
+
+	* darcap/darcap/shop_g: Update maps with entrance x & y
+	  coordinates, adjust map level difficulty to something slightly
+	  more realistic
+
+2008-09-14 05:50  rjtanner
+
+	* darcap/darcap/shop_a: Map header updates: Correct creation date
+	  in map header that was changed in r7448, it was using the wrong
+	  month; Update maps with entrance x & y coordinates, adjust map
+	  level difficulty to something slightly more realistic
+
+2008-09-14 05:47  rjtanner
+
+	* darcap/darcap/quest: Correct creation date in map header that was
+	  changed in r7448, it was using the wrong month
+
+2008-09-14 01:57  rjtanner
+
+	* darcap/darcap/houses: houses map replaced by airhouse,
+	  earthhouse, firehouse and waterhouse maps
+
+2008-09-14 01:54  rjtanner
+
+	* darcap/darcap/airhouse, darcap/darcap/earthhouse,
+	  darcap/darcap/firehouse, darcap/darcap/waterhouse,
+	  world/world_116_102: Re-designed (elemental) houses map; now each
+	  elemental house is a standalone map vs all of them being in the
+	  same map divided by walls. Also updated the world map for Darcap
+	  to use the new house maps.
+
+2008-09-14 00:21  rjtanner
+
+	* darcap/darcap/gshop: Adjust map level difficulty to something
+	  hopefully more realistic, cosmetic fence changes for better
+	  merging with nearby walls
+
+2008-09-14 00:17  rjtanner
+
+	* darcap/darcap/church: Cosmetic wall changes for better merging
+	  with adjacent doors and fences
+
+2008-09-14 00:13  rjtanner
+
+	* darcap/darcap/church: Adjust map level difficulty to something
+	  hopefully more realistic
+
+2008-09-14 00:05  rjtanner
+
+	* darcap/cave/level4: Updated map with entrance x & y coordinates,
+	  adjust map level difficulty to something hopefully more realistic
+
+2008-09-14 00:04  rjtanner
+
+	* darcap/cave/level4: Added missing floor tiles underneath walls -
+	  missed a section in the previous commit
+
+2008-09-14 00:01  rjtanner
+
+	* darcap/cave/level4: Added missing floor tiles underneath walls
+
+2008-09-13 23:42  rjtanner
+
+	* darcap/cave/level3: Updated map with entrance x & y coordinates,
+	  adjust map level difficulty to something hopefully more realistic
+
+2008-09-13 23:39  rjtanner
+
+	* darcap/cave/level3: Added missing floor tiles underneath walls
+
+2008-09-13 00:58  rjtanner
+
+	* darcap/cave/level2: Updated map with entrance x & y coordinates,
+	  adjust map level difficulty to something hopefully more realistic
+
+2008-09-13 00:57  rjtanner
+
+	* darcap/cave/level2: Added missing floor tiles - missed two rows
+	  in previous commit
+
+2008-09-13 00:55  rjtanner
+
+	* darcap/cave/level2: Added missing floor tiles
+
+2008-09-13 00:16  rjtanner
+
+	* darcap/cave/level1: Added missing floor tiles, adjusted map level
+	  difficulty to something hopefully more realistic
+
+2008-09-13 00:05  rjtanner
+
+	* darcap/cave/level1: Correct creation date in map header that was
+	  changed in r7448, it was using the wrong month
+
+2008-09-12 00:51  rjtanner
+
+	* brest/apartments/brest_town_house, brest/elec.jes,
+	  brest/info.2.zoon, brest/info_first, brest/jes.admini,
+	  brest/jes.admini.1, brest/ludo1, brest/ludo2, brest/nasty_house,
+	  brest/pantheon, brest/shops/buildshop, brest/shops/buildshop2,
+	  brest/sport.jess, brest/underground, brest/underground2: Map
+	  header updates: Correct creation date in map header that was
+	  changed in r7448, it was using the wrong month; Update maps with
+	  entrance x & y coordinates, adjust map level difficulty to
+	  something slightly more realistic
+
+2008-09-11 23:45  rjtanner
+
+	* brest/elec.jes: Correct creation date in map header that was
+	  changed in r7448, it was using the wrong month
+
+2008-09-11 23:45  rjtanner
+
+	* brest/brest.trademarket, brest/brest.weapon: Update maps with
+	  entrance x & y coordinates
+
+2008-09-11 00:53  rjtanner
+
+	* brest/brest.magic, brest/brest.scrolls,
+	  brest/brest.scrolls.right: Update maps with entrance x & y
+	  coordinates
+
+2008-09-11 00:52  rjtanner
+
+	* brest/brest.magic: Correct creation date in map header that was
+	  changed in r7448, it was using the wrong month
+
+2008-09-11 00:43  rjtanner
+
+	* brest/brest.inn: Correct creation date in map header that was
+	  changed in r7448, it was using the wrong month; also removed old
+	  info in the map header in regards to a past map edit
+
+2008-09-11 00:38  rjtanner
+
+	* brest/brest.armour, brest/brest.cvt, brest/brest.food: Update
+	  maps with entrance x & y coordinates
+
+2008-09-11 00:35  rjtanner
+
+	* brest/brest.food: Correct creation date in map header that was
+	  changed in r7448, it was using the wrong month
+
+2008-09-11 00:29  rjtanner
+
+	* brest/asyvan/palace1, brest/asyvan/palace2, brest/asyvan/palace3:
+	  Convert absolute map exit/entrance paths to relative paths
+
+2008-09-11 00:20  rjtanner
+
+	* brest/asyvan/gate1, brest/asyvan/gate2, brest/asyvan/gate3,
+	  brest/asyvan/gate4, brest/asyvan/gate5, brest/asyvan/gate6,
+	  brest/asyvan/gate7, brest/asyvan/gate8, brest/asyvan/gate9,
+	  brest/asyvan/palace1, brest/asyvan/palace2, brest/asyvan/palace3:
+	  Update maps with entrance x & y coordinates, adjust map level
+	  difficulty to something hopefully more realistic
+
+2008-09-10 23:56  rjtanner
+
+	* brest/Castle/AcidChamber, brest/Castle/DragonRoom,
+	  brest/Castle/Finale, brest/Castle/LargeRoom, brest/Castle/castle:
+	  Update maps with entrance x & y coordinates, adjust map level
+	  difficulty to something slightly more realistic - level 20
+
+2008-09-10 23:45  rjtanner
+
+	* brest/Castle/AcidChamber, brest/Castle/DragonRoom,
+	  brest/Castle/Finale, brest/Castle/LargeRoom, brest/Castle/castle:
+	  Correct creation date in map header that was changed in r7448, it
+	  was using the wrong month
+
+2008-09-03 00:01  rjtanner
+
+	* quests/saromok/castlesaromok_towerf10: Adjust spell point
+	  regeneration to the personal guards, made it 100 instead of 5000
+
+2008-08-30 00:57  rjtanner
+
+	* marksel/wizard: Add missing shop header code to the Sages Tower
+	  (magic shop)
+
+2008-08-29 00:22  rjtanner
+
+	* inn_and_outpost/pypers_treehouse: Use 'nrof 0' property on the
+	  container barrel in this map so they do not stack. This is
+	  similar to the bug reported in [ 2018391 ] Zero-cap or capless
+	  containers, also stacking containers
+
+2008-08-27 00:10  rjtanner
+
+	* quests/saromok/castlesaromok_barracks4: Cosmetic wall changes
+	  with how swall merges with nearby walls
+
+2008-08-26 18:22  rjtanner
+
+	* quests/saromok/castlesaromok_top: Adjust spell casting capability
+	  of Saromok
+
+2008-08-26 18:20  rjtanner
+
+	* quests/saromok/castlesaromok_top: Add more lighting to make it
+	  easier to see what is in or the map at night
+
+2008-08-26 18:06  rjtanner
+
+	* quests/saromok/castlesaromok_ltl,
+	  quests/saromok/castlesaromok_ltr: Update bracers names to Magical
+	  Bracers, they should be consistent in name and properties now
+
+2008-08-26 18:02  rjtanner
+
+	* quests/saromok/castlesaromok_ltr: Update resistance value on the
+	  ice bracers to match resistance value of fire and electricity
+	  bracers
+
+2008-08-26 17:54  rjtanner
+
+	* quests/saromok/castlesaromok_barracks2: Cosmetic wall changes
+	  with how swall merges with nearby walls
+
+2008-08-26 17:42  rjtanner
+
+	* quests/saromok/castlesaromok_barracks1,
+	  quests/saromok/castlesaromok_barracks2: Removed door graphics
+	  since they appear to cause problems with using the exit in some
+	  cases
+
+2008-08-26 00:25  rjtanner
+
+	* quests/saromok/castlesaromok_towerf9: Fix broken duplicators.
+	  Update monster resistances. Fix key teleporter.
+
+2008-08-26 00:23  rjtanner
+
+	* quests/saromok/castlesaromok_ltl,
+	  quests/saromok/castlesaromok_ltr: Fix broken duplicators
+
+2008-08-26 00:21  rjtanner
+
+	* quests/saromok/castlesaromok_top: Give final boss monster more
+	  spell points as further testing showed he ran out of them too
+	  quickly. Fix broken duplicator and treasure items.
+
+2008-08-25 21:43  rjtanner
+
+	* ChangeLog: Updated ChangeLog file using svn2cl
+
 2008-08-22 20:52  rjtanner
 
 	* quests/saromok/castlesaromok_barracks1,
