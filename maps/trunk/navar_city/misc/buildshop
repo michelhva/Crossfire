@@ -1,6 +1,6 @@
 arch map
 name Ye ol' Home Depote
-difficulty 1
+difficulty 5
 region navar
 shopitems building material:95;item builder:95;*:-100
 shopgreed 1.00000
@@ -9,10 +9,11 @@ shopmax 20000
 shoprace human
 width 23
 height 13
-enter_x 17
-enter_y 19
+enter_x 6
+enter_y 11
 msg
 Created:  2004-01-25 Ryo Saeba
+Modified: 2008-09-20 Rick Tanner
 endmsg
 end
 arch tile_white_floor
