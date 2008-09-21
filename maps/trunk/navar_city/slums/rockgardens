@@ -1,5 +1,6 @@
 arch map
 name Rock Gardens
+difficulty 10
 region navar
 width 50
 height 50
@@ -7,6 +8,7 @@ enter_x 11
 enter_y 2
 msg
 Created:  2003-10-10 Avion
+Modified: 2008-09-21 Rick Tanner
 endmsg
 end
 arch invis_exit
