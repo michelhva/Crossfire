@@ -1,11 +1,14 @@
 arch map
 name Church of Gabriel
-difficulty 1
+difficulty 8
 region portjoseph
 width 16
 height 16
+enter_x 3
+enter_y 14
 msg
 Created:  1994-05-20 larry langley (langley@fermat.dartmouth.edu)
+Modified: 2008-09-21 Rick Tanner
 endmsg
 end
 arch cobblestones

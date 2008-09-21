@@ -1,12 +1,15 @@
 arch map
 name Moogly Bill's Grave
-difficulty 1
+difficulty 12
 region portjoseph
 darkness 5
 width 27
 height 16
+enter_x 4
+enter_y 10
 msg
 Created:  1994-05-31 langley (langley@fermat.dartmouth.edu)
+Modified: 2008-09-21 Rick Tanner
 endmsg
 end
 arch dungeon_floor

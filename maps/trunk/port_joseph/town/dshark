@@ -1,12 +1,14 @@
 arch map
 name The Drunken Shark
-difficulty 1
+difficulty 8
 region portjoseph
 width 18
 height 14
+enter_x 16
+enter_y 6
 msg
 Created:  1994-05-17 langley (langley@fermat.dartmouth.edu)
-Modified: 2008-05-23 Arvid Norlander
+Modified: 2008-09-21 Rick Tanner
 endmsg
 end
 arch brush

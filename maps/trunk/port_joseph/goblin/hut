@@ -1,11 +1,14 @@
 arch map
 name Orc Hut
-difficulty 1
+difficulty 6
 region portjoseph
 width 12
 height 12
+enter_x 4
+enter_y 10
 msg
 Created:  1994-07-22 langley (langley@fermat.dartmouth.edu)
+Modified: 2008-09-21 Rick Tanner
 endmsg
 end
 arch woodfloor

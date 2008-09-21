@@ -1,12 +1,14 @@
 arch map
 name Pirate Beach
-difficulty 1
+difficulty 9
 region portjoseph
 width 25
 height 30
+enter_x 3
+enter_y 27
 msg
 Created:  1994-05-27 langley (langley@fermat.dartmouth.edu)
-Modified: 2007-11-04 Andreas Kirschbaum
+Modified: 2008-09-21 Rick Tanner
 endmsg
 end
 arch cobblestones2

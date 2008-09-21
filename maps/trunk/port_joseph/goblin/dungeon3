@@ -1,13 +1,15 @@
 arch map
 name Goblin Dungeon
-difficulty 1
+difficulty 11
 region portjoseph
 darkness 5
 width 24
 height 24
+enter_x 13
+enter_y 12
 msg
 Created:  1994-09-03 langley (langley@fermat.dartmouth.edu)
-Modified: 2007-11-04 Andreas Kirschbaum
+Modified: 2008-09-21 Rick Tanner
 endmsg
 end
 arch dungeon_floor
