@@ -1,15 +1,16 @@
 arch map
 name Western Navar Tavern
 reset_timeout 7200
-difficulty 1
+difficulty 20
 region navar
 darkness 4
 width 60
 height 40
-enter_x 1
-enter_y 1
+enter_x 30
+enter_y 7
 msg
 Created:  2002-02-20 mikeeusa
+Modified: 2008-09-21 Rick Tanner
 endmsg
 end
 arch blocked

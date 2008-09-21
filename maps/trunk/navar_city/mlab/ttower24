@@ -1,15 +1,15 @@
 arch map
 name Western Navar Tower
 reset_timeout 7200
-difficulty 1
+difficulty 75
 region navar
 width 25
 height 25
-enter_x 1
-enter_y 1
+enter_x 12
+enter_y 3
 msg
 Created:  2002-02-25 mikeeusa
-Modified: 2008-05-29 Arvid Norlander
+Modified: 2008-09-21 Rick Tanner
 endmsg
 end
 arch stonefloor2
