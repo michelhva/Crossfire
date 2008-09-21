@@ -1,13 +1,15 @@
 arch map
 name Lighthouse
-difficulty 1
+difficulty 10
 region navar
 darkness 4
 width 15
 height 15
+enter_x 13
+enter_y 13
 msg
 Created:  1993-11-12
-Modified: 2008-05-30 Andreas Kirschbaum
+Modified: 2008-09-20 Rick Tanner
 endmsg
 end
 arch cobblestones2
