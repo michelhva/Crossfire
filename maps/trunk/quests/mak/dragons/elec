@@ -1,10 +1,13 @@
 arch map
 name Electric Dragons' Lair
-difficulty 1
+difficulty 25
 width 28
 height 27
+enter_x 15
+enter_y 13
 msg
 Created:  2000-04-13 Magnus Kronhamn (mak@solace.mh.se)
+Modified: 2008-09-21 Rick Tanner
 endmsg
 end
 arch grate_open_1

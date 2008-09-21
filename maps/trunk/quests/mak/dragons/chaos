@@ -1,10 +1,13 @@
 arch map
 name Chaos Dragons' Lair
-difficulty 15
+difficulty 25
 width 31
 height 35
+enter_x 6
+enter_y 33
 msg
 Created:  2000-04-13 Magnus Kronhamn (mak@solace.mh.se)
+Modified: 2008-09-21 Rick Tanner
 endmsg
 end
 arch dungeon_floor

@@ -1,10 +1,13 @@
 arch map
 name Unnatural Mosh Pit
-difficulty 1
+difficulty 30
 width 32
 height 26
+enter_x 2
+enter_y 2
 msg
 Created:  2000-04-13 Magnus Kronhamn (mak@solace.mh.se)
+Modified: 2008-09-21 Rick Tanner
 endmsg
 end
 arch cobblestones

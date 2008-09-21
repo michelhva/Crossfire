@@ -1,10 +1,13 @@
 arch map
 name Graveyard
-difficulty 5
+difficulty 10
 width 18
 height 17
+enter_x 8
+enter_y 15
 msg
 Created:  2000-04-13 Magnus Kronhamn (mak@solace.mh.se)
+Modified: 2008-09-21 Rick Tanner
 endmsg
 end
 arch brush

@@ -1,10 +1,12 @@
 arch map
 name Giants Main Floor
-difficulty 1
+difficulty 20
 width 32
 height 27
+enter_x 15
 msg
 Created:  2000-04-13 Magnus Kronhamn (mak@solace.mh.se)
+Modified: 2008-09-21 Rick Tanner
 endmsg
 end
 arch cobblestones
