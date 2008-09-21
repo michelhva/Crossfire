@@ -1,11 +1,14 @@
 arch map
 name Warehouse #4
-difficulty 1
+difficulty 3
 region navar
 width 30
 height 16
+enter_x 27
+enter_y 15
 msg
 Created:  1993-11-12
+Modified: 2008-09-21 Rick Tanner
 endmsg
 end
 arch woodfloor
