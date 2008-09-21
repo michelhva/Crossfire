@@ -1,12 +1,14 @@
 arch map
 name A Large house
-difficulty 1
+difficulty 25
 region navar
 width 50
 height 50
+enter_x 1
+enter_y 1
 msg
-Created:  1994-02-11
-Modified: 2007-11-04 Andreas Kirschbaum
+Created:  1994-10-11
+Modified: 2008-09-20 Rick Tanner
 endmsg
 end
 arch small_stones
