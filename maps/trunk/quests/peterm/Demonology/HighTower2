@@ -1,10 +1,13 @@
 arch map
 name Tower of Demonology High Tower
-difficulty 1
+difficulty 35
 width 12
 height 12
+enter_x 6
+enter_y 5
 msg
 Created:  1994-05-30 PeterM (peterm@soda.berkeley.edu)
+Modified: 2008-09-21 Rick Tanner
 endmsg
 end
 arch woodfloor
