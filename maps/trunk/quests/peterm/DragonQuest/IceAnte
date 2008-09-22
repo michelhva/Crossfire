@@ -1,12 +1,14 @@
 arch map
 name Ice Anteroom
-difficulty 1
+difficulty 25
 darkness 5
 width 30
 height 16
+enter_x 2
+enter_y 11
 msg
 Created:  1994-08-20 peterm (peterm@soda.csua.berkeley.edu)
-Modified: 2008-06-06 Arvid Norlander
+Modified: 2008-09-21 Rick Tanner
 endmsg
 end
 arch blocked

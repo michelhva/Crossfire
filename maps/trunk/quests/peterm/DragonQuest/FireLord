@@ -1,12 +1,14 @@
 arch map
 name Dragon Fire Lord
-difficulty 1
+difficulty 30
 darkness 5
 width 16
 height 31
+enter_x 3
+enter_y 26
 msg
 Created:  1994-08-19 peterm (peterm@soda.csua.berkeley.edu)
-Modified: 2008-06-06 Arvid Norlander
+Modified: 2008-09-21 Rick Tanner
 endmsg
 end
 arch blocked
