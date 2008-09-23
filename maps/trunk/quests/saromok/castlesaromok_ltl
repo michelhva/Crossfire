@@ -973,7 +973,7 @@ name Gloves
 name_pl Gloves
 title of Fire
 msg
-Dark gloves worn by the Electricity Master.
+Dark gloves worn by the Fire Master.
 endmsg
 resist_physical 0
 resist_fire 30
@@ -985,6 +985,9 @@ arch bracers_ac
 name Magic Bracers
 name_pl Magic Bracers
 title of Fire
+msg
+Bracers worn by the Fire Master.
+endmsg
 Pow 1
 Int 1
 sp 1
