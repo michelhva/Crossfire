@@ -962,6 +962,12 @@ connected 4
 move_on all
 move_off all
 end
+arch duplicator
+other_arch creator
+x 6
+y 6
+connected 99
+end
 arch creator
 x 6
 y 6
@@ -1175,6 +1181,12 @@ y 2
 connected 3
 move_on all
 move_off all
+end
+arch duplicator
+other_arch creator
+x 7
+y 2
+connected 99
 end
 arch creator
 x 7
@@ -1404,6 +1416,12 @@ no_pick 1
 end
 arch duplicator
 other_arch merchant
+x 7
+y 10
+connected 99
+end
+arch duplicator
+other_arch creator
 x 7
 y 10
 connected 99
@@ -1640,6 +1658,12 @@ y 6
 connected 3
 move_on all
 move_off all
+end
+arch duplicator
+other_arch creator
+x 8
+y 6
+connected 99
 end
 arch creator
 x 8
@@ -2798,6 +2822,11 @@ x 16
 last_sp 1
 connected 11
 end
+arch duplicator
+other_arch creator
+x 16
+connected 99
+end
 arch creator
 x 16
 connected 1
@@ -2820,6 +2849,12 @@ x 16
 y 2
 last_sp 1
 connected 12
+end
+arch duplicator
+other_arch creator
+x 16
+y 2
+connected 99
 end
 arch creator
 x 16
@@ -2845,6 +2880,12 @@ y 4
 last_sp 1
 connected 13
 end
+arch duplicator
+other_arch creator
+x 16
+y 4
+connected 99
+end
 arch creator
 x 16
 y 4
@@ -2868,6 +2909,12 @@ x 16
 y 6
 last_sp 1
 connected 14
+end
+arch duplicator
+other_arch creator
+x 16
+y 6
+connected 99
 end
 arch creator
 x 16
