@@ -8,7 +8,7 @@ enter_x 7
 enter_y 13
 msg
 Created:  2008-08-13 Chad Opperman | cromagic@sbcglobal.net
-Modified: 2008-08-22 Rick Tanner
+Modified: 2008-09-20 Chad Opperman | cromagic@sbcglobal.net
 endmsg
 end
 arch stonefloor2
@@ -588,6 +588,19 @@ end
 arch redcwall_1_3
 x 6
 y 14
+end
+arch bulletwall
+name Daylight
+face stfloor.111
+dam 160
+x 7
+level 110
+invisible 1
+move_block 0
+blocksview 0
+no_damage 1
+arch spell_daylight
+end
 end
 arch stonefloor2
 x 7
