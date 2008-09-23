@@ -569,7 +569,7 @@ name Towering Golem
 msg
 SMMAASHH!
 endmsg
-Con 1
+Con 0
 Wis 50
 Int 100
 hp 30000
@@ -584,23 +584,23 @@ speed -0.2
 level 200
 attacktype 1
 resist_physical 100
-resist_magic 95
-resist_fire 95
-resist_electricity 95
-resist_cold 95
+resist_magic 90
+resist_fire 90
+resist_electricity 90
+resist_cold 90
 resist_confusion 100
-resist_acid 95
+resist_acid 90
 resist_drain 100
-resist_weaponmagic 95
-resist_ghosthit 95
+resist_weaponmagic 90
+resist_ghosthit 90
 resist_poison 100
 resist_slow 100
 resist_paralyze 100
 resist_turn_undead 100
 resist_deplete 100
 resist_death 100
-resist_chaos 95
-resist_godpower 99
+resist_chaos 90
+resist_godpower 90
 resist_holyword 100
 resist_blind 100
 randomitems none
