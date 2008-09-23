@@ -1,10 +1,13 @@
 arch map
 name Fire Temple - First Floor
-difficulty 1
+difficulty 20
 width 30
 height 30
+enter_x 28
+enter_y 7
 msg
-Created:  1997-02-17
+Created:  1997-04-17 Peter Mardahl (peterm@soda.csua.berkeley.edu)
+Modified: 2008-09-22 Rick Tanner
 endmsg
 end
 arch cobblestones2
