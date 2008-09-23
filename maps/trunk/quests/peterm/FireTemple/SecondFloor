@@ -1,10 +1,13 @@
 arch map
 name Fire Temple -- Second Floor
-difficulty 1
+difficulty 20
 width 30
 height 31
+enter_x 8
+enter_y 9
 msg
-Created:  1997-02-20
+Created:  1997-04-20 Peter Mardahl (peterm@soda.csua.berkeley.edu)
+Modified: 2008-09-22 Rick Tanner
 endmsg
 end
 arch cobblestones2

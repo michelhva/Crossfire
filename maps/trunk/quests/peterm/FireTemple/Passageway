@@ -1,12 +1,14 @@
 arch map
 name Fire Temple -- Passageway
-difficulty 1
+difficulty 8
 darkness 5
 width 60
 height 9
+enter_x 6
+enter_y 5
 msg
-Created:  1997-02-24
-Modified: 2008-06-06 Arvid Norlander
+Created:  1997-05-24 Peter Mardahl (peterm@soda.csua.berkeley.edu)
+Modified: 2008-09-22 Rick Tanner
 endmsg
 end
 arch pedestal_trigger

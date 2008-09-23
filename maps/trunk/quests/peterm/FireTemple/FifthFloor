@@ -1,10 +1,13 @@
 arch map
 name Fire Temple -- Fifth Floor
-difficulty 1
+difficulty 60
 width 40
 height 40
+enter_x 12
+enter_y 9
 msg
 Created:  1997-05-23 PeterM (peterm@soda.csua.berkeley.edu)
+Modified: 2008-09-22 Rick Tanner
 endmsg
 end
 arch cobblestones

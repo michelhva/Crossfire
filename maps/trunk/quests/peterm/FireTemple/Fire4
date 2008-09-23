@@ -1,11 +1,13 @@
 arch map
 name Fire Temple
-difficulty 1
+difficulty 60
 width 40
 height 32
+enter_x 1
+enter_y 14
 msg
 Created:  1997-06-07 PeterM (peterm@soda.csua.berkeley.edu)
-Modified: 2007-11-04 Andreas Kirschbaum
+Modified: 2008-09-22 Rick Tanner
 endmsg
 end
 arch pstone_1
@@ -2322,9 +2324,7 @@ resist_drain 100
 resist_weaponmagic 100
 resist_ghosthit 100
 resist_slow 30
-resist_paralyze 100
 resist_turn_undead 100
-resist_fear 100
 resist_cancellation 100
 resist_deplete 100
 resist_death 100
@@ -2332,7 +2332,6 @@ resist_chaos 100
 resist_counterspell 100
 resist_godpower 100
 resist_holyword 100
-resist_blind 100
 reflect_spell 1
 can_use_bow 0
 can_use_armour 0
