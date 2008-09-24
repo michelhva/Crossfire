@@ -1,8 +1,10 @@
 arch map
 name Maze
-difficulty 1
+difficulty 30
 width 40
 height 40
+enter_x 12
+enter_y 6
 msg
 You have entered a rather dark area.
 You can here the clanking of metal
@@ -10,6 +12,7 @@ on metal. It is coming from one of
 the many passages in this maze. A
 Maze in which, a wrong turn could
 be fatal.
+Modified: 2008-09-23 Rick Tanner
 endmsg
 end
 arch marble
