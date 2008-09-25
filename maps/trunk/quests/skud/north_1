@@ -7,7 +7,7 @@ enter_x 15
 enter_y 38
 msg
 Created:  1993-11-16 Skud the Great (tvangod@ecst.csuchico.edu)
-Modified: 2008-09-23 Rick Tanner
+Modified: 2008-09-25 Arvid Norlander
 endmsg
 end
 arch marble
@@ -45,6 +45,11 @@ name ice
 face icestorm.111
 y 7
 end
+arch marble
+name ice
+face icestorm.111
+y 8
+end
 arch brefjell
 y 8
 end
@@ -77,6 +82,11 @@ arch marble
 name ice
 face icestorm.111
 y 14
+end
+arch marble
+name ice
+face icestorm.111
+y 15
 end
 arch brefjell
 y 15
@@ -130,6 +140,11 @@ arch marble
 name ice
 face icestorm.111
 y 25
+end
+arch marble
+name ice
+face icestorm.111
+y 26
 end
 arch brefjell
 y 26
@@ -305,6 +320,12 @@ face icestorm.111
 x 1
 y 14
 end
+arch marble
+name ice
+face icestorm.111
+x 1
+y 15
+end
 arch brefjell
 x 1
 y 15
@@ -336,6 +357,12 @@ name ice
 face icestorm.111
 x 1
 y 20
+end
+arch marble
+name ice
+face icestorm.111
+x 1
+y 21
 end
 arch brefjell
 x 1
@@ -454,6 +481,12 @@ name ice
 face icestorm.111
 x 2
 end
+arch marble
+name ice
+face icestorm.111
+x 2
+y 1
+end
 arch brefjell
 x 2
 y 1
@@ -469,6 +502,12 @@ name ice
 face icestorm.111
 x 2
 y 3
+end
+arch marble
+name ice
+face icestorm.111
+x 2
+y 4
 end
 arch brefjell
 x 2
@@ -589,6 +628,12 @@ name ice
 face icestorm.111
 x 2
 y 24
+end
+arch marble
+name ice
+face icestorm.111
+x 2
+y 25
 end
 arch brefjell
 x 2
@@ -1282,6 +1327,12 @@ face icestorm.111
 x 5
 y 1
 end
+arch marble
+name ice
+face icestorm.111
+x 5
+y 2
+end
 arch brefjell
 x 5
 y 2
@@ -1862,6 +1913,12 @@ face icestorm.111
 x 7
 y 1
 end
+arch marble
+name ice
+face icestorm.111
+x 7
+y 2
+end
 arch brefjell
 x 7
 y 2
@@ -1871,6 +1928,12 @@ name ice
 face icestorm.111
 x 7
 y 3
+end
+arch marble
+name ice
+face icestorm.111
+x 7
+y 4
 end
 arch brefjell
 x 7
