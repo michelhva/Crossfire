@@ -7,7 +7,7 @@ enter_x 19
 enter_y 39
 msg
 Created:  1993-11-13
-Modified: 2008-09-23 Rick Tanner
+Modified: 2008-09-25 Arvid Norlander
 endmsg
 end
 arch marble
@@ -705,6 +705,10 @@ speed 0.500000
 value 1
 connected 8
 end
+arch marble
+x 2
+y 38
+end
 arch lightningwall_t
 x 2
 y 38
@@ -1149,6 +1153,10 @@ speed 0.500000
 value 1
 connected 8
 end
+arch marble
+x 4
+y 38
+end
 arch lightningwall_1
 x 4
 y 38
@@ -1363,6 +1371,10 @@ y 37
 speed 0.500000
 value 1
 connected 8
+end
+arch marble
+x 5
+y 38
 end
 arch lightningwall_t
 x 5
@@ -1582,6 +1594,10 @@ y 37
 speed 0.500000
 value 1
 connected 8
+end
+arch marble
+x 6
+y 38
 end
 arch lightningwall_t
 x 6

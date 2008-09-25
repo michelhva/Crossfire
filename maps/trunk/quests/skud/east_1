@@ -6,7 +6,7 @@ height 30
 enter_y 5
 msg
 Created:  1993-11-18 Skud the Great (tvangod@ecst.csuchico.edu)
-Modified: 2008-09-23 Rick Tanner
+Modified: 2008-09-25 Arvid Norlander
 endmsg
 end
 arch marble
@@ -6293,6 +6293,12 @@ face icestorm.111
 x 32
 y 4
 end
+arch marble
+name ice
+face icestorm.111
+x 32
+y 5
+end
 arch brefjell
 x 32
 y 5
@@ -6465,6 +6471,12 @@ name ice
 face icestorm.111
 x 33
 y 1
+end
+arch marble
+name ice
+face icestorm.111
+x 33
+y 2
 end
 arch brefjell
 x 33
@@ -6668,6 +6680,12 @@ name ice
 face icestorm.111
 x 34
 y 4
+end
+arch marble
+name ice
+face icestorm.111
+x 34
+y 5
 end
 arch brefjell
 x 34
@@ -7238,6 +7256,12 @@ face icestorm.111
 x 37
 y 2
 end
+arch marble
+name ice
+face icestorm.111
+x 37
+y 3
+end
 arch brefjell
 x 37
 y 3
@@ -7257,6 +7281,12 @@ name ice
 face icestorm.111
 x 37
 y 6
+end
+arch marble
+name ice
+face icestorm.111
+x 37
+y 7
 end
 arch brefjell
 x 37
@@ -7440,6 +7470,12 @@ name ice
 face icestorm.111
 x 38
 y 8
+end
+arch marble
+name ice
+face icestorm.111
+x 38
+y 9
 end
 arch brefjell
 x 38
