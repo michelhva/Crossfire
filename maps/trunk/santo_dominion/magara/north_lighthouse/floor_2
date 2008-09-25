@@ -1,9 +1,14 @@
 arch map
 name North Lighthouse
-difficulty 1
+difficulty 18
 region santodominion
 width 40
 height 40
+enter_x 15
+enter_y 2
+msg
+Modified: 2008-09-24 Rick Tanner
+endmsg
 end
 arch dungeon_floor
 end
