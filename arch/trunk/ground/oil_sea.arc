@@ -25,9 +25,9 @@ is_floor 1
 end
 
 Object oil_sea_ultra_viscous
-#So thick you can almost walk on it (To be used where on needs walk-on-able/nonblocking oil)
+#So thick you can almost walk on it (To be used where one needs walk-on-able/nonblocking oil)
 #(ex: some random maps). For most applications you should use the regular oil_sea
-#which will be swimable as water is (but much slower swiming ofcourse)
+#which will be swimmable as water is (but much slower swimming of course)
 face oil_sea.111
 anim
 oil_sea.111
