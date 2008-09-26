@@ -14,7 +14,7 @@ mina
 anim_speed 5
 client_anim_random 1
 msg
-  There is a evil spirit in the shield.
+  There is an evil spirit in the shield.
 endmsg
 Cha -3
 resist_fire 30
