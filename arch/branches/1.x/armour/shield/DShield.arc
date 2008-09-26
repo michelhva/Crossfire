@@ -13,7 +13,7 @@ DShield.112
 mina 
 speed 0.2
 msg
-  There is a evil spirit in the shield.
+  There is an evil spirit in the shield.
 endmsg
 Cha -3
 resist_fire 30
