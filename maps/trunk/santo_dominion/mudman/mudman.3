@@ -8,7 +8,7 @@ enter_x 1
 enter_y 7
 msg
 Created:  2000-11-17
-Modified: 2008-09-25 Rick Tanner
+Modified: 2008-09-27 Rick Tanner
 endmsg
 end
 arch dungeon_magic
@@ -713,17 +713,24 @@ maxhp 600
 sp 100
 maxsp 100
 exp 5000
-dam 20
 x 4
 y 6
 level 18
 attacktype 7233
-resist_fire 100
+resist_magic 0
+resist_fire -100
+resist_confusion 100
+resist_acid 0
+resist_weaponmagic 0
+resist_slow 100
+resist_fear 0
+resist_chaos 0
+resist_godpower 0
+arch spell_summon_earth_elemental
+end
 arch abil_poison_cloud
 hp 0
 sp 21
-end
-arch spell_summon_earth_elemental
 end
 end
 arch grassmedium
@@ -1655,8 +1662,6 @@ x 10
 y 12
 end
 arch mudman
-sp 150
-maxsp 150
 x 10
 y 12
 carrying 70
