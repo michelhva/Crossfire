@@ -1,11 +1,14 @@
 arch map
 name Tobias Tower
-difficulty 1
+difficulty 8
 region santodominion
 width 25
 height 25
+enter_x 12
+enter_y 12
 msg
 Created:  1993-02-12
+Modified: 2008-09-27 Rick Tanner
 endmsg
 end
 arch cobblestones
