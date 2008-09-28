@@ -1,12 +1,14 @@
 arch map
 name Friendly Giant's Tower
-difficulty 1
+difficulty 7
 region scorn
 width 15
 height 15
+enter_x 6
+enter_y 1
 msg
 Created:  1993-10-15
-Modified: 2007-12-22 tchize
+Modified: 2008-09-28 Rick Tanner
 endmsg
 end
 arch dirtfloor

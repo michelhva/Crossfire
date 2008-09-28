@@ -5,9 +5,11 @@ region scorn
 darkness 2
 width 16
 height 16
+enter_x 14
+enter_y 4
 msg
 Created:  2006-05-26 Bort
-Modified: 2008-08-11 Andrew Fuchs
+Modified: 2008-09-28 Rick Tanner
 endmsg
 end
 arch woodfloor2

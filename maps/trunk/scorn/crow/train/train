@@ -1,7 +1,7 @@
 arch map
 name Training Center
 reset_timeout 1800
-difficulty 1
+difficulty 25
 region scorn
 darkness 3
 width 10
@@ -10,6 +10,7 @@ enter_x 4
 enter_y 17
 msg
 Created:  2003-06-19 Preston Crow
+Modified: 2008-09-27 Rick Tanner
 endmsg
 end
 arch flagstone
