@@ -1,11 +1,14 @@
 arch map
 name Scorn Castle
-difficulty 1
+difficulty 5
 region scorn
 width 24
 height 24
+enter_x 10
+enter_y 13
 msg
-Created:  1997-02-27
+Created:  1997-04-27
+Modified: 2008-09-28 Rick Tanner
 endmsg
 end
 arch grass

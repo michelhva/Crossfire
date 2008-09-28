@@ -1,13 +1,14 @@
 arch map
-name cider_house_top
-difficulty 1
+name Cider House, Top
+difficulty 5
 region scorn
 width 17
 height 17
+enter_x 4
+enter_y 2
 msg
-Creator: Nicolas Weeger
-Date:    2007-06-03
-Modified: 2008-08-11 Andrew Fuchs
+Creator: 2007-06-03 Nicolas Weeger
+Modified: 2008-09-28 Rick Tanner
 endmsg
 end
 arch woodfloor
