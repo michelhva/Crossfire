@@ -1,11 +1,14 @@
 arch map
 name Abandoned house
-difficulty 1
+difficulty 14
 region scorn
 width 10
 height 11
+enter_x 5
+enter_y 9
 msg
 Created:  2005-03-23 Huhanhi
+Modified: 2008-09-28 Rick Tanner
 endmsg
 end
 arch dungeon_magic

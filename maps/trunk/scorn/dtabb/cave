@@ -1,12 +1,14 @@
 arch map
 name Gnolls Grotto
-difficulty 1
+difficulty 10
 region scorn
 width 32
 height 32
-enter_x 28
+enter_x 30
+enter_y 1
 msg
 Created:  1998-10-15 Cater & Wade (john_cater@yahoo.com)
+Modified: 2008-09-27 Rick Tanner
 endmsg
 end
 arch dirtfloor
