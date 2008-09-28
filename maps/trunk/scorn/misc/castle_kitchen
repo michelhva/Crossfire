@@ -1,12 +1,14 @@
 arch map
 name Castle kitchen
-difficulty 1
+difficulty 4
 region scorn
 width 10
 height 10
+enter_x 4
+enter_y 1
 msg
 Created:  2007-05-26 Nicolas Weeger
-Modified: 2008-07-17 Arvid Norlander
+Modified: 2008-09-28 Rick Tanner
 endmsg
 maplore
 @quest Lursendis

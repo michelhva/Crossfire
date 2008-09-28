@@ -1,15 +1,17 @@
 arch map
 name House of Healing
-difficulty 1
+difficulty 10
 region scorn
 shopitems potion:40;wand:40
 shopgreed 2.00000
 shopmax 2000
 width 21
 height 36
+enter_x 10
+enter_y 33
 msg
-Created:  1999-02-02
-Modified: 2007-11-04 Andreas Kirschbaum
+Created:  1999-04-02
+Modified: 2008-09-28 Rick Tanner
 endmsg
 end
 arch woodfloor

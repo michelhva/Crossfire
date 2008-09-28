@@ -2,13 +2,15 @@ arch map
 name Hospitality Room
 swap_time 100
 reset_timeout 720
-difficulty 1
+difficulty 8
 region scorn
 width 35
 height 16
+enter_x 1
+enter_y 7
 msg
-Created:  2000-02-16
-Modified: 2008-06-20 Arvid Norlander
+Created:  2000-06-16
+Modified: 2008-09-28 Rick Tanner
 endmsg
 end
 arch woodfloor2
