@@ -1,11 +1,14 @@
 arch map
 name Old City
-difficulty 1
+difficulty 12
 region scornoldcity
 width 40
 height 40
 enter_x 14
 enter_y 39
+msg
+Modified: 2008-09-28 Rick Tanner
+endmsg
 tile_path_2 oldcity11
 tile_path_3 oldcity12
 end

@@ -1,12 +1,13 @@
 arch map
 name Old City, End
-difficulty 1
+difficulty 12
 region scornoldcity
 width 29
 height 40
+enter_y 26
 msg
 Created:  1993-10-19
-Modified: 2008-06-06 Arvid Norlander
+Modified: 2008-09-28 Rick Tanner
 endmsg
 tile_path_4 oldcity3
 end
