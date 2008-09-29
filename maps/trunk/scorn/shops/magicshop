@@ -1,7 +1,7 @@
 arch map
 name Magic Shop
 fixed_resettime 1
-difficulty 1
+difficulty 3
 region scorn
 shopitems amulet:25;ring:40;potion:40;book:35;scroll:40;spellbook:40;skillscroll:50;wand:40;rod:40;horn:45;*:-50
 shopmax 2000
@@ -11,7 +11,7 @@ enter_x 14
 enter_y 14
 msg
 Created:  1993-10-15
-Modified: 2007-11-04 Andreas Kirschbaum
+Modified: 2008-09-29 Rick Tanner
 endmsg
 end
 arch shop_empty

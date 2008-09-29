@@ -1,6 +1,6 @@
 arch map
 name Alchemy Shop
-difficulty 1
+difficulty 3
 region scorn
 shopitems potion:20;inorganic:60;container:20;*:-60
 shopmax 2000
@@ -9,8 +9,8 @@ height 16
 enter_x 14
 enter_y 14
 msg
-Created:  1996-05-02 bt foom (thomas@astro.psu.edu)
-Modified: 2008-08-09 Andrew Fuchs
+Created:  1996-05-02 bt (thomas@astro.psu.edu)
+Modified: 2008-09-29 Rick Tanner
 endmsg
 end
 arch woodfloor

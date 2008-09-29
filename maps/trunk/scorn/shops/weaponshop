@@ -1,16 +1,17 @@
 arch map
 name Weapon Shop
 fixed_resettime 1
-difficulty 1
+difficulty 3
 region scorn
 shopitems weapon:80;*:-50
 shopmax 3000
 width 16
 height 16
+enter_x 1
 enter_y 14
 msg
 Created:  1993-10-15
-Modified: 2008-01-03 Nicolas Weeger
+Modified: 2008-09-29 Rick Tanner
 endmsg
 end
 arch shop_empty
