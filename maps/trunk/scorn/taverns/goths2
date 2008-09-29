@@ -1,15 +1,20 @@
 arch map
 name Goth's Tavern
-difficulty 1
+difficulty 4
 region scorn
 width 33
 height 30
+enter_x 31
+enter_y 1
 msg
-The nightman down the hall spot you and
-shout "HALT! THIEF!!!"
+Modified: 2008-09-29 Rick Tanner
+endmsg
+maplore
+The nightman down the hall spots you and
+shouts "HALT! THIEF!!!"
 It seems they have mistaken you with
 somebody else.
-endmsg
+endmaplore
 end
 arch cobblestones2
 end
