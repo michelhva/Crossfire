@@ -1,16 +1,17 @@
 arch map
 name Armour Shop
 fixed_resettime 1
-difficulty 1
+difficulty 2
 region scorn
 shopitems armour:50;shield:50;helmet:40;cloak:40;boots:40;gloves:40;bracers:50;girdle:50;*:-50
 shopmax 2000
 width 16
 height 16
 enter_x 14
+enter_y 1
 msg
 Created:  1993-10-15
-Modified: 2008-05-21 al
+Modified: 2008-09-29 Rick Tanner
 endmsg
 end
 arch shop_empty

@@ -2,7 +2,7 @@ arch map
 name Gem Shop
 reset_timeout 7200
 fixed_resettime 1
-difficulty 1
+difficulty 3
 region scorn
 shopitems gem:80;amulet:40;ring:40
 shopmax 2000
@@ -13,6 +13,7 @@ enter_x 1
 enter_y 14
 msg
 Created:  1993-10-15
+Modified: 2008-09-29 Rick Tanner
 endmsg
 end
 arch shop_empty

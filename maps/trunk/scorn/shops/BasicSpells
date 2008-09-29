@@ -1,14 +1,17 @@
 arch map
 name Mosely's Magic Books
-difficulty 1
+difficulty 3
 region scorn
 shopitems spellbook:80
 shopgreed 2.00000
 shopmax 2000
 width 13
 height 13
+enter_x 2
+enter_y 2
 msg
-Created:  2000-02-18
+Created:  2000-10-18
+Modified: 2008-09-29 Rick Tanner
 endmsg
 end
 arch cobblestones2

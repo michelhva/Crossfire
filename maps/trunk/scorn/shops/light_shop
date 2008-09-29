@@ -1,13 +1,16 @@
 arch map
 name Jacob's Lighting Emporium
-difficulty 1
+difficulty 3
 region scorn
 shopitems lamp:95;*:-40
 shopmax 2000
 width 20
 height 15
+enter_x 16
+enter_y 11
 msg
 Created:  2002-12-28
+Modified: 2008-09-29 Rick Tanner
 endmsg
 end
 arch shop_empty
