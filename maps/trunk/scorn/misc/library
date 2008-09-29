@@ -1,6 +1,6 @@
 arch map
 name Central Library
-difficulty 1
+difficulty 4
 region scorn
 shopitems book:80;special key:80;skillscroll:80
 shopmax 2000
@@ -10,7 +10,7 @@ enter_x 9
 enter_y 15
 msg
 Created:  1996-04-28 b.t. (thomas@astro.psu.edu)
-Modified: 2008-06-20 Arvid Norlander
+Modified: 2008-09-28 Rick Tanner
 endmsg
 end
 arch grass

@@ -1,7 +1,7 @@
 arch map
 name Abandoned Temple
 reset_timeout 7200
-difficulty 1
+difficulty 3
 region scorn
 darkness 3
 width 16
@@ -10,6 +10,7 @@ enter_x 1
 enter_y 1
 msg
 Created:  2004-08-03 Mikeeusa
+Modified: 2008-09-28 Rick Tanner
 endmsg
 outdoor 1
 end
