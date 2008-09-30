@@ -1543,10 +1543,12 @@ unique 1
 end
 arch skullcleaver
 name Vardimar the Singing Axe
+name_pl Vardimar the Singing Axes
 slaying djinn
 dam 18
 attacktype 262145
-resist_confusion 30
+resist_confusion -100
+resist_chaos 30
 weight 28000
 magic 5
 last_sp 10
