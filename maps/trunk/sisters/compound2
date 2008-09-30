@@ -1126,10 +1126,15 @@ resist_physical 50
 carrying 30000
 arch mjoellnir
 name Baba Mal the War Hammer
+name_pl Baba Mal War Hammers
 Str 0
 dam 13
 attacktype 256
-resist_magic 100
+resist_magic -100
+resist_electricity 0
+resist_weaponmagic 30
+resist_paralyze 100
+resist_fear 100
 magic 2
 end
 end
