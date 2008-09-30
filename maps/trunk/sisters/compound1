@@ -1,10 +1,13 @@
 arch map
 name Large Compound
-difficulty 5
+difficulty 25
 width 32
 height 32
+enter_x 14
+enter_y 30
 msg
 Created:  1994-12-26 bt (thomas@nomad.astro.psu.edu)
+Modified: 2008-09-29 Rick Tanner
 endmsg
 end
 arch grass
