@@ -1,10 +1,13 @@
 arch map
 name Large Compound
-difficulty 5
+difficulty 35
 width 17
 height 16
+enter_x 1
+enter_y 6
 msg
 Created:  1994-12-26 bt (thomas@Nomad.astro.psu.edu)
+Modified: 2008-09-29 Rick Tanner
 endmsg
 end
 arch blocked
