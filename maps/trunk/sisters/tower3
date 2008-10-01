@@ -936,11 +936,15 @@ wc -20
 ac -20
 x 8
 y 13
-speed 0.900000
+speed 0.9
 attack_movement 7
 level 50
 attacktype 1048576
-resist_godpower 100
+resist_magic 30
+resist_deplete 100
+resist_death 100
+resist_chaos 100
+resist_godpower -100
 see_invisible 1
 arch spell_sm_lightning
 end
