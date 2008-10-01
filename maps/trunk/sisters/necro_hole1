@@ -1,12 +1,14 @@
 arch map
 name The Necropolis of Gax
-difficulty 1
+difficulty 25
 darkness 5
 width 36
 height 36
+enter_x 7
+enter_y 14
 msg
 Created:  1994-12-29 bt (thomas@Nomad.astro.psu.edu)
-Modified: 2008-05-23 Arvid Norlander
+Modified: 2008-09-30 Rick Tanner
 endmsg
 end
 arch blocked
