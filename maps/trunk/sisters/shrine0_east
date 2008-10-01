@@ -1,11 +1,14 @@
 arch map
 name Evil Shrine
-difficulty 5
+difficulty 30
 darkness 5
 width 33
 height 25
+enter_x 5
+enter_y 12
 msg
 Created:  1995-01-03 bt (thomas@nomad.astro.psu.edu)
+Modified: 2008-09-30 Rick Tanner
 endmsg
 end
 arch blocked

@@ -1,12 +1,14 @@
 arch map
 name Evil Shrine Entrance
-difficulty 1
+difficulty 22
 darkness 4
 width 20
 height 35
+enter_x 9
+enter_y 33
 msg
 Created:  1995-01-03 bt (thomas@nomad.astro.psu.edu)
-Modified: 2008-05-23 Arvid Norlander
+Modified: 2008-09-30 Rick Tanner
 endmsg
 end
 arch blocked
