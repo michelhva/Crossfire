@@ -5,6 +5,7 @@ width 22
 height 16
 msg
 Created:  1994-12-18 bt (thomas@nomad.astro.psu.edu)
+Modified: 2008-09-30 Rick Tanner
 endmsg
 end
 arch sea
@@ -806,11 +807,15 @@ wc -20
 ac -20
 x 7
 y 13
-speed 0.900000
+speed 0.9
 attack_movement 7
 level 40
 attacktype 1048576
-resist_godpower 100
+resist_magic 30
+resist_deplete 100
+resist_death 100
+resist_chaos 100
+resist_godpower -100
 see_invisible 1
 arch spell_hellfire
 end
