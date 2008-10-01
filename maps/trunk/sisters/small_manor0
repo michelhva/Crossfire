@@ -1,11 +1,14 @@
 arch map
 name Small Manor
-difficulty 1
+difficulty 5
 darkness 5
 width 10
 height 13
+enter_x 3
+enter_y 2
 msg
-Created:  1994-02-29
+Created:  1994-12-29
+Modified: 2008-09-30 Rick Tanner
 endmsg
 end
 arch blocked
