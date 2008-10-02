@@ -1,13 +1,14 @@
 arch map
 name Wretched Cave
 reset_timeout 7200
-difficulty 1
+difficulty 40
 width 64
 height 64
-enter_x 1
-enter_y 1
+enter_x 8
+enter_y 62
 msg
 Created:  2004-08-03 Mikeeusa
+Modified: 2008-10-01 Rick Tanner
 endmsg
 outdoor 1
 end
