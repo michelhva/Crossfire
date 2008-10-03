@@ -1,12 +1,14 @@
 arch map
-name Seaside Dungeon
-difficulty 1
+name Seaside Tavern, Dungeon
+difficulty 7
 region wolfsburg
 width 30
 height 29
+enter_x 2
 enter_y 1
 msg
 Created:  1993-11-01
+Modified: 2008-10-02 Rick Tanner
 endmsg
 end
 arch cave24
