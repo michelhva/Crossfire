@@ -1,13 +1,14 @@
 arch map
 name Underworld
-difficulty 1
+difficulty 9
 region wolfsburg
 width 60
 height 40
 enter_x 7
-enter_y 6
+enter_y 5
 msg
 You have entered the Underworld.
+Modified: 2008-10-02 Rick Tanner
 endmsg
 end
 arch woodfloor
