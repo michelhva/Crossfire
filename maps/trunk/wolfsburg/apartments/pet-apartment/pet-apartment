@@ -1,5 +1,5 @@
 arch map
-name pet_apartment
+name Personal Pet Apartment, Entrance
 swap_time 300
 reset_timeout 600
 fixed_resettime 1
@@ -10,10 +10,8 @@ width 12
 height 15
 enter_x 4
 msg
-Creator: Philip Stolarczyk
-Date:    2007-06-11
-Personal pet apartment
-Modified: 2008-08-11 Andrew Fuchs
+Creator: 2007-06-11 Philip Stolarczyk
+Modified: 2008-10-02 Rick Tanner
 endmsg
 end
 arch dungeon_magic
