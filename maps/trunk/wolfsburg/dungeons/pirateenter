@@ -1648,6 +1648,9 @@ arch swall_2_2_4
 x 11
 y 21
 end
+arch cobblestones2
+x 12
+end
 arch exit
 slaying /world/world_127_109
 face cobblesto1.111
@@ -1778,6 +1781,10 @@ end
 arch cobblestones2
 x 12
 y 20
+end
+arch cobblestones2
+x 12
+y 21
 end
 arch exit
 slaying /world/world_127_109
