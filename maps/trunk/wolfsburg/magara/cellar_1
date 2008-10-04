@@ -1,12 +1,14 @@
 arch map
 name Stairs Down to Cellar
-difficulty 1
+difficulty 35
 region wolfsburg
 width 35
 height 35
+enter_x 1
+enter_y 13
 msg
-Created:  1994-02-15
-Modified: 2007-11-04 Andreas Kirschbaum
+Created:  1994-10-15
+Modified: 2008-10-04 Rick Tanner
 endmsg
 end
 arch small_stones
