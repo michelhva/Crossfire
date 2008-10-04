@@ -1,9 +1,13 @@
 arch map
 name Old Tower
-difficulty 1
+difficulty 20
 region wolfsburg
 width 30
 height 35
+enter_y 11
+msg
+Modified: 2008-10-04 Rick Tanner
+endmsg
 end
 arch small_stones
 end
