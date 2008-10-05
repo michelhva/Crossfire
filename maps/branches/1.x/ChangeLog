@@ -1,3 +1,23 @@
+2008-10-03 16:54  akirschbaum
+
+	* scorn/kar/somehouse3: Fix syntax error.
+
+2008-09-04 20:09  rjtanner
+
+	* marksel/wizard: Backport from Trunk; Add missing shop header code
+	  to the Sages Tower (magic shop)
+
+2008-08-29 00:26  rjtanner
+
+	* inn_and_outpost/pypers_treehouse: Backport from Trunk; Use 'nrof
+	  0' property on the container barrel in this map so they do not
+	  stack. This is similar to the bug reported in [ 2018391 ]
+	  Zero-cap or capless containers, also stacking containers
+
+2008-08-25 21:43  rjtanner
+
+	* ChangeLog: Updated ChangeLog file using svn2cl
+
 2008-08-22 21:21  rjtanner
 
 	* HallOfSelection,
