@@ -1,9 +1,14 @@
 arch map
 name Run-down Church
-difficulty 1
+difficulty 6
 region wolfsburg
 width 11
 height 17
+enter_x 5
+enter_y 16
+msg
+Modified: 2008-10-04 Rick Tanner
+endmsg
 end
 arch woodfloor
 end
@@ -607,7 +612,7 @@ end
 arch oakdoor
 slaying /world/world_128_109
 hp 43
-sp 4
+sp 3
 x 5
 y 16
 end
