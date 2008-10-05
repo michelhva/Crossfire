@@ -9,6 +9,7 @@ enter_x 1
 enter_y 1
 msg
 Created:  2004-08-03 Mikeeusa
+Modified: 2008-10-05 Rick Tanner
 endmsg
 outdoor 1
 end
@@ -4435,22 +4436,6 @@ arch blocked
 x 40
 y 63
 end
-arch ninja_1
-hp 1000
-maxhp 1000
-dam 50
-x 41
-y 29
-unaggressive 0
-end
-arch ninja_1
-hp 1000
-maxhp 1000
-dam 50
-x 41
-y 31
-unaggressive 0
-end
 arch blocked
 x 41
 y 35
@@ -5135,22 +5120,6 @@ end
 arch blocked
 x 42
 y 63
-end
-arch ninja_1
-hp 1000
-maxhp 1000
-dam 50
-x 43
-y 29
-unaggressive 0
-end
-arch ninja_1
-hp 1000
-maxhp 1000
-dam 50
-x 43
-y 31
-unaggressive 0
 end
 arch blocked
 x 43
@@ -7184,17 +7153,6 @@ end
 arch blocked
 x 48
 y 63
-end
-arch ninja_1
-name versed ninja
-name_pl versed ninja
-hp 3000
-maxhp 3000
-dam 100
-x 49
-y 29
-speed 1.000000
-unaggressive 0
 end
 arch blocked
 x 49
