@@ -1,7 +1,7 @@
 arch map
 name Minatomachi Tatemono Shijou
 reset_timeout 7200
-difficulty 1
+difficulty 40
 region azumauindo
 shopitems building material:95;item builder:95;*:-100
 shopgreed 1.20000
@@ -10,10 +10,11 @@ shopmax 100000
 shoprace human
 width 32
 height 32
-enter_x 1
-enter_y 1
+enter_x 15
+enter_y 26
 msg
-Created:  2004-02-03 Mikeeusa
+Created:  2004-08-03 Mikeeusa
+Modified: 2008-10-05 Rick Tanner
 endmsg
 outdoor 1
 end
