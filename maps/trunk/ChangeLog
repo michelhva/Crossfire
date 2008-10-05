@@ -1,3 +1,98 @@
+2008-10-05 02:08  rjtanner
+
+	* wolfsburg/etern_rew: Replace generic altars with tables in the
+	  Enternal Reward (tavern)
+
+2008-10-05 02:05  rjtanner
+
+	* world/world_128_109: Updated entrance coordinates to Run-down
+	  Church
+
+2008-10-05 02:03  rjtanner
+
+	* wolfsburg/etern_rew, wolfsburg/inns, wolfsburg/piratechurch,
+	  wolfsburg/prison, wolfsburg/slave_pit1, wolfsburg/slave_pit2,
+	  wolfsburg/slave_pit3, wolfsburg/snakepit, wolfsburg/ware1: Map
+	  header update: Adjust map level difficulty to something slightly
+	  more realistic
+
+2008-10-05 01:24  rjtanner
+
+	* wolfsburg/dept_store_armour, wolfsburg/dept_store_magic,
+	  wolfsburg/dept_store_misc, wolfsburg/dept_store_weapon: Implement
+	  shop code to One-Eyed Mike's Department Store
+
+2008-10-05 01:11  rjtanner
+
+	* wolfsburg/dept_store_armour, wolfsburg/dept_store_magic,
+	  wolfsburg/dept_store_misc, wolfsburg/dept_store_weapon: Map
+	  header updates: Update maps with entrance x & y coordinates,
+	  adjust map level difficulty to something slightly more realistic
+
+2008-10-04 07:49  rjtanner
+
+	* wolfsburg/volcano/heimser_hut_1: Adjust entrance to the map -
+	  original coordinates were inside a wall
+
+2008-10-04 07:45  rjtanner
+
+	* wolfsburg/volcano/volcano: Map header update: Adjust map level
+	  difficulty to something slightly more realistic
+
+2008-10-04 07:45  rjtanner
+
+	* wolfsburg/volcano/heimser_hut_2, wolfsburg/volcano/vvhuts: Map
+	  header update: Update maps with entrance x & y coordinates
+
+2008-10-04 07:43  rjtanner
+
+	* wolfsburg/volcano/vvmansion: Map header updates: Update maps with
+	  entrance x & y coordinates, adjust map level difficulty to
+	  something slightly more realistic
+
+2008-10-04 07:33  rjtanner
+
+	* wolfsburg/tt/tta1: Added missing floor tiles
+
+2008-10-04 07:31  rjtanner
+
+	* wolfsburg/tt/tta1, wolfsburg/tt/tta2, wolfsburg/tt/ttb1,
+	  wolfsburg/tt/ttb2: Map header updates: Update maps with entrance
+	  x & y coordinates, adjust map level difficulty to something
+	  slightly more realistic
+
+2008-10-04 07:25  rjtanner
+
+	* wolfsburg/temple/enterance, wolfsburg/temple/ixalovh,
+	  wolfsburg/temple/temp_dung1, wolfsburg/temple/temple: Map header
+	  updates: Update maps with entrance x & y coordinates, adjust map
+	  level difficulty to something slightly more realistic
+
+2008-10-04 07:15  rjtanner
+
+	* wolfsburg/shops/buildshop, wolfsburg/shops/transport.shoppe: Map
+	  header update: Update maps with entrance x & y coordinates
+
+2008-10-04 07:07  rjtanner
+
+	* wolfsburg/magara/castle/cellar, wolfsburg/magara/castle/floor_1,
+	  wolfsburg/magara/castle/floor_2, wolfsburg/magara/castle/floor_3,
+	  wolfsburg/magara/cellar1/hcellar_1,
+	  wolfsburg/magara/cellar1/hcellar_2,
+	  wolfsburg/magara/cellar1/hole, wolfsburg/magara/cellar_1,
+	  wolfsburg/magara/tower1/entrance,
+	  wolfsburg/magara/tower1/floor_1, wolfsburg/magara/tower1/floor_3,
+	  wolfsburg/magara/tower2/floor_1, wolfsburg/magara/tower2/floor_2:
+	  Map header updates: Correct creation date in map header that was
+	  changed in r7448, it was using the wrong month; Update maps with
+	  entrance x & y coordinates, adjust map level difficulty to
+	  something slightly more realistic
+
+2008-10-03 01:47  rjtanner
+
+	* ChangeLog: Updated ChangeLog file using svn2cl (SourceForge
+	  mailing list lost some of the commit notices)
+
 2008-10-03 01:36  rjtanner
 
 	* wolfsburg/eeur/tower1.1, wolfsburg/eeur/tower1.2,
