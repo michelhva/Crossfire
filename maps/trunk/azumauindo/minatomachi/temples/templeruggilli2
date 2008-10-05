@@ -1,14 +1,15 @@
 arch map
 name Ichidou Dzuki Ruggilli
 reset_timeout 7200
-difficulty 1
+difficulty 10
 region azumauindo
 width 16
 height 16
-enter_x 1
-enter_y 1
+enter_x 8
+enter_y 4
 msg
-Created:  2005-02-12 MikeeUSA
+Created:  2005-03-12 MikeeUSA
+Modified: 2008-10-05 Rick Tanner
 endmsg
 end
 arch blocked
