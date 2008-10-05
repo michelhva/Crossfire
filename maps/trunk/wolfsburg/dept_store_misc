@@ -1,12 +1,14 @@
 arch map
 name General Department
 fixed_resettime 1
-difficulty 1
+difficulty 14
 region wolfsburg
 width 18
 height 14
+enter_x 1
 msg
 Created:  2005-09-18
+Modified: 2008-10-04 Rick Tanner
 endmsg
 tile_path_1 dept_store_weapon
 tile_path_4 dept_store_magic

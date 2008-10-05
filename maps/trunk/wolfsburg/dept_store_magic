@@ -1,13 +1,14 @@
 arch map
 name Magic Department
 fixed_resettime 1
-difficulty 1
+difficulty 14
 region wolfsburg
 width 17
 height 14
+enter_x 15
 msg
 Created:  2005-09-18
-Modified: 2007-11-04 Andreas Kirschbaum
+Modified: 2008-10-04 Rick Tanner
 endmsg
 tile_path_1 dept_store_armour
 tile_path_2 dept_store_misc
