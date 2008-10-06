@@ -6,8 +6,7 @@ width 10
 height 11
 msg
 Created:  2008-07-24 Chad Opperman | cromagic@sbcglobal.net
-Modified: 2008-08-18 Rick Tanner
-Modified: 2008-08-01 Raphaël Quinet
+Modified: 2008-09-29 Chad Opperman | cromagic@sbcglobal.net
 endmsg
 end
 arch stonefloor2
@@ -85,7 +84,7 @@ x 1
 y 1
 end
 arch perm_magic_portal
-name Course 1
+name Sphere Racing
 slaying fz_sr1
 hp 40
 sp 27
@@ -101,14 +100,10 @@ x 1
 y 3
 end
 arch perm_magic_portal
-name Sphere Racing Course Pending
-slaying fz_srlobby
-hp 17
-sp 6
-x 1
-y 3
-end
-arch dust_effect
+name Boat Racing
+slaying fz_boatracing
+hp 1
+sp 8
 x 1
 y 3
 end
@@ -121,7 +116,7 @@ x 1
 y 5
 end
 arch perm_magic_portal
-name Sphere Racing Course Pending
+name Racing Course Pending
 slaying fz_srlobby
 hp 17
 sp 6
@@ -141,7 +136,7 @@ x 1
 y 7
 end
 arch perm_magic_portal
-name Sphere Racing Course Pending
+name Racing Course Pending
 slaying fz_srlobby
 hp 17
 sp 6
@@ -161,7 +156,7 @@ x 1
 y 9
 end
 arch perm_magic_portal
-name Sphere Racing Course Pending
+name Racing Course Pending
 slaying fz_srlobby
 hp 17
 sp 6
@@ -407,9 +402,9 @@ x 6
 y 5
 end
 arch sign
-name Sphere Racing Explanation
+name Racing Explanation
 msg
-To play Sphere Racing, have 1 player enter Sphere 1, and another player enter Sphere 2, then maneuver both spheres to their respective starting positions (Sphere 1 on left, Sphere 2 on right).  A few moments after that is achieved, the starting gate will open.  The objective is to race the other person to the finish line.  When a player passes over the finish line, it will be declared to all on this map that he has finished.  In order to tell who won, see which player's message came first in the message box.  Also note that there are randomly generated obstacles to hinder you and to prevent scripts from being effective.
+Racing is pretty self-explanatory, multiple people race eachother to the finish.
 endmsg
 x 6
 y 5

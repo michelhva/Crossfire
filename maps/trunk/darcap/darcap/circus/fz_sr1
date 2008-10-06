@@ -30266,6 +30266,14 @@ arch stonefloor2
 x 38
 y 27
 end
+arch sign
+name Sphere Racing Explanation
+msg
+To play Sphere Racing, have 1 player enter Sphere 1, and another player enter Sphere 2, then maneuver both spheres to their respective starting positions (Sphere 1 on left, Sphere 2 on right).  A few moments after that is achieved, the starting gate will open.  The objective is to race the other person to the finish line.  When a player passes over the finish line, it will be declared to all on this map that he has finished.  In order to tell who won, see which player's message came first in the message box.  Also note that there are randomly generated obstacles to hinder you and to prevent scripts from being effective.
+endmsg
+x 38
+y 27
+end
 arch stonefloor2
 x 38
 y 28
@@ -30639,7 +30647,7 @@ x 40
 y 27
 end
 arch perm_magic_portal
-name Back To Lobby
+name Back To Racing Lobby
 slaying fz_srlobby
 hp 1
 sp 1
