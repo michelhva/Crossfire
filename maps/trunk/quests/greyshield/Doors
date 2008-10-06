@@ -1,11 +1,13 @@
 arch map
 name Doors
+difficulty 50
 width 16
 height 9
+enter_x 2
 enter_y 4
 msg
 Created:  1996-11-06 Chris Jeske
-Modified: 2007-11-04 Andreas Kirschbaum
+Modified: 2008-10-05 Rick Tanner
 endmsg
 end
 arch flagstone
