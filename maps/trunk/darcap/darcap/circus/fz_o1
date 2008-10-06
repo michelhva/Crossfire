@@ -1,11 +1,14 @@
 arch map
 name Fun Zone Obstacle Course 1
+difficulty 1
 region darcapcircus
 width 81
 height 14
+enter_x 1
+enter_y 5
 msg
 Created:  2008-07-24 Chad Opperman | cromagic@sbcglobal.net
-Modified: 2008-07-29 Chad Opperman | cromagic@sbcglobal.net
+Modified: 2008-10-06 Rick Tanner
 endmsg
 end
 arch stonefloor2

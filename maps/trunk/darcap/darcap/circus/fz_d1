@@ -1,11 +1,14 @@
 arch map
 name Fun Zone Deathmatch 1
+difficulty 1
 region darcapcircus
 width 63
 height 50
+enter_x 61
+enter_y 30
 msg
 Created:  2008-07-26 Chad Opperman | cromagic@sbcglobal.net
-Modified: 2008-07-29 Chad Opperman | cromagic@sbcglobal.net
+Modified: 2008-10-06 Rick Tanner
 endmsg
 end
 arch altar_trigger

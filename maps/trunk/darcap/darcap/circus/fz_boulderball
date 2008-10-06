@@ -1,11 +1,14 @@
 arch map
-name Fun Zone boulderball
+name Fun Zone Boulderball
+difficulty 1
 region darcapcircus
 width 48
 height 23
+enter_x 46
+enter_y 11
 msg
 Created:  2008-06-19 Chad Opperman | cromagic@sbcglobal.net
-Modified: 2008-09-29 Chad Opperman | cromagic@sbcglobal.net
+Modified: 2008-10-06 Rick Tanner
 endmsg
 end
 arch altar_trigger
