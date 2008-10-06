@@ -1,11 +1,14 @@
 arch map
 name Fun Zone Sphere Racing 1
+difficulty 1
 region darcapcircus
 width 42
 height 55
+enter_x 40
+enter_y 27
 msg
 Created:  2008-07-30 Chad Opperman | cromagic@sbcglobal.net
-Modified: 2008-07-30 Chad Opperman | cromagic@sbcglobal.net
+Modified: 2008-10-06 Rick Tanner
 endmsg
 end
 arch stonefloor2
