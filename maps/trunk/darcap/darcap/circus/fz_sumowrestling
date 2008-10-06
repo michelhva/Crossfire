@@ -5,7 +5,7 @@ width 28
 height 17
 msg
 Created:  2008-06-17 Chad Opperman | cromagic@sbcglobal.net
-Modified: 2008-07-29 Chad Opperman | cromagic@sbcglobal.net
+Modified: 2008-09-29 Chad Opperman | cromagic@sbcglobal.net
 endmsg
 end
 arch stonefloor2
@@ -1156,13 +1156,6 @@ sp 16
 x 5
 y 6
 end
-arch glue
-x 5
-y 7
-material 0
-move_slow all
-move_slow_penalty 2
-end
 arch dungeon_magic
 x 5
 y 7
@@ -1194,13 +1187,6 @@ y 7
 no_magic 1
 damned 1
 end
-arch glue
-x 5
-y 8
-material 0
-move_slow all
-move_slow_penalty 2
-end
 arch dungeon_magic
 x 5
 y 8
@@ -1231,13 +1217,6 @@ x 5
 y 8
 no_magic 1
 damned 1
-end
-arch glue
-x 5
-y 9
-material 0
-move_slow all
-move_slow_penalty 2
 end
 arch dungeon_magic
 x 5
@@ -1531,13 +1510,6 @@ sp 16
 x 6
 y 5
 end
-arch glue
-x 6
-y 6
-material 0
-move_slow all
-move_slow_penalty 2
-end
 arch dungeon_magic
 x 6
 y 6
@@ -1568,13 +1540,6 @@ x 6
 y 6
 no_magic 1
 damned 1
-end
-arch glue
-x 6
-y 7
-material 0
-move_slow all
-move_slow_penalty 2
 end
 arch dungeon_magic
 x 6
@@ -1607,13 +1572,6 @@ y 7
 no_magic 1
 damned 1
 end
-arch glue
-x 6
-y 8
-material 0
-move_slow all
-move_slow_penalty 2
-end
 arch dungeon_magic
 x 6
 y 8
@@ -1645,13 +1603,6 @@ y 8
 no_magic 1
 damned 1
 end
-arch glue
-x 6
-y 9
-material 0
-move_slow all
-move_slow_penalty 2
-end
 arch dungeon_magic
 x 6
 y 9
@@ -1682,13 +1633,6 @@ x 6
 y 9
 no_magic 1
 damned 1
-end
-arch glue
-x 6
-y 10
-material 0
-move_slow all
-move_slow_penalty 2
 end
 arch dungeon_magic
 x 6
@@ -1908,13 +1852,6 @@ sp 16
 x 7
 y 4
 end
-arch glue
-x 7
-y 5
-material 0
-move_slow all
-move_slow_penalty 2
-end
 arch dungeon_magic
 x 7
 y 5
@@ -1945,13 +1882,6 @@ x 7
 y 5
 no_magic 1
 damned 1
-end
-arch glue
-x 7
-y 6
-material 0
-move_slow all
-move_slow_penalty 2
 end
 arch dungeon_magic
 x 7
@@ -1984,13 +1914,6 @@ y 6
 no_magic 1
 damned 1
 end
-arch glue
-x 7
-y 7
-material 0
-move_slow all
-move_slow_penalty 2
-end
 arch dungeon_magic
 x 7
 y 7
@@ -2021,13 +1944,6 @@ x 7
 y 7
 no_magic 1
 damned 1
-end
-arch glue
-x 7
-y 8
-material 0
-move_slow all
-move_slow_penalty 2
 end
 arch dungeon_magic
 x 7
@@ -2060,13 +1976,6 @@ y 8
 no_magic 1
 damned 1
 end
-arch glue
-x 7
-y 9
-material 0
-move_slow all
-move_slow_penalty 2
-end
 arch dungeon_magic
 x 7
 y 9
@@ -2098,13 +2007,6 @@ y 9
 no_magic 1
 damned 1
 end
-arch glue
-x 7
-y 10
-material 0
-move_slow all
-move_slow_penalty 2
-end
 arch dungeon_magic
 x 7
 y 10
@@ -2135,13 +2037,6 @@ x 7
 y 10
 no_magic 1
 damned 1
-end
-arch glue
-x 7
-y 11
-material 0
-move_slow all
-move_slow_penalty 2
 end
 arch dungeon_magic
 x 7
@@ -2365,13 +2260,6 @@ sp 16
 x 8
 y 4
 end
-arch glue
-x 8
-y 5
-material 0
-move_slow all
-move_slow_penalty 2
-end
 arch dungeon_magic
 x 8
 y 5
@@ -2402,13 +2290,6 @@ x 8
 y 5
 no_magic 1
 damned 1
-end
-arch glue
-x 8
-y 6
-material 0
-move_slow all
-move_slow_penalty 2
 end
 arch dungeon_magic
 x 8
@@ -2441,13 +2322,6 @@ y 6
 no_magic 1
 damned 1
 end
-arch glue
-x 8
-y 7
-material 0
-move_slow all
-move_slow_penalty 2
-end
 arch dungeon_magic
 x 8
 y 7
@@ -2478,13 +2352,6 @@ x 8
 y 7
 no_magic 1
 damned 1
-end
-arch glue
-x 8
-y 8
-material 0
-move_slow all
-move_slow_penalty 2
 end
 arch dungeon_magic
 x 8
@@ -2517,13 +2384,6 @@ y 8
 no_magic 1
 damned 1
 end
-arch glue
-x 8
-y 9
-material 0
-move_slow all
-move_slow_penalty 2
-end
 arch dungeon_magic
 x 8
 y 9
@@ -2555,13 +2415,6 @@ y 9
 no_magic 1
 damned 1
 end
-arch glue
-x 8
-y 10
-material 0
-move_slow all
-move_slow_penalty 2
-end
 arch dungeon_magic
 x 8
 y 10
@@ -2592,13 +2445,6 @@ x 8
 y 10
 no_magic 1
 damned 1
-end
-arch glue
-x 8
-y 11
-material 0
-move_slow all
-move_slow_penalty 2
 end
 arch dungeon_magic
 x 8
@@ -2826,13 +2672,6 @@ sp 16
 x 9
 y 4
 end
-arch glue
-x 9
-y 5
-material 0
-move_slow all
-move_slow_penalty 2
-end
 arch dungeon_magic
 x 9
 y 5
@@ -2863,13 +2702,6 @@ x 9
 y 5
 no_magic 1
 damned 1
-end
-arch glue
-x 9
-y 6
-material 0
-move_slow all
-move_slow_penalty 2
 end
 arch dungeon_magic
 x 9
@@ -2902,13 +2734,6 @@ y 6
 no_magic 1
 damned 1
 end
-arch glue
-x 9
-y 7
-material 0
-move_slow all
-move_slow_penalty 2
-end
 arch dungeon_magic
 x 9
 y 7
@@ -2939,13 +2764,6 @@ x 9
 y 7
 no_magic 1
 damned 1
-end
-arch glue
-x 9
-y 8
-material 0
-move_slow all
-move_slow_penalty 2
 end
 arch dungeon_magic
 x 9
@@ -2978,13 +2796,6 @@ y 8
 no_magic 1
 damned 1
 end
-arch glue
-x 9
-y 9
-material 0
-move_slow all
-move_slow_penalty 2
-end
 arch dungeon_magic
 x 9
 y 9
@@ -3016,13 +2827,6 @@ y 9
 no_magic 1
 damned 1
 end
-arch glue
-x 9
-y 10
-material 0
-move_slow all
-move_slow_penalty 2
-end
 arch dungeon_magic
 x 9
 y 10
@@ -3053,13 +2857,6 @@ x 9
 y 10
 no_magic 1
 damned 1
-end
-arch glue
-x 9
-y 11
-material 0
-move_slow all
-move_slow_penalty 2
 end
 arch dungeon_magic
 x 9
@@ -3242,13 +3039,6 @@ sp 16
 x 10
 y 4
 end
-arch glue
-x 10
-y 5
-material 0
-move_slow all
-move_slow_penalty 2
-end
 arch dungeon_magic
 x 10
 y 5
@@ -3279,13 +3069,6 @@ x 10
 y 5
 no_magic 1
 damned 1
-end
-arch glue
-x 10
-y 6
-material 0
-move_slow all
-move_slow_penalty 2
 end
 arch dungeon_magic
 x 10
@@ -3318,13 +3101,6 @@ y 6
 no_magic 1
 damned 1
 end
-arch glue
-x 10
-y 7
-material 0
-move_slow all
-move_slow_penalty 2
-end
 arch dungeon_magic
 x 10
 y 7
@@ -3355,13 +3131,6 @@ x 10
 y 7
 no_magic 1
 damned 1
-end
-arch glue
-x 10
-y 8
-material 0
-move_slow all
-move_slow_penalty 2
 end
 arch dungeon_magic
 x 10
@@ -3394,13 +3163,6 @@ y 8
 no_magic 1
 damned 1
 end
-arch glue
-x 10
-y 9
-material 0
-move_slow all
-move_slow_penalty 2
-end
 arch dungeon_magic
 x 10
 y 9
@@ -3432,13 +3194,6 @@ y 9
 no_magic 1
 damned 1
 end
-arch glue
-x 10
-y 10
-material 0
-move_slow all
-move_slow_penalty 2
-end
 arch dungeon_magic
 x 10
 y 10
@@ -3469,13 +3224,6 @@ x 10
 y 10
 no_magic 1
 damned 1
-end
-arch glue
-x 10
-y 11
-material 0
-move_slow all
-move_slow_penalty 2
 end
 arch dungeon_magic
 x 10
@@ -3658,13 +3406,6 @@ sp 16
 x 11
 y 4
 end
-arch glue
-x 11
-y 5
-material 0
-move_slow all
-move_slow_penalty 2
-end
 arch dungeon_magic
 x 11
 y 5
@@ -3695,13 +3436,6 @@ x 11
 y 5
 no_magic 1
 damned 1
-end
-arch glue
-x 11
-y 6
-material 0
-move_slow all
-move_slow_penalty 2
 end
 arch dungeon_magic
 x 11
@@ -3734,13 +3468,6 @@ y 6
 no_magic 1
 damned 1
 end
-arch glue
-x 11
-y 7
-material 0
-move_slow all
-move_slow_penalty 2
-end
 arch dungeon_magic
 x 11
 y 7
@@ -3771,13 +3498,6 @@ x 11
 y 7
 no_magic 1
 damned 1
-end
-arch glue
-x 11
-y 8
-material 0
-move_slow all
-move_slow_penalty 2
 end
 arch dungeon_magic
 x 11
@@ -3810,13 +3530,6 @@ y 8
 no_magic 1
 damned 1
 end
-arch glue
-x 11
-y 9
-material 0
-move_slow all
-move_slow_penalty 2
-end
 arch dungeon_magic
 x 11
 y 9
@@ -3848,13 +3561,6 @@ y 9
 no_magic 1
 damned 1
 end
-arch glue
-x 11
-y 10
-material 0
-move_slow all
-move_slow_penalty 2
-end
 arch dungeon_magic
 x 11
 y 10
@@ -3885,13 +3591,6 @@ x 11
 y 10
 no_magic 1
 damned 1
-end
-arch glue
-x 11
-y 11
-material 0
-move_slow all
-move_slow_penalty 2
 end
 arch dungeon_magic
 x 11
@@ -4152,13 +3851,6 @@ sp 16
 x 12
 y 5
 end
-arch glue
-x 12
-y 6
-material 0
-move_slow all
-move_slow_penalty 2
-end
 arch dungeon_magic
 x 12
 y 6
@@ -4189,13 +3881,6 @@ x 12
 y 6
 no_magic 1
 damned 1
-end
-arch glue
-x 12
-y 7
-material 0
-move_slow all
-move_slow_penalty 2
 end
 arch dungeon_magic
 x 12
@@ -4228,13 +3913,6 @@ y 7
 no_magic 1
 damned 1
 end
-arch glue
-x 12
-y 8
-material 0
-move_slow all
-move_slow_penalty 2
-end
 arch dungeon_magic
 x 12
 y 8
@@ -4266,13 +3944,6 @@ y 8
 no_magic 1
 damned 1
 end
-arch glue
-x 12
-y 9
-material 0
-move_slow all
-move_slow_penalty 2
-end
 arch dungeon_magic
 x 12
 y 9
@@ -4303,13 +3974,6 @@ x 12
 y 9
 no_magic 1
 damned 1
-end
-arch glue
-x 12
-y 10
-material 0
-move_slow all
-move_slow_penalty 2
 end
 arch dungeon_magic
 x 12
@@ -4603,13 +4267,6 @@ sp 16
 x 13
 y 6
 end
-arch glue
-x 13
-y 7
-material 0
-move_slow all
-move_slow_penalty 2
-end
 arch dungeon_magic
 x 13
 y 7
@@ -4641,13 +4298,6 @@ y 7
 no_magic 1
 damned 1
 end
-arch glue
-x 13
-y 8
-material 0
-move_slow all
-move_slow_penalty 2
-end
 arch dungeon_magic
 x 13
 y 8
@@ -4678,13 +4328,6 @@ x 13
 y 8
 no_magic 1
 damned 1
-end
-arch glue
-x 13
-y 9
-material 0
-move_slow all
-move_slow_penalty 2
 end
 arch dungeon_magic
 x 13
