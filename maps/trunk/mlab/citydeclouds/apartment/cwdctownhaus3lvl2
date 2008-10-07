@@ -4,8 +4,11 @@ difficulty 1
 region citydeclouds
 width 26
 height 24
+enter_x 21
+enter_y 19
 msg
-Created:  2007-03-11
+Created:  2007-03-11 mikeeusa
+Modified: 2008-10-06 Rick Tanner
 endmsg
 end
 arch blocked
@@ -3876,8 +3879,8 @@ y 19
 end
 arch stair_3_down
 slaying cwdctownhaus3lvl1
-hp 23
-sp 21
+hp 21
+sp 19
 x 21
 y 19
 end
