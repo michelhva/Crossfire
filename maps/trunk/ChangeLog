@@ -1,3 +1,276 @@
+2008-10-07 01:00  rjtanner
+
+	* mlab/citydeclouds/cdcbigstore/cdcbigstore2f: Map header updates:
+	  Update maps with entrance x & y coordinates, adjust map level
+	  difficulty to something slightly more realistic, added shop
+	  headers to the map
+
+2008-10-07 00:59  rjtanner
+
+	* mlab/citydeclouds/cdcbigstore/cdcbigstore3f: Map header updates:
+	  Update maps with entrance x & y coordinates, adjust map level
+	  difficulty to something slightly more realistic
+
+2008-10-07 00:25  rjtanner
+
+	* mlab/citydeclouds/castle/cwdccastlef1: Map header updates: Update
+	  maps with entrance x & y coordinates, adjust map level difficulty
+	  to something slightly more realistic
+
+2008-10-07 00:19  rjtanner
+
+	* mlab/citydeclouds/bank/bank1, mlab/citydeclouds/bank/bank2,
+	  mlab/citydeclouds/bank/bank3, mlab/citydeclouds/bank/bank4,
+	  mlab/citydeclouds/bank/bank5, mlab/citydeclouds/bank/vaulta1,
+	  mlab/citydeclouds/bank/vaultb2, mlab/citydeclouds/bank/vaultc3,
+	  mlab/citydeclouds/bank/vaultd4, mlab/citydeclouds/bank/vaulte5:
+	  Map header updates: Update maps with entrance x & y coordinates,
+	  added map author credit
+
+2008-10-07 00:11  rjtanner
+
+	* mlab/citydeclouds/apartment/cwdctownhaus1lvl1,
+	  mlab/citydeclouds/apartment/cwdctownhaus1lvl2,
+	  mlab/citydeclouds/apartment/cwdctownhaus2lvl1,
+	  mlab/citydeclouds/apartment/cwdctownhaus2lvl2,
+	  mlab/citydeclouds/apartment/cwdctownhaus3lvl1,
+	  mlab/citydeclouds/apartment/cwdctownhaus3lvl2,
+	  mlab/citydeclouds/apartment/cwdctownhaus4lvl1,
+	  mlab/citydeclouds/apartment/cwdctownhaus4lvl2: Map header
+	  updates: Update maps with entrance x & y coordinates, added map
+	  author credit, corrected coorindates between stairways in each
+	  map
+
+2008-10-06 21:53  rjtanner
+
+	* darcap/darcap/circus/fz_boatracing,
+	  darcap/darcap/circus/fz_boulderball, darcap/darcap/circus/fz_d1,
+	  darcap/darcap/circus/fz_d1volcano,
+	  darcap/darcap/circus/fz_dlobby, darcap/darcap/circus/fz_o1,
+	  darcap/darcap/circus/fz_olobby, darcap/darcap/circus/fz_sr1,
+	  darcap/darcap/circus/fz_sumowrestling: Map header updates: Update
+	  maps with entrance x & y coordinates, set map difficulty to level
+	  1, added region darcapcircus to fz_boatracing map
+
+2008-10-06 21:36  rjtanner
+
+	* darcap/darcap/circus/fz_boatracing, darcap/darcap/circus/fz_sr1,
+	  darcap/darcap/circus/fz_srlobby: Final checkin of Patch [ 2137250
+	  ] fun zone map update; New map, Fun Zone Boatracing, and related
+	  link/map updates
+
+2008-10-06 21:28  rjtanner
+
+	* darcap/darcap/circus/fz_boulderball,
+	  darcap/darcap/circus/fz_sumowrestling: Partial implementation of
+	  Patch [ 2137250 ] fun zone map update; Removed glue and other
+	  speed related hinderances per player feedback and testing
+
+2008-10-06 21:17  rjtanner
+
+	* darcap/darcap/circus/fz_lobby: Partial implementation of Patch [
+	  2137250 ] fun zone map update; Update map name from 'Sphere
+	  Racing' to 'Racing'
+
+2008-10-06 21:15  rjtanner
+
+	* darcap/darcap/circus/fz_lobby: Partial implementation of Patch [
+	  2137250 ] fun zone map update; Undo removal of 'material 0' from
+	  r9752
+
+2008-10-06 00:39  rjtanner
+
+	* quests/greyshield/Archery, quests/greyshield/Arena,
+	  quests/greyshield/Castle, quests/greyshield/Cavern,
+	  quests/greyshield/Cavern2, quests/greyshield/Chamber,
+	  quests/greyshield/Doors, quests/greyshield/Dungeon,
+	  quests/greyshield/Elements, quests/greyshield/Factory,
+	  quests/greyshield/Finish, quests/greyshield/Fortress,
+	  quests/greyshield/GreyMaster: Map header updates: Update maps
+	  with entrance x & y coordinates, adjust map level difficulty to
+	  something slightly more realistic
+
+2008-10-05 21:49  rjtanner
+
+	* azumauindo/suno-yamatoshi/towers/tou1,
+	  azumauindo/suno-yamatoshi/towers/tou2,
+	  azumauindo/suno-yamatoshi/towers/tou3,
+	  azumauindo/suno-yamatoshi/towers/tou4,
+	  azumauindo/suno-yamatoshi/towers/tou5: Map header updates: Update
+	  maps with entrance x & y coordinates, adjust map level difficulty
+	  to something slightly more realistic
+
+2008-10-05 21:42  rjtanner
+
+	* azumauindo/suno-yamatoshi/tou/tou1,
+	  azumauindo/suno-yamatoshi/tou/tou2,
+	  azumauindo/suno-yamatoshi/tou/tou3,
+	  azumauindo/suno-yamatoshi/tou/tou4,
+	  azumauindo/suno-yamatoshi/tou/tou5: Map header updates: Update
+	  maps with entrance x & y coordinates
+
+2008-10-05 21:39  rjtanner
+
+	* azumauindo/suno-yamatoshi/temples/ruggilli1,
+	  azumauindo/suno-yamatoshi/temples/ruggilli2: Map header updates:
+	  Correct creation date in map header that was changed in r7448, it
+	  was using the wrong month; Update maps with entrance x & y
+	  coordinates, adjust map level difficulty to something slightly
+	  more realistic
+
+2008-10-05 21:31  rjtanner
+
+	* azumauindo/suno-yamatoshi/shops/armourshop1,
+	  azumauindo/suno-yamatoshi/shops/bank1,
+	  azumauindo/suno-yamatoshi/shops/bank2,
+	  azumauindo/suno-yamatoshi/shops/magicshop1,
+	  azumauindo/suno-yamatoshi/shops/magicshop2,
+	  azumauindo/suno-yamatoshi/shops/pawn1,
+	  azumauindo/suno-yamatoshi/shops/weaponshop1: Map header updates:
+	  Correct creation date in map header that was changed in r7448, it
+	  was using the wrong month; Update maps with entrance x & y
+	  coordinates, adjust map level difficulty to something slightly
+	  more realistic
+
+2008-10-05 20:58  rjtanner
+
+	* azumauindo/suno-yamatoshi/gates/gate1,
+	  azumauindo/suno-yamatoshi/gates/gate2,
+	  azumauindo/suno-yamatoshi/gates/gate3: Map header updates: Update
+	  maps with entrance x & y coordinates
+
+2008-10-05 20:49  rjtanner
+
+	* azumauindo/suno-yamatoshi/buildings/tatemonoA2: Map header
+	  updates: Update maps with entrance x & y coordinates
+
+2008-10-05 20:46  rjtanner
+
+	* azumauindo/suno-yamatoshi/buildings/ninjadojoA1,
+	  azumauindo/suno-yamatoshi/buildings/tatemonoA1,
+	  world/world_127_101: Resize maps and updated exit & entrance
+	  coordinates, updated world maps to reflect this change too
+
+2008-10-05 20:32  rjtanner
+
+	* azumauindo/suno-yamatoshi/buildings/dojoA1,
+	  azumauindo/suno-yamatoshi/buildings/dojoA2,
+	  azumauindo/suno-yamatoshi/buildings/dojoB1,
+	  azumauindo/suno-yamatoshi/buildings/jadechesthouse1,
+	  azumauindo/suno-yamatoshi/buildings/tatemonoA1: Map header
+	  updates: Update maps with entrance x & y coordinates, adjust map
+	  level difficulty to something slightly more realistic
+
+2008-10-05 20:30  rjtanner
+
+	* azumauindo/suno-yamatoshi/buildings/ninjadojoA1: Remove unused
+	  monsters placed outside playable map area
+
+2008-10-05 07:32  rjtanner
+
+	* azumauindo/suno-yamatoshi/apartments/lapartment1: Remove outdated
+	  information in regards to using holy_symbols to obtain the
+	  apartment altar
+
+2008-10-05 07:01  rjtanner
+
+	* azumauindo/suno-yamatoshi/apartments/lapartment1: Map header
+	  updates: Updated entrance x & y coordinates
+
+2008-10-05 06:42  rjtanner
+
+	* azumauindo/ranbounagisatoshi/apartments/sapartment,
+	  azumauindo/ranbounagisatoshi/gates/gate1,
+	  azumauindo/ranbounagisatoshi/gates/gate2,
+	  azumauindo/ranbounagisatoshi/temples/rruggilli1,
+	  azumauindo/ranbounagisatoshi/temples/rruggilli2,
+	  azumauindo/ranbounagisatoshi/towers/tou1,
+	  azumauindo/ranbounagisatoshi/towers/tou2,
+	  azumauindo/ranbounagisatoshi/towers/tou3,
+	  azumauindo/ranbounagisatoshi/towers/tou4,
+	  azumauindo/ranbounagisatoshi/towers/tou5: Map header updates:
+	  Updated entrance x & y coordinates, adjust map level difficulty
+	  to something slightly more realistic for temples/rruggilli2
+
+2008-10-05 06:22  rjtanner
+
+	* azumauindo/ranbounagisatoshi/shops/potionshop1: Map header
+	  update: Adjust map level difficulty to hopefully provide somewhat
+	  better store merchandise
+
+2008-10-05 06:21  rjtanner
+
+	* azumauindo/ranbounagisatoshi/shops/groupshop,
+	  azumauindo/ranbounagisatoshi/shops/groupshop2,
+	  azumauindo/ranbounagisatoshi/shops/groupshopb1,
+	  azumauindo/ranbounagisatoshi/shops/groupshopb2,
+	  azumauindo/ranbounagisatoshi/shops/potionshop1,
+	  azumauindo/ranbounagisatoshi/shops/tradecenter: Map header
+	  updates: Update maps with entrance x & y coordinates
+
+2008-10-05 06:11  rjtanner
+
+	* azumauindo/misc/cave1, azumauindo/misc/entrance1,
+	  azumauindo/misc/shrine1, azumauindo/misc/shrine2,
+	  azumauindo/misc/shrine3, azumauindo/misc/shrineb1: Map header
+	  updates: Correct creation date in map header that was changed in
+	  r7448, it was using the wrong month; Update maps with entrance x
+	  & y coordinates, adjust map level difficulty to something
+	  slightly more realistic
+
+2008-10-05 06:02  rjtanner
+
+	* azumauindo/minatomachi/temples/templeruggilli1,
+	  azumauindo/minatomachi/temples/templeruggilli2: Map header
+	  updates: Correct creation date in map header that was changed in
+	  r7448, it was using the wrong month; Update maps with entrance x
+	  & y coordinates, adjust map level difficulty to something
+	  slightly more realistic
+
+2008-10-05 05:59  rjtanner
+
+	* azumauindo/minatomachi/stores/buildshop,
+	  azumauindo/minatomachi/stores/diamondex1,
+	  azumauindo/minatomachi/stores/generalstore,
+	  azumauindo/minatomachi/stores/postoffice: Map header updates:
+	  Correct creation date in map header that was changed in r7448, it
+	  was using the wrong month; Update maps with entrance x & y
+	  coordinates, adjust map level difficulty to hopefully provide
+	  somewhat better store merchandise
+
+2008-10-05 05:48  rjtanner
+
+	* azumauindo/minatomachi/gates/gate1,
+	  azumauindo/minatomachi/gates/gate2: Map header updates: Correct
+	  creation date in map header that was changed in r7448, it was
+	  using the wrong month; Update maps with entrance x & y
+	  coordinates
+
+2008-10-05 05:41  rjtanner
+
+	* azumauindo/minatomachi/buildings/guildkeybuilding1,
+	  azumauindo/minatomachi/buildings/guildkeybuildingB1,
+	  azumauindo/minatomachi/buildings/guildkeybuildingB2a,
+	  azumauindo/minatomachi/buildings/guildkeybuildingB2b,
+	  azumauindo/minatomachi/buildings/guildkeybuildingB2c: Map header
+	  updates: Update maps with entrance x & y coordinates, adjust map
+	  level difficulty to something slightly more realistic, add map
+	  authors name where necessary
+
+2008-10-05 05:35  rjtanner
+
+	* azumauindo/minatomachi/buildings/guildkeybuilding1,
+	  azumauindo/minatomachi/buildings/guildkeybuildingB1,
+	  azumauindo/minatomachi/buildings/guildkeybuildingB2a,
+	  azumauindo/minatomachi/buildings/guildkeybuildingB2b,
+	  azumauindo/minatomachi/buildings/guildkeybuildingB2c,
+	  world/world_128_101: Resize maps to remove empty and unused
+	  space. Adjust map exit & entrance coordinates accordingly.
+
+2008-10-05 02:22  rjtanner
+
+	* ChangeLog: Updated ChangeLog file using svn2cl
+
 2008-10-05 02:08  rjtanner
 
 	* wolfsburg/etern_rew: Replace generic altars with tables in the
