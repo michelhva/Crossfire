@@ -1,11 +1,14 @@
 arch map
 name Hole
-difficulty 5
+difficulty 20
 region ancientpupland
 width 35
 height 20
+enter_x 7
+enter_y 11
 msg
 Created:  1996-06-07
+Modified: 2008-10-08 Rick Tanner
 endmsg
 end
 arch pstone_1
