@@ -2,6 +2,9 @@ arch map
 name Shop
 difficulty 1
 region ancientpupland
+shopitems gem:10;*:-99
+shopmin 1
+shopmax 5
 width 26
 height 10
 enter_x 7
