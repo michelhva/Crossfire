@@ -1,12 +1,14 @@
 arch map
 name House of Treasure
-difficulty 1
+difficulty 10
 region pupland
 width 13
 height 15
+enter_x 3
+enter_y 12
 msg
 Created:  1996-02-13
-Modified: 2008-04-18 buzzsaw
+Modified: 2008-10-09 Rick Tanner
 endmsg
 end
 arch marble
