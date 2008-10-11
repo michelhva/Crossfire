@@ -1,11 +1,14 @@
 arch map
 name Eureca Road
-difficulty 1
+difficulty 12
 region pupland
 width 31
 height 31
+enter_x 15
+enter_y 17
 msg
-Created:  1996-02-02
+Created:  1996-04-02
+Modified: 2008-10-10 Rick Tanner
 endmsg
 end
 arch afloor_right
