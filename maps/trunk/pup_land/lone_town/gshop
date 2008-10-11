@@ -1,13 +1,14 @@
 arch map
 name General Shop
-difficulty 1
+difficulty 25
 region lonetown
 width 15
 height 16
 enter_x 7
 enter_y 15
 msg
-Created:  1996-02-25
+Created:  1996-01-25
+Modified: 2008-10-11 Rick Tanner
 endmsg
 end
 arch shop_empty
@@ -804,7 +805,6 @@ x 8
 y 13
 material 0
 weight 0
-no_pick 1
 arch event_close
 title Python
 slaying /python/IPO/send.py
