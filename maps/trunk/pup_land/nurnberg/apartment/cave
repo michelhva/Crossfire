@@ -7,7 +7,8 @@ height 8
 enter_x 10
 enter_y 1
 msg
-Created:  2000-02-19
+Created:  2000-11-19
+Modified: 2008-10-11 Rick Tanner
 endmsg
 end
 arch pstone_2
@@ -523,7 +524,7 @@ y 1
 unique 1
 end
 arch stair_up_2
-slaying /pup_land/nurnberg/apartment/main
+slaying main
 hp 11
 sp 2
 x 10
@@ -558,7 +559,7 @@ unique 1
 end
 arch oakdoor
 name Lone Town
-slaying /pup_land/lone_town/town
+slaying ../../lone_town/town
 face stalkergen.111
 hp 11
 sp 13
