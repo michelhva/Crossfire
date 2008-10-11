@@ -1,12 +1,14 @@
 arch map
 name Bomb de Pon
-difficulty 15
+difficulty 25
 region nurnberg
 width 29
 height 25
+enter_x 16
+enter_y 24
 msg
 Created:  1996-02-10
-Modified: 2008-06-20 Arvid Norlander
+Modified: 2008-10-11 Rick Tanner
 endmsg
 end
 arch igate_open_1
