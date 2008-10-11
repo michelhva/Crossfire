@@ -42,9 +42,7 @@ boolean updateMap(File mapFile, File pictureFile) {
             return false;
         }
     } finally {
-        if (map.nViews() <= 0) {
-            mapManager.closeLevel(map);
-        }
+        mapManager.release(map);
     }
     return true;
 }

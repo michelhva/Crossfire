@@ -16,21 +16,25 @@ void normalizeMap(File mapFile, String mapPath) {
         return;
     }
 
-    if (!mapPath.startsWith("/styles")
-    && !mapPath.startsWith("/editor")) {
-        mapModel = map.getMapModel();
-        mapArchObject = mapModel.getMapArchObject();
-        int shrinkFlags = 0;
-        if (mapArchObject.getTilePath(CommonConstants.NORTH).length() <= 0 && mapArchObject.getTilePath(CommonConstants.SOUTH).length() <= 0) {
-            shrinkFlags |= ShrinkMapSizeUtils.SHRINK_EAST;
+    try {
+        if (!mapPath.startsWith("/styles")
+        && !mapPath.startsWith("/editor")) {
+            mapModel = map.getMapModel();
+            mapArchObject = mapModel.getMapArchObject();
+            int shrinkFlags = 0;
+            if (mapArchObject.getTilePath(CommonConstants.NORTH).length() <= 0 && mapArchObject.getTilePath(CommonConstants.SOUTH).length() <= 0) {
+                shrinkFlags |= ShrinkMapSizeUtils.SHRINK_EAST;
+            }
+            if (mapArchObject.getTilePath(CommonConstants.EAST).length() <= 0 && mapArchObject.getTilePath(CommonConstants.WEST).length() <= 0) {
+                shrinkFlags |= ShrinkMapSizeUtils.SHRINK_SOUTH;
+            }
+            ShrinkMapSizeUtils.shrinkMap(mapModel, shrinkFlags);
         }
-        if (mapArchObject.getTilePath(CommonConstants.EAST).length() <= 0 && mapArchObject.getTilePath(CommonConstants.WEST).length() <= 0) {
-            shrinkFlags |= ShrinkMapSizeUtils.SHRINK_SOUTH;
-        }
-        ShrinkMapSizeUtils.shrinkMap(mapModel, shrinkFlags);
-    }
 
-    map.save();
+        map.save();
+    } finally {
+        mapManager.release(map);
+    }
 }
 
 if (baseDirectory == null || baseDirectory.length() <= 0) {

@@ -278,24 +278,28 @@ void convertMap(File mapFile, String mapPath) {
         return;
     }
 
-    mapControl.getMapModel().beginTransaction("spell conversion");
     try {
-        Iterator it1 = mapControl.getAllSquares().iterator();
-        while (it1.hasNext()) {
-            MapSquare mapSquare = it1.next();
-            Iterator it2 = mapSquare.iterator();
-            while (it2.hasNext()) {
-                GameObject gameObject = it2.next();
-                convertGameObject(gameObject);
+        mapControl.getMapModel().beginTransaction("spell conversion");
+        try {
+            Iterator it1 = mapControl.getAllSquares().iterator();
+            while (it1.hasNext()) {
+                MapSquare mapSquare = it1.next();
+                Iterator it2 = mapSquare.iterator();
+                while (it2.hasNext()) {
+                    GameObject gameObject = it2.next();
+                    convertGameObject(gameObject);
+                }
             }
+        } finally {
+            mapControl.getMapModel().endTransaction();
+        }
+
+        if (mapControl.isModified()) {
+            countMapFiles++;
+            mapControl.save();
         }
     } finally {
-        mapControl.getMapModel().endTransaction();
-    }
-
-    if (mapControl.isModified()) {
-        countMapFiles++;
-        mapControl.save();
+        mapManager.release(mapControl);
     }
 }
 
