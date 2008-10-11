@@ -11,6 +11,8 @@ Created:  1996-01-31
 Modified: 2008-10-10 Rick Tanner
 endmsg
 end
+arch pstone_1
+end
 arch bwall_2_2_2
 end
 arch pstone_1
@@ -162,6 +164,9 @@ y 25
 end
 arch bwall_0
 y 25
+end
+arch pstone_1
+x 1
 end
 arch bwall_2_1_2
 x 1
@@ -360,6 +365,9 @@ end
 arch bwall_0
 x 1
 y 25
+end
+arch pstone_1
+x 2
 end
 arch bwall_2_1_2
 x 2
@@ -560,6 +568,9 @@ arch bwall_0
 x 2
 y 25
 end
+arch pstone_1
+x 3
+end
 arch bwall_2_1_2
 x 3
 end
@@ -754,6 +765,9 @@ end
 arch bwall_0
 x 3
 y 25
+end
+arch pstone_1
+x 4
 end
 arch bwall_3_3
 x 4
@@ -957,6 +971,9 @@ end
 arch bwall_1_2
 x 4
 y 25
+end
+arch pstone_1
+x 5
 end
 arch bwall_2_1_2
 x 5
@@ -1157,6 +1174,9 @@ arch bwall_0
 x 5
 y 25
 end
+arch pstone_1
+x 6
+end
 arch bwall_3_3
 x 6
 end
@@ -1351,6 +1371,9 @@ end
 arch bwall_0
 x 6
 y 25
+end
+arch pstone_1
+x 7
 end
 arch bwall_2_1_2
 x 7
@@ -1547,6 +1570,9 @@ arch bwall_0
 x 7
 y 25
 end
+arch pstone_1
+x 8
+end
 arch bwall_3_3
 x 8
 end
@@ -1742,6 +1768,9 @@ arch bwall_0
 x 8
 y 25
 end
+arch pstone_1
+x 9
+end
 arch bwall_1_3
 x 9
 end
@@ -1932,6 +1961,9 @@ end
 arch bwall_0
 x 9
 y 25
+end
+arch pstone_1
+x 10
 end
 arch bwall_0
 x 10
@@ -2131,6 +2163,9 @@ end
 arch bwall_0
 x 10
 y 25
+end
+arch pstone_1
+x 11
 end
 arch bwall_0
 x 11
@@ -2336,6 +2371,9 @@ arch bwall_0
 x 11
 y 25
 end
+arch pstone_1
+x 12
+end
 arch bwall_1_1
 x 12
 end
@@ -2528,6 +2566,9 @@ end
 arch bwall_0
 x 12
 y 25
+end
+arch pstone_1
+x 13
 end
 arch bwall_0
 x 13
@@ -2736,6 +2777,9 @@ arch bwall_1_2
 x 13
 y 25
 end
+arch pstone_1
+x 14
+end
 arch bwall_0
 x 14
 end
@@ -2920,6 +2964,9 @@ arch bwall_0
 x 14
 y 25
 end
+arch pstone_1
+x 15
+end
 arch bwall_0
 x 15
 end
@@ -3125,6 +3172,9 @@ end
 arch bwall_0
 x 15
 y 25
+end
+arch pstone_1
+x 16
 end
 arch bwall_0
 x 16
@@ -3305,6 +3355,9 @@ arch bwall_0
 x 16
 y 25
 end
+arch pstone_1
+x 17
+end
 arch bwall_0
 x 17
 end
@@ -3480,6 +3533,9 @@ arch bwall_1_2
 x 17
 y 25
 end
+arch pstone_1
+x 18
+end
 arch bwall_1_1
 x 18
 end
@@ -3654,6 +3710,9 @@ end
 arch bwall_0
 x 18
 y 25
+end
+arch pstone_1
+x 19
 end
 arch bwall_0
 x 19
@@ -3854,6 +3913,9 @@ arch bwall_0
 x 19
 y 25
 end
+arch pstone_1
+x 20
+end
 arch bwall_0
 x 20
 end
@@ -4036,6 +4098,9 @@ end
 arch bwall_0
 x 20
 y 25
+end
+arch pstone_1
+x 21
 end
 arch bwall_0
 x 21
@@ -4220,6 +4285,9 @@ arch bwall_0
 x 21
 y 25
 end
+arch pstone_1
+x 22
+end
 arch bwall_0
 x 22
 end
@@ -4402,6 +4470,9 @@ end
 arch bwall_0
 x 22
 y 25
+end
+arch pstone_1
+x 23
 end
 arch bwall_0
 x 23
@@ -4605,6 +4676,9 @@ end
 arch bwall_0
 x 23
 y 25
+end
+arch pstone_1
+x 24
 end
 arch bwall_0
 x 24
