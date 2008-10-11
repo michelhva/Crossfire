@@ -5795,13 +5795,10 @@ y 8
 end
 arch dragon_exit
 name dragon express
-slaying /pup_land/lone_town/town
 msg
 Please hurry up or we will be moving
 without you.
 endmsg
-hp 22
-sp 11
 x 17
 y 8
 end
@@ -7137,11 +7134,12 @@ x 21
 y 8
 end
 arch altar_trigger
-name Closed
-slaying Closed
-food 0
+name Out Of Order
+slaying Out Of Order
+food 1
 x 21
 y 8
+connected 9
 end
 arch magic_banned
 x 21
