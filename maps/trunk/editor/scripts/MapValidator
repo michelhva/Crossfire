@@ -25,14 +25,16 @@ void checkMap(File mapFile, String mapPath) {
         log("- cannot load map file");
         return;
     }
+
     ErrorCollector errorCollector;
     try {
-        validators.validateAll(map.getMapModel());
-    } finally {
-        errorCollector = map.getMapModel().getErrors();
-        if (map.nViews() <= 0) {
-            mapManager.closeLevel(map);
+        try {
+            validators.validateAll(map.getMapModel());
+        } finally {
+            errorCollector = map.getMapModel().getErrors();
         }
+    } finally {
+        mapManager.release(map);
     }
 
     StringBuffer sb = new StringBuffer();
