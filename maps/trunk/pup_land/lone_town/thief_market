@@ -2,6 +2,9 @@ arch map
 name Thief Market
 difficulty 1
 region lonetown
+shopitems gem:100;*:50
+shopgreed 50.0000
+shopmin 1000
 width 16
 height 25
 enter_x 5
