@@ -1,3 +1,331 @@
+2008-10-11 07:12  rjtanner
+
+	* pup_land/nurnberg/castle, pup_land/nurnberg/castle_bauer/castle2,
+	  pup_land/nurnberg/castle_bauer/castle3,
+	  pup_land/nurnberg/castle_bauer/castle4: Map header updates:
+	  Correct creation date in map header that was changed in r7448, it
+	  was using the wrong month; Update maps with entrance x & y
+	  coordinates, adjust map level difficulty to something slightly
+	  more realistic, update map titles
+
+2008-10-11 06:56  rjtanner
+
+	* pup_land/nurnberg/apartment/cave,
+	  pup_land/nurnberg/apartment/main,
+	  pup_land/nurnberg/apartment/upstairs: Update maps with entrance x
+	  & y coordinates. Make map paths (exits/etnrances) relative
+
+2008-10-11 06:36  rjtanner
+
+	* pup_land/lone_town/thief_market: Apply shop headers to (the very
+	  greedy) Thief Market
+
+2008-10-11 06:32  rjtanner
+
+	* pup_land/lone_town/pupuly: Cosmetic wall changes and updates
+
+2008-10-11 06:29  rjtanner
+
+	* pup_land/lone_town/pupuly: Readjust map difficulty
+
+2008-10-11 06:28  rjtanner
+
+	* pup_land/lone_town/gshop: Apply shop headers to Lone Town General
+	  Store
+
+2008-10-11 06:22  rjtanner
+
+	* pup_land/lone_town/gemshop_ud: Rename exit from unamed to
+	  passageway
+
+2008-10-11 06:20  rjtanner
+
+	* pup_land/lone_town/guild_law_ud: Insert missing floor tile
+
+2008-10-11 06:16  rjtanner
+
+	* pup_land/lone_town/gemshop, pup_land/lone_town/gemshop_ud,
+	  pup_land/lone_town/gshop, pup_land/lone_town/gshop_ud,
+	  pup_land/lone_town/guild_freedom,
+	  pup_land/lone_town/guild_freedom_ud,
+	  pup_land/lone_town/guild_law, pup_land/lone_town/guild_law_ud,
+	  pup_land/lone_town/heinrich, pup_land/lone_town/inn,
+	  pup_land/lone_town/magic, pup_land/lone_town/mshop,
+	  pup_land/lone_town/mshop_ud, pup_land/lone_town/pupuly,
+	  pup_land/lone_town/tavern, pup_land/lone_town/tavern_ud,
+	  pup_land/lone_town/thief_market, pup_land/lone_town/town,
+	  pup_land/lone_town/town_ud1, pup_land/lone_town/training,
+	  pup_land/lone_town/training2: Map header updates: Correct
+	  creation date in map header that was changed in r7448, it was
+	  using the wrong month; Update maps with entrance x & y
+	  coordinates, adjust map level difficulty to something slightly
+	  more realistic
+
+2008-10-11 01:47  rjtanner
+
+	* pup_land/lone_town/town_ud2: Insert floor tiles in the top row of
+	  the map, hopefully this is all of them
+
+2008-10-11 01:45  rjtanner
+
+	* pup_land/lone_town/town_ud2: Missed a column of floors in
+	  previous commit, corrected creation date of the map (was missed
+	  in previous commit as well)
+
+2008-10-11 01:41  rjtanner
+
+	* pup_land/lone_town/town_ud2: Correct creation date in map header
+	  that was changed in r7448, it was using the wrong month. Add
+	  missing floor tiles
+
+2008-10-11 01:34  rjtanner
+
+	* pup_land/lone_town/bank, pup_land/lone_town/church,
+	  pup_land/lone_town/church_ud, pup_land/lone_town/cordish,
+	  pup_land/lone_town/cordish2, pup_land/lone_town/dress1,
+	  pup_land/lone_town/dress2, pup_land/lone_town/dress3,
+	  pup_land/lone_town/town_ud2: Map header updates: Correct creation
+	  date in map header that was changed in r7448, it was using the
+	  wrong month; update maps with entrance x & y coordinates, adjust
+	  map level difficulty to something slightly more realistic
+
+2008-10-11 01:20  rjtanner
+
+	* pup_land/lone_town/shops/buildshop,
+	  pup_land/lone_town/shops/transport.shoppe: Map header updates:
+	  Update maps with entrance x & y coordinates
+
+2008-10-11 01:10  rjtanner
+
+	* pup_land/lone_town/dragonhangar/hangar: Removed the Dragon
+	  Express to Lone Town from the Lonw Town Dragon Hangar. Also
+	  changed the altar from 'Closed' to 'Out of Order' (and fixed the
+	  broken connection between the altar and gate) to match other
+	  unused dragons.
+
+2008-10-11 01:03  rjtanner
+
+	* pup_land/lone_town/dragonhangar/hangar: Map header updates:
+	  Update maps with entrance x & y coordinates
+
+2008-10-11 00:58  rjtanner
+
+	* pup_land/lone_town/cave/b1, pup_land/lone_town/cave/b2,
+	  pup_land/lone_town/cave/b3: Map header updates: Correct creation
+	  date in map header that was changed in r7448, it was using the
+	  wrong month; update maps with entrance x & y coordinates, adjust
+	  map level difficulty to something slightly more realistic
+
+2008-10-11 00:53  rjtanner
+
+	* pup_land/lone_town/apartment/basement,
+	  pup_land/lone_town/apartment/sharedcourtyard,
+	  pup_land/lone_town/apartment/upper1: Map header updates: Update
+	  maps with entrance x & y coordinates
+
+2008-10-11 00:39  rjtanner
+
+	* pup_land/kurte/eureca_road1, pup_land/kurte/eureca_road2,
+	  pup_land/kurte/eureca_road3, pup_land/kurte/house,
+	  pup_land/kurte/hut1, pup_land/kurte/hut2, pup_land/kurte/jungle,
+	  pup_land/kurte/kurte, pup_land/kurte/penta,
+	  pup_land/kurte/to_past: Map header updates: Correct creation date
+	  in map header that was changed in r7448, it was using the wrong
+	  month; update maps with entrance x & y coordinates, adjust map
+	  level difficulty to something slightly more realistic
+
+2008-10-11 00:15  rjtanner
+
+	* pup_land/rainbow/red_town/town: Update world map name to match
+	  actual map name (Summoner's house -> Summoner's House)
+
+2008-10-11 00:15  rjtanner
+
+	* pup_land/jk/gs_house: Map header updates: Update maps with
+	  entrance x & y coordinates, adjust map level difficulty to
+	  something slightly more realistic
+
+2008-10-11 00:07  rjtanner
+
+	* pup_land/cave_weapon/cave5: Spelling correction, behide -> behind
+
+2008-10-11 00:05  rjtanner
+
+	* pup_land/cave_weapon/cave1, pup_land/cave_weapon/cave2,
+	  pup_land/cave_weapon/cave3, pup_land/cave_weapon/cave4,
+	  pup_land/cave_weapon/cave5: Map header updates: Update map with
+	  entrance x & y coordinates
+
+2008-10-10 01:50  rjtanner
+
+	* pup_land/castle_eureca/castle_eureca1,
+	  pup_land/castle_eureca/castle_eureca2,
+	  pup_land/castle_eureca/castle_eureca3,
+	  pup_land/castle_eureca/castle_eureca4,
+	  pup_land/castle_eureca/castle_eureca5,
+	  pup_land/castle_eureca/castle_eureca6,
+	  pup_land/castle_eureca/castle_eureca7,
+	  pup_land/castle_eureca/castle_eureca8,
+	  pup_land/castle_eureca/castle_eureca9,
+	  pup_land/castle_eureca/castle_eurecaB1,
+	  pup_land/castle_eureca/castle_eurecaB2,
+	  pup_land/castle_eureca/cave_pass,
+	  pup_land/castle_eureca/cave_pass2,
+	  pup_land/castle_eureca/cave_pass3,
+	  pup_land/castle_eureca/cave_pass4, pup_land/castle_eureca/chest:
+	  Map header updates: Correct creation date in map header that was
+	  changed in r7448, it was using the wrong month; update maps with
+	  entrance x & y coordinates, adjust map level difficulty to
+	  something slightly more realistic, adjust castle map names to
+	  match the world map name (Castle of Eureca vs Castle Eureca)
+
+2008-10-10 01:01  rjtanner
+
+	* pup_land/begin/adv, pup_land/begin/p1, pup_land/begin/p2,
+	  pup_land/begin/p3: Map header updates: update maps with entrance
+	  x & y coordinates, adjust map level difficulty to something
+	  slightly more realistic
+
+2008-10-10 01:00  rjtanner
+
+	* pup_land/rainbow/red_town/town: Map name updates (practice1|2|3
+	  to Practice1|2|3)
+
+2008-10-10 00:51  rjtanner
+
+	* pup_land/ancient/world: Map header updates: Correct creation date
+	  in map header that was changed in r7448, it was using the wrong
+	  month; update maps with entrance x & y coordinates
+
+2008-10-10 00:42  rjtanner
+
+	* pup_land/ancient/to_future: Map header updates: Correct creation
+	  date in map header that was changed in r7448, it was using the
+	  wrong month; update map with entrance x & y coordinates
+
+2008-10-10 00:41  rjtanner
+
+	* pup_land/ancient/company: Map header updates: Correct creation
+	  date in map header that was changed in r7448, it was using the
+	  wrong month; update maps with entrance x & y coordinates, update
+	  map name
+
+2008-10-10 00:26  rjtanner
+
+	* pup_land/ancient/village/shop: Added shop code, this store is
+	  very poor
+
+2008-10-10 00:03  rjtanner
+
+	* pup_land/ancient/village/shop: Dialog and spelling corrections
+	  for shop vendor
+
+2008-10-10 00:01  rjtanner
+
+	* pup_land/ancient/village/graveyard,
+	  pup_land/ancient/village/hut1, pup_land/ancient/village/hut2,
+	  pup_land/ancient/village/hut3, pup_land/ancient/village/hut4,
+	  pup_land/ancient/village/hut5, pup_land/ancient/village/hut6,
+	  pup_land/ancient/village/inn, pup_land/ancient/village/library,
+	  pup_land/ancient/village/shop, pup_land/ancient/village/tavern,
+	  pup_land/ancient/village/tavern1,
+	  pup_land/ancient/village/village: Map header updates: Correct
+	  creation date in map header that was changed in r7448, it was
+	  using the wrong month; update maps with entrance x & y
+	  coordinates, adjust map level difficulty to something slightly
+	  more realistic
+
+2008-10-09 01:48  rjtanner
+
+	* pup_land/ancient/village/siegfried/siegfried.1,
+	  pup_land/ancient/village/siegfried/siegfried.2,
+	  pup_land/ancient/village/siegfried/siegfried.3,
+	  pup_land/ancient/village/siegfried/siegfried.B1,
+	  pup_land/ancient/village/siegfried/siegfried.B2,
+	  pup_land/ancient/village/siegfried/siegfried.B3,
+	  pup_land/ancient/village/siegfried/siegfried.B4,
+	  pup_land/ancient/village/siegfried/siegfried.B5,
+	  pup_land/ancient/village/siegfried/siegfried.B5a,
+	  pup_land/ancient/village/siegfried/siegfried.B5b,
+	  pup_land/ancient/village/siegfried/siegfried.B5c: Map header
+	  updates: Correct creation date in map header that was changed in
+	  r7448, it was using the wrong month; update maps with entrance x
+	  & y coordinates, adjust map level difficulty to something
+	  slightly more realistic
+
+2008-10-09 01:31  rjtanner
+
+	* pup_land/ancient/village/hole/hole.B6: Insert missing ground tile
+
+2008-10-09 01:30  rjtanner
+
+	* pup_land/ancient/village/hole/hole.B1,
+	  pup_land/ancient/village/hole/hole.B2,
+	  pup_land/ancient/village/hole/hole.B3,
+	  pup_land/ancient/village/hole/hole.B4,
+	  pup_land/ancient/village/hole/hole.B5,
+	  pup_land/ancient/village/hole/hole.B6: Map header updates: Update
+	  maps with entrance x & y coordinates, adjust map level difficulty
+	  to something slightly more realistic
+
+2008-10-09 01:23  rjtanner
+
+	* pup_land/ancient/mountain/atelir1,
+	  pup_land/ancient/mountain/atelir2,
+	  pup_land/ancient/mountain/cave.b1,
+	  pup_land/ancient/mountain/cave.b2,
+	  pup_land/ancient/mountain/cave.b3,
+	  pup_land/ancient/mountain/mountain.a1,
+	  pup_land/ancient/mountain/mountain.a2,
+	  pup_land/ancient/mountain/mountain.a3,
+	  pup_land/ancient/mountain/mountain.b1,
+	  pup_land/ancient/mountain/mountain.b2,
+	  pup_land/ancient/mountain/mountain.b3,
+	  pup_land/ancient/mountain/tower.1,
+	  pup_land/ancient/mountain/tower.2,
+	  pup_land/ancient/mountain/tower.3,
+	  pup_land/ancient/mountain/tower.4,
+	  pup_land/ancient/mountain/tower.b1: Map header updates: Correct
+	  creation date in map header that was changed in r7448, it was
+	  using the wrong month; update maps with entrance x & y
+	  coordinates, adjust map level difficulty to something slightly
+	  more realistic
+
+2008-10-08 01:38  rjtanner
+
+	* pup_land/ancient/castle/castle.1,
+	  pup_land/ancient/castle/castle.2,
+	  pup_land/ancient/castle/castle.3,
+	  pup_land/ancient/castle/castle.4,
+	  pup_land/ancient/castle/castle.5,
+	  pup_land/ancient/castle/castle.6,
+	  pup_land/ancient/castle/castle.ud1,
+	  pup_land/ancient/castle/ghoswolte,
+	  pup_land/ancient/castle/gothwolte.1,
+	  pup_land/ancient/castle/gothwolte.2,
+	  pup_land/ancient/castle/gothwolte.3,
+	  pup_land/ancient/kurte/house, pup_land/ancient/kurte/kurte,
+	  pup_land/ancient/kurte/shop, pup_land/ancient/ruin/house1,
+	  pup_land/ancient/ruin/house2, pup_land/ancient/ruin/house3,
+	  pup_land/ancient/ruin/house4, pup_land/ancient/ruin/house5,
+	  pup_land/ancient/ruin/path, pup_land/ancient/ruin/shop,
+	  pup_land/ancient/ruin/tower, pup_land/ancient/ruin/underground,
+	  pup_land/ancient/ruin/village,
+	  pup_land/ancient/volcano/guardians,
+	  pup_land/ancient/volcano/treasure,
+	  pup_land/ancient/volcano/volcano.1,
+	  pup_land/ancient/volcano/volcano.2,
+	  pup_land/ancient/volcano/volcano.3: Map header updates: Correct
+	  creation date in map header that was changed in r7448, it was
+	  using the wrong month; Added map author's name where necessary,
+	  update maps with entrance x & y coordinates, adjust map level
+	  difficulty to something slightly more realistic
+
+2008-10-07 21:56  rjtanner
+
+	* ChangeLog: Updated ChangeLog file using svn2cl, and testing SF
+	  commit mailing list
+
 2008-10-07 01:00  rjtanner
 
 	* mlab/citydeclouds/cdcbigstore/cdcbigstore2f: Map header updates:
