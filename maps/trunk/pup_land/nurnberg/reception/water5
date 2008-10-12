@@ -1,11 +1,14 @@
 arch map
 name Water
-difficulty 1
+difficulty 15
 region nurnberg
 width 19
 height 16
+enter_x 12
+enter_y 12
 msg
 Created:  1996-02-22
+Modified: 2008-10-11 Rick Tanner
 endmsg
 end
 arch dungeon_floor
