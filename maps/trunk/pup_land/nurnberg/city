@@ -8,7 +8,7 @@ msg
 Created:  1996-02-07
 Updated 2007.11.12 by Gene Alexander
  - make this an outdoor map for day/night/weather
-Modified: 2008-10-11 Rick Tanner
+Modified: 2008-10-12 Rick Tanner
 endmsg
 outdoor 1
 end
@@ -2064,6 +2064,7 @@ x 12
 y 10
 end
 arch store_magic
+name Wand Shop
 slaying washop
 hp 23
 sp 7
@@ -2134,6 +2135,7 @@ x 12
 y 24
 end
 arch store_magic
+name Alchemy Shop
 slaying alshop
 hp 25
 sp 3
@@ -4244,7 +4246,7 @@ x 26
 y 8
 end
 arch barn
-name storehouse
+name Storehouse
 slaying storehouse
 hp 14
 sp 32
