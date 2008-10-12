@@ -1,11 +1,14 @@
 arch map
 name Headquarter of the Regular Army
-difficulty 1
+difficulty 50
 region nurnberg
 width 36
 height 40
+enter_x 4
+enter_y 6
 msg
-Created:  2000-02-24
+Created:  2000-12-24
+Modified: 2008-10-12 Rick Tanner
 endmsg
 end
 arch pstone_1
