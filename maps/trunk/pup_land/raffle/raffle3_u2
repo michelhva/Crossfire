@@ -1970,6 +1970,10 @@ arch cave11
 x 6
 y 31
 end
+arch small_stones
+x 6
+y 32
+end
 arch cave10
 x 6
 y 32
@@ -9524,6 +9528,10 @@ speed 0.500000
 speed_left -37.099998
 connected 600
 end
+arch small_stones
+x 28
+y 23
+end
 arch block_door_closed
 face blocked.111
 x 28
@@ -9532,6 +9540,10 @@ speed 0.500000
 speed_left -37.099998
 connected 600
 end
+arch small_stones
+x 28
+y 24
+end
 arch block_door_closed
 face blocked.111
 x 28
@@ -9539,6 +9551,10 @@ y 24
 speed 0.500000
 speed_left -37.099998
 connected 600
+end
+arch small_stones
+x 28
+y 25
 end
 arch block_door_closed
 face blocked.111
@@ -9843,6 +9859,10 @@ end
 arch cave23
 x 29
 y 14
+end
+arch small_stones
+x 29
+y 15
 end
 arch cave25
 x 29
