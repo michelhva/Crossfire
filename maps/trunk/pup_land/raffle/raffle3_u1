@@ -2,13 +2,15 @@ arch map
 name Raffle 3
 swap_time 5
 reset_timeout 3600
-difficulty 1
+difficulty 25
 region pupland
 width 45
 height 19
+enter_x 18
+enter_y 16
 msg
 Created:  1997-02-24
-Modified: 2007-11-04 Andreas Kirschbaum
+Modified: 2008-10-12 Rick Tanner
 endmsg
 end
 arch small_stones

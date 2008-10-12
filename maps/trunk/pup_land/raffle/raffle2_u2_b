@@ -2,12 +2,15 @@ arch map
 name Raffle 2
 swap_time 5
 reset_timeout 3600
-difficulty 1
+difficulty 12
 region pupland
 width 29
 height 21
+enter_x 2
+enter_y 11
 msg
-Created:  1997-02-30
+Created:  1997-03-30
+Modified: 2008-10-12 Rick Tanner
 endmsg
 end
 arch flagstone
