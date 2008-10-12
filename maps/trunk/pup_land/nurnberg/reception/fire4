@@ -1,11 +1,14 @@
 arch map
 name Fire
-difficulty 1
+difficulty 18
 region nurnberg
 width 27
 height 27
+enter_x 12
+enter_y 11
 msg
 Created:  1996-02-18
+Modified: 2008-10-11 Rick Tanner
 endmsg
 end
 arch grass
