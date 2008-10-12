@@ -144,11 +144,19 @@ end
 arch cwall_2_1_2
 x 1
 end
+arch dungeon_floor
+x 1
+y 1
+end
 arch firewall_4
 x 1
 y 1
 arch spell_small_fireball
 end
+end
+arch dungeon_floor
+x 1
+y 2
 end
 arch firewall_3
 x 1
@@ -156,11 +164,19 @@ y 2
 arch spell_small_fireball
 end
 end
+arch dungeon_floor
+x 1
+y 3
+end
 arch firewall_3
 x 1
 y 3
 arch spell_small_fireball
 end
+end
+arch dungeon_floor
+x 1
+y 4
 end
 arch firewall_3
 x 1
@@ -168,11 +184,19 @@ y 4
 arch spell_small_fireball
 end
 end
+arch dungeon_floor
+x 1
+y 5
+end
 arch firewall_3
 x 1
 y 5
 arch spell_small_fireball
 end
+end
+arch dungeon_floor
+x 1
+y 6
 end
 arch firewall_3
 x 1
@@ -180,11 +204,19 @@ y 6
 arch spell_small_fireball
 end
 end
+arch dungeon_floor
+x 1
+y 7
+end
 arch firewall_3
 x 1
 y 7
 arch spell_small_fireball
 end
+end
+arch dungeon_floor
+x 1
+y 8
 end
 arch firewall_3
 x 1
@@ -193,11 +225,19 @@ level 100
 arch spell_small_fireball
 end
 end
+arch dungeon_floor
+x 1
+y 9
+end
 arch firewall_3
 x 1
 y 9
 arch spell_small_fireball
 end
+end
+arch dungeon_floor
+x 1
+y 10
 end
 arch firewall_2
 x 1
@@ -292,6 +332,10 @@ end
 arch cwall_2_1_2
 x 2
 end
+arch dungeon_floor
+x 2
+y 1
+end
 arch firewall_5
 x 2
 y 1
@@ -369,6 +413,10 @@ arch grate_closed_1
 x 2
 y 9
 connected 1
+end
+arch dungeon_floor
+x 2
+y 10
 end
 arch firewall_1
 x 2
@@ -453,6 +501,10 @@ end
 arch cwall_2_1_2
 x 3
 end
+arch dungeon_floor
+x 3
+y 1
+end
 arch firewall_5
 x 3
 y 1
@@ -504,6 +556,10 @@ arch grate_closed_1
 x 3
 y 9
 connected 1
+end
+arch dungeon_floor
+x 3
+y 10
 end
 arch firewall_1
 x 3
@@ -577,6 +633,10 @@ end
 arch cwall_2_1_2
 x 4
 end
+arch dungeon_floor
+x 4
+y 1
+end
 arch firewall_5
 x 4
 y 1
@@ -636,6 +696,10 @@ arch grate_closed_1
 x 4
 y 9
 connected 1
+end
+arch dungeon_floor
+x 4
+y 10
 end
 arch firewall_1
 x 4
@@ -745,6 +809,10 @@ end
 arch cwall_2_1_2
 x 5
 end
+arch dungeon_floor
+x 5
+y 1
+end
 arch firewall_5
 x 5
 y 1
@@ -796,6 +864,10 @@ arch grate_closed_1
 x 5
 y 9
 connected 1
+end
+arch dungeon_floor
+x 5
+y 10
 end
 arch firewall_1
 x 5
@@ -913,6 +985,10 @@ end
 arch cwall_2_1_2
 x 6
 end
+arch dungeon_floor
+x 6
+y 1
+end
 arch firewall_5
 x 6
 y 1
@@ -972,6 +1048,10 @@ arch grate_closed_1
 x 6
 y 9
 connected 1
+end
+arch dungeon_floor
+x 6
+y 10
 end
 arch firewall_1
 x 6
@@ -1083,6 +1163,10 @@ end
 arch cwall_2_1_2
 x 7
 end
+arch dungeon_floor
+x 7
+y 1
+end
 arch firewall_5
 x 7
 y 1
@@ -1138,6 +1222,10 @@ arch grate_closed_1
 x 7
 y 9
 connected 1
+end
+arch dungeon_floor
+x 7
+y 10
 end
 arch firewall_1
 x 7
@@ -1251,6 +1339,10 @@ end
 arch cwall_2_1_2
 x 8
 end
+arch dungeon_floor
+x 8
+y 1
+end
 arch firewall_5
 x 8
 y 1
@@ -1314,6 +1406,10 @@ arch grate_closed_1
 x 8
 y 9
 connected 1
+end
+arch dungeon_floor
+x 8
+y 10
 end
 arch firewall_1
 x 8
@@ -1415,6 +1511,10 @@ end
 arch cwall_2_1_2
 x 9
 end
+arch dungeon_floor
+x 9
+y 1
+end
 arch firewall_5
 x 9
 y 1
@@ -1470,6 +1570,10 @@ arch grate_closed_1
 x 9
 y 9
 connected 1
+end
+arch dungeon_floor
+x 9
+y 10
 end
 arch firewall_1
 x 9
@@ -1565,6 +1669,10 @@ end
 arch cwall_2_1_2
 x 10
 end
+arch dungeon_floor
+x 10
+y 1
+end
 arch firewall_5
 x 10
 y 1
@@ -1624,6 +1732,10 @@ arch grate_closed_1
 x 10
 y 9
 connected 1
+end
+arch dungeon_floor
+x 10
+y 10
 end
 arch firewall_1
 x 10
