@@ -1,11 +1,14 @@
 arch map
 name Orc Farm
-difficulty 1
+difficulty 8
 region pupland
 width 25
 height 17
+enter_x 2
+enter_y 1
 msg
-Created:  1996-02-11
+Created:  1996-06-11
+Modified: 2008-10-12 Rick Tanner
 endmsg
 end
 arch dungeon_floor
