@@ -1,11 +1,14 @@
 arch map
 name West Path
-difficulty 1
+difficulty 17
 region pupland
 width 20
 height 10
+enter_x 19
+enter_y 1
 msg
-Created:  1996-02-27
+Created:  1996-06-27
+Modified: 2008-10-12 Rick Tanner
 endmsg
 end
 arch permanent_lava

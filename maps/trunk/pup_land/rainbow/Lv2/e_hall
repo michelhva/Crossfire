@@ -1,11 +1,14 @@
 arch map
 name BlackMind
-difficulty 1
+difficulty 15
 region pupland
 width 25
 height 20
+enter_x 11
+enter_y 8
 msg
-Created:  1996-02-14
+Created:  1996-06-14
+Modified: 2008-10-12 Rick Tanner
 endmsg
 end
 arch cobblestones2
