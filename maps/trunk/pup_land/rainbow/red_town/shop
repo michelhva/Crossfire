@@ -1,15 +1,17 @@
 arch map
-name Bobo's shop
-difficulty 1
+name Bobo's Shop
+difficulty 15
 region pupland
 shopitems weapon:25;bow:10;armour:10;shield:10;helmet:10;cloak:15;boots:10;gloves:10;bracers:10;girdle:5;food:40;flesh:40;wand:20;rod:15;*:-60
 shopmax 6000
 shoprace dwarf
 width 13
 height 16
+enter_x 6
+enter_y 12
 msg
-Created:  2000-02-22
-Modified: 2007-11-04 Andreas Kirschbaum
+Created:  2000-10-22
+Modified: 2008-10-13 Rick Tanner
 endmsg
 end
 arch woodfloor
