@@ -1,12 +1,15 @@
 arch map
 name Hole in the Ground
-difficulty 7
+difficulty 18
 region pupland
 darkness 3
 width 30
 height 32
+enter_x 2
+enter_y 29
 msg
 Created:  1997-02-27
+Modified: 2008-10-13 Rick Tanner
 endmsg
 end
 arch pstone_2
