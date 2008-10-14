@@ -1,11 +1,14 @@
 arch map
 name Ancient Ruins
-difficulty 1
+difficulty 22
 region pupland
 width 19
 height 16
+enter_x 2
+enter_y 2
 msg
 Created:  1996-02-07
+Modified: 2008-10-13 Rick Tanner
 endmsg
 end
 arch blocked
