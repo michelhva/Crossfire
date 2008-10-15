@@ -49808,6 +49808,10 @@ arch dungeon_floor
 x 54
 y 63
 end
+arch swall_1_4_half
+x 54
+y 63
+end
 arch cwall_2_1_1
 x 54
 y 63
@@ -50767,6 +50771,10 @@ end
 arch stonefloor2
 name stonefloor
 name_pl stonefloor
+x 55
+y 63
+end
+arch swall_2_1_2
 x 55
 y 63
 end
@@ -51742,6 +51750,10 @@ name_pl stonefloor
 x 56
 y 63
 end
+arch swall_2_2_3
+x 56
+y 63
+end
 arch light4
 x 56
 y 64
@@ -51749,6 +51761,10 @@ end
 arch stonefloor2
 name stonefloor
 name_pl stonefloor
+x 56
+y 64
+end
+arch swall_2_1_1
 x 56
 y 64
 end
@@ -51759,6 +51775,10 @@ end
 arch stonefloor2
 name stonefloor
 name_pl stonefloor
+x 56
+y 65
+end
+arch swall_2_1_1
 x 56
 y 65
 end
@@ -51767,6 +51787,10 @@ x 56
 y 66
 end
 arch dungeon_floor
+x 56
+y 66
+end
+arch swall_1_2_half
 x 56
 y 66
 end
@@ -59093,11 +59117,19 @@ arch dungeon_floor
 x 63
 y 54
 end
+arch swall_2_2_2
+x 63
+y 54
+end
 arch light4
 x 63
 y 55
 end
 arch dungeon_floor
+x 63
+y 55
+end
+arch swall_2_1_1
 x 63
 y 55
 end
@@ -59106,6 +59138,10 @@ x 63
 y 56
 end
 arch dungeon_floor
+x 63
+y 56
+end
+arch swall_2_1_1
 x 63
 y 56
 end
@@ -59114,6 +59150,10 @@ x 63
 y 57
 end
 arch dungeon_floor
+x 63
+y 57
+end
+arch swall_2_1_1
 x 63
 y 57
 end
@@ -59122,6 +59162,10 @@ x 63
 y 58
 end
 arch dungeon_floor
+x 63
+y 58
+end
+arch swall_2_2_1
 x 63
 y 58
 end
@@ -60145,6 +60189,10 @@ arch dungeon_floor
 x 64
 y 54
 end
+arch swall_2_1_2
+x 64
+y 54
+end
 arch light4
 x 64
 y 55
@@ -60180,6 +60228,10 @@ x 64
 y 58
 end
 arch dungeon_floor
+x 64
+y 58
+end
+arch swall_2_1_2
 x 64
 y 58
 end
@@ -61313,6 +61365,10 @@ arch dungeon_floor
 x 65
 y 54
 end
+arch swall_1_3_half
+x 65
+y 54
+end
 arch cwall_1_4
 x 65
 y 54
@@ -61352,6 +61408,10 @@ x 65
 y 58
 end
 arch dungeon_floor
+x 65
+y 58
+end
+arch swall_1_3_half
 x 65
 y 58
 end
