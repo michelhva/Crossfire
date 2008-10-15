@@ -1,16 +1,16 @@
 arch map
-name <unnamed>
+name Castle de Clouds, Dungeon
 reset_timeout 7200
-difficulty 1
+difficulty 90
 region citydeclouds
 darkness 3
 width 99
 height 99
-enter_x 1
-enter_y 1
+enter_x 54
+enter_y 48
 msg
 Created:  2004-08-03 Mikeeusa
-Modified: 2008-05-18 Arvid Norlander
+Modified: 2008-10-14 Rick Tanner
 endmsg
 end
 arch light4
