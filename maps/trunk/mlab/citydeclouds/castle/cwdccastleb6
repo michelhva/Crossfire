@@ -1,15 +1,16 @@
 arch map
-name Cloud World Castle
+name Cloud World Castle, Dungeon Level 6
 reset_timeout 7200
-difficulty 1
+difficulty 20
 region citydeclouds
 darkness 3
 width 99
 height 99
-enter_x 1
-enter_y 1
+enter_x 66
+enter_y 71
 msg
 Created:  2004-08-03 Mikeeusa
+Modified: 2008-10-15 Rick Tanner
 endmsg
 end
 arch light3
