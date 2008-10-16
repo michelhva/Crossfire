@@ -1,11 +1,14 @@
 arch map
-name Cloud City Castle
+name Cloud City Castle, Dungeon Level 12
 difficulty 1
 region citydeclouds
 width 10
 height 11
+enter_x 5
+enter_y 6
 msg
-Created:  2007-03-11
+Created:  2007-03-11 Mikeeusa
+Modified: 2008-10-15 Rick Tanner
 endmsg
 end
 arch blocked
@@ -277,8 +280,8 @@ y 6
 end
 arch stair3_ystone_up
 slaying cwdccastleb11
-hp 58
-sp 57
+hp 5
+sp 6
 x 5
 y 6
 end
@@ -327,8 +330,8 @@ y 4
 end
 arch stair3_ystone_do
 slaying cwdccastleb13
-hp 59
-sp 55
+hp 6
+sp 4
 x 6
 y 4
 end
