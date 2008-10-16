@@ -1,11 +1,14 @@
 arch map
-name Cloud World Castle
+name Cloud World Castle, Dungeon Level 10
 difficulty 1
 region citydeclouds
 width 10
 height 11
+enter_x 5
+enter_y 7
 msg
-Created:  2007-03-11
+Created:  2007-03-11 Mikeeusa
+Modified: 2008-10-15 Rick Tanner
 endmsg
 end
 arch blocked
@@ -281,8 +284,8 @@ y 7
 end
 arch stair3_ystone_up
 slaying cwdccastleb9
-hp 58
-sp 58
+hp 5
+sp 7
 x 5
 y 7
 end
@@ -386,8 +389,8 @@ y 5
 end
 arch stair3_ystone_do
 slaying cwdccastleb11
-hp 60
-sp 56
+hp 7
+sp 5
 x 7
 y 5
 end
