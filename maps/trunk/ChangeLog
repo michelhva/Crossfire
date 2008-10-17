@@ -1,3 +1,97 @@
+2008-10-16 01:37  rjtanner
+
+	* mlab/citydeclouds/keep/cwdcrandkeep1: Map header updates: Update
+	  maps with entrance x & y coordinates, added map author name, make
+	  the map name more descriptive
+
+2008-10-16 01:34  rjtanner
+
+	* mlab/citydeclouds/cdcspire/cdcspire1,
+	  mlab/citydeclouds/cdcspire/cdcspireexit1,
+	  mlab/citydeclouds/cdcspire/cdcspireexit2: Map header updates:
+	  Update maps with entrance x & y coordinates, adjust map level
+	  difficulty to something slightly more realistic, make the map
+	  name more descriptive
+
+2008-10-16 01:29  rjtanner
+
+	* mlab/citydeclouds/cdccastlekeep/cdccastlekeep1,
+	  mlab/citydeclouds/cdccastlekeep/cdccastlekeep2,
+	  mlab/citydeclouds/cdccastlekeep/cdccastlekeep3,
+	  mlab/citydeclouds/cdccastlekeep/cdccastlekeep4,
+	  mlab/citydeclouds/cdccastlekeep/cdccastlekeepb1,
+	  mlab/citydeclouds/cdccastlekeep/cdckeepbarrack1: Map header
+	  updates: Update maps with entrance x & y coordinates, adjust map
+	  level difficulty to something slightly more realistic, make the
+	  map name more descriptive
+
+2008-10-16 01:19  rjtanner
+
+	* mlab/citydeclouds/castle/cwdccastleb10,
+	  mlab/citydeclouds/castle/cwdccastleb11,
+	  mlab/citydeclouds/castle/cwdccastleb12,
+	  mlab/citydeclouds/castle/cwdccastleb13,
+	  mlab/citydeclouds/castle/cwdccastleb14,
+	  mlab/citydeclouds/castle/cwdccastleb15,
+	  mlab/citydeclouds/castle/cwdccastleb16,
+	  mlab/citydeclouds/castle/cwdccastleb17,
+	  mlab/citydeclouds/castle/cwdccastleb18,
+	  mlab/citydeclouds/castle/cwdccastleb19,
+	  mlab/citydeclouds/castle/cwdccastleb20,
+	  mlab/citydeclouds/castle/cwdccastleb21,
+	  mlab/citydeclouds/castle/cwdccastleb9: Remove maps (and
+	  stairways) to nowhere
+
+2008-10-16 01:18  rjtanner
+
+	* mlab/citydeclouds/castle/cwdccastleb8: Revert change r10111 as
+	  the stairway leads to more stairways, which ultimately leads to a
+	  nonexistent map set
+
+2008-10-16 01:16  rjtanner
+
+	* mlab/citydeclouds/castle/cwdccastleb10,
+	  mlab/citydeclouds/castle/cwdccastleb11,
+	  mlab/citydeclouds/castle/cwdccastleb12,
+	  mlab/citydeclouds/castle/cwdccastleb13,
+	  mlab/citydeclouds/castle/cwdccastleb14,
+	  mlab/citydeclouds/castle/cwdccastleb15,
+	  mlab/citydeclouds/castle/cwdccastleb16,
+	  mlab/citydeclouds/castle/cwdccastleb17,
+	  mlab/citydeclouds/castle/cwdccastleb18,
+	  mlab/citydeclouds/castle/cwdccastleb19,
+	  mlab/citydeclouds/castle/cwdccastleb20,
+	  mlab/citydeclouds/castle/cwdccastleb21,
+	  mlab/citydeclouds/castle/cwdccastleb9: Map header updates: Update
+	  maps with entrance x & y coordinates, adjust map level difficulty
+	  to something slightly more realistic, make the map name more
+	  descriptive, align & link stairways
+
+2008-10-16 00:42  rjtanner
+
+	* mlab/citydeclouds/castle/cwdccastleb8: Re-insert stairs to
+	  (re)link cwdccastleb8 to cwdccastleb9
+
+2008-10-16 00:38  rjtanner
+
+	* mlab/citydeclouds/castle/cwdccastleb5,
+	  mlab/citydeclouds/castle/cwdccastleb6,
+	  mlab/citydeclouds/castle/cwdccastleb7,
+	  mlab/citydeclouds/castle/cwdccastleb8,
+	  mlab/citydeclouds/castle/cwdccastleofmarquis1,
+	  mlab/citydeclouds/castle/cwdccastleofmarquis2,
+	  mlab/citydeclouds/castle/cwdccastleofmarquis3,
+	  mlab/citydeclouds/castle/cwdccastleofmarquis4,
+	  mlab/citydeclouds/castle/cwdccastleofmarquis5,
+	  mlab/citydeclouds/castle/cwdccastleofmarquisb1: (Inprogress
+	  checkin) Map header updates: Update maps with entrance x & y
+	  coordinates, adjust map level difficulty to something slightly
+	  more realistic, make the map name more descriptive
+
+2008-10-15 22:01  rjtanner
+
+	* ChangeLog: Updated ChangeLog file using svn2cl
+
 2008-10-15 02:12  rjtanner
 
 	* mlab/mlabscrntrd1, mlab/mlabscrntrd2, mlab/mlabscrntrdb1,
