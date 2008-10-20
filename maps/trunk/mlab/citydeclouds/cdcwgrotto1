@@ -1,17 +1,17 @@
 arch map
 name Crill's Projectile Store
 reset_timeout 7200
-difficulty 1
+difficulty 15
 region citydeclouds
 shopitems bow:80;arrow:80;weapon:15;*:-80
 shopmax 2000
 width 60
 height 31
-enter_x 1
-enter_y 1
+enter_x 28
+enter_y 26
 msg
-Created:  2004-02-29 Mikeeusa
-Modified: 2008-06-04 Arvid Norlander
+Created:  2004-07-29 Mikeeusa
+Modified: 2008-10-18 Rick Tanner
 endmsg
 end
 arch blocked
