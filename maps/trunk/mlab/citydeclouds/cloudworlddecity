@@ -9,7 +9,7 @@ enter_x 29
 enter_y 112
 msg
 Created:  2003-11-09 mikeeusa
-Modified: 2008-10-14 Rick Tanner
+Modified: 2008-10-18 Rick Tanner
 endmsg
 outdoor 1
 end
@@ -139778,7 +139778,7 @@ x 85
 y 91
 end
 arch store_alchemy
-name Potion Shop
+name City de Clouds Potion Shop
 slaying shops/cwdcpotionshop1
 hp 14
 sp 18
@@ -144917,7 +144917,7 @@ x 88
 y 95
 end
 arch store_general
-name General Shop
+name City de Clouds General Shop
 slaying shops/cwdcgenshop1
 hp 14
 sp 18
@@ -168759,6 +168759,7 @@ x 103
 y 76
 end
 arch shrine
+name Shrine to Valriel
 slaying temples/valriel
 hp 13
 sp 7
