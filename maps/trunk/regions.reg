@@ -61,6 +61,7 @@ endmsg
 end
 region scorncounty
 parent scorn
+longname The Kingdom of Scorn, Surrounding Area
 msg
 Outside the gates of the city of scorn, the activity of the town can be heard,
 but not seen the cries of the traders, and calls of the sailors belie your
@@ -70,6 +71,7 @@ endmsg
 end
 region streetsofscorn
 parent scorn
+longname The Kingdom of Scorn, Inner City
 msg
 Here, in amidst the trading activity at the heart of scorn you find
 yourself scarcely able to hear yourself think with the din of commerce all around
@@ -78,6 +80,7 @@ endmsg
 end
 region scornarena
 parent scorn
+longname The Kingdom of Scorn, Arena
 msg
 A giant amphitheatre made of white stone that glistens in the sunlight. People
 in the stands cheering and screaming for blood. The finality of the gates that
@@ -87,6 +90,7 @@ endmsg
 end
 region scornoldcity
 parent scorn
+longname The Old City of Scorn
 msg
 You find yourself gasping in wonder at the extensive caverns underneath the city,
 here there remains the ruins of old Scorn. A reminder of the great power the city
@@ -181,18 +185,21 @@ endmsg
 end
 region nurnberg
 parent pupland
+longname Nurnberg
 msg
 Describe Nurnberg
 endmsg
 end
 region lonetown
 parent pupland
+longname Lonetown
 msg
 Describe Lonetown
 endmsg
 end
 region stoneville
 parent world
+longname Stoneville
 msg
 Stoneville is a small ship port located on the western side of 
 Dragon Island. The island primarily serves as a vacation residence 
@@ -206,6 +213,7 @@ endmsg
 end
 region firevolcano
 parent world
+longname Team Arena Volcano
 msg
 This fiery volcano rose up from the mountains one day.  It is inhabited by a
 strange race of fire creatures who seem friendly, but very competitive.
@@ -213,7 +221,7 @@ endmsg
 end
 region azumauindo
 parent world
-longname The shogunate of Azumauindo
+longname The Shogunate of Azumauindo
 msg
 A hidden civilization, at the far east of the world.
 endmsg
