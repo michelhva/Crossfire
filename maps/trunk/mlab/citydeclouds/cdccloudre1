@@ -1,14 +1,15 @@
 arch map
 name City de Clouds Real Estate INC.
 reset_timeout 7200
-difficulty 1
+difficulty 3
 region citydeclouds
 width 25
 height 25
-enter_x 1
-enter_y 1
+enter_x 17
+enter_y 3
 msg
 Created:  2004-08-03 Mikeeusa
+Modified: 2008-10-18 Rick Tanner
 endmsg
 end
 arch dungeon_magic
