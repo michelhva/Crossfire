@@ -4,7 +4,7 @@ region portjoseph
 width 50
 height 50
 msg
-Modified: 2007-12-24 tchize
+Modified: 2008-10-21 Rick Tanner
 endmsg
 outdoor 1
 tile_path_1 world_100_115
@@ -5779,6 +5779,7 @@ x 23
 y 25
 end
 arch phole_1
+name Hole in the Sand
 slaying /port_joseph/pirates/torthole
 hp 7
 sp 6
