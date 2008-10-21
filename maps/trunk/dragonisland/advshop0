@@ -1,5 +1,5 @@
 arch map
-name The Adventurous Shop
+name The Adventurous Shop, Entrance
 difficulty 20
 region stoneville
 shopitems food:5;armour:5;*:2
@@ -11,7 +11,7 @@ enter_x 7
 enter_y 15
 msg
 Created:  1997-02-22
-Modified: 2008-09-14 Rick Tanner
+Modified: 2008-10-20 Rick Tanner
 endmsg
 end
 arch woodfloor

@@ -1,5 +1,5 @@
 arch map
-name Acme Building Supply
+name Acme Building Supply of Wolfsburg
 difficulty 75
 region wolfsburg
 shopitems building material:95;item builder:95;*:-100
@@ -10,7 +10,7 @@ enter_x 17
 enter_y 38
 msg
 Created:  2005-12-23 Gene Alexander
-Modified: 2008-10-04 Rick Tanner
+Modified: 2008-10-20 Rick Tanner
 endmsg
 end
 arch shop_empty
