@@ -892,6 +892,10 @@ arch cwall_1_2
 x 6
 y 11
 end
+arch swall_1_1_half
+x 6
+y 11
+end
 arch dungeon_magic
 x 6
 y 12
@@ -900,7 +904,7 @@ arch marble
 x 6
 y 12
 end
-arch swall_1_1
+arch swall_2_1_1
 x 6
 y 12
 end
@@ -936,11 +940,15 @@ arch marble
 x 6
 y 15
 end
-arch swall_1_2
+arch swall_2_1_1
 x 6
 y 15
 end
 arch marble
+x 6
+y 16
+end
+arch swall_1_2_half
 x 6
 y 16
 end
@@ -1248,31 +1256,39 @@ arch cwall_1_2
 x 8
 y 10
 end
-arch dungeon_magic
+arch swall_1_1_half
 x 8
-y 11
-end
-arch marble
-x 8
-y 11
-end
-arch swall_1_1
-x 8
-y 11
+y 10
 end
 arch dungeon_magic
 x 8
+y 11
+end
+arch marble
+x 8
+y 11
+end
+arch swall_2_1_1
+x 8
+y 11
+end
+arch dungeon_magic
+x 8
 y 12
 end
 arch marble
 x 8
 y 12
 end
-arch swall_1_2
+arch swall_2_1_1
 x 8
 y 12
 end
 arch marble
+x 8
+y 13
+end
+arch swall_1_2_half
 x 8
 y 13
 end
@@ -1304,31 +1320,39 @@ arch cwall_1_2
 x 8
 y 16
 end
-arch dungeon_magic
+arch swall_1_1_half
 x 8
-y 17
-end
-arch marble
-x 8
-y 17
-end
-arch swall_1_1
-x 8
-y 17
+y 16
 end
 arch dungeon_magic
 x 8
+y 17
+end
+arch marble
+x 8
+y 17
+end
+arch swall_2_1_1
+x 8
+y 17
+end
+arch dungeon_magic
+x 8
 y 18
 end
 arch marble
 x 8
 y 18
 end
-arch swall_1_2
+arch swall_2_1_1
 x 8
 y 18
 end
 arch marble
+x 8
+y 19
+end
+arch swall_1_2_half
 x 8
 y 19
 end
@@ -1994,6 +2018,10 @@ arch marble
 x 12
 y 8
 end
+arch swall_2_2_2
+x 12
+y 8
+end
 arch cwall_0
 x 12
 y 8
@@ -2002,6 +2030,10 @@ arch marble
 x 12
 y 9
 end
+arch swall_2_1_1
+x 12
+y 9
+end
 arch cwall_0
 x 12
 y 9
@@ -2014,7 +2046,7 @@ arch marble
 x 12
 y 10
 end
-arch swall_1_1
+arch swall_2_1_1
 x 12
 y 10
 end
@@ -2026,7 +2058,7 @@ arch marble
 x 12
 y 11
 end
-arch swall_1_2
+arch swall_2_1_1
 x 12
 y 11
 end
@@ -2034,7 +2066,15 @@ arch marble
 x 12
 y 12
 end
+arch swall_1_2_half
+x 12
+y 12
+end
 arch cwall_0
+x 12
+y 12
+end
+arch swall_1_1_half
 x 12
 y 12
 end
@@ -2046,7 +2086,7 @@ arch marble
 x 12
 y 13
 end
-arch swall_1_1
+arch swall_2_1_1
 x 12
 y 13
 end
@@ -2058,7 +2098,7 @@ arch marble
 x 12
 y 14
 end
-arch swall_1_2
+arch swall_2_1_1
 x 12
 y 14
 end
@@ -2066,7 +2106,15 @@ arch marble
 x 12
 y 15
 end
+arch swall_1_2_half
+x 12
+y 15
+end
 arch cwall_0
+x 12
+y 15
+end
+arch swall_1_1_half
 x 12
 y 15
 end
@@ -2078,7 +2126,7 @@ arch marble
 x 12
 y 16
 end
-arch swall_1_1
+arch swall_2_1_1
 x 12
 y 16
 end
@@ -2090,11 +2138,15 @@ arch marble
 x 12
 y 17
 end
-arch swall_1_2
+arch swall_2_1_1
 x 12
 y 17
 end
 arch marble
+x 12
+y 18
+end
+arch swall_1_2_half
 x 12
 y 18
 end
@@ -2181,6 +2233,10 @@ arch marble
 x 13
 y 4
 end
+arch swall_1_4_half
+x 13
+y 4
+end
 arch cwall_1_3
 x 13
 y 4
@@ -2213,7 +2269,7 @@ arch marble
 x 13
 y 8
 end
-arch swall_1_4
+arch swall_2_1_2
 x 13
 y 8
 end
@@ -2344,7 +2400,7 @@ arch marble
 x 14
 y 4
 end
-arch swall_1_4
+arch swall_2_1_2
 x 14
 y 4
 end
@@ -2959,7 +3015,7 @@ arch marble
 x 17
 y 4
 end
-arch swall_1_3
+arch swall_2_1_2
 x 17
 y 4
 end
@@ -3167,6 +3223,10 @@ arch marble
 x 18
 y 4
 end
+arch swall_1_3_half
+x 18
+y 4
+end
 arch cwall_1_4
 x 18
 y 4
@@ -3199,7 +3259,7 @@ arch marble
 x 18
 y 8
 end
-arch swall_1_3
+arch swall_2_1_2
 x 18
 y 8
 end
@@ -3363,6 +3423,10 @@ arch marble
 x 19
 y 8
 end
+arch swall_2_2_3
+x 19
+y 8
+end
 arch cwall_0
 x 19
 y 8
@@ -3371,6 +3435,10 @@ arch marble
 x 19
 y 9
 end
+arch swall_2_1_1
+x 19
+y 9
+end
 arch cwall_0
 x 19
 y 9
@@ -3383,7 +3451,7 @@ arch marble
 x 19
 y 10
 end
-arch swall_1_1
+arch swall_2_1_1
 x 19
 y 10
 end
@@ -3395,7 +3463,7 @@ arch marble
 x 19
 y 11
 end
-arch swall_1_2
+arch swall_2_1_1
 x 19
 y 11
 end
@@ -3403,7 +3471,15 @@ arch marble
 x 19
 y 12
 end
+arch swall_1_2_half
+x 19
+y 12
+end
 arch cwall_0
+x 19
+y 12
+end
+arch swall_1_1_half
 x 19
 y 12
 end
@@ -3415,7 +3491,7 @@ arch marble
 x 19
 y 13
 end
-arch swall_1_1
+arch swall_2_1_1
 x 19
 y 13
 end
@@ -3427,7 +3503,7 @@ arch marble
 x 19
 y 14
 end
-arch swall_1_2
+arch swall_2_1_1
 x 19
 y 14
 end
@@ -3435,7 +3511,15 @@ arch marble
 x 19
 y 15
 end
+arch swall_1_2_half
+x 19
+y 15
+end
 arch cwall_0
+x 19
+y 15
+end
+arch swall_1_1_half
 x 19
 y 15
 end
@@ -3447,7 +3531,7 @@ arch marble
 x 19
 y 16
 end
-arch swall_1_1
+arch swall_2_1_1
 x 19
 y 16
 end
@@ -3459,11 +3543,15 @@ arch marble
 x 19
 y 17
 end
-arch swall_1_2
+arch swall_2_1_1
 x 19
 y 17
 end
 arch marble
+x 19
+y 18
+end
+arch swall_1_2_half
 x 19
 y 18
 end
@@ -4167,31 +4255,39 @@ arch cwall_1_2
 x 23
 y 10
 end
-arch dungeon_magic
+arch swall_1_1_half
 x 23
-y 11
-end
-arch marble
-x 23
-y 11
-end
-arch swall_1_1
-x 23
-y 11
+y 10
 end
 arch dungeon_magic
 x 23
+y 11
+end
+arch marble
+x 23
+y 11
+end
+arch swall_2_1_1
+x 23
+y 11
+end
+arch dungeon_magic
+x 23
 y 12
 end
 arch marble
 x 23
 y 12
 end
-arch swall_1_2
+arch swall_2_1_1
 x 23
 y 12
 end
 arch marble
+x 23
+y 13
+end
+arch swall_1_2_half
 x 23
 y 13
 end
@@ -4223,31 +4319,39 @@ arch cwall_1_2
 x 23
 y 16
 end
-arch dungeon_magic
+arch swall_1_1_half
 x 23
-y 17
-end
-arch marble
-x 23
-y 17
-end
-arch swall_1_1
-x 23
-y 17
+y 16
 end
 arch dungeon_magic
 x 23
+y 17
+end
+arch marble
+x 23
+y 17
+end
+arch swall_2_1_1
+x 23
+y 17
+end
+arch dungeon_magic
+x 23
 y 18
 end
 arch marble
 x 23
 y 18
 end
-arch swall_1_2
+arch swall_2_1_1
 x 23
 y 18
 end
 arch marble
+x 23
+y 19
+end
+arch swall_1_2_half
 x 23
 y 19
 end
@@ -4539,6 +4643,10 @@ arch cwall_1_2
 x 25
 y 11
 end
+arch swall_1_1_half
+x 25
+y 11
+end
 arch dungeon_magic
 x 25
 y 12
@@ -4547,7 +4655,7 @@ arch marble
 x 25
 y 12
 end
-arch swall_1_1
+arch swall_2_1_1
 x 25
 y 12
 end
@@ -4583,11 +4691,15 @@ arch marble
 x 25
 y 15
 end
-arch swall_1_2
+arch swall_2_1_1
 x 25
 y 15
 end
 arch marble
+x 25
+y 16
+end
+arch swall_1_2_half
 x 25
 y 16
 end
