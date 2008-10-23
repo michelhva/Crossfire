@@ -668,12 +668,12 @@ dam 50
 ac -15
 x 1
 y 23
-speed 0.600000
-speed_left -11.099999
+speed 0.6
 level 40
 resist_physical 100
-resist_electricity 100
-material 64
+resist_electricity 30
+resist_weaponmagic 100
+resist_paralyze 100
 carrying 5000
 move_type walk fly_low
 arch pyro_book
@@ -3640,12 +3640,12 @@ dam 50
 ac -15
 x 12
 y 20
-speed 0.600000
-speed_left -11.099999
+speed 0.6
 level 40
 resist_physical 100
-resist_electricity 100
-material 64
+resist_electricity 30
+resist_weaponmagic 100
+resist_paralyze 100
 carrying 5000
 move_type walk fly_low
 arch pyro_book
