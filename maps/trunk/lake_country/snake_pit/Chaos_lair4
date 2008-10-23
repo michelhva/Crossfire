@@ -1281,19 +1281,13 @@ move_type walk fly_low
 arch gem
 nrof 600
 end
-arch sorcerer_book
-name stones
-face largestone.111
-randomitems none
-no_pick 1
-arch spell_color_spray
-end
-end
 arch spell_sm_lightning
 end
 arch abil_icestorm
 end
 arch spell_mass_confusion
+end
+arch spell_color_spray
 end
 end
 arch large_stones
@@ -1415,19 +1409,13 @@ move_type walk fly_low
 arch gem
 nrof 600
 end
-arch sorcerer_book
-name stones
-face largestone.111
-randomitems none
-no_pick 1
-arch spell_color_spray
-end
-end
 arch spell_sm_lightning
 end
 arch abil_icestorm
 end
 arch spell_mass_confusion
+end
+arch spell_color_spray
 end
 end
 arch large_stones
@@ -2403,19 +2391,13 @@ move_type walk fly_low
 arch gem
 nrof 600
 end
-arch sorcerer_book
-name stones
-face largestone.111
-randomitems none
-no_pick 1
-arch spell_color_spray
-end
-end
 arch spell_sm_lightning
 end
 arch abil_icestorm
 end
 arch spell_mass_confusion
+end
+arch spell_color_spray
 end
 end
 arch large_stones
