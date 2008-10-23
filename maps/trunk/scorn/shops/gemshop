@@ -65,7 +65,10 @@ end
 arch shop_empty
 y 8
 end
-arch wall_3_2
+arch swall_1_4_half
+y 8
+end
+arch wall_2_1_1
 y 8
 end
 arch shop_empty
@@ -487,7 +490,11 @@ arch shop_empty
 x 5
 y 8
 end
-arch wall_2_2_3
+arch swall_1_3_half
+x 5
+y 8
+end
+arch wall_1_1
 x 5
 y 8
 end
