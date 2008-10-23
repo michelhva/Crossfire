@@ -1,6 +1,9 @@
 arch map
 name Fortress Ang, Store
 difficulty 10
+shopitems gem:80;amulet:40;ring:40;book:35;scroll:40;spellbook:40;skillscroll:50;wand:40;rod:40;horn:45;lamp:95;*:-33
+shopmin 25
+shopmax 5000
 width 20
 height 13
 enter_x 8
