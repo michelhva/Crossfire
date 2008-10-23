@@ -291,12 +291,16 @@ dam 60
 ac -15
 x 1
 y 7
-speed 0.800000
-speed_left -4.700000
+speed 0.8
 level 60
 resist_physical 100
-resist_electricity 100
-material 64
+resist_electricity 30
+resist_cold 0
+resist_acid 100
+resist_weaponmagic 100
+resist_paralyze 100
+resist_fear 0
+resist_blind 0
 carrying 5100
 move_type walk fly_low
 arch pyro_book
