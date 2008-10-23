@@ -141,10 +141,17 @@ y 20
 speed 1.0
 speed_left -0.920000
 level 99
-attacktype 351389
-resist_electricity 100
-resist_confusion 100
-resist_acid 100
+attacktype 327680
+resist_physical 100
+resist_magic 0
+resist_fire 100
+resist_electricity 30
+resist_confusion 30
+resist_acid 30
+resist_poison 100
+resist_slow 100
+resist_paralyze 100
+resist_blind 0
 carrying 545050
 move_type walk fly_low
 can_cast_spell 1
