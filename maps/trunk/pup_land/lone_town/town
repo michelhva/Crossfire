@@ -8,7 +8,7 @@ enter_x 5
 enter_y 18
 msg
 Created:  1996-02-25
-Modified: 2008-10-11 Rick Tanner
+Modified: 2008-10-23 Rick Tanner
 endmsg
 end
 arch grass
@@ -1240,7 +1240,7 @@ x 10
 y 9
 end
 arch store_general
-name General Shop
+name Lone Town General Shop
 slaying gshop
 hp 7
 sp 14
@@ -1662,7 +1662,7 @@ x 13
 y 5
 end
 arch store_general
-name Gem Shop
+name Lone Town Gem Shop
 slaying gemshop
 sp 8
 x 13
