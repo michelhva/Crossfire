@@ -187,8 +187,14 @@ end
 arch cave3
 y 29
 end
+arch medium_stones
+y 30
+end
 arch cave3
 y 30
+end
+arch medium_stones
+y 31
 end
 arch cave23
 y 31
@@ -709,6 +715,10 @@ arch large_stones
 x 1
 y 30
 end
+arch medium_stones
+x 1
+y 31
+end
 arch cave2
 x 1
 y 31
@@ -1035,6 +1045,10 @@ end
 arch cave1
 x 2
 y 30
+end
+arch medium_stones
+x 2
+y 31
 end
 arch cave22
 x 2
@@ -1390,6 +1404,10 @@ end
 arch blocked
 x 4
 y 5
+end
+arch medium_stones
+x 4
+y 6
 end
 arch cave4
 x 4
@@ -3099,6 +3117,10 @@ arch cave1
 x 10
 y 14
 end
+arch medium_stones
+x 10
+y 15
+end
 arch cave22
 x 10
 y 15
@@ -3698,9 +3720,17 @@ arch cave2
 x 12
 y 29
 end
+arch medium_stones
+x 12
+y 30
+end
 arch cave24
 x 12
 y 30
+end
+arch medium_stones
+x 12
+y 31
 end
 arch cave23
 x 12
@@ -3911,6 +3941,10 @@ arch cave9
 x 13
 y 30
 end
+arch medium_stones
+x 13
+y 31
+end
 arch cave2
 x 13
 y 31
@@ -4112,6 +4146,10 @@ end
 arch large_stones
 x 14
 y 30
+end
+arch medium_stones
+x 14
+y 31
 end
 arch cave2
 x 14
@@ -4326,9 +4364,17 @@ arch cave1
 x 15
 y 29
 end
+arch medium_stones
+x 15
+y 30
+end
 arch cave1
 x 15
 y 30
+end
+arch medium_stones
+x 15
+y 31
 end
 arch cave22
 x 15
