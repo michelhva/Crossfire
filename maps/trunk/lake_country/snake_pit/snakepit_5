@@ -463,11 +463,13 @@ exp 200000
 dam 30
 x 4
 y 3
-speed 0.800000
-speed_left -1.840000
+speed 0.8
 level 30
 attacktype 29
-resist_electricity 100
+resist_physical 100
+resist_electricity 30
+resist_cold 100
+resist_paralyze 100
 carrying 25000
 move_type walk fly_low
 arch abil_icestorm
@@ -1188,11 +1190,13 @@ exp 200000
 dam 30
 x 9
 y 13
-speed 0.500000
-speed_left -1.840000
+speed 0.8
 level 30
 attacktype 29
-resist_electricity 100
+resist_physical 100
+resist_electricity 30
+resist_cold 100
+resist_paralyze 100
 carrying 25000
 move_type walk fly_low
 arch abil_icestorm
