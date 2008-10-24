@@ -1,3 +1,604 @@
+2008-10-24 01:04  rjtanner
+
+	* lake_country/snake_pit/Chaos_lair2: Fixed an inventory error with
+	  the chaos dragon, colourspray was inside of a ground tile for
+	  some reason; reinserted the spell back in to the normal inventory
+	  so the dragon has access to the spell again
+
+2008-10-24 00:59  rjtanner
+
+	* lake_country/snake_pit/snakepit_5: Fix for Bug [ 2020789 ] many
+	  maps broken 16 months ago: wrong immunities, armour..; Corrected
+	  stats for A lightning speed metallic serpent (was corrupted in
+	  r5574)
+
+2008-10-24 00:57  rjtanner
+
+	* lake_country/snake_pit/snakepit_5: Fix for Bug [ 2020789 ] many
+	  maps broken 16 months ago: wrong immunities, armour..; Corrected
+	  stats for A huge sleek black metallic serpent (was corrupted in
+	  r5574)
+
+2008-10-24 00:55  rjtanner
+
+	* lake_country/snake_pit/snakepit_5: Fix for Bug [ 2020789 ] many
+	  maps broken 16 months ago: wrong immunities, armour..; Corrected
+	  stats for One sleek black metallic serpent (was corrupted in
+	  r5574)
+
+2008-10-24 00:51  rjtanner
+
+	* lake_country/snake_pit/snakepit_5: Fix for Bug [ 2020789 ] many
+	  maps broken 16 months ago: wrong immunities, armour..; Corrected
+	  stats for black metallic serpent (was corrupted in r5574)
+
+2008-10-24 00:44  rjtanner
+
+	* lake_country/snake_pit/snakepit_5: Fix for Bug [ 2020789 ] many
+	  maps broken 16 months ago: wrong immunities, armour..; Corrected
+	  stats for wyvern of chaos (was corrupted in r5574)
+
+2008-10-24 00:15  rjtanner
+
+	* lake_country/snake_pit/snakepit_3: Fix for Bug [ 2020789 ] many
+	  maps broken 16 months ago: wrong immunities, armour..; Corrected
+	  stats for A lightning speed metallic serpent (was corrupted in
+	  r5574)
+
+2008-10-24 00:08  rjtanner
+
+	* lake_country/snake_pit/snakepit_3: Fix for Bug [ 2020789 ] many
+	  maps broken 16 months ago: wrong immunities, armour..; Corrected
+	  stats for Orcus (was corrupted in r5574)
+
+2008-10-23 23:57  rjtanner
+
+	* lake_country/snake_pit/Chaos_lair3: Fix for Bug [ 2020789 ] many
+	  maps broken 16 months ago: wrong immunities, armour..; Corrected
+	  stats for celestial dragon (was corrupted in r5574)
+
+2008-10-23 23:52  rjtanner
+
+	* lake_country/snake_pit/Chaos_lair3: Fix for Bug [ 2020789 ] many
+	  maps broken 16 months ago: wrong immunities, armour..; Corrected
+	  stats for ancient celestial dragon (was corrupted in r5574)
+
+2008-10-23 23:45  rjtanner
+
+	* lake_country/snake_pit/Chaos_lair3: Grammar updates within
+	  magic_mouth messages
+
+2008-10-23 23:33  rjtanner
+
+	* lake_country/snake_pit/Chaos_lair4: Fixed an inventory error with
+	  the chaos dragons, colourspray was inside of a ground tile for
+	  some reason; reinserted the spell back in to the normal inventory
+	  so the dragons have access to the spell again
+
+2008-10-23 23:25  rjtanner
+
+	* lake_country/snake_pit/Chaos_lair4: Fix for Bug [ 2020789 ] many
+	  maps broken 16 months ago: wrong immunities, armour..; Corrected
+	  stats for chaos dragon (was corrupted in r5574)
+
+2008-10-23 23:19  rjtanner
+
+	* lake_country/snake_pit/Chaos_lair4: Fix for Bug [ 2020789 ] many
+	  maps broken 16 months ago: wrong immunities, armour..; Corrected
+	  stats for big wyvern of chaos (was corrupted in r5574)
+
+2008-10-23 23:08  rjtanner
+
+	* lake_country/snake_pit/Chaos_lair4: Fix for Bug [ 2020789 ] many
+	  maps broken 16 months ago: wrong immunities, armour..; Corrected
+	  stats for Great Wyrm of Chaos (was corrupted in r5574)
+
+2008-10-23 22:57  rjtanner
+
+	* lake_country/snake_pit/Chaos_lair3,
+	  lake_country/snake_pit/Chaos_lair4: Insert missing floor tiles
+	  beneath walls
+
+2008-10-23 22:33  rjtanner
+
+	* pup_land/lone_town/gemshop: Spelling and grammar corrections with
+	  NPC dialogue
+
+2008-10-23 22:32  rjtanner
+
+	* port_joseph/town/generalstore, pup_land/lone_town/gemshop,
+	  scorn/shops/gemshop: Cosmetic changes with how fences (swall)
+	  merges with nearby walls
+
+2008-10-23 22:28  rjtanner
+
+	* brest/asyvan/gate1, brest/asyvan/gate2, brest/asyvan/gate3,
+	  brest/asyvan/gate4, brest/asyvan/gate5, brest/asyvan/gate6,
+	  brest/asyvan/gate7, brest/asyvan/gate8, brest/asyvan/gate9,
+	  brest/asyvan/palace1, brest/asyvan/palace2, brest/asyvan/palace3,
+	  lake_country/Butakis/B_gshop, lake_country/Butakis/Butakis0,
+	  lake_country/snake_pit/Chaos_lair1,
+	  lake_country/snake_pit/Chaos_lair2,
+	  lake_country/snake_pit/Chaos_lair3,
+	  lake_country/snake_pit/Chaos_lair4,
+	  lake_country/snake_pit/snakepit_1,
+	  lake_country/snake_pit/snakepit_2,
+	  lake_country/snake_pit/snakepit_3,
+	  lake_country/snake_pit/snakepit_4,
+	  lake_country/snake_pit/snakepit_5, port_joseph/goblin/dungeon1,
+	  port_joseph/goblin/dungeon2, port_joseph/goblin/dungeon3,
+	  port_joseph/goblin/fortress, port_joseph/goblin/netower,
+	  port_joseph/goblin/nwtower, port_joseph/goblin/setower,
+	  port_joseph/goblin/swtower, port_joseph/town/generalstore,
+	  pup_land/lone_town/gemshop, pup_land/lone_town/gemshop_ud,
+	  pup_land/lone_town/gshop, pup_land/lone_town/gshop_ud,
+	  pup_land/lone_town/town, pup_land/nurnberg/guild,
+	  pup_land/nurnberg/guild_ud, scorn/kar/gorks1, scorn/kar/gorks2,
+	  scorn/kar/gorks3, scorn/shops/gemshop, scorn/taverns/goths0,
+	  scorn/taverns/goths2, whalingoutpost/misc/castle1,
+	  whalingoutpost/misc/castle2, whalingoutpost/misc/castle3,
+	  whalingoutpost/misc/castle4, whalingoutpost/misc/castleb1,
+	  whalingoutpost/misc/castleb1keep, whalingoutpost/misc/castleb2,
+	  whalingoutpost/misc/castleb3, world/world_101_114,
+	  world/world_105_115: (Inprogress checkin) Update map names to
+	  make them unique and more descriptive
+
+2008-10-23 17:31  rjtanner
+
+	* brest/pshops/pshop21/floor1: Correct format mistake in map name
+
+2008-10-23 17:30  rjtanner
+
+	* brest/pshops/pshop26/basement, brest/pshops/pshop26/floor1,
+	  brest/pshops/pshop26/floor2, brest/pshops/pshop26/gfloor: Correct
+	  map name mistakes from earlier checkin - had shop 26 labeled as
+	  shop 27
+
+2008-10-23 01:39  rjtanner
+
+	* scorn/kar/somehouse, scorn/kar/somehouse2, scorn/kar/somehouse3,
+	  whalingoutpost/lighthouse6, whalingoutpost/lighthouse6attic:
+	  (Inprogress checkin) Update map names to make them unique and
+	  more descriptive
+
+2008-10-23 01:22  rjtanner
+
+	* whalingoutpost/lighthouse1, whalingoutpost/lighthouse2,
+	  whalingoutpost/lighthouse3, whalingoutpost/lighthouse4,
+	  whalingoutpost/lighthouse5, whalingoutpost/lighthouse6attic:
+	  (Inprogress checkin) Update map names to make them unique and
+	  more descriptive
+
+2008-10-23 01:16  rjtanner
+
+	* brest/pshops/pshop27/basement, brest/pshops/pshop27/floor1,
+	  brest/pshops/pshop27/floor2, brest/pshops/pshop27/gfloor:
+	  (Inprogress checkin) Update map names to make them unique and
+	  more descriptive
+
+2008-10-23 01:13  rjtanner
+
+	* quests/cd/cd.store.753: Add shop headers to the store located in
+	  Fortress Ang
+
+2008-10-23 01:11  rjtanner
+
+	* brest/pshops/pshop1/basement, brest/pshops/pshop1/floor1,
+	  brest/pshops/pshop1/floor2, brest/pshops/pshop1/gfloor,
+	  brest/pshops/pshop10/basement, brest/pshops/pshop10/floor1,
+	  brest/pshops/pshop10/floor2, brest/pshops/pshop10/gfloor,
+	  brest/pshops/pshop11/basement, brest/pshops/pshop11/floor1,
+	  brest/pshops/pshop11/floor2, brest/pshops/pshop11/gfloor,
+	  brest/pshops/pshop12/basement, brest/pshops/pshop12/floor1,
+	  brest/pshops/pshop12/floor2, brest/pshops/pshop12/gfloor,
+	  brest/pshops/pshop13/basement, brest/pshops/pshop13/floor1,
+	  brest/pshops/pshop13/floor2, brest/pshops/pshop13/gfloor,
+	  brest/pshops/pshop14/basement, brest/pshops/pshop14/floor1,
+	  brest/pshops/pshop14/floor2, brest/pshops/pshop14/gfloor,
+	  brest/pshops/pshop15/basement, brest/pshops/pshop15/floor1,
+	  brest/pshops/pshop15/floor2, brest/pshops/pshop15/gfloor,
+	  brest/pshops/pshop16/basement, brest/pshops/pshop16/floor1,
+	  brest/pshops/pshop16/floor2, brest/pshops/pshop16/gfloor,
+	  brest/pshops/pshop17/basement, brest/pshops/pshop17/floor1,
+	  brest/pshops/pshop17/floor2, brest/pshops/pshop17/gfloor,
+	  brest/pshops/pshop18/basement, brest/pshops/pshop18/floor1,
+	  brest/pshops/pshop18/floor2, brest/pshops/pshop18/gfloor,
+	  brest/pshops/pshop19/basement, brest/pshops/pshop19/floor1,
+	  brest/pshops/pshop19/floor2, brest/pshops/pshop19/gfloor,
+	  brest/pshops/pshop2/basement, brest/pshops/pshop2/floor1,
+	  brest/pshops/pshop2/floor2, brest/pshops/pshop2/gfloor,
+	  brest/pshops/pshop20/basement, brest/pshops/pshop20/floor1,
+	  brest/pshops/pshop20/floor2, brest/pshops/pshop20/gfloor,
+	  brest/pshops/pshop21/basement, brest/pshops/pshop21/floor1,
+	  brest/pshops/pshop21/floor2, brest/pshops/pshop21/gfloor,
+	  brest/pshops/pshop22/basement, brest/pshops/pshop22/floor1,
+	  brest/pshops/pshop22/floor2, brest/pshops/pshop22/gfloor,
+	  brest/pshops/pshop23/basement, brest/pshops/pshop23/floor1,
+	  brest/pshops/pshop23/floor2, brest/pshops/pshop23/gfloor,
+	  brest/pshops/pshop24/basement, brest/pshops/pshop24/floor1,
+	  brest/pshops/pshop24/floor2, brest/pshops/pshop24/gfloor,
+	  brest/pshops/pshop25/basement, brest/pshops/pshop25/floor1,
+	  brest/pshops/pshop25/floor2, brest/pshops/pshop25/gfloor,
+	  brest/pshops/pshop26/basement, brest/pshops/pshop26/floor1,
+	  brest/pshops/pshop26/floor2, brest/pshops/pshop26/gfloor,
+	  brest/pshops/pshop27/basement, brest/pshops/pshop3/basement,
+	  brest/pshops/pshop3/floor1, brest/pshops/pshop3/floor2,
+	  brest/pshops/pshop3/gfloor, brest/pshops/pshop4/basement,
+	  brest/pshops/pshop4/floor1, brest/pshops/pshop4/floor2,
+	  brest/pshops/pshop4/gfloor, brest/pshops/pshop5/basement,
+	  brest/pshops/pshop5/floor1, brest/pshops/pshop5/floor2,
+	  brest/pshops/pshop5/gfloor, brest/pshops/pshop6/basement,
+	  brest/pshops/pshop6/floor1, brest/pshops/pshop6/floor2,
+	  brest/pshops/pshop6/gfloor, brest/pshops/pshop7/basement,
+	  brest/pshops/pshop7/floor1, brest/pshops/pshop7/floor2,
+	  brest/pshops/pshop7/gfloor, brest/pshops/pshop8/basement,
+	  brest/pshops/pshop8/floor1, brest/pshops/pshop8/floor2,
+	  brest/pshops/pshop8/gfloor, brest/pshops/pshop9/basement,
+	  brest/pshops/pshop9/floor1, brest/pshops/pshop9/floor2,
+	  brest/pshops/pshop9/gfloor, brest/pshops/pshopsinc,
+	  brest/pshops/pshopsinc2: (Inprogress checkin) Update map names to
+	  make them unique and more descriptive
+
+2008-10-23 00:45  rjtanner
+
+	* quests/cd/cd.castle.750, quests/cd/cd.cellar1.757,
+	  quests/cd/cd.inn.752, quests/cd/cd.store.753,
+	  quests/cd/cd.tower1.754, quests/cd/cd.tower2.755,
+	  quests/cd/cd.tunnel.751, quests/peterm/FireTemple/Entrance,
+	  quests/peterm/FireTemple/FifthFloor,
+	  quests/peterm/FireTemple/Fire1, quests/peterm/FireTemple/Fire2,
+	  quests/peterm/FireTemple/Fire3, quests/peterm/FireTemple/Fire4,
+	  quests/peterm/FireTemple/FirstFloor,
+	  quests/peterm/FireTemple/FourthFloor,
+	  quests/peterm/FireTemple/HotMines,
+	  quests/peterm/FireTemple/LavaChamber,
+	  quests/peterm/FireTemple/Mezannine1,
+	  quests/peterm/FireTemple/Passageway,
+	  quests/peterm/FireTemple/SecondFloor,
+	  quests/peterm/FireTemple/ThirdFloor,
+	  whalingoutpost/taverns/fishershallb1: (Inprogress checkin) Update
+	  map names to make them unique and more descriptive
+
+2008-10-22 02:10  rjtanner
+
+	* quests/skud/east_1, quests/skud/north_1: Add snow tiles
+	  underneath the ice tiles
+
+2008-10-22 01:47  rjtanner
+
+	* lake_country/ebony/entrance1, lake_country/ebony/entrance2,
+	  lake_country/ebony/masterlev,
+	  lake_country/elven_moon/elvenmoon.1,
+	  lake_country/elven_moon/elvenmoon.6,
+	  navar_city/magara/houses/earth_house,
+	  port_joseph/town/churchcrypt,
+	  quests/peterm/DragonQuest/ElectricAnte,
+	  quests/peterm/DragonQuest/ElectricHatchery,
+	  quests/peterm/DragonQuest/ElectricLord,
+	  quests/peterm/DragonQuest/Entrance,
+	  quests/peterm/DragonQuest/FireAnte,
+	  quests/peterm/DragonQuest/FireHatchery,
+	  quests/peterm/DragonQuest/FireLord,
+	  quests/peterm/DragonQuest/IceAnte,
+	  quests/peterm/DragonQuest/IceHatchery,
+	  quests/peterm/DragonQuest/IceLord,
+	  quests/peterm/DragonQuest/WyvernNest, quests/skud/court,
+	  quests/skud/east_1, quests/skud/entrance, quests/skud/maze,
+	  quests/skud/north_1, quests/skud/west_1, sisters/shrine0,
+	  sisters/shrine0_east, sisters/shrine0_west, sisters/shrine1,
+	  sisters/shrine_entrance, world/world_107_124,
+	  world/world_121_117: (Inprogress checkin) Update map names to
+	  make them unique and more descriptive
+
+2008-10-22 01:36  rjtanner
+
+	* brest/brittany/enigme.1, brest/brittany/enigme.2,
+	  brest/brittany/enigme.3, brest/brittany/enigme.4,
+	  brest/brittany/enigme.5, brest/brittany/enigme.6,
+	  brest/brittany/khazad.1, brest/brittany/khazad.2,
+	  brest/brittany/khazad.3, brest/brittany/khazad.4,
+	  brest/brittany/khazad.5: Map header updates: Update maps with
+	  entrance x & y coordinates, adjust map level difficulty to
+	  something slightly more realistic, make the map name more
+	  descriptive
+
+2008-10-22 01:05  rjtanner
+
+	* scorn/misc/dragon_guild: Cosmetic wall (fence) changes
+
+2008-10-22 00:56  rjtanner
+
+	* azumauindo/suno-yamatoshi/shops/bank2,
+	  brest/brittany/dol-guldur.1, brest/brittany/dol-guldur.2,
+	  brest/brittany/dol-guldur.3, brest/brittany/dol-guldur.5,
+	  brest/brittany/dol-guldur.6, darcap/raffle/raffle1,
+	  darcap/raffle/raffle1_u1, darcap/raffle/raffle1_u2,
+	  darcap/raffle/raffle1_u3, dragonisland/damarishouse0,
+	  dragonisland/damarishouse1, dragonisland/damarishouse2,
+	  dragonisland/dragonmountain0, dragonisland/dragonmountain1,
+	  dragonisland/hangar, dragonisland/hangar2, dragonisland/hangar3,
+	  inn_and_outpost/pypers_treehouse, inn_and_outpost/treehouse_df2,
+	  inn_and_outpost/treehouse_df3, inn_and_outpost/treehouse_df4,
+	  inn_and_outpost/treehouse_df5, inn_and_outpost/treehouse_df6,
+	  lake_country/dragon_hangar/hangar, marksel/church,
+	  mlab/citydeclouds/apartment/cwdctownhaus1lvl1,
+	  mlab/citydeclouds/apartment/cwdctownhaus1lvl2,
+	  mlab/citydeclouds/apartment/cwdctownhaus2lvl1,
+	  mlab/citydeclouds/apartment/cwdctownhaus2lvl2,
+	  mlab/citydeclouds/apartment/cwdctownhaus3lvl1,
+	  mlab/citydeclouds/apartment/cwdctownhaus3lvl2,
+	  mlab/citydeclouds/apartment/cwdctownhaus4lvl1,
+	  mlab/citydeclouds/apartment/cwdctownhaus4lvl2,
+	  mlab/citydeclouds/bank/bank1, mlab/citydeclouds/bank/bank2,
+	  mlab/citydeclouds/bank/bank3, mlab/citydeclouds/bank/bank4,
+	  mlab/citydeclouds/bank/bank5, mlab/citydeclouds/cdcgatea2,
+	  mlab/citydeclouds/cdcnwgateuprlv1,
+	  mlab/citydeclouds/villa/citydecloudsvillab1,
+	  mlab/citydeclouds/villa/citydecloudsvillab2,
+	  mlab/citydeclouds/villa/citydecloudsvillab3,
+	  navar_city/dragon_hangar/hangar, navar_city/misc/theater,
+	  navar_city/misc/theater2, navar_city/misc/theater3,
+	  navar_city/misc/theater4, navar_city/misc/theaterb1,
+	  navar_city/misc/theaterb2, navar_city/misc/theaterb3,
+	  navar_city/misc/theaterb4, navar_city/temples/valriel,
+	  pup_land/lone_town/dress1, pup_land/lone_town/dress2,
+	  pup_land/lone_town/dress3, pup_land/nurnberg/dick/house2,
+	  quests/mak/chaos/down1, quests/mak/chaos/down2,
+	  quests/mak/chaos/down3, quests/mak/chaos/down4,
+	  quests/mak/chaos/down5, quests/mak/chaos/fallen,
+	  quests/mak/chaos/tritemples, quests/mak/chaos/up1,
+	  quests/mak/chaos/up2, quests/mak/chaos/up3, quests/mak/chaos/up4,
+	  quests/mak/chaos/up5, santo_dominion/city_hall,
+	  scorn/misc/cityhall, scorn/misc/dragon_guild,
+	  scorn/temples/valriel2, scorn/temples/valriel3,
+	  wolfsburg/magara/cellar1/hcellar_1,
+	  wolfsburg/magara/cellar1/hcellar_2,
+	  wolfsburg/magara/cellar1/hole, world/world_103_127,
+	  world/world_105_115, world/world_120_109, world/world_122_117:
+	  (Inprogress checkin) Update map names to make them unique and
+	  more descriptive
+
+2008-10-21 23:20  rjtanner
+
+	* quests/greyshield/Castle: Cosmetic changes with how fences
+	  (swall) merges with nearby walls
+
+2008-10-21 23:12  rjtanner
+
+	* quests/greyshield/Castle: Moved 'no_spells' down to the bottom of
+	  the stacking order
+
+2008-10-21 23:10  rjtanner
+
+	* quests/greyshield/Factory: Moved 'no_spells' down to the bottom
+	  of the stacking order, cosmetic changes with how fences (swall)
+	  merges with nearby walls
+
+2008-10-21 22:39  rjtanner
+
+	* quests/greyshield/Archery, quests/greyshield/Arena,
+	  quests/greyshield/Castle, quests/greyshield/Cave,
+	  quests/greyshield/Cavern, quests/greyshield/Cavern2,
+	  quests/greyshield/Chamber, quests/greyshield/Doors,
+	  quests/greyshield/Dungeon, quests/greyshield/Elements,
+	  quests/greyshield/Factory, quests/greyshield/Finish,
+	  quests/greyshield/Sphinx, world/world_107_128: (Inprogress
+	  checkin) Update map names to make them unique and more
+	  descriptive
+
+2008-10-21 22:01  rjtanner
+
+	* santo_dominion/eeur/hut.1: Cosmetic wall changes
+
+2008-10-21 21:52  rjtanner
+
+	* port_joseph/town/underground_tavern: Re-arrange stacking order,
+	  place platters back on top of the tables
+
+2008-10-21 21:48  rjtanner
+
+	* brest/brittany/hole, dragonisland/house9,
+	  port_joseph/pirates/torthole, port_joseph/town/house,
+	  port_joseph/town/underground_tavern, pup_land/lone_town/cordish2,
+	  pup_land/nurnberg/city, pup_land/nurnberg/hotel,
+	  santo_dominion/eeur/hut.1, santo_dominion/eeur/hut.2,
+	  world/world_100_116, world/world_101_114, world/world_102_108,
+	  world/world_103_127, world/world_108_123: (Inprogress checkin)
+	  Update map names to make them unique and more descriptive
+
+2008-10-21 21:03  rjtanner
+
+	* azumauindo/ranbounagisatoshi/shops/groupshop,
+	  azumauindo/ranbounagisatoshi/shops/groupshop2,
+	  azumauindo/ranbounagisatoshi/shops/groupshopb1,
+	  azumauindo/ranbounagisatoshi/shops/groupshopb2,
+	  dungeons/grukks/grukks.1, dungeons/grukks/grukks.2,
+	  dungeons/grukks/grukks.3, dungeons/grukks/grukks.4,
+	  euthville/map.fr.0, euthville/map.fr.1, euthville/map.fr.2,
+	  euthville/map.fr.3, pup_land/lone_town/apartment/basement,
+	  pup_land/lone_town/apartment/groundfloor,
+	  pup_land/lone_town/apartment/sharedcourtyard,
+	  pup_land/lone_town/apartment/upper1,
+	  pup_land/nurnberg/hq_training, quests/mak/MainFloor,
+	  quests/mak/dragons/chaos, quests/mak/dragons/elec,
+	  quests/mak/dragons/fire, quests/mak/dragons/ice,
+	  quests/mak/giant/mainfloor, quests/mak/giant/secondfloor,
+	  quests/mak/giant/thirdfloor, quests/mak/mansion/basement,
+	  quests/mak/mansion/floor1, quests/mak/mansion/floor2,
+	  quests/mak/troll_cave/Guards, quests/mak/troll_cave/cave.1,
+	  quests/mak/troll_cave/cave.2, quests/mak/troll_cave/cave.3,
+	  quests/mak/undead/catacombs, quests/mak/undead/graveyard,
+	  quests/mak/undead/mausoleum, quests/mak/unnatural/unnat,
+	  wolfsburg/eeur/tower1.1, wolfsburg/eeur/tower1.2,
+	  wolfsburg/eeur/tower1.3, wolfsburg/eeur/tower1.4: (Inprogress
+	  checkin) Update map names to make them unique and more
+	  descriptive
+
+2008-10-21 01:41  rjtanner
+
+	* navar_city/misc/library, scorn/misc/library: Cosmetic wall update
+
+2008-10-21 01:40  rjtanner
+
+	* navar_city/misc/library, pup_land/ancient/castle/castle.1,
+	  pup_land/ancient/castle/castle.2,
+	  pup_land/ancient/castle/castle.3,
+	  pup_land/ancient/castle/castle.4,
+	  pup_land/ancient/castle/castle.5,
+	  pup_land/ancient/castle/castle.6,
+	  pup_land/ancient/castle/castle.ud1,
+	  pup_land/ancient/castle/gothwolte.1,
+	  pup_land/ancient/castle/gothwolte.2,
+	  pup_land/ancient/castle/gothwolte.3, pup_land/ancient/world,
+	  scorn/misc/library: (Inprogress checkin) Update map names to make
+	  them unique and more descriptive
+
+2008-10-21 00:23  rjtanner
+
+	* lake_country/RETower/tower3: Insert missing floor tiles beneath
+	  walls
+
+2008-10-21 00:21  rjtanner
+
+	* pup_land/castle_eureca/castle_eureca6: Correct coordinates on
+	  stairway so they line up correctly between levels
+
+2008-10-21 00:20  rjtanner
+
+	* azumauindo/suno-yamatoshi/buildings/tatemonoA1,
+	  azumauindo/suno-yamatoshi/buildings/tatemonoA2,
+	  brest/Castle/AcidChamber, brest/Castle/DragonRoom,
+	  brest/Castle/Finale, brest/Castle/LargeRoom, brest/Castle/castle,
+	  brest/black_shield/bigchest, brest/black_shield/ground,
+	  brest/black_shield/storage_room, brest/black_shield/upper,
+	  brest/shops/buildshop, brest/shops/buildshop2,
+	  darcap/darcap/guilds/poisoned_dagger/bigchest,
+	  darcap/darcap/guilds/poisoned_dagger/ground,
+	  darcap/darcap/guilds/poisoned_dagger/storage_room,
+	  darcap/darcap/guilds/poisoned_dagger/upper,
+	  darcap/darcap/guilds/smoking_cauldron/bigchest,
+	  darcap/darcap/guilds/smoking_cauldron/ground,
+	  darcap/darcap/guilds/smoking_cauldron/storage_room,
+	  darcap/darcap/guilds/smoking_cauldron/upper,
+	  dragonisland/advguild, dragonisland/advguild2,
+	  dragonisland/advguild3, dragonisland/advshop0,
+	  dragonisland/advshop1, dragonisland/advshop2,
+	  dragonisland/advshop3, dragonisland/advshop4,
+	  dragonisland/advshop5, dragonisland/advshop6, euthville/wiz1,
+	  euthville/wiz2, euthville/wiz3, euthville/wiz4, euthville/wiz5,
+	  euthville/wiz6, euthville/wiz7, lake_country/Butakis/Butakis0,
+	  lake_country/Butakis/arena, lake_country/Butakis/gate_outer,
+	  lake_country/RETower/tower0, lake_country/RETower/tower1,
+	  lake_country/RETower/tower2, lake_country/RETower/tower3,
+	  lake_country/RETower/tower4, lake_country/RETower/tower5,
+	  navar_city/casino_infernal/casino_infernal1,
+	  navar_city/casino_infernal/casino_infernal2,
+	  navar_city/dreaming_sage/bigchest,
+	  navar_city/dreaming_sage/ground,
+	  navar_city/dreaming_sage/storage_room,
+	  navar_city/dreaming_sage/upper, navar_city/mlab/tadobebuild2,
+	  navar_city/mlab/tadobebuild3,
+	  pup_land/castle_eureca/castle_eureca1,
+	  pup_land/castle_eureca/castle_eureca2,
+	  pup_land/castle_eureca/castle_eureca3,
+	  pup_land/castle_eureca/castle_eureca4,
+	  pup_land/castle_eureca/castle_eureca5,
+	  pup_land/castle_eureca/castle_eureca6,
+	  pup_land/castle_eureca/castle_eureca7,
+	  pup_land/castle_eureca/castle_eureca8,
+	  pup_land/castle_eureca/castle_eureca9,
+	  pup_land/castle_eureca/castle_eurecaB1,
+	  pup_land/castle_eureca/castle_eurecaB2,
+	  pup_land/guilds/laughing_skull/bigchest,
+	  pup_land/guilds/laughing_skull/ground,
+	  pup_land/guilds/laughing_skull/storage_room,
+	  pup_land/guilds/laughing_skull/upper,
+	  pup_land/guilds/purple_butterfly/bigchest,
+	  pup_land/guilds/purple_butterfly/ground,
+	  pup_land/guilds/purple_butterfly/storage_room,
+	  pup_land/guilds/purple_butterfly/upper,
+	  pup_land/lone_town/shops/buildshop, pup_land/nurnberg/alshop,
+	  pup_land/nurnberg/castle, pup_land/nurnberg/castle_bauer/castle2,
+	  pup_land/nurnberg/castle_bauer/castle3,
+	  pup_land/nurnberg/castle_bauer/castle4,
+	  pup_land/nurnberg/castle_ud,
+	  quests/saromok/castlesaromok_barracks1,
+	  quests/saromok/castlesaromok_barracks2,
+	  quests/saromok/castlesaromok_barracks3,
+	  quests/saromok/castlesaromok_barracks4,
+	  quests/saromok/castlesaromok_frontgate,
+	  quests/saromok/castlesaromok_inside,
+	  quests/saromok/castlesaromok_ltl,
+	  quests/saromok/castlesaromok_ltr,
+	  quests/saromok/castlesaromok_top,
+	  quests/saromok/castlesaromok_towerb1,
+	  quests/saromok/castlesaromok_towerf1,
+	  quests/saromok/castlesaromok_towerf10,
+	  quests/saromok/castlesaromok_towerf11,
+	  quests/saromok/castlesaromok_towerf12,
+	  quests/saromok/castlesaromok_towerf2,
+	  quests/saromok/castlesaromok_towerf3,
+	  quests/saromok/castlesaromok_towerf4,
+	  quests/saromok/castlesaromok_towerf5,
+	  quests/saromok/castlesaromok_towerf6,
+	  quests/saromok/castlesaromok_towerf7,
+	  quests/saromok/castlesaromok_towerf8,
+	  quests/saromok/castlesaromok_towerf9,
+	  quests/saromok/castlesaromok_towergroundfloor,
+	  quests/saromok/castlesaromok_volcano, quests/todd/aljwaf/crypt,
+	  quests/todd/aljwaf/hall2, quests/todd/aljwaf/tower1,
+	  santo_dominion/guilds/drunken_barbarian/bigchest,
+	  santo_dominion/guilds/drunken_barbarian/ground,
+	  santo_dominion/guilds/drunken_barbarian/storage_room,
+	  santo_dominion/guilds/drunken_barbarian/upper,
+	  santo_dominion/magara/hut/floor_1,
+	  santo_dominion/magara/hut/floor_2,
+	  santo_dominion/magara/hut/floor_3,
+	  scorn/guilds/mailed_fist/bigchest,
+	  scorn/guilds/mailed_fist/ground,
+	  scorn/guilds/mailed_fist/storage_room,
+	  scorn/guilds/mailed_fist/upper, scorn/misc/battle_arena/arena,
+	  scorn/misc/kboldtemp1, scorn/misc/kboldtemp1b1,
+	  scorn/misc/kboldtemp1b2, scorn/misc/kboldtemp1b3,
+	  scorn/misc/kboldtemp1b4, scorn/shops/buildshop,
+	  scorn/shops/potionshop,
+	  wolfsburg/guilds/damned_heretics/bigchest,
+	  wolfsburg/guilds/damned_heretics/ground,
+	  wolfsburg/guilds/damned_heretics/storage_room,
+	  wolfsburg/guilds/damned_heretics/upper,
+	  wolfsburg/magara/castle/cellar, wolfsburg/magara/castle/floor_1,
+	  wolfsburg/magara/castle/floor_2, wolfsburg/magara/castle/floor_3,
+	  wolfsburg/shops/buildshop, world/world_107_123,
+	  world/world_109_126: (Inprogress checkin) Update map names to
+	  make them unique and more descriptive
+
+2008-10-20 21:11  rjtanner
+
+	* regions.reg: Added some of the missing longnames to region file
+	  so they show up on the regions page generated by mapper
+
+2008-10-20 20:41  rjtanner
+
+	* start/HallsOfSelection/fireborn_player,
+	  start/HallsOfSelection/pl_dragon,
+	  start/HallsOfSelection/wraith_player: Make map names more
+	  descriptive
+
+2008-10-20 20:35  rjtanner
+
+	* HallOfSelection: Map header updates: Correct creation date in map
+	  header that was changed in r7448, it was using the wrong month;
+	  Map name update (HallOfSelection -> Hall Of Selection)
+
+2008-10-20 20:26  rjtanner
+
+	* scorn/misc/cider_house: Map normalize, no functional changes
+
+2008-10-20 19:26  rjtanner
+
+	* ChangeLog, brest/zorn/castle.upper.floor.one: Updated ChangeLog
+	  file using svn2cl
+
 2008-10-20 19:19  rjtanner
 
 	* mlab/citydeclouds/citydecloudsC: Map header updates: Update maps
