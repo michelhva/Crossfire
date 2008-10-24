@@ -2030,11 +2030,11 @@ exp 55000
 dam 30
 x 17
 y 15
-speed 0.700000
-speed_left -21.819998
+speed 0.7
 attacktype 82945
-resist_fire 100
-resist_electricity 100
+resist_fire 30
+resist_electricity 30
+resist_poison 100
 arch abil_poison_cloud
 end
 arch spell_mass_confusion
@@ -2137,11 +2137,11 @@ exp 55000
 dam 30
 x 18
 y 15
-speed 0.700000
-speed_left -21.819998
+speed 0.7
 attacktype 82945
-resist_fire 100
-resist_electricity 100
+resist_fire 30
+resist_electricity 30
+resist_poison 100
 arch abil_poison_cloud
 end
 arch spell_mass_confusion
