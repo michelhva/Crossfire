@@ -1393,11 +1393,12 @@ maxsp 1000
 exp 2000000
 x 6
 y 5
-speed 0.700000
-speed_left -17.569998
+speed 0.7
 level 70
 attacktype 1167
-resist_electricity 100
+resist_physical 100
+resist_electricity 30
+resist_cold 100
 arch spell_sm_lightning
 end
 arch spell_sm_lightning
