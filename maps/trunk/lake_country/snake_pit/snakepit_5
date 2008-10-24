@@ -3399,11 +3399,11 @@ exp 65000
 dam 30
 x 29
 y 17
-speed 1.000000
-speed_left -28.420000
+speed 1.0
 attacktype 82945
-resist_fire 100
-resist_electricity 100
+resist_fire 30
+resist_electricity 30
+resist_poison 100
 arch abil_poison_cloud
 end
 arch spell_paralyze
@@ -3512,11 +3512,11 @@ exp 65000
 dam 30
 x 30
 y 17
-speed 1.000000
-speed_left -28.420000
+speed 1.0
 attacktype 82945
-resist_fire 100
-resist_electricity 100
+resist_fire 30
+resist_electricity 30
+resist_poison 100
 arch abil_poison_cloud
 end
 arch spell_paralyze
