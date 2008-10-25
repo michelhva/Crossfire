@@ -148,6 +148,30 @@ public class Metaserver
         }
 
         final int metalistSize = metalist.size();
+        updateMetalist();
+        nextQuery = System.currentTimeMillis()+MIN_QUERY_INTERVAL*1000;
+
+        for (final MetaserverListener metaserverListener : metaserverListeners)
+        {
+            metaserverListener.numberOfEntriesChanged();
+        }
+
+        for (int i = 0, imax = Math.max(metalistSize, metalist.size()); i < imax; i++)
+        {
+            for (final MetaserverEntryListener metaserverEntryListener : getMetaserverEntryListeners(i))
+            {
+                metaserverEntryListener.entryChanged();
+            }
+        }
+
+        serverCache.save();
+    }
+
+    /**
+     * Update the contents of {@link #metalist}.
+     */
+    private void updateMetalist()
+    {
         metalist.clear();
 
         serverCache.expire(EXPIRE_INTERVAL*1000);
@@ -220,23 +244,6 @@ public class Metaserver
         metalist.addAll(oldEntries.values());
 
         Collections.sort(metalist);
-
-        nextQuery = System.currentTimeMillis()+MIN_QUERY_INTERVAL*1000;
-
-        for (final MetaserverListener metaserverListener : metaserverListeners)
-        {
-            metaserverListener.numberOfEntriesChanged();
-        }
-
-        for (int i = 0, imax = Math.max(metalistSize, metalist.size()); i < imax; i++)
-        {
-            for (final MetaserverEntryListener metaserverEntryListener : getMetaserverEntryListeners(i))
-            {
-                metaserverEntryListener.entryChanged();
-            }
-        }
-
-        serverCache.save();
     }
 
     /**
