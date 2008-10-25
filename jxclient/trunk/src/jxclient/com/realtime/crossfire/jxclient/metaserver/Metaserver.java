@@ -149,13 +149,6 @@ public class Metaserver
 
         final int metalistSize = metalist.size();
         metalist.clear();
-        for (int i = metalistSize-1; i >= 0; i--)
-        {
-            for (final MetaserverEntryListener metaserverEntryListener : getMetaserverEntryListeners(i))
-            {
-                metaserverEntryListener.entryChanged();
-            }
-        }
 
         serverCache.expire(EXPIRE_INTERVAL*1000);
         final Map<String, MetaserverEntry> oldEntries = serverCache.getAll();
@@ -235,7 +228,7 @@ public class Metaserver
             metaserverListener.numberOfEntriesChanged();
         }
 
-        for (int i = 0; i < metalist.size(); i++)
+        for (int i = 0, imax = Math.max(metalistSize, metalist.size()); i < imax; i++)
         {
             for (final MetaserverEntryListener metaserverEntryListener : getMetaserverEntryListeners(i))
             {
