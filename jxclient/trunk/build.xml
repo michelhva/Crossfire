@@ -10,6 +10,9 @@
         <delete dir="${build}/jxclient"/>
         <mkdir dir="${build}/jxclient"/>
         <javac srcdir="${src.jxclient}" destdir="${build}/jxclient" source="1.5" debug="yes" fork="yes">
+            <classpath>
+                <pathelement location="lib/junit-4.2.jar"/>
+            </classpath>
             <compilerarg value="-Xlint:unchecked"/>
         </javac>
     </target>
@@ -68,6 +71,7 @@
         <junit fork="yes" haltonerror="yes" haltonfailure="yes">
             <jvmarg value="-ea"/>
             <classpath>
+                <pathelement location="lib/junit-4.2.jar"/>
                 <pathelement location="${build}/jxclient"/>
                 <pathelement location="jxclient.jar"/>
             </classpath>
