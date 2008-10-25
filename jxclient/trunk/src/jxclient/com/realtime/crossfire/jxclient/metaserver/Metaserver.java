@@ -140,16 +140,20 @@ public class Metaserver
         return metalist.size();
     }
 
-    public synchronized void query()
+    public void query()
     {
-        if (nextQuery > System.currentTimeMillis())
+        final int metalistSize;
+        synchronized (this)
         {
-            return;
-        }
+            if (nextQuery > System.currentTimeMillis())
+            {
+                return;
+            }
 
-        final int metalistSize = metalist.size();
-        updateMetalist();
-        nextQuery = System.currentTimeMillis()+MIN_QUERY_INTERVAL*1000;
+            metalistSize = metalist.size();
+            updateMetalist();
+            nextQuery = System.currentTimeMillis()+MIN_QUERY_INTERVAL*1000;
+        }
 
         for (final MetaserverListener metaserverListener : metaserverListeners)
         {
