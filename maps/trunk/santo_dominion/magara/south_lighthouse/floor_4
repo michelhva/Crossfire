@@ -4427,7 +4427,7 @@ arch small_stones
 x 41
 y 18
 end
-arch blocked
+arch cave23
 x 41
 y 18
 end
@@ -5661,6 +5661,9 @@ arch cave2
 x 54
 y 18
 end
+arch small_stones
+x 55
+end
 arch cave4
 x 55
 end
@@ -5735,11 +5738,18 @@ end
 arch small_stones
 x 55
 y 17
+end
+arch small_stones
+x 55
+y 18
 end
 arch cave2
 x 55
 y 18
 end
+arch small_stones
+x 56
+end
 arch cave4
 x 56
 end
@@ -5814,6 +5824,10 @@ end
 arch small_stones
 x 56
 y 17
+end
+arch small_stones
+x 56
+y 18
 end
 arch cave2
 x 56
