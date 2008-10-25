@@ -9,7 +9,7 @@ enter_x 4
 enter_y 10
 msg
 Created:  1994-05-31 langley (langley@fermat.dartmouth.edu)
-Modified: 2008-09-21 Rick Tanner
+Modified: 2008-10-25 Rick Tanner
 endmsg
 end
 arch dungeon_floor
@@ -430,14 +430,14 @@ arch bwall_2_1_2
 x 4
 y 9
 end
-arch exit
-slaying fortvsship
-hp 7
-sp 1
+arch pstone_2
 x 4
 y 10
 end
-arch pstone_2
+arch ladder_up
+slaying fortvsship
+hp 7
+sp 1
 x 4
 y 10
 end
