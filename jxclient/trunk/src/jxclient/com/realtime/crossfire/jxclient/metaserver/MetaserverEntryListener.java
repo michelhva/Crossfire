@@ -27,17 +27,7 @@ package com.realtime.crossfire.jxclient.metaserver;
 public interface MetaserverEntryListener
 {
     /**
-     * The metaserver entry is now available.
-     */
-    void entryAdded();
-
-    /**
-     * The metaserver entry is not anymore available.
-     */
-    void entryRemoved();
-
-    /**
-     * The contents of the entry have changed.
+     * The contents of the entry have changed, added, or removed.
      */
     void entryChanged();
 }
