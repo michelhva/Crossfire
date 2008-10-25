@@ -153,7 +153,7 @@ public class Metaserver
         {
             for (final MetaserverEntryListener metaserverEntryListener : getMetaserverEntryListeners(i))
             {
-                metaserverEntryListener.entryRemoved();
+                metaserverEntryListener.entryChanged();
             }
         }
 
@@ -239,7 +239,7 @@ public class Metaserver
         {
             for (final MetaserverEntryListener metaserverEntryListener : getMetaserverEntryListeners(i))
             {
-                metaserverEntryListener.entryAdded();
+                metaserverEntryListener.entryChanged();
             }
         }
 

@@ -106,18 +106,6 @@ public class GUIMetaElementList extends GUIList
     private final MetaserverEntryListener metaserverEntryListener = new MetaserverEntryListener()
     {
         /** {@inheritDoc} */
-        public void entryAdded()
-        {
-            setChanged();
-        }
-
-        /** {@inheritDoc} */
-        public void entryRemoved()
-        {
-            setChanged();
-        }
-
-        /** {@inheritDoc} */
         public void entryChanged()
         {
             setChanged();
