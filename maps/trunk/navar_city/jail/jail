@@ -873,6 +873,9 @@ end
 arch westcwall_2_1_2
 x 4
 end
+arch swall_1_1_half
+x 4
+end
 arch dungeon_magic
 x 4
 y 1
@@ -1049,11 +1052,11 @@ arch flagstone
 x 4
 y 14
 end
-arch swall_2_2_1
+arch westcwall_2_1_2
 x 4
 y 14
 end
-arch westcwall_2_1_2
+arch swall_1_2_half
 x 4
 y 14
 end
@@ -1765,6 +1768,9 @@ end
 arch westcwall_2_1_2
 x 8
 end
+arch swall_1_1_half
+x 8
+end
 arch dungeon_magic
 x 8
 y 1
@@ -1941,7 +1947,7 @@ arch flagstone
 x 8
 y 14
 end
-arch swall_2_2_1
+arch swall_1_2_half
 x 8
 y 14
 end
@@ -2652,6 +2658,9 @@ end
 arch westcwall_2_1_2
 x 12
 end
+arch swall_1_1_half
+x 12
+end
 arch dungeon_magic
 x 12
 y 1
@@ -2804,7 +2813,7 @@ arch flagstone
 x 12
 y 14
 end
-arch swall_2_2_1
+arch swall_1_2_half
 x 12
 y 14
 end
