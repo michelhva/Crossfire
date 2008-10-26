@@ -1,5 +1,5 @@
 arch map
-name The Necropolis of Gax
+name The Necropolis of Gax, Entrance
 reset_timeout 120
 difficulty 20
 width 33
@@ -8,7 +8,7 @@ enter_x 1
 enter_y 13
 msg
 Created:  1994-12-28 bt (thomas@nomad.astro.psu.edu)
-Modified: 2008-09-30 Rick Tanner
+Modified: 2008-10-26 Rick Tanner
 endmsg
 end
 arch evergreen
@@ -982,6 +982,7 @@ x 7
 y 10
 end
 arch ruins
+name Ruins
 slaying /sisters/necro_ruin1
 hp 23
 sp 9
