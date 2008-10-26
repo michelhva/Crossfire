@@ -69,6 +69,11 @@ public abstract class GUIList extends ActivatableGUIElement
     private final JList list = new JList(model);
 
     /**
+     * The viewport used by {@link #scrollPane}.
+     */
+    private final GUIListViewport viewport = new GUIListViewport();
+
+    /**
      * The scroll pane instance used to display the list.
      */
     private final JScrollPane scrollPane;
@@ -105,24 +110,25 @@ public abstract class GUIList extends ActivatableGUIElement
 
         this.cellHeight = cellHeight;
 
-        list.setCellRenderer(listCellRenderer);
-        list.setFixedCellHeight(cellHeight);
-        list.setOpaque(false);
-        list.setSelectionMode(ListSelectionModel.SINGLE_SELECTION);
-        list.setSize(getWidth(), Integer.MAX_VALUE);
-
-        scrollPane = new JScrollPane(list, ScrollPaneConstants.VERTICAL_SCROLLBAR_NEVER, ScrollPaneConstants.HORIZONTAL_SCROLLBAR_NEVER);
-        scrollPane.getViewport().setScrollMode(JViewport.BLIT_SCROLL_MODE);
+        viewport.setView(list);
+        scrollPane = new JScrollPane(null, ScrollPaneConstants.VERTICAL_SCROLLBAR_NEVER, ScrollPaneConstants.HORIZONTAL_SCROLLBAR_NEVER);
+        scrollPane.setViewport(viewport);
+        viewport.setScrollMode(JViewport.BLIT_SCROLL_MODE);
         scrollPane.setOpaque(false);
         scrollPane.setPreferredSize(size);
         scrollPane.setMinimumSize(size);
         scrollPane.setMaximumSize(size);
         scrollPane.setSize(size);
         scrollPane.setLocation(x, y);
-        scrollPane.getViewport().setSize(size);
-        scrollPane.getViewport().setOpaque(false);
+        viewport.setSize(size);
+        viewport.setOpaque(false);
         scrollPane.setBorder(new EmptyBorder(0, 0, 0, 0));
 
+        list.setCellRenderer(listCellRenderer);
+        list.setFixedCellHeight(cellHeight);
+        list.setOpaque(false);
+        list.setSelectionMode(ListSelectionModel.SINGLE_SELECTION);
+        list.setSize(getWidth(), Integer.MAX_VALUE);
         list.addListSelectionListener(listSelectionListener);
 
         synchronized (bufferedImageSync)
@@ -153,7 +159,7 @@ public abstract class GUIList extends ActivatableGUIElement
         synchronized (getTreeLock())
         {
             scrollPane.paint(g);
-            scrollPane.getViewport().paint(g);
+            viewport.paint(g);
         }
     }
 
@@ -166,6 +172,7 @@ public abstract class GUIList extends ActivatableGUIElement
         assert Thread.holdsLock(getTreeLock());
         model.addElement(element);
         list.setSize(getWidth(), Integer.MAX_VALUE);
+        viewport.update();
         if (model.getSize() == 1)
         {
             setSelectedIndex(0);
