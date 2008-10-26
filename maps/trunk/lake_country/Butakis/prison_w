@@ -1,5 +1,5 @@
 arch map
-name Execution Chamber
+name Lord Butakis' Prison, Execution Chamber
 difficulty 35
 region lakecountry
 width 16
@@ -8,7 +8,7 @@ enter_x 15
 enter_y 1
 msg
 Created:  1995-03-28
-Modified: 2008-09-19 Rick Tanner
+Modified: 2008-10-25 Rick Tanner
 endmsg
 end
 arch dungeon_floor
@@ -1732,7 +1732,7 @@ x 15
 y 1
 end
 arch oakdoor
-name oakdoor from execution chamber
+name Oakdoor from Execution Chamber
 slaying prison1
 sp 4
 x 15
@@ -1743,7 +1743,7 @@ x 15
 y 2
 end
 arch oakdoor
-name oakdoor from execution chamber
+name Oakdoor from Execution Chamber
 slaying prison1
 sp 5
 x 15

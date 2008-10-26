@@ -1,5 +1,5 @@
 arch map
-name Heavily Guarded Chamber
+name Lord Butakis' Prison, Heavily Guarded Chamber
 fixed_resettime 1
 difficulty 25
 region lakecountry
@@ -8,7 +8,7 @@ height 20
 enter_x 1
 msg
 Created:  1995-03-29 Kundi, Xue (xkd@soda.csua.berkeley.edu)
-Modified: 2008-09-19 Rick Tanner
+Modified: 2008-10-25 Rick Tanner
 endmsg
 end
 arch marble
@@ -133,7 +133,7 @@ arch marble
 x 1
 end
 arch oakdoor
-name oakdoor from a heavily guarded chamber
+name Oakdoor from a Heavily Guarded Chamber
 slaying prison1
 hp 4
 sp 9
@@ -293,7 +293,7 @@ arch marble
 x 2
 end
 arch oakdoor
-name oakdoor from a heavily guarded chamber
+name Oakdoor from a Heavily Guarded Chamber
 slaying prison1
 hp 5
 sp 9
