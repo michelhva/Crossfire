@@ -923,114 +923,120 @@ public class JXCWindow extends JFrame implements KeyListener, CrossfireDrawextin
 
     public void keyPressed(final KeyEvent e)
     {
-        updateModifiers(e);
-        switch (e.getKeyCode())
+        synchronized (semaphoreDrawing)
         {
-        case KeyEvent.VK_ALT:
-        case KeyEvent.VK_ALT_GRAPH:
-        case KeyEvent.VK_SHIFT:
-        case KeyEvent.VK_CONTROL:
-            break;
-
-        default:
-            if (e.getKeyCode() == KeyEvent.VK_ESCAPE)
+            updateModifiers(e);
+            switch (e.getKeyCode())
             {
-                if (keybindingsManager.escPressed())
+            case KeyEvent.VK_ALT:
+            case KeyEvent.VK_ALT_GRAPH:
+            case KeyEvent.VK_SHIFT:
+            case KeyEvent.VK_CONTROL:
+                break;
+
+            default:
+                if (e.getKeyCode() == KeyEvent.VK_ESCAPE)
                 {
-                    windowRenderer.closeDialog(keybindDialog);
-                }
-                else if (deactivateCommandInput())
-                {
-                    // ignore
-                }
-                else if (getStatus() != Status.UNCONNECTED)
-                {
-                    if (dialogDisconnect == null)
+                    if (keybindingsManager.escPressed())
                     {
-                        disconnect();
+                        windowRenderer.closeDialog(keybindDialog);
                     }
-                    else if (windowRenderer.openDialog(dialogDisconnect))
+                    else if (deactivateCommandInput())
                     {
-                        if (dialogQuit != null)
+                        // ignore
+                    }
+                    else if (getStatus() != Status.UNCONNECTED)
+                    {
+                        if (dialogDisconnect == null)
                         {
-                            windowRenderer.closeDialog(dialogQuit);
+                            disconnect();
                         }
-                    }
-                    else
-                    {
-                        windowRenderer.closeDialog(dialogDisconnect);
-                    }
-                }
-                else
-                {
-                    if (dialogQuit == null)
-                    {
-                        quitApplication();
-                    }
-                    else if (windowRenderer.openDialog(dialogQuit))
-                    {
-                        if (dialogDisconnect != null)
+                        else if (windowRenderer.openDialog(dialogDisconnect))
+                        {
+                            if (dialogQuit != null)
+                            {
+                                windowRenderer.closeDialog(dialogQuit);
+                            }
+                        }
+                        else
                         {
                             windowRenderer.closeDialog(dialogDisconnect);
                         }
                     }
                     else
                     {
-                        windowRenderer.closeDialog(dialogQuit);
+                        if (dialogQuit == null)
+                        {
+                            quitApplication();
+                        }
+                        else if (windowRenderer.openDialog(dialogQuit))
+                        {
+                            if (dialogDisconnect != null)
+                            {
+                                windowRenderer.closeDialog(dialogDisconnect);
+                            }
+                        }
+                        else
+                        {
+                            windowRenderer.closeDialog(dialogQuit);
+                        }
                     }
                 }
-            }
-            else if (keybindingsManager.keyPressed(e.getKeyCode(), e.getModifiers()))
-            {
-                // done
-            }
-            else
-            {
-                for (final Gui dialog : windowRenderer.getOpenDialogs())
+                else if (keybindingsManager.keyPressed(e.getKeyCode(), e.getModifiers()))
                 {
-                    if (!dialog.isHidden(windowRenderer.getGuiState()))
+                    // done
+                }
+                else
+                {
+                    for (final Gui dialog : windowRenderer.getOpenDialogs())
                     {
-                        if (dialog.handleKeyPress(e))
+                        if (!dialog.isHidden(windowRenderer.getGuiState()))
                         {
-                            return;
-                        }
-                        if (dialog.isModal())
-                        {
-                            return;
+                            if (dialog.handleKeyPress(e))
+                            {
+                                return;
+                            }
+                            if (dialog.isModal())
+                            {
+                                return;
+                            }
                         }
                     }
+                    if (windowRenderer.getCurrentGui().handleKeyPress(e))
+                    {
+                        return;
+                    }
+                    handleKeyPress(e);
                 }
-                if (windowRenderer.getCurrentGui().handleKeyPress(e))
-                {
-                    return;
-                }
-                handleKeyPress(e);
+                break;
             }
-            break;
         }
     }
 
     public void keyReleased(final KeyEvent e)
     {
-        updateModifiers(e);
-        switch (e.getKeyCode())
+        synchronized (semaphoreDrawing)
         {
-        case KeyEvent.VK_ALT:
-        case KeyEvent.VK_ALT_GRAPH:
-        case KeyEvent.VK_SHIFT:
-        case KeyEvent.VK_CONTROL:
-            break;
+            updateModifiers(e);
+            switch (e.getKeyCode())
+            {
+            case KeyEvent.VK_ALT:
+            case KeyEvent.VK_ALT_GRAPH:
+            case KeyEvent.VK_SHIFT:
+            case KeyEvent.VK_CONTROL:
+                break;
 
-        default:
-            if (e.getKeyCode() == KeyEvent.VK_ESCAPE)
-            {
-                // ignore
+            default:
+                if (e.getKeyCode() == KeyEvent.VK_ESCAPE)
+                {
+                    // ignore
+                }
+                else if (keybindingsManager.keyReleased())
+                {
+                    windowRenderer.closeDialog(keybindDialog);
+                }
+                break;
             }
-            else if (keybindingsManager.keyReleased())
-            {
-                windowRenderer.closeDialog(keybindDialog);
-            }
-            break;
         }
     }
 
@@ -1041,31 +1047,34 @@ public class JXCWindow extends JFrame implements KeyListener, CrossfireDrawextin
             return;
         }
 
-        if (keybindingsManager.keyTyped(e.getKeyChar()))
+        synchronized (semaphoreDrawing)
         {
-            commandQueue.resetRepeatCount();
-        }
-        else
-        {
-            for (final Gui dialog : windowRenderer.getOpenDialogs())
+            if (keybindingsManager.keyTyped(e.getKeyChar()))
             {
-                if (!dialog.isHidden(windowRenderer.getGuiState()))
+                commandQueue.resetRepeatCount();
+            }
+            else
+            {
+                for (final Gui dialog : windowRenderer.getOpenDialogs())
                 {
-                    if (dialog.handleKeyTyped(e))
+                    if (!dialog.isHidden(windowRenderer.getGuiState()))
                     {
-                        return;
-                    }
-                    if (dialog.isModal())
-                    {
-                        return;
+                        if (dialog.handleKeyTyped(e))
+                        {
+                            return;
+                        }
+                        if (dialog.isModal())
+                        {
+                            return;
+                        }
                     }
                 }
+                if (windowRenderer.getCurrentGui().handleKeyTyped(e))
+                {
+                    return;
+                }
+                handleKeyTyped(e);
             }
-            if (windowRenderer.getCurrentGui().handleKeyTyped(e))
-            {
-                return;
-            }
-            handleKeyTyped(e);
         }
     }
 
@@ -1164,40 +1173,43 @@ public class JXCWindow extends JFrame implements KeyListener, CrossfireDrawextin
 
     public void commandQueryReceived(final CrossfireCommandQueryEvent evt)
     {
-        setStatus(Status.QUERY);
-        windowRenderer.openDialog(queryDialog);
-        queryDialog.setHideInput((evt.getQueryType()&CrossfireCommandQueryEvent.HIDEINPUT) != 0);
-
-        currentQueryDialogIsNamePrompt = evt.getPrompt().startsWith("What is your name?");
-        if (currentQueryDialogIsNamePrompt)
+        synchronized (semaphoreDrawing)
         {
-            final String playerName = settings.getString("player_"+hostname, "");
-            if (playerName.length() > 0)
+            setStatus(Status.QUERY);
+            windowRenderer.openDialog(queryDialog);
+            queryDialog.setHideInput((evt.getQueryType()&CrossfireCommandQueryEvent.HIDEINPUT) != 0);
+
+            currentQueryDialogIsNamePrompt = evt.getPrompt().startsWith("What is your name?");
+            if (currentQueryDialogIsNamePrompt)
             {
-                final GUIText textArea = queryDialog.getFirstTextArea();
-                if (textArea != null)
+                final String playerName = settings.getString("player_"+hostname, "");
+                if (playerName.length() > 0)
                 {
-                    textArea.setText(playerName);
+                    final GUIText textArea = queryDialog.getFirstTextArea();
+                    if (textArea != null)
+                    {
+                        textArea.setText(playerName);
+                    }
                 }
             }
-        }
-        else if (evt.getPrompt().startsWith("[y] to roll new stats")
-        || evt.getPrompt().startsWith("Welcome, Brave New Warrior!"))
-        {
-            windowRenderer.setGuiState(JXCWindowRenderer.GuiState.NEWCHAR);
-            if (openDialogByName("newchar"))
+            else if (evt.getPrompt().startsWith("[y] to roll new stats")
+            || evt.getPrompt().startsWith("Welcome, Brave New Warrior!"))
             {
-                closeDialogByName("messages");
-                closeDialogByName("status");
+                windowRenderer.setGuiState(JXCWindowRenderer.GuiState.NEWCHAR);
+                if (openDialogByName("newchar"))
+                {
+                    closeDialogByName("messages");
+                    closeDialogByName("status");
+                }
+                else
+                {
+                    // fallback: open both message and status dialogs if this skin
+                    // does not define a login dialog
+                    openDialogByName("messages");
+                    openDialogByName("status");
+                }
+                openDialog(queryDialog); // raise dialog
             }
-            else
-            {
-                // fallback: open both message and status dialogs if this skin
-                // does not define a login dialog
-                openDialogByName("messages");
-                openDialogByName("status");
-            }
-            openDialog(queryDialog); // raise dialog
         }
     }
 
