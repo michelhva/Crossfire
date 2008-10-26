@@ -1,5 +1,5 @@
 arch map
-name Maximum Security Cells
+name Lord Butakis' Prison, Maximum Security Cells
 difficulty 45
 region lakecountry
 width 16
@@ -8,7 +8,7 @@ enter_x 13
 enter_y 15
 msg
 Created:  1995-03-29
-Modified: 2008-09-19 Rick Tanner
+Modified: 2008-10-25 Rick Tanner
 endmsg
 end
 arch dungeon_floor
@@ -1369,7 +1369,7 @@ x 13
 y 15
 end
 arch oakdoor
-name oakdoor from maximum security cells
+name Oakdoor from Maximum Security Cells
 slaying prison1
 hp 4
 x 13
@@ -1470,7 +1470,7 @@ x 14
 y 15
 end
 arch oakdoor
-name oakdoor from maximum security cells
+name Oakdoor from Maximum Security Cells
 slaying prison1
 hp 5
 x 14
