@@ -1,5 +1,5 @@
 arch map
-name Terminal
+name Pupland Dragon Terminal
 difficulty 1
 region pupland
 width 21
@@ -8,7 +8,7 @@ enter_x 10
 enter_y 2
 msg
 Created:  1996-04-05
-Modified: 2008-10-13 Rick Tanner
+Modified: 2008-10-26 Rick Tanner
 endmsg
 end
 arch biglake_center
@@ -1769,6 +1769,7 @@ y 8
 move_block 0
 end
 arch dragon_exit
+name To Nurnberg
 slaying /pup_land/nurnberg/city
 hp 26
 sp 25

@@ -8,7 +8,7 @@ enter_x 5
 enter_y 18
 msg
 Created:  1996-02-25
-Modified: 2008-10-25 Rick Tanner
+Modified: 2008-10-26 Rick Tanner
 endmsg
 end
 arch grass
@@ -1180,7 +1180,7 @@ x 10
 y 3
 end
 arch l_shop1
-name Tavern
+name Lone Town Tavern
 slaying tavern
 hp 12
 sp 24
@@ -2363,7 +2363,7 @@ x 18
 y 11
 end
 arch house_small
-name Training Center
+name Lown Town Training Center
 slaying training
 hp 1
 x 18
