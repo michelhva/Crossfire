@@ -8,7 +8,7 @@ enter_x 6
 enter_y 11
 msg
 Created:  1996-02-07
-Modified: 2008-10-13 Rick Tanner
+Modified: 2008-10-27 Rick Tanner
 endmsg
 end
 arch invis_exit
@@ -368,6 +368,7 @@ x 4
 y 4
 end
 arch courthouse
+name Ancient Ruins
 slaying floor1
 hp 8
 sp 14
