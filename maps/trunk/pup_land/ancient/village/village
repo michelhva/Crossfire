@@ -8,7 +8,7 @@ enter_x 7
 enter_y 14
 msg
 Created:  1996-05-17
-Modified: 2008-10-26 Rick Tanner
+Modified: 2008-10-27 Rick Tanner
 endmsg
 end
 arch pstone_2
@@ -1002,6 +1002,7 @@ x 6
 y 23
 end
 arch chole_1
+name Monsters Pit
 slaying hole/hole.B1
 hp 7
 sp 5

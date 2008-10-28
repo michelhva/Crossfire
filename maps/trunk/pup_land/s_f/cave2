@@ -1,5 +1,5 @@
 arch map
-name Cave
+name Shining Tower
 difficulty 1
 region pupland
 width 16
@@ -7,7 +7,7 @@ height 16
 enter_y 6
 msg
 Created:  1996-02-10
-Modified: 2008-10-13 Rick Tanner
+Modified: 2008-10-27 Rick Tanner
 endmsg
 end
 arch blocked
@@ -667,7 +667,7 @@ x 8
 y 6
 end
 arch tower_a
-name Shining tower
+name Shining Tower
 slaying st1
 hp 8
 sp 15
