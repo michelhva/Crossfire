@@ -1,3 +1,318 @@
+2008-10-27 05:14  rjtanner
+
+	* mlab/mlabscrntrd1, mlab/mlabscrntrd2, mlab/mlabscrntrdb1,
+	  mlab/mlabscrntrdb2, mlab/mlabscrntrdb3, navar_city/misc/navarwiz,
+	  navar_city/mlab/tavern, navar_city/mlab/tavern2,
+	  navar_city/mlab/tavern3, navar_city/mlab/tavern4,
+	  navar_city/mlab/tavern5, navar_city/mlab/tavern6,
+	  navar_city/mlab/tavern7, navar_city/mlab/ttower10,
+	  navar_city/mlab/ttower11, navar_city/mlab/ttower12,
+	  navar_city/mlab/ttower13, navar_city/mlab/ttower14,
+	  navar_city/mlab/ttower15, navar_city/mlab/ttower16,
+	  navar_city/mlab/ttower17, navar_city/mlab/ttower18,
+	  navar_city/mlab/ttower19, navar_city/mlab/ttower20,
+	  navar_city/mlab/ttower21, navar_city/mlab/ttower22,
+	  navar_city/mlab/ttower23, navar_city/mlab/ttower24,
+	  navar_city/mlab/ttower25, navar_city/mlab/ttower26,
+	  navar_city/mlab/ttower27, navar_city/mlab/ttower28,
+	  navar_city/mlab/ttower29, navar_city/mlab/ttower30,
+	  navar_city/mlab/ttower31, navar_city/mlab/ttower32,
+	  navar_city/mlab/ttower33, navar_city/mlab/ttower34,
+	  navar_city/mlab/ttower35, navar_city/mlab/ttower36,
+	  navar_city/mlab/ttower37, navar_city/mlab/ttower38,
+	  navar_city/mlab/ttower39, navar_city/mlab/ttower40,
+	  navar_city/mlab/ttower41, navar_city/mlab/ttower42,
+	  navar_city/mlab/ttower43, navar_city/mlab/ttower44,
+	  navar_city/mlab/ttower45, navar_city/mlab/ttower8,
+	  navar_city/mlab/ttower9, navar_city/mlab/zealothouseb1,
+	  pup_land/lone_town/shops/transport.shoppe,
+	  pup_land/lone_town/town, pup_land/lone_town/town_ud1,
+	  pup_land/lone_town/town_ud2, santo_dominion/magara/well/top,
+	  scorn/houses/wizz.entry, scorn/houses/wizz.lev1,
+	  scorn/houses/wizz.lev1.pass1, scorn/misc/wizhide,
+	  scorn/misc/zoo2, whalingoutpost/lightkeepershouseb1,
+	  wolfsburg/dungeons/church.2, wolfsburg/dungeons/church.3,
+	  wolfsburg/dungeons/church.4a, wolfsburg/dungeons/church.4b,
+	  wolfsburg/dungeons/church.4c, wolfsburg/dungeons/church.4d,
+	  wolfsburg/shops/transport.shoppe, world/world_102_108,
+	  world/world_128_109: (Inprogress checkin) Update map names to
+	  make them unique and more descriptive
+
+2008-10-26 07:45  rjtanner
+
+	* wolfsburg/dept_store_weapon: Rename map so it properly displays
+	  in mapper (missed in earlier commit)
+
+2008-10-26 07:33  rjtanner
+
+	* wolfsburg/dept_store_armour, wolfsburg/dept_store_magic,
+	  wolfsburg/dept_store_misc: Rename map so it properly displays in
+	  mapper
+
+2008-10-26 07:12  rjtanner
+
+	* darcap/temple_justice/temple_justice.13: Fix broken stairs - they
+	  lead to no map
+
+2008-10-26 07:09  rjtanner
+
+	* darcap/undead/undead.1, darcap/undead/undead.2,
+	  darcap/undead/undead.3, euthville/devil.church1,
+	  euthville/devil.church2, euthville/devil.church4,
+	  euthville/devil.church5, lake_country/Butakis/B_wshop,
+	  pup_land/ancient/ruin/village, pup_land/ancient/village/village,
+	  pup_land/ancient/volcano/volcano.1,
+	  pup_land/ancient/volcano/volcano.2,
+	  pup_land/ancient/volcano/volcano.3,
+	  santo_dominion/shaft/undeadshaft.1,
+	  santo_dominion/shaft/undeadshaft.2,
+	  santo_dominion/shaft/undeadshaft.3,
+	  santo_dominion/shaft/undeadshaft.4, scorn/houses/breezy_under2,
+	  whalingoutpost/underwaterdungeon/level1,
+	  whalingoutpost/underwaterdungeon/level2,
+	  whalingoutpost/underwaterdungeon/level3, world/world_104_109:
+	  (Inprogress checkin) Update map names to make them unique and
+	  more descriptive
+
+2008-10-26 06:35  rjtanner
+
+	* azumauindo/ranbounagisatoshi/towers/tou1,
+	  azumauindo/ranbounagisatoshi/towers/tou2,
+	  azumauindo/ranbounagisatoshi/towers/tou3,
+	  azumauindo/ranbounagisatoshi/towers/tou4,
+	  azumauindo/ranbounagisatoshi/towers/tou5, brest/info.2.zoon,
+	  brest/info_first, darcap/darcap/circus/shooting,
+	  darcap/temple_justice/temple_justice.1,
+	  darcap/temple_justice/temple_justice.10,
+	  darcap/temple_justice/temple_justice.11,
+	  darcap/temple_justice/temple_justice.12,
+	  darcap/temple_justice/temple_justice.13,
+	  darcap/temple_justice/temple_justice.14,
+	  darcap/temple_justice/temple_justice.2,
+	  darcap/temple_justice/temple_justice.3,
+	  darcap/temple_justice/temple_justice.4,
+	  darcap/temple_justice/temple_justice.5,
+	  darcap/temple_justice/temple_justice.6,
+	  darcap/temple_justice/temple_justice.7,
+	  darcap/temple_justice/temple_justice.8,
+	  darcap/temple_justice/temple_justice.9,
+	  lake_country/Butakis/luck1, lake_country/Butakis/luck2,
+	  lake_country/Butakis/luck3, lake_country/Mwizard/Mwizard0,
+	  lake_country/Mwizard/Mwizard1, lake_country/Mwizard/Mwizard2,
+	  lake_country/Mwizard/Mwizard3, lake_country/Mwizard/Mwizard4,
+	  lake_country/Mwizard/Mwizard5, lake_country/Mwizard/Mwizard6,
+	  lake_country/Mwizard/MwizardD, lake_country/Mwizard/MwizardG,
+	  lake_country/Mwizard/MwizardT, navar_city/illusion/illexit,
+	  navar_city/illusion/illtow1, navar_city/illusion/illtow2,
+	  navar_city/illusion/illtow3, navar_city/illusion/illtow4,
+	  navar_city/illusion/illtow5, navar_city/illusion/illtow6,
+	  navar_city/illusion/illtow7, navar_city/misc/tannery,
+	  navar_city/smugglers_cove/sc_warehouse,
+	  navar_city/smugglers_cove/sc_warehouse2,
+	  navar_city/smugglers_cove/sc_warehouse3,
+	  navar_city/temples/gorokh2,
+	  navar_city/troll_canyon/troll_canyon.10,
+	  navar_city/troll_canyon/troll_canyon.11,
+	  navar_city/troll_canyon/troll_canyon.12,
+	  navar_city/troll_canyon/troll_canyon.2,
+	  navar_city/troll_canyon/troll_canyon.3,
+	  navar_city/troll_canyon/troll_canyon.4,
+	  navar_city/troll_canyon/troll_canyon.5,
+	  navar_city/troll_canyon/troll_canyon.6,
+	  navar_city/troll_canyon/troll_canyon.7,
+	  navar_city/troll_canyon/troll_canyon.8,
+	  navar_city/troll_canyon/troll_canyon.9,
+	  pup_land/ancient/village/tavern1,
+	  pup_land/ancient/village/village, pup_land/lone_town/tavern,
+	  pup_land/lone_town/tavern_ud, pup_land/lone_town/town,
+	  pup_land/lone_town/training, pup_land/lone_town/training2,
+	  pup_land/ordeal/tower_ordeal1, pup_land/ordeal/tower_ordeal2,
+	  pup_land/ordeal/tower_ordeal3, pup_land/ordeal/tower_ordeal4,
+	  pup_land/ordeal/tower_ordeal5, pup_land/ordeal/tower_ordeal6,
+	  pup_land/ordeal/tower_ordealB1, pup_land/ordeal/tower_ordealB2,
+	  pup_land/ordeal/tower_ordealB3, pup_land/terminal,
+	  pup_land/terminal_u1, quests/peterm/CTower/Servants,
+	  quests/peterm/CTower/Study, quests/peterm/CTower/TowerTop,
+	  santo_dominion/tavern.2ndfloor, santo_dominion/tavern.downstairs,
+	  santo_dominion/temple_naive/templenaive.1,
+	  santo_dominion/temple_naive/templenaive.2,
+	  santo_dominion/tobias.top, scorn/houses/tannery,
+	  scorn/misc/devourlower, scorn/misc/templelyth,
+	  scorn/temples/mostrai2, scorn/temples/ruggilli1,
+	  scorn/temples/sorig, scorn/temples/sorig2,
+	  sisters/necro_entrance, sisters/necro_hole1, sisters/necro_ruin1,
+	  sisters/necro_ruin1a, sisters/tower0, sisters/tower1,
+	  sisters/tower2, sisters/tower3, wolfsburg/tt/tta1,
+	  wolfsburg/tt/tta2, wolfsburg/tt/ttb1, wolfsburg/tt/ttb2,
+	  world/world_104_115, world/world_105_115, world/world_122_116:
+	  (Inprogress checkin) Update map names to make them unique and
+	  more descriptive
+
+2008-10-26 02:06  rjtanner
+
+	* brest/brest.scrolls.upper.1, brest/brest.scrolls.upper.2,
+	  navar_city/tower/magetower1, navar_city/tower/magetower2,
+	  navar_city/tower/magetower3, navar_city/tower/magetower4,
+	  navar_city/tower/magetower5, navar_city/tower/magetower_low,
+	  navar_city/tower/magetowfinal, pup_land/nurnberg/city,
+	  pup_land/nurnberg/storehouse, pup_land/nurnberg/storehouse2,
+	  pup_land/s_f/secret, pup_land/s_f/special, pup_land/s_f/st1,
+	  pup_land/s_f/st2, pup_land/s_f/st3, pup_land/s_f/st5,
+	  pup_land/s_f/st6, pup_land/s_f/st7, santo_dominion/map.stigkr.1,
+	  santo_dominion/map.stigkr.2, scorn/misc/castle,
+	  scorn/misc/castle2, scorn/towers/brewery.1,
+	  scorn/towers/brewery.2, scorn/towers/brewery.3,
+	  scorn/towers/brewery.4, sisters/small_manor0,
+	  sisters/small_manor1, sisters/small_manor2,
+	  wolfsburg/magara/tower2/floor_1, wolfsburg/magara/tower2/floor_2,
+	  wolfsburg/slave_pit1, wolfsburg/slave_pit2, wolfsburg/slave_pit3,
+	  world/world_128_109: (Inprogress checkin) Update map names to
+	  make them unique and more descriptive
+
+2008-10-26 01:22  rjtanner
+
+	* darcap/darcap/apartment, lake_country/Butakis/Rlib1,
+	  lake_country/Butakis/Rlib2, lake_country/Butakis/church-1,
+	  lake_country/Butakis/church0, lake_country/Butakis/church1,
+	  lake_country/Butakis/prison-1, lake_country/Butakis/prison0,
+	  lake_country/Butakis/prison1, lake_country/Butakis/prison_e,
+	  lake_country/Butakis/prison_n, lake_country/Butakis/prison_s,
+	  lake_country/Butakis/prison_w, navar_city/apartments/apartment,
+	  navar_city/apartments/apartment_attic,
+	  navar_city/apartments/apartment_basement,
+	  navar_city/apartments/apartment_upstairs, navar_city/city1prison,
+	  pup_land/pplant/pplant1, pup_land/pplant/pplant2,
+	  pup_land/pplant/pplant3, pup_land/pplant/pplant_ud1,
+	  pup_land/pplant/pplant_ud2, pup_land/pplant/pplant_ud3,
+	  pup_land/raffle/raffle1, pup_land/raffle/raffle1_u1,
+	  pup_land/raffle/raffle1_u2, pup_land/raffle/raffle1_u3,
+	  pup_land/raffle/raffle2, pup_land/raffle/raffle2_u1,
+	  pup_land/raffle/raffle2_u2_a, pup_land/raffle/raffle2_u2_b,
+	  pup_land/raffle/raffle2_u3, pup_land/raffle/raffle2_u3a,
+	  pup_land/raffle/raffle2_u4, pup_land/raffle/raffle3,
+	  pup_land/raffle/raffle3_u1, pup_land/raffle/raffle3_u2,
+	  pup_land/raffle/raffle3_u2a, santo_dominion/sdomino_appartment,
+	  scorn/anthony/prison, scorn/misc/prison,
+	  wolfsburg/magara/tower1/entrance,
+	  wolfsburg/magara/tower1/floor_1, wolfsburg/magara/tower1/floor_3,
+	  wolfsburg/temple/enterance, wolfsburg/temple/temp_dung1:
+	  (Inprogress checkin) Update map names to make them unique and
+	  more descriptive
+
+2008-10-25 06:47  rjtanner
+
+	* santo_dominion/espen/espen2: Remove extra walls from the stack
+
+2008-10-25 06:46  rjtanner
+
+	* port_joseph/pirates/mbgrave: Replace invisible exit with a ladder
+
+2008-10-25 06:44  rjtanner
+
+	* santo_dominion/espen/palace: Insert missing floor tiles
+
+2008-10-25 06:39  rjtanner
+
+	* santo_dominion/magara/south_lighthouse/floor_4: Insert missing
+	  floor tiles, update cave wall
+
+2008-10-25 06:36  rjtanner
+
+	* navar_city/jail/jail, navar_city/jail/jail2,
+	  pup_land/nurnberg/apartment/upstairs: Cosmetic wall (fence)
+	  changes
+
+2008-10-25 06:24  rjtanner
+
+	* azumauindo/minatomachi/temples/templeruggilli1,
+	  azumauindo/minatomachi/temples/templeruggilli2,
+	  azumauindo/misc/shrine1, azumauindo/misc/shrine2,
+	  azumauindo/misc/shrine3, azumauindo/misc/shrineb1,
+	  azumauindo/ranbounagisatoshi/temples/rruggilli1,
+	  azumauindo/ranbounagisatoshi/temples/rruggilli2,
+	  azumauindo/suno-yamatoshi/shops/magicshop1,
+	  azumauindo/suno-yamatoshi/shops/magicshop2,
+	  azumauindo/suno-yamatoshi/temples/ruggilli1,
+	  azumauindo/suno-yamatoshi/temples/ruggilli2,
+	  dungeons/monkey_temple/m_temple1,
+	  dungeons/monkey_temple/m_temple2, lake_country/Butakis/Butakis0,
+	  lake_country/Butakis/inn, navar_city/jail/jail,
+	  navar_city/jail/jail2, navar_city/jail/jail3,
+	  navar_city/light/light0, navar_city/light/light1,
+	  navar_city/light/light2, navar_city/light/light3,
+	  navar_city/light/light4, navar_city/slums/Iggys_house,
+	  navar_city/slums/Iggys_house_lower,
+	  navar_city/slums/Iggys_house_upper, port_joseph/pirates/mbgrave2,
+	  pup_land/ancient/village/library,
+	  pup_land/ancient/village/village, pup_land/lone_town/mshop,
+	  pup_land/lone_town/mshop_ud, pup_land/lone_town/town,
+	  pup_land/lone_town/town_ud2, pup_land/nurnberg/apartment/cave,
+	  pup_land/nurnberg/apartment/main,
+	  pup_land/nurnberg/apartment/upstairs, santo_dominion/basement,
+	  santo_dominion/espen/espen1, santo_dominion/espen/espen2,
+	  santo_dominion/espen/palace, santo_dominion/house_of_hell,
+	  santo_dominion/just_preliminary,
+	  santo_dominion/lord_byron/1st_floor,
+	  santo_dominion/lord_byron/2nd_floor,
+	  santo_dominion/lord_byron/dungeon,
+	  santo_dominion/lord_byron/main,
+	  santo_dominion/magara/north_lighthouse/floor_1,
+	  santo_dominion/magara/north_lighthouse/floor_2,
+	  santo_dominion/magara/north_lighthouse/floor_3,
+	  santo_dominion/magara/north_lighthouse/floor_4,
+	  santo_dominion/magara/south_lighthouse/floor_1,
+	  santo_dominion/magara/south_lighthouse/floor_2,
+	  santo_dominion/magara/south_lighthouse/floor_3,
+	  santo_dominion/magara/south_lighthouse/floor_4,
+	  santo_dominion/mudman/mudman.1, santo_dominion/mudman/mudman.2,
+	  santo_dominion/mudman/mudman.3, scorn/shops/magicshop,
+	  scorn/towers/tower.mad, scorn/towers/tower.mad1,
+	  scorn/towers/tower.mad2, scorn/towers/tower.mad3,
+	  whalingoutpost/misc/icecavern1, whalingoutpost/misc/icecavern2,
+	  world/world_104_115, world/world_121_117: (Inprogress checkin)
+	  Update map names to make them unique and more descriptive
+
+2008-10-25 01:19  rjtanner
+
+	* navar_city/misc/jeweler, scorn/houses/jeweler, sisters/compound1,
+	  sisters/compound2, sisters/compound3, world/world_105_115,
+	  world/world_122_117: (Inprogress checkin) Update map names to
+	  make them unique and more descriptive
+
+2008-10-25 01:04  rjtanner
+
+	* scorn/misc/jail, scorn/misc/jail_upper: Cosmetic changes with how
+	  fences (swall) merges with nearby walls
+
+2008-10-25 01:01  rjtanner
+
+	* brest/brittany/jessy.1, brest/brittany/jessy.2,
+	  brest/brittany/jessy.3: Map header updates: Update maps with
+	  entrance x & y coordinates, adjust map level difficulty to
+	  something slightly more realistic
+
+2008-10-25 00:54  rjtanner
+
+	* azumauindo/minatomachi/stores/postoffice, brest/brest.IPO,
+	  brest/brittany/jessy.1, brest/brittany/jessy.2,
+	  brest/brittany/jessy.3, lake_country/Butakis/gate_inner,
+	  navar_city/misc/IPO_navar, pup_land/ancient/village/inn,
+	  pup_land/ancient/village/village, pup_land/hall2,
+	  pup_land/lone_town/inn, pup_land/lone_town/town,
+	  pup_land/nurnberg/IPO_nurnberg, pup_land/nurnberg/city,
+	  pup_land/s_f/ki, pup_land/s_f/ki2,
+	  quests/peterm/temple/AnteChamber, quests/peterm/temple/GemTunnel,
+	  quests/peterm/temple/InnerTemple,
+	  quests/peterm/temple/OuterTemple, scorn/kar/creepy.house2,
+	  scorn/misc/jail, scorn/misc/jail_upper, scorn/shops/IPO_scorn,
+	  world/world_104_115, world/world_107_123, world/world_122_117,
+	  world/world_129_101: (Inprogress checkin) Update map names to
+	  make them unique and more descriptive
+
+2008-10-24 01:11  rjtanner
+
+	* ChangeLog: Updated ChangeLog file using svn2cl
+
 2008-10-24 01:04  rjtanner
 
 	* lake_country/snake_pit/Chaos_lair2: Fixed an inventory error with
