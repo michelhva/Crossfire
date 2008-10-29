@@ -2,6 +2,7 @@ arch map
 name Ice Cave
 reset_timeout 7200
 difficulty 75
+region whalingoutpost
 darkness 3
 width 64
 height 64
@@ -9,7 +10,7 @@ enter_x 36
 enter_y 37
 msg
 Created:  2004-08-03 Mikeeusa
-Modified: 2008-10-01 Rick Tanner
+Modified: 2008-10-28 Rick Tanner
 endmsg
 end
 arch istone

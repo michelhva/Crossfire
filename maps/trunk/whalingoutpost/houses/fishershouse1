@@ -2,13 +2,14 @@ arch map
 name Fisherman's House
 reset_timeout 7200
 difficulty 9
+region whalingoutpost
 width 32
 height 26
 enter_x 4
 enter_y 9
 msg
 Created:  2004-08-03 Mikeeusa
-Modified: 2008-10-01 Rick Tanner
+Modified: 2008-10-28 Rick Tanner
 endmsg
 outdoor 1
 end
