@@ -1,3 +1,214 @@
+2008-10-29 01:30  rjtanner
+
+	* marksel/cellar, marksel/church, marksel/grumms_inn,
+	  marksel/grumms_inn2, marksel/keep, marksel/mines, marksel/shop,
+	  marksel/wizard: Apply new region (marksel) to relevant maps
+
+2008-10-29 01:29  rjtanner
+
+	* sisters/compound1, sisters/compound2, sisters/compound3,
+	  sisters/entrance, sisters/granary, sisters/necro_entrance,
+	  sisters/necro_hole1, sisters/necro_ruin1, sisters/necro_ruin1a,
+	  sisters/shrine0, sisters/shrine0_east, sisters/shrine0_west,
+	  sisters/shrine1, sisters/shrine_entrance, sisters/small_manor0,
+	  sisters/small_manor1, sisters/small_manor2, sisters/tower0,
+	  sisters/tower1, sisters/tower2, sisters/tower3: Apply new region
+	  (threesisters) to relevant maps
+
+2008-10-29 01:29  rjtanner
+
+	* quests/todd/aljwaf/crypt, quests/todd/aljwaf/crypt2,
+	  quests/todd/aljwaf/crypt3, quests/todd/aljwaf/crypt4,
+	  quests/todd/aljwaf/crypt5, quests/todd/aljwaf/hall2,
+	  quests/todd/aljwaf/tomb, quests/todd/aljwaf/tower1,
+	  quests/todd/aljwaf/tower2, quests/todd/aljwaf/tower3,
+	  quests/todd/aljwaf/tower4: Apply new region (narcopin) to
+	  relevant maps
+
+2008-10-29 01:28  rjtanner
+
+	* whalingoutpost/houses/fishershouse1,
+	  whalingoutpost/houses/infestedhouse1, whalingoutpost/lighthouse1,
+	  whalingoutpost/lighthouse2, whalingoutpost/lighthouse3,
+	  whalingoutpost/lighthouse4, whalingoutpost/lighthouse5,
+	  whalingoutpost/lighthouse6, whalingoutpost/lighthouse6attic,
+	  whalingoutpost/lightkeepershouse1,
+	  whalingoutpost/lightkeepershouseb1, whalingoutpost/misc/castle1,
+	  whalingoutpost/misc/castle2, whalingoutpost/misc/castle3,
+	  whalingoutpost/misc/castle4, whalingoutpost/misc/castleb1,
+	  whalingoutpost/misc/castleb1keep, whalingoutpost/misc/castleb2,
+	  whalingoutpost/misc/castleb3, whalingoutpost/misc/fisherswell1,
+	  whalingoutpost/misc/frostcavern1, whalingoutpost/misc/holeinice1,
+	  whalingoutpost/misc/icecavern1, whalingoutpost/misc/icecavern2,
+	  whalingoutpost/misc/icehole1, whalingoutpost/misc/polarbearcave1,
+	  whalingoutpost/misc/polarbearcave2,
+	  whalingoutpost/misc/trollcave1,
+	  whalingoutpost/taverns/fishershall1,
+	  whalingoutpost/taverns/fishershallb1,
+	  whalingoutpost/taverns/storehouse1,
+	  whalingoutpost/underwaterdungeon/level1,
+	  whalingoutpost/underwaterdungeon/level2,
+	  whalingoutpost/underwaterdungeon/level3: Apply new region
+	  (whalingoutpost) to relevant maps
+
+2008-10-29 01:04  rjtanner
+
+	* regions.reg: New region, marksel (Hamlet of Lord Marksel), for
+	  maps located in /marksel/
+
+2008-10-29 01:01  rjtanner
+
+	* regions.reg: New region, threesisters (Valley of The Three
+	  Sisters), for maps located in /sisters/
+
+2008-10-29 00:58  rjtanner
+
+	* regions.reg: New region, whalingoutpost (Whaling Outpost), for
+	  maps located in /whalingoutpost/
+
+2008-10-29 00:55  rjtanner
+
+	* regions.reg: New region, narcopin (Ruins of Narcopin), for maps
+	  located in /quests/todd/aljwaf/
+
+2008-10-29 00:37  rjtanner
+
+	* regions.reg: Make the name consistent, Lonetown -> Lone Town,
+	  individual maps have already been updated to reflect this
+
+2008-10-29 00:34  rjtanner
+
+	* brest/shops/a_small_shop, pup_land/lone_town/apartment/basement,
+	  pup_land/lone_town/apartment/groundfloor,
+	  pup_land/lone_town/apartment/sharedcourtyard,
+	  pup_land/lone_town/apartment/upper1, pup_land/lone_town/church,
+	  pup_land/lone_town/church_ud,
+	  pup_land/lone_town/dragonhangar/hangar,
+	  pup_land/lone_town/shops/buildshop, pup_land/lone_town/town,
+	  scorn/houses/house3.2nd, scorn/misc/castle_kitchen,
+	  world/world_104_115, world/world_107_123: (Inprogress checkin)
+	  Update map names to make them unique and more descriptive
+
+2008-10-28 19:58  rjtanner
+
+	* darcap/pygmy_forest/pygmy_boss, darcap/pygmy_forest/pygmy_forest,
+	  darcap/pygmy_forest/pygmy_garden,
+	  darcap/pygmy_forest/pygmy_holes,
+	  darcap/pygmy_forest/pygmy_treehouse_a,
+	  darcap/pygmy_forest/pygmy_treehouse_b,
+	  darcap/pygmy_forest/pygmy_treehouse_c,
+	  darcap/pygmy_forest/pygmy_treehouse_d, dragonisland/house8,
+	  port_joseph/pirates/tortship, port_joseph/pirates/tortship2,
+	  port_joseph/pirates/tortship3, pup_land/hq_ud,
+	  pup_land/rainbow/Lv1/e_hall, pup_land/rainbow/Lv1/n_gate,
+	  pup_land/rainbow/Lv2/n_gate, pup_land/rainbow/Lv3/e_hall,
+	  pup_land/rainbow/Lv3/n-gate, pup_land/rainbow/Lv4/e-hall,
+	  pup_land/rainbow/Lv4/n-gate, pup_land/rainbow/Lv5/e-hall,
+	  pup_land/rainbow/Lv5/n-gate, pup_land/rainbow/Lv6/e-hall,
+	  pup_land/rainbow/Lv6/n-gate, pup_land/rainbow/Lv7/e-hall,
+	  pup_land/rainbow/islands, pup_land/rainbow/l_h1,
+	  pup_land/rainbow/l_h2, pup_land/rainbow/l_hB,
+	  quests/peterm/Demonology/AirTower2,
+	  quests/peterm/Demonology/Demon1, quests/peterm/Demonology/Demon2,
+	  quests/peterm/Demonology/Demon3,
+	  quests/peterm/Demonology/EarthTower2,
+	  quests/peterm/Demonology/FireTower2,
+	  quests/peterm/Demonology/WaterTower2, scorn/anthony/prison,
+	  wolfsburg/dungeons/ship, wolfsburg/dungeons/ship_deck2,
+	  world/world_103_127: (Inprogress checkin) Update map names to
+	  make them unique and more descriptive
+
+2008-10-28 01:50  rjtanner
+
+	* azumauindo/suno-yamatoshi/towers/tou1,
+	  azumauindo/suno-yamatoshi/towers/tou2,
+	  azumauindo/suno-yamatoshi/towers/tou3,
+	  azumauindo/suno-yamatoshi/towers/tou4,
+	  azumauindo/suno-yamatoshi/towers/tou5, navar_city/mlab/tavernb1,
+	  navar_city/mlab/tavernb2, navar_city/mlab/tavernb3,
+	  navar_city/mlab/tavernb4, pup_land/ancient/kurte/kurte,
+	  pup_land/ancient/kurte/shop, pup_land/ancient/mountain/atelir1,
+	  pup_land/ancient/mountain/atelir2,
+	  pup_land/ancient/mountain/mountain.a3,
+	  pup_land/ancient/mountain/tower.1,
+	  pup_land/ancient/mountain/tower.2,
+	  pup_land/ancient/mountain/tower.3,
+	  pup_land/ancient/mountain/tower.4,
+	  pup_land/ancient/mountain/tower.b1, pup_land/ancient/ruin/shop,
+	  pup_land/ancient/village/shop,
+	  pup_land/ancient/village/siegfried/siegfried.1,
+	  pup_land/ancient/village/siegfried/siegfried.2,
+	  pup_land/ancient/village/siegfried/siegfried.3,
+	  pup_land/ancient/village/siegfried/siegfried.B1,
+	  pup_land/ancient/village/siegfried/siegfried.B2,
+	  pup_land/ancient/village/siegfried/siegfried.B3,
+	  pup_land/ancient/village/siegfried/siegfried.B4,
+	  pup_land/ancient/village/siegfried/siegfried.B5a,
+	  pup_land/ancient/village/siegfried/siegfried.B5b,
+	  pup_land/ancient/village/siegfried/siegfried.B5c,
+	  pup_land/ancient/village/village: (Inprogress checkin) Update map
+	  names to make them unique and more descriptive
+
+2008-10-28 01:10  rjtanner
+
+	* pup_land/ancient/village/hole/hole.B1,
+	  pup_land/ancient/village/hole/hole.B2,
+	  pup_land/ancient/village/hole/hole.B3,
+	  pup_land/ancient/village/hole/hole.B4,
+	  pup_land/ancient/village/hole/hole.B5,
+	  pup_land/ancient/village/hole/hole.B6,
+	  pup_land/ancient/village/village,
+	  pup_land/castle_eureca/cave_pass,
+	  pup_land/castle_eureca/cave_pass2,
+	  pup_land/castle_eureca/cave_pass3,
+	  pup_land/castle_eureca/cave_pass4, pup_land/cave_weapon/cave1,
+	  pup_land/cave_weapon/cave2, pup_land/cave_weapon/cave3,
+	  pup_land/cave_weapon/cave4, pup_land/cave_weapon/cave5,
+	  pup_land/kurte/eureca_road1, pup_land/kurte/eureca_road2,
+	  pup_land/kurte/eureca_road3, pup_land/lone_town/cave/b1,
+	  pup_land/lone_town/cave/b2, pup_land/lone_town/cave/b3,
+	  pup_land/nurnberg/reception/electricity2,
+	  pup_land/nurnberg/reception/electricity3,
+	  pup_land/nurnberg/reception/electricity4,
+	  pup_land/nurnberg/reception/electricity5,
+	  pup_land/nurnberg/reception/electricity6,
+	  pup_land/nurnberg/reception/electricity7,
+	  pup_land/nurnberg/reception/fire2,
+	  pup_land/nurnberg/reception/fire3,
+	  pup_land/nurnberg/reception/fire4,
+	  pup_land/nurnberg/reception/fire5,
+	  pup_land/nurnberg/reception/fire6,
+	  pup_land/nurnberg/reception/fire7,
+	  pup_land/nurnberg/reception/reception,
+	  pup_land/nurnberg/reception/water2,
+	  pup_land/nurnberg/reception/water3,
+	  pup_land/nurnberg/reception/water4,
+	  pup_land/nurnberg/reception/water5,
+	  pup_land/nurnberg/reception/water6,
+	  pup_land/nurnberg/reception/water7,
+	  pup_land/nurnberg/reception/wind2,
+	  pup_land/nurnberg/reception/wind3,
+	  pup_land/nurnberg/reception/wind4,
+	  pup_land/nurnberg/reception/wind5,
+	  pup_land/nurnberg/reception/wind6,
+	  pup_land/nurnberg/reception/wind7, pup_land/rainbow/Lv1/e_hall,
+	  pup_land/rainbow/Lv2/b_m2, pup_land/rainbow/Lv2/d_cage,
+	  pup_land/rainbow/Lv2/e_hall, pup_land/rainbow/Lv2/h_pass,
+	  pup_land/rainbow/Lv2/holes, pup_land/rainbow/Lv2/maze,
+	  pup_land/rainbow/Lv3/e_hall, pup_land/rainbow/Lv4/e-hall,
+	  pup_land/rainbow/Lv5/e-hall, pup_land/rainbow/Lv6/e-hall,
+	  pup_land/rainbow/Lv7/e-hall, pup_land/s_f/cave1,
+	  pup_land/s_f/cave2, pup_land/s_f/floor1, pup_land/s_f/floor2,
+	  pup_land/s_f/ruin, pup_land/s_f/ruin_ug,
+	  santo_dominion/magara/well/cave,
+	  santo_dominion/magara/well/treasure, scorn/misc/cider_house:
+	  (Inprogress checkin) Update map names to make them unique and
+	  more descriptive
+
+2008-10-28 00:23  rjtanner
+
+	* ChangeLog: Updated ChangeLog file using svn2cl
+
 2008-10-27 05:14  rjtanner
 
 	* mlab/mlabscrntrd1, mlab/mlabscrntrd2, mlab/mlabscrntrdb1,
