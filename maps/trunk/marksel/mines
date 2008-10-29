@@ -1,7 +1,7 @@
 arch map
 name Mines
 difficulty 10
-region wilderness
+region marksel
 darkness 4
 width 20
 height 20
@@ -9,7 +9,7 @@ enter_x 13
 enter_y 18
 msg
 Created:  2002-12-20 Joel Southall
-Modified: 2008-09-20 Rick Tanner
+Modified: 2008-10-28 Rick Tanner
 endmsg
 end
 arch blocked
