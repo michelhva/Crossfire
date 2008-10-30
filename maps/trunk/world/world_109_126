@@ -8,7 +8,7 @@ height 50
 enter_x 25
 enter_y 25
 msg
-Modified: 2008-10-20 Rick Tanner
+Modified: 2008-10-29 Rick Tanner
 endmsg
 outdoor 1
 tile_path_1 world_109_125
@@ -5762,7 +5762,7 @@ y 27
 end
 arch magic_mouth
 msg
-Welcome to Lord Butakis' Fortress
+Welcome to Fortress of Lord Butakis
 endmsg
 x 21
 y 28
@@ -5772,8 +5772,7 @@ x 21
 y 28
 end
 arch fort_sym
-name Lord Butakis' Fortress
-name_pl Lord Butakis' Fortress
+name Fortress of Lord Butakis
 slaying /lake_country/Butakis/gate_outer
 hp 1
 sp 7
