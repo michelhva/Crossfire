@@ -1,6 +1,7 @@
 arch map
-name Aljwaf Crypt
+name Narcopin Blacksmith
 difficulty 8
+region narcopin
 darkness 3
 width 10
 height 20
@@ -8,6 +9,7 @@ enter_x 1
 enter_y 1
 msg
 Created:  2002-10-20 Todd Mitchell
+Modified: 2008-10-30 Rick Tanner
 endmsg
 end
 arch dirtfloor
@@ -151,7 +153,7 @@ y 2
 end
 arch sign
 msg
-Narcopia blacksmith
+Narcopin Blacksmith
 endmsg
 x 1
 y 2
