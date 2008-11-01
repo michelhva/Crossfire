@@ -1,5 +1,4 @@
 Object c_sage
-name city dweller
 randomitems jail
 name sage
 race human
