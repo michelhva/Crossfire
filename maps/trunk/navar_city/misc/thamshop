@@ -10,7 +10,7 @@ enter_x 4
 enter_y 13
 msg
 Created:  2004-22-02 Avion
-Modified: 2004-05-30 Gene Alexander
+Modified: 2008-11-02 Rick Tanner
 endmsg
 end
 arch tile_white_floor
@@ -442,9 +442,8 @@ connected 10
 end
 arch altar_trigger
 name Drop 200 platinum to enter
-name_pl Drop 200 platinum to enter
-slaying platinacoin
-food 200
+slaying money
+food 10000
 x 4
 y 8
 connected 10

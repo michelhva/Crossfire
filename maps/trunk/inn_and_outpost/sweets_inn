@@ -8,7 +8,7 @@ enter_x 15
 enter_y 12
 msg
 Created:  2002-10-27 Todd Mitchell
-Modified: 2008-09-18 Rick Tanner
+Modified: 2008-11-02 Rick Tanner
 endmsg
 outdoor 1
 end
@@ -483,10 +483,10 @@ y 3
 end
 arch pearl_converter
 name drop 1200 platinum to buy healing potion
-slaying platinacoin
+slaying money
 other_arch potion_heal
 face cauldron.111
-food 1200
+food 60000
 x 3
 y 3
 end
