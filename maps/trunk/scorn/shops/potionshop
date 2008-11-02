@@ -10,7 +10,7 @@ enter_x 14
 enter_y 14
 msg
 Created:  1996-05-02 bt (thomas@astro.psu.edu)
-Modified: 2008-10-20 Rick Tanner
+Modified: 2008-11-02 Rick Tanner
 endmsg
 end
 arch woodfloor
@@ -1611,8 +1611,8 @@ connected 10
 end
 arch altar_trigger
 name Drop 200 platinum for day pass
-slaying platinacoin
-food 200
+slaying money
+food 10000
 x 16
 y 9
 connected 10

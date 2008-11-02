@@ -8,7 +8,7 @@ enter_x 16
 enter_y 19
 msg
 Created:  1996-02-07
-Modified: 2008-10-21 Rick Tanner
+Modified: 2008-11-02 Rick Tanner
 endmsg
 end
 arch woods_2
@@ -1949,7 +1949,8 @@ y 14
 end
 arch altar
 name Royal Suite (10 platinum)
-slaying platinacoin
+slaying money
+food 500
 x 15
 y 14
 connected 10

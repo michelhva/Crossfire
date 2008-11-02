@@ -8,7 +8,7 @@ enter_x 6
 enter_y 1
 msg
 Created:  2000-11-19 Andreas Vogl (red.blaze@gmx.net)
-Modified: 2008-10-25 Rick Tanner
+Modified: 2008-11-02 Rick Tanner
 endmsg
 end
 arch blocked
@@ -648,8 +648,8 @@ unique 1
 end
 arch goldfloor
 name apartment costs 1000 plat
-slaying platinacoin
-food 1000
+slaying money
+food 50000
 x 6
 y 3
 connected 1

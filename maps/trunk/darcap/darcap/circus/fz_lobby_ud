@@ -11,6 +11,7 @@ enter_x 11
 enter_y 12
 msg
 Created: 2008-07-31 Raphaël Quinet & Chad Opperman
+Modified: 2008-11-02 Rick Tanner
 endmsg
 end
 arch dungeon_magic
@@ -1365,8 +1366,8 @@ y 13
 end
 arch altar_trigger
 name Drop 1 platinum for a day pass
-slaying platinacoin
-food 1
+slaying money
+food 50
 x 11
 y 13
 last_sp 1
@@ -1850,9 +1851,9 @@ y 13
 end
 arch altar_trigger
 name Drop 500 platinum for a permanent access card
-slaying platinacoin
+slaying money
 exp 1
-food 500
+food 25000
 x 14
 y 13
 last_sp 1
