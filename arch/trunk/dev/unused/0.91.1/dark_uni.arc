@@ -39,7 +39,6 @@ no_pick 1
 speed 0.77
 weight 800000
 run_away 5
-editable 1
 end
 More
 Object dark_uni_2

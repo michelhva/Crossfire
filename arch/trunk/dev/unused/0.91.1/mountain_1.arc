@@ -5,7 +5,6 @@ no_pick 1
 move_slow walk
 move_slow_penalty 20
 blocksview 1
-editable 8
 end
 More
 Object mountain_1_2
