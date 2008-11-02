@@ -4,7 +4,6 @@ type 66
 face lbungalow.111
 color_fg brown
 no_pick 1
-editable 2
 is_floor 1
 end
 More

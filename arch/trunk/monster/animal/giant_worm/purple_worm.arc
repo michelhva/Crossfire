@@ -42,7 +42,6 @@ weight 1800000
 can_cast_spell 1
 can_see_in_dark 1
 see_invisible 1
-editable 1
 color_fg black
 end
 More

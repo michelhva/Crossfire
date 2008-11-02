@@ -25,11 +25,9 @@ level 7
 resist_physical 30
 
 weight 80000
-editable 1
 run_away 15
 pick_up 64
 can_apply 25
 can_use_weapon 1
 attacktype 3
-editable 1
 end

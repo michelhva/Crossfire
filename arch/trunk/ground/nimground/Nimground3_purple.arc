@@ -11,7 +11,6 @@ Nimground3_purple.111
 Nimground3_purple.111
 mina
 no_pick 1
-editable 8
 is_floor 1
 speed 0.3
 magicmap black

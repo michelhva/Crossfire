@@ -4,7 +4,6 @@ face monolith.111
 no_pick 1
 type 66
 move_block all
-editable 2
 end
 More
 Object monolith_cl_b
@@ -21,7 +20,6 @@ face monolith.111
 type 66
 move_block all
 no_pick 1
-editable 2
 end
 More
 Object monolith_b
