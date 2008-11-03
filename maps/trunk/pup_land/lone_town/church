@@ -8,7 +8,7 @@ enter_x 5
 enter_y 1
 msg
 Created:  1996-01-26
-Modified: 2008-10-28 Rick Tanner
+Modified: 2008-11-02 Rick Tanner
 endmsg
 end
 arch blocked
@@ -613,12 +613,12 @@ x 5
 y 13
 end
 arch altar
-slaying goldcoin
+slaying money
 msg
 Thanks.
 The gods will protect you... perhaps.
 endmsg
-food 100
+food 1000
 x 5
 y 13
 connected 99

@@ -629,9 +629,10 @@ y 10
 end
 arch platinum_converter
 name convert gold into bolts
-slaying goldcoin
+slaying money
 other_arch bolt
 sp 1
+food 10
 x 6
 y 10
 end
@@ -1069,9 +1070,10 @@ y 10
 end
 arch platinum_converter
 name convert gold into arrows
-slaying goldcoin
+slaying money
 other_arch arrow
 sp 1
+food 10
 x 10
 y 10
 end
