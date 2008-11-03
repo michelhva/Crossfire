@@ -1085,11 +1085,10 @@ y 8
 end
 arch altar_trigger
 name 1
-slaying platinacoin
-food 20
+slaying money
+food 1000
 x 5
 y 9
-resist_physical 30
 connected 1
 end
 arch pstone_2
@@ -3144,12 +3143,10 @@ y 8
 end
 arch altar_trigger
 name 3
-slaying platinacoin
-food 20
+slaying money
+food 1000
 x 17
 y 9
-resist_physical 30
-resist_magic 30
 connected 3
 end
 arch pstone_2
@@ -3189,13 +3186,10 @@ y 14
 end
 arch altar
 name 37
-slaying platinacoin
-food 150
+slaying money
+food 7500
 x 17
 y 15
-resist_physical 30
-resist_fire 30
-resist_confusion 30
 connected 37
 end
 arch pstone_2
