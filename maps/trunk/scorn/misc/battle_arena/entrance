@@ -9,7 +9,7 @@ enter_x 11
 enter_y 24
 msg
 Created:  2000-11-08 Andreas Vogl (red.blaze@gmx.net)
-Modified: 2008-11-02 Rick Tanner
+Modified: 2008-11-03 Rick Tanner
 endmsg
 end
 arch pstone_2
@@ -3607,12 +3607,10 @@ y 12
 end
 arch altar
 name 34
-slaying platinacoin
-food 50
+slaying money
+food 250
 x 19
 y 13
-resist_magic 30
-resist_confusion 30
 connected 34
 end
 arch pstone_2
@@ -3636,13 +3634,10 @@ y 14
 end
 arch altar
 name 35
-slaying platinacoin
-food 100
+slaying money
+food 5000
 x 19
 y 15
-resist_physical 30
-resist_magic 30
-resist_confusion 30
 connected 35
 end
 arch pstone_2
@@ -3666,12 +3661,10 @@ y 16
 end
 arch altar
 name 36
-slaying platinacoin
-food 50
+slaying money
+food 250
 x 19
 y 17
-resist_fire 30
-resist_confusion 30
 connected 36
 end
 arch pstone_2

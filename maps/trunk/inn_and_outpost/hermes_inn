@@ -1553,10 +1553,10 @@ y 1
 end
 arch pearl_converter
 name drop 1500 platinum to buy healing potion
-slaying platinacoin
+slaying money
 other_arch potion_heal
 face cauldron.111
-food 1500
+food 75000
 x 16
 y 1
 end
