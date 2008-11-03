@@ -1,3 +1,199 @@
+2008-11-03 06:11  rjtanner
+
+	* scorn/shops/alclass: Update conversion tables to accept payment
+	  of any coin type, requires server update r10232 (or newer)
+
+2008-11-03 06:06  rjtanner
+
+	* scorn/misc/battle_arena/entrance: Convert platinum payment altars
+	  to accept payment of any coin type, requires server update r10232
+	  (or newer)
+
+2008-11-03 06:02  rjtanner
+
+	* inn_and_outpost/hermes_inn, pup_land/nurnberg/church,
+	  scorn/misc/battle_arena/entrance: Convert platinum payment altars
+	  to accept payment of any coin type, requires server update r10232
+	  (or newer)
+
+2008-11-03 05:54  rjtanner
+
+	* pup_land/nurnberg/alshop: Update conversion tables to accept
+	  payment of any coin type, requires server update r10232 (or
+	  newer)
+
+2008-11-03 05:44  rjtanner
+
+	* brest/underground, inn_and_outpost/sweets_inn,
+	  lake_country/small_buildings/LC_inn1, marksel/grumms_inn,
+	  navar_city/casino_infernal/casino_infernal1,
+	  navar_city/collosium, navar_city/misc/bowyer,
+	  navar_city/misc/city1mermaid, navar_city/temples/ruggilli2,
+	  pup_land/lone_town/church, pup_land/nurnberg/hotel,
+	  scorn/houses/bowyer, scorn/misc/mercenaries, scorn/shops/bowshop,
+	  scorn/shops/scorn.sale2: Convert gold payment altars to accept
+	  payment of any coin type, requires server update r10232 (or
+	  newer)
+
+2008-11-03 00:23  rjtanner
+
+	* brest/shops/a_small_shop: Missed in earlier commit, updated
+	  payment altar to accept all coins
+
+2008-11-02 07:29  rjtanner
+
+	* scorn/shops/potionshop: Update conversion tables to accept
+	  payment of any coin type, requires server update r10232 (or
+	  newer)
+
+2008-11-02 07:03  rjtanner
+
+	* scorn/houses/bowyer, scorn/houses/jeweler, scorn/shops/alclass,
+	  scorn/shops/foodshop, scorn/shops/light_shop: Cosmetic wall
+	  changes with how they merge with each other, especially swall
+	  (fence)
+
+2008-11-02 06:53  rjtanner
+
+	* azumauindo/ranbounagisatoshi/shops/groupshop,
+	  azumauindo/ranbounagisatoshi/shops/groupshop2,
+	  azumauindo/ranbounagisatoshi/shops/groupshopb1,
+	  azumauindo/ranbounagisatoshi/shops/groupshopb2: Convert platinum
+	  payment altars to accept payment of any coin type, requires
+	  server update r10232 (or newer)
+
+2008-11-02 06:36  rjtanner
+
+	* brest/shops/a_small_shop, darcap/darcap/circus/fz_lobby_ud,
+	  inn_and_outpost/hermes_inn, inn_and_outpost/sweets_inn,
+	  lake_country/small_buildings/LC_inn1, marksel/grumms_inn,
+	  mlab/citydeclouds/citydeclouds2B,
+	  mlab/citydeclouds/shops/cwdckitchen, navar_city/misc/bowyer,
+	  navar_city/misc/city1smith, navar_city/misc/jeweler,
+	  navar_city/misc/kitchen, navar_city/misc/library,
+	  navar_city/misc/tannery, navar_city/misc/thamshop,
+	  port_joseph/pirates/torttemple, pup_land/nurnberg/apartment/main,
+	  pup_land/nurnberg/dick/house, pup_land/nurnberg/hotel,
+	  pup_land/rainbow/station, santo_dominion/sdomino_appartment,
+	  santo_dominion/shops/rings, scorn/houses/bowyer,
+	  scorn/houses/jeweler, scorn/houses/kitchen,
+	  scorn/houses/smithery, scorn/houses/tannery,
+	  scorn/houses/wizardw, scorn/misc/battle_arena/entrance,
+	  scorn/misc/library, scorn/shops/alclass, scorn/shops/potionshop:
+	  Convert platinum payment altars to accept payment of any coin
+	  type
+
+2008-11-01 04:12  rjtanner
+
+	* santo_dominion/mudman/mudman.3: Missed a replacement (biglake ->
+	  sea) in the previous commit
+
+2008-11-01 04:09  rjtanner
+
+	* santo_dominion/mudman/mudman.1, santo_dominion/mudman/mudman.2,
+	  santo_dominion/mudman/mudman.3: Cosmetic changes - replaced Lake
+	  graphics with Sea graphics - now the water blends together nicer
+	  (with the exception of the rivers, which still use the classic
+	  graphics)
+
+2008-10-31 01:16  rjtanner
+
+	* world/world_103_114, world/world_103_115, world/world_103_116,
+	  world/world_104_116, world/world_105_114, world/world_106_115,
+	  world/world_106_116: Apply scorncounty region to some of the maps
+	  surrounding Scorn
+
+2008-10-31 01:01  rjtanner
+
+	* world/world_105_113, world/world_115_110, world/world_115_115,
+	  world/world_119_116, world/world_120_109, world/world_123_123,
+	  world/world_126_124, world/world_128_128, world/world_128_129:
+	  Apply regions to relevant world maps
+
+2008-10-31 00:40  rjtanner
+
+	* world/world_119_116: Made the structure names generic and similar
+	  since their is intent for the player to explore the entire area
+	  as part of the storyline and quest
+
+2008-10-31 00:39  rjtanner
+
+	* quests/todd/aljwaf/crypt2, quests/todd/aljwaf/crypt4,
+	  quests/todd/aljwaf/crypt5, quests/todd/aljwaf/crypt6,
+	  quests/todd/aljwaf/tower1, quests/todd/aljwaf/tower2,
+	  quests/todd/aljwaf/tower3, quests/todd/aljwaf/tower4: Unique map
+	  names and made area name and references consistent (Narcopia ->
+	  Narcopin)
+
+2008-10-31 00:13  rjtanner
+
+	* regions.reg: New description for Port Joseph
+
+2008-10-30 01:48  rjtanner
+
+	* scorn/anthony/passoffice, scorn/anthony/portgate,
+	  scorn/misc/gatehouse, world/world_105_115: Map name updates for
+	  the Gates in Scorn
+
+2008-10-30 00:33  rjtanner
+
+	* lake_country/Butakis/Butakis0, lake_country/Butakis/p_ghouse_s,
+	  lake_country/Butakis/p_ghouse_w, lake_country/Butakis/prison-1,
+	  lake_country/Butakis/prison0, lake_country/Butakis/prison1,
+	  lake_country/Butakis/prison_e, lake_country/Butakis/prison_n,
+	  lake_country/Butakis/prison_s, lake_country/Butakis/prison_w:
+	  Additional map name syntax changes (Fortress of Lord Butakis,
+	  Prison * -> Fortress of Lord Butakis Prison, *)
+
+2008-10-30 00:15  rjtanner
+
+	* lake_country/Butakis/B_gshop, lake_country/Butakis/B_wshop,
+	  lake_country/Butakis/Butakis0, lake_country/Butakis/gate_inner,
+	  lake_country/Butakis/gate_outer, lake_country/Butakis/p_ghouse_w,
+	  lake_country/Butakis/prison0, lake_country/Butakis/prison1,
+	  lake_country/Butakis/prison_e, lake_country/Butakis/prison_n,
+	  lake_country/Butakis/prison_s, lake_country/Butakis/prison_w,
+	  world/world_109_126: Map name syntax change, Lord Butakis'
+	  Fortress -> Fortress of Lord Butakis
+
+2008-10-29 23:57  rjtanner
+
+	* lake_country/Butakis/B_gshop, lake_country/Butakis/B_wshop,
+	  lake_country/Butakis/Butakis0, lake_country/Butakis/Rlib1,
+	  lake_country/Butakis/Rlib2, lake_country/Butakis/Wist_portal,
+	  lake_country/Butakis/Wist_study, lake_country/Butakis/alchemist,
+	  lake_country/Butakis/arena, lake_country/Butakis/blacksmith,
+	  lake_country/Butakis/church-1, lake_country/Butakis/church0,
+	  lake_country/Butakis/church1, lake_country/Butakis/gate_inner,
+	  lake_country/Butakis/gate_outer,
+	  lake_country/Butakis/houses/Bobs_house,
+	  lake_country/Butakis/houses/Jacks_house,
+	  lake_country/Butakis/houses/Jacobs_house,
+	  lake_country/Butakis/houses/James_house,
+	  lake_country/Butakis/houses/Sams_house,
+	  lake_country/Butakis/houses/Seans_house,
+	  lake_country/Butakis/inn, lake_country/Butakis/luck1,
+	  lake_country/Butakis/luck2, lake_country/Butakis/luck3,
+	  lake_country/Butakis/p_ghouse_s, lake_country/Butakis/p_ghouse_w,
+	  lake_country/Butakis/prison-1, lake_country/Butakis/prison0,
+	  lake_country/Butakis/prison1, lake_country/Butakis/prison_e,
+	  lake_country/Butakis/prison_n, lake_country/Butakis/prison_s,
+	  lake_country/Butakis/prison_w: Apply new region (butakisfortress)
+	  to relevant maps
+
+2008-10-29 23:28  rjtanner
+
+	* regions.reg: Added (long) description to Lake Country region
+
+2008-10-29 23:24  rjtanner
+
+	* regions.reg: New region, butakisfortress (Fortress of Lord
+	  Butakis), for maps located in /lake_country/Butakis/
+
+2008-10-29 17:43  rjtanner
+
+	* ChangeLog: Updated ChangeLog file using svn2cl
+
 2008-10-29 01:30  rjtanner
 
 	* marksel/cellar, marksel/church, marksel/grumms_inn,
