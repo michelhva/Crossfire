@@ -8,7 +8,7 @@ enter_x 15
 enter_y 28
 msg
 Created:  2003-08-06 Avion
-Modified: 2008-10-20 Rick Tanner
+Modified: 2008-11-02 Rick Tanner
 endmsg
 end
 arch permanent_lava
@@ -2704,10 +2704,10 @@ x 13
 y 27
 end
 arch altar_trigger
-slaying goldcoin
+slaying money
 face table_2.111
 exp 120
-food 200
+food 2000
 x 13
 y 27
 connected 1
