@@ -12,7 +12,7 @@ enter_x 25
 enter_y 3
 msg
 Created:  1997-11-05 Xtreme
-Modified: 2008-10-20 Rick Tanner
+Modified: 2008-11-02 Rick Tanner
 endmsg
 end
 arch small_stones
@@ -1262,9 +1262,9 @@ y 9
 end
 arch diamond_converter
 name drop platinum to buy water
-slaying platinacoin
+slaying money
 other_arch water
-food 1
+food 50
 x 8
 y 9
 end
@@ -1400,9 +1400,9 @@ y 9
 end
 arch diamond_converter
 name drop platinum to buy salt
-slaying platinacoin
+slaying money
 other_arch salt
-food 5
+food 250
 x 9
 y 9
 end
@@ -1538,9 +1538,9 @@ y 9
 end
 arch diamond_converter
 name drop platinum to buy sulphur
-slaying platinacoin
+slaying money
 other_arch sulphur
-food 8
+food 400
 x 10
 y 9
 end
@@ -1672,9 +1672,9 @@ y 8
 end
 arch diamond_converter
 name drop platinum to buy cinnabar
-slaying platinacoin
+slaying money
 other_arch cinnabar
-food 24
+food 1200
 x 11
 y 8
 end
@@ -1684,9 +1684,9 @@ y 9
 end
 arch diamond_converter
 name drop platinum to buy phosphorus
-slaying platinacoin
+slaying money
 other_arch phosphorus
-food 16
+food 800
 x 11
 y 9
 end
@@ -2270,9 +2270,9 @@ y 8
 end
 arch diamond_converter
 name drop platinum to buy gypsum
-slaying platinacoin
+slaying money
 other_arch gypsum
-food 4
+food 200
 x 15
 y 8
 end
@@ -2282,9 +2282,9 @@ y 9
 end
 arch diamond_converter
 name drop platinum to buy mineral oil
-slaying platinacoin
+slaying money
 other_arch min_oil
-food 4
+food 200
 x 15
 y 9
 end
@@ -2438,9 +2438,9 @@ y 9
 end
 arch diamond_converter
 name drop platinum to buy pyrite
-slaying platinacoin
+slaying money
 other_arch pyrite
-food 4
+food 200
 x 16
 y 9
 end
@@ -2576,9 +2576,9 @@ y 9
 end
 arch diamond_converter
 name drop platinum to buy lead
-slaying platinacoin
+slaying money
 other_arch lead
-food 36
+food 1800
 x 17
 y 9
 end
@@ -2710,8 +2710,9 @@ y 9
 end
 arch diamond_converter
 name drop platinum to buy salt
-slaying platinacoin
+slaying money
 other_arch salt
+food 2000
 x 18
 y 9
 end
