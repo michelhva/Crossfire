@@ -1,7 +1,7 @@
 arch map
 name Poshon Shijou
 reset_timeout 7200
-difficulty 1
+difficulty 40
 region azumauindo
 shopitems potion:20;ring:15;amulet:10;gem:0;*:-100
 shopgreed 1.20000
@@ -13,6 +13,7 @@ enter_x 1
 enter_y 1
 msg
 Created:  2004-08-03 Mikeeusa
+Modified: 2008-11-04 Rick Tanner
 endmsg
 outdoor 1
 end

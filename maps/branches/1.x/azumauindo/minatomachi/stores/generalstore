@@ -1,7 +1,7 @@
 arch map
 name Shijou Mise
 reset_timeout 7200
-difficulty 1
+difficulty 40
 region azumauindo
 shopitems *:0
 shopgreed 1.20000
@@ -14,6 +14,7 @@ enter_x 1
 enter_y 1
 msg
 Created:  2005-02-19 MikeeUSA
+Modified: 2008-11-04 Rick Tanner
 endmsg
 end
 arch dungeon_magic
