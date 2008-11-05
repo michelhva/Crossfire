@@ -1,6 +1,6 @@
 arch map
 name Maze
-difficulty 1
+difficulty 30
 width 40
 height 40
 msg
@@ -10,6 +10,7 @@ on metal. It is coming from one of
 the many passages in this maze. A
 Maze in which, a wrong turn could
 be fatal.
+Modified: 2008-11-04 Rick Tanner
 endmsg
 end
 arch marble
