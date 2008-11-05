@@ -1,6 +1,6 @@
 arch map
 name White Dragon Scale
-difficulty 7
+difficulty 40
 region nurnberg
 shopitems armour:40;shield:40;helmet:30;cloak:35;boots:40;gloves:40;bracers:30;girdle:40;*:-80
 shopmax 20000
@@ -8,6 +8,7 @@ width 23
 height 23
 msg
 Created:  1996-02-09
+Modified: 2008-11-04 Rick Tanner
 endmsg
 end
 arch invis_exit
