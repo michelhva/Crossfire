@@ -1,6 +1,6 @@
 arch map
 name Acme Inc. Building Shop
-difficulty 1
+difficulty 3
 region scorn
 shopitems building material:95;item builder:95;*:-100
 shopmax 2000
@@ -10,6 +10,7 @@ enter_x 17
 enter_y 19
 msg
 Created:  2004-01-25 Ryo Saeba
+Modified: 2008-11-05 Rick Tanner
 endmsg
 end
 arch tile_white_floor

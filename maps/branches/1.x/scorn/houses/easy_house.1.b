@@ -1,11 +1,13 @@
 arch map
 name Easy House Top
+difficulty 5
 region scorn
 darkness 2
 width 16
 height 16
 msg
 Created:  2006-05-26 Bort
+Modified: 2008-11-05 Rick Tanner
 endmsg
 end
 arch woodfloor2
