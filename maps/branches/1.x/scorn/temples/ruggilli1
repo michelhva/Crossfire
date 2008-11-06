@@ -1,7 +1,7 @@
 arch map
 name Temple of Ruggilli
 reset_timeout 3000
-difficulty 1
+difficulty 3
 region scorn
 width 16
 height 16
@@ -9,6 +9,7 @@ enter_x 4
 enter_y 16
 msg
 Created:  2001-01-03 dnh (dnh@hawthorn.csse.monash.edu.au)
+Modified: 2008-11-05 Rick Tanner
 endmsg
 end
 arch small_stones
