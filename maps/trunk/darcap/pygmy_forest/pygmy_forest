@@ -1,14 +1,16 @@
 arch map
 name Pygmy Forest, Entrance
-difficulty 25
+difficulty 48
 region darcap
 width 50
 height 50
+enter_x 27
+enter_y 27
 msg
 Creator: Chad Opperman
 cromagic@sbcglobal.net
 Date:    2007-12-18
-Modified: 2008-10-28 Rick Tanner
+Modified: 2008-11-06 Rick Tanner
 endmsg
 end
 arch grassdark
