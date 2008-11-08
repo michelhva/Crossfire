@@ -1,5 +1,5 @@
 arch map
-name Adventurers Guild
+name Adventurers Guild, Entrance
 difficulty 25
 region stoneville
 shopitems *:0
@@ -10,7 +10,7 @@ enter_x 15
 enter_y 31
 msg
 Created:  1997-07-10 Viola Krings
-Modified: 2008-11-06 Rick Tanner
+Modified: 2008-11-07 Rick Tanner
 endmsg
 end
 arch woodfloor
