@@ -1,3 +1,695 @@
+2008-11-08 07:14  rjtanner
+
+	* lake_country/Butakis/Butakis0, lake_country/Butakis/prison1,
+	  lake_country/Butakis/prison_e, lake_country/Butakis/prison_n,
+	  lake_country/Butakis/prison_s, lake_country/Butakis/prison_w:
+	  Backport from trunk, match exits/entrances with map names
+
+2008-11-08 07:10  rjtanner
+
+	* lake_country/elven_moon/elvenmoon.1,
+	  lake_country/elven_moon/elvenmoon.2,
+	  lake_country/elven_moon/elvenmoon.3,
+	  lake_country/elven_moon/elvenmoon.4,
+	  lake_country/elven_moon/elvenmoon.5,
+	  lake_country/elven_moon/elvenmoon.6,
+	  lake_country/elven_moon/elvenmoon.7,
+	  lake_country/elven_moon/elvenmoon.8,
+	  lake_country/elven_moon/elvenmoon.9: Sync with trunk; applied
+	  region (lakecountry) and map author credit
+
+2008-11-08 06:58  rjtanner
+
+	* lake_country/Butakis/B_gshop, lake_country/Butakis/B_wshop,
+	  lake_country/Butakis/Butakis0, lake_country/Butakis/Rlib1,
+	  lake_country/Butakis/Rlib2, lake_country/Butakis/arena,
+	  lake_country/Butakis/church-1, lake_country/Butakis/church0,
+	  lake_country/Butakis/church1, lake_country/Butakis/gate_inner,
+	  lake_country/Butakis/gate_outer, lake_country/Butakis/inn,
+	  lake_country/Butakis/luck1, lake_country/Butakis/luck2,
+	  lake_country/Butakis/luck3, lake_country/Butakis/p_ghouse_s,
+	  lake_country/Butakis/p_ghouse_w, lake_country/Butakis/prison-1,
+	  lake_country/Butakis/prison0, lake_country/Butakis/prison1,
+	  lake_country/Butakis/prison_e, lake_country/Butakis/prison_n,
+	  lake_country/Butakis/prison_s, lake_country/Butakis/prison_w,
+	  lake_country/Mwizard/Mwizard0, lake_country/Mwizard/Mwizard1,
+	  lake_country/Mwizard/Mwizard2, lake_country/Mwizard/Mwizard3,
+	  lake_country/Mwizard/Mwizard4, lake_country/Mwizard/Mwizard5,
+	  lake_country/Mwizard/Mwizard6, lake_country/Mwizard/MwizardD,
+	  lake_country/Mwizard/MwizardG, lake_country/Mwizard/MwizardT,
+	  lake_country/RETower/tower0, lake_country/RETower/tower1,
+	  lake_country/RETower/tower2, lake_country/RETower/tower3,
+	  lake_country/RETower/tower4, lake_country/RETower/tower5,
+	  lake_country/dragon_hangar/hangar, lake_country/ebony/entrance1,
+	  lake_country/ebony/entrance2, lake_country/ebony/masterlev,
+	  lake_country/elven_moon/elvenmoon.1,
+	  lake_country/elven_moon/elvenmoon.6,
+	  lake_country/snake_pit/Chaos_lair1,
+	  lake_country/snake_pit/Chaos_lair2,
+	  lake_country/snake_pit/Chaos_lair3,
+	  lake_country/snake_pit/Chaos_lair4,
+	  lake_country/snake_pit/snakepit_1,
+	  lake_country/snake_pit/snakepit_2,
+	  lake_country/snake_pit/snakepit_3,
+	  lake_country/snake_pit/snakepit_4,
+	  lake_country/snake_pit/snakepit_5: Backport from trunk - unique
+	  map names
+
+2008-11-08 06:42  rjtanner
+
+	* lake_country/Butakis/B_gshop, lake_country/Butakis/B_wshop,
+	  lake_country/Butakis/Butakis0, lake_country/Butakis/Rlib1,
+	  lake_country/Butakis/Rlib2, lake_country/Butakis/Wist_portal,
+	  lake_country/Butakis/Wist_study, lake_country/Butakis/alchemist,
+	  lake_country/Butakis/arena, lake_country/Butakis/blacksmith,
+	  lake_country/Butakis/church-1, lake_country/Butakis/church0,
+	  lake_country/Butakis/church1, lake_country/Butakis/gate_inner,
+	  lake_country/Butakis/gate_outer,
+	  lake_country/Butakis/houses/Bobs_house,
+	  lake_country/Butakis/houses/Jacks_house,
+	  lake_country/Butakis/houses/Jacobs_house,
+	  lake_country/Butakis/houses/James_house,
+	  lake_country/Butakis/houses/Sams_house,
+	  lake_country/Butakis/houses/Seans_house,
+	  lake_country/Butakis/inn, lake_country/Butakis/luck1,
+	  lake_country/Butakis/luck2, lake_country/Butakis/luck3,
+	  lake_country/Butakis/p_ghouse_s, lake_country/Butakis/p_ghouse_w,
+	  lake_country/Butakis/prison-1, lake_country/Butakis/prison0,
+	  lake_country/Butakis/prison1, lake_country/Butakis/prison_e,
+	  lake_country/Butakis/prison_n, lake_country/Butakis/prison_s,
+	  lake_country/Butakis/prison_w: Sync with trunk; New region,
+	  butakisfortress (Fortress of Lord Butakis), for maps located in
+	  /lake_country/Butakis/
+
+2008-11-08 06:36  rjtanner
+
+	* lake_country/Butakis/B_gshop, lake_country/Butakis/B_wshop,
+	  lake_country/Butakis/Butakis0, lake_country/Butakis/Rlib1,
+	  lake_country/Butakis/Rlib2, lake_country/Butakis/Wist_portal,
+	  lake_country/Butakis/Wist_study, lake_country/Butakis/alchemist,
+	  lake_country/Butakis/arena, lake_country/Butakis/blacksmith,
+	  lake_country/Butakis/church-1, lake_country/Butakis/church0,
+	  lake_country/Butakis/church1, lake_country/Butakis/gate_inner,
+	  lake_country/Butakis/gate_outer,
+	  lake_country/Butakis/houses/Bobs_house,
+	  lake_country/Butakis/houses/Jacks_house,
+	  lake_country/Butakis/houses/Jacobs_house,
+	  lake_country/Butakis/houses/James_house,
+	  lake_country/Butakis/houses/Sams_house,
+	  lake_country/Butakis/houses/Seans_house,
+	  lake_country/Butakis/inn, lake_country/Butakis/luck1,
+	  lake_country/Butakis/luck2, lake_country/Butakis/luck3,
+	  lake_country/Butakis/p_ghouse_s, lake_country/Butakis/p_ghouse_w,
+	  lake_country/Butakis/prison-1, lake_country/Butakis/prison0,
+	  lake_country/Butakis/prison1, lake_country/Butakis/prison_e,
+	  lake_country/Butakis/prison_n, lake_country/Butakis/prison_s,
+	  lake_country/Butakis/prison_w, lake_country/Mwizard/Mwizard0,
+	  lake_country/Mwizard/Mwizard1, lake_country/Mwizard/Mwizard2,
+	  lake_country/Mwizard/Mwizard3, lake_country/Mwizard/Mwizard4,
+	  lake_country/Mwizard/Mwizard5, lake_country/Mwizard/Mwizard6,
+	  lake_country/Mwizard/MwizardD, lake_country/Mwizard/MwizardG,
+	  lake_country/Mwizard/MwizardT, lake_country/RETower/tower0,
+	  lake_country/RETower/tower1, lake_country/RETower/tower2,
+	  lake_country/RETower/tower3, lake_country/RETower/tower4,
+	  lake_country/RETower/tower5, lake_country/Sunset_Lake/fortress,
+	  lake_country/Sunset_Lake/gatehouse, lake_country/Sunset_Lake/inn,
+	  lake_country/dragon_hangar/hangar, lake_country/ebony/entrance1,
+	  lake_country/ebony/entrance2,
+	  lake_country/elven_moon/elvenmoon.1,
+	  lake_country/elven_moon/elvenmoon.2,
+	  lake_country/elven_moon/elvenmoon.3,
+	  lake_country/elven_moon/elvenmoon.4,
+	  lake_country/elven_moon/elvenmoon.5,
+	  lake_country/elven_moon/elvenmoon.6,
+	  lake_country/elven_moon/elvenmoon.7,
+	  lake_country/elven_moon/elvenmoon.8,
+	  lake_country/elven_moon/elvenmoon.9, lake_country/marsh/marsh1_2,
+	  lake_country/marsh/marsh2_1, lake_country/marsh/marsh2_2,
+	  lake_country/shops/Mopoon_wshop, lake_country/shops/Olds_jewel,
+	  lake_country/shops/clems_archery,
+	  lake_country/shops/klondors_wands,
+	  lake_country/small_buildings/LC_inn1,
+	  lake_country/small_buildings/burial_ground,
+	  lake_country/small_buildings/oak_twak1,
+	  lake_country/small_buildings/portal,
+	  lake_country/snake_pit/Chaos_lair1,
+	  lake_country/snake_pit/Chaos_lair2,
+	  lake_country/snake_pit/Chaos_lair3,
+	  lake_country/snake_pit/Chaos_lair4,
+	  lake_country/snake_pit/Takuse_lair, lake_country/snake_pit/pit,
+	  lake_country/snake_pit/snakepit_1,
+	  lake_country/snake_pit/snakepit_2,
+	  lake_country/snake_pit/snakepit_3,
+	  lake_country/snake_pit/snakepit_4,
+	  lake_country/snake_pit/snakepit_5: Backport from trunk - map
+	  entrance x & y coordinates
+
+2008-11-08 06:16  rjtanner
+
+	* marksel/church: Backport from trunk - unique map name
+
+2008-11-08 06:12  rjtanner
+
+	* marksel/cellar, marksel/church, marksel/grumms_inn,
+	  marksel/grumms_inn2, marksel/keep, marksel/mines, marksel/shop,
+	  marksel/wizard: Sync with trunk - gave maps region marksel
+
+2008-11-08 06:09  rjtanner
+
+	* regions: Sync regions file changes with trunk - new regions, new
+	  descriptions, new & updated long names, text formatting updates
+
+2008-11-08 06:02  rjtanner
+
+	* marksel/cellar, marksel/mines, marksel/shop: Backport from trunk
+	  - map entrance x & y coordinates
+
+2008-11-08 05:56  rjtanner
+
+	* inn_and_outpost/pypers_treehouse, inn_and_outpost/treehouse_df2,
+	  inn_and_outpost/treehouse_df3, inn_and_outpost/treehouse_df4,
+	  inn_and_outpost/treehouse_df5, inn_and_outpost/treehouse_df6:
+	  Backport from trunk - unique map names
+
+2008-11-08 05:53  rjtanner
+
+	* inn_and_outpost/hermes_inn, inn_and_outpost/hermes_inn2,
+	  inn_and_outpost/nirlas_house, inn_and_outpost/outpost_aranor1,
+	  inn_and_outpost/pypers_treehouse, inn_and_outpost/sweets_inn,
+	  inn_and_outpost/sweets_inn2, inn_and_outpost/treehouse_df1,
+	  inn_and_outpost/treehouse_df2, inn_and_outpost/treehouse_df3,
+	  inn_and_outpost/treehouse_df4, inn_and_outpost/treehouse_df5,
+	  inn_and_outpost/treehouse_df6: Sync with trunk - gave maps region
+	  wilderness
+
+2008-11-08 05:47  rjtanner
+
+	* inn_and_outpost/hermes_inn2, inn_and_outpost/nirlas_house,
+	  inn_and_outpost/outpost_aranor1, inn_and_outpost/sweets_inn:
+	  Backport from trunk - map entrance x & y coordinates
+
+2008-11-08 01:24  rjtanner
+
+	* euthville/magic.shop: Update map difficulty level (2 -> 12) and
+	  specify region (euthville)
+
+2008-11-08 01:23  rjtanner
+
+	* euthville/devil.church1, euthville/devil.church2,
+	  euthville/devil.church4, euthville/devil.church5,
+	  euthville/map.fr.0, euthville/map.fr.1, euthville/map.fr.2,
+	  euthville/map.fr.3, euthville/wiz1, euthville/wiz2,
+	  euthville/wiz3, euthville/wiz4, euthville/wiz5, euthville/wiz6,
+	  euthville/wiz7: Backport from trunk - unique map names
+
+2008-11-08 01:20  rjtanner
+
+	* euthville/devil.church1, euthville/devil.church2,
+	  euthville/devil.church3, euthville/devil.church4,
+	  euthville/devil.church5, euthville/hallofbones,
+	  euthville/map.fr.0, euthville/map.fr.2, euthville/map.fr.3,
+	  euthville/wiz1, euthville/wiz2, euthville/wiz3, euthville/wiz4,
+	  euthville/wiz5, euthville/wiz6, euthville/wiz7: Backport from
+	  trunk - map entrance x & y coordinates
+
+2008-11-08 01:14  rjtanner
+
+	* dungeons/grukks/grukks.3: Backport from trunk - map difficulty
+	  level
+
+2008-11-08 01:12  rjtanner
+
+	* dungeons/barad_dur, dungeons/castle_aaaarg,
+	  dungeons/grukks/grukks.1, dungeons/grukks/grukks.2,
+	  dungeons/grukks/grukks.3, dungeons/grukks/grukks.4,
+	  dungeons/hole, dungeons/hut/ancient_hut, dungeons/hut/kjerring,
+	  dungeons/hut/watertunnel, dungeons/monkey_temple/m_temple1,
+	  dungeons/monkey_temple/m_temple2, dungeons/ruins,
+	  dungeons/train/goblin, dungeons/train/ogre,
+	  dungeons/train/skeleton, dungeons/train/zombie,
+	  dungeons/xyzzy-mines: Sync with trunk - gave maps region
+	  wilderness
+
+2008-11-08 01:06  rjtanner
+
+	* dungeons/grukks/grukks.1, dungeons/grukks/grukks.2,
+	  dungeons/grukks/grukks.3, dungeons/grukks/grukks.4,
+	  dungeons/monkey_temple/m_temple1,
+	  dungeons/monkey_temple/m_temple2, dungeons/train/gobl_zomb_train,
+	  dungeons/trollbridge: Backport from trunk - unique map names
+
+2008-11-08 01:03  rjtanner
+
+	* dungeons/barad_dur, dungeons/grukks/grukks.1,
+	  dungeons/grukks/grukks.2, dungeons/grukks/grukks.3,
+	  dungeons/grukks/grukks.4, dungeons/hole, dungeons/hut/kjerring,
+	  dungeons/ruins, dungeons/train/goblin, dungeons/train/ogre,
+	  dungeons/train/skeleton, dungeons/train/zombie,
+	  dungeons/trollbridge, dungeons/xyzzy-mines: Backport from trunk -
+	  map entrance x & y coordinates
+
+2008-11-08 00:58  rjtanner
+
+	* darcap/darcap/apartment: Correct typo in map header
+
+2008-11-08 00:56  rjtanner
+
+	* darcap/darcap/apartment, darcap/darcap/circus/shooting,
+	  darcap/pygmy_forest/pygmy_boss, darcap/pygmy_forest/pygmy_forest,
+	  darcap/pygmy_forest/pygmy_garden,
+	  darcap/pygmy_forest/pygmy_holes,
+	  darcap/pygmy_forest/pygmy_treehouse_a,
+	  darcap/pygmy_forest/pygmy_treehouse_b,
+	  darcap/pygmy_forest/pygmy_treehouse_c,
+	  darcap/pygmy_forest/pygmy_treehouse_d, darcap/raffle/raffle1,
+	  darcap/raffle/raffle1_u1, darcap/raffle/raffle1_u2,
+	  darcap/raffle/raffle1_u3, darcap/temple_justice/temple_justice.1,
+	  darcap/temple_justice/temple_justice.10,
+	  darcap/temple_justice/temple_justice.11,
+	  darcap/temple_justice/temple_justice.12,
+	  darcap/temple_justice/temple_justice.13,
+	  darcap/temple_justice/temple_justice.14,
+	  darcap/temple_justice/temple_justice.2,
+	  darcap/temple_justice/temple_justice.3,
+	  darcap/temple_justice/temple_justice.4,
+	  darcap/temple_justice/temple_justice.5,
+	  darcap/temple_justice/temple_justice.6,
+	  darcap/temple_justice/temple_justice.7,
+	  darcap/temple_justice/temple_justice.8,
+	  darcap/temple_justice/temple_justice.9, darcap/undead/undead.1,
+	  darcap/undead/undead.2, darcap/undead/undead.3: Backport from
+	  trunk - unique map names
+
+2008-11-08 00:43  rjtanner
+
+	* dragonisland/advguild, dragonisland/advguild2,
+	  dragonisland/advguild3, dragonisland/advshop0,
+	  dragonisland/advshop1, dragonisland/advshop2,
+	  dragonisland/advshop3, dragonisland/advshop4,
+	  dragonisland/advshop5, dragonisland/advshop6,
+	  dragonisland/damarishouse0, dragonisland/damarishouse1,
+	  dragonisland/damarishouse2, dragonisland/dragonmountain0,
+	  dragonisland/dragonmountain1, dragonisland/hangar,
+	  dragonisland/hangar2, dragonisland/hangar3, dragonisland/house8,
+	  dragonisland/house9: Backport from trunk - unique map names
+
+2008-11-08 00:05  rjtanner
+
+	* darcap/pygmy_forest/pygmy_boss, darcap/pygmy_forest/pygmy_forest,
+	  darcap/pygmy_forest/pygmy_forest_a,
+	  darcap/pygmy_forest/pygmy_forest_b,
+	  darcap/pygmy_forest/pygmy_forest_c,
+	  darcap/pygmy_forest/pygmy_forest_d,
+	  darcap/pygmy_forest/pygmy_garden,
+	  darcap/pygmy_forest/pygmy_treehouse_a,
+	  darcap/pygmy_forest/pygmy_treehouse_b,
+	  darcap/pygmy_forest/pygmy_treehouse_c,
+	  darcap/pygmy_forest/pygmy_treehouse_d, dragonisland/house9:
+	  Update maps with entrance x & y coordinates
+
+2008-11-08 00:03  rjtanner
+
+	* world/world_117_101: Update entrance coordinates from World map
+	  to Pygmy Forest
+
+2008-11-07 02:11  rjtanner
+
+	* dragonisland/advguild, dragonisland/advguild2,
+	  dragonisland/advguild3, dragonisland/advshop0,
+	  dragonisland/advshop1, dragonisland/advshop2,
+	  dragonisland/advshop3, dragonisland/advshop4,
+	  dragonisland/advshop5, dragonisland/advshop6,
+	  dragonisland/apartment2, dragonisland/apartment3,
+	  dragonisland/bloodwell, dragonisland/damarishouse0,
+	  dragonisland/damarishouse1, dragonisland/damarishouse2,
+	  dragonisland/dragonmountain0, dragonisland/dragonmountain1,
+	  dragonisland/hangar, dragonisland/hangar2, dragonisland/hangar3,
+	  dragonisland/house1, dragonisland/house4, dragonisland/house5,
+	  dragonisland/house6, dragonisland/house7, dragonisland/house8,
+	  dragonisland/housebrxzl, dragonisland/intwell,
+	  dragonisland/keysale, dragonisland/luxhouse, dragonisland/tavern,
+	  dragonisland/thievesden: Backport from trunk - map entrance x & y
+	  coordinates
+
+2008-11-07 02:02  rjtanner
+
+	* darcap/cave/level2, darcap/cave/level3, darcap/cave/level4,
+	  darcap/darcap/shop_a, darcap/darcap/shop_g, darcap/darcap/shop_m,
+	  darcap/darcap/shop_w, darcap/darcap/temple, darcap/house1,
+	  darcap/lynn/castle1.0, darcap/lynn/castle1.1,
+	  darcap/lynn/castle1.2, darcap/lynn/castle1.3,
+	  darcap/raffle/raffle1, darcap/raffle/raffle1_u1,
+	  darcap/raffle/raffle1_u2, darcap/raffle/raffle1_u3,
+	  darcap/temple_justice/temple_justice.1,
+	  darcap/temple_justice/temple_justice.10,
+	  darcap/temple_justice/temple_justice.11,
+	  darcap/temple_justice/temple_justice.12,
+	  darcap/temple_justice/temple_justice.13,
+	  darcap/temple_justice/temple_justice.14,
+	  darcap/temple_justice/temple_justice.2,
+	  darcap/temple_justice/temple_justice.3,
+	  darcap/temple_justice/temple_justice.4,
+	  darcap/temple_justice/temple_justice.5,
+	  darcap/temple_justice/temple_justice.6,
+	  darcap/temple_justice/temple_justice.7,
+	  darcap/temple_justice/temple_justice.8,
+	  darcap/temple_justice/temple_justice.9, darcap/town2/tower3,
+	  darcap/town2/tower4, darcap/town2/towers, darcap/undead/undead.1,
+	  darcap/undead/undead.2, darcap/undead/undead.3, darcap/village1:
+	  Backport from trunk - map entrance x & y coordinates
+
+2008-11-06 06:18  rjtanner
+
+	* brest/pshops/pshop1/basement, brest/pshops/pshop1/floor1,
+	  brest/pshops/pshop1/floor2, brest/pshops/pshop1/gfloor,
+	  brest/pshops/pshop10/basement, brest/pshops/pshop10/floor1,
+	  brest/pshops/pshop10/floor2, brest/pshops/pshop10/gfloor,
+	  brest/pshops/pshop11/basement, brest/pshops/pshop11/floor1,
+	  brest/pshops/pshop11/floor2, brest/pshops/pshop11/gfloor,
+	  brest/pshops/pshop12/basement, brest/pshops/pshop12/floor1,
+	  brest/pshops/pshop12/floor2, brest/pshops/pshop12/gfloor,
+	  brest/pshops/pshop13/basement, brest/pshops/pshop13/floor1,
+	  brest/pshops/pshop13/floor2, brest/pshops/pshop13/gfloor,
+	  brest/pshops/pshop14/basement, brest/pshops/pshop14/floor1,
+	  brest/pshops/pshop14/floor2, brest/pshops/pshop14/gfloor,
+	  brest/pshops/pshop15/basement, brest/pshops/pshop15/floor1,
+	  brest/pshops/pshop15/floor2, brest/pshops/pshop15/gfloor,
+	  brest/pshops/pshop16/basement, brest/pshops/pshop16/floor1,
+	  brest/pshops/pshop16/floor2, brest/pshops/pshop16/gfloor,
+	  brest/pshops/pshop17/basement, brest/pshops/pshop17/floor1,
+	  brest/pshops/pshop17/floor2, brest/pshops/pshop17/gfloor,
+	  brest/pshops/pshop18/basement, brest/pshops/pshop18/floor1,
+	  brest/pshops/pshop18/floor2, brest/pshops/pshop18/gfloor,
+	  brest/pshops/pshop19/basement, brest/pshops/pshop19/floor1,
+	  brest/pshops/pshop19/floor2, brest/pshops/pshop19/gfloor,
+	  brest/pshops/pshop2/floor1, brest/pshops/pshop2/floor2,
+	  brest/pshops/pshop2/gfloor, brest/pshops/pshop20/floor1,
+	  brest/pshops/pshop20/floor2, brest/pshops/pshop20/gfloor,
+	  brest/pshops/pshop21/basement, brest/pshops/pshop21/floor1,
+	  brest/pshops/pshop21/floor2, brest/pshops/pshop21/gfloor,
+	  brest/pshops/pshop22/basement, brest/pshops/pshop22/floor1,
+	  brest/pshops/pshop22/floor2, brest/pshops/pshop22/gfloor,
+	  brest/pshops/pshop23/basement, brest/pshops/pshop23/floor1,
+	  brest/pshops/pshop23/floor2, brest/pshops/pshop23/gfloor,
+	  brest/pshops/pshop24/basement, brest/pshops/pshop24/floor1,
+	  brest/pshops/pshop24/floor2, brest/pshops/pshop24/gfloor,
+	  brest/pshops/pshop25/basement, brest/pshops/pshop25/floor1,
+	  brest/pshops/pshop25/floor2, brest/pshops/pshop25/gfloor,
+	  brest/pshops/pshop26/basement, brest/pshops/pshop26/floor1,
+	  brest/pshops/pshop26/floor2, brest/pshops/pshop26/gfloor,
+	  brest/pshops/pshop27/basement, brest/pshops/pshop27/floor1,
+	  brest/pshops/pshop27/floor2, brest/pshops/pshop27/gfloor,
+	  brest/pshops/pshop3/basement, brest/pshops/pshop3/floor1,
+	  brest/pshops/pshop3/floor2, brest/pshops/pshop4/basement,
+	  brest/pshops/pshop4/floor1, brest/pshops/pshop4/floor2,
+	  brest/pshops/pshop4/gfloor, brest/pshops/pshop5/basement,
+	  brest/pshops/pshop5/floor1, brest/pshops/pshop5/floor2,
+	  brest/pshops/pshop5/gfloor, brest/pshops/pshop6/basement,
+	  brest/pshops/pshop6/floor1, brest/pshops/pshop6/floor2,
+	  brest/pshops/pshop6/gfloor, brest/pshops/pshop7/basement,
+	  brest/pshops/pshop7/floor1, brest/pshops/pshop7/floor2,
+	  brest/pshops/pshop7/gfloor, brest/pshops/pshop8/basement,
+	  brest/pshops/pshop8/floor1, brest/pshops/pshop8/floor2,
+	  brest/pshops/pshop8/gfloor, brest/pshops/pshop9/basement,
+	  brest/pshops/pshop9/floor1, brest/pshops/pshop9/floor2,
+	  brest/pshops/pshop9/gfloor: Backport from trunk - unique map
+	  names
+
+2008-11-06 02:44  rjtanner
+
+	* brest/pshops/pshop5/floor2, brest/pshops/pshop6/floor2,
+	  brest/pshops/pshop7/floor2, brest/pshops/pshop8/floor2,
+	  brest/pshops/pshop9/floor2: Backport from trunk - map entrance x
+	  & y coordinates (missed in previous commit)
+
+2008-11-06 02:41  rjtanner
+
+	* brest/nasty_house, brest/pshops/pshop1/floor2,
+	  brest/pshops/pshop10/floor2, brest/pshops/pshop11/floor2,
+	  brest/pshops/pshop12/floor2, brest/pshops/pshop13/floor2,
+	  brest/pshops/pshop14/floor2, brest/pshops/pshop15/floor2,
+	  brest/pshops/pshop16/floor2, brest/pshops/pshop17/floor2,
+	  brest/pshops/pshop18/floor2, brest/pshops/pshop19/floor2,
+	  brest/pshops/pshop2/floor2, brest/pshops/pshop20/floor2,
+	  brest/pshops/pshop21/floor2, brest/pshops/pshop22/floor2,
+	  brest/pshops/pshop23/floor2, brest/pshops/pshop24/floor2,
+	  brest/pshops/pshop25/floor2, brest/pshops/pshop26/floor2,
+	  brest/pshops/pshop27/floor2, brest/pshops/pshop3/floor2,
+	  brest/pshops/pshop4/floor2, brest/pshops/pshop5/floor2,
+	  brest/pshops/pshop6/floor2, brest/pshops/pshop7/floor2,
+	  brest/pshops/pshop8/floor2: Backport from trunk - map entrance x
+	  & y coordinates
+
+2008-11-06 02:24  rjtanner
+
+	* azumauindo/minatomachi/stores/postoffice,
+	  azumauindo/minatomachi/temples/templeruggilli1,
+	  azumauindo/minatomachi/temples/templeruggilli2,
+	  azumauindo/misc/shrine1, azumauindo/misc/shrine2,
+	  azumauindo/misc/shrine3, azumauindo/misc/shrineb1,
+	  azumauindo/ranbounagisatoshi/shops/groupshop,
+	  azumauindo/ranbounagisatoshi/shops/groupshop2,
+	  azumauindo/ranbounagisatoshi/shops/groupshopb1,
+	  azumauindo/ranbounagisatoshi/shops/groupshopb2,
+	  azumauindo/ranbounagisatoshi/temples/rruggilli1,
+	  azumauindo/ranbounagisatoshi/temples/rruggilli2,
+	  azumauindo/ranbounagisatoshi/towers/tou1,
+	  azumauindo/ranbounagisatoshi/towers/tou2,
+	  azumauindo/ranbounagisatoshi/towers/tou3,
+	  azumauindo/ranbounagisatoshi/towers/tou4,
+	  azumauindo/ranbounagisatoshi/towers/tou5,
+	  azumauindo/suno-yamatoshi/buildings/tatemonoA1,
+	  azumauindo/suno-yamatoshi/buildings/tatemonoA2,
+	  azumauindo/suno-yamatoshi/shops/bank2,
+	  azumauindo/suno-yamatoshi/shops/magicshop1,
+	  azumauindo/suno-yamatoshi/shops/magicshop2,
+	  azumauindo/suno-yamatoshi/temples/ruggilli1,
+	  azumauindo/suno-yamatoshi/temples/ruggilli2,
+	  azumauindo/suno-yamatoshi/towers/tou1,
+	  azumauindo/suno-yamatoshi/towers/tou2,
+	  azumauindo/suno-yamatoshi/towers/tou3,
+	  azumauindo/suno-yamatoshi/towers/tou4,
+	  azumauindo/suno-yamatoshi/towers/tou5, brest/Castle/AcidChamber,
+	  brest/Castle/DragonRoom, brest/Castle/Finale,
+	  brest/Castle/LargeRoom, brest/Castle/castle,
+	  brest/apartments/brest_town_house, brest/asyvan/gate1,
+	  brest/asyvan/gate2, brest/asyvan/gate3, brest/asyvan/gate4,
+	  brest/asyvan/gate5, brest/asyvan/gate6, brest/asyvan/gate7,
+	  brest/asyvan/gate8, brest/asyvan/gate9, brest/asyvan/palace1,
+	  brest/asyvan/palace2, brest/asyvan/palace3, brest/brest.IPO,
+	  brest/brest.scrolls.upper.1, brest/brest.scrolls.upper.2,
+	  brest/brittany/dol-guldur.1, brest/brittany/dol-guldur.2,
+	  brest/brittany/dol-guldur.3, brest/brittany/dol-guldur.5,
+	  brest/brittany/dol-guldur.6, brest/brittany/enigme.1,
+	  brest/brittany/enigme.2, brest/brittany/enigme.3,
+	  brest/brittany/enigme.4, brest/brittany/enigme.5,
+	  brest/brittany/enigme.6, brest/brittany/hole,
+	  brest/brittany/jessy.1, brest/brittany/jessy.2,
+	  brest/brittany/jessy.3, brest/brittany/khazad.1,
+	  brest/brittany/khazad.2, brest/brittany/khazad.3,
+	  brest/brittany/khazad.4, brest/brittany/khazad.5,
+	  brest/info.2.zoon, brest/info_first, brest/shops/a_small_shop,
+	  brest/shops/buildshop, brest/shops/buildshop2: Backport from
+	  trunk - unique map names
+
+2008-11-06 01:54  rjtanner
+
+	* azumauindo/minatomachi/gates/gate1,
+	  azumauindo/minatomachi/gates/gate2,
+	  azumauindo/minatomachi/stores/buildshop,
+	  azumauindo/minatomachi/stores/diamondex1,
+	  azumauindo/minatomachi/stores/generalstore,
+	  azumauindo/minatomachi/stores/postoffice,
+	  azumauindo/minatomachi/temples/templeruggilli1,
+	  azumauindo/minatomachi/temples/templeruggilli2,
+	  azumauindo/misc/cave1, azumauindo/misc/entrance1,
+	  azumauindo/misc/shrine1, azumauindo/misc/shrine2,
+	  azumauindo/misc/shrine3, azumauindo/misc/shrineb1,
+	  azumauindo/ranbounagisatoshi/apartments/sapartment,
+	  azumauindo/ranbounagisatoshi/gates/gate1,
+	  azumauindo/ranbounagisatoshi/gates/gate2,
+	  azumauindo/ranbounagisatoshi/shops/groupshop,
+	  azumauindo/ranbounagisatoshi/shops/groupshop2,
+	  azumauindo/ranbounagisatoshi/shops/groupshopb1,
+	  azumauindo/ranbounagisatoshi/shops/groupshopb2,
+	  azumauindo/ranbounagisatoshi/shops/potionshop1,
+	  azumauindo/ranbounagisatoshi/shops/tradecenter,
+	  azumauindo/ranbounagisatoshi/temples/rruggilli1,
+	  azumauindo/ranbounagisatoshi/temples/rruggilli2,
+	  azumauindo/ranbounagisatoshi/towers/tou1,
+	  azumauindo/ranbounagisatoshi/towers/tou2,
+	  azumauindo/ranbounagisatoshi/towers/tou3,
+	  azumauindo/ranbounagisatoshi/towers/tou4,
+	  azumauindo/ranbounagisatoshi/towers/tou5,
+	  azumauindo/suno-yamatoshi/apartments/lapartment1,
+	  azumauindo/suno-yamatoshi/buildings/dojoA1,
+	  azumauindo/suno-yamatoshi/buildings/dojoA2,
+	  azumauindo/suno-yamatoshi/buildings/dojoB1,
+	  azumauindo/suno-yamatoshi/buildings/jadechesthouse1,
+	  azumauindo/suno-yamatoshi/buildings/tatemonoA2,
+	  azumauindo/suno-yamatoshi/gates/gate1,
+	  azumauindo/suno-yamatoshi/gates/gate2,
+	  azumauindo/suno-yamatoshi/gates/gate3,
+	  azumauindo/suno-yamatoshi/shops/armourshop1,
+	  azumauindo/suno-yamatoshi/shops/bank1,
+	  azumauindo/suno-yamatoshi/shops/bank2,
+	  azumauindo/suno-yamatoshi/shops/magicshop1,
+	  azumauindo/suno-yamatoshi/shops/magicshop2,
+	  azumauindo/suno-yamatoshi/shops/pawn1,
+	  azumauindo/suno-yamatoshi/shops/weaponshop1,
+	  azumauindo/suno-yamatoshi/temples/ruggilli1,
+	  azumauindo/suno-yamatoshi/temples/ruggilli2,
+	  azumauindo/suno-yamatoshi/tou/tou1,
+	  azumauindo/suno-yamatoshi/tou/tou2,
+	  azumauindo/suno-yamatoshi/tou/tou3,
+	  azumauindo/suno-yamatoshi/tou/tou4,
+	  azumauindo/suno-yamatoshi/tou/tou5,
+	  azumauindo/suno-yamatoshi/towers/tou1,
+	  azumauindo/suno-yamatoshi/towers/tou2,
+	  azumauindo/suno-yamatoshi/towers/tou3,
+	  azumauindo/suno-yamatoshi/towers/tou4,
+	  azumauindo/suno-yamatoshi/towers/tou5, brest/Castle/AcidChamber,
+	  brest/Castle/DragonRoom, brest/Castle/Finale,
+	  brest/Castle/LargeRoom, brest/Castle/castle,
+	  brest/apartments/brest_town_house, brest/asyvan/gate2,
+	  brest/asyvan/gate3, brest/asyvan/gate4, brest/asyvan/gate5,
+	  brest/asyvan/gate6, brest/asyvan/gate7, brest/asyvan/gate8,
+	  brest/asyvan/gate9, brest/asyvan/palace1, brest/asyvan/palace2,
+	  brest/asyvan/palace3, brest/brest.armour, brest/brest.cvt,
+	  brest/brest.food, brest/brest.magic, brest/brest.scrolls,
+	  brest/brest.scrolls.right, brest/brest.trademarket,
+	  brest/brest.weapon, brest/brittany/enigme.2,
+	  brest/brittany/enigme.3, brest/brittany/enigme.4,
+	  brest/brittany/enigme.5, brest/brittany/enigme.6,
+	  brest/brittany/jessy.1, brest/brittany/jessy.2,
+	  brest/brittany/jessy.3, brest/brittany/khazad.1,
+	  brest/brittany/khazad.2, brest/brittany/khazad.4,
+	  brest/brittany/khazad.5, brest/elec.jes, brest/info.2.zoon,
+	  brest/info_first, brest/jes.admini, brest/jes.admini.1,
+	  brest/ludo1, brest/ludo2, brest/shops/buildshop,
+	  brest/shops/buildshop2, brest/sport.jess, brest/underground2:
+	  Backport from trunk - map entrance x & y coordinates
+
+2008-11-06 01:20  rjtanner
+
+	* whalingoutpost/houses/fishershouse1,
+	  whalingoutpost/houses/infestedhouse1,
+	  whalingoutpost/lightkeepershouseb1, whalingoutpost/misc/castle1,
+	  whalingoutpost/misc/castle2, whalingoutpost/misc/castle3,
+	  whalingoutpost/misc/castle4, whalingoutpost/misc/castleb1,
+	  whalingoutpost/misc/castleb1keep, whalingoutpost/misc/castleb2,
+	  whalingoutpost/misc/castleb3, whalingoutpost/misc/fisherswell1,
+	  whalingoutpost/misc/frostcavern1, whalingoutpost/misc/holeinice1,
+	  whalingoutpost/misc/icecavern1, whalingoutpost/misc/icecavern2,
+	  whalingoutpost/misc/icehole1, whalingoutpost/misc/polarbearcave1,
+	  whalingoutpost/misc/polarbearcave2,
+	  whalingoutpost/misc/polarbearcave3,
+	  whalingoutpost/misc/trollcave1,
+	  whalingoutpost/taverns/fishershall1,
+	  whalingoutpost/taverns/fishershallb1,
+	  whalingoutpost/taverns/storehouse1,
+	  whalingoutpost/underwaterdungeon/level2,
+	  whalingoutpost/underwaterdungeon/level3,
+	  wolfsburg/dept_store_armour, wolfsburg/dept_store_magic,
+	  wolfsburg/dept_store_misc, wolfsburg/dept_store_weapon,
+	  wolfsburg/dungeons/church.2, wolfsburg/dungeons/church.3,
+	  wolfsburg/dungeons/church.4a, wolfsburg/dungeons/church.4b,
+	  wolfsburg/dungeons/church.4c, wolfsburg/dungeons/church.4d,
+	  wolfsburg/dungeons/hut, wolfsburg/dungeons/piratedung,
+	  wolfsburg/dungeons/pirateenter, wolfsburg/dungeons/ship,
+	  wolfsburg/dungeons/ship_deck2, wolfsburg/dungeons/stronghold,
+	  wolfsburg/dungeons/treas_room, wolfsburg/dungeons/underworld,
+	  wolfsburg/eeur/tower1.1, wolfsburg/eeur/tower1.2,
+	  wolfsburg/eeur/tower1.3, wolfsburg/eeur/tower1.4,
+	  wolfsburg/etern_rew, wolfsburg/inns,
+	  wolfsburg/magara/castle/cellar, wolfsburg/magara/castle/floor_1,
+	  wolfsburg/magara/castle/floor_2, wolfsburg/magara/castle/floor_3,
+	  wolfsburg/magara/cellar1/hcellar_1,
+	  wolfsburg/magara/cellar1/hcellar_2,
+	  wolfsburg/magara/cellar1/hole, wolfsburg/magara/cellar_1,
+	  wolfsburg/magara/tower1/entrance,
+	  wolfsburg/magara/tower1/floor_1, wolfsburg/magara/tower1/floor_3,
+	  wolfsburg/magara/tower2/floor_1, wolfsburg/magara/tower2/floor_2,
+	  wolfsburg/piratechurch, wolfsburg/prison, wolfsburg/slave_pit1,
+	  wolfsburg/slave_pit2, wolfsburg/slave_pit3, wolfsburg/snakepit,
+	  wolfsburg/temple/ixalovh, wolfsburg/temple/temp_dung1,
+	  wolfsburg/tt/tta1, wolfsburg/tt/tta2, wolfsburg/tt/ttb1,
+	  wolfsburg/tt/ttb2, wolfsburg/volcano/volcano,
+	  wolfsburg/volcano/vvhuts, wolfsburg/volcano/vvmansion,
+	  wolfsburg/ware1: Backport from trunk - updated map difficulty
+	  level
+
+2008-11-06 00:58  rjtanner
+
+	* scorn/anthony/prison, scorn/cannery/ware1,
+	  scorn/crow/train/train, scorn/dtabb/cave, scorn/dtabb/cave2,
+	  scorn/dtabb/cave3, scorn/houses/angrygiant,
+	  scorn/houses/barracks, scorn/houses/breezy_acres,
+	  scorn/houses/breezy_under, scorn/houses/breezy_under2,
+	  scorn/houses/cornerbrook_under, scorn/houses/easy_house.1.a,
+	  scorn/houses/easy_house.1.b, scorn/houses/easy_house.1.c,
+	  scorn/houses/house.haunted, scorn/houses/house.haunted2,
+	  scorn/houses/house1, scorn/houses/house3.1st,
+	  scorn/houses/house3.2nd, scorn/houses/house3.bas1,
+	  scorn/houses/house3.bas2, scorn/houses/jones,
+	  scorn/houses/kitchen, scorn/houses/map.fr.ruin,
+	  scorn/houses/maze1, scorn/houses/messhall,
+	  scorn/houses/newhouse1, scorn/houses/resir,
+	  scorn/houses/riverside_manor, scorn/houses/riverside_under,
+	  scorn/houses/smithery, scorn/houses/tannery,
+	  scorn/houses/wizardw, scorn/houses/wizz.entry,
+	  scorn/houses/wizz.lev1, scorn/houses/wizz.lev1.pass1,
+	  scorn/kar/creepy.house, scorn/kar/creepy.house2, scorn/kar/drink,
+	  scorn/kar/gorks1, scorn/kar/gorks2, scorn/kar/gorks3,
+	  scorn/kar/somehouse, scorn/kar/somehouse2, scorn/kar/somehouse3,
+	  scorn/magara/porter_house, scorn/mansion/entrance,
+	  scorn/mansion/garden, scorn/mansion/muriskunes,
+	  scorn/mansion/str-tunnel, scorn/mansion/stronghold,
+	  scorn/misc/HallOfQuests, scorn/misc/HospitalityRoom,
+	  scorn/misc/HouseofHealing, scorn/misc/PowerHouse,
+	  scorn/misc/beginners2, scorn/misc/castle, scorn/misc/castle2,
+	  scorn/misc/church, scorn/misc/cityhall, scorn/misc/devourlower,
+	  scorn/misc/gatehouse, scorn/misc/kboldtemp1,
+	  scorn/misc/kboldtemp1b1, scorn/misc/kboldtemp1b2,
+	  scorn/misc/kboldtemp1b3, scorn/misc/kboldtemp1b4,
+	  scorn/misc/library, scorn/misc/map.esben.2,
+	  scorn/misc/port_arena, scorn/misc/prison,
+	  scorn/misc/puddings.place, scorn/misc/templelyth,
+	  scorn/misc/wizhide, scorn/oldcity/end, scorn/oldcity/oldcity1,
+	  scorn/oldcity/oldcity10, scorn/oldcity/oldcity11,
+	  scorn/oldcity/oldcity12, scorn/oldcity/oldcity13,
+	  scorn/oldcity/oldcity14, scorn/oldcity/oldcity15,
+	  scorn/oldcity/oldcity15e, scorn/oldcity/oldcity2,
+	  scorn/oldcity/oldcity3, scorn/oldcity/oldcity54,
+	  scorn/oldcity/oldcity6, scorn/oldcity/oldcity7,
+	  scorn/oldcity/oldcity8, scorn/oldcity/oldcity9,
+	  scorn/peterm/undead_quest, scorn/shops/BasicSpells,
+	  scorn/shops/armourshop, scorn/shops/bowshop,
+	  scorn/shops/buildshop, scorn/shops/gemshop,
+	  scorn/shops/light_shop, scorn/shops/magicshop,
+	  scorn/shops/potionshop, scorn/shops/scorn.sale1,
+	  scorn/shops/scorn.sale2, scorn/shops/weaponshop,
+	  scorn/taverns/goths0, scorn/taverns/goths2, scorn/temples/gaea,
+	  scorn/temples/gnarg, scorn/temples/gorokh, scorn/temples/ixalovh,
+	  scorn/temples/mostrai, scorn/temples/mostrai2,
+	  scorn/temples/ruggilli1, scorn/temples/ruggilli2,
+	  scorn/temples/sorig, scorn/temples/valriel,
+	  scorn/temples/valriel2, scorn/temples/valriel3,
+	  scorn/towers/tower.mad, scorn/towers/tower.mad1,
+	  scorn/towers/tower.mad2, scorn/towers/tower.mad3,
+	  sisters/compound1, sisters/compound2, sisters/compound3,
+	  sisters/entrance, sisters/granary, sisters/necro_entrance,
+	  sisters/necro_hole1, sisters/necro_ruin1, sisters/necro_ruin1a,
+	  sisters/shrine0_east, sisters/shrine0_west, sisters/shrine1,
+	  sisters/shrine_entrance, sisters/small_manor0,
+	  sisters/small_manor1, sisters/tower0, sisters/tower1,
+	  sisters/tower2, sisters/tower3, under_world/uworld_120_109:
+	  Backport from trunk - updated map difficulty level
+
+2008-11-05 06:05  rjtanner
+
+	* ChangeLog: Updated ChangeLog file using svn2cl
+
 2008-11-05 05:40  rjtanner
 
 	* santo_dominion/basement, santo_dominion/crossfire,

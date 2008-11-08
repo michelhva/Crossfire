@@ -1,3 +1,76 @@
+2008-11-08 00:03  rjtanner
+
+	* world/world_117_101: Update entrance coordinates from World map
+	  to Pygmy Forest
+
+2008-11-07 02:14  rjtanner
+
+	* dragonisland/house9: Added map entrance x & y coordinates
+
+2008-11-07 02:10  rjtanner
+
+	* brest/brittany/khazad.3: Add map difficulty level
+
+2008-11-07 02:08  rjtanner
+
+	* darcap/pygmy_forest/pygmy_boss, darcap/pygmy_forest/pygmy_forest,
+	  darcap/pygmy_forest/pygmy_forest_a,
+	  darcap/pygmy_forest/pygmy_forest_b,
+	  darcap/pygmy_forest/pygmy_forest_c,
+	  darcap/pygmy_forest/pygmy_forest_d,
+	  darcap/pygmy_forest/pygmy_garden,
+	  darcap/pygmy_forest/pygmy_treehouse_a,
+	  darcap/pygmy_forest/pygmy_treehouse_b,
+	  darcap/pygmy_forest/pygmy_treehouse_c,
+	  darcap/pygmy_forest/pygmy_treehouse_d: Added map entrance x & y
+	  coordinates, updated map exits/entrance coordinates so they lined
+	  up properly
+
+2008-11-06 02:43  rjtanner
+
+	* brest/pshops/pshop5/floor2, brest/pshops/pshop6/floor2,
+	  brest/pshops/pshop7/floor2, brest/pshops/pshop8/floor2: Update
+	  map with entrance x & y coordinates (missed in previous commit)
+
+2008-11-06 02:40  rjtanner
+
+	* brest/pshops/pshop1/floor2, brest/pshops/pshop10/floor2,
+	  brest/pshops/pshop11/floor2, brest/pshops/pshop12/floor2,
+	  brest/pshops/pshop13/floor2, brest/pshops/pshop14/floor2,
+	  brest/pshops/pshop15/floor2, brest/pshops/pshop16/floor2,
+	  brest/pshops/pshop17/floor2, brest/pshops/pshop18/floor2,
+	  brest/pshops/pshop19/floor2, brest/pshops/pshop2/floor2,
+	  brest/pshops/pshop20/floor2, brest/pshops/pshop21/floor2,
+	  brest/pshops/pshop22/floor2, brest/pshops/pshop23/floor2,
+	  brest/pshops/pshop24/floor2, brest/pshops/pshop25/floor2,
+	  brest/pshops/pshop26/floor2, brest/pshops/pshop27/floor2,
+	  brest/pshops/pshop3/floor2, brest/pshops/pshop4/floor2,
+	  brest/pshops/pshop5/floor2, brest/pshops/pshop6/floor2,
+	  brest/pshops/pshop7/floor2, brest/pshops/pshop8/floor2,
+	  brest/pshops/pshop9/floor2: Update map with entrance x & y
+	  coordinates
+
+2008-11-06 01:38  rjtanner
+
+	* azumauindo/suno-yamatoshi/buildings/dojoA2: Correct y entrance
+	  coordinate typo (121 -> 21)
+
+2008-11-06 01:01  rjtanner
+
+	* scorn/mansion/str-tunnel: Restore darkness setting to str-tunnel
+	  map
+
+2008-11-04 21:07  rjtanner
+
+	* pup_land/nurnberg/hotel, scorn/shops/coffeeshop,
+	  scorn/shops/oleds_cafe: Convert silver payment altars to accept
+	  payment of any coin type, requires server update r10232 (or
+	  newer)
+
+2008-11-03 06:24  rjtanner
+
+	* ChangeLog: Updated ChangeLog file using svn2cl
+
 2008-11-03 06:11  rjtanner
 
 	* scorn/shops/alclass: Update conversion tables to accept payment
