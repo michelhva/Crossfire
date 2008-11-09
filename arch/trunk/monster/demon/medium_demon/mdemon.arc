@@ -3,12 +3,7 @@ name demon
 race demon
 randomitems devil
 face mdemon.x11
-color_fg red
-anim
-facings 1
-mdemon.x11
-mdemon.x12
-mina
+animation mdemon
 resist_magic 50
 resist_godpower 50
 resist_holyword 50
@@ -52,12 +47,7 @@ More
 Object medium_demon_2
 name demon
 face mdemon.x11
-color_fg red
-anim
-facings 1
-mdemon.x11
-mdemon.x12
-mina
+animation mdemon
 monster 1
 move_type walk
 alive 1
@@ -68,12 +58,7 @@ More
 Object medium_demon_3
 name demon
 face mdemon.x11
-color_fg green
-anim
-facings 1
-mdemon.x11
-mdemon.x12
-mina
+animation mdemon
 monster 1
 move_type walk
 alive 1
@@ -84,12 +69,7 @@ More
 Object medium_demon_4
 name demon
 face mdemon.x11
-color_fg red
-anim
-facings 1
-mdemon.x11
-mdemon.x12
-mina
+animation mdemon
 monster 1
 move_type walk
 alive 1
