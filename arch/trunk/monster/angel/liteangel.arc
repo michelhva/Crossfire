@@ -3,13 +3,7 @@ name light angel
 randomitems liteangel
 race angel
 face liteangel.112
-color_fg white
-anim
-liteangel.111
-liteangel.112
-liteangel.113
-liteangel.114
-mina
+animation liteangel
 monster 1
 move_type walk fly_low
 sleep 1
