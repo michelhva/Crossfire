@@ -21,4 +21,5 @@ resist_poison 100
 attacktype 1025
 exp 35
 weight 200000
+move_type fly_low
 end
