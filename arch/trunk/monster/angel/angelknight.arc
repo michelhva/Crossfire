@@ -2,6 +2,7 @@ Object angel_knight
 name Angel Knight
 race angel
 face angelknight.x11
+magicmap black
 monster 1
 move_type walk fly_low
 level 8
@@ -34,7 +35,6 @@ can_use_armour 1
 can_use_weapon 1
 can_use_ring 1
 attacktype 1048577
-color_fg black
 body_skill 1
 body_torso 1
 body_head 1

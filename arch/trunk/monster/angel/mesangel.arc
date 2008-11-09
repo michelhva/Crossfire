@@ -3,7 +3,7 @@ name messenger
 randomitems mesangel
 race angel
 face liteangel.112
-color_fg white
+magicmap white
 anim
 liteangel.111
 liteangel.112

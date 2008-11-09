@@ -2,6 +2,7 @@ Object destroying_angel
 name Retributioner
 race angel
 face retributioner.x11
+magicmap black
 randomitems angel
 monster 1
 move_type walk fly_low
@@ -38,7 +39,6 @@ can_use_shield 1
 can_use_armour 1
 can_use_weapon 1
 can_use_ring 1
-color_fg black
 body_skill 1
 body_torso 1
 body_head 1

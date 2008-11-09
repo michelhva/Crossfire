@@ -3,17 +3,7 @@ randomitems angel
 race angel
 name angel
 face angel.111
-anim
-facings 4
-angel.111
-angel.112
-angel.131
-angel.132
-angel.151
-angel.152
-angel.171
-angel.172
-mina
+animation angel
 is_animated 1
 monster 1
 move_type walk fly_low
@@ -51,7 +41,6 @@ can_use_weapon 1
 can_use_ring 1
 attack_movement 4
 attacktype 1048577
-color_fg black
 body_skill 1
 body_torso 1
 body_head 1
