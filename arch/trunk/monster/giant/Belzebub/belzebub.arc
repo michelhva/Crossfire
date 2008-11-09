@@ -7,14 +7,7 @@ move_type walk
 sleep 1
 Wis 25
 face belzebub.x11
-anim
-belzebub.x11
-belzebub.x11
-belzebub.x12
-belzebub.x12
-belzebub.x11
-belzebub.x11
-mina
+animation belzebub
 resist_magic 100
 resist_electricity 30
 resist_poison 30
@@ -49,7 +42,6 @@ can_use_ring 1
 can_use_shield 1
 can_use_armour 1
 can_use_weapon 1
-magicmap khaki
 body_skill 1
 body_finger 2
 body_torso 1
@@ -66,91 +58,51 @@ More
 Object belzebub_2
 name Belzebub
 face belzebub.x11
-anim
-belzebub.x11
-belzebub.x11
-belzebub.x12
-belzebub.x12
-belzebub.x11
-belzebub.x11
-mina
+animation belzebub
 no_pick 1
 alive 1
 weight 100000
 x 1
-magicmap khaki
 end
 More
 Object belzebub_3
 name Belzebub
 face belzebub.x11
-anim
-belzebub.x11
-belzebub.x11
-belzebub.x12
-belzebub.x12
-belzebub.x11
-belzebub.x11
-mina
+animation belzebub
 no_pick 1
 alive 1
 weight 100000
 y 1
-magicmap khaki
 end
 More
 Object belzebub_4
 name Belzebub
 face belzebub.x11
-anim
-belzebub.x11
-belzebub.x11
-belzebub.x12
-belzebub.x12
-belzebub.x11
-belzebub.x11
-mina
+animation belzebub
 no_pick 1
 alive 1
 weight 100000
 y 1
 x 1
-magicmap khaki
 end
 More
 Object belzebub_5
 name Belzebub
 face belzebub.x11
-anim
-belzebub.x11
-belzebub.x11
-belzebub.x12
-belzebub.x12
-belzebub.x11
-belzebub.x11
-mina
+animation belzebub
 no_pick 1
 alive 1
 weight 100000
 y 2
-magicmap khaki
 end
 More
 Object belzebub_6
 name Belzebub
 face belzebub.x11
-anim
-belzebub.x11
-belzebub.x11
-belzebub.x12
-belzebub.x12
-belzebub.x11
-belzebub.x11
-mina
+animation belzebub
 no_pick 1
 alive 1
 weight 100000
 y 2
 x 1
-magicmap khaki
 end
