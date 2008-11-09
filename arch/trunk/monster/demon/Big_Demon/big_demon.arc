@@ -3,12 +3,7 @@ name big demon
 randomitems imp
 race demon
 face big_demon.x71
-color_fg red
-anim
-facings 2
-big_demon.x31
-big_demon.x71
-mina
+animation big_demon
 resist_magic 50
 resist_godpower 50
 resist_holyword 50
