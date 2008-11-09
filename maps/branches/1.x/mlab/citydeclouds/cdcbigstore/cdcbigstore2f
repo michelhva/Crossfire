@@ -3,6 +3,10 @@ name City de Clouds Big Store
 reset_timeout 7200
 difficulty 65
 region citydeclouds
+shopitems *:-50
+shopgreed 2.00000
+shopmin 10
+shopmax 10000
 width 50
 height 47
 enter_x 41
