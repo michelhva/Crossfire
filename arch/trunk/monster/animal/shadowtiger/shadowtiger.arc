@@ -2,37 +2,7 @@ Object shadowtiger
 name Shadow Tiger
 race animal
 face shadowtiger.x31
-anim
-facings 2
-shadowtiger.x31
-shadowtiger.x32
-shadowtiger.x33
-shadowtiger.x34
-shadowtiger.x32
-blank.111
-blank.111
-blank.111
-blank.111
-blank.111
-shadowtiger.x31
-blank.111
-blank.111
-blank.111
-shadowtiger.x71
-shadowtiger.x72
-shadowtiger.x73
-shadowtiger.x74
-shadowtiger.x72
-blank.111
-blank.111
-blank.111
-blank.111
-blank.111
-shadowtiger.x71
-blank.111
-blank.111
-blank.111
-mina
+animation shadowtiger
 exp 100000
 monster 1
 move_type walk fly_low
@@ -60,123 +30,29 @@ speed -0.3
 weight 2000000
 run_away 2
 attack_movement 3
-color_fg black
 end
 More
 Object shadowtiger_2
 name Shadow Tiger
 face shadowtiger.x31
+animation shadowtiger
 x 1
-anim
-facings 2
-shadowtiger.x31
-shadowtiger.x32
-shadowtiger.x33
-shadowtiger.x34
-shadowtiger.x32
-blank.111
-blank.111
-blank.111
-blank.111
-blank.111
-shadowtiger.x31
-blank.111
-blank.111
-blank.111
-shadowtiger.x71
-shadowtiger.x72
-shadowtiger.x73
-shadowtiger.x74
-shadowtiger.x72
-blank.111
-blank.111
-blank.111
-blank.111
-blank.111
-shadowtiger.x71
-blank.111
-blank.111
-blank.111
-mina
 alive 1
-color_fg black
 end
 More
 Object shadowtiger_3
 name Shadow Tiger
 face shadowtiger.x31
+animation shadowtiger
 y 1
-anim
-facings 2
-shadowtiger.x31
-shadowtiger.x32
-shadowtiger.x33
-shadowtiger.x34
-shadowtiger.x32
-blank.111
-blank.111
-blank.111
-blank.111
-blank.111
-shadowtiger.x31
-blank.111
-blank.111
-blank.111
-shadowtiger.x71
-shadowtiger.x72
-shadowtiger.x73
-shadowtiger.x74
-shadowtiger.x72
-blank.111
-blank.111
-blank.111
-blank.111
-blank.111
-shadowtiger.x71
-blank.111
-blank.111
-blank.111
-mina
 alive 1
-color_fg black
 end
 More
 Object shadowtiger_4
 name Shadow Tiger
 face shadowtiger.x31
+animation shadowtiger
 x 1
 y 1
-anim
-facings 2
-shadowtiger.x31
-shadowtiger.x32
-shadowtiger.x33
-shadowtiger.x34
-shadowtiger.x32
-blank.111
-blank.111
-blank.111
-blank.111
-blank.111
-shadowtiger.x31
-blank.111
-blank.111
-blank.111
-shadowtiger.x71
-shadowtiger.x72
-shadowtiger.x73
-shadowtiger.x74
-shadowtiger.x72
-blank.111
-blank.111
-blank.111
-blank.111
-blank.111
-shadowtiger.x71
-blank.111
-blank.111
-blank.111
-mina
 alive 1
-color_fg black
 end
