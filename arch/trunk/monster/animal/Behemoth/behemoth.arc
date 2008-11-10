@@ -1,17 +1,7 @@
 Object behemoth
 face behemoth.x31
+animation behemoth
 race animal
-anim
-facings 2
-behemoth.x31
-behemoth.x32
-behemoth.x33
-behemoth.x32
-behemoth.x71
-behemoth.x72
-behemoth.x73
-behemoth.x72
-mina
 randomitems behemoth
 attacktype 1025
 monster 1
@@ -32,60 +22,26 @@ level 20
 alive 1
 speed -0.5
 weight 1800000
-color_fg black
 end
 More
 Object behemoth_2
 face behemoth.x31
-anim
-facings 2
-behemoth.x31
-behemoth.x32
-behemoth.x33
-behemoth.x32
-behemoth.x71
-behemoth.x72
-behemoth.x73
-behemoth.x72
-mina
+animation behemoth
 x 1
 alive 1
-color_fg black
 end
 More
 Object behemoth_3
 face behemoth.x31
-anim
-facings 2
-behemoth.x31
-behemoth.x32
-behemoth.x33
-behemoth.x32
-behemoth.x71
-behemoth.x72
-behemoth.x73
-behemoth.x72
-mina
+animation behemoth
 y 1
 alive 1
-color_fg black
 end
 More
 Object behemoth_4
 face behemoth.x31
-anim
-facings 2
-behemoth.x31
-behemoth.x32
-behemoth.x33
-behemoth.x32
-behemoth.x71
-behemoth.x72
-behemoth.x73
-behemoth.x72
-mina
+animation behemoth
 x 1
 y 1
 alive 1
-color_fg black
 end
