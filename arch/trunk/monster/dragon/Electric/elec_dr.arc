@@ -7,14 +7,7 @@ move_type walk
 sleep 1
 Wis 20
 face elec_dr.x11
-anim
-elec_dr.x11
-elec_dr.x12
-elec_dr.x11
-elec_dr.x12
-elec_dr.x11
-elec_dr.x12
-mina
+animation big_elec
 level 27
 Con 11
 Pow 32
@@ -39,111 +32,61 @@ no_pick 1
 speed -0.4
 weight 200000
 run_away 3
-magicmap blue
 end
 More
 Object big_elec_2
 name electric dragon
 face elec_dr.x11
-anim
-elec_dr.x11
-elec_dr.x12
-elec_dr.x11
-elec_dr.x12
-elec_dr.x11
-elec_dr.x12
-mina
+animation big_elec
 monster 1
 move_type walk
 alive 1
 x 1
 weight 4000000
-magicmap blue
 end
 More
 Object big_elec_3
 name electric dragon
 face elec_dr.x11
-anim
-elec_dr.x11
-elec_dr.x12
-elec_dr.x11
-elec_dr.x12
-elec_dr.x11
-elec_dr.x12
-mina
+animation big_elec
 monster 1
 move_type walk
 alive 1
 y 1
 weight 4000000
-magicmap blue
 end
 More
 Object big_elec_4
 name electric dragon
 face elec_dr.x11
-anim
-elec_dr.x11
-elec_dr.x12
-elec_dr.x11
-elec_dr.x12
-elec_dr.x11
-elec_dr.x12
-mina
+animation big_elec
 monster 1
 move_type walk
 alive 1
 x 1
 y 1
 weight 4000000
-magicmap blue
 end
 More
 Object big_elec_5
 name electric dragon
 face elec_dr.x11
-anim
-elec_dr.x11
-elec_dr.x12
-elec_dr.x11
-elec_dr.x12
-elec_dr.x11
-elec_dr.x12
-mina
+animation big_elec
 monster 1
 move_type walk
 alive 1
 y 2
 weight 4000000
-magicmap blue
 end
 More
 Object big_elec_6
 name electric dragon
 face elec_dr.x11
-anim
-elec_dr.x11
-elec_dr.x12
-elec_dr.x11
-elec_dr.x12
-elec_dr.x11
-elec_dr.x12
-mina
+animation big_elec
 monster 1
 move_type walk
 alive 1
 x 1
 y 2
 weight 4000000
-magicmap blue
-end
-
-Object big_elec_spellcasting
-anim
-elec_dr_spellcasting.x11
-elec_dr_spellcasting.x12
-elec_dr_spellcasting.x13
-facings 1
-mina
 end
