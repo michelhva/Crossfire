@@ -1,15 +1,12 @@
 Object byakie
 randomitems byakie
 face byakie.x11
+animation byakie
 race chaos
 monster 1
 move_type walk
 sleep 1
 Wis 21
-anim
-byakie.x11
-byakie.x12
-mina
 level 25
 Con 20
 Str 100
@@ -22,7 +19,6 @@ resist_magic 100
 resist_poison 100
 resist_fear 100
 resist_chaos 100
-
 resist_fire 50
 resist_electricity 50
 resist_cold 50
@@ -30,9 +26,7 @@ resist_acid 50
 resist_drain 50
 resist_slow 50
 resist_paralyze 50
-
 resist_confusion -100
-
 see_invisible 1
 exp 250000
 ac -10
@@ -51,10 +45,7 @@ More
 Object byakie_2
 name byakie
 face byakie.x11
-anim
-byakie.x11
-byakie.x12
-mina
+animation byakie
 monster 1
 move_type walk
 alive 1
@@ -66,10 +57,7 @@ More
 Object byakie_3
 name byakie
 face byakie.x11
-anim
-byakie.x11
-byakie.x12
-mina
+animation byakie
 monster 1
 move_type walk
 alive 1
@@ -81,10 +69,7 @@ More
 Object byakie_4
 name byakie
 face byakie.x11
-anim
-byakie.x11
-byakie.x12
-mina
+animation byakie
 monster 1
 move_type walk
 alive 1
