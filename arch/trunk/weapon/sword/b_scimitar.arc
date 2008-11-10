@@ -3,7 +3,7 @@ nrof 1
 last_sp 8
 type 15
 face b_scimitar.111
-color_fg grey
+magicmap grey
 material 2
 materialname bronze
 dam 4

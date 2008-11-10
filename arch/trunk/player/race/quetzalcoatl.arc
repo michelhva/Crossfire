@@ -28,7 +28,7 @@ attacktype 1
 path_attuned 2
 resist_fire 100
 resist_cold -30
-color_fg light_blue
+magicmap light_blue
 can_use_shield 0
 can_use_armour 0
 can_use_weapon 1

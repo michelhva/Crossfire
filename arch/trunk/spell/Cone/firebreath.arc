@@ -4,7 +4,7 @@ type 102
 subtype 7
 move_on walk fly_low
 face fireball.111
-color_fg red
+magicmap red
 anim
 fireball.111
 fireball.112

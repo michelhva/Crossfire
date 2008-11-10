@@ -1,6 +1,6 @@
 Object fcross-blue
 face fcross-blue.111
-color_fg dark_orange
+magicmap dark_orange
 no_pick 1
 is_floor 1
 smoothlevel 30

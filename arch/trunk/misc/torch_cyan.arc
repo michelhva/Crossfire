@@ -6,7 +6,7 @@ anim
 torch_cyan.111
 torch_cyan.112
 mina
-color_fg light_blue
+magicmap light_blue
 material 144
 value 0
 weight 3000

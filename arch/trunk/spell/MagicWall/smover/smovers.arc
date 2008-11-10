@@ -31,7 +31,7 @@ attacktype 1
 lifesave 1
 hp 10
 invisible 0
-color_fg blue
+magicmap blue
 speed 0.2
 type 40
 move_type walk
@@ -51,7 +51,7 @@ mina
 attacktype 1
 lifesave 1
 hp 10
-color_fg blue
+magicmap blue
 speed -0.4
 invisible 0
 type 40
@@ -74,7 +74,7 @@ mina
 attacktype 1
 lifesave 1
 hp 10
-color_fg blue
+magicmap blue
 invisible 0
 speed -0.4
 type 40
@@ -96,7 +96,7 @@ attacktype 1
 lifesave 1
 hp 10
 invisible 0
-color_fg blue
+magicmap blue
 speed -0.4
 type 40
 move_type walk
@@ -119,7 +119,7 @@ pmarrow.143
 pmarrow.144
 pmarrow.145
 mina
-color_fg blue
+magicmap blue
 speed -0.4
 type 40
 move_type walk
@@ -140,7 +140,7 @@ pmarrow.151
 pmarrow.152
 pmarrow.153
 mina
-color_fg blue
+magicmap blue
 speed -0.4
 type 40
 move_type walk
@@ -163,7 +163,7 @@ pmarrow.163
 pmarrow.164
 pmarrow.165
 mina
-color_fg blue
+magicmap blue
 speed -0.4
 type 40
 move_type walk
@@ -184,7 +184,7 @@ pmarrow.171
 pmarrow.172
 pmarrow.173
 mina
-color_fg blue
+magicmap blue
 speed -0.4
 type 40
 move_type walk
@@ -207,7 +207,7 @@ pmarrow.183
 pmarrow.184
 pmarrow.185
 mina
-color_fg blue
+magicmap blue
 speed -0.4
 type 40
 move_type walk

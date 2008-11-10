@@ -1,7 +1,7 @@
 Object burnout
 name burning item
 face burnout.114
-color_fg red
+magicmap red
 anim
 burnout.111
 burnout.111

@@ -2,7 +2,7 @@ Object smallnugget
 name small gold nugget
 race gold and jewels
 face nugget_sma.111
-color_fg orange
+magicmap orange
 nrof 1
 type 60
 material 2

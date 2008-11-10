@@ -6,7 +6,7 @@ polymorph.112
 polymorph.113
 polymorph.114
 mina
-color_fg red
+magicmap red
 speed 1
 move_type fly_low
 no_pick 1

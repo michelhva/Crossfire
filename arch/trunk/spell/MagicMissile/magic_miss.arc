@@ -4,7 +4,7 @@ name_pl magic missile
 type 102
 subtype 11
 face magic_miss.131
-color_fg blue
+magicmap blue
 anim
 magic_miss.131
 magic_miss.131

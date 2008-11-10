@@ -2,7 +2,7 @@ Object steelbar
 name steel bar
 race gold and jewels
 face steelbar.111
-color_fg grey
+magicmap grey
 nrof 1
 type 73
 material 0

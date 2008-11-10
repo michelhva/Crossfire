@@ -7,7 +7,7 @@ destruction.112
 destruction.113
 destruction.114
 mina
-color_fg black
+magicmap black
 speed 1
 is_used_up 1
 no_pick 1

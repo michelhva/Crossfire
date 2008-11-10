@@ -6,7 +6,7 @@ anim
 sapphire.111
 sapphire.112
 mina
-color_fg blue
+magicmap blue
 nrof 1
 anim_speed 10
 client_anim_random 1

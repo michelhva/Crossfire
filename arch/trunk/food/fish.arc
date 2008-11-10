@@ -92,7 +92,7 @@ end
 Object fish_5
 name fish
 face fish_5.111
-color_fg green
+magicmap green
 food 100
 nrof 1
 type 6
@@ -112,7 +112,7 @@ end
 Object fish_6
 name fish
 face fish_6.111
-color_fg green
+magicmap green
 food 100
 nrof 1
 type 6

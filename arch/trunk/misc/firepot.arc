@@ -12,5 +12,5 @@ no_pick 1
 move_block all
 glow_radius 3
 material 2
-color_fg red
+magicmap red
 end

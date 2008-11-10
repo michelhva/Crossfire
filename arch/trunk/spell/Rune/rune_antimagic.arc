@@ -9,7 +9,7 @@ mina
 level 0
 is_animated 0
 invisible 1
-color_fg grey
+magicmap grey
 no_pick 1
 move_on walk
 attacktype 32770

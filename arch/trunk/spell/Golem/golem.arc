@@ -1,7 +1,7 @@
 Object golem
 type 46
 face golem.111
-color_fg brown
+magicmap brown
 anim
 golem.111
 golem.112

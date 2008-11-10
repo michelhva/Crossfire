@@ -13,7 +13,7 @@ firebolt.161
 firebolt.171
 firebolt.181
 mina
-color_fg red
+magicmap red
 is_animated 0
 is_turnable 1
 move_type fly_low

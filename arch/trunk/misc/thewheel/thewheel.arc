@@ -3,7 +3,7 @@ face thewheel_short.111
 name the wheel
 no_pick 1
 move_block all
-color_fg brown
+magicmap brown
 end
 
 Object thewheel_tall_static
@@ -11,7 +11,7 @@ face thewheel_tall.x11
 name the wheel
 no_pick 1
 move_block all
-color_fg brown
+magicmap brown
 end
 More
 Object thewheel_tall_2_static
@@ -19,7 +19,7 @@ y 1
 face thewheel_tall.x11
 name the wheel
 no_pick 1
-color_fg brown
+magicmap brown
 end
 
 Object thewheel_short_ccwise-back
@@ -50,7 +50,7 @@ thewheel_short.111
 thewheel_short.111
 thewheel_short.111
 mina
-color_fg brown
+magicmap brown
 end
 
 
@@ -82,7 +82,7 @@ thewheel_tall.x11
 thewheel_tall.x11
 thewheel_tall.x11
 mina
-color_fg brown
+magicmap brown
 end
 More
 Object thewheel_tall_2_ccwise-back
@@ -113,5 +113,5 @@ thewheel_tall.x11
 thewheel_tall.x11
 thewheel_tall.x11
 mina
-color_fg brown
+magicmap brown
 end

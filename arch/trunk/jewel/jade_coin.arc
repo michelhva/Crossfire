@@ -2,7 +2,7 @@ Object jadecoin
 name jade coin
 race gold and jewels
 face jade_coin.111
-color_fg green
+magicmap green
 nrof 1
 type 36
 material 2

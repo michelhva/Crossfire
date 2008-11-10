@@ -2,7 +2,7 @@ Object potion_fire
 name potion of cold resistance
 nrof 1
 face potionfir.111
-color_fg red
+magicmap red
 type 5
 level 1
 material 4
@@ -17,7 +17,7 @@ Object potion_fire2
 name potion of frost resistance
 nrof 1
 face potionfir.111
-color_fg red
+magicmap red
 type 5
 level 1
 material 4

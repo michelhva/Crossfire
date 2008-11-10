@@ -1,6 +1,6 @@
 Object barrel
 face barrel.111
-color_fg brown
+magicmap brown
 material 16
 weight 100000
 move_block all

@@ -3,7 +3,7 @@ name platinum round
 name_pl platinum rounds
 race gold and jewels
 face platround.111
-color_fg grey
+magicmap grey
 nrof 1
 type 60
 material 2

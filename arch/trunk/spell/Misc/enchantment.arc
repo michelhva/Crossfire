@@ -8,7 +8,7 @@ enchantment.113
 enchantment.114
 enchantment.115
 mina
-color_fg blue
+magicmap blue
 speed 1
 is_used_up 1
 no_pick 1

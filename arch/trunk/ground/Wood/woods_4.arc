@@ -1,7 +1,7 @@
 Object woods4
 name woods4
 face woods_4.111
-color_fg green
+magicmap green
 race /terrain/forest
 move_on walk
 no_pick 1

@@ -3,7 +3,7 @@ name negative energy bolt
 type 102
 subtype 4
 face negabolt.111
-color_fg dark_orange
+magicmap dark_orange
 anim
 negabolt.111
 negabolt.111

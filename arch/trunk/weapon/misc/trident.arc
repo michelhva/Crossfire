@@ -21,7 +21,7 @@ material 2
 dam 11
 weight 23000
 value 68
-color_fg green
+magicmap green
 attacktype 1
 weapontype 5
 name_pl tridents

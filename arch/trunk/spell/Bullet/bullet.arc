@@ -22,5 +22,5 @@ attacktype 2
 wc -10
 dam 6
 move_type fly_low
-color_fg black
+magicmap black
 end

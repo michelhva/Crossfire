@@ -6,5 +6,5 @@ move_slow walk
 move_slow_penalty 1
 is_wooded 1
 visibility 100
-color_fg black
+magicmap black
 end

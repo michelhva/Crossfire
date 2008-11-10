@@ -8,7 +8,7 @@ werewolf.112
 werewolf.111
 werewolf.113
 mina
-color_fg brown
+magicmap brown
 monster 1
 undead 1
 Wis 10

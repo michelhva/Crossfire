@@ -2,7 +2,7 @@ Object potiondex
 nrof 1
 name potion of dexterity
 face potiondex.111
-color_fg orange
+magicmap orange
 type 5
 level 1
 material 4

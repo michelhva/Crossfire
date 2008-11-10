@@ -7,7 +7,7 @@ lava_sea.112
 lava_sea.113
 lava_sea.114
 mina
-color_fg light_blue
+magicmap light_blue
 anim_speed 5
 client_anim_random 1
 move_block all
@@ -25,7 +25,7 @@ lava_sea.112
 lava_sea.113
 lava_sea.114
 mina
-color_fg light_blue
+magicmap light_blue
 anim_speed 5
 client_anim_random 1
 no_pick 1

@@ -4,7 +4,7 @@ name cudgel
 last_sp 25
 type 15
 face cudgel.111
-color_fg blue
+magicmap blue
 material 2
 materialname bronze
 weapontype 8

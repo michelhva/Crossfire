@@ -4,7 +4,7 @@ type 102
 subtype 7
 move_on walk fly_low
 face paralyse.111
-color_fg dark_orange
+magicmap dark_orange
 anim
 paralyse.111
 paralyse.112

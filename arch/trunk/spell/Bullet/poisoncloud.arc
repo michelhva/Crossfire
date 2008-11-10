@@ -4,7 +4,7 @@ name poison cloud
 type 102
 subtype 6
 face poisoncloud.111
-color_fg green
+magicmap green
 anim
 poisoncloud.111
 poisoncloud.112

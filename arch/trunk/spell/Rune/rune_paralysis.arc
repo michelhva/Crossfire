@@ -13,7 +13,7 @@ rune_paralysis.112
 mina
 speed 1
 level 1
-color_fg yellow
+magicmap yellow
 is_animated 0
 invisible 1
 no_pick 1

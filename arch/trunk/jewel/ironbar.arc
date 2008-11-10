@@ -2,7 +2,7 @@ Object ironbar
 name iron bar
 race gold and jewels
 face ironbar.111
-color_fg grey
+magicmap grey
 nrof 1
 type 73
 material 2

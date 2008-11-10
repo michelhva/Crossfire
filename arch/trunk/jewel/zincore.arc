@@ -4,7 +4,7 @@ name_pl ores
 title of zinc
 race gold and jewels
 face ore_b.111
-color_fg grey
+magicmap grey
 nrof 1
 type 73
 material 64

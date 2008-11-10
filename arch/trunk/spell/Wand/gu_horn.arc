@@ -14,7 +14,7 @@ gu_horn.113
 gu_horn.114
 gu_horn.115
 mina
-color_fg orange
+magicmap orange
 speed 0.3
 type 35
 material 2

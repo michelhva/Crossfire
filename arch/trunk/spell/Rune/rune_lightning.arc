@@ -13,7 +13,7 @@ rune_lightning.111
 rune_lightning.111
 mina
 level 1
-color_fg yellow
+magicmap yellow
 is_animated 0
 invisible 1
 no_pick 1

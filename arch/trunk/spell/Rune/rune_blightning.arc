@@ -12,7 +12,7 @@ anim
 rune_blightning.111
 rune_blightning.111
 mina
-color_fg yellow
+magicmap yellow
 level 1
 is_animated 0
 invisible 1

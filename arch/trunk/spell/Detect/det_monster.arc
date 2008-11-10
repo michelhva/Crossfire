@@ -8,7 +8,7 @@ det_magic.111
 det_magic.112
 det_magic.113
 mina
-color_fg blue
+magicmap blue
 speed 0.2
 is_used_up 1
 no_pick 1

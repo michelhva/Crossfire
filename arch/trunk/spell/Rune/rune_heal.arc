@@ -12,7 +12,7 @@ anim
 rune_heal.111
 rune_heal.111
 mina
-color_fg green
+magicmap green
 level 1
 is_animated 0
 invisible 1

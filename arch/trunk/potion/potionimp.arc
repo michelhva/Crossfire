@@ -2,7 +2,7 @@ Object potion_improve
 name improvement potion
 nrof 1
 face potionimp.111
-color_fg light_blue
+magicmap light_blue
 type 5
 level 1
 material 4

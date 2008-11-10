@@ -6,7 +6,7 @@ rod_heavy.111
 rod_heavy.112
 rod_heavy.113
 mina
-color_fg black
+magicmap black
 speed -0.25
 type 3
 value 700

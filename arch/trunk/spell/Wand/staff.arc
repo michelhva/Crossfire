@@ -14,7 +14,7 @@ staff.113
 staff.112
 staff.111
 mina
-color_fg brown
+magicmap brown
 anim_speed 10
 client_anim_random 1
 type 109

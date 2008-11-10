@@ -33,7 +33,7 @@ weight 70000
 food 999
 speed 1
 attacktype 1
-color_fg green
+magicmap green
 resist_cold -50
 resist_fire 30
 resist_electricity 30

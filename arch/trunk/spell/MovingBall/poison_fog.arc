@@ -9,7 +9,7 @@ poisoncloud.111
 poisoncloud.112
 poisoncloud.113
 mina
-color_fg green
+magicmap green
 is_used_up 1
 is_animated 1
 move_on walk

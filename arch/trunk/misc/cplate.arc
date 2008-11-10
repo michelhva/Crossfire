@@ -1,6 +1,6 @@
 Object cplate
 face cplate.111
-color_fg dark_orange
+magicmap dark_orange
 nrof 1
 material 32
 value 10

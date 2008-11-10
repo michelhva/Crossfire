@@ -13,7 +13,7 @@ rune_sp_res.111
 rune_sp_res.111
 mina
 level 1
-color_fg green
+magicmap green
 is_animated 0
 invisible 1
 no_pick 1

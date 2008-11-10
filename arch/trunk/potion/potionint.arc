@@ -2,7 +2,7 @@ Object potionint
 nrof 1
 name potion of intelligence
 face potionint.111
-color_fg green
+magicmap green
 type 5
 level 1
 material 4

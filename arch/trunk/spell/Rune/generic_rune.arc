@@ -15,5 +15,5 @@ no_pick 1
 move_on walk
 attacktype 2
 Cha 20
-color_fg black
+magicmap black
 end

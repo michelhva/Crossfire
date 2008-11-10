@@ -6,7 +6,7 @@ anim
 torch_vermilion.111
 torch_vermilion.112
 mina
-color_fg red
+magicmap red
 material 144
 value 0
 weight 3000

@@ -11,7 +11,7 @@ bwall_w_0.115
 bwall_w_0.116
 bwall_w_0.117
 mina
-color_fg grey
+magicmap grey
 is_animated 0
 tear_down 1
 hp 150
@@ -44,7 +44,7 @@ bwall_w_1.115
 bwall_w_1.116
 bwall_w_1.117
 mina
-color_fg grey
+magicmap grey
 is_animated 0
 tear_down 1
 hp 150

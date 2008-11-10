@@ -11,7 +11,7 @@ except in a Special Case:
 *so I cannot continue to read *
 endmsg
 face naz_report.111
-color_fg dark_orange
+magicmap dark_orange
 nrof 1
 type 8
 subtype 34

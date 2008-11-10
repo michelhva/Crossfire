@@ -2,7 +2,7 @@ Object splint
 type 102
 subtype 5
 face splint.111
-color_fg yellow
+magicmap yellow
 speed 0.5
 attacktype 1
 no_pick 1

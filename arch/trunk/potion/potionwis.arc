@@ -2,7 +2,7 @@ Object potionwis
 nrof 1
 name potion of wisdom
 face potionwis.111
-color_fg grey
+magicmap grey
 type 5
 level 1
 material 4

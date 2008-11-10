@@ -8,5 +8,5 @@ food 60
 no_pick 1
 move_on walk
 visibility 100
-color_fg black
+magicmap black
 end

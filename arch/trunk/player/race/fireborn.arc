@@ -3,7 +3,7 @@ name fireborn
 race fire_elemental
 randomitems fireborn_player_items
 face fireborn.111
-color_fg red
+magicmap red
 msg
 Legends say that fireborn are sparks struck off the anvil of creation, with life and spirit, and eventually mind. Those who research magic think that they are relatives of some kind to will o' the wisps. An observer seeing one for the first time would see a strangely intelligent vortex of flame somehow carrying items without burning them.
 Their insubstantial nature makes them both very weak and very quick. Their minds are agile, and they are able to commune well with the gods. However, their area of excellence is magic. They spellcast more powerfully than any other race, and mana flows into them readily. They can even cast cold spells with devastating effectiveness. They all know a basic fire spell.

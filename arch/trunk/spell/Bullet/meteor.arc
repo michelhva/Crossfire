@@ -26,7 +26,7 @@ burnout.118
 burnout.119
 mina
 speed 1
-color_fg red
+magicmap red
 food 9
 is_used_up 1
 no_pick 1

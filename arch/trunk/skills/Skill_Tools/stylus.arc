@@ -2,7 +2,7 @@ Object stylus
 name writing pen
 name_pl writing pens
 face stylus.111
-color_fg brown
+magicmap brown
 type 74
 weight 100
 value 5000

@@ -11,7 +11,7 @@ manabolt.112
 manabolt.113
 manabolt.114
 mina
-color_fg black
+magicmap black
 speed 1
 range 3
 duration 3

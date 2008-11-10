@@ -3,7 +3,7 @@ other_arch fireball
 type 102
 subtype 5
 face firebullet.111
-color_fg red
+magicmap red
 anim
 firebullet.111
 firebullet.111

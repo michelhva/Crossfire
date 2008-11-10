@@ -1,7 +1,7 @@
 Object centaur
 name centaur
 face centaur.111
-color_fg brown
+magicmap brown
 anim
 centaur.111
 centaur.112

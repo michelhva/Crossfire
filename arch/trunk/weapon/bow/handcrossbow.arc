@@ -5,7 +5,7 @@ type 14
 nrof 1
 material 16
 face handcrossbow.111
-color_fg brown
+magicmap brown
 dam 5
 weight 1500
 sp 30
@@ -26,7 +26,7 @@ type 14
 nrof 1
 material 16
 face handcrossbow_bone.111
-color_fg brown
+magicmap brown
 dam 5
 weight 1500
 sp 30

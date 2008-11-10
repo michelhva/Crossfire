@@ -13,7 +13,7 @@ alive 1
 ac 5
 wc 12
 dam 8
-color_fg brown
+magicmap brown
 hp 50
 maxhp 50
 level 5

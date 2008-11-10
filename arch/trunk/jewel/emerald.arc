@@ -6,7 +6,7 @@ anim
 emerald.111
 emerald.112
 mina
-color_fg green
+magicmap green
 nrof 1
 anim_speed 10
 client_anim_random 1

@@ -3,7 +3,7 @@ name small icecube
 move_slow walk
 move_slow_penalty 1
 face smallicecube.111
-color_fg white
+magicmap white
 material 68
 weight 1500
 resist_cold 100

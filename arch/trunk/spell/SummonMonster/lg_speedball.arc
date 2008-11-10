@@ -1,6 +1,6 @@
 Object lg_speedball
 face speedball.111
-color_fg red
+magicmap red
 anim
 speedball.111
 speedball.112

@@ -1,7 +1,7 @@
 Object shadow
 race shadow
 face shadow.111
-color_fg black
+magicmap black
 anim
 shadow.111
 shadow.112

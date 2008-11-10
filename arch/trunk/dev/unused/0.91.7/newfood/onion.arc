@@ -1,7 +1,7 @@
 Object onion
 name onion
 face onion.111
-color_fg red
+magicmap red
 food 50
 nrof 1
 type 6

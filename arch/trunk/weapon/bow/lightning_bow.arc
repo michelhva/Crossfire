@@ -13,7 +13,7 @@ value 45000
 weight 25000
 magic 3
 no_strength 1
-color_fg brown
+magicmap brown
 name_pl lightning bows
 client_type 150
 body_arm -2

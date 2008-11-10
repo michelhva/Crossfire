@@ -1,7 +1,7 @@
 Object prepare_weapon
 name Prepare Weapon
 face scroll.111
-color_fg white
+magicmap white
 nrof 1
 type 124
 material 1

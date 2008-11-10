@@ -11,7 +11,7 @@ anim
 rune_frost.111
 icestorm.111
 mina
-color_fg light_blue
+magicmap light_blue
 level 1
 is_animated 0
 invisible 1
@@ -35,7 +35,7 @@ anim
 rune_frost.111
 icestorm.111
 mina
-color_fg light_blue
+magicmap light_blue
 level 1
 is_animated 0
 invisible 1
@@ -57,7 +57,7 @@ anim
 rune_frost.111
 icestorm.111
 mina
-color_fg light_blue
+magicmap light_blue
 level 1
 is_animated 0
 invisible 1

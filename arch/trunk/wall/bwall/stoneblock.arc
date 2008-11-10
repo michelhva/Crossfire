@@ -5,7 +5,7 @@ activate_on_push 1
 activate_on_release 1
 no_pick 1
 face earthwall.111
-color_fg grey
+magicmap grey
 anim
 stoneblock.115
 stoneblock.114
@@ -29,7 +29,7 @@ activate_on_push 1
 activate_on_release 1
 no_pick 1
 face stoneblock.115
-color_fg grey
+magicmap grey
 anim
 stoneblock.115
 stoneblock.114

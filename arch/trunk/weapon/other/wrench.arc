@@ -4,7 +4,7 @@ name wrench
 last_sp 6
 type 15
 face wrench.111
-color_fg grey
+magicmap grey
 material 2
 weapontype 8
 dam 3

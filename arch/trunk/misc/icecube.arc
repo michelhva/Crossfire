@@ -2,7 +2,7 @@ Object icecube
 move_slow walk
 move_slow_penalty 1
 face icecube.111
-color_fg white
+magicmap white
 material 68
 weight 15000
 resist_cold 100

@@ -13,7 +13,7 @@ rune_fireball.111
 rune_fireball.111
 mina
 level 1
-color_fg red
+magicmap red
 is_animated 0
 invisible 1
 no_pick 1
@@ -37,7 +37,7 @@ rune_fireball.111
 rune_fireball.111
 mina
 level 1
-color_fg red
+magicmap red
 is_animated 0
 invisible 1
 no_pick 1

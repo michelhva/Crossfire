@@ -14,7 +14,7 @@ rune_summon_air.111
 rune_summon_air.111
 mina
 level 1
-color_fg white
+magicmap white
 is_animated 0
 invisible 1
 no_pick 1
@@ -41,7 +41,7 @@ rune_summon.111
 rune_summon.111
 mina
 level 1
-color_fg black
+magicmap black
 is_animated 0
 invisible 1
 no_pick 1
@@ -68,7 +68,7 @@ rune_sum_earth.111
 rune_sum_earth.111
 mina
 level 1
-color_fg brown
+magicmap brown
 is_animated 0
 invisible 1
 no_pick 1
@@ -94,7 +94,7 @@ rune_sum_fire.111
 rune_sum_fire.111
 mina
 level 1
-color_fg red
+magicmap red
 is_animated 0
 invisible 1
 no_pick 1
@@ -121,7 +121,7 @@ rune_sum_water.111
 rune_sum_water.111
 mina
 level 1
-color_fg blue
+magicmap blue
 is_animated 0
 invisible 1
 no_pick 1

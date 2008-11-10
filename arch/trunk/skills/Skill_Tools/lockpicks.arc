@@ -3,7 +3,7 @@ name lockpicks
 name_pl lockpicks
 face lockpicks.111
 type 74
-color_fg grey
+magicmap grey
 weight 300
 value 1000
 nrof 1

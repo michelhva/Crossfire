@@ -42,7 +42,7 @@ Int 2
 Wis -3
 Pow 2
 Cha 4
-color_fg black
+magicmap black
 body_range 1
 body_arm 2
 body_torso 1
