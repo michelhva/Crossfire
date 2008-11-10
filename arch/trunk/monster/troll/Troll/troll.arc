@@ -2,8 +2,7 @@ Object troll
 randomitems giant
 race troll
 face troll.x11
-color_fg green
-animation troll_1
+animation troll
 resist_fire -100
 resist_fear 50
 can_see_in_dark 1
@@ -33,11 +32,10 @@ body_skill 1
 body_arm 2
 end
 More
-Object troll_2
+Object troll
 name troll
 face troll.x11
-color_fg green
-animation troll_2
+animation troll
 monster 1
 move_type walk
 alive 1
@@ -47,8 +45,7 @@ More
 Object troll_3
 name troll
 face troll.x11
-color_fg green
-animation troll_3
+animation troll
 monster 1
 move_type walk
 alive 1
@@ -58,8 +55,7 @@ More
 Object troll_4
 name troll
 face troll.x11
-color_fg green
-animation troll_4
+animation troll
 monster 1
 move_type walk
 alive 1
