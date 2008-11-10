@@ -36,5 +36,5 @@ weight 200000
 run_away 15
 attacktype 1
 attack_movement 5
-color_fg black
+magicmap black
 end

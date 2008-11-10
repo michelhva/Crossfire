@@ -51,5 +51,5 @@ hp 25
 maxhp 25
 level 3
 speed 0.4
-color_fg black
+magicmap black
 end

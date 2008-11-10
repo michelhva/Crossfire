@@ -3,7 +3,7 @@ name gnoll chief
 randomitems gnoll
 race goblin
 face gnoll_chief.111
-color_fg brown
+magicmap brown
 anim
 gnoll_chief.111
 gnoll_chief.111

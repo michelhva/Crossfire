@@ -2,7 +2,7 @@ Object water_witch
 name water witch
 race water_elemental
 face witch_water.111
-color_fg blue
+magicmap blue
 randomitems witch_water
 anim
 witch_water.111

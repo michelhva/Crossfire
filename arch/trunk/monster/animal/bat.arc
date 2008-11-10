@@ -24,5 +24,5 @@ ac 7
 level 1
 weight 20
 resist_physical 30
-color_fg black
+magicmap black
 end

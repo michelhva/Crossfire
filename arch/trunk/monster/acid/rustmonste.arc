@@ -9,7 +9,7 @@ rustmonste.132
 rustmonste.171
 rustmonste.172
 mina
-color_fg brown
+magicmap brown
 monster 1
 move_type walk
 sleep 1

@@ -43,7 +43,7 @@ can_use_shield 1
 can_use_armour 1
 can_use_weapon 1
 attack_movement 1
-color_fg black
+magicmap black
 body_skill 1
 body_finger 2
 body_torso 1

@@ -3,7 +3,7 @@ race earth_elemental
 name mud para-elemental
 face para_mud.111
 randomitems para_elemental
-color_fg brown
+magicmap brown
 anim
 para_mud.111
 para_mud.112

@@ -3,7 +3,7 @@ race human
 name High guard
 randomitems guard_h
 face a_guard_h.111
-color_fg blue
+magicmap blue
 speed 0.06
 alive 1
 monster 1

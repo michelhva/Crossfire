@@ -3,7 +3,7 @@ race water_elemental
 name ice para-elemental
 face para_ice.111
 randomitems para_elemental
-color_fg white
+magicmap white
 anim
 facings 8
 para_ice.111

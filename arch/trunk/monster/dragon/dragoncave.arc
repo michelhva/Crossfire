@@ -4,7 +4,7 @@ other_arch dragon
 name dragon cave
 generator 1
 face dragoncave.111
-color_fg red
+magicmap red
 speed 0.0008
 level 10
 hp 300

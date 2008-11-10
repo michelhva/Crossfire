@@ -3,7 +3,7 @@ race dragon
 name cold dragon hatchling
 randomitems cold_dragon
 face cold_drag.171
-color_fg red
+magicmap red
 anim
 facings 2
 cold_drag.171

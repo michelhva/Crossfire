@@ -15,7 +15,7 @@ fungus.113
 fungus.114
 fungus.115
 mina
-color_fg light_blue
+magicmap light_blue
 monster 1
 move_type walk
 sleep 1

@@ -7,7 +7,7 @@ anim
 pir_lass.111
 pir_lass.112
 mina
-color_fg black
+magicmap black
 maxsp 9
 sp 9
 Int 15

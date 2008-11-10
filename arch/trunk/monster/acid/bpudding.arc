@@ -29,7 +29,7 @@ attacktype 64
 resist_fire -100
 resist_blind 100
 hitback 1
-color_fg black
+magicmap black
 end
 Object black_pudding_grow
 name black pudding
@@ -64,7 +64,7 @@ level 7
 attacktype 64
 resist_fire -100
 hitback 1
-color_fg black
+magicmap black
 end
 Object black_pudding_split
 name black pudding
@@ -94,5 +94,5 @@ level 7
 attacktype 64
 resist_fire -100
 hitback 1
-color_fg black
+magicmap black
 end

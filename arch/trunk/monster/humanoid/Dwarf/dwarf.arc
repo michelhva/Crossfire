@@ -7,7 +7,7 @@ anim
 dwarf.111
 dwarf.112
 mina
-color_fg grey
+magicmap grey
 maxsp 9
 sp 9
 Pow 21

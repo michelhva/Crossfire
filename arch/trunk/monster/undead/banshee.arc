@@ -30,7 +30,7 @@ maxsp 60
 will_apply 2
 pick_up 24
 can_cast_spell 1
-color_fg black
+magicmap black
 speed -0.25
 attacktype 17
 exp 15000

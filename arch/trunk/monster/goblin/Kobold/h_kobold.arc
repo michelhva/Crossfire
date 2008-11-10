@@ -6,7 +6,7 @@ anim
 h_kobold.111
 h_kobold.112
 mina
-color_fg green
+magicmap green
 Str 30
 Dex 30
 Con 30

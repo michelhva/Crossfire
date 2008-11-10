@@ -25,5 +25,5 @@ ac 10
 dam 15
 level 13
 weight 1000000
-color_fg black
+magicmap black
 end

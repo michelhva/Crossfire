@@ -1,7 +1,7 @@
 Object goose
 race bird
 face goose.131
-color_fg brown
+magicmap brown
 anim
 facings 2
 goose.171

@@ -2,7 +2,7 @@ Object gnoll
 randomitems gnoll
 race goblin
 face gnoll.111
-color_fg brown
+magicmap brown
 anim
 gnoll.111
 gnoll.112

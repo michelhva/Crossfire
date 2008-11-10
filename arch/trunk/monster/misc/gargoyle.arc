@@ -1,7 +1,7 @@
 Object gargolye
 randomitems gargoyle
 face gargoyle.111
-color_fg grey
+magicmap grey
 anim
 gargoyle.111
 gargoyle.112

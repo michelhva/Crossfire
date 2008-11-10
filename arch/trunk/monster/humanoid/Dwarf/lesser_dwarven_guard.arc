@@ -7,7 +7,7 @@ anim
 lesser_dwarven_guard.111
 lesser_dwarven_guard.112
 mina
-color_fg black
+magicmap black
 maxsp 9
 sp 9
 Pow 28

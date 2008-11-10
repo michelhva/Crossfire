@@ -9,7 +9,7 @@ war_ant.132
 war_ant.171
 war_ant.172
 mina
-color_fg red
+magicmap red
 monster 1
 move_type walk
 sleep 1

@@ -4,7 +4,7 @@ other_arch postman
 name mail box
 generator 1
 face postman_gen.111
-color_fg red
+magicmap red
 hp 80
 maxhp 80
 exp 80

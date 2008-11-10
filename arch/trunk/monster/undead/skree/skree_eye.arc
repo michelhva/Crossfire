@@ -4,7 +4,7 @@ name_pl Skree's eyes
 client_type 625
 nrof 1
 face pretty_ruby.111
-color_fg red
+magicmap red
 material 32
 weight 50
 value 5500

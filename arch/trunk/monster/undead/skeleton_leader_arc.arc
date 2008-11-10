@@ -3,7 +3,7 @@ name skeleton bezerk
 randomitems skeleton
 race undead
 face skeleton_leader.111
-color_fg white
+magicmap white
 anim
 skeleton_leader.111
 skeleton_leader.111

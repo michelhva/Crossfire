@@ -2,7 +2,7 @@ Object skeleton
 randomitems skeleton
 race undead
 face skeleton.111
-color_fg white
+magicmap white
 anim
 skeleton.111
 skeleton.112

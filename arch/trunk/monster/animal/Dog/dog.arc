@@ -29,5 +29,5 @@ level 3
 weight 30000
 run_away 15
 attack_movement 3
-color_fg brown
+magicmap brown
 end

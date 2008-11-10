@@ -2,7 +2,7 @@ Object earth_elemental
 name earth elemental
 race earth_elemental
 face elem_earth.111
-color_fg dark_orange
+magicmap dark_orange
 anim
 elem_earth.111
 elem_earth.112

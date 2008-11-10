@@ -37,6 +37,6 @@ random_movement 1
 pick_up 0
 run_away 99
 exp 500
-color_fg black
+magicmap black
 body_skill 1
 end

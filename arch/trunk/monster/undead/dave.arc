@@ -7,7 +7,7 @@ dave.111
 dave.112
 dave.113
 mina
-color_fg red
+magicmap red
 Str 100
 Dex 100
 Con 100

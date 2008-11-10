@@ -3,7 +3,7 @@ race air_elemental
 name lightning para-elemental
 face para_light.111
 randomitems para_elemental
-color_fg yellow
+magicmap yellow
 anim
 para_light.111
 para_light.112

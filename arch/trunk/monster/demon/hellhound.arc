@@ -41,7 +41,7 @@ resist_magic 20
 weight 40000
 run_away 5
 attack_movement 5
-color_fg brown
+magicmap brown
 end
 Object gr_hellhound
 name greater hellhound

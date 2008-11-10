@@ -3,7 +3,7 @@ race faerie
 name elf
 randomitems elf_1
 face elf_1.111
-color_fg black
+magicmap black
 anim
 elf_1.111
 elf_1.112

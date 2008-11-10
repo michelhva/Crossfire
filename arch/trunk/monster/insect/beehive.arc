@@ -12,7 +12,7 @@ anim
 beehive.111
 beehive.112
 mina
-color_fg light_blue
+magicmap light_blue
 alive 1
 level 1
 exp 50

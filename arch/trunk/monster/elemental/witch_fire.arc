@@ -2,7 +2,7 @@ Object fire_witch
 name fire witch
 race fire_elemental
 face witch_fire.111
-color_fg red
+magicmap red
 randomitems witch_fire
 anim
 witch_fire.111

@@ -9,7 +9,7 @@ northman.111
 northman.112
 northman.112
 mina
-color_fg brown
+magicmap brown
 maxsp 5
 sp 5
 Pow 1

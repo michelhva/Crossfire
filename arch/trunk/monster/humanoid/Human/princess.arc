@@ -9,7 +9,7 @@ princess.112
 princess.113
 princess.112
 mina
-color_fg black
+magicmap black
 maxsp 9
 sp 9
 Pow 9

@@ -22,7 +22,7 @@ weight 70000
 food 999
 speed -0.3
 attacktype 1
-color_fg black
+magicmap black
 can_use_shield 0
 can_use_armour 0
 can_use_weapon 0

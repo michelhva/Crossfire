@@ -3,7 +3,7 @@ race air_elemental
 name air para-elemental
 randomitems para_elemental
 face para_air.111
-color_fg white
+magicmap white
 anim
 para_air.111
 para_air.112

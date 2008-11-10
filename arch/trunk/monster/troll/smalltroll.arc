@@ -7,7 +7,7 @@ anim
 smalltroll.111
 smalltroll.112
 mina
-color_fg brown
+magicmap brown
 monster 1
 move_type walk
 sleep 1

@@ -4,7 +4,7 @@ other_arch orc
 name generator
 generator 1
 face orc_gen.111
-color_fg red
+magicmap red
 hp 30
 maxhp 30
 exp 60

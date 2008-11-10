@@ -6,7 +6,7 @@ anim
 evil_master2.111
 evil_master2.112
 mina
-color_fg grey
+magicmap grey
 Con 100
 Wis 40
 Pow 30

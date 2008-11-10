@@ -3,7 +3,7 @@ race dragon
 name electric dragon hatchling
 randomitems spark
 face elec_drag.171
-color_fg yellow
+magicmap yellow
 anim
 facings 2
 elec_drag.171

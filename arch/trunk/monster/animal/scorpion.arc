@@ -27,5 +27,5 @@ resist_confusion -100
 speed 0.1
 exp 40
 weight 500
-color_fg black
+magicmap black
 end

@@ -1,7 +1,7 @@
 Object chicken
 race bird
 face chicken.131
-color_fg brown
+magicmap brown
 anim
 facings 2
 chicken.131

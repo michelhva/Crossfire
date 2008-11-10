@@ -3,7 +3,7 @@ race faerie
 name faerie dragon
 randomitems wyvern
 face fae_drag.171
-color_fg blue
+magicmap blue
 anim
 facings 2
 fae_drag.171

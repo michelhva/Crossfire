@@ -27,7 +27,7 @@ hp 250
 maxhp 250
 wc 9
 dam 20
-color_fg green
+magicmap green
 speed -0.2
 resist_physical 50
 resist_magic 50

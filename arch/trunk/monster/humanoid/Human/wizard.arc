@@ -3,7 +3,7 @@ name wizard
 race wizard
 randomitems wizard
 face wizard.171
-color_fg black
+magicmap black
 anim
 wizard.111
 wizard.131

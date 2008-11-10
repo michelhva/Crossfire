@@ -3,7 +3,7 @@ name goblin chief
 randomitems goblin
 race goblin
 face goblin_chief.111
-color_fg green
+magicmap green
 anim
 goblin_chief.111
 goblin_chief.111

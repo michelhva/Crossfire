@@ -2,7 +2,7 @@ Object beholder
 randomitems beholder
 race unnatural
 face beholder.111
-color_fg green
+magicmap green
 anim
 beholder.111
 beholder.112
