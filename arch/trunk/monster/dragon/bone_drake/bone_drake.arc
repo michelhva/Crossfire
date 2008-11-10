@@ -3,10 +3,7 @@ name bone drake
 randomitems chinese
 race dragon
 face bone_drake.x11
-anim
-bone_drake.x11
-bone_drake.x12
-mina
+animation bone_drake
 monster 1
 move_type walk
 sleep 1
@@ -29,42 +26,29 @@ no_pick 1
 speed -0.2
 weight 200000
 run_away 4
-magicmap black
 end
 More
 Object bone_drake_2
 name bone drake
 face bone_drake.x11
-anim
-bone_drake.x11
-bone_drake.x12
-mina
+animation bone_drake
 alive 1
 x 1
-magicmap black
 end
 More
 Object bone_drake_3
 name bone drake
 face bone_drake.x11
-anim
-bone_drake.x11
-bone_drake.x12
-mina
+animation bone_drake
 alive 1
 y 1
-magicmap black
 end
 More
 Object bone_drake_4
 name bone drake
 face bone_drake.x11
-anim
-bone_drake.x11
-bone_drake.x12
-mina
+animation bone_drake
 alive 1
 x 1
 y 1
-magicmap black
 end
