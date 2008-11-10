@@ -7,14 +7,7 @@ move_type walk
 sleep 1
 Wis 20
 face wyvern.x71
-color_fg green
-anim
-facings 2
-wyvern.x31
-wyvern.x32
-wyvern.x71
-wyvern.x72
-mina
+animation wyvern
 level 10
 Con 2
 Pow 2
@@ -43,14 +36,7 @@ More
 Object dragon_2
 name wyvern
 face wyvern.x71
-color_fg green
-anim
-facings 2
-wyvern.x31
-wyvern.x32
-wyvern.x71
-wyvern.x72
-mina
+animation wyvern
 monster 1
 move_type walk
 x 1
