@@ -7,14 +7,7 @@ move_type walk
 sleep 1
 Wis 10
 face bear.x31
-color_fg brown
-anim
-bear.x31
-bear.x32
-bear.x71
-bear.x72
-facings 2
-mina
+animation bear
 exp 1500
 ac 6
 wc 9
@@ -37,14 +30,7 @@ More
 Object bear_2
 name bear
 face bear.x31
-color_fg brown
-anim
-bear.x31
-bear.x32
-bear.x71
-bear.x72
-facings 2
-mina
+animation bear
 monster 1
 move_type walk
 alive 1

@@ -7,14 +7,7 @@ move_type walk
 sleep 1
 Wis 10
 face polarbear.x31
-color_fg white
-anim
-polarbear.x31
-polarbear.x32
-polarbear.x71
-polarbear.x72
-facings 2
-mina
+animation polarbear
 resist_cold 50
 exp 3000
 attacktype 1
@@ -38,14 +31,7 @@ More
 Object polarbear_2
 name polar bear
 face polarbear.x31
-color_fg white
-anim
-polarbear.x31
-polarbear.x32
-polarbear.x71
-polarbear.x72
-facings 2
-mina
+animation polarbear
 monster 1
 move_type walk
 alive 1
