@@ -7,17 +7,7 @@ move_type walk
 sleep 1
 Wis 30
 face chaos_dragon.x71
-anim
-facings 2
-chaos_dragon.x71
-chaos_dragon.x72
-chaos_dragon.x73
-chaos_dragon.x74
-chaos_dragon.x31
-chaos_dragon.x32
-chaos_dragon.x33
-chaos_dragon.x34
-mina
+animation chaos_dragon
 level 68
 Con 68
 Pow 86
@@ -49,111 +39,56 @@ More
 Object big_chaos_dragon.2
 name dragon of chaos
 face chaos_dragon.x71
-anim
-facings 2
-chaos_dragon.x71
-chaos_dragon.x72
-chaos_dragon.x73
-chaos_dragon.x74
-chaos_dragon.x31
-chaos_dragon.x32
-chaos_dragon.x33
-chaos_dragon.x34
-mina
+animation chaos_dragon
 monster 1
 move_type walk
 alive 1
 x 1
 weight 4000000
-magicmap red
 end
 More
 Object big_chaos_dragon.3
 name dragon of chaos
 face chaos_dragon.x71
-anim
-facings 2
-chaos_dragon.x71
-chaos_dragon.x72
-chaos_dragon.x73
-chaos_dragon.x74
-chaos_dragon.x31
-chaos_dragon.x32
-chaos_dragon.x33
-chaos_dragon.x34
-mina
+animation chaos_dragon
 monster 1
 move_type walk
 alive 1
 x 2
 weight 4000000
-magicmap red
 end
 More
 Object big_chaos_dragon.4
 name dragon of chaos
 face chaos_dragon.x71
-anim
-facings 2
-chaos_dragon.x71
-chaos_dragon.x72
-chaos_dragon.x73
-chaos_dragon.x74
-chaos_dragon.x31
-chaos_dragon.x32
-chaos_dragon.x33
-chaos_dragon.x34
-mina
+animation chaos_dragon
 monster 1
 move_type walk
 alive 1
 y 1
 weight 4000000
-magicmap red
 end
 More
 Object big_chaos_dragon.5
 name dragon of chaos
 face chaos_dragon.x71
-anim
-facings 2
-chaos_dragon.x71
-chaos_dragon.x72
-chaos_dragon.x73
-chaos_dragon.x74
-chaos_dragon.x31
-chaos_dragon.x32
-chaos_dragon.x33
-chaos_dragon.x34
-mina
+animation chaos_dragon
 monster 1
 move_type walk
 alive 1
 x 1
 y 1
 weight 4000000
-magicmap red
 end
 More
 Object big_chaos_dragon.6
 name dragon of chaos
 face chaos_dragon.x71
-anim
-facings 2
-chaos_dragon.x71
-chaos_dragon.x72
-chaos_dragon.x73
-chaos_dragon.x74
-chaos_dragon.x31
-chaos_dragon.x32
-chaos_dragon.x33
-chaos_dragon.x34
-mina
+animation chaos_dragon
 monster 1
 move_type walk
 alive 1
 x 2
 y 1
 weight 4000000
-magicmap red
 end
