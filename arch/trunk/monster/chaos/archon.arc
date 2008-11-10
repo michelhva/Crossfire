@@ -3,7 +3,7 @@ name Archon
 randomitems liv_chaos
 race chaos
 face archon.111
-color_fg red
+magicmap red
 anim
 archon.111
 archon.222

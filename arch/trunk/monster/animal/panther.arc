@@ -28,5 +28,5 @@ level 5
 weight 60000
 run_away 15
 attack_movement 3
-color_fg black
+magicmap black
 end

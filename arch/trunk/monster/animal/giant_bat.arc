@@ -25,5 +25,5 @@ speed 0.3
 exp 225
 weight 5000
 attack_movement 3
-color_fg black
+magicmap black
 end

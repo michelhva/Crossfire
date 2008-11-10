@@ -2,7 +2,7 @@ Object light_guard
 race human
 name castle guard
 face guard_ligh.111
-color_fg brown
+magicmap brown
 speed 0.06
 alive 1
 monster 1

@@ -3,7 +3,7 @@ name human
 race human
 randomitems human
 face human.171
-color_fg black
+magicmap black
 anim
 human.111
 human.131

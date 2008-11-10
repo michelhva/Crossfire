@@ -18,7 +18,7 @@ spit_ant.172
 spit_ant.173
 spit_ant.172
 mina
-color_fg green
+magicmap green
 monster 1
 move_type walk
 sleep 1

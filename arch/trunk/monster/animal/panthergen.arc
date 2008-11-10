@@ -10,6 +10,6 @@ hp 100
 speed 0.004
 exp 50
 weight 900000
-color_fg black
+magicmap black
 generator_limit 5
 end

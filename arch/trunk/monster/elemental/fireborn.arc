@@ -3,7 +3,7 @@ name fireborn
 race fireborn
 randomitems fireborn
 face fireborn.111
-color_fg red
+magicmap red
 anim
 fireborn.111
 fireborn.222

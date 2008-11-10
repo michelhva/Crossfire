@@ -3,7 +3,7 @@ race fire_elemental
 name lava para-elemental
 face para_lava.111
 randomitems para_elemental
-color_fg red
+magicmap red
 anim
 para_lava.111
 para_lava.112

@@ -48,5 +48,5 @@ dam 20
 level 31
 weight 150000
 undead 1
-color_fg black
+magicmap black
 end

@@ -3,7 +3,7 @@ name demon
 race demon
 randomitems devil
 face devil.111
-color_fg red
+magicmap red
 anim
 devil.111
 devil.112

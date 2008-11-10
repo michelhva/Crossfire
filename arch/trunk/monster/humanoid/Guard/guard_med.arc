@@ -2,7 +2,7 @@ Object medium_guard
 race human
 name castle guard
 face guard_med.111
-color_fg grey
+magicmap grey
 speed 0.06
 alive 1
 monster 1

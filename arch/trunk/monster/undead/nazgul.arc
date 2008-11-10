@@ -6,7 +6,7 @@ anim
 nazgul.111
 nazgul.112
 mina
-color_fg blue
+magicmap blue
 hp 200
 maxhp 200
 Con 10

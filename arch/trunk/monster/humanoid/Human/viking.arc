@@ -3,7 +3,7 @@ name viking
 race viking
 randomitems viking
 face viking.171
-color_fg black
+magicmap black
 anim
 viking.111
 viking.131

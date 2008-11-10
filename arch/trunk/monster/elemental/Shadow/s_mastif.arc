@@ -43,5 +43,5 @@ attacktype 32912
 weight 1000
 run_away 5
 attack_movement 3
-color_fg black
+magicmap black
 end

@@ -3,5 +3,5 @@ face ch_pawn_w.111
 nrof 1
 material 16
 weight 500
-color_fg black
+magicmap black
 end

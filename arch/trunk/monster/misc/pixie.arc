@@ -2,7 +2,7 @@ Object pixie
 race faerie
 randomitems pixie
 face pixie.111
-color_fg orange
+magicmap orange
 anim
 pixie.111
 pixie.112

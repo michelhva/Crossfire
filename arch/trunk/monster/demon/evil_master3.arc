@@ -2,7 +2,7 @@ Object evil_master3
 name Evil Master
 race demon
 face evil_master3.111
-color_fg red
+magicmap red
 anim
 evil_master3.111
 evil_master3.112

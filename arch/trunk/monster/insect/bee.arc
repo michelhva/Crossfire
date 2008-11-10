@@ -1,7 +1,7 @@
 Object bee
 race insect
 face bee.111
-color_fg dark_orange
+magicmap dark_orange
 anim
 bee.111
 bee.112

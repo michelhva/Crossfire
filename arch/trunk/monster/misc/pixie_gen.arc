@@ -3,7 +3,7 @@ race faerie
 other_arch pixie
 name pixie generator
 face pixie_gen.111
-color_fg dark_orange
+magicmap dark_orange
 generator 1
 hp 60
 maxhp 60

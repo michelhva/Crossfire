@@ -3,7 +3,7 @@ name skeleton captain
 randomitems skeleton
 race undead
 face skeleton_chief.111
-color_fg white
+magicmap white
 anim
 skeleton_chief.111
 skeleton_chief.111

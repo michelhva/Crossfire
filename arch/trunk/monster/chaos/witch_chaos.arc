@@ -3,7 +3,7 @@ name chaos witch
 race chaos
 face witch_chaos.111
 animation witch_chaos
-color_fg blue
+magicmap blue
 randomitems witch_chaos
 monster 1
 move_type walk fly_low

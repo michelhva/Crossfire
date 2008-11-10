@@ -2,7 +2,7 @@ Object mudman
 name Mudman
 race earth_elemental
 face mudman.111
-color_fg brown
+magicmap brown
 anim
 mudman.111
 mudman.112

@@ -87,7 +87,7 @@ maxhp 250
 Con 10
 wc 8
 dam 16
-color_fg red
+magicmap red
 speed 0.25
 resist_physical 30
 resist_magic 30

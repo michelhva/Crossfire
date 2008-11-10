@@ -31,5 +31,5 @@ can_see_in_dark 1
 weight 60000
 run_away 5
 attack_movement 3
-color_fg brown
+magicmap brown
 end

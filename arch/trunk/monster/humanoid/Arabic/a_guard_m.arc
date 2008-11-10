@@ -3,7 +3,7 @@ race human
 name Medium guard
 randomitems guard_m
 face a_guard_m.111
-color_fg grey
+magicmap grey
 speed 0.06
 alive 1
 monster 1

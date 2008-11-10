@@ -29,5 +29,5 @@ speed 0.06
 weight 50000
 level 15
 can_cast_spell 1
-color_fg black
+magicmap black
 end

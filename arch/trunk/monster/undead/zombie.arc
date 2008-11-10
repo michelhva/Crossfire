@@ -8,7 +8,7 @@ zombie.112
 zombie.113
 zombie.112
 mina
-color_fg grey
+magicmap grey
 monster 1
 move_type walk
 sleep 1

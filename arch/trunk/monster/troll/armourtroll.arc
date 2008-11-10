@@ -7,7 +7,7 @@ anim
 armourtroll2.111
 armourtroll2.112
 mina
-color_fg brown
+magicmap brown
 monster 1
 move_type walk
 sleep 1
@@ -45,7 +45,7 @@ randomitems troll
 race troll
 name small armoured troll
 face armourtroll3.111
-color_fg brown
+magicmap brown
 monster 1
 move_type walk
 sleep 1
@@ -83,7 +83,7 @@ randomitems troll
 race troll
 name small armoured troll
 face armourtroll4.111
-color_fg brown
+magicmap brown
 monster 1
 move_type walk
 sleep 1

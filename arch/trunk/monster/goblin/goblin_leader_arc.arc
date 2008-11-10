@@ -3,7 +3,7 @@ name goblin champion
 randomitems goblin
 race goblin
 face goblin_leader.111
-color_fg green
+magicmap green
 anim
 goblin_leader.111
 goblin_leader.111

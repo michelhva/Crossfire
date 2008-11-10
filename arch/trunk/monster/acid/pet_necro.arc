@@ -6,7 +6,7 @@ anim
 pet_necro.111
 pet_necro.112
 mina
-color_fg black
+magicmap black
 Con 1
 Wis 15
 hp 100

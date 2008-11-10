@@ -30,6 +30,6 @@ resist_fear 100
 resist_blind 60
 undead 1
 can_see_in_dark 1
-color_fg black
+magicmap black
 one_hit 1
 end

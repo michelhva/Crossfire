@@ -3,7 +3,7 @@ race dragon
 name drake
 randomitems drake
 face drake.111
-color_fg red
+magicmap red
 anim
 facings 2
 drake.111

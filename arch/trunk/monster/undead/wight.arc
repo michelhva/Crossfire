@@ -8,7 +8,7 @@ wight.112
 wight.113
 wight.114
 mina
-color_fg green
+magicmap green
 monster 1
 move_type walk
 sleep 1

@@ -1,6 +1,6 @@
 Object bird
 face bird.111
-color_fg brown
+magicmap brown
 race bird
 anim
 facings 4

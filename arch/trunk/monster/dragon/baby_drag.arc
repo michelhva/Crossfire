@@ -12,7 +12,7 @@ baby_drag.111
 baby_drag.112
 baby_drag.113
 mina
-color_fg red
+magicmap red
 level 25
 Con 8
 Pow 8

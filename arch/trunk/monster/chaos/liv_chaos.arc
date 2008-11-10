@@ -3,7 +3,7 @@ name living chaos
 randomitems liv_chaos
 race chaos
 face liv_chaos.111
-color_fg blue
+magicmap blue
 anim
 liv_chaos.111
 liv_chaos.444

@@ -42,5 +42,5 @@ maxsp 30
 Pow 5
 run_away 5
 attack_movement 3
-color_fg black
+magicmap black
 end

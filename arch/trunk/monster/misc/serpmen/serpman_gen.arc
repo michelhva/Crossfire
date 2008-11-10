@@ -4,7 +4,7 @@ other_arch serp_man
 name serpent man generator
 generator 1
 face serpman_gen.111
-color_fg brown
+magicmap brown
 hp 100
 maxhp 100
 exp 250

@@ -7,7 +7,7 @@ elf_guard.111
 elf_guard.112
 elf_guard.113
 mina
-color_fg green
+magicmap green
 speed 0.06
 alive 1
 monster 1

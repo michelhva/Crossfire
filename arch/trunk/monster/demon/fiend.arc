@@ -3,7 +3,7 @@ name Fiend
 race demon
 randomitems fiend
 face fiend.111
-color_fg red
+magicmap red
 anim
 fiend.111
 fiend.112

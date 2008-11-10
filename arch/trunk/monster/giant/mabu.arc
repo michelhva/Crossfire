@@ -7,7 +7,7 @@ move_type walk
 sleep 1
 Wis 10
 face mabu.x11
-color_fg brown
+magicmap brown
 anim
 mabu.x11
 mabu.x12
@@ -40,7 +40,7 @@ More
 Object mabu_2
 name mabu suke
 face mabu.x11
-color_fg brown
+magicmap brown
 anim
 mabu.x11
 mabu.x12

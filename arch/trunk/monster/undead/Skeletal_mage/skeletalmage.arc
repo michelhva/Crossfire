@@ -3,7 +3,7 @@ randomitems skeletalmage
 name Skeletal Mage
 race undead
 face skeletalmage.111
-color_fg white
+magicmap white
 anim
 skeletalmage.111
 skeletalmage.112

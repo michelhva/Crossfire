@@ -3,7 +3,7 @@ name mage
 race mage
 randomitems mage
 face mage.171
-color_fg black
+magicmap black
 anim
 mage.111
 mage.131

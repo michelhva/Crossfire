@@ -2,7 +2,7 @@ Object mouse
 other_arch mouse
 face mouse.111
 race animal
-color_fg brown
+magicmap brown
 anim
 mouse.111
 mouse.112

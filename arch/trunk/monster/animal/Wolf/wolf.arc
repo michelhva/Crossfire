@@ -30,5 +30,5 @@ level 7
 weight 55000
 run_away 15
 attack_movement 3
-color_fg grey
+magicmap grey
 end

@@ -2,7 +2,7 @@ Object green_slime
 race slime
 name green slime
 face greenslime.111
-color_fg green
+magicmap green
 anim
 greenslime.111
 greenslime.112

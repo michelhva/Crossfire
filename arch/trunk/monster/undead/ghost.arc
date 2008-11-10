@@ -2,7 +2,7 @@ Object ghost
 race undead
 face ghost.111
 randomitems ghost
-color_fg white
+magicmap white
 anim
 ghost.111
 ghost.112

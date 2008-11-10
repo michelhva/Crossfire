@@ -4,7 +4,7 @@ other_arch devil
 name demon gate
 generator 1
 face devil_gen.111
-color_fg red
+magicmap red
 hp 400
 maxhp 400
 exp 180

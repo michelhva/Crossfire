@@ -7,7 +7,7 @@ anim
 greater_dwarven_guard.111
 greater_dwarven_guard.112
 mina
-color_fg red
+magicmap red
 maxsp 9
 sp 9
 Int 9

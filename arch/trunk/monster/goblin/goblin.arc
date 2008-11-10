@@ -3,7 +3,7 @@ Object goblin
 randomitems goblin
 race goblin
 face goblin.151
-color_fg green
+magicmap green
 anim
 facings 4
 goblin.111

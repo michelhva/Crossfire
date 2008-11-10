@@ -2,7 +2,7 @@ Object knight
 race human
 name Royal Guard
 face knight.111
-color_fg blue
+magicmap blue
 speed 0.1
 anim
 knight.111

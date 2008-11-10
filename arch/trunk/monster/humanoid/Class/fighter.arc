@@ -9,7 +9,7 @@ fighter.112
 fighter.113
 fighter.112
 mina
-color_fg grey
+magicmap grey
 maxsp 5
 sp 5
 Str 15

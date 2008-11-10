@@ -2,7 +2,7 @@ Object evil_master4
 name Evil Master
 race demon
 face evil_master4.111
-color_fg black
+magicmap black
 anim
 facings 2
 evil_master4.111

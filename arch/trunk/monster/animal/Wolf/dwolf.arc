@@ -39,5 +39,5 @@ Pow 5
 weight 80000
 run_away 7
 attack_movement 3
-color_fg grey
+magicmap grey
 end

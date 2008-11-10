@@ -2,7 +2,7 @@ Object fire_elemental
 name fire elemental
 race fire_elemental
 face elem_fire.111
-color_fg red
+magicmap red
 anim
 elem_fire.111
 elem_fire.112

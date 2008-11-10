@@ -31,5 +31,5 @@ level 1
 weight 5000
 run_away 60
 attack_movement 3
-color_fg brown
+magicmap brown
 end

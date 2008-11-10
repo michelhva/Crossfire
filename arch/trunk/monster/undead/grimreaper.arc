@@ -35,5 +35,5 @@ weight 50000
 no_pick 1
 run_away 15
 can_see_in_dark 1
-color_fg black
+magicmap black
 end

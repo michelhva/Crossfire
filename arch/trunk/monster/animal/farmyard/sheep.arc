@@ -1,7 +1,7 @@
 Object sheep
 race sheep
 face sheep.131
-color_fg white
+magicmap white
 anim
 facings 1
 sheep.131

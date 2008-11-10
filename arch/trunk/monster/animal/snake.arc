@@ -13,7 +13,7 @@ snake.111
 snake.112
 snake.113
 mina
-color_fg green
+magicmap green
 monster 1
 move_type walk
 sleep 1

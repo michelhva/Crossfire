@@ -3,7 +3,7 @@ name strange beholder
 randomitems beholder
 race unnatural
 face beholder_leader.111
-color_fg green
+magicmap green
 anim
 beholder_leader.111
 beholder_leader.111

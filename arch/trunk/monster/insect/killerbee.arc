@@ -9,7 +9,7 @@ anim
 killerbee.111
 killerbee.112
 mina
-color_fg orange
+magicmap orange
 monster 1
 move_type walk fly_low
 sleep 1

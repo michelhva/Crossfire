@@ -3,7 +3,7 @@ race dragon
 name dragon hatchling
 randomitems wyvern
 face fire_drag.171
-color_fg red
+magicmap red
 anim
 facings 2
 fire_drag.171
