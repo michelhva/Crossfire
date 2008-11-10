@@ -3,17 +3,11 @@ race faerie
 name djinn
 randomitems djinn_magenta
 face djinn_magenta.x11
+animation djinn_magenta
 monster 1
 move_type walk
 sleep 1
 Wis 25
-anim
-facings 2
-djinn_magenta.x11
-djinn_magenta.x12
-djinn_magenta.x21
-djinn_magenta.x22
-mina
 level 100
 Con 50
 Int 50
@@ -68,13 +62,7 @@ More
 Object djinn_magenta_2
 name djinn
 face djinn_magenta.x11
-anim
-facings 2
-djinn_magenta.x11
-djinn_magenta.x12
-djinn_magenta.x21
-djinn_magenta.x22
-mina
+animation djinn_magenta
 monster 1
 move_type walk
 alive 1
