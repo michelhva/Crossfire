@@ -1,17 +1,11 @@
 Object lamia
 randomitems lamia
 face lamia.x31
+animation lamia
 race faerie
 monster 1
 move_type walk
 sleep 1
-anim
-facings 2
-lamia.x31
-lamia.x32
-lamia.x71
-lamia.x72
-mina
 level 30
 Con 36
 Int 30
@@ -20,7 +14,6 @@ Dex 30
 Str 28
 Pow 19
 can_cast_spell 1
-color_fg green
 maxsp 50
 sp 50
 resist_physical 50
@@ -66,14 +59,7 @@ end
 More
 Object lamia_2
 face lamia.x31
-anim
-facings 2
-lamia.x31
-lamia.x32
-lamia.x71
-lamia.x72
-mina
-color_fg green
+animation lamia
 monster 1
 move_type walk
 alive 1
