@@ -3,15 +3,7 @@ name Dread
 race unnatural
 randomitems dread
 face dread.x11
-color_fg blue
-anim
-dread.x11
-dread.x12
-dread.x13
-dread.x14
-dread.x15
-dread.x16
-mina
+animation dread
 exp 50000
 monster 1
 move_type walk fly_low
@@ -45,16 +37,8 @@ More
 Object dread_2
 name Dread
 face dread.x11
-color_fg blue
+animation dread
 x 1
-anim
-dread.x11
-dread.x12
-dread.x13
-dread.x14
-dread.x15
-dread.x16
-mina
 alive 1
 no_pick 1
 move_type walk fly_low
@@ -63,16 +47,8 @@ More
 Object dread_3
 name Dread
 face dread.x11
-color_fg blue
+animation dread
 y 1
-anim
-dread.x11
-dread.x12
-dread.x13
-dread.x14
-dread.x15
-dread.x16
-mina
 alive 1
 no_pick 1
 move_type walk fly_low
@@ -81,17 +57,9 @@ More
 Object dread_4
 name Dread
 face dread.x11
-color_fg blue
+animation dread
 x 1
 y 1
-anim
-dread.x11
-dread.x12
-dread.x13
-dread.x14
-dread.x15
-dread.x16
-mina
 alive 1
 no_pick 1
 move_type walk fly_low
