@@ -3,12 +3,7 @@ race demon
 name Jessy
 randomitems big_wizard
 face jessyb.x11
-anim
-jessyb.x11
-jessyb.x12
-jessyb.x13
-jessyb.x12
-mina
+animation jessyb
 attacktype 65023
 resist_physical 95
 resist_magic 80
@@ -61,7 +56,6 @@ can_use_shield 1
 can_use_armour 1
 can_use_weapon 1
 attack_movement 1
-magicmap red
 body_skill 1
 body_finger 2
 body_torso 1
@@ -78,84 +72,55 @@ More
 Object jessyb_2
 name Jessy
 face jessyb.x11
-anim
-jessyb.x11
-jessyb.x12
-jessyb.x13
-jessyb.x12
-mina
+animation jessyb
 monster 1
 move_type walk
 alive 1
 no_pick 1
 x 1
 weight 300000
-magicmap red
 end
 More
 Object jessyb_3
 name Jessy
 face jessyb.x11
-anim
-jessyb.x11
-jessyb.x12
-jessyb.x13
-jessyb.x12
-mina
+animation jessyb
 monster 1
 move_type walk
 alive 1
 no_pick 1
 x 2
 weight 300000
-magicmap red
 end
 More
 Object jessyb_4
 name Jessy
 face jessyb.x11
-anim
-jessyb.x11
-jessyb.x12
-jessyb.x13
-jessyb.x12
-mina
+animation jessyb
 monster 1
 move_type walk
 alive 1
 no_pick 1
 x 3
 weight 300000
-magicmap red
 end
 More
 Object jessyb_5
 name Jessy
 face jessyb.x11
-anim
-jessyb.x11
-jessyb.x12
-jessyb.x13
-jessyb.x12
-mina
+animation jessyb
 monster 1
 move_type walk
 alive 1
 no_pick 1
 y 1
 weight 300000
-magicmap red
 end
 More
 Object jessyb_6
 name Jessy
 face jessyb.x11
-anim
-jessyb.x11
-jessyb.x12
-jessyb.x13
-jessyb.x12
-mina
+animation jessyb
 monster 1
 move_type walk
 alive 1
@@ -163,18 +128,12 @@ no_pick 1
 x 1
 y 1
 weight 300000
-magicmap red
 end
 More
 Object jessyb_7
 name Jessy
 face jessyb.x11
-anim
-jessyb.x11
-jessyb.x12
-jessyb.x13
-jessyb.x12
-mina
+animation jessyb
 monster 1
 move_type walk
 alive 1
@@ -182,18 +141,12 @@ no_pick 1
 x 2
 y 1
 weight 300000
-magicmap red
 end
 More
 Object jessyb_8
 name Jessy
 face jessyb.x11
-anim
-jessyb.x11
-jessyb.x12
-jessyb.x13
-jessyb.x12
-mina
+animation jessyb
 monster 1
 move_type walk
 alive 1
@@ -201,36 +154,24 @@ no_pick 1
 x 3
 y 1
 weight 300000
-magicmap red
 end
 More
 Object jessyb_9
 name Jessy
 face jessyb.x11
-anim
-jessyb.x11
-jessyb.x12
-jessyb.x13
-jessyb.x12
-mina
+animation jessyb
 monster 1
 move_type walk
 alive 1
 no_pick 1
 y 2
 weight 300000
-magicmap red
 end
 More
 Object jessyb_10
 name Jessy
 face jessyb.x11
-anim
-jessyb.x11
-jessyb.x12
-jessyb.x13
-jessyb.x12
-mina
+animation jessyb
 monster 1
 move_type walk
 alive 1
@@ -238,18 +179,12 @@ no_pick 1
 x 1
 y 2
 weight 300000
-magicmap red
 end
 More
 Object jessyb_11
 name Jessy
 face jessyb.x11
-anim
-jessyb.x11
-jessyb.x12
-jessyb.x13
-jessyb.x12
-mina
+animation jessyb
 monster 1
 move_type walk
 alive 1
@@ -257,18 +192,12 @@ no_pick 1
 x 2
 y 2
 weight 300000
-magicmap red
 end
 More
 Object jessyb_12
 name Jessy
 face jessyb.x11
-anim
-jessyb.x11
-jessyb.x12
-jessyb.x13
-jessyb.x12
-mina
+animation jessyb
 monster 1
 move_type walk
 alive 1
@@ -276,36 +205,24 @@ no_pick 1
 x 3
 y 2
 weight 300000
-magicmap red
 end
 More
 Object jessyb_13
 name Jessy
 face jessyb.x11
-anim
-jessyb.x11
-jessyb.x12
-jessyb.x13
-jessyb.x12
-mina
+animation jessyb
 monster 1
 move_type walk
 alive 1
 no_pick 1
 y 3
 weight 300000
-magicmap red
 end
 More
 Object jessyb_14
 name Jessy
 face jessyb.x11
-anim
-jessyb.x11
-jessyb.x12
-jessyb.x13
-jessyb.x12
-mina
+animation jessyb
 monster 1
 move_type walk
 alive 1
@@ -313,18 +230,12 @@ no_pick 1
 x 1
 y 3
 weight 300000
-magicmap red
 end
 More
 Object jessyb_15
 name Jessy
 face jessyb.x11
-anim
-jessyb.x11
-jessyb.x12
-jessyb.x13
-jessyb.x12
-mina
+animation jessyb
 monster 1
 move_type walk
 alive 1
@@ -332,18 +243,12 @@ no_pick 1
 x 2
 y 3
 weight 300000
-magicmap red
 end
 More
 Object jessyb_16
 name Jessy
 face jessyb.x11
-anim
-jessyb.x11
-jessyb.x12
-jessyb.x13
-jessyb.x12
-mina
+animation jessyb
 monster 1
 move_type walk
 alive 1
@@ -351,5 +256,4 @@ no_pick 1
 x 3
 y 3
 weight 300000
-magicmap red
 end
