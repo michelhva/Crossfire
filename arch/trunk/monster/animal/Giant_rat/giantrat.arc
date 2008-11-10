@@ -1,21 +1,9 @@
 Object giantrat
 name giant rat
 face giantrat.x31
+animation giantrat
 race animal
 randomitems giantrat
-anim
-facings 2
-giantrat.x31
-giantrat.x32
-giantrat.x33
-giantrat.x32
-giantrat.x31
-giantrat.x71
-giantrat.x72
-giantrat.x73
-giantrat.x72
-giantrat.x71
-mina
 speed -0.4
 attack_movement 3
 monster 1
@@ -38,66 +26,26 @@ alive 1
 weight 2400000
 can_cast_spell 1
 attacktype 1
-color_fg black
 end
 More
 Object giantrat_2
 face giantrat.x31
-anim
-facings 2
-giantrat.x31
-giantrat.x32
-giantrat.x33
-giantrat.x32
-giantrat.x31
-giantrat.x71
-giantrat.x72
-giantrat.x73
-giantrat.x72
-giantrat.x71
-mina
+animation giantrat
 x 1
 alive 1
-color_fg black
 end
 More
 Object giantrat_3
 face giantrat.x31
-anim
-facings 2
-giantrat.x31
-giantrat.x32
-giantrat.x33
-giantrat.x32
-giantrat.x31
-giantrat.x71
-giantrat.x72
-giantrat.x73
-giantrat.x72
-giantrat.x71
-mina
+animation giantrat
 y 1
 alive 1
-color_fg black
 end
 More
 Object giantrat_4
 face giantrat.x31
-anim
-facings 2
-giantrat.x31
-giantrat.x32
-giantrat.x33
-giantrat.x32
-giantrat.x31
-giantrat.x71
-giantrat.x72
-giantrat.x73
-giantrat.x72
-giantrat.x71
-mina
+animation giantrat
 x 1
 y 1
 alive 1
-color_fg black
 end
