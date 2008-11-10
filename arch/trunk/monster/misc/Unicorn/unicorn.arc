@@ -7,16 +7,7 @@ move_type walk
 sleep 1
 Wis 18
 face unicorn.x31
-color_fg white
-anim
-facings 2
-unicorn.x31
-unicorn.x32
-unicorn.x33
-unicorn.x71
-unicorn.x72
-unicorn.x73
-mina
+animation unicorn
 level 6
 Con 8
 Pow 15
@@ -47,16 +38,7 @@ More
 Object unicorn_2
 name unicorn
 face unicorn.x31
-color_fg white
-anim
-facings 2
-unicorn.x31
-unicorn.x32
-unicorn.x33
-unicorn.x71
-unicorn.x72
-unicorn.x73
-mina
+animation unicorn
 monster 1
 move_type walk
 x 1
