@@ -2,20 +2,13 @@ Object slug
 race insect
 name slug
 face slug.x31
+animation slug
 monster 1
 move_type walk
 sleep 1
 Wis 15
-anim
-facings 2
-slug.x31
-slug.x32
-slug.x71
-slug.x72
-mina
 level 12
 Con 10
-color_fg grey
 resist_acid 100
 resist_fear 100
 resist_blind 100
@@ -38,18 +31,11 @@ More
 Object slug_2
 name slug
 face slug.x31
-anim
-facings 2
-slug.x31
-slug.x32
-slug.x71
-slug.x72
-mina
+animation slug
 monster 1
 move_type walk
 alive 1
 no_pick 1
-color_fg grey
 x 1
 weight 300000
 end
