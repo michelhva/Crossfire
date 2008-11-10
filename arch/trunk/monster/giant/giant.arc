@@ -7,11 +7,7 @@ move_type walk
 sleep 1
 Wis 10
 face giant.x11
-color_fg brown
-anim
-giant.x11
-giant.x12
-mina
+animation giant
 resist_physical 30
 resist_electricity 50
 resist_blind -30
@@ -40,11 +36,7 @@ More
 Object giant_2
 name hill giant
 face giant.x11
-color_fg brown
-anim
-giant.x11
-giant.x12
-mina
+animation giant
 monster 1
 move_type walk
 alive 1
