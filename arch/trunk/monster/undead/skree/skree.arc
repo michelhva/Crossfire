@@ -2,7 +2,7 @@ Object skree
 face skree.x31
 race undead
 randomitems skree
-animation skree_1
+animation skree
 attacktype 1025
 monster 1
 move_type walk
@@ -32,31 +32,27 @@ alive 1
 can_cast_spell 1
 speed -0.5
 weight 1000000
-color_fg black
 undead 1
 end
 More
 Object skree_2
 face skree.x31
-animation skree_2
+animation skree
 x 1
 alive 1
-color_fg black
 end
 More
 Object skree_3
 face skree.x31
-animation skree_3
+animation skree
 y 1
 alive 1
-color_fg black
 end
 More
 Object skree_4
 face skree.x31
-animation skree_4
+animation skree
 x 1
 y 1
 alive 1
-color_fg black
 end
