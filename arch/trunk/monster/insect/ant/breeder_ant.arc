@@ -1,14 +1,9 @@
 Object breeder_ant
 face breeder_ant.x11
+animation breeder_ant
 name Queen Ant
 race insect
 other_arch ant_egg
-anim
-breeder_ant.x11
-breeder_ant.x11
-breeder_ant.x12
-mina
-color_fg dark_orange
 monster 1
 move_type walk
 no_pick 1
@@ -34,13 +29,8 @@ end
 More
 Object breeder_ant_2
 face breeder_ant.x11
+animation breeder_ant
 name Queen Ant
-anim
-breeder_ant.x11
-breeder_ant.x11
-breeder_ant.x12
-mina
-color_fg dark_orange
 monster 1
 move_type walk
 move_block all
