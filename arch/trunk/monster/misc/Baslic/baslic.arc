@@ -3,13 +3,7 @@ name basilisk
 randomitems chinese
 race unnatural
 face baslic.x31
-anim
-facings 2
-baslic.x31
-baslic.x32
-baslic.x71
-baslic.x72
-mina
+animation baslic
 monster 1
 move_type walk
 sleep 1
@@ -38,82 +32,46 @@ no_pick 1
 speed -0.2
 weight 2000000
 run_away 4
-color_fg black
 end
 More
 Object baslic_2
 name baslic
 face baslic.x31
-anim
-facings 2
-baslic.x31
-baslic.x32
-baslic.x71
-baslic.x72
-mina
+animation baslic
 alive 1
 x 1
-color_fg black
 end
 More
 Object baslic_3
 name baslic
 face baslic.x31
-anim
-facings 2
-baslic.x31
-baslic.x32
-baslic.x71
-baslic.x72
-mina
+animation baslic
 alive 1
 x 2
-color_fg black
 end
 More
 Object baslic_4
 name baslic
 face baslic.x31
-anim
-facings 2
-baslic.x31
-baslic.x32
-baslic.x71
-baslic.x72
-mina
+animation baslic
 alive 1
 y 1
-color_fg black
 end
 More
 Object baslic_5
 name baslic
 face baslic.x31
-anim
-facings 2
-baslic.x31
-baslic.x32
-baslic.x71
-baslic.x72
-mina
+animation baslic
 alive 1
 y 1
 x 1
-color_fg black
 end
 More
 Object baslic_6
 name baslic
 face baslic.x31
-anim
-facings 2
-baslic.x31
-baslic.x32
-baslic.x71
-baslic.x72
-mina
+animation baslic
 alive 1
 y 1
 x 2
-color_fg black
 end
