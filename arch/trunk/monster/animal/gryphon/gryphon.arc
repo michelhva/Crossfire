@@ -7,21 +7,7 @@ move_type walk
 sleep 1
 Wis 15
 face gryphon.x31
-anim
-facings 2
-gryphon.x31
-gryphon.x32
-gryphon.x33
-gryphon.x34
-gryphon.x33
-gryphon.x32
-gryphon.x71
-gryphon.x72
-gryphon.x73
-gryphon.x74
-gryphon.x73
-gryphon.x72
-mina
+animation gryphon
 level 29
 attacktype 128
 Dex 30
@@ -57,7 +43,6 @@ can_use_armour 1
 can_use_weapon 1
 can_use_ring 1
 attack_movement 1
-magicmap brown
 body_torso 1
 body_head 1
 body_shoulder 1
@@ -73,209 +58,89 @@ More
 Object gryphon2
 name Dark Gryphon
 face gryphon.x31
-anim
-facings 2
-gryphon.x31
-gryphon.x32
-gryphon.x33
-gryphon.x34
-gryphon.x33
-gryphon.x32
-gryphon.x71
-gryphon.x72
-gryphon.x73
-gryphon.x74
-gryphon.x73
-gryphon.x72
-mina
+animation gryphon
 monster 1
 move_type walk
 alive 1
 anim_speed 1.0
 x 1
-magicmap brown
 end
 More
 Object gryphon3
 name Dark Gryphon
 face gryphon.x31
-anim
-facings 2
-gryphon.x31
-gryphon.x32
-gryphon.x33
-gryphon.x34
-gryphon.x33
-gryphon.x32
-gryphon.x71
-gryphon.x72
-gryphon.x73
-gryphon.x74
-gryphon.x73
-gryphon.x72
-mina
+animation gryphon
 alive 1
 anim_speed 1.0
 x 2
-magicmap brown
 end
 More
 Object gryphon4
 name Dark Gryphon
 face gryphon.x31
-anim
-facings 2
-gryphon.x31
-gryphon.x32
-gryphon.x33
-gryphon.x34
-gryphon.x33
-gryphon.x32
-gryphon.x71
-gryphon.x72
-gryphon.x73
-gryphon.x74
-gryphon.x73
-gryphon.x72
-mina
+animation gryphon
 monster 1
 move_type walk
 alive 1
 anim_speed 1.0
 y 1
-magicmap brown
 end
 More
 Object gryphon5
 name Dark Gryphon
 face gryphon.x31
-anim
-facings 2
-gryphon.x31
-gryphon.x32
-gryphon.x33
-gryphon.x34
-gryphon.x33
-gryphon.x32
-gryphon.x71
-gryphon.x72
-gryphon.x73
-gryphon.x74
-gryphon.x73
-gryphon.x72
-mina
+animation gryphon
 monster 1
 move_type walk
 alive 1
 anim_speed 1.0
 x 1
 y 1
-magicmap brown
 end
 More
 Object gryphon6
 name Dark Gryphon
 face gryphon.x31
-anim
-facings 2
-gryphon.x31
-gryphon.x32
-gryphon.x33
-gryphon.x34
-gryphon.x33
-gryphon.x32
-gryphon.x71
-gryphon.x72
-gryphon.x73
-gryphon.x74
-gryphon.x73
-gryphon.x72
-mina
+animation gryphon
 monster 1
 move_type walk
 alive 1
 anim_speed 1.0
 x 2
 y 1
-magicmap brown
 end
 More
 Object gryphon7
 name Dark Gryphon
 face gryphon.x31
-anim
-facings 2
-gryphon.x31
-gryphon.x32
-gryphon.x33
-gryphon.x34
-gryphon.x33
-gryphon.x32
-gryphon.x71
-gryphon.x72
-gryphon.x73
-gryphon.x74
-gryphon.x73
-gryphon.x72
-mina
+animation gryphon
 monster 1
 move_type walk
 alive 1
 anim_speed 1.0
 y 2
-magicmap brown
 end
 More
 Object gryphon8
 name Dark Gryphon
 face gryphon.x31
-anim
-facings 2
-gryphon.x31
-gryphon.x32
-gryphon.x33
-gryphon.x34
-gryphon.x33
-gryphon.x32
-gryphon.x71
-gryphon.x72
-gryphon.x73
-gryphon.x74
-gryphon.x73
-gryphon.x72
-mina
+animation gryphon
 monster 1
 move_type walk
 alive 1
 anim_speed 1.0
 x 1
 y 2
-magicmap brown
 end
 More
 Object gryphon9
 name Dark Gryphon
 face gryphon.x31
-anim
-facings 2
-gryphon.x31
-gryphon.x32
-gryphon.x33
-gryphon.x34
-gryphon.x33
-gryphon.x32
-gryphon.x71
-gryphon.x72
-gryphon.x73
-gryphon.x74
-gryphon.x73
-gryphon.x72
-mina
+animation gryphon
 monster 1
 move_type walk
 alive 1
 anim_speed 1.0
 x 2
 y 2
-magicmap brown
 end
