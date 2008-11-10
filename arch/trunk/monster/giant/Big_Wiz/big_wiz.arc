@@ -7,17 +7,7 @@ move_type walk
 sleep 1
 Wis 15
 face big_wiz.x11
-anim
-big_wiz.x11
-big_wiz.x12
-big_wiz.x13
-big_wiz.x14
-big_wiz.x15
-big_wiz.x15
-big_wiz.x14
-big_wiz.x13
-big_wiz.x12
-mina
+animation big_wiz
 level 49
 attacktype 128
 Con 28
@@ -52,7 +42,6 @@ can_use_armour 1
 can_use_weapon 1
 can_use_ring 1
 attack_movement 1
-magicmap brown
 body_torso 1
 body_head 1
 body_shoulder 1
@@ -68,183 +57,95 @@ More
 Object big_wiz2
 name wizard
 face big_wiz.x11
-anim
-big_wiz.x11
-big_wiz.x12
-big_wiz.x13
-big_wiz.x14
-big_wiz.x15
-big_wiz.x15
-big_wiz.x14
-big_wiz.x13
-big_wiz.x12
-mina
+animation big_wiz
 monster 1
 move_type walk
 alive 1
 x 1
 y 0
 weight 4000000
-magicmap brown
 end
 More
 Object big_wiz3
 name wizard
 face big_wiz.x11
-anim
-big_wiz.x11
-big_wiz.x12
-big_wiz.x13
-big_wiz.x14
-big_wiz.x15
-big_wiz.x15
-big_wiz.x14
-big_wiz.x13
-big_wiz.x12
-mina
+animation big_wiz
 monster 1
 move_type walk
 alive 1
 x 2
 y 0
 weight 4000000
-magicmap brown
 end
 More
 Object big_wiz4
 name wizard
 face big_wiz.x11
-anim
-big_wiz.x11
-big_wiz.x12
-big_wiz.x13
-big_wiz.x14
-big_wiz.x15
-big_wiz.x15
-big_wiz.x14
-big_wiz.x13
-big_wiz.x12
-mina
+animation big_wiz
 monster 1
 move_type walk
 alive 1
 y 1
 x 0
 weight 4000000
-magicmap brown
 end
 More
 Object big_wiz5
 name wizard
 face big_wiz.x11
-anim
-big_wiz.x11
-big_wiz.x12
-big_wiz.x13
-big_wiz.x14
-big_wiz.x15
-big_wiz.x15
-big_wiz.x14
-big_wiz.x13
-big_wiz.x12
-mina
+animation big_wiz
 monster 1
 move_type walk
 alive 1
 x 1
 y 1
 weight 4000000
-magicmap brown
 end
 More
 Object big_wiz6
 name wizard
 face big_wiz.x11
-anim
-big_wiz.x11
-big_wiz.x12
-big_wiz.x13
-big_wiz.x14
-big_wiz.x15
-big_wiz.x15
-big_wiz.x14
-big_wiz.x13
-big_wiz.x12
-mina
+animation big_wiz
 monster 1
 move_type walk
 alive 1
 x 2
 y 1
 weight 4000000
-magicmap brown
 end
 More
 Object big_wiz7
 name wizard
 face big_wiz.x11
-anim
-big_wiz.x11
-big_wiz.x12
-big_wiz.x13
-big_wiz.x14
-big_wiz.x15
-big_wiz.x15
-big_wiz.x14
-big_wiz.x13
-big_wiz.x12
-mina
+animation big_wiz
 monster 1
 move_type walk
 alive 1
 y 2
 x 0
 weight 4000000
-magicmap brown
 end
 More
 Object big_wiz8
 name wizard
 face big_wiz.x11
-anim
-big_wiz.x11
-big_wiz.x12
-big_wiz.x13
-big_wiz.x14
-big_wiz.x15
-big_wiz.x15
-big_wiz.x14
-big_wiz.x13
-big_wiz.x12
-mina
+animation big_wiz
 monster 1
 move_type walk
 alive 1
 x 1
 y 2
 weight 4000000
-magicmap brown
 end
 More
 Object big_wiz9
 name wizard
 face big_wiz.x11
-anim
-big_wiz.x11
-big_wiz.x12
-big_wiz.x13
-big_wiz.x14
-big_wiz.x15
-big_wiz.x15
-big_wiz.x14
-big_wiz.x13
-big_wiz.x12
-mina
+animation big_wiz
 monster 1
 move_type walk
 alive 1
 x 2
 y 2
 weight 4000000
-magicmap brown
 end
