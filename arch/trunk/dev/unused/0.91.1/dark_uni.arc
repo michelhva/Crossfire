@@ -6,7 +6,7 @@ monster 1
 sleep 1
 Wis 18
 face dark_uni.111
-color_fg black
+magicmap black
 anim
 dark_uni.111
 dark_uni.111
@@ -44,7 +44,7 @@ More
 Object dark_uni_2
 name dark unicorn
 face dark_uni.211
-color_fg black
+magicmap black
 anim
 dark_uni.211
 dark_uni.211

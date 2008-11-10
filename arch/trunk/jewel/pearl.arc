@@ -6,7 +6,7 @@ anim
 pearl.111
 pearl.112
 mina
-color_fg white
+magicmap white
 nrof 1
 anim_speed 10
 client_anim_random 1

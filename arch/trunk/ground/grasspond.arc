@@ -4,7 +4,7 @@ type 67
 race /terrain/plains
 move_on walk
 face grasspond.111
-color_fg green
+magicmap green
 no_pick 1
 is_water 1
 is_floor 1

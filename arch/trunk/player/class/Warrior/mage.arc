@@ -3,7 +3,7 @@ name mage
 anim_suffix class_mage
 randomitems warlock_class_items
 face mage.151
-color_fg black
+magicmap black
 anim
 mage.111
 mage.112

@@ -5,7 +5,7 @@ name long sword
 last_sp 8
 type 15
 face sword_1.111
-color_fg blue
+magicmap blue
 material 2
 dam 8
 weight 15000

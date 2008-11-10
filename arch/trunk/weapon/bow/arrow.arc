@@ -2,7 +2,7 @@ Object arrow
 race arrows
 type 13
 face arrow.101
-color_fg red
+magicmap red
 anim
 arrow.101
 arrow.111

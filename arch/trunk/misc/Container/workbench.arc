@@ -9,7 +9,7 @@ container 800000
 is_cauldron 1
 Str 0
 value 18000
-color_fg black
+magicmap black
 name_pl workbenches
 client_type 51
 end

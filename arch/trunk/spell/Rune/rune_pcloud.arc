@@ -13,7 +13,7 @@ poisoncloud.111
 mina
 speed 1
 level 1
-color_fg green
+magicmap green
 is_animated 0
 invisible 1
 no_pick 1

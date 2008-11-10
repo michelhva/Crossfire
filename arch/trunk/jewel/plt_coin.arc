@@ -2,7 +2,7 @@ Object platinacoin
 name platinum coin
 race gold and jewels
 face plt_coin.111
-color_fg grey
+magicmap grey
 nrof 1
 type 36
 material 2

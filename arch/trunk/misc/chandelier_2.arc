@@ -11,7 +11,7 @@ anim_speed 3
 client_anim_random 1
 glow_radius 4
 no_pick 1
-color_fg yellow
+magicmap yellow
 end
 
 Object chandelier_2_copper
@@ -27,5 +27,5 @@ anim_speed 3
 client_anim_random 1
 glow_radius 4
 no_pick 1
-color_fg yellow
+magicmap yellow
 end

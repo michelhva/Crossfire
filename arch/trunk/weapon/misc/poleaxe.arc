@@ -3,7 +3,7 @@ nrof 1
 last_sp 12
 type 15
 face poleaxe.111
-color_fg grey
+magicmap grey
 material 18
 dam 18
 weight 35500

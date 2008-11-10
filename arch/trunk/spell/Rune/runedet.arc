@@ -3,7 +3,7 @@ name trap
 type 98
 face cancellation.111
 speed 1
-color_fg red
+magicmap red
 move_type fly_low
 is_used_up 1
 no_pick 1

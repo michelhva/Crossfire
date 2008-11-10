@@ -2,7 +2,7 @@ Object improve_enchantment
 name Enchant Weapon
 face scroll.111
 race scrolls
-color_fg white
+magicmap white
 nrof 1
 type 124
 material 1

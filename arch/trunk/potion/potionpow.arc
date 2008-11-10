@@ -2,7 +2,7 @@ Object potionpow
 nrof 1
 name potion of power
 face potionpow.111
-color_fg red
+magicmap red
 type 5
 level 1
 material 4

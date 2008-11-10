@@ -2,7 +2,7 @@ Object bronzebar
 name bronze bar
 race gold and jewels
 face bronzebar.111
-color_fg orange
+magicmap orange
 nrof 1
 type 73
 material 2

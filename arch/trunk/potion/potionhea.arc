@@ -2,7 +2,7 @@ Object potion_heal
 name healing potion
 nrof 1
 face potionhea.111
-color_fg red
+magicmap red
 type 5
 level 1
 material 4

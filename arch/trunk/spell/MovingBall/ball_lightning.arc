@@ -8,7 +8,7 @@ ball_lightning.222
 ball_lightning.333
 ball_lightning.444
 mina
-color_fg yellow
+magicmap yellow
 is_used_up 1
 is_animated 1
 glow_radius 2

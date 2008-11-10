@@ -16,5 +16,5 @@ bomb.114
 mina
 speed 0.2
 weight 4000
-color_fg black
+magicmap black
 end

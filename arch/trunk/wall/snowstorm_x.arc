@@ -4,7 +4,7 @@ type 62
 activate_on_push 1
 activate_on_release 1
 face icestorm.113
-color_fg grey
+magicmap grey
 speed -0.02
 ac 3
 exp 50

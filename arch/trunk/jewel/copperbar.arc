@@ -2,7 +2,7 @@ Object copperbar
 name copper bar
 race gold and jewels
 face copperbar.111
-color_fg orange
+magicmap orange
 nrof 1
 type 73
 material 2

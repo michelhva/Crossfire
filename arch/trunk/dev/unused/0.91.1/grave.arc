@@ -2,7 +2,7 @@ Object grave_open
 name the open grave
 face grave_open.111
 no_pick 1
-color_fg brown
+magicmap brown
 end
 Object grave_close
 name the empty grave
@@ -14,7 +14,7 @@ face grave_clos.111
 type 20
 move_block all
 no_pick 1
-color_fg green
+magicmap green
 end
 Object shovel_2
 name shovel

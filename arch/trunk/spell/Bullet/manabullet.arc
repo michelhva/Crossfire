@@ -3,7 +3,7 @@ other_arch manaball
 type 102
 subtype 5
 face snowball.111
-color_fg white
+magicmap white
 anim
 snowball.111
 snowball.111

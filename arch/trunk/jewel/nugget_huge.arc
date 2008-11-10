@@ -6,7 +6,7 @@ nrof 1
 material 2
 materialname gold
 type 73
-color_fg orange
+magicmap orange
 value 177777
 weight 700000000
 name_pl huge gold nuggets

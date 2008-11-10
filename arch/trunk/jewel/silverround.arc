@@ -3,7 +3,7 @@ name silver round
 name_pl silver rounds
 race gold and jewels
 face silverround.111
-color_fg grey
+magicmap grey
 nrof 1
 type 60
 material 2

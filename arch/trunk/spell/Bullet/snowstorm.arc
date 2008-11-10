@@ -2,7 +2,7 @@ Object snowstorm
 type 102
 subtype 6
 face icestorm.111
-color_fg light_blue
+magicmap light_blue
 anim
 icestorm.111
 icestorm.112

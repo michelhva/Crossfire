@@ -3,7 +3,7 @@ name lightning
 type 102
 subtype 4
 face lightning.111
-color_fg dark_orange
+magicmap dark_orange
 anim
 lightning.111
 lightning.111

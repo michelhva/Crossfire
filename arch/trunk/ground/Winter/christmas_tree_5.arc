@@ -7,7 +7,7 @@ move_slow_penalty 1
 is_wooded 1
 visibility 100
 glow_radius 2
-color_fg brown
+magicmap brown
 end
 
 
@@ -20,5 +20,5 @@ move_slow_penalty 1
 is_wooded 1
 visibility 100
 glow_radius 2
-color_fg brown
+magicmap brown
 end

@@ -4,7 +4,7 @@ name_pl ores
 title of nothing
 race gold and jewels
 face oresmall_y.111
-color_fg orange
+magicmap orange
 nrof 1
 type 73
 material 64

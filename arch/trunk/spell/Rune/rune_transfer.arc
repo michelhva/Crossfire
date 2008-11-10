@@ -12,7 +12,7 @@ rune_transfer.111
 rune_transfer.111
 mina
 level 1
-color_fg light_blue
+magicmap light_blue
 is_animated 0
 invisible 1
 no_pick 1

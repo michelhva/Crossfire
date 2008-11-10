@@ -5,7 +5,7 @@ type 14
 nrof 1
 material 16
 face reflexbow.111
-color_fg brown
+magicmap brown
 dam 23
 weight 6000
 value 25000
@@ -26,7 +26,7 @@ nrof 1
 material 16
 materialname ivory
 face reflexbow_bone.111
-color_fg brown
+magicmap brown
 dam 23
 weight 6000
 value 65000
@@ -49,7 +49,7 @@ nrof 1
 material 0
 materialname bone
 face reflexbow_bone.111
-color_fg brown
+magicmap brown
 dam 32
 weight 8000
 value 10000

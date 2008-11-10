@@ -10,7 +10,7 @@ power_crystal.114
 mina
 type 156
 weight 3
-color_fg white
+magicmap white
 value 10000000
 material 64
 is_animated 1

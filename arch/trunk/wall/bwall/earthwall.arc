@@ -1,7 +1,7 @@
 Object earthwall
 race wall
 face earthwall.111
-color_fg grey
+magicmap grey
 anim
 earthwall.111
 earthwall.112

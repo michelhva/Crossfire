@@ -10,7 +10,7 @@ wwall_w_0.115
 wwall_w_0.116
 wwall_w_0.117
 mina
-color_fg brown
+magicmap brown
 is_animated 0
 tear_down 1
 hp 200
@@ -42,7 +42,7 @@ wwall_w_1.115
 wwall_w_1.116
 wwall_w_1.117
 mina
-color_fg brown
+magicmap brown
 is_animated 0
 tear_down 1
 hp 200

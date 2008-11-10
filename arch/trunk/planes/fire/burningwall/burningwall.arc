@@ -8,7 +8,7 @@ mina
 is_animated 1
 anim_speed 5
 client_anim_random 1
-color_fg brown
+magicmap brown
 move_block all
 no_pick 1
 blocksview 1
@@ -24,7 +24,7 @@ mina
 is_animated 1
 anim_speed 5
 client_anim_random 1
-color_fg brown
+magicmap brown
 move_block all
 no_pick 1
 blocksview 1
@@ -40,7 +40,7 @@ mina
 is_animated 1
 anim_speed 5
 client_anim_random 1
-color_fg brown
+magicmap brown
 move_block all
 no_pick 1
 blocksview 1
@@ -56,7 +56,7 @@ mina
 is_animated 1
 anim_speed 5
 client_anim_random 1
-color_fg brown
+magicmap brown
 move_block all
 no_pick 1
 blocksview 1
@@ -72,7 +72,7 @@ mina
 is_animated 1
 anim_speed 5
 client_anim_random 1
-color_fg brown
+magicmap brown
 move_block all
 no_pick 1
 blocksview 1
@@ -88,7 +88,7 @@ mina
 is_animated 1
 anim_speed 5
 client_anim_random 1
-color_fg brown
+magicmap brown
 move_block all
 no_pick 1
 blocksview 1
@@ -104,7 +104,7 @@ mina
 is_animated 1
 anim_speed 5
 client_anim_random 1
-color_fg brown
+magicmap brown
 move_block all
 no_pick 1
 blocksview 1
@@ -120,7 +120,7 @@ mina
 is_animated 1
 anim_speed 5
 client_anim_random 1
-color_fg brown
+magicmap brown
 move_block all
 no_pick 1
 blocksview 1
@@ -136,7 +136,7 @@ mina
 is_animated 1
 anim_speed 5
 client_anim_random 1
-color_fg brown
+magicmap brown
 move_block all
 no_pick 1
 blocksview 1
@@ -152,7 +152,7 @@ mina
 is_animated 1
 anim_speed 5
 client_anim_random 1
-color_fg brown
+magicmap brown
 move_block all
 no_pick 1
 blocksview 1
@@ -168,7 +168,7 @@ mina
 is_animated 1
 anim_speed 5
 client_anim_random 1
-color_fg brown
+magicmap brown
 move_block all
 no_pick 1
 blocksview 1
@@ -184,7 +184,7 @@ mina
 is_animated 1
 anim_speed 5
 client_anim_random 1
-color_fg brown
+magicmap brown
 move_block all
 no_pick 1
 blocksview 1
@@ -200,7 +200,7 @@ mina
 is_animated 1
 anim_speed 5
 client_anim_random 1
-color_fg brown
+magicmap brown
 move_block all
 no_pick 1
 blocksview 1
@@ -216,7 +216,7 @@ mina
 is_animated 1
 anim_speed 5
 client_anim_random 1
-color_fg brown
+magicmap brown
 move_block all
 no_pick 1
 blocksview 1
@@ -232,7 +232,7 @@ mina
 is_animated 1
 anim_speed 5
 client_anim_random 1
-color_fg brown
+magicmap brown
 move_block all
 no_pick 1
 blocksview 1
@@ -248,7 +248,7 @@ mina
 is_animated 1
 anim_speed 5
 client_anim_random 1
-color_fg brown
+magicmap brown
 move_block all
 no_pick 1
 blocksview 1

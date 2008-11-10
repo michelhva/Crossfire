@@ -5,7 +5,7 @@ subtype 7
 level 1
 move_on walk fly_low
 face sparkshower.111
-color_fg red
+magicmap red
 anim
 sparkshower.111
 sparkshower.112

@@ -4,7 +4,7 @@ type 67
 race /terrain/plains
 move_on walk
 is_floor 1
-color_fg green
+magicmap green
 no_pick 1
 move_slow walk
 move_slow_penalty 1
@@ -19,7 +19,7 @@ face grass.111
 type 67
 move_on walk
 is_floor 1
-color_fg green
+magicmap green
 no_pick 1
 move_slow walk
 move_slow_penalty 1

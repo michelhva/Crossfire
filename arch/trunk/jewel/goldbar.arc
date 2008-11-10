@@ -2,7 +2,7 @@ Object goldbar
 name gold bar
 race gold and jewels
 face goldbar.111
-color_fg orange
+magicmap orange
 nrof 1
 type 60
 material 2

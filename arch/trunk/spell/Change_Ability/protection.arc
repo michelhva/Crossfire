@@ -13,7 +13,7 @@ protection.115
 protection.116
 protection.117
 mina
-color_fg blue
+magicmap blue
 speed 1
 is_used_up 1
 no_pick 1

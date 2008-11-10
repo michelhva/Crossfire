@@ -4,7 +4,7 @@ face cmarsh.111
 type 67
 race /terrain/swamp
 move_on walk
-color_fg green
+magicmap green
 no_pick 1
 is_water 1
 move_slow walk

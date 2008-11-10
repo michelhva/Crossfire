@@ -9,7 +9,7 @@ negaball.222
 negaball.333
 negaball.444
 mina
-color_fg black
+magicmap black
 is_used_up 1
 is_animated 1
 glow_radius 1

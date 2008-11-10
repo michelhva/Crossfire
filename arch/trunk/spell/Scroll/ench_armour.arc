@@ -2,7 +2,7 @@ Object ench_armour
 name Enchant Armour
 race scrolls
 face scroll.111
-color_fg white
+magicmap white
 nrof 1
 type 123
 material 1

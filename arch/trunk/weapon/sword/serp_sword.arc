@@ -4,7 +4,7 @@ name Serpentman sword
 last_sp 8
 type 15
 face serp_sword.111
-color_fg grey
+magicmap grey
 material 32
 dam 6
 can_cut 1

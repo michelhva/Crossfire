@@ -2,7 +2,7 @@ Object goldcoin
 name gold coin
 race gold and jewels
 face goldcoin.111
-color_fg yellow
+magicmap yellow
 nrof 1
 type 36
 material 2

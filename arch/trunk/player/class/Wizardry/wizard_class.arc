@@ -4,7 +4,7 @@ anim_suffix class_wizard
 name wizard
 randomitems wizard_class_items
 face wizard.171
-color_fg black
+magicmap black
 anim
 wizard.111
 wizard.131

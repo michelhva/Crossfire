@@ -13,7 +13,7 @@ rune_bomb.111
 rune_bomb.111
 mina
 level 1
-color_fg orange
+magicmap orange
 is_animated 0
 invisible 1
 no_pick 1

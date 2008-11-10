@@ -13,7 +13,7 @@ evil_ice.112
 evil_ice.113
 evil_ice.114
 mina
-color_fg blue
+magicmap blue
 speed 0.2
 no_pick 1
 attacktype 16

@@ -6,7 +6,7 @@ charm_aura.111
 charm_aura.112
 charm_aura.113
 mina
-color_fg red
+magicmap red
 speed 1
 is_used_up 1
 no_pick 1

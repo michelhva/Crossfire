@@ -3,7 +3,7 @@
 Object dungeon_magic
 name no_spells
 face no_spells.111
-color_fg red
+magicmap red
 damned 1
 no_pick 1
 no_magic 1

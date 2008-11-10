@@ -5,7 +5,7 @@ subtype 7
 level 1
 move_on walk fly_low
 face icestorm.111
-color_fg light_blue
+magicmap light_blue
 anim
 icestorm.111
 icestorm.112

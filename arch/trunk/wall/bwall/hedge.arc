@@ -1,6 +1,6 @@
 Object hedge
 face hedge.111
-color_fg green
+magicmap green
 anim
 hedge.111
 hedge.112

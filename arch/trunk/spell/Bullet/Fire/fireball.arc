@@ -2,7 +2,7 @@ Object fireball
 type 102
 subtype 6
 face fireball.111
-color_fg red
+magicmap red
 anim
 fireball.111
 fireball.112

@@ -4,7 +4,7 @@ anim
 wand.112
 wand.113
 mina
-color_fg brown
+magicmap brown
 anim_speed 10
 client_anim_random 1
 type 109

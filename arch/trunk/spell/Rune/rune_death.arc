@@ -19,5 +19,5 @@ move_on walk
 attacktype 131072
 dam 400
 Cha 20
-color_fg black
+magicmap black
 end

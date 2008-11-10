@@ -1,7 +1,7 @@
 Object bag_popcorn
 name bag of popcorn
 face bag_popcorn.111
-color_fg red
+magicmap red
 food 50
 nrof 1
 type 6

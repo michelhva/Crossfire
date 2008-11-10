@@ -22,7 +22,7 @@ material 64
 materialname salt
 type 73
 value 10
-color_fg white
+magicmap white
 weight 500
 name_pl piles
 client_type 641
@@ -36,7 +36,7 @@ material 64
 materialname sulphur
 type 73
 value 15
-color_fg yellow
+magicmap yellow
 resist_fire -100
 
 resist_acid 100
@@ -55,7 +55,7 @@ material 64
 materialname graphite
 type 73
 value 1
-color_fg black
+magicmap black
 resist_fire -100
 resist_electricity -100
 resist_acid 100
@@ -73,7 +73,7 @@ material 64
 materialname phosphorus
 type 73
 value 45
-color_fg grey
+magicmap grey
 resist_fire -100
 resist_electricity -100
 
@@ -92,7 +92,7 @@ material 64
 materialname cinnabar
 type 73
 value 70
-color_fg red
+magicmap red
 weight 3000
 name_pl piles
 client_type 641
@@ -106,7 +106,7 @@ material 66
 materialname pyrite
 type 73
 value 8
-color_fg grey
+magicmap grey
 weight 2000
 name_pl piles
 client_type 641
@@ -120,7 +120,7 @@ material 64
 materialname gypsum
 type 73
 value 9
-color_fg blue
+magicmap blue
 resist_acid 100
 
 weight 1500

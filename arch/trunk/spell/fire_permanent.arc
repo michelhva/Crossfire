@@ -14,6 +14,6 @@ burnout.119
 mina
 anim_speed 1
 client_anim_random 1
-color_fg red
+magicmap red
 no_pick 1
 end

@@ -2,7 +2,7 @@ Object silvercoin
 name silver coin
 race gold and jewels
 face silvercoin.111
-color_fg grey
+magicmap grey
 nrof 1
 type 36
 material 2

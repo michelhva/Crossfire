@@ -10,6 +10,6 @@ mina
 move_on walk
 anim_speed 2
 client_anim_random 1
-color_fg grey
+magicmap grey
 no_pick 1
 end

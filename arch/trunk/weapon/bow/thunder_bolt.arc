@@ -13,7 +13,7 @@ thunder_bolt.161
 thunder_bolt.171
 thunder_bolt.181
 mina
-color_fg dark_orange
+magicmap dark_orange
 is_animated 0
 food 10
 dam 100

@@ -7,7 +7,7 @@ anim
 deep_swamp.111
 deep_swamp.112
 mina
-color_fg green
+magicmap green
 no_pick 1
 is_water 1
 move_on walk

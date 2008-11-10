@@ -7,5 +7,5 @@ level 0
 is_animated 0
 no_pick 1
 move_on walk
-color_fg black
+magicmap black
 end

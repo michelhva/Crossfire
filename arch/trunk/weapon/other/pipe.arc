@@ -4,7 +4,7 @@ name pipe
 last_sp 8
 type 15
 face pipe.111
-color_fg grey
+magicmap grey
 material 2
 weapontype 8
 dam 5

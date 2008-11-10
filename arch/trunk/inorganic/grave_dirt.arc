@@ -3,7 +3,7 @@ nrof 1
 name graveyard dirt
 face dirt.111
 type 73
-color_fg brown
+magicmap brown
 material 64
 weight 100
 value 1

@@ -8,7 +8,7 @@ wc -1
 food 1
 name thorns
 face thorns.111
-color_fg brown
+magicmap brown
 no_pick 1
 move_on walk
 is_wooded 1

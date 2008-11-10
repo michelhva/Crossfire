@@ -3,7 +3,7 @@ name high mountains
 face mountain4.111
 type 67
 race /terrain/mountain
-color_fg white
+magicmap white
 no_pick 1
 move_block all
 blocksview 1

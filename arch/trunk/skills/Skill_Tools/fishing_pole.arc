@@ -1,7 +1,7 @@
 Object fishing_pole
 name fishing pole
 face fishing_pole.111
-color_fg brown
+magicmap brown
 type 74
 skill fishing
 material 20

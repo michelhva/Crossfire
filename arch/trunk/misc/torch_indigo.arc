@@ -6,7 +6,7 @@ anim
 torch_indigo.111
 torch_indigo.112
 mina
-color_fg blue
+magicmap blue
 material 144
 value 0
 weight 3000

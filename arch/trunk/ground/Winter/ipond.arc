@@ -4,7 +4,7 @@ type 67
 race /terrain/plains
 move_on walk
 face ipond.111
-color_fg blue
+magicmap blue
 no_pick 1
 is_floor 1
 

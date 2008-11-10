@@ -5,7 +5,7 @@ name long sword
 last_sp 8
 type 15
 face b_sword_1.111
-color_fg blue
+magicmap blue
 material 2
 materialname bronze
 dam 4

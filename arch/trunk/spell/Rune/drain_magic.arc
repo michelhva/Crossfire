@@ -12,7 +12,7 @@ drain_magic.111
 drain_magic.111
 mina
 level 1
-color_fg grey
+magicmap grey
 is_animated 0
 invisible 1
 no_pick 1

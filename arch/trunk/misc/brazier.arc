@@ -11,5 +11,5 @@ client_anim_random 1
 glow_radius 3
 no_pick 1
 move_block all
-color_fg yellow
+magicmap yellow
 end

@@ -2,7 +2,7 @@ Object warlock_class
 name warlock
 randomitems warlock_class_items
 face mage.151
-color_fg black
+magicmap black
 anim_suffix class_warlock
 anim
 mage.111

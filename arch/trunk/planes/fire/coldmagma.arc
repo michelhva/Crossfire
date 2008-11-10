@@ -22,7 +22,7 @@ move_on walk
 is_floor 1
 is_animated 1
 speed 0.15
-color_fg black
+magicmap black
 no_pick 1
 attacktype 4
 dam 75
