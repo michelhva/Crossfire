@@ -1,15 +1,9 @@
 Object s_wyvern
 name shadow wyvern
 face s_wyvern.x71
+animation s_wyvern
 race shadow
 randomitems s_wyvern
-anim
-facings 2
-s_wyvern.x31
-s_wyvern.x32
-s_wyvern.x71
-s_wyvern.x72
-mina
 monster 1
 move_type walk
 sleep 1
@@ -45,20 +39,12 @@ Pow 5
 weight 1000
 run_away 5
 attack_movement 3
-color_fg black
 end
 More
 Object s_wyvern_2
 name shadow wyvern
 face s_wyvern.x71
-color_fg black
-anim
-facings 2
-s_wyvern.x31
-s_wyvern.x32
-s_wyvern.x71
-s_wyvern.x72
-mina
+animation s_wyvern
 monster 1
 move_type walk
 x 1
