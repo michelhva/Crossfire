@@ -1,14 +1,8 @@
 Object g_worm
 name Giant Worm
 face g_worm.x31
+animation g_worm
 race animal
-anim
-facings 2
-g_worm.x31
-g_worm.x32
-g_worm.x71
-g_worm.x72
-mina
 attacktype 1025
 monster 1
 move_type walk
@@ -45,52 +39,29 @@ weight 1800000
 can_cast_spell 1
 can_see_in_dark 1
 see_invisible 1
-color_fg green
 end
 More
 Object g_worm_2
 name Giant Worm
 face g_worm.x31
-anim
-facings 2
-g_worm.x31
-g_worm.x32
-g_worm.x71
-g_worm.x72
-mina
+animation g_worm
 x 1
 alive 1
-color_fg green
 end
 More
 Object g_worm_3
 name Giant Worm
 face g_worm.x31
-anim
-facings 2
-g_worm.x31
-g_worm.x32
-g_worm.x71
-g_worm.x72
-mina
+animation g_worm
 y 1
 alive 1
-color_fg green
 end
 More
 Object g_worm_4
 name Giant Worm
 face g_worm.x31
-anim
-facings 2
-g_worm.x31
-g_worm.x32
-g_worm.x71
-g_worm.x72
-mina
+animation g_worm
 x 1
 y 1
 alive 1
-color_fg green
 end
-
