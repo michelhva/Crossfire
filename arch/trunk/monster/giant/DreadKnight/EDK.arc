@@ -3,41 +3,7 @@ race giant
 name Elite Dread Knight
 randomitems EDK
 face Bk.x11
-anim
-facings 2
-Bk.x11
-Bk.x12
-Bk.x13
-Bk.x14
-Bk.x11
-Bk.x12
-Bk.x13
-Bk.x14
-Bk.x11
-Bk.x12
-Bk.x13
-Bk.x14
-Bk.x11
-Bk.x12
-Bk.x15
-Bk.x14
-Bk.x71
-Bk.x72
-Bk.x73
-Bk.x74
-Bk.x71
-Bk.x72
-Bk.x73
-Bk.x74
-Bk.x71
-Bk.x72
-Bk.x73
-Bk.x74
-Bk.x71
-Bk.x72
-Bk.x75
-Bk.x74
-mina
+animation EDK
 exp 500000
 hp 6000
 speed 0.40
@@ -82,7 +48,6 @@ attacktype 5
 ac -15
 wc -35
 dam 45
-color_fg black
 body_skill 1
 body_finger 2
 body_torso 1
@@ -99,221 +64,46 @@ More
 Object EDK3
 name Elite Dread Knight
 face Bk.x11
-anim
-facings 2
-Bk.x11
-Bk.x12
-Bk.x13
-Bk.x14
-Bk.x11
-Bk.x12
-Bk.x13
-Bk.x14
-Bk.x11
-Bk.x12
-Bk.x13
-Bk.x14
-Bk.x11
-Bk.x12
-Bk.x15
-Bk.x14
-Bk.x71
-Bk.x72
-Bk.x73
-Bk.x74
-Bk.x71
-Bk.x72
-Bk.x73
-Bk.x74
-Bk.x71
-Bk.x72
-Bk.x73
-Bk.x74
-Bk.x71
-Bk.x72
-Bk.x75
-Bk.x74
-mina
+animation EDK
 alive 1
 no_pick 1
 y 1
-color_fg black
 end
 More
 Object EDK5
 name Elite Dread Knight
 face Bk.x11
-anim
-facings 2
-Bk.x11
-Bk.x12
-Bk.x13
-Bk.x14
-Bk.x11
-Bk.x12
-Bk.x13
-Bk.x14
-Bk.x11
-Bk.x12
-Bk.x13
-Bk.x14
-Bk.x11
-Bk.x12
-Bk.x15
-Bk.x14
-Bk.x71
-Bk.x72
-Bk.x73
-Bk.x74
-Bk.x71
-Bk.x72
-Bk.x73
-Bk.x74
-Bk.x71
-Bk.x72
-Bk.x73
-Bk.x74
-Bk.x71
-Bk.x72
-Bk.x75
-Bk.x74
-mina
+animation EDK
 alive 1
 no_pick 1
 y 2
-color_fg black
 end
 More
 Object EDK2
 name Elite Dread Knight
 face Bk.x11
-anim
-facings 2
-Bk.x11
-Bk.x12
-Bk.x13
-Bk.x14
-Bk.x11
-Bk.x12
-Bk.x13
-Bk.x14
-Bk.x11
-Bk.x12
-Bk.x13
-Bk.x14
-Bk.x11
-Bk.x12
-Bk.x15
-Bk.x14
-Bk.x71
-Bk.x72
-Bk.x73
-Bk.x74
-Bk.x71
-Bk.x72
-Bk.x73
-Bk.x74
-Bk.x71
-Bk.x72
-Bk.x73
-Bk.x74
-Bk.x71
-Bk.x72
-Bk.x75
-Bk.x74
-mina
+animation EDK
 alive 1
 no_pick 1
 x 1
-color_fg black
 end
 More
 Object EDK4
 name Elite Dread Knight
 face Bk.x11
-anim
-facings 2
-Bk.x11
-Bk.x12
-Bk.x13
-Bk.x14
-Bk.x11
-Bk.x12
-Bk.x13
-Bk.x14
-Bk.x11
-Bk.x12
-Bk.x13
-Bk.x14
-Bk.x11
-Bk.x12
-Bk.x15
-Bk.x14
-Bk.x71
-Bk.x72
-Bk.x73
-Bk.x74
-Bk.x71
-Bk.x72
-Bk.x73
-Bk.x74
-Bk.x71
-Bk.x72
-Bk.x73
-Bk.x74
-Bk.x71
-Bk.x72
-Bk.x75
-Bk.x74
-mina
+animation EDK
 alive 1
 no_pick 1
 x 1
 y 1
-color_fg black
 end
 More
 Object EDK6
 name Elite Dread Knight
 face Bk.x11
-anim
-facings 2
-Bk.x11
-Bk.x12
-Bk.x13
-Bk.x14
-Bk.x11
-Bk.x12
-Bk.x13
-Bk.x14
-Bk.x11
-Bk.x12
-Bk.x13
-Bk.x14
-Bk.x11
-Bk.x12
-Bk.x15
-Bk.x14
-Bk.x71
-Bk.x72
-Bk.x73
-Bk.x74
-Bk.x71
-Bk.x72
-Bk.x73
-Bk.x74
-Bk.x71
-Bk.x72
-Bk.x73
-Bk.x74
-Bk.x71
-Bk.x72
-Bk.x75
-Bk.x74
-mina
+animation EDK
 alive 1
 no_pick 1
 x 1
 y 2
-color_fg black
 end
