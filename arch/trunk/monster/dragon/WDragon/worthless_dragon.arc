@@ -7,18 +7,7 @@ move_type walk
 sleep 1
 Wis 20
 face worthless_dragon.x71
-anim
-facings 2
-worthless_dragon.x71
-worthless_dragon.x72
-worthless_dragon.x73
-worthless_dragon.x72
-worthless_dragon.x31
-worthless_dragon.x32
-worthless_dragon.x33
-worthless_dragon.x32
-mina
-color_fg blue
+animation worthless_dragon
 level 29
 Con 11
 Pow 26
@@ -42,122 +31,61 @@ no_pick 1
 speed -0.4
 weight 400000
 run_away 3
-magicmap blue
 end
 More
 Object big_worthless_dragon_2
 name worthless_dragon
 face worthless_dragon.x71
-anim
-facings 2
-worthless_dragon.x71
-worthless_dragon.x72
-worthless_dragon.x73
-worthless_dragon.x72
-worthless_dragon.x31
-worthless_dragon.x32
-worthless_dragon.x33
-worthless_dragon.x32
-mina
-color_fg blue
+animation worthless_dragon
 monster 1
 move_type walk
 alive 1
 x 1
 weight 4000000
-magicmap blue
 end
 More
 Object big_worthless_dragon_3
 name worthless_dragon
 face worthless_dragon.x71
-anim
-facings 2
-worthless_dragon.x71
-worthless_dragon.x72
-worthless_dragon.x73
-worthless_dragon.x72
-worthless_dragon.x31
-worthless_dragon.x32
-worthless_dragon.x33
-worthless_dragon.x32
-mina
-color_fg blue
+animation worthless_dragon
 monster 1
 move_type walk
 alive 1
 x 2
 weight 4000000
-magicmap blue
 end
 More
 Object big_worthless_dragon_4
 name worthless_dragon
 face worthless_dragon.x71
-anim
-facings 2
-worthless_dragon.x71
-worthless_dragon.x72
-worthless_dragon.x73
-worthless_dragon.x72
-worthless_dragon.x31
-worthless_dragon.x32
-worthless_dragon.x33
-worthless_dragon.x32
-mina
-color_fg blue
+animation worthless_dragon
 monster 1
 move_type walk
 alive 1
 y 1
 weight 4000000
-magicmap blue
 end
 More
 Object big_worthless_dragon_5
 name worthless_dragon
 face worthless_dragon.x71
-anim
-facings 2
-worthless_dragon.x71
-worthless_dragon.x72
-worthless_dragon.x73
-worthless_dragon.x72
-worthless_dragon.x31
-worthless_dragon.x32
-worthless_dragon.x33
-worthless_dragon.x32
-mina
-color_fg blue
+animation worthless_dragon
 monster 1
 move_type walk
 alive 1
 x 1
 y 1
 weight 4000000
-magicmap blue
 end
 More
 Object big_worthless_dragon_6
 name worthless_dragon
 face worthless_dragon.x71
-anim
-facings 2
-worthless_dragon.x71
-worthless_dragon.x72
-worthless_dragon.x73
-worthless_dragon.x72
-worthless_dragon.x31
-worthless_dragon.x32
-worthless_dragon.x33
-worthless_dragon.x32
-mina
-color_fg blue
+animation worthless_dragon
 monster 1
 move_type walk
 alive 1
 x 2
 y 1
 weight 4000000
-magicmap blue
 end
