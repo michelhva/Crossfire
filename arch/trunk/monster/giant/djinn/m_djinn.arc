@@ -3,11 +3,11 @@ race faerie
 name minor djinn
 randomitems minor_djinn
 face djinn.x31
+animation djinn
 monster 1
 move_type walk
 sleep 1
 Wis 15
-animation djinn
 level 40
 Con 10
 Int 10
@@ -64,7 +64,7 @@ More
 Object minor_djinn_2
 name minor djinn
 face djinn.x31
-animation djinn_2
+animation djinn
 monster 1
 move_type walk
 alive 1

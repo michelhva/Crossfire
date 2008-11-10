@@ -3,17 +3,11 @@ race faerie
 name Major djinn
 randomitems djinn
 face djinn.x31
+animation djinn
 monster 1
 move_type walk
 sleep 1
 Wis 25
-anim
-facings 2
-djinn.x31
-djinn.x32
-djinn.x71
-djinn.x72
-mina
 level 40
 Con 10
 Int 30
@@ -68,13 +62,7 @@ More
 Object djinn_2
 name Major djinn
 face djinn.x31
-anim
-facings 2
-djinn.x31
-djinn.x32
-djinn.x71
-djinn.x72
-mina
+animation djinn
 monster 1
 move_type walk
 alive 1
