@@ -1,12 +1,8 @@
 Object purple_worm
 name Purple Worm
 face purple_worm.x31
+animation purple_worm
 race animal
-anim
-facings 2
-purple_worm.x31
-purple_worm.x71
-mina
 attacktype 1025
 monster 1
 sleep 1
@@ -42,46 +38,29 @@ weight 1800000
 can_cast_spell 1
 can_see_in_dark 1
 see_invisible 1
-color_fg black
 end
 More
 Object purple_worm_2
 name Purple Worm
 face purple_worm.x31
-anim
-facings 2
-purple_worm.x31
-purple_worm.x71
-mina
+animation purple_worm
 x 1
 alive 1
-color_fg black
 end
 More
 Object purple_worm_3
 name Purple Worm
 face purple_worm.x31
-anim
-facings 2
-purple_worm.x31
-purple_worm.x71
-mina
+animation purple_worm
 y 1
 alive 1
-color_fg black
 end
 More
 Object purple_worm_4
 name Purple Worm
 face purple_worm.x31
-anim
-facings 2
-purple_worm.x31
-purple_worm.x71
-mina
+animation purple_worm
 x 1
 y 1
 alive 1
-color_fg black
 end
-
