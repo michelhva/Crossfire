@@ -31,7 +31,7 @@ More
 Object fire_serpent_2
 name fire serpent
 face serpent.x31
-animation serpent_2
+animation serpent
 monster 1
 move_type walk
 alive 1
