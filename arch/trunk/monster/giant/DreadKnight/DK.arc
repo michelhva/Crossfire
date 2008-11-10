@@ -3,17 +3,7 @@ race giant
 name Dread Knight
 randomitems DK
 face Bk.x11
-anim
-facings 2
-Bk.x11
-Bk.x12
-Bk.x13
-Bk.x14
-Bk.x71
-Bk.x72
-Bk.x73
-Bk.x74
-mina
+animation DK
 exp 200000
 hp 4500
 speed 0.32
@@ -56,7 +46,6 @@ resist_fear 100
 ac -15
 wc -35
 dam 30
-color_fg black
 body_skill 1
 body_finger 2
 body_torso 1
@@ -73,101 +62,46 @@ More
 Object DK3
 name Dread Knight
 face Bk.x11
-anim
-facings 2
-Bk.x11
-Bk.x12
-Bk.x13
-Bk.x14
-Bk.x71
-Bk.x72
-Bk.x73
-Bk.x74
-mina
+animation DK
 alive 1
 no_pick 1
 y 1
-color_fg black
 end
 More
 Object DK5
 name Dread Knight
 face Bk.x11
-anim
-facings 2
-Bk.x11
-Bk.x12
-Bk.x13
-Bk.x14
-Bk.x71
-Bk.x72
-Bk.x73
-Bk.x74
-mina
+animation DK
 alive 1
 no_pick 1
 y 2
-color_fg black
 end
 More
 Object DK2
 name Dread Knight
 face Bk.x11
-anim
-facings 2
-Bk.x11
-Bk.x12
-Bk.x13
-Bk.x14
-Bk.x71
-Bk.x72
-Bk.x73
-Bk.x74
-mina
+animation DK
 alive 1
 no_pick 1
 x 1
-color_fg black
 end
 More
 Object DK4
 name Dread Knight
 face Bk.x11
-anim
-facings 2
-Bk.x11
-Bk.x12
-Bk.x13
-Bk.x14
-Bk.x71
-Bk.x72
-Bk.x73
-Bk.x74
-mina
+animation DK
 alive 1
 no_pick 1
 x 1
 y 1
-color_fg black
 end
 More
 Object DK6
 name Dread Knight
 face Bk.x11
-anim
-facings 2
-Bk.x11
-Bk.x12
-Bk.x13
-Bk.x14
-Bk.x71
-Bk.x72
-Bk.x73
-Bk.x74
-mina
+animation DK
 alive 1
 no_pick 1
 x 1
 y 2
-color_fg black
 end
