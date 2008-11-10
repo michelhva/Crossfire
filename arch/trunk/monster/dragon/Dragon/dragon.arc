@@ -7,17 +7,7 @@ move_type walk
 sleep 1
 Wis 20
 face dragon.x71
-anim
-facings 2
-dragon.x71
-dragon.x72
-dragon.x73
-dragon.x74
-dragon.x31
-dragon.x32
-dragon.x33
-dragon.x34
-mina
+animation big_dragon
 level 29
 Con 11
 Pow 26
@@ -42,129 +32,61 @@ no_pick 1
 speed -0.4
 weight 400000
 run_away 3
-magicmap red
 end
 More
 Object big_dragon_2
 name dragon
 face dragon.x71
-anim
-facings 2
-dragon.x71
-dragon.x72
-dragon.x73
-dragon.x74
-dragon.x31
-dragon.x32
-dragon.x33
-dragon.x34
-mina
+animation big_dragon
 monster 1
 move_type walk
 alive 1
 x 1
 weight 4000000
-magicmap red
 end
 More
 Object big_dragon_3
 name dragon
 face dragon.x71
-anim
-facings 2
-dragon.x71
-dragon.x72
-dragon.x73
-dragon.x74
-dragon.x31
-dragon.x32
-dragon.x33
-dragon.x34
-mina
+animation big_dragon
 monster 1
 move_type walk
 alive 1
 x 2
 weight 4000000
-magicmap red
 end
 More
 Object big_dragon_4
 name dragon
 face dragon.x71
-anim
-facings 2
-dragon.x71
-dragon.x72
-dragon.x73
-dragon.x74
-dragon.x31
-dragon.x32
-dragon.x33
-dragon.x34
-mina
+animation big_dragon
 monster 1
 move_type walk
 alive 1
 y 1
 weight 4000000
-magicmap red
 end
 More
 Object big_dragon_5
 name dragon
 face dragon.x71
-anim
-facings 2
-dragon.x71
-dragon.x72
-dragon.x73
-dragon.x74
-dragon.x31
-dragon.x32
-dragon.x33
-dragon.x34
-mina
+animation big_dragon
 monster 1
 move_type walk
 alive 1
 x 1
 y 1
 weight 4000000
-magicmap red
 end
 More
 Object big_dragon_6
 name dragon
 face dragon.x71
-anim
-facings 2
-dragon.x71
-dragon.x72
-dragon.x73
-dragon.x74
-dragon.x31
-dragon.x32
-dragon.x33
-dragon.x34
-mina
+animation big_dragon
 monster 1
 move_type walk
 alive 1
 x 2
 y 1
 weight 4000000
-magicmap red
-end
-
-Object big_dragon_spellcasting
-anim
-dragon_spellcasting.x71
-dragon_spellcasting.x72
-dragon_spellcasting.x73
-dragon_spellcasting.x31
-dragon_spellcasting.x32
-dragon_spellcasting.x33
-facings 2
-mina
 end
