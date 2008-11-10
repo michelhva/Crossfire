@@ -3,12 +3,7 @@ name Balrog
 randomitems Balrog
 race demon
 face jessyb.x11
-anim
-jessyb.x11
-jessyb.x12
-jessyb.x13
-jessyb.x12
-mina
+animation jessyb
 attacktype 1029
 resist_magic 80
 resist_physical 80
@@ -72,12 +67,7 @@ More
 Object Balrog_2
 name Balrog
 face jessyb.x11
-anim
-jessyb.x11
-jessyb.x12
-jessyb.x13
-jessyb.x12
-mina
+animation jessyb
 monster 1
 move_type walk
 alive 1
@@ -89,12 +79,7 @@ More
 Object Balrog_3
 name Balrog
 face jessyb.x11
-anim
-jessyb.x11
-jessyb.x12
-jessyb.x13
-jessyb.x12
-mina
+animation jessyb
 monster 1
 move_type walk
 alive 1
@@ -106,12 +91,7 @@ More
 Object Balrog_4
 name Balrog
 face jessyb.x11
-anim
-jessyb.x11
-jessyb.x12
-jessyb.x13
-jessyb.x12
-mina
+animation jessyb
 monster 1
 move_type walk
 alive 1
@@ -123,12 +103,7 @@ More
 Object Balrog_5
 name Balrog
 face jessyb.x11
-anim
-jessyb.x11
-jessyb.x12
-jessyb.x13
-jessyb.x12
-mina
+animation jessyb
 monster 1
 move_type walk
 alive 1
@@ -140,12 +115,7 @@ More
 Object Balrog_6
 name Balrog
 face jessyb.x11
-anim
-jessyb.x11
-jessyb.x12
-jessyb.x13
-jessyb.x12
-mina
+animation jessyb
 monster 1
 move_type walk
 alive 1
@@ -158,12 +128,7 @@ More
 Object Balrog_7
 name Balrog
 face jessyb.x11
-anim
-jessyb.x11
-jessyb.x12
-jessyb.x13
-jessyb.x12
-mina
+animation jessyb
 monster 1
 move_type walk
 alive 1
@@ -176,12 +141,7 @@ More
 Object Balrog_8
 name Balrog
 face jessyb.x11
-anim
-jessyb.x11
-jessyb.x12
-jessyb.x13
-jessyb.x12
-mina
+animation jessyb
 monster 1
 move_type walk
 alive 1
@@ -194,12 +154,7 @@ More
 Object Balrog_9
 name Balrog
 face jessyb.x11
-anim
-jessyb.x11
-jessyb.x12
-jessyb.x13
-jessyb.x12
-mina
+animation jessyb
 monster 1
 move_type walk
 alive 1
@@ -211,12 +166,7 @@ More
 Object Balrog_10
 name Balrog
 face jessyb.x11
-anim
-jessyb.x11
-jessyb.x12
-jessyb.x13
-jessyb.x12
-mina
+animation jessyb
 monster 1
 move_type walk
 alive 1
@@ -229,12 +179,7 @@ More
 Object Balrog_11
 name Balrog
 face jessyb.x11
-anim
-jessyb.x11
-jessyb.x12
-jessyb.x13
-jessyb.x12
-mina
+animation jessyb
 monster 1
 move_type walk
 alive 1
@@ -247,12 +192,7 @@ More
 Object Balrog_12
 name Balrog
 face jessyb.x11
-anim
-jessyb.x11
-jessyb.x12
-jessyb.x13
-jessyb.x12
-mina
+animation jessyb
 monster 1
 move_type walk
 alive 1
@@ -265,12 +205,7 @@ More
 Object Balrog_13
 name Balrog
 face jessyb.x11
-anim
-jessyb.x11
-jessyb.x12
-jessyb.x13
-jessyb.x12
-mina
+animation jessyb
 monster 1
 move_type walk
 alive 1
@@ -282,12 +217,7 @@ More
 Object Balrog_14
 name Balrog
 face jessyb.x11
-anim
-jessyb.x11
-jessyb.x12
-jessyb.x13
-jessyb.x12
-mina
+animation jessyb
 monster 1
 move_type walk
 alive 1
@@ -300,12 +230,7 @@ More
 Object Balrog_15
 name Balrog
 face jessyb.x11
-anim
-jessyb.x11
-jessyb.x12
-jessyb.x13
-jessyb.x12
-mina
+animation jessyb
 monster 1
 move_type walk
 alive 1
@@ -318,12 +243,7 @@ More
 Object Balrog_16
 name Balrog
 face jessyb.x11
-anim
-jessyb.x11
-jessyb.x12
-jessyb.x13
-jessyb.x12
-mina
+animation jessyb
 monster 1
 move_type walk
 alive 1
