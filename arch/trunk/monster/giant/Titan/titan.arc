@@ -6,21 +6,7 @@ move_type walk
 sleep 1
 Wis 20
 face titan.x71
-anim
-facings 2
-titan.x71
-titan.x72
-titan.x73
-titan.x73
-titan.x72
-titan.x71
-titan.x31
-titan.x32
-titan.x33
-titan.x33
-titan.x32
-titan.x31
-mina
+animation titan
 resist_electricity 100
 resist_fear 100
 resist_magic 50
@@ -69,196 +55,76 @@ More
 Object titan_2
 name titan
 face titan.x71
-anim
-facings 2
-titan.x71
-titan.x72
-titan.x73
-titan.x73
-titan.x72
-titan.x71
-titan.x31
-titan.x32
-titan.x33
-titan.x33
-titan.x32
-titan.x31
-mina
+animation titan
 no_pick 1
 alive 1
 x -1
-magicmap grey
 end
 More
 Object titan_3
 name titan
 face titan.x71
-anim
-facings 2
-titan.x71
-titan.x72
-titan.x73
-titan.x73
-titan.x72
-titan.x71
-titan.x31
-titan.x32
-titan.x33
-titan.x33
-titan.x32
-titan.x31
-mina
+animation titan
 no_pick 1
 alive 1
 x -1
 y -1
-magicmap grey
 end
 More
 Object titan_4
 name titan
 face titan.x71
-anim
-facings 2
-titan.x71
-titan.x72
-titan.x73
-titan.x73
-titan.x72
-titan.x71
-titan.x31
-titan.x32
-titan.x33
-titan.x33
-titan.x32
-titan.x31
-mina
+animation titan
 no_pick 1
 alive 1
 y -1
-magicmap grey
 end
 More
 Object titan_5
 name titan
 face titan.x71
-anim
-facings 2
-titan.x71
-titan.x72
-titan.x73
-titan.x73
-titan.x72
-titan.x71
-titan.x31
-titan.x32
-titan.x33
-titan.x33
-titan.x32
-titan.x31
-mina
+animation titan
 no_pick 1
 alive 1
 x 1
 y -1
-magicmap grey
 end
 More
 Object titan_6
 name titan
 face titan.x71
-anim
-facings 2
-titan.x71
-titan.x72
-titan.x73
-titan.x73
-titan.x72
-titan.x71
-titan.x31
-titan.x32
-titan.x33
-titan.x33
-titan.x32
-titan.x31
-mina
+animation titan
 no_pick 1
 alive 1
 x 1
-magicmap grey
 end
 More
 Object titan_7
 name titan
 face titan.x71
-anim
-facings 2
-titan.x71
-titan.x72
-titan.x73
-titan.x73
-titan.x72
-titan.x71
-titan.x31
-titan.x32
-titan.x33
-titan.x33
-titan.x32
-titan.x31
-mina
+animation titan
 no_pick 1
 alive 1
 x 1
 y 1
-magicmap grey
 end
 More
 Object titan_8
 name titan
 face titan.x71
-anim
-facings 2
-titan.x71
-titan.x72
-titan.x73
-titan.x73
-titan.x72
-titan.x71
-titan.x31
-titan.x32
-titan.x33
-titan.x33
-titan.x32
-titan.x31
-mina
+animation titan
 no_pick 1
 alive 1
 y 1
-magicmap grey
 end
 More
 Object titan_9
 name titan
 face titan.x71
-anim
-facings 2
-titan.x71
-titan.x72
-titan.x73
-titan.x73
-titan.x72
-titan.x71
-titan.x31
-titan.x32
-titan.x33
-titan.x33
-titan.x32
-titan.x31
-mina
+animation titan
 no_pick 1
 alive 1
 x -1
 y 1
 invisible 1
-magicmap grey
 end
