@@ -430,14 +430,14 @@ arch bwall_2_1_2
 x 4
 y 9
 end
-arch exit
-slaying fortvsship
-hp 7
-sp 1
+arch pstone_2
 x 4
 y 10
 end
-arch pstone_2
+arch ladder_up
+slaying fortvsship
+hp 7
+sp 1
 x 4
 y 10
 end
