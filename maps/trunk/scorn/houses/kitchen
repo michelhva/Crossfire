@@ -1,6 +1,6 @@
 arch map
 name Medieval Kitchen
-difficulty 2
+difficulty 1
 region scorn
 width 9
 height 12
@@ -958,6 +958,10 @@ end
 arch dragon_steak_table
 x 7
 y 4
+arch dragon_steak
+value 1
+weight 1000
+end
 end
 arch woodfloor
 x 7
@@ -1150,3 +1154,5 @@ arch wwall_2_2_4
 x 8
 y 11
 end
+
+ 	  	 
