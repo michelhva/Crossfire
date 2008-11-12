@@ -241,7 +241,7 @@ x 1
 y 15
 end
 arch s_shop2
-name Ye Olde Shoppe of Transport
+name Lone Town's Ye Olde Shoppe of Transport
 slaying /pup_land/lone_town/shops/transport.shoppe
 hp 17
 sp 22
@@ -638,7 +638,7 @@ x 5
 y 9
 end
 arch church
-name Church
+name Lone Town Church
 slaying church
 hp 5
 sp 1
@@ -1180,7 +1180,7 @@ x 10
 y 3
 end
 arch l_shop1
-name Tavern
+name Lone Town Tavern
 slaying tavern
 hp 12
 sp 24
@@ -1240,7 +1240,7 @@ x 10
 y 9
 end
 arch store_general
-name General Shop
+name Lone Town General Shop
 slaying gshop
 hp 7
 sp 14
@@ -1639,7 +1639,7 @@ x 13
 y 3
 end
 arch store_magic
-name Magic Shop
+name Lown Town Magic Shop
 slaying mshop
 hp 4
 x 13
@@ -1662,7 +1662,7 @@ x 13
 y 5
 end
 arch store_general
-name Gem Shop
+name Lone Town Gem Shop
 slaying gemshop
 sp 8
 x 13
@@ -2037,7 +2037,7 @@ x 15
 y 14
 end
 arch house_small
-name House
+name Heinrich
 slaying heinrich
 hp 7
 sp 14
@@ -2167,7 +2167,7 @@ x 16
 y 16
 end
 arch house_long
-name Inn
+name Lone Town Inn
 slaying inn
 hp 9
 sp 8
@@ -2363,7 +2363,7 @@ x 18
 y 11
 end
 arch house_small
-name Training Center
+name Lown Town Training Center
 slaying training
 hp 1
 x 18

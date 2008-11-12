@@ -8,7 +8,7 @@ msg
 Created:  1996-02-07
 Updated 2007.11.12 by Gene Alexander
  - make this an outdoor map for day/night/weather
-Modified: 2007-11-12 crossfire
+Modified: 2008-11-11 Rick Tanner
 endmsg
 outdoor 1
 end
@@ -2064,6 +2064,7 @@ x 12
 y 10
 end
 arch store_magic
+name Wand Shop
 slaying washop
 hp 23
 sp 7
@@ -2134,6 +2135,7 @@ x 12
 y 24
 end
 arch store_magic
+name Alchemy Shop
 slaying alshop
 hp 25
 sp 3
@@ -3906,7 +3908,7 @@ x 23
 y 25
 end
 arch inn
-name hotel
+name Nurnberg Hotel
 slaying hotel
 hp 16
 sp 19
@@ -4244,7 +4246,7 @@ x 26
 y 8
 end
 arch barn
-name storehouse
+name Nurnberg Storehouse
 slaying storehouse
 hp 14
 sp 32
@@ -4312,7 +4314,7 @@ x 26
 y 19
 end
 arch s_shop2
-name Imperial Post
+name Nurnberg Imperial Post Office
 slaying /pup_land/nurnberg/IPO_nurnberg
 msg
 Ding!
