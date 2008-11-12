@@ -6,9 +6,11 @@ shopitems armour:40;shield:40;helmet:30;cloak:35;boots:40;gloves:40;bracers:30;g
 shopmax 20000
 width 23
 height 23
+enter_x 1
+enter_y 9
 msg
 Created:  1996-02-09
-Modified: 2008-11-04 Rick Tanner
+Modified: 2008-11-11 Rick Tanner
 endmsg
 end
 arch invis_exit
