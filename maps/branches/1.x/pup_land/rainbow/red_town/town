@@ -6,6 +6,7 @@ width 15
 height 15
 msg
 Created:  1997-02-11
+Modified: 2008-11-11 Rick Tanner
 endmsg
 end
 arch woods
@@ -128,7 +129,7 @@ x 1
 y 5
 end
 arch store_general
-name Bobo's shop
+name Bobo's Shop
 slaying shop
 hp 6
 sp 12
@@ -172,7 +173,7 @@ x 1
 y 12
 end
 arch house_2
-name Kira's place
+name Kira's Place
 slaying ../../s_f/Kira
 hp 12
 sp 5
@@ -184,7 +185,7 @@ x 1
 y 13
 end
 arch house_2
-name J.Griffin's hut
+name J.Griffin's Hut
 slaying ../../s_f/ki
 hp 2
 sp 10
@@ -289,7 +290,7 @@ x 3
 y 1
 end
 arch small_temple
-name house of treasure
+name House of Treasure
 slaying ../../begin/adv
 hp 3
 sp 12
@@ -386,7 +387,7 @@ x 4
 y 1
 end
 arch bungalow
-name practice1
+name Practice1
 slaying ../../begin/p1
 hp 5
 sp 16
@@ -460,7 +461,7 @@ x 5
 y 1
 end
 arch bungalow
-name practice2
+name Practice2
 slaying ../../begin/p2
 hp 5
 sp 16
@@ -534,7 +535,7 @@ x 6
 y 1
 end
 arch bungalow
-name practice3
+name Practice3
 slaying ../../begin/p3
 hp 5
 sp 17
@@ -1071,7 +1072,7 @@ x 13
 y 1
 end
 arch tavern
-name Summoner's house
+name Summoner's House
 slaying ../../jk/gs_house
 hp 8
 sp 18
