@@ -8,7 +8,7 @@ msg
 Created:  1996-02-07
 Updated 2007.11.12 by Gene Alexander
  - make this an outdoor map for day/night/weather
-Modified: 2008-11-11 Rick Tanner
+Modified: 2008-11-12 Rick Tanner
 endmsg
 outdoor 1
 end
@@ -2690,7 +2690,7 @@ y 9
 end
 arch guild
 name Guild of the Laughing Skull
-slaying /pup_land/guilds/laughing_skull/ground
+slaying ../guilds/laughing_skull/ground
 x 16
 y 9
 move_block 0
@@ -3462,7 +3462,7 @@ y 6
 end
 arch guild
 name Laughing Skull's Storage Room
-slaying /pup_land/guilds/laughing_skull/storage_room
+slaying ../guilds/laughing_skull/storage_room
 hp 1
 sp 10
 x 21
@@ -4315,7 +4315,7 @@ y 19
 end
 arch s_shop2
 name Nurnberg Imperial Post Office
-slaying /pup_land/nurnberg/IPO_nurnberg
+slaying IPO_nurnberg
 msg
 Ding!
 endmsg
@@ -4342,7 +4342,7 @@ y 23
 end
 arch barn
 name Dragon Hangar
-slaying /pup_land/nurnberg/dragonhangar/hangar
+slaying dragonhangar/hangar
 hp 15
 sp 1
 x 26
