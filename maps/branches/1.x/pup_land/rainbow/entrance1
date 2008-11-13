@@ -6,6 +6,7 @@ width 16
 height 20
 msg
 Created:  1996-06-08
+Modified: 2008-11-12 Rick Tanner
 endmsg
 end
 arch dungeon_floor
@@ -1617,7 +1618,7 @@ y 10
 end
 arch stair_down
 slaying Lv1/e_hall
-hp 7
+hp 8
 sp 7
 x 13
 y 10
