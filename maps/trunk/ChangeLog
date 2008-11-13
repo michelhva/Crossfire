@@ -1,3 +1,28 @@
+2008-11-12 03:15  rjtanner
+
+	* navar_city/illusion/illtow4: Text correction in map name (LEvel
+	  -> Level)
+
+2008-11-11 10:47  ryo_saeba
+
+	* scorn/houses/kitchen: Apply patch #2133038: scorn kitchen steak
+	  fix.
+
+2008-11-11 03:02  rjtanner
+
+	* port_joseph/town/churchtower: Update churchtower map with a
+	  unique (and more descriptive) map name
+
+2008-11-09 17:24  ryo_saeba
+
+	* pup_land/ancient/village/siegfried/siegfried.1: Revert
+	  stand_still that was added per bug #1930002, since it's
+	  apparently supposed to be the right behaviour.
+
+2008-11-08 07:27  rjtanner
+
+	* ChangeLog: Updated ChangeLog file using svn2cl
+
 2008-11-08 00:03  rjtanner
 
 	* world/world_117_101: Update entrance coordinates from World map
