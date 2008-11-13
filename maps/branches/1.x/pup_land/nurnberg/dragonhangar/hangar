@@ -8,7 +8,7 @@ enter_x 15
 enter_y 1
 msg
 Created:  1997-02-19
-Modified: 2008-11-11 Rick Tanner
+Modified: 2008-11-12 Rick Tanner
 endmsg
 end
 arch magic_banned
@@ -4675,7 +4675,7 @@ arch cobblestones2
 x 14
 end
 arch oakdoor
-slaying /pup_land/nurnberg/city
+slaying ../city
 hp 26
 sp 22
 x 14
@@ -4997,7 +4997,7 @@ arch cobblestones2
 x 15
 end
 arch oakdoor
-slaying /pup_land/nurnberg/city
+slaying ../city
 hp 26
 sp 22
 x 15
@@ -5344,7 +5344,7 @@ arch cobblestones2
 x 16
 end
 arch oakdoor
-slaying /pup_land/nurnberg/city
+slaying ../city
 hp 26
 sp 22
 x 16
@@ -5691,7 +5691,7 @@ arch cobblestones2
 x 17
 end
 arch oakdoor
-slaying /pup_land/nurnberg/city
+slaying ../city
 hp 26
 sp 22
 x 17
