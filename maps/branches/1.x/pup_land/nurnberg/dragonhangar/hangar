@@ -5996,13 +5996,10 @@ y 26
 end
 arch dragon_exit
 name dragon express
-slaying hangar
 msg
 Please hurry up or we will be moving
 without you.
 endmsg
-hp 34
-sp 8
 x 17
 y 26
 end
@@ -7323,8 +7320,8 @@ x 21
 y 26
 end
 arch altar_trigger
-name Random
-slaying Random Ticket
+name Out Of Order
+slaying Out Of Order
 food 1
 x 21
 y 26
