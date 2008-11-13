@@ -4662,7 +4662,7 @@ arch dungeon_floor
 x 21
 y 27
 end
-arch dwall_2_1_2
+arch dwall_1_3
 x 21
 y 27
 end
@@ -5269,7 +5269,7 @@ arch dungeon_floor
 x 23
 y 27
 end
-arch dwall_2_1_2
+arch dwall_1_4
 x 23
 y 27
 end
@@ -6770,7 +6770,7 @@ arch dungeon_floor
 x 28
 y 23
 end
-arch dwall_2_1_2
+arch dwall_1_3
 x 28
 y 23
 end
@@ -7073,7 +7073,7 @@ arch dungeon_floor
 x 29
 y 27
 end
-arch dwall_2_1_2
+arch dwall_1_3
 x 29
 y 27
 end
@@ -7320,7 +7320,7 @@ arch dungeon_floor
 x 30
 y 23
 end
-arch dwall_2_1_2
+arch dwall_1_4
 x 30
 y 23
 end
@@ -7640,7 +7640,7 @@ arch dungeon_floor
 x 31
 y 27
 end
-arch dwall_2_1_2
+arch dwall_1_4
 x 31
 y 27
 end
@@ -10319,7 +10319,7 @@ arch woodfloor
 x 45
 y 12
 end
-arch dwall_2_1_2
+arch dwall_1_3
 x 45
 y 12
 end
@@ -10513,9 +10513,13 @@ arch woodfloor
 x 46
 y 12
 end
-arch dwall_1_3
+arch door_look_1
 x 46
 y 12
+arch rune_create_bomb
+Cha 27
+level 7
+end
 end
 arch woodfloor
 x 46
@@ -10715,13 +10719,9 @@ arch woodfloor
 x 47
 y 12
 end
-arch door_look_1
+arch dwall_1_4
 x 47
 y 12
-arch rune_create_bomb
-Cha 27
-level 7
-end
 end
 arch woodfloor
 x 47
