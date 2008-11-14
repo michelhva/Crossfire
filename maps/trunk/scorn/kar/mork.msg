@@ -18,10 +18,6 @@
   "msg" : ["Ok, I give you key.  Here, it in corner."],
   "connected" : 9
   }, {
-  
-  
-  
-  
   "match" : "hello|hi",
   "pre" : [],
   "post" : [],
@@ -42,6 +38,6 @@ GO AWAY!"]
   "match" : "*",
   "pre" : [],
   "post" : [],
-  "msg" : ["Assasin!"]
+  "msg" : ["Assassin!"]
   }
 ]}
