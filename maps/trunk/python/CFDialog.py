@@ -78,6 +78,9 @@
 # You can then add the rules you created to the dialog. Rules are parsed in
 # a given order, so you must add the most generic answer last.
 #
+# Like the @match system, CFDialog converts both match strings and the things
+# the player says to lowercase before checking for a match.
+#
 # A simple example
 #=================
 # I want to create a dialog for an old man. If I say "hello" or "hi" for the
@@ -114,6 +117,11 @@
 # postr = [["hello", "*"]]
 # rmsg = ["What ?", "Huh ?", "What do you want ?"]
 # speech.addRule(DialogRule("*", prer, rmsg, postr),2)
+#
+# A complete example that shows how to modify an actual in-game map may be
+# found on the wiki:
+#
+# http://wiki.metalforge.net/doku.php/cfdialog?s=cfdialog#a_simple_example
 #
 import Crossfire
 import string
@@ -161,12 +169,13 @@ class Dialog:
                     self.setConditions(rule)
                     return 0
         return 1
+
     def isAnswer(self,msg, keyword):
         if keyword=="*":
             return 1
         keys=string.split(keyword,"|")
         for ckey in keys:
-            if string.find(msg,ckey)!=-1:
+            if string.find(msg.lower(),ckey.lower())!=-1:
                 return 1
         return 0
 
