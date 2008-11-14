@@ -95,6 +95,15 @@ import os
 from CFDialog import DialogRule, Dialog
 import cjson
 
+# Avoid DeprecationWarning: raising a string exception is deprecated by making
+# a user-defined exception handler.
+# 
+class NPC_Dialog_Error(Exception):
+    def __init__(self, value):
+        self.value = value
+    def __str__(self):
+        return repr(self.value)
+
 def ruleConnected(character,rule):
         m = character.Map
         m.TriggerConnected(rule.connected,1)
@@ -106,7 +115,7 @@ if (Crossfire.ScriptParameters() != None):
     try:
         f = open(filename,'rb')
     except:
-        raise 'Unable to read %s' % filename
+        NPC_Dialog_Error('Unable to read %s' % filename)
     else:
         Crossfire.Log(Crossfire.LogDebug,"Reading from file %s" %filename)
         parameters=cjson.decode(f.read())
