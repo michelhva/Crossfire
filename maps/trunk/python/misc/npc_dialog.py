@@ -17,46 +17,84 @@
 # Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
 #
 #
-# This is a simple script that make use of CFDialog.py and receive it's
-# parameters from a JSON inside the event message. Alternativey, the JSON
-# parameters, if >= 4096 characters, can be stored in a file that will be
-# loaded. Use the classical script parameter to specify relative location
-# of dialog.
-# exemple
-#{
-#  "location" : "test_grandpa_01",
-#  "rules": [
-#  {
-#    "match" : "hello|hi",
-#    "pre" : [["hello","0"]],
-#    "post" : [["hello","1"]],
-#    "msg" : ["Hello, lad!","Hi, young fellow!","Howdy!"]
-#  },
-#  {
-#    "match": "hello|hi",
-#    "pre" :[["hello","1"]],
-#    "post" :[["hello", "*"]],
-#    "msg" : ["I've heard, you know, I'm not deaf *grmbl*"]
-#  },
-#  {
-#    "match" : "*",
-#    "pre" : [["hello","*"]],
-#    "post" : [["hello", "*"]],
-#    "msg" : ["What ?", "Huh ?", "What do you want ?"]
-#  }
-#]}
-# The pre and post in rule are variable to test and set depending on that dialog rule.
-# For example, first rule applie if "hello" is set to "0"  (default) and immediatly 
-# sets it to "1" when rule is used.
-# the Double [ around pre and post are needed. The pre and post are
-# arrays of arrays. Each item in pre and post is an array of [variable,value]
-# The match is the rule to apply to what user says
+# This is a simple script that makes use of CFDialog.py and that receives
+# parameters from a JSON inside the event message. Alternatively, the JSON
+# parameters, if >= 4096 characters, can be stored in a separate file.
+# Use the classical script parameter to specify relative location of dialog.
+#
+# An example of a map file entry is:
+#
+# arch guildmaster
+# name Sigmund
+# msg
+# 
+# endmsg
+# x 11
+# y 7
+# resist_physical 100
+# resist_magic 100
+# weight 50000000
+# friendly 1
+# stand_still 1
+# arch event_say
+# name start/sigmund.msg
+# title Python
+# slaying /python/misc/npc_dialog.py
+# end
+# end
+#
+# An example of a JSON dialog similar to the one described in CFDialog.py is:
+#
+# {
+#   "location" : "test_grandpa_01",
+#   "rules": [
+#   {
+#     "match" : "hello|hi",
+#     "pre" : [["hello","0"]],
+#     "post" : [["hello","1"]],
+#     "msg" : ["Hello, lad!","Hi, young fellow!","Howdy!"]
+#   },
+#   {
+#     "match": "hello|hi",
+#     "pre" :[["hello","1"]],
+#     "post" :[["hello", "*"]],
+#     "msg" : ["I've heard, you know, I'm not deaf *grmbl*"]
+#   },
+#   {
+#     "match" : "*",
+#     "pre" : [["hello","*"]],
+#     "post" : [["hello", "*"]],
+#     "msg" : ["What ?", "Huh ?", "What do you want ?"]
+#   }
+# ]}
+#
+# "match" is what CFDialog describes as a keyword, and corresponds with what
+# the player/character says that the dialog will respond to.
+#
+# "pre" is a list of CFDialog preconditions that identifies flags that must be
+# set to a particular value in order to trigger a response if a match is
+# detected.
+#
+# "post" is a list of CFDialog postconditions that specify flags that are to be
+# set if a response is triggered.
+#
+# Above, the first rule is applied if the player/character says "hello" or "hi"
+# and if the "hello" flag is set to "0" (default).  When the rule is applied,
+# the "hello" flag is then set to "1".
+#
+# The Double square braces ([[]]) around "pre" and "post" are required. "pre"
+# and "post" are arrays of arrays. Each item in "pre" and "post" is an array of
+# [variable,value].
+#
+# "msg" defines one or more responses that will be given if the rule triggers.
+# When more than one "msg" value is set up, the NPC randomly selects which one
+# to say each time the rule is applied.
 
 import Crossfire
 import os
-
 from CFDialog import DialogRule, Dialog
 import cjson
+
 def ruleConnected(character,rule):
         m = character.Map
         m.TriggerConnected(rule.connected,1)
@@ -90,3 +128,4 @@ for jsonRule in parameters["rules"]:
         
 if speech.speak(Crossfire.WhatIsMessage()) == 0:
     Crossfire.SetReturnValue(1)
+
