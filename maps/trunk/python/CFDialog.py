@@ -48,25 +48,30 @@
 # - Preconditions are flags that must match for the rule to be triggered.
 #   Each precondition has a name and a value. The default value of a
 #   precondition is "0". The flags are stored into each player, and will
-#   survive between gaming sessions. They are useful to set the point in
-#   a dialog reached by a player - you can see those as an "NPC memory".
-#   All conditions must have a name and a value. The ":" and ";" characters
-#   are forbidden. For a rule to be triggered, all the player's flags should
-#   match the preconditions. If you give "*" as the value for a precondition,
-#   it means that there is no need to match it.
-#   A precondition is a list in the form: [key, value]. All preconditions
-#   are stored in a list.
-#   - Postconditions are the status changes to apply to the player's
-#   conditions after the rule has been triggered. Their format is similar to
-#   preconditions. A value of "*" means that the condition will not be touched.
+#   survive between gaming sessions. They are useful to set the point in a
+#   dialog reached by a player - you can see those as an "NPC memory".  All
+#   conditions must have a name and a value. The ":" and ";" characters are
+#   forbidden. For a rule to be triggered, all the player's flags should match
+#   the preconditions.  A precondition is a list in the form: [key, value].
+#   All preconditions are stored in a list.  Each "value" may be a single
+#   string or a multiple choice string where the options are concatenated
+#   together with the "|" character.  When a value is set to "*", a match is
+#   not required to trigger the rule.
+#   - Postconditions are state changes to apply to the player's conditions
+#   after the rule has been triggered. The postcondition is a list in the
+#   form: [key, value] and the format is similar to preconditions except that
+#   the "|" has no special meaning in the value and is forbidden.  A value of
+#   "*" means that the condition will not be touched.
 #   - A prefunction is an optional callback function that will be called
-#   when a rule's preconditions are all matched, but before the rule is validated.
+#   when a rule's preconditions are all matched, but before the rule is
+#   validated.
 #   The callback can do additional tests, and should return 1 to allow the rule
-#   to be selected, 0 to block the rule. The function arguments are the player and
-#   the actual rule being tested.
-#   - A postfunction is an optional callback that is called when a rule has been applied,
-#   and after the message is said. It can do additional custom .processing. The
-#   function arguments are the player and the actual rule having been used.
+#   to be selected, 0 to block the rule. The function arguments are the player
+#   and the actual rule being tested.
+#   - A postfunction is an optional callback that is called when a rule has
+#   been applied, and after the message is said. It can do additional custom
+#   processing. The function arguments are the player and the actual rule
+#   having been used.
 #
 # Once you have defined your rules, you have to assemble them into a dialog.
 # Each dialog involves somebody who triggers it, somebody who answers, and
@@ -118,10 +123,17 @@
 # rmsg = ["What ?", "Huh ?", "What do you want ?"]
 # speech.addRule(DialogRule("*", prer, rmsg, postr),2)
 #
-# A complete example that shows how to modify an actual in-game map may be
-# found on the wiki:
-#
-# http://wiki.metalforge.net/doku.php/cfdialog?s=cfdialog#a_simple_example
+# A more complex example
+# ======================
+# ../scorn/kar/gork.msg is an example that uses "|" in the precondition.  Note
+# how this lets the conversation fork and merge.  Once Gork tells us he has a
+# friend who lives in a tower, the player can fork the conversation to either
+# a friend or a tower thread.  Without the "|" in the precondition, it would
+# be harder to construct the conversation in a way that either fork merges
+# back into the main thread, while also allowing the player the player to
+# "remember" something Gork said previously and still use it in the original
+# context.  Note also how easy it is to allow the conversation to loop about
+# mid-thread.
 #
 import Crossfire
 import string
@@ -182,9 +194,12 @@ class Dialog:
     def matchConditions(self,rule):
         for condition in rule.getPreconditions():
             status = self.getStatus(condition[0])
-            if status!=condition[1]:
-                if condition[1]!="*":
-                    return 0
+            values=string.split(condition[1],"|")
+            for value in values:
+                if (status==value) or (value=="*"):
+                    break
+            else:
+                return 0
         if rule.getPrefunction() <> None:
                 return rule.getPrefunction()(self.__character, rule)
         return 1
