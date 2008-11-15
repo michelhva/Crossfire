@@ -74,7 +74,10 @@ end
 arch shop_empty
 y 10
 end
-arch dwall_3_2
+arch swall_1_4_half
+y 10
+end
+arch dwall_2_1_1
 y 10
 end
 arch flagstone
@@ -343,7 +346,7 @@ arch shop_empty
 x 3
 y 14
 end
-arch dwall_3_1
+arch dwall_2_1_2
 x 3
 y 14
 end
@@ -581,7 +584,7 @@ arch shop_empty
 x 6
 y 14
 end
-arch dwall_3_1
+arch dwall_2_1_2
 x 6
 y 14
 end
@@ -957,7 +960,11 @@ arch shop_empty
 x 11
 y 14
 end
-arch dwall_3_1
+arch swall_1_2_half
+x 11
+y 14
+end
+arch dwall_2_1_2
 x 11
 y 14
 end
@@ -1136,7 +1143,11 @@ arch shop_empty
 x 13
 y 14
 end
-arch dwall_3_1
+arch swall_1_2_half
+x 13
+y 14
+end
+arch dwall_2_1_2
 x 13
 y 14
 end

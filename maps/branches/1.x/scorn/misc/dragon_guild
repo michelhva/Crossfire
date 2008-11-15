@@ -249,6 +249,10 @@ arch flagstone
 x 2
 y 6
 end
+arch swall_1_4_half
+x 2
+y 6
+end
 arch cwall_1_3
 x 2
 y 6
@@ -370,7 +374,7 @@ arch flagstone
 x 3
 y 6
 end
-arch swall_1_4
+arch swall_2_1_2
 x 3
 y 6
 end
@@ -488,7 +492,7 @@ arch flagstone
 x 4
 y 6
 end
-arch swall_1_3
+arch swall_2_1_2
 x 4
 y 6
 end
@@ -603,6 +607,10 @@ x 5
 y 5
 end
 arch flagstone
+x 5
+y 6
+end
+arch swall_1_3_half
 x 5
 y 6
 end

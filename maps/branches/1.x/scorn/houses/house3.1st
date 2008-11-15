@@ -358,7 +358,7 @@ arch woodfloor
 x 2
 y 5
 end
-arch wall_1_3
+arch wall_2_1_2
 x 2
 y 5
 end
@@ -532,6 +532,10 @@ arch woodfloor
 x 3
 y 5
 end
+arch wall_door_1_4
+x 3
+y 5
+end
 arch door_2
 x 3
 y 5
@@ -612,7 +616,7 @@ arch woodfloor
 x 4
 y 5
 end
-arch wall_1_4
+arch wall_2_1_2
 x 4
 y 5
 end
@@ -757,7 +761,7 @@ arch woodfloor
 x 6
 y 5
 end
-arch wall_1_3
+arch wall_2_1_2
 x 6
 y 5
 end
@@ -821,6 +825,10 @@ x 7
 y 4
 end
 arch woodfloor
+x 7
+y 5
+end
+arch wall_door_1_4
 x 7
 y 5
 end
@@ -890,7 +898,7 @@ arch woodfloor
 x 8
 y 5
 end
-arch wall_1_4
+arch wall_2_1_2
 x 8
 y 5
 end
