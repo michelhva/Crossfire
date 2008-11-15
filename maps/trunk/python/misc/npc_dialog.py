@@ -89,6 +89,12 @@
 # "msg" defines one or more responses that will be given if the rule triggers.
 # When more than one "msg" value is set up, the NPC randomly selects which one
 # to say each time the rule is applied.
+#
+# A relatively complex example of an npc_dialog.py dialog is given in the Gork
+# treasure room quest.  See ../scorn/kar/gork.msg in particular as it
+# demonstrates how multiple precondition flag values may be exploited to
+# produce non-linear and variable-path conversations that are less likely to
+# frustrate a player.
 
 import Crossfire
 import os
