@@ -175,39 +175,77 @@ import string
 import random
 
 class DialogRule:
-    def __init__(self,keyword,presemaphores, message, postsemaphores, prefunction = None, postfunction = None):
+    def __init__(self, keyword, presemaphores, message, postsemaphores, prefunction = None, postfunction = None):
         self.__keyword = keyword
         self.__presems = presemaphores
         self.__message = message
         self.__postsems= postsemaphores
-	self.__prefunction = prefunction
-	self.__postfunction = postfunction
+        self.__prefunction = prefunction
+        self.__postfunction = postfunction
+
+    # The keyword is a string.  Multiple keywords may be defined in the string
+    # by delimiting them with vertical bar (|) characters.  "*" is a special
+    # keyword that matches anything.
     def getKeyword(self):
         return self.__keyword
+
+    # Messages are stored in a list of strings.  One or more messages may be
+    # defined in the list.  If more than one message is present, a random
+    # string is returned.
     def getMessage(self):
         msg = self.__message
         l = len(msg)
         r = random.randint(0,l-1)
         return msg[r]
+
+    # Return the preconditions of a rule.  They are a list of one or more lists
+    # that specify a flag name to check, and one or more acceptable values it
+    # may have in order to allow the rule to be triggered.
     def getPreconditions(self):
         return self.__presems
+
+    # Return the postconditions for a rule.  They are a list of one or more
+    # lists that specify a flag to be set in the player file and what value it
+    # should be set to.
     def getPostconditions(self):
         return self.__postsems
+
+    # A prefunction is a callback that is run in order to implement complex
+    # preconditions.  The value returned by the called function determines
+    # whether or not the rule trigger.
     def getPrefunction(self):
         return self.__prefunction
+
+    # A postfunction is a callback that is run only if the rule is triggered,
+    # and only after the answer has been given to the player.  It may be used
+    # to trigger some particular action as a result of the player saying the
+    # right (or wrong) thing at a particular point in a dialog.
     def getPostfunction(self):
         return self.__postfunction
 
 class Dialog:
-    def __init__(self,character,speaker,location):
+    # A character is the source that supplies keywords that drive the dialog.
+    # The speaker is the NPC that responds to the keywords. A location is an
+    # unique identifier that is used to distinguish dialogs from each other.
+    def __init__(self, character, speaker, location):
         self.__character = character
         self.__location = location
         self.__speaker = speaker
         self.__rules = []
 
+    # Create rules of the DialogRule class that define dialog flow. An index
+    # defines the order in which rules are processed.  FIXME: addRule could
+    # very easily create the index.  It is unclear why this mundane activity
+    # is left for the dialog maker.
     def addRule(self, rule, index):
         self.__rules.insert(index,rule)
 
+    # A function to call when saying something to an NPC to elicit a response
+    # based on defined rules. It iterates through the rules and determines if
+    # the spoken text matches a keyword.  If so, the rule preconditions and/or
+    # prefunctions are checked.  If all conditions they define are met, then
+    # the NPC responds, and postconditions, if any, are set.  Postfunctions
+    # also execute if present.
     def speak(self, msg):
         for rule in self.__rules:
             if self.isAnswer(msg, rule.getKeyword())==1:
@@ -217,7 +255,11 @@ class Dialog:
                     return 0
         return 1
 
-    def isAnswer(self,msg, keyword):
+    # Determine if the message sent to an NPC matches a string in the keyword
+    # list. The match check is case-insensitive, and succeeds if a keyword
+    # string is found in the message.  This means that the keyword string(s)
+    # only need to be a substring of the message in order to trigger a reply.
+    def isAnswer(self, msg, keyword):
         if keyword=="*":
             return 1
         keys=string.split(keyword,"|")
@@ -226,7 +268,13 @@ class Dialog:
                 return 1
         return 0
 
-    def matchConditions(self,rule):
+    # Check the preconditions specified in rule have been met.  Preconditions
+    # are lists of one or more conditions to check.  Each condition specifies
+    # a player file flag to check, and a list of one or more values that allow
+    # the condition check to succeed.  If all preconditions are met, and if a
+    # prefunction has been defined, it is also called to implement more
+    # complex conditions that determine if the rule is allowed to trigger.
+    def matchConditions(self, rule):
         for condition in rule.getPreconditions():
             status = self.getStatus(condition[0])
             values=condition[1:]
@@ -239,7 +287,10 @@ class Dialog:
                 return rule.getPrefunction()(self.__character, rule)
         return 1
 
-    def setConditions(self,rule):
+    # If a rule triggers, this function is called to make identified player
+    # file changes, and to call any declared postfunctions to implement more
+    # dramatic effects than the setting of a flag in the player file.
+    def setConditions(self, rule):
         for condition in rule.getPostconditions():
             key = condition[0]
             val = condition[1]
@@ -248,7 +299,12 @@ class Dialog:
         if rule.getPostfunction() <> None:
                 rule.getPostfunction()(self.__character, rule)
 
-    def getStatus(self,key):
+    # Search the player file for a particular flag, and if it exists, return
+    # its value.  Flag names are combined with the unique dialog "location"
+    # identifier, and are therefore are not required to be unique.  This also
+    # prevents flags from conflicting with other non-dialog-related contents
+    # in the player file.
+    def getStatus(self, key):
         character_status=self.__character.ReadKey("dialog_"+self.__location);
         if character_status=="":
             return "0"
@@ -259,7 +315,11 @@ class Dialog:
                 return subpair[1]
         return "0"
 
-    def setStatus(self,key, value):
+    # Store a flag in the player file and set it to the specified value.  Flag
+    # names are combined with the unique dialog "location" identifier, and are
+    # therefore are not required to be unique.  This also prevents flags from
+    # conflicting with other non-dialog-related contents in the player file.
+    def setStatus(self, key, value):
         character_status=self.__character.ReadKey("dialog_"+self.__location);
         finished=""
         ishere=0
