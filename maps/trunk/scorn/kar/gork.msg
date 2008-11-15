@@ -7,23 +7,23 @@
   "post" : [["gork_speak","hoard"]],
   "msg" : ["Youse want Gork's hoards?  I crush you..."]
   }, {
-  "match" : "hoard|yes|want",
-  "pre" : [["gork_speak","hoard|pulp|treasure"]],
+  "match" : "gork|hoard|yes|want",
+  "pre" : [["gork_speak","hoard","key","pulp"]],
   "post" : [["gork_speak","mork"]],
   "msg" : ["Gork not like you...  I not as nice as Mork."]
   }, {
   "match" : "mork|nice",
-  "pre" : [["gork_speak","friend|mork|tower|treasure"]],
+  "pre" : [["gork_speak","friend","key","mork","tower","treasure"]],
   "post" : [["gork_speak","friend"]],
   "msg" : ["Mork be Gork's friend.  Mork live in tower."]
   }, {
   "match" : "friend",
-  "pre" : [["gork_speak","friend|key|tower"]],
+  "pre" : [["gork_speak","friend","tower"]],
   "post" : [["gork_speak","treasure"]],
   "msg" : ["Mork share Gork's treasure."]
   }, {
   "match" : "tower",
-  "pre" : [["gork_speak","friend|tower"]],
+  "pre" : [["gork_speak","friend","tower"]],
   "post" : [["gork_speak","tower"]],
   "msg" : ["Mork live in tower.  Mork big, Mork friend."]
   }, {
@@ -33,7 +33,7 @@
   "msg" : ["Only Gork and Mork can open treasure door."]
   }, {
   "match" : "crush|door|open|treasure",
-  "pre" : [["gork_speak","hoard|key"]],
+  "pre" : [["gork_speak","hoard","key"]],
   "post" : [["gork_speak","pulp"]],
   "msg" : ["Gurrr... Gork beat you to pulp!"]
   }, {
