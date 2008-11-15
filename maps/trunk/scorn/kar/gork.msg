@@ -39,7 +39,7 @@
   }, {
   "match" : ["*"],
   "pre" : [],
-  "post": [["gork_speak",""]],
+  "post": [["gork_speak","*"]],
   "msg" : ["Gork kill you!"]
   }
 ]}
