@@ -41,11 +41,9 @@
 # - Keywords are what the rule answers to.  For example, if you want a rule to
 #   trigger when the player says "hi", then "hi" must appear in the keyword
 #   list.  One or more keywords are specified in a string list in the form
-#   ["keyword"].  To associate more than one keyword with a rule, simply
-#   concatenate them together with a "|" character.  Eg. ["hi|hello"]. A "*"
-#   character is a special keyword that means: "match everything", and is
-#   useful to create rules that provide generic answers no matter what the
-#   player character says.
+#   ["keyword1", "keyword2" ...].  A "*" character is a special keyword that
+#   means: "match everything", and is useful to create rules that provide
+#   generic answers no matter what the player character says.
 #
 #   NOTE:  Like the @match system, CFDialog converts both keywords and the
 #          things the player says to lowercase before checking for a match,
@@ -133,7 +131,7 @@
 # prer = [["hello","0"]]
 # postr = [["hello", "1"]]
 # rmsg = ["Hello, lad!","Hi, young fellow!","Howdy!"]
-# speech.addRule(DialogRule("hello|hi", prer, rmsg, postr),0)
+# speech.addRule(DialogRule(["hello","hi"], prer, rmsg, postr),0)
 #
 ## The second rule is the answer to a greeting if he as already met the player
 ## before.  Notice that "*" is used for the postcondition value, meaning that
@@ -142,7 +140,7 @@
 # prer = [["hello","1"]]
 # postr = [["hello", "*"]]
 # rmsg = ["I've heard, you know, I'm not deaf *grmbl*"]
-# speech.addRule(DialogRule("hello|hi", prer, rmsg, postr),1)
+# speech.addRule(DialogRule(["hello","hi"], prer, rmsg, postr),1)
 #
 ## Finally, the generic answer is written. This is the last rule of the list.
 ## We don't need to match any condition, and don't need to change any flags,
@@ -151,7 +149,7 @@
 # prer = [["hello","*"]]
 # postr = [["hello", "*"]]
 # rmsg = ["What ?", "Huh ?", "What do you want ?"]
-# speech.addRule(DialogRule("*", prer, rmsg, postr),2)
+# speech.addRule(DialogRule(["*"], prer, rmsg, postr),2)
 #
 # A more complex example
 # ======================
@@ -175,10 +173,10 @@ import string
 import random
 
 class DialogRule:
-    def __init__(self, keyword, presemaphores, message, postsemaphores, prefunction = None, postfunction = None):
-        self.__keyword = keyword
+    def __init__(self, keywords, presemaphores, messages, postsemaphores, prefunction = None, postfunction = None):
+        self.__keywords = keywords
         self.__presems = presemaphores
-        self.__message = message
+        self.__messages = messages
         self.__postsems= postsemaphores
         self.__prefunction = prefunction
         self.__postfunction = postfunction
@@ -187,13 +185,13 @@ class DialogRule:
     # by delimiting them with vertical bar (|) characters.  "*" is a special
     # keyword that matches anything.
     def getKeyword(self):
-        return self.__keyword
+        return self.__keywords
 
     # Messages are stored in a list of strings.  One or more messages may be
     # defined in the list.  If more than one message is present, a random
     # string is returned.
     def getMessage(self):
-        msg = self.__message
+        msg = self.__messages
         l = len(msg)
         r = random.randint(0,l-1)
         return msg[r]
@@ -259,12 +257,9 @@ class Dialog:
     # list. The match check is case-insensitive, and succeeds if a keyword
     # string is found in the message.  This means that the keyword string(s)
     # only need to be a substring of the message in order to trigger a reply.
-    def isAnswer(self, msg, keyword):
-        if keyword=="*":
-            return 1
-        keys=string.split(keyword,"|")
-        for ckey in keys:
-            if string.find(msg.lower(),ckey.lower())!=-1:
+    def isAnswer(self, msg, keywords):
+        for ckey in keywords:
+            if ckey=="*" or string.find(msg.lower(), ckey.lower()) != -1:
                 return 1
         return 0
 
