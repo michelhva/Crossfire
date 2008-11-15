@@ -49,42 +49,44 @@
 #   "location" : "test_grandpa_01",
 #   "rules": [
 #   {
-#     "match" : "hello|hi",
+#     "match" : ["hello","hi"],
 #     "pre" : [["hello","0"]],
 #     "post" : [["hello","1"]],
 #     "msg" : ["Hello, lad!","Hi, young fellow!","Howdy!"]
 #   },
 #   {
-#     "match": "hello|hi",
+#     "match": ["hello","hi"],
 #     "pre" :[["hello","1"]],
 #     "post" :[["hello", "*"]],
 #     "msg" : ["I've heard, you know, I'm not deaf *grmbl*"]
 #   },
 #   {
-#     "match" : "*",
+#     "match" : ["*"],
 #     "pre" : [["hello","*"]],
 #     "post" : [["hello", "*"]],
 #     "msg" : ["What ?", "Huh ?", "What do you want ?"]
 #   }
 # ]}
 #
-# "match" is what CFDialog describes as a keyword, and corresponds with what
-# the player/character says that the dialog will respond to.
+# For detailed descriptions of the match, pre, post, and msg formats, see the
+# ../CFDialog.py script.
 #
-# "pre" is a list of CFDialog preconditions that identifies flags that must be
-# set to a particular value in order to trigger a response if a match is
-# detected.
+# "match" is a list of keyword strings, and corresponds to what the player says
+# that the dialog will respond to.
 #
-# "post" is a list of CFDialog postconditions that specify flags that are to be
-# set if a response is triggered.
+# In the above example, the first rule is applied if the player/character says
+# "hello" or "hi" and if the "hello" flag is set to "0" (default).  When the
+# rule is applied, the "hello" flag is then set to "1".
 #
-# Above, the first rule is applied if the player/character says "hello" or "hi"
-# and if the "hello" flag is set to "0" (default).  When the rule is applied,
-# the "hello" flag is then set to "1".
+# "pre" is a list of preconditions that identifies flags that must be set to a
+# particular value in order to trigger a response if a match is detected.
 #
-# The Double square braces ([[]]) around "pre" and "post" are required. "pre"
-# and "post" are arrays of arrays. Each item in "pre" and "post" is an array of
-# [variable,value].
+# "post" is a list of postconditions that specify flags that are to be set if a
+# response is triggered.
+#
+# All of the rule values are lists, and must be enclosed by square braces, but
+# pre and post are lists of lists, so the double square braces ([[]]) are
+# required.
 #
 # "msg" defines one or more responses that will be given if the rule triggers.
 # When more than one "msg" value is set up, the NPC randomly selects which one
@@ -94,7 +96,8 @@
 # treasure room quest.  See ../scorn/kar/gork.msg in particular as it
 # demonstrates how multiple precondition flag values may be exploited to
 # produce non-linear and variable-path conversations that are less likely to
-# frustrate a player.
+# frustrate a player.  Refer also to ../scorn/kar/mork.msg to see how more
+# than one dialog can reference the same dialog flags.
 
 import Crossfire
 import os
@@ -121,9 +124,9 @@ if (Crossfire.ScriptParameters() != None):
     try:
         f = open(filename,'rb')
     except:
-        NPC_Dialog_Error('Unable to read %s' % filename)
+        NPC_Dialog_Error('Error loading NPC dialog %s' % filename)
     else:
-        Crossfire.Log(Crossfire.LogDebug,"Reading from file %s" %filename)
+        Crossfire.Log(Crossfire.LogDebug,"Loading NPC dialog %s" %filename)
         parameters=cjson.decode(f.read())
         f.close()
 else:

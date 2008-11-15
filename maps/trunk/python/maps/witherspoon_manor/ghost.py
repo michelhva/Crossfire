@@ -104,32 +104,32 @@ def do_dialog():
 	"If I could see my body, I could really understand I'm dead and I could rest in peace.\n\n"
 	"Could you find my body, please?"
 	]
-	speech.addRule(DialogRule("help|yes?|how?", prer, rmsg, postr),0)
+	speech.addRule(DialogRule(["help","yes","how"], prer, rmsg, postr),0)
 	
 	prer = [["witherspoon_ghost","explain"]]
 	postr = [["witherspoon_ghost", "wait"]]
 	rmsg = ["I was walking near a lake west of Scorn, so maybe my body is buried here."]
-	speech.addRule(DialogRule("where|location", prer, rmsg, postr),1)
+	speech.addRule(DialogRule(["where","location"], prer, rmsg, postr),1)
 	
 	prer = [["witherspoon_ghost","explain"]]
 	postr = [["witherspoon_ghost", "*"]]
 	rmsg = ["Please, go find my body...", "Please, I need my body to rest in peace..."]
-	speech.addRule(DialogRule("*", prer, rmsg, postr),2)
+	speech.addRule(DialogRule(["*"], prer, rmsg, postr),2)
 	
 	prer = [["witherspoon_ghost","wait"]]
 	postr = [["witherspoon_ghost", "*"]]
 	rmsg = ["Please, go find my body.\n\nIt should be near the lake west of Scorn...", "Did you find my body yet? No?\n\nThen please, go search for it, west of Scorn there is a lake..."]
-	speech.addRule(DialogRule("*", prer, rmsg, postr, check_body),3)
+	speech.addRule(DialogRule(["*"], prer, rmsg, postr, check_body),3)
 	
 	prer = [["witherspoon_ghost","wait"]]
 	postr = [["witherspoon_ghost", "0"]]
 	rmsg = ["Thanks, you found my body!"]
-	speech.addRule(DialogRule("*", prer, rmsg, postr, found_body),4)
+	speech.addRule(DialogRule(["*"], prer, rmsg, postr, found_body),4)
 	
 	prer = [["witherspoon_ghost","*"]]
 	postr = [["witherspoon_ghost", "*"]]
 	rmsg = ["Please help me....", "Heeeeeeeelp...", "Pleaseeeee..."]
-	speech.addRule(DialogRule("*", prer, rmsg, postr, can_talk),5)
+	speech.addRule(DialogRule(["*"], prer, rmsg, postr, can_talk),5)
 	
 	speech.speak(Crossfire.WhatIsMessage())
 
