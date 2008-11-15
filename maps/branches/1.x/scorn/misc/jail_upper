@@ -60,7 +60,10 @@ end
 arch flagstone
 y 5
 end
-arch stwall_3_2
+arch swall_1_4_half
+y 5
+end
+arch stwall_2_1_1
 y 5
 end
 arch dungeon_magic
@@ -96,7 +99,10 @@ end
 arch flagstone
 y 9
 end
-arch stwall_3_2
+arch swall_1_4_half
+y 9
+end
+arch stwall_2_1_1
 y 9
 end
 arch dungeon_magic
@@ -606,7 +612,10 @@ end
 arch flagstone
 x 4
 end
-arch stwall_3_3
+arch stwall_2_1_2
+x 4
+end
+arch swall_1_1_half
 x 4
 end
 arch dungeon_magic
@@ -771,7 +780,11 @@ arch flagstone
 x 4
 y 14
 end
-arch stwall_3_1
+arch swall_1_2_half
+x 4
+y 14
+end
+arch stwall_2_1_2
 x 4
 y 14
 end
@@ -1230,7 +1243,10 @@ end
 arch flagstone
 x 8
 end
-arch stwall_3_3
+arch stwall_2_1_2
+x 8
+end
+arch swall_1_1_half
 x 8
 end
 arch dungeon_magic
@@ -1395,7 +1411,11 @@ arch flagstone
 x 8
 y 14
 end
-arch stwall_3_1
+arch swall_1_2_half
+x 8
+y 14
+end
+arch stwall_2_1_2
 x 8
 y 14
 end
@@ -1854,7 +1874,10 @@ end
 arch flagstone
 x 12
 end
-arch stwall_3_3
+arch stwall_2_1_2
+x 12
+end
+arch swall_1_1_half
 x 12
 end
 arch dungeon_magic
@@ -2009,7 +2032,11 @@ arch flagstone
 x 12
 y 14
 end
-arch stwall_3_1
+arch swall_1_2_half
+x 12
+y 14
+end
+arch stwall_2_1_2
 x 12
 y 14
 end
