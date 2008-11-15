@@ -56,6 +56,8 @@
 #   When there is more than one answer in that list, each time the rule is
 #   triggered, a single random reply will be selected from the list.
 #
+#   NOTE:  Answers may contain line breaks.  To insert one, use "\n".
+#
 # - Preconditions are flags that must match specific values in order for a
 #   rule to be triggered. These flags persist across gaming sessions and are
 #   useful for tracking the state of a conversation with an NPC.  Because of
