@@ -9,7 +9,7 @@ enter_x 14
 enter_y 4
 msg
 Created:  2006-05-26 Bort
-Modified: 2008-10-25 Rick Tanner
+Modified: 2008-11-14 Rick Tanner
 endmsg
 end
 arch woodfloor2
