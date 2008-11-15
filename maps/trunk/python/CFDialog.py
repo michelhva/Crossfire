@@ -153,6 +153,11 @@
 # rmsg = ["What ?", "Huh ?", "What do you want ?"]
 # speech.addRule(DialogRule(["*"], prer, rmsg, postr),2)
 #
+# The following link points to a page on the Crossfire Wiki shows all the
+# details needed to actually place this example in an actual game map:
+#
+#   http://wiki.metalforge.net/doku.php/cfdialog?s=cfdialog#a_simple_example
+#
 # A more complex example
 # ======================
 #
