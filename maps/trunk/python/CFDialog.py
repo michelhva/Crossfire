@@ -17,107 +17,137 @@
 # Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
 #
 # The author can be reached via e-mail at lauwenmark@gmail.com
-#
 
-# What is this about ?
-#=======================
-# This is a small set of utility classes, to help you creating
-# complex dialogs. It is made for those who do not want to
-# bother about complex programming, but just want to make a few
-# dialogs that are better than the @match system used in the
-# server.
+# What is CFDialog?
+# =================
 #
-# How to use this.
-#=======================
-# First, you need to import DialogRule and Dialog classes. Add the
-# following line at the beginning of your script:
-# from CFDialog import DialogRule, Dialog
-# Then, you can go to the dialogs themselves. A dialog is made of
-# several rules. Each rule is made of keywords, preconditions,
-# postconditions, answers and pre/postfunction.
-# - Keywords are what the rule will be an answer to. For example, if
-#   you want a rule to be triggered when the player will say "hi",
-#   then "hi" is the keyword to use. You can associate more than a
-#   keyword to a rule by concatenating them with the "|" character.
-#   Finally, "*" is a special keyword that means: "match everything".
-#   "*" is useful to provide generic answers.
-# - Answers are what will be said when the rule is triggered. This is
-#   what the NPC replies to the player. Answers are stored in a list.
-#   When there is more than one answer in that list, one will be
-#   selected at random.
-# - Preconditions are flags that must match for the rule to be triggered.
-#   Each precondition has a name and a value. The default value of a
-#   precondition is "0". The flags are stored into each player, and will
-#   survive between gaming sessions. They are useful to set the point in a
-#   dialog reached by a player - you can see those as an "NPC memory".  All
-#   conditions must have a name and a value. The ":" and ";" characters are
-#   forbidden. For a rule to be triggered, all the player's flags should match
-#   the preconditions.  A precondition is a list in the form: [key, value].
-#   All preconditions are stored in a list.  Each "value" may be a single
-#   string or a multiple choice string where the options are concatenated
-#   together with the "|" character.  When a value is set to "*", a match is
-#   not required to trigger the rule.
-#   - Postconditions are state changes to apply to the player's conditions
-#   after the rule has been triggered. The postcondition is a list in the
-#   form: [key, value] and the format is similar to preconditions except that
-#   the "|" has no special meaning in the value and is forbidden.  A value of
-#   "*" means that the condition will not be touched.
-#   - A prefunction is an optional callback function that will be called
-#   when a rule's preconditions are all matched, but before the rule is
-#   validated.
-#   The callback can do additional tests, and should return 1 to allow the rule
-#   to be selected, 0 to block the rule. The function arguments are the player
-#   and the actual rule being tested.
-#   - A postfunction is an optional callback that is called when a rule has
-#   been applied, and after the message is said. It can do additional custom
+# This is a small set of utility classes, to help you create complex dialogs.
+# It is made for those who do not want to bother about complex programming,
+# but just want to make a few dialogs that are better than the @match system
+# used in the server.
+#
+# How to use CFDialog
+# ===================
+#
+# First, create a script that imports the DialogRule and Dialog classes. Add
+# the following line at the beginning of your script:
+#
+#   from CFDialog import DialogRule, Dialog
+#
+# Next, build the dialog by creating a sequence of several rules made up of
+# keywords, answers, preconditions, and postconditions.  Optionally, define
+# prefunctions or postfunctions to enhance the capabilities of the rule.
+#
+# - Keywords are what the rule answers to.  For example, if you want a rule to
+#   trigger when the player says "hi", then "hi" must appear in the keyword
+#   list.  One or more keywords are specified in a string list in the form
+#   ["keyword"].  To associate more than one keyword with a rule, simply
+#   concatenate them together with a "|" character.  Eg. ["hi|hello"]. A "*"
+#   character is a special keyword that means: "match everything", and is
+#   useful to create rules that provide generic answers no matter what the
+#   player character says.
+#
+#   NOTE:  Like the @match system, CFDialog converts both keywords and the
+#          things the player says to lowercase before checking for a match,
+#          so it is never necessary to include multiple keywords that only
+#          differ in case.
+#
+# - Answers are what the rule will respond, or say, to the player when it is
+#   triggered.  This is what the NPC replies to the player. Answers are stored
+#   in a list of one or more strings in the form ["Answer1", "Answer2" ...].
+#   When there is more than one answer in that list, each time the rule is
+#   triggered, a single random reply will be selected from the list.
+#
+# - Preconditions are flags that must match specific values in order for a
+#   rule to be triggered. These flags persist across gaming sessions and are
+#   useful for tracking the state of a conversation with an NPC.  Because of
+#   this, it is possible for the same word to elicit different NPC responses
+#   depending on how flags have been set.  If dialogs are set to use identical
+#   locations, the flags and preconditions can be used by other NPC dialogs so
+#   that other NPCs can detect that the player heard specific information from
+#   another NPC.  The flags can also be used to help an individual NPC
+#   remember what he has said to the player in the past.  Flag settings are
+#   stored in the player file, so they persist as long as the character exists
+#   in the game.  Each rule contains a list of one or more preconditions, and
+#   each of the individual preconditions is itself a list of a flag name and
+#   one or more values in the following format: [["flag1", "value1", "value2"
+#   ...], ["flag2", "value3"] ...] where "..." indicates that the pattern may
+#   be repeated. The flag name is always the first item in a precondition
+#   list.  ":" and ";" characters are forbidden in the flag names and values.
+#   For a rule to be triggered, all its preconditions must be satisfied by
+#   settings in the player file.  To satisfy a precondition, one of the
+#   precondition values must match the identified flag setting in the player
+#   file. The default value of any precondition that has not been specifically
+#   set in the player file is "0".  If one of the precondition values is set
+#   to "*", a match is not required.
+#
+# - Postconditions are state changes to apply to the player file flags after
+#   the rule triggers. The postcondition is a nested list that has the same
+#   format as the precondition list except that each postcondition list only
+#   contains one value.  This is because the other main difference is that
+#   whereas a precondition checks a player file to see if a flag has a certain
+#   value, the postcondition causes a value to be stored into the player file,
+#   and it does not make sense to store more than one value into a single
+#   flag.  A value of "*" means that the player file flag will not be changed.
+#
+# - A prefunction is an optional callback function that will be called when a
+#   rule's preconditions are all matched, but before the rule is validated.
+#   The callback can do additional tests, and should return 1 to allow the
+#   rule to be selected, or 0 to block the rule.  The function arguments are
+#   the player and the actual rule being tested.
+#
+# - A postfunction is an optional callback that is called when a rule has been
+#   applied, and after the message is said. It can do additional custom
 #   processing. The function arguments are the player and the actual rule
 #   having been used.
 #
-# Once you have defined your rules, you have to assemble them into a dialog.
-# Each dialog involves somebody who triggers it, somebody who answers, and
-# has a unique name so it cannot be confused with other dialogs.
-# Typically, the "one who triggers" will be the player, and the "one who
-# answers" is an NPC the player was taking to. You are free to chose whatever
-# you want for the dialog name, as long as it contains no space or special
-# characters, and is not used by another dialog.
-# You can then add the rules you created to the dialog. Rules are parsed in
-# a given order, so you must add the most generic answer last.
-#
-# Like the @match system, CFDialog converts both match strings and the things
-# the player says to lowercase before checking for a match.
+# Once the rules are all defined, assemble them into a dialog.  Each dialog
+# involves somebody who triggers it, somebody who answers, and also a unique
+# name so it cannot be confused with other dialogs.  Typically, the "one who
+# triggers" will be the player, and the "one who answers" is an NPC the player
+# was taking to. You are free to choose whatever you want for the dialog name,
+# as long as it contains no whitespace or special characters, and as long as
+# it is not used by another dialog.  You can then add the rules you created to
+# the dialog. Rules are parsed in a given order, so you must add the most
+# generic answer last.
 #
 # A simple example
-#=================
-# I want to create a dialog for an old man. If I say "hello" or "hi" for the
-# first time, grandpa will greet me. If I say it for the second time, he'll
-# grumble (because he's like that, you know :)). I also need a generic answer
-# if I say whatever else.
-# In this example, the player is stored in 'player', and the old man in 'grandpa'.
-# What the player said is in 'message'.
+# ================
+#
+# If I want to create a dialog for an old man, I might want him to respond to
+# "hello" or "hi" differently the first time the player meets the NPC, and
+# differently for subsequent encounters. In this example, grandpa greets the
+# player cordially the first time, but grumbles subequent times (because he's
+# like that, you know :)). This example grandpa also has a generic answer for
+# what ever else is said to him.  In the example, the player is stored in
+# 'player', and the old man in 'grandpa', and the player said is in 'message'.
 #
 ## Dialog creation:
 # speech = Dialog(player, grandpa, "test_grandpa_01")
 #
 ## The first rule is the "hello" answer, so we place it at index 0 of the
-## rules list. The precondition is that we never said hello before.
-## The postcondition is to mark "hello" as "1", to remember we already
-## greeted grandpa.
+## rules list. The precondition is that we never said hello before. The
+## postcondition saves a value of "1" into a player file flag named "hello"
+## so grandpa remembers he has already met this player before.
+#
 # prer = [["hello","0"]]
 # postr = [["hello", "1"]]
 # rmsg = ["Hello, lad!","Hi, young fellow!","Howdy!"]
 # speech.addRule(DialogRule("hello|hi", prer, rmsg, postr),0)
 #
-## The second rule is the answer to an hello if we already said it before.
-## Notice that we used "*" for the postcondition value, meaning that we
-## are leaving it as it is.
+## The second rule is the answer to a greeting if he as already met the player
+## before.  Notice that "*" is used for the postcondition value, meaning that
+## the flag will remain set as it was prior to the rule triggering.
+#
 # prer = [["hello","1"]]
 # postr = [["hello", "*"]]
 # rmsg = ["I've heard, you know, I'm not deaf *grmbl*"]
 # speech.addRule(DialogRule("hello|hi", prer, rmsg, postr),1)
 #
-## And finally, the generic answer. This is the last rule of the list.
-## We don't need to match any condition, and we don't need to change them,
+## Finally, the generic answer is written. This is the last rule of the list.
+## We don't need to match any condition, and don't need to change any flags,
 ## so we use "*" in both cases this time.
+#
 # prer = [["hello","*"]]
 # postr = [["hello", "*"]]
 # rmsg = ["What ?", "Huh ?", "What do you want ?"]
@@ -125,15 +155,20 @@
 #
 # A more complex example
 # ======================
-# ../scorn/kar/gork.msg is an example that uses "|" in the precondition.  Note
-# how this lets the conversation fork and merge.  Once Gork tells us he has a
-# friend who lives in a tower, the player can fork the conversation to either
-# a friend or a tower thread.  Without the "|" in the precondition, it would
-# be harder to construct the conversation in a way that either fork merges
-# back into the main thread, while also allowing the player the player to
-# "remember" something Gork said previously and still use it in the original
-# context.  Note also how easy it is to allow the conversation to loop about
-# mid-thread.
+#
+# A ./misc/npc_dialog.py script has been written that uses CFDialog, but
+# allows the dialog data to be written in a slightly different format.
+# ../scorn/kar/gork.msg is an example that uses multiple keywords and multiple
+# precondition values.  Whereas the above example has a linear and predicable
+# conversation paths, note how a conversation with Gork can fork, merge, and
+# loop back on itself.  The example also illustrates how CFDialog can allow
+# dialogs to affect how other NPCs react to a player.  ../scorn/kar/mork.msg
+# is a completely different dialog, but it is part of a quest that requires
+# the player to interact with both NPCs in a specific way before the quest
+# prize can be obtained.  With the old @match system, once the player knew
+# the key words, he could short-circuit the conversation the map designer
+# intended to occur.  CFDialog constrains the player to follow the proper
+# conversation thread to qualify to receive the quest reward.
 #
 import Crossfire
 import string
@@ -194,7 +229,7 @@ class Dialog:
     def matchConditions(self,rule):
         for condition in rule.getPreconditions():
             status = self.getStatus(condition[0])
-            values=string.split(condition[1],"|")
+            values=condition[1:]
             for value in values:
                 if (status==value) or (value=="*"):
                     break
@@ -243,3 +278,4 @@ class Dialog:
                 finished=finished+";"
             finished=finished+key+":"+value
         self.__character.WriteKey("dialog_"+self.__location, finished, 1)
+
