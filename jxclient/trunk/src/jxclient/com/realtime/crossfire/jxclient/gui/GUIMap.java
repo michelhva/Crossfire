@@ -159,7 +159,7 @@ public class GUIMap extends GUIElement
         {
             synchronized (bufferedImageSync)
             {
-                final Graphics2D g = bufferedImage.createGraphics();
+                final Graphics2D g = createBufferGraphics();
                 try
                 {
                     final int x0 = map.getOffsetX();
@@ -197,7 +197,7 @@ public class GUIMap extends GUIElement
         {
             synchronized (bufferedImageSync)
             {
-                final Graphics2D g = bufferedImage.createGraphics();
+                final Graphics2D g = createBufferGraphics();
                 try
                 {
                     g.setColor(Color.BLACK);
@@ -254,7 +254,7 @@ public class GUIMap extends GUIElement
                     h = mapHeight+dy;
                 }
 
-                final Graphics2D g = bufferedImage.createGraphics();
+                final Graphics2D g = createBufferGraphics();
                 try
                 {
                     g.copyArea(offsetX+(x+dx)*tileSize, offsetY+(y+dy)*tileSize, w*tileSize, h*tileSize, -dx*tileSize, -dy*tileSize);
@@ -544,7 +544,7 @@ public class GUIMap extends GUIElement
 
         synchronized (bufferedImageSync)
         {
-            final Graphics2D g = bufferedImage.createGraphics();
+            final Graphics2D g = createBufferGraphics();
             try
             {
                 redrawAll(g);

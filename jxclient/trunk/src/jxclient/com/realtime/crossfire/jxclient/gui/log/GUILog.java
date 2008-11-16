@@ -120,7 +120,7 @@ public abstract class GUILog extends GUIElement implements GUIScrollable2
         final FontRenderContext context;
         synchronized (bufferedImageSync)
         {
-            final Graphics2D g = super.bufferedImage.createGraphics();
+            final Graphics2D g = createBufferGraphics();
             try
             {
                 context = g.getFontRenderContext();

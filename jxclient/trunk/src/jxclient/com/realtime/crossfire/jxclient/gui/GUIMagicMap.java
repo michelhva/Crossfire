@@ -134,28 +134,34 @@ public class GUIMagicMap extends GUIElement
         /** {@inheritDoc} */
         public void commandMagicmapReceived(final CrossfireCommandMagicmapEvent evt)
         {
+            int datapos = evt.getPos();
+            final byte[] data = evt.getData();
             synchronized (bufferedImageSync)
             {
-                int datapos = evt.getPos();
-                final byte[] data = evt.getData();
-                final Graphics2D g = bufferedImage.createGraphics();
-                g.setColor(Color.BLACK);
-                g.fillRect(0, 0, getWidth(), getHeight());
-                final int offsetX = playerX-evt.getPX()*TILE_SIZE;
-                final int offsetY = playerY-evt.getPY()*TILE_SIZE;
-                for (int y = 0; y < evt.getHeight(); y++)
+                final Graphics2D g = createBufferGraphics();
+                try
                 {
-                    for (int x = 0; x < evt.getWidth(); x++)
+                    g.setColor(Color.BLACK);
+                    g.fillRect(0, 0, getWidth(), getHeight());
+                    final int offsetX = playerX-evt.getPX()*TILE_SIZE;
+                    final int offsetY = playerY-evt.getPY()*TILE_SIZE;
+                    for (int y = 0; y < evt.getHeight(); y++)
                     {
-                        g.setColor(tileColors[data[datapos]&CrossfireCommandMagicmapEvent.FACE_COLOR_MASK]);
-                        final int sx = offsetX+x*TILE_SIZE;
-                        final int sy = offsetY+y*TILE_SIZE;
-                        g.fillRect(sx, sy, sx+TILE_SIZE, sy+TILE_SIZE);
-                        datapos++;
+                        for (int x = 0; x < evt.getWidth(); x++)
+                        {
+                            g.setColor(tileColors[data[datapos]&CrossfireCommandMagicmapEvent.FACE_COLOR_MASK]);
+                            final int sx = offsetX+x*TILE_SIZE;
+                            final int sy = offsetY+y*TILE_SIZE;
+                            g.fillRect(sx, sy, sx+TILE_SIZE, sy+TILE_SIZE);
+                            datapos++;
+                        }
                     }
+                    markPlayer(g);
                 }
-                markPlayer(g);
-                g.dispose();
+                finally
+                {
+                    g.dispose();
+                }
             }
             setChanged();
         }
@@ -172,38 +178,44 @@ public class GUIMagicMap extends GUIElement
         {
             synchronized (bufferedImageSync)
             {
-                final Graphics2D g = bufferedImage.createGraphics();
-                final CfMap map = mapUpdater.getMap();
-                final int dxPixels = dx*TILE_SIZE;
-                final int dyPixels = dy*TILE_SIZE;
-                if (Math.abs(dxPixels) >= getWidth() || Math.abs(dyPixels) >= getHeight())
+                final Graphics2D g = createBufferGraphics();
+                try
                 {
-                    redrawTiles(g, map, 0, 0, getWidth()/TILE_SIZE, getHeight()/TILE_SIZE);
+                    final CfMap map = mapUpdater.getMap();
+                    final int dxPixels = dx*TILE_SIZE;
+                    final int dyPixels = dy*TILE_SIZE;
+                    if (Math.abs(dxPixels) >= getWidth() || Math.abs(dyPixels) >= getHeight())
+                    {
+                        redrawTiles(g, map, 0, 0, getWidth()/TILE_SIZE, getHeight()/TILE_SIZE);
+                    }
+                    else
+                    {
+                        g.copyArea(dxPixels <= 0 ? 0 : dxPixels, dyPixels <= 0 ? 0 : dyPixels, dxPixels == 0 ? getWidth() : getWidth()-Math.abs(dxPixels), dyPixels == 0 ? getHeight() : getHeight()-Math.abs(dyPixels), -dxPixels, -dyPixels);
+                        g.setColor(Color.BLACK);
+                        if (dxPixels < 0)
+                        {
+                            redrawTiles(g, map, 0, 0, -dxPixels/TILE_SIZE, getHeight()/TILE_SIZE);
+                        }
+                        else if (dxPixels > 0)
+                        {
+                            redrawTiles(g, map, getWidth()/TILE_SIZE-dxPixels/TILE_SIZE, 0, getWidth()/TILE_SIZE, getHeight()/TILE_SIZE);
+                        }
+                        if (dyPixels < 0)
+                        {
+                            redrawTiles(g, map, 0, 0, getWidth()/TILE_SIZE, -dyPixels/TILE_SIZE);
+                        }
+                        else if (dyPixels > 0)
+                        {
+                            redrawTiles(g, map, 0, getHeight()/TILE_SIZE-dyPixels/TILE_SIZE, getWidth()/TILE_SIZE, getHeight()/TILE_SIZE);
+                        }
+                    }
+                    redrawSquare(g, map, (mapWidth-1)/2-dx, (mapHeight-1)/2-dy);
+                    markPlayer(g);
                 }
-                else
+                finally
                 {
-                    g.copyArea(dxPixels <= 0 ? 0 : dxPixels, dyPixels <= 0 ? 0 : dyPixels, dxPixels == 0 ? getWidth() : getWidth()-Math.abs(dxPixels), dyPixels == 0 ? getHeight() : getHeight()-Math.abs(dyPixels), -dxPixels, -dyPixels);
-                    g.setColor(Color.BLACK);
-                    if (dxPixels < 0)
-                    {
-                        redrawTiles(g, map, 0, 0, -dxPixels/TILE_SIZE, getHeight()/TILE_SIZE);
-                    }
-                    else if (dxPixels > 0)
-                    {
-                        redrawTiles(g, map, getWidth()/TILE_SIZE-dxPixels/TILE_SIZE, 0, getWidth()/TILE_SIZE, getHeight()/TILE_SIZE);
-                    }
-                    if (dyPixels < 0)
-                    {
-                        redrawTiles(g, map, 0, 0, getWidth()/TILE_SIZE, -dyPixels/TILE_SIZE);
-                    }
-                    else if (dyPixels > 0)
-                    {
-                        redrawTiles(g, map, 0, getHeight()/TILE_SIZE-dyPixels/TILE_SIZE, getWidth()/TILE_SIZE, getHeight()/TILE_SIZE);
-                    }
+                    g.dispose();
                 }
-                redrawSquare(g, map, (mapWidth-1)/2-dx, (mapHeight-1)/2-dy);
-                markPlayer(g);
-                g.dispose();
             }
             setChanged();
         }
@@ -217,19 +229,25 @@ public class GUIMagicMap extends GUIElement
         /** {@inheritDoc} */
         public void mapChanged(final CfMap map, final Set<CfMapSquare> changedSquares)
         {
+            final int x0 = map.getOffsetX();
+            final int y0 = map.getOffsetY();
             synchronized (bufferedImageSync)
             {
-                final int x0 = map.getOffsetX();
-                final int y0 = map.getOffsetY();
-                final Graphics2D g = bufferedImage.createGraphics();
-                for (final CfMapSquare mapSquare : changedSquares)
+                final Graphics2D g = createBufferGraphics();
+                try
                 {
-                    final int x = mapSquare.getX()+x0;
-                    final int y = mapSquare.getY()+y0;
-                    redrawSquare(g, map, x, y);
+                    for (final CfMapSquare mapSquare : changedSquares)
+                    {
+                        final int x = mapSquare.getX()+x0;
+                        final int y = mapSquare.getY()+y0;
+                        redrawSquare(g, map, x, y);
+                    }
+                    markPlayer(g);
                 }
-                markPlayer(g);
-                g.dispose();
+                finally
+                {
+                    g.dispose();
+                }
             }
             setChanged();
         }
@@ -246,11 +264,17 @@ public class GUIMagicMap extends GUIElement
         {
             synchronized (bufferedImageSync)
             {
-                final Graphics2D g = bufferedImage.createGraphics();
-                g.setColor(Color.BLACK);
-                g.fillRect(0, 0, getWidth(), getHeight());
-                markPlayer(g);
-                g.dispose();
+                final Graphics2D g = createBufferGraphics();
+                try
+                {
+                    g.setColor(Color.BLACK);
+                    g.fillRect(0, 0, getWidth(), getHeight());
+                    markPlayer(g);
+                }
+                finally
+                {
+                    g.dispose();
+                }
             }
             setChanged();
         }
@@ -271,11 +295,17 @@ public class GUIMagicMap extends GUIElement
             offsetY = playerY-((mapHeight-1)/2)*TILE_SIZE;
             synchronized (bufferedImageSync)
             {
-                final Graphics2D g = bufferedImage.createGraphics();
-                g.setColor(Color.BLACK);
-                g.fillRect(0, 0, getWidth(), getHeight());
-                redrawTiles(g, mapUpdater.getMap(), 0, 0, getWidth()/TILE_SIZE, getHeight()/TILE_SIZE);
-                g.dispose();
+                final Graphics2D g = createBufferGraphics();
+                try
+                {
+                    g.setColor(Color.BLACK);
+                    g.fillRect(0, 0, getWidth(), getHeight());
+                    redrawTiles(g, mapUpdater.getMap(), 0, 0, getWidth()/TILE_SIZE, getHeight()/TILE_SIZE);
+                }
+                finally
+                {
+                    g.dispose();
+                }
             }
         }
     };

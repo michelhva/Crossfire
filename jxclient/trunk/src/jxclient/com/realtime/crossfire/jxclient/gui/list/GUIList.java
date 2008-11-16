@@ -133,7 +133,7 @@ public abstract class GUIList extends ActivatableGUIElement
 
         synchronized (bufferedImageSync)
         {
-            final Graphics2D g = bufferedImage.createGraphics();
+            final Graphics2D g = createBufferGraphics();
             try
             {
                 render(g);

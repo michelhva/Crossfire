@@ -132,7 +132,7 @@ public abstract class GUIText extends ActivatableGUIElement implements KeyListen
         this.ignoreUpDown = ignoreUpDown;
         synchronized (bufferedImageSync)
         {
-            final Graphics2D g = bufferedImage.createGraphics();
+            final Graphics2D g = createBufferGraphics();
             try
             {
                 fontRenderContext = g.getFontRenderContext();
