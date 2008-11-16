@@ -434,15 +434,15 @@ public class GUIMap extends GUIElement
             {
                 final Face headFace = headMapSquare.getFace(layer);
                 assert headFace != null; // getHeadMapSquare() would have been cleared in this case
-                final ImageIcon imageIcon = useBigImages ? facesManager.getScaledImageIcon(headFace.getFaceNum()) : facesManager.getOriginalImageIcon(headFace.getFaceNum());
                 final int dx = headMapSquare.getX()-mapSquareX;
                 final int dy = headMapSquare.getY()-mapSquareY;
                 assert dx > 0 || dy > 0;
-                final int sx = imageIcon.getIconWidth()-tileSize*(dx+1);
-                final int sy = imageIcon.getIconHeight()-tileSize*(dy+1);
+                final ImageIcon imageIcon = useBigImages ? facesManager.getScaledImageIcon(headFace.getFaceNum()) : facesManager.getOriginalImageIcon(headFace.getFaceNum());
+                final int sx = imageIcon.getIconWidth()-tileSize*dx;
+                final int sy = imageIcon.getIconHeight()-tileSize*dy;
                 g.drawImage(imageIcon.getImage(),
                     px, py, px2, py2,
-                    sx, sy, sx+tileSize, sy+tileSize,
+                    sx-tileSize, sy-tileSize, sx, sy,
                     null);
             }
 
