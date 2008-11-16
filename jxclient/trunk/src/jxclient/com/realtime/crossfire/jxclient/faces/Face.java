@@ -34,6 +34,11 @@ import javax.swing.ImageIcon;
 public class Face
 {
     /**
+     * The size of one square in pixels.
+     */
+    public static final int SQUARE_SIZE = 32;
+
+    /**
      * The face id as sent by the server.
      */
     private final int faceNum;
@@ -53,7 +58,6 @@ public class Face
     private int tileHeight = 1;
 
     private SoftReference<FaceImages> faceImages = null;
-    static final int SQUARE_SIZE = 32;
 
     /**
      * Creates a new instance.
