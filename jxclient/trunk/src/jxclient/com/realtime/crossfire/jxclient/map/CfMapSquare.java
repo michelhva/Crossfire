@@ -75,15 +75,12 @@ public class CfMapSquare
     private final CfMapSquare[] heads = new CfMapSquare[CrossfireMap2Command.NUM_LAYERS];
 
     /**
-     * Create a new (empty) square.
-     *
+     * Creates a new (empty) square.
      * @param mapSquareListener the map square listener to notify
-     *
-     * @param x The absolute map x-coordinate of the top left corner of this
-     * patch.
-     *
-     * @param y The absolute map y-coordinate of the top left corner of this
-     * patch.
+     * @param x the absolute map x-coordinate of the top left corner of this
+     * patch
+     * @param y the absolute map y-coordinate of the top left corner of this
+     * patch
      */
     public CfMapSquare(final CfMapSquareListener mapSquareListener, final int x, final int y)
     {
@@ -93,9 +90,8 @@ public class CfMapSquare
     }
 
     /**
-     * Return the absolute map x-coordinate of this square.
-     *
-     * @return The x-coordinate.
+     * Returns the absolute map x-coordinate of this square.
+     * @return the x-coordinate
      */
     public int getX()
     {
@@ -103,9 +99,8 @@ public class CfMapSquare
     }
 
     /**
-     * Return the absolute map y-coordinate of this square.
-     *
-     * @return The y-coordinate.
+     * Returns the absolute map y-coordinate of this square.
+     * @return the y-coordinate
      */
     public int getY()
     {
@@ -113,7 +108,7 @@ public class CfMapSquare
     }
 
     /**
-     * Mark this square as dirty, i.e., needing redraw.
+     * Marks this square as dirty, i.e., needing redraw.
      */
     public void dirty()
     {
@@ -121,7 +116,7 @@ public class CfMapSquare
     }
 
     /**
-     * Mark this square as 'fog-og-war'. The values will be still returned
+     * Marks this square as 'fog-og-war'. The values will be still returned
      * until a new value will be set.
      */
     public void clear()
@@ -155,11 +150,9 @@ public class CfMapSquare
     }
 
     /**
-     * Set the darkness value of this square.
-     *
-     * @param darkness The new darkness value between <code>0</code> and
-     * <code>255</code>. 0=dark, 255=full bright.
-     *
+     * Sets the darkness value of this square.
+     * @param darkness the new darkness value between <code>0</code> and
+     * <code>255</code>; 0=dark, 255=full bright
      * @return whether fog-of-war has been cleared
      */
     public boolean setDarkness(final int darkness)
@@ -176,9 +169,8 @@ public class CfMapSquare
     }
 
     /**
-     * Determine the darkness value of this square.
-     *
-     * @return The darkness value of the square. 0=dark, 255=full bright.
+     * Returns the darkness value of this square.
+     * @return the darkness value of the square. 0=dark, 255=full bright
      */
     public int getDarkness()
     {
@@ -186,12 +178,10 @@ public class CfMapSquare
     }
 
     /**
-     * Set the face of a layer.
-     *
-     * @param layer The layer for the new face between <code>0</code> and
-     * <code>LAYERS-1</code>.
-     *
-     * @param face The face to set.
+     * Sets the face of a layer.
+     * @param layer the layer for the new face between <code>0</code> and
+     * <code>LAYERS-1</code>
+     * @param face the face to set
      */
     public void setFace(final int layer, final Face face)
     {
@@ -203,11 +193,9 @@ public class CfMapSquare
     }
 
     /**
-     * Return the face of a layer.
-     *
-     * @param layer The layer to return the face.
-     *
-     * @return The face value.
+     * Returns the face of a layer.
+     * @param layer the layer to return the face
+     * @return the face value
      */
     public Face getFace(final int layer)
     {
@@ -215,13 +203,11 @@ public class CfMapSquare
     }
 
     /**
-     * Set the map square containing the head face for a layer.
-     *
-     * @param layer The layer for the new head face between <code>0</code> and
-     * <code>LAYERS-1</code>.
-     *
-     * @param mapSquare The map square containing the head face; may be
-     * <code>null</code>.
+     * Sets the map square containing the head face for a layer.
+     * @param layer the layer for the new head face between <code>0</code> and
+     * <code>LAYERS-1</code>
+     * @param mapSquare the map square containing the head face; may be
+     * <code>null</code>
      */
     public void setHeadMapSquare(final int layer, final CfMapSquare mapSquare)
     {
@@ -233,12 +219,10 @@ public class CfMapSquare
     }
 
     /**
-     * Return the map square of the head of a multi-square object.
-     *
-     * @param layer The layer to return the head for.
-     *
-     * @return The head map square, or <code>null</code> if this square does
-     * not contain a multi-tail.
+     * Returns the map square of the head of a multi-square object.
+     * @param layer the layer to return the head for
+     * @return the head map square, or <code>null</code> if this square does
+     * not contain a multi-tail
      */
     public CfMapSquare getHeadMapSquare(final int layer)
     {
@@ -253,9 +237,8 @@ public class CfMapSquare
     }
 
     /**
-     * Determine if the square is not up-to-date.
-     *
-     * @return Whether this square contains fog-of-war data.
+     * Determines if the square is not up-to-date.
+     * @return whether this square contains fog-of-war data
      */
     public boolean isFogOfWar()
     {
@@ -263,9 +246,8 @@ public class CfMapSquare
     }
 
     /**
-     * Return and reset the "fog-of-war" flag.
-     *
-     * @return Whether this square's fog-of-war state has been reset.
+     * Returns and resets the "fog-of-war" flag.
+     * @return whether this square's fog-of-war state has been reset
      */
     public boolean resetFogOfWar()
     {

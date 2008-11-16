@@ -23,7 +23,6 @@ import com.realtime.crossfire.jxclient.faces.Face;
 
 /**
  * Represents a square area of {@link CfMapSquare}s.
- *
  * @author Andreas Kirschbaum
  */
 public class CfMapPatch
@@ -44,15 +43,12 @@ public class CfMapPatch
     private final CfMapSquare[][] square = new CfMapSquare[SIZE][SIZE];
 
     /**
-     * Create a new (empty) patch.
-     *
-     * @param mapSquareListener the map square listener to notify.
-     *
-     * @param x0 The absolute map x-coordinate of the top left corner of this
-     * patch.
-     *
-     * @param y0 The absolute map y-coordinate of the top left corner of this
-     * patch.
+     * Creates a new (empty) patch.
+     * @param mapSquareListener the map square listener to notify
+     * @param x0 the absolute map x-coordinate of the top left corner of this
+     * patch
+     * @param y0 the absolute map y-coordinate of the top left corner of this
+     * patch
      */
     public CfMapPatch(final CfMapSquareListener mapSquareListener, final int x0, final int y0)
     {
@@ -66,11 +62,9 @@ public class CfMapPatch
     }
 
     /**
-     * Mark a square as dirty.
-     *
-     * @param x The x-coordinate of the square.
-     *
-     * @param y The y-coordinate of the square.
+     * Marks a square as dirty.
+     * @param x the x-coordinate of the square
+     * @param y the y-coordinate of the square
      */
     public void dirty(final int x, final int y)
     {
@@ -78,12 +72,10 @@ public class CfMapPatch
     }
 
     /**
-     * Clear the content of one square. Note: the old square content remains
+     * Clears the content of one square. Note: the old square content remains
      * available until at least one value will be changed ("fog of war").
-     *
-     * @param x The x-coordinate of the square.
-     *
-     * @param y The y-coordinate of the square.
+     * @param x the x-coordinate of the square
+     * @param y the y-coordinate of the square
      */
     public void clearSquare(final int x, final int y)
     {
@@ -91,14 +83,10 @@ public class CfMapPatch
     }
 
     /**
-     * Set the darkness value of one square.
-     *
-     * @param x The x-coordinate of the square.
-     *
-     * @param y The y-coordinate of the square.
-     *
-     * @param darkness The darkness value to set. 0=dark, 255=full bright.
-     *
+     * Sets the darkness value of one square.
+     * @param x the x-coordinate of the square
+     * @param y the y-coordinate of the square
+     * @param darkness the darkness value to set; 0=dark, 255=full bright
      * @return whether fog-of-war has been cleared
      */
     public boolean setDarkness(final int x, final int y, final int darkness)
@@ -107,14 +95,11 @@ public class CfMapPatch
     }
 
     /**
-     * Determine the darkness value of one square.
-     *
-     * @param x The x-coordinate of the square.
-     *
-     * @param y The y-coordinate of the square.
-     *
-     * @return The darkness value of the square. 0=dark, 255=full bright. Not
-     * yet set faces return 0.
+     * Determines the darkness value of one square.
+     * @param x the x-coordinate of the square
+     * @param y the y-coordinate of the square
+     * @return the darkness value of the square; 0=dark, 255=full bright. Not
+     * yet set faces return 0
      */
     public int getDarkness(final int x, final int y)
     {
@@ -122,16 +107,12 @@ public class CfMapPatch
     }
 
     /**
-     * Determine the face of one square.
-     *
-     * @param x The x-coordinate of the square.
-     *
-     * @param y The y-coordinate of the square.
-     *
-     * @param layer The layer of the face.
-     *
-     * @return The face; dark (i.e. not yet set) faces return
-     * <code>null</code>.
+     * Determines the face of one square.
+     * @param x the x-coordinate of the square
+     * @param y the y-coordinate of the square
+     * @param layer the layer of the face
+     * @return the face; dark (i.e. not yet set) faces return
+     * <code>null</code>
      */
     public Face getFace(final int x, final int y, final int layer)
     {
@@ -140,16 +121,12 @@ public class CfMapPatch
 
     /**
      * Sets the map square containing the head face for a layer.
-     *
-     * @param x The x-coordinate of the square.
-     *
-     * @param y The y-coordinate of the square.
-     *
-     * @param layer The layer for the new head face betweem <code>0</code> and
-     * <code>LAYERS-1</code>.
-     *
-     * @param mapSquare The map square containing the head face; may be
-     * <code>null</code>.
+     * @param x the x-coordinate of the square
+     * @param y the y-coordinate of the square
+     * @param layer the layer for the new head face betweem <code>0</code> and
+     * <code>LAYERS-1</code>
+     * @param mapSquare the map square containing the head face; may be
+     * <code>null</code>
      */
     public void setHeadMapSquare(final int x, final int y, final int layer, final CfMapSquare mapSquare)
     {
@@ -158,15 +135,11 @@ public class CfMapPatch
 
     /**
      * Returns the map square of the head of a multi-square object.
-     *
-     * @param x The x-coordinate of the square.
-     *
-     * @param y The y-coordinate of the square.
-     *
-     * @param layer The layer to return the head for.
-     *
-     * @return The head map square, or <code>null</code> if this square does
-     * not contain a multi-tail.
+     * @param x the x-coordinate of the square
+     * @param y the y-coordinate of the square
+     * @param layer the layer to return the head for
+     * @return the head map square, or <code>null</code> if this square does
+     * not contain a multi-tail
      */
     public CfMapSquare getHeadMapSquare(final int x, final int y, final int layer)
     {
@@ -174,13 +147,10 @@ public class CfMapPatch
     }
 
     /**
-     * Determine if a square is not up-to-date.
-     *
-     * @param x The x-coordinate of the square.
-     *
-     * @param y The y-coordinate of the square.
-     *
-     * @return Whether the square is up-to-date.
+     * Determines if a square is not up-to-date.
+     * @param x the x-coordinate of the square
+     * @param y the y-coordinate of the square
+     * @return whether the square is up-to-date
      */
     public boolean isFogOfWar(final int x, final int y)
     {
@@ -188,13 +158,10 @@ public class CfMapPatch
     }
 
     /**
-     * Return and reset the "fog-of-war" flag of a square.
-     *
-     * @param x The x-coordinate of the square.
-     *
-     * @param y The y-coordinate of the square.
-     *
-     * @return Whether this square's fog-of-war state has been reset.
+     * Returns and reset the "fog-of-war" flag of a square.
+     * @param x the x-coordinate of the square
+     * @param y the y-coordinate of the square
+     * @return whether this square's fog-of-war state has been reset
      */
     public boolean resetFogOfWar(final int x, final int y)
     {
@@ -202,13 +169,10 @@ public class CfMapPatch
     }
 
     /**
-     * Return one map square.
-     *
-     * @param x The x-coordinate of the square.
-     *
-     * @param y The y-coordinate of the square.
-     *
-     * @return The map square.
+     * Returns one map square.
+     * @param x the x-coordinate of the square
+     * @param y the y-coordinate of the square
+     * @return the map square
      */
     public CfMapSquare getSquare(final int x, final int y)
     {

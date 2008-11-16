@@ -21,7 +21,6 @@ package com.realtime.crossfire.jxclient.map;
 
 /**
  * A location on the map.
- *
  * @author Andreas Kirschbaum
  */
 public class Location
@@ -42,13 +41,10 @@ public class Location
     private final int layer;
 
     /**
-     * Create a new location.
-     *
-     * @param x The x-coordinate.
-     *
-     * @param y The y-coordinate.
-     *
-     * @param layer The layer.
+     * Creates a new location.
+     * @param x the x-coordinate
+     * @param y the y-coordinate
+     * @param layer the layer
      */
     public Location(final int x, final int y, final int layer)
     {
@@ -57,16 +53,28 @@ public class Location
         this.layer = layer;
     }
 
+    /**
+     * Returns the x-coordinate.
+     * @return the x-coordinate
+     */
     public int getX()
     {
         return x;
     }
 
+    /**
+     * Returns the y-coordinate.
+     * @return the y-coordinate
+     */
     public int getY()
     {
         return y;
     }
 
+    /**
+     * Returns the layer.
+     * @return the layer
+     */
     public int getLayer()
     {
         return layer;

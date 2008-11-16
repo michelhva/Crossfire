@@ -31,7 +31,6 @@ import java.util.Map;
  *
  * <p>The map will be automatically enlarged by accesses to new squares. Not
  * yet set squares are considered dark.
- *
  * @author Andreas Kirschbaum
  */
 public class CfMap
@@ -85,7 +84,13 @@ public class CfMap
      * Result values for {@link #getMapPatch(int,int)} and {@link
      * #expandTo(int,int)}.
      */
-    private int ox, oy;
+    private int ox;
+
+    /**
+     * Result values for {@link #getMapPatch(int,int)} and {@link
+     * #expandTo(int,int)}.
+     */
+    private int oy;
 
     /**
      * Left edge of viewable area.
@@ -109,7 +114,7 @@ public class CfMap
     private final Map<Point, CfMultiSquare> outOfMapMultiFaces = new HashMap<Point, CfMultiSquare>();
 
     /**
-     * Create a new (empty) map.
+     * Creates a new (empty) map.
      * @param mapSquareListener the map square listener instance to notify
      */
     public CfMap(final CfMapSquareListener mapSquareListener)
@@ -118,7 +123,7 @@ public class CfMap
     }
 
     /**
-     * Forget about all multi-square faces in out-of-map bounds squares.
+     * Forgets about all multi-square faces in out-of-map bounds squares.
      */
     public void clearMultiFaces()
     {
@@ -130,13 +135,10 @@ public class CfMap
     }
 
     /**
-     * Set the darkness value of one square.
-     *
-     * @param x The x-coordinate of the square.
-     *
-     * @param y The y-coordinate of the square.
-     *
-     * @param darkness The darkness value to set. 0=dark, 255=full bright.
+     * Sets the darkness value of one square.
+     * @param x the x-coordinate of the square
+     * @param y the y-coordinate of the square
+     * @param darkness the darkness value to set; 0=dark, 255=full bright
      */
     public void setDarkness(final int x, final int y, final int darkness)
     {
@@ -150,14 +152,11 @@ public class CfMap
     }
 
     /**
-     * Determine the darkness value of one square.
-     *
-     * @param x The x-coordinate of the square.
-     *
-     * @param y The y-coordinate of the square.
-     *
-     * @return The darkness value of the square. 0=dark, 255=full bright. Not
-     * yet set faces return 0.
+     * Returns the darkness value of one square.
+     * @param x the x-coordinate of the square
+     * @param y the y-coordinate of the square
+     * @return the darkness value of the square; 0=dark, 255=full bright; not
+     * yet set faces return 0
      */
     public int getDarkness(final int x, final int y)
     {
@@ -166,17 +165,12 @@ public class CfMap
     }
 
     /**
-     * Set the face of one square. This function clears fog-of-war state if
+     * Sets the face of one square. This function clears fog-of-war state if
      * necessary.
-     *
-     * @param x The x-coordinate of the square.
-     *
-     * @param y The y-coordinate of the square.
-     *
-     * @param layer The layer to set.
-     *
-     * @param face The face to set; may be <code>null</code> to remove the
-     * face.
+     * @param x the x-coordinate of the square
+     * @param y the y-coordinate of the square
+     * @param layer the layer to set
+     * @param face the face to set; may be <code>null</code> to remove the face
      */
     public void setFace(final int x, final int y, final int layer, final Face face)
     {
@@ -196,16 +190,11 @@ public class CfMap
     }
 
     /**
-     * Set the face of one square.
-     *
-     * @param x The x-coordinate of the square.
-     *
-     * @param y The y-coordinate of the square.
-     *
-     * @param layer The layer to set.
-     *
-     * @param face The face to set; may be <code>null</code> to remove the
-     * face.
+     * Sets the face of one square.
+     * @param x the x-coordinate of the square
+     * @param y the y-coordinate of the square
+     * @param layer the layer to set
+     * @param face the face to set; may be <code>null</code> to remove the face
      */
     private void setFaceInternal(final int x, final int y, final int layer, final Face face)
     {
@@ -224,20 +213,14 @@ public class CfMap
     }
 
     /**
-     * Add or remove "head" pointer to/from tail-parts of a face.
-     *
-     * @param x The x-coordinate of the tail part to expand.
-     *
-     * @param y The y-coordinate of the tail part to expand.
-     *
-     * @param layer The layer to expand.
-     *
-     * @param face The face to expand.
-     *
-     * @param oldMapSquare The map square of the tail part.
-     *
-     * @param newMapSquare The map square of the tail part to add pointers, or
-     * <code>null</code> to remove pointers.
+     * Adds or removes "head" pointer to/from tail-parts of a face.
+     * @param x the x-coordinate of the tail part to expand
+     * @param y the y-coordinate of the tail part to expand
+     * @param layer the layer to expand
+     * @param face the face to expand
+     * @param oldMapSquare the map square of the tail part
+     * @param newMapSquare the map square of the tail part to add pointers, or
+     * <code>null</code> to remove pointers
      */
     private void expandFace(final int x, final int y, final int layer, final Face face, final CfMapSquare oldMapSquare, final CfMapSquare newMapSquare)
     {
@@ -265,16 +248,12 @@ public class CfMap
     }
 
     /**
-     * Mark one face as "dirty". This function is called when the head part
+     * Marks one face as "dirty". This function is called when the head part
      * becomes a fog-of-war tile. This means the face has to be redrawn.
-     *
-     * @param x The x-coordinate of the tail part of the face.
-     *
-     * @param y The y-coordinate of the tail part of the face.
-     *
-     * @param layer The layer of the face.
-     *
-     * @param face The face to mark dirty.
+     * @param x the x-coordinate of the tail part of the face
+     * @param y the y-coordinate of the tail part of the face
+     * @param layer the layer of the face
+     * @param face the face to mark dirty
      */
     private void dirtyFace(final int x, final int y, final int layer, final Face face)
     {
@@ -300,16 +279,12 @@ public class CfMap
     }
 
     /**
-     * Determine the face of one square.
-     *
-     * @param x The x-coordinate of the square.
-     *
-     * @param y The y-coordinate of the square.
-     *
-     * @param layer The layer of the face.
-     *
-     * @return The face; dark (i.e. not yet set) faces return
-     * <code>null</code>.
+     * Determines the face of one square.
+     * @param x the x-coordinate of the square
+     * @param y the y-coordinate of the square
+     * @param layer the layer of the face
+     * @return the face; dark (i.e. not yet set) faces return
+     * <code>null</code>
      */
     public Face getFace(final int x, final int y, final int layer)
     {
@@ -318,17 +293,13 @@ public class CfMap
     }
 
     /**
-     * Set the map square containing the head face for a layer.
-     *
-     * @param x The x-coordinate of the square.
-     *
-     * @param y The y-coordinate of the square.
-     *
-     * @param layer The layer for the new head face between <code>0</code> and
-     * <code>LAYERS-1</code>.
-     *
-     * @param mapSquare The map square containing the head face; may be
-     * <code>null</code>.
+     * Sets the map square containing the head face for a layer.
+     * @param x the x-coordinate of the square
+     * @param y the y-coordinate of the square
+     * @param layer the layer for the new head face between <code>0</code> and
+     * <code>LAYERS-1</code>
+     * @param mapSquare the map square containing the head face; may be
+     * <code>null</code>
      */
     private void setHeadMapSquare(final int x, final int y, final int layer, final CfMapSquare mapSquare)
     {
@@ -336,16 +307,12 @@ public class CfMap
     }
 
     /**
-     * Return the map square of the head of a multi-square object.
-     *
-     * @param x The x-coordinate of the square.
-     *
-     * @param y The y-coordinate of the square.
-     *
-     * @param layer The layer to return the head for.
-     *
-     * @return The head map square, or <code>null</code> if this square does
-     * not contain a multi-tail.
+     * Returns the map square of the head of a multi-square object.
+     * @param x the x-coordinate of the square
+     * @param y the y-coordinate of the square
+     * @param layer the layer to return the head for
+     * @return the head map square, or <code>null</code> if this square does
+     * not contain a multi-tail
      */
     public CfMapSquare getHeadMapSquare(final int x, final int y, final int layer)
     {
@@ -355,14 +322,10 @@ public class CfMap
 
     /**
      * Set the face of an out-of-map bounds multi-face object.
-     *
-     * @param x The x-coordinate of the square.
-     *
-     * @param y The y-coordinate of the square.
-     *
-     * @param layer The layer to set.
-     *
-     * @param face The face to set.
+     * @param x the x-coordinate of the square
+     * @param y the y-coordinate of the square
+     * @param layer the layer to set
+     * @param face the face to set
      */
     public void setMultiFace(final int x, final int y, final int layer, final Face face)
     {
@@ -370,14 +333,11 @@ public class CfMap
     }
 
     /**
-     * Return (or create if it doesn't yet exist) a {@link CfMultiSquare}
+     * Returns (or create if it doesn't yet exist) a {@link CfMultiSquare}
      * object for a given coordinate.
-     *
-     * @param x The x-coordinate.
-     *
-     * @param y The y-coordinate.
-     *
-     * @return The multi square object for the coordinate.
+     * @param x the x-coordinate
+     * @param y the y-coordinate
+     * @return the multi square object for the coordinate
      */
     private CfMultiSquare getOrCreateMultiSquare(final int x, final int y)
     {
@@ -394,12 +354,10 @@ public class CfMap
     }
 
     /**
-     * Clear the content of one square. Note: the old square content remains
+     * Clears the content of one square. Note: the old square content remains
      * available until at least one value will be changed ("fog of war").
-     *
-     * @param x The x-coordinate of the square.
-     *
-     * @param y The y-coordinate of the square.
+     * @param x the x-coordinate of the square
+     * @param y the y-coordinate of the square
      */
     public void clearSquare(final int x, final int y)
     {
@@ -416,11 +374,9 @@ public class CfMap
     }
 
     /**
-     * Mark a single square as dirty.
-     *
-     * @param x The x-coordinate of the square.
-     *
-     * @param y The y-coordinate of the square.
+     * Marks a single square as dirty.
+     * @param x the x-coordinate of the square
+     * @param y the y-coordinate of the square
      */
     public void dirty(final int x, final int y)
     {
@@ -428,13 +384,10 @@ public class CfMap
     }
 
     /**
-     * Determine if the tile is not up-to-date.
-     *
-     * @param x The x-coordinate of the square.
-     *
-     * @param y The y-coordinate of the square.
-     *
-     * @return Whether the tile contains fog-of-war data.
+     * Determines if the tile is not up-to-date.
+     * @param x the x-coordinate of the square
+     * @param y the y-coordinate of the square
+     * @return whether the tile contains fog-of-war data
      */
     public boolean isFogOfWar(final int x, final int y)
     {
@@ -443,14 +396,10 @@ public class CfMap
     }
 
     /**
-     * Check if a given position is within the defined map area.
-     *
+     * Checks if a given position is within the defined map area.
      * <p>Returns additional information in {@link #ox} and {@link #oy}.
-     *
-     * @param x The x-coordinate to check.
-     *
-     * @param y The y-coordinate to check.
-     *
+     * @param x the x-coordinate to check
+     * @param y the y-coordinate to check
      * @return the map patch or <code>null</code> if the coordinates are out of
      * map bounds
      */
@@ -485,11 +434,9 @@ public class CfMap
     }
 
     /**
-     * Scroll the map.
-     *
-     * @param dx The x-difference to scroll.
-     *
-     * @param dy The y-difference to scroll.
+     * Scrolls the map.
+     * @param dx the x-difference to scroll
+     * @param dy the y-difference to scroll
      */
     public void scroll(final int dx, final int dy)
     {
@@ -507,12 +454,9 @@ public class CfMap
     }
 
     /**
-     * (Possibly) expand the defined area of the map to a given position.
-     *
-     * @param x The x-coordinate to expand the defined area to.
-     *
-     * @param y The y-coordinate to expand the defined area to.
-     *
+     * (Possibly) expands the defined area of the map to a given position.
+     * @param x the x-coordinate to expand the defined area to
+     * @param y the y-coordinate to expand the defined area to
      * @return the map patch or <code>null</code> if the coordinates are out of
      * map bounds
      */
@@ -540,13 +484,11 @@ public class CfMap
     }
 
     /**
-     * Increase the defined area of the map.
-     *
-     * @param dx The increase in x-direction. dx&lt;0 means "expand (-dx) tiles
-     * to the left", dx&gt;0 means "expand (dx) tiles to the right".
-     *
-     * @param dy The increase in y-direction. dy&lt;0 means "expand (-dy) tiles
-     * to the top", dy&gt;0 means "expand (dy) tiles to the bottom".
+     * Increases the defined area of the map.
+     * @param dx the increase in x-direction; dx&lt;0 means "expand (-dx) tiles
+     * to the left", dx&gt;0 means "expand (dx) tiles to the right"
+     * @param dy the increase in y-direction; dy&lt;0 means "expand (-dy) tiles
+     * to the top", dy&gt;0 means "expand (dy) tiles to the bottom"
      */
     private void increase(final int dx, final int dy)
     {
@@ -742,14 +684,11 @@ public class CfMap
     }
 
     /**
-     * Calculate the number of patches needed to hold tiles between two patch
+     * Calculates the number of patches needed to hold tiles between two patch
      * coordinates.
-     *
-     * @param min The minimum coordinate.
-     *
-     * @param max The maximum coordinate.
-     *
-     * @return The number of patches.
+     * @param min the minimum coordinate
+     * @param max the maximum coordinate
+     * @return the number of patches
      */
     private static int size(final int min, final int max)
     {
@@ -757,13 +696,10 @@ public class CfMap
     }
 
     /**
-     * Return a map square.
-     *
-     * @param x The x-coordinate.
-     *
-     * @param y The y-coordinate.
-     *
-     * @return The map square.
+     * Returns a map square.
+     * @param x the x-coordinate
+     * @param y the y-coordinate
+     * @return the map square
      */
     public CfMapSquare getMapSquare(final int x, final int y)
     {
@@ -771,10 +707,9 @@ public class CfMap
     }
 
     /**
-     * Return the offset to convert an absolute x-coordinate of a map square
+     * Returns the offset to convert an absolute x-coordinate of a map square
      * ({@link CfMapSquare#getX()} to a relative x-coordinate.
-     *
-     * @return The x offset.
+     * @return the x offset
      */
     public int getOffsetX()
     {
@@ -782,10 +717,9 @@ public class CfMap
     }
 
     /**
-     * Return the offset to convert an absolute y-coordinate of a map square
+     * Returns the offset to convert an absolute y-coordinate of a map square
      * ({@link CfMapSquare#getY()} to a relative y-coordinate.
-     *
-     * @return The y offset.
+     * @return the y offset
      */
     public int getOffsetY()
     {
