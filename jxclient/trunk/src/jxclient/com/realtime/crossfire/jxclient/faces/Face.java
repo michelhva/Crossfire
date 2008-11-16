@@ -53,10 +53,19 @@ public class Face
      */
     private final int faceChecksum;
 
+    /**
+     * The face width in tiles.
+     */
     private int tileWidth = 1;
 
+    /**
+     * The face height in tiles.
+     */
     private int tileHeight = 1;
 
+    /**
+     * The images for this face. Set to <code>null</code> if unknown.
+     */
     private SoftReference<FaceImages> faceImages = null;
 
     /**
