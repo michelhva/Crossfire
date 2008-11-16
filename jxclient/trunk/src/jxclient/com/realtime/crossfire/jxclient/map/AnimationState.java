@@ -24,7 +24,6 @@ import com.realtime.crossfire.jxclient.mapupdater.CfMapUpdater;
 
 /**
  * Animation state information.
- *
  * @author Andreas Kirschbaum
  */
 public class AnimationState
@@ -60,12 +59,9 @@ public class AnimationState
     private int index = 0;
 
     /**
-     * Create a new instance.
-     *
-     * @param animation The animation to display.
-     *
-     * @param type The animation type.
-     *
+     * Creates a new instance.
+     * @param animation the animation to display
+     * @param type the animation type
      * @param mapUpdater the instance to use
      */
     public AnimationState(final Animation animation, final int type, final CfMapUpdater mapUpdater)
@@ -76,9 +72,8 @@ public class AnimationState
     }
 
     /**
-     * Set the animation speed.
-     *
-     * @param speed The new animation speed to set.
+     * Sets the animation speed.
+     * @param speed the new animation speed to set
      */
     public void setSpeed(final int speed)
     {
@@ -90,10 +85,8 @@ public class AnimationState
     }
 
     /**
-     * Set the tick number. This function does not update the displayed
-     * face.
-     *
-     * @param tickno The current tick number.
+     * Sets the tick number. This function does not update the displayed face.
+     * @param tickno the current tick number
      */
     public void setTickno(final int tickno)
     {
@@ -101,11 +94,9 @@ public class AnimationState
     }
 
     /**
-     * Set the tick number and update affected faces.
-     *
-     * @param tickno The tick number.
-     *
-     * @param location The location to update.
+     * Sets the tick number and update affected faces.
+     * @param tickno the tick number
+     * @param location the location to update
      */
     public void updateTickno(final int tickno, final Location location)
     {
@@ -125,12 +116,10 @@ public class AnimationState
     }
 
     /**
-     * Update the map face at the given location.
-     *
-     * @param location The map location to update.
-     *
-     * @param oldFaceIndex Suppress the map face update if the new face
-     * index equals this value.
+     * Updates the map face at the given location.
+     * @param location the map location to update
+     * @param oldFaceIndex suppress the map face update if the new face
+     * index equals this value
      */
     public void draw(final Location location, final int oldFaceIndex)
     {
