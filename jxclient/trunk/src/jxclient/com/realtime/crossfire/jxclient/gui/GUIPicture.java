@@ -65,7 +65,7 @@ public class GUIPicture extends GUIElement
         super(window, name, x, y, w, h, alpha < 1F ? Transparency.TRANSLUCENT : image.getTransparency());
         synchronized (bufferedImageSync)
         {
-            final Graphics2D g = bufferedImage.createGraphics();
+            final Graphics2D g = createBufferGraphics();
             try
             {
                 g.setComposite(AlphaComposite.getInstance(AlphaComposite.SRC_OVER, alpha));

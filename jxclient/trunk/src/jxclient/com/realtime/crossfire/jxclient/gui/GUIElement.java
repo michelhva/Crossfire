@@ -61,7 +61,7 @@ public abstract class GUIElement extends JPanel
      */
     protected final Object bufferedImageSync = new Object();
 
-    protected BufferedImage bufferedImage;
+    private BufferedImage bufferedImage;
 
     private boolean visible = true;
 
@@ -446,7 +446,7 @@ public abstract class GUIElement extends JPanel
     {
         synchronized (bufferedImageSync)
         {
-            final Graphics2D g = bufferedImage.createGraphics();
+            final Graphics2D g = createBufferGraphics();
             try
             {
                 render(g);
@@ -489,5 +489,17 @@ public abstract class GUIElement extends JPanel
     public void setChangedListener(final GUIElementChangedListener changedListener)
     {
         this.changedListener = changedListener;
+    }
+
+    /**
+     * Calls {@link BufferedImage#createGraphics()} on {@link #bufferedImage}.
+     * Checks that the calling thread holds the lock {@link
+     * #bufferedImageSync}.
+     * @return the graphics instance; must be released afterwards
+     */
+    protected Graphics2D createBufferGraphics()
+    {
+        assert Thread.holdsLock(bufferedImageSync);
+        return bufferedImage.createGraphics();
     }
 }

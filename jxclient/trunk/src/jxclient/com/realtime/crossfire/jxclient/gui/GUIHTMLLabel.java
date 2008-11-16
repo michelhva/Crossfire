@@ -135,7 +135,7 @@ public class GUIHTMLLabel extends AbstractLabel
 
         synchronized (bufferedImageSync)
         {
-            final Graphics2D g = bufferedImage.createGraphics();
+            final Graphics2D g = createBufferGraphics();
             try
             {
                 final FontRenderContext context = g.getFontRenderContext();
