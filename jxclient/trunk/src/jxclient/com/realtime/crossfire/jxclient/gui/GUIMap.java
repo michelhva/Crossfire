@@ -423,8 +423,6 @@ public class GUIMap extends GUIElement
      */
     private void redrawSquare(final Graphics g, final int px, final int py, final CfMapSquare mapSquare)
     {
-        final int px2 = px+tileSize;
-        final int py2 = py+tileSize;
         final int mapSquareX = mapSquare.getX();
         final int mapSquareY = mapSquare.getY();
         for (int layer = 0; layer < CrossfireMap2Command.NUM_LAYERS; layer++)
@@ -437,27 +435,35 @@ public class GUIMap extends GUIElement
                 final int dx = headMapSquare.getX()-mapSquareX;
                 final int dy = headMapSquare.getY()-mapSquareY;
                 assert dx > 0 || dy > 0;
-                final ImageIcon imageIcon = useBigImages ? facesManager.getScaledImageIcon(headFace.getFaceNum()) : facesManager.getOriginalImageIcon(headFace.getFaceNum());
-                final int sx = imageIcon.getIconWidth()-tileSize*dx;
-                final int sy = imageIcon.getIconHeight()-tileSize*dy;
-                g.drawImage(imageIcon.getImage(),
-                    px, py, px2, py2,
-                    sx-tileSize, sy-tileSize, sx, sy,
-                    null);
+                paintImage(g, headFace, px, py, tileSize*dx, tileSize*dy);
             }
 
             final Face face = mapSquare.getFace(layer);
             if (face != null)
             {
-                final ImageIcon imageIcon = useBigImages ? facesManager.getScaledImageIcon(face.getFaceNum()) : facesManager.getOriginalImageIcon(face.getFaceNum());
-                final int sx = imageIcon.getIconWidth();
-                final int sy = imageIcon.getIconHeight();
-                g.drawImage(imageIcon.getImage(),
-                    px, py, px2, py2,
-                    sx-tileSize, sy-tileSize, sx, sy,
-                    null);
+                paintImage(g, face, px, py, 0, 0);
             }
         }
+    }
+
+    /**
+     * Paints a face into a tile.
+     * @param g the graphics to draw into
+     * @param face the face to draw
+     * @param px the x coordinate of the square to redraw
+     * @param py the y coordinate of the square to redraw
+     * @param offsetX the x-offset for shifting the original face
+     * @param offsetY the y-offset for shifting the original face
+     */
+    private void paintImage(final Graphics g, final Face face, final int px, final int py, final int offsetX, final int offsetY)
+    {
+        final ImageIcon imageIcon = useBigImages ? facesManager.getScaledImageIcon(face.getFaceNum()) : facesManager.getOriginalImageIcon(face.getFaceNum());
+        final int sx = imageIcon.getIconWidth()-offsetX;
+        final int sy = imageIcon.getIconHeight()-offsetY;
+        g.drawImage(imageIcon.getImage(),
+            px, py, px+tileSize, py+tileSize,
+            sx-tileSize, sy-tileSize, sx, sy,
+            null);
     }
 
     /** {@inheritDoc} */
