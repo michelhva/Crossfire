@@ -181,6 +181,6 @@ public class Face
         if (obj == null) return false;
         if (obj.getClass() != Face.class) return false;
         final Face face = (Face)obj;
-        return faceNum == face.getFaceNum();
+        return faceNum == face.faceNum;
     }
 }
