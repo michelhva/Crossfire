@@ -56,7 +56,7 @@ arch grass
 y 4
 end
 arch church
-name Church of Valriel
+name Temple of Valriel
 slaying /navar_city/temples/valriel
 hp 9
 sp 27
@@ -403,7 +403,7 @@ x 1
 y 7
 end
 arch s_shop1
-name Imperial Post
+name Navar Imperial Post Office
 name_pl Imperial Post
 slaying /navar_city/misc/IPO_navar
 msg
@@ -3367,7 +3367,7 @@ x 9
 y 14
 end
 arch s_shop2
-name Jeweler
+name Jeweler's Workshop of Navar
 slaying /navar_city/misc/jeweler
 hp 7
 sp 12

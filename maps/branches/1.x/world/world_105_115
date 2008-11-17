@@ -9,7 +9,7 @@ enter_x 1
 enter_y 1
 msg
 Created:  2001-02-16
-Modified: 2008-05-19 Arvid Norlander
+Modified: 2008-11-16 Rick Tanner
 endmsg
 outdoor 1
 tile_path_1 world_105_114
@@ -1969,6 +1969,7 @@ y 29
 elevation 1588
 end
 arch guard_house_4
+name Port Gate of Scorn
 slaying /scorn/anthony/portgate
 hp 9
 x 4
@@ -1985,10 +1986,12 @@ y 30
 elevation 69
 end
 arch guard_house_3
+name Port Gate of Scorn
 x 4
 y 30
 end
 arch guard_house_4
+name Port Gate of Scorn
 x 4
 y 30
 end
@@ -2002,6 +2005,7 @@ y 31
 elevation 3771
 end
 arch guard_house_3
+name Port Gate of Scorn
 slaying /scorn/anthony/portgate
 hp 8
 sp 12
@@ -2883,7 +2887,7 @@ y 31
 elevation 4536
 end
 arch store_general
-name Gem Shop
+name Scorn Gem Shop
 name_pl Gem Shop
 slaying /scorn/shops/gemshop
 hp 1
@@ -5208,7 +5212,7 @@ y 39
 elevation 12017
 end
 arch house_small
-name Tannery
+name Scorn Tannery
 name_pl Tannery
 slaying /scorn/houses/tannery
 hp 5
@@ -6098,7 +6102,7 @@ y 39
 elevation 12419
 end
 arch house_small
-name Jeweler's Workshop
+name Jeweler's Workshop of Scorn
 name_pl Jeweler's Workshop
 slaying /scorn/houses/jeweler
 hp 7
@@ -6922,7 +6926,7 @@ y 34
 elevation 4816
 end
 arch fort
-name dragon guild
+name Scorn Dragon Guild
 name_pl dragon guild
 slaying /scorn/misc/dragon_guild
 hp 7
@@ -8192,8 +8196,7 @@ y 26
 elevation -2256
 end
 arch big_galleon
-name to Port Joseph
-name_pl to Port Joseph
+name Galleon to Port Joseph
 slaying /world/world_101_114
 hp 16
 sp 43
@@ -9183,6 +9186,7 @@ y 37
 elevation 4519
 end
 arch guard_house_1
+name Eastern Gate of Scorn
 slaying /scorn/misc/gatehouse
 hp 1
 sp 7
@@ -9642,6 +9646,7 @@ x 21
 y 37
 end
 arch guard_house_1
+name Eastern Gate of Scorn
 x 21
 y 37
 type 0
@@ -9650,6 +9655,7 @@ move_block all
 is_floor 1
 end
 arch guard_house_2
+name Eastern Gate of Scorn
 x 21
 y 37
 end
@@ -10038,6 +10044,7 @@ x 22
 y 37
 end
 arch guard_house_2
+name Eastern Gate of Scorn
 slaying /scorn/misc/gatehouse
 hp 26
 sp 7
