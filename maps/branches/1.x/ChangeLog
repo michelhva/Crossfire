@@ -1,3 +1,734 @@
+2008-11-17 06:22  rjtanner
+
+	* world/world_103_114, world/world_103_115, world/world_103_116,
+	  world/world_105_113, world/world_105_114, world/world_106_115,
+	  world/world_106_116, world/world_115_110, world/world_115_115,
+	  world/world_119_116, world/world_120_109, world/world_123_123,
+	  world/world_126_124, world/world_128_128, world/world_128_129:
+	  Backport from trunk - apply regions to world maps
+
+2008-11-17 06:15  rjtanner
+
+	* world/world_100_116, world/world_101_114, world/world_102_108,
+	  world/world_103_127, world/world_104_109, world/world_104_115,
+	  world/world_105_115, world/world_107_123, world/world_107_124,
+	  world/world_107_128, world/world_108_123, world/world_109_126,
+	  world/world_119_116, world/world_120_109, world/world_121_117,
+	  world/world_122_116, world/world_122_117, world/world_128_108,
+	  world/world_128_109, world/world_129_101: Backport from trunk -
+	  have world map structures match the respective map name they link
+	  to
+
+2008-11-17 05:54  rjtanner
+
+	* wolfsburg/tt/tta1: Backport from trunk - insert missing floor
+	  tiles
+
+2008-11-17 05:52  rjtanner
+
+	* wolfsburg/piratechurch, wolfsburg/shops/buildshop: Backport from
+	  trunk - update exit destination coordinates to world map
+
+2008-11-17 05:51  rjtanner
+
+	* wolfsburg/magara/tower1/floor_1, wolfsburg/magara/tower1/floor_3:
+	  Backport from trunk - unique map names
+
+2008-11-17 05:50  rjtanner
+
+	* wolfsburg/etern_rew: Backport from trunk - replace altars with
+	  tables
+
+2008-11-17 05:47  rjtanner
+
+	* wolfsburg/dungeons/pirateenter: Backport from trunk - insert
+	  missing floor tiles
+
+2008-11-17 05:47  rjtanner
+
+	* wolfsburg/dept_store_armour, wolfsburg/dept_store_magic,
+	  wolfsburg/dept_store_misc, wolfsburg/dept_store_weapon: Backport
+	  from trunk - shop headers
+
+2008-11-17 05:46  rjtanner
+
+	* wolfsburg/dept_store_armour, wolfsburg/dept_store_magic,
+	  wolfsburg/dept_store_misc, wolfsburg/dept_store_weapon,
+	  wolfsburg/dungeons/church.2, wolfsburg/dungeons/church.3,
+	  wolfsburg/dungeons/church.4a, wolfsburg/dungeons/church.4b,
+	  wolfsburg/dungeons/church.4c, wolfsburg/dungeons/church.4d,
+	  wolfsburg/dungeons/piratedung, wolfsburg/dungeons/ship,
+	  wolfsburg/dungeons/ship_deck2, wolfsburg/eeur/tower1.1,
+	  wolfsburg/eeur/tower1.2, wolfsburg/eeur/tower1.3,
+	  wolfsburg/eeur/tower1.4, wolfsburg/magara/castle/cellar,
+	  wolfsburg/magara/castle/floor_1, wolfsburg/magara/castle/floor_2,
+	  wolfsburg/magara/castle/floor_3,
+	  wolfsburg/magara/cellar1/hcellar_1,
+	  wolfsburg/magara/cellar1/hcellar_2,
+	  wolfsburg/magara/cellar1/hole, wolfsburg/magara/tower1/entrance,
+	  wolfsburg/magara/tower2/floor_1, wolfsburg/magara/tower2/floor_2,
+	  wolfsburg/shops/buildshop, wolfsburg/shops/transport.shoppe,
+	  wolfsburg/slave_pit1, wolfsburg/slave_pit2, wolfsburg/slave_pit3,
+	  wolfsburg/temple/enterance, wolfsburg/temple/temp_dung1,
+	  wolfsburg/tt/tta1, wolfsburg/tt/tta2, wolfsburg/tt/ttb1,
+	  wolfsburg/tt/ttb2: Backport from trunk - unique map names
+
+2008-11-17 05:39  rjtanner
+
+	* wolfsburg/apartments/wolfsburg.apartment,
+	  wolfsburg/dept_store_armour, wolfsburg/dept_store_magic,
+	  wolfsburg/dept_store_misc, wolfsburg/dept_store_weapon,
+	  wolfsburg/dungeons/church.2, wolfsburg/dungeons/church.3,
+	  wolfsburg/dungeons/church.4a, wolfsburg/dungeons/church.4b,
+	  wolfsburg/dungeons/church.4c, wolfsburg/dungeons/church.4d,
+	  wolfsburg/dungeons/hut, wolfsburg/dungeons/piratedung,
+	  wolfsburg/dungeons/pirateenter, wolfsburg/dungeons/ship_deck2,
+	  wolfsburg/dungeons/treas_room, wolfsburg/dungeons/underworld,
+	  wolfsburg/eeur/tower1.2, wolfsburg/eeur/tower1.3,
+	  wolfsburg/eeur/tower1.4, wolfsburg/inns,
+	  wolfsburg/magara/castle/cellar, wolfsburg/magara/castle/floor_1,
+	  wolfsburg/magara/castle/floor_2, wolfsburg/magara/castle/floor_3,
+	  wolfsburg/magara/cellar1/hcellar_1,
+	  wolfsburg/magara/cellar1/hcellar_2,
+	  wolfsburg/magara/cellar1/hole, wolfsburg/magara/cellar_1,
+	  wolfsburg/magara/tower1/entrance,
+	  wolfsburg/magara/tower1/floor_1, wolfsburg/magara/tower1/floor_3,
+	  wolfsburg/magara/tower2/floor_1, wolfsburg/magara/tower2/floor_2,
+	  wolfsburg/piratechurch, wolfsburg/prison,
+	  wolfsburg/shops/transport.shoppe, wolfsburg/slave_pit2,
+	  wolfsburg/temple/enterance, wolfsburg/temple/temple,
+	  wolfsburg/tt/tta1, wolfsburg/tt/tta2, wolfsburg/tt/ttb1,
+	  wolfsburg/volcano/vvmansion: Backport from trunk - map entrance x
+	  & y coordinates
+
+2008-11-16 08:53  akirschbaum
+
+	* pup_land/lone_town/town: Fix typo.
+
+2008-11-16 07:18  rjtanner
+
+	* whalingoutpost/underwaterdungeon/level2,
+	  whalingoutpost/underwaterdungeon/level3: Backport from trunk, map
+	  author credit and creation date correction
+
+2008-11-16 07:15  rjtanner
+
+	* whalingoutpost/misc/icecavern2: Backport from trunk, map level
+	  difficulty adjustment
+
+2008-11-16 07:14  rjtanner
+
+	* whalingoutpost/taverns/storehouse1: Backport from trunk, grammar
+	  correction (her->here)
+
+2008-11-16 07:11  rjtanner
+
+	* whalingoutpost/lighthouse1, whalingoutpost/lighthouse2,
+	  whalingoutpost/lighthouse3, whalingoutpost/lighthouse4,
+	  whalingoutpost/lighthouse5, whalingoutpost/lighthouse6,
+	  whalingoutpost/lighthouse6attic,
+	  whalingoutpost/lightkeepershouseb1, whalingoutpost/misc/castle1,
+	  whalingoutpost/misc/castle2, whalingoutpost/misc/castle3,
+	  whalingoutpost/misc/castle4, whalingoutpost/misc/castleb1,
+	  whalingoutpost/misc/castleb1keep, whalingoutpost/misc/castleb2,
+	  whalingoutpost/misc/castleb3, whalingoutpost/misc/icecavern1,
+	  whalingoutpost/misc/icecavern2,
+	  whalingoutpost/taverns/fishershallb1,
+	  whalingoutpost/underwaterdungeon/level1,
+	  whalingoutpost/underwaterdungeon/level2,
+	  whalingoutpost/underwaterdungeon/level3: Backport from trunk -
+	  unique map names
+
+2008-11-16 07:02  rjtanner
+
+	* whalingoutpost/houses/fishershouse1,
+	  whalingoutpost/houses/infestedhouse1, whalingoutpost/lighthouse1,
+	  whalingoutpost/lighthouse2, whalingoutpost/lighthouse3,
+	  whalingoutpost/lighthouse4, whalingoutpost/lighthouse5,
+	  whalingoutpost/lighthouse6, whalingoutpost/lighthouse6attic,
+	  whalingoutpost/lightkeepershouse1,
+	  whalingoutpost/lightkeepershouseb1, whalingoutpost/misc/castle1,
+	  whalingoutpost/misc/castle2, whalingoutpost/misc/castle3,
+	  whalingoutpost/misc/castle4, whalingoutpost/misc/castleb1,
+	  whalingoutpost/misc/castleb1keep, whalingoutpost/misc/castleb2,
+	  whalingoutpost/misc/castleb3, whalingoutpost/misc/fisherswell1,
+	  whalingoutpost/misc/frostcavern1, whalingoutpost/misc/holeinice1,
+	  whalingoutpost/misc/icecavern1, whalingoutpost/misc/icecavern2,
+	  whalingoutpost/misc/icehole1, whalingoutpost/misc/polarbearcave1,
+	  whalingoutpost/misc/polarbearcave2,
+	  whalingoutpost/misc/polarbearcave3,
+	  whalingoutpost/misc/trollcave1,
+	  whalingoutpost/taverns/fishershall1,
+	  whalingoutpost/taverns/fishershallb1,
+	  whalingoutpost/taverns/storehouse1,
+	  whalingoutpost/underwaterdungeon/level1,
+	  whalingoutpost/underwaterdungeon/level2,
+	  whalingoutpost/underwaterdungeon/level3: Update maps with region
+	  info (whalingoutpost)
+
+2008-11-16 06:54  rjtanner
+
+	* whalingoutpost/houses/fishershouse1,
+	  whalingoutpost/houses/infestedhouse1, whalingoutpost/lighthouse1,
+	  whalingoutpost/lighthouse2, whalingoutpost/lighthouse3,
+	  whalingoutpost/lighthouse4, whalingoutpost/lighthouse5,
+	  whalingoutpost/lighthouse6, whalingoutpost/lighthouse6attic,
+	  whalingoutpost/lightkeepershouse1,
+	  whalingoutpost/lightkeepershouseb1, whalingoutpost/misc/castle1,
+	  whalingoutpost/misc/castle2, whalingoutpost/misc/castle3,
+	  whalingoutpost/misc/castle4, whalingoutpost/misc/castleb1,
+	  whalingoutpost/misc/castleb1keep, whalingoutpost/misc/castleb2,
+	  whalingoutpost/misc/castleb3, whalingoutpost/misc/fisherswell1,
+	  whalingoutpost/misc/frostcavern1, whalingoutpost/misc/holeinice1,
+	  whalingoutpost/misc/icecavern1, whalingoutpost/misc/icecavern2,
+	  whalingoutpost/misc/icehole1, whalingoutpost/misc/polarbearcave1,
+	  whalingoutpost/misc/polarbearcave2,
+	  whalingoutpost/misc/polarbearcave3,
+	  whalingoutpost/misc/trollcave1,
+	  whalingoutpost/taverns/fishershall1,
+	  whalingoutpost/taverns/fishershallb1,
+	  whalingoutpost/taverns/storehouse1,
+	  whalingoutpost/underwaterdungeon/level1: Backport from trunk -
+	  map entrance x & y coordinates
+
+2008-11-16 06:39  rjtanner
+
+	* under_world/uworld_120_109: Backport from trunk - map entrance x
+	  & y coordinates
+
+2008-11-16 06:27  rjtanner
+
+	* teamarena/teamwar, teamarena/twregister: Update map with region
+	  info (firevolcano)
+
+2008-11-16 06:25  rjtanner
+
+	* teamarena/teamwar, teamarena/twregister: Backport from trunk -
+	  map entrance x & y coordinates
+
+2008-11-16 06:24  rjtanner
+
+	* start/HallsOfSelection/fireborn_player,
+	  start/HallsOfSelection/pl_dragon,
+	  start/HallsOfSelection/wraith_player: Backport from trunk -
+	  unique map names
+
+2008-11-15 02:08  rjtanner
+
+	* sisters/necro_entrance: Backport from trunk - rename structure to
+	  match map name
+
+2008-11-15 02:06  rjtanner
+
+	* sisters/compound1, sisters/compound2, sisters/compound3,
+	  sisters/entrance, sisters/granary, sisters/necro_entrance,
+	  sisters/necro_hole1, sisters/necro_ruin1, sisters/necro_ruin1a,
+	  sisters/shrine0, sisters/shrine0_east, sisters/shrine0_west,
+	  sisters/shrine1, sisters/shrine_entrance, sisters/small_manor0,
+	  sisters/small_manor1, sisters/small_manor2, sisters/tower0,
+	  sisters/tower1, sisters/tower2, sisters/tower3: Update map with
+	  region info (threesisters)
+
+2008-11-15 02:03  rjtanner
+
+	* sisters/compound1, sisters/compound2, sisters/compound3,
+	  sisters/necro_entrance, sisters/necro_hole1, sisters/necro_ruin1,
+	  sisters/necro_ruin1a, sisters/shrine0, sisters/shrine0_east,
+	  sisters/shrine0_west, sisters/shrine1, sisters/shrine_entrance,
+	  sisters/small_manor0, sisters/small_manor1, sisters/small_manor2,
+	  sisters/tower0, sisters/tower1, sisters/tower2, sisters/tower3:
+	  Backport from trunk - unique map names
+
+2008-11-15 01:58  rjtanner
+
+	* sisters/compound1, sisters/compound2, sisters/compound3,
+	  sisters/entrance, sisters/granary, sisters/necro_entrance,
+	  sisters/necro_hole1, sisters/necro_ruin1, sisters/necro_ruin1a,
+	  sisters/shrine0, sisters/shrine0_east, sisters/shrine0_west,
+	  sisters/shrine1, sisters/shrine_entrance, sisters/small_manor0,
+	  sisters/small_manor1, sisters/tower0, sisters/tower1,
+	  sisters/tower2, sisters/tower3: Backport from trunk - map
+	  entrance x & y coordinates
+
+2008-11-15 01:51  rjtanner
+
+	* scorn/taverns/goths2: Backport from trunk - grammar update in
+	  maplore
+
+2008-11-15 01:50  rjtanner
+
+	* scorn/houses/bowyer: Backport from trunk - cosmetic wall changes
+
+2008-11-15 01:47  rjtanner
+
+	* scorn/houses/newhouse1: Backport from trunk - map entrance x & y
+	  coordinates
+
+2008-11-15 01:45  rjtanner
+
+	* scorn/houses/house3.1st, scorn/houses/jeweler,
+	  scorn/misc/dragon_guild, scorn/misc/jail, scorn/misc/jail_upper,
+	  scorn/misc/library, scorn/shops/foodshop, scorn/shops/gemshop,
+	  scorn/shops/light_shop: Backport from trunk - cosmetic wall
+	  changes
+
+2008-11-15 01:32  rjtanner
+
+	* scorn/shops/IPO_scorn, scorn/shops/buildshop,
+	  scorn/shops/gemshop, scorn/shops/magicshop,
+	  scorn/shops/potionshop, scorn/taverns/goths0,
+	  scorn/taverns/goths2, scorn/temples/mostrai2,
+	  scorn/temples/ruggilli1, scorn/temples/sorig,
+	  scorn/temples/sorig2, scorn/temples/valriel2,
+	  scorn/temples/valriel3, scorn/towers/tower.mad,
+	  scorn/towers/tower.mad1, scorn/towers/tower.mad2,
+	  scorn/towers/tower.mad3: Backport from trunk - unique map names
+
+2008-11-15 01:28  rjtanner
+
+	* scorn/oldcity/oldcity54: Insert missing floor tile
+
+2008-11-15 01:23  rjtanner
+
+	* scorn/anthony/passoffice, scorn/anthony/portgate,
+	  scorn/anthony/prison, scorn/apartment/apartments,
+	  scorn/cannery/ware1, scorn/dtabb/cave, scorn/dtabb/cave3,
+	  scorn/houses/barracks, scorn/houses/breezy_acres,
+	  scorn/houses/breezy_under2, scorn/houses/chess_club,
+	  scorn/houses/easy_house.1.a, scorn/houses/easy_house.1.b,
+	  scorn/houses/easy_house.1.c, scorn/houses/house.haunted,
+	  scorn/houses/house.haunted2, scorn/houses/house1,
+	  scorn/houses/house3.2nd, scorn/houses/house3.bas1,
+	  scorn/houses/house3.bas2, scorn/houses/jeweler,
+	  scorn/houses/jones, scorn/houses/map.fr.ruin, scorn/houses/resir,
+	  scorn/houses/riverside_under, scorn/houses/tannery,
+	  scorn/houses/wizz.entry, scorn/houses/wizz.lev1,
+	  scorn/houses/wizz.lev1.pass1, scorn/kar/creepy.house,
+	  scorn/kar/creepy.house2, scorn/kar/gorks1, scorn/kar/gorks2,
+	  scorn/kar/gorks3, scorn/kar/somehouse, scorn/kar/somehouse2,
+	  scorn/kar/somehouse3, scorn/magara/porter_house,
+	  scorn/mansion/garden, scorn/mansion/muriskunes,
+	  scorn/mansion/str-tunnel, scorn/mansion/stronghold,
+	  scorn/misc/HallOfQuests, scorn/misc/HospitalityRoom,
+	  scorn/misc/HouseofHealing, scorn/misc/PowerHouse,
+	  scorn/misc/battle_arena/arena, scorn/misc/battle_arena/arena_ud,
+	  scorn/misc/battle_arena/entrance,
+	  scorn/misc/battle_arena/first-aide,
+	  scorn/misc/battle_arena/snack, scorn/misc/beginners,
+	  scorn/misc/beginners2, scorn/misc/castle, scorn/misc/castle2,
+	  scorn/misc/cityhall, scorn/misc/devourlower,
+	  scorn/misc/dragon_guild, scorn/misc/gatehouse, scorn/misc/jail,
+	  scorn/misc/jail_upper, scorn/misc/kboldtemp1,
+	  scorn/misc/kboldtemp1b1, scorn/misc/kboldtemp1b2,
+	  scorn/misc/kboldtemp1b3, scorn/misc/kboldtemp1b4,
+	  scorn/misc/library, scorn/misc/mercenaries,
+	  scorn/misc/port_arena, scorn/misc/prison,
+	  scorn/misc/templedevour, scorn/misc/templelyth,
+	  scorn/misc/wizhide, scorn/misc/zoo, scorn/misc/zoo2: Backport
+	  from trunk - unique map names (in some cases, corrected
+	  'modified' time stamp due to wrong date being applied in previous
+	  checkin)
+
+2008-11-15 01:00  rjtanner
+
+	* scorn/oldcity/end, scorn/oldcity/oldcity11,
+	  scorn/oldcity/oldcity15, scorn/oldcity/oldcity7,
+	  scorn/shops/BasicSpells, scorn/shops/armourshop,
+	  scorn/shops/bank, scorn/shops/buildshop, scorn/shops/coffeeshop,
+	  scorn/shops/foodshop, scorn/shops/generalshop,
+	  scorn/shops/light_shop, scorn/shops/oleds_cafe,
+	  scorn/shops/scorn.sale1, scorn/shops/scorn.sale2,
+	  scorn/shops/weaponshop, scorn/taverns/apartments,
+	  scorn/taverns/barking_mule, scorn/taverns/goths,
+	  scorn/taverns/goths0, scorn/taverns/goths2, scorn/taverns/inn,
+	  scorn/taverns/inn2, scorn/temples/gnarg, scorn/temples/gorokh,
+	  scorn/temples/ixalovh, scorn/temples/mostrai,
+	  scorn/temples/mostrai2, scorn/temples/ruggilli1,
+	  scorn/temples/ruggilli2, scorn/temples/sorig,
+	  scorn/temples/sorig2, scorn/temples/valriel,
+	  scorn/temples/valriel2, scorn/temples/valriel3,
+	  scorn/towers/tower.mad: Backport from trunk - map entrance x & y
+	  coordinates
+
+2008-11-15 00:51  rjtanner
+
+	* scorn/anthony/portgate, scorn/apartment/apartments,
+	  scorn/cannery/ware1, scorn/dtabb/cave, scorn/dtabb/cave3,
+	  scorn/houses/barracks, scorn/houses/breezy_acres,
+	  scorn/houses/chess_club, scorn/houses/easy_house.1.a,
+	  scorn/houses/easy_house.1.b, scorn/houses/easy_house.1.c,
+	  scorn/houses/house.haunted, scorn/houses/house1,
+	  scorn/houses/house3.2nd, scorn/houses/house3.bas1,
+	  scorn/houses/house3.bas2, scorn/houses/jones,
+	  scorn/houses/map.fr.ruin, scorn/houses/newhouse1,
+	  scorn/houses/resir, scorn/houses/riverside_under,
+	  scorn/houses/wizz.lev1, scorn/houses/wizz.lev1.pass1,
+	  scorn/kar/creepy.house2, scorn/kar/gorks1, scorn/kar/gorks2,
+	  scorn/kar/gorks3, scorn/kar/somehouse2, scorn/kar/somehouse3,
+	  scorn/magara/porter_house, scorn/mansion/garden,
+	  scorn/mansion/str-tunnel, scorn/mansion/stronghold,
+	  scorn/misc/HallOfQuests, scorn/misc/HospitalityRoom,
+	  scorn/misc/HouseofHealing, scorn/misc/PowerHouse,
+	  scorn/misc/battle_arena/arena, scorn/misc/battle_arena/arena_ud,
+	  scorn/misc/battle_arena/entrance,
+	  scorn/misc/battle_arena/first-aide,
+	  scorn/misc/battle_arena/snack, scorn/misc/beginners,
+	  scorn/misc/beginners2, scorn/misc/castle, scorn/misc/castle2,
+	  scorn/misc/devourlower, scorn/misc/dragon_guild,
+	  scorn/misc/gatehouse, scorn/misc/jail_upper,
+	  scorn/misc/kboldtemp1, scorn/misc/kboldtemp1b1,
+	  scorn/misc/kboldtemp1b3, scorn/misc/kboldtemp1b4,
+	  scorn/misc/mercenaries, scorn/misc/port_arena, scorn/misc/prison,
+	  scorn/misc/templedevour, scorn/misc/templelyth,
+	  scorn/misc/wizhide, scorn/misc/zoo, scorn/misc/zoo2: Backport
+	  from trunk - map entrance x & y coordinates
+
+2008-11-15 00:33  rjtanner
+
+	* santo_dominion/espen/espen2: Backport from trunk - removed double
+	  stacked wall segments
+
+2008-11-15 00:33  rjtanner
+
+	* santo_dominion/espen/palace: Backport from trunk - insert missing
+	  floor tiles
+
+2008-11-15 00:31  rjtanner
+
+	* santo_dominion/shaft/undeadshaft.1: Spelling correction (carful
+	  -> careful) on sign text
+
+2008-11-15 00:30  rjtanner
+
+	* santo_dominion/shaft/undeadshaft.1,
+	  santo_dominion/shaft/undeadshaft.2,
+	  santo_dominion/shaft/undeadshaft.3: Backport from trunk - Added
+	  'blocked' walls to the unused spaces inside and around the cave
+	  walls
+
+2008-11-15 00:28  rjtanner
+
+	* santo_dominion/magara/south_lighthouse/floor_4: Backport from
+	  trunk - insert cave wall for nicer blending
+
+2008-11-15 00:26  rjtanner
+
+	* santo_dominion/magara/south_lighthouse/floor_4: Backport from
+	  trunk - insert missing floor tiles
+
+2008-11-15 00:24  rjtanner
+
+	* santo_dominion/eeur/hut.1: Backport from trunk - cosmetic wall
+	  updates
+
+2008-11-15 00:22  rjtanner
+
+	* santo_dominion/shaft/undeadshaft.1,
+	  santo_dominion/shaft/undeadshaft.2,
+	  santo_dominion/shaft/undeadshaft.3,
+	  santo_dominion/shaft/undeadshaft.4,
+	  santo_dominion/temple_naive/templenaive.1,
+	  santo_dominion/temple_naive/templenaive.2: Update map with region
+	  info (santodominion)
+
+2008-11-15 00:21  rjtanner
+
+	* santo_dominion/eeur/hut.2, santo_dominion/magara/well/cave:
+	  Backport from trunk - updated map difficulty level
+
+2008-11-15 00:20  rjtanner
+
+	* santo_dominion/basement, santo_dominion/city_hall,
+	  santo_dominion/eeur/hut.1, santo_dominion/eeur/hut.2,
+	  santo_dominion/espen/espen1, santo_dominion/espen/espen2,
+	  santo_dominion/espen/palace, santo_dominion/house_of_hell,
+	  santo_dominion/just_preliminary,
+	  santo_dominion/lord_byron/1st_floor,
+	  santo_dominion/lord_byron/2nd_floor,
+	  santo_dominion/lord_byron/dungeon,
+	  santo_dominion/lord_byron/main,
+	  santo_dominion/magara/hut/floor_1,
+	  santo_dominion/magara/hut/floor_2,
+	  santo_dominion/magara/hut/floor_3,
+	  santo_dominion/magara/north_lighthouse/floor_1,
+	  santo_dominion/magara/north_lighthouse/floor_2,
+	  santo_dominion/magara/north_lighthouse/floor_3,
+	  santo_dominion/magara/north_lighthouse/floor_4,
+	  santo_dominion/magara/south_lighthouse/floor_1,
+	  santo_dominion/magara/south_lighthouse/floor_2,
+	  santo_dominion/magara/south_lighthouse/floor_3,
+	  santo_dominion/magara/south_lighthouse/floor_4,
+	  santo_dominion/magara/well/cave, santo_dominion/magara/well/top,
+	  santo_dominion/magara/well/treasure, santo_dominion/map.stigkr.1,
+	  santo_dominion/map.stigkr.2, santo_dominion/mudman/mudman.1,
+	  santo_dominion/mudman/mudman.2, santo_dominion/mudman/mudman.3,
+	  santo_dominion/sdomino_appartment,
+	  santo_dominion/shaft/undeadshaft.1,
+	  santo_dominion/shaft/undeadshaft.2,
+	  santo_dominion/shaft/undeadshaft.3,
+	  santo_dominion/shaft/undeadshaft.4,
+	  santo_dominion/tavern.2ndfloor, santo_dominion/tavern.downstairs,
+	  santo_dominion/temple_naive/templenaive.1,
+	  santo_dominion/temple_naive/templenaive.2,
+	  santo_dominion/tobias.top: Backport from trunk - unique map names
+
+2008-11-15 00:14  rjtanner
+
+	* santo_dominion/basement, santo_dominion/city_hall,
+	  santo_dominion/den, santo_dominion/eeur/hut.1,
+	  santo_dominion/eeur/hut.2, santo_dominion/espen/espen1,
+	  santo_dominion/espen/espen2, santo_dominion/espen/palace,
+	  santo_dominion/house_of_hell, santo_dominion/houses/house1,
+	  santo_dominion/just_preliminary,
+	  santo_dominion/magara/hut/floor_1,
+	  santo_dominion/magara/hut/floor_3,
+	  santo_dominion/magara/north_lighthouse/floor_1,
+	  santo_dominion/magara/north_lighthouse/floor_2,
+	  santo_dominion/magara/north_lighthouse/floor_3,
+	  santo_dominion/magara/north_lighthouse/floor_4,
+	  santo_dominion/magara/south_lighthouse/floor_1,
+	  santo_dominion/magara/south_lighthouse/floor_2,
+	  santo_dominion/magara/south_lighthouse/floor_3,
+	  santo_dominion/magara/south_lighthouse/floor_4,
+	  santo_dominion/magara/well/cave, santo_dominion/magara/well/top,
+	  santo_dominion/magara/well/treasure, santo_dominion/map.stigkr.2,
+	  santo_dominion/mudman/mudman.1, santo_dominion/mudman/mudman.2,
+	  santo_dominion/mudman/mudman.3, santo_dominion/north_farm,
+	  santo_dominion/shaft/undeadshaft.1,
+	  santo_dominion/shaft/undeadshaft.2,
+	  santo_dominion/shaft/undeadshaft.3,
+	  santo_dominion/shaft/undeadshaft.4, santo_dominion/shops/armour,
+	  santo_dominion/shops/eliks, santo_dominion/shops/nosferatu,
+	  santo_dominion/shops/rings, santo_dominion/tavern.2ndfloor,
+	  santo_dominion/tavern.downstairs,
+	  santo_dominion/temple_naive/templenaive.1,
+	  santo_dominion/temple_naive/templenaive.2, santo_dominion/tobias,
+	  santo_dominion/tobias.top, santo_dominion/tollpost: Backport from
+	  trunk - map entrance x & y coordinates
+
+2008-11-14 06:46  rjtanner
+
+	* quests/skud/maze: Backport from trunk - cosmetic wall changes for
+	  better merging with swall (fence)
+
+2008-11-14 06:45  rjtanner
+
+	* quests/skud/court, quests/skud/east_1, quests/skud/north_1:
+	  Backport from trunk - insert missing floor tiles
+
+2008-11-14 06:42  rjtanner
+
+	* quests/greyshield/Factory: Backport from trunk - cosmetic wall
+	  changes for better merging with swall (fence)
+
+2008-11-14 06:42  rjtanner
+
+	* quests/greyshield/Castle: Backport from trunk - cosmetic wall
+	  changes for better merging with swall (fence)
+
+2008-11-14 06:40  rjtanner
+
+	* quests/cd/cd.store.753: Backport from trunk - shop header
+	  information
+
+2008-11-14 06:39  rjtanner
+
+	* quests/todd/aljwaf/crypt4, quests/todd/aljwaf/crypt6,
+	  quests/todd/aljwaf/tower1: Map name and syntax corrections
+
+2008-11-14 06:37  rjtanner
+
+	* quests/todd/aljwaf/tower2: Update map with region info (narcopin)
+
+2008-11-14 06:36  rjtanner
+
+	* quests/todd/aljwaf/crypt, quests/todd/aljwaf/crypt2,
+	  quests/todd/aljwaf/crypt3, quests/todd/aljwaf/crypt4,
+	  quests/todd/aljwaf/crypt5, quests/todd/aljwaf/crypt6,
+	  quests/todd/aljwaf/hall1, quests/todd/aljwaf/hall2,
+	  quests/todd/aljwaf/tomb, quests/todd/aljwaf/tower1,
+	  quests/todd/aljwaf/tower3, quests/todd/aljwaf/tower4: Update maps
+	  with region info (narcopin), reformat map author info in map
+	  header
+
+2008-11-14 06:32  rjtanner
+
+	* quests/skud/court, quests/skud/east_1, quests/skud/entrance,
+	  quests/skud/maze, quests/skud/north_1, quests/skud/west_1,
+	  quests/todd/aljwaf/crypt, quests/todd/aljwaf/crypt2,
+	  quests/todd/aljwaf/crypt4, quests/todd/aljwaf/crypt5,
+	  quests/todd/aljwaf/crypt6, quests/todd/aljwaf/hall2,
+	  quests/todd/aljwaf/tower1, quests/todd/aljwaf/tower2,
+	  quests/todd/aljwaf/tower3, quests/todd/aljwaf/tower4: Backport
+	  from trunk - unique map names
+
+2008-11-14 06:29  rjtanner
+
+	* quests/peterm/CTower/Servants, quests/peterm/CTower/Study,
+	  quests/peterm/CTower/TowerTop,
+	  quests/peterm/Demonology/AirTower2,
+	  quests/peterm/Demonology/Demon1, quests/peterm/Demonology/Demon2,
+	  quests/peterm/Demonology/Demon3,
+	  quests/peterm/Demonology/EarthTower2,
+	  quests/peterm/Demonology/FireTower2,
+	  quests/peterm/Demonology/WaterTower2,
+	  quests/peterm/DragonQuest/ElectricAnte,
+	  quests/peterm/DragonQuest/ElectricHatchery,
+	  quests/peterm/DragonQuest/ElectricLord,
+	  quests/peterm/DragonQuest/Entrance,
+	  quests/peterm/DragonQuest/FireAnte,
+	  quests/peterm/DragonQuest/FireHatchery,
+	  quests/peterm/DragonQuest/FireLord,
+	  quests/peterm/DragonQuest/IceAnte,
+	  quests/peterm/DragonQuest/IceHatchery,
+	  quests/peterm/DragonQuest/IceLord,
+	  quests/peterm/DragonQuest/WyvernNest,
+	  quests/peterm/FireTemple/Entrance,
+	  quests/peterm/FireTemple/FifthFloor,
+	  quests/peterm/FireTemple/Fire1, quests/peterm/FireTemple/Fire2,
+	  quests/peterm/FireTemple/Fire3, quests/peterm/FireTemple/Fire4,
+	  quests/peterm/FireTemple/FirstFloor,
+	  quests/peterm/FireTemple/FourthFloor,
+	  quests/peterm/FireTemple/HotMines,
+	  quests/peterm/FireTemple/LavaChamber,
+	  quests/peterm/FireTemple/Mezannine1,
+	  quests/peterm/FireTemple/Passageway,
+	  quests/peterm/FireTemple/SecondFloor,
+	  quests/peterm/FireTemple/ThirdFloor,
+	  quests/peterm/temple/AnteChamber, quests/peterm/temple/GemTunnel,
+	  quests/peterm/temple/InnerTemple,
+	  quests/peterm/temple/OuterTemple: Backport from trunk - unique
+	  map names
+
+2008-11-14 06:24  rjtanner
+
+	* quests/cd/cd.castle.750, quests/cd/cd.cellar1.757,
+	  quests/cd/cd.inn.752, quests/cd/cd.store.753,
+	  quests/cd/cd.tower1.754, quests/cd/cd.tower2.755,
+	  quests/cd/cd.tunnel.751, quests/greyshield/Archery,
+	  quests/greyshield/Arena, quests/greyshield/Castle,
+	  quests/greyshield/Cave, quests/greyshield/Cavern,
+	  quests/greyshield/Cavern2, quests/greyshield/Chamber,
+	  quests/greyshield/Doors, quests/greyshield/Dungeon,
+	  quests/greyshield/Elements, quests/greyshield/Factory,
+	  quests/greyshield/Finish, quests/greyshield/Sphinx,
+	  quests/mak/MainFloor, quests/mak/chaos/down1,
+	  quests/mak/chaos/down2, quests/mak/chaos/down3,
+	  quests/mak/chaos/down4, quests/mak/chaos/down5,
+	  quests/mak/chaos/fallen, quests/mak/chaos/tritemples,
+	  quests/mak/chaos/up1, quests/mak/chaos/up2, quests/mak/chaos/up3,
+	  quests/mak/chaos/up4, quests/mak/chaos/up5,
+	  quests/mak/dragons/chaos, quests/mak/dragons/elec,
+	  quests/mak/dragons/fire, quests/mak/dragons/ice,
+	  quests/mak/giant/mainfloor, quests/mak/giant/secondfloor,
+	  quests/mak/giant/thirdfloor, quests/mak/mansion/basement,
+	  quests/mak/mansion/floor1, quests/mak/mansion/floor2,
+	  quests/mak/troll_cave/Guards, quests/mak/troll_cave/cave.1,
+	  quests/mak/troll_cave/cave.2, quests/mak/troll_cave/cave.3,
+	  quests/mak/undead/catacombs, quests/mak/undead/graveyard,
+	  quests/mak/undead/mausoleum, quests/mak/unnatural/unnat: Backport
+	  from trunk - unique map names
+
+2008-11-14 06:14  rjtanner
+
+	* quests/skud/entrance, quests/skud/maze,
+	  quests/todd/aljwaf/crypt2, quests/todd/aljwaf/crypt4,
+	  quests/todd/aljwaf/crypt5, quests/todd/aljwaf/tomb: Backport from
+	  trunk - map entrance x & y coordinates
+
+2008-11-14 06:12  rjtanner
+
+	* quests/peterm/CTower/Barracks, quests/peterm/CTower/Chamber,
+	  quests/peterm/CTower/Dungeon, quests/peterm/CTower/GroundLevel,
+	  quests/peterm/CTower/Laboratory, quests/peterm/CTower/Library,
+	  quests/peterm/CTower/Officers, quests/peterm/CTower/Servants,
+	  quests/peterm/CTower/Study, quests/peterm/CTower/TowerTop,
+	  quests/peterm/Demonology/AirMaster,
+	  quests/peterm/Demonology/AirTower1,
+	  quests/peterm/Demonology/AirTower2,
+	  quests/peterm/Demonology/ApprenticeLevel,
+	  quests/peterm/Demonology/Demon1, quests/peterm/Demonology/Demon2,
+	  quests/peterm/Demonology/Demon3,
+	  quests/peterm/Demonology/EarthMaster,
+	  quests/peterm/Demonology/EarthTower1,
+	  quests/peterm/Demonology/EarthTower2,
+	  quests/peterm/Demonology/FireMaster,
+	  quests/peterm/Demonology/FireTower1,
+	  quests/peterm/Demonology/FireTower2,
+	  quests/peterm/Demonology/GroundLevel,
+	  quests/peterm/Demonology/HighTower1,
+	  quests/peterm/Demonology/HighTower2,
+	  quests/peterm/Demonology/HighTowerTop,
+	  quests/peterm/Demonology/JourneymanLevel,
+	  quests/peterm/Demonology/MasterLevel,
+	  quests/peterm/Demonology/WaterMaster,
+	  quests/peterm/Demonology/WaterTower1,
+	  quests/peterm/Demonology/WaterTower2,
+	  quests/peterm/DragonQuest/ElectricAnte,
+	  quests/peterm/DragonQuest/ElectricHatchery,
+	  quests/peterm/DragonQuest/ElectricLord,
+	  quests/peterm/DragonQuest/Entrance,
+	  quests/peterm/DragonQuest/FireAnte,
+	  quests/peterm/DragonQuest/FireHatchery,
+	  quests/peterm/DragonQuest/FireLord,
+	  quests/peterm/DragonQuest/IceAnte,
+	  quests/peterm/DragonQuest/IceHatchery,
+	  quests/peterm/DragonQuest/IceLord,
+	  quests/peterm/DragonQuest/WyvernNest,
+	  quests/peterm/FireTemple/Entrance,
+	  quests/peterm/FireTemple/FifthFloor,
+	  quests/peterm/FireTemple/Fire1, quests/peterm/FireTemple/Fire2,
+	  quests/peterm/FireTemple/Fire3, quests/peterm/FireTemple/Fire4,
+	  quests/peterm/FireTemple/FirstFloor,
+	  quests/peterm/FireTemple/FourthFloor,
+	  quests/peterm/FireTemple/HotMines,
+	  quests/peterm/FireTemple/LavaChamber,
+	  quests/peterm/FireTemple/Mezannine1,
+	  quests/peterm/FireTemple/Passageway,
+	  quests/peterm/FireTemple/SecondFloor,
+	  quests/peterm/FireTemple/ThirdFloor,
+	  quests/peterm/Nethack_in_crossfire_entrance,
+	  quests/peterm/quests/TitanGate,
+	  quests/peterm/quests/mushroom_quest,
+	  quests/peterm/temple/AnteChamber, quests/peterm/temple/GemTunnel,
+	  quests/peterm/temple/InnerTemple,
+	  quests/peterm/temple/OuterTemple, quests/peterm/temple/Temple:
+	  Backport from trunk - map entrance x & y coordinates
+
+2008-11-14 06:01  rjtanner
+
+	* quests/cd/cd.cellar1.757, quests/cd/cd.inn.752,
+	  quests/cd/cd.store.753, quests/cd/cd.tower1.754,
+	  quests/cd/cd.tower2.755, quests/cd/cd.tunnel.751,
+	  quests/greyshield/Arena, quests/greyshield/Cave,
+	  quests/greyshield/Cavern2, quests/greyshield/Chamber,
+	  quests/greyshield/Doors, quests/greyshield/Dungeon,
+	  quests/greyshield/Elements, quests/greyshield/Factory,
+	  quests/greyshield/Fortress, quests/greyshield/GreyMaster,
+	  quests/mak/MainFloor, quests/mak/chaos/down1,
+	  quests/mak/chaos/down2, quests/mak/chaos/down3,
+	  quests/mak/chaos/down4, quests/mak/chaos/down5,
+	  quests/mak/chaos/fallen, quests/mak/chaos/tritemples,
+	  quests/mak/chaos/up1, quests/mak/chaos/up2, quests/mak/chaos/up3,
+	  quests/mak/chaos/up4, quests/mak/chaos/up5,
+	  quests/mak/dragons/chaos, quests/mak/dragons/elec,
+	  quests/mak/dragons/fire, quests/mak/dragons/ice,
+	  quests/mak/giant/mainfloor, quests/mak/giant/secondfloor,
+	  quests/mak/giant/thirdfloor, quests/mak/mansion/basement,
+	  quests/mak/mansion/floor1, quests/mak/mansion/floor2,
+	  quests/mak/troll_cave/Guards, quests/mak/troll_cave/cave.1,
+	  quests/mak/troll_cave/cave.2, quests/mak/troll_cave/cave.3,
+	  quests/mak/undead/graveyard, quests/mak/undead/mausoleum,
+	  quests/mak/unnatural/unnat, quests/mcz/castle1,
+	  quests/mcz/castle_air, quests/mcz/castle_earth,
+	  quests/mcz/castle_low1, quests/mcz/castle_low2,
+	  quests/mcz/castle_water: Backport from trunk - map entrance x & y
+	  coordinates
+
+2008-11-13 02:51  rjtanner
+
+	* ChangeLog: Updated ChangeLog file using svn2cl
+
 2008-11-13 02:32  rjtanner
 
 	* pup_land/lone_town/dragonhangar/hangar,
