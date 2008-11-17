@@ -1,3 +1,147 @@
+2008-11-16 18:59  ryo_saeba
+
+	* test/boat, test/trigger: Turning boat example map.
+
+2008-11-16 08:53  akirschbaum
+
+	* pup_land/lone_town/town: Fix typo.
+
+2008-11-16 05:56  rjtanner
+
+	* scorn/kar/somehouse2, scorn/kar/somehouse3: Additional lever to
+	  prevent players from being trapped in the map, as pointed out by
+	  kbulgrien
+
+2008-11-15 23:08  kbulgrien
+
+	* scorn/kar/gork.msg: Gork should not reset the conversation just
+	  because you say the wrong
+	  word!
+
+2008-11-15 09:08  kbulgrien
+
+	* python/CFDialog.py: - Reinstate an comment accidental deletion
+	  that occurred in revision 10421.
+
+2008-11-15 08:43  kbulgrien
+
+	* python/CFDialog.py: - Add in a comment that was edited into the
+	  CFDialog page on the wiki.
+
+2008-11-15 07:55  kbulgrien
+
+	* python/CFDialog.py, python/maps/witherspoon_manor/ghost.py,
+	  python/misc/npc_dialog.py, scorn/kar/gork.msg,
+	  scorn/kar/mork.msg, start/sigmund.msg: Modify CFDialog.py to use
+	  a list of strings for the keywords instead of the "|"
+	  delimited string for consistency and to reduce the need to
+	  specially parse the
+	  string. There seems no particular reason to stay with the "|"
+	  delimiter (and
+	  @match use of it does not seem compelling enough to override the
+	  benefit of
+	  removing the oddball parameter from both CFDialog.py and
+	  npc_dialog.py scripts.
+	  This commit also updates every known dialog that is affected.
+	  Also updated
+	  are the comments in both dialog scripts to reflect the change. In
+	  CFDialog.py
+	  also pluralize some identifers to better reflect that they are
+	  used for lists.
+
+2008-11-15 07:34  kbulgrien
+
+	* scorn/mansion/witherspoon_manor_attic: Difficulty 1 for spiders
+	  seems way too low. Other maps with spiders are set
+	  to difficulty 5, so changing this one to 5.
+
+2008-11-15 05:04  kbulgrien
+
+	* python/misc/npc_dialog.py: Add a comment that references
+	  ../scorn/kar/gork.msg as an example of how an
+	  npc_dialog.py conversation can be made player friendly by using
+	  multiple
+	  precondition flag values. Without using this capability,
+	  conversation paths
+	  can tend to be too linear or rigid and therefore produce
+	  unnecessary player
+	  frustratation.
+
+2008-11-15 04:52  kbulgrien
+
+	* python/CFDialog.py: Comment the code, convert a few odd tabs to
+	  spaces, and make a couple minor
+	  formatting changes to improve the consistency of the class
+	  structure. No
+	  functional changes made.
+
+2008-11-15 04:07  kbulgrien
+
+	* python/CFDialog.py, scorn/kar/gork.msg: The prior modification to
+	  CFDialog used "|" as a delimiter for multiple
+	  precondition values and overlooked the fact that the precondition
+	  syntax was
+	  already defined to be a list that could contain multiple values
+	  without
+	  resorting to packing them into a single string. This modification
+	  dispenses
+	  with the prior un-pythonic enhancement to CFDialog, and
+	  establishes a format
+	  that is more consistent with the rest of the rule structure. As a
+	  result of
+	  this change, Gork's conversation is also updated to work with the
+	  new version.
+	  A dependent script ./misc/npc_dialog.py remains unaffected by
+	  this change.
+
+2008-11-14 06:34  kbulgrien
+
+	* scorn/kar/gork.msg: Fix, and improve, the Gork dialog in the
+	  scorn/kar Gorks Quest. Add some new
+	  content, and make the conversation a lot more flexible so it is
+	  not necessary
+	  to reset from the beginning so much.
+
+2008-11-14 06:31  kbulgrien
+
+	* scorn/kar/mork.msg: Fix spelling and remove spurious blank lines
+	  from within the JSON.
+
+2008-11-14 06:28  kbulgrien
+
+	* python/CFDialog.py: Add an OR function to the CFDialog
+	  prefunction as it presently only supports
+	  AND. To follow precedent of using "|" in the match string (in
+	  both CFDialog
+	  and @match), use it as a delimiter inside the prefunction value.
+	  The value
+	  add is particularly that one can design conversations to loop
+	  back into
+	  prior states without requiring the conversation to reset and
+	  start back
+	  at the beginning.
+
+2008-11-14 04:44  kbulgrien
+
+	* python/misc/npc_dialog.py: Avoid DeprecationWarning: raising a
+	  string exception is deprecated by making
+	  a user-defined exception handler.
+
+2008-11-14 02:45  kbulgrien
+
+	* python/misc/npc_dialog.py: - Documentation improvements and an
+	  additional example. No functional changes.
+
+2008-11-14 01:28  kbulgrien
+
+	* python/CFDialog.py: Like the @match system, CFDialog now converts
+	  both match strings and things
+	  the player says to lowercase before checking for a match.
+
+2008-11-13 02:51  rjtanner
+
+	* ChangeLog: Updated ChangeLog file using svn2cl
+
 2008-11-12 03:15  rjtanner
 
 	* navar_city/illusion/illtow4: Text correction in map name (LEvel
