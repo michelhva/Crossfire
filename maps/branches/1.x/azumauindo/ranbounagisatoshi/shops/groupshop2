@@ -14,7 +14,7 @@ enter_x 24
 enter_y 3
 msg
 Created:  2004-08-03 Mikeeusa
-Modified: 2008-11-05 Rick Tanner
+Modified: 2008-11-17 Rick Tanner
 endmsg
 outdoor 1
 end
@@ -3997,9 +3997,8 @@ y 7
 end
 arch goldfloor
 name 5000 Platinum
-name_pl 5000 Platinum
-slaying platinacoin
-food 5000
+slaying money
+food 250000
 x 10
 y 7
 connected 50
@@ -4038,9 +4037,8 @@ y 9
 end
 arch goldfloor
 name 5000 Platinum
-name_pl 5000 Platinum
-slaying platinacoin
-food 5000
+slaying money
+food 250000
 x 10
 y 9
 connected 40
@@ -4079,9 +4077,8 @@ y 11
 end
 arch goldfloor
 name 1000 Platinum
-name_pl 1000 Platinum
-slaying platinacoin
-food 1000
+slaying money
+food 50000
 x 10
 y 11
 connected 30
@@ -4246,9 +4243,8 @@ y 22
 end
 arch goldfloor
 name 5000 Platinum
-name_pl 5000 Platinum
-slaying platinacoin
-food 5000
+slaying money
+food 250000
 x 10
 y 22
 connected 5
@@ -4287,9 +4283,8 @@ y 24
 end
 arch goldfloor
 name 5000 Platinum
-name_pl 5000 Platinum
-slaying platinacoin
-food 5000
+slaying money
+food 250000
 x 10
 y 24
 connected 4
@@ -4328,9 +4323,8 @@ y 26
 end
 arch goldfloor
 name 1000 Platinum
-name_pl 1000 Platinum
-slaying platinacoin
-food 1000
+slaying money
+food 50000
 x 10
 y 26
 connected 3

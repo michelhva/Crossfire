@@ -9,6 +9,7 @@ enter_x 1
 enter_y 1
 msg
 Created:  2002-02-28 mikeeusa
+Modified: 2008-11-17 Rick Tanner
 endmsg
 outdoor 1
 tile_path_1 citydeclouds2A
@@ -14843,9 +14844,8 @@ y 37
 end
 arch goldfloor
 name drop 50 plat
-name_pl drop 50 plat
-slaying platinacoin
-food 50
+slaying money
+food 250
 x 36
 y 37
 connected 481
@@ -14882,9 +14882,8 @@ y 39
 end
 arch goldfloor
 name drop 85 plat
-name_pl drop 85 plat
-slaying platinacoin
-food 85
+slaying money
+food 4250
 x 36
 y 39
 connected 482
@@ -14920,9 +14919,8 @@ y 41
 end
 arch goldfloor
 name drop 85 plat
-name_pl drop 85 plat
-slaying platinacoin
-food 85
+slaying money
+food 4250
 x 36
 y 41
 connected 483
@@ -14960,9 +14958,8 @@ y 43
 end
 arch goldfloor
 name drop 4000 plat
-name_pl drop 85 plat
-slaying platinacoin
-food 4000
+slaying money
+food 200000
 x 36
 y 43
 connected 484

@@ -8,7 +8,7 @@ enter_x 7
 enter_y 13
 msg
 Created:  2002-10-27 Todd Mitchell
-Modified: 2008-11-07 Rick Tanner
+Modified: 2008-11-17 Rick Tanner
 endmsg
 outdoor 1
 end
@@ -1549,10 +1549,10 @@ y 1
 end
 arch pearl_converter
 name drop 1500 platinum to buy healing potion
-slaying platinacoin
+slaying money
 other_arch potion_heal
 face cauldron.111
-food 1500
+food 75000
 x 16
 y 1
 end
@@ -2029,8 +2029,8 @@ y 7
 end
 arch altar
 name drop 50 gold for a room
-slaying goldcoin
-food 50
+slaying money
+food 250
 x 20
 y 7
 type 31
