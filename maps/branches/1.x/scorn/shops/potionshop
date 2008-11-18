@@ -10,7 +10,7 @@ enter_x 14
 enter_y 14
 msg
 Created:  1996-05-02 bt (thomas@astro.psu.edu)
-Modified: 2008-11-14 Rick Tanner
+Modified: 2008-11-17 Rick Tanner
 endmsg
 end
 arch woodfloor
@@ -1402,9 +1402,9 @@ y 2
 end
 arch diamond_converter
 name drop platinum to buy pyrite
-slaying platinacoin
+slaying money
 other_arch pyrite
-food 4
+food 200
 x 15
 y 2
 end
@@ -1414,9 +1414,9 @@ y 3
 end
 arch diamond_converter
 name drop platinum to buy gypsum
-slaying platinacoin
+slaying money
 other_arch gypsum
-food 4
+food 200
 x 15
 y 3
 end
@@ -1426,9 +1426,9 @@ y 4
 end
 arch diamond_converter
 name drop platinum to buy phosphorus
-slaying platinacoin
+slaying money
 other_arch phosphorus
-food 16
+food 800
 x 15
 y 4
 end
@@ -1438,9 +1438,9 @@ y 5
 end
 arch diamond_converter
 name drop platinum to buy salt
-slaying platinacoin
+slaying money
 other_arch salt
-food 5
+food 250
 x 15
 y 5
 end
@@ -1512,9 +1512,9 @@ y 1
 end
 arch diamond_converter
 name drop platinum to buy water
-slaying platinacoin
+slaying money
 other_arch water
-food 1
+food 50
 x 16
 y 1
 end
@@ -1524,9 +1524,9 @@ y 2
 end
 arch diamond_converter
 name drop platinum to buy lead
-slaying platinacoin
+slaying money
 other_arch lead
-food 36
+food 1800
 x 16
 y 2
 end
@@ -1536,9 +1536,9 @@ y 3
 end
 arch diamond_converter
 name drop platinum to buy mineral oil
-slaying platinacoin
+slaying money
 other_arch min_oil
-food 4
+food 200
 x 16
 y 3
 end
@@ -1548,9 +1548,9 @@ y 4
 end
 arch diamond_converter
 name drop platinum to buy cinnabar
-slaying platinacoin
+slaying money
 other_arch cinnabar
-food 24
+food 1200
 x 16
 y 4
 end
@@ -1560,9 +1560,9 @@ y 5
 end
 arch diamond_converter
 name drop platinum to buy sulphur
-slaying platinacoin
+slaying money
 other_arch sulphur
-food 8
+food 400
 x 16
 y 5
 end
@@ -1611,8 +1611,8 @@ connected 10
 end
 arch altar_trigger
 name Drop 200 platinum for day pass
-slaying platinacoin
-food 200
+slaying money
+food 10000
 x 16
 y 9
 connected 10
@@ -1650,10 +1650,10 @@ y 13
 end
 arch diamond_converter
 name Mana Potion: 1400 pp
-slaying platinacoin
+slaying money
 other_arch potion_magic
 sp 1
-food 1400
+food 70000
 x 16
 y 13
 end
@@ -1663,10 +1663,10 @@ y 14
 end
 arch diamond_converter
 name Healing Potion: 1400 pp
-slaying platinacoin
+slaying money
 other_arch potion_heal
 sp 1
-food 1400
+food 70000
 x 16
 y 14
 end
