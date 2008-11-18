@@ -9,7 +9,7 @@ enter_x 1
 enter_y 1
 msg
 Created:  1994-02-31
-Modified: 2008-11-04 Rick Tanner
+Modified: 2008-11-17 Rick Tanner
 endmsg
 end
 arch pstone_2
@@ -9791,11 +9791,10 @@ x 21
 y 10
 end
 arch altar
-slaying goldcoin
-food 20
+slaying money
+food 200
 x 21
 y 10
-resist_fire 30
 connected 4
 end
 arch pstone_2
@@ -11165,12 +11164,10 @@ x 25
 y 10
 end
 arch altar
-slaying goldcoin
-food 40
+slaying money
+food 400
 x 25
 y 10
-resist_physical 30
-resist_fire 30
 connected 5
 end
 arch pstone_2
@@ -12841,12 +12838,10 @@ x 31
 y 11
 end
 arch altar
-slaying goldcoin
-food 80
+slaying money
+food 800
 x 31
 y 11
-resist_magic 30
-resist_fire 30
 connected 6
 end
 arch pstone_2
@@ -12877,13 +12872,10 @@ x 31
 y 15
 end
 arch altar
-slaying goldcoin
-food 160
+slaying money
+food 1600
 x 31
 y 15
-resist_physical 30
-resist_magic 30
-resist_fire 30
 connected 7
 end
 arch pstone_2
@@ -12915,11 +12907,10 @@ x 31
 y 20
 end
 arch altar
-slaying goldcoin
-food 320
+slaying money
+food 3200
 x 31
 y 20
-resist_electricity 30
 connected 8
 end
 arch pstone_2
@@ -14101,12 +14092,10 @@ x 35
 y 13
 end
 arch altar
-slaying goldcoin
-food 1280
+slaying money
+food 12800
 x 35
 y 13
-resist_magic 30
-resist_electricity 30
 connected 10
 end
 arch pstone_2
@@ -14137,12 +14126,10 @@ x 35
 y 18
 end
 arch altar
-slaying goldcoin
-food 640
+slaying money
+food 6400
 x 35
 y 18
-resist_physical 30
-resist_electricity 30
 connected 9
 end
 arch pstone_2
@@ -14425,13 +14412,10 @@ x 36
 y 10
 end
 arch altar
-slaying goldcoin
-food 2560
+slaying money
+food 25600
 x 36
 y 10
-resist_physical 30
-resist_magic 30
-resist_electricity 30
 connected 11
 end
 arch pstone_2
@@ -15817,12 +15801,10 @@ x 41
 y 13
 end
 arch altar
-slaying goldcoin
-food 5120
+slaying money
+food 51200
 x 41
 y 13
-resist_fire 30
-resist_electricity 30
 connected 12
 end
 arch pstone_2
@@ -15863,13 +15845,10 @@ x 41
 y 19
 end
 arch altar
-slaying goldcoin
-food 10240
+slaying money
+food 102400
 x 41
 y 19
-resist_physical 30
-resist_fire 30
-resist_electricity 30
 connected 13
 end
 arch pstone_2

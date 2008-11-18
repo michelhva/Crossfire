@@ -8,7 +8,7 @@ enter_x 4
 enter_y 6
 msg
 Created:  2003-12-13 Avion
-Modified: 2008-11-09 Rick Tanner
+Modified: 2008-11-17 Rick Tanner
 With kudos to DH
 endmsg
 end
@@ -2502,8 +2502,8 @@ y 24
 end
 arch altar_trigger
 name 10 Gold Coins
-slaying goldcoin
-food 10
+slaying money
+food 100
 x 12
 y 24
 last_sp 1
