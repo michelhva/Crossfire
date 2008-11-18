@@ -8,7 +8,7 @@ msg
 Created:  1996-05-30
 Updated 2007.11.12 by Gene Alexander
  - made this an outdoor map
-Modified: 2008-10-28 Rick Tanner
+Modified: 2008-11-18 Kevin Bulgrien
 endmsg
 outdoor 1
 end
@@ -5284,14 +5284,13 @@ arch cobblestones
 x 28
 y 18
 end
-arch cobblestones
-x 28
-y 19
-end
-arch tower_tob
-name lighthouse
+arch lighthouse
 slaying l_h1
 hp 3
+x 28
+y 18
+end
+arch cobblestones
 x 28
 y 19
 end
