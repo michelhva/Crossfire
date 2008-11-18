@@ -8,7 +8,7 @@ enter_x 1
 enter_y 3
 msg
 Created:  1996-02-09
-Modified: 2008-11-12 Rick Tanner
+Modified: 2008-11-17 Rick Tanner
 endmsg
 end
 arch grass
@@ -476,8 +476,8 @@ y 9
 end
 arch altar
 name drop 5 platinum coins
-slaying platinacoin
-food 5
+slaying money
+food 250
 x 4
 y 9
 connected 1

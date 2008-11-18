@@ -878,8 +878,8 @@ connected 10
 end
 arch altar_trigger
 name Drop 160 platinum to enter
-slaying platinacoin
-food 160
+slaying money
+food 8000
 x 8
 y 13
 connected 10
