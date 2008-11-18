@@ -8,7 +8,7 @@ enter_x 16
 enter_y 19
 msg
 Created:  1996-02-07
-Modified: 2008-11-11 Rick Tanner
+Modified: 2008-11-17 Rick Tanner
 endmsg
 end
 arch woods_2
@@ -2198,7 +2198,7 @@ y 14
 end
 arch altar
 name Rest Room (1 silver)
-slaying silvercoin
+slaying money
 food 1
 x 17
 y 14
