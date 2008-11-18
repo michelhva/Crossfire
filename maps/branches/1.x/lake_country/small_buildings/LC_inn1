@@ -7,7 +7,7 @@ height 15
 enter_y 3
 msg
 Created:  1995-02-23
-Modified: 2008-11-07 Rick Tanner
+Modified: 2008-11-17 Rick Tanner
 endmsg
 end
 arch woodfloor
@@ -747,8 +747,8 @@ connected 3
 end
 arch altar
 name drop 100 gold for a room
-slaying goldcoin
-food 100
+slaying money
+food 1000
 x 6
 y 6
 type 31
