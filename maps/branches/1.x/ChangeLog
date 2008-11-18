@@ -1,3 +1,94 @@
+2008-11-18 03:05  rjtanner
+
+	* scorn/shops/potionshop: Fix broken conversion table
+
+2008-11-18 02:58  rjtanner
+
+	* brest/brittany/khazad.3: Backport from trunk - map difficulty
+	  level
+
+2008-11-18 02:57  rjtanner
+
+	* brest/brittany/dol-guldur.5: Backport from trunk - spelling
+	  correction (Armory -> Armoury)
+
+2008-11-18 02:56  rjtanner
+
+	* brest/asyvan/palace1, brest/asyvan/palace2: Backport from trunk -
+	  make map paths relative
+
+2008-11-18 02:54  rjtanner
+
+	* brest/asyvan/palace1, brest/asyvan/palace2, brest/asyvan/palace3:
+	  Backport from trunk - make map paths relative
+
+2008-11-18 02:52  rjtanner
+
+	* azumauindo/minatomachi/buildings/guildkeybuildingB2a,
+	  azumauindo/minatomachi/buildings/guildkeybuildingB2b,
+	  azumauindo/minatomachi/buildings/guildkeybuildingB2c: Backport
+	  from trunk - map author credit and realigned stairways between
+	  map levels
+
+2008-11-18 02:50  rjtanner
+
+	* scorn/shops/alclass: Backport from trunk - cosmetic wall changes
+	  with how swall (fence) merges with nearby walls
+
+2008-11-18 02:43  rjtanner
+
+	* pup_land/nurnberg/alshop, scorn/shops/alclass,
+	  scorn/shops/potionshop: Backport from trunk - update conversion
+	  tables to accept payment of any coin type, requires server update
+	  r10233 (or newer)
+
+2008-11-18 02:06  rjtanner
+
+	* azumauindo/ranbounagisatoshi/shops/groupshop,
+	  azumauindo/ranbounagisatoshi/shops/groupshop2,
+	  azumauindo/ranbounagisatoshi/shops/groupshopb1,
+	  azumauindo/ranbounagisatoshi/shops/groupshopb2,
+	  brest/shops/a_small_shop, inn_and_outpost/hermes_inn,
+	  lake_country/small_buildings/LC_inn1, marksel/grumms_inn,
+	  mlab/citydeclouds/citydeclouds2B,
+	  mlab/citydeclouds/shops/cwdckitchen, navar_city/misc/bowyer,
+	  navar_city/misc/city1smith, navar_city/misc/jeweler,
+	  navar_city/misc/kitchen, navar_city/misc/library,
+	  navar_city/misc/tannery, navar_city/misc/thamshop,
+	  port_joseph/pirates/torttemple, pup_land/nurnberg/apartment/main,
+	  pup_land/nurnberg/dick/house, pup_land/nurnberg/hotel,
+	  pup_land/rainbow/station, santo_dominion/sdomino_appartment,
+	  santo_dominion/shops/rings, scorn/houses/bowyer,
+	  scorn/houses/jeweler, scorn/houses/kitchen,
+	  scorn/houses/smithery, scorn/houses/tannery,
+	  scorn/houses/wizardw, scorn/misc/battle_arena/entrance,
+	  scorn/misc/library, scorn/shops/alclass: Backport from trunk -
+	  convert platinum coin payment altars to accept payment of any
+	  coin type, requires server update r10233 (or newer)
+
+2008-11-18 01:39  rjtanner
+
+	* brest/underground, inn_and_outpost/sweets_inn,
+	  lake_country/small_buildings/LC_inn1, marksel/grumms_inn,
+	  navar_city/casino_infernal/casino_infernal1,
+	  navar_city/collosium, navar_city/misc/bowyer,
+	  navar_city/misc/city1mermaid, navar_city/temples/ruggilli2,
+	  pup_land/lone_town/church, pup_land/nurnberg/hotel,
+	  scorn/houses/bowyer, scorn/misc/mercenaries, scorn/shops/bowshop:
+	  Backport from trunk - convert gold coin payment altars to accept
+	  payment of any coin type, requires server update r10233 (or
+	  newer)
+
+2008-11-18 01:25  rjtanner
+
+	* pup_land/nurnberg/hotel, scorn/shops/coffeeshop: Backport from
+	  trunk - conver silver payment altars to accept payment of any
+	  coin type, requires server update r10233 (or newer)
+
+2008-11-17 06:31  rjtanner
+
+	* ChangeLog: Updated ChangeLog file using svn2cl
+
 2008-11-17 06:22  rjtanner
 
 	* world/world_103_114, world/world_103_115, world/world_103_116,
