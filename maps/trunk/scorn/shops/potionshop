@@ -1389,9 +1389,10 @@ y 1
 end
 arch diamond_converter
 name drop gold to buy keys
+slaying money
 other_arch key
 sp 1
-food 10
+food 100
 x 15
 y 1
 end
