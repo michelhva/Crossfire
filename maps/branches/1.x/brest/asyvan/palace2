@@ -8,7 +8,7 @@ enter_x 8
 enter_y 8
 msg
 Created:  1994-09-20
-Modified: 2008-11-05 Rick Tanner
+Modified: 2008-11-17 Rick Tanner
 endmsg
 end
 arch dungeon_magic
@@ -353,7 +353,7 @@ x 1
 y 15
 end
 arch stair_3_down
-slaying /brest/asyvan/palace1
+slaying palace1
 hp 1
 sp 15
 x 1
