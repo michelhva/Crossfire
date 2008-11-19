@@ -2361,9 +2361,9 @@ connected 88
 end
 arch altar_trigger
 name Drop 500 gold for day pass
-slaying goldcoin
+slaying money
 face chalice.111
-food 500
+food 5000
 x 10
 y 9
 connected 88
