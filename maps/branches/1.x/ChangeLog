@@ -1,3 +1,119 @@
+2008-11-19 01:59  rjtanner
+
+	* dragonisland/advguild: Backport from trunk - cosmetic wall
+	  changes with how swall (fence) merges with nearby walls
+
+2008-11-19 01:57  rjtanner
+
+	* darcap/undead/undead.2, darcap/undead/undead.3: Backport from
+	  trunk - cosmetic touchup on the cave walls to they merge and
+	  blend together nicer
+
+2008-11-19 01:56  rjtanner
+
+	* darcap/town2/towers: Backport from trunk - cosmetic call changes
+	  so they merge nicer with nearby doors
+
+2008-11-19 01:53  rjtanner
+
+	* darcap/town2/tower3, darcap/town2/tower4: Backport from trunk -
+	  insert missing floor tiles underneath walls
+
+2008-11-19 01:52  rjtanner
+
+	* darcap/temple_justice/temple_justice.10,
+	  darcap/temple_justice/temple_justice.11,
+	  darcap/temple_justice/temple_justice.12,
+	  darcap/temple_justice/temple_justice.13,
+	  darcap/temple_justice/temple_justice.14,
+	  darcap/temple_justice/temple_justice.2,
+	  darcap/temple_justice/temple_justice.3,
+	  darcap/temple_justice/temple_justice.4,
+	  darcap/temple_justice/temple_justice.5,
+	  darcap/temple_justice/temple_justice.6,
+	  darcap/temple_justice/temple_justice.7,
+	  darcap/temple_justice/temple_justice.8,
+	  darcap/temple_justice/temple_justice.9, darcap/town2/tower2:
+	  Backport from trunk - added 'blocked' walls to the unused spaces
+	  (cosmetic change only, no functional changes)
+
+2008-11-19 01:41  rjtanner
+
+	* darcap/temple_justice/temple_justice.1,
+	  darcap/temple_justice/temple_justice.10,
+	  darcap/temple_justice/temple_justice.11,
+	  darcap/temple_justice/temple_justice.12,
+	  darcap/temple_justice/temple_justice.13,
+	  darcap/temple_justice/temple_justice.14,
+	  darcap/temple_justice/temple_justice.2,
+	  darcap/temple_justice/temple_justice.3,
+	  darcap/temple_justice/temple_justice.4,
+	  darcap/temple_justice/temple_justice.5,
+	  darcap/temple_justice/temple_justice.6,
+	  darcap/temple_justice/temple_justice.7,
+	  darcap/temple_justice/temple_justice.8,
+	  darcap/temple_justice/temple_justice.9: Backport from trunk -
+	  apply region (darcap) to Temple of Justice maps
+
+2008-11-19 01:38  rjtanner
+
+	* lake_country/DA: Backport from trunk - map entrance x & y
+	  coordinates
+
+2008-11-19 01:35  rjtanner
+
+	* navar_city/jail/jail, navar_city/jail/jail2,
+	  navar_city/misc/library: Backport from trunk - cosmetic wall
+	  changes with how swall (fence) merges with nearby walls
+
+2008-11-19 01:32  rjtanner
+
+	* scorn/shops/scorn.sale2: Backport from trunk - day pass payment
+	  chalice now accepts all coins (vs gold coins only)
+
+2008-11-19 01:28  rjtanner
+
+	* HallOfSelection,
+	  azumauindo/suno-yamatoshi/apartments/lapartment1,
+	  brest/brest.inn, brest/nasty_house, darcap/raffle/raffle1,
+	  darcap/temple_justice/temple_justice.1,
+	  darcap/temple_justice/temple_justice.10,
+	  darcap/temple_justice/temple_justice.11,
+	  darcap/temple_justice/temple_justice.12,
+	  darcap/temple_justice/temple_justice.13,
+	  darcap/temple_justice/temple_justice.14,
+	  darcap/temple_justice/temple_justice.2,
+	  darcap/temple_justice/temple_justice.3,
+	  darcap/temple_justice/temple_justice.4,
+	  darcap/temple_justice/temple_justice.5,
+	  darcap/temple_justice/temple_justice.6,
+	  darcap/temple_justice/temple_justice.7,
+	  darcap/temple_justice/temple_justice.8,
+	  darcap/temple_justice/temple_justice.9, darcap/town2/tower2,
+	  darcap/undead/undead.2, lake_country/Butakis/arena,
+	  navar_city/jail/jail2, pup_land/ancient/castle/castle.4,
+	  pup_land/ancient/castle/castle.6,
+	  pup_land/ancient/mountain/tower.1, pup_land/ancient/ruin/house2,
+	  pup_land/ancient/ruin/path, pup_land/lone_town/gemshop,
+	  pup_land/lone_town/gshop, pup_land/nurnberg/IPO_nurnberg,
+	  pup_land/nurnberg/alshop, pup_land/port_e,
+	  pup_land/raffle/raffle2_u3, pup_land/rainbow/Lv3/Rufto,
+	  pup_land/rainbow/Lv3/prison, pup_land/rainbow/Lv4/key,
+	  pup_land/rainbow/Lv4/path7, pup_land/rainbow/islands,
+	  scorn/misc/beginners2, scorn/misc/castle, scorn/misc/zoo2,
+	  scorn/shops/scorn.sale2, sisters/tower2: Backport from trunk -
+	  map header unification in regards to creation date and author
+	  credit, no functional changes
+
+2008-11-19 01:04  rjtanner
+
+	* azumauindo/minatomachi/buildings/guildkeybuildingB2c: Backport
+	  from trunk - realign stairways between floor levels
+
+2008-11-18 03:25  rjtanner
+
+	* ChangeLog: Updated ChangeLog file using svn2cl
+
 2008-11-18 03:05  rjtanner
 
 	* scorn/shops/potionshop: Fix broken conversion table

@@ -1,3 +1,25 @@
+2008-11-19 01:30  rjtanner
+
+	* brest/brest.inn, pup_land/rainbow/islands: Map header update and
+	  reformatting - no functional changes
+
+2008-11-18 07:14  kbulgrien
+
+	* pup_land/rainbow/islands: Replace hut named lighthouse with one
+	  of the archetypes that actually looks
+	  like a lighthouse with a glow radius.
+
+2008-11-18 05:36  kbulgrien
+
+	* whalingoutpost/taverns/storehouse1: Minor dialog rework: Remove
+	  mid-sentence line breaks and break at possible
+	  paragraphs instead; fix capitalization/grammar/spelling; give
+	  fatman a name.
+
+2008-11-18 03:25  rjtanner
+
+	* ChangeLog: Updated ChangeLog file using svn2cl
+
 2008-11-18 03:06  rjtanner
 
 	* whalingoutpost/misc/polarbearcave3: Apply region (whalingoutpost)
