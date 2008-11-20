@@ -45,7 +45,7 @@ if (baseDirectory.endsWith("/")) {
     baseDirectory = baseDirectory.substring(0, baseDirectory.length() - 1);
 }
 
-String mapDefaultFolder = globalSettings.getMapDefaultFolder();
+String mapDefaultFolder = globalSettings.getMapsDirectory().getPath();
 String rootDirectory = mapDefaultFolder + baseDirectory;
 Iterator it = new RecursiveFileIterator(new File(rootDirectory));
 while (it.hasNext()) {
