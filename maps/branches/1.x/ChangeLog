@@ -1,3 +1,119 @@
+2008-11-20 02:27  rjtanner
+
+	* HallOfSelection, brest/black_shield/bigchest,
+	  brest/black_shield/ground, brest/black_shield/storage_room,
+	  brest/black_shield/upper,
+	  darcap/darcap/guilds/poisoned_dagger/bigchest,
+	  darcap/darcap/guilds/poisoned_dagger/ground,
+	  darcap/darcap/guilds/poisoned_dagger/storage_room,
+	  darcap/darcap/guilds/poisoned_dagger/upper,
+	  darcap/darcap/guilds/smoking_cauldron/bigchest,
+	  darcap/darcap/guilds/smoking_cauldron/ground,
+	  darcap/darcap/guilds/smoking_cauldron/storage_room,
+	  darcap/darcap/guilds/smoking_cauldron/upper,
+	  navar_city/dreaming_sage/bigchest,
+	  navar_city/dreaming_sage/ground,
+	  navar_city/dreaming_sage/storage_room,
+	  navar_city/dreaming_sage/upper,
+	  pup_land/guilds/laughing_skull/bigchest,
+	  pup_land/guilds/laughing_skull/ground,
+	  pup_land/guilds/laughing_skull/storage_room,
+	  pup_land/guilds/laughing_skull/upper,
+	  pup_land/guilds/purple_butterfly/bigchest,
+	  pup_land/guilds/purple_butterfly/ground,
+	  pup_land/guilds/purple_butterfly/storage_room,
+	  pup_land/guilds/purple_butterfly/upper,
+	  santo_dominion/guilds/drunken_barbarian/bigchest,
+	  santo_dominion/guilds/drunken_barbarian/ground,
+	  santo_dominion/guilds/drunken_barbarian/storage_room,
+	  santo_dominion/guilds/drunken_barbarian/upper,
+	  scorn/guilds/mailed_fist/bigchest,
+	  scorn/guilds/mailed_fist/ground,
+	  scorn/guilds/mailed_fist/storage_room,
+	  scorn/guilds/mailed_fist/upper,
+	  wolfsburg/guilds/damned_heretics/bigchest,
+	  wolfsburg/guilds/damned_heretics/ground,
+	  wolfsburg/guilds/damned_heretics/storage_room,
+	  wolfsburg/guilds/damned_heretics/upper: Backport from trunk -
+	  unique map names
+
+2008-11-20 02:13  rjtanner
+
+	* azumauindo/suno-yamatoshi/towers/tou5: Backport from trunk,
+	  replace no_pass with move_block
+
+2008-11-20 02:02  rjtanner
+
+	* santo_dominion/mudman/mudman.3: Backport from trunk: Fix for Bug
+	  [ 2020789 ] many maps broken 16 months ago: wrong immunities,
+	  armour..; Corrected stats for swamp monster
+
+2008-11-20 01:57  rjtanner
+
+	* sisters/tower3: Backport from trunk: Fix for Bug [ 2020789 ] many
+	  maps broken 16 months ago: wrong immunities, armour..; Corrected
+	  stats for the Three Sisters
+
+2008-11-20 01:52  rjtanner
+
+	* sisters/tower2: Backport from trunk: Fix for Bug [ 2020789 ] many
+	  maps broken 16 months ago: wrong immunities, armour..; Corrected
+	  stats for statue of chaos creature
+
+2008-11-20 01:46  rjtanner
+
+	* sisters/shrine1: Backport from trunk: Fix for Bug [ 2020789 ]
+	  many maps broken 16 months ago: wrong immunities, armour..;
+	  Corrected stats for Spirit guardian of Chaos
+
+2008-11-20 01:44  rjtanner
+
+	* sisters/shrine0_east: Backport from trunk: Fix for Bug [ 2020789
+	  ] many maps broken 16 months ago: wrong immunities, armour..;
+	  Corrected stats for crawling chaos
+
+2008-11-20 01:42  rjtanner
+
+	* sisters/necro_entrance: Backport from trunk: Fix for Bug [
+	  2020789 ] many maps broken 16 months ago: wrong immunities,
+	  armour..; Corrected stats for Ghost Defender of Gax
+
+2008-11-20 01:40  rjtanner
+
+	* santo_dominion/mudman/mudman.2: Backport from trunk: Fix for Bug
+	  [ 2020789 ] many maps broken 16 months ago: wrong immunities,
+	  armour..; Corrected stats for swamp monsters
+
+2008-11-20 01:35  rjtanner
+
+	* lake_country/snake_pit/Chaos_lair3,
+	  lake_country/snake_pit/Chaos_lair4,
+	  lake_country/snake_pit/snakepit_3,
+	  lake_country/snake_pit/snakepit_5: Backport from trunk: Fix for
+	  Bug [ 2020789 ] many maps broken 16 months ago: wrong immunities,
+	  armour..; Corrected stats for numerous monsters
+
+2008-11-20 01:25  rjtanner
+
+	* lake_country/snake_pit/Chaos_lair3,
+	  lake_country/snake_pit/Chaos_lair4: Backport from trunk - insert
+	  missing floor tiles beneath walls
+
+2008-11-20 01:15  rjtanner
+
+	* lake_country/RETower/tower3: Backport from trunk - insert missing
+	  floor tiles beneath walls
+
+2008-11-20 00:17  rjtanner
+
+	* brest/pshops/pshop2/basement, brest/pshops/pshop20/basement,
+	  brest/pshops/pshop3/gfloor, brest/pshops/pshopsinc,
+	  brest/pshops/pshopsinc2: Backport from trunk - unique map names
+
+2008-11-19 02:17  rjtanner
+
+	* ChangeLog: Updated ChangeLog file using svn2cl
+
 2008-11-19 01:59  rjtanner
 
 	* dragonisland/advguild: Backport from trunk - cosmetic wall
