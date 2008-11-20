@@ -9,7 +9,7 @@ enter_x 8
 enter_y 7
 msg
 Created:  1994-12-18
-Modified: 2008-11-18 Rick Tanner
+Modified: 2008-11-19 Rick Tanner
 endmsg
 end
 arch sea
@@ -138,7 +138,9 @@ x 1
 y 5
 speed 0.100000
 level 20
-resist_physical 16
+resist_physical 50
+resist_magic 30
+resist_cold -100
 carrying 4500000
 move_type walk
 alive 1
@@ -192,7 +194,9 @@ x 1
 y 10
 speed 0.100000
 level 20
-resist_physical 16
+resist_physical 50
+resist_magic 30
+resist_cold -100
 carrying 4500000
 move_type walk
 alive 1
@@ -383,7 +387,9 @@ x 3
 y 6
 speed 0.100000
 level 20
-resist_physical 16
+resist_physical 50
+resist_magic 30
+resist_cold -100
 carrying 4500000
 move_type walk
 alive 1
@@ -433,7 +439,9 @@ x 3
 y 10
 speed 0.100000
 level 20
-resist_physical 16
+resist_physical 50
+resist_magic 30
+resist_cold -100
 carrying 4500000
 move_type walk
 alive 1
@@ -517,7 +525,9 @@ x 4
 y 4
 speed 0.100000
 level 20
-resist_physical 16
+resist_physical 50
+resist_magic 30
+resist_cold -100
 carrying 4500000
 move_type walk
 alive 1
@@ -618,7 +628,9 @@ x 5
 y 1
 speed 0.100000
 level 20
-resist_physical 16
+resist_physical 50
+resist_magic 30
+resist_cold -100
 carrying 4500000
 move_type walk
 alive 1
@@ -735,7 +747,9 @@ x 5
 y 14
 speed 0.100000
 level 20
-resist_physical 16
+resist_physical 50
+resist_magic 30
+resist_cold -100
 carrying 4500000
 move_type walk
 alive 1
@@ -853,7 +867,9 @@ x 6
 y 12
 speed 0.100000
 level 20
-resist_physical 16
+resist_physical 50
+resist_magic 30
+resist_cold -100
 carrying 4500000
 move_type walk
 alive 1
@@ -1165,7 +1181,9 @@ x 9
 y 12
 speed 0.100000
 level 20
-resist_physical 16
+resist_physical 50
+resist_magic 30
+resist_cold -100
 carrying 4500000
 move_type walk
 alive 1
@@ -1225,7 +1243,9 @@ x 10
 y 1
 speed 0.100000
 level 20
-resist_physical 16
+resist_physical 50
+resist_magic 30
+resist_cold -100
 carrying 4500000
 move_type walk
 alive 1
@@ -1331,7 +1351,9 @@ x 10
 y 14
 speed 0.100000
 level 20
-resist_physical 16
+resist_physical 50
+resist_magic 30
+resist_cold -100
 carrying 4500000
 move_type walk
 alive 1
@@ -1399,7 +1421,9 @@ x 11
 y 4
 speed 0.100000
 level 20
-resist_physical 16
+resist_physical 50
+resist_magic 30
+resist_cold -100
 carrying 4500000
 move_type walk
 alive 1
@@ -1512,7 +1536,9 @@ x 12
 y 5
 speed 0.100000
 level 20
-resist_physical 16
+resist_physical 50
+resist_magic 30
+resist_cold -100
 carrying 4500000
 move_type walk
 alive 1
@@ -1566,7 +1592,9 @@ x 12
 y 10
 speed 0.100000
 level 20
-resist_physical 16
+resist_physical 50
+resist_magic 30
+resist_cold -100
 carrying 4500000
 move_type walk
 alive 1
@@ -1748,7 +1776,9 @@ x 14
 y 5
 speed 0.100000
 level 20
-resist_physical 16
+resist_physical 50
+resist_magic 30
+resist_cold -100
 carrying 4500000
 move_type walk
 alive 1
@@ -1802,7 +1832,9 @@ x 14
 y 10
 speed 0.100000
 level 20
-resist_physical 16
+resist_physical 50
+resist_magic 30
+resist_cold -100
 carrying 4500000
 move_type walk
 alive 1
