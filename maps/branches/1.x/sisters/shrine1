@@ -9,7 +9,7 @@ enter_x 15
 enter_y 32
 msg
 Created:  1994-12-19 bt (thomas@nomad.astro.psu.edu)
-Modified: 2008-11-14 Rick Tanner
+Modified: 2008-11-19 Rick Tanner
 endmsg
 end
 arch blocked
@@ -1334,7 +1334,10 @@ y 3
 speed -0.300000
 level 20
 attacktype 16
-resist_magic 100
+resist_physical 100
+resist_magic 30
+resist_drain 100
+resist_chaos 100
 see_invisible 1
 can_pass_thru 0
 can_cast_spell 1
@@ -1443,7 +1446,10 @@ y 16
 speed -0.3
 level 20
 attacktype 16
-resist_magic 100
+resist_physical 100
+resist_magic 30
+resist_drain 100
+resist_chaos 100
 see_invisible 1
 can_pass_thru 0
 can_cast_spell 1
@@ -4117,7 +4123,10 @@ y 2
 speed -0.300000
 level 20
 attacktype 16
-resist_magic 100
+resist_physical 100
+resist_magic 30
+resist_drain 100
+resist_chaos 100
 see_invisible 1
 can_pass_thru 0
 can_cast_spell 1
@@ -4210,7 +4219,10 @@ y 17
 speed -0.300000
 level 20
 attacktype 16
-resist_fire 100
+resist_physical 100
+resist_magic 30
+resist_drain 100
+resist_chaos 100
 see_invisible 1
 can_pass_thru 0
 can_cast_spell 1
