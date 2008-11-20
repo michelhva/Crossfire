@@ -9,7 +9,7 @@ enter_x 9
 enter_y 20
 msg
 Created:  1995-06-06 Kundi, Xue (xkd@soda.berkeley.edu)
-Modified: 2008-11-07 Rick Tanner
+Modified: 2008-11-19 Rick Tanner
 endmsg
 end
 arch button_handle
@@ -141,10 +141,17 @@ y 20
 speed 1.0
 speed_left -0.920000
 level 99
-attacktype 351389
-resist_electricity 100
-resist_confusion 100
-resist_acid 100
+attacktype 327680
+resist_physical 100
+resist_magic 0
+resist_fire 100
+resist_electricity 30
+resist_confusion 30
+resist_acid 30
+resist_poison 100
+resist_slow 100
+resist_paralyze 100
+resist_blind 0
 carrying 545050
 move_type walk fly_low
 can_cast_spell 1
@@ -641,7 +648,10 @@ speed 0.700000
 speed_left -1.840000
 level 30
 attacktype 29
-resist_electricity 100
+resist_physical 100
+resist_electricity 30
+resist_cold 100
+resist_paralyze 100
 carrying 35000
 move_type walk fly_low
 arch abil_icestorm
@@ -1262,8 +1272,12 @@ y 14
 speed 0.400000
 speed_left -1.260000
 level 30
-resist_electricity 100
-resist_cold 100
+resist_physical 100
+resist_magic 100
+resist_fire 30
+resist_electricity 30
+resist_cold 30
+resist_paralyze 100
 carrying 35000
 move_type walk fly_low
 arch gem
@@ -1393,8 +1407,12 @@ y 5
 speed 0.4
 speed_left -1.310000
 level 30
-resist_electricity 100
-resist_cold 100
+resist_physical 100
+resist_magic 100
+resist_fire 30
+resist_electricity 30
+resist_cold 30
+resist_paralyze 100
 carrying 35000
 move_type walk fly_low
 arch gem
@@ -2378,8 +2396,12 @@ y 4
 speed 0.400000
 speed_left -2.590000
 level 30
-resist_electricity 100
-resist_cold 100
+resist_physical 100
+resist_magic 100
+resist_fire 30
+resist_electricity 30
+resist_cold 30
+resist_paralyze 100
 carrying 35000
 move_type walk fly_low
 arch gem
@@ -2476,7 +2498,10 @@ speed 0.700000
 speed_left -1.840000
 level 30
 attacktype 29
-resist_electricity 100
+resist_physical 100
+resist_electricity 30
+resist_cold 100
+resist_paralyze 100
 carrying 35000
 move_type walk fly_low
 arch abil_icestorm

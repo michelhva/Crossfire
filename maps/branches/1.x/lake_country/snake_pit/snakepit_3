@@ -9,7 +9,7 @@ enter_x 18
 enter_y 29
 msg
 Created:  1995-06-04 Kundi, Xue (xkd@soda.berkeley.edu)
-Modified: 2008-11-07 Rick Tanner
+Modified: 2008-11-19 Rick Tanner
 endmsg
 end
 arch large_stones
@@ -1397,7 +1397,9 @@ speed 0.700000
 speed_left -17.569998
 level 70
 attacktype 1167
-resist_electricity 100
+resist_physical 100
+resist_electricity 30
+resist_cold 100
 arch spell_sm_lightning
 end
 arch spell_sm_lightning
@@ -2123,8 +2125,9 @@ y 27
 speed 1.000000
 speed_left -34.419998
 attacktype 82945
-resist_fire 100
-resist_electricity 100
+resist_fire 30
+resist_electricity 30
+resist_poison 100
 can_see_in_dark 1
 arch abil_poison_cloud
 end
@@ -2163,8 +2166,9 @@ y 32
 speed 1.000000
 speed_left -34.419998
 attacktype 82945
-resist_fire 100
-resist_electricity 100
+resist_fire 30
+resist_electricity 30
+resist_poison 100
 can_see_in_dark 1
 arch abil_poison_cloud
 end
@@ -2381,8 +2385,9 @@ y 27
 speed 1.000000
 speed_left -34.419998
 attacktype 82945
-resist_fire 100
-resist_electricity 100
+resist_fire 30
+resist_electricity 30
+resist_poison 100
 can_see_in_dark 1
 arch abil_poison_cloud
 end
@@ -2421,8 +2426,9 @@ y 32
 speed 1.000000
 speed_left -34.419998
 attacktype 82945
-resist_fire 100
-resist_electricity 100
+resist_fire 30
+resist_electricity 30
+resist_poison 100
 can_see_in_dark 1
 arch abil_poison_cloud
 end
@@ -3393,8 +3399,9 @@ y 25
 speed 1.000000
 speed_left -34.419998
 attacktype 82945
-resist_fire 100
-resist_electricity 100
+resist_fire 30
+resist_electricity 30
+resist_poison 100
 can_see_in_dark 1
 arch abil_poison_cloud
 end
@@ -3647,8 +3654,9 @@ y 25
 speed 1.000000
 speed_left -34.419998
 attacktype 82945
-resist_fire 100
-resist_electricity 100
+resist_fire 30
+resist_electricity 30
+resist_poison 100
 can_see_in_dark 1
 arch abil_poison_cloud
 end
@@ -4359,8 +4367,9 @@ y 34
 speed 1.000000
 speed_left -34.419998
 attacktype 82945
-resist_fire 100
-resist_electricity 100
+resist_fire 30
+resist_electricity 30
+resist_poison 100
 can_see_in_dark 1
 arch abil_poison_cloud
 end
@@ -4573,8 +4582,9 @@ y 34
 speed 1.000000
 speed_left -34.419998
 attacktype 82945
-resist_fire 100
-resist_electricity 100
+resist_fire 30
+resist_electricity 30
+resist_poison 100
 can_see_in_dark 1
 arch abil_poison_cloud
 end
@@ -5442,8 +5452,9 @@ y 29
 speed 1.000000
 speed_left -34.419998
 attacktype 82945
-resist_fire 100
-resist_electricity 100
+resist_fire 30
+resist_electricity 30
+resist_poison 100
 can_see_in_dark 1
 arch abil_poison_cloud
 end
@@ -5482,8 +5493,9 @@ y 34
 speed 1.000000
 speed_left -34.419998
 attacktype 82945
-resist_fire 100
-resist_electricity 100
+resist_fire 30
+resist_electricity 30
+resist_poison 100
 can_see_in_dark 1
 arch abil_poison_cloud
 end
@@ -5708,8 +5720,9 @@ y 29
 speed 1.000000
 speed_left -34.419998
 attacktype 82945
-resist_fire 100
-resist_electricity 100
+resist_fire 30
+resist_electricity 30
+resist_poison 100
 can_see_in_dark 1
 arch abil_poison_cloud
 end
@@ -5748,8 +5761,9 @@ y 34
 speed 1.000000
 speed_left -34.419998
 attacktype 82945
-resist_fire 100
-resist_electricity 100
+resist_fire 30
+resist_electricity 30
+resist_poison 100
 can_see_in_dark 1
 arch abil_poison_cloud
 end
