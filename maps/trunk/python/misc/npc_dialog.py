@@ -85,8 +85,9 @@
 # response is triggered.
 #
 # All of the rule values are lists, and must be enclosed by square braces, but
-# pre and post are lists of lists, so the double square braces ([[]]) are
-# required.
+# pre and post are lists of lists, so the nested square braces ([[]]) are
+# required except that using an empty list [] is the best way to indicate when
+# the rule does not need to check preconditions or set postconditions.
 #
 # "msg" defines one or more responses that will be given if the rule triggers.
 # When more than one "msg" value is set up, the NPC randomly selects which one
@@ -104,15 +105,6 @@ import os
 from CFDialog import DialogRule, Dialog
 import cjson
 
-# Avoid DeprecationWarning: raising a string exception is deprecated by making
-# a user-defined exception handler.
-# 
-class NPC_Dialog_Error(Exception):
-    def __init__(self, value):
-        self.value = value
-    def __str__(self):
-        return repr(self.value)
-
 def ruleConnected(character,rule):
         m = character.Map
         m.TriggerConnected(rule.connected,1)
@@ -124,7 +116,8 @@ if (Crossfire.ScriptParameters() != None):
     try:
         f = open(filename,'rb')
     except:
-        NPC_Dialog_Error('Error loading NPC dialog %s' % filename)
+        Crossfire.Log(Crossfire.LogDebug, "Error loading NPC dialog %s" % filename)
+        raise
     else:
         Crossfire.Log(Crossfire.LogDebug,"Loading NPC dialog %s" %filename)
         parameters=cjson.decode(f.read())
