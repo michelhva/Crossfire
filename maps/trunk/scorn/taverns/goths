@@ -9,7 +9,7 @@ enter_x 18
 enter_y 32
 msg
 Created:  1993-10-15
-Modified: 2008-09-29 Rick Tanner
+Modified: 2008-11-20 Kevin Bulgrien
 endmsg
 maplore
 @quest Scorn Royalty Quest
@@ -1342,6 +1342,8 @@ end
 arch woodfloor
 x 5
 y 17
+arch a_townsman
+end
 end
 arch woodfloor
 x 5
@@ -3471,6 +3473,21 @@ end
 arch chair_1.2
 x 15
 y 18
+end
+arch a_townsman
+name Hintson
+race Serpentman
+face serpentman.152
+exp 30000
+x 15
+y 18
+level 4
+friendly 1
+arch event_say
+name scorn/taverns/hintson.msg
+title Python
+slaying /python/misc/npc_dialog.py
+end
 end
 arch woodfloor
 x 15
