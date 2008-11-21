@@ -141,18 +141,19 @@ public class GUIMagicMap extends GUIElement
                 final Graphics2D g = createBufferGraphics();
                 try
                 {
-                    g.setColor(Color.BLACK);
-                    g.fillRect(0, 0, getWidth(), getHeight());
                     final int offsetX = playerX-evt.getPX()*TILE_SIZE;
                     final int offsetY = playerY-evt.getPY()*TILE_SIZE;
                     for (int y = 0; y < evt.getHeight(); y++)
                     {
                         for (int x = 0; x < evt.getWidth(); x++)
                         {
-                            g.setColor(tileColors[data[datapos]&CrossfireCommandMagicmapEvent.FACE_COLOR_MASK]);
-                            final int sx = offsetX+x*TILE_SIZE;
-                            final int sy = offsetY+y*TILE_SIZE;
-                            g.fillRect(sx, sy, sx+TILE_SIZE, sy+TILE_SIZE);
+                            if (data[datapos] != 0)
+                            {
+                                g.setColor(tileColors[data[datapos]&CrossfireCommandMagicmapEvent.FACE_COLOR_MASK]);
+                                final int sx = offsetX+x*TILE_SIZE;
+                                final int sy = offsetY+y*TILE_SIZE;
+                                g.fillRect(sx, sy, TILE_SIZE, TILE_SIZE);
+                            }
                             datapos++;
                         }
                     }
