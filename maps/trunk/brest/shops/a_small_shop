@@ -8,7 +8,7 @@ enter_x 11
 enter_y 12
 msg
 Created:  2007-03-11 Gene Alexander (poof, Galahad)
-Modified: 2008-11-02 Rick Tanner
+Modified: 2008-11-20 Rick Tanner
 endmsg
 end
 arch woods
@@ -606,9 +606,9 @@ x 4
 y 5
 end
 arch altar_trigger
-slaying platinacoin
+slaying money
 exp 120
-food 500
+food 25000
 x 4
 y 6
 connected 4
@@ -1453,9 +1453,9 @@ x 10
 y 5
 end
 arch altar_trigger
-slaying platinacoin
+slaying money
 exp 120
-food 500
+food 25000
 x 10
 y 6
 connected 5
