@@ -5,7 +5,7 @@ region wolfsburg
 width 50
 height 50
 msg
-Modified: 2008-10-27 Rick Tanner
+Modified: 2008-11-20 Rick Tanner
 endmsg
 outdoor 1
 tile_path_1 world_128_108
@@ -5547,7 +5547,6 @@ y 4
 end
 arch house_2
 name Dank House
-name_pl Dank House
 slaying /wolfsburg/magara/cellar1/hole
 hp 1
 sp 1
@@ -5803,7 +5802,6 @@ y 1
 end
 arch house_2
 name Stairs down to Cellar
-name_pl Stairs down to Cellar
 slaying /wolfsburg/magara/cellar_1
 hp 1
 sp 13
@@ -7990,7 +7988,6 @@ y 1
 end
 arch tower_tob
 name short tower
-name_pl short tower
 slaying /wolfsburg/magara/tower2/floor_1
 sp 16
 x 32
@@ -8335,7 +8332,6 @@ y 18
 end
 arch big_galleon
 name Island Tours
-name_pl Island Tours
 slaying /world/world_129_107
 hp 22
 sp 18
@@ -8364,7 +8360,6 @@ y 23
 end
 arch big_galleon
 name Island Tours
-name_pl Island Tours
 slaying /world/world_128_107
 hp 19
 sp 23
@@ -9118,7 +9113,6 @@ y 11
 end
 arch inn
 name The Bloody Cutlass
-name_pl The Bloody Cutlass
 slaying /wolfsburg/inns
 hp 1
 sp 1
@@ -9163,7 +9157,6 @@ y 20
 end
 arch big_galleon
 name Island Tours
-name_pl Island Tours
 slaying /world/world_127_109
 hp 21
 sp 11
@@ -9830,7 +9823,6 @@ y 11
 end
 arch inn
 name Dolphin's Delight
-name_pl Dolphin's Delight
 slaying /wolfsburg/inns
 hp 16
 sp 1
@@ -10630,7 +10622,6 @@ y 24
 end
 arch big_galleon
 name to Navar
-name_pl to Navar
 slaying /world/world_122_116
 hp 21
 sp 47

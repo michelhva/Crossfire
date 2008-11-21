@@ -8,7 +8,7 @@ height 50
 enter_x 25
 enter_y 25
 msg
-Modified: 2008-10-29 Rick Tanner
+Modified: 2008-11-20 Rick Tanner
 endmsg
 outdoor 1
 tile_path_1 world_109_125
@@ -3491,7 +3491,6 @@ connected 1
 end
 arch teleporter
 name jungle
-name_pl jungle
 slaying /world/world_109_126
 msg
 You ride the wind as if the spirit of
@@ -3716,7 +3715,6 @@ y 28
 end
 arch tavern
 name Oldie Moldie's jewelery
-name_pl Oldie Moldie's jewelery
 slaying /lake_country/shops/Olds_jewel
 hp 6
 sp 12
@@ -4866,7 +4864,6 @@ y 20
 end
 arch biglake_nw
 name lake
-name_pl lake
 x 18
 y 20
 end
@@ -4880,7 +4877,6 @@ y 21
 end
 arch biglake_sw
 name lake
-name_pl lake
 x 18
 y 21
 end
@@ -5153,7 +5149,6 @@ y 20
 end
 arch biglake_ne
 name lake
-name_pl lake
 x 19
 y 20
 end
@@ -5167,7 +5162,6 @@ y 21
 end
 arch biglake_se
 name lake
-name_pl lake
 x 19
 y 21
 end
@@ -5181,7 +5175,6 @@ y 22
 end
 arch city_tower
 name Butakis' Elite Training Tower
-name_pl Butakis' Elite Training Tower
 slaying /lake_country/RETower/tower0
 hp 8
 sp 15
@@ -7320,7 +7313,6 @@ y 17
 end
 arch magic_mouth
 name warning1
-name_pl warning1
 msg
 The west wind is like no other wind you
 have experienced. You were ripped off
@@ -7331,7 +7323,6 @@ y 18
 end
 arch mover_4
 name mover1
-name_pl mover1
 x 27
 y 18
 level 1
@@ -7592,7 +7583,6 @@ y 16
 end
 arch invis_exit
 name To burial ground
-name_pl To burial ground
 slaying /lake_country/small_buildings/burial_ground
 hp 3
 sp 3
@@ -7601,7 +7591,6 @@ y 17
 end
 arch magic_mouth
 name fall
-name_pl fall
 msg
 Strong wind peels you off the mountain
 surface. You fall like a rock. Light
@@ -7614,7 +7603,6 @@ y 17
 end
 arch magic_mouth
 name warning1
-name_pl warning1
 msg
 West wind picks up more speed and you
 almost fell off the cliff!
@@ -7873,7 +7861,6 @@ y 17
 end
 arch magic_mouth
 name warning1
-name_pl warning1
 msg
 West wind picks up speed. You sway
 unsteadily in the wind. Uncanny feeling
@@ -8194,7 +8181,6 @@ y 30
 end
 arch teleporter
 name A giant oak tree.
-name_pl A giant oak tree.
 slaying /world/world_109_126
 msg
 Someone whispers to your mind, 'In the
@@ -8275,7 +8261,6 @@ y 42
 end
 arch hut
 name A huge oak, somewhat strange
-name_pl A huge oak, somewhat strange
 slaying /lake_country/small_buildings/oak_twak1
 face tree_1.111
 hp 7
@@ -8648,7 +8633,6 @@ y 19
 end
 arch magic_mouth
 name bellow
-name_pl bellow
 msg
 Bestily bellows reverate within the
 cave mouth
@@ -8980,7 +8964,6 @@ y 37
 end
 arch exit
 name Entrance to the marsh maze.
-name_pl Entrance to the marsh maze.
 slaying /lake_country/marsh/marsh1_1
 hp 2
 sp 2
@@ -8990,7 +8973,6 @@ invisible 1
 end
 arch swamp
 name Entrance to swamp maze
-name_pl Entrance to swamp maze
 x 33
 y 37
 end
@@ -9023,7 +9005,6 @@ connected 3
 end
 arch teleporter
 name swamp
-name_pl swamp
 slaying /world/world_109_126
 msg
 A streak of black lightning strikes
@@ -10290,7 +10271,6 @@ y 18
 end
 arch wizard_tower
 name wizard tower
-name_pl wizard tower
 slaying /lake_country/Mwizard/Mwizard0
 hp 12
 sp 1
