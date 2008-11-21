@@ -9,7 +9,7 @@ enter_x 1
 enter_y 1
 msg
 Created:  2005-02-11
-Modified: 2007-12-24 tchize
+Modified: 2008-11-20 Rick Tanner
 endmsg
 outdoor 1
 tile_path_2 world_129_100
@@ -219,7 +219,6 @@ elevation 66
 end
 arch cave16
 name mountain top
-name_pl mountain top
 y 48
 blocksview 0
 end
@@ -229,7 +228,6 @@ elevation 258
 end
 arch cave17
 name mountain top
-name_pl mountain top
 y 49
 blocksview 0
 end
@@ -492,7 +490,6 @@ elevation 880
 end
 arch cave16
 name mountain top
-name_pl mountain top
 x 1
 y 49
 blocksview 0

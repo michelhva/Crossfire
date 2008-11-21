@@ -9,7 +9,7 @@ enter_x 1
 enter_y 1
 msg
 Created:  2005-02-14
-Modified: 2008-10-24 Rick Tanner
+Modified: 2008-11-20 Rick Tanner
 endmsg
 outdoor 1
 tile_path_1 world_129_100
@@ -567,7 +567,6 @@ y 42
 end
 arch flagstone
 name grass
-name_pl grass
 face grass.111
 x 1
 y 43
@@ -815,7 +814,6 @@ elevation 221
 end
 arch building5_east
 name Ketsueki Itsuryuu's Chozou Kutsurogi
-name_pl Ketsueki Itsuryuu's Chozou Kutsurogi
 slaying /azumauindo/minatomachi/ketsueki_itsuryuu/storage_room
 hp 1
 sp 10
@@ -900,7 +898,6 @@ y 42
 end
 arch flagstone
 name grass
-name_pl grass
 face grass.111
 x 2
 y 43
@@ -1149,7 +1146,6 @@ elevation 2849
 end
 arch cave15
 name mountain top
-name_pl mountain top
 x 3
 y 35
 blocksview 0
@@ -1161,7 +1157,6 @@ elevation 2849
 end
 arch cave1
 name mountain top
-name_pl mountain top
 x 3
 y 36
 blocksview 0
@@ -1173,7 +1168,6 @@ elevation 2849
 end
 arch cave1
 name mountain top
-name_pl mountain top
 x 3
 y 37
 blocksview 0
@@ -1185,7 +1179,6 @@ elevation 2849
 end
 arch cave1
 name mountain top
-name_pl mountain top
 x 3
 y 38
 blocksview 0
@@ -1197,7 +1190,6 @@ elevation 2849
 end
 arch cave14
 name mountain top
-name_pl mountain top
 x 3
 y 39
 blocksview 0
@@ -1225,7 +1217,6 @@ y 43
 end
 arch flagstone
 name grass
-name_pl grass
 face grass.111
 x 3
 y 44
@@ -1491,7 +1482,6 @@ elevation 2849
 end
 arch cave2
 name mountain top
-name_pl mountain top
 x 4
 y 35
 blocksview 0
@@ -1522,7 +1512,6 @@ elevation 2849
 end
 arch cave4
 name mountain top
-name_pl mountain top
 x 4
 y 39
 blocksview 0
@@ -1568,7 +1557,6 @@ y 44
 end
 arch flagstone
 name grass
-name_pl grass
 face grass.111
 x 4
 y 45
@@ -1811,7 +1799,6 @@ elevation 2849
 end
 arch cave2
 name mountain top
-name_pl mountain top
 x 5
 y 35
 blocksview 0
@@ -1838,7 +1825,6 @@ elevation 2849
 end
 arch cave4
 name mountain top
-name_pl mountain top
 x 5
 y 39
 move_block 0
@@ -2126,7 +2112,6 @@ elevation 2849
 end
 arch cave2
 name mountain top
-name_pl mountain top
 x 6
 y 35
 blocksview 0
@@ -2153,7 +2138,6 @@ elevation 2849
 end
 arch cave4
 name mountain top
-name_pl mountain top
 x 6
 y 39
 blocksview 0
@@ -2412,7 +2396,6 @@ elevation 2849
 end
 arch cave16
 name mountain top
-name_pl mountain top
 x 7
 y 35
 blocksview 0
@@ -2424,7 +2407,6 @@ elevation 2849
 end
 arch cave3
 name mountain top
-name_pl mountain top
 x 7
 y 36
 blocksview 0
@@ -2436,7 +2418,6 @@ elevation 2849
 end
 arch cave3
 name mountain top
-name_pl mountain top
 x 7
 y 37
 blocksview 0
@@ -2448,7 +2429,6 @@ elevation 2849
 end
 arch cave3
 name mountain top
-name_pl mountain top
 x 7
 y 38
 blocksview 0
@@ -2460,7 +2440,6 @@ elevation 2849
 end
 arch cave13
 name mountain top
-name_pl mountain top
 x 7
 y 39
 blocksview 0
@@ -2485,7 +2464,6 @@ elevation 710
 end
 arch building2_east
 name Minatomachi IPO
-name_pl IPO
 slaying /azumauindo/minatomachi/stores/postoffice
 hp 10
 sp 18
@@ -2494,14 +2472,12 @@ y 42
 end
 arch flagstone
 name grass
-name_pl grass
 face grass.111
 x 7
 y 43
 end
 arch flagstone
 name grass
-name_pl grass
 face grass.111
 x 7
 y 44
@@ -2815,7 +2791,6 @@ elevation 436
 end
 arch flagstone
 name grass
-name_pl grass
 face grass.111
 x 8
 y 43

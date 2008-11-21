@@ -9,7 +9,7 @@ enter_x 1
 enter_y 1
 msg
 Created:  2005-02-11
-Modified: 2008-10-05 Rick Tanner
+Modified: 2008-11-20 Rick Tanner
 endmsg
 outdoor 1
 tile_path_1 world_127_100
@@ -2344,7 +2344,6 @@ elevation 1542
 end
 arch cave15
 name mountain top
-name_pl mountain top
 x 9
 y 26
 blocksview 0
@@ -2360,7 +2359,6 @@ elevation 1542
 end
 arch cave14
 name mountain top
-name_pl mountain top
 x 9
 y 27
 blocksview 0
@@ -2610,7 +2608,6 @@ elevation 1542
 end
 arch cave15
 name mountain top
-name_pl mountain top
 x 10
 y 25
 blocksview 0
@@ -2626,7 +2623,6 @@ elevation 1542
 end
 arch cave20
 name mountain top
-name_pl mountain top
 x 10
 y 26
 blocksview 0
@@ -2642,7 +2638,6 @@ elevation 1542
 end
 arch cave19
 name mountain top
-name_pl mountain top
 x 10
 y 27
 blocksview 0
@@ -2658,7 +2653,6 @@ elevation 1542
 end
 arch cave14
 name mountain top
-name_pl mountain top
 x 10
 y 28
 blocksview 0
@@ -2898,7 +2892,6 @@ elevation 1542
 end
 arch cave15
 name mountain top
-name_pl mountain top
 x 11
 y 24
 blocksview 0
@@ -2914,7 +2907,6 @@ elevation 1542
 end
 arch cave20
 name mountain top
-name_pl mountain top
 x 11
 y 25
 blocksview 0
@@ -2952,7 +2944,6 @@ elevation 1542
 end
 arch cave4
 name mountain top
-name_pl mountain top
 x 11
 y 28
 blocksview 0
@@ -3203,7 +3194,6 @@ elevation 1542
 end
 arch cave15
 name mountain top
-name_pl mountain top
 x 12
 y 23
 blocksview 0
@@ -3219,7 +3209,6 @@ elevation 1542
 end
 arch cave20
 name mountain top
-name_pl mountain top
 x 12
 y 24
 blocksview 0
@@ -3262,7 +3251,6 @@ elevation 1542
 end
 arch cave4
 name mountain top
-name_pl mountain top
 x 12
 y 28
 blocksview 0
@@ -3512,7 +3500,6 @@ elevation 1542
 end
 arch cave15
 name mountain top
-name_pl mountain top
 x 13
 y 22
 blocksview 0
@@ -3528,7 +3515,6 @@ elevation 1542
 end
 arch cave20
 name mountain top
-name_pl mountain top
 x 13
 y 23
 blocksview 0
@@ -3588,7 +3574,6 @@ elevation 1542
 end
 arch cave19
 name mountain top
-name_pl mountain top
 x 13
 y 28
 blocksview 0
@@ -3604,7 +3589,6 @@ elevation 1542
 end
 arch cave14
 name mountain top
-name_pl mountain top
 x 13
 y 29
 blocksview 0
@@ -3869,7 +3853,6 @@ elevation 1542
 end
 arch cave16
 name mountain top
-name_pl mountain top
 x 14
 y 22
 blocksview 0
@@ -3885,7 +3868,6 @@ elevation 1542
 end
 arch cave17
 name mountain top
-name_pl mountain top
 x 14
 y 23
 blocksview 0
@@ -3950,7 +3932,6 @@ elevation 1542
 end
 arch cave19
 name mountain top
-name_pl mountain top
 x 14
 y 29
 blocksview 0
@@ -3966,7 +3947,6 @@ elevation 1542
 end
 arch cave1
 name mountain top
-name_pl mountain top
 x 14
 y 30
 blocksview 0
@@ -3982,7 +3962,6 @@ elevation 1542
 end
 arch cave1
 name mountain top
-name_pl mountain top
 x 14
 y 31
 blocksview 0
@@ -3998,7 +3977,6 @@ elevation 1542
 end
 arch cave1
 name mountain top
-name_pl mountain top
 x 14
 y 32
 blocksview 0
@@ -4014,7 +3992,6 @@ elevation 1542
 end
 arch cave14
 name mountain top
-name_pl mountain top
 x 14
 y 33
 blocksview 0
@@ -4282,7 +4259,6 @@ elevation 1542
 end
 arch cave16
 name mountain top
-name_pl mountain top
 x 15
 y 23
 blocksview 0
@@ -4298,7 +4274,6 @@ elevation 1542
 end
 arch cave3
 name mountain top
-name_pl mountain top
 x 15
 y 24
 blocksview 0
@@ -4314,7 +4289,6 @@ elevation 1542
 end
 arch cave17
 name mountain top
-name_pl mountain top
 x 15
 y 25
 blocksview 0
@@ -4401,7 +4375,6 @@ elevation 1542
 end
 arch cave19
 name mountain top
-name_pl mountain top
 x 15
 y 33
 blocksview 0
@@ -4417,7 +4390,6 @@ elevation 1542
 end
 arch cave14
 name mountain top
-name_pl mountain top
 x 15
 y 34
 blocksview 0
@@ -4461,7 +4433,6 @@ elevation 1128
 end
 arch cave15
 name mountain top
-name_pl mountain top
 x 15
 y 39
 blocksview 0
@@ -4495,7 +4466,6 @@ elevation 4442
 end
 arch building7_east
 name ichidou dzuki Ruggilli
-name_pl ichidou dzuki Ruggilli
 slaying /azumauindo/ranbounagisatoshi/temples/rruggilli1
 hp 8
 sp 14
@@ -4698,7 +4668,6 @@ elevation 1542
 end
 arch cave16
 name mountain top
-name_pl mountain top
 x 16
 y 25
 blocksview 0
@@ -4714,7 +4683,6 @@ elevation 1542
 end
 arch cave17
 name mountain top
-name_pl mountain top
 x 16
 y 26
 blocksview 0
@@ -4789,7 +4757,6 @@ elevation 1542
 end
 arch cave19
 name mountain top
-name_pl mountain top
 x 16
 y 34
 blocksview 0
@@ -4805,7 +4772,6 @@ elevation 1542
 end
 arch cave14
 name mountain top
-name_pl mountain top
 x 16
 y 35
 blocksview 0
@@ -4848,7 +4814,6 @@ elevation 1128
 end
 arch cave2
 name mountain top
-name_pl mountain top
 x 16
 y 39
 blocksview 0
@@ -5082,7 +5047,6 @@ elevation 1542
 end
 arch cave16
 name mountain top
-name_pl mountain top
 x 17
 y 26
 blocksview 0
@@ -5098,7 +5062,6 @@ elevation 1542
 end
 arch cave17
 name mountain top
-name_pl mountain top
 x 17
 y 27
 blocksview 0
@@ -5157,7 +5120,6 @@ elevation 1542
 end
 arch cave4
 name mountain top
-name_pl mountain top
 x 17
 y 35
 move_block 0
@@ -5216,7 +5178,6 @@ elevation 1128
 end
 arch cave2
 name mountain top
-name_pl mountain top
 x 17
 y 39
 move_block 0
@@ -5445,7 +5406,6 @@ elevation 1542
 end
 arch cave2
 name mountain top
-name_pl mountain top
 x 18
 y 27
 blocksview 0
@@ -5527,7 +5487,6 @@ elevation 1542
 end
 arch cave18
 name mountain top
-name_pl mountain top
 x 18
 y 34
 blocksview 0
@@ -5543,7 +5502,6 @@ elevation 1542
 end
 arch cave13
 name mountain top
-name_pl mountain top
 x 18
 y 35
 blocksview 0
@@ -5586,7 +5544,6 @@ elevation 1128
 end
 arch cave16
 name mountain top
-name_pl mountain top
 x 18
 y 39
 blocksview 0
@@ -5602,7 +5559,6 @@ elevation 3006
 end
 arch cave3
 name mountain top
-name_pl mountain top
 x 18
 y 40
 blocksview 0
@@ -5618,7 +5574,6 @@ elevation 1128
 end
 arch cave17
 name mountain top
-name_pl mountain top
 x 18
 y 41
 blocksview 0
@@ -5851,7 +5806,6 @@ elevation 1542
 end
 arch cave16
 name mountain top
-name_pl mountain top
 x 19
 y 27
 blocksview 0
@@ -5867,7 +5821,6 @@ elevation 1542
 end
 arch cave17
 name mountain top
-name_pl mountain top
 x 19
 y 28
 blocksview 0
@@ -5928,7 +5881,6 @@ elevation 1542
 end
 arch cave4
 name mountain top
-name_pl mountain top
 x 19
 y 34
 blocksview 0
@@ -5978,7 +5930,6 @@ elevation 3232
 end
 arch cave16
 name mountain top
-name_pl mountain top
 x 19
 y 41
 blocksview 0
@@ -6038,7 +5989,6 @@ elevation 3031
 end
 arch guard_house_4
 name goei mezon
-name_pl goei mezon
 x 19
 y 47
 end
@@ -6064,7 +6014,6 @@ elevation 3031
 end
 arch guard_house_3
 name goei mezon
-name_pl goei mezon
 x 19
 y 48
 end
@@ -6219,7 +6168,6 @@ elevation 1542
 end
 arch cave16
 name mountain top
-name_pl mountain top
 x 20
 y 28
 blocksview 0
@@ -6235,7 +6183,6 @@ elevation 1542
 end
 arch cave17
 name mountain top
-name_pl mountain top
 x 20
 y 29
 blocksview 0
@@ -6283,7 +6230,6 @@ elevation 1542
 end
 arch cave4
 name mountain top
-name_pl mountain top
 x 20
 y 34
 blocksview 0
@@ -6563,7 +6509,6 @@ elevation 1542
 end
 arch cave16
 name mountain top
-name_pl mountain top
 x 21
 y 29
 blocksview 0
@@ -6579,7 +6524,6 @@ elevation 1542
 end
 arch cave17
 name mountain top
-name_pl mountain top
 x 21
 y 30
 blocksview 0
@@ -6634,7 +6578,6 @@ elevation 1542
 end
 arch cave4
 name mountain top
-name_pl mountain top
 x 21
 y 34
 blocksview 0
@@ -6906,7 +6849,6 @@ elevation 1542
 end
 arch cave16
 name mountain top
-name_pl mountain top
 x 22
 y 30
 blocksview 0
@@ -6922,7 +6864,6 @@ elevation 1542
 end
 arch cave3
 name mountain top
-name_pl mountain top
 x 22
 y 31
 blocksview 0
@@ -6938,7 +6879,6 @@ elevation 1542
 end
 arch cave17
 name mountain top
-name_pl mountain top
 x 22
 y 32
 blocksview 0
@@ -6954,7 +6894,6 @@ elevation 1542
 end
 arch cave18
 name mountain top
-name_pl mountain top
 x 22
 y 33
 blocksview 0
@@ -6970,7 +6909,6 @@ elevation 1542
 end
 arch cave13
 name mountain top
-name_pl mountain top
 x 22
 y 34
 blocksview 0
@@ -7232,7 +7170,6 @@ elevation 1542
 end
 arch cave16
 name mountain top
-name_pl mountain top
 x 23
 y 32
 blocksview 0
@@ -7248,7 +7185,6 @@ elevation 1542
 end
 arch cave13
 name mountain top
-name_pl mountain top
 x 23
 y 33
 blocksview 0
@@ -10060,7 +9996,6 @@ elevation 1542
 end
 arch cave15
 name mountain top
-name_pl mountain top
 x 33
 y 46
 blocksview 0
@@ -10072,7 +10007,6 @@ elevation 1542
 end
 arch cave14
 name mountain top
-name_pl mountain top
 x 33
 y 47
 blocksview 0
@@ -10386,7 +10320,6 @@ elevation 1542
 end
 arch cave2
 name mountain top
-name_pl mountain top
 x 34
 y 46
 blocksview 0
@@ -10398,7 +10331,6 @@ elevation 1542
 end
 arch cave4
 name mountain top
-name_pl mountain top
 x 34
 y 47
 blocksview 0
@@ -10634,7 +10566,6 @@ elevation 1542
 end
 arch cave15
 name mountain top
-name_pl mountain top
 x 35
 y 36
 blocksview 0
@@ -10646,7 +10577,6 @@ elevation 1542
 end
 arch cave1
 name mountain top
-name_pl mountain top
 x 35
 y 37
 blocksview 0
@@ -10658,7 +10588,6 @@ elevation 1542
 end
 arch cave1
 name mountain top
-name_pl mountain top
 x 35
 y 38
 blocksview 0
@@ -10670,7 +10599,6 @@ elevation 1542
 end
 arch cave14
 name mountain top
-name_pl mountain top
 x 35
 y 39
 blocksview 0
@@ -10719,7 +10647,6 @@ elevation 1542
 end
 arch cave15
 name mountain top
-name_pl mountain top
 x 35
 y 45
 blocksview 0
@@ -10731,7 +10658,6 @@ elevation 1542
 end
 arch cave20
 name mountain top
-name_pl mountain top
 x 35
 y 46
 blocksview 0
@@ -10743,7 +10669,6 @@ elevation 1542
 end
 arch cave4
 name mountain top
-name_pl mountain top
 x 35
 y 47
 blocksview 0
@@ -11023,7 +10948,6 @@ elevation 1542
 end
 arch cave16
 name mountain top
-name_pl mountain top
 x 36
 y 36
 blocksview 0
@@ -11035,7 +10959,6 @@ elevation 1542
 end
 arch cave3
 name mountain top
-name_pl mountain top
 x 36
 y 37
 blocksview 0
@@ -11047,7 +10970,6 @@ elevation 1542
 end
 arch cave17
 name mountain top
-name_pl mountain top
 x 36
 y 38
 blocksview 0
@@ -11059,7 +10981,6 @@ elevation 1542
 end
 arch cave19
 name mountain top
-name_pl mountain top
 x 36
 y 39
 blocksview 0
@@ -11076,7 +10997,6 @@ elevation 1542
 end
 arch cave14
 name mountain top
-name_pl mountain top
 x 36
 y 40
 blocksview 0
@@ -11124,7 +11044,6 @@ elevation 1542
 end
 arch cave2
 name mountain top
-name_pl mountain top
 x 36
 y 45
 blocksview 0
@@ -11136,7 +11055,6 @@ elevation 1542
 end
 arch cave18
 name mountain top
-name_pl mountain top
 x 36
 y 46
 blocksview 0
@@ -11148,7 +11066,6 @@ elevation 1542
 end
 arch cave13
 name mountain top
-name_pl mountain top
 x 36
 y 47
 blocksview 0
@@ -11248,7 +11165,6 @@ y 8
 end
 arch flagstone
 name grass
-name_pl grass
 face brush.111
 x 37
 y 9
@@ -11259,7 +11175,6 @@ y 9
 end
 arch flagstone
 name grass
-name_pl grass
 face grass.111
 x 37
 y 10
@@ -11270,7 +11185,6 @@ y 10
 end
 arch flagstone
 name grass
-name_pl grass
 face brush.111
 x 37
 y 11
@@ -11472,7 +11386,6 @@ elevation 1542
 end
 arch cave16
 name mountain top
-name_pl mountain top
 x 37
 y 38
 blocksview 0
@@ -11484,7 +11397,6 @@ elevation 1542
 end
 arch cave17
 name mountain top
-name_pl mountain top
 x 37
 y 39
 blocksview 0
@@ -11496,7 +11408,6 @@ elevation 1542
 end
 arch cave19
 name mountain top
-name_pl mountain top
 x 37
 y 40
 blocksview 0
@@ -11508,7 +11419,6 @@ elevation 1542
 end
 arch cave14
 name mountain top
-name_pl mountain top
 x 37
 y 41
 blocksview 0
@@ -11538,7 +11448,6 @@ elevation 1542
 end
 arch cave15
 name mountain top
-name_pl mountain top
 x 37
 y 44
 blocksview 0
@@ -11550,7 +11459,6 @@ elevation 1542
 end
 arch cave20
 name mountain top
-name_pl mountain top
 x 37
 y 45
 blocksview 0
@@ -11562,7 +11470,6 @@ elevation 1542
 end
 arch cave4
 name mountain top
-name_pl mountain top
 x 37
 y 46
 blocksview 0
@@ -11649,7 +11556,6 @@ y 6
 end
 arch flagstone
 name grass
-name_pl grass
 face grass.111
 x 38
 y 7
@@ -11664,7 +11570,6 @@ y 7
 end
 arch flagstone
 name grass
-name_pl grass
 face brush.111
 x 38
 y 8
@@ -11679,7 +11584,6 @@ y 8
 end
 arch flagstone
 name grass
-name_pl grass
 face grass.111
 x 38
 y 9
@@ -11690,21 +11594,18 @@ y 9
 end
 arch flagstone
 name grass
-name_pl grass
 face brush.111
 x 38
 y 10
 end
 arch flagstone
 name grass
-name_pl grass
 face grass.111
 x 38
 y 11
 end
 arch flagstone
 name grass
-name_pl grass
 face brush.111
 x 38
 y 12
@@ -11924,7 +11825,6 @@ elevation 1542
 end
 arch cave16
 name mountain top
-name_pl mountain top
 x 38
 y 39
 blocksview 0
@@ -11936,7 +11836,6 @@ elevation 1542
 end
 arch cave17
 name mountain top
-name_pl mountain top
 x 38
 y 40
 blocksview 0
@@ -11948,7 +11847,6 @@ elevation 1542
 end
 arch cave19
 name mountain top
-name_pl mountain top
 x 38
 y 41
 blocksview 0
@@ -11960,7 +11858,6 @@ elevation 1542
 end
 arch cave1
 name mountain top
-name_pl mountain top
 x 38
 y 42
 blocksview 0
@@ -11972,7 +11869,6 @@ elevation 1542
 end
 arch cave1
 name mountain top
-name_pl mountain top
 x 38
 y 43
 blocksview 0
@@ -11984,7 +11880,6 @@ elevation 1542
 end
 arch cave20
 name mountain top
-name_pl mountain top
 x 38
 y 44
 blocksview 0
@@ -11996,7 +11891,6 @@ elevation 1542
 end
 arch cave18
 name mountain top
-name_pl mountain top
 x 38
 y 45
 blocksview 0
@@ -12008,7 +11902,6 @@ elevation 1542
 end
 arch cave13
 name mountain top
-name_pl mountain top
 x 38
 y 46
 blocksview 0
@@ -12082,7 +11975,6 @@ y 6
 end
 arch flagstone
 name grass
-name_pl grass
 face brush.111
 x 39
 y 7
@@ -12097,7 +11989,6 @@ y 7
 end
 arch flagstone
 name grass
-name_pl grass
 face grass.111
 x 39
 y 8
@@ -12108,7 +11999,6 @@ y 8
 end
 arch flagstone
 name grass
-name_pl grass
 face brush.111
 x 39
 y 9
@@ -12119,21 +12009,18 @@ y 9
 end
 arch flagstone
 name grass
-name_pl grass
 face grass.111
 x 39
 y 10
 end
 arch flagstone
 name grass
-name_pl grass
 face brush.111
 x 39
 y 11
 end
 arch flagstone
 name grass
-name_pl grass
 face grass.111
 x 39
 y 12
@@ -12144,7 +12031,6 @@ y 12
 end
 arch flagstone
 name grass
-name_pl grass
 face brush.111
 x 39
 y 13
@@ -12368,7 +12254,6 @@ elevation 1542
 end
 arch cave16
 name mountain top
-name_pl mountain top
 x 39
 y 40
 blocksview 0
@@ -12380,7 +12265,6 @@ elevation 1542
 end
 arch cave3
 name mountain top
-name_pl mountain top
 x 39
 y 41
 blocksview 0
@@ -12392,7 +12276,6 @@ elevation 1542
 end
 arch cave3
 name mountain top
-name_pl mountain top
 x 39
 y 42
 blocksview 0
@@ -12404,7 +12287,6 @@ elevation 1542
 end
 arch cave3
 name mountain top
-name_pl mountain top
 x 39
 y 43
 blocksview 0
@@ -12416,7 +12298,6 @@ elevation 1542
 end
 arch cave3
 name mountain top
-name_pl mountain top
 x 39
 y 44
 blocksview 0
@@ -12428,7 +12309,6 @@ elevation 1542
 end
 arch cave13
 name mountain top
-name_pl mountain top
 x 39
 y 45
 blocksview 0
@@ -12492,7 +12372,6 @@ y 6
 end
 arch flagstone
 name grass
-name_pl grass
 face grass.111
 x 40
 y 7
@@ -12507,35 +12386,30 @@ y 7
 end
 arch flagstone
 name grass
-name_pl grass
 face brush.111
 x 40
 y 8
 end
 arch flagstone
 name grass
-name_pl grass
 face grass.111
 x 40
 y 9
 end
 arch flagstone
 name grass
-name_pl grass
 face brush.111
 x 40
 y 10
 end
 arch flagstone
 name grass
-name_pl grass
 face grass.111
 x 40
 y 11
 end
 arch flagstone
 name grass
-name_pl grass
 face brush.111
 x 40
 y 12
@@ -12546,7 +12420,6 @@ y 12
 end
 arch flagstone
 name grass
-name_pl grass
 face grass.111
 x 40
 y 13
@@ -12561,7 +12434,6 @@ y 13
 end
 arch flagstone
 name grass
-name_pl grass
 face brush.111
 x 40
 y 14
@@ -12819,7 +12691,6 @@ elevation 1542
 end
 arch cave15
 name mountain top
-name_pl mountain top
 x 40
 y 47
 blocksview 0
@@ -12831,7 +12702,6 @@ elevation 1542
 end
 arch cave14
 name mountain top
-name_pl mountain top
 x 40
 y 48
 blocksview 0
@@ -12847,7 +12717,6 @@ elevation 429
 end
 arch cave1
 name mountain top
-name_pl mountain top
 x 41
 blocksview 0
 end
@@ -12858,7 +12727,6 @@ elevation 426
 end
 arch cave1
 name mountain top
-name_pl mountain top
 x 41
 y 1
 blocksview 0
@@ -12870,7 +12738,6 @@ elevation 429
 end
 arch cave1
 name mountain top
-name_pl mountain top
 x 41
 y 2
 blocksview 0
@@ -12882,7 +12749,6 @@ elevation 3434
 end
 arch cave14
 name mountain top
-name_pl mountain top
 x 41
 y 3
 blocksview 0
@@ -13173,7 +13039,6 @@ elevation 1542
 end
 arch cave15
 name mountain top
-name_pl mountain top
 x 41
 y 40
 blocksview 0
@@ -13185,7 +13050,6 @@ elevation 1542
 end
 arch cave1
 name mountain top
-name_pl mountain top
 x 41
 y 41
 blocksview 0
@@ -13197,7 +13061,6 @@ elevation 1542
 end
 arch cave1
 name mountain top
-name_pl mountain top
 x 41
 y 42
 blocksview 0
@@ -13209,7 +13072,6 @@ elevation 1542
 end
 arch cave1
 name mountain top
-name_pl mountain top
 x 41
 y 43
 blocksview 0
@@ -13221,7 +13083,6 @@ elevation 1542
 end
 arch cave1
 name mountain top
-name_pl mountain top
 x 41
 y 44
 blocksview 0
@@ -13233,7 +13094,6 @@ elevation 1542
 end
 arch cave1
 name mountain top
-name_pl mountain top
 x 41
 y 45
 blocksview 0
@@ -13245,7 +13105,6 @@ elevation 1542
 end
 arch cave1
 name mountain top
-name_pl mountain top
 x 41
 y 46
 blocksview 0
@@ -13257,7 +13116,6 @@ elevation 1542
 end
 arch cave20
 name mountain top
-name_pl mountain top
 x 41
 y 47
 blocksview 0
@@ -13269,7 +13127,6 @@ elevation 1542
 end
 arch cave4
 name mountain top
-name_pl mountain top
 x 41
 y 48
 blocksview 0
@@ -13301,7 +13158,6 @@ elevation 10
 end
 arch cave19
 name mountain top
-name_pl mountain top
 x 42
 y 3
 blocksview 0
@@ -13316,7 +13172,6 @@ y 4
 end
 arch cave14
 name mountain top
-name_pl mountain top
 x 42
 y 4
 blocksview 0
@@ -13336,7 +13191,6 @@ y 6
 end
 arch flagstone
 name grass
-name_pl grass
 face grass.111
 x 42
 y 7
@@ -13347,7 +13201,6 @@ y 7
 end
 arch flagstone
 name grass
-name_pl grass
 face brush.111
 x 42
 y 8
@@ -13358,7 +13211,6 @@ y 8
 end
 arch flagstone
 name grass
-name_pl grass
 face grass.111
 x 42
 y 9
@@ -13415,7 +13267,6 @@ elevation 818
 end
 arch building2_east
 name Suno-yamatoshi Dojo
-name_pl Suno-yamatoshi Dojo
 slaying /azumauindo/suno-yamatoshi/buildings/dojoA1
 hp 38
 sp 57
@@ -13592,7 +13443,6 @@ elevation 1542
 end
 arch cave15
 name mountain top
-name_pl mountain top
 x 42
 y 36
 blocksview 0
@@ -13604,7 +13454,6 @@ elevation 1542
 end
 arch cave1
 name mountain top
-name_pl mountain top
 x 42
 y 37
 blocksview 0
@@ -13616,7 +13465,6 @@ elevation 1542
 end
 arch cave1
 name mountain top
-name_pl mountain top
 x 42
 y 38
 blocksview 0
@@ -13628,7 +13476,6 @@ elevation 1542
 end
 arch cave1
 name mountain top
-name_pl mountain top
 x 42
 y 39
 blocksview 0
@@ -13640,7 +13487,6 @@ elevation 1542
 end
 arch cave20
 name mountain top
-name_pl mountain top
 x 42
 y 40
 blocksview 0
@@ -13652,7 +13498,6 @@ elevation 1542
 end
 arch cave18
 name mountain top
-name_pl mountain top
 x 42
 y 41
 blocksview 0
@@ -13664,7 +13509,6 @@ elevation 1542
 end
 arch cave3
 name mountain top
-name_pl mountain top
 x 42
 y 42
 blocksview 0
@@ -13676,7 +13520,6 @@ elevation 1542
 end
 arch cave3
 name mountain top
-name_pl mountain top
 x 42
 y 43
 blocksview 0
@@ -13688,7 +13531,6 @@ elevation 1542
 end
 arch cave3
 name mountain top
-name_pl mountain top
 x 42
 y 44
 blocksview 0
@@ -13700,7 +13542,6 @@ elevation 1542
 end
 arch cave3
 name mountain top
-name_pl mountain top
 x 42
 y 45
 blocksview 0
@@ -13712,7 +13553,6 @@ elevation 1542
 end
 arch cave3
 name mountain top
-name_pl mountain top
 x 42
 y 46
 blocksview 0
@@ -13724,7 +13564,6 @@ elevation 1542
 end
 arch cave3
 name mountain top
-name_pl mountain top
 x 42
 y 47
 blocksview 0
@@ -13736,7 +13575,6 @@ elevation 1542
 end
 arch cave13
 name mountain top
-name_pl mountain top
 x 42
 y 48
 blocksview 0
@@ -13793,7 +13631,6 @@ y 6
 end
 arch flagstone
 name grass
-name_pl grass
 face brush.111
 x 43
 y 7
@@ -13804,7 +13641,6 @@ y 7
 end
 arch flagstone
 name grass
-name_pl grass
 face grass.111
 x 43
 y 8
@@ -13815,7 +13651,6 @@ y 8
 end
 arch flagstone
 name grass
-name_pl grass
 face brush.111
 x 43
 y 9
@@ -13993,7 +13828,6 @@ elevation 1542
 end
 arch cave15
 name mountain top
-name_pl mountain top
 x 43
 y 35
 blocksview 0
@@ -14005,7 +13839,6 @@ elevation 1542
 end
 arch cave20
 name mountain top
-name_pl mountain top
 x 43
 y 36
 blocksview 0
@@ -14017,7 +13850,6 @@ elevation 1542
 end
 arch cave18
 name mountain top
-name_pl mountain top
 x 43
 y 37
 blocksview 0
@@ -14029,7 +13861,6 @@ elevation 1542
 end
 arch cave3
 name mountain top
-name_pl mountain top
 x 43
 y 38
 blocksview 0
@@ -14041,7 +13872,6 @@ elevation 1542
 end
 arch cave3
 name mountain top
-name_pl mountain top
 x 43
 y 39
 blocksview 0
@@ -14053,7 +13883,6 @@ elevation 1542
 end
 arch cave3
 name mountain top
-name_pl mountain top
 x 43
 y 40
 blocksview 0
@@ -14065,7 +13894,6 @@ elevation 1542
 end
 arch cave13
 name mountain top
-name_pl mountain top
 x 43
 y 41
 blocksview 0
@@ -14372,7 +14200,6 @@ elevation 1542
 end
 arch cave16
 name mountain top
-name_pl mountain top
 x 44
 y 35
 blocksview 0
@@ -14384,7 +14211,6 @@ elevation 1542
 end
 arch cave3
 name mountain top
-name_pl mountain top
 x 44
 y 36
 blocksview 0
@@ -14396,7 +14222,6 @@ elevation 1542
 end
 arch cave13
 name mountain top
-name_pl mountain top
 x 44
 y 37
 blocksview 0
@@ -14590,7 +14415,6 @@ y 13
 end
 arch guard_house_4
 name goei mezon
-name_pl goei mezon
 x 45
 y 13
 end
@@ -14845,7 +14669,6 @@ elevation 1197
 end
 arch cave15
 name mountain top
-name_pl mountain top
 x 46
 y 3
 blocksview 0
@@ -14861,7 +14684,6 @@ elevation 2773
 end
 arch cave1
 name mountain top
-name_pl mountain top
 x 46
 y 4
 blocksview 0
@@ -14881,7 +14703,6 @@ elevation 2773
 end
 arch cave1
 name mountain top
-name_pl mountain top
 x 46
 y 5
 end
@@ -14892,7 +14713,6 @@ elevation 2773
 end
 arch cave14
 name mountain top
-name_pl mountain top
 x 46
 y 6
 blocksview 0
@@ -14911,7 +14731,6 @@ y 7
 end
 arch flagstone
 name hills
-name_pl hills
 face hillsrocky.111
 x 46
 y 7
@@ -14922,7 +14741,6 @@ y 8
 end
 arch flagstone
 name hills
-name_pl hills
 face hillsrocky.111
 x 46
 y 8
@@ -15221,7 +15039,6 @@ elevation 2773
 end
 arch cave2
 name mountain top
-name_pl mountain top
 x 47
 y 3
 blocksview 0
@@ -15261,7 +15078,6 @@ elevation 2773
 end
 arch cave19
 name mountain top
-name_pl mountain top
 x 47
 y 6
 blocksview 0
@@ -15277,7 +15093,6 @@ elevation 2773
 end
 arch cave1
 name mountain top
-name_pl mountain top
 x 47
 y 7
 blocksview 0
@@ -15293,7 +15108,6 @@ elevation 2773
 end
 arch cave14
 name mountain top
-name_pl mountain top
 x 47
 y 8
 blocksview 0
@@ -15304,7 +15118,6 @@ y 8
 end
 arch flagstone
 name hills
-name_pl hills
 face hillsrocky.111
 x 47
 y 9
@@ -15586,7 +15399,6 @@ elevation 2773
 end
 arch cave15
 name mountain top
-name_pl mountain top
 x 48
 y 2
 blocksview 0
@@ -15602,7 +15414,6 @@ elevation 2773
 end
 arch cave20
 name mountain top
-name_pl mountain top
 x 48
 y 3
 blocksview 0
@@ -15646,7 +15457,6 @@ elevation 2773
 end
 arch cave19
 name mountain top
-name_pl mountain top
 x 48
 y 8
 blocksview 0
@@ -15662,7 +15472,6 @@ elevation 2773
 end
 arch cave14
 name mountain top
-name_pl mountain top
 x 48
 y 9
 blocksview 0
@@ -15677,7 +15486,6 @@ y 10
 end
 arch flagstone
 name hills
-name_pl hills
 face hillsrocky.111
 x 48
 y 10
@@ -15688,7 +15496,6 @@ y 11
 end
 arch flagstone
 name hills
-name_pl hills
 face hillsrocky.111
 x 48
 y 11
@@ -15936,7 +15743,6 @@ elevation 2693
 end
 arch cave2
 name mountain top
-name_pl mountain top
 x 49
 y 2
 blocksview 0
@@ -15959,7 +15765,6 @@ elevation 3812
 end
 arch cave15
 name mountain top
-name_pl mountain top
 x 49
 y 4
 blocksview 0
@@ -15980,7 +15785,6 @@ y 5
 end
 arch cave1
 name mountain top
-name_pl mountain top
 x 49
 y 5
 blocksview 0
@@ -15993,7 +15797,6 @@ elevation 3812
 end
 arch cave14
 name mountain top
-name_pl mountain top
 x 49
 y 6
 blocksview 0
@@ -16025,7 +15828,6 @@ elevation 2773
 end
 arch cave4
 name mountain top
-name_pl mountain top
 x 49
 y 9
 blocksview 0
