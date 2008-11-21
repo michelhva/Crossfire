@@ -68,27 +68,30 @@
 #   another NPC.  The flags can also be used to help an individual NPC
 #   remember what he has said to the player in the past.  Flag settings are
 #   stored in the player file, so they persist as long as the character exists
-#   in the game.  Each rule contains a list of one or more preconditions, and
-#   each of the individual preconditions is itself a list of a flag name and
-#   one or more values in the following format: [["flag1", "value1", "value2"
-#   ...], ["flag2", "value3"] ...] where "..." indicates that the pattern may
-#   be repeated. The flag name is always the first item in a precondition
-#   list.  ":" and ";" characters are forbidden in the flag names and values.
-#   For a rule to be triggered, all its preconditions must be satisfied by
-#   settings in the player file.  To satisfy a precondition, one of the
-#   precondition values must match the identified flag setting in the player
-#   file. The default value of any precondition that has not been specifically
-#   set in the player file is "0".  If one of the precondition values is set
-#   to "*", a match is not required.
+#   in the game.  Each rule contains a list of one or more preconditions, if
+#   any.  Supply an empty list [] if no preconditions exist, but otherwise,
+#   each of the preconditions is required to be a list that contains at least
+#   a flag name and one or more values in the following format: [["flag1",
+#   "value1", "value2" ...], ["flag2", "value3"] ...] where "..." indicates
+#   that the pattern may be repeated. The flag name is always the first item
+#   in a precondition list.  ":" and ";" characters are forbidden in the flag
+#   names and values.  For a rule to be triggered, all its preconditions must
+#   be satisfied by settings in the player file.  To satisfy a precondition,
+#   one of the precondition values must match the identified flag setting in
+#   the player file. The default value of any precondition that has not been
+#   specifically set in the player file is "0".  If one of the precondition
+#   values is set to "*", a match is not required.
 #
 # - Postconditions are state changes to apply to the player file flags after
-#   the rule triggers. The postcondition is a nested list that has the same
-#   format as the precondition list except that each postcondition list only
-#   contains one value.  This is because the other main difference is that
-#   whereas a precondition checks a player file to see if a flag has a certain
-#   value, the postcondition causes a value to be stored into the player file,
-#   and it does not make sense to store more than one value into a single
-#   flag.  A value of "*" means that the player file flag will not be changed.
+#   the rule triggers.  If a rule is not intended to set a flag, supply an
+#   empty list [] when specifying postconditions, otherwise, postconditions
+#   are supplied in a nested list that has the same format as the precondition
+#   list except that each postcondition list only contains one value.  This is
+#   because the other main difference is that whereas a precondition checks a
+#   player file to see if a flag has a certain value, the postcondition causes
+#   a value to be stored into the player file, and it does not make sense to
+#   store more than one value into a single flag.  A value of "*" means that
+#   the player file flag will not be changed.
 #
 # - A prefunction is an optional callback function that will be called when a
 #   rule's preconditions are all matched, but before the rule is validated.
@@ -284,12 +287,16 @@ class Dialog:
     # complex conditions that determine if the rule is allowed to trigger.
     def matchConditions(self, rule):
         for condition in rule.getPreconditions():
-            status = self.getStatus(condition[0])
-            values = condition[1:]
-            for value in values:
-                if (status == value) or (value == "*"):
-                    break
-            else:
+            try:
+                status = self.getStatus(condition[0])
+                values = condition[1:]
+                for value in values:
+                    if (status == value) or (value == "*"):
+                        break
+                else:
+                    return 0
+            except:
+                Crossfire.Log(Crossfire.LogDebug, "CFDialog: Bad Precondition")
                 return 0
         if rule.getPrefunction() <> None:
                 return rule.getPrefunction()(self.__character, rule)
@@ -300,10 +307,14 @@ class Dialog:
     # dramatic effects than the setting of a flag in the player file.
     def setConditions(self, rule):
         for condition in rule.getPostconditions():
-            key = condition[0]
-            val = condition[1]
-            if val != "*":
-                self.setStatus(key,val)
+            try:
+                key = condition[0]
+                val = condition[1]
+                if val != "*":
+                    self.setStatus(key,val)
+            except:
+                Crossfire.Log(Crossfire.LogDebug, "CFDialog: Bad Postcondition")
+                return 0
         if rule.getPostfunction() <> None:
                 rule.getPostfunction()(self.__character, rule)
 
