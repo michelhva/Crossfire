@@ -105,38 +105,49 @@ import os
 from CFDialog import DialogRule, Dialog
 import cjson
 
-def ruleConnected(character,rule):
+def ruleConnected(character, rule):
         m = character.Map
-        m.TriggerConnected(rule.connected,1)
+        m.TriggerConnected(rule.connected, 1)
+
+npc = Crossfire.WhoAmI()
 event = Crossfire.WhatIsEvent()
 player = Crossfire.WhoIsActivator()
-npc = Crossfire.WhoAmI()
 if (Crossfire.ScriptParameters() != None):
-    filename = os.path.join(Crossfire.DataDirectory(),Crossfire.MapDirectory(),Crossfire.ScriptParameters())
+    filename = os.path.join(Crossfire.DataDirectory(),
+                            Crossfire.MapDirectory(),
+                            Crossfire.ScriptParameters())
     try:
         f = open(filename,'rb')
     except:
         Crossfire.Log(Crossfire.LogDebug, "Error loading NPC dialog %s" % filename)
         raise
     else:
-        Crossfire.Log(Crossfire.LogDebug,"Loading NPC dialog %s" %filename)
-        parameters=cjson.decode(f.read())
+        Crossfire.Log(Crossfire.LogDebug, "Loading NPC dialog %s" % filename)
+        parameters = cjson.decode(f.read())
         f.close()
 else:
     parameters = cjson.decode(event.Message)
 location = parameters["location"];
 speech = Dialog(player, npc, location)
-index=0;
+index = 0;
 
 for jsonRule in parameters["rules"]:
     if (jsonRule.has_key("connected")):
-        rule = DialogRule(jsonRule["match"], jsonRule["pre"], jsonRule["msg"], jsonRule["post"],None,ruleConnected);
+        rule = DialogRule(jsonRule["match"],
+                          jsonRule["pre"],
+                          jsonRule["msg"],
+                          jsonRule["post"],
+                          None,
+                          ruleConnected);
         rule.connected = jsonRule["connected"]
     else:
-        rule = DialogRule(jsonRule["match"], jsonRule["pre"], jsonRule["msg"], jsonRule["post"])
-    speech.addRule(rule,index)
-    index=index+1
-        
+        rule = DialogRule(jsonRule["match"],
+                          jsonRule["pre"],
+                          jsonRule["msg"],
+                          jsonRule["post"])
+    speech.addRule(rule, index)
+    index = index + 1
+
 if speech.speak(Crossfire.WhatIsMessage()) == 0:
     Crossfire.SetReturnValue(1)
 
