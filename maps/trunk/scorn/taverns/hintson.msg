@@ -15,11 +15,6 @@
      "post"  : [],
      "msg"   : ["You can't see it?  Do you need a pair of ssspectaclesss?"]
    },
-   { "match" : ["scrawl"],
-     "pre"   : [],
-     "post"  : [],
-     "msg"   : ["You can't see it?  Do you need a pair of ssspectaclesss?"]
-   },
    { "match" : ["cur","rotting"],
      "pre"   : [],
      "post"  : [],
