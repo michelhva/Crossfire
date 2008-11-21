@@ -1,3 +1,35 @@
+2008-11-21 01:59  rjtanner
+
+	* brest/black_shield/ground: Backport from trunk replace no_pass
+	  with move_block
+
+2008-11-21 01:53  rjtanner
+
+	* azumauindo/suno-yamatoshi/buildings/ninjadojoA1,
+	  azumauindo/suno-yamatoshi/buildings/tatemonoA1: Backport from
+	  trunk - remove unused and empty space from the map
+
+2008-11-21 01:45  rjtanner
+
+	* azumauindo/minatomachi/buildings/guildkeybuilding1,
+	  azumauindo/minatomachi/buildings/guildkeybuildingB1: Backport
+	  from trunk - remove unused and empty space from the map
+
+2008-11-20 21:58  akirschbaum
+
+	* editor/scripts/LegacySpellConverter,
+	  editor/scripts/MapNormalizer, editor/scripts/MapValidator,
+	  editor/scripts/WorldMaker: Make editor scripts work with latest
+	  Gridarta.
+
+2008-11-20 18:49  akirschbaum
+
+	* scorn/misc/battle_arena/snack: Fix syntax error.
+
+2008-11-20 02:42  rjtanner
+
+	* ChangeLog: Updated ChangeLog file using svn2cl
+
 2008-11-20 02:27  rjtanner
 
 	* HallOfSelection, brest/black_shield/bigchest,

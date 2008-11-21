@@ -1,3 +1,53 @@
+2008-11-21 02:58  rjtanner
+
+	* darcap/darcap/circus/bigtop, darcap/darcap/circus/chess,
+	  darcap/darcap/circus/double, darcap/darcap/circus/ghost,
+	  darcap/darcap/circus/illusions, darcap/darcap/circus/roller1,
+	  darcap/darcap/circus/roller2, darcap/darcap/circus/roller3,
+	  darcap/darcap/circus/shooting, darcap/darcap/circus/strength,
+	  darcap/darcap/circus/wheel, darcap/darcap/circus/wurfbude: More
+	  descriptive names to the Darcap Circus maps
+
+2008-11-21 02:37  rjtanner
+
+	* azumauindo/minatomachi/ketsueki_itsuryuu/ground,
+	  azumauindo/suno-yamatoshi/nenshou_youso/ground,
+	  azumauindo/zaseki_dzuki_ryoku/ground, brest/black_shield/ground,
+	  brest/shops/a_small_shop,
+	  darcap/darcap/guilds/poisoned_dagger/ground,
+	  darcap/darcap/guilds/smoking_cauldron/ground,
+	  navar_city/dreaming_sage/ground,
+	  pup_land/guilds/laughing_skull/ground,
+	  pup_land/guilds/purple_butterfly/ground,
+	  santo_dominion/guilds/drunken_barbarian/ground,
+	  scorn/guilds/mailed_fist/ground,
+	  wolfsburg/guilds/damned_heretics/ground: Convert platinum payment
+	  altars to accept payment of any coin type, requires server update
+	  r10232 (or newer)
+
+2008-11-21 01:40  rjtanner
+
+	* world/world_104_115, world/world_105_115, world/world_105_116,
+	  world/world_107_123, world/world_109_126, world/world_111_100,
+	  world/world_116_102, world/world_121_116, world/world_121_117,
+	  world/world_122_116, world/world_122_117, world/world_124_124,
+	  world/world_126_124, world/world_127_100, world/world_127_101,
+	  world/world_127_102, world/world_127_125, world/world_128_100,
+	  world/world_128_101, world/world_128_109, world/world_128_128,
+	  world/world_129_101: Remove no longer used name_pl tags from
+	  objects (terrain, buildings and ships) in the world maps
+
+2008-11-20 21:58  akirschbaum
+
+	* editor/scripts/LegacySpellConverter,
+	  editor/scripts/MapNormalizer, editor/scripts/MapValidator,
+	  editor/scripts/WorldMaker: Make editor scripts work with latest
+	  Gridarta.
+
+2008-11-19 02:17  rjtanner
+
+	* ChangeLog: Updated ChangeLog file using svn2cl
+
 2008-11-19 01:30  rjtanner
 
 	* brest/brest.inn, pup_land/rainbow/islands: Map header update and
