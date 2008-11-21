@@ -175,6 +175,12 @@
 # intended to occur.  CFDialog constrains the player to follow the proper
 # conversation thread to qualify to receive the quest reward.
 #
+# Debugging
+# =========
+#
+# When debugging, if changes are made to this file, the Crossfire Server must
+# be restarted for it to register the changes.
+
 import Crossfire
 import string
 import random
@@ -184,7 +190,7 @@ class DialogRule:
         self.__keywords = keywords
         self.__presems = presemaphores
         self.__messages = messages
-        self.__postsems= postsemaphores
+        self.__postsems = postsemaphores
         self.__prefunction = prefunction
         self.__postfunction = postfunction
 
@@ -200,7 +206,7 @@ class DialogRule:
     def getMessage(self):
         msg = self.__messages
         l = len(msg)
-        r = random.randint(0,l-1)
+        r = random.randint(0, l - 1)
         return msg[r]
 
     # Return the preconditions of a rule.  They are a list of one or more lists
@@ -243,7 +249,7 @@ class Dialog:
     # very easily create the index.  It is unclear why this mundane activity
     # is left for the dialog maker.
     def addRule(self, rule, index):
-        self.__rules.insert(index,rule)
+        self.__rules.insert(index, rule)
 
     # A function to call when saying something to an NPC to elicit a response
     # based on defined rules. It iterates through the rules and determines if
@@ -253,8 +259,8 @@ class Dialog:
     # also execute if present.
     def speak(self, msg):
         for rule in self.__rules:
-            if self.isAnswer(msg, rule.getKeyword())==1:
-                if self.matchConditions(rule)==1:
+            if self.isAnswer(msg, rule.getKeyword()) == 1:
+                if self.matchConditions(rule) == 1:
                     self.__speaker.Say(rule.getMessage())
                     self.setConditions(rule)
                     return 0
@@ -266,7 +272,7 @@ class Dialog:
     # only need to be a substring of the message in order to trigger a reply.
     def isAnswer(self, msg, keywords):
         for ckey in keywords:
-            if ckey=="*" or string.find(msg.lower(), ckey.lower()) != -1:
+            if ckey == "*" or string.find(msg.lower(), ckey.lower()) != -1:
                 return 1
         return 0
 
@@ -279,9 +285,9 @@ class Dialog:
     def matchConditions(self, rule):
         for condition in rule.getPreconditions():
             status = self.getStatus(condition[0])
-            values=condition[1:]
+            values = condition[1:]
             for value in values:
-                if (status==value) or (value=="*"):
+                if (status == value) or (value == "*"):
                     break
             else:
                 return 0
@@ -296,7 +302,7 @@ class Dialog:
         for condition in rule.getPostconditions():
             key = condition[0]
             val = condition[1]
-            if val!="*":
+            if val != "*":
                 self.setStatus(key,val)
         if rule.getPostfunction() <> None:
                 rule.getPostfunction()(self.__character, rule)
@@ -308,12 +314,12 @@ class Dialog:
     # in the player file.
     def getStatus(self, key):
         character_status=self.__character.ReadKey("dialog_"+self.__location);
-        if character_status=="":
+        if character_status == "":
             return "0"
-        pairs=string.split(character_status,";")
+        pairs=string.split(character_status, ";")
         for i in pairs:
-            subpair=string.split(i,":")
-            if subpair[0]==key:
+            subpair=string.split(i, ":")
+            if subpair[0] == key:
                 return subpair[1]
         return "0"
 
@@ -322,22 +328,22 @@ class Dialog:
     # therefore are not required to be unique.  This also prevents flags from
     # conflicting with other non-dialog-related contents in the player file.
     def setStatus(self, key, value):
-        character_status=self.__character.ReadKey("dialog_"+self.__location);
-        finished=""
-        ishere=0
-        if character_status!="":
-            pairs=string.split(character_status,";")
+        ishere = 0
+        finished = ""
+        character_status = self.__character.ReadKey("dialog_"+self.__location);
+        if character_status != "":
+            pairs = string.split(character_status, ";")
             for i in pairs:
-                subpair=string.split(i,":")
-                if subpair[0]==key:
-                    subpair[1]=value
-                    ishere=1
-                if finished!="":
-                    finished=finished+";"
-                finished=finished+subpair[0]+":"+subpair[1]
-        if ishere==0:
-            if finished!="":
-                finished=finished+";"
-            finished=finished+key+":"+value
-        self.__character.WriteKey("dialog_"+self.__location, finished, 1)
+                subpair = string.split(i, ":")
+                if subpair[0] == key:
+                    subpair[1] = value
+                    ishere = 1
+                if finished != "":
+                    finished = finished+";"
+                finished = finished + subpair[0] + ":" + subpair[1]
+        if ishere == 0:
+            if finished != "":
+                finished = finished + ";"
+            finished = finished + key + ":" + value
+        self.__character.WriteKey("dialog_" + self.__location, finished, 1)
 
