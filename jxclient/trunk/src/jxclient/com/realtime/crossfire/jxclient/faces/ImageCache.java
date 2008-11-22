@@ -36,7 +36,7 @@ public interface ImageCache
     ImageIcon load(Face face);
 
     /**
-     * Stores an {@link ImageIcon} into the cache
+     * Stores an {@link ImageIcon} into the cache.
      * @param face the face to save
      * @param imageIcon the image icon to store
      */
