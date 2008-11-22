@@ -1,3 +1,77 @@
+2008-11-22 01:49  rjtanner
+
+	* dragonisland/advguild3: Restore resist_physical 30 stat to the
+	  training demon
+
+2008-11-22 01:27  rjtanner
+
+	* darcap/darcap/tavern: Reformat map header syntax - no functional
+	  changes
+
+2008-11-21 08:15  kbulgrien
+
+	* scorn/taverns/hintson.msg: - Remove a redundant rule from the NPC
+	  dialog.
+
+2008-11-21 08:09  kbulgrien
+
+	* scorn/taverns/goths, scorn/taverns/hintson.msg: - Add a new NPC
+	  in Goths that uses an npc_dialog.py message file to drive a
+	  CFDialog.py driven conversation (the conversation was created
+	  before the
+	  author knew about CFDialog or how to use it, but it was too large
+	  to put
+	  into @match as it caused a server crash). This dialog is
+	  structured, but
+	  state is not tracked due the informational nature of the
+	  conversation.
+	  The NPC drops some hints about things in Scorn that a new player
+	  might
+	  want to check out. There are no spoilers, but it may serve to
+	  help a new
+	  player find out about some things about scorn that the author did
+	  not
+	  discover for ages.
+
+2008-11-21 07:46  kbulgrien
+
+	* python/misc/npc_dialog.py: - Reformat for readability. No
+	  functional change.
+
+2008-11-21 07:43  kbulgrien
+
+	* python/misc/npc_dialog.py: - More clearly document how to write
+	  JSONs when pre or postconditions are not
+	  needed by a particular rule. For the inexperienced, this was a
+	  showstopper.
+	  - Dispense with the user defined exception and replace the old
+	  handling with a
+	  more effective debug log message combined with a generic
+	  exception.
+
+2008-11-21 07:30  kbulgrien
+
+	* python/CFDialog.py: - Document how to successfully create rules
+	  that do not need any pre or post
+	  conditions (by supplying and empty list).
+	  - Add exception handling to matchConditions() and setConditions()
+	  and output
+	  a debug log message to facilitate debugging broken dialogs when
+	  the rules
+	  contain malformed condition lists.
+
+2008-11-21 07:02  kbulgrien
+
+	* python/CFDialog.py: - Add a comment noting that when debugging, a
+	  server restart is needed to put
+	  code changes into effect.
+	  - No functional changes.
+	  - Whitespace changes.
+
+2008-11-21 03:07  rjtanner
+
+	* ChangeLog: Updated ChangeLog file using svn2cl
+
 2008-11-21 02:58  rjtanner
 
 	* darcap/darcap/circus/bigtop, darcap/darcap/circus/chess,

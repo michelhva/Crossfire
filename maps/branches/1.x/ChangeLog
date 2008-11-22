@@ -1,3 +1,107 @@
+2008-11-22 01:55  rjtanner
+
+	* dungeons/trollbridge: Backport from trunk, removed spoilers -
+	  signs removed
+
+2008-11-22 01:54  rjtanner
+
+	* dungeons/trollbridge: Backport from trunk - added 'blocked' walls
+	  to the unused spaces (cosmetic change only, no functional
+	  changes)
+
+2008-11-22 01:51  rjtanner
+
+	* dungeons/barad_dur: Backport from trunk, cosmetic wall change
+
+2008-11-22 01:46  rjtanner
+
+	* darcap/darcap/gshop: Backport from trunk - cosmetic wall changes
+	  with how swall (fence) merges with nearby walls
+
+2008-11-22 01:45  rjtanner
+
+	* darcap/darcap/circus/bigtop, darcap/darcap/circus/chess,
+	  darcap/darcap/circus/double, darcap/darcap/circus/ghost,
+	  darcap/darcap/circus/illusions, darcap/darcap/circus/roller1,
+	  darcap/darcap/circus/roller2, darcap/darcap/circus/roller3,
+	  darcap/darcap/circus/shooting, darcap/darcap/circus/strength,
+	  darcap/darcap/circus/wheel, darcap/darcap/circus/wurfbude:
+	  Backport from trunk, more descriptive names to the Darcap Circus
+	  maps
+
+2008-11-22 01:39  rjtanner
+
+	* darcap/cave/level1, darcap/cave/level2, darcap/cave/level3,
+	  darcap/cave/level4: Backport from trunk, inserted missing floor
+	  tiles and updated cave walls for nicer appearance
+
+2008-11-22 01:34  rjtanner
+
+	* azumauindo/suno-yamatoshi/apartments/lapartment1: Backport from
+	  trunk, remove no longer used name_pl tag from the altar
+
+2008-11-22 01:32  rjtanner
+
+	* darcap/quest/water: Backport from trunk, cosmetic wall changes
+	  and monster location rearrangement
+
+2008-11-22 01:30  rjtanner
+
+	* darcap/lynn/castle1.1, darcap/lynn/castle1.3: Backport from trunk
+	  - realign stairways (exit/entrance) so they line up with each
+	  other
+
+2008-11-22 01:28  rjtanner
+
+	* darcap/darcap/temple: Backport from trunk - cosmetic wall changes
+	  with how swall (fence) merges with nearby walls
+
+2008-11-22 01:27  rjtanner
+
+	* darcap/darcap/tavern: Reformat map header syntax - no functional
+	  changes
+
+2008-11-22 01:23  rjtanner
+
+	* darcap/raffle/raffle1: Backport from trunk, replace no_pass with
+	  move_block
+
+2008-11-22 01:21  rjtanner
+
+	* darcap/darcap/church: Backport from trunk - cosmetic wall changes
+	  for nicer merging
+
+2008-11-22 01:20  rjtanner
+
+	* brest/brest.inn: Backport from trunk, @match is case insensitive
+	  - made dialog all lower case
+
+2008-11-22 01:19  rjtanner
+
+	* brest/nasty_house: Backport from trunk, replace no_pass with
+	  move_block
+
+2008-11-22 01:17  rjtanner
+
+	* azumauindo/minatomachi/ketsueki_itsuryuu/ground,
+	  azumauindo/suno-yamatoshi/nenshou_youso/ground,
+	  azumauindo/zaseki_dzuki_ryoku/ground, brest/black_shield/ground,
+	  brest/shops/a_small_shop,
+	  darcap/darcap/guilds/poisoned_dagger/ground,
+	  darcap/darcap/guilds/smoking_cauldron/ground,
+	  navar_city/dreaming_sage/ground,
+	  pup_land/guilds/laughing_skull/ground,
+	  pup_land/guilds/purple_butterfly/ground,
+	  santo_dominion/guilds/drunken_barbarian/ground,
+	  scorn/guilds/mailed_fist/ground,
+	  wolfsburg/guilds/damned_heretics/ground: Backport from trunk,
+	  convert platinum payment altars to accept payment of any coin
+	  type, requires server update 10233 (or newer)
+
+2008-11-21 03:07  rjtanner
+
+	* ChangeLog: Updated ChangeLog file using svn2cl
+
 2008-11-21 01:59  rjtanner
 
 	* brest/black_shield/ground: Backport from trunk replace no_pass
