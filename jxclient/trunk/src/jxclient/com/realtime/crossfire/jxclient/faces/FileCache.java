@@ -99,7 +99,7 @@ public class FileCache implements ImageCache
     }
 
     /**
-     * Stores an {@link ImageIcon} into the cache
+     * Stores an {@link ImageIcon} into the cache.
      * @param faceName the image name to save
      * @param faceChecksum the checksum to save
      * @param imageIcon the image icon to store
