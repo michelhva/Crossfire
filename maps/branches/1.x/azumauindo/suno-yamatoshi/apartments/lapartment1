@@ -9,7 +9,7 @@ enter_x 17
 enter_y 1
 msg
 Created:  2004-08-03 Mikeeusa
-Modified: 2008-11-18 Rick Tanner
+Modified: 2008-11-21 Rick Tanner
 endmsg
 end
 arch woodfloor2
@@ -237,7 +237,6 @@ connected 3
 end
 arch goldfloor
 name Drop 20 holy symbols for an altar
-name_pl Drop 12 holy symbols for an altar
 slaying holy_symbol
 food 20
 x 1
