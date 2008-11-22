@@ -9,6 +9,7 @@ enter_x 12
 enter_y 23
 msg
 Created:  2002-01-10 MikeeUSA
+Modified: 2008-11-21 Rick Tanner
 endmsg
 end
 arch blocked
@@ -3574,8 +3575,8 @@ end
 arch goldfloor
 name drop 5000 Platinum for a portal to Scorn
 name_pl drop 5000 Platinum for a portal to Scorn
-slaying platinacoin
-food 5000
+slaying money
+food 250000
 x 10
 y 16
 connected 21
@@ -6885,8 +6886,8 @@ end
 arch goldfloor
 name drop 1000 platinum for a silver to gold converter
 name_pl drop 1000 platinum for a silver to gold converter
-slaying platinacoin
-food 1000
+slaying money
+food 50000
 x 19
 y 8
 connected 30
@@ -6905,8 +6906,8 @@ end
 arch goldfloor
 name drop 1000 platinum for a gold to platinum converter
 name_pl drop 1000 platinum for a gold to platinum converter
-slaying platinacoin
-food 1000
+slaying money
+food 50000
 x 19
 y 9
 connected 31
@@ -6925,8 +6926,8 @@ end
 arch goldfloor
 name drop 1000 platinum coins for a platinum to gold converter
 name_pl drop 1000 platinum coins for a platinum to gold converter
-slaying platinacoin
-food 1000
+slaying money
+food 50000
 x 19
 y 10
 connected 32
