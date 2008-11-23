@@ -9,7 +9,7 @@ enter_x 7
 enter_y 11
 msg
 Created:  2004-08-03 Mikeeusa
-Modified: 2008-11-16 Rick Tanner
+Modified: 2008-11-22 Rick Tanner
 endmsg
 outdoor 1
 end
@@ -786,26 +786,22 @@ end
 arch fatman
 msg
 @match hi|hello
-Hi there mate, You want to know what
-we or, usually rather, I do here I bet eh?
+Hi there mate, You want to know what we or, usually rather, I do here I bet eh?
 @match yes|what|yea
-Well here is stored the shipments of rum runners and also the occasional
-whaling ship whom's capitan wishes to avoid taxation... some of those
-whaling ships go deep into the antarctic...
+Well, here we store the shipments of rum runners and of the occasional whaling ship whose captain wishes to avoid taxation...
+Some of those whaling ships go deep into the Antarctic...
 @match ship|antarctic
-Oh yes those whaling ships go to places colder than I'd ever want to venture, this little
-island is as far south as I've ever been... and we dip under zero often enough that a man's
-blood starts to thin out real quick.
+Oh yes those whaling ships go to places colder than I'd ever want to venture.
+This little island is as far south as I've ever been... and we dip below zero often enough that a man's blood starts to thin out real quick.
 @match whale|whaling
-Those whaling ships are built strong, that's how you can tell them from others. They often go deep into
-the frozen oceans and have outposts here and there. A captain offered once to take me to a place at the
-bottom of the world... I declined as I'd probably would have died from the frost... perhapse you could
-get such a capitan to bring you along to one of there desolate islands... if you would want to. In
-anycase the seas those ships ride upon are mighty rough and mighty cold, well below freezing all year
-round!
-@match bye|by|seeya
-Well so long then, keep yourself safe and, If I may give you sage advice, don't go any more south then
-this here little rock... go north instead.
+Those whaling ships are built strong. That's how you can tell them from others.
+They often go deep into the frozen oceans and have outposts here and there.
+One captain offered once to take me to a place at the bottom of the world... I declined as I probably would have died from the frost... but perhaps you could find such a captain to bring you along to one of there desolate islands... if you would want to.
+In any case, the seas those ships ride upon are mighty rough and mighty cold; well below freezing all year round!
+@match bye|seeya
+Well so long then, keep yourself safe, and, if I may give you sage advice, don't go any more south than this here little rock... go north instead.
+@match name
+Hmm... Gunnar, if you have to know, but don't be spreading names about, eh.
 endmsg
 hp 100
 maxhp 100
