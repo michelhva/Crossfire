@@ -7,12 +7,7 @@ wc -30
 lifesave 1
 name strange looking ice
 face evil_ice.111
-anim
-evil_ice.111
-evil_ice.112
-evil_ice.113
-evil_ice.114
-mina
+animation evil_ice
 magicmap blue
 speed 0.2
 no_pick 1

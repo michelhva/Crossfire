@@ -5,10 +5,7 @@ name_pl Shining Fingers
 client_type 300
 type 100
 face shining_finger.111
-anim
-shining_finger.111
-shining_finger.112
-mina
+animation shining_finger
 magicmap black
 anim_speed 10
 client_anim_random 1

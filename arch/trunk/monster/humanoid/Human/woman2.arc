@@ -3,12 +3,7 @@ race human
 name woman
 randomitems man
 face woman2.113
-anim
-woman2.111
-woman2.112
-woman2.113
-woman2.112
-mina
+animation woman2
 sp 10
 maxsp 10
 Pow 1

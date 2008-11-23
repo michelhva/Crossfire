@@ -2,12 +2,7 @@ Object power_crystal
 name Glowing Crystal
 maxsp 1000
 face power_crystal.111
-anim
-power_crystal.111
-power_crystal.112
-power_crystal.113
-power_crystal.114
-mina
+animation power_crystal
 type 156
 weight 3
 magicmap white

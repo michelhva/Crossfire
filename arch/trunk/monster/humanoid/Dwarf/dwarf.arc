@@ -3,10 +3,7 @@ race dwarf
 name dwarf
 randomitems dwarf
 face dwarf.111
-anim
-dwarf.111
-dwarf.112
-mina
+animation dwarf
 magicmap grey
 maxsp 9
 sp 9

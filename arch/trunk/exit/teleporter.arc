@@ -6,10 +6,6 @@ type 41
 activate_on_push 1
 activate_on_release 1
 no_pick 1
-anim
-teleporter.111
-teleporter.112
-teleporter.113
-mina
+animation teleporter
 visibility 100
 end

@@ -1,13 +1,6 @@
 Object sea
 face sea.111
-anim
-sea.111
-sea.112
-sea.113
-sea.114
-sea.113
-sea.112
-mina
+animation sea
 smoothface sea.111 sea_S.111
 smoothface sea.112 sea_S.112
 smoothface sea.113 sea_S.113
@@ -24,14 +17,7 @@ end
 Object sea1
 name sea
 face sea.111
-anim
-sea.111
-sea.112
-sea.113
-sea.114
-sea.113
-sea.112
-mina
+animation sea
 smoothface sea.111 sea_S.111
 smoothface sea.112 sea_S.112
 smoothface sea.113 sea_S.113

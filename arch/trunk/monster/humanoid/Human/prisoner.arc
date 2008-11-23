@@ -1,14 +1,7 @@
 Object prisoner
 face prisoner.111
 race human
-anim
-prisoner.111
-prisoner.111
-prisoner.111
-prisoner.111
-prisoner.112
-prisoner.112
-mina
+animation prisoner
 Pow 1
 monster 1
 move_type walk

@@ -2,13 +2,7 @@ Object goose
 race bird
 face goose.131
 magicmap brown
-anim
-facings 2
-goose.171
-goose.172
-goose.131
-goose.132
-mina
+animation goose
 monster 1
 move_type walk
 Wis 1

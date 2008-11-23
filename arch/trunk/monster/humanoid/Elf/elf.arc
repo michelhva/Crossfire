@@ -3,13 +3,7 @@ race elf
 name elf
 randomitems elf
 face elf.171
-anim
-elf.111
-elf.131
-elf.151
-elf.171
-facings 4
-mina
+animation elf
 is_animated 0
 type 37
 level 1

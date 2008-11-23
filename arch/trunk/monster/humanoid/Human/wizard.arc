@@ -4,13 +4,7 @@ race wizard
 randomitems wizard
 face wizard.171
 magicmap black
-anim
-wizard.111
-wizard.131
-wizard.151
-wizard.171
-facings 4
-mina
+animation wizard
 is_animated 0
 type 37
 level 1

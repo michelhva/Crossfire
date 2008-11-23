@@ -2,10 +2,7 @@ Object pirate
 randomitems pirate
 race human
 face pirate.111
-anim
-pirate.111
-pirate.112
-mina
+animation pirate
 monster 1
 move_type walk
 sleep 1

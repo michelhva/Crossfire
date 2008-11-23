@@ -5,10 +5,7 @@ client_type 290
 nrof 1
 exp 5
 face idaten.111
-anim
-idaten.111
-idaten.112
-mina
+animation idaten
 anim_speed 3
 client_anim_random 1
 exp 20

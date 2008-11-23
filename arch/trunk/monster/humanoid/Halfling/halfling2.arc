@@ -3,10 +3,7 @@ race halfling
 name halfling
 randomitems halfling
 face halfling2.151
-anim
-halfling2.151
-halfling2.152
-mina
+animation halfling2
 sp 10
 maxsp 10
 Str 12

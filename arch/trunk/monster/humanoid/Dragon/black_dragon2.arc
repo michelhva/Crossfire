@@ -3,13 +3,7 @@ name black dragon
 race dragon
 randomitems dragon_player_items
 face black_dragon2.151
-anim
-facings 2
-black_dragon2.151
-black_dragon2.152
-black_dragon2.171
-black_dragon2.172
-mina
+animation black_dragon2
 monster 1
 move_type walk
 unaggressive 1

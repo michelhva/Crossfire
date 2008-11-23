@@ -5,12 +5,7 @@ client_type 290
 nrof 1
 exp 6
 face speedboots.111
-anim
-speedboots.111
-speedboots.112
-speedboots.113
-speedboots.112
-mina
+animation speedboots
 anim_speed 5
 client_anim_random 1
 value 50000

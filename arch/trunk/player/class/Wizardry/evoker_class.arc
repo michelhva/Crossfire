@@ -3,17 +3,7 @@ name evoker
 anim_suffix class_evoker
 randomitems evoker_class_items
 face evoker.151
-anim
-evoker.111
-evoker.112
-evoker.131
-evoker.132
-evoker.151
-evoker.152
-evoker.171
-evoker.172
-facings 4
-mina
+animation evoker_class
 is_animated 1
 anim_speed -1
 type 37

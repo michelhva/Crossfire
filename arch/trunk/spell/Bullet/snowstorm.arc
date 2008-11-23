@@ -3,11 +3,7 @@ type 102
 subtype 6
 face icestorm.111
 magicmap light_blue
-anim
-icestorm.111
-icestorm.112
-icestorm.113
-mina
+animation snowstorm
 wc -30
 speed 0.2
 speed_left -0.21
