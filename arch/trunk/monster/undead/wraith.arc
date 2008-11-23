@@ -2,11 +2,7 @@ Object wraith
 race undead
 randomitems ring
 face wraith.111
-anim
-wraith.111
-wraith.112
-wraith.113
-mina
+animation wraith
 monster 1
 move_type walk
 sleep 1

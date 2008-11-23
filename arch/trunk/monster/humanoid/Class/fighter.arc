@@ -3,12 +3,7 @@ name fighter
 race human
 randomitems fighter
 face fighter.111
-anim
-fighter.111
-fighter.112
-fighter.113
-fighter.112
-mina
+animation fighter
 magicmap grey
 maxsp 5
 sp 5

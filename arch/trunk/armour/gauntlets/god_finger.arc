@@ -5,10 +5,7 @@ name_pl God Fingers
 client_type 300
 type 100
 face god_finger.111
-anim
-god_finger.111
-god_finger.112
-mina
+animation god_finger
 anim_speed 10
 client_anim_random 1
 Str 2

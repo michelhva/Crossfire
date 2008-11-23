@@ -6,11 +6,7 @@ level 1
 move_on walk fly_low
 face sparkshower.111
 magicmap red
-anim
-sparkshower.111
-sparkshower.112
-sparkshower.113
-mina
+animation sparkshower
 anim_speed 1.0
 speed 0.075
 wc -30

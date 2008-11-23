@@ -3,11 +3,7 @@ type 102
 subtype 6
 face fireball.111
 magicmap red
-anim
-fireball.111
-fireball.112
-fireball.113
-mina
+animation fireball
 smoothlevel 200
 smoothface fireball.111 fireball_S.111
 smoothface fireball.112 fireball_S.112

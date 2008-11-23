@@ -4,13 +4,7 @@ race mage
 randomitems mage
 face mage.171
 magicmap black
-anim
-mage.111
-mage.131
-mage.151
-mage.171
-facings 4
-mina
+animation mage
 is_animated 0
 type 37
 level 1

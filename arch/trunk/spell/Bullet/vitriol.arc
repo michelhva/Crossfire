@@ -47,10 +47,7 @@ wc -30
 stand_still 1
 name vitriol pool
 face v_pool.111
-anim
-v_pool.111
-v_pool.112
-mina
+animation vitriol_pool
 speed 0.2
 no_pick 1
 attacktype 64

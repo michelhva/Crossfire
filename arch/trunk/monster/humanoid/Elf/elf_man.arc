@@ -4,10 +4,7 @@ name elf man
 randomitems elf_1
 face elf_lad.111
 magicmap black
-anim
-elf_lad.111
-elf_lad.112
-mina
+animation elf_man
 monster 1
 move_type walk
 alive 1

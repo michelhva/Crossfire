@@ -3,10 +3,7 @@ name orc chief
 randomitems orc
 race goblin
 face orc_chief.111
-anim
-orc_chief.111
-orc_chief.112
-mina
+animation orc_chief_arc
 monster 1
 move_type walk
 sleep 1
