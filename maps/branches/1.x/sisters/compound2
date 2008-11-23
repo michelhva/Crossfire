@@ -8,7 +8,7 @@ enter_x 1
 enter_y 6
 msg
 Created:  1994-12-26 bt (thomas@Nomad.astro.psu.edu)
-Modified: 2008-11-14 Rick Tanner
+Modified: 2008-11-22 Rick Tanner
 endmsg
 end
 arch blocked
@@ -1127,10 +1127,15 @@ resist_physical 50
 carrying 30000
 arch mjoellnir
 name Baba Mal the War Hammer
+name_pl Baba Mal War Hammers
 Str 0
 dam 13
 attacktype 256
-resist_magic 100
+resist_magic -100
+resist_electricity 0
+resist_weaponmagic 30
+resist_paralyze 100
+resist_fear 100
 magic 2
 end
 end
@@ -1539,10 +1544,12 @@ unique 1
 end
 arch skullcleaver
 name Vardimar the Singing Axe
+name_pl Vardimar the Singing Axes
 slaying djinn
 dam 18
 attacktype 262145
-resist_confusion 30
+resist_confusion -100
+resist_chaos 30
 weight 28000
 magic 5
 last_sp 10
