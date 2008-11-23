@@ -1,3 +1,66 @@
+2008-11-23 07:20  rjtanner
+
+	* world/world_104_115: Backport from trunk, remove no longer used
+	  name_pl tags from buildings
+
+2008-11-23 07:15  rjtanner
+
+	* whalingoutpost/taverns/storehouse1: Backport from trunk, Minor
+	  dialog rework: Remove mid-sentence line breaks and break at
+	  possible paragraphs instead; fix capitalization/grammar/spelling;
+	  give fatman a name
+
+2008-11-23 07:11  rjtanner
+
+	* sisters/compound2: Backport from trunk - Fix for Bug [ 2020789 ]
+	  many maps broken 16 months ago: wrong immunities, armour..;
+	  restored resistances granted by Baba Mal the War Hammer and
+	  Vardimar the Singing Axe and added plural name fields to the
+	  weapons
+
+2008-11-23 07:07  rjtanner
+
+	* scorn/shops/oleds_cafe: Backport from trunk, coffee shop now
+	  accepts payment of any coin type, requires server update 10233
+	  (or newer)
+
+2008-11-23 07:05  rjtanner
+
+	* scorn/misc/templedevour: @match is case insensitive - made dialog
+	  all lower case
+
+2008-11-23 06:58  rjtanner
+
+	* scorn/kar/somehouse2, scorn/kar/somehouse3: Backport from trunk,
+	  added levers to prevent players from being trapped on the other
+	  side of the gates
+
+2008-11-23 06:50  rjtanner
+
+	* pup_land/nurnberg/church: Backport from trunk, convert platinum
+	  payment altars to accept payment of any coin type, requires
+	  server update 10233 (or newer)
+
+2008-11-23 06:49  rjtanner
+
+	* pup_land/nurnberg/alshop: Backport from trunk - realign stairways
+	  (exit/entrance) so they line up with each other
+
+2008-11-23 06:45  rjtanner
+
+	* lake_country/snake_pit/Chaos_lair3: Backport from trunk - Grammar
+	  updates within magic_mouth messages
+
+2008-11-23 06:39  rjtanner
+
+	* inn_and_outpost/nirlas_house: Backport from trunk - added
+	  'blocked' walls to the unused spaces (cosmetic change only, no
+	  functional changes)
+
+2008-11-22 02:04  rjtanner
+
+	* ChangeLog: Updated ChangeLog file using svn2cl
+
 2008-11-22 01:55  rjtanner
 
 	* dungeons/trollbridge: Backport from trunk, removed spoilers -
