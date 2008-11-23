@@ -8,7 +8,7 @@ enter_x 4
 enter_y 9
 msg
 Created:  1996-02-12
-Modified: 2008-11-11 Rick Tanner
+Modified: 2008-11-22 Rick Tanner
 endmsg
 end
 arch pstone_1
@@ -333,11 +333,11 @@ x 4
 y 2
 end
 arch altar
-slaying platinacoin
+slaying money
 msg
 Oh..May God bless you.
 endmsg
-food 1000
+food 50000
 x 4
 y 2
 connected 1
