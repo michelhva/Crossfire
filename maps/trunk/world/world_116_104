@@ -4,7 +4,7 @@ region darcap
 width 50
 height 50
 msg
-Modified: 2007-12-24 tchize
+Modified: 2008-11-24 Rick Tanner
 endmsg
 outdoor 1
 tile_path_1 world_116_103
@@ -3693,9 +3693,10 @@ x 13
 y 20
 end
 arch tower_tob
-slaying /darcap/town2/towers
-hp 5
-sp 18
+name Northwest Tower
+slaying ../darcap/town2/nwtower
+hp 6
+sp 10
 x 13
 y 20
 end
@@ -3720,9 +3721,10 @@ x 13
 y 25
 end
 arch tower_tob
-slaying /darcap/town2/towers
-hp 5
-sp 2
+name Southwest Tower
+slaying ../darcap/town2/swtower
+hp 6
+sp 10
 x 13
 y 25
 end
@@ -4971,9 +4973,10 @@ x 18
 y 20
 end
 arch tower_tob
-slaying /darcap/town2/towers
-hp 15
-sp 18
+name Northwest Tower
+slaying ../darcap/town2/netower
+hp 6
+sp 10
 x 18
 y 20
 end
@@ -4998,9 +5001,10 @@ x 18
 y 25
 end
 arch tower_tob
-slaying /darcap/town2/towers
-hp 15
-sp 2
+name Southeast Tower
+slaying ../darcap/town2/setower
+hp 6
+sp 10
 x 18
 y 25
 end
