@@ -2,12 +2,7 @@ Object ball_lightning
 type 102
 subtype 35
 face ball_lightning.111
-anim
-ball_lightning.111
-ball_lightning.222
-ball_lightning.333
-ball_lightning.444
-mina
+animation ball_lightning
 magicmap yellow
 is_used_up 1
 is_animated 1
