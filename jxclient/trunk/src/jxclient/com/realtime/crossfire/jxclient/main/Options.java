@@ -44,6 +44,12 @@ public class Options
 
     private String debugProtocolFilename = null;
 
+    /**
+     * The filename for keyboard debug logs or <code>null</code> to not log
+     * keyboard input.
+     */
+    private String debugKeyboardFilename = null;
+
     private Resolution resolution = null;
 
     private String skin = null;
@@ -114,6 +120,11 @@ public class Options
                 debugProtocolFilename = args[i+1];
                 i++;
             }
+            else if (args[i].equals("--debug-keyboard") && i+1 < args.length)
+            {
+                debugKeyboardFilename = args[i+1];
+                i++;
+            }
             else
             {
                 System.out.println("");
@@ -127,6 +138,8 @@ public class Options
                 System.out.println(" --server <host>: Select a server to connect to; skips main and metaserver");
                 System.out.println("                  windows.");
                 System.out.println(" --debug-gui    : Enable debugging of GUI elements.");
+                System.out.println(" --debug-keyboard <log-file>");
+                System.out.println("                : Log keyboard input.");
                 System.out.println(" --debug-protocol <log-file>");
                 System.out.println("                : Log messages exchanged with the server.");
                 System.exit(1);
@@ -160,6 +173,15 @@ public class Options
     public String getDebugProtocolFilename()
     {
         return debugProtocolFilename;
+    }
+
+    /**
+     * Returns the filename for keyboard debug logs.
+     * @return the filename or <code>null</code> to not log keyboard input
+     */
+    public String getDebugKeyboardFilename()
+    {
+        return debugKeyboardFilename;
     }
 
     public Settings getPrefs()

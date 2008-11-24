@@ -86,6 +86,8 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
+import java.util.Date;
+import java.text.SimpleDateFormat;
 import javax.swing.JFrame;
 import javax.swing.Timer;
 
@@ -177,6 +179,17 @@ public class JXCWindow extends JFrame implements KeyListener, CrossfireDrawextin
      * The shortcuts for this window.
      */
     private final Shortcuts shortcuts;
+
+    /**
+     * The {@link Appendable} for logging keyboard debug output. Log nothing if
+     * <code>null</code>.
+     */
+    private final Appendable debugKeyboard;
+
+    /**
+     * A formatter for timestamps.
+     */
+    private final SimpleDateFormat simpleDateFormat = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss,SSS ");
 
     /**
      * The settings instance to use.
@@ -440,6 +453,9 @@ public class JXCWindow extends JFrame implements KeyListener, CrossfireDrawextin
      * @param debugProtocol If non-<code>null</code>, write all protocol
      * commands to this appender.
      *
+     * @param debugKeyboard If non-<code>null</code>, write all keyboard debug
+     * to this appender.
+     *
      * @param settings The settings instance to use.
      *
      * @param soundManager the sound manager instance to use
@@ -448,11 +464,12 @@ public class JXCWindow extends JFrame implements KeyListener, CrossfireDrawextin
      *
      * @throws IOException if a resource cannot be loaded
      */
-    public JXCWindow(final Object terminateSync, final boolean debugGui, final Appendable debugProtocol, final Settings settings, final SoundManager soundManager, final OptionManager optionManager) throws IOException
+    public JXCWindow(final Object terminateSync, final boolean debugGui, final Appendable debugProtocol, final Appendable debugKeyboard, final Settings settings, final SoundManager soundManager, final OptionManager optionManager) throws IOException
     {
         super(TITLE_PREFIX);
         this.terminateSync = terminateSync;
         this.debugGui = debugGui;
+        this.debugKeyboard = debugKeyboard;
         this.settings = settings;
         this.soundManager = soundManager;
         this.optionManager = optionManager;
@@ -581,6 +598,10 @@ public class JXCWindow extends JFrame implements KeyListener, CrossfireDrawextin
 
     private void setKeyShift(final int keyid, final boolean state)
     {
+        if (keyShift[keyid] != state)
+        {
+            debugKeyboardWrite("setKeyShift: "+keyid+"="+state);
+        }
         keyShift[keyid] = state;
     }
 
@@ -840,16 +861,19 @@ public class JXCWindow extends JFrame implements KeyListener, CrossfireDrawextin
     {
         if (getStatus() != Status.PLAYING)
         {
+            debugKeyboardWrite("handleKeyPress: ignoring key because state is not PLAYING but "+getStatus());
             return;
         }
 
         if (keybindingsManager.handleKeyPress(e))
         {
+            debugKeyboardWrite("keyPressed: keybindingsManager consumed key");
             return;
         }
 
         if (skin.getDefaultKeyBindings().handleKeyPress(e))
         {
+            debugKeyboardWrite("keyPressed: skin default key bindings consumed key");
             return;
         }
 
@@ -858,48 +882,63 @@ public class JXCWindow extends JFrame implements KeyListener, CrossfireDrawextin
             switch (e.getKeyCode())
             {
             case KeyEvent.VK_0:
+                debugKeyboardWrite("keyPressed: number key");
                 commandQueue.addToRepeatCount(0);
                 break;
 
             case KeyEvent.VK_1:
+                debugKeyboardWrite("keyPressed: number key");
                 commandQueue.addToRepeatCount(1);
                 break;
 
             case KeyEvent.VK_2:
+                debugKeyboardWrite("keyPressed: number key");
                 commandQueue.addToRepeatCount(2);
                 break;
 
             case KeyEvent.VK_3:
+                debugKeyboardWrite("keyPressed: number key");
                 commandQueue.addToRepeatCount(3);
                 break;
 
             case KeyEvent.VK_4:
+                debugKeyboardWrite("keyPressed: number key");
                 commandQueue.addToRepeatCount(4);
                 break;
 
             case KeyEvent.VK_5:
+                debugKeyboardWrite("keyPressed: number key");
                 commandQueue.addToRepeatCount(5);
                 break;
 
             case KeyEvent.VK_6:
+                debugKeyboardWrite("keyPressed: number key");
                 commandQueue.addToRepeatCount(6);
                 break;
 
             case KeyEvent.VK_7:
+                debugKeyboardWrite("keyPressed: number key");
                 commandQueue.addToRepeatCount(7);
                 break;
 
             case KeyEvent.VK_8:
+                debugKeyboardWrite("keyPressed: number key");
                 commandQueue.addToRepeatCount(8);
                 break;
 
             case KeyEvent.VK_9:
+                debugKeyboardWrite("keyPressed: number key");
                 commandQueue.addToRepeatCount(9);
                 break;
 
             default:
+                debugKeyboardWrite("keyPressed: ignoring key");
                 break;
             }
+        }
+        else
+        {
+            debugKeyboardWrite("keyPressed: ignoring key because modifiers != 0");
         }
     }
 
@@ -907,84 +946,192 @@ public class JXCWindow extends JFrame implements KeyListener, CrossfireDrawextin
     {
         if (getStatus() != Status.PLAYING)
         {
+            debugKeyboardWrite("handleKeyTyped: ignoring key because state is not PLAYING but "+getStatus());
             return;
         }
 
         if (keybindingsManager.handleKeyTyped(e))
         {
+            debugKeyboardWrite("keyTyped: keybindingsManager consumed key");
             return;
         }
 
         if (skin.getDefaultKeyBindings().handleKeyTyped(e))
         {
-            return;
+            debugKeyboardWrite("keyTyped: skin default key bindings consumed key");
+            return;                                                    
         }
+
+        debugKeyboardWrite("keyTyped: ignoring key");
     }
 
     public void keyPressed(final KeyEvent e)
     {
-        synchronized (semaphoreDrawing)
+        debugKeyboardWrite("pressed", e);
+        try
         {
-            updateModifiers(e);
-            switch (e.getKeyCode())
+            synchronized (semaphoreDrawing)
             {
-            case KeyEvent.VK_ALT:
-            case KeyEvent.VK_ALT_GRAPH:
-            case KeyEvent.VK_SHIFT:
-            case KeyEvent.VK_CONTROL:
-                break;
-
-            default:
-                if (e.getKeyCode() == KeyEvent.VK_ESCAPE)
+                updateModifiers(e);
+                switch (e.getKeyCode())
                 {
-                    if (keybindingsManager.escPressed())
+                case KeyEvent.VK_ALT:
+                case KeyEvent.VK_ALT_GRAPH:
+                case KeyEvent.VK_SHIFT:
+                case KeyEvent.VK_CONTROL:
+                    debugKeyboardWrite("keyPressed: ignoring modifier key");
+                    break;
+
+                default:
+                    if (e.getKeyCode() == KeyEvent.VK_ESCAPE)
                     {
-                        windowRenderer.closeDialog(keybindDialog);
-                    }
-                    else if (deactivateCommandInput())
-                    {
-                        // ignore
-                    }
-                    else if (getStatus() != Status.UNCONNECTED)
-                    {
-                        if (dialogDisconnect == null)
+                        debugKeyboardWrite("keyPressed: ESC");
+
+                        if (keybindingsManager.escPressed())
                         {
-                            disconnect();
+                            windowRenderer.closeDialog(keybindDialog);
                         }
-                        else if (windowRenderer.openDialog(dialogDisconnect))
+                        else if (deactivateCommandInput())
                         {
-                            if (dialogQuit != null)
+                            // ignore
+                        }
+                        else if (getStatus() != Status.UNCONNECTED)
+                        {
+                            if (dialogDisconnect == null)
                             {
-                                windowRenderer.closeDialog(dialogQuit);
+                                disconnect();
                             }
-                        }
-                        else
-                        {
-                            windowRenderer.closeDialog(dialogDisconnect);
-                        }
-                    }
-                    else
-                    {
-                        if (dialogQuit == null)
-                        {
-                            quitApplication();
-                        }
-                        else if (windowRenderer.openDialog(dialogQuit))
-                        {
-                            if (dialogDisconnect != null)
+                            else if (windowRenderer.openDialog(dialogDisconnect))
+                            {
+                                if (dialogQuit != null)
+                                {
+                                    windowRenderer.closeDialog(dialogQuit);
+                                }
+                            }
+                            else
                             {
                                 windowRenderer.closeDialog(dialogDisconnect);
                             }
                         }
                         else
                         {
-                            windowRenderer.closeDialog(dialogQuit);
+                            if (dialogQuit == null)
+                            {
+                                quitApplication();
+                            }
+                            else if (windowRenderer.openDialog(dialogQuit))
+                            {
+                                if (dialogDisconnect != null)
+                                {
+                                    windowRenderer.closeDialog(dialogDisconnect);
+                                }
+                            }
+                            else
+                            {
+                                windowRenderer.closeDialog(dialogQuit);
+                            }
                         }
                     }
+                    else if (keybindingsManager.keyPressed(e.getKeyCode(), e.getModifiers()))
+                    {
+                        debugKeyboardWrite("keyPressed: keybindingsManager consumed key");
+                        // done
+                    }
+                    else
+                    {
+                        for (final Gui dialog : windowRenderer.getOpenDialogs())
+                        {
+                            if (!dialog.isHidden(windowRenderer.getGuiState()))
+                            {
+                                if (dialog.handleKeyPress(e))
+                                {
+                                    debugKeyboardWrite("keyPressed: dialog "+dialog+" consumed key");
+                                    return;
+                                }
+                                if (dialog.isModal())
+                                {
+                                    debugKeyboardWrite("keyPressed: dialog "+dialog+" is modal");
+                                    return;
+                                }
+                                debugKeyboardWrite("keyPressed: dialog "+dialog+" didn't consume key");
+                            }
+                        }
+                        if (windowRenderer.getCurrentGui().handleKeyPress(e))
+                        {
+                            debugKeyboardWrite("keyPressed: main gui "+windowRenderer.getCurrentGui()+" consumed key");
+                            return;
+                        }
+                        handleKeyPress(e);
+                    }
+                    break;
                 }
-                else if (keybindingsManager.keyPressed(e.getKeyCode(), e.getModifiers()))
+            }
+        }
+        finally
+        {
+            debugKeyboardWrite("");
+        }
+    }
+
+    public void keyReleased(final KeyEvent e)
+    {
+        debugKeyboardWrite("released", e);
+        try
+        {
+            synchronized (semaphoreDrawing)
+            {
+                updateModifiers(e);
+                switch (e.getKeyCode())
                 {
-                    // done
+                case KeyEvent.VK_ALT:
+                case KeyEvent.VK_ALT_GRAPH:
+                case KeyEvent.VK_SHIFT:
+                case KeyEvent.VK_CONTROL:
+                    debugKeyboardWrite("keyReleased: ignoring modifier key");
+                    break;
+
+                default:
+                    if (e.getKeyCode() == KeyEvent.VK_ESCAPE)
+                    {
+                        debugKeyboardWrite("keyReleased: ignoring ESC");
+                        // ignore
+                    }
+                    else if (keybindingsManager.keyReleased())
+                    {
+                        debugKeyboardWrite("keyReleased: keybindingsManager consumed key");
+                        windowRenderer.closeDialog(keybindDialog);
+                    }
+                    else
+                    {
+                        debugKeyboardWrite("keyReleased: ignoring key");
+                    }
+                    break;
+                }
+            }
+        }
+        finally
+        {
+            debugKeyboardWrite("");
+        }
+    }
+
+    public void keyTyped(final KeyEvent e)
+    {
+        debugKeyboardWrite("typed", e);
+        try
+        {
+            if (e.getKeyChar() == 27) // ignore ESC key
+            {
+                debugKeyboardWrite("keyTyped: ignoring ESC");
+                return;
+            }
+
+            synchronized (semaphoreDrawing)
+            {
+                if (keybindingsManager.keyTyped(e.getKeyChar()))
+                {
+                    debugKeyboardWrite("keyTyped: keybindingsManager consumed key");
+                    commandQueue.resetRepeatCount();
                 }
                 else
                 {
@@ -992,89 +1139,31 @@ public class JXCWindow extends JFrame implements KeyListener, CrossfireDrawextin
                     {
                         if (!dialog.isHidden(windowRenderer.getGuiState()))
                         {
-                            if (dialog.handleKeyPress(e))
+                            if (dialog.handleKeyTyped(e))
                             {
+                                debugKeyboardWrite("keyTyped: dialog "+dialog+" consumed key");
                                 return;
                             }
                             if (dialog.isModal())
                             {
+                                debugKeyboardWrite("keyTyped: dialog "+dialog+" is modal");
                                 return;
                             }
+                            debugKeyboardWrite("keyTyped: dialog "+dialog+" didn't consume key");
                         }
                     }
-                    if (windowRenderer.getCurrentGui().handleKeyPress(e))
+                    if (windowRenderer.getCurrentGui().handleKeyTyped(e))
                     {
+                        debugKeyboardWrite("keyTyped: main gui "+windowRenderer.getCurrentGui()+" consumed key");
                         return;
                     }
-                    handleKeyPress(e);
+                    handleKeyTyped(e);
                 }
-                break;
             }
         }
-    }
-
-    public void keyReleased(final KeyEvent e)
-    {
-        synchronized (semaphoreDrawing)
+        finally
         {
-            updateModifiers(e);
-            switch (e.getKeyCode())
-            {
-            case KeyEvent.VK_ALT:
-            case KeyEvent.VK_ALT_GRAPH:
-            case KeyEvent.VK_SHIFT:
-            case KeyEvent.VK_CONTROL:
-                break;
-
-            default:
-                if (e.getKeyCode() == KeyEvent.VK_ESCAPE)
-                {
-                    // ignore
-                }
-                else if (keybindingsManager.keyReleased())
-                {
-                    windowRenderer.closeDialog(keybindDialog);
-                }
-                break;
-            }
-        }
-    }
-
-    public void keyTyped(final KeyEvent e)
-    {
-        if (e.getKeyChar() == 27) // ignore ESC key
-        {
-            return;
-        }
-
-        synchronized (semaphoreDrawing)
-        {
-            if (keybindingsManager.keyTyped(e.getKeyChar()))
-            {
-                commandQueue.resetRepeatCount();
-            }
-            else
-            {
-                for (final Gui dialog : windowRenderer.getOpenDialogs())
-                {
-                    if (!dialog.isHidden(windowRenderer.getGuiState()))
-                    {
-                        if (dialog.handleKeyTyped(e))
-                        {
-                            return;
-                        }
-                        if (dialog.isModal())
-                        {
-                            return;
-                        }
-                    }
-                }
-                if (windowRenderer.getCurrentGui().handleKeyTyped(e))
-                {
-                    return;
-                }
-                handleKeyTyped(e);
-            }
+            debugKeyboardWrite("");
         }
     }
 
@@ -1092,7 +1181,10 @@ public class JXCWindow extends JFrame implements KeyListener, CrossfireDrawextin
         setKeyShift(KEY_SHIFT_ALTGR, (mask&InputEvent.ALT_GRAPH_DOWN_MASK) != 0);
         if (!getKeyShift(KEY_SHIFT_CTRL))
         {
-            commandQueue.stopRunning();
+            if (commandQueue.stopRunning())
+            {
+                debugKeyboardWrite("updateModifiers: stopping run");
+            }
         }
     }
 
@@ -1609,6 +1701,41 @@ public class JXCWindow extends JFrame implements KeyListener, CrossfireDrawextin
         else
         {
             setTitle(TITLE_PREFIX+" - "+hostname+" - "+character);
+        }
+    }
+
+    /**
+     * Writes a {@link KeyEvent} to the keyboard debug.
+     * @param type the event type
+     * @param e the key event to write
+     */
+    private void debugKeyboardWrite(final String type, final KeyEvent e)
+    {
+        if (debugKeyboard == null)
+        {
+            return;
+        }
+
+        debugKeyboardWrite(type+" "+e);
+    }
+
+    /**
+     * Writes a message to the keyboard debug.
+     * @param message the message to write
+     */
+    private void debugKeyboardWrite(final String message)
+    {
+        try
+        {
+            debugKeyboard.append(simpleDateFormat.format(new Date()));
+            debugKeyboard.append(message);
+            debugKeyboard.append("\n");
+        }
+        catch (final IOException ex)
+        {
+            System.err.println("Cannot write keyboard debug: "+ex.getMessage());
+            System.exit(1);
+            throw new AssertionError();
         }
     }
 }
