@@ -1725,6 +1725,11 @@ public class JXCWindow extends JFrame implements KeyListener, CrossfireDrawextin
      */
     private void debugKeyboardWrite(final String message)
     {
+        if (debugKeyboard == null)
+        {
+            return;
+        }
+
         try
         {
             debugKeyboard.append(simpleDateFormat.format(new Date()));
