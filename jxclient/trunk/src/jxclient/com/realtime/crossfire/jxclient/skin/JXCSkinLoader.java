@@ -1909,7 +1909,7 @@ public abstract class JXCSkinLoader implements JXCSkin
     {
         try
         {
-            return Integer.parseInt(str);
+            return parseIntegerConstant(str);
         }
         catch (final NumberFormatException ex)
         {
