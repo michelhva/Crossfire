@@ -3,158 +3,166 @@ name Bob's Bakery
 difficulty 15
 region darcap
 shopitems food:100;flesh:90;*:-100
-width 15
-height 15
+width 16
+height 16
 enter_x 12
-enter_y 8
+enter_y 13
 msg
-Created:  1999-02-15
-Modified: 2008-09-14 Rick Tanner
+Created:  2008-11-24 Rick Tanner
+Modified: 2008-11-24 Rick Tanner
 endmsg
 end
-arch woodfloor
+arch medium_stones
 end
-arch wwall_2_2_2
-end
-arch woodfloor
+arch medium_stones
 y 1
 end
-arch wwall_2_1_1
-y 1
-end
-arch woodfloor
+arch medium_stones
 y 2
 end
-arch wwall_2_1_1
-y 2
-end
-arch woodfloor
+arch medium_stones
 y 3
 end
-arch wwall_2_1_1
-y 3
-end
-arch woodfloor
+arch medium_stones
 y 4
 end
-arch wwall_2_1_1
-y 4
-end
-arch woodfloor
+arch medium_stones
 y 5
 end
-arch wwall_2_1_1
-y 5
-end
-arch woodfloor
+arch medium_stones
 y 6
 end
-arch wwall_2_1_1
-y 6
-end
-arch woodfloor
+arch medium_stones
 y 7
 end
-arch wwall_2_1_1
-y 7
-end
-arch woodfloor
+arch medium_stones
 y 8
 end
-arch wwall_2_1_1
-y 8
-end
-arch woodfloor
+arch medium_stones
 y 9
 end
-arch wwall_2_1_1
-y 9
-end
-arch woodfloor
+arch medium_stones
 y 10
 end
-arch wwall_2_1_1
-y 10
-end
-arch woodfloor
+arch medium_stones
 y 11
 end
-arch wwall_2_1_1
-y 11
-end
-arch woodfloor
+arch medium_stones
 y 12
 end
-arch wwall_2_1_1
-y 12
-end
-arch woodfloor
+arch medium_stones
 y 13
 end
-arch wwall_2_1_1
-y 13
-end
-arch woodfloor
+arch medium_stones
 y 14
 end
-arch wwall_2_2_1
-y 14
+arch medium_stones
+y 15
+end
+arch medium_stones
+x 1
 end
 arch woodfloor
-x 1
-end
-arch wwall_2_1_2
-x 1
-end
-arch shop_food
 x 1
 y 1
 end
-arch shop_food
+arch dwall_2_2_2
+x 1
+y 1
+end
+arch woodfloor
 x 1
 y 2
 end
-arch shop_empty
+arch dwall_2_1_1
+x 1
+y 2
+end
+arch woodfloor
 x 1
 y 3
 end
-arch shop_food
+arch dwall_win1
+x 1
+y 3
+end
+arch woodfloor
 x 1
 y 4
 end
-arch shop_food
+arch dwall_2_1_1
+x 1
+y 4
+end
+arch woodfloor
 x 1
 y 5
 end
-arch shop_empty
+arch dwall_2_1_1
+x 1
+y 5
+end
+arch woodfloor
 x 1
 y 6
 end
-arch shop_food
+arch dwall_win1
+x 1
+y 6
+end
+arch woodfloor
 x 1
 y 7
 end
-arch shop_food
+arch dwall_2_1_1
+x 1
+y 7
+end
+arch woodfloor
 x 1
 y 8
 end
-arch shop_empty
+arch dwall_2_1_1
+x 1
+y 8
+end
+arch woodfloor
 x 1
 y 9
 end
-arch shop_food
+arch dwall_2_1_1
+x 1
+y 9
+end
+arch woodfloor
 x 1
 y 10
 end
-arch shop_food
+arch dwall_2_1_1
+x 1
+y 10
+end
+arch woodfloor
 x 1
 y 11
 end
-arch shop_food
+arch dwall_2_1_1
+x 1
+y 11
+end
+arch woodfloor
 x 1
 y 12
 end
-arch shop_empty
+arch dwall_2_1_1
+x 1
+y 12
+end
+arch woodfloor
+x 1
+y 13
+end
+arch dwall_2_1_1
 x 1
 y 13
 end
@@ -162,17 +170,22 @@ arch woodfloor
 x 1
 y 14
 end
-arch wwall_2_1_2
+arch dwall_2_2_1
 x 1
 y 14
 end
+arch medium_stones
+x 1
+y 15
+end
+arch medium_stones
+x 2
+end
 arch woodfloor
 x 2
+y 1
 end
-arch wwall_2_1_2
-x 2
-end
-arch shop_food
+arch dwall_2_1_2
 x 2
 y 1
 end
@@ -180,11 +193,11 @@ arch shop_food
 x 2
 y 2
 end
-arch shop_empty
+arch shop_food
 x 2
 y 3
 end
-arch shop_food
+arch shop_empty
 x 2
 y 4
 end
@@ -192,11 +205,11 @@ arch shop_food
 x 2
 y 5
 end
-arch shop_empty
+arch shop_food
 x 2
 y 6
 end
-arch shop_food
+arch shop_empty
 x 2
 y 7
 end
@@ -204,11 +217,11 @@ arch shop_food
 x 2
 y 8
 end
-arch shop_empty
+arch shop_food
 x 2
 y 9
 end
-arch shop_food
+arch shop_empty
 x 2
 y 10
 end
@@ -220,7 +233,7 @@ arch shop_food
 x 2
 y 12
 end
-arch shop_empty
+arch shop_food
 x 2
 y 13
 end
@@ -228,17 +241,22 @@ arch woodfloor
 x 2
 y 14
 end
-arch wwall_2_1_2
+arch dwall_win2
 x 2
 y 14
 end
+arch medium_stones
+x 2
+y 15
+end
+arch medium_stones
+x 3
+end
 arch woodfloor
 x 3
+y 1
 end
-arch wwall_2_1_2
-x 3
-end
-arch shop_food
+arch dwall_2_1_2
 x 3
 y 1
 end
@@ -246,11 +264,11 @@ arch shop_food
 x 3
 y 2
 end
-arch shop_empty
+arch shop_food
 x 3
 y 3
 end
-arch shop_food
+arch shop_empty
 x 3
 y 4
 end
@@ -258,11 +276,11 @@ arch shop_food
 x 3
 y 5
 end
-arch shop_empty
+arch shop_food
 x 3
 y 6
 end
-arch shop_food
+arch shop_empty
 x 3
 y 7
 end
@@ -270,11 +288,11 @@ arch shop_food
 x 3
 y 8
 end
-arch shop_empty
+arch shop_food
 x 3
 y 9
 end
-arch shop_food
+arch shop_empty
 x 3
 y 10
 end
@@ -286,7 +304,7 @@ arch shop_food
 x 3
 y 12
 end
-arch shop_empty
+arch shop_food
 x 3
 y 13
 end
@@ -294,17 +312,22 @@ arch woodfloor
 x 3
 y 14
 end
-arch wwall_2_1_2
+arch dwall_2_1_2
 x 3
 y 14
 end
+arch medium_stones
+x 3
+y 15
+end
+arch medium_stones
+x 4
+end
 arch woodfloor
 x 4
+y 1
 end
-arch wwall_2_1_2
-x 4
-end
-arch shop_food
+arch dwall_2_1_2
 x 4
 y 1
 end
@@ -312,11 +335,11 @@ arch shop_food
 x 4
 y 2
 end
-arch shop_empty
+arch shop_food
 x 4
 y 3
 end
-arch shop_food
+arch shop_empty
 x 4
 y 4
 end
@@ -324,11 +347,11 @@ arch shop_food
 x 4
 y 5
 end
-arch shop_empty
+arch shop_food
 x 4
 y 6
 end
-arch shop_food
+arch shop_empty
 x 4
 y 7
 end
@@ -336,11 +359,11 @@ arch shop_food
 x 4
 y 8
 end
-arch shop_empty
+arch shop_food
 x 4
 y 9
 end
-arch shop_food
+arch shop_empty
 x 4
 y 10
 end
@@ -352,7 +375,7 @@ arch shop_food
 x 4
 y 12
 end
-arch shop_empty
+arch shop_food
 x 4
 y 13
 end
@@ -360,17 +383,22 @@ arch woodfloor
 x 4
 y 14
 end
-arch wwall_2_1_2
+arch dwall_2_1_2
 x 4
 y 14
 end
+arch medium_stones
+x 4
+y 15
+end
+arch medium_stones
+x 5
+end
 arch woodfloor
 x 5
+y 1
 end
-arch wwall_2_1_2
-x 5
-end
-arch shop_food
+arch dwall_2_1_2
 x 5
 y 1
 end
@@ -378,11 +406,11 @@ arch shop_food
 x 5
 y 2
 end
-arch shop_empty
+arch shop_food
 x 5
 y 3
 end
-arch shop_food
+arch shop_empty
 x 5
 y 4
 end
@@ -390,11 +418,11 @@ arch shop_food
 x 5
 y 5
 end
-arch shop_empty
+arch shop_food
 x 5
 y 6
 end
-arch shop_food
+arch shop_empty
 x 5
 y 7
 end
@@ -402,11 +430,11 @@ arch shop_food
 x 5
 y 8
 end
-arch shop_empty
+arch shop_food
 x 5
 y 9
 end
-arch shop_food
+arch shop_empty
 x 5
 y 10
 end
@@ -418,7 +446,7 @@ arch shop_food
 x 5
 y 12
 end
-arch shop_empty
+arch shop_food
 x 5
 y 13
 end
@@ -426,17 +454,22 @@ arch woodfloor
 x 5
 y 14
 end
-arch wwall_2_1_2
+arch dwall_2_1_2
 x 5
 y 14
 end
+arch medium_stones
+x 5
+y 15
+end
+arch medium_stones
+x 6
+end
 arch woodfloor
 x 6
+y 1
 end
-arch wwall_2_1_2
-x 6
-end
-arch shop_food
+arch dwall_2_1_2
 x 6
 y 1
 end
@@ -444,11 +477,11 @@ arch shop_food
 x 6
 y 2
 end
-arch shop_empty
+arch shop_food
 x 6
 y 3
 end
-arch shop_food
+arch shop_empty
 x 6
 y 4
 end
@@ -456,11 +489,11 @@ arch shop_food
 x 6
 y 5
 end
-arch shop_empty
+arch shop_food
 x 6
 y 6
 end
-arch shop_food
+arch shop_empty
 x 6
 y 7
 end
@@ -468,11 +501,11 @@ arch shop_food
 x 6
 y 8
 end
-arch shop_empty
+arch shop_food
 x 6
 y 9
 end
-arch shop_food
+arch shop_empty
 x 6
 y 10
 end
@@ -484,7 +517,7 @@ arch shop_food
 x 6
 y 12
 end
-arch shop_empty
+arch shop_food
 x 6
 y 13
 end
@@ -492,17 +525,22 @@ arch woodfloor
 x 6
 y 14
 end
-arch wwall_2_1_2
+arch dwall_win2
 x 6
 y 14
 end
+arch medium_stones
+x 6
+y 15
+end
+arch medium_stones
+x 7
+end
 arch woodfloor
 x 7
+y 1
 end
-arch wwall_2_1_2
-x 7
-end
-arch shop_food
+arch dwall_2_1_2
 x 7
 y 1
 end
@@ -510,11 +548,11 @@ arch shop_food
 x 7
 y 2
 end
-arch shop_empty
+arch shop_food
 x 7
 y 3
 end
-arch shop_food
+arch shop_empty
 x 7
 y 4
 end
@@ -522,11 +560,11 @@ arch shop_food
 x 7
 y 5
 end
-arch shop_empty
+arch shop_food
 x 7
 y 6
 end
-arch shop_food
+arch shop_empty
 x 7
 y 7
 end
@@ -534,11 +572,11 @@ arch shop_food
 x 7
 y 8
 end
-arch shop_empty
+arch shop_food
 x 7
 y 9
 end
-arch shop_food
+arch shop_empty
 x 7
 y 10
 end
@@ -550,7 +588,7 @@ arch shop_food
 x 7
 y 12
 end
-arch shop_empty
+arch shop_food
 x 7
 y 13
 end
@@ -558,17 +596,22 @@ arch woodfloor
 x 7
 y 14
 end
-arch wwall_2_1_2
+arch dwall_2_1_2
 x 7
 y 14
 end
+arch medium_stones
+x 7
+y 15
+end
+arch medium_stones
+x 8
+end
 arch woodfloor
 x 8
+y 1
 end
-arch wwall_2_1_2
-x 8
-end
-arch shop_food
+arch dwall_2_1_2
 x 8
 y 1
 end
@@ -576,11 +619,11 @@ arch shop_food
 x 8
 y 2
 end
-arch shop_empty
+arch shop_food
 x 8
 y 3
 end
-arch shop_food
+arch shop_empty
 x 8
 y 4
 end
@@ -588,11 +631,11 @@ arch shop_food
 x 8
 y 5
 end
-arch shop_empty
+arch shop_food
 x 8
 y 6
 end
-arch shop_food
+arch shop_empty
 x 8
 y 7
 end
@@ -600,11 +643,11 @@ arch shop_food
 x 8
 y 8
 end
-arch shop_empty
+arch shop_food
 x 8
 y 9
 end
-arch shop_food
+arch shop_empty
 x 8
 y 10
 end
@@ -616,7 +659,7 @@ arch shop_food
 x 8
 y 12
 end
-arch shop_empty
+arch shop_food
 x 8
 y 13
 end
@@ -624,17 +667,22 @@ arch woodfloor
 x 8
 y 14
 end
-arch wwall_2_1_2
+arch dwall_2_1_2
 x 8
 y 14
 end
+arch medium_stones
+x 8
+y 15
+end
+arch medium_stones
+x 9
+end
 arch woodfloor
 x 9
+y 1
 end
-arch wwall_2_1_2
-x 9
-end
-arch shop_food
+arch dwall_2_1_2
 x 9
 y 1
 end
@@ -642,11 +690,11 @@ arch shop_food
 x 9
 y 2
 end
-arch shop_empty
+arch shop_food
 x 9
 y 3
 end
-arch shop_food
+arch shop_empty
 x 9
 y 4
 end
@@ -654,11 +702,11 @@ arch shop_food
 x 9
 y 5
 end
-arch shop_empty
+arch shop_food
 x 9
 y 6
 end
-arch shop_food
+arch shop_empty
 x 9
 y 7
 end
@@ -666,11 +714,11 @@ arch shop_food
 x 9
 y 8
 end
-arch shop_empty
+arch shop_food
 x 9
 y 9
 end
-arch shop_food
+arch shop_empty
 x 9
 y 10
 end
@@ -678,11 +726,11 @@ arch shop_food
 x 9
 y 11
 end
-arch shop_empty
+arch shop_food
 x 9
 y 12
 end
-arch shop_empty
+arch shop_food
 x 9
 y 13
 end
@@ -690,25 +738,30 @@ arch woodfloor
 x 9
 y 14
 end
-arch wwall_2_1_2
+arch dwall_2_1_2
 x 9
 y 14
 end
+arch medium_stones
+x 9
+y 15
+end
+arch medium_stones
+x 10
+end
 arch woodfloor
-x 10
-end
-arch wwall_2_1_2
-x 10
-end
-arch shop_empty
 x 10
 y 1
 end
-arch shop_empty
+arch dwall_2_1_2
+x 10
+y 1
+end
+arch shop_food
 x 10
 y 2
 end
-arch shop_empty
+arch shop_food
 x 10
 y 3
 end
@@ -716,11 +769,11 @@ arch shop_empty
 x 10
 y 4
 end
-arch shop_empty
+arch shop_food
 x 10
 y 5
 end
-arch shop_empty
+arch shop_food
 x 10
 y 6
 end
@@ -728,17 +781,282 @@ arch shop_empty
 x 10
 y 7
 end
-arch shop_empty
+arch shop_food
 x 10
 y 8
 end
-arch shop_empty
+arch shop_food
 x 10
 y 9
 end
 arch shop_empty
 x 10
 y 10
+end
+arch shop_empty
+x 10
+y 11
+end
+arch woodfloor
+x 10
+y 12
+end
+arch shop_empty
+x 10
+y 12
+end
+arch shop_mat
+x 10
+y 12
+end
+arch shop_empty
+x 10
+y 13
+end
+arch woodfloor
+x 10
+y 14
+end
+arch dwall_win2
+x 10
+y 14
+end
+arch medium_stones
+x 10
+y 15
+end
+arch medium_stones
+x 11
+end
+arch woodfloor
+x 11
+y 1
+end
+arch dwall_2_1_2
+x 11
+y 1
+end
+arch shop_food
+x 11
+y 2
+end
+arch shop_food
+x 11
+y 3
+end
+arch shop_empty
+x 11
+y 4
+end
+arch shop_food
+x 11
+y 5
+end
+arch shop_food
+x 11
+y 6
+end
+arch shop_empty
+x 11
+y 7
+end
+arch shop_food
+x 11
+y 8
+end
+arch shop_food
+x 11
+y 9
+end
+arch woodfloor
+x 11
+y 10
+end
+arch swall_2_2_2
+x 11
+y 10
+end
+arch woodfloor
+x 11
+y 11
+end
+arch swall_2_1_1
+x 11
+y 11
+end
+arch woodfloor
+x 11
+y 12
+end
+arch swall_2_1_1
+x 11
+y 12
+end
+arch woodfloor
+x 11
+y 13
+end
+arch swall_2_1_1
+x 11
+y 13
+end
+arch woodfloor
+x 11
+y 14
+end
+arch swall_1_2_half
+x 11
+y 14
+end
+arch dwall_1_3
+x 11
+y 14
+end
+arch medium_stones
+x 11
+y 15
+end
+arch medium_stones
+x 12
+end
+arch woodfloor
+x 12
+y 1
+end
+arch dwall_2_1_2
+x 12
+y 1
+end
+arch shop_food
+x 12
+y 2
+end
+arch shop_food
+x 12
+y 3
+end
+arch shop_empty
+x 12
+y 4
+end
+arch shop_food
+x 12
+y 5
+end
+arch shop_food
+x 12
+y 6
+end
+arch shop_empty
+x 12
+y 7
+end
+arch shop_food
+x 12
+y 8
+end
+arch shop_food
+x 12
+y 9
+end
+arch woodfloor
+x 12
+y 10
+end
+arch swall_2_1_2
+x 12
+y 10
+end
+arch woodfloor
+x 12
+y 11
+end
+arch woodfloor
+x 12
+y 12
+end
+arch shop_mat
+x 12
+y 12
+end
+arch woodfloor
+x 12
+y 13
+end
+arch woodfloor
+x 12
+y 14
+end
+arch exit
+slaying /world/world_116_104
+hp 16
+sp 21
+x 12
+y 14
+invisible 1
+end
+arch odoor_2_fant_brown
+x 12
+y 14
+end
+arch medium_stones
+x 12
+y 15
+end
+arch medium_stones
+x 13
+end
+arch woodfloor
+x 13
+y 1
+end
+arch dwall_2_1_2
+x 13
+y 1
+end
+arch shop_food
+x 13
+y 2
+end
+arch shop_food
+x 13
+y 3
+end
+arch shop_empty
+x 13
+y 4
+end
+arch shop_food
+x 13
+y 5
+end
+arch shop_food
+x 13
+y 6
+end
+arch shop_empty
+x 13
+y 7
+end
+arch shop_food
+x 13
+y 8
+end
+arch shop_food
+x 13
+y 9
+end
+arch woodfloor
+x 13
+y 10
+end
+arch swall_2_1_2
+x 13
+y 10
+end
+arch woodfloor
+x 13
+y 11
 end
 arch man
 name Bob
@@ -757,484 +1075,218 @@ something or leave. I'm busy.
 @match *
 Sorry, I don't understand you
 endmsg
-x 10
-y 10
+x 13
+y 11
 pick_up 0
 monster 0
 end
-arch shop_empty
-x 10
-y 11
-end
-arch shop_empty
-x 10
+arch woodfloor
+x 13
 y 12
+end
+arch woodfloor
+x 13
+y 13
 end
 arch menu
-x 10
-y 12
-end
-arch shop_empty
-x 10
-y 13
-end
-arch shop_mat
-x 10
-y 13
-end
-arch woodfloor
-x 10
-y 14
-end
-arch wwall_2_1_2
-x 10
-y 14
-end
-arch woodfloor
-x 11
-end
-arch wwall_2_2_3
-x 11
-end
-arch woodfloor
-x 11
-y 1
-end
-arch wwall_2_1_1
-x 11
-y 1
-end
-arch woodfloor
-x 11
-y 2
-end
-arch wwall_2_1_1
-x 11
-y 2
-end
-arch woodfloor
-x 11
-y 3
-end
-arch wwall_2_1_1
-x 11
-y 3
-end
-arch woodfloor
-x 11
-y 4
-end
-arch wwall_2_1_1
-x 11
-y 4
-end
-arch woodfloor
-x 11
-y 5
-end
-arch wwall_2_1_1
-x 11
-y 5
-end
-arch woodfloor
-x 11
-y 6
-end
-arch wwall_2_1_1
-x 11
-y 6
-end
-arch woodfloor
-x 11
-y 7
-end
-arch wwall_2_1_1
-x 11
-y 7
-end
-arch woodfloor
-x 11
-y 8
-end
-arch wwall_2_1_1
-x 11
-y 8
-end
-arch woodfloor
-x 11
-y 9
-end
-arch wwall_2_1_1
-x 11
-y 9
-end
-arch woodfloor
-x 11
-y 10
-end
-arch wwall_2_1_1
-x 11
-y 10
-end
-arch woodfloor
-x 11
-y 11
-end
-arch wwall_2_1_1
-x 11
-y 11
-end
-arch woodfloor
-x 11
-y 12
-end
-arch wwall_2_1_1
-x 11
-y 12
-end
-arch woodfloor
-x 11
-y 13
-end
-arch wwall_2_1_1
-x 11
-y 13
-end
-arch woodfloor
-x 11
-y 14
-end
-arch wwall_2_2_4
-x 11
-y 14
-end
-arch exit
-slaying /world/world_116_104
-hp 16
-sp 22
-x 12
-invisible 1
-end
-arch cobblestones2
-x 12
-end
-arch cobblestones2
-x 12
-y 1
-end
-arch cobblestones2
-x 12
-y 2
-end
-arch cobblestones2
-x 12
-y 3
-end
-arch cobblestones2
-x 12
-y 4
-end
-arch cobblestones2
-x 12
-y 5
-end
-arch cobblestones2
-x 12
-y 6
-end
-arch cobblestones2
-x 12
-y 7
-end
-arch cobblestones2
-x 12
-y 8
-end
-arch cobblestones2
-x 12
-y 9
-end
-arch cobblestones2
-x 12
-y 10
-end
-arch cobblestones2
-x 12
-y 11
-end
-arch shop_mat
-x 12
-y 11
-end
-arch cobblestones2
-x 12
-y 12
-end
-arch cobblestones2
-x 12
-y 13
-end
-arch exit
-slaying /world/world_116_104
-hp 16
-sp 22
-x 12
-y 14
-invisible 1
-end
-arch cobblestones2
-x 12
-y 14
-end
-arch exit
-slaying /world/world_116_104
-hp 16
-sp 22
-x 13
-invisible 1
-end
-arch cobblestones2
-x 13
-end
-arch cobblestones2
-x 13
-y 1
-end
-arch cobblestones2
-x 13
-y 2
-end
-arch cobblestones2
-x 13
-y 3
-end
-arch cobblestones2
-x 13
-y 4
-end
-arch cobblestones2
-x 13
-y 5
-end
-arch cobblestones2
-x 13
-y 6
-end
-arch cobblestones2
-x 13
-y 7
-end
-arch cobblestones2
-x 13
-y 8
-end
-arch cobblestones2
-x 13
-y 9
-end
-arch cobblestones2
-x 13
-y 10
-end
-arch cobblestones2
-x 13
-y 11
-end
-arch cobblestones2
-x 13
-y 12
-end
-arch cobblestones2
 x 13
 y 13
 end
-arch exit
-slaying /world/world_116_104
-hp 16
-sp 22
-x 13
-y 14
-invisible 1
-end
-arch cobblestones2
+arch woodfloor
 x 13
 y 14
 end
-arch exit
-slaying /world/world_116_104
-hp 16
-sp 22
-x 14
-invisible 1
+arch dwall_1_4
+x 13
+y 14
 end
-arch cobblestones2
+arch medium_stones
+x 13
+y 15
+end
+arch medium_stones
 x 14
 end
-arch exit
-slaying /world/world_116_104
-hp 16
-sp 22
-x 14
-y 1
-invisible 1
-end
-arch cobblestones2
+arch woodfloor
 x 14
 y 1
 end
-arch exit
-slaying /world/world_116_104
-hp 16
-sp 22
+arch dwall_2_2_3
 x 14
-y 2
-invisible 1
+y 1
 end
-arch cobblestones2
+arch woodfloor
 x 14
 y 2
 end
-arch exit
-slaying /world/world_116_104
-hp 16
-sp 22
+arch dwall_2_1_1
 x 14
-y 3
-invisible 1
+y 2
 end
-arch cobblestones2
+arch woodfloor
 x 14
 y 3
 end
-arch exit
-slaying /world/world_116_104
-hp 16
-sp 22
+arch dwall_2_1_1
 x 14
-y 4
-invisible 1
+y 3
 end
-arch cobblestones2
+arch woodfloor
 x 14
 y 4
 end
-arch exit
-slaying /world/world_116_104
-hp 16
-sp 22
+arch dwall_2_1_1
 x 14
-y 5
-invisible 1
+y 4
 end
-arch cobblestones2
+arch woodfloor
 x 14
 y 5
 end
-arch exit
-slaying /world/world_116_104
-hp 16
-sp 22
+arch dwall_win1
 x 14
-y 6
-invisible 1
+y 5
 end
-arch cobblestones2
+arch woodfloor
 x 14
 y 6
 end
-arch exit
-slaying /world/world_116_104
-hp 16
-sp 22
+arch dwall_2_1_1
 x 14
-y 7
-invisible 1
+y 6
 end
-arch cobblestones2
+arch woodfloor
 x 14
 y 7
 end
-arch exit
-slaying /world/world_116_104
-hp 16
-sp 22
+arch dwall_2_1_1
 x 14
-y 8
-invisible 1
+y 7
 end
-arch cobblestones2
+arch woodfloor
 x 14
 y 8
 end
-arch exit
-slaying /world/world_116_104
-hp 16
-sp 22
+arch dwall_2_1_1
 x 14
-y 9
-invisible 1
+y 8
 end
-arch cobblestones2
+arch woodfloor
 x 14
 y 9
 end
-arch exit
-slaying /world/world_116_104
-hp 16
-sp 22
+arch dwall_win1
 x 14
-y 10
-invisible 1
+y 9
 end
-arch cobblestones2
+arch woodfloor
 x 14
 y 10
 end
-arch exit
-slaying /world/world_116_104
-hp 16
-sp 22
+arch swall_1_3_half
+x 14
+y 10
+end
+arch dwall_2_1_1
+x 14
+y 10
+end
+arch woodfloor
 x 14
 y 11
-invisible 1
 end
-arch cobblestones2
+arch dwall_2_1_1
 x 14
 y 11
 end
-arch exit
-slaying /world/world_116_104
-hp 16
-sp 22
-x 14
-y 12
-invisible 1
-end
-arch cobblestones2
+arch woodfloor
 x 14
 y 12
 end
-arch exit
-slaying /world/world_116_104
-hp 16
-sp 22
+arch dwall_2_1_1
 x 14
-y 13
-invisible 1
+y 12
 end
-arch cobblestones2
+arch woodfloor
 x 14
 y 13
 end
-arch exit
-slaying /world/world_116_104
-hp 16
-sp 22
+arch dwall_2_1_1
 x 14
-y 14
-invisible 1
+y 13
 end
-arch cobblestones2
+arch woodfloor
 x 14
 y 14
+end
+arch dwall_2_2_4
+x 14
+y 14
+end
+arch medium_stones
+x 14
+y 15
+end
+arch medium_stones
+x 15
+end
+arch medium_stones
+x 15
+y 1
+end
+arch medium_stones
+x 15
+y 2
+end
+arch medium_stones
+x 15
+y 3
+end
+arch medium_stones
+x 15
+y 4
+end
+arch medium_stones
+x 15
+y 5
+end
+arch medium_stones
+x 15
+y 6
+end
+arch medium_stones
+x 15
+y 7
+end
+arch medium_stones
+x 15
+y 8
+end
+arch medium_stones
+x 15
+y 9
+end
+arch medium_stones
+x 15
+y 10
+end
+arch medium_stones
+x 15
+y 11
+end
+arch medium_stones
+x 15
+y 12
+end
+arch medium_stones
+x 15
+y 13
+end
+arch medium_stones
+x 15
+y 14
+end
+arch medium_stones
+x 15
+y 15
 end
