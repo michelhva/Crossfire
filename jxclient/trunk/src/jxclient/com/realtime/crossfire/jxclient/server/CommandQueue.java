@@ -197,14 +197,17 @@ public class CommandQueue
     /**
      * Tell the server to stop running. If the character is not running, do
      * nothing.
+     * @return whether running was active
      */
-    public void stopRunning()
+    public boolean stopRunning()
     {
-        if (isRunning)
+        final boolean result = isRunning;
+        if (result)
         {
             sendNcom(true, 0, "run_stop");
             assert !isRunning;
         }
+        return result;
     }
 
     /**

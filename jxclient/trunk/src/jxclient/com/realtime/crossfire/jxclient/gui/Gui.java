@@ -849,4 +849,11 @@ public class Gui
     {
         this.forcedActive = forcedActive;
     }
+
+    /** {@inheritDoc} */
+    @Override
+    public String toString()
+    {
+        return (name == null ? "" : name)+"["+w+"x"+h+"]";
+    }
 }
