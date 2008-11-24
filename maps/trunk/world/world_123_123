@@ -9,7 +9,7 @@ enter_x 1
 enter_y 1
 msg
 Created:  2005-02-26
-Modified: 2008-10-30 Rick Tanner
+Modified: 2008-11-23 Rick Tanner
 endmsg
 outdoor 1
 tile_path_1 world_123_122
@@ -689,9 +689,9 @@ elevation 233
 end
 arch bungalow
 name Fisherman's House
-slaying /whalingoutpost/houses/fishershouse1
-hp 16
-sp 22
+slaying ../whalingoutpost/houses/fisherhouseswest
+hp 2
+sp 6
 x 2
 y 37
 end
@@ -968,9 +968,9 @@ elevation 26
 end
 arch bungalow
 name Fisherman's House
-slaying /whalingoutpost/houses/fishershouse1
-hp 27
-sp 9
+slaying ../whalingoutpost/houses/fisherhousesouthwest
+hp 2
+sp 6
 x 3
 y 39
 end
@@ -1226,9 +1226,9 @@ elevation 1744
 end
 arch bungalow
 name Fisherman's House
-slaying /whalingoutpost/houses/fishershouse1
-hp 16
-sp 9
+slaying ../whalingoutpost/houses/fisherhousenorth
+hp 2
+sp 6
 x 4
 y 36
 end
@@ -1515,9 +1515,9 @@ elevation 3021
 end
 arch bungalow
 name Fisherman's House
-slaying /whalingoutpost/houses/fishershouse1
-hp 4
-sp 22
+slaying ../whalingoutpost/houses/fisherhousesouth
+hp 2
+sp 6
 x 5
 y 40
 end
@@ -1766,9 +1766,9 @@ elevation 2558
 end
 arch bungalow
 name Fisherman's House
-slaying /whalingoutpost/houses/fishershouse1
-hp 4
-sp 9
+slaying ../whalingoutpost/houses/fisherhouseeast
+hp 1
+sp 6
 x 6
 y 38
 end
