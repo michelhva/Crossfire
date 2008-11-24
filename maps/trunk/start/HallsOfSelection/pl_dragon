@@ -1499,7 +1499,7 @@ y 17
 connected 1
 activate_on_push 1
 arch event_trigger
-name 2
+name fire
 title Python
 slaying /python/start/dragon_attune.py
 end
@@ -1533,7 +1533,7 @@ y 19
 connected 3
 activate_on_push 1
 arch event_trigger
-name 3
+name electricity
 title Python
 slaying /python/start/dragon_attune.py
 end
@@ -3110,7 +3110,7 @@ y 17
 connected 2
 activate_on_push 1
 arch event_trigger
-name 4
+name cold
 title Python
 slaying /python/start/dragon_attune.py
 end
@@ -3144,7 +3144,7 @@ y 19
 connected 4
 activate_on_push 1
 arch event_trigger
-name 10
+name poison
 title Python
 slaying /python/start/dragon_attune.py
 end
@@ -3855,6 +3855,7 @@ end
 arch sea1
 x 11
 y 18
+move_block all
 end
 arch pstone_2
 x 11
@@ -3867,6 +3868,7 @@ end
 arch sea1
 x 11
 y 19
+move_block all
 end
 arch pstone_2
 x 11
@@ -3879,6 +3881,7 @@ end
 arch sea1
 x 11
 y 20
+move_block all
 end
 arch pstone_2
 x 11
@@ -3891,10 +3894,12 @@ end
 arch sea1
 x 11
 y 21
+move_block all
 end
 arch pstone_2
 x 11
 y 22
+move_block all
 end
 arch dungeon_magic
 x 11
@@ -4166,14 +4171,17 @@ end
 arch sea1
 x 12
 y 19
+move_block all
 end
 arch sea1
 x 12
 y 20
+move_block all
 end
 arch sea1
 x 12
 y 21
+move_block all
 end
 arch sea1
 x 12
