@@ -1,3 +1,50 @@
+2008-11-24 07:02  rjtanner
+
+	* darcap/town2/netower, darcap/town2/nwtower, darcap/town2/setower,
+	  darcap/town2/swtower, whalingoutpost/houses/fisherhouseeast,
+	  whalingoutpost/houses/fisherhousenorth,
+	  whalingoutpost/houses/fisherhousesouth,
+	  whalingoutpost/houses/fisherhousesouthwest,
+	  whalingoutpost/houses/fisherhouseswest: Update maps with x & y
+	  entrance coordinates and difficulty level
+
+2008-11-24 06:52  rjtanner
+
+	* darcap/town2/shop_f, world/world_116_104: Redesign Bob's Bakery
+	  in darcap/town2
+
+2008-11-24 06:27  rjtanner
+
+	* darcap/town2/netower, darcap/town2/nwtower, darcap/town2/setower,
+	  darcap/town2/swtower, darcap/town2/towers, world/world_116_104:
+	  Redesign of sages tower in darcap/town2 to make them individual
+	  maps
+
+2008-11-24 06:08  lalo
+
+	* python/start, python/start/dragon_attune.py,
+	  start/HallsOfSelection/pl_dragon: giving starting player dragons
+	  a slightly less short stick by letting them choose a metabolism
+	  focus
+
+2008-11-24 05:39  rjtanner
+
+	* whalingoutpost/houses/fisherhouseeast,
+	  whalingoutpost/houses/fisherhousenorth,
+	  whalingoutpost/houses/fisherhousesouth,
+	  whalingoutpost/houses/fisherhousesouthwest,
+	  whalingoutpost/houses/fisherhouseswest,
+	  whalingoutpost/houses/fishershouse1, world/world_123_123:
+	  Redesign of fisherhouses to make them individual maps
+
+2008-11-23 15:55  akirschbaum
+
+	* start/HallsOfSelection/wraith_player: Fix incorrect face name.
+
+2008-11-22 02:04  rjtanner
+
+	* ChangeLog: Updated ChangeLog file using svn2cl
+
 2008-11-22 01:49  rjtanner
 
 	* dragonisland/advguild3: Restore resist_physical 30 stat to the

@@ -1,3 +1,12 @@
+2008-11-24 07:09  rjtanner
+
+	* start/HallsOfSelection/wraith_player: Backport from trunk, fix
+	  incorrect face name (locked.111 -> blocked.111)
+
+2008-11-23 07:28  rjtanner
+
+	* ChangeLog: Updated ChangeLog file using svn2cl
+
 2008-11-23 07:20  rjtanner
 
 	* world/world_104_115: Backport from trunk, remove no longer used
