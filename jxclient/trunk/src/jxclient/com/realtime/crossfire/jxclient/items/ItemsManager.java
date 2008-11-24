@@ -86,6 +86,11 @@ public class ItemsManager
     private final EventListenerList playerListeners = new EventListenerList();
 
     /**
+     * The synchronization object for XXX.
+     */
+    private final Object sync = new Object();
+
+    /**
      * The current player object this client controls.
      */
     private CfPlayer player = null;
@@ -161,24 +166,27 @@ public class ItemsManager
     /**
      * Reset the manager's state.
      */
-    public synchronized void reset()
+    public void reset()
     {
-        if (player != null)
+        synchronized (sync)
         {
-            cleanInventory(player.getTag());
+            if (player != null)
+            {
+                cleanInventory(player.getTag());
+            }
+            cleanInventory(currentFloorManager.getCurrentFloor());
+            final Set<CfItem> tmp = new HashSet<CfItem>(allItems.values());
+            for (final CfItem item : tmp)
+            {
+                removeItem(item);
+            }
+            assert items.isEmpty();
+            fireEvents();
+            currentFloorManager.setCurrentFloor(0);
+            floorManager.reset();
+            inventoryManager.reset();
+            setPlayer(null);
         }
-        cleanInventory(currentFloorManager.getCurrentFloor());
-        final Set<CfItem> tmp = new HashSet<CfItem>(allItems.values());
-        for (final CfItem item : tmp)
-        {
-            removeItem(item);
-        }
-        assert items.isEmpty();
-        fireEvents();
-        currentFloorManager.setCurrentFloor(0);
-        floorManager.reset();
-        inventoryManager.reset();
-        setPlayer(null);
     }
 
     /**
@@ -189,14 +197,17 @@ public class ItemsManager
      *
      * @return the list of items
      */
-    public synchronized List<CfItem> getItems(final int location)
+    public List<CfItem> getItems(final int location)
     {
-        final List<CfItem> result = items.get(location);
+        final List<CfItem> result;
+        synchronized (sync)
+        {
+            result = items.get(location);
+        }
         if (result == null)
         {
             return Collections.emptyList();
         }
-
         return new ArrayList<CfItem>(result);
     }
 
@@ -208,9 +219,13 @@ public class ItemsManager
      *
      * @return The number of items.
      */
-    public synchronized int getNumberOfItems(final int location)
+    public int getNumberOfItems(final int location)
     {
-        final List<CfItem> result = items.get(location);
+        final List<CfItem> result;
+        synchronized (sync)
+        {
+            result = items.get(location);
+        }
         return result == null ? 0 : result.size();
     }
 
@@ -221,14 +236,17 @@ public class ItemsManager
      *
      * @return The item or <code>null</code> if no such item exists.
      */
-    public synchronized CfItem getItemOrPlayer(final int tag)
+    public CfItem getItemOrPlayer(final int tag)
     {
-        if (player != null && player.getTag() == tag)
+        synchronized (sync)
         {
-            return player;
-        }
+            if (player != null && player.getTag() == tag)
+            {
+                return player;
+            }
 
-        return getItem(tag);
+            return getItem(tag);
+        }
     }
 
     /**
@@ -238,9 +256,12 @@ public class ItemsManager
      *
      * @return the item or <code>null</code> if no such items exists
      */
-    public synchronized CfItem getItem(final int tag)
+    public CfItem getItem(final int tag)
     {
-        return allItems.get(tag);
+        synchronized (sync)
+        {
+            return allItems.get(tag);
+        }
     }
 
     /**
@@ -276,16 +297,18 @@ public class ItemsManager
      *
      * @param tag the tag of the item to delete
      */
-    public synchronized void removeItem(final int tag)
+    public void removeItem(final int tag)
     {
-        final CfItem item = allItems.remove(tag);
-        if (item == null)
+        synchronized (sync)
         {
-            System.err.println("removeItem: item "+tag+" does not exist");
-            return;
+            final CfItem item = allItems.remove(tag);
+            if (item != null)
+            {
+                removeItemFromLocation(item);
+                return;
+            }
         }
-
-        removeItemFromLocation(item);
+        System.err.println("removeItem: item "+tag+" does not exist");
     }
 
     /**
@@ -293,19 +316,22 @@ public class ItemsManager
      *
      * @param item the item to delete
      */
-    public synchronized void removeItem(final CfItem item)
+    public void removeItem(final CfItem item)
     {
-        final CfItem deletedItem = allItems.remove(item.getTag());
-        if (deletedItem == null)
+        synchronized (sync)
         {
-            throw new AssertionError("cannot find item "+item.getTag());
-        }
-        if (deletedItem != item)
-        {
-            throw new AssertionError("deleted wrong item "+item.getTag());
-        }
+            final CfItem deletedItem = allItems.remove(item.getTag());
+            if (deletedItem == null)
+            {
+                throw new AssertionError("cannot find item "+item.getTag());
+            }
+            if (deletedItem != item)
+            {
+                throw new AssertionError("deleted wrong item "+item.getTag());
+            }
 
-        removeItemFromLocation(item);
+            removeItemFromLocation(item);
+        }
     }
 
     /**
@@ -313,21 +339,24 @@ public class ItemsManager
      *
      * @param item the item to add
      */
-    private synchronized void addItem(final CfItem item)
+    private void addItem(final CfItem item)
     {
-        final CfItem oldItem = allItems.get(item.getTag());
-        if (oldItem != null)
+        synchronized (sync)
         {
-            System.err.println("addItem: duplicate item "+item.getTag());
-            removeItem(oldItem);
-        }
+            final CfItem oldItem = allItems.get(item.getTag());
+            if (oldItem != null)
+            {
+                System.err.println("addItem: duplicate item "+item.getTag());
+                removeItem(oldItem);
+            }
 
-        if (allItems.put(item.getTag(), item) != null)
-        {
-            throw new AssertionError("duplicate item "+item.getTag());
-        }
+            if (allItems.put(item.getTag(), item) != null)
+            {
+                throw new AssertionError("duplicate item "+item.getTag());
+            }
 
-        addItemToLocation(item);
+            addItemToLocation(item);
+        }
     }
 
     /**
@@ -337,16 +366,19 @@ public class ItemsManager
      *
      * @param newLocation The location to move to.
      */
-    public synchronized void moveItem(final CfItem item, final int newLocation)
+    public void moveItem(final CfItem item, final int newLocation)
     {
-        if (allItems.get(item.getTag()) != item)
+        synchronized (sync)
         {
-            throw new AssertionError("invalid item "+item.getTag());
-        }
+            if (allItems.get(item.getTag()) != item)
+            {
+                throw new AssertionError("invalid item "+item.getTag());
+            }
 
-        removeItemFromLocation(item);
-        item.setLocation(newLocation);
-        addItemToLocation(item);
+            removeItemFromLocation(item);
+            item.setLocation(newLocation);
+            addItemToLocation(item);
+        }
     }
 
     /**
@@ -438,7 +470,7 @@ public class ItemsManager
     {
         floorManager.fireEvents(getItems(currentFloorManager.getCurrentFloor()));
         final List<CfItem> newItems;
-        synchronized (this)
+        synchronized (sync)
         {
             newItems = player != null ? getItems(player.getTag()) : null;
         }
@@ -453,36 +485,39 @@ public class ItemsManager
      *
      * @param player the new player object
      */
-    private synchronized void setPlayer(final CfPlayer player)
+    private void setPlayer(final CfPlayer player)
     {
-        if (this.player == player)
+        synchronized (sync)
         {
+            if (this.player == player)
+            {
+                if (this.player != null)
+                {
+                    for (final PlayerListener listener : playerListeners.getListeners(PlayerListener.class))
+                    {
+                        listener.playerReceived(this.player);
+                    }
+                }
+                return;
+            }
+
             if (this.player != null)
             {
+                inventoryManager.addModified(items.get(this.player.getTag()));
                 for (final PlayerListener listener : playerListeners.getListeners(PlayerListener.class))
                 {
-                    listener.playerReceived(this.player);
+                    listener.playerRemoved(this.player);
                 }
             }
-            return;
-        }
-
-        if (this.player != null)
-        {
-            inventoryManager.addModified(items.get(this.player.getTag()));
-            for (final PlayerListener listener : playerListeners.getListeners(PlayerListener.class))
+            this.player = player;
+            if (this.player != null)
             {
-                listener.playerRemoved(this.player);
-            }
-        }
-        this.player = player;
-        if (this.player != null)
-        {
-            inventoryManager.addModified(items.get(this.player.getTag()));
-            for (final PlayerListener listener : playerListeners.getListeners(PlayerListener.class))
-            {
-                listener.playerAdded(this.player);
-                listener.playerReceived(this.player);
+                inventoryManager.addModified(items.get(this.player.getTag()));
+                for (final PlayerListener listener : playerListeners.getListeners(PlayerListener.class))
+                {
+                    listener.playerAdded(this.player);
+                    listener.playerReceived(this.player);
+                }
             }
         }
     }
@@ -492,9 +527,12 @@ public class ItemsManager
      *
      * @return the player object
      */
-    public synchronized CfPlayer getPlayer()
+    public CfPlayer getPlayer()
     {
-        return player;
+        synchronized (sync)
+        {
+            return player;
+        }
     }
 
     /**
