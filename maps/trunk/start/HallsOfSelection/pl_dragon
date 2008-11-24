@@ -1,14 +1,14 @@
 arch map
-name Hall Of Selection, Fire Hatchling
+name Hall Of Selection, Hatchlings
 difficulty 1
 region creation
 width 15
-height 35
+height 40
 enter_x 7
 enter_y 5
 msg
 Created:  2005-12-25 Pippijn van Steenhoven (pip88nl@gmail.com)
-Modified: 2008-10-20 Rick Tanner
+Modified: 2008-11-24 lalo
 endmsg
 end
 arch blocked
@@ -55,41 +55,38 @@ end
 arch blocked
 y 14
 end
-arch pstone_2
-y 16
-end
 arch cave15
-y 16
+y 23
 end
 arch pstone_2
-y 17
+y 24
 end
 arch cave3
-y 17
-end
-arch pstone_2
-y 18
-end
-arch cave23
-y 18
+y 24
 end
 arch pstone_2
 y 25
+end
+arch cave23
+y 25
+end
+arch pstone_2
+y 32
 end
 arch cave18
-y 25
+y 32
 end
 arch pstone_2
-y 26
+y 33
 end
 arch cave3
-y 26
+y 33
 end
 arch pstone_2
-y 27
+y 34
 end
 arch cave23
-y 27
+y 34
 end
 arch permanent_lava
 x 1
@@ -159,75 +156,86 @@ arch blocked
 x 1
 y 13
 end
+arch mountain
+x 1
+y 13
+blocksview 0
+end
 arch blocked
 x 1
 y 14
 end
-arch pstone_2
+arch mountain
 x 1
-y 15
-end
-arch cave6
-x 1
-y 15
-end
-arch pstone_2
-x 1
-y 16
-end
-arch cave8
-x 1
-y 16
-end
-arch pstone_2
-x 1
-y 17
-end
-arch pstone_2
-x 1
-y 18
+y 14
+blocksview 0
 end
 arch cave16
 x 1
-y 18
+y 14
 end
-arch pstone_2
+arch blocked
 x 1
-y 19
+y 15
+end
+arch mountain
+x 1
+y 15
+blocksview 0
 end
 arch cave17
 x 1
+y 15
+end
+arch permanent_lava
+x 1
+y 18
+end
+arch cave18
+x 1
+y 18
+end
+arch permanent_lava
+x 1
 y 19
 end
-arch pstone_2
+arch cave3
+x 1
+y 19
+end
+arch permanent_lava
 x 1
 y 20
-end
-arch cave15
-x 1
-y 20
-end
-arch pstone_2
-x 1
-y 21
-end
-arch cave5
-x 1
-y 21
-end
-arch pstone_2
-x 1
-y 23
-end
-arch cave24
-x 1
-y 23
-end
-arch pstone_2
-x 1
-y 24
 end
 arch cave3
+x 1
+y 20
+end
+arch permanent_lava
+x 1
+y 21
+end
+arch cave3
+x 1
+y 21
+end
+arch pstone_2
+x 1
+y 22
+end
+arch cave3
+x 1
+y 22
+end
+arch pstone_2
+x 1
+y 23
+end
+arch cave8
+x 1
+y 23
+end
+arch pstone_2
 x 1
 y 24
 end
@@ -235,7 +243,7 @@ arch pstone_2
 x 1
 y 25
 end
-arch cave13
+arch cave16
 x 1
 y 25
 end
@@ -243,11 +251,15 @@ arch pstone_2
 x 1
 y 26
 end
+arch cave17
+x 1
+y 26
+end
 arch pstone_2
 x 1
 y 27
 end
-arch cave16
+arch cave15
 x 1
 y 27
 end
@@ -255,25 +267,53 @@ arch pstone_2
 x 1
 y 28
 end
-arch cave23
+arch cave5
 x 1
 y 28
 end
 arch pstone_2
 x 1
-y 31
+y 30
 end
 arch cave24
 x 1
+y 30
+end
+arch pstone_2
+x 1
+y 31
+end
+arch cave3
+x 1
 y 31
 end
 arch pstone_2
 x 1
 y 32
 end
-arch cave23
+arch cave13
 x 1
 y 32
+end
+arch pstone_2
+x 1
+y 33
+end
+arch pstone_2
+x 1
+y 34
+end
+arch cave16
+x 1
+y 34
+end
+arch pstone_2
+x 1
+y 35
+end
+arch cave23
+x 1
+y 35
 end
 arch permanent_lava
 x 2
@@ -340,91 +380,134 @@ arch blocked
 x 2
 y 13
 end
+arch mountain
+x 2
+y 13
+blocksview 0
+end
 arch blocked
 x 2
 y 14
 end
-arch pstone_2
+arch mountain
+x 2
+y 14
+blocksview 0
+end
+arch blocked
 x 2
 y 15
 end
-arch cave4
+arch mountain
+x 2
+y 15
+blocksview 0
+end
+arch cave2
 x 2
 y 15
 end
-arch pstone_2
-x 2
-y 16
-end
-arch mage_class
-x 2
-y 16
-end
-arch pstone_2
+arch permanent_lava
 x 2
 y 17
 end
-arch pstone_2
+arch sea1
+name flames
+animation fireball
+x 2
+y 17
+smoothlevel 0
+move_block all
+is_floor 0
+is_water 0
+end
+arch cave18
+x 2
+y 17
+end
+arch permanent_lava
 x 2
 y 18
 end
-arch evoker_class
+arch sea1
+name flames
+animation fireball
 x 2
 y 18
-end
-arch pstone_2
-x 2
-y 19
-end
-arch cave16
-x 2
-y 19
-end
-arch pstone_2
-x 2
-y 20
+smoothlevel 0
+move_block all
+is_floor 0
+is_water 0
 end
 arch cave8
 x 2
-y 20
+y 18
 end
-arch summoner_class
+arch permanent_lava
+x 2
+y 19
+end
+arch sea1
+name flames
+animation fireball
+x 2
+y 19
+smoothlevel 0
+move_block all
+is_floor 0
+is_water 0
+end
+arch permanent_lava
 x 2
 y 20
 end
-arch pstone_2
+arch sea1
+name flames
+animation fireball
+x 2
+y 20
+smoothlevel 0
+move_block all
+is_floor 0
+is_water 0
+end
+arch permanent_lava
 x 2
 y 21
 end
-arch cave12
+arch sea1
+name flames
+animation fireball
 x 2
 y 21
+smoothlevel 0
+move_block all
+is_floor 0
+is_water 0
 end
 arch pstone_2
 x 2
 y 22
 end
-arch cave3
+arch sea1
+name flames
+animation fireball
 x 2
 y 22
-end
-arch wizard_class
-x 2
-y 22
+smoothlevel 0
+move_block all
+is_floor 0
+is_water 0
 end
 arch pstone_2
 x 2
 y 23
 end
-arch cave13
+arch mage_class
 x 2
 y 23
 end
 arch pstone_2
-x 2
-y 24
-end
-arch alchemist_class
 x 2
 y 24
 end
@@ -432,11 +515,15 @@ arch pstone_2
 x 2
 y 25
 end
+arch evoker_class
+x 2
+y 25
+end
 arch pstone_2
 x 2
 y 26
 end
-arch sorcerer_class
+arch cave16
 x 2
 y 26
 end
@@ -444,15 +531,19 @@ arch pstone_2
 x 2
 y 27
 end
+arch cave8
+x 2
+y 27
+end
+arch summoner_class
+x 2
+y 27
+end
 arch pstone_2
 x 2
 y 28
 end
-arch cave16
-x 2
-y 28
-end
-arch devotee_class
+arch cave12
 x 2
 y 28
 end
@@ -464,37 +555,77 @@ arch cave3
 x 2
 y 29
 end
-arch pstone_2
+arch wizard_class
 x 2
-y 30
-end
-arch cave3
-x 2
-y 30
+y 29
 end
 arch pstone_2
 x 2
-y 31
+y 30
 end
 arch cave13
 x 2
+y 30
+end
+arch pstone_2
+x 2
+y 31
+end
+arch alchemist_class
+x 2
 y 31
 end
 arch pstone_2
 x 2
 y 32
 end
-arch cave16
-x 2
-y 32
-end
 arch pstone_2
 x 2
 y 33
 end
-arch cave23
+arch sorcerer_class
 x 2
 y 33
+end
+arch pstone_2
+x 2
+y 34
+end
+arch pstone_2
+x 2
+y 35
+end
+arch cave16
+x 2
+y 35
+end
+arch devotee_class
+x 2
+y 35
+end
+arch pstone_2
+x 2
+y 36
+end
+arch cave3
+x 2
+y 36
+end
+arch pstone_2
+x 2
+y 37
+end
+arch cave3
+x 2
+y 37
+end
+arch pstone_2
+x 2
+y 38
+end
+arch cave23
+x 2
+y 38
 end
 arch permanent_lava
 x 3
@@ -559,201 +690,316 @@ arch blocked
 x 3
 y 13
 end
+arch mountain
+x 3
+y 13
+blocksview 0
+end
 arch blocked
 x 3
 y 14
 end
-arch pstone_2
+arch mountain
+x 3
+y 14
+blocksview 0
+end
+arch blocked
 x 3
 y 15
 end
-arch cave4
+arch mountain
+x 3
+y 15
+blocksview 0
+end
+arch cave2
 x 3
 y 15
 end
 arch pstone_2
 x 3
 y 16
+end
+arch cave18
+x 3
+y 16
+end
+arch pstone_2
+x 3
+y 17
+end
+arch dungeon_magic
+x 3
+y 17
+end
+arch sea1
+name flames
+animation fireball
+x 3
+y 17
+smoothlevel 0
+move_block all
+is_floor 0
+is_water 0
+end
+arch cave8
+x 3
+y 17
+end
+arch pstone_2
+x 3
+y 18
+end
+arch dungeon_magic
+x 3
+y 18
+end
+arch sea1
+name flames
+animation fireball
+x 3
+y 18
+smoothlevel 0
+move_block all
+is_floor 0
+is_water 0
+end
+arch pstone_2
+x 3
+y 19
+end
+arch dungeon_magic
+x 3
+y 19
+end
+arch sea1
+name flames
+animation fireball
+x 3
+y 19
+smoothlevel 0
+move_block all
+is_floor 0
+is_water 0
+end
+arch pstone_2
+x 3
+y 20
+end
+arch dungeon_magic
+x 3
+y 20
+end
+arch sea1
+name flames
+animation fireball
+x 3
+y 20
+smoothlevel 0
+move_block all
+is_floor 0
+is_water 0
+end
+arch pstone_2
+x 3
+y 21
+end
+arch dungeon_magic
+x 3
+y 21
+end
+arch sea1
+name flames
+animation fireball
+x 3
+y 21
+smoothlevel 0
+move_block all
+is_floor 0
+is_water 0
+end
+arch pstone_2
+x 3
+y 22
+end
+arch dungeon_magic
+x 3
+y 22
+end
+arch sea1
+name flames
+animation fireball
+x 3
+y 22
+smoothlevel 0
+move_block all
+is_floor 0
+is_water 0
+end
+arch pstone_2
+x 3
+y 23
 end
 arch player_changer
 slaying /start/Nexus
 hp 12
 sp 12
 x 3
-y 16
+y 23
 arch warlock_class
 end
 end
 arch pstone_2
 x 3
-y 17
+y 24
 end
 arch cave21
 x 3
-y 17
+y 24
 end
 arch pstone_2
 x 3
-y 18
+y 25
 end
 arch player_changer
 slaying /start/Nexus
 hp 12
 sp 12
 x 3
-y 18
+y 25
 arch evoker_class
 end
 end
 arch pstone_2
 x 3
-y 19
+y 26
 end
 arch cave21
 x 3
-y 19
+y 26
 end
 arch pstone_2
 x 3
-y 20
+y 27
 end
 arch player_changer
 slaying /start/Nexus
 hp 12
 sp 12
 x 3
-y 20
+y 27
 arch summoner_class
 end
 end
 arch pstone_2
 x 3
-y 21
+y 28
 end
 arch cave21
 x 3
-y 21
+y 28
 end
 arch pstone_2
 x 3
-y 22
+y 29
 end
 arch player_changer
 slaying /start/Nexus
 hp 12
 sp 12
 x 3
-y 22
+y 29
 carrying 70000
 arch wizard
 end
 end
 arch pstone_2
 x 3
-y 23
+y 30
 end
 arch cave21
 x 3
-y 23
+y 30
 end
 arch pstone_2
 x 3
-y 24
+y 31
 end
 arch player_changer
 slaying /start/Nexus
 hp 12
 sp 12
 x 3
-y 24
+y 31
 arch alchemist_class
 end
 end
 arch pstone_2
 x 3
-y 25
+y 32
 end
 arch cave21
 x 3
-y 25
+y 32
 end
 arch pstone_2
 x 3
-y 26
+y 33
 end
 arch player_changer
 slaying /start/Nexus
 hp 12
 sp 12
 x 3
-y 26
+y 33
 arch sorcerer_class
 end
 end
 arch pstone_2
 x 3
-y 27
+y 34
 end
 arch cave21
 x 3
-y 27
+y 34
 end
 arch pstone_2
 x 3
-y 28
+y 35
 end
 arch player_changer
 slaying /start/Nexus
 hp 12
 sp 12
 x 3
-y 28
+y 35
 arch devotee_class
 end
 end
 arch pstone_2
 x 3
-y 29
+y 36
 end
 arch cave21
 x 3
-y 29
+y 36
 end
 arch pstone_2
 x 3
-y 30
+y 37
 end
 arch dungeon_magic
 x 3
-y 30
+y 37
 end
 arch pstone_2
 x 3
-y 31
-end
-arch cave21
-x 3
-y 31
-end
-arch dungeon_magic
-x 3
-y 32
-end
-arch pstone_2
-x 3
-y 32
-end
-arch dungeon_magic
-x 3
-y 32
-end
-arch pstone_2
-x 3
-y 33
+y 38
 end
 arch cave2
 x 3
-y 33
+y 38
 end
 arch permanent_lava
 x 4
@@ -824,113 +1070,187 @@ arch blocked
 x 4
 y 13
 end
+arch mountain
+x 4
+y 13
+blocksview 0
+end
 arch blocked
 x 4
 y 14
 end
-arch pstone_2
+arch mountain
+x 4
+y 14
+blocksview 0
+end
+arch cave15
+x 4
+y 14
+end
+arch blocked
 x 4
 y 15
 end
-arch cave4
+arch cave18
 x 4
 y 15
 end
 arch pstone_2
 x 4
 y 16
+end
+arch cave8
+x 4
+y 16
+end
+arch pstone_2
+x 4
+y 17
+end
+arch dungeon_magic
+x 4
+y 17
+end
+arch pstone_2
+x 4
+y 18
+end
+arch dungeon_magic
+x 4
+y 18
+end
+arch pstone_2
+x 4
+y 19
+end
+arch dungeon_magic
+x 4
+y 19
+end
+arch pstone_2
+x 4
+y 20
+end
+arch dungeon_magic
+x 4
+y 20
+end
+arch pstone_2
+x 4
+y 21
+end
+arch dungeon_magic
+x 4
+y 21
+end
+arch pstone_2
+x 4
+y 22
+end
+arch dungeon_magic
+x 4
+y 22
+end
+arch cave_12
+x 4
+y 22
+end
+arch pstone_2
+x 4
+y 23
 end
 arch magic_mouth
 msg
 Step forward to become a Warlock.
 endmsg
 x 4
-y 16
-end
-arch dungeon_magic
-x 4
-y 16
-end
-arch pstone_2
-x 4
-y 17
-end
-arch cave21
-x 4
-y 17
-end
-arch pstone_2
-x 4
-y 18
-end
-arch magic_mouth
-msg
-Step forward to become an Evoker.
-endmsg
-x 4
-y 18
-end
-arch dungeon_magic
-x 4
-y 18
-end
-arch pstone_2
-x 4
-y 19
-end
-arch cave21
-x 4
-y 19
-end
-arch pstone_2
-x 4
-y 20
-end
-arch magic_mouth
-msg
-Step forward to become a Summoner.
-endmsg
-x 4
-y 20
-end
-arch dungeon_magic
-x 4
-y 20
-end
-arch pstone_2
-x 4
-y 21
-end
-arch cave21
-x 4
-y 21
-end
-arch pstone_2
-x 4
-y 22
-end
-arch magic_mouth
-msg
-Step forward to become a Wizard.
-endmsg
-x 4
-y 22
-end
-arch dungeon_magic
-x 4
-y 22
-end
-arch pstone_2
-x 4
 y 23
 end
-arch cave21
+arch dungeon_magic
 x 4
 y 23
 end
 arch pstone_2
 x 4
 y 24
+end
+arch cave21
+x 4
+y 24
+end
+arch pstone_2
+x 4
+y 25
+end
+arch magic_mouth
+msg
+Step forward to become an Evoker.
+endmsg
+x 4
+y 25
+end
+arch dungeon_magic
+x 4
+y 25
+end
+arch pstone_2
+x 4
+y 26
+end
+arch cave21
+x 4
+y 26
+end
+arch pstone_2
+x 4
+y 27
+end
+arch magic_mouth
+msg
+Step forward to become a Summoner.
+endmsg
+x 4
+y 27
+end
+arch dungeon_magic
+x 4
+y 27
+end
+arch pstone_2
+x 4
+y 28
+end
+arch cave21
+x 4
+y 28
+end
+arch pstone_2
+x 4
+y 29
+end
+arch magic_mouth
+msg
+Step forward to become a Wizard.
+endmsg
+x 4
+y 29
+end
+arch dungeon_magic
+x 4
+y 29
+end
+arch pstone_2
+x 4
+y 30
+end
+arch cave21
+x 4
+y 30
+end
+arch pstone_2
+x 4
+y 31
 end
 arch magic_mouth
 msg
@@ -938,23 +1258,23 @@ Step forward to become an Alchemist.
 Alchemists are for somewhat advanced players.
 endmsg
 x 4
-y 24
+y 31
 end
 arch dungeon_magic
 x 4
-y 24
+y 31
 end
 arch pstone_2
 x 4
-y 25
+y 32
 end
 arch cave21
 x 4
-y 25
+y 32
 end
 arch pstone_2
 x 4
-y 26
+y 33
 end
 arch magic_mouth
 msg
@@ -962,74 +1282,58 @@ Step forward to become a Sorcerer.
 Sorcerers are difficult to play and not recommended for beginners.
 endmsg
 x 4
-y 26
+y 33
 end
 arch dungeon_magic
 x 4
-y 26
+y 33
 end
 arch pstone_2
 x 4
-y 27
+y 34
 end
 arch cave21
 x 4
-y 27
+y 34
 end
 arch pstone_2
 x 4
-y 28
+y 35
 end
 arch magic_mouth
 msg
 Step forward to become a Devotee.
 endmsg
 x 4
-y 28
+y 35
 end
 arch dungeon_magic
 x 4
-y 28
+y 35
 end
 arch pstone_2
 x 4
-y 29
+y 36
 end
 arch cave21
 x 4
-y 29
+y 36
 end
 arch pstone_2
 x 4
-y 30
+y 37
 end
 arch dungeon_magic
 x 4
-y 30
+y 37
 end
 arch pstone_2
 x 4
-y 31
-end
-arch cave21
-x 4
-y 31
-end
-arch pstone_2
-x 4
-y 32
-end
-arch dungeon_magic
-x 4
-y 32
-end
-arch pstone_2
-x 4
-y 33
+y 38
 end
 arch cave2
 x 4
-y 33
+y 38
 end
 arch permanent_lava
 x 5
@@ -1135,7 +1439,26 @@ arch blocked
 x 5
 y 13
 end
+arch mountain2
+x 5
+y 13
+blocksview 0
+end
+arch brefjell
+x 5
+y 13
+blocksview 0
+end
 arch blocked
+x 5
+y 14
+end
+arch mountain2
+x 5
+y 14
+blocksview 0
+end
+arch cave16
 x 5
 y 14
 end
@@ -1143,13 +1466,113 @@ arch pstone_2
 x 5
 y 15
 end
-arch cave9
+arch cave13
 x 5
 y 15
 end
 arch pstone_2
 x 5
 y 16
+end
+arch dungeon_magic
+x 5
+y 16
+end
+arch statue
+name fire hatchling
+msg
+
+endmsg
+face pl_dragon_r.132
+x 5
+y 16
+end
+arch pstone_2
+x 5
+y 17
+end
+arch detector
+name the flame
+animation fireball
+x 5
+y 17
+connected 1
+activate_on_push 1
+arch event_trigger
+name 2
+title Python
+slaying /python/start/dragon_attune.py
+end
+end
+arch dungeon_magic
+x 5
+y 17
+end
+arch pstone_2
+x 5
+y 18
+end
+arch dungeon_magic
+x 5
+y 18
+end
+arch burning_fountain
+x 5
+y 18
+move_block all
+end
+arch pstone_2
+x 5
+y 19
+end
+arch detector
+name the lightning
+animation ball_lightning
+x 5
+y 19
+connected 3
+activate_on_push 1
+arch event_trigger
+name 3
+title Python
+slaying /python/start/dragon_attune.py
+end
+end
+arch dungeon_magic
+x 5
+y 19
+end
+arch pstone_2
+x 5
+y 20
+end
+arch dungeon_magic
+x 5
+y 20
+end
+arch pstone_2
+x 5
+y 21
+end
+arch dungeon_magic
+x 5
+y 21
+end
+arch pstone_2
+x 5
+y 22
+end
+arch dungeon_magic
+x 5
+y 22
+end
+arch cave_13
+x 5
+y 22
+end
+arch pstone_2
+x 5
+y 23
 end
 arch magic_mouth
 msg
@@ -1158,23 +1581,23 @@ You've divided your time between learning magic and learning weapons, but have t
 You're physically stronger and hardier because of your training, and you know the use of weapons and bows.  However, you're just a bit clumsy in both weaponry and magic because you've had to divide your time between them.
 endmsg
 x 5
-y 16
+y 23
 end
 arch dungeon_magic
 x 5
-y 16
+y 23
 end
 arch pstone_2
 x 5
-y 17
+y 24
 end
 arch cave21
 x 5
-y 17
+y 24
 end
 arch pstone_2
 x 5
-y 18
+y 25
 end
 arch magic_mouth
 msg
@@ -1185,23 +1608,23 @@ You've never learned to use magic innately, but instead rely on a magic talisman
 You have not been trained in religious devotion:  however, you come from a religious family and will have no particular difficulty taking up the service of a god.
 endmsg
 x 5
-y 18
+y 25
 end
 arch dungeon_magic
 x 5
-y 18
+y 25
 end
 arch pstone_2
 x 5
-y 19
+y 26
 end
 arch cave21
 x 5
-y 19
+y 26
 end
 arch pstone_2
 x 5
-y 20
+y 27
 end
 arch magic_mouth
 msg
@@ -1211,23 +1634,23 @@ Your work has leaned heavily toward the art of summoning creatures to help you i
 You've also had a reasonable education in religious devotion.
 endmsg
 x 5
-y 20
+y 27
 end
 arch dungeon_magic
 x 5
-y 20
+y 27
 end
 arch pstone_2
 x 5
-y 21
+y 28
 end
 arch cave21
 x 5
-y 21
+y 28
 end
 arch pstone_2
 x 5
-y 22
+y 29
 end
 arch magic_mouth
 msg
@@ -1237,23 +1660,23 @@ You've learned something about the gods and religious devotion as well.
 To a much lesser extent, you've studied weaponry, but you've not had much physical training:  you're mostly sedentary, and so you're not nearly so strong and healthy as you could be.
 endmsg
 x 5
-y 22
+y 29
 end
 arch dungeon_magic
 x 5
-y 22
+y 29
 end
 arch pstone_2
 x 5
-y 23
+y 30
 end
 arch cave21
 x 5
-y 23
+y 30
 end
 arch pstone_2
 x 5
-y 24
+y 31
 end
 arch magic_mouth
 msg
@@ -1264,23 +1687,23 @@ Your focus, however, has left little time for physical training, and your sedent
 Your dependence on magical devices extends to the use of a talisman to channel mana.  The talisman has become attuned to detonation and transmutation because of the way you have used it.
 endmsg
 x 5
-y 24
+y 31
 end
 arch dungeon_magic
 x 5
-y 24
+y 31
 end
 arch pstone_2
 x 5
-y 25
+y 32
 end
 arch cave21
 x 5
-y 25
+y 32
 end
 arch pstone_2
 x 5
-y 26
+y 33
 end
 arch magic_mouth
 msg
@@ -1291,23 +1714,23 @@ On the other hand, you have totally neglected to learn to use weaponry, so you'r
 Your study of magical devices allows you to notice when an object has a magical aura, and you are often able to fathom the purpose of magical devices.
 endmsg
 x 5
-y 26
+y 33
 end
 arch dungeon_magic
 x 5
-y 26
+y 33
 end
 arch pstone_2
 x 5
-y 27
+y 34
 end
 arch cave21
 x 5
-y 27
+y 34
 end
 arch pstone_2
 x 5
-y 28
+y 35
 end
 arch magic_mouth
 msg
@@ -1317,51 +1740,35 @@ Your sensitivity to godly powers has also caused your natural magical ability to
 Your religious superiors have forced you to learn weaponry against your choice, but you will find that they were wise to do so.  You haven't trained as assiduously as you should have, so you are soft and weak.
 endmsg
 x 5
-y 28
+y 35
 end
 arch dungeon_magic
 x 5
-y 28
+y 35
 end
 arch pstone_2
 x 5
-y 29
+y 36
 end
 arch cave21
 x 5
-y 29
+y 36
 end
 arch pstone_2
 x 5
-y 30
+y 37
 end
 arch dungeon_magic
 x 5
-y 30
+y 37
 end
 arch pstone_2
 x 5
-y 31
-end
-arch cave21
-x 5
-y 31
-end
-arch pstone_2
-x 5
-y 32
-end
-arch dungeon_magic
-x 5
-y 32
-end
-arch pstone_2
-x 5
-y 33
+y 38
 end
 arch cave2
 x 5
-y 33
+y 38
 end
 arch permanent_lava
 x 6
@@ -1510,6 +1917,15 @@ arch pstone_2
 x 6
 y 16
 end
+arch magic_mouth
+msg
+The fire hatchling says:
+Step through this flame to be born as a fire hatchling.
+You'll be red, have facility with fire spells, gain resistance to fire as you grow old, and other hot (hehe) gifts.
+endmsg
+x 6
+y 16
+end
 arch dungeon_magic
 x 6
 y 16
@@ -1518,6 +1934,15 @@ arch pstone_2
 x 6
 y 17
 end
+arch magic_mouth
+msg
+The fire hatchling says:
+Step through this flame to be born as a fire hatchling.
+You'll be red, have facility with fire spells, gain resistance to fire as you grow old, and other hot (hehe) gifts.
+endmsg
+x 6
+y 17
+end
 arch dungeon_magic
 x 6
 y 17
@@ -1526,6 +1951,15 @@ arch pstone_2
 x 6
 y 18
 end
+arch magic_mouth
+msg
+The electricity hatchling says:
+Step through this lightning to be born as a electricity hatchling.
+You'll be blue, have facility with electricity spells, gain resistance to electricity as you grow old, and other shocking (snicker) gifts.
+endmsg
+x 6
+y 18
+end
 arch dungeon_magic
 x 6
 y 18
@@ -1534,6 +1968,15 @@ arch pstone_2
 x 6
 y 19
 end
+arch magic_mouth
+msg
+The electricity hatchling says:
+Step through this lightning to be born as a electricity hatchling.
+You'll be blue, have facility with electricity spells, gain resistance to electricity as you grow old, and other shocking (snicker) gifts.
+endmsg
+x 6
+y 19
+end
 arch dungeon_magic
 x 6
 y 19
@@ -1546,6 +1989,11 @@ arch dungeon_magic
 x 6
 y 20
 end
+arch statue
+face pl_dragon.112
+x 6
+y 20
+end
 arch pstone_2
 x 6
 y 21
@@ -1645,18 +2093,58 @@ end
 arch pstone_2
 x 6
 y 33
+end
+arch dungeon_magic
+x 6
+y 33
+end
+arch pstone_2
+x 6
+y 34
+end
+arch dungeon_magic
+x 6
+y 34
+end
+arch pstone_2
+x 6
+y 35
+end
+arch dungeon_magic
+x 6
+y 35
+end
+arch pstone_2
+x 6
+y 36
+end
+arch dungeon_magic
+x 6
+y 36
+end
+arch pstone_2
+x 6
+y 37
+end
+arch dungeon_magic
+x 6
+y 37
+end
+arch pstone_2
+x 6
+y 38
 end
 arch cave12
 x 6
-y 33
+y 38
 end
 arch pstone_2
 x 6
-y 34
+y 39
 end
 arch cave23
 x 6
-y 34
+y 39
 end
 arch permanent_lava
 x 7
@@ -1942,6 +2430,10 @@ arch dungeon_magic
 x 7
 y 20
 end
+arch cave_0
+x 7
+y 20
+end
 arch pstone_2
 x 7
 y 21
@@ -2049,10 +2541,50 @@ end
 arch pstone_2
 x 7
 y 34
+end
+arch dungeon_magic
+x 7
+y 34
+end
+arch pstone_2
+x 7
+y 35
+end
+arch dungeon_magic
+x 7
+y 35
+end
+arch pstone_2
+x 7
+y 36
+end
+arch dungeon_magic
+x 7
+y 36
+end
+arch pstone_2
+x 7
+y 37
+end
+arch dungeon_magic
+x 7
+y 37
+end
+arch pstone_2
+x 7
+y 38
+end
+arch dungeon_magic
+x 7
+y 38
+end
+arch pstone_2
+x 7
+y 39
 end
 arch cave2
 x 7
-y 34
+y 39
 end
 arch earth
 x 8
@@ -2196,6 +2728,15 @@ arch pstone_2
 x 8
 y 16
 end
+arch magic_mouth
+msg
+The cold hatchling says:
+Step through this pool to be born as a cold hatchling.
+You'll be black, have facility with cold spells, gain resistance to cold as you grow old, and other cool (wink) gifts.
+endmsg
+x 8
+y 16
+end
 arch dungeon_magic
 x 8
 y 16
@@ -2204,6 +2745,15 @@ arch pstone_2
 x 8
 y 17
 end
+arch magic_mouth
+msg
+The cold hatchling says:
+Step through this pool to be born as a cold hatchling.
+You'll be black, have facility with cold spells, gain resistance to cold as you grow old, and other cool (wink) gifts.
+endmsg
+x 8
+y 17
+end
 arch dungeon_magic
 x 8
 y 17
@@ -2212,6 +2762,15 @@ arch pstone_2
 x 8
 y 18
 end
+arch magic_mouth
+msg
+The poison hatchling says:
+Step through this pool to be born as a poison hatchling.
+You'll be green, have facility with poison spells, gain resistance to poison as you grow old, and other sick (giggle) gifts.
+endmsg
+x 8
+y 18
+end
 arch dungeon_magic
 x 8
 y 18
@@ -2220,6 +2779,15 @@ arch pstone_2
 x 8
 y 19
 end
+arch magic_mouth
+msg
+The poison hatchling says:
+Step through this pool to be born as a poison hatchling.
+You'll be green, have facility with poison spells, gain resistance to poison as you grow old, and other sick (giggle) gifts.
+endmsg
+x 8
+y 19
+end
 arch dungeon_magic
 x 8
 y 19
@@ -2232,6 +2800,11 @@ arch dungeon_magic
 x 8
 y 20
 end
+arch statue
+face pl_dragon_g.111
+x 8
+y 20
+end
 arch pstone_2
 x 8
 y 21
@@ -2339,10 +2912,50 @@ end
 arch pstone_2
 x 8
 y 34
+end
+arch dungeon_magic
+x 8
+y 34
+end
+arch pstone_2
+x 8
+y 35
+end
+arch dungeon_magic
+x 8
+y 35
+end
+arch pstone_2
+x 8
+y 36
+end
+arch dungeon_magic
+x 8
+y 36
+end
+arch pstone_2
+x 8
+y 37
+end
+arch dungeon_magic
+x 8
+y 37
+end
+arch pstone_2
+x 8
+y 38
+end
+arch dungeon_magic
+x 8
+y 38
+end
+arch pstone_2
+x 8
+y 39
 end
 arch cave2
 x 8
-y 34
+y 39
 end
 arch earth
 x 9
@@ -2448,7 +3061,19 @@ arch blocked
 x 9
 y 13
 end
+arch sea
+x 9
+y 13
+end
 arch blocked
+x 9
+y 14
+end
+arch sea
+x 9
+y 14
+end
+arch cave15
 x 9
 y 14
 end
@@ -2456,13 +3081,109 @@ arch pstone_2
 x 9
 y 15
 end
-arch cave10
+arch cave14
 x 9
 y 15
 end
 arch pstone_2
 x 9
 y 16
+end
+arch dungeon_magic
+x 9
+y 16
+end
+arch statue
+face pl_dragon_bl.171
+x 9
+y 16
+end
+arch pstone_2
+x 9
+y 17
+end
+arch detector
+name cold pool
+animation evil_ice
+x 9
+y 17
+connected 2
+activate_on_push 1
+arch event_trigger
+name 4
+title Python
+slaying /python/start/dragon_attune.py
+end
+end
+arch dungeon_magic
+x 9
+y 17
+end
+arch pstone_2
+x 9
+y 18
+end
+arch dungeon_magic
+x 9
+y 18
+end
+arch fountain
+x 9
+y 18
+move_block all
+end
+arch pstone_2
+x 9
+y 19
+end
+arch detector
+name poisonous pool
+animation vitriol_pool
+x 9
+y 19
+connected 4
+activate_on_push 1
+arch event_trigger
+name 10
+title Python
+slaying /python/start/dragon_attune.py
+end
+end
+arch dungeon_magic
+x 9
+y 19
+end
+arch pstone_2
+x 9
+y 20
+end
+arch dungeon_magic
+x 9
+y 20
+end
+arch pstone_2
+x 9
+y 21
+end
+arch dungeon_magic
+x 9
+y 21
+end
+arch pstone_2
+x 9
+y 22
+end
+arch dungeon_magic
+x 9
+y 22
+end
+arch cave_12
+x 9
+y 22
+end
+arch pstone_2
+x 9
+y 23
 end
 arch magic_mouth
 msg
@@ -2472,23 +3193,23 @@ Because of your training, you're stronger, more agile, and hardier than you woul
 Your education, however, has not included studies in the magical arts or religious devotion, and, in general, lacks breadth.
 endmsg
 x 9
-y 16
+y 23
 end
 arch dungeon_magic
 x 9
-y 16
+y 23
 end
 arch pstone_2
 x 9
-y 17
+y 24
 end
 arch cave21
 x 9
-y 17
+y 24
 end
 arch pstone_2
 x 9
-y 18
+y 25
 end
 arch magic_mouth
 msg
@@ -2499,23 +3220,23 @@ You're deeply afraid of magic, and it'll be a while before you get over that and
 You've no deep problem with the idea of gods, but you don't know much about them.
 endmsg
 x 9
-y 18
+y 25
 end
 arch dungeon_magic
 x 9
-y 18
+y 25
 end
 arch pstone_2
 x 9
-y 19
+y 26
 end
 arch cave21
 x 9
-y 19
+y 26
 end
 arch pstone_2
 x 9
-y 20
+y 27
 end
 arch magic_mouth
 msg
@@ -2525,23 +3246,23 @@ You've learned to make the most of your time in port:  after passing out drunk i
 On numerous occasions, you've taken up arms and bow in defense of your ship, so you're facile with weapons, but you've had no chance to learn magic or the ways of gods.
 endmsg
 x 9
-y 20
+y 27
 end
 arch dungeon_magic
 x 9
-y 20
+y 27
 end
 arch pstone_2
 x 9
-y 21
+y 28
 end
 arch cave21
 x 9
-y 21
+y 28
 end
 arch pstone_2
 x 9
-y 22
+y 29
 end
 arch magic_mouth
 msg
@@ -2550,23 +3271,23 @@ As a member of the secret society of the Ninja, you've been taught archery, the 
 You have had no introduction to either religious devotion or magic.
 endmsg
 x 9
-y 22
+y 29
 end
 arch dungeon_magic
 x 9
-y 22
+y 29
 end
 arch pstone_2
 x 9
-y 23
+y 30
 end
 arch cave21
 x 9
-y 23
+y 30
 end
 arch pstone_2
 x 9
-y 24
+y 31
 end
 arch magic_mouth
 msg
@@ -2576,23 +3297,23 @@ You've had some weaponry training, including archery; this being advisable to so
 You've had no time for either religious devotion or the study of magecraft, but your quick wits have been enough to keep you alive so far.
 endmsg
 x 9
-y 24
+y 31
 end
 arch dungeon_magic
 x 9
-y 24
+y 31
 end
 arch pstone_2
 x 9
-y 25
+y 32
 end
 arch cave21
 x 9
-y 25
+y 32
 end
 arch pstone_2
 x 9
-y 26
+y 33
 end
 arch magic_mouth
 msg
@@ -2602,23 +3323,23 @@ Your mental equilibrium requires you to forego the use of weapons, but your phys
 Your inner peace grants you the ability to regenerate faster and to sense metaphysical auras.
 endmsg
 x 9
-y 26
+y 33
 end
 arch dungeon_magic
 x 9
-y 26
+y 33
 end
 arch pstone_2
 x 9
-y 27
+y 34
 end
 arch cave21
 x 9
-y 27
+y 34
 end
 arch pstone_2
 x 9
-y 28
+y 35
 end
 arch magic_mouth
 msg
@@ -2628,23 +3349,23 @@ You've been taught archery and the use of weapons, but great care has been taken
 All other areas of your education have been neglected.  Perhaps aware of your deficiency, your superiors have given you some measure of protection from magic.
 endmsg
 x 9
-y 28
+y 35
 end
 arch dungeon_magic
 x 9
-y 28
+y 35
 end
 arch pstone_2
 x 9
-y 29
+y 36
 end
 arch cave21
 x 9
-y 29
+y 36
 end
 arch pstone_2
 x 9
-y 30
+y 37
 end
 arch magic_mouth
 msg
@@ -2654,43 +3375,27 @@ You've been taught the use of weapons, but only cursorily, and your physical tra
 Since you're in tune with the holy powers, you can tell when a god has marked an object as accursed.
 endmsg
 x 9
-y 30
+y 37
 end
 arch dungeon_magic
 x 9
-y 30
+y 37
 end
 arch pstone_2
 x 9
-y 31
-end
-arch cave21
-x 9
-y 31
-end
-arch pstone_2
-x 9
-y 32
+y 38
 end
 arch dungeon_magic
 x 9
-y 32
+y 38
 end
 arch pstone_2
 x 9
-y 33
-end
-arch dungeon_magic
-x 9
-y 33
-end
-arch pstone_2
-x 9
-y 34
+y 39
 end
 arch cave2
 x 9
-y 34
+y 39
 end
 arch earth
 x 10
@@ -2747,227 +3452,282 @@ arch blocked
 x 10
 y 13
 end
+arch sea
+x 10
+y 13
+end
 arch blocked
 x 10
 y 14
 end
-arch pstone_2
+arch sea
+x 10
+y 14
+end
+arch cave16
+x 10
+y 14
+end
+arch blocked
 x 10
 y 15
 end
-arch cave4
+arch cave19
 x 10
 y 15
 end
 arch pstone_2
 x 10
 y 16
+end
+arch cave14
+x 10
+y 16
+end
+arch pstone_2
+x 10
+y 17
+end
+arch dungeon_magic
+x 10
+y 17
+end
+arch pstone_2
+x 10
+y 18
+end
+arch dungeon_magic
+x 10
+y 18
+end
+arch pstone_2
+x 10
+y 19
+end
+arch dungeon_magic
+x 10
+y 19
+end
+arch pstone_2
+x 10
+y 20
+end
+arch dungeon_magic
+x 10
+y 20
+end
+arch pstone_2
+x 10
+y 21
+end
+arch dungeon_magic
+x 10
+y 21
+end
+arch pstone_2
+x 10
+y 22
+end
+arch dungeon_magic
+x 10
+y 22
+end
+arch cave_13
+x 10
+y 22
+end
+arch pstone_2
+x 10
+y 23
 end
 arch magic_mouth
 msg
 Step on the circle to become a Warrior.
 endmsg
 x 10
-y 16
+y 23
 end
 arch dungeon_magic
 x 10
-y 16
+y 23
 end
 arch pstone_2
 x 10
-y 17
+y 24
 end
 arch cave21
 x 10
-y 17
+y 24
 end
 arch pstone_2
 x 10
-y 18
+y 25
 end
 arch magic_mouth
 msg
 Step onto the circle to become a Barbarian.
 endmsg
 x 10
-y 18
+y 25
 end
 arch dungeon_magic
 x 10
-y 18
+y 25
 end
 arch pstone_2
 x 10
-y 19
+y 26
 end
 arch cave21
 x 10
-y 19
+y 26
 end
 arch pstone_2
 x 10
-y 20
+y 27
 end
 arch magic_mouth
 msg
 Step forward to become a Swashbuckler.
 endmsg
 x 10
-y 20
+y 27
 end
 arch dungeon_magic
 x 10
-y 20
+y 27
 end
 arch pstone_2
 x 10
-y 21
+y 28
 end
 arch cave21
 x 10
-y 21
+y 28
 end
 arch pstone_2
 x 10
-y 22
+y 29
 end
 arch magic_mouth
 msg
 Step forward to become a Ninja.
 endmsg
 x 10
-y 22
+y 29
 end
 arch dungeon_magic
 x 10
-y 22
+y 29
 end
 arch pstone_2
 x 10
-y 23
+y 30
 end
 arch cave21
 x 10
-y 23
+y 30
 end
 arch pstone_2
 x 10
-y 24
+y 31
 end
 arch magic_mouth
 msg
 Step forward to become a Thief.
 endmsg
 x 10
-y 24
+y 31
 end
 arch dungeon_magic
 x 10
-y 24
+y 31
 end
 arch pstone_2
 x 10
-y 25
+y 32
 end
 arch cave21
 x 10
-y 25
+y 32
 end
 arch pstone_2
 x 10
-y 26
+y 33
 end
 arch magic_mouth
 msg
 Step forward to become a Monk.
-Beware!  Monks cannot use weapons.
-This is a significant handicap:  experienced players only.
+Beware!  Monks are recommended for experienced players only.
 endmsg
 x 10
-y 26
+y 33
 end
 arch dungeon_magic
 x 10
-y 26
+y 33
 end
 arch pstone_2
 x 10
-y 27
+y 34
 end
 arch cave21
 x 10
-y 27
+y 34
 end
 arch pstone_2
 x 10
-y 28
+y 35
 end
 arch magic_mouth
 msg
 Step forward to become a Paladin.
 endmsg
 x 10
-y 28
+y 35
 end
 arch dungeon_magic
 x 10
-y 28
+y 35
 end
 arch pstone_2
 x 10
-y 29
+y 36
 end
 arch cave21
 x 10
-y 29
+y 36
 end
 arch pstone_2
 x 10
-y 30
+y 37
 end
 arch magic_mouth
 msg
 Step forward to become a Priest.
 endmsg
 x 10
-y 30
+y 37
 end
 arch dungeon_magic
 x 10
-y 30
+y 37
 end
 arch pstone_2
 x 10
-y 31
-end
-arch cave21
-x 10
-y 31
-end
-arch pstone_2
-x 10
-y 32
-end
-arch dungeon_magic
-x 10
-y 32
-end
-arch pstone_2
-x 10
-y 33
+y 38
 end
 arch cave11
 x 10
-y 33
+y 38
 end
 arch pstone_2
 x 10
-y 34
+y 39
 end
 arch cave22
 x 10
-y 34
+y 39
 end
 arch earth
 x 11
@@ -3028,201 +3788,285 @@ arch blocked
 x 11
 y 13
 end
+arch sea
+x 11
+y 13
+end
 arch blocked
 x 11
 y 14
 end
-arch pstone_2
+arch sea
+x 11
+y 14
+end
+arch blocked
 x 11
 y 15
 end
-arch cave4
+arch sea1
+x 11
+y 15
+end
+arch cave2
 x 11
 y 15
 end
 arch pstone_2
 x 11
 y 16
+end
+arch dungeon_magic
+x 11
+y 16
+end
+arch sea1
+x 11
+y 16
+end
+arch cave19
+x 11
+y 16
+end
+arch pstone_2
+x 11
+y 17
+end
+arch dungeon_magic
+x 11
+y 17
+end
+arch sea1
+x 11
+y 17
+end
+arch cave14
+x 11
+y 17
+end
+arch pstone_2
+x 11
+y 18
+end
+arch dungeon_magic
+x 11
+y 18
+end
+arch sea1
+x 11
+y 18
+end
+arch pstone_2
+x 11
+y 19
+end
+arch dungeon_magic
+x 11
+y 19
+end
+arch sea1
+x 11
+y 19
+end
+arch pstone_2
+x 11
+y 20
+end
+arch dungeon_magic
+x 11
+y 20
+end
+arch sea1
+x 11
+y 20
+end
+arch pstone_2
+x 11
+y 21
+end
+arch dungeon_magic
+x 11
+y 21
+end
+arch sea1
+x 11
+y 21
+end
+arch pstone_2
+x 11
+y 22
+end
+arch dungeon_magic
+x 11
+y 22
+end
+arch pstone_2
+x 11
+y 23
 end
 arch player_changer
 slaying /start/Nexus
 hp 12
 sp 12
 x 11
-y 16
+y 23
 arch warrior_class
 end
 end
 arch pstone_2
 x 11
-y 17
+y 24
 end
 arch cave21
 x 11
-y 17
+y 24
 end
 arch pstone_2
 x 11
-y 18
+y 25
 end
 arch player_changer
 slaying /start/Nexus
 hp 12
 sp 12
 x 11
-y 18
+y 25
 arch barbarian_class
 end
 end
 arch pstone_2
 x 11
-y 19
+y 26
 end
 arch cave21
 x 11
-y 19
+y 26
 end
 arch pstone_2
 x 11
-y 20
+y 27
 end
 arch player_changer
 slaying /start/Nexus
 hp 12
 sp 12
 x 11
-y 20
+y 27
 arch swashbuckler_class
 end
 end
 arch pstone_2
 x 11
-y 21
+y 28
 end
 arch cave21
 x 11
-y 21
+y 28
 end
 arch pstone_2
 x 11
-y 22
+y 29
 end
 arch player_changer
 slaying /start/Nexus
 hp 12
 sp 12
 x 11
-y 22
+y 29
 arch ninja_class
 end
 end
 arch pstone_2
 x 11
-y 23
+y 30
 end
 arch cave21
 x 11
-y 23
+y 30
 end
 arch pstone_2
 x 11
-y 24
+y 31
 end
 arch player_changer
 slaying /start/Nexus
 hp 12
 sp 12
 x 11
-y 24
+y 31
 arch thief_class
 end
 end
 arch pstone_2
 x 11
-y 25
+y 32
 end
 arch cave21
 x 11
-y 25
+y 32
 end
 arch pstone_2
 x 11
-y 26
+y 33
 end
 arch player_changer
 slaying /start/Nexus
 hp 12
 sp 12
 x 11
-y 26
+y 33
 arch monk_class
 end
 end
 arch pstone_2
 x 11
-y 27
+y 34
 end
 arch cave21
 x 11
-y 27
+y 34
 end
 arch pstone_2
 x 11
-y 28
+y 35
 end
 arch player_changer
 slaying /start/Nexus
 hp 12
 sp 12
 x 11
-y 28
+y 35
 arch paladin_class
 end
 end
 arch pstone_2
 x 11
-y 29
+y 36
 end
 arch cave21
 x 11
-y 29
+y 36
 end
 arch pstone_2
 x 11
-y 30
+y 37
 end
 arch player_changer
 slaying /start/Nexus
 hp 12
 sp 12
 x 11
-y 30
+y 37
 arch priest_class
 end
 end
 arch pstone_2
 x 11
-y 31
-end
-arch cave21
-x 11
-y 31
-end
-arch pstone_2
-x 11
-y 32
-end
-arch dungeon_magic
-x 11
-y 32
-end
-arch pstone_2
-x 11
-y 33
+y 38
 end
 arch cave2
 x 11
-y 33
+y 38
 end
 arch earth
 x 12
@@ -3279,89 +4123,76 @@ arch blocked
 x 12
 y 13
 end
+arch sea
+x 12
+y 13
+end
 arch blocked
 x 12
 y 14
 end
-arch pstone_2
+arch sea
+x 12
+y 14
+end
+arch blocked
 x 12
 y 15
 end
-arch cave25
+arch sea1
 x 12
 y 15
 end
-arch pstone_2
+arch cave2
 x 12
-y 16
+y 15
 end
-arch cave1
-x 12
-y 16
-end
-arch warrior
-x 12
-y 16
-end
-arch pstone_2
+arch sea1
 x 12
 y 17
 end
-arch cave10
+arch cave19
 x 12
 y 17
 end
-arch pstone_2
-x 12
-y 18
-move_block all
-end
-arch barbarian_class
+arch sea1
 x 12
 y 18
 end
-arch pstone_2
+arch cave14
+x 12
+y 18
+end
+arch sea1
 x 12
 y 19
 end
-arch pstone_2
+arch sea1
 x 12
 y 20
 end
-arch cave15
-x 12
-y 20
-end
-arch swashbuckler_class
-x 12
-y 20
-end
-arch pstone_2
+arch sea1
 x 12
 y 21
 end
-arch cave1
-x 12
-y 21
-end
-arch pstone_2
+arch sea1
 x 12
 y 22
-end
-arch cave10
-x 12
-y 22
-end
-arch ninja_class
-x 12
-y 22
-end
-arch pstone_2
-x 12
-y 23
 end
 arch cave11
 x 12
+y 22
+end
+arch pstone_2
+x 12
+y 23
+end
+arch cave1
+x 12
+y 23
+end
+arch warrior
+x 12
 y 23
 end
 arch pstone_2
@@ -3372,11 +4203,12 @@ arch cave10
 x 12
 y 24
 end
-arch thief_class
-x 12
-y 24
-end
 arch pstone_2
+x 12
+y 25
+move_block all
+end
+arch barbarian_class
 x 12
 y 25
 end
@@ -3384,19 +4216,15 @@ arch pstone_2
 x 12
 y 26
 end
-arch cave6
-x 12
-y 26
-end
-arch monk_class
-x 12
-y 26
-end
 arch pstone_2
 x 12
 y 27
 end
-arch cave5
+arch cave15
+x 12
+y 27
+end
+arch swashbuckler_class
 x 12
 y 27
 end
@@ -3404,11 +4232,19 @@ arch pstone_2
 x 12
 y 28
 end
-arch paladin_class
+arch cave1
 x 12
 y 28
 end
 arch pstone_2
+x 12
+y 29
+end
+arch cave10
+x 12
+y 29
+end
+arch ninja_class
 x 12
 y 29
 end
@@ -3420,33 +4256,73 @@ arch cave11
 x 12
 y 30
 end
-arch priest_class
-x 12
-y 30
-end
 arch pstone_2
 x 12
 y 31
 end
-arch cave1
+arch cave10
+x 12
+y 31
+end
+arch thief_class
 x 12
 y 31
 end
 arch pstone_2
-x 12
-y 32
-end
-arch cave1
 x 12
 y 32
 end
 arch pstone_2
 x 12
 y 33
+end
+arch cave6
+x 12
+y 33
+end
+arch monk_class
+x 12
+y 33
+end
+arch pstone_2
+x 12
+y 34
+end
+arch cave5
+x 12
+y 34
+end
+arch pstone_2
+x 12
+y 35
+end
+arch paladin_class
+x 12
+y 35
+end
+arch pstone_2
+x 12
+y 36
+end
+arch pstone_2
+x 12
+y 37
+end
+arch cave11
+x 12
+y 37
+end
+arch priest_class
+x 12
+y 37
+end
+arch pstone_2
+x 12
+y 38
 end
 arch cave22
 x 12
-y 33
+y 38
 end
 arch earth
 x 13
@@ -3507,99 +4383,107 @@ arch blocked
 x 13
 y 13
 end
+arch sea
+x 13
+y 13
+end
 arch blocked
 x 13
 y 14
 end
-arch pstone_2
+arch sea
 x 13
-y 17
+y 14
 end
-arch cave25
+arch cave15
 x 13
-y 17
+y 14
 end
-arch pstone_2
+arch blocked
+x 13
+y 15
+end
+arch sea1
+x 13
+y 15
+end
+arch cave20
+x 13
+y 15
+end
+arch sea1
 x 13
 y 18
 end
-arch cave10
+arch cave19
 x 13
 y 18
 end
-arch pstone_2
+arch sea1
 x 13
 y 19
 end
-arch pstone_2
+arch cave1
+x 13
+y 19
+end
+arch sea1
 x 13
 y 20
+end
+arch cave1
+x 13
+y 20
+end
+arch sea1
+x 13
+y 21
+end
+arch cave1
+x 13
+y 21
+end
+arch sea1
+x 13
+y 22
+end
+arch cave22
+x 13
+y 22
+end
+arch pstone_2
+x 13
+y 24
+end
+arch cave25
+x 13
+y 24
+end
+arch pstone_2
+x 13
+y 25
+end
+arch cave10
+x 13
+y 25
+end
+arch pstone_2
+x 13
+y 26
+end
+arch pstone_2
+x 13
+y 27
 end
 arch cave2
 x 13
-y 20
-end
-arch pstone_2
-x 13
-y 22
-end
-arch cave25
-x 13
-y 22
-end
-arch pstone_2
-x 13
-y 23
-end
-arch cave22
-x 13
-y 23
-end
-arch pstone_2
-x 13
-y 24
-end
-arch cave25
-x 13
-y 24
-end
-arch pstone_2
-x 13
-y 25
-end
-arch cave1
-x 13
-y 25
-end
-arch pstone_2
-x 13
-y 26
-end
-arch cave22
-x 13
-y 26
-end
-arch pstone_2
-x 13
 y 27
-end
-arch cave25
-x 13
-y 27
-end
-arch pstone_2
-x 13
-y 28
-end
-arch cave1
-x 13
-y 28
 end
 arch pstone_2
 x 13
 y 29
 end
-arch cave1
+arch cave25
 x 13
 y 29
 end
@@ -3610,6 +4494,62 @@ end
 arch cave22
 x 13
 y 30
+end
+arch pstone_2
+x 13
+y 31
+end
+arch cave25
+x 13
+y 31
+end
+arch pstone_2
+x 13
+y 32
+end
+arch cave1
+x 13
+y 32
+end
+arch pstone_2
+x 13
+y 33
+end
+arch cave22
+x 13
+y 33
+end
+arch pstone_2
+x 13
+y 34
+end
+arch cave25
+x 13
+y 34
+end
+arch pstone_2
+x 13
+y 35
+end
+arch cave1
+x 13
+y 35
+end
+arch pstone_2
+x 13
+y 36
+end
+arch cave1
+x 13
+y 36
+end
+arch pstone_2
+x 13
+y 37
+end
+arch cave22
+x 13
+y 37
 end
 arch blocked
 x 14
@@ -3672,25 +4612,25 @@ y 14
 end
 arch pstone_2
 x 14
-y 18
+y 25
 end
 arch cave25
 x 14
-y 18
+y 25
 end
 arch pstone_2
 x 14
-y 19
+y 26
 end
 arch cave1
 x 14
-y 19
+y 26
 end
 arch pstone_2
 x 14
-y 20
+y 27
 end
 arch cave22
 x 14
-y 20
+y 27
 end
