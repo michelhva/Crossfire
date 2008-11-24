@@ -997,7 +997,7 @@ public class CrossfireServerConnection extends ServerConnection
                                 final int type = ((packet[pos++]&0xFF)<<8)|(packet[pos++]&0xFF);
                                 if (debugProtocol != null)
                                 {
-                                    debugProtocolWrite("recv item2 tag="+tag+" flags="+flags+" weight="+weight+" face="+faceNum+" name="+name+" name_pl="+namePl+" anim="+anim+" anim_speed="+animSpeed+" nrof="+nrof+" type="+type+"\n");
+                                    debugProtocolWrite("recv item2 location="+location+" tag="+tag+" flags="+flags+" weight="+weight+" face="+faceNum+" name="+name+" name_pl="+namePl+" anim="+anim+" anim_speed="+animSpeed+" nrof="+nrof+" type="+type+"\n");
                                 }
                                 for (final CrossfireUpdateItemListener crossfireUpdateItemListener : crossfireUpdateItemListeners)
                                 {
