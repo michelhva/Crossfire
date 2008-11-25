@@ -33,6 +33,10 @@ import java.awt.Font;
 import java.awt.image.BufferedImage;
 import java.util.List;
 
+/**
+ * A {@link GUIItem} for displaying inventory objects.
+ * @author Andreas Kirschbaum
+ */
 public class GUIItemInventory extends GUIItemItem
 {
     /**
@@ -65,6 +69,9 @@ public class GUIItemInventory extends GUIItemItem
      */
     private final Object sync = new Object();
 
+    /**
+     * The inventory slot index.
+     */
     private int index = -1;
 
     /**
@@ -210,7 +217,6 @@ public class GUIItemInventory extends GUIItemItem
 
     /**
      * Set the inventory slot to display.
-     *
      * @param index the inventory slot
      */
     public void setIndex(final int index)
