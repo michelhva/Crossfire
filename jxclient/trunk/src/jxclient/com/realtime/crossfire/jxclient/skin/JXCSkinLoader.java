@@ -141,7 +141,6 @@ import javax.imageio.ImageIO;
 
 /**
  * Creates a {@link JXCSkin} instance from a file.
- *
  * @author Andreas Kirschbaum
  */
 public abstract class JXCSkinLoader implements JXCSkin
@@ -156,8 +155,14 @@ public abstract class JXCSkinLoader implements JXCSkin
      */
     private static final Pattern patternExpr = Pattern.compile("([0-9]+|WIDTH|HEIGHT|WIDTH/2|HEIGHT/2)([-+])(.+)");
 
+    /**
+     * The {@link ItemsManager} instance to use.
+     */
     private final ItemsManager itemsManager;
 
+    /**
+     * The {@link SpellsManager} instance to use.
+     */
     private final SpellsManager spellsManager;
 
     /**
@@ -165,8 +170,14 @@ public abstract class JXCSkinLoader implements JXCSkin
      */
     private final FacesManager facesManager;
 
+    /**
+     * The {@link Stats} instance to use.
+     */
     private final Stats stats;
 
+    /**
+     * The {@link CfMapUpdater} instance to use.
+     */
     private final CfMapUpdater mapUpdater;
 
     /**
@@ -250,10 +261,19 @@ public abstract class JXCSkinLoader implements JXCSkin
     private final List<GUICommandList> initEvents = new ArrayList<GUICommandList>();
 
     /**
-     * The default key bindings;
+     * The default key bindings.
      */
     private final KeyBindings defaultKeyBindings;
 
+    /**
+     * Creates a new instance.
+     * @param itemsManager the items manager instance to use
+     * @param spellsManager the spells manager instance to use
+     * @param facesManager the faces manager instance to use
+     * @param stats the stats instance to use
+     * @param mapUpdater the map updater instance to use
+     * @param defaultKeyBindings the default key bindings
+     */
     protected JXCSkinLoader(final ItemsManager itemsManager, final SpellsManager spellsManager, final FacesManager facesManager, final Stats stats, final CfMapUpdater mapUpdater, final KeyBindings defaultKeyBindings)
     {
         this.itemsManager = itemsManager;
@@ -265,8 +285,7 @@ public abstract class JXCSkinLoader implements JXCSkin
     }
 
     /**
-     * Check that the skin exists and can be accessed.
-     *
+     * Checks that the skin exists and can be accessed.
      * @throws JXCSkinException if the skin does not exist or cannot be loaded
      */
     protected void checkAccess() throws JXCSkinException
@@ -449,6 +468,14 @@ public abstract class JXCSkinLoader implements JXCSkin
         return numLookObjects;
     }
 
+    /**
+     * Creates a new dialog instance.
+     * @param name the dialog's name
+     * @param window the window to attach to
+     * @param mouseTracker the mouse tracker to attach
+     * @param commands the commands instance to use
+     * @return the new dialog instance
+     */
     private Gui addDialog(final String name, final JXCWindow window, final MouseTracker mouseTracker, final Commands commands)
     {
         try
@@ -545,32 +572,19 @@ public abstract class JXCSkinLoader implements JXCSkin
     }
 
     /**
-     * Load a skin file and add the entries to a {@link Gui} instance.
-     *
-     * @param dialogName The key to identify this dialog.
-     *
-     * @param resolution The preferred resolution.
-     *
-     * @param server The server connection to monitor.
-     *
-     * @param window The main window.
-     *
+     * Loads a skin file and add the entries to a {@link Gui} instance.
+     * @param dialogName the key to identify this dialog
+     * @param resolution the preferred resolution
+     * @param server the server connection to monitor
+     * @param window the main window
      * @param mouseTracker the mouse tracker instance
-     *
      * @param metaserver the metaserver instance to use
-     *
      * @param commandQueue the command queue for sending commands
-     *
-     * @param gui The Gui representing the skin file.
-     *
+     * @param gui the Gui representing the skin file
      * @param optionManager the option manager instance to use
-     *
      * @param experienceTable the experience table to use
-     *
      * @param shortcuts the shortcuts instance
-     *
      * @param commands the commands instance for executing commands
-     *
      * @throws JXCSkinException if the file cannot be loaded
      */
     private void load(final String dialogName, final Resolution resolution, final CrossfireServerConnection server, final JXCWindow window, final MouseTracker mouseTracker, final Metaserver metaserver, final CommandQueue commandQueue, final Gui gui, final OptionManager optionManager, final ExperienceTable experienceTable, final Shortcuts shortcuts, final Commands commands) throws JXCSkinException
@@ -614,55 +628,36 @@ public abstract class JXCSkinLoader implements JXCSkin
     }
 
     /**
-     * Return an {@link InputStream} for a resource name.
-     *
-     * @param name The resource name.
-     *
-     * @return The input stream for the resource.
-     *
+     * Returns an {@link InputStream} for a resource name.
+     * @param name the resource name
+     * @return the input stream for the resource
      * @throws IOException if the resource cannot be loaded
      */
     protected abstract InputStream getInputStream(final String name) throws IOException;
 
     /**
-     * Return a description of the location of a resource name.
-     *
-     * @param name The resource name.
-     *
-     * @return The description of the resource.
+     * Returns a description of the location of a resource name.
+     * @param name the resource name
+     * @return the description of the resource
      */
     protected abstract String getURI(final String name);
 
     /**
-     * Load a skin file and add the entries to a {@link Gui} instance.
-     *
-     * @param dialogName The key to identify this dialog.
-     *
-     * @param resourceName The name of the skin resource; used to construct
-     * error messages.
-     *
-     * @param inputStream The input stream to load from.
-     *
-     * @param server The server connection to monitor.
-     *
-     * @param window The main window.
-     *
+     * Loads a skin file and add the entries to a {@link Gui} instance.
+     * @param dialogName the key to identify this dialog
+     * @param resourceName the name of the skin resource; used to construct
+     * error messages
+     * @param inputStream the input stream to load from
+     * @param server the server connection to monitor
+     * @param window the main window
      * @param mouseTracker the mouse tracker instance
-     *
      * @param metaserver the metaserver instance to use
-     *
      * @param commandQueue the command queue for sending commands
-     *
-     * @param gui The Gui representing the skin file.
-     *
+     * @param gui the Gui representing the skin file
      * @param optionManager the option manager instance to use
-     *
      * @param experienceTable the experience table to use
-     *
      * @param shortcuts the shortcuts instance
-     *
      * @param commands the commands instance for executing commands
-     *
      * @throws JXCSkinException if the file cannot be loaded
      */
     private void load(final String dialogName, final String resourceName, final InputStream inputStream, final CrossfireServerConnection server, final JXCWindow window, final MouseTracker mouseTracker, final Metaserver metaserver, final CommandQueue commandQueue, final Gui gui, final OptionManager optionManager, final ExperienceTable experienceTable, final Shortcuts shortcuts, final Commands commands) throws JXCSkinException
@@ -1899,12 +1894,10 @@ public abstract class JXCSkinLoader implements JXCSkin
     }
 
     /**
-     * Parse an integer constant. Valid constants are "3", "3+4", and "1+2-3+4".
-     *
-     * @param str The integer constant string to parse.
-     *
-     * @return The integer value.
-     *
+     * Parses an integer constant. Valid constants are "3", "3+4", and
+     * "1+2-3+4".
+     * @param str the integer constant string to parse
+     * @return the integer value
      * @throws IOException if a parsing error occurs
      */
     private int parseInt(final String str) throws IOException
@@ -1966,6 +1959,12 @@ public abstract class JXCSkinLoader implements JXCSkin
         return value;
     }
 
+    /**
+     * Parses an integer contstant string.
+     * @param str the string
+     * @return the integer value
+     * @throws NumberFormatException if the string cannot be parsed
+     */
     private int parseIntegerConstant(final String str)
     {
         try
@@ -1999,12 +1998,9 @@ public abstract class JXCSkinLoader implements JXCSkin
     }
 
     /**
-     * Parse a float constant.
-     *
-     * @param str The floating constant string to parse.
-     *
-     * @return The floating value.
-     *
+     * Parses a float constant.
+     * @param str the floating constant string to parse
+     * @return the floating value
      * @throws IOException if a parsing error occurs
      */
     private static float parseFloat(final String str) throws IOException
@@ -2020,13 +2016,10 @@ public abstract class JXCSkinLoader implements JXCSkin
     }
 
     /**
-     * Parse a boolean constant.
-     *
-     * @param str The boolean constant string to parse.
-     *
-     * @return The boolean value.
-     *
-     * @throws IOException If a parsing error occurs.
+     * Parses a boolean constant.
+     * @param str the boolean constant string to parse
+     * @return the boolean value
+     * @throws IOException if a parsing error occurs
      */
     private static boolean parseBoolean(final String str) throws IOException
     {
@@ -2041,17 +2034,12 @@ public abstract class JXCSkinLoader implements JXCSkin
     }
 
     /**
-     * Parse an enum constant.
-     *
-     * @param class_ The enum class the enum constant belongs to.
-     *
-     * @param name The enum constant to parse.
-     *
-     * @param ident The description of the enum class for building error
-     * messages.
-     *
-     * @return The enum constant.
-     *
+     * Parses an enum constant.
+     * @param class_ the enum class the enum constant belongs to
+     * @param name the enum constant to parse
+     * @param ident the description of the enum class for building error
+     * messages
+     * @return the enum constant
      * @throws IOException if the enum constant does not exist
      */
     private static <T extends Enum<T>> T parseEnum(final Class<T> class_, final String name, final String ident) throws IOException
@@ -2067,13 +2055,10 @@ public abstract class JXCSkinLoader implements JXCSkin
     }
 
     /**
-     * Parse a stat value.
-     *
-     * @param name The stat value to parse.
-     *
-     * @return The stat value.
-     *
-     * @throws IOException if the stat value does not exist.
+     * Parses a stat value.
+     * @param name the stat value to parse
+     * @return the stat value
+     * @throws IOException if the stat value does not exist
      */
     private static int parseStat(final String name) throws IOException
     {
@@ -2090,13 +2075,10 @@ public abstract class JXCSkinLoader implements JXCSkin
     }
 
     /**
-     * Parse a orientation value.
-     *
-     * @param name The orientation value to parse.
-     *
-     * @return The orientation.
-     *
-     * @throws IOException if the orientation value does not exist.
+     * Parses an orientation value.
+     * @param name the orientation value to parse
+     * @return the orientation
+     * @throws IOException if the orientation value does not exist
      */
     private static Orientation parseOrientation(final String name) throws IOException
     {
@@ -2113,15 +2095,11 @@ public abstract class JXCSkinLoader implements JXCSkin
     }
 
     /**
-     * Parse a gauge updater value.
-     *
-     * @param name The gauge updater value to parse.
-     *
-     * @param experienceTable The experience table to query.
-     *
-     * @return The gauge updater.
-     *
-     * @throws IOException if the gauge updater value does not exist.
+     * Parses a gauge updater value.
+     * @param name the gauge updater value to parse
+     * @param experienceTable the experience table to query
+     * @return the gauge updater
+     * @throws IOException if the gauge updater value does not exist
      */
     private GaugeUpdater parseGaugeUpdater(final String name, final ExperienceTable experienceTable) throws IOException
     {
@@ -2148,13 +2126,10 @@ public abstract class JXCSkinLoader implements JXCSkin
     }
 
     /**
-     * Parse a color name.
-     *
-     * @param name The color name to parse.
-     *
-     * @return The color.
-     *
-     * @throws IOException if the color name does not exist.
+     * Parses a color name.
+     * @param name the color name to parse
+     * @return the color
+     * @throws IOException if the color name does not exist
      */
     private static Color parseColor(final String name) throws IOException
     {
@@ -2229,19 +2204,14 @@ public abstract class JXCSkinLoader implements JXCSkin
     }
 
     /**
-     * Concatenate trailing arguments into a string. If the first line is
+     * Concatenates trailing arguments into a string. If the first line is
      * "<<EOF", all text up to the next line containing only "EOF" is appended.
      * Comments starting with "#" are dropped.
-     *
-     * @param args The args to concatenate.
-     *
-     * @param startIndex The first index to concatenate.
-     *
-     * @param lnr Where to read additional lines from.
-     *
-     * @return The concatenated string.
-     *
-     * @throws IOException If reading from <code>lnr</lnr> fails.
+     * @param args the args to concatenate
+     * @param startIndex the first index to concatenate
+     * @param lnr where to read additional lines from
+     * @return the concatenated string
+     * @throws IOException if reading from <code>lnr</lnr> fails
      */
     private static String parseText(final String[] args, final int startIndex, final LineNumberReader lnr) throws IOException
     {
@@ -2286,15 +2256,11 @@ public abstract class JXCSkinLoader implements JXCSkin
     }
 
     /**
-     * Parse a check box option name.
-     *
-     * @param name The check box option name to parse.
-     *
+     * Parses a check box option name.
+     * @param name the check box option name to parse
      * @param optionManager the option manager to use
-     *
-     * @return The check box option.
-     *
-     * @throws IOException If the check box option name does not exist.
+     * @return the check box option
+     * @throws IOException if the check box option name does not exist
      */
     private static CheckBoxOption parseCheckBoxOption(final String name, final OptionManager optionManager) throws IOException
     {
@@ -2309,31 +2275,20 @@ public abstract class JXCSkinLoader implements JXCSkin
     }
 
     /**
-     * Parse and build command arguments.
-     *
-     * @param args The list of arguments.
-     *
-     * @param argc The start index for parsing.
-     *
-     * @param element The target element.
-     *
-     * @param command The command to parse the arguments of.
-     *
-     * @param window The window instance.
-     *
+     * Parses and builds command arguments.
+     * @param args the list of arguments
+     * @param argc the start index for parsing
+     * @param element the target element
+     * @param command the command to parse the arguments of
+     * @param window the window instance
      * @param mouseTracker the mouse tracker instance
-     *
      * @param commands the commands instance for executing commands
-     *
-     * @param lnr The source to read more parameters from.
-     *
+     * @param lnr the source to read more parameters from
      * @param commandQueue the command queue for executing commands
-     *
-     * @return The command arguments.
-     *
-     * @throws IOException If a syntax error occurs.
-     *
-     * @throws JXCSkinException If an element cannot be found.
+     * @param crossfireServerConnection the server connection to use
+     * @return the command arguments
+     * @throws IOException if a syntax error occurs
+     * @throws JXCSkinException if an element cannot be found
      */
     private GUICommand parseCommandArgs(final String[] args, final int argc, final GUIElement element, final String command, final JXCWindow window, final MouseTracker mouseTracker, final Commands commands, final LineNumberReader lnr, final CommandQueue commandQueue, final CrossfireServerConnection crossfireServerConnection) throws IOException, JXCSkinException
     {
@@ -2592,13 +2547,10 @@ public abstract class JXCSkinLoader implements JXCSkin
     }
 
     /**
-     * Return a font by font file base name.
-     *
-     * @param name The file base name of the font file to load.
-     *
-     * @return The font.
-     *
-     * @throws IOException if the font cannot be loaded.
+     * Returns a font by font file base name.
+     * @param name the file base name of the font file to load
+     * @return the font
+     * @throws IOException if the font cannot be loaded
      */
     private Font getFont(final String name) throws IOException
     {
@@ -2632,7 +2584,7 @@ public abstract class JXCSkinLoader implements JXCSkin
     }
 
     /**
-     * Optionally load an picture by base file name.
+     * Optionally loads an picture by base file name.
      * @param color if non-<code>null</code>, return <code>null</code>
      * @param name the base file name
      * @return the image, or <code>null</code> if <code>color!=null</code>
@@ -2644,12 +2596,9 @@ public abstract class JXCSkinLoader implements JXCSkin
     }
 
     /**
-     * Load an picture by base file name.
-     *
-     * @param name The base file name.
-     *
-     * @return The image.
-     *
+     * Loads a picture by base file name.
+     * @param name the base file name
+     * @return the image
      * @throws IOException if the picture cannot be loaded
      */
     private BufferedImage getPicture(final String name) throws IOException
@@ -2690,12 +2639,9 @@ public abstract class JXCSkinLoader implements JXCSkin
     }
 
     /**
-     * Return a {@link GUIText} by element name.
-     *
-     * @param name The element name.
-     *
-     * @return The <code>GUIText</code> element.
-     *
+     * Returns a {@link GUIText} by element name.
+     * @param name the element name
+     * @return the <code>GUIText</code> element
      * @throws JXCSkinException if the element name is undefined
      */
     private GUIText lookupTextElement(final String name) throws JXCSkinException
@@ -2710,12 +2656,9 @@ public abstract class JXCSkinLoader implements JXCSkin
     }
 
     /**
-     * Return a {@link AbstractLabel} by element name.
-     *
-     * @param name The element name.
-     *
-     * @return The <code>AbstractLabel</code> element.
-     *
+     * Returns a {@link AbstractLabel} by element name.
+     * @param name the element name
+     * @return the <code>AbstractLabel</code> element
      * @throws JXCSkinException if the element name is undefined
      */
     private AbstractLabel lookupLabelElement(final String name) throws JXCSkinException
