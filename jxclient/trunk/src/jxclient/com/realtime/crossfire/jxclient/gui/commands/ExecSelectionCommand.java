@@ -64,7 +64,7 @@ public class ExecSelectionCommand implements GUICommand
                     }
                     else
                     {
-                        crossfireServerConnection.sendMove(floor, item.getTag(), commandQueue.getRepeatCount());
+                        commandQueue.sendMove(floor, item.getTag());
                     }
                 }
             },

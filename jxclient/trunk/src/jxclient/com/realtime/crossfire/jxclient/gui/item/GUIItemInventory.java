@@ -176,7 +176,7 @@ public class GUIItemInventory extends GUIItemItem
             return;
         }
 
-        crossfireServerConnection.sendMove(itemsManager.getCurrentFloorManager().getCurrentFloor(), item.getTag(), commandQueue.getRepeatCount());
+        commandQueue.sendMove(itemsManager.getCurrentFloorManager().getCurrentFloor(), item.getTag());
     }
 
     /**

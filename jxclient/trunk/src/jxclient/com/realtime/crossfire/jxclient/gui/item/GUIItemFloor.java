@@ -226,7 +226,7 @@ public class GUIItemFloor extends GUIItemItem
         }
         if (itemsManager.getPlayer() != null)
         {
-            crossfireServerConnection.sendMove(itemsManager.getPlayer().getTag(), item.getTag(), commandQueue.getRepeatCount());
+            commandQueue.sendMove(itemsManager.getPlayer().getTag(), item.getTag());
         }
     }
 
