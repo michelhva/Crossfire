@@ -60,6 +60,11 @@ public class GUIItemInventory extends GUIItemItem
      */
     private final int defaultIndex;
 
+    /**
+     * The object used for synchronization on {@link #index}.
+     */
+    private final Object sync = new Object();
+
     private int index = -1;
 
     /**
@@ -71,7 +76,10 @@ public class GUIItemInventory extends GUIItemItem
         /** {@inheritDoc} */
         public void locationModified(final int index, final CfItem item)
         {
-            assert index == GUIItemInventory.this.index;
+            synchronized (sync)
+            {
+                assert index == GUIItemInventory.this.index;
+            }
             setItem(item);
         }
     };
@@ -91,7 +99,10 @@ public class GUIItemInventory extends GUIItemItem
     {
         if (distance < 0)
         {
-            return index >= -distance;
+            synchronized (sync)
+            {
+                return index >= -distance;
+            }
         }
         else if (distance > 0)
         {
@@ -102,7 +113,10 @@ public class GUIItemInventory extends GUIItemItem
             }
 
             final List<CfItem> list = itemsManager.getItems(player.getTag());
-            return index+distance < list.size();
+            synchronized (sync)
+            {
+                return index+distance < list.size();
+            }
         }
         else
         {
@@ -113,7 +127,10 @@ public class GUIItemInventory extends GUIItemItem
     /* {@inheritDoc} */
     public void scroll(final int distance)
     {
-        setIndex(index+distance);
+        synchronized (sync)
+        {
+            setIndex(index+distance);
+        }
         setChanged();
     }
 
@@ -185,7 +202,10 @@ public class GUIItemInventory extends GUIItemItem
      */
     public int getIndex()
     {
-        return index;
+        synchronized (sync)
+        {
+            return index;
+        }
     }
 
     /**
@@ -195,7 +215,7 @@ public class GUIItemInventory extends GUIItemItem
      */
     public void setIndex(final int index)
     {
-        synchronized (this)
+        synchronized (sync)
         {
             if (this.index == index)
             {
