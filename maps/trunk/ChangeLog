@@ -1,3 +1,55 @@
+2008-11-25 06:58  rjtanner
+
+	* pup_land/lone_town/shops/transport.shoppe,
+	  wolfsburg/shops/transport.shoppe: Fix for
+	  [crossfire-Bugs-2341093] Valkyrie altars nolonger working -
+	  removed and reinserted the altar archetype corrected the issue by
+	  adding 'arch altar_valkyrie_pray_event' to the altars inventory
+
+2008-11-25 03:34  lalo
+
+	* HallOfDMs: fixing altar of Valkyrie in HallOfDMs (bug 2341093) --
+	  r10708 fixed the abandoned temple
+
+2008-11-25 03:22  rjtanner
+
+	* scorn/misc/puddings.place, world/world_105_115: Move Puddings
+	  Place map to the Scorn Harbor - the acid using monsters in this
+	  map are too deadly and crual to new and unprepaired players
+
+2008-11-25 03:09  rjtanner
+
+	* scorn/misc/HouseofHealing: Added missing plural names to the
+	  balms and potions
+
+2008-11-25 03:03  rjtanner
+
+	* scorn/misc/HouseofHealing: Changes to the shop layout - more item
+	  types for sale (all levels of Potions of Life, balm of cure
+	  poison, balm of minor healing) in slightly different locations to
+	  make room for the new inventory
+
+2008-11-25 02:40  rjtanner
+
+	* scorn/misc/HouseofHealing, scorn/misc/kboldtemp1b4: Cosmetic
+	  change with how swall (fence) merges with nearby walls
+
+2008-11-24 08:37  lalo
+
+	* python/start/dragon_attune.py: oops, committed some debugging
+	  code! Sorry :-)
+
+2008-11-24 07:30  lalo
+
+	* python/start/dragon_attune.py, start/HallsOfSelection/pl_dragon:
+	  follow-up to last commit "allow player dragons to pick metabolism
+	  focus": also change player title. And I forgot to make the sea
+	  tiles blocking.
+
+2008-11-24 07:18  rjtanner
+
+	* ChangeLog: Updated ChangeLog file using svn2cl
+
 2008-11-24 07:02  rjtanner
 
 	* darcap/town2/netower, darcap/town2/nwtower, darcap/town2/setower,
