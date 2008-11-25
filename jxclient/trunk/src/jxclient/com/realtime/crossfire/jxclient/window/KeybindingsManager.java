@@ -23,8 +23,8 @@ import com.realtime.crossfire.jxclient.commands.Commands;
 import com.realtime.crossfire.jxclient.gui.keybindings.KeyBindingState;
 import com.realtime.crossfire.jxclient.gui.keybindings.KeyBindings;
 import com.realtime.crossfire.jxclient.settings.Filenames;
-import java.io.IOException;
 import java.awt.event.KeyEvent;
+import java.io.IOException;
 
 /**
  * Manages key bindings.
