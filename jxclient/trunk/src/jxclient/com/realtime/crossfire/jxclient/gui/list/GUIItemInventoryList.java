@@ -19,23 +19,19 @@
 //
 package com.realtime.crossfire.jxclient.gui.list;
 
-import com.realtime.crossfire.jxclient.faces.FacesManager;
 import com.realtime.crossfire.jxclient.gui.AbstractLabel;
 import com.realtime.crossfire.jxclient.gui.GUIElement;
 import com.realtime.crossfire.jxclient.gui.GUIElementChangedListener;
 import com.realtime.crossfire.jxclient.gui.item.GUIItemInventory;
-import com.realtime.crossfire.jxclient.gui.item.GUIItemItem;
 import com.realtime.crossfire.jxclient.gui.item.GUIItemInventoryFactory;
+import com.realtime.crossfire.jxclient.gui.item.GUIItemItem;
 import com.realtime.crossfire.jxclient.items.CfItem;
 import com.realtime.crossfire.jxclient.items.ItemsManager;
 import com.realtime.crossfire.jxclient.items.LocationsListener;
 import com.realtime.crossfire.jxclient.server.CommandQueue;
 import com.realtime.crossfire.jxclient.server.CrossfireServerConnection;
 import com.realtime.crossfire.jxclient.window.JXCWindow;
-import java.awt.Color;
-import java.awt.Font;
 import java.awt.event.InputEvent;
-import java.awt.image.BufferedImage;
 import java.util.Collection;
 import java.util.List;
 import javax.swing.JList;
