@@ -1802,6 +1802,7 @@ y 12
 end
 arch balm_generic
 name balm of major healing
+name_pl balms of major healing
 x 7
 y 12
 nrof 5
@@ -1856,6 +1857,7 @@ y 16
 end
 arch balm_generic
 name balm of cure vision
+name_pl balms of cure vision
 x 7
 y 16
 unpaid 1
@@ -2095,12 +2097,9 @@ arch shop_empty
 x 8
 y 12
 end
-arch shop_empty
-x 8
-y 12
-end
 arch balm_generic
 name balm of major healing
+name_pl balms of major healing
 x 8
 y 12
 nrof 5
@@ -2125,6 +2124,7 @@ y 14
 end
 arch balm_generic
 name balm of curing disease
+name_pl balms of curing disease
 x 8
 y 14
 level 20
@@ -2154,6 +2154,7 @@ y 16
 end
 arch balm_generic
 name balm of cure vision
+name_pl balms of cure vision
 x 8
 y 16
 unpaid 1
@@ -2420,6 +2421,7 @@ y 12
 end
 arch balm_generic
 name balm of major healing
+name_pl balms of major healing
 x 9
 y 12
 nrof 5
@@ -2444,6 +2446,7 @@ y 14
 end
 arch balm_generic
 name balm of curing disease
+name_pl balms of curing disease
 x 9
 y 14
 level 20
@@ -2473,6 +2476,7 @@ y 16
 end
 arch balm_generic
 name balm of cure vision
+name_pl balms of cure vision
 x 9
 y 16
 unpaid 1
@@ -2788,12 +2792,9 @@ arch shop_empty
 x 10
 y 12
 end
-arch shop_empty
-x 10
-y 12
-end
 arch balm_generic
 name balm of major healing
+name_pl balms of major healing
 x 10
 y 12
 nrof 5
@@ -2818,6 +2819,7 @@ y 14
 end
 arch balm_generic
 name balm of curing disease
+name_pl balms of curing disease
 x 10
 y 14
 level 20
@@ -2847,6 +2849,7 @@ y 16
 end
 arch balm_generic
 name balm of cure vision
+name_pl balms of cure vision
 x 10
 y 16
 unpaid 1
@@ -3153,6 +3156,7 @@ y 12
 end
 arch balm_generic
 name balm of major healing
+name_pl balms of major healing
 x 11
 y 12
 nrof 5
@@ -3177,6 +3181,7 @@ y 14
 end
 arch balm_generic
 name balm of curing disease
+name_pl balms of curing disease
 x 11
 y 14
 level 20
@@ -3206,6 +3211,7 @@ y 16
 end
 arch balm_generic
 name balm of cure vision
+name_pl balms of cure vision
 x 11
 y 16
 unpaid 1
@@ -3494,12 +3500,9 @@ arch shop_empty
 x 12
 y 12
 end
-arch shop_empty
-x 12
-y 12
-end
 arch balm_generic
 name balm of major healing
+name_pl balms of major healing
 x 12
 y 12
 nrof 5
@@ -3524,6 +3527,7 @@ y 14
 end
 arch balm_generic
 name balm of curing disease
+name_pl balms of curing disease
 x 12
 y 14
 level 20
@@ -3553,6 +3557,7 @@ y 16
 end
 arch balm_generic
 name balm of cure vision
+name_pl balms of cure vision
 x 12
 y 16
 unpaid 1
@@ -3584,6 +3589,7 @@ y 19
 end
 arch potion_generic
 name potion of curing madness
+name_pl potions of curing madness
 x 12
 y 19
 unpaid 1
@@ -3597,6 +3603,7 @@ y 20
 end
 arch potion_generic
 name potion of curing madness
+name_pl potions of curing madness
 x 12
 y 20
 unpaid 1
@@ -3837,6 +3844,7 @@ y 12
 end
 arch balm_generic
 name balm of major healing
+name_pl balms of major healing
 x 13
 y 12
 nrof 5
@@ -3861,6 +3869,7 @@ y 14
 end
 arch balm_generic
 name balm of curing disease
+name_pl balms of curing disease
 x 13
 y 14
 level 20
@@ -3890,6 +3899,7 @@ y 16
 end
 arch balm_generic
 name balm of cure vision
+name_pl balms of cure vision
 x 13
 y 16
 unpaid 1
@@ -3921,6 +3931,7 @@ y 19
 end
 arch potion_generic
 name potion of curing madness
+name_pl potions of curing madness
 x 13
 y 19
 unpaid 1
@@ -3934,6 +3945,7 @@ y 20
 end
 arch potion_generic
 name potion of curing madness
+name_pl potions of curing madness
 x 13
 y 20
 unpaid 1
