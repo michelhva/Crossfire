@@ -8,7 +8,7 @@ enter_x 13
 enter_y 12
 msg
 Created:  2004-04-10 Avion
-Modified: 2008-11-04 Rick Tanner
+Modified: 2008-11-25 Rick Tanner
 endmsg
 end
 arch blocked
@@ -3632,6 +3632,8 @@ arch altar_valkyrie
 x 17
 y 26
 level 120
+arch altar_valkyrie_pray_event
+end
 end
 arch tile_white_floor
 x 17
