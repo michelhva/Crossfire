@@ -41,7 +41,6 @@ import java.util.regex.Pattern;
 /**
  * Adds encoding/decoding of crossfire protocol packets to a {@link
  * ServerConnection}.
- *
  * @author Andreas Kirschbaum
  */
 public class CrossfireServerConnection extends ServerConnection
@@ -51,6 +50,10 @@ public class CrossfireServerConnection extends ServerConnection
      */
     private static final Pattern patternDot = Pattern.compile(":");
 
+    /**
+     * The {@link Charset} used for parsing or encoding strings received from
+     * or sent to the Crossfire server.
+     */
     private static final Charset utf8 = Charset.forName("UTF-8");
 
     /**
@@ -73,10 +76,19 @@ public class CrossfireServerConnection extends ServerConnection
      */
     private final List<MapSizeListener> mapSizeListeners = new ArrayList<MapSizeListener>();
 
+    /**
+     * The {@link CrossfireDrawinfoListener}s to be notified.
+     */
     private final List<CrossfireDrawinfoListener> drawinfoListeners = new ArrayList<CrossfireDrawinfoListener>();
 
+    /**
+     * The {@link CrossfireDrawextinfoListener}s to be notified.
+     */
     private final List<CrossfireDrawextinfoListener> drawextinfoListeners = new ArrayList<CrossfireDrawextinfoListener>();
 
+    /**
+     * The {@link CrossfireQueryListener}s to be notified.
+     */
     private final List<CrossfireQueryListener> queryListeners = new ArrayList<CrossfireQueryListener>();
 
     /**
@@ -216,13 +228,11 @@ public class CrossfireServerConnection extends ServerConnection
     private final SimpleDateFormat simpleDateFormat = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss,SSS ");
 
     /**
-     * Create a new instance.
-     *
-     * @param redrawSemaphore The semaphore used to synchronized map model
-     * updates and map view redraws.
-     *
-     * @param debugProtocol If non-<code>null</code>, write all protocol
-     * commands to this appender.
+     * Creates a new instance.
+     * @param redrawSemaphore the semaphore used to synchronized map model
+     * updates and map view redraws
+     * @param debugProtocol tf non-<code>null</code>, write all protocol
+     * commands to this appender
      */
     public CrossfireServerConnection(final Object redrawSemaphore, final Appendable debugProtocol)
     {
@@ -250,10 +260,8 @@ public class CrossfireServerConnection extends ServerConnection
     }
 
     /**
-     * Adds a new listener monitoring the
-     * drawinfo S-&gt;C messages.
-     * @param listener The listener to remove.
-     * @since 1.0
+     * Adds a new listener monitoring the drawinfo S-&gt;C messages.
+     * @param listener the listener to remove
      */
     public synchronized void addCrossfireDrawinfoListener(final CrossfireDrawinfoListener listener)
     {
@@ -263,8 +271,7 @@ public class CrossfireServerConnection extends ServerConnection
     /**
      * Removes the given listener from the list of objects listening to the
      * drawinfo S-&gt;C messages.
-     * @param listener The listener to remove.
-     * @since 1.0
+     * @param listener the listener to remove
      */
     public synchronized void removeCrossfireDrawinfoListener(final CrossfireDrawinfoListener listener)
     {
@@ -272,10 +279,8 @@ public class CrossfireServerConnection extends ServerConnection
     }
 
     /**
-     * Adds a new listener monitoring the
-     * drawextinfo S-&gt;C messages.
-     * @param listener The listener to remove.
-     * @since 1.0
+     * Adds a new listener monitoring the drawextinfo S-&gt;C messages.
+     * @param listener the listener to remove
      */
     public synchronized void addCrossfireDrawextinfoListener(final CrossfireDrawextinfoListener listener)
     {
@@ -285,8 +290,7 @@ public class CrossfireServerConnection extends ServerConnection
     /**
      * Removes the given listener from the list of objects listening to the
      * drawextinfo S-&gt;C messages.
-     * @param listener The listener to remove.
-     * @since 1.0
+     * @param listener the listener to remove
      */
     public synchronized void removeCrossfireDrawextinfoListener(final CrossfireDrawextinfoListener listener)
     {
@@ -294,10 +298,8 @@ public class CrossfireServerConnection extends ServerConnection
     }
 
     /**
-     * Adds a new listener monitoring the
-     * query S-&gt;C messages.
-     * @param listener The listener to remove.
-     * @since 1.0
+     * Adds a new listener monitoring the query S-&gt;C messages.
+     * @param listener the listener to remove
      */
     public synchronized void addCrossfireQueryListener(final CrossfireQueryListener listener)
     {
@@ -307,8 +309,7 @@ public class CrossfireServerConnection extends ServerConnection
     /**
      * Removes the given listener from the list of objects listening to the
      * query S-&gt;C messages.
-     * @param listener The listener to remove.
-     * @since 1.0
+     * @param listener the listener to remove
      */
     public synchronized void removeCrossfireQueryListener(final CrossfireQueryListener listener)
     {
@@ -336,8 +337,7 @@ public class CrossfireServerConnection extends ServerConnection
 
     /**
      * Add a listener to be notified about face image changes.
-     *
-     * @param listener The listener to add.
+     * @param listener the listener to add
      */
     public void addCrossfireUpdateFaceListener(final CrossfireUpdateFaceListener listener)
     {
@@ -363,9 +363,8 @@ public class CrossfireServerConnection extends ServerConnection
     }
 
     /**
-     * Add a listener to be notified about map changes.
-     *
-     * @param listener The listener to add.
+     * Adds a listener to be notified about map changes.
+     * @param listener the listener to add
      */
     public void addCrossfireUpdateMapListener(final CrossfireUpdateMapListener listener)
     {
@@ -373,9 +372,8 @@ public class CrossfireServerConnection extends ServerConnection
     }
 
     /**
-     * Add a listener to be notified about tick changes.
-     *
-     * @param listener The listener to add.
+     * Adds a listener to be notified about tick changes.
+     * @param listener the listener to add
      */
     public void addCrossfireTickListener(final CrossfireTickListener listener)
     {
@@ -383,9 +381,8 @@ public class CrossfireServerConnection extends ServerConnection
     }
 
     /**
-     * Add a listener to be notified about received sound commands.
-     *
-     * @param listener The listener to add.
+     * Adds a listener to be notified about received sound commands.
+     * @param listener the listener to add
      */
     public void addCrossfireSoundListener(final CrossfireSoundListener listener)
     {
@@ -393,9 +390,8 @@ public class CrossfireServerConnection extends ServerConnection
     }
 
     /**
-     * Add a listener to be notified about received music commands.
-     *
-     * @param listener The listener to add.
+     * Adds a listener to be notified about received music commands.
+     * @param listener the listener to add
      */
     public void addCrossfireMusicListener(final CrossfireMusicListener listener)
     {
@@ -403,9 +399,8 @@ public class CrossfireServerConnection extends ServerConnection
     }
 
     /**
-     * Add a listener to be notified about received comc commands.
-     *
-     * @param listener The listener to add.
+     * Adds a listener to be notified about received comc commands.
+     * @param listener the listener to add
      */
     public void addCrossfireComcListener(final CrossfireComcListener listener)
     {
@@ -413,9 +408,8 @@ public class CrossfireServerConnection extends ServerConnection
     }
 
     /**
-     * Add a listener to be notified about received face commands.
-     *
-     * @param listener The listener to add.
+     * Adds a listener to be notified about received face commands.
+     * @param listener the listener to add
      */
     public void addCrossfireFaceListener(final CrossfireFaceListener listener)
     {
@@ -423,9 +417,8 @@ public class CrossfireServerConnection extends ServerConnection
     }
 
     /**
-     * Add a listener to be notified about received spell commands.
-     *
-     * @param listener The listener to add.
+     * Adds a listener to be notified about received spell commands.
+     * @param listener the listener to add
      */
     public void addCrossfireSpellListener(final CrossfireSpellListener listener)
     {
@@ -1651,15 +1644,11 @@ public class CrossfireServerConnection extends ServerConnection
     }
 
     /**
-     * Process the payload data for a map2 command.
-     *
-     * @param packet The packet contents.
-     *
-     * @param start The start of the payload data to process.
-     *
-     * @param end The end of the payload data to process.
-     *
-     * @throws UnknownCommandException If the command cannot be parsed.
+     * Processes the payload data for a map2 command.
+     * @param packet the packet contents
+     * @param start the start of the payload data to process
+     * @param end the end of the payload data to process
+     * @throws UnknownCommandException if the command cannot be parsed
      */
     private void cmdMap2(final byte[] packet, final int start, final int end) throws UnknownCommandException
     {
@@ -1856,9 +1845,9 @@ public class CrossfireServerConnection extends ServerConnection
 
     /**
      * Handles the version server to client command.
-     * @param csval The client version.
-     * @param scval The server version.
-     * @param vinfo The version information string.
+     * @param csval the client version
+     * @param scval the server version
+     * @param vinfo the version information string
      */
     private void cmdVersion(final int csval, final int scval, final String vinfo)
     {
@@ -1894,12 +1883,12 @@ public class CrossfireServerConnection extends ServerConnection
 
     /**
      * Handles the replyinfo server to client command.
-     * @param infoType The info_type parameter.
-     * @param packet The packet payload data.
-     * @param startPos The starting offset into <code>packet</code> where the
-     * parameters of <code>infoType</code>'s parameter start.
-     * @param endPos The end offset into <code>packet</code>.
-     * @throws IOException If an I/O error occurs.
+     * @param infoType the info_type parameter
+     * @param packet the packet payload data
+     * @param startPos the starting offset into <code>packet</code> where the
+     * parameters of <code>infoType</code>'s parameter start
+     * @param endPos the end offset into <code>packet</code>
+     * @throws IOException if an I/O error occurs
      */
     private void cmdReplyinfo(final String infoType, final byte[] packet, final int startPos, final int endPos) throws IOException
     {
@@ -2061,8 +2050,8 @@ public class CrossfireServerConnection extends ServerConnection
 
     /**
      * Handles the setup server to client command.
-     * @param options The option/value pairs.
-     * @throws UnknownCommandException If a protocol error occurs
+     * @param options the option/value pairs
+     * @throws UnknownCommandException if a protocol error occurs
      */
     private void cmdSetup(final List<String> options) throws UnknownCommandException
     {
@@ -2171,13 +2160,17 @@ public class CrossfireServerConnection extends ServerConnection
      * @param buf the parameter buffer
      * @param start the starting index into <code>buf</code>
      * @param length the length of the parameter buffer
-     * @since 1.0
      */
     private void cmdMapextended(final byte[] buf, final int start, final int length)
     {
         // XXX: "MapExtended" command not yet implemented
     }
 
+    /**
+     * Pretends that a drawinfo message has been received.
+     * @param message the message
+     * @param color the color
+     */
     public void drawInfo(final String message, final int color)
     {
         final CrossfireCommandDrawinfoEvent evt = new CrossfireCommandDrawinfoEvent(this, message, color);
@@ -2188,7 +2181,7 @@ public class CrossfireServerConnection extends ServerConnection
     }
 
     /**
-     * Send an "addme" command to the server.
+     * Sends an "addme" command to the server.
      */
     public void sendAddme()
     {
@@ -2200,8 +2193,7 @@ public class CrossfireServerConnection extends ServerConnection
     }
 
     /**
-     * Send an "apply" command to the server.
-     *
+     * Sends an "apply" command to the server.
      * @param tag the item to apply
      */
     public void sendApply(final int tag)
@@ -2220,8 +2212,7 @@ public class CrossfireServerConnection extends ServerConnection
     }
 
     /**
-     * Send an "askface" command to the server.
-     *
+     * Sends an "askface" command to the server.
      * @param num the face to query
      */
     public void sendAskface(final int num)
@@ -2240,8 +2231,7 @@ public class CrossfireServerConnection extends ServerConnection
     }
 
     /**
-     * Send an "examine" command to the server.
-     *
+     * Sends an "examine" command to the server.
      * @param tag the item to examine
      */
     public void sendExamine(final int tag)
@@ -2260,10 +2250,8 @@ public class CrossfireServerConnection extends ServerConnection
     }
 
     /**
-     * Send a "lock" command to the server.
-     *
+     * Sends a "lock" command to the server.
      * @param val whether to lock the item
-     *
      * @param tag the item to lock
      */
     public void sendLock(final boolean val, final int tag)
@@ -2283,11 +2271,9 @@ public class CrossfireServerConnection extends ServerConnection
     }
 
     /**
-     * Send a "lookat" command to the server.
-     *
-     * @param dx The x-coordinate in tiles, relative to the player.
-     *
-     * @param dy The y-coordinate in tiles, relative to the player.
+     * Sends a "lookat" command to the server.
+     * @param dx the x-coordinate in tiles, relative to the player
+     * @param dy the y-coordinate in tiles, relative to the player
      */
     public void sendLookat(final int dx, final int dy)
     {
@@ -2307,8 +2293,7 @@ public class CrossfireServerConnection extends ServerConnection
     }
 
     /**
-     * Send a "mark" command to the server.
-     *
+     * Sends a "mark" command to the server.
      * @param tag the item to mark
      */
     public void sendMark(final int tag)
@@ -2327,12 +2312,9 @@ public class CrossfireServerConnection extends ServerConnection
     }
 
     /**
-     * Send a "move" command to the server.
-     *
+     * Sends a "move" command to the server.
      * @param to the destination location
-     *
      * @param tag the item to move
-     *
      * @param nrof the number of items to move
      */
     public void sendMove(final int to, final int tag, final int nrof)
@@ -2355,12 +2337,9 @@ public class CrossfireServerConnection extends ServerConnection
     }
 
     /**
-     * Send a "ncom" command to the server.
-     *
+     * Sends a "ncom" command to the server.
      * @param repeat the repeat count
-     *
      * @param command the command
-     *
      * @return the packet id
      */
     public int sendNcom(final int repeat, final String command)
@@ -2384,8 +2363,7 @@ public class CrossfireServerConnection extends ServerConnection
     }
 
     /**
-     * Send a "reply" command to the server.
-     *
+     * Sends a "reply" command to the server.
      * @param text the text to reply
      */
     public void sendReply(final String text)
@@ -2404,8 +2382,7 @@ public class CrossfireServerConnection extends ServerConnection
     }
 
     /**
-     * Send a "requestinfo" command to the server.
-     *
+     * Sends a "requestinfo" command to the server.
      * @param infoType the info type to request
      */
     public void sendRequestinfo(final String infoType)
@@ -2424,8 +2401,7 @@ public class CrossfireServerConnection extends ServerConnection
     }
 
     /**
-     * Send a "setup" command to the server.
-     *
+     * Sends a "setup" command to the server.
      * @param options the option/value pairs to send
      */
     public void sendSetup(final String... options)
@@ -2455,8 +2431,7 @@ public class CrossfireServerConnection extends ServerConnection
     }
 
     /**
-     * Send a "toggleextendedtext" command to the server.
-     *
+     * Sends a "toggleextendedtext" command to the server.
      * @param types the types to request
      */
     public void sendToggleextendedtext(final int... types)
@@ -2484,12 +2459,9 @@ public class CrossfireServerConnection extends ServerConnection
     }
 
     /**
-     * Send a "version" command to the server.
-     *
+     * Sends a "version" command to the server.
      * @param csval the client version number
-     *
      * @param scval the server version number
-     *
      * @param vinfo the client identification string
      */
     public void sendVersion(final int csval, final int scval, final String vinfo)
@@ -2512,9 +2484,8 @@ public class CrossfireServerConnection extends ServerConnection
     }
 
     /**
-     * Append an integer in decimal ASCII representation to {@link
+     * Appends an integer in decimal ASCII representation to {@link
      * #byteBuffer}.
-     *
      * @param value the value to append
      */
     private void putDecimal(final int value)
@@ -2538,12 +2509,9 @@ public class CrossfireServerConnection extends ServerConnection
     }
 
     /**
-     * Parse a character into an integer.
-     *
+     * Parses a character into an integer.
      * @param ch the character to parse
-     *
      * @return the integer representing the character
-     *
      * @throws UnknownCommandException if <code>ch</code> is not a digit
      */
     private static int parseDigit(final byte ch) throws UnknownCommandException
@@ -2557,9 +2525,8 @@ public class CrossfireServerConnection extends ServerConnection
     }
 
     /**
-     * Write a message to the debug protocol.
-     *
-     * @param str The message to write.
+     * Writes a message to the debug protocol.
+     * @param str the message to write
      */
     private void debugProtocolWrite(final String str)
     {
@@ -2632,7 +2599,7 @@ public class CrossfireServerConnection extends ServerConnection
     }
 
     /**
-     * Return the map width in tiles.
+     * Returns the map width in tiles.
      * @return the map width
      */
     public int getMapWidth()
@@ -2641,7 +2608,7 @@ public class CrossfireServerConnection extends ServerConnection
     }
 
     /**
-     * Return the map height in tiles.
+     * Returns the map height in tiles.
      * @return the map height
      */
     public int getMapHeight()
