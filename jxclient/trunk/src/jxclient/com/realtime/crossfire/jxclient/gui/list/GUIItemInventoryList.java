@@ -25,6 +25,7 @@ import com.realtime.crossfire.jxclient.gui.GUIElement;
 import com.realtime.crossfire.jxclient.gui.GUIElementChangedListener;
 import com.realtime.crossfire.jxclient.gui.item.GUIItemInventory;
 import com.realtime.crossfire.jxclient.gui.item.GUIItemItem;
+import com.realtime.crossfire.jxclient.gui.item.GUIItemInventoryFactory;
 import com.realtime.crossfire.jxclient.items.CfItem;
 import com.realtime.crossfire.jxclient.items.ItemsManager;
 import com.realtime.crossfire.jxclient.items.LocationsListener;
@@ -50,53 +51,17 @@ public class GUIItemInventoryList extends GUIItemList
      */
     private static final long serialVersionUID = 1;
 
-    private final JXCWindow window;
+    /**
+     * The {@link GUIItemInventoryFactory} for creating new {@link
+     * GUIItemInventory} instances.
+     */
+    private final GUIItemInventoryFactory itemInventoryFactory;
 
     private final CommandQueue commandQueue;
 
-    private final String name;
-
-    private final BufferedImage cursedImage;
-
-    private final BufferedImage damnedImage;
-
-    private final BufferedImage magicImage;
-
-    private final BufferedImage blessedImage;
-
-    private final BufferedImage appliedImage;
-
-    private final BufferedImage selectorImage;
-
-    private final BufferedImage lockedImage;
-
-    private final BufferedImage unpaidImage;
-
-    private final Color cursedColor;
-
-    private final Color damnedColor;
-
-    private final Color magicColor;
-
-    private final Color blessedColor;
-
-    private final Color appliedColor;
-
-    private final Color selectorColor;
-
-    private final Color lockedColor;
-
-    private final Color unpaidColor;
-
     private final CrossfireServerConnection crossfireServerConnection;
 
-    private final FacesManager facesManager;
-
     private final ItemsManager itemsManager;
-
-    private final Font font;
-
-    private final Color nrofColor;
 
     /**
      * The label to update with information about the selected item.
@@ -142,34 +107,16 @@ public class GUIItemInventoryList extends GUIItemList
      * @param h the height for drawing this element to screen
      * @param cellHeight the height of each cell
      * @param currentItem the label to update with information about the selected item.
+     * @param itemInventoryFactory the factory for creating item inventory
+     * instances
      */
-    public GUIItemInventoryList(final JXCWindow window, final CommandQueue commandQueue, final String name, final int x, final int y, final int w, final int h, final int cellHeight, final BufferedImage cursedImage, final BufferedImage damnedImage, final BufferedImage magicImage, final BufferedImage blessedImage, final BufferedImage appliedImage, final BufferedImage selectorImage, final BufferedImage lockedImage, final BufferedImage unpaidImage, final Color cursedColor, final Color damnedColor, final Color magicColor, final Color blessedColor, final Color appliedColor, final Color selectorColor, final Color lockedColor, final Color unpaidColor, final CrossfireServerConnection crossfireServerConnection, final FacesManager facesManager, final ItemsManager itemsManager, final Font font, final Color nrofColor, final AbstractLabel currentItem)
+    public GUIItemInventoryList(final JXCWindow window, final CommandQueue commandQueue, final String name, final int x, final int y, final int w, final int h, final int cellHeight, final CrossfireServerConnection crossfireServerConnection, final ItemsManager itemsManager, final AbstractLabel currentItem, final GUIItemInventoryFactory itemInventoryFactory)
     {
-        super(window, name, x, y, w, h, cellHeight, new ItemInventoryCellRenderer(new GUIItemInventory(window, commandQueue, name+"_template", 0, 0, cellHeight, cellHeight, cursedImage, damnedImage, magicImage, blessedImage, appliedImage, selectorImage, lockedImage, unpaidImage, cursedColor, damnedColor, magicColor, blessedColor, appliedColor, selectorColor, lockedColor, unpaidColor, -1, crossfireServerConnection, facesManager, itemsManager, font, nrofColor)));
-        this.window = window;
+        super(window, name, x, y, w, h, cellHeight, new ItemInventoryCellRenderer(itemInventoryFactory.newTemplateItemInventory(cellHeight)));
+        this.itemInventoryFactory = itemInventoryFactory;
         this.commandQueue = commandQueue;
-        this.name = name;
-        this.cursedImage = cursedImage;
-        this.damnedImage = damnedImage;
-        this.magicImage = magicImage;
-        this.blessedImage = blessedImage;
-        this.appliedImage = appliedImage;
-        this.selectorImage = selectorImage;
-        this.lockedImage = lockedImage;
-        this.unpaidImage = unpaidImage;
-        this.cursedColor = cursedColor;
-        this.damnedColor = damnedColor;
-        this.magicColor = magicColor;
-        this.blessedColor = blessedColor;
-        this.appliedColor = appliedColor;
-        this.selectorColor = selectorColor;
-        this.lockedColor = lockedColor;
-        this.unpaidColor = unpaidColor;
         this.crossfireServerConnection = crossfireServerConnection;
-        this.facesManager = facesManager;
         this.itemsManager = itemsManager;
-        this.font = font;
-        this.nrofColor = nrofColor;
         this.currentItem = currentItem;
         setLayoutOrientation(JList.HORIZONTAL_WRAP, -1);
         itemsManager.getInventoryManager().addLocationsListener(locationsListener);
@@ -188,7 +135,7 @@ public class GUIItemInventoryList extends GUIItemList
             final int oldSize = resizeElements(newSize);
             for (int i = oldSize; i < newSize; i++)
             {
-                final GUIItemInventory item = new GUIItemInventory(window, commandQueue, name+i, 0, 0, 1, 1, cursedImage, damnedImage, magicImage, blessedImage, appliedImage, selectorImage, lockedImage, unpaidImage, cursedColor, damnedColor, magicColor, blessedColor, appliedColor, selectorColor, lockedColor, unpaidColor, i, crossfireServerConnection, facesManager, itemsManager, font, nrofColor);
+                final GUIItemInventory item = itemInventoryFactory.newItemInventory(i);
                 addElement(item);
                 item.setChangedListener(itemChangedListener);
                 assert item.isElementVisible();

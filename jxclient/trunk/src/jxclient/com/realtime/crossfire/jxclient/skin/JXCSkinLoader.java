@@ -76,6 +76,7 @@ import com.realtime.crossfire.jxclient.gui.gauge.StatGaugeUpdater;
 import com.realtime.crossfire.jxclient.gui.item.GUIItem;
 import com.realtime.crossfire.jxclient.gui.item.GUIItemFloor;
 import com.realtime.crossfire.jxclient.gui.item.GUIItemInventory;
+import com.realtime.crossfire.jxclient.gui.item.GUIItemInventoryFactory;
 import com.realtime.crossfire.jxclient.gui.item.GUIItemShortcut;
 import com.realtime.crossfire.jxclient.gui.item.GUIItemSpelllist;
 import com.realtime.crossfire.jxclient.gui.keybindings.InvalidKeyBindingException;
@@ -1210,7 +1211,8 @@ public abstract class JXCSkinLoader implements JXCSkin
                             final Color nrofColor = parseColor(args[16]);
                             final AbstractLabel selectedItem = args[17].equals("null") ? null : lookupLabelElement(args[17]);
 
-                            final GUIItemInventoryList element = new GUIItemInventoryList(window, commandQueue, name, x, y, w, h, cellHeight, cursedImage, damnedImage, magicImage, blessedImage, appliedImage, selectorImage, lockedImage, unpaidImage, cursedColor, damnedColor, magicColor, blessedColor, appliedColor, selectorColor, lockedColor, unpaidColor, server, facesManager, itemsManager, font, nrofColor, selectedItem);
+                            final GUIItemInventoryFactory itemInventoryFactory = new GUIItemInventoryFactory(window, commandQueue, name, cursedImage, damnedImage, magicImage, blessedImage, appliedImage, selectorImage, lockedImage, unpaidImage, cursedColor, damnedColor, magicColor, blessedColor, appliedColor, selectorColor, lockedColor, unpaidColor, server, facesManager, itemsManager, font, nrofColor);
+                            final GUIItemInventoryList element = new GUIItemInventoryList(window, commandQueue, name, x, y, w, h, cellHeight, server, itemsManager, selectedItem, itemInventoryFactory);
                             definedGUIElements.insert(name, element);
                         }
                         else if (gui != null && args[0].equals("item"))
