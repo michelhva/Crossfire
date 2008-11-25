@@ -1,3 +1,16 @@
+2008-11-25 07:05  rjtanner
+
+	* HallOfDMs, pup_land/lone_town/shops/transport.shoppe,
+	  scorn/misc/kboldtemp1b4, wolfsburg/shops/transport.shoppe:
+	  Backport from trunk; Fix for [crossfire-Bugs-2341093] Valkyrie
+	  altars nolonger working - removed and reinserted the altar
+	  archetype corrected the issue by adding 'arch
+	  altar_valkyrie_pray_event' to the altars inventory
+
+2008-11-24 07:18  rjtanner
+
+	* ChangeLog: Updated ChangeLog file using svn2cl
+
 2008-11-24 07:09  rjtanner
 
 	* start/HallsOfSelection/wraith_player: Backport from trunk, fix
