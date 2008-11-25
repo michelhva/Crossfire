@@ -104,7 +104,7 @@ public class CommandQueue
      *
      * @return The current repeat count.
      */
-    public int getRepeatCount()
+    private int getRepeatCount()
     {
         final int oldRepeatCount = repeatCount;
         resetRepeatCount();
@@ -217,5 +217,16 @@ public class CommandQueue
     public boolean checkRun()
     {
         return isRunning;
+    }
+
+    /**
+     * Sends a "move" command to the server. The repeat count value is the
+     * client's current repeat count.
+     * @param to the destination location
+     * @param tag the item to move
+     */
+    public void sendMove(final int to, final int tag)
+    {
+        crossfireServerConnection.sendMove(to, tag, getRepeatCount());
     }
 }

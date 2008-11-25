@@ -253,7 +253,7 @@ public class GUIItemInventoryList extends GUIItemList
         }
         else
         {
-            crossfireServerConnection.sendMove(itemsManager.getCurrentFloorManager().getCurrentFloor(), item.getTag(), commandQueue.getRepeatCount());
+            commandQueue.sendMove(itemsManager.getCurrentFloorManager().getCurrentFloor(), item.getTag());
         }
     }
 }
