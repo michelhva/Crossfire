@@ -1753,13 +1753,11 @@ arch shop_empty
 x 7
 y 8
 end
-arch potion_heal
+arch major_potion_restoration
 x 7
 y 8
 unpaid 1
 identified 1
-arch spell_heal
-end
 end
 arch shop_empty
 x 7
@@ -1777,13 +1775,11 @@ arch shop_empty
 x 7
 y 10
 end
-arch potion_magic
+arch medium_potion_restoration
 x 7
 y 10
 unpaid 1
 identified 1
-arch spell_regenerate_spellpoints
-end
 end
 arch shop_empty
 x 7
@@ -1818,15 +1814,11 @@ arch shop_empty
 x 7
 y 13
 end
-arch balm_generic
-name balm of major healing
+arch minor_potion_restoration
 x 7
 y 13
-nrof 5
 unpaid 1
 identified 1
-arch spell_major_healing
-end
 end
 arch shop_empty
 x 7
@@ -1834,6 +1826,7 @@ y 14
 end
 arch balm_generic
 name balm of curing disease
+name_pl balms of curing disease
 x 7
 y 14
 level 20
@@ -1847,13 +1840,14 @@ x 7
 y 15
 end
 arch balm_generic
-name balm of curing disease
+name balm of curing poison
+name_pl balms of curing poison
 x 7
 y 15
 level 20
 unpaid 1
 identified 1
-arch spell_cure_disease
+arch spell_cure_poison
 end
 end
 arch shop_empty
@@ -1874,12 +1868,13 @@ x 7
 y 17
 end
 arch balm_generic
-name balm of cure vision
+name balm of minor healing
+name_pl balms of minor healing
 x 7
 y 17
 unpaid 1
 identified 1
-arch spell_cure_blindness
+arch spell_minor_healing
 end
 end
 arch shop_empty
@@ -2041,21 +2036,60 @@ arch shop_empty
 x 8
 y 7
 end
+arch potion_heal
+x 8
+y 7
+unpaid 1
+identified 1
+arch spell_heal
+end
+end
 arch shop_empty
 x 8
 y 8
+end
+arch major_potion_restoration
+x 8
+y 8
+unpaid 1
+identified 1
 end
 arch shop_empty
 x 8
 y 9
 end
+arch potion_magic
+x 8
+y 9
+unpaid 1
+identified 1
+arch spell_regenerate_spellpoints
+end
+end
 arch shop_empty
 x 8
 y 10
 end
+arch medium_potion_restoration
+x 8
+y 10
+unpaid 1
+identified 1
+end
 arch shop_empty
 x 8
 y 11
+end
+arch staff
+name staff of healing
+food 20
+x 8
+y 11
+randomitems none
+unpaid 1
+identified 1
+arch spell_major_healing
+end
 end
 arch shop_empty
 x 8
@@ -2063,23 +2097,83 @@ y 12
 end
 arch shop_empty
 x 8
+y 12
+end
+arch balm_generic
+name balm of major healing
+x 8
+y 12
+nrof 5
+unpaid 1
+identified 1
+arch spell_major_healing
+end
+end
+arch shop_empty
+x 8
 y 13
+end
+arch minor_potion_restoration
+x 8
+y 13
+unpaid 1
+identified 1
 end
 arch shop_empty
 x 8
 y 14
 end
+arch balm_generic
+name balm of curing disease
+x 8
+y 14
+level 20
+unpaid 1
+identified 1
+arch spell_cure_disease
+end
+end
 arch shop_empty
 x 8
 y 15
+end
+arch balm_generic
+name balm of curing poison
+name_pl balms of curing poison
+x 8
+y 15
+level 20
+unpaid 1
+identified 1
+arch spell_cure_poison
+end
 end
 arch shop_empty
 x 8
 y 16
 end
+arch balm_generic
+name balm of cure vision
+x 8
+y 16
+unpaid 1
+identified 1
+arch spell_cure_blindness
+end
+end
 arch shop_empty
 x 8
 y 17
+end
+arch balm_generic
+name balm of minor healing
+name_pl balms of minor healing
+x 8
+y 17
+unpaid 1
+identified 1
+arch spell_minor_healing
+end
 end
 arch shop_empty
 x 8
@@ -2277,13 +2371,11 @@ arch shop_empty
 x 9
 y 8
 end
-arch potion_heal
+arch major_potion_restoration
 x 9
 y 8
 unpaid 1
 identified 1
-arch spell_heal
-end
 end
 arch shop_empty
 x 9
@@ -2301,13 +2393,11 @@ arch shop_empty
 x 9
 y 10
 end
-arch potion_magic
+arch medium_potion_restoration
 x 9
 y 10
 unpaid 1
 identified 1
-arch spell_regenerate_spellpoints
-end
 end
 arch shop_empty
 x 9
@@ -2342,15 +2432,11 @@ arch shop_empty
 x 9
 y 13
 end
-arch balm_generic
-name balm of major healing
+arch minor_potion_restoration
 x 9
 y 13
-nrof 5
 unpaid 1
 identified 1
-arch spell_major_healing
-end
 end
 arch shop_empty
 x 9
@@ -2371,13 +2457,14 @@ x 9
 y 15
 end
 arch balm_generic
-name balm of curing disease
+name balm of curing poison
+name_pl balms of curing poison
 x 9
 y 15
 level 20
 unpaid 1
 identified 1
-arch spell_cure_disease
+arch spell_cure_poison
 end
 end
 arch shop_empty
@@ -2398,12 +2485,13 @@ x 9
 y 17
 end
 arch balm_generic
-name balm of cure vision
+name balm of minor healing
+name_pl balms of minor healing
 x 9
 y 17
 unpaid 1
 identified 1
-arch spell_cure_blindness
+arch spell_minor_healing
 end
 end
 arch shop_empty
@@ -2641,21 +2729,60 @@ arch shop_empty
 x 10
 y 7
 end
+arch potion_heal
+x 10
+y 7
+unpaid 1
+identified 1
+arch spell_heal
+end
+end
 arch shop_empty
 x 10
 y 8
+end
+arch major_potion_restoration
+x 10
+y 8
+unpaid 1
+identified 1
 end
 arch shop_empty
 x 10
 y 9
 end
+arch potion_magic
+x 10
+y 9
+unpaid 1
+identified 1
+arch spell_regenerate_spellpoints
+end
+end
 arch shop_empty
 x 10
 y 10
 end
+arch medium_potion_restoration
+x 10
+y 10
+unpaid 1
+identified 1
+end
 arch shop_empty
 x 10
 y 11
+end
+arch staff
+name staff of healing
+food 20
+x 10
+y 11
+randomitems none
+unpaid 1
+identified 1
+arch spell_major_healing
+end
 end
 arch shop_empty
 x 10
@@ -2663,23 +2790,83 @@ y 12
 end
 arch shop_empty
 x 10
+y 12
+end
+arch balm_generic
+name balm of major healing
+x 10
+y 12
+nrof 5
+unpaid 1
+identified 1
+arch spell_major_healing
+end
+end
+arch shop_empty
+x 10
 y 13
+end
+arch minor_potion_restoration
+x 10
+y 13
+unpaid 1
+identified 1
 end
 arch shop_empty
 x 10
 y 14
 end
+arch balm_generic
+name balm of curing disease
+x 10
+y 14
+level 20
+unpaid 1
+identified 1
+arch spell_cure_disease
+end
+end
 arch shop_empty
 x 10
 y 15
+end
+arch balm_generic
+name balm of curing poison
+name_pl balms of curing poison
+x 10
+y 15
+level 20
+unpaid 1
+identified 1
+arch spell_cure_poison
+end
 end
 arch shop_empty
 x 10
 y 16
 end
+arch balm_generic
+name balm of cure vision
+x 10
+y 16
+unpaid 1
+identified 1
+arch spell_cure_blindness
+end
+end
 arch shop_empty
 x 10
 y 17
+end
+arch balm_generic
+name balm of minor healing
+name_pl balms of minor healing
+x 10
+y 17
+unpaid 1
+identified 1
+arch spell_minor_healing
+end
 end
 arch shop_empty
 x 10
@@ -2917,13 +3104,11 @@ arch shop_empty
 x 11
 y 8
 end
-arch potion_heal
+arch major_potion_restoration
 x 11
 y 8
 unpaid 1
 identified 1
-arch spell_heal
-end
 end
 arch shop_empty
 x 11
@@ -2941,13 +3126,11 @@ arch shop_empty
 x 11
 y 10
 end
-arch potion_magic
+arch medium_potion_restoration
 x 11
 y 10
 unpaid 1
 identified 1
-arch spell_regenerate_spellpoints
-end
 end
 arch shop_empty
 x 11
@@ -2982,15 +3165,11 @@ arch shop_empty
 x 11
 y 13
 end
-arch balm_generic
-name balm of major healing
+arch minor_potion_restoration
 x 11
 y 13
-nrof 5
 unpaid 1
 identified 1
-arch spell_major_healing
-end
 end
 arch shop_empty
 x 11
@@ -3011,13 +3190,14 @@ x 11
 y 15
 end
 arch balm_generic
-name balm of curing disease
+name balm of curing poison
+name_pl balms of curing poison
 x 11
 y 15
 level 20
 unpaid 1
 identified 1
-arch spell_cure_disease
+arch spell_cure_poison
 end
 end
 arch shop_empty
@@ -3038,12 +3218,13 @@ x 11
 y 17
 end
 arch balm_generic
-name balm of cure vision
+name balm of minor healing
+name_pl balms of minor healing
 x 11
 y 17
 unpaid 1
 identified 1
-arch spell_cure_blindness
+arch spell_minor_healing
 end
 end
 arch shop_empty
@@ -3254,21 +3435,60 @@ arch shop_empty
 x 12
 y 7
 end
+arch potion_heal
+x 12
+y 7
+unpaid 1
+identified 1
+arch spell_heal
+end
+end
 arch shop_empty
 x 12
 y 8
+end
+arch major_potion_restoration
+x 12
+y 8
+unpaid 1
+identified 1
 end
 arch shop_empty
 x 12
 y 9
 end
+arch potion_magic
+x 12
+y 9
+unpaid 1
+identified 1
+arch spell_regenerate_spellpoints
+end
+end
 arch shop_empty
 x 12
 y 10
 end
+arch medium_potion_restoration
+x 12
+y 10
+unpaid 1
+identified 1
+end
 arch shop_empty
 x 12
 y 11
+end
+arch staff
+name staff of healing
+food 20
+x 12
+y 11
+randomitems none
+unpaid 1
+identified 1
+arch spell_major_healing
+end
 end
 arch shop_empty
 x 12
@@ -3276,23 +3496,83 @@ y 12
 end
 arch shop_empty
 x 12
+y 12
+end
+arch balm_generic
+name balm of major healing
+x 12
+y 12
+nrof 5
+unpaid 1
+identified 1
+arch spell_major_healing
+end
+end
+arch shop_empty
+x 12
 y 13
+end
+arch minor_potion_restoration
+x 12
+y 13
+unpaid 1
+identified 1
 end
 arch shop_empty
 x 12
 y 14
 end
+arch balm_generic
+name balm of curing disease
+x 12
+y 14
+level 20
+unpaid 1
+identified 1
+arch spell_cure_disease
+end
+end
 arch shop_empty
 x 12
 y 15
+end
+arch balm_generic
+name balm of curing poison
+name_pl balms of curing poison
+x 12
+y 15
+level 20
+unpaid 1
+identified 1
+arch spell_cure_poison
+end
 end
 arch shop_empty
 x 12
 y 16
 end
+arch balm_generic
+name balm of cure vision
+x 12
+y 16
+unpaid 1
+identified 1
+arch spell_cure_blindness
+end
+end
 arch shop_empty
 x 12
 y 17
+end
+arch balm_generic
+name balm of minor healing
+name_pl balms of minor healing
+x 12
+y 17
+unpaid 1
+identified 1
+arch spell_minor_healing
+end
 end
 arch shop_empty
 x 12
@@ -3301,6 +3581,15 @@ end
 arch shop_empty
 x 12
 y 19
+end
+arch potion_generic
+name potion of curing madness
+x 12
+y 19
+unpaid 1
+identified 1
+arch spell_cure_confusion
+end
 end
 arch shop_empty
 x 12
@@ -3499,13 +3788,11 @@ arch shop_empty
 x 13
 y 8
 end
-arch potion_heal
+arch major_potion_restoration
 x 13
 y 8
 unpaid 1
 identified 1
-arch spell_heal
-end
 end
 arch shop_empty
 x 13
@@ -3523,13 +3810,11 @@ arch shop_empty
 x 13
 y 10
 end
-arch potion_magic
+arch medium_potion_restoration
 x 13
 y 10
 unpaid 1
 identified 1
-arch spell_regenerate_spellpoints
-end
 end
 arch shop_empty
 x 13
@@ -3564,15 +3849,11 @@ arch shop_empty
 x 13
 y 13
 end
-arch balm_generic
-name balm of major healing
+arch minor_potion_restoration
 x 13
 y 13
-nrof 5
 unpaid 1
 identified 1
-arch spell_major_healing
-end
 end
 arch shop_empty
 x 13
@@ -3593,13 +3874,14 @@ x 13
 y 15
 end
 arch balm_generic
-name balm of curing disease
+name balm of curing poison
+name_pl balms of curing poison
 x 13
 y 15
 level 20
 unpaid 1
 identified 1
-arch spell_cure_disease
+arch spell_cure_poison
 end
 end
 arch shop_empty
@@ -3620,12 +3902,13 @@ x 13
 y 17
 end
 arch balm_generic
-name balm of cure vision
+name balm of minor healing
+name_pl balms of minor healing
 x 13
 y 17
 unpaid 1
 identified 1
-arch spell_cure_blindness
+arch spell_minor_healing
 end
 end
 arch shop_empty
