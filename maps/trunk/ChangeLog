@@ -1,3 +1,56 @@
+2008-11-26 02:07  rjtanner
+
+	* world/world_105_115: Insert missing ground tiles (grass) and lake
+	  tile to central area of Scorn
+
+2008-11-26 02:05  rjtanner
+
+	* world/world_105_115: Update building name to match internal map
+	  name
+
+2008-11-26 02:03  rjtanner
+
+	* scorn/houses/smithery: Cosmetic change, inserted a floor tile (vs
+	  lava) underneath the dwarven blacksmith
+
+2008-11-26 01:34  rjtanner
+
+	* styles/specialmaps/minitrade, styles/specialmaps/tinytrade,
+	  styles/specialmaps/tradingpost: Cosmetic wall changes for nicer
+	  merging
+
+2008-11-26 01:30  rjtanner
+
+	* styles/specialmaps/abattoir, styles/specialmaps/doorhome,
+	  styles/specialmaps/fake_heal_post, styles/specialmaps/haven,
+	  styles/specialmaps/healing_post, styles/specialmaps/mini_forge,
+	  styles/specialmaps/mini_jewlery, styles/specialmaps/mini_kitchen,
+	  styles/specialmaps/mini_tanner, styles/specialmaps/mini_thaum,
+	  styles/specialmaps/mini_workbench, styles/specialmaps/minialch,
+	  styles/specialmaps/miniarmory,
+	  styles/specialmaps/minichapel_demon,
+	  styles/specialmaps/minichapel_devourers,
+	  styles/specialmaps/minichapel_gaea,
+	  styles/specialmaps/minichapel_rugguli,
+	  styles/specialmaps/minilarder, styles/specialmaps/ministudy,
+	  styles/specialmaps/minitrade, styles/specialmaps/powerroom,
+	  styles/specialmaps/study, styles/specialmaps/tinytrade,
+	  styles/specialmaps/tradingpost, styles/specialmaps/turret,
+	  styles/specialmaps/turret2, styles/specialmaps/turretswarm,
+	  styles/specialmaps/turrettrap: Update maps in styles/specialmaps/
+	  with unique and more descriptive map names
+
+2008-11-26 01:17  rjtanner
+
+	* styles/specialmaps/minitrade, styles/specialmaps/tinytrade,
+	  styles/specialmaps/tradingpost: Update 'store maps' in
+	  styles/specialmaps/ with shop header code, these are the small
+	  shops that are sometimes found in randomly generated maps
+
+2008-11-25 07:30  rjtanner
+
+	* ChangeLog: Updated ChangeLog file using svn2cl
+
 2008-11-25 06:58  rjtanner
 
 	* pup_land/lone_town/shops/transport.shoppe,
