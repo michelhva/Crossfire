@@ -82,80 +82,58 @@ public class JXClient
                 final OutputStreamWriter debugProtocolOutputStreamWriter = debugProtocolFileOutputStream == null ? null : new OutputStreamWriter(debugProtocolFileOutputStream, "UTF-8");
                 try
                 {
-                    final BufferedWriter debugProtocolBufferedWriter = debugProtocolOutputStreamWriter == null ? null : new BufferedWriter(debugProtocolOutputStreamWriter);
+                    final FileOutputStream debugKeyboardFileOutputStream = options.getDebugKeyboardFilename() == null ? null : new FileOutputStream(options.getDebugKeyboardFilename());
                     try
                     {
-                        final FileOutputStream debugKeyboardFileOutputStream = options.getDebugKeyboardFilename() == null ? null : new FileOutputStream(options.getDebugKeyboardFilename());
+                        final OutputStreamWriter debugKeyboardOutputStreamWriter = debugKeyboardFileOutputStream == null ? null : new OutputStreamWriter(debugKeyboardFileOutputStream, "UTF-8");
                         try
                         {
-                            final OutputStreamWriter debugKeyboardOutputStreamWriter = debugKeyboardFileOutputStream == null ? null : new OutputStreamWriter(debugKeyboardFileOutputStream, "UTF-8");
+                            final OptionManager optionManager = new OptionManager(options.getPrefs());
+                            final Object terminateSync = new Object();
+                            final JXCWindow window = new JXCWindow(terminateSync, options.isDebugGui(), debugProtocolOutputStreamWriter, debugKeyboardOutputStreamWriter, options.getPrefs(), soundManager, optionManager);
                             try
                             {
-                                final BufferedWriter debugKeyboardBufferedWriter = debugKeyboardOutputStreamWriter == null ? null : new BufferedWriter(debugKeyboardOutputStreamWriter);
-                                try
-                                {
-                                    final OptionManager optionManager = new OptionManager(options.getPrefs());
-                                    final Object terminateSync = new Object();
-                                    final JXCWindow window = new JXCWindow(terminateSync, options.isDebugGui(), debugProtocolBufferedWriter, debugKeyboardBufferedWriter, options.getPrefs(), soundManager, optionManager);
-                                    try
-                                    {
-                                        optionManager.addOption("sound_enabled", "Whether sound is enabled.", new SoundCheckBoxOption(soundManager));
-                                    }
-                                    catch (final OptionException ex)
-                                    {
-                                        throw new AssertionError();
-                                    }
-
-                                    synchronized (terminateSync)
-                                    {
-                                        SwingUtilities.invokeAndWait(new Runnable()
-                                        {
-                                            /** {@inheritDoc} */
-                                            public void run()
-                                            {
-                                                window.init(options.getResolution(), options.getSkin(), options.isFullScreen(), options.getServer());
-                                            }
-                                        });
-                                        terminateSync.wait();
-                                    }
-                                    SwingUtilities.invokeAndWait(new Runnable()
-                                    {
-                                        /** {@inheritDoc} */
-                                        public void run()
-                                        {
-                                            window.term();
-                                        }
-                                    });
-                                }
-                                finally
-                                {
-                                    if (debugKeyboardBufferedWriter != null)
-                                    {
-                                        debugKeyboardBufferedWriter.close();
-                                    }
-                                }
+                                optionManager.addOption("sound_enabled", "Whether sound is enabled.", new SoundCheckBoxOption(soundManager));
                             }
-                            finally
+                            catch (final OptionException ex)
                             {
-                                if (debugKeyboardOutputStreamWriter != null)
-                                {
-                                    debugKeyboardOutputStreamWriter.close();
-                                }
+                                throw new AssertionError();
                             }
+
+                            synchronized (terminateSync)
+                            {
+                                SwingUtilities.invokeAndWait(new Runnable()
+                                {
+                                    /** {@inheritDoc} */
+                                    public void run()
+                                    {
+                                        window.init(options.getResolution(), options.getSkin(), options.isFullScreen(), options.getServer());
+                                    }
+                                });
+                                terminateSync.wait();
+                            }
+                            SwingUtilities.invokeAndWait(new Runnable()
+                            {
+                                /** {@inheritDoc} */
+                                public void run()
+                                {
+                                    window.term();
+                                }
+                            });
                         }
                         finally
                         {
-                            if (debugKeyboardFileOutputStream != null)
+                            if (debugKeyboardOutputStreamWriter != null)
                             {
-                                debugKeyboardFileOutputStream.close();
+                                debugKeyboardOutputStreamWriter.close();
                             }
                         }
                     }
                     finally
                     {
-                        if (debugProtocolBufferedWriter != null)
+                        if (debugKeyboardFileOutputStream != null)
                         {
-                            debugProtocolBufferedWriter.close();
+                            debugKeyboardFileOutputStream.close();
                         }
                     }
                 }

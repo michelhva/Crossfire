@@ -28,6 +28,7 @@ import java.io.DataInputStream;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.io.UnsupportedEncodingException;
+import java.io.Writer;
 import java.nio.ByteBuffer;
 import java.nio.ByteOrder;
 import java.nio.charset.Charset;
@@ -220,7 +221,7 @@ public class CrossfireServerConnection extends ServerConnection
      * The appender to write protocol commands to. May be <code>null</code> to
      * not write anything.
      */
-    private final Appendable debugProtocol;
+    private final Writer debugProtocol;
 
     /**
      * A formatter for timestamps.
@@ -232,9 +233,9 @@ public class CrossfireServerConnection extends ServerConnection
      * @param redrawSemaphore the semaphore used to synchronized map model
      * updates and map view redraws
      * @param debugProtocol tf non-<code>null</code>, write all protocol
-     * commands to this appender
+     * commands to this writer
      */
-    public CrossfireServerConnection(final Object redrawSemaphore, final Appendable debugProtocol)
+    public CrossfireServerConnection(final Object redrawSemaphore, final Writer debugProtocol)
     {
         this.redrawSemaphore = redrawSemaphore;
         byteBuffer.order(ByteOrder.BIG_ENDIAN);
@@ -2534,6 +2535,7 @@ public class CrossfireServerConnection extends ServerConnection
         {
             debugProtocol.append(simpleDateFormat.format(new Date()));
             debugProtocol.append(str);
+            debugProtocol.flush();
         }
         catch (final IOException ex)
         {
