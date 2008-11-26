@@ -10,7 +10,7 @@ enter_x 3
 enter_y 11
 msg
 Created:  2004-08-03 Mikeeusa
-Modified: 2008-11-24 Rick Tanner
+Modified: 2008-11-27 lalo
 endmsg
 outdoor 1
 end
@@ -1855,12 +1855,14 @@ arch dirtfloor
 x 14
 y 1
 end
-arch altar_valkyrie
+arch sign
+msg
+We have finally recovered our altar which had been stolen by this damn kobolds.  We looked everywhere for it, who'd have thought they would take over this abandoned temple and hide the altar on the bottom!  We wonder what their motivation was... maybe they can't tell altars apart?  Or they expected they'd be able to reconsecrate it?  Fools.
+
+Anyway.  Praised be The Brave, The Just.  The altar is back where it belongs, in our chapel under the barracks.
+endmsg
 x 14
 y 1
-level 120
-arch altar_valkyrie_pray_event
-end
 end
 arch giant
 exp 0
