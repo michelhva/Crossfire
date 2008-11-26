@@ -21,6 +21,7 @@ package com.realtime.crossfire.jxclient.gui.list;
 
 import com.realtime.crossfire.jxclient.gui.ActivatableGUIElement;
 import com.realtime.crossfire.jxclient.gui.GUIElement;
+import com.realtime.crossfire.jxclient.gui.item.GUIItemItem;
 import com.realtime.crossfire.jxclient.window.JXCWindow;
 import java.awt.AlphaComposite;
 import java.awt.Color;
@@ -193,6 +194,14 @@ public abstract class GUIList extends ActivatableGUIElement
         final int oldSize = model.getSize();
         if (newSize < oldSize)
         {
+            for(int i = newSize; i < oldSize; i++)
+            {
+                final GUIElement element = (GUIElement)model.get(i);
+                if (element instanceof GUIItemItem)
+                {
+                    ((GUIItemItem)element).destroy();
+                }
+            }
             model.removeRange(newSize, oldSize-1);
             list.setSize(getWidth(), Integer.MAX_VALUE);
             if (index >= newSize && newSize > 0)

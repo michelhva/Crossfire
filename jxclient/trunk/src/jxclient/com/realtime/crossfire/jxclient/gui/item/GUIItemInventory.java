@@ -106,6 +106,14 @@ public class GUIItemInventory extends GUIItemItem
     }
 
     /** {@inheritDoc} */
+    @Override
+    public void destroy()
+    {
+        super.destroy();
+        setIndex(-1);
+    }
+
+    /** {@inheritDoc} */
     public boolean canScroll(final int distance)
     {
         if (distance < 0)

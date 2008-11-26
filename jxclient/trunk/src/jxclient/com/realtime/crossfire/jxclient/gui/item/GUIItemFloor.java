@@ -147,6 +147,15 @@ public class GUIItemFloor extends GUIItemItem
     }
 
     /** {@inheritDoc} */
+    @Override
+    public void destroy()
+    {
+        super.destroy();
+        setIndex(-1, 0, false);
+        itemsManager.getCurrentFloorManager().removeCurrentFloorListener(currentFloorListener);
+    }
+    
+    /** {@inheritDoc} */
     public boolean canScroll(final int distance)
     {
         if (distance < 0)
