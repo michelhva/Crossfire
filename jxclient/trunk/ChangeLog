@@ -1,5 +1,7 @@
 2008-11-26  Andreas Kirschbaum
 
+	* Fix memory leak when picking up items.
+
 	* Disable output buffering for --debug-protocol and --debug-keyboard
 	options.
 

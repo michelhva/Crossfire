@@ -55,6 +55,11 @@ public abstract class GUIItemItem extends GUIItem
     private final CrossfireServerConnection crossfireServerConnection;
 
     /**
+     * The {@link FacesManager} instance to use.
+     */
+    private final FacesManager facesManager;
+
+    /**
      * The {@link ItemPainter} for painting the icon.
      */
     private final ItemPainter itemPainter;
@@ -117,7 +122,16 @@ public abstract class GUIItemItem extends GUIItem
         super(window, name, x, y, w, h);
         this.itemPainter = itemPainter;
         this.crossfireServerConnection = crossfireServerConnection;
+        this.facesManager = facesManager;
         facesManager.addFacesManagerListener(facesManagerListener);
+    }
+
+    /**
+     * Unregisters listeners. Must be called when this item not used anymore.
+     */
+    public void destroy()
+    {
+        facesManager.removeFacesManagerListener(facesManagerListener);
     }
 
     /** {@inheritDoc} */
