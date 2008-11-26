@@ -83,6 +83,7 @@ import java.awt.event.WindowListener;
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.IOException;
+import java.io.Writer;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -184,7 +185,7 @@ public class JXCWindow extends JFrame implements KeyListener, CrossfireDrawextin
      * The {@link Appendable} for logging keyboard debug output. Log nothing if
      * <code>null</code>.
      */
-    private final Appendable debugKeyboard;
+    private final Writer debugKeyboard;
 
     /**
      * A formatter for timestamps.
@@ -454,7 +455,7 @@ public class JXCWindow extends JFrame implements KeyListener, CrossfireDrawextin
      * commands to this appender.
      *
      * @param debugKeyboard If non-<code>null</code>, write all keyboard debug
-     * to this appender.
+     * to this writer.
      *
      * @param settings The settings instance to use.
      *
@@ -464,7 +465,7 @@ public class JXCWindow extends JFrame implements KeyListener, CrossfireDrawextin
      *
      * @throws IOException if a resource cannot be loaded
      */
-    public JXCWindow(final Object terminateSync, final boolean debugGui, final Appendable debugProtocol, final Appendable debugKeyboard, final Settings settings, final SoundManager soundManager, final OptionManager optionManager) throws IOException
+    public JXCWindow(final Object terminateSync, final boolean debugGui, final Writer debugProtocol, final Writer debugKeyboard, final Settings settings, final SoundManager soundManager, final OptionManager optionManager) throws IOException
     {
         super(TITLE_PREFIX);
         this.terminateSync = terminateSync;
@@ -1735,6 +1736,7 @@ public class JXCWindow extends JFrame implements KeyListener, CrossfireDrawextin
             debugKeyboard.append(simpleDateFormat.format(new Date()));
             debugKeyboard.append(message);
             debugKeyboard.append("\n");
+            debugKeyboard.flush();
         }
         catch (final IOException ex)
         {
