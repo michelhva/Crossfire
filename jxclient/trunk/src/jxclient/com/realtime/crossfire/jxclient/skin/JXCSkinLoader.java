@@ -79,6 +79,7 @@ import com.realtime.crossfire.jxclient.gui.item.GUIItemInventory;
 import com.realtime.crossfire.jxclient.gui.item.GUIItemInventoryFactory;
 import com.realtime.crossfire.jxclient.gui.item.GUIItemShortcut;
 import com.realtime.crossfire.jxclient.gui.item.GUIItemSpelllist;
+import com.realtime.crossfire.jxclient.gui.item.ItemPainter;
 import com.realtime.crossfire.jxclient.gui.keybindings.InvalidKeyBindingException;
 import com.realtime.crossfire.jxclient.gui.keybindings.KeyBindings;
 import com.realtime.crossfire.jxclient.gui.list.GUIItemInventoryList;
@@ -1206,7 +1207,8 @@ public abstract class JXCSkinLoader implements JXCSkin
                             final Color nrofColor = parseColor(args[16]);
                             final AbstractLabel selectedItem = args[17].equals("null") ? null : lookupLabelElement(args[17]);
 
-                            final GUIItemInventoryFactory itemInventoryFactory = new GUIItemInventoryFactory(window, commandQueue, name, cursedImage, damnedImage, magicImage, blessedImage, appliedImage, selectorImage, lockedImage, unpaidImage, cursedColor, damnedColor, magicColor, blessedColor, appliedColor, selectorColor, lockedColor, unpaidColor, server, facesManager, itemsManager, font, nrofColor);
+                            final ItemPainter itemPainter = new ItemPainter(cursedImage, damnedImage, magicImage, blessedImage, appliedImage, selectorImage, lockedImage, unpaidImage, cursedColor, damnedColor, magicColor, blessedColor, appliedColor, selectorColor, lockedColor, unpaidColor, font, nrofColor, w, h);
+                            final GUIItemInventoryFactory itemInventoryFactory = new GUIItemInventoryFactory(window, commandQueue, name, itemPainter, server, facesManager, itemsManager);
                             final GUIItemInventoryList element = new GUIItemInventoryList(window, commandQueue, name, x, y, w, h, cellHeight, server, itemsManager, selectedItem, itemInventoryFactory);
                             definedGUIElements.insert(name, element);
                         }
@@ -1250,7 +1252,8 @@ public abstract class JXCSkinLoader implements JXCSkin
                                 final BufferedImage pictureUnpaid = getPicture(unpaidColor, args[15]);
                                 final Font font = definedFonts.lookup(args[16]);
                                 final Color nrofColor = parseColor(args[17]);
-                                element = new GUIItemFloor(window, commandQueue, name, x, y, w, h, pictureCursed, pictureDamned, pictureMagic, pictureBlessed, pictureApplied, pictureSelector, pictureLocked, pictureUnpaid, cursedColor, damnedColor, magicColor, blessedColor, appliedColor, selectorColor, lockedColor, unpaidColor, index, server, itemsManager, facesManager, font, nrofColor);
+                                final ItemPainter itemPainter = new ItemPainter(pictureCursed, pictureDamned, pictureMagic, pictureBlessed, pictureApplied, pictureSelector, pictureLocked, pictureUnpaid, cursedColor, damnedColor, magicColor, blessedColor, appliedColor, selectorColor, lockedColor, unpaidColor, font, nrofColor, w, h);
+                                element = new GUIItemFloor(window, commandQueue, name, x, y, w, h, itemPainter, index, server, itemsManager, facesManager);
                             }
                             else if (type.equals("inventory"))
                             {
@@ -1277,7 +1280,8 @@ public abstract class JXCSkinLoader implements JXCSkin
                                 final BufferedImage pictureUnpaid = getPicture(unpaidColor, args[15]);
                                 final Font font = definedFonts.lookup(args[16]);
                                 final Color nrofColor = parseColor(args[17]);
-                                element = new GUIItemInventory(window, commandQueue, name, x, y, w, h, pictureCursed, pictureDamned, pictureMagic, pictureBlessed, pictureApplied, pictureSelector, pictureLocked, pictureUnpaid, cursedColor, damnedColor, magicColor, blessedColor, appliedColor, selectorColor, lockedColor, unpaidColor, index, server, facesManager, itemsManager, font, nrofColor);
+                                final ItemPainter itemPainter = new ItemPainter(pictureCursed, pictureDamned, pictureMagic, pictureBlessed, pictureApplied, pictureSelector, pictureLocked, pictureUnpaid, cursedColor, damnedColor, magicColor, blessedColor, appliedColor, selectorColor, lockedColor, unpaidColor, font, nrofColor, w, h);
+                                element = new GUIItemInventory(window, commandQueue, name, x, y, w, h, itemPainter, index, server, facesManager, itemsManager);
                             }
                             else if (type.equals("shortcut"))
                             {
