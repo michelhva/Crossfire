@@ -9,7 +9,7 @@ enter_x 24
 enter_y 4
 msg
 Created:  2003-01-04
-Modified: 2008-09-27 Rick Tanner
+Modified: 2008-11-25 lalo
 endmsg
 end
 arch cobblestones2
@@ -1325,7 +1325,7 @@ arch dirtfloor
 x 20
 y 4
 end
-arch table_2
+arch table_1x2
 x 20
 y 4
 end
@@ -1333,23 +1333,41 @@ arch dirtfloor
 x 20
 y 5
 end
-arch table_2
-x 20
-y 5
-end
 arch dirtfloor
 x 20
 y 6
 end
-arch table_2
+arch table_3
 x 20
 y 6
+no_pick 1
+end
+arch quarto
+name Faith of the Sword
+name_pl Faith of the Sword books
+msg
+On the faith of Valkyrie, the Brave, the Just, Deathbringer
+
+In a world rich with sorcery and its users, some brave warriors forsake the help of those foul arts.  We, followers of the Brave Lady, face any and all threats by might of sword and skill only.  We bring our lady the spoils of our conquests for Her pleasure.
+
+All praise be the Deathbringer.  Pity those who use wizardry, and kill those who set themselves as its champions, as well as magic-based monsters.  The Just shall bring happiness and honor.
+endmsg
+x 20
+y 6
+material 9
+no_pick 1
 end
 arch dirtfloor
 x 20
 y 7
 end
-arch table_2
+arch stair_down
+slaying ../temples/valkyrie
+msg
+You go down for a LONG distance... you wonder how deep down you are.  The air smells funny.
+endmsg
+hp 16
+sp 17
 x 20
 y 7
 end
