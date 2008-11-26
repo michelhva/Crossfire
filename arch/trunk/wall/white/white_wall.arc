@@ -149,6 +149,13 @@ magicmap brown
 no_pick 1
 visibility 100
 end
+Object white_wall_right
+name wall
+face white_wall_right.111
+magicmap brown
+no_pick 1
+visibility 100
+end
 Object white_wall_bottom
 name wall
 face white_wall_bottom.111
