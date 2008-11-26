@@ -25,9 +25,6 @@ import com.realtime.crossfire.jxclient.items.ItemsManager;
 import com.realtime.crossfire.jxclient.server.CommandQueue;
 import com.realtime.crossfire.jxclient.server.CrossfireServerConnection;
 import com.realtime.crossfire.jxclient.window.JXCWindow;
-import java.awt.Color;
-import java.awt.Font;
-import java.awt.image.BufferedImage;
 
 /**
  * A factory for creating {@link GUIItemInventory} instances.
@@ -41,37 +38,7 @@ public class GUIItemInventoryFactory
 
     private final String name;
 
-    private final BufferedImage cursedImage;
-
-    private final BufferedImage damnedImage;
-
-    private final BufferedImage magicImage;
-
-    private final BufferedImage blessedImage;
-
-    private final BufferedImage appliedImage;
-
-    private final BufferedImage selectorImage;
-
-    private final BufferedImage lockedImage;
-
-    private final BufferedImage unpaidImage;
-
-    private final Color cursedColor;
-
-    private final Color damnedColor;
-
-    private final Color magicColor;
-
-    private final Color blessedColor;
-
-    private final Color appliedColor;
-
-    private final Color selectorColor;
-
-    private final Color lockedColor;
-
-    private final Color unpaidColor;
+    private final ItemPainter itemPainter;
 
     private final CrossfireServerConnection crossfireServerConnection;
 
@@ -79,39 +46,18 @@ public class GUIItemInventoryFactory
 
     private final ItemsManager itemsManager;
 
-    private final Font font;
-
-    private final Color nrofColor;
-
     /**
      * Creates a new instance.
      */
-    public GUIItemInventoryFactory(final JXCWindow window, final CommandQueue commandQueue, final String name, final BufferedImage cursedImage, final BufferedImage damnedImage, final BufferedImage magicImage, final BufferedImage blessedImage, final BufferedImage appliedImage, final BufferedImage selectorImage, final BufferedImage lockedImage, final BufferedImage unpaidImage, final Color cursedColor, final Color damnedColor, final Color magicColor, final Color blessedColor, final Color appliedColor, final Color selectorColor, final Color lockedColor, final Color unpaidColor, final CrossfireServerConnection crossfireServerConnection, final FacesManager facesManager, final ItemsManager itemsManager, final Font font, final Color nrofColor)
+    public GUIItemInventoryFactory(final JXCWindow window, final CommandQueue commandQueue, final String name, final ItemPainter itemPainter, final CrossfireServerConnection crossfireServerConnection, final FacesManager facesManager, final ItemsManager itemsManager)
     {
         this.window = window;
         this.commandQueue = commandQueue;
         this.name = name;
-        this.cursedImage = cursedImage;
-        this.damnedImage = damnedImage;
-        this.magicImage = magicImage;
-        this.blessedImage = blessedImage;
-        this.appliedImage = appliedImage;
-        this.selectorImage = selectorImage;
-        this.lockedImage = lockedImage;
-        this.unpaidImage = unpaidImage;
-        this.cursedColor = cursedColor;
-        this.damnedColor = damnedColor;
-        this.magicColor = magicColor;
-        this.blessedColor = blessedColor;
-        this.appliedColor = appliedColor;
-        this.selectorColor = selectorColor;
-        this.lockedColor = lockedColor;
-        this.unpaidColor = unpaidColor;
+        this.itemPainter = itemPainter;
         this.crossfireServerConnection = crossfireServerConnection;
         this.facesManager = facesManager;
         this.itemsManager = itemsManager;
-        this.font = font;
-        this.nrofColor = nrofColor;
     }
 
     /**
@@ -121,7 +67,7 @@ public class GUIItemInventoryFactory
      */
     public GUIItemInventory newItemInventory(final int index)
     {
-        return new GUIItemInventory(window, commandQueue, name+index, 0, 0, 1, 1, cursedImage, damnedImage, magicImage, blessedImage, appliedImage, selectorImage, lockedImage, unpaidImage, cursedColor, damnedColor, magicColor, blessedColor, appliedColor, selectorColor, lockedColor, unpaidColor, index, crossfireServerConnection, facesManager, itemsManager, font, nrofColor);
+        return new GUIItemInventory(window, commandQueue, name+index, 0, 0, 1, 1, itemPainter, index, crossfireServerConnection, facesManager, itemsManager);
     }
 
     /**
@@ -131,6 +77,6 @@ public class GUIItemInventoryFactory
      */
     public GUIItemInventory newTemplateItemInventory(final int cellHeight)
     {
-        return new GUIItemInventory(window, commandQueue, name+"_template", 0, 0, cellHeight, cellHeight, cursedImage, damnedImage, magicImage, blessedImage, appliedImage, selectorImage, lockedImage, unpaidImage, cursedColor, damnedColor, magicColor, blessedColor, appliedColor, selectorColor, lockedColor, unpaidColor, -1, crossfireServerConnection, facesManager, itemsManager, font, nrofColor);
+        return new GUIItemInventory(window, commandQueue, name+"_template", 0, 0, cellHeight, cellHeight, itemPainter, -1, crossfireServerConnection, facesManager, itemsManager);
     }
 }

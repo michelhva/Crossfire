@@ -28,9 +28,7 @@ import com.realtime.crossfire.jxclient.items.LocationListener;
 import com.realtime.crossfire.jxclient.server.CommandQueue;
 import com.realtime.crossfire.jxclient.server.CrossfireServerConnection;
 import com.realtime.crossfire.jxclient.window.JXCWindow;
-import java.awt.Color;
-import java.awt.Font;
-import java.awt.image.BufferedImage;
+import java.awt.Image;
 import java.util.List;
 
 /**
@@ -53,6 +51,11 @@ public class GUIItemInventory extends GUIItemItem
      * The server instance.
      */
     private final CrossfireServerConnection crossfireServerConnection;
+
+    /**
+     * The {@link FacesManager} instance to use.
+     */
+    private final FacesManager facesManager;
 
     /**
      * The {@link ItemsManager} instance to watch.
@@ -91,11 +94,12 @@ public class GUIItemInventory extends GUIItemItem
         }
     };
 
-    public GUIItemInventory(final JXCWindow window, final CommandQueue commandQueue, final String name, final int x, final int y, final int w, final int h, final BufferedImage cursedImage, final BufferedImage damnedImage, final BufferedImage magicImage, final BufferedImage blessedImage, final BufferedImage appliedImage, final BufferedImage selectorImage, final BufferedImage lockedImage, final BufferedImage unpaidImage, final Color cursedColor, final Color damnedColor, final Color magicColor, final Color blessedColor, final Color appliedColor, final Color selectorColor, final Color lockedColor, final Color unpaidColor, final int index, final CrossfireServerConnection crossfireServerConnection, final FacesManager facesManager, final ItemsManager itemsManager, final Font font, final Color nrofColor)
+    public GUIItemInventory(final JXCWindow window, final CommandQueue commandQueue, final String name, final int x, final int y, final int w, final int h, final ItemPainter itemPainter, final int index, final CrossfireServerConnection crossfireServerConnection, final FacesManager facesManager, final ItemsManager itemsManager)
     {
-        super(window, name, x, y, w, h, cursedImage, damnedImage, magicImage, blessedImage, appliedImage, selectorImage, lockedImage, unpaidImage, cursedColor, damnedColor, magicColor, blessedColor, appliedColor, selectorColor, lockedColor, unpaidColor, crossfireServerConnection, facesManager, font, nrofColor);
+        super(window, name, x, y, w, h, crossfireServerConnection, itemPainter, facesManager);
         this.commandQueue = commandQueue;
         this.crossfireServerConnection = crossfireServerConnection;
+        this.facesManager = facesManager;
         this.itemsManager = itemsManager;
         defaultIndex = index;
         setIndex(index);
@@ -256,5 +260,12 @@ public class GUIItemInventory extends GUIItemItem
         {
             setItem(null);
         }
+    }
+
+    /** {@inheritDoc} */
+    @Override
+    protected Image getFace(final CfItem item)
+    {
+        return facesManager.getOriginalImageIcon(item.getFace().getFaceNum()).getImage();
     }
 }
