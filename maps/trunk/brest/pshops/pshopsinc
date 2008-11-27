@@ -6,7 +6,7 @@ width 36
 height 14
 msg
 Created:  2004-10-17 majorwoo (josh@woosworld.net)
-Modified: 2008-10-22 Rick Tanner
+Modified: 2008-11-27 Rick Tanner
 endmsg
 end
 arch dungeon_magic
@@ -2042,7 +2042,7 @@ arch woodfloor
 x 14
 y 10
 end
-arch flagstone_3_1
+arch flagstone_2_2_4
 x 14
 y 10
 end
@@ -2183,17 +2183,14 @@ arch woodfloor
 x 15
 y 10
 end
-arch oakdoor
+arch invis_exit
 slaying pshops_main
-msg
-REMEMBER:
-If you do not login to your account for
-6 months or more your shop will be
-RESOLD and all items inside LOST.
---management
-endmsg
 hp 2
 sp 2
+x 15
+y 10
+end
+arch door_2
 x 15
 y 10
 end
@@ -2321,7 +2318,7 @@ arch woodfloor
 x 16
 y 10
 end
-arch flagstone_3_1
+arch flagstone_2_2_1
 x 16
 y 10
 end
