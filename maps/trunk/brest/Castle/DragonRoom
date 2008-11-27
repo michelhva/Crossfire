@@ -8,7 +8,7 @@ enter_x 12
 enter_y 1
 msg
 Created:  1994-07-02
-Modified: 2008-10-20 Rick Tanner
+Modified: 2008-11-27 Rick Tanner
 endmsg
 end
 arch dirtfloor
@@ -1762,7 +1762,7 @@ arch dirtfloor
 x 12
 y 1
 end
-arch oakdoor
+arch ladder_up
 slaying castle
 hp 12
 sp 30
@@ -3769,7 +3769,7 @@ arch dirtfloor
 x 25
 y 20
 end
-arch oakdoor
+arch ladder_bi_down
 slaying AcidChamber
 hp 24
 sp 1
