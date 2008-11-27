@@ -8,7 +8,7 @@ enter_x 8
 enter_y 8
 msg
 Created:  1994-09-20
-Modified: 2008-10-23 Rick Tanner
+Modified: 2008-11-26 Rick Tanner
 endmsg
 end
 arch dungeon_magic
@@ -217,7 +217,7 @@ arch afloor_left
 x 1
 y 4
 end
-arch oakdoor
+arch exit
 slaying gate3
 hp 9
 sp 11
@@ -267,7 +267,7 @@ arch afloor_left
 x 1
 y 8
 end
-arch oakdoor
+arch exit
 slaying gate2
 hp 11
 sp 10
@@ -317,7 +317,7 @@ arch afloor_left
 x 1
 y 12
 end
-arch oakdoor
+arch exit
 slaying gate1
 hp 1
 sp 1
@@ -2693,7 +2693,7 @@ arch afloor_left
 x 15
 y 4
 end
-arch oakdoor
+arch exit
 slaying gate4
 hp 3
 sp 18
@@ -2747,7 +2747,7 @@ arch afloor_left
 x 15
 y 8
 end
-arch oakdoor
+arch exit
 slaying gate5
 hp 1
 sp 4
@@ -2801,7 +2801,7 @@ arch afloor_left
 x 15
 y 12
 end
-arch oakdoor
+arch exit
 slaying gate6
 hp 1
 sp 1
