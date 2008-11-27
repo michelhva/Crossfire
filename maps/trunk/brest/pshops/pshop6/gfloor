@@ -7,7 +7,7 @@ enter_x 12
 enter_y 21
 msg
 Created:  2004-10-17 majorwoo josh@woosworld.net
-Modified: 2008-10-22 Rick Tanner
+Modified: 2008-11-27 Rick Tanner
 endmsg
 end
 arch woodfloor
@@ -2655,15 +2655,15 @@ arch dungeon_magic
 x 11
 y 20
 end
+arch dungeon_magic
+x 11
+y 21
+end
 arch woodfloor
 x 11
 y 21
 end
-arch wall_2_1_2
-x 11
-y 21
-end
-arch dungeon_magic
+arch wall_1_3
 x 11
 y 21
 end
@@ -2972,21 +2972,22 @@ arch dungeon_magic
 x 12
 y 20
 end
+arch dungeon_magic
+x 12
+y 21
+end
 arch woodfloor
 x 12
 y 21
 end
-arch oakdoor
+arch invis_exit
 slaying ../pshops_main
-msg
-Goodbye!
-endmsg
 hp 19
 sp 2
 x 12
 y 21
 end
-arch dungeon_magic
+arch door_2
 x 12
 y 21
 end
@@ -3224,15 +3225,15 @@ arch dungeon_magic
 x 13
 y 20
 end
+arch dungeon_magic
+x 13
+y 21
+end
 arch woodfloor
 x 13
 y 21
 end
-arch wall_2_1_2
-x 13
-y 21
-end
-arch dungeon_magic
+arch wall_1_4
 x 13
 y 21
 end
