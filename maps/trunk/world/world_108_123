@@ -8,7 +8,7 @@ height 50
 enter_x 1
 enter_y 1
 msg
-Modified: 2008-10-21 Rick Tanner
+Modified: 2008-11-27 Rick Tanner
 endmsg
 outdoor 1
 tile_path_1 world_108_122
@@ -2099,11 +2099,10 @@ end
 arch hole
 name Hole Lot of Pain
 slaying /brest/brittany/hole
-hp 49
-sp 11
+hp 50
+sp 12
 x 8
 y 18
-is_floor 0
 end
 arch mountain
 x 8
