@@ -8,11 +8,11 @@ shopitems amulet:60;book:20;spellbook:20;potion:60;wand:60;skillscroll:10;ring:5
 shopmax 9000
 width 16
 height 16
-enter_x 1
+enter_x 2
 enter_y 1
 msg
 Created:  1993-11-09
-Modified: 2008-09-17 Rick Tanner
+Modified: 2008-11-27 Rick Tanner
 endmsg
 end
 arch flagstone
@@ -149,19 +149,12 @@ name floor
 face shop_empty.111
 x 1
 end
-arch dwall_2_1_2
+arch dwall_1_3
 x 1
 end
 arch flagstone
 name floor
 face shop_empty.111
-x 1
-y 1
-end
-arch oakdoor
-slaying /world/world_105_113
-hp 8
-sp 12
 x 1
 y 1
 end
@@ -244,7 +237,13 @@ name floor
 face shop_empty.111
 x 2
 end
-arch dwall_2_1_2
+arch invis_exit
+slaying /world/world_105_113
+hp 8
+sp 12
+x 2
+end
+arch door_2
 x 2
 end
 arch flagstone
@@ -328,7 +327,7 @@ name floor
 face shop_empty.111
 x 3
 end
-arch dwall_2_1_2
+arch dwall_1_4
 x 3
 end
 arch flagstone
