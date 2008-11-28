@@ -11,7 +11,7 @@ enter_x 13
 enter_y 7
 msg
 Created:  1999-02-03 King Zoobus
-Modified: 2008-10-28 Rick Tanner
+Modified: 2008-11-28 Rick Tanner
 endmsg
 end
 arch cobblestones2
@@ -39,7 +39,7 @@ end
 arch cobblestones2
 y 4
 end
-arch awall_2_1_1
+arch awall_3_2
 y 4
 end
 arch cobblestones2
@@ -159,6 +159,10 @@ x 1
 y 4
 end
 arch wall_1_4
+x 1
+y 4
+end
+arch awall_1_3
 x 1
 y 4
 end
@@ -585,11 +589,15 @@ arch wall_1_2
 x 5
 y 12
 end
+arch awall_1_1
+x 5
+y 12
+end
 arch cobblestones2
 x 5
 y 13
 end
-arch awall_2_1_2
+arch awall_3_1
 x 5
 y 13
 end
@@ -1348,6 +1356,10 @@ arch wall_1_3
 x 12
 y 3
 end
+arch awall_1_4
+x 12
+y 3
+end
 arch cobblestones2
 x 12
 y 4
@@ -1414,6 +1426,10 @@ arch wall_1_3
 x 12
 y 11
 end
+arch awall_1_4
+x 12
+y 11
+end
 arch cobblestones2
 x 12
 y 12
@@ -1460,7 +1476,7 @@ arch cobblestones2
 x 13
 y 3
 end
-arch awall_2_1_1
+arch awall_3_4
 x 13
 y 3
 end
@@ -1484,7 +1500,7 @@ arch cobblestones2
 x 13
 y 6
 end
-arch awall_2_1_1
+arch awall_1_2
 x 13
 y 6
 end
@@ -1492,10 +1508,14 @@ arch cobblestones2
 x 13
 y 7
 end
-arch oakdoor
+arch invis_exit
 slaying /world/world_120_109
 hp 35
 sp 40
+x 13
+y 7
+end
+arch door_1
 x 13
 y 7
 end
@@ -1503,7 +1523,7 @@ arch cobblestones2
 x 13
 y 8
 end
-arch awall_2_1_1
+arch awall_1_1
 x 13
 y 8
 end
@@ -1527,7 +1547,7 @@ arch cobblestones2
 x 13
 y 11
 end
-arch awall_2_1_1
+arch awall_3_4
 x 13
 y 11
 end
