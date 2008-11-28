@@ -8,7 +8,7 @@ enter_x 2
 enter_y 9
 msg
 Created:  1995-03-28 Kundi, Xue (xkd@soda.csua.berkeley.edu)
-Modified: 2008-10-29 Rick Tanner
+Modified: 2008-11-28 Rick Tanner
 endmsg
 end
 arch evergreen
@@ -134,10 +134,9 @@ arch marble
 x 1
 y 8
 end
-arch oakdoor
+arch door_1
 x 1
 y 8
-type 0
 end
 arch exit
 slaying Butakis0
@@ -150,10 +149,9 @@ arch marble
 x 1
 y 9
 end
-arch oakdoor
+arch door_1
 x 1
 y 9
-type 0
 end
 arch marble
 x 1

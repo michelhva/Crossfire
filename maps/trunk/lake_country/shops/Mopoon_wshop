@@ -11,7 +11,7 @@ enter_x 9
 enter_y 9
 msg
 Created:  1995-03-19 Kundi, Xue (xkd@soda.berkeley.edu)
-Modified: 2008-09-20 Rick Tanner
+Modified: 2008-11-28 Rick Tanner
 endmsg
 end
 arch blocked
@@ -1691,7 +1691,7 @@ arch woodfloor
 x 9
 y 9
 end
-arch oakdoor
+arch ladder_up
 slaying /world/world_109_126
 hp 32
 sp 22
@@ -2570,8 +2570,12 @@ arch woodfloor
 x 14
 y 23
 end
-arch oakdoor
-name Door to training ground
+arch woodfloor
+x 14
+y 23
+end
+arch stair_down_4
+name Stairs to training ground
 slaying Mopoon_wshop
 hp 17
 sp 24
@@ -3020,12 +3024,9 @@ arch woodfloor
 x 17
 y 24
 end
-arch oakdoor
-name Door to practice chamber
+arch stair_up_4
+name Stairs to practice chamber
 slaying Mopoon_wshop
-msg
-You smell a strong stench of dragons
-endmsg
 hp 14
 sp 23
 x 17

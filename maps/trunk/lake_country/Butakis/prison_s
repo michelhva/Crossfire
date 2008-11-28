@@ -8,7 +8,7 @@ height 20
 enter_x 1
 msg
 Created:  1995-03-29 Kundi, Xue (xkd@soda.csua.berkeley.edu)
-Modified: 2008-10-29 Rick Tanner
+Modified: 2008-11-28 Rick Tanner
 endmsg
 end
 arch marble
@@ -132,11 +132,14 @@ end
 arch marble
 x 1
 end
-arch oakdoor
-name Oakdoor from a Heavily Guarded Chamber
+arch invis_exit
 slaying prison1
 hp 4
 sp 9
+x 1
+end
+arch door_2
+name Oakdoor from a Heavily Guarded Chamber
 x 1
 end
 arch marble
@@ -292,11 +295,14 @@ end
 arch marble
 x 2
 end
-arch oakdoor
-name Oakdoor from a Heavily Guarded Chamber
+arch invis_exit
 slaying prison1
 hp 5
 sp 9
+x 2
+end
+arch door_2
+name Oakdoor from a Heavily Guarded Chamber
 x 2
 end
 arch marble
