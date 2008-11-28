@@ -9,7 +9,7 @@ enter_x 9
 enter_y 10
 msg
 Created:  1994-12-28
-Modified: 2008-09-17 Rick Tanner
+Modified: 2008-11-27 Rick Tanner
 endmsg
 end
 arch medium_stones
@@ -5296,8 +5296,7 @@ arch medium_stones
 x 10
 y 45
 end
-arch oakdoor
-name Door
+arch ladder_bi_up
 slaying xyzzy-mines
 hp 12
 sp 55
@@ -6440,8 +6439,7 @@ arch medium_stones
 x 12
 y 55
 end
-arch oakdoor
-name Store room
+arch ladder_down
 slaying xyzzy-mines
 hp 10
 sp 45
