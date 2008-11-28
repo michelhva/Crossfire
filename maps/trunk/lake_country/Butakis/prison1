@@ -8,7 +8,7 @@ enter_x 4
 enter_y 4
 msg
 Created:  1995-03-28 Kundi, Xue (xkd@soda.berkeley.edu)
-Modified: 2008-10-29 Rick Tanner
+Modified: 2008-11-28 Rick Tanner
 endmsg
 end
 arch dungeon_floor
@@ -36,21 +36,27 @@ end
 arch dungeon_floor
 y 4
 end
-arch oakdoor
-name Oakdoor to Execution Chamber
+arch invis_exit
 slaying prison_w
 hp 15
 sp 1
 y 4
 end
+arch door_1
+name Oakdoor to Execution Chamber
+y 4
+end
 arch dungeon_floor
 y 5
 end
-arch oakdoor
-name Oakdoor to Execution Chamber
+arch invis_exit
 slaying prison_w
 hp 15
 sp 2
+y 5
+end
+arch door_1
+name Oakdoor to Execution Chamber
 y 5
 end
 arch dungeon_floor
@@ -290,11 +296,14 @@ end
 arch dungeon_floor
 x 4
 end
-arch oakdoor
-name Oakdoor to Maximum Security Cells
+arch invis_exit
 slaying prison_n
 hp 13
 sp 15
+x 4
+end
+arch door_2
+name Oakdoor to Maximum Security Cells
 x 4
 end
 arch dungeon_floor
@@ -340,21 +349,28 @@ arch dungeon_floor
 x 4
 y 9
 end
-arch oakdoor
-name Oakdoor to a Heavily Guarded Chamber
+arch invis_exit
 slaying prison_s
 hp 1
+x 4
+y 9
+end
+arch door_2
+name Oakdoor to a Heavily Guarded Chamber
 x 4
 y 9
 end
 arch dungeon_floor
 x 5
 end
-arch oakdoor
-name Oakdoor to Maximum Security Cells
+arch invis_exit
 slaying prison_n
 hp 14
 sp 15
+x 5
+end
+arch door_2
+name Oakdoor to Maximum Security Cells
 x 5
 end
 arch dungeon_floor
@@ -400,10 +416,14 @@ arch dungeon_floor
 x 5
 y 9
 end
-arch oakdoor
-name Oakdoor to a Heavily Guarded Chamber
+arch invis_exit
 slaying prison_s
 hp 2
+x 5
+y 9
+end
+arch door_2
+name Oakdoor to a Heavily Guarded Chamber
 x 5
 y 9
 end
@@ -651,10 +671,14 @@ arch dungeon_floor
 x 9
 y 4
 end
-arch oakdoor
-name Oakdoor to Wizards' Cells
+arch invis_exit
 slaying prison_e
 sp 13
+x 9
+y 4
+end
+arch door_1
+name Oakdoor to Wizards' Cells
 x 9
 y 4
 end
@@ -662,10 +686,14 @@ arch dungeon_floor
 x 9
 y 5
 end
-arch oakdoor
-name Oakdoor to Wizards' Cells
+arch invis_exit
 slaying prison_e
 sp 14
+x 9
+y 5
+end
+arch door_1
+name Oakdoor to Wizards' Cells
 x 9
 y 5
 end

@@ -8,7 +8,7 @@ enter_x 17
 enter_y 14
 msg
 Created:  1995-05-03 Kundi, Xue (xkd@soda.berkeley.edu)
-Modified: 2008-09-20 Rick Tanner
+Modified: 2008-11-28 Rick Tanner
 endmsg
 end
 arch flagstone
@@ -1711,18 +1711,18 @@ arch flagstone
 x 17
 y 14
 end
-arch oakdoor
-slaying fortress
-hp 8
-sp 3
-x 17
-y 14
-end
 arch flagstone
 x 17
 y 15
 end
-arch wall_2_1_2
+arch invis_exit
+slaying fortress
+hp 8
+sp 3
+x 17
+y 15
+end
+arch wall_large_door1
 x 17
 y 15
 end
@@ -1792,18 +1792,14 @@ arch flagstone
 x 18
 y 14
 end
-arch oakdoor
-slaying fortress
-hp 8
-sp 3
-x 18
-y 14
-end
 arch flagstone
 x 18
 y 15
 end
-arch wall_2_1_2
+arch invis_exit
+slaying fortress
+hp 8
+sp 3
 x 18
 y 15
 end

@@ -11,7 +11,7 @@ enter_x 8
 enter_y 7
 msg
 Created:  1995-03-23
-Modified: 2008-09-20 Rick Tanner
+Modified: 2008-11-28 Rick Tanner
 endmsg
 end
 arch shop_empty
@@ -758,7 +758,7 @@ arch woodfloor
 x 8
 y 7
 end
-arch oakdoor
+arch exit
 name back to countryside
 slaying /world/world_109_126
 hp 18
