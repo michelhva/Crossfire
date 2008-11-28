@@ -9,7 +9,7 @@ enter_x 15
 enter_y 13
 msg
 Created:  1994-05-01
-Modified: 2008-09-17 Rick Tanner
+Modified: 2008-11-27 Rick Tanner
 endmsg
 end
 arch blocked
@@ -6020,7 +6020,7 @@ arch flagstone
 x 17
 y 13
 end
-arch oakdoor
+arch exit
 slaying /dungeons/castle_aaaarg
 hp 55
 sp 55
@@ -20024,7 +20024,7 @@ arch flagstone
 x 54
 y 55
 end
-arch oakdoor
+arch exit
 slaying /dungeons/castle_aaaarg
 hp 17
 sp 13
@@ -20269,7 +20269,7 @@ arch flagstone
 x 55
 y 54
 end
-arch oakdoor
+arch exit
 slaying /dungeons/castle_aaaarg
 hp 17
 sp 13
@@ -20280,7 +20280,7 @@ arch flagstone
 x 55
 y 55
 end
-arch oakdoor
+arch exit
 slaying /dungeons/castle_aaaarg
 hp 17
 sp 13

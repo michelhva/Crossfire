@@ -8,7 +8,7 @@ height 12
 enter_x 6
 msg
 Created:  1994-05-17
-Modified: 2008-09-16 Rick Tanner
+Modified: 2008-11-27 Rick Tanner
 endmsg
 end
 arch cobblestones
@@ -554,10 +554,13 @@ end
 arch cobblestones
 x 6
 end
-arch oakdoor
+arch invis_exit
 slaying /world/world_104_115
 hp 11
 sp 3
+x 6
+end
+arch door_2
 x 6
 end
 arch cobblestones
