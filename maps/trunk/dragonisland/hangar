@@ -8,7 +8,7 @@ enter_x 15
 enter_y 1
 msg
 Created:  1997-06-19
-Modified: 2008-10-21 Rick Tanner
+Modified: 2008-11-27 Rick Tanner
 endmsg
 end
 arch magic_banned
@@ -4695,10 +4695,13 @@ end
 arch cobblestones2
 x 14
 end
-arch oakdoor
+arch invis_exit
 slaying /world/world_103_127
 hp 3
 sp 10
+x 14
+end
+arch large_hdoor1
 x 14
 end
 arch magic_banned
@@ -5031,7 +5034,7 @@ end
 arch cobblestones2
 x 15
 end
-arch oakdoor
+arch invis_exit
 slaying /world/world_103_127
 hp 3
 sp 10
@@ -5394,10 +5397,13 @@ end
 arch cobblestones2
 x 16
 end
-arch oakdoor
+arch invis_exit
 slaying /world/world_103_127
 hp 3
 sp 10
+x 16
+end
+arch large_hdoor1
 x 16
 end
 arch magic_banned
@@ -5757,7 +5763,7 @@ end
 arch cobblestones2
 x 17
 end
-arch oakdoor
+arch invis_exit
 slaying /world/world_103_127
 hp 3
 sp 10
