@@ -8,7 +8,7 @@ enter_x 19
 enter_y 13
 msg
 Created:  1999-01-15 Cater/Wade (john_cater@yahoo.com)
-Modified: 2008-11-21 Rick Tanner
+Modified: 2008-11-27 Rick Tanner
 endmsg
 end
 arch cobblestones2
@@ -2609,10 +2609,7 @@ arch woodfloor
 x 19
 y 14
 end
-arch oakdoor
-slaying /world/world_116_102
-hp 29
-sp 35
+arch door_2
 x 19
 y 14
 end
@@ -2787,10 +2784,7 @@ arch woodfloor
 x 20
 y 14
 end
-arch oakdoor
-slaying /world/world_116_102
-hp 29
-sp 35
+arch door_2
 x 20
 y 14
 end

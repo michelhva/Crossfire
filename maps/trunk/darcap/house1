@@ -8,7 +8,7 @@ enter_x 4
 enter_y 7
 msg
 Created:  1994-10-19
-Modified: 2008-09-14 Rick Tanner
+Modified: 2008-11-27 Rick Tanner
 endmsg
 end
 arch woodfloor2
@@ -1307,7 +1307,7 @@ arch woodfloor2
 x 11
 y 12
 end
-arch wall_3_3
+arch wall_2_2_3
 x 11
 y 12
 end
@@ -1563,11 +1563,14 @@ arch woodfloor2
 x 13
 y 19
 end
-arch oakdoor
-name exit
+arch invis_exit
 slaying /world/world_116_102
 hp 32
 sp 6
+x 13
+y 19
+end
+arch door_2
 x 13
 y 19
 end
@@ -1629,7 +1632,7 @@ arch woodfloor2
 x 14
 y 12
 end
-arch wall_3_3
+arch wall_2_2_2
 x 14
 y 12
 end
@@ -1685,7 +1688,7 @@ arch woodfloor2
 x 14
 y 19
 end
-arch wall_3_1
+arch wall_2_2_1
 x 14
 y 19
 end
@@ -1997,7 +2000,7 @@ arch woodfloor2
 x 17
 y 12
 end
-arch wall_3_1
+arch wall_2_2_4
 x 17
 y 12
 end
@@ -2273,7 +2276,7 @@ arch woodfloor2
 x 19
 y 12
 end
-arch wall_3_4
+arch wall_2_1_1
 x 19
 y 12
 end

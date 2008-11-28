@@ -11,7 +11,7 @@ enter_x 8
 enter_y 24
 msg
 Created:  2002-04-02 Bernd Edler (edler@heydernet.de)
-Modified: 2008-11-20 Rick Tanner
+Modified: 2008-11-27 Rick Tanner
 endmsg
 end
 arch dungeon_magic
@@ -2622,13 +2622,6 @@ arch pstone_1
 x 7
 y 26
 end
-arch invis_exit
-slaying /world/world_116_102
-hp 36
-sp 15
-x 7
-y 26
-end
 arch dungeon_magic
 x 8
 end
@@ -2988,10 +2981,14 @@ arch woodfloor
 x 8
 y 25
 end
-arch oakdoor
+arch invis_exit
 slaying /world/world_116_102
 hp 36
 sp 15
+x 8
+y 25
+end
+arch door_2
 x 8
 y 25
 end
@@ -3000,13 +2997,6 @@ x 8
 y 26
 end
 arch pstone_1
-x 8
-y 26
-end
-arch invis_exit
-slaying /world/world_116_102
-hp 36
-sp 15
 x 8
 y 26
 end
@@ -3434,13 +3424,6 @@ x 9
 y 26
 end
 arch pstone_1
-x 9
-y 26
-end
-arch invis_exit
-slaying /world/world_116_102
-hp 36
-sp 15
 x 9
 y 26
 end

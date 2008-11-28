@@ -11,7 +11,7 @@ enter_x 14
 enter_y 14
 msg
 Created:  1994-10-11
-Modified: 2008-09-14 Rick Tanner
+Modified: 2008-11-27 Rick Tanner
 endmsg
 end
 arch shop_empty
@@ -1128,18 +1128,22 @@ arch woodfloor
 x 14
 y 14
 end
-arch oakdoor
-slaying /world/world_116_102
-hp 20
-sp 38
-x 14
-y 14
-end
 arch woodfloor
 x 14
 y 15
 end
-arch wall_2_1_2
+arch wall_door_1_4
+x 14
+y 15
+end
+arch invis_exit
+slaying /world/world_116_102
+hp 20
+sp 38
+x 14
+y 15
+end
+arch door_2
 x 14
 y 15
 end
