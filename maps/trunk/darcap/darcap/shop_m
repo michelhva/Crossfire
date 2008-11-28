@@ -9,7 +9,7 @@ height 16
 enter_x 14
 enter_y 1
 msg
-Modified: 2008-09-14 Rick Tanner
+Modified: 2008-11-27 Rick Tanner
 endmsg
 end
 arch shop_empty
@@ -1065,13 +1065,6 @@ arch woodfloor
 x 14
 y 1
 end
-arch oakdoor
-slaying /world/world_116_102
-hp 20
-sp 44
-x 14
-y 1
-end
 arch woodfloor
 x 14
 y 2
@@ -1158,7 +1151,7 @@ arch woodfloor
 x 15
 y 1
 end
-arch awall_2_1_1
+arch awall_1_2
 x 15
 y 1
 end
@@ -1166,7 +1159,14 @@ arch woodfloor
 x 15
 y 2
 end
-arch awall_2_1_1
+arch invis_exit
+slaying /world/world_116_102
+hp 20
+sp 44
+x 15
+y 2
+end
+arch door_look_2
 x 15
 y 2
 end
@@ -1174,7 +1174,7 @@ arch woodfloor
 x 15
 y 3
 end
-arch awall_2_1_1
+arch awall_1_1
 x 15
 y 3
 end

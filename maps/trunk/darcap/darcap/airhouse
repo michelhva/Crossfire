@@ -8,7 +8,7 @@ enter_x 14
 enter_y 17
 msg
 Created:  2008-09-13 Rick Tanner
-Modified: 2008-09-13 Rick Tanner
+Modified: 2008-11-27 Rick Tanner
 endmsg
 end
 arch cobblestones2
@@ -1593,10 +1593,14 @@ arch woodlarge
 x 14
 y 17
 end
-arch oakdoor
+arch invis_exit
 slaying /world/world_116_102
 hp 28
 sp 33
+x 14
+y 17
+end
+arch door_2
 x 14
 y 17
 end

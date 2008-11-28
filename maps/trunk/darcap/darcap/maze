@@ -8,7 +8,7 @@ enter_x 85
 enter_y 30
 msg
 Created:  1999-01-19 Cater/Wade (john_cater@yahoo.com)
-Modified: 2008-05-29 Nicolas Weeger
+Modified: 2008-11-27 Rick Tanner
 endmsg
 end
 arch woodfloor
@@ -29397,7 +29397,7 @@ arch woodfloor
 x 78
 y 18
 end
-arch wwall_2_2_1
+arch wwall_1_2
 x 78
 y 18
 end
@@ -30154,7 +30154,7 @@ arch woodfloor
 x 80
 y 18
 end
-arch wwall_3_4
+arch wwall_2_1_1
 x 80
 y 18
 end
@@ -30585,7 +30585,7 @@ arch woodfloor
 x 81
 y 15
 end
-arch wwall_2_1_2
+arch wwall_1_3
 x 81
 y 15
 end
@@ -30888,10 +30888,14 @@ arch woodfloor
 x 82
 y 15
 end
-arch oakdoor
+arch invis_exit
 slaying /world/world_116_102
 hp 31
 sp 28
+x 82
+y 15
+end
+arch door_2
 x 82
 y 15
 end
@@ -31175,7 +31179,7 @@ arch woodfloor
 x 83
 y 15
 end
-arch wwall_2_1_2
+arch wwall_1_4
 x 83
 y 15
 end
@@ -31640,7 +31644,7 @@ arch woodfloor
 x 84
 y 30
 end
-arch wwall_2_1_2
+arch wwall_1_3
 x 84
 y 30
 end
@@ -31944,13 +31948,17 @@ arch woodfloor
 x 85
 y 30
 end
-arch oakdoor
+arch invis_exit
 slaying /world/world_116_102
 hp 31
 sp 28
 x 85
 y 30
 end
+arch door_2
+x 85
+y 30
+end
 arch grass
 x 85
 y 31
@@ -32283,7 +32291,7 @@ arch woodfloor
 x 86
 y 30
 end
-arch wwall_2_1_2
+arch wwall_1_4
 x 86
 y 30
 end
@@ -33333,7 +33341,7 @@ arch woodfloor
 x 89
 y 29
 end
-arch wwall_2_1_1
+arch wwall_1_2
 x 89
 y 29
 end

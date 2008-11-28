@@ -10,7 +10,7 @@ height 30
 enter_y 7
 msg
 Created:  2008-02-29
-Modified: 2008-10-21 Rick Tanner
+Modified: 2008-11-27 Rick Tanner
 endmsg
 end
 arch blocked
@@ -75,10 +75,13 @@ end
 arch cobblestones2
 y 7
 end
-arch oakdoor
+arch invis_exit
 slaying ../../world/world_116_102
 hp 39
 sp 9
+y 7
+end
+arch door_look_2
 y 7
 end
 arch dungeon_magic
