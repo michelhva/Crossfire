@@ -8,7 +8,7 @@ enter_x 7
 enter_y 1
 msg
 Created:  1994-12-18 bt (thomas@nomad.astro.psu.edu)
-Modified: 2008-10-28 Rick Tanner
+Modified: 2008-11-29 Rick Tanner
 endmsg
 end
 arch sea
@@ -365,6 +365,10 @@ arch flagstone
 x 3
 y 6
 end
+arch awall_1_3
+x 3
+y 6
+end
 arch cwall_0
 x 3
 y 6
@@ -567,6 +571,10 @@ arch flagstone
 x 5
 y 6
 end
+arch awall_1_4
+x 5
+y 6
+end
 arch cwall_0
 x 5
 y 6
@@ -661,7 +669,7 @@ arch flagstone
 x 6
 y 6
 end
-arch awall_3_1
+arch awall_2_2_4
 x 6
 y 6
 end
@@ -1014,7 +1022,7 @@ arch flagstone
 x 9
 y 6
 end
-arch awall_3_1
+arch awall_2_2_1
 x 9
 y 6
 end
@@ -1154,6 +1162,10 @@ x 10
 y 5
 end
 arch flagstone
+x 10
+y 6
+end
+arch awall_1_3
 x 10
 y 6
 end
@@ -1328,6 +1340,10 @@ x 12
 y 5
 end
 arch flagstone
+x 12
+y 6
+end
+arch awall_1_4
 x 12
 y 6
 end
