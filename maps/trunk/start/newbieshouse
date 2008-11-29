@@ -3405,6 +3405,10 @@ arch woodfloor2
 x 11
 y 15
 end
+arch swall_1_4_half
+x 11
+y 15
+end
 arch wwall_2_1_1
 x 11
 y 15
@@ -3741,7 +3745,7 @@ arch woodfloor2
 x 12
 y 15
 end
-arch swall_1_4
+arch swall_2_1_2
 x 12
 y 15
 end
@@ -5051,7 +5055,7 @@ arch woodfloor2
 x 16
 y 15
 end
-arch swall_1_3
+arch swall_2_1_2
 x 16
 y 15
 end
@@ -5366,6 +5370,10 @@ x 17
 y 15
 end
 arch wwall_2_1_1
+x 17
+y 15
+end
+arch swall_1_3_half
 x 17
 y 15
 end
