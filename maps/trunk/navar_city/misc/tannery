@@ -8,7 +8,7 @@ enter_x 5
 enter_y 10
 msg
 Created:  2002-12-29
-Modified: 2008-11-02 Rick Tanner
+Modified: 2008-11-29 Rick Tanner
 endmsg
 end
 arch flagstone
@@ -511,11 +511,14 @@ y 10
 no_magic 1
 damned 1
 end
-arch oakdoor
+arch invis_exit
 slaying /world/world_122_116
-face odoor_2.111
 hp 10
 sp 41
+x 5
+y 10
+end
+arch door_2
 x 5
 y 10
 end
