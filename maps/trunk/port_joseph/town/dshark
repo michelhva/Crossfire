@@ -8,7 +8,7 @@ enter_x 16
 enter_y 6
 msg
 Created:  1994-05-17 langley (langley@fermat.dartmouth.edu)
-Modified: 2008-09-21 Rick Tanner
+Modified: 2008-11-29 Rick Tanner
 endmsg
 end
 arch brush
@@ -1740,12 +1740,11 @@ arch woodfloor
 x 17
 y 5
 end
-arch oakdoor
-name exit
-slaying /world/world_101_114
-face wooddoor_2.111
-hp 12
-sp 43
+arch invis_exit
+x 17
+y 5
+end
+arch door_1
 x 17
 y 5
 end
@@ -1753,12 +1752,14 @@ arch woodfloor
 x 17
 y 6
 end
-arch oakdoor
-name exit
+arch invis_exit
 slaying /world/world_101_114
-face wooddoor_2.111
 hp 12
 sp 43
+x 17
+y 6
+end
+arch door_1
 x 17
 y 6
 end
