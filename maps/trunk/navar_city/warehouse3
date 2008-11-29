@@ -8,7 +8,7 @@ enter_x 2
 enter_y 34
 msg
 Created:  1993-11-10
-Modified: 2008-09-21 Rick Tanner
+Modified: 2008-11-28 Rick Tanner
 endmsg
 end
 arch woodfloor
@@ -204,13 +204,13 @@ end
 arch woodfloor
 y 32
 end
-arch wwall_2_1_1
+arch wwall_3_2
 y 32
 end
 arch woodfloor
 y 33
 end
-arch wwall_3_2
+arch wwall_2_1_1
 y 33
 end
 arch woodfloor
@@ -404,11 +404,15 @@ arch woodfloor
 x 1
 y 32
 end
+arch wwall_2_2_3
+x 1
+y 32
+end
 arch woodfloor
 x 1
 y 33
 end
-arch wwall_2_2_3
+arch wwall_2_1_1
 x 1
 y 33
 end
@@ -636,25 +640,29 @@ arch woodfloor
 x 2
 y 32
 end
-arch woodfloor
-x 2
-y 33
-end
 arch locked_door1
 slaying set_individual_value smuggle
 face ldoor_brown1.111
 x 2
-y 33
+y 32
 blocksview 1
+end
+arch woodfloor
+x 2
+y 33
 end
 arch woodfloor
 x 2
 y 34
 end
-arch oakdoor
+arch invis_exit
 slaying /world/world_122_116
 hp 17
 sp 39
+x 2
+y 34
+end
+arch door_2
 x 2
 y 34
 end
@@ -867,11 +875,15 @@ arch woodfloor
 x 3
 y 32
 end
+arch wwall_2_2_2
+x 3
+y 32
+end
 arch woodfloor
 x 3
 y 33
 end
-arch wwall_2_2_2
+arch wwall_2_1_1
 x 3
 y 33
 end
@@ -1097,7 +1109,7 @@ arch woodfloor
 x 4
 y 32
 end
-arch door_look_2
+arch wwall_2_2_3
 x 4
 y 32
 end
@@ -1105,7 +1117,7 @@ arch woodfloor
 x 4
 y 33
 end
-arch wwall_2_2_3
+arch wwall_2_1_1
 x 4
 y 33
 end
