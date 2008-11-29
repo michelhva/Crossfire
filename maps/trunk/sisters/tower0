@@ -9,7 +9,7 @@ enter_x 9
 enter_y 1
 msg
 Created:  1994-12-18 bt (thomas@astro.psu.edu)
-Modified: 2008-10-28 Rick Tanner
+Modified: 2008-11-29 Rick Tanner
 endmsg
 end
 arch blocked
@@ -808,7 +808,7 @@ arch flagstone
 x 7
 y 8
 end
-arch awall_3_3
+arch awall_2_2_3
 x 7
 y 8
 end
@@ -1074,7 +1074,7 @@ arch flagstone
 x 9
 y 8
 end
-arch awall_2_2_4
+arch awall_1_2
 x 9
 y 8
 end
@@ -1572,7 +1572,7 @@ arch flagstone
 x 13
 y 7
 end
-arch awall_2_1_2
+arch awall_1_3
 x 13
 y 7
 end
@@ -1798,7 +1798,7 @@ arch flagstone
 x 15
 y 7
 end
-arch awall_3_4
+arch awall_2_1_1
 x 15
 y 7
 end
