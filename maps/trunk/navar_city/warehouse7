@@ -7,7 +7,7 @@ height 27
 enter_x 7
 msg
 Created:  1993-11-15
-Modified: 2008-09-21 Rick Tanner
+Modified: 2008-11-28 Rick Tanner
 endmsg
 end
 arch woodfloor
@@ -1004,10 +1004,13 @@ end
 arch woodfloor
 x 7
 end
-arch oakdoor
+arch invis_exit
 slaying /world/world_122_116
 hp 17
 sp 47
+x 7
+end
+arch large_hdoor1
 x 7
 end
 arch woodfloor
@@ -1147,7 +1150,7 @@ end
 arch woodfloor
 x 8
 end
-arch oakdoor
+arch invis_exit
 slaying /world/world_122_116
 hp 17
 sp 47
