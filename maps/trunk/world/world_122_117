@@ -9,7 +9,7 @@ enter_x 1
 enter_y 1
 msg
 Created:  2002-06-02
-Modified: 2008-11-20 Rick Tanner
+Modified: 2008-11-29 Rick Tanner
 endmsg
 outdoor 1
 tile_path_1 world_122_116
@@ -4378,7 +4378,7 @@ arch store_general_west
 name Eddie's Store by the Wall
 slaying /navar_city/misc/city1gen
 hp 1
-sp 1
+sp 2
 x 12
 y 11
 end
@@ -5578,7 +5578,7 @@ arch store_armour
 name Olaf's Armor Emporium
 slaying /navar_city/misc/city1armour
 hp 1
-sp 1
+sp 2
 x 16
 y 1
 end
@@ -5651,7 +5651,7 @@ arch store_weapons
 name Red's Weapons Bazzar
 slaying /navar_city/misc/city1weapon
 hp 1
-sp 1
+sp 2
 x 16
 y 7
 end
@@ -5687,7 +5687,7 @@ arch store_magic_west
 name Wizzo's Magic Shop
 slaying /navar_city/misc/city1magic
 hp 1
-sp 1
+sp 2
 x 16
 y 10
 end
