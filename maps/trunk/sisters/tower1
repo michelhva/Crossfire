@@ -9,7 +9,7 @@ enter_x 7
 enter_y 15
 msg
 Created:  1994-12-18 bt (thomas@nomad.astro.psu.edu)
-Modified: 2008-10-28 Rick Tanner
+Modified: 2008-11-29 Rick Tanner
 endmsg
 end
 arch sea
@@ -804,10 +804,14 @@ arch flagstone
 x 7
 y 15
 end
-arch oakdoor
+arch invis_exit
 slaying /sisters/entrance
 hp 5
 sp 15
+x 7
+y 15
+end
+arch door_2
 x 7
 y 15
 end
@@ -909,10 +913,14 @@ arch flagstone
 x 8
 y 15
 end
-arch oakdoor
+arch invis_exit
 slaying /sisters/entrance
 hp 5
 sp 15
+x 8
+y 15
+end
+arch door_2
 x 8
 y 15
 end
