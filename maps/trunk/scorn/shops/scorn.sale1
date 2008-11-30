@@ -10,7 +10,7 @@ enter_x 10
 enter_y 17
 msg
 Created:  2004-07-01 Gene Alexander
-Modified: 2008-09-29 Rick Tanner
+Modified: 2008-11-30 Rick Tanner
 endmsg
 outdoor 1
 end
@@ -1245,13 +1245,14 @@ arch woodfloor
 x 9
 y 18
 end
-arch dwall_2_1_2
+arch dwall_1_3
 x 9
 y 18
 end
 arch cobblestones2
 x 9
 y 19
+move_block all
 end
 arch woodfloor
 x 10
@@ -1433,27 +1434,25 @@ arch woodfloor
 x 10
 y 17
 end
-arch oakdoor
-slaying /world/world_105_115
-msg
-Thanks for your business!
-endmsg
-hp 1
-sp 32
-x 10
-y 17
-end
 arch woodfloor
 x 10
 y 18
 end
-arch dwall_2_1_2
+arch invis_exit
+slaying /world/world_105_115
+hp 1
+sp 32
+x 10
+y 18
+end
+arch door_2
 x 10
 y 18
 end
 arch cobblestones2
 x 10
 y 19
+move_block all
 end
 arch woodfloor
 x 11
@@ -1595,13 +1594,14 @@ arch woodfloor
 x 11
 y 18
 end
-arch dwall_2_1_2
+arch dwall_1_4
 x 11
 y 18
 end
 arch cobblestones2
 x 11
 y 19
+move_block all
 end
 arch woodfloor
 x 12
