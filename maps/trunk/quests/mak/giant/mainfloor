@@ -6,7 +6,7 @@ height 27
 enter_x 15
 msg
 Created:  2000-04-13 Magnus Kronhamn (mak@solace.mh.se)
-Modified: 2008-10-21 Rick Tanner
+Modified: 2008-11-29 Rick Tanner
 endmsg
 end
 arch cobblestones
@@ -2088,7 +2088,7 @@ end
 arch cobblestones
 x 14
 end
-arch wall_2_1_2
+arch wall_1_3
 x 14
 end
 arch cobblestones
@@ -2214,10 +2214,13 @@ end
 arch cobblestones
 x 15
 end
-arch oakdoor
+arch invis_exit
 slaying ../MainFloor
 hp 25
 sp 10
+x 15
+end
+arch door_2
 x 15
 end
 arch cobblestones
@@ -2351,7 +2354,7 @@ end
 arch cobblestones
 x 16
 end
-arch wall_2_1_2
+arch wall_1_4
 x 16
 end
 arch cobblestones
