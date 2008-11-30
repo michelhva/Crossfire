@@ -9,6 +9,7 @@ height 14
 enter_x 5
 msg
 Created:  Andreas Vogl (red.blaze@gmx.net)
+Modified: 2008-11-30 Rick Tanner
 endmsg
 end
 arch blocked
@@ -767,10 +768,13 @@ end
 arch flagstone
 x 5
 end
-arch oakdoor
+arch invis_exit
 slaying /world/world_102_108
 hp 15
 sp 14
+x 5
+end
+arch door_2
 x 5
 end
 arch dungeon_magic

@@ -10,7 +10,7 @@ height 10
 enter_y 4
 msg
 Created:  1994-05-12
-Modified: 2008-11-02 Rick Tanner
+Modified: 2008-11-30 Rick Tanner
 endmsg
 end
 arch marble
@@ -38,19 +38,25 @@ end
 arch marble
 y 4
 end
-arch oakdoor
+arch invis_exit
 slaying /world/world_102_108
 hp 17
 sp 20
 y 4
 end
+arch door_1
+y 4
+end
 arch marble
 y 5
 end
-arch oakdoor
+arch invis_exit
 slaying /world/world_102_108
 hp 17
 sp 20
+y 5
+end
+arch door_1
 y 5
 end
 arch marble

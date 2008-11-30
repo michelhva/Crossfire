@@ -7,7 +7,7 @@ height 30
 enter_x 1
 enter_y 17
 msg
-Modified: 2008-09-27 Rick Tanner
+Modified: 2008-11-30 Rick Tanner
 endmsg
 end
 arch stonefloor2
@@ -351,7 +351,7 @@ name stonefloor
 x 1
 y 17
 end
-arch oakdoor
+arch exit
 slaying /world/world_102_108
 hp 22
 sp 8
