@@ -7,7 +7,7 @@ height 22
 enter_x 10
 enter_y 21
 msg
-Modified: 2008-11-29 Rick Tanner
+Modified: 2008-11-30 Rick Tanner
 endmsg
 end
 arch dirtfloor
@@ -51,6 +51,9 @@ arch wwall_2_1_1
 y 6
 end
 arch dirtfloor
+y 7
+end
+arch swall_1_4_half
 y 7
 end
 arch wwall_2_1_1
@@ -186,7 +189,7 @@ arch dirtfloor
 x 1
 y 7
 end
-arch swall_1_4
+arch swall_2_1_2
 x 1
 y 7
 end
@@ -1045,11 +1048,15 @@ arch dirtfloor
 x 7
 y 20
 end
-arch swall_1_2
+arch swall_2_1_1
 x 7
 y 20
 end
 arch dirtfloor
+x 7
+y 21
+end
+arch swall_1_2_half
 x 7
 y 21
 end
@@ -2085,11 +2092,15 @@ arch dirtfloor
 x 14
 y 20
 end
-arch swall_1_2
+arch swall_2_1_1
 x 14
 y 20
 end
 arch dirtfloor
+x 14
+y 21
+end
+arch swall_1_2_half
 x 14
 y 21
 end
@@ -2742,7 +2753,7 @@ arch dirtfloor
 x 20
 y 7
 end
-arch swall_1_3
+arch swall_2_1_2
 x 20
 y 7
 end
@@ -2917,6 +2928,10 @@ x 21
 y 7
 end
 arch wwall_2_1_1
+x 21
+y 7
+end
+arch swall_1_3_half
 x 21
 y 7
 end

@@ -618,11 +618,14 @@ end
 arch stwall_2_1_2
 x 6
 end
+arch swall_1_1
+x 6
+end
 arch flagstone
 x 6
 y 1
 end
-arch swall_1_1
+arch swall_2_1_1
 x 6
 y 1
 end
@@ -1087,7 +1090,7 @@ arch flagstone
 x 10
 y 4
 end
-arch swall_1_3
+arch swall_2_1_2
 x 10
 y 4
 end
@@ -1201,6 +1204,10 @@ x 11
 y 4
 end
 arch stwall_2_1_1
+x 11
+y 4
+end
+arch swall_1_3_half
 x 11
 y 4
 end
