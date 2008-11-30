@@ -1,3 +1,74 @@
+2008-11-30 07:32  rjtanner
+
+	* world/world_104_115: Correct map entrance coordinates from world
+	  map to Scorn maps
+
+2008-11-30 07:31  rjtanner
+
+	* scorn/crow/train/train, scorn/mansion/entrance,
+	  scorn/shops/scorn.sale1, scorn/shops/weaponshop: Replace and
+	  phase out the (old) oakdoor graphic with something different
+
+2008-11-30 07:09  rjtanner
+
+	* santo_dominion/crossfire: Overhaul 'New Cthulhu Church' to
+	  include walls around the map and have them merge nicely
+
+2008-11-30 06:52  rjtanner
+
+	* santo_dominion/north_farm: Cosmetic wall changes for nicer and
+	  smoother merging
+
+2008-11-30 06:51  rjtanner
+
+	* santo_dominion/south_barn: Cosmetic wall and door changes for
+	  nicer and smoother merging
+
+2008-11-30 06:45  rjtanner
+
+	* santo_dominion/north_barn: Replace wwall windows with woodwall
+	  windows - matching the rest of the map style
+
+2008-11-30 06:43  rjtanner
+
+	* santo_dominion/peacock, santo_dominion/shops/armour,
+	  santo_dominion/shops/eliks, santo_dominion/shops/erash,
+	  santo_dominion/temple_naive/templenaive.1,
+	  santo_dominion/tollpost: Cosmetic change with how fences (swall)
+	  merge with nearby walls
+
+2008-11-30 06:31  rjtanner
+
+	* santo_dominion/crossfire, santo_dominion/eeur/hut.1,
+	  santo_dominion/houses/house1,
+	  santo_dominion/magara/north_lighthouse/floor_1,
+	  santo_dominion/magara/opera,
+	  santo_dominion/magara/south_lighthouse/floor_1,
+	  santo_dominion/map.and.sale, santo_dominion/north_barn,
+	  santo_dominion/north_farm, santo_dominion/peacock,
+	  santo_dominion/sdomino_appartment, santo_dominion/shops/armour,
+	  santo_dominion/shops/eliks, santo_dominion/shops/erash,
+	  santo_dominion/shops/nosferatu, santo_dominion/shops/rings,
+	  santo_dominion/south_barn,
+	  santo_dominion/temple_naive/templenaive.1, santo_dominion/tobias,
+	  santo_dominion/tollpost, world/world_102_108: Replace and phase
+	  out the (old) oakdoor graphic with something different
+
+2008-11-30 05:47  rjtanner
+
+	* quests/cd/cd.inn.752, quests/cd/cd.store.753,
+	  quests/greyshield/Cavern, quests/greyshield/Finish,
+	  quests/greyshield/Greysword, quests/mak/MainFloor,
+	  quests/mak/chaos/down1, quests/mak/chaos/down2,
+	  quests/mak/chaos/down3, quests/mak/giant/mainfloor,
+	  quests/peterm/temple/InnerTemple,
+	  quests/peterm/temple/OuterTemple: Replace and phase out the (old)
+	  oakdoor graphic with something different
+
+2008-11-29 08:21  rjtanner
+
+	* ChangeLog: Updated ChangeLog file using svn2cl
+
 2008-11-29 08:07  rjtanner
 
 	* start/newbieshouse: Cosmetic change with how fences (swall) merge
