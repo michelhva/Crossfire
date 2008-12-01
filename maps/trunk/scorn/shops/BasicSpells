@@ -11,7 +11,7 @@ enter_x 2
 enter_y 2
 msg
 Created:  2000-10-18
-Modified: 2008-11-30 Rick Tanner
+Modified: 2008-12-01 Rick Tanner
 endmsg
 end
 arch cobblestones2
@@ -83,7 +83,11 @@ arch woodfloor
 x 1
 y 4
 end
-arch wwall_3_2
+arch swall_1_4_half
+x 1
+y 4
+end
+arch wwall_2_1_1
 x 1
 y 4
 end
@@ -432,7 +436,11 @@ arch woodfloor
 x 4
 y 1
 end
-arch wwall_3_3
+arch wwall_2_1_2
+x 4
+y 1
+end
+arch swall_1_1_half
 x 4
 y 1
 end
