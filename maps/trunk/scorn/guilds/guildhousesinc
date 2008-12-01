@@ -8,7 +8,7 @@ enter_x 9
 enter_y 9
 msg
 Created:  2002-04-06
-Modified: 2007-11-04 Andreas Kirschbaum
+Modified: 2008-11-30 Rick Tanner
 endmsg
 end
 arch woodfloor
@@ -1087,10 +1087,14 @@ arch woodfloor
 x 9
 y 9
 end
-arch oakdoor
+arch invis_exit
 slaying /world/world_105_115
 hp 15
 sp 39
+x 9
+y 9
+end
+arch door_2
 x 9
 y 9
 end

@@ -10,7 +10,7 @@ enter_x 17
 enter_y 18
 msg
 Created:  2004-01-25 Ryo Saeba
-Modified: 2008-10-20 Rick Tanner
+Modified: 2008-11-30 Rick Tanner
 endmsg
 end
 arch tile_white_floor
@@ -2640,7 +2640,7 @@ arch tile_white_floor
 x 16
 y 19
 end
-arch wwall_2_1_2
+arch wwall_1_3
 x 16
 y 19
 end
@@ -2770,21 +2770,18 @@ arch tile_white_floor
 x 17
 y 18
 end
-arch oakdoor
-slaying /world/world_105_115
-msg
-Thank you for your visit!
-endmsg
-hp 10
-sp 29
-x 17
-y 18
-end
 arch tile_white_floor
 x 17
 y 19
 end
-arch wwall_2_1_2
+arch invis_exit
+slaying /world/world_105_115
+hp 10
+sp 29
+x 17
+y 19
+end
+arch door_2
 x 17
 y 19
 end
@@ -3033,7 +3030,7 @@ arch tile_white_floor
 x 18
 y 19
 end
-arch wwall_2_1_2
+arch wwall_1_4
 x 18
 y 19
 end
