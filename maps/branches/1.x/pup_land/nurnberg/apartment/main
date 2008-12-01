@@ -8,7 +8,7 @@ enter_x 6
 enter_y 1
 msg
 Created:  2000-11-19 Andreas Vogl (red.blaze@gmx.net)
-Modified: 2008-11-17 Rick Tanner
+Modified: 2008-12-01 Rick Tanner
 endmsg
 end
 arch blocked
@@ -630,7 +630,7 @@ y 1
 unique 1
 end
 arch oakdoor
-slaying ../city
+slaying /pup_land/nurnberg/city
 hp 10
 sp 21
 x 6
