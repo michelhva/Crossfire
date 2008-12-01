@@ -8,7 +8,7 @@ enter_x 4
 enter_y 1
 msg
 Created:  2007-05-26 Nicolas Weeger
-Modified: 2008-09-20 Rick Tanner
+Modified: 2008-11-30 Rick Tanner
 endmsg
 maplore
 @quest Lursendis
@@ -138,6 +138,10 @@ arch marble_blgr
 x 2
 y 1
 end
+arch dungeon_magic
+x 2
+y 2
+end
 arch marble_blgr
 x 2
 y 2
@@ -146,6 +150,10 @@ arch swall_2_2_2
 x 2
 y 2
 end
+arch dungeon_magic
+x 2
+y 3
+end
 arch marble_blgr
 x 2
 y 3
@@ -153,6 +161,10 @@ end
 arch swall_2_1_1
 x 2
 y 3
+end
+arch dungeon_magic
+x 2
+y 4
 end
 arch marble_blgr
 x 2
@@ -162,6 +174,10 @@ arch swall_2_1_1
 x 2
 y 4
 end
+arch dungeon_magic
+x 2
+y 5
+end
 arch marble_blgr
 x 2
 y 5
@@ -170,6 +186,10 @@ arch swall_2_1_1
 x 2
 y 5
 end
+arch dungeon_magic
+x 2
+y 6
+end
 arch marble_blgr
 x 2
 y 6
@@ -177,6 +197,10 @@ end
 arch swall_2_1_1
 x 2
 y 6
+end
+arch dungeon_magic
+x 2
+y 7
 end
 arch marble_blgr
 x 2
@@ -216,6 +240,10 @@ no_damage 1
 arch spell_sm_lightning
 end
 end
+arch dungeon_magic
+x 3
+y 2
+end
 arch marble_blgr
 x 3
 y 2
@@ -239,6 +267,10 @@ end
 arch marble_blgr
 x 3
 y 6
+end
+arch dungeon_magic
+x 3
+y 7
 end
 arch marble_blgr
 x 3
@@ -297,6 +329,10 @@ arch button_lever
 x 4
 y 6
 connected 1
+end
+arch dungeon_magic
+x 4
+y 7
 end
 arch marble_blgr
 x 4
@@ -383,6 +419,10 @@ x 5
 y 6
 connected 1
 end
+arch dungeon_magic
+x 5
+y 7
+end
 arch marble_blgr
 x 5
 y 7
@@ -428,6 +468,10 @@ no_damage 1
 arch spell_firebolt
 end
 end
+arch dungeon_magic
+x 6
+y 2
+end
 arch marble_blgr
 x 6
 y 2
@@ -451,6 +495,10 @@ end
 arch marble_blgr
 x 6
 y 6
+end
+arch dungeon_magic
+x 6
+y 7
 end
 arch marble_blgr
 x 6
@@ -482,6 +530,10 @@ arch marble_blgr
 x 7
 y 1
 end
+arch dungeon_magic
+x 7
+y 2
+end
 arch marble_blgr
 x 7
 y 2
@@ -490,6 +542,10 @@ arch swall_2_2_3
 x 7
 y 2
 end
+arch dungeon_magic
+x 7
+y 3
+end
 arch marble_blgr
 x 7
 y 3
@@ -497,6 +553,10 @@ end
 arch swall_2_1_1
 x 7
 y 3
+end
+arch dungeon_magic
+x 7
+y 4
 end
 arch marble_blgr
 x 7
@@ -506,6 +566,10 @@ arch swall_2_1_1
 x 7
 y 4
 end
+arch dungeon_magic
+x 7
+y 5
+end
 arch marble_blgr
 x 7
 y 5
@@ -514,6 +578,10 @@ arch swall_2_1_1
 x 7
 y 5
 end
+arch dungeon_magic
+x 7
+y 6
+end
 arch marble_blgr
 x 7
 y 6
@@ -521,6 +589,10 @@ end
 arch swall_2_1_1
 x 7
 y 6
+end
+arch dungeon_magic
+x 7
+y 7
 end
 arch marble_blgr
 x 7
