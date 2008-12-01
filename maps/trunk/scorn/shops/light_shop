@@ -10,7 +10,7 @@ enter_x 16
 enter_y 11
 msg
 Created:  2002-12-28
-Modified: 2008-11-30 Rick Tanner
+Modified: 2008-12-01 Rick Tanner
 endmsg
 end
 arch shop_empty
@@ -345,6 +345,10 @@ x 3
 y 13
 end
 arch shop_empty
+x 3
+y 14
+end
+arch swall_1_2_half
 x 3
 y 14
 end
