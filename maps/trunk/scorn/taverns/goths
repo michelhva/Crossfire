@@ -9,7 +9,7 @@ enter_x 18
 enter_y 32
 msg
 Created:  1993-10-15
-Modified: 2008-11-20 Kevin Bulgrien
+Modified: 2008-11-30 Rick Tanner
 endmsg
 maplore
 @quest Scorn Royalty Quest
@@ -3924,10 +3924,14 @@ arch woodfloor
 x 17
 y 32
 end
-arch oakdoor
+arch invis_exit
 slaying /world/world_105_115
 hp 19
 sp 35
+x 17
+y 32
+end
+arch large_hdoor1
 x 17
 y 32
 end
@@ -4111,7 +4115,7 @@ arch woodfloor
 x 18
 y 32
 end
-arch oakdoor
+arch invis_exit
 slaying /world/world_105_115
 hp 19
 sp 35

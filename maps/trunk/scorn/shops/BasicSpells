@@ -11,7 +11,7 @@ enter_x 2
 enter_y 2
 msg
 Created:  2000-10-18
-Modified: 2008-09-29 Rick Tanner
+Modified: 2008-11-30 Rick Tanner
 endmsg
 end
 arch cobblestones2
@@ -59,7 +59,7 @@ arch woodfloor
 x 1
 y 1
 end
-arch wwall_2_2_2
+arch wwall_1_1
 x 1
 y 1
 end
@@ -154,19 +154,19 @@ arch woodfloor
 x 2
 y 1
 end
-arch wwall_2_1_2
+arch invis_exit
+slaying /world/world_104_115
+hp 49
+sp 34
+x 2
+y 1
+end
+arch door_2
+name Exit back to town
 x 2
 y 1
 end
 arch woodfloor
-x 2
-y 2
-end
-arch oakdoor
-name Exit back to town
-slaying /world/world_104_115
-hp 49
-sp 34
 x 2
 y 2
 end
@@ -365,7 +365,7 @@ arch woodfloor
 x 3
 y 1
 end
-arch wwall_win2
+arch wwall_1_4
 x 3
 y 1
 end

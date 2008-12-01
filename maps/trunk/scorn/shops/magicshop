@@ -11,7 +11,7 @@ enter_x 14
 enter_y 14
 msg
 Created:  1993-10-15
-Modified: 2008-10-25 Rick Tanner
+Modified: 2008-11-30 Rick Tanner
 endmsg
 end
 arch shop_empty
@@ -1162,7 +1162,7 @@ arch shop_empty
 x 13
 y 15
 end
-arch wall_2_1_2
+arch wall_1_3
 x 13
 y 15
 end
@@ -1240,19 +1240,19 @@ arch woodfloor
 x 14
 y 14
 end
-arch oakdoor
-name Exit back to town
-slaying /world/world_104_115
-hp 42
-sp 32
-x 14
-y 14
-end
 arch shop_empty
 x 14
 y 15
 end
-arch wall_2_1_2
+arch invis_exit
+slaying /world/world_104_115
+hp 42
+sp 32
+x 14
+y 15
+end
+arch door_2
+name Exit back to town
 x 14
 y 15
 end
@@ -1342,7 +1342,7 @@ arch shop_empty
 x 15
 y 15
 end
-arch wall_2_1_2
+arch wall_1_4
 x 15
 y 15
 end
