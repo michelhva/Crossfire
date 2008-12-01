@@ -8,7 +8,7 @@ enter_x 4
 enter_y 11
 msg
 Created:  2002-12-29
-Modified: 2008-11-30 Rick Tanner
+Modified: 2008-12-01 Rick Tanner
 endmsg
 end
 arch woodfloor
@@ -271,7 +271,10 @@ end
 arch woodfloor
 x 2
 end
-arch wwall_2_1_2
+arch flagstone_1_4
+x 2
+end
+arch wwall_1_3
 x 2
 end
 arch woodfloor
@@ -773,7 +776,10 @@ end
 arch woodfloor
 x 6
 end
-arch wwall_2_1_2
+arch flagstone_1_3
+x 6
+end
+arch wwall_1_4
 x 6
 end
 arch woodfloor
