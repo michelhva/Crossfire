@@ -8,7 +8,7 @@ enter_x 1
 enter_y 1
 msg
 Created:  1994-11-15
-Modified: 2008-10-26 Rick Tanner
+Modified: 2008-12-01 Rick Tanner
 endmsg
 end
 arch dungeon_floor
@@ -81,16 +81,46 @@ end
 arch dun3
 y 14
 end
-arch dun3
+arch dungeon_magic
 y 15
 end
-arch dun3
+arch dungeon_floor
+y 15
+end
+arch dun5
+y 15
+end
+arch dungeon_magic
 y 16
 end
-arch dun3
+arch dungeon_floor
+y 16
+end
+arch oakdoor
+slaying church.4a
+hp 33
+sp 16
+y 16
+end
+arch dungeon_magic
 y 17
 end
-arch dun3
+arch dungeon_floor
+y 17
+end
+arch oakdoor
+slaying church.4a
+hp 33
+sp 17
+y 17
+end
+arch dungeon_magic
+y 18
+end
+arch dungeon_floor
+y 18
+end
+arch dun8
 y 18
 end
 arch dun3
@@ -241,25 +271,11 @@ arch dungeon_floor
 x 1
 y 16
 end
-arch oakdoor
-slaying church.4a
-hp 33
-sp 16
-x 1
-y 16
-end
 arch dungeon_magic
 x 1
 y 17
 end
 arch dungeon_floor
-x 1
-y 17
-end
-arch oakdoor
-slaying church.4a
-hp 33
-sp 17
 x 1
 y 17
 end
