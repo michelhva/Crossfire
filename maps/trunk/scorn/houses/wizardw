@@ -9,7 +9,7 @@ enter_x 4
 enter_y 13
 msg
 Created:  2002-12-28
-Modified: 2008-11-30 Rick Tanner
+Modified: 2008-12-01 Rick Tanner
 endmsg
 end
 arch blackmarble
@@ -285,7 +285,10 @@ end
 arch yellow_0
 x 2
 end
-arch awall_3_3
+arch awall_2_1_2
+x 2
+end
+arch swall_1_1_half
 x 2
 end
 arch yellow_0
@@ -465,7 +468,7 @@ name_pl Fractured Obsidian
 x 3
 y 6
 end
-arch awall_2_1_2
+arch awall_1_3
 x 3
 y 6
 end
@@ -731,7 +734,7 @@ name_pl Fractured Obsidian
 x 5
 y 6
 end
-arch awall_2_1_2
+arch awall_1_4
 x 5
 y 6
 end
@@ -794,7 +797,10 @@ end
 arch yellow_0
 x 6
 end
-arch awall_3_3
+arch awall_2_1_2
+x 6
+end
+arch swall_1_1_half
 x 6
 end
 arch yellow_0
