@@ -1,3 +1,58 @@
+2008-12-01 06:38  rjtanner
+
+	* wolfsburg/dungeons/church.4b, wolfsburg/dungeons/hut,
+	  wolfsburg/dungeons/stronghold, wolfsburg/magara/castle/floor_1,
+	  wolfsburg/magara/tower1/entrance,
+	  wolfsburg/magara/tower1/floor_1, wolfsburg/magara/tower2/floor_1,
+	  wolfsburg/piratechurch, wolfsburg/shops/transport.shoppe,
+	  world/world_128_109: Replace and phase out the (old) oakdoor
+	  graphic with something different
+
+2008-12-01 06:13  rjtanner
+
+	* scorn/houses/kitchen, scorn/houses/wizardw: Cosmetic wall changes
+	  for smoother merging
+
+2008-12-01 06:10  rjtanner
+
+	* scorn/misc/battle_arena/snack, scorn/shops/BasicSpells,
+	  scorn/shops/light_shop: Cosmetic change with how fences (swall)
+	  merge with nearby walls
+
+2008-12-01 06:02  rjtanner
+
+	* world/world_105_115: Correct map entrance coordinates from world
+	  map to Scorn Gem Shop
+
+2008-12-01 06:00  rjtanner
+
+	* scorn/dtabb/cave3, scorn/guilds/guildhousesinc,
+	  scorn/houses/bowyer, scorn/houses/house3.1st,
+	  scorn/houses/jeweler, scorn/houses/kitchen, scorn/houses/maze1,
+	  scorn/houses/smithery, scorn/houses/tannery,
+	  scorn/houses/wizardw, scorn/kar/somehouse,
+	  scorn/magara/porter_house, scorn/misc/battle_arena/first-aide,
+	  scorn/misc/battle_arena/snack, scorn/misc/beginners2,
+	  scorn/misc/dragon_guild, scorn/misc/jail, scorn/misc/map.esben.2,
+	  scorn/misc/puddings.place, scorn/misc/zoo,
+	  scorn/shops/BasicSpells, scorn/shops/armourshop,
+	  scorn/shops/bowshop, scorn/shops/buildshop, scorn/shops/gemshop,
+	  scorn/shops/generalshop, scorn/shops/light_shop,
+	  scorn/shops/magicshop, scorn/shops/potionshop,
+	  scorn/taverns/goths: Replace and phase out the (old) oakdoor
+	  graphic with something different
+
+2008-12-01 05:10  rjtanner
+
+	* lake_country/small_buildings/sentrio_house: Tentative fix for [
+	  crossfire-Bugs-2369085 ] infinite food spawning map; placed
+	  no_spells tiles beneath the fence to block dimension door and
+	  player access (as described in the bug report)
+
+2008-11-30 07:37  rjtanner
+
+	* ChangeLog: Updated ChangeLog file using svn2cl
+
 2008-11-30 07:32  rjtanner
 
 	* world/world_104_115: Correct map entrance coordinates from world
