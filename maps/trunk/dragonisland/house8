@@ -8,7 +8,7 @@ enter_x 8
 enter_y 8
 msg
 Created:  1997-09-12
-Modified: 2008-11-27 Rick Tanner
+Modified: 2008-12-01 Rick Tanner
 endmsg
 end
 arch afloor_left
@@ -701,14 +701,10 @@ arch afloor_left
 x 9
 y 8
 end
-arch invis_exit
+arch oakdoor_1
 slaying /world/world_103_127
 hp 5
 sp 19
-x 9
-y 8
-end
-arch door_1
 x 9
 y 8
 end

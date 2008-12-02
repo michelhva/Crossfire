@@ -8,7 +8,7 @@ enter_x 9
 enter_y 18
 msg
 Created:  1997-06-23 Viola Krings
-Modified: 2008-11-27 Rick Tanner
+Modified: 2008-12-01 Rick Tanner
 endmsg
 end
 arch woodfloor
@@ -1300,14 +1300,10 @@ arch woodfloor
 x 9
 y 19
 end
-arch invis_exit
+arch oakdoor_2
 slaying /world/world_103_127
 hp 6
 sp 13
-x 9
-y 19
-end
-arch large_hdoor1
 x 9
 y 19
 end
@@ -1457,7 +1453,7 @@ arch woodfloor
 x 10
 y 19
 end
-arch invis_exit
+arch oakdoor_2
 slaying /world/world_103_127
 hp 6
 sp 13
