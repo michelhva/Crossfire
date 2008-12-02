@@ -8,7 +8,7 @@ enter_x 21
 enter_y 2
 msg
 Created:  1994-05-31
-Modified: 2008-11-27 Rick Tanner
+Modified: 2008-12-01 Rick Tanner
 endmsg
 end
 arch grass
@@ -3016,6 +3016,7 @@ y 29
 end
 arch grass
 x 18
+move_block all
 end
 arch woodfloor
 x 18
@@ -3187,6 +3188,7 @@ y 29
 end
 arch grass
 x 19
+move_block all
 end
 arch grass
 x 19
@@ -3325,6 +3327,7 @@ y 29
 end
 arch cobblestones2
 x 20
+move_block all
 end
 arch cobblestones2
 x 20
@@ -3463,6 +3466,7 @@ y 29
 end
 arch cobblestones2
 x 21
+move_block all
 end
 arch cobblestones2
 x 21
@@ -3597,6 +3601,7 @@ y 29
 end
 arch grass
 x 22
+move_block all
 end
 arch grass
 x 22
@@ -3735,6 +3740,7 @@ y 29
 end
 arch grass
 x 23
+move_block all
 end
 arch woodfloor
 x 23

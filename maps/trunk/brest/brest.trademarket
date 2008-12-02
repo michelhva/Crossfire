@@ -9,7 +9,7 @@ enter_x 7
 enter_y 15
 msg
 Created:  2004-08-03 Mikeeusa
-Modified: 2008-09-11 Rick Tanner
+Modified: 2008-12-01 Rick Tanner
 endmsg
 end
 arch dungeon_magic
@@ -1530,21 +1530,16 @@ arch dungeon_magic
 x 6
 y 16
 end
-arch invis_exit
+arch woodfloor
+x 6
+y 16
+end
+arch oakdoor_2
 slaying /world/world_107_123
 hp 36
 sp 29
 x 6
 y 16
-end
-arch woodfloor
-x 6
-y 16
-end
-arch door_2
-x 6
-y 16
-move_block 0
 end
 arch dungeon_magic
 x 6
@@ -1749,21 +1744,16 @@ arch dungeon_magic
 x 7
 y 16
 end
-arch invis_exit
+arch woodfloor
+x 7
+y 16
+end
+arch oakdoor_2
 slaying /world/world_107_123
 hp 36
 sp 29
 x 7
 y 16
-end
-arch woodfloor
-x 7
-y 16
-end
-arch door_2
-x 7
-y 16
-move_block 0
 end
 arch dungeon_magic
 x 7

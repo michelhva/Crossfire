@@ -13,7 +13,7 @@ enter_x 6
 enter_y 11
 msg
 Created:  1994-07-25
-Modified: 2008-11-27 Rick Tanner
+Modified: 2008-12-01 Rick Tanner
 endmsg
 end
 arch shop_empty
@@ -452,14 +452,11 @@ arch woodfloor
 x 6
 y 12
 end
-arch invis_exit
+arch oakdoor_2
 slaying /world/world_107_123
+face odoor_2_fant_brown.111
 hp 33
 sp 40
-x 6
-y 12
-end
-arch odoor_2_fant_brown
 x 6
 y 12
 end
