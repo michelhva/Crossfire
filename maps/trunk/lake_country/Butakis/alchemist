@@ -8,7 +8,7 @@ enter_x 4
 enter_y 4
 msg
 Created:  1995-09-13 Kundi, Xue (xkd@soda.berkeley.edu)
-Modified: 2008-11-28 Rick Tanner
+Modified: 2008-12-01 Rick Tanner
 endmsg
 end
 arch pstone_1
@@ -398,14 +398,10 @@ arch woodfloor
 x 7
 y 5
 end
-arch invis_exit
+arch oakdoor_1
 slaying Butakis0
 hp 9
 sp 14
-x 7
-y 5
-end
-arch door_1
 x 7
 y 5
 end
@@ -413,14 +409,10 @@ arch woodfloor
 x 7
 y 6
 end
-arch invis_exit
+arch oakdoor_1
 slaying Butakis0
 hp 9
 sp 14
-x 7
-y 6
-end
-arch door_1
 x 7
 y 6
 end

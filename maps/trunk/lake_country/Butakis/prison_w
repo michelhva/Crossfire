@@ -8,7 +8,7 @@ enter_x 15
 enter_y 1
 msg
 Created:  1995-03-28
-Modified: 2008-11-28 Rick Tanner
+Modified: 2008-12-01 Rick Tanner
 endmsg
 end
 arch dungeon_floor
@@ -1731,14 +1731,10 @@ arch dungeon_floor
 x 15
 y 1
 end
-arch invis_exit
+arch oakdoor_1
+name Oakdoor from Execution Chamber
 slaying prison1
 sp 4
-x 15
-y 1
-end
-arch door_1
-name Oakdoor from Execution Chamber
 x 15
 y 1
 end
@@ -1746,14 +1742,10 @@ arch dungeon_floor
 x 15
 y 2
 end
-arch invis_exit
+arch oakdoor_1
+name Oakdoor from Execution Chamber
 slaying prison1
 sp 5
-x 15
-y 2
-end
-arch door_1
-name Oakdoor from Execution Chamber
 x 15
 y 2
 end

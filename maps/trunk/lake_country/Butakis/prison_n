@@ -8,7 +8,7 @@ enter_x 13
 enter_y 15
 msg
 Created:  1995-03-29
-Modified: 2008-11-28 Rick Tanner
+Modified: 2008-12-01 Rick Tanner
 endmsg
 end
 arch dungeon_floor
@@ -1368,14 +1368,10 @@ arch dungeon_floor
 x 13
 y 15
 end
-arch invis_exit
+arch oakdoor_2
+name Oakdoor from Maximum Security Cells
 slaying prison1
 hp 4
-x 13
-y 15
-end
-arch door_2
-name Oakdoor from Maximum Security Cells
 x 13
 y 15
 end
@@ -1473,14 +1469,10 @@ arch dungeon_floor
 x 14
 y 15
 end
-arch invis_exit
+arch oakdoor_2
+name Oakdoor from Maximum Security Cells
 slaying prison1
 hp 5
-x 14
-y 15
-end
-arch door_2
-name Oakdoor from Maximum Security Cells
 x 14
 y 15
 end
