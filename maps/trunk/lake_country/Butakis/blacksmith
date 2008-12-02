@@ -36,7 +36,10 @@ end
 arch pstone_1
 y 4
 end
-arch wwall_3_2
+arch swall_1_4_half
+y 4
+end
+arch wwall_2_1_1
 y 4
 end
 arch pstone_1
@@ -191,7 +194,11 @@ arch pstone_1
 x 2
 y 7
 end
-arch wwall_3_1
+arch swall_1_2_half
+x 2
+y 7
+end
+arch wwall_2_1_2
 x 2
 y 7
 end
@@ -332,11 +339,14 @@ end
 arch wwall_2_1_2
 x 5
 end
+arch swall_1_1_half
+x 5
+end
 arch pstone_1
 x 5
 y 1
 end
-arch swall_1_1
+arch swall_2_1_1
 x 5
 y 1
 end
@@ -384,7 +394,11 @@ arch pstone_1
 x 5
 y 7
 end
-arch wwall_3_1
+arch swall_1_2_half
+x 5
+y 7
+end
+arch wwall_2_1_2
 x 5
 y 7
 end
