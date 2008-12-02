@@ -8,7 +8,7 @@ enter_x 8
 enter_y 15
 msg
 Created:  1994-09-20
-Modified: 2008-11-26 Rick Tanner
+Modified: 2008-12-01 Rick Tanner
 endmsg
 end
 arch dungeon_magic
@@ -1459,14 +1459,10 @@ arch afloor_left
 x 8
 y 16
 end
-arch invis_exit
+arch oakdoor_2
 slaying /world/world_107_123
 hp 32
 sp 25
-x 8
-y 16
-end
-arch odoor_2_fant_brown
 x 8
 y 16
 end

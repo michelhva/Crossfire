@@ -11,7 +11,7 @@ height 20
 enter_x 9
 enter_y 18
 msg
-Modified: 2008-11-27 Rick Tanner
+Modified: 2008-12-01 Rick Tanner
 endmsg
 end
 arch shop_empty
@@ -939,12 +939,9 @@ arch woodfloor
 x 9
 y 19
 end
-arch woodfloor
-x 9
-y 19
-end
-arch odoor_2_fant_blue-green
+arch oakdoor_2
 slaying /world/world_107_123
+face odoor_2_fant_blue-green.111
 hp 31
 sp 37
 x 9

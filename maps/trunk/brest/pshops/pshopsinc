@@ -6,7 +6,7 @@ width 36
 height 14
 msg
 Created:  2004-10-17 majorwoo (josh@woosworld.net)
-Modified: 2008-11-27 Rick Tanner
+Modified: 2008-12-01 Rick Tanner
 endmsg
 end
 arch dungeon_magic
@@ -2183,14 +2183,10 @@ arch woodfloor
 x 15
 y 10
 end
-arch invis_exit
+arch oakdoor_2
 slaying pshops_main
 hp 2
 sp 2
-x 15
-y 10
-end
-arch door_2
 x 15
 y 10
 end

@@ -8,7 +8,7 @@ enter_x 1
 enter_y 46
 msg
 Created:  1994-05-31
-Modified: 2008-11-27 Rick Tanner
+Modified: 2008-12-01 Rick Tanner
 endmsg
 end
 arch dungeon_floor
@@ -563,14 +563,11 @@ arch dungeon_floor
 x 1
 y 47
 end
-arch invis_exit
+arch oakdoor_2
 slaying /world/world_107_123
+face odoor_2_fant_red-yellow.111
 hp 29
 sp 34
-x 1
-y 47
-end
-arch odoor_2_fant_red-yellow
 x 1
 y 47
 end
