@@ -8,7 +8,7 @@ enter_x 85
 enter_y 30
 msg
 Created:  1999-01-19 Cater/Wade (john_cater@yahoo.com)
-Modified: 2008-11-27 Rick Tanner
+Modified: 2008-12-01 Rick Tanner
 endmsg
 end
 arch woodfloor
@@ -30888,14 +30888,10 @@ arch woodfloor
 x 82
 y 15
 end
-arch invis_exit
+arch oakdoor_2
 slaying /world/world_116_102
 hp 31
 sp 28
-x 82
-y 15
-end
-arch door_2
 x 82
 y 15
 end
@@ -31948,14 +31944,10 @@ arch woodfloor
 x 85
 y 30
 end
-arch invis_exit
+arch oakdoor_2
 slaying /world/world_116_102
 hp 31
 sp 28
-x 85
-y 30
-end
-arch door_2
 x 85
 y 30
 end

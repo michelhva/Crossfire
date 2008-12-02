@@ -11,7 +11,7 @@ enter_x 15
 enter_y 6
 msg
 Created:  2000-11-19 Andreas Vogl (red.blaze@gmx.net)
-Modified: 2008-11-27 Rick Tanner
+Modified: 2008-12-01 Rick Tanner
 endmsg
 end
 arch dungeon_floor
@@ -1067,14 +1067,10 @@ arch dungeon_floor
 x 15
 y 6
 end
-arch invis_exit
+arch oakdoor_1
 slaying /world/world_116_102
 hp 23
 sp 25
-x 15
-y 6
-end
-arch door_1
 x 15
 y 6
 end
