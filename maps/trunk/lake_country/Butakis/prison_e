@@ -7,7 +7,7 @@ height 16
 enter_y 14
 msg
 Created:  1995-03-29 Kundi, Xue (xkd@soda.berkeley.edu)
-Modified: 2008-11-27 Rick Tanner
+Modified: 2008-12-01 Rick Tanner
 endmsg
 end
 arch dungeon_floor
@@ -92,14 +92,11 @@ end
 arch dungeon_floor
 y 13
 end
-arch invis_exit
+arch oakdoor_1
+name Oakdoor from Wizards' Cells
 slaying prison1
 hp 9
 sp 4
-y 13
-end
-arch door_1
-name Oakdoor from Wizards' Cells
 y 13
 end
 arch magic_banned
@@ -108,14 +105,11 @@ end
 arch dungeon_floor
 y 14
 end
-arch invis_exit
+arch oakdoor_1
+name Oakdoor from Wizards' Cells
 slaying prison1
 hp 9
 sp 5
-y 14
-end
-arch door_1
-name Oakdoor from Wizards' Cells
 y 14
 end
 arch dungeon_floor
