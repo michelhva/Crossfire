@@ -8,7 +8,7 @@ enter_x 8
 enter_y 15
 msg
 Created:  1997-07-18
-Modified: 2008-11-27 Rick Tanner
+Modified: 2008-12-01 Rick Tanner
 endmsg
 end
 arch afloor_right
@@ -1028,7 +1028,7 @@ name floor
 x 7
 y 15
 end
-arch wall_2_1_2
+arch wall_1_3
 x 7
 y 15
 end
@@ -1152,7 +1152,7 @@ name floor
 x 8
 y 15
 end
-arch wall_large_door1
+arch oakdoor_2
 slaying /world/world_103_127
 hp 2
 sp 15
@@ -1257,6 +1257,13 @@ y 14
 end
 arch afloor_right
 name floor
+x 9
+y 15
+end
+arch oakdoor_2
+slaying /world/world_103_127
+hp 2
+sp 15
 x 9
 y 15
 end
@@ -1374,7 +1381,7 @@ name floor
 x 10
 y 15
 end
-arch wall_2_1_2
+arch wall_1_4
 x 10
 y 15
 end

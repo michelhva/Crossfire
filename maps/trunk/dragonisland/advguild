@@ -10,7 +10,7 @@ enter_x 15
 enter_y 31
 msg
 Created:  1997-07-10 Viola Krings
-Modified: 2008-11-27 Rick Tanner
+Modified: 2008-12-01 Rick Tanner
 endmsg
 end
 arch woodfloor
@@ -2933,7 +2933,7 @@ arch woodfloor
 x 14
 y 31
 end
-arch wall_2_1_2
+arch wall_1_3
 x 14
 y 31
 end
@@ -3115,7 +3115,7 @@ arch woodfloor
 x 15
 y 31
 end
-arch wall_large_door1
+arch oakdoor_2
 slaying /world/world_103_127
 hp 8
 sp 16
@@ -3322,6 +3322,13 @@ arch woodfloor
 x 16
 y 31
 end
+arch oakdoor_2
+slaying /world/world_103_127
+hp 8
+sp 16
+x 16
+y 31
+end
 arch woodfloor
 x 17
 end
@@ -3502,7 +3509,7 @@ arch woodfloor
 x 17
 y 31
 end
-arch wall_2_1_2
+arch wall_1_4
 x 17
 y 31
 end
