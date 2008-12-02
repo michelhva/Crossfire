@@ -357,12 +357,15 @@ end
 arch wall_2_1_2
 x 3
 end
+arch swall_1_1_half
+x 3
+end
 arch afloor_right
 name floor
 x 3
 y 1
 end
-arch swall_1_1
+arch swall_2_1_1
 x 3
 y 1
 end
@@ -1616,12 +1619,15 @@ end
 arch wall_2_1_2
 x 13
 end
+arch swall_1_1_half
+x 13
+end
 arch afloor_right
 name floor
 x 13
 y 1
 end
-arch swall_1_1
+arch swall_2_1_1
 x 13
 y 1
 end
