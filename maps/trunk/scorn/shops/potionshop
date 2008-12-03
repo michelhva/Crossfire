@@ -10,7 +10,7 @@ enter_x 14
 enter_y 14
 msg
 Created:  1996-05-02 bt (thomas@astro.psu.edu)
-Modified: 2008-11-30 Rick Tanner
+Modified: 2008-12-02 Rick Tanner
 endmsg
 end
 arch woodfloor
@@ -1366,14 +1366,10 @@ arch woodfloor
 x 14
 y 15
 end
-arch invis_exit
+arch oakdoor_2
 slaying /world/world_104_115
 hp 44
 sp 37
-x 14
-y 15
-end
-arch door_2
 x 14
 y 15
 end

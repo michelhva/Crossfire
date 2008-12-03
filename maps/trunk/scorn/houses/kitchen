@@ -8,7 +8,7 @@ enter_x 4
 enter_y 11
 msg
 Created:  2002-12-29
-Modified: 2008-12-01 Rick Tanner
+Modified: 2008-12-02 Rick Tanner
 endmsg
 end
 arch woodfloor
@@ -621,7 +621,7 @@ y 11
 no_magic 1
 damned 1
 end
-arch door_2
+arch oakdoor_2
 slaying /world/world_105_115
 hp 14
 sp 39

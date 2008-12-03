@@ -9,7 +9,7 @@ enter_x 4
 enter_y 13
 msg
 Created:  2002-12-28
-Modified: 2008-12-01 Rick Tanner
+Modified: 2008-12-02 Rick Tanner
 endmsg
 end
 arch blackmarble
@@ -663,14 +663,10 @@ arch yellow_0
 x 4
 y 13
 end
-arch invis_exit
+arch oakdoor_2
 slaying /world/world_105_115
 hp 11
 sp 43
-x 4
-y 13
-end
-arch door_2
 x 4
 y 13
 end
