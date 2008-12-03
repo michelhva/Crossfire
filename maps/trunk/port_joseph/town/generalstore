@@ -9,7 +9,7 @@ height 16
 enter_x 10
 msg
 Created:  1994-05-06 langley (langley@fermat.dartmouth.edu)
-Modified: 2008-11-29 Rick Tanner
+Modified: 2008-12-02 Rick Tanner
 endmsg
 end
 arch shop_empty
@@ -880,13 +880,10 @@ end
 arch cobblestones
 x 10
 end
-arch invis_exit
+arch oakdoor_2
 slaying /world/world_101_114
 hp 14
 sp 39
-x 10
-end
-arch large_hdoor1
 x 10
 end
 arch cobblestones
@@ -968,7 +965,7 @@ end
 arch cobblestones
 x 11
 end
-arch invis_exit
+arch oakdoor_2
 slaying /world/world_101_114
 hp 14
 sp 39
