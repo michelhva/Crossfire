@@ -1,3 +1,119 @@
+2008-12-03 03:12  rjtanner
+
+	* wolfsburg/inns: Cosmetic wall changes for nicer merging
+
+2008-12-03 03:00  rjtanner
+
+	* world/world_128_109: Correct map entrance coordinates from world
+	  map to Wolfsburg Inns
+
+2008-12-03 02:58  rjtanner
+
+	* wolfsburg/apartments/wolfsburg.apartment,
+	  wolfsburg/dungeons/stronghold, wolfsburg/etern_rew,
+	  wolfsburg/inns, wolfsburg/magara/tower1/entrance,
+	  wolfsburg/magara/tower2/floor_1, wolfsburg/piratechurch,
+	  wolfsburg/prison, wolfsburg/shops/transport.shoppe,
+	  wolfsburg/ware1: Replace recently updated oakdoors with new
+	  archetype and recycled graphic. Requires archetype r10798 or
+	  newer.
+
+2008-12-03 02:42  rjtanner
+
+	* scorn/crow/train/train, scorn/dtabb/cave3,
+	  scorn/guilds/guildhousesinc, scorn/houses/bowyer,
+	  scorn/houses/house3.1st, scorn/houses/jeweler,
+	  scorn/houses/kitchen, scorn/houses/maze1, scorn/houses/smithery,
+	  scorn/houses/tannery, scorn/houses/wizardw, scorn/kar/somehouse,
+	  scorn/mansion/entrance, scorn/misc/HouseofHealing,
+	  scorn/misc/battle_arena/first-aide,
+	  scorn/misc/battle_arena/snack, scorn/misc/beginners2,
+	  scorn/misc/dragon_guild, scorn/misc/jail,
+	  scorn/misc/puddings.place, scorn/misc/zoo,
+	  scorn/shops/BasicSpells, scorn/shops/armourshop,
+	  scorn/shops/bowshop, scorn/shops/buildshop, scorn/shops/gemshop,
+	  scorn/shops/generalshop, scorn/shops/light_shop,
+	  scorn/shops/magicshop, scorn/shops/potionshop,
+	  scorn/shops/scorn.sale1, scorn/taverns/goths: Replace recently
+	  updated oakdoors with new archetype and recycled graphic.
+	  Requires archetype r10798 or newer.
+
+2008-12-03 02:05  rjtanner
+
+	* scorn/misc/cityhall: Add no_spells tiles underneath the fences to
+	  prevent players from using dimension door to access city hall or
+	  areas not meant for player access
+
+2008-12-03 01:56  rjtanner
+
+	* santo_dominion/map.and.sale: Cosmetic change with how fences
+	  (swall) merge with nearby walls
+
+2008-12-03 01:55  rjtanner
+
+	* santo_dominion/eeur/hut.1, santo_dominion/houses/house1,
+	  santo_dominion/magara/opera, santo_dominion/map.and.sale,
+	  santo_dominion/north_barn, santo_dominion/north_farm,
+	  santo_dominion/peacock, santo_dominion/sdomino_appartment,
+	  santo_dominion/shops/armour, santo_dominion/shops/eliks,
+	  santo_dominion/shops/erash, santo_dominion/shops/nosferatu,
+	  santo_dominion/shops/rings, santo_dominion/south_barn,
+	  santo_dominion/temple_naive/templenaive.1, santo_dominion/tobias,
+	  santo_dominion/tollpost: Replace recently updated oakdoors with
+	  new archetype and recycled graphic. Requires archetype r10798 or
+	  newer.
+
+2008-12-03 01:43  rjtanner
+
+	* quests/cd/cd.inn.752, quests/cd/cd.store.753,
+	  quests/mak/MainFloor, quests/mak/giant/mainfloor,
+	  quests/peterm/temple/InnerTemple,
+	  quests/peterm/temple/OuterTemple: Replace recently updated
+	  oakdoors with new archetype and recycled graphic. Requires
+	  archetype r10798 or newer.
+
+2008-12-03 01:38  rjtanner
+
+	* start/newbieshouse: Replace recently updated oakdoors with new
+	  archetype and recycled graphic. Requires archetype r10798 or
+	  newer.
+
+2008-12-03 01:35  rjtanner
+
+	* sisters/tower1: Replace recently updated oakdoors with new
+	  archetype and recycled graphic. Requires archetype r10798 or
+	  newer.
+
+2008-12-03 01:33  rjtanner
+
+	* port_joseph/town/dshark, port_joseph/town/generalstore: Replace
+	  recently updated oakdoors with new archetype and recycled
+	  graphic. Requires archetype r10798 or newer.
+
+2008-12-03 01:28  rjtanner
+
+	* navar_city/apartments/apartment, navar_city/city1church1,
+	  navar_city/dragon_hangar/hangar, navar_city/iscar,
+	  navar_city/jail/jail, navar_city/light/light1,
+	  navar_city/magara/houses/kaisas_place, navar_city/misc/bowyer,
+	  navar_city/misc/buildshop, navar_city/misc/city1armour,
+	  navar_city/misc/city1gen, navar_city/misc/city1magic,
+	  navar_city/misc/city1mermaid, navar_city/misc/city1smith,
+	  navar_city/misc/city1weapon, navar_city/misc/dragon_guild,
+	  navar_city/misc/jeweler, navar_city/misc/kitchen,
+	  navar_city/misc/tannery, navar_city/misc/thamshop,
+	  navar_city/mouse_house, navar_city/slums/Iggys_house,
+	  navar_city/warehouse1, navar_city/warehouse2,
+	  navar_city/warehouse3, navar_city/warehouse4,
+	  navar_city/warehouse5, navar_city/warehouse6,
+	  navar_city/warehouse7: Replace recently updated oakdoors with new
+	  archetype and recycled graphic. Requires archetype r10798 or
+	  newer.
+
+2008-12-02 03:16  rjtanner
+
+	* ChangeLog: Updated ChangeLog file using svn2cl
+
 2008-12-02 02:55  rjtanner
 
 	* marksel/church: Replace recently updated oakdoors with new
