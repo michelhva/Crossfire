@@ -8,7 +8,7 @@ enter_x 10
 enter_y 14
 msg
 Created:  2005-03-08
-Modified: 2008-11-28 Rick Tanner
+Modified: 2008-12-02 Rick Tanner
 endmsg
 end
 arch woodfloor
@@ -1676,14 +1676,10 @@ x 10
 y 14
 type 71
 end
-arch invis_exit
+arch oakdoor_2
 slaying /world/world_121_117
 hp 48
 sp 1
-x 10
-y 14
-end
-arch large_hdoor1
 x 10
 y 14
 end
@@ -1821,7 +1817,7 @@ x 11
 y 14
 type 71
 end
-arch invis_exit
+arch oakdoor_2
 slaying /world/world_121_117
 hp 48
 sp 1

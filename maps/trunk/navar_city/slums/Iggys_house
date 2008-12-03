@@ -8,7 +8,7 @@ enter_x 1
 enter_y 15
 msg
 Created:  2004-01-12 Avion
-Modified: 2008-11-29 Rick Tanner
+Modified: 2008-12-02 Rick Tanner
 endmsg
 end
 arch woodfloor
@@ -102,13 +102,10 @@ end
 arch woodfloor
 y 15
 end
-arch invis_exit
+arch oakdoor_1
 slaying /world/world_121_117
 hp 46
 sp 8
-y 15
-end
-arch door_1
 y 15
 end
 arch woodfloor
