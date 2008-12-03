@@ -10,7 +10,7 @@ enter_x 4
 enter_y 13
 msg
 Created:  2004-22-02 Avion
-Modified: 2008-11-29 Rick Tanner
+Modified: 2008-12-02 Rick Tanner
 endmsg
 end
 arch tile_white_floor
@@ -468,14 +468,10 @@ arch cobblestones2
 x 4
 y 13
 end
-arch invis_exit
+arch oakdoor_2
 slaying /world/world_121_117
 hp 48
 sp 8
-x 4
-y 13
-end
-arch door_2
 x 4
 y 13
 end

@@ -9,7 +9,7 @@ enter_x 14
 enter_y 17
 msg
 Created:  2007-03-08 Gene Alexander (poof, Galahad)
-Modified: 2008-11-28 Rick Tanner
+Modified: 2008-12-02 Rick Tanner
 endmsg
 end
 arch cobblestones2
@@ -1636,14 +1636,10 @@ arch woodfloor
 x 14
 y 17
 end
-arch invis_exit
+arch oakdoor_2
 slaying /world/world_121_117
 hp 44
 sp 13
-x 14
-y 17
-end
-arch door_2
 x 14
 y 17
 end
