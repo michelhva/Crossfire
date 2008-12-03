@@ -7,7 +7,7 @@ height 25
 enter_x 13
 enter_y 1
 msg
-Modified: 2008-10-04 Rick Tanner
+Modified: 2008-12-02 Rick Tanner
 endmsg
 end
 arch dungeon_floor
@@ -1720,17 +1720,13 @@ end
 arch dungeon_floor
 x 13
 end
-arch mine2
-x 13
-end
-arch dungeon_floor
-x 13
-y 1
-end
-arch oakdoor
+arch oakdoor_2
 slaying /world/world_128_109
 hp 35
 sp 2
+x 13
+end
+arch dungeon_floor
 x 13
 y 1
 end
@@ -1842,17 +1838,13 @@ end
 arch dungeon_floor
 x 14
 end
-arch mine2
-x 14
-end
-arch dungeon_floor
-x 14
-y 1
-end
-arch oakdoor
+arch oakdoor_2
 slaying /world/world_128_109
 hp 35
 sp 2
+x 14
+end
+arch dungeon_floor
 x 14
 y 1
 end
@@ -1974,7 +1966,10 @@ end
 arch dungeon_floor
 x 15
 end
-arch mine16
+arch dungeon_floor
+x 15
+end
+arch mine10
 x 15
 end
 arch dungeon_floor

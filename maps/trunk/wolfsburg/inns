@@ -7,7 +7,7 @@ height 16
 enter_x 1
 enter_y 1
 msg
-Modified: 2008-10-04 Rick Tanner
+Modified: 2008-12-02 Rick Tanner
 endmsg
 end
 arch woodfloor
@@ -107,17 +107,10 @@ end
 arch woodfloor
 x 1
 end
-arch wwall_2_1_2
+arch wwall_1_3
 x 1
 end
 arch woodfloor
-x 1
-y 1
-end
-arch oakdoor
-slaying /world/world_128_109
-hp 36
-sp 11
 x 1
 y 1
 end
@@ -210,7 +203,10 @@ end
 arch woodfloor
 x 2
 end
-arch wwall_2_1_2
+arch oakdoor_2
+slaying /world/world_128_109
+hp 36
+sp 11
 x 2
 end
 arch woodfloor
@@ -292,7 +288,7 @@ end
 arch woodfloor
 x 3
 end
-arch wwall_2_1_2
+arch wwall_1_4
 x 3
 end
 arch woodfloor
@@ -1631,17 +1627,10 @@ end
 arch woodfloor
 x 16
 end
-arch wwall_2_1_2
+arch wwall_1_3
 x 16
 end
 arch woodfloor
-x 16
-y 1
-end
-arch oakdoor
-slaying /world/world_128_109
-hp 39
-sp 11
 x 16
 y 1
 end
@@ -1744,7 +1733,10 @@ end
 arch woodfloor
 x 17
 end
-arch wwall_2_1_2
+arch oakdoor_2
+slaying /world/world_128_109
+hp 39
+sp 11
 x 17
 end
 arch woodfloor
@@ -1830,7 +1822,7 @@ end
 arch woodfloor
 x 18
 end
-arch wwall_2_1_2
+arch wwall_1_4
 x 18
 end
 arch woodfloor
