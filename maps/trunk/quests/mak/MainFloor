@@ -8,7 +8,7 @@ enter_x 15
 enter_y 48
 msg
 Created:  2000-04-06 Magnus Kronhamn (mak@solace.mh.se)
-Modified: 2008-11-29 Rick Tanner
+Modified: 2008-12-02 Rick Tanner
 endmsg
 maplore
 @def Warriors' Tower
@@ -7657,14 +7657,10 @@ arch marble
 x 15
 y 49
 end
-arch invis_exit
+arch oakdoor_2
 slaying /world/world_104_104
 hp 37
 sp 29
-x 15
-y 49
-end
-arch door_2
 x 15
 y 49
 end

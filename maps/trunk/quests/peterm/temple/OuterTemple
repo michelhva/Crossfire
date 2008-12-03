@@ -7,7 +7,7 @@ enter_x 7
 enter_y 29
 msg
 Created:  1994-01-14 peterm (peterm@soda.berkeley.edu)
-Modified: 2008-11-29 Rick Tanner
+Modified: 2008-12-02 Rick Tanner
 endmsg
 end
 arch pstone_1
@@ -2014,13 +2014,10 @@ end
 arch pstone_1
 x 7
 end
-arch invis_exit
+arch oakdoor_2
 slaying InnerTemple
 hp 7
 sp 39
-x 7
-end
-arch door_2
 x 7
 end
 arch pstone_1
@@ -2298,13 +2295,10 @@ end
 arch pstone_1
 x 8
 end
-arch invis_exit
+arch oakdoor_2
 slaying InnerTemple
 hp 8
 sp 39
-x 8
-end
-arch door_2
 x 8
 end
 arch pstone_1
