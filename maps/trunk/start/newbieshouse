@@ -10,7 +10,7 @@ enter_x 9
 enter_y 4
 msg
 Created:  2003-07-31 Tchize
-Modified: 2008-11-29 Rick Tanner
+Modified: 2008-12-02 Rick Tanner
 endmsg
 end
 arch dungeon_magic
@@ -2935,22 +2935,18 @@ arch woodfloor2
 x 9
 y 27
 end
-arch door_2
-x 9
-y 27
-end
 arch dungeon_magic
 x 9
 y 28
 end
-arch invis_exit
-slaying /start/Nexus
-hp 6
-sp 12
+arch woodfloor2
 x 9
 y 28
 end
-arch woodfloor2
+arch oakdoor_2
+slaying /start/Nexus
+hp 6
+sp 12
 x 9
 y 28
 end
@@ -3199,22 +3195,18 @@ arch woodfloor2
 x 10
 y 27
 end
-arch door_2
-x 10
-y 27
-end
 arch dungeon_magic
 x 10
 y 28
 end
-arch invis_exit
-slaying /start/Nexus
-hp 6
-sp 12
+arch woodfloor2
 x 10
 y 28
 end
-arch woodfloor2
+arch oakdoor_2
+slaying /start/Nexus
+hp 6
+sp 12
 x 10
 y 28
 end
