@@ -12,7 +12,7 @@ enter_x 14
 enter_y 14
 msg
 Created:  1993-10-15 Tero Haatanen (Tero.Haatanen@tel.vtt.fi)
-Modified: 2008-11-30 Rick Tanner
+Modified: 2008-12-02 Rick Tanner
 endmsg
 end
 arch shop_empty
@@ -1531,15 +1531,10 @@ x 14
 y 14
 type 0
 end
-arch invis_exit
-name back to town
+arch oakdoor_2
 slaying /world/world_104_115
 hp 48
 sp 37
-x 14
-y 14
-end
-arch door_2
 x 14
 y 14
 end

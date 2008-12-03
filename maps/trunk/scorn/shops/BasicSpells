@@ -11,7 +11,7 @@ enter_x 2
 enter_y 2
 msg
 Created:  2000-10-18
-Modified: 2008-12-01 Rick Tanner
+Modified: 2008-12-02 Rick Tanner
 endmsg
 end
 arch cobblestones2
@@ -52,8 +52,12 @@ end
 arch grass
 y 12
 end
+arch dungeon_magic
+x 1
+end
 arch cobblestones2
 x 1
+move_block all
 end
 arch woodfloor
 x 1
@@ -151,22 +155,21 @@ arch grass
 x 1
 y 12
 end
+arch dungeon_magic
+x 2
+end
 arch cobblestones2
 x 2
+move_block all
 end
 arch woodfloor
 x 2
 y 1
 end
-arch invis_exit
+arch oakdoor_2
 slaying /world/world_104_115
 hp 49
 sp 34
-x 2
-y 1
-end
-arch door_2
-name Exit back to town
 x 2
 y 1
 end
@@ -362,8 +365,12 @@ arch grass
 x 2
 y 12
 end
+arch dungeon_magic
+x 3
+end
 arch cobblestones2
 x 3
+move_block all
 end
 arch woodfloor
 x 3
