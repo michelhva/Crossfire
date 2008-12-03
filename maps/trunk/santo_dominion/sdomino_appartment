@@ -8,7 +8,7 @@ enter_x 5
 enter_y 1
 msg
 Created:  2000-11-15 Andreas Vogl (red.blaze@gmx.net)
-Modified: 2008-11-30 Rick Tanner
+Modified: 2008-12-02 Rick Tanner
 endmsg
 end
 arch blocked
@@ -317,13 +317,10 @@ arch woodfloor
 x 5
 unique 1
 end
-arch invis_exit
+arch oakdoor_2
 slaying /world/world_102_108
 hp 18
 sp 15
-x 5
-end
-arch door_2
 x 5
 end
 arch woodfloor
