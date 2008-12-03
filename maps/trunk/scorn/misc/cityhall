@@ -9,7 +9,7 @@ enter_x 13
 enter_y 25
 msg
 Created:  1993-10-15
-Modified: 2008-10-21 Rick Tanner
+Modified: 2008-12-02 Rick Tanner
 endmsg
 end
 arch woods_2
@@ -407,6 +407,10 @@ arch grass
 x 2
 y 5
 end
+arch dungeon_magic
+x 2
+y 6
+end
 arch woodfloor
 x 2
 y 6
@@ -475,6 +479,10 @@ end
 arch woodfloor
 x 2
 y 13
+end
+arch dungeon_magic
+x 2
+y 14
 end
 arch woodfloor
 x 2
@@ -583,6 +591,10 @@ arch swall_1_1_half
 x 3
 y 2
 end
+arch dungeon_magic
+x 3
+y 3
+end
 arch dungeon_floor
 x 3
 y 3
@@ -590,6 +602,10 @@ end
 arch swall_2_1_1
 x 3
 y 3
+end
+arch dungeon_magic
+x 3
+y 4
 end
 arch dungeon_floor
 x 3
@@ -1330,6 +1346,10 @@ arch woodfloor
 x 6
 y 13
 end
+arch dungeon_magic
+x 6
+y 14
+end
 arch woodfloor
 x 6
 y 14
@@ -1774,6 +1794,10 @@ arch woodfloor
 x 8
 y 13
 end
+arch dungeon_magic
+x 8
+y 14
+end
 arch woodfloor
 x 8
 y 14
@@ -2122,6 +2146,10 @@ end
 arch tree
 x 10
 end
+arch dungeon_magic
+x 10
+y 1
+end
 arch dungeon_floor
 x 10
 y 1
@@ -2469,6 +2497,10 @@ end
 arch swall_1_1_half
 x 11
 y 11
+end
+arch dungeon_magic
+x 11
+y 12
 end
 arch woodfloor
 x 11
@@ -2855,6 +2887,10 @@ arch dungeon_floor
 x 13
 y 9
 end
+arch dungeon_magic
+x 13
+y 10
+end
 arch pedestal
 x 13
 y 10
@@ -3058,6 +3094,10 @@ end
 arch dungeon_floor
 x 14
 y 9
+end
+arch dungeon_magic
+x 14
+y 10
 end
 arch pedestal
 x 14
@@ -3500,6 +3540,10 @@ arch swall_1_1_half
 x 16
 y 11
 end
+arch dungeon_magic
+x 16
+y 12
+end
 arch woodfloor
 x 16
 y 12
@@ -3598,6 +3642,10 @@ y 31
 end
 arch tree
 x 17
+end
+arch dungeon_magic
+x 17
+y 1
 end
 arch dungeon_floor
 x 17
@@ -4223,6 +4271,10 @@ arch woodfloor
 x 19
 y 13
 end
+arch dungeon_magic
+x 19
+y 14
+end
 arch woodfloor
 x 19
 y 14
@@ -4633,6 +4685,10 @@ end
 arch woodfloor
 x 21
 y 13
+end
+arch dungeon_magic
+x 21
+y 14
 end
 arch woodfloor
 x 21
@@ -5190,6 +5246,10 @@ arch swall_1_1_half
 x 24
 y 2
 end
+arch dungeon_magic
+x 24
+y 3
+end
 arch dungeon_floor
 x 24
 y 3
@@ -5197,6 +5257,10 @@ end
 arch swall_2_1_1
 x 24
 y 3
+end
+arch dungeon_magic
+x 24
+y 4
 end
 arch dungeon_floor
 x 24
@@ -5400,6 +5464,10 @@ arch brush
 x 25
 y 5
 end
+arch dungeon_magic
+x 25
+y 6
+end
 arch woodfloor
 x 25
 y 6
@@ -5463,6 +5531,10 @@ end
 arch woodfloor
 x 25
 y 13
+end
+arch dungeon_magic
+x 25
+y 14
 end
 arch woodfloor
 x 25
