@@ -1,3 +1,76 @@
+2008-12-04 07:12  rjtanner
+
+	* HallOfDMs: As a convenience, added teleporters to the four Hall
+	  of Selection maps and the Nexus - other changes are made for
+	  visual balance (for now)
+
+2008-12-04 06:58  rjtanner
+
+	* world/world_105_115: Corrected map entrance coordinates from
+	  world map to Scorn House of Power
+
+2008-12-04 06:57  rjtanner
+
+	* scorn/misc/PowerHouse: Cosmetic layout changes and updates.
+	  Requires archetype r10798 or newer.
+
+2008-12-04 06:46  rjtanner
+
+	* pup_land/nurnberg/dick/heaven, pup_land/nurnberg/dick/hell:
+	  Cosmetic wall changes for nicer merging
+
+2008-12-04 06:41  rjtanner
+
+	* pup_land/ancient/village/shop, pup_land/hall2, pup_land/hq_ud,
+	  pup_land/lone_town/mshop, pup_land/nurnberg/hq: Cosmetic change
+	  with how fences (swall) merge with nearby walls
+
+2008-12-04 06:34  rjtanner
+
+	* pup_land/nurnberg/apartment/main, pup_land/nurnberg/city,
+	  pup_land/nurnberg/dick/bomb, pup_land/nurnberg/dick/bomb1,
+	  pup_land/nurnberg/dick/click, pup_land/nurnberg/dick/heaven,
+	  pup_land/nurnberg/dick/hell, pup_land/nurnberg/dick/showinv,
+	  pup_land/nurnberg/dragonhangar/hangar, pup_land/nurnberg/hq,
+	  pup_land/nurnberg/storehouse, pup_land/port_e,
+	  pup_land/port_e_house, pup_land/pplant/pplant1,
+	  pup_land/raffle/raffle1, pup_land/raffle/raffle2,
+	  pup_land/raffle/raffle3, pup_land/s_f/st1, pup_land/s_f/st3,
+	  pup_land/terminal_u1, pup_land/world: Replace recently updated
+	  oakdoors with new archetype and recycled graphic, updated map
+	  entrance coordinates. Requires archetype r10798 or newer.
+
+2008-12-04 06:03  rjtanner
+
+	* pup_land/ancient/ruin/house1, pup_land/ancient/ruin/house2,
+	  pup_land/ancient/ruin/house3, pup_land/ancient/ruin/house4,
+	  pup_land/ancient/ruin/house5, pup_land/ancient/ruin/shop,
+	  pup_land/ancient/ruin/village, pup_land/ancient/village/library,
+	  pup_land/ancient/village/shop, pup_land/ancient/village/tavern,
+	  pup_land/ancient/village/tavern1,
+	  pup_land/ancient/village/village, pup_land/lone_town/bank,
+	  pup_land/lone_town/cordish,
+	  pup_land/lone_town/dragonhangar/hangar,
+	  pup_land/lone_town/dress1, pup_land/lone_town/gemshop,
+	  pup_land/lone_town/gshop, pup_land/lone_town/inn,
+	  pup_land/lone_town/magic, pup_land/lone_town/mshop,
+	  pup_land/lone_town/shops/transport.shoppe,
+	  pup_land/lone_town/tavern, pup_land/lone_town/town,
+	  pup_land/lone_town/training: Replace recently updated oakdoors
+	  with new archetype and recycled graphic, updated map entrance
+	  coordinates. Requires archetype r10798 or newer.
+
+2008-12-04 02:49  rjtanner
+
+	* wolfsburg/dungeons/church.4a, wolfsburg/dungeons/church.4b,
+	  wolfsburg/dungeons/church.4c, wolfsburg/dungeons/church.4d:
+	  Replace recently updated oakdoors with new archetype and recycled
+	  graphic. Requires archetype r10798 or newer.
+
+2008-12-03 03:15  rjtanner
+
+	* ChangeLog: Updated ChangeLog file using svn2cl
+
 2008-12-03 03:12  rjtanner
 
 	* wolfsburg/inns: Cosmetic wall changes for nicer merging
