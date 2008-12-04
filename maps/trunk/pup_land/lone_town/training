@@ -5,9 +5,10 @@ region lonetown
 width 25
 height 25
 enter_x 1
+enter_y 1
 msg
 Created:  1996-01-29
-Modified: 2008-10-26 Rick Tanner
+Modified: 2008-12-03 Rick Tanner
 endmsg
 end
 arch cobblestones2
@@ -134,7 +135,7 @@ end
 arch cobblestones2
 x 1
 end
-arch oakdoor
+arch oakdoor_2
 slaying town
 hp 18
 sp 11
