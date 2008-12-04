@@ -8,7 +8,7 @@ enter_x 6
 enter_y 1
 msg
 Created:  2000-11-19 Andreas Vogl (red.blaze@gmx.net)
-Modified: 2008-12-01 Rick Tanner
+Modified: 2008-12-04 Rick Tanner
 endmsg
 end
 arch blocked
@@ -510,7 +510,7 @@ arch woodfloor
 x 5
 unique 1
 end
-arch stwall_2_2_2
+arch stwall_1_1
 x 5
 end
 arch woodfloor
@@ -621,20 +621,16 @@ arch woodfloor
 x 6
 unique 1
 end
-arch stwall_2_1_2
+arch oakdoor_2
+slaying /pup_land/nurnberg/city
+hp 10
+sp 21
 x 6
 end
 arch woodfloor
 x 6
 y 1
 unique 1
-end
-arch oakdoor
-slaying /pup_land/nurnberg/city
-hp 10
-sp 21
-x 6
-y 1
 end
 arch woodfloor
 x 6
@@ -744,7 +740,7 @@ arch woodfloor
 x 7
 unique 1
 end
-arch stwall_2_2_3
+arch stwall_1_1
 x 7
 end
 arch woodfloor

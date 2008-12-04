@@ -5,10 +5,10 @@ region nurnberg
 width 29
 height 25
 enter_x 16
-enter_y 24
+enter_y 23
 msg
 Created:  1996-02-10
-Modified: 2008-10-11 Rick Tanner
+Modified: 2008-12-04 Rick Tanner
 endmsg
 end
 arch igate_open_1
@@ -2757,7 +2757,7 @@ arch dungeon_floor
 x 16
 y 24
 end
-arch oakdoor
+arch oakdoor_2
 slaying ../city
 hp 4
 sp 9

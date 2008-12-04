@@ -8,7 +8,7 @@ enter_x 14
 enter_y 32
 msg
 Created:  2000-12-25 Andreas Vogl (red.blaze@gmx.net)
-Modified: 2008-10-25 Rick Tanner
+Modified: 2008-12-04 Rick Tanner
 endmsg
 end
 arch grass
@@ -2979,7 +2979,7 @@ arch dirtfloor
 x 14
 y 33
 end
-arch oakdoor
+arch oakdoor_2
 slaying city
 hp 26
 sp 10

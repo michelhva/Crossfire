@@ -5,10 +5,10 @@ region nurnberg
 width 21
 height 19
 enter_x 9
-enter_y 18
+enter_y 17
 msg
 Created:  1996-04-03
-Modified: 2008-10-12 Rick Tanner
+Modified: 2008-12-04 Rick Tanner
 endmsg
 end
 arch dungeon_floor
@@ -1372,7 +1372,7 @@ arch dungeon_floor
 x 9
 y 18
 end
-arch oakdoor
+arch oakdoor_2
 slaying city
 hp 10
 sp 7

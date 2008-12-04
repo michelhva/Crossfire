@@ -7,10 +7,11 @@ difficulty 1
 region pupland
 width 18
 height 30
+enter_x 1
 enter_y 7
 msg
 Created:  1996-12-29
-Modified: 2008-10-25 Rick Tanner
+Modified: 2008-12-04 Rick Tanner
 endmsg
 end
 arch blocked
@@ -60,7 +61,7 @@ end
 arch woodfloor
 y 7
 end
-arch oakdoor
+arch oakdoor_1
 slaying ../terminal_u1
 hp 10
 sp 8
