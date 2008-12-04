@@ -5,10 +5,10 @@ region lonetown
 width 16
 height 16
 enter_x 7
-enter_y 15
+enter_y 14
 msg
 Created:  1996-01-28
-Modified: 2008-10-10 Rick Tanner
+Modified: 2008-12-03 Rick Tanner
 endmsg
 end
 arch invis_exit
@@ -883,7 +883,7 @@ arch woodfloor
 x 7
 y 15
 end
-arch oakdoor
+arch oakdoor_2
 slaying town
 hp 17
 sp 14

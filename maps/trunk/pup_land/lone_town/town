@@ -8,7 +8,7 @@ enter_x 5
 enter_y 18
 msg
 Created:  1996-02-25
-Modified: 2008-10-28 Rick Tanner
+Modified: 2008-12-04 Rick Tanner
 endmsg
 end
 arch grass
@@ -244,7 +244,7 @@ arch s_shop2
 name Lone Town's Ye Olde Shoppe of Transport
 slaying /pup_land/lone_town/shops/transport.shoppe
 hp 17
-sp 22
+sp 21
 x 1
 y 15
 end
@@ -770,7 +770,7 @@ arch guild
 name Bank of Lone
 slaying bank
 hp 9
-sp 19
+sp 18
 x 6
 y 12
 end
@@ -1183,7 +1183,7 @@ arch l_shop1
 name Lone Town Tavern
 slaying tavern
 hp 12
-sp 24
+sp 23
 x 10
 y 3
 end
@@ -1492,7 +1492,7 @@ arch barrack_long
 name Magic Show !
 slaying magic
 hp 7
-sp 11
+sp 10
 x 12
 y 1
 end
@@ -1642,6 +1642,7 @@ arch store_magic
 name Lone Town Magic Shop
 slaying mshop
 hp 4
+sp 1
 x 13
 y 3
 end
@@ -1664,6 +1665,7 @@ end
 arch store_general
 name Lone Town Gem Shop
 slaying gemshop
+hp 1
 sp 8
 x 13
 y 5
@@ -1809,7 +1811,7 @@ end
 arch house_1
 name Dressing Room
 slaying dress1
-hp 15
+hp 14
 sp 7
 x 14
 y 1
@@ -2170,7 +2172,7 @@ arch house_long
 name Lone Town Inn
 slaying inn
 hp 9
-sp 8
+sp 7
 x 16
 y 16
 end
@@ -2272,7 +2274,7 @@ arch house_1
 name House of Cordish
 slaying cordish
 hp 7
-sp 15
+sp 14
 x 17
 y 14
 end
@@ -2366,6 +2368,7 @@ arch house_small
 name Lown Town Training Center
 slaying training
 hp 1
+sp 1
 x 18
 y 11
 end

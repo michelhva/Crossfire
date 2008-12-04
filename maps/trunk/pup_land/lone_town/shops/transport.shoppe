@@ -9,10 +9,10 @@ shopmax 2000000
 width 25
 height 25
 enter_x 17
-enter_y 22
+enter_y 21
 msg
 Created:  2007-04-08 Gene Alexander
-Modified: 2008-11-25 Rick Tanner
+Modified: 2008-12-03 Rick Tanner
 endmsg
 end
 arch grass
@@ -3429,11 +3429,8 @@ arch woodfloor2
 x 17
 y 22
 end
-arch oakdoor
+arch oakdoor_2
 slaying /pup_land/lone_town/town
-msg
-Thank you for visiting.
-endmsg
 hp 1
 sp 15
 x 17

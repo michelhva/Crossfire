@@ -5,10 +5,10 @@ region ancientpupland
 width 15
 height 14
 enter_x 6
-enter_y 13
+enter_y 12
 msg
 Created:  2000-06-03
-Modified: 2008-10-25 Rick Tanner
+Modified: 2008-12-03 Rick Tanner
 endmsg
 end
 arch dungeon_magic
@@ -1070,7 +1070,7 @@ arch woodfloor
 x 6
 y 13
 end
-arch oakdoor
+arch oakdoor_2
 slaying village
 hp 19
 sp 13

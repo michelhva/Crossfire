@@ -6,9 +6,10 @@ shopitems book:85;spellbook:90;potion:75;rod:70;wand:75;amulet:15;gem:10;*:-90
 width 28
 height 28
 enter_x 4
+enter_y 1
 msg
 Created:  1996-01-29
-Modified: 2008-10-25 Rick Tanner
+Modified: 2008-12-03 Rick Tanner
 endmsg
 end
 arch grass
@@ -609,7 +610,7 @@ end
 arch cobblestones2
 x 4
 end
-arch oakdoor
+arch oakdoor_2
 slaying town
 hp 13
 sp 4

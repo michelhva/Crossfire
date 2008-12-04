@@ -5,10 +5,10 @@ region ancientpupland
 width 34
 height 19
 enter_x 1
-enter_y 17
+enter_y 16
 msg
 Created:  1996-05-21
-Modified: 2008-10-26 Rick Tanner
+Modified: 2008-12-03 Rick Tanner
 endmsg
 end
 arch woodfloor
@@ -254,7 +254,7 @@ arch woodfloor
 x 1
 y 17
 end
-arch oakdoor
+arch oakdoor_2
 slaying village
 hp 12
 sp 11

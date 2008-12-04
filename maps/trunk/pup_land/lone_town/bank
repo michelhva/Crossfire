@@ -5,10 +5,10 @@ region lonetown
 width 19
 height 20
 enter_x 9
-enter_y 19
+enter_y 18
 msg
 Created:  1996-01-29
-Modified: 2008-10-10 Rick Tanner
+Modified: 2008-12-03 Rick Tanner
 endmsg
 end
 arch afloor_right
@@ -1647,18 +1647,18 @@ arch dungeon_magic
 x 9
 y 18
 end
+arch dungeon_magic
+x 9
+y 19
+end
 arch afloor_right
 x 9
 y 19
 end
-arch oakdoor
+arch oakdoor_2
 slaying town
 hp 6
 sp 13
-x 9
-y 19
-end
-arch dungeon_magic
 x 9
 y 19
 end
