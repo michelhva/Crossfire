@@ -9,10 +9,10 @@ shopmax 2000
 width 21
 height 36
 enter_x 10
-enter_y 33
+enter_y 34
 msg
 Created:  1999-04-02
-Modified: 2008-09-28 Rick Tanner
+Modified: 2008-12-04 Rick Tanner
 endmsg
 end
 arch magic_banned
@@ -2362,7 +2362,7 @@ arch flagstone
 x 6
 y 9
 end
-arch wall_2_1_1
+arch window_win1
 x 6
 y 9
 end
@@ -2410,7 +2410,7 @@ arch flagstone
 x 6
 y 13
 end
-arch wall_2_1_1
+arch window_win1
 x 6
 y 13
 end
@@ -2458,7 +2458,7 @@ arch flagstone
 x 6
 y 17
 end
-arch wall_2_1_1
+arch window_win1
 x 6
 y 17
 end
@@ -3105,7 +3105,7 @@ arch flagstone
 x 8
 y 5
 end
-arch wall_2_1_2
+arch window_win2
 x 8
 y 5
 end
@@ -3226,6 +3226,10 @@ x 8
 y 20
 end
 arch flagstone
+x 8
+y 20
+end
+arch swall_1_4_half
 x 8
 y 20
 end
@@ -3395,7 +3399,7 @@ arch flagstone
 x 8
 y 35
 end
-arch wall_3_1
+arch wall_2_2_4
 x 8
 y 35
 end
@@ -3684,7 +3688,7 @@ arch flagstone
 x 9
 y 20
 end
-arch swall_1_4
+arch swall_2_1_2
 x 9
 y 20
 end
@@ -3855,13 +3859,6 @@ arch flagstone
 x 9
 y 34
 end
-arch exit
-slaying /world/world_105_115
-hp 13
-sp 32
-x 9
-y 34
-end
 arch magic_banned
 x 9
 y 35
@@ -3870,7 +3867,10 @@ arch flagstone
 x 9
 y 35
 end
-arch wall_2_1_2
+arch oakdoor_2
+slaying /world/world_105_115
+hp 13
+sp 32
 x 9
 y 35
 end
@@ -4238,13 +4238,6 @@ arch flagstone
 x 10
 y 34
 end
-arch exit
-slaying /world/world_105_115
-hp 13
-sp 32
-x 10
-y 34
-end
 arch magic_banned
 x 10
 y 35
@@ -4253,7 +4246,10 @@ arch flagstone
 x 10
 y 35
 end
-arch wall_2_1_2
+arch oakdoor_2
+slaying /world/world_105_115
+hp 13
+sp 32
 x 10
 y 35
 end
@@ -4542,7 +4538,7 @@ arch flagstone
 x 11
 y 20
 end
-arch swall_1_3
+arch swall_2_1_2
 x 11
 y 20
 end
@@ -4726,13 +4722,6 @@ arch flagstone
 x 11
 y 34
 end
-arch exit
-slaying /world/world_105_115
-hp 13
-sp 32
-x 11
-y 34
-end
 arch magic_banned
 x 11
 y 35
@@ -4741,7 +4730,10 @@ arch flagstone
 x 11
 y 35
 end
-arch wall_2_1_2
+arch oakdoor_2
+slaying /world/world_105_115
+hp 13
+sp 32
 x 11
 y 35
 end
@@ -4811,7 +4803,7 @@ arch flagstone
 x 12
 y 5
 end
-arch wall_2_1_2
+arch window_win2
 x 12
 y 5
 end
@@ -4932,6 +4924,10 @@ x 12
 y 20
 end
 arch flagstone
+x 12
+y 20
+end
+arch swall_1_3_half
 x 12
 y 20
 end
@@ -5101,7 +5097,7 @@ arch flagstone
 x 12
 y 35
 end
-arch wall_3_1
+arch wall_2_2_1
 x 12
 y 35
 end
@@ -5632,7 +5628,7 @@ arch flagstone
 x 14
 y 9
 end
-arch wall_2_1_1
+arch window_win1
 x 14
 y 9
 end
@@ -5680,7 +5676,7 @@ arch flagstone
 x 14
 y 13
 end
-arch wall_2_1_1
+arch window_win1
 x 14
 y 13
 end
@@ -5728,7 +5724,7 @@ arch flagstone
 x 14
 y 17
 end
-arch wall_2_1_1
+arch window_win1
 x 14
 y 17
 end
