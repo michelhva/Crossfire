@@ -8,7 +8,7 @@ enter_x 18
 enter_y 20
 msg
 Created:  1994-11-15
-Modified: 2008-10-26 Rick Tanner
+Modified: 2008-12-03 Rick Tanner
 endmsg
 end
 arch medium_stones
@@ -3801,18 +3801,14 @@ arch small_stones
 x 18
 y 19
 end
-arch dun2
+arch oakdoor_2
+slaying church.4a
+hp 7
+sp 21
 x 18
 y 19
 end
 arch small_stones
-x 18
-y 20
-end
-arch oakdoor
-slaying church.4a
-hp 7
-sp 21
 x 18
 y 20
 end
@@ -3896,7 +3892,11 @@ arch small_stones
 x 19
 y 19
 end
-arch dun14
+arch small_stones
+x 19
+y 19
+end
+arch dun3
 x 19
 y 19
 end
