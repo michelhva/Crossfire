@@ -8,7 +8,7 @@ enter_x 8
 enter_y 15
 msg
 Created:  1996-02-10
-Modified: 2008-10-25 Rick Tanner
+Modified: 2008-12-04 Rick Tanner
 endmsg
 end
 arch pstone_1
@@ -647,7 +647,7 @@ arch flagstone
 x 7
 y 16
 end
-arch awall_2_1_2
+arch awall_1_3
 x 7
 y 16
 end
@@ -744,18 +744,14 @@ arch flagstone
 x 8
 y 15
 end
-arch oakdoor
-slaying cave2
-hp 8
-sp 7
-x 8
-y 15
-end
 arch flagstone
 x 8
 y 16
 end
-arch awall_2_1_2
+arch oakdoor_2
+slaying cave2
+hp 8
+sp 7
 x 8
 y 16
 end
@@ -829,7 +825,7 @@ arch flagstone
 x 9
 y 16
 end
-arch awall_2_1_2
+arch awall_1_4
 x 9
 y 16
 end

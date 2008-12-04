@@ -8,7 +8,7 @@ enter_x 15
 enter_y 1
 msg
 Created:  1997-02-19
-Modified: 2008-10-11 Rick Tanner
+Modified: 2008-12-04 Rick Tanner
 endmsg
 end
 arch magic_banned
@@ -4674,7 +4674,7 @@ end
 arch cobblestones2
 x 14
 end
-arch oakdoor
+arch oakdoor_2
 slaying ../city
 hp 26
 sp 22
@@ -4996,7 +4996,7 @@ end
 arch cobblestones2
 x 15
 end
-arch oakdoor
+arch oakdoor_2
 slaying ../city
 hp 26
 sp 22
@@ -5343,7 +5343,7 @@ end
 arch cobblestones2
 x 16
 end
-arch oakdoor
+arch oakdoor_2
 slaying ../city
 hp 26
 sp 22
@@ -5690,7 +5690,7 @@ end
 arch cobblestones2
 x 17
 end
-arch oakdoor
+arch oakdoor_2
 slaying ../city
 hp 26
 sp 22

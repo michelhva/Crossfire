@@ -4,11 +4,11 @@ difficulty 25
 region nurnberg
 width 28
 height 32
-enter_x 19
+enter_x 18
 enter_y 2
 msg
 Created:  1996-02-12
-Modified: 2008-10-11 Rick Tanner
+Modified: 2008-12-04 Rick Tanner
 endmsg
 end
 arch dungeon_floor
@@ -6473,7 +6473,7 @@ arch woodfloor
 x 19
 y 2
 end
-arch oakdoor
+arch oakdoor_1
 slaying ../city
 hp 2
 sp 14

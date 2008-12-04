@@ -5,10 +5,10 @@ region pupland
 width 15
 height 16
 enter_x 7
-enter_y 15
+enter_y 14
 msg
 Created:  1996-01-29
-Modified: 2008-10-13 Rick Tanner
+Modified: 2008-12-04 Rick Tanner
 endmsg
 end
 arch sea
@@ -697,7 +697,7 @@ arch woodfloor
 x 7
 y 15
 end
-arch oakdoor
+arch oakdoor_2
 slaying port_e
 hp 30
 sp 7

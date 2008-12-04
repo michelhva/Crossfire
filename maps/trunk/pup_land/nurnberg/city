@@ -8,7 +8,7 @@ msg
 Created:  1996-02-07
 Updated 2007.11.12 by Gene Alexander
  - make this an outdoor map for day/night/weather
-Modified: 2008-10-25 Rick Tanner
+Modified: 2008-12-04 Rick Tanner
 endmsg
 outdoor 1
 end
@@ -219,7 +219,7 @@ end
 arch guild
 name Dungeon of Death
 slaying dick/hell
-hp 19
+hp 18
 sp 2
 x 1
 y 9
@@ -243,7 +243,7 @@ end
 arch guild
 name Dungeon of Life
 slaying dick/heaven
-hp 19
+hp 18
 sp 2
 x 1
 y 13
@@ -671,7 +671,7 @@ arch house_2
 name Bomb de Pon
 slaying dick/bomb1
 hp 16
-sp 18
+sp 19
 x 4
 y 9
 end
@@ -682,6 +682,7 @@ end
 arch house_2
 name ShowInv de Pon
 slaying dick/showinv
+hp 1
 sp 2
 x 4
 y 10
@@ -693,6 +694,7 @@ end
 arch house_2
 name Click de Pon
 slaying dick/click
+hp 1
 sp 14
 x 4
 y 11
@@ -1571,7 +1573,7 @@ arch keep
 name Headquarter of the Regular Army
 slaying hq
 hp 9
-sp 18
+sp 17
 x 9
 y 6
 end
