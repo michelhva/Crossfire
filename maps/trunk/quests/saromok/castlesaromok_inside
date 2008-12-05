@@ -8,7 +8,7 @@ enter_x 14
 enter_y 23
 msg
 Created:  2008-08-12 Chad Opperman | cromagic@sbcglobal.net
-Modified: 2008-10-20 Rick Tanner
+Modified: 2008-12-04 Rick Tanner
 endmsg
 outdoor 1
 end
@@ -853,14 +853,14 @@ arch blocked
 x 4
 y 13
 end
-arch invis_exit
-slaying castlesaromok_barracks1
-hp 7
-sp 28
+arch blackrock
 x 4
 y 14
 end
-arch blackrock
+arch oakdoor_2
+slaying castlesaromok_barracks1
+hp 7
+sp 28
 x 4
 y 14
 end
@@ -2430,14 +2430,14 @@ arch stwall_1_2
 x 12
 y 19
 end
-arch invis_exit
-slaying castlesaromok_barracks3
-hp 28
-sp 7
+arch blackrock
 x 12
 y 20
 end
-arch blackrock
+arch oakdoor_1
+slaying castlesaromok_barracks3
+hp 28
+sp 7
 x 12
 y 20
 end
@@ -3518,14 +3518,14 @@ arch stwall_1_2
 x 17
 y 19
 end
-arch invis_exit
-slaying castlesaromok_barracks4
-hp 1
-sp 7
+arch blackrock
 x 17
 y 20
 end
-arch blackrock
+arch oakdoor_1
+slaying castlesaromok_barracks4
+hp 1
+sp 7
 x 17
 y 20
 end
@@ -4949,14 +4949,14 @@ arch blocked
 x 25
 y 13
 end
-arch invis_exit
-slaying castlesaromok_barracks2
-hp 7
-sp 28
+arch blackrock
 x 25
 y 14
 end
-arch blackrock
+arch oakdoor_2
+slaying castlesaromok_barracks2
+hp 7
+sp 28
 x 25
 y 14
 end
