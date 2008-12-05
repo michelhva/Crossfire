@@ -370,6 +370,7 @@ x 1
 y 26
 end
 arch exit
+name Nexus
 slaying start/Nexus
 hp 12
 sp 15
@@ -542,6 +543,7 @@ x 2
 y 25
 end
 arch exit
+name Dragon Hall of Selection
 slaying start/HallsOfSelection/pl_dragon
 hp 7
 sp 22
@@ -558,6 +560,7 @@ x 2
 y 27
 end
 arch exit
+name Wraith Hal of Selection
 slaying start/HallsOfSelection/wraith_player
 hp 7
 sp 18
@@ -711,6 +714,7 @@ x 3
 y 24
 end
 arch exit
+name Fireborn Hall of Selection
 slaying start/HallsOfSelection/fireborn_player
 hp 7
 sp 18
@@ -751,6 +755,7 @@ x 3
 y 28
 end
 arch exit
+name Hall of Selection
 slaying HallOfSelection
 hp 7
 sp 18
