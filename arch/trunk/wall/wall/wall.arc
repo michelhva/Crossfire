@@ -111,6 +111,14 @@ no_pick 1
 move_block all
 visibility 100
 end
+name wall middle
+face wall_AA.111
+magicmap brown
+blocksview 1
+no_pick 1
+move_block all
+visibility 100
+end
 Object wall_3_1
 name wall
 face wall_B.111
@@ -192,4 +200,48 @@ no_pick 1
 move_block all
 visibility 100
 end
-
+Object wall_1_short
+name short wall 1
+face wall_1_short.111
+magicmap brown
+blocksview 1
+no_pick 1
+move_block all
+visibility 100
+end
+Object wall_2_short
+name short wall 2
+face wall_2_short.111
+magicmap brown
+blocksview 1
+no_pick 1
+move_block all
+visibility 100
+end
+Object wall_4_short
+name short wall 4
+face wall_4_short.111
+magicmap brown
+blocksview 1
+no_pick 1
+move_block all
+visibility 100
+end
+Object wall_55
+name short wall 55
+face wall_55.111
+magicmap brown
+blocksview 1
+no_pick 1
+move_block all
+visibility 100
+end
+Object wall_8_short
+name short wall 8
+face wall_8_short.111
+magicmap brown
+blocksview 1
+no_pick 1
+move_block all
+visibility 100
+end
