@@ -1,3 +1,41 @@
+2008-12-05 01:51  rjtanner
+
+	* HallOfDMs: Give descriptive names to the teleporters so it's
+	  easier to see which map they go to
+
+2008-12-05 00:57  rjtanner
+
+	* scorn/shops/foodshop: Replace recently updated oakdoors with new
+	  archetype and recycled graphic. Requires archetype r10798 or
+	  newer.
+
+2008-12-05 00:56  rjtanner
+
+	* scorn/shops/weaponshop: Replace recently updated oakdoors with
+	  new archetype and recycled graphic. Requires archetype r10798 or
+	  newer.
+
+2008-12-05 00:49  rjtanner
+
+	* quests/saromok/castlesaromok_inside: Added no_spells tiles on the
+	  other side of the doorways to prevent players from using
+	  dimension door to access areas they shouldn't or from getting
+	  trapped in such areas by accident
+
+2008-12-05 00:46  rjtanner
+
+	* quests/saromok/castlesaromok_barracks1,
+	  quests/saromok/castlesaromok_barracks2,
+	  quests/saromok/castlesaromok_barracks3,
+	  quests/saromok/castlesaromok_barracks4,
+	  quests/saromok/castlesaromok_inside: Replace invis_exit with
+	  oakdoors, now the actual maps match the world map buildings.
+	  Requires archetype r10798 or newer.
+
+2008-12-04 07:19  rjtanner
+
+	* ChangeLog: Updated ChangeLog file using svn2cl
+
 2008-12-04 07:12  rjtanner
 
 	* HallOfDMs: As a convenience, added teleporters to the four Hall
