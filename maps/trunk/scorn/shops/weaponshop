@@ -11,7 +11,7 @@ enter_x 2
 enter_y 14
 msg
 Created:  1993-10-15
-Modified: 2008-11-30 Rick Tanner
+Modified: 2008-12-04 Rick Tanner
 endmsg
 end
 arch shop_empty
@@ -285,14 +285,10 @@ arch shop_empty
 x 2
 y 15
 end
-arch invis_exit
+arch oakdoor_2
 slaying /world/world_104_115
 hp 45
 sp 32
-x 2
-y 15
-end
-arch door_2
 x 2
 y 15
 end
