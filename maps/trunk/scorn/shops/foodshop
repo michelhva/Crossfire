@@ -11,7 +11,7 @@ enter_x 2
 enter_y 14
 msg
 Created:  1993-10-15 MikeeUSA
-Modified: 2008-11-02 Rick Tanner
+Modified: 2008-12-04 Rick Tanner
 endmsg
 end
 arch shop_empty
@@ -275,13 +275,6 @@ face shop_empty.111
 x 2
 y 14
 end
-arch invis_exit
-slaying /world/world_104_115
-hp 49
-sp 32
-x 2
-y 15
-end
 arch flagstone
 name floor
 name_pl floor
@@ -289,10 +282,12 @@ face shop_empty.111
 x 2
 y 15
 end
-arch door_2
+arch oakdoor_2
+slaying /world/world_104_115
+hp 49
+sp 32
 x 2
 y 15
-move_block 0
 end
 arch shop_empty
 x 3
