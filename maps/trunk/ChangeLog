@@ -1,3 +1,42 @@
+2008-12-06 09:05  rjtanner
+
+	* brest/shops/brest.magic, world/world_107_123: Redesign the
+	  interior of Magic shop
+
+2008-12-06 07:37  rjtanner
+
+	* brest/shops/brest.weapon, world/world_107_123: Redesign the
+	  interior of Weapon shop, requires archetype update r10844 or
+	  newer
+
+2008-12-06 06:53  rjtanner
+
+	* brest/shops/brest.food, world/world_107_123: Redesign the
+	  interior of Food Store
+
+2008-12-06 06:36  rjtanner
+
+	* brest/shops/brest.cvt, world/world_107_123: Redesign the interior
+	  of CVT
+
+2008-12-06 05:43  rjtanner
+
+	* brest/shops/brest.armour, world/world_107_123: Redesign the
+	  interior of the Armour shop
+
+2008-12-06 05:20  rjtanner
+
+	* brest/brest.armour, brest/brest.cvt, brest/brest.food,
+	  brest/brest.magic, brest/brest.weapon, brest/shops/brest.armour,
+	  brest/shops/brest.cvt, brest/shops/brest.food,
+	  brest/shops/brest.magic, brest/shops/brest.weapon,
+	  world/world_107_123: Moved brest armour, cvt, food, magic and
+	  weapon shops to the /brest/shops directory
+
+2008-12-05 06:21  rjtanner
+
+	* ChangeLog: Updated ChangeLog file using svn2cl
+
 2008-12-05 01:51  rjtanner
 
 	* HallOfDMs: Give descriptive names to the teleporters so it's
