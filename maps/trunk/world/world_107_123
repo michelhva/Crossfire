@@ -8,7 +8,7 @@ height 50
 enter_x 1
 enter_y 1
 msg
-Modified: 2008-11-20 Rick Tanner
+Modified: 2008-12-05 Rick Tanner
 endmsg
 outdoor 1
 tile_path_1 world_107_122
@@ -7960,7 +7960,7 @@ elevation 2688
 end
 arch store_general_fant
 name Brest Food
-slaying /brest/brest.food
+slaying /brest/shops/brest.food
 hp 9
 sp 18
 x 28
@@ -8579,7 +8579,7 @@ elevation 1036
 end
 arch store_armour_fant
 name Brest Armour
-slaying /brest/brest.armour
+slaying /brest/shops/brest.armour
 hp 9
 sp 18
 x 30
@@ -8875,7 +8875,7 @@ elevation 1276
 end
 arch store_weapons_fant
 name Brest Weapon
-slaying /brest/brest.weapon
+slaying /brest/shops/brest.weapon
 hp 9
 sp 18
 x 31
@@ -9531,7 +9531,7 @@ y 39
 end
 arch store_magic_fant
 name Brest Magic
-slaying /brest/brest.magic
+slaying /brest/shops/brest.magic
 hp 6
 sp 11
 x 33
@@ -10527,7 +10527,7 @@ elevation 100
 end
 arch guild_fant
 name Brest CVT
-slaying /brest/brest.cvt
+slaying /brest/shops/brest.cvt
 hp 9
 sp 18
 x 36
