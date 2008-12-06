@@ -1,5 +1,11 @@
 Changes for SVN top of tree:
 
+/wall/dun/dungeon.arc
+Removed newline at the end of the file, it was
+causing this to appear in the server logs: 
+Warning: failed to find arch dun33
+Rick Tanner 2008-12-06
+
 /wall/wall/wall.arc
 Missing object delcaration in wall.arc
 Rick Tanner 2008-12-06
