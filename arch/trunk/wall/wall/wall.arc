@@ -111,6 +111,7 @@ no_pick 1
 move_block all
 visibility 100
 end
+Object wall_middle
 name wall middle
 face wall_AA.111
 magicmap brown
