@@ -49,7 +49,7 @@ label_text label_arm   170 220  70  16 font_label BLACK Arm:
 label_text label_ac    170 240  70  16 font_label BLACK AC:
 label_stat stat_dam    240 180  40  16 font_label BLACK DAM RIGHT
 label_stat stat_wc     240 200  40  16 font_label BLACK WC RIGHT
-label_stat stat_arm    240 220  40  16 font_label BLACK ARM RIGHT
+label_stat stat_arm    240 220  40  16 font_label BLACK RES_PHYS RIGHT
 label_stat stat_ac     240 240  40  16 font_label BLACK AC RIGHT
 
 # Allow dialog shifting by dragging the title bar.
