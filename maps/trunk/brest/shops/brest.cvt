@@ -11,8 +11,7 @@ height 24
 enter_x 13
 enter_y 20
 msg
-What an odd map.
-Modified: 2008-12-06 Rick Tanner
+Modified: 2008-12-07 Rick Tanner
 endmsg
 end
 arch flagstone
@@ -965,6 +964,11 @@ x 7
 y 4
 end
 arch sage
+name Bank Clerk
+msg
+@match *
+The exchange tables are at your service, I'm unable to help you any more then that.
+endmsg
 x 7
 y 4
 end
