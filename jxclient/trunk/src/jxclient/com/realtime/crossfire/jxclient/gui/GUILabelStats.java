@@ -19,7 +19,6 @@
 //
 package com.realtime.crossfire.jxclient.gui;
 
-import com.realtime.crossfire.jxclient.experience.ExperienceTable;
 import com.realtime.crossfire.jxclient.server.CrossfireStatsListener;
 import com.realtime.crossfire.jxclient.stats.Stats;
 import com.realtime.crossfire.jxclient.stats.StatsListener;
@@ -45,11 +44,6 @@ public class GUILabelStats extends GUIOneLineLabel
      * The {@link Stats} instance to use.
      */
     private final Stats stats;
-
-    /**
-     * The experience table to use.
-     */
-    private final ExperienceTable experienceTable;
 
     /**
      * The stat to display.
@@ -186,13 +180,11 @@ public class GUILabelStats extends GUIOneLineLabel
      * @param stat the stat to display
      * @param alignment the text alignment
      * @param stats the stats instance to use
-     * @param experienceTable the experience table to use
      */
-    public GUILabelStats(final JXCWindow window, final String name, final int x, final int y, final int w, final int h, final Font font, final Color color, final Color backgroundColor, final int stat, final Alignment alignment, final Stats stats, final ExperienceTable experienceTable)
+    public GUILabelStats(final JXCWindow window, final String name, final int x, final int y, final int w, final int h, final Font font, final Color color, final Color backgroundColor, final int stat, final Alignment alignment, final Stats stats)
     {
         super(window, name, x, y, w, h, null, font, color, backgroundColor, alignment, "");
         this.stats = stats;
-        this.experienceTable = experienceTable;
         this.stat = stat;
         stats.addCrossfireStatsListener(statsListener);
     }
