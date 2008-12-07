@@ -1,3 +1,56 @@
+2008-12-07 08:31  rjtanner
+
+	* brest/asyvan/palace2, brest/asyvan/palace3: Correct teleporter
+	  coordinates due to layout changes on level 1 of Kingdom Palace
+
+2008-12-07 08:24  rjtanner
+
+	* brest/asyvan/palace2, brest/asyvan/palace3: Redesign interior of
+	  the Kingdom Palance, level 2 and level 3
+
+2008-12-07 08:10  rjtanner
+
+	* brest/asyvan/palace1, world/world_107_123: Redesign interior of
+	  the Kingdom Palance
+
+2008-12-07 07:05  rjtanner
+
+	* brest/brest.IPO, world/world_107_123: Redesign interior of the
+	  Brest IPO
+
+2008-12-07 06:46  rjtanner
+
+	* brest/brest.scrolls, brest/brest.scrolls.right: Cosmetic wall
+	  updates with how swall (fence) merges with nearby walls
+
+2008-12-07 06:29  rjtanner
+
+	* brest/shops/brest.cvt: Change sage NPC to Bank Clerk with a
+	  generic magic mouth response, removed map header comment now that
+	  the map has been updated
+
+2008-12-07 06:12  rjtanner
+
+	* brest/shops/brest.weapon: Change the blockview to wall sections
+	  near the entrance - now players can see more of the shop interior
+	  when entering the map
+
+2008-12-07 06:04  rjtanner
+
+	* brest/shops/brest.food: Cosmetic updates - modified destination
+	  coordinates back to the world map, removed two of the wall
+	  columns that didn't look right in the game
+
+2008-12-07 05:59  rjtanner
+
+	* brest/shops/brest.magic: Cosmetic updates - inserted missing
+	  floor tiles and removed two of the wall columns that didn't look
+	  right in the game
+
+2008-12-06 09:16  rjtanner
+
+	* ChangeLog: Updated ChangeLog file using svn2cl
+
 2008-12-06 09:05  rjtanner
 
 	* brest/shops/brest.magic, world/world_107_123: Redesign the
