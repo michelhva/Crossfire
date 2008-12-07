@@ -12,7 +12,7 @@ enter_x 19
 enter_y 20
 msg
 Created:  1994-05-31
-Modified: 2008-12-06 Rick Tanner
+Modified: 2008-12-07 Rick Tanner
 endmsg
 end
 arch flagstone
@@ -1846,15 +1846,11 @@ arch shop_empty
 x 16
 y 21
 end
-arch redcwall_2_1_2
-x 16
-y 21
-end
 arch swall_1_2_half
 x 16
 y 21
 end
-arch redcwall_0
+arch redcwall_2_1_2
 x 16
 y 21
 end
@@ -2203,7 +2199,7 @@ end
 arch oakdoor_2
 slaying /world/world_107_123
 face odoor_2_fant_brown.111
-hp 28
+hp 29
 sp 38
 x 19
 y 21
@@ -2588,10 +2584,6 @@ x 22
 y 18
 end
 arch swall_1_3_half
-x 22
-y 18
-end
-arch redcwall_0
 x 22
 y 18
 end
