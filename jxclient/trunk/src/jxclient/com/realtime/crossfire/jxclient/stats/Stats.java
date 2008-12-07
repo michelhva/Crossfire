@@ -19,6 +19,7 @@
 //
 package com.realtime.crossfire.jxclient.stats;
 
+import com.realtime.crossfire.jxclient.experience.ExperienceTable;
 import com.realtime.crossfire.jxclient.server.CrossfireServerConnection;
 import com.realtime.crossfire.jxclient.server.CrossfireStatsListener;
 import com.realtime.crossfire.jxclient.skills.Skill;
@@ -52,9 +53,22 @@ public class Stats
      */
     private final List<StatsListener> statsListeners = new ArrayList<StatsListener>();
 
+    /**
+     * The {@link ExperienceTable} instance to use.
+     */
+    private final ExperienceTable experienceTable;
+
     private final int[] stats = new int[258];
 
+    /**
+     * The total experience.
+     */
     private long exp = 0;
+
+    /**
+     * The experience needed to reach the next level.
+     */
+    private long expNextLevel = 0;
 
     private String range = "";
 
@@ -114,6 +128,10 @@ public class Stats
             case CS_STAT_GRACE:
             case CS_STAT_MAXGRACE:
                 setStat(stat, param);
+                if (stat == CS_STAT_LEVEL)
+                {
+                    calcExperienceToNextLevel();
+                }
                 break;
 
             case CS_STAT_FLAGS:
@@ -238,9 +256,11 @@ public class Stats
     /**
      * Create a new instance.
      * @param crossfireServerConnection the connection to monitor
+     * @param experienceTable the experience table instance to use
      */
-    public Stats(final CrossfireServerConnection crossfireServerConnection)
+    public Stats(final CrossfireServerConnection crossfireServerConnection, final ExperienceTable experienceTable)
     {
+        this.experienceTable = experienceTable; // XXX: should detect changed information
         crossfireServerConnection.addCrossfireStatsListener(crossfireStatsListener);
     }
 
@@ -387,6 +407,24 @@ public class Stats
     public void setExperience(final long exp)
     {
         this.exp = exp;
+        calcExperienceToNextLevel();
+    }
+
+    /**
+     * Returns the experience needed to reach the next level.
+     * @return the experience needed
+     */
+    public long getExperienceNextLevel()
+    {
+        return expNextLevel;
+    }
+
+    /**
+     * Calculates experience needed to reach the next level.
+     */
+    private void calcExperienceToNextLevel()
+    {
+        expNextLevel = experienceTable.getExperienceToNextLevel(stats[CrossfireStatsListener.CS_STAT_LEVEL], exp);
     }
 
     public void addCrossfireStatsListener(final StatsListener statsListener)

@@ -102,7 +102,7 @@ public class GUILabelStats extends GUIOneLineLabel
                 break;
 
             case CrossfireStatsListener.C_STAT_EXP_NEXT_LEVEL:
-                text = String.valueOf(experienceTable.getExperienceToNextLevel(s.getStat(CrossfireStatsListener.CS_STAT_LEVEL), s.getExperience()));
+                text = String.valueOf(s.getExperienceNextLevel());
                 break;
 
             case CrossfireStatsListener.CS_STAT_WEIGHT_LIM:
