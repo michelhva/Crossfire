@@ -2148,6 +2148,10 @@ arch redcwall_2_2_2
 x 15
 y 23
 end
+arch marble
+x 15
+y 24
+end
 arch redcwall_4
 x 15
 y 24
@@ -2302,6 +2306,10 @@ end
 arch redcwall_3_2
 x 16
 y 22
+end
+arch marble
+x 16
+y 23
 end
 arch redcwall_4
 x 16
@@ -4522,15 +4530,11 @@ arch shop_empty
 x 32
 y 23
 end
-arch redcwall_2_1_2
-x 32
-y 23
-end
 arch swall_1_2_half
 x 32
 y 23
 end
-arch redcwall_0
+arch redcwall_2_1_2
 x 32
 y 23
 end
@@ -5705,10 +5709,6 @@ x 40
 y 19
 end
 arch swall_1_3_half
-x 40
-y 19
-end
-arch redcwall_0
 x 40
 y 19
 end
