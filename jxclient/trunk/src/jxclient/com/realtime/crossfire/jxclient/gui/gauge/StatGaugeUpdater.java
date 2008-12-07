@@ -25,7 +25,6 @@ import com.realtime.crossfire.jxclient.items.ItemsManager;
 import com.realtime.crossfire.jxclient.items.PlayerListener;
 import com.realtime.crossfire.jxclient.server.CrossfireStatsListener;
 import com.realtime.crossfire.jxclient.stats.Stats;
-import com.realtime.crossfire.jxclient.stats.StatsEvent;
 import com.realtime.crossfire.jxclient.stats.StatsListener;
 import com.realtime.crossfire.jxclient.util.Formatter;
 
@@ -48,6 +47,11 @@ public class StatGaugeUpdater extends GaugeUpdater
     private final int stat;
 
     /**
+     * The {@link Stats} instance to watch.
+     */
+    private final Stats stats;
+
+    /**
      * Whether the low food event should be generated.
      */
     private boolean active = false;
@@ -59,49 +63,96 @@ public class StatGaugeUpdater extends GaugeUpdater
     private final StatsListener statsListener = new StatsListener()
     {
         /** {@inheritDoc} */
-        public void statChanged(final StatsEvent evt)
+        public void reset()
         {
-            final Stats s = evt.getStats();
+            // ignore
+        }
+
+        /** {@inheritDoc} */
+        public void statChanged(final int statnr, final int value)
+        {
+            if (stat != statnr)
+            {
+                return;
+            }
+
             switch (stat)
             {
             case CrossfireStatsListener.CS_STAT_HP:
-                setValues(s.getStat(stat), 0, s.getStat(CrossfireStatsListener.CS_STAT_MAXHP));
+                setValues(value, 0, stats.getStat(CrossfireStatsListener.CS_STAT_MAXHP));
                 break;
 
             case CrossfireStatsListener.CS_STAT_SP:
-                setValues(s.getStat(stat), 0, s.getStat(CrossfireStatsListener.CS_STAT_MAXSP));
+                setValues(value, 0, stats.getStat(CrossfireStatsListener.CS_STAT_MAXSP));
                 break;
 
             case CrossfireStatsListener.CS_STAT_FOOD:
-                setValues(s.getStat(stat), 0, 999);
+                setValues(value, 0, 999);
                 break;
 
             case CrossfireStatsListener.C_STAT_LOWFOOD:
-                setValues(active && s.getStat(CrossfireStatsListener.CS_STAT_FOOD) < LOWFOOD_LIMIT ? 1 : 0, 0, 1);
+                setValues(active && stats.getStat(CrossfireStatsListener.CS_STAT_FOOD) < LOWFOOD_LIMIT ? 1 : 0, 0, 1);
                 break;
 
             case CrossfireStatsListener.CS_STAT_GRACE:
-                setValues(s.getStat(stat), 0, s.getStat(CrossfireStatsListener.CS_STAT_MAXGRACE));
-                break;
-
-            case CrossfireStatsListener.C_STAT_EXP_NEXT_LEVEL:
-                final int level = s.getStat(CrossfireStatsListener.CS_STAT_LEVEL);
-                final long experience = s.getExperience();
-                final int perc = getPercentsToNextLevel(level, experience);
-                setValues(perc, 0, 99, perc+"%", level+"<br>Experience:"+Formatter.formatLong(experience)+"<br>Next level:"+Formatter.formatLong(getExperienceToNextLevel(level, experience)));
+                setValues(value, 0, stats.getStat(CrossfireStatsListener.CS_STAT_MAXGRACE));
                 break;
 
             case CrossfireStatsListener.C_STAT_POISONED:
-                setValues(s.getStat(CrossfireStatsListener.C_STAT_POISONED), 0, 1);
+                setValues(value, 0, 1);
                 break;
 
             default:
                 if (CrossfireStatsListener.CS_STAT_RESIST_START <= stat && stat <= CrossfireStatsListener.CS_STAT_RESIST_END)
                 {
-                    setValues(s.getStat(stat), 0, 100);
+                    setValues(value, 0, 100);
                 }
                 break;
             }
+        }
+
+        /** {@inheritDoc} */
+        public void simpleWeaponSpeedChanged(final boolean simpleWeaponSpeed)
+        {
+            // ignore
+        }
+
+        /** {@inheritDoc} */
+        public void titleChanged(final String title)
+        {
+            // ignore
+        }
+
+        /** {@inheritDoc} */
+        public void rangeChanged(final String range)
+        {
+            // ignore
+        }
+
+        /** {@inheritDoc} */
+        public void activeSkillChanged(final String activeSkill)
+        {
+            // ignore
+        }
+
+        /** {@inheritDoc} */
+        public void experienceChanged(final long exp)
+        {
+            // ignore
+        }
+
+        /** {@inheritDoc} */
+        public void experienceNextLevelChanged(final long expNextLevel)
+        {
+            if (stat != CrossfireStatsListener.C_STAT_EXP_NEXT_LEVEL)
+            {
+                return;
+            }
+
+            final int level = stats.getStat(CrossfireStatsListener.CS_STAT_LEVEL);
+            final long experience = stats.getExperience();
+            final int perc = getPercentsToNextLevel(level, experience);
+            setValues(perc, 0, 99, perc+"%", level+"<br>Experience:"+Formatter.formatLong(experience)+"<br>Next level:"+Formatter.formatLong(getExperienceToNextLevel(level, experience)));
         }
     };
 
@@ -144,6 +195,7 @@ public class StatGaugeUpdater extends GaugeUpdater
     {
         super(experienceTable);
         this.stat = stat;
+        this.stats = stats;
         stats.addCrossfireStatsListener(statsListener);
         itemsManager.addCrossfirePlayerListener(playerListener);
     }

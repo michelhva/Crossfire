@@ -62,8 +62,7 @@ public interface CrossfireStatsListener
     int CS_STAT_EXP = 11;
 
     /**
-     * The Global Experience needed to reach next level stat; the value is in
-     * XP.
+     * The global experience needed to reach next level stat.
      */
     int C_STAT_EXP_NEXT_LEVEL = 0x10000;
 
@@ -370,16 +369,6 @@ public interface CrossfireStatsListener
      * weapon speed value
      */
     void setSimpleWeaponSpeed(boolean simpleWeaponSpeed);
-
-    /**
-     * Parsing of a "stats" command has started.
-     */
-    void statBegin();
-
-    /**
-     * Parsing of a "stats" command has finished.
-     */
-    void statEnd();
 
     /**
      * A "stats" command with a two-byte argument has been received.

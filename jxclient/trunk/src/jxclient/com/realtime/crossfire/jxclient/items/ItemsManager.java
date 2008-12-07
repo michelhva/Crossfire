@@ -127,11 +127,10 @@ public class ItemsManager
         /** {@inheritDoc} */
         public void playerReceived(final int tag, final int weight, final int faceNum, final String name)
         {
-            stats.resetSkills();
+            stats.setActiveSkill("");
             SkillSet.clearNumberedSkills();
             setPlayer(new CfPlayer(tag, weight, faceCache.getFace(faceNum), name));
             stats.setStat(CrossfireStatsListener.C_STAT_WEIGHT, weight);
-            stats.setStatsProcessed(false);
         }
 
         /** {@inheritDoc} */
@@ -144,7 +143,6 @@ public class ItemsManager
                 if (player != null && player.getTag() == tag)
                 {
                     stats.setStat(CrossfireStatsListener.C_STAT_WEIGHT, valWeight);
-                    stats.setStatsProcessed(false);
                 }
             }
         }

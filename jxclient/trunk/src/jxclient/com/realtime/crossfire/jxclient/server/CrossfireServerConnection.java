@@ -1340,10 +1340,6 @@ public class CrossfireServerConnection extends ServerConnection
                     if (packet[pos++] != 't') break;
                     if (packet[pos++] != 's') break;
                     if (packet[pos++] != ' ') break;
-                    for(final CrossfireStatsListener crossfireStatsListener : crossfireStatsListeners)
-                    {
-                        crossfireStatsListener.statBegin();
-                    }
                     while (pos < end)
                     {
                         final int stat = packet[pos++]&0xFF;
@@ -1463,10 +1459,6 @@ public class CrossfireServerConnection extends ServerConnection
                         }
                     }
                     if (pos != end) break;
-                    for(final CrossfireStatsListener crossfireStatsListener : crossfireStatsListeners)
-                    {
-                        crossfireStatsListener.statEnd();
-                    }
                     return;
                 }
                 break;
