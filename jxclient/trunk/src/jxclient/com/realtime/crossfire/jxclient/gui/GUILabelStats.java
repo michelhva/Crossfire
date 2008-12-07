@@ -22,7 +22,6 @@ package com.realtime.crossfire.jxclient.gui;
 import com.realtime.crossfire.jxclient.experience.ExperienceTable;
 import com.realtime.crossfire.jxclient.server.CrossfireStatsListener;
 import com.realtime.crossfire.jxclient.stats.Stats;
-import com.realtime.crossfire.jxclient.stats.StatsEvent;
 import com.realtime.crossfire.jxclient.stats.StatsListener;
 import com.realtime.crossfire.jxclient.util.Formatter;
 import com.realtime.crossfire.jxclient.window.JXCWindow;
@@ -43,6 +42,11 @@ public class GUILabelStats extends GUIOneLineLabel
     private static final long serialVersionUID = 1;
 
     /**
+     * The {@link Stats} instance to use.
+     */
+    private final Stats stats;
+
+    /**
      * The experience table to use.
      */
     private final ExperienceTable experienceTable;
@@ -58,67 +62,113 @@ public class GUILabelStats extends GUIOneLineLabel
     private final StatsListener statsListener = new StatsListener()
     {
         /** {@inheritDoc} */
-        public void statChanged(final StatsEvent evt)
+        public void reset()
         {
-            final Stats s = evt.getStats();
-            final String text;
+            // ignore
+        }
+
+        /** {@inheritDoc} */
+        public void statChanged(final int statnr, final int value)
+        {
             switch (stat)
             {
             case CrossfireStatsListener.CS_STAT_SPEED:
-                text = Formatter.formatFloat(s.getFloatStat(stat), 2);
+                if (stat == statnr)
+                {
+                    setText(Formatter.formatFloat(stats.getFloatStat(stat), 2));
+                }
                 break;
 
             case CrossfireStatsListener.CS_STAT_WEAP_SP:
-                text = Formatter.formatFloat(s.getWeaponSpeed(), 2);
-                break;
-
-            case CrossfireStatsListener.CS_STAT_RANGE:
-                final String rangeString = s.getRange();
-                if (rangeString.startsWith("Range: spell "))
+                if (stat == statnr)
                 {
-                    text = rangeString.substring(13);
+                    setText(Formatter.formatFloat(stats.getWeaponSpeed(), 2));
                 }
-                else if (rangeString.startsWith("Range: "))
-                {
-                    text = rangeString.substring(7);
-                }
-                else if (rangeString.startsWith("Skill: "))
-                {
-                    text = rangeString.substring(7);
-                }
-                else
-                {
-                    text = rangeString;
-                }
-                break;
-
-            case CrossfireStatsListener.CS_STAT_TITLE:
-                text = s.getTitle();
-                break;
-
-            case CrossfireStatsListener.CS_STAT_EXP64:
-            case CrossfireStatsListener.CS_STAT_EXP:
-                text = String.valueOf(s.getExperience());
-                break;
-
-            case CrossfireStatsListener.C_STAT_EXP_NEXT_LEVEL:
-                text = String.valueOf(s.getExperienceNextLevel());
                 break;
 
             case CrossfireStatsListener.CS_STAT_WEIGHT_LIM:
             case CrossfireStatsListener.C_STAT_WEIGHT:
+                if (stat == statnr)
                 {
-                    final int weight = s.getStat(stat);
-                    text = Formatter.formatFloat(((weight+50)/100)/10.0, 1);
-                    setTooltipText(Formatter.formatFloat(weight/1000.0, 3)+"kg");
+                    setText(Formatter.formatFloat(((value+50)/100)/10.0, 1));
+                    setTooltipText(Formatter.formatFloat(value/1000.0, 3)+"kg");
                 }
                 break;
 
             default:
-                text = String.valueOf(s.getStat(stat));
+                if (stat == statnr)
+                {
+                    setText(String.valueOf(value));
+                }
                 break;
             }
+        }
+
+        /** {@inheritDoc} */
+        public void simpleWeaponSpeedChanged(final boolean simpleWeaponSpeed)
+        {
+            // ignore
+        }
+
+        /** {@inheritDoc} */
+        public void titleChanged(final String title)
+        {
+            if (stat == CrossfireStatsListener.CS_STAT_TITLE)
+            {
+                setText(title);
+            }
+        }
+
+        /** {@inheritDoc} */
+        public void rangeChanged(final String range)
+        {
+            if (stat != CrossfireStatsListener.CS_STAT_RANGE)
+            {
+                return;
+            }
+
+            final String text;
+            if (range.startsWith("Range: spell "))
+            {
+                text = range.substring(13);
+            }
+            else if (range.startsWith("Range: "))
+            {
+                text = range.substring(7);
+            }
+            else if (range.startsWith("Skill: "))
+            {
+                text = range.substring(7);
+            }
+            else
+            {
+                text = range;
+            }
             setText(text);
+        }
+
+        /** {@inheritDoc} */
+        public void activeSkillChanged(final String activeSkill)
+        {
+            // ignore
+        }
+
+        /** {@inheritDoc} */
+        public void experienceChanged(final long exp)
+        {
+            if (stat == CrossfireStatsListener.CS_STAT_EXP || stat == CrossfireStatsListener.CS_STAT_EXP64)
+            {
+                setText(String.valueOf(exp));
+            }
+        }
+
+        /** {@inheritDoc} */
+        public void experienceNextLevelChanged(final long expNextLevel)
+        {
+            if (stat == CrossfireStatsListener.C_STAT_EXP_NEXT_LEVEL)
+            {
+                setText(String.valueOf(expNextLevel));
+            }
         }
     };
 
@@ -141,6 +191,7 @@ public class GUILabelStats extends GUIOneLineLabel
     public GUILabelStats(final JXCWindow window, final String name, final int x, final int y, final int w, final int h, final Font font, final Color color, final Color backgroundColor, final int stat, final Alignment alignment, final Stats stats, final ExperienceTable experienceTable)
     {
         super(window, name, x, y, w, h, null, font, color, backgroundColor, alignment, "");
+        this.stats = stats;
         this.experienceTable = experienceTable;
         this.stat = stat;
         stats.addCrossfireStatsListener(statsListener);

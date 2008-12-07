@@ -21,7 +21,6 @@ package com.realtime.crossfire.jxclient.gui.gauge;
 
 import com.realtime.crossfire.jxclient.experience.ExperienceTable;
 import com.realtime.crossfire.jxclient.stats.Stats;
-import com.realtime.crossfire.jxclient.stats.StatsEvent;
 import com.realtime.crossfire.jxclient.stats.StatsListener;
 
 /**
@@ -43,9 +42,51 @@ public class ActiveSkillGaugeUpdater extends GaugeUpdater
     private final StatsListener statsListener = new StatsListener()
     {
         /** {@inheritDoc} */
-        public void statChanged(final StatsEvent evt)
+        public void reset()
         {
-            setValues(evt.getStats().getActiveSkill().equals(skill) ? 1 : 0, 0, 1);
+            // ignore
+        }
+
+        /** {@inheritDoc} */
+        public void statChanged(final int statnr, final int value)
+        {
+            // ignore
+        }
+
+        /** {@inheritDoc} */
+        public void simpleWeaponSpeedChanged(final boolean simpleWeaponSpeed)
+        {
+            // ignore
+        }
+
+        /** {@inheritDoc} */
+        public void titleChanged(final String title)
+        {
+            // ignore
+        }
+
+        /** {@inheritDoc} */
+        public void rangeChanged(final String range)
+        {
+            // ignore
+        }
+
+        /** {@inheritDoc} */
+        public void activeSkillChanged(final String activeSkill)
+        {
+            setValues(activeSkill.equals(skill) ? 1 : 0, 0, 1);
+        }
+
+        /** {@inheritDoc} */
+        public void experienceChanged(final long exp)
+        {
+            // ignore
+        }
+
+        /** {@inheritDoc} */
+        public void experienceNextLevelChanged(final long expNextLevel)
+        {
+            // ignore
         }
     };
 

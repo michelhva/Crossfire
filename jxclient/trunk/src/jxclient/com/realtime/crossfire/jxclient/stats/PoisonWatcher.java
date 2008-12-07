@@ -163,6 +163,5 @@ public class PoisonWatcher
             this.active = active;
             stats.setStat(CrossfireStatsListener.C_STAT_POISONED, active ? 1 : 0);
         }
-        stats.setStatsProcessed(false);
     }
 }

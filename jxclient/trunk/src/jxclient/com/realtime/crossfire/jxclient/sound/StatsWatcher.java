@@ -24,7 +24,6 @@ import com.realtime.crossfire.jxclient.items.ItemsManager;
 import com.realtime.crossfire.jxclient.items.PlayerListener;
 import com.realtime.crossfire.jxclient.server.CrossfireStatsListener;
 import com.realtime.crossfire.jxclient.stats.Stats;
-import com.realtime.crossfire.jxclient.stats.StatsEvent;
 import com.realtime.crossfire.jxclient.stats.StatsListener;
 import com.realtime.crossfire.jxclient.window.GuiStateListener;
 import com.realtime.crossfire.jxclient.window.JXCWindowRenderer;
@@ -45,11 +44,6 @@ public class StatsWatcher
      * The {@link SoundManager} instance to watch.
      */
     private final SoundManager soundManager;
-
-    /**
-     * The stats instance to watch.
-     */
-    private final Stats stats;
 
     /**
      * Whether sounds should be generated.
@@ -74,18 +68,56 @@ public class StatsWatcher
     private long ignoreLevelChange = System.currentTimeMillis()+DELAY;
 
     /**
-     * The crossfire stats listener attached to {@link #stats}.
+     * The crossfire stats listener.
      */
     private final StatsListener statsListener = new StatsListener()
     {
         /** {@inheritDoc} */
-        public void statChanged(final StatsEvent evt)
+        public void reset()
         {
-            checkStats();
-            if (evt.isReset())
-            {
-                ignoreLevelChange = System.currentTimeMillis()+DELAY;
-            }
+            ignoreLevelChange = System.currentTimeMillis()+DELAY;
+        }
+
+        /** {@inheritDoc} */
+        public void statChanged(final int statnr, final int value)
+        {
+            checkStats(statnr, value);
+        }
+
+        /** {@inheritDoc} */
+        public void simpleWeaponSpeedChanged(final boolean simpleWeaponSpeed)
+        {
+            // ignore
+        }
+
+        /** {@inheritDoc} */
+        public void titleChanged(final String title)
+        {
+            // ignore
+        }
+
+        /** {@inheritDoc} */
+        public void rangeChanged(final String range)
+        {
+            // ignore
+        }
+
+        /** {@inheritDoc} */
+        public void activeSkillChanged(final String activeSkill)
+        {
+            // ignore
+        }
+
+        /** {@inheritDoc} */
+        public void experienceChanged(final long exp)
+        {
+            // ignore
+        }
+
+        /** {@inheritDoc} */
+        public void experienceNextLevelChanged(final long expNextLevel)
+        {
+            // ignore
         }
     };
 
@@ -135,7 +167,6 @@ public class StatsWatcher
      */
     public StatsWatcher(final Stats stats, final JXCWindowRenderer windowRenderer, final ItemsManager itemsManager, final SoundManager soundManager)
     {
-        this.stats = stats;
         this.soundManager = soundManager;
         poisoned = stats.getStat(CrossfireStatsListener.C_STAT_POISONED) != 0;
         level = stats.getStat(CrossfireStatsListener.CS_STAT_LEVEL);
@@ -147,31 +178,38 @@ public class StatsWatcher
 
     /**
      * Check for changed stats and generate sound effects.
+     * @param statnr the changed stat number
+     * @param value the new stat value
      */
-    private void checkStats()
+    private void checkStats(final int statnr, final int value)
     {
-        final boolean newPoisoned = stats.getStat(CrossfireStatsListener.C_STAT_POISONED) != 0;
-        if (poisoned != newPoisoned)
+        if (statnr == CrossfireStatsListener.C_STAT_POISONED)
         {
-            poisoned = newPoisoned;
-            if (active)
+            final boolean newPoisoned = value != 0;
+            if (poisoned != newPoisoned)
             {
-                playClip(newPoisoned ? Sounds.POISON_ON : Sounds.POISON_OFF);
+                poisoned = newPoisoned;
+                if (active)
+                {
+                    playClip(newPoisoned ? Sounds.POISON_ON : Sounds.POISON_OFF);
+                }
             }
         }
-
-        final int newLevel = stats.getStat(CrossfireStatsListener.CS_STAT_LEVEL);
-        if (level != newLevel)
+        else if (statnr == CrossfireStatsListener.CS_STAT_LEVEL)
         {
-            if (ignoreLevelChange != 0 && ignoreLevelChange <= System.currentTimeMillis())
+            final int newLevel = value;
+            if (level != newLevel)
             {
-                ignoreLevelChange = 0;
+                if (ignoreLevelChange != 0 && ignoreLevelChange <= System.currentTimeMillis())
+                {
+                    ignoreLevelChange = 0;
+                }
+                if (ignoreLevelChange == 0 && level < newLevel && active)
+                {
+                    playClip(Sounds.LEVEL_UP);
+                }
+                level = newLevel;
             }
-            if (ignoreLevelChange == 0 && level < newLevel && active)
-            {
-                playClip(Sounds.LEVEL_UP);
-            }
-            level = newLevel;
         }
     }
 

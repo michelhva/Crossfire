@@ -25,7 +25,6 @@ import com.realtime.crossfire.jxclient.server.CrossfireStatsListener;
 import com.realtime.crossfire.jxclient.skills.Skill;
 import com.realtime.crossfire.jxclient.skills.SkillSet;
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
@@ -90,17 +89,6 @@ public class Stats
         public void setSimpleWeaponSpeed(final boolean simpleWeaponSpeed)
         {
             Stats.this.setSimpleWeaponSpeed(simpleWeaponSpeed);
-        }
-
-        /** {@inheritDoc} */
-        public void statBegin()
-        {
-        }
-
-        /** {@inheritDoc} */
-        public void statEnd()
-        {
-            setStatsProcessed(false);
         }
 
         /** {@inheritDoc} */
@@ -279,7 +267,10 @@ public class Stats
         }
 
         this.simpleWeaponSpeed = simpleWeaponSpeed;
-        setStatsProcessed(false);
+        for (final StatsListener statsListener : statsListeners)
+        {
+            statsListener.simpleWeaponSpeedChanged(this.simpleWeaponSpeed);
+        }
     }
 
     /**
@@ -287,20 +278,18 @@ public class Stats
      */
     public void reset()
     {
-        Arrays.fill(stats, 0);
-        exp = 0;
-        range = "";
-        title = "";
-        activeSkill = "";
-        setStatsProcessed(true);
-    }
-
-    /**
-     * Forget about all skills.
-     */
-    public void resetSkills()
-    {
-        setStatsProcessed(false);
+        for (final StatsListener statsListener : statsListeners)
+        {
+            statsListener.reset();
+        }
+        for (int statnr = 0; statnr < stats.length; statnr++)
+        {
+            setStat(statnr, 0);
+        }
+        setExperience(0);
+        setRange("");
+        setTitle("");
+        setActiveSkill("");
     }
 
     /**
@@ -330,7 +319,15 @@ public class Stats
      */
     public void setStat(final int statnr, final int value)
     {
+        if (stats[statnr] == value) {
+            return;
+        }
+
         stats[statnr] = value;
+        for (final StatsListener statsListener : statsListeners)
+        {
+            statsListener.statChanged(statnr, stats[statnr]);
+        }
     }
 
     /**
@@ -368,7 +365,16 @@ public class Stats
      */
     public void setTitle(final String title)
     {
+        if (this.title.equals(title))
+        {
+            return;
+        }
+
         this.title = title;
+        for (final StatsListener statsListener : statsListeners)
+        {
+            statsListener.titleChanged(this.title);
+        }
     }
 
     /**
@@ -378,7 +384,16 @@ public class Stats
      */
     public void setRange(final String range)
     {
+        if (this.range.equals(range))
+        {
+            return;
+        }
+
         this.range = range;
+        for (final StatsListener statsListener : statsListeners)
+        {
+            statsListener.rangeChanged(this.range);
+        }
     }
 
     /**
@@ -388,7 +403,16 @@ public class Stats
      */
     public void setActiveSkill(final String activeSkill)
     {
+        if (this.activeSkill.equals(activeSkill))
+        {
+            return;
+        }
+
         this.activeSkill = activeSkill;
+        for (final StatsListener statsListener : statsListeners)
+        {
+            statsListener.activeSkillChanged(this.activeSkill);
+        }
     }
 
     /**
@@ -406,7 +430,17 @@ public class Stats
      */
     public void setExperience(final long exp)
     {
+        if (this.exp == exp)
+        {
+            return;
+        }
+
         this.exp = exp;
+        for (final StatsListener statsListener : statsListeners)
+        {
+            statsListener.experienceChanged(this.exp);
+        }
+
         calcExperienceToNextLevel();
     }
 
@@ -424,7 +458,17 @@ public class Stats
      */
     private void calcExperienceToNextLevel()
     {
-        expNextLevel = experienceTable.getExperienceToNextLevel(stats[CrossfireStatsListener.CS_STAT_LEVEL], exp);
+        final long newExpNextLevel = experienceTable.getExperienceToNextLevel(stats[CrossfireStatsListener.CS_STAT_LEVEL], exp);
+        if (expNextLevel == newExpNextLevel)
+        {
+            return;
+        }
+
+        expNextLevel = newExpNextLevel;
+        for (final StatsListener statsListener : statsListeners)
+        {
+            statsListener.experienceNextLevelChanged(expNextLevel);
+        }
     }
 
     public void addCrossfireStatsListener(final StatsListener statsListener)
@@ -435,15 +479,6 @@ public class Stats
     public void removeCrossfireStatsListener(final StatsListener statsListener)
     {
         statsListeners.remove(statsListener);
-    }
-
-    public void setStatsProcessed(final boolean reset)
-    {
-        final StatsEvent statsEvent = new StatsEvent(new Object(), this, reset);
-        for (final StatsListener statsListener : statsListeners)
-        {
-            statsListener.statChanged(statsEvent);
-        }
     }
 
     /**

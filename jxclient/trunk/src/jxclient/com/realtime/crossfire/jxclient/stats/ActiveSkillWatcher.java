@@ -55,9 +55,51 @@ public class ActiveSkillWatcher
     private final StatsListener statsListener = new StatsListener()
     {
         /** {@inheritDoc} */
-        public void statChanged(final StatsEvent evt)
+        public void reset()
         {
-            checkRange();
+            // ignore
+        }
+
+        /** {@inheritDoc} */
+        public void statChanged(final int statnr, final int value)
+        {
+            // ignore
+        }
+
+        /** {@inheritDoc} */
+        public void simpleWeaponSpeedChanged(final boolean simpleWeaponSpeed)
+        {
+            // ignore
+        }
+
+        /** {@inheritDoc} */
+        public void titleChanged(final String title)
+        {
+            // ignore
+        }
+
+        /** {@inheritDoc} */
+        public void rangeChanged(final String range)
+        {
+            checkRange(range);
+        }
+
+        /** {@inheritDoc} */
+        public void activeSkillChanged(final String activeSkill)
+        {
+            // ignore
+        }
+
+        /** {@inheritDoc} */
+        public void experienceChanged(final long exp)
+        {
+            // ignore
+        }
+
+        /** {@inheritDoc} */
+        public void experienceNextLevelChanged(final long expNextLevel)
+        {
+            // ignore
         }
     };
 
@@ -103,10 +145,10 @@ public class ActiveSkillWatcher
 
     /**
      * Check whether the range attribute has changed.
+     * @param range the new range attribute
      */
-    private void checkRange()
+    private void checkRange(final String range)
     {
-        final String range = stats.getRange();
         if (range.startsWith("Skill: "))
         {
             setActive(range.substring(7));
@@ -159,6 +201,5 @@ public class ActiveSkillWatcher
             this.activeSkill = normalizedActiveSkill;
             stats.setActiveSkill(this.activeSkill);
         }
-        stats.setStatsProcessed(false);
     }
 }
