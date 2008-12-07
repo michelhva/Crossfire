@@ -11,7 +11,7 @@ height 24
 enter_x 12
 enter_y 20
 msg
-Modified: 2008-12-06 Rick Tanner
+Modified: 2008-12-07 Rick Tanner
 endmsg
 end
 arch grass
@@ -1203,6 +1203,7 @@ end
 arch wall_1_short
 x 9
 y 18
+blocksview 0
 end
 arch dungeon_magic
 x 9
@@ -1219,6 +1220,7 @@ end
 arch wall_1_short
 x 9
 y 19
+blocksview 0
 end
 arch dungeon_magic
 x 9
@@ -1235,6 +1237,7 @@ end
 arch wall_1_short
 x 9
 y 20
+blocksview 0
 end
 arch dungeon_magic
 x 9
@@ -1358,6 +1361,7 @@ end
 arch wall_1_short
 x 10
 y 18
+blocksview 0
 end
 arch woodlarge
 x 10
@@ -1481,6 +1485,7 @@ end
 arch wall_1_short
 x 11
 y 18
+blocksview 0
 end
 arch woodlarge
 x 11
@@ -1625,6 +1630,7 @@ end
 arch wall_1_short
 x 12
 y 18
+blocksview 0
 end
 arch woodlarge
 x 12
@@ -1761,6 +1767,7 @@ end
 arch wall_1_short
 x 13
 y 18
+blocksview 0
 end
 arch woodlarge
 x 13
@@ -1889,6 +1896,7 @@ end
 arch wall_1_short
 x 14
 y 18
+blocksview 0
 end
 arch woodlarge
 x 14
@@ -2016,6 +2024,7 @@ end
 arch wall_1_short
 x 15
 y 18
+blocksview 0
 end
 arch dungeon_magic
 x 15
@@ -2032,6 +2041,7 @@ end
 arch wall_1_short
 x 15
 y 19
+blocksview 0
 end
 arch dungeon_magic
 x 15
@@ -2048,6 +2058,7 @@ end
 arch wall_1_short
 x 15
 y 20
+blocksview 0
 end
 arch dungeon_magic
 x 15
