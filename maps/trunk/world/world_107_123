@@ -7835,7 +7835,11 @@ x 28
 y 18
 elevation 402
 end
-arch house_1
+arch small_temple
+name Shrine of Valkyrie
+slaying ../brest/temples/valkyrie
+hp 12
+sp 21
 x 28
 y 18
 end
