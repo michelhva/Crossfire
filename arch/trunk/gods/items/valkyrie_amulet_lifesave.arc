@@ -1,6 +1,7 @@
 Object valkyrie_amulet_lifesave
-name Valkyrie's Amulet of Lifesaving
-name_pl Valkyrie's Amulets of Lifesaving
+name Valkyrie's Amulet
+name_pl Valkyrie's Amulets
+title of Lifesaving
 face amulet_lif.111
 type 39
 material 12
