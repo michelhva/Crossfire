@@ -1,5 +1,12 @@
 Changes for SVN top of tree:
 
+gods/items/valkyrie_amulet_lifesave.arc
+Changes to the amulet so that the item appears as
+"Valkyrie's Amulet of Lifesaving" instead of
+"Valkyrie's Amulet of Lifesaving (lifesaving)" in a
+players inventory
+Rick Tanner 2008-12-09
+
 gods/items/valkyrie_amulet_lifesave.arc, gods/demihumans/valkyrie.trs
 Tentative bug fix for '[ 1990180 ] 2.0 godgiven Valkyrie lifesaving amulet bug?' 
 - created a new amulet archetype that is godgiven and inventory locked by default, 
