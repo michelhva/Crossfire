@@ -28,6 +28,13 @@ no_pass 1
 editable 512
 visibility 100
 end
+Object wall_door_1_4
+name doorway
+face wall_door_1.111
+magicmap brown
+no_pick 1
+visibility 100
+end
 Object wall_2_2_1
 name wall
 face wall_3.111
