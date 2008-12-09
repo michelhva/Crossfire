@@ -1,5 +1,10 @@
 Changes for SVN top of tree:
 
+construct/house/house_1.arc,
+construct/house/house_1_green.base.111.png
+Backport from trunk - small green house graphic and arc file
+Rick Tanner 2008-12-08
+
 mapbuilding/building.trs: Backport from trunk, Fixed 
 a bug in the treasure list shop_building_pupland
 that prevented it from including any walls (replaced 
