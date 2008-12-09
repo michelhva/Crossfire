@@ -1,5 +1,12 @@
 Changes for SVN top of tree:
 
+gods/items/valkyrie_amulet_lifesave.arc, gods/demihumans/valkyrie.trs
+Tentative bug fix for '[ 1990180 ] 2.0 godgiven Valkyrie lifesaving amulet bug?' 
+- created a new amulet archetype that is godgiven and inventory locked by default, 
+updated gods/demihumans/valkyrie.trs file to reference the new amulet archetype 
+(Previous checkin had a bug - missed the .arc file at the end of the file name)
+Rick Tanner 2008-12-08
+
 /construct/window/intermediate_window_1.base.111.png, /construct/window/intermediate_window.arc,
 /construct/window/intermediate_window_2.base.111.png, /construct/window/window_2.base.111.png,
 /construct/window/window_4.base.111.png, /construct/window/window_arcade_1.base.111.png,
