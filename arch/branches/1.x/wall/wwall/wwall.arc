@@ -158,3 +158,17 @@ blocksview 1
 editable 512
 visibility 100
 end
+Object wwall_left
+name wall
+face wwall_left.111
+magicmap brown
+no_pick 1
+visibility 100
+end
+Object wwall_right
+name wall
+face wwall_right.111
+magicmap brown
+no_pick 1
+visibility 100
+end
