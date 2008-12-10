@@ -65,6 +65,15 @@ no_pass 1
 editable 512
 visibility 100
 end
+Object wall_door_2_1_1
+name doorway
+face wall_door_0.111
+color_fg brown
+no_pick 1
+no_pass 1
+editable 512
+visibility 100
+end
 Object wall_2_2_2
 name wall
 face wall_6.111
@@ -113,6 +122,15 @@ blocksview 1
 no_pick 1
 no_pass 1
 editable 512
+visibility 100
+end
+Object wall_middle
+name wall middle
+face wall_AA.111
+color_fg brown
+blocksview 1
+no_pick 1
+move_block all
 visibility 100
 end
 Object wall_3_1
@@ -205,4 +223,48 @@ no_pass 1
 editable 512
 visibility 100
 end
-
+Object wall_1_short
+name short wall 1
+face wall_1_short.111
+color_fg brown
+blocksview 1
+no_pick 1
+no_pass 1
+visibility 100
+end
+Object wall_2_short
+name short wall 2
+face wall_2_short.111
+color_fg brown
+blocksview 1
+no_pick 1
+no_pass 1
+visibility 100
+end
+Object wall_4_short
+name short wall 4
+face wall_4_short.111
+color_fg brown
+blocksview 1
+no_pick 1
+no_pass 1
+visibility 100
+end
+Object wall_55
+name short wall 55
+face wall_55.111
+color_fg brown
+blocksview 1
+no_pick 1
+no_pass 1
+visibility 100
+end
+Object wall_8_short
+name short wall 8
+face wall_8_short.111
+color_fg brown
+blocksview 1
+no_pick 1
+no_pass 1
+visibility 100
+end
