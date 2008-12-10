@@ -1,5 +1,20 @@
 Changes for SVN top of tree:
 
+wall/dun/dun_10.base.111.png, wall/dun/dun_11.base.111.png,
+wall/dun/dun_12.base.111.png, wall/dun/dun_13.base.111.png,
+wall/dun/dun_14.base.111.png, wall/dun/dun_15.base.111.png,
+wall/dun/dun_16.base.111.png, wall/dun/dun_17.base.111.png,
+wall/dun/dun_18.base.111.png, wall/dun/dun_19.base.111.png,
+wall/dun/dun_20.base.111.png, wall/dun/dun_21.base.111.png,
+wall/dun/dun_22.base.111.png, wall/dun/dun_23.base.111.png,
+wall/dun/dun_24.base.111.png, wall/dun/dun_25.base.111.png,
+wall/dun/dungeon.arc
+Backport from Trunk - New graphics and archetypes for 
+Dungeon wall set.  Similar to the curved and circular 
+sections from the Cave wall set, but colored black 
+(vs. grey)
+Rick Tanner 2008-12-09
+
 exit/oakdoor_1.arc, 
 exit/oakdoor_1.base.111.png, 
 exit/oakdoor_2.arc,
@@ -7,7 +22,7 @@ exit/oakdoor_2.base.111.png
 Backport from Trunk - New graphics to replace the old 
 xpm oakdoor, also has two facings - vertical 
 (oakdoor_1) and horizontal (oakdoor_2)
-Rick tanner 2008-12-09
+Rick Tanner 2008-12-09
 
 wall/wwall/wwall.arc,  
 wall/wwall/wwall_right.base.111.png,
