@@ -8,10 +8,8 @@ material 0
 materialname stone
 value 50
 weight 800000
-editable 132
 no_pick 1
 identified 1
-randomitems sarcophagus
 magicmap khaki
 name_pl sarcophaguses
 client_type 51
@@ -27,7 +25,6 @@ materialname stone
 value 50
 container 150000
 weight 800000
-editable 128
 no_pick 1
 identified 1
 name_pl sarcophaguses
@@ -40,6 +37,5 @@ type 121
 no_pick 1
 no_drop 1
 identified 1
-editable 0
 magicmap khaki
 end

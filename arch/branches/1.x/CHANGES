@@ -1,5 +1,12 @@
 Changes for SVN top of tree:
 
+sarcophagus_container.arc,
+close_sarcophagus.base.111.png,
+sarcophagus.base.111.png
+Backport from Trunk - fix missing treasure list which removes
+server warning about the missing treasure list
+Rick Tanner 2008-12-09 
+
 wall/dun/dungeon.arc, 
 wall/wwall/wwall.arc
 Removed newlines
