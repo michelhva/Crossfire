@@ -8,7 +8,7 @@ enter_x 12
 enter_y 21
 msg
 Created:  2008-12-07 Rick Tanner
-Modified: 2008-12-08 Rick Tanner
+Modified: 2008-12-10 Rick Tanner
 endmsg
 end
 arch grass
@@ -1807,6 +1807,7 @@ end
 arch altar_valkyrie
 x 12
 y 5
+level 120
 arch altar_valkyrie_pray_event
 end
 end
