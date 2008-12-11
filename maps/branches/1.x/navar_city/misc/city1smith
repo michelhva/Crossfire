@@ -14,7 +14,7 @@ enter_x 8
 enter_y 8
 msg
 Created:  1993-10-27
-Modified: 2008-11-17 Rick Tanner
+Modified: 2008-12-10 Rick Tanner
 endmsg
 end
 arch stonefloor2
@@ -614,9 +614,8 @@ arch stonefloor2
 x 8
 y 9
 end
-arch oakdoor
+arch oakdoor_2
 slaying /world/world_122_117
-face odoor_2.111
 hp 11
 sp 7
 x 8

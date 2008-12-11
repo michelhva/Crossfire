@@ -7,10 +7,11 @@ shopmin 20
 shopmax 35000
 width 20
 height 20
+enter_x 1
 enter_y 8
 msg
 Created:  1996-03-14
-Modified: 2008-11-18 Rick Tanner
+Modified: 2008-12-10 Rick Tanner
 endmsg
 end
 arch grass
@@ -54,7 +55,7 @@ end
 arch woodfloor
 y 8
 end
-arch oakdoor
+arch oakdoor_1
 slaying town
 hp 13
 sp 6
@@ -63,7 +64,7 @@ end
 arch woodfloor
 y 9
 end
-arch oakdoor
+arch oakdoor_1
 slaying town
 hp 13
 sp 6

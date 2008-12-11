@@ -8,7 +8,7 @@ enter_x 7
 enter_y 24
 msg
 Created:  1993-11-09
-Modified: 2008-11-09 Rick Tanner
+Modified: 2008-12-10 Rick Tanner
 endmsg
 end
 arch woodfloor
@@ -1425,7 +1425,7 @@ arch woodfloor
 x 7
 y 24
 end
-arch oakdoor
+arch oakdoor_2
 slaying /world/world_122_116
 hp 11
 sp 39
@@ -1554,7 +1554,7 @@ arch woodfloor
 x 8
 y 24
 end
-arch oakdoor
+arch oakdoor_2
 slaying /world/world_122_116
 hp 11
 sp 39

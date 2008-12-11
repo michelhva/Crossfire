@@ -319,7 +319,7 @@ arch small_stones
 x 1
 y 1
 end
-arch oakdoor
+arch exit
 slaying /world/world_122_117
 hp 12
 sp 14
@@ -2301,7 +2301,7 @@ end
 arch small_stones
 x 8
 end
-arch awall_3_3
+arch awall_2_1_2
 x 8
 end
 arch small_stones
@@ -2316,7 +2316,7 @@ arch small_stones
 x 8
 y 2
 end
-arch awall_2_1_1
+arch awall_1_1
 x 8
 y 2
 end
@@ -4700,15 +4700,27 @@ end
 arch awall_2_1_2
 x 18
 end
+arch small_stones
+x 18
+y 1
+end
 arch block_door_closed
 x 18
 y 1
 connected 3
 end
+arch small_stones
+x 18
+y 2
+end
 arch block_door_closed
 x 18
 y 2
 connected 3
+end
+arch small_stones
+x 18
+y 3
 end
 arch block_door_closed
 x 18
@@ -4932,6 +4944,10 @@ end
 arch small_stones
 x 19
 y 2
+end
+arch small_stones
+x 19
+y 3
 end
 arch block_door_closed
 x 19
@@ -5163,6 +5179,10 @@ end
 arch small_stones
 x 20
 y 2
+end
+arch small_stones
+x 20
+y 3
 end
 arch block_door_closed
 x 20

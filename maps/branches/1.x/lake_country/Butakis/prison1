@@ -8,7 +8,7 @@ enter_x 4
 enter_y 4
 msg
 Created:  1995-03-28 Kundi, Xue (xkd@soda.berkeley.edu)
-Modified: 2008-11-07 Rick Tanner
+Modified: 2008-12-10 Rick Tanner
 endmsg
 end
 arch dungeon_floor
@@ -36,7 +36,7 @@ end
 arch dungeon_floor
 y 4
 end
-arch oakdoor
+arch oakdoor_1
 name Oakdoor to Execution Chamber
 slaying prison_w
 hp 15
@@ -46,7 +46,7 @@ end
 arch dungeon_floor
 y 5
 end
-arch oakdoor
+arch oakdoor_1
 name Oakdoor to Execution Chamber
 slaying prison_w
 hp 15
@@ -290,7 +290,7 @@ end
 arch dungeon_floor
 x 4
 end
-arch oakdoor
+arch oakdoor_2
 name Oakdoor to Maximum Security Cells
 slaying prison_n
 hp 13
@@ -340,7 +340,7 @@ arch dungeon_floor
 x 4
 y 9
 end
-arch oakdoor
+arch oakdoor_2
 name Oakdoor to a Heavily Guarded Chamber
 slaying prison_s
 hp 1
@@ -350,7 +350,7 @@ end
 arch dungeon_floor
 x 5
 end
-arch oakdoor
+arch oakdoor_2
 name Oakdoor to Maximum Security Cells
 slaying prison_n
 hp 14
@@ -400,7 +400,7 @@ arch dungeon_floor
 x 5
 y 9
 end
-arch oakdoor
+arch oakdoor_2
 name Oakdoor to a Heavily Guarded Chamber
 slaying prison_s
 hp 2
@@ -651,7 +651,7 @@ arch dungeon_floor
 x 9
 y 4
 end
-arch oakdoor
+arch oakdoor_1
 name Oakdoor to Wizards' Cells
 slaying prison_e
 sp 13
@@ -662,7 +662,7 @@ arch dungeon_floor
 x 9
 y 5
 end
-arch oakdoor
+arch oakdoor_1
 name Oakdoor to Wizards' Cells
 slaying prison_e
 sp 14

@@ -9,7 +9,7 @@ enter_x 7
 enter_y 13
 msg
 Created:  2004-02-21 Avion
-Modified: 2008-11-17 Rick Tanner
+Modified: 2008-12-10 Rick Tanner
 endmsg
 outdoor 1
 end
@@ -660,7 +660,7 @@ arch woodfloor
 x 7
 y 13
 end
-arch oakdoor
+arch oakdoor_2
 slaying /world/world_122_117
 hp 9
 sp 14

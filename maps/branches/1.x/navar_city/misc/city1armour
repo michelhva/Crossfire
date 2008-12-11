@@ -11,10 +11,10 @@ shoprace dwarf
 width 19
 height 16
 enter_x 1
-enter_y 1
+enter_y 2
 msg
 Created:  1993-10-27
-Modified: 2008-11-09 Rick Tanner
+Modified: 2008-12-10 Rick Tanner
 endmsg
 end
 arch flagstone
@@ -28,7 +28,7 @@ name floor
 face shop_empty.111
 y 1
 end
-arch wall_2_1_1
+arch wall_1_2
 y 1
 end
 arch flagstone
@@ -36,7 +36,10 @@ name floor
 face shop_empty.111
 y 2
 end
-arch wall_2_1_1
+arch oakdoor_1
+slaying /world/world_122_117
+hp 16
+sp 2
 y 2
 end
 arch flagstone
@@ -44,7 +47,7 @@ name floor
 face shop_empty.111
 y 3
 end
-arch wall_3_2
+arch wall_2_2_2
 y 3
 end
 arch shop_empty
@@ -130,13 +133,6 @@ end
 arch flagstone
 name floor
 face shop_empty.111
-x 1
-y 1
-end
-arch oakdoor
-slaying /world/world_122_117
-hp 16
-sp 2
 x 1
 y 1
 end
