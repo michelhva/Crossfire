@@ -5,10 +5,10 @@ region lonetown
 width 25
 height 25
 enter_x 12
-enter_y 24
+enter_y 23
 msg
 Created:  1997-02-22
-Modified: 2008-11-11 Rick Tanner
+Modified: 2008-12-10 Rick Tanner
 endmsg
 end
 arch afloor_left
@@ -1891,7 +1891,7 @@ arch afloor_left
 x 12
 y 24
 end
-arch oakdoor
+arch oakdoor_2
 slaying town
 hp 11
 sp 4

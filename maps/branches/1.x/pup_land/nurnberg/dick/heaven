@@ -4,11 +4,11 @@ difficulty 25
 region nurnberg
 width 28
 height 32
-enter_x 19
+enter_x 18
 enter_y 2
 msg
 Created:  1996-02-12
-Modified: 2008-11-11 Rick Tanner
+Modified: 2008-12-10 Rick Tanner
 endmsg
 end
 arch dungeon_floor
@@ -324,7 +324,7 @@ arch marble
 x 1
 y 12
 end
-arch wwall_2_1_2
+arch wwall_1_3
 x 1
 y 12
 end
@@ -922,7 +922,7 @@ arch marble
 x 3
 y 12
 end
-arch wwall_3_4
+arch wwall_2_1_1
 x 3
 y 12
 end
@@ -1787,7 +1787,7 @@ arch dungeon_floor
 x 6
 y 4
 end
-arch wwall_3_3
+arch wwall_2_2_3
 x 6
 y 4
 end
@@ -2297,7 +2297,7 @@ arch cobblestones2
 x 7
 y 18
 end
-arch wwall_2_1_2
+arch wwall_1_3
 x 7
 y 18
 end
@@ -2928,7 +2928,7 @@ arch cobblestones2
 x 9
 y 18
 end
-arch wwall_3_3
+arch wwall_2_2_2
 x 9
 y 18
 end
@@ -3094,7 +3094,7 @@ arch afloor_right
 x 10
 y 1
 end
-arch wwall_2_1_1
+arch wwall_1_2
 x 10
 y 1
 end
@@ -3119,7 +3119,7 @@ arch afloor_right
 x 10
 y 3
 end
-arch wwall_2_1_1
+arch wwall_1_1
 x 10
 y 3
 end
@@ -3131,7 +3131,7 @@ arch afloor_right
 x 10
 y 4
 end
-arch wwall_3_4
+arch wwall_2_1_1
 x 10
 y 4
 end
@@ -4301,7 +4301,7 @@ arch pstone_1
 x 13
 y 16
 end
-arch wwall_3_2
+arch wwall_2_2_1
 x 13
 y 16
 end
@@ -4326,7 +4326,7 @@ arch pstone_1
 x 13
 y 18
 end
-arch wwall_2_2_4
+arch wwall_1_3
 x 13
 y 18
 end
@@ -5542,7 +5542,7 @@ arch dungeon_magic
 x 16
 y 25
 end
-arch wwall_win2
+arch wwall_1_4
 x 16
 y 25
 end
@@ -5673,7 +5673,7 @@ arch afloor_right
 x 17
 y 1
 end
-arch wwall_2_1_1
+arch wwall_1_2
 x 17
 y 1
 end
@@ -5701,7 +5701,7 @@ arch afloor_right
 x 17
 y 3
 end
-arch wwall_2_1_1
+arch wwall_1_1
 x 17
 y 3
 end
@@ -6473,7 +6473,7 @@ arch woodfloor
 x 19
 y 2
 end
-arch oakdoor
+arch oakdoor_1
 slaying ../city
 hp 2
 sp 14

@@ -8,7 +8,7 @@ enter_x 7
 enter_y 5
 msg
 Created:  1995-09-13 Kundi, Xue (xkd@soda.berkeley.edu)
-Modified: 2008-11-07 Rick Tanner
+Modified: 2008-12-10 Rick Tanner
 endmsg
 end
 arch pstone_1
@@ -36,7 +36,10 @@ end
 arch pstone_1
 y 4
 end
-arch wwall_3_2
+arch swall_1_4_half
+y 4
+end
+arch wwall_2_1_1
 y 4
 end
 arch pstone_1
@@ -191,7 +194,11 @@ arch pstone_1
 x 2
 y 7
 end
-arch wwall_3_1
+arch swall_1_2_half
+x 2
+y 7
+end
+arch wwall_2_1_2
 x 2
 y 7
 end
@@ -332,11 +339,14 @@ end
 arch wwall_2_1_2
 x 5
 end
+arch swall_1_1_half
+x 5
+end
 arch pstone_1
 x 5
 y 1
 end
-arch swall_1_1
+arch swall_2_1_1
 x 5
 y 1
 end
@@ -384,7 +394,11 @@ arch pstone_1
 x 5
 y 7
 end
-arch wwall_3_1
+arch swall_1_2_half
+x 5
+y 7
+end
+arch wwall_2_1_2
 x 5
 y 7
 end
@@ -472,7 +486,7 @@ arch woodfloor
 x 7
 y 5
 end
-arch oakdoor
+arch oakdoor_1
 slaying Butakis0
 hp 2
 sp 33

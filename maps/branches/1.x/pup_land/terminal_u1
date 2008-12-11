@@ -938,6 +938,7 @@ end
 arch tavern
 name raffle1(easy)
 slaying raffle/raffle1
+hp 1
 sp 7
 x 9
 y 8
@@ -1047,6 +1048,7 @@ end
 arch house_small
 name raffle2(middle)
 slaying raffle/raffle2
+hp 1
 sp 7
 x 10
 y 8
@@ -1171,6 +1173,7 @@ end
 arch minihouse
 name raffle3(hard)
 slaying raffle/raffle3
+hp 1
 sp 7
 x 11
 y 8

@@ -7,7 +7,7 @@ height 32
 enter_x 15
 msg
 Created:  2005-10-20 Gene Alexander
-Modified: 2008-11-07 Rick Tanner
+Modified: 2008-12-10 Rick Tanner
 endmsg
 end
 arch magic_banned
@@ -4673,9 +4673,9 @@ end
 arch cobblestones2
 x 14
 end
-arch oakdoor
+arch oakdoor_2
 slaying /world/world_109_125
-hp 25
+hp 26
 sp 46
 x 14
 end
@@ -4995,9 +4995,9 @@ end
 arch cobblestones2
 x 15
 end
-arch oakdoor
+arch oakdoor_2
 slaying /world/world_109_125
-hp 25
+hp 26
 sp 46
 x 15
 end
@@ -5342,7 +5342,7 @@ end
 arch cobblestones2
 x 16
 end
-arch oakdoor
+arch oakdoor_2
 slaying /world/world_109_125
 hp 26
 sp 46
@@ -5689,7 +5689,7 @@ end
 arch cobblestones2
 x 17
 end
-arch oakdoor
+arch oakdoor_2
 slaying /world/world_109_125
 hp 26
 sp 46

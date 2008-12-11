@@ -8,7 +8,7 @@ enter_x 8
 enter_y 10
 msg
 Created:  1996-02-12
-Modified: 2008-11-11 Rick Tanner
+Modified: 2008-12-10 Rick Tanner
 endmsg
 end
 arch blocked
@@ -1881,13 +1881,12 @@ arch pstone_1
 x 12
 y 12
 end
-arch oakdoor
+arch invis_exit
 slaying secret
 hp 11
 sp 11
 x 12
 y 12
-invisible 1
 end
 arch grass
 x 12

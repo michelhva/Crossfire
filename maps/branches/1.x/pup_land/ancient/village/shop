@@ -11,7 +11,7 @@ enter_x 7
 enter_y 8
 msg
 Created:  1996-02-21
-Modified: 2008-11-12 Rick Tanner
+Modified: 2008-12-10 Rick Tanner
 endmsg
 end
 arch blocked
@@ -132,6 +132,10 @@ arch wwall_2_2_4
 x 2
 y 3
 end
+arch swall_1_4_half
+x 2
+y 3
+end
 arch afloor_right
 x 2
 y 4
@@ -190,7 +194,7 @@ arch dungeon_magic
 x 3
 y 3
 end
-arch swall_1_4
+arch swall_2_1_2
 x 3
 y 3
 end
@@ -388,7 +392,7 @@ arch afloor_right
 x 6
 y 9
 end
-arch wwall_2_1_2
+arch wwall_1_3
 x 6
 y 9
 end
@@ -468,18 +472,14 @@ arch afloor_right
 x 7
 y 8
 end
-arch oakdoor
-slaying village
-hp 20
-sp 8
-x 7
-y 8
-end
 arch afloor_right
 x 7
 y 9
 end
-arch wwall_2_1_2
+arch oakdoor_2
+slaying village
+hp 20
+sp 8
 x 7
 y 9
 end
@@ -533,7 +533,7 @@ arch afloor_right
 x 8
 y 9
 end
-arch wwall_2_1_2
+arch wwall_1_4
 x 8
 y 9
 end
@@ -675,7 +675,7 @@ arch dungeon_magic
 x 11
 y 3
 end
-arch swall_1_3
+arch swall_2_1_2
 x 11
 y 3
 end
@@ -735,6 +735,10 @@ x 12
 y 3
 end
 arch wwall_2_2_1
+x 12
+y 3
+end
+arch swall_1_3_half
 x 12
 y 3
 end
@@ -868,6 +872,10 @@ arch wwall_2_2_4
 x 14
 y 3
 end
+arch swall_1_4_half
+x 14
+y 3
+end
 arch afloor_right
 x 14
 y 4
@@ -926,7 +934,7 @@ arch dungeon_magic
 x 15
 y 3
 end
-arch swall_1_4
+arch swall_2_1_2
 x 15
 y 3
 end
@@ -1167,11 +1175,15 @@ arch dungeon_magic
 x 18
 y 8
 end
-arch swall_1_2
+arch swall_2_1_1
 x 18
 y 8
 end
 arch afloor_right
+x 18
+y 9
+end
+arch swall_1_2_half
 x 18
 y 9
 end
@@ -1421,7 +1433,7 @@ arch dungeon_magic
 x 23
 y 3
 end
-arch swall_1_3
+arch swall_2_1_2
 x 23
 y 3
 end
@@ -1480,6 +1492,10 @@ x 24
 y 3
 end
 arch wwall_2_2_1
+x 24
+y 3
+end
+arch swall_1_3_half
 x 24
 y 3
 end

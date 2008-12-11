@@ -4,10 +4,11 @@ difficulty 15
 region nurnberg
 width 29
 height 22
-enter_y 13
+enter_x 1
+enter_y 14
 msg
 Created:  1996-02-10
-Modified: 2008-11-11 Rick Tanner
+Modified: 2008-12-10 Rick Tanner
 endmsg
 end
 arch woodfloor
@@ -95,7 +96,7 @@ end
 arch woodfloor
 y 14
 end
-arch oakdoor
+arch oakdoor_1
 slaying ../city
 hp 4
 sp 11

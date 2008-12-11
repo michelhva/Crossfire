@@ -8,7 +8,7 @@ enter_x 4
 enter_y 11
 msg
 Created:  2004-02-21 Avion
-Modified: 2008-11-17 Rick Tanner
+Modified: 2008-12-10 Rick Tanner
 endmsg
 end
 arch woodfloor2
@@ -363,9 +363,8 @@ y 11
 no_magic 1
 damned 1
 end
-arch oakdoor
+arch oakdoor_2
 slaying /world/world_122_117
-face odoor_2.111
 hp 0
 sp 7
 x 4

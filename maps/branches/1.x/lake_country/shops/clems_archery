@@ -12,7 +12,7 @@ enter_x 7
 enter_y 4
 msg
 Created:  1995-02-23
-Modified: 2008-11-07 Rick Tanner
+Modified: 2008-12-10 Rick Tanner
 endmsg
 end
 arch shop_empty
@@ -719,7 +719,7 @@ arch woodfloor
 x 7
 y 4
 end
-arch oakdoor
+arch exit
 name back to the countryside
 slaying /world/world_109_126
 hp 17

@@ -8,10 +8,10 @@ shopmax 1500
 width 15
 height 16
 enter_x 7
-enter_y 15
+enter_y 14
 msg
 Created:  1996-01-25
-Modified: 2008-11-18 Rick Tanner
+Modified: 2008-12-10 Rick Tanner
 endmsg
 end
 arch shop_empty
@@ -719,7 +719,7 @@ arch cobblestones2
 x 7
 y 15
 end
-arch oakdoor
+arch oakdoor_2
 slaying town
 hp 10
 sp 10

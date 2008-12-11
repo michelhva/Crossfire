@@ -5,9 +5,10 @@ region ancientpupland
 width 19
 height 16
 enter_x 7
+enter_y 1
 msg
 Created:  1996-05-07
-Modified: 2008-11-18 Rick Tanner
+Modified: 2008-12-10 Rick Tanner
 endmsg
 end
 arch pstone_1
@@ -654,7 +655,7 @@ end
 arch pstone_1
 x 7
 end
-arch oakdoor
+arch oakdoor_2
 slaying village
 hp 14
 sp 6

@@ -8,7 +8,7 @@ enter_x 3
 enter_y 10
 msg
 Created:  1999-02-03 King Zoobus
-Modified: 2008-11-07 Rick Tanner
+Modified: 2008-12-10 Rick Tanner
 endmsg
 end
 arch cobblestones2
@@ -213,7 +213,7 @@ arch cobblestones2
 x 2
 y 10
 end
-arch dwall_2_1_2
+arch dwall_1_3
 x 2
 y 10
 end
@@ -350,7 +350,7 @@ arch cobblestones2
 x 3
 y 10
 end
-arch oakdoor
+arch oakdoor_2
 slaying /world/world_120_109
 hp 44
 sp 43
@@ -450,7 +450,7 @@ arch cobblestones2
 x 4
 y 10
 end
-arch dwall_2_1_2
+arch dwall_1_4
 x 4
 y 10
 end
