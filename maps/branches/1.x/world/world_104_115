@@ -9,7 +9,7 @@ enter_x 1
 enter_y 1
 msg
 Created:  2001-02-16
-Modified: 2008-11-22 Rick Tanner
+Modified: 2008-12-10 Rick Tanner
 endmsg
 outdoor 1
 tile_path_1 world_104_114
@@ -12851,7 +12851,7 @@ end
 arch store_weapons
 name Weapon Shop
 slaying /scorn/shops/weaponshop
-hp 1
+hp 2
 sp 14
 x 44
 y 31
@@ -14396,7 +14396,7 @@ arch barn
 name Training Center
 slaying /scorn/crow/train/train
 hp 4
-sp 17
+sp 18
 x 48
 y 24
 end

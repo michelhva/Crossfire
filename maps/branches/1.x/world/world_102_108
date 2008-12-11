@@ -9,7 +9,7 @@ enter_x 1
 enter_y 1
 msg
 Created:  2002-02-19
-Modified: 2008-11-16 Rick Tanner
+Modified: 2008-12-10 Rick Tanner
 endmsg
 outdoor 1
 tile_path_1 world_102_107
@@ -4307,7 +4307,7 @@ end
 arch store_armour
 name Hanz und Franz Panzer
 slaying /santo_dominion/shops/armour
-hp 1
+hp 2
 sp 14
 x 18
 y 5
@@ -5147,7 +5147,7 @@ arch store_general
 name Eliks General Store
 slaying /santo_dominion/shops/eliks
 hp 1
-sp 1
+sp 2
 x 21
 y 12
 end
@@ -6147,7 +6147,7 @@ arch store_weapons
 name Erash Sharp Blades
 slaying /santo_dominion/shops/erash
 hp 10
-sp 1
+sp 2
 x 25
 y 16
 end
@@ -6171,7 +6171,7 @@ arch store_magic
 name Nosferatu - Specialist
 slaying /santo_dominion/shops/nosferatu
 hp 1
-sp 14
+sp 15
 x 25
 y 20
 end
@@ -8592,7 +8592,7 @@ arch barn
 name North Barn
 slaying /santo_dominion/north_barn
 hp 1
-sp 1
+sp 2
 x 35
 y 13
 end
@@ -9413,7 +9413,7 @@ arch barn
 name South Barn
 slaying /santo_dominion/south_barn
 hp 1
-sp 1
+sp 2
 x 38
 y 21
 end

@@ -5,7 +5,7 @@ region euthville
 width 50
 height 50
 msg
-Modified: 2008-11-16 Rick Tanner
+Modified: 2008-12-10 Rick Tanner
 endmsg
 outdoor 1
 tile_path_1 world_105_112
@@ -1912,7 +1912,7 @@ end
 arch store_magic
 name Euthville Magic Shop
 slaying /euthville/magic.shop
-hp 1
+hp 2
 sp 1
 x 7
 y 11
