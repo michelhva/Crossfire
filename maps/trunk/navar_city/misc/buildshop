@@ -6,13 +6,14 @@ shopitems building material:95;item builder:95;*:-100
 shopgreed 1.00000
 shopmin 500
 shopmax 20000
+shoprace human
 width 23
 height 13
 enter_x 6
 enter_y 11
 msg
 Created:  2004-01-25 Ryo Saeba
-Modified: 2008-12-02 Rick Tanner
+Modified: 2008-12-10 Rick Tanner
 endmsg
 end
 arch tile_white_floor
