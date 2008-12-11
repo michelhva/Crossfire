@@ -2185,6 +2185,13 @@ y 10
 end
 arch oakdoor_2
 slaying pshops_main
+msg
+REMEMBER:
+If you do not login to your account for
+6 months or more your shop will be
+RESOLD and all items inside LOST.
+--management
+endmsg
 hp 2
 sp 2
 x 15
