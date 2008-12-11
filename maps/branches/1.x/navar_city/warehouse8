@@ -7,7 +7,7 @@ height 21
 enter_y 1
 msg
 Created:  1993-11-15
-Modified: 2008-12-10 Rick Tanner
+Modified: 2008-12-11 Rick Tanner
 endmsg
 end
 arch woodfloor
@@ -17,13 +17,10 @@ end
 arch woodfloor
 y 1
 end
-arch invis_exit
+arch oakdoor_1
 slaying /world/world_122_116
 hp 17
 sp 49
-y 1
-end
-arch door_1
 y 1
 end
 arch woodfloor
