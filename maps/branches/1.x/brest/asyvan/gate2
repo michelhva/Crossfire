@@ -8,7 +8,7 @@ enter_x 11
 enter_y 10
 msg
 Created:  1994-09-20
-Modified: 2008-11-05 Rick Tanner
+Modified: 2008-12-10 Rick Tanner
 endmsg
 end
 arch woodfloor
@@ -1628,7 +1628,7 @@ arch woodfloor
 x 11
 y 10
 end
-arch oakdoor
+arch exit
 slaying palace2
 hp 1
 sp 8

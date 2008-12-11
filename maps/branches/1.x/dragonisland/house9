@@ -8,7 +8,7 @@ enter_x 1
 enter_y 4
 msg
 Created:  1997-09-12
-Modified: 2008-11-07 Rick Tanner
+Modified: 2008-12-10 Rick Tanner
 endmsg
 end
 arch marble
@@ -42,7 +42,7 @@ end
 arch marble
 y 5
 end
-arch wall_2_2_1
+arch wall_1_2
 y 5
 end
 arch marble
@@ -75,18 +75,14 @@ arch marble
 x 1
 y 4
 end
-arch oakdoor
-slaying /world/world_103_127
-hp 6
-sp 19
-x 1
-y 4
-end
 arch marble
 x 1
 y 5
 end
-arch wall_2_1_2
+arch oakdoor_2
+slaying /world/world_103_127
+hp 6
+sp 19
 x 1
 y 5
 end
@@ -120,7 +116,7 @@ arch marble
 x 2
 y 5
 end
-arch wall_2_1_2
+arch wall_1_4
 x 2
 y 5
 end
