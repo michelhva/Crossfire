@@ -8,7 +8,7 @@ enter_x 8
 enter_y 14
 msg
 Created:  1997-06-19
-Modified: 2008-11-18 Rick Tanner
+Modified: 2008-12-10 Rick Tanner
 endmsg
 end
 arch woodfloor
@@ -952,7 +952,7 @@ arch woodfloor
 x 8
 y 15
 end
-arch oakdoor
+arch oakdoor_2
 slaying /world/world_105_116
 hp 1
 sp 4

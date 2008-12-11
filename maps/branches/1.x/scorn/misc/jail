@@ -8,7 +8,7 @@ height 15
 enter_y 7
 msg
 Created:  2001-02-17
-Modified: 2008-11-14 Rick Tanner
+Modified: 2008-12-10 Rick Tanner
 endmsg
 end
 arch dungeon_magic
@@ -71,7 +71,7 @@ end
 arch flagstone
 y 6
 end
-arch oakdoor
+arch oakdoor_1
 slaying /world/world_105_115
 hp 6
 sp 43
@@ -83,7 +83,7 @@ end
 arch flagstone
 y 7
 end
-arch oakdoor
+arch oakdoor_1
 slaying /world/world_105_115
 hp 6
 sp 43
@@ -95,7 +95,7 @@ end
 arch flagstone
 y 8
 end
-arch oakdoor
+arch oakdoor_1
 slaying /world/world_105_115
 hp 6
 sp 43

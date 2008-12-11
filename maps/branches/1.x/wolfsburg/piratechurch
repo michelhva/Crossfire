@@ -7,7 +7,7 @@ height 17
 enter_x 5
 enter_y 16
 msg
-Modified: 2008-11-16 Rick Tanner
+Modified: 2008-12-10 Rick Tanner
 endmsg
 end
 arch woodfloor
@@ -499,7 +499,7 @@ arch woodfloor
 x 4
 y 16
 end
-arch wwall_3_1
+arch wwall_2_2_4
 x 4
 y 16
 end
@@ -609,7 +609,7 @@ arch woodfloor
 x 5
 y 16
 end
-arch oakdoor
+arch oakdoor_2
 slaying /world/world_128_109
 hp 43
 sp 3
@@ -698,7 +698,7 @@ arch woodfloor
 x 6
 y 16
 end
-arch wwall_3_1
+arch wwall_2_2_1
 x 6
 y 16
 end

@@ -9,7 +9,7 @@ enter_x 6
 enter_y 14
 msg
 Created:  2002-02-28
-Modified: 2008-11-17 Rick Tanner
+Modified: 2008-12-10 Rick Tanner
 endmsg
 end
 arch grass
@@ -770,7 +770,7 @@ arch woodfloor2
 x 6
 y 14
 end
-arch oakdoor
+arch oakdoor_2
 slaying /world/world_105_115
 hp 12
 sp 39

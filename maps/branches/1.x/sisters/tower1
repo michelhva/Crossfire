@@ -9,7 +9,7 @@ enter_x 7
 enter_y 15
 msg
 Created:  1994-12-18 bt (thomas@nomad.astro.psu.edu)
-Modified: 2008-11-14 Rick Tanner
+Modified: 2008-12-10 Rick Tanner
 endmsg
 end
 arch sea
@@ -255,7 +255,7 @@ arch flagstone
 x 2
 y 5
 end
-arch awall_2_2_3
+arch awall_1_3
 x 2
 y 5
 end
@@ -273,7 +273,7 @@ arch flagstone
 x 2
 y 7
 end
-arch awall_2_2_4
+arch awall_1_3
 x 2
 y 7
 end
@@ -281,7 +281,7 @@ arch flagstone
 x 2
 y 8
 end
-arch awall_2_2_3
+arch awall_1_3
 x 2
 y 8
 end
@@ -299,7 +299,7 @@ arch flagstone
 x 2
 y 10
 end
-arch awall_2_2_4
+arch awall_1_3
 x 2
 y 10
 end
@@ -476,7 +476,7 @@ arch flagstone
 x 4
 y 13
 end
-arch awall_2_2_2
+arch awall_1_1
 x 4
 y 13
 end
@@ -514,7 +514,7 @@ arch flagstone
 x 5
 y 2
 end
-arch awall_2_2_1
+arch awall_1_2
 x 5
 y 2
 end
@@ -690,7 +690,7 @@ arch flagstone
 x 6
 y 13
 end
-arch awall_2_2_3
+arch awall_1_1
 x 6
 y 13
 end
@@ -706,7 +706,7 @@ arch flagstone
 x 6
 y 15
 end
-arch awall_3_1
+arch awall_2_2_4
 x 6
 y 15
 end
@@ -728,7 +728,7 @@ arch flagstone
 x 7
 y 2
 end
-arch awall_2_2_4
+arch awall_1_2
 x 7
 y 2
 end
@@ -804,7 +804,7 @@ arch flagstone
 x 7
 y 15
 end
-arch oakdoor
+arch oakdoor_2
 slaying /sisters/entrance
 hp 5
 sp 15
@@ -829,7 +829,7 @@ arch flagstone
 x 8
 y 2
 end
-arch awall_2_2_1
+arch awall_1_2
 x 8
 y 2
 end
@@ -909,7 +909,7 @@ arch flagstone
 x 8
 y 15
 end
-arch oakdoor
+arch oakdoor_2
 slaying /sisters/entrance
 hp 5
 sp 15
@@ -1016,7 +1016,7 @@ arch flagstone
 x 9
 y 13
 end
-arch awall_2_2_2
+arch awall_1_1
 x 9
 y 13
 end
@@ -1032,7 +1032,7 @@ arch flagstone
 x 9
 y 15
 end
-arch awall_3_1
+arch awall_2_2_1
 x 9
 y 15
 end
@@ -1054,7 +1054,7 @@ arch flagstone
 x 10
 y 2
 end
-arch awall_2_2_4
+arch awall_1_2
 x 10
 y 2
 end
@@ -1199,7 +1199,7 @@ arch flagstone
 x 11
 y 13
 end
-arch awall_2_2_3
+arch awall_1_1
 x 11
 y 13
 end
@@ -1333,7 +1333,7 @@ arch flagstone
 x 13
 y 5
 end
-arch awall_2_2_2
+arch awall_1_4
 x 13
 y 5
 end
@@ -1351,7 +1351,7 @@ arch flagstone
 x 13
 y 7
 end
-arch awall_2_2_1
+arch awall_1_4
 x 13
 y 7
 end
@@ -1359,7 +1359,7 @@ arch flagstone
 x 13
 y 8
 end
-arch awall_2_2_2
+arch awall_1_4
 x 13
 y 8
 end
@@ -1377,7 +1377,7 @@ arch flagstone
 x 13
 y 10
 end
-arch awall_2_2_1
+arch awall_1_4
 x 13
 y 10
 end

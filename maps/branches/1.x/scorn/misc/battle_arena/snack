@@ -12,7 +12,7 @@ enter_x 10
 enter_y 5
 msg
 Created:  2000-02-28
-Modified: 2008-10-25 Rick TannerModified: 2008-11-14 Rick Tanner
+Modified: 2008-12-10 Rick Tanner
 endmsg
 end
 arch flagstone
@@ -239,6 +239,9 @@ end
 arch cwall_1_3
 x 4
 end
+arch swall_1_1_half
+x 4
+end
 arch dungeon_magic
 x 4
 y 1
@@ -247,7 +250,7 @@ arch flagstone
 x 4
 y 1
 end
-arch swall_1_1
+arch swall_2_1_1
 x 4
 y 1
 end
@@ -343,11 +346,15 @@ arch flagstone
 x 4
 y 9
 end
-arch swall_1_2
+arch swall_2_1_1
 x 4
 y 9
 end
 arch flagstone
+x 4
+y 10
+end
+arch swall_1_2_half
 x 4
 y 10
 end
@@ -358,7 +365,7 @@ end
 arch flagstone
 x 5
 end
-arch oakdoor
+arch oakdoor_2
 slaying arena
 hp 1
 sp 31
@@ -779,7 +786,7 @@ arch flagstone
 x 10
 y 5
 end
-arch oakdoor
+arch oakdoor_1
 slaying arena
 hp 3
 sp 33

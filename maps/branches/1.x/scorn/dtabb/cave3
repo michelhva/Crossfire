@@ -8,7 +8,7 @@ enter_x 19
 enter_y 3
 msg
 Created:  1994-02-19
-Modified: 2008-11-14 Rick Tanner
+Modified: 2008-12-10 Rick Tanner
 endmsg
 end
 arch dirtfloor
@@ -2417,7 +2417,7 @@ arch dirtfloor
 x 19
 y 3
 end
-arch oakdoor
+arch oakdoor_1
 slaying /world/world_105_116
 hp 9
 sp 21

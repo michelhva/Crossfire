@@ -8,17 +8,22 @@ enter_x 1
 enter_y 1
 msg
 Created:  1994-02-15
-Modified: 2008-11-16 Rick Tanner
+Modified: 2008-12-10 Rick Tanner
 endmsg
 end
 arch dungeon_floor
 end
-arch dun11
+arch dungeon_floor
+end
+arch dun6
 end
 arch dungeon_floor
 y 1
 end
-arch dun3
+arch oakdoor_1
+slaying church.4a
+hp 34
+sp 1
 y 1
 end
 arch dungeon_floor
@@ -81,16 +86,46 @@ end
 arch dun3
 y 14
 end
-arch dun3
+arch dungeon_magic
 y 15
 end
-arch dun3
+arch dungeon_floor
+y 15
+end
+arch dun5
+y 15
+end
+arch dungeon_magic
 y 16
 end
-arch dun3
+arch dungeon_floor
+y 16
+end
+arch oakdoor_1
+slaying church.4a
+hp 33
+sp 16
+y 16
+end
+arch dungeon_magic
 y 17
 end
-arch dun3
+arch dungeon_floor
+y 17
+end
+arch oakdoor_1
+slaying church.4a
+hp 33
+sp 17
+y 17
+end
+arch dungeon_magic
+y 18
+end
+arch dungeon_floor
+y 18
+end
+arch dun8
 y 18
 end
 arch dun3
@@ -127,13 +162,6 @@ arch dun2
 x 1
 end
 arch dungeon_floor
-x 1
-y 1
-end
-arch oakdoor
-slaying church.4a
-hp 34
-sp 1
 x 1
 y 1
 end
@@ -241,25 +269,11 @@ arch dungeon_floor
 x 1
 y 16
 end
-arch oakdoor
-slaying church.4a
-hp 33
-sp 16
-x 1
-y 16
-end
 arch dungeon_magic
 x 1
 y 17
 end
 arch dungeon_floor
-x 1
-y 17
-end
-arch oakdoor
-slaying church.4a
-hp 33
-sp 17
 x 1
 y 17
 end
@@ -5562,7 +5576,11 @@ arch dungeon_floor
 x 26
 y 29
 end
-arch dun13
+arch dungeon_floor
+x 26
+y 29
+end
+arch dun12
 x 26
 y 29
 end
@@ -5684,18 +5702,14 @@ arch dungeon_floor
 x 27
 y 28
 end
-arch oakdoor
-slaying church.4d
-hp 60
-sp 12
-x 27
-y 28
-end
 arch dungeon_floor
 x 27
 y 29
 end
-arch dun2
+arch oakdoor_2
+slaying church.4d
+hp 60
+sp 12
 x 27
 y 29
 end
@@ -5817,18 +5831,14 @@ arch dungeon_floor
 x 28
 y 28
 end
-arch oakdoor
-slaying church.4d
-hp 61
-sp 12
-x 28
-y 28
-end
 arch dungeon_floor
 x 28
 y 29
 end
-arch dun2
+arch oakdoor_2
+slaying church.4d
+hp 61
+sp 12
 x 28
 y 29
 end
@@ -6066,7 +6076,15 @@ arch dungeon_floor
 x 29
 y 29
 end
-arch dun2
+arch dungeon_magic
+x 29
+y 29
+end
+arch dungeon_floor
+x 29
+y 29
+end
+arch dun5
 x 29
 y 29
 end
