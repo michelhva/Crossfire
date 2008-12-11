@@ -1,3 +1,74 @@
+2008-12-11 08:06  rjtanner
+
+	* navar_city/magara/houses/kaisas_place, navar_city/warehouse8: Fix
+	  oakdoor so that it uses the correct archetype (vs the one that
+	  can be destroyed)
+
+2008-12-11 06:50  rjtanner
+
+	* brest/pshops/pshop1/gfloor, brest/pshops/pshop10/gfloor,
+	  brest/pshops/pshop11/gfloor, brest/pshops/pshop12/gfloor,
+	  brest/pshops/pshop13/gfloor, brest/pshops/pshop14/gfloor,
+	  brest/pshops/pshop15/gfloor, brest/pshops/pshop16/gfloor,
+	  brest/pshops/pshop17/gfloor, brest/pshops/pshop18/gfloor,
+	  brest/pshops/pshop19/gfloor, brest/pshops/pshop2/gfloor,
+	  brest/pshops/pshop20/gfloor, brest/pshops/pshop21/gfloor,
+	  brest/pshops/pshop22/gfloor, brest/pshops/pshop23/gfloor,
+	  brest/pshops/pshop24/gfloor, brest/pshops/pshop25/gfloor,
+	  brest/pshops/pshop26/gfloor, brest/pshops/pshop27/gfloor,
+	  brest/pshops/pshop3/gfloor, brest/pshops/pshop4/gfloor,
+	  brest/pshops/pshop5/gfloor, brest/pshops/pshop6/gfloor,
+	  brest/pshops/pshop7/gfloor, brest/pshops/pshop8/gfloor,
+	  brest/pshops/pshop9/gfloor, brest/pshops/pshopsinc: Updated the
+	  last modified time stamp that was missed in earlier commit,
+	  r10906
+
+2008-12-11 06:35  rjtanner
+
+	* lake_country/shops/Mopoon_wshop,
+	  pup_land/lone_town/shops/transport.shoppe,
+	  quests/greyshield/Greysword, quests/peterm/temple/OuterTemple,
+	  santo_dominion/houses/house1: Restore message text to exits
+
+2008-12-11 06:32  rjtanner
+
+	* navar_city/misc/buildshop, navar_city/misc/city1armour,
+	  navar_city/misc/city1weapon: Restore shoprace information to shop
+	  headers
+
+2008-12-11 01:57  rjtanner
+
+	* brest/pshops/pshop1/gfloor, brest/pshops/pshop10/gfloor,
+	  brest/pshops/pshop11/gfloor, brest/pshops/pshop12/gfloor,
+	  brest/pshops/pshop13/gfloor, brest/pshops/pshop14/gfloor,
+	  brest/pshops/pshop15/gfloor, brest/pshops/pshop16/gfloor,
+	  brest/pshops/pshop17/gfloor, brest/pshops/pshop18/gfloor,
+	  brest/pshops/pshop19/gfloor, brest/pshops/pshop2/gfloor,
+	  brest/pshops/pshop20/gfloor, brest/pshops/pshop21/gfloor,
+	  brest/pshops/pshop22/gfloor, brest/pshops/pshop23/gfloor,
+	  brest/pshops/pshop24/gfloor, brest/pshops/pshop25/gfloor,
+	  brest/pshops/pshop26/gfloor, brest/pshops/pshop27/gfloor,
+	  brest/pshops/pshop3/gfloor, brest/pshops/pshop4/gfloor,
+	  brest/pshops/pshop5/gfloor, brest/pshops/pshop6/gfloor,
+	  brest/pshops/pshop7/gfloor, brest/pshops/pshop8/gfloor,
+	  brest/pshops/pshop9/gfloor, brest/pshops/pshopsinc,
+	  brest/shops/buildshop: Restore magic_mouth messages that were
+	  accidentally removed in an earlier commit
+
+2008-12-10 06:24  rjtanner
+
+	* brest/temples/valkyrie: Set the consecrate level for the altar to
+	  level 120
+
+2008-12-08 06:16  rjtanner
+
+	* brest/temples, brest/temples/valkyrie, world/world_107_123: New
+	  map in Brest - Shrine of Valkyrie
+
+2008-12-07 08:45  rjtanner
+
+	* ChangeLog: Updated ChangeLog file using svn2cl
+
 2008-12-07 08:31  rjtanner
 
 	* brest/asyvan/palace2, brest/asyvan/palace3: Correct teleporter
