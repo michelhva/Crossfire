@@ -1,3 +1,209 @@
+2008-12-11 08:12  rjtanner
+
+	* scorn/shops/foodshop: Correct paste mistake in map header for
+	  last modified timestamp
+
+2008-12-11 08:04  rjtanner
+
+	* navar_city/magara/houses/kaisas_place, navar_city/warehouse8: Fix
+	  oakdoor so that it uses the correct archetype (vs the one that
+	  can be destroyed)
+
+2008-12-11 07:53  rjtanner
+
+	* brest/shops/buildshop, brest/sport.jess, brest/underground:
+	  Correct paste mistake in map header for last modified timestamp
+
+2008-12-11 07:51  rjtanner
+
+	* scorn/crow/train/train, scorn/dtabb/cave3, scorn/houses/bowyer,
+	  scorn/houses/house3.1st, scorn/houses/jeweler,
+	  scorn/houses/kitchen, scorn/houses/maze1, scorn/houses/smithery,
+	  scorn/houses/tannery, scorn/houses/wizardw, scorn/kar/somehouse,
+	  scorn/magara/porter_house, scorn/mansion/entrance,
+	  scorn/misc/battle_arena/first-aide,
+	  scorn/misc/battle_arena/snack, scorn/misc/beginners2,
+	  scorn/misc/dragon_guild, scorn/misc/jail, scorn/misc/map.esben.2,
+	  scorn/misc/zoo, scorn/misc/zoo2, scorn/shops/BasicSpells,
+	  scorn/shops/armourshop, scorn/shops/bowshop,
+	  scorn/shops/buildshop, scorn/shops/foodshop, scorn/shops/gemshop,
+	  scorn/shops/generalshop, scorn/shops/light_shop,
+	  scorn/shops/magicshop, scorn/shops/potionshop,
+	  scorn/shops/scorn.sale1, scorn/shops/weaponshop,
+	  scorn/taverns/goths, sisters/tower1, sisters/tower2,
+	  wolfsburg/apartments/wolfsburg.apartment,
+	  wolfsburg/dungeons/church.4a, wolfsburg/dungeons/church.4b,
+	  wolfsburg/dungeons/church.4c, wolfsburg/dungeons/church.4d,
+	  wolfsburg/dungeons/hut, wolfsburg/dungeons/stronghold,
+	  wolfsburg/etern_rew, wolfsburg/inns,
+	  wolfsburg/magara/castle/floor_1,
+	  wolfsburg/magara/tower1/entrance,
+	  wolfsburg/magara/tower1/floor_1, wolfsburg/magara/tower2/floor_1,
+	  wolfsburg/piratechurch, wolfsburg/prison,
+	  wolfsburg/shops/transport.shoppe, wolfsburg/ware1: Backport from
+	  Trunk - replace old xpm oakdoor graphic with a different exit
+	  archetype. Requires archetype r10897 or newer.
+
+2008-12-11 07:48  rjtanner
+
+	* world/world_102_108, world/world_104_115, world/world_105_113,
+	  world/world_105_115, world/world_108_123, world/world_116_102,
+	  world/world_116_104, world/world_121_116, world/world_121_117,
+	  world/world_122_116, world/world_122_117, world/world_128_109,
+	  world/world_128_129: Update destination coordinates from world
+	  maps to individual maps
+
+2008-12-11 03:43  rjtanner
+
+	* quests/cd/cd.inn.752, quests/cd/cd.store.753,
+	  quests/greyshield/Cavern, quests/greyshield/Finish,
+	  quests/greyshield/Greysword, quests/mak/MainFloor,
+	  quests/mak/chaos/down1, quests/mak/chaos/down2,
+	  quests/mak/chaos/down3, quests/mak/giant/mainfloor,
+	  quests/peterm/temple/InnerTemple,
+	  quests/peterm/temple/OuterTemple, santo_dominion/eeur/hut.1,
+	  santo_dominion/houses/house1,
+	  santo_dominion/magara/north_lighthouse/floor_1,
+	  santo_dominion/magara/opera,
+	  santo_dominion/magara/south_lighthouse/floor_1,
+	  santo_dominion/map.and.sale, santo_dominion/north_barn,
+	  santo_dominion/north_farm, santo_dominion/peacock,
+	  santo_dominion/sdomino_appartment, santo_dominion/shops/armour,
+	  santo_dominion/shops/eliks, santo_dominion/shops/erash,
+	  santo_dominion/shops/nosferatu, santo_dominion/shops/rings,
+	  santo_dominion/south_barn,
+	  santo_dominion/temple_naive/templenaive.1, santo_dominion/tobias,
+	  santo_dominion/tollpost: Backport from Trunk - replace old xpm
+	  oakdoor graphic with a different exit archetype. Requires
+	  archetype r10897 or newer.
+
+2008-12-11 03:25  rjtanner
+
+	* lake_country/Butakis/B_gshop, lake_country/Butakis/B_wshop,
+	  lake_country/Butakis/Butakis0, lake_country/Butakis/Rlib1,
+	  lake_country/Butakis/alchemist, lake_country/Butakis/arena,
+	  lake_country/Butakis/blacksmith, lake_country/Butakis/prison1,
+	  lake_country/Butakis/prison_e, lake_country/Butakis/prison_n,
+	  lake_country/Butakis/prison_s, lake_country/Butakis/prison_w,
+	  lake_country/Mwizard/MwizardG, lake_country/RETower/tower0,
+	  lake_country/Sunset_Lake/inn, lake_country/dragon_hangar/hangar,
+	  lake_country/shops/Mopoon_wshop, lake_country/shops/Olds_jewel,
+	  lake_country/shops/clems_archery,
+	  lake_country/shops/klondors_wands,
+	  lake_country/small_buildings/LC_inn1,
+	  lake_country/small_buildings/hut_Galmorus,
+	  lake_country/small_buildings/portal, marksel/church,
+	  marksel/keep, marksel/shop, marksel/wizard,
+	  navar_city/apartments/apartment, navar_city/city1church1,
+	  navar_city/dragon_hangar/hangar, navar_city/illusion/illtow3,
+	  navar_city/jail/jail, navar_city/light/light1,
+	  navar_city/magara/houses/earth_house,
+	  navar_city/magara/houses/family_house,
+	  navar_city/magara/houses/kaisas_place,
+	  navar_city/magara/houses/large_house,
+	  navar_city/magara/houses/museum, navar_city/misc/bowyer,
+	  navar_city/misc/buildshop, navar_city/misc/city1armour,
+	  navar_city/misc/city1gen, navar_city/misc/city1magic,
+	  navar_city/misc/city1mermaid, navar_city/misc/city1smith,
+	  navar_city/misc/city1weapon, navar_city/misc/dragon_guild,
+	  navar_city/misc/jeweler, navar_city/misc/kitchen,
+	  navar_city/misc/midane, navar_city/misc/tannery,
+	  navar_city/misc/thamshop, navar_city/mouse_house,
+	  navar_city/slums/Iggys_house, navar_city/warehouse1,
+	  navar_city/warehouse2, navar_city/warehouse3,
+	  navar_city/warehouse4, navar_city/warehouse5,
+	  navar_city/warehouse6, navar_city/warehouse7,
+	  navar_city/warehouse8, port_joseph/town/dshark,
+	  port_joseph/town/generalstore, pup_land/ancient/ruin/house1,
+	  pup_land/ancient/ruin/house2, pup_land/ancient/ruin/house3,
+	  pup_land/ancient/ruin/house4, pup_land/ancient/ruin/house5,
+	  pup_land/ancient/ruin/shop, pup_land/ancient/ruin/village,
+	  pup_land/ancient/village/library, pup_land/ancient/village/shop,
+	  pup_land/ancient/village/tavern,
+	  pup_land/ancient/village/tavern1,
+	  pup_land/ancient/village/village, pup_land/hall2, pup_land/hq_ud,
+	  pup_land/lone_town/bank, pup_land/lone_town/cordish,
+	  pup_land/lone_town/dragonhangar/hangar,
+	  pup_land/lone_town/dress1, pup_land/lone_town/gemshop,
+	  pup_land/lone_town/gshop, pup_land/lone_town/inn,
+	  pup_land/lone_town/magic, pup_land/lone_town/mshop,
+	  pup_land/lone_town/shops/transport.shoppe,
+	  pup_land/lone_town/tavern, pup_land/lone_town/town,
+	  pup_land/lone_town/training, pup_land/nurnberg/apartment/main,
+	  pup_land/nurnberg/city, pup_land/nurnberg/dick/bomb,
+	  pup_land/nurnberg/dick/bomb1, pup_land/nurnberg/dick/click,
+	  pup_land/nurnberg/dick/heaven, pup_land/nurnberg/dick/hell,
+	  pup_land/nurnberg/dick/showinv,
+	  pup_land/nurnberg/dragonhangar/hangar, pup_land/nurnberg/hq,
+	  pup_land/nurnberg/storehouse, pup_land/port_e,
+	  pup_land/port_e_house, pup_land/pplant/pplant1,
+	  pup_land/raffle/raffle1, pup_land/raffle/raffle2,
+	  pup_land/raffle/raffle3, pup_land/s_f/st1, pup_land/s_f/st3,
+	  pup_land/terminal_u1, pup_land/world: Backport from Trunk -
+	  replace old xpm oakdoor graphic with a different exit archetype.
+	  Requires r10897 or newer.
+
+2008-12-11 02:29  rjtanner
+
+	* brest/asyvan/gate1, brest/asyvan/gate2, brest/asyvan/gate3,
+	  brest/asyvan/gate4, brest/asyvan/gate5, brest/asyvan/gate6,
+	  brest/asyvan/gate7, brest/asyvan/gate8, brest/asyvan/gate9,
+	  darcap/darcap/apartment, darcap/darcap/circus/wurfbude,
+	  darcap/darcap/gshop, darcap/darcap/maze, darcap/darcap/pirates.1,
+	  darcap/darcap/potionshop, darcap/darcap/shop_a,
+	  darcap/darcap/shop_g, darcap/darcap/shop_m, darcap/darcap/shop_w,
+	  darcap/darcap/tavern, darcap/house1, darcap/lynn/castle1.0,
+	  darcap/lynn/castle1.1, darcap/lynn/castle1.2,
+	  darcap/raffle/raffle1, dragonisland/advguild,
+	  dragonisland/advshop0, dragonisland/apartment3,
+	  dragonisland/drowmansion, dragonisland/hangar,
+	  dragonisland/house6, dragonisland/house7, dragonisland/house8,
+	  dragonisland/house9, dragonisland/tavern, dungeons/castle_aaaarg,
+	  dungeons/hut/ancient_hut, dungeons/xyzzy-mines,
+	  euthville/devil.church1, euthville/magic.shop: Backport from
+	  Trunk - replace old xpm oakdoor graphic with a different exit
+	  archetype. Requires r10897 or newer.
+
+2008-12-11 01:59  rjtanner
+
+	* brest/Castle/AcidChamber, brest/Castle/DragonRoom,
+	  brest/Castle/Finale, brest/Castle/LargeRoom, brest/Castle/castle,
+	  brest/amphis, brest/brest.trademarket,
+	  brest/brittany/dol-guldur.3, brest/brittany/dol-guldur.4,
+	  brest/brittany/dol-guldur.5, brest/brittany/dol-guldur.6,
+	  brest/brittany/enigme.1, brest/brittany/jessy.1,
+	  brest/brittany/khazad.1, brest/brittany/khazad.2,
+	  brest/brittany/khazad.3, brest/brittany/khazad.4,
+	  brest/brittany/khazad.5, brest/brittany/tower_of__zoon,
+	  brest/elec.jes, brest/info_first, brest/jes.admini, brest/ludo1,
+	  brest/nasty_house, brest/pshops/pshop1/gfloor,
+	  brest/pshops/pshop10/gfloor, brest/pshops/pshop11/gfloor,
+	  brest/pshops/pshop12/gfloor, brest/pshops/pshop13/gfloor,
+	  brest/pshops/pshop14/gfloor, brest/pshops/pshop15/gfloor,
+	  brest/pshops/pshop16/gfloor, brest/pshops/pshop17/gfloor,
+	  brest/pshops/pshop18/gfloor, brest/pshops/pshop19/gfloor,
+	  brest/pshops/pshop2/gfloor, brest/pshops/pshop20/gfloor,
+	  brest/pshops/pshop21/gfloor, brest/pshops/pshop22/gfloor,
+	  brest/pshops/pshop23/gfloor, brest/pshops/pshop24/gfloor,
+	  brest/pshops/pshop25/gfloor, brest/pshops/pshop26/gfloor,
+	  brest/pshops/pshop27/gfloor, brest/pshops/pshop3/gfloor,
+	  brest/pshops/pshop4/gfloor, brest/pshops/pshop5/gfloor,
+	  brest/pshops/pshop6/gfloor, brest/pshops/pshop7/gfloor,
+	  brest/pshops/pshop8/gfloor, brest/pshops/pshop9/gfloor,
+	  brest/pshops/pshopsinc, brest/shops/buildshop, brest/sport.jess,
+	  brest/underground: Backport from Trunk - replace old xpm oakdoor
+	  graphic with a different exit archetype
+
+2008-12-02 17:16  rjtanner
+
+	* world/world_127_101: Update destination coordinates from world
+	  map to Akuma Tatemono, fixes issue in bug report [ 2377636 ]
+	  Wrong entry point on an Azumauindo map
+
+2008-12-02 03:16  rjtanner
+
+	* ChangeLog: Updated ChangeLog file using svn2cl
+
 2008-12-01 20:22  rjtanner
 
 	* pup_land/nurnberg/apartment/main: Unique maps (such as
