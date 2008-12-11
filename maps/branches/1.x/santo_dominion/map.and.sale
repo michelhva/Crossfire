@@ -9,6 +9,7 @@ height 14
 enter_x 5
 msg
 Created:  Andreas Vogl (red.blaze@gmx.net)
+Modified: 2008-12-10 Rick Tanner
 endmsg
 end
 arch blocked
@@ -290,6 +291,10 @@ arch dwall_2_2_4
 x 2
 y 4
 end
+arch swall_1_4_half
+x 2
+y 4
+end
 arch shop_empty
 x 2
 y 5
@@ -472,7 +477,7 @@ arch flagstone
 x 3
 y 4
 end
-arch swall_1_4
+arch swall_2_1_2
 x 3
 y 4
 end
@@ -767,7 +772,7 @@ end
 arch flagstone
 x 5
 end
-arch oakdoor
+arch oakdoor_2
 slaying /world/world_102_108
 hp 15
 sp 14
@@ -1120,7 +1125,7 @@ arch flagstone
 x 7
 y 4
 end
-arch swall_1_3
+arch swall_2_1_2
 x 7
 y 4
 end
@@ -1292,6 +1297,10 @@ x 8
 y 4
 end
 arch dwall_2_2_1
+x 8
+y 4
+end
+arch swall_1_3_half
 x 8
 y 4
 end

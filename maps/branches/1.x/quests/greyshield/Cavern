@@ -8,7 +8,7 @@ enter_x 15
 enter_y 18
 msg
 Created:  1996-09-13 Chris Jeske
-Modified: 2008-11-04 Rick Tanner
+Modified: 2008-12-10 Rick Tanner
 endmsg
 end
 arch blocked
@@ -1642,7 +1642,7 @@ arch blackrock
 x 7
 y 23
 end
-arch oakdoor
+arch ladder_bi_up
 slaying Cavern
 hp 7
 sp 28
@@ -1681,7 +1681,7 @@ arch blackrock
 x 7
 y 28
 end
-arch oakdoor
+arch ladder_down
 slaying Cavern
 hp 7
 sp 23

@@ -8,7 +8,7 @@ enter_x 7
 enter_y 7
 msg
 Created:  1996-10-26 Chris Jeske
-Modified: 2008-11-04 Rick Tanner
+Modified: 2008-12-10 Rick Tanner
 endmsg
 end
 arch marble
@@ -116,7 +116,7 @@ arch magic_banned
 x 1
 y 1
 end
-arch oakdoor
+arch exit
 name exit to Grey Isle
 slaying /world/world_107_128
 hp 13
@@ -244,7 +244,7 @@ arch magic_banned
 x 1
 y 13
 end
-arch oakdoor
+arch exit
 name exit to Grey Isle
 slaying /world/world_107_128
 hp 13
@@ -2096,7 +2096,7 @@ arch magic_banned
 x 13
 y 1
 end
-arch oakdoor
+arch exit
 name exit to Grey Isle
 slaying /world/world_107_128
 hp 13
@@ -2224,7 +2224,7 @@ arch magic_banned
 x 13
 y 13
 end
-arch oakdoor
+arch exit
 name exit to Grey Isle
 slaying /world/world_107_128
 hp 13
