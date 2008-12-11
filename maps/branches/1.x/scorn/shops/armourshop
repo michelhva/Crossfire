@@ -11,7 +11,7 @@ enter_x 14
 enter_y 1
 msg
 Created:  1993-10-15
-Modified: 2008-11-14 Rick Tanner
+Modified: 2008-12-10 Rick Tanner
 endmsg
 end
 arch shop_empty
@@ -1084,7 +1084,7 @@ end
 arch shop_empty
 x 13
 end
-arch wall_2_1_2
+arch wall_1_3
 x 13
 end
 arch woodfloor
@@ -1190,17 +1190,13 @@ end
 arch shop_empty
 x 14
 end
-arch wall_2_1_2
-x 14
-end
-arch woodfloor
-x 14
-y 1
-end
-arch oakdoor
+arch oakdoor_2
 slaying /world/world_104_115
 hp 48
 sp 32
+x 14
+end
+arch woodfloor
 x 14
 y 1
 end
@@ -1287,7 +1283,7 @@ end
 arch shop_empty
 x 15
 end
-arch wall_2_2_3
+arch wall_1_1
 x 15
 end
 arch shop_empty

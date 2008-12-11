@@ -3250,6 +3250,7 @@ end
 arch dungeon_floor
 x 16
 y 23
+move_block all
 end
 arch dungeon_floor
 x 16
@@ -3390,7 +3391,7 @@ arch woodfloor2
 x 17
 y 22
 end
-arch oakdoor
+arch oakdoor_2
 slaying /world/world_128_109
 msg
 Thank you for visiting.
@@ -3408,6 +3409,7 @@ end
 arch dungeon_floor
 x 17
 y 23
+move_block all
 end
 arch dungeon_floor
 x 17
@@ -3540,6 +3542,7 @@ end
 arch dungeon_floor
 x 18
 y 23
+move_block all
 end
 arch dungeon_floor
 x 18

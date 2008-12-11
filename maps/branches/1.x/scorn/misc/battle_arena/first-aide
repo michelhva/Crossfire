@@ -9,7 +9,7 @@ enter_x 5
 enter_y 10
 msg
 Created:  2000-02-28
-Modified: 2008-11-14 Rick Tanner
+Modified: 2008-12-10 Rick Tanner
 endmsg
 end
 arch magic_banned
@@ -60,7 +60,7 @@ end
 arch flagstone
 y 5
 end
-arch oakdoor
+arch oakdoor_1
 slaying arena
 hp 31
 sp 1
@@ -732,7 +732,7 @@ arch flagstone
 x 5
 y 10
 end
-arch oakdoor
+arch oakdoor_2
 slaying arena
 hp 33
 sp 3

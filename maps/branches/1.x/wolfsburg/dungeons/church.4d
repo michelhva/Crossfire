@@ -8,7 +8,7 @@ enter_x 60
 enter_y 12
 msg
 Created:  1994-02-15
-Modified: 2008-11-16 Rick Tanner
+Modified: 2008-12-10 Rick Tanner
 endmsg
 end
 arch blocked
@@ -8200,7 +8200,11 @@ arch flagstone
 x 59
 y 11
 end
-arch dun11
+arch flagstone
+x 59
+y 11
+end
+arch dun8
 x 59
 y 11
 end
@@ -8368,19 +8372,15 @@ arch flagstone
 x 60
 y 11
 end
-arch dun2
-x 60
-y 11
-end
-arch flagstone
-x 60
-y 12
-end
-arch oakdoor
+arch oakdoor_2
 slaying church.4b
 hp 27
 sp 28
 x 60
+y 11
+end
+arch flagstone
+x 60
 y 12
 end
 arch flagstone
@@ -8475,19 +8475,15 @@ arch flagstone
 x 61
 y 11
 end
-arch dun2
-x 61
-y 11
-end
-arch flagstone
-x 61
-y 12
-end
-arch oakdoor
+arch oakdoor_2
 slaying church.4b
 hp 28
 sp 28
 x 61
+y 11
+end
+arch flagstone
+x 61
 y 12
 end
 arch flagstone
@@ -8582,7 +8578,11 @@ arch flagstone
 x 62
 y 11
 end
-arch dun16
+arch flagstone
+x 62
+y 11
+end
+arch dun8
 x 62
 y 11
 end

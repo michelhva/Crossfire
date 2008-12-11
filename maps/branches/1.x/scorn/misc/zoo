@@ -8,7 +8,7 @@ enter_x 11
 enter_y 15
 msg
 Created:  1993-10-15
-Modified: 2008-11-14 Rick Tanner
+Modified: 2008-12-10 Rick Tanner
 endmsg
 end
 arch large_stones
@@ -102,7 +102,7 @@ end
 arch dungeon_floor
 y 15
 end
-arch oakdoor
+arch oakdoor_1
 slaying /world/world_105_115
 hp 11
 sp 48
@@ -111,7 +111,7 @@ end
 arch dungeon_floor
 y 16
 end
-arch oakdoor
+arch oakdoor_1
 slaying /world/world_105_115
 hp 11
 sp 48

@@ -8,7 +8,7 @@ enter_x 7
 enter_y 16
 msg
 Created:  1994-02-15
-Modified: 2008-11-16 Rick Tanner
+Modified: 2008-12-10 Rick Tanner
 endmsg
 end
 arch blocked
@@ -833,7 +833,11 @@ arch dungeon_floor
 x 6
 y 22
 end
-arch dun6
+arch dungeon_floor
+x 6
+y 22
+end
+arch dun5
 x 6
 y 22
 end
@@ -934,18 +938,14 @@ arch dungeon_floor
 x 7
 y 21
 end
-arch oakdoor
-slaying church.4c
-hp 18
-sp 20
-x 7
-y 21
-end
 arch dungeon_floor
 x 7
 y 22
 end
-arch dun2
+arch oakdoor_2
+slaying church.4c
+hp 18
+sp 20
 x 7
 y 22
 end
@@ -1100,7 +1100,11 @@ arch dungeon_floor
 x 8
 y 22
 end
-arch dun12
+arch dungeon_floor
+x 8
+y 22
+end
+arch dun5
 x 8
 y 22
 end
@@ -4138,21 +4142,7 @@ arch dungeon_floor
 x 33
 y 16
 end
-arch oakdoor
-slaying church.4b
-hp 1
-sp 16
-x 33
-y 16
-end
 arch dungeon_floor
-x 33
-y 17
-end
-arch oakdoor
-slaying church.4b
-hp 1
-sp 17
 x 33
 y 17
 end
@@ -4175,13 +4165,6 @@ arch dun2
 x 34
 end
 arch dungeon_floor
-x 34
-y 1
-end
-arch oakdoor
-slaying church.4b
-hp 1
-sp 1
 x 34
 y 1
 end
@@ -4293,7 +4276,11 @@ arch dungeon_floor
 x 34
 y 15
 end
-arch dun14
+arch dungeon_floor
+x 34
+y 15
+end
+arch dun12
 x 34
 y 15
 end
@@ -4301,7 +4288,10 @@ arch dungeon_floor
 x 34
 y 16
 end
-arch dun3
+arch oakdoor_1
+slaying church.4b
+hp 1
+sp 16
 x 34
 y 16
 end
@@ -4309,7 +4299,10 @@ arch dungeon_floor
 x 34
 y 17
 end
-arch dun3
+arch oakdoor_1
+slaying church.4b
+hp 1
+sp 17
 x 34
 y 17
 end
@@ -4328,14 +4321,20 @@ end
 arch dungeon_floor
 x 35
 end
-arch dun9
+arch dungeon_floor
+x 35
+end
+arch dun7
 x 35
 end
 arch dungeon_floor
 x 35
 y 1
 end
-arch dun11
+arch oakdoor_1
+slaying church.4b
+hp 1
+sp 1
 x 35
 y 1
 end
