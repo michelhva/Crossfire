@@ -6,7 +6,7 @@ width 80
 height 50
 msg
 Created:  1994-05-31
-Modified: 2008-06-13 Arvid Norlander
+Modified: 2008-12-10 Rick Tanner
 endmsg
 end
 arch dungeon_floor
@@ -255,7 +255,7 @@ arch dungeon_floor
 x 1
 y 23
 end
-arch oakdoor
+arch exit
 slaying /world/world_107_123
 hp 39
 sp 36

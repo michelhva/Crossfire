@@ -8,7 +8,7 @@ enter_x 1
 enter_y 54
 msg
 Created:  1994-02-02
-Modified: 2008-11-05 Rick Tanner
+Modified: 2008-12-10 Rick Tanner
 endmsg
 end
 arch dirtfloor
@@ -456,7 +456,7 @@ arch dirtfloor
 x 1
 y 54
 end
-arch oakdoor
+arch ladder_up
 slaying AcidChamber
 hp 26
 sp 6
@@ -8580,7 +8580,7 @@ arch dirtfloor
 x 27
 y 56
 end
-arch oakdoor
+arch ladder_bi_down
 slaying Finale
 hp 1
 sp 58

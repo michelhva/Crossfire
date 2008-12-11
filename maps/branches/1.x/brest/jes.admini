@@ -8,7 +8,7 @@ enter_x 21
 enter_y 2
 msg
 Created:  1994-02-31
-Modified: 2008-11-05 Rick Tanner
+Modified: 2008-12-10 Rick Tanner
 endmsg
 end
 arch grass
@@ -3016,6 +3016,7 @@ y 29
 end
 arch grass
 x 18
+move_block all
 end
 arch woodfloor
 x 18
@@ -3187,8 +3188,16 @@ y 29
 end
 arch grass
 x 19
+move_block all
 end
 arch grass
+x 19
+y 1
+end
+arch invis_exit
+slaying /world/world_107_123
+hp 35
+sp 36
 x 19
 y 1
 end
@@ -3318,12 +3327,13 @@ y 29
 end
 arch cobblestones2
 x 20
+move_block all
 end
 arch cobblestones2
 x 20
 y 1
 end
-arch oakdoor
+arch invis_exit
 slaying /world/world_107_123
 hp 35
 sp 36
@@ -3456,12 +3466,13 @@ y 29
 end
 arch cobblestones2
 x 21
+move_block all
 end
 arch cobblestones2
 x 21
 y 1
 end
-arch oakdoor
+arch invis_exit
 slaying /world/world_107_123
 hp 35
 sp 36
@@ -3590,8 +3601,16 @@ y 29
 end
 arch grass
 x 22
+move_block all
 end
 arch grass
+x 22
+y 1
+end
+arch invis_exit
+slaying /world/world_107_123
+hp 35
+sp 36
 x 22
 y 1
 end
@@ -3721,6 +3740,7 @@ y 29
 end
 arch grass
 x 23
+move_block all
 end
 arch woodfloor
 x 23

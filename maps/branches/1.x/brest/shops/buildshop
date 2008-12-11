@@ -13,7 +13,9 @@ enter_x 6
 enter_y 24
 msg
 Created:  2005-11-05 Gene Alexander
-Modified: 2008-11-05 Rick Tanner
+msg
+Thank you for your visit!
+endmsg
 endmsg
 end
 arch flagstone
@@ -1053,7 +1055,7 @@ arch tile_floor
 x 6
 y 24
 end
-arch oakdoor
+arch oakdoor_2
 slaying /world/world_107_123
 msg
 Thank you for your visit!
