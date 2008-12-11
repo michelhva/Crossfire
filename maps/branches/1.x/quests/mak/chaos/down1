@@ -8,7 +8,7 @@ enter_x 15
 enter_y 1
 msg
 Created:  2000-04-09 Magnus Kronhamn (mak@solace.mh.se)
-Modified: 2008-11-13 Rick Tanner
+Modified: 2008-12-10 Rick Tanner
 endmsg
 maplore
 @quest Lorkas
@@ -596,7 +596,7 @@ arch dungeon_floor
 x 2
 y 27
 end
-arch oakdoor
+arch stair_3_down
 slaying down2
 hp 14
 sp 15

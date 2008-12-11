@@ -6,11 +6,11 @@ region santodominion
 shopitems armour:60;shield:60;helmet:50;cloak:50;boots:50;gloves:50;bracers:60;girdle:60;*:-60
 width 16
 height 16
-enter_x 1
+enter_x 2
 enter_y 14
 msg
 Created:  1994-02-11
-Modified: 2008-11-14 Rick Tanner
+Modified: 2008-12-10 Rick Tanner
 endmsg
 end
 arch flagstone
@@ -78,6 +78,9 @@ arch stwall_2_1_1
 y 10
 end
 arch flagstone
+y 11
+end
+arch swall_1_4_half
 y 11
 end
 arch stwall_2_1_1
@@ -157,7 +160,7 @@ arch flagstone
 x 1
 y 11
 end
-arch swall_1_4
+arch swall_2_1_2
 x 1
 y 11
 end
@@ -173,18 +176,11 @@ arch flagstone
 x 1
 y 14
 end
-arch oakdoor
-slaying /world/world_102_108
-hp 18
-sp 6
-x 1
-y 14
-end
 arch flagstone
 x 1
 y 15
 end
-arch stwall_2_1_2
+arch stwall_1_3
 x 1
 y 15
 end
@@ -258,7 +254,10 @@ arch flagstone
 x 2
 y 15
 end
-arch stwall_2_1_2
+arch oakdoor_2
+slaying /world/world_102_108
+hp 18
+sp 6
 x 2
 y 15
 end
@@ -340,7 +339,7 @@ arch flagstone
 x 3
 y 15
 end
-arch stwall_2_1_2
+arch stwall_1_4
 x 3
 y 15
 end
@@ -418,11 +417,15 @@ arch flagstone
 x 4
 y 14
 end
-arch swall_1_2
+arch swall_2_1_1
 x 4
 y 14
 end
 arch flagstone
+x 4
+y 15
+end
+arch swall_1_2_half
 x 4
 y 15
 end

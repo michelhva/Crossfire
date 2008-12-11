@@ -5,9 +5,9 @@ region santodominion
 width 40
 height 40
 enter_x 1
-enter_y 1
+enter_y 2
 msg
-Modified: 2008-11-04 Rick Tanner
+Modified: 2008-12-10 Rick Tanner
 endmsg
 end
 arch dirtfloor
@@ -17,19 +17,22 @@ end
 arch dirtfloor
 y 1
 end
-arch awall_2_1_1
+arch awall_1_2
 y 1
 end
 arch dirtfloor
 y 2
 end
-arch awall_2_1_1
+arch oakdoor_1
+slaying /world/world_102_108
+hp 38
+sp 22
 y 2
 end
 arch dirtfloor
 y 3
 end
-arch awall_2_1_1
+arch awall_1_1
 y 3
 end
 arch dirtfloor
@@ -258,13 +261,6 @@ arch dirtfloor
 x 1
 y 1
 end
-arch oakdoor
-slaying /world/world_102_108
-hp 38
-sp 22
-x 1
-y 1
-end
 arch dirtfloor
 x 1
 y 2
@@ -433,7 +429,11 @@ arch dirtfloor
 x 1
 y 28
 end
-arch door_2_1_2
+arch door_1_4
+x 1
+y 28
+end
+arch awall_1_3
 x 1
 y 28
 end
@@ -1059,7 +1059,11 @@ arch dirtfloor
 x 4
 y 28
 end
-arch awall_2_1_2
+arch door_1_3
+x 4
+y 28
+end
+arch awall_1_4
 x 4
 y 28
 end
@@ -2109,7 +2113,11 @@ arch dirtfloor
 x 9
 y 21
 end
-arch awall_2_1_2
+arch door_1_4
+x 9
+y 21
+end
+arch awall_1_3
 x 9
 y 21
 end
@@ -2788,7 +2796,11 @@ arch dirtfloor
 x 12
 y 23
 end
-arch awall_2_1_1
+arch door_1_2
+x 12
+y 23
+end
+arch awall_1_1
 x 12
 y 23
 end
@@ -3030,7 +3042,11 @@ arch dirtfloor
 x 13
 y 21
 end
-arch awall_2_1_2
+arch door_1_3
+x 13
+y 21
+end
+arch awall_1_4
 x 13
 y 21
 end
@@ -3846,7 +3862,11 @@ arch dirtfloor
 x 17
 y 6
 end
-arch awall_3_3
+arch door_1_4
+x 17
+y 6
+end
+arch awall_2_2_3
 x 17
 y 6
 end
@@ -4314,7 +4334,11 @@ arch dirtfloor
 x 19
 y 6
 end
-arch awall_2_1_2
+arch door_1_3
+x 19
+y 6
+end
+arch awall_1_4
 x 19
 y 6
 end
@@ -4508,7 +4532,11 @@ arch dirtfloor
 x 20
 y 1
 end
-arch awall_2_1_1
+arch door_1_1
+x 20
+y 1
+end
+arch awall_1_2
 x 20
 y 1
 end
@@ -4524,7 +4552,11 @@ arch dirtfloor
 x 20
 y 3
 end
-arch awall_2_1_1
+arch door_1_2
+x 20
+y 3
+end
+arch awall_1_1
 x 20
 y 3
 end

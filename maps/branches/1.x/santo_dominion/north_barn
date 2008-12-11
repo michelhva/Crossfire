@@ -5,9 +5,9 @@ region santodominion
 width 45
 height 40
 enter_x 1
-enter_y 1
+enter_y 2
 msg
-Modified: 2008-06-20 Arvid Norlander
+Modified: 2008-12-10 Rick Tanner
 endmsg
 end
 arch woodfloor2
@@ -17,19 +17,22 @@ end
 arch woodfloor2
 y 1
 end
-arch woodwall_2_1_1
+arch woodwall_1_2
 y 1
 end
 arch woodfloor2
 y 2
 end
-arch woodwall_2_1_1
+arch oakdoor_1
+slaying /world/world_102_108
+hp 36
+sp 14
 y 2
 end
 arch woodfloor2
 y 3
 end
-arch woodwall_2_1_1
+arch woodwall_1_1
 y 3
 end
 arch woodfloor2
@@ -255,13 +258,6 @@ arch woodwall_2_1_2
 x 1
 end
 arch woodfloor2
-x 1
-y 1
-end
-arch oakdoor
-slaying /world/world_102_108
-hp 36
-sp 14
 x 1
 y 1
 end
@@ -9038,11 +9034,9 @@ arch woodfloor2
 x 31
 y 2
 end
-arch wwall_win2
+arch woodwall_win2
 x 31
 y 2
-no_magic 1
-damned 1
 end
 arch woodfloor2
 x 31
@@ -10185,11 +10179,9 @@ arch woodfloor2
 x 36
 y 2
 end
-arch wwall_win2
+arch woodwall_win2
 x 36
 y 2
-no_magic 1
-damned 1
 end
 arch woodfloor2
 x 36
