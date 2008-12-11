@@ -8,7 +8,7 @@ enter_x 1
 enter_y 58
 msg
 Created:  1994-02-02
-Modified: 2008-11-05 Rick Tanner
+Modified: 2008-12-10 Rick Tanner
 endmsg
 end
 arch dirtfloor
@@ -835,7 +835,7 @@ arch dirtfloor
 x 1
 y 58
 end
-arch oakdoor
+arch ladder_up
 slaying LargeRoom
 hp 27
 sp 56
@@ -1978,7 +1978,7 @@ arch dirtfloor
 x 5
 y 1
 end
-arch oakdoor
+arch exit
 slaying /world/world_107_123
 hp 26
 sp 41

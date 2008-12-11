@@ -8,7 +8,7 @@ enter_x 1
 enter_y 46
 msg
 Created:  1994-02-31
-Modified: 2008-11-05 Rick Tanner
+Modified: 2008-12-10 Rick Tanner
 endmsg
 end
 arch dungeon_floor
@@ -17197,7 +17197,7 @@ arch dungeon_floor
 x 57
 y 1
 end
-arch oakdoor
+arch exit
 slaying /world/world_107_123
 hp 29
 sp 34

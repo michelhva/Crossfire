@@ -9,7 +9,9 @@ enter_x 1
 enter_y 1
 msg
 Created:  1994-02-31
-Modified: 2008-11-17 Rick Tanner
+msg
+Thank you for your visit!
+endmsg
 endmsg
 end
 arch pstone_2
@@ -221,10 +223,8 @@ arch woodfloor
 x 1
 y 1
 end
-arch oakdoor
-name ladder going up
+arch ladder_up
 slaying /world/world_107_123
-face ladder2_up.111
 hp 33
 sp 31
 x 1

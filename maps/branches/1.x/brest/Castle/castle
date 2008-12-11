@@ -8,7 +8,7 @@ enter_x 9
 enter_y 16
 msg
 Created:  1994-02-30
-Modified: 2008-11-05 Rick Tanner
+Modified: 2008-12-10 Rick Tanner
 endmsg
 end
 arch blocked
@@ -1890,7 +1890,7 @@ arch dirtfloor
 x 9
 y 16
 end
-arch oakdoor
+arch exit
 slaying /world/world_107_123
 hp 26
 sp 41
@@ -2788,7 +2788,7 @@ arch dirtfloor
 x 12
 y 30
 end
-arch oakdoor
+arch ladder_bi_down
 slaying DragonRoom
 hp 12
 sp 1
