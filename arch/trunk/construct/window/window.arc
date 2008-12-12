@@ -1,7 +1,6 @@
 Object window_31
 name window
 face window_3.111
-y 0
 move_block all
 end
 More
@@ -22,15 +21,12 @@ end
 Object window_21
 name window
 face window_2.111
-x 0
-y 0
 move_block all
 end
 More
 Object window_22
 name window
 face window_2.111
-x 0
 y 1
 move_block all
 end
@@ -38,7 +34,6 @@ More
 Object window_23
 name window
 face window_2.111
-x 0
 y 2
 move_block all
 end
@@ -47,7 +42,6 @@ Object window_24
 name window
 face window_2.111
 x 1
-y 0
 move_block all
 end
 More
@@ -69,15 +63,12 @@ end
 Object window_41
 name window
 face window_4.111
-x 0
-y 0
 move_block all
 end
 More
 Object window_42
 name window
 face window_4.111
-x 0
 y 1
 move_block all
 end
@@ -85,7 +76,6 @@ More
 Object window_43
 name window
 face window_4.111
-x 0
 y 2
 move_block all
 end
@@ -94,7 +84,6 @@ Object window_44
 name window
 face window_4.111
 x 1
-y 0
 move_block all
 end
 More
@@ -116,15 +105,12 @@ end
 Object window_arcade_11
 name window
 face window_arcade_1.111
-x 0
-y 0
 move_block all
 end
 More
 Object window_arcade_12
 name window
 face window_arcade_1.111
-x 0
 y 1
 move_block all
 end
@@ -132,7 +118,6 @@ More
 Object window_arcade_13
 name window
 face window_arcade_1.111
-x 0
 y 2
 move_block all
 end
@@ -140,7 +125,6 @@ More
 Object window_arcade_14
 name window
 face window_arcade_1.111
-x 0
 y 3
 end
 More
@@ -148,7 +132,6 @@ Object window_arcade_15
 name window
 face window_arcade_1.111
 x 1
-y 0
 move_block all
 end
 More
