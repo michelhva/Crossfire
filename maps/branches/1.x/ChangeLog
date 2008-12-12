@@ -1,3 +1,66 @@
+2008-12-12 03:12  rjtanner
+
+	* scorn/misc/PowerHouse, world/world_105_115: Backport from Trunk -
+	  Cosmetic layout changes and updates. Requires arechetype r10897
+	  or newer
+
+2008-12-12 03:07  rjtanner
+
+	* scorn/misc/HouseofHealing, world/world_105_115: Backport from
+	  Trunk - Redesign of the House of Healing, now includes all levels
+	  of Potions of Life, balm of cure poison, and balm of minor
+	  healing. Requires archetype update r10896 or newer
+
+2008-12-12 02:57  rjtanner
+
+	* brest/asyvan/palace1, brest/asyvan/palace2, brest/asyvan/palace3,
+	  world/world_107_123: Backport from Trunk - redesign of the
+	  Kingdom Palace
+
+2008-12-12 02:50  rjtanner
+
+	* brest/brest.IPO, world/world_107_123: Backport from Trunk -
+	  redesign of the Brest IPO
+
+2008-12-12 02:48  rjtanner
+
+	* brest/shops/brest.weapon: Backport from Trunk - redesign the
+	  interior of the Weapon Shop, requires archetype update r10903 or
+	  newer
+
+2008-12-12 02:45  rjtanner
+
+	* brest/shops/brest.magic: Backport from Trunk - redesign the
+	  interior of the Magic Shop
+
+2008-12-12 02:44  rjtanner
+
+	* brest/shops/brest.food: Backport from Trunk - redesign the
+	  interior of the Food Store
+
+2008-12-12 02:44  rjtanner
+
+	* brest/shops/brest.cvt: Backport from Trunk - redesign the
+	  interior of the CVT
+
+2008-12-12 02:44  rjtanner
+
+	* brest/shops/brest.armour: Backport from Trunk - redesign the
+	  interior of the Armour Shop
+
+2008-12-12 02:38  rjtanner
+
+	* brest/brest.armour, brest/brest.cvt, brest/brest.food,
+	  brest/brest.magic, brest/brest.weapon, brest/shops/brest.armour,
+	  brest/shops/brest.cvt, brest/shops/brest.food,
+	  brest/shops/brest.magic, brest/shops/brest.weapon,
+	  world/world_107_123: backport from Trunk - moved brest armour,
+	  cvt, food, magic and weapo shops to /brest/shops directory
+
+2008-12-11 08:38  rjtanner
+
+	* ChangeLog: Updated ChangeLog file using svn2cl
+
 2008-12-11 08:12  rjtanner
 
 	* scorn/shops/foodshop: Correct paste mistake in map header for
