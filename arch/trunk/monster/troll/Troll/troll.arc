@@ -32,7 +32,7 @@ body_skill 1
 body_arm 2
 end
 More
-Object troll
+Object troll_2
 name troll
 face troll.x11
 animation troll
