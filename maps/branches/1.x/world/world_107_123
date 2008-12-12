@@ -7974,9 +7974,9 @@ elevation 2688
 end
 arch store_general_fant
 name Brest Food
-slaying /brest/brest.food
-hp 9
-sp 18
+slaying /brest/shops/brest.food
+hp 19
+sp 20
 x 28
 y 37
 end
@@ -8595,9 +8595,9 @@ elevation 1036
 end
 arch store_armour_fant
 name Brest Armour
-slaying /brest/brest.armour
-hp 9
-sp 18
+slaying /brest/shops/brest.armour
+hp 5
+sp 20
 x 30
 y 40
 end
@@ -8891,9 +8891,9 @@ elevation 1276
 end
 arch store_weapons_fant
 name Brest Weapon
-slaying /brest/brest.weapon
-hp 9
-sp 18
+slaying /brest/shops/brest.weapon
+hp 12
+sp 20
 x 31
 y 36
 end
@@ -9551,9 +9551,9 @@ y 39
 end
 arch store_magic_fant
 name Brest Magic
-slaying /brest/brest.magic
-hp 6
-sp 11
+slaying /brest/shops/brest.magic
+hp 38
+sp 22
 x 33
 y 39
 end
@@ -10549,9 +10549,9 @@ elevation 100
 end
 arch guild_fant
 name Brest CVT
-slaying /brest/brest.cvt
-hp 9
-sp 18
+slaying /brest/shops/brest.cvt
+hp 13
+sp 20
 x 36
 y 38
 end
