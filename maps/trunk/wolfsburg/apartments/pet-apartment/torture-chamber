@@ -9,10 +9,10 @@ enter_x 2
 enter_y 1
 msg
 Creator: 2007-06-11 Philip Stolarczyk
-Modified: 2008-10-02 Rick Tanner
+Modified: 2008-12-13 Rick Tanner
 endmsg
 end
-arch blocked
+arch cave_15
 end
 arch earth
 y 1
@@ -92,7 +92,7 @@ end
 arch cave17
 y 13
 end
-arch blocked
+arch cave_15
 y 14
 end
 arch earth
@@ -2138,7 +2138,7 @@ arch cave20
 x 13
 y 14
 end
-arch blocked
+arch cave_15
 x 14
 end
 arch earth
@@ -2253,7 +2253,7 @@ arch cave20
 x 14
 y 13
 end
-arch blocked
+arch cave_15
 x 14
 y 14
 end

@@ -9,48 +9,48 @@ enter_x 10
 enter_y 30
 msg
 Created:  1994-06-02 langley (langley@fermat.dartmouth.edu)
-Modified: 2008-10-25 Rick Tanner
+Modified: 2008-12-13 Rick Tanner
 endmsg
 end
-arch blocked
+arch cave_15
 end
-arch blocked
+arch cave_15
 y 1
 end
-arch blocked
+arch cave_15
 y 2
 end
-arch blocked
+arch cave_15
 y 3
 end
-arch blocked
+arch cave_15
 y 4
 end
-arch blocked
+arch cave_15
 y 5
 end
-arch blocked
+arch cave_15
 y 6
 end
-arch blocked
+arch cave_15
 y 7
 end
-arch blocked
+arch cave_15
 y 8
 end
-arch blocked
+arch cave_15
 y 9
 end
-arch blocked
+arch cave_15
 y 10
 end
-arch blocked
+arch cave_15
 y 11
 end
-arch blocked
+arch cave_15
 y 12
 end
-arch blocked
+arch cave_15
 y 13
 end
 arch pstone_2
@@ -83,13 +83,13 @@ end
 arch pstone_2
 y 18
 end
-arch blocked
+arch cave_15
 y 18
 end
-arch blocked
+arch cave_15
 y 19
 end
-arch blocked
+arch cave_15
 y 20
 end
 arch dungeon_floor
@@ -125,19 +125,19 @@ end
 arch random_food
 y 28
 end
-arch blocked
+arch cave_15
 y 29
 end
-arch blocked
+arch cave_15
 y 30
 end
-arch blocked
+arch cave_15
 y 31
 end
-arch blocked
+arch cave_15
 x 1
 end
-arch blocked
+arch cave_15
 x 1
 y 1
 end
@@ -166,35 +166,35 @@ arch pstone_2
 x 1
 y 5
 end
-arch blocked
+arch cave_15
 x 1
 y 6
 end
-arch blocked
+arch cave_15
 x 1
 y 7
 end
-arch blocked
+arch cave_15
 x 1
 y 8
 end
-arch blocked
+arch cave_15
 x 1
 y 9
 end
-arch blocked
+arch cave_15
 x 1
 y 10
 end
-arch blocked
+arch cave_15
 x 1
 y 11
 end
-arch blocked
+arch cave_15
 x 1
 y 12
 end
-arch blocked
+arch cave_15
 x 1
 y 13
 end
@@ -307,15 +307,15 @@ arch random_food
 x 1
 y 28
 end
-arch blocked
+arch cave_15
 x 1
 y 29
 end
-arch blocked
+arch cave_15
 x 1
 y 30
 end
-arch blocked
+arch cave_15
 x 1
 y 31
 end
@@ -384,31 +384,31 @@ arch cave_4
 x 2
 y 6
 end
-arch blocked
+arch cave_15
 x 2
 y 7
 end
-arch blocked
+arch cave_15
 x 2
 y 8
 end
-arch blocked
+arch cave_15
 x 2
 y 9
 end
-arch blocked
+arch cave_15
 x 2
 y 10
 end
-arch blocked
+arch cave_15
 x 2
 y 11
 end
-arch blocked
+arch cave_15
 x 2
 y 12
 end
-arch blocked
+arch cave_15
 x 2
 y 13
 end
@@ -436,7 +436,7 @@ arch cave2
 x 2
 y 16
 end
-arch blocked
+arch cave_15
 x 2
 y 17
 end
@@ -512,15 +512,15 @@ arch dungeon_floor
 x 2
 y 28
 end
-arch blocked
+arch cave_15
 x 2
 y 29
 end
-arch blocked
+arch cave_15
 x 2
 y 30
 end
-arch blocked
+arch cave_15
 x 2
 y 31
 end
@@ -597,15 +597,15 @@ arch medium_stones
 x 3
 y 9
 end
-arch blocked
+arch cave_15
 x 3
 y 10
 end
-arch blocked
+arch cave_15
 x 3
 y 11
 end
-arch blocked
+arch cave_15
 x 3
 y 12
 end
@@ -749,15 +749,15 @@ endmsg
 x 3
 y 28
 end
-arch blocked
+arch cave_15
 x 3
 y 29
 end
-arch blocked
+arch cave_15
 x 3
 y 30
 end
-arch blocked
+arch cave_15
 x 3
 y 31
 end
@@ -824,11 +824,11 @@ arch small_stones
 x 4
 y 9
 end
-arch blocked
+arch cave_15
 x 4
 y 10
 end
-arch blocked
+arch cave_15
 x 4
 y 11
 end
@@ -935,19 +935,19 @@ arch chair_3.2
 x 4
 y 28
 end
-arch blocked
+arch cave_15
 x 4
 y 29
 end
-arch blocked
+arch cave_15
 x 4
 y 30
 end
-arch blocked
+arch cave_15
 x 4
 y 31
 end
-arch blocked
+arch cave_15
 x 5
 end
 arch pstone_2
@@ -1011,7 +1011,7 @@ arch cave_4
 x 5
 y 10
 end
-arch blocked
+arch cave_15
 x 5
 y 11
 end
@@ -1091,19 +1091,19 @@ arch mine3
 x 5
 y 28
 end
-arch blocked
+arch cave_15
 x 5
 y 29
 end
-arch blocked
+arch cave_15
 x 5
 y 30
 end
-arch blocked
+arch cave_15
 x 5
 y 31
 end
-arch blocked
+arch cave_15
 x 6
 end
 arch pstone_2
@@ -1162,7 +1162,7 @@ arch pstone_2
 x 6
 y 10
 end
-arch blocked
+arch cave_15
 x 6
 y 11
 end
@@ -1265,14 +1265,14 @@ arch cave17
 x 6
 y 30
 end
-arch blocked
+arch cave_15
 x 6
 y 31
 end
-arch blocked
+arch cave_15
 x 7
 end
-arch blocked
+arch cave_15
 x 7
 y 1
 end
@@ -1332,7 +1332,7 @@ arch cave_3
 x 7
 y 10
 end
-arch blocked
+arch cave_15
 x 7
 y 11
 end
@@ -1452,10 +1452,10 @@ arch cave17
 x 7
 y 31
 end
-arch blocked
+arch cave_15
 x 8
 end
-arch blocked
+arch cave_15
 x 8
 y 1
 end
@@ -1503,7 +1503,7 @@ arch pstone_2
 x 8
 y 9
 end
-arch blocked
+arch cave_15
 x 8
 y 10
 end
@@ -1619,7 +1619,7 @@ arch cave2
 x 8
 y 31
 end
-arch blocked
+arch cave_15
 x 9
 end
 arch pstone_2
@@ -1790,7 +1790,7 @@ arch cave12
 x 9
 y 31
 end
-arch blocked
+arch cave_15
 x 10
 end
 arch pstone_2
@@ -1837,7 +1837,7 @@ arch cave_3
 x 10
 y 8
 end
-arch blocked
+arch cave_15
 x 10
 y 9
 end
@@ -1954,7 +1954,7 @@ arch large_stones
 x 10
 y 31
 end
-arch blocked
+arch cave_15
 x 11
 end
 arch pstone_2
@@ -2005,7 +2005,7 @@ arch dun3
 x 11
 y 7
 end
-arch blocked
+arch cave_15
 x 11
 y 8
 end
@@ -2126,7 +2126,7 @@ arch small_stones
 x 11
 y 31
 end
-arch blocked
+arch cave_15
 x 12
 end
 arch pstone_2
@@ -2161,15 +2161,15 @@ arch ghast
 x 12
 y 5
 end
-arch blocked
+arch cave_15
 x 12
 y 6
 end
-arch blocked
+arch cave_15
 x 12
 y 7
 end
-arch blocked
+arch cave_15
 x 12
 y 8
 end
@@ -2319,15 +2319,15 @@ arch medium_stones
 x 13
 y 5
 end
-arch blocked
+arch cave_15
 x 13
 y 6
 end
-arch blocked
+arch cave_15
 x 13
 y 7
 end
-arch blocked
+arch cave_15
 x 13
 y 8
 end
@@ -2496,15 +2496,15 @@ arch small_stones
 x 14
 y 5
 end
-arch blocked
+arch cave_15
 x 14
 y 6
 end
-arch blocked
+arch cave_15
 x 14
 y 7
 end
-arch blocked
+arch cave_15
 x 14
 y 8
 end
@@ -2624,7 +2624,7 @@ arch cave20
 x 14
 y 30
 end
-arch blocked
+arch cave_15
 x 14
 y 31
 end
@@ -2658,7 +2658,7 @@ arch pstone_2
 x 15
 y 5
 end
-arch blocked
+arch cave_15
 x 15
 y 6
 end
@@ -2806,15 +2806,15 @@ arch cave2
 x 15
 y 29
 end
-arch blocked
+arch cave_15
 x 15
 y 30
 end
-arch blocked
+arch cave_15
 x 15
 y 31
 end
-arch blocked
+arch cave_15
 x 16
 end
 arch pstone_2
@@ -2893,7 +2893,7 @@ arch cave2
 x 16
 y 14
 end
-arch blocked
+arch cave_15
 x 16
 y 15
 end
@@ -2973,18 +2973,18 @@ arch cave22
 x 16
 y 29
 end
-arch blocked
+arch cave_15
 x 16
 y 30
 end
-arch blocked
+arch cave_15
 x 16
 y 31
 end
-arch blocked
+arch cave_15
 x 17
 end
-arch blocked
+arch cave_15
 x 17
 y 1
 end
@@ -3056,7 +3056,7 @@ arch cave2
 x 17
 y 14
 end
-arch blocked
+arch cave_15
 x 17
 y 15
 end
@@ -3108,42 +3108,42 @@ arch cave20
 x 17
 y 24
 end
-arch blocked
+arch cave_15
 x 17
 y 25
 end
-arch blocked
+arch cave_15
 x 17
 y 26
 end
-arch blocked
+arch cave_15
 x 17
 y 27
 end
-arch blocked
+arch cave_15
 x 17
 y 28
 end
-arch blocked
+arch cave_15
 x 17
 y 29
 end
-arch blocked
+arch cave_15
 x 17
 y 30
 end
-arch blocked
+arch cave_15
 x 17
 y 31
 end
-arch blocked
+arch cave_15
 x 18
 end
-arch blocked
+arch cave_15
 x 18
 y 1
 end
-arch blocked
+arch cave_15
 x 18
 y 2
 end
@@ -3231,7 +3231,7 @@ arch cave22
 x 18
 y 14
 end
-arch blocked
+arch cave_15
 x 18
 y 15
 end
@@ -3271,54 +3271,54 @@ arch cave2
 x 18
 y 22
 end
-arch blocked
+arch cave_15
 x 18
 y 23
 end
-arch blocked
+arch cave_15
 x 18
 y 24
 end
-arch blocked
+arch cave_15
 x 18
 y 25
 end
-arch blocked
+arch cave_15
 x 18
 y 26
 end
-arch blocked
+arch cave_15
 x 18
 y 27
 end
-arch blocked
+arch cave_15
 x 18
 y 28
 end
-arch blocked
+arch cave_15
 x 18
 y 29
 end
-arch blocked
+arch cave_15
 x 18
 y 30
 end
-arch blocked
+arch cave_15
 x 18
 y 31
 end
-arch blocked
+arch cave_15
 x 19
 end
-arch blocked
+arch cave_15
 x 19
 y 1
 end
-arch blocked
+arch cave_15
 x 19
 y 2
 end
-arch blocked
+arch cave_15
 x 19
 y 3
 end
@@ -3354,11 +3354,11 @@ arch dun3
 x 19
 y 7
 end
-arch blocked
+arch cave_15
 x 19
 y 8
 end
-arch blocked
+arch cave_15
 x 19
 y 9
 end
@@ -3378,19 +3378,19 @@ arch cave20
 x 19
 y 11
 end
-arch blocked
+arch cave_15
 x 19
 y 12
 end
-arch blocked
+arch cave_15
 x 19
 y 13
 end
-arch blocked
+arch cave_15
 x 19
 y 14
 end
-arch blocked
+arch cave_15
 x 19
 y 15
 end
@@ -3430,39 +3430,39 @@ arch cave22
 x 19
 y 22
 end
-arch blocked
+arch cave_15
 x 19
 y 23
 end
-arch blocked
+arch cave_15
 x 19
 y 24
 end
-arch blocked
+arch cave_15
 x 19
 y 25
 end
-arch blocked
+arch cave_15
 x 19
 y 26
 end
-arch blocked
+arch cave_15
 x 19
 y 27
 end
-arch blocked
+arch cave_15
 x 19
 y 28
 end
-arch blocked
+arch cave_15
 x 19
 y 29
 end
-arch blocked
+arch cave_15
 x 19
 y 30
 end
-arch blocked
+arch cave_15
 x 19
 y 31
 end

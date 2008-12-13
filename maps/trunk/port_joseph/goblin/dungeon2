@@ -9,7 +9,7 @@ enter_x 4
 enter_y 1
 msg
 Created:  1994-08-27 langley (langley@fermat.dartmouth.edu)
-Modified: 2008-10-23 Rick Tanner
+Modified: 2008-12-13 Rick Tanner
 endmsg
 end
 arch dungeon_floor
@@ -2675,7 +2675,7 @@ arch cave2
 x 24
 y 4
 end
-arch blocked
+arch cave_15
 x 24
 y 5
 end
@@ -3334,11 +3334,11 @@ arch cave20
 x 30
 y 7
 end
-arch blocked
+arch cave_15
 x 30
 y 8
 end
-arch blocked
+arch cave_15
 x 30
 y 9
 end
@@ -3393,7 +3393,7 @@ arch mine2
 x 30
 y 15
 end
-arch blocked
+arch cave_15
 x 31
 end
 arch medium_stones
@@ -3444,27 +3444,27 @@ arch cave22
 x 31
 y 6
 end
-arch blocked
+arch cave_15
 x 31
 y 7
 end
-arch blocked
+arch cave_15
 x 31
 y 8
 end
-arch blocked
+arch cave_15
 x 31
 y 9
 end
-arch blocked
+arch cave_15
 x 31
 y 10
 end
-arch blocked
+arch cave_15
 x 31
 y 11
 end
-arch blocked
+arch cave_15
 x 31
 y 12
 end

@@ -10,12 +10,12 @@ enter_x 3
 enter_y 14
 msg
 Created:  2004-08-03 Mikeeusa
-Modified: 2008-10-28 Rick Tanner
+Modified: 2008-12-13 Rick Tanner
 endmsg
 end
 arch istone
 end
-arch blocked
+arch cave_15
 end
 arch istone
 y 1
@@ -50,7 +50,7 @@ end
 arch snow5
 y 5
 end
-arch blocked
+arch cave_15
 y 5
 end
 arch istone
@@ -59,85 +59,85 @@ end
 arch snow4
 y 6
 end
-arch blocked
+arch cave_15
 y 6
 end
 arch snow
 y 7
 end
-arch blocked
+arch cave_15
 y 7
 end
 arch snow
 y 8
 end
-arch blocked
+arch cave_15
 y 8
 end
 arch snow
 y 9
 end
-arch blocked
+arch cave_15
 y 9
 end
 arch snow
 y 10
 end
-arch blocked
+arch cave_15
 y 10
 end
 arch snow
 y 11
 end
-arch blocked
+arch cave_15
 y 11
 end
 arch snow
 y 12
 end
-arch blocked
+arch cave_15
 y 12
 end
 arch snow
 y 13
 end
-arch blocked
+arch cave_15
 y 13
 end
 arch snow
 y 14
 end
-arch blocked
+arch cave_15
 y 14
 end
 arch snow
 y 15
 end
-arch blocked
+arch cave_15
 y 15
 end
 arch snow
 y 16
 end
-arch blocked
+arch cave_15
 y 16
 end
 arch snow
 y 17
 end
-arch blocked
+arch cave_15
 y 17
 end
 arch snow
 y 18
 end
-arch blocked
+arch cave_15
 y 18
 end
 arch snow
 y 19
 end
-arch blocked
+arch cave_15
 y 19
 end
 arch istone
@@ -146,7 +146,7 @@ end
 arch snow4
 y 20
 end
-arch blocked
+arch cave_15
 y 20
 end
 arch istone
@@ -260,7 +260,7 @@ end
 arch snow4
 y 35
 end
-arch blocked
+arch cave_15
 y 35
 end
 arch istone
@@ -269,7 +269,7 @@ end
 arch snow5
 y 36
 end
-arch blocked
+arch cave_15
 y 36
 end
 arch istone
@@ -278,109 +278,109 @@ end
 arch snow5
 y 37
 end
-arch blocked
+arch cave_15
 y 37
 end
 arch istone
 y 38
 end
-arch blocked
+arch cave_15
 y 38
 end
 arch istone
 y 39
 end
-arch blocked
+arch cave_15
 y 39
 end
 arch istone
 y 40
 end
-arch blocked
+arch cave_15
 y 40
 end
 arch istone
 y 41
 end
-arch blocked
+arch cave_15
 y 41
 end
 arch istone
 y 42
 end
-arch blocked
+arch cave_15
 y 42
 end
 arch istone
 y 43
 end
-arch blocked
+arch cave_15
 y 43
 end
 arch istone
 y 44
 end
-arch blocked
+arch cave_15
 y 44
 end
 arch istone
 y 45
 end
-arch blocked
+arch cave_15
 y 45
 end
 arch istone
 y 46
 end
-arch blocked
+arch cave_15
 y 46
 end
 arch istone
 y 47
 end
-arch blocked
+arch cave_15
 y 47
 end
 arch istone
 y 48
 end
-arch blocked
+arch cave_15
 y 48
 end
 arch istone
 y 49
 end
-arch blocked
+arch cave_15
 y 49
 end
 arch istone
 y 50
 end
-arch blocked
+arch cave_15
 y 50
 end
 arch istone
 y 51
 end
-arch blocked
+arch cave_15
 y 51
 end
 arch istone
 y 52
 end
-arch blocked
+arch cave_15
 y 52
 end
 arch istone
 y 53
 end
-arch blocked
+arch cave_15
 y 53
 end
 arch istone
 y 54
 end
-arch blocked
+arch cave_15
 y 54
 end
 arch istone
@@ -389,7 +389,7 @@ end
 arch snow5
 y 55
 end
-arch blocked
+arch cave_15
 y 55
 end
 arch istone
@@ -398,7 +398,7 @@ end
 arch snow5
 y 56
 end
-arch blocked
+arch cave_15
 y 56
 end
 arch istone
@@ -407,43 +407,43 @@ end
 arch snow4
 y 57
 end
-arch blocked
+arch cave_15
 y 57
 end
 arch snow
 y 58
 end
-arch blocked
+arch cave_15
 y 58
 end
 arch snow
 y 59
 end
-arch blocked
+arch cave_15
 y 59
 end
 arch snow
 y 60
 end
-arch blocked
+arch cave_15
 y 60
 end
 arch snow
 y 61
 end
-arch blocked
+arch cave_15
 y 61
 end
 arch snow
 y 62
 end
-arch blocked
+arch cave_15
 y 62
 end
 arch snow
 y 63
 end
-arch blocked
+arch cave_15
 y 63
 end
 arch istone
@@ -524,7 +524,7 @@ arch snow
 x 1
 y 8
 end
-arch blocked
+arch cave_15
 x 1
 y 8
 end
@@ -532,7 +532,7 @@ arch snow
 x 1
 y 9
 end
-arch blocked
+arch cave_15
 x 1
 y 9
 end
@@ -540,7 +540,7 @@ arch snow
 x 1
 y 10
 end
-arch blocked
+arch cave_15
 x 1
 y 10
 end
@@ -548,7 +548,7 @@ arch snow
 x 1
 y 11
 end
-arch blocked
+arch cave_15
 x 1
 y 11
 end
@@ -556,7 +556,7 @@ arch snow
 x 1
 y 12
 end
-arch blocked
+arch cave_15
 x 1
 y 12
 end
@@ -850,7 +850,7 @@ arch istone
 x 1
 y 45
 end
-arch blocked
+arch cave_15
 x 1
 y 45
 end
@@ -858,7 +858,7 @@ arch istone
 x 1
 y 46
 end
-arch blocked
+arch cave_15
 x 1
 y 46
 end
@@ -866,7 +866,7 @@ arch istone
 x 1
 y 47
 end
-arch blocked
+arch cave_15
 x 1
 y 47
 end
@@ -874,7 +874,7 @@ arch istone
 x 1
 y 48
 end
-arch blocked
+arch cave_15
 x 1
 y 48
 end
@@ -882,7 +882,7 @@ arch istone
 x 1
 y 49
 end
-arch blocked
+arch cave_15
 x 1
 y 49
 end
@@ -890,7 +890,7 @@ arch istone
 x 1
 y 50
 end
-arch blocked
+arch cave_15
 x 1
 y 50
 end
@@ -898,7 +898,7 @@ arch istone
 x 1
 y 51
 end
-arch blocked
+arch cave_15
 x 1
 y 51
 end
@@ -906,7 +906,7 @@ arch istone
 x 1
 y 52
 end
-arch blocked
+arch cave_15
 x 1
 y 52
 end
@@ -914,7 +914,7 @@ arch istone
 x 1
 y 53
 end
-arch blocked
+arch cave_15
 x 1
 y 53
 end
@@ -926,7 +926,7 @@ arch snow5
 x 1
 y 54
 end
-arch blocked
+arch cave_15
 x 1
 y 54
 end
@@ -934,7 +934,7 @@ arch istone
 x 1
 y 55
 end
-arch blocked
+arch cave_15
 x 1
 y 55
 end
@@ -946,7 +946,7 @@ arch snow5
 x 1
 y 56
 end
-arch blocked
+arch cave_15
 x 1
 y 56
 end
@@ -958,7 +958,7 @@ arch snow4
 x 1
 y 57
 end
-arch blocked
+arch cave_15
 x 1
 y 57
 end
@@ -966,7 +966,7 @@ arch snow
 x 1
 y 58
 end
-arch blocked
+arch cave_15
 x 1
 y 58
 end
@@ -974,7 +974,7 @@ arch snow
 x 1
 y 59
 end
-arch blocked
+arch cave_15
 x 1
 y 59
 end
@@ -982,7 +982,7 @@ arch snow
 x 1
 y 60
 end
-arch blocked
+arch cave_15
 x 1
 y 60
 end
@@ -990,7 +990,7 @@ arch snow
 x 1
 y 61
 end
-arch blocked
+arch cave_15
 x 1
 y 61
 end
@@ -998,7 +998,7 @@ arch snow
 x 1
 y 62
 end
-arch blocked
+arch cave_15
 x 1
 y 62
 end
@@ -1006,7 +1006,7 @@ arch snow
 x 1
 y 63
 end
-arch blocked
+arch cave_15
 x 1
 y 63
 end
@@ -1180,7 +1180,7 @@ arch snow
 x 2
 y 9
 end
-arch blocked
+arch cave_15
 x 2
 y 9
 end
@@ -1188,7 +1188,7 @@ arch snow
 x 2
 y 10
 end
-arch blocked
+arch cave_15
 x 2
 y 10
 end
@@ -1196,7 +1196,7 @@ arch snow
 x 2
 y 11
 end
-arch blocked
+arch cave_15
 x 2
 y 11
 end
@@ -1652,7 +1652,7 @@ arch istone
 x 2
 y 50
 end
-arch blocked
+arch cave_15
 x 2
 y 50
 end
@@ -1660,7 +1660,7 @@ arch istone
 x 2
 y 51
 end
-arch blocked
+arch cave_15
 x 2
 y 51
 end
@@ -1672,7 +1672,7 @@ arch snow5
 x 2
 y 52
 end
-arch blocked
+arch cave_15
 x 2
 y 52
 end
@@ -1680,7 +1680,7 @@ arch istone
 x 2
 y 53
 end
-arch blocked
+arch cave_15
 x 2
 y 53
 end
@@ -1688,7 +1688,7 @@ arch istone
 x 2
 y 54
 end
-arch blocked
+arch cave_15
 x 2
 y 54
 end
@@ -1700,7 +1700,7 @@ arch snow5
 x 2
 y 55
 end
-arch blocked
+arch cave_15
 x 2
 y 55
 end
@@ -1712,7 +1712,7 @@ arch snow5
 x 2
 y 56
 end
-arch blocked
+arch cave_15
 x 2
 y 56
 end
@@ -1724,7 +1724,7 @@ arch snow4
 x 2
 y 57
 end
-arch blocked
+arch cave_15
 x 2
 y 57
 end
@@ -1732,7 +1732,7 @@ arch snow
 x 2
 y 58
 end
-arch blocked
+arch cave_15
 x 2
 y 58
 end
@@ -1740,7 +1740,7 @@ arch snow
 x 2
 y 59
 end
-arch blocked
+arch cave_15
 x 2
 y 59
 end
@@ -1748,7 +1748,7 @@ arch snow
 x 2
 y 60
 end
-arch blocked
+arch cave_15
 x 2
 y 60
 end
@@ -1756,7 +1756,7 @@ arch snow
 x 2
 y 61
 end
-arch blocked
+arch cave_15
 x 2
 y 61
 end
@@ -1764,7 +1764,7 @@ arch snow
 x 2
 y 62
 end
-arch blocked
+arch cave_15
 x 2
 y 62
 end
@@ -1772,7 +1772,7 @@ arch snow
 x 2
 y 63
 end
-arch blocked
+arch cave_15
 x 2
 y 63
 end
@@ -1852,7 +1852,7 @@ arch snow
 x 3
 y 9
 end
-arch blocked
+arch cave_15
 x 3
 y 9
 end
@@ -1860,7 +1860,7 @@ arch snow
 x 3
 y 10
 end
-arch blocked
+arch cave_15
 x 3
 y 10
 end
@@ -1868,7 +1868,7 @@ arch snow
 x 3
 y 11
 end
-arch blocked
+arch cave_15
 x 3
 y 11
 end
@@ -2280,7 +2280,7 @@ arch istone
 x 3
 y 54
 end
-arch blocked
+arch cave_15
 x 3
 y 54
 end
@@ -2292,7 +2292,7 @@ arch snow5
 x 3
 y 55
 end
-arch blocked
+arch cave_15
 x 3
 y 55
 end
@@ -2304,7 +2304,7 @@ arch snow4
 x 3
 y 56
 end
-arch blocked
+arch cave_15
 x 3
 y 56
 end
@@ -2316,7 +2316,7 @@ arch snow4
 x 3
 y 57
 end
-arch blocked
+arch cave_15
 x 3
 y 57
 end
@@ -2324,7 +2324,7 @@ arch snow
 x 3
 y 58
 end
-arch blocked
+arch cave_15
 x 3
 y 58
 end
@@ -2332,7 +2332,7 @@ arch snow
 x 3
 y 59
 end
-arch blocked
+arch cave_15
 x 3
 y 59
 end
@@ -2340,7 +2340,7 @@ arch snow
 x 3
 y 60
 end
-arch blocked
+arch cave_15
 x 3
 y 60
 end
@@ -2348,7 +2348,7 @@ arch snow
 x 3
 y 61
 end
-arch blocked
+arch cave_15
 x 3
 y 61
 end
@@ -2356,7 +2356,7 @@ arch snow
 x 3
 y 62
 end
-arch blocked
+arch cave_15
 x 3
 y 62
 end
@@ -2364,7 +2364,7 @@ arch snow
 x 3
 y 63
 end
-arch blocked
+arch cave_15
 x 3
 y 63
 end
@@ -2487,7 +2487,7 @@ arch snow
 x 4
 y 9
 end
-arch blocked
+arch cave_15
 x 4
 y 9
 end
@@ -2495,7 +2495,7 @@ arch snow
 x 4
 y 10
 end
-arch blocked
+arch cave_15
 x 4
 y 10
 end
@@ -2919,7 +2919,7 @@ arch snow5
 x 4
 y 55
 end
-arch blocked
+arch cave_15
 x 4
 y 55
 end
@@ -2931,7 +2931,7 @@ arch snow4
 x 4
 y 56
 end
-arch blocked
+arch cave_15
 x 4
 y 56
 end
@@ -2939,7 +2939,7 @@ arch snow
 x 4
 y 57
 end
-arch blocked
+arch cave_15
 x 4
 y 57
 end
@@ -2947,7 +2947,7 @@ arch snow
 x 4
 y 58
 end
-arch blocked
+arch cave_15
 x 4
 y 58
 end
@@ -2955,7 +2955,7 @@ arch snow
 x 4
 y 59
 end
-arch blocked
+arch cave_15
 x 4
 y 59
 end
@@ -2963,7 +2963,7 @@ arch snow
 x 4
 y 60
 end
-arch blocked
+arch cave_15
 x 4
 y 60
 end
@@ -2971,7 +2971,7 @@ arch snow
 x 4
 y 61
 end
-arch blocked
+arch cave_15
 x 4
 y 61
 end
@@ -2979,7 +2979,7 @@ arch snow
 x 4
 y 62
 end
-arch blocked
+arch cave_15
 x 4
 y 62
 end
@@ -2987,7 +2987,7 @@ arch snow
 x 4
 y 63
 end
-arch blocked
+arch cave_15
 x 4
 y 63
 end
@@ -3628,7 +3628,7 @@ arch snow4
 x 5
 y 56
 end
-arch blocked
+arch cave_15
 x 5
 y 56
 end
@@ -3636,7 +3636,7 @@ arch snow
 x 5
 y 57
 end
-arch blocked
+arch cave_15
 x 5
 y 57
 end
@@ -3644,7 +3644,7 @@ arch snow
 x 5
 y 58
 end
-arch blocked
+arch cave_15
 x 5
 y 58
 end
@@ -3652,7 +3652,7 @@ arch snow
 x 5
 y 59
 end
-arch blocked
+arch cave_15
 x 5
 y 59
 end
@@ -3660,7 +3660,7 @@ arch snow
 x 5
 y 60
 end
-arch blocked
+arch cave_15
 x 5
 y 60
 end
@@ -3668,7 +3668,7 @@ arch snow
 x 5
 y 61
 end
-arch blocked
+arch cave_15
 x 5
 y 61
 end
@@ -3676,7 +3676,7 @@ arch snow
 x 5
 y 62
 end
-arch blocked
+arch cave_15
 x 5
 y 62
 end
@@ -3684,7 +3684,7 @@ arch snow
 x 5
 y 63
 end
-arch blocked
+arch cave_15
 x 5
 y 63
 end
@@ -4133,7 +4133,7 @@ arch snow4
 x 6
 y 56
 end
-arch blocked
+arch cave_15
 x 6
 y 56
 end
@@ -4141,7 +4141,7 @@ arch snow
 x 6
 y 57
 end
-arch blocked
+arch cave_15
 x 6
 y 57
 end
@@ -4149,7 +4149,7 @@ arch snow
 x 6
 y 58
 end
-arch blocked
+arch cave_15
 x 6
 y 58
 end
@@ -4157,7 +4157,7 @@ arch snow
 x 6
 y 59
 end
-arch blocked
+arch cave_15
 x 6
 y 59
 end
@@ -4165,7 +4165,7 @@ arch snow
 x 6
 y 60
 end
-arch blocked
+arch cave_15
 x 6
 y 60
 end
@@ -4173,7 +4173,7 @@ arch snow
 x 6
 y 61
 end
-arch blocked
+arch cave_15
 x 6
 y 61
 end
@@ -4181,7 +4181,7 @@ arch snow
 x 6
 y 62
 end
-arch blocked
+arch cave_15
 x 6
 y 62
 end
@@ -4189,7 +4189,7 @@ arch snow
 x 6
 y 63
 end
-arch blocked
+arch cave_15
 x 6
 y 63
 end
@@ -4619,7 +4619,7 @@ arch snow
 x 7
 y 56
 end
-arch blocked
+arch cave_15
 x 7
 y 56
 end
@@ -4627,7 +4627,7 @@ arch snow
 x 7
 y 57
 end
-arch blocked
+arch cave_15
 x 7
 y 57
 end
@@ -4635,7 +4635,7 @@ arch snow
 x 7
 y 58
 end
-arch blocked
+arch cave_15
 x 7
 y 58
 end
@@ -4643,7 +4643,7 @@ arch snow
 x 7
 y 59
 end
-arch blocked
+arch cave_15
 x 7
 y 59
 end
@@ -4651,7 +4651,7 @@ arch snow
 x 7
 y 60
 end
-arch blocked
+arch cave_15
 x 7
 y 60
 end
@@ -4659,7 +4659,7 @@ arch snow
 x 7
 y 61
 end
-arch blocked
+arch cave_15
 x 7
 y 61
 end
@@ -4667,7 +4667,7 @@ arch snow
 x 7
 y 62
 end
-arch blocked
+arch cave_15
 x 7
 y 62
 end
@@ -4675,7 +4675,7 @@ arch snow
 x 7
 y 63
 end
-arch blocked
+arch cave_15
 x 7
 y 63
 end
@@ -4805,7 +4805,7 @@ arch snow
 x 8
 y 21
 end
-arch blocked
+arch cave_15
 x 8
 y 21
 end
@@ -4813,7 +4813,7 @@ arch snow
 x 8
 y 22
 end
-arch blocked
+arch cave_15
 x 8
 y 22
 end
@@ -4925,7 +4925,7 @@ arch snow
 x 8
 y 39
 end
-arch blocked
+arch cave_15
 x 8
 y 39
 end
@@ -4933,7 +4933,7 @@ arch snow
 x 8
 y 40
 end
-arch blocked
+arch cave_15
 x 8
 y 40
 end
@@ -4945,7 +4945,7 @@ arch snow4
 x 8
 y 41
 end
-arch blocked
+arch cave_15
 x 8
 y 41
 end
@@ -5091,7 +5091,7 @@ arch snow
 x 8
 y 56
 end
-arch blocked
+arch cave_15
 x 8
 y 56
 end
@@ -5099,7 +5099,7 @@ arch snow
 x 8
 y 57
 end
-arch blocked
+arch cave_15
 x 8
 y 57
 end
@@ -5107,7 +5107,7 @@ arch snow
 x 8
 y 58
 end
-arch blocked
+arch cave_15
 x 8
 y 58
 end
@@ -5115,7 +5115,7 @@ arch snow
 x 8
 y 59
 end
-arch blocked
+arch cave_15
 x 8
 y 59
 end
@@ -5123,7 +5123,7 @@ arch snow
 x 8
 y 60
 end
-arch blocked
+arch cave_15
 x 8
 y 60
 end
@@ -5131,7 +5131,7 @@ arch snow
 x 8
 y 61
 end
-arch blocked
+arch cave_15
 x 8
 y 61
 end
@@ -5139,7 +5139,7 @@ arch snow
 x 8
 y 62
 end
-arch blocked
+arch cave_15
 x 8
 y 62
 end
@@ -5147,7 +5147,7 @@ arch snow
 x 8
 y 63
 end
-arch blocked
+arch cave_15
 x 8
 y 63
 end
@@ -5285,7 +5285,7 @@ arch snow
 x 9
 y 21
 end
-arch blocked
+arch cave_15
 x 9
 y 21
 end
@@ -5293,7 +5293,7 @@ arch snow
 x 9
 y 22
 end
-arch blocked
+arch cave_15
 x 9
 y 22
 end
@@ -5393,7 +5393,7 @@ arch snow
 x 9
 y 39
 end
-arch blocked
+arch cave_15
 x 9
 y 39
 end
@@ -5401,7 +5401,7 @@ arch snow
 x 9
 y 40
 end
-arch blocked
+arch cave_15
 x 9
 y 40
 end
@@ -5409,7 +5409,7 @@ arch snow
 x 9
 y 41
 end
-arch blocked
+arch cave_15
 x 9
 y 41
 end
@@ -5417,7 +5417,7 @@ arch snow
 x 9
 y 42
 end
-arch blocked
+arch cave_15
 x 9
 y 42
 end
@@ -5553,7 +5553,7 @@ arch snow
 x 9
 y 58
 end
-arch blocked
+arch cave_15
 x 9
 y 58
 end
@@ -5561,7 +5561,7 @@ arch snow
 x 9
 y 59
 end
-arch blocked
+arch cave_15
 x 9
 y 59
 end
@@ -5569,7 +5569,7 @@ arch snow
 x 9
 y 60
 end
-arch blocked
+arch cave_15
 x 9
 y 60
 end
@@ -5577,7 +5577,7 @@ arch snow
 x 9
 y 61
 end
-arch blocked
+arch cave_15
 x 9
 y 61
 end
@@ -5585,7 +5585,7 @@ arch snow
 x 9
 y 62
 end
-arch blocked
+arch cave_15
 x 9
 y 62
 end
@@ -5593,14 +5593,14 @@ arch snow
 x 9
 y 63
 end
-arch blocked
+arch cave_15
 x 9
 y 63
 end
 arch snow
 x 10
 end
-arch blocked
+arch cave_15
 x 10
 end
 arch snow
@@ -5747,7 +5747,7 @@ arch snow
 x 10
 y 20
 end
-arch blocked
+arch cave_15
 x 10
 y 20
 end
@@ -5893,7 +5893,7 @@ arch snow
 x 10
 y 39
 end
-arch blocked
+arch cave_15
 x 10
 y 39
 end
@@ -5901,7 +5901,7 @@ arch snow
 x 10
 y 40
 end
-arch blocked
+arch cave_15
 x 10
 y 40
 end
@@ -5909,7 +5909,7 @@ arch snow
 x 10
 y 41
 end
-arch blocked
+arch cave_15
 x 10
 y 41
 end
@@ -5917,7 +5917,7 @@ arch snow
 x 10
 y 42
 end
-arch blocked
+arch cave_15
 x 10
 y 42
 end
@@ -6001,7 +6001,7 @@ arch snow
 x 10
 y 59
 end
-arch blocked
+arch cave_15
 x 10
 y 59
 end
@@ -6009,7 +6009,7 @@ arch snow
 x 10
 y 60
 end
-arch blocked
+arch cave_15
 x 10
 y 60
 end
@@ -6017,7 +6017,7 @@ arch snow
 x 10
 y 61
 end
-arch blocked
+arch cave_15
 x 10
 y 61
 end
@@ -6025,7 +6025,7 @@ arch snow
 x 10
 y 62
 end
-arch blocked
+arch cave_15
 x 10
 y 62
 end
@@ -6033,14 +6033,14 @@ arch snow
 x 10
 y 63
 end
-arch blocked
+arch cave_15
 x 10
 y 63
 end
 arch snow
 x 11
 end
-arch blocked
+arch cave_15
 x 11
 end
 arch snow
@@ -6319,7 +6319,7 @@ arch snow
 x 11
 y 39
 end
-arch blocked
+arch cave_15
 x 11
 y 39
 end
@@ -6327,7 +6327,7 @@ arch snow
 x 11
 y 40
 end
-arch blocked
+arch cave_15
 x 11
 y 40
 end
@@ -6335,7 +6335,7 @@ arch snow
 x 11
 y 41
 end
-arch blocked
+arch cave_15
 x 11
 y 41
 end
@@ -6343,7 +6343,7 @@ arch snow
 x 11
 y 42
 end
-arch blocked
+arch cave_15
 x 11
 y 42
 end
@@ -6445,7 +6445,7 @@ arch snow
 x 11
 y 59
 end
-arch blocked
+arch cave_15
 x 11
 y 59
 end
@@ -6453,7 +6453,7 @@ arch snow
 x 11
 y 60
 end
-arch blocked
+arch cave_15
 x 11
 y 60
 end
@@ -6461,7 +6461,7 @@ arch snow
 x 11
 y 61
 end
-arch blocked
+arch cave_15
 x 11
 y 61
 end
@@ -6469,7 +6469,7 @@ arch snow
 x 11
 y 62
 end
-arch blocked
+arch cave_15
 x 11
 y 62
 end
@@ -6477,14 +6477,14 @@ arch snow
 x 11
 y 63
 end
-arch blocked
+arch cave_15
 x 11
 y 63
 end
 arch snow
 x 12
 end
-arch blocked
+arch cave_15
 x 12
 end
 arch snow
@@ -6895,7 +6895,7 @@ arch snow
 x 12
 y 38
 end
-arch blocked
+arch cave_15
 x 12
 y 38
 end
@@ -6903,7 +6903,7 @@ arch snow
 x 12
 y 39
 end
-arch blocked
+arch cave_15
 x 12
 y 39
 end
@@ -6911,7 +6911,7 @@ arch snow
 x 12
 y 40
 end
-arch blocked
+arch cave_15
 x 12
 y 40
 end
@@ -6919,7 +6919,7 @@ arch snow
 x 12
 y 41
 end
-arch blocked
+arch cave_15
 x 12
 y 41
 end
@@ -6927,7 +6927,7 @@ arch snow
 x 12
 y 42
 end
-arch blocked
+arch cave_15
 x 12
 y 42
 end
@@ -7035,7 +7035,7 @@ arch snow
 x 12
 y 59
 end
-arch blocked
+arch cave_15
 x 12
 y 59
 end
@@ -7043,7 +7043,7 @@ arch snow
 x 12
 y 60
 end
-arch blocked
+arch cave_15
 x 12
 y 60
 end
@@ -7051,7 +7051,7 @@ arch snow
 x 12
 y 61
 end
-arch blocked
+arch cave_15
 x 12
 y 61
 end
@@ -7059,7 +7059,7 @@ arch snow
 x 12
 y 62
 end
-arch blocked
+arch cave_15
 x 12
 y 62
 end
@@ -7067,14 +7067,14 @@ arch snow
 x 12
 y 63
 end
-arch blocked
+arch cave_15
 x 12
 y 63
 end
 arch snow
 x 13
 end
-arch blocked
+arch cave_15
 x 13
 end
 arch snow
@@ -7385,7 +7385,7 @@ arch snow
 x 13
 y 38
 end
-arch blocked
+arch cave_15
 x 13
 y 38
 end
@@ -7393,7 +7393,7 @@ arch snow
 x 13
 y 39
 end
-arch blocked
+arch cave_15
 x 13
 y 39
 end
@@ -7401,7 +7401,7 @@ arch snow
 x 13
 y 40
 end
-arch blocked
+arch cave_15
 x 13
 y 40
 end
@@ -7409,7 +7409,7 @@ arch snow
 x 13
 y 41
 end
-arch blocked
+arch cave_15
 x 13
 y 41
 end
@@ -7417,7 +7417,7 @@ arch snow
 x 13
 y 42
 end
-arch blocked
+arch cave_15
 x 13
 y 42
 end
@@ -7525,7 +7525,7 @@ arch snow
 x 13
 y 59
 end
-arch blocked
+arch cave_15
 x 13
 y 59
 end
@@ -7533,7 +7533,7 @@ arch snow
 x 13
 y 60
 end
-arch blocked
+arch cave_15
 x 13
 y 60
 end
@@ -7541,7 +7541,7 @@ arch snow
 x 13
 y 61
 end
-arch blocked
+arch cave_15
 x 13
 y 61
 end
@@ -7549,7 +7549,7 @@ arch snow
 x 13
 y 62
 end
-arch blocked
+arch cave_15
 x 13
 y 62
 end
@@ -7557,14 +7557,14 @@ arch snow
 x 13
 y 63
 end
-arch blocked
+arch cave_15
 x 13
 y 63
 end
 arch snow
 x 14
 end
-arch blocked
+arch cave_15
 x 14
 end
 arch snow
@@ -7711,7 +7711,7 @@ arch snow
 x 14
 y 20
 end
-arch blocked
+arch cave_15
 x 14
 y 20
 end
@@ -7857,7 +7857,7 @@ arch snow
 x 14
 y 38
 end
-arch blocked
+arch cave_15
 x 14
 y 38
 end
@@ -7865,7 +7865,7 @@ arch snow
 x 14
 y 39
 end
-arch blocked
+arch cave_15
 x 14
 y 39
 end
@@ -7873,7 +7873,7 @@ arch snow
 x 14
 y 40
 end
-arch blocked
+arch cave_15
 x 14
 y 40
 end
@@ -7881,7 +7881,7 @@ arch snow
 x 14
 y 41
 end
-arch blocked
+arch cave_15
 x 14
 y 41
 end
@@ -7977,7 +7977,7 @@ arch snow
 x 14
 y 59
 end
-arch blocked
+arch cave_15
 x 14
 y 59
 end
@@ -7985,7 +7985,7 @@ arch snow
 x 14
 y 60
 end
-arch blocked
+arch cave_15
 x 14
 y 60
 end
@@ -7993,7 +7993,7 @@ arch snow
 x 14
 y 61
 end
-arch blocked
+arch cave_15
 x 14
 y 61
 end
@@ -8001,7 +8001,7 @@ arch snow
 x 14
 y 62
 end
-arch blocked
+arch cave_15
 x 14
 y 62
 end
@@ -8009,14 +8009,14 @@ arch snow
 x 14
 y 63
 end
-arch blocked
+arch cave_15
 x 14
 y 63
 end
 arch snow
 x 15
 end
-arch blocked
+arch cave_15
 x 15
 end
 arch snow
@@ -8161,7 +8161,7 @@ arch snow
 x 15
 y 20
 end
-arch blocked
+arch cave_15
 x 15
 y 20
 end
@@ -8169,7 +8169,7 @@ arch snow
 x 15
 y 21
 end
-arch blocked
+arch cave_15
 x 15
 y 21
 end
@@ -8177,7 +8177,7 @@ arch snow
 x 15
 y 22
 end
-arch blocked
+arch cave_15
 x 15
 y 22
 end
@@ -8185,7 +8185,7 @@ arch snow
 x 15
 y 23
 end
-arch blocked
+arch cave_15
 x 15
 y 23
 end
@@ -8309,7 +8309,7 @@ arch snow
 x 15
 y 38
 end
-arch blocked
+arch cave_15
 x 15
 y 38
 end
@@ -8317,7 +8317,7 @@ arch snow
 x 15
 y 39
 end
-arch blocked
+arch cave_15
 x 15
 y 39
 end
@@ -8325,7 +8325,7 @@ arch snow
 x 15
 y 40
 end
-arch blocked
+arch cave_15
 x 15
 y 40
 end
@@ -8333,7 +8333,7 @@ arch snow
 x 15
 y 41
 end
-arch blocked
+arch cave_15
 x 15
 y 41
 end
@@ -8439,7 +8439,7 @@ arch snow
 x 15
 y 60
 end
-arch blocked
+arch cave_15
 x 15
 y 60
 end
@@ -8447,7 +8447,7 @@ arch snow
 x 15
 y 61
 end
-arch blocked
+arch cave_15
 x 15
 y 61
 end
@@ -8455,7 +8455,7 @@ arch snow
 x 15
 y 62
 end
-arch blocked
+arch cave_15
 x 15
 y 62
 end
@@ -8463,14 +8463,14 @@ arch snow
 x 15
 y 63
 end
-arch blocked
+arch cave_15
 x 15
 y 63
 end
 arch snow
 x 16
 end
-arch blocked
+arch cave_15
 x 16
 end
 arch snow
@@ -8669,7 +8669,7 @@ arch snow
 x 16
 y 19
 end
-arch blocked
+arch cave_15
 x 16
 y 19
 end
@@ -8677,7 +8677,7 @@ arch snow
 x 16
 y 20
 end
-arch blocked
+arch cave_15
 x 16
 y 20
 end
@@ -8685,7 +8685,7 @@ arch snow
 x 16
 y 21
 end
-arch blocked
+arch cave_15
 x 16
 y 21
 end
@@ -8693,7 +8693,7 @@ arch snow
 x 16
 y 22
 end
-arch blocked
+arch cave_15
 x 16
 y 22
 end
@@ -8701,7 +8701,7 @@ arch snow
 x 16
 y 23
 end
-arch blocked
+arch cave_15
 x 16
 y 23
 end
@@ -8815,7 +8815,7 @@ arch snow
 x 16
 y 40
 end
-arch blocked
+arch cave_15
 x 16
 y 40
 end
@@ -8823,7 +8823,7 @@ arch snow
 x 16
 y 41
 end
-arch blocked
+arch cave_15
 x 16
 y 41
 end
@@ -8947,7 +8947,7 @@ arch snow
 x 16
 y 60
 end
-arch blocked
+arch cave_15
 x 16
 y 60
 end
@@ -8955,7 +8955,7 @@ arch snow
 x 16
 y 61
 end
-arch blocked
+arch cave_15
 x 16
 y 61
 end
@@ -8963,7 +8963,7 @@ arch snow
 x 16
 y 62
 end
-arch blocked
+arch cave_15
 x 16
 y 62
 end
@@ -8971,14 +8971,14 @@ arch snow
 x 16
 y 63
 end
-arch blocked
+arch cave_15
 x 16
 y 63
 end
 arch snow
 x 17
 end
-arch blocked
+arch cave_15
 x 17
 end
 arch snow
@@ -9111,7 +9111,7 @@ arch istone
 x 17
 y 12
 end
-arch blocked
+arch cave_15
 x 17
 y 12
 end
@@ -9181,7 +9181,7 @@ arch snow
 x 17
 y 19
 end
-arch blocked
+arch cave_15
 x 17
 y 19
 end
@@ -9189,7 +9189,7 @@ arch snow
 x 17
 y 20
 end
-arch blocked
+arch cave_15
 x 17
 y 20
 end
@@ -9197,7 +9197,7 @@ arch snow
 x 17
 y 21
 end
-arch blocked
+arch cave_15
 x 17
 y 21
 end
@@ -9205,7 +9205,7 @@ arch snow
 x 17
 y 22
 end
-arch blocked
+arch cave_15
 x 17
 y 22
 end
@@ -9213,7 +9213,7 @@ arch snow
 x 17
 y 23
 end
-arch blocked
+arch cave_15
 x 17
 y 23
 end
@@ -9293,7 +9293,7 @@ arch snow
 x 17
 y 40
 end
-arch blocked
+arch cave_15
 x 17
 y 40
 end
@@ -9301,7 +9301,7 @@ arch snow
 x 17
 y 41
 end
-arch blocked
+arch cave_15
 x 17
 y 41
 end
@@ -9421,7 +9421,7 @@ arch snow
 x 17
 y 60
 end
-arch blocked
+arch cave_15
 x 17
 y 60
 end
@@ -9429,7 +9429,7 @@ arch snow
 x 17
 y 61
 end
-arch blocked
+arch cave_15
 x 17
 y 61
 end
@@ -9437,7 +9437,7 @@ arch snow
 x 17
 y 62
 end
-arch blocked
+arch cave_15
 x 17
 y 62
 end
@@ -9445,14 +9445,14 @@ arch snow
 x 17
 y 63
 end
-arch blocked
+arch cave_15
 x 17
 y 63
 end
 arch snow
 x 18
 end
-arch blocked
+arch cave_15
 x 18
 end
 arch snow
@@ -9543,7 +9543,7 @@ arch snow5
 x 18
 y 12
 end
-arch blocked
+arch cave_15
 x 18
 y 12
 end
@@ -9591,7 +9591,7 @@ arch snow
 x 18
 y 19
 end
-arch blocked
+arch cave_15
 x 18
 y 19
 end
@@ -9599,7 +9599,7 @@ arch snow
 x 18
 y 20
 end
-arch blocked
+arch cave_15
 x 18
 y 20
 end
@@ -9607,7 +9607,7 @@ arch snow
 x 18
 y 21
 end
-arch blocked
+arch cave_15
 x 18
 y 21
 end
@@ -9615,7 +9615,7 @@ arch snow
 x 18
 y 22
 end
-arch blocked
+arch cave_15
 x 18
 y 22
 end
@@ -9623,7 +9623,7 @@ arch snow
 x 18
 y 23
 end
-arch blocked
+arch cave_15
 x 18
 y 23
 end
@@ -9887,7 +9887,7 @@ arch snow
 x 18
 y 60
 end
-arch blocked
+arch cave_15
 x 18
 y 60
 end
@@ -9895,7 +9895,7 @@ arch snow
 x 18
 y 61
 end
-arch blocked
+arch cave_15
 x 18
 y 61
 end
@@ -9903,7 +9903,7 @@ arch snow
 x 18
 y 62
 end
-arch blocked
+arch cave_15
 x 18
 y 62
 end
@@ -9915,14 +9915,14 @@ arch snow4
 x 18
 y 63
 end
-arch blocked
+arch cave_15
 x 18
 y 63
 end
 arch snow
 x 19
 end
-arch blocked
+arch cave_15
 x 19
 end
 arch snow
@@ -10061,7 +10061,7 @@ arch istone
 x 19
 y 11
 end
-arch blocked
+arch cave_15
 x 19
 y 11
 end
@@ -10069,7 +10069,7 @@ arch istone
 x 19
 y 12
 end
-arch blocked
+arch cave_15
 x 19
 y 12
 end
@@ -10135,7 +10135,7 @@ arch snow
 x 19
 y 19
 end
-arch blocked
+arch cave_15
 x 19
 y 19
 end
@@ -10143,7 +10143,7 @@ arch snow
 x 19
 y 20
 end
-arch blocked
+arch cave_15
 x 19
 y 20
 end
@@ -10151,7 +10151,7 @@ arch snow
 x 19
 y 21
 end
-arch blocked
+arch cave_15
 x 19
 y 21
 end
@@ -10159,7 +10159,7 @@ arch snow
 x 19
 y 22
 end
-arch blocked
+arch cave_15
 x 19
 y 22
 end
@@ -10167,7 +10167,7 @@ arch snow
 x 19
 y 23
 end
-arch blocked
+arch cave_15
 x 19
 y 23
 end
@@ -10361,7 +10361,7 @@ arch snow
 x 19
 y 60
 end
-arch blocked
+arch cave_15
 x 19
 y 60
 end
@@ -10373,7 +10373,7 @@ arch snow4
 x 19
 y 61
 end
-arch blocked
+arch cave_15
 x 19
 y 61
 end
@@ -10385,7 +10385,7 @@ arch snow4
 x 19
 y 62
 end
-arch blocked
+arch cave_15
 x 19
 y 62
 end
@@ -10397,14 +10397,14 @@ arch snow4
 x 19
 y 63
 end
-arch blocked
+arch cave_15
 x 19
 y 63
 end
 arch snow
 x 20
 end
-arch blocked
+arch cave_15
 x 20
 end
 arch snow
@@ -10537,7 +10537,7 @@ arch snow5
 x 20
 y 11
 end
-arch blocked
+arch cave_15
 x 20
 y 11
 end
@@ -10549,7 +10549,7 @@ arch snow5
 x 20
 y 12
 end
-arch blocked
+arch cave_15
 x 20
 y 12
 end
@@ -10629,7 +10629,7 @@ arch snow
 x 20
 y 22
 end
-arch blocked
+arch cave_15
 x 20
 y 22
 end
@@ -10637,7 +10637,7 @@ arch snow
 x 20
 y 23
 end
-arch blocked
+arch cave_15
 x 20
 y 23
 end
@@ -10921,7 +10921,7 @@ arch snow4
 x 20
 y 60
 end
-arch blocked
+arch cave_15
 x 20
 y 60
 end
@@ -10933,7 +10933,7 @@ arch snow4
 x 20
 y 61
 end
-arch blocked
+arch cave_15
 x 20
 y 61
 end
@@ -10945,7 +10945,7 @@ arch snow5
 x 20
 y 62
 end
-arch blocked
+arch cave_15
 x 20
 y 62
 end
@@ -10957,14 +10957,14 @@ arch snow5
 x 20
 y 63
 end
-arch blocked
+arch cave_15
 x 20
 y 63
 end
 arch snow
 x 21
 end
-arch blocked
+arch cave_15
 x 21
 end
 arch snow
@@ -11051,7 +11051,7 @@ arch snow4
 x 21
 y 11
 end
-arch blocked
+arch cave_15
 x 21
 y 11
 end
@@ -11063,7 +11063,7 @@ arch snow4
 x 21
 y 12
 end
-arch blocked
+arch cave_15
 x 21
 y 12
 end
@@ -11075,7 +11075,7 @@ arch snow4
 x 21
 y 13
 end
-arch blocked
+arch cave_15
 x 21
 y 13
 end
@@ -11459,7 +11459,7 @@ arch snow4
 x 21
 y 60
 end
-arch blocked
+arch cave_15
 x 21
 y 60
 end
@@ -11471,7 +11471,7 @@ arch snow5
 x 21
 y 61
 end
-arch blocked
+arch cave_15
 x 21
 y 61
 end
@@ -11483,7 +11483,7 @@ arch snow5
 x 21
 y 62
 end
-arch blocked
+arch cave_15
 x 21
 y 62
 end
@@ -11491,21 +11491,21 @@ arch istone
 x 21
 y 63
 end
-arch blocked
+arch cave_15
 x 21
 y 63
 end
 arch snow
 x 22
 end
-arch blocked
+arch cave_15
 x 22
 end
 arch snow
 x 22
 y 1
 end
-arch blocked
+arch cave_15
 x 22
 y 1
 end
@@ -11609,7 +11609,7 @@ arch snow4
 x 22
 y 11
 end
-arch blocked
+arch cave_15
 x 22
 y 11
 end
@@ -11617,7 +11617,7 @@ arch snow
 x 22
 y 12
 end
-arch blocked
+arch cave_15
 x 22
 y 12
 end
@@ -11625,7 +11625,7 @@ arch snow
 x 22
 y 13
 end
-arch blocked
+arch cave_15
 x 22
 y 13
 end
@@ -12005,7 +12005,7 @@ arch snow5
 x 22
 y 60
 end
-arch blocked
+arch cave_15
 x 22
 y 60
 end
@@ -12017,7 +12017,7 @@ arch snow5
 x 22
 y 61
 end
-arch blocked
+arch cave_15
 x 22
 y 61
 end
@@ -12025,7 +12025,7 @@ arch istone
 x 22
 y 62
 end
-arch blocked
+arch cave_15
 x 22
 y 62
 end
@@ -12033,21 +12033,21 @@ arch istone
 x 22
 y 63
 end
-arch blocked
+arch cave_15
 x 22
 y 63
 end
 arch snow
 x 23
 end
-arch blocked
+arch cave_15
 x 23
 end
 arch snow
 x 23
 y 1
 end
-arch blocked
+arch cave_15
 x 23
 y 1
 end
@@ -12113,7 +12113,7 @@ arch snow
 x 23
 y 11
 end
-arch blocked
+arch cave_15
 x 23
 y 11
 end
@@ -12121,7 +12121,7 @@ arch snow
 x 23
 y 12
 end
-arch blocked
+arch cave_15
 x 23
 y 12
 end
@@ -12129,7 +12129,7 @@ arch snow
 x 23
 y 13
 end
-arch blocked
+arch cave_15
 x 23
 y 13
 end
@@ -12477,7 +12477,7 @@ arch snow5
 x 23
 y 60
 end
-arch blocked
+arch cave_15
 x 23
 y 60
 end
@@ -12489,7 +12489,7 @@ arch snow5
 x 23
 y 61
 end
-arch blocked
+arch cave_15
 x 23
 y 61
 end
@@ -12497,7 +12497,7 @@ arch istone
 x 23
 y 62
 end
-arch blocked
+arch cave_15
 x 23
 y 62
 end
@@ -12505,21 +12505,21 @@ arch istone
 x 23
 y 63
 end
-arch blocked
+arch cave_15
 x 23
 y 63
 end
 arch snow
 x 24
 end
-arch blocked
+arch cave_15
 x 24
 end
 arch snow
 x 24
 y 1
 end
-arch blocked
+arch cave_15
 x 24
 y 1
 end
@@ -12579,7 +12579,7 @@ arch snow
 x 24
 y 12
 end
-arch blocked
+arch cave_15
 x 24
 y 12
 end
@@ -12587,7 +12587,7 @@ arch snow
 x 24
 y 13
 end
-arch blocked
+arch cave_15
 x 24
 y 13
 end
@@ -13077,7 +13077,7 @@ arch istone
 x 24
 y 61
 end
-arch blocked
+arch cave_15
 x 24
 y 61
 end
@@ -13085,7 +13085,7 @@ arch istone
 x 24
 y 62
 end
-arch blocked
+arch cave_15
 x 24
 y 62
 end
@@ -13093,21 +13093,21 @@ arch istone
 x 24
 y 63
 end
-arch blocked
+arch cave_15
 x 24
 y 63
 end
 arch snow
 x 25
 end
-arch blocked
+arch cave_15
 x 25
 end
 arch snow
 x 25
 y 1
 end
-arch blocked
+arch cave_15
 x 25
 y 1
 end
@@ -13191,7 +13191,7 @@ arch snow
 x 25
 y 12
 end
-arch blocked
+arch cave_15
 x 25
 y 12
 end
@@ -13199,7 +13199,7 @@ arch snow
 x 25
 y 13
 end
-arch blocked
+arch cave_15
 x 25
 y 13
 end
@@ -13365,7 +13365,7 @@ arch snow
 x 25
 y 32
 end
-arch blocked
+arch cave_15
 x 25
 y 32
 end
@@ -13373,7 +13373,7 @@ arch snow
 x 25
 y 33
 end
-arch blocked
+arch cave_15
 x 25
 y 33
 end
@@ -13381,7 +13381,7 @@ arch snow
 x 25
 y 34
 end
-arch blocked
+arch cave_15
 x 25
 y 34
 end
@@ -13655,21 +13655,21 @@ arch istone
 x 25
 y 63
 end
-arch blocked
+arch cave_15
 x 25
 y 63
 end
 arch snow
 x 26
 end
-arch blocked
+arch cave_15
 x 26
 end
 arch snow
 x 26
 y 1
 end
-arch blocked
+arch cave_15
 x 26
 y 1
 end
@@ -13725,7 +13725,7 @@ arch snow
 x 26
 y 12
 end
-arch blocked
+arch cave_15
 x 26
 y 12
 end
@@ -13733,7 +13733,7 @@ arch snow
 x 26
 y 13
 end
-arch blocked
+arch cave_15
 x 26
 y 13
 end
@@ -13899,7 +13899,7 @@ arch snow
 x 26
 y 30
 end
-arch blocked
+arch cave_15
 x 26
 y 30
 end
@@ -13931,7 +13931,7 @@ arch snow
 x 26
 y 34
 end
-arch blocked
+arch cave_15
 x 26
 y 34
 end
@@ -14184,14 +14184,14 @@ end
 arch snow
 x 27
 end
-arch blocked
+arch cave_15
 x 27
 end
 arch snow
 x 27
 y 1
 end
-arch blocked
+arch cave_15
 x 27
 y 1
 end
@@ -14261,7 +14261,7 @@ arch snow
 x 27
 y 12
 end
-arch blocked
+arch cave_15
 x 27
 y 12
 end
@@ -14269,7 +14269,7 @@ arch snow
 x 27
 y 13
 end
-arch blocked
+arch cave_15
 x 27
 y 13
 end
@@ -14982,14 +14982,14 @@ end
 arch snow
 x 28
 end
-arch blocked
+arch cave_15
 x 28
 end
 arch snow
 x 28
 y 1
 end
-arch blocked
+arch cave_15
 x 28
 y 1
 end
@@ -15467,7 +15467,7 @@ arch snow4
 x 28
 y 36
 end
-arch blocked
+arch cave_15
 x 28
 y 36
 end
@@ -15555,7 +15555,7 @@ arch snow
 x 28
 y 47
 end
-arch blocked
+arch cave_15
 x 28
 y 47
 end
@@ -15563,7 +15563,7 @@ arch snow
 x 28
 y 48
 end
-arch blocked
+arch cave_15
 x 28
 y 48
 end
@@ -15685,7 +15685,7 @@ end
 arch snow4
 x 29
 end
-arch blocked
+arch cave_15
 x 29
 end
 arch istone
@@ -15696,7 +15696,7 @@ arch snow4
 x 29
 y 1
 end
-arch blocked
+arch cave_15
 x 29
 y 1
 end
@@ -16082,7 +16082,7 @@ arch snow
 x 29
 y 36
 end
-arch blocked
+arch cave_15
 x 29
 y 36
 end
@@ -16158,7 +16158,7 @@ arch snow
 x 29
 y 45
 end
-arch blocked
+arch cave_15
 x 29
 y 45
 end
@@ -16166,7 +16166,7 @@ arch snow
 x 29
 y 46
 end
-arch blocked
+arch cave_15
 x 29
 y 46
 end
@@ -16174,7 +16174,7 @@ arch snow
 x 29
 y 47
 end
-arch blocked
+arch cave_15
 x 29
 y 47
 end
@@ -16182,7 +16182,7 @@ arch snow
 x 29
 y 48
 end
-arch blocked
+arch cave_15
 x 29
 y 48
 end
@@ -16422,7 +16422,7 @@ end
 arch snow5
 x 30
 end
-arch blocked
+arch cave_15
 x 30
 end
 arch istone
@@ -16433,7 +16433,7 @@ arch snow5
 x 30
 y 1
 end
-arch blocked
+arch cave_15
 x 30
 y 1
 end
@@ -16887,7 +16887,7 @@ arch snow
 x 30
 y 45
 end
-arch blocked
+arch cave_15
 x 30
 y 45
 end
@@ -16895,7 +16895,7 @@ arch snow
 x 30
 y 46
 end
-arch blocked
+arch cave_15
 x 30
 y 46
 end
@@ -16903,7 +16903,7 @@ arch snow
 x 30
 y 47
 end
-arch blocked
+arch cave_15
 x 30
 y 47
 end
@@ -16911,7 +16911,7 @@ arch snow
 x 30
 y 48
 end
-arch blocked
+arch cave_15
 x 30
 y 48
 end
@@ -17160,7 +17160,7 @@ end
 arch istone
 x 31
 end
-arch blocked
+arch cave_15
 x 31
 end
 arch istone
@@ -17171,7 +17171,7 @@ arch snow5
 x 31
 y 1
 end
-arch blocked
+arch cave_15
 x 31
 y 1
 end
@@ -17183,7 +17183,7 @@ arch snow5
 x 31
 y 2
 end
-arch blocked
+arch cave_15
 x 31
 y 2
 end
@@ -17491,7 +17491,7 @@ arch snow
 x 31
 y 34
 end
-arch blocked
+arch cave_15
 x 31
 y 34
 end
@@ -17499,7 +17499,7 @@ arch snow
 x 31
 y 35
 end
-arch blocked
+arch cave_15
 x 31
 y 35
 end
@@ -17561,7 +17561,7 @@ arch snow
 x 31
 y 44
 end
-arch blocked
+arch cave_15
 x 31
 y 44
 end
@@ -17569,7 +17569,7 @@ arch snow
 x 31
 y 45
 end
-arch blocked
+arch cave_15
 x 31
 y 45
 end
@@ -17577,7 +17577,7 @@ arch snow
 x 31
 y 46
 end
-arch blocked
+arch cave_15
 x 31
 y 46
 end
@@ -17585,7 +17585,7 @@ arch snow
 x 31
 y 47
 end
-arch blocked
+arch cave_15
 x 31
 y 47
 end
@@ -17593,7 +17593,7 @@ arch snow
 x 31
 y 48
 end
-arch blocked
+arch cave_15
 x 31
 y 48
 end
@@ -17939,14 +17939,14 @@ end
 arch snow5
 x 32
 end
-arch blocked
+arch cave_15
 x 32
 end
 arch istone
 x 32
 y 1
 end
-arch blocked
+arch cave_15
 x 32
 y 1
 end
@@ -17958,7 +17958,7 @@ arch snow5
 x 32
 y 2
 end
-arch blocked
+arch cave_15
 x 32
 y 2
 end
@@ -18268,7 +18268,7 @@ arch snow
 x 32
 y 31
 end
-arch blocked
+arch cave_15
 x 32
 y 31
 end
@@ -18276,7 +18276,7 @@ arch snow
 x 32
 y 32
 end
-arch blocked
+arch cave_15
 x 32
 y 32
 end
@@ -18356,7 +18356,7 @@ arch snow
 x 32
 y 44
 end
-arch blocked
+arch cave_15
 x 32
 y 44
 end
@@ -18364,7 +18364,7 @@ arch snow
 x 32
 y 45
 end
-arch blocked
+arch cave_15
 x 32
 y 45
 end
@@ -18372,7 +18372,7 @@ arch snow
 x 32
 y 46
 end
-arch blocked
+arch cave_15
 x 32
 y 46
 end
@@ -18380,7 +18380,7 @@ arch snow
 x 32
 y 47
 end
-arch blocked
+arch cave_15
 x 32
 y 47
 end
@@ -18388,7 +18388,7 @@ arch snow
 x 32
 y 48
 end
-arch blocked
+arch cave_15
 x 32
 y 48
 end
@@ -18396,7 +18396,7 @@ arch snow
 x 32
 y 49
 end
-arch blocked
+arch cave_15
 x 32
 y 49
 end
@@ -18531,14 +18531,14 @@ end
 arch istone
 x 33
 end
-arch blocked
+arch cave_15
 x 33
 end
 arch istone
 x 33
 y 1
 end
-arch blocked
+arch cave_15
 x 33
 y 1
 end
@@ -18546,7 +18546,7 @@ arch istone
 x 33
 y 2
 end
-arch blocked
+arch cave_15
 x 33
 y 2
 end
@@ -18898,7 +18898,7 @@ arch snow
 x 33
 y 43
 end
-arch blocked
+arch cave_15
 x 33
 y 43
 end
@@ -18906,7 +18906,7 @@ arch snow
 x 33
 y 44
 end
-arch blocked
+arch cave_15
 x 33
 y 44
 end
@@ -18938,7 +18938,7 @@ arch snow
 x 33
 y 48
 end
-arch blocked
+arch cave_15
 x 33
 y 48
 end
@@ -18946,7 +18946,7 @@ arch snow
 x 33
 y 49
 end
-arch blocked
+arch cave_15
 x 33
 y 49
 end
@@ -19269,14 +19269,14 @@ end
 arch istone
 x 34
 end
-arch blocked
+arch cave_15
 x 34
 end
 arch istone
 x 34
 y 1
 end
-arch blocked
+arch cave_15
 x 34
 y 1
 end
@@ -19288,7 +19288,7 @@ arch snow5
 x 34
 y 2
 end
-arch blocked
+arch cave_15
 x 34
 y 2
 end
@@ -19648,7 +19648,7 @@ arch snow
 x 34
 y 43
 end
-arch blocked
+arch cave_15
 x 34
 y 43
 end
@@ -19724,7 +19724,7 @@ arch snow
 x 34
 y 49
 end
-arch blocked
+arch cave_15
 x 34
 y 49
 end
@@ -19835,7 +19835,7 @@ end
 arch istone
 x 35
 end
-arch blocked
+arch cave_15
 x 35
 end
 arch istone
@@ -20178,7 +20178,7 @@ arch snow
 x 35
 y 43
 end
-arch blocked
+arch cave_15
 x 35
 y 43
 end
@@ -20298,7 +20298,7 @@ arch snow
 x 35
 y 49
 end
-arch blocked
+arch cave_15
 x 35
 y 49
 end
@@ -20878,7 +20878,7 @@ arch snow
 x 36
 y 43
 end
-arch blocked
+arch cave_15
 x 36
 y 43
 end
@@ -20994,7 +20994,7 @@ arch snow
 x 36
 y 49
 end
-arch blocked
+arch cave_15
 x 36
 y 49
 end
@@ -21303,7 +21303,7 @@ arch snow
 x 37
 y 9
 end
-arch blocked
+arch cave_15
 x 37
 y 9
 end
@@ -21423,7 +21423,7 @@ arch snow
 x 37
 y 26
 end
-arch blocked
+arch cave_15
 x 37
 y 26
 end
@@ -21641,7 +21641,7 @@ arch snow
 x 37
 y 49
 end
-arch blocked
+arch cave_15
 x 37
 y 49
 end
@@ -21853,7 +21853,7 @@ arch snow
 x 38
 y 9
 end
-arch blocked
+arch cave_15
 x 38
 y 9
 end
@@ -21861,7 +21861,7 @@ arch snow
 x 38
 y 10
 end
-arch blocked
+arch cave_15
 x 38
 y 10
 end
@@ -21869,7 +21869,7 @@ arch snow
 x 38
 y 11
 end
-arch blocked
+arch cave_15
 x 38
 y 11
 end
@@ -21959,7 +21959,7 @@ arch snow
 x 38
 y 24
 end
-arch blocked
+arch cave_15
 x 38
 y 24
 end
@@ -21967,7 +21967,7 @@ arch snow
 x 38
 y 25
 end
-arch blocked
+arch cave_15
 x 38
 y 25
 end
@@ -21975,7 +21975,7 @@ arch snow
 x 38
 y 26
 end
-arch blocked
+arch cave_15
 x 38
 y 26
 end
@@ -21983,7 +21983,7 @@ arch snow
 x 38
 y 27
 end
-arch blocked
+arch cave_15
 x 38
 y 27
 end
@@ -21991,7 +21991,7 @@ arch snow
 x 38
 y 28
 end
-arch blocked
+arch cave_15
 x 38
 y 28
 end
@@ -22348,7 +22348,7 @@ arch snow
 x 39
 y 9
 end
-arch blocked
+arch cave_15
 x 39
 y 9
 end
@@ -22356,7 +22356,7 @@ arch snow
 x 39
 y 10
 end
-arch blocked
+arch cave_15
 x 39
 y 10
 end
@@ -22364,7 +22364,7 @@ arch snow
 x 39
 y 11
 end
-arch blocked
+arch cave_15
 x 39
 y 11
 end
@@ -22420,7 +22420,7 @@ arch snow
 x 39
 y 22
 end
-arch blocked
+arch cave_15
 x 39
 y 22
 end
@@ -22428,7 +22428,7 @@ arch snow
 x 39
 y 23
 end
-arch blocked
+arch cave_15
 x 39
 y 23
 end
@@ -22436,7 +22436,7 @@ arch snow
 x 39
 y 24
 end
-arch blocked
+arch cave_15
 x 39
 y 24
 end
@@ -22444,7 +22444,7 @@ arch snow
 x 39
 y 25
 end
-arch blocked
+arch cave_15
 x 39
 y 25
 end
@@ -22452,7 +22452,7 @@ arch snow
 x 39
 y 26
 end
-arch blocked
+arch cave_15
 x 39
 y 26
 end
@@ -22460,7 +22460,7 @@ arch snow
 x 39
 y 27
 end
-arch blocked
+arch cave_15
 x 39
 y 27
 end
@@ -22468,7 +22468,7 @@ arch snow
 x 39
 y 28
 end
-arch blocked
+arch cave_15
 x 39
 y 28
 end
@@ -22620,7 +22620,7 @@ arch snow
 x 39
 y 44
 end
-arch blocked
+arch cave_15
 x 39
 y 44
 end
@@ -22811,7 +22811,7 @@ arch snow
 x 40
 y 9
 end
-arch blocked
+arch cave_15
 x 40
 y 9
 end
@@ -22819,7 +22819,7 @@ arch snow
 x 40
 y 10
 end
-arch blocked
+arch cave_15
 x 40
 y 10
 end
@@ -22827,7 +22827,7 @@ arch snow
 x 40
 y 11
 end
-arch blocked
+arch cave_15
 x 40
 y 11
 end
@@ -22905,7 +22905,7 @@ arch snow
 x 40
 y 22
 end
-arch blocked
+arch cave_15
 x 40
 y 22
 end
@@ -22913,7 +22913,7 @@ arch snow
 x 40
 y 23
 end
-arch blocked
+arch cave_15
 x 40
 y 23
 end
@@ -22921,7 +22921,7 @@ arch snow
 x 40
 y 24
 end
-arch blocked
+arch cave_15
 x 40
 y 24
 end
@@ -22929,7 +22929,7 @@ arch snow
 x 40
 y 25
 end
-arch blocked
+arch cave_15
 x 40
 y 25
 end
@@ -22937,7 +22937,7 @@ arch snow
 x 40
 y 26
 end
-arch blocked
+arch cave_15
 x 40
 y 26
 end
@@ -22945,7 +22945,7 @@ arch snow
 x 40
 y 27
 end
-arch blocked
+arch cave_15
 x 40
 y 27
 end
@@ -22953,7 +22953,7 @@ arch snow
 x 40
 y 28
 end
-arch blocked
+arch cave_15
 x 40
 y 28
 end
@@ -23189,7 +23189,7 @@ arch snow
 x 40
 y 45
 end
-arch blocked
+arch cave_15
 x 40
 y 45
 end
@@ -23197,7 +23197,7 @@ arch snow
 x 40
 y 46
 end
-arch blocked
+arch cave_15
 x 40
 y 46
 end
@@ -23349,7 +23349,7 @@ arch snow
 x 41
 y 8
 end
-arch blocked
+arch cave_15
 x 41
 y 8
 end
@@ -23357,7 +23357,7 @@ arch snow
 x 41
 y 9
 end
-arch blocked
+arch cave_15
 x 41
 y 9
 end
@@ -23365,7 +23365,7 @@ arch snow
 x 41
 y 10
 end
-arch blocked
+arch cave_15
 x 41
 y 10
 end
@@ -23373,7 +23373,7 @@ arch snow
 x 41
 y 11
 end
-arch blocked
+arch cave_15
 x 41
 y 11
 end
@@ -23381,7 +23381,7 @@ arch snow
 x 41
 y 12
 end
-arch blocked
+arch cave_15
 x 41
 y 12
 end
@@ -23437,7 +23437,7 @@ arch snow
 x 41
 y 21
 end
-arch blocked
+arch cave_15
 x 41
 y 21
 end
@@ -23445,7 +23445,7 @@ arch snow
 x 41
 y 22
 end
-arch blocked
+arch cave_15
 x 41
 y 22
 end
@@ -23453,7 +23453,7 @@ arch snow
 x 41
 y 23
 end
-arch blocked
+arch cave_15
 x 41
 y 23
 end
@@ -23461,7 +23461,7 @@ arch snow
 x 41
 y 24
 end
-arch blocked
+arch cave_15
 x 41
 y 24
 end
@@ -23469,7 +23469,7 @@ arch snow
 x 41
 y 25
 end
-arch blocked
+arch cave_15
 x 41
 y 25
 end
@@ -23477,7 +23477,7 @@ arch snow
 x 41
 y 26
 end
-arch blocked
+arch cave_15
 x 41
 y 26
 end
@@ -23485,7 +23485,7 @@ arch snow
 x 41
 y 27
 end
-arch blocked
+arch cave_15
 x 41
 y 27
 end
@@ -23493,7 +23493,7 @@ arch snow
 x 41
 y 28
 end
-arch blocked
+arch cave_15
 x 41
 y 28
 end
@@ -23801,7 +23801,7 @@ arch snow5
 x 41
 y 63
 end
-arch blocked
+arch cave_15
 x 41
 y 63
 end
@@ -23865,7 +23865,7 @@ arch snow
 x 42
 y 8
 end
-arch blocked
+arch cave_15
 x 42
 y 8
 end
@@ -23877,7 +23877,7 @@ arch snow4
 x 42
 y 9
 end
-arch blocked
+arch cave_15
 x 42
 y 9
 end
@@ -23889,7 +23889,7 @@ arch snow4
 x 42
 y 10
 end
-arch blocked
+arch cave_15
 x 42
 y 10
 end
@@ -23897,7 +23897,7 @@ arch snow
 x 42
 y 11
 end
-arch blocked
+arch cave_15
 x 42
 y 11
 end
@@ -23905,7 +23905,7 @@ arch snow
 x 42
 y 12
 end
-arch blocked
+arch cave_15
 x 42
 y 12
 end
@@ -23913,7 +23913,7 @@ arch snow
 x 42
 y 13
 end
-arch blocked
+arch cave_15
 x 42
 y 13
 end
@@ -23957,7 +23957,7 @@ arch snow
 x 42
 y 21
 end
-arch blocked
+arch cave_15
 x 42
 y 21
 end
@@ -23965,7 +23965,7 @@ arch snow
 x 42
 y 22
 end
-arch blocked
+arch cave_15
 x 42
 y 22
 end
@@ -23973,7 +23973,7 @@ arch snow
 x 42
 y 23
 end
-arch blocked
+arch cave_15
 x 42
 y 23
 end
@@ -23981,7 +23981,7 @@ arch snow
 x 42
 y 24
 end
-arch blocked
+arch cave_15
 x 42
 y 24
 end
@@ -23989,7 +23989,7 @@ arch snow
 x 42
 y 25
 end
-arch blocked
+arch cave_15
 x 42
 y 25
 end
@@ -23997,7 +23997,7 @@ arch snow
 x 42
 y 26
 end
-arch blocked
+arch cave_15
 x 42
 y 26
 end
@@ -24005,7 +24005,7 @@ arch snow
 x 42
 y 27
 end
-arch blocked
+arch cave_15
 x 42
 y 27
 end
@@ -24013,7 +24013,7 @@ arch snow
 x 42
 y 28
 end
-arch blocked
+arch cave_15
 x 42
 y 28
 end
@@ -24407,7 +24407,7 @@ arch snow4
 x 42
 y 63
 end
-arch blocked
+arch cave_15
 x 42
 y 63
 end
@@ -24471,7 +24471,7 @@ arch snow4
 x 43
 y 8
 end
-arch blocked
+arch cave_15
 x 43
 y 8
 end
@@ -24483,7 +24483,7 @@ arch snow4
 x 43
 y 9
 end
-arch blocked
+arch cave_15
 x 43
 y 9
 end
@@ -24495,7 +24495,7 @@ arch snow4
 x 43
 y 10
 end
-arch blocked
+arch cave_15
 x 43
 y 10
 end
@@ -24507,7 +24507,7 @@ arch snow4
 x 43
 y 11
 end
-arch blocked
+arch cave_15
 x 43
 y 11
 end
@@ -24515,7 +24515,7 @@ arch snow
 x 43
 y 12
 end
-arch blocked
+arch cave_15
 x 43
 y 12
 end
@@ -24523,7 +24523,7 @@ arch snow
 x 43
 y 13
 end
-arch blocked
+arch cave_15
 x 43
 y 13
 end
@@ -24603,7 +24603,7 @@ arch snow
 x 43
 y 22
 end
-arch blocked
+arch cave_15
 x 43
 y 22
 end
@@ -24611,7 +24611,7 @@ arch snow
 x 43
 y 23
 end
-arch blocked
+arch cave_15
 x 43
 y 23
 end
@@ -24619,7 +24619,7 @@ arch snow
 x 43
 y 24
 end
-arch blocked
+arch cave_15
 x 43
 y 24
 end
@@ -24627,7 +24627,7 @@ arch snow
 x 43
 y 25
 end
-arch blocked
+arch cave_15
 x 43
 y 25
 end
@@ -24635,7 +24635,7 @@ arch snow
 x 43
 y 26
 end
-arch blocked
+arch cave_15
 x 43
 y 26
 end
@@ -24643,7 +24643,7 @@ arch snow
 x 43
 y 27
 end
-arch blocked
+arch cave_15
 x 43
 y 27
 end
@@ -24651,7 +24651,7 @@ arch snow
 x 43
 y 28
 end
-arch blocked
+arch cave_15
 x 43
 y 28
 end
@@ -24905,7 +24905,7 @@ arch snow
 x 43
 y 62
 end
-arch blocked
+arch cave_15
 x 43
 y 62
 end
@@ -24913,7 +24913,7 @@ arch snow
 x 43
 y 63
 end
-arch blocked
+arch cave_15
 x 43
 y 63
 end
@@ -25001,7 +25001,7 @@ arch snow5
 x 44
 y 9
 end
-arch blocked
+arch cave_15
 x 44
 y 9
 end
@@ -25013,7 +25013,7 @@ arch snow5
 x 44
 y 10
 end
-arch blocked
+arch cave_15
 x 44
 y 10
 end
@@ -25025,7 +25025,7 @@ arch snow4
 x 44
 y 11
 end
-arch blocked
+arch cave_15
 x 44
 y 11
 end
@@ -25037,7 +25037,7 @@ arch snow4
 x 44
 y 12
 end
-arch blocked
+arch cave_15
 x 44
 y 12
 end
@@ -25045,7 +25045,7 @@ arch snow
 x 44
 y 13
 end
-arch blocked
+arch cave_15
 x 44
 y 13
 end
@@ -25093,7 +25093,7 @@ arch snow
 x 44
 y 22
 end
-arch blocked
+arch cave_15
 x 44
 y 22
 end
@@ -25101,7 +25101,7 @@ arch snow
 x 44
 y 23
 end
-arch blocked
+arch cave_15
 x 44
 y 23
 end
@@ -25109,7 +25109,7 @@ arch snow
 x 44
 y 24
 end
-arch blocked
+arch cave_15
 x 44
 y 24
 end
@@ -25117,7 +25117,7 @@ arch snow
 x 44
 y 25
 end
-arch blocked
+arch cave_15
 x 44
 y 25
 end
@@ -25487,7 +25487,7 @@ arch snow
 x 44
 y 61
 end
-arch blocked
+arch cave_15
 x 44
 y 61
 end
@@ -25495,7 +25495,7 @@ arch snow
 x 44
 y 62
 end
-arch blocked
+arch cave_15
 x 44
 y 62
 end
@@ -25503,14 +25503,14 @@ arch snow
 x 44
 y 63
 end
-arch blocked
+arch cave_15
 x 44
 y 63
 end
 arch snow
 x 45
 end
-arch blocked
+arch cave_15
 x 45
 end
 arch snow
@@ -25601,7 +25601,7 @@ arch snow5
 x 45
 y 11
 end
-arch blocked
+arch cave_15
 x 45
 y 11
 end
@@ -25931,7 +25931,7 @@ arch snow
 x 45
 y 61
 end
-arch blocked
+arch cave_15
 x 45
 y 61
 end
@@ -25939,7 +25939,7 @@ arch snow
 x 45
 y 62
 end
-arch blocked
+arch cave_15
 x 45
 y 62
 end
@@ -25947,14 +25947,14 @@ arch snow
 x 45
 y 63
 end
-arch blocked
+arch cave_15
 x 45
 y 63
 end
 arch snow
 x 46
 end
-arch blocked
+arch cave_15
 x 46
 end
 arch snow
@@ -26595,7 +26595,7 @@ arch snow
 x 46
 y 61
 end
-arch blocked
+arch cave_15
 x 46
 y 61
 end
@@ -26603,7 +26603,7 @@ arch snow
 x 46
 y 62
 end
-arch blocked
+arch cave_15
 x 46
 y 62
 end
@@ -26611,14 +26611,14 @@ arch snow
 x 46
 y 63
 end
-arch blocked
+arch cave_15
 x 46
 y 63
 end
 arch snow
 x 47
 end
-arch blocked
+arch cave_15
 x 47
 end
 arch snow
@@ -26905,7 +26905,7 @@ arch snow5
 x 47
 y 36
 end
-arch blocked
+arch cave_15
 x 47
 y 36
 end
@@ -26917,7 +26917,7 @@ arch snow5
 x 47
 y 37
 end
-arch blocked
+arch cave_15
 x 47
 y 37
 end
@@ -26929,7 +26929,7 @@ arch snow4
 x 47
 y 38
 end
-arch blocked
+arch cave_15
 x 47
 y 38
 end
@@ -27199,7 +27199,7 @@ arch snow
 x 47
 y 61
 end
-arch blocked
+arch cave_15
 x 47
 y 61
 end
@@ -27207,7 +27207,7 @@ arch snow
 x 47
 y 62
 end
-arch blocked
+arch cave_15
 x 47
 y 62
 end
@@ -27215,14 +27215,14 @@ arch snow
 x 47
 y 63
 end
-arch blocked
+arch cave_15
 x 47
 y 63
 end
 arch snow
 x 48
 end
-arch blocked
+arch cave_15
 x 48
 end
 arch snow
@@ -27805,7 +27805,7 @@ arch snow4
 x 48
 y 34
 end
-arch blocked
+arch cave_15
 x 48
 y 34
 end
@@ -27817,7 +27817,7 @@ arch snow4
 x 48
 y 35
 end
-arch blocked
+arch cave_15
 x 48
 y 35
 end
@@ -27829,7 +27829,7 @@ arch snow4
 x 48
 y 36
 end
-arch blocked
+arch cave_15
 x 48
 y 36
 end
@@ -27841,7 +27841,7 @@ arch snow4
 x 48
 y 37
 end
-arch blocked
+arch cave_15
 x 48
 y 37
 end
@@ -27853,7 +27853,7 @@ arch snow4
 x 48
 y 38
 end
-arch blocked
+arch cave_15
 x 48
 y 38
 end
@@ -28015,7 +28015,7 @@ arch snow
 x 48
 y 61
 end
-arch blocked
+arch cave_15
 x 48
 y 61
 end
@@ -28023,7 +28023,7 @@ arch snow
 x 48
 y 62
 end
-arch blocked
+arch cave_15
 x 48
 y 62
 end
@@ -28031,14 +28031,14 @@ arch snow
 x 48
 y 63
 end
-arch blocked
+arch cave_15
 x 48
 y 63
 end
 arch snow
 x 49
 end
-arch blocked
+arch cave_15
 x 49
 end
 arch snow
@@ -28297,7 +28297,7 @@ arch snow
 x 49
 y 33
 end
-arch blocked
+arch cave_15
 x 49
 y 33
 end
@@ -28305,7 +28305,7 @@ arch snow
 x 49
 y 34
 end
-arch blocked
+arch cave_15
 x 49
 y 34
 end
@@ -28313,7 +28313,7 @@ arch snow
 x 49
 y 35
 end
-arch blocked
+arch cave_15
 x 49
 y 35
 end
@@ -28321,7 +28321,7 @@ arch snow
 x 49
 y 36
 end
-arch blocked
+arch cave_15
 x 49
 y 36
 end
@@ -28329,7 +28329,7 @@ arch snow
 x 49
 y 37
 end
-arch blocked
+arch cave_15
 x 49
 y 37
 end
@@ -28337,7 +28337,7 @@ arch snow
 x 49
 y 38
 end
-arch blocked
+arch cave_15
 x 49
 y 38
 end
@@ -28345,7 +28345,7 @@ arch snow
 x 49
 y 39
 end
-arch blocked
+arch cave_15
 x 49
 y 39
 end
@@ -28353,7 +28353,7 @@ arch snow
 x 49
 y 40
 end
-arch blocked
+arch cave_15
 x 49
 y 40
 end
@@ -28361,7 +28361,7 @@ arch snow
 x 49
 y 41
 end
-arch blocked
+arch cave_15
 x 49
 y 41
 end
@@ -28731,7 +28731,7 @@ arch snow
 x 49
 y 61
 end
-arch blocked
+arch cave_15
 x 49
 y 61
 end
@@ -28739,7 +28739,7 @@ arch snow
 x 49
 y 62
 end
-arch blocked
+arch cave_15
 x 49
 y 62
 end
@@ -28747,14 +28747,14 @@ arch snow
 x 49
 y 63
 end
-arch blocked
+arch cave_15
 x 49
 y 63
 end
 arch snow
 x 50
 end
-arch blocked
+arch cave_15
 x 50
 end
 arch snow
@@ -29029,7 +29029,7 @@ arch snow
 x 50
 y 22
 end
-arch blocked
+arch cave_15
 x 50
 y 22
 end
@@ -29037,7 +29037,7 @@ arch snow
 x 50
 y 23
 end
-arch blocked
+arch cave_15
 x 50
 y 23
 end
@@ -29045,7 +29045,7 @@ arch snow
 x 50
 y 24
 end
-arch blocked
+arch cave_15
 x 50
 y 24
 end
@@ -29053,7 +29053,7 @@ arch snow
 x 50
 y 25
 end
-arch blocked
+arch cave_15
 x 50
 y 25
 end
@@ -29111,7 +29111,7 @@ arch snow
 x 50
 y 33
 end
-arch blocked
+arch cave_15
 x 50
 y 33
 end
@@ -29119,7 +29119,7 @@ arch snow
 x 50
 y 34
 end
-arch blocked
+arch cave_15
 x 50
 y 34
 end
@@ -29127,7 +29127,7 @@ arch snow
 x 50
 y 35
 end
-arch blocked
+arch cave_15
 x 50
 y 35
 end
@@ -29135,7 +29135,7 @@ arch snow
 x 50
 y 36
 end
-arch blocked
+arch cave_15
 x 50
 y 36
 end
@@ -29143,7 +29143,7 @@ arch snow
 x 50
 y 37
 end
-arch blocked
+arch cave_15
 x 50
 y 37
 end
@@ -29151,7 +29151,7 @@ arch snow
 x 50
 y 38
 end
-arch blocked
+arch cave_15
 x 50
 y 38
 end
@@ -29159,7 +29159,7 @@ arch snow
 x 50
 y 39
 end
-arch blocked
+arch cave_15
 x 50
 y 39
 end
@@ -29167,7 +29167,7 @@ arch snow
 x 50
 y 40
 end
-arch blocked
+arch cave_15
 x 50
 y 40
 end
@@ -29175,7 +29175,7 @@ arch snow
 x 50
 y 41
 end
-arch blocked
+arch cave_15
 x 50
 y 41
 end
@@ -29333,7 +29333,7 @@ arch snow
 x 50
 y 60
 end
-arch blocked
+arch cave_15
 x 50
 y 60
 end
@@ -29341,7 +29341,7 @@ arch snow
 x 50
 y 61
 end
-arch blocked
+arch cave_15
 x 50
 y 61
 end
@@ -29349,7 +29349,7 @@ arch snow
 x 50
 y 62
 end
-arch blocked
+arch cave_15
 x 50
 y 62
 end
@@ -29357,14 +29357,14 @@ arch snow
 x 50
 y 63
 end
-arch blocked
+arch cave_15
 x 50
 y 63
 end
 arch snow
 x 51
 end
-arch blocked
+arch cave_15
 x 51
 end
 arch snow
@@ -29619,7 +29619,7 @@ arch snow
 x 51
 y 18
 end
-arch blocked
+arch cave_15
 x 51
 y 18
 end
@@ -29627,7 +29627,7 @@ arch snow
 x 51
 y 19
 end
-arch blocked
+arch cave_15
 x 51
 y 19
 end
@@ -29635,7 +29635,7 @@ arch snow
 x 51
 y 20
 end
-arch blocked
+arch cave_15
 x 51
 y 20
 end
@@ -29643,7 +29643,7 @@ arch snow
 x 51
 y 21
 end
-arch blocked
+arch cave_15
 x 51
 y 21
 end
@@ -29651,7 +29651,7 @@ arch snow
 x 51
 y 22
 end
-arch blocked
+arch cave_15
 x 51
 y 22
 end
@@ -29659,7 +29659,7 @@ arch snow
 x 51
 y 23
 end
-arch blocked
+arch cave_15
 x 51
 y 23
 end
@@ -29667,7 +29667,7 @@ arch snow
 x 51
 y 24
 end
-arch blocked
+arch cave_15
 x 51
 y 24
 end
@@ -29675,7 +29675,7 @@ arch snow
 x 51
 y 25
 end
-arch blocked
+arch cave_15
 x 51
 y 25
 end
@@ -29723,7 +29723,7 @@ arch snow
 x 51
 y 33
 end
-arch blocked
+arch cave_15
 x 51
 y 33
 end
@@ -29731,7 +29731,7 @@ arch snow
 x 51
 y 34
 end
-arch blocked
+arch cave_15
 x 51
 y 34
 end
@@ -29739,7 +29739,7 @@ arch snow
 x 51
 y 35
 end
-arch blocked
+arch cave_15
 x 51
 y 35
 end
@@ -29747,7 +29747,7 @@ arch snow
 x 51
 y 36
 end
-arch blocked
+arch cave_15
 x 51
 y 36
 end
@@ -29755,7 +29755,7 @@ arch snow
 x 51
 y 37
 end
-arch blocked
+arch cave_15
 x 51
 y 37
 end
@@ -29763,7 +29763,7 @@ arch snow
 x 51
 y 38
 end
-arch blocked
+arch cave_15
 x 51
 y 38
 end
@@ -30155,7 +30155,7 @@ arch snow
 x 51
 y 60
 end
-arch blocked
+arch cave_15
 x 51
 y 60
 end
@@ -30163,7 +30163,7 @@ arch snow
 x 51
 y 61
 end
-arch blocked
+arch cave_15
 x 51
 y 61
 end
@@ -30171,7 +30171,7 @@ arch snow
 x 51
 y 62
 end
-arch blocked
+arch cave_15
 x 51
 y 62
 end
@@ -30179,7 +30179,7 @@ arch snow
 x 51
 y 63
 end
-arch blocked
+arch cave_15
 x 51
 y 63
 end
@@ -30189,7 +30189,7 @@ end
 arch snow4
 x 52
 end
-arch blocked
+arch cave_15
 x 52
 end
 arch istone
@@ -30200,7 +30200,7 @@ arch snow4
 x 52
 y 1
 end
-arch blocked
+arch cave_15
 x 52
 y 1
 end
@@ -30446,7 +30446,7 @@ arch snow
 x 52
 y 16
 end
-arch blocked
+arch cave_15
 x 52
 y 16
 end
@@ -30454,7 +30454,7 @@ arch snow
 x 52
 y 17
 end
-arch blocked
+arch cave_15
 x 52
 y 17
 end
@@ -30462,7 +30462,7 @@ arch snow
 x 52
 y 18
 end
-arch blocked
+arch cave_15
 x 52
 y 18
 end
@@ -30470,7 +30470,7 @@ arch snow
 x 52
 y 19
 end
-arch blocked
+arch cave_15
 x 52
 y 19
 end
@@ -30478,7 +30478,7 @@ arch snow
 x 52
 y 20
 end
-arch blocked
+arch cave_15
 x 52
 y 20
 end
@@ -30486,7 +30486,7 @@ arch snow
 x 52
 y 21
 end
-arch blocked
+arch cave_15
 x 52
 y 21
 end
@@ -30494,7 +30494,7 @@ arch snow
 x 52
 y 22
 end
-arch blocked
+arch cave_15
 x 52
 y 22
 end
@@ -30502,7 +30502,7 @@ arch snow
 x 52
 y 23
 end
-arch blocked
+arch cave_15
 x 52
 y 23
 end
@@ -30510,7 +30510,7 @@ arch snow
 x 52
 y 24
 end
-arch blocked
+arch cave_15
 x 52
 y 24
 end
@@ -30518,7 +30518,7 @@ arch snow
 x 52
 y 25
 end
-arch blocked
+arch cave_15
 x 52
 y 25
 end
@@ -30526,7 +30526,7 @@ arch snow
 x 52
 y 26
 end
-arch blocked
+arch cave_15
 x 52
 y 26
 end
@@ -30578,7 +30578,7 @@ arch snow
 x 52
 y 34
 end
-arch blocked
+arch cave_15
 x 52
 y 34
 end
@@ -30586,7 +30586,7 @@ arch snow
 x 52
 y 35
 end
-arch blocked
+arch cave_15
 x 52
 y 35
 end
@@ -31004,7 +31004,7 @@ arch snow
 x 52
 y 60
 end
-arch blocked
+arch cave_15
 x 52
 y 60
 end
@@ -31012,7 +31012,7 @@ arch snow
 x 52
 y 61
 end
-arch blocked
+arch cave_15
 x 52
 y 61
 end
@@ -31020,7 +31020,7 @@ arch snow
 x 52
 y 62
 end
-arch blocked
+arch cave_15
 x 52
 y 62
 end
@@ -31028,7 +31028,7 @@ arch snow
 x 52
 y 63
 end
-arch blocked
+arch cave_15
 x 52
 y 63
 end
@@ -31038,7 +31038,7 @@ end
 arch snow5
 x 53
 end
-arch blocked
+arch cave_15
 x 53
 end
 arch istone
@@ -31049,7 +31049,7 @@ arch snow5
 x 53
 y 1
 end
-arch blocked
+arch cave_15
 x 53
 y 1
 end
@@ -31269,7 +31269,7 @@ arch snow
 x 53
 y 15
 end
-arch blocked
+arch cave_15
 x 53
 y 15
 end
@@ -31277,7 +31277,7 @@ arch snow
 x 53
 y 16
 end
-arch blocked
+arch cave_15
 x 53
 y 16
 end
@@ -31285,7 +31285,7 @@ arch snow
 x 53
 y 17
 end
-arch blocked
+arch cave_15
 x 53
 y 17
 end
@@ -31293,7 +31293,7 @@ arch snow
 x 53
 y 18
 end
-arch blocked
+arch cave_15
 x 53
 y 18
 end
@@ -31301,7 +31301,7 @@ arch snow
 x 53
 y 19
 end
-arch blocked
+arch cave_15
 x 53
 y 19
 end
@@ -31309,7 +31309,7 @@ arch snow
 x 53
 y 20
 end
-arch blocked
+arch cave_15
 x 53
 y 20
 end
@@ -31317,7 +31317,7 @@ arch snow
 x 53
 y 21
 end
-arch blocked
+arch cave_15
 x 53
 y 21
 end
@@ -31325,7 +31325,7 @@ arch snow
 x 53
 y 22
 end
-arch blocked
+arch cave_15
 x 53
 y 22
 end
@@ -31333,7 +31333,7 @@ arch snow
 x 53
 y 23
 end
-arch blocked
+arch cave_15
 x 53
 y 23
 end
@@ -31341,7 +31341,7 @@ arch snow
 x 53
 y 24
 end
-arch blocked
+arch cave_15
 x 53
 y 24
 end
@@ -31349,7 +31349,7 @@ arch snow
 x 53
 y 25
 end
-arch blocked
+arch cave_15
 x 53
 y 25
 end
@@ -31357,7 +31357,7 @@ arch snow
 x 53
 y 26
 end
-arch blocked
+arch cave_15
 x 53
 y 26
 end
@@ -31737,7 +31737,7 @@ arch snow
 x 53
 y 60
 end
-arch blocked
+arch cave_15
 x 53
 y 60
 end
@@ -31745,7 +31745,7 @@ arch snow
 x 53
 y 61
 end
-arch blocked
+arch cave_15
 x 53
 y 61
 end
@@ -31753,7 +31753,7 @@ arch snow
 x 53
 y 62
 end
-arch blocked
+arch cave_15
 x 53
 y 62
 end
@@ -31761,7 +31761,7 @@ arch snow
 x 53
 y 63
 end
-arch blocked
+arch cave_15
 x 53
 y 63
 end
@@ -31771,14 +31771,14 @@ end
 arch snow5
 x 54
 end
-arch blocked
+arch cave_15
 x 54
 end
 arch istone
 x 54
 y 1
 end
-arch blocked
+arch cave_15
 x 54
 y 1
 end
@@ -31892,7 +31892,7 @@ arch snow
 x 54
 y 15
 end
-arch blocked
+arch cave_15
 x 54
 y 15
 end
@@ -31900,7 +31900,7 @@ arch snow
 x 54
 y 16
 end
-arch blocked
+arch cave_15
 x 54
 y 16
 end
@@ -31908,7 +31908,7 @@ arch snow
 x 54
 y 17
 end
-arch blocked
+arch cave_15
 x 54
 y 17
 end
@@ -31916,7 +31916,7 @@ arch snow
 x 54
 y 18
 end
-arch blocked
+arch cave_15
 x 54
 y 18
 end
@@ -31924,7 +31924,7 @@ arch snow
 x 54
 y 19
 end
-arch blocked
+arch cave_15
 x 54
 y 19
 end
@@ -31932,7 +31932,7 @@ arch snow
 x 54
 y 20
 end
-arch blocked
+arch cave_15
 x 54
 y 20
 end
@@ -31940,7 +31940,7 @@ arch snow
 x 54
 y 21
 end
-arch blocked
+arch cave_15
 x 54
 y 21
 end
@@ -31948,7 +31948,7 @@ arch snow
 x 54
 y 22
 end
-arch blocked
+arch cave_15
 x 54
 y 22
 end
@@ -31956,7 +31956,7 @@ arch snow
 x 54
 y 23
 end
-arch blocked
+arch cave_15
 x 54
 y 23
 end
@@ -31964,7 +31964,7 @@ arch snow
 x 54
 y 24
 end
-arch blocked
+arch cave_15
 x 54
 y 24
 end
@@ -31972,7 +31972,7 @@ arch snow
 x 54
 y 25
 end
-arch blocked
+arch cave_15
 x 54
 y 25
 end
@@ -31980,7 +31980,7 @@ arch snow
 x 54
 y 26
 end
-arch blocked
+arch cave_15
 x 54
 y 26
 end
@@ -32466,7 +32466,7 @@ arch snow
 x 54
 y 59
 end
-arch blocked
+arch cave_15
 x 54
 y 59
 end
@@ -32474,7 +32474,7 @@ arch snow
 x 54
 y 60
 end
-arch blocked
+arch cave_15
 x 54
 y 60
 end
@@ -32482,7 +32482,7 @@ arch snow
 x 54
 y 61
 end
-arch blocked
+arch cave_15
 x 54
 y 61
 end
@@ -32490,7 +32490,7 @@ arch snow
 x 54
 y 62
 end
-arch blocked
+arch cave_15
 x 54
 y 62
 end
@@ -32498,21 +32498,21 @@ arch snow
 x 54
 y 63
 end
-arch blocked
+arch cave_15
 x 54
 y 63
 end
 arch istone
 x 55
 end
-arch blocked
+arch cave_15
 x 55
 end
 arch istone
 x 55
 y 1
 end
-arch blocked
+arch cave_15
 x 55
 y 1
 end
@@ -32744,7 +32744,7 @@ arch snow
 x 55
 y 17
 end
-arch blocked
+arch cave_15
 x 55
 y 17
 end
@@ -32752,7 +32752,7 @@ arch snow
 x 55
 y 18
 end
-arch blocked
+arch cave_15
 x 55
 y 18
 end
@@ -32760,7 +32760,7 @@ arch snow
 x 55
 y 19
 end
-arch blocked
+arch cave_15
 x 55
 y 19
 end
@@ -32768,7 +32768,7 @@ arch snow
 x 55
 y 20
 end
-arch blocked
+arch cave_15
 x 55
 y 20
 end
@@ -32776,7 +32776,7 @@ arch snow
 x 55
 y 21
 end
-arch blocked
+arch cave_15
 x 55
 y 21
 end
@@ -32784,7 +32784,7 @@ arch snow
 x 55
 y 22
 end
-arch blocked
+arch cave_15
 x 55
 y 22
 end
@@ -32792,7 +32792,7 @@ arch snow
 x 55
 y 23
 end
-arch blocked
+arch cave_15
 x 55
 y 23
 end
@@ -32800,7 +32800,7 @@ arch snow
 x 55
 y 24
 end
-arch blocked
+arch cave_15
 x 55
 y 24
 end
@@ -33156,7 +33156,7 @@ arch snow5
 x 55
 y 56
 end
-arch blocked
+arch cave_15
 x 55
 y 56
 end
@@ -33168,7 +33168,7 @@ arch snow5
 x 55
 y 57
 end
-arch blocked
+arch cave_15
 x 55
 y 57
 end
@@ -33180,7 +33180,7 @@ arch snow4
 x 55
 y 58
 end
-arch blocked
+arch cave_15
 x 55
 y 58
 end
@@ -33188,7 +33188,7 @@ arch snow
 x 55
 y 59
 end
-arch blocked
+arch cave_15
 x 55
 y 59
 end
@@ -33196,7 +33196,7 @@ arch snow
 x 55
 y 60
 end
-arch blocked
+arch cave_15
 x 55
 y 60
 end
@@ -33204,7 +33204,7 @@ arch snow
 x 55
 y 61
 end
-arch blocked
+arch cave_15
 x 55
 y 61
 end
@@ -33212,7 +33212,7 @@ arch snow
 x 55
 y 62
 end
-arch blocked
+arch cave_15
 x 55
 y 62
 end
@@ -33220,21 +33220,21 @@ arch snow
 x 55
 y 63
 end
-arch blocked
+arch cave_15
 x 55
 y 63
 end
 arch istone
 x 56
 end
-arch blocked
+arch cave_15
 x 56
 end
 arch istone
 x 56
 y 1
 end
-arch blocked
+arch cave_15
 x 56
 y 1
 end
@@ -33412,7 +33412,7 @@ arch snow4
 x 56
 y 20
 end
-arch blocked
+arch cave_15
 x 56
 y 20
 end
@@ -33420,7 +33420,7 @@ arch snow
 x 56
 y 21
 end
-arch blocked
+arch cave_15
 x 56
 y 21
 end
@@ -33428,7 +33428,7 @@ arch snow
 x 56
 y 22
 end
-arch blocked
+arch cave_15
 x 56
 y 22
 end
@@ -33436,7 +33436,7 @@ arch snow
 x 56
 y 23
 end
-arch blocked
+arch cave_15
 x 56
 y 23
 end
@@ -33660,7 +33660,7 @@ arch snow5
 x 56
 y 55
 end
-arch blocked
+arch cave_15
 x 56
 y 55
 end
@@ -33672,7 +33672,7 @@ arch snow4
 x 56
 y 56
 end
-arch blocked
+arch cave_15
 x 56
 y 56
 end
@@ -33684,7 +33684,7 @@ arch snow4
 x 56
 y 57
 end
-arch blocked
+arch cave_15
 x 56
 y 57
 end
@@ -33696,7 +33696,7 @@ arch snow4
 x 56
 y 58
 end
-arch blocked
+arch cave_15
 x 56
 y 58
 end
@@ -33704,7 +33704,7 @@ arch snow
 x 56
 y 59
 end
-arch blocked
+arch cave_15
 x 56
 y 59
 end
@@ -33712,7 +33712,7 @@ arch snow
 x 56
 y 60
 end
-arch blocked
+arch cave_15
 x 56
 y 60
 end
@@ -33720,7 +33720,7 @@ arch snow
 x 56
 y 61
 end
-arch blocked
+arch cave_15
 x 56
 y 61
 end
@@ -33728,7 +33728,7 @@ arch snow
 x 56
 y 62
 end
-arch blocked
+arch cave_15
 x 56
 y 62
 end
@@ -33736,7 +33736,7 @@ arch snow
 x 56
 y 63
 end
-arch blocked
+arch cave_15
 x 56
 y 63
 end
@@ -33746,7 +33746,7 @@ end
 arch snow5
 x 57
 end
-arch blocked
+arch cave_15
 x 57
 end
 arch istone
@@ -33757,7 +33757,7 @@ arch snow5
 x 57
 y 1
 end
-arch blocked
+arch cave_15
 x 57
 y 1
 end
@@ -33769,7 +33769,7 @@ arch snow5
 x 57
 y 2
 end
-arch blocked
+arch cave_15
 x 57
 y 2
 end
@@ -34273,7 +34273,7 @@ arch snow5
 x 57
 y 54
 end
-arch blocked
+arch cave_15
 x 57
 y 54
 end
@@ -34285,7 +34285,7 @@ arch snow4
 x 57
 y 55
 end
-arch blocked
+arch cave_15
 x 57
 y 55
 end
@@ -34297,7 +34297,7 @@ arch snow4
 x 57
 y 56
 end
-arch blocked
+arch cave_15
 x 57
 y 56
 end
@@ -34305,7 +34305,7 @@ arch snow
 x 57
 y 57
 end
-arch blocked
+arch cave_15
 x 57
 y 57
 end
@@ -34313,7 +34313,7 @@ arch snow
 x 57
 y 58
 end
-arch blocked
+arch cave_15
 x 57
 y 58
 end
@@ -34321,7 +34321,7 @@ arch snow
 x 57
 y 59
 end
-arch blocked
+arch cave_15
 x 57
 y 59
 end
@@ -34329,7 +34329,7 @@ arch snow
 x 57
 y 60
 end
-arch blocked
+arch cave_15
 x 57
 y 60
 end
@@ -34337,7 +34337,7 @@ arch snow
 x 57
 y 61
 end
-arch blocked
+arch cave_15
 x 57
 y 61
 end
@@ -34345,7 +34345,7 @@ arch snow
 x 57
 y 62
 end
-arch blocked
+arch cave_15
 x 57
 y 62
 end
@@ -34353,7 +34353,7 @@ arch snow
 x 57
 y 63
 end
-arch blocked
+arch cave_15
 x 57
 y 63
 end
@@ -34363,7 +34363,7 @@ end
 arch snow4
 x 58
 end
-arch blocked
+arch cave_15
 x 58
 end
 arch istone
@@ -34374,7 +34374,7 @@ arch snow4
 x 58
 y 1
 end
-arch blocked
+arch cave_15
 x 58
 y 1
 end
@@ -34386,7 +34386,7 @@ arch snow4
 x 58
 y 2
 end
-arch blocked
+arch cave_15
 x 58
 y 2
 end
@@ -35030,7 +35030,7 @@ arch snow4
 x 58
 y 51
 end
-arch blocked
+arch cave_15
 x 58
 y 51
 end
@@ -35042,7 +35042,7 @@ arch snow4
 x 58
 y 52
 end
-arch blocked
+arch cave_15
 x 58
 y 52
 end
@@ -35054,7 +35054,7 @@ arch snow4
 x 58
 y 53
 end
-arch blocked
+arch cave_15
 x 58
 y 53
 end
@@ -35066,7 +35066,7 @@ arch snow4
 x 58
 y 54
 end
-arch blocked
+arch cave_15
 x 58
 y 54
 end
@@ -35078,7 +35078,7 @@ arch snow4
 x 58
 y 55
 end
-arch blocked
+arch cave_15
 x 58
 y 55
 end
@@ -35086,7 +35086,7 @@ arch snow
 x 58
 y 56
 end
-arch blocked
+arch cave_15
 x 58
 y 56
 end
@@ -35094,7 +35094,7 @@ arch snow
 x 58
 y 57
 end
-arch blocked
+arch cave_15
 x 58
 y 57
 end
@@ -35102,7 +35102,7 @@ arch snow
 x 58
 y 58
 end
-arch blocked
+arch cave_15
 x 58
 y 58
 end
@@ -35110,7 +35110,7 @@ arch snow
 x 58
 y 59
 end
-arch blocked
+arch cave_15
 x 58
 y 59
 end
@@ -35118,7 +35118,7 @@ arch snow
 x 58
 y 60
 end
-arch blocked
+arch cave_15
 x 58
 y 60
 end
@@ -35126,7 +35126,7 @@ arch snow
 x 58
 y 61
 end
-arch blocked
+arch cave_15
 x 58
 y 61
 end
@@ -35134,7 +35134,7 @@ arch snow
 x 58
 y 62
 end
-arch blocked
+arch cave_15
 x 58
 y 62
 end
@@ -35142,7 +35142,7 @@ arch snow
 x 58
 y 63
 end
-arch blocked
+arch cave_15
 x 58
 y 63
 end
@@ -35152,14 +35152,14 @@ end
 arch snow4
 x 59
 end
-arch blocked
+arch cave_15
 x 59
 end
 arch snow
 x 59
 y 1
 end
-arch blocked
+arch cave_15
 x 59
 y 1
 end
@@ -35167,7 +35167,7 @@ arch snow
 x 59
 y 2
 end
-arch blocked
+arch cave_15
 x 59
 y 2
 end
@@ -35621,7 +35621,7 @@ arch snow
 x 59
 y 49
 end
-arch blocked
+arch cave_15
 x 59
 y 49
 end
@@ -35629,7 +35629,7 @@ arch snow
 x 59
 y 50
 end
-arch blocked
+arch cave_15
 x 59
 y 50
 end
@@ -35637,7 +35637,7 @@ arch snow
 x 59
 y 51
 end
-arch blocked
+arch cave_15
 x 59
 y 51
 end
@@ -35645,7 +35645,7 @@ arch snow
 x 59
 y 52
 end
-arch blocked
+arch cave_15
 x 59
 y 52
 end
@@ -35653,7 +35653,7 @@ arch snow
 x 59
 y 53
 end
-arch blocked
+arch cave_15
 x 59
 y 53
 end
@@ -35661,7 +35661,7 @@ arch snow
 x 59
 y 54
 end
-arch blocked
+arch cave_15
 x 59
 y 54
 end
@@ -35669,7 +35669,7 @@ arch snow
 x 59
 y 55
 end
-arch blocked
+arch cave_15
 x 59
 y 55
 end
@@ -35677,7 +35677,7 @@ arch snow
 x 59
 y 56
 end
-arch blocked
+arch cave_15
 x 59
 y 56
 end
@@ -35685,7 +35685,7 @@ arch snow
 x 59
 y 57
 end
-arch blocked
+arch cave_15
 x 59
 y 57
 end
@@ -35693,7 +35693,7 @@ arch snow
 x 59
 y 58
 end
-arch blocked
+arch cave_15
 x 59
 y 58
 end
@@ -35701,7 +35701,7 @@ arch snow
 x 59
 y 59
 end
-arch blocked
+arch cave_15
 x 59
 y 59
 end
@@ -35709,7 +35709,7 @@ arch snow
 x 59
 y 60
 end
-arch blocked
+arch cave_15
 x 59
 y 60
 end
@@ -35717,7 +35717,7 @@ arch snow
 x 59
 y 61
 end
-arch blocked
+arch cave_15
 x 59
 y 61
 end
@@ -35725,7 +35725,7 @@ arch snow
 x 59
 y 62
 end
-arch blocked
+arch cave_15
 x 59
 y 62
 end
@@ -35733,21 +35733,21 @@ arch snow
 x 59
 y 63
 end
-arch blocked
+arch cave_15
 x 59
 y 63
 end
 arch snow
 x 60
 end
-arch blocked
+arch cave_15
 x 60
 end
 arch snow
 x 60
 y 1
 end
-arch blocked
+arch cave_15
 x 60
 y 1
 end
@@ -35755,7 +35755,7 @@ arch snow
 x 60
 y 2
 end
-arch blocked
+arch cave_15
 x 60
 y 2
 end
@@ -35763,7 +35763,7 @@ arch snow
 x 60
 y 3
 end
-arch blocked
+arch cave_15
 x 60
 y 3
 end
@@ -36259,7 +36259,7 @@ arch snow
 x 60
 y 44
 end
-arch blocked
+arch cave_15
 x 60
 y 44
 end
@@ -36267,7 +36267,7 @@ arch snow
 x 60
 y 45
 end
-arch blocked
+arch cave_15
 x 60
 y 45
 end
@@ -36275,7 +36275,7 @@ arch snow
 x 60
 y 46
 end
-arch blocked
+arch cave_15
 x 60
 y 46
 end
@@ -36283,7 +36283,7 @@ arch snow
 x 60
 y 47
 end
-arch blocked
+arch cave_15
 x 60
 y 47
 end
@@ -36291,7 +36291,7 @@ arch snow
 x 60
 y 48
 end
-arch blocked
+arch cave_15
 x 60
 y 48
 end
@@ -36299,7 +36299,7 @@ arch snow
 x 60
 y 49
 end
-arch blocked
+arch cave_15
 x 60
 y 49
 end
@@ -36307,7 +36307,7 @@ arch snow
 x 60
 y 50
 end
-arch blocked
+arch cave_15
 x 60
 y 50
 end
@@ -36315,7 +36315,7 @@ arch snow
 x 60
 y 51
 end
-arch blocked
+arch cave_15
 x 60
 y 51
 end
@@ -36323,7 +36323,7 @@ arch snow
 x 60
 y 52
 end
-arch blocked
+arch cave_15
 x 60
 y 52
 end
@@ -36331,7 +36331,7 @@ arch snow
 x 60
 y 53
 end
-arch blocked
+arch cave_15
 x 60
 y 53
 end
@@ -36339,7 +36339,7 @@ arch snow
 x 60
 y 54
 end
-arch blocked
+arch cave_15
 x 60
 y 54
 end
@@ -36347,7 +36347,7 @@ arch snow
 x 60
 y 55
 end
-arch blocked
+arch cave_15
 x 60
 y 55
 end
@@ -36355,7 +36355,7 @@ arch snow
 x 60
 y 56
 end
-arch blocked
+arch cave_15
 x 60
 y 56
 end
@@ -36363,7 +36363,7 @@ arch snow
 x 60
 y 57
 end
-arch blocked
+arch cave_15
 x 60
 y 57
 end
@@ -36371,7 +36371,7 @@ arch snow
 x 60
 y 58
 end
-arch blocked
+arch cave_15
 x 60
 y 58
 end
@@ -36379,7 +36379,7 @@ arch snow
 x 60
 y 59
 end
-arch blocked
+arch cave_15
 x 60
 y 59
 end
@@ -36387,7 +36387,7 @@ arch snow
 x 60
 y 60
 end
-arch blocked
+arch cave_15
 x 60
 y 60
 end
@@ -36395,7 +36395,7 @@ arch snow
 x 60
 y 61
 end
-arch blocked
+arch cave_15
 x 60
 y 61
 end
@@ -36403,7 +36403,7 @@ arch snow
 x 60
 y 62
 end
-arch blocked
+arch cave_15
 x 60
 y 62
 end
@@ -36411,21 +36411,21 @@ arch snow
 x 60
 y 63
 end
-arch blocked
+arch cave_15
 x 60
 y 63
 end
 arch snow
 x 61
 end
-arch blocked
+arch cave_15
 x 61
 end
 arch snow
 x 61
 y 1
 end
-arch blocked
+arch cave_15
 x 61
 y 1
 end
@@ -36433,7 +36433,7 @@ arch snow
 x 61
 y 2
 end
-arch blocked
+arch cave_15
 x 61
 y 2
 end
@@ -36441,7 +36441,7 @@ arch snow
 x 61
 y 3
 end
-arch blocked
+arch cave_15
 x 61
 y 3
 end
@@ -36449,7 +36449,7 @@ arch snow
 x 61
 y 4
 end
-arch blocked
+arch cave_15
 x 61
 y 4
 end
@@ -36955,7 +36955,7 @@ arch snow
 x 61
 y 37
 end
-arch blocked
+arch cave_15
 x 61
 y 37
 end
@@ -36963,7 +36963,7 @@ arch snow
 x 61
 y 38
 end
-arch blocked
+arch cave_15
 x 61
 y 38
 end
@@ -36971,7 +36971,7 @@ arch snow
 x 61
 y 39
 end
-arch blocked
+arch cave_15
 x 61
 y 39
 end
@@ -36979,7 +36979,7 @@ arch snow
 x 61
 y 40
 end
-arch blocked
+arch cave_15
 x 61
 y 40
 end
@@ -36987,7 +36987,7 @@ arch snow
 x 61
 y 41
 end
-arch blocked
+arch cave_15
 x 61
 y 41
 end
@@ -36995,7 +36995,7 @@ arch snow
 x 61
 y 42
 end
-arch blocked
+arch cave_15
 x 61
 y 42
 end
@@ -37003,7 +37003,7 @@ arch snow
 x 61
 y 43
 end
-arch blocked
+arch cave_15
 x 61
 y 43
 end
@@ -37011,7 +37011,7 @@ arch snow
 x 61
 y 44
 end
-arch blocked
+arch cave_15
 x 61
 y 44
 end
@@ -37019,7 +37019,7 @@ arch snow
 x 61
 y 45
 end
-arch blocked
+arch cave_15
 x 61
 y 45
 end
@@ -37027,7 +37027,7 @@ arch snow
 x 61
 y 46
 end
-arch blocked
+arch cave_15
 x 61
 y 46
 end
@@ -37035,7 +37035,7 @@ arch snow
 x 61
 y 47
 end
-arch blocked
+arch cave_15
 x 61
 y 47
 end
@@ -37043,7 +37043,7 @@ arch snow
 x 61
 y 48
 end
-arch blocked
+arch cave_15
 x 61
 y 48
 end
@@ -37051,7 +37051,7 @@ arch snow
 x 61
 y 49
 end
-arch blocked
+arch cave_15
 x 61
 y 49
 end
@@ -37059,7 +37059,7 @@ arch snow
 x 61
 y 50
 end
-arch blocked
+arch cave_15
 x 61
 y 50
 end
@@ -37067,7 +37067,7 @@ arch snow
 x 61
 y 51
 end
-arch blocked
+arch cave_15
 x 61
 y 51
 end
@@ -37075,7 +37075,7 @@ arch snow
 x 61
 y 52
 end
-arch blocked
+arch cave_15
 x 61
 y 52
 end
@@ -37083,7 +37083,7 @@ arch snow
 x 61
 y 53
 end
-arch blocked
+arch cave_15
 x 61
 y 53
 end
@@ -37091,7 +37091,7 @@ arch snow
 x 61
 y 54
 end
-arch blocked
+arch cave_15
 x 61
 y 54
 end
@@ -37099,7 +37099,7 @@ arch snow
 x 61
 y 55
 end
-arch blocked
+arch cave_15
 x 61
 y 55
 end
@@ -37107,7 +37107,7 @@ arch snow
 x 61
 y 56
 end
-arch blocked
+arch cave_15
 x 61
 y 56
 end
@@ -37115,7 +37115,7 @@ arch snow
 x 61
 y 57
 end
-arch blocked
+arch cave_15
 x 61
 y 57
 end
@@ -37123,7 +37123,7 @@ arch snow
 x 61
 y 58
 end
-arch blocked
+arch cave_15
 x 61
 y 58
 end
@@ -37131,7 +37131,7 @@ arch snow
 x 61
 y 59
 end
-arch blocked
+arch cave_15
 x 61
 y 59
 end
@@ -37139,7 +37139,7 @@ arch snow
 x 61
 y 60
 end
-arch blocked
+arch cave_15
 x 61
 y 60
 end
@@ -37147,7 +37147,7 @@ arch snow
 x 61
 y 61
 end
-arch blocked
+arch cave_15
 x 61
 y 61
 end
@@ -37155,7 +37155,7 @@ arch snow
 x 61
 y 62
 end
-arch blocked
+arch cave_15
 x 61
 y 62
 end
@@ -37163,21 +37163,21 @@ arch snow
 x 61
 y 63
 end
-arch blocked
+arch cave_15
 x 61
 y 63
 end
 arch snow
 x 62
 end
-arch blocked
+arch cave_15
 x 62
 end
 arch snow
 x 62
 y 1
 end
-arch blocked
+arch cave_15
 x 62
 y 1
 end
@@ -37185,7 +37185,7 @@ arch snow
 x 62
 y 2
 end
-arch blocked
+arch cave_15
 x 62
 y 2
 end
@@ -37193,7 +37193,7 @@ arch snow
 x 62
 y 3
 end
-arch blocked
+arch cave_15
 x 62
 y 3
 end
@@ -37201,7 +37201,7 @@ arch snow
 x 62
 y 4
 end
-arch blocked
+arch cave_15
 x 62
 y 4
 end
@@ -37209,7 +37209,7 @@ arch snow
 x 62
 y 5
 end
-arch blocked
+arch cave_15
 x 62
 y 5
 end
@@ -37217,7 +37217,7 @@ arch snow
 x 62
 y 6
 end
-arch blocked
+arch cave_15
 x 62
 y 6
 end
@@ -37225,7 +37225,7 @@ arch snow
 x 62
 y 7
 end
-arch blocked
+arch cave_15
 x 62
 y 7
 end
@@ -37233,7 +37233,7 @@ arch snow
 x 62
 y 8
 end
-arch blocked
+arch cave_15
 x 62
 y 8
 end
@@ -37491,7 +37491,7 @@ arch snow
 x 62
 y 31
 end
-arch blocked
+arch cave_15
 x 62
 y 31
 end
@@ -37499,7 +37499,7 @@ arch snow
 x 62
 y 32
 end
-arch blocked
+arch cave_15
 x 62
 y 32
 end
@@ -37507,7 +37507,7 @@ arch snow
 x 62
 y 33
 end
-arch blocked
+arch cave_15
 x 62
 y 33
 end
@@ -37515,7 +37515,7 @@ arch snow
 x 62
 y 34
 end
-arch blocked
+arch cave_15
 x 62
 y 34
 end
@@ -37523,7 +37523,7 @@ arch snow
 x 62
 y 35
 end
-arch blocked
+arch cave_15
 x 62
 y 35
 end
@@ -37531,7 +37531,7 @@ arch snow
 x 62
 y 36
 end
-arch blocked
+arch cave_15
 x 62
 y 36
 end
@@ -37539,7 +37539,7 @@ arch snow
 x 62
 y 37
 end
-arch blocked
+arch cave_15
 x 62
 y 37
 end
@@ -37547,7 +37547,7 @@ arch snow
 x 62
 y 38
 end
-arch blocked
+arch cave_15
 x 62
 y 38
 end
@@ -37555,7 +37555,7 @@ arch snow
 x 62
 y 39
 end
-arch blocked
+arch cave_15
 x 62
 y 39
 end
@@ -37563,7 +37563,7 @@ arch snow
 x 62
 y 40
 end
-arch blocked
+arch cave_15
 x 62
 y 40
 end
@@ -37571,7 +37571,7 @@ arch snow
 x 62
 y 41
 end
-arch blocked
+arch cave_15
 x 62
 y 41
 end
@@ -37579,7 +37579,7 @@ arch snow
 x 62
 y 42
 end
-arch blocked
+arch cave_15
 x 62
 y 42
 end
@@ -37587,7 +37587,7 @@ arch snow
 x 62
 y 43
 end
-arch blocked
+arch cave_15
 x 62
 y 43
 end
@@ -37595,7 +37595,7 @@ arch snow
 x 62
 y 44
 end
-arch blocked
+arch cave_15
 x 62
 y 44
 end
@@ -37603,7 +37603,7 @@ arch snow
 x 62
 y 45
 end
-arch blocked
+arch cave_15
 x 62
 y 45
 end
@@ -37611,7 +37611,7 @@ arch snow
 x 62
 y 46
 end
-arch blocked
+arch cave_15
 x 62
 y 46
 end
@@ -37619,7 +37619,7 @@ arch snow
 x 62
 y 47
 end
-arch blocked
+arch cave_15
 x 62
 y 47
 end
@@ -37627,7 +37627,7 @@ arch snow
 x 62
 y 48
 end
-arch blocked
+arch cave_15
 x 62
 y 48
 end
@@ -37635,7 +37635,7 @@ arch snow
 x 62
 y 49
 end
-arch blocked
+arch cave_15
 x 62
 y 49
 end
@@ -37643,7 +37643,7 @@ arch snow
 x 62
 y 50
 end
-arch blocked
+arch cave_15
 x 62
 y 50
 end
@@ -37651,7 +37651,7 @@ arch snow
 x 62
 y 51
 end
-arch blocked
+arch cave_15
 x 62
 y 51
 end
@@ -37659,7 +37659,7 @@ arch snow
 x 62
 y 52
 end
-arch blocked
+arch cave_15
 x 62
 y 52
 end
@@ -37667,7 +37667,7 @@ arch snow
 x 62
 y 53
 end
-arch blocked
+arch cave_15
 x 62
 y 53
 end
@@ -37675,7 +37675,7 @@ arch snow
 x 62
 y 54
 end
-arch blocked
+arch cave_15
 x 62
 y 54
 end
@@ -37683,7 +37683,7 @@ arch snow
 x 62
 y 55
 end
-arch blocked
+arch cave_15
 x 62
 y 55
 end
@@ -37691,7 +37691,7 @@ arch snow
 x 62
 y 56
 end
-arch blocked
+arch cave_15
 x 62
 y 56
 end
@@ -37699,7 +37699,7 @@ arch snow
 x 62
 y 57
 end
-arch blocked
+arch cave_15
 x 62
 y 57
 end
@@ -37707,7 +37707,7 @@ arch snow
 x 62
 y 58
 end
-arch blocked
+arch cave_15
 x 62
 y 58
 end
@@ -37715,7 +37715,7 @@ arch snow
 x 62
 y 59
 end
-arch blocked
+arch cave_15
 x 62
 y 59
 end
@@ -37723,7 +37723,7 @@ arch snow
 x 62
 y 60
 end
-arch blocked
+arch cave_15
 x 62
 y 60
 end
@@ -37731,7 +37731,7 @@ arch snow
 x 62
 y 61
 end
-arch blocked
+arch cave_15
 x 62
 y 61
 end
@@ -37739,7 +37739,7 @@ arch snow
 x 62
 y 62
 end
-arch blocked
+arch cave_15
 x 62
 y 62
 end
@@ -37747,21 +37747,21 @@ arch snow
 x 62
 y 63
 end
-arch blocked
+arch cave_15
 x 62
 y 63
 end
 arch snow
 x 63
 end
-arch blocked
+arch cave_15
 x 63
 end
 arch snow
 x 63
 y 1
 end
-arch blocked
+arch cave_15
 x 63
 y 1
 end
@@ -37769,7 +37769,7 @@ arch snow
 x 63
 y 2
 end
-arch blocked
+arch cave_15
 x 63
 y 2
 end
@@ -37777,7 +37777,7 @@ arch snow
 x 63
 y 3
 end
-arch blocked
+arch cave_15
 x 63
 y 3
 end
@@ -37785,7 +37785,7 @@ arch snow
 x 63
 y 4
 end
-arch blocked
+arch cave_15
 x 63
 y 4
 end
@@ -37793,7 +37793,7 @@ arch snow
 x 63
 y 5
 end
-arch blocked
+arch cave_15
 x 63
 y 5
 end
@@ -37801,7 +37801,7 @@ arch snow
 x 63
 y 6
 end
-arch blocked
+arch cave_15
 x 63
 y 6
 end
@@ -37809,7 +37809,7 @@ arch snow
 x 63
 y 7
 end
-arch blocked
+arch cave_15
 x 63
 y 7
 end
@@ -37817,7 +37817,7 @@ arch snow
 x 63
 y 8
 end
-arch blocked
+arch cave_15
 x 63
 y 8
 end
@@ -37825,7 +37825,7 @@ arch snow
 x 63
 y 9
 end
-arch blocked
+arch cave_15
 x 63
 y 9
 end
@@ -37833,7 +37833,7 @@ arch snow
 x 63
 y 10
 end
-arch blocked
+arch cave_15
 x 63
 y 10
 end
@@ -37841,7 +37841,7 @@ arch snow
 x 63
 y 11
 end
-arch blocked
+arch cave_15
 x 63
 y 11
 end
@@ -37853,7 +37853,7 @@ arch snow4
 x 63
 y 12
 end
-arch blocked
+arch cave_15
 x 63
 y 12
 end
@@ -37865,7 +37865,7 @@ arch snow4
 x 63
 y 13
 end
-arch blocked
+arch cave_15
 x 63
 y 13
 end
@@ -37877,7 +37877,7 @@ arch snow5
 x 63
 y 14
 end
-arch blocked
+arch cave_15
 x 63
 y 14
 end
@@ -37997,7 +37997,7 @@ arch snow5
 x 63
 y 27
 end
-arch blocked
+arch cave_15
 x 63
 y 27
 end
@@ -38009,7 +38009,7 @@ arch snow5
 x 63
 y 28
 end
-arch blocked
+arch cave_15
 x 63
 y 28
 end
@@ -38021,7 +38021,7 @@ arch snow4
 x 63
 y 29
 end
-arch blocked
+arch cave_15
 x 63
 y 29
 end
@@ -38029,7 +38029,7 @@ arch snow
 x 63
 y 30
 end
-arch blocked
+arch cave_15
 x 63
 y 30
 end
@@ -38037,7 +38037,7 @@ arch snow
 x 63
 y 31
 end
-arch blocked
+arch cave_15
 x 63
 y 31
 end
@@ -38045,7 +38045,7 @@ arch snow
 x 63
 y 32
 end
-arch blocked
+arch cave_15
 x 63
 y 32
 end
@@ -38053,7 +38053,7 @@ arch snow
 x 63
 y 33
 end
-arch blocked
+arch cave_15
 x 63
 y 33
 end
@@ -38061,7 +38061,7 @@ arch snow
 x 63
 y 34
 end
-arch blocked
+arch cave_15
 x 63
 y 34
 end
@@ -38069,7 +38069,7 @@ arch snow
 x 63
 y 35
 end
-arch blocked
+arch cave_15
 x 63
 y 35
 end
@@ -38077,7 +38077,7 @@ arch snow
 x 63
 y 36
 end
-arch blocked
+arch cave_15
 x 63
 y 36
 end
@@ -38085,7 +38085,7 @@ arch snow
 x 63
 y 37
 end
-arch blocked
+arch cave_15
 x 63
 y 37
 end
@@ -38093,7 +38093,7 @@ arch snow
 x 63
 y 38
 end
-arch blocked
+arch cave_15
 x 63
 y 38
 end
@@ -38101,7 +38101,7 @@ arch snow
 x 63
 y 39
 end
-arch blocked
+arch cave_15
 x 63
 y 39
 end
@@ -38109,7 +38109,7 @@ arch snow
 x 63
 y 40
 end
-arch blocked
+arch cave_15
 x 63
 y 40
 end
@@ -38117,7 +38117,7 @@ arch snow
 x 63
 y 41
 end
-arch blocked
+arch cave_15
 x 63
 y 41
 end
@@ -38125,7 +38125,7 @@ arch snow
 x 63
 y 42
 end
-arch blocked
+arch cave_15
 x 63
 y 42
 end
@@ -38133,7 +38133,7 @@ arch snow
 x 63
 y 43
 end
-arch blocked
+arch cave_15
 x 63
 y 43
 end
@@ -38141,7 +38141,7 @@ arch snow
 x 63
 y 44
 end
-arch blocked
+arch cave_15
 x 63
 y 44
 end
@@ -38149,7 +38149,7 @@ arch snow
 x 63
 y 45
 end
-arch blocked
+arch cave_15
 x 63
 y 45
 end
@@ -38157,7 +38157,7 @@ arch snow
 x 63
 y 46
 end
-arch blocked
+arch cave_15
 x 63
 y 46
 end
@@ -38165,7 +38165,7 @@ arch snow
 x 63
 y 47
 end
-arch blocked
+arch cave_15
 x 63
 y 47
 end
@@ -38173,7 +38173,7 @@ arch snow
 x 63
 y 48
 end
-arch blocked
+arch cave_15
 x 63
 y 48
 end
@@ -38181,7 +38181,7 @@ arch snow
 x 63
 y 49
 end
-arch blocked
+arch cave_15
 x 63
 y 49
 end
@@ -38189,7 +38189,7 @@ arch snow
 x 63
 y 50
 end
-arch blocked
+arch cave_15
 x 63
 y 50
 end
@@ -38197,7 +38197,7 @@ arch snow
 x 63
 y 51
 end
-arch blocked
+arch cave_15
 x 63
 y 51
 end
@@ -38205,7 +38205,7 @@ arch snow
 x 63
 y 52
 end
-arch blocked
+arch cave_15
 x 63
 y 52
 end
@@ -38213,7 +38213,7 @@ arch snow
 x 63
 y 53
 end
-arch blocked
+arch cave_15
 x 63
 y 53
 end
@@ -38221,7 +38221,7 @@ arch snow
 x 63
 y 54
 end
-arch blocked
+arch cave_15
 x 63
 y 54
 end
@@ -38229,7 +38229,7 @@ arch snow
 x 63
 y 55
 end
-arch blocked
+arch cave_15
 x 63
 y 55
 end
@@ -38237,7 +38237,7 @@ arch snow
 x 63
 y 56
 end
-arch blocked
+arch cave_15
 x 63
 y 56
 end
@@ -38245,7 +38245,7 @@ arch snow
 x 63
 y 57
 end
-arch blocked
+arch cave_15
 x 63
 y 57
 end
@@ -38253,7 +38253,7 @@ arch snow
 x 63
 y 58
 end
-arch blocked
+arch cave_15
 x 63
 y 58
 end
@@ -38261,7 +38261,7 @@ arch snow
 x 63
 y 59
 end
-arch blocked
+arch cave_15
 x 63
 y 59
 end
@@ -38269,7 +38269,7 @@ arch snow
 x 63
 y 60
 end
-arch blocked
+arch cave_15
 x 63
 y 60
 end
@@ -38277,7 +38277,7 @@ arch snow
 x 63
 y 61
 end
-arch blocked
+arch cave_15
 x 63
 y 61
 end
@@ -38285,7 +38285,7 @@ arch snow
 x 63
 y 62
 end
-arch blocked
+arch cave_15
 x 63
 y 62
 end
@@ -38293,7 +38293,7 @@ arch snow
 x 63
 y 63
 end
-arch blocked
+arch cave_15
 x 63
 y 63
 end

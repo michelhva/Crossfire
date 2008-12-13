@@ -8,18 +8,18 @@ enter_x 2
 enter_y 1
 msg
 Created:  1995-04-26
-Modified: 2008-10-26 Rick Tanner
+Modified: 2008-12-13 Rick Tanner
 endmsg
 end
-arch blocked
+arch cave_15
 end
-arch blocked
+arch cave_15
 y 1
 end
-arch blocked
+arch cave_15
 y 2
 end
-arch blocked
+arch cave_15
 y 3
 end
 arch pstone_2
@@ -58,34 +58,34 @@ end
 arch cave23
 y 9
 end
-arch blocked
+arch cave_15
 y 10
 end
-arch blocked
+arch cave_15
 y 11
 end
-arch blocked
+arch cave_15
 y 12
 end
-arch blocked
+arch cave_15
 y 13
 end
-arch blocked
+arch cave_15
 y 14
 end
-arch blocked
+arch cave_15
 y 15
 end
-arch blocked
+arch cave_15
 y 16
 end
-arch blocked
+arch cave_15
 y 17
 end
-arch blocked
+arch cave_15
 y 18
 end
-arch blocked
+arch cave_15
 y 19
 end
 arch pstone_2
@@ -190,23 +190,23 @@ arch cave23
 x 1
 y 14
 end
-arch blocked
+arch cave_15
 x 1
 y 15
 end
-arch blocked
+arch cave_15
 x 1
 y 16
 end
-arch blocked
+arch cave_15
 x 1
 y 17
 end
-arch blocked
+arch cave_15
 x 1
 y 18
 end
-arch blocked
+arch cave_15
 x 1
 y 19
 end
@@ -295,19 +295,19 @@ arch cave23
 x 2
 y 15
 end
-arch blocked
+arch cave_15
 x 2
 y 16
 end
-arch blocked
+arch cave_15
 x 2
 y 17
 end
-arch blocked
+arch cave_15
 x 2
 y 18
 end
-arch blocked
+arch cave_15
 x 2
 y 19
 end
@@ -398,19 +398,19 @@ arch cave2
 x 3
 y 15
 end
-arch blocked
+arch cave_15
 x 3
 y 16
 end
-arch blocked
+arch cave_15
 x 3
 y 17
 end
-arch blocked
+arch cave_15
 x 3
 y 18
 end
-arch blocked
+arch cave_15
 x 3
 y 19
 end
@@ -504,11 +504,11 @@ arch cave23
 x 4
 y 17
 end
-arch blocked
+arch cave_15
 x 4
 y 18
 end
-arch blocked
+arch cave_15
 x 4
 y 19
 end
@@ -606,7 +606,7 @@ arch cave23
 x 5
 y 18
 end
-arch blocked
+arch cave_15
 x 5
 y 19
 end
@@ -888,7 +888,7 @@ arch cave2
 x 8
 y 19
 end
-arch blocked
+arch cave_15
 x 9
 end
 arch pstone_2
@@ -1097,7 +1097,7 @@ arch cave22
 x 10
 y 18
 end
-arch blocked
+arch cave_15
 x 10
 y 19
 end
@@ -1195,7 +1195,7 @@ arch cave22
 x 11
 y 16
 end
-arch blocked
+arch cave_15
 x 11
 y 17
 end
@@ -1203,11 +1203,11 @@ arch pstone_2
 x 11
 y 18
 end
-arch blocked
+arch cave_15
 x 11
 y 18
 end
-arch blocked
+arch cave_15
 x 11
 y 19
 end
@@ -1309,11 +1309,11 @@ arch cave23
 x 12
 y 17
 end
-arch blocked
+arch cave_15
 x 12
 y 18
 end
-arch blocked
+arch cave_15
 x 12
 y 19
 end
@@ -1411,7 +1411,7 @@ arch cave23
 x 13
 y 18
 end
-arch blocked
+arch cave_15
 x 13
 y 19
 end
@@ -1529,11 +1529,11 @@ arch cave2
 x 14
 y 18
 end
-arch blocked
+arch cave_15
 x 14
 y 19
 end
-arch blocked
+arch cave_15
 x 15
 end
 arch pstone_2
@@ -1648,11 +1648,11 @@ arch cave2
 x 15
 y 18
 end
-arch blocked
+arch cave_15
 x 15
 y 19
 end
-arch blocked
+arch cave_15
 x 16
 end
 arch pstone_2
@@ -1691,7 +1691,7 @@ arch cave2
 x 16
 y 6
 end
-arch blocked
+arch cave_15
 x 16
 y 7
 end
@@ -1755,11 +1755,11 @@ arch cave2
 x 16
 y 18
 end
-arch blocked
+arch cave_15
 x 16
 y 19
 end
-arch blocked
+arch cave_15
 x 17
 end
 arch pstone_2
@@ -1798,7 +1798,7 @@ arch cave22
 x 17
 y 6
 end
-arch blocked
+arch cave_15
 x 17
 y 7
 end
@@ -1862,11 +1862,11 @@ arch cave22
 x 17
 y 18
 end
-arch blocked
+arch cave_15
 x 17
 y 19
 end
-arch blocked
+arch cave_15
 x 18
 end
 arch pstone_2
@@ -1909,15 +1909,15 @@ arch cave22
 x 18
 y 5
 end
-arch blocked
+arch cave_15
 x 18
 y 6
 end
-arch blocked
+arch cave_15
 x 18
 y 7
 end
-arch blocked
+arch cave_15
 x 18
 y 8
 end
@@ -1985,54 +1985,54 @@ arch cave22
 x 18
 y 17
 end
-arch blocked
+arch cave_15
 x 18
 y 18
 end
-arch blocked
+arch cave_15
 x 18
 y 19
 end
-arch blocked
+arch cave_15
 x 19
 end
-arch blocked
+arch cave_15
 x 19
 y 1
 end
-arch blocked
+arch cave_15
 x 19
 y 2
 end
-arch blocked
+arch cave_15
 x 19
 y 3
 end
-arch blocked
+arch cave_15
 x 19
 y 4
 end
-arch blocked
+arch cave_15
 x 19
 y 5
 end
-arch blocked
+arch cave_15
 x 19
 y 6
 end
-arch blocked
+arch cave_15
 x 19
 y 7
 end
-arch blocked
+arch cave_15
 x 19
 y 8
 end
-arch blocked
+arch cave_15
 x 19
 y 9
 end
-arch blocked
+arch cave_15
 x 19
 y 10
 end
@@ -2068,23 +2068,23 @@ arch cave22
 x 19
 y 14
 end
-arch blocked
+arch cave_15
 x 19
 y 15
 end
-arch blocked
+arch cave_15
 x 19
 y 16
 end
-arch blocked
+arch cave_15
 x 19
 y 17
 end
-arch blocked
+arch cave_15
 x 19
 y 18
 end
-arch blocked
+arch cave_15
 x 19
 y 19
 end
