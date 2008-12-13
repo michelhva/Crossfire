@@ -7,7 +7,6 @@ material 2
 materialname uranium
 type 73
 value 25
-magicmap black
 weight 5000
 name_pl piles
 client_type 641
@@ -23,7 +22,6 @@ materialname enriched uranium
 type 73
 glow_radius 1
 value 4000
-magicmap black
 weight 5000
 name_pl piles
 client_type 641
@@ -38,7 +36,6 @@ material 2
 materialname depleted uranium
 type 73
 value 10
-magicmap black
 weight 5000
 name_pl piles
 client_type 641

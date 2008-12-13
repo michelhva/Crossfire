@@ -27,7 +27,6 @@ type 73
 anim_speed 3
 client_anim_random 1
 value 110
-magicmap yellow
 resist_fire -100
 resist_acid 100
 weight 500
@@ -50,7 +49,6 @@ anim_speed 2
 client_anim_random 1
 type 73
 value 350
-magicmap grey
 resist_fire -100
 resist_electricity -100
 resist_acid 100
@@ -74,7 +72,6 @@ type 73
 anim_speed 3
 client_anim_random 1
 value 80
-magicmap white
 weight 500
 name_pl piles
 client_type 642

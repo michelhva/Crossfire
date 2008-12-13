@@ -7,7 +7,6 @@ material 64
 materialname uraniumoxide
 type 73
 value 2
-magicmap yellow
 weight 5000
 name_pl piles
 client_type 641

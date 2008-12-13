@@ -7,7 +7,6 @@ material 64
 materialname uranium hexafluoride
 type 73
 value 77
-magicmap white
 weight 5000
 name_pl piles
 client_type 641
@@ -22,7 +21,6 @@ material 64
 materialname uranium hexafluoride
 type 73
 value 5
-magicmap white
 weight 5000
 name_pl piles
 client_type 641
@@ -37,7 +35,6 @@ material 64
 materialname uranium hexafluoride
 type 73
 value 200
-magicmap white
 weight 5000
 name_pl piles
 client_type 641
