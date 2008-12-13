@@ -2,6 +2,14 @@
 Top of SVN tree:
 ------------------------------------------------------------------------------
 
+Fix for [ 2022488 ] 2.x GTKv1 client built with --enable-cfgtk2 cannot login
+and set [ 1862055 ] GTKv1 client built with --enable-cfgtk2 cannot login as
+Pending.  It is no longer necessary to run the client with Popup Windows.
+1862055 was reported against the Windows client, but I cannot build it to
+test, though there is no reason it should not work there.
+  gtk/keys.c
+Kevin Bulgrien 2008-12-13
+
 Fix bug #1871476:] client script 'watch stats' error.
  common/script.c: don't work on initial length, as it'll affect other scripts.
   Make parameters const to avoid issues.
