@@ -8,7 +8,7 @@ enter_x 10
 enter_y 17
 msg
 Created:  2005-05-30 Gene Alexander
-Modified: 2008-09-17 Rick Tanner
+Modified: 2008-12-13 Rick Tanner
 endmsg
 outdoor 1
 end
@@ -1636,7 +1636,7 @@ y 8
 elevation 452
 end
 arch statue
-face wyvern.171
+face wyvern.x31
 x 8
 y 8
 end
@@ -1857,11 +1857,6 @@ arch grass
 x 9
 y 8
 elevation 452
-end
-arch statue
-face wyvern.271
-x 9
-y 8
 end
 arch dungeon_magic
 x 9
@@ -2344,7 +2339,7 @@ y 8
 elevation 452
 end
 arch statue
-face wyvern.131
+face wyvern.x71
 x 11
 y 8
 end
@@ -2580,11 +2575,6 @@ arch grass
 x 12
 y 8
 elevation 452
-end
-arch statue
-face wyvern.231
-x 12
-y 8
 end
 arch dungeon_magic
 x 12

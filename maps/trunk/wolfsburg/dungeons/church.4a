@@ -8,7 +8,7 @@ enter_x 7
 enter_y 16
 msg
 Created:  1994-11-15
-Modified: 2008-12-03 Rick Tanner
+Modified: 2008-12-13 Rick Tanner
 endmsg
 end
 arch blocked
@@ -429,7 +429,7 @@ arch dungeon_floor
 x 3
 y 16
 end
-arch cave_14
+arch dun32
 x 3
 y 16
 end
@@ -437,7 +437,7 @@ arch dungeon_floor
 x 3
 y 17
 end
-arch cave_11
+arch dun29
 x 3
 y 17
 end
@@ -1442,7 +1442,7 @@ arch dungeon_floor
 x 11
 y 16
 end
-arch cave_14
+arch dun32
 x 11
 y 16
 end
@@ -1450,7 +1450,7 @@ arch dungeon_floor
 x 11
 y 17
 end
-arch cave_11
+arch dun29
 x 11
 y 17
 end

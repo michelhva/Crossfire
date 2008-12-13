@@ -8,7 +8,7 @@ enter_x 2
 enter_y 2
 msg
 Created:  1996-11-06 Chris Jeske
-Modified: 2008-10-05 Rick Tanner
+Modified: 2008-12-13 Rick Tanner
 endmsg
 end
 arch marble
@@ -1851,7 +1851,7 @@ arch marble
 x 12
 y 23
 end
-arch cave_9
+arch dun27
 x 12
 y 23
 end
@@ -2271,7 +2271,7 @@ arch marble
 x 15
 y 3
 end
-arch cave_7
+arch dun25
 x 15
 y 3
 end
@@ -2335,7 +2335,7 @@ arch marble
 x 15
 y 11
 end
-arch cave_11
+arch dun29
 x 15
 y 11
 end
@@ -2359,7 +2359,7 @@ arch marble
 x 15
 y 14
 end
-arch cave_14
+arch dun32
 x 15
 y 14
 end
@@ -2407,7 +2407,7 @@ arch marble
 x 15
 y 20
 end
-arch cave_9
+arch dun27
 x 15
 y 20
 end
@@ -2865,7 +2865,7 @@ arch marble
 x 18
 y 6
 end
-arch cave_12
+arch dun30
 x 18
 y 6
 end
@@ -2889,7 +2889,7 @@ arch marble
 x 18
 y 9
 end
-arch cave_14
+arch dun32
 x 18
 y 9
 end
@@ -2945,7 +2945,7 @@ arch marble
 x 18
 y 16
 end
-arch cave_11
+arch dun29
 x 18
 y 16
 end
@@ -2977,7 +2977,7 @@ arch marble
 x 18
 y 20
 end
-arch cave_13
+arch dun31
 x 18
 y 20
 end
@@ -3055,7 +3055,7 @@ arch marble
 x 19
 y 6
 end
-arch cave_13
+arch dun31
 x 19
 y 6
 end
@@ -3469,14 +3469,9 @@ speed 0.000000
 invisible 1
 connected 7
 end
-arch lightningwall_5
-name wall
-face cave_12.111
+arch dun30
 x 21
 y 9
-level 10
-arch spell_create_fire_wall
-end
 end
 arch unholy_ground
 x 21
@@ -3508,14 +3503,9 @@ speed 0.000000
 invisible 1
 connected 7
 end
-arch lightningwall_1
-name wall
-face cave_12.111
+arch dun30
 x 21
 y 12
-level 10
-arch spell_create_fire_wall
-end
 end
 arch unholy_ground
 x 21
@@ -3547,14 +3537,9 @@ speed 0.000000
 invisible 1
 connected 7
 end
-arch lightningwall_5
-name wall
-face cave_12.111
+arch dun30
 x 21
 y 15
-level 10
-arch spell_create_frost_wall
-end
 end
 arch unholy_ground
 x 21
@@ -3586,14 +3571,9 @@ speed 0.000000
 invisible 1
 connected 7
 end
-arch lightningwall_1
-name wall
-face cave_12.111
+arch dun30
 x 21
 y 18
-level 10
-arch spell_create_frost_wall
-end
 end
 arch unholy_ground
 x 21
@@ -3615,7 +3595,7 @@ arch marble
 x 21
 y 21
 end
-arch cave_7
+arch dun25
 x 21
 y 21
 end
@@ -3661,7 +3641,7 @@ arch marble
 x 22
 y 3
 end
-arch cave_8
+arch dun26
 x 22
 y 3
 end
@@ -3685,7 +3665,7 @@ arch marble
 x 22
 y 6
 end
-arch cave_11
+arch dun29
 x 22
 y 6
 end
@@ -3901,11 +3881,7 @@ arch flagstone
 x 22
 y 21
 end
-arch swall_1_4_half
-x 22
-y 21
-end
-arch cave_13
+arch dun31
 x 22
 y 21
 end
@@ -4030,14 +4006,9 @@ speed 0.000000
 invisible 1
 connected 7
 end
-arch lightningwall_5
-name wall
-face cave_13.111
+arch dun31
 x 23
 y 9
-level 10
-arch spell_create_fire_wall
-end
 end
 arch unholy_ground
 x 23
@@ -4069,14 +4040,9 @@ speed 0.000000
 invisible 1
 connected 7
 end
-arch lightningwall_1
-name wall
-face cave_13.111
+arch dun31
 x 23
 y 12
-level 10
-arch spell_create_fire_wall
-end
 end
 arch unholy_ground
 x 23
@@ -4108,14 +4074,9 @@ speed 0.000000
 invisible 1
 connected 7
 end
-arch lightningwall_5
-name wall
-face cave_13.111
+arch dun31
 x 23
 y 15
-level 10
-arch spell_create_frost_wall
-end
 end
 arch unholy_ground
 x 23
@@ -4147,14 +4108,9 @@ speed 0.000000
 invisible 1
 connected 7
 end
-arch lightningwall_1
-name wall
-face cave_13.111
+arch dun31
 x 23
 y 18
-level 10
-arch spell_create_frost_wall
-end
 end
 arch unholy_ground
 x 23
@@ -4420,7 +4376,7 @@ arch marble
 x 25
 y 3
 end
-arch cave_7
+arch dun25
 x 25
 y 3
 end
@@ -4444,7 +4400,7 @@ arch marble
 x 25
 y 6
 end
-arch cave_11
+arch dun29
 x 25
 y 6
 end
@@ -4564,11 +4520,7 @@ arch flagstone
 x 25
 y 21
 end
-arch swall_1_3_half
-x 25
-y 21
-end
-arch cave_12
+arch dun30
 x 25
 y 21
 end
@@ -4662,7 +4614,7 @@ arch marble
 x 26
 y 9
 end
-arch cave_12
+arch dun30
 x 26
 y 9
 end
@@ -4686,7 +4638,7 @@ arch marble
 x 26
 y 12
 end
-arch cave_7
+arch dun25
 x 26
 y 12
 end
@@ -4990,7 +4942,7 @@ arch marble
 x 28
 y 3
 end
-arch cave_13
+arch dun31
 x 28
 y 3
 end
@@ -5014,7 +4966,7 @@ arch marble
 x 28
 y 6
 end
-arch cave_14
+arch dun32
 x 28
 y 6
 end
@@ -5038,7 +4990,7 @@ arch marble
 x 28
 y 9
 end
-arch cave_10
+arch dun28
 x 28
 y 9
 end
@@ -5062,7 +5014,7 @@ arch marble
 x 28
 y 12
 end
-arch cave_13
+arch dun31
 x 28
 y 12
 end
@@ -5074,7 +5026,7 @@ arch flagstone
 x 28
 y 14
 end
-arch cave_7
+arch dun25
 x 28
 y 14
 end
@@ -5082,7 +5034,7 @@ arch flagstone
 x 28
 y 15
 end
-arch cave_9
+arch dun27
 x 28
 y 15
 end
@@ -5094,7 +5046,7 @@ arch flagstone
 x 28
 y 17
 end
-arch cave_12
+arch dun30
 x 28
 y 17
 end
@@ -5256,7 +5208,7 @@ speed 0.000000
 invisible 1
 connected 7
 end
-arch cave_0
+arch dun18
 x 29
 y 12
 end
@@ -5268,7 +5220,7 @@ arch flagstone
 x 29
 y 14
 end
-arch cave_8
+arch dun26
 x 29
 y 14
 end
@@ -5288,7 +5240,7 @@ arch flagstone
 x 29
 y 17
 end
-arch cave_8
+arch dun26
 x 29
 y 17
 end
@@ -5320,7 +5272,7 @@ arch flagstone
 x 29
 y 21
 end
-arch cave_10
+arch dun28
 x 29
 y 21
 end
@@ -5434,7 +5386,7 @@ arch marble
 x 30
 y 12
 end
-arch cave_12
+arch dun30
 x 30
 y 12
 end
@@ -5493,7 +5445,7 @@ end
 arch marble
 x 31
 end
-arch cave_8
+arch dun26
 x 31
 end
 arch marble
@@ -5676,7 +5628,7 @@ arch marble
 x 31
 y 23
 end
-arch cave_10
+arch dun28
 x 31
 y 23
 end
