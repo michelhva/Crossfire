@@ -2,7 +2,6 @@ Object potioncha
 nrof 1
 name potion of charisma
 face potioncha.111
-magicmap dark_orange
 type 5
 level 1
 material 4

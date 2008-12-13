@@ -2,7 +2,6 @@ Object potion_shielding
 name potion of shielding
 nrof 1
 face potioninv.111
-magicmap orange
 type 5
 level 1
 material 4
@@ -17,7 +16,6 @@ Object potion_aethereality
 name potion of aethereality
 nrof 1
 face potion_aether.111
-magicmap orange
 type 5
 level 1
 material 4

@@ -2,7 +2,6 @@ Object potion_heroism
 name potion of heroism
 nrof 1
 face potionhero.111
-magicmap brown
 type 5
 level 1
 material 4

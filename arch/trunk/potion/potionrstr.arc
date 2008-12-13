@@ -7,7 +7,6 @@ level 130
 attacktype 65536
 nrof 1
 weight 1500
-magicmap light_blue
 name_pl supreme potions of life
 on_use_yield potion_empty
 client_type 651
@@ -21,7 +20,6 @@ level 5
 attacktype 65536
 nrof 1
 weight 1500
-magicmap light_blue
 name_pl minor potions of life
 on_use_yield potion_empty
 client_type 651
@@ -35,7 +33,6 @@ level 30
 attacktype 65536
 nrof 1
 weight 1500
-magicmap light_blue
 name_pl medium potions of life
 on_use_yield potion_empty
 client_type 651
@@ -49,7 +46,6 @@ level 50
 attacktype 65536
 nrof 1
 weight 1500
-magicmap light_blue
 name_pl major potions of life
 on_use_yield potion_empty
 client_type 651

@@ -11,7 +11,6 @@ weight 50
 value 1
 attacktype 1
 weapontype 8
-magicmap brown
 client_type 611
 body_arm -1
 skill one handed weapons
@@ -30,7 +29,6 @@ weight 500
 value 1
 attacktype 1
 weapontype 8
-magicmap brown
 client_type 611
 body_arm -1
 skill one handed weapons
@@ -49,7 +47,6 @@ weight 1000
 value 3
 attacktype 1
 weapontype 8
-magicmap brown
 client_type 611
 body_arm -1
 skill one handed weapons
@@ -68,7 +65,6 @@ weight 600
 value 3
 attacktype 1
 weapontype 8
-magicmap brown
 client_type 611
 body_arm -1
 skill one handed weapons
@@ -87,7 +83,6 @@ weight 700
 value 3
 attacktype 1
 weapontype 8
-magicmap brown
 client_type 611
 body_arm -1
 skill one handed weapons
@@ -106,7 +101,6 @@ weight 700
 value 3
 attacktype 1
 weapontype 8
-magicmap brown
 client_type 611
 body_arm -1
 skill one handed weapons
@@ -125,7 +119,6 @@ weight 70
 value 3
 attacktype 1
 weapontype 8
-magicmap brown
 client_type 611
 body_arm -1
 skill one handed weapons

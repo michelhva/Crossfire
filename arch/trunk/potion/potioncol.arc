@@ -2,7 +2,6 @@ Object potion_cold
 name potion of fire resistance
 nrof 1
 face potioncol.111
-magicmap white
 type 5
 level 1
 material 4
@@ -17,7 +16,6 @@ Object potion_cold2
 name potion of lava resistance
 nrof 1
 face potioncol.111
-magicmap white
 type 5
 level 1
 material 4
