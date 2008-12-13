@@ -80,16 +80,13 @@ end
 arch cave17
 y 17
 end
-arch pstone_2
+arch dun33
 y 18
 end
-arch cave_15
-y 18
-end
-arch cave_15
+arch dun33
 y 19
 end
-arch cave_15
+arch dun33
 y 20
 end
 arch dungeon_floor
@@ -125,7 +122,7 @@ end
 arch random_food
 y 28
 end
-arch cave_15
+arch dun33
 y 29
 end
 arch cave_15
@@ -307,7 +304,7 @@ arch random_food
 x 1
 y 28
 end
-arch cave_15
+arch dun33
 x 1
 y 29
 end
@@ -322,7 +319,7 @@ end
 arch pstone_2
 x 2
 end
-arch dun2
+arch cave4
 x 2
 end
 arch pstone_2
@@ -512,7 +509,7 @@ arch dungeon_floor
 x 2
 y 28
 end
-arch cave_15
+arch dun33
 x 2
 y 29
 end
@@ -527,7 +524,7 @@ end
 arch pstone_2
 x 3
 end
-arch dun2
+arch cave4
 x 3
 end
 arch medium_stones
@@ -749,7 +746,7 @@ endmsg
 x 3
 y 28
 end
-arch cave_15
+arch dun33
 x 3
 y 29
 end
@@ -935,7 +932,7 @@ arch chair_3.2
 x 4
 y 28
 end
-arch cave_15
+arch dun33
 x 4
 y 29
 end
@@ -954,7 +951,7 @@ arch pstone_2
 x 5
 y 1
 end
-arch dun2
+arch cave4
 x 5
 y 1
 end
@@ -1091,7 +1088,7 @@ arch mine3
 x 5
 y 28
 end
-arch cave_15
+arch dun33
 x 5
 y 29
 end
@@ -1797,7 +1794,7 @@ arch pstone_2
 x 10
 y 1
 end
-arch dun2
+arch cave4
 x 10
 y 1
 end
@@ -2001,7 +1998,7 @@ arch pstone_2
 x 11
 y 7
 end
-arch dun3
+arch cave1
 x 11
 y 7
 end
@@ -2469,7 +2466,7 @@ end
 arch pstone_2
 x 14
 end
-arch dun2
+arch cave4
 x 14
 end
 arch pstone_2
@@ -2484,7 +2481,7 @@ arch pstone_2
 x 14
 y 3
 end
-arch dun0
+arch cave21
 x 14
 y 3
 end
@@ -3179,7 +3176,7 @@ arch pstone_2
 x 18
 y 8
 end
-arch dun10
+arch cave15
 x 18
 y 8
 end
@@ -3334,7 +3331,7 @@ arch pstone_2
 x 19
 y 5
 end
-arch dun3
+arch cave1
 x 19
 y 5
 end
@@ -3342,7 +3339,7 @@ arch pstone_2
 x 19
 y 6
 end
-arch dun3
+arch cave1
 x 19
 y 6
 end
@@ -3350,7 +3347,7 @@ arch pstone_2
 x 19
 y 7
 end
-arch dun3
+arch cave1
 x 19
 y 7
 end
