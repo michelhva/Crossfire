@@ -9,7 +9,7 @@ enter_x 9
 enter_y 20
 msg
 Created:  1995-06-06 Kundi, Xue (xkd@soda.berkeley.edu)
-Modified: 2008-10-23 Rick Tanner
+Modified: 2008-12-13 Rick Tanner
 endmsg
 end
 arch button_handle
@@ -20,7 +20,7 @@ speed 0.010000
 speed_left -1.340000
 randomitems none
 end
-arch blocked
+arch cave_15
 y 1
 end
 arch large_stones
@@ -107,16 +107,16 @@ end
 arch cave23
 y 15
 end
-arch blocked
+arch cave_15
 y 16
 end
-arch blocked
+arch cave_15
 y 17
 end
-arch blocked
+arch cave_15
 y 18
 end
-arch blocked
+arch cave_15
 y 19
 end
 arch pentagram_111
@@ -204,10 +204,10 @@ arch gem
 nrof 9999
 end
 end
-arch blocked
+arch cave_15
 x 1
 end
-arch blocked
+arch cave_15
 x 1
 y 1
 end
@@ -304,15 +304,15 @@ arch cave23
 x 1
 y 16
 end
-arch blocked
+arch cave_15
 x 1
 y 17
 end
-arch blocked
+arch cave_15
 x 1
 y 18
 end
-arch blocked
+arch cave_15
 x 1
 y 19
 end
@@ -431,7 +431,7 @@ arch cave23
 x 2
 y 18
 end
-arch blocked
+arch cave_15
 x 2
 y 19
 end
@@ -546,31 +546,31 @@ arch cave2
 x 3
 y 18
 end
-arch blocked
+arch cave_15
 x 3
 y 19
 end
-arch blocked
+arch cave_15
 x 3
 y 20
 end
-arch blocked
+arch cave_15
 x 3
 y 21
 end
-arch blocked
+arch cave_15
 x 3
 y 22
 end
-arch blocked
+arch cave_15
 x 3
 y 23
 end
-arch blocked
+arch cave_15
 x 3
 y 24
 end
-arch blocked
+arch cave_15
 x 3
 y 25
 end
@@ -608,7 +608,7 @@ arch large_stones
 x 4
 y 5
 end
-arch blocked
+arch cave_15
 x 4
 y 5
 end
@@ -741,11 +741,11 @@ arch cave23
 x 4
 y 20
 end
-arch blocked
+arch cave_15
 x 4
 y 21
 end
-arch blocked
+arch cave_15
 x 4
 y 22
 end
@@ -878,7 +878,7 @@ x 4
 y 24
 connected 3
 end
-arch blocked
+arch cave_15
 x 4
 y 25
 end
@@ -960,7 +960,7 @@ arch large_stones
 x 5
 y 12
 end
-arch blocked
+arch cave_15
 x 5
 y 12
 end
@@ -1016,19 +1016,19 @@ arch cave22
 x 5
 y 20
 end
-arch blocked
+arch cave_15
 x 5
 y 21
 end
-arch blocked
+arch cave_15
 x 5
 y 22
 end
-arch blocked
+arch cave_15
 x 5
 y 23
 end
-arch blocked
+arch cave_15
 x 5
 y 24
 end
@@ -1151,11 +1151,11 @@ arch cave23
 x 6
 y 19
 end
-arch blocked
+arch cave_15
 x 6
 y 20
 end
-arch blocked
+arch cave_15
 x 6
 y 21
 end
@@ -1860,7 +1860,7 @@ arch large_stones
 x 10
 y 25
 end
-arch blocked
+arch cave_15
 x 11
 end
 arch large_stones
@@ -2027,14 +2027,14 @@ arch cave10
 x 11
 y 25
 end
-arch blocked
+arch cave_15
 x 12
 end
-arch blocked
+arch cave_15
 x 12
 y 1
 end
-arch blocked
+arch cave_15
 x 12
 y 2
 end
@@ -2178,7 +2178,7 @@ arch cave9
 x 12
 y 25
 end
-arch blocked
+arch cave_15
 x 13
 end
 arch large_stones
@@ -2341,7 +2341,7 @@ arch cave1
 x 13
 y 25
 end
-arch blocked
+arch cave_15
 x 14
 end
 arch large_stones
@@ -3428,7 +3428,7 @@ arch cave2
 x 18
 y 25
 end
-arch blocked
+arch cave_15
 x 19
 end
 arch large_stones

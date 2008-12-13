@@ -7,12 +7,12 @@ enter_x 6
 enter_y 33
 msg
 Created:  2000-04-13 Magnus Kronhamn (mak@solace.mh.se)
-Modified: 2008-10-21 Rick Tanner
+Modified: 2008-12-13 Rick Tanner
 endmsg
 end
 arch dungeon_floor
 end
-arch blocked
+arch cave_15
 end
 arch dungeon_floor
 y 1
@@ -164,10 +164,7 @@ end
 arch cave23
 y 25
 end
-arch dungeon_floor
-y 26
-end
-arch blocked
+arch cave_15
 y 26
 end
 arch blocked
@@ -5626,7 +5623,7 @@ end
 arch dungeon_floor
 x 30
 end
-arch blocked
+arch cave_15
 x 30
 end
 arch dungeon_floor
@@ -5829,11 +5826,7 @@ arch cave22
 x 30
 y 25
 end
-arch dungeon_floor
-x 30
-y 26
-end
-arch blocked
+arch cave_15
 x 30
 y 26
 end
