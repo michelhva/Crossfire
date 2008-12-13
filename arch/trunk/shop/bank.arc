@@ -3,8 +3,6 @@ face bank.x11
 type 66
 no_pick 1
 move_block all
-visibility 100
-magicmap white
 end
 More
 Object bank_2
@@ -14,8 +12,6 @@ type 66
 no_pick 1
 move_block all
 x 1
-visibility 100
-magicmap white
 end
 More
 Object bank_3
@@ -24,8 +20,6 @@ face bank.x11
 type 66
 no_pick 1
 y 1
-visibility 100
-magicmap white
 end
 More
 Object bank_4
@@ -35,6 +29,4 @@ type 66
 no_pick 1
 x 1
 y 1
-visibility 100
-magicmap white
 end

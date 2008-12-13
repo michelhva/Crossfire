@@ -7,8 +7,6 @@ type 103
 no_pick 1
 face conv.111
 move_on walk
-visibility 100
-magicmap light_blue
 end
 Object pearl_converter
 name drop gold to buy pearls
@@ -19,7 +17,6 @@ food 5
 no_pick 1
 face conv.111
 move_on walk
-visibility 100
 end
 Object ruby_converter
 name drop gold to buy rubies
@@ -30,7 +27,6 @@ type 103
 no_pick 1
 face conv.111
 move_on walk
-visibility 100
 end
 Object silver_converter
 name convert silver into gold
@@ -41,7 +37,6 @@ type 103
 no_pick 1
 face conv.111
 move_on walk
-visibility 100
 end
 Object gold_converter
 name convert gold into platinum
@@ -52,7 +47,6 @@ type 103
 no_pick 1
 face conv.111
 move_on walk
-visibility 100
 end
 Object platinum_converter
 name convert platinum into gold
@@ -64,7 +58,6 @@ type 103
 no_pick 1
 face conv.111
 move_on walk
-visibility 100
 end
 Object platinum_converter2
 name convert platinum into jade
@@ -75,7 +68,6 @@ type 103
 no_pick 1
 face conv.111
 move_on walk
-visibility 100
 end
 Object jade_converter
 name convert jade into amberium
@@ -86,5 +78,4 @@ type 103
 no_pick 1
 face conv.111
 move_on walk
-visibility 100
 end

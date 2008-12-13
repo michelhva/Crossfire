@@ -8,6 +8,5 @@ type 68
 auto_apply 1
 randomitems shop_gems
 exp 100000
-magicmap grey
 damned 1
 end

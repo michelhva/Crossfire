@@ -7,6 +7,4 @@ slaying dragon_scale
 food 60
 no_pick 1
 move_on walk
-visibility 100
-magicmap black
 end

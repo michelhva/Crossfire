@@ -7,6 +7,4 @@ slaying serp_skin
 food 3
 no_pick 1
 move_on walk
-visibility 100
-magicmap black
 end

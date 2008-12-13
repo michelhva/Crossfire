@@ -22,7 +22,6 @@ mina
 anim_speed 2
 client_anim_random 1
 move_on walk
-visibility 100
 end
 
 Object alchemy_ruby_converter
@@ -49,7 +48,6 @@ mina
 anim_speed 2
 client_anim_random 1
 move_on walk
-visibility 100
 end
 
 Object alchemy_pearl_converter
@@ -76,5 +74,4 @@ mina
 anim_speed 2
 client_anim_random 1
 move_on walk
-visibility 100
 end
