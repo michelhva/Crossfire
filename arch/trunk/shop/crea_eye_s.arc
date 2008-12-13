@@ -7,5 +7,4 @@ slaying beholdereye
 food 1
 no_pick 1
 move_on walk
-visibility 100
 end

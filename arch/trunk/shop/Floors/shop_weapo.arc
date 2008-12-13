@@ -7,7 +7,6 @@ no_magic 1
 type 68
 auto_apply 1
 randomitems random_weapon
-magicmap grey
 damned 1
 end
 
@@ -20,7 +19,6 @@ no_magic 1
 type 68
 auto_apply 1
 randomitems shopweapoeast
-magicmap grey
 damned 1
 end
 

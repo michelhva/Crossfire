@@ -7,7 +7,6 @@ slaying dragon_scale
 food 5
 no_pick 1
 move_on walk
-visibility 100
 end
 Object create_blue_dragon_mail
 name blue dragon mail: five blue dragon scales
@@ -18,7 +17,6 @@ slaying blue_dragon_scale
 food 5
 no_pick 1
 move_on walk
-visibility 100
 end
 Object create_green_dragon_mail
 name green dragon mail: five green dragon scales
@@ -29,5 +27,4 @@ slaying green_dragon_scale
 food 5
 no_pick 1
 move_on walk
-visibility 100
 end
