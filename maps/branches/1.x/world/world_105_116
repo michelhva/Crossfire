@@ -636,7 +636,6 @@ elevation 13597
 end
 arch tavern
 name Beginners
-name_pl Beginners
 slaying /scorn/misc/beginners
 hp 14
 sp 28
@@ -688,7 +687,6 @@ elevation 9507
 end
 arch house_small
 name The Jones'
-name_pl The Jones'
 slaying /scorn/houses/jones
 hp 2
 sp 2
@@ -1311,7 +1309,6 @@ y 4
 end
 arch sign
 name General Information
-name_pl General Information
 msg
 Safe Places to visit...
 Wanderer Inn (Sleep to save!)
@@ -2024,7 +2021,6 @@ elevation 11843
 end
 arch house_2
 name Alfalfa's House
-name_pl Alfalfa's House
 slaying /scorn/houses/newhouse1
 hp 2
 sp 1
@@ -2325,7 +2321,6 @@ elevation 11305
 end
 arch inn
 name Wanderer Inn
-name_pl Wanderer Inn
 slaying /scorn/taverns/inn
 hp 8
 sp 15
@@ -2687,7 +2682,6 @@ elevation 10990
 end
 arch farmhouse
 name Patch's House
-name_pl Patch's House
 slaying /scorn/houses/house2
 hp 10
 sp 1
