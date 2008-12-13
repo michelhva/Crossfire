@@ -4095,7 +4095,6 @@ y 20
 end
 arch lamppost
 name Street Lamp
-name_pl Street Lamp
 msg
 Property of Brest Lighting Department
 endmsg
@@ -4763,7 +4762,6 @@ elevation 10076
 end
 arch market1
 name Private Shops - West
-name_pl Private Shops - West
 slaying ../brest/pshops/pshops_main
 msg
 As you enter the street you can sense the enormous
@@ -5061,7 +5059,6 @@ elevation 511
 end
 arch market2
 name Private Shops - West
-name_pl Private Shops - West
 slaying ../brest/pshops/pshops_main
 msg
 As you enter the street you can sense the enormous
@@ -5344,7 +5341,6 @@ elevation 511
 end
 arch market2
 name Private Shops - East
-name_pl Private Shops - East
 slaying ../brest/pshops/pshops_main
 msg
 As you enter the street you can sense the enormous
@@ -5430,7 +5426,6 @@ y 39
 end
 arch sign
 name Tower of  Ludo
-name_pl Tower of  Ludo
 msg
 Lord Ludo invites to step in
 And discover his treasures
@@ -5461,7 +5456,6 @@ y 41
 end
 arch tower_tob_fant
 name Payment Booth
-name_pl Payment Booth
 x 20
 y 41
 end
@@ -5632,7 +5626,6 @@ elevation 10851
 end
 arch market3
 name Private Shops - East
-name_pl Private Shops - East
 slaying ../brest/pshops/pshops_main
 msg
 As you enter the street you can sense the enormous
@@ -5732,7 +5725,6 @@ elevation 1066
 end
 arch lamppost
 name Street Lamp
-name_pl Street Lamp
 msg
 Property of Brest Lighting Department
 endmsg
@@ -6044,7 +6036,6 @@ elevation 2813
 end
 arch city_tower_fant
 name Tower of  Tanguy
-name_pl Tower of  Tanguy
 slaying /brest/ludo1
 hp 22
 sp 8
@@ -6252,7 +6243,6 @@ elevation 2311
 end
 arch lamppost
 name Street Lamp
-name_pl Street Lamp
 msg
 Property of Brest Lighting Department
 endmsg
@@ -6332,7 +6322,6 @@ elevation 2875
 end
 arch lamppost
 name Street Lamp
-name_pl Street Lamp
 msg
 Property of Brest Lighting Department
 endmsg
@@ -7353,7 +7342,6 @@ elevation 1448
 end
 arch lamppost
 name Street Lamp
-name_pl Street Lamp
 msg
 Property of Brest Lighting Department
 endmsg
@@ -7616,7 +7604,6 @@ elevation 2182
 end
 arch guild_fant
 name Black Shield's storage room
-name_pl Black Shield's storage room
 slaying /brest/black_shield/storage_room
 hp 1
 sp 10
@@ -7862,7 +7849,6 @@ y 20
 end
 arch lamppost
 name Street Lamp
-name_pl Street Lamp
 msg
 Property of Brest Lighting Department
 endmsg
@@ -8175,7 +8161,6 @@ elevation 2171
 end
 arch palace
 name Kingdom Palace
-name_pl Kingdom Palace
 slaying /brest/asyvan/palace1
 hp 12
 sp 21
@@ -8213,7 +8198,6 @@ elevation 39
 end
 arch lamppost
 name Street Lamp
-name_pl Street Lamp
 msg
 Property of Brest Lighting Department
 endmsg
@@ -8912,7 +8896,6 @@ y 39
 end
 arch lamppost
 name Street Lamp
-name_pl Street Lamp
 msg
 Property of Brest Lighting Department
 endmsg
@@ -9393,7 +9376,6 @@ y 17
 end
 arch fort
 name Nasty Hallway
-name_pl Nasty Hallway
 slaying /brest/pantheon
 hp 1
 sp 17
@@ -9415,7 +9397,6 @@ elevation 1688
 end
 arch lamppost
 name Street Lamp
-name_pl Street Lamp
 msg
 Property of Brest Lighting Department
 endmsg
@@ -9490,7 +9471,6 @@ elevation 2319
 end
 arch lamppost
 name Street Lamp
-name_pl Street Lamp
 msg
 Property of Brest Lighting Department
 endmsg
@@ -9872,7 +9852,6 @@ elevation 2097
 end
 arch courthouse
 name Administration
-name_pl Administration
 slaying /brest/jes.admini
 hp 21
 sp 1
@@ -10158,7 +10137,6 @@ elevation 1509
 end
 arch house_1
 name Brest Imperial Post Office
-name_pl IPO
 slaying /brest/brest.IPO
 hp 7
 sp 10
@@ -10762,7 +10740,6 @@ elevation 46
 end
 arch lamppost
 name Street Lamp
-name_pl Street Lamp
 msg
 Property of Brest Lighting Department
 endmsg
@@ -10795,7 +10772,6 @@ elevation 1160
 end
 arch lamppost
 name Street Lamp
-name_pl Street Lamp
 msg
 Property of Brest Lighting Department
 endmsg
@@ -11137,7 +11113,6 @@ y 38
 end
 arch lamppost
 name Street Lamp
-name_pl Street Lamp
 msg
 Property of Brest Lighting Department
 endmsg
@@ -11320,7 +11295,6 @@ elevation 1166
 end
 arch store_magic_fant
 name Scrolls Galore
-name_pl Scrolls Galore
 slaying /brest/brest.scrolls
 hp 3
 sp 37
@@ -11345,7 +11319,6 @@ elevation 1166
 end
 arch lamppost
 name Street Lamp
-name_pl Street Lamp
 msg
 Property of Brest Lighting Department
 endmsg
@@ -11470,7 +11443,6 @@ elevation 652
 end
 arch prison_fant
 name Amphis...
-name_pl Amphis...
 slaying /brest/amphis
 hp 1
 sp 23
@@ -11489,7 +11461,6 @@ elevation 2092
 end
 arch tavern
 name Nasty House
-name_pl Nasty House
 slaying /brest/nasty_house
 hp 1
 sp 1

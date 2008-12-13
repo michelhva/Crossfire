@@ -263,7 +263,6 @@ y 42
 end
 arch mailbox
 name The Dean
-name_pl The Dean
 y 42
 no_pick 1
 end
@@ -1000,7 +999,6 @@ y 45
 end
 arch palace
 name Navr City Palace
-name_pl Navr City Palace
 x 2
 y 45
 end
@@ -3692,7 +3690,6 @@ y 41
 end
 arch minihouse
 name Tannery of Navar
-name_pl Tannery
 slaying /navar_city/misc/tannery
 hp 5
 sp 9
@@ -7754,7 +7751,6 @@ move_block all
 end
 arch big_galleon
 name To Darcap
-name_pl To Darcap
 slaying /world/world_116_102
 hp 32
 sp 41
@@ -7784,7 +7780,6 @@ move_block all
 end
 arch big_galleon
 name to Wolfsburg
-name_pl to Wolfsburg
 slaying /world/world_128_109
 hp 43
 sp 25

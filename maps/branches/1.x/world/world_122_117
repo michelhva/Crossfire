@@ -347,7 +347,6 @@ y 1
 end
 arch house_up
 name House of Gossip
-name_pl House of Gossip
 slaying /navar_city/city1houses3
 hp 28
 sp 8
@@ -404,7 +403,6 @@ y 7
 end
 arch s_shop1
 name Navar Imperial Post Office
-name_pl Imperial Post
 slaying /navar_city/misc/IPO_navar
 msg
 !Ding
@@ -2196,7 +2194,6 @@ y 2
 end
 arch sign_w
 name Civic St.
-name_pl Civic St.
 msg
 Civic St.
 High Court Building
@@ -3981,7 +3978,6 @@ y 7
 end
 arch house_larg_west
 name Gunther's Smithy
-name_pl Gunther's Smithy
 slaying /navar_city/misc/city1smith
 hp 8
 sp 8
@@ -4272,7 +4268,6 @@ y 2
 end
 arch farmhouse
 name Traveller's Wayhouse
-name_pl Traveller's Wayhouse
 slaying /navar_city/city1houses3
 hp 28
 sp 22
@@ -4353,7 +4348,6 @@ y 9
 end
 arch bank_west
 name Bank of Skud, Navar Branch
-name_pl Bank of Skud, Navar Branch
 slaying /navar_city/misc/city1bank
 hp 7
 sp 14
@@ -4688,7 +4682,6 @@ y 7
 end
 arch sign_w
 name Smith St.
-name_pl Smith St.
 msg
 Blacksmith
 Visit Gunther for Special Service
@@ -4937,7 +4930,6 @@ x 14
 end
 arch sign_w
 name Tavern St.
-name_pl Tavern St.
 msg
 Convivial Times for Scurvey Knaves!
 endmsg
@@ -5580,7 +5572,6 @@ y 1
 end
 arch store_armour
 name Olaf's Armor Emporium
-name_pl Olaf's Armor Emporium
 slaying /navar_city/misc/city1armour
 hp 1
 sp 2
@@ -7607,7 +7598,6 @@ elevation 35
 end
 arch brazier
 name campfire
-name_pl campfire
 face campfire.111
 animation campfire
 x 22
