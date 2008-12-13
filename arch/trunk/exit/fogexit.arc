@@ -17,6 +17,5 @@ empty.111
 empty.111
 mina
 move_on walk fly_low
-visibility 100
 client_type 25012
 end

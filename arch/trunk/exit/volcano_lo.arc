@@ -6,8 +6,6 @@ no_pick 1
 move_slow walk
 move_slow_penalty 15
 blocksview 1
-visibility 100
-magicmap brown
 client_type 25012
 end
 More
@@ -20,6 +18,4 @@ x 1
 move_slow walk
 move_slow_penalty 15
 blocksview 1
-visibility 100
-magicmap brown
 end
