@@ -2,7 +2,6 @@ Object potionstr
 nrof 1
 name potion of strength
 face potionstr.111
-magicmap red
 type 5
 level 1
 material 4

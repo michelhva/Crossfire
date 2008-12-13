@@ -2,7 +2,6 @@ Object potioncon
 nrof 1
 name potion of constitution
 face potioncon.111
-magicmap light_blue
 type 5
 level 1
 material 4

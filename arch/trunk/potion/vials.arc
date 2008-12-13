@@ -2,7 +2,6 @@ Object vial_water
 face vial_water.111
 name vial
 name_pl vials
-magicmap blue
 food 5
 nrof 1
 type 54
@@ -17,7 +16,6 @@ Object vial_blue
 face vial_blue.111
 name vial
 name_pl vials
-magicmap blue
 food 5
 nrof 1
 type 54
@@ -32,7 +30,6 @@ Object vial_cyan
 face vial_cyan.111
 name vial
 name_pl vials
-magicmap blue
 food 5
 nrof 1
 type 54
@@ -47,7 +44,6 @@ Object vial_green
 face vial_green.111
 name vial
 name_pl vials
-magicmap blue
 food 5
 nrof 1
 type 54
@@ -62,7 +58,6 @@ Object vial_magenta
 face vial_magenta.111
 name vial
 name_pl vials
-magicmap blue
 food 5
 nrof 1
 type 54
@@ -77,7 +72,6 @@ Object vial_red
 face vial_red.111
 name vial
 name_pl vials
-magicmap blue
 food 5
 nrof 1
 type 54
@@ -92,7 +86,6 @@ Object vial_yellow
 face vial_yellow.111
 name vial
 name_pl vials
-magicmap blue
 food 5
 nrof 1
 type 54
