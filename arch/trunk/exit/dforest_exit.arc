@@ -1,9 +1,7 @@
 Object dforest_exit
 type 66
 face darkforest.111
-magicmap green
 no_pick 1
-visibility 100
 is_floor 1
 move_on walk
 smoothface darkforest.111 darkforest_S.111
