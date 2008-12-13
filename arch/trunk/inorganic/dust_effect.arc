@@ -3,7 +3,6 @@ name cloud of dust
 type 79
 level 1
 face dust_effect.111
-magicmap brown
 anim
 dust_effect.111
 dust_effect.112

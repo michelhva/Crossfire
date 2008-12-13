@@ -8,7 +8,6 @@ resist_acid 100
 materialname lead
 weight 5000
 nrof 1
-magicmap grey
 name_pl leads
 client_type 642
 end
