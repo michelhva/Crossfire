@@ -1,3 +1,29 @@
+2008-12-13 06:24  rjtanner
+
+	* world/world_105_115, world/world_105_116, world/world_107_123,
+	  world/world_109_126, world/world_116_102, world/world_121_116,
+	  world/world_121_117, world/world_122_116, world/world_122_117,
+	  world/world_124_124, world/world_126_124, world/world_127_100,
+	  world/world_127_101, world/world_127_102, world/world_127_125,
+	  world/world_128_100, world/world_128_101, world/world_128_109,
+	  world/world_128_128, world/world_129_101: Removed unused
+	  'name_pl' field from world objects
+
+2008-12-13 05:46  rjtanner
+
+	* scorn/houses/house3.1st: Reformat container parameters which give
+	  it a capacity limit
+
+2008-12-13 05:41  rjtanner
+
+	* brest/brest.scrolls, brest/brest.scrolls.right: Backport from
+	  Trunk - Cosmetic wall updates with how swall (fence) merges with
+	  nearby walls
+
+2008-12-12 07:44  rjtanner
+
+	* ChangeLog: Updated ChangeLog file using svn2cl
+
 2008-12-12 03:12  rjtanner
 
 	* scorn/misc/PowerHouse, world/world_105_115: Backport from Trunk -

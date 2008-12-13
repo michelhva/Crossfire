@@ -1,3 +1,129 @@
+2008-12-13 09:38  rjtanner
+
+	* whalingoutpost/misc/polarbearcave2: Fill in surrounding area with
+	  solid rock, require archetypes r10843 or newer
+
+2008-12-13 09:34  rjtanner
+
+	* whalingoutpost/misc/castleb3: Fill in some of the hollow section
+	  with solid rock, require archetypes r10843 or newer
+
+2008-12-13 09:32  rjtanner
+
+	* whalingoutpost/misc/castleb3: Cosmetic changes with merging
+	  between mine and cave walls
+
+2008-12-13 09:29  rjtanner
+
+	* euthville/hallofbones: Cosmetic change - replace swirling blue
+	  exits with actual doors, matches building exterior
+
+2008-12-13 09:28  rjtanner
+
+	* dragonisland/intwell: Cosmetic change - update wall section for
+	  nicer merging with nearby door
+
+2008-12-13 09:27  rjtanner
+
+	* wolfsburg/magara/castle/cellar: Add missing floor tiles
+
+2008-12-13 09:24  rjtanner
+
+	* dragonisland/thievesden, dungeons/train/dragon_train,
+	  lake_country/Butakis/prison0, navar_city/mlab/tavernb1,
+	  port_joseph/goblin/dungeon1, port_joseph/pirates/mbgrave2,
+	  port_joseph/pirates/tortcave, quests/greyshield/GreyMaster,
+	  quests/mak/chaos/fallen, scorn/temples/gnarg,
+	  wolfsburg/dungeons/church.4a, wolfsburg/dungeons/church.4c:
+	  Update wall sections to match nearby walls or styles, requires
+	  archetype update r10841 or newer
+
+2008-12-13 09:03  rjtanner
+
+	* darcap/undead/undead.2: Cosmetic change with cave wall merging
+
+2008-12-13 09:01  rjtanner
+
+	* brest/brittany/jessy.1: Cosmetic change with cave wall merging
+
+2008-12-13 08:57  rjtanner
+
+	* azumauindo/misc/shrineb1,
+	  azumauindo/suno-yamatoshi/buildings/dojoB1,
+	  brest/brittany/jessy.1, brest/zorn/castle.basement0,
+	  darcap/undead/undead.1, darcap/undead/undead.2,
+	  darcap/undead/undead.3, dragonisland/housebrxzl,
+	  euthville/hallofbones, lake_country/Mwizard/MwizardD,
+	  lake_country/shops/Mopoon_wshop,
+	  lake_country/snake_pit/Chaos_lair1,
+	  lake_country/snake_pit/Chaos_lair2,
+	  lake_country/snake_pit/Chaos_lair3,
+	  lake_country/snake_pit/Chaos_lair4, lake_country/snake_pit/pit,
+	  lake_country/snake_pit/snakepit_1,
+	  lake_country/snake_pit/snakepit_2,
+	  lake_country/snake_pit/snakepit_3,
+	  lake_country/snake_pit/snakepit_5, marksel/mines,
+	  navar_city/misc/aliscave, navar_city/misc/aliswell,
+	  navar_city/misc/theaterb3, navar_city/mlab/tavernb1,
+	  navar_city/mlab/tavernb3, navar_city/mlab/tavernb4,
+	  navar_city/mlab/thehole, navar_city/mlab/zealothouseb1,
+	  navar_city/smugglers_cove/sc_warehouse2,
+	  navar_city/smugglers_cove/sc_warehouse3,
+	  navar_city/troll_canyon/troll_canyon.10,
+	  navar_city/troll_canyon/troll_canyon.11,
+	  navar_city/troll_canyon/troll_canyon.12,
+	  navar_city/troll_canyon/troll_canyon.2,
+	  navar_city/troll_canyon/troll_canyon.3,
+	  navar_city/troll_canyon/troll_canyon.4,
+	  navar_city/troll_canyon/troll_canyon.5,
+	  navar_city/troll_canyon/troll_canyon.6,
+	  navar_city/troll_canyon/troll_canyon.7,
+	  navar_city/troll_canyon/troll_canyon.8, port_joseph/goblin/caves,
+	  port_joseph/goblin/dungeon2, port_joseph/pirates/mbgrave2,
+	  port_joseph/pirates/tortcave, quests/greyshield/Cave,
+	  quests/greyshield/Cavern, quests/greyshield/Cavern2,
+	  quests/mak/dragons/chaos, quests/mak/troll_cave/cave.1,
+	  quests/mak/troll_cave/cave.2, quests/mak/troll_cave/cave.3,
+	  quests/peterm/DragonQuest/ElectricAnte,
+	  quests/peterm/DragonQuest/ElectricHatchery,
+	  quests/peterm/DragonQuest/ElectricLord,
+	  quests/peterm/DragonQuest/Entrance,
+	  quests/peterm/DragonQuest/FireAnte,
+	  quests/peterm/DragonQuest/FireHatchery,
+	  quests/peterm/DragonQuest/FireLord,
+	  quests/peterm/DragonQuest/IceAnte,
+	  quests/peterm/DragonQuest/IceHatchery,
+	  quests/peterm/DragonQuest/IceLord,
+	  quests/peterm/DragonQuest/WyvernNest,
+	  quests/peterm/FireTemple/Entrance,
+	  quests/peterm/FireTemple/LavaChamber,
+	  quests/peterm/FireTemple/Passageway,
+	  quests/peterm/quests/dragonquest2,
+	  santo_dominion/magara/well/cave, santo_dominion/magara/well/top,
+	  santo_dominion/shaft/undeadshaft.1,
+	  santo_dominion/shaft/undeadshaft.2,
+	  santo_dominion/shaft/undeadshaft.3,
+	  santo_dominion/shaft/undeadshaft.4, scorn/misc/wizhide,
+	  scorn/oldcity/end, scorn/temples/mostrai2,
+	  whalingoutpost/lightkeepershouseb1, whalingoutpost/misc/castleb2,
+	  whalingoutpost/misc/castleb3, whalingoutpost/misc/frostcavern1,
+	  whalingoutpost/misc/holeinice1, whalingoutpost/misc/icecavern1,
+	  whalingoutpost/misc/icecavern2,
+	  whalingoutpost/misc/polarbearcave1,
+	  whalingoutpost/misc/polarbearcave2,
+	  whalingoutpost/misc/polarbearcave3,
+	  whalingoutpost/misc/trollcave1,
+	  wolfsburg/apartments/pet-apartment/torture-chamber,
+	  wolfsburg/dungeons/church.4c, wolfsburg/dungeons/piratedung,
+	  wolfsburg/magara/castle/cellar, wolfsburg/magara/cellar_1,
+	  wolfsburg/magara/tower1/floor_3: Replace blocked (solid black
+	  square) arch with cave_15 (solid grey square) archetype, requires
+	  archetype update r10843 or newer
+
+2008-12-12 07:44  rjtanner
+
+	* ChangeLog: Updated ChangeLog file using svn2cl
+
 2008-12-12 02:53  rjtanner
 
 	* brest/shops/brest.armour, brest/shops/brest.cvt,
