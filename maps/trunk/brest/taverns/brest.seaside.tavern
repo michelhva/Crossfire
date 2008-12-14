@@ -2438,6 +2438,23 @@ x 19
 y 10
 end
 arch child_thief
+msg
+@match hi|hello
+I'm waiting here for my daddy to return.
+@match daddy|return
+He's playing cards or something like that.
+@match cards
+Sure, cards.  That's how he makes some money.
+@match money
+Sometimes he plays with money, sometimes it's clothing - like boots or a cloak.  Never his own, he always finds some, somwhere and uses that.
+@match boots|cloak|clothing
+Yeah - old stuff. Dirty and full of dust. My daddy says since it's magical it's worth more.
+@match magic|magical
+My daddy has a special shovels that help him find the magical clothes.
+@match *
+I don't know. I'm just a little kid
+
+endmsg
 Wis 1
 x 19
 y 10
@@ -2544,6 +2561,10 @@ y 6
 end
 arch beggar
 name wandering drunk
+msg
+match *
+I am celebrating my big win.  Lady luck was finally on my side of the dice! *hiccup*
+endmsg
 x 20
 y 6
 arch poison
