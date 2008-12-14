@@ -1629,7 +1629,7 @@ Ah yes, the temple along the northern wall.  That location is quite strange.  Al
 @match location|strange
 Why so interesting?  Because it was built on top of a grave site.
 @match inhabitants|inhabitant|residents|tenants|troll|trolls
-I can't for the life of me imagine why trolls would be so interested in a temple at that location.
+I can't for the life of me imagine why trolls would be so interested in a temple at that location. They must not be followers of their typical god, Gnarg.  Maybe Devourers?
 @match grave|grave site|graveyard
 Oh yes, some of the Last Men who met their demise fleeing to here, Kingdom of Brittany before it was a kingdom, were entombed at that location.
 @match last men
@@ -1646,6 +1646,12 @@ The werebeasts hunted the Last Men as they fled Scorn to here. The werebeasts we
 The ruling administration has a tolerance of all races here.
 @match ice mountain|ice mountains
 The legend has it - the mountains and icestorms appeared from nowhere.  As if they were summoned by mages.  How much truth bending took place for that tale?  One may never know.
+@match gnarg
+Gnarg is the god of trolls, goblins and even assassins. You won't find too many civilized lands that accept temples of that kind.  I would flee in fear if the Administration here would allow the cult to set up here!
+@match devourers
+Devourers is the patron of the undead - mostly with wraiths who have returned to this world to finish what they could not accomplish when they were living.  Some embrace the darker side of Devourers, such as Necromancers and others in the dark arts.
+@match valkyrie
+Oh?  Valkyrie you say? She is the deity of warriors.  I know nothing more then that.
 endmsg
 hp 100
 maxhp 100
@@ -2446,7 +2452,7 @@ He's playing cards or something like that.
 @match cards
 Sure, cards.  That's how he makes some money.
 @match money
-Sometimes he plays with money, sometimes it's clothing - like boots or a cloak.  Never his own, he always finds some, somwhere and uses that.
+Sometimes he plays with money, sometimes it's clothing - like boots or a cloak.  Never his own, he always finds some, somwhere, and uses that.
 @match boots|cloak|clothing
 Yeah - old stuff. Dirty and full of dust. My daddy says since it's magical it's worth more.
 @match magic|magical
