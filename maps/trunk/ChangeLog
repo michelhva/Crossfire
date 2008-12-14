@@ -1,3 +1,69 @@
+2008-12-14 09:11  rjtanner
+
+	* brest/taverns/brest.seaside.tavern: Slightly expanded NPC info in
+	  regards to valkyrie temple, other crossfire cults, and upcoming
+	  expansion to valkyrie temple in brest
+
+2008-12-14 08:58  rjtanner
+
+	* brest/taverns/brest.seaside.tavern: Update NPCs with some
+	  storyline information and (somewhat obscure) hints on the local
+	  Valkyrie temple
+
+2008-12-14 08:32  rjtanner
+
+	* brest/taverns/brest.seaside.tavern: Give two NPCs some Lore about
+	  the history of Brest and the local temple of Valkyrie, certainly
+	  possible to add and improve the information
+
+2008-12-14 07:45  rjtanner
+
+	* brest/sow/sow: Update Strange Old Wizard map with difficulty
+	  level, region and entrance coordinates
+
+2008-12-14 07:30  rjtanner
+
+	* pup_land/rainbow/red_town/shop: Cosmetic wall updates with how
+	  swall (fence) merges with nearby walls
+
+2008-12-14 07:22  rjtanner
+
+	* brest/shops/brest.magic, dragonisland/advguild,
+	  mlab/citydeclouds/citydeclouds2I, navar_city/misc/city1magic,
+	  pup_land/rainbow/red_town/shop, santo_dominion/shops/nosferatu,
+	  scorn/shops/generalshop, scorn/shops/magicshop,
+	  scorn/shops/scorn.sale1, wolfsburg/dept_store_magic: Per web
+	  forum post and IRC discussion - attempt to make things somewhat
+	  easier for low level players - reduced the detect curse altar
+	  cost from 25gp to 25sp
+
+2008-12-14 07:03  rjtanner
+
+	* quests/peterm/Demonology/GroundLevel: Updated the altar with
+	  information on how much the entrance fee is to the next level
+
+2008-12-14 06:47  rjtanner
+
+	* scorn/misc/mercenaries: Change altars and gates in Mercenaries
+	  house so that players can't trap themselves inside the rooms -
+	  the gate stay permanently open (or until the next map reset)
+	  after hiring one of the mercenaries
+
+2008-12-14 06:17  rjtanner
+
+	* scorn/misc/mercenaries: Cosmetic wall change with how swall
+	  (fence) merges with nearby walls
+
+2008-12-14 03:59  rjtanner
+
+	* whalingoutpost/misc/castleb3, whalingoutpost/misc/icehole1:
+	  Filled in surrounding area with solid rock, requires archetype
+	  r10843 or newer
+
+2008-12-13 09:54  rjtanner
+
+	* ChangeLog: Updated ChangeLog file using svn2cl
+
 2008-12-13 09:38  rjtanner
 
 	* whalingoutpost/misc/polarbearcave2: Fill in surrounding area with

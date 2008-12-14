@@ -1,3 +1,24 @@
+2008-12-14 07:45  rjtanner
+
+	* brest/sow/sow: Update Strange Old Wizard map with difficulty
+	  level, region and entrance coordinates
+
+2008-12-14 07:03  rjtanner
+
+	* quests/peterm/Demonology/GroundLevel: Updated the altar with
+	  information on how much the entrance fee is to the next level
+
+2008-12-14 06:47  rjtanner
+
+	* scorn/misc/mercenaries: Change altars and gates in Mercenaries
+	  house so that players can't trap themselves inside the rooms -
+	  the gate stay permanently open (or until the next map reset)
+	  after hiring one of the mercenaries
+
+2008-12-13 09:54  rjtanner
+
+	* ChangeLog: Updated ChangeLog file using svn2cl
+
 2008-12-13 06:24  rjtanner
 
 	* world/world_105_115, world/world_105_116, world/world_107_123,
