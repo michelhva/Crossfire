@@ -10,7 +10,7 @@ enter_x 1
 enter_y 15
 msg
 Created:  1994-02-12
-Modified: 2008-12-01 Rick Tanner
+Modified: 2008-12-14 Rick Tanner
 endmsg
 end
 arch flagstone
@@ -236,9 +236,9 @@ x 1
 y 18
 end
 arch altar
-name altar of detect curse (25 gp)
+name altar of detect curse (25 sp)
 slaying money
-food 250
+food 25
 x 1
 y 18
 arch spell_detect_curse

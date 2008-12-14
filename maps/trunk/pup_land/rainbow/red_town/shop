@@ -11,7 +11,7 @@ enter_x 6
 enter_y 12
 msg
 Created:  2000-10-22
-Modified: 2008-10-13 Rick Tanner
+Modified: 2008-12-14 Rick Tanner
 endmsg
 end
 arch woodfloor
@@ -994,9 +994,9 @@ x 11
 y 11
 end
 arch altar
-name altar of detect curse (25 gp)
+name altar of detect curse (25 sp)
 slaying money
-food 250
+food 25
 x 11
 y 11
 arch spell_detect_curse

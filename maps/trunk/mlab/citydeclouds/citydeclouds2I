@@ -9,7 +9,7 @@ enter_x 1
 enter_y 1
 msg
 Created:  2002-08-28 mikeeusa
-Modified: 2008-10-20 Rick Tanner
+Modified: 2008-12-14 Rick Tanner
 endmsg
 outdoor 1
 tile_path_1 citydeclouds2H
@@ -1601,10 +1601,9 @@ x 3
 y 2
 end
 arch altar
-name altar of detect curse (25 gp)
-name_pl altar of detect curse (25 gp)
+name altar of detect curse (25 sp)
 slaying money
-food 250
+food 25
 x 3
 y 2
 arch spell_detect_curse

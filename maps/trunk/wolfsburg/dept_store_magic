@@ -11,7 +11,7 @@ height 14
 enter_x 15
 msg
 Created:  2005-09-18
-Modified: 2008-10-26 Rick Tanner
+Modified: 2008-12-14 Rick Tanner
 endmsg
 tile_path_1 dept_store_armour
 tile_path_2 dept_store_misc
@@ -381,9 +381,9 @@ x 5
 y 1
 end
 arch altar
-name altar of detect curse (25 gp)
+name altar of detect curse (25 sp)
 slaying money
-food 250
+food 25
 x 5
 y 1
 arch spell_detect_curse
@@ -659,9 +659,9 @@ x 9
 y 1
 end
 arch altar
-name altar of detect curse (25 gp)
+name altar of detect curse (25 sp)
 slaying money
-food 250
+food 25
 x 9
 y 1
 arch spell_detect_curse
@@ -937,9 +937,9 @@ x 13
 y 1
 end
 arch altar
-name altar of detect curse (25 gp)
+name altar of detect curse (25 sp)
 slaying money
-food 250
+food 25
 x 13
 y 1
 arch spell_detect_curse
