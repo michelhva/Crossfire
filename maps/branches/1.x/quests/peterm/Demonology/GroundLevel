@@ -7,7 +7,7 @@ enter_x 9
 enter_y 19
 msg
 Created:  1994-04-30 peterm (peterm@soda.berkeley.edu)
-Modified: 2008-11-13 Rick Tanner
+Modified: 2008-12-14 Rick Tanner
 endmsg
 end
 arch woodfloor
@@ -1217,6 +1217,7 @@ x 9
 y 3
 end
 arch altar
+name altar (1500 gp)
 slaying money
 food 15000
 x 9
