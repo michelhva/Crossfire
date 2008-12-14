@@ -7,6 +7,7 @@ enter_x 16
 enter_y 13
 msg
 Created:  2006-08-19 Gene Alexander
+Modified: 2008-12-14 Rick Tanner
 endmsg
 outdoor 1
 end
@@ -1618,6 +1619,43 @@ arch chair_1.4
 x 13
 y 4
 end
+arch guildmaster
+name cleric
+msg
+@match hi|hello
+Greetings traveler.
+@match temple
+Ah yes, the temple along the northern wall.  That location is quite strange.  Almost as much as it's inhabitants.
+@match location|strange
+Why so interesting?  Because it was built on top of a grave site.
+@match inhabitants|inhabitant|residents|tenants|troll|trolls
+I can't for the life of me imagine why trolls would be so interested in a temple at that location.
+@match grave|grave site|graveyard
+Oh yes, some of the Last Men who met their demise fleeing to here, Kingdom of Brittany before it was a kingdom, were entombed at that location.
+@match last men
+You have not hear the Lore of the Last Men?
+@match lore|lore of the last men
+Ah, well - I can share with you what I know.  The Last Men were a select group of people who fled Scorn after the Dragon Wars and the betrayel of the werebeasts.
+@match dragon war|dragon wars
+I know very little about that - just that Dragons once attacked Scorn and left it buried & ruined.
+@match buried|ruined
+As I said, I know very little - nothing more.
+@match werebeasts|werebeast
+The werebeasts hunted the Last Men as they fled Scorn to here. The werebeasts were unable to survive the ice mountains and it's denizens.  Fortunately, most of the Last Men did.
+@match administration
+The ruling administration has a tolerance of all races here.
+@match ice mountain|ice mountains
+The legend has it - the mountains and icestorms appeared from nowhere.  As if they were summoned by mages.  How much truth bending took place for that tale?  One may never know.
+endmsg
+hp 100
+maxhp 100
+x 13
+y 4
+randomitems throw_stnd
+pick_up 0
+friendly 1
+stand_still 1
+end
 arch dirtfloor
 x 13
 y 5
@@ -2344,9 +2382,28 @@ x 19
 y 4
 end
 arch elf_1
+name Slightly Intoxicated Elf
 msg
+@match hi|hello
+Eh?  Can't you see I'm trying to enjoy my drink?  What do you want, small talk?
+@match drink
+You would have a drink too if the bane of your existence moved in by your home!  In a temple no less!!
+@match bane|bane of your existence
+That temple at the northern wall!  Trolls, and more trolls everywhere you look! What does the administration do about it?  Nothing!!
+@match administration
+Yes - administration.  They care nothing for it's upstanding citizens.  By Lythander's grace we will do something about it soon.
+@match trolls|trolls
+That's is what I said, trolls - the blight of the land.  Lythander's Crusade will free us!
+@match lythander|crusade|lythanders crusade|lythander's crusade
+When those who follow The Trollslayer's will decimate and make this land safe and clean from those wretched trolls!
+@match trollslayer
+You know so very little of the world!  Lythander is the Trollslayer!! (Takes a swig of his drink) To Lythander!
+@match temple
+It is obvious constructed as part of a fortress.  The trolls that live there even wear armour!
+@match armour|fortress
+I couldn't stand to look at them more then I did - their site disgusts me .  More then their stench!
 @match *
-<blank stare>
+Bleah, try another topic or leave me alone.. *grumble* blasted trolls *grumble*
 endmsg
 x 19
 y 4
