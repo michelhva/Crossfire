@@ -8,391 +8,411 @@ enter_x 13
 enter_y 10
 msg
 Created:  1996-04-05
-Modified: 2008-12-04 Rick Tanner
+Modified: 2008-12-14 Rick Tanner
 endmsg
 end
-arch biglake_center
-name sky
+arch sky
 end
-arch biglake_center
-name sky
+arch sky
 y 1
 end
-arch biglake_center
-name sky
+arch sky
 y 2
 end
-arch biglake_center
-name sky
+arch sky
 y 3
 end
-arch biglake_center
-name sky
+arch sky
 y 4
 end
-arch biglake_center
-name sky
+arch sky
 y 5
 end
-arch biglake_center
-name sky
+arch sky
 y 6
 end
-arch biglake_center
-name sky
+arch sky
 y 7
 end
-arch biglake_center
-name sky
+arch sky
 y 8
 end
-arch biglake_center
-name sky
+arch cloudwall
+y 8
+end
+arch sky
 y 9
 end
-arch biglake_center
-name sky
+arch sky
 y 10
 end
-arch biglake_center
-name sky
+arch sky
 y 11
 end
-arch biglake_center
-name sky
+arch sky
 y 12
 end
-arch biglake_center
-name sky
+arch sky
 y 13
 end
-arch biglake_center
-name sky
+arch sky
 y 14
 end
-arch biglake_center
-name sky
+arch sky
 y 15
 end
-arch biglake_center
-name sky
+arch cloudwall
+y 15
+end
+arch sky
 y 16
 end
-arch biglake_center
-name sky
+arch cloudwall
+y 16
+end
+arch sky
 y 17
 end
-arch biglake_center
-name sky
+arch cloudwall
+y 17
+end
+arch sky
 x 1
 end
-arch biglake_center
-name sky
+arch sky
 x 1
 y 1
 end
-arch biglake_center
-name sky
+arch cloudwall
+x 1
+y 1
+end
+arch sky
 x 1
 y 2
 end
-arch biglake_center
-name sky
+arch sky
 x 1
 y 3
 end
-arch biglake_center
-name sky
+arch cloudwall
+x 1
+y 3
+end
+arch sky
 x 1
 y 4
 end
-arch biglake_center
-name sky
+arch sky
 x 1
 y 5
 end
-arch biglake_center
-name sky
+arch sky
 x 1
 y 6
 end
-arch biglake_center
-name sky
+arch sky
 x 1
 y 7
 end
-arch biglake_center
-name sky
+arch cloudwall
+x 1
+y 7
+end
+arch sky
 x 1
 y 8
-move_block 0
 end
-arch biglake_center
-name sky
+arch cloudwall
+x 1
+y 8
+end
+arch sky
 x 1
 y 9
-move_block 0
 end
-arch biglake_center
-name sky
+arch cloudwall
+x 1
+y 9
+end
+arch sky
 x 1
 y 10
 end
-arch biglake_center
-name sky
+arch cloudwall
+x 1
+y 10
+end
+arch sky
 x 1
 y 11
 end
-arch biglake_center
-name sky
+arch sky
 x 1
 y 12
 end
-arch biglake_center
-name sky
+arch sky
 x 1
 y 13
 end
-arch biglake_center
-name sky
+arch sky
 x 1
 y 14
 end
-arch biglake_center
-name sky
+arch cloudwall
+x 1
+y 14
+end
+arch sky
 x 1
 y 15
 end
-arch biglake_center
-name sky
+arch cloudwall
+x 1
+y 15
+end
+arch sky
 x 1
 y 16
 end
-arch biglake_center
-name sky
+arch cloudwall
+x 1
+y 16
+end
+arch sky
 x 1
 y 17
 end
-arch biglake_center
-name sky
+arch cloudwall
+x 1
+y 17
+end
+arch sky
 x 2
 end
-arch biglake_center
-name sky
+arch sky
 x 2
 y 1
 end
-arch biglake_center
-name sky
+arch cloudwall
+x 2
+y 1
+end
+arch sky
 x 2
 y 2
 end
-arch biglake_center
-name sky
+arch cloudwall
+x 2
+y 2
+end
+arch sky
 x 2
 y 3
 end
-arch biglake_center
-name sky
+arch cloudwall
+x 2
+y 3
+end
+arch sky
 x 2
 y 4
 end
-arch biglake_center
-name sky
+arch sky
 x 2
 y 5
 end
-arch biglake_center
-name sky
+arch sky
 x 2
 y 6
 end
-arch biglake_center
-name sky
+arch sky
 x 2
 y 7
 end
-arch biglake_center
-name sky
+arch sky
 x 2
 y 8
-move_block 0
 end
-arch biglake_center
-name sky
+arch cloudwall
+x 2
+y 8
+end
+arch sky
 x 2
 y 9
 end
-arch biglake_center
-name sky
+arch cloudwall
+x 2
+y 9
+end
+arch sky
 x 2
 y 10
 end
-arch biglake_center
-name sky
+arch cloudwall
+x 2
+y 10
+end
+arch sky
 x 2
 y 11
 end
-arch biglake_center
-name sky
+arch sky
 x 2
 y 12
 end
-arch biglake_center
-name sky
+arch sky
 x 2
 y 13
 end
-arch biglake_center
-name sky
+arch sky
 x 2
 y 14
 end
-arch biglake_center
-name sky
+arch sky
 x 2
 y 15
 end
-arch biglake_center
-name sky
+arch cloudwall
+x 2
+y 15
+end
+arch sky
 x 2
 y 16
 end
-arch biglake_center
-name sky
+arch sky
 x 2
 y 17
 end
-arch biglake_center
-name sky
+arch cloudwall
+x 2
+y 17
+end
+arch sky
 x 3
 end
-arch biglake_center
-name sky
+arch sky
 x 3
 y 1
 end
-arch biglake_center
-name sky
+arch cloudwall
+x 3
+y 1
+end
+arch sky
 x 3
 y 2
 end
-arch biglake_center
-name sky
+arch cloudwall
+x 3
+y 2
+end
+arch sky
 x 3
 y 3
 end
-arch biglake_center
-name sky
+arch sky
 x 3
 y 4
 end
-arch biglake_center
-name sky
+arch sky
 x 3
 y 5
 end
-arch biglake_center
-name sky
+arch cloudwall
+x 3
+y 5
+end
+arch sky
 x 3
 y 6
 end
-arch biglake_center
-name sky
+arch sky
 x 3
 y 7
 end
-arch biglake_center
-name sky
+arch sky
 x 3
 y 8
-move_block 0
 end
 arch cobblestones2
 x 3
 y 9
 end
-arch biglake_center
-name sky
+arch sky
 x 3
 y 9
 end
-arch biglake_center
-name sky
+arch sky
 x 3
 y 10
 end
-arch biglake_center
-name sky
+arch sky
 x 3
 y 11
 end
-arch biglake_center
-name sky
+arch sky
 x 3
 y 12
 end
-arch biglake_center
-name sky
+arch sky
 x 3
 y 13
 end
-arch biglake_center
-name sky
+arch sky
 x 3
 y 14
 end
-arch biglake_center
-name sky
+arch sky
 x 3
 y 15
 end
-arch biglake_center
-name sky
+arch sky
 x 3
 y 16
 end
-arch biglake_center
-name sky
+arch sky
 x 3
 y 17
 end
-arch biglake_center
-name sky
+arch sky
 x 4
 end
-arch biglake_center
-name sky
+arch sky
 x 4
 y 1
 end
-arch biglake_center
-name sky
+arch sky
 x 4
 y 2
 end
-arch biglake_center
-name sky
+arch sky
 x 4
 y 3
 end
-arch biglake_center
-name sky
+arch sky
 x 4
 y 4
 end
-arch biglake_center
-name sky
+arch cloudwall
+x 4
+y 4
+end
+arch sky
 x 4
 y 5
 end
-arch biglake_center
-name sky
+arch cloudwall
+x 4
+y 5
+end
+arch sky
 x 4
 y 6
 end
-arch biglake_center
-name sky
+arch sky
 x 4
 y 7
 end
@@ -400,8 +420,7 @@ arch cobblestones2
 x 4
 y 8
 end
-arch biglake_center
-name sky
+arch sky
 x 4
 y 8
 end
@@ -409,67 +428,54 @@ arch cobblestones2
 x 4
 y 9
 end
-arch biglake_center
-name sky
+arch sky
 x 4
 y 9
 end
-arch biglake_center
-name sky
+arch sky
 x 4
 y 10
 end
-arch biglake_center
-name sky
+arch sky
 x 4
 y 11
 end
-arch biglake_center
-name sky
+arch sky
 x 4
 y 12
 end
-arch biglake_center
-name sky
+arch sky
 x 4
 y 13
 end
-arch biglake_center
-name sky
+arch sky
 x 4
 y 14
 end
-arch biglake_center
-name sky
+arch sky
 x 4
 y 15
 end
-arch biglake_center
-name sky
+arch sky
 x 4
 y 16
 end
-arch biglake_center
-name sky
+arch sky
 x 4
 y 17
 end
-arch biglake_center
-name sky
+arch sky
 x 5
 end
-arch biglake_center
-name sky
+arch sky
 x 5
 y 1
 end
-arch biglake_center
-name sky
+arch sky
 x 5
 y 2
 end
-arch biglake_center
-name sky
+arch sky
 x 5
 y 3
 end
@@ -477,8 +483,7 @@ arch grass
 x 5
 y 4
 end
-arch biglake_center
-name sky
+arch sky
 x 5
 y 4
 end
@@ -486,8 +491,7 @@ arch grass
 x 5
 y 5
 end
-arch biglake_center
-name sky
+arch sky
 x 5
 y 5
 end
@@ -543,8 +547,7 @@ arch grass
 x 5
 y 12
 end
-arch biglake_center
-name sky
+arch sky
 x 5
 y 12
 end
@@ -552,47 +555,42 @@ arch grass
 x 5
 y 13
 end
-arch biglake_center
-name sky
+arch sky
 x 5
 y 13
 end
-arch biglake_center
-name sky
+arch sky
 x 5
 y 14
 end
-arch biglake_center
-name sky
+arch cloudwall
+x 5
+y 14
+end
+arch sky
 x 5
 y 15
 end
-arch biglake_center
-name sky
+arch sky
 x 5
 y 16
 end
-arch biglake_center
-name sky
+arch sky
 x 5
 y 17
 end
-arch biglake_center
-name sky
+arch sky
 x 6
 end
-arch biglake_center
-name sky
+arch sky
 x 6
 y 1
 end
-arch biglake_center
-name sky
+arch sky
 x 6
 y 2
 end
-arch biglake_center
-name sky
+arch sky
 x 6
 y 3
 end
@@ -600,8 +598,7 @@ arch grass
 x 6
 y 4
 end
-arch biglake_center
-name sky
+arch sky
 x 6
 y 4
 end
@@ -657,47 +654,42 @@ arch grass
 x 6
 y 13
 end
-arch biglake_center
-name sky
+arch sky
 x 6
 y 13
 end
-arch biglake_center
-name sky
+arch sky
 x 6
 y 14
 end
-arch biglake_center
-name sky
+arch sky
 x 6
 y 15
 end
-arch biglake_center
-name sky
+arch cloudwall
+x 6
+y 15
+end
+arch sky
 x 6
 y 16
 end
-arch biglake_center
-name sky
+arch sky
 x 6
 y 17
 end
-arch biglake_center
-name sky
+arch sky
 x 7
 end
-arch biglake_center
-name sky
+arch sky
 x 7
 y 1
 end
-arch biglake_center
-name sky
+arch sky
 x 7
 y 2
 end
-arch biglake_center
-name sky
+arch sky
 x 7
 y 3
 end
@@ -771,42 +763,46 @@ arch swall_2_2_1
 x 7
 y 13
 end
-arch biglake_center
-name sky
+arch sky
 x 7
 y 14
 end
-arch biglake_center
-name sky
+arch sky
 x 7
 y 15
 end
-arch biglake_center
-name sky
+arch cloudwall
+x 7
+y 15
+end
+arch sky
 x 7
 y 16
 end
-arch biglake_center
-name sky
+arch cloudwall
+x 7
+y 16
+end
+arch sky
 x 7
 y 17
 end
-arch biglake_center
-name sky
+arch sky
 x 8
 end
-arch biglake_center
-name sky
+arch sky
 x 8
 y 1
 end
-arch biglake_center
-name sky
+arch cloudwall
+x 8
+y 1
+end
+arch sky
 x 8
 y 2
 end
-arch biglake_center
-name sky
+arch sky
 x 8
 y 3
 end
@@ -866,48 +862,53 @@ arch swall_2_1_2
 x 8
 y 13
 end
-arch biglake_center
-name sky
+arch sky
 x 8
 y 14
 end
-arch biglake_center
-name sky
+arch sky
 x 8
 y 15
 end
-arch biglake_center
-name sky
+arch cloudwall
+x 8
+y 15
+end
+arch sky
 x 8
 y 16
 end
-arch biglake_center
-name sky
+arch sky
 x 8
 y 17
 end
-arch biglake_center
-name sky
+arch sky
 x 9
 end
-arch biglake_center
-name sky
+arch cloudwall
+x 9
+end
+arch sky
 x 9
 y 1
-move_block 0
 end
-arch biglake_center
-name sky
+arch cloudwall
+x 9
+y 1
+end
+arch sky
 x 9
 y 2
-move_block 0
+end
+arch cloudwall
+x 9
+y 2
 end
 arch cobblestones2
 x 9
 y 3
 end
-arch biglake_center
-name sky
+arch sky
 x 9
 y 3
 end
@@ -971,44 +972,45 @@ arch cobblestones2
 x 9
 y 14
 end
-arch biglake_center
-name sky
+arch sky
 x 9
 y 14
 end
-arch biglake_center
-name sky
+arch sky
 x 9
 y 15
-move_block 0
 end
-arch biglake_center
-name sky
+arch sky
 x 9
 y 16
-move_block 0
 end
-arch biglake_center
-name sky
+arch sky
 x 9
 y 17
 end
-arch biglake_center
-name sky
+arch sky
 x 10
 end
-arch biglake_center
-name sky
+arch cloudwall
+x 10
+end
+arch sky
 x 10
 y 1
-move_block 0
+end
+arch cloudwall
+x 10
+y 1
 end
 arch cobblestones2
 x 10
 y 2
 end
-arch biglake_center
-name sky
+arch sky
+x 10
+y 2
+end
+arch cloudwall
 x 10
 y 2
 end
@@ -1016,8 +1018,7 @@ arch cobblestones2
 x 10
 y 3
 end
-arch biglake_center
-name sky
+arch sky
 x 10
 y 3
 end
@@ -1093,8 +1094,7 @@ arch cobblestones2
 x 10
 y 14
 end
-arch biglake_center
-name sky
+arch sky
 x 10
 y 14
 end
@@ -1102,8 +1102,7 @@ arch cobblestones2
 x 10
 y 15
 end
-arch biglake_center
-name sky
+arch sky
 x 10
 y 15
 end
@@ -1111,38 +1110,34 @@ arch cobblestones2
 x 10
 y 16
 end
-arch biglake_center
-name sky
+arch sky
 x 10
 y 16
 end
-arch biglake_center
-name sky
+arch sky
 x 10
 y 17
 end
-arch biglake_center
-name sky
+arch cloudwall
+x 10
+y 17
+end
+arch sky
 x 11
 end
-arch biglake_center
-name sky
+arch sky
 x 11
 y 1
-move_block 0
 end
-arch biglake_center
-name sky
+arch sky
 x 11
 y 2
-move_block 0
 end
 arch cobblestones2
 x 11
 y 3
 end
-arch biglake_center
-name sky
+arch sky
 x 11
 y 3
 end
@@ -1206,44 +1201,42 @@ arch cobblestones2
 x 11
 y 14
 end
-arch biglake_center
-name sky
+arch sky
 x 11
 y 14
 end
-arch biglake_center
-name sky
+arch sky
 x 11
 y 15
-move_block 0
 end
-arch biglake_center
-name sky
+arch sky
 x 11
 y 16
-move_block 0
 end
-arch biglake_center
-name sky
+arch cloudwall
+x 11
+y 16
+end
+arch sky
 x 11
 y 17
 end
-arch biglake_center
-name sky
+arch cloudwall
+x 11
+y 17
+end
+arch sky
 x 12
 end
-arch biglake_center
-name sky
+arch sky
 x 12
 y 1
 end
-arch biglake_center
-name sky
+arch sky
 x 12
 y 2
 end
-arch biglake_center
-name sky
+arch sky
 x 12
 y 3
 end
@@ -1315,42 +1308,42 @@ arch swall_2_1_2
 x 12
 y 13
 end
-arch biglake_center
-name sky
+arch sky
 x 12
 y 14
 end
-arch biglake_center
-name sky
+arch sky
 x 12
 y 15
 end
-arch biglake_center
-name sky
+arch sky
 x 12
 y 16
 end
-arch biglake_center
-name sky
+arch sky
 x 12
 y 17
 end
-arch biglake_center
-name sky
+arch sky
 x 13
 end
-arch biglake_center
-name sky
+arch sky
 x 13
 y 1
 end
-arch biglake_center
-name sky
+arch cloudwall
+x 13
+y 1
+end
+arch sky
 x 13
 y 2
 end
-arch biglake_center
-name sky
+arch cloudwall
+x 13
+y 2
+end
+arch sky
 x 13
 y 3
 end
@@ -1425,42 +1418,42 @@ arch swall_2_2_4
 x 13
 y 13
 end
-arch biglake_center
-name sky
+arch sky
 x 13
 y 14
 end
-arch biglake_center
-name sky
+arch sky
 x 13
 y 15
 end
-arch biglake_center
-name sky
+arch cloudwall
+x 13
+y 15
+end
+arch sky
 x 13
 y 16
 end
-arch biglake_center
-name sky
+arch sky
 x 13
 y 17
 end
-arch biglake_center
-name sky
+arch sky
 x 14
 end
-arch biglake_center
-name sky
+arch sky
 x 14
 y 1
 end
-arch biglake_center
-name sky
+arch cloudwall
+x 14
+y 1
+end
+arch sky
 x 14
 y 2
 end
-arch biglake_center
-name sky
+arch sky
 x 14
 y 3
 end
@@ -1468,8 +1461,7 @@ arch grass
 x 14
 y 4
 end
-arch biglake_center
-name sky
+arch sky
 x 14
 y 4
 end
@@ -1525,47 +1517,46 @@ arch grass
 x 14
 y 13
 end
-arch biglake_center
-name sky
+arch sky
 x 14
 y 13
 end
-arch biglake_center
-name sky
+arch sky
 x 14
 y 14
 end
-arch biglake_center
-name sky
+arch cloudwall
+x 14
+y 14
+end
+arch sky
 x 14
 y 15
 end
-arch biglake_center
-name sky
+arch cloudwall
+x 14
+y 15
+end
+arch sky
 x 14
 y 16
 end
-arch biglake_center
-name sky
+arch sky
 x 14
 y 17
 end
-arch biglake_center
-name sky
+arch sky
 x 15
 end
-arch biglake_center
-name sky
+arch sky
 x 15
 y 1
 end
-arch biglake_center
-name sky
+arch sky
 x 15
 y 2
 end
-arch biglake_center
-name sky
+arch sky
 x 15
 y 3
 end
@@ -1573,8 +1564,7 @@ arch grass
 x 15
 y 4
 end
-arch biglake_center
-name sky
+arch sky
 x 15
 y 4
 end
@@ -1582,8 +1572,7 @@ arch grass
 x 15
 y 5
 end
-arch biglake_center
-name sky
+arch sky
 x 15
 y 5
 end
@@ -1639,8 +1628,7 @@ arch grass
 x 15
 y 12
 end
-arch biglake_center
-name sky
+arch sky
 x 15
 y 12
 end
@@ -1648,67 +1636,66 @@ arch grass
 x 15
 y 13
 end
-arch biglake_center
-name sky
+arch sky
 x 15
 y 13
 end
-arch biglake_center
-name sky
+arch sky
 x 15
 y 14
 end
-arch biglake_center
-name sky
+arch sky
 x 15
 y 15
 end
-arch biglake_center
-name sky
+arch cloudwall
+x 15
+y 15
+end
+arch sky
 x 15
 y 16
 end
-arch biglake_center
-name sky
+arch sky
 x 15
 y 17
 end
-arch biglake_center
-name sky
+arch sky
 x 16
 end
-arch biglake_center
-name sky
+arch sky
 x 16
 y 1
 end
-arch biglake_center
-name sky
+arch sky
 x 16
 y 2
 end
-arch biglake_center
-name sky
+arch cloudwall
+x 16
+y 2
+end
+arch sky
 x 16
 y 3
 end
-arch biglake_center
-name sky
+arch cloudwall
+x 16
+y 3
+end
+arch sky
 x 16
 y 4
 end
-arch biglake_center
-name sky
+arch sky
 x 16
 y 5
 end
-arch biglake_center
-name sky
+arch sky
 x 16
 y 6
 end
-arch biglake_center
-name sky
+arch sky
 x 16
 y 7
 end
@@ -1716,8 +1703,7 @@ arch cobblestones2
 x 16
 y 8
 end
-arch biglake_center
-name sky
+arch sky
 x 16
 y 8
 end
@@ -1725,416 +1711,433 @@ arch cobblestones2
 x 16
 y 9
 end
-arch biglake_center
-name sky
+arch sky
 x 16
 y 9
 end
-arch biglake_center
-name sky
+arch sky
 x 16
 y 10
 end
-arch biglake_center
-name sky
+arch sky
 x 16
 y 11
 end
-arch biglake_center
-name sky
+arch sky
 x 16
 y 12
 end
-arch biglake_center
-name sky
+arch sky
 x 16
 y 13
 end
-arch biglake_center
-name sky
+arch sky
 x 16
 y 14
 end
-arch biglake_center
-name sky
+arch sky
 x 16
 y 15
 end
-arch biglake_center
-name sky
+arch sky
 x 16
 y 16
 end
-arch biglake_center
-name sky
+arch sky
 x 16
 y 17
 end
-arch biglake_center
-name sky
+arch sky
 x 17
 end
-arch biglake_center
-name sky
+arch sky
 x 17
 y 1
 end
-arch biglake_center
-name sky
+arch sky
 x 17
 y 2
 end
-arch biglake_center
-name sky
+arch sky
 x 17
 y 3
 end
-arch biglake_center
-name sky
+arch cloudwall
+x 17
+y 3
+end
+arch sky
 x 17
 y 4
 end
-arch biglake_center
-name sky
+arch cloudwall
+x 17
+y 4
+end
+arch sky
 x 17
 y 5
 end
-arch biglake_center
-name sky
+arch cloudwall
+x 17
+y 5
+end
+arch sky
 x 17
 y 6
 end
-arch biglake_center
-name sky
+arch sky
 x 17
 y 7
 end
-arch biglake_center
-name sky
+arch sky
 x 17
 y 8
-move_block 0
 end
 arch cobblestones2
 x 17
 y 9
 end
-arch biglake_center
-name sky
+arch sky
 x 17
 y 9
 end
-arch biglake_center
-name sky
+arch sky
 x 17
 y 10
 end
-arch biglake_center
-name sky
+arch sky
 x 17
 y 11
 end
-arch biglake_center
-name sky
+arch sky
 x 17
 y 12
 end
-arch biglake_center
-name sky
+arch cloudwall
+x 17
+y 12
+end
+arch sky
 x 17
 y 13
 end
-arch biglake_center
-name sky
+arch cloudwall
+x 17
+y 13
+end
+arch sky
 x 17
 y 14
 end
-arch biglake_center
-name sky
+arch sky
 x 17
 y 15
 end
-arch biglake_center
-name sky
+arch sky
 x 17
 y 16
 end
-arch biglake_center
-name sky
+arch sky
 x 17
 y 17
 end
-arch biglake_center
-name sky
+arch sky
 x 18
 end
-arch biglake_center
-name sky
+arch sky
 x 18
 y 1
 end
-arch biglake_center
-name sky
+arch sky
 x 18
 y 2
 end
-arch biglake_center
-name sky
+arch sky
 x 18
 y 3
 end
-arch biglake_center
-name sky
+arch sky
 x 18
 y 4
 end
-arch biglake_center
-name sky
+arch cloudwall
+x 18
+y 4
+end
+arch sky
 x 18
 y 5
 end
-arch biglake_center
-name sky
+arch cloudwall
+x 18
+y 5
+end
+arch sky
 x 18
 y 6
 end
-arch biglake_center
-name sky
+arch sky
 x 18
 y 7
 end
-arch biglake_center
-name sky
+arch sky
 x 18
 y 8
-move_block 0
 end
 arch cobblestones2
 x 18
 y 9
 end
-arch biglake_center
-name sky
+arch sky
 x 18
 y 9
 end
-arch biglake_center
-name sky
+arch cloudwall
+x 18
+y 9
+end
+arch sky
 x 18
 y 10
 end
-arch biglake_center
-name sky
+arch sky
 x 18
 y 11
 end
-arch biglake_center
-name sky
+arch sky
 x 18
 y 12
 end
-arch biglake_center
-name sky
+arch cloudwall
+x 18
+y 12
+end
+arch sky
 x 18
 y 13
 end
-arch biglake_center
-name sky
+arch sky
 x 18
 y 14
 end
-arch biglake_center
-name sky
+arch sky
 x 18
 y 15
 end
-arch biglake_center
-name sky
+arch sky
 x 18
 y 16
 end
-arch biglake_center
-name sky
+arch cloudwall
+x 18
+y 16
+end
+arch sky
 x 18
 y 17
 end
-arch biglake_center
-name sky
+arch cloudwall
+x 18
+y 17
+end
+arch sky
 x 19
 end
-arch biglake_center
-name sky
+arch cloudwall
+x 19
+end
+arch sky
 x 19
 y 1
 end
-arch biglake_center
-name sky
+arch sky
 x 19
 y 2
 end
-arch biglake_center
-name sky
+arch sky
 x 19
 y 3
 end
-arch biglake_center
-name sky
+arch sky
 x 19
 y 4
 end
-arch biglake_center
-name sky
+arch sky
 x 19
 y 5
 end
-arch biglake_center
-name sky
+arch sky
 x 19
 y 6
 end
-arch biglake_center
-name sky
+arch sky
 x 19
 y 7
 end
-arch biglake_center
-name sky
+arch sky
 x 19
 y 8
-move_block 0
 end
-arch biglake_center
-name sky
+arch cloudwall
+x 19
+y 8
+end
+arch sky
 x 19
 y 9
-move_block 0
 end
-arch biglake_center
-name sky
+arch cloudwall
+x 19
+y 9
+end
+arch sky
 x 19
 y 10
 end
-arch biglake_center
-name sky
+arch cloudwall
+x 19
+y 10
+end
+arch sky
 x 19
 y 11
 end
-arch biglake_center
-name sky
+arch sky
 x 19
 y 12
 end
-arch biglake_center
-name sky
+arch sky
 x 19
 y 13
 end
-arch biglake_center
-name sky
+arch sky
 x 19
 y 14
 end
-arch biglake_center
-name sky
+arch sky
 x 19
 y 15
 end
-arch biglake_center
-name sky
+arch cloudwall
+x 19
+y 15
+end
+arch sky
 x 19
 y 16
 end
-arch biglake_center
-name sky
+arch cloudwall
+x 19
+y 16
+end
+arch sky
 x 19
 y 17
 end
-arch biglake_center
-name sky
+arch sky
 x 20
 end
-arch biglake_center
-name sky
+arch cloudwall
+x 20
+end
+arch sky
 x 20
 y 1
 end
-arch biglake_center
-name sky
+arch cloudwall
+x 20
+y 1
+end
+arch sky
 x 20
 y 2
 end
-arch biglake_center
-name sky
+arch sky
 x 20
 y 3
 end
-arch biglake_center
-name sky
+arch sky
 x 20
 y 4
 end
-arch biglake_center
-name sky
+arch sky
 x 20
 y 5
 end
-arch biglake_center
-name sky
+arch sky
 x 20
 y 6
 end
-arch biglake_center
-name sky
+arch sky
 x 20
 y 7
 end
-arch biglake_center
-name sky
+arch cloudwall
+x 20
+y 7
+end
+arch sky
 x 20
 y 8
 end
-arch biglake_center
-name sky
+arch cloudwall
+x 20
+y 8
+end
+arch sky
 x 20
 y 9
 end
-arch biglake_center
-name sky
+arch cloudwall
+x 20
+y 9
+end
+arch sky
 x 20
 y 10
 end
-arch biglake_center
-name sky
+arch cloudwall
+x 20
+y 10
+end
+arch sky
 x 20
 y 11
 end
-arch biglake_center
-name sky
+arch sky
 x 20
 y 12
 end
-arch biglake_center
-name sky
+arch sky
 x 20
 y 13
 end
-arch biglake_center
-name sky
+arch sky
 x 20
 y 14
 end
-arch biglake_center
-name sky
+arch cloudwall
+x 20
+y 14
+end
+arch sky
 x 20
 y 15
 end
-arch biglake_center
-name sky
+arch cloudwall
+x 20
+y 15
+end
+arch sky
 x 20
 y 16
 end
-arch biglake_center
-name sky
+arch cloudwall
+x 20
+y 16
+end
+arch sky
 x 20
 y 17
 end
