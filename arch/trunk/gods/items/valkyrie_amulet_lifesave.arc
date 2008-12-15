@@ -1,8 +1,8 @@
 Object valkyrie_amulet_lifesave
-name Valkyrie's Amulet
-name_pl Valkyrie's Amulets
+name Valkyrie's Torc
+name_pl Valkyrie's Torcs
 title of Lifesaving
-face amulet_lif.111
+face torc.111
 type 39
 material 12
 weight 600
