@@ -9,7 +9,7 @@ enter_x 1
 enter_y 1
 msg
 Created:  2001-02-16
-Modified: 2008-12-11 Rick Tanner
+Modified: 2008-12-16 Rick Tanner
 endmsg
 outdoor 1
 tile_path_1 world_105_114
@@ -171,6 +171,9 @@ y 27
 elevation 169
 end
 arch house_2
+name Puddings Place
+slaying /scorn/misc/puddings.place
+hp 22
 y 27
 elevation 169
 end
@@ -7784,10 +7787,7 @@ x 17
 y 35
 elevation 4991
 end
-arch house_2
-name Puddings Place
-slaying /scorn/misc/puddings.place
-hp 22
+arch woodhouse
 x 17
 y 35
 end
