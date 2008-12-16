@@ -18,7 +18,6 @@ resist_physical 5
 value 70000
 material 2
 xrays 1
-magicmap grey
 body_head -1
 item_power 3
 end

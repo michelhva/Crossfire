@@ -10,6 +10,5 @@ Dex 2
 Cha -2
 material 4
 materialname glass
-magicmap black
 body_head -1
 end
