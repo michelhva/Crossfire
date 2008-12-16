@@ -9,7 +9,7 @@ enter_x 1
 enter_y 1
 msg
 Created:  2001-02-16
-Modified: 2008-12-04 Rick Tanner
+Modified: 2008-12-16 Rick Tanner
 endmsg
 outdoor 1
 tile_path_1 world_105_114
@@ -8642,7 +8642,7 @@ elevation 129
 end
 arch prison
 name Prison
-slaying /scorn/anthony/prison
+slaying ../scorn/anthony/prison.1
 hp 9
 sp 23
 x 19

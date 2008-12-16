@@ -8,7 +8,7 @@ enter_x 1
 enter_y 52
 msg
 Created:  1994-02-14
-Modified: 2008-10-25 Rick Tanner
+Modified: 2008-12-16 Rick Tanner
 endmsg
 end
 arch flagstone
@@ -316,7 +316,7 @@ arch bwall_2_2_1
 y 50
 end
 arch invis_exit
-slaying ../anthony/prison
+slaying ../anthony/prison.1
 hp 17
 sp 20
 y 51
@@ -331,7 +331,7 @@ value 1
 connected 100
 end
 arch invis_exit
-slaying ../anthony/prison
+slaying ../anthony/prison.1
 hp 17
 sp 21
 y 52
