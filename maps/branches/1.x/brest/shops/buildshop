@@ -13,7 +13,7 @@ enter_x 6
 enter_y 24
 msg
 Created:  2005-11-05 Gene Alexander
-Modified: 2008-12-10 Rick Tanner
+Modified: 2008-12-16 Rick Tanner
 endmsg
 end
 arch flagstone
@@ -910,15 +910,7 @@ arch tile_floor
 x 5
 y 25
 end
-arch tile_floor
-x 5
-y 25
-end
-arch tile_floor
-x 5
-y 25
-end
-arch wwall_2_1_2
+arch wwall_1_3
 x 5
 y 25
 end
@@ -1053,25 +1045,17 @@ arch tile_floor
 x 6
 y 24
 end
+arch tile_floor
+x 6
+y 25
+end
 arch oakdoor_2
 slaying /world/world_107_123
 msg
 Thank you for your visit!
 endmsg
 hp 21
-sp 33
-x 6
-y 24
-end
-arch tile_floor
-x 6
-y 25
-end
-arch tile_floor
-x 6
-y 25
-end
-arch wwall_2_1_2
+sp 32
 x 6
 y 25
 end
@@ -1202,7 +1186,7 @@ arch tile_floor
 x 7
 y 25
 end
-arch wwall_win2
+arch wwall_1_4
 x 7
 y 25
 end
