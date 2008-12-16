@@ -11,7 +11,7 @@ enter_x 14
 enter_y 14
 msg
 Created:  1993-10-15
-Modified: 2008-12-14 Rick Tanner
+Modified: 2008-12-16 Rick Tanner
 endmsg
 end
 arch shop_empty
@@ -1246,6 +1246,7 @@ y 15
 end
 arch oakdoor_2
 slaying /world/world_104_115
+Name Exit back to town
 hp 42
 sp 32
 x 14
