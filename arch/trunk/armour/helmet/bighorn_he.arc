@@ -10,7 +10,6 @@ resist_physical 5
 weight 10000
 value 22
 material 18
-magicmap grey
 body_head -1
 gen_sp_armour 3
 end

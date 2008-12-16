@@ -12,7 +12,6 @@ wiz_hat.113
 mina
 anim_speed 10
 client_anim_random 1
-magicmap black
 last_sp 12
 ac 1
 Int 2

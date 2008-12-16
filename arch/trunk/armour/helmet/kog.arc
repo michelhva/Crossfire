@@ -13,7 +13,6 @@ ac 3
 resist_physical 10
 value 100000
 material 2
-magicmap black
 body_head -1
 gen_sp_armour 5
 item_power 4
