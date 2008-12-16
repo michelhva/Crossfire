@@ -1,3 +1,40 @@
+2008-12-16 07:21  rjtanner
+
+	* scorn/anthony/prison.1, scorn/misc/prison, scorn/misc/prison.1,
+	  world/world_105_115: Moved /scorn/anthony/prison.1 to
+	  /scorn/misc/prison.1, updated map paths to use prison.1 where
+	  necessary
+
+2008-12-16 07:14  rjtanner
+
+	* scorn/anthony/prison, scorn/anthony/prison.1, scorn/misc/prison,
+	  world/world_105_115: Rename /scorn/anthony/prison to prison.1
+	  before moving it to the same directory (/scorn/misc/prison) as
+	  the other half of the map
+
+2008-12-16 06:59  rjtanner
+
+	* brest/temples/valkyrie: Update NPCs with very simple & basic
+	  messages in regards to lore on Valkyrie
+
+2008-12-16 06:54  rjtanner
+
+	* brest/temples/valkyrie, scorn/misc/cityhall: Add more no_spell
+	  tiles under the fence around Scorn City Hall to help prevent
+	  players from using dimension door spell to access areas they
+	  shouldn't
+
+2008-12-15 05:47  rjtanner
+
+	* pup_land/terminal, pup_land/terminal_u1: Applied new sky
+	  archetype to the area surrounding the Pupland Terminal (both
+	  levels) and also added some clouds, requires archetype r10977 or
+	  newer
+
+2008-12-14 09:45  rjtanner
+
+	* ChangeLog: Updated ChangeLog file using svn2cl
+
 2008-12-14 09:11  rjtanner
 
 	* brest/taverns/brest.seaside.tavern: Slightly expanded NPC info in
