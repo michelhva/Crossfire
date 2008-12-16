@@ -8642,7 +8642,7 @@ elevation 129
 end
 arch prison
 name Prison
-slaying ../scorn/anthony/prison.1
+slaying ../scorn/misc/prison.1
 hp 9
 sp 23
 x 19
@@ -9048,7 +9048,7 @@ x 20
 y 29
 end
 arch invis_exit
-slaying /scorn/anthony/prison
+slaying ../scorn/misc/prison.1
 hp 15
 sp 1
 x 20
