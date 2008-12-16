@@ -9,6 +9,5 @@ weight 5000
 value 40
 material 136
 nrof 1
-magicmap black
 body_shoulder -1
 end
