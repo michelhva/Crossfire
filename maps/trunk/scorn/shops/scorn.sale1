@@ -10,7 +10,7 @@ enter_x 10
 enter_y 17
 msg
 Created:  2004-07-01 Gene Alexander
-Modified: 2008-12-14 Rick Tanner
+Modified: 2008-12-16 Rick Tanner
 endmsg
 outdoor 1
 end
@@ -1444,6 +1444,9 @@ y 18
 end
 arch oakdoor_2
 slaying /world/world_105_115
+msg
+Thanks for your business!
+endmsg
 hp 1
 sp 32
 x 10
