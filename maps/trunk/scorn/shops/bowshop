@@ -12,7 +12,7 @@ enter_x 14
 enter_y 14
 msg
 Created:  1993-10-15 Tero Haatanen (Tero.Haatanen@tel.vtt.fi)
-Modified: 2008-12-02 Rick Tanner
+Modified: 2008-12-10 Rick Tanner
 endmsg
 end
 arch shop_empty
@@ -1532,6 +1532,7 @@ y 14
 type 0
 end
 arch oakdoor_2
+name back to town
 slaying /world/world_104_115
 hp 48
 sp 37
