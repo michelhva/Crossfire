@@ -9,7 +9,7 @@ enter_x 13
 enter_y 25
 msg
 Created:  1993-10-15
-Modified: 2008-11-05 Rick Tanner
+Modified: 2008-12-16 Rick Tanner
 endmsg
 end
 arch woods_2
@@ -28,6 +28,9 @@ y 4
 end
 arch grass
 y 5
+end
+arch dungeon_magic
+y 6
 end
 arch grass
 y 6
@@ -164,6 +167,9 @@ end
 arch swall_2_1_1
 y 26
 end
+arch dungeon_magic
+y 27
+end
 arch grass
 y 27
 end
@@ -204,6 +210,10 @@ end
 arch grass
 x 1
 y 5
+end
+arch dungeon_magic
+x 1
+y 6
 end
 arch woodfloor
 x 1
@@ -360,6 +370,10 @@ arch grass
 x 1
 y 26
 end
+arch dungeon_magic
+x 1
+y 27
+end
 arch grass
 x 1
 y 27
@@ -406,6 +420,10 @@ end
 arch grass
 x 2
 y 5
+end
+arch dungeon_magic
+x 2
+y 6
 end
 arch woodfloor
 x 2
@@ -536,6 +554,10 @@ arch tree
 x 2
 y 26
 end
+arch dungeon_magic
+x 2
+y 27
+end
 arch grass
 x 2
 y 27
@@ -563,6 +585,10 @@ end
 arch woods_2
 x 3
 end
+arch dungeon_magic
+x 3
+y 1
+end
 arch woods
 x 3
 y 1
@@ -570,6 +596,10 @@ end
 arch mine10
 x 3
 y 1
+end
+arch dungeon_magic
+x 3
+y 2
 end
 arch dungeon_floor
 x 3
@@ -583,6 +613,10 @@ arch swall_1_1_half
 x 3
 y 2
 end
+arch dungeon_magic
+x 3
+y 3
+end
 arch dungeon_floor
 x 3
 y 3
@@ -591,6 +625,10 @@ arch swall_2_1_1
 x 3
 y 3
 end
+arch dungeon_magic
+x 3
+y 4
+end
 arch dungeon_floor
 x 3
 y 4
@@ -598,6 +636,10 @@ end
 arch swall_2_1_1
 x 3
 y 4
+end
+arch dungeon_magic
+x 3
+y 5
 end
 arch dungeon_floor
 x 3
@@ -606,6 +648,10 @@ end
 arch mine8
 x 3
 y 5
+end
+arch dungeon_magic
+x 3
+y 6
 end
 arch woodfloor
 x 3
@@ -757,6 +803,10 @@ end
 arch grass
 x 3
 y 26
+end
+arch dungeon_magic
+x 3
+y 27
 end
 arch grass
 x 3
@@ -971,6 +1021,10 @@ arch tree
 x 4
 y 26
 end
+arch dungeon_magic
+x 4
+y 27
+end
 arch grass
 x 4
 y 27
@@ -1195,6 +1249,10 @@ end
 arch grass
 x 5
 y 26
+end
+arch dungeon_magic
+x 5
+y 27
 end
 arch grass
 x 5
@@ -1415,6 +1473,10 @@ arch tree
 x 6
 y 26
 end
+arch dungeon_magic
+x 6
+y 27
+end
 arch grass
 x 6
 y 27
@@ -1631,6 +1693,10 @@ end
 arch grass
 x 7
 y 26
+end
+arch dungeon_magic
+x 7
+y 27
 end
 arch grass
 x 7
@@ -1859,6 +1925,10 @@ arch tree
 x 8
 y 26
 end
+arch dungeon_magic
+x 8
+y 27
+end
 arch grass
 x 8
 y 27
@@ -1888,6 +1958,10 @@ x 9
 end
 arch mine9
 x 9
+end
+arch dungeon_magic
+x 9
+y 1
 end
 arch dungeon_floor
 x 9
@@ -2095,6 +2169,10 @@ arch grass
 x 9
 y 26
 end
+arch dungeon_magic
+x 9
+y 27
+end
 arch grass
 x 9
 y 27
@@ -2121,6 +2199,10 @@ y 31
 end
 arch tree
 x 10
+end
+arch dungeon_magic
+x 10
+y 1
 end
 arch dungeon_floor
 x 10
@@ -2339,6 +2421,10 @@ arch tree
 x 10
 y 26
 end
+arch dungeon_magic
+x 10
+y 27
+end
 arch grass
 x 10
 y 27
@@ -2368,6 +2454,10 @@ x 11
 end
 arch mine10
 x 11
+end
+arch dungeon_magic
+x 11
+y 1
 end
 arch dungeon_floor
 x 11
@@ -2541,6 +2631,10 @@ end
 arch grass
 x 11
 y 26
+end
+arch dungeon_magic
+x 11
+y 27
 end
 arch grass
 x 11
@@ -2745,6 +2839,10 @@ arch tree
 x 12
 y 26
 end
+arch dungeon_magic
+x 12
+y 27
+end
 arch grass
 x 12
 y 27
@@ -2753,9 +2851,14 @@ arch swall_1_3
 x 12
 y 27
 end
+arch dungeon_magic
+x 12
+y 28
+end
 arch grass
 x 12
 y 28
+move_block all
 end
 arch grass
 x 12
@@ -2947,9 +3050,14 @@ arch cobblestones2
 x 13
 y 27
 end
+arch dungeon_magic
+x 13
+y 28
+end
 arch cobblestones2
 x 13
 y 28
+move_block all
 end
 arch cobblestones2
 x 13
@@ -3141,9 +3249,14 @@ arch cobblestones2
 x 14
 y 27
 end
+arch dungeon_magic
+x 14
+y 28
+end
 arch cobblestones2
 x 14
 y 28
+move_block all
 end
 arch cobblestones2
 x 14
@@ -3322,6 +3435,10 @@ arch tree
 x 15
 y 26
 end
+arch dungeon_magic
+x 15
+y 27
+end
 arch grass
 x 15
 y 27
@@ -3330,9 +3447,14 @@ arch swall_1_4
 x 15
 y 27
 end
+arch dungeon_magic
+x 15
+y 28
+end
 arch grass
 x 15
 y 28
+move_block all
 end
 arch grass
 x 15
@@ -3351,6 +3473,10 @@ x 16
 end
 arch mine9
 x 16
+end
+arch dungeon_magic
+x 16
+y 1
 end
 arch dungeon_floor
 x 16
@@ -3525,6 +3651,10 @@ arch grass
 x 16
 y 26
 end
+arch dungeon_magic
+x 16
+y 27
+end
 arch grass
 x 16
 y 27
@@ -3551,6 +3681,10 @@ y 31
 end
 arch tree
 x 17
+end
+arch dungeon_magic
+x 17
+y 1
 end
 arch dungeon_floor
 x 17
@@ -3832,6 +3966,10 @@ arch tree
 x 17
 y 26
 end
+arch dungeon_magic
+x 17
+y 27
+end
 arch grass
 x 17
 y 27
@@ -3861,6 +3999,10 @@ x 18
 end
 arch mine10
 x 18
+end
+arch dungeon_magic
+x 18
+y 1
 end
 arch dungeon_floor
 x 18
@@ -4033,6 +4175,10 @@ end
 arch grass
 x 18
 y 26
+end
+arch dungeon_magic
+x 18
+y 27
 end
 arch grass
 x 18
@@ -4256,6 +4402,10 @@ arch tree
 x 19
 y 26
 end
+arch dungeon_magic
+x 19
+y 27
+end
 arch grass
 x 19
 y 27
@@ -4452,6 +4602,10 @@ end
 arch grass
 x 20
 y 26
+end
+arch dungeon_magic
+x 20
+y 27
 end
 arch grass
 x 20
@@ -4672,6 +4826,10 @@ arch tree
 x 21
 y 26
 end
+arch dungeon_magic
+x 21
+y 27
+end
 arch grass
 x 21
 y 27
@@ -4876,6 +5034,10 @@ end
 arch grass
 x 22
 y 26
+end
+arch dungeon_magic
+x 22
+y 27
 end
 arch grass
 x 22
@@ -5096,6 +5258,10 @@ arch tree
 x 23
 y 26
 end
+arch dungeon_magic
+x 23
+y 27
+end
 arch grass
 x 23
 y 27
@@ -5123,6 +5289,10 @@ end
 arch tree
 x 24
 end
+arch dungeon_magic
+x 24
+y 1
+end
 arch dungeon_floor
 x 24
 y 1
@@ -5130,6 +5300,10 @@ end
 arch mine9
 x 24
 y 1
+end
+arch dungeon_magic
+x 24
+y 2
 end
 arch dungeon_floor
 x 24
@@ -5143,6 +5317,10 @@ arch swall_1_1_half
 x 24
 y 2
 end
+arch dungeon_magic
+x 24
+y 3
+end
 arch dungeon_floor
 x 24
 y 3
@@ -5151,6 +5329,10 @@ arch swall_2_1_1
 x 24
 y 3
 end
+arch dungeon_magic
+x 24
+y 4
+end
 arch dungeon_floor
 x 24
 y 4
@@ -5158,6 +5340,10 @@ end
 arch swall_2_1_1
 x 24
 y 4
+end
+arch dungeon_magic
+x 24
+y 5
 end
 arch dungeon_floor
 x 24
@@ -5166,6 +5352,10 @@ end
 arch mine8
 x 24
 y 5
+end
+arch dungeon_magic
+x 24
+y 6
 end
 arch woodfloor
 x 24
@@ -5306,6 +5496,10 @@ arch grass
 x 24
 y 26
 end
+arch dungeon_magic
+x 24
+y 27
+end
 arch grass
 x 24
 y 27
@@ -5352,6 +5546,10 @@ end
 arch brush
 x 25
 y 5
+end
+arch dungeon_magic
+x 25
+y 6
 end
 arch woodfloor
 x 25
@@ -5509,6 +5707,10 @@ arch tree
 x 25
 y 26
 end
+arch dungeon_magic
+x 25
+y 27
+end
 arch grass
 x 25
 y 27
@@ -5555,6 +5757,10 @@ end
 arch brush
 x 26
 y 5
+end
+arch dungeon_magic
+x 26
+y 6
 end
 arch woodfloor
 x 26
@@ -5708,6 +5914,10 @@ arch grass
 x 26
 y 26
 end
+arch dungeon_magic
+x 26
+y 27
+end
 arch grass
 x 26
 y 27
@@ -5754,6 +5964,10 @@ end
 arch brush
 x 27
 y 5
+end
+arch dungeon_magic
+x 27
+y 6
 end
 arch woodfloor
 x 27
@@ -5833,6 +6047,10 @@ arch swall_1_1_half
 x 27
 y 14
 end
+arch dungeon_magic
+x 27
+y 15
+end
 arch grass
 x 27
 y 15
@@ -5842,6 +6060,10 @@ end
 arch swall_2_1_1
 x 27
 y 15
+end
+arch dungeon_magic
+x 27
+y 16
 end
 arch grass
 x 27
@@ -5853,6 +6075,10 @@ arch swall_2_1_1
 x 27
 y 16
 end
+arch dungeon_magic
+x 27
+y 17
+end
 arch grass
 x 27
 y 17
@@ -5861,6 +6087,10 @@ arch swall_2_1_1
 x 27
 y 17
 end
+arch dungeon_magic
+x 27
+y 18
+end
 arch grass
 x 27
 y 18
@@ -5868,6 +6098,10 @@ end
 arch swall_2_1_1
 x 27
 y 18
+end
+arch dungeon_magic
+x 27
+y 19
 end
 arch grass
 x 27
@@ -5912,6 +6146,10 @@ arch swall_1_1_half
 x 27
 y 22
 end
+arch dungeon_magic
+x 27
+y 23
+end
 arch grass
 x 27
 y 23
@@ -5919,6 +6157,10 @@ end
 arch swall_2_1_1
 x 27
 y 23
+end
+arch dungeon_magic
+x 27
+y 24
 end
 arch grass
 x 27
@@ -5928,6 +6170,10 @@ arch swall_2_1_1
 x 27
 y 24
 end
+arch dungeon_magic
+x 27
+y 25
+end
 arch grass
 x 27
 y 25
@@ -5936,6 +6182,10 @@ arch swall_2_1_1
 x 27
 y 25
 end
+arch dungeon_magic
+x 27
+y 26
+end
 arch grass
 x 27
 y 26
@@ -5943,6 +6193,10 @@ end
 arch swall_2_1_1
 x 27
 y 26
+end
+arch dungeon_magic
+x 27
+y 27
 end
 arch grass
 x 27

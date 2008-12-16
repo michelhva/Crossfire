@@ -8,7 +8,7 @@ enter_x 12
 enter_y 21
 msg
 Created:  2008-12-07 Rick Tanner
-Modified: 2008-12-10 Rick Tanner
+Modified: 2008-12-14 Rick Tanner
 endmsg
 end
 arch grass
@@ -751,6 +751,10 @@ y 10
 end
 arch armour_troll2
 name Temple Guardian
+msg
+@match *
+I serve Valkyrie, Deathbringer to the fiends, demons and devils of the lower planes!
+endmsg
 x 5
 y 10
 unaggressive 1
@@ -961,6 +965,10 @@ y 19
 end
 arch armour_troll4
 name Temple Guard
+msg
+@match *
+For the glory of Valkyrie, The Just!
+endmsg
 x 6
 y 19
 unaggressive 1
@@ -2800,6 +2808,10 @@ y 19
 end
 arch armour_troll4
 name Temple Guard
+msg
+@match *
+For the glory of Valkyrie, The Brave!
+endmsg
 x 18
 y 19
 unaggressive 1
@@ -2909,6 +2921,10 @@ y 10
 end
 arch armour_troll2
 name Temple Guardian
+msg
+@match *
+I serve Valkyrie, Deathbringer to angels of the upper planes!
+endmsg
 x 19
 y 10
 unaggressive 1
