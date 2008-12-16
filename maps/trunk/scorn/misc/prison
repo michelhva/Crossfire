@@ -316,7 +316,7 @@ arch bwall_2_2_1
 y 50
 end
 arch invis_exit
-slaying ../anthony/prison.1
+slaying prison.1
 hp 17
 sp 20
 y 51
@@ -331,7 +331,7 @@ value 1
 connected 100
 end
 arch invis_exit
-slaying ../anthony/prison.1
+slaying prison.1
 hp 17
 sp 21
 y 52
