@@ -3,7 +3,7 @@ name world_110_102
 width 50
 height 50
 msg
-Modified: 2007-12-24 tchize
+Modified: 2008-12-17 Rick Tanner
 endmsg
 outdoor 1
 tile_path_1 world_110_101
@@ -175,23 +175,23 @@ arch shallow_sea
 y 38
 elevation -4
 end
-arch desert
+arch beach
 y 39
 elevation 166
 end
-arch desert
+arch beach
 y 40
 elevation 208
 end
-arch desert
+arch beach
 y 41
 elevation 477
 end
-arch desert
+arch beach
 y 42
 elevation 766
 end
-arch desert
+arch beach
 y 43
 elevation 40
 end
@@ -650,7 +650,7 @@ x 2
 y 34
 elevation -9
 end
-arch desert
+arch beach
 x 2
 y 35
 elevation 404
@@ -899,12 +899,12 @@ x 3
 y 34
 elevation 325
 end
-arch desert
+arch beach
 x 3
 y 35
 elevation 890
 end
-arch desert
+arch beach
 x 3
 y 36
 elevation 418
@@ -1402,7 +1402,7 @@ x 5
 y 35
 elevation 1016
 end
-arch desert
+arch beach
 x 5
 y 36
 elevation 779
@@ -1649,7 +1649,7 @@ x 6
 y 33
 elevation -7
 end
-arch desert
+arch beach
 x 6
 y 34
 elevation 472
@@ -1664,7 +1664,7 @@ x 6
 y 36
 elevation 1548
 end
-arch desert
+arch beach
 x 6
 y 37
 elevation 285
@@ -2088,7 +2088,7 @@ x 8
 y 18
 elevation -8
 end
-arch desert
+arch beach
 x 8
 y 19
 elevation 348
@@ -2187,7 +2187,7 @@ x 8
 y 37
 elevation 2037
 end
-arch desert
+arch beach
 x 8
 y 38
 elevation 949
@@ -2441,7 +2441,7 @@ x 9
 y 38
 elevation 1425
 end
-arch desert
+arch beach
 x 9
 y 39
 elevation 368
@@ -2595,7 +2595,7 @@ x 10
 y 19
 elevation 832
 end
-arch desert
+arch beach
 x 10
 y 20
 elevation 640
@@ -2675,7 +2675,7 @@ x 10
 y 35
 elevation 5
 end
-arch desert
+arch beach
 x 10
 y 36
 elevation 590
@@ -2685,12 +2685,12 @@ x 10
 y 37
 elevation 1150
 end
-arch desert
+arch beach
 x 10
 y 38
 elevation 984
 end
-arch desert
+arch beach
 x 10
 y 39
 elevation 158
@@ -3569,7 +3569,7 @@ x 14
 y 13
 elevation -634
 end
-arch desert
+arch beach
 x 14
 y 14
 elevation 267

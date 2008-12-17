@@ -9,7 +9,7 @@ enter_x 1
 enter_y 1
 msg
 Created:  2005-02-12
-Modified: 2008-11-20 Rick Tanner
+Modified: 2008-12-17 Rick Tanner
 endmsg
 outdoor 1
 tile_path_1 world_127_101
@@ -112,7 +112,7 @@ arch grass
 y 23
 elevation 194
 end
-arch desert
+arch beach
 y 24
 elevation 188
 end
@@ -923,7 +923,7 @@ x 3
 y 41
 elevation -317
 end
-arch desert
+arch beach
 x 3
 y 42
 elevation 109
@@ -1167,17 +1167,17 @@ x 4
 y 40
 elevation -666
 end
-arch desert
+arch beach
 x 4
 y 41
 elevation 233
 end
-arch desert
+arch beach
 x 4
 y 42
 elevation 433
 end
-arch desert
+arch beach
 x 4
 y 43
 elevation 112
@@ -1416,17 +1416,17 @@ x 5
 y 40
 elevation -954
 end
-arch desert
+arch beach
 x 5
 y 41
 elevation 479
 end
-arch desert
+arch beach
 x 5
 y 42
 elevation 462
 end
-arch desert
+arch beach
 x 5
 y 43
 elevation 23
@@ -8605,7 +8605,7 @@ x 32
 y 5
 elevation 187
 end
-arch desert
+arch beach
 x 32
 y 6
 elevation 317
