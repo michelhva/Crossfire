@@ -2,6 +2,9 @@ arch map
 name world_117_100
 width 50
 height 50
+msg
+Modified: 2008-12-16 Rick Tanner
+endmsg
 outdoor 1
 tile_path_2 world_118_100
 tile_path_3 world_117_101
@@ -110,11 +113,11 @@ arch sea
 y 25
 elevation -409
 end
-arch desert
+arch beach
 y 26
 elevation 112
 end
-arch desert
+arch beach
 y 27
 elevation 280
 end
@@ -340,7 +343,7 @@ x 1
 y 26
 elevation 4
 end
-arch desert
+arch beach
 x 1
 y 27
 elevation 183
