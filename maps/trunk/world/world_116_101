@@ -3,7 +3,7 @@ name world_116_101
 width 50
 height 50
 msg
-Modified: 2007-12-24 tchize
+Modified: 2008-12-17 Rick Tanner
 endmsg
 outdoor 1
 tile_path_1 world_116_100
@@ -130,7 +130,7 @@ arch brush
 y 29
 elevation 64
 end
-arch desert
+arch beach
 y 30
 elevation 11
 end
@@ -367,7 +367,7 @@ x 1
 y 29
 elevation 389
 end
-arch desert
+arch beach
 x 1
 y 30
 elevation 330
@@ -1037,7 +1037,7 @@ x 4
 y 4
 elevation 1164
 end
-arch desert
+arch beach
 x 4
 y 5
 elevation 748
@@ -1593,7 +1593,7 @@ x 6
 y 10
 elevation 425
 end
-arch desert
+arch beach
 x 6
 y 11
 elevation 413
@@ -1727,7 +1727,7 @@ x 6
 y 32
 elevation 1636
 end
-arch desert
+arch beach
 x 6
 y 33
 elevation 786
@@ -1861,7 +1861,7 @@ x 7
 y 9
 elevation 434
 end
-arch desert
+arch beach
 x 7
 y 10
 elevation 527
@@ -1986,7 +1986,7 @@ x 7
 y 32
 elevation 1749
 end
-arch desert
+arch beach
 x 7
 y 33
 elevation 21
@@ -2105,7 +2105,7 @@ x 8
 y 6
 elevation 1245
 end
-arch desert
+arch beach
 x 8
 y 7
 elevation 897
@@ -2125,7 +2125,7 @@ x 8
 y 10
 elevation 521
 end
-arch desert
+arch beach
 x 8
 y 11
 elevation 625
@@ -2261,7 +2261,7 @@ x 8
 y 34
 elevation 1268
 end
-arch desert
+arch beach
 x 8
 y 35
 elevation 165
@@ -2515,7 +2515,7 @@ x 9
 y 35
 elevation 537
 end
-arch desert
+arch beach
 x 9
 y 36
 elevation 340
@@ -2759,22 +2759,22 @@ x 10
 y 34
 elevation 2505
 end
-arch desert
+arch beach
 x 10
 y 35
 elevation 977
 end
-arch desert
+arch beach
 x 10
 y 36
 elevation 225
 end
-arch desert
+arch beach
 x 10
 y 37
 elevation 801
 end
-arch desert
+arch beach
 x 10
 y 38
 elevation 379
@@ -2804,7 +2804,7 @@ x 10
 y 43
 elevation 19
 end
-arch desert
+arch beach
 x 10
 y 44
 elevation 143
@@ -2861,7 +2861,7 @@ x 11
 y 3
 elevation 309
 end
-arch desert
+arch beach
 x 11
 y 4
 elevation 523
@@ -2876,7 +2876,7 @@ x 11
 y 6
 elevation 1010
 end
-arch desert
+arch beach
 x 11
 y 7
 elevation 970
@@ -3021,7 +3021,7 @@ x 11
 y 35
 elevation 1373
 end
-arch desert
+arch beach
 x 11
 y 36
 elevation 613
@@ -3041,7 +3041,7 @@ x 11
 y 39
 elevation 1207
 end
-arch desert
+arch beach
 x 11
 y 40
 elevation 751
@@ -3164,7 +3164,7 @@ x 12
 y 13
 elevation 1129
 end
-arch desert
+arch beach
 x 12
 y 14
 elevation 884
@@ -3249,7 +3249,7 @@ x 12
 y 30
 elevation 1384
 end
-arch desert
+arch beach
 x 12
 y 31
 elevation 842
@@ -3269,7 +3269,7 @@ x 12
 y 34
 elevation 1476
 end
-arch desert
+arch beach
 x 12
 y 35
 elevation 471
@@ -3308,7 +3308,7 @@ x 12
 y 41
 elevation 704
 end
-arch desert
+arch beach
 x 12
 y 42
 elevation 402
@@ -3318,7 +3318,7 @@ x 12
 y 43
 elevation 173
 end
-arch desert
+arch beach
 x 12
 y 44
 elevation 140
@@ -3333,7 +3333,7 @@ x 12
 y 46
 elevation 67
 end
-arch desert
+arch beach
 x 12
 y 47
 elevation 193
@@ -3481,7 +3481,7 @@ x 13
 y 25
 elevation 1186
 end
-arch desert
+arch beach
 x 13
 y 26
 elevation 740
@@ -3501,7 +3501,7 @@ x 13
 y 29
 elevation 43
 end
-arch desert
+arch beach
 x 13
 y 30
 elevation 38
@@ -3531,12 +3531,12 @@ x 13
 y 35
 elevation 99
 end
-arch desert
+arch beach
 x 13
 y 36
 elevation 477
 end
-arch desert
+arch beach
 x 13
 y 37
 elevation 418
@@ -3570,7 +3570,7 @@ x 13
 y 42
 elevation 68
 end
-arch desert
+arch beach
 x 13
 y 43
 elevation 892
@@ -3648,7 +3648,7 @@ x 14
 y 7
 elevation 1141
 end
-arch desert
+arch beach
 x 14
 y 8
 elevation 471
@@ -3663,17 +3663,17 @@ x 14
 y 10
 elevation 555
 end
-arch desert
+arch beach
 x 14
 y 11
 elevation 502
 end
-arch desert
+arch beach
 x 14
 y 12
 elevation 422
 end
-arch desert
+arch beach
 x 14
 y 13
 elevation 621
@@ -3743,7 +3743,7 @@ x 14
 y 26
 elevation 158
 end
-arch desert
+arch beach
 x 14
 y 27
 elevation 168
@@ -3758,12 +3758,12 @@ x 14
 y 29
 elevation 224
 end
-arch desert
+arch beach
 x 14
 y 30
 elevation 331
 end
-arch desert
+arch beach
 x 14
 y 31
 elevation 192
@@ -3982,7 +3982,7 @@ x 15
 y 20
 elevation 891
 end
-arch desert
+arch beach
 x 15
 y 21
 elevation 820
@@ -4002,7 +4002,7 @@ x 15
 y 24
 elevation 905
 end
-arch desert
+arch beach
 x 15
 y 25
 elevation 713
@@ -4288,12 +4288,12 @@ x 16
 y 29
 elevation 498
 end
-arch desert
+arch beach
 x 16
 y 30
 elevation 493
 end
-arch desert
+arch beach
 x 16
 y 31
 elevation 335
@@ -4548,7 +4548,7 @@ x 17
 y 28
 elevation 449
 end
-arch desert
+arch beach
 x 17
 y 29
 elevation 576
@@ -4558,12 +4558,12 @@ x 17
 y 30
 elevation 540
 end
-arch desert
+arch beach
 x 17
 y 31
 elevation 409
 end
-arch desert
+arch beach
 x 17
 y 32
 elevation 327
@@ -4722,7 +4722,7 @@ x 18
 y 9
 elevation 2042
 end
-arch desert
+arch beach
 x 18
 y 10
 elevation 830
@@ -4822,7 +4822,7 @@ x 18
 y 29
 elevation 543
 end
-arch desert
+arch beach
 x 18
 y 30
 elevation 477
@@ -5086,7 +5086,7 @@ x 19
 y 28
 elevation 376
 end
-arch desert
+arch beach
 x 19
 y 29
 elevation 443
@@ -5169,7 +5169,7 @@ x 19
 y 43
 elevation 1515
 end
-arch desert
+arch beach
 x 19
 y 44
 elevation 35
@@ -5432,7 +5432,7 @@ x 20
 y 45
 elevation 74
 end
-arch desert
+arch beach
 x 20
 y 46
 elevation 497
@@ -5591,12 +5591,12 @@ x 21
 y 27
 elevation 319
 end
-arch desert
+arch beach
 x 21
 y 28
 elevation 505
 end
-arch desert
+arch beach
 x 21
 y 29
 elevation 497
@@ -5671,12 +5671,12 @@ x 21
 y 43
 elevation 41
 end
-arch desert
+arch beach
 x 21
 y 44
 elevation 43
 end
-arch desert
+arch beach
 x 21
 y 45
 elevation 61
@@ -5840,7 +5840,7 @@ x 22
 y 27
 elevation 394
 end
-arch desert
+arch beach
 x 22
 y 28
 elevation 725
@@ -5925,7 +5925,7 @@ x 22
 y 44
 elevation 117
 end
-arch desert
+arch beach
 x 22
 y 45
 elevation 399
