@@ -1,3 +1,78 @@
+2008-12-17 06:57  rjtanner
+
+	* world/world_102_102, world/world_103_102, world/world_104_102,
+	  world/world_105_102, world/world_106_102, world/world_107_102,
+	  world/world_108_102, world/world_109_102, world/world_110_102,
+	  world/world_111_102, world/world_112_102, world/world_113_102,
+	  world/world_114_102, world/world_115_102, world/world_116_102,
+	  world/world_117_102, world/world_118_102, world/world_119_102,
+	  world/world_120_102, world/world_121_102, world/world_122_102,
+	  world/world_123_102, world/world_124_102, world/world_125_102,
+	  world/world_126_102, world/world_127_102, world/world_128_102:
+	  Touch up world_*_102 maps (third row) to replace desert tiles
+	  with beach tiles; desert tiles in this configuration is very
+	  unnatural
+
+2008-12-17 06:32  rjtanner
+
+	* world/world_103_101, world/world_104_101, world/world_105_101,
+	  world/world_106_101, world/world_107_101, world/world_109_101,
+	  world/world_110_101, world/world_111_101, world/world_112_101,
+	  world/world_113_101, world/world_114_101, world/world_115_101,
+	  world/world_116_101, world/world_117_101, world/world_118_101,
+	  world/world_119_101, world/world_120_101, world/world_121_101,
+	  world/world_122_101, world/world_123_101, world/world_124_101,
+	  world/world_125_101, world/world_126_101, world/world_127_101,
+	  world/world_128_101: Touch up world_*_101 maps (second row) to
+	  replace desert tiles with beach tiles; desert tiles in this
+	  configuration is very unnatural
+
+2008-12-17 02:51  rjtanner
+
+	* world/world_101_100, world/world_105_100, world/world_106_100,
+	  world/world_108_100, world/world_111_100, world/world_112_100,
+	  world/world_113_100, world/world_114_100, world/world_115_100,
+	  world/world_116_100, world/world_117_100, world/world_119_100,
+	  world/world_120_100, world/world_122_100, world/world_123_100,
+	  world/world_124_100, world/world_125_100, world/world_127_100,
+	  world/world_128_100: Touch up world_*_100 maps (first fow) to
+	  replace desert tiles with beach tiles; desert tiles in this
+	  configuration is very unnatural
+
+2008-12-16 23:54  rjtanner
+
+	* world/world_102_108: Map header correction - removed double
+	  'Modified:' time stamp entry
+
+2008-12-16 23:49  rjtanner
+
+	* world/world_105_115: Restore elevation setting under the recently
+	  moved Puddings Place map
+
+2008-12-16 23:48  rjtanner
+
+	* wolfsburg/shops/transport.shoppe: Restore farewell message on the
+	  exit from Wolfsburge Transport Shoppe to world map
+
+2008-12-16 23:47  rjtanner
+
+	* scorn/shops/magicshop: Restore unique name on the exit from Scorn
+	  Magic Shop to world map
+
+2008-12-16 23:45  rjtanner
+
+	* scorn/shops/scorn.sale1: Restore farewell message on the exit
+	  from Scorn Sale Shop to world map
+
+2008-12-16 23:42  rjtanner
+
+	* scorn/shops/bowshop: Restore unique name on the exit from Scorn
+	  Bowshop to world map
+
+2008-12-16 07:35  rjtanner
+
+	* ChangeLog: Updated ChangeLog file using svn2cl
+
 2008-12-16 07:21  rjtanner
 
 	* scorn/anthony/prison.1, scorn/misc/prison, scorn/misc/prison.1,
