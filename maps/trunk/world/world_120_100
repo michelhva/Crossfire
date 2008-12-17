@@ -2,6 +2,9 @@ arch map
 name world_120_100
 width 50
 height 50
+msg
+Modified: 2008-12-16 Rick Tanner
+endmsg
 outdoor 1
 tile_path_2 world_121_100
 tile_path_3 world_120_101
@@ -158,11 +161,11 @@ arch deep_swamp
 y 37
 elevation 1
 end
-arch desert
+arch beach
 y 38
 elevation 28
 end
-arch desert
+arch beach
 y 39
 elevation 72
 end
@@ -170,7 +173,7 @@ arch grass
 y 40
 elevation 100
 end
-arch desert
+arch beach
 y 41
 elevation 83
 end
@@ -182,7 +185,7 @@ arch grass
 y 43
 elevation 84
 end
-arch desert
+arch beach
 y 44
 elevation 84
 end
@@ -190,7 +193,7 @@ arch brush
 y 45
 elevation 176
 end
-arch desert
+arch beach
 y 46
 elevation 395
 end
@@ -410,7 +413,7 @@ x 1
 y 40
 elevation 76
 end
-arch desert
+arch beach
 x 1
 y 41
 elevation 83
@@ -435,17 +438,17 @@ x 1
 y 45
 elevation 268
 end
-arch desert
+arch beach
 x 1
 y 46
 elevation 508
 end
-arch desert
+arch beach
 x 1
 y 47
 elevation 631
 end
-arch desert
+arch beach
 x 1
 y 48
 elevation 476
@@ -649,7 +652,7 @@ x 2
 y 38
 elevation 0
 end
-arch desert
+arch beach
 x 2
 y 39
 elevation 11
@@ -903,7 +906,7 @@ x 3
 y 39
 elevation 45
 end
-arch desert
+arch beach
 x 3
 y 40
 elevation 68
@@ -943,7 +946,7 @@ x 3
 y 47
 elevation -95
 end
-arch desert
+arch beach
 x 3
 y 48
 elevation 51
@@ -1142,7 +1145,7 @@ x 4
 y 37
 elevation -41
 end
-arch desert
+arch beach
 x 4
 y 38
 elevation 15
@@ -1152,7 +1155,7 @@ x 4
 y 39
 elevation 62
 end
-arch desert
+arch beach
 x 4
 y 40
 elevation 83
@@ -1391,17 +1394,17 @@ x 5
 y 37
 elevation -79
 end
-arch desert
+arch beach
 x 5
 y 38
 elevation 13
 end
-arch desert
+arch beach
 x 5
 y 39
 elevation 48
 end
-arch desert
+arch beach
 x 5
 y 40
 elevation 48

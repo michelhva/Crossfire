@@ -9,7 +9,7 @@ enter_x 1
 enter_y 1
 msg
 Created:  2005-02-11
-Modified: 2008-11-20 Rick Tanner
+Modified: 2008-12-16 Rick Tanner
 endmsg
 outdoor 1
 tile_path_2 world_129_100
@@ -205,11 +205,11 @@ arch shallow_sea
 y 45
 elevation -35
 end
-arch desert
+arch beach
 y 46
 elevation 104
 end
-arch desert
+arch beach
 y 47
 elevation 104
 end
@@ -483,7 +483,7 @@ x 1
 y 48
 elevation 292
 end
-arch desert
+arch beach
 x 1
 y 49
 elevation 880
@@ -746,7 +746,7 @@ x 2
 y 48
 elevation 237
 end
-arch desert
+arch beach
 x 2
 y 49
 elevation 781
@@ -1756,17 +1756,17 @@ x 6
 y 46
 elevation -5
 end
-arch desert
+arch beach
 x 6
 y 47
 elevation 60
 end
-arch desert
+arch beach
 x 6
 y 48
 elevation 32
 end
-arch desert
+arch beach
 x 6
 y 49
 elevation 37
@@ -2014,7 +2014,7 @@ x 7
 y 47
 elevation 550
 end
-arch desert
+arch beach
 x 7
 y 48
 elevation 559
@@ -2250,12 +2250,12 @@ arch shallow_sea
 x 8
 y 43
 end
-arch desert
+arch beach
 x 8
 y 44
 elevation 393
 end
-arch desert
+arch beach
 x 8
 y 45
 elevation 82
@@ -2265,12 +2265,12 @@ x 8
 y 46
 elevation 605
 end
-arch desert
+arch beach
 x 8
 y 47
 elevation 681
 end
-arch desert
+arch beach
 x 8
 y 48
 elevation 223
@@ -2518,12 +2518,12 @@ x 9
 y 46
 elevation 1240
 end
-arch desert
+arch beach
 x 9
 y 47
 elevation 896
 end
-arch desert
+arch beach
 x 9
 y 48
 elevation 34
@@ -2780,12 +2780,12 @@ x 10
 y 47
 elevation 1085
 end
-arch desert
+arch beach
 x 10
 y 48
 elevation 272
 end
-arch desert
+arch beach
 x 10
 y 49
 elevation 268
@@ -3023,12 +3023,12 @@ x 11
 y 45
 elevation 370
 end
-arch desert
+arch beach
 x 11
 y 46
 elevation 629
 end
-arch desert
+arch beach
 x 11
 y 47
 elevation 828
@@ -3285,7 +3285,7 @@ x 12
 y 46
 elevation 5
 end
-arch desert
+arch beach
 x 12
 y 47
 elevation 58
@@ -3555,7 +3555,7 @@ x 13
 y 47
 elevation -10
 end
-arch desert
+arch beach
 x 13
 y 48
 elevation 396
@@ -5088,7 +5088,7 @@ x 19
 y 46
 elevation -8
 end
-arch desert
+arch beach
 x 19
 y 47
 elevation 39
@@ -5350,7 +5350,7 @@ x 20
 y 47
 elevation 875
 end
-arch desert
+arch beach
 x 20
 y 48
 elevation 248
@@ -5855,7 +5855,7 @@ x 22
 y 46
 elevation 1203
 end
-arch desert
+arch beach
 x 22
 y 47
 elevation 967
@@ -6097,7 +6097,7 @@ arch dungeon_magic
 x 23
 y 43
 end
-arch desert
+arch beach
 x 23
 y 44
 elevation 359
@@ -6107,12 +6107,12 @@ x 23
 y 45
 elevation 343
 end
-arch desert
+arch beach
 x 23
 y 46
 elevation 84
 end
-arch desert
+arch beach
 x 23
 y 47
 elevation 21
