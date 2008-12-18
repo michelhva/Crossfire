@@ -3,7 +3,7 @@ name world_117_100
 width 50
 height 50
 msg
-Modified: 2008-12-17 Rick Tanner
+Modified: 2008-12-18 Rick Tanner
 endmsg
 outdoor 1
 tile_path_2 world_118_100
@@ -109,7 +109,7 @@ arch sea
 y 24
 elevation -964
 end
-arch sea
+arch shallow_sea
 y 25
 elevation -409
 end
@@ -125,7 +125,7 @@ arch beach
 y 28
 elevation 199
 end
-arch sea
+arch shallow_sea
 y 29
 elevation -926
 end
@@ -328,12 +328,12 @@ x 1
 y 23
 elevation -1804
 end
-arch sea
+arch shallow_sea
 x 1
 y 24
 elevation -1354
 end
-arch sea
+arch shallow_sea
 x 1
 y 25
 elevation -855
@@ -353,12 +353,12 @@ x 1
 y 28
 elevation 10
 end
-arch sea
+arch shallow_sea
 x 1
 y 29
 elevation -1226
 end
-arch sea
+arch shallow_sea
 x 1
 y 30
 elevation -1978
@@ -577,32 +577,32 @@ x 2
 y 23
 elevation -2106
 end
-arch sea
+arch shallow_sea
 x 2
 y 24
 elevation -1761
 end
-arch sea
+arch shallow_sea
 x 2
 y 25
 elevation -1381
 end
-arch sea
+arch shallow_sea
 x 2
 y 26
 elevation -1086
 end
-arch sea
+arch shallow_sea
 x 2
 y 27
 elevation -983
 end
-arch sea
+arch shallow_sea
 x 2
 y 28
 elevation -1253
 end
-arch sea
+arch shallow_sea
 x 2
 y 29
 elevation -1751
@@ -841,12 +841,12 @@ x 3
 y 26
 elevation -1836
 end
-arch sea
+arch shallow_sea
 x 3
 y 27
 elevation -1848
 end
-arch sea
+arch shallow_sea
 x 3
 y 28
 elevation -2035

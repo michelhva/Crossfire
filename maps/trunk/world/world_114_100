@@ -3,7 +3,7 @@ name world_114_100
 width 50
 height 50
 msg
-Modified: 2008-12-17 Rick Tanner
+Modified: 2008-12-18 Rick Tanner
 endmsg
 outdoor 1
 tile_path_2 world_115_100
@@ -2091,7 +2091,7 @@ x 8
 y 12
 elevation -337
 end
-arch sea
+arch shallow_sea
 x 8
 y 13
 elevation -177
@@ -2335,12 +2335,12 @@ x 9
 y 11
 elevation -556
 end
-arch sea
+arch shallow_sea
 x 9
 y 12
 elevation -365
 end
-arch sea
+arch shallow_sea
 x 9
 y 13
 elevation -175
@@ -2584,12 +2584,12 @@ x 10
 y 11
 elevation -608
 end
-arch sea
+arch shallow_sea
 x 10
 y 12
 elevation -395
 end
-arch sea
+arch shallow_sea
 x 10
 y 13
 elevation -170
@@ -2833,12 +2833,12 @@ x 11
 y 11
 elevation -666
 end
-arch sea
+arch shallow_sea
 x 11
 y 12
 elevation -437
 end
-arch sea
+arch shallow_sea
 x 11
 y 13
 elevation -191
@@ -3087,7 +3087,7 @@ x 12
 y 12
 elevation -500
 end
-arch sea
+arch shallow_sea
 x 12
 y 13
 elevation -234
@@ -3622,7 +3622,7 @@ x 14
 y 13
 elevation -465
 end
-arch sea
+arch shallow_sea
 x 14
 y 14
 elevation -243
@@ -3875,22 +3875,22 @@ x 15
 y 13
 elevation -621
 end
-arch sea
+arch shallow_sea
 x 15
 y 14
 elevation -423
 end
-arch sea
+arch shallow_sea
 x 15
 y 15
 elevation -268
 end
-arch sea
+arch shallow_sea
 x 15
 y 16
 elevation -166
 end
-arch sea
+arch shallow_sea
 x 15
 y 17
 elevation -117
@@ -4129,7 +4129,7 @@ x 16
 y 14
 elevation -607
 end
-arch sea
+arch shallow_sea
 x 16
 y 15
 elevation -466
@@ -4139,7 +4139,7 @@ x 16
 y 16
 elevation -353
 end
-arch sea
+arch shallow_sea
 x 16
 y 17
 elevation -263
@@ -4901,27 +4901,27 @@ x 19
 y 19
 elevation -424
 end
-arch sea
+arch shallow_sea
 x 19
 y 20
 elevation -289
 end
-arch sea
+arch shallow_sea
 x 19
 y 21
 elevation -190
 end
-arch sea
+arch shallow_sea
 x 19
 y 22
 elevation -152
 end
-arch sea
+arch shallow_sea
 x 19
 y 23
 elevation -162
 end
-arch sea
+arch shallow_sea
 x 19
 y 24
 elevation -190
@@ -5155,12 +5155,12 @@ x 20
 y 20
 elevation -513
 end
-arch sea
+arch shallow_sea
 x 20
 y 21
 elevation -438
 end
-arch sea
+arch shallow_sea
 x 20
 y 22
 elevation -395
