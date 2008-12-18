@@ -9,7 +9,7 @@ enter_x 1
 enter_y 1
 msg
 Created:  2005-02-11
-Modified: 2008-12-16 Rick Tanner
+Modified: 2008-12-17 Rick Tanner
 endmsg
 outdoor 1
 tile_path_2 world_129_100
@@ -103,19 +103,19 @@ arch sea
 y 21
 elevation -358
 end
-arch sea
+arch shallow_sea
 y 22
 elevation -108
 end
-arch grass
+arch beach
 y 23
 elevation 14
 end
-arch grass
+arch beach
 y 24
 elevation 210
 end
-arch woods_3
+arch beach
 y 25
 elevation 1176
 end
@@ -127,11 +127,11 @@ arch grass
 y 27
 elevation 773
 end
-arch grass
+arch beach
 y 28
 elevation 183
 end
-arch sea
+arch shallow_sea
 y 29
 elevation -204
 end
@@ -213,7 +213,7 @@ arch beach
 y 47
 elevation 104
 end
-arch grass
+arch hills_rocky
 y 48
 elevation 66
 end
@@ -340,12 +340,12 @@ x 1
 y 21
 elevation -743
 end
-arch sea
+arch shallow_sea
 x 1
 y 22
 elevation -553
 end
-arch sea
+arch shallow_sea
 x 1
 y 23
 elevation -354
@@ -355,27 +355,27 @@ x 1
 y 24
 elevation -74
 end
-arch grass
+arch beach
 x 1
 y 25
 elevation 180
 end
-arch grass
+arch beach
 x 1
 y 26
 elevation 190
 end
-arch grass
+arch beach
 x 1
 y 27
 elevation 81
 end
-arch sea
+arch shallow_sea
 x 1
 y 28
 elevation -163
 end
-arch sea
+arch shallow_sea
 x 1
 y 29
 elevation -401
@@ -478,7 +478,7 @@ x 1
 y 47
 elevation -9
 end
-arch grass
+arch beach
 x 1
 y 48
 elevation 292
@@ -608,32 +608,32 @@ x 2
 y 22
 elevation -958
 end
-arch sea
+arch shallow_sea
 x 2
 y 23
 elevation -771
 end
-arch sea
+arch shallow_sea
 x 2
 y 24
 elevation -590
 end
-arch sea
+arch shallow_sea
 x 2
 y 25
 elevation -458
 end
-arch sea
+arch shallow_sea
 x 2
 y 26
 elevation -410
 end
-arch sea
+arch shallow_sea
 x 2
 y 27
 elevation -461
 end
-arch sea
+arch shallow_sea
 x 2
 y 28
 elevation -571
@@ -741,7 +741,7 @@ x 2
 y 47
 elevation -6
 end
-arch grass
+arch beach
 x 2
 y 48
 elevation 237
@@ -875,17 +875,17 @@ x 3
 y 24
 elevation -1066
 end
-arch sea
+arch shallow_sea
 x 3
 y 25
 elevation -966
 end
-arch sea
+arch shallow_sea
 x 3
 y 26
 elevation -917
 end
-arch sea
+arch shallow_sea
 x 3
 y 27
 elevation -921
@@ -999,7 +999,7 @@ x 3
 y 48
 elevation -4
 end
-arch brush
+arch beach
 x 3
 y 49
 elevation 39
@@ -1252,7 +1252,7 @@ x 4
 y 48
 elevation -9
 end
-arch grass
+arch beach
 x 4
 y 49
 elevation 31
@@ -1980,7 +1980,7 @@ x 7
 y 41
 elevation -512
 end
-arch sea
+arch shallow_sea
 x 7
 y 42
 elevation -293
@@ -1999,17 +1999,17 @@ x 7
 y 44
 elevation -10
 end
-arch grass
+arch beach
 x 7
 y 45
 elevation 91
 end
-arch grass
+arch beach
 x 7
 y 46
 elevation 361
 end
-arch grass
+arch hills_rocky
 x 7
 y 47
 elevation 550
@@ -2019,7 +2019,7 @@ x 7
 y 48
 elevation 559
 end
-arch brush
+arch hills_rocky
 x 7
 y 49
 elevation 533
@@ -2237,7 +2237,7 @@ arch dungeon_magic
 x 8
 y 41
 end
-arch sea
+arch shallow_sea
 x 8
 y 42
 elevation -179
@@ -2260,7 +2260,7 @@ x 8
 y 45
 elevation 82
 end
-arch grass
+arch hills_rocky
 x 8
 y 46
 elevation 605
@@ -2484,7 +2484,7 @@ x 9
 y 40
 elevation -849
 end
-arch sea
+arch shallow_sea
 x 9
 y 41
 elevation -509
@@ -2498,12 +2498,12 @@ x 9
 y 42
 elevation -87
 end
-arch grass
+arch beach
 x 9
 y 43
 elevation 564
 end
-arch woods
+arch beach
 x 9
 y 44
 elevation 1084
@@ -2737,7 +2737,7 @@ x 10
 y 40
 elevation -940
 end
-arch sea
+arch shallow_sea
 x 10
 y 41
 elevation -579
@@ -2746,7 +2746,7 @@ arch dungeon_magic
 x 10
 y 41
 end
-arch sea
+arch shallow_sea
 x 10
 y 42
 elevation -127
@@ -2755,7 +2755,7 @@ arch dungeon_magic
 x 10
 y 42
 end
-arch grass
+arch beach
 x 10
 y 43
 elevation 646
@@ -2790,11 +2790,11 @@ x 10
 y 49
 elevation 268
 end
-arch deep_sea
+arch sea
 x 11
 elevation -5026
 end
-arch deep_sea
+arch sea
 x 11
 y 1
 elevation -7500
@@ -2999,7 +2999,7 @@ x 11
 y 41
 elevation -713
 end
-arch sea
+arch shallow_sea
 x 11
 y 42
 elevation -317
@@ -3013,12 +3013,12 @@ x 11
 y 43
 elevation -10
 end
-arch grass
+arch beach
 x 11
 y 44
 elevation 253
 end
-arch grass
+arch beach
 x 11
 y 45
 elevation 370
@@ -3047,12 +3047,12 @@ arch sea
 x 12
 elevation -1631
 end
-arch deep_sea
+arch sea
 x 12
 y 1
 elevation -5904
 end
-arch deep_sea
+arch sea
 x 12
 y 2
 elevation -5180
@@ -3261,7 +3261,7 @@ arch dungeon_magic
 x 12
 y 42
 end
-arch sea
+arch shallow_sea
 x 12
 y 43
 elevation -287
@@ -3536,7 +3536,7 @@ arch dungeon_magic
 x 13
 y 44
 end
-arch sea
+arch shallow_sea
 x 13
 y 45
 elevation -168
@@ -3798,7 +3798,7 @@ arch dungeon_magic
 x 14
 y 45
 end
-arch sea
+arch shallow_sea
 x 14
 y 46
 elevation -150
@@ -3817,7 +3817,7 @@ x 14
 y 48
 elevation -8
 end
-arch grass
+arch beach
 x 14
 y 49
 elevation 553
@@ -4070,7 +4070,7 @@ x 15
 y 48
 elevation -9
 end
-arch grass
+arch beach
 x 15
 y 49
 elevation 186
@@ -4826,7 +4826,7 @@ arch dungeon_magic
 x 18
 y 45
 end
-arch sea
+arch shallow_sea
 x 18
 y 46
 elevation -136
@@ -5069,7 +5069,7 @@ x 19
 y 43
 elevation -703
 end
-arch sea
+arch shallow_sea
 x 19
 y 44
 elevation -378
@@ -5317,7 +5317,7 @@ x 20
 y 42
 elevation -1042
 end
-arch sea
+arch shallow_sea
 x 20
 y 43
 elevation -541
@@ -5326,7 +5326,7 @@ arch dungeon_magic
 x 20
 y 43
 end
-arch sea
+arch shallow_sea
 x 20
 y 44
 elevation -102
@@ -5340,12 +5340,12 @@ x 20
 y 45
 elevation 6
 end
-arch grass
+arch beach
 x 20
 y 46
 elevation 688
 end
-arch grass
+arch beach
 x 20
 y 47
 elevation 875
@@ -5569,7 +5569,7 @@ x 21
 y 41
 elevation -1584
 end
-arch sea
+arch shallow_sea
 x 21
 y 42
 elevation -975
@@ -5578,7 +5578,7 @@ arch dungeon_magic
 x 21
 y 42
 end
-arch sea
+arch shallow_sea
 x 21
 y 43
 elevation -339
@@ -5587,12 +5587,12 @@ arch dungeon_magic
 x 21
 y 43
 end
-arch grass
+arch beach
 x 21
 y 44
 elevation 331
 end
-arch brush
+arch beach
 x 21
 y 45
 elevation 903
@@ -5607,7 +5607,7 @@ x 21
 y 47
 elevation 1308
 end
-arch grass
+arch beach
 x 21
 y 48
 elevation 566
@@ -5821,12 +5821,12 @@ x 22
 y 40
 elevation -2233
 end
-arch sea
+arch shallow_sea
 x 22
 y 41
 elevation -1693
 end
-arch sea
+arch shallow_sea
 x 22
 y 42
 elevation -1044
@@ -5840,7 +5840,7 @@ x 22
 y 43
 elevation 5
 end
-arch grass
+arch beach
 x 22
 y 44
 elevation 664
@@ -5860,7 +5860,7 @@ x 22
 y 47
 elevation 967
 end
-arch brush
+arch beach
 x 22
 y 48
 elevation 423
@@ -6079,7 +6079,7 @@ x 23
 y 41
 elevation -1890
 end
-arch sea
+arch shallow_sea
 x 23
 y 42
 elevation -1265
@@ -6088,7 +6088,7 @@ arch dungeon_magic
 x 23
 y 42
 end
-arch sea
+arch shallow_sea
 x 23
 y 43
 elevation -586
@@ -6102,7 +6102,7 @@ x 23
 y 44
 elevation 359
 end
-arch grass
+arch beach
 x 23
 y 45
 elevation 343
@@ -6122,7 +6122,7 @@ x 23
 y 48
 elevation -52
 end
-arch sea
+arch shallow_sea
 x 23
 y 49
 elevation -271
@@ -6345,7 +6345,7 @@ x 24
 y 42
 elevation -1637
 end
-arch sea
+arch shallow_sea
 x 24
 y 43
 elevation -1089
@@ -6354,7 +6354,7 @@ arch dungeon_magic
 x 24
 y 43
 end
-arch sea
+arch shallow_sea
 x 24
 y 44
 elevation -668
@@ -6363,7 +6363,7 @@ arch dungeon_magic
 x 24
 y 44
 end
-arch sea
+arch shallow_sea
 x 24
 y 45
 elevation -441
@@ -6372,7 +6372,7 @@ arch dungeon_magic
 x 24
 y 45
 end
-arch sea
+arch shallow_sea
 x 24
 y 46
 elevation -410
@@ -6381,7 +6381,7 @@ arch dungeon_magic
 x 24
 y 46
 end
-arch sea
+arch shallow_sea
 x 24
 y 47
 elevation -441
@@ -6390,7 +6390,7 @@ arch dungeon_magic
 x 24
 y 47
 end
-arch sea
+arch shallow_sea
 x 24
 y 48
 elevation -499
@@ -6632,12 +6632,12 @@ x 25
 y 44
 elevation -1269
 end
-arch sea
+arch shallow_sea
 x 25
 y 45
 elevation -1042
 end
-arch sea
+arch shallow_sea
 x 25
 y 46
 elevation -920
@@ -8151,7 +8151,7 @@ x 31
 y 49
 elevation -2320
 end
-arch sea
+arch deep_sea
 x 32
 elevation -3474
 end
@@ -10890,7 +10890,7 @@ x 42
 y 49
 elevation -3548
 end
-arch sea
+arch deep_sea
 x 43
 elevation -3555
 end
@@ -11139,7 +11139,7 @@ x 43
 y 49
 elevation -3666
 end
-arch sea
+arch deep_sea
 x 44
 elevation -4846
 end
