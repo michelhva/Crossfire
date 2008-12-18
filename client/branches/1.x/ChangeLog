@@ -2,6 +2,11 @@
 Top of SVN tree:
 ------------------------------------------------------------------------------
 
+Fix branch GTK-V2 client issue [ 1876788 ] Doubled characters in GTK clients
+(unusable).  Tested with --enable-cfgtk2 compiled as RPM.
+  gtk-v2/src/keys.c
+Kevin Bulgrien 2008-12-17
+
 Complete fixing GTK-V1 issue [ 1876788 ] Doubled characters in GTK clients
 (unusable).  Tested with --enable-cfgtk2 compiled as RPM.
   gtk/keys.c
