@@ -2,6 +2,9 @@ arch map
 name world_107_100
 width 50
 height 50
+msg
+Modified: 2008-12-17 Rick Tanner
+endmsg
 outdoor 1
 tile_path_2 world_108_100
 tile_path_3 world_107_101
@@ -4683,7 +4686,7 @@ x 18
 y 48
 elevation -2438
 end
-arch brush
+arch beach
 x 18
 y 49
 elevation 220
