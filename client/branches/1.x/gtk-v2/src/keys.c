@@ -1257,12 +1257,16 @@ void keyfunc(GtkWidget *widget, GdkEventKey *event, GtkWidget *window) {
             text=gdk_keyval_name(event->keyval);
             send_reply(text);
             cpl.input_state = Playing;
+            g_signal_stop_emission_by_name(
+                 GTK_OBJECT (window), "key_press_event");
             return;
         }
         else if (cpl.input_state == Reply_Many) {
-            if (GTK_WIDGET_HAS_FOCUS (entry_commands))
+            if (GTK_WIDGET_HAS_FOCUS (entry_commands)) {
                 gtk_widget_event(GTK_WIDGET(entry_commands), (GdkEvent*)event);
-            else
+                g_signal_stop_emission_by_name(
+                     GTK_OBJECT (window), "key_press_event");
+	    } else
                 gtk_widget_grab_focus (GTK_WIDGET(entry_commands));
             return;
         }
@@ -1277,6 +1281,7 @@ void keyfunc(GtkWidget *widget, GdkEventKey *event, GtkWidget *window) {
             gtk_command_history(event->keyval==nextkeysym?0:1);
     else
         gtk_widget_event(GTK_WIDGET(entry_commands), (GdkEvent*)event);
+        g_signal_stop_emission_by_name(GTK_OBJECT (window), "key_press_event");
     } else {
         switch(cpl.input_state) {
             case Playing:
