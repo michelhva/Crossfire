@@ -8,7 +8,7 @@ enter_x 10
 enter_y 2
 msg
 Created:  1996-04-05
-Modified: 2008-12-18 Rick Tanner
+Modified: 2008-12-19 Rick Tanner
 endmsg
 end
 arch sky
@@ -195,11 +195,7 @@ sp 11
 x 1
 y 8
 end
-arch sky
-x 1
-y 9
-end
-arch cloudfloor
+arch cobblestones2
 x 1
 y 9
 end
@@ -329,11 +325,7 @@ arch cloudfloor
 x 2
 y 7
 end
-arch sky
-x 2
-y 8
-end
-arch cloudfloor
+arch cobblestones2
 x 2
 y 8
 end
@@ -341,11 +333,7 @@ arch cobblestones2
 x 2
 y 9
 end
-arch sky
-x 2
-y 10
-end
-arch cloudfloor
+arch cobblestones2
 x 2
 y 10
 end
@@ -467,11 +455,7 @@ arch cloudfloor
 x 3
 y 7
 end
-arch sky
-x 3
-y 8
-end
-arch cloudfloor
+arch cobblestones2
 x 3
 y 8
 end
@@ -479,11 +463,7 @@ arch cobblestones2
 x 3
 y 9
 end
-arch sky
-x 3
-y 10
-end
-arch cloudfloor
+arch cobblestones2
 x 3
 y 10
 end
@@ -613,11 +593,7 @@ arch cobblestones2
 x 4
 y 9
 end
-arch sky
-x 4
-y 10
-end
-arch cloudfloor
+arch cobblestones2
 x 4
 y 10
 end
@@ -1184,11 +1160,7 @@ end
 arch cloudfloor
 x 9
 end
-arch sky
-x 9
-y 1
-end
-arch cloudfloor
+arch cobblestones2
 x 9
 y 1
 end
@@ -1200,11 +1172,7 @@ sp 24
 x 9
 y 1
 end
-arch sky
-x 9
-y 2
-end
-arch cloudfloor
+arch cobblestones2
 x 9
 y 2
 end
@@ -1287,11 +1255,7 @@ arch cobblestones2
 x 9
 y 14
 end
-arch sky
-x 9
-y 15
-end
-arch cloudfloor
+arch cobblestones2
 x 9
 y 15
 end
@@ -1303,11 +1267,7 @@ sp 3
 x 9
 y 15
 end
-arch sky
-x 9
-y 16
-end
-arch cloudfloor
+arch cobblestones2
 x 9
 y 16
 end
@@ -1319,17 +1279,10 @@ arch cloudfloor
 x 9
 y 17
 end
-arch sky
+arch cobblestones2
 x 10
 end
-arch cloudfloor
-x 10
-end
-arch sky
-x 10
-y 1
-end
-arch cloudfloor
+arch cobblestones2
 x 10
 y 1
 end
@@ -1393,11 +1346,7 @@ arch cobblestones2
 x 10
 y 16
 end
-arch sky
-x 10
-y 17
-end
-arch cloudfloor
+arch cobblestones2
 x 10
 y 17
 end
@@ -1407,19 +1356,11 @@ end
 arch cloudfloor
 x 11
 end
-arch sky
+arch cobblestones2
 x 11
 y 1
 end
-arch cloudfloor
-x 11
-y 1
-end
-arch sky
-x 11
-y 2
-end
-arch cloudfloor
+arch cobblestones2
 x 11
 y 2
 end
@@ -1492,19 +1433,11 @@ arch cobblestones2
 x 11
 y 14
 end
-arch sky
+arch cobblestones2
 x 11
 y 15
 end
-arch cloudfloor
-x 11
-y 15
-end
-arch sky
-x 11
-y 16
-end
-arch cloudfloor
+arch cobblestones2
 x 11
 y 16
 end
@@ -2154,11 +2087,7 @@ arch cobblestones2
 x 16
 y 9
 end
-arch sky
-x 16
-y 10
-end
-arch cloudfloor
+arch cobblestones2
 x 16
 y 10
 end
@@ -2280,11 +2209,7 @@ arch cloudfloor
 x 17
 y 7
 end
-arch sky
-x 17
-y 8
-end
-arch cloudfloor
+arch cobblestones2
 x 17
 y 8
 end
@@ -2300,11 +2225,7 @@ arch cobblestones2
 x 17
 y 9
 end
-arch sky
-x 17
-y 10
-end
-arch cloudfloor
+arch cobblestones2
 x 17
 y 10
 end
@@ -2426,11 +2347,7 @@ arch cloudfloor
 x 18
 y 7
 end
-arch sky
-x 18
-y 8
-end
-arch cloudfloor
+arch cobblestones2
 x 18
 y 8
 end
@@ -2438,11 +2355,7 @@ arch cobblestones2
 x 18
 y 9
 end
-arch sky
-x 18
-y 10
-end
-arch cloudfloor
+arch cobblestones2
 x 18
 y 10
 end
@@ -2572,11 +2485,7 @@ arch cloudfloor
 x 19
 y 8
 end
-arch sky
-x 19
-y 9
-end
-arch cloudfloor
+arch cobblestones2
 x 19
 y 9
 end
