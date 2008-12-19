@@ -246,9 +246,8 @@ public class CfMapUpdater
     }
 
     /**
-     * Add a listener to notify about changed map squares.
-     *
-     * @param listener The listener to add.
+     * Adds a listener to notify about changed map squares.
+     * @param listener the listener to add
      */
     public void addCrossfireMapListener(final MapListener listener)
     {
@@ -256,9 +255,8 @@ public class CfMapUpdater
     }
 
     /**
-     * Remove a listener to notify about changed map squares.
-     *
-     * @param listener The listener to remove.
+     * Removes a listener to notify about changed map squares.
+     * @param listener the listener to remove
      */
     public void removeCrossfireMapListener(final MapListener listener)
     {
@@ -266,9 +264,8 @@ public class CfMapUpdater
     }
 
     /**
-     * Add a listener to notify about cleared maps.
-     *
-     * @param listener The listener to add.
+     * Adds a listener to notify about cleared maps.
+     * @param listener the listener to add
      */
     public void addCrossfireNewmapListener(final NewmapListener listener)
     {
@@ -276,9 +273,8 @@ public class CfMapUpdater
     }
 
     /**
-     * Remove a listener to notify about cleared maps.
-     *
-     * @param listener The listener to remove.
+     * Removes a listener to notify about cleared maps.
+     * @param listener the listener to remove
      */
     public void removeCrossfireNewmapListener(final NewmapListener listener)
     {
@@ -286,9 +282,8 @@ public class CfMapUpdater
     }
 
     /**
-     * Add a listener to notify about scrolled maps.
-     *
-     * @param listener The listener to add.
+     * Adds a listener to notify about scrolled maps.
+     * @param listener the listener to add
      */
     public void addCrossfireMapscrollListener(final MapscrollListener listener)
     {
@@ -296,9 +291,8 @@ public class CfMapUpdater
     }
 
     /**
-     * Remove a listener to notify about scrolled maps.
-     *
-     * @param listener The listener to remove.
+     * Removes a listener to notify about scrolled maps.
+     * @param listener the listener to remove
      */
     public void removeCrossfireMapscrollListener(final MapscrollListener listener)
     {
@@ -306,7 +300,7 @@ public class CfMapUpdater
     }
 
     /**
-     * Reset the animation state.
+     * Resets the animation state.
      */
     public void reset()
     {
@@ -317,18 +311,16 @@ public class CfMapUpdater
     }
 
     /**
-     * Start processing of a set of map square changes.
+     * Starts processing of a set of map square changes.
      */
     public void processMapBegin()
     {
     }
 
     /**
-     * Update a map square by clearing it.
-     *
-     * @param x The x-coordinate of the square.
-     *
-     * @param y The y-coordinate of the square.
+     * Updates a map square by clearing it.
+     * @param x the x-coordinate of the square
+     * @param y the y-coordinate of the square
      */
     public void processMapClear(final int x, final int y)
     {
@@ -340,15 +332,11 @@ public class CfMapUpdater
     }
 
     /**
-     * Update a map square by changing a face.
-     *
-     * @param x The x-coordinate of the square.
-     *
-     * @param y The y-coordinate of the square.
-     *
-     * @param layer The layer to update.
-     *
-     * @param faceNum The face to set. <code>0</code> clears the square.
+     * Updates a map square by changing a face.
+     * @param x the x-coordinate of the square
+     * @param y the y-coordinate of the square
+     * @param layer the layer to update
+     * @param faceNum the face to set. <code>0</code> clears the square
      */
     public void processMapFace(final int x, final int y, final int layer, final int faceNum)
     {
@@ -360,17 +348,12 @@ public class CfMapUpdater
     }
 
     /**
-     * Update a map square by changing an animation.
-     *
-     * @param x The x-coordinate of the square.
-     *
-     * @param y The y-coordinate of the square.
-     *
-     * @param layer The layer to update.
-     *
-     * @param animation The animation to set.
-     *
-     * @param type The animation type.
+     * Updates a map square by changing an animation.
+     * @param x the x-coordinate of the square
+     * @param y the y-coordinate of the square
+     * @param layer the layer to update
+     * @param animation the animation to set
+     * @param type the animation type
      */
     private void processMapAnimation(final int x, final int y, final int layer, final Animation animation, final int type)
     {
@@ -382,15 +365,11 @@ public class CfMapUpdater
     }
 
     /**
-     * Update a map square by changing the animation speed.
-     *
-     * @param x The x-coordinate of the square.
-     *
-     * @param y The y-coordinate of the square.
-     *
-     * @param layer The layer to update.
-     *
-     * @param animationSpeed The animation speed to set.
+     * Updates a map square by changing the animation speed.
+     * @param x the x-coordinate of the square
+     * @param y the y-coordinate of the square
+     * @param layer the layer to update
+     * @param animationSpeed the animation speed to set
      */
     private void processMapAnimationSpeed(final int x, final int y, final int layer, final int animationSpeed)
     {
@@ -401,13 +380,10 @@ public class CfMapUpdater
     }
 
     /**
-     * Update a map square by changing the darkness value.
-     *
-     * @param x The x-coordinate of the square.
-     *
-     * @param y The y-coordinate of the square.
-     *
-     * @param darkness The darkness value to set.
+     * Updates a map square by changing the darkness value.
+     * @param x the x-coordinate of the square
+     * @param y the y-coordinate of the square
+     * @param darkness the darkness value to set
      */
     private void processMapDarkness(final int x, final int y, final int darkness)
     {
@@ -418,11 +394,10 @@ public class CfMapUpdater
     }
 
     /**
-     * Finish processing of a set of map square changes. Notifies listeners
+     * Finishes processing of a set of map square changes. Notifies listeners
      * about changes.
-     *
-     * @param alwaysProcess If set, notify listeners even if no changes are
-     * present.
+     * @param alwaysProcess if set, notify listeners even if no changes are
+     * present
      */
     public void processMapEnd(final boolean alwaysProcess)
     {
@@ -442,18 +417,15 @@ public class CfMapUpdater
     }
 
     /**
-     * Update the face of one map square layer <em>outside</code> the view
+     * Updates the face of one map square layer <em>outside</code> the view
      * area.
-     *
-     * @param x The x-coordinate of the tile to update. The coordinate is
-     * relative to the top left corner of the view area.
-     *
-     * @param y The y-coordinate of the tile to update. The coordinate is
-     * relative to the top left corner of the view area.
-     *
-     * @param layer The layer to update.
-     *
-     * @param faceNum The new face to set. <code>-1</code> means "do not change face".
+     * @param x the x-coordinate of the tile to update. The coordinate is
+     * relative to the top left corner of the view area
+     * @param y the y-coordinate of the tile to update. The coordinate is
+     * relative to the top left corner of the view area
+     * @param layer the layer to update
+     * @param faceNum the new face to set. <code>-1</code> means "do not change
+     * face"
      */
     private void setMultiFace(final int x, final int y, final int layer, final int faceNum)
     {
@@ -486,11 +458,9 @@ public class CfMapUpdater
     }
 
     /**
-     * Process a map scroll command.
-     *
-     * @param dx The distance to scroll in x-direction in squares.
-     *
-     * @param dy The distance to scroll in y-direction in squares.
+     * Processes a map scroll command.
+     * @param dx the distance to scroll in x-direction in squares
+     * @param dy the distance to scroll in y-direction in squares
      */
     private void processScroll(final int dx, final int dy)
     {
@@ -563,9 +533,8 @@ public class CfMapUpdater
     }
 
     /**
-     * Process an updated face image.
-     *
-     * @param faceNum The face that has changed.
+     * Processes an updated face image.
+     * @param faceNum the face that has changed
      */
     private void updateFace(final int faceNum)
     {
@@ -594,7 +563,7 @@ public class CfMapUpdater
     }
 
     /**
-     * Process a newmap command. This clears the map state.
+     * Processes a newmap command. This clears the map state.
      * @param width the width of the visible map area
      * @param height the height of the visible map area
      */
@@ -620,9 +589,8 @@ public class CfMapUpdater
     }
 
     /**
-     * Return the current map instance.
-     *
-     * @return The current map instance.
+     * Returns the current map instance.
+     * @return the current map instance
      */
     public CfMap getMap()
     {
