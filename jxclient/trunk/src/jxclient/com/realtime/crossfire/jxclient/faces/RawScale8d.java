@@ -23,8 +23,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 /**
- * Scale down a raw image to an eigth in both dimensions.
- *
+ * Scales down a raw image to an eigth in both dimensions.
  * @author Andreas Kirschbaum
  */
 public class RawScale8d
@@ -47,13 +46,10 @@ public class RawScale8d
     private final Map<Integer, Integer> pixels = new HashMap<Integer, Integer>();
 
     /**
-     * Create a new instance.
-     *
-     * @param imageData The source image data to process.
-     *
-     * @param dataWidth The width of the source image.
-     *
-     * @param dataHeight The height of the source image.
+     * Creates a new instance.
+     * @param imageData the source image data to process
+     * @param dataWidth the width of the source image
+     * @param dataHeight the height of the source image
      */
     public RawScale8d(final int[] imageData, final int dataWidth, final int dataHeight)
     {
@@ -64,13 +60,10 @@ public class RawScale8d
     }
 
     /**
-     * Set a pixel in the destination image data.
-     *
-     * @param x The x location of the pixel to set.
-     *
-     * @param y The y location of the pixel to set.
-     *
-     * @param p The value of the pixel to set.
+     * Sets a pixel in the destination image data.
+     * @param x the x location of the pixel to set
+     * @param y the y location of the pixel to set
+     * @param p the value of the pixel to set
      */
     private void setDestPixel(final int x, final int y, final int p)
     {
@@ -78,13 +71,10 @@ public class RawScale8d
     }
 
     /**
-     * Get a pixel from the source image.
-     *
-     * @param x The x location of the pixel to retrieve.
-     *
-     * @param y The y location of the pixel to retrieve.
-     *
-     * @return The pixel value at the specified location.
+     * Gets a pixel from the source image.
+     * @param x the x location of the pixel to retrieve
+     * @param y the y location of the pixel to retrieve
+     * @return the pixel value at the specified location
      */
     private int getSourcePixel(final int x, final int y)
     {
@@ -92,11 +82,9 @@ public class RawScale8d
     }
 
     /**
-     * Process a specific destination pixel.
-     *
-     * @param x The x location in the source image of the pixel to process.
-     *
-     * @param y The y location in the source image of the pixel to process.
+     * Processes a specific destination pixel.
+     * @param x the x location in the source image of the pixel to process
+     * @param y the y location in the source image of the pixel to process
      */
     private void process(final int x, final int y)
     {
@@ -128,11 +116,10 @@ public class RawScale8d
     }
 
     /**
-     * Get the scale image data. Note this is the method that does the work so
-     * it might take some time to process.
-     *
-     * @return An array of pixels 64 times smaller than the input array
-     * containing the scaled down image.
+     * Returns the scale image data. Note this is the method that does the work
+     * so it might take some time to process.
+     * @return an array of pixels 64 times smaller than the input array
+     * containing the scaled down image
      */
     public int[] getScaledData()
     {
