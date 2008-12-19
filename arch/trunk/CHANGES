@@ -1,5 +1,10 @@
 Changes for SVN top of tree:
 
+floor/cloudfloor.arc
+Removed "is_floor 1" to allow colors and other tiles to show through the transparent
+portions of the clouds
+Rick Tanner 2008-12-19
+
 floor/cloudfloor.arc,
 ground/fog_2.base.111.png
 New graphic and archetype for a thicker/heavier cloudfloor, using less transparency
