@@ -29,19 +29,24 @@ import javax.swing.ImageIcon;
  */
 public class ImageScale8d
 {
-    /** The src data from the image */
+    /**
+     * The source data from the image.
+     */
     private final int[] srcData;
 
-    /** The width of the image */
+    /**
+     * The width of the image.
+     */
     private final int width;
 
-    /** The height of the image */
+    /**
+     * The height of the image.
+     */
     private final int height;
 
     /**
-     * Create a instance.
-     *
-     * @param srcImageIcon The image to scale.
+     * Creates a new instance.
+     * @param srcImageIcon the image to scale
      */
     public ImageScale8d(final ImageIcon srcImageIcon)
     {
@@ -55,10 +60,9 @@ public class ImageScale8d
     }
 
     /**
-     * Retrieve the scaled image. Note this is the method that actually does
-     * the work so it may take some time to return.
-     *
-     * @return The scaled image.
+     * Returns the scaled image. Note this is the method that actually does the
+     * work so it may take some time to return.
+     * @return the scaled image
      */
     public ImageIcon getScaledImage()
     {
