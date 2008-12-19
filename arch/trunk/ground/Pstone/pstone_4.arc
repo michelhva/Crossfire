@@ -7,4 +7,6 @@ magicmap brown
 move_slow walk
 move_slow_penalty 1
 is_hilly 1
+smoothlevel 37
+smoothface pstone_4.111 pstone_4_S.111
 end
