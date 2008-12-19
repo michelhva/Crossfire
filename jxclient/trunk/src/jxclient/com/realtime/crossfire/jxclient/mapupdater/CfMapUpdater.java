@@ -170,7 +170,7 @@ public class CfMapUpdater
         /** {@inheritDoc} */
         public void mapFace(final int x, final int y, final int layer, final int faceNum)
         {
-            processMapFace(x, y, layer, faceNum);
+            processMapFace(x, y, layer, faceNum, true);
         }
 
         /** {@inheritDoc} */
@@ -337,12 +337,16 @@ public class CfMapUpdater
      * @param y the y-coordinate of the square
      * @param layer the layer to update
      * @param faceNum the face to set. <code>0</code> clears the square
+     * @param clearAnimation whether an animation should be cleared
      */
-    public void processMapFace(final int x, final int y, final int layer, final int faceNum)
+    public void processMapFace(final int x, final int y, final int layer, final int faceNum, final boolean clearAnimation)
     {
         synchronized (sync)
         {
-            visibleAnimations.remove(x, y, layer);
+            if (clearAnimation)
+            {
+                visibleAnimations.remove(x, y, layer);
+            }
             map.setFace(x, y, layer, getFace(faceNum));
         }
     }

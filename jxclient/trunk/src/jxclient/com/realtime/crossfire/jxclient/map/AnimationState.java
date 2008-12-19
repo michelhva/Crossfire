@@ -130,6 +130,6 @@ public class AnimationState
         }
 
         final int face = animation.getFace(faceIndex);
-        mapUpdater.processMapFace(location.getX(), location.getY(), location.getLayer(), face);
+        mapUpdater.processMapFace(location.getX(), location.getY(), location.getLayer(), face, false);
     }
 }

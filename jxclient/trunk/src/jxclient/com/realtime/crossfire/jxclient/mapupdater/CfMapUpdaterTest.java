@@ -121,11 +121,11 @@ public class CfMapUpdaterTest extends TestCase
 
         mapUpdater.processNewMap(5, 5);
         mapUpdater.processMapBegin();
-        mapUpdater.processMapFace(0, 0, 0, 2);
-        mapUpdater.processMapFace(1, 0, 0, 2);
-        mapUpdater.processMapFace(0, 1, 0, 2);
-        mapUpdater.processMapFace(1, 1, 0, 2);
-        mapUpdater.processMapFace(1, 1, 6, 1);
+        mapUpdater.processMapFace(0, 0, 0, 2, true);
+        mapUpdater.processMapFace(1, 0, 0, 2, true);
+        mapUpdater.processMapFace(0, 1, 0, 2, true);
+        mapUpdater.processMapFace(1, 1, 0, 2, true);
+        mapUpdater.processMapFace(1, 1, 6, 1, true);
         mapUpdater.processMapEnd(true);
         assertEquals(""
             +"[H0=_,T6=M][H0=_,T6=M]\n"
@@ -169,62 +169,62 @@ public class CfMapUpdaterTest extends TestCase
 
         mapUpdater.processNewMap(10, 10);
         mapUpdater.processMapBegin();
-        mapUpdater.processMapFace(7, 8, 0, 4607);
-        mapUpdater.processMapFace(8, 8, 0, 4607);
-        mapUpdater.processMapFace(9, 8, 0, 4607);
-        mapUpdater.processMapFace(7, 9, 0, 4607);
-        mapUpdater.processMapFace(8, 9, 0, 4607);
-        mapUpdater.processMapFace(9, 9, 0, 4607);
-        mapUpdater.processMapFace(9, 9, 6, 312);
+        mapUpdater.processMapFace(7, 8, 0, 4607, true);
+        mapUpdater.processMapFace(8, 8, 0, 4607, true);
+        mapUpdater.processMapFace(9, 8, 0, 4607, true);
+        mapUpdater.processMapFace(7, 9, 0, 4607, true);
+        mapUpdater.processMapFace(8, 9, 0, 4607, true);
+        mapUpdater.processMapFace(9, 9, 0, 4607, true);
+        mapUpdater.processMapFace(9, 9, 6, 312, true);
         mapUpdater.processMapEnd(true);
 
         mapUpdater.getMapAnimations().tick(26);
         mapUpdater.processMapBegin();
-        mapUpdater.processMapFace(9, 9, 6, 307);
+        mapUpdater.processMapFace(9, 9, 6, 307, true);
         mapUpdater.processMapEnd(true);
 
         mapUpdater.getMapAnimations().tick(27);
         mapUpdater.getMapAnimations().tick(28);
         mapUpdater.processMapBegin();
-        mapUpdater.processMapFace(9, 9, 6, 308);
+        mapUpdater.processMapFace(9, 9, 6, 308, true);
         mapUpdater.processMapEnd(true);
 
         mapUpdater.getMapAnimations().tick(29);
         mapUpdater.processMapBegin();
-        mapUpdater.processMapFace(0, 5, 6, 0);
+        mapUpdater.processMapFace(0, 5, 6, 0, true);
         mapUpdater.processMapEnd(true);
 
         mapUpdater.getMapAnimations().tick(30);
         mapUpdater.processMapBegin();
-        mapUpdater.processMapFace(9, 9, 6, 309);
+        mapUpdater.processMapFace(9, 9, 6, 309, true);
         mapUpdater.processMapEnd(true);
 
         mapUpdater.getMapAnimations().tick(31);
         mapUpdater.getMapAnimations().tick(32);
         mapUpdater.processMapBegin();
-        mapUpdater.processMapFace(9, 9, 6, 308);
+        mapUpdater.processMapFace(9, 9, 6, 308, true);
         mapUpdater.processMapEnd(true);
 
         mapUpdater.getMapAnimations().tick(33);
         mapUpdater.getMapAnimations().tick(34);
         mapUpdater.processMapBegin();
-        mapUpdater.processMapFace(9, 9, 6, 0);
-        mapUpdater.processMapFace(10, 9, 6, 307);
+        mapUpdater.processMapFace(9, 9, 6, 0, true);
+        mapUpdater.processMapFace(10, 9, 6, 307, true);
         mapUpdater.processMapEnd(true);
 
         mapUpdater.getMapAnimations().tick(35);
         mapUpdater.getMapAnimations().tick(36);
         mapUpdater.processMapBegin();
-        mapUpdater.processMapFace(0, 6, 6, 932);
-        mapUpdater.processMapFace(9, 9, 6, 312);
+        mapUpdater.processMapFace(0, 6, 6, 932, true);
+        mapUpdater.processMapFace(9, 9, 6, 312, true);
         mapUpdater.processMapClear(10, 9);
         mapUpdater.processMapEnd(true);
 
         mapUpdater.getMapAnimations().tick(37);
         mapUpdater.getMapAnimations().tick(38);
         mapUpdater.processMapBegin();
-        mapUpdater.processMapFace(8, 9, 6, 310);
-        mapUpdater.processMapFace(9, 9, 6, 0);
+        mapUpdater.processMapFace(8, 9, 6, 310, true);
+        mapUpdater.processMapFace(9, 9, 6, 0, true);
         mapUpdater.processMapEnd(true);
 
         mapUpdater.getMapAnimations().tick(39);
