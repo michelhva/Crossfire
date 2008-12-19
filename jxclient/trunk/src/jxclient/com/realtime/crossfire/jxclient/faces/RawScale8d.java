@@ -94,8 +94,11 @@ public class RawScale8d
             for (int dy = 0; dy < 8; dy++)
             {
                 final int value = getSourcePixel(8*x+dx, 8*y+dy);
-                final Integer count = pixels.get(value);
-                pixels.put(value, count == null ? 1 : count+1);
+                if(value != 0)
+                {
+                    final Integer count = pixels.get(value);
+                    pixels.put(value, count == null ? 1 : count+1);
+                }
             }
         }
         int maxCount = 0;
@@ -109,7 +112,6 @@ public class RawScale8d
                 maxPixel = e.getKey();
             }
         }
-        assert maxCount > 0;
         pixels.clear();
 
         setDestPixel(x, y, maxPixel);
