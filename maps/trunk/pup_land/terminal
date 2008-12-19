@@ -57,17 +57,26 @@ end
 arch cloudfloor
 y 7
 end
+arch dungeon_magic
+y 8
+end
 arch sky
 y 8
 end
 arch cloudfloor
 y 8
 end
+arch dungeon_magic
+y 9
+end
 arch sky
 y 9
 end
 arch cloudfloor
 y 9
+end
+arch dungeon_magic
+y 10
 end
 arch sky
 y 10
@@ -171,6 +180,10 @@ arch cloudfloor
 x 1
 y 6
 end
+arch dungeon_magic
+x 1
+y 7
+end
 arch sky
 x 1
 y 7
@@ -178,6 +191,10 @@ end
 arch cloudfloor
 x 1
 y 7
+end
+arch dungeon_magic
+x 1
+y 8
 end
 arch sky
 x 1
@@ -199,6 +216,10 @@ arch cobblestones2
 x 1
 y 9
 end
+arch dungeon_magic
+x 1
+y 10
+end
 arch sky
 x 1
 y 10
@@ -206,6 +227,10 @@ end
 arch cloudfloor
 x 1
 y 10
+end
+arch dungeon_magic
+x 1
+y 11
 end
 arch sky
 x 1
@@ -316,6 +341,10 @@ end
 arch cloudfloor
 x 2
 y 6
+end
+arch dungeon_magic
+x 2
+y 7
 end
 arch sky
 x 2
@@ -337,6 +366,10 @@ arch cobblestones2
 x 2
 y 10
 end
+arch dungeon_magic
+x 2
+y 11
+end
 arch sky
 x 2
 y 11
@@ -446,6 +479,10 @@ end
 arch cloudfloor
 x 3
 y 6
+end
+arch dungeon_magic
+x 3
+y 7
 end
 arch sky
 x 3
@@ -467,6 +504,10 @@ arch cobblestones2
 x 3
 y 10
 end
+arch dungeon_magic
+x 3
+y 11
+end
 arch sky
 x 3
 y 11
@@ -576,6 +617,10 @@ end
 arch cloudfloor
 x 4
 y 6
+end
+arch dungeon_magic
+x 4
+y 7
 end
 arch sky
 x 4
@@ -597,6 +642,10 @@ arch cobblestones2
 x 4
 y 10
 end
+arch dungeon_magic
+x 4
+y 11
+end
 arch sky
 x 4
 y 11
@@ -682,6 +731,10 @@ end
 arch cloudfloor
 x 5
 y 3
+end
+arch dungeon_magic
+x 5
+y 4
 end
 arch grass
 x 5
@@ -691,6 +744,10 @@ arch swall_2_2_2
 x 5
 y 4
 end
+arch dungeon_magic
+x 5
+y 5
+end
 arch grass
 x 5
 y 5
@@ -698,6 +755,10 @@ end
 arch swall_2_1_1
 x 5
 y 5
+end
+arch dungeon_magic
+x 5
+y 6
 end
 arch grass
 x 5
@@ -707,6 +768,10 @@ arch swall_2_1_1
 x 5
 y 6
 end
+arch dungeon_magic
+x 5
+y 7
+end
 arch grass
 x 5
 y 7
@@ -714,6 +779,10 @@ end
 arch swall_2_1_1
 x 5
 y 7
+end
+arch dungeon_magic
+x 5
+y 8
 end
 arch grass
 x 5
@@ -727,6 +796,10 @@ arch cobblestones2
 x 5
 y 9
 end
+arch dungeon_magic
+x 5
+y 10
+end
 arch grass
 x 5
 y 10
@@ -735,6 +808,10 @@ arch swall_1_1
 x 5
 y 10
 end
+arch dungeon_magic
+x 5
+y 11
+end
 arch grass
 x 5
 y 11
@@ -743,6 +820,10 @@ arch swall_2_1_1
 x 5
 y 11
 end
+arch dungeon_magic
+x 5
+y 12
+end
 arch grass
 x 5
 y 12
@@ -750,6 +831,10 @@ end
 arch swall_2_1_1
 x 5
 y 12
+end
+arch dungeon_magic
+x 5
+y 13
 end
 arch grass
 x 5
@@ -821,6 +906,10 @@ arch cloudfloor
 x 6
 y 3
 end
+arch dungeon_magic
+x 6
+y 4
+end
 arch grass
 x 6
 y 4
@@ -875,6 +964,10 @@ arch evergreen
 x 6
 y 12
 end
+arch dungeon_magic
+x 6
+y 13
+end
 arch grass
 x 6
 y 13
@@ -944,6 +1037,10 @@ end
 arch cloudfloor
 x 7
 y 3
+end
+arch dungeon_magic
+x 7
+y 4
 end
 arch grass
 x 7
@@ -997,6 +1094,10 @@ x 7
 y 12
 blocksview 0
 end
+arch dungeon_magic
+x 7
+y 13
+end
 arch grass
 x 7
 y 13
@@ -1037,11 +1138,18 @@ arch cloudfloor
 x 7
 y 17
 end
+arch dungeon_magic
+x 8
+end
 arch sky
 x 8
 end
 arch cloudfloor
 x 8
+end
+arch dungeon_magic
+x 8
+y 1
 end
 arch sky
 x 8
@@ -1051,6 +1159,10 @@ arch cloudfloor
 x 8
 y 1
 end
+arch dungeon_magic
+x 8
+y 2
+end
 arch sky
 x 8
 y 2
@@ -1059,6 +1171,10 @@ arch cloudfloor
 x 8
 y 2
 end
+arch dungeon_magic
+x 8
+y 3
+end
 arch sky
 x 8
 y 3
@@ -1066,6 +1182,10 @@ end
 arch cloudfloor
 x 8
 y 3
+end
+arch dungeon_magic
+x 8
+y 4
 end
 arch grass
 x 8
@@ -1114,6 +1234,10 @@ arch grass
 x 8
 y 12
 end
+arch dungeon_magic
+x 8
+y 13
+end
 arch grass
 x 8
 y 13
@@ -1122,6 +1246,10 @@ arch swall_2_1_2
 x 8
 y 13
 end
+arch dungeon_magic
+x 8
+y 14
+end
 arch sky
 x 8
 y 14
@@ -1129,6 +1257,10 @@ end
 arch cloudfloor
 x 8
 y 14
+end
+arch dungeon_magic
+x 8
+y 15
 end
 arch sky
 x 8
@@ -1138,6 +1270,10 @@ arch cloudfloor
 x 8
 y 15
 end
+arch dungeon_magic
+x 8
+y 16
+end
 arch sky
 x 8
 y 16
@@ -1146,6 +1282,10 @@ arch cloudfloor
 x 8
 y 16
 end
+arch dungeon_magic
+x 8
+y 17
+end
 arch sky
 x 8
 y 17
@@ -1153,6 +1293,9 @@ end
 arch cloudfloor
 x 8
 y 17
+end
+arch dungeon_magic
+x 9
 end
 arch sky
 x 9
@@ -1179,6 +1322,10 @@ end
 arch cobblestones2
 x 9
 y 3
+end
+arch dungeon_magic
+x 9
+y 4
 end
 arch grass
 x 9
@@ -1243,6 +1390,10 @@ arch grass
 x 9
 y 12
 end
+arch dungeon_magic
+x 9
+y 13
+end
 arch grass
 x 9
 y 13
@@ -1271,6 +1422,10 @@ arch cobblestones2
 x 9
 y 16
 end
+arch dungeon_magic
+x 9
+y 17
+end
 arch sky
 x 9
 y 17
@@ -1278,6 +1433,9 @@ end
 arch cloudfloor
 x 9
 y 17
+end
+arch dungeon_magic
+x 10
 end
 arch cobblestones2
 x 10
@@ -1346,9 +1504,16 @@ arch cobblestones2
 x 10
 y 16
 end
+arch dungeon_magic
+x 10
+y 17
+end
 arch cobblestones2
 x 10
 y 17
+end
+arch dungeon_magic
+x 11
 end
 arch sky
 x 11
@@ -1367,6 +1532,10 @@ end
 arch cobblestones2
 x 11
 y 3
+end
+arch dungeon_magic
+x 11
+y 4
 end
 arch grass
 x 11
@@ -1421,6 +1590,10 @@ arch grass
 x 11
 y 12
 end
+arch dungeon_magic
+x 11
+y 13
+end
 arch grass
 x 11
 y 13
@@ -1441,6 +1614,10 @@ arch cobblestones2
 x 11
 y 16
 end
+arch dungeon_magic
+x 11
+y 17
+end
 arch sky
 x 11
 y 17
@@ -1449,11 +1626,18 @@ arch cloudfloor
 x 11
 y 17
 end
+arch dungeon_magic
+x 12
+end
 arch sky
 x 12
 end
 arch cloudfloor
 x 12
+end
+arch dungeon_magic
+x 12
+y 1
 end
 arch sky
 x 12
@@ -1463,6 +1647,10 @@ arch cloudfloor
 x 12
 y 1
 end
+arch dungeon_magic
+x 12
+y 2
+end
 arch sky
 x 12
 y 2
@@ -1471,6 +1659,10 @@ arch cloudfloor
 x 12
 y 2
 end
+arch dungeon_magic
+x 12
+y 3
+end
 arch sky
 x 12
 y 3
@@ -1478,6 +1670,10 @@ end
 arch cloudfloor
 x 12
 y 3
+end
+arch dungeon_magic
+x 12
+y 4
 end
 arch grass
 x 12
@@ -1519,6 +1715,10 @@ arch grass
 x 12
 y 12
 end
+arch dungeon_magic
+x 12
+y 13
+end
 arch grass
 x 12
 y 13
@@ -1527,6 +1727,10 @@ arch swall_2_1_2
 x 12
 y 13
 end
+arch dungeon_magic
+x 12
+y 14
+end
 arch sky
 x 12
 y 14
@@ -1534,6 +1738,10 @@ end
 arch cloudfloor
 x 12
 y 14
+end
+arch dungeon_magic
+x 12
+y 15
 end
 arch sky
 x 12
@@ -1543,6 +1751,10 @@ arch cloudfloor
 x 12
 y 15
 end
+arch dungeon_magic
+x 12
+y 16
+end
 arch sky
 x 12
 y 16
@@ -1550,6 +1762,10 @@ end
 arch cloudfloor
 x 12
 y 16
+end
+arch dungeon_magic
+x 12
+y 17
 end
 arch sky
 x 12
@@ -1588,6 +1804,10 @@ end
 arch cloudfloor
 x 13
 y 3
+end
+arch dungeon_magic
+x 13
+y 4
 end
 arch grass
 x 13
@@ -1636,6 +1856,10 @@ arch grass
 x 13
 y 12
 end
+arch dungeon_magic
+x 13
+y 13
+end
 arch grass
 x 13
 y 13
@@ -1705,6 +1929,10 @@ end
 arch cloudfloor
 x 14
 y 3
+end
+arch dungeon_magic
+x 14
+y 4
 end
 arch grass
 x 14
@@ -1801,6 +2029,10 @@ x 14
 y 12
 blocksview 0
 end
+arch dungeon_magic
+x 14
+y 13
+end
 arch grass
 x 14
 y 13
@@ -1871,6 +2103,10 @@ arch cloudfloor
 x 15
 y 3
 end
+arch dungeon_magic
+x 15
+y 4
+end
 arch grass
 x 15
 y 4
@@ -1879,6 +2115,10 @@ arch swall_2_2_3
 x 15
 y 4
 end
+arch dungeon_magic
+x 15
+y 5
+end
 arch grass
 x 15
 y 5
@@ -1887,6 +2127,10 @@ arch swall_2_1_1
 x 15
 y 5
 end
+arch dungeon_magic
+x 15
+y 6
+end
 arch grass
 x 15
 y 6
@@ -1894,6 +2138,10 @@ end
 arch swall_2_1_1
 x 15
 y 6
+end
+arch dungeon_magic
+x 15
+y 7
 end
 arch grass
 x 15
@@ -1905,7 +2153,7 @@ y 7
 end
 arch dungeon_magic
 x 15
-y 7
+y 8
 end
 arch grass
 x 15
@@ -1917,7 +2165,7 @@ y 8
 end
 arch dungeon_magic
 x 15
-y 8
+y 9
 end
 arch button_small
 x 15
@@ -1937,7 +2185,7 @@ damned 1
 end
 arch dungeon_magic
 x 15
-y 9
+y 10
 end
 arch grass
 x 15
@@ -1949,7 +2197,7 @@ y 10
 end
 arch dungeon_magic
 x 15
-y 10
+y 11
 end
 arch grass
 x 15
@@ -1959,6 +2207,10 @@ arch swall_2_1_1
 x 15
 y 11
 end
+arch dungeon_magic
+x 15
+y 12
+end
 arch grass
 x 15
 y 12
@@ -1966,6 +2218,10 @@ end
 arch swall_2_1_1
 x 15
 y 12
+end
+arch dungeon_magic
+x 15
+y 13
 end
 arch grass
 x 15
@@ -2061,6 +2317,10 @@ arch cloudfloor
 x 16
 y 6
 end
+arch dungeon_magic
+x 16
+y 7
+end
 arch sky
 x 16
 y 7
@@ -2091,6 +2351,10 @@ arch cobblestones2
 x 16
 y 10
 end
+arch dungeon_magic
+x 16
+y 11
+end
 arch sky
 x 16
 y 11
@@ -2200,6 +2464,10 @@ end
 arch cloudfloor
 x 17
 y 6
+end
+arch dungeon_magic
+x 17
+y 7
 end
 arch sky
 x 17
@@ -2229,6 +2497,10 @@ arch cobblestones2
 x 17
 y 10
 end
+arch dungeon_magic
+x 17
+y 11
+end
 arch sky
 x 17
 y 11
@@ -2338,6 +2610,10 @@ end
 arch cloudfloor
 x 18
 y 6
+end
+arch dungeon_magic
+x 18
+y 7
 end
 arch sky
 x 18
@@ -2359,6 +2635,10 @@ arch cobblestones2
 x 18
 y 10
 end
+arch dungeon_magic
+x 18
+y 11
+end
 arch sky
 x 18
 y 11
@@ -2469,6 +2749,10 @@ arch cloudfloor
 x 19
 y 6
 end
+arch dungeon_magic
+x 19
+y 7
+end
 arch sky
 x 19
 y 7
@@ -2476,6 +2760,10 @@ end
 arch cloudfloor
 x 19
 y 7
+end
+arch dungeon_magic
+x 19
+y 8
 end
 arch sky
 x 19
@@ -2489,6 +2777,10 @@ arch cobblestones2
 x 19
 y 9
 end
+arch dungeon_magic
+x 19
+y 10
+end
 arch sky
 x 19
 y 10
@@ -2496,6 +2788,10 @@ end
 arch cloudfloor
 x 19
 y 10
+end
+arch dungeon_magic
+x 19
+y 11
 end
 arch sky
 x 19
@@ -2615,6 +2911,10 @@ arch cloudfloor
 x 20
 y 7
 end
+arch dungeon_magic
+x 20
+y 8
+end
 arch sky
 x 20
 y 8
@@ -2623,6 +2923,10 @@ arch cloudfloor
 x 20
 y 8
 end
+arch dungeon_magic
+x 20
+y 9
+end
 arch sky
 x 20
 y 9
@@ -2630,6 +2934,10 @@ end
 arch cloudfloor
 x 20
 y 9
+end
+arch dungeon_magic
+x 20
+y 10
 end
 arch sky
 x 20
