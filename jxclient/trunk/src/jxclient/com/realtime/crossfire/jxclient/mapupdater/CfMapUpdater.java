@@ -354,10 +354,7 @@ public class CfMapUpdater
     {
         synchronized (sync)
         {
-            if (faceNum == 0)
-            {
-                visibleAnimations.remove(x, y, layer);
-            }
+            visibleAnimations.remove(x, y, layer);
             map.setFace(x, y, layer, getFace(faceNum));
         }
     }
@@ -379,6 +376,7 @@ public class CfMapUpdater
     {
         synchronized (sync)
         {
+            map.setFace(x, y, layer, null);
             visibleAnimations.add(x, y, layer, animation, type);
         }
     }
