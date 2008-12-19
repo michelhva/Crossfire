@@ -1,3 +1,63 @@
+2008-12-19 08:13  rjtanner
+
+	* pup_land/terminal: Add more no_spells tiles around the dragon
+	  landing pads and under the fence to prevent players from using
+	  dimension door to access areas they shouldn't be able to
+
+2008-12-19 08:06  rjtanner
+
+	* pup_land/terminal: Cosmetic change - added more cobblestone tiles
+	  around the dragon transports so it looks like they are standing
+	  on ground and to reduce how the clouds obscure the dragons
+
+2008-12-19 07:24  rjtanner
+
+	* world/world_112_100: Remove some stray land tiles from the top
+	  (middle) of the sea
+
+2008-12-18 21:26  rjtanner
+
+	* pup_land/terminal, pup_land/terminal_u1: Per player feedback,
+	  covered the entire sky area with clouds (floor vs wall archetype
+	  so it does not block the player's view)
+
+2008-12-18 07:39  rjtanner
+
+	* brest/brittany/enigme.6: Add no_spells tile under the spike walls
+	  to block the use of dimension door
+
+2008-12-18 07:11  rjtanner
+
+	* world/world_112_100, world/world_113_100, world/world_114_100,
+	  world/world_117_100: Add more shallow_sea around the shoreline
+
+2008-12-18 07:10  rjtanner
+
+	* world/world_108_100: Make very small island all sand (beach)
+
+2008-12-18 07:03  rjtanner
+
+	* world/world_105_100, world/world_106_100: Add more shallow_sea
+	  around the shoreline
+
+2008-12-18 03:24  rjtanner
+
+	* world/world_100_100, world/world_101_100, world/world_102_100,
+	  world/world_103_100, world/world_104_100, world/world_105_100,
+	  world/world_106_100, world/world_107_100, world/world_108_100,
+	  world/world_109_100, world/world_110_100, world/world_111_100,
+	  world/world_112_100, world/world_113_100, world/world_114_100,
+	  world/world_115_100, world/world_116_100, world/world_117_100,
+	  world/world_118_100, world/world_119_100, world/world_120_100,
+	  world/world_121_100, world/world_122_100, world/world_123_100,
+	  world/world_124_100, world/world_125_100, world/world_127_100,
+	  world/world_128_100, world/world_129_100: Modified world_*_100
+	  maps (first row) so they have an actual shoreline agaist the sea
+
+2008-12-17 07:16  rjtanner
+
+	* ChangeLog: Updated ChangeLog file using svn2cl
+
 2008-12-17 06:57  rjtanner
 
 	* world/world_102_102, world/world_103_102, world/world_104_102,
