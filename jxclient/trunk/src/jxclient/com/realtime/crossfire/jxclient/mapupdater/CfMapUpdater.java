@@ -417,31 +417,6 @@ public class CfMapUpdater
     }
 
     /**
-     * Updates the face of one map square layer <em>outside</code> the view
-     * area.
-     * @param x the x-coordinate of the tile to update. The coordinate is
-     * relative to the top left corner of the view area
-     * @param y the y-coordinate of the tile to update. The coordinate is
-     * relative to the top left corner of the view area
-     * @param layer the layer to update
-     * @param faceNum the new face to set. <code>-1</code> means "do not change
-     * face"
-     */
-    private void setMultiFace(final int x, final int y, final int layer, final int faceNum)
-    {
-        if (faceNum == -1)
-        {
-            return;
-        }
-
-        final Face face = getFace(faceNum);
-        synchronized (sync)
-        {
-            map.setMultiFace(x, y, layer, face);
-        }
-    }
-
-    /**
      * Returns the {@link Face} instance by face ID.
      * @param faceNum the face ID
      * @return return the face instance, or <code>null</code> if
@@ -466,8 +441,6 @@ public class CfMapUpdater
     {
         synchronized (sync)
         {
-            map.clearMultiFaces();
-
             if (Math.abs(dx) >= width || Math.abs(dy) >= height)
             {
                 map.scroll(dx, dy);
