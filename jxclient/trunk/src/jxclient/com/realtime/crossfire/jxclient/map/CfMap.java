@@ -21,9 +21,6 @@ package com.realtime.crossfire.jxclient.map;
 
 import com.realtime.crossfire.jxclient.faces.Face;
 import com.realtime.crossfire.jxclient.server.CrossfireMap2Command;
-import java.awt.Point;
-import java.util.HashMap;
-import java.util.Map;
 
 /**
  * Represents a map (as seen by the client). A map is a grid in which {@link
@@ -108,30 +105,12 @@ public class CfMap
     private CfMapPatch[][] patch = null;
 
     /**
-     * Multi-face objects with bottom-right parts outside the viewable map area
-     * but with at least one part inside the viewable area.
-     */
-    private final Map<Point, CfMultiSquare> outOfMapMultiFaces = new HashMap<Point, CfMultiSquare>();
-
-    /**
      * Creates a new (empty) map.
      * @param mapSquareListener the map square listener instance to notify
      */
     public CfMap(final CfMapSquareListener mapSquareListener)
     {
         this.mapSquareListener = mapSquareListener;
-    }
-
-    /**
-     * Forgets about all multi-square faces in out-of-map bounds squares.
-     */
-    public void clearMultiFaces()
-    {
-        for (final CfMultiSquare multiSquare : outOfMapMultiFaces.values())
-        {
-            multiSquare.clear();
-        }
-        outOfMapMultiFaces.clear();
     }
 
     /**
@@ -318,39 +297,6 @@ public class CfMap
     {
         final CfMapPatch mapPatch = getMapPatch(x, y);
         return mapPatch != null ? mapPatch.getHeadMapSquare(ox, oy, layer) : null;
-    }
-
-    /**
-     * Set the face of an out-of-map bounds multi-face object.
-     * @param x the x-coordinate of the square
-     * @param y the y-coordinate of the square
-     * @param layer the layer to set
-     * @param face the face to set
-     */
-    public void setMultiFace(final int x, final int y, final int layer, final Face face)
-    {
-        getOrCreateMultiSquare(x, y).setFace(layer, face);
-    }
-
-    /**
-     * Returns (or create if it doesn't yet exist) a {@link CfMultiSquare}
-     * object for a given coordinate.
-     * @param x the x-coordinate
-     * @param y the y-coordinate
-     * @return the multi square object for the coordinate
-     */
-    private CfMultiSquare getOrCreateMultiSquare(final int x, final int y)
-    {
-        final Point point = new Point(x, y);
-        final CfMultiSquare multiSquare = outOfMapMultiFaces.get(point);
-        if (multiSquare != null)
-        {
-            return multiSquare;
-        }
-
-        final CfMultiSquare newMultiSquare = new CfMultiSquare(x, y, this);
-        outOfMapMultiFaces.put(point, newMultiSquare);
-        return newMultiSquare;
     }
 
     /**
