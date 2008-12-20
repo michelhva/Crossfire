@@ -28,6 +28,7 @@ import com.realtime.crossfire.jxclient.items.LocationListener;
 import com.realtime.crossfire.jxclient.server.CommandQueue;
 import com.realtime.crossfire.jxclient.server.CrossfireServerConnection;
 import com.realtime.crossfire.jxclient.window.JXCWindow;
+import com.realtime.crossfire.jxclient.window.KeyHandler;
 import java.awt.Image;
 import java.util.List;
 
@@ -169,7 +170,7 @@ public class GUIItemInventory extends GUIItemItem
             return;
         }
 
-        if (window.getKeyShift(JXCWindow.KEY_SHIFT_SHIFT))
+        if (window.getKeyHandler().getKeyShift(KeyHandler.KEY_SHIFT_SHIFT))
         {
             crossfireServerConnection.sendLock(!item.isLocked(), item.getTag());
         }
@@ -186,7 +187,7 @@ public class GUIItemInventory extends GUIItemItem
         final CfItem item = getItem();
         if (item != null)
         {
-            if (window.getKeyShift(JXCWindow.KEY_SHIFT_SHIFT))
+            if (window.getKeyHandler().getKeyShift(KeyHandler.KEY_SHIFT_SHIFT))
             {
                 crossfireServerConnection.sendMark(item.getTag());
                 return;
