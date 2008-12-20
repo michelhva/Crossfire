@@ -69,16 +69,15 @@ import com.realtime.crossfire.jxclient.spells.SpellsManager;
 import com.realtime.crossfire.jxclient.stats.ActiveSkillWatcher;
 import com.realtime.crossfire.jxclient.stats.PoisonWatcher;
 import com.realtime.crossfire.jxclient.stats.Stats;
-import com.realtime.crossfire.jxclient.util.NumberParser;
 import java.awt.Graphics;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.awt.event.KeyEvent;
 import java.awt.event.KeyListener;
 import java.awt.event.WindowAdapter;
 import java.awt.event.WindowEvent;
 import java.awt.event.WindowFocusListener;
 import java.awt.event.WindowListener;
-import java.awt.event.KeyEvent;
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.IOException;
@@ -97,11 +96,6 @@ import javax.swing.Timer;
  */
 public class JXCWindow extends JFrame implements CrossfireDrawextinfoListener, CrossfireQueryListener
 {
-    /**
-     * The prefix for the window title.
-     */
-    private static final String TITLE_PREFIX = "jxclient";
-
     /** The serial version UID. */
     private static final long serialVersionUID = 1;
 
@@ -260,25 +254,14 @@ public class JXCWindow extends JFrame implements CrossfireDrawextinfoListener, C
     private final MouseTracker mouseTracker;
 
     /**
+     * The connection.
+     */
+    private final JXCConnection connection;
+
+    /**
      * The size of the client area.
      */
     private Resolution resolution = null;
-
-    /**
-     * The currently connected server. Set to <code>null</code> if unconnected.
-     */
-    private String hostname = null;
-
-    /**
-     * The currently logged in character. Set to <code>null</code> if not
-     * logged in.
-     */
-    private String character = null;
-
-    /**
-     * The currently connected port. Only valid if {@link #hostname} is set.
-     */
-    private int port = 0;
 
     /**
      * Whether the currently shown query dialog is the character name prompt.
@@ -373,13 +356,13 @@ public class JXCWindow extends JFrame implements CrossfireDrawextinfoListener, C
         /** {@inheritDoc} */
         public void playerAdded(final CfPlayer player)
         {
-            setCharacter(player.getName());
+            connection.setCharacter(player.getName());
         }
 
         /** {@inheritDoc} */
         public void playerRemoved(final CfPlayer player)
         {
-            setCharacter(null);
+            connection.setCharacter(null);
         }
     };
 
@@ -544,7 +527,7 @@ public class JXCWindow extends JFrame implements CrossfireDrawextinfoListener, C
      */
     public JXCWindow(final Object terminateSync, final boolean debugGui, final Writer debugProtocol, final Writer debugKeyboard, final Settings settings, final SoundManager soundManager, final OptionManager optionManager) throws IOException
     {
-        super(TITLE_PREFIX);
+        super("");
         this.terminateSync = terminateSync;
         this.debugGui = debugGui;
         this.settings = settings;
@@ -583,7 +566,7 @@ public class JXCWindow extends JFrame implements CrossfireDrawextinfoListener, C
         setFocusTraversalKeysEnabled(false);
         addWindowFocusListener(windowFocusListener);
         addWindowListener(windowListener);
-        updateTitle();
+        connection = new JXCConnection(keybindingsManager, settings, this, characterPickup);
     }
 
     public static boolean checkFire()
@@ -766,11 +749,10 @@ public class JXCWindow extends JFrame implements CrossfireDrawextinfoListener, C
             if (this.guiId == GUI_MAIN)
             {
                 server.disconnect();
-                setHost(null);
+                connection.setHost(null);
                 itemsManager.removeCrossfirePlayerListener(playerListener);
                 server.removeCrossfireQueryListener(this);
                 server.removeCrossfireDrawextinfoListener(this);
-                setTitle(TITLE_PREFIX);
                 itemsManager.reset();
                 mapUpdater.reset();
                 for (final ConnectionStateListener listener : connectionStateListeners)
@@ -786,13 +768,12 @@ public class JXCWindow extends JFrame implements CrossfireDrawextinfoListener, C
                 soundManager.mute(Sounds.CHARACTER, false);
                 server.addCrossfireDrawextinfoListener(this);
                 server.addCrossfireQueryListener(this);
-                setTitle(TITLE_PREFIX+" - "+hostname);
                 itemsManager.addCrossfirePlayerListener(playerListener);
                 stats.reset();
                 SkillSet.clearNumberedSkills();
                 server.setMapSize(skin.getMapWidth(), skin.getMapHeight());
                 server.setNumLookObjects(skin.getNumLookObjects());
-                server.connect(hostname, port, connectionListener);
+                server.connect(connection.getHostname(), connection.getPort(), connectionListener);
                 facesManager.reset();
                 commandQueue.clear();
                 itemsManager.reset();
@@ -912,7 +893,7 @@ public class JXCWindow extends JFrame implements CrossfireDrawextinfoListener, C
     public void connect(final String serverInfo)
     {
         settings.putString("server", serverInfo);
-        setHost(serverInfo);
+        connection.setHost(serverInfo);
         changeGUI(GUI_MAIN);
     }
 
@@ -1007,7 +988,7 @@ public class JXCWindow extends JFrame implements CrossfireDrawextinfoListener, C
             currentQueryDialogIsNamePrompt = evt.getPrompt().startsWith("What is your name?");
             if (currentQueryDialogIsNamePrompt)
             {
-                final String playerName = settings.getString("player_"+hostname, "");
+                final String playerName = settings.getString("player_"+connection.getHostname(), "");
                 if (playerName.length() > 0)
                 {
                     final GUIText textArea = queryDialog.getFirstTextArea();
@@ -1300,7 +1281,7 @@ public class JXCWindow extends JFrame implements CrossfireDrawextinfoListener, C
     {
         if (currentQueryDialogIsNamePrompt)
         {
-            settings.putString("player_"+hostname, playerName);
+            settings.putString("player_"+connection.getHostname(), playerName);
         }
     }
 
@@ -1346,96 +1327,6 @@ public class JXCWindow extends JFrame implements CrossfireDrawextinfoListener, C
     public void addConnectionStateListener(final ConnectionStateListener listener)
     {
         connectionStateListeners.add(listener);
-    }
-
-    /**
-     * Update the active character name.
-     *
-     * @param character The active character; <code>null</code> if not logged
-     * in.
-     */
-    private void setCharacter(final String character)
-    {
-        if (this.character == null ? character == null : this.character.equals(character))
-        {
-            return;
-        }
-
-        keybindingsManager.unloadPerCharacterBindings();
-
-        if (hostname != null && this.character != null)
-        {
-            final long pickupMode = characterPickup.getPickupMode();
-            if (pickupMode != Pickup.PU_NOTHING)
-            {
-                settings.putLong("pickup_"+hostname+"_"+this.character, pickupMode);
-            }
-            else
-            {
-                settings.remove("pickup_"+hostname+"_"+this.character);
-            }
-        }
-
-        this.character = character;
-        updateTitle();
-
-        if (hostname != null && character != null)
-        {
-            keybindingsManager.loadPerCharacterBindings(hostname, character);
-            characterPickup.setPickupMode(settings.getLong("pickup_"+hostname+"_"+character, Pickup.PU_NOTHING));
-        }
-    }
-
-    /**
-     * Update information about the connected host.
-     *
-     * @param serverInfo The hostname; <code>null</code> if not connected.
-     */
-    private void setHost(final String serverInfo)
-    {
-        final String newHostname;
-        final int newPort;
-        if (serverInfo == null)
-        {
-            newHostname = null;
-            newPort = 0;
-        }
-        else
-        {
-            final String[] tmp = serverInfo.split(":", 2);
-            newHostname = tmp[0];
-            newPort = tmp.length < 2 ? 13327 : NumberParser.parseInt(tmp[1], 13327, 1, 65535);
-        }
-
-        if ((hostname == null ? newHostname == null : hostname.equals(newHostname))
-        && port == newPort)
-        {
-            return;
-        }
-
-        setCharacter(null);
-        hostname = newHostname;
-        port = newPort;
-        updateTitle();
-    }
-
-    /**
-     * Update the window title to reflect the current connection state.
-     */
-    private void updateTitle()
-    {
-        if (hostname == null)
-        {
-            setTitle(TITLE_PREFIX);
-        }
-        else if (character == null)
-        {
-            setTitle(TITLE_PREFIX+" - "+hostname);
-        }
-        else
-        {
-            setTitle(TITLE_PREFIX+" - "+hostname+" - "+character);
-        }
     }
 
     /**
