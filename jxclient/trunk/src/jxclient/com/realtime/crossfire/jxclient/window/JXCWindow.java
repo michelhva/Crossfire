@@ -698,7 +698,7 @@ public class JXCWindow extends JFrame
         setFocusTraversalKeysEnabled(false);
         addWindowFocusListener(windowFocusListener);
         addWindowListener(windowListener);
-        connection = new JXCConnection(keybindingsManager, settings, this, characterPickup);
+        connection = new JXCConnection(keybindingsManager, settings, this, characterPickup, server);
     }
 
     public static boolean checkFire()
@@ -880,11 +880,8 @@ public class JXCWindow extends JFrame
 
             if (this.guiId == GUI_MAIN)
             {
-                server.disconnect();
-                connection.setHost(null);
+                connection.disconnect();
                 itemsManager.removeCrossfirePlayerListener(playerListener);
-                server.removeCrossfireQueryListener(crossfireQueryListener);
-                server.removeCrossfireDrawextinfoListener(crossfireDrawextinfoListener);
                 itemsManager.reset();
                 mapUpdater.reset();
                 for (final ConnectionStateListener listener : connectionStateListeners)
@@ -898,14 +895,10 @@ public class JXCWindow extends JFrame
             if (this.guiId == GUI_MAIN)
             {
                 soundManager.mute(Sounds.CHARACTER, false);
-                server.addCrossfireDrawextinfoListener(crossfireDrawextinfoListener);
-                server.addCrossfireQueryListener(crossfireQueryListener);
                 itemsManager.addCrossfirePlayerListener(playerListener);
                 stats.reset();
                 SkillSet.clearNumberedSkills();
-                server.setMapSize(skin.getMapWidth(), skin.getMapHeight());
-                server.setNumLookObjects(skin.getNumLookObjects());
-                server.connect(connection.getHostname(), connection.getPort(), connectionListener);
+                connection.connect(connectionListener, crossfireQueryListener, crossfireDrawextinfoListener, skin.getMapWidth(), skin.getMapHeight(), skin.getNumLookObjects());
                 facesManager.reset();
                 commandQueue.clear();
                 itemsManager.reset();
