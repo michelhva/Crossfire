@@ -9,7 +9,7 @@ enter_x 12
 enter_y 13
 msg
 Created:  2008-11-24 Rick Tanner
-Modified: 2008-11-24 Rick Tanner
+Modified: 2008-12-20 Rick Tanner
 endmsg
 end
 arch medium_stones
@@ -912,9 +912,14 @@ arch dwall_1_3
 x 11
 y 14
 end
+arch dungeon_magic
+x 11
+y 15
+end
 arch medium_stones
 x 11
 y 15
+move_block all
 end
 arch medium_stones
 x 12
@@ -987,21 +992,21 @@ arch woodfloor
 x 12
 y 14
 end
-arch exit
+arch oakdoor_2
 slaying /world/world_116_104
 hp 16
 sp 21
 x 12
 y 14
-invisible 1
 end
-arch odoor_2_fant_brown
+arch dungeon_magic
 x 12
-y 14
+y 15
 end
 arch medium_stones
 x 12
 y 15
+move_block all
 end
 arch medium_stones
 x 13
@@ -1100,9 +1105,14 @@ arch dwall_1_4
 x 13
 y 14
 end
+arch dungeon_magic
+x 13
+y 15
+end
 arch medium_stones
 x 13
 y 15
+move_block all
 end
 arch medium_stones
 x 14
