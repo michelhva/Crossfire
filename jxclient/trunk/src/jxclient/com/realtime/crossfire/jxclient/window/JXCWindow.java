@@ -421,7 +421,7 @@ public class JXCWindow extends JFrame implements KeyListener, CrossfireDrawextin
         {
             if (keybindingsManager.windowClosing())
             {
-                windowRenderer.closeDialog(keybindDialog);
+                closeKeybindDialog();
             }
 
             if (dialogQuit == null)
@@ -519,7 +519,7 @@ public class JXCWindow extends JFrame implements KeyListener, CrossfireDrawextin
         final boolean result = keybindingsManager.createKeyBinding(perCharacter, cmdlist);
         if (result)
         {
-            windowRenderer.openDialog(keybindDialog);
+            openKeybindDialog();
         }
         return result;
     }
@@ -529,7 +529,7 @@ public class JXCWindow extends JFrame implements KeyListener, CrossfireDrawextin
         final boolean result = keybindingsManager.removeKeyBinding(perCharacter);
         if (result)
         {
-            windowRenderer.openDialog(keybindDialog);
+            openKeybindDialog();
         }
         return result;
     }
@@ -990,7 +990,7 @@ public class JXCWindow extends JFrame implements KeyListener, CrossfireDrawextin
 
                         if (keybindingsManager.escPressed())
                         {
-                            windowRenderer.closeDialog(keybindDialog);
+                            closeKeybindDialog();
                         }
                         else if (deactivateCommandInput())
                         {
@@ -1100,7 +1100,7 @@ public class JXCWindow extends JFrame implements KeyListener, CrossfireDrawextin
                     else if (keybindingsManager.keyReleased())
                     {
                         debugKeyboardWrite("keyReleased: keybindingsManager consumed key");
-                        windowRenderer.closeDialog(keybindDialog);
+                        closeKeybindDialog();
                     }
                     else
                     {
@@ -1744,5 +1744,21 @@ public class JXCWindow extends JFrame implements KeyListener, CrossfireDrawextin
             System.exit(1);
             throw new AssertionError();
         }
+    }
+
+    /**
+     * Opens the keybinding dialog. Does nothing if the dialog is opened.
+     */
+    private void openKeybindDialog()
+    {
+        windowRenderer.openDialog(keybindDialog);
+    }
+
+    /**
+     * Closes the keybinding dialog. Does nothing if the dialog is not opened.
+     */
+    private void closeKeybindDialog()
+    {
+        windowRenderer.closeDialog(keybindDialog);
     }
 }
