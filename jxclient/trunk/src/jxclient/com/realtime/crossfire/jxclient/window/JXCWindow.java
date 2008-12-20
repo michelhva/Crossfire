@@ -1108,7 +1108,7 @@ public class JXCWindow extends JFrame
             // fallback: built-in resource
             newSkin = new JXCSkinClassLoader(itemsManager, spellsManager, facesManager, stats, mapUpdater, "com/realtime/crossfire/jxclient/skins/"+skinName, defaultKeyBindings);
         }
-        newSkin.load(server, this, mouseTracker, metaserver, commandQueue, resolution, optionManager, experienceTable, shortcuts, commands);
+        newSkin.load(server, this, mouseTracker, metaserver, commandQueue, resolution, optionManager, experienceTable, shortcuts, commands, currentSpellManager);
         return newSkin;
     }
 
@@ -1267,16 +1267,6 @@ public class JXCWindow extends JFrame
     public TooltipManager getTooltipManager()
     {
         return tooltipManager;
-    }
-
-    /**
-     * Return the current spell manager instance for this window.
-     *
-     * @return The current spell manager instance for this window.
-     */
-    public CurrentSpellManager getCurrentSpellManager()
-    {
-        return currentSpellManager;
     }
 
     /**

@@ -112,6 +112,7 @@ import com.realtime.crossfire.jxclient.shortcuts.Shortcuts;
 import com.realtime.crossfire.jxclient.skills.Skill;
 import com.realtime.crossfire.jxclient.skills.SkillListener;
 import com.realtime.crossfire.jxclient.skills.SkillSet;
+import com.realtime.crossfire.jxclient.spells.CurrentSpellManager;
 import com.realtime.crossfire.jxclient.spells.SpellsManager;
 import com.realtime.crossfire.jxclient.stats.Stats;
 import com.realtime.crossfire.jxclient.stats.StatsParser;
@@ -345,7 +346,7 @@ public abstract class JXCSkinLoader implements JXCSkin
     }
 
     /** {@inheritDoc} */
-    public void load(final CrossfireServerConnection crossfireServerConnection, final JXCWindow window, final MouseTracker mouseTracker, final Metaserver metaserver, final CommandQueue commandQueue, final Resolution resolution, final OptionManager optionManager, final ExperienceTable experienceTable, final Shortcuts shortcuts, final Commands commands) throws JXCSkinException
+    public void load(final CrossfireServerConnection crossfireServerConnection, final JXCWindow window, final MouseTracker mouseTracker, final Metaserver metaserver, final CommandQueue commandQueue, final Resolution resolution, final OptionManager optionManager, final ExperienceTable experienceTable, final Shortcuts shortcuts, final Commands commands, final CurrentSpellManager currentSpellManager) throws JXCSkinException
     {
         if (resolution.isExact())
         {
@@ -413,14 +414,14 @@ public abstract class JXCSkinLoader implements JXCSkin
         checkBoxFactory = null;
         try
         {
-            load("global", selectedResolution, crossfireServerConnection, window, mouseTracker, metaserver, commandQueue, null, optionManager, experienceTable, shortcuts, commands);
+            load("global", selectedResolution, crossfireServerConnection, window, mouseTracker, metaserver, commandQueue, null, optionManager, experienceTable, shortcuts, commands, currentSpellManager);
             while (!dialogsToLoad.isEmpty())
             {
                 final Iterator<String> it = dialogsToLoad.iterator();
                 final String name = it.next();
                 it.remove();
                 final Gui gui = definedDialogs.lookup(name);
-                load(name, selectedResolution, crossfireServerConnection, window, mouseTracker, metaserver, commandQueue, gui, optionManager, experienceTable, shortcuts, commands);
+                load(name, selectedResolution, crossfireServerConnection, window, mouseTracker, metaserver, commandQueue, gui, optionManager, experienceTable, shortcuts, commands, currentSpellManager);
                 gui.setStateChanged(false);
             }
         }
@@ -586,9 +587,10 @@ public abstract class JXCSkinLoader implements JXCSkin
      * @param experienceTable the experience table to use
      * @param shortcuts the shortcuts instance
      * @param commands the commands instance for executing commands
+     * @param currentSpellManager the current spell manager to use
      * @throws JXCSkinException if the file cannot be loaded
      */
-    private void load(final String dialogName, final Resolution resolution, final CrossfireServerConnection server, final JXCWindow window, final MouseTracker mouseTracker, final Metaserver metaserver, final CommandQueue commandQueue, final Gui gui, final OptionManager optionManager, final ExperienceTable experienceTable, final Shortcuts shortcuts, final Commands commands) throws JXCSkinException
+    private void load(final String dialogName, final Resolution resolution, final CrossfireServerConnection server, final JXCWindow window, final MouseTracker mouseTracker, final Metaserver metaserver, final CommandQueue commandQueue, final Gui gui, final OptionManager optionManager, final ExperienceTable experienceTable, final Shortcuts shortcuts, final Commands commands, final CurrentSpellManager currentSpellManager) throws JXCSkinException
     {
         String resourceName = dialogName+"@"+resolution+".skin";
 
@@ -607,7 +609,7 @@ public abstract class JXCSkinLoader implements JXCSkin
             }
             try
             {
-                load(dialogName, resourceName, inputStream, server, window, mouseTracker, metaserver, commandQueue, gui, optionManager, experienceTable, shortcuts, commands);
+                load(dialogName, resourceName, inputStream, server, window, mouseTracker, metaserver, commandQueue, gui, optionManager, experienceTable, shortcuts, commands, currentSpellManager);
             }
             finally
             {
@@ -659,9 +661,10 @@ public abstract class JXCSkinLoader implements JXCSkin
      * @param experienceTable the experience table to use
      * @param shortcuts the shortcuts instance
      * @param commands the commands instance for executing commands
+     * @param currentSpellManager the current spell manager to use
      * @throws JXCSkinException if the file cannot be loaded
      */
-    private void load(final String dialogName, final String resourceName, final InputStream inputStream, final CrossfireServerConnection server, final JXCWindow window, final MouseTracker mouseTracker, final Metaserver metaserver, final CommandQueue commandQueue, final Gui gui, final OptionManager optionManager, final ExperienceTable experienceTable, final Shortcuts shortcuts, final Commands commands) throws JXCSkinException
+    private void load(final String dialogName, final String resourceName, final InputStream inputStream, final CrossfireServerConnection server, final JXCWindow window, final MouseTracker mouseTracker, final Metaserver metaserver, final CommandQueue commandQueue, final Gui gui, final OptionManager optionManager, final ExperienceTable experienceTable, final Shortcuts shortcuts, final Commands commands, final CurrentSpellManager currentSpellManager) throws JXCSkinException
     {
         final List<GUIElement> addedElements = new ArrayList<GUIElement>();
         boolean addedElementsContainsWildcard = false;
@@ -1293,7 +1296,7 @@ public abstract class JXCSkinLoader implements JXCSkin
                                 final BufferedImage pictureCursed = getPicture(args[8]);
                                 final BufferedImage pictureApplied = getPicture(args[9]);
                                 final Font font = definedFonts.lookup(args[10]);
-                                element = new GUIItemShortcut(window, name, x, y, w, h, pictureCursed, pictureApplied, index, facesManager, shortcuts, font);
+                                element = new GUIItemShortcut(window, name, x, y, w, h, pictureCursed, pictureApplied, index, facesManager, shortcuts, font, currentSpellManager);
                             }
                             else if (type.equals("spelllist"))
                             {
@@ -1303,7 +1306,7 @@ public abstract class JXCSkinLoader implements JXCSkin
                                 }
 
                                 final BufferedImage pictureSelector = getPicture(args[8]);
-                                element = new GUIItemSpelllist(window, commandQueue, name, x, y, w, h, pictureSelector, index, facesManager, spellsManager);
+                                element = new GUIItemSpelllist(window, commandQueue, name, x, y, w, h, pictureSelector, index, facesManager, spellsManager, currentSpellManager);
                             }
                             else
                             {
@@ -1429,7 +1432,7 @@ public abstract class JXCSkinLoader implements JXCSkin
                             final int h = parseInt(args[5]);
                             final Font font = definedFonts.lookup(args[6]);
                             final GUISpellLabel.Type type = parseEnum(GUISpellLabel.Type.class, args[7], "label type");
-                            final GUISpellLabel element = new GUISpellLabel(window, name, x, y, w, h, null, facesManager, font, type);
+                            final GUISpellLabel element = new GUISpellLabel(window, name, x, y, w, h, null, facesManager, font, type, currentSpellManager);
                             definedGUIElements.insert(name, element);
                         }
                         else if (gui != null && args[0].equals("log_label"))

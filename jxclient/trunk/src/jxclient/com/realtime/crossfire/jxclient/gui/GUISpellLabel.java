@@ -20,6 +20,7 @@
 package com.realtime.crossfire.jxclient.gui;
 
 import com.realtime.crossfire.jxclient.faces.FacesManager;
+import com.realtime.crossfire.jxclient.spells.CurrentSpellManager;
 import com.realtime.crossfire.jxclient.spells.Spell;
 import com.realtime.crossfire.jxclient.spells.SpellListener;
 import com.realtime.crossfire.jxclient.window.JXCWindow;
@@ -157,12 +158,14 @@ public class GUISpellLabel extends GUIHTMLLabel
      * @param font The font to use.
      *
      * @param type The display type.
+     *
+     * @param currentSpellManager The current spell manager to track.
      */
-    public GUISpellLabel(final JXCWindow window, final String name, final int x, final int y, final int w, final int h, final BufferedImage picture, final FacesManager facesManager, final Font font, final Type type)
+    public GUISpellLabel(final JXCWindow window, final String name, final int x, final int y, final int w, final int h, final BufferedImage picture, final FacesManager facesManager, final Font font, final Type type, final CurrentSpellManager currentSpellManager)
     {
         super(window, name, x, y, w, h, picture, font, Color.WHITE, new Color(0, 0, 0, 0F), "");
         this.facesManager = facesManager;
         this.type = type;
-        window.getCurrentSpellManager().addSpellListener(spellListener);
+        currentSpellManager.addSpellListener(spellListener);
     }
 }
