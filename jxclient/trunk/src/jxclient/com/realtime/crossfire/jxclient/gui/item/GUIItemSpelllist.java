@@ -24,6 +24,7 @@ import com.realtime.crossfire.jxclient.faces.Face;
 import com.realtime.crossfire.jxclient.faces.FacesManager;
 import com.realtime.crossfire.jxclient.faces.FacesManagerListener;
 import com.realtime.crossfire.jxclient.server.CommandQueue;
+import com.realtime.crossfire.jxclient.spells.CurrentSpellManager;
 import com.realtime.crossfire.jxclient.spells.Spell;
 import com.realtime.crossfire.jxclient.spells.SpellsManager;
 import com.realtime.crossfire.jxclient.spells.SpellsManagerListener;
@@ -67,6 +68,8 @@ public class GUIItemSpelllist extends GUIItem
     private final SpellsManager spellsManager;
 
     private final BufferedImage selectorImage;
+
+    private final CurrentSpellManager currentSpellManager;
 
     private Spell spell = null;
 
@@ -120,7 +123,7 @@ public class GUIItemSpelllist extends GUIItem
         }
     };
 
-    public GUIItemSpelllist(final JXCWindow window, final CommandQueue commandQueue, final String name, final int x, final int y, final int w, final int h, final BufferedImage selectorImage, final int defaultIndex, final FacesManager facesManager, final SpellsManager spellsManager)
+    public GUIItemSpelllist(final JXCWindow window, final CommandQueue commandQueue, final String name, final int x, final int y, final int w, final int h, final BufferedImage selectorImage, final int defaultIndex, final FacesManager facesManager, final SpellsManager spellsManager, final CurrentSpellManager currentSpellManager)
     {
         super(window, name, x, y, w, h);
         this.commandQueue = commandQueue;
@@ -128,6 +131,7 @@ public class GUIItemSpelllist extends GUIItem
         this.defaultIndex = defaultIndex;
         this.spellsManager = spellsManager;
         this.selectorImage = selectorImage;
+        this.currentSpellManager = currentSpellManager;
         setIndex(defaultIndex);
         spellsManager.addCrossfireSpellChangedListener(spellsManagerListener);
         facesManager.addFacesManagerListener(facesManagerListener);
@@ -174,7 +178,7 @@ public class GUIItemSpelllist extends GUIItem
         }
 
         commandQueue.sendNcom(false, "cast "+spell.getInternalName());
-        window.getCurrentSpellManager().setCurrentSpell(spell);
+        currentSpellManager.setCurrentSpell(spell);
     }
 
     /* {@inheritDoc} */
