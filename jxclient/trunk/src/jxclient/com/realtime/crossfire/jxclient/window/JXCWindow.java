@@ -94,7 +94,7 @@ import javax.swing.Timer;
  * @author Andreas Kirschbaum
  * @since 1.0
  */
-public class JXCWindow extends JFrame implements CrossfireDrawextinfoListener, CrossfireQueryListener
+public class JXCWindow extends JFrame implements CrossfireDrawextinfoListener
 {
     /** The serial version UID. */
     private static final long serialVersionUID = 1;
@@ -504,6 +504,56 @@ public class JXCWindow extends JFrame implements CrossfireDrawextinfoListener, C
     };
 
     /**
+     * The {@link CrossfireQueryListener} attached to {@link #server}. It
+     * parses query messages to open/close dialogs.
+     */
+    private final CrossfireQueryListener crossfireQueryListener = new CrossfireQueryListener()
+    {
+        /** {@inheritDoc} */
+        public void commandQueryReceived(final CrossfireCommandQueryEvent evt)
+        {
+            synchronized (semaphoreDrawing)
+            {
+                setStatus(Status.QUERY);
+                windowRenderer.openDialog(queryDialog);
+                queryDialog.setHideInput((evt.getQueryType()&CrossfireCommandQueryEvent.HIDEINPUT) != 0);
+
+                currentQueryDialogIsNamePrompt = evt.getPrompt().startsWith("What is your name?");
+                if (currentQueryDialogIsNamePrompt)
+                {
+                    final String playerName = settings.getString("player_"+connection.getHostname(), "");
+                    if (playerName.length() > 0)
+                    {
+                        final GUIText textArea = queryDialog.getFirstTextArea();
+                        if (textArea != null)
+                        {
+                            textArea.setText(playerName);
+                        }
+                    }
+                }
+                else if (evt.getPrompt().startsWith("[y] to roll new stats")
+                || evt.getPrompt().startsWith("Welcome, Brave New Warrior!"))
+                {
+                    windowRenderer.setGuiState(JXCWindowRenderer.GuiState.NEWCHAR);
+                    if (openDialogByName("newchar"))
+                    {
+                        closeDialogByName("messages");
+                        closeDialogByName("status");
+                    }
+                    else
+                    {
+                        // fallback: open both message and status dialogs if this skin
+                        // does not define a login dialog
+                        openDialogByName("messages");
+                        openDialogByName("status");
+                    }
+                    openDialog(queryDialog); // raise dialog
+                }
+            }
+        }
+    };
+
+    /**
      * Create a new instance.
      *
      * @param terminateSync Object to be notified when the application
@@ -751,7 +801,7 @@ public class JXCWindow extends JFrame implements CrossfireDrawextinfoListener, C
                 server.disconnect();
                 connection.setHost(null);
                 itemsManager.removeCrossfirePlayerListener(playerListener);
-                server.removeCrossfireQueryListener(this);
+                server.removeCrossfireQueryListener(crossfireQueryListener);
                 server.removeCrossfireDrawextinfoListener(this);
                 itemsManager.reset();
                 mapUpdater.reset();
@@ -767,7 +817,7 @@ public class JXCWindow extends JFrame implements CrossfireDrawextinfoListener, C
             {
                 soundManager.mute(Sounds.CHARACTER, false);
                 server.addCrossfireDrawextinfoListener(this);
-                server.addCrossfireQueryListener(this);
+                server.addCrossfireQueryListener(crossfireQueryListener);
                 itemsManager.addCrossfirePlayerListener(playerListener);
                 stats.reset();
                 SkillSet.clearNumberedSkills();
@@ -975,48 +1025,6 @@ public class JXCWindow extends JFrame implements CrossfireDrawextinfoListener, C
             }
         }
         windowRenderer.openDialog(dialog);
-    }
-
-    public void commandQueryReceived(final CrossfireCommandQueryEvent evt)
-    {
-        synchronized (semaphoreDrawing)
-        {
-            setStatus(Status.QUERY);
-            windowRenderer.openDialog(queryDialog);
-            queryDialog.setHideInput((evt.getQueryType()&CrossfireCommandQueryEvent.HIDEINPUT) != 0);
-
-            currentQueryDialogIsNamePrompt = evt.getPrompt().startsWith("What is your name?");
-            if (currentQueryDialogIsNamePrompt)
-            {
-                final String playerName = settings.getString("player_"+connection.getHostname(), "");
-                if (playerName.length() > 0)
-                {
-                    final GUIText textArea = queryDialog.getFirstTextArea();
-                    if (textArea != null)
-                    {
-                        textArea.setText(playerName);
-                    }
-                }
-            }
-            else if (evt.getPrompt().startsWith("[y] to roll new stats")
-            || evt.getPrompt().startsWith("Welcome, Brave New Warrior!"))
-            {
-                windowRenderer.setGuiState(JXCWindowRenderer.GuiState.NEWCHAR);
-                if (openDialogByName("newchar"))
-                {
-                    closeDialogByName("messages");
-                    closeDialogByName("status");
-                }
-                else
-                {
-                    // fallback: open both message and status dialogs if this skin
-                    // does not define a login dialog
-                    openDialogByName("messages");
-                    openDialogByName("status");
-                }
-                openDialog(queryDialog); // raise dialog
-            }
-        }
     }
 
     private void showGUIStart()
