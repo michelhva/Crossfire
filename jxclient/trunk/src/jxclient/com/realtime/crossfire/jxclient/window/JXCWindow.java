@@ -102,16 +102,12 @@ public class JXCWindow extends JFrame
     /** TODO: Remove when more options are implemented in the start screen gui. */
     private static final boolean DISABLE_START_GUI = true;
 
-    public static final int GUI_START      = 0;
-    public static final int GUI_METASERVER = 1;
-    public static final int GUI_MAIN       = 2;
-
     /**
      * The connection state listeners to notify.
      */
     private final List<ConnectionStateListener> connectionStateListeners = new ArrayList<ConnectionStateListener>();
 
-    private int guiId = -1;
+    private GuiState guiState = null;
 
     /**
      * Terminate the application if set.
@@ -372,7 +368,7 @@ public class JXCWindow extends JFrame
         public void connectionLost()
         {
             setStatus(Status.UNCONNECTED);
-            changeGUI(GUI_METASERVER);
+            changeGUI(GuiState.METASERVER);
         }
     };
 
@@ -869,16 +865,16 @@ public class JXCWindow extends JFrame
         }
     }
 
-    public void changeGUI(final int guiId)
+    public void changeGUI(final GuiState guiState)
     {
         synchronized (semaphoreChangeGui)
         {
-            if (this.guiId == guiId)
+            if (this.guiState == guiState)
             {
                 return;
             }
 
-            if (this.guiId == GUI_MAIN)
+            if (this.guiState == GuiState.MAIN)
             {
                 connection.disconnect();
                 itemsManager.removeCrossfirePlayerListener(playerListener);
@@ -890,9 +886,9 @@ public class JXCWindow extends JFrame
                 }
             }
 
-            this.guiId = guiId;
+            this.guiState = guiState;
 
-            if (this.guiId == GUI_MAIN)
+            if (this.guiState == GuiState.MAIN)
             {
                 soundManager.mute(Sounds.CHARACTER, false);
                 itemsManager.addCrossfirePlayerListener(playerListener);
@@ -922,9 +918,9 @@ public class JXCWindow extends JFrame
             windowRenderer.closeDialog(queryDialog);
             windowRenderer.closeDialog(skin.getDialogBook(1));
 
-            switch (guiId)
+            switch (guiState)
             {
-            case GUI_START:
+            case START:
                 soundManager.muteMusic(true);
                 soundManager.mute(Sounds.CHARACTER, true);
                 windowRenderer.setGuiState(JXCWindowRenderer.GuiState.START);
@@ -938,7 +934,7 @@ public class JXCWindow extends JFrame
                 }
                 break;
 
-            case GUI_METASERVER:
+            case METASERVER:
                 soundManager.muteMusic(true);
                 soundManager.mute(Sounds.CHARACTER, true);
                 windowRenderer.setGuiState(JXCWindowRenderer.GuiState.META);
@@ -956,7 +952,7 @@ public class JXCWindow extends JFrame
                 }
                 break;
 
-            case GUI_MAIN:
+            case MAIN:
                 soundManager.muteMusic(false);
                 windowRenderer.setGuiState(JXCWindowRenderer.GuiState.LOGIN);
                 showGUIMain();
@@ -997,7 +993,7 @@ public class JXCWindow extends JFrame
         }
         else
         {
-            changeGUI(DISABLE_START_GUI ? GUI_METASERVER : GUI_START);
+            changeGUI(DISABLE_START_GUI ? GuiState.METASERVER : GuiState.START);
         }
         timer.start();
     }
@@ -1019,12 +1015,12 @@ public class JXCWindow extends JFrame
     {
         settings.putString("server", serverInfo);
         connection.setHost(serverInfo);
-        changeGUI(GUI_MAIN);
+        changeGUI(GuiState.MAIN);
     }
 
     public void disconnect()
     {
-        changeGUI(GUI_METASERVER);
+        changeGUI(GuiState.METASERVER);
     }
 
     private void showGUIStart()

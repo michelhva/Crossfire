@@ -19,6 +19,7 @@
 //
 package com.realtime.crossfire.jxclient.gui.commands;
 
+import com.realtime.crossfire.jxclient.window.GuiState;
 import com.realtime.crossfire.jxclient.window.JXCWindow;
 
 /**
@@ -50,6 +51,6 @@ public class StartCommand implements GUICommand
     /** {@inheritDoc} */
     public void execute()
     {
-        window.changeGUI(JXCWindow.GUI_START);
+        window.changeGUI(GuiState.START);
     }
 }
