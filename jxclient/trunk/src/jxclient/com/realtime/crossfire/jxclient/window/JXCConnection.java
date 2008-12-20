@@ -1,10 +1,10 @@
 package com.realtime.crossfire.jxclient.window;
 
+import com.realtime.crossfire.jxclient.server.ConnectionListener;
+import com.realtime.crossfire.jxclient.server.CrossfireDrawextinfoListener;
+import com.realtime.crossfire.jxclient.server.CrossfireQueryListener;
 import com.realtime.crossfire.jxclient.server.CrossfireServerConnection;
 import com.realtime.crossfire.jxclient.server.Pickup;
-import com.realtime.crossfire.jxclient.server.ConnectionListener;
-import com.realtime.crossfire.jxclient.server.CrossfireQueryListener;
-import com.realtime.crossfire.jxclient.server.CrossfireDrawextinfoListener;
 import com.realtime.crossfire.jxclient.settings.Settings;
 import com.realtime.crossfire.jxclient.util.NumberParser;
 import java.awt.Frame;
