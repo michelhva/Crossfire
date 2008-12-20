@@ -17,40 +17,17 @@
 //
 // JXClient is (C)2005 by Yann Chachkoff.
 //
-package com.realtime.crossfire.jxclient.gui.commands;
-
-import com.realtime.crossfire.jxclient.window.GuiState;
-import com.realtime.crossfire.jxclient.window.JXCWindow;
+package com.realtime.crossfire.jxclient.window;
 
 /**
- * A {@link GUICommand} which shows the server selection screen.
+ * Possible gui states.
  * @author Andreas Kirschbaum
  */
-public class MetaCommand implements GUICommand
+public enum GuiState
 {
-    /**
-     * The main window.
-     */
-    private final JXCWindow window;
+    START,
 
-    /**
-     * Creates a new instance.
-     * @param window the mainwindow
-     */
-    public MetaCommand(final JXCWindow window)
-    {
-        this.window = window;
-    }
+    METASERVER,
 
-    /** {@inheritDoc} */
-    public boolean canExecute()
-    {
-        return true;
-    }
-
-    /** {@inheritDoc} */
-    public void execute()
-    {
-        window.changeGUI(GuiState.METASERVER);
-    }
+    MAIN;
 }
