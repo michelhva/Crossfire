@@ -94,7 +94,7 @@ import javax.swing.Timer;
  * @author Andreas Kirschbaum
  * @since 1.0
  */
-public class JXCWindow extends JFrame implements CrossfireDrawextinfoListener
+public class JXCWindow extends JFrame
 {
     /** The serial version UID. */
     private static final long serialVersionUID = 1;
@@ -554,6 +554,88 @@ public class JXCWindow extends JFrame implements CrossfireDrawextinfoListener
     };
 
     /**
+     * The {@link CrossfireDrawextinfoListener} attached to {@link #server}.
+     */
+    private final CrossfireDrawextinfoListener crossfireDrawextinfoListener = new CrossfireDrawextinfoListener()
+    {
+        /** {@inheritDoc} */
+        public void commandDrawextinfoReceived(final CrossfireCommandDrawextinfoEvent evt)
+        {
+            String message = evt.getMessage();
+
+            final Gui dialog;
+            switch (evt.getType())
+            {
+            case MessageTypes.MSG_TYPE_BOOK:
+                dialog = skin.getDialogBook(1);
+                final GUIOneLineLabel title = dialog.getDialogTitle();
+                if (title != null)
+                {
+                    final String[] tmp = message.split("\n", 2);
+                    title.setText(tmp[0]);
+                    message = tmp.length >= 2 ? tmp[1] : "";
+                }
+                break;
+
+            case MessageTypes.MSG_TYPE_CARD:
+            case MessageTypes.MSG_TYPE_PAPER:
+            case MessageTypes.MSG_TYPE_SIGN:
+            case MessageTypes.MSG_TYPE_MONUMENT:
+            case MessageTypes.MSG_TYPE_DIALOG:
+                dialog = null;
+                break;
+
+            case MessageTypes.MSG_TYPE_MOTD:
+                /*
+                 * We do not display a MOTD dialog, because it interferes with the
+                 * query dialog that gets displayed just after it.
+                 */
+                dialog = null;
+                break;
+
+            case MessageTypes.MSG_TYPE_ADMIN:
+            case MessageTypes.MSG_TYPE_SHOP:
+            case MessageTypes.MSG_TYPE_COMMAND:
+            case MessageTypes.MSG_TYPE_ATTRIBUTE:
+            case MessageTypes.MSG_TYPE_SKILL:
+            case MessageTypes.MSG_TYPE_APPLY:
+            case MessageTypes.MSG_TYPE_ATTACK:
+            case MessageTypes.MSG_TYPE_COMMUNICATION:
+            case MessageTypes.MSG_TYPE_SPELL:
+            case MessageTypes.MSG_TYPE_ITEM:
+            case MessageTypes.MSG_TYPE_MISC:
+            case MessageTypes.MSG_TYPE_VICTIM:
+                dialog = null;
+                break;
+
+            default:
+                dialog = null;
+                break;
+            }
+
+            if (dialog == null)
+            {
+                return;
+            }
+
+            final AbstractLabel label = dialog.getFirstLabel();
+            if (label != null)
+            {
+                label.setText(message);
+            }
+            else
+            {
+                final GUILabelLog log = dialog.getFirstLabelLog();
+                if (log != null)
+                {
+                    log.updateText(message);
+                }
+            }
+            windowRenderer.openDialog(dialog);
+        }
+    };
+
+    /**
      * Create a new instance.
      *
      * @param terminateSync Object to be notified when the application
@@ -802,7 +884,7 @@ public class JXCWindow extends JFrame implements CrossfireDrawextinfoListener
                 connection.setHost(null);
                 itemsManager.removeCrossfirePlayerListener(playerListener);
                 server.removeCrossfireQueryListener(crossfireQueryListener);
-                server.removeCrossfireDrawextinfoListener(this);
+                server.removeCrossfireDrawextinfoListener(crossfireDrawextinfoListener);
                 itemsManager.reset();
                 mapUpdater.reset();
                 for (final ConnectionStateListener listener : connectionStateListeners)
@@ -816,7 +898,7 @@ public class JXCWindow extends JFrame implements CrossfireDrawextinfoListener
             if (this.guiId == GUI_MAIN)
             {
                 soundManager.mute(Sounds.CHARACTER, false);
-                server.addCrossfireDrawextinfoListener(this);
+                server.addCrossfireDrawextinfoListener(crossfireDrawextinfoListener);
                 server.addCrossfireQueryListener(crossfireQueryListener);
                 itemsManager.addCrossfirePlayerListener(playerListener);
                 stats.reset();
@@ -950,81 +1032,6 @@ public class JXCWindow extends JFrame implements CrossfireDrawextinfoListener
     public void disconnect()
     {
         changeGUI(GUI_METASERVER);
-    }
-
-    public void commandDrawextinfoReceived(final CrossfireCommandDrawextinfoEvent evt)
-    {
-        String message = evt.getMessage();
-
-        final Gui dialog;
-        switch (evt.getType())
-        {
-        case MessageTypes.MSG_TYPE_BOOK:
-            dialog = skin.getDialogBook(1);
-            final GUIOneLineLabel title = dialog.getDialogTitle();
-            if (title != null)
-            {
-                final String[] tmp = message.split("\n", 2);
-                title.setText(tmp[0]);
-                message = tmp.length >= 2 ? tmp[1] : "";
-            }
-            break;
-
-        case MessageTypes.MSG_TYPE_CARD:
-        case MessageTypes.MSG_TYPE_PAPER:
-        case MessageTypes.MSG_TYPE_SIGN:
-        case MessageTypes.MSG_TYPE_MONUMENT:
-        case MessageTypes.MSG_TYPE_DIALOG:
-            dialog = null;
-            break;
-
-        case MessageTypes.MSG_TYPE_MOTD:
-            /*
-             * We do not display a MOTD dialog, because it interferes with the
-             * query dialog that gets displayed just after it.
-             */
-            dialog = null;
-            break;
-
-        case MessageTypes.MSG_TYPE_ADMIN:
-        case MessageTypes.MSG_TYPE_SHOP:
-        case MessageTypes.MSG_TYPE_COMMAND:
-        case MessageTypes.MSG_TYPE_ATTRIBUTE:
-        case MessageTypes.MSG_TYPE_SKILL:
-        case MessageTypes.MSG_TYPE_APPLY:
-        case MessageTypes.MSG_TYPE_ATTACK:
-        case MessageTypes.MSG_TYPE_COMMUNICATION:
-        case MessageTypes.MSG_TYPE_SPELL:
-        case MessageTypes.MSG_TYPE_ITEM:
-        case MessageTypes.MSG_TYPE_MISC:
-        case MessageTypes.MSG_TYPE_VICTIM:
-            dialog = null;
-            break;
-
-        default:
-            dialog = null;
-            break;
-        }
-
-        if (dialog == null)
-        {
-            return;
-        }
-
-        final AbstractLabel label = dialog.getFirstLabel();
-        if (label != null)
-        {
-            label.setText(message);
-        }
-        else
-        {
-            final GUILabelLog log = dialog.getFirstLabelLog();
-            if (log != null)
-            {
-                log.updateText(message);
-            }
-        }
-        windowRenderer.openDialog(dialog);
     }
 
     private void showGUIStart()
