@@ -1,5 +1,7 @@
 2008-12-21  Andreas Kirschbaum
 
+	* Fix display issues with fog-of-war tiles in minimap.
+
 	* Remove memory-sensitve cache for faces. Wastes a few MB of RAM
 	but removes reappearing "?" faces.
 
