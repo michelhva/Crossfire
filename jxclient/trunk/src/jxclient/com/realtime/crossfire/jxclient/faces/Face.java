@@ -19,7 +19,6 @@
 //
 package com.realtime.crossfire.jxclient.faces;
 
-import java.lang.ref.SoftReference;
 import javax.swing.ImageIcon;
 
 /**
@@ -66,7 +65,7 @@ public class Face
     /**
      * The images for this face. Set to <code>null</code> if unknown.
      */
-    private SoftReference<FaceImages> faceImages = null;
+    private FaceImages faceImages = null;
 
     /**
      * Creates a new instance.
@@ -87,7 +86,7 @@ public class Face
      */
     public void setFaceImages(final FaceImages faceImages)
     {
-        this.faceImages = new SoftReference<FaceImages>(faceImages);
+        this.faceImages = faceImages;
         final ImageIcon imageIcon = faceImages.getOriginalImageIcon();
         final int width = imageIcon.getIconWidth();
         final int height = imageIcon.getIconHeight();
@@ -111,17 +110,7 @@ public class Face
      */
     public FaceImages getFaceImages()
     {
-        if (faceImages != null)
-        {
-            final FaceImages result = faceImages.get();
-            if (result != null)
-            {
-                return result;
-            }
-
-            faceImages = null;
-        }
-        return null;
+        return faceImages;
     }
 
     /**

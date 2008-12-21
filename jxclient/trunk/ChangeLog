@@ -1,5 +1,8 @@
 2008-12-21  Andreas Kirschbaum
 
+	* Remove memory-sensitve cache for faces. Wastes a few MB of RAM
+	but removes reappearing "?" faces.
+
 	* Add default entries to server list to prevent an empty list at
 	first start.
 
