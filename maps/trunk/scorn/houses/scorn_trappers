@@ -9,7 +9,7 @@ enter_x 8
 enter_y 8
 msg
 Created:  2007-05-27 Nicolas Weeger
-Modified: 2008-09-28 Rick Tanner
+Modified: 2008-12-21 Rick Tanner
 endmsg
 maplore
 @quest Lursendis
@@ -51,6 +51,9 @@ arch rough_wall_2_1_1
 y 5
 end
 arch whiteslate
+y 6
+end
+arch swall_1_4_half
 y 6
 end
 arch rough_wall_2_1_1
@@ -104,7 +107,7 @@ arch whiteslate
 x 1
 y 6
 end
-arch swall_1_4
+arch swall_2_1_2
 x 1
 y 6
 end
@@ -237,7 +240,7 @@ arch whiteslate
 x 3
 y 4
 end
-arch swall_1_3
+arch swall_2_1_2
 x 3
 y 4
 end
@@ -249,7 +252,7 @@ arch whiteslate
 x 3
 y 6
 end
-arch swall_1_3
+arch swall_2_1_2
 x 3
 y 6
 end
@@ -312,6 +315,10 @@ arch whiteslate
 x 4
 y 4
 end
+arch swall_1_3_half
+x 4
+y 4
+end
 arch rough_wall_1_4
 x 4
 y 4
@@ -326,6 +333,10 @@ y 5
 connected 1
 end
 arch whiteslate
+x 4
+y 6
+end
+arch swall_1_3_half
 x 4
 y 6
 end
@@ -473,10 +484,6 @@ x 6
 y 2
 end
 arch whiteslate
-x 6
-y 3
-end
-arch swall_1_2
 x 6
 y 3
 end
