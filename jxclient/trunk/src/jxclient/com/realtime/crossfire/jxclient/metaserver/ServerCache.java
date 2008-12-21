@@ -40,6 +40,11 @@ import java.util.Map;
 public class ServerCache
 {
     /**
+     * The default entry for the "localhost" server.
+     */
+    public static final String DEFAULT_ENTRY_LOCALHOST = "0|localhost|0|--|Local server. Start server before you try to connect.|0|0|0|||";
+
+    /**
      * The cached entries. Maps key (see {@link #makeKey(MetaserverEntry)}) to
      * {@link Info} instance for the metaserver entry.
      */
@@ -166,14 +171,11 @@ public class ServerCache
                                 System.err.println(file+":"+lnr.getLineNumber()+": syntax error");
                                 continue;
                             }
-                            final MetaserverEntry metaserverEntry = MetaserverEntryParser.parseEntry(tmp[1]);
-                            if (metaserverEntry == null)
+                            if(!addEntry(tmp[1], timestamp))
                             {
                                 System.err.println(file+":"+lnr.getLineNumber()+": syntax error");
                                 continue;
                             }
-
-                            entries.put(makeKey(metaserverEntry), new Info(metaserverEntry, timestamp));
                         }
                     }
                     finally
@@ -193,12 +195,34 @@ public class ServerCache
         }
         catch (final FileNotFoundException ex)
         {
-            // ignore
+            // add default entries if the cache files does not exist
+            final long now = System.currentTimeMillis()-1;
+            addEntry(DEFAULT_ENTRY_LOCALHOST, now);
+            addEntry("0|crossfire.metalforge.net|0|--|Latest SVN 1.x branch.<br>Eden Prairie, MN US<br>4.65Mb link<br><a href=\"http://crossfire.real-time.com\">crossfire.real-time.com</a>|0|0|0|Standard|Standard|Standard", now);
+            addEntry("0|invidious.meflin.net|0|--|<b>Welcome, we are testing 2.0 come on in the water is fine.</b>|0|0|0|Standard|Standard|Standard + Testing", now);
         }
         catch (final IOException ex)
         {
             System.err.println(file+": "+ex.getMessage());
         }
+    }
+
+    /**
+     * Parses a metserver entry line and adds the result to {@link #entries}.
+     * @param metaserverEntryLine the metaserver entry line to parse
+     * @param timestamp the query timestamp
+     * @return whether the line was parsed correctly
+     */
+    private boolean addEntry(final String metaserverEntryLine, final long timestamp)
+    {
+        final MetaserverEntry metaserverEntry = MetaserverEntryParser.parseEntry(metaserverEntryLine);
+        if (metaserverEntry == null)
+        {
+            return false;
+        }
+
+        entries.put(makeKey(metaserverEntry), new Info(metaserverEntry, timestamp));
+        return true;
     }
 
     /**
