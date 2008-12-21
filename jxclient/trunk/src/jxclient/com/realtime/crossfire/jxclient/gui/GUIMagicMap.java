@@ -270,6 +270,8 @@ public class GUIMagicMap extends GUIElement
                 {
                     g.setColor(Color.BLACK);
                     g.fillRect(0, 0, getWidth(), getHeight());
+                    g.setColor(GUIMap.FOG_OF_WAR_COLOR);
+                    g.fillRect(0, 0, getWidth(), getHeight());
                     markPlayer(g);
                 }
                 finally
