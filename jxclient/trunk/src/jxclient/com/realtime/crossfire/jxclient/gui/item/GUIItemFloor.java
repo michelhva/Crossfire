@@ -306,4 +306,18 @@ public class GUIItemFloor extends GUIItemItem
          */
         return index > 0 ? facesManager.getNextGroupFace() : facesManager.getPrevGroupFace();
     }
+
+    /** {@inheritDoc} */
+    @Override
+    public void setSelected(final boolean selected)
+    {
+        // ignore: floor objects are never selected
+    }
+
+    /** {@inheritDoc} */
+    @Override
+    protected boolean isSelected()
+    {
+        return false;
+    }
 }

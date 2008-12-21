@@ -79,6 +79,11 @@ public class GUIItemInventory extends GUIItemItem
     private int index = -1;
 
     /**
+     * If set, paint the element in "selected" state.
+     */
+    private boolean selected = false;
+
+    /**
      * The {@link LocationListener} used to detect items added to or removed
      * from this inventory slot.
      */
@@ -195,6 +200,26 @@ public class GUIItemInventory extends GUIItemItem
         }
 
         super.button2Clicked(window);
+    }
+
+    /** {@inheritDoc} */
+    @Override
+    public void setSelected(final boolean selected)
+    {
+        if (this.selected == selected)
+        {
+            return;
+        }
+
+        this.selected = selected;
+        setChanged();
+    }
+
+    /** {@inheritDoc} */
+    @Override
+    protected boolean isSelected()
+    {
+        return selected || isActive();
     }
 
     /* {@inheritDoc} */
