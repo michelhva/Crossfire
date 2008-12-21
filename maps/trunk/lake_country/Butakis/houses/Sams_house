@@ -8,7 +8,7 @@ enter_x 11
 enter_y 16
 msg
 Created:  1995-05-03 Kundi, Xue (xkd@soda.berkeley.edu)
-Modified: 2008-10-29 Rick Tanner
+Modified: 2008-12-21 Rick Tanner
 endmsg
 end
 arch woodfloor
@@ -539,7 +539,11 @@ arch woodfloor
 x 4
 y 13
 end
-arch wwall_2_2_4
+arch swall_1_2_half
+x 4
+y 13
+end
+arch wwall_1_3
 x 4
 y 13
 end
@@ -697,7 +701,7 @@ arch woodfloor
 x 6
 y 3
 end
-arch wwall_3_3
+arch wwall_1_3
 x 6
 y 3
 end
@@ -741,7 +745,7 @@ arch woodfloor
 x 6
 y 8
 end
-arch wwall_2_2_2
+arch wwall_1_1
 x 6
 y 8
 end
@@ -905,7 +909,11 @@ arch woodfloor
 x 7
 y 13
 end
-arch wwall_2_2_1
+arch swall_1_2_half
+x 7
+y 13
+end
+arch wwall_1_4
 x 7
 y 13
 end
@@ -963,7 +971,7 @@ arch woodfloor
 x 8
 y 3
 end
-arch wwall_3_1
+arch wwall_2_2_1
 x 8
 y 3
 end
@@ -1283,7 +1291,7 @@ arch woodfloor
 x 10
 y 10
 end
-arch wwall_3_1
+arch wwall_2_2_4
 x 10
 y 10
 end
@@ -1937,7 +1945,7 @@ arch woodfloor
 x 15
 y 13
 end
-arch wwall_4
+arch wwall_3_1
 x 15
 y 13
 end
@@ -1954,7 +1962,7 @@ arch woodfloor
 x 15
 y 15
 end
-arch wwall_2_2_1
+arch wwall_1_4
 x 15
 y 15
 end
