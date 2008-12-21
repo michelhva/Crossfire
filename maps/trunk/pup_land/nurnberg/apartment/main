@@ -8,7 +8,7 @@ enter_x 6
 enter_y 1
 msg
 Created:  2000-11-19 Andreas Vogl (red.blaze@gmx.net)
-Modified: 2008-12-04 Rick Tanner
+Modified: 2008-12-21 Rick Tanner
 endmsg
 end
 arch blocked
@@ -121,7 +121,7 @@ y 2
 unique 1
 end
 arch stair_up_2
-slaying upstairs
+slaying /pup_land/nurnberg/apartment/upstairs
 hp 3
 sp 2
 x 1
@@ -1125,7 +1125,7 @@ y 2
 unique 1
 end
 arch stair_down_2
-slaying cave
+slaying /pup_land/nurnberg/apartment/cave
 hp 10
 sp 1
 x 11
