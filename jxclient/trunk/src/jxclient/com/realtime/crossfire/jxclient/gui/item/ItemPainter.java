@@ -210,7 +210,7 @@ public class ItemPainter
         paintImage(g, unpaidImage, item.isUnpaid());
         if (w <= h)
         {
-            if (item.getNrOf() > 0)
+            if (item.getNrOf() > 1)
             {
                 g.setFont(font);
                 g.setColor(nrofColor);
