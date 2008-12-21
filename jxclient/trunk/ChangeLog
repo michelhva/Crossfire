@@ -1,3 +1,8 @@
+2008-12-21  Andreas Kirschbaum
+
+	* Do not block the GUI while metaserver queries. Regularly update server
+	information while server selection GUI is active.
+
 2008-12-19  Andreas Kirschbaum
 
 	* Improve scaling algorithmn for minimap contents.
