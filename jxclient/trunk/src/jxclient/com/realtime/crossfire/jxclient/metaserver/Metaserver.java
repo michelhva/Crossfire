@@ -26,10 +26,6 @@ import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.net.HttpURLConnection;
 import java.net.URL;
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.HashMap;
-import java.util.List;
 import java.util.Map;
 import java.util.Properties;
 
@@ -55,27 +51,15 @@ public class Metaserver
      */
     private static final String METASERVER_URL = "http://crossfire.real-time.com/metaserver2/meta_client.php";
 
-    private final List<MetaserverEntry> metalist = new ArrayList<MetaserverEntry>();
-
-    /**
-     * Object used for synchronization.
-     */
-    private final Object sync = new Object();
-
     /**
      * The cached metaserver entries.
      */
     private final ServerCache serverCache;
 
     /**
-     * All registered metaserver listeners.
+     * The {@link MetaserverModel} instance to update.
      */
-    private final List<MetaserverListener> metaserverListeners = new ArrayList<MetaserverListener>();
-
-    /**
-     * All registered metaserver entry listeners. Maps entry index to list of listeners.
-     */
-    private final Map<Integer, List<MetaserverEntryListener>> metaserverEntryListeners = new HashMap<Integer, List<MetaserverEntryListener>>();
+    private final MetaserverModel metaserverModel;
 
     /**
      * Do not query th metaserver before time time has been reached. This is to
@@ -88,116 +72,40 @@ public class Metaserver
      * Create a new instance.
      *
      * @param metaserverCacheFile The metaserver cache file.
+     * @param metaserverModel the metaserver model instance to update
      */
-    public Metaserver(final File metaserverCacheFile)
+    public Metaserver(final File metaserverCacheFile, final MetaserverModel metaserverModel)
     {
         serverCache = new ServerCache(metaserverCacheFile);
-    }
-
-    /**
-     * Return an metaserver entry by index.
-     *
-     * @param index The index.
-     *
-     * @return The metaserver entry, or <code>null</code> if the index is
-     * invalid.
-     */
-    public MetaserverEntry getEntry(final int index)
-    {
-        try
-        {
-            synchronized (sync)
-            {
-                return metalist.get(index);
-            }
-        }
-        catch (final IndexOutOfBoundsException ex)
-        {
-            return null;
-        }
-    }
-
-    /**
-     * Returns the index of an entry by server name.
-     * @param serverName the server name
-     * @return the index, or <code>-1</code> if not found
-     */
-    public int getServerIndex(final String serverName)
-    {
-        synchronized (sync)
-        {
-            int index = 0;
-            for (final MetaserverEntry metaserverEntry : metalist)
-            {
-                if (metaserverEntry.getHostname().equals(serverName))
-                {
-                    return index;
-                }
-
-                index++;
-            }
-        }
-
-        return -1;
-    }
-
-    /**
-     * Return the number of metaserver entries.
-     *
-     * @return The number of metaserver entries.
-     */
-    public int size()
-    {
-        synchronized (sync)
-        {
-            return metalist.size();
-        }
+        this.metaserverModel = metaserverModel;
     }
 
     public void query()
     {
-        final int metalistSize;
-        synchronized (sync)
+        if (nextQuery > System.currentTimeMillis())
         {
-            if (nextQuery > System.currentTimeMillis())
-            {
-                return;
-            }
-
-            metalistSize = metalist.size();
-            updateMetalist();
-            nextQuery = System.currentTimeMillis()+MIN_QUERY_INTERVAL*1000;
+            return;
         }
 
-        for (final MetaserverListener metaserverListener : metaserverListeners)
-        {
-            metaserverListener.numberOfEntriesChanged();
-        }
-
-        for (int i = 0, imax = Math.max(metalistSize, metalist.size()); i < imax; i++)
-        {
-            for (final MetaserverEntryListener metaserverEntryListener : getMetaserverEntryListeners(i))
-            {
-                metaserverEntryListener.entryChanged();
-            }
-        }
+        updateMetalist();
+        nextQuery = System.currentTimeMillis()+MIN_QUERY_INTERVAL*1000;
 
         serverCache.save();
     }
 
     /**
-     * Update the contents of {@link #metalist}.
+     * Update the contents of {@link #metaserverModel}.
      */
     private void updateMetalist()
     {
-        metalist.clear();
+        metaserverModel.begin();
 
         serverCache.expire(EXPIRE_INTERVAL*1000);
         final Map<String, MetaserverEntry> oldEntries = serverCache.getAll();
 
         final MetaserverEntry localhostMetaserverEntry = MetaserverEntryParser.parseEntry("0|localhost|0|--|Local server. Start server before you try to connect.|0|0|0|||");
         assert localhostMetaserverEntry != null;
-        metalist.add(localhostMetaserverEntry);
+        metaserverModel.add(localhostMetaserverEntry);
         oldEntries.remove(ServerCache.makeKey(localhostMetaserverEntry));
         serverCache.put(localhostMetaserverEntry);
 
@@ -237,7 +145,7 @@ public class Metaserver
 
                                 final MetaserverEntry metaserverEntry = metaserverEntryParser.parseLine(line);
                                 if (metaserverEntry != null) {
-                                    metalist.add(metaserverEntry);
+                                    metaserverModel.add(metaserverEntry);
                                     oldEntries.remove(ServerCache.makeKey(metaserverEntry));
                                     serverCache.put(metaserverEntry);
                                 }
@@ -259,75 +167,11 @@ public class Metaserver
         }
 
         // add previously known entries that are not anymore present
-        metalist.addAll(oldEntries.values());
-
-        Collections.sort(metalist);
-    }
-
-    /**
-     * Add a metaserver listener.
-     *
-     * @param listener The listener to add.
-     */
-    public void addMetaserverListener(final MetaserverListener listener)
-    {
-        metaserverListeners.add(listener);
-    }
-
-    /**
-     * Remove a metaserver listener.
-     *
-     * @param listener The listener to add.
-     */
-    public void removeMetaserverListener(final MetaserverListener listener)
-    {
-        metaserverListeners.remove(listener);
-    }
-
-    /**
-     * Add a metaserver entry listener for one entry.
-     *
-     * @param index The entry index to monitor.
-     *
-     * @param listener The listener to add.
-     */
-    public void addMetaserverEntryListener(final int index, final MetaserverEntryListener listener)
-    {
-        getMetaserverEntryListeners(index).add(listener);
-    }
-
-    /**
-     * Remove a metaserver entry listener for one entry.
-     *
-     * @param index The entry index to monitor.
-     *
-     * @param listener The listener to add.
-     */
-    public void removeMetaserverEntryListener(final int index, final MetaserverEntryListener listener)
-    {
-        getMetaserverEntryListeners(index).remove(listener);
-    }
-
-    /**
-     * Return the metaserver entry listeners for one entry index.
-     *
-     * @param index The entry index.
-     *
-     * @return The listsners list.
-     */
-    private List<MetaserverEntryListener> getMetaserverEntryListeners(final int index)
-    {
-        synchronized (metaserverEntryListeners)
-        {        
-            final List<MetaserverEntryListener> existingListeners = metaserverEntryListeners.get(index);
-            if (existingListeners != null)
-            {
-                return existingListeners;
-            }
-
-            final List<MetaserverEntryListener> newListeners = new ArrayList<MetaserverEntryListener>();
-            metaserverEntryListeners.put(index, newListeners);
-            return newListeners;
+        for (final MetaserverEntry metaserverEntry : oldEntries.values())
+        {
+            metaserverModel.add(metaserverEntry);
         }
+
+        metaserverModel.commit();
     }
 }

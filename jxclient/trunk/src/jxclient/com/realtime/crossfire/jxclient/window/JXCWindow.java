@@ -39,6 +39,7 @@ import com.realtime.crossfire.jxclient.items.PlayerListener;
 import com.realtime.crossfire.jxclient.main.Options;
 import com.realtime.crossfire.jxclient.mapupdater.CfMapUpdater;
 import com.realtime.crossfire.jxclient.metaserver.Metaserver;
+import com.realtime.crossfire.jxclient.metaserver.MetaserverModel;
 import com.realtime.crossfire.jxclient.server.CommandQueue;
 import com.realtime.crossfire.jxclient.server.ConnectionListener;
 import com.realtime.crossfire.jxclient.server.CrossfireCommandDrawextinfoEvent;
@@ -240,9 +241,14 @@ public class JXCWindow extends JFrame
     private final CurrentSpellManager currentSpellManager = new CurrentSpellManager();
 
     /**
+     * The metaserver model instance for this window.
+     */
+    private final MetaserverModel metaserverModel = new MetaserverModel();
+
+    /**
      * The metaserver instance for this window.
      */
-    private final Metaserver metaserver = new Metaserver(Filenames.getMetaserverCacheFile());
+    private final Metaserver metaserver = new Metaserver(Filenames.getMetaserverCacheFile(), metaserverModel);
 
     /**
      * The mouse tracker.
@@ -1104,7 +1110,7 @@ public class JXCWindow extends JFrame
             // fallback: built-in resource
             newSkin = new JXCSkinClassLoader(itemsManager, spellsManager, facesManager, stats, mapUpdater, "com/realtime/crossfire/jxclient/skins/"+skinName, defaultKeyBindings);
         }
-        newSkin.load(server, this, mouseTracker, metaserver, commandQueue, resolution, optionManager, experienceTable, shortcuts, commands, currentSpellManager);
+        newSkin.load(server, this, mouseTracker, metaserverModel, commandQueue, resolution, optionManager, experienceTable, shortcuts, commands, currentSpellManager);
         return newSkin;
     }
 
