@@ -104,7 +104,7 @@ public class Metaserver
         serverCache.expire(EXPIRE_INTERVAL*1000);
         final Map<String, MetaserverEntry> oldEntries = serverCache.getAll();
 
-        final MetaserverEntry localhostMetaserverEntry = MetaserverEntryParser.parseEntry("0|localhost|0|--|Local server. Start server before you try to connect.|0|0|0|||");
+        final MetaserverEntry localhostMetaserverEntry = MetaserverEntryParser.parseEntry(ServerCache.DEFAULT_ENTRY_LOCALHOST);
         assert localhostMetaserverEntry != null;
         metaserverModel.add(localhostMetaserverEntry);
         oldEntries.remove(ServerCache.makeKey(localhostMetaserverEntry));
