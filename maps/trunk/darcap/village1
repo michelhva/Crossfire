@@ -8,7 +8,7 @@ enter_x 2
 enter_y 27
 msg
 Created:  1994-10-19 Cater & Wade (john_cater@yahoo.com)
-Modified: 2008-09-14 Rick Tanner
+Modified: 2008-12-21 Rick Tanner
 endmsg
 end
 arch small_stones
@@ -4886,6 +4886,10 @@ arch small_stones
 x 19
 y 27
 end
+arch wall_1_2
+x 19
+y 27
+end
 arch earthwall
 x 19
 y 27
@@ -4899,6 +4903,10 @@ x 19
 y 28
 end
 arch small_stones
+x 19
+y 29
+end
+arch wall_1_1
 x 19
 y 29
 end
@@ -6934,7 +6942,7 @@ arch small_stones
 x 27
 y 27
 end
-arch wall_2_2_2
+arch wall_1_4
 x 27
 y 27
 end
@@ -6966,7 +6974,7 @@ arch small_stones
 x 27
 y 31
 end
-arch wall_3_2
+arch wall_2_2_1
 x 27
 y 31
 end
@@ -6990,7 +6998,7 @@ arch small_stones
 x 27
 y 34
 end
-arch wall_3_2
+arch wall_1_4
 x 27
 y 34
 end
@@ -7014,7 +7022,7 @@ arch small_stones
 x 27
 y 37
 end
-arch wall_3_2
+arch wall_1_4
 x 27
 y 37
 end
@@ -7038,7 +7046,7 @@ arch small_stones
 x 27
 y 40
 end
-arch wall_2_2_1
+arch wall_1_4
 x 27
 y 40
 end
@@ -10278,7 +10286,7 @@ arch small_stones
 x 40
 y 9
 end
-arch wall_2_2_3
+arch wall_1_3
 x 40
 y 9
 end
@@ -10302,7 +10310,7 @@ arch small_stones
 x 40
 y 12
 end
-arch wall_2_2_4
+arch wall_1_3
 x 40
 y 12
 end
