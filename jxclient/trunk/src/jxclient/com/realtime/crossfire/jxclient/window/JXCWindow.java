@@ -959,6 +959,7 @@ public class JXCWindow extends JFrame
                 break;
 
             case MAIN:
+                metaserver.disable();
                 soundManager.muteMusic(false);
                 windowRenderer.setGuiState(JXCWindowRenderer.GuiState.LOGIN);
                 showGUIMain();

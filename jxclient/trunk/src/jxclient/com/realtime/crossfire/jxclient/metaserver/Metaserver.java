@@ -52,6 +52,11 @@ public class Metaserver
     private static final String METASERVER_URL = "http://crossfire.real-time.com/metaserver2/meta_client.php";
 
     /**
+     * The {@link MetaserverProcessor} used for metaserver queries.
+     */
+    private final MetaserverProcessor metaserverProcessor = new MetaserverProcessor(this);
+
+    /**
      * The cached metaserver entries.
      */
     private final ServerCache serverCache;
@@ -60,13 +65,6 @@ public class Metaserver
      * The {@link MetaserverModel} instance to update.
      */
     private final MetaserverModel metaserverModel;
-
-    /**
-     * Do not query th metaserver before time time has been reached. This is to
-     * prevent unneccessary queries. It also prevents getting empty results
-     * from the metaserver.
-     */
-    private long nextQuery = System.currentTimeMillis();
 
     /**
      * Create a new instance.
@@ -78,25 +76,28 @@ public class Metaserver
     {
         serverCache = new ServerCache(metaserverCacheFile);
         this.metaserverModel = metaserverModel;
+        metaserverModel.begin();
+        for (final MetaserverEntry metaserverEntry : serverCache.getAll().values())
+        {
+            metaserverModel.add(metaserverEntry);
+        }
+        metaserverModel.commit();
     }
 
     public void query()
     {
-        if (nextQuery > System.currentTimeMillis())
-        {
-            return;
-        }
+        metaserverProcessor.query();
+    }
 
-        updateMetalist();
-        nextQuery = System.currentTimeMillis()+MIN_QUERY_INTERVAL*1000;
-
-        serverCache.save();
+    public void disable()
+    {
+        metaserverProcessor.disable();
     }
 
     /**
      * Update the contents of {@link #metaserverModel}.
      */
-    private void updateMetalist()
+    public void updateMetalist()
     {
         metaserverModel.begin();
 
@@ -173,5 +174,6 @@ public class Metaserver
         }
 
         metaserverModel.commit();
+        serverCache.save();
     }
 }
