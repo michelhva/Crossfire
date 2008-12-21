@@ -465,6 +465,7 @@ public class CfMapUpdater
                     map.scroll(-1, 0);
                     for (int y = 0; y < height; y++)
                     {
+                        map.clearSquare(-1, y);
                         map.clearSquare(width-1, y);
                     }
                     tx--;
@@ -475,6 +476,7 @@ public class CfMapUpdater
                     for (int y = 0; y < height; y++)
                     {
                         map.clearSquare(0, y);
+                        map.clearSquare(width, y);
                     }
                     tx++;
                 }
@@ -485,6 +487,7 @@ public class CfMapUpdater
                     map.scroll(0, -1);
                     for (int x = 0; x < width; x++)
                     {
+                        map.clearSquare(x, -1);
                         map.clearSquare(x, height-1);
                     }
                     ty--;
@@ -495,6 +498,7 @@ public class CfMapUpdater
                     for (int x = 0; x <= width; x++)
                     {
                         map.clearSquare(x, 0);
+                        map.clearSquare(x, height);
                     }
                     ty++;
                 }
