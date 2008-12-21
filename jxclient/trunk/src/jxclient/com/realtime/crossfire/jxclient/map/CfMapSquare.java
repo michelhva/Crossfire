@@ -36,6 +36,16 @@ import com.realtime.crossfire.jxclient.server.CrossfireMap2Command;
 public class CfMapSquare
 {
     /**
+     * The default darkness value for newly creates squares.
+     */
+    public static final int DEFAULT_DARKNESS = 255;
+
+    /**
+     * The default face value for newly creates squares.
+     */
+    public static final Face DEFAULT_FACE = null;
+
+    /**
      * The {@link CfMapSquareListener} instance to notify.
      */
     private final CfMapSquareListener mapSquareListener;
@@ -61,7 +71,7 @@ public class CfMapSquare
      * The darkness value of the square in the range [0..255]. 0=dark, 255=full
      * bright
      */
-    private int darkness = 255;
+    private int darkness = DEFAULT_DARKNESS;
 
     /**
      * The faces (of head-parts) of all layers as sent by the server.
@@ -129,12 +139,12 @@ public class CfMapSquare
         // need to check individual values because the server sometimes sends a
         // "clear" command for already cleared squares; without this check the
         // black square would be displayed as fog-of-war
-        if (darkness == 255)
+        if (darkness == DEFAULT_DARKNESS)
         {
             int layer;
             for (layer = 0; layer < faces.length; layer++)
             {
-                if (faces[layer] != null || heads[layer] != null)
+                if (faces[layer] != DEFAULT_FACE || heads[layer] != null)
                 {
                     break;
                 }

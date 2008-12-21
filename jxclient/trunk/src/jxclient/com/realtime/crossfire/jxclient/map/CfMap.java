@@ -125,7 +125,7 @@ public class CfMap
         {
             for (int l = 0; l < CrossfireMap2Command.NUM_LAYERS; l++)
             {
-                setFaceInternal(x, y, l, null);
+                setFaceInternal(x, y, l, CfMapSquare.DEFAULT_FACE);
             }
         }
     }
@@ -140,7 +140,7 @@ public class CfMap
     public int getDarkness(final int x, final int y)
     {
         final CfMapPatch mapPatch = getMapPatch(x, y);
-        return mapPatch != null ? mapPatch.getDarkness(ox, oy) : 0;
+        return mapPatch != null ? mapPatch.getDarkness(ox, oy) : CfMapSquare.DEFAULT_DARKNESS;
     }
 
     /**
@@ -155,10 +155,10 @@ public class CfMap
     {
         if (expandTo(x, y).resetFogOfWar(ox, oy))
         {
-            setDarkness(x, y, 255);
+            setDarkness(x, y, CfMapSquare.DEFAULT_DARKNESS);
             for (int l = 0; l < CrossfireMap2Command.NUM_LAYERS; l++)
             {
-                setFaceInternal(x, y, l, l == layer ? face : null);
+                setFaceInternal(x, y, l, l == layer ? face : CfMapSquare.DEFAULT_FACE);
             }
             dirty(x, y);
         }
@@ -268,7 +268,7 @@ public class CfMap
     public Face getFace(final int x, final int y, final int layer)
     {
         final CfMapPatch mapPatch = getMapPatch(x, y);
-        return mapPatch != null ? mapPatch.getFace(ox, oy, layer) : null;
+        return mapPatch != null ? mapPatch.getFace(ox, oy, layer) : CfMapSquare.DEFAULT_FACE;
     }
 
     /**
