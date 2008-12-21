@@ -27,7 +27,6 @@ import java.awt.event.MouseEvent;
 
 /**
  * A scroll bar gui element.
- *
  * @author Andreas Kirschbaum
  */
 public class GUIScrollBar extends ActivatableGUIElement implements ScrollableListener
@@ -68,10 +67,13 @@ public class GUIScrollBar extends ActivatableGUIElement implements ScrollableLis
      */
     private int valueSize = 1;
 
+    /**
+     * The height of the slider.
+     */
     private int sliderSize = 1;
 
     /**
-     * The scroll location; it need not within the scroll range.
+     * The scroll location; it need not be within the scroll range.
      */
     private int sliderPos = 0;
 
@@ -87,28 +89,18 @@ public class GUIScrollBar extends ActivatableGUIElement implements ScrollableLis
     private boolean scrolling = false;
 
     /**
-     * Create a new instance.
-     *
-     * @param window The <code>JXCWindow</code> this element belongs to.
-     *
-     * @param name The name of this element.
-     *
-     * @param x The x-coordinate for drawing this element to screen.
-     *
-     * @param y The y-coordinate for drawing this element to screen.
-     *
-     * @param w The width for drawing this element to screen.
-     *
-     * @param h The height for drawing this element to screen.
-     *
-     * @param proportionalSlider If set, make the slider size reflect the
-     * visible area; if unset, display the slider as a square.
-     *
-     * @param scrollable The target element to scroll.
-     *
-     * @param colorBackground The background color of the slider.
-     *
-     * @param colorForeground The foreground color of the slider.
+     * Creates a new instance.
+     * @param window the <code>JXCWindow</code> this element belongs to
+     * @param name the name of this element
+     * @param x the x-coordinate for drawing this element to screen
+     * @param y the y-coordinate for drawing this element to screen
+     * @param w the width for drawing this element to screen
+     * @param h the height for drawing this element to screen
+     * @param proportionalSlider if set, make the slider size reflect the
+     * visible area; if unset, display the slider as a square
+     * @param scrollable the target element to scroll
+     * @param colorBackground the background color of the slider
+     * @param colorForeground the foreground color of the slider
      */
     public GUIScrollBar(final JXCWindow window, final String name, final int x, final int y, final int w, final int h, final boolean proportionalSlider, final GUIScrollable2 scrollable, final Color colorBackground, final Color colorForeground)
     {
@@ -202,17 +194,20 @@ public class GUIScrollBar extends ActivatableGUIElement implements ScrollableLis
     }
 
     /**
-     * Return the current slider position in slider-coordinates.
-     *
-     * @param yPixels The y-coordinate within the gui element.
-     *
-     * @return The position in slider-coordinates.
+     * Returns the current slider position in slider-coordinates.
+     * @param yPixels the y-coordinate within the gui element
+     * @return the position in slider-coordinates
      */
     private int getSliderPos(final int yPixels)
     {
         return (int)(yPixels*(double)(valueSize-sliderSize)/(getHeight()-getSliderHeightPixels())+0.5);
     }
 
+    /**
+     * Sets the position of the slider. Invalid values are set to the nearest
+     * valid value.
+     * @param pos the slider position
+     */
     public void setPosition(final int pos)
     {
         if (pos < valueMin)
@@ -231,9 +226,8 @@ public class GUIScrollBar extends ActivatableGUIElement implements ScrollableLis
     }
 
     /**
-     * Return the height of the slider in pixels.
-     *
-     * @return The height of the slider in pixels.
+     * Returns the height of the slider in pixels.
+     * @return the height of the slider in pixels
      */
     private int getSliderHeightPixels()
     {
@@ -241,9 +235,8 @@ public class GUIScrollBar extends ActivatableGUIElement implements ScrollableLis
     }
 
     /**
-     * Return the y-coordinate of the slider.
-     *
-     * @param sh The height of the slider in pixels.
+     * Returns the y-coordinate of the slider.
+     * @param sh the height of the slider in pixels
      *
      * @return The y-coordinate.
      */
