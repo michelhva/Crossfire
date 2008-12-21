@@ -70,11 +70,6 @@ public abstract class GUIItemItem extends GUIItem
     private CfItem item = null;
 
     /**
-     * If set, paint the element in "selected" state.
-     */
-    private boolean selected = false;
-
-    /**
      * The {@link CfItemListener} used to detect attribute changes of
      * the displayed item.
      */
@@ -148,7 +143,7 @@ public abstract class GUIItemItem extends GUIItem
             return;
         }
 
-        itemPainter.paint(g2, tmpItem, selected || isActive(), getFace(tmpItem));
+        itemPainter.paint(g2, tmpItem, isSelected(), getFace(tmpItem));
     }
 
     /**
@@ -223,14 +218,11 @@ public abstract class GUIItemItem extends GUIItem
      * Sets the selected state.
      * @param selected whether this element should drawn as "selected"
      */
-    public void setSelected(final boolean selected)
-    {
-        if (this.selected == selected)
-        {
-            return;
-        }
+    public abstract void setSelected(final boolean selected);
 
-        this.selected = selected;
-        setChanged();
-    }
+    /**
+     * Returns whether this element should drawn as "selected".
+     * @return whether this element is selected
+     */
+    protected abstract boolean isSelected(); 
 }
