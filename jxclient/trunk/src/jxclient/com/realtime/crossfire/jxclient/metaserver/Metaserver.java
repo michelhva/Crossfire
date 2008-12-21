@@ -58,6 +58,11 @@ public class Metaserver
     private final List<MetaserverEntry> metalist = new ArrayList<MetaserverEntry>();
 
     /**
+     * Object used for synchronization.
+     */
+    private final Object sync = new Object();
+
+    /**
      * The cached metaserver entries.
      */
     private final ServerCache serverCache;
@@ -97,11 +102,14 @@ public class Metaserver
      * @return The metaserver entry, or <code>null</code> if the index is
      * invalid.
      */
-    public synchronized MetaserverEntry getEntry(final int index)
+    public MetaserverEntry getEntry(final int index)
     {
         try
         {
-            return metalist.get(index);
+            synchronized (sync)
+            {
+                return metalist.get(index);
+            }
         }
         catch (final IndexOutOfBoundsException ex)
         {
@@ -114,17 +122,20 @@ public class Metaserver
      * @param serverName the server name
      * @return the index, or <code>-1</code> if not found
      */
-    public synchronized int getServerIndex(final String serverName)
+    public int getServerIndex(final String serverName)
     {
-        int index = 0;
-        for (final MetaserverEntry metaserverEntry : metalist)
+        synchronized (sync)
         {
-            if (metaserverEntry.getHostname().equals(serverName))
+            int index = 0;
+            for (final MetaserverEntry metaserverEntry : metalist)
             {
-                return index;
-            }
+                if (metaserverEntry.getHostname().equals(serverName))
+                {
+                    return index;
+                }
 
-            index++;
+                index++;
+            }
         }
 
         return -1;
@@ -135,15 +146,18 @@ public class Metaserver
      *
      * @return The number of metaserver entries.
      */
-    public synchronized int size()
+    public int size()
     {
-        return metalist.size();
+        synchronized (sync)
+        {
+            return metalist.size();
+        }
     }
 
     public void query()
     {
         final int metalistSize;
-        synchronized (this)
+        synchronized (sync)
         {
             if (nextQuery > System.currentTimeMillis())
             {
@@ -301,16 +315,19 @@ public class Metaserver
      *
      * @return The listsners list.
      */
-    private synchronized List<MetaserverEntryListener> getMetaserverEntryListeners(final int index)
+    private List<MetaserverEntryListener> getMetaserverEntryListeners(final int index)
     {
-        final List<MetaserverEntryListener> existingListeners = metaserverEntryListeners.get(index);
-        if (existingListeners != null)
-        {
-            return existingListeners;
-        }
+        synchronized (metaserverEntryListeners)
+        {        
+            final List<MetaserverEntryListener> existingListeners = metaserverEntryListeners.get(index);
+            if (existingListeners != null)
+            {
+                return existingListeners;
+            }
 
-        final List<MetaserverEntryListener> newListeners = new ArrayList<MetaserverEntryListener>();
-        metaserverEntryListeners.put(index, newListeners);
-        return newListeners;
+            final List<MetaserverEntryListener> newListeners = new ArrayList<MetaserverEntryListener>();
+            metaserverEntryListeners.put(index, newListeners);
+            return newListeners;
+        }
     }
 }
