@@ -23,7 +23,7 @@ import com.realtime.crossfire.jxclient.commands.Commands;
 import com.realtime.crossfire.jxclient.experience.ExperienceTable;
 import com.realtime.crossfire.jxclient.gui.Gui;
 import com.realtime.crossfire.jxclient.gui.keybindings.KeyBindings;
-import com.realtime.crossfire.jxclient.metaserver.Metaserver;
+import com.realtime.crossfire.jxclient.metaserver.MetaserverModel;
 import com.realtime.crossfire.jxclient.server.CommandQueue;
 import com.realtime.crossfire.jxclient.server.CrossfireServerConnection;
 import com.realtime.crossfire.jxclient.settings.options.OptionManager;
@@ -42,7 +42,7 @@ import java.util.Iterator;
  */
 public interface JXCSkin extends Iterable<Gui>
 {
-    void load(CrossfireServerConnection crossfireServerConnection, JXCWindow window, MouseTracker mouseTracker, Metaserver metaserver, CommandQueue commandQueue, Resolution resolution, OptionManager optionManager, ExperienceTable experienceTable, Shortcuts shortcuts, Commands commands, CurrentSpellManager currentSpellManager) throws JXCSkinException;
+    void load(CrossfireServerConnection crossfireServerConnection, JXCWindow window, MouseTracker mouseTracker, MetaserverModel metaserverModel, CommandQueue commandQueue, Resolution resolution, OptionManager optionManager, ExperienceTable experienceTable, Shortcuts shortcuts, Commands commands, CurrentSpellManager currentSpellManager) throws JXCSkinException;
 
     /**
      * Return a short name for the skin. It is used to construct path or file

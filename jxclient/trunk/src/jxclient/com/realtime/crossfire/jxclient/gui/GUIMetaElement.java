@@ -22,6 +22,7 @@ package com.realtime.crossfire.jxclient.gui;
 import com.realtime.crossfire.jxclient.metaserver.Metaserver;
 import com.realtime.crossfire.jxclient.metaserver.MetaserverEntry;
 import com.realtime.crossfire.jxclient.metaserver.MetaserverEntryListener;
+import com.realtime.crossfire.jxclient.metaserver.MetaserverModel;
 import com.realtime.crossfire.jxclient.window.JXCWindow;
 import java.awt.Color;
 import java.awt.Font;
@@ -44,9 +45,9 @@ public class GUIMetaElement extends ActivatableGUIElement implements GUIScrollab
     private static final long serialVersionUID = 1;
 
     /**
-     * The metaserver instance to monitor.
+     * The metaserver model to monitor.
      */
-    private final Metaserver metaserver;
+    private final MetaserverModel metaserverModel;
 
     /**
      * An image to draw before the server description. May be <code>null</code>
@@ -100,7 +101,7 @@ public class GUIMetaElement extends ActivatableGUIElement implements GUIScrollab
     /**
      * Creates a new instance.
      * @param window the <code>JXCWindow</code> this element belongs to
-     * @param metaserver the metaserver instance to monitor
+     * @param metaserverModel the metaserver model to monitor
      * @param name the name of this element
      * @param w the width for drawing this element to screen
      * @param h the height for drawing this element to screen
@@ -111,17 +112,17 @@ public class GUIMetaElement extends ActivatableGUIElement implements GUIScrollab
      * @param format the format used to display metaserver instances
      * @param tooltip the format used for displaying tooltips
      */
-    public GUIMetaElement(final JXCWindow window, final Metaserver metaserver, final String name, final int w, final int h, final BufferedImage tcpImage, final Font font, final int defaultIndex, final String format, final String tooltip)
+    public GUIMetaElement(final JXCWindow window, final MetaserverModel metaserverModel, final String name, final int w, final int h, final BufferedImage tcpImage, final Font font, final int defaultIndex, final String format, final String tooltip)
     {
         super(window, name, 0, 0, w, h, Transparency.TRANSLUCENT);
-        this.metaserver = metaserver;
+        this.metaserverModel = metaserverModel;
         this.tcpImage = tcpImage;
         this.font = font;
         this.defaultIndex = defaultIndex;
         index = defaultIndex;
         this.format = format;
         this.tooltip = tooltip;
-        metaserver.addMetaserverEntryListener(defaultIndex, metaserverEntryListener);
+        metaserverModel.addMetaserverEntryListener(defaultIndex, metaserverEntryListener);
         setChanged();
         updateTooltip();
     }
@@ -130,7 +131,7 @@ public class GUIMetaElement extends ActivatableGUIElement implements GUIScrollab
     @Override
     protected void render(final Graphics g)
     {
-        final MetaserverEntry metaEntry = metaserver.getEntry(index);
+        final MetaserverEntry metaEntry = metaserverModel.getEntry(index);
         final Graphics2D g2 = (Graphics2D)g;
         g2.setBackground(new Color(0, 0, 0, 0.0f));
         g.clearRect(0, 0, getWidth(), getHeight());
@@ -173,7 +174,7 @@ public class GUIMetaElement extends ActivatableGUIElement implements GUIScrollab
         }
         else if (distance > 0)
         {
-            return index+distance < metaserver.size();
+            return index+distance < metaserverModel.size();
         }
         else
         {
@@ -223,9 +224,9 @@ public class GUIMetaElement extends ActivatableGUIElement implements GUIScrollab
             return;
         }
 
-        metaserver.removeMetaserverEntryListener(index, metaserverEntryListener);
+        metaserverModel.removeMetaserverEntryListener(index, metaserverEntryListener);
         this.index = index;
-        metaserver.addMetaserverEntryListener(index, metaserverEntryListener);
+        metaserverModel.addMetaserverEntryListener(index, metaserverEntryListener);
         setChanged();
         updateTooltip();
     }
@@ -235,7 +236,7 @@ public class GUIMetaElement extends ActivatableGUIElement implements GUIScrollab
      */
     private void updateTooltip()
     {
-        final MetaserverEntry metaEntry = metaserver.getEntry(index);
+        final MetaserverEntry metaEntry = metaserverModel.getEntry(index);
         setTooltipText(metaEntry == null ? null : metaEntry.format(tooltip));
     }
 
