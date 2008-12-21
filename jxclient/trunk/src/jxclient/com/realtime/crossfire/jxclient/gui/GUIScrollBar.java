@@ -231,7 +231,7 @@ public class GUIScrollBar extends ActivatableGUIElement implements ScrollableLis
      */
     private int getSliderHeightPixels()
     {
-        return proportionalSlider ? (int)(getHeight()*(double)sliderSize/valueSize+0.5) : getWidth();
+        return proportionalSlider ? Math.max((int)(getHeight()*(double)sliderSize/valueSize+0.5), getWidth()) : getWidth();
     }
 
     /**
