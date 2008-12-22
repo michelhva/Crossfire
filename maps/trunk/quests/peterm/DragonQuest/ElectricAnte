@@ -1,6 +1,7 @@
 arch map
 name Dragon Quest, Electric Anteroom
 difficulty 25
+region wilderness
 darkness 5
 width 22
 height 22
@@ -8,7 +9,7 @@ enter_x 18
 enter_y 16
 msg
 Created:  1994-08-21 peterm (peterm@soda.csua.berkeley.edu)
-Modified: 2008-12-13 Rick Tanner
+Modified: 2008-12-21 Rick Tanner
 endmsg
 end
 arch cave_15
