@@ -2,13 +2,14 @@ arch map
 name Warriors' Tower, Main Floor
 reset_timeout 7200
 difficulty 18
+region wilderness
 width 31
 height 52
 enter_x 15
 enter_y 48
 msg
 Created:  2000-04-06 Magnus Kronhamn (mak@solace.mh.se)
-Modified: 2008-12-02 Rick Tanner
+Modified: 2008-12-22 Rick Tanner
 endmsg
 maplore
 @def Warriors' Tower
