@@ -1,6 +1,7 @@
 arch map
 name Skud Tower, Maze
 difficulty 30
+region wilderness
 width 40
 height 40
 enter_x 12
@@ -12,7 +13,7 @@ on metal. It is coming from one of
 the many passages in this maze. A
 Maze in which, a wrong turn could
 be fatal.
-Modified: 2008-10-21 Rick Tanner
+Modified: 2008-12-22 Rick Tanner
 endmsg
 end
 arch marble
