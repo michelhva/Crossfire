@@ -8,7 +8,7 @@ enter_x 7
 enter_y 14
 msg
 Created:  1999-01-28 King Zoobus
-Modified: 2008-11-28 Rick Tanner
+Modified: 2008-12-23 Rick Tanner
 endmsg
 end
 arch flagstone
@@ -759,14 +759,10 @@ arch flagstone
 x 7
 y 14
 end
-arch invis_exit
+arch oakdoor_2
 slaying /world/world_120_109
 hp 38
 sp 37
-x 7
-y 14
-end
-arch door_2
 x 7
 y 14
 end

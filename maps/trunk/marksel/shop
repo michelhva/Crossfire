@@ -11,7 +11,7 @@ height 11
 enter_x 3
 msg
 Created:  1999-01-27 King Zoobus
-Modified: 2008-11-28 Rick Tanner
+Modified: 2008-12-23 Rick Tanner
 endmsg
 end
 arch woodfloor
@@ -206,13 +206,10 @@ end
 arch woodfloor
 x 3
 end
-arch invis_exit
+arch oakdoor_2
 slaying /world/world_120_109
 hp 43
 sp 45
-x 3
-end
-arch door_2
 x 3
 end
 arch woodfloor
