@@ -8,7 +8,7 @@ enter_x 10
 enter_y 17
 msg
 Created:  1993-11-01 (john_cater@yahoo.com)
-Modified: 2008-10-21 Rick Tanner
+Modified: 2008-12-23 Rick Tanner
 endmsg
 end
 arch cobblestones2
@@ -1168,21 +1168,16 @@ arch cobblestones2
 x 9
 y 17
 end
-arch invis_exit
+arch cobblestones2
+x 9
+y 18
+end
+arch oakdoor_2
 slaying /world/world_102_108
 hp 21
 sp 16
 x 9
 y 18
-end
-arch cobblestones2
-x 9
-y 18
-end
-arch door_2
-x 9
-y 18
-move_block 0
 end
 arch cobblestones2
 x 10
@@ -1262,21 +1257,16 @@ arch cobblestones2
 x 10
 y 17
 end
-arch invis_exit
+arch cobblestones2
+x 10
+y 18
+end
+arch oakdoor_2
 slaying /world/world_102_108
 hp 21
 sp 16
 x 10
 y 18
-end
-arch cobblestones2
-x 10
-y 18
-end
-arch door_2
-x 10
-y 18
-move_block 0
 end
 arch cobblestones2
 x 11
@@ -1352,21 +1342,16 @@ arch cobblestones2
 x 11
 y 17
 end
-arch invis_exit
+arch cobblestones2
+x 11
+y 18
+end
+arch oakdoor_2
 slaying /world/world_102_108
 hp 21
 sp 16
 x 11
 y 18
-end
-arch cobblestones2
-x 11
-y 18
-end
-arch door_2
-x 11
-y 18
-move_block 0
 end
 arch cobblestones2
 x 12
