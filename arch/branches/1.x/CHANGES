@@ -1,5 +1,14 @@
 Changes for SVN top of tree:
 
+gods/items/valkyrie_amulet_lifesave.arc,
+gods/items/torc.base.111.png,
+gods/demihumans/valkyrie.trs
+Backport from Trunk - bug fix for '[ 1990180 ] 2.0 godgiven Valkyrie 
+lifesaving amulet bug?' - created a new amulet archetype that is godgiven 
+and inventory locked by default, updated gods/demihumans/valkyrie.trs file 
+to reference the new amulet graphic (torc) and archetype
+Rick Tanner 2008-12-24
+
 disease/tapeworms.arc
 Removed linebreaks from disease message so the breaks can be done by the client.
 Kevin Bulgrien 2008-12-20
