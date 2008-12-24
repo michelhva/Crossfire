@@ -1,3 +1,45 @@
+2008-12-23 07:40  rjtanner
+
+	* santo_dominion/map.stigkr.2, santo_dominion/tavern.downstairs:
+	  Cosmetic wall changes for nicer merging
+
+2008-12-23 07:33  rjtanner
+
+	* santo_dominion/city_hall: Updated doors - removed invis exits
+
+2008-12-23 07:28  rjtanner
+
+	* santo_dominion/espen/espen2, santo_dominion/espen/palace:
+	  Cosmetic wall updates with how swall (fence) merges with nearby
+	  walls
+
+2008-12-23 07:11  rjtanner
+
+	* marksel/wizard: Fix oakdoor so that it uses the correct archetype
+	  (vs the one that can be destroyed) - missed in previous commit
+
+2008-12-23 07:11  rjtanner
+
+	* marksel/keep, marksel/shop, marksel/wizard: Fix oakdoor so that
+	  it uses the correct archetype (vs the one that can be destroyed)
+
+2008-12-23 07:06  rjtanner
+
+	* lake_country/Mwizard/Mwizard5, lake_country/RETower/tower4:
+	  Cosmetic wall changes for nicer merging
+
+2008-12-23 06:59  rjtanner
+
+	* lake_country/ebony/masterlev: Insert missing floor tiles
+
+2008-12-23 06:54  rjtanner
+
+	* lake_country/Butakis/inn: Cosmetic wall changes for nicer merging
+
+2008-12-22 07:02  rjtanner
+
+	* ChangeLog: Updated ChangeLog file using svn2cl
+
 2008-12-22 06:54  rjtanner
 
 	* quests/hendel/acid_room, quests/hendel/mountain_pass,
