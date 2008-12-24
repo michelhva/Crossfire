@@ -9,36 +9,116 @@ enter_x 6
 enter_y 23
 msg
 Created:  2004-08-03 Mikeeusa
-Modified: 2008-11-16 Rick Tanner
+Modified: 2008-12-24 Rick Tanner
 endmsg
 outdoor 1
 end
-arch blocked
+arch cave_15
+end
+arch cave_15
+y 1
+end
+arch cave_15
+y 2
+end
+arch cave_15
+y 3
+end
+arch cave_15
+y 4
+end
+arch cave_15
+y 5
+end
+arch cave_15
+y 6
+end
+arch cave_15
+y 7
+end
+arch cave_15
 y 8
 end
-arch blocked
+arch cave_15
 y 9
 end
-arch blocked
+arch cave_15
 y 10
 end
-arch blocked
+arch cave_15
 y 11
 end
-arch blocked
+arch cave_15
 y 12
 end
-arch blocked
+arch cave_15
 y 13
 end
-arch blocked
+arch cave_15
 y 14
 end
-arch blocked
+arch cave_15
+y 15
+end
+arch cave_15
+y 16
+end
+arch cave_15
+y 17
+end
+arch cave_15
+y 18
+end
+arch cave_15
+y 19
+end
+arch cave_15
+y 20
+end
+arch cave_15
+y 21
+end
+arch cave_15
+y 22
+end
+arch cave_15
+y 23
+end
+arch cave_15
+y 24
+end
+arch cave_15
+x 1
+end
+arch cave_15
+x 1
+y 1
+end
+arch cave_15
+x 1
+y 2
+end
+arch cave_15
+x 1
+y 3
+end
+arch cave_15
+x 1
+y 4
+end
+arch cave_15
+x 1
+y 5
+end
+arch cave_15
+x 1
+y 6
+end
+arch cave_15
 x 1
 y 7
 end
-arch blocked
+arch cave_15
 x 1
 y 8
 end
@@ -82,35 +162,82 @@ arch cave17
 x 1
 y 13
 end
-arch blocked
+arch cave_15
 x 1
 y 14
 end
-arch blocked
+arch cave_15
 x 1
 y 15
 end
-arch blocked
+arch cave_15
 x 1
 y 16
 end
-arch blocked
+arch cave_15
 x 1
 y 17
 end
-arch blocked
+arch cave_15
 x 1
 y 18
 end
-arch blocked
+arch cave_15
 x 1
 y 19
+end
+arch cave_15
+x 1
+y 20
+end
+arch cave_15
+x 1
+y 21
+end
+arch cave_15
+x 1
+y 22
+end
+arch cave_15
+x 1
+y 23
+end
+arch cave_15
+x 1
+y 24
+end
+arch cave_15
+x 2
+end
+arch cave_15
+x 2
+y 1
+end
+arch cave_15
+x 2
+y 2
+end
+arch cave_15
+x 2
+y 3
+end
+arch cave_15
+x 2
+y 4
+end
+arch cave_15
+x 2
+y 5
+end
+arch cave_15
+x 2
+y 6
 end
 arch istone
 x 2
 y 7
 end
-arch blocked
+arch cave_15
 x 2
 y 7
 end
@@ -202,35 +329,58 @@ arch cave17
 x 2
 y 18
 end
-arch blocked
+arch cave_15
 x 2
 y 19
 end
-arch blocked
+arch cave_15
 x 2
 y 20
 end
-arch blocked
+arch cave_15
 x 2
 y 21
 end
-arch blocked
+arch cave_15
 x 2
 y 22
 end
-arch blocked
+arch cave_15
 x 2
 y 23
 end
-arch blocked
+arch cave_15
 x 2
 y 24
 end
-arch blocked
+arch cave_15
+x 3
+end
+arch cave_15
+x 3
+y 1
+end
+arch cave_15
+x 3
+y 2
+end
+arch cave_15
+x 3
+y 3
+end
+arch cave_15
+x 3
+y 4
+end
+arch cave_15
+x 3
+y 5
+end
+arch cave_15
 x 3
 y 6
 end
-arch blocked
+arch cave_15
 x 3
 y 7
 end
@@ -338,15 +488,34 @@ arch cave17
 x 3
 y 23
 end
-arch blocked
+arch cave_15
 x 3
 y 24
 end
-arch blocked
+arch cave_15
+x 4
+end
+arch cave_15
+x 4
+y 1
+end
+arch cave_15
+x 4
+y 2
+end
+arch cave_15
+x 4
+y 3
+end
+arch cave_15
+x 4
+y 4
+end
+arch cave_15
 x 4
 y 5
 end
-arch blocked
+arch cave_15
 x 4
 y 6
 end
@@ -470,7 +639,26 @@ arch cave9
 x 4
 y 24
 end
-arch blocked
+arch cave_15
+x 5
+end
+arch cave_15
+x 5
+y 1
+end
+arch cave_15
+x 5
+y 2
+end
+arch cave_15
+x 5
+y 3
+end
+arch cave_15
+x 5
+y 4
+end
+arch cave_15
 x 5
 y 5
 end
@@ -593,15 +781,26 @@ arch snow
 x 5
 y 24
 end
-arch blocked
+arch cave_15
+x 6
+end
+arch cave_15
+x 6
+y 1
+end
+arch cave_15
+x 6
+y 2
+end
+arch cave_15
 x 6
 y 3
 end
-arch blocked
+arch cave_15
 x 6
 y 4
 end
-arch blocked
+arch cave_15
 x 6
 y 5
 end
@@ -724,15 +923,18 @@ arch snow
 x 6
 y 24
 end
-arch blocked
+arch cave_15
+x 7
+end
+arch cave_15
 x 7
 y 1
 end
-arch blocked
+arch cave_15
 x 7
 y 2
 end
-arch blocked
+arch cave_15
 x 7
 y 3
 end
@@ -867,7 +1069,10 @@ arch snow
 x 7
 y 24
 end
-arch blocked
+arch cave_15
+x 8
+end
+arch cave_15
 x 8
 y 1
 end
@@ -1015,10 +1220,10 @@ arch cave10
 x 8
 y 24
 end
-arch blocked
+arch cave_15
 x 9
 end
-arch blocked
+arch cave_15
 x 9
 y 1
 end
@@ -1158,15 +1363,15 @@ arch snow
 x 9
 y 23
 end
-arch blocked
+arch cave_15
 x 9
 y 23
 end
-arch blocked
+arch cave_15
 x 9
 y 24
 end
-arch blocked
+arch cave_15
 x 10
 end
 arch istone
@@ -1297,7 +1502,7 @@ arch snow
 x 10
 y 22
 end
-arch blocked
+arch cave_15
 x 10
 y 22
 end
@@ -1305,11 +1510,15 @@ arch snow
 x 10
 y 23
 end
-arch blocked
+arch cave_15
 x 10
 y 23
 end
-arch blocked
+arch cave_15
+x 10
+y 24
+end
+arch cave_15
 x 11
 end
 arch istone
@@ -1344,7 +1553,7 @@ arch cave2
 x 11
 y 6
 end
-arch blocked
+arch cave_15
 x 11
 y 7
 end
@@ -1428,7 +1637,7 @@ arch snow
 x 11
 y 21
 end
-arch blocked
+arch cave_15
 x 11
 y 21
 end
@@ -1436,11 +1645,19 @@ arch snow
 x 11
 y 22
 end
-arch blocked
+arch cave_15
 x 11
 y 22
 end
-arch blocked
+arch cave_15
+x 11
+y 23
+end
+arch cave_15
+x 11
+y 24
+end
+arch cave_15
 x 12
 end
 arch istone
@@ -1479,7 +1696,7 @@ arch cave2
 x 12
 y 6
 end
-arch blocked
+arch cave_15
 x 12
 y 7
 end
@@ -1563,11 +1780,23 @@ arch snow
 x 12
 y 21
 end
-arch blocked
+arch cave_15
 x 12
 y 21
 end
-arch blocked
+arch cave_15
+x 12
+y 22
+end
+arch cave_15
+x 12
+y 23
+end
+arch cave_15
+x 12
+y 24
+end
+arch cave_15
 x 13
 end
 arch istone
@@ -1606,11 +1835,11 @@ arch cave2
 x 13
 y 6
 end
-arch blocked
+arch cave_15
 x 13
 y 7
 end
-arch blocked
+arch cave_15
 x 13
 y 8
 end
@@ -1674,15 +1903,27 @@ arch cave20
 x 13
 y 19
 end
-arch blocked
+arch cave_15
 x 13
 y 20
 end
-arch blocked
+arch cave_15
 x 13
 y 21
 end
-arch blocked
+arch cave_15
+x 13
+y 22
+end
+arch cave_15
+x 13
+y 23
+end
+arch cave_15
+x 13
+y 24
+end
+arch cave_15
 x 14
 end
 arch istone
@@ -1733,7 +1974,7 @@ arch cave17
 x 14
 y 7
 end
-arch blocked
+arch cave_15
 x 14
 y 8
 end
@@ -1801,22 +2042,38 @@ arch istone
 x 14
 y 18
 end
-arch blocked
+arch cave_15
 x 14
 y 18
 end
-arch blocked
+arch cave_15
 x 14
 y 19
 end
-arch blocked
+arch cave_15
 x 14
 y 20
 end
-arch blocked
+arch cave_15
+x 14
+y 21
+end
+arch cave_15
+x 14
+y 22
+end
+arch cave_15
+x 14
+y 23
+end
+arch cave_15
+x 14
+y 24
+end
+arch cave_15
 x 15
 end
-arch blocked
+arch cave_15
 x 15
 y 1
 end
@@ -1873,15 +2130,15 @@ arch cave2
 x 15
 y 7
 end
-arch blocked
+arch cave_15
 x 15
 y 8
 end
-arch blocked
+arch cave_15
 x 15
 y 9
 end
-arch blocked
+arch cave_15
 x 15
 y 10
 end
@@ -1925,15 +2182,42 @@ arch istone
 x 15
 y 17
 end
-arch blocked
+arch cave_15
 x 15
 y 17
 end
-arch blocked
+arch cave_15
 x 15
 y 18
 end
-arch blocked
+arch cave_15
+x 15
+y 19
+end
+arch cave_15
+x 15
+y 20
+end
+arch cave_15
+x 15
+y 21
+end
+arch cave_15
+x 15
+y 22
+end
+arch cave_15
+x 15
+y 23
+end
+arch cave_15
+x 15
+y 24
+end
+arch cave_15
+x 16
+end
+arch cave_15
 x 16
 y 1
 end
@@ -1977,19 +2261,19 @@ arch cave20
 x 16
 y 7
 end
-arch blocked
+arch cave_15
 x 16
 y 8
 end
-arch blocked
+arch cave_15
 x 16
 y 9
 end
-arch blocked
+arch cave_15
 x 16
 y 10
 end
-arch blocked
+arch cave_15
 x 16
 y 11
 end
@@ -2029,15 +2313,42 @@ arch cave20
 x 16
 y 16
 end
-arch blocked
+arch cave_15
 x 16
 y 17
 end
-arch blocked
+arch cave_15
 x 16
 y 18
 end
-arch blocked
+arch cave_15
+x 16
+y 19
+end
+arch cave_15
+x 16
+y 20
+end
+arch cave_15
+x 16
+y 21
+end
+arch cave_15
+x 16
+y 22
+end
+arch cave_15
+x 16
+y 23
+end
+arch cave_15
+x 16
+y 24
+end
+arch cave_15
+x 17
+end
+arch cave_15
 x 17
 y 1
 end
@@ -2045,7 +2356,7 @@ arch istone
 x 17
 y 2
 end
-arch blocked
+arch cave_15
 x 17
 y 2
 end
@@ -2085,7 +2396,7 @@ arch istone
 x 17
 y 7
 end
-arch blocked
+arch cave_15
 x 17
 y 7
 end
@@ -2093,19 +2404,19 @@ arch istone
 x 17
 y 8
 end
-arch blocked
+arch cave_15
 x 17
 y 8
 end
-arch blocked
+arch cave_15
 x 17
 y 9
 end
-arch blocked
+arch cave_15
 x 17
 y 10
 end
-arch blocked
+arch cave_15
 x 17
 y 11
 end
@@ -2133,19 +2444,54 @@ arch cave20
 x 17
 y 14
 end
-arch blocked
+arch cave_15
 x 17
 y 15
 end
-arch blocked
+arch cave_15
 x 17
 y 16
 end
-arch blocked
+arch cave_15
 x 17
 y 17
 end
-arch blocked
+arch cave_15
+x 17
+y 18
+end
+arch cave_15
+x 17
+y 19
+end
+arch cave_15
+x 17
+y 20
+end
+arch cave_15
+x 17
+y 21
+end
+arch cave_15
+x 17
+y 22
+end
+arch cave_15
+x 17
+y 23
+end
+arch cave_15
+x 17
+y 24
+end
+arch cave_15
+x 18
+end
+arch cave_15
+x 18
+y 1
+end
+arch cave_15
 x 18
 y 2
 end
@@ -2153,7 +2499,7 @@ arch istone
 x 18
 y 3
 end
-arch blocked
+arch cave_15
 x 18
 y 3
 end
@@ -2161,7 +2507,7 @@ arch istone
 x 18
 y 4
 end
-arch blocked
+arch cave_15
 x 18
 y 4
 end
@@ -2169,7 +2515,7 @@ arch istone
 x 18
 y 5
 end
-arch blocked
+arch cave_15
 x 18
 y 5
 end
@@ -2177,35 +2523,79 @@ arch istone
 x 18
 y 6
 end
-arch blocked
+arch cave_15
 x 18
 y 6
 end
-arch blocked
+arch cave_15
 x 18
 y 7
 end
-arch blocked
+arch cave_15
+x 18
+y 8
+end
+arch cave_15
+x 18
+y 9
+end
+arch cave_15
 x 18
 y 10
 end
-arch blocked
+arch cave_15
 x 18
 y 11
 end
-arch blocked
+arch cave_15
 x 18
 y 12
 end
-arch blocked
+arch cave_15
 x 18
 y 13
 end
-arch blocked
+arch cave_15
 x 18
 y 14
 end
-arch blocked
+arch cave_15
 x 18
 y 15
+end
+arch cave_15
+x 18
+y 16
+end
+arch cave_15
+x 18
+y 17
+end
+arch cave_15
+x 18
+y 18
+end
+arch cave_15
+x 18
+y 19
+end
+arch cave_15
+x 18
+y 20
+end
+arch cave_15
+x 18
+y 21
+end
+arch cave_15
+x 18
+y 22
+end
+arch cave_15
+x 18
+y 23
+end
+arch cave_15
+x 18
+y 24
 end
