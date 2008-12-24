@@ -10,7 +10,7 @@ enter_x 6
 enter_y 12
 msg
 Created:  2004-02-26 mikeeusa
-Modified: 2008-11-10 Rick Tanner
+Modified: 2008-12-24 Rick Tanner
 endmsg
 end
 arch blocked
@@ -1060,18 +1060,18 @@ arch blocked
 x 13
 y 19
 end
-arch blocked
+arch cave_15
 x 14
 end
-arch blocked
+arch cave_15
 x 14
 y 1
 end
-arch blocked
+arch cave_15
 x 14
 y 2
 end
-arch blocked
+arch cave_15
 x 14
 y 3
 end
@@ -2300,18 +2300,18 @@ arch blocked
 x 22
 y 19
 end
-arch blocked
+arch cave_15
 x 23
 end
-arch blocked
+arch cave_15
 x 23
 y 1
 end
-arch blocked
+arch cave_15
 x 23
 y 2
 end
-arch blocked
+arch cave_15
 x 23
 y 3
 end

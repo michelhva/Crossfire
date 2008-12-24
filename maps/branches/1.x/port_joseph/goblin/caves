@@ -9,7 +9,7 @@ enter_x 1
 enter_y 1
 msg
 Created:  1994-09-03 langley (langley@fermat.dartmouth.edu)
-Modified: 2008-11-10 Rick Tanner
+Modified: 2008-12-24 Rick Tanner
 endmsg
 end
 arch small_stones
@@ -28,22 +28,22 @@ end
 arch cave23
 y 2
 end
-arch blocked
+arch cave_15
 y 3
 end
-arch blocked
+arch cave_15
 y 4
 end
-arch blocked
+arch cave_15
 y 5
 end
-arch blocked
+arch cave_15
 y 6
 end
-arch blocked
+arch cave_15
 y 7
 end
-arch blocked
+arch cave_15
 y 8
 end
 arch small_stones
@@ -76,34 +76,34 @@ end
 arch cave23
 y 13
 end
-arch blocked
+arch cave_15
 y 14
 end
-arch blocked
+arch cave_15
 y 15
 end
-arch blocked
+arch cave_15
 y 16
 end
-arch blocked
+arch cave_15
 y 17
 end
-arch blocked
+arch cave_15
 y 18
 end
-arch blocked
+arch cave_15
 y 19
 end
-arch blocked
+arch cave_15
 y 20
 end
-arch blocked
+arch cave_15
 y 21
 end
-arch blocked
+arch cave_15
 y 22
 end
-arch blocked
+arch cave_15
 y 23
 end
 arch small_stones
@@ -132,27 +132,27 @@ arch cave2
 x 1
 y 2
 end
-arch blocked
+arch cave_15
 x 1
 y 3
 end
-arch blocked
+arch cave_15
 x 1
 y 4
 end
-arch blocked
+arch cave_15
 x 1
 y 5
 end
-arch blocked
+arch cave_15
 x 1
 y 6
 end
-arch blocked
+arch cave_15
 x 1
 y 7
 end
-arch blocked
+arch cave_15
 x 1
 y 8
 end
@@ -212,11 +212,11 @@ arch cave23
 x 1
 y 16
 end
-arch blocked
+arch cave_15
 x 1
 y 17
 end
-arch blocked
+arch cave_15
 x 1
 y 18
 end
@@ -252,7 +252,7 @@ arch cave23
 x 1
 y 22
 end
-arch blocked
+arch cave_15
 x 1
 y 23
 end
@@ -274,11 +274,11 @@ arch cave2
 x 2
 y 2
 end
-arch blocked
+arch cave_15
 x 2
 y 3
 end
-arch blocked
+arch cave_15
 x 2
 y 4
 end
@@ -402,7 +402,7 @@ arch cave2
 x 2
 y 22
 end
-arch blocked
+arch cave_15
 x 2
 y 23
 end
@@ -424,11 +424,11 @@ arch cave2
 x 3
 y 2
 end
-arch blocked
+arch cave_15
 x 3
 y 3
 end
-arch blocked
+arch cave_15
 x 3
 y 4
 end
@@ -536,7 +536,7 @@ arch cave2
 x 3
 y 22
 end
-arch blocked
+arch cave_15
 x 3
 y 23
 end
@@ -566,7 +566,7 @@ arch cave17
 x 4
 y 3
 end
-arch blocked
+arch cave_15
 x 4
 y 4
 end
@@ -1010,7 +1010,7 @@ arch cave2
 x 6
 y 23
 end
-arch blocked
+arch cave_15
 x 7
 end
 arch small_stones
@@ -1041,15 +1041,15 @@ arch cave2
 x 7
 y 4
 end
-arch blocked
+arch cave_15
 x 7
 y 5
 end
-arch blocked
+arch cave_15
 x 7
 y 6
 end
-arch blocked
+arch cave_15
 x 7
 y 7
 end
@@ -1173,7 +1173,7 @@ arch cave22
 x 7
 y 23
 end
-arch blocked
+arch cave_15
 x 8
 end
 arch small_stones
@@ -1208,11 +1208,11 @@ arch cave2
 x 8
 y 4
 end
-arch blocked
+arch cave_15
 x 8
 y 5
 end
-arch blocked
+arch cave_15
 x 8
 y 6
 end
@@ -1284,31 +1284,31 @@ arch cave2
 x 8
 y 16
 end
-arch blocked
+arch cave_15
 x 8
 y 17
 end
-arch blocked
+arch cave_15
 x 8
 y 18
 end
-arch blocked
+arch cave_15
 x 8
 y 19
 end
-arch blocked
+arch cave_15
 x 8
 y 20
 end
-arch blocked
+arch cave_15
 x 8
 y 21
 end
-arch blocked
+arch cave_15
 x 8
 y 22
 end
-arch blocked
+arch cave_15
 x 8
 y 23
 end
@@ -1422,15 +1422,15 @@ arch cave2
 x 9
 y 16
 end
-arch blocked
+arch cave_15
 x 9
 y 17
 end
-arch blocked
+arch cave_15
 x 9
 y 18
 end
-arch blocked
+arch cave_15
 x 9
 y 19
 end
@@ -2135,7 +2135,7 @@ arch cave2
 x 13
 y 23
 end
-arch blocked
+arch cave_15
 x 14
 end
 arch small_stones
@@ -2234,11 +2234,11 @@ arch cave22
 x 14
 y 15
 end
-arch blocked
+arch cave_15
 x 14
 y 16
 end
-arch blocked
+arch cave_15
 x 14
 y 17
 end
@@ -2298,10 +2298,10 @@ arch cave2
 x 14
 y 23
 end
-arch blocked
+arch cave_15
 x 15
 end
-arch blocked
+arch cave_15
 x 15
 y 1
 end
@@ -2409,19 +2409,19 @@ arch cave22
 x 15
 y 14
 end
-arch blocked
+arch cave_15
 x 15
 y 15
 end
-arch blocked
+arch cave_15
 x 15
 y 16
 end
-arch blocked
+arch cave_15
 x 15
 y 17
 end
-arch blocked
+arch cave_15
 x 15
 y 18
 end

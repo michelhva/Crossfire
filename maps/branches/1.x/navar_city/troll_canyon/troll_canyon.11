@@ -8,10 +8,30 @@ enter_x 14
 enter_y 19
 msg
 Created:  2007-02-03 Brad Reilly
-Modified: 2008-11-09 Rick Tanner
+Modified: 2008-12-24 Rick Tanner
 endmsg
 tile_path_3 troll_canyon.10
 tile_path_4 troll_canyon.12
+end
+arch cave_15
+end
+arch cave_15
+y 1
+end
+arch cave_15
+y 2
+end
+arch cave_15
+y 3
+end
+arch cave_15
+y 4
+end
+arch cave_15
+y 5
+end
+arch cave_15
+y 6
 end
 arch pstone_2
 y 7
@@ -36,6 +56,42 @@ y 11
 end
 arch cave23
 y 12
+end
+arch cave_15
+y 13
+end
+arch cave_15
+y 14
+end
+arch cave_15
+y 15
+end
+arch cave_15
+y 16
+end
+arch cave_15
+y 17
+end
+arch cave_15
+y 18
+end
+arch cave_15
+y 19
+end
+arch cave_15
+x 1
+end
+arch cave_15
+x 1
+y 1
+end
+arch cave_15
+x 1
+y 2
+end
+arch cave_15
+x 1
+y 3
 end
 arch cave24
 x 1
@@ -92,6 +148,41 @@ end
 arch cave23
 x 1
 y 13
+end
+arch cave_15
+x 1
+y 14
+end
+arch cave_15
+x 1
+y 15
+end
+arch cave_15
+x 1
+y 16
+end
+arch cave_15
+x 1
+y 17
+end
+arch cave_15
+x 1
+y 18
+end
+arch cave_15
+x 1
+y 19
+end
+arch cave_15
+x 2
+end
+arch cave_15
+x 2
+y 1
+end
+arch cave_15
+x 2
+y 2
 end
 arch cave24
 x 2
@@ -146,6 +237,37 @@ end
 arch cave2
 x 2
 y 13
+end
+arch cave_15
+x 2
+y 14
+end
+arch cave_15
+x 2
+y 15
+end
+arch cave_15
+x 2
+y 16
+end
+arch cave_15
+x 2
+y 17
+end
+arch cave_15
+x 2
+y 18
+end
+arch cave_15
+x 2
+y 19
+end
+arch cave_15
+x 3
+end
+arch cave_15
+x 3
+y 1
 end
 arch cave24
 x 3
@@ -206,6 +328,33 @@ end
 arch cave2
 x 3
 y 13
+end
+arch cave_15
+x 3
+y 14
+end
+arch cave_15
+x 3
+y 15
+end
+arch cave_15
+x 3
+y 16
+end
+arch cave_15
+x 3
+y 17
+end
+arch cave_15
+x 3
+y 18
+end
+arch cave_15
+x 3
+y 19
+end
+arch cave_15
+x 4
 end
 arch cave24
 x 4
@@ -271,6 +420,30 @@ end
 arch cave2
 x 4
 y 13
+end
+arch cave_15
+x 4
+y 14
+end
+arch cave_15
+x 4
+y 15
+end
+arch cave_15
+x 4
+y 16
+end
+arch cave_15
+x 4
+y 17
+end
+arch cave_15
+x 4
+y 18
+end
+arch cave_15
+x 4
+y 19
 end
 arch cave24
 x 5
@@ -360,6 +533,26 @@ arch cave17
 x 5
 y 14
 end
+arch cave_15
+x 5
+y 15
+end
+arch cave_15
+x 5
+y 16
+end
+arch cave_15
+x 5
+y 17
+end
+arch cave_15
+x 5
+y 18
+end
+arch cave_15
+x 5
+y 19
+end
 arch shallow_sea
 x 6
 end
@@ -434,6 +627,26 @@ arch cave2
 x 6
 y 14
 end
+arch cave_15
+x 6
+y 15
+end
+arch cave_15
+x 6
+y 16
+end
+arch cave_15
+x 6
+y 17
+end
+arch cave_15
+x 6
+y 18
+end
+arch cave_15
+x 6
+y 19
+end
 arch cave19
 x 7
 end
@@ -508,6 +721,29 @@ end
 arch cave2
 x 7
 y 14
+end
+arch cave_15
+x 7
+y 15
+end
+arch cave_15
+x 7
+y 16
+end
+arch cave_15
+x 7
+y 17
+end
+arch cave_15
+x 7
+y 18
+end
+arch cave_15
+x 7
+y 19
+end
+arch cave_15
+x 8
 end
 arch cave19
 x 8
@@ -579,6 +815,33 @@ end
 arch cave2
 x 8
 y 14
+end
+arch cave_15
+x 8
+y 15
+end
+arch cave_15
+x 8
+y 16
+end
+arch cave_15
+x 8
+y 17
+end
+arch cave_15
+x 8
+y 18
+end
+arch cave_15
+x 8
+y 19
+end
+arch cave_15
+x 9
+end
+arch cave_15
+x 9
+y 1
 end
 arch cave19
 x 9
@@ -654,6 +917,37 @@ end
 arch cave2
 x 9
 y 14
+end
+arch cave_15
+x 9
+y 15
+end
+arch cave_15
+x 9
+y 16
+end
+arch cave_15
+x 9
+y 17
+end
+arch cave_15
+x 9
+y 18
+end
+arch cave_15
+x 9
+y 19
+end
+arch cave_15
+x 10
+end
+arch cave_15
+x 10
+y 1
+end
+arch cave_15
+x 10
+y 2
 end
 arch shallow_sea
 x 10
@@ -734,6 +1028,33 @@ arch cave20
 x 10
 y 14
 end
+arch cave_15
+x 10
+y 15
+end
+arch cave_15
+x 10
+y 16
+end
+arch cave_15
+x 10
+y 17
+end
+arch cave_15
+x 10
+y 18
+end
+arch cave_15
+x 10
+y 19
+end
+arch cave_15
+x 11
+end
+arch cave_15
+x 11
+y 1
+end
 arch cave24
 x 11
 y 2
@@ -800,6 +1121,37 @@ end
 arch cave2
 x 11
 y 13
+end
+arch cave_15
+x 11
+y 14
+end
+arch cave_15
+x 11
+y 15
+end
+arch cave_15
+x 11
+y 16
+end
+arch cave_15
+x 11
+y 17
+end
+arch cave_15
+x 11
+y 18
+end
+arch cave_15
+x 11
+y 19
+end
+arch cave_15
+x 12
+end
+arch cave_15
+x 12
+y 1
 end
 arch shallow_sea
 x 12
@@ -918,6 +1270,13 @@ arch cave3
 x 12
 y 19
 end
+arch cave_15
+x 13
+end
+arch cave_15
+x 13
+y 1
+end
 arch shallow_sea
 x 13
 y 2
@@ -1029,6 +1388,13 @@ end
 arch pstone_2
 x 13
 y 19
+end
+arch cave_15
+x 14
+end
+arch cave_15
+x 14
+y 1
 end
 arch shallow_sea
 x 14
@@ -1145,6 +1511,13 @@ arch pstone_1
 x 14
 y 19
 end
+arch cave_15
+x 15
+end
+arch cave_15
+x 15
+y 1
+end
 arch shallow_sea
 x 15
 y 2
@@ -1258,6 +1631,13 @@ arch cave1
 x 15
 y 19
 end
+arch cave_15
+x 16
+end
+arch cave_15
+x 16
+y 1
+end
 arch cave25
 x 16
 y 2
@@ -1326,6 +1706,45 @@ arch cave2
 x 16
 y 13
 end
+arch cave_15
+x 16
+y 14
+end
+arch cave_15
+x 16
+y 15
+end
+arch cave_15
+x 16
+y 16
+end
+arch cave_15
+x 16
+y 17
+end
+arch cave_15
+x 16
+y 18
+end
+arch cave_15
+x 16
+y 19
+end
+arch cave_15
+x 17
+end
+arch cave_15
+x 17
+y 1
+end
+arch cave_15
+x 17
+y 2
+end
+arch cave_15
+x 17
+y 3
+end
 arch cave19
 x 17
 y 4
@@ -1380,6 +1799,49 @@ arch cave22
 x 17
 y 13
 end
+arch cave_15
+x 17
+y 14
+end
+arch cave_15
+x 17
+y 15
+end
+arch cave_15
+x 17
+y 16
+end
+arch cave_15
+x 17
+y 17
+end
+arch cave_15
+x 17
+y 18
+end
+arch cave_15
+x 17
+y 19
+end
+arch cave_15
+x 18
+end
+arch cave_15
+x 18
+y 1
+end
+arch cave_15
+x 18
+y 2
+end
+arch cave_15
+x 18
+y 3
+end
+arch cave_15
+x 18
+y 4
+end
 arch cave19
 x 18
 y 5
@@ -1427,6 +1889,61 @@ arch cave20
 x 18
 y 12
 end
+arch cave_15
+x 18
+y 13
+end
+arch cave_15
+x 18
+y 14
+end
+arch cave_15
+x 18
+y 15
+end
+arch cave_15
+x 18
+y 16
+end
+arch cave_15
+x 18
+y 17
+end
+arch cave_15
+x 18
+y 18
+end
+arch cave_15
+x 18
+y 19
+end
+arch cave_15
+x 19
+end
+arch cave_15
+x 19
+y 1
+end
+arch cave_15
+x 19
+y 2
+end
+arch cave_15
+x 19
+y 3
+end
+arch cave_15
+x 19
+y 4
+end
+arch cave_15
+x 19
+y 5
+end
+arch cave_15
+x 19
+y 6
+end
 arch cave19
 x 19
 y 7
@@ -1455,4 +1972,36 @@ end
 arch cave20
 x 19
 y 11
+end
+arch cave_15
+x 19
+y 12
+end
+arch cave_15
+x 19
+y 13
+end
+arch cave_15
+x 19
+y 14
+end
+arch cave_15
+x 19
+y 15
+end
+arch cave_15
+x 19
+y 16
+end
+arch cave_15
+x 19
+y 17
+end
+arch cave_15
+x 19
+y 18
+end
+arch cave_15
+x 19
+y 19
 end

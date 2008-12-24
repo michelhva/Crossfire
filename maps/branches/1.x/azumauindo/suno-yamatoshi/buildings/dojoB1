@@ -10,24 +10,24 @@ enter_x 23
 enter_y 55
 msg
 Created:  2004-08-03 Mikeeusa
-Modified: 2008-11-05 Rick Tanner
+Modified: 2008-12-24 Rick Tanner
 endmsg
 end
-arch blocked
+arch cave_15
 end
-arch blocked
+arch cave_15
 y 1
 end
-arch blocked
+arch cave_15
 y 2
 end
-arch blocked
+arch cave_15
 y 3
 end
-arch blocked
+arch cave_15
 y 4
 end
-arch blocked
+arch cave_15
 y 5
 end
 arch check_inv
@@ -795,7 +795,7 @@ end
 arch cwall_2_2_1
 y 63
 end
-arch blocked
+arch cave_15
 x 1
 end
 arch battleground
@@ -843,11 +843,11 @@ y 3
 speed 0.800000
 invisible 1
 end
-arch blocked
+arch cave_15
 x 1
 y 4
 end
-arch blocked
+arch cave_15
 x 1
 y 5
 end
@@ -1796,7 +1796,7 @@ arch cwall_3_1
 x 1
 y 63
 end
-arch blocked
+arch cave_15
 x 2
 end
 arch battleground
@@ -1844,11 +1844,11 @@ y 3
 speed 0.800000
 invisible 1
 end
-arch blocked
+arch cave_15
 x 2
 y 4
 end
-arch blocked
+arch cave_15
 x 2
 y 5
 end
@@ -1936,7 +1936,7 @@ arch cwall_3_1
 x 2
 y 63
 end
-arch blocked
+arch cave_15
 x 3
 end
 arch battleground
@@ -1984,11 +1984,11 @@ y 3
 speed 0.800000
 invisible 1
 end
-arch blocked
+arch cave_15
 x 3
 y 4
 end
-arch blocked
+arch cave_15
 x 3
 y 5
 end
@@ -2076,26 +2076,26 @@ arch cwall_3_1
 x 3
 y 63
 end
-arch blocked
+arch cave_15
 x 4
 end
-arch blocked
+arch cave_15
 x 4
 y 1
 end
-arch blocked
+arch cave_15
 x 4
 y 2
 end
-arch blocked
+arch cave_15
 x 4
 y 3
 end
-arch blocked
+arch cave_15
 x 4
 y 4
 end
-arch blocked
+arch cave_15
 x 4
 y 5
 end
@@ -2183,26 +2183,26 @@ arch cwall_3_1
 x 4
 y 63
 end
-arch blocked
+arch cave_15
 x 5
 end
-arch blocked
+arch cave_15
 x 5
 y 1
 end
-arch blocked
+arch cave_15
 x 5
 y 2
 end
-arch blocked
+arch cave_15
 x 5
 y 3
 end
-arch blocked
+arch cave_15
 x 5
 y 4
 end
-arch blocked
+arch cave_15
 x 5
 y 5
 end
@@ -2626,26 +2626,26 @@ arch cwall_3_1
 x 9
 y 63
 end
-arch blocked
+arch cave_15
 x 10
 end
-arch blocked
+arch cave_15
 x 10
 y 1
 end
-arch blocked
+arch cave_15
 x 10
 y 2
 end
-arch blocked
+arch cave_15
 x 10
 y 3
 end
-arch blocked
+arch cave_15
 x 10
 y 4
 end
-arch blocked
+arch cave_15
 x 10
 y 5
 end
@@ -2733,26 +2733,26 @@ arch cwall_3_1
 x 10
 y 63
 end
-arch blocked
+arch cave_15
 x 11
 end
-arch blocked
+arch cave_15
 x 11
 y 1
 end
-arch blocked
+arch cave_15
 x 11
 y 2
 end
-arch blocked
+arch cave_15
 x 11
 y 3
 end
-arch blocked
+arch cave_15
 x 11
 y 4
 end
-arch blocked
+arch cave_15
 x 11
 y 5
 end
@@ -2840,7 +2840,7 @@ arch cwall_3_1
 x 11
 y 63
 end
-arch blocked
+arch cave_15
 x 12
 end
 arch battleground
@@ -2888,11 +2888,11 @@ y 3
 speed 0.600000
 invisible 1
 end
-arch blocked
+arch cave_15
 x 12
 y 4
 end
-arch blocked
+arch cave_15
 x 12
 y 5
 end
@@ -2980,7 +2980,7 @@ arch cwall_3_1
 x 12
 y 63
 end
-arch blocked
+arch cave_15
 x 13
 end
 arch battleground
@@ -3028,11 +3028,11 @@ y 3
 speed 0.600000
 invisible 1
 end
-arch blocked
+arch cave_15
 x 13
 y 4
 end
-arch blocked
+arch cave_15
 x 13
 y 5
 end
@@ -3120,7 +3120,7 @@ arch cwall_3_1
 x 13
 y 63
 end
-arch blocked
+arch cave_15
 x 14
 end
 arch battleground
@@ -3168,11 +3168,11 @@ y 3
 speed 0.600000
 invisible 1
 end
-arch blocked
+arch cave_15
 x 14
 y 4
 end
-arch blocked
+arch cave_15
 x 14
 y 5
 end
@@ -3260,26 +3260,26 @@ arch cwall_3_1
 x 14
 y 63
 end
-arch blocked
+arch cave_15
 x 15
 end
-arch blocked
+arch cave_15
 x 15
 y 1
 end
-arch blocked
+arch cave_15
 x 15
 y 2
 end
-arch blocked
+arch cave_15
 x 15
 y 3
 end
-arch blocked
+arch cave_15
 x 15
 y 4
 end
-arch blocked
+arch cave_15
 x 15
 y 5
 end
@@ -3367,26 +3367,26 @@ arch cwall_3_1
 x 15
 y 63
 end
-arch blocked
+arch cave_15
 x 16
 end
-arch blocked
+arch cave_15
 x 16
 y 1
 end
-arch blocked
+arch cave_15
 x 16
 y 2
 end
-arch blocked
+arch cave_15
 x 16
 y 3
 end
-arch blocked
+arch cave_15
 x 16
 y 4
 end
-arch blocked
+arch cave_15
 x 16
 y 5
 end
@@ -3520,7 +3520,7 @@ arch magic_banned
 x 17
 y 46
 end
-arch blocked
+arch cave_15
 x 17
 y 46
 end
@@ -3528,7 +3528,7 @@ arch magic_banned
 x 17
 y 47
 end
-arch blocked
+arch cave_15
 x 17
 y 47
 end
@@ -3536,7 +3536,7 @@ arch magic_banned
 x 17
 y 48
 end
-arch blocked
+arch cave_15
 x 17
 y 48
 end
@@ -3544,7 +3544,7 @@ arch magic_banned
 x 17
 y 49
 end
-arch blocked
+arch cave_15
 x 17
 y 49
 end
@@ -3558,7 +3558,7 @@ sp 2
 x 17
 y 50
 end
-arch blocked
+arch cave_15
 x 17
 y 50
 end
@@ -3572,7 +3572,7 @@ sp 2
 x 17
 y 51
 end
-arch blocked
+arch cave_15
 x 17
 y 51
 end
@@ -3586,7 +3586,7 @@ sp 2
 x 17
 y 52
 end
-arch blocked
+arch cave_15
 x 17
 y 52
 end
@@ -3600,7 +3600,7 @@ sp 2
 x 17
 y 53
 end
-arch blocked
+arch cave_15
 x 17
 y 53
 end
@@ -3608,7 +3608,7 @@ arch magic_banned
 x 17
 y 54
 end
-arch blocked
+arch cave_15
 x 17
 y 54
 end
@@ -3622,7 +3622,7 @@ sp 2
 x 17
 y 55
 end
-arch blocked
+arch cave_15
 x 17
 y 55
 end
@@ -3636,7 +3636,7 @@ sp 2
 x 17
 y 56
 end
-arch blocked
+arch cave_15
 x 17
 y 56
 end
@@ -3650,7 +3650,7 @@ sp 2
 x 17
 y 57
 end
-arch blocked
+arch cave_15
 x 17
 y 57
 end
@@ -3658,7 +3658,7 @@ arch magic_banned
 x 17
 y 58
 end
-arch blocked
+arch cave_15
 x 17
 y 58
 end
@@ -3666,7 +3666,7 @@ arch magic_banned
 x 17
 y 59
 end
-arch blocked
+arch cave_15
 x 17
 y 59
 end
@@ -3674,7 +3674,7 @@ arch magic_banned
 x 17
 y 60
 end
-arch blocked
+arch cave_15
 x 17
 y 60
 end
@@ -3682,7 +3682,7 @@ arch magic_banned
 x 17
 y 61
 end
-arch blocked
+arch cave_15
 x 17
 y 61
 end
@@ -3782,7 +3782,7 @@ arch magic_banned
 x 18
 y 46
 end
-arch blocked
+arch cave_15
 x 18
 y 46
 end
@@ -3796,7 +3796,7 @@ sp 2
 x 18
 y 47
 end
-arch blocked
+arch cave_15
 x 18
 y 47
 end
@@ -3810,7 +3810,7 @@ sp 2
 x 18
 y 48
 end
-arch blocked
+arch cave_15
 x 18
 y 48
 end
@@ -3894,7 +3894,7 @@ sp 2
 x 18
 y 54
 end
-arch blocked
+arch cave_15
 x 18
 y 54
 end
@@ -3908,7 +3908,7 @@ sp 2
 x 18
 y 55
 end
-arch blocked
+arch cave_15
 x 18
 y 55
 end
@@ -3922,7 +3922,7 @@ sp 2
 x 18
 y 56
 end
-arch blocked
+arch cave_15
 x 18
 y 56
 end
@@ -3936,7 +3936,7 @@ sp 2
 x 18
 y 57
 end
-arch blocked
+arch cave_15
 x 18
 y 57
 end
@@ -3950,7 +3950,7 @@ sp 2
 x 18
 y 58
 end
-arch blocked
+arch cave_15
 x 18
 y 58
 end
@@ -3958,7 +3958,7 @@ arch magic_banned
 x 18
 y 59
 end
-arch blocked
+arch cave_15
 x 18
 y 59
 end
@@ -3966,7 +3966,7 @@ arch magic_banned
 x 18
 y 60
 end
-arch blocked
+arch cave_15
 x 18
 y 60
 end
@@ -3974,7 +3974,7 @@ arch magic_banned
 x 18
 y 61
 end
-arch blocked
+arch cave_15
 x 18
 y 61
 end
@@ -4074,7 +4074,7 @@ arch magic_banned
 x 19
 y 46
 end
-arch blocked
+arch cave_15
 x 19
 y 46
 end
@@ -4188,7 +4188,7 @@ sp 2
 x 19
 y 55
 end
-arch blocked
+arch cave_15
 x 19
 y 55
 end
@@ -4202,7 +4202,7 @@ sp 2
 x 19
 y 56
 end
-arch blocked
+arch cave_15
 x 19
 y 56
 end
@@ -4216,7 +4216,7 @@ sp 2
 x 19
 y 57
 end
-arch blocked
+arch cave_15
 x 19
 y 57
 end
@@ -4230,7 +4230,7 @@ sp 2
 x 19
 y 58
 end
-arch blocked
+arch cave_15
 x 19
 y 58
 end
@@ -4238,7 +4238,7 @@ arch magic_banned
 x 19
 y 59
 end
-arch blocked
+arch cave_15
 x 19
 y 59
 end
@@ -4246,7 +4246,7 @@ arch magic_banned
 x 19
 y 60
 end
-arch blocked
+arch cave_15
 x 19
 y 60
 end
@@ -4254,7 +4254,7 @@ arch magic_banned
 x 19
 y 61
 end
-arch blocked
+arch cave_15
 x 19
 y 61
 end
@@ -4354,7 +4354,7 @@ arch magic_banned
 x 20
 y 46
 end
-arch blocked
+arch cave_15
 x 20
 y 46
 end
@@ -4456,7 +4456,7 @@ sp 2
 x 20
 y 55
 end
-arch blocked
+arch cave_15
 x 20
 y 55
 end
@@ -4470,7 +4470,7 @@ sp 2
 x 20
 y 56
 end
-arch blocked
+arch cave_15
 x 20
 y 56
 end
@@ -4484,7 +4484,7 @@ sp 2
 x 20
 y 57
 end
-arch blocked
+arch cave_15
 x 20
 y 57
 end
@@ -4498,7 +4498,7 @@ sp 2
 x 20
 y 58
 end
-arch blocked
+arch cave_15
 x 20
 y 58
 end
@@ -4506,7 +4506,7 @@ arch magic_banned
 x 20
 y 59
 end
-arch blocked
+arch cave_15
 x 20
 y 59
 end
@@ -4514,7 +4514,7 @@ arch magic_banned
 x 20
 y 60
 end
-arch blocked
+arch cave_15
 x 20
 y 60
 end
@@ -4522,7 +4522,7 @@ arch magic_banned
 x 20
 y 61
 end
-arch blocked
+arch cave_15
 x 20
 y 61
 end
@@ -4628,7 +4628,7 @@ sp 2
 x 21
 y 46
 end
-arch blocked
+arch cave_15
 x 21
 y 46
 end
@@ -4756,7 +4756,7 @@ sp 2
 x 21
 y 56
 end
-arch blocked
+arch cave_15
 x 21
 y 56
 end
@@ -4770,7 +4770,7 @@ sp 2
 x 21
 y 57
 end
-arch blocked
+arch cave_15
 x 21
 y 57
 end
@@ -4784,7 +4784,7 @@ sp 2
 x 21
 y 58
 end
-arch blocked
+arch cave_15
 x 21
 y 58
 end
@@ -4792,7 +4792,7 @@ arch magic_banned
 x 21
 y 59
 end
-arch blocked
+arch cave_15
 x 21
 y 59
 end
@@ -4800,7 +4800,7 @@ arch magic_banned
 x 21
 y 60
 end
-arch blocked
+arch cave_15
 x 21
 y 60
 end
@@ -4808,7 +4808,7 @@ arch magic_banned
 x 21
 y 61
 end
-arch blocked
+arch cave_15
 x 21
 y 61
 end
@@ -4918,7 +4918,7 @@ name_pl blood
 x 22
 y 30
 end
-arch blocked
+arch cave_15
 x 22
 y 30
 end
@@ -4936,7 +4936,7 @@ name_pl blood
 x 22
 y 31
 end
-arch blocked
+arch cave_15
 x 22
 y 31
 end
@@ -4954,7 +4954,7 @@ name_pl blood
 x 22
 y 32
 end
-arch blocked
+arch cave_15
 x 22
 y 32
 end
@@ -4972,7 +4972,7 @@ name_pl blood
 x 22
 y 33
 end
-arch blocked
+arch cave_15
 x 22
 y 33
 end
@@ -4990,7 +4990,7 @@ name_pl blood
 x 22
 y 34
 end
-arch blocked
+arch cave_15
 x 22
 y 34
 end
@@ -5008,7 +5008,7 @@ name_pl blood
 x 22
 y 35
 end
-arch blocked
+arch cave_15
 x 22
 y 35
 end
@@ -5026,7 +5026,7 @@ name_pl blood
 x 22
 y 36
 end
-arch blocked
+arch cave_15
 x 22
 y 36
 end
@@ -5044,7 +5044,7 @@ name_pl blood
 x 22
 y 37
 end
-arch blocked
+arch cave_15
 x 22
 y 37
 end
@@ -5062,7 +5062,7 @@ name_pl blood
 x 22
 y 38
 end
-arch blocked
+arch cave_15
 x 22
 y 38
 end
@@ -5080,7 +5080,7 @@ name_pl blood
 x 22
 y 39
 end
-arch blocked
+arch cave_15
 x 22
 y 39
 end
@@ -5098,7 +5098,7 @@ name_pl blood
 x 22
 y 40
 end
-arch blocked
+arch cave_15
 x 22
 y 40
 end
@@ -5116,7 +5116,7 @@ name_pl blood
 x 22
 y 41
 end
-arch blocked
+arch cave_15
 x 22
 y 41
 end
@@ -5134,7 +5134,7 @@ name_pl blood
 x 22
 y 42
 end
-arch blocked
+arch cave_15
 x 22
 y 42
 end
@@ -5152,7 +5152,7 @@ name_pl blood
 x 22
 y 43
 end
-arch blocked
+arch cave_15
 x 22
 y 43
 end
@@ -5170,7 +5170,7 @@ name_pl blood
 x 22
 y 44
 end
-arch blocked
+arch cave_15
 x 22
 y 44
 end
@@ -5188,7 +5188,7 @@ name_pl blood
 x 22
 y 45
 end
-arch blocked
+arch cave_15
 x 22
 y 45
 end
@@ -5202,7 +5202,7 @@ sp 2
 x 22
 y 46
 end
-arch blocked
+arch cave_15
 x 22
 y 46
 end
@@ -5336,7 +5336,7 @@ sp 2
 x 22
 y 57
 end
-arch blocked
+arch cave_15
 x 22
 y 57
 end
@@ -5350,7 +5350,7 @@ sp 2
 x 22
 y 58
 end
-arch blocked
+arch cave_15
 x 22
 y 58
 end
@@ -5358,7 +5358,7 @@ arch magic_banned
 x 22
 y 59
 end
-arch blocked
+arch cave_15
 x 22
 y 59
 end
@@ -5366,7 +5366,7 @@ arch magic_banned
 x 22
 y 60
 end
-arch blocked
+arch cave_15
 x 22
 y 60
 end
@@ -5374,7 +5374,7 @@ arch magic_banned
 x 22
 y 61
 end
-arch blocked
+arch cave_15
 x 22
 y 61
 end
@@ -5484,7 +5484,7 @@ name_pl blood
 x 23
 y 30
 end
-arch blocked
+arch cave_15
 x 23
 y 30
 end
@@ -5502,7 +5502,7 @@ name_pl blood
 x 23
 y 31
 end
-arch blocked
+arch cave_15
 x 23
 y 31
 end
@@ -5520,7 +5520,7 @@ name_pl blood
 x 23
 y 32
 end
-arch blocked
+arch cave_15
 x 23
 y 32
 end
@@ -5538,7 +5538,7 @@ name_pl blood
 x 23
 y 33
 end
-arch blocked
+arch cave_15
 x 23
 y 33
 end
@@ -5556,7 +5556,7 @@ name_pl blood
 x 23
 y 34
 end
-arch blocked
+arch cave_15
 x 23
 y 34
 end
@@ -5574,7 +5574,7 @@ name_pl blood
 x 23
 y 35
 end
-arch blocked
+arch cave_15
 x 23
 y 35
 end
@@ -5592,7 +5592,7 @@ name_pl blood
 x 23
 y 36
 end
-arch blocked
+arch cave_15
 x 23
 y 36
 end
@@ -5754,7 +5754,7 @@ name_pl blood
 x 23
 y 45
 end
-arch blocked
+arch cave_15
 x 23
 y 45
 end
@@ -5768,7 +5768,7 @@ sp 2
 x 23
 y 46
 end
-arch blocked
+arch cave_15
 x 23
 y 46
 end
@@ -5909,7 +5909,7 @@ sp 2
 x 23
 y 57
 end
-arch blocked
+arch cave_15
 x 23
 y 57
 end
@@ -5923,7 +5923,7 @@ sp 2
 x 23
 y 58
 end
-arch blocked
+arch cave_15
 x 23
 y 58
 end
@@ -5931,7 +5931,7 @@ arch magic_banned
 x 23
 y 59
 end
-arch blocked
+arch cave_15
 x 23
 y 59
 end
@@ -5939,7 +5939,7 @@ arch magic_banned
 x 23
 y 60
 end
-arch blocked
+arch cave_15
 x 23
 y 60
 end
@@ -5947,7 +5947,7 @@ arch magic_banned
 x 23
 y 61
 end
-arch blocked
+arch cave_15
 x 23
 y 61
 end
@@ -6057,7 +6057,7 @@ name_pl blood
 x 24
 y 30
 end
-arch blocked
+arch cave_15
 x 24
 y 30
 end
@@ -6075,7 +6075,7 @@ name_pl blood
 x 24
 y 31
 end
-arch blocked
+arch cave_15
 x 24
 y 31
 end
@@ -6345,7 +6345,7 @@ name_pl blood
 x 24
 y 45
 end
-arch blocked
+arch cave_15
 x 24
 y 45
 end
@@ -6363,7 +6363,7 @@ name_pl blood
 x 24
 y 46
 end
-arch blocked
+arch cave_15
 x 24
 y 46
 end
@@ -6377,7 +6377,7 @@ sp 2
 x 24
 y 47
 end
-arch blocked
+arch cave_15
 x 24
 y 47
 end
@@ -6391,7 +6391,7 @@ sp 2
 x 24
 y 48
 end
-arch blocked
+arch cave_15
 x 24
 y 48
 end
@@ -6505,7 +6505,7 @@ sp 2
 x 24
 y 57
 end
-arch blocked
+arch cave_15
 x 24
 y 57
 end
@@ -6519,7 +6519,7 @@ sp 2
 x 24
 y 58
 end
-arch blocked
+arch cave_15
 x 24
 y 58
 end
@@ -6527,7 +6527,7 @@ arch magic_banned
 x 24
 y 59
 end
-arch blocked
+arch cave_15
 x 24
 y 59
 end
@@ -6535,7 +6535,7 @@ arch magic_banned
 x 24
 y 60
 end
-arch blocked
+arch cave_15
 x 24
 y 60
 end
@@ -6543,7 +6543,7 @@ arch magic_banned
 x 24
 y 61
 end
-arch blocked
+arch cave_15
 x 24
 y 61
 end
@@ -6653,7 +6653,7 @@ name_pl blood
 x 25
 y 30
 end
-arch blocked
+arch cave_15
 x 25
 y 30
 end
@@ -7004,7 +7004,7 @@ sp 2
 x 25
 y 48
 end
-arch blocked
+arch cave_15
 x 25
 y 48
 end
@@ -7084,7 +7084,7 @@ sp 2
 x 25
 y 54
 end
-arch blocked
+arch cave_15
 x 25
 y 54
 end
@@ -7098,7 +7098,7 @@ sp 2
 x 25
 y 55
 end
-arch blocked
+arch cave_15
 x 25
 y 55
 end
@@ -7112,7 +7112,7 @@ sp 2
 x 25
 y 56
 end
-arch blocked
+arch cave_15
 x 25
 y 56
 end
@@ -7126,7 +7126,7 @@ sp 2
 x 25
 y 57
 end
-arch blocked
+arch cave_15
 x 25
 y 57
 end
@@ -7140,7 +7140,7 @@ sp 2
 x 25
 y 58
 end
-arch blocked
+arch cave_15
 x 25
 y 58
 end
@@ -7148,7 +7148,7 @@ arch magic_banned
 x 25
 y 59
 end
-arch blocked
+arch cave_15
 x 25
 y 59
 end
@@ -7156,7 +7156,7 @@ arch magic_banned
 x 25
 y 60
 end
-arch blocked
+arch cave_15
 x 25
 y 60
 end
@@ -7164,7 +7164,7 @@ arch magic_banned
 x 25
 y 61
 end
-arch blocked
+arch cave_15
 x 25
 y 61
 end
@@ -7274,7 +7274,7 @@ name_pl blood
 x 26
 y 30
 end
-arch blocked
+arch cave_15
 x 26
 y 30
 end
@@ -7818,7 +7818,7 @@ name_pl blood
 x 26
 y 57
 end
-arch blocked
+arch cave_15
 x 26
 y 57
 end
@@ -7836,7 +7836,7 @@ name_pl blood
 x 26
 y 58
 end
-arch blocked
+arch cave_15
 x 26
 y 58
 end
@@ -7854,7 +7854,7 @@ name_pl blood
 x 26
 y 59
 end
-arch blocked
+arch cave_15
 x 26
 y 59
 end
@@ -7872,7 +7872,7 @@ name_pl blood
 x 26
 y 60
 end
-arch blocked
+arch cave_15
 x 26
 y 60
 end
@@ -7880,7 +7880,7 @@ arch magic_banned
 x 26
 y 61
 end
-arch blocked
+arch cave_15
 x 26
 y 61
 end
@@ -7990,7 +7990,7 @@ name_pl blood
 x 27
 y 30
 end
-arch blocked
+arch cave_15
 x 27
 y 30
 end
@@ -8544,7 +8544,7 @@ name_pl blood
 x 27
 y 57
 end
-arch blocked
+arch cave_15
 x 27
 y 57
 end
@@ -8562,7 +8562,7 @@ name_pl blood
 x 27
 y 58
 end
-arch blocked
+arch cave_15
 x 27
 y 58
 end
@@ -8580,7 +8580,7 @@ name_pl blood
 x 27
 y 59
 end
-arch blocked
+arch cave_15
 x 27
 y 59
 end
@@ -8598,7 +8598,7 @@ name_pl blood
 x 27
 y 60
 end
-arch blocked
+arch cave_15
 x 27
 y 60
 end
@@ -8606,7 +8606,7 @@ arch magic_banned
 x 27
 y 61
 end
-arch blocked
+arch cave_15
 x 27
 y 61
 end
@@ -8716,7 +8716,7 @@ name_pl blood
 x 28
 y 30
 end
-arch blocked
+arch cave_15
 x 28
 y 30
 end
@@ -9266,7 +9266,7 @@ name_pl blood
 x 28
 y 57
 end
-arch blocked
+arch cave_15
 x 28
 y 57
 end
@@ -9284,7 +9284,7 @@ name_pl blood
 x 28
 y 58
 end
-arch blocked
+arch cave_15
 x 28
 y 58
 end
@@ -9302,7 +9302,7 @@ name_pl blood
 x 28
 y 59
 end
-arch blocked
+arch cave_15
 x 28
 y 59
 end
@@ -9320,7 +9320,7 @@ name_pl blood
 x 28
 y 60
 end
-arch blocked
+arch cave_15
 x 28
 y 60
 end
@@ -9328,7 +9328,7 @@ arch magic_banned
 x 28
 y 61
 end
-arch blocked
+arch cave_15
 x 28
 y 61
 end
@@ -9438,7 +9438,7 @@ name_pl blood
 x 29
 y 30
 end
-arch blocked
+arch cave_15
 x 29
 y 30
 end
@@ -10012,7 +10012,7 @@ name_pl blood
 x 29
 y 58
 end
-arch blocked
+arch cave_15
 x 29
 y 58
 end
@@ -10030,7 +10030,7 @@ name_pl blood
 x 29
 y 59
 end
-arch blocked
+arch cave_15
 x 29
 y 59
 end
@@ -10048,7 +10048,7 @@ name_pl blood
 x 29
 y 60
 end
-arch blocked
+arch cave_15
 x 29
 y 60
 end
@@ -10056,7 +10056,7 @@ arch magic_banned
 x 29
 y 61
 end
-arch blocked
+arch cave_15
 x 29
 y 61
 end
@@ -10166,7 +10166,7 @@ name_pl blood
 x 30
 y 30
 end
-arch blocked
+arch cave_15
 x 30
 y 30
 end
@@ -10739,7 +10739,7 @@ name_pl blood
 x 30
 y 58
 end
-arch blocked
+arch cave_15
 x 30
 y 58
 end
@@ -10757,7 +10757,7 @@ name_pl blood
 x 30
 y 59
 end
-arch blocked
+arch cave_15
 x 30
 y 59
 end
@@ -10775,7 +10775,7 @@ name_pl blood
 x 30
 y 60
 end
-arch blocked
+arch cave_15
 x 30
 y 60
 end
@@ -10783,7 +10783,7 @@ arch magic_banned
 x 30
 y 61
 end
-arch blocked
+arch cave_15
 x 30
 y 61
 end
@@ -10893,7 +10893,7 @@ name_pl blood
 x 31
 y 30
 end
-arch blocked
+arch cave_15
 x 31
 y 30
 end
@@ -11426,7 +11426,7 @@ name_pl blood
 x 31
 y 58
 end
-arch blocked
+arch cave_15
 x 31
 y 58
 end
@@ -11444,7 +11444,7 @@ name_pl blood
 x 31
 y 59
 end
-arch blocked
+arch cave_15
 x 31
 y 59
 end
@@ -11462,7 +11462,7 @@ name_pl blood
 x 31
 y 60
 end
-arch blocked
+arch cave_15
 x 31
 y 60
 end
@@ -11470,7 +11470,7 @@ arch magic_banned
 x 31
 y 61
 end
-arch blocked
+arch cave_15
 x 31
 y 61
 end
@@ -11580,7 +11580,7 @@ name_pl blood
 x 32
 y 30
 end
-arch blocked
+arch cave_15
 x 32
 y 30
 end
@@ -11598,7 +11598,7 @@ name_pl blood
 x 32
 y 31
 end
-arch blocked
+arch cave_15
 x 32
 y 31
 end
@@ -12042,7 +12042,7 @@ name_pl blood
 x 32
 y 59
 end
-arch blocked
+arch cave_15
 x 32
 y 59
 end
@@ -12060,7 +12060,7 @@ name_pl blood
 x 32
 y 60
 end
-arch blocked
+arch cave_15
 x 32
 y 60
 end
@@ -12068,7 +12068,7 @@ arch magic_banned
 x 32
 y 61
 end
-arch blocked
+arch cave_15
 x 32
 y 61
 end
@@ -12178,7 +12178,7 @@ name_pl blood
 x 33
 y 30
 end
-arch blocked
+arch cave_15
 x 33
 y 30
 end
@@ -12196,7 +12196,7 @@ name_pl blood
 x 33
 y 31
 end
-arch blocked
+arch cave_15
 x 33
 y 31
 end
@@ -12214,7 +12214,7 @@ name_pl blood
 x 33
 y 32
 end
-arch blocked
+arch cave_15
 x 33
 y 32
 end
@@ -12637,7 +12637,7 @@ name_pl blood
 x 33
 y 59
 end
-arch blocked
+arch cave_15
 x 33
 y 59
 end
@@ -12655,7 +12655,7 @@ name_pl blood
 x 33
 y 60
 end
-arch blocked
+arch cave_15
 x 33
 y 60
 end
@@ -12663,7 +12663,7 @@ arch magic_banned
 x 33
 y 61
 end
-arch blocked
+arch cave_15
 x 33
 y 61
 end
@@ -12773,7 +12773,7 @@ name_pl blood
 x 34
 y 30
 end
-arch blocked
+arch cave_15
 x 34
 y 30
 end
@@ -12791,7 +12791,7 @@ name_pl blood
 x 34
 y 31
 end
-arch blocked
+arch cave_15
 x 34
 y 31
 end
@@ -12809,7 +12809,7 @@ name_pl blood
 x 34
 y 32
 end
-arch blocked
+arch cave_15
 x 34
 y 32
 end
@@ -13213,7 +13213,7 @@ name_pl blood
 x 34
 y 59
 end
-arch blocked
+arch cave_15
 x 34
 y 59
 end
@@ -13231,7 +13231,7 @@ name_pl blood
 x 34
 y 60
 end
-arch blocked
+arch cave_15
 x 34
 y 60
 end
@@ -13366,7 +13366,7 @@ name_pl blood
 x 35
 y 30
 end
-arch blocked
+arch cave_15
 x 35
 y 30
 end
@@ -13384,7 +13384,7 @@ name_pl blood
 x 35
 y 31
 end
-arch blocked
+arch cave_15
 x 35
 y 31
 end
@@ -13402,7 +13402,7 @@ name_pl blood
 x 35
 y 32
 end
-arch blocked
+arch cave_15
 x 35
 y 32
 end
@@ -13821,7 +13821,7 @@ name_pl blood
 x 35
 y 60
 end
-arch blocked
+arch cave_15
 x 35
 y 60
 end
@@ -13956,7 +13956,7 @@ name_pl blood
 x 36
 y 30
 end
-arch blocked
+arch cave_15
 x 36
 y 30
 end
@@ -13974,7 +13974,7 @@ name_pl blood
 x 36
 y 31
 end
-arch blocked
+arch cave_15
 x 36
 y 31
 end
@@ -13992,7 +13992,7 @@ name_pl blood
 x 36
 y 32
 end
-arch blocked
+arch cave_15
 x 36
 y 32
 end
@@ -14410,7 +14410,7 @@ name_pl blood
 x 36
 y 60
 end
-arch blocked
+arch cave_15
 x 36
 y 60
 end
@@ -14418,7 +14418,7 @@ arch magic_banned
 x 36
 y 61
 end
-arch blocked
+arch cave_15
 x 36
 y 61
 end
@@ -14426,7 +14426,7 @@ arch magic_banned
 x 36
 y 62
 end
-arch blocked
+arch cave_15
 x 36
 y 62
 end
@@ -14434,7 +14434,7 @@ arch magic_banned
 x 36
 y 63
 end
-arch blocked
+arch cave_15
 x 36
 y 63
 end
@@ -14494,7 +14494,7 @@ name_pl blood
 x 37
 y 30
 end
-arch blocked
+arch cave_15
 x 37
 y 30
 end
@@ -14512,7 +14512,7 @@ name_pl blood
 x 37
 y 31
 end
-arch blocked
+arch cave_15
 x 37
 y 31
 end
@@ -14530,7 +14530,7 @@ name_pl blood
 x 37
 y 32
 end
-arch blocked
+arch cave_15
 x 37
 y 32
 end
@@ -14946,7 +14946,7 @@ name_pl blood
 x 37
 y 60
 end
-arch blocked
+arch cave_15
 x 37
 y 60
 end
@@ -14954,7 +14954,7 @@ arch magic_banned
 x 37
 y 61
 end
-arch blocked
+arch cave_15
 x 37
 y 61
 end
@@ -14962,7 +14962,7 @@ arch magic_banned
 x 37
 y 62
 end
-arch blocked
+arch cave_15
 x 37
 y 62
 end
@@ -14970,7 +14970,7 @@ arch magic_banned
 x 37
 y 63
 end
-arch blocked
+arch cave_15
 x 37
 y 63
 end
@@ -15030,7 +15030,7 @@ name_pl blood
 x 38
 y 30
 end
-arch blocked
+arch cave_15
 x 38
 y 30
 end
@@ -15048,7 +15048,7 @@ name_pl blood
 x 38
 y 31
 end
-arch blocked
+arch cave_15
 x 38
 y 31
 end
@@ -15066,7 +15066,7 @@ name_pl blood
 x 38
 y 32
 end
-arch blocked
+arch cave_15
 x 38
 y 32
 end
@@ -15488,7 +15488,7 @@ name_pl blood
 x 38
 y 60
 end
-arch blocked
+arch cave_15
 x 38
 y 60
 end
@@ -15496,7 +15496,7 @@ arch magic_banned
 x 38
 y 61
 end
-arch blocked
+arch cave_15
 x 38
 y 61
 end
@@ -15504,7 +15504,7 @@ arch magic_banned
 x 38
 y 62
 end
-arch blocked
+arch cave_15
 x 38
 y 62
 end
@@ -15512,7 +15512,7 @@ arch magic_banned
 x 38
 y 63
 end
-arch blocked
+arch cave_15
 x 38
 y 63
 end
@@ -15572,7 +15572,7 @@ name_pl blood
 x 39
 y 30
 end
-arch blocked
+arch cave_15
 x 39
 y 30
 end
@@ -15590,7 +15590,7 @@ name_pl blood
 x 39
 y 31
 end
-arch blocked
+arch cave_15
 x 39
 y 31
 end
@@ -15608,7 +15608,7 @@ name_pl blood
 x 39
 y 32
 end
-arch blocked
+arch cave_15
 x 39
 y 32
 end
@@ -16016,7 +16016,7 @@ name_pl blood
 x 39
 y 60
 end
-arch blocked
+arch cave_15
 x 39
 y 60
 end
@@ -16024,7 +16024,7 @@ arch magic_banned
 x 39
 y 61
 end
-arch blocked
+arch cave_15
 x 39
 y 61
 end
@@ -16032,7 +16032,7 @@ arch magic_banned
 x 39
 y 62
 end
-arch blocked
+arch cave_15
 x 39
 y 62
 end
@@ -16040,7 +16040,7 @@ arch magic_banned
 x 39
 y 63
 end
-arch blocked
+arch cave_15
 x 39
 y 63
 end
@@ -16100,7 +16100,7 @@ name_pl blood
 x 40
 y 30
 end
-arch blocked
+arch cave_15
 x 40
 y 30
 end
@@ -16118,7 +16118,7 @@ name_pl blood
 x 40
 y 31
 end
-arch blocked
+arch cave_15
 x 40
 y 31
 end
@@ -16136,7 +16136,7 @@ name_pl blood
 x 40
 y 32
 end
-arch blocked
+arch cave_15
 x 40
 y 32
 end
@@ -16562,7 +16562,7 @@ name_pl blood
 x 40
 y 60
 end
-arch blocked
+arch cave_15
 x 40
 y 60
 end
@@ -16697,7 +16697,7 @@ name_pl blood
 x 41
 y 30
 end
-arch blocked
+arch cave_15
 x 41
 y 30
 end
@@ -16715,7 +16715,7 @@ name_pl blood
 x 41
 y 31
 end
-arch blocked
+arch cave_15
 x 41
 y 31
 end
@@ -16733,7 +16733,7 @@ name_pl blood
 x 41
 y 32
 end
-arch blocked
+arch cave_15
 x 41
 y 32
 end
@@ -16751,7 +16751,7 @@ name_pl blood
 x 41
 y 33
 end
-arch blocked
+arch cave_15
 x 41
 y 33
 end
@@ -17163,7 +17163,7 @@ name_pl blood
 x 41
 y 60
 end
-arch blocked
+arch cave_15
 x 41
 y 60
 end
@@ -17290,7 +17290,7 @@ name_pl blood
 x 42
 y 30
 end
-arch blocked
+arch cave_15
 x 42
 y 30
 end
@@ -17308,7 +17308,7 @@ name_pl blood
 x 42
 y 31
 end
-arch blocked
+arch cave_15
 x 42
 y 31
 end
@@ -17326,7 +17326,7 @@ name_pl blood
 x 42
 y 32
 end
-arch blocked
+arch cave_15
 x 42
 y 32
 end
@@ -17344,7 +17344,7 @@ name_pl blood
 x 42
 y 33
 end
-arch blocked
+arch cave_15
 x 42
 y 33
 end
@@ -17744,7 +17744,7 @@ name_pl blood
 x 42
 y 60
 end
-arch blocked
+arch cave_15
 x 42
 y 60
 end
@@ -17752,7 +17752,7 @@ arch magic_banned
 x 42
 y 61
 end
-arch blocked
+arch cave_15
 x 42
 y 61
 end
@@ -17844,7 +17844,7 @@ arch magic_banned
 x 43
 y 21
 end
-arch blocked
+arch cave_15
 x 43
 y 21
 end
@@ -17852,7 +17852,7 @@ arch magic_banned
 x 43
 y 22
 end
-arch blocked
+arch cave_15
 x 43
 y 22
 end
@@ -17860,7 +17860,7 @@ arch magic_banned
 x 43
 y 23
 end
-arch blocked
+arch cave_15
 x 43
 y 23
 end
@@ -17868,7 +17868,7 @@ arch magic_banned
 x 43
 y 24
 end
-arch blocked
+arch cave_15
 x 43
 y 24
 end
@@ -17876,7 +17876,7 @@ arch magic_banned
 x 43
 y 25
 end
-arch blocked
+arch cave_15
 x 43
 y 25
 end
@@ -17884,7 +17884,7 @@ arch magic_banned
 x 43
 y 26
 end
-arch blocked
+arch cave_15
 x 43
 y 26
 end
@@ -17892,7 +17892,7 @@ arch magic_banned
 x 43
 y 27
 end
-arch blocked
+arch cave_15
 x 43
 y 27
 end
@@ -17900,7 +17900,7 @@ arch magic_banned
 x 43
 y 28
 end
-arch blocked
+arch cave_15
 x 43
 y 28
 end
@@ -17908,7 +17908,7 @@ arch magic_banned
 x 43
 y 29
 end
-arch blocked
+arch cave_15
 x 43
 y 29
 end
@@ -17926,7 +17926,7 @@ name_pl blood
 x 43
 y 30
 end
-arch blocked
+arch cave_15
 x 43
 y 30
 end
@@ -17944,7 +17944,7 @@ name_pl blood
 x 43
 y 31
 end
-arch blocked
+arch cave_15
 x 43
 y 31
 end
@@ -17962,7 +17962,7 @@ name_pl blood
 x 43
 y 32
 end
-arch blocked
+arch cave_15
 x 43
 y 32
 end
@@ -17980,7 +17980,7 @@ name_pl blood
 x 43
 y 33
 end
-arch blocked
+arch cave_15
 x 43
 y 33
 end
@@ -18399,7 +18399,7 @@ name_pl blood
 x 43
 y 60
 end
-arch blocked
+arch cave_15
 x 43
 y 60
 end
@@ -18407,7 +18407,7 @@ arch magic_banned
 x 43
 y 61
 end
-arch blocked
+arch cave_15
 x 43
 y 61
 end
@@ -18499,7 +18499,7 @@ arch magic_banned
 x 44
 y 21
 end
-arch blocked
+arch cave_15
 x 44
 y 21
 end
@@ -18507,7 +18507,7 @@ arch magic_banned
 x 44
 y 22
 end
-arch blocked
+arch cave_15
 x 44
 y 22
 end
@@ -18515,7 +18515,7 @@ arch magic_banned
 x 44
 y 23
 end
-arch blocked
+arch cave_15
 x 44
 y 23
 end
@@ -18523,7 +18523,7 @@ arch magic_banned
 x 44
 y 24
 end
-arch blocked
+arch cave_15
 x 44
 y 24
 end
@@ -18531,7 +18531,7 @@ arch magic_banned
 x 44
 y 25
 end
-arch blocked
+arch cave_15
 x 44
 y 25
 end
@@ -18539,7 +18539,7 @@ arch magic_banned
 x 44
 y 26
 end
-arch blocked
+arch cave_15
 x 44
 y 26
 end
@@ -18547,7 +18547,7 @@ arch magic_banned
 x 44
 y 27
 end
-arch blocked
+arch cave_15
 x 44
 y 27
 end
@@ -18555,7 +18555,7 @@ arch magic_banned
 x 44
 y 28
 end
-arch blocked
+arch cave_15
 x 44
 y 28
 end
@@ -18563,7 +18563,7 @@ arch magic_banned
 x 44
 y 29
 end
-arch blocked
+arch cave_15
 x 44
 y 29
 end
@@ -18581,7 +18581,7 @@ name_pl blood
 x 44
 y 30
 end
-arch blocked
+arch cave_15
 x 44
 y 30
 end
@@ -18599,7 +18599,7 @@ name_pl blood
 x 44
 y 31
 end
-arch blocked
+arch cave_15
 x 44
 y 31
 end
@@ -18617,7 +18617,7 @@ name_pl blood
 x 44
 y 32
 end
-arch blocked
+arch cave_15
 x 44
 y 32
 end
@@ -18635,7 +18635,7 @@ name_pl blood
 x 44
 y 33
 end
-arch blocked
+arch cave_15
 x 44
 y 33
 end
@@ -19086,7 +19086,7 @@ name_pl blood
 x 44
 y 60
 end
-arch blocked
+arch cave_15
 x 44
 y 60
 end
@@ -19094,7 +19094,7 @@ arch magic_banned
 x 44
 y 61
 end
-arch blocked
+arch cave_15
 x 44
 y 61
 end
@@ -19186,7 +19186,7 @@ arch magic_banned
 x 45
 y 21
 end
-arch blocked
+arch cave_15
 x 45
 y 21
 end
@@ -19194,7 +19194,7 @@ arch magic_banned
 x 45
 y 22
 end
-arch blocked
+arch cave_15
 x 45
 y 22
 end
@@ -19202,7 +19202,7 @@ arch magic_banned
 x 45
 y 23
 end
-arch blocked
+arch cave_15
 x 45
 y 23
 end
@@ -19210,7 +19210,7 @@ arch magic_banned
 x 45
 y 24
 end
-arch blocked
+arch cave_15
 x 45
 y 24
 end
@@ -19218,7 +19218,7 @@ arch magic_banned
 x 45
 y 25
 end
-arch blocked
+arch cave_15
 x 45
 y 25
 end
@@ -19226,7 +19226,7 @@ arch magic_banned
 x 45
 y 26
 end
-arch blocked
+arch cave_15
 x 45
 y 26
 end
@@ -19234,7 +19234,7 @@ arch magic_banned
 x 45
 y 27
 end
-arch blocked
+arch cave_15
 x 45
 y 27
 end
@@ -19242,7 +19242,7 @@ arch magic_banned
 x 45
 y 28
 end
-arch blocked
+arch cave_15
 x 45
 y 28
 end
@@ -19250,7 +19250,7 @@ arch magic_banned
 x 45
 y 29
 end
-arch blocked
+arch cave_15
 x 45
 y 29
 end
@@ -19268,7 +19268,7 @@ name_pl blood
 x 45
 y 30
 end
-arch blocked
+arch cave_15
 x 45
 y 30
 end
@@ -19286,7 +19286,7 @@ name_pl blood
 x 45
 y 31
 end
-arch blocked
+arch cave_15
 x 45
 y 31
 end
@@ -19304,7 +19304,7 @@ name_pl blood
 x 45
 y 32
 end
-arch blocked
+arch cave_15
 x 45
 y 32
 end
@@ -19322,7 +19322,7 @@ name_pl blood
 x 45
 y 33
 end
-arch blocked
+arch cave_15
 x 45
 y 33
 end
@@ -19340,7 +19340,7 @@ name_pl blood
 x 45
 y 34
 end
-arch blocked
+arch cave_15
 x 45
 y 34
 end
@@ -19815,7 +19815,7 @@ name_pl blood
 x 45
 y 60
 end
-arch blocked
+arch cave_15
 x 45
 y 60
 end
@@ -19823,7 +19823,7 @@ arch magic_banned
 x 45
 y 61
 end
-arch blocked
+arch cave_15
 x 45
 y 61
 end
@@ -19915,7 +19915,7 @@ arch magic_banned
 x 46
 y 21
 end
-arch blocked
+arch cave_15
 x 46
 y 21
 end
@@ -19923,7 +19923,7 @@ arch magic_banned
 x 46
 y 22
 end
-arch blocked
+arch cave_15
 x 46
 y 22
 end
@@ -19931,7 +19931,7 @@ arch magic_banned
 x 46
 y 23
 end
-arch blocked
+arch cave_15
 x 46
 y 23
 end
@@ -19939,7 +19939,7 @@ arch magic_banned
 x 46
 y 24
 end
-arch blocked
+arch cave_15
 x 46
 y 24
 end
@@ -19947,7 +19947,7 @@ arch magic_banned
 x 46
 y 25
 end
-arch blocked
+arch cave_15
 x 46
 y 25
 end
@@ -19955,7 +19955,7 @@ arch magic_banned
 x 46
 y 26
 end
-arch blocked
+arch cave_15
 x 46
 y 26
 end
@@ -19963,7 +19963,7 @@ arch magic_banned
 x 46
 y 27
 end
-arch blocked
+arch cave_15
 x 46
 y 27
 end
@@ -19971,7 +19971,7 @@ arch magic_banned
 x 46
 y 28
 end
-arch blocked
+arch cave_15
 x 46
 y 28
 end
@@ -19979,7 +19979,7 @@ arch magic_banned
 x 46
 y 29
 end
-arch blocked
+arch cave_15
 x 46
 y 29
 end
@@ -19997,7 +19997,7 @@ name_pl blood
 x 46
 y 30
 end
-arch blocked
+arch cave_15
 x 46
 y 30
 end
@@ -20015,7 +20015,7 @@ name_pl blood
 x 46
 y 31
 end
-arch blocked
+arch cave_15
 x 46
 y 31
 end
@@ -20033,7 +20033,7 @@ name_pl blood
 x 46
 y 32
 end
-arch blocked
+arch cave_15
 x 46
 y 32
 end
@@ -20051,7 +20051,7 @@ name_pl blood
 x 46
 y 33
 end
-arch blocked
+arch cave_15
 x 46
 y 33
 end
@@ -20069,7 +20069,7 @@ name_pl blood
 x 46
 y 34
 end
-arch blocked
+arch cave_15
 x 46
 y 34
 end
@@ -20596,7 +20596,7 @@ name_pl blood
 x 46
 y 60
 end
-arch blocked
+arch cave_15
 x 46
 y 60
 end
@@ -20604,7 +20604,7 @@ arch magic_banned
 x 46
 y 61
 end
-arch blocked
+arch cave_15
 x 46
 y 61
 end
@@ -20696,7 +20696,7 @@ arch magic_banned
 x 47
 y 21
 end
-arch blocked
+arch cave_15
 x 47
 y 21
 end
@@ -20704,7 +20704,7 @@ arch magic_banned
 x 47
 y 22
 end
-arch blocked
+arch cave_15
 x 47
 y 22
 end
@@ -20712,7 +20712,7 @@ arch magic_banned
 x 47
 y 23
 end
-arch blocked
+arch cave_15
 x 47
 y 23
 end
@@ -20720,7 +20720,7 @@ arch magic_banned
 x 47
 y 24
 end
-arch blocked
+arch cave_15
 x 47
 y 24
 end
@@ -20728,7 +20728,7 @@ arch magic_banned
 x 47
 y 25
 end
-arch blocked
+arch cave_15
 x 47
 y 25
 end
@@ -20736,7 +20736,7 @@ arch magic_banned
 x 47
 y 26
 end
-arch blocked
+arch cave_15
 x 47
 y 26
 end
@@ -20744,7 +20744,7 @@ arch magic_banned
 x 47
 y 27
 end
-arch blocked
+arch cave_15
 x 47
 y 27
 end
@@ -20752,7 +20752,7 @@ arch magic_banned
 x 47
 y 28
 end
-arch blocked
+arch cave_15
 x 47
 y 28
 end
@@ -20760,7 +20760,7 @@ arch magic_banned
 x 47
 y 29
 end
-arch blocked
+arch cave_15
 x 47
 y 29
 end
@@ -20778,7 +20778,7 @@ name_pl blood
 x 47
 y 30
 end
-arch blocked
+arch cave_15
 x 47
 y 30
 end
@@ -20796,7 +20796,7 @@ name_pl blood
 x 47
 y 31
 end
-arch blocked
+arch cave_15
 x 47
 y 31
 end
@@ -20814,7 +20814,7 @@ name_pl blood
 x 47
 y 32
 end
-arch blocked
+arch cave_15
 x 47
 y 32
 end
@@ -20832,7 +20832,7 @@ name_pl blood
 x 47
 y 33
 end
-arch blocked
+arch cave_15
 x 47
 y 33
 end
@@ -20850,7 +20850,7 @@ name_pl blood
 x 47
 y 34
 end
-arch blocked
+arch cave_15
 x 47
 y 34
 end
@@ -21384,7 +21384,7 @@ name_pl blood
 x 47
 y 60
 end
-arch blocked
+arch cave_15
 x 47
 y 60
 end
@@ -21392,7 +21392,7 @@ arch magic_banned
 x 47
 y 61
 end
-arch blocked
+arch cave_15
 x 47
 y 61
 end
@@ -21484,7 +21484,7 @@ arch magic_banned
 x 48
 y 21
 end
-arch blocked
+arch cave_15
 x 48
 y 21
 end
@@ -21492,7 +21492,7 @@ arch magic_banned
 x 48
 y 22
 end
-arch blocked
+arch cave_15
 x 48
 y 22
 end
@@ -21500,7 +21500,7 @@ arch magic_banned
 x 48
 y 23
 end
-arch blocked
+arch cave_15
 x 48
 y 23
 end
@@ -21508,7 +21508,7 @@ arch magic_banned
 x 48
 y 24
 end
-arch blocked
+arch cave_15
 x 48
 y 24
 end
@@ -21516,7 +21516,7 @@ arch magic_banned
 x 48
 y 25
 end
-arch blocked
+arch cave_15
 x 48
 y 25
 end
@@ -21524,7 +21524,7 @@ arch magic_banned
 x 48
 y 26
 end
-arch blocked
+arch cave_15
 x 48
 y 26
 end
@@ -21532,7 +21532,7 @@ arch magic_banned
 x 48
 y 27
 end
-arch blocked
+arch cave_15
 x 48
 y 27
 end
@@ -21540,7 +21540,7 @@ arch magic_banned
 x 48
 y 28
 end
-arch blocked
+arch cave_15
 x 48
 y 28
 end
@@ -21548,7 +21548,7 @@ arch magic_banned
 x 48
 y 29
 end
-arch blocked
+arch cave_15
 x 48
 y 29
 end
@@ -21566,7 +21566,7 @@ name_pl blood
 x 48
 y 30
 end
-arch blocked
+arch cave_15
 x 48
 y 30
 end
@@ -21584,7 +21584,7 @@ name_pl blood
 x 48
 y 31
 end
-arch blocked
+arch cave_15
 x 48
 y 31
 end
@@ -21602,7 +21602,7 @@ name_pl blood
 x 48
 y 32
 end
-arch blocked
+arch cave_15
 x 48
 y 32
 end
@@ -21620,7 +21620,7 @@ name_pl blood
 x 48
 y 33
 end
-arch blocked
+arch cave_15
 x 48
 y 33
 end
@@ -21638,7 +21638,7 @@ name_pl blood
 x 48
 y 34
 end
-arch blocked
+arch cave_15
 x 48
 y 34
 end
@@ -21656,7 +21656,7 @@ name_pl blood
 x 48
 y 35
 end
-arch blocked
+arch cave_15
 x 48
 y 35
 end
@@ -22167,7 +22167,7 @@ name_pl blood
 x 48
 y 60
 end
-arch blocked
+arch cave_15
 x 48
 y 60
 end
@@ -22175,7 +22175,7 @@ arch magic_banned
 x 48
 y 61
 end
-arch blocked
+arch cave_15
 x 48
 y 61
 end
@@ -22267,7 +22267,7 @@ arch magic_banned
 x 49
 y 21
 end
-arch blocked
+arch cave_15
 x 49
 y 21
 end
@@ -22275,7 +22275,7 @@ arch magic_banned
 x 49
 y 22
 end
-arch blocked
+arch cave_15
 x 49
 y 22
 end
@@ -22283,7 +22283,7 @@ arch magic_banned
 x 49
 y 23
 end
-arch blocked
+arch cave_15
 x 49
 y 23
 end
@@ -22297,7 +22297,7 @@ sp 2
 x 49
 y 24
 end
-arch blocked
+arch cave_15
 x 49
 y 24
 end
@@ -22311,7 +22311,7 @@ sp 2
 x 49
 y 25
 end
-arch blocked
+arch cave_15
 x 49
 y 25
 end
@@ -22381,7 +22381,7 @@ sp 2
 x 49
 y 30
 end
-arch blocked
+arch cave_15
 x 49
 y 30
 end
@@ -22399,7 +22399,7 @@ name_pl blood
 x 49
 y 31
 end
-arch blocked
+arch cave_15
 x 49
 y 31
 end
@@ -22417,7 +22417,7 @@ name_pl blood
 x 49
 y 32
 end
-arch blocked
+arch cave_15
 x 49
 y 32
 end
@@ -22435,7 +22435,7 @@ name_pl blood
 x 49
 y 33
 end
-arch blocked
+arch cave_15
 x 49
 y 33
 end
@@ -22453,7 +22453,7 @@ name_pl blood
 x 49
 y 34
 end
-arch blocked
+arch cave_15
 x 49
 y 34
 end
@@ -22471,7 +22471,7 @@ name_pl blood
 x 49
 y 35
 end
-arch blocked
+arch cave_15
 x 49
 y 35
 end
@@ -22954,7 +22954,7 @@ name_pl blood
 x 49
 y 59
 end
-arch blocked
+arch cave_15
 x 49
 y 59
 end
@@ -22972,7 +22972,7 @@ name_pl blood
 x 49
 y 60
 end
-arch blocked
+arch cave_15
 x 49
 y 60
 end
@@ -22980,7 +22980,7 @@ arch magic_banned
 x 49
 y 61
 end
-arch blocked
+arch cave_15
 x 49
 y 61
 end
@@ -23072,7 +23072,7 @@ arch magic_banned
 x 50
 y 21
 end
-arch blocked
+arch cave_15
 x 50
 y 21
 end
@@ -23080,7 +23080,7 @@ arch magic_banned
 x 50
 y 22
 end
-arch blocked
+arch cave_15
 x 50
 y 22
 end
@@ -23088,7 +23088,7 @@ arch magic_banned
 x 50
 y 23
 end
-arch blocked
+arch cave_15
 x 50
 y 23
 end
@@ -23102,7 +23102,7 @@ sp 2
 x 50
 y 24
 end
-arch blocked
+arch cave_15
 x 50
 y 24
 end
@@ -23116,7 +23116,7 @@ sp 2
 x 50
 y 25
 end
-arch blocked
+arch cave_15
 x 50
 y 25
 end
@@ -23210,7 +23210,7 @@ name_pl blood
 x 50
 y 32
 end
-arch blocked
+arch cave_15
 x 50
 y 32
 end
@@ -23228,7 +23228,7 @@ name_pl blood
 x 50
 y 33
 end
-arch blocked
+arch cave_15
 x 50
 y 33
 end
@@ -23246,7 +23246,7 @@ name_pl blood
 x 50
 y 34
 end
-arch blocked
+arch cave_15
 x 50
 y 34
 end
@@ -23264,7 +23264,7 @@ name_pl blood
 x 50
 y 35
 end
-arch blocked
+arch cave_15
 x 50
 y 35
 end
@@ -23758,7 +23758,7 @@ name_pl blood
 x 50
 y 59
 end
-arch blocked
+arch cave_15
 x 50
 y 59
 end
@@ -23776,7 +23776,7 @@ name_pl blood
 x 50
 y 60
 end
-arch blocked
+arch cave_15
 x 50
 y 60
 end
@@ -23784,7 +23784,7 @@ arch magic_banned
 x 50
 y 61
 end
-arch blocked
+arch cave_15
 x 50
 y 61
 end
@@ -23876,7 +23876,7 @@ arch magic_banned
 x 51
 y 21
 end
-arch blocked
+arch cave_15
 x 51
 y 21
 end
@@ -23884,7 +23884,7 @@ arch magic_banned
 x 51
 y 22
 end
-arch blocked
+arch cave_15
 x 51
 y 22
 end
@@ -23898,7 +23898,7 @@ sp 2
 x 51
 y 23
 end
-arch blocked
+arch cave_15
 x 51
 y 23
 end
@@ -23912,7 +23912,7 @@ sp 2
 x 51
 y 24
 end
-arch blocked
+arch cave_15
 x 51
 y 24
 end
@@ -24026,7 +24026,7 @@ name_pl blood
 x 51
 y 33
 end
-arch blocked
+arch cave_15
 x 51
 y 33
 end
@@ -24044,7 +24044,7 @@ name_pl blood
 x 51
 y 34
 end
-arch blocked
+arch cave_15
 x 51
 y 34
 end
@@ -24062,7 +24062,7 @@ name_pl blood
 x 51
 y 35
 end
-arch blocked
+arch cave_15
 x 51
 y 35
 end
@@ -24545,7 +24545,7 @@ name_pl blood
 x 51
 y 59
 end
-arch blocked
+arch cave_15
 x 51
 y 59
 end
@@ -24563,7 +24563,7 @@ name_pl blood
 x 51
 y 60
 end
-arch blocked
+arch cave_15
 x 51
 y 60
 end
@@ -24571,7 +24571,7 @@ arch magic_banned
 x 51
 y 61
 end
-arch blocked
+arch cave_15
 x 51
 y 61
 end
@@ -24663,7 +24663,7 @@ arch magic_banned
 x 52
 y 21
 end
-arch blocked
+arch cave_15
 x 52
 y 21
 end
@@ -24671,7 +24671,7 @@ arch magic_banned
 x 52
 y 22
 end
-arch blocked
+arch cave_15
 x 52
 y 22
 end
@@ -24685,7 +24685,7 @@ sp 2
 x 52
 y 23
 end
-arch blocked
+arch cave_15
 x 52
 y 23
 end
@@ -24809,7 +24809,7 @@ name_pl blood
 x 52
 y 33
 end
-arch blocked
+arch cave_15
 x 52
 y 33
 end
@@ -24827,7 +24827,7 @@ name_pl blood
 x 52
 y 34
 end
-arch blocked
+arch cave_15
 x 52
 y 34
 end
@@ -24845,7 +24845,7 @@ name_pl blood
 x 52
 y 35
 end
-arch blocked
+arch cave_15
 x 52
 y 35
 end
@@ -25283,7 +25283,7 @@ name_pl blood
 x 52
 y 59
 end
-arch blocked
+arch cave_15
 x 52
 y 59
 end
@@ -25301,7 +25301,7 @@ name_pl blood
 x 52
 y 60
 end
-arch blocked
+arch cave_15
 x 52
 y 60
 end
@@ -25309,7 +25309,7 @@ arch magic_banned
 x 52
 y 61
 end
-arch blocked
+arch cave_15
 x 52
 y 61
 end
@@ -25401,7 +25401,7 @@ arch magic_banned
 x 53
 y 21
 end
-arch blocked
+arch cave_15
 x 53
 y 21
 end
@@ -25415,7 +25415,7 @@ sp 2
 x 53
 y 22
 end
-arch blocked
+arch cave_15
 x 53
 y 22
 end
@@ -25429,7 +25429,7 @@ sp 2
 x 53
 y 23
 end
-arch blocked
+arch cave_15
 x 53
 y 23
 end
@@ -25545,7 +25545,7 @@ name_pl blood
 x 53
 y 33
 end
-arch blocked
+arch cave_15
 x 53
 y 33
 end
@@ -25563,7 +25563,7 @@ name_pl blood
 x 53
 y 34
 end
-arch blocked
+arch cave_15
 x 53
 y 34
 end
@@ -25581,7 +25581,7 @@ name_pl blood
 x 53
 y 35
 end
-arch blocked
+arch cave_15
 x 53
 y 35
 end
@@ -25824,7 +25824,7 @@ sp 2
 x 53
 y 48
 end
-arch blocked
+arch cave_15
 x 53
 y 48
 end
@@ -25838,7 +25838,7 @@ sp 2
 x 53
 y 49
 end
-arch blocked
+arch cave_15
 x 53
 y 49
 end
@@ -25852,7 +25852,7 @@ sp 2
 x 53
 y 50
 end
-arch blocked
+arch cave_15
 x 53
 y 50
 end
@@ -25866,7 +25866,7 @@ sp 2
 x 53
 y 51
 end
-arch blocked
+arch cave_15
 x 53
 y 51
 end
@@ -25880,7 +25880,7 @@ sp 2
 x 53
 y 52
 end
-arch blocked
+arch cave_15
 x 53
 y 52
 end
@@ -25970,7 +25970,7 @@ name_pl blood
 x 53
 y 59
 end
-arch blocked
+arch cave_15
 x 53
 y 59
 end
@@ -25988,7 +25988,7 @@ name_pl blood
 x 53
 y 60
 end
-arch blocked
+arch cave_15
 x 53
 y 60
 end
@@ -25996,7 +25996,7 @@ arch magic_banned
 x 53
 y 61
 end
-arch blocked
+arch cave_15
 x 53
 y 61
 end
@@ -26088,7 +26088,7 @@ arch magic_banned
 x 54
 y 21
 end
-arch blocked
+arch cave_15
 x 54
 y 21
 end
@@ -26102,7 +26102,7 @@ sp 2
 x 54
 y 22
 end
-arch blocked
+arch cave_15
 x 54
 y 22
 end
@@ -26116,7 +26116,7 @@ sp 2
 x 54
 y 23
 end
-arch blocked
+arch cave_15
 x 54
 y 23
 end
@@ -26258,7 +26258,7 @@ arch pstone_2
 x 54
 y 35
 end
-arch blocked
+arch cave_15
 x 54
 y 35
 end
@@ -26270,7 +26270,7 @@ arch pstone_2
 x 54
 y 36
 end
-arch blocked
+arch cave_15
 x 54
 y 36
 end
@@ -26282,7 +26282,7 @@ arch pstone_2
 x 54
 y 37
 end
-arch blocked
+arch cave_15
 x 54
 y 37
 end
@@ -26294,7 +26294,7 @@ arch pstone_2
 x 54
 y 38
 end
-arch blocked
+arch cave_15
 x 54
 y 38
 end
@@ -26308,7 +26308,7 @@ sp 2
 x 54
 y 39
 end
-arch blocked
+arch cave_15
 x 54
 y 39
 end
@@ -26322,7 +26322,7 @@ sp 2
 x 54
 y 40
 end
-arch blocked
+arch cave_15
 x 54
 y 40
 end
@@ -26402,7 +26402,7 @@ sp 2
 x 54
 y 46
 end
-arch blocked
+arch cave_15
 x 54
 y 46
 end
@@ -26416,7 +26416,7 @@ sp 2
 x 54
 y 47
 end
-arch blocked
+arch cave_15
 x 54
 y 47
 end
@@ -26430,7 +26430,7 @@ sp 2
 x 54
 y 48
 end
-arch blocked
+arch cave_15
 x 54
 y 48
 end
@@ -26444,7 +26444,7 @@ sp 2
 x 54
 y 49
 end
-arch blocked
+arch cave_15
 x 54
 y 49
 end
@@ -26458,7 +26458,7 @@ sp 2
 x 54
 y 50
 end
-arch blocked
+arch cave_15
 x 54
 y 50
 end
@@ -26472,7 +26472,7 @@ sp 2
 x 54
 y 51
 end
-arch blocked
+arch cave_15
 x 54
 y 51
 end
@@ -26486,7 +26486,7 @@ sp 2
 x 54
 y 52
 end
-arch blocked
+arch cave_15
 x 54
 y 52
 end
@@ -26566,7 +26566,7 @@ arch magic_banned
 x 54
 y 59
 end
-arch blocked
+arch cave_15
 x 54
 y 59
 end
@@ -26574,7 +26574,7 @@ arch magic_banned
 x 54
 y 60
 end
-arch blocked
+arch cave_15
 x 54
 y 60
 end
@@ -26582,7 +26582,7 @@ arch magic_banned
 x 54
 y 61
 end
-arch blocked
+arch cave_15
 x 54
 y 61
 end
@@ -26674,7 +26674,7 @@ arch magic_banned
 x 55
 y 21
 end
-arch blocked
+arch cave_15
 x 55
 y 21
 end
@@ -26688,7 +26688,7 @@ sp 2
 x 55
 y 22
 end
-arch blocked
+arch cave_15
 x 55
 y 22
 end
@@ -26702,7 +26702,7 @@ sp 2
 x 55
 y 23
 end
-arch blocked
+arch cave_15
 x 55
 y 23
 end
@@ -27150,7 +27150,7 @@ arch magic_banned
 x 55
 y 60
 end
-arch blocked
+arch cave_15
 x 55
 y 60
 end
@@ -27158,7 +27158,7 @@ arch magic_banned
 x 55
 y 61
 end
-arch blocked
+arch cave_15
 x 55
 y 61
 end
@@ -27250,7 +27250,7 @@ arch magic_banned
 x 56
 y 21
 end
-arch blocked
+arch cave_15
 x 56
 y 21
 end
@@ -27264,7 +27264,7 @@ sp 2
 x 56
 y 22
 end
-arch blocked
+arch cave_15
 x 56
 y 22
 end
@@ -27278,7 +27278,7 @@ sp 2
 x 56
 y 23
 end
-arch blocked
+arch cave_15
 x 56
 y 23
 end
@@ -27662,7 +27662,7 @@ arch magic_banned
 x 56
 y 60
 end
-arch blocked
+arch cave_15
 x 56
 y 60
 end
@@ -27670,7 +27670,7 @@ arch magic_banned
 x 56
 y 61
 end
-arch blocked
+arch cave_15
 x 56
 y 61
 end
@@ -27762,7 +27762,7 @@ arch magic_banned
 x 57
 y 21
 end
-arch blocked
+arch cave_15
 x 57
 y 21
 end
@@ -27776,7 +27776,7 @@ sp 2
 x 57
 y 22
 end
-arch blocked
+arch cave_15
 x 57
 y 22
 end
@@ -27790,7 +27790,7 @@ sp 2
 x 57
 y 23
 end
-arch blocked
+arch cave_15
 x 57
 y 23
 end
@@ -27804,7 +27804,7 @@ sp 2
 x 57
 y 24
 end
-arch blocked
+arch cave_15
 x 57
 y 24
 end
@@ -28206,7 +28206,7 @@ arch magic_banned
 x 57
 y 60
 end
-arch blocked
+arch cave_15
 x 57
 y 60
 end
@@ -28214,7 +28214,7 @@ arch magic_banned
 x 57
 y 61
 end
-arch blocked
+arch cave_15
 x 57
 y 61
 end
@@ -28306,7 +28306,7 @@ arch magic_banned
 x 58
 y 21
 end
-arch blocked
+arch cave_15
 x 58
 y 21
 end
@@ -28320,7 +28320,7 @@ sp 2
 x 58
 y 22
 end
-arch blocked
+arch cave_15
 x 58
 y 22
 end
@@ -28334,7 +28334,7 @@ sp 2
 x 58
 y 23
 end
-arch blocked
+arch cave_15
 x 58
 y 23
 end
@@ -28348,7 +28348,7 @@ sp 2
 x 58
 y 24
 end
-arch blocked
+arch cave_15
 x 58
 y 24
 end
@@ -28362,7 +28362,7 @@ sp 2
 x 58
 y 25
 end
-arch blocked
+arch cave_15
 x 58
 y 25
 end
@@ -28376,7 +28376,7 @@ sp 2
 x 58
 y 26
 end
-arch blocked
+arch cave_15
 x 58
 y 26
 end
@@ -28390,7 +28390,7 @@ sp 2
 x 58
 y 27
 end
-arch blocked
+arch cave_15
 x 58
 y 27
 end
@@ -28404,7 +28404,7 @@ sp 2
 x 58
 y 28
 end
-arch blocked
+arch cave_15
 x 58
 y 28
 end
@@ -28418,7 +28418,7 @@ sp 2
 x 58
 y 29
 end
-arch blocked
+arch cave_15
 x 58
 y 29
 end
@@ -28432,7 +28432,7 @@ sp 2
 x 58
 y 30
 end
-arch blocked
+arch cave_15
 x 58
 y 30
 end
@@ -28446,7 +28446,7 @@ sp 2
 x 58
 y 31
 end
-arch blocked
+arch cave_15
 x 58
 y 31
 end
@@ -28786,7 +28786,7 @@ arch magic_banned
 x 58
 y 60
 end
-arch blocked
+arch cave_15
 x 58
 y 60
 end
@@ -28794,7 +28794,7 @@ arch magic_banned
 x 58
 y 61
 end
-arch blocked
+arch cave_15
 x 58
 y 61
 end
@@ -28886,7 +28886,7 @@ arch magic_banned
 x 59
 y 21
 end
-arch blocked
+arch cave_15
 x 59
 y 21
 end
@@ -28894,7 +28894,7 @@ arch magic_banned
 x 59
 y 22
 end
-arch blocked
+arch cave_15
 x 59
 y 22
 end
@@ -28908,7 +28908,7 @@ sp 2
 x 59
 y 23
 end
-arch blocked
+arch cave_15
 x 59
 y 23
 end
@@ -28922,7 +28922,7 @@ sp 2
 x 59
 y 24
 end
-arch blocked
+arch cave_15
 x 59
 y 24
 end
@@ -28936,7 +28936,7 @@ sp 2
 x 59
 y 25
 end
-arch blocked
+arch cave_15
 x 59
 y 25
 end
@@ -28950,7 +28950,7 @@ sp 2
 x 59
 y 26
 end
-arch blocked
+arch cave_15
 x 59
 y 26
 end
@@ -28964,7 +28964,7 @@ sp 2
 x 59
 y 27
 end
-arch blocked
+arch cave_15
 x 59
 y 27
 end
@@ -28978,7 +28978,7 @@ sp 2
 x 59
 y 28
 end
-arch blocked
+arch cave_15
 x 59
 y 28
 end
@@ -28992,7 +28992,7 @@ sp 2
 x 59
 y 29
 end
-arch blocked
+arch cave_15
 x 59
 y 29
 end
@@ -29006,7 +29006,7 @@ sp 2
 x 59
 y 30
 end
-arch blocked
+arch cave_15
 x 59
 y 30
 end
@@ -29020,7 +29020,7 @@ sp 2
 x 59
 y 31
 end
-arch blocked
+arch cave_15
 x 59
 y 31
 end
@@ -29034,7 +29034,7 @@ sp 2
 x 59
 y 32
 end
-arch blocked
+arch cave_15
 x 59
 y 32
 end
@@ -29048,7 +29048,7 @@ sp 2
 x 59
 y 33
 end
-arch blocked
+arch cave_15
 x 59
 y 33
 end
@@ -29062,7 +29062,7 @@ sp 2
 x 59
 y 34
 end
-arch blocked
+arch cave_15
 x 59
 y 34
 end
@@ -29076,7 +29076,7 @@ sp 2
 x 59
 y 35
 end
-arch blocked
+arch cave_15
 x 59
 y 35
 end
@@ -29090,7 +29090,7 @@ sp 2
 x 59
 y 36
 end
-arch blocked
+arch cave_15
 x 59
 y 36
 end
@@ -29188,7 +29188,7 @@ sp 2
 x 59
 y 43
 end
-arch blocked
+arch cave_15
 x 59
 y 43
 end
@@ -29202,7 +29202,7 @@ sp 2
 x 59
 y 44
 end
-arch blocked
+arch cave_15
 x 59
 y 44
 end
@@ -29216,7 +29216,7 @@ sp 2
 x 59
 y 45
 end
-arch blocked
+arch cave_15
 x 59
 y 45
 end
@@ -29230,7 +29230,7 @@ sp 2
 x 59
 y 46
 end
-arch blocked
+arch cave_15
 x 59
 y 46
 end
@@ -29400,7 +29400,7 @@ arch magic_banned
 x 59
 y 60
 end
-arch blocked
+arch cave_15
 x 59
 y 60
 end
@@ -29408,7 +29408,7 @@ arch magic_banned
 x 59
 y 61
 end
-arch blocked
+arch cave_15
 x 59
 y 61
 end
@@ -29500,7 +29500,7 @@ arch magic_banned
 x 60
 y 21
 end
-arch blocked
+arch cave_15
 x 60
 y 21
 end
@@ -29508,7 +29508,7 @@ arch magic_banned
 x 60
 y 22
 end
-arch blocked
+arch cave_15
 x 60
 y 22
 end
@@ -29516,7 +29516,7 @@ arch magic_banned
 x 60
 y 23
 end
-arch blocked
+arch cave_15
 x 60
 y 23
 end
@@ -29530,7 +29530,7 @@ sp 2
 x 60
 y 24
 end
-arch blocked
+arch cave_15
 x 60
 y 24
 end
@@ -29544,7 +29544,7 @@ sp 2
 x 60
 y 25
 end
-arch blocked
+arch cave_15
 x 60
 y 25
 end
@@ -29558,7 +29558,7 @@ sp 2
 x 60
 y 26
 end
-arch blocked
+arch cave_15
 x 60
 y 26
 end
@@ -29572,7 +29572,7 @@ sp 2
 x 60
 y 27
 end
-arch blocked
+arch cave_15
 x 60
 y 27
 end
@@ -29586,7 +29586,7 @@ sp 2
 x 60
 y 28
 end
-arch blocked
+arch cave_15
 x 60
 y 28
 end
@@ -29600,7 +29600,7 @@ sp 2
 x 60
 y 29
 end
-arch blocked
+arch cave_15
 x 60
 y 29
 end
@@ -29614,7 +29614,7 @@ sp 2
 x 60
 y 30
 end
-arch blocked
+arch cave_15
 x 60
 y 30
 end
@@ -29628,7 +29628,7 @@ sp 2
 x 60
 y 31
 end
-arch blocked
+arch cave_15
 x 60
 y 31
 end
@@ -29642,7 +29642,7 @@ sp 2
 x 60
 y 32
 end
-arch blocked
+arch cave_15
 x 60
 y 32
 end
@@ -29650,7 +29650,7 @@ arch magic_banned
 x 60
 y 33
 end
-arch blocked
+arch cave_15
 x 60
 y 33
 end
@@ -29658,7 +29658,7 @@ arch magic_banned
 x 60
 y 34
 end
-arch blocked
+arch cave_15
 x 60
 y 34
 end
@@ -29666,7 +29666,7 @@ arch magic_banned
 x 60
 y 35
 end
-arch blocked
+arch cave_15
 x 60
 y 35
 end
@@ -29674,7 +29674,7 @@ arch magic_banned
 x 60
 y 36
 end
-arch blocked
+arch cave_15
 x 60
 y 36
 end
@@ -29682,7 +29682,7 @@ arch magic_banned
 x 60
 y 37
 end
-arch blocked
+arch cave_15
 x 60
 y 37
 end
@@ -29690,7 +29690,7 @@ arch magic_banned
 x 60
 y 38
 end
-arch blocked
+arch cave_15
 x 60
 y 38
 end
@@ -29698,7 +29698,7 @@ arch magic_banned
 x 60
 y 39
 end
-arch blocked
+arch cave_15
 x 60
 y 39
 end
@@ -29706,7 +29706,7 @@ arch magic_banned
 x 60
 y 40
 end
-arch blocked
+arch cave_15
 x 60
 y 40
 end
@@ -29714,7 +29714,7 @@ arch magic_banned
 x 60
 y 41
 end
-arch blocked
+arch cave_15
 x 60
 y 41
 end
@@ -29722,7 +29722,7 @@ arch magic_banned
 x 60
 y 42
 end
-arch blocked
+arch cave_15
 x 60
 y 42
 end
@@ -29736,7 +29736,7 @@ sp 2
 x 60
 y 43
 end
-arch blocked
+arch cave_15
 x 60
 y 43
 end
@@ -29750,7 +29750,7 @@ sp 2
 x 60
 y 44
 end
-arch blocked
+arch cave_15
 x 60
 y 44
 end
@@ -29764,7 +29764,7 @@ sp 2
 x 60
 y 45
 end
-arch blocked
+arch cave_15
 x 60
 y 45
 end
@@ -29778,7 +29778,7 @@ sp 2
 x 60
 y 46
 end
-arch blocked
+arch cave_15
 x 60
 y 46
 end
@@ -29792,7 +29792,7 @@ sp 2
 x 60
 y 47
 end
-arch blocked
+arch cave_15
 x 60
 y 47
 end
@@ -29806,7 +29806,7 @@ sp 2
 x 60
 y 48
 end
-arch blocked
+arch cave_15
 x 60
 y 48
 end
@@ -29820,7 +29820,7 @@ sp 2
 x 60
 y 49
 end
-arch blocked
+arch cave_15
 x 60
 y 49
 end
@@ -29834,7 +29834,7 @@ sp 2
 x 60
 y 50
 end
-arch blocked
+arch cave_15
 x 60
 y 50
 end
@@ -29848,7 +29848,7 @@ sp 2
 x 60
 y 51
 end
-arch blocked
+arch cave_15
 x 60
 y 51
 end
@@ -29954,7 +29954,7 @@ arch magic_banned
 x 60
 y 59
 end
-arch blocked
+arch cave_15
 x 60
 y 59
 end
@@ -29962,7 +29962,7 @@ arch magic_banned
 x 60
 y 60
 end
-arch blocked
+arch cave_15
 x 60
 y 60
 end
@@ -29970,7 +29970,7 @@ arch magic_banned
 x 60
 y 61
 end
-arch blocked
+arch cave_15
 x 60
 y 61
 end
@@ -30062,7 +30062,7 @@ arch magic_banned
 x 61
 y 21
 end
-arch blocked
+arch cave_15
 x 61
 y 21
 end
@@ -30070,7 +30070,7 @@ arch magic_banned
 x 61
 y 22
 end
-arch blocked
+arch cave_15
 x 61
 y 22
 end
@@ -30078,7 +30078,7 @@ arch magic_banned
 x 61
 y 23
 end
-arch blocked
+arch cave_15
 x 61
 y 23
 end
@@ -30086,7 +30086,7 @@ arch magic_banned
 x 61
 y 24
 end
-arch blocked
+arch cave_15
 x 61
 y 24
 end
@@ -30094,7 +30094,7 @@ arch magic_banned
 x 61
 y 25
 end
-arch blocked
+arch cave_15
 x 61
 y 25
 end
@@ -30102,7 +30102,7 @@ arch magic_banned
 x 61
 y 26
 end
-arch blocked
+arch cave_15
 x 61
 y 26
 end
@@ -30110,7 +30110,7 @@ arch magic_banned
 x 61
 y 27
 end
-arch blocked
+arch cave_15
 x 61
 y 27
 end
@@ -30118,7 +30118,7 @@ arch magic_banned
 x 61
 y 28
 end
-arch blocked
+arch cave_15
 x 61
 y 28
 end
@@ -30126,7 +30126,7 @@ arch magic_banned
 x 61
 y 29
 end
-arch blocked
+arch cave_15
 x 61
 y 29
 end
@@ -30134,7 +30134,7 @@ arch magic_banned
 x 61
 y 30
 end
-arch blocked
+arch cave_15
 x 61
 y 30
 end
@@ -30142,7 +30142,7 @@ arch magic_banned
 x 61
 y 31
 end
-arch blocked
+arch cave_15
 x 61
 y 31
 end
@@ -30150,7 +30150,7 @@ arch magic_banned
 x 61
 y 32
 end
-arch blocked
+arch cave_15
 x 61
 y 32
 end
@@ -30158,7 +30158,7 @@ arch magic_banned
 x 61
 y 33
 end
-arch blocked
+arch cave_15
 x 61
 y 33
 end
@@ -30166,7 +30166,7 @@ arch magic_banned
 x 61
 y 34
 end
-arch blocked
+arch cave_15
 x 61
 y 34
 end
@@ -30174,7 +30174,7 @@ arch magic_banned
 x 61
 y 35
 end
-arch blocked
+arch cave_15
 x 61
 y 35
 end
@@ -30182,7 +30182,7 @@ arch magic_banned
 x 61
 y 36
 end
-arch blocked
+arch cave_15
 x 61
 y 36
 end
@@ -30190,7 +30190,7 @@ arch magic_banned
 x 61
 y 37
 end
-arch blocked
+arch cave_15
 x 61
 y 37
 end
@@ -30198,7 +30198,7 @@ arch magic_banned
 x 61
 y 38
 end
-arch blocked
+arch cave_15
 x 61
 y 38
 end
@@ -30206,7 +30206,7 @@ arch magic_banned
 x 61
 y 39
 end
-arch blocked
+arch cave_15
 x 61
 y 39
 end
@@ -30214,7 +30214,7 @@ arch magic_banned
 x 61
 y 40
 end
-arch blocked
+arch cave_15
 x 61
 y 40
 end
@@ -30222,7 +30222,7 @@ arch magic_banned
 x 61
 y 41
 end
-arch blocked
+arch cave_15
 x 61
 y 41
 end
@@ -30230,7 +30230,7 @@ arch magic_banned
 x 61
 y 42
 end
-arch blocked
+arch cave_15
 x 61
 y 42
 end
@@ -30238,7 +30238,7 @@ arch magic_banned
 x 61
 y 43
 end
-arch blocked
+arch cave_15
 x 61
 y 43
 end
@@ -30246,7 +30246,7 @@ arch magic_banned
 x 61
 y 44
 end
-arch blocked
+arch cave_15
 x 61
 y 44
 end
@@ -30254,7 +30254,7 @@ arch magic_banned
 x 61
 y 45
 end
-arch blocked
+arch cave_15
 x 61
 y 45
 end
@@ -30262,7 +30262,7 @@ arch magic_banned
 x 61
 y 46
 end
-arch blocked
+arch cave_15
 x 61
 y 46
 end
@@ -30270,7 +30270,7 @@ arch magic_banned
 x 61
 y 47
 end
-arch blocked
+arch cave_15
 x 61
 y 47
 end
@@ -30284,7 +30284,7 @@ sp 2
 x 61
 y 48
 end
-arch blocked
+arch cave_15
 x 61
 y 48
 end
@@ -30298,7 +30298,7 @@ sp 2
 x 61
 y 49
 end
-arch blocked
+arch cave_15
 x 61
 y 49
 end
@@ -30312,7 +30312,7 @@ sp 2
 x 61
 y 50
 end
-arch blocked
+arch cave_15
 x 61
 y 50
 end
@@ -30326,7 +30326,7 @@ sp 2
 x 61
 y 51
 end
-arch blocked
+arch cave_15
 x 61
 y 51
 end
@@ -30340,7 +30340,7 @@ sp 2
 x 61
 y 52
 end
-arch blocked
+arch cave_15
 x 61
 y 52
 end
@@ -30354,7 +30354,7 @@ sp 2
 x 61
 y 53
 end
-arch blocked
+arch cave_15
 x 61
 y 53
 end
@@ -30368,7 +30368,7 @@ sp 2
 x 61
 y 54
 end
-arch blocked
+arch cave_15
 x 61
 y 54
 end
@@ -30382,7 +30382,7 @@ sp 2
 x 61
 y 55
 end
-arch blocked
+arch cave_15
 x 61
 y 55
 end
@@ -30396,7 +30396,7 @@ sp 2
 x 61
 y 56
 end
-arch blocked
+arch cave_15
 x 61
 y 56
 end
@@ -30410,7 +30410,7 @@ sp 2
 x 61
 y 57
 end
-arch blocked
+arch cave_15
 x 61
 y 57
 end
@@ -30418,7 +30418,7 @@ arch magic_banned
 x 61
 y 58
 end
-arch blocked
+arch cave_15
 x 61
 y 58
 end
@@ -30426,7 +30426,7 @@ arch magic_banned
 x 61
 y 59
 end
-arch blocked
+arch cave_15
 x 61
 y 59
 end
@@ -30434,7 +30434,7 @@ arch magic_banned
 x 61
 y 60
 end
-arch blocked
+arch cave_15
 x 61
 y 60
 end
@@ -30442,7 +30442,7 @@ arch magic_banned
 x 61
 y 61
 end
-arch blocked
+arch cave_15
 x 61
 y 61
 end
