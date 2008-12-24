@@ -9,7 +9,7 @@ enter_x 3
 enter_y 33
 msg
 Created:  1993-10-25
-Modified: 2008-11-07 Rick Tanner
+Modified: 2008-12-24 Rick Tanner
 endmsg
 end
 arch cobblestones
@@ -1955,7 +1955,7 @@ end
 arch dirtfloor
 x 9
 end
-arch blocked
+arch cave_15
 x 9
 end
 arch dirtfloor
@@ -2010,7 +2010,7 @@ arch dirtfloor
 x 9
 y 7
 end
-arch blocked
+arch cave_15
 x 9
 y 7
 end
@@ -2018,19 +2018,19 @@ arch dirtfloor
 x 9
 y 8
 end
-arch blocked
+arch cave_15
 x 9
 y 8
 end
-arch blocked
+arch cave_15
 x 9
 y 9
 end
-arch blocked
+arch cave_15
 x 9
 y 10
 end
-arch blocked
+arch cave_15
 x 9
 y 11
 end
@@ -2104,19 +2104,19 @@ arch dirtfloor
 x 10
 y 8
 end
-arch blocked
+arch cave_15
 x 10
 y 8
 end
-arch blocked
+arch cave_15
 x 10
 y 9
 end
-arch blocked
+arch cave_15
 x 10
 y 10
 end
-arch blocked
+arch cave_15
 x 10
 y 11
 end
@@ -2529,7 +2529,7 @@ arch dirtfloor
 x 14
 y 11
 end
-arch blocked
+arch cave_15
 x 14
 y 11
 end
@@ -2603,7 +2603,7 @@ arch dirtfloor
 x 15
 y 8
 end
-arch blocked
+arch cave_15
 x 15
 y 8
 end
@@ -2611,7 +2611,7 @@ arch dirtfloor
 x 15
 y 9
 end
-arch blocked
+arch cave_15
 x 15
 y 9
 end
@@ -2619,7 +2619,7 @@ arch dirtfloor
 x 15
 y 10
 end
-arch blocked
+arch cave_15
 x 15
 y 10
 end
@@ -2627,7 +2627,7 @@ arch dirtfloor
 x 15
 y 11
 end
-arch blocked
+arch cave_15
 x 15
 y 11
 end
@@ -2635,14 +2635,14 @@ arch blocked
 x 15
 y 12
 end
-arch blocked
+arch cave_15
 x 16
 end
-arch blocked
+arch cave_15
 x 16
 y 1
 end
-arch blocked
+arch cave_15
 x 16
 y 2
 end
@@ -2654,31 +2654,31 @@ arch cave22
 x 16
 y 4
 end
-arch blocked
+arch cave_15
 x 16
 y 5
 end
-arch blocked
+arch cave_15
 x 16
 y 6
 end
-arch blocked
+arch cave_15
 x 16
 y 7
 end
-arch blocked
+arch cave_15
 x 16
 y 8
 end
-arch blocked
+arch cave_15
 x 16
 y 9
 end
-arch blocked
+arch cave_15
 x 16
 y 10
 end
-arch blocked
+arch cave_15
 x 16
 y 11
 end

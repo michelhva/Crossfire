@@ -9,12 +9,12 @@ enter_x 2
 enter_y 15
 msg
 Created:  1995-04-26 Kundi, Xue (xkd@soda.berkeley.edu)
-Modified: 2008-11-19 Rick Tanner
+Modified: 2008-12-24 Rick Tanner
 endmsg
 end
-arch blocked
+arch cave_15
 end
-arch blocked
+arch cave_15
 y 1
 end
 arch medium_stones
@@ -38,16 +38,16 @@ end
 arch cave23
 y 5
 end
-arch blocked
+arch cave_15
 y 6
 end
-arch blocked
+arch cave_15
 y 7
 end
-arch blocked
+arch cave_15
 y 8
 end
-arch blocked
+arch cave_15
 y 9
 end
 arch cave24
@@ -107,7 +107,7 @@ end
 arch cave17
 y 19
 end
-arch blocked
+arch cave_15
 x 1
 end
 arch cave18
@@ -142,11 +142,11 @@ arch cave23
 x 1
 y 6
 end
-arch blocked
+arch cave_15
 x 1
 y 7
 end
-arch blocked
+arch cave_15
 x 1
 y 8
 end
@@ -237,7 +237,7 @@ arch cave2
 x 2
 y 6
 end
-arch blocked
+arch cave_15
 x 2
 y 7
 end
@@ -2720,7 +2720,7 @@ arch afloor_right
 x 24
 y 8
 end
-arch blocked
+arch cave_15
 x 24
 y 8
 end
@@ -2728,7 +2728,7 @@ arch afloor_right
 x 24
 y 9
 end
-arch blocked
+arch cave_15
 x 24
 y 9
 end
@@ -2736,7 +2736,7 @@ arch afloor_right
 x 24
 y 10
 end
-arch blocked
+arch cave_15
 x 24
 y 10
 end
@@ -2744,7 +2744,7 @@ arch afloor_right
 x 24
 y 11
 end
-arch blocked
+arch cave_15
 x 24
 y 11
 end
@@ -2834,7 +2834,7 @@ arch afloor_right
 x 25
 y 8
 end
-arch blocked
+arch cave_15
 x 25
 y 8
 end
@@ -2842,7 +2842,7 @@ arch afloor_right
 x 25
 y 9
 end
-arch blocked
+arch cave_15
 x 25
 y 9
 end
@@ -2850,7 +2850,7 @@ arch afloor_right
 x 25
 y 10
 end
-arch blocked
+arch cave_15
 x 25
 y 10
 end
@@ -2858,7 +2858,7 @@ arch afloor_right
 x 25
 y 11
 end
-arch blocked
+arch cave_15
 x 25
 y 11
 end
@@ -2866,7 +2866,7 @@ arch afloor_right
 x 25
 y 12
 end
-arch blocked
+arch cave_15
 x 25
 y 12
 end
@@ -2976,7 +2976,7 @@ arch afloor_right
 x 26
 y 11
 end
-arch blocked
+arch cave_15
 x 26
 y 11
 end
@@ -2984,7 +2984,7 @@ arch afloor_right
 x 26
 y 12
 end
-arch blocked
+arch cave_15
 x 26
 y 12
 end
@@ -2992,7 +2992,7 @@ arch afloor_right
 x 26
 y 13
 end
-arch blocked
+arch cave_15
 x 26
 y 13
 end
@@ -3086,7 +3086,7 @@ arch afloor_right
 x 27
 y 12
 end
-arch blocked
+arch cave_15
 x 27
 y 12
 end
@@ -3094,7 +3094,7 @@ arch afloor_right
 x 27
 y 13
 end
-arch blocked
+arch cave_15
 x 27
 y 13
 end
@@ -3240,7 +3240,7 @@ arch afloor_right
 x 28
 y 13
 end
-arch blocked
+arch cave_15
 x 28
 y 13
 end
@@ -4341,7 +4341,7 @@ arch cave20
 x 37
 y 19
 end
-arch blocked
+arch cave_15
 x 38
 end
 arch cave25
@@ -4463,14 +4463,14 @@ arch cave20
 x 38
 y 18
 end
-arch blocked
+arch cave_15
 x 38
 y 19
 end
-arch blocked
+arch cave_15
 x 39
 end
-arch blocked
+arch cave_15
 x 39
 y 1
 end
@@ -4594,11 +4594,11 @@ arch cave20
 x 39
 y 17
 end
-arch blocked
+arch cave_15
 x 39
 y 18
 end
-arch blocked
+arch cave_15
 x 39
 y 19
 end
