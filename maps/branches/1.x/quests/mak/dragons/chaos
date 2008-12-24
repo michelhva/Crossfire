@@ -13,7 +13,7 @@ endmsg
 end
 arch dungeon_floor
 end
-arch blocked
+arch cave_15
 end
 arch dungeon_floor
 y 1
@@ -168,7 +168,7 @@ end
 arch dungeon_floor
 y 26
 end
-arch blocked
+arch cave_15
 y 26
 end
 arch blocked
@@ -5627,7 +5627,7 @@ end
 arch dungeon_floor
 x 30
 end
-arch blocked
+arch cave_15
 x 30
 end
 arch dungeon_floor
@@ -5834,7 +5834,7 @@ arch dungeon_floor
 x 30
 y 26
 end
-arch blocked
+arch cave_15
 x 30
 y 26
 end
