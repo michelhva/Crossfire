@@ -11,15 +11,15 @@ Created:  1996-09-16 Chris Jeske
 Modified: 2008-12-24 Rick Tanner
 endmsg
 end
-arch blocked
+arch cave_15
 end
-arch blocked
+arch cave_15
 y 1
 end
-arch blocked
+arch cave_15
 y 2
 end
-arch blocked
+arch cave_15
 y 3
 end
 arch blackrock
@@ -52,10 +52,10 @@ end
 arch cave17
 y 8
 end
-arch blocked
+arch cave_15
 y 9
 end
-arch blocked
+arch cave_15
 y 10
 end
 arch blackrock
@@ -82,17 +82,17 @@ end
 arch cave17
 y 14
 end
-arch blocked
+arch cave_15
 y 15
 end
-arch blocked
+arch cave_15
 x 1
 end
-arch blocked
+arch cave_15
 x 1
 y 1
 end
-arch blocked
+arch cave_15
 x 1
 y 2
 end
@@ -184,14 +184,14 @@ arch cave17
 x 1
 y 15
 end
-arch blocked
+arch cave_15
 x 2
 end
-arch blocked
+arch cave_15
 x 2
 y 1
 end
-arch blocked
+arch cave_15
 x 2
 y 2
 end
@@ -638,7 +638,7 @@ arch cave20
 x 6
 y 14
 end
-arch blocked
+arch cave_15
 x 6
 y 15
 end
@@ -1392,11 +1392,11 @@ arch cave22
 x 14
 y 14
 end
-arch blocked
+arch cave_15
 x 14
 y 15
 end
-arch blocked
+arch cave_15
 x 15
 end
 arch blackrock
@@ -1479,23 +1479,23 @@ arch cave20
 x 15
 y 10
 end
-arch blocked
+arch cave_15
 x 15
 y 11
 end
-arch blocked
+arch cave_15
 x 15
 y 12
 end
-arch blocked
+arch cave_15
 x 15
 y 13
 end
-arch blocked
+arch cave_15
 x 15
 y 14
 end
-arch blocked
+arch cave_15
 x 15
 y 15
 end
