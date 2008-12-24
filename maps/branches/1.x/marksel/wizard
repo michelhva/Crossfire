@@ -11,7 +11,7 @@ enter_x 13
 enter_y 7
 msg
 Created:  1999-02-03 King Zoobus
-Modified: 2008-12-10 Rick Tanner
+Modified: 2008-12-24 Rick Tanner
 endmsg
 end
 arch cobblestones2
@@ -1503,14 +1503,10 @@ arch cobblestones2
 x 13
 y 7
 end
-arch invis_exit
+arch oakdoor_1
 slaying /world/world_120_109
 hp 35
 sp 40
-x 13
-y 7
-end
-arch door_1
 x 13
 y 7
 end
