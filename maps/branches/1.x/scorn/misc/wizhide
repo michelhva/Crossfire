@@ -9,7 +9,7 @@ enter_x 10
 enter_y 12
 msg
 Created:  2006-08-05 Alex Schultz
-Modified: 2008-11-14 Rick Tanner
+Modified: 2008-12-24 Rick Tanner
 endmsg
 end
 arch dungeon_magic
@@ -718,6 +718,10 @@ arch blocked
 x 3
 y 7
 end
+arch cave_15
+x 3
+y 8
+end
 arch dungeon_magic
 name no_spells
 x 3
@@ -776,6 +780,14 @@ end
 arch cave2
 x 3
 y 11
+end
+arch cave_15
+x 3
+y 12
+end
+arch cave_15
+x 3
+y 13
 end
 arch dungeon_magic
 name no_spells
@@ -931,6 +943,14 @@ end
 arch cave2
 x 4
 y 11
+end
+arch cave_15
+x 4
+y 12
+end
+arch cave_15
+x 4
+y 13
 end
 arch dungeon_magic
 name no_spells
@@ -1494,6 +1514,14 @@ arch cave2
 x 7
 y 11
 end
+arch cave_15
+x 7
+y 12
+end
+arch cave_15
+x 7
+y 13
+end
 arch blocked
 x 8
 y 7
@@ -1577,6 +1605,14 @@ end
 arch cave22
 x 8
 y 11
+end
+arch cave_15
+x 8
+y 12
+end
+arch cave_15
+x 8
+y 13
 end
 arch blocked
 x 9
