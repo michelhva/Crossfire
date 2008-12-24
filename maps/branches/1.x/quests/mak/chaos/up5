@@ -2,13 +2,14 @@ arch map
 name Warriors' Tower, Vultoor's Chamber
 reset_timeout 7200
 difficulty 99
+region wilderness
 width 23
 height 26
 enter_x 11
 enter_y 22
 msg
 Created:  2000-04-09 Magnus Kronhamn (mak@solace.mh.se)
-Modified: 2008-11-13 Rick Tanner
+Modified: 2008-12-24 Rick Tanner
 endmsg
 maplore
 @quest Lorkas
