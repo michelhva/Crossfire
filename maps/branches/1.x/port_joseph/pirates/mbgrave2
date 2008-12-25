@@ -9,7 +9,7 @@ enter_x 10
 enter_y 30
 msg
 Created:  1994-06-02 langley (langley@fermat.dartmouth.edu)
-Modified: 2008-12-24 Rick Tanner
+Modified: 2008-12-25 Rick Tanner
 endmsg
 end
 arch cave_15
@@ -322,7 +322,7 @@ end
 arch pstone_2
 x 2
 end
-arch dun2
+arch cave4
 x 2
 end
 arch pstone_2
@@ -527,7 +527,7 @@ end
 arch pstone_2
 x 3
 end
-arch dun2
+arch cave4
 x 3
 end
 arch medium_stones
@@ -954,7 +954,7 @@ arch pstone_2
 x 5
 y 1
 end
-arch dun2
+arch cave4
 x 5
 y 1
 end
@@ -1797,7 +1797,7 @@ arch pstone_2
 x 10
 y 1
 end
-arch dun2
+arch cave4
 x 10
 y 1
 end
@@ -2001,7 +2001,7 @@ arch pstone_2
 x 11
 y 7
 end
-arch dun3
+arch cave1
 x 11
 y 7
 end
@@ -2469,7 +2469,7 @@ end
 arch pstone_2
 x 14
 end
-arch dun2
+arch cave4
 x 14
 end
 arch pstone_2
@@ -2484,7 +2484,7 @@ arch pstone_2
 x 14
 y 3
 end
-arch dun0
+arch cave21
 x 14
 y 3
 end
@@ -3179,7 +3179,7 @@ arch pstone_2
 x 18
 y 8
 end
-arch dun10
+arch cave11
 x 18
 y 8
 end
@@ -3334,7 +3334,7 @@ arch pstone_2
 x 19
 y 5
 end
-arch dun3
+arch cave1
 x 19
 y 5
 end
@@ -3342,7 +3342,7 @@ arch pstone_2
 x 19
 y 6
 end
-arch dun3
+arch cave1
 x 19
 y 6
 end
@@ -3350,7 +3350,7 @@ arch pstone_2
 x 19
 y 7
 end
-arch dun3
+arch cave1
 x 19
 y 7
 end
