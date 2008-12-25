@@ -9,7 +9,7 @@ enter_x 2
 enter_y 31
 msg
 Created:  2000-04-09 Magnus Kronhamn (mak@solace.mh.se)
-Modified: 2008-12-24 Rick Tanner
+Modified: 2008-12-25 Rick Tanner
 endmsg
 maplore
 @quest Lorkas
@@ -647,7 +647,7 @@ arch small_stones
 x 3
 y 17
 end
-arch cave_4
+arch dun22
 x 3
 y 17
 end
@@ -848,7 +848,7 @@ arch pstone_3
 x 4
 y 18
 end
-arch cave_4
+arch dun22
 x 4
 y 18
 end
@@ -1045,7 +1045,7 @@ arch pstone_3
 x 5
 y 19
 end
-arch cave_4
+arch dun22
 x 5
 y 19
 end
@@ -1235,7 +1235,7 @@ arch pstone_3
 x 6
 y 20
 end
-arch cave_4
+arch dun22
 x 6
 y 20
 end
@@ -1423,7 +1423,7 @@ arch pstone_3
 x 7
 y 21
 end
-arch cave_4
+arch dun22
 x 7
 y 21
 end
@@ -1641,7 +1641,7 @@ arch small_stones
 x 8
 y 22
 end
-arch cave_4
+arch dun22
 x 8
 y 22
 end
@@ -1829,7 +1829,7 @@ arch small_stones
 x 9
 y 23
 end
-arch cave_4
+arch dun22
 x 9
 y 23
 end
@@ -2017,7 +2017,7 @@ arch small_stones
 x 10
 y 24
 end
-arch cave_4
+arch dun22
 x 10
 y 24
 end
@@ -2205,7 +2205,7 @@ arch small_stones
 x 11
 y 25
 end
-arch cave_4
+arch dun22
 x 11
 y 25
 end
@@ -4201,7 +4201,7 @@ arch small_stones
 x 20
 y 25
 end
-arch cave_3
+arch dun21
 x 20
 y 25
 end
@@ -4381,7 +4381,7 @@ arch small_stones
 x 21
 y 24
 end
-arch cave_3
+arch dun21
 x 21
 y 24
 end
@@ -4561,7 +4561,7 @@ arch small_stones
 x 22
 y 23
 end
-arch cave_3
+arch dun21
 x 22
 y 23
 end
@@ -4741,7 +4741,7 @@ arch small_stones
 x 23
 y 22
 end
-arch cave_3
+arch dun21
 x 23
 y 22
 end
@@ -4921,7 +4921,7 @@ arch pstone_3
 x 24
 y 21
 end
-arch cave_3
+arch dun21
 x 24
 y 21
 end
@@ -5101,7 +5101,7 @@ arch pstone_3
 x 25
 y 20
 end
-arch cave_3
+arch dun21
 x 25
 y 20
 end
@@ -5286,7 +5286,7 @@ arch pstone_3
 x 26
 y 19
 end
-arch cave_3
+arch dun21
 x 26
 y 19
 end
@@ -5468,7 +5468,7 @@ arch pstone_3
 x 27
 y 18
 end
-arch cave_3
+arch dun21
 x 27
 y 18
 end
@@ -5651,7 +5651,7 @@ arch small_stones
 x 28
 y 17
 end
-arch cave_3
+arch dun21
 x 28
 y 17
 end
