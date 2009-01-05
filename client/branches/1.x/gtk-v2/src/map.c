@@ -323,15 +323,33 @@ static void display_mapcell(int ax, int ay, int mx, int my)
 	    /* draw single-tile faces first */
 	    int face = mapdata_face(ax, ay, layer);
 	    if (face > 0 && pixmaps[face]->map_image != NULL) {
-		int w = pixmaps[face]->map_width;
-		int h = pixmaps[face]->map_height;
-		draw_pixmap(
-		    w-map_image_size, h-map_image_size,
-		    ax*map_image_size, ay*map_image_size,
-		    ax*map_image_size+map_image_size-w, ay*map_image_size+map_image_size-h,
-		    pixmaps[face]->map_mask, pixmaps[face]->map_image, map_image_size, map_image_size);
-		if ( use_config[CONFIG_SMOOTH])
-		    drawsmooth(mx, my, layer, ax*map_image_size, ay*map_image_size);
+                int src_x = pixmaps[face]->map_width - map_image_size;
+                int src_y = pixmaps[face]->map_height - map_image_size;
+                int off_x=0, off_y=0;
+
+                /* Normalize the source coordinates - clearly it can't be
+                 * be less than zero.  If it is less than zero, this denotes
+                 * a 'small' image.  By definition, the bottom right is the
+                 * origin of the image (an image 16 pixels high is drawn on the
+                 * bottom half of the space, not top), which is why
+                 * the offsets are negative of the base values.
+                 */
+                if (src_x<0) {
+                    off_x=-src_x;
+                    src_x=0;
+                }
+                if (src_y<0) {
+                    off_y = -src_y;
+                    src_y=0;
+                }
+                draw_pixmap(
+                    src_x, src_y,
+                    ax*map_image_size + off_x, ay*map_image_size + off_y,
+                    ax*map_image_size+map_image_size-pixmaps[face]->map_width,
+                    ay*map_image_size+map_image_size-pixmaps[face]->map_height,
+                    pixmaps[face]->map_mask, pixmaps[face]->map_image,
+                    pixmaps[face]->map_width>map_image_size?map_image_size:pixmaps[face]->map_width,
+                    pixmaps[face]->map_height>map_image_size?map_image_size:pixmaps[face]->map_height);
 	    }
 	    /* Sometimes, it may happens we need to draw the smooth while there
 	     * is nothing to draw at that layer (but there was something at lower
