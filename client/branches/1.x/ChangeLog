@@ -2,6 +2,10 @@
 Top of SVN tree:
 ------------------------------------------------------------------------------
 
+gtk-v2/src/map.c: display_mapcell(): Fix bug 2476715: Image display problem
+    when not sized to a multiple of 32
+MSW 2009-01-04
+
 Fix branch GTK-V2 client issue [ 1876788 ] Doubled characters in GTK clients
 (unusable).  Tested with --enable-cfgtk2 compiled as RPM.
   gtk-v2/src/keys.c
