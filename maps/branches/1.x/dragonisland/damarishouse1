@@ -8,7 +8,7 @@ enter_x 10
 enter_y 13
 msg
 Created:  1997-06-17
-Modified: 2008-11-07 Rick Tanner
+Modified: 2009-01-14 Rick Tanner
 endmsg
 end
 arch grass
@@ -616,7 +616,11 @@ arch woodfloor
 x 7
 y 2
 end
-arch dwall_2_1_2
+arch dwall_3_3
+x 7
+y 2
+end
+arch dwall_0
 x 7
 y 2
 end
@@ -676,7 +680,11 @@ arch woodfloor
 x 7
 y 10
 end
-arch dwall_2_1_2
+arch dwall_3_1
+x 7
+y 10
+end
+arch dwall_0
 x 7
 y 10
 end

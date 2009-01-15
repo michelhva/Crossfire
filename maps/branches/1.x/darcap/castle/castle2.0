@@ -8,7 +8,7 @@ enter_x 23
 enter_y 24
 msg
 Created:  1999-01-21 (john_cater@yahoo.com)
-Modified: 2007-11-04 Andreas Kirschbaum
+Modified: 2009-01-14 Rick Tanner
 endmsg
 end
 arch dungeon_floor
@@ -3129,6 +3129,10 @@ arch dungeon_floor
 x 14
 y 26
 end
+arch wall_1_1
+x 14
+y 26
+end
 arch bwall_0
 x 14
 y 26
@@ -3145,7 +3149,7 @@ arch dungeon_floor
 x 14
 y 28
 end
-arch wall_4
+arch wall_2_2_1
 x 14
 y 28
 end
@@ -3948,7 +3952,7 @@ arch dungeon_floor
 x 18
 y 21
 end
-arch wall_2_1_2
+arch wall_1_4
 x 18
 y 21
 end
@@ -3977,6 +3981,10 @@ x 18
 y 27
 end
 arch dungeon_floor
+x 18
+y 28
+end
+arch wall_2_1_2
 x 18
 y 28
 end
@@ -4148,6 +4156,10 @@ x 19
 y 20
 end
 arch dungeon_floor
+x 19
+y 21
+end
+arch wall_1_3
 x 19
 y 21
 end
@@ -4350,7 +4362,7 @@ arch dungeon_floor
 x 20
 y 21
 end
-arch swall_2_1_2
+arch bwall_1_3
 x 20
 y 21
 end
@@ -4525,7 +4537,7 @@ arch dungeon_floor
 x 21
 y 17
 end
-arch bwall_2_1_2
+arch bwall_1_3
 x 21
 y 17
 end
@@ -4984,6 +4996,10 @@ arch dungeon_floor
 x 23
 y 28
 end
+arch wall_2_1_2
+x 23
+y 28
+end
 arch bwall_0
 x 23
 y 28
@@ -5322,7 +5338,7 @@ arch dungeon_floor
 x 25
 y 17
 end
-arch bwall_2_1_2
+arch bwall_1_3
 x 25
 y 17
 end
@@ -5537,6 +5553,10 @@ arch dungeon_floor
 x 26
 y 21
 end
+arch wall_1_1
+x 26
+y 21
+end
 arch bwall_0
 x 26
 y 21
@@ -5569,6 +5589,10 @@ arch dungeon_floor
 x 26
 y 25
 end
+arch wall_3_2
+x 26
+y 25
+end
 arch bwall_0
 x 26
 y 25
@@ -5585,11 +5609,19 @@ arch dungeon_floor
 x 26
 y 27
 end
+arch wall_2_1_1
+x 26
+y 27
+end
 arch bwall_0
 x 26
 y 27
 end
 arch dungeon_floor
+x 26
+y 28
+end
+arch wall_2_2_4
 x 26
 y 28
 end
@@ -5780,7 +5812,7 @@ arch dungeon_floor
 x 27
 y 25
 end
-arch wall_2_1_2
+arch wall_1_3
 x 27
 y 25
 end
@@ -6577,7 +6609,7 @@ arch dungeon_floor
 x 31
 y 25
 end
-arch wall_2_1_2
+arch wall_1_4
 x 31
 y 25
 end
@@ -7020,6 +7052,10 @@ arch dungeon_floor
 x 33
 y 34
 end
+arch wall_1_4
+x 33
+y 34
+end
 arch bwall_0
 x 33
 y 34
@@ -7296,7 +7332,7 @@ arch dungeon_floor
 x 34
 y 29
 end
-arch bwall_2_1_1
+arch bwall_1_2
 x 34
 y 29
 end
@@ -7328,6 +7364,10 @@ arch dungeon_floor
 x 34
 y 33
 end
+arch wall_1_1
+x 34
+y 33
+end
 arch bwall_0
 x 34
 y 33
@@ -7336,7 +7376,7 @@ arch dungeon_floor
 x 34
 y 34
 end
-arch wall_4
+arch wall_2_2_4
 x 34
 y 34
 end
@@ -7360,7 +7400,7 @@ arch dungeon_floor
 x 34
 y 37
 end
-arch wall_2_1_1
+arch wall_1_1
 x 34
 y 37
 end
