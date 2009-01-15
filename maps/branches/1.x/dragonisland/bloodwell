@@ -8,7 +8,7 @@ enter_x 14
 enter_y 14
 msg
 Created:  1997-06-17
-Modified: 2008-11-06 Rick Tanner
+Modified: 2009-01-14 Rick Tanner
 endmsg
 end
 arch dungeon_floor
@@ -498,7 +498,7 @@ end
 arch awall_2_1_2
 x 4
 end
-arch awall_3_3
+arch awall_0
 x 4
 end
 arch dungeon_floor
@@ -532,7 +532,7 @@ arch dungeon_floor
 x 4
 y 4
 end
-arch awall_2_2_4
+arch awall_1_3
 x 4
 y 4
 end

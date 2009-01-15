@@ -9,7 +9,7 @@ width 25
 height 25
 msg
 Created:  1995-04-24 Kundi, Xue (xkd@soda.csua.berkeley.edu)
-Modified: 2008-07-22 Rick Tanner
+Modified: 2009-01-14 Rick Tanner
 endmsg
 end
 arch woodfloor
@@ -858,9 +858,17 @@ arch dun10
 x 5
 y 5
 end
+arch woodfloor
+x 5
+y 6
+end
 arch dun14
 x 5
 y 6
+end
+arch woodfloor
+x 5
+y 7
 end
 arch dun3
 x 5
@@ -2110,9 +2118,17 @@ arch dun16
 x 11
 y 18
 end
+arch woodfloor
+x 11
+y 19
+end
 arch dun11
 x 11
 y 19
+end
+arch woodfloor
+x 11
+y 20
 end
 arch dun4
 x 11
@@ -2126,13 +2142,17 @@ arch swall_2_1_1
 x 11
 y 21
 end
-arch shop_empty
+arch woodfloor
 x 11
 y 22
 end
 arch dun10
 x 11
 y 22
+end
+arch woodfloor
+x 11
+y 23
 end
 arch dun11
 x 11
@@ -2287,9 +2307,17 @@ arch dun11
 x 12
 y 17
 end
+arch woodfloor
+x 12
+y 18
+end
 arch dun14
 x 12
 y 18
+end
+arch woodfloor
+x 12
+y 19
 end
 arch dun14
 x 12
@@ -2311,9 +2339,17 @@ arch shop_mat
 x 12
 y 21
 end
+arch woodfloor
+x 12
+y 22
+end
 arch dun9
 x 12
 y 22
+end
+arch woodfloor
+x 12
+y 23
 end
 arch dun14
 x 12
@@ -2425,6 +2461,10 @@ end
 arch afloor_right
 x 13
 y 15
+end
+arch afloor_left
+x 13
+y 16
 end
 arch dun16
 x 13
@@ -4174,6 +4214,10 @@ arch dun14
 x 24
 y 6
 end
+arch afloor_left
+x 24
+y 7
+end
 arch dun14
 x 24
 y 7
@@ -4249,6 +4293,10 @@ end
 arch dun3
 x 24
 y 15
+end
+arch afloor_left
+x 24
+y 16
 end
 arch dun14
 x 24

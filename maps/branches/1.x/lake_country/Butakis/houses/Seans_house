@@ -8,7 +8,7 @@ enter_x 11
 enter_y 16
 msg
 Created:  1995-05-03 Kundi, Xue (xkd@soda.berkeley.edu)
-Modified: 2008-11-07 Rick Tanner
+Modified: 2009-01-14 Rick Tanner
 endmsg
 end
 arch woodfloor
@@ -93,10 +93,13 @@ end
 arch wwall_2_2_1
 y 13
 end
+arch swall_1_1_half
+y 13
+end
 arch grass
 y 14
 end
-arch swall_1_1
+arch swall_2_1_1
 y 14
 end
 arch grass
@@ -540,7 +543,11 @@ arch woodfloor
 x 4
 y 13
 end
-arch wwall_2_2_4
+arch swall_1_2_half
+x 4
+y 13
+end
+arch wwall_1_3
 x 4
 y 13
 end
@@ -926,7 +933,11 @@ arch woodfloor
 x 7
 y 13
 end
-arch wwall_2_2_1
+arch swall_1_2_half
+x 7
+y 13
+end
+arch wwall_1_4
 x 7
 y 13
 end
@@ -1140,7 +1151,7 @@ arch woodfloor
 x 9
 y 4
 end
-arch wwall_2_2_1
+arch wwall_1_2
 x 9
 y 4
 end
@@ -1344,7 +1355,7 @@ arch woodfloor
 x 10
 y 10
 end
-arch wwall_3_2
+arch wwall_2_1_1
 x 10
 y 10
 end
@@ -1368,7 +1379,7 @@ arch woodfloor
 x 10
 y 13
 end
-arch wwall_3_1
+arch wwall_2_2_4
 x 10
 y 13
 end
@@ -1827,7 +1838,7 @@ arch woodfloor
 x 13
 y 10
 end
-arch wwall_3_3
+arch wwall_2_2_2
 x 13
 y 10
 end
@@ -2146,7 +2157,7 @@ arch woodfloor
 x 15
 y 13
 end
-arch wwall_4
+arch wwall_3_1
 x 15
 y 13
 end
@@ -2163,7 +2174,7 @@ arch woodfloor
 x 15
 y 15
 end
-arch wwall_2_2_1
+arch wwall_1_4
 x 15
 y 15
 end
@@ -2577,11 +2588,15 @@ arch wwall_2_1_2
 x 18
 y 15
 end
+arch swall_1_1_half
+x 18
+y 15
+end
 arch grass
 x 18
 y 16
 end
-arch swall_1_3
+arch swall_2_2_4
 x 18
 y 16
 end

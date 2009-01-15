@@ -11,7 +11,7 @@ enter_x 6
 enter_y 12
 msg
 Created:  2000-10-22
-Modified: 2009-01-09 Rick Tanner
+Modified: 2009-01-14 Rick Tanner
 endmsg
 end
 arch woodfloor
@@ -67,6 +67,9 @@ arch wwall_2_1_1
 y 8
 end
 arch woodfloor
+y 9
+end
+arch swall_1_4_half
 y 9
 end
 arch wwall_2_1_1
@@ -141,7 +144,7 @@ arch woodfloor
 x 1
 y 9
 end
-arch swall_1_4
+arch swall_2_1_2
 x 1
 y 9
 end
@@ -977,7 +980,7 @@ arch woodfloor
 x 11
 y 9
 end
-arch swall_1_3
+arch swall_2_1_2
 x 11
 y 9
 end
@@ -1097,6 +1100,10 @@ x 12
 y 9
 end
 arch wwall_2_1_1
+x 12
+y 9
+end
+arch swall_1_3_half
 x 12
 y 9
 end

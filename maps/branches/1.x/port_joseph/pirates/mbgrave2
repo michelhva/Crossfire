@@ -9,7 +9,7 @@ enter_x 10
 enter_y 30
 msg
 Created:  1994-06-02 langley (langley@fermat.dartmouth.edu)
-Modified: 2008-12-25 Rick Tanner
+Modified: 2009-01-14 Rick Tanner
 endmsg
 end
 arch cave_15
@@ -80,16 +80,13 @@ end
 arch cave17
 y 17
 end
-arch pstone_2
+arch dun33
 y 18
 end
-arch cave_15
-y 18
-end
-arch cave_15
+arch dun33
 y 19
 end
-arch cave_15
+arch dun33
 y 20
 end
 arch dungeon_floor
@@ -125,7 +122,7 @@ end
 arch random_food
 y 28
 end
-arch cave_15
+arch dun33
 y 29
 end
 arch cave_15
@@ -307,7 +304,7 @@ arch random_food
 x 1
 y 28
 end
-arch cave_15
+arch dun33
 x 1
 y 29
 end
@@ -512,7 +509,7 @@ arch dungeon_floor
 x 2
 y 28
 end
-arch cave_15
+arch dun33
 x 2
 y 29
 end
@@ -749,7 +746,7 @@ endmsg
 x 3
 y 28
 end
-arch cave_15
+arch dun33
 x 3
 y 29
 end
@@ -935,7 +932,7 @@ arch chair_3.2
 x 4
 y 28
 end
-arch cave_15
+arch dun33
 x 4
 y 29
 end
@@ -1091,7 +1088,7 @@ arch mine3
 x 5
 y 28
 end
-arch cave_15
+arch dun33
 x 5
 y 29
 end
@@ -3179,7 +3176,7 @@ arch pstone_2
 x 18
 y 8
 end
-arch cave11
+arch cave15
 x 18
 y 8
 end

@@ -11,7 +11,7 @@ enter_x 7
 enter_y 15
 msg
 Created:  1997-02-22
-Modified: 2009-01-09 Rick Tanner
+Modified: 2009-01-14 Rick Tanner
 endmsg
 end
 arch woodfloor
@@ -258,6 +258,10 @@ x 2
 y 7
 end
 arch wall_1_2
+x 2
+y 7
+end
+arch wall_2_short
 x 2
 y 7
 end
@@ -1389,6 +1393,10 @@ x 15
 y 10
 end
 arch wall_2_1_1
+x 15
+y 10
+end
+arch wall_2_short
 x 15
 y 10
 end
