@@ -8,7 +8,7 @@ enter_x 13
 enter_y 12
 msg
 Created:  2004-04-10 Avion
-Modified: 2008-11-25 Rick Tanner
+Modified: 2009-01-17 Rick Tanner
 endmsg
 end
 arch blocked
@@ -365,11 +365,17 @@ animation sunspear
 x 1
 y 25
 end
-arch blocked
-name Void
+arch blackmarble
 x 1
 y 26
-blocksview 0
+end
+arch exit
+name Nexus
+slaying start/Nexus
+hp 12
+sp 15
+x 1
+y 26
 end
 arch blocked
 name Void
@@ -537,6 +543,10 @@ x 2
 y 25
 end
 arch exit
+name Dragon Hall of Selection
+slaying start/HallsOfSelection/pl_dragon
+hp 7
+sp 22
 x 2
 y 25
 end
@@ -550,6 +560,10 @@ x 2
 y 27
 end
 arch exit
+name Wraith Hal of Selection
+slaying start/HallsOfSelection/wraith_player
+hp 7
+sp 18
 x 2
 y 27
 end
@@ -695,11 +709,17 @@ x 3
 y 23
 blocksview 0
 end
-arch blocked
-name Void
+arch blackmarble
 x 3
 y 24
-blocksview 0
+end
+arch exit
+name Fireborn Hall of Selection
+slaying start/HallsOfSelection/fireborn_player
+hp 7
+sp 18
+x 3
+y 24
 end
 arch tile_white_floor
 x 3
@@ -730,11 +750,17 @@ x 3
 y 27
 unique 1
 end
-arch blocked
-name Void
+arch blackmarble
 x 3
 y 28
-blocksview 0
+end
+arch exit
+name Hall of Selection
+slaying HallOfSelection
+hp 7
+sp 18
+x 3
+y 28
 end
 arch blocked
 name Void
@@ -4312,16 +4338,11 @@ x 21
 y 23
 blocksview 0
 end
-arch blocked
-name Void
+arch blackmarble
 x 21
 y 24
-blocksview 0
 end
-arch firepot
-name Stars
-face sparkshower.111
-animation sparkshower
+arch exit
 x 21
 y 24
 end
@@ -4354,11 +4375,13 @@ x 21
 y 27
 unique 1
 end
-arch blocked
-name Void
+arch blackmarble
 x 21
 y 28
-blocksview 0
+end
+arch exit
+x 21
+y 28
 end
 arch blocked
 name Void
@@ -4733,11 +4756,13 @@ x 23
 y 25
 blocksview 0
 end
-arch blocked
-name Void
+arch blackmarble
 x 23
 y 26
-blocksview 0
+end
+arch exit
+x 23
+y 26
 end
 arch blocked
 name Void
