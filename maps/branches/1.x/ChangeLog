@@ -1,3 +1,188 @@
+2009-01-17 08:23  rjtanner
+
+	* quests/mcz/castle_earth: Fix map header formatting
+
+2009-01-17 07:56  rjtanner
+
+	* quests/mcz/castle1: Backport from trunk - insert missing floor
+	  tiles
+
+2009-01-17 07:49  rjtanner
+
+	* quests/greyshield/Greysword: Backport from Trunk; Replace and
+	  phase out the (old) oakdoor graphic with something different
+
+2009-01-17 07:44  rjtanner
+
+	* pup_land/rainbow/islands: Backport from Trunk; replaced ordinary
+	  tower with lighthouse archetype
+
+2009-01-17 07:24  rjtanner
+
+	* navar_city/mlab/zealothouseb1: Backport from Trunk; Replace
+	  blocked (solid black square) arch with cave_15 (solid grey
+	  square) archetype
+
+2009-01-17 07:23  rjtanner
+
+	* navar_city/mlab/tavernb4: Backport from Trunk; Replace blocked
+	  (solid black square) arch with cave_15 (solid grey square)
+	  archetype
+
+2009-01-17 07:22  rjtanner
+
+	* navar_city/mlab/tavernb1: Backport from Trunk; Update wall
+	  sections to match nearby walls or styles
+
+2009-01-17 07:20  rjtanner
+
+	* navar_city/misc/theaterb3: Backport from Trunk; Replace blocked
+	  (solid black square) arch with cave_15 (solid grey square)
+	  archetype
+
+2009-01-17 07:18  rjtanner
+
+	* navar_city/city1court: Backport from Trunk; Added missing floor
+	  tiles
+
+2009-01-17 07:17  rjtanner
+
+	* marksel/mines: Backport from Trunk; Replace blocked (solid black
+	  square) arch with cave_15 (solid grey square) archetype
+
+2009-01-17 07:14  rjtanner
+
+	* lake_country/snake_pit/Chaos_lair2,
+	  lake_country/snake_pit/Chaos_lair4: Backport from Trunk. Fixed an
+	  inventory error with the chaos dragon, colourspray was inside of
+	  a ground tile for some reason; reinserted the spell back in to
+	  the normal inventory so the dragon has access to the spell again
+
+2009-01-17 07:08  rjtanner
+
+	* lake_country/Butakis/arena: Backport form Trunk; Sync level
+	  difficulty and replace oakdoor archetype
+
+2009-01-17 07:03  rjtanner
+
+	* HallOfDMs: Backport from Trunk; As a convenience, added
+	  teleporters to the four Hall of Selection maps and the Nexus -
+	  other changes are made for visual balance (for now)
+
+2009-01-17 07:01  rjtanner
+
+	* euthville/hallofbones: Backport from Trunk; Updated door
+	  archetypes and replaced blocked (solid black square) arche with
+	  cave_15 (solid grey square) archetype
+
+2009-01-17 06:55  rjtanner
+
+	* dragonisland/tavern: Backport from Trunk; Replace rocks with
+	  wooden table (longtable) for the booze to sit on in the bar
+
+2009-01-17 06:50  rjtanner
+
+	* dragonisland/keysale: Backport from Trunk; Cosmetic wall changes
+	  for nicer merging
+
+2009-01-17 06:49  rjtanner
+
+	* dragonisland/housebrxzl: Backport from Trunk; Cosmetic wall
+	  changes for nicer merging
+
+2009-01-17 06:44  rjtanner
+
+	* darcap/town2/shop_f: Backport from Trunk; Redesign of Bob's
+	  Bakery
+
+2009-01-17 06:39  rjtanner
+
+	* brest/brittany/khazad.4: Backport from Trunk; Added missing floor
+	  tiles
+
+2009-01-17 06:35  rjtanner
+
+	* brest/brittany/hole: Backport from Trunk; Added walls to the
+	  dungeon map, updated exit & entrance coordinates due to the map
+	  size changing
+
+2009-01-15 06:22  rjtanner
+
+	* lake_country/DA: Backport from Trunk, make Hanuk uncharmable by
+	  setting him to level 120
+
+2009-01-15 05:53  rjtanner
+
+	* quests/mcz/castle_air, quests/mcz/castle_earth,
+	  quests/mcz/castle_fire, quests/mcz/castle_low1,
+	  quests/mcz/castle_low2: Backport from Trunk, Update map names for
+	  consistency (Castle Ra-Gar -> Castle of Ra-Gar)
+
+2009-01-15 02:44  rjtanner
+
+	* brest/brittany/jessy.1, brest/brittany/jessy.2,
+	  brest/brittany/jessy.3, brest/brittany/khazad.5,
+	  darcap/castle/castle2.0, darcap/castle/castle2.1,
+	  darcap/castle/castle2.2, darcap/castle/castle2.3,
+	  darcap/darcap/maze, darcap/lynn/castle1.2, darcap/lynn/castle1.3,
+	  darcap/undead/undead.2, darcap/village1, dragonisland/advguild,
+	  dragonisland/advguild3, dragonisland/advshop0,
+	  dragonisland/advshop1, dragonisland/advshop2,
+	  dragonisland/advshop3, dragonisland/advshop4,
+	  dragonisland/advshop5, dragonisland/advshop6,
+	  dragonisland/bloodwell, dragonisland/damarishouse1,
+	  dragonisland/intwell, dragonisland/keysale,
+	  euthville/devil.church3, euthville/map.fr.1, euthville/map.fr.2,
+	  euthville/map.fr.3, euthville/wiz1, euthville/wiz7,
+	  lake_country/Butakis/houses/Bobs_house,
+	  lake_country/Butakis/houses/Jacks_house,
+	  lake_country/Butakis/houses/Jacobs_house,
+	  lake_country/Butakis/houses/James_house,
+	  lake_country/Butakis/houses/Sams_house,
+	  lake_country/Butakis/houses/Seans_house,
+	  lake_country/Butakis/inn, lake_country/Mwizard/Mwizard5,
+	  lake_country/RETower/tower4, lake_country/ebony/masterlev,
+	  port_joseph/pirates/mbgrave2, pup_land/rainbow/red_town/shop,
+	  quests/greyshield/Elements, quests/greyshield/Fortress,
+	  quests/greyshield/Greysword: Backport from Trunk - update wall
+	  sections for nicer merging
+
+2009-01-15 02:04  rjtanner
+
+	* brest/brittany/dol-guldur.1, brest/brittany/dol-guldur.2,
+	  brest/elec.jes: Backport from Trunk - replace old xpm oakdoor
+	  with different exit archetype. Requires r10897 or newer.
+
+2009-01-11 07:16  rjtanner
+
+	* scorn/dtabb/cave3, scorn/houses/angrygiant,
+	  scorn/houses/barracks, scorn/houses/bowyer, scorn/houses/jeweler,
+	  scorn/houses/maze1, scorn/houses/newhouse1,
+	  scorn/kar/creepy.house, scorn/kar/drink,
+	  scorn/magara/porter_house, scorn/mansion/entrance,
+	  scorn/mansion/garden, scorn/mansion/str-tunnel,
+	  scorn/misc/HospitalityRoom, scorn/misc/PowerHouse,
+	  scorn/misc/battle_arena/arena_ud,
+	  scorn/misc/battle_arena/first-aide,
+	  scorn/misc/battle_arena/snack, scorn/misc/castle2,
+	  scorn/misc/devourlower, scorn/misc/jail, scorn/misc/jail_upper,
+	  scorn/misc/puddings.place, scorn/misc/templelyth,
+	  scorn/oldcity/oldcity2, scorn/oldcity/oldcity3,
+	  scorn/oldcity/oldcity7, scorn/shops/BasicSpells,
+	  scorn/towers/tower.mad2, sisters/granary, sisters/small_manor0,
+	  sisters/small_manor1, sisters/small_manor2,
+	  wolfsburg/dungeons/church.3, wolfsburg/dungeons/church.4a,
+	  wolfsburg/dungeons/church.4b, wolfsburg/dungeons/church.4c,
+	  wolfsburg/dungeons/church.4d, wolfsburg/eeur/tower1.2,
+	  wolfsburg/magara/castle/cellar, wolfsburg/magara/castle/floor_3,
+	  wolfsburg/magara/cellar1/hole, wolfsburg/magara/cellar_1,
+	  wolfsburg/magara/tower1/entrance: Backport from Trunk; Corrected
+	  map creation dates, no functional changes
+
+2009-01-10 08:27  rjtanner
+
+	* ChangeLog: Updated ChangeLog file using svn2cl
+
 2009-01-10 08:06  rjtanner
 
 	* azumauindo/minatomachi/buildings/guildkeybuilding1,
