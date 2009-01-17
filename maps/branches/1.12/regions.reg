@@ -1,0 +1,349 @@
+region wilderness
+parent world
+longname Somewhere out in the Wilderness
+fallback 1
+msg
+Grass, mountains, trees, rivers, and not a soul to be seen for miles around,
+the wilderness is not the most civilized of places, and stories
+that have reached the towns tell of fearsome creatures and labyrinthine
+dungeons far under the surface. Of course, these rumours have never been
+verified, though the few who have tried have taken a long time in doing so....
+endmsg
+end
+region world
+longname The World.
+jail /scorn/misc/jail 15 1
+msg
+If you are seeing this, someone goofed, you should never see this message.
+endmsg
+end
+region creation
+parent world
+longname The Creation of Time
+msg
+Who knows where this place is, but all have seen it. As mysterious as it is,
+its just an other part of life.
+endmsg
+end
+region highway
+parent world
+longname The Imperial Highway
+msg
+The Imperial Highway was built long ago, so much so that its origins are
+now long since passed out of recorded history and into the stuff of legends.
+In the years since its construction it has gained the name "The yellow Brick
+Road" on account of the distinctive colour of its paving. Whilst in former
+times the Imperial highway was safe to all who would pass along it, in
+recent times it has started to decay, as the toll of centuries comes to bear
+on this once-splendid testament to past powers.
+endmsg
+end
+region greenway
+parent wilderness
+longname The Greenway
+msg
+The elves are thought to have quicker ways to travel...
+endmsg
+end
+region scorn
+parent world
+longname The Kingdom of Scorn
+msg
+Nestled snugly in a sheltered bay at the west of the Imperial Highway, Scorn
+is a safe and welcoming place for those who pass by. Its position on the
+Imperial highway allows it to maintain its importance as a stopping off
+point between the other major cities along the route and an attractive
+location for trade and commerce. This combined with the sheltered harbour and
+extensive shipping lines, ensures that Scorn remains a key crossroads
+bustling with activity, long after its former military dominance has
+diminished.
+endmsg
+end
+region scorncounty
+parent scorn
+longname The Kingdom of Scorn, Surrounding Area
+msg
+Outside the gates of the city of scorn, the activity of the town can be heard,
+but not seen the cries of the traders, and calls of the sailors belie your
+proximity to this bustling town, though to look around you see only the relative
+tranquility of quiet farmland and the sense of peace it evokes.
+endmsg
+end
+region streetsofscorn
+parent scorn
+longname The Kingdom of Scorn, Inner City
+msg
+Here, in amidst the trading activity at the heart of scorn you find
+yourself scarcely able to hear yourself think with the din of commerce all around
+you as shop keepers and traders shout their wares.
+endmsg
+end
+region scornarena
+parent scorn
+longname The Kingdom of Scorn, Arena
+msg
+A giant amphitheatre made of white stone that glistens in the sunlight. People
+in the stands cheering and screaming for blood. The finality of the gates that
+come crashing down behind the gladiators below them, and the certain knowledge
+that only one will survive.
+endmsg
+end
+region scornoldcity
+parent scorn
+longname The Old City of Scorn
+msg
+You find yourself gasping in wonder at the extensive caverns underneath the city,
+here there remains the ruins of old Scorn. A reminder of the great power the city
+once possessed, and a sign of how far it has fallen. As you look around however
+you notice that whilst the previous inhabitants of these ruins are no longer
+present, some new ones seem to have taken their place, and these denizens don't
+appear to be very welcoming.
+endmsg
+end
+region navar
+parent world
+longname The Kingdom of Navar
+jail /navar_city/jail/jail 16 1
+msg
+Straddling the corner of the Imperial highway as it turns North near the
+Eastern border of the known world, and surrounded by dangerous territory,
+Navar is an unlikely site for one of the world's grandest cities.
+Yet there it stands, dominating the skyline for miles around and showing the
+same bustling activity expected of any thriving market town.
+endmsg
+end
+region brest
+parent world
+longname Brest
+msg
+Describe Brest
+endmsg
+end
+region darcap
+parent world
+longname The Sultanate of Darcap
+msg
+Isolated from the rest of the region by an extensive mountain range to the
+south, and possessing a massive natural harbour, Darcap is a small, but
+easily defensible town, dominated by a pair of powerful guilds. The town is
+also noted for its circus, whose reputation draws visitors from all over
+the world.
+endmsg
+end
+region darcapcircus
+parent darcap
+longname Darcap Circus
+msg
+This circus' reputation draws visitors from all over the world.
+endmsg
+end
+region wolfsburg
+parent world
+longname The Port of Wolfsburg
+msg
+Located on an island far away from the coast, Wolfsburg relies entirely on its
+quay to supply the town and as a result has a strong seafaring tradition among
+its populace.
+endmsg
+end
+region santodominion
+parent world
+longname Santo Dominion
+msg
+Santo Dominion sits in a small bay to the north of Scorn. It is an important port 
+of call for ships traveling to and from Scorn and the town of Stoneville, which 
+is located on Dragon Island.
+endmsg
+end
+region lakecountry
+parent world
+longname Lake Country
+msg
+Founded by Lord Butakis, this land is a unique region of lakes, rivers and the sea. 
+Changes, both natural and unnatural, had drastically transformed the landscape of 
+this area.  Rivers had been diverted, lakes were drained, and the sea had reseeded - 
+only to have all this undone or remade through a catastrophic flood a decade later. 
+ As a result of this devastation, one needs to recognize the hardship and sorrow 
+that has been a burden on this land. Many lives have been lost, several graves - 
+marked and unmarked fill area.  Rumors that the fog, which covers the land, is a 
+testament of the grief and anguish experienced by the first settlers has drawn 
+those brave enough to face such superstition.  Another interest of lore is the 
+wandering spirit from the nearby forest; a spirit in which seems to be holding a 
+grudge from ages ago. Others travel to Lake Country because of its reputation - 
+the rich shops operated by retired adventurers, the Training Tower and the safety
+ within the Fortress of Lord Butakis.
+endmsg
+end
+region portjoseph
+parent world
+longname Port Joseph
+msg
+Port Joseph is located on the largest (which isn't saying much) of a chain of 
+islands west of the Kingdom of Scorn.  While the island doesn't boast very much, 
+most everything there is very practical.  How the times have changed. The early 
+days of Port Joseph was a haven for the most ruthless band of pirates that the 
+high seas has ever seen. The infamous reputation of Port Joseph died with the 
+passing of renowned pirate admiral, Moogley Bill. While his legend lives on, 
+his treasure horde is still missing. Thanks to increased presence and protection 
+from The King's Navy, many trade routes now pass through or near the area, so 
+that makes the Port a frequent stop and transfer point for merchants. 
+However, the pirate roots are still relevant today.
+endmsg
+end
+region pupland
+parent world
+longname Pupland
+msg
+Describe pupland
+endmsg
+end
+region ancientpupland
+parent pupland
+longname Pupland of Times Long Past
+msg
+Describe Ancient Pupland
+endmsg
+end
+region nurnberg
+parent pupland
+longname Nurnberg
+msg
+Describe Nurnberg
+endmsg
+end
+region lonetown
+parent pupland
+longname Lone Town
+msg
+Describe Lone Town
+endmsg
+end
+region stoneville
+parent world
+longname Stoneville
+msg
+Stoneville is a small ship port located on the western side of 
+Dragon Island. The island primarily serves as a vacation residence 
+for wealthy merchants and adventurers.  For those who are not 
+quite ready for retirement or seeking fame - guilds and shops keep
+those travelers well stocked and tested.  Of course, the islands 
+riches also seem to attract those with nefarious purposes who have 
+taken hold of the various caves in the nearby mountains.  And in 
+some cases, more closer to home then what most inhabitants would like.
+endmsg
+end
+region firevolcano
+parent world
+longname Team Arena Volcano
+msg
+This fiery volcano rose up from the mountains one day.  It is inhabited by a
+strange race of fire creatures who seem friendly, but very competitive.
+endmsg
+end
+region azumauindo
+parent world
+longname The Shogunate of Azumauindo
+msg
+A hidden civilization, at the far east of the world.
+endmsg
+end
+region dream
+parent world
+longname Life is but a dream?
+msg
+You do not know if you are awake or still dreaming
+endmsg
+end
+region citydeclouds
+parent dream
+longname City de Clouds
+msg
+A wonderous city resting on the clouds, it could not possibly exist...
+endmsg
+end
+region euthville
+parent world
+longname Ruins of Euthville
+msg
+The Ruins of Euthville can be found just off the Imperial Highway north of Scorn.
+The riches and accomplishments of this one prosperous city actually lead to it's downfall.
+Now, only terror and hardship remains -- demons and undead run rampant through the broken 
+remains.
+endmsg
+end
+region narcopin
+parent world
+longname Ruins of Narcopin
+msg
+Some believe natural elements have caused the once proud Kingdom of Narcopin to fall in to ruins. 
+Others think a conquering army left behind this decrepit area in route to greater conquest.  
+Some would say it was a famine or monster invasion.  No one would argue that frequent dust storms 
+and marauding monsters has left behind just a few of the once many structures - any of which could 
+collapse into rubble at any moment. Many are convinced ancient and lost treasure awaits those brave 
+enough to explore this region.  A few have attempted to explore this area; from archeologists and 
+adventurers to tomb raiders.  If there is anything left of value, it has either been plundered or 
+no one has lived long enough to find it - or leave with it.  One thing is for certain, there is 
+something very unnatural and unfinished with the fate of this whole area.
+endmsg
+end
+region whalingoutpost
+parent world
+longname Whaling Outpost
+msg
+Also known as Terra Glaci in Old Navarian, this frozen wasteland is located on the far edge of 
+the known world. The "Land of Frost" has been partially settled by those brave (or foolish) 
+enough to fend off the Polar Bears, Ice elementals, Frost Dragons and similar monstrosities. 
+Those in residence make a living (well, mere existence) out of whaling, which is why many of 
+the nearby islands make up the Whaling Outpost. No one knows for sure who or how many reside 
+around here, as the appetite of any wondering beast leaves countless dwellings empty and 
+numerous ships at the bottom of the sea.
+endmsg
+end
+region threesisters
+parent world
+longname Valley of The Three Sisters
+msg
+What should be a pristine valley nestled between two mountain ridges is rife in discord. 
+Three Sisters, on their quest to immortality, found a way to craft an item that rivaled 
+creations from the ancient gods.  For such an infractions - the ancient gods punished 
+The Sisters, leaving them scarred and disfigured with wounds that would have killed 
+any one else. The curse of immortality was then realized, but incomplete. Each of 
+The Three Sisters lost their greatest Gift, which now reside deep in the vaults 
+of the nearby factions.  For centuries now, conflict erupts daily as raids 
+between each sect fights to a inevitable stalemate with one another over control of 
+each Sister's Gift.  Trapped in their tower, The Three Sisters wait for destiny to 
+grant them one last favor by making them whole once again.  Now that the ancient gods 
+are no more - they could once again practice their craft.
+endmsg
+end
+region marksel
+parent world
+longname Hamlet of Lord Marksel
+msg
+Situated about half way between The Kingdom of Navar and The Sultanate of Darcap, 
+Marksel is a mining town whose old motto seemed to be, "Enough to Live With." 
+A small group of sages, with their research, drives the demand for the mines rich 
+metal.  As long as the work pays wages enough to keep the ale flowing from the 
+nearby tavern, miners will be back at their post the following day.  Something has 
+changed though, just as the hamlet was about to prosper, the trade roads leading 
+to it fell under siege from bandits.  The merchant trade contracts have defaulted; 
+the roads are too risky and unsafe. The forces of Lord Marksel have seen the 
+tide of battle tip away from their favor.  Their hope dims with each passing day.
+endmsg
+end
+region butakisfortress
+parent lakecountry
+longname Fortress of Lord Butakis
+msg
+The Fortress of Lord Butakis stands as a testament to the determination of Butakis 
+to settle and secure the area called Lake Country. This bastion of security provides 
+a hard line of defense against the demons, dragons, rogue wizard faction and agents 
+of chaos that plague this land. While the stronghold stands in defiance of disorder, 
+there seems to be dark forces at work from the inside; slowly whittling away the 
+foundation of what the Fortress represents.  As a result of this, security of the 
+Fortress has greatly increased in the past years.  A few have grown concerned over 
+the very crowded prison filled with accused spies, thieves, and worse.
+endmsg
+end
+nomore
+

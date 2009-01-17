@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<script>
+  <name>WorldMaker</name>
+  <code><![CDATA[import cfeditor.IGUIConstants;
+import java.io.IOException;
+import javax.imageio.ImageIO;
+import java.io.RandomAccessFile;
+import java.io.FileOutputStream;
+import java.io.File;
+import java.nio.MappedByteBuffer;
+import java.nio.channels.FileChannel;
+
+
+/*
+ * Functions declaration
+ */
+File getSimpleFilename(File mapFile) {
+    String mapFilename = mapFile.getPath();
+    int i = mapFilename.lastIndexOf(File.separator);
+    if (i > 0) {
+        mapFilename = mapFilename.substring(i + 1);
+    }
+    return new File(mapFilename);
+}
+
+File getPngImageFilename(File mapFile) {
+    return new File(Location + PictureDirectory + getSimpleFilename(mapFile) + ".png");
+}
+
+boolean updateMap(File mapFile, File pictureFile) {
+    if (!mapFile.exists()) {
+        return false;
+    }
+    if (pictureFile.exists() && pictureFile.lastModified() >= mapFile.lastModified()) {
+        return false;
+    }
+    print("converting " + mapFile + " to " + pictureFile + ".");
+    map = mapManager.openMapFile(mapFile, false);
+    if (map == null) {
+        return false;
+    }
+    try {
+        try {
+            ImageIO.write(map.getRenderer().getFullImage(), "png", pictureFile);
+        } catch (IOException ex) {
+            print("cannot write " + pictureFile + ": " + ex.getMessage());
+            return false;
+        }
+    } finally {
+        mapManager.release(map);
+    }
+    return true;
+}
+
+boolean runCommand(String cmd) {
+    f = File.createTempFile("WMaker", ".sh");
+    FileWriter out = new FileWriter(f);
+    out.write(cmd);
+    out.close();
+    print("running " + cmd);
+    Process p = Runtime.getRuntime().exec("sh " + f.getAbsolutePath());
+    p.waitFor();
+    f.delete();
+    return p.exitValue() == 0;
+}
+
+/*
+ * Running code
+ */
+void checkDaList() {
+    DestWidth = TileWidth.intValue() * NumX.intValue();
+    DestHeight = TileHeight.intValue() * NumY.intValue();
+
+    if (Location == null || Location.length() < 1) {
+        Location = globalSettings.getMapsDirectory().getPath();
+        print("autodetected location " + Location);
+    }
+
+    print("World map will be " + DestWidth + "x" + DestHeight + " in size");
+    if (!Location.endsWith(File.separator)) {
+        Location = Location + File.separator;
+    }
+
+    if (!PictureDirectory.endsWith(File.separator)) {
+        PictureDirectory = PictureDirectory + File.separator;
+    }
+    new File(Location + PictureDirectory).mkdirs();
+
+    HashSet mapList = new HashSet();
+    boolean firstRun = false;
+    print("...");
+    long headerSize = ("P6\n"+DestWidth+" "+DestHeight+"\n255\n").getBytes().length;
+    print("...");
+    if (new File(Location + PictureDirectory + WorldPicture + ".ppm").exists()) {
+        runCommand("cp " + Location + PictureDirectory + WorldPicture + ".ppm /tmp/tmp.ppm");
+    } else {
+        File f = new File("/tmp/tmp.ppm");
+        String header = "P6\n"+DestWidth+" "+DestHeight+"\n255\n" ;
+        print("generating empty picture");
+        FileOutputStream fos = new FileOutputStream(f,false);
+        fos.write(header.getBytes());
+        byte[] buf = new byte[(int)DestWidth.intValue()*3];
+        for (int i=0;i<DestHeight.intValue();i++) fos.write(buf);
+        fos.close();
+        firstRun = true;
+    }
+    print("gogogo");
+    long toSkip = ("P6\n"+TileWidth+" "+TileHeight+"\n255\n").getBytes().length;
+    RandomAccessFile raf = new RandomAccessFile(new File("/tmp/tmp.ppm"),"rw");
+    FileChannel fc  = raf.getChannel();
+    byte[] buf = new byte[3*TileWidth.intValue()*TileHeight.intValue()];
+
+    for (int x = 0; x < NumX.intValue(); x++) {
+        for (int y = 0; y < NumY.intValue(); y++) {
+            currentX = StartX.intValue() + x;
+            currentY = StartY.intValue() + y;
+            currentMap = new File(Location + MapFilename + "_" + currentX + "_" + currentY);
+            currentPicture = getPngImageFilename(currentMap);
+            didUpdate = updateMap(currentMap, currentPicture);
+            if ((didUpdate || firstRun) && currentPicture.exists()) {
+                runCommand("pngtopnm " + currentPicture + " | pnmscale -xysize " + TileWidth + " " + TileHeight + " > /tmp/ppm.tmp");
+                FileInputStream fis = new FileInputStream("/tmp/ppm.tmp");
+                fis.skip(toSkip);
+                fis.read(buf);
+                sx = x * TileWidth.intValue();
+                sy = y * TileHeight.intValue();
+                long index=((long)sy*(long)DestWidth.intValue()+(long)sx)*(long)3+headerSize;
+                for (long row=0; row<TileHeight.intValue();row++){
+                    MappedByteBuffer mbb = fc.map(
+                         java.nio.channels.FileChannel.MapMode.READ_WRITE,
+                         index+row*DestWidth.intValue()*(long)3,
+                         TileWidth.intValue()*(long)3
+                         );
+                    mbb.put(buf,(int)(row*TileWidth.intValue()*3),(int)(TileWidth.intValue()*3));
+                }
+
+            }
+        }
+    }
+    raf.close();
+    runCommand("mv /tmp/tmp.ppm " + Location + PictureDirectory + WorldPicture + ".ppm");
+    print("converting to png if possible.\n");
+    runCommand("pnmtopng " + Location + PictureDirectory + WorldPicture + ".ppm > /tmp/tmp.png");
+    runCommand("mv /tmp/tmp.png " + Location + PictureDirectory + WorldPicture + ".png");
+}
+
+checkDaList();
+print("Done!");]]></code>
+  <mode>
+    <autoboot>false</autoboot>
+    <bash>true</bash>
+    <filter>false</filter>
+  </mode>
+  <parameter>
+    <name>Location</name>
+    <description>Specify the map directory to use by this script. Leave empty for auto</description>
+    <type>java.lang.String</type>
+    <value />
+  </parameter>
+  <parameter>
+    <name>MapFilename</name>
+    <description>This map file name will be appended to the 'Location' parameter and '_mapx_mapy' will be added at the end</description>
+    <type>java.lang.String</type>
+    <value>world/world</value>
+  </parameter>
+  <parameter>
+    <name>TileWidth</name>
+    <description>The width in pixel of each generate map image</description>
+    <type>java.lang.Integer</type>
+    <value>50</value>
+    <minimum>0</minimum>
+    <maximum>2000</maximum>
+  </parameter>
+  <parameter>
+    <name>TileHeight</name>
+    <description>The height in pixel of each generated map image</description>
+    <type>java.lang.Integer</type>
+    <value>50</value>
+    <minimum>0</minimum>
+    <maximum>2000</maximum>
+  </parameter>
+  <parameter>
+    <name>NumX</name>
+    <description>The number of maps along X axis to analyze</description>
+    <type>java.lang.Integer</type>
+    <value>30</value>
+    <minimum>0</minimum>
+    <maximum>50000</maximum>
+  </parameter>
+  <parameter>
+    <name>NumY</name>
+    <description>The number of maps along Y axis to analyze</description>
+    <type>java.lang.Integer</type>
+    <value>30</value>
+    <minimum>0</minimum>
+    <maximum>50000</maximum>
+  </parameter>
+  <parameter>
+    <name>StartX</name>
+    <description>The first coordinate along X axis to analyze</description>
+    <type>java.lang.Integer</type>
+    <value>100</value>
+    <minimum>0</minimum>
+    <maximum>50000</maximum>
+  </parameter>
+  <parameter>
+    <name>StartY</name>
+    <description>The first coordinate along Y axis to analyze</description>
+    <type>java.lang.Integer</type>
+    <value>100</value>
+    <minimum>0</minimum>
+    <maximum>50000</maximum>
+  </parameter>
+  <parameter>
+    <name>PictureDirectory</name>
+    <description>The subdirectory where to put pictures</description>
+    <type>java.lang.String</type>
+    <value>images</value>
+  </parameter>
+  <parameter>
+    <name>WorldPicture</name>
+    <description>The picture which will store the world map</description>
+    <type>java.lang.String</type>
+    <value>worldmap</value>
+  </parameter>
+</script>
+

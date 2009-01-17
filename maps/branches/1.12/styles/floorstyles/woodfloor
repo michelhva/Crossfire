@@ -1,0 +1,19 @@
+arch map
+name <unnamed>
+width 6
+height 6
+msg
+Created:  1999-02-03
+endmsg
+end
+arch woodfloor
+end
+arch afloor_right
+x 1
+end
+arch afloor_left
+x 2
+end
+arch woodfloor2
+x 3
+end

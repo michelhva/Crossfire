@@ -1,0 +1,99 @@
+#!/bin/bash
+#
+# creator: josh@woosworld.net
+# Simple script to replicate changes made to pshop1
+# to the rest of the pshops and keep the correct
+# keys and exits working.
+#
+# Obviously this is based on some conventions I have
+# don't use pshop1 anywhere else in the file etc...
+#
+
+#first rename the pshop1 dir so we don't erase it
+mv pshop1 PSHOP
+
+#then remove all the pshop files
+rm -f pshop*/*
+
+#copy PSHOP to all the pshop directories
+for FILE in pshop*; do
+    if [[ -d "$FILE" ]]; then
+        #copy the files into the pshops directories
+        cp PSHOP/* "${FILE}/"
+
+        #go there
+        cd $FILE
+
+        #for each file in the pshop directory
+        for MYFILE in *; do
+            #correct the key values on inventory checkers
+            sed "s/pshop1/${FILE}/" "$MYFILE" > "${MYFILE}_2"
+            rm -f $MYFILE
+            mv "${MYFILE}_2" $MYFILE
+        done
+
+        #get the pshopnum
+        PSHOPNUM=$(cut -d p -f3 <<< "$FILE")
+
+        #calculate HP and SP based on pshopnum
+        if [[ $PSHOPNUM -lt 14 ]]; then
+            #top row of shops
+            SP="2"
+            HP=$(( PSHOPNUM * 3 + 1 ))
+        else
+            #bottom row of shops
+            SP="6"
+            MODPSHOPNUM=$(( PSHOPNUM - 14 ))
+            HP=$(( MODPSHOPNUM * 3 + 1 ))
+        fi
+
+        # Keep track of state when parsing.
+        # 0 Before/after exit, looking for slaying
+        # 1 During exit, looking for hp and sp
+        state=0
+        hadhp=0
+        hadsp=0
+        #fix the exit on gfloor
+        while read LINE; do
+            case $state in
+                0)
+                    if [[ "$LINE" == "slaying ../pshops_main" ]]; then
+                    state=1
+                    fi
+                    echo "$LINE" >> gfloor2
+                ;;
+                1)
+                    case $LINE in
+                        "hp "*)
+                            echo "hp $HP" >> gfloor2
+                            hadhp=1
+                        ;;
+                        "sp "*)
+                            echo "sp $SP" >> gfloor2
+                            hadsp=1
+                        ;;
+                        *)
+                            echo "$LINE" >> gfloor2
+                        ;;
+                    esac
+                    if [[ ( $hadhp == 1 ) && ( $hadsp == 1 ) ]]; then
+                        state=1
+                    fi
+                ;;
+            esac
+        done < gfloor
+
+        #replace gfloor with gfloor2
+        rm -f gfloor
+        mv gfloor2 gfloor
+
+        #go back up
+        cd ..
+    fi
+done
+
+#put pshop1 back
+mv PSHOP pshop1
+
+#bye
+exit 0
