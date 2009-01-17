@@ -1,0 +1,46 @@
+To access this archetype in Gridarta CrossfireEditor, be sure to link the wip
+directory with a command like this:
+
+  $ cd /path/to/svn/checkout/arch/trunk
+  $ ln -s dev/wip wip
+  $ cd /path/to/svn/checkout/server/lib
+  $ make collect
+
+manhole.arc
+
+  manhole_closed_1
+
+    A HOLE modeled after arch/trunk/connect/Hole/pit.arc pit_closed, except
+    that it is a multi-tile archetype, and that the non-head pieces are
+    deliberately set to the wrong face so that the animation works.
+
+  manhole_open_1
+
+    A HOLE modeled after arch/trunk/connect/Hole/pit.arc pit_open that shows
+    the animation is broken when the archetype is probably set up "correctly".
+
+world_105_115.patch
+
+    Test of pit_open, pit_closed, manhole_closed_1, and manhole_open_1. To
+    apply the patch, and presuming that the maps and arch SVN checkouts are
+    in the same directory, use the following command.
+
+    $ patch -p0 world_105_115.patch
+
+manhole.base.xcf
+
+    This is a GIMP 64 x 64 bit image with layers and transparency.
+
+    The elements used to construct the manhole .png files.  This file does also
+    contain some variations of the archetype that could be used to produce
+    different manholes (rust- colored vs. bronze, for example).
+
+manhole.base.111.png
+manhole.base.112.png
+manhole.base.113.png
+manhole.base.114.png
+
+    A bronze manhole animation set.  111 is an open manhole. 112 and 113 are
+    transitional shots of a manhole opening or closing, and 114 is the closed
+    manhole.
+

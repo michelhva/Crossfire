@@ -1,0 +1,915 @@
+Changes for SVN top of tree:
+
+disease/tapeworms.arc
+Removed linebreaks from disease message so the breaks can be done by the client.
+Kevin Bulgrien 2008-12-20
+
+readable/scrollr.base.111.png
+New graphic (face) for readable scroll
+
+indoor/bed_save.base.111.png,
+misc/icecube.base.111.png,
+spell/Scroll/scroll.base.111.png
+New graphics (face) for bed, ice cube and magic scroll
+
+floor/cloudfloor.arc
+Removed "is_floor 1" to allow colors and other tiles to show through the transparent
+portions of the clouds
+Rick Tanner 2008-12-19
+
+floor/cloudfloor.arc,
+ground/fog_2.base.111.png
+New graphic and archetype for a thicker/heavier cloudfloor, using less transparency
+Rick Tanner 2008-12-19
+
+ground/new/grassdark.arc,
+ground/smooth/grassdark_S.base.111.png
+Update "dark grass" (grassdark.arc) to use new smoothing template (grassdark_S.base.111.png)
+Rick Tanner 2008-12-18
+
+ground/new/grassmedium.arc
+Update archetype to use existing smoothing template (grassmedium_S.base.111.png)
+Rick Tanner 2008-12-18
+
+ground/Pstone/pstone_4.arc
+Update "big stones" archetype to use smoothing (missed in earlier commit)
+Rick Tanner 2008-12-18
+
+ground/smooth/pstone_4_S.base.111.png
+New smoothing template for pstone_4.base.111.png (big stones) tile
+Rick Tanner 2008-12-18
+
+ground/smooth/dunes_S.base.111.png
+Minor color changes to the dunes smoothing template
+Rick Tanner 2008-12-18
+
+misc/sky/sky.arc
+Add "move_block all" to the sky tiles to prevent players from
+being able to walk "on the sky like they are levitating"
+Rick Tanner 2008-12-16
+
+gods/items/torc.base.111.png,
+gods/items/valkyrie_amulet_lifesave.arc
+New graphic for Valkyrie's gift (amulet of lifesaving), 
+referred as Valkyrie's Torc
+Rick Tanner 2008-12-15
+
+misc/sky/sky.arc
+misc/sky/sky.base.111.png
+New sky archetype for use on airborn cities, castles, islands, etc. 
+such as Pupland Terminal
+Rick Tanner 2008-12-14
+
+construct/window/intermediate_window.arc, construct/window/window.arc 
+Remove redundant fields.
+Andreas Kirschbaum 2008-12-12
+
+monster/troll/Troll/troll.arc
+Fix duplicate archetype definition for "troll".
+Andreas Kirschbaum 2008-12-12
+
+gods/items/valkyrie_amulet_lifesave.arc
+Changes to the amulet so that the item appears as
+"Valkyrie's Amulet of Lifesaving" instead of
+"Valkyrie's Amulet of Lifesaving (lifesaving)" in a
+players inventory
+Rick Tanner 2008-12-09
+
+gods/items/valkyrie_amulet_lifesave.arc, gods/demihumans/valkyrie.trs
+Tentative bug fix for '[ 1990180 ] 2.0 godgiven Valkyrie lifesaving amulet bug?' 
+- created a new amulet archetype that is godgiven and inventory locked by default, 
+updated gods/demihumans/valkyrie.trs file to reference the new amulet archetype 
+(Previous checkin had a bug - missed the .arc file at the end of the file name)
+Rick Tanner 2008-12-08
+
+/construct/window/intermediate_window_1.base.111.png, /construct/window/intermediate_window.arc,
+/construct/window/intermediate_window_2.base.111.png, /construct/window/window_2.base.111.png,
+/construct/window/window_4.base.111.png, /construct/window/window_arcade_1.base.111.png,
+/construct/window/window_3.base.111.png, /construct/window/window.arc
+2.0 Elements: Windows.
+Yann Chachkoff 2008-12-07
+
+/construct/roof/chemney_1.base.111.png, /construct/roof/chemney.arc,
+/construct/roof/chemney_2.base.111.png, /construct/roof/roof_1.base.111.png,
+/construct/roof/roof_1blue.base.111.png, /construct/roof/roof_1red.base.111.png,
+/construct/roof/roof_2blue.base.111.png, /construct/roof/roof_2red.base.111.png,
+/construct/roof/roof_1green.base.111.png, /construct/roof/roof_2.base.111.png,
+/construct/roof/roof_2green.base.111.png, /construct/roof/roof.arc
+2.0 Elements: Roof and chemney pieces.
+Yann Chachkoff 2008-12-07
+
+/wall/dun/dungeon.arc
+Removed newline at the end of the file, it was
+causing this to appear in the server logs: 
+Warning: failed to find arch dun33
+Rick Tanner 2008-12-06
+
+/wall/wall/wall.arc
+Missing object delcaration in wall.arc
+Rick Tanner 2008-12-06
+
+/wall/wall/wall.arc
+Updated .arc file to use already existing Wooden Wall graphics
+Rick Tanner 2008-12-05
+
+/wall/cave/cave_15.base.111.png, /wall/cave/cave_15.arc
+Solid grey color wall to use in cave areas instead of the
+solid black Block - looks nicer in mapper (IMO)
+Rick Tanner 2008-12-05
+
+/wall/dun/dun_10.base.111.png, /wall/dun/dun_11.base.111.png,
+/wall/dun/dun_12.base.111.png, /wall/dun/dun_13.base.111.png,
+/wall/dun/dun_14.base.111.png, /wall/dun/dun_15.base.111.png,
+/wall/dun/dun_16.base.111.png, /wall/dun/dun_17.base.111.png,
+/wall/dun/dun_18.base.111.png, /wall/dun/dun_19.base.111.png,
+/wall/dun/dun_20.base.111.png, /wall/dun/dun_21.base.111.png,
+/wall/dun/dun_22.base.111.png, /wall/dun/dun_23.base.111.png,
+/wall/dun/dun_24.base.111.png, /wall/dun/dun_25.base.111.png,
+/wall/dun/dungeon.arc
+New graphics and archetypes for Dungeon wall set.  Similar
+to the curved and circular sections from the Cave wall set,
+but colored black (vs. grey)
+Rick Tanner 2008-12-04
+
+exit/oakdoor_1.arc, exit/oakdoor_1.base.111.png, exit/oakdoor_2.arc,
+exit/oakdoor_2.base.111.png
+New graphics to replace the old xpm oakdoor, also has two
+facings - vertical (oakdoor_1) and horizontal (oakdoor_2)
+Rick Tanner 2008-12-01
+
+/wall/wwall/wwall.arc,  /wall/wwall/wwall_right.base.111.png,
+/wall/wwall/wwall_left.base.111.png
+New graphic for use in doorways or as a short wall
+Rick Tanner 2008-11-25
+
+wall/white/white_wall.arc, white_wall_right.base.111.png
+New graphic for use in doorways or as a short wall
+Rick Tanner 2008-11-25
+
+exit/Up_down/cave_stair_up_2.base.111.png, exit/Up_down/stair_up_2.arc
+New pic -- stairs going up in a cave
+(rejoice all ye nethackers)
+Lalo Martins 2008-11-25
+
+treasures.trs, /monster/goblin/orc.trs
+Increase chance and amount of silver coins dropped by lower
+level monsters such as orcs, goblins, gnolls, ogres so that
+low level players have easier access to "cash." Change made
+by meflin.
+Rick Tanner 2008-11-11
+
+/ground/Lake/*.png
+New lake graphics using the current graphic style.  Still needs
+smoothing and animation.
+Rick Tanner 2008-11-03
+
+*.arc
+Remove obsolete 'editable' attributes.
+Andreas Kirschbaum 2008-11-02
+
+wall/hedgehedge_5.base.111.png
+Image adjustment; moved the wall to the right by 1 pixel so it has better
+alignment with other hedge walls.
+Rick Tanner 2008-09-14
+
+mapbuilding/objects.trs, mapbuilding/objects.arc: Applied slightly modified
+patch #2084099 "buildable altars", courtesy of meflin.
+mapbuilding/mbaltar_none.base.111.png: New image.
+Raphaël Quinet 2008-08-30
+
+monster/animal/giant_worm/purple_worm.arc, ground/nimground/Nimground3_purple.arc:
+Replaced purple (unrecognized color) with black in magicmap and color_fg fields.
+Rick Tanner 2008-08-20
+
+mapbuilding/building.arc, mapbuilding/building.trs: Added new archetype
+building_window, a building material using the new subtype 4.  This allows
+the player to build windows in existing walls.
+mapbuilding/mbwindow.base.111.png: New image
+Raphaël Quinet 2008-08-04
+
+mapbuilding/building.arc, mapbuilding/building.trs: Added new buildable
+fence.  This is useful for those who want walls that do not block the view.
+Fixed a bug in the treasure list shop_building_pupland that prevented it
+from including any walls (replaced the treasure list
+build_material_floor_pupland by building_material_stonewall_pupland).
+mapbuilding/mbswall_0.base.111.png: New image.
+Raphaël Quinet 2008-08-03
+
+wall/swall/swall.arc: The name "fence" is more appropriate for the archetype
+"swall" (spiked wall).
+Raphaël Quinet 2008-08-03
+
+shop/Floors/shopweapoeast.trs: Fixed a broken treasure list that prevented
+the nine ring sword from being created.
+Raphaël Quinet 2008-08-01
+
+disease/incontinence.arc, disease/diarrhea.arc, disease/rabies.arc: Make puddles
+from diseases go away after some time, for incontinence and rabies we should
+probably have shrinking animations, like for icor (and thus also for diarrhea),
+but I can't draw.
+Arvid Norlander 2008-06-12
+
+ground/Pstone/pstone_1.arc: Add move_block for boats.
+Arvid Norlander 2008-05-29
+
+mapbuilding/building.arc: Add missing "damned 1" to shop tiles.
+Andreas Kirschbaum 2008-04-24
+
+monster/humanoid/Arabic/a_guard_*.base.111.png: New arabian guards images,
+courtesy of Miguel Ghobangieno.
+Yann Chachkoff 2008-04-16
+
+monster/demon/imp.base.1**.png: New imp images, based on the kobold.
+Meegwun Southall 2008-04-11
+
+monster/humanoid/sigfried.base.11*.png: Make new sigfried images, no new
+directions, but a style update.
+Alex Schultz 2008-02-26
+
+wall/dwall/arc: Remove incorrect Object dwall3_3 and associated comment.
+Kevin Bulgrien 2008-01-18
+
+monster/*: Rebalance monsters.  In many cases, hp, ac, exp, and level
+were adjusted.  This also incluedes the gods avatars and some spells that
+create monster like objects.
+player/race/*.arc: Give all playable races a 30 sp/hp/grace boost, so
+starting values are higher, making things more playable.
+MSW 2008-01-13
+
+wall/slevel/dlevel.arc corrected to provide reused face from slevel set.
+traps/tspikes.base.111.png changed from greyscale to indexed to fix a
+transparency problem.
+Kevin Bulgrien 2007-01-12
+
+Re-add misc/machine.arc and machine.base.x11.png under the GFDL after obtaining
+permission from the original author to relicense the image under the GFDL or
+the GPL as appropriate. Though neither does address images, the GFDL has been
+applied to images by other organizations and is somewhat clearer in how it may
+be applied to graphic art.
+Kevin Bulgrien 2007-01-12
+
+Remove misc/machine.arc and machine.base.x11.png and newly added LICENCE (as it
+was added specifically to address Creative Commons licensing) due to concerns
+about Creative Commons ShareAlike licensing requirements, and most especially
+concerning a possible perception that this project or a distribution might be
+construed to be a "collection" as defined by Creative Commons.
+Kevin Bulgrien 2007-01-11
+
+Correct the license text to show that this derivation is released under
+version 3.0 Creative Commons licensing to improve compatibility with
+Debian.
+
+Add misc/machine.arc, misc/machine.base.x11.png under terms of a Creative
+Commons Attribution-ShareAlike license described in misc/machine.arc and
+as an attributed derivative work of a copyrighted image.  The inspiration
+for this graphic was provided by Yann (gros) Chachkoff.  Added a LICENSE
+file to communicate the fact that this type of license now governs some
+material in the arch collection.
+Kevin Bulgrien 2007-01-10
+
+Rework dev/wip/spout to make water wider and more visible.  Also adjust the
+color to better match the sea arch set.  Add a reference layer of a sea tile
+to spout.xcf.  Convert all the .png files to indexed mode to reduce size.
+Update README with methods used to produce the graphics and remove comments
+about issues with the original revision.  The .arc files have been modified
+to add 'map_layer item' to prevent wall pieces from disappearing when these
+archs are placed on top of them.
+Kevin Bulgrien 2007-01-09
+
+Add a set of "overlay" archs that are designed to sit on top of walls to form
+a spout with water pouring out.  The art is designed to separate the liquid
+and spout to allow spout and fluid variations.  The archs are WIP because they
+cause the wall underneath them to disappear.  This is probably a map layer
+issue.  It may not take much to fix, but are not presently releasable.
+The files are in dev/wip/spout, and are: pour_h2o.arc, pour_h2o.base.111.png,
+pour_h2o.base.112.png, pour_h2o.base.113.png, pour_h2o.base.114.png,
+pour_h2o.face, pour_spout.arc, pour_spout.base.111.png, README, spout.xcf.
+Note that maps/trunk/unlinked/kbulgrien/rayvins_house.1 contains these arches.
+
+Add wall/wall/wall_door_0.base.111.png and wall_door_1.base.111.png to make
+it possible to have tight-fitting doors (no gaps due to perspective) in the
+wall arch set.  wall/wall/wall.arc modified.  Decided to use the numbering
+of the window archs.  Also, per naming of the stwall window archs, rename
+wall/stwall/stwall_2_door.base.111.png and stwall_5_door.base.111.png to
+stwall_door_1.base.111.png and stwall_door_0.base.111.png and update
+stwall.arc.
+Kevin Bulgrien 2007-01-08
+
+Add wall/stwall/stwall_2_door.base.111.png and stwall_5_door.base.111.png to
+make it possible to have tight-fitting doors (no gaps due to perspective).
+wall/stwall/stwall.arc modified.
+Kevin Bulgrien 2007-01-07
+
+Add wall/slevel/dlevel*.png and wall/slevel/dlevel.arc.  The slevel arches are
+raised "elevation" marks that are supposed to overlay other tiles to give the
+appearance of a raised platform.  The dlevel arches are the same graphics but
+flipped in X and/or Y as appropriate to present a depression.  Both arch sets
+rely on the Crossfire perspective to give the hint of a ridge or depression.
+In an elevation, the leading edges are long and the receding edges are short.
+For the depression the leading edges are short and receding edges long.
+Kevin Bulgrien 2007-01-07
+
+Add wall/bwall/bwall_hole_5.base.111.png,wall/bwall/bwall_hole_A.base.111.png,
+and wall/bwall/bwall_hole.arc.  The vertical wall has a transparent hole in
+the left face, and the horizontal wall has a transparent hole in the bottom
+face.  The holes could be drains for flowing rivers, or might even be an exit.
+Kevin Bulgrien 2007-01-07
+
+Add dev/wip directory for commiting work-in-progress archetypes.  The directory
+is not visible in Gridarta CrossfireEditor, but can be made so with a soft link
+like arch/trunk/wip --> arch/trunk/dev/wip.
+Add dev/wip/README describing the use of the directory.
+Add dev/wip/manhole as a manhole archetype work-in-progress to facilitate some
+collaboration on getting a multi-tile HOLE animation to work.  Included is a
+README and a world_105_115.patch test case.
+Kevin Bulgrien 2007-12-29
+
+Add names to woodfloor, woodfloor2, woodlarge, and dirtfloor.
+Nicolas Weeger 2007-12-29
+
+Nicer mountain1, 2, 3, 4 5.
+Update woods_4 archetype so it's not anymore acting as a ground (transparency
+parts, it is *NOT* a ground, visually speaking)
+Make the fireball and firebreath smooth
+Tchize 2007-12-28
+
+Add smooth image for light snow + source file + empty layer file (use it to help building smooth images)
+Tchize 2007-12-24
+
+Add the archetype hook for user-defined plugin events.
+Yann (gros) Chachkoff 2007-12-23
+
+Add various lighthouse archetypes to replace use of huts and towers that are
+called "lighthouse" in various maps.  A base archetype is added along with
+west, northwest, and snowy variants.
+Kevin Bulgrien 2007-12-22
+
+Singing anim_suffix.
+Nicolas Weeger 2007-12-21
+
+Singing animation for Fenx.
+Nicolas Weeger 2007-12-18
+
+Add missing faces for spider (for now, always the same sprite).
+Nicolas Weeger 2007-12-16
+
+Add ne, se, sw, and nw corners to the mine walls to fix the Scorn port gate
+house with consistent walls.
+Kevin Bulgrien 2007-12-10
+
+Four facings for angel, and sword animation.
+Facings for whim.
+Nicolas Weeger 2007-12-09
+
+Basic animation for Ruggilli's altar.
+Basic animation for Sorig's altar.
+Nicolas Weeger 2007-12-07
+
+Commit spellcasting animations for chinese dragons
+Andreas Kirchbaum 2007-11-30
+
+Added a spellcasting animation for the Big Dragon. Courtesy of Rednaxela.
+Yann (gros) Chachkoff 2007-11-29
+
+Add anim_suffix spellcasting to all spells.
+Alex Schultz 2007-11-29
+
+Add correct plural name to flowers_permanent.
+Andreas Kirschbaum 2007-11-23
+
+Add sample support for spellcasting compound animations.
+Try to cast minor healing with a Fenx 
+Yann (gros) Chachkoff 2007-11-18
+
+Update spellcasting objects to use inventory objects.
+Andreas Kirschbaum 2007-11-04
+
+Rename low_boots from "shoes" to "pair of shoes".
+Andreas Kirschbaum 2007-11-03
+
+New archetypes goldflagstone.arc  to avoid using creator tricks.
+Nicholas Weeger 2007-10-20
+
+Revert previous change of dragon's steaks weight.
+Andreas Kirschbaum 2007-10-15
+
+Increase weight of dragon's steaks to 500g.
+Andreas Kirschbaum 2007-10-08
+
+player/class/Wizardry/sorcerer_class.arc
+  - Add body_head -1 to Sorceror's Hat.
+Kevin R. Bulgrien 2007-10-05
+
+Rename treasure lists human_player->human_player_items and
+halfling_player->halfling_player_items to match the names of similar treasure
+lists.
+Andreas Kirschbaum 2007-09-28
+
+Renamed "potion of invulnerability" to "potion of shielding." Hopefully this
+will remove player confusion as to why one takes damage from all attack types
+(except physical) when drinking this potion.
+RJT 2007-09-26
+
+Updated Valkyrie's granted attack types, replaced godpower with weaponmagic.
+RJT 2007-09-26
+
+Fix treefort3, make it 1 tile instead of weird missing square.
+Nicolas Weeger 2007-08-18
+
+Add client_anim_... support for all objects that support it, remove
+their speed attributes if the only reason they had speed set was for
+animation.
+MSW 2007-07-09
+
+Remove all 'editable' fields, obsolete with Crossedit removal.
+ (almost all .arc impacted)
+Nicolas Weeger 2007-06-13
+
+Replace "object xxx" with "Object xxx".
+Andreas Kirschbaum 2007-06-12
+
+Fix bug #1687761: Archetype using undefined type number.
+Nicolas Weeger 2007-05-07
+
+Fix incorrectly converted jessyb.base.x13.png multi-part image.
+Andreas Kirschbaum 2007-05-06
+
+Replace "no_pass 1" with "move_block all".
+Andreas Kirschbaum 2007-04-05
+
+spell/Bolt/steambolt.arc: Remove old LIGHTNING(12) type.
+Alex Schultz 2007-04-03
+
+Fix bug #1687729: Spell "create repulsion wall" is broken. Missing
+ move_block field. Also replace obsolete no_pass with move_block all.
+ spell/MagicWall/spell_create_earth_wall.arc spell_repelwall.arc
+Nicolas Weeger 2007-03-25
+
+Make event_xxx invisible, avoids many issues in the object handling
+routines.
+---
+Start splitting server/lib/treasures file in many files.
+Rename player class files/random items for coherence.
+Nicolas Weeger 2007-03-17
+
+Converted all remaining multi-part base images into single images
+with the facename.base.x??.png format.  Deleted the old multi-part
+images and adjusted the archetypes accordingly.  This is a huge
+commit, but I thought it best to do it all in one commit so that if
+something is horribly wrong, it can be reverted with one command.
+Most of the conversion was automated, so if there's a problem I'm not
+seeing, it probably affects them all.
+Aaron Baugher 2007-02-16
+
+
+Created addition shoreline tiles for the ground/sea.arc tile set to
+add sea_F.base.111.png and sea_F.clsc.111.png that form a round pool
+surrounded by transparency.  This tile might be used to fix indoor
+water pools by providing a replacement for blake_0 which has grass
+surrounding the water.  Also modified sea.arc accordingly.
+Kevin Bulgrien 2007-02-12
+
+
+Created additional shoreline tiles for the sea.arc tile set to
+fix some maps that use the blake.arc tile set to allow shorelines
+to have rounded edges instead of corners.  The blake.arc tile set
+is not the same color as the sea.arc tile set unless you are using
+the classic png's, so the seas sometimes are shown in different
+colors of blue.  The tiles added are "coves" that have transparency
+on three sides.  The naming convention used is consistent with the
+big lake tile set.  The naming.doc rules for walls is followed if
+you consider a shoreline to be a sort of wall.
+Kevin Bulgrien 2007-02-10
+
+
+Add new archetype and images for the IPO package, from Mike B.
+Aaron Baugher 2007-02-10
+
+
+Add new archetype and images for the IPO carton box, from Mike B.
+Aaron Baugher 2007-02-08
+
+
+Add new force archetype monk_no_use_weapon. It will be inserted into
+inventories of monk players to prevent them from using weapons.
+Andreas Kirschbaum 2005-11-01
+
+
+Make bullet swarm fire small bullets instead of magic bullets. Previously
+bullet swarm (which is an evocation spell) gave sorcery exp.
+Andreas Kirschbaum 2005-10-28
+
+
+Correct rune definitions. Some runes did use obsolete fields or had
+inconsistent definitions.
+Andreas Kirschbaum 2004-09-14
+
+
+Many many changes since last entry due to new server code and
+maintenance efforts.  Highlights - large image support allows
+for images larger than 32x32 - many images consolidated for easier
+maintenance (ongoing).  Spell and skill code changes heavily
+modified spells and skill arches (more arch based now).
+four point animation added to most player race and classes, smoothing
+images added to support smoothing code and ground arches changed
+to accommodate.  Arches added for weather system, new monsters,
+new items, new npcs, triggered traps and trigger marker added.
+New images added for classic set as well.  See server changelog
+for more info.  Hope to maintain this file better in the future.
+TM 2004-01-26
+
+
+
+Add archetypes from Todd Mitchell.  These add wolfs and bears,
+with bodyparts for them.  Also changes races for readable scroll
+objects so that scrollcase objects can be used.  Add ruined tower.
+New images for some objects.
+Commited by MSW 2002-08-20
+
+Fix monster arcs that had incorrect wrists/foot (1 instead of 2)
+Fix update_monster script that generated the errors in the first place.
+Add body information to the player/old/*.arc for very old player files.
+Move crown from misc directory to armour/helmet, add appropriate body_info.
+Add needed body info for elven boots.
+MSW 2002-07-15
+
+
+Update arcs to use body_info for equipping items.
+Update armor to use gen_sp_armour instead of last_heal.
+can_use_shield added to necessary arcs.
+Add dev/scripts directory, which contains some handy scripts I wrote
+for updating on the items.
+Add item_power to the armours - needs to be done for rest of equippable
+items.
+MSW 2002-07-14
+
+
+MSW 2000-12-26:
+Added new archetypes & god changes for new god code.  Changes by Jan E.,
+checked in my MSW.
+
+PeterM  2000-12-3:  Convert
+protected/immune/vulnerable/armour to new PR system for
+all arcs.
+
+MSW 2000-12-3:
+Commit for PR code.  General changes was to clean up archetypes that
+were immune/protected/vulnerable to the same attacktype (ie, protected &
+immune).  Disease code changed to use last_grace instead of armour for
+contagious values.  Gods still need to be fixed up.
+
+------------------------------------------------------------------------------
+
+MSW 2000-11-22: talisman/ring_drain.arc - give object speed 0.1
+so it will animate (animation already in place, just was not being
+used.)
+
+PeterM:  Totally reorganized player/*, splitting it into races and
+classes.  Classes are themselves split into four main subtypes.
+New images from dnh were also added, as well as new classes/races.
+See http://langmuir.eecs.berkeley.edu/~peterm/Race.html and
+    http://langmuir.eecs.berkeley.edu/~peterm/Class.html
+
+
+
+
+Changes for Crossfire 0.95.7:
+
+ground/Lake/blake_*.png:  Remove transperancies from these images so they
+display properly.  MSW 9/20/2000
+
+ground/sea*png: Remove transperancies from png images since they should not
+be transparent.  MSW 8/23/2000
+
+door/Locked/key2.arc, misc/Container/bag.arc, misc/Container/bookshelf.arc,
+misc/Container/cauldron.arc, misc/Container/chest_2.arc,
+misc/Container/depositbox.arc, misc/Container/key_ring.arc,
+misc/Container/mailbox.arc, misc/Container/pouch.arc,
+misc/Container/r_sack.arc misc/Container/sack.arc: Remove the 'a' from the
+objects name.  The client adds it anyways, so you see 'a a bag' for example,
+but also when using the commands like 'drop that match on an item name, having
+to match against the 'a ' is a bit non intuitive.  MSW 6/27/2000
+
+------------------------------------------------------------------------------
+Changes for Crossfire 0.95.6:
+
+also skills/holysymbol and lockpicks.
+skills/tailsman.arc:  added nrof to archetype so these things will join.
+	-PeterM
+
+--- BEGIN apply() cleanup patch --- Jan Echternach 5/26/2000
+
+Added level 1 to all archetypes with type 88 (CONE) that can do damage.
+
+
+ground/chaos.arc, arch chaos and arch major_chaos
+ground/lava.arc, arch lava and arch permanent_lava
+Added walk_on 1.
+
+ground/chaos_ball.arc, arch chaos_ball
+magic/banishment.arc, arch banishment
+magic/colorspray.arc, arch color_spray
+magic/counterspell.arc, arch counterspell
+magic/face_of_death.arc, arch face_of_death
+magic/shockwave.arc, arch shockwave
+dev/unused/0.91.1/Flyingnote/flyingnote.arc, arch flyingnote
+magic/Cold/icestorm.arc, arch icestorm
+magic/Fire/firebreath.arc, arch firebreath
+magic/Effect/confuse.arc, arch confuse
+magic/Effect/fear.arc, arch fear
+magic/Effect/holy_word.arc, arch holy_word
+magic/Effect/paralyze.arc, arch paralyze
+magic/Effect/slow.arc, arch slow
+magic/Effect/turnundead.arc, arch turn_undead
+magic/Mana/manablast.arc, arch manablast
+Added walk_on 1 and fly_on 1.
+
+connect/trig_altar.arc
+connect/trig_lever.arc
+connect/trig_pedes.arc
+Changes to support bug fixes for trigger types:  Replace speed with exp.
+Set is_animated 0.  Remove last face from animation sequence.
+
+connect/trig_altar.arc
+Bugfix:  Faces where swapped.
+
+connect/trig_button.arc, arch button_trigger
+New archetype.
+
+--- END apply() cleanup patch --- Jan Echternach 5/26/2000
+
+
+Added level 1 to all archetypes with type 5 (POTION), because these
+archetypes are spellcasters and therefore need a level.
+- Jan Echternach 5/24/2000
+
+skills/scroll_set_traps
+Name of the skill is 'skill_set_trap', not 'skill_set_traps'.
+- Jan Echternach 5/22/2000
+
+Added level 1 to all archetypes with type 62 (FIREWALL) which didn't have
+a level yet, because these archetypes are spellcasters and therefore need
+a level.  - Jan Echternach 5/16/2000
+
+
+dev/unused/0.91.1/grave.arc, arch grave_close
+Removed type 37 from archetype, because this type will be removed from
+the server code.  - Jan Echternach 5/16/2000
+
+
+Some archetypes had fly_on or walk_on set, although they were not handled
+by move_apply().  - Jan Echternach 5/16/2000
+
+ground/sea.arc, arch sea1
+Removed walk_on 1.
+
+ground/meteor.arc, arch fire_trail
+Removed walk_on 1 and fly_on 1.
+
+
+spell/gu_horn.arc, spell/horn.arc, spell/horn1.arc, spell/horn3.arc
+Added level 1 to fix the problem that most horns were casting spells
+without a level.  - Jan Echternach 4/19/2000
+
+
+Too many items gave Pow bonus.  - Jan Echternach 4/17/2000
+
+armour/helmet/wiz_hat.arc
+Changed (Int +1, Pow +1) back to (Int +2).
+
+armour/mail/robe_midnight.arc
+Changed (Pow +2) back to (Wis +2).
+
+weapon/artifact/magi_staff.arc
+Reduced (Pow +2) to (Pow +1).
+
+
+Set level 1 for all archetypes that had alive 1 but no level.
+- Jan Echternach 4/17/2000
+
+Naming.doc:  Fixed a typo.  - Jan Echternach 4/17/2000
+
+
+---BEGIN BATCH UPDATE--- DAMN 9/17/1999
+Added "nrof 1" to the following archetypes:
+armour/boots/elvenboots.arc
+armour/boots/idaten.arc
+armour/boots/lev_boots.arc
+armour/boots/speedboots.arc
+armour/cloak/magic_resist.arc
+armour/helmet/helmet_bri.arc
+armour/helmet/helmetxray.arc
+armour/mail/Pdragonmail.arc
+armour/mail/dragonmail.arc
+armour/mail/gale.arc
+armour/mail/wdsm.arc
+armour/shield/DShield.arc
+armour/shield/DShieldm.arc
+armour/shield/DShieldms.arc
+armour/shield/DShields.arc
+armour/shield/dragon_shi.arc
+armour/shield/eyeshield.arc
+armour/shield/holyshield.arc
+armour/shield/reflector.arc
+armour/shield/uw_shield.arc
+armour/shield/wds.arc
+flesh/human/corpse.arc
+flesh/human/corpse1.arc
+flesh/human/corpse_pl.arc
+indoor/clock.arc
+misc/Bagpipe/bagpipe.arc
+misc/chalice.arc
+misc/crown.arc
+misc/torch_cyan.arc
+misc/torch_indigo.arc
+misc/torch_vermilion.arc
+readable/bookRead.arc
+readable/book_clasp.arc
+readable/card.arc
+readable/diploma.arc
+readable/letter.arc
+readable/note.arc
+readable/quarto.arc
+readable/scroll.arc
+readable/scroll_2.arc
+readable/tome.arc
+spell/gu_horn.arc
+spell/horn.arc
+spell/horn2.arc
+spell/horn3.arc
+talisman/collar.arc
+weapon/artifact/ChaosSword/CSword.arc
+weapon/artifact/Darkblade/darkblade.arc
+weapon/artifact/Demonbane/demonbane.arc
+weapon/artifact/Fhammer/frost_hammer.arc
+weapon/artifact/Firestar/fakefirestar.arc
+weapon/artifact/Firestar/firestar.arc
+weapon/artifact/Gram/gram.arc
+weapon/artifact/Kdagger/k_dagger.arc
+weapon/artifact/Lslasher/lava_s.arc
+weapon/artifact/Masamune/masamune.arc
+weapon/artifact/Sting/sting.arc
+weapon/artifact/UW_Sword/uw_sword.arc
+weapon/artifact/bonecrush.arc
+weapon/artifact/defender.arc
+weapon/artifact/dragonslay.arc
+weapon/artifact/excalibur.arc
+weapon/artifact/firebrand.arc
+weapon/artifact/frostbrand.arc
+weapon/artifact/harakiri.arc
+weapon/artifact/mjoellnir.arc
+weapon/artifact/skullcleav.arc
+weapon/chained/nunchacu_1.arc
+weapon/chained/nunchacu_2.arc
+weapon/chained/shootingstar.arc
+weapon/misc/shovel_1.arc
+weapon/misc/stake.arc
+weapon/misc/taifu_1.arc
+weapon/sword/katana_1.arc
+
+armour/helmet/wiz_hat.arc
+Changed (Int +2) to (Int +1, Pow +1)
+Added nrof 1
+
+armour/mail/mithril_ar_ele.arc
+Changed (Cha +2) to (Cha +1, speed +1)
+reduced penalties to sp regen and movement speed
+
+armour/mail/robe_midnight.arc
+Changed (Wis +2) to (Pow +2)
+Added nrof 1
+
+spell/power_crystal.arc
+removed duplicate weight entry
+Did _not_ add nrof 1
+
+weapon/artifact/HolyAvenger/holyave.arc
+Added attacktype: blinding and nrof 1
+
+weapon/artifact/Usword/uk_sd.arc
+changed weight 1qq000 (yes, the letter Q) to 11100
+added nrof 1
+
+weapon/artifact/deathbring.arc
+added attacktype: depletion and nrof 1
+
+weapon/artifact/magi_staff.arc
+changed name from Staff of Magi to Staff of the Magi
+changed stat bonuses from (Int +2, Wis +1) to (Int +1, Pow +2)
+added wc +5 and nrof 1
+
+weapon/artifact/mournblade.arc
+changed attacktype: magic, drain to attacktype: drain, weaponmagic
+added nrof 1
+
+weapon/artifact/stormbring.arc
+changed prot: magic to prot: magic, electricity
+changed attacktype: magic, drain to attacktype: electricity, drain
+added nrof 1
+---END BATCH UPDATE--- DAMN 9/17/1999
+
+Give power crystal a weight of one.  This allows it to be picked up - msw
+
+------------------------------------------------------------------------------
+Changes for Crossfire 0.93.3:
+
+Number of images cleaned up/improved/created by David Sundqvist.
+
+Several new images/archetyps added - new wall types, dedicated altars for
+the gods (very nicely looking), and some other changes by David.
+
+------------------------------------------------------------------------------
+Changes for Crossfire 0.92.7
+
+Cleaned up the dev directory some - got rid of a bunch of files that have
+since been merged.  Also, got rid of things that should no longer be
+applicable (via code changes), and stuff in which there was only and archetype
+object - there should be enough examples out there on how to create new
+archetyps.
+
+Weight for some monsters updated to be in more in line with what should be
+expected.
+
+Editable cleaned up for a bunch of objects.
+
+Half orc and halfling player types added.
+
+Some archetyps for throwing added
+
+------------------------------------------------------------------------------
+Changes for Crossfire 0.92.6
+
+Several objects added for Brian Thomas valley quest maps - some disabled
+archetypes moved back into palce.
+
+Changes for Crossfire 0.92.5
+
+Many archetypes added for the kunji maps.
+
+Changes for Crossfire 0.91.7
+
+Many new archetypes added by Brian Thomas (thomas@nomad.astro.psu.edu).
+These are spread out in many different directories.
+
+Spectres are no longer animated.  In this way, invisibilty on them works
+properly.
+
+Changes for Crossfire 0.90.5:
+
+Changed editable value in some items so they appear in the proper
+place for crossedit.
+
+Moved all files in the 'item' directory into misc.
+
+Changes for Crossfire 0.90.4:
+
+Added DarkOrange to xpm.template file.  Before, there were only
+two oranges, and the dark orange was closer to a brown.
+
+Cleaned up some of the X Pixmaps.  Eliminated some colors from the
+various files that are not in the official xpm.template file.
+
+Merged the soda archetypes in.  Like Chico, they were at least
+partially colored as I transfered them.
+
+Tried to clean up the directories some.  All spell effects should
+now be in magic, where as items that are related to spells (wands,
+books, horns, rods, etc) are in spells.  Either item or misc should
+be removed, as the stuff in them seems like it could be placed
+in the other directory.
+
+Changes for crossfire 0.90.3:
+Merged chico archetypes in their proper location, instead of being
+in a separate directly.  Colored them as I went.
+
+-----------------------------------------------------------------------------
+
+Archetypes
+
+old name	new name	comment
+
+steinblokk	bwall_0		duplicates
+dun1		blocked
+dun15		blocked
+mine1		blocked
+mine15		blocked
+
+thief		thief_1		conficts with player archetypes
+warrior		warrior_1
+elf		elf_1
+ninja		ninja_1
+
+
+skilt				obsolete
+guarddd[13]			empty archetypes (bitmaps are in dev)
+
+------------------------------------------------------
+Bitmaps
+
+barbarian[1-3]			old barbarian animation ?
+halbert[1-3]			old human animation ?
+cleric[1-3]			old cleric animation ?
+dun1, mine1			black square
+slime_acid			some test version of green slime ?
+spider*				hevi's bitmaps
+pouch				identical with sack.111 and not used
