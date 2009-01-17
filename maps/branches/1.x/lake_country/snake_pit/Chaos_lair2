@@ -10,7 +10,7 @@ enter_x 12
 enter_y 35
 msg
 Created:  1995-06-04 Kundi, Xue (xkd@soda.berkeley.edu)
-Modified: 2008-12-24 Rick Tanner
+Modified: 2009-01-17 Rick Tanner
 endmsg
 end
 arch pentagram_111
@@ -711,19 +711,13 @@ move_type walk fly_low
 arch gem
 nrof 600
 end
-arch sorcerer_book
-name stones
-face largestone.111
-randomitems none
-no_pick 1
-arch spell_color_spray
-end
-end
 arch spell_sm_lightning
 end
 arch abil_icestorm
 end
 arch spell_mass_confusion
+end
+arch spell_color_spray
 end
 end
 arch large_stones
