@@ -8,7 +8,7 @@ enter_x 8
 enter_y 15
 msg
 Created:  1997-07-18
-Modified: 2008-12-10 Rick Tanner
+Modified: 2009-01-17 Rick Tanner
 endmsg
 end
 arch afloor_right
@@ -518,6 +518,10 @@ name floor
 x 4
 y 1
 end
+arch longtable_1_4
+x 4
+y 1
+end
 arch booze
 x 4
 y 1
@@ -678,6 +682,10 @@ name floor
 x 5
 y 1
 end
+arch longtable_2_1_2
+x 5
+y 1
+end
 arch booze
 x 5
 y 1
@@ -809,6 +817,10 @@ x 6
 end
 arch afloor_right
 name floor
+x 6
+y 1
+end
+arch longtable_1_3
 x 6
 y 1
 end
@@ -1282,6 +1294,10 @@ name floor
 x 10
 y 1
 end
+arch longtable_1_4
+x 10
+y 1
+end
 arch booze
 x 10
 y 1
@@ -1400,6 +1416,10 @@ name floor
 x 11
 y 1
 end
+arch longtable_2_1_2
+x 11
+y 1
+end
 arch booze
 x 11
 y 1
@@ -1506,6 +1526,10 @@ x 12
 end
 arch afloor_right
 name floor
+x 12
+y 1
+end
+arch longtable_1_3
 x 12
 y 1
 end
