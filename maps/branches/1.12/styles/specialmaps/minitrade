@@ -1,0 +1,175 @@
+arch map
+name Tiny Trading Post
+shopitems weapon:90;gem:90;*-50
+shopgreed 0.250000
+shopmin 5000
+shopmax 25
+width 6
+height 6
+msg
+Created:  1999-02-18
+Modified: 2008-11-25 Rick Tanner
+endmsg
+end
+arch shop_empty
+y 2
+end
+arch shop_mat
+y 2
+end
+arch woodfloor2
+x 1
+y 1
+end
+arch woodwall_1_4
+x 1
+y 1
+end
+arch swall_1_1_half
+x 1
+y 1
+end
+arch woodfloor2
+x 1
+y 2
+end
+arch shop_empty
+x 1
+y 2
+end
+arch swall_2_1_1
+x 1
+y 2
+end
+arch woodfloor2
+x 1
+y 3
+end
+arch swall_1_2_half
+x 1
+y 3
+end
+arch woodwall_1_1
+x 1
+y 3
+end
+arch woodfloor2
+x 1
+y 4
+end
+arch woodwall_2_2_1
+x 1
+y 4
+end
+arch woodfloor2
+x 2
+y 1
+end
+arch woodwall_2_1_2
+x 2
+y 1
+end
+arch woodfloor
+x 2
+y 2
+end
+arch shop_floor
+x 2
+y 2
+end
+arch shop_gems
+x 2
+y 2
+end
+arch woodfloor
+x 2
+y 3
+end
+arch shop_empty
+x 2
+y 3
+end
+arch shop_mat
+x 2
+y 3
+end
+arch woodfloor2
+x 2
+y 4
+end
+arch woodwall_2_1_2
+x 2
+y 4
+end
+arch woodfloor2
+x 3
+y 1
+end
+arch woodwall_2_1_2
+x 3
+y 1
+end
+arch woodfloor
+x 3
+y 2
+end
+arch shop_floor
+x 3
+y 2
+end
+arch shop_gems
+x 3
+y 2
+end
+arch woodfloor
+x 3
+y 3
+end
+arch shop_floor
+x 3
+y 3
+end
+arch shop_weapon
+x 3
+y 3
+end
+arch woodfloor2
+x 3
+y 4
+end
+arch woodwall_2_1_2
+x 3
+y 4
+end
+arch woodfloor2
+x 4
+y 1
+end
+arch woodwall_2_2_3
+x 4
+y 1
+end
+arch woodfloor2
+x 4
+y 2
+end
+arch woodwall_2_1_1
+x 4
+y 2
+end
+arch woodfloor2
+x 4
+y 3
+end
+arch woodwall_2_1_1
+x 4
+y 3
+end
+arch woodfloor2
+x 4
+y 4
+end
+arch woodwall_2_2_4
+x 4
+y 4
+end
