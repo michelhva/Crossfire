@@ -8,7 +8,7 @@ enter_x 8
 enter_y 7
 msg
 Created:  1996-11-14 Chris Jeske
-Modified: 2009-01-14 Rick Tanner
+Modified: 2009-01-17 Rick Tanner
 endmsg
 end
 arch dun25
@@ -2840,10 +2840,8 @@ y 13
 speed 0.000000
 connected 1
 end
-arch oakdoor
-name To Fortress...
+arch exit
 slaying Fortress
-face exit.111
 hp 16
 sp 5
 x 17
@@ -2858,10 +2856,8 @@ y 14
 speed 0.000000
 connected 1
 end
-arch oakdoor
-name To Fortress...
+arch exit
 slaying Fortress
-face exit.111
 hp 15
 sp 6
 x 17
@@ -2876,10 +2872,8 @@ y 15
 speed 0.000000
 connected 1
 end
-arch oakdoor
-name To Fortress...
+arch exit
 slaying Fortress
-face exit.111
 hp 16
 sp 6
 x 17
