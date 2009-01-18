@@ -30,7 +30,6 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
-import java.io.OutputStream;
 import java.io.OutputStreamWriter;
 import java.io.UnsupportedEncodingException;
 import java.util.ArrayList;
@@ -82,11 +81,6 @@ public class ScriptProcess extends Thread implements Comparable<ScriptProcess>
      * The {@link InputStream} of {@link #proc}.
      */
     private final InputStream in;
-
-    /**
-     * The {@link OutputStream} of {@link #proc}.
-     */
-    private final OutputStream out;
 
     /**
      * The {@link OutputStreamWriter} associated with {@link #proc}.
@@ -141,8 +135,7 @@ public class ScriptProcess extends Thread implements Comparable<ScriptProcess>
         final Runtime rt = Runtime.getRuntime();
         proc = rt.exec(filename);
         in = proc.getInputStream();
-        out = proc.getOutputStream();
-        osw = new OutputStreamWriter(out);
+        osw = new OutputStreamWriter(proc.getOutputStream());
     }
 
     /**
