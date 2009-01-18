@@ -38,6 +38,11 @@ import java.util.List;
 
 public class ScriptProcess extends Thread implements Comparable<ScriptProcess>
 {
+    /**
+     * The script ID identifying this script instance.
+     */
+    private final int scriptId;
+
     private final String filename;
 
     private final JXCWindow window;
@@ -83,8 +88,9 @@ public class ScriptProcess extends Thread implements Comparable<ScriptProcess>
         }
     };
 
-    public ScriptProcess(final String filename, final JXCWindow window, final CommandQueue commandQueue, final CrossfireServerConnection crossfireServerConnection, final Stats stats) throws IOException
+    public ScriptProcess(final int scriptId, final String filename, final JXCWindow window, final CommandQueue commandQueue, final CrossfireServerConnection crossfireServerConnection, final Stats stats) throws IOException
     {
+        this.scriptId = scriptId;
         this.filename = filename;
         this.window = window;
         this.commandQueue = commandQueue;
@@ -95,6 +101,24 @@ public class ScriptProcess extends Thread implements Comparable<ScriptProcess>
         in = proc.getInputStream();
         out = proc.getOutputStream();
         osw = new OutputStreamWriter(out);
+    }
+
+    /**
+     * Returns the script ID identifying this script instance.
+     * @return the script ID
+     */
+    public int getScriptId()
+    {
+        return scriptId;
+    }
+
+    /**
+     * Returns the script's filename.
+     * @return the script's filename
+     */
+    public String getFilename()
+    {
+        return filename;
     }
 
     @Override
@@ -164,7 +188,7 @@ public class ScriptProcess extends Thread implements Comparable<ScriptProcess>
     @Override
     public String toString()
     {
-        return filename;
+        return scriptId+" "+filename;
     }
 
     private static void cmdWatch(final String cmdline)
@@ -344,6 +368,17 @@ public class ScriptProcess extends Thread implements Comparable<ScriptProcess>
     @Override
     public int compareTo(final ScriptProcess o)
     {
-        return getName().compareTo(o.getName());
+        if(scriptId < o.scriptId)
+        {
+            return -1;
+        }
+        else if(scriptId > o.scriptId)
+        {
+            return +1;
+        }
+        else
+        {
+            return 0;
+        }
     }
 }
