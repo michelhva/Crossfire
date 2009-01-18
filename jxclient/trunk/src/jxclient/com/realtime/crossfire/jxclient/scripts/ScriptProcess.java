@@ -59,6 +59,11 @@ public class ScriptProcess extends Thread implements Comparable<ScriptProcess>
      */
     private final Stats stats;
 
+    /**
+     * The {@link Process} instance for the executed child process.
+     */
+    private final Process proc;
+
     private final InputStream in;
 
     private final OutputStream out;
@@ -97,7 +102,7 @@ public class ScriptProcess extends Thread implements Comparable<ScriptProcess>
         this.crossfireServerConnection = crossfireServerConnection;
         this.stats = stats;
         final Runtime rt = Runtime.getRuntime();
-        final Process proc = rt.exec(filename);
+        proc = rt.exec(filename);
         in = proc.getInputStream();
         out = proc.getOutputStream();
         osw = new OutputStreamWriter(out);
@@ -362,6 +367,14 @@ public class ScriptProcess extends Thread implements Comparable<ScriptProcess>
     public void addScriptProcessListener(final ScriptProcessListener scriptProcessListener)
     {
         scriptProcessListeners.add(scriptProcessListener);
+    }
+
+    /**
+     * Kills the script process. Does nothing if the process is not running.
+     */
+    public void killScript()
+    {
+        proc.destroy();
     }
 
     /** {@inheritDoc} */
