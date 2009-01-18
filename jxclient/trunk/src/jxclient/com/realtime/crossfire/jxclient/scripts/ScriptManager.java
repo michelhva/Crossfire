@@ -175,4 +175,13 @@ public class ScriptManager
         }
         return result;
     }
+
+    /**
+     * Returns whether at least one script is running.
+     * @return whether at least one script is running
+     */
+    public boolean hasScripts()
+    {
+        return !scriptProcesses.isEmpty();
+    }
 }
