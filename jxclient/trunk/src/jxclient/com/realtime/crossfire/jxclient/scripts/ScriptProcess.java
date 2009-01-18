@@ -36,6 +36,11 @@ import java.io.UnsupportedEncodingException;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * An external command executed as a client-sided script.
+ * @author Lauwenmark
+ * @author Andreas Kirschbaum
+ */
 public class ScriptProcess extends Thread implements Comparable<ScriptProcess>
 {
     /**
@@ -43,10 +48,19 @@ public class ScriptProcess extends Thread implements Comparable<ScriptProcess>
      */
     private final int scriptId;
 
+    /**
+     * The script command including arguments.
+     */
     private final String filename;
 
+    /**
+     * The associated {@link JXCWindow} instance.
+     */
     private final JXCWindow window;
 
+    /**
+     * The {@link CommandQueue} for sending commands.
+     */
     private final CommandQueue commandQueue;
 
     /**
@@ -64,10 +78,19 @@ public class ScriptProcess extends Thread implements Comparable<ScriptProcess>
      */
     private final Process proc;
 
+    /**
+     * The {@link InputStream} of {@link #proc}.
+     */
     private final InputStream in;
 
+    /**
+     * The {@link OutputStream} of {@link #proc}.
+     */
     private final OutputStream out;
 
+    /**
+     * The {@link OutputStreamWriter} associated with {@link #proc}.
+     */
     private final OutputStreamWriter osw;
 
     /**
@@ -75,6 +98,10 @@ public class ScriptProcess extends Thread implements Comparable<ScriptProcess>
      */
     private final List<ScriptProcessListener> scriptProcessListeners = new ArrayList<ScriptProcessListener>(1);
 
+    /**
+     * The {@link CrossfireScriptMonitorListener} attached to {@link
+     * #crossfireServerConnection} to track commands sent to the server.
+     */
     private final CrossfireScriptMonitorListener crossfireScriptMonitorListener = new CrossfireScriptMonitorListener()
     {
         /** {@inheritDoc} */
@@ -93,6 +120,16 @@ public class ScriptProcess extends Thread implements Comparable<ScriptProcess>
         }
     };
 
+    /**
+     * Creates a new instance.
+     * @param scriptId the script ID identifying the new script
+     * @param filename the command including arguments to execute
+     * @param window the associated window instance
+     * @param commandQueue the command queue for sending commands
+     * @param crossfireServerConnection the server connection
+     * @param stats the stats instance to watch
+     * @throws IOException if the script cannot be created
+     */
     public ScriptProcess(final int scriptId, final String filename, final JXCWindow window, final CommandQueue commandQueue, final CrossfireServerConnection crossfireServerConnection, final Stats stats) throws IOException
     {
         this.scriptId = scriptId;
@@ -126,6 +163,7 @@ public class ScriptProcess extends Thread implements Comparable<ScriptProcess>
         return filename;
     }
 
+    /** {@inheritDoc} */
     @Override
     public void run()
     {
@@ -185,6 +223,10 @@ public class ScriptProcess extends Thread implements Comparable<ScriptProcess>
         }
     }
 
+    /**
+     * Sends a message to the script process.
+     * @param cmd the message to send
+     */
     public void commandSent(final String cmd)
     {
         try
@@ -198,24 +240,37 @@ public class ScriptProcess extends Thread implements Comparable<ScriptProcess>
         }
     }
 
+    /** {@inheritDoc} */
     @Override
     public String toString()
     {
         return scriptId+" "+filename;
     }
 
+    /**
+     * Processes a "watch" command from the script process.
+     * @param cmdline the command arguments
+     */
     private static void cmdWatch(final String cmdline)
     {
         final String parms = cmdline.substring(6);
         System.out.println(" - Watch   :"+parms);
     }
 
+    /**
+     * Processes an "unwatch" command from the script process.
+     * @param cmdline the command arguments
+     */
     private static void cmdUnwatch(final String cmdline)
     {
         final String parms = cmdline.substring(8);
         System.out.println(" - Unwatch :"+parms);
     }
 
+    /**
+     * Processes a "request" command from the script process.
+     * @param cmdline the command arguments
+     */
     private void cmdRequest(final String cmdline)
     {
         final String parms = cmdline.substring(8);
@@ -319,6 +374,10 @@ public class ScriptProcess extends Thread implements Comparable<ScriptProcess>
         }
     }
 
+    /**
+     * Processes a line received from the script process.
+     * @param cmdline the line
+     */
     private void runScriptCommand(final String cmdline)
     {
         if (cmdline.startsWith("watch "))
