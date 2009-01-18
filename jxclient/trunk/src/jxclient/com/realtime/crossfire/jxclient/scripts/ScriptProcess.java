@@ -118,6 +118,11 @@ public class ScriptProcess extends Thread implements Comparable<ScriptProcess>
     private final List<ScriptProcessListener> scriptProcessListeners = new ArrayList<ScriptProcessListener>(1);
 
     /**
+     * Whether a "monitor" command is active.
+     */
+    private boolean isMonitoring = false;
+
+    /**
      * The {@link CrossfireScriptMonitorListener} attached to {@link
      * #crossfireServerConnection} to track commands sent to the server.
      */
@@ -240,6 +245,10 @@ public class ScriptProcess extends Thread implements Comparable<ScriptProcess>
         }
         finally
         {
+            if (isMonitoring)
+            {
+                crossfireServerConnection.getScriptMonitorListeners().removeScriptMonitor(crossfireScriptMonitorListener);
+            }
             for(final ScriptProcessListener scriptProcessListener : scriptProcessListeners)
             {
                 scriptProcessListener.scriptTerminated(result);
@@ -693,7 +702,11 @@ public class ScriptProcess extends Thread implements Comparable<ScriptProcess>
             return;
         }
 
-        crossfireServerConnection.getScriptMonitorListeners().addScriptMonitor(crossfireScriptMonitorListener);
+        if (!isMonitoring)
+        {
+            isMonitoring = true;
+            crossfireServerConnection.getScriptMonitorListeners().addScriptMonitor(crossfireScriptMonitorListener);
+        }
     }
 
     /**
@@ -708,7 +721,11 @@ public class ScriptProcess extends Thread implements Comparable<ScriptProcess>
             return;
         }
 
-        crossfireServerConnection.getScriptMonitorListeners().removeScriptMonitor(crossfireScriptMonitorListener);
+        if (isMonitoring)
+        {
+            isMonitoring = false;
+            crossfireServerConnection.getScriptMonitorListeners().removeScriptMonitor(crossfireScriptMonitorListener);
+        }
     }
 
     /**
