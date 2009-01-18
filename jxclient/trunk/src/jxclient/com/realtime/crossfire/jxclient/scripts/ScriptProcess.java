@@ -692,16 +692,9 @@ public class ScriptProcess extends Thread implements Comparable<ScriptProcess>
 
     /**
      * Processes a "monitor" command from the script process.
-     * @param parms the command arguments
      */
-    private void cmdMonitor(final String parms)
+    private void cmdMonitor()
     {
-        if(!parms.isEmpty())
-        {
-            reportError("The 'monitor' command does not take arguments.");
-            return;
-        }
-
         if (!isMonitoring)
         {
             isMonitoring = true;
@@ -711,16 +704,9 @@ public class ScriptProcess extends Thread implements Comparable<ScriptProcess>
 
     /**
      * Processes an "unmonitor" command from the script process.
-     * @param parms the command arguments
      */
-    private void cmdUnmonitor(final String parms)
+    private void cmdUnmonitor()
     {
-        if(!parms.isEmpty())
-        {
-            reportError("The 'unmonitor' command does not take arguments.");
-            return;
-        }
-
         if (isMonitoring)
         {
             isMonitoring = false;
@@ -768,11 +754,25 @@ public class ScriptProcess extends Thread implements Comparable<ScriptProcess>
         }
         else if (tmp[0].equals("monitor"))
         {
-            cmdMonitor(tmp[1]);
+            if (tmp.length == 1)
+            {
+                cmdMonitor();
+            }
+            else
+            {
+                reportError("The 'monitor' command does not take arguments.");
+            }
         }
         else if (tmp[0].equals("unmonitor"))
         {
-            cmdUnmonitor(tmp[1]);
+            if (tmp.length == 1)
+            {
+                cmdUnmonitor();
+            }
+            else
+            {
+                reportError("The 'unmonitor' command does not take arguments.");
+            }
         }
         else
         {
