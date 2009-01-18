@@ -66,6 +66,7 @@ public class Commands
         commands.put("screenshot", new ScreenshotCommand(window, windowRenderer, crossfireServerConnection));
         commands.put("script", new ScriptCommand(scriptManager, crossfireServerConnection));
         commands.put("scriptkill", new ScriptkillCommand(scriptManager, crossfireServerConnection));
+        commands.put("scriptkillall", new ScriptkillallCommand(scriptManager, crossfireServerConnection));
         commands.put("scripts", new ScriptsCommand(scriptManager, crossfireServerConnection));
         commands.put("exec", new ExecCommand(window, crossfireServerConnection));
         commands.put("set", new SetCommand(crossfireServerConnection, optionManager));
