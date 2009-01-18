@@ -23,7 +23,6 @@ import com.realtime.crossfire.jxclient.scripts.ScriptManager;
 import com.realtime.crossfire.jxclient.server.CommandQueue;
 import com.realtime.crossfire.jxclient.server.CrossfireServerConnection;
 import com.realtime.crossfire.jxclient.settings.options.OptionManager;
-import com.realtime.crossfire.jxclient.stats.Stats;
 import com.realtime.crossfire.jxclient.util.Patterns;
 import com.realtime.crossfire.jxclient.util.StringUtils;
 import com.realtime.crossfire.jxclient.window.JXCWindow;
@@ -54,13 +53,12 @@ public class Commands
      * @param windowRenderer the renderer to use
      * @param commandQueue the command queue for sending commands
      * @param crossfireServerConnection the connection instance
-     * @param stats the instance to watch
+     * @param scriptManager the script manager instance
      * @param optionManager the option manager instance
      */
-    public Commands(final JXCWindow window, final JXCWindowRenderer windowRenderer, final CommandQueue commandQueue, final CrossfireServerConnection crossfireServerConnection, final Stats stats, final OptionManager optionManager)
+    public Commands(final JXCWindow window, final JXCWindowRenderer windowRenderer, final CommandQueue commandQueue, final CrossfireServerConnection crossfireServerConnection, final ScriptManager scriptManager, final OptionManager optionManager)
     {
         this.commandQueue = commandQueue;
-        final ScriptManager scriptManager = new ScriptManager(window, commandQueue, crossfireServerConnection, stats);
         commands.put("bind", new BindCommand(window, crossfireServerConnection, this));
         commands.put("unbind", new UnbindCommand(window, crossfireServerConnection));
         commands.put("screenshot", new ScreenshotCommand(window, windowRenderer, crossfireServerConnection));

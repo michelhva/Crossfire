@@ -579,6 +579,24 @@ public class CfMapUpdater
     }
 
     /**
+     * Returns the width of the visible map area.
+     * @return the width of the visible map area
+     */
+    public int getWidth()
+    {
+        return width;
+    }
+
+    /**
+     * Returns the height of the visible map area.
+     * @return the height of the visible map area
+     */
+    public int getHeight()
+    {
+        return width;
+    }
+
+    /**
      * Returns the {@link CfMapAnimations} instance.
      * @return the instance
      */

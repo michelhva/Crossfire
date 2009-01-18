@@ -19,9 +19,12 @@
 //
 package com.realtime.crossfire.jxclient.scripts;
 
+import com.realtime.crossfire.jxclient.items.ItemsManager;
+import com.realtime.crossfire.jxclient.mapupdater.CfMapUpdater;
 import com.realtime.crossfire.jxclient.server.CommandQueue;
 import com.realtime.crossfire.jxclient.server.CrossfireCommandDrawinfoEvent;
 import com.realtime.crossfire.jxclient.server.CrossfireServerConnection;
+import com.realtime.crossfire.jxclient.spells.SpellsManager;
 import com.realtime.crossfire.jxclient.stats.Stats;
 import com.realtime.crossfire.jxclient.window.JXCWindow;
 import java.io.IOException;
@@ -56,6 +59,21 @@ public class ScriptManager
     private final Stats stats;
 
     /**
+     * The {@link ItemsManager} instance to use.
+     */
+    private final ItemsManager itemsManager;
+
+    /**
+     * The {@link SpellsManager} instance to use.
+     */
+    private final SpellsManager spellsManager;
+
+    /**
+     * The {@link CfMapUpdater} instance to use.
+     */
+    private final CfMapUpdater mapUpdater;
+
+    /**
      * All running {@link ScriptProcess}es.
      */
     private final Set<ScriptProcess> scriptProcesses = new CopyOnWriteArraySet<ScriptProcess>();
@@ -71,13 +89,19 @@ public class ScriptManager
      * @param commandQueue the command queue for sending commands
      * @param crossfireServerConnection the connection instance
      * @param stats the stats instance to watch
+     * @param itemsManager the items manager instance to use
+     * @param spellsManager the spells manager instance to use
+     * @param mapUpdater the map updater instance to use
      */
-    public ScriptManager(final JXCWindow window, final CommandQueue commandQueue, final CrossfireServerConnection crossfireServerConnection, final Stats stats)
+    public ScriptManager(final JXCWindow window, final CommandQueue commandQueue, final CrossfireServerConnection crossfireServerConnection, final Stats stats, final ItemsManager itemsManager, final SpellsManager spellsManager, final CfMapUpdater mapUpdater)
     {
         this.window = window;
         this.commandQueue = commandQueue;
         this.crossfireServerConnection = crossfireServerConnection;
         this.stats = stats;
+        this.itemsManager = itemsManager;
+        this.spellsManager = spellsManager;
+        this.mapUpdater = mapUpdater;
     }
 
     /**
@@ -89,7 +113,7 @@ public class ScriptManager
         final ScriptProcess scriptProcess;
         try
         {
-            scriptProcess = new ScriptProcess(nextScriptId, command, window, commandQueue, crossfireServerConnection, stats);
+            scriptProcess = new ScriptProcess(nextScriptId, command, window, commandQueue, crossfireServerConnection, stats, itemsManager, spellsManager, mapUpdater);
         }
         catch (final IOException ex)
         {

@@ -40,6 +40,7 @@ import com.realtime.crossfire.jxclient.main.Options;
 import com.realtime.crossfire.jxclient.mapupdater.CfMapUpdater;
 import com.realtime.crossfire.jxclient.metaserver.Metaserver;
 import com.realtime.crossfire.jxclient.metaserver.MetaserverModel;
+import com.realtime.crossfire.jxclient.scripts.ScriptManager;
 import com.realtime.crossfire.jxclient.server.CommandQueue;
 import com.realtime.crossfire.jxclient.server.ConnectionListener;
 import com.realtime.crossfire.jxclient.server.CrossfireCommandDrawextinfoEvent;
@@ -683,7 +684,8 @@ public class JXCWindow extends JFrame
         mouseTracker = new MouseTracker(debugGui);
         windowRenderer = new JXCWindowRenderer(this, mouseTracker, semaphoreRedraw);
         mouseTracker.init(windowRenderer);
-        commands = new Commands(this, windowRenderer, commandQueue, server, stats, optionManager);
+        final ScriptManager scriptManager = new ScriptManager(this, commandQueue, server, stats, itemsManager, spellsManager, mapUpdater);
+        commands = new Commands(this, windowRenderer, commandQueue, server, scriptManager, optionManager);
         windowRenderer.init(commands);
         queryDialog = new Gui(this, mouseTracker, commands);
         keybindDialog = new Gui(this, mouseTracker, commands);
