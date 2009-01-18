@@ -19,6 +19,7 @@
 //
 package com.realtime.crossfire.jxclient.commands;
 
+import com.realtime.crossfire.jxclient.scripts.ScriptManager;
 import com.realtime.crossfire.jxclient.server.CommandQueue;
 import com.realtime.crossfire.jxclient.server.CrossfireServerConnection;
 import com.realtime.crossfire.jxclient.settings.options.OptionManager;
@@ -59,10 +60,11 @@ public class Commands
     public Commands(final JXCWindow window, final JXCWindowRenderer windowRenderer, final CommandQueue commandQueue, final CrossfireServerConnection crossfireServerConnection, final Stats stats, final OptionManager optionManager)
     {
         this.commandQueue = commandQueue;
+        final ScriptManager scriptManager = new ScriptManager(window, commandQueue, crossfireServerConnection, stats);
         commands.put("bind", new BindCommand(window, crossfireServerConnection, this));
         commands.put("unbind", new UnbindCommand(window, crossfireServerConnection));
         commands.put("screenshot", new ScreenshotCommand(window, windowRenderer, crossfireServerConnection));
-        commands.put("script", new ScriptCommand(window, commandQueue, crossfireServerConnection, stats));
+        commands.put("script", new ScriptCommand(scriptManager, crossfireServerConnection));
         commands.put("exec", new ExecCommand(window, crossfireServerConnection));
         commands.put("set", new SetCommand(crossfireServerConnection, optionManager));
     }
