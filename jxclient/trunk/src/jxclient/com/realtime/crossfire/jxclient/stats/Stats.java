@@ -163,7 +163,7 @@ public class Stats
             case CS_STAT_SPELL_ATTUNE:
             case CS_STAT_SPELL_REPEL:
             case CS_STAT_SPELL_DENY:
-                // TODO: set spell paths
+                setStat(stat, param);
                 break;
 
             default:
