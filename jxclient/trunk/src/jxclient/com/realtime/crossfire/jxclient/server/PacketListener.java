@@ -20,23 +20,18 @@
 package com.realtime.crossfire.jxclient.server;
 
 /**
- * A interface for clients that process received packets.
- *
+ * Interface for clients processing received packets.
  * @author Andreas Kirschbaum
  */
 public interface PacketListener
 {
     /**
-     * Process a received packet. This passed buffer must not be modified
+     * Processes a received packet. This passed buffer must not be modified
      * except for the packet range.
-     *
-     * @param packet The buffer holding the packet.
-     *
-     * @param start The start index of the packet.
-     *
-     * @param end The end of the packet data.
-     *
-     * @throws UnknownCommandException If the packet cannot be parsed.
+     * @param packet the buffer holding the packet
+     * @param start the start index of the packet
+     * @param end the end of the packet data
+     * @throws UnknownCommandException if the packet cannot be parsed
      */
     void processPacket(byte[] packet, int start, int end) throws UnknownCommandException;
 }
