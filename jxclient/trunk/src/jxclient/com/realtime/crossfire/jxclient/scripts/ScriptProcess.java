@@ -160,7 +160,15 @@ public class ScriptProcess extends Thread implements Comparable<ScriptProcess>
                 {
                     isr.close();
                 }
-                result = null;
+                try
+                {
+                    final int exitStatus = proc.waitFor();
+                    result = exitStatus == 0 ? null : "exit "+exitStatus;
+                }
+                catch (final InterruptedException ex)
+                {
+                    result = ex.getMessage();
+                }
             }
             catch (final IOException ex)
             {
