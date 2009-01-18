@@ -36,7 +36,7 @@ import java.io.UnsupportedEncodingException;
 import java.util.ArrayList;
 import java.util.List;
 
-public class ScriptProcess extends Thread
+public class ScriptProcess extends Thread implements Comparable<ScriptProcess>
 {
     private final String filename;
 
@@ -338,5 +338,12 @@ public class ScriptProcess extends Thread
     public void addScriptProcessListener(final ScriptProcessListener scriptProcessListener)
     {
         scriptProcessListeners.add(scriptProcessListener);
+    }
+
+    /** {@inheritDoc} */
+    @Override
+    public int compareTo(final ScriptProcess o)
+    {
+        return getName().compareTo(o.getName());
     }
 }
