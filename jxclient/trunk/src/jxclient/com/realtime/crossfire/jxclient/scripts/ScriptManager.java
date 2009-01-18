@@ -27,6 +27,7 @@ import com.realtime.crossfire.jxclient.window.JXCWindow;
 import java.io.IOException;
 import java.util.HashSet;
 import java.util.Set;
+import java.util.concurrent.CopyOnWriteArraySet;
 
 /**
  * Maintains currently running script processes.
@@ -57,7 +58,7 @@ public class ScriptManager
     /**
      * All running {@link ScriptProcess}es.
      */
-    private final Set<ScriptProcess> scriptProcesses = new HashSet<ScriptProcess>();
+    private final Set<ScriptProcess> scriptProcesses = new CopyOnWriteArraySet<ScriptProcess>();
 
     /**
      * Creates a new instance.
@@ -110,5 +111,24 @@ public class ScriptManager
         });
         crossfireServerConnection.drawInfo("Script '"+scriptProcess.getName()+"' started.", CrossfireCommandDrawinfoEvent.NDI_BLACK);
         scriptProcess.start();
+    }
+
+    /**
+     * Returns all running scripts matching a given (partial) name.
+     * @param partialScriptName the partial name to match against; an empty
+     * string matches all scripts
+     * @return the matching scripts, possibly empty
+     */
+    public Set<ScriptProcess> getScripts(final String partialScriptName)
+    {
+        final Set<ScriptProcess> result = new HashSet<ScriptProcess>();
+        for(final ScriptProcess scriptProcess : scriptProcesses)
+        {
+            if(scriptProcess.getName().contains(partialScriptName))
+            {
+                result.add(scriptProcess);
+            }
+        }
+        return result;
     }
 }
