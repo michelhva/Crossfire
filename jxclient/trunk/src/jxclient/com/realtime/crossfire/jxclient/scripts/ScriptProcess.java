@@ -33,6 +33,8 @@ import java.io.InputStreamReader;
 import java.io.OutputStream;
 import java.io.OutputStreamWriter;
 import java.io.UnsupportedEncodingException;
+import java.util.ArrayList;
+import java.util.List;
 
 public class ScriptProcess extends Thread
 {
@@ -57,6 +59,11 @@ public class ScriptProcess extends Thread
     private final OutputStream out;
 
     private final OutputStreamWriter osw;
+
+    /**
+     * The {@link ScriptProcessListener}s to notify.
+     */
+    private final List<ScriptProcessListener> scriptProcessListeners = new ArrayList<ScriptProcessListener>(1);
 
     private final CrossfireScriptMonitorListener crossfireScriptMonitorListener = new CrossfireScriptMonitorListener()
     {
@@ -93,40 +100,52 @@ public class ScriptProcess extends Thread
     @Override
     public void run()
     {
+        String result = "unexpected";
         try
         {
-            final InputStreamReader isr = new InputStreamReader(in);
             try
             {
-                final BufferedReader br = new BufferedReader(isr);
+                final InputStreamReader isr = new InputStreamReader(in);
                 try
                 {
-                    for (;;)
+                    final BufferedReader br = new BufferedReader(isr);
+                    try
                     {
-                        final String line = br.readLine();
-                        if (line == null)
+                        for (;;)
                         {
-                            break;
-                        }
+                            final String line = br.readLine();
+                            if (line == null)
+                            {
+                                break;
+                            }
 
-                        runScriptCommand(line);
+                            runScriptCommand(line);
+                        }
+                    }
+                    finally
+                    {
+                        br.close();
                     }
                 }
                 finally
                 {
-                    br.close();
+                    isr.close();
                 }
+                result = null;
             }
-            finally
+            catch (final IOException ex)
             {
-                isr.close();
+                result = ex.getMessage();
+            }
+            crossfireServerConnection.getScriptMonitorListeners().removeScriptMonitor(crossfireScriptMonitorListener);
+        }
+        finally
+        {
+            for(final ScriptProcessListener scriptProcessListener : scriptProcessListeners)
+            {
+                scriptProcessListener.scriptTerminated(result);
             }
         }
-        catch (final IOException e)
-        {
-            e.printStackTrace();
-        }
-        crossfireServerConnection.getScriptMonitorListeners().removeScriptMonitor(crossfireScriptMonitorListener);
     }
 
     public void commandSent(final String cmd)
@@ -310,5 +329,14 @@ public class ScriptProcess extends Thread
         {
             crossfireServerConnection.getScriptMonitorListeners().removeScriptMonitor(crossfireScriptMonitorListener);
         }
+    }
+
+    /**
+     * Adds a {@link ScriptProcessListener} to be notified.
+     * @param scriptProcessListener the listener to add
+     */
+    public void addScriptProcessListener(final ScriptProcessListener scriptProcessListener)
+    {
+        scriptProcessListeners.add(scriptProcessListener);
     }
 }

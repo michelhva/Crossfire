@@ -21,7 +21,6 @@ package com.realtime.crossfire.jxclient.commands;
 
 import com.realtime.crossfire.jxclient.scripts.ScriptManager;
 import com.realtime.crossfire.jxclient.server.CrossfireServerConnection;
-import java.io.IOException;
 
 /**
  * Implements a "script" command. It runs a new script.
@@ -61,13 +60,6 @@ public class ScriptCommand extends AbstractCommand
             return;
         }
 
-        try
-        {
-            scriptManager.newScript(args);
-        }
-        catch (final IOException ex)
-        {
-            drawInfoError("Unable to run script: "+ex.getMessage());
-        }
+        scriptManager.newScript(args);
     }
 }

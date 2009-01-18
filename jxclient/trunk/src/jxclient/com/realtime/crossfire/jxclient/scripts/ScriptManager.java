@@ -20,10 +20,13 @@
 package com.realtime.crossfire.jxclient.scripts;
 
 import com.realtime.crossfire.jxclient.server.CommandQueue;
+import com.realtime.crossfire.jxclient.server.CrossfireCommandDrawinfoEvent;
 import com.realtime.crossfire.jxclient.server.CrossfireServerConnection;
 import com.realtime.crossfire.jxclient.stats.Stats;
 import com.realtime.crossfire.jxclient.window.JXCWindow;
 import java.io.IOException;
+import java.util.HashSet;
+import java.util.Set;
 
 /**
  * Maintains currently running script processes.
@@ -52,6 +55,11 @@ public class ScriptManager
     private final Stats stats;
 
     /**
+     * All running {@link ScriptProcess}es.
+     */
+    private final Set<ScriptProcess> scriptProcesses = new HashSet<ScriptProcess>();
+
+    /**
      * Creates a new instance.
      * @param window the window to execute in
      * @param commandQueue the command queue for sending commands
@@ -69,12 +77,38 @@ public class ScriptManager
     /**
      * Creates a new script instance.
      * @param command the script command including arguments
-     * @throws IOException if the script cannot be executed
      */
-    public void newScript(final String command) throws IOException
+    public void newScript(final String command)
     {
-        final ScriptProcess scriptProcess = new ScriptProcess(command, window, commandQueue, crossfireServerConnection, stats);
+        final ScriptProcess scriptProcess;
+        try
+        {
+            scriptProcess = new ScriptProcess(command, window, commandQueue, crossfireServerConnection, stats);
+        }
+        catch (final IOException ex)
+        {
+            crossfireServerConnection.drawInfo("Unable to run script: "+ex.getMessage(), CrossfireCommandDrawinfoEvent.NDI_RED);
+            return;
+        }
+        scriptProcesses.add(scriptProcess);
+        scriptProcess.addScriptProcessListener(new ScriptProcessListener()
+        {
+            /** {@inheritDoc} */
+            @Override
+            public void scriptTerminated(final String result)
+            {
+                scriptProcesses.remove(scriptProcess);
+                if(result == null)
+                {
+                    crossfireServerConnection.drawInfo("Script '"+scriptProcess.getName()+"' finished.", CrossfireCommandDrawinfoEvent.NDI_BLACK);
+                }
+                else
+                {
+                    crossfireServerConnection.drawInfo("Script '"+scriptProcess.getName()+"' failed: "+result, CrossfireCommandDrawinfoEvent.NDI_RED);
+                }
+            }
+        });
+        crossfireServerConnection.drawInfo("Script '"+scriptProcess.getName()+"' started.", CrossfireCommandDrawinfoEvent.NDI_BLACK);
         scriptProcess.start();
-        // XXX: store scriptProcess
     }
 }
