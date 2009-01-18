@@ -19,11 +19,8 @@
 //
 package com.realtime.crossfire.jxclient.commands;
 
-import com.realtime.crossfire.jxclient.scripts.ScriptProcess;
-import com.realtime.crossfire.jxclient.server.CommandQueue;
+import com.realtime.crossfire.jxclient.scripts.ScriptManager;
 import com.realtime.crossfire.jxclient.server.CrossfireServerConnection;
-import com.realtime.crossfire.jxclient.stats.Stats;
-import com.realtime.crossfire.jxclient.window.JXCWindow;
 import java.io.IOException;
 
 /**
@@ -34,39 +31,19 @@ import java.io.IOException;
 public class ScriptCommand extends AbstractCommand
 {
     /**
-     * The window to execute in.
+     * The {@link ScriptManager} to use.
      */
-    private final JXCWindow window;
-
-    /**
-     * The command queue for sending commands.
-     */
-    private final CommandQueue commandQueue;
-
-    /**
-     * The connection instance.
-     */
-    private final CrossfireServerConnection crossfireServerConnection;
-
-    /**
-     * The {@link Stats} instance to watch.
-     */
-    private final Stats stats;
+    private final ScriptManager scriptManager;
 
     /**
      * Creates a new instance.
-     * @param window the window to execute in
-     * @param commandQueue the command queue for sending commands
+     * @param scriptManager the script manager to use
      * @param crossfireServerConnection the connection instance
-     * @param stats the instance to watch
      */
-    protected ScriptCommand(final JXCWindow window, final CommandQueue commandQueue, final CrossfireServerConnection crossfireServerConnection, final Stats stats)
+    protected ScriptCommand(final ScriptManager scriptManager, final CrossfireServerConnection crossfireServerConnection)
     {
         super(crossfireServerConnection);
-        this.window = window;
-        this.commandQueue = commandQueue;
-        this.crossfireServerConnection = crossfireServerConnection;
-        this.stats = stats;
+        this.scriptManager = scriptManager;
     }
 
     /** {@inheritDoc} */
@@ -86,9 +63,7 @@ public class ScriptCommand extends AbstractCommand
 
         try
         {
-            final ScriptProcess scriptProcess = new ScriptProcess(args, window, commandQueue, crossfireServerConnection, stats);
-            scriptProcess.start();
-            // XXX: store scriptProcess
+            scriptManager.newScript(args);
         }
         catch (final IOException ex)
         {
