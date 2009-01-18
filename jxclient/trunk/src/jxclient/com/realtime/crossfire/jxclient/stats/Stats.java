@@ -57,6 +57,9 @@ public class Stats
      */
     private final ExperienceTable experienceTable;
 
+    /**
+     * The current stat values.
+     */
     private final int[] stats = new int[258];
 
     /**
@@ -69,8 +72,14 @@ public class Stats
      */
     private long expNextLevel = 0;
 
+    /**
+     * The current value of the range stat.
+     */
     private String range = "";
 
+    /**
+     * The current value of the title stat.
+     */
     private String title = "";
 
     /**
@@ -78,6 +87,10 @@ public class Stats
      */
     private String activeSkill = "";
 
+    /**
+     * The {@link CrossfireStatsListener} attached to the server connection for
+     * detecting stat changes.
+     */
     private final CrossfireStatsListener crossfireStatsListener = new CrossfireStatsListener()
     {
         /**
@@ -462,11 +475,19 @@ public class Stats
         }
     }
 
+    /**
+     * Adds a {@link StatsListener} to be notified about stat changes.
+     * @param statsListener the listener to add
+     */
     public void addCrossfireStatsListener(final StatsListener statsListener)
     {
         statsListeners.add(statsListener);
     }
 
+    /**
+     * Removes a {@link StatsListener} to be notified about stat changes.
+     * @param statsListener the listener to remove
+     */
     public void removeCrossfireStatsListener(final StatsListener statsListener)
     {
         statsListeners.remove(statsListener);
