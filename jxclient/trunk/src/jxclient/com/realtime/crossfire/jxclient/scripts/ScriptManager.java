@@ -61,6 +61,11 @@ public class ScriptManager
     private final Set<ScriptProcess> scriptProcesses = new CopyOnWriteArraySet<ScriptProcess>();
 
     /**
+     * The script ID for the next created script.
+     */
+    private int nextScriptId = 1;
+
+    /**
      * Creates a new instance.
      * @param window the window to execute in
      * @param commandQueue the command queue for sending commands
@@ -84,13 +89,14 @@ public class ScriptManager
         final ScriptProcess scriptProcess;
         try
         {
-            scriptProcess = new ScriptProcess(command, window, commandQueue, crossfireServerConnection, stats);
+            scriptProcess = new ScriptProcess(nextScriptId, command, window, commandQueue, crossfireServerConnection, stats);
         }
         catch (final IOException ex)
         {
             crossfireServerConnection.drawInfo("Unable to run script: "+ex.getMessage(), CrossfireCommandDrawinfoEvent.NDI_RED);
             return;
         }
+        nextScriptId++;
         scriptProcesses.add(scriptProcess);
         scriptProcess.addScriptProcessListener(new ScriptProcessListener()
         {
@@ -101,30 +107,68 @@ public class ScriptManager
                 scriptProcesses.remove(scriptProcess);
                 if(result == null)
                 {
-                    crossfireServerConnection.drawInfo("Script '"+scriptProcess.getName()+"' finished.", CrossfireCommandDrawinfoEvent.NDI_BLACK);
+                    crossfireServerConnection.drawInfo("Script '"+scriptProcess+"' finished.", CrossfireCommandDrawinfoEvent.NDI_BLACK);
                 }
                 else
                 {
-                    crossfireServerConnection.drawInfo("Script '"+scriptProcess.getName()+"' failed: "+result, CrossfireCommandDrawinfoEvent.NDI_RED);
+                    crossfireServerConnection.drawInfo("Script '"+scriptProcess+"' failed: "+result, CrossfireCommandDrawinfoEvent.NDI_RED);
                 }
             }
         });
-        crossfireServerConnection.drawInfo("Script '"+scriptProcess.getName()+"' started.", CrossfireCommandDrawinfoEvent.NDI_BLACK);
+        crossfireServerConnection.drawInfo("Script '"+scriptProcess+"' started.", CrossfireCommandDrawinfoEvent.NDI_BLACK);
         scriptProcess.start();
     }
 
     /**
-     * Returns all running scripts matching a given (partial) name.
-     * @param partialScriptName the partial name to match against; an empty
-     * string matches all scripts
+     * Returns all running scripts matching a given (partial) name or a script
+     * ID.
+     * @param partialScriptName the partial name or a script ID to match
+     * against; an empty string matches all scripts
      * @return the matching scripts, possibly empty
      */
     public Set<ScriptProcess> getScripts(final String partialScriptName)
     {
+        try
+        {
+            return getScriptByScriptId(Integer.parseInt(partialScriptName));
+        }
+        catch(final NumberFormatException ex)
+        {
+            return getScriptsByName(partialScriptName);
+        }
+    }
+
+    /**
+     * Returns all running scripts matching a given script ID.
+     * @param scriptId the script ID
+     * @return the matching scripts, possibly empty
+     */
+    private Set<ScriptProcess> getScriptByScriptId(final int scriptId)
+    {
         final Set<ScriptProcess> result = new HashSet<ScriptProcess>();
         for(final ScriptProcess scriptProcess : scriptProcesses)
         {
-            if(scriptProcess.getName().contains(partialScriptName))
+            if(scriptProcess.getScriptId() == scriptId)
+            {
+                result.add(scriptProcess);
+                break;
+            }
+        }
+        return result;
+    }
+
+    /**
+     * Returns all running scripts matching a given (partial) name.
+     * @param partialScriptName the partial script name; an empty string
+     * matches all scripts
+     * @return the matching scripts, possibly empty
+     */
+    private Set<ScriptProcess> getScriptsByName(final String partialScriptName)
+    {
+        final Set<ScriptProcess> result = new HashSet<ScriptProcess>();
+        for(final ScriptProcess scriptProcess : scriptProcesses)
+        {
+            if(scriptProcess.getFilename().contains(partialScriptName))
             {
                 result.add(scriptProcess);
             }

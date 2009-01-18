@@ -65,7 +65,7 @@ public class ScriptsCommand extends AbstractCommand
         drawInfo("Running scripts:");
         for(final ScriptProcess scriptProcess : scriptProcesses)
         {
-            drawInfo("- "+scriptProcess.getName());
+            drawInfo("- "+scriptProcess);
         }
     }
 }
