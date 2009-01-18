@@ -355,7 +355,7 @@ public class ScriptProcess extends Thread implements Comparable<ScriptProcess>
         else if (cmdline.startsWith("draw "))
         {
             final String parms = cmdline.substring(5);
-            final String[] pps = parms.split(" ");
+            final String[] pps = parms.split(" ", 2);
             crossfireServerConnection.drawInfo(pps[1], Integer.parseInt(pps[0]));
         }
         else if (cmdline.startsWith("monitor"))
