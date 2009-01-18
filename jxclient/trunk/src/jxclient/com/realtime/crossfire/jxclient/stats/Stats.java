@@ -149,17 +149,8 @@ public class Stats
                 break;
 
             case CS_STAT_SPEED:
-                setStat(stat, param);
-                break;
-
             case CS_STAT_WEAP_SP:
-                setStat(stat, param);
-                break;
-
             case CS_STAT_WEIGHT_LIM:
-                setStat(stat, param);
-                break;
-
             case CS_STAT_SPELL_ATTUNE:
             case CS_STAT_SPELL_REPEL:
             case CS_STAT_SPELL_DENY:
