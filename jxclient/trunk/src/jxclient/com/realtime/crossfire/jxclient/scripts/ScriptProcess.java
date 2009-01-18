@@ -723,19 +723,44 @@ public class ScriptProcess extends Thread implements Comparable<ScriptProcess>
         final String[] tmp = cmdline.split(" +", 2);
         if (tmp[0].equals("watch"))
         {
-            cmdWatch(tmp[1]);
+            if (tmp.length == 2)
+            {
+                cmdWatch(tmp[1]);
+            }
+            else
+            {
+                reportError("syntax error: "+cmdline);
+            }
         }
         else if (tmp[0].equals("unwatch"))
         {
-            cmdUnwatch(tmp[1]);
+            if (tmp.length == 2)
+            {
+                cmdUnwatch(tmp[1]);
+            }
+            else
+            {
+                reportError("syntax error: "+cmdline);
+            }
         }
         else if (tmp[0].equals("request"))
         {
-            cmdRequest(tmp[1]);
+            if (tmp.length == 2)
+            {
+                cmdRequest(tmp[1]);
+            }
+            else
+            {
+                reportError("syntax error: "+cmdline);
+            }
         }
         else if (tmp[0].equals("issue"))
         {
-            if (tmp[1].startsWith("mark "))
+            if (tmp.length != 2)
+            {
+                reportError("syntax error: "+cmdline);
+            }
+            else if (tmp[1].startsWith("mark "))
             {
                 cmdIssueMark(tmp[1].substring(5));
             }
@@ -750,7 +775,14 @@ public class ScriptProcess extends Thread implements Comparable<ScriptProcess>
         }
         else if (tmp[0].equals("draw"))
         {
-            cmdDraw(tmp[1]);
+            if (tmp.length == 2)
+            {
+                cmdDraw(tmp[1]);
+            }
+            else
+            {
+                reportError("syntax error: "+cmdline);
+            }
         }
         else if (tmp[0].equals("monitor"))
         {
