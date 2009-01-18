@@ -577,7 +577,17 @@ public class ScriptProcess extends Thread implements Comparable<ScriptProcess>
      */
     private void cmdIssueMark(final String parms)
     {
-        System.out.println(" - Issue M :"+parms);
+        final int tag;
+        try
+        {
+            tag = Integer.parseInt(parms);
+        }
+        catch (final NumberFormatException ex)
+        {
+            reportError("syntax error: issue mark "+parms);
+            return;
+        }
+        crossfireServerConnection.sendMark(tag);
     }
 
     /**
@@ -586,7 +596,30 @@ public class ScriptProcess extends Thread implements Comparable<ScriptProcess>
      */
     private void cmdIssueLock(final String parms)
     {
-        System.out.println(" - Issue L :"+parms);
+        final String[] tmp = parms.split(" +", 2);
+        if (tmp.length != 2)
+        {
+            reportError("syntax error: issue lock "+parms);
+            return;
+        }
+        final int val;
+        final int tag;
+        try
+        {
+            val = Integer.parseInt(tmp[0]);
+            tag = Integer.parseInt(tmp[1]);
+        }
+        catch (final NumberFormatException ex)
+        {
+            reportError("syntax error: issue lock "+parms);
+            return;
+        }
+        if (val < 0 || val > 1)
+        {
+            reportError("syntax error: issue lock "+parms);
+            return;
+        }
+        crossfireServerConnection.sendLock(val != 0, tag);
     }
 
     /**
@@ -595,11 +628,32 @@ public class ScriptProcess extends Thread implements Comparable<ScriptProcess>
      */
     private void cmdIssue(final String parms)
     {
-        final String[] pps = parms.split(" ", 3);
-        for (int i = 0; i < Integer.parseInt(pps[0]); i++)
+        final String[] pps = parms.split(" +", 3);
+        if (pps.length != 3)
         {
-            commandQueue.sendNcom(pps[1].equals("1"), 0, pps[2]);
+            reportError("syntax error: issue "+parms);
+            return;
         }
+        final int repeat;
+        final int tmp;
+        try
+        {
+            repeat = Integer.parseInt(pps[0]);
+            tmp = Integer.parseInt(pps[1]);
+        }
+        catch (final NumberFormatException ex)
+        {
+            reportError("syntax error: issue "+parms);
+            return;
+        }
+        if (tmp < 0 || tmp > 1)
+        {
+            reportError("syntax error: issue "+parms);
+            return;
+        }
+        final boolean mustSend = tmp != 0;
+        final String command = pps[2];
+        commandQueue.sendNcom(mustSend, repeat, command);
     }
 
     /**
