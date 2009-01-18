@@ -662,8 +662,23 @@ public class ScriptProcess extends Thread implements Comparable<ScriptProcess>
      */
     private void cmdDraw(final String parms)
     {
-        final String[] pps = parms.split(" ", 2);
-        crossfireServerConnection.drawInfo(pps[1], Integer.parseInt(pps[0]));
+        final String[] pps = parms.split(" +", 2);
+        if (pps.length != 2)
+        {
+            reportError("syntax error: draw "+parms);
+            return;
+        }
+        final int color;
+        try
+        {
+            color = Integer.parseInt(pps[0]);
+        }
+        catch (final NumberFormatException ex)
+        {
+            reportError("syntax error: draw "+parms);
+            return;
+        }
+        crossfireServerConnection.drawInfo(pps[1], color);
     }
 
     /**
