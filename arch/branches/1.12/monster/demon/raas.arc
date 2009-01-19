@@ -17,10 +17,10 @@ move_type walk
 Wis 10
 no_pick 1
 alive 1
-exp 4000
-ac 4
+exp 700
+ac 0
 resist_physical 20
-wc 10
+wc 1
 dam 25
 Int 0
 maxsp 5

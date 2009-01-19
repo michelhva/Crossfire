@@ -13,7 +13,7 @@ baby_drag.112
 baby_drag.113
 mina
 magicmap red
-level 25
+level 10
 Con 8
 Pow 8
 can_cast_spell 1

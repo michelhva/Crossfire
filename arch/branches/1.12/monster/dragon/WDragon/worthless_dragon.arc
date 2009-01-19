@@ -8,7 +8,7 @@ sleep 1
 Wis 20
 face worthless_dragon.x71
 animation worthless_dragon
-level 29
+level 18
 Con 11
 Pow 26
 can_cast_spell 1
@@ -18,9 +18,12 @@ hp 3500
 maxhp 3500
 resist_fire 100
 resist_fear 100
+
 resist_magic 30
+
 resist_cold -100
 resist_confusion -100
+
 ac -12
 wc -20
 dam 25

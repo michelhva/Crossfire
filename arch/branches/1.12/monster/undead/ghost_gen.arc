@@ -1,7 +1,7 @@
 Object generate_ghost
 race undead
 other_arch ghost
-name ghost generator
+name generator
 generator 1
 face ghost_gen.111
 magicmap red
@@ -15,5 +15,4 @@ maxsp 1
 weight 25000
 resist_cold 50
 undead 1
-generator_limit 5
 end

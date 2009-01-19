@@ -13,10 +13,10 @@ maxhp 50
 Con 1
 exp 800
 dam 10
-wc 9
-ac 7
+wc 1
+ac 10
 speed 0.3
-level 6
+level 4
 type 28
 resist_physical 100
 resist_drain 100

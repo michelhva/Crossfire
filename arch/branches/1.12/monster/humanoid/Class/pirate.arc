@@ -12,11 +12,11 @@ Str 12
 Wis 10
 no_pick 1
 alive 1
-exp 30
-level 3
+exp 45
+level 4
 ac 7
-hp 25
-maxhp 25
+hp 20
+maxhp 20
 Con 2
 wc 10
 dam 6

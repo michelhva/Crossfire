@@ -8,7 +8,7 @@ sleep 1
 Wis 15
 face big_wiz.x11
 animation big_wiz
-level 49
+level 18
 attacktype 128
 Con 28
 Pow 48

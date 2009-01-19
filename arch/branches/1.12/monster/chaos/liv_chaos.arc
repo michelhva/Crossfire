@@ -12,7 +12,7 @@ liv_chaos.333
 mina
 is_animated 1
 move_type walk fly_low
-level 40
+level 13
 hp 250
 maxhp 250
 Int 3

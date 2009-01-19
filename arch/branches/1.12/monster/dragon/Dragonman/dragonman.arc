@@ -8,7 +8,7 @@ sleep 1
 Wis 20
 face dragonman.x31
 animation dragonman
-level 39
+level 18
 Con 11
 Pow 13
 can_cast_spell 1

@@ -15,13 +15,13 @@ attacktype 4
 resist_confusion -100
 resist_blind 100
 glow_radius 1
-ac 4
-wc 13
+ac 2
+wc 10
 dam 20
-hp 175
-maxhp 175
-level 9
+hp 200
+maxhp 200
+level 8
 speed -0.25
-exp 3000
+exp 250
 weight 200
 end

@@ -12,11 +12,11 @@ anim
 gnome.111
 gnome.112
 mina
-ac 5
+ac 1
 reflect_spell 1
-wc 10
+wc 5
 dam 4
-level 6
+level 4
 Str 10
 Int 15
 Dex 13
@@ -27,8 +27,8 @@ can_cast_spell 1
 Wis 20
 attacktype 4098
 will_apply 15
-hp 75
-maxhp 75
+hp 100
+maxhp 100
 sp 300
 maxsp 300
 resist_fire 100

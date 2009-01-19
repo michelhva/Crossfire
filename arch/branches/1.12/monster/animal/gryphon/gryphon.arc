@@ -8,7 +8,7 @@ sleep 1
 Wis 15
 face gryphon.x31
 animation gryphon
-level 29
+level 18
 attacktype 128
 Dex 30
 Str 80
