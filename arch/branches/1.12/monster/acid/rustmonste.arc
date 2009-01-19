@@ -15,17 +15,18 @@ move_type walk
 sleep 1
 Wis 15
 alive 1
-ac 5
-wc 10
-dam 1
-hp 65
-maxhp 65
+ac -10
+wc -5
+dam 0
+hp 100
+maxhp 100
 Con 1
 speed -0.5
-exp 100
+exp 300
 weight 30000
-level 5
+level 4
 attacktype 64
 resist_fire -100
+
 hitback 1
 end

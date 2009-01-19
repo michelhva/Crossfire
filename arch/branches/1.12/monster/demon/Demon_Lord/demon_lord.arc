@@ -26,7 +26,7 @@ resist_holyword 90
 resist_godpower 90
 resist_magic 80
 resist_blind 100
-level 69
+level 19
 speed -0.2
 alive 1
 monster 1

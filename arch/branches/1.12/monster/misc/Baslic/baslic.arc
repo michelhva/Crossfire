@@ -8,7 +8,7 @@ monster 1
 move_type walk
 sleep 1
 Wis 20
-level 29
+level 19
 Str 10
 Con 5
 Pow 5

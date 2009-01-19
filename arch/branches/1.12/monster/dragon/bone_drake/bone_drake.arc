@@ -7,7 +7,7 @@ animation bone_drake
 monster 1
 move_type walk
 sleep 1
-level 50
+level 14
 Con 6
 maxsp 40
 hp 8000

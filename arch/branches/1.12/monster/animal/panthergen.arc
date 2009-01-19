@@ -1,6 +1,6 @@
 Object generate_panther
 race animal
-name panther cave
+name generator
 other_arch panther
 face panthergen.111
 generator 1
@@ -11,5 +11,4 @@ speed 0.004
 exp 50
 weight 900000
 magicmap black
-generator_limit 5
 end

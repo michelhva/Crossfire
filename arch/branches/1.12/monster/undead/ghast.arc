@@ -16,14 +16,14 @@ undead 1
 no_pick 1
 alive 1
 ac 2
-wc 10
-dam 20
+wc 14
+dam 4
 hp 100
 maxhp 100
 Con 5
 level 8
 speed 0.15
-exp 1500
+exp 100
 weight  5000
 attacktype 4095
 resist_fire 50

@@ -8,7 +8,7 @@ sleep 1
 Wis 20
 face dragon.x71
 animation big_dragon
-level 29
+level 18
 Con 11
 Pow 26
 can_cast_spell 1

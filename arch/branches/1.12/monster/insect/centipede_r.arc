@@ -20,9 +20,9 @@ sleep 1
 Wis 5
 can_see_in_dark 1
 alive 1
-exp 65
+exp 32
 ac 10
-wc 11
+wc 8
 dam 10
 hp 50
 maxhp 50

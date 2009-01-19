@@ -18,12 +18,12 @@ resist_confusion 100
 path_attuned 65536
 path_repelled 131088
 resist_physical 50
-ac 3
-wc 4
+ac -7
+wc -1
 dam 40
 hp 350
 maxhp 350
-level 19
+level 15
 speed 0.25
 luck 2
 stealth 1

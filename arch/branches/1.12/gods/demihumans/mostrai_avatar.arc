@@ -18,12 +18,12 @@ path_attuned 18432
 path_repelled 64
 resist_fire 60
 resist_physical 75
-ac 1
-wc 9
+ac -10
+wc -6
 dam 50
 hp 350
 maxhp 350
-level 19
+level 15
 speed 0.20
 can_cast_spell 1
 can_use_weapon 1

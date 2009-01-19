@@ -15,5 +15,4 @@ alive 1
 no_pick 1
 maxsp 1
 weight 30000
-generator_limit 5
 end

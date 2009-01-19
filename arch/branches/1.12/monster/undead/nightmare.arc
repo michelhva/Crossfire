@@ -9,9 +9,9 @@ mina
 hp 50
 maxhp 50
 Con 1
-exp 70
+exp 800
 dam 10
-wc 14
+wc 1
 ac 10
 speed 0.3
 level 4

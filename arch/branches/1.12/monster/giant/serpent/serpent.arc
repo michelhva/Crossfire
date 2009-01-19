@@ -7,19 +7,21 @@ animation serpent
 monster 1
 move_type walk
 Wis 15
-level 6
-Con 4
+level 7
+Con 3.2
 resist_cold -100
+
 resist_poison 100
-exp 500
-ac 4
-wc 14
+
+exp 150
+ac -2
+wc 5
 dam 9
 hp 100
 maxhp 100
 alive 1
 no_pick 1
-speed -0.15
+speed -0.08
 weight 90000
 end
 More

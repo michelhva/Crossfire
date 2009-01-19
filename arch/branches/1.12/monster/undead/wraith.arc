@@ -9,13 +9,13 @@ sleep 1
 Wis 10
 no_pick 1
 alive 1
-exp 1500
+exp 120
 level 8
 ac 2
-hp 75
-maxhp 75
+hp 40
+maxhp 40
 Con 2
-wc 9
+wc -5
 dam 30
 speed 0.16
 attacktype 528

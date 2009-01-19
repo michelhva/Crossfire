@@ -8,7 +8,7 @@ sleep 1
 Wis 20
 face elec_dr.x11
 animation big_elec
-level 27
+level 18
 Con 11
 Pow 32
 can_cast_spell 1

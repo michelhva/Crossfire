@@ -18,7 +18,7 @@ Dex 25
 Int 10
 Con 20
 maxhp 3000
-level 50
+level 12
 alive 1
 speed -0.2
 weight 3000000

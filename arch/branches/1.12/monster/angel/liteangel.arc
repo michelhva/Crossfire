@@ -23,7 +23,7 @@ maxsp 200
 hp 500
 maxhp 500
 Con 16
-level 20
+level 13
 resist_physical 30
 resist_fire 30
 resist_cold 30

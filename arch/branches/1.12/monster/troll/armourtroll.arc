@@ -19,14 +19,14 @@ no_pick 1
 alive 1
 resist_fire -100
 can_see_in_dark 1
-exp 1500
-ac 3
-wc 7
+exp 550
+ac -10
+wc 4
 dam 12
-hp 150
+hp 180
 Con 5
-maxhp 150
-level 8
+maxhp 180
+level 7
 speed 0.12
 weight 100000
 run_away 5
@@ -57,14 +57,14 @@ no_pick 1
 alive 1
 resist_fire -100
 can_see_in_dark 1
-exp 1500
-ac 3
-wc 7
+exp 550
+ac -15
+wc 4
 dam 14
-hp 150
+hp 180
 Con 5
-maxhp 150
-level 8
+maxhp 180
+level 7
 speed 0.12
 weight 100000
 run_away 5
@@ -95,14 +95,14 @@ no_pick 1
 alive 1
 resist_fire -100
 can_see_in_dark 1
-exp 2000
-ac 3
-wc 7
+exp 550
+ac -15
+wc 4
 dam 16
-hp 150
+hp 180
 Con 5
-maxhp 150
-level 8
+maxhp 180
+level 7
 speed 0.12
 weight 100000
 run_away 5
@@ -115,3 +115,4 @@ body_finger 2
 body_skill 1
 body_arm 2
 end
+

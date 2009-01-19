@@ -1,6 +1,6 @@
 Object generate_stalker
 race faerie
-name stalker generator
+name generator
 other_arch stalker
 face stalkergen.111
 magicmap blue
@@ -15,5 +15,4 @@ speed -0.002
 maxsp 1
 move_type fly_low
 level 5
-generator_limit 5
 end
