@@ -43,7 +43,7 @@ import java.util.regex.Pattern;
  * ServerConnection}.
  * @author Andreas Kirschbaum
  */
-public class CrossfireServerConnection extends ServerConnection
+public class CrossfireServerConnection extends DefaultServerConnection
 {
     /**
      * Pattern to split a string by ":".

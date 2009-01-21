@@ -20,93 +20,30 @@
 package com.realtime.crossfire.jxclient.server;
 
 /**
- * One of the two most important classes, ServerConnection performs most of the
- * network-related work. It either decodes commands sent by the server itself,
- * or delegates their processing to other classes, like Map or Faces.
- *
- * @version 1.0
- * @author Lauwenmark
- * @since 1.0
+ * Performs most of the network-related work.
+ * @author Andreas Kirschbaum
  */
-public abstract class ServerConnection implements PacketListener
+public interface ServerConnection
 {
-    private final Object clientSocketSem = new Object();
-
-    private ClientSocket clientSocket = null;
-
-    private final ScriptMonitorListeners scriptMonitorListeners = new ScriptMonitorListeners();
-
-    /**
-     * Writes a Crossfire Message on the socket, so it is sent to the server.
-     * @param packet the packet to be sent; it does not include the length
-     * bytes but only actual payload data
-     * @param length the length of <code>packet</code>; if the array is larger,
-     * excess data is ignored
-     */
-    protected void writePacket(final byte[] packet, final int length)
-    {
-        synchronized (clientSocketSem)
-        {
-            if (clientSocket != null)
-            {
-                clientSocket.writePacket(packet, length);
-            }
-        }
-    }
-
     /**
      * Attempts to connect the client to a server.
-     *
-     * @param hostname The hostname to connect to.
-     *
-     * @param port The port to connect to.
-     *
-     * @param connectionListener The connection listener to notify about a
-     * broken connection.
+     * @param hostname the hostname to connect to
+     * @param port the port to connect to
+     * @param connectionListener the connection listener to notify about a
+     * broken connection
      */
-    public void connect(final String hostname, final int port, final ConnectionListener connectionListener)
-    {
-        synchronized (clientSocketSem)
-        {
-            if (clientSocket != null)
-            {
-                clientSocket.disconnect();
-            }
-
-            clientSocket = new ClientSocket(hostname, port, this, scriptMonitorListeners, connectionListener);
-            clientSocket.start();
-        }
-    }
+    void connect(String hostname, int port, ConnectionListener connectionListener);
 
     /**
      * Disconnects from the server. Does nothing if not connected.
      */
-    public void disconnect()
-    {
-        synchronized (clientSocketSem)
-        {
-            if (clientSocket != null)
-            {
-                clientSocket.disconnect();
-                clientSocket = null;
-            }
-        }
-    }
+    void disconnect();
 
     /**
      * Returns whether the socket is connected.
      * @return whether the socket is connected
      */
-    public boolean isConnected()
-    {
-        synchronized (clientSocketSem)
-        {
-            return clientSocket != null;
-        }
-    }
+    boolean isConnected();
 
-    public ScriptMonitorListeners getScriptMonitorListeners()
-    {
-        return scriptMonitorListeners;
-    }
+    ScriptMonitorListeners getScriptMonitorListeners();
 }
