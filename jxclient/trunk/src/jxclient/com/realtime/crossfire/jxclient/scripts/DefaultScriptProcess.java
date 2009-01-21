@@ -174,19 +174,15 @@ public class DefaultScriptProcess extends Thread implements ScriptProcess
         osw = new OutputStreamWriter(proc.getOutputStream());
     }
 
-    /**
-     * Returns the script ID identifying this script instance.
-     * @return the script ID
-     */
+    /** {@inheritDoc} */
+    @Override
     public int getScriptId()
     {
         return scriptId;
     }
 
-    /**
-     * Returns the script's filename.
-     * @return the script's filename
-     */
+    /** {@inheritDoc} */
+    @Override
     public String getFilename()
     {
         return filename;
@@ -256,10 +252,8 @@ public class DefaultScriptProcess extends Thread implements ScriptProcess
         }
     }
 
-    /**
-     * Sends a message to the script process.
-     * @param cmd the message to send
-     */
+    /** {@inheritDoc} */
+    @Override
     public void commandSent(final String cmd)
     {
         try
@@ -821,18 +815,15 @@ public class DefaultScriptProcess extends Thread implements ScriptProcess
         crossfireServerConnection.drawInfo(string, CrossfireCommandDrawinfoEvent.NDI_RED);
     }
 
-    /**
-     * Adds a {@link ScriptProcessListener} to be notified.
-     * @param scriptProcessListener the listener to add
-     */
+    /** {@inheritDoc} */
+    @Override
     public void addScriptProcessListener(final ScriptProcessListener scriptProcessListener)
     {
         scriptProcessListeners.add(scriptProcessListener);
     }
 
-    /**
-     * Kills the script process. Does nothing if the process is not running.
-     */
+    /** {@inheritDoc} */
+    @Override
     public void killScript()
     {
         proc.destroy();
