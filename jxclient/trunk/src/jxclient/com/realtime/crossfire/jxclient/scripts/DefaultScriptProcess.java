@@ -272,7 +272,7 @@ public class DefaultScriptProcess extends Thread implements ScriptProcess
      * @param cmd the message to send
      * @param item the item to send
      */
-    public void commandSentItem(final String cmd, final CfItem item)
+    private void commandSentItem(final String cmd, final CfItem item)
     {
         int flags = 0;
         if(item.isMagic()) flags |= 0x100;
@@ -293,7 +293,7 @@ public class DefaultScriptProcess extends Thread implements ScriptProcess
      * @param x the cell's x-coordinate relative to the view area
      * @param y the cell's y-coordinate relative to the view area
      */
-    public void commandSentMap(final CfMap map, final int x, final int y)
+    private void commandSentMap(final CfMap map, final int x, final int y)
     {
         final CfMapSquare square = map.getMapSquare(x, y);
         final StringBuilder sb = new StringBuilder("request map ");
