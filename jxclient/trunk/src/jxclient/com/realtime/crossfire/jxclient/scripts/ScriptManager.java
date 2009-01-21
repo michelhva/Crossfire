@@ -110,10 +110,10 @@ public class ScriptManager
      */
     public void newScript(final String command)
     {
-        final ScriptProcess scriptProcess;
+        final DefaultScriptProcess scriptProcess;
         try
         {
-            scriptProcess = new ScriptProcess(nextScriptId, command, window, commandQueue, crossfireServerConnection, stats, itemsManager, spellsManager, mapUpdater);
+            scriptProcess = new DefaultScriptProcess(nextScriptId, command, window, commandQueue, crossfireServerConnection, stats, itemsManager, spellsManager, mapUpdater);
         }
         catch (final IOException ex)
         {
