@@ -24,7 +24,6 @@ import com.realtime.crossfire.jxclient.skills.SkillSet;
 import com.realtime.crossfire.jxclient.util.HexCodec;
 import java.io.BufferedReader;
 import java.io.ByteArrayInputStream;
-import java.io.DataInputStream;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.io.UnsupportedEncodingException;
@@ -803,44 +802,23 @@ public class CrossfireServerConnection extends ServerConnection
                 if (packet[pos++] != 'a') break;
                 if (packet[pos++] != 'c') break;
                 if (packet[pos++] != 'e') break;
-                switch (packet[pos++])
+                if (packet[pos++] != '2') break;
+                if (packet[pos++] != ' ') break;
                 {
-                case '1':
-                    if (packet[pos++] != ' ') break;
+                    final int faceNum = ((packet[pos++]&0xFF)<<8)|(packet[pos++]&0xFF);
+                    final int faceSetNum = packet[pos++]&0xFF;
+                    final int faceChecksum = ((packet[pos++]&0xFF)<<24)|((packet[pos++]&0xFF)<<16)|((packet[pos++]&0xFF)<<8)|(packet[pos++]&0xFF);
+                    final String faceName = new String(packet, pos, end-pos, utf8).intern();
+                    if (debugProtocol != null)
                     {
-                        final int faceNum = ((packet[pos++]&0xFF)<<8)|(packet[pos++]&0xFF);
-                        final int faceChecksum = ((packet[pos++]&0xFF)<<24)|((packet[pos++]&0xFF)<<16)|((packet[pos++]&0xFF)<<8)|(packet[pos++]&0xFF);
-                        final String faceName = new String(packet, pos, end-pos, utf8);
-                        if (debugProtocol != null)
-                        {
-                            debugProtocolWrite("recv face1 num="+faceNum+" checksum="+faceChecksum+" name="+faceName+"\n");
-                        }
-                        for (final CrossfireFaceListener crossfireFaceListener : crossfireFaceListeners)
-                        {
-                            crossfireFaceListener.faceReceived(faceNum, 0, faceChecksum, faceName);
-                        }
+                        debugProtocolWrite("recv face2 num="+faceNum+" set="+faceSetNum+" checksum="+faceChecksum+" name="+faceName+"\n");
                     }
-                    return;
-
-                case '2':
-                    if (packet[pos++] != ' ') break;
+                    for (final CrossfireFaceListener crossfireFaceListener : crossfireFaceListeners)
                     {
-                        final int faceNum = ((packet[pos++]&0xFF)<<8)|(packet[pos++]&0xFF);
-                        final int faceSetNum = packet[pos++]&0xFF;
-                        final int faceChecksum = ((packet[pos++]&0xFF)<<24)|((packet[pos++]&0xFF)<<16)|((packet[pos++]&0xFF)<<8)|(packet[pos++]&0xFF);
-                        final String faceName = new String(packet, pos, end-pos, utf8).intern();
-                        if (debugProtocol != null)
-                        {
-                            debugProtocolWrite("recv face2 num="+faceNum+" set="+faceSetNum+" checksum="+faceChecksum+" name="+faceName+"\n");
-                        }
-                        for (final CrossfireFaceListener crossfireFaceListener : crossfireFaceListeners)
-                        {
-                            crossfireFaceListener.faceReceived(faceNum, faceSetNum, faceChecksum, faceName);
-                        }
+                        crossfireFaceListener.faceReceived(faceNum, faceSetNum, faceChecksum, faceName);
                     }
-                    return;
                 }
-                break;
+                return;
 
             case 'g':
                 if (packet[pos++] != 'o') break;
@@ -865,148 +843,62 @@ public class CrossfireServerConnection extends ServerConnection
                     if (packet[pos++] != 'a') break;
                     if (packet[pos++] != 'g') break;
                     if (packet[pos++] != 'e') break;
-                    switch (packet[pos++])
+                    if (packet[pos++] != '2') break;
+                    if (packet[pos++] != ' ') break;
                     {
-                    case ' ':
+                        final int faceNum = ((packet[pos++]&0xFF)<<24)|((packet[pos++]&0xFF)<<16)|((packet[pos++]&0xFF)<<8)|(packet[pos++]&0xFF);
+                        final int faceSetNum = packet[pos++]&0xFF;
+                        final int len = ((packet[pos++]&0xFF)<<24)|((packet[pos++]&0xFF)<<16)|((packet[pos++]&0xFF)<<8)|(packet[pos++]&0xFF);
+                        if (pos+len != end) break;
+                        if (debugProtocol != null)
                         {
-                            final int faceNum = ((packet[pos++]&0xFF)<<24)|((packet[pos++]&0xFF)<<16)|((packet[pos++]&0xFF)<<8)|(packet[pos++]&0xFF);
-                            final int len = ((packet[pos++]&0xFF)<<24)|((packet[pos++]&0xFF)<<16)|((packet[pos++]&0xFF)<<8)|(packet[pos++]&0xFF);
-                            if (pos+len != end) break;
-                            if (debugProtocol != null)
-                            {
-                                debugProtocolWrite("recv image face="+faceNum+" len="+len+"\n");
-                            }
-                            for (final CrossfireUpdateFaceListener listener : crossfireUpdateFaceListeners)
-                            {
-                                listener.updateFace(faceNum, 0, packet, pos, len);
-                            }
+                            debugProtocolWrite("recv image2 face="+faceNum+" set="+faceSetNum+" len="+len+"\n");
                         }
-                        return;
-
-                    case '2':
-                        if (packet[pos++] != ' ') break;
+                        for (final CrossfireUpdateFaceListener listener : crossfireUpdateFaceListeners)
                         {
-                            final int faceNum = ((packet[pos++]&0xFF)<<24)|((packet[pos++]&0xFF)<<16)|((packet[pos++]&0xFF)<<8)|(packet[pos++]&0xFF);
-                            final int faceSetNum = packet[pos++]&0xFF;
-                            final int len = ((packet[pos++]&0xFF)<<24)|((packet[pos++]&0xFF)<<16)|((packet[pos++]&0xFF)<<8)|(packet[pos++]&0xFF);
-                            if (pos+len != end) break;
-                            if (debugProtocol != null)
-                            {
-                                debugProtocolWrite("recv image2 face="+faceNum+" set="+faceSetNum+" len="+len+"\n");
-                            }
-                            for (final CrossfireUpdateFaceListener listener : crossfireUpdateFaceListeners)
-                            {
-                                listener.updateFace(faceNum, faceSetNum, packet, pos, len);
-                            }
+                            listener.updateFace(faceNum, faceSetNum, packet, pos, len);
                         }
-                        return;
                     }
-                    break;
+                    return;
 
                 case 't':
                     if (packet[pos++] != 'e') break;
                     if (packet[pos++] != 'm') break;
-                    switch (packet[pos++])
+                    if (packet[pos++] != '2') break;
+                    if (packet[pos++] != ' ') break;
                     {
-                    case '1':
-                        if (packet[pos++] != ' ') break;
-                        try
+                        final int location = ((packet[pos++]&0xFF)<<24)|((packet[pos++]&0xFF)<<16)|((packet[pos++]&0xFF)<<8)|(packet[pos++]&0xFF);
+                        while (pos < end)
                         {
-                            final ByteArrayInputStream is = new ByteArrayInputStream(packet, pos, end-pos);
-                            try
+                            final int tag = ((packet[pos++]&0xFF)<<24)|((packet[pos++]&0xFF)<<16)|((packet[pos++]&0xFF)<<8)|(packet[pos++]&0xFF);
+                            final int flags = ((packet[pos++]&0xFF)<<24)|((packet[pos++]&0xFF)<<16)|((packet[pos++]&0xFF)<<8)|(packet[pos++]&0xFF);
+                            final int weight = ((packet[pos++]&0xFF)<<24)|((packet[pos++]&0xFF)<<16)|((packet[pos++]&0xFF)<<8)|(packet[pos++]&0xFF);
+                            final int faceNum = ((packet[pos++]&0xFF)<<24)|((packet[pos++]&0xFF)<<16)|((packet[pos++]&0xFF)<<8)|(packet[pos++]&0xFF);
+                            final int nameLength = packet[pos++]&0xFF;
+                            final String[] names = new String(packet, pos, nameLength, utf8).split("\0", 2);
+                            pos += nameLength;
+                            final String name = names[0].intern();
+                            final String namePl = names.length < 2 ? name : names[1].intern();
+                            final int anim = ((packet[pos++]&0xFF)<<8)|(packet[pos++]&0xFF);
+                            final int animSpeed = packet[pos++]&0xFF;
+                            final int nrof = ((packet[pos++]&0xFF)<<24)|((packet[pos++]&0xFF)<<16)|((packet[pos++]&0xFF)<<8)|(packet[pos++]&0xFF);
+                            final int type = ((packet[pos++]&0xFF)<<8)|(packet[pos++]&0xFF);
+                            if (debugProtocol != null)
                             {
-                                final DataInputStream dis = new DataInputStream(is);
-                                try
-                                {
-                                    final int len = dis.available();
-                                    int pos2 = 0;
-                                    final int location = dis.readInt();
-                                    pos2 += 4;
-                                    while (pos2 < len)
-                                    {
-                                        final int tag = dis.readInt();
-                                        final int flags = dis.readInt();
-                                        final int weight = dis.readInt();
-                                        final int faceNum = dis.readInt();
-                                        final int namelength = dis.readUnsignedByte();
-                                        pos2 += 17;
-                                        final byte[] buf = new byte[namelength];
-                                        dis.readFully(buf);
-                                        final String[] names = new String(buf).split("\0", 2);
-                                        final String name = names[0];
-                                        final String namePl = names[names.length >= 2 ? 1 : 0];
-                                        pos2 += namelength;
-                                        final int anim = dis.readUnsignedShort();
-                                        final int animSpeed = dis.readUnsignedByte();
-                                        final int nrof = dis.readInt();
-                                        pos2 += 7;
-                                        if (debugProtocol != null)
-                                        {
-                                            debugProtocolWrite("recv item1 tag="+tag+" flags="+flags+" weight="+weight+" face="+faceNum+" name="+name+" name_pl="+namePl+" anim="+anim+" anim_speed="+animSpeed+" nrof="+nrof+"\n");
-                                        }
-                                        for (final CrossfireUpdateItemListener crossfireUpdateItemListener : crossfireUpdateItemListeners)
-                                        {
-                                            crossfireUpdateItemListener.additemReceived(location, tag, flags, weight, faceNum, name, namePl, anim, animSpeed, nrof, -1);
-                                        }
-                                    }
-                                    for (final CrossfireUpdateItemListener crossfireUpdateItemListener : crossfireUpdateItemListeners)
-                                    {
-                                        crossfireUpdateItemListener.additemFinished();
-                                    }
-                                }
-                                finally
-                                {
-                                    dis.close();
-                                }
+                                debugProtocolWrite("recv item2 location="+location+" tag="+tag+" flags="+flags+" weight="+weight+" face="+faceNum+" name="+name+" name_pl="+namePl+" anim="+anim+" anim_speed="+animSpeed+" nrof="+nrof+" type="+type+"\n");
                             }
-                            finally
-                            {
-                                is.close();
-                            }
-                        }
-                        catch (final IOException ex)
-                        {
-                            throw new UnknownCommandException("invalid item1 command: "+ex.getMessage());
-                        }
-                        return;
-
-                    case '2':
-                        if (packet[pos++] != ' ') break;
-                        {
-                            final int location = ((packet[pos++]&0xFF)<<24)|((packet[pos++]&0xFF)<<16)|((packet[pos++]&0xFF)<<8)|(packet[pos++]&0xFF);
-                            while (pos < end)
-                            {
-                                final int tag = ((packet[pos++]&0xFF)<<24)|((packet[pos++]&0xFF)<<16)|((packet[pos++]&0xFF)<<8)|(packet[pos++]&0xFF);
-                                final int flags = ((packet[pos++]&0xFF)<<24)|((packet[pos++]&0xFF)<<16)|((packet[pos++]&0xFF)<<8)|(packet[pos++]&0xFF);
-                                final int weight = ((packet[pos++]&0xFF)<<24)|((packet[pos++]&0xFF)<<16)|((packet[pos++]&0xFF)<<8)|(packet[pos++]&0xFF);
-                                final int faceNum = ((packet[pos++]&0xFF)<<24)|((packet[pos++]&0xFF)<<16)|((packet[pos++]&0xFF)<<8)|(packet[pos++]&0xFF);
-                                final int nameLength = packet[pos++]&0xFF;
-                                final String[] names = new String(packet, pos, nameLength, utf8).split("\0", 2);
-                                pos += nameLength;
-                                final String name = names[0].intern();
-                                final String namePl = names.length < 2 ? name : names[1].intern();
-                                final int anim = ((packet[pos++]&0xFF)<<8)|(packet[pos++]&0xFF);
-                                final int animSpeed = packet[pos++]&0xFF;
-                                final int nrof = ((packet[pos++]&0xFF)<<24)|((packet[pos++]&0xFF)<<16)|((packet[pos++]&0xFF)<<8)|(packet[pos++]&0xFF);
-                                final int type = ((packet[pos++]&0xFF)<<8)|(packet[pos++]&0xFF);
-                                if (debugProtocol != null)
-                                {
-                                    debugProtocolWrite("recv item2 location="+location+" tag="+tag+" flags="+flags+" weight="+weight+" face="+faceNum+" name="+name+" name_pl="+namePl+" anim="+anim+" anim_speed="+animSpeed+" nrof="+nrof+" type="+type+"\n");
-                                }
-                                for (final CrossfireUpdateItemListener crossfireUpdateItemListener : crossfireUpdateItemListeners)
-                                {
-                                    crossfireUpdateItemListener.additemReceived(location, tag, flags, weight, faceNum, name, namePl, anim, animSpeed, nrof, type);
-                                }
-                            }
-                            if (pos != end) break;
                             for (final CrossfireUpdateItemListener crossfireUpdateItemListener : crossfireUpdateItemListeners)
                             {
-                                crossfireUpdateItemListener.additemFinished();
+                                crossfireUpdateItemListener.additemReceived(location, tag, flags, weight, faceNum, name, namePl, anim, animSpeed, nrof, type);
                             }
                         }
-                        return;
+                        if (pos != end) break;
+                        for (final CrossfireUpdateItemListener crossfireUpdateItemListener : crossfireUpdateItemListeners)
+                        {
+                            crossfireUpdateItemListener.additemFinished();
+                        }
                     }
-                    break;
+                    return;
                 }
                 break;
 
@@ -1851,6 +1743,7 @@ public class CrossfireServerConnection extends ServerConnection
         sendVersion(1023, 1027, "JXClient Java Client Pegasus 0.1");
         sendToggleextendedtext(MessageTypes.getAllTypes());
         sendSetup(
+            "faceset 0",
             "sound 3",
             "sound2 3",
             "exp64 1",
