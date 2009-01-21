@@ -48,6 +48,7 @@ import com.realtime.crossfire.jxclient.server.CrossfireCommandQueryEvent;
 import com.realtime.crossfire.jxclient.server.CrossfireDrawextinfoListener;
 import com.realtime.crossfire.jxclient.server.CrossfireQueryListener;
 import com.realtime.crossfire.jxclient.server.CrossfireServerConnection;
+import com.realtime.crossfire.jxclient.server.DefaultCrossfireServerConnection;
 import com.realtime.crossfire.jxclient.server.MessageTypes;
 import com.realtime.crossfire.jxclient.server.Pickup;
 import com.realtime.crossfire.jxclient.settings.Filenames;
@@ -668,7 +669,7 @@ public class JXCWindow extends JFrame
         this.settings = settings;
         this.soundManager = soundManager;
         this.optionManager = optionManager;
-        server = new CrossfireServerConnection(semaphoreRedraw, debugProtocol);
+        server = new DefaultCrossfireServerConnection(semaphoreRedraw, debugProtocol);
         final FaceCache faceCache = new FaceCache(server);
         experienceTable = new ExperienceTable(server);
         stats = new Stats(server, experienceTable);

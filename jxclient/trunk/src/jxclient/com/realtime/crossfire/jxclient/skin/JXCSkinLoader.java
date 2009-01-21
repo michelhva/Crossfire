@@ -102,6 +102,7 @@ import com.realtime.crossfire.jxclient.server.CommandQueue;
 import com.realtime.crossfire.jxclient.server.CrossfireCommandMagicmapEvent;
 import com.realtime.crossfire.jxclient.server.CrossfireMagicmapListener;
 import com.realtime.crossfire.jxclient.server.CrossfireServerConnection;
+import com.realtime.crossfire.jxclient.server.DefaultCrossfireServerConnection;
 import com.realtime.crossfire.jxclient.server.MessageTypes;
 import com.realtime.crossfire.jxclient.server.UnknownCommandException;
 import com.realtime.crossfire.jxclient.settings.options.CheckBoxOption;
@@ -1579,7 +1580,7 @@ public abstract class JXCSkinLoader implements JXCSkin
                             if (h%tileSize != 0) throw new IOException("map height "+h+" is not a multiple of the tile size "+tileSize);
                             final int tmpW = w/tileSize;
                             final int tmpH = h/tileSize;
-                            CrossfireServerConnection.validateMapSize(tmpW, tmpH);
+                            DefaultCrossfireServerConnection.validateMapSize(tmpW, tmpH);
                             mapWidth = tmpW;
                             mapHeight = tmpH;
 
