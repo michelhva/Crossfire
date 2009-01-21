@@ -39,6 +39,10 @@ public class StringSplitterTest extends TestCase
         super(name);
     }
 
+    /**
+     * Creates a new test suite.
+     * @return the test suite
+     */
     public static Test suite()
     {
         return new TestSuite(StringSplitterTest.class);
@@ -53,6 +57,9 @@ public class StringSplitterTest extends TestCase
         TestRunner.run(suite());
     }
 
+    /**
+     * Checks that {@link StringSplitter#splitAsHtml(String)} does work.
+     */
     public void testSplit()
     {
         assertEquals("", StringSplitter.splitAsHtml(""));
