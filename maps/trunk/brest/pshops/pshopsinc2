@@ -6,7 +6,7 @@ width 35
 height 14
 msg
 Created:  2004-10-17 majorwoo (josh@woosworld.net)
-Modified: 2009-01-21 Arvid Norlander
+Modified: 2009-01-21 Rick Tanner
 endmsg
 end
 arch dungeon_magic
@@ -168,6 +168,7 @@ x 1
 y 5
 end
 arch stair2_down
+name Stairs going down
 slaying pshopsinc
 hp 1
 sp 5
