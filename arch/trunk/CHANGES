@@ -1,5 +1,32 @@
 Changes for SVN top of tree:
 
+weapon/other/saw.base.111.png, weapon/club/quarters.base.111.png,
+weapon/bow/magic_bow.base.111.png, weapon/bow/bow.base.111.png,
+weapon/bow/magic_bow.base.112.png, weapon/bow/magic_bow.base.113.png,
+weapon/bow/magic_bow.base.114.png, weapon/bow/arrow.base.171.png,
+weapon/bow/reflexbow_bone.base.111.png, weapon/bow/elven_bow.base.111.png,
+weapon/artifact/mournblade.base.111.png, weapon/artifact/bonecrush.base.111.png,
+weapon/artifact/harakiri.base.111.png, weapon/artifact/skullcleav.base.111.png,
+weapon/artifact/skullcleav.base.112.png, weapon/artifact/skullcleav.base.113.png,
+weapon/artifact/skullcleav.base.114.png, weapon/artifact/dragonslay.base.111.png,
+weapon/artifact/Kdagger/k_dagger.base.111.png,
+weapon/artifact/deathbring.base.111.png,
+weapon/artifact/UW_Sword/uw_sword.base.111.png,
+weapon/artifact/UW_Sword/uw_sword.base.112.png,
+weapon/artifact/UW_Sword/uw_sword.base.113.png,
+weapon/artifact/UW_Sword/uw_sword.base.114.png,
+weapon/artifact/UW_Sword/uw_sword.base.115.png,
+weapon/artifact/defender.base.111.png, weapon/artifact/excalibur.base.111.png,
+weapon/artifact/ChaosSword/CSword.base.118.png,
+weapon/artifact/ChaosSword/CSword.base.119.png,
+weapon/artifact/ChaosSword/CSword.base.111.png,
+weapon/axe/brdaxe_1.base.111.png, weapon/axe/brdaxe_1.base.113.png,
+weapon/axe/brdaxe_1.base.114.png, weapon/axe/axe_5.base.111.png,
+weapon/sword/rapier.base.111.png, weapon/sword/serp_sword.base.111.png,
+weapon/sword/bsword_1.clsc.111.png
+Losslessly recompress some PNG images for smaller size to reduce the bandwidth
+needed for sending images to clients.
+
 player/race/dwarf_p.arc, player/race/halfling.arc, player/race/pl_half_orc.arc
 Add "race" to player races missing it. Based on what races the equivalent
 monsters have.
