@@ -1,5 +1,39 @@
 Changes for SVN top of tree:
 
+river/river_48.base.311.png, river/river_38.base.111.png,
+river/river_48.base.211.png, river/branch_135.base.111.png,
+river/branch_145.base.211.png, connect/Garden_gate/gard_gate.base.111.png,
+connect/Garden_gate/gard_gate.base.112.png,
+connect/Garden_gate/gard_gate.base.113.png,
+connect/Garden_gate/gard_gate.base.114.png, connect/Doors/mdoor.base.111.png,
+connect/Doors/mdoor.base.112.png, connect/Doors/mdoor.base.113.png,
+connect/Doors/mdoor.base.114.png, connect/Doors/sdoor.base.111.png,
+connect/Doors/sdoor.base.112.png, connect/Doors/sdoor.base.113.png,
+connect/Doors/sdoor.base.114.png, connect/Doors/wdoor.base.111.png,
+connect/Doors/wdoor.base.112.png, connect/Doors/wdoor.base.113.png,
+connect/Doors/wdoor.base.114.png, connect/cwallsec_mural_1.base.111.png,
+connect/cwallsec_mural_1.base.112.png, connect/cwallsec_mural_1.base.113.png,
+connect/cwallsec_mural_1.base.114.png, connect/cwallsec_mural_1.base.116.png,
+connect/cwallsec_mural_1.base.117.png, connect/cwallsec_mural_1.base.118.png,
+connect/Casino/slotmachine1.base.111.png,
+connect/Casino/slotmachine1.base.112.png,
+connect/Casino/slotmachine2.base.111.png,
+connect/Casino/slotmachine2.base.112.png,
+connect/Casino/slotmachine3.base.111.png,
+connect/Casino/slotmachine3.base.112.png, connect/cwallsec.base.118.png,
+connect/Gates/spikes.base.116.png, connect/Gates/iron_gate1.base.112.png,
+connect/Gates/iron_gate2.base.114.png, connect/Gates/gate_1.base.116.png,
+connect/Gates/gate_1.base.117.png, connect/Gates/gate_2.base.113.png,
+connect/Gates/gratedoor1.base.111.png, connect/Spinner/spinner.base.115.png,
+connect/Spinner/spinner.base.117.png, connect/Spinner/spinner.clsc.111.png,
+connect/Spinner/spinner.clsc.112.png, connect/Spinner/spinner.clsc.115.png,
+connect/Spinner/spinner.clsc.117.png, connect/Spinner/spinner.base.11D.png,
+connect/Spinner/spinner.clsc.11D.png, connect/Spinner/spinner.base.111.png,
+connect/Spinner/spinner.base.112.png
+Losslessly recompress some PNG images for smaller size to reduce the bandwidth
+needed for sending images to clients.
+Arvid Norlander 2009-01-25
+
 misc/bones2.base.111.png, misc/chalice_bro.base.112.png,
 misc/boulder.base.111.png, misc/chalice_bro.base.114.png,
 misc/cannon_3.base.111.png, misc/icecube.base.111.png,
