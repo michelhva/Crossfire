@@ -1,5 +1,27 @@
 Changes for SVN top of tree:
 
+transport/biggalleon.clsc.x11.png, transport/turningboat.base.x11.png,
+transport/turningboat.base.x21.png, transport/turningboat.base.x31.png,
+transport/turningboat.base.x41.png, transport/turningboat.base.x51.png,
+transport/turningboat.base.x61.png, transport/turningboat.base.x71.png,
+transport/turningboat.base.x81.png, readable/scrollr.base.111.png,
+readable/card_cup.base.111.png, flesh/demon/demon_head.base.111.png,
+flesh/human/corpse.base.111.png, flesh/human/tooth.base.111.png,
+flesh/human/head.base.111.png, flesh/human/skin.base.111.png,
+flesh/human/foot.base.111.png, flesh/human/finger.base.111.png,
+flesh/human/corpse1.base.111.png, flesh/dragon/dragon_eye.base.111.png,
+flesh/dragon/dragon_orange_scale.base.111.png,
+flesh/dragon/dragon_wing.base.111.png, flesh/dragon/dragon_claw.base.111.png,
+flesh/goblin/goblin_head.base.111.png, flesh/misc/bat_wing.base.111.png,
+flesh/misc/behold_eye.base.111.png, flesh/misc/residue.base.111.png,
+flesh/misc/serpent_skin.base.111.png, flesh/generic/eye.base.111.png,
+flesh/generic/big_eye.base.111.png, flesh/generic/heart.base.111.png,
+flesh/generic/eyes.base.111.png, flesh/generic/hide_black.base.111.png,
+flesh/generic/hide_brown.base.111.png
+Losslessly recompress some PNG images for smaller size to reduce the bandwidth
+needed for sending images to clients.
+Arvid Norlander 2009-01-25
+
 armour/bracers/bracersdex.base.111.png, armour/bracers/bracers_ac.base.111.png,
 armour/mail/mithril_ar_ele.clsc.111.png,
 armour/mail/mithril_ar_ele.clsc.112.png,
