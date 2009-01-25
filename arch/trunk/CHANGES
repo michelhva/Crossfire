@@ -1,5 +1,40 @@
 Changes for SVN top of tree:
 
+armour/bracers/bracersdex.base.111.png, armour/bracers/bracers_ac.base.111.png,
+armour/mail/mithril_ar_ele.clsc.111.png,
+armour/mail/mithril_ar_ele.clsc.112.png,
+armour/mail/mithril_ar_ele.clsc.113.png, armour/mail/wdsm.base.113.png,
+armour/mail/dragonmail.base.111.png, armour/mail/ring_mail2.base.111.png,
+armour/mail/b_plate_mail.base.111.png, armour/mail/robe_midnight.base.111.png,
+armour/mail/robe_midnight.base.112.png, armour/mail/robe_midnight.base.113.png,
+armour/mail/wdsm.clsc.113.png, armour/mail/mithril_ar.base.111.png,
+armour/mail/mithril_ar.base.112.png, armour/mail/mithril_ar.base.113.png,
+armour/mail/mithril_ar_ele.base.111.png,
+armour/mail/mithril_ar_ele.base.112.png,
+armour/mail/mithril_ar_ele.base.113.png, armour/mail/robe_midnight.clsc.111.png,
+armour/mail/robe_midnight.clsc.112.png, armour/mail/robe_midnight.clsc.113.png,
+armour/mail/Pdragonmail.base.111.png, armour/mail/Pdragonmail.base.112.png,
+armour/mail/mithril_ar.clsc.111.png, armour/mail/mithril_ar.clsc.112.png,
+armour/mail/mithril_ar.clsc.113.png, armour/boots/high_boots_w.base.111.png,
+armour/gauntlets/gloves_w.base.111.png,
+armour/gauntlets/shining_finger.base.111.png,
+armour/gauntlets/shining_finger.base.112.png,
+armour/gauntlets/gloves.base.111.png, armour/gauntlets/gloves_b.base.111.png,
+armour/gauntlets/god_finger.base.111.png,
+armour/gauntlets/god_finger.base.112.png, armour/gauntlets/gloves.clsc.111.png,
+armour/girdle/girdle_dam.base.111.png, armour/girdle/girdle_dam.base.112.png,
+armour/shield/eyeshield.base.111.png, armour/shield/reflector.base.111.png,
+armour/shield/frostshield.base.111.png, armour/shield/shield2.base.111.png,
+armour/shield/DShield.base.111.png, armour/shield/DShield.base.112.png,
+armour/shield/DShield.base.113.png, armour/shield/small_shie.base.111.png,
+armour/cloak/magic_resist.base.111.png, armour/helmet/crown_white.base.111.png,
+armour/helmet/helmet2.base.111.png, armour/helmet/crown_gray.base.111.png,
+armour/helmet/crown_dark.base.111.png, armour/helmet/helmet3.base.111.png,
+armour/helmet/crown_r.base.111.png, armour/helmet/crown2.base.111.png
+Losslessly recompress some PNG images for smaller size to reduce the bandwidth
+needed for sending images to clients.
+Arvid Norlander 2009-01-25
+
 light/lantern2.base.111.png, light/lantern_off.base.111.png,
 light/lantern.base.111.png, light/torch_lit1.base.111.png,
 light/torch_lit2.base.111.png, light/lantern2_off.base.111.png,
