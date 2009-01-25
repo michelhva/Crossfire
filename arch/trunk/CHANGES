@@ -1,5 +1,38 @@
 Changes for SVN top of tree:
 
+light/lantern2.base.111.png, light/lantern_off.base.111.png,
+light/lantern.base.111.png, light/torch_lit1.base.111.png,
+light/torch_lit2.base.111.png, light/lantern2_off.base.111.png,
+potion/potionint.clsc.111.png, potion/potioncon.base.111.png,
+potion/potionstr.clsc.111.png, potion/potioninv.base.111.png,
+potion/potion_empty.base.111.png, potion/potionpow.base.111.png,
+potion/potionfir.base.111.png, potion/potiondex.base.111.png,
+potion/potioncon.clsc.111.png, potion/potionhero.base.111.png,
+potion/potionhea.base.111.png, potion/potionimp.clsc.111.png,
+potion/potionwis.base.111.png, potion/potioncha.clsc.111.png,
+potion/potioninv.clsc.111.png, potion/potioncol.base.111.png,
+potion/potionpow.clsc.111.png, potion/potionint.base.111.png,
+potion/potionfir.clsc.111.png, potion/potiondex.clsc.111.png,
+potion/potionmag.base.111.png, potion/potionstr.base.111.png,
+shop/bank_west.base.x11.png, shop/store_alch.base.x11.png,
+shop/store_magi.base.x11.png, shop/store_magi_fant.base.x11.png,
+shop/store_weap.clsc.x11.png, shop/store_weap_east.base.x11.png,
+shop/store_armo_east.base.x11.png, shop/store_magi_northwest.base.x11.png,
+shop/crea_serp_c.base.111.png, shop/Floors/shop_empty.base.111.png,
+shop/Floors/shop_gener.base.111.png, shop/Floors/shop_speci.base.111.png,
+shop/Floors/shop_amule.base.111.png, shop/Floors/shop_weapo.base.111.png,
+shop/Floors/shop_scrol.base.111.png, shop/Floors/shop_armou.base.111.png,
+shop/Floors/shop_mineral.base.111.png, shop/Floors/shop_gems.base.111.png,
+shop/Floors/shop_throw.base.111.png, shop/Floors/shop_books.base.111.png,
+shop/Floors/shop_alchemy.base.111.png, shop/Floors/shop_food.base.111.png,
+shop/store_magi_east.base.x11.png, shop/bank.base.x11.png,
+shop/store_magi_west.base.x11.png, shop/store_gene_fant.base.x11.png,
+inorganic/dust_effect.base.111.png, inorganic/dust_effect.base.112.png,
+inorganic/dust_effect.base.113.png
+Losslessly recompress some PNG images for smaller size to reduce the bandwidth
+needed for sending images to clients.
+Arvid Norlander 2009-01-25
+
 exit/oakdoor_2.base.111.png, exit/exit.clsc.111.png, exit/ruins.base.111.png,
 exit/volcano_lo.base.x11.png, exit/magic_portal/magic_portal.base.11H.png,
 exit/magic_portal/magic_portal.base.11I.png,
