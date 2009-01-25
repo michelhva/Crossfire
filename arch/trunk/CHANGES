@@ -1,5 +1,36 @@
 Changes for SVN top of tree:
 
+exit/oakdoor_2.base.111.png, exit/exit.clsc.111.png, exit/ruins.base.111.png,
+exit/volcano_lo.base.x11.png, exit/magic_portal/magic_portal.base.11H.png,
+exit/magic_portal/magic_portal.base.11I.png,
+exit/magic_portal/magic_portal.base.116.png,
+exit/magic_portal/magic_portal.base.117.png,
+exit/magic_portal/magic_portal.base.119.png,
+exit/magic_portal/magic_portal.base.11A.png,
+exit/Up_down/stair3_ystone_up.base.111.png,
+exit/Up_down/stair3_ystone_do.base.111.png,
+exit/Up_down/cave_stair_up_2.base.111.png, exit/Up_down/stair_up_2.base.111.png,
+exit/Pentagram/pentagram.base.x11.png, exit/smallpark.base.111.png,
+exit/Town/town_3.base.111.png, exit/Town/town_3.base.211.png,
+exit/Town/town_5.base.111.png, exit/Town/town_5.base.211.png,
+exit/Town/town_7.base.111.png, exit/Town/town_5.base.311.png,
+exit/Town/town_7.base.211.png, exit/Town/town_5.base.411.png,
+exit/Town/town_7.base.311.png, exit/Town/town_7.base.411.png,
+exit/Town/town_5.base.611.png, exit/Town/town_7.base.511.png,
+exit/Town/town_7.base.611.png, exit/Town/town_7.base.811.png,
+exit/Town/town_7.base.911.png, exit/Town/town_2.base.211.png,
+exit/Town/town_4.base.111.png, exit/Town/town_4.base.211.png,
+exit/Town/town_4.base.311.png, exit/Town/town_6.base.111.png,
+exit/Town/town_4.base.411.png, exit/Town/town_6.base.211.png,
+exit/Town/town_6.base.311.png, exit/Town/town_6.base.411.png,
+exit/Town/town_6.base.511.png, exit/Town/town_6.base.611.png,
+exit/volcano_hi.base.x11.png, exit/Ladder/ladder_up.base.111.png,
+exit/Ladder/ladder2_up.base.111.png, exit/exit.base.111.png,
+exit/exit.base.113.png, exit/exit.base.115.png, exit/exit.base.117.png
+Losslessly recompress some PNG images for smaller size to reduce the bandwidth
+needed for sending images to clients.
+Arvid Norlander 2009-01-25
+
 weapon/other/saw.base.111.png, weapon/club/quarters.base.111.png,
 weapon/bow/magic_bow.base.111.png, weapon/bow/bow.base.111.png,
 weapon/bow/magic_bow.base.112.png, weapon/bow/magic_bow.base.113.png,
@@ -26,6 +57,7 @@ weapon/sword/rapier.base.111.png, weapon/sword/serp_sword.base.111.png,
 weapon/sword/bsword_1.clsc.111.png
 Losslessly recompress some PNG images for smaller size to reduce the bandwidth
 needed for sending images to clients.
+Arvid Norlander 2009-01-25
 
 player/race/dwarf_p.arc, player/race/halfling.arc, player/race/pl_half_orc.arc
 Add "race" to player races missing it. Based on what races the equivalent
