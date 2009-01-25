@@ -1,5 +1,6 @@
 Object dwarf_player
 name dwarf
+race dwarf
 randomitems dwarf_player_items
 face dwarf_p.151
 msg

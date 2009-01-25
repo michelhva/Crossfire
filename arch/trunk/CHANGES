@@ -1,5 +1,10 @@
 Changes for SVN top of tree:
 
+player/race/dwarf_p.arc, player/race/halfling.arc, player/race/pl_half_orc.arc
+Add "race" to player races missing it. Based on what races the equivalent
+monsters have.
+Arvid Norlander 2009-01-25
+
 disease/tapeworms.arc
 Removed linebreaks from disease message so the breaks can be done by the client.
 Kevin Bulgrien 2008-12-20
