@@ -1,5 +1,6 @@
 Object halfling_player
 name halfling
+race halfling
 randomitems halfling_player_items
 face halfling.151
 msg

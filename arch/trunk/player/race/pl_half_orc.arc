@@ -1,5 +1,6 @@
 Object pl_half_orc
 name half orc
+race goblin
 randomitems half_orc_player_items
 face pl_half_orc.151
 msg
