@@ -39,9 +39,9 @@ import string
 from CFTimeOfDay import TimeOfDay
 import cjson
 parameters = cjson.decode(Crossfire.WhatIsEvent().Message)
-inverse = parameters.has_key("inverse") and parameters["inverse"] == True
+inverse = "inverse" in parameters and parameters["inverse"] == True
 Crossfire.SetReturnValue(not inverse)
-if not parameters.has_key("match"):
+if not "match" in parameters:
     Crossfire.Log(Crossfire.LogError,"Script filter.py didn't get a 'match' parameter. Only got %s" %parameters)
 elif string.lower(parameters["match"]) == "one":
     if TimeOfDay().matchAny(parameters["when"]):

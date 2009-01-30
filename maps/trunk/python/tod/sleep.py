@@ -49,9 +49,9 @@ import cjson
 event = Crossfire.WhatIsEvent()
 parameters = cjson.decode(event.Message)
 alreadymatched = (event.Value!=0)
-inverse = parameters.has_key("inverse") and parameters["inverse"] == True
+inverse = "inverse" in parameters and parameters["inverse"] == True
 match = False
-if not parameters.has_key("match"):
+if not "match" in parameters:
     Crossfire.Log(Crossfire.LogError,"Script sleep.py didn't get a 'match' parameter. Only got %s" %parameters)
 elif string.lower(parameters["match"]) == "one":
     match=TimeOfDay().matchAny(parameters["when"]) != inverse

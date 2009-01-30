@@ -36,7 +36,7 @@ class CFMail:
 
 	def send(self, type, toname, fromname, message):
 		# type: 1=mailscoll, 2=newsletter, 3=mailwarning
-		if not self.maildb.has_key(toname):
+		if not toname in self.maildb:
 			self.maildb[toname]=[[type,fromname,message]]
 		else:
 			temp=self.maildb[toname]
@@ -44,14 +44,14 @@ class CFMail:
 			self.maildb[toname]=temp
 
 	def receive(self, toname):
-		if self.maildb.has_key(toname):
+		if toname in self.maildb:
 			elements=self.maildb[toname]
 			del self.maildb[toname]
 			return elements
 
 
 	def countmail(self, toname):
-		if self.maildb.has_key(toname):
+		if toname in self.maildb:
 			return len(self.maildb[toname])
 		else:
 			return 0

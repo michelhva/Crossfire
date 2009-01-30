@@ -132,7 +132,7 @@ speech = Dialog(player, npc, location)
 index = 0;
 
 for jsonRule in parameters["rules"]:
-    if (jsonRule.has_key("connected")):
+    if ("connected" in jsonRule):
         rule = DialogRule(jsonRule["match"],
                           jsonRule["pre"],
                           jsonRule["msg"],

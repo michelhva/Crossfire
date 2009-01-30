@@ -135,7 +135,7 @@ elif text[0] == 'mailwarning':
 		whoami.Say('You need to be DM to be able to use this command')
 
 
-elif packages.has_key(text[0]):
+elif text[0] in packages:
 	if len(text) == 2:
 		if log.info(text[1]):
 			price = packages[text[0]][0]
