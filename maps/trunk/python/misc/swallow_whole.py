@@ -18,7 +18,7 @@ if  (r <= 0.26):
 	isplayer = 2
 
     if isplayer == 1:
-	me.Map.Print("\nYou are swallowed whole by the %s!" % (worm.Name)) 
+	me.Map.Print("\nYou are swallowed whole by the %s!" % (worm.Name))
 	map = Crossfire.ReadyMap(eatmap)
 	if map:
 	    me.Teleport(map, eat_x, eat_y)
@@ -27,10 +27,10 @@ if  (r <= 0.26):
 
     elif isplayer == 0:
 	me.Map.Print("\nThe %s is swallowed whole by the %s!" % (me.Name, worm.Name))
-    
+
 	while (me.Inventory is not None):
 	    me.Inventory.InsertInto(worm)
-    
+
 	mexists = Crossfire.WhoIsOther()
 	if mexists:
 	    me.Remove()
@@ -38,4 +38,3 @@ if  (r <= 0.26):
 	    worm.Map.Print('doesnt exist')
 else:
     me.Map.Print("\nThe %s misses the %s" % (worm.Name, me.Name))
-    

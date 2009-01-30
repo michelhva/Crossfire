@@ -39,7 +39,7 @@ def check_ingredients():
 	 arrives on the recipient (to avoid player picking up items)'''
 	mushroom = None
 	eggs = None
-	
+
 #	whoami.Say('before')
 	obj = whoami.Map.ObjectAt(recipient_x, recipient_y)
 	while obj != None:
@@ -57,29 +57,29 @@ def check_ingredients():
 			break
 		obj = obj.Above
 	#whoami.Say('after')
-	
+
 	#if mushroom != None:
 	#	whoami.Say('got mushroom')
 	#if eggs != None:
 	#	whoami.Say('got eggs')
-	
+
 	if mushroom == None or eggs == None or eggs.Quantity < eggs_count:
 		if whoami.ReadKey(key_status) == st_getting:
 			whoami.Say('Haha, you tried to trick me!')
 			whoami.WriteKey(key_status, '', 1)
 		return
-	
+
 	if whoami.ReadKey(key_status) != st_getting:
 		whoami.Say('Oh, great, you found what I need to make my special caramel!')
 		whoami.WriteKey(key_status, st_getting, 1);
 		return
-	
+
 	# if called here, Farnass moved to the recipient, and can pick the ingredients
 	whoami.Map.Print('%s expertly opens the frypan with a leg, and grabs the ingredient using two sticks in his mouth!'%whoami.Name, color)
-	
+
 	mushroom.Quantity = mushroom.Quantity - 1
 	eggs.Quantity = eggs.Quantity - eggs_count
-	
+
 	Crossfire.SetReturnValue(1)
 	whoami.WriteKey(key_status, st_stove, 1)
 
@@ -87,7 +87,7 @@ def end_cooking(success):
 	''' Everything is finish, let's decide if cooking was successful or not.'''
 	whoami.WriteKey(key_status, '', 1)
 	whoami.WriteKey(key_cooking_step, '', 1)
-	
+
 	if success == 0:
 		return
 	if random.randint(1, 100) < failure_chance:
@@ -113,7 +113,7 @@ def clean_check():
 
 def move_cook():
 	'''Main moving routine.'''
-	
+
 	#whoami.Say('move')
 	status = whoami.ReadKey(key_status)
 	if status == st_getting:
@@ -125,16 +125,16 @@ def move_cook():
 		elif m == 2:
 			whoami.Say('Get off my way! You want me to cook this caramel or what?')
 		return
-	
+
 	if status == st_cooking:
 		clean_check()
 		Crossfire.SetReturnValue(1)
-		
+
 		if whoami.X != stove_x or whoami.Y != stove_y:
 			whoami.Say('You fool! The ingredients are wasted, now!')
 			end_cooking(0)
 			return
-		
+
 		step = int(whoami.ReadKey(key_cooking_step)) - 1
 		if step == 0:
 			end_cooking(1)
@@ -151,7 +151,7 @@ def move_cook():
 			whoami.WriteKey(key_cooking_step, str(random.randint(60, 69)), 1)
 		whoami.WriteKey(key_cooking_step, str(step), 1)
 		return
-	
+
 	if status == st_stove:
 		clean_check()
 		move = CFMove.get_object_to(whoami, stove_x, stove_y)
@@ -163,7 +163,7 @@ def move_cook():
 			whoami.Say('Get off my way, I need to get to the stove!')
 		Crossfire.SetReturnValue(1)
 		return
-	
+
 	d = Crossfire.GetPrivateDictionary()
 	if d.has_key(key_need_check):
 		whoami.Map.Print('You see %s look at the frypan.'%whoami.Name, color)

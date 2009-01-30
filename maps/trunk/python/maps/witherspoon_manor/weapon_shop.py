@@ -25,19 +25,19 @@ def do_give():
 	if whoisother.ReadKey('special_item') != 'ghost_dagger':
 		whoami.Say('Nice %s.'%whoisother.Name)
 		return
-	
+
 	whoami.Say('Oh, this looks like a really interesting dagger.')
 	pl.Message('The owner takes the %s and starts examining it carefully.'%whoisother.Name, color)
 	whoami.CreateTimer(8, 1)
 	whoami.WriteKey('examining_item', '1', 1)
 	whoami.WriteKey('examining_for', pl.Name, 1)
-	
+
 	return
 
 def do_timer():
 	'''Owner finished examining the item.'''
 	whoami.WriteKey('examining_item', '0', 1)
-	
+
 	#let's see if the player is still around
 	pl = Crossfire.FindPlayer(whoami.ReadKey('examining_for'))
 	if pl == None:
@@ -58,4 +58,3 @@ elif event.Subtype == Crossfire.EventType.TIME:
 	if whoami.ReadKey('examining_item') == '1':
 		#No moving while examining.
 		Crossfire.SetReturnValue(1)
-	

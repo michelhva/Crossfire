@@ -357,4 +357,3 @@ class Dialog:
                 finished = finished + ";"
             finished = finished + key + ":" + value
         self.__character.WriteKey("dialog_" + self.__location, finished, 1)
-

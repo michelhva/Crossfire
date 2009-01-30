@@ -32,4 +32,3 @@ if total > 0:
 	activator.Write('You have some mail waiting for you')
 else:
 	activator.Write('No mail...')
-

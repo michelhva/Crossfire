@@ -15,7 +15,7 @@ def smoke():
 	if what == None:
 		who.Write('You don\'t have anything to smoke.', color)
 		return
-	
+
 	what.Quantity = what.Quantity - 1
 	force = who.CreateObject('force_effect')
 	force.Speed = 0.1

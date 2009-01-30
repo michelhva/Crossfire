@@ -24,4 +24,3 @@ activator = Crossfire.WhoIsActivator()
 
 log = CFLog.CFLog()
 log.kick_update(activator.Name)
-

@@ -49,4 +49,3 @@ class SlotMachine:
 		elif limit < self.minpot:
 			self.slotdb[self.slotname] = self.minpot
 		return self.slotdb[self.slotname]
-

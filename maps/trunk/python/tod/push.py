@@ -23,18 +23,18 @@
 # It will behave as if a button was "pushed" when entering period
 # and "release" after the period. Typical use is to use it as
 # event_time on a living object (that objects that triggers
-# time events). 
-# This script ensure button remains pushed for all period, and 
+# time events).
+# This script ensure button remains pushed for all period, and
 # get release after period. This works even is map is loaded
-# in middle of period or map gets released from memory and put in 
-# cache. In those case, event will just ensure that "current" state 
+# in middle of period or map gets released from memory and put in
+# cache. In those case, event will just ensure that "current" state
 # correspond to expected state and correct status if needed.
 # Note: the event must be inside an object
 # which can find a path, using inventory, to a toplavel
-# object that is on a Map. 
-# 
+# object that is on a Map.
+#
 # exemple, to make an "push" starting at Morning and ending after Noon:
-# 
+#
 # arch event_time
 # title Python
 # slaying /python/tod/push.py
@@ -53,7 +53,7 @@ import Crossfire
 import string
 from CFTimeOfDay import TimeOfDay
 import cjson
-event = Crossfire.WhatIsEvent() 
+event = Crossfire.WhatIsEvent()
 parameters = cjson.decode(event.Message)
 alreadymatched = (event.Value!=0)
 connected = int(parameters["connected"])
@@ -83,4 +83,3 @@ if ( (not match) & alreadymatched):
     map = op.Map
     map.TriggerConnected(connected,0,Crossfire.WhoAmI())
     event.Value=0
-

@@ -62,12 +62,12 @@ def handle_move():
 		if has_floor(x + dir_x[d], y + dir_y[d], floor) == True:
 			if me.Move(d) == 0:
 				continue
-			
+
 			if pl != None:
 				pl.Move(d)
 			done = True
 			break
-	
+
 	if done == False:
 		me.WriteKey(key_direction, '', 1)
 		me.WriteKey(key_follow, '', 1)
@@ -81,24 +81,24 @@ def handle_say():
 			me.WriteKey(key_follow, '', 1)
 			me.Map.Print('The %s stops moving.'%me.Name)
 		return
-	
+
 	want_dir = -1
-	
+
 	for d in Crossfire.DirectionName.keys():
 		if msg == Crossfire.DirectionName[d].lower():
 			want_dir = d
 			break
-	
+
 	if want_dir == -1:
 		return
-	
+
 	floor = find_floor(me.X, me.Y)
 	if floor == '':
 		return
-	
+
 	if me.ReadKey(key_direction) == '':
 		me.Map.Print('The %s starts moving!'%me.Name)
-	
+
 	me.WriteKey(key_direction, str(want_dir), 1)
 	me.WriteKey(key_follow, floor, 1)
 

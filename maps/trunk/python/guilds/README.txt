@@ -168,8 +168,3 @@ Update 04-11-21
 
 Ok, I've done a bit more work and implemented guild ranks, status and various other gizmos. I changed the list function in CFDataFile to use dictionary keys instead of iteration because python 2.1 does not have dictionary sequence method and as I've said I want to keep crossfire 2.1 compatible (at least till Debian Sarge is mainstream anyway). I've also started on python scripts for buying a guild, a guildhouses info board which will show scores and stuff and a tiny bit of the Dues stuff. I think I would like to place some 'tokens' for some of the bigger guild enhancements (like the kennels, the garden, additional levels...) on the HQ map itself and make them accessable (a scripted lever perhaps) only when a certain number of dues have been paid by the members (many many imperials perhaps?) Naturally other things should be quest items.
 I noticed that the guild master message board was changed to a second guild controll station and the guild message board in the HQ was changed to a GM message board - perhaps this was a misunderstanding? The GM board is for GM messages and the other is for the regular members. Also the cauldrons on the second floor don't seem to have a way to buy entry anymore. I don't know if the charging room should be key driven because keys are easily lended out and can't be recovered unless the lendee want's to return them, maybe we can use Rank for this (only guildsmen or above get access) or use a permemant maker instead of a key. I also want to do away with the keys altogether and make the code initiate the three guild masters when the guild I bought.
-
-
-
-
-

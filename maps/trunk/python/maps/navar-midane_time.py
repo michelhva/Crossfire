@@ -17,24 +17,24 @@ else:
 	on_map = Crossfire.GetPrivateDictionary()['on_map']
 
 def check_player(player):
-	
+
 	if player in on_map:
 		return
-	
+
 	on_map.append(player)
-	
+
 	if not data.exist(player.Name):
 		who.Say('Well, welcome, stranger.')
 		record = { '#' : player.Name,
 		'state' : 'seen' }
 		data.put_record(record)
 		return
-	
+
 	record = data.get_record(player.Name)
 	if record['state'] == 'seen':
 		who.Say('Welcome back, stranger.')
 		return
-	
+
 	who.Say('Welcome back, %s'%player.Name)
 
 def on_time():

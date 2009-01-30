@@ -70,7 +70,7 @@ if text[0] == 'help' or text[0] == 'yes':
 	for pack in packages.keys():
 		# weight is in grams, so need to convert.
 		whoami.Say('- %s (max weight: %d kg, price: %d platinum)'%(pack, packages[pack][1] / 1000, packages[pack][0]))
-	
+
 	whoami.Say('To send a package to a friend, say \'send <friend\'s name>\'.')
 	whoami.Say('To receive your packages, say \'receive\'.')
 

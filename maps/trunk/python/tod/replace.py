@@ -20,12 +20,12 @@
 # Uses JSON notation for parameters
 # This script make the object is is attached to swap at
 # given periods of day with a specifc object in the event's inventory
-# To use it, give this event's parameter the name of 
+# To use it, give this event's parameter the name of
 # period where the swap is active. Put in the inventiry the swapped object
 # The swap can occur for objects in map and for object in other object
-# 
+#
 # exemple
-# 
+#
 # arch event_time
 # title Python
 # slaying /python/tod/replace_all_periods.py
@@ -63,7 +63,7 @@ if ( match != alreadymatched ):
     event = Crossfire.WhatIsEvent()
     current = Crossfire.WhoAmI()
     future = event.Inventory
-    # we do not want to repace a monster/anything useable in game by a subevent on the event. 
+    # we do not want to repace a monster/anything useable in game by a subevent on the event.
     # seems for technical reasons, EVENT object have a destroy subevent. So let's just
     # ignore subevents
     while ( (future != None) & (future.Type == Crossfire.Type.EVENT_CONNECTOR)):

@@ -27,7 +27,7 @@
 # arch guildmaster
 # name Sigmund
 # msg
-# 
+#
 # endmsg
 # x 11
 # y 7
@@ -150,4 +150,3 @@ for jsonRule in parameters["rules"]:
 
 if speech.speak(Crossfire.WhatIsMessage()) == 0:
     Crossfire.SetReturnValue(1)
-

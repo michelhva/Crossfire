@@ -33,7 +33,7 @@ class CFCampfire:
 	def say(self):
 		'''Called when the player talks to the firecamp.'''
 		w = Crossfire.WhoAmI()
-		
+
 		if ( Crossfire.WhatIsMessage() == 'story' ):
 			if w.ReadKey(key_status) == '':
 				w.Say('So you want a story, he... All right.')
