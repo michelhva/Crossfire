@@ -60,5 +60,3 @@ else:
     message = 'Guild Join Error, please notify a DM'
 
 whoami.Say(message)
-
-

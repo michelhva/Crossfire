@@ -24,16 +24,16 @@ key_prefix = 'experience_rewarder_'
 def do_give_exp():
 	pl = Crossfire.WhoIsActivator()
 	evt = Crossfire.WhatIsEvent()
-	
+
 	if evt.Race != None and evt.Race != '':
 		if pl.ReadKey(key_prefix + evt.Race) != '':
 			return
 		pl.WriteKey(key_prefix + evt.Race, 'used', 1)
-	
+
 	if evt.Skill == None or evt.Skill == '':
 		pl.AddExp(evt.Exp)
 		return
-	
+
 	wc = evt.WC
 	if wc < 0 or wc > 2:
 		wc = 1

@@ -19,12 +19,12 @@
 # The author can be reached via e-mail at tchize+cfpython@gmail.com
 #
 # Small helper class. Instanciate with
-# transform = CFMapTransformer(key) 
-# or 
+# transform = CFMapTransformer(key)
+# or
 # transform = CFMapTransformer(key, map)
 # default map value is to use The map of current event.
 #
-# The key is used to keep track of transform. Different transforms 
+# The key is used to keep track of transform. Different transforms
 # on same map should use different key to prevent mixup
 
 # transformAll(criteria,whatTo)
@@ -33,11 +33,11 @@
 # This will scan the whole map for item's whose
 # "name" are in the list of criteria and transform
 # the to one of the whatTo objects, choosen randomly.
-# original object is kept in inventory of newly created 
+# original object is kept in inventory of newly created
 # item and can be restored from there
 # untransformAll()
 # this no argument method cancel all changes that have been
-# made by transformAll 
+# made by transformAll
 import Crossfire
 import random
 
@@ -54,7 +54,7 @@ def MakeIdentifier(key):
     m.Name= key
     m.Speed=0
     return m
-    
+
 class CFMapTransformer:
     key = None
     cfmap = None
@@ -67,7 +67,7 @@ class CFMapTransformer:
             while (o.Env):
                 o = o.Env
             self.cfmap = o.Map
-            
+
     def transformAll(self, criteria, whatTo):
         mustClean = False
         if (not isinstance (criteria,list)):

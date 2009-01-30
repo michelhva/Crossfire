@@ -48,7 +48,7 @@ def return_to_bed():
 		# Ok, this is real bad. Let player handle the situation - worse case, call to DMs or WoR manually.
 		act.Message('The %s whines really loudly.'%l.Name)
 		return
-	
+
 	act.Teleport(dest, act.BedX, act.BedY)
 
 def do_back():
@@ -57,18 +57,18 @@ def do_back():
 	y = l.ReadKey('banquet_y')
 	mn = l.ReadKey('banquet_map')
 	rw = l.ReadKey('banquet_rw')
-	
+
 	l.WriteKey('banquet_x', '', 0)
 	l.WriteKey('banquet_y', '', 0)
 	l.WriteKey('banquet_map', '', 0)
 	l.WriteKey('banquet_rw', '', 0)
-	
+
 	if x == '' or y == '' or mn == '':
 		# Logic error, but can't be helped - teleport player back to his bed of reality
 		act.Message('You feel a distorsion of reality!')
 		return_to_bed()
 		return
-	
+
 	# find and remove statue in the map
 	dest = Crossfire.ReadyMap(mn)
 	if (dest == None):
@@ -76,7 +76,7 @@ def do_back():
 		act.Message('The %s whines something. You barely understand it can\'t take you back to your starting point.'%l.Name)
 		return_to_bed()
 		return
-	
+
 	# Remove statue - let's assume it's found, or was removed due to map reset.
 	st = dest.ObjectAt(int(x), int(y))
 	while st != None:
@@ -85,27 +85,27 @@ def do_back():
 			continue;
 		st.Remove()
 		break;
-	
+
 	act.Message('You feel a powerful force engulf you.')
 	act.Teleport(dest, int(x), int(y))
 
 def do_banquet():
 	'''Teleports the player to the banquet map, if not used since one day. '''
-	
+
 	now = str(Crossfire.GetTime()[0]) + '-' + str(Crossfire.GetTime()[1]) + '-' + str(Crossfire.GetTime()[2])
-	
+
 	l = Crossfire.WhoAmI()
 	act = Crossfire.WhoIsActivator()
-	
+
 	last = l.ReadKey('banquet_last')
-	
-	
+
+
 	if (last == now):
 		act.Message('You read the %s but nothing happens.'%l.Name)
 		return;
-	
+
 	l.WriteKey('banquet_last', now, 1)
-	
+
 	# map generation
 	m = Crossfire.CreateMap(size_x, size_y)
 	m.Path = os.path.join(Crossfire.ScriptName(), Crossfire.WhoIsActivator().Name)
@@ -116,7 +116,7 @@ def do_banquet():
 		for y in range(size_y):
 			fl = Crossfire.CreateObjectByName(floor)
 			fl.Teleport(m, x, y)
-	
+
 	# Put walls.
 	wall = get_one(walls)
 	# top left
@@ -150,22 +150,22 @@ def do_banquet():
 			fo = Crossfire.CreateObjectByName(get_one(foods))
 			fo.GodGiven = 1
 			fo.Teleport(m, x + 1, y + 1)
-	
+
 	# Store player's current location
 	x = act.X
 	y = act.Y
 	im = act.Map
 	rw = get_one(replace_with)
-	
+
 	l.WriteKey('banquet_x', str(x), 1)
 	l.WriteKey('banquet_y', str(y), 1)
 	l.WriteKey('banquet_map', im.Path, 1)
 	l.WriteKey('banquet_rw', rw, 1)
-	
+
 	# Teleport
 	act.Message('You feel grabbed by some powerful force.')
 	act.Teleport(m, int(( size_x - 1 ) / 2), int( size_y - 1 ) / 2)
-	
+
 	# Keep free spot by putting a statue
 	statue = im.CreateObject(rw, x, y)
 	statue.Name = '%s\'s statue'%act.Name

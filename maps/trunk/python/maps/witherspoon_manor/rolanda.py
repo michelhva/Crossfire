@@ -65,7 +65,7 @@ def move_to_chair():
 
 def explain():
 	'''explanation of the ghost story. Let Rolanda be still from now on.'''
-	
+
 	pl = Crossfire.FindPlayer(whoami.ReadKey('explaining_for'))
 	if pl == None:
 		# just in case someone else is around ^_-

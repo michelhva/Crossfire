@@ -25,4 +25,3 @@ if option:
         tag = activator.CreateInvisibleObjectInside(option)
         tag.Name=option
         #Crossfire.Log(Crossfire.LogDebug, "adding tag")
-

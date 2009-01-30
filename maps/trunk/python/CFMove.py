@@ -38,7 +38,7 @@ def coordinates_to_dir(x, y):
 		if (q < 242):
 			return 8 ;
 		return 7
-	
+
 	if (q < -242):
 		return 7
 	if (q < -41):

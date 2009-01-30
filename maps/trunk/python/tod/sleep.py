@@ -25,9 +25,9 @@
 # by a PC  will not all of sudden go to sleep. Also, remember that most moster
 # awaken and attack when a player is nearby. So effects of this script might be
 # limited.
-# 
+#
 # exemple
-# 
+#
 # arch event_time
 # title Python
 # slaying /python/tod/sleep.py
@@ -70,7 +70,6 @@ if ( match != alreadymatched ):
             current.Sleeping=0
             Crossfire.Log(Crossfire.LogDebug, "Awaken %s" %current.Name)
         else:
-            event.Value=1 
+            event.Value=1
             current.Sleeping=1
             Crossfire.Log(Crossfire.LogDebug, "Put %s to sleep" %current.Name)
-

@@ -54,5 +54,3 @@ else:
     message = 'Guild Purchase Error, please notify a DM'
 
 whoami.Say(message)
-
-

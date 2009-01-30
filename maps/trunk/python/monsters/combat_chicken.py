@@ -41,15 +41,15 @@ def move_chicken():
 	if chicken.Enemy != None:
 		# chicken won't let itself get killed easily!
 		chicken.WriteKey(key_attacked, '1', 1)
-	
+
 	if chicken.ReadKey(key_attacked) != '':
 		return
-	
+
 	Crossfire.SetReturnValue(1)
 	if chicken.Map.Darkness >= 3:
 		# too dark, night is for sleeping
 		return
-	
+
 	target = chicken.ReadKey(key_target)
 	if target != '':
 		x = int(target.split('|')[0])
@@ -93,7 +93,7 @@ def move_chicken():
 					break
 			if food != None:
 				break
-	
+
 	# nothing found, random walk
 	for test in [1, 10]:
 		dir = random.randint(1, 8)
@@ -101,6 +101,6 @@ def move_chicken():
 			chicken.Move(dir)
 			Crossfire.SetReturnValue(1)
 			return
-	
+
 
 move_chicken()

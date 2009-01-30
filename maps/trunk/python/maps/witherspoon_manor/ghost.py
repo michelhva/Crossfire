@@ -18,7 +18,7 @@ def warn_player(player, ghost):
 		player.Write('You feel a very powerful force gather around the %s! Your instinct tell you you\'d rather feel fast!'%ghost.Name)
 	else:
 		player.Write('You feel a really powerful force gather around the %s! Time to start fleeing, maybe?'%ghost.Name)
-	
+
 	drop = ghost.Map.CreateObject('reeking_urine', player.X, player.Y)
 	player.Write('You feel so frightened you can\'t control your bladder!')
 
@@ -26,7 +26,7 @@ def check_body(player, rule):
 	'''Did the player already dig?'''
 	if player.ReadKey('witherspoon_tomb') != 'dig':
 		return True
-	
+
 	return False
 
 def start_disappear(ghost, player):
@@ -35,27 +35,27 @@ def start_disappear(ghost, player):
 	ghost.CreateTimer(5, 1)
 	ghost.StandStill = True
 	player.Write('The %s starts fading...'%ghost.Name)
-	
+
 def found_body(player, rule):
 	'''Does the player have the body?'''
 	if player.ReadKey('witherspoon_tomb') != 'dig':
 		return False
-	
+
 	player.WriteKey('witherspoon_tomb', '', 1)
 	#reset our dialog anyway - the player did dig, so quest ends (nicely or badly)
 	player.WriteKey('dialog_witherspoon_ghost', '', 1)
-	
+
 	#try to find the body, if not found then get angry
 	body = player.CheckInventory('tortured body')
-	
+
 	ghost = Crossfire.WhoAmI()
-	
+
 	if body:
 		#all fine!
 		body.Remove()
 		start_disappearing(ghost, player)
 		return 1
-	
+
 	#oh oh, bad, ghost is getting angry!
 	ghost.WriteKey(key_angry, '1', 1)
 	ghost.CreateTimer(10, 1)
@@ -75,7 +75,7 @@ def do_dialog():
 	'''Main dialog routine.'''
 	if not can_talk(None, None):
 		return
-	
+
 	whoami = Crossfire.WhoAmI()
 	pl = Crossfire.WhoIsActivator()
 	if pl.ReadKey('witherspoon_know_all') == '1':
@@ -87,17 +87,17 @@ def do_dialog():
 		whoami.WriteKey('bonus', '1', 1)
 		start_disappear(whoami, pl)
 		return
-	
+
 	if pl.ReadKey('witherspoon_know_dagger') == '1':
 		# player talked to the priest of Devourers, and knows the dagger is special.
 		whoami.Say('Oh, please find who could be as cruel as to use such a horrible spell on me!')
 		return
-	
+
 	# default dialog, just talk
-	
+
 	# If you ever change this key, change the value in tomb.py too!
 	speech = Dialog(Crossfire.WhoIsActivator(), Crossfire.WhoAmI(), "witherspoon_ghost")
-	
+
 	prer = [["witherspoon_ghost","0"]]
 	postr = [["witherspoon_ghost", "explain"]]
 	rmsg = ["I was killed by surprise, and ever since I'm stuck here.\n\n"
@@ -105,32 +105,32 @@ def do_dialog():
 	"Could you find my body, please?"
 	]
 	speech.addRule(DialogRule(["help","yes","how"], prer, rmsg, postr),0)
-	
+
 	prer = [["witherspoon_ghost","explain"]]
 	postr = [["witherspoon_ghost", "wait"]]
 	rmsg = ["I was walking near a lake west of Scorn, so maybe my body is buried here."]
 	speech.addRule(DialogRule(["where","location"], prer, rmsg, postr),1)
-	
+
 	prer = [["witherspoon_ghost","explain"]]
 	postr = [["witherspoon_ghost", "*"]]
 	rmsg = ["Please, go find my body...", "Please, I need my body to rest in peace..."]
 	speech.addRule(DialogRule(["*"], prer, rmsg, postr),2)
-	
+
 	prer = [["witherspoon_ghost","wait"]]
 	postr = [["witherspoon_ghost", "*"]]
 	rmsg = ["Please, go find my body.\n\nIt should be near the lake west of Scorn...", "Did you find my body yet? No?\n\nThen please, go search for it, west of Scorn there is a lake..."]
 	speech.addRule(DialogRule(["*"], prer, rmsg, postr, check_body),3)
-	
+
 	prer = [["witherspoon_ghost","wait"]]
 	postr = [["witherspoon_ghost", "0"]]
 	rmsg = ["Thanks, you found my body!"]
 	speech.addRule(DialogRule(["*"], prer, rmsg, postr, found_body),4)
-	
+
 	prer = [["witherspoon_ghost","*"]]
 	postr = [["witherspoon_ghost", "*"]]
 	rmsg = ["Please help me....", "Heeeeeeeelp...", "Pleaseeeee..."]
 	speech.addRule(DialogRule(["*"], prer, rmsg, postr, can_talk),5)
-	
+
 	speech.speak(Crossfire.WhatIsMessage())
 
 def do_angry(ghost):
@@ -157,17 +157,17 @@ def do_disappear():
 	if ghost.ReadKey(key_disappear) != '1':
 		'''Hu? Not supposed to come here in this case...'''
 		return
-	
+
 	ghost.Say('Thanks a lot! Please take those small presents as a token of my gratitude.')
-	
+
 	bonus = 0
 	if ghost.ReadKey('bonus') == '1':
 		bonus = 25
-	
+
 	presents = ['gem', 'ruby', 'emerald', 'pearl', 'sapphire']
 	got = ghost.Map.CreateObject(presents[random.randint(0, len(presents) - 1)], ghost.X, ghost.Y)
 	got.Quantity = random.randint(3 + bonus, 7 + bonus)
-	
+
 	ghost.Remove()
 
 if Crossfire.WhatIsEvent().Subtype == Crossfire.EventType.SAY:

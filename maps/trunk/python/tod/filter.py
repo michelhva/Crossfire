@@ -22,7 +22,7 @@
 # works only in specific moment of year/day. Periods are separated
 # by comas. See wiki doc list of possible values
 # exemple, to make an "apply" work only during Blizzard, new year and every morning:
-# 
+#
 # arch event_apply
 # title Python
 # slaying /python/tod/filter.py
@@ -51,4 +51,3 @@ elif string.lower(parameters["match"]) == "all":
         Crossfire.SetReturnValue(inverse)
 else:
     Crossfire.Log(Crossfire.LogError,"Script filter.py didn't get a 'match' parameter. Only got %s" %parameters)
-

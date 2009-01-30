@@ -38,14 +38,14 @@ def check_plate():
 				whoami.WriteKey(key_eating_step, str(random.randint(5, 10)), 1)
 				Crossfire.SetReturnValue(1)
 				return
-			
+
 			whoami.Say('Oh! Could this be...')
 			whoami.WriteKey(key_status, st_getting, 1)
 			Crossfire.SetReturnValue(1)
 			return
 
 		obj = obj.Above
-	
+
 	if whoami.ReadKey(key_status) == st_getting:
 		# we were on the spot, but no more omelet...
 		whoami.WriteKey(key_status, '', 1)
@@ -81,7 +81,7 @@ def move_gourmet():
 		whoami.WriteKey(key_eating_step, str(step), 1)
 		Crossfire.SetReturnValue(1)
 		return
-	
+
 	check_plate()
 
 whoami = Crossfire.WhoAmI()

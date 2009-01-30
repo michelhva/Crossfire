@@ -23,7 +23,7 @@ max_charges = 15
 def do_release(friendly):
 	act = Crossfire.WhoIsActivator()
 	l = Crossfire.WhoAmI()
-	
+
 	charges = l.ReadKey('sunnista_charges')
 	if (charges != ''):
 		charges = int(charges)
@@ -55,14 +55,14 @@ def do_absorb(count):
 		charges = int(charges)
 	else:
 		charges = 0
-	
+
 	Crossfire.WhoIsActivator().Message('The %s absorbs some %s!'%(l.Name, affect_pl))
-	
+
 	charges += count
 	l.WriteKey('sunnista_charges', str(charges), 1)
 	if charges > max_charges:
 		do_release(0)
-	
+
 def do_find():
 	#global max_affect
 	got = 0
@@ -89,4 +89,3 @@ if got == 0:
 	do_release(1)
 else:
 	do_absorb(got)
-

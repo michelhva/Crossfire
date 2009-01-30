@@ -85,4 +85,3 @@ else:
     message = 'Guild Guardian Error, please notify a DM'
 
 whoami.Say(message)
-

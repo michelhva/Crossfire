@@ -53,7 +53,7 @@ if whoami.Name=='Jack':
      object = activator.CheckInventory(cointype)
 
      if text[0] == 'help' or text[0] == 'yes':
-         message='Let me know how many jade coins you want to pay.  Say pay <amount>' 
+         message='Let me know how many jade coins you want to pay.  Say pay <amount>'
 
      elif text[0] == 'pay':
          if len(text)==2:
@@ -71,7 +71,7 @@ if whoami.Name=='Jack':
 		     guildbalance4 = str(guildbalance1)
 		     guildbalance3.write(guildbalance4)
 		     print guildbalance4
-		    
+
                  else:
                      if cost > 1:
                         message ="%s, you don't have %d %ss." %(random.choice(exclaimlist),cost,cointype)

@@ -45,14 +45,14 @@ if (guildname):
     found = 0
     if text[0] == 'dues' or text[0] == 'Dues':
 
-            
 
-            
-            
 
-            
-            
-           
+
+
+
+
+
+
 
             record = guild.info(activatorname) #see if they are on the board
             if record:
@@ -73,9 +73,9 @@ if (guildname):
                          activator.Teleport(mymap,int(x2),int(y2))
                          activator.Teleport (mymap,int(x),int(y))
 
-                      else: 
+                      else:
                            if balance >= 101:
-                              balance1 = int (balance) - 100 
+                              balance1 = int (balance) - 100
                               gdues1=open('share/maps/python/guilds/guildbalance.py', 'w')
                               balance2 = str (balance1)
                               gdues1.write (balance2)

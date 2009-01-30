@@ -80,7 +80,7 @@ if (guildname):
             if record:
                 if guild.promote_member(text[1]):
                     record = guild.info(text[1]) #refresh record
-                    message = '%s promoted to %s' %(text[1], record['Rank'])	
+                    message = '%s promoted to %s' %(text[1], record['Rank'])
                 else:
                     message = 'You cannot promote %s' %text[1]
             else:
@@ -155,4 +155,3 @@ if (guildname):
 else:
     message = 'Board Error'
 whoami.Say(message)
-
