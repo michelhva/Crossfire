@@ -113,7 +113,7 @@ class CFData:
             self.datadb = self.datafile.getData()
 
     def remove_record(self, name):
-        if self.datadb.has_key(name):
+        if name in self.datadb:
             del self.datadb[name]
             self.datafile.putData(self.datadb)
             return 1
@@ -122,7 +122,7 @@ class CFData:
 
     def exist(self, name):
         '''checks if a record exists given the primary key as "name"'''
-        if self.datadb.has_key(name):
+        if name in self.datadb:
             return 1
         else:
             return 0

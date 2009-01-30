@@ -30,7 +30,7 @@ def find_food(chicken, x, y):
 	obj = chicken.Map.ObjectAt(x, y)
 	while obj != None:
 		#Crossfire.Log(Crossfire.LogMonster, obj.Name)
-		if eat.has_key(obj.NamePl):
+		if obj.NamePl in eat:
 			return obj
 		obj = obj.Above
 	return None

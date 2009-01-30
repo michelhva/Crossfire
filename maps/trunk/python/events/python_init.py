@@ -12,4 +12,4 @@ if os.path.exists(path):
 
 	for script in scripts:
 		if (script.endswith('.py')):
-			execfile(os.path.join(path, script))
+			exec(open(os.path.join(path, script)).read())

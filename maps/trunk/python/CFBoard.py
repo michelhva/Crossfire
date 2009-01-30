@@ -35,7 +35,7 @@ class CFBoard:
 		self.boarddb = shelve.open(self.boarddb_file)
 
 	def write(self, boardname, author, message):
-		if not self.boarddb.has_key(boardname):
+		if not boardname in self.boarddb:
 			self.boarddb[boardname]=[[author,message]]
 		else:
 			temp=self.boarddb[boardname]
@@ -43,13 +43,13 @@ class CFBoard:
 			self.boarddb[boardname]=temp
 
 	def list(self, boardname):
-		if self.boarddb.has_key(boardname):
+		if boardname in self.boarddb:
 			elements=self.boarddb[boardname]
 			return elements
 
 
 	def delete(self, boardname, id):
-		if self.boarddb.has_key(boardname):
+		if boardname in self.boarddb:
 			if id>0 and id<=len(self.boarddb[boardname]):
 				temp=self.boarddb[boardname]
 				temp.pop(id-1)
@@ -57,14 +57,14 @@ class CFBoard:
 				return 1
 		return 0
 
-        def countmsg(self, boardname):
-                if self.boarddb.has_key(boardname):
-                        return len(self.boarddb[boardname])
-                else:
-                        return 0
+	def countmsg(self, boardname):
+		if boardname in self.boarddb:
+			return len(self.boarddb[boardname])
+		else:
+			return 0
 
 	def getauthor(self, boardname, id):
-		if self.boarddb.has_key(boardname):
+		if boardname in self.boarddb:
 			if id>0 and id<=len(self.boarddb[boardname]):
 				author,message=self.boarddb[boardname][id-1]
 				return author

@@ -10,7 +10,7 @@ who = Crossfire.WhoAmI()
 
 data = CFDataFile.CFData('midane', ['state'])
 
-if not Crossfire.GetPrivateDictionary().has_key('on_map'):
+if not 'on_map' in Crossfire.GetPrivateDictionary():
 	on_map = []
 	Crossfire.GetPrivateDictionary()['on_map'] = on_map
 else:

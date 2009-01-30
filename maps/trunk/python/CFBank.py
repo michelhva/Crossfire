@@ -33,7 +33,7 @@ class CFBank:
 		self.bankdb = shelve.open(self.bankdb_file, writeback=True)
 
 	def deposit(self, user, amount):
-		if not self.bankdb.has_key(user):
+		if not user in self.bankdb:
 			self.bankdb[user]=amount
 		else:
 			temp=self.bankdb[user]
@@ -41,7 +41,7 @@ class CFBank:
 		self.bankdb.sync()
 
 	def withdraw(self, user, amount):
-		if self.bankdb.has_key(user):
+		if user in self.bankdb:
 			if (self.bankdb[user] >= amount):
 				temp=self.bankdb[user]
 				self.bankdb[user]=temp-amount
@@ -50,13 +50,13 @@ class CFBank:
 		return 0
 
 	def getbalance(self,user):
-        	if self.bankdb.has_key(user):
-            		return self.bankdb[user]
-        	else:
-            		return 0
+		if user in self.bankdb:
+				return self.bankdb[user]
+		else:
+				return 0
 
 	def remove_account(self,user):
-		if self.bankdb.has_key(user):
+		if user in self.bankdb:
 			del self.bankdb[user]
 			Crossfire.Log(Crossfire.LogDebug, "%s's bank account removed." %user)
 			self.bankdb.sync()

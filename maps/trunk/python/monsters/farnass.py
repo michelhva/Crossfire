@@ -108,7 +108,7 @@ def close_boiler():
 def clean_check():
 	'''Cancel next check.'''
 	d = Crossfire.GetPrivateDictionary()
-	if d.has_key(key_need_check):
+	if key_need_check in d:
 		del d[key_need_check]
 
 def move_cook():
@@ -165,7 +165,7 @@ def move_cook():
 		return
 
 	d = Crossfire.GetPrivateDictionary()
-	if d.has_key(key_need_check):
+	if key_need_check in d:
 		whoami.Map.Print('You see %s look at the frypan.'%whoami.Name, color)
 		del d[key_need_check]
 		check_ingredients()
