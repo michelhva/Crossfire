@@ -24,7 +24,7 @@ class SlotMachine:
 		self.maxpot = maxpot
 
         def placebet(self,amount):
-		if self.slotname in not self.slotdb:
+		if self.slotname not in self.slotdb:
 			self.slotdb[self.slotname] = self.minpot+amount
 		else:
 			temp=self.slotdb[self.slotname]
