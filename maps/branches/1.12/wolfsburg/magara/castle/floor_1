@@ -8,7 +8,7 @@ enter_x 1
 enter_y 1
 msg
 Created:  1994-10-12
-Modified: 2008-12-01 Rick Tanner
+Modified: 2009-01-29 Rick Tanner
 endmsg
 end
 arch flagstone
@@ -263,6 +263,9 @@ x 1
 y 1
 end
 arch exit
+slaying ../../../world/world_128_109
+hp 23
+sp 11
 x 1
 y 1
 end
