@@ -63,14 +63,14 @@ if whoami.Name=='Jack':
                  if (pay):
                      guild.pay_dues(activatorname,cost)
                      message = "%s, %d %s paid to the guild." %(random.choice(remarklist),cost, cointype)
-              	     guildbalance = open(str(gbfile), 'r')
- 		     guildbalance2 = guildbalance.read()
-		     guildbalance1 = int(guildbalance2) + int(cost)
-		     guildbalance.close()
-		     guildbalance3 = open(str(gbfile), 'w')
-		     guildbalance4 = str(guildbalance1)
-		     guildbalance3.write(guildbalance4)
-		     print guildbalance4
+                     guildbalance = open(str(gbfile), 'r')
+                     guildbalance2 = guildbalance.read()
+                     guildbalance1 = int(guildbalance2) + int(cost)
+                     guildbalance.close()
+                     guildbalance3 = open(str(gbfile), 'w')
+                     guildbalance4 = str(guildbalance1)
+                     guildbalance3.write(guildbalance4)
+                     print guildbalance4
 
                  else:
                      if cost > 1:
@@ -94,12 +94,12 @@ else:
   amount=int(balance)
 
   if amount <= 0:
-  			  message = 'No dues have been paid.'
+      message = 'No dues have been paid.'
   else:
-  			  message = '%d dues withdrawn.' % amount
- 			  id = activator.Map.CreateObject('jadecoin', x, y)
-			  CFItemBroker.Item(id).add(amount)
-			  activator.Take(id)
+      message = '%d dues withdrawn.' % amount
+      id = activator.Map.CreateObject('jadecoin', x, y)
+      CFItemBroker.Item(id).add(amount)
+      activator.Take(id)
 
   guildbalance.close()
   guildbalance3= open(str(gbfile), 'w')
