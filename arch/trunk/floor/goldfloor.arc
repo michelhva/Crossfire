@@ -13,5 +13,4 @@ animation goldfloor
 no_pick 1
 move_on walk
 is_floor 1
-magicmap dark_orange
 end
