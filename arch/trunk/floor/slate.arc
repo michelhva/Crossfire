@@ -4,7 +4,6 @@ no_pick 1
 is_floor 1
 smoothlevel 30
 smoothface slate_b.111 empty_S.111
-magicmap grey
 end
 
 Object whiteslate
@@ -13,7 +12,6 @@ no_pick 1
 is_floor 1
 smoothlevel 30
 smoothface slate_w.111 empty_S.111
-magicmap grey
 end
 
 Object redslate
@@ -22,7 +20,6 @@ no_pick 1
 is_floor 1
 smoothlevel 30
 smoothface slate_r.111 empty_S.111
-magicmap grey
 end
 
 

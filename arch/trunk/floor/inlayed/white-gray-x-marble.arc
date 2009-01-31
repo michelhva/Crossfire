@@ -5,7 +5,6 @@ no_pick 1
 is_floor 1
 smoothlevel 30
 smoothface white-gray-x-marble.111 empty_S.111
-magicmap grey
 end
 
 Object white-gray-x-marble_112
@@ -15,7 +14,6 @@ no_pick 1
 is_floor 1
 smoothlevel 30
 smoothface white-gray-x-marble.112 empty_S.111
-magicmap grey
 end
 
 Object white-gray-x-marble_113
@@ -25,7 +23,6 @@ no_pick 1
 is_floor 1
 smoothlevel 30
 smoothface white-gray-x-marble.113 empty_S.111
-magicmap grey
 end
 
 Object white-gray-x-marble_114
@@ -35,7 +32,6 @@ no_pick 1
 is_floor 1
 smoothlevel 30
 smoothface white-gray-x-marble.114 empty_S.111
-magicmap grey
 end
 
 Object white-gray-x-marble_115
@@ -45,7 +41,6 @@ no_pick 1
 is_floor 1
 smoothlevel 30
 smoothface white-gray-x-marble.115 empty_S.111
-magicmap grey
 end
 
 Object white-gray-x-marble_116
@@ -55,7 +50,6 @@ no_pick 1
 is_floor 1
 smoothlevel 30
 smoothface white-gray-x-marble.116 empty_S.111
-magicmap grey
 end
 
 
@@ -66,7 +60,6 @@ no_pick 1
 is_floor 1
 smoothlevel 30
 smoothface white-gray-x-marble.117 empty_S.111
-magicmap grey
 end
 
 Object white-gray-x-marble_118
@@ -76,7 +69,6 @@ no_pick 1
 is_floor 1
 smoothlevel 30
 smoothface white-gray-x-marble.118 empty_S.111
-magicmap grey
 end
 
 Object white-gray-x-marble_119
@@ -86,5 +78,4 @@ no_pick 1
 is_floor 1
 smoothlevel 30
 smoothface white-gray-x-marble.119 empty_S.111
-magicmap grey
 end

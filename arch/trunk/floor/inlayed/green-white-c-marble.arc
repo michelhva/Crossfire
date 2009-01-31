@@ -5,7 +5,6 @@ no_pick 1
 is_floor 1
 smoothlevel 30
 smoothface green-white-c-marble.111 empty_S.111
-magicmap grey
 end
 
 Object green-white-c-marble_112
@@ -15,7 +14,6 @@ no_pick 1
 is_floor 1
 smoothlevel 30
 smoothface green-white-c-marble.112 empty_S.111
-magicmap grey
 end
 
 Object green-white-c-marble_113
@@ -25,7 +23,6 @@ no_pick 1
 is_floor 1
 smoothlevel 30
 smoothface green-white-c-marble.113 empty_S.111
-magicmap grey
 end
 
 Object green-white-c-marble_114
@@ -35,5 +32,4 @@ no_pick 1
 is_floor 1
 smoothlevel 30
 smoothface green-white-c-marble.114 empty_S.111
-magicmap grey
 end
