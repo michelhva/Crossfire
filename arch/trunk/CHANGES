@@ -1,5 +1,10 @@
 Changes for SVN top of tree:
 
+misc/t_boulder.arc
+Give throwing boulders object type 15 (weapon), this avoids this alert in
+the server logs: "Query_cost: item boulder hasn't got a valid type" 
+Rick Tanner 2009-01-31
+
 Lots of *.png (not listing all files because it is almost all *.png)
 Losslessly recompress most all PNG images for smaller size to reduce the
 bandwidth needed for sending images to clients.
