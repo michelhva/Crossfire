@@ -17,11 +17,7 @@ name pile
 title of philosophical sulphur
 face phil_sulphur.111
 nrof 1
-anim
-phil_sulphur.111
-phil_sulphur.112
-phil_sulphur.113
-mina
+animation phil_sulphur
 material 64
 type 73
 anim_speed 3
@@ -39,11 +35,7 @@ name pile
 title of philosophical phosphorus
 face phil_phos.111
 nrof 1
-anim
-phil_phos.111
-phil_phos.112
-phil_phos.113
-mina
+animation phil_phosphorus
 material 64
 anim_speed 2
 client_anim_random 1
@@ -62,11 +54,7 @@ name pile
 title of philosophical salt
 face phil_salt.111
 nrof 1
-anim
-phil_salt.111
-phil_salt.112
-phil_salt.113
-mina
+animation phil_salt
 material 64
 type 73
 anim_speed 3

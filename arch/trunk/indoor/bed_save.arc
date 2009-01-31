@@ -7,6 +7,5 @@ value 40
 no_pick 1
 no_magic 1
 damned 1
-magicmap brown
 client_type 25091
 end

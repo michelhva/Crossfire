@@ -9,7 +9,6 @@ weight 150000
 value 55
 material 16
 nrof 1
-magicmap brown
 name_pl tables
 client_type 8002
 skill two handed weapons
@@ -27,7 +26,6 @@ weight 150000
 value 55
 material 16
 nrof 1
-magicmap brown
 name_pl tables
 client_type 8002
 skill two handed weapons

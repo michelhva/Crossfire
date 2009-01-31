@@ -9,7 +9,6 @@ material 16
 materialname velvet covered wood
 dam 5
 nrof 1
-magicmap brown
 name_pl chairs
 client_type 8002
 skill two handed weapons
@@ -26,7 +25,6 @@ material 16
 materialname velvet covered wood
 dam 5
 nrof 1
-magicmap brown
 name_pl chairs
 client_type 8002
 skill two handed weapons
@@ -43,7 +41,6 @@ material 16
 materialname velvet covered wood
 dam 5
 nrof 1
-magicmap brown
 name_pl chairs
 client_type 8002
 skill two handed weapons
@@ -60,7 +57,6 @@ material 16
 materialname velvet covered wood
 dam 5
 nrof 1
-magicmap brown
 name_pl chairs
 client_type 8002
 skill two handed weapons

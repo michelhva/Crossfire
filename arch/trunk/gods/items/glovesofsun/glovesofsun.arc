@@ -9,11 +9,7 @@ endmsg
 nrof 1
 type 100
 face glovesofsun.111
-anim
-glovesofsun.111
-glovesofsun.112
-glovesofsun.113
-mina
+animation glovesofsun
 anim_speed 4
 client_anim_random 1
 material 8

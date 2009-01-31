@@ -8,7 +8,6 @@ material 12
 weight 600
 value 20000
 lifesave 1
-magicmap yellow
 nrof 1
 client_type 381
 body_neck -1
