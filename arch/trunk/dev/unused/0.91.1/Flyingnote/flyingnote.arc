@@ -4,28 +4,7 @@ type 88
 level 1
 move_on walk fly_low
 face flyingnote.111
-anim
-flyingnote.111
-flyingnote.112
-flyingnote.113
-flyingnote.114
-flyingnote.115
-flyingnote.116
-flyingnote.117
-flyingnote.118
-flyingnote.119
-flyingnote.11A
-flyingnote.11B
-flyingnote.11A
-flyingnote.119
-flyingnote.118
-flyingnote.117
-flyingnote.116
-flyingnote.115
-flyingnote.114
-flyingnote.113
-flyingnote.112
-mina
+animation flying_note
 attacktype 4096
 wc -30
 dam 0

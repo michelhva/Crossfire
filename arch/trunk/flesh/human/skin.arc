@@ -6,7 +6,6 @@ type 72
 food 1
 weight 7
 value 5
-magicmap khaki
 name_pl skins
 client_type 627
 end

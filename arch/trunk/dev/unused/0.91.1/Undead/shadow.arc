@@ -1,12 +1,7 @@
 Object shadow
 race shadow
 face shadow.111
-magicmap black
-anim
-shadow.111
-shadow.112
-shadow.113
-mina
+animation shadow
 monster 1
 sleep 1
 Wis 14

@@ -2,10 +2,7 @@ Object c_knight
 name Chaos Knight
 randomitems standard
 face c_knight.111
-anim
-c_knight.111
-c_knight.112
-mina
+animation c_knight
 monster 1
 Wis 10
 no_pick 1

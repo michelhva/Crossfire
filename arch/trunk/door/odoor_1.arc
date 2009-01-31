@@ -4,7 +4,6 @@ randomitems door
 move_block all
 blocksview 1
 face odoor_1.111
-magicmap orange
 hp 400
 exp 1
 ac 10

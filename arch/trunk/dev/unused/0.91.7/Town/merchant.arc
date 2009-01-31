@@ -2,10 +2,7 @@ Object merchant
 name Merchant
 randomitems standard
 face merchant.111
-anim
-merchant.171
-merchant.131
-mina
+animation merchant
 is_turning 1
 sp 10
 maxsp 10

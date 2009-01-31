@@ -6,5 +6,4 @@ type 72
 food 1
 weight 1
 value 30
-magicmap white
 end

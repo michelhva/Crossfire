@@ -6,7 +6,6 @@ material 32
 type 72
 weight 25
 value 100
-magicmap green
 name_pl wings
 client_type 626
 end

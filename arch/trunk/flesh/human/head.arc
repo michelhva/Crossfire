@@ -6,7 +6,6 @@ type 72
 food 50
 weight 15
 value 15
-magicmap khaki
 name_pl heads
 client_type 625
 end

@@ -6,7 +6,6 @@ type 72
 food 2
 weight 6
 value 20
-magicmap khaki
 name_pl hands
 client_type 626
 end

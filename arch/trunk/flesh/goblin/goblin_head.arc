@@ -7,7 +7,6 @@ type 72
 food 30
 weight 25
 value 15
-magicmap green
 name_pl heads
 client_type 625
 end
