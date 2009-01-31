@@ -17,10 +17,7 @@ Object fix_mercury
 name block
 title of fixed mercury
 face fix_mercury.111
-anim
-fix_mercury.111
-fix_mercury.112
-mina
+animation mercury
 anim_speed 2
 client_anim_random 1
 material 512

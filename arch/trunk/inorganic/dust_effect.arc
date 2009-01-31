@@ -3,11 +3,7 @@ name cloud of dust
 type 79
 level 1
 face dust_effect.111
-anim
-dust_effect.111
-dust_effect.112
-dust_effect.113
-mina
+animation dust_effect
 anim_speed 1
 client_anim_random 1
 attacktype 4194304

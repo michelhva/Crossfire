@@ -5,6 +5,4 @@ type 56
 level 100
 face altarmostr.111
 no_pick 1
-visibility 50
-magicmap grey
 end

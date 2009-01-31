@@ -7,7 +7,6 @@ exp 30
 face harpsichord2.x11
 no_pick 1
 move_on walk
-visibility 50
 end
 More
 Object harpsichord2_2
@@ -20,7 +19,6 @@ exp 30
 face harpsichord2.x11
 no_pick 1
 move_on walk
-visibility 50
 end
 More
 Object harpsichord2_3
@@ -33,7 +31,6 @@ exp 30
 face harpsichord2.x11
 no_pick 1
 move_on walk
-visibility 50
 end
 More
 Object harpsichord2_4
@@ -47,6 +44,5 @@ exp 30
 face harpsichord2.x11
 no_pick 1
 move_on walk
-visibility 50
 end
 

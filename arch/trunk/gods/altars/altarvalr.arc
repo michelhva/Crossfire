@@ -6,7 +6,4 @@ level 100
 face altarvalr.111
 no_pick 1
 resist_physical 100
-
-visibility 50
-magicmap grey
 end

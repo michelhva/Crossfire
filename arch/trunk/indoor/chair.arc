@@ -7,7 +7,6 @@ type 15
 material 16
 dam 4
 nrof 1
-magicmap black
 name_pl chairs
 client_type 8002
 skill two handed weapons
