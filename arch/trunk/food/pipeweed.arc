@@ -7,7 +7,6 @@ type 6
 material 32
 value 300
 weight 32
-magicmap green
 name_pl pipeweed
 client_type 601
 end

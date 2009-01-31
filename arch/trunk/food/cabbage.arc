@@ -1,6 +1,5 @@
 Object cabbage
 face cabbage.111
-magicmap green
 food 80
 nrof 1
 type 6

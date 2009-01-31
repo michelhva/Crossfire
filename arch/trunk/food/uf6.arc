@@ -1,7 +1,6 @@
 Object uf6
 face uf6.111
 on_use_yield wbottle_empty
-magicmap blue
 food 1
 nrof 1
 type 54

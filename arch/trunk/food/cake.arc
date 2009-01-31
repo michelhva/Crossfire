@@ -7,7 +7,6 @@ material 32
 value 8
 weight 3000
 identified 1
-magicmap yellow
 name_pl cakes
 client_type 601
 end

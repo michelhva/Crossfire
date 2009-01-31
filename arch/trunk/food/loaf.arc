@@ -1,7 +1,6 @@
 Object loaf
 name bread
 face loaf.111
-magicmap brown
 food 100
 nrof 1
 type 6

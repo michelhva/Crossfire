@@ -1,6 +1,5 @@
 Object leg_mutton
 face food.111
-magicmap red
 food 150
 nrof 1
 type 6

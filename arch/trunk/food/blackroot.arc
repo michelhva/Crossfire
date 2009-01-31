@@ -1,7 +1,6 @@
 Object blackroot
 name blackroot
 face blackroot.111
-magicmap black
 food 15
 nrof 1
 type 6

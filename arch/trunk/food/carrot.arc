@@ -1,7 +1,6 @@
 Object carrot
 name carrots
 face carrot.111
-magicmap orange
 food 20
 nrof 1
 type 6

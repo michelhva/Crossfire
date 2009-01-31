@@ -1,6 +1,5 @@
 Object booze
 face booze.111
-magicmap orange
 on_use_yield boozebottle_empty
 food 100
 nrof 1

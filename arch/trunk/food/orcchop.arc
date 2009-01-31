@@ -8,7 +8,6 @@ material 32
 value 1
 weight 650
 identified 1
-magicmap red
 name_pl orc chops
 client_type 624
 end
