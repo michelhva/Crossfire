@@ -6,13 +6,7 @@ monster 1
 sleep 1
 Wis 18
 face dark_uni.111
-magicmap black
-anim
-dark_uni.111
-dark_uni.111
-dark_uni.112
-dark_uni.112
-mina
+animation dark_uni
 level 6
 Con 8
 Int 15
@@ -44,13 +38,7 @@ More
 Object dark_uni_2
 name dark unicorn
 face dark_uni.211
-magicmap black
-anim
-dark_uni.211
-dark_uni.211
-dark_uni.212
-dark_uni.212
-mina
+animation dark_uni_2
 monster 1
 x 1
 alive 1

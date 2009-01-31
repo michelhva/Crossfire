@@ -32,9 +32,7 @@ end
 Object puddle_of_saliva
 name puddle of froth and saliva
 face residue.111
-anim
-residue.111
-mina
+animation rabies
 is_used_up 1
 speed 0.0002
 type 72

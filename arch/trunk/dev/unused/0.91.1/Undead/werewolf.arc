@@ -2,13 +2,7 @@ Object werewolf
 randomitems standard
 race lycantherope
 face werewolf.111
-anim
-werewolf.111
-werewolf.112
-werewolf.111
-werewolf.113
-mina
-magicmap brown
+animation werewolf
 monster 1
 undead 1
 Wis 10

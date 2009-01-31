@@ -13,8 +13,6 @@ no_pick 1
 face manhole.114
 animation manhole
 is_animated 0
-visibility 50
-magicmap black
 wc 4
 end
 More
@@ -51,8 +49,6 @@ is_animated 0
 move_on walk
 wc 0
 maxsp 1
-visibility 50
-magicmap black
 end
 More
 Object manhole_open_1a

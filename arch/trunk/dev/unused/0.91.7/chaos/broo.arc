@@ -1,11 +1,6 @@
 Object broo
 face broo.111
-anim
-broo.111
-broo.112
-broo.113
-broo.112
-mina
+animation broo
 monster 1
 Wis 10
 no_pick 1

@@ -8,10 +8,7 @@ hp 1
 msg
 You are pricked by a needle!
 endmsg
-anim
-needle.111
-needle.111
-mina
+animation trap_diseased_needle
 level 1
 is_animated 0
 invisible 1

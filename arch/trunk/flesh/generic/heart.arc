@@ -3,7 +3,6 @@ name heart
 nrof 1
 face heart.111
 material 32
-magicmap red
 type 72
 weight 4
 value 200

@@ -25,48 +25,7 @@ Object disgusting_puddle
 name stinking puddle of diarrhea
 type 72
 face icor.111
-anim
-icor.111
-icor.112
-icor.113
-icor.114
-icor.111
-icor.112
-icor.113
-icor.114
-icor.111
-icor.112
-icor.113
-icor.114
-icor.111
-icor.112
-icor.113
-icor.114
-icor.111
-icor.112
-icor.113
-icor.114
-icor.111
-icor.112
-icor.113
-icor.114
-icor.111
-icor.112
-icor.113
-icor.114
-icor.111
-icor.112
-icor.113
-icor.114
-icor.115
-icor.116
-icor.117
-icor.118
-icor.119
-icor.11A
-icor.11B
-icor.11C
-mina
+animation disgusting_puddle
 is_used_up 1
 speed 0.005
 food 1

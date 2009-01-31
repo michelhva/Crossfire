@@ -26,16 +26,7 @@ Object monolith_b
 name a strange black monolith
 type 66
 face monolith.212
-anim
-monolith.212
-monolith.213
-monolith.214
-monolith.215
-monolith.216
-monolith.215
-monolith.214
-monolith.213
-mina
+animation monolith_b
 speed .2
 y 1
 no_pick 1

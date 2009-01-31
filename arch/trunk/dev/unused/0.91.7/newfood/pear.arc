@@ -1,6 +1,5 @@
 Object pear
 face pear.111
-magicmap green
 food 25
 nrof 1
 type 6

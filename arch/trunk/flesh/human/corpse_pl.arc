@@ -1,6 +1,5 @@
 Object corpse_pl
 face corpse1.111
-magicmap blue
 nrof 1
 type 157
 material 32

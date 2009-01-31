@@ -3,7 +3,6 @@ name door
 randomitems door
 move_block all
 face wooddoor_2.111
-magicmap brown
 hp 400
 exp 1
 ac 10

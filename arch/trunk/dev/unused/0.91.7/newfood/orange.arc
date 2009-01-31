@@ -1,7 +1,6 @@
 Object orange
 name orange
 face orange.111
-magicmap orange
 food 25
 nrof 1
 type 6

@@ -7,7 +7,6 @@ type 72
 food 35
 weight 1
 value 15
-magicmap white
 name_pl eyes
 client_type 625
 end

@@ -6,7 +6,6 @@ type 72
 food 2
 weight 1
 value 20
-magicmap red
 name_pl tongues
 client_type 625
 end

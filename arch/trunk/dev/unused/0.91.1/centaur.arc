@@ -1,12 +1,7 @@
 Object centaur
 name centaur
 face centaur.111
-magicmap brown
-anim
-centaur.111
-centaur.112
-centaur.113
-mina
+animation centaur
 monster 1
 alive 1
 Int 10
