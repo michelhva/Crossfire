@@ -20,7 +20,6 @@ Object t_house2_3
 name town house
 face t_house2.x11
 type 66
-visibility 100
 no_pick 1
 y 1
 end
@@ -30,7 +29,6 @@ name town house
 face t_house2.x11
 type 66
 no_pick 1
-visibility 100
 x 1
 y 1
 end

@@ -10,6 +10,5 @@ weight 11000
 value 4
 material 2
 materialname bronze
-magicmap brown
 body_arm -1
 end

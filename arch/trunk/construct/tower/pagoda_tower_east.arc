@@ -3,8 +3,6 @@ face pagoda_tower_east.x11
 name tou
 type 66
 no_pick 1
-visibility 100
-magicmap brown
 client_type 25012
 end
 More
@@ -14,8 +12,6 @@ face pagoda_tower_east.x11
 type 66
 no_pick 1
 x 1
-visibility 100
-magicmap brown
 end
 More
 Object pagoda_tower_3_east
@@ -24,8 +20,6 @@ face pagoda_tower_east.x11
 type 66
 no_pick 1
 y 1
-visibility 100
-magicmap brown
 end
 More
 Object pagoda_tower_4_east
@@ -35,8 +29,6 @@ type 66
 no_pick 1
 x 1
 y 1
-visibility 100
-magicmap brown
 end
 More
 Object pagoda_tower_5_east
@@ -45,8 +37,6 @@ face pagoda_tower_east.x11
 type 66
 no_pick 1
 y 2
-visibility 100
-magicmap brown
 end
 More
 Object pagoda_tower_6_east
@@ -56,6 +46,4 @@ type 66
 no_pick 1
 x 1
 y 2
-visibility 100
-magicmap brown
 end

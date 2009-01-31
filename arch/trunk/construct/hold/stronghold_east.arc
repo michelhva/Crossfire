@@ -4,8 +4,6 @@ face stronghold_east.x11
 name honrui
 no_pick 1
 move_block all
-visibility 100
-magicmap grey
 client_type 25012
 end
 More
@@ -16,8 +14,6 @@ face stronghold_east.x11
 x 1
 no_pick 1
 move_block all
-visibility 100
-magicmap grey
 end
 More
 Object stronghold_3_east
@@ -27,8 +23,6 @@ face stronghold_east.x11
 x 2
 no_pick 1
 move_block all
-visibility 100
-magicmap grey
 end
 More
 Object stronghold_4_east
@@ -38,8 +32,6 @@ face stronghold_east.x11
 y 1
 no_pick 1
 move_block all
-visibility 100
-magicmap grey
 end
 More
 Object stronghold_5_east
@@ -50,8 +42,6 @@ x 1
 y 1
 no_pick 1
 move_block all
-visibility 100
-magicmap grey
 end
 More
 Object stronghold_6_east
@@ -62,8 +52,6 @@ x 2
 y 1
 no_pick 1
 move_block all
-visibility 100
-magicmap grey
 end
 More
 Object stronghold_7_east
@@ -73,8 +61,6 @@ face stronghold_east.x11
 y 2
 no_pick 1
 move_block all
-visibility 100
-magicmap grey
 end
 More
 Object stronghold_8_east
@@ -84,8 +70,6 @@ face stronghold_east.x11
 x 1
 y 2
 no_pick 1
-visibility 100
-magicmap grey
 end
 More
 Object stronghold_9_east
@@ -96,6 +80,4 @@ x 2
 y 2
 no_pick 1
 move_block all
-visibility 100
-magicmap grey
 end

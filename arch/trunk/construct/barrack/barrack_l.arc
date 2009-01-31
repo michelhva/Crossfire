@@ -6,7 +6,6 @@ animation barrack_l
 anim_speed 10
 client_anim_random 1
 no_pick 1
-visibility 100
 client_type 25012
 end
 More
@@ -19,5 +18,4 @@ anim_speed 10
 client_anim_random 1
 x 1
 no_pick 1
-visibility 100
 end

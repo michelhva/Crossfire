@@ -15,7 +15,6 @@ resist_magic 30
 resist_drain 100
 attacktype 384
 weapontype 1
-magicmap grey
 name_pl Mournblades
 client_type 100
 body_arm -2

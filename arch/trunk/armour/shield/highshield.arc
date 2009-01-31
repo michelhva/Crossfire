@@ -10,6 +10,5 @@ resist_physical 8
 weight 20000
 value 24
 material 2
-magicmap grey
 body_arm -1
 end

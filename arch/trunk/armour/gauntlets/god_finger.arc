@@ -10,7 +10,6 @@ anim_speed 10
 client_anim_random 1
 Str 2
 Dex -1
-magicmap orange
 resist_physical 3
 dam +3
 make_invisible 1

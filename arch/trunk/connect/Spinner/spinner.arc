@@ -7,17 +7,7 @@ type 90
 no_pick 1
 sp 3
 move_on walk fly_low
-anim
-spinner.111
-spinner.113
-spinner.115
-spinner.117
-spinner.119
-spinner.11B
-spinner.11D
-mina
-visibility 50
-magicmap black
+animation spinner_-135
 end
 Object spinner_-90
 name spinner
@@ -28,23 +18,7 @@ type 90
 no_pick 1
 sp 2
 move_on walk fly_low
-anim
-spinner.111
-spinner.112
-spinner.113
-spinner.114
-spinner.115
-spinner.116
-spinner.117
-spinner.118
-spinner.119
-spinner.11A
-spinner.11B
-spinner.11C
-spinner.11D
-mina
-visibility 50
-magicmap black
+animation spinner_-90
 end
 Object spinner_-45
 name spinner
@@ -55,23 +29,7 @@ type 90
 no_pick 1
 sp 1
 move_on walk fly_low
-anim
-spinner.111
-spinner.112
-spinner.113
-spinner.114
-spinner.115
-spinner.116
-spinner.117
-spinner.118
-spinner.119
-spinner.11A
-spinner.11B
-spinner.11C
-spinner.11D
-mina
-visibility 50
-magicmap black
+animation spinner_-45
 end
 Object spinner_45
 name spinner
@@ -82,23 +40,7 @@ type 90
 no_pick 1
 sp -1
 move_on walk fly_low
-anim
-spinner.11D
-spinner.11C
-spinner.11B
-spinner.11A
-spinner.119
-spinner.118
-spinner.117
-spinner.116
-spinner.115
-spinner.114
-spinner.113
-spinner.112
-spinner.111
-mina
-visibility 50
-magicmap black
+animation spinner_45
 end
 Object spinner_90
 name spinner
@@ -109,23 +51,7 @@ type 90
 no_pick 1
 sp -2
 move_on walk fly_low
-anim
-spinner.11D
-spinner.11C
-spinner.11B
-spinner.11A
-spinner.119
-spinner.118
-spinner.117
-spinner.116
-spinner.115
-spinner.114
-spinner.113
-spinner.112
-spinner.111
-mina
-visibility 50
-magicmap black
+animation spinner_90
 end
 Object spinner_135
 name spinner
@@ -136,17 +62,7 @@ type 90
 no_pick 1
 sp -3
 move_on walk fly_low
-anim
-spinner.11D
-spinner.11B
-spinner.119
-spinner.117
-spinner.115
-spinner.113
-spinner.111
-mina
-visibility 50
-magicmap black
+animation spinner_135
 end
 Object spinner_180
 name spinner
@@ -157,13 +73,5 @@ type 90
 no_pick 1
 sp 4
 move_on walk fly_low
-anim
-spinner.111
-spinner.114
-spinner.117
-spinner.11A
-spinner.11D
-mina
-visibility 50
-magicmap black
+animation spinner_180
 end

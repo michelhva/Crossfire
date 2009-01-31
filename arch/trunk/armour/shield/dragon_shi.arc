@@ -7,7 +7,6 @@ material 2048
 materialname dragonscale
 face dragon_shi.111
 type 33
-magicmap dark_orange
 ac 1
 resist_physical 8
 magic 2

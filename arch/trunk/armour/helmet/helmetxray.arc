@@ -5,10 +5,7 @@ client_type 270
 nrof 1
 title of xray vision
 face helmetxray.111
-anim
-helmetxray.111
-helmetxray.112
-mina
+animation helmetxray
 anim_speed 20
 client_anim_random 1
 type 34

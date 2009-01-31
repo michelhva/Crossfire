@@ -12,7 +12,6 @@ dam 50
 material 64
 attacktype 1
 weapontype 7
-magicmap brown
 name_pl Bonecrushers
 client_type 100
 body_arm -2

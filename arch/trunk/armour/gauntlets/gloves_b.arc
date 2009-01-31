@@ -10,6 +10,5 @@ value 64
 material 8
 materialname black leather
 weight 100
-magicmap black
 body_hand -2
 end

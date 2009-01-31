@@ -10,6 +10,5 @@ resist_physical 7
 weight 15000
 value 21
 material 18
-magicmap orange
 body_arm -1
 end

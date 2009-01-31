@@ -5,11 +5,7 @@ client_type 251
 nrof 1
 type 16
 face wdsm.111
-anim
-wdsm.111
-wdsm.112
-wdsm.113
-mina
+animation wdsm
 anim_speed 10
 client_anim_random 1
 last_sp 13
@@ -23,7 +19,6 @@ value 220000
 resist_cold 30
 resist_fire 95
 magic -3
-magicmap black
 body_torso -1
 gen_sp_armour 9
 item_power 5

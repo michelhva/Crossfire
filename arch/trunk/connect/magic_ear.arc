@@ -5,7 +5,6 @@ msg
 @match sesame
 Click.
 endmsg
-magicmap white
 no_pick 1
 invisible 1
 end

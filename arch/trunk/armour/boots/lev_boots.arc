@@ -10,7 +10,6 @@ type 99
 material 8
 resist_physical 3
 move_type fly_low
-magicmap white
 body_foot -2
 item_power 1
 map_layer item

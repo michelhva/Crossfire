@@ -2,12 +2,7 @@ Object dagger_f
 name dagger of fortune
 name_pl daggers of fortune
 face dagger_f.111
-anim
-dagger_f.111
-dagger_f.112
-dagger_f.113
-dagger_f.114
-mina
+animation dagger_f
 anim_speed 5
 client_anim_random 1
 Cha 4
@@ -22,7 +17,6 @@ materialname glacium
 value 50000
 weight 2000
 last_sp 5
-magicmap grey
 client_type 100
 body_arm -1
 skill one handed weapons

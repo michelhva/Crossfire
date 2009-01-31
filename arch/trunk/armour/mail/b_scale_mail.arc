@@ -12,7 +12,6 @@ ac 3
 resist_physical 10
 weight 20000
 value 8
-magicmap black
 body_torso -1
 gen_sp_armour 10
 end

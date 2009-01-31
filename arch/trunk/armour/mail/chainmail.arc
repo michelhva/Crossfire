@@ -5,7 +5,6 @@ name_pl chain mails
 client_type 253
 type 16
 face chainmail.111
-magicmap black
 last_sp 10
 material 2
 ac 4

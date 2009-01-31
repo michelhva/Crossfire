@@ -13,7 +13,6 @@ resist_physical 4
 type 99
 material 8
 materialname black leather
-magicmap black
 body_foot -2
 gen_sp_armour 4
 end
@@ -33,7 +32,6 @@ resist_physical 25
 type 99
 material 2
 materialname black steel
-magicmap black
 body_foot -2
 gen_sp_armour 4
 end

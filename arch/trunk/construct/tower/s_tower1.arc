@@ -12,6 +12,5 @@ name spiral tower
 face s_tower1.x11
 type 66
 no_pick 1
-visibility 100
 y 1
 end

@@ -12,7 +12,6 @@ value 6000
 material 8
 materialname white leather
 weight 100
-magicmap white
 body_hand -2
 end
 Object gloves_w_l
@@ -30,6 +29,5 @@ value 42000
 material 2
 materialname white steel
 weight 200
-magicmap white
 body_hand -2
 end

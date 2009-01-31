@@ -10,6 +10,5 @@ ac 1
 resist_physical 5
 weight 15000
 value 22
-magicmap grey
 body_arm -1
 end

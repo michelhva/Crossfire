@@ -5,7 +5,6 @@ client_type 256
 nrof 1
 type 16
 face robe.111
-magicmap brown
 last_sp 12
 ac 1
 weight 10000

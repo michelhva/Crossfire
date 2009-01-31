@@ -14,7 +14,6 @@ magic 3
 value 150000
 attacktype 1
 weapontype 1
-magicmap grey
 name_pl Defenders
 client_type 100
 body_arm -1

@@ -9,6 +9,5 @@ ac 1
 weight 10000
 value 20
 material 2
-magicmap brown
 body_arm -1
 end
