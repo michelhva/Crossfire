@@ -12,6 +12,5 @@ name slum
 face slum3.x11
 type 66
 no_pick 1
-visibility 100
 y 1
 end

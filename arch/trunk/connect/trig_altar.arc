@@ -5,12 +5,8 @@ food 5
 type 31
 exp 30
 face altar.111
-anim
-altar.111
-altar.112
-mina
+animation altar_trigger
 is_animated 0
 no_pick 1
 move_on walk
-visibility 50
 end

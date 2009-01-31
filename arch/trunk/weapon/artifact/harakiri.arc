@@ -12,7 +12,6 @@ weight 5000
 value 1000000
 attacktype 1
 weapontype 1
-magicmap grey
 name_pl Harakiri swords
 client_type 100
 body_arm -1

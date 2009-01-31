@@ -18,7 +18,6 @@ Object zoo_3
 name zoo
 type 66
 face zoo.x11
-visibility 100
 no_pick 1
 y 1
 end
@@ -28,7 +27,6 @@ name zoo
 type 66
 face zoo.x11
 no_pick 1
-visibility 100
 x 1
 y 1
 end

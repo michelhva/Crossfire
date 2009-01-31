@@ -7,14 +7,7 @@ type 16
 material 2
 materialname mithril
 face mithril_ar_ele.111
-anim
-mithril_ar_ele.111
-mithril_ar_ele.111
-mithril_ar_ele.112
-mithril_ar_ele.112
-mithril_ar_ele.113
-mithril_ar_ele.113
-mina
+animation mithril_ar_ele
 anim_speed 3
 client_anim_random 1
 ac 4

@@ -5,7 +5,6 @@ name_pl plate mails
 client_type 252
 type 16
 face plate_mail.111
-magicmap blue
 last_sp 7
 material 2
 ac 5

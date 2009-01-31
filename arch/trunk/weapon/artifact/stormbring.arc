@@ -16,7 +16,6 @@ resist_electricity 30
 resist_drain 100
 attacktype 136
 weapontype 1
-magicmap black
 name_pl Stormbringers
 client_type 100
 body_arm -2

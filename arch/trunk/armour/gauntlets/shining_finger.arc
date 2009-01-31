@@ -6,7 +6,6 @@ client_type 300
 type 100
 face shining_finger.111
 animation shining_finger
-magicmap black
 anim_speed 10
 client_anim_random 1
 Str 2

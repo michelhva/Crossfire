@@ -1,6 +1,5 @@
 Object magic_mouth
 face magicmouth.111
-magicmap white
 type 98
 activate_on_push 1
 activate_on_release 1

@@ -3,13 +3,8 @@ name detector
 slaying player
 type 51
 face pedestal.112
-anim
-pedestal.112
-pedestal.111
-mina
+animation detector
 speed 0.5
 no_pick 1
-visibility 50
-magicmap grey
 sp 1
 end

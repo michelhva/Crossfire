@@ -7,14 +7,7 @@ type 33
 material 256
 materialname abyssium
 face DShield.111
-anim
-DShield.111
-DShield.112
-DShield.111
-DShield.112
-DShield.111
-DShield.113
-mina
+animation DShields
 anim_speed 5
 client_anim_random 1
 msg
@@ -30,7 +23,6 @@ reflect_spell 1
 resist_physical 10
 weight 25000
 value 100000
-magicmap black
 body_arm -1
 item_power 8
 end

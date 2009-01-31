@@ -9,6 +9,5 @@ value 25
 nrof 1
 material 2
 weight 1800
-magicmap grey
 body_hand -2
 end

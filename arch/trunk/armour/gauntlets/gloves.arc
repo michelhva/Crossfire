@@ -9,6 +9,5 @@ nrof 1
 value 4
 material 8
 weight 100
-magicmap brown
 body_hand -2
 end

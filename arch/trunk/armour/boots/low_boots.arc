@@ -4,7 +4,6 @@ name_pl pairs of shoes
 client_type 291
 face low_boots.111
 value 25
-magicmap brown
 weight 2000
 nrof 1
 ac 1

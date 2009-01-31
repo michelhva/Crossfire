@@ -10,7 +10,6 @@ weight 30000
 value 55000
 magic 3
 attacktype 65537
-magicmap black
 weapontype 1
 name_pl Deathbringers
 client_type 100

@@ -15,7 +15,6 @@ value 50000
 resist_fire 40
 magic 3
 identified 1
-magicmap black
 body_torso -1
 gen_sp_armour 9
 item_power 5
@@ -37,7 +36,6 @@ value 50000
 resist_electricity 40
 magic 3
 identified 1
-magicmap black
 body_torso -1
 gen_sp_armour 9
 item_power 5
@@ -59,7 +57,6 @@ value 50000
 resist_cold 40
 magic 3
 identified 1
-magicmap black
 body_torso -1
 gen_sp_armour 9
 item_power 5

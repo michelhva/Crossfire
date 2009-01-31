@@ -11,7 +11,6 @@ Object slum2_2
 name slum
 face slum2.x11
 type 66
-visibility 100
 no_pick 1
 y 1
 end

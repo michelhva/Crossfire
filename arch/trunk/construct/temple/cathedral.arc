@@ -4,8 +4,6 @@ type 66
 face cathedral.x11
 no_pick 1
 move_block all
-visibility 100
-magicmap grey
 client_type 25012
 end
 More
@@ -16,8 +14,6 @@ face cathedral.x11
 x 1
 no_pick 1
 move_block all
-visibility 100
-magicmap grey
 end
 More
 Object cathedral_3
@@ -27,8 +23,6 @@ face cathedral.x11
 x 2
 no_pick 1
 move_block all
-visibility 100
-magicmap grey
 end
 More
 Object cathedral_4
@@ -38,8 +32,6 @@ face cathedral.x11
 y 1
 no_pick 1
 move_block all
-visibility 100
-magicmap grey
 end
 More
 Object cathedral_5
@@ -50,8 +42,6 @@ x 1
 y 1
 no_pick 1
 move_block all
-visibility 100
-magicmap grey
 end
 More
 Object cathedral_6
@@ -62,8 +52,6 @@ x 2
 y 1
 no_pick 1
 move_block all
-visibility 100
-magicmap grey
 end
 More
 Object cathedral_7
@@ -73,8 +61,6 @@ face cathedral.x11
 y 2
 no_pick 1
 move_block all
-visibility 100
-magicmap grey
 end
 More
 Object cathedral_8
@@ -85,8 +71,6 @@ x 1
 y 2
 no_pick 1
 move_block all
-visibility 100
-magicmap grey
 end
 More
 Object cathedral_9
@@ -97,8 +81,6 @@ x 2
 y 2
 no_pick 1
 move_block all
-visibility 100
-magicmap grey
 end
 More
 Object cathedral_10
@@ -108,8 +90,6 @@ face cathedral.x11
 y 3
 no_pick 1
 move_block all
-visibility 100
-magicmap grey
 end
 More
 Object cathedral_11
@@ -119,8 +99,6 @@ face cathedral.x11
 x 1
 y 3
 no_pick 1
-visibility 100
-magicmap grey
 end
 More
 Object cathedral_12
@@ -131,6 +109,4 @@ x 2
 y 3
 no_pick 1
 move_block all
-visibility 100
-magicmap grey
 end

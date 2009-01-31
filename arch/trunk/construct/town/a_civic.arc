@@ -21,7 +21,6 @@ name civic building
 face a_civic.x11
 type 66
 no_pick 1
-visibility 100
 x 2
 end
 More
@@ -30,7 +29,6 @@ name civic building
 face a_civic.x11
 type 66
 no_pick 1
-visibility 100
 y 1
 end
 More
@@ -39,7 +37,6 @@ name civic building
 face a_civic.x11
 type 66
 no_pick 1
-visibility 100
 x 1
 y 1
 end
@@ -49,7 +46,6 @@ name civic building
 face a_civic.x11
 type 66
 no_pick 1
-visibility 100
 x 2
 y 1
 end
@@ -59,7 +55,6 @@ name civic building
 face a_civic.x11
 type 66
 no_pick 1
-visibility 100
 y 2
 end
 More
@@ -68,7 +63,6 @@ name civic building
 face a_civic.x11
 type 66
 no_pick 1
-visibility 100
 x 1
 y 2
 end
@@ -78,7 +72,6 @@ name civic building
 face a_civic.x11
 type 66
 no_pick 1
-visibility 100
 x 2
 y 2
 end

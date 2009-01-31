@@ -13,5 +13,4 @@ resist_cold 15
 weight 2000
 value 100
 material 18
-magicmap blue
 end

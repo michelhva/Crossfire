@@ -2,11 +2,7 @@ Object lava_s
 name Lava Slasher
 nrof 1
 face lava_s.111
-anim
-lava_s.113
-lava_s.112
-lava_s.111
-mina
+animation lava_s
 Str 2
 Con 2
 dam 30

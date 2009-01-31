@@ -3,8 +3,6 @@ type 66
 face stronghold_northwest.x11
 no_pick 1
 move_block all
-visibility 100
-magicmap grey
 end
 More
 Object stronghold_2_northwest
@@ -14,8 +12,6 @@ face stronghold_northwest.x11
 x 1
 no_pick 1
 move_block all
-visibility 100
-magicmap grey
 end
 More
 Object stronghold_3_northwest
@@ -25,8 +21,6 @@ face stronghold_northwest.x11
 x 2
 no_pick 1
 move_block all
-visibility 100
-magicmap grey
 end
 More
 Object stronghold_4_northwest
@@ -36,8 +30,6 @@ face stronghold_northwest.x11
 y 1
 no_pick 1
 move_block all
-visibility 100
-magicmap grey
 end
 More
 Object stronghold_5_northwest
@@ -48,8 +40,6 @@ x 1
 y 1
 no_pick 1
 move_block all
-visibility 100
-magicmap grey
 end
 More
 Object stronghold_6_northwest
@@ -60,8 +50,6 @@ x 2
 y 1
 no_pick 1
 move_block all
-visibility 100
-magicmap grey
 end
 More
 Object stronghold_7_northwest
@@ -71,8 +59,6 @@ face stronghold_northwest.x11
 y 2
 no_pick 1
 move_block all
-visibility 100
-magicmap grey
 end
 More
 Object stronghold_8_northwest
@@ -82,8 +68,6 @@ face stronghold_northwest.x11
 x 1
 y 2
 no_pick 1
-visibility 100
-magicmap grey
 end
 More
 Object stronghold_9_northwest
@@ -94,6 +78,4 @@ x 2
 y 2
 no_pick 1
 move_block all
-visibility 100
-magicmap grey
 end
