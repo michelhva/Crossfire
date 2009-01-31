@@ -1,7 +1,6 @@
 Object dragon_steak
 name steak
 face drag_steak.111
-magicmap brown
 food 400
 nrof 1
 type 72

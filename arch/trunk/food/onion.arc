@@ -1,7 +1,6 @@
 Object onion
 name onion
 face onion.111
-magicmap red
 food 50
 nrof 1
 type 6

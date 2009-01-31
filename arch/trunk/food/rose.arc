@@ -7,7 +7,6 @@ type 6
 material 32
 value 60
 weight 2
-magicmap red
 name_pl pink roses
 client_type 601
 end
@@ -20,7 +19,6 @@ type 6
 material 32
 value 80
 weight 2
-magicmap red
 name_pl red roses
 client_type 601
 end
@@ -33,7 +31,6 @@ type 6
 material 32
 value 45
 weight 2
-magicmap white
 name_pl white roses
 client_type 601
 end
@@ -46,7 +43,6 @@ type 6
 material 32
 value 45
 weight 2
-magicmap yellow
 name_pl yellow roses
 client_type 601
 end
@@ -59,7 +55,6 @@ type 6
 material 32
 value 160
 weight 2
-magicmap black
 name_pl black roses
 client_type 601
 end

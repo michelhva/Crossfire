@@ -1,6 +1,5 @@
 Object apple
 face apple.111
-magicmap red
 food 25
 nrof 1
 type 6

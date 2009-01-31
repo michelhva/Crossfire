@@ -1,7 +1,6 @@
 Object potato
 name potatoes
 face potato.111
-magicmap brown
 food 200
 nrof 1
 type 6

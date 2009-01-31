@@ -4,7 +4,6 @@
 Object fish_1
 name fish
 face fish_1.111
-magicmap green
 food 100
 nrof 1
 type 6
@@ -26,7 +25,6 @@ end
 Object fish_2
 name fish
 face fish_2.111
-magicmap green
 food 100
 nrof 1
 type 6
@@ -52,7 +50,6 @@ end
 Object fish_3
 name fish
 face fish_3.111
-magicmap green
 food 100
 nrof 1
 type 6
@@ -72,7 +69,6 @@ end
 Object fish_4
 name fish
 face fish_4.111
-magicmap green
 food 100
 nrof 1
 type 6
@@ -92,7 +88,6 @@ end
 Object fish_5
 name fish
 face fish_5.111
-magicmap green
 food 100
 nrof 1
 type 6
@@ -112,7 +107,6 @@ end
 Object fish_6
 name fish
 face fish_6.111
-magicmap green
 food 100
 nrof 1
 type 6

@@ -5,7 +5,6 @@ nrof 1
 type 6
 material 32
 value 5
-magicmap green
 weight 100
 name_pl clovers
 client_type 601

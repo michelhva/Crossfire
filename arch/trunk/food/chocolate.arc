@@ -1,6 +1,5 @@
 Object chocolate
 face chocolate.111
-magicmap brown
 food 50
 nrof 1
 type 6
