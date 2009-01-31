@@ -1,5 +1,13 @@
 Changes for SVN top of tree:
 
+flesh/dragon/dragon_sca.arc
+Give dragons scales object type 73 (inorganic), this avoids alerts in
+server logs: "Query_cost: item green dragon scale hasn't got a valid type"
+but with all scale colors.  Note: object type 72 (flesh) caused the dragon 
+scales weight to increase from 25Kg to 50000Kg and made the scales edible -
+neither is desirable.
+Rick Tanner 2009-01-31 
+
 misc/t_boulder.arc
 Give throwing boulders object type 15 (weapon), this avoids this alert in
 the server logs: "Query_cost: item boulder hasn't got a valid type" 
