@@ -9,7 +9,6 @@ dam 10
 weight 17000
 value 35
 attacktype 1
-magicmap brown
 name_pl morningstars
 client_type 141
 body_arm -1

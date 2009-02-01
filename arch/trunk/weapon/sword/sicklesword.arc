@@ -9,7 +9,6 @@ weight 8600
 value 440
 attacktype 1
 weapontype 1
-magicmap white
 name sickle sword
 name_pl sickle swords
 client_type 101

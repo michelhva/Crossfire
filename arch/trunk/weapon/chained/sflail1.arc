@@ -10,7 +10,6 @@ dam 16
 weight 28000
 value 288
 attacktype 1
-magicmap black
 name_pl spiked flails
 client_type 141
 body_arm -2

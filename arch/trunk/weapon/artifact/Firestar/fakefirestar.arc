@@ -1,15 +1,7 @@
 Object lamestar
 name Firestar
 nrof 1
-anim
-firestar.111
-firestar.112
-firestar.111
-firestar.112
-firestar.111
-firestar.112
-firestar.113
-mina
+animation lamestar
 weapontype 7
 anim_speed 5
 client_anim_random 1

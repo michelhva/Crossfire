@@ -9,7 +9,6 @@ weight 16000
 value 65
 attacktype 1
 weapontype 1
-magicmap white
 name nine ring sword
 name_pl nine ring swords
 client_type 101

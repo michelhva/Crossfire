@@ -4,7 +4,6 @@ type 14
 nrof 1
 material 16
 face crossbow.111
-magicmap brown
 dam 7
 weight 25000
 sp 40

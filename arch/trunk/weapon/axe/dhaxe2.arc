@@ -11,7 +11,6 @@ value 520
 can_impale 1
 attacktype 1
 weapontype 3
-magicmap white
 name_pl axes
 client_type 106
 body_arm -1

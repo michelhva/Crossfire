@@ -2,18 +2,7 @@ Object arrow
 race arrows
 type 13
 face arrow.101
-magicmap red
-anim
-arrow.101
-arrow.111
-arrow.121
-arrow.131
-arrow.141
-arrow.151
-arrow.161
-arrow.171
-arrow.181
-mina
+animation arrow
 is_animated 0
 is_turnable 1
 nrof 1

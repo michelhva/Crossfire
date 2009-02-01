@@ -9,15 +9,8 @@ material 2
 dam 10
 weight 30000
 value 5
-anim
-shovel_1.111
-shovel_1.112
-shovel_1.113
-shovel_1.114
-shovel_1.115
-mina
+animation shovel_1
 attacktype 1
-magicmap black
 name_pl shovels
 client_type 145
 body_arm -2

@@ -5,7 +5,6 @@ last_sp 7
 slaying deathtree
 type 15
 face saw.111
-magicmap grey
 material 18
 dam 4
 weight 6500

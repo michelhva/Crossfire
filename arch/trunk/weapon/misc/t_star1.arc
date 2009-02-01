@@ -11,7 +11,6 @@ weight 325
 value 45
 attacktype 1
 weapontype 2
-magicmap grey
 name_pl throwing stars
 client_type 101
 body_arm -1

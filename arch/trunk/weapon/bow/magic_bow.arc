@@ -3,12 +3,7 @@ name Energy Bow
 race arrows
 type 14
 nrof 1
-anim
-magic_bow.111
-magic_bow.112
-magic_bow.113
-magic_bow.114
-mina
+animation magic_bow
 anim_speed 10
 client_anim_random 1
 material 16
@@ -21,7 +16,6 @@ wc 3
 value 1700000
 no_strength 0
 attacktype 1
-magicmap black
 name_pl Energy Bows
 client_type 151
 body_arm -2

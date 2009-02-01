@@ -11,7 +11,6 @@ value 45
 type 15
 attacktype 1
 weapontype 5
-magicmap white
 client_type 101
 body_arm -1
 skill one handed weapons

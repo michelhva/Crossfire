@@ -10,7 +10,6 @@ weight 2000
 value 10
 attacktype 1
 weapontype 2
-magicmap grey
 name dagger
 name_pl daggers
 client_type 101

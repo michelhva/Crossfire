@@ -11,7 +11,6 @@ weight 28000
 value 500
 attacktype 1
 weapontype 1
-magicmap white
 client_type 101
 body_arm -2
 skill two handed weapons

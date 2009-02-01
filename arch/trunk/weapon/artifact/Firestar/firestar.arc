@@ -2,15 +2,7 @@ Object firestar
 name Firestar
 nrof 1
 title named Fearless
-anim
-firestar.111
-firestar.112
-firestar.111
-firestar.112
-firestar.111
-firestar.112
-firestar.113
-mina
+animation firestar
 weapontype 7
 anim_speed 3
 client_anim_random 1
@@ -26,7 +18,6 @@ resist_drain 100
 resist_fear 100
 value 400000
 weight 40000
-magicmap yellow
 name_pl Firestars
 client_type 100
 body_arm -2

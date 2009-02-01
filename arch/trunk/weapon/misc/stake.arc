@@ -10,7 +10,6 @@ weight 2000
 value 20
 attacktype 1
 weapontype 5
-magicmap khaki
 name_pl stakes
 client_type 145
 body_arm -1

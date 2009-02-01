@@ -11,7 +11,6 @@ weight 5000
 value 20
 attacktype 1
 weapontype 5
-magicmap black
 name_pl taifus
 client_type 145
 body_arm -1

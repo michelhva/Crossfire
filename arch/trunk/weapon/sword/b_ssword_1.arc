@@ -11,7 +11,6 @@ weight 10000
 value 7
 attacktype 1
 weapontype 1
-magicmap white
 name shortsword
 name_pl shortswords
 client_type 101

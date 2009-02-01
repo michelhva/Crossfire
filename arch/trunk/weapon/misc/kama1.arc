@@ -9,7 +9,6 @@ weight 7000
 value 47
 attacktype 1
 weapontype 3
-magicmap brown
 name kama
 name_pl kamas
 client_type 106
@@ -27,7 +26,6 @@ weight 7000
 value 47
 attacktype 1
 weapontype 3
-magicmap brown
 name kama
 name_pl kamas
 client_type 106

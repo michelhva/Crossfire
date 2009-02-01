@@ -5,7 +5,6 @@ type 14
 nrof 1
 material 16
 face compositebow.111
-magicmap brown
 dam 14
 weight 3000
 value 100

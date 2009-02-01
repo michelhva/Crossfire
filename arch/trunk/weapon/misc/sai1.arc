@@ -12,7 +12,6 @@ weight 2000
 value 80
 attacktype 1
 weapontype 5
-magicmap black
 name_pl sais
 client_type 145
 body_arm -1
@@ -32,7 +31,6 @@ weight 2000
 value 80
 attacktype 1
 weapontype 5
-magicmap black
 name_pl sais
 client_type 145
 body_arm -1

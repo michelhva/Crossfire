@@ -11,7 +11,6 @@ weight 21500
 value 48
 attacktype 1
 weapontype 1
-magicmap white
 name_pl broadswords
 client_type 101
 body_arm -1

@@ -10,7 +10,6 @@ weight 11000
 value 80
 attacktype 1
 weapontype 4
-magicmap grey
 name_pl katanas
 client_type 101
 body_arm -1

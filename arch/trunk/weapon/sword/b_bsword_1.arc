@@ -11,7 +11,6 @@ weight 20000
 value 11
 attacktype 1
 weapontype 1
-magicmap white
 name broadsword
 name_pl broadswords
 client_type 101
