@@ -6,18 +6,7 @@ face viking.151
 msg
 Northmen are simply humans who have been shaped by their harsh environment. They are stronger, quicker, and hardier than most humans, but also stupid and impious. Most races also consider them a bit unattractive. They have some resistance to cold, but the few of them who take up magic find it difficult to master fire spells.
 endmsg
-magicmap black
-anim
-viking.111
-viking.112
-viking.131
-viking.132
-viking.151
-viking.152
-viking.171
-viking.172
-facings 4
-mina
+animation northman_player
 resist_cold 30
 is_animated 1
 anim_speed -1

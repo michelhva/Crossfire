@@ -8,17 +8,7 @@ An Elf is a child of Faerie, a scion of Lythander. Being of Faerie, they heal mo
 Every elf is taught the use of a bow, but their long lives allow them to take up any trade. They are weaker and less hardy than humans, but quicker of body and mind, and generally make more powerful spellcasters. However, they have a notoriously offhanded attitude toward their religious devotions and make poor priests.
 As a race, Elves possess a preternatural beauty and eyes that see in the dark.
 endmsg
-anim
-elf.111
-elf.112
-elf.131
-elf.132
-elf.151
-elf.152
-elf.171
-elf.172
-facings 4
-mina
+animation elf_player
 is_animated 1
 anim_speed -1
 type 1
@@ -42,7 +32,6 @@ Int 2
 Wis -3
 Pow 2
 Cha 4
-magicmap black
 body_range 1
 body_arm 2
 body_torso 1

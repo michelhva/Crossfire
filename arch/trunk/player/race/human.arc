@@ -6,18 +6,7 @@ face human.151
 msg
 Humans are the generalists of the races. They are fit for any trade, and usually pick up a skill from their parents in addition to what they've learned as apprentices in their craft.
 endmsg
-magicmap black
-anim
-human.111
-human.112
-human.131
-human.132
-human.151
-human.152
-human.171
-human.172
-facings 4
-mina
+animation human_player
 is_animated 1
 anim_speed -1
 type 1

@@ -3,17 +3,7 @@ name mountain dwarf
 anim_suffix class_mountain_dwarf
 randomitems barbarian_class_items
 face mountain_dwarf.151
-anim
-mountain_dwarf.111
-mountain_dwarf.112
-mountain_dwarf.131
-mountain_dwarf.132
-mountain_dwarf.151
-mountain_dwarf.152
-mountain_dwarf.171
-mountain_dwarf.172
-facings 4
-mina
+animation mountain_dwarf_class
 is_animated 1
 anim_speed -1
 type 37

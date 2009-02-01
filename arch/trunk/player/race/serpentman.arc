@@ -7,17 +7,7 @@ msg
 The Serpentman adventurer is a rare breed. Few Serpentmen ever leave the swamps, as they are not well adjusted for human society. Their heads and feet are not shaped properly to use boots or helmets made for humanoid folk, but their unusual build has given rise to a cultural habit of wearing pieces of bracelet- and ring-like jewelry on their tails. They possess a tough hide and strong legs which enable them to leap further than most folks. Their nasty claws can also double as weapons.
 They are only partially warm-blooded, and are as a result somewhat susceptible to cold.
 endmsg
-anim
-serpentman.111
-serpentman.112
-serpentman.131
-serpentman.132
-serpentman.151
-serpentman.152
-serpentman.171
-serpentman.172
-facings 4
-mina
+animation serpentman_player
 is_animated 0
 type 1
 level 1
@@ -33,7 +23,6 @@ weight 70000
 food 999
 speed 1
 attacktype 1
-magicmap green
 resist_cold -50
 resist_fire 30
 resist_electricity 30
