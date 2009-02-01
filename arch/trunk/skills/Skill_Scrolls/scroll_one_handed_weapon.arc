@@ -4,7 +4,6 @@ name_pl scrolls of one handed weapons
 skill one handed weapons
 face scrollr.111
 race scrolls
-magicmap white
 nrof 1
 type 130
 material 1

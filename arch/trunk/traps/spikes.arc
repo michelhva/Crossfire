@@ -7,12 +7,8 @@ hp 1
 msg
 You are stabbed by spikes!
 endmsg
-anim
-tspikes.111
-tspikes.111
-mina
+animation trap_spikes2
 level 1
-magicmap black
 is_animated 0
 invisible 1
 no_pick 1

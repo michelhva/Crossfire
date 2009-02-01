@@ -1,6 +1,5 @@
 Object amulet
 face amulet.111
-magicmap orange
 type 39
 material 12
 weight 500
@@ -13,7 +12,6 @@ end
 
 Object amulet_white
 face amulet_white.111
-magicmap grey
 type 39
 material 12
 materialname platinum and glass
@@ -28,7 +26,6 @@ end
 
 Object amulet_gray
 face amulet_gray.111
-magicmap grey
 type 39
 material 12
 materialname silver and glass

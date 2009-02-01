@@ -2,13 +2,7 @@ Object ring_nodrain
 name strange ring
 name_pl strange rings
 face ring_drain.111
-anim
-ring_drain.111
-ring_drain.112
-ring_drain.113
-ring_drain.114
-mina
-magicmap black
+animation ring_nodrain
 value 10000
 weight 40
 type 70

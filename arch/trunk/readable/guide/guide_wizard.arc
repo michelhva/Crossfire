@@ -40,5 +40,4 @@ subtype 2
 skill literacy
 material 1
 weight 4000
-magicmap green
 end

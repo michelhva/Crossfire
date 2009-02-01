@@ -2,11 +2,9 @@ Object turningboat
 type 2
 face turningboat.x11
 animation turningboat
-magicmap brown
 no_pick 1
 move_allow walk
 move_block boat
-visibility 100
 client_type 25012
 speed 0.5
 container 10000000
@@ -18,33 +16,28 @@ More
 Object turningboat_2
 name turningboat
 type 2
-magicmap brown
 face turningboat.x11
 animation turningboat
 x 1
 no_pick 1
 move_allow walk
 move_block boat
-visibility 100
 end
 More
 Object turningboat_3
 name turningboat
 type 2
-magicmap brown
 face turningboat.x11
 animation turningboat
 y 1
 no_pick 1
 move_allow walk
 move_block boat
-visibility 100
 end
 More
 Object turningboat_4
 name turningboat
 type 2
-magicmap brown
 face turningboat.x11
 animation turningboat
 x 1
@@ -52,5 +45,4 @@ y 1
 no_pick 1
 move_allow walk
 move_block boat
-visibility 100
 end

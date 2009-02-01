@@ -7,12 +7,8 @@ hp 1
 msg
 You are pricked by a poison needle!
 endmsg
-anim
-needle.111
-needle.111
-mina
+animation trap_needle
 level 1
-magicmap black
 is_animated 0
 invisible 1
 no_pick 1

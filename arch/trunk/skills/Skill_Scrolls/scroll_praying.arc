@@ -4,7 +4,6 @@ name_pl scrolls of praying
 skill praying
 face scrollr.111
 race scrolls
-magicmap white
 nrof 1
 type 130
 material 1

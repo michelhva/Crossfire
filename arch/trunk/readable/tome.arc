@@ -8,7 +8,6 @@ skill literacy
 material 1
 value 80
 weight 8000
-magicmap brown
 name_pl tomes
 client_type 1041
 end

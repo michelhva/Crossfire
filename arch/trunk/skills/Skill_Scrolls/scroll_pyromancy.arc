@@ -4,7 +4,6 @@ name_pl scrolls of pyromancy
 skill pyromancy
 face scrollr.111
 race scrolls
-magicmap white
 nrof 1
 type 130
 material 1

@@ -8,7 +8,6 @@ skill literacy
 material 1
 value 65
 weight 4000
-magicmap green
 name_pl books
 client_type 1041
 end

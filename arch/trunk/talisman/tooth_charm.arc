@@ -1,6 +1,5 @@
 Object tooth_charm
 face tooth_charm.111
-magicmap white
 type 39
 material 12
 weight 300

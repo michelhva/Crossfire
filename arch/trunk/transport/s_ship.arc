@@ -5,8 +5,6 @@ face s_ship.x11
 no_pick 1
 move_allow walk
 move_block boat
-visibility 100
-magicmap grey
 client_type 25012
 end
 More
@@ -18,8 +16,6 @@ x 1
 no_pick 1
 move_allow walk
 move_block boat
-visibility 100
-magicmap grey
 end
 More
 Object s_ship3
@@ -30,8 +26,6 @@ y 1
 no_pick 1
 move_allow walk
 move_block boat
-visibility 100
-magicmap black
 end
 More
 Object s_ship4
@@ -43,6 +37,4 @@ y 1
 no_pick 1
 move_allow walk
 move_block boat
-visibility 100
-magicmap black
 end

@@ -1,7 +1,6 @@
 Object holy_symbol
 name holy symbol
 face holy_symbol.111
-magicmap brown
 type 74
 skill praying
 material 20

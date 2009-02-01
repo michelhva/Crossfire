@@ -7,12 +7,8 @@ hp 1
 msg
 You set off a trap!
 endmsg
-anim
-trap.111
-trap.111
-mina
+animation trap
 level 1
-magicmap black
 is_animated 0
 invisible 1
 no_pick 1

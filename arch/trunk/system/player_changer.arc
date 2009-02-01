@@ -1,13 +1,7 @@
 Object player_changer
 face teleporter.111
-magicmap red
 speed 0.1
 type 57
 no_pick 1
-anim
-teleporter.111
-teleporter.112
-teleporter.113
-mina
-visibility 100
+animation player_changer
 end
