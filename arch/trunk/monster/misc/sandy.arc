@@ -2,16 +2,7 @@ Object sandy
 name sandy
 race faerie
 face sandy.111
-magicmap brown
-anim
-sandy.112
-sandy.113
-sandy.114
-sandy.115
-sandy.114
-sandy.113
-sandy.112
-mina
+animation sandy
 monster 1
 move_type walk
 alive 1

@@ -2,12 +2,8 @@ Object fire_witch
 name fire witch
 race fire_elemental
 face witch_fire.111
-magicmap red
 randomitems witch_fire
-anim
-witch_fire.111
-witch_fire.112
-mina
+animation fire_witch
 monster 1
 move_type walk fly_low
 alive 1

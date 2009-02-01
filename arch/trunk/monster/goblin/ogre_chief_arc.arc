@@ -3,10 +3,7 @@ name ogre chief
 randomitems ogre
 race giant
 face ogre_chief.111
-anim
-ogre_chief.111
-ogre_chief.111
-mina
+animation ogre_chief_arc
 monster 1
 move_type walk
 sleep 1
@@ -38,7 +35,6 @@ can_use_ring 1
 can_use_shield 1
 can_use_armour 1
 can_use_weapon 1
-magicmap brown
 body_skill 1
 body_finger 2
 body_torso 1

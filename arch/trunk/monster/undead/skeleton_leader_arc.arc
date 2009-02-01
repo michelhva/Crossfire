@@ -3,11 +3,7 @@ name skeleton bezerk
 randomitems skeleton
 race undead
 face skeleton_leader.111
-magicmap white
-anim
-skeleton_leader.111
-skeleton_leader.111
-mina
+animation skeleton_leader_arc
 monster 1
 move_type walk
 sleep 1

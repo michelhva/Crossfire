@@ -3,14 +3,7 @@ name viking
 race viking
 randomitems viking
 face viking.171
-magicmap black
-anim
-viking.111
-viking.131
-viking.151
-viking.171
-facings 4
-mina
+animation viking
 is_animated 0
 type 37
 level 1

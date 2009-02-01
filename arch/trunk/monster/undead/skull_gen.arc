@@ -15,6 +15,5 @@ speed 0.0002
 maxsp 1
 weight 2000
 undead 1
-magicmap white
 generator_limit 5
 end

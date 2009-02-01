@@ -3,13 +3,7 @@ name princess
 randomitems princess
 race human
 face princess.111
-anim
-princess.111
-princess.112
-princess.113
-princess.112
-mina
-magicmap black
+animation princess
 maxsp 9
 sp 9
 Pow 9

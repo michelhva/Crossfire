@@ -2,11 +2,7 @@ Object evil_master3
 name Evil Master
 race demon
 face evil_master3.111
-magicmap red
-anim
-evil_master3.111
-evil_master3.112
-mina
+animation evil_master3
 Con 100
 Wis 40
 Pow 40

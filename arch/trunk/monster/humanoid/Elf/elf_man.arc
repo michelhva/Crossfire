@@ -3,7 +3,6 @@ race faerie
 name elf man
 randomitems elf_1
 face elf_lad.111
-magicmap black
 animation elf_man
 monster 1
 move_type walk

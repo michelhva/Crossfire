@@ -2,12 +2,7 @@ Object dave
 name Dave
 race undead
 face dave.111
-anim
-dave.111
-dave.112
-dave.113
-mina
-magicmap red
+animation dave
 Str 100
 Dex 100
 Con 100
@@ -39,7 +34,6 @@ can_cast_spell 1
 can_use_scroll 1
 can_use_ring 1
 sleep 1
-magicmap red
 body_finger 2
 body_range 1
 end

@@ -2,11 +2,7 @@ Object fire_elemental
 name fire elemental
 race fire_elemental
 face elem_fire.111
-magicmap red
-anim
-elem_fire.111
-elem_fire.112
-mina
+animation fire_elemental
 monster 1
 move_type walk fly_low
 alive 1

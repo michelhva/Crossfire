@@ -4,7 +4,6 @@ other_arch beholder
 name beholder hive
 generator 1
 face behold_gen.111
-magicmap red
 hp 100
 maxhp 100
 exp 180

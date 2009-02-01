@@ -18,7 +18,6 @@ Dex 13
 dam 5
 level 1
 speed -0.15
-magicmap green
 weight 100000
 unaggressive 1
 can_use_rod 1

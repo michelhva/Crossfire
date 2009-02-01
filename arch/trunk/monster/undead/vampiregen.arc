@@ -17,6 +17,5 @@ sp 127
 maxsp 1
 weight 2000000
 undead 1
-magicmap brown
 generator_limit 5
 end

@@ -2,11 +2,7 @@ Object ant_larvae
 face ant_larvae.111
 race insect
 other_arch war_ant
-anim
-ant_larvae.111
-ant_larvae.112
-mina
-magicmap green
+animation ant_larvae
 monster 1
 move_type walk
 no_pick 1

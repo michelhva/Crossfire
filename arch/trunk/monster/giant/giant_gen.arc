@@ -4,7 +4,6 @@ other_arch giant
 name bean stalk
 generator 1
 face giant_gen.111
-magicmap red
 speed 0.003
 alive 1
 hp 100

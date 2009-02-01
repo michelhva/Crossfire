@@ -3,11 +3,7 @@ name goblin chief
 randomitems goblin
 race goblin
 face goblin_chief.111
-magicmap green
-anim
-goblin_chief.111
-goblin_chief.111
-mina
+animation goblin_chief_arc
 monster 1
 move_type walk
 sleep 1

@@ -2,11 +2,7 @@ Object nazgul
 race undead
 randomitems ring
 face nazgul.111
-anim
-nazgul.111
-nazgul.112
-mina
-magicmap blue
+animation nazgul
 hp 200
 maxhp 200
 Con 10

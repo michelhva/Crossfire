@@ -2,13 +2,7 @@ Object c_woman
 name city dweller
 randomitems jail
 face woman.151
-anim
-facings 4
-woman.151
-woman.131
-woman.151
-woman.171
-mina
+animation c_woman
 race human
 sp 10
 maxsp 10

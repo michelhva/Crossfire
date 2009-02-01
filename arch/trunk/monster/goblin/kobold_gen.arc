@@ -4,7 +4,6 @@ other_arch kobold
 name generator
 generator 1
 face kobold_gen.111
-magicmap red
 hp 20
 maxhp 20
 exp 30

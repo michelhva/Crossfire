@@ -3,10 +3,7 @@ name ogre champion
 randomitems ogre
 race giant
 face ogre_leader.111
-anim
-ogre_leader.111
-ogre_leader.111
-mina
+animation ogre_leader_arc
 monster 1
 move_type walk
 sleep 1
@@ -37,7 +34,6 @@ can_use_ring 1
 can_use_shield 1
 can_use_armour 1
 can_use_weapon 1
-magicmap brown
 body_skill 1
 body_finger 2
 body_torso 1

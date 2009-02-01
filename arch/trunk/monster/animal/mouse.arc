@@ -2,11 +2,7 @@ Object mouse
 other_arch mouse
 face mouse.111
 race animal
-magicmap brown
-anim
-mouse.111
-mouse.112
-mina
+animation mouse
 monster 1
 move_type walk
 no_pick 1

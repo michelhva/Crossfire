@@ -7,13 +7,7 @@ move_type walk
 sleep 1
 Wis 10
 face mabu.x11
-magicmap brown
-anim
-mabu.x11
-mabu.x12
-mabu.x13
-mabu.x12
-mina
+animation mabu
 resist_electricity 50
 exp 4000
 ac 6
@@ -40,13 +34,7 @@ More
 Object mabu_2
 name mabu suke
 face mabu.x11
-magicmap brown
-anim
-mabu.x11
-mabu.x12
-mabu.x13
-mabu.x12
-mina
+animation mabu
 monster 1
 move_type walk
 alive 1

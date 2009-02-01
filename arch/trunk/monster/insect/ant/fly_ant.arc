@@ -1,13 +1,7 @@
 Object fly_ant
 face fly_ant.131
 race insect
-anim
-facings 2
-fly_ant.131
-fly_ant.132
-fly_ant.171
-fly_ant.172
-mina
+animation fly_ant
 monster 1
 move_type walk fly_low
 sleep 1

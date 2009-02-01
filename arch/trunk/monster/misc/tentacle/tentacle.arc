@@ -2,16 +2,7 @@ Object tentacle
 name leathery tentacle
 race animal
 face tentacle.113
-anim
-blank.111
-blank.111
-blank.111
-tentacle.111
-tentacle.112
-tentacle.113
-tentacle.112
-tentacle.111
-mina
+animation tentacle
 anim_speed 6
 randomitems tentacle
 monster 1

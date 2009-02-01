@@ -2,13 +2,7 @@ Object beholder
 randomitems beholder
 race unnatural
 face beholder.111
-magicmap green
-anim
-beholder.111
-beholder.112
-beholder.113
-beholder.114
-mina
+animation beholder
 monster 1
 move_type walk fly_low
 sleep 1

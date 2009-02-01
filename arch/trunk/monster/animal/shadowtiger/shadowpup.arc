@@ -2,19 +2,7 @@ Object shadowpup
 name shadowtiger pup
 face panther.131
 race animal
-anim
-facings 2
-panther.131
-panther.132
-blank.111
-panther.133
-blank.111
-panther.171
-panther.172
-blank.111
-panther.173
-blank.111
-mina
+animation shadowpup
 monster 1
 move_type walk
 sleep 1

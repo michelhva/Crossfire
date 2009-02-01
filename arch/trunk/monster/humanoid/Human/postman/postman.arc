@@ -2,13 +2,7 @@ Object postman
 randomitems postman
 face postman.131
 race human
-anim
-facings 2
-postman.131
-postman.132
-postman.171
-postman.172
-mina
+animation postman
 monster 1
 move_type walk
 alive 1

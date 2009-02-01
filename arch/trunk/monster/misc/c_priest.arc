@@ -2,13 +2,7 @@ Object c_minor_priest
 name Minor Chaos Priest
 randomitems c_m_priest
 face c_priest.131
-anim
-facings 2
-c_priest.131
-c_priest.132
-c_priest.171
-c_priest.172
-mina
+animation c_minor_priest
 monster 1
 move_type walk
 Wis 10
@@ -61,13 +55,7 @@ Object c_priest
 name Chaos Priest
 randomitems c_priest
 face c_priest.131
-anim
-facings 2
-c_priest.131
-c_priest.132
-c_priest.171
-c_priest.172
-mina
+animation c_priest
 monster 1
 move_type walk
 Wis 10
@@ -87,7 +75,6 @@ maxhp 250
 Con 10
 wc 8
 dam 16
-magicmap red
 speed 0.25
 resist_physical 30
 resist_magic 30

@@ -3,11 +3,7 @@ name goblin champion
 randomitems goblin
 race goblin
 face goblin_leader.111
-magicmap green
-anim
-goblin_leader.111
-goblin_leader.111
-mina
+animation goblin_leader_arc
 monster 1
 move_type walk
 sleep 1

@@ -2,12 +2,7 @@ Object evil_master4
 name Evil Master
 race demon
 face evil_master4.111
-magicmap black
-anim
-facings 2
-evil_master4.111
-evil_master4.112
-mina
+animation evil_master4
 Str 30
 Con 80
 Wis 25
@@ -36,5 +31,4 @@ is_animated 1
 monster 1
 move_type walk
 unaggressive 1
-magicmap grey
 end

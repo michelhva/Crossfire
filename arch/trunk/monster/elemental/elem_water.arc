@@ -2,11 +2,7 @@ Object water_elemental
 name water elemental
 race water_elemental
 face elem_water.111
-magicmap blue
-anim
-elem_water.111
-elem_water.112
-mina
+animation water_elemental
 monster 1
 move_type walk
 alive 1

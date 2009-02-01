@@ -3,13 +3,7 @@ name blue dragon
 race dragon
 randomitems dragon_player_items
 face blue_dragon2.151
-anim
-blue_dragon2.151
-blue_dragon2.152
-blue_dragon2.171
-blue_dragon2.172
-facings 2
-mina
+animation blue_dragon2
 monster 1
 move_type walk
 unaggressive 1
@@ -22,7 +16,6 @@ weight 70000
 food 999
 speed -0.3
 attacktype 1
-magicmap black
 can_use_shield 0
 can_use_armour 0
 can_use_weapon 0

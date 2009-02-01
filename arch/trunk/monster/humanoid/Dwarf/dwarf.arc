@@ -4,7 +4,6 @@ name dwarf
 randomitems dwarf
 face dwarf.111
 animation dwarf
-magicmap grey
 maxsp 9
 sp 9
 Pow 21

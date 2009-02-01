@@ -3,10 +3,7 @@ race faerie
 name dark elf
 randomitems dark_elf
 face dark_elf.111
-anim
-dark_elf.111
-dark_elf.112
-mina
+animation dark_elf
 monster 1
 move_type walk
 sleep 1
@@ -40,7 +37,6 @@ can_use_shield 1
 can_use_armour 1
 can_use_weapon 1
 attack_movement 1
-magicmap black
 body_skill 1
 body_finger 2
 body_torso 1

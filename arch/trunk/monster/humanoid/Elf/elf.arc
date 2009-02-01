@@ -25,7 +25,6 @@ Wis -3
 Cha 2
 Int 1
 Pow 1
-magicmap black
 body_range 1
 body_arm 2
 body_torso 1

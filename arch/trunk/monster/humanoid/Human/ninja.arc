@@ -3,13 +3,7 @@ race ninja
 name ninja
 randomitems ninja
 face ninja.171
-anim
-ninja.111
-ninja.131
-ninja.151
-ninja.171
-facings 4
-mina
+animation ninja
 is_animated 0
 type 37
 level 1
@@ -31,7 +25,6 @@ Wis -1
 Cha -1
 Int -2
 Pow 0
-magicmap black
 body_range 1
 body_arm 2
 body_torso 1

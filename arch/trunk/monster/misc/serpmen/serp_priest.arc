@@ -3,11 +3,7 @@ race reptile
 name Serpentman Priest
 face serp_priest.131
 randomitems serp_priest
-anim
-facings 2
-serp_priest.131
-serp_priest.171
-mina
+animation serp_priest
 monster 1
 move_type walk
 no_pick 1
@@ -45,7 +41,6 @@ can_use_ring 1
 can_use_shield 1
 can_use_armour 1
 can_use_weapon 1
-magicmap white
 body_skill 1
 body_finger 2
 body_torso 1

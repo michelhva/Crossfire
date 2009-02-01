@@ -3,11 +3,7 @@ name Fiend
 race demon
 randomitems fiend
 face fiend.111
-magicmap red
-anim
-fiend.111
-fiend.112
-mina
+animation fiend
 monster 1
 move_type walk
 Wis 15

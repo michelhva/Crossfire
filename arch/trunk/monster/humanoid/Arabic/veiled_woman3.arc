@@ -3,7 +3,6 @@ race human
 name Veiled woman
 face veiled_woman3.111
 alive 1
-magicmap green
 monster 1
 move_type walk
 no_pick 1

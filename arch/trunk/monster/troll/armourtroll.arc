@@ -3,11 +3,7 @@ randomitems troll
 race troll
 name small armoured troll
 face armourtroll2.111
-anim
-armourtroll2.111
-armourtroll2.112
-mina
-magicmap brown
+animation armour_troll2
 monster 1
 move_type walk
 sleep 1
@@ -45,7 +41,6 @@ randomitems troll
 race troll
 name small armoured troll
 face armourtroll3.111
-magicmap brown
 monster 1
 move_type walk
 sleep 1
@@ -83,7 +78,6 @@ randomitems troll
 race troll
 name small armoured troll
 face armourtroll4.111
-magicmap brown
 monster 1
 move_type walk
 sleep 1

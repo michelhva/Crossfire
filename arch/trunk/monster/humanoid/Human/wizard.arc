@@ -3,7 +3,6 @@ name wizard
 race wizard
 randomitems wizard
 face wizard.171
-magicmap black
 animation wizard
 is_animated 0
 type 37

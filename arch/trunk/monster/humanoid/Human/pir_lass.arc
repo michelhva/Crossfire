@@ -3,11 +3,7 @@ race human
 name pirate lass
 randomitems pirate
 face pir_lass.111
-anim
-pir_lass.111
-pir_lass.112
-mina
-magicmap black
+animation pirate_lass
 maxsp 9
 sp 9
 Int 15

@@ -7,12 +7,7 @@ move_type walk
 sleep 1
 Wis 20
 face baby_drag.111
-anim
-baby_drag.111
-baby_drag.112
-baby_drag.113
-mina
-magicmap red
+animation baby_dragon
 level 25
 Con 8
 Pow 8

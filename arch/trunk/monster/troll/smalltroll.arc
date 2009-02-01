@@ -3,11 +3,7 @@ randomitems troll
 race troll
 name small troll
 face smalltroll.111
-anim
-smalltroll.111
-smalltroll.112
-mina
-magicmap brown
+animation small_troll
 monster 1
 move_type walk
 sleep 1

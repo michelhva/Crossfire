@@ -3,13 +3,7 @@ name city dweller
 race human
 randomitems jail
 face man.151
-anim
-facings 4
-man.151
-man.131
-man.151
-man.171
-mina
+animation c_man
 sp 10
 maxsp 10
 Str 10

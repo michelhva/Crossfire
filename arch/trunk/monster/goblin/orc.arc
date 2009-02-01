@@ -2,10 +2,7 @@ Object orc
 randomitems orc
 race goblin
 face orc.111
-anim
-orc.111
-orc.112
-mina
+animation orc
 monster 1
 move_type walk
 sleep 1
@@ -29,7 +26,6 @@ can_use_ring 1
 can_use_shield 1
 can_use_armour 1
 can_use_weapon 1
-magicmap black
 body_finger 2
 body_torso 1
 body_head 1

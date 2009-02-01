@@ -3,10 +3,7 @@ race undead
 name Banshee
 randomitems banshee
 face banshee.111
-anim
-banshee.111
-banshee.112
-mina
+animation banshee
 monster 1
 move_type walk
 sleep 1
@@ -30,7 +27,6 @@ maxsp 60
 will_apply 2
 pick_up 24
 can_cast_spell 1
-magicmap black
 speed -0.25
 attacktype 17
 exp 15000

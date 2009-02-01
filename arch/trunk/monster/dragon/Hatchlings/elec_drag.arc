@@ -3,14 +3,7 @@ race dragon
 name electric dragon hatchling
 randomitems spark
 face elec_drag.171
-magicmap yellow
-anim
-facings 2
-elec_drag.171
-elec_drag.172
-elec_drag.131
-elec_drag.132
-mina
+animation elec_dragon
 level 8
 monster 1
 move_type walk fly_low

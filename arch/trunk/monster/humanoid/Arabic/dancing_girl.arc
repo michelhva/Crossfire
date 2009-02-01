@@ -2,11 +2,7 @@ Object dancing_girl
 race human
 name Dancing girl
 face dancing_girl.111
-anim
-dancing_girl.111
-dancing_girl.112
-dancing_girl.113
-mina
+animation dancing_girl
 alive 1
 monster 1
 move_type walk

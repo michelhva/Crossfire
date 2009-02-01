@@ -2,7 +2,6 @@ Object destroying_angel
 name Retributioner
 race angel
 face retributioner.x11
-magicmap black
 randomitems angel
 monster 1
 move_type walk fly_low

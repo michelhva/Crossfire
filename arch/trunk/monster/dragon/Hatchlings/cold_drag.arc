@@ -3,14 +3,7 @@ race dragon
 name cold dragon hatchling
 randomitems cold_dragon
 face cold_drag.171
-magicmap red
-anim
-facings 2
-cold_drag.171
-cold_drag.172
-cold_drag.131
-cold_drag.132
-mina
+animation cold_dragon
 level 7
 monster 1
 move_type walk fly_low

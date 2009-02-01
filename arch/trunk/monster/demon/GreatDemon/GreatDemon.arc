@@ -46,7 +46,6 @@ sleep 1
 Wis 20
 see_invisible 1
 run_away 2
-magicmap red
 body_skill 1
 body_finger 2
 body_torso 1
@@ -66,7 +65,6 @@ face GreatDemon.x11
 x 1
 y 0
 alive 1
-magicmap red
 end
 More
 Object Greater_Demon_2
@@ -75,7 +73,6 @@ face GreatDemon.x11
 x 2
 y 0
 alive 1
-magicmap red
 end
 More
 Object Greater_Demon_3
@@ -84,7 +81,6 @@ face GreatDemon.x11
 x 3
 y 0
 alive 1
-magicmap red
 end
 More
 Object Greater_Demon_4
@@ -93,7 +89,6 @@ face GreatDemon.x11
 x 4
 y 0
 alive 1
-magicmap red
 end
 More
 Object Greater_Demon_5
@@ -102,7 +97,6 @@ face GreatDemon.x11
 x 5
 y 0
 alive 1
-magicmap red
 end
 More
 Object Greater_Demon_6
@@ -111,7 +105,6 @@ face GreatDemon.x11
 x 0
 y 1
 alive 1
-magicmap red
 end
 More
 Object Greater_Demon_7
@@ -120,7 +113,6 @@ face GreatDemon.x11
 x 1
 y 1
 alive 1
-magicmap red
 end
 More
 Object Greater_Demon_8
@@ -129,7 +121,6 @@ face GreatDemon.x11
 x 2
 y 1
 alive 1
-magicmap red
 end
 More
 Object Greater_Demon_9
@@ -138,7 +129,6 @@ face GreatDemon.x11
 x 3
 y 1
 alive 1
-magicmap red
 end
 More
 Object Greater_Demon_A
@@ -147,7 +137,6 @@ face GreatDemon.x11
 x 4
 y 1
 alive 1
-magicmap red
 end
 More
 Object Greater_Demon_B
@@ -156,7 +145,6 @@ face GreatDemon.x11
 x 5
 y 1
 alive 1
-magicmap red
 end
 More
 Object Greater_Demon_C
@@ -165,7 +153,6 @@ face GreatDemon.x11
 x 0
 y 2
 alive 1
-magicmap red
 end
 More
 Object Greater_Demon_D
@@ -174,7 +161,6 @@ face GreatDemon.x11
 x 1
 y 2
 alive 1
-magicmap red
 end
 More
 Object Greater_Demon_E
@@ -183,7 +169,6 @@ face GreatDemon.x11
 x 2
 y 2
 alive 1
-magicmap red
 end
 More
 Object Greater_Demon_F
@@ -192,7 +177,6 @@ face GreatDemon.x11
 x 3
 y 2
 alive 1
-magicmap red
 end
 More
 Object Greater_Demon_G
@@ -201,7 +185,6 @@ face GreatDemon.x11
 x 4
 y 2
 alive 1
-magicmap red
 end
 More
 Object Greater_Demon_H
@@ -210,7 +193,6 @@ face GreatDemon.x11
 x 5
 y 2
 alive 1
-magicmap red
 end
 More
 Object Greater_Demon_I
@@ -219,7 +201,6 @@ face GreatDemon.x11
 x 0
 y 3
 alive 1
-magicmap red
 end
 More
 Object Greater_Demon_J
@@ -228,7 +209,6 @@ face GreatDemon.x11
 x 1
 y 3
 alive 1
-magicmap red
 end
 More
 Object Greater_Demon_K
@@ -237,7 +217,6 @@ face GreatDemon.x11
 x 2
 y 3
 alive 1
-magicmap red
 end
 More
 Object Greater_Demon_L
@@ -246,7 +225,6 @@ face GreatDemon.x11
 x 3
 y 3
 alive 1
-magicmap red
 end
 More
 Object Greater_Demon_M
@@ -255,7 +233,6 @@ face GreatDemon.x11
 x 4
 y 3
 alive 1
-magicmap red
 end
 More
 Object Greater_Demon_N
@@ -264,7 +241,6 @@ face GreatDemon.x11
 x 5
 y 3
 alive 1
-magicmap red
 end
 More
 Object Greater_Demon_O
@@ -273,7 +249,6 @@ face GreatDemon.x11
 x 0
 y 4
 alive 1
-magicmap red
 end
 More
 Object Greater_Demon_P
@@ -282,7 +257,6 @@ face GreatDemon.x11
 x 1
 y 4
 alive 1
-magicmap red
 end
 More
 Object Greater_Demon_Q
@@ -291,7 +265,6 @@ face GreatDemon.x11
 x 2
 y 4
 alive 1
-magicmap red
 end
 More
 Object Greater_Demon_R
@@ -300,7 +273,6 @@ face GreatDemon.x11
 x 3
 y 4
 alive 1
-magicmap red
 end
 More
 Object Greater_Demon_S
@@ -309,7 +281,6 @@ face GreatDemon.x11
 x 4
 y 4
 alive 1
-magicmap red
 end
 More
 Object Greater_Demon_T
@@ -318,7 +289,6 @@ face GreatDemon.x11
 x 5
 y 4
 alive 1
-magicmap red
 end
 More
 Object Greater_Demon_U
@@ -327,7 +297,6 @@ face GreatDemon.x11
 x 0
 y 5
 alive 1
-magicmap red
 end
 More
 Object Greater_Demon_V
@@ -336,7 +305,6 @@ face GreatDemon.x11
 x 1
 y 5
 alive 1
-magicmap red
 end
 More
 Object Greater_Demon_W
@@ -345,7 +313,6 @@ face GreatDemon.x11
 x 2
 y 5
 alive 1
-magicmap red
 end
 More
 Object Greater_Demon_X
@@ -354,7 +321,6 @@ face GreatDemon.x11
 x 3
 y 5
 alive 1
-magicmap red
 end
 More
 Object Greater_Demon_Y
@@ -363,7 +329,6 @@ face GreatDemon.x11
 x 4
 y 5
 alive 1
-magicmap red
 end
 More
 Object Greater_Demon_Z
@@ -372,7 +337,6 @@ face GreatDemon.x11
 x 5
 y 5
 alive 1
-magicmap red
 end
 More
 Object Greater_Demon_a
@@ -381,7 +345,6 @@ face GreatDemon.x11
 x 0
 y 6
 alive 1
-magicmap red
 end
 More
 Object Greater_Demon_b
@@ -390,7 +353,6 @@ face GreatDemon.x11
 x 1
 y 6
 alive 1
-magicmap red
 end
 More
 Object Greater_Demon_c
@@ -399,7 +361,6 @@ face GreatDemon.x11
 x 2
 y 6
 alive 1
-magicmap red
 end
 More
 Object Greater_Demon_d
@@ -408,7 +369,6 @@ face GreatDemon.x11
 x 3
 y 6
 alive 1
-magicmap red
 end
 More
 Object Greater_Demon_e
@@ -417,7 +377,6 @@ face GreatDemon.x11
 x 4
 y 6
 alive 1
-magicmap red
 end
 More
 Object Greater_Demon_f
@@ -426,5 +385,4 @@ face GreatDemon.x11
 x 5
 y 6
 alive 1
-magicmap red
 end

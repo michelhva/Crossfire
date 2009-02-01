@@ -2,13 +2,7 @@ Object halfling_p
 name halfling
 randomitems halfling
 face halfling.111
-anim
-halfling.151
-halfling.131
-halfling.111
-halfling.171
-facings 4
-mina
+animation halfling_p
 is_animated 0
 type 37
 level 1
@@ -27,7 +21,6 @@ Str -4
 Dex 3
 Con 4
 Wis -3
-magicmap blue
 body_range 1
 body_arm 2
 body_torso 1

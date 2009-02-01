@@ -3,12 +3,7 @@ name Death's Head
 randomitems deathshead
 race undead
 face deathshead.111
-anim
-deathshead.111
-deathshead.112
-deathshead.113
-deathshead.114
-mina
+animation deathshead
 monster 1
 move_type walk fly_low
 sleep 1
@@ -56,5 +51,4 @@ can_cast_spell 1
 can_see_in_dark 1
 attack_movement 1
 glow_radius -5
-magicmap grey
 end

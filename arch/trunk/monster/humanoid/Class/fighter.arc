@@ -4,7 +4,6 @@ race human
 randomitems fighter
 face fighter.111
 animation fighter
-magicmap grey
 maxsp 5
 sp 5
 Str 15

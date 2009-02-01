@@ -2,15 +2,8 @@ Object knight
 race human
 name Royal Guard
 face knight.111
-magicmap blue
 speed 0.1
-anim
-knight.111
-knight.112
-knight.113
-knight.114
-knight.115
-mina
+animation knight
 alive 1
 monster 1
 move_type walk

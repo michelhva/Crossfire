@@ -2,11 +2,7 @@ Object pet_necro
 race animal
 name pet of Necromancer
 face pet_necro.111
-anim
-pet_necro.111
-pet_necro.112
-mina
-magicmap black
+animation pet_necro
 Con 1
 Wis 15
 hp 100
@@ -25,5 +21,4 @@ monster 1
 move_type walk
 hitback 1
 sleep 1
-magicmap grey
 end

@@ -5,11 +5,7 @@ face killerbee.111
 speed -0.25
 weight -1
 no_pick 1
-anim
-killerbee.111
-killerbee.112
-mina
-magicmap orange
+animation killer_bee
 monster 1
 move_type walk fly_low
 sleep 1

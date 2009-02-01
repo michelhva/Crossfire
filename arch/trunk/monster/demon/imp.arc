@@ -2,11 +2,7 @@ Object imp
 name imp
 randomitems imp
 face imp.171
-anim
-facings 2
-imp.171
-imp.131
-mina
+animation imp
 race demon
 monster 1
 move_type walk fly_low

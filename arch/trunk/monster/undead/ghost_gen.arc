@@ -4,7 +4,6 @@ other_arch ghost
 name ghost generator
 generator 1
 face ghost_gen.111
-magicmap red
 speed 0.01
 exp 70
 alive 1

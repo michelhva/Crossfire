@@ -11,6 +11,5 @@ alive 1
 level 1
 no_pick 1
 resist_fire 100
-magicmap black
 sp 0
 end

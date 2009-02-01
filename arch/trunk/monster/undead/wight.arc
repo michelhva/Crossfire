@@ -2,13 +2,7 @@ Object wight
 race undead
 face wight.111
 randomitems wight
-anim
-wight.111
-wight.112
-wight.113
-wight.114
-mina
-magicmap green
+animation wight
 monster 1
 move_type walk
 sleep 1

@@ -2,16 +2,7 @@ Object tentacle2
 name spotted tentacle
 race animal
 face tentacle2.113
-anim
-tentacle2.111
-tentacle2.112
-tentacle2.113
-tentacle2.112
-tentacle2.111
-blank.111
-blank.111
-blank.111
-mina
+animation tentacle2
 anim_speed 5
 randomitems tentacle
 monster 1

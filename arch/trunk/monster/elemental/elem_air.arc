@@ -2,11 +2,7 @@ Object air_elemental
 race air_elemental
 name air elemental
 face elem_air.111
-magicmap light_blue
-anim
-elem_air.111
-elem_air.112
-mina
+animation air_elemental
 monster 1
 move_type walk fly_low
 alive 1

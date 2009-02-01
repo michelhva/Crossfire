@@ -2,10 +2,7 @@ Object ologhi
 name Olog-hi
 race goblin
 face ologhi.111
-anim
-ologhi.111
-ologhi.112
-mina
+animation ologhi
 monster 1
 move_type walk
 sleep 1
@@ -33,5 +30,4 @@ carrying 20000
 weight 140000
 randomitems throw_stnd
 is_animated 1
-magicmap brown
 end

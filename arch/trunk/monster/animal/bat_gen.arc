@@ -11,6 +11,5 @@ exp 20
 speed 0.015
 hp 100
 resist_physical 30
-magicmap black
 generator_limit 5
 end

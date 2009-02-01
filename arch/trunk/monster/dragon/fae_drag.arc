@@ -3,14 +3,7 @@ race faerie
 name faerie dragon
 randomitems wyvern
 face fae_drag.171
-magicmap blue
-anim
-facings 2
-fae_drag.171
-fae_drag.172
-fae_drag.131
-fae_drag.132
-mina
+animation faerie_dragon
 level 8
 monster 1
 move_type walk fly_low

@@ -3,13 +3,7 @@ name messenger
 randomitems mesangel
 race angel
 face liteangel.112
-magicmap white
-anim
-liteangel.111
-liteangel.112
-liteangel.113
-liteangel.114
-mina
+animation mesangel
 monster 1
 move_type walk fly_low
 sleep 1

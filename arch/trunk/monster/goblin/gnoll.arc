@@ -2,11 +2,7 @@ Object gnoll
 randomitems gnoll
 race goblin
 face gnoll.111
-magicmap brown
-anim
-gnoll.111
-gnoll.112
-mina
+animation gnoll
 monster 1
 move_type walk
 sleep 1

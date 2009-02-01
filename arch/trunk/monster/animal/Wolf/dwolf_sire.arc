@@ -3,15 +3,7 @@ name dire wolf sire
 face dwolf.171
 race animal
 randomitems dwolf_sire
-anim
-dwolf.171
-dwolf.171
-dwolf.172
-dwolf.131
-dwolf.131
-dwolf.132
-facings 2
-mina
+animation dire_wolf_sire
 monster 1
 move_type walk
 sleep 1
@@ -38,5 +30,4 @@ Pow 7
 weight 160000
 run_away 4
 attack_movement 3
-magicmap grey
 end

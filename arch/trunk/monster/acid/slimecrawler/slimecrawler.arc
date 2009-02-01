@@ -3,12 +3,7 @@ name slime crawler
 race slime
 is_animated 1
 face slimecrawler.112
-anim
-slimecrawler.111
-slimecrawler.112
-slimecrawler.113
-slimecrawler.112
-mina
+animation slimecrawler
 anim_speed 6
 monster 1
 move_type walk

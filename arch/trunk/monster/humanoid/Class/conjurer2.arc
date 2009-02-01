@@ -3,12 +3,7 @@ race human
 randomitems conjurer2
 name conjurer
 face conjurer.111
-anim
-conjurer.111
-conjurer.112
-conjurer.113
-conjurer.112
-mina
+animation conjurer2
 Pow 5
 Int 20
 Str 10

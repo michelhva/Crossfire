@@ -2,7 +2,6 @@ Object angel_knight
 name Angel Knight
 race angel
 face angelknight.x11
-magicmap black
 monster 1
 move_type walk fly_low
 level 8

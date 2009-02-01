@@ -3,10 +3,7 @@ name shadow
 face shadow.111
 race shadow
 randomitems shadow
-anim
-shadow.111
-shadow.112
-mina
+animation shadow
 monster 1
 move_type walk
 sleep 1
@@ -42,5 +39,4 @@ maxsp 30
 Pow 5
 run_away 5
 attack_movement 3
-magicmap black
 end

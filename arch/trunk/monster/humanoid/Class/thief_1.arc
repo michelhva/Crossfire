@@ -2,13 +2,7 @@ Object thief_1
 race human
 randomitems thief_1
 face thief.151
-anim
-facings 4
-thief.111
-thief.131
-thief.151
-thief.171
-mina
+animation thief_1
 monster 1
 move_type walk
 alive 1

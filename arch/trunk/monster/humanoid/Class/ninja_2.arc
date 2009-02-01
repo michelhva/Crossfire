@@ -3,12 +3,7 @@ race human
 name ninja
 randomitems npc_ninja
 face ninja_2.111
-anim
-ninja_2.111
-ninja_2.112
-ninja_2.113
-ninja_2.112
-mina
+animation ninja2
 sp 7
 maxsp 7
 Int 20
@@ -18,7 +13,6 @@ Pow 1
 monster 1
 move_type walk
 unaggressive 1
-magicmap grey
 alive 1
 ac 0
 wc 12

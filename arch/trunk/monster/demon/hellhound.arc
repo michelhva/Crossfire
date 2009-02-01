@@ -3,17 +3,7 @@ name hellhound
 face hellhound.131
 randomitems hellhound
 race demon
-anim
-facings 2
-hellhound.131
-hellhound.132
-hellhound.133
-hellhound.132
-hellhound.171
-hellhound.172
-hellhound.173
-hellhound.172
-mina
+animation hellhound
 monster 1
 move_type walk
 sleep 1
@@ -41,24 +31,13 @@ resist_magic 20
 weight 40000
 run_away 5
 attack_movement 5
-magicmap brown
 end
 Object gr_hellhound
 name greater hellhound
 randomitems gr_hellhound
 race demon
 face hellhound.131
-anim
-facings 2
-hellhound.131
-hellhound.132
-hellhound.133
-hellhound.132
-hellhound.171
-hellhound.172
-hellhound.173
-hellhound.172
-mina
+animation gr_hellhound
 Con 40
 Pow 60
 can_cast_spell 1
@@ -94,6 +73,5 @@ sleep 1
 Wis 20
 see_invisible 1
 run_away 2
-magicmap red
 end
 

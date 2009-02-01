@@ -1,14 +1,7 @@
 Object gargolye
 randomitems gargoyle
 face gargoyle.111
-magicmap grey
-anim
-gargoyle.111
-gargoyle.112
-gargoyle.111
-gargoyle.112
-gargoyle.111
-mina
+animation gargolye
 monster 1
 move_type walk fly_low
 Str 30

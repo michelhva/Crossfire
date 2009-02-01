@@ -3,11 +3,7 @@ race dwarf
 name lesser dwarven guard
 randomitems ldwar_guard
 face lesser_dwarven_guard.111
-anim
-lesser_dwarven_guard.111
-lesser_dwarven_guard.112
-mina
-magicmap black
+animation lesser_dwarven_guard
 maxsp 9
 sp 9
 Pow 28

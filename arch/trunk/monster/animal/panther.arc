@@ -1,15 +1,7 @@
 Object panther
 face panther.131
 race animal
-anim
-facings 2
-panther.131
-panther.132
-panther.133
-panther.171
-panther.172
-panther.173
-mina
+animation panther
 monster 1
 move_type walk
 sleep 1
@@ -28,5 +20,4 @@ level 5
 weight 60000
 run_away 15
 attack_movement 3
-magicmap black
 end

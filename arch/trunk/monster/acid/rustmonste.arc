@@ -2,14 +2,7 @@ Object rustmonster
 race animal
 name rustmonster
 face rustmonste.131
-anim
-facings 2
-rustmonste.131
-rustmonste.132
-rustmonste.171
-rustmonste.172
-mina
-magicmap brown
+animation rustmonster
 monster 1
 move_type walk
 sleep 1

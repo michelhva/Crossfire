@@ -3,10 +3,7 @@ name orc champion
 randomitems orc
 race goblin
 face orc_leader.111
-anim
-orc_leader.111
-orc_leader.112
-mina
+animation orc_leader_arc
 monster 1
 move_type walk
 sleep 1
@@ -30,7 +27,6 @@ can_use_ring 1
 can_use_shield 1
 can_use_armour 1
 can_use_weapon 1
-magicmap black
 body_finger 2
 body_torso 1
 body_head 1

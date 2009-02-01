@@ -7,13 +7,7 @@ msg
 I'm too busy to answer your queries.
 endmsg
 face sage.151
-anim
-facings 4
-sage.111
-sage.131
-sage.151
-sage.171
-mina
+animation c_sage
 Pow 5
 Int 25
 Dex 5

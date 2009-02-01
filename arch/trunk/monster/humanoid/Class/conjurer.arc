@@ -3,12 +3,7 @@ randomitems conjurer
 name conjurer
 race human
 face conjurer.111
-anim
-conjurer.111
-conjurer.112
-conjurer.113
-conjurer.112
-mina
+animation conjurer
 Pow 5
 Int 20
 Dex 10
@@ -38,7 +33,6 @@ can_use_ring 1
 can_use_shield 1
 can_use_armour 1
 can_use_weapon 1
-magicmap white
 body_skill 1
 body_finger 2
 body_torso 1

@@ -2,13 +2,7 @@ Object work_ant
 face work_ant.131
 name Worker Ant
 race insect
-anim
-facings 2
-work_ant.131
-work_ant.132
-work_ant.171
-work_ant.172
-mina
+animation work_ant
 monster 1
 move_type walk
 no_pick 1

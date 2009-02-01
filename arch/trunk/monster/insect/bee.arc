@@ -1,11 +1,7 @@
 Object bee
 race insect
 face bee.111
-magicmap dark_orange
-anim
-bee.111
-bee.112
-mina
+animation bee
 monster 1
 move_type walk fly_low
 sleep 1

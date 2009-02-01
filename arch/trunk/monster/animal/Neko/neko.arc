@@ -5,17 +5,7 @@ Object neko
 race animal
 name neko chan
 face neko.111
-anim
-facings 2
-neko.111
-neko.112
-neko.113
-neko.114
-neko.115
-neko.116
-neko.117
-neko.118
-mina
+animation neko
 monster 1
 move_type walk
 sleep 1
@@ -32,6 +22,5 @@ level 1
 speed 0.3
 weight 30000
 run_away 90
-magicmap brown
 randomitems neko
 end

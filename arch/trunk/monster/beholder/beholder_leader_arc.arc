@@ -3,13 +3,7 @@ name strange beholder
 randomitems beholder
 race unnatural
 face beholder_leader.111
-magicmap green
-anim
-beholder_leader.111
-beholder_leader.111
-beholder_leader.111
-beholder_leader.111
-mina
+animation beholder_leader_arc
 monster 1
 move_type walk fly_low
 sleep 1

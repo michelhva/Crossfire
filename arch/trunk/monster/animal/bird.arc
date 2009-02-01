@@ -1,18 +1,7 @@
 Object bird
 face bird.111
-magicmap brown
 race bird
-anim
-facings 4
-bird.111
-bird.112
-bird.131
-bird.132
-bird.151
-bird.152
-bird.171
-bird.172
-mina
+animation bird
 monster 1
 move_type walk fly_low
 sleep 1

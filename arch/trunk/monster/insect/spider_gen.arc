@@ -4,10 +4,7 @@ name spider web
 other_arch spider
 generator 1
 face spider_web.111
-anim
-spider_web.111
-spider_web.112
-mina
+animation spider_gen
 hp 20
 exp 80
 ac 10
@@ -17,6 +14,5 @@ alive 1
 level 1
 sp 130
 maxsp 1
-magicmap black
 generator_limit 5
 end

@@ -2,7 +2,6 @@ Object ant_egg
 face ant_egg.111
 race insect
 other_arch ant_larvae
-magicmap dark_orange
 monster 1
 move_type walk
 no_pick 1

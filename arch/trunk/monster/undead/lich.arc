@@ -3,11 +3,7 @@ name Lich
 race undead
 randomitems lich
 face lich.111
-anim
-lich.111
-lich.112
-lich.113
-mina
+animation lich
 monster 1
 move_type walk
 sleep 1
@@ -38,7 +34,6 @@ can_use_ring 1
 speed 0.15
 attacktype 4225
 exp 40000
-magicmap blue
 body_torso 1
 body_head 1
 body_shoulder 1

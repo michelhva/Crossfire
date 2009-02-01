@@ -2,12 +2,8 @@ Object air_witch
 name air witch
 race air_elemental
 face witch_air.111
-magicmap light_blue
 randomitems witch_air
-anim
-witch_air.111
-witch_air.112
-mina
+animation air_witch
 monster 1
 move_type walk fly_low
 alive 1

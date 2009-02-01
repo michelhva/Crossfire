@@ -2,14 +2,7 @@ Object vampire
 randomitems vampire
 race undead
 face vampire.111
-anim
-vampire.111
-vampire.111
-vampire.112
-vampire.112
-vampire.112
-vampire.112
-mina
+animation vampire
 no_pick 1
 sp 40
 maxsp 40
@@ -45,7 +38,6 @@ can_use_weapon 1
 can_use_scroll 1
 can_cast_spell 1
 undead 1
-magicmap blue
 body_finger 2
 body_torso 1
 body_head 1

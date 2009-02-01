@@ -17,6 +17,5 @@ speed 0.01
 weight 750000
 resist_cold 30
 undead 1
-magicmap brown
 generator_limit 5
 end

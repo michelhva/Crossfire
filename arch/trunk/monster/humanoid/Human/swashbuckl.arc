@@ -3,13 +3,7 @@ name swashbuckler
 race swashbuckler
 randomitems swashbuckler
 face swashbuckl.171
-anim
-swashbuckl.111
-swashbuckl.151
-swashbuckl.171
-swashbuckl.131
-facings 4
-mina
+animation swashbuckler
 is_animated 0
 type 37
 level 1
@@ -31,7 +25,6 @@ Wis -2
 Cha 1
 Int -4
 Pow 0
-magicmap blue
 body_range 1
 body_arm 2
 body_torso 1

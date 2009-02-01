@@ -3,15 +3,7 @@ name dire wolf
 face dwolf.171
 race animal
 randomitems dwolf
-anim
-dwolf.171
-dwolf.171
-dwolf.172
-dwolf.131
-dwolf.131
-dwolf.132
-facings 2
-mina
+animation dire_wolf
 monster 1
 move_type walk
 sleep 1
@@ -39,5 +31,4 @@ Pow 5
 weight 80000
 run_away 7
 attack_movement 3
-magicmap grey
 end
