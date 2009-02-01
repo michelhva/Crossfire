@@ -1,10 +1,6 @@
 Object speedball
 face speedball.111
-magicmap red
-anim
-speedball.111
-speedball.112
-mina
+animation speedball
 exp 2
 is_used_up 1
 food 20

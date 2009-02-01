@@ -8,11 +8,7 @@ speed 1
 msg
 You detonate a Rune of Ball Lightning
 endmsg
-anim
-rune_blightning.111
-rune_blightning.111
-mina
-magicmap yellow
+animation rune_ball_lightning
 level 1
 is_animated 0
 invisible 1

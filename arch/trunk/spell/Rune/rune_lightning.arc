@@ -8,12 +8,8 @@ face rune_lightning.111
 msg
 You set off a bolt of lightning!
 endmsg
-anim
-rune_lightning.111
-rune_lightning.111
-mina
+animation rune_small_lightning
 level 1
-magicmap yellow
 is_animated 0
 invisible 1
 no_pick 1

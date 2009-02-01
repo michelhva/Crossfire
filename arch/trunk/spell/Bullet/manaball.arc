@@ -2,13 +2,7 @@ Object manaball
 type 102
 subtype 6
 face manabolt.111
-magicmap light_blue
-anim
-manabolt.111
-manabolt.112
-manabolt.113
-manabolt.114
-mina
+animation manaball
 hp 4
 wc -50
 speed 0.2

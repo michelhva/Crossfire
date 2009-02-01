@@ -1,7 +1,6 @@
 Object wand
 face wand.111
 animation wand
-magicmap brown
 anim_speed 10
 client_anim_random 1
 type 109

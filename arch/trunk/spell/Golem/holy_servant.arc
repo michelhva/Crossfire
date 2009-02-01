@@ -2,10 +2,7 @@ Object holy_servant
 name Servant
 type 46
 face golem.111
-anim
-golem.111
-golem.112
-mina
+animation holy_servant
 is_animated 1
 monster 1
 resist_physical 25

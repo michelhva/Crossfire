@@ -4,20 +4,10 @@
 Object protection
 name protection
 face protection.111
-anim
-protection.111
-protection.112
-protection.113
-protection.114
-protection.115
-protection.116
-protection.117
-mina
-magicmap blue
+animation protection
 speed 1
 is_used_up 1
 no_pick 1
 see_anywhere 1
-visibility 255
 food 7
 end

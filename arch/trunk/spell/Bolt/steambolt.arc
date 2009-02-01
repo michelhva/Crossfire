@@ -3,13 +3,7 @@ type 102
 subtype 4
 other_arch temp_fog
 face steam.111
-anim
-steam.111
-steam.112
-steam.111
-steam.112
-mina
-magicmap red
+animation steambolt
 move_type fly_low
 generator 1
 speed 1

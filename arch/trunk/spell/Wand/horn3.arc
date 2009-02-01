@@ -2,7 +2,6 @@ Object horn3
 name horn
 nrof 1
 face horn3.111
-magicmap orange
 speed 0.1
 type 35
 level 1

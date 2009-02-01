@@ -1,11 +1,7 @@
 Object golem
 type 46
 face golem.111
-magicmap brown
-anim
-golem.111
-golem.112
-mina
+animation golem
 monster 1
 alive 1
 ac 5

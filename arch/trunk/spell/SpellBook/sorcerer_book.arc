@@ -7,7 +7,6 @@ skill literacy
 material 1
 value 20
 weight 5000
-magicmap brown
 nrof 1
 client_type 1001
 randomitems sorcery_book
@@ -24,7 +23,6 @@ skill literacy
 material 1
 value 20
 weight 5000
-magicmap brown
 nrof 1
 client_type 1001
 randomitems sorcery_l1

@@ -3,13 +3,7 @@ name divine shock
 type 102
 subtype 35
 face ball_lightning.111
-anim
-ball_lightning.111
-ball_lightning.222
-ball_lightning.333
-ball_lightning.444
-mina
-magicmap yellow
+animation divine_shock
 is_used_up 1
 is_animated 1
 glow_radius 2

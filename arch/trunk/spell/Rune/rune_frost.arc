@@ -7,11 +7,7 @@ speed 1
 msg
 You detonate a Rune of Frost!
 endmsg
-anim
-rune_frost.111
-icestorm.111
-mina
-magicmap light_blue
+animation rune_frost
 level 1
 is_animated 0
 invisible 1
@@ -31,11 +27,7 @@ speed 1
 msg
 You detonate a Rune of Icestorm
 endmsg
-anim
-rune_frost.111
-icestorm.111
-mina
-magicmap light_blue
+animation rune_icestorm
 level 1
 is_animated 0
 invisible 1
@@ -53,11 +45,7 @@ speed 1
 msg
 You detonate a Rune of Large Icestorm!
 endmsg
-anim
-rune_frost.111
-icestorm.111
-mina
-magicmap light_blue
+animation rune_large_icestorm
 level 1
 is_animated 0
 invisible 1

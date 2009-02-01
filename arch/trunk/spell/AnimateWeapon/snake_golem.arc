@@ -3,10 +3,7 @@ name snake
 type 102
 subtype 12
 face snake.111
-anim
-snake.111
-snake.112
-mina
+animation snake_golem
 is_animated 1
 monster 1
 alive 1

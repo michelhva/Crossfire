@@ -5,7 +5,6 @@ subtype 7
 level 1
 move_on walk fly_low
 face sparkshower.111
-magicmap red
 animation sparkshower
 anim_speed 1.0
 speed 0.075

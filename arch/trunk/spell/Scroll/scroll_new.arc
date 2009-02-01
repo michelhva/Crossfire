@@ -2,7 +2,6 @@ Object scroll_new
 name scroll
 race scrolls
 face scroll.111
-magicmap white
 nrof 1
 type 111
 material 1

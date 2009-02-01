@@ -7,12 +7,8 @@ face drain_magic.111
 msg
 You feel depleted of psychic energy!
 endmsg
-anim
-drain_magic.111
-drain_magic.111
-mina
+animation rune_drain_magic
 level 1
-magicmap grey
 is_animated 0
 invisible 1
 no_pick 1

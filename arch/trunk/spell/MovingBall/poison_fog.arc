@@ -4,12 +4,7 @@ other_arch poison_fog_sign
 type 102
 subtype 35
 face poisoncloud.111
-anim
-poisoncloud.111
-poisoncloud.112
-poisoncloud.113
-mina
-magicmap green
+animation poison_fog
 is_used_up 1
 is_animated 1
 move_on walk
@@ -22,11 +17,7 @@ end
 Object poison_fog_sign
 name poison fog
 face poisoncloud.111
-anim
-poisoncloud.111
-poisoncloud.112
-poisoncloud.113
-mina
+animation poison_fog_sign
 type 98
 speed 1
 move_type fly_low
