@@ -3,11 +3,7 @@ name amethyst
 race gold and jewels
 type 60
 face amethyst.111
-anim
-amethyst.111
-amethyst.112
-mina
-magicmap green
+animation amethyst
 nrof 1
 anim_speed 10
 client_anim_random 1

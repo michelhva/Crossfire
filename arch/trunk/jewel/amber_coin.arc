@@ -2,7 +2,6 @@ Object ambercoin
 name amberium coin
 race gold and jewels
 face amber_coin.111
-magicmap orange
 nrof 1
 type 36
 material 2

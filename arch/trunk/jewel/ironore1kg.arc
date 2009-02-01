@@ -4,7 +4,6 @@ name_pl ores
 title of iron
 race gold and jewels
 face oresmall_r.111
-magicmap grey
 nrof 1
 type 73
 material 64

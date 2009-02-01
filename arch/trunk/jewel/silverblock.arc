@@ -3,7 +3,6 @@ name silver block
 name_pl silver blocks
 race gold and jewels
 face silverblock.111
-magicmap grey
 nrof 1
 type 60
 material 2

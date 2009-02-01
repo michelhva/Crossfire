@@ -2,7 +2,6 @@ Object leadbar
 name lead bar
 race gold and jewels
 face leadbar.111
-magicmap grey
 nrof 1
 type 73
 material 2

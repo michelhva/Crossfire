@@ -3,7 +3,6 @@ name gold round
 name_pl gold rounds
 race gold and jewels
 face goldround.111
-magicmap orange
 nrof 1
 type 60
 material 2

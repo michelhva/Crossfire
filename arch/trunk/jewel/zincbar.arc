@@ -2,7 +2,6 @@ Object zincbar
 name zinc bar
 race gold and jewels
 face zincbar.111
-magicmap grey
 nrof 1
 type 73
 material 2

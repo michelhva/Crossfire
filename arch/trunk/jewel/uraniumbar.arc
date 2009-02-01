@@ -2,7 +2,6 @@ Object uraniumbar
 name uranium bar
 race gold and jewels
 face uraniumbar.111
-magicmap grey
 nrof 1
 type 73
 material 2
@@ -25,7 +24,6 @@ face uraniumbar.111
 attacktype 4
 dam 5
 speed 0.100000
-magicmap grey
 nrof 1
 type 73
 material 2
@@ -45,7 +43,6 @@ Object depleteduraniumbar
 name depleted uranium bar
 race gold and jewels
 face uraniumbar.111
-magicmap grey
 nrof 1
 type 73
 material 2

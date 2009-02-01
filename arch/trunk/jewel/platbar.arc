@@ -2,7 +2,6 @@ Object platbar
 name platinum bar
 race gold and jewels
 face platbar.111
-magicmap grey
 nrof 1
 type 60
 material 2

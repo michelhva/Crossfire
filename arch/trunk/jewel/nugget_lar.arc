@@ -2,7 +2,6 @@ Object largenugget
 name large gold nugget
 race gold and jewels
 face nugget_lar.111
-magicmap orange
 nrof 1
 type 60
 material 2
