@@ -20,7 +20,6 @@ Object burning_t_house2_3
 name burning town house
 face burning_t_house2.x11
 type 66
-visibility 100
 no_pick 1
 y 1
 end
@@ -30,7 +29,6 @@ name burning town house
 face burning_t_house2.x11
 type 66
 no_pick 1
-visibility 100
 x 1
 y 1
 end
