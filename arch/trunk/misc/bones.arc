@@ -8,7 +8,6 @@ weight 7000
 value 0
 material 16
 nrof 1
-magicmap white
 name_pl bones
 client_type 8002
 skill one handed weapons
@@ -25,7 +24,6 @@ weight 2000
 value 0
 material 16
 nrof 1
-magicmap white
 name_pl bones
 client_type 8002
 skill one handed weapons
@@ -42,7 +40,6 @@ weight 1000
 value 0
 material 16
 nrof 1
-magicmap white
 name_pl bones
 client_type 8002
 skill one handed weapons
@@ -59,7 +56,6 @@ weight 7000
 value 0
 material 16
 nrof 1
-magicmap white
 name_pl bones
 client_type 8002
 skill one handed weapons
@@ -76,7 +72,6 @@ weight 11000
 value 0
 material 16
 nrof 1
-magicmap white
 name_pl bones
 client_type 8002
 skill one handed weapons

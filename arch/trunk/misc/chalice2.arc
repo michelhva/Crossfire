@@ -9,15 +9,7 @@ materialname silver
 value 1200
 anim_speed 5
 client_anim_random 1
-anim
-chalice_sil.111
-chalice_sil.111
-chalice_sil.111
-chalice_sil.112
-chalice_sil.113
-chalice_sil.114
-mina
-magicmap yellow
+animation chalice_sil
 name chalice
 name_pl chalices
 client_type 2030
@@ -34,15 +26,7 @@ materialname copper
 value 500
 anim_speed 5
 client_anim_random 1
-anim
-chalice_cop.111
-chalice_cop.111
-chalice_cop.111
-chalice_cop.112
-chalice_cop.113
-chalice_cop.114
-mina
-magicmap yellow
+animation chalice_cop
 name chalice
 name_pl chalices
 client_type 2030
@@ -59,15 +43,7 @@ materialname bronze
 value 700
 anim_speed 5
 client_anim_random 1
-anim
-chalice_bro.111
-chalice_bro.111
-chalice_bro.111
-chalice_bro.112
-chalice_bro.113
-chalice_bro.114
-mina
-magicmap yellow
+animation chalice_bro
 name chalice
 name_pl chalices
 client_type 2030
@@ -84,15 +60,7 @@ materialname iron
 value 200
 anim_speed 5
 client_anim_random 1
-anim
-chalice_iro.111
-chalice_iro.111
-chalice_iro.111
-chalice_iro.112
-chalice_iro.113
-chalice_iro.114
-mina
-magicmap yellow
+animation chalice_iro
 name chalice
 name_pl chalices
 client_type 2030
@@ -109,15 +77,7 @@ materialname tin
 value 50
 anim_speed 5
 client_anim_random 1
-anim
-chalice_tin.111
-chalice_tin.111
-chalice_tin.111
-chalice_tin.112
-chalice_tin.113
-chalice_tin.114
-mina
-magicmap yellow
+animation chalice_tin
 name chalice
 name_pl chalices
 client_type 2030
@@ -134,15 +94,7 @@ materialname platinum
 value 5000
 anim_speed 5
 client_anim_random 1
-anim
-chalice_plat.111
-chalice_plat.111
-chalice_plat.111
-chalice_plat.112
-chalice_plat.113
-chalice_plat.114
-mina
-magicmap yellow
+animation chalice_plat
 name chalice
 name_pl chalices
 client_type 2030

@@ -18,7 +18,6 @@ type 121
 no_pick 1
 no_drop 1
 identified 1
-magicmap khaki
 end
 Object bookshelf_left
 name bookshelf
@@ -40,7 +39,6 @@ type 121
 no_pick 1
 no_drop 1
 identified 1
-magicmap khaki
 end
 Object bookshelf_bottom
 name bookshelf
@@ -62,7 +60,6 @@ type 121
 no_pick 1
 no_drop 1
 identified 1
-magicmap khaki
 end
 Object bookshelf_right
 name bookshelf
@@ -84,5 +81,4 @@ type 121
 no_pick 1
 no_drop 1
 identified 1
-magicmap khaki
 end

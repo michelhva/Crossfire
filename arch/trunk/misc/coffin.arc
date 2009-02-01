@@ -7,7 +7,6 @@ weight 80000
 value 30
 material 16
 nrof 1
-magicmap brown
 skill two handed weapons
 body_arm -2
 end

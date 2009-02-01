@@ -2,11 +2,7 @@ Object torch_vermilion
 name torch of vermilion light
 nrof 1
 face torch_vermilion.111
-anim
-torch_vermilion.111
-torch_vermilion.112
-mina
-magicmap red
+animation torch_vermilion
 material 144
 value 0
 weight 3000

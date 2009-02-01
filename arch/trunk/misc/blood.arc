@@ -7,6 +7,5 @@ material 32
 type 79
 weight 1
 value 0
-magicmap red
 client_type 627
 end

@@ -10,7 +10,6 @@ value 50
 weight 800000
 no_pick 1
 identified 1
-magicmap khaki
 name_pl sarcophaguses
 client_type 51
 end
@@ -37,5 +36,4 @@ type 121
 no_pick 1
 no_drop 1
 identified 1
-magicmap khaki
 end
