@@ -1,16 +1,7 @@
 Object bullet_mania
 type 102
 face bullet.112
-anim
-bullet.111
-bullet.121
-bullet.131
-bullet.141
-bullet.151
-bullet.161
-bullet.171
-bullet.181
-mina
+animation bullet_mania
 is_animated 0
 is_turnable 0
 no_pick 1

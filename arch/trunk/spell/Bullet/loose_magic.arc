@@ -5,13 +5,7 @@ name uncontrolled mana
 type 102
 subtype 6
 face manabolt.111
-anim
-manabolt.111
-manabolt.112
-manabolt.113
-manabolt.114
-mina
-magicmap black
+animation loose_magic
 speed 1
 range 3
 duration 3

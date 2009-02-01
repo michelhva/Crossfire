@@ -3,13 +3,7 @@ name negative energy ball
 type 102
 subtype 35
 face negaball.111
-anim
-negaball.111
-negaball.222
-negaball.333
-negaball.444
-mina
-magicmap black
+animation negaball
 is_used_up 1
 is_animated 1
 glow_radius 1

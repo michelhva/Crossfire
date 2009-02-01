@@ -3,7 +3,6 @@ type 102
 subtype 35
 face ball_lightning.111
 animation ball_lightning
-magicmap yellow
 is_used_up 1
 is_animated 1
 glow_radius 2

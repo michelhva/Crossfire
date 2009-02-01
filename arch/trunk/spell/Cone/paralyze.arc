@@ -4,12 +4,7 @@ type 102
 subtype 7
 move_on walk fly_low
 face paralyse.111
-magicmap dark_orange
-anim
-paralyse.111
-paralyse.112
-paralyse.113
-mina
+animation paralyze
 speed 1
 wc -30
 move_type fly_low

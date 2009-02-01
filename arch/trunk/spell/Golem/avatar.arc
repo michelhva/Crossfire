@@ -2,7 +2,6 @@ Object avatar
 type 46
 name Avatar
 face avatar.131
-magicmap grey
 animation avatar
 is_animated 1
 monster 1

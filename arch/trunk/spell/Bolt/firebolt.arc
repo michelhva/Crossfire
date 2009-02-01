@@ -2,18 +2,7 @@ Object firebolt
 type 102
 subtype 4
 face firebolt.111
-anim
-firebolt.111
-firebolt.111
-firebolt.121
-firebolt.131
-firebolt.141
-firebolt.151
-firebolt.161
-firebolt.171
-firebolt.181
-mina
-magicmap red
+animation firebolt
 is_animated 0
 is_turnable 1
 move_type fly_low

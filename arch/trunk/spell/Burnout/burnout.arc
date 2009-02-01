@@ -1,7 +1,6 @@
 Object burnout
 name burning item
 face burnout.114
-magicmap red
 animation burnout
 speed 1
 food 41

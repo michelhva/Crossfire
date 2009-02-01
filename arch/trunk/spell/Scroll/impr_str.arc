@@ -2,7 +2,6 @@ Object improve_str
 name Improve Strength Bonus
 face scroll.111
 race scrolls
-magicmap white
 nrof 1
 type 124
 material 1

@@ -7,12 +7,8 @@ hp 1
 msg
 You detonate a Rune of Blasting!
 endmsg
-anim
-rune_blast.111
-explosion.111
-mina
+animation rune_blast
 level 1
-magicmap orange
 is_animated 0
 invisible 1
 no_pick 1

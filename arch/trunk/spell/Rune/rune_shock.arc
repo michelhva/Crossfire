@@ -7,11 +7,7 @@ speed 1
 msg
 You detonate a Rune of Shocking
 endmsg
-anim
-rune_shock.111
-rune_shock.111
-mina
-magicmap yellow
+animation rune_shock
 level 1
 is_animated 0
 invisible 1

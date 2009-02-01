@@ -2,7 +2,6 @@ Object snowstorm
 type 102
 subtype 6
 face icestorm.111
-magicmap light_blue
 animation snowstorm
 wc -30
 speed 0.2

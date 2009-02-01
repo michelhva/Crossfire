@@ -7,10 +7,7 @@ hp 1
 msg
 You detonate a Rune of Death!
 endmsg
-anim
-rune_death.111
-rune_death.111
-mina
+animation rune_death
 level 15
 is_animated 0
 invisible 1
@@ -19,5 +16,4 @@ move_on walk
 attacktype 131072
 dam 400
 Cha 20
-magicmap black
 end

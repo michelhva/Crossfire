@@ -1,12 +1,7 @@
 Object rod_light
 name rod
 face rod_light.111
-anim
-rod_light.111
-rod_light.112
-rod_light.113
-mina
-magicmap black
+animation rod_light
 speed -0.25
 type 3
 value 350

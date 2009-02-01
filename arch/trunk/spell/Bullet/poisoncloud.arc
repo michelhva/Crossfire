@@ -4,12 +4,7 @@ name poison cloud
 type 102
 subtype 6
 face poisoncloud.111
-magicmap green
-anim
-poisoncloud.111
-poisoncloud.112
-poisoncloud.113
-mina
+animation poisoncloud
 speed 0.2
 hp 10
 dam 1

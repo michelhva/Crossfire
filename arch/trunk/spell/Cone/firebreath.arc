@@ -4,12 +4,7 @@ type 102
 subtype 7
 move_on walk fly_low
 face fireball.111
-magicmap red
-anim
-fireball.111
-fireball.112
-fireball.113
-mina
+animation firebreath
 smoothlevel 200
 speed 1
 wc -30

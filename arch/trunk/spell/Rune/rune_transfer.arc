@@ -7,12 +7,8 @@ face rune_transfer.111
 msg
 The Rune transfers power to you!
 endmsg
-anim
-rune_transfer.111
-rune_transfer.111
-mina
+animation rune_transferrence
 level 1
-magicmap light_blue
 is_animated 0
 invisible 1
 no_pick 1

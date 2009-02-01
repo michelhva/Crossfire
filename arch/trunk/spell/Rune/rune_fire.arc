@@ -6,13 +6,9 @@ hp 1
 msg
 You detonate a Rune of Fire!
 endmsg
-anim
-rune_fire.111
-fireball.111
-mina
+animation rune_fire
 speed 1
 level 1
-magicmap red
 is_animated 0
 invisible 1
 no_pick 1
@@ -31,13 +27,9 @@ other_arch spell_burning_hands
 msg
 You detonate a Rune of Burning Hands!
 endmsg
-anim
-rune_fire.111
-fireball.111
-mina
+animation rune_burning_hands
 speed 1
 level 1
-magicmap red
 is_animated 0
 invisible 1
 no_pick 1
@@ -53,13 +45,9 @@ other_arch spell_dragonbreath
 msg
 You detonate a Rune of Firebreath!
 endmsg
-anim
-rune_fire.111
-fireball.111
-mina
+animation rune_dragonbreath
 speed 1
 level 1
-magicmap red
 is_animated 0
 invisible 1
 no_pick 1

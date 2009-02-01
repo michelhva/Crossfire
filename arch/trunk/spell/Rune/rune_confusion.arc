@@ -7,13 +7,9 @@ hp 2
 msg
 You detonate a Rune of Mass Confusion!
 endmsg
-anim
-rune_confusion.111
-confusion.111
-mina
+animation rune_confusion
 speed 1
 level 1
-magicmap black
 is_animated 0
 invisible 1
 no_pick 1

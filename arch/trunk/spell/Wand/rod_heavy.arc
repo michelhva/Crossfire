@@ -1,12 +1,7 @@
 Object rod_heavy
 name heavy rod
 face rod_heavy.111
-anim
-rod_heavy.111
-rod_heavy.112
-rod_heavy.113
-mina
-magicmap black
+animation rod_heavy
 speed -0.25
 type 3
 value 700

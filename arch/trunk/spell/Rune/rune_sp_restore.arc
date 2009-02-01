@@ -8,12 +8,8 @@ face rune_sp_res.111
 msg
 You feel powerful!
 endmsg
-anim
-rune_sp_res.111
-rune_sp_res.111
-mina
+animation rune_regenerate_spellpoints
 level 1
-magicmap green
 is_animated 0
 invisible 1
 no_pick 1

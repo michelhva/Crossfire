@@ -5,12 +5,7 @@ subtype 7
 level 1
 move_on walk fly_low
 face icestorm.111
-magicmap light_blue
-anim
-icestorm.111
-icestorm.112
-icestorm.113
-mina
+animation icestorm
 speed 1
 wc -30
 move_type fly_low

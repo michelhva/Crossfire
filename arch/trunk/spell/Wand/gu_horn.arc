@@ -7,14 +7,7 @@ hp 100
 other_arch spell_restoration
 level 1
 value 10000000
-anim
-gu_horn.111
-gu_horn.112
-gu_horn.113
-gu_horn.114
-gu_horn.115
-mina
-magicmap orange
+animation gu_horn
 speed 0.3
 type 35
 material 2

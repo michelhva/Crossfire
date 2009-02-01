@@ -5,11 +5,7 @@ subtype 7
 move_on walk fly_low
 slaying undead,demon
 face turnundead.111
-anim
-turnundead.111
-turnundead.112
-turnundead.113
-mina
+animation holy_word
 speed 1
 wc -30
 move_type fly_low

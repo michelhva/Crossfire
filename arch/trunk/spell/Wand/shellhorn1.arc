@@ -2,7 +2,6 @@ Object shellhorn1
 name shell horn
 nrof 1
 face shellhorn1.111
-magicmap blue
 speed 0.1
 type 35
 level 1

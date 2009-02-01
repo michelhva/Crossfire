@@ -1,20 +1,6 @@
 Object staff
 face staff.111
-anim
-staff.111
-staff.111
-staff.111
-staff.111
-staff.112
-staff.113
-staff.114
-staff.115
-staff.114
-staff.113
-staff.112
-staff.111
-mina
-magicmap brown
+animation staff
 anim_speed 10
 client_anim_random 1
 type 109

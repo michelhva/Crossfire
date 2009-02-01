@@ -4,11 +4,7 @@ type 102
 subtype 7
 move_on walk fly_low
 face sunspear.111
-anim
-sunspear.111
-sunspear.112
-sunspear.113
-mina
+animation wrathful_eye
 wc -30
 speed 1.0
 move_type fly_low

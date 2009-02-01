@@ -4,11 +4,7 @@ subtype 6
 name holy wrath
 slaying undead,demon
 face turnundead.111
-anim
-turnundead.111
-turnundead.112
-turnundead.113
-mina
+animation holy_wrath
 wc -40
 speed 0.2
 speed_left -0.21
