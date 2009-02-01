@@ -8,10 +8,7 @@ move_type walk
 no_pick 1
 type 120
 face gnome2.111
-anim
-gnome2.111
-gnome2.112
-mina
+animation gnome2
 ac 5
 reflect_spell 1
 wc 10
@@ -49,7 +46,6 @@ can_use_weapon 1
 can_use_ring 1
 run_away 99
 exp 1000
-magicmap green
 body_skill 1
 body_torso 1
 body_head 1

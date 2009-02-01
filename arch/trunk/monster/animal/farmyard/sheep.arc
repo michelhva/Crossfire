@@ -1,12 +1,7 @@
 Object sheep
 race sheep
 face sheep.131
-magicmap white
-anim
-facings 1
-sheep.131
-sheep.171
-mina
+animation sheep
 monster 1
 move_type walk
 Wis 5

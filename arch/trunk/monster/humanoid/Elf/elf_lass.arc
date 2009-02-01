@@ -3,11 +3,7 @@ race faerie
 name elf lass
 randomitems elf_1
 face elf_lass.111
-magicmap black
-anim
-elf_lass.111
-elf_lass.112
-mina
+animation elf_lass
 monster 1
 move_type walk
 alive 1

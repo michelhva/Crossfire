@@ -3,13 +3,7 @@ race human
 name woman
 randomitems man
 face woman.151
-anim
-facings 4
-woman.151
-woman.131
-woman.151
-woman.171
-mina
+animation woman
 sp 10
 maxsp 10
 Pow 1
@@ -40,7 +34,6 @@ can_use_ring 1
 can_use_shield 1
 can_use_armour 1
 can_use_weapon 1
-magicmap khaki
 body_skill 1
 body_finger 2
 body_torso 1

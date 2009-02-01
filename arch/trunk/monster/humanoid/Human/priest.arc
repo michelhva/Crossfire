@@ -3,13 +3,7 @@ name priest
 race priest
 randomitems priest
 face priest.171
-anim
-priest.111
-priest.131
-priest.151
-priest.171
-facings 4
-mina
+animation priest
 is_animated 0
 type 37
 level 1
@@ -31,7 +25,6 @@ Wis 3
 Pow 2
 Cha 2
 Int 0
-magicmap green
 body_range 1
 body_arm 2
 body_torso 1

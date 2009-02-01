@@ -3,13 +3,7 @@ race fire_elemental
 name lava para-elemental
 face para_lava.111
 randomitems para_elemental
-magicmap red
-anim
-para_lava.111
-para_lava.112
-para_lava.113
-para_lava.112
-mina
+animation para_lava
 monster 1
 move_type walk fly_low
 alive 1

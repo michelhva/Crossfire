@@ -2,11 +2,7 @@ Object ghost
 race undead
 face ghost.111
 randomitems ghost
-magicmap white
-anim
-ghost.111
-ghost.112
-mina
+animation ghost
 monster 1
 move_type walk fly_low
 sleep 1

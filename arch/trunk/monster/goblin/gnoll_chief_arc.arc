@@ -3,11 +3,7 @@ name gnoll chief
 randomitems gnoll
 race goblin
 face gnoll_chief.111
-magicmap brown
-anim
-gnoll_chief.111
-gnoll_chief.111
-mina
+animation gnoll_chief_arc
 monster 1
 move_type walk
 sleep 1

@@ -8,12 +8,7 @@ move_type walk
 no_pick 1
 type 139
 face pyromaniac.111
-anim
-pyromaniac.111
-pyromaniac.112
-pyromaniac.113
-pyromaniac.114
-mina
+animation pyromaniac
 ac 6
 wc 10
 dam 8
@@ -37,6 +32,5 @@ random_movement 1
 pick_up 0
 run_away 99
 exp 500
-magicmap black
 body_skill 1
 end

@@ -3,10 +3,7 @@ race human
 name Holy man
 randomitems holy_priest
 face holy_priest.111
-anim
-holy_priest.111
-holy_priest.211
-mina
+animation holy_priest
 speed 0.16
 alive 1
 monster 1

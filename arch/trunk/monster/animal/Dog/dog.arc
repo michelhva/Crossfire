@@ -1,17 +1,7 @@
 Object dog
 face dog.131
 race animal
-anim
-facings 2
-dog.131
-dog.132
-dog.133
-dog.132
-dog.171
-dog.172
-dog.173
-dog.172
-mina
+animation dog
 monster 1
 move_type walk
 sleep 1
@@ -29,5 +19,4 @@ level 3
 weight 30000
 run_away 15
 attack_movement 3
-magicmap brown
 end

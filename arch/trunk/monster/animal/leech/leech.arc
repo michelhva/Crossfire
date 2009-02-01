@@ -2,17 +2,7 @@ Object leech
 name giant leech
 race animal
 face leech.171
-anim
-facings 2
-leech.131
-leech.132
-leech.133
-leech.132
-leech.171
-leech.172
-leech.173
-leech.172
-mina
+animation leech
 anim_speed 4
 randomitems leech
 monster 1

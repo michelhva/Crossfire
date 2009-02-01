@@ -1,19 +1,7 @@
 Object stalker
 race faerie
 face stalker.111
-magicmap blue
-anim
-stalker.112
-stalker.111
-stalker.112
-blank.111
-stalker.112
-stalker.111
-stalker.112
-blank.111
-blank.111
-blank.111
-mina
+animation stalker
 monster 1
 move_type walk fly_low
 sleep 1

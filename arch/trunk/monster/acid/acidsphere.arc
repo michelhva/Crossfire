@@ -6,14 +6,7 @@ Object acid_sphere
 race slime
 name acid sphere
 face acidsphere.111
-anim
-acidsphere.111
-acidsphere.112
-acidsphere.113
-acidsphere.114
-acidsphere.113
-acidsphere.112
-mina
+animation acid_sphere
 monster 1
 move_type walk
 sleep 1
@@ -44,6 +37,5 @@ maxhp 1
 speed 0.01
 anim_speed 1
 exp 100
-magicmap green
 one_hit 1
 end

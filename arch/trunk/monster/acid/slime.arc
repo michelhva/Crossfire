@@ -8,12 +8,7 @@ Object slime
 race slime
 other_arch slime
 face slime.111
-magicmap green
-anim
-slime.111
-slime.112
-slime.113
-mina
+animation slime
 monster 1
 move_type walk
 sleep 1

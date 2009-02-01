@@ -3,11 +3,7 @@ race dwarf
 name greater dwarven guard
 randomitems gdwar_guard
 face greater_dwarven_guard.111
-anim
-greater_dwarven_guard.111
-greater_dwarven_guard.112
-mina
-magicmap red
+animation greater_dwarven_guard
 maxsp 9
 sp 9
 Int 9

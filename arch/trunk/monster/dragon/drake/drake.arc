@@ -3,18 +3,7 @@ race dragon
 name drake
 randomitems drake
 face drake.111
-magicmap red
-anim
-facings 2
-drake.111
-drake.112
-drake.113
-drake.112
-drake.211
-drake.212
-drake.213
-drake.212
-mina
+animation drake
 level 10
 monster 1
 move_type walk fly_low

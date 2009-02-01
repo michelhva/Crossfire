@@ -1,11 +1,7 @@
 Object bat
 face bat.111
 race animal
-anim
-bat.111
-bat.112
-bat.113
-mina
+animation bat
 monster 1
 move_type walk fly_low
 sleep 1
@@ -24,5 +20,4 @@ ac 7
 level 1
 weight 20
 resist_physical 30
-magicmap black
 end

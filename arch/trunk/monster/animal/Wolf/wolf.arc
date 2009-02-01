@@ -2,15 +2,7 @@ Object wolf
 face wolf.171
 race animal
 randomitems wolf
-anim
-wolf.171
-wolf.171
-wolf.172
-wolf.131
-wolf.131
-wolf.132
-facings 2
-mina
+animation wolf
 monster 1
 move_type walk
 sleep 1
@@ -30,5 +22,4 @@ level 7
 weight 55000
 run_away 15
 attack_movement 3
-magicmap grey
 end

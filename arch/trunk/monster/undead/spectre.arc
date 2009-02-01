@@ -28,7 +28,6 @@ pick_up 24
 can_use_scroll 1
 can_cast_spell 1
 can_use_ring 1
-magicmap black
 speed 0.12
 attacktype 17
 exp 100000

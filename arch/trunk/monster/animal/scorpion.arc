@@ -2,10 +2,7 @@ Object scorpion
 face scorpion.111
 race animal
 randomitems scorpion
-anim
-scorpion.111
-scorpion.112
-mina
+animation scorpion
 monster 1
 move_type walk
 sleep 1
@@ -27,5 +24,4 @@ resist_confusion -100
 speed 0.1
 exp 40
 weight 500
-magicmap black
 end

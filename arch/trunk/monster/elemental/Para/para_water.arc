@@ -3,12 +3,7 @@ race water_elemental
 name water para-elemental
 face para_water.111
 randomitems para_elemental
-magicmap blue
-anim
-para_water.111
-para_water.112
-para_water.113
-mina
+animation para_water
 monster 1
 move_type walk
 alive 1

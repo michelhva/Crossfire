@@ -3,22 +3,7 @@ randomitems spit_ant
 face spit_ant.131
 race insect
 name Spitting Ant
-anim
-facings 2
-spit_ant.131
-spit_ant.132
-spit_ant.131
-spit_ant.132
-spit_ant.133
-spit_ant.132
-spit_ant.171
-spit_ant.172
-spit_ant.171
-spit_ant.172
-spit_ant.173
-spit_ant.172
-mina
-magicmap green
+animation spit_ant
 monster 1
 move_type walk
 sleep 1

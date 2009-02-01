@@ -4,7 +4,6 @@ other_arch goblin
 name generator
 generator 1
 face goblin_gen.111
-magicmap red
 hp 30
 maxhp 30
 ac 8

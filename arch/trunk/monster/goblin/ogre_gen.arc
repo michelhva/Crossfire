@@ -4,7 +4,6 @@ other_arch ogre
 name generator
 generator 1
 face ogre_gen.111
-magicmap red
 hp 60
 maxhp 60
 exp 300

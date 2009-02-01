@@ -3,14 +3,7 @@ name human
 race human
 randomitems human
 face human.171
-magicmap black
-anim
-human.111
-human.131
-human.151
-human.171
-facings 4
-mina
+animation human
 is_animated 0
 type 37
 level 1

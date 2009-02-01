@@ -9,11 +9,7 @@ sp 135
 maxsp 60
 weight -1
 no_pick 1
-anim
-centipede_r.111
-centipede_r.112
-centipede_r.113
-mina
+animation centipede_r
 monster 1
 move_type walk
 sleep 1
@@ -29,5 +25,4 @@ maxhp 50
 Con 1
 level 4
 weight 5000
-magicmap red
 end

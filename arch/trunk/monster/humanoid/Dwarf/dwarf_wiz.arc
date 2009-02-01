@@ -2,11 +2,7 @@ Object dwarf_wiz
 race dwarf
 randomitems random_books
 name dwarf wizard
-anim
-dwarf_wiz.111
-dwarf_wiz.112
-dwarf_wiz.113
-mina
+animation dwarf_wiz
 msg
 @match *
 I'm too busy to answer your queries.
@@ -29,5 +25,4 @@ speed 0.06
 weight 50000
 level 15
 can_cast_spell 1
-magicmap red
 end

@@ -3,13 +3,7 @@ randomitems skeletalmage
 name Skeletal Mage
 race undead
 face skeletalmage.111
-magicmap white
-anim
-skeletalmage.111
-skeletalmage.112
-skeletalmage.113
-skeletalmage.112
-mina
+animation skeletalmage
 monster 1
 move_type walk
 sleep 1

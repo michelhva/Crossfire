@@ -3,13 +3,7 @@ name living chaos
 randomitems liv_chaos
 race chaos
 face liv_chaos.111
-magicmap blue
-anim
-liv_chaos.111
-liv_chaos.444
-liv_chaos.222
-liv_chaos.333
-mina
+animation living_chaos
 is_animated 1
 move_type walk fly_low
 level 40

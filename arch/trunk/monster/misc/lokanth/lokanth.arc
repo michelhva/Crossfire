@@ -2,13 +2,7 @@ Object lokanth
 randomitems lokanth
 face lokanth.131
 race chaos
-anim
-facings 2
-lokanth.131
-lokanth.132
-lokanth.171
-lokanth.172
-mina
+animation lokanth
 monster 1
 move_type walk
 Wis 10
@@ -27,7 +21,6 @@ hp 250
 maxhp 250
 wc 9
 dam 20
-magicmap green
 speed -0.2
 resist_physical 50
 resist_magic 50

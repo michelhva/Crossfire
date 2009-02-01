@@ -7,10 +7,7 @@ Dex 5
 Wis 1
 Pow 5
 Int 20
-anim
-necro.111
-necro.112
-mina
+animation necromancer
 hp 1800
 maxhp 3600
 sp 40
@@ -33,6 +30,5 @@ unaggressive 1
 can_cast_spell 1
 sleep 1
 can_use_skill 1
-magicmap grey
 body_skill 1
 end

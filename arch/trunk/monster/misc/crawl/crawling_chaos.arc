@@ -1,11 +1,7 @@
 Object crawling_chaos
 name crawling chaos
 face crawling_chaos.111
-anim
-crawling_chaos.111
-crawling_chaos.112
-crawling_chaos.113
-mina
+animation crawling_chaos
 alive 1
 exp 4500
 ac 3

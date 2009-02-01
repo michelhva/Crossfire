@@ -2,10 +2,7 @@ Object lord_e
 name Lord Eureca (commanded by Ghothwolte)
 face lord_e.111
 race human
-anim
-lord_e.111
-lord_e.112
-mina
+animation lord_e
 Str 30
 Dex 30
 Con 1
@@ -43,7 +40,6 @@ can_use_scroll 1
 can_use_bow 1
 can_use_ring 1
 can_use_skill 1
-magicmap grey
 body_finger 2
 body_skill 1
 body_arm 2

@@ -8,12 +8,7 @@ generator 1
 sp 134
 maxsp 60
 no_pick 1
-anim
-snake.111
-snake.112
-snake.113
-mina
-magicmap green
+animation snake
 monster 1
 move_type walk
 sleep 1

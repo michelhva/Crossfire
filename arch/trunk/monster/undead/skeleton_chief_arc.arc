@@ -3,11 +3,7 @@ name skeleton captain
 randomitems skeleton
 race undead
 face skeleton_chief.111
-magicmap white
-anim
-skeleton_chief.111
-skeleton_chief.111
-mina
+animation skeleton_chief_arc
 monster 1
 move_type walk
 sleep 1

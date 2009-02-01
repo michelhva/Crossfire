@@ -2,17 +2,7 @@ Object s_mastif
 name shadow mastif
 face s_mastif.131
 race shadow
-anim
-facings 2
-s_mastif.131
-s_mastif.132
-s_mastif.133
-s_mastif.132
-s_mastif.171
-s_mastif.172
-s_mastif.173
-s_mastif.172
-mina
+animation s_mastif
 monster 1
 move_type walk
 sleep 1
@@ -43,5 +33,4 @@ attacktype 32912
 weight 1000
 run_away 5
 attack_movement 3
-magicmap black
 end

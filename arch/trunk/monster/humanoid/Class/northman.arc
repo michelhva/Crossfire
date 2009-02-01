@@ -3,13 +3,7 @@ name viking
 race human
 randomitems viking
 face northman.111
-anim
-northman.111
-northman.111
-northman.112
-northman.112
-mina
-magicmap brown
+animation northman
 maxsp 5
 sp 5
 Pow 1

@@ -2,11 +2,7 @@ Object earth_elemental
 name earth elemental
 race earth_elemental
 face elem_earth.111
-magicmap dark_orange
-anim
-elem_earth.111
-elem_earth.112
-mina
+animation earth_elemental
 monster 1
 move_type walk
 alive 1

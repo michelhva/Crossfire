@@ -3,13 +3,7 @@ name tree
 race faerie
 stand_still 1
 face deathtree.111
-anim
-deathtree.111
-deathtree.112
-deathtree.113
-deathtree.114
-deathtree.115
-mina
+animation deathtree
 speed -0.4
 alive 1
 monster 1
@@ -25,5 +19,4 @@ ac 10
 dam 15
 level 13
 weight 1000000
-magicmap black
 end

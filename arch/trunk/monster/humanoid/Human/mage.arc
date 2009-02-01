@@ -3,7 +3,6 @@ name mage
 race mage
 randomitems mage
 face mage.171
-magicmap black
 animation mage
 is_animated 0
 type 37

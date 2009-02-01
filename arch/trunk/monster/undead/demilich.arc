@@ -3,13 +3,7 @@ name demilich
 race undead
 randomitems demilich
 face demilich.111
-anim
-demilich.111
-demilich.112
-demilich.111
-demilich.113
-demilich.111
-mina
+animation demilich
 attacktype 65552
 speed 0.25
 anim_speed 5
@@ -48,5 +42,4 @@ dam 20
 level 31
 weight 150000
 undead 1
-magicmap black
 end

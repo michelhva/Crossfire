@@ -2,12 +2,8 @@ Object water_witch
 name water witch
 race water_elemental
 face witch_water.111
-magicmap blue
 randomitems witch_water
-anim
-witch_water.111
-witch_water.112
-mina
+animation water_witch
 monster 1
 move_type walk
 alive 1

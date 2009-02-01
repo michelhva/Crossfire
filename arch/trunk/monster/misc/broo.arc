@@ -1,12 +1,7 @@
 Object broo
 face broo.111
 randomitems broo
-anim
-broo.111
-broo.112
-broo.113
-broo.112
-mina
+animation broo
 monster 1
 move_type walk
 no_pick 1

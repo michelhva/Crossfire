@@ -2,25 +2,7 @@ Object whim
 race angel
 name whim
 face whim.111
-anim
-facings 8
-whim.111
-whim.112
-whim.121
-whim.122
-whim.131
-whim.132
-whim.141
-whim.142
-whim.151
-whim.152
-whim.161
-whim.162
-whim.171
-whim.172
-whim.181
-whim.182
-mina
+animation whim
 is_animated 1
 monster 1
 move_type walk fly_low

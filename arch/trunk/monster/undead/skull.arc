@@ -2,10 +2,7 @@ Object skull
 randomitems skull
 race undead
 face skull.111
-anim
-skull.111
-skull.112
-mina
+animation skull
 monster 1
 move_type walk fly_low
 sleep 1
@@ -36,5 +33,4 @@ run_away 15
 can_cast_spell 1
 can_see_in_dark 1
 attack_movement 1
-magicmap grey
 end

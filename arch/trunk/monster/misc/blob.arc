@@ -8,12 +8,7 @@
 Object blob
 race slime
 face blob.111
-anim
-blob.111
-blob.112
-blob.113
-blob.112
-mina
+animation blob
 monster 1
 move_type walk
 sleep 1
@@ -32,5 +27,4 @@ weight 50000
 run_away 100
 pick_up 64
 attacktype 1
-magicmap black
 end

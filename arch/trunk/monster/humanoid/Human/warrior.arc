@@ -3,13 +3,7 @@ race warrior
 name warrior
 randomitems warrior
 face warrior.171
-anim
-warrior.111
-warrior.131
-warrior.151
-warrior.171
-facings 4
-mina
+animation warrior
 is_animated 0
 type 37
 level 1
@@ -31,7 +25,6 @@ Wis 0
 Cha -1
 Int -3
 Pow 0
-magicmap grey
 body_range 1
 body_arm 2
 body_torso 1

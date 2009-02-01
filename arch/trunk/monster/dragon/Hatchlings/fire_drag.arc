@@ -3,14 +3,7 @@ race dragon
 name dragon hatchling
 randomitems wyvern
 face fire_drag.171
-magicmap red
-anim
-facings 2
-fire_drag.171
-fire_drag.172
-fire_drag.131
-fire_drag.132
-mina
+animation fire_dragon
 level 8
 monster 1
 move_type walk fly_low

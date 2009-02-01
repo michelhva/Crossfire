@@ -2,12 +2,8 @@ Object earth_witch
 name earth witch
 race earth_elemental
 face witch_earth.111
-magicmap dark_orange
 randomitems witch_earth
-anim
-witch_earth.111
-witch_earth.112
-mina
+animation earth_witch
 monster 1
 move_type walk
 alive 1

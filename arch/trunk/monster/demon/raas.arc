@@ -6,11 +6,7 @@ msg
 Rrrgghhg kill you
 endmsg
 face raas.131
-anim
-facings 2
-raas.171
-raas.131
-mina
+animation raas
 race demon
 monster 1
 move_type walk
@@ -36,5 +32,4 @@ weight 200000
 run_away 15
 attacktype 1
 attack_movement 5
-magicmap black
 end

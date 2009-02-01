@@ -3,13 +3,7 @@ name fireborn
 race fireborn
 randomitems fireborn
 face fireborn.111
-magicmap red
-anim
-fireborn.111
-fireborn.222
-fireborn.333
-fireborn.444
-mina
+animation fireborn
 is_animated 1
 type 37
 level 1

@@ -3,13 +3,7 @@ name ape
 randomitems ape
 race animal
 face ape.171
-anim
-facings 2
-ape.131
-ape.132
-ape.171
-ape.172
-mina
+animation ape
 monster 1
 move_type walk
 sleep 1
@@ -32,5 +26,4 @@ resist_electricity 30
 resist_physical 20
 weight 90000
 run_away 35
-magicmap brown
 end

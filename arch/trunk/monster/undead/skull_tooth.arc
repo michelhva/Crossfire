@@ -8,5 +8,4 @@ material 64
 type 72
 weight 550
 value 10
-magicmap white
 end

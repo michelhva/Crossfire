@@ -3,13 +3,7 @@ race barbarian
 name barbarian
 randomitems barbarian
 face barbarian.171
-anim
-barbarian.111
-barbarian.131
-barbarian.151
-barbarian.171
-facings 4
-mina
+animation barbarian
 is_animated 0
 type 37
 level 1
@@ -30,7 +24,6 @@ Con 4
 Wis -1
 Cha -2
 Int -6
-magicmap grey
 body_range 1
 body_arm 2
 body_torso 1

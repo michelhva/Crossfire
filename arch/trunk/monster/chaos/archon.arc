@@ -3,13 +3,7 @@ name Archon
 randomitems liv_chaos
 race chaos
 face archon.111
-magicmap red
-anim
-archon.111
-archon.222
-archon.333
-archon.444
-mina
+animation archon
 is_animated 1
 move_type walk fly_low
 level 30

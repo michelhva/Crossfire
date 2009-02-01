@@ -2,11 +2,7 @@ Object mudman
 name Mudman
 race earth_elemental
 face mudman.111
-magicmap brown
-anim
-mudman.111
-mudman.112
-mina
+animation mudman
 monster 1
 move_type walk
 Str 12

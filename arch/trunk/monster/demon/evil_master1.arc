@@ -2,10 +2,7 @@ Object evil_master1
 race demon
 name Evil Master
 face evil_master.111
-anim
-evil_master.111
-evil_master.112
-mina
+animation evil_master1
 Con 100
 Wis 50
 Pow 50
@@ -50,7 +47,6 @@ can_use_rod 1
 can_use_skill 1
 can_use_ring 1
 sleep 1
-magicmap white
 body_finger 2
 body_range 1
 randomitems all_spell_skills

@@ -8,14 +8,7 @@ generator 1
 sp 129
 maxsp 20
 no_pick 1
-anim
-fungus.111
-fungus.112
-fungus.113
-fungus.114
-fungus.115
-mina
-magicmap light_blue
+animation fungus
 monster 1
 move_type walk
 sleep 1

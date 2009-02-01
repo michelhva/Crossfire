@@ -3,13 +3,7 @@ race cleric
 name cleric
 randomitems cleric
 face cleric.171
-anim
-cleric.111
-cleric.131
-cleric.151
-cleric.171
-facings 4
-mina
+animation cleric
 is_animated 0
 type 37
 level 1
@@ -31,7 +25,6 @@ Wis 2
 Cha 1
 Int -2
 Pow 1
-magicmap blue
 body_range 1
 body_arm 2
 body_torso 1

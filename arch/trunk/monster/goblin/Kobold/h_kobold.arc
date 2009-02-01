@@ -2,11 +2,7 @@ Object h_kobold
 name hyper kobold
 race goblin
 face h_kobold.111
-anim
-h_kobold.111
-h_kobold.112
-mina
-magicmap green
+animation h_kobold
 Str 30
 Dex 30
 Con 30

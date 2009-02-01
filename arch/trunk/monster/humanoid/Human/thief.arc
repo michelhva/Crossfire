@@ -3,13 +3,7 @@ race thief
 name thief
 randomitems thief
 face thief.171
-anim
-thief.111
-thief.131
-thief.151
-thief.171
-facings 4
-mina
+animation thief
 is_animated 0
 type 37
 level 1
@@ -31,7 +25,6 @@ Wis 0
 Cha -3
 Int 1
 Pow 0
-magicmap black
 body_range 1
 body_arm 2
 body_torso 1

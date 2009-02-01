@@ -3,10 +3,7 @@ race human
 name farmer
 randomitems farmer
 face farmer.111
-anim
-farmer.111
-farmer.112
-mina
+animation farmer
 sp 10
 maxsp 10
 Str 12
@@ -37,7 +34,6 @@ can_use_shield 1
 can_use_armour 1
 can_use_weapon 1
 can_use_scroll 1
-magicmap black
 body_skill 1
 body_finger 2
 body_torso 1

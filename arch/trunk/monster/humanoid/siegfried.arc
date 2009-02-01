@@ -2,10 +2,7 @@ Object siegfried
 race human
 name Siegfried
 face siegfried.111
-anim
-siegfried.111
-siegfried.112
-mina
+animation siegfried
 Str 18
 Dex 13
 Pow 1

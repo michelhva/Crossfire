@@ -1,7 +1,6 @@
 Object goose
 race bird
 face goose.131
-magicmap brown
 animation goose
 monster 1
 move_type walk

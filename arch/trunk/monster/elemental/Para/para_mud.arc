@@ -3,17 +3,7 @@ race earth_elemental
 name mud para-elemental
 face para_mud.111
 randomitems para_elemental
-magicmap brown
-anim
-para_mud.111
-para_mud.112
-para_mud.113
-para_mud.114
-para_mud.115
-para_mud.114
-para_mud.113
-para_mud.112
-mina
+animation para_mud
 monster 1
 move_type walk
 alive 1

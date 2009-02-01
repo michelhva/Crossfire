@@ -3,10 +3,7 @@ race halfling
 name halfling
 randomitems halfling
 face halfling3.151
-anim
-halfling3.151
-halfling3.152
-mina
+animation halfling3
 sp 10
 maxsp 10
 Str 12
@@ -37,7 +34,6 @@ can_use_shield 1
 can_use_armour 1
 can_use_weapon 1
 can_use_scroll 1
-magicmap black
 body_skill 1
 body_finger 2
 body_torso 1

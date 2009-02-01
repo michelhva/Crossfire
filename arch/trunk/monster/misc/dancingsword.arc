@@ -1,13 +1,7 @@
 Object dancingsword
 name dancing sword
 face dancingsword.111
-magicmap grey
-anim
-dancingsword.111
-dancingsword.112
-dancingsword.111
-dancingsword.113
-mina
+animation dancingsword
 monster 1
 move_type walk fly_low
 Str 15

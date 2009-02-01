@@ -3,13 +3,7 @@ race human
 name man
 randomitems man
 face man2.151
-anim
-facings 4
-man2.151
-man2.131
-man2.151
-man2.171
-mina
+animation man2
 sp 10
 maxsp 10
 Str 12
@@ -40,7 +34,6 @@ can_use_shield 1
 can_use_armour 1
 can_use_weapon 1
 can_use_scroll 1
-magicmap black
 body_skill 1
 body_finger 2
 body_torso 1

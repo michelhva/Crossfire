@@ -2,12 +2,7 @@ Object ghast
 randomitems standard
 race undead
 face ghast.111
-magicmap black
-anim
-ghast.111
-ghast.112
-ghast.113
-mina
+animation ghast
 monster 1
 move_type walk
 sleep 1

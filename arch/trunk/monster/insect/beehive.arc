@@ -8,11 +8,7 @@ sp 136
 maxsp 1
 speed -0.1
 weight -1
-anim
-beehive.111
-beehive.112
-mina
-magicmap light_blue
+animation beehive
 alive 1
 level 1
 exp 50

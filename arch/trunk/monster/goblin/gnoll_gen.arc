@@ -4,7 +4,6 @@ other_arch gnoll
 name generator
 generator 1
 face gnoll_gen.111
-magicmap red
 hp 40
 maxhp 40
 exp 80

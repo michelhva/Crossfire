@@ -3,7 +3,6 @@ race faerie
 name stalker generator
 other_arch stalker
 face stalkergen.111
-magicmap blue
 generator 1
 hp 150
 maxhp 150

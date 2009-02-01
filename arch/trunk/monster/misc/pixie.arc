@@ -2,16 +2,7 @@ Object pixie
 race faerie
 randomitems pixie
 face pixie.111
-magicmap orange
-anim
-pixie.111
-pixie.112
-pixie.111
-pixie.112
-pixie.111
-blank.111
-blank.111
-mina
+animation pixie
 monster 1
 move_type walk fly_low
 sleep 1

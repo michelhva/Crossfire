@@ -3,10 +3,7 @@ name xan
 race insect
 randomitems xan
 face xan.111
-anim
-xan.111
-xan.112
-mina
+animation xan
 monster 1
 move_type walk fly_low
 sleep 1
@@ -25,5 +22,4 @@ attacktype 1025
 speed 0.5
 exp 35
 weight 7
-magicmap brown
 end

@@ -3,13 +3,7 @@ race earth_elemental
 name earth para-elemental
 face para_earth.111
 randomitems para_elemental
-magicmap brown
-anim
-para_earth.111
-para_earth.112
-para_earth.113
-para_earth.112
-mina
+animation para_earth
 monster 1
 move_type walk
 alive 1

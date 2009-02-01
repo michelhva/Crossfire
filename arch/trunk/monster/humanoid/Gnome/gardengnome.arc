@@ -8,10 +8,7 @@ move_type walk
 no_pick 1
 type 120
 face gardengnome.111
-anim
-gardengnome.111
-gardengnome.112
-mina
+animation gardengnome
 ac 1
 reflect_spell 1
 wc 5
@@ -48,7 +45,6 @@ can_use_weapon 1
 can_use_ring 1
 run_away 99
 exp 2000
-magicmap blue
 body_skill 1
 body_torso 1
 body_head 1

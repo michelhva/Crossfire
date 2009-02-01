@@ -4,7 +4,6 @@ other_arch scorpion
 name scorpion generator
 generator 1
 face scorpi_gen.111
-magicmap red
 alive 1
 level 1
 speed 0.002

@@ -2,12 +2,7 @@ Object elf_guard
 race faerie
 name elf guard
 face elf_guard.111
-anim
-elf_guard.111
-elf_guard.112
-elf_guard.113
-mina
-magicmap green
+animation elf_guard
 speed 0.06
 alive 1
 monster 1

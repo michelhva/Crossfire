@@ -1,10 +1,7 @@
 Object ant
 face ant.111
 race insect
-anim
-ant.111
-ant.112
-mina
+animation ant
 monster 1
 move_type walk
 no_pick 1
@@ -19,5 +16,4 @@ wc 18
 dam 1
 speed 0.1
 weight 1000
-magicmap brown
 end

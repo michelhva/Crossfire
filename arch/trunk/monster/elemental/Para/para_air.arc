@@ -3,13 +3,7 @@ race air_elemental
 name air para-elemental
 randomitems para_elemental
 face para_air.111
-magicmap white
-anim
-para_air.111
-para_air.112
-para_air.113
-para_air.114
-mina
+animation para_air
 monster 1
 move_type walk fly_low
 alive 1

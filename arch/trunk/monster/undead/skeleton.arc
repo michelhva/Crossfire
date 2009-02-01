@@ -2,11 +2,7 @@ Object skeleton
 randomitems skeleton
 race undead
 face skeleton.111
-magicmap white
-anim
-skeleton.111
-skeleton.112
-mina
+animation skeleton
 monster 1
 move_type walk
 sleep 1

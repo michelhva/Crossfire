@@ -2,13 +2,7 @@ Object zombie
 race undead
 face zombie.111
 randomitems zombie
-anim
-zombie.111
-zombie.112
-zombie.113
-zombie.112
-mina
-magicmap grey
+animation zombie
 monster 1
 move_type walk
 sleep 1

@@ -2,11 +2,7 @@ Object green_slime
 race slime
 name green slime
 face greenslime.111
-magicmap green
-anim
-greenslime.111
-greenslime.112
-mina
+animation green_slime
 monster 1
 move_type walk
 sleep 1

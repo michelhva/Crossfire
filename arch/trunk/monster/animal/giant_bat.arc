@@ -3,11 +3,7 @@ name giant bat
 race animal
 face giant_bat.111
 randomitems giant_bat
-anim
-giant_bat.111
-giant_bat.112
-giant_bat.113
-mina
+animation giant_bat
 monster 1
 move_type walk fly_low
 sleep 1
@@ -25,5 +21,4 @@ speed 0.3
 exp 225
 weight 5000
 attack_movement 3
-magicmap black
 end

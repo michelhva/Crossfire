@@ -3,11 +3,7 @@ race fire_elemental
 name fire para-elemental
 face para_fire.111
 randomitems para_elemental
-magicmap red
-anim
-para_fire.111
-para_fire.112
-mina
+animation para_fire
 monster 1
 move_type walk fly_low
 alive 1
