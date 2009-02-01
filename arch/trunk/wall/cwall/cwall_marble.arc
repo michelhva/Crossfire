@@ -4,8 +4,6 @@ face cwall_marble.111
 blocksview 1
 no_pick 1
 move_block all
-visibility 100
-magicmap grey
 end
 
 Object cwall_beigemarble
@@ -14,8 +12,6 @@ face cwall_beigemarble.111
 blocksview 1
 no_pick 1
 move_block all
-visibility 100
-magicmap grey
 end
 
 Object cwall_bluemarblemedium
@@ -24,8 +20,6 @@ face cwall_bluemarblemedium.111
 blocksview 1
 no_pick 1
 move_block all
-visibility 100
-magicmap grey
 end
 
 Object cwall_cyanmarble
@@ -34,8 +28,6 @@ face cwall_cyanmarble.111
 blocksview 1
 no_pick 1
 move_block all
-visibility 100
-magicmap grey
 end
 
 Object cwall_cyanmarbledark
@@ -44,8 +36,6 @@ face cwall_cyanmarbledark.111
 blocksview 1
 no_pick 1
 move_block all
-visibility 100
-magicmap grey
 end
 
 Object cwall_graymarble
@@ -54,8 +44,6 @@ face cwall_graymarble.111
 blocksview 1
 no_pick 1
 move_block all
-visibility 100
-magicmap grey
 end
 
 Object cwall_greenmarble
@@ -64,8 +52,6 @@ face cwall_greenmarble.111
 blocksview 1
 no_pick 1
 move_block all
-visibility 100
-magicmap grey
 end
 
 Object cwall_greenmarblemedium
@@ -74,8 +60,6 @@ face cwall_greenmarblemedium.111
 blocksview 1
 no_pick 1
 move_block all
-visibility 100
-magicmap grey
 end
 
 Object cwall_magentamarble
@@ -84,8 +68,6 @@ face cwall_magentamarble.111
 blocksview 1
 no_pick 1
 move_block all
-visibility 100
-magicmap grey
 end
 
 Object cwall_pinkmarble
@@ -94,6 +76,4 @@ face cwall_pinkmarble.111
 blocksview 1
 no_pick 1
 move_block all
-visibility 100
-magicmap grey
 end

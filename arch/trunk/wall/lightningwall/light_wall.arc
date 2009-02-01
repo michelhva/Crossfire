@@ -9,8 +9,6 @@ speed -0.1
 no_pick 1
 move_block all
 blocksview 1
-visibility 100
-magicmap yellow
 arch spell_sm_lightning
 end
 end
@@ -21,16 +19,7 @@ activate_on_push 1
 activate_on_release 1
 level 1
 face light_wall.111
-anim
-light_wall.111
-light_wall.121
-light_wall.131
-light_wall.141
-light_wall.151
-light_wall.161
-light_wall.171
-light_wall.181
-mina
+animation lightningwall_t
 sp 1
 maxsp 1
 is_animated 0
@@ -38,8 +27,6 @@ speed -0.04
 no_pick 1
 move_block all
 blocksview 1
-visibility 100
-magicmap yellow
 arch spell_sm_lightning
 end
 end
@@ -55,8 +42,6 @@ speed -0.04
 no_pick 1
 move_block all
 blocksview 1
-visibility 100
-magicmap yellow
 arch spell_sm_lightning
 end
 end
@@ -72,8 +57,6 @@ speed -0.04
 no_pick 1
 move_block all
 blocksview 1
-visibility 100
-magicmap yellow
 arch spell_sm_lightning
 end
 end
@@ -89,8 +72,6 @@ speed -0.04
 no_pick 1
 move_block all
 blocksview 1
-visibility 100
-magicmap yellow
 arch spell_sm_lightning
 end
 end
@@ -106,8 +87,6 @@ speed -0.04
 no_pick 1
 move_block all
 blocksview 1
-visibility 100
-magicmap yellow
 arch spell_sm_lightning
 end
 end
@@ -123,8 +102,6 @@ speed -0.04
 no_pick 1
 move_block all
 blocksview 1
-visibility 100
-magicmap yellow
 arch spell_sm_lightning
 end
 end
@@ -140,8 +117,6 @@ speed -0.04
 no_pick 1
 move_block all
 blocksview 1
-visibility 100
-magicmap yellow
 arch spell_sm_lightning
 end
 end
@@ -157,8 +132,6 @@ speed -0.04
 no_pick 1
 move_block all
 blocksview 1
-visibility 100
-magicmap yellow
 arch spell_sm_lightning
 end
 end
@@ -174,8 +147,6 @@ speed -0.04
 no_pick 1
 move_block all
 blocksview 1
-visibility 100
-magicmap yellow
 arch spell_sm_lightning
 end
 end

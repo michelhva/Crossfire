@@ -1,13 +1,7 @@
 Object earthwall
 race wall
 face earthwall.111
-magicmap grey
-anim
-earthwall.111
-earthwall.112
-earthwall.113
-blank.111
-mina
+animation earthwall
 is_animated 0
 tear_down 1
 hp 24
