@@ -7,7 +7,7 @@ height 38
 enter_x 14
 enter_y 18
 msg
-Modified: 2008-10-26 Rick Tanner
+Modified: 2009-02-01 Rick Tanner
 endmsg
 end
 arch grass
@@ -1718,7 +1718,11 @@ arch dungeon_floor
 x 10
 y 17
 end
-arch cwall_2_1_2
+arch swall_1_4_half
+x 10
+y 17
+end
+arch cwall_1_3
 x 10
 y 17
 end
@@ -1730,7 +1734,11 @@ arch dungeon_floor
 x 10
 y 19
 end
-arch cwall_2_1_2
+arch swall_1_4_half
+x 10
+y 19
+end
+arch cwall_1_3
 x 10
 y 19
 end
@@ -2036,7 +2044,11 @@ arch dungeon_floor
 x 12
 y 17
 end
-arch cwall_2_1_2
+arch swall_1_3_half
+x 12
+y 17
+end
+arch cwall_1_4
 x 12
 y 17
 end
@@ -2048,7 +2060,11 @@ arch dungeon_floor
 x 12
 y 19
 end
-arch cwall_2_1_2
+arch swall_1_3_half
+x 12
+y 19
+end
+arch cwall_1_4
 x 12
 y 19
 end
@@ -2481,7 +2497,11 @@ arch dungeon_floor
 x 15
 y 6
 end
-arch cwall_2_1_1
+arch cwall_1_2
+x 15
+y 6
+end
+arch swall_1_1_half
 x 15
 y 6
 end
@@ -2497,7 +2517,11 @@ arch dungeon_floor
 x 15
 y 8
 end
-arch cwall_2_1_1
+arch swall_1_2_half
+x 15
+y 8
+end
+arch cwall_1_1
 x 15
 y 8
 end
@@ -2653,7 +2677,11 @@ arch dungeon_floor
 x 15
 y 28
 end
-arch cwall_2_1_1
+arch cwall_1_2
+x 15
+y 28
+end
+arch swall_1_1_half
 x 15
 y 28
 end
@@ -2669,7 +2697,11 @@ arch dungeon_floor
 x 15
 y 30
 end
-arch cwall_2_1_1
+arch swall_1_2_half
+x 15
+y 30
+end
+arch cwall_1_1
 x 15
 y 30
 end
@@ -4599,7 +4631,11 @@ arch dungeon_floor
 x 25
 y 3
 end
-arch cwall_2_1_2
+arch swall_1_4_half
+x 25
+y 3
+end
+arch cwall_1_3
 x 25
 y 3
 end
@@ -5017,7 +5053,11 @@ arch dungeon_floor
 x 27
 y 3
 end
-arch cwall_2_1_2
+arch swall_1_3_half
+x 27
+y 3
+end
+arch cwall_1_4
 x 27
 y 3
 end
@@ -5189,7 +5229,11 @@ arch dungeon_floor
 x 27
 y 34
 end
-arch cwall_2_1_2
+arch swall_1_4_half
+x 27
+y 34
+end
+arch cwall_1_3
 x 27
 y 34
 end
@@ -5599,7 +5643,11 @@ arch dungeon_floor
 x 29
 y 34
 end
-arch cwall_2_1_2
+arch swall_1_3_half
+x 29
+y 34
+end
+arch cwall_1_4
 x 29
 y 34
 end
@@ -6291,7 +6339,11 @@ arch dungeon_floor
 x 33
 y 3
 end
-arch cwall_2_1_2
+arch swall_1_4_half
+x 33
+y 3
+end
+arch cwall_1_3
 x 33
 y 3
 end
@@ -6713,7 +6765,11 @@ arch dungeon_floor
 x 35
 y 3
 end
-arch cwall_2_1_2
+arch swall_1_3_half
+x 35
+y 3
+end
+arch cwall_1_4
 x 35
 y 3
 end
@@ -8143,7 +8199,11 @@ arch dungeon_floor
 x 41
 y 34
 end
-arch cwall_2_1_2
+arch swall_1_4_half
+x 41
+y 34
+end
+arch cwall_1_3
 x 41
 y 34
 end
@@ -8521,7 +8581,11 @@ arch dungeon_floor
 x 43
 y 34
 end
-arch cwall_2_1_2
+arch swall_1_3_half
+x 43
+y 34
+end
+arch cwall_1_4
 x 43
 y 34
 end
@@ -8754,7 +8818,11 @@ arch dungeon_floor
 x 45
 y 3
 end
-arch cwall_2_1_2
+arch swall_1_4_half
+x 45
+y 3
+end
+arch cwall_1_3
 x 45
 y 3
 end
@@ -9136,7 +9204,11 @@ arch dungeon_floor
 x 47
 y 3
 end
-arch cwall_2_1_2
+arch swall_1_3_half
+x 47
+y 3
+end
+arch cwall_1_4
 x 47
 y 3
 end
@@ -9586,7 +9658,11 @@ arch dungeon_floor
 x 49
 y 11
 end
-arch cwall_2_1_1
+arch cwall_1_2
+x 49
+y 11
+end
+arch swall_1_1_half
 x 49
 y 11
 end
@@ -9610,7 +9686,11 @@ arch dungeon_floor
 x 49
 y 14
 end
-arch cwall_2_1_1
+arch swall_1_2_half
+x 49
+y 14
+end
+arch cwall_1_1
 x 49
 y 14
 end
@@ -9730,7 +9810,11 @@ arch dungeon_floor
 x 49
 y 29
 end
-arch cwall_2_1_1
+arch cwall_1_2
+x 49
+y 29
+end
+arch swall_1_1_half
 x 49
 y 29
 end
@@ -9754,7 +9838,11 @@ arch dungeon_floor
 x 49
 y 32
 end
-arch cwall_2_1_1
+arch swall_1_2_half
+x 49
+y 32
+end
+arch cwall_1_1
 x 49
 y 32
 end
