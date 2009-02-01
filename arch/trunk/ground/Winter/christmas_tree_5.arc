@@ -5,9 +5,7 @@ no_pick 1
 move_slow walk
 move_slow_penalty 1
 is_wooded 1
-visibility 100
 glow_radius 2
-magicmap brown
 end
 
 
@@ -18,7 +16,5 @@ no_pick 1
 move_slow walk
 move_slow_penalty 1
 is_wooded 1
-visibility 100
 glow_radius 2
-magicmap brown
 end

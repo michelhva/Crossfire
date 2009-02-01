@@ -4,7 +4,6 @@ face jungle_1.111
 type 67
 race /terrain/jungle
 move_on walk
-magicmap green
 no_pick 1
 blocksview 1
 move_slow walk

@@ -1,16 +1,8 @@
 Object blood_sea
 face blood_sea.111
-anim
-blood_sea.111
-blood_sea.112
-blood_sea.113
-blood_sea.114
-blood_sea.113
-blood_sea.112
-mina
+animation blood_sea
 name sea of blood
 name_pl sea of blood
-magicmap red
 smoothlevel 29
 smoothface blood_sea.111 blood_sea_S.111
 smoothface blood_sea.112 blood_sea_S.112

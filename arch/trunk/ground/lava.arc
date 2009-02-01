@@ -8,20 +8,13 @@ move_on walk
 wc -30
 name lava
 face lava.111
-anim
-lava.111
-lava.112
-lava.113
-lava.114
-lava.115
-mina
+animation lava
 smoothface lava.111 lava_S.111
 smoothface lava.112 lava_S.112
 smoothface lava.113 lava_S.113
 smoothface lava.114 lava_S.114
 smoothface lava.115 lava_S.115
 smoothlevel 28
-magicmap yellow
 speed 0.2
 no_pick 1
 attacktype 4
@@ -40,14 +33,7 @@ wc -30
 lifesave 1
 name lava
 face lava.111
-anim
-lava.111
-lava.112
-lava.113
-lava.114
-lava.115
-mina
-magicmap yellow
+animation permanent_lava
 speed 0.2
 no_pick 1
 smoothlevel 28

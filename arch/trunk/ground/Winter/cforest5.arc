@@ -1,6 +1,5 @@
 Object cforest5
 face cforest5.111
-magicmap green
 type 67
 race /terrain/forest
 move_on walk

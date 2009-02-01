@@ -4,7 +4,6 @@ face mountain1.111
 type 67
 race /terrain/mountain
 move_on walk
-magicmap grey
 no_pick 1
 blocksview 1
 is_hilly 1

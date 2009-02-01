@@ -1,16 +1,8 @@
 Object oil_sea
 face oil_sea.111
-anim
-oil_sea.111
-oil_sea.112
-oil_sea.113
-oil_sea.114
-oil_sea.113
-oil_sea.112
-mina
+animation oil_sea
 name oil ocean
 name_pl oil ocean
-magicmap black
 smoothlevel 16
 smoothface oil_sea.111 oil_sea_S.111
 smoothface oil_sea.112 oil_sea_S.112
@@ -29,17 +21,9 @@ Object oil_sea_ultra_viscous
 #(ex: some random maps). For most applications you should use the regular oil_sea
 #which will be swimmable as water is (but much slower swimming of course)
 face oil_sea.111
-anim
-oil_sea.111
-oil_sea.112
-oil_sea.113
-oil_sea.114
-oil_sea.113
-oil_sea.112
-mina
+animation oil_sea_ultra_viscous
 name ultra viscous oil
 name_pl ultra viscous oil
-magicmap black
 smoothlevel 16
 smoothface oil_sea.111 oil_sea_S.111
 smoothface oil_sea.112 oil_sea_S.112

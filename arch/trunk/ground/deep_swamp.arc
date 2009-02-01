@@ -3,11 +3,7 @@ name swamp
 type 138
 face deep_swamp.111
 speed -0.07
-anim
-deep_swamp.111
-deep_swamp.112
-mina
-magicmap green
+animation deep_swamp
 no_pick 1
 is_water 1
 move_on walk

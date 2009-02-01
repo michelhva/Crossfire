@@ -1,7 +1,6 @@
 Object blackrock
 name blackrock
 face blackrock.111
-magicmap black
 no_pick 1
 is_floor 1
 smoothlevel 50

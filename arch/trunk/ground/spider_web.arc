@@ -8,5 +8,4 @@ no_pick 1
 move_slow walk
 move_slow_penalty 7
 material 128
-visibility 50
 end

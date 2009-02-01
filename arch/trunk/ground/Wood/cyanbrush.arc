@@ -3,7 +3,6 @@ face cyanbrush.111
 type 67
 move_on walk
 race /terrain/plains
-magicmap green
 no_pick 1
 move_slow walk
 move_slow_penalty 2
