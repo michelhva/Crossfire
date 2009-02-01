@@ -3,11 +3,7 @@ name diamond
 race gold and jewels
 type 60
 face gem.111
-anim
-gem.111
-gem.112
-mina
-magicmap green
+animation gem
 nrof 1
 anim_speed 10
 client_anim_random 1

@@ -2,7 +2,6 @@ Object silverbar
 name silver bar
 race gold and jewels
 face silverbar.111
-magicmap grey
 nrof 1
 type 60
 material 2

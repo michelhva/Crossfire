@@ -4,7 +4,6 @@ name_pl ores
 title of copper
 race gold and jewels
 face ore_g.111
-magicmap green
 nrof 1
 type 73
 material 64

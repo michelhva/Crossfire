@@ -2,11 +2,7 @@ Object ruby
 face ruby.111
 race gold and jewels
 type 60
-anim
-ruby.111
-ruby.112
-mina
-magicmap red
+animation ruby
 nrof 1
 anim_speed 10
 client_anim_random 1

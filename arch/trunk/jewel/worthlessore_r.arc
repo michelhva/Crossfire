@@ -4,7 +4,6 @@ name_pl ores
 title of nothing
 race gold and jewels
 face ore_r.111
-magicmap grey
 nrof 1
 type 73
 material 64

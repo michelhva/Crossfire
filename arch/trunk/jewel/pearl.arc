@@ -2,11 +2,7 @@ Object pearl
 face pearl.111
 race gold and jewels
 type 60
-anim
-pearl.111
-pearl.112
-mina
-magicmap white
+animation pearl
 nrof 1
 anim_speed 10
 client_anim_random 1
