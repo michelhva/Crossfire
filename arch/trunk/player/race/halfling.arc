@@ -7,17 +7,7 @@ msg
 Halflings are another sub-race of humankind, like the Northman. They are much smaller and shorter than humans, so they are weaker, but they are far quicker and hardier. They're quite unreligious, but many take up magic.
 Their small size lets them hide more effectively, and for some reason chance seems to favor them with good luck. They are also surprisingly resistant to loss of lifeforce.
 endmsg
-anim
-halfling.111
-halfling.112
-halfling.131
-halfling.132
-halfling.151
-halfling.152
-halfling.171
-halfling.172
-facings 4
-mina
+animation halfling_player
 is_animated 1
 anim_speed -1
 type 1
@@ -39,7 +29,6 @@ Str -4
 Dex 3
 Con 4
 Wis -3
-magicmap blue
 # Arguably, halfings should have a body_small_torso or something.
 body_range 1
 body_arm 2

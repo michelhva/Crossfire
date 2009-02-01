@@ -3,17 +3,7 @@ name monk
 anim_suffix class_monk
 randomitems monk_class_items
 face monk.151
-anim
-monk.111
-monk.112
-monk.131
-monk.132
-monk.151
-monk.152
-monk.171
-monk.172
-facings 4
-mina
+animation monk_class
 is_animated 1
 anim_speed -1
 type 37

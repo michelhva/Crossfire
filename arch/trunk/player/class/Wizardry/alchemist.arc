@@ -3,17 +3,7 @@ name alchemist
 anim_suffix class_alchemist
 randomitems alchemist_class_items
 face alchemist.151
-anim
-alchemist.111
-alchemist.112
-alchemist.131
-alchemist.132
-alchemist.151
-alchemist.152
-alchemist.171
-alchemist.172
-facings 4
-mina
+animation alchemist_class
 is_animated 1
 anim_speed -1
 type 37
