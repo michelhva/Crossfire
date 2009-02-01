@@ -36,5 +36,4 @@ type 8
 skill literacy
 material 1
 weight 4000
-magicmap green
 end

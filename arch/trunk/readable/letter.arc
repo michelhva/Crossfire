@@ -7,7 +7,6 @@ skill literacy
 material 1
 value 20
 weight 200
-magicmap khaki
 name_pl letters
 client_type 1041
 end

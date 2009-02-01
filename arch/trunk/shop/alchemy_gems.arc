@@ -6,19 +6,7 @@ food 40
 type 103
 no_pick 1
 face lava.111
-anim
-lava.111
-lava.112
-lava.113
-lava.114
-lava.115
-polymorph.111
-lava.114
-polymorph.112
-polymorph.113
-polymorph.114
-gem.111
-mina
+animation alchemy_diamond_converter
 anim_speed 2
 client_anim_random 1
 move_on walk
@@ -32,19 +20,7 @@ food 20
 type 103
 no_pick 1
 face lava.111
-anim
-lava.111
-lava.112
-lava.113
-lava.114
-lava.115
-polymorph.111
-lava.114
-polymorph.112
-polymorph.113
-polymorph.114
-ruby.111
-mina
+animation alchemy_ruby_converter
 anim_speed 2
 client_anim_random 1
 move_on walk
@@ -58,19 +34,7 @@ food 5
 type 103
 no_pick 1
 face lava.111
-anim
-lava.111
-lava.112
-lava.113
-lava.114
-lava.115
-polymorph.111
-lava.114
-polymorph.112
-polymorph.113
-polymorph.114
-pearl.111
-mina
+animation alchemy_pearl_converter
 anim_speed 2
 client_anim_random 1
 move_on walk

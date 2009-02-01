@@ -2,7 +2,6 @@ Object talisman
 name talisman
 face talisman.111
 type 39
-magicmap grey
 weight 1000
 value 300
 nrof 1
@@ -17,7 +16,6 @@ name talisman
 title of sorcery
 face talisman.111
 type 74
-magicmap grey
 weight 1000
 value 3000
 nrof 1
@@ -33,7 +31,6 @@ name talisman
 title of summoning
 face talisman.111
 type 74
-magicmap grey
 weight 1000
 value 3000
 nrof 1
@@ -49,7 +46,6 @@ name talisman
 title of evocation
 face talisman.111
 type 74
-magicmap grey
 weight 1000
 value 3000
 nrof 1
@@ -65,7 +61,6 @@ name talisman
 title of pyromancy
 face talisman.111
 type 74
-magicmap grey
 weight 1000
 value 3000
 nrof 1

@@ -9,5 +9,4 @@ hp 1
 sp 1
 value 300
 weight 7200
-magicmap khaki
 end

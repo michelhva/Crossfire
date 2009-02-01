@@ -3,7 +3,6 @@ name scroll of sense curse
 skill sense curse
 face scrollr.111
 race scrolls
-magicmap white
 nrof 1
 type 130
 material 1

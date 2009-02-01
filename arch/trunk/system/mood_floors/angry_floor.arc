@@ -1,7 +1,6 @@
 Object angry_floor
 face angry_floor.111
 no_pick 1
-magicmap red
 invisible 1
 last_sp 1
 type 65

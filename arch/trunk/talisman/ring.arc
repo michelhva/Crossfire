@@ -1,14 +1,6 @@
 Object ring
 name ring
-anim
-ring.111
-ring.112
-ring.113
-ring.114
-ring.115
-ring.116
-mina
-magicmap orange
+animation ring
 is_animated 0
 face ring.110
 value 500

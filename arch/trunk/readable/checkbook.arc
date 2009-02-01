@@ -8,7 +8,6 @@ skill literacy
 material 1
 value 10
 weight 1000
-magicmap brown
 name_pl cheque books
 client_type 1041
 end
