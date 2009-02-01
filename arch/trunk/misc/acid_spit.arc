@@ -4,17 +4,7 @@ type 13
 name acid spit
 face acidspit.111
 nrof 1
-anim
-acidspit.111
-acidspit.111
-acidspit.121
-acidspit.131
-acidspit.141
-acidspit.151
-acidspit.161
-acidspit.171
-acidspit.181
-mina
+animation acid_spit
 is_animated 0
 is_turnable 1
 no_drop 1

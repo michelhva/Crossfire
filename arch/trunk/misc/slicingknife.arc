@@ -8,7 +8,6 @@ materialname bronze
 skill one handed weapon
 weight 1000
 value 7
-magicmap white
 name slicing knife
 name_pl slicing knives
 client_type 101
@@ -28,7 +27,6 @@ material 2
 skill one handed weapon
 weight 1000
 value 14
-magicmap white
 name slicing knife
 name_pl slicing knives
 client_type 101

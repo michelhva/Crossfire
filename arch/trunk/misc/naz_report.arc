@@ -11,14 +11,12 @@ except in a Special Case:
 *so I cannot continue to read *
 endmsg
 face naz_report.111
-magicmap dark_orange
 nrof 1
 type 8
 subtype 34
 material 1
 value 20000
 weight 300
-magicmap white
 name_pl Nazgul Reports
 client_type 1042
 skill literacy

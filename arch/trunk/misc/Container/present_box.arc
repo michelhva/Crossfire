@@ -18,7 +18,6 @@ type 121
 no_pick 1
 no_drop 1
 identified 1
-magicmap khaki
 end
 
 Object present_box_2
@@ -41,7 +40,6 @@ type 121
 no_pick 1
 no_drop 1
 identified 1
-magicmap khaki
 end
 
 Object present_box_3
@@ -64,7 +62,6 @@ type 121
 no_pick 1
 no_drop 1
 identified 1
-magicmap khaki
 end
 
 Object present_box_4
@@ -87,7 +84,6 @@ type 121
 no_pick 1
 no_drop 1
 identified 1
-magicmap khaki
 end
 
 Object present_box_5
@@ -110,7 +106,6 @@ type 121
 no_pick 1
 no_drop 1
 identified 1
-magicmap khaki
 end
 
 Object present_box_6
@@ -133,6 +128,5 @@ type 121
 no_pick 1
 no_drop 1
 identified 1
-magicmap khaki
 end
 

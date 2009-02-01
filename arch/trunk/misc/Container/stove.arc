@@ -1,10 +1,6 @@
 Object stove
 face stove.111
-anim
-stove.111
-stove.112
-stove.113
-mina
+animation stove
 anim_speed 5
 client_anim_random 1
 glow_radius 1
@@ -16,7 +12,6 @@ container 800000
 is_cauldron 1
 Str 0
 value 18000
-magicmap black
 name_pl stoves
 client_type 51
 end

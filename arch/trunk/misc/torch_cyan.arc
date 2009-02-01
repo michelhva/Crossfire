@@ -2,11 +2,7 @@ Object torch_cyan
 name torch of cyan light
 nrof 1
 face torch_cyan.111
-anim
-torch_cyan.111
-torch_cyan.112
-mina
-magicmap light_blue
+animation torch_cyan
 material 144
 value 0
 weight 3000

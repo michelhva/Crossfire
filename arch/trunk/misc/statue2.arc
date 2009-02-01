@@ -4,5 +4,4 @@ type 98
 subtype 46
 no_pick 1
 move_block all
-magicmap black
 end

@@ -7,7 +7,6 @@ exp 30
 face grand_piano_black.x11
 no_pick 1
 move_on walk
-visibility 50
 end
 More
 Object grand_piano_2_black
@@ -20,7 +19,6 @@ exp 30
 face grand_piano_black.x11
 no_pick 1
 move_on walk
-visibility 50
 end
 More
 Object grand_piano_3_black
@@ -33,7 +31,6 @@ exp 30
 face grand_piano_black.x11
 no_pick 1
 move_on walk
-visibility 50
 end
 More
 Object grand_piano_4_black
@@ -47,6 +44,5 @@ exp 30
 face grand_piano_black.x11
 no_pick 1
 move_on walk
-visibility 50
 end
 

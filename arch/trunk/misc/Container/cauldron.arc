@@ -8,7 +8,6 @@ container 800000
 is_cauldron 1
 Str 0
 value 18000
-magicmap black
 name_pl cauldrons
 client_type 51
 end
@@ -31,5 +30,4 @@ face cauldron_open.111
 type 121
 no_pick 1
 no_drop 1
-magicmap black
 end

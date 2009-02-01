@@ -1,10 +1,6 @@
 Object forge
 face forge.111
-anim
-forge.111
-forge.112
-forge.113
-mina
+animation forge
 anim_speed 5
 client_anim_random 1
 glow_radius 1
@@ -16,7 +12,6 @@ container 800000
 is_cauldron 1
 Str 0
 value 18000
-magicmap black
 name_pl forges
 client_type 51
 end

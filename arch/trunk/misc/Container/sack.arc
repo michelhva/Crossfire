@@ -9,7 +9,6 @@ weight 100
 container 150000
 Str 10
 identified 1
-magicmap brown
 name_pl sacks
 client_type 51
 end
@@ -20,5 +19,4 @@ type 121
 no_drop 1
 no_pick 1
 identified 1
-magicmap brown
 end

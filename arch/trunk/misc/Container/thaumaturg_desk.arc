@@ -9,7 +9,6 @@ container 800000
 is_cauldron 1
 Str 0
 value 18000
-magicmap black
 name_pl thaumaturgist's desks
 client_type 51
 end
