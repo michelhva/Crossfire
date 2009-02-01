@@ -10,7 +10,6 @@ dam 6
 weight 15000
 value 13
 attacktype 1
-magicmap brown
 name_pl stonehammers
 client_type 126
 body_arm -1

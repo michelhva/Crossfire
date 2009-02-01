@@ -13,7 +13,6 @@ value 5
 attacktype 1
 weapontype 3
 is_thrown 1
-magicmap white
 name_pl axes
 client_type 106
 body_arm -1

@@ -9,7 +9,6 @@ weapontype 8
 weight 9000
 value 10
 attacktype 1
-magicmap khaki
 name_pl clubs
 client_type 121
 body_arm -1

@@ -9,7 +9,6 @@ weight 13000
 value 42
 attacktype 1
 weapontype 1
-magicmap white
 name_pl falchions
 client_type 101
 body_arm -1

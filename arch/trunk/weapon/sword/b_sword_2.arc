@@ -11,7 +11,6 @@ dam 4
 weight 14500
 value 11
 attacktype 1
-magicmap white
 weapontype 1
 name_pl long swords
 client_type 101

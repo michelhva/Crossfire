@@ -10,7 +10,6 @@ weight 12000
 value 23
 attacktype 1
 weapontype 3
-magicmap white
 name_pl axes
 client_type 106
 body_arm -1

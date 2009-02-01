@@ -13,7 +13,6 @@ wc 1
 value 17000
 no_strength 0
 attacktype 1
-magicmap brown
 name_pl elven bows
 client_type 150
 body_arm -2

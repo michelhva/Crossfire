@@ -9,7 +9,6 @@ weight 8000
 value 52
 attacktype 1
 weapontype 1
-magicmap white
 name sickle
 name_pl sickles
 client_type 101

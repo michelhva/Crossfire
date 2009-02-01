@@ -10,7 +10,6 @@ dam 1
 weight 5000
 value 20
 attacktype 1
-magicmap brown
 name_pl nunchacus
 client_type 141
 body_arm -2

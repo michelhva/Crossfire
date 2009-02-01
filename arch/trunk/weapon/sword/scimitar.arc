@@ -3,7 +3,6 @@ nrof 1
 last_sp 8
 type 15
 face scimitar.111
-magicmap grey
 material 2
 dam 8
 weight 15000

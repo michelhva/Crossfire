@@ -4,7 +4,6 @@ name large club
 last_sp 17
 type 15
 face big_club.111
-magicmap brown
 material 16
 weapontype 8
 dam 20

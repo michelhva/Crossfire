@@ -4,15 +4,7 @@ nrof 1
 last_sp 6
 type 15
 face uk_sd.111
-anim
-uk_sd.111
-uk_sd.112
-uk_sd.113
-uk_sd.114
-uk_sd.115
-uk_sd.116
-uk_sd.117
-mina
+animation uk_sd
 anim_speed 2
 client_anim_random 1
 material 2
@@ -23,7 +15,6 @@ weight 111000
 value 1000000
 attacktype 1
 weapontype 1
-magicmap grey
 name_pl Unknown Swords
 client_type 100
 body_arm -2

@@ -10,7 +10,6 @@ dam 8
 weight 15500
 value 55
 attacktype 1
-magicmap white
 weapontype 1
 name_pl swords
 client_type 101

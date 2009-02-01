@@ -9,7 +9,6 @@ weapontype 7
 weight 17500
 value 25
 attacktype 1
-magicmap brown
 name_pl hammers
 client_type 126
 body_arm -1

@@ -5,7 +5,6 @@ type 14
 nrof 1
 material 16
 face huntersbow.111
-magicmap brown
 dam 10
 weight 2000
 value 50

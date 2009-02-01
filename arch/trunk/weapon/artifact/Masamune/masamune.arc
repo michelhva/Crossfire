@@ -3,13 +3,7 @@ name Katana of Masamune
 nrof 1
 type 15
 face masamune.111
-anim
-masamune.113
-masamune.112
-masamune.111
-masamune.114
-masamune.114
-mina
+animation masamune
 anim_speed 5
 client_anim_random 1
 slaying undead
@@ -28,7 +22,6 @@ attacktype 257
 weapontype 4
 material 2
 magic 3
-magicmap grey
 name_pl Katanas of Masamune
 client_type 100
 body_arm -1
