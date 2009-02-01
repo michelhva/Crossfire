@@ -4,17 +4,7 @@ anim_suffix class_cleric
 name cleric
 randomitems cleric_class_items
 face cleric.151
-anim
-cleric.111
-cleric.112
-cleric.131
-cleric.132
-cleric.151
-cleric.152
-cleric.171
-cleric.172
-facings 4
-mina
+animation cleric_class
 is_animated 1
 anim_speed -1
 type 37

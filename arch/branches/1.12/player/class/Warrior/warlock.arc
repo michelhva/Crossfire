@@ -4,17 +4,7 @@ randomitems warlock_class_items
 face mage.151
 magicmap black
 anim_suffix class_warlock
-anim
-mage.111
-mage.112
-mage.131
-mage.132
-mage.151
-mage.152
-mage.171
-mage.172
-facings 4
-mina
+animation warlock_class
 is_animated 1
 anim_speed -1
 type 37

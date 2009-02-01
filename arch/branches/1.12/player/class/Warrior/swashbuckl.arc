@@ -3,17 +3,7 @@ name swashbuckler
 randomitems swashbuckler_class_items
 anim_suffix class_swashbuckler
 face swashbuckl.151
-anim
-swashbuckl.111
-swashbuckl.112
-swashbuckl.131
-swashbuckl.132
-swashbuckl.152
-swashbuckl.151
-swashbuckl.171
-swashbuckl.172
-facings 4
-mina
+animation swashbuckler_class
 is_animated 1
 anim_speed -1
 type 37
