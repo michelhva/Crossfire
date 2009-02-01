@@ -18,10 +18,7 @@ Object torch_1
 name torch
 face torch_lit1.111
 other_arch dim_torch
-anim
-torch_lit1.111
-torch_lit2.111
-mina
+animation torch_1
 material 144
 food 500
 changing 1
@@ -38,10 +35,7 @@ Object dim_torch
 name torch
 face torch_lit2.111
 other_arch burnt_torch
-anim
-torch_lit1.111
-torch_lit2.111
-mina
+animation dim_torch
 material 144
 food 60
 changing 1
