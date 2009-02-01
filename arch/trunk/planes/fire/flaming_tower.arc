@@ -7,7 +7,6 @@ is_animated 1
 anim_speed 2
 client_anim_random 1
 no_pick 1
-visibility 100
 client_type 25012
 end
 More
@@ -21,5 +20,4 @@ anim_speed 2
 client_anim_random 1
 no_pick 1
 y 1
-visibility 100
 end

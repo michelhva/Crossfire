@@ -1,32 +1,10 @@
 Object magma
 face magma.111
-anim
-magma.111
-magma.111
-magma.111
-magma.111
-magma.111
-magma.112
-magma.112
-magma.112
-magma.112
-magma.113
-magma.113
-magma.113
-magma.113
-magma.113
-magma.114
-magma.114
-magma.114
-magma.114
-magma.114
-magma.114
-mina
+animation magma
 move_on walk
 is_floor 1
 is_animated 1
 speed 0.15
-magicmap black
 no_pick 1
 attacktype 4
 dam 75

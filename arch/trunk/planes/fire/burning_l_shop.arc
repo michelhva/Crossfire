@@ -1,7 +1,6 @@
 Object burning_l_shop1
 name burning shop
 face burning_l_shop1.x11
-magicmap black
 type 66
 no_pick 1
 move_block all
@@ -21,7 +20,6 @@ Object burning_l_shop1_3
 name burning shop
 face burning_l_shop1.x11
 type 66
-visibility 100
 no_pick 1
 y 1
 end
@@ -31,7 +29,6 @@ name burning shop
 face burning_l_shop1.x11
 type 66
 no_pick 1
-visibility 100
 x 1
 y 1
 end
