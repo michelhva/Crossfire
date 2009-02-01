@@ -11,7 +11,6 @@ move_slow_penalty 15
 is_floor 1
 dam 2
 attacktype 16
-magicmap white
 smoothface glacier.111 empty_S.111
 smoothlevel 23
 end

@@ -1,6 +1,5 @@
 Object darkforest
 face darkforest.111
-magicmap green
 type 67
 race /terrain/forest
 move_on walk

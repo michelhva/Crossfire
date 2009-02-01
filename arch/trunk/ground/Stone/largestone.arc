@@ -6,7 +6,6 @@ move_slow walk
 move_slow_penalty 2
 is_hilly 1
 is_floor 1
-magicmap orange
 smoothface largestone.111 empty_S.111
 smoothlevel 15
 end

@@ -8,7 +8,6 @@ lifesave 1
 name strange looking ice
 face evil_ice.111
 animation evil_ice
-magicmap blue
 speed 0.2
 no_pick 1
 attacktype 16

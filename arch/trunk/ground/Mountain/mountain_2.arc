@@ -7,7 +7,6 @@ move_slow_penalty 20
 is_hilly 1
 blocksview 1
 is_floor 1
-magicmap grey
 end
 More
 Object mountain_2_2
@@ -20,7 +19,6 @@ move_slow_penalty 20
 is_hilly 1
 blocksview 1
 is_floor 1
-magicmap grey
 end
 More
 Object mountain_2_3
@@ -33,7 +31,6 @@ move_slow_penalty 20
 is_hilly 1
 blocksview 1
 is_floor 1
-magicmap grey
 end
 More
 Object mountain_2_4
@@ -47,5 +44,4 @@ move_slow_penalty 20
 is_hilly 1
 blocksview 1
 is_floor 1
-magicmap grey
 end
