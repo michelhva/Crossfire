@@ -3,17 +3,7 @@ name barbarian
 anim_suffix class_barbarian
 randomitems barbarian_class_items
 face barbarian.151
-anim
-barbarian.111
-barbarian.112
-barbarian.131
-barbarian.132
-barbarian.151
-barbarian.152
-barbarian.171
-barbarian.172
-facings 4
-mina
+animation barbarian_class
 is_animated 1
 anim_speed -1
 type 37

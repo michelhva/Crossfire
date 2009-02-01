@@ -7,17 +7,7 @@ msg
 Trolls are usually nasty creatures: scions of Gnarg. They have amazing strength and hardiness, but they're a bit clumsy, very stupid, impious, and bad at handling and obtaining magic. They heal with amazing rapidity and can see in the dark. Because of the above attributes, they're great in any fight. Well, they're great until someone waves torches at them: fire presents great peril to trolls.
 Most trolls are destroyed on sight by civilized people: but a few have proved deserving of tolerance and are permitted to enter cities.
 endmsg
-anim
-troll_p.111
-troll_p.112
-troll_p.131
-troll_p.132
-troll_p.151
-troll_p.152
-troll_p.171
-troll_p.172
-facings 4
-mina
+animation troll_player
 is_animated 1
 anim_speed -1
 type 1

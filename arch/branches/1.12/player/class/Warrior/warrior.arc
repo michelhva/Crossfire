@@ -3,17 +3,7 @@ name Warrior
 randomitems warrior_class_items
 anim_suffix class_warrior
 face warrior.151
-anim
-warrior.111
-warrior.112
-warrior.131
-warrior.132
-warrior.151
-warrior.152
-warrior.171
-warrior.172
-facings 4
-mina
+animation warrior_class
 is_animated 1
 anim_speed -1
 type 37

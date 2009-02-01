@@ -8,17 +8,7 @@ A Wraith is the spirit of a person who has made an evil bargain in order to pers
 Wraiths have a strong affinity to magic, especially cold spells, and are very strong spellcasters. However, they cannot use fire spells for fear of self-destruction. Wraith also do not heal naturally, or gain sustenance from food. Instead they have to feed off the living.
 endmsg
 magicmap black
-anim
-wraithp.111
-wraithp.112
-wraithp.131
-wraithp.132
-wraithp.151
-wraithp.152
-wraithp.171
-wraithp.172
-facings 4
-mina
+animation wraith_player
 is_animated 1
 anim_speed -1
 type 1
