@@ -1,12 +1,6 @@
 Object hedge
 face hedge.111
-magicmap green
-anim
-hedge.111
-hedge.112
-hedge.113
-blank.111
-mina
+animation hedge
 is_animated 0
 tear_down 1
 hp 24

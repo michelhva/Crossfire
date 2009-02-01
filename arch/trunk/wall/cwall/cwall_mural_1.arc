@@ -4,8 +4,6 @@ face cwall_mural_1.111
 blocksview 1
 no_pick 1
 move_block all
-visibility 100
-magicmap grey
 end
 
 Object cwall_mural_1_2
@@ -14,8 +12,6 @@ face cwall_mural_1.112
 blocksview 1
 no_pick 1
 move_block all
-visibility 100
-magicmap grey
 end
 
 Object cwall_mural_1_3
@@ -24,8 +20,6 @@ face cwall_mural_1.113
 blocksview 1
 no_pick 1
 move_block all
-visibility 100
-magicmap grey
 end
 
 Object cwall_mural_1_4
@@ -34,8 +28,6 @@ face cwall_mural_1.114
 blocksview 1
 no_pick 1
 move_block all
-visibility 100
-magicmap grey
 end
 
 Object cwall_mural_end_1_1
@@ -44,8 +36,6 @@ face cwall_mural_end_1.111
 blocksview 1
 no_pick 1
 move_block all
-visibility 100
-magicmap grey
 end
 
 Object cwall_mural_end_1_2
@@ -54,6 +44,4 @@ face cwall_mural_end_1.112
 blocksview 1
 no_pick 1
 move_block all
-visibility 100
-magicmap grey
 end
