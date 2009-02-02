@@ -1,5 +1,9 @@
 Changes for SVN top of tree:
 
+ground/deep_sea.arc
+Fix name of deep_sea archetype which was broken in revision 11299.
+Arvid Norlander 2009-02-02
+
 flesh/dragon/dragon_sca.arc
 Give dragons scales object type 73 (inorganic), this avoids alerts in
 server logs: "Query_cost: item green dragon scale hasn't got a valid type"

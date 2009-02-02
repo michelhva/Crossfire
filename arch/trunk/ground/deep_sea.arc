@@ -1,4 +1,4 @@
-Object deep_
+Object deep_sea
 face deep_sea.111
 animation deep_sea
 smoothlevel 17
