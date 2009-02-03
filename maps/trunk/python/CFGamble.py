@@ -14,9 +14,9 @@ class SlotMachine:
 	#sets up the file that holds all the slotmachine jackpots
 	#make sure this points to your writable var/crossfire directory
 	#you can delete that file to reset all the slotmachine jackpots
-        slotfile = os.path.join(Crossfire.LocalDirectory(),'SlotMachine_file')
-        slotdb = {}
-        def __init__(self,slotname,slotlist,minpot,maxpot):
+	slotfile = os.path.join(Crossfire.LocalDirectory(),'SlotMachine_file')
+	slotdb = {}
+	def __init__(self,slotname,slotlist,minpot,maxpot):
 		slotdb = shelve.open(self.slotfile)
 		self.slotname = slotname
 		self.slotlist = slotlist
