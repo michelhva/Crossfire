@@ -298,7 +298,7 @@ class Dialog:
             except:
                 Crossfire.Log(Crossfire.LogDebug, "CFDialog: Bad Precondition")
                 return 0
-        if rule.getPrefunction() <> None:
+        if rule.getPrefunction() != None:
                 return rule.getPrefunction()(self.__character, rule)
         return 1
 
@@ -315,7 +315,7 @@ class Dialog:
             except:
                 Crossfire.Log(Crossfire.LogDebug, "CFDialog: Bad Postcondition")
                 return 0
-        if rule.getPostfunction() <> None:
+        if rule.getPostfunction() != None:
                 rule.getPostfunction()(self.__character, rule)
 
     # Search the player file for a particular flag, and if it exists, return

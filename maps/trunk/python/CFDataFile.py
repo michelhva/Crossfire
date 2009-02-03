@@ -58,7 +58,7 @@ class CFDataFile:
         try:
             file = open(self.filename,'rb')
         except:
-            raise 'Unable to read %s' % self.filename
+            raise Exception('Unable to read %s' % self.filename)
         else:
             temp = file.read().split('\n')
             file.close()
@@ -75,7 +75,7 @@ class CFDataFile:
         try:
             file = open(self.filename,'wb')
         except:
-            raise 'Unable to open %s for writing' % self.datafile_name
+            raise Exception('Unable to open %s for writing' % self.datafile_name)
         else:
             header = dic['#']
             del dic['#']
@@ -107,7 +107,7 @@ class CFData:
                 # see if header in calling object matches header in file
                 # raise an alert but do nothing yet -
                 # indicates possible upgrade of caller, will flesh this out later
-                raise 'Header does not match!  You may need to fix the object or the datafile.'
+                raise Exception('Header does not match!  You may need to fix the object or the datafile.')
         else:
             self.datafile.make_file(self.header)
             self.datadb = self.datafile.getData()
