@@ -1,5 +1,10 @@
 Changes for SVN top of tree:
 
+connect/Garden_gate/ggate_closed.face
+Fix a typo introduced in revision 11294 (part of change to using .face files)
+that caused closed garden gates to disappear when opened.
+Arvid Norlander 2009-02-02
+
 Move all anim...mina blocks and all magicmap and visibility fields into .face
 files.
 Andreas Kirschbaum 2009-02-02
