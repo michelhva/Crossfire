@@ -18,9 +18,9 @@ elif (r <= 0.02):
 		me.Weight = me.Archetype.Clone.Weight
 		me.LastSP = me.Archetype.Clone.LastSP
 elif (r <= 0.03):
-	if me.LastSP == me.Archetype.Clone.LastSP:
+	if me.LastSP == me.Archetype.Clone.LastSP and me.LastSP != 0:
 		ac.Write("Your weapon suddenly seems easier to handle!")
-		me.LastSP = me.Archetype.Clone.LastSP + 1
+		me.LastSP = me.Archetype.Clone.LastSP - 1
 		me.Dam = me.Archetype.Clone.Dam
 		me.Weight = me.Archetype.Clone.Weight
 elif (r <= 0.04):
