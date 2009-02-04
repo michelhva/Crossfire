@@ -5,11 +5,7 @@ client_type 270
 nrof 1
 type 34
 face wiz_hat.111
-anim
-wiz_hat.111
-wiz_hat.112
-wiz_hat.113
-mina
+animation wiz_hat
 anim_speed 10
 client_anim_random 1
 last_sp 12
