@@ -36,33 +36,11 @@ import com.realtime.crossfire.jxclient.gui.GUIMultiLineLabel;
 import com.realtime.crossfire.jxclient.gui.GUIOneLineLabel;
 import com.realtime.crossfire.jxclient.gui.GUIPicture;
 import com.realtime.crossfire.jxclient.gui.GUIScrollBar;
-import com.realtime.crossfire.jxclient.gui.GUIScrollable;
 import com.realtime.crossfire.jxclient.gui.GUIScrollable2;
 import com.realtime.crossfire.jxclient.gui.GUISpellLabel;
 import com.realtime.crossfire.jxclient.gui.GUITextButton;
 import com.realtime.crossfire.jxclient.gui.Gui;
-import com.realtime.crossfire.jxclient.gui.commands.ConnectCommand;
-import com.realtime.crossfire.jxclient.gui.commands.DialogCloseCommand;
-import com.realtime.crossfire.jxclient.gui.commands.DialogOpenCommand;
-import com.realtime.crossfire.jxclient.gui.commands.DialogToggleCommand;
-import com.realtime.crossfire.jxclient.gui.commands.DisconnectCommand;
-import com.realtime.crossfire.jxclient.gui.commands.ExecSelectionCommand;
-import com.realtime.crossfire.jxclient.gui.commands.ExecuteCommandCommand;
-import com.realtime.crossfire.jxclient.gui.commands.ExecuteElementCommand;
 import com.realtime.crossfire.jxclient.gui.commands.GUICommand;
-import com.realtime.crossfire.jxclient.gui.commands.HideCommand;
-import com.realtime.crossfire.jxclient.gui.commands.MetaCommand;
-import com.realtime.crossfire.jxclient.gui.commands.MoveSelectionCommand;
-import com.realtime.crossfire.jxclient.gui.commands.PrintCommand;
-import com.realtime.crossfire.jxclient.gui.commands.QuitCommand;
-import com.realtime.crossfire.jxclient.gui.commands.ScrollCommand;
-import com.realtime.crossfire.jxclient.gui.commands.ScrollListCommand;
-import com.realtime.crossfire.jxclient.gui.commands.ScrollNeverCommand;
-import com.realtime.crossfire.jxclient.gui.commands.ScrollNextCommand;
-import com.realtime.crossfire.jxclient.gui.commands.ScrollResetCommand;
-import com.realtime.crossfire.jxclient.gui.commands.ShowCommand;
-import com.realtime.crossfire.jxclient.gui.commands.StartCommand;
-import com.realtime.crossfire.jxclient.gui.commands.ToggleCommand;
 import com.realtime.crossfire.jxclient.gui.gauge.ActiveSkillGaugeUpdater;
 import com.realtime.crossfire.jxclient.gui.gauge.GUIDupGauge;
 import com.realtime.crossfire.jxclient.gui.gauge.GUIDupTextGauge;
@@ -82,8 +60,6 @@ import com.realtime.crossfire.jxclient.gui.item.ItemPainter;
 import com.realtime.crossfire.jxclient.gui.keybindings.InvalidKeyBindingException;
 import com.realtime.crossfire.jxclient.gui.keybindings.KeyBindings;
 import com.realtime.crossfire.jxclient.gui.list.GUIItemInventoryList;
-import com.realtime.crossfire.jxclient.gui.list.GUIItemList;
-import com.realtime.crossfire.jxclient.gui.list.GUIList;
 import com.realtime.crossfire.jxclient.gui.list.GUIMetaElementList;
 import com.realtime.crossfire.jxclient.gui.log.Fonts;
 import com.realtime.crossfire.jxclient.gui.log.GUILabelLog;
@@ -746,8 +722,8 @@ public abstract class JXCSkinLoader implements JXCSkin
                             final int y = expressionParser.parseInt(args[3]);
                             final int w = expressionParser.parseInt(args[4]);
                             final int h = expressionParser.parseInt(args[5]);
-                            final BufferedImage pictureUp = getPicture(args[6]);
-                            final BufferedImage pictureDown = getPicture(args[7]);
+                            final BufferedImage upImage = getImage(args[6]);
+                            final BufferedImage downImage = getImage(args[7]);
                             final boolean autoRepeat = NumberParser.parseBoolean(args[8]);
                             final GUICommandList commandList = getCommandList(args[9]);
                             final String label;
@@ -772,7 +748,7 @@ public abstract class JXCSkinLoader implements JXCSkin
                                 textY = expressionParser.parseInt(args[13]);
                                 label = ParseUtils.parseText(args, 14, lnr);
                             }
-                            definedGUIElements.insert(name, new GUIButton(window, name, x, y, w, h, pictureUp, pictureDown, label, font, color, textX, textY, autoRepeat, commandList));
+                            definedGUIElements.insert(name, new GUIButton(window, name, x, y, w, h, upImage, downImage, label, font, color, textX, textY, autoRepeat, commandList));
                         }
                         else if (gui != null && args[0].equals("checkbox"))
                         {
@@ -837,13 +813,13 @@ public abstract class JXCSkinLoader implements JXCSkin
                             final int y = expressionParser.parseInt(args[3]);
                             final int w = expressionParser.parseInt(args[4]);
                             final int h = expressionParser.parseInt(args[5]);
-                            final BufferedImage activePicture = getPicture(args[6]);
-                            final BufferedImage inactivePicture = getPicture(args[7]);
+                            final BufferedImage activeImage = getImage(args[6]);
+                            final BufferedImage inactiveImage = getImage(args[7]);
                             final Font font = definedFonts.lookup(args[8]);
                             final Color inactiveColor = ParseUtils.parseColor(args[9]);
                             final Color activeColor = ParseUtils.parseColor(args[10]);
                             final int margin = expressionParser.parseInt(args[11]);
-                            definedGUIElements.insert(name, new GUICommandText(window, name, x, y, w, h, activePicture, inactivePicture, font, inactiveColor, activeColor, margin, "", commands, false));
+                            definedGUIElements.insert(name, new GUICommandText(window, name, x, y, w, h, activeImage, inactiveImage, font, inactiveColor, activeColor, margin, "", commands, false));
                         }
                         else if (args[0].equals("def"))
                         {
@@ -859,11 +835,11 @@ public abstract class JXCSkinLoader implements JXCSkin
                                     throw new IOException("syntax error");
                                 }
 
-                                final BufferedImage checked = getPicture(args[2]);
-                                final BufferedImage unchecked = getPicture(args[3]);
+                                final BufferedImage checkedImage = getImage(args[2]);
+                                final BufferedImage uncheckedImage = getImage(args[3]);
                                 final Font font = definedFonts.lookup(args[4]);
                                 final Color color = ParseUtils.parseColor(args[5]);
-                                checkBoxFactory = new CheckBoxFactory(checked, unchecked, font, color);
+                                checkBoxFactory = new CheckBoxFactory(checkedImage, uncheckedImage, font, color);
                             }
                             else if (args[1].equals("checkbox_option"))
                             {
@@ -893,15 +869,15 @@ public abstract class JXCSkinLoader implements JXCSkin
                                 }
 
                                 final String frame = args[2];
-                                final BufferedImage frameNW = getPicture(frame+"_nw");
-                                final BufferedImage frameN = getPicture(frame+"_n");
-                                final BufferedImage frameNE = getPicture(frame+"_ne");
-                                final BufferedImage frameW = getPicture(frame+"_w");
-                                final BufferedImage frameC = getPicture(frame+"_c");
-                                final BufferedImage frameE = getPicture(frame+"_e");
-                                final BufferedImage frameSW = getPicture(frame+"_sw");
-                                final BufferedImage frameS = getPicture(frame+"_s");
-                                final BufferedImage frameSE = getPicture(frame+"_se");
+                                final BufferedImage frameNW = getImage(frame+"_nw");
+                                final BufferedImage frameN = getImage(frame+"_n");
+                                final BufferedImage frameNE = getImage(frame+"_ne");
+                                final BufferedImage frameW = getImage(frame+"_w");
+                                final BufferedImage frameC = getImage(frame+"_c");
+                                final BufferedImage frameE = getImage(frame+"_e");
+                                final BufferedImage frameSW = getImage(frame+"_sw");
+                                final BufferedImage frameS = getImage(frame+"_s");
+                                final BufferedImage frameSE = getImage(frame+"_se");
                                 final Font titleFont = definedFonts.lookup(args[3]);
                                 final Color titleColor = ParseUtils.parseColor(args[4]);
                                 final Color titleBackgroundColor = ParseUtils.parseColor(args[5]);
@@ -920,8 +896,8 @@ public abstract class JXCSkinLoader implements JXCSkin
                                 final String down = args[3];
                                 final Font font = definedFonts.lookup(args[4]);
                                 final Color color = ParseUtils.parseColor(args[5]);
-                                final GUITextButton.ButtonImages upImages = new GUITextButton.ButtonImages(getPicture(up+"_w"), getPicture(up+"_c"), getPicture(up+"_e"));
-                                final GUITextButton.ButtonImages downImages = new GUITextButton.ButtonImages(getPicture(down+"_w"), getPicture(down+"_c"), getPicture(down+"_e"));
+                                final GUITextButton.ButtonImages upImages = new GUITextButton.ButtonImages(getImage(up+"_w"), getImage(up+"_c"), getImage(up+"_e"));
+                                final GUITextButton.ButtonImages downImages = new GUITextButton.ButtonImages(getImage(down+"_w"), getImage(down+"_c"), getImage(down+"_e"));
                                 textButtonFactory = new TextButtonFactory(upImages, downImages, font, color);
                             }
                             else
@@ -983,14 +959,14 @@ public abstract class JXCSkinLoader implements JXCSkin
                             final int y = expressionParser.parseInt(args[3]);
                             final int w = expressionParser.parseInt(args[4]);
                             final int h = expressionParser.parseInt(args[5]);
-                            final BufferedImage picturePositiveDiv = getPicture(args[6]);
-                            final BufferedImage picturePositiveMod = getPicture(args[7]);
-                            final BufferedImage pictureEmpty = args[8].equals("null") ? null : getPicture(args[8]);
+                            final BufferedImage positiveDivImage = getImage(args[6]);
+                            final BufferedImage positiveModImage = getImage(args[7]);
+                            final BufferedImage emptyImage = args[8].equals("null") ? null : getImage(args[8]);
                             final GaugeUpdater gaugeUpdater = parseGaugeUpdater(args[9], experienceTable);
                             final Orientation orientationDiv = ParseUtils.parseOrientation(args[10]);
                             final Orientation orientationMod = ParseUtils.parseOrientation(args[11]);
                             final String tooltipPrefix = ParseUtils.parseText(args, 12, lnr);
-                            final GUIDupGauge element = new GUIDupGauge(window, name, x, y, w, h, picturePositiveDiv, picturePositiveMod, pictureEmpty, orientationDiv, orientationMod, tooltipPrefix.length() > 0 ? tooltipPrefix : null);
+                            final GUIDupGauge element = new GUIDupGauge(window, name, x, y, w, h, positiveDivImage, positiveModImage, emptyImage, orientationDiv, orientationMod, tooltipPrefix.length() > 0 ? tooltipPrefix : null);
                             definedGUIElements.insert(name, element);
                             gaugeUpdater.setGauge(element);
                         }
@@ -1006,16 +982,16 @@ public abstract class JXCSkinLoader implements JXCSkin
                             final int y = expressionParser.parseInt(args[3]);
                             final int w = expressionParser.parseInt(args[4]);
                             final int h = expressionParser.parseInt(args[5]);
-                            final BufferedImage picturePositiveDiv = getPicture(args[6]);
-                            final BufferedImage picturePositiveMod = getPicture(args[7]);
-                            final BufferedImage pictureEmpty = getPicture(args[8]);
+                            final BufferedImage positiveDivImage = getImage(args[6]);
+                            final BufferedImage positiveModImage = getImage(args[7]);
+                            final BufferedImage emptyImage = getImage(args[8]);
                             final GaugeUpdater gaugeUpdater = parseGaugeUpdater(args[9], experienceTable);
                             final Orientation orientationDiv = ParseUtils.parseOrientation(args[10]);
                             final Orientation orientationMod = ParseUtils.parseOrientation(args[11]);
                             final Color color = ParseUtils.parseColor(args[12]);
                             final Font font = definedFonts.lookup(args[13]);
                             final String tooltipPrefix = ParseUtils.parseText(args, 14, lnr);
-                            final GUIDupTextGauge element = new GUIDupTextGauge(window, name, x, y, w, h, picturePositiveDiv, picturePositiveMod, pictureEmpty, orientationDiv, orientationMod, tooltipPrefix.length() > 0 ? tooltipPrefix : null, color, font);
+                            final GUIDupTextGauge element = new GUIDupTextGauge(window, name, x, y, w, h, positiveDivImage, positiveModImage, emptyImage, orientationDiv, orientationMod, tooltipPrefix.length() > 0 ? tooltipPrefix : null, color, font);
                             definedGUIElements.insert(name, element);
                             gaugeUpdater.setGauge(element);
                         }
@@ -1193,13 +1169,13 @@ public abstract class JXCSkinLoader implements JXCSkin
                             final int y = expressionParser.parseInt(args[3]);
                             final int w = expressionParser.parseInt(args[4]);
                             final int h = expressionParser.parseInt(args[5]);
-                            final BufferedImage picturePositive = args[6].equals("null") ? null : getPicture(args[6]);
-                            final BufferedImage pictureNegative = args[7].equals("null") ? null : getPicture(args[7]);
-                            final BufferedImage pictureEmpty = args[8].equals("null") ? null : getPicture(args[8]);
+                            final BufferedImage positiveImage = args[6].equals("null") ? null : getImage(args[6]);
+                            final BufferedImage negativeImage = args[7].equals("null") ? null : getImage(args[7]);
+                            final BufferedImage emptyImage = args[8].equals("null") ? null : getImage(args[8]);
                             final GaugeUpdater gaugeUpdater = parseGaugeUpdater(args[9], experienceTable);
                             final Orientation orientation = ParseUtils.parseOrientation(args[10]);
                             final String tooltipPrefix = ParseUtils.parseText(args, 11, lnr);
-                            final GUIGauge element = new GUIGauge(window, name, x, y, w, h, picturePositive, pictureNegative, pictureEmpty, orientation, tooltipPrefix.length() > 0 ? tooltipPrefix : null);
+                            final GUIGauge element = new GUIGauge(window, name, x, y, w, h, positiveImage, negativeImage, emptyImage, orientation, tooltipPrefix.length() > 0 ? tooltipPrefix : null);
                             definedGUIElements.insert(name, element);
                             gaugeUpdater.setGauge(element);
                         }
@@ -1227,21 +1203,21 @@ public abstract class JXCSkinLoader implements JXCSkin
                             final int h = expressionParser.parseInt(args[5]);
                             final int cellHeight = expressionParser.parseInt(args[6]);
                             final Color cursedColor = ParseUtils.parseColorNull(args[7]);
-                            final BufferedImage cursedImage = getPicture(cursedColor, args[7]);
+                            final BufferedImage cursedImage = getImage(cursedColor, args[7]);
                             final Color damnedColor = ParseUtils.parseColorNull(args[8]);
-                            final BufferedImage damnedImage = getPicture(damnedColor, args[8]);
+                            final BufferedImage damnedImage = getImage(damnedColor, args[8]);
                             final Color magicColor = ParseUtils.parseColorNull(args[9]);
-                            final BufferedImage magicImage = getPicture(magicColor, args[9]);
+                            final BufferedImage magicImage = getImage(magicColor, args[9]);
                             final Color blessedColor = ParseUtils.parseColorNull(args[10]);
-                            final BufferedImage blessedImage = getPicture(blessedColor, args[10]);
+                            final BufferedImage blessedImage = getImage(blessedColor, args[10]);
                             final Color appliedColor = ParseUtils.parseColorNull(args[11]);
-                            final BufferedImage appliedImage = getPicture(appliedColor, args[11]);
+                            final BufferedImage appliedImage = getImage(appliedColor, args[11]);
                             final Color selectorColor = ParseUtils.parseColorNull(args[12]);
-                            final BufferedImage selectorImage = getPicture(selectorColor, args[12]);
+                            final BufferedImage selectorImage = getImage(selectorColor, args[12]);
                             final Color lockedColor = ParseUtils.parseColorNull(args[13]);
-                            final BufferedImage lockedImage = getPicture(lockedColor, args[13]);
+                            final BufferedImage lockedImage = getImage(lockedColor, args[13]);
                             final Color unpaidColor = ParseUtils.parseColorNull(args[14]);
-                            final BufferedImage unpaidImage = getPicture(unpaidColor, args[14]);
+                            final BufferedImage unpaidImage = getImage(unpaidColor, args[14]);
                             final Font font = definedFonts.lookup(args[15]);
                             final Color nrofColor = ParseUtils.parseColor(args[16]);
                             final AbstractLabel selectedItem = args[17].equals("null") ? null : lookupLabelElement(args[17]);
@@ -1274,24 +1250,24 @@ public abstract class JXCSkinLoader implements JXCSkin
                                 }
 
                                 final Color cursedColor = ParseUtils.parseColorNull(args[8]);
-                                final BufferedImage pictureCursed = getPicture(cursedColor, args[8]);
+                                final BufferedImage cursedImage = getImage(cursedColor, args[8]);
                                 final Color damnedColor = ParseUtils.parseColorNull(args[9]);
-                                final BufferedImage pictureDamned = getPicture(damnedColor, args[9]);
+                                final BufferedImage damnedImage = getImage(damnedColor, args[9]);
                                 final Color magicColor = ParseUtils.parseColorNull(args[10]);
-                                final BufferedImage pictureMagic = getPicture(magicColor, args[10]);
+                                final BufferedImage magicImage = getImage(magicColor, args[10]);
                                 final Color blessedColor = ParseUtils.parseColorNull(args[11]);
-                                final BufferedImage pictureBlessed = getPicture(blessedColor, args[11]);
+                                final BufferedImage blessedImage = getImage(blessedColor, args[11]);
                                 final Color appliedColor = ParseUtils.parseColorNull(args[12]);
-                                final BufferedImage pictureApplied = getPicture(appliedColor, args[12]);
+                                final BufferedImage appliedImage = getImage(appliedColor, args[12]);
                                 final Color selectorColor = ParseUtils.parseColorNull(args[13]);
-                                final BufferedImage pictureSelector = getPicture(selectorColor, args[13]);
+                                final BufferedImage selectorImage = getImage(selectorColor, args[13]);
                                 final Color lockedColor = ParseUtils.parseColorNull(args[14]);
-                                final BufferedImage pictureLocked = getPicture(lockedColor, args[14]);
+                                final BufferedImage lockedImage = getImage(lockedColor, args[14]);
                                 final Color unpaidColor = ParseUtils.parseColorNull(args[15]);
-                                final BufferedImage pictureUnpaid = getPicture(unpaidColor, args[15]);
+                                final BufferedImage unpaidImage = getImage(unpaidColor, args[15]);
                                 final Font font = definedFonts.lookup(args[16]);
                                 final Color nrofColor = ParseUtils.parseColor(args[17]);
-                                final ItemPainter itemPainter = new ItemPainter(pictureCursed, pictureDamned, pictureMagic, pictureBlessed, pictureApplied, pictureSelector, pictureLocked, pictureUnpaid, cursedColor, damnedColor, magicColor, blessedColor, appliedColor, selectorColor, lockedColor, unpaidColor, font, nrofColor, w, h);
+                                final ItemPainter itemPainter = new ItemPainter(cursedImage, damnedImage, magicImage, blessedImage, appliedImage, selectorImage, lockedImage, unpaidImage, cursedColor, damnedColor, magicColor, blessedColor, appliedColor, selectorColor, lockedColor, unpaidColor, font, nrofColor, w, h);
                                 element = new GUIItemFloor(window, commandQueue, name, x, y, w, h, itemPainter, index, server, itemsManager, facesManager);
                             }
                             else if (type.equals("inventory"))
@@ -1302,24 +1278,24 @@ public abstract class JXCSkinLoader implements JXCSkin
                                 }
 
                                 final Color cursedColor = ParseUtils.parseColorNull(args[8]);
-                                final BufferedImage pictureCursed = getPicture(cursedColor, args[8]);
+                                final BufferedImage cursedImage = getImage(cursedColor, args[8]);
                                 final Color damnedColor = ParseUtils.parseColorNull(args[9]);
-                                final BufferedImage pictureDamned = getPicture(damnedColor, args[9]);
+                                final BufferedImage damnedImage = getImage(damnedColor, args[9]);
                                 final Color magicColor = ParseUtils.parseColorNull(args[10]);
-                                final BufferedImage pictureMagic = getPicture(magicColor, args[10]);
+                                final BufferedImage magicImage = getImage(magicColor, args[10]);
                                 final Color blessedColor = ParseUtils.parseColorNull(args[11]);
-                                final BufferedImage pictureBlessed = getPicture(blessedColor, args[11]);
+                                final BufferedImage blessedImage = getImage(blessedColor, args[11]);
                                 final Color appliedColor = ParseUtils.parseColorNull(args[12]);
-                                final BufferedImage pictureApplied = getPicture(appliedColor, args[12]);
+                                final BufferedImage appliedImage = getImage(appliedColor, args[12]);
                                 final Color selectorColor = ParseUtils.parseColorNull(args[13]);
-                                final BufferedImage pictureSelector = getPicture(selectorColor, args[13]);
+                                final BufferedImage selectorImage = getImage(selectorColor, args[13]);
                                 final Color lockedColor = ParseUtils.parseColorNull(args[14]);
-                                final BufferedImage pictureLocked = getPicture(lockedColor, args[14]);
+                                final BufferedImage lockedImage = getImage(lockedColor, args[14]);
                                 final Color unpaidColor = ParseUtils.parseColorNull(args[15]);
-                                final BufferedImage pictureUnpaid = getPicture(unpaidColor, args[15]);
+                                final BufferedImage unpaidImage = getImage(unpaidColor, args[15]);
                                 final Font font = definedFonts.lookup(args[16]);
                                 final Color nrofColor = ParseUtils.parseColor(args[17]);
-                                final ItemPainter itemPainter = new ItemPainter(pictureCursed, pictureDamned, pictureMagic, pictureBlessed, pictureApplied, pictureSelector, pictureLocked, pictureUnpaid, cursedColor, damnedColor, magicColor, blessedColor, appliedColor, selectorColor, lockedColor, unpaidColor, font, nrofColor, w, h);
+                                final ItemPainter itemPainter = new ItemPainter(cursedImage, damnedImage, magicImage, blessedImage, appliedImage, selectorImage, lockedImage, unpaidImage, cursedColor, damnedColor, magicColor, blessedColor, appliedColor, selectorColor, lockedColor, unpaidColor, font, nrofColor, w, h);
                                 element = new GUIItemInventory(window, commandQueue, name, x, y, w, h, itemPainter, index, server, facesManager, itemsManager);
                             }
                             else if (type.equals("shortcut"))
@@ -1329,10 +1305,10 @@ public abstract class JXCSkinLoader implements JXCSkin
                                     throw new IOException("syntax error");
                                 }
 
-                                final BufferedImage pictureCursed = getPicture(args[8]);
-                                final BufferedImage pictureApplied = getPicture(args[9]);
+                                final BufferedImage cursedImage = getImage(args[8]);
+                                final BufferedImage appliedImage = getImage(args[9]);
                                 final Font font = definedFonts.lookup(args[10]);
-                                element = new GUIItemShortcut(window, name, x, y, w, h, pictureCursed, pictureApplied, index, facesManager, shortcuts, font, currentSpellManager);
+                                element = new GUIItemShortcut(window, name, x, y, w, h, cursedImage, appliedImage, index, facesManager, shortcuts, font, currentSpellManager);
                             }
                             else if (type.equals("spelllist"))
                             {
@@ -1341,8 +1317,8 @@ public abstract class JXCSkinLoader implements JXCSkin
                                     throw new IOException("syntax error");
                                 }
 
-                                final BufferedImage pictureSelector = getPicture(args[8]);
-                                element = new GUIItemSpelllist(window, commandQueue, name, x, y, w, h, pictureSelector, index, facesManager, spellsManager, currentSpellManager);
+                                final BufferedImage selectorImage = getImage(args[8]);
+                                element = new GUIItemSpelllist(window, commandQueue, name, x, y, w, h, selectorImage, index, facesManager, spellsManager, currentSpellManager);
                             }
                             else
                             {
@@ -1483,14 +1459,14 @@ public abstract class JXCSkinLoader implements JXCSkin
                             final int y = expressionParser.parseInt(args[3]);
                             final int w = expressionParser.parseInt(args[4]);
                             final int h = expressionParser.parseInt(args[5]);
-                            final BufferedImage pictureEmpty = getPicture(args[6]);
+                            final BufferedImage emptyImage = getImage(args[6]);
                             final Font fontPrint = definedFonts.lookup(args[7]);
                             final Font fontFixed = definedFonts.lookup(args[8]);
                             final Font fontFixedBold = definedFonts.lookup(args[9]);
                             final Font fontArcane = definedFonts.lookup(args[10]);
                             final Color defaultColor = ParseUtils.parseColor(args[11]);
                             final Fonts fonts = new Fonts(fontPrint, fontFixed, fontFixedBold, fontArcane);
-                            final GUILabelLog element = new GUILabelLog(window, name, x, y, w, h, pictureEmpty, fonts, defaultColor);
+                            final GUILabelLog element = new GUILabelLog(window, name, x, y, w, h, emptyImage, fonts, defaultColor);
                             definedGUIElements.insert(name, element);
                         }
                         else if (gui != null && args[0].equals("log_message"))
@@ -1505,14 +1481,14 @@ public abstract class JXCSkinLoader implements JXCSkin
                             final int y = expressionParser.parseInt(args[3]);
                             final int w = expressionParser.parseInt(args[4]);
                             final int h = expressionParser.parseInt(args[5]);
-                            final BufferedImage pictureEmpty = getPicture(args[6]);
+                            final BufferedImage emptyImage = getImage(args[6]);
                             final Font fontPrint = definedFonts.lookup(args[7]);
                             final Font fontFixed = definedFonts.lookup(args[8]);
                             final Font fontFixedBold = definedFonts.lookup(args[9]);
                             final Font fontArcane = definedFonts.lookup(args[10]);
                             final Color defaultColor = ParseUtils.parseColor(args[11]);
                             final Fonts fonts = new Fonts(fontPrint, fontFixed, fontFixedBold, fontArcane);
-                            final GUIMessageLog element = new GUIMessageLog(window, name, x, y, w, h, server, pictureEmpty, fonts, defaultColor);
+                            final GUIMessageLog element = new GUIMessageLog(window, name, x, y, w, h, server, emptyImage, fonts, defaultColor);
                             definedGUIElements.insert(name, element);
                         }
                         else if (gui != null && args[0].equals("log_color"))
@@ -1635,14 +1611,14 @@ public abstract class JXCSkinLoader implements JXCSkin
                             final int w = expressionParser.parseInt(args[4]);
                             final int h = expressionParser.parseInt(args[5]);
                             final int cellHeight = expressionParser.parseInt(args[6]);
-                            final BufferedImage pictureTcp = args[7].equals("null") ? null : getPicture(args[7]);
+                            final BufferedImage tcpImage = args[7].equals("null") ? null : getImage(args[7]);
                             final Font font = definedFonts.lookup(args[8]);
                             final GUIText text = args[9].equals("null") ? null : lookupTextElement(args[9]);
                             final AbstractLabel label = args[10].equals("null") ? null : lookupLabelElement(args[10]);
                             final String format = args[11];
                             final String tooltip = args[12];
 
-                            final GUIMetaElementList list = new GUIMetaElementList(window, name, x, y, w, h, cellHeight, metaserverModel, pictureTcp, font, format, tooltip, text, label);
+                            final GUIMetaElementList list = new GUIMetaElementList(window, name, x, y, w, h, cellHeight, metaserverModel, tcpImage, font, format, tooltip, text, label);
                             definedGUIElements.insert(name, list);
                         }
                         else if (gui != null && args[0].equals("picture"))
@@ -1657,10 +1633,10 @@ public abstract class JXCSkinLoader implements JXCSkin
                             final int y = expressionParser.parseInt(args[3]);
                             final int w = expressionParser.parseInt(args[4]);
                             final int h = expressionParser.parseInt(args[5]);
-                            final BufferedImage picture = getPicture(args[6]);
+                            final BufferedImage image = getImage(args[6]);
                             final float alpha = NumberParser.parseFloat(args[7]);
                             if (alpha < 0 || alpha > 1F) throw new IOException("invalid alpha value: "+alpha);
-                            definedGUIElements.insert(name, new GUIPicture(window, name, x, y, w, h, picture, alpha));
+                            definedGUIElements.insert(name, new GUIPicture(window, name, x, y, w, h, image, alpha));
                         }
                         else if (gui != null && args[0].equals("query_text"))
                         {
@@ -1674,13 +1650,13 @@ public abstract class JXCSkinLoader implements JXCSkin
                             final int y = expressionParser.parseInt(args[3]);
                             final int w = expressionParser.parseInt(args[4]);
                             final int h = expressionParser.parseInt(args[5]);
-                            final BufferedImage activePicture = getPicture(args[6]);
-                            final BufferedImage inactivePicture = getPicture(args[7]);
+                            final BufferedImage activeImage = getImage(args[6]);
+                            final BufferedImage inactiveImage = getImage(args[7]);
                             final Font font = definedFonts.lookup(args[8]);
                             final Color inactiveColor = ParseUtils.parseColor(args[9]);
                             final Color activeColor = ParseUtils.parseColor(args[10]);
                             final int margin = expressionParser.parseInt(args[11]);
-                            definedGUIElements.insert(name, new GUIQueryText(window, name, x, y, w, h, activePicture, inactivePicture, font, inactiveColor, activeColor, margin, "", false));
+                            definedGUIElements.insert(name, new GUIQueryText(window, name, x, y, w, h, activeImage, inactiveImage, font, inactiveColor, activeColor, margin, "", false));
                         }
                         else if (gui != null && args[0].equals("set_forced_active"))
                         {
@@ -1781,15 +1757,15 @@ public abstract class JXCSkinLoader implements JXCSkin
                             final int y = expressionParser.parseInt(args[3]);
                             final int w = expressionParser.parseInt(args[4]);
                             final int h = expressionParser.parseInt(args[5]);
-                            final BufferedImage activePicture = getPicture(args[6]);
-                            final BufferedImage inactivePicture = getPicture(args[7]);
+                            final BufferedImage activeImage = getImage(args[6]);
+                            final BufferedImage inactiveImage = getImage(args[7]);
                             final Font font = definedFonts.lookup(args[8]);
                             final Color inactiveColor = ParseUtils.parseColor(args[9]);
                             final Color activeColor = ParseUtils.parseColor(args[10]);
                             final int margin = expressionParser.parseInt(args[11]);
                             final GUICommandList commandList = getCommandList(args[12]);
                             final boolean ignoreUpDown = NumberParser.parseBoolean(args[13]);
-                            definedGUIElements.insert(name, new GUITextField(window, name, x, y, w, h, activePicture, inactivePicture, font, inactiveColor, activeColor, margin, "", commandList, ignoreUpDown));
+                            definedGUIElements.insert(name, new GUITextField(window, name, x, y, w, h, activeImage, inactiveImage, font, inactiveColor, activeColor, margin, "", commandList, ignoreUpDown));
                         }
                         else if (gui != null && args[0].equals("textbutton"))
                         {
@@ -1825,15 +1801,15 @@ public abstract class JXCSkinLoader implements JXCSkin
                             final int y = expressionParser.parseInt(args[3]);
                             final int w = expressionParser.parseInt(args[4]);
                             final int h = expressionParser.parseInt(args[5]);
-                            final BufferedImage picturePositive = getPicture(args[6]);
-                            final BufferedImage pictureNegative = args[7].equals("null") ? null : getPicture(args[7]);
-                            final BufferedImage pictureEmpty = getPicture(args[8]);
+                            final BufferedImage positiveImage = getImage(args[6]);
+                            final BufferedImage negativeImage = args[7].equals("null") ? null : getImage(args[7]);
+                            final BufferedImage emptyImage = getImage(args[8]);
                             final GaugeUpdater gaugeUpdater = parseGaugeUpdater(args[9], experienceTable);
                             final Orientation orientation = ParseUtils.parseOrientation(args[10]);
                             final Color color = ParseUtils.parseColor(args[11]);
                             final Font font = definedFonts.lookup(args[12]);
                             final String tooltipPrefix = ParseUtils.parseText(args, 13, lnr);
-                            final GUITextGauge element = new GUITextGauge(window, name, x, y, w, h, picturePositive, pictureNegative, pictureEmpty, orientation, tooltipPrefix.length() > 0 ? tooltipPrefix : null, color, font);
+                            final GUITextGauge element = new GUITextGauge(window, name, x, y, w, h, positiveImage, negativeImage, emptyImage, orientation, tooltipPrefix.length() > 0 ? tooltipPrefix : null, color, font);
                             definedGUIElements.insert(name, element);
                             gaugeUpdater.setGauge(element);
                         }
@@ -2005,24 +1981,24 @@ public abstract class JXCSkinLoader implements JXCSkin
     }
 
     /**
-     * Optionally loads an picture by base file name.
+     * Optionally loads an image by base file name.
      * @param color if non-<code>null</code>, return <code>null</code>
      * @param name the base file name
      * @return the image, or <code>null</code> if <code>color!=null</code>
-     * @throws IOException if the picture cannot be loaded
+     * @throws IOException if the image cannot be loaded
      */
-    private BufferedImage getPicture(final Color color, final String name) throws IOException
+    private BufferedImage getImage(final Color color, final String name) throws IOException
     {
-        return color != null ? null : getPicture(name);
+        return color != null ? null : getImage(name);
     }
 
     /**
-     * Loads a picture by base file name.
+     * Loads an image by base file name.
      * @param name the base file name
      * @return the image
-     * @throws IOException if the picture cannot be loaded
+     * @throws IOException if the image cannot be loaded
      */
-    private BufferedImage getPicture(final String name) throws IOException
+    private BufferedImage getImage(final String name) throws IOException
     {
         try
         {
@@ -2034,29 +2010,29 @@ public abstract class JXCSkinLoader implements JXCSkin
         }
 
         final String filename = "pictures/"+name+".png";
-        final BufferedImage picture;
+        final BufferedImage image;
         final InputStream inputStream = getInputStream(filename);
         try
         {
-            picture = ImageIO.read(inputStream);
+            image = ImageIO.read(inputStream);
         }
         finally
         {
             inputStream.close();
         }
-        if (picture == null)
+        if (image == null)
         {
-            throw new IOException("picture '"+getURI(filename)+"' does not exist");
+            throw new IOException("image '"+getURI(filename)+"' does not exist");
         }
         try
         {
-            definedImages.insert(name, picture);
+            definedImages.insert(name, image);
         }
         catch (final JXCSkinException ex)
         {
             throw new AssertionError();
         }
-        return picture;
+        return image;
     }
 
     /**
