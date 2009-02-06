@@ -41,15 +41,12 @@ import com.realtime.crossfire.jxclient.gui.GUISpellLabel;
 import com.realtime.crossfire.jxclient.gui.GUITextButton;
 import com.realtime.crossfire.jxclient.gui.Gui;
 import com.realtime.crossfire.jxclient.gui.commands.GUICommand;
-import com.realtime.crossfire.jxclient.gui.gauge.ActiveSkillGaugeUpdater;
 import com.realtime.crossfire.jxclient.gui.gauge.GUIDupGauge;
 import com.realtime.crossfire.jxclient.gui.gauge.GUIDupTextGauge;
 import com.realtime.crossfire.jxclient.gui.gauge.GUIGauge;
 import com.realtime.crossfire.jxclient.gui.gauge.GUITextGauge;
 import com.realtime.crossfire.jxclient.gui.gauge.GaugeUpdater;
 import com.realtime.crossfire.jxclient.gui.gauge.Orientation;
-import com.realtime.crossfire.jxclient.gui.gauge.SkillGaugeUpdater;
-import com.realtime.crossfire.jxclient.gui.gauge.StatGaugeUpdater;
 import com.realtime.crossfire.jxclient.gui.item.GUIItem;
 import com.realtime.crossfire.jxclient.gui.item.GUIItemFloor;
 import com.realtime.crossfire.jxclient.gui.item.GUIItemInventory;
@@ -91,7 +88,6 @@ import com.realtime.crossfire.jxclient.skills.SkillSet;
 import com.realtime.crossfire.jxclient.spells.CurrentSpellManager;
 import com.realtime.crossfire.jxclient.spells.SpellsManager;
 import com.realtime.crossfire.jxclient.stats.Stats;
-import com.realtime.crossfire.jxclient.stats.StatsParser;
 import com.realtime.crossfire.jxclient.util.NumberParser;
 import com.realtime.crossfire.jxclient.util.StringUtils;
 import com.realtime.crossfire.jxclient.window.ConnectionStateListener;
@@ -247,6 +243,11 @@ public abstract class JXCSkinLoader implements JXCSkin
     private final FontParser fontParser = new FontParser(this);
 
     /**
+     * The {@link GaugeUpdaterParser} for parsing gauge specifications.
+     */
+    private final GaugeUpdaterParser gaugeUpdaterParser;
+
+    /**
      * Creates a new instance.
      * @param itemsManager the items manager instance to use
      * @param spellsManager the spells manager instance to use
@@ -264,6 +265,7 @@ public abstract class JXCSkinLoader implements JXCSkin
         this.mapUpdater = mapUpdater;
         this.defaultKeyBindings = defaultKeyBindings;
         commandParser = new CommandParser(dialogs, itemsManager, expressionParser, definedGUIElements);
+        gaugeUpdaterParser = new GaugeUpdaterParser(stats, itemsManager);
     }
 
     /**
@@ -965,7 +967,7 @@ public abstract class JXCSkinLoader implements JXCSkin
                             final BufferedImage positiveDivImage = imageParser.getImage(args[6]);
                             final BufferedImage positiveModImage = imageParser.getImage(args[7]);
                             final BufferedImage emptyImage = args[8].equals("null") ? null : imageParser.getImage(args[8]);
-                            final GaugeUpdater gaugeUpdater = parseGaugeUpdater(args[9], experienceTable);
+                            final GaugeUpdater gaugeUpdater = gaugeUpdaterParser.parseGaugeUpdater(args[9], experienceTable);
                             final Orientation orientationDiv = ParseUtils.parseOrientation(args[10]);
                             final Orientation orientationMod = ParseUtils.parseOrientation(args[11]);
                             final String tooltipPrefix = ParseUtils.parseText(args, 12, lnr);
@@ -988,7 +990,7 @@ public abstract class JXCSkinLoader implements JXCSkin
                             final BufferedImage positiveDivImage = imageParser.getImage(args[6]);
                             final BufferedImage positiveModImage = imageParser.getImage(args[7]);
                             final BufferedImage emptyImage = imageParser.getImage(args[8]);
-                            final GaugeUpdater gaugeUpdater = parseGaugeUpdater(args[9], experienceTable);
+                            final GaugeUpdater gaugeUpdater = gaugeUpdaterParser.parseGaugeUpdater(args[9], experienceTable);
                             final Orientation orientationDiv = ParseUtils.parseOrientation(args[10]);
                             final Orientation orientationMod = ParseUtils.parseOrientation(args[11]);
                             final Color color = ParseUtils.parseColor(args[12]);
@@ -1175,7 +1177,7 @@ public abstract class JXCSkinLoader implements JXCSkin
                             final BufferedImage positiveImage = args[6].equals("null") ? null : imageParser.getImage(args[6]);
                             final BufferedImage negativeImage = args[7].equals("null") ? null : imageParser.getImage(args[7]);
                             final BufferedImage emptyImage = args[8].equals("null") ? null : imageParser.getImage(args[8]);
-                            final GaugeUpdater gaugeUpdater = parseGaugeUpdater(args[9], experienceTable);
+                            final GaugeUpdater gaugeUpdater = gaugeUpdaterParser.parseGaugeUpdater(args[9], experienceTable);
                             final Orientation orientation = ParseUtils.parseOrientation(args[10]);
                             final String tooltipPrefix = ParseUtils.parseText(args, 11, lnr);
                             final GUIGauge element = new GUIGauge(window, name, x, y, w, h, positiveImage, negativeImage, emptyImage, orientation, tooltipPrefix.length() > 0 ? tooltipPrefix : null);
@@ -1807,7 +1809,7 @@ public abstract class JXCSkinLoader implements JXCSkin
                             final BufferedImage positiveImage = imageParser.getImage(args[6]);
                             final BufferedImage negativeImage = args[7].equals("null") ? null : imageParser.getImage(args[7]);
                             final BufferedImage emptyImage = imageParser.getImage(args[8]);
-                            final GaugeUpdater gaugeUpdater = parseGaugeUpdater(args[9], experienceTable);
+                            final GaugeUpdater gaugeUpdater = gaugeUpdaterParser.parseGaugeUpdater(args[9], experienceTable);
                             final Orientation orientation = ParseUtils.parseOrientation(args[10]);
                             final Color color = ParseUtils.parseColor(args[11]);
                             final Font font = definedFonts.lookup(args[12]);
@@ -1913,37 +1915,6 @@ public abstract class JXCSkinLoader implements JXCSkin
             }
             i++;
         }
-    }
-
-    /**
-     * Parses a gauge updater value.
-     * @param name the gauge updater value to parse
-     * @param experienceTable the experience table to query
-     * @return the gauge updater
-     * @throws IOException if the gauge updater value does not exist
-     */
-    private GaugeUpdater parseGaugeUpdater(final String name, final ExperienceTable experienceTable) throws IOException
-    {
-        try
-        {
-            return new StatGaugeUpdater(experienceTable, StatsParser.parseStat(name), stats, itemsManager);
-        }
-        catch (final IllegalArgumentException ex)
-        {
-            // ignore
-        }
-
-        if (name.startsWith("SKILL_"))
-        {
-            return new SkillGaugeUpdater(experienceTable, SkillSet.getNamedSkill(name.substring(6).replaceAll("_", " ")));
-        }
-
-        if (name.startsWith("ACTIVE_SKILL_"))
-        {
-            return new ActiveSkillGaugeUpdater(experienceTable, name.substring(13).replaceAll("_", " "), stats);
-        }
-
-        throw new IOException("invalid stat name: "+name);
     }
 
     /**
