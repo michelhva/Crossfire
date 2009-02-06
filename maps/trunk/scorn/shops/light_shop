@@ -10,7 +10,7 @@ enter_x 16
 enter_y 11
 msg
 Created:  2002-12-28
-Modified: 2008-12-02 Rick Tanner
+Modified: 2009-02-06 Arvid Norlander
 endmsg
 end
 arch shop_empty
@@ -644,6 +644,7 @@ end
 arch cobblestones
 x 7
 y 11
+type 68
 no_magic 1
 damned 1
 end
@@ -721,6 +722,7 @@ end
 arch cobblestones
 x 8
 y 11
+type 68
 no_magic 1
 damned 1
 end
