@@ -35,20 +35,34 @@ import com.realtime.crossfire.jxclient.window.MouseTracker;
 import java.util.Iterator;
 
 /**
- *
- * @version 1.0
+ * Defines a JXClient skin consisting of a main {@link Gui} and zero or more
+ * dialog {@link Gui}s.
  * @author Lauwenmark
- * @since 1.0
+ * @author Andreas Kirschbaum
  */
 public interface JXCSkin extends Iterable<Gui>
 {
+    /**
+     * Loads the skin from its external representation.
+     * @param crossfireServerConnection the server connection to attach to
+     * @param window the window to use
+     * @param mouseTracker the mouse tracker to use
+     * @param metaserverModel the metaserver mode to use
+     * @param commandQueue the command queue to use
+     * @param resolution the preferred screen resolution
+     * @param optionManager the option manager to use
+     * @param experienceTable the experience table to use
+     * @param shortcuts the shortcuts to use
+     * @param commands the commands instance to use
+     * @param currentSpellManager the current spell manager to use
+     * @throws JXCSkinException if the skin cannot be loaded
+     */
     void load(CrossfireServerConnection crossfireServerConnection, JXCWindow window, MouseTracker mouseTracker, MetaserverModel metaserverModel, CommandQueue commandQueue, Resolution resolution, OptionManager optionManager, ExperienceTable experienceTable, Shortcuts shortcuts, Commands commands, CurrentSpellManager currentSpellManager) throws JXCSkinException;
 
     /**
-     * Return a short name for the skin. It is used to construct path or file
+     * Returns a short name for the skin. It is used to construct path or file
      * names.
-     *
-     * @return The skin name.
+     * @return the skin name
      */
     String getSkinName();
 
@@ -77,67 +91,89 @@ public interface JXCSkin extends Iterable<Gui>
     int getNumLookObjects();
 
     /**
-     * Return all gui instances of this skin. The instances has no defined
+     * Returns all gui instances of this skin. The instances has no defined
      * order.
-     *
-     * @return An iterator returning all gui instances.
+     * @return an iterator returning all gui instances
      */
     @Override
     Iterator<Gui> iterator();
 
     /**
-     * The "really quit?" dialog. It is opened when the user presses ESCAPE.
-     *
-     * @return The dialog, or <code>null</code> if the skin does not define
-     * this dialog.
+     * Returns the "really quit?" dialog. It is opened when the user presses
+     * ESCAPE.
+     * @return the dialog or <code>null</code> if the skin does not define this
+     * dialog
      */
     Gui getDialogQuit();
 
     /**
-     * The "disconnect from server?" dialog. It is opened when the user presses
-     * ESCAPE.
-     *
-     * @return The dialog, or <code>null</code> if the skin does not define
-     * this dialog.
+     * Returns the "disconnect from server?" dialog. It is opened when the user
+     * presses ESCAPE.
+     * @return the dialog or <code>null</code> if the skin does not define this
+     * dialog
      */
     Gui getDialogDisconnect();
 
+    /**
+     * Returns the key bindings dialog.
+     * @return the dialog
+     */
     Gui getDialogKeyBind();
+
+    /**
+     * Returns the dialog for query text input.
+     * @return the dialog
+     */
     Gui getDialogQuery();
+
+    /**
+     * Returns the popup dialog for readables.
+     * @param booknr the book ID
+     * @return the dialog
+     */
     Gui getDialogBook(int booknr);
+
+    /**
+     * Returns the main window.
+     * @return the dialog
+     */
     Gui getMainInterface();
+
+    /**
+     * Returns the server selection window.
+     * @return the dialog
+     */
     Gui getMetaInterface();
+
+    /**
+     * Returns the start window.
+     * @return the dialog
+     */
     Gui getStartInterface();
 
     /**
-     * Return a dialog by name.
-     *
-     * @param name The dialog's name.
-     *
-     * @return The dialog, or <code>null</code> if the dialog does not exist.
+     * Returns a dialog by name.
+     * @param name the dialog's name
+     * @return the dialog or <code>null</code> if the dialog does not exist
      */
     Gui getDialog(final String name);
 
     /**
-     * Execute the "event init" commands.
+     * Executes the "event init" commands.
      */
     void executeInitEvents();
 
     /**
-     * Return a named command list.
-     *
-     * @param name The name of the command list.
-     *
-     * @return The command list.
-     *
-     * @throws JXCSkinException If the command list does not exist.
+     * Returns a named command list.
+     * @param name the name of the command list
+     * @return the command list
+     * @throws JXCSkinException if the command list does not exist
      */
     GUICommandList getCommandList(String name) throws JXCSkinException;
 
     /**
-     * Return whether the dialog state should be saved.
-     *
-     * @return Whether the dialog state should be saved.
+     * Returns whether the dialog state should be saved.
+     * @return whether the dialog state should be saved
      */
     boolean hasChangedDialog();
 
