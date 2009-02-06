@@ -854,8 +854,12 @@ public class JXCWindow extends JFrame
      */
     private boolean openDialogByName(final String name)
     {
-        final Gui dialog = skin.getDialog(name);
-        if (dialog == null)
+        final Gui dialog;
+        try
+        {
+            dialog = skin.getDialog(name);
+        }
+        catch (final JXCSkinException ex)
         {
             return false;
         }
@@ -870,11 +874,17 @@ public class JXCWindow extends JFrame
      */
     private void closeDialogByName(final String name)
     {
-        final Gui dialog = skin.getDialog(name);
-        if (dialog != null)
+        final Gui dialog;
+        try
         {
-            windowRenderer.closeDialog(dialog);
+            dialog = skin.getDialog(name);
         }
+        catch (final JXCSkinException ex)
+        {
+            // ignore
+            return;
+        }
+        windowRenderer.closeDialog(dialog);
     }
 
     public void quitApplication()

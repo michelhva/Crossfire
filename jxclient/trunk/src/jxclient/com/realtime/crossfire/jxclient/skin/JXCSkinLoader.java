@@ -478,82 +478,119 @@ public abstract class JXCSkinLoader implements JXCSkin
     @Override
     public Gui getDialogQuit()
     {
-        return getDialog("quit");
+        try
+        {
+            return getDialog("quit");
+        }
+        catch (final JXCSkinException ex)
+        {
+            return null;
+        }
     }
 
     /** {@inheritDoc} */
     @Override
     public Gui getDialogDisconnect()
     {
-        return getDialog("disconnect");
+        try
+        {
+            return getDialog("disconnect");
+        }
+        catch (final JXCSkinException ex)
+        {
+            return null;
+        }
     }
 
     /** {@inheritDoc} */
     @Override
     public Gui getDialogKeyBind()
     {
-        final Gui result = getDialog("keybind");
-        assert result != null;
-        return result;
+        try
+        {
+            return getDialog("keybind");
+        }
+        catch (final JXCSkinException ex)
+        {
+            throw new AssertionError("keybind dialog does not exist");
+        }
     }
 
     /** {@inheritDoc} */
     @Override
     public Gui getDialogQuery()
     {
-        final Gui result = getDialog("query");
-        assert result != null;
-        return result;
+        try
+        {
+            return getDialog("query");
+        }
+        catch (final JXCSkinException ex)
+        {
+            throw new AssertionError("query dialog does not exist");
+        }
     }
 
     /** {@inheritDoc} */
     @Override
     public Gui getDialogBook(final int booknr)
     {
-        final Gui result = getDialog("book");
-        assert result != null;
-        return result;
+        try
+        {
+            return getDialog("book");
+        }
+        catch (final JXCSkinException ex)
+        {
+            throw new AssertionError("book dialog does not exist");
+        }
     }
 
     /** {@inheritDoc} */
     @Override
     public Gui getMainInterface()
     {
-        final Gui result = getDialog("main");
-        assert result != null;
-        return result;
+        try
+        {
+            return getDialog("main");
+        }
+        catch (final JXCSkinException ex)
+        {
+            throw new AssertionError("main dialog does not exist");
+        }
     }
 
     /** {@inheritDoc} */
     @Override
     public Gui getMetaInterface()
     {
-        final Gui result = getDialog("meta");
-        assert result != null;
-        return result;
+        try
+        {
+            return getDialog("meta");
+        }
+        catch (final JXCSkinException ex)
+        {
+            throw new AssertionError("meta dialog does not exist");
+        }
     }
 
     /** {@inheritDoc} */
     @Override
     public Gui getStartInterface()
     {
-        final Gui result = getDialog("start");
-        assert result != null;
-        return result;
+        try
+        {
+            return getDialog("start");
+        }
+        catch (final JXCSkinException ex)
+        {
+            throw new AssertionError("start dialog does not exist");
+        }
     }
 
     /** {@inheritDoc} */
     @Override
-    public Gui getDialog(final String name)
+    public Gui getDialog(final String name) throws JXCSkinException
     {
-        try
-        {
-            return dialogs.lookup(name);
-        }
-        catch (final JXCSkinException ex)
-        {
-            return null;
-        }
+        return dialogs.lookup(name);
     }
 
     /**
