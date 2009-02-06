@@ -103,22 +103,16 @@ import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.io.LineNumberReader;
 import java.util.ArrayList;
-import java.util.Iterator;
 import java.util.LinkedHashMap;
 import java.util.List;
 import java.util.Map;
 
 /**
- * Creates a {@link JXCSkin} instance from a file.
+ * Parser for loading {@link JXCSkin} instances from {@link JXCSkinSource}s.
  * @author Andreas Kirschbaum
  */
-public class JXCSkinLoader implements JXCSkin
+public class JXCSkinLoader
 {
-    /**
-     * The default number of ground view objects.
-     */
-    private static final int DEFAULT_NUM_LOOK_OBJECTS = 50;
-
     /**
      * The {@link ItemsManager} instance to use.
      */
@@ -150,44 +144,9 @@ public class JXCSkinLoader implements JXCSkin
     private final JXCSkinCache<GUIElement> definedGUIElements = new JXCSkinCache<GUIElement>("gui element");
 
     /**
-     * All defined command lists.
-     */
-    private final JXCSkinCache<GUICommandList> definedCommandLists = new JXCSkinCache<GUICommandList>("command list");
-
-    /**
-     * All defined dialogs.
-     */
-    private final Dialogs dialogs = new Dialogs();
-
-    /**
      * All defined fonts.
      */
     private final JXCSkinCache<Font> definedFonts = new JXCSkinCache<Font>("font");
-
-    /**
-     * The skin name.
-     */
-    private String skinName = "unknown";
-
-    /**
-     * The selected resolution.
-     */
-    private Resolution selectedResolution = new Resolution(true, 0, 0);
-
-    /**
-     * The map width in tiles; zero if unset.
-     */
-    private int mapWidth = 0;
-
-    /**
-     * The map height in tiles; zero if unset.
-     */
-    private int mapHeight = 0;
-
-    /**
-     * The maximum number of ground view objects.
-     */
-    private int numLookObjects = DEFAULT_NUM_LOOK_OBJECTS;
 
     /**
      * The text button factory. Set to <code>null</code> until defined.
@@ -205,19 +164,9 @@ public class JXCSkinLoader implements JXCSkin
     private CheckBoxFactory checkBoxFactory = null;
 
     /**
-     * All "event init" commands in execution order.
-     */
-    private final List<GUICommandList> initEvents = new ArrayList<GUICommandList>();
-
-    /**
-     * The default key bindings.
-     */
-    private final KeyBindings defaultKeyBindings;
-
-    /**
      * The {@link ExpressionParser} for parsing integer constant expressions.
      */
-    private ExpressionParser expressionParser = new ExpressionParser(selectedResolution);
+    private ExpressionParser expressionParser;
 
     /**
      * The {@link CommandParser} for parsing command specifications.
@@ -245,6 +194,11 @@ public class JXCSkinLoader implements JXCSkin
     private final GuiElementParser guiElementParser;
 
     /**
+     * The {@link JXCSkin} being loaded.
+     */
+    private final DefaultJXCSkin skin;
+
+    /**
      * Creates a new instance.
      * @param itemsManager the items manager instance to use
      * @param spellsManager the spells manager instance to use
@@ -260,15 +214,31 @@ public class JXCSkinLoader implements JXCSkin
         this.facesManager = facesManager;
         this.stats = stats;
         this.mapUpdater = mapUpdater;
-        this.defaultKeyBindings = defaultKeyBindings;
-        commandParser = new CommandParser(dialogs, itemsManager, expressionParser, definedGUIElements);
+        skin = new DefaultJXCSkin(defaultKeyBindings);
+        expressionParser = new ExpressionParser(skin.getSelectedResolution());
+        commandParser = skin.newCommandParser(itemsManager, expressionParser, definedGUIElements);
         gaugeUpdaterParser = new GaugeUpdaterParser(stats, itemsManager);
         guiElementParser = new GuiElementParser(definedGUIElements);
     }
 
-    /** {@inheritDoc} */
-    @Override
-    public void load(final JXCSkinSource skinSource, final CrossfireServerConnection crossfireServerConnection, final JXCWindow window, final MouseTracker mouseTracker, final MetaserverModel metaserverModel, final CommandQueue commandQueue, final Resolution resolution, final OptionManager optionManager, final ExperienceTable experienceTable, final Shortcuts shortcuts, final Commands commands, final CurrentSpellManager currentSpellManager) throws JXCSkinException
+    /**
+     * Loads the skin from its external representation.
+     * @param skinSource the source to load from
+     * @param crossfireServerConnection the server connection to attach to
+     * @param window the window to use
+     * @param mouseTracker the mouse tracker to use
+     * @param metaserverModel the metaserver mode to use
+     * @param commandQueue the command queue to use
+     * @param resolution the preferred screen resolution
+     * @param optionManager the option manager to use
+     * @param experienceTable the experience table to use
+     * @param shortcuts the shortcuts to use
+     * @param commands the commands instance to use
+     * @param currentSpellManager the current spell manager to use
+     * @return the loaded skin
+     * @throws JXCSkinException if the skin cannot be loaded
+     */
+    public JXCSkin load(final JXCSkinSource skinSource, final CrossfireServerConnection crossfireServerConnection, final JXCWindow window, final MouseTracker mouseTracker, final MetaserverModel metaserverModel, final CommandQueue commandQueue, final Resolution resolution, final OptionManager optionManager, final ExperienceTable experienceTable, final Shortcuts shortcuts, final Commands commands, final CurrentSpellManager currentSpellManager) throws JXCSkinException
     {
         imageParser = new ImageParser(skinSource);
         fontParser = new FontParser(skinSource);
@@ -276,16 +246,16 @@ public class JXCSkinLoader implements JXCSkin
         {
             if (!skinSource.containsResolution(resolution))
             {
-                throw new JXCSkinException("resolution "+resolution+" is not supported by the skin "+skinName);
+                throw new JXCSkinException("resolution "+resolution+" is not supported by the skin "+skin.getPlainSkinName());
             }
 
-            selectedResolution = resolution;
+            skin.setSelectedResolution(resolution);
         }
         else
         {
             if (skinSource.containsResolution(resolution))
             {
-                selectedResolution = resolution;
+                skin.setSelectedResolution(resolution);
             }
             else
             {
@@ -313,42 +283,37 @@ public class JXCSkinLoader implements JXCSkin
                     }
                     assert selectedCandidate != null; // at least one resolution exists
                 }
-                selectedResolution = selectedCandidate;
+                skin.setSelectedResolution(selectedCandidate);
             }
         }
 
-        expressionParser = new ExpressionParser(selectedResolution);
-        skinName = "unknown";
-        mapWidth = 0;
-        mapHeight = 0;
-        numLookObjects = DEFAULT_NUM_LOOK_OBJECTS;
-        dialogs.clear();
+        expressionParser = new ExpressionParser(skin.getSelectedResolution());
+        skin.reset();
         imageParser.clear();
-        dialogs.addDialog("keybind", window, mouseTracker, commands);
-        dialogs.addDialog("query", window, mouseTracker, commands);
-        dialogs.addDialog("book", window, mouseTracker, commands);
-        dialogs.addDialog("main", window, mouseTracker, commands);
-        dialogs.addDialog("meta", window, mouseTracker, commands);
-        dialogs.addDialog("quit", window, mouseTracker, commands);
-        dialogs.addDialog("disconnect", window, mouseTracker, commands);
-        dialogs.addDialog("start", window, mouseTracker, commands);
-        definedCommandLists.clear();
+        skin.addDialog("keybind", window, mouseTracker, commands);
+        skin.addDialog("query", window, mouseTracker, commands);
+        skin.addDialog("book", window, mouseTracker, commands);
+        skin.addDialog("main", window, mouseTracker, commands);
+        skin.addDialog("meta", window, mouseTracker, commands);
+        skin.addDialog("quit", window, mouseTracker, commands);
+        skin.addDialog("disconnect", window, mouseTracker, commands);
+        skin.addDialog("start", window, mouseTracker, commands);
         definedFonts.clear();
         textButtonFactory = null;
         dialogFactory = null;
         checkBoxFactory = null;
         try
         {
-            load(skinSource, "global", selectedResolution, crossfireServerConnection, window, mouseTracker, metaserverModel, commandQueue, null, optionManager, experienceTable, shortcuts, commands, currentSpellManager);
+            load(skinSource, "global", crossfireServerConnection, window, mouseTracker, metaserverModel, commandQueue, null, optionManager, experienceTable, shortcuts, commands, currentSpellManager);
             for (;;)
             {
-                final String name = dialogs.getDialogToLoad();
+                final String name = skin.getDialogToLoad();
                 if (name == null)
                 {
                     break;
                 }
-                final Gui gui = dialogs.lookup(name);
-                load(skinSource, name, selectedResolution, crossfireServerConnection, window, mouseTracker, metaserverModel, commandQueue, gui, optionManager, experienceTable, shortcuts, commands, currentSpellManager);
+                final Gui gui = skin.getDialog(name);
+                load(skinSource, name, crossfireServerConnection, window, mouseTracker, metaserverModel, commandQueue, gui, optionManager, experienceTable, shortcuts, commands, currentSpellManager);
                 gui.setStateChanged(false);
             }
         }
@@ -361,171 +326,18 @@ public class JXCSkinLoader implements JXCSkin
             imageParser.clear();
         }
 
-        if (mapWidth == 0 || mapHeight == 0)
+        if (skin.getMapWidth() == 0 || skin.getMapHeight() == 0)
         {
             throw new JXCSkinException("Missing map command");
         }
-    }
 
-    /** {@inheritDoc} */
-    @Override
-    public String getSkinName()
-    {
-        return skinName+"@"+selectedResolution;
-    }
-
-    /** {@inheritDoc} */
-    @Override
-    public Resolution getResolution()
-    {
-        return selectedResolution;
-    }
-
-    /** {@inheritDoc} */
-    @Override
-    public int getMapWidth()
-    {
-        return mapWidth;
-    }
-
-    /** {@inheritDoc} */
-    @Override
-    public int getMapHeight()
-    {
-        return mapHeight;
-    }
-
-    /** {@inheritDoc} */
-    @Override
-    public int getNumLookObjects()
-    {
-        return numLookObjects;
-    }
-
-    /** {@inheritDoc} */
-    @Override
-    public Gui getDialogQuit()
-    {
-        try
-        {
-            return getDialog("quit");
-        }
-        catch (final JXCSkinException ex)
-        {
-            return null;
-        }
-    }
-
-    /** {@inheritDoc} */
-    @Override
-    public Gui getDialogDisconnect()
-    {
-        try
-        {
-            return getDialog("disconnect");
-        }
-        catch (final JXCSkinException ex)
-        {
-            return null;
-        }
-    }
-
-    /** {@inheritDoc} */
-    @Override
-    public Gui getDialogKeyBind()
-    {
-        try
-        {
-            return getDialog("keybind");
-        }
-        catch (final JXCSkinException ex)
-        {
-            throw new AssertionError("keybind dialog does not exist");
-        }
-    }
-
-    /** {@inheritDoc} */
-    @Override
-    public Gui getDialogQuery()
-    {
-        try
-        {
-            return getDialog("query");
-        }
-        catch (final JXCSkinException ex)
-        {
-            throw new AssertionError("query dialog does not exist");
-        }
-    }
-
-    /** {@inheritDoc} */
-    @Override
-    public Gui getDialogBook(final int booknr)
-    {
-        try
-        {
-            return getDialog("book");
-        }
-        catch (final JXCSkinException ex)
-        {
-            throw new AssertionError("book dialog does not exist");
-        }
-    }
-
-    /** {@inheritDoc} */
-    @Override
-    public Gui getMainInterface()
-    {
-        try
-        {
-            return getDialog("main");
-        }
-        catch (final JXCSkinException ex)
-        {
-            throw new AssertionError("main dialog does not exist");
-        }
-    }
-
-    /** {@inheritDoc} */
-    @Override
-    public Gui getMetaInterface()
-    {
-        try
-        {
-            return getDialog("meta");
-        }
-        catch (final JXCSkinException ex)
-        {
-            throw new AssertionError("meta dialog does not exist");
-        }
-    }
-
-    /** {@inheritDoc} */
-    @Override
-    public Gui getStartInterface()
-    {
-        try
-        {
-            return getDialog("start");
-        }
-        catch (final JXCSkinException ex)
-        {
-            throw new AssertionError("start dialog does not exist");
-        }
-    }
-
-    /** {@inheritDoc} */
-    @Override
-    public Gui getDialog(final String name) throws JXCSkinException
-    {
-        return dialogs.lookup(name);
+        return skin;
     }
 
     /**
      * Loads a skin file and add the entries to a {@link Gui} instance.
      * @param skinSource th source to load from
      * @param dialogName the key to identify this dialog
-     * @param resolution the preferred resolution
      * @param server the server connection to monitor
      * @param window the main window
      * @param mouseTracker the mouse tracker instance
@@ -539,9 +351,9 @@ public class JXCSkinLoader implements JXCSkin
      * @param currentSpellManager the current spell manager to use
      * @throws JXCSkinException if the file cannot be loaded
      */
-    private void load(final JXCSkinSource skinSource, final String dialogName, final Resolution resolution, final CrossfireServerConnection server, final JXCWindow window, final MouseTracker mouseTracker, final MetaserverModel metaserverModel, final CommandQueue commandQueue, final Gui gui, final OptionManager optionManager, final ExperienceTable experienceTable, final Shortcuts shortcuts, final Commands commands, final CurrentSpellManager currentSpellManager) throws JXCSkinException
+    private void load(final JXCSkinSource skinSource, final String dialogName, final CrossfireServerConnection server, final JXCWindow window, final MouseTracker mouseTracker, final MetaserverModel metaserverModel, final CommandQueue commandQueue, final Gui gui, final OptionManager optionManager, final ExperienceTable experienceTable, final Shortcuts shortcuts, final Commands commands, final CurrentSpellManager currentSpellManager) throws JXCSkinException
     {
-        String resourceName = dialogName+"@"+resolution+".skin";
+        String resourceName = dialogName+"@"+skin.getSelectedResolution()+".skin";
 
         definedGUIElements.clear();
         try
@@ -658,7 +470,7 @@ public class JXCSkinLoader implements JXCSkin
                             final BufferedImage upImage = imageParser.getImage(args[6]);
                             final BufferedImage downImage = imageParser.getImage(args[7]);
                             final boolean autoRepeat = NumberParser.parseBoolean(args[8]);
-                            final GUICommandList commandList = getCommandList(args[9]);
+                            final GUICommandList commandList = skin.getCommandList(args[9]);
                             final String label;
                             final Font font;
                             final Color color;
@@ -714,7 +526,7 @@ public class JXCSkinLoader implements JXCSkin
                             final String commandListName = args[1];
                             final GUICommandList.CommandType commandListCommandType = NumberParser.parseEnum(GUICommandList.CommandType.class, args[2], "type");
                             final GUICommandList commandList = new GUICommandList(commandListCommandType);
-                            definedCommandLists.insert(commandListName, commandList);
+                            skin.addCommandList(commandListName, commandList);
                             if (args.length >= 5)
                             {
                                 final GUIElement element = args[3].equals("null") ? null : definedGUIElements.lookup(args[3]);
@@ -729,7 +541,7 @@ public class JXCSkinLoader implements JXCSkin
                                 throw new IOException("syntax error");
                             }
 
-                            final GUICommandList commandList = getCommandList(args[1]);
+                            final GUICommandList commandList = skin.getCommandList(args[1]);
                             final GUIElement element = args[2].equals("null") ? null : definedGUIElements.lookup(args[2]);
                             final GUICommand command = commandParser.parseCommandArgs(args, 4, element, args[3], window, mouseTracker, commands, lnr, commandQueue, server);
                             commandList.add(command);
@@ -782,8 +594,8 @@ public class JXCSkinLoader implements JXCSkin
                                 }
 
                                 final String optionName = args[2];
-                                final GUICommandList commandOn = getCommandList(args[3]);
-                                final GUICommandList commandOff = getCommandList(args[4]);
+                                final GUICommandList commandOn = skin.getCommandList(args[3]);
+                                final GUICommandList commandOff = skin.getCommandList(args[4]);
                                 final String documentation = ParseUtils.parseText(args, 5, lnr);
                                 try
                                 {
@@ -943,7 +755,7 @@ public class JXCSkinLoader implements JXCSkin
                                     throw new IOException("syntax error");
                                 }
 
-                                final GUICommandList commandList = getCommandList(args[2]);
+                                final GUICommandList commandList = skin.getCommandList(args[2]);
                                 window.addConnectionStateListener(new ConnectionStateListener()
                                     {
                                         /** {@inheritDoc} */
@@ -968,7 +780,7 @@ public class JXCSkinLoader implements JXCSkin
                                     throw new IOException("syntax error");
                                 }
 
-                                initEvents.add(getCommandList(args[2]));
+                                skin.addInitEvent(skin.getCommandList(args[2]));
                             }
                             else if (type.equals("magicmap"))
                             {
@@ -977,7 +789,7 @@ public class JXCSkinLoader implements JXCSkin
                                     throw new IOException("syntax error");
                                 }
 
-                                final GUICommandList commandList = getCommandList(args[2]);
+                                final GUICommandList commandList = skin.getCommandList(args[2]);
                                 server.addCrossfireMagicmapListener(new CrossfireMagicmapListener()
                                     {
                                         /** {@inheritDoc} */
@@ -995,7 +807,7 @@ public class JXCSkinLoader implements JXCSkin
                                     throw new IOException("syntax error");
                                 }
 
-                                final GUICommandList commandList = getCommandList(args[2]);
+                                final GUICommandList commandList = skin.getCommandList(args[2]);
                                 mapUpdater.addCrossfireMapscrollListener(new MapscrollListener()
                                     {
                                         /** {@inheritDoc} */
@@ -1015,7 +827,7 @@ public class JXCSkinLoader implements JXCSkin
 
                                 final String subtype = args[2];
                                 final Skill skill = SkillSet.getNamedSkill(args[3].replaceAll("_", " "));
-                                final GUICommandList commandList = getCommandList(args[4]);
+                                final GUICommandList commandList = skin.getCommandList(args[4]);
                                 if (subtype.equals("add"))
                                 {
                                     skill.addSkillListener(new SkillListener()
@@ -1266,7 +1078,7 @@ public class JXCSkinLoader implements JXCSkin
                                 throw new IOException("syntax error");
                             }
 
-                            final KeyBindings keyBindings = gui != null ? gui.getKeyBindings() : defaultKeyBindings;
+                            final KeyBindings keyBindings = gui != null ? gui.getKeyBindings() : skin.getDefaultKeyBindings();
                             try
                             {
                                 keyBindings.parseKeyBinding(line.substring(4).trim(), true);
@@ -1525,8 +1337,7 @@ public class JXCSkinLoader implements JXCSkin
                             final int tmpW = w/tileSize;
                             final int tmpH = h/tileSize;
                             DefaultCrossfireServerConnection.validateMapSize(tmpW, tmpH);
-                            mapWidth = tmpW;
-                            mapHeight = tmpH;
+                            skin.setMapSize(tmpW, tmpH);
 
                             final GUIMap element = new GUIMap(window, name, tileSize, x, y, w, h, server, facesManager, mapUpdater);
                             definedGUIElements.insert(name, element);
@@ -1639,7 +1450,7 @@ public class JXCSkinLoader implements JXCSkin
                                 throw new IOException("syntax error");
                             }
 
-                            numLookObjects = expressionParser.parseInt(args[1]);
+                            skin.setNumLookObjects(expressionParser.parseInt(args[1]));
                         }
                         else if (gui != null && args[0].equals("scrollbar"))
                         {
@@ -1676,7 +1487,7 @@ public class JXCSkinLoader implements JXCSkin
                                 throw new IOException("invalid skin_name: "+newSkinName);
                             }
 
-                            skinName = newSkinName;
+                            skin.setSkinName(newSkinName);
                         }
                         else if (gui != null && args[0].equals("text"))
                         {
@@ -1696,7 +1507,7 @@ public class JXCSkinLoader implements JXCSkin
                             final Color inactiveColor = ParseUtils.parseColor(args[9]);
                             final Color activeColor = ParseUtils.parseColor(args[10]);
                             final int margin = expressionParser.parseInt(args[11]);
-                            final GUICommandList commandList = getCommandList(args[12]);
+                            final GUICommandList commandList = skin.getCommandList(args[12]);
                             final boolean ignoreUpDown = NumberParser.parseBoolean(args[13]);
                             definedGUIElements.insert(name, new GUITextField(window, name, x, y, w, h, activeImage, inactiveImage, font, inactiveColor, activeColor, margin, "", commandList, ignoreUpDown));
                         }
@@ -1718,7 +1529,7 @@ public class JXCSkinLoader implements JXCSkin
                             final int w = expressionParser.parseInt(args[4]);
                             final int h = expressionParser.parseInt(args[5]);
                             final boolean autoRepeat = NumberParser.parseBoolean(args[6]);
-                            final GUICommandList commandList = getCommandList(args[7]);
+                            final GUICommandList commandList = skin.getCommandList(args[7]);
                             final String text = ParseUtils.parseText(args, 8, lnr);
                             definedGUIElements.insert(name, textButtonFactory.newTextButton(window, name, x, y, w, h, text, autoRepeat, commandList));
                         }
@@ -1843,43 +1654,5 @@ public class JXCSkinLoader implements JXCSkin
             }
             i++;
         }
-    }
-
-    /** {@inheritDoc} */
-    @Override
-    public Iterator<Gui> iterator()
-    {
-        return dialogs.iterator();
-    }
-
-    /** {@inheritDoc} */
-    @Override
-    public void executeInitEvents()
-    {
-        for (final GUICommandList commandList : initEvents)
-        {
-            commandList.execute();
-        }
-    }
-
-    /** {@inheritDoc} */
-    @Override
-    public GUICommandList getCommandList(final String name) throws JXCSkinException
-    {
-        return definedCommandLists.lookup(name);
-    }
-
-    /** {@inheritDoc} */
-    @Override
-    public boolean hasChangedDialog()
-    {
-        return dialogs.hasChangedDialog();
-    }
-
-    /** {@inheritDoc} */
-    @Override
-    public KeyBindings getDefaultKeyBindings()
-    {
-        return defaultKeyBindings;
     }
 }
