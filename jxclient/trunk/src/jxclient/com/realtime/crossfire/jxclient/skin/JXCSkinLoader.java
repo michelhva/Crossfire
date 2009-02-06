@@ -117,12 +117,13 @@ import com.realtime.crossfire.jxclient.spells.CurrentSpellManager;
 import com.realtime.crossfire.jxclient.spells.SpellsManager;
 import com.realtime.crossfire.jxclient.stats.Stats;
 import com.realtime.crossfire.jxclient.stats.StatsParser;
+import com.realtime.crossfire.jxclient.util.NumberParser;
+import com.realtime.crossfire.jxclient.util.StringUtils;
 import com.realtime.crossfire.jxclient.window.ConnectionStateListener;
 import com.realtime.crossfire.jxclient.window.GUICommandList;
 import com.realtime.crossfire.jxclient.window.JXCWindow;
 import com.realtime.crossfire.jxclient.window.JXCWindowRenderer;
 import com.realtime.crossfire.jxclient.window.MouseTracker;
-import com.realtime.crossfire.jxclient.util.StringUtils;
 import java.awt.Color;
 import java.awt.Font;
 import java.awt.FontFormatException;
@@ -739,7 +740,7 @@ public abstract class JXCSkinLoader implements JXCSkin
                             final int h = parseInt(args[5]);
                             final BufferedImage pictureUp = getPicture(args[6]);
                             final BufferedImage pictureDown = getPicture(args[7]);
-                            final boolean autoRepeat = parseBoolean(args[8]);
+                            final boolean autoRepeat = NumberParser.parseBoolean(args[8]);
                             final GUICommandList commandList = getCommandList(args[9]);
                             final String label;
                             final Font font;
@@ -794,7 +795,7 @@ public abstract class JXCSkinLoader implements JXCSkin
                             }
 
                             final String commandListName = args[1];
-                            final GUICommandList.CommandType commandListCommandType = parseEnum(GUICommandList.CommandType.class, args[2], "type");
+                            final GUICommandList.CommandType commandListCommandType = NumberParser.parseEnum(GUICommandList.CommandType.class, args[2], "type");
                             final GUICommandList commandList = new GUICommandList(commandListCommandType);
                             definedCommandLists.insert(commandListName, commandList);
                             if (args.length >= 5)
@@ -896,7 +897,7 @@ public abstract class JXCSkinLoader implements JXCSkin
                                 final Font titleFont = definedFonts.lookup(args[3]);
                                 final Color titleColor = parseColor(args[4]);
                                 final Color titleBackgroundColor = parseColor(args[5]);
-                                final float alpha = parseFloat(args[6]);
+                                final float alpha = NumberParser.parseFloat(args[6]);
                                 if (alpha < 0 || alpha > 1F) throw new IOException("invalid alpha value: "+alpha);
                                 dialogFactory = new DialogFactory(frameNW, frameN, frameNE, frameW, frameC, frameE, frameSW, frameS, frameSE, titleFont, titleColor, titleBackgroundColor, alpha);
                             }
@@ -937,7 +938,7 @@ public abstract class JXCSkinLoader implements JXCSkin
                             final int y = parseInt(args[3]);
                             final int w = parseInt(args[4]);
                             final int h = parseInt(args[5]);
-                            final boolean saveDialog = parseBoolean(args[6]);
+                            final boolean saveDialog = NumberParser.parseBoolean(args[6]);
                             final String title = parseText(args, 7, lnr);
                             for (final GUIElement element : dialogFactory.newDialog(window, name, w, h, title))
                             {
@@ -959,7 +960,7 @@ public abstract class JXCSkinLoader implements JXCSkin
 
                             for (int i = 1; i < args.length; i++)
                             {
-                                gui.hideInState(parseEnum(JXCWindowRenderer.GuiState.class, args[i], "gui state"));
+                                gui.hideInState(NumberParser.parseEnum(JXCWindowRenderer.GuiState.class, args[i], "gui state"));
                             }
                         }
                         else if (gui != null && args[0].equals("dupgauge"))
@@ -1169,7 +1170,7 @@ public abstract class JXCSkinLoader implements JXCSkin
 
                             final String name = args[1];
                             final Font fontNormal = getFont(args[2]);
-                            final Font font = fontNormal.deriveFont(parseFloat(args[3]));
+                            final Font font = fontNormal.deriveFont(NumberParser.parseFloat(args[3]));
                             definedFonts.insert(name, font);
                         }
                         else if (gui != null && args[0].equals("gauge"))
@@ -1441,7 +1442,7 @@ public abstract class JXCSkinLoader implements JXCSkin
                             final Font font = definedFonts.lookup(args[6]);
                             final Color color = parseColor(args[7]);
                             final int stat = parseStat(args[8]);
-                            final GUILabel.Alignment alignment = parseEnum(GUILabel.Alignment.class, args[9], "text alignment");
+                            final GUILabel.Alignment alignment = NumberParser.parseEnum(GUILabel.Alignment.class, args[9], "text alignment");
                             final GUILabelStats element = new GUILabelStats(window, name, x, y, w, h, font, color, new Color(0, 0, 0, 0F), stat, alignment, stats);
                             definedGUIElements.insert(name, element);
                         }
@@ -1458,7 +1459,7 @@ public abstract class JXCSkinLoader implements JXCSkin
                             final int w = parseInt(args[4]);
                             final int h = parseInt(args[5]);
                             final Font font = definedFonts.lookup(args[6]);
-                            final GUISpellLabel.Type type = parseEnum(GUISpellLabel.Type.class, args[7], "label type");
+                            final GUISpellLabel.Type type = NumberParser.parseEnum(GUISpellLabel.Type.class, args[7], "label type");
                             final GUISpellLabel element = new GUISpellLabel(window, name, x, y, w, h, null, facesManager, font, type, currentSpellManager);
                             definedGUIElements.insert(name, element);
                         }
@@ -1649,7 +1650,7 @@ public abstract class JXCSkinLoader implements JXCSkin
                             final int w = parseInt(args[4]);
                             final int h = parseInt(args[5]);
                             final BufferedImage picture = getPicture(args[6]);
-                            final float alpha = parseFloat(args[7]);
+                            final float alpha = NumberParser.parseFloat(args[7]);
                             if (alpha < 0 || alpha > 1F) throw new IOException("invalid alpha value: "+alpha);
                             definedGUIElements.insert(name, new GUIPicture(window, name, x, y, w, h, picture, alpha));
                         }
@@ -1735,7 +1736,7 @@ public abstract class JXCSkinLoader implements JXCSkin
                             final int y = parseInt(args[3]);
                             final int w = parseInt(args[4]);
                             final int h = parseInt(args[5]);
-                            final boolean proportionalSlider = parseBoolean(args[6]);
+                            final boolean proportionalSlider = NumberParser.parseBoolean(args[6]);
                             final GUIElement element = definedGUIElements.lookup(args[7]);
                             final Color colorBackground = parseColor(args[8]);
                             final Color colorForeground = parseColor(args[9]);
@@ -1779,7 +1780,7 @@ public abstract class JXCSkinLoader implements JXCSkin
                             final Color activeColor = parseColor(args[10]);
                             final int margin = parseInt(args[11]);
                             final GUICommandList commandList = getCommandList(args[12]);
-                            final boolean ignoreUpDown = parseBoolean(args[13]);
+                            final boolean ignoreUpDown = NumberParser.parseBoolean(args[13]);
                             definedGUIElements.insert(name, new GUITextField(window, name, x, y, w, h, activePicture, inactivePicture, font, inactiveColor, activeColor, margin, "", commandList, ignoreUpDown));
                         }
                         else if (gui != null && args[0].equals("textbutton"))
@@ -1799,7 +1800,7 @@ public abstract class JXCSkinLoader implements JXCSkin
                             final int y = parseInt(args[3]);
                             final int w = parseInt(args[4]);
                             final int h = parseInt(args[5]);
-                            final boolean autoRepeat = parseBoolean(args[6]);
+                            final boolean autoRepeat = NumberParser.parseBoolean(args[6]);
                             final GUICommandList commandList = getCommandList(args[7]);
                             final String text = parseText(args, 8, lnr);
                             definedGUIElements.insert(name, textButtonFactory.newTextButton(window, name, x, y, w, h, text, autoRepeat, commandList));
@@ -2032,63 +2033,6 @@ public abstract class JXCSkinLoader implements JXCSkin
     }
 
     /**
-     * Parses a float constant.
-     * @param str the floating constant string to parse
-     * @return the floating value
-     * @throws IOException if a parsing error occurs
-     */
-    private static float parseFloat(final String str) throws IOException
-    {
-        try
-        {
-            return Float.parseFloat(str);
-        }
-        catch (final NumberFormatException ex)
-        {
-            throw new IOException("invalid number: "+str);
-        }
-    }
-
-    /**
-     * Parses a boolean constant.
-     * @param str the boolean constant string to parse
-     * @return the boolean value
-     * @throws IOException if a parsing error occurs
-     */
-    private static boolean parseBoolean(final String str) throws IOException
-    {
-        try
-        {
-            return Boolean.parseBoolean(str);
-        }
-        catch (final NumberFormatException ex)
-        {
-            throw new IOException("invalid boolean: "+str);
-        }
-    }
-
-    /**
-     * Parses an enum constant.
-     * @param class_ the enum class the enum constant belongs to
-     * @param name the enum constant to parse
-     * @param ident the description of the enum class for building error
-     * messages
-     * @return the enum constant
-     * @throws IOException if the enum constant does not exist
-     */
-    private static <T extends Enum<T>> T parseEnum(final Class<T> class_, final String name, final String ident) throws IOException
-    {
-        try
-        {
-            return Enum.valueOf(class_, name);
-        }
-        catch (final IllegalArgumentException ex)
-        {
-            throw new IOException("no such "+ident+" type: "+name);
-        }
-    }
-
-    /**
      * Parses a stat value.
      * @param name the stat value to parse
      * @return the stat value
@@ -2191,7 +2135,7 @@ public abstract class JXCSkinLoader implements JXCSkin
         int alpha = 255;
         try
         {
-            alpha = (int)(255*parseFloat(name.substring(pos+1))+0.5);
+            alpha = (int)(255*NumberParser.parseFloat(name.substring(pos+1))+0.5);
         }
         catch (final IOException ex)
         {
@@ -2470,7 +2414,7 @@ public abstract class JXCSkinLoader implements JXCSkin
                 throw new IOException("syntax error");
             }
 
-            final ExecSelectionCommand.CommandType commandType = parseEnum(ExecSelectionCommand.CommandType.class, args[argc], "command name");
+            final ExecSelectionCommand.CommandType commandType = NumberParser.parseEnum(ExecSelectionCommand.CommandType.class, args[argc], "command name");
 
             if (!(element instanceof GUIItemList))
             {
