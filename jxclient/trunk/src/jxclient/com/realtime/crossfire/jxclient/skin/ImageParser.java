@@ -38,17 +38,17 @@ public class ImageParser
     private final JXCSkinCache<BufferedImage> definedImages = new JXCSkinCache<BufferedImage>("image");
 
     /**
-     * The {@link JXCSkinLoader} for loading resources.
+     * The {@link JXCSkinSource} for loading resources.
      */
-    private final JXCSkinLoader skinLoader;
+    private final JXCSkinSource skinSource;
 
     /**
      * Creates a new instance.
-     * @param skinLoader the skin loader for loading resources
+     * @param skinSource the skin source for loading resources
      */
-    public ImageParser(final JXCSkinLoader skinLoader)
+    public ImageParser(final JXCSkinSource skinSource)
     {
-        this.skinLoader = skinLoader;
+        this.skinSource = skinSource;
     }
 
     /**
@@ -90,7 +90,7 @@ public class ImageParser
 
         final String filename = "pictures/"+name+".png";
         final BufferedImage image;
-        final InputStream inputStream = skinLoader.getInputStream(filename);
+        final InputStream inputStream = skinSource.getInputStream(filename);
         try
         {
             image = ImageIO.read(inputStream);
@@ -101,7 +101,7 @@ public class ImageParser
         }
         if (image == null)
         {
-            throw new IOException("image '"+skinLoader.getURI(filename)+"' does not exist");
+            throw new IOException("image '"+skinSource.getURI(filename)+"' does not exist");
         }
         try
         {

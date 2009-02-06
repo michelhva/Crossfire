@@ -19,21 +19,15 @@
 //
 package com.realtime.crossfire.jxclient.skin;
 
-import com.realtime.crossfire.jxclient.faces.FacesManager;
-import com.realtime.crossfire.jxclient.gui.keybindings.KeyBindings;
-import com.realtime.crossfire.jxclient.items.ItemsManager;
-import com.realtime.crossfire.jxclient.mapupdater.CfMapUpdater;
-import com.realtime.crossfire.jxclient.spells.SpellsManager;
-import com.realtime.crossfire.jxclient.stats.Stats;
 import java.io.IOException;
 import java.io.InputStream;
 
 /**
- * A {@link JXCSkinLoader} that loads via the class loader.
+ * A {@link JXCSkinSource} that loads via the class loader.
  *
  * @author Andreas Kirschbaum
  */
-public class JXCSkinClassLoader extends JXCSkinLoader
+public class JXCSkinClassSource extends AbstractJXCSkinSource
 {
     /**
      * The base resource name to prepend to all resource names.
@@ -47,9 +41,8 @@ public class JXCSkinClassLoader extends JXCSkinLoader
      *
      * @throws JXCSkinException if the skin cannot be loaded
      */
-    public JXCSkinClassLoader(final ItemsManager itemsManager, final SpellsManager spellsManager, final FacesManager facesManager, final Stats stats, final CfMapUpdater mapUpdater, final String baseName, final KeyBindings defaultKeyBindings) throws JXCSkinException
+    public JXCSkinClassSource(final String baseName) throws JXCSkinException
     {
-        super(itemsManager, spellsManager, facesManager, stats, mapUpdater, defaultKeyBindings);
         if (baseName == null) throw new IllegalArgumentException();
         this.baseName = baseName;
         checkAccess();
@@ -57,7 +50,7 @@ public class JXCSkinClassLoader extends JXCSkinLoader
 
     /** {@inheritDoc} */
     @Override
-    protected InputStream getInputStream(final String name) throws IOException
+    public InputStream getInputStream(final String name) throws IOException
     {
         final InputStream inputStream = getClassLoader().getResourceAsStream(baseName+"/"+name);
         if (inputStream == null)
@@ -69,7 +62,7 @@ public class JXCSkinClassLoader extends JXCSkinLoader
 
     /** {@inheritDoc} */
     @Override
-    protected String getURI(final String name)
+    public String getURI(final String name)
     {
         return "resource:"+baseName+"/"+name;
     }

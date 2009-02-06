@@ -19,23 +19,17 @@
 //
 package com.realtime.crossfire.jxclient.skin;
 
-import com.realtime.crossfire.jxclient.faces.FacesManager;
-import com.realtime.crossfire.jxclient.gui.keybindings.KeyBindings;
-import com.realtime.crossfire.jxclient.items.ItemsManager;
-import com.realtime.crossfire.jxclient.mapupdater.CfMapUpdater;
-import com.realtime.crossfire.jxclient.spells.SpellsManager;
-import com.realtime.crossfire.jxclient.stats.Stats;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;
 import java.io.InputStream;
 
 /**
- * A {@link JXCSkinLoader} that loads from files.
+ * A {@link JXCSkinSource} that loads from files.
  *
  * @author Andreas Kirschbaum
  */
-public class JXCSkinDirLoader extends JXCSkinLoader
+public class JXCSkinDirSource extends AbstractJXCSkinSource
 {
     /**
      * The base directory.
@@ -49,9 +43,8 @@ public class JXCSkinDirLoader extends JXCSkinLoader
      *
      * @throws JXCSkinException if the skin cannot be loaded
      */
-    public JXCSkinDirLoader(final ItemsManager itemsManager, final SpellsManager spellsManager, final FacesManager facesManager, final Stats stats, final CfMapUpdater mapUpdater, final File dir, final KeyBindings defaultKeyBindings) throws JXCSkinException
+    public JXCSkinDirSource(final File dir) throws JXCSkinException
     {
-        super(itemsManager, spellsManager, facesManager, stats, mapUpdater, defaultKeyBindings);
         if (dir == null) throw new IllegalArgumentException();
         this.dir = dir;
         checkAccess();
@@ -59,14 +52,14 @@ public class JXCSkinDirLoader extends JXCSkinLoader
 
     /** {@inheritDoc} */
     @Override
-    protected InputStream getInputStream(final String name) throws IOException
+    public InputStream getInputStream(final String name) throws IOException
     {
         return new FileInputStream(new File(dir, name));
     }
 
     /** {@inheritDoc} */
     @Override
-    protected String getURI(final String name)
+    public String getURI(final String name)
     {
         return "file:"+new File(dir, name);
     }
