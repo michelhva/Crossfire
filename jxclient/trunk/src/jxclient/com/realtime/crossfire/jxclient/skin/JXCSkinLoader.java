@@ -248,6 +248,11 @@ public abstract class JXCSkinLoader implements JXCSkin
     private final GaugeUpdaterParser gaugeUpdaterParser;
 
     /**
+     * The {@link GuiElementParser} for parsing gui element specifications.
+     */
+    private final GuiElementParser guiElementParser;
+
+    /**
      * Creates a new instance.
      * @param itemsManager the items manager instance to use
      * @param spellsManager the spells manager instance to use
@@ -266,6 +271,7 @@ public abstract class JXCSkinLoader implements JXCSkin
         this.defaultKeyBindings = defaultKeyBindings;
         commandParser = new CommandParser(dialogs, itemsManager, expressionParser, definedGUIElements);
         gaugeUpdaterParser = new GaugeUpdaterParser(stats, itemsManager);
+        guiElementParser = new GuiElementParser(definedGUIElements);
     }
 
     /**
@@ -1225,7 +1231,7 @@ public abstract class JXCSkinLoader implements JXCSkin
                             final BufferedImage unpaidImage = imageParser.getImage(unpaidColor, args[14]);
                             final Font font = definedFonts.lookup(args[15]);
                             final Color nrofColor = ParseUtils.parseColor(args[16]);
-                            final AbstractLabel selectedItem = args[17].equals("null") ? null : lookupLabelElement(args[17]);
+                            final AbstractLabel selectedItem = args[17].equals("null") ? null : guiElementParser.lookupLabelElement(args[17]);
 
                             final ItemPainter itemPainter = new ItemPainter(cursedImage, damnedImage, magicImage, blessedImage, appliedImage, selectorImage, lockedImage, unpaidImage, cursedColor, damnedColor, magicColor, blessedColor, appliedColor, selectorColor, lockedColor, unpaidColor, font, nrofColor, cellHeight, cellHeight);
                             final GUIItemInventoryFactory itemInventoryFactory = new GUIItemInventoryFactory(window, commandQueue, name, itemPainter, server, facesManager, itemsManager);
@@ -1618,8 +1624,8 @@ public abstract class JXCSkinLoader implements JXCSkin
                             final int cellHeight = expressionParser.parseInt(args[6]);
                             final BufferedImage tcpImage = args[7].equals("null") ? null : imageParser.getImage(args[7]);
                             final Font font = definedFonts.lookup(args[8]);
-                            final GUIText text = args[9].equals("null") ? null : lookupTextElement(args[9]);
-                            final AbstractLabel label = args[10].equals("null") ? null : lookupLabelElement(args[10]);
+                            final GUIText text = args[9].equals("null") ? null : guiElementParser.lookupTextElement(args[9]);
+                            final AbstractLabel label = args[10].equals("null") ? null : guiElementParser.lookupLabelElement(args[10]);
                             final String format = args[11];
                             final String tooltip = args[12];
 
@@ -1915,40 +1921,6 @@ public abstract class JXCSkinLoader implements JXCSkin
             }
             i++;
         }
-    }
-
-    /**
-     * Returns a {@link GUIText} by element name.
-     * @param name the element name
-     * @return the <code>GUIText</code> element
-     * @throws JXCSkinException if the element name is undefined
-     */
-    private GUIText lookupTextElement(final String name) throws JXCSkinException
-    {
-        final GUIElement element = definedGUIElements.lookup(name);
-        if (!(element instanceof GUIText))
-        {
-            throw new JXCSkinException("element "+name+" is not a text field");
-        }
-
-        return (GUIText)element;
-    }
-
-    /**
-     * Returns a {@link AbstractLabel} by element name.
-     * @param name the element name
-     * @return the <code>AbstractLabel</code> element
-     * @throws JXCSkinException if the element name is undefined
-     */
-    private AbstractLabel lookupLabelElement(final String name) throws JXCSkinException
-    {
-        final GUIElement element = definedGUIElements.lookup(name);
-        if (!(element instanceof AbstractLabel))
-        {
-            throw new JXCSkinException("element "+name+" is not a label");
-        }
-
-        return (AbstractLabel)element;
     }
 
     /** {@inheritDoc} */
