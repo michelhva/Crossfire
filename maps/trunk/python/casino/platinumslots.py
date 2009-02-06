@@ -45,16 +45,16 @@ if (activator.PayAmount(cost*50)):#platinumcoin
             pay = slotminor[slotlist.index(item)]
          else:
             break
-	 activator.Write("%d %ss, a minor win!" %(spinners-1,item))
+         activator.Write("%d %ss, a minor win!" %(spinners-1,item))
          payoff = cost*pay
          Slots.payoff(payoff)
-	 id = Crossfire.CreateObjectByName(cointype)
-	 id.Quantity = payoff
-	 id.InsertInto(activator)
+         id = Crossfire.CreateObjectByName(cointype)
+         id.Quantity = payoff
+         id.InsertInto(activator)
          if payoff == 1:
             message = "you win %d %s!" %(payoff,cointype)
-	 else:
-	    message = "You win %d %ss!!" %(payoff,cointype)
+         else:
+            message = "You win %d %ss!!" %(payoff,cointype)
          break
       elif results.count(item) == spinners:
          #all match - pays out as percent of pot
@@ -65,13 +65,13 @@ if (activator.PayAmount(cost*50)):#platinumcoin
             break
          payoff = pot*pay
          Slots.payoff(payoff)
-	 id = Crossfire.CreateObjectByName(cointype)
-	 id.Quantity = payoff
-	 id.InsertInto(activator)
+         id = Crossfire.CreateObjectByName(cointype)
+         id.Quantity = payoff
+         id.InsertInto(activator)
          if payoff == 1:
             message = "you win %d %s!" %(payoff,cointype)
-	 else:
-	    message = "You win %d %ss!!" %(payoff,cointype)
+         else:
+            message = "You win %d %ss!!" %(payoff,cointype)
          break
       else:
          message = "Better luck next time!"
