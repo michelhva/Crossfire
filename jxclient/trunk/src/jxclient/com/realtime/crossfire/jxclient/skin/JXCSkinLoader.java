@@ -139,8 +139,6 @@ import java.util.LinkedHashMap;
 import java.util.List;
 import java.util.Map;
 import java.util.Set;
-import java.util.regex.Matcher;
-import java.util.regex.Pattern;
 import javax.imageio.ImageIO;
 
 /**
@@ -153,11 +151,6 @@ public abstract class JXCSkinLoader implements JXCSkin
      * The default number of ground view objects.
      */
     private static final int DEFAULT_NUM_LOOK_OBJECTS = 50;
-
-    /**
-     * Pattern to parse integer constants.
-     */
-    private static final Pattern patternExpr = Pattern.compile("([0-9]+|WIDTH|HEIGHT|WIDTH/2|HEIGHT/2)([-+])(.+)");
 
     /**
      * The {@link ItemsManager} instance to use.
@@ -268,6 +261,11 @@ public abstract class JXCSkinLoader implements JXCSkin
      * The default key bindings.
      */
     private final KeyBindings defaultKeyBindings;
+
+    /**
+     * The {@link ExpressionParser} for parsing integer constant expressions.
+     */
+    private ExpressionParser expressionParser = new ExpressionParser(selectedResolution);
 
     /**
      * Creates a new instance.
@@ -396,6 +394,7 @@ public abstract class JXCSkinLoader implements JXCSkin
             }
         }
 
+        expressionParser = new ExpressionParser(selectedResolution);
         skinName = "unknown";
         mapWidth = 0;
         mapHeight = 0;
@@ -733,10 +732,10 @@ public abstract class JXCSkinLoader implements JXCSkin
                             }
 
                             final String name = args[1];
-                            final int x = parseInt(args[2]);
-                            final int y = parseInt(args[3]);
-                            final int w = parseInt(args[4]);
-                            final int h = parseInt(args[5]);
+                            final int x = expressionParser.parseInt(args[2]);
+                            final int y = expressionParser.parseInt(args[3]);
+                            final int w = expressionParser.parseInt(args[4]);
+                            final int h = expressionParser.parseInt(args[5]);
                             final BufferedImage pictureUp = getPicture(args[6]);
                             final BufferedImage pictureDown = getPicture(args[7]);
                             final boolean autoRepeat = NumberParser.parseBoolean(args[8]);
@@ -759,8 +758,8 @@ public abstract class JXCSkinLoader implements JXCSkin
                                 assert args.length >= 14;
                                 font = definedFonts.lookup(args[10]);
                                 color = ParseUtils.parseColor(args[11]);
-                                textX = parseInt(args[12]);
-                                textY = parseInt(args[13]);
+                                textX = expressionParser.parseInt(args[12]);
+                                textY = expressionParser.parseInt(args[13]);
                                 label = ParseUtils.parseText(args, 14, lnr);
                             }
                             definedGUIElements.insert(name, new GUIButton(window, name, x, y, w, h, pictureUp, pictureDown, label, font, color, textX, textY, autoRepeat, commandList));
@@ -778,10 +777,10 @@ public abstract class JXCSkinLoader implements JXCSkin
                             }
 
                             final String name = args[1];
-                            final int x = parseInt(args[2]);
-                            final int y = parseInt(args[3]);
-                            final int w = parseInt(args[4]);
-                            final int h = parseInt(args[5]);
+                            final int x = expressionParser.parseInt(args[2]);
+                            final int y = expressionParser.parseInt(args[3]);
+                            final int w = expressionParser.parseInt(args[4]);
+                            final int h = expressionParser.parseInt(args[5]);
                             final CheckBoxOption option = ParseUtils.parseCheckBoxOption(args[6], optionManager);
                             final String text = ParseUtils.parseText(args, 7, lnr);
                             definedGUIElements.insert(name, checkBoxFactory.newCheckBox(window, name, x, y, w, h, option, text));
@@ -824,16 +823,16 @@ public abstract class JXCSkinLoader implements JXCSkin
                             }
 
                             final String name = args[1];
-                            final int x = parseInt(args[2]);
-                            final int y = parseInt(args[3]);
-                            final int w = parseInt(args[4]);
-                            final int h = parseInt(args[5]);
+                            final int x = expressionParser.parseInt(args[2]);
+                            final int y = expressionParser.parseInt(args[3]);
+                            final int w = expressionParser.parseInt(args[4]);
+                            final int h = expressionParser.parseInt(args[5]);
                             final BufferedImage activePicture = getPicture(args[6]);
                             final BufferedImage inactivePicture = getPicture(args[7]);
                             final Font font = definedFonts.lookup(args[8]);
                             final Color inactiveColor = ParseUtils.parseColor(args[9]);
                             final Color activeColor = ParseUtils.parseColor(args[10]);
-                            final int margin = parseInt(args[11]);
+                            final int margin = expressionParser.parseInt(args[11]);
                             definedGUIElements.insert(name, new GUICommandText(window, name, x, y, w, h, activePicture, inactivePicture, font, inactiveColor, activeColor, margin, "", commands, false));
                         }
                         else if (args[0].equals("def"))
@@ -933,10 +932,10 @@ public abstract class JXCSkinLoader implements JXCSkin
                             }
 
                             final String name = args[1];
-                            final int x = parseInt(args[2]);
-                            final int y = parseInt(args[3]);
-                            final int w = parseInt(args[4]);
-                            final int h = parseInt(args[5]);
+                            final int x = expressionParser.parseInt(args[2]);
+                            final int y = expressionParser.parseInt(args[3]);
+                            final int w = expressionParser.parseInt(args[4]);
+                            final int h = expressionParser.parseInt(args[5]);
                             final boolean saveDialog = NumberParser.parseBoolean(args[6]);
                             final String title = ParseUtils.parseText(args, 7, lnr);
                             for (final GUIElement element : dialogFactory.newDialog(window, name, w, h, title))
@@ -970,10 +969,10 @@ public abstract class JXCSkinLoader implements JXCSkin
                             }
 
                             final String name = args[1];
-                            final int x = parseInt(args[2]);
-                            final int y = parseInt(args[3]);
-                            final int w = parseInt(args[4]);
-                            final int h = parseInt(args[5]);
+                            final int x = expressionParser.parseInt(args[2]);
+                            final int y = expressionParser.parseInt(args[3]);
+                            final int w = expressionParser.parseInt(args[4]);
+                            final int h = expressionParser.parseInt(args[5]);
                             final BufferedImage picturePositiveDiv = getPicture(args[6]);
                             final BufferedImage picturePositiveMod = getPicture(args[7]);
                             final BufferedImage pictureEmpty = args[8].equals("null") ? null : getPicture(args[8]);
@@ -993,10 +992,10 @@ public abstract class JXCSkinLoader implements JXCSkin
                             }
 
                             final String name = args[1];
-                            final int x = parseInt(args[2]);
-                            final int y = parseInt(args[3]);
-                            final int w = parseInt(args[4]);
-                            final int h = parseInt(args[5]);
+                            final int x = expressionParser.parseInt(args[2]);
+                            final int y = expressionParser.parseInt(args[3]);
+                            final int w = expressionParser.parseInt(args[4]);
+                            final int h = expressionParser.parseInt(args[5]);
                             final BufferedImage picturePositiveDiv = getPicture(args[6]);
                             final BufferedImage picturePositiveMod = getPicture(args[7]);
                             final BufferedImage pictureEmpty = getPicture(args[8]);
@@ -1180,10 +1179,10 @@ public abstract class JXCSkinLoader implements JXCSkin
                             }
 
                             final String name = args[1];
-                            final int x = parseInt(args[2]);
-                            final int y = parseInt(args[3]);
-                            final int w = parseInt(args[4]);
-                            final int h = parseInt(args[5]);
+                            final int x = expressionParser.parseInt(args[2]);
+                            final int y = expressionParser.parseInt(args[3]);
+                            final int w = expressionParser.parseInt(args[4]);
+                            final int h = expressionParser.parseInt(args[5]);
                             final BufferedImage picturePositive = args[6].equals("null") ? null : getPicture(args[6]);
                             final BufferedImage pictureNegative = args[7].equals("null") ? null : getPicture(args[7]);
                             final BufferedImage pictureEmpty = args[8].equals("null") ? null : getPicture(args[8]);
@@ -1212,11 +1211,11 @@ public abstract class JXCSkinLoader implements JXCSkin
                             }
 
                             final String name = args[1];
-                            final int x = parseInt(args[2]);
-                            final int y = parseInt(args[3]);
-                            final int w = parseInt(args[4]);
-                            final int h = parseInt(args[5]);
-                            final int cellHeight = parseInt(args[6]);
+                            final int x = expressionParser.parseInt(args[2]);
+                            final int y = expressionParser.parseInt(args[3]);
+                            final int w = expressionParser.parseInt(args[4]);
+                            final int h = expressionParser.parseInt(args[5]);
+                            final int cellHeight = expressionParser.parseInt(args[6]);
                             final Color cursedColor = ParseUtils.parseColorNull(args[7]);
                             final BufferedImage cursedImage = getPicture(cursedColor, args[7]);
                             final Color damnedColor = ParseUtils.parseColorNull(args[8]);
@@ -1251,11 +1250,11 @@ public abstract class JXCSkinLoader implements JXCSkin
 
                             final String type = args[1];
                             final String name = args[2];
-                            final int x = parseInt(args[3]);
-                            final int y = parseInt(args[4]);
-                            final int w = parseInt(args[5]);
-                            final int h = parseInt(args[6]);
-                            final int index = parseInt(args[7]);
+                            final int x = expressionParser.parseInt(args[3]);
+                            final int y = expressionParser.parseInt(args[4]);
+                            final int w = expressionParser.parseInt(args[5]);
+                            final int h = expressionParser.parseInt(args[6]);
+                            final int index = expressionParser.parseInt(args[7]);
                             final GUIItem element;
                             if (type.equals("floor"))
                             {
@@ -1366,10 +1365,10 @@ public abstract class JXCSkinLoader implements JXCSkin
                             }
 
                             final String name = args[1];
-                            final int x = parseInt(args[2]);
-                            final int y = parseInt(args[3]);
-                            final int w = parseInt(args[4]);
-                            final int h = parseInt(args[5]);
+                            final int x = expressionParser.parseInt(args[2]);
+                            final int y = expressionParser.parseInt(args[3]);
+                            final int w = expressionParser.parseInt(args[4]);
+                            final int h = expressionParser.parseInt(args[5]);
                             final Font font = definedFonts.lookup(args[6]);
                             final Color color = ParseUtils.parseColor(args[7]);
                             final String text = ParseUtils.parseText(args, 8, lnr);
@@ -1383,10 +1382,10 @@ public abstract class JXCSkinLoader implements JXCSkin
                             }
 
                             final String name = args[1];
-                            final int x = parseInt(args[2]);
-                            final int y = parseInt(args[3]);
-                            final int w = parseInt(args[4]);
-                            final int h = parseInt(args[5]);
+                            final int x = expressionParser.parseInt(args[2]);
+                            final int y = expressionParser.parseInt(args[3]);
+                            final int w = expressionParser.parseInt(args[4]);
+                            final int h = expressionParser.parseInt(args[5]);
                             final Font font = definedFonts.lookup(args[6]);
                             final Color color = ParseUtils.parseColor(args[7]);
                             final String text = ParseUtils.parseText(args, 8, lnr);
@@ -1400,10 +1399,10 @@ public abstract class JXCSkinLoader implements JXCSkin
                             }
 
                             final String name = args[1];
-                            final int x = parseInt(args[2]);
-                            final int y = parseInt(args[3]);
-                            final int w = parseInt(args[4]);
-                            final int h = parseInt(args[5]);
+                            final int x = expressionParser.parseInt(args[2]);
+                            final int y = expressionParser.parseInt(args[3]);
+                            final int w = expressionParser.parseInt(args[4]);
+                            final int h = expressionParser.parseInt(args[5]);
                             final Font font = definedFonts.lookup(args[6]);
                             final Color color = ParseUtils.parseColor(args[7]);
                             final GUILabelQuery element = new GUILabelQuery(window, name, x, y, w, h, server, font, color, new Color(0, 0, 0, 0F));
@@ -1417,10 +1416,10 @@ public abstract class JXCSkinLoader implements JXCSkin
                             }
 
                             final String name = args[1];
-                            final int x = parseInt(args[2]);
-                            final int y = parseInt(args[3]);
-                            final int w = parseInt(args[4]);
-                            final int h = parseInt(args[5]);
+                            final int x = expressionParser.parseInt(args[2]);
+                            final int y = expressionParser.parseInt(args[3]);
+                            final int w = expressionParser.parseInt(args[4]);
+                            final int h = expressionParser.parseInt(args[5]);
                             final Font font = definedFonts.lookup(args[6]);
                             final Color color = ParseUtils.parseColor(args[7]);
                             final String text = ParseUtils.parseText(args, 8, lnr);
@@ -1434,10 +1433,10 @@ public abstract class JXCSkinLoader implements JXCSkin
                             }
 
                             final String name = args[1];
-                            final int x = parseInt(args[2]);
-                            final int y = parseInt(args[3]);
-                            final int w = parseInt(args[4]);
-                            final int h = parseInt(args[5]);
+                            final int x = expressionParser.parseInt(args[2]);
+                            final int y = expressionParser.parseInt(args[3]);
+                            final int w = expressionParser.parseInt(args[4]);
+                            final int h = expressionParser.parseInt(args[5]);
                             final Font font = definedFonts.lookup(args[6]);
                             final Color color = ParseUtils.parseColor(args[7]);
                             final int stat = ParseUtils.parseStat(args[8]);
@@ -1453,10 +1452,10 @@ public abstract class JXCSkinLoader implements JXCSkin
                             }
 
                             final String name = args[1];
-                            final int x = parseInt(args[2]);
-                            final int y = parseInt(args[3]);
-                            final int w = parseInt(args[4]);
-                            final int h = parseInt(args[5]);
+                            final int x = expressionParser.parseInt(args[2]);
+                            final int y = expressionParser.parseInt(args[3]);
+                            final int w = expressionParser.parseInt(args[4]);
+                            final int h = expressionParser.parseInt(args[5]);
                             final Font font = definedFonts.lookup(args[6]);
                             final GUISpellLabel.Type type = NumberParser.parseEnum(GUISpellLabel.Type.class, args[7], "label type");
                             final GUISpellLabel element = new GUISpellLabel(window, name, x, y, w, h, null, facesManager, font, type, currentSpellManager);
@@ -1470,10 +1469,10 @@ public abstract class JXCSkinLoader implements JXCSkin
                             }
 
                             final String name = args[1];
-                            final int x = parseInt(args[2]);
-                            final int y = parseInt(args[3]);
-                            final int w = parseInt(args[4]);
-                            final int h = parseInt(args[5]);
+                            final int x = expressionParser.parseInt(args[2]);
+                            final int y = expressionParser.parseInt(args[3]);
+                            final int w = expressionParser.parseInt(args[4]);
+                            final int h = expressionParser.parseInt(args[5]);
                             final BufferedImage pictureEmpty = getPicture(args[6]);
                             final Font fontPrint = definedFonts.lookup(args[7]);
                             final Font fontFixed = definedFonts.lookup(args[8]);
@@ -1492,10 +1491,10 @@ public abstract class JXCSkinLoader implements JXCSkin
                             }
 
                             final String name = args[1];
-                            final int x = parseInt(args[2]);
-                            final int y = parseInt(args[3]);
-                            final int w = parseInt(args[4]);
-                            final int h = parseInt(args[5]);
+                            final int x = expressionParser.parseInt(args[2]);
+                            final int y = expressionParser.parseInt(args[3]);
+                            final int w = expressionParser.parseInt(args[4]);
+                            final int h = expressionParser.parseInt(args[5]);
                             final BufferedImage pictureEmpty = getPicture(args[6]);
                             final Font fontPrint = definedFonts.lookup(args[7]);
                             final Font fontFixed = definedFonts.lookup(args[8]);
@@ -1514,7 +1513,7 @@ public abstract class JXCSkinLoader implements JXCSkin
                             }
 
                             final String name = args[1];
-                            final int index = parseInt(args[2]);
+                            final int index = expressionParser.parseInt(args[2]);
                             final Color color = ParseUtils.parseColor(args[3]);
                             final GUIElement element = definedGUIElements.lookup(name);
                             if (!(element instanceof GUIMessageLog))
@@ -1580,10 +1579,10 @@ public abstract class JXCSkinLoader implements JXCSkin
                             }
 
                             final String name = args[1];
-                            final int x = parseInt(args[2]);
-                            final int y = parseInt(args[3]);
-                            final int w = parseInt(args[4]);
-                            final int h = parseInt(args[5]);
+                            final int x = expressionParser.parseInt(args[2]);
+                            final int y = expressionParser.parseInt(args[3]);
+                            final int w = expressionParser.parseInt(args[4]);
+                            final int h = expressionParser.parseInt(args[5]);
                             final GUIMagicMap element = new GUIMagicMap(window, name, x, y, w, h, server, mapUpdater, facesManager);
                             definedGUIElements.insert(name, element);
                         }
@@ -1595,11 +1594,11 @@ public abstract class JXCSkinLoader implements JXCSkin
                             }
 
                             final String name = args[1];
-                            final int tileSize = parseInt(args[2]);
-                            final int x = parseInt(args[3]);
-                            final int y = parseInt(args[4]);
-                            final int w = parseInt(args[5]);
-                            final int h = parseInt(args[6]);
+                            final int tileSize = expressionParser.parseInt(args[2]);
+                            final int x = expressionParser.parseInt(args[3]);
+                            final int y = expressionParser.parseInt(args[4]);
+                            final int w = expressionParser.parseInt(args[5]);
+                            final int h = expressionParser.parseInt(args[6]);
 
                             if (tileSize <= 0) throw new IOException("invalid tile size "+tileSize);
                             if (w%tileSize != 0) throw new IOException("map width "+w+" is not a multiple of the tile size "+tileSize);
@@ -1621,11 +1620,11 @@ public abstract class JXCSkinLoader implements JXCSkin
                             }
 
                             final String name = args[1];
-                            final int x = parseInt(args[2]);
-                            final int y = parseInt(args[3]);
-                            final int w = parseInt(args[4]);
-                            final int h = parseInt(args[5]);
-                            final int cellHeight = parseInt(args[6]);
+                            final int x = expressionParser.parseInt(args[2]);
+                            final int y = expressionParser.parseInt(args[3]);
+                            final int w = expressionParser.parseInt(args[4]);
+                            final int h = expressionParser.parseInt(args[5]);
+                            final int cellHeight = expressionParser.parseInt(args[6]);
                             final BufferedImage pictureTcp = args[7].equals("null") ? null : getPicture(args[7]);
                             final Font font = definedFonts.lookup(args[8]);
                             final GUIText text = args[9].equals("null") ? null : lookupTextElement(args[9]);
@@ -1644,10 +1643,10 @@ public abstract class JXCSkinLoader implements JXCSkin
                             }
 
                             final String name = args[1];
-                            final int x = parseInt(args[2]);
-                            final int y = parseInt(args[3]);
-                            final int w = parseInt(args[4]);
-                            final int h = parseInt(args[5]);
+                            final int x = expressionParser.parseInt(args[2]);
+                            final int y = expressionParser.parseInt(args[3]);
+                            final int w = expressionParser.parseInt(args[4]);
+                            final int h = expressionParser.parseInt(args[5]);
                             final BufferedImage picture = getPicture(args[6]);
                             final float alpha = NumberParser.parseFloat(args[7]);
                             if (alpha < 0 || alpha > 1F) throw new IOException("invalid alpha value: "+alpha);
@@ -1661,16 +1660,16 @@ public abstract class JXCSkinLoader implements JXCSkin
                             }
 
                             final String name = args[1];
-                            final int x = parseInt(args[2]);
-                            final int y = parseInt(args[3]);
-                            final int w = parseInt(args[4]);
-                            final int h = parseInt(args[5]);
+                            final int x = expressionParser.parseInt(args[2]);
+                            final int y = expressionParser.parseInt(args[3]);
+                            final int w = expressionParser.parseInt(args[4]);
+                            final int h = expressionParser.parseInt(args[5]);
                             final BufferedImage activePicture = getPicture(args[6]);
                             final BufferedImage inactivePicture = getPicture(args[7]);
                             final Font font = definedFonts.lookup(args[8]);
                             final Color inactiveColor = ParseUtils.parseColor(args[9]);
                             final Color activeColor = ParseUtils.parseColor(args[10]);
-                            final int margin = parseInt(args[11]);
+                            final int margin = expressionParser.parseInt(args[11]);
                             definedGUIElements.insert(name, new GUIQueryText(window, name, x, y, w, h, activePicture, inactivePicture, font, inactiveColor, activeColor, margin, "", false));
                         }
                         else if (gui != null && args[0].equals("set_forced_active"))
@@ -1721,7 +1720,7 @@ public abstract class JXCSkinLoader implements JXCSkin
                                 throw new IOException("syntax error");
                             }
 
-                            numLookObjects = parseInt(args[1]);
+                            numLookObjects = expressionParser.parseInt(args[1]);
                         }
                         else if (gui != null && args[0].equals("scrollbar"))
                         {
@@ -1731,10 +1730,10 @@ public abstract class JXCSkinLoader implements JXCSkin
                             }
 
                             final String name = args[1];
-                            final int x = parseInt(args[2]);
-                            final int y = parseInt(args[3]);
-                            final int w = parseInt(args[4]);
-                            final int h = parseInt(args[5]);
+                            final int x = expressionParser.parseInt(args[2]);
+                            final int y = expressionParser.parseInt(args[3]);
+                            final int w = expressionParser.parseInt(args[4]);
+                            final int h = expressionParser.parseInt(args[5]);
                             final boolean proportionalSlider = NumberParser.parseBoolean(args[6]);
                             final GUIElement element = definedGUIElements.lookup(args[7]);
                             final Color colorBackground = ParseUtils.parseColor(args[8]);
@@ -1768,16 +1767,16 @@ public abstract class JXCSkinLoader implements JXCSkin
                             }
 
                             final String name = args[1];
-                            final int x = parseInt(args[2]);
-                            final int y = parseInt(args[3]);
-                            final int w = parseInt(args[4]);
-                            final int h = parseInt(args[5]);
+                            final int x = expressionParser.parseInt(args[2]);
+                            final int y = expressionParser.parseInt(args[3]);
+                            final int w = expressionParser.parseInt(args[4]);
+                            final int h = expressionParser.parseInt(args[5]);
                             final BufferedImage activePicture = getPicture(args[6]);
                             final BufferedImage inactivePicture = getPicture(args[7]);
                             final Font font = definedFonts.lookup(args[8]);
                             final Color inactiveColor = ParseUtils.parseColor(args[9]);
                             final Color activeColor = ParseUtils.parseColor(args[10]);
-                            final int margin = parseInt(args[11]);
+                            final int margin = expressionParser.parseInt(args[11]);
                             final GUICommandList commandList = getCommandList(args[12]);
                             final boolean ignoreUpDown = NumberParser.parseBoolean(args[13]);
                             definedGUIElements.insert(name, new GUITextField(window, name, x, y, w, h, activePicture, inactivePicture, font, inactiveColor, activeColor, margin, "", commandList, ignoreUpDown));
@@ -1795,10 +1794,10 @@ public abstract class JXCSkinLoader implements JXCSkin
                             }
 
                             final String name = args[1];
-                            final int x = parseInt(args[2]);
-                            final int y = parseInt(args[3]);
-                            final int w = parseInt(args[4]);
-                            final int h = parseInt(args[5]);
+                            final int x = expressionParser.parseInt(args[2]);
+                            final int y = expressionParser.parseInt(args[3]);
+                            final int w = expressionParser.parseInt(args[4]);
+                            final int h = expressionParser.parseInt(args[5]);
                             final boolean autoRepeat = NumberParser.parseBoolean(args[6]);
                             final GUICommandList commandList = getCommandList(args[7]);
                             final String text = ParseUtils.parseText(args, 8, lnr);
@@ -1812,10 +1811,10 @@ public abstract class JXCSkinLoader implements JXCSkin
                             }
 
                             final String name = args[1];
-                            final int x = parseInt(args[2]);
-                            final int y = parseInt(args[3]);
-                            final int w = parseInt(args[4]);
-                            final int h = parseInt(args[5]);
+                            final int x = expressionParser.parseInt(args[2]);
+                            final int y = expressionParser.parseInt(args[3]);
+                            final int w = expressionParser.parseInt(args[4]);
+                            final int h = expressionParser.parseInt(args[5]);
                             final BufferedImage picturePositive = getPicture(args[6]);
                             final BufferedImage pictureNegative = args[7].equals("null") ? null : getPicture(args[7]);
                             final BufferedImage pictureEmpty = getPicture(args[8]);
@@ -1924,110 +1923,6 @@ public abstract class JXCSkinLoader implements JXCSkin
                 gui.add(element);
             }
             i++;
-        }
-    }
-
-    /**
-     * Parses an integer constant. Valid constants are "3", "3+4", and
-     * "1+2-3+4".
-     * @param str the integer constant string to parse
-     * @return the integer value
-     * @throws IOException if a parsing error occurs
-     */
-    private int parseInt(final String str) throws IOException
-    {
-        try
-        {
-            return parseIntegerConstant(str);
-        }
-        catch (final NumberFormatException ex)
-        {
-            // ignore
-        }
-
-        Matcher matcher = patternExpr.matcher(str);
-        if (!matcher.matches())
-        {
-            throw new IOException("invalid number: "+str);
-        }
-        int value;
-        try
-        {
-            value = parseIntegerConstant(matcher.group(1));
-            for (;;)
-            {
-                final boolean negative = matcher.group(2).equals("-");
-                final String rest = matcher.group(3);
-
-                matcher = patternExpr.matcher(rest);
-                if (!matcher.matches())
-                {
-                    final int valueRest = Integer.parseInt(rest);
-                    if (negative)
-                    {
-                        value -= valueRest;
-                    }
-                    else
-                    {
-                        value += valueRest;
-                    }
-                    break;
-                }
-
-                final int valueRest = parseIntegerConstant(matcher.group(1));
-                if (negative)
-                {
-                    value -= valueRest;
-                }
-                else
-                {
-                    value += valueRest;
-                }
-            }
-        }
-        catch (final NumberFormatException ex)
-        {
-            throw new IOException("invalid number: "+str);
-        }
-
-        return value;
-    }
-
-    /**
-     * Parses an integer contstant string.
-     * @param str the string
-     * @return the integer value
-     * @throws NumberFormatException if the string cannot be parsed
-     */
-    private int parseIntegerConstant(final String str)
-    {
-        try
-        {
-            return Integer.parseInt(str);
-        }
-        catch (final NumberFormatException ex)
-        {
-            if (str.equals("WIDTH"))
-            {
-                return selectedResolution.getWidth();
-            }
-
-            if (str.equals("HEIGHT"))
-            {
-                return selectedResolution.getHeight();
-            }
-
-            if (str.equals("WIDTH/2"))
-            {
-                return selectedResolution.getWidth()/2;
-            }
-
-            if (str.equals("HEIGHT/2"))
-            {
-                return selectedResolution.getHeight()/2;
-            }
-
-            throw ex;
         }
     }
 
@@ -2240,8 +2135,8 @@ public abstract class JXCSkinLoader implements JXCSkin
                 throw new IOException("syntax error");
             }
 
-            final int diffLines = parseInt(args[argc]);
-            final int diffElements = parseInt(args[argc+1]);
+            final int diffLines = expressionParser.parseInt(args[argc]);
+            final int diffElements = expressionParser.parseInt(args[argc+1]);
             if (diffLines == 0 && diffElements == 0)
             {
                 throw new IOException("Invalid zero scroll distance");
@@ -2261,7 +2156,7 @@ public abstract class JXCSkinLoader implements JXCSkin
                 throw new IOException("syntax error");
             }
 
-            final int distance = parseInt(args[argc]);
+            final int distance = expressionParser.parseInt(args[argc]);
             if (distance == 0)
             {
                 throw new IOException("Invalid zero scroll distance");
@@ -2281,7 +2176,7 @@ public abstract class JXCSkinLoader implements JXCSkin
                 throw new IOException("syntax error");
             }
 
-            final int distance = parseInt(args[argc]);
+            final int distance = expressionParser.parseInt(args[argc]);
             if (distance == 0)
             {
                 throw new IOException("Invalid zero scroll distance");
