@@ -157,6 +157,18 @@ public interface CrossfireServerConnection extends ServerConnection
     void addCrossfireExpTableListener(CrossfireExpTableListener crossfireExpTableListener);
 
     /**
+     * Adds a listener to be notified about received packets.
+     * @param listener the listener to add
+     */
+    void addPacketWatcherListener(ReceivedPacketListener listener);
+
+    /**
+     * Removes a listener to be notified about received packets.
+     * @param listener the listener to add
+     */
+    void removePacketWatcherListener(ReceivedPacketListener listener);
+
+    /**
      * Pretends that a drawinfo message has been received.
      * @param message the message
      * @param color the color
