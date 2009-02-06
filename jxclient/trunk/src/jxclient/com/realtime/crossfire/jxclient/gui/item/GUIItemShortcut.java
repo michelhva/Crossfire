@@ -68,6 +68,7 @@ public class GUIItemShortcut extends GUIItem
     private final ShortcutsListener shortcutsListener = new ShortcutsListener()
     {
         /** {@inheritDoc} */
+        @Override
         public void shortcutAdded(final int index, final Shortcut shortcut)
         {
             if (index == GUIItemShortcut.this.index)
@@ -78,6 +79,7 @@ public class GUIItemShortcut extends GUIItem
         }
 
         /** {@inheritDoc} */
+        @Override
         public void shortcutRemoved(final int index, final Shortcut shortcut)
         {
             if (index == GUIItemShortcut.this.index)
@@ -91,6 +93,7 @@ public class GUIItemShortcut extends GUIItem
     private final ShortcutListener shortcutListener = new ShortcutListener()
     {
         /** {@inheritDoc} */
+        @Override
         public void shortcutModified()
         {
             setChanged();
@@ -183,17 +186,20 @@ public class GUIItemShortcut extends GUIItem
     }
 
     /** {@inheritDoc} */
+    @Override
     public boolean canScroll(final int distance)
     {
         return false;
     }
 
     /** {@inheritDoc} */
+    @Override
     public void scroll(final int distance)
     {
     }
 
     /** {@inheritDoc} */
+    @Override
     public void resetScroll()
     {
     }

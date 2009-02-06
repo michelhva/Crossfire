@@ -227,6 +227,7 @@ public abstract class GUIText extends ActivatableGUIElement implements KeyListen
         setChanged();
     }
 
+    @Override
     public boolean keyPressed(final KeyEvent e)
     {
         switch (e.getKeyCode())
@@ -339,12 +340,14 @@ public abstract class GUIText extends ActivatableGUIElement implements KeyListen
     }
 
     /** {@inheritDoc} */
+    @Override
     public boolean keyReleased(final KeyEvent e)
     {
         return false;
     }
 
     /** {@inheritDoc} */
+    @Override
     public boolean keyTyped(final KeyEvent e)
     {
         final char ch = e.getKeyChar();

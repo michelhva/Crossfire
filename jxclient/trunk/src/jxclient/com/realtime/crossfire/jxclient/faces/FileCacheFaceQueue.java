@@ -88,6 +88,7 @@ public class FileCacheFaceQueue extends DefaultFaceQueue
     }
 
     /** {@inheritDoc} */
+    @Override
     public void reset()
     {
         synchronized (sync)
@@ -98,6 +99,7 @@ public class FileCacheFaceQueue extends DefaultFaceQueue
     }
 
     /** {@inheritDoc} */
+    @Override
     public void loadFace(final Face face)
     {
         final boolean doAdd;
@@ -145,6 +147,7 @@ public class FileCacheFaceQueue extends DefaultFaceQueue
         }
 
         /** {@inheritDoc} */
+        @Override
         public void run()
         {
             try
@@ -215,6 +218,7 @@ public class FileCacheFaceQueue extends DefaultFaceQueue
         }
 
         /** {@inheritDoc} */
+        @Override
         public void run()
         {
             imageCacheOriginal.save(face, faceImages.getOriginalImageIcon());

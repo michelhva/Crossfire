@@ -108,6 +108,7 @@ public class JXCSkinCache<T> implements Iterable<T>
      *
      * @return An iterator returning all stored values.
      */
+    @Override
     public Iterator<T> iterator()
     {
         return Collections.unmodifiableCollection(cache.values()).iterator();

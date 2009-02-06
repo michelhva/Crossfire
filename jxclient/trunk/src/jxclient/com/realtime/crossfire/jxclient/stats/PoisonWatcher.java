@@ -74,6 +74,7 @@ public class PoisonWatcher
     private final CrossfireDrawinfoListener drawinfoListener = new CrossfireDrawinfoListener()
     {
         /** {@inheritDoc} */
+        @Override
         public void commandDrawinfoReceived(final CrossfireCommandDrawinfoEvent evt)
         {
             check(evt.getText());
@@ -86,6 +87,7 @@ public class PoisonWatcher
     private final CrossfireDrawextinfoListener drawextinfoListener = new CrossfireDrawextinfoListener()
     {
         /** {@inheritDoc} */
+        @Override
         public void commandDrawextinfoReceived(final CrossfireCommandDrawextinfoEvent evt)
         {
             check(evt.getMessage());
@@ -99,6 +101,7 @@ public class PoisonWatcher
     private final TimeoutEvent timeoutEvent = new TimeoutEvent()
     {
         /** {@inheritDoc} */
+        @Override
         public void timeout()
         {
             setActive(false);

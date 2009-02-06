@@ -82,6 +82,7 @@ public interface JXCSkin extends Iterable<Gui>
      *
      * @return An iterator returning all gui instances.
      */
+    @Override
     Iterator<Gui> iterator();
 
     /**

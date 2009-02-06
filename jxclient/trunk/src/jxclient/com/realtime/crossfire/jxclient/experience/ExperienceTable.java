@@ -53,6 +53,7 @@ public class ExperienceTable
     private final CrossfireExpTableListener crossfireExpTableListener = new CrossfireExpTableListener()
     {
         /** {@inheritDoc} */
+        @Override
         public void expTableReceived(final long[] expTable)
         {
             clear();

@@ -66,6 +66,7 @@ public class RenderStateManager
     private final BufferListener bufferListener = new BufferListener()
     {
         /** {@inheritDoc} */
+        @Override
         public void linesAdded(final int lines)
         {
             renderState.linesAdded(buffer, lines);
@@ -73,6 +74,7 @@ public class RenderStateManager
         }
 
         /** {@inheritDoc} */
+        @Override
         public void linesReplaced(final int lines)
         {
             renderState.linesReplaced(buffer, lines);
@@ -80,6 +82,7 @@ public class RenderStateManager
         }
 
         /** {@inheritDoc} */
+        @Override
         public void linesRemoved(final List<Line> lines)
         {
             renderState.linesRemoved(buffer, lines);

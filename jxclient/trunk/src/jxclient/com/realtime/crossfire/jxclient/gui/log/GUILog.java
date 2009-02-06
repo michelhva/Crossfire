@@ -76,6 +76,7 @@ public abstract class GUILog extends GUIElement implements GUIScrollable2
     private final RenderStateListener renderStateListener = new RenderStateListener()
     {
         /** {@inheritDoc} */
+        @Override
         public void stateChanged()
         {
             setChanged();
@@ -86,6 +87,7 @@ public abstract class GUILog extends GUIElement implements GUIScrollable2
         }
 
         /** {@inheritDoc} */
+        @Override
         public int getHeight()
         {
             return GUILog.super.getHeight();
@@ -188,6 +190,7 @@ public abstract class GUILog extends GUIElement implements GUIScrollable2
     }
 
     /** {@inheritDoc} */
+    @Override
     public boolean canScroll(final int distance) // XXX: implement |distance|>1
     {
         if (distance < 0)
@@ -205,6 +208,7 @@ public abstract class GUILog extends GUIElement implements GUIScrollable2
     }
 
     /** {@inheritDoc} */
+    @Override
     public void scroll(final int distance)
     {
         if (distance < 0)
@@ -222,24 +226,28 @@ public abstract class GUILog extends GUIElement implements GUIScrollable2
     }
 
     /** {@inheritDoc} */
+    @Override
     public void resetScroll()
     {
         renderStateManager.resetScroll();
     }
 
     /** {@inheritDoc} */
+    @Override
     public void scrollTo(final int pos)
     {
         renderStateManager.scrollTo(pos);
     }
 
     /** {@inheritDoc} */
+    @Override
     public void addScrollableListener(final ScrollableListener listener)
     {
         listeners.add(listener);
     }
 
     /** {@inheritDoc} */
+    @Override
     public void removeScrollableListener(final ScrollableListener listener)
     {
         listeners.remove(listener);

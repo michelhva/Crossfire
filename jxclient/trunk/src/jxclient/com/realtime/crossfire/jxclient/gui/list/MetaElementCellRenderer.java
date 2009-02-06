@@ -55,6 +55,7 @@ public class MetaElementCellRenderer extends JPanel implements ListCellRenderer
     }
 
     /** {@inheritDoc} */
+    @Override
     public Component getListCellRendererComponent(final JList list, final Object value, final int index, final boolean isSelected, final boolean cellHasFocus)
     {
         template.setIndex(((GUIMetaElement)value).getIndex());

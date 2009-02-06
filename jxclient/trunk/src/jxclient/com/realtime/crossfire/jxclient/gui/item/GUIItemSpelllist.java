@@ -81,6 +81,7 @@ public class GUIItemSpelllist extends GUIItem
     private final SpellsManagerListener spellsManagerListener = new SpellsManagerListener()
     {
         /** {@inheritDoc} */
+        @Override
         public void spellAdded(final Spell spell, final int index)
         {
             if (GUIItemSpelllist.this.index >= index)
@@ -90,6 +91,7 @@ public class GUIItemSpelllist extends GUIItem
         }
 
         /** {@inheritDoc} */
+        @Override
         public void spellRemoved(final Spell spell, final int index)
         {
             if (GUIItemSpelllist.this.index >= index)
@@ -99,6 +101,7 @@ public class GUIItemSpelllist extends GUIItem
         }
 
         /** {@inheritDoc} */
+        @Override
         public void spellModified(final Spell spell, final int index)
         {
             if (GUIItemSpelllist.this.index == index)
@@ -114,6 +117,7 @@ public class GUIItemSpelllist extends GUIItem
     private final FacesManagerListener facesManagerListener = new FacesManagerListener()
     {
         /** {@inheritDoc} */
+        @Override
         public void faceUpdated(final Face face)
         {
             if (spell != null && spell.getFaceNum() == face.getFaceNum())
@@ -138,6 +142,7 @@ public class GUIItemSpelllist extends GUIItem
     }
 
     /** {@inheritDoc} */
+    @Override
     public boolean canScroll(final int distance)
     {
         if (distance < 0)
@@ -156,6 +161,7 @@ public class GUIItemSpelllist extends GUIItem
     }
 
     /* {@inheritDoc} */
+    @Override
     public void scroll(final int distance)
     {
         setIndex(index+distance);
@@ -163,6 +169,7 @@ public class GUIItemSpelllist extends GUIItem
     }
 
     /* {@inheritDoc} */
+    @Override
     public void resetScroll()
     {
         setIndex(defaultIndex);

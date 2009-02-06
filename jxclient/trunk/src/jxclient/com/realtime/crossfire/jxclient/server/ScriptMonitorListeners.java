@@ -35,6 +35,7 @@ public class ScriptMonitorListeners implements CrossfireScriptMonitorListener
     private final List<CrossfireScriptMonitorListener> scriptMonitorListeners = new ArrayList<CrossfireScriptMonitorListener>();
 
     /** {@inheritDoc} */
+    @Override
     public void commandSent(final byte[] packet, final int length)
     {
         for (final CrossfireScriptMonitorListener listener : scriptMonitorListeners)

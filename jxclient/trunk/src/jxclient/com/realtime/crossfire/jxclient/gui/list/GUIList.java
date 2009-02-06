@@ -85,6 +85,7 @@ public abstract class GUIList extends ActivatableGUIElement
     private final ListSelectionListener listSelectionListener = new ListSelectionListener()
     {
         /** {@inheritDoc} */
+        @Override
         public void valueChanged(final ListSelectionEvent e)
         {
             selectionChanged();

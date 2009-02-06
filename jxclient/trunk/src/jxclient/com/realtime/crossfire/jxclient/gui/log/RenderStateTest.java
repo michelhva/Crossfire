@@ -214,18 +214,21 @@ public class RenderStateTest extends TestCase
         buffer.addBufferListener(new BufferListener()
             {
                 /** {@inheritDoc} */
+                @Override
                 public void linesAdded(final int lines)
                 {
                     rs.linesAdded(buffer, lines);
                 }
 
                 /** {@inheritDoc} */
+                @Override
                 public void linesReplaced(final int lines)
                 {
                     rs.linesReplaced(buffer, lines);
                 }
 
                 /** {@inheritDoc} */
+                @Override
                 public void linesRemoved(final List<Line> lines)
                 {
                     rs.linesRemoved(buffer, lines);

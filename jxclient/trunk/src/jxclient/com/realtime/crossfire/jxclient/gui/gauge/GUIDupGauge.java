@@ -163,6 +163,7 @@ public class GUIDupGauge extends GUIElement implements GUIGaugeListener
     }
 
     /** {@inheritDoc} */
+    @Override
     public void setValues(final int curValue, final int minValue, final int maxValue, final String labelText, final String tooltipText)
     {
         if (minValue != 0) throw new IllegalArgumentException();

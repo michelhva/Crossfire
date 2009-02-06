@@ -62,6 +62,7 @@ public class Line implements Iterable<Segment>
     }
 
     /** {@inheritDoc} */
+    @Override
     public Iterator<Segment> iterator()
     {
         return Collections.unmodifiableList(segments).iterator();

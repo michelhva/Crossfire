@@ -412,6 +412,7 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
      * bounds accesses to the array <code>packet</code>; instead, a
      * <code>try...catch</code> clause is used to detect invalid packets.
      */
+    @Override
     public void processPacket(final byte[] packet, final int start, final int end) throws UnknownCommandException
     {
         try

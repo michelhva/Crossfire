@@ -48,12 +48,14 @@ public class UnbindCommand extends AbstractCommand
     }
 
     /** {@inheritDoc} */
+    @Override
     public boolean allArguments()
     {
         return false;
     }
 
     /** {@inheritDoc} */
+    @Override
     public void execute(final String args)
     {
         final String commands;

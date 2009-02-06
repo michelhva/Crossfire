@@ -139,6 +139,7 @@ public class DefaultScriptProcess extends Thread implements ScriptProcess
     private final CrossfireScriptMonitorListener crossfireScriptMonitorListener = new CrossfireScriptMonitorListener()
     {
         /** {@inheritDoc} */
+        @Override
         public void commandSent(final byte[] packet, final int length)
         {
             final String cmd;

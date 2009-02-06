@@ -104,6 +104,7 @@ public class JXClient
                                 SwingUtilities.invokeAndWait(new Runnable()
                                 {
                                     /** {@inheritDoc} */
+                                    @Override
                                     public void run()
                                     {
                                         window.init(options.getResolution(), options.getSkin(), options.isFullScreen(), options.getServer());
@@ -114,6 +115,7 @@ public class JXClient
                             SwingUtilities.invokeAndWait(new Runnable()
                             {
                                 /** {@inheritDoc} */
+                                @Override
                                 public void run()
                                 {
                                     window.term();

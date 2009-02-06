@@ -70,6 +70,7 @@ public class GUIItemInventoryList extends GUIItemList
     private final LocationsListener locationsListener = new LocationsListener()
     {
         /** {@inheritDoc} */
+        @Override
         public void locationsModified(final Collection<Integer> index)
         {
             rebuildList();
@@ -83,6 +84,7 @@ public class GUIItemInventoryList extends GUIItemList
     private final GUIElementChangedListener itemChangedListener = new GUIElementChangedListener()
     {
         /** {@inheritDoc} */
+        @Override
         public void notifyChanged(final GUIElement element)
         {
             element.resetChanged();
@@ -144,6 +146,7 @@ public class GUIItemInventoryList extends GUIItemList
     }
 
     /** {@inheritDoc} */
+    @Override
     protected void selectionChanged(final int selectedIndex)
     {
         if (currentItem != null)
@@ -167,6 +170,7 @@ public class GUIItemInventoryList extends GUIItemList
     }
 
     /** {@inheritDoc} */
+    @Override
     protected void updateTooltip(final int index)
     {
         final List<CfItem> inventory = itemsManager.getInventory();
@@ -175,6 +179,7 @@ public class GUIItemInventoryList extends GUIItemList
     }
 
     /** {@inheritDoc} */
+    @Override
     protected void activeChanged()
     {
     }

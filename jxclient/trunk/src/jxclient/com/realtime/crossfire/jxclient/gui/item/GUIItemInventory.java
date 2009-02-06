@@ -90,6 +90,7 @@ public class GUIItemInventory extends GUIItemItem
     private final LocationListener inventoryLocationListener = new LocationListener()
     {
         /** {@inheritDoc} */
+        @Override
         public void locationModified(final int index, final CfItem item)
         {
             synchronized (sync)
@@ -120,6 +121,7 @@ public class GUIItemInventory extends GUIItemItem
     }
 
     /** {@inheritDoc} */
+    @Override
     public boolean canScroll(final int distance)
     {
         if (distance < 0)
@@ -150,6 +152,7 @@ public class GUIItemInventory extends GUIItemItem
     }
 
     /* {@inheritDoc} */
+    @Override
     public void scroll(final int distance)
     {
         synchronized (sync)
@@ -160,6 +163,7 @@ public class GUIItemInventory extends GUIItemItem
     }
 
     /* {@inheritDoc} */
+    @Override
     public void resetScroll()
     {
         setIndex(defaultIndex);

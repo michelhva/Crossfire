@@ -67,6 +67,7 @@ public class CfMapAnimations
     private final CrossfireTickListener crossfireTickListener = new CrossfireTickListener()
     {
         /** {@inheritDoc} */
+        @Override
         public void tick(final int tickNo)
         {
             CfMapAnimations.this.tick(tickNo);

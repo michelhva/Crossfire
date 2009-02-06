@@ -347,6 +347,7 @@ public abstract class JXCSkinLoader implements JXCSkin
     }
 
     /** {@inheritDoc} */
+    @Override
     public void load(final CrossfireServerConnection crossfireServerConnection, final JXCWindow window, final MouseTracker mouseTracker, final MetaserverModel metaserverModel, final CommandQueue commandQueue, final Resolution resolution, final OptionManager optionManager, final ExperienceTable experienceTable, final Shortcuts shortcuts, final Commands commands, final CurrentSpellManager currentSpellManager) throws JXCSkinException
     {
         if (resolution.isExact())
@@ -442,30 +443,35 @@ public abstract class JXCSkinLoader implements JXCSkin
     }
 
     /** {@inheritDoc} */
+    @Override
     public String getSkinName()
     {
         return skinName+"@"+selectedResolution;
     }
 
     /** {@inheritDoc} */
+    @Override
     public Resolution getResolution()
     {
         return selectedResolution;
     }
 
     /** {@inheritDoc} */
+    @Override
     public int getMapWidth()
     {
         return mapWidth;
     }
 
     /** {@inheritDoc} */
+    @Override
     public int getMapHeight()
     {
         return mapHeight;
     }
 
     /** {@inheritDoc} */
+    @Override
     public int getNumLookObjects()
     {
         return numLookObjects;
@@ -502,18 +508,21 @@ public abstract class JXCSkinLoader implements JXCSkin
     }
 
     /** {@inheritDoc} */
+    @Override
     public Gui getDialogQuit()
     {
         return getDialog("quit");
     }
 
     /** {@inheritDoc} */
+    @Override
     public Gui getDialogDisconnect()
     {
         return getDialog("disconnect");
     }
 
     /** {@inheritDoc} */
+    @Override
     public Gui getDialogKeyBind()
     {
         final Gui result = getDialog("keybind");
@@ -522,6 +531,7 @@ public abstract class JXCSkinLoader implements JXCSkin
     }
 
     /** {@inheritDoc} */
+    @Override
     public Gui getDialogQuery()
     {
         final Gui result = getDialog("query");
@@ -530,6 +540,7 @@ public abstract class JXCSkinLoader implements JXCSkin
     }
 
     /** {@inheritDoc} */
+    @Override
     public Gui getDialogBook(final int booknr)
     {
         final Gui result = getDialog("book");
@@ -538,6 +549,7 @@ public abstract class JXCSkinLoader implements JXCSkin
     }
 
     /** {@inheritDoc} */
+    @Override
     public Gui getMainInterface()
     {
         final Gui result = getDialog("main");
@@ -546,6 +558,7 @@ public abstract class JXCSkinLoader implements JXCSkin
     }
 
     /** {@inheritDoc} */
+    @Override
     public Gui getMetaInterface()
     {
         final Gui result = getDialog("meta");
@@ -554,6 +567,7 @@ public abstract class JXCSkinLoader implements JXCSkin
     }
 
     /** {@inheritDoc} */
+    @Override
     public Gui getStartInterface()
     {
         final Gui result = getDialog("start");
@@ -562,6 +576,7 @@ public abstract class JXCSkinLoader implements JXCSkin
     }
 
     /** {@inheritDoc} */
+    @Override
     public Gui getDialog(final String name)
     {
         try
@@ -1013,12 +1028,14 @@ public abstract class JXCSkinLoader implements JXCSkin
                                 window.addConnectionStateListener(new ConnectionStateListener()
                                     {
                                         /** {@inheritDoc} */
+                                        @Override
                                         public void connect()
                                         {
                                             commandList.execute();
                                         }
 
                                         /** {@inheritDoc} */
+                                        @Override
                                         public void disconnect()
                                         {
                                             // ignore
@@ -1045,6 +1062,7 @@ public abstract class JXCSkinLoader implements JXCSkin
                                 server.addCrossfireMagicmapListener(new CrossfireMagicmapListener()
                                     {
                                         /** {@inheritDoc} */
+                                        @Override
                                         public void commandMagicmapReceived(final CrossfireCommandMagicmapEvent evt)
                                         {
                                             commandList.execute();
@@ -1062,6 +1080,7 @@ public abstract class JXCSkinLoader implements JXCSkin
                                 mapUpdater.addCrossfireMapscrollListener(new MapscrollListener()
                                     {
                                         /** {@inheritDoc} */
+                                        @Override
                                         public void mapScrolled(final int dx, final int dy)
                                         {
                                             commandList.execute();
@@ -1083,18 +1102,21 @@ public abstract class JXCSkinLoader implements JXCSkin
                                     skill.addSkillListener(new SkillListener()
                                         {
                                             /** {@inheritDoc} */
+                                            @Override
                                             public void gainedSkill()
                                             {
                                                 commandList.execute();
                                             }
 
                                             /** {@inheritDoc} */
+                                            @Override
                                             public void lostSkill()
                                             {
                                                 // ignore
                                             }
 
                                             /** {@inheritDoc} */
+                                            @Override
                                             public void changedSkill()
                                             {
                                                 // ignore
@@ -1106,18 +1128,21 @@ public abstract class JXCSkinLoader implements JXCSkin
                                     skill.addSkillListener(new SkillListener()
                                         {
                                             /** {@inheritDoc} */
+                                            @Override
                                             public void gainedSkill()
                                             {
                                                 // ignore
                                             }
 
                                             /** {@inheritDoc} */
+                                            @Override
                                             public void lostSkill()
                                             {
                                                 commandList.execute();
                                             }
 
                                             /** {@inheritDoc} */
+                                            @Override
                                             public void changedSkill()
                                             {
                                                 // ignore
@@ -2681,12 +2706,14 @@ public abstract class JXCSkinLoader implements JXCSkin
     }
 
     /** {@inheritDoc} */
+    @Override
     public Iterator<Gui> iterator()
     {
         return definedDialogs.iterator();
     }
 
     /** {@inheritDoc} */
+    @Override
     public void executeInitEvents()
     {
         for (final GUICommandList commandList : initEvents)
@@ -2696,6 +2723,7 @@ public abstract class JXCSkinLoader implements JXCSkin
     }
 
     /** {@inheritDoc} */
+    @Override
     public GUICommandList getCommandList(final String name) throws JXCSkinException
     {
         return definedCommandLists.lookup(name);
@@ -2755,6 +2783,7 @@ public abstract class JXCSkinLoader implements JXCSkin
     }
 
     /** {@inheritDoc} */
+    @Override
     public boolean hasChangedDialog()
     {
         for (final Gui dialog : definedDialogs)
@@ -2769,6 +2798,7 @@ public abstract class JXCSkinLoader implements JXCSkin
     }
 
     /** {@inheritDoc} */
+    @Override
     public KeyBindings getDefaultKeyBindings()
     {
         return defaultKeyBindings;

@@ -132,6 +132,7 @@ public class GUIMagicMap extends GUIElement
     private final CrossfireMagicmapListener crossfireMagicmapListener = new CrossfireMagicmapListener()
     {
         /** {@inheritDoc} */
+        @Override
         public void commandMagicmapReceived(final CrossfireCommandMagicmapEvent evt)
         {
             int datapos = evt.getPos();
@@ -175,6 +176,7 @@ public class GUIMagicMap extends GUIElement
     private final MapscrollListener mapscrollListener = new MapscrollListener()
     {
         /** {@inheritDoc} */
+        @Override
         public void mapScrolled(final int dx, final int dy)
         {
             synchronized (bufferedImageSync)
@@ -228,6 +230,7 @@ public class GUIMagicMap extends GUIElement
     private final MapListener mapListener = new MapListener()
     {
         /** {@inheritDoc} */
+        @Override
         public void mapChanged(final CfMap map, final Set<CfMapSquare> changedSquares)
         {
             final int x0 = map.getOffsetX();
@@ -261,6 +264,7 @@ public class GUIMagicMap extends GUIElement
     private final NewmapListener newmapListener = new NewmapListener()
     {
         /** {@inheritDoc} */
+        @Override
         public void commandNewmapReceived()
         {
             synchronized (bufferedImageSync)
@@ -290,6 +294,7 @@ public class GUIMagicMap extends GUIElement
     private final MapSizeListener mapSizeListener = new MapSizeListener()
     {
         /** {@inheritDoc} */
+        @Override
         public void mapSizeChanged(final int mapWidth, final int mapHeight)
         {
             GUIMagicMap.this.mapWidth = mapWidth;
