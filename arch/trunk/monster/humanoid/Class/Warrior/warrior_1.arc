@@ -3,7 +3,7 @@ name warrior
 race human
 randomitems warrior_1
 face warrior.171
-animation warrior
+animation warrior_1
 sp 5
 maxsp 5
 Pow 1

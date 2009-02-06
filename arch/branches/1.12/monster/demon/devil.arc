@@ -4,10 +4,7 @@ race demon
 randomitems devil
 face devil.111
 magicmap red
-anim
-devil.111
-devil.112
-mina
+animation devil
 monster 1
 move_type walk
 sleep 1

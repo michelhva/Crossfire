@@ -4,11 +4,7 @@ name lightning para-elemental
 face para_light.111
 randomitems para_elemental
 magicmap yellow
-anim
-para_light.111
-para_light.112
-para_light.113
-mina
+animation para_lightning
 monster 1
 move_type walk fly_low
 alive 1
