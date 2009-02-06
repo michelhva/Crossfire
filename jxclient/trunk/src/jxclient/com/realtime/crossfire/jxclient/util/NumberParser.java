@@ -19,6 +19,8 @@
 //
 package com.realtime.crossfire.jxclient.util;
 
+import java.io.IOException;
+
 /**
  * Utitlity class for parsing strings into numbers.
  * @author Andreas Kirschbaum
@@ -88,6 +90,63 @@ public class NumberParser
         {
             System.err.println("Warning: invalid value "+string+", using "+defaultValue+" instead.");
             return defaultValue;
+        }
+    }
+
+    /**
+     * Parses a float constant.
+     * @param str the floating constant string to parse
+     * @return the floating value
+     * @throws IOException if a parsing error occurs
+     */
+    public static float parseFloat(final String str) throws IOException
+    {
+        try
+        {
+            return Float.parseFloat(str);
+        }
+        catch (final NumberFormatException ex)
+        {
+            throw new IOException("invalid number: "+str);
+        }
+    }
+
+    /**
+     * Parses a boolean constant.
+     * @param str the boolean constant string to parse
+     * @return the boolean value
+     * @throws IOException if a parsing error occurs
+     */
+    public static boolean parseBoolean(final String str) throws IOException
+    {
+        try
+        {
+            return Boolean.parseBoolean(str);
+        }
+        catch (final NumberFormatException ex)
+        {
+            throw new IOException("invalid boolean: "+str);
+        }
+    }
+
+    /**
+     * Parses an enum constant.
+     * @param class_ the enum class the enum constant belongs to
+     * @param name the enum constant to parse
+     * @param ident the description of the enum class for building error
+     * messages
+     * @return the enum constant
+     * @throws IOException if the enum constant does not exist
+     */
+    public static <T extends Enum<T>> T parseEnum(final Class<T> class_, final String name, final String ident) throws IOException
+    {
+        try
+        {
+            return Enum.valueOf(class_, name);
+        }
+        catch (final IllegalArgumentException ex)
+        {
+            throw new IOException("no such "+ident+" type: "+name);
         }
     }
 }
