@@ -195,7 +195,7 @@ public abstract class JXCSkinLoader implements JXCSkin
     /**
      * All defined dialogs.
      */
-    private final JXCSkinCache<Gui> definedDialogs = new JXCSkinCache<Gui>("dialog");
+    private final Dialogs dialogs = new Dialogs();
 
     /**
      * All defined fonts.
@@ -246,11 +246,6 @@ public abstract class JXCSkinLoader implements JXCSkin
      * The checkbox factory. Set to <code>null</code> until defined.
      */
     private CheckBoxFactory checkBoxFactory = null;
-
-    /**
-     * Names of pending skin files.
-     */
-    private final Set<String> dialogsToLoad = new HashSet<String>();
 
     /**
      * All "event init" commands in execution order.
@@ -399,16 +394,16 @@ public abstract class JXCSkinLoader implements JXCSkin
         mapWidth = 0;
         mapHeight = 0;
         numLookObjects = DEFAULT_NUM_LOOK_OBJECTS;
-        definedDialogs.clear();
+        dialogs.clear();
         definedImages.clear();
-        addDialog("keybind", window, mouseTracker, commands);
-        addDialog("query", window, mouseTracker, commands);
-        addDialog("book", window, mouseTracker, commands);
-        addDialog("main", window, mouseTracker, commands);
-        addDialog("meta", window, mouseTracker, commands);
-        addDialog("quit", window, mouseTracker, commands);
-        addDialog("disconnect", window, mouseTracker, commands);
-        addDialog("start", window, mouseTracker, commands);
+        dialogs.addDialog("keybind", window, mouseTracker, commands);
+        dialogs.addDialog("query", window, mouseTracker, commands);
+        dialogs.addDialog("book", window, mouseTracker, commands);
+        dialogs.addDialog("main", window, mouseTracker, commands);
+        dialogs.addDialog("meta", window, mouseTracker, commands);
+        dialogs.addDialog("quit", window, mouseTracker, commands);
+        dialogs.addDialog("disconnect", window, mouseTracker, commands);
+        dialogs.addDialog("start", window, mouseTracker, commands);
         definedCommandLists.clear();
         definedFonts.clear();
         textButtonFactory = null;
@@ -417,12 +412,14 @@ public abstract class JXCSkinLoader implements JXCSkin
         try
         {
             load("global", selectedResolution, crossfireServerConnection, window, mouseTracker, metaserverModel, commandQueue, null, optionManager, experienceTable, shortcuts, commands, currentSpellManager);
-            while (!dialogsToLoad.isEmpty())
+            for (;;)
             {
-                final Iterator<String> it = dialogsToLoad.iterator();
-                final String name = it.next();
-                it.remove();
-                final Gui gui = definedDialogs.lookup(name);
+                final String name = dialogs.getDialogToLoad();
+                if (name == null)
+                {
+                    break;
+                }
+                final Gui gui = dialogs.lookup(name);
                 load(name, selectedResolution, crossfireServerConnection, window, mouseTracker, metaserverModel, commandQueue, gui, optionManager, experienceTable, shortcuts, commands, currentSpellManager);
                 gui.setStateChanged(false);
             }
@@ -475,36 +472,6 @@ public abstract class JXCSkinLoader implements JXCSkin
     public int getNumLookObjects()
     {
         return numLookObjects;
-    }
-
-    /**
-     * Creates a new dialog instance.
-     * @param name the dialog's name
-     * @param window the window to attach to
-     * @param mouseTracker the mouse tracker to attach
-     * @param commands the commands instance to use
-     * @return the new dialog instance
-     */
-    private Gui addDialog(final String name, final JXCWindow window, final MouseTracker mouseTracker, final Commands commands)
-    {
-        try
-        {
-            return definedDialogs.lookup(name);
-        }
-        catch (final JXCSkinException ex)
-        {
-            final Gui gui = new Gui(window, mouseTracker, commands);
-            try
-            {
-                definedDialogs.insert(name, gui);
-            }
-            catch (final JXCSkinException ex2)
-            {
-                throw new AssertionError();
-            }
-            dialogsToLoad.add(name);
-            return gui;
-        }
     }
 
     /** {@inheritDoc} */
@@ -581,7 +548,7 @@ public abstract class JXCSkinLoader implements JXCSkin
     {
         try
         {
-            return definedDialogs.lookup(name);
+            return dialogs.lookup(name);
         }
         catch (final JXCSkinException ex)
         {
@@ -2082,7 +2049,7 @@ public abstract class JXCSkinLoader implements JXCSkin
                 throw new IOException("syntax error");
             }
 
-            return new DialogOpenCommand(window, addDialog(args[argc], window, mouseTracker, commands));
+            return new DialogOpenCommand(window, dialogs.addDialog(args[argc], window, mouseTracker, commands));
         }
         else if (command.equals("DIALOG_TOGGLE"))
         {
@@ -2091,7 +2058,7 @@ public abstract class JXCSkinLoader implements JXCSkin
                 throw new IOException("syntax error");
             }
 
-            return new DialogToggleCommand(window, addDialog(args[argc], window, mouseTracker, commands));
+            return new DialogToggleCommand(window, dialogs.addDialog(args[argc], window, mouseTracker, commands));
         }
         else if (command.equals("DIALOG_CLOSE"))
         {
@@ -2100,7 +2067,7 @@ public abstract class JXCSkinLoader implements JXCSkin
                 throw new IOException("syntax error");
             }
 
-            return new DialogCloseCommand(window, addDialog(args[argc], window, mouseTracker, commands));
+            return new DialogCloseCommand(window, dialogs.addDialog(args[argc], window, mouseTracker, commands));
         }
         else if (command.equals("GUI_EXECUTE_COMMAND"))
         {
@@ -2359,7 +2326,7 @@ public abstract class JXCSkinLoader implements JXCSkin
     @Override
     public Iterator<Gui> iterator()
     {
-        return definedDialogs.iterator();
+        return dialogs.iterator();
     }
 
     /** {@inheritDoc} */
@@ -2383,7 +2350,7 @@ public abstract class JXCSkinLoader implements JXCSkin
     @Override
     public boolean hasChangedDialog()
     {
-        for (final Gui dialog : definedDialogs)
+        for (final Gui dialog : dialogs)
         {
             if (dialog.isChangedFromDefault())
             {
