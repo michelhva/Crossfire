@@ -102,7 +102,14 @@ public class Dialogs implements Iterable<Gui>
     public String getDialogToLoad()
     {
         final Iterator<String> it = dialogsToLoad.iterator();
-        return it.hasNext() ? it.next() : null;
+        if (!it.hasNext())
+        {
+            return null;
+        }
+
+        final String result = it.next();
+        it.remove();
+        return result;
     }
 
     /** {@inheritDoc} */
