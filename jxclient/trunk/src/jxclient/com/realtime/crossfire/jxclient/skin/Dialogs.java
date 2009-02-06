@@ -118,4 +118,21 @@ public class Dialogs implements Iterable<Gui>
     {
         return dialogs.iterator();
     }
+
+    /**
+     * Returns whether the dialog state should be saved.
+     * @return whether the dialog state should be saved
+     */
+    public boolean hasChangedDialog()
+    {
+        for (final Gui dialog : dialogs)
+        {
+            if (dialog.isChangedFromDefault())
+            {
+                return true;
+            }
+        }
+
+        return false;
+    }
 }

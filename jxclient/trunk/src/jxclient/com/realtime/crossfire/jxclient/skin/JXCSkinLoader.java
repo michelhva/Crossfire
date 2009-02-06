@@ -2387,15 +2387,7 @@ public abstract class JXCSkinLoader implements JXCSkin
     @Override
     public boolean hasChangedDialog()
     {
-        for (final Gui dialog : dialogs)
-        {
-            if (dialog.isChangedFromDefault())
-            {
-                return true;
-            }
-        }
-
-        return false;
+        return dialogs.hasChangedDialog();
     }
 
     /** {@inheritDoc} */
