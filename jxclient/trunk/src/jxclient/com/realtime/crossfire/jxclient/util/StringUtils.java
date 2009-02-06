@@ -20,6 +20,9 @@
 package com.realtime.crossfire.jxclient.util;
 
 import java.util.regex.Pattern;
+import java.util.List;
+import java.util.ArrayList;
+import com.realtime.crossfire.jxclient.skin.JXCSkinException;
 
 /**
  * Utility class for string manipulation.
@@ -47,5 +50,58 @@ public class StringUtils
     public static String trimLeading(final String str)
     {
         return patternLeadingWhitespace.matcher(str).replaceAll("");
+    }
+
+    /**
+     * Splits a line into tokens. Handles quoting ("...").
+     * @param line the line
+     * @return the tokens
+     * @throws JXCSkinException if the skin cannot be loaded
+     */
+    public static String[] splitFields(final String line) throws JXCSkinException
+    {
+        final List<String> tokens = new ArrayList<String>(64);
+
+        final char[] chars = line.toCharArray();
+
+        int i = 0;
+        while (i < chars.length)
+        {
+            while (i < chars.length && (chars[i] == ' ' || chars[i] == '\t'))
+            {
+                i++;
+            }
+            final int start;
+            final int end;
+            if (i < chars.length && (chars[i] == '"' || chars[i] == '\''))
+            {
+                // quoted token
+                final char quoteChar = chars[i++];
+                start = i;
+                while (i < chars.length && chars[i] != quoteChar)
+                {
+                    i++;
+                }
+                if (i >= chars.length)
+                {
+                    throw new JXCSkinException("unterminated token: "+line.substring(start-1));
+                }
+                end = i;
+                i++;
+            }
+            else
+            {
+                // unquoted token
+                start = i;
+                while (i < chars.length && (chars[i] != ' ' && chars[i] != '\t'))
+                {
+                    i++;
+                }
+                end = i;
+            }
+            tokens.add(line.substring(start, end));
+        }
+
+        return tokens.toArray(new String[tokens.size()]);
     }
 }

@@ -122,6 +122,7 @@ import com.realtime.crossfire.jxclient.window.GUICommandList;
 import com.realtime.crossfire.jxclient.window.JXCWindow;
 import com.realtime.crossfire.jxclient.window.JXCWindowRenderer;
 import com.realtime.crossfire.jxclient.window.MouseTracker;
+import com.realtime.crossfire.jxclient.util.StringUtils;
 import java.awt.Color;
 import java.awt.Font;
 import java.awt.FontFormatException;
@@ -706,7 +707,7 @@ public abstract class JXCSkinLoader implements JXCSkin
                             continue;
                         }
 
-                        final String[] args = split(line);
+                        final String[] args = StringUtils.splitFields(line);
                         if (gui != null && args[0].equals("add"))
                         {
                             if (args.length != 2)
@@ -2727,59 +2728,6 @@ public abstract class JXCSkinLoader implements JXCSkin
     public GUICommandList getCommandList(final String name) throws JXCSkinException
     {
         return definedCommandLists.lookup(name);
-    }
-
-    /**
-     * Splits a line into tokens. Handles quoting ("...").
-     * @param line the line
-     * @return the tokens
-     * @throws JXCSkinException if the skin cannot be loaded
-     */
-    private static String[] split(final String line) throws JXCSkinException
-    {
-        final List<String> tokens = new ArrayList<String>(64);
-
-        final char[] chars = line.toCharArray();
-
-        int i = 0;
-        while (i < chars.length)
-        {
-            while (i < chars.length && (chars[i] == ' ' || chars[i] == '\t'))
-            {
-                i++;
-            }
-            final int start;
-            final int end;
-            if (i < chars.length && (chars[i] == '"' || chars[i] == '\''))
-            {
-                // quoted token
-                final char quoteChar = chars[i++];
-                start = i;
-                while (i < chars.length && chars[i] != quoteChar)
-                {
-                    i++;
-                }
-                if (i >= chars.length)
-                {
-                    throw new JXCSkinException("unterminated token: "+line.substring(start-1));
-                }
-                end = i;
-                i++;
-            }
-            else
-            {
-                // unquoted token
-                start = i;
-                while (i < chars.length && (chars[i] != ' ' && chars[i] != '\t'))
-                {
-                    i++;
-                }
-                end = i;
-            }
-            tokens.add(line.substring(start, end));
-        }
-
-        return tokens.toArray(new String[tokens.size()]);
     }
 
     /** {@inheritDoc} */
