@@ -22,6 +22,7 @@ package com.realtime.crossfire.jxclient.window;
 import com.realtime.crossfire.jxclient.gui.Gui;
 import com.realtime.crossfire.jxclient.settings.Filenames;
 import com.realtime.crossfire.jxclient.skin.JXCSkin;
+import com.realtime.crossfire.jxclient.skin.JXCSkinException;
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
 import java.io.File;
@@ -131,8 +132,12 @@ public class DialogStateParser
                                 throw new IOException("syntax error: "+line);
                             }
 
-                            final Gui dialog = skin.getDialog(tmp[1]);
-                            if (dialog == null)
+                            final Gui dialog;
+                            try
+                            {
+                                dialog = skin.getDialog(tmp[1]);
+                            }
+                            catch (final JXCSkinException ex)
                             {
                                 throw new IOException("no such dialog: "+tmp[1]);
                             }

@@ -101,16 +101,14 @@ public interface JXCSkin extends Iterable<Gui>
     /**
      * Returns the "really quit?" dialog. It is opened when the user presses
      * ESCAPE.
-     * @return the dialog or <code>null</code> if the skin does not define this
-     * dialog
+     * @return the dialog or <code>null</code> if the dialog does not exist
      */
     Gui getDialogQuit();
 
     /**
      * Returns the "disconnect from server?" dialog. It is opened when the user
      * presses ESCAPE.
-     * @return the dialog or <code>null</code> if the skin does not define this
-     * dialog
+     * @return the dialog or <code>null</code> if the dialog does not exist
      */
     Gui getDialogDisconnect();
 
@@ -154,9 +152,10 @@ public interface JXCSkin extends Iterable<Gui>
     /**
      * Returns a dialog by name.
      * @param name the dialog's name
-     * @return the dialog or <code>null</code> if the dialog does not exist
+     * @return the dialog
+     * @throws JXCSkinException if the dialog does not exist
      */
-    Gui getDialog(final String name);
+    Gui getDialog(final String name) throws JXCSkinException;
 
     /**
      * Executes the "event init" commands.
