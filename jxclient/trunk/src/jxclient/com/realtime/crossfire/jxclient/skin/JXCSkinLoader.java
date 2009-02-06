@@ -101,7 +101,6 @@ import com.realtime.crossfire.jxclient.window.JXCWindowRenderer;
 import com.realtime.crossfire.jxclient.window.MouseTracker;
 import java.awt.Color;
 import java.awt.Font;
-import java.awt.FontFormatException;
 import java.awt.image.BufferedImage;
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -241,6 +240,11 @@ public abstract class JXCSkinLoader implements JXCSkin
      * The {@link ImageParser} for parsing image specifications.
      */
     private final ImageParser imageParser = new ImageParser(this);
+
+    /**
+     * The {@link FontParser} for parsing font specifications.
+     */
+    private final FontParser fontParser = new FontParser(this);
 
     /**
      * Creates a new instance.
@@ -1152,7 +1156,7 @@ public abstract class JXCSkinLoader implements JXCSkin
                             }
 
                             final String name = args[1];
-                            final Font fontNormal = getFont(args[2]);
+                            final Font fontNormal = fontParser.getFont(args[2]);
                             final Font font = fontNormal.deriveFont(NumberParser.parseFloat(args[3]));
                             definedFonts.insert(name, font);
                         }
@@ -1940,43 +1944,6 @@ public abstract class JXCSkinLoader implements JXCSkin
         }
 
         throw new IOException("invalid stat name: "+name);
-    }
-
-    /**
-     * Returns a font by font file base name.
-     * @param name the file base name of the font file to load
-     * @return the font
-     * @throws IOException if the font cannot be loaded
-     */
-    private Font getFont(final String name) throws IOException
-    {
-        final String filename = "fonts/"+name+".ttf";
-
-        final Font font;
-        try
-        {
-            final InputStream ttf = getInputStream(filename);
-            try
-            {
-                try
-                {
-                    font = Font.createFont(Font.TRUETYPE_FONT, ttf);
-                }
-                catch (final FontFormatException ex)
-                {
-                    throw new IOException(filename+": invalid font format: "+ex.getMessage());
-                }
-            }
-            finally
-            {
-                ttf.close();
-            }
-        }
-        catch (final IOException ex)
-        {
-            throw new IOException(getURI(filename)+": i/o error: "+ex.getMessage());
-        }
-        return font;
     }
 
     /**
