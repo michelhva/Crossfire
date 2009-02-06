@@ -2,12 +2,7 @@ Object grimreaper
 race undead
 randomitems ring
 face grimreaper.111
-anim
-grimreaper.111
-grimreaper.112
-grimreaper.113
-grimreaper.114
-mina
+animation grimreaper
 hp 50
 maxhp 50
 Con 1

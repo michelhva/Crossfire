@@ -2,13 +2,7 @@ Object war_ant
 face war_ant.131
 name Warrior Ant
 race insect
-anim
-facings 2
-war_ant.131
-war_ant.132
-war_ant.171
-war_ant.172
-mina
+animation war_ant
 magicmap red
 monster 1
 move_type walk

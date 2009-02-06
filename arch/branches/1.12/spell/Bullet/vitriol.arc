@@ -23,10 +23,7 @@ other_arch vitriol_pool
 type 102
 subtype 7
 face v_splash.111
-anim
-v_splash.111
-v_splash.112
-mina
+animation vitriol_splash
 is_turnable 1
 move_on walk fly_low
 glow_radius 2
