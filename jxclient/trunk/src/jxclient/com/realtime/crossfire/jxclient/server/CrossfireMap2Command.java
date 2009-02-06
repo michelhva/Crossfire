@@ -29,6 +29,7 @@ public class CrossfireMap2Command
      * The total number of map layers to display.
      */
     public static final int NUM_LAYERS = 10;
+
     /**
      * Offset for coordinate values in map2 command.
      */
