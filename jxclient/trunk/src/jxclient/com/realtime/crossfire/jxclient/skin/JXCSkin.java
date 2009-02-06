@@ -19,19 +19,9 @@
 //
 package com.realtime.crossfire.jxclient.skin;
 
-import com.realtime.crossfire.jxclient.commands.Commands;
-import com.realtime.crossfire.jxclient.experience.ExperienceTable;
 import com.realtime.crossfire.jxclient.gui.Gui;
 import com.realtime.crossfire.jxclient.gui.keybindings.KeyBindings;
-import com.realtime.crossfire.jxclient.metaserver.MetaserverModel;
-import com.realtime.crossfire.jxclient.server.CommandQueue;
-import com.realtime.crossfire.jxclient.server.CrossfireServerConnection;
-import com.realtime.crossfire.jxclient.settings.options.OptionManager;
-import com.realtime.crossfire.jxclient.shortcuts.Shortcuts;
-import com.realtime.crossfire.jxclient.spells.CurrentSpellManager;
 import com.realtime.crossfire.jxclient.window.GUICommandList;
-import com.realtime.crossfire.jxclient.window.JXCWindow;
-import com.realtime.crossfire.jxclient.window.MouseTracker;
 import java.util.Iterator;
 
 /**
@@ -42,24 +32,6 @@ import java.util.Iterator;
  */
 public interface JXCSkin extends Iterable<Gui>
 {
-    /**
-     * Loads the skin from its external representation.
-     * @param skinSource the source to load from
-     * @param crossfireServerConnection the server connection to attach to
-     * @param window the window to use
-     * @param mouseTracker the mouse tracker to use
-     * @param metaserverModel the metaserver mode to use
-     * @param commandQueue the command queue to use
-     * @param resolution the preferred screen resolution
-     * @param optionManager the option manager to use
-     * @param experienceTable the experience table to use
-     * @param shortcuts the shortcuts to use
-     * @param commands the commands instance to use
-     * @param currentSpellManager the current spell manager to use
-     * @throws JXCSkinException if the skin cannot be loaded
-     */
-    void load(JXCSkinSource skinSource, CrossfireServerConnection crossfireServerConnection, JXCWindow window, MouseTracker mouseTracker, MetaserverModel metaserverModel, CommandQueue commandQueue, Resolution resolution, OptionManager optionManager, ExperienceTable experienceTable, Shortcuts shortcuts, Commands commands, CurrentSpellManager currentSpellManager) throws JXCSkinException;
-
     /**
      * Returns a short name for the skin. It is used to construct path or file
      * names.
