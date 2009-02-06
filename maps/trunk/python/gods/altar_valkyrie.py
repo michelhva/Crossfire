@@ -32,6 +32,9 @@ if praying and praying.Title == 'Valkyrie':
     # accept sacrifice
     obj = altar.Above
     while obj:
+        if obj.Unpaid:
+            pl.Write('Valkyrie scorns your stolen sacrifice!')
+            break
         if obj.Type & 0xffff == t.FLESH:
             level_factor = 0
             part_factor = 1
