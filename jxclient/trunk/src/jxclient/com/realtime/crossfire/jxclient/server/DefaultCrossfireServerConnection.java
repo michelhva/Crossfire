@@ -36,6 +36,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Date;
 import java.util.List;
+import java.util.concurrent.CopyOnWriteArrayList;
 import java.util.regex.Pattern;
 
 /**
@@ -145,6 +146,11 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
      * The {@link CrossfireSpellListener}s to be notified.
      */
     private final List<CrossfireSpellListener> crossfireSpellListeners = new ArrayList<CrossfireSpellListener>();
+
+    /**
+     * The {@link ReceivedPacketListener}s to be notified.
+     */
+    private final List<ReceivedPacketListener> receivedPacketListeners = new CopyOnWriteArrayList<ReceivedPacketListener>();
 
     /**
      * The {@link CrossfireExpTableListener}s to be notified.
@@ -382,20 +388,36 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
 
     /** {@inheritDoc} */
     @Override
+    public void addPacketWatcherListener(final ReceivedPacketListener listener)
+    {
+        receivedPacketListeners.add(listener);
+    }
+
+    /** {@inheritDoc} */
+    @Override
+    public void removePacketWatcherListener(final ReceivedPacketListener listener)
+    {
+        receivedPacketListeners.remove(listener);
+    }
+
+    /** {@inheritDoc} */
+    @Override
     public void addCrossfireExpTableListener(final CrossfireExpTableListener crossfireExpTableListener)
     {
         crossfireExpTableListeners.add(crossfireExpTableListener);
     }
 
-    /** {@inheritDoc} */
-    // This function does not avoid index out of bounds accesses to the array
-    // <code>packet</code>; instead, a try...catch clause is used to detect
-    // invalid packets.
+    /** {@inheritDoc}
+     * Processes a received packet. This function does not avoid index out of
+     * bounds accesses to the array <code>packet</code>; instead, a
+     * <code>try...catch</code> clause is used to detect invalid packets.
+     */
     public void processPacket(final byte[] packet, final int start, final int end) throws UnknownCommandException
     {
         try
         {
             int pos = start;
+            final int args;
             switch (packet[pos++])
             {
             case 'a':
@@ -416,12 +438,14 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
                             if (packet[pos++] != 'l') break;
                             if (packet[pos++] != 'e') break;
                             if (packet[pos++] != 'd') break;
+                            args = pos;
                             if (pos != end) break;
                             if (debugProtocol != null)
                             {
                                 debugProtocolWrite("recv addme_failed\n");
                             }
                             // XXX: addme_failed command not implemented
+                            notifyPacketWatcherListenersNodata(packet, start, args, end);
                             return;
 
                         case 's':
@@ -431,12 +455,14 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
                             if (packet[pos++] != 'e') break;
                             if (packet[pos++] != 's') break;
                             if (packet[pos++] != 's') break;
+                            args = pos;
                             if (pos != end) break;
                             if (debugProtocol != null)
                             {
                                 debugProtocolWrite("recv addme_success\n");
                             }
                             // XXX: addme_success command not implemented
+                            notifyPacketWatcherListenersNodata(packet, start, args, end);
                             return;
                         }
                         break;
@@ -447,6 +473,7 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
                         if (packet[pos++] != 'l') break;
                         if (packet[pos++] != 'l') break;
                         if (packet[pos++] != ' ') break;
+                        args = pos;
                         while (pos < end)
                         {
                             final int tag = ((packet[pos++]&0xFF)<<24)|((packet[pos++]&0xFF)<<16)|((packet[pos++]&0xFF)<<8)|(packet[pos++]&0xFF);
@@ -475,6 +502,7 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
                             }
                         }
                         if (pos != end) break;
+                        notifyPacketWatcherListenersMixed(packet, start, args, end);
                         return;
                     }
                     break;
@@ -483,6 +511,7 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
                     if (packet[pos++] != 'i') break;
                     if (packet[pos++] != 'm') break;
                     if (packet[pos++] != ' ') break;
+                    args = pos;
                     {
                         final int num = ((packet[pos++]&0xFF)<<8)|(packet[pos++]&0xFF);
                         final int flags = ((packet[pos++]&0xFF)<<8)|(packet[pos++]&0xFF);
@@ -503,6 +532,7 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
                             listener.addAnimation(num&0x1FFF, flags, faces);
                         }
                     }
+                    notifyPacketWatcherListenersShortArray(packet, start, args, end);
                     return;
                 }
                 break;
@@ -512,6 +542,7 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
                 if (packet[pos++] != 'm') break;
                 if (packet[pos++] != 'c') break;
                 if (packet[pos++] != ' ') break;
+                args = pos;
                 {
                     final int packetNo = ((packet[pos++]&0xFF)<<8)|(packet[pos++]&0xFF);
                     final int time = ((packet[pos++]&0xFF)<<24)|((packet[pos++]&0xFF)<<16)|((packet[pos++]&0xFF)<<8)|(packet[pos++]&0xFF);
@@ -525,6 +556,7 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
                         listener.commandComcReceived(packetNo, time);
                     }
                 }
+                notifyPacketWatcherListenersShortInt(packet, start, args, end);
                 return;
 
             case 'd':
@@ -540,6 +572,7 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
                         case 'n':
                             if (packet[pos++] != 'v') break;
                             if (packet[pos++] != ' ') break;
+                            args = pos;
                             {
                                 int tag = 0;
                                 do
@@ -557,12 +590,14 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
                                     crossfireUpdateItemListener.delinvReceived(tag);
                                 }
                             }
+                            notifyPacketWatcherListenersAscii(packet, start, args, end);
                             return;
 
                         case 't':
                             if (packet[pos++] != 'e') break;
                             if (packet[pos++] != 'm') break;
                             if (packet[pos++] != ' ') break;
+                            args = pos;
                             {
                                 final int[] tags = new int[(end-pos)/4];
                                 for (int i = 0; i < tags.length; i++)
@@ -579,6 +614,7 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
                                     crossfireUpdateItemListener.delitemReceived(tags);
                                 }
                             }
+                            notifyPacketWatcherListenersIntArray(packet, start, args, end);
                             return;
                         }
                         break;
@@ -589,6 +625,7 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
                         if (packet[pos++] != 'l') break;
                         if (packet[pos++] != 'l') break;
                         if (packet[pos++] != ' ') break;
+                        args = pos;
                         {
                             final int tag = ((packet[pos++]&0xFF)<<24)|((packet[pos++]&0xFF)<<16)|((packet[pos++]&0xFF)<<8)|(packet[pos++]&0xFF);
                             if (pos != end) break;
@@ -601,6 +638,7 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
                                 crossfireSpellListener.deleteSpell(tag);
                             }
                         }
+                        notifyPacketWatcherListenersIntArray(packet, start, args, end);
                         return;
                     }
                     break;
@@ -618,6 +656,7 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
                         if (packet[pos++] != 'f') break;
                         if (packet[pos++] != 'o') break;
                         if (packet[pos++] != ' ') break;
+                        args = pos;
                         {
                             int color = 0;
                             do
@@ -656,6 +695,7 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
                                 listener.commandDrawextinfoReceived(evt);
                             }
                         }
+                        notifyPacketWatcherListenersAscii(packet, start, args, end);
                         return;
 
                     case 'i':
@@ -663,6 +703,7 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
                         if (packet[pos++] != 'f') break;
                         if (packet[pos++] != 'o') break;
                         if (packet[pos++] != ' ') break;
+                        args = pos;
                         {
                             int color = 0;
                             do
@@ -681,6 +722,7 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
 
                             drawInfo(message, color);
                         }
+                        notifyPacketWatcherListenersAscii(packet, start, args, end);
                         return;
                     }
                     break;
@@ -705,6 +747,7 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
                     if (packet[pos++] != 'e') break;
                     if (packet[pos++] != 't') break;
                     if (packet[pos++] != ' ') break;
+                    args = pos;
                     do
                     {
                         final int startPos = pos;
@@ -721,6 +764,7 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
                         // XXX: ExtendedInfoSet command not implemented
                     }
                     while (pos < end);
+                    notifyPacketWatcherListenersNodata(packet, start, args, end);
                     return;
 
                 case 'T':
@@ -731,6 +775,7 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
                     if (packet[pos++] != 'e') break;
                     if (packet[pos++] != 't') break;
                     if (packet[pos++] != ' ') break;
+                    args = pos;
                     do
                     {
                         final int startPos = pos;
@@ -747,6 +792,7 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
                         // XXX: ExtendedTextSet command not implemented
                     }
                     while (pos < end);
+                    notifyPacketWatcherListenersNodata(packet, start, args, end);
                     return;
                 }
                 break;
@@ -757,6 +803,7 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
                 if (packet[pos++] != 'e') break;
                 if (packet[pos++] != '2') break;
                 if (packet[pos++] != ' ') break;
+                args = pos;
                 {
                     final int faceNum = ((packet[pos++]&0xFF)<<8)|(packet[pos++]&0xFF);
                     final int faceSetNum = packet[pos++]&0xFF;
@@ -771,6 +818,7 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
                         crossfireFaceListener.faceReceived(faceNum, faceSetNum, faceChecksum, faceName);
                     }
                 }
+                notifyPacketWatcherListenersMixed(packet, start, args, end);
                 return;
 
             case 'g':
@@ -781,12 +829,14 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
                 if (packet[pos++] != 'y') break;
                 if (packet[pos++] != 'e') break;
                 if (packet[pos++] != ' ') break;
+                args = pos;
                 if (pos != end) break;
                 if (debugProtocol != null)
                 {
                     debugProtocolWrite("recv goodbye\n");
                 }
                 // XXX: goodbye command not implemented
+                notifyPacketWatcherListenersNodata(packet, start, args, end);
                 return;
 
             case 'i':
@@ -798,6 +848,7 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
                     if (packet[pos++] != 'e') break;
                     if (packet[pos++] != '2') break;
                     if (packet[pos++] != ' ') break;
+                    args = pos;
                     {
                         final int faceNum = ((packet[pos++]&0xFF)<<24)|((packet[pos++]&0xFF)<<16)|((packet[pos++]&0xFF)<<8)|(packet[pos++]&0xFF);
                         final int faceSetNum = packet[pos++]&0xFF;
@@ -812,6 +863,7 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
                             listener.updateFace(faceNum, faceSetNum, packet, pos, len);
                         }
                     }
+                    notifyPacketWatcherListenersMixed(packet, start, args, end);
                     return;
 
                 case 't':
@@ -819,6 +871,7 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
                     if (packet[pos++] != 'm') break;
                     if (packet[pos++] != '2') break;
                     if (packet[pos++] != ' ') break;
+                    args = pos;
                     {
                         final int location = ((packet[pos++]&0xFF)<<24)|((packet[pos++]&0xFF)<<16)|((packet[pos++]&0xFF)<<8)|(packet[pos++]&0xFF);
                         while (pos < end)
@@ -851,6 +904,7 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
                             crossfireUpdateItemListener.additemFinished();
                         }
                     }
+                    notifyPacketWatcherListenersMixed(packet, start, args, end);
                     return;
                 }
                 break;
@@ -868,6 +922,7 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
                         if (packet[pos++] != 'a') break;
                         if (packet[pos++] != 'p') break;
                         if (packet[pos++] != ' ') break;
+                        args = pos;
 
                         int width = 0;
                         do
@@ -916,6 +971,7 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
                         {
                             listener.commandMagicmapReceived(evt);
                         }
+                        notifyPacketWatcherListenersMixed(packet, start, args, end);
                         return;
 
                     case 'p':
@@ -923,7 +979,9 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
                         {
                         case '2':
                             if (packet[pos++] != ' ') break;
+                            args = pos;
                             cmdMap2(packet, pos, end);
+                            notifyPacketWatcherListenersShortArray(packet, start, args, end);
                             return;
 
                         case 'e':
@@ -935,11 +993,13 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
                             if (packet[pos++] != 'e') break;
                             if (packet[pos++] != 'd') break;
                             if (packet[pos++] != ' ') break;
+                            args = pos;
                             if (debugProtocol != null)
                             {
                                 debugProtocolWrite("recv mapextended\n");
                             }
                             cmdMapextended(packet, pos, end-pos);
+                            notifyPacketWatcherListenersMixed(packet, start, args, end);
                             return;
                         }
                         break;
@@ -951,6 +1011,7 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
                     if (packet[pos++] != 'i') break;
                     if (packet[pos++] != 'c') break;
                     if (packet[pos++] != ' ') break;
+                    args = pos;
                     final String music = new String(packet, pos, end-pos, utf8);
                     if (debugProtocol != null)
                     {
@@ -961,6 +1022,7 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
                     {
                         listener.commandMusicReceived(music);
                     }
+                    notifyPacketWatcherListenersAscii(packet, start, args, end);
                     return;
                 }
                 break;
@@ -971,6 +1033,7 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
                 if (packet[pos++] != 'm') break;
                 if (packet[pos++] != 'a') break;
                 if (packet[pos++] != 'p') break;
+                args = pos;
                 if (pos != end) break;
                 if (debugProtocol != null)
                 {
@@ -980,6 +1043,7 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
                 {
                     listener.newMap(mapWidth, mapHeight);
                 }
+                notifyPacketWatcherListenersNodata(packet, start, args, end);
                 return;
 
             case 'p':
@@ -989,6 +1053,7 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
                 if (packet[pos++] != 'e') break;
                 if (packet[pos++] != 'r') break;
                 if (packet[pos++] != ' ') break;
+                args = pos;
                 {
                     final int tag = ((packet[pos++]&0xFF)<<24)|((packet[pos++]&0xFF)<<16)|((packet[pos++]&0xFF)<<8)|(packet[pos++]&0xFF);
                     final int weight = ((packet[pos++]&0xFF)<<24)|((packet[pos++]&0xFF)<<16)|((packet[pos++]&0xFF)<<8)|(packet[pos++]&0xFF);
@@ -1006,6 +1071,7 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
                         crossfireUpdateItemListener.playerReceived(tag, weight, faceNum, name);
                     }
                 }
+                notifyPacketWatcherListenersMixed(packet, start, args, end);
                 return;
 
             case 'q':
@@ -1014,6 +1080,7 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
                 if (packet[pos++] != 'r') break;
                 if (packet[pos++] != 'y') break;
                 if (packet[pos++] != ' ') break;
+                args = pos;
                 {
                     int flags = 0;
                     do
@@ -1036,6 +1103,7 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
                         listener.commandQueryReceived(evt);
                     }
                 }
+                notifyPacketWatcherListenersAscii(packet, start, args, end);
                 return;
 
             case 'r':
@@ -1048,6 +1116,7 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
                 if (packet[pos++] != 'f') break;
                 if (packet[pos++] != 'o') break;
                 if (packet[pos++] != ' ') break;
+                args = pos;
                 {
                     final int startPos = pos;
                     while (packet[pos] != '\n')
@@ -1068,6 +1137,7 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
                         throw new UnknownCommandException("invalid replyinfo command: "+ex.getMessage());
                     }
                 }
+                notifyPacketWatcherListenersAscii(packet, start, args, end);
                 return;
 
             case 's':
@@ -1078,6 +1148,7 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
                     if (packet[pos++] != 'u') break;
                     if (packet[pos++] != 'p') break;
                     if (packet[pos++] != ' ') break;
+                    args = pos;
                     final List<String> options = new ArrayList<String>();
                     while (pos < end)
                     {
@@ -1106,6 +1177,7 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
                         throw new UnknownCommandException("odd number of arguments in setup command");
                     }
                     cmdSetup(options);
+                    notifyPacketWatcherListenersAscii(packet, start, args, end);
                     return;
 
                 case 'm':
@@ -1114,6 +1186,7 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
                     if (packet[pos++] != 't') break;
                     if (packet[pos++] != 'h') break;
                     if (packet[pos++] != ' ') break;
+                    args = pos;
                     {
                         final int facenbr = ((packet[pos++]&0xFF)<<8)|(packet[pos++]&0xFF);
                         final int smoothpic = ((packet[pos++]&0xFF)<<8)|(packet[pos++]&0xFF);
@@ -1124,6 +1197,7 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
                         }
                         // XXX: smooth command not implemented
                     }
+                    notifyPacketWatcherListenersShortArray(packet, start, args, end);
                     return;
 
                 case 'o':
@@ -1133,6 +1207,7 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
                     switch (packet[pos++])
                     {
                     case ' ':
+                        args = pos;
                         {
                             final int x = packet[pos++];
                             final int y = packet[pos++];
@@ -1149,10 +1224,12 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
                                 listener.commandSoundReceived(x, y, num, type);
                             }
                         }
+                        notifyPacketWatcherListenersMixed(packet, start, args, end);
                         return;
 
                     case '2':
                         if (packet[pos++] != ' ') break;
+                        args = pos;
                         {
                             final int x = packet[pos++];
                             final int y = packet[pos++];
@@ -1176,6 +1253,7 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
                                 listener.commandSound2Received(x, y, dir, volume, type, action, name);
                             }
                         }
+                        notifyPacketWatcherListenersMixed(packet, start, args, end);
                         return;
                     }
                     break;
@@ -1219,6 +1297,7 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
                             {
                                 crossfireStatsListener.statInt2Received(stat, int2Param);
                             }
+                            notifyPacketWatcherListenersStats(stat, int2Param);
                             break;
 
                         case CrossfireStatsListener.CS_STAT_EXP:
@@ -1237,6 +1316,7 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
                             {
                                 crossfireStatsListener.statInt4Received(stat, int4Param);
                             }
+                            notifyPacketWatcherListenersStats(stat, int4Param);
                             break;
 
                         case CrossfireStatsListener.CS_STAT_EXP64:
@@ -1249,6 +1329,7 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
                             {
                                 crossfireStatsListener.statInt8Received(stat, int8Param);
                             }
+                            notifyPacketWatcherListenersStats(stat, int8Param);
                             break;
 
                         case CrossfireStatsListener.CS_STAT_RANGE:
@@ -1264,6 +1345,7 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
                             {
                                 crossfireStatsListener.statStringReceived(stat, strParam);
                             }
+                            notifyPacketWatcherListenersStats(stat, strParam);
                             break;
 
                         default:
@@ -1278,6 +1360,7 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
                                 {
                                     crossfireStatsListener.statInt2Received(stat, int2Param2);
                                 }
+                                notifyPacketWatcherListenersStats(stat, int2Param2);
                             }
                             else if (CrossfireStatsListener.CS_STAT_SKILLINFO <= stat && stat < CrossfireStatsListener.CS_STAT_SKILLINFO+CrossfireStatsListener.CS_NUM_SKILLS)
                             {
@@ -1291,6 +1374,7 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
                                 {
                                     crossfireStatsListener.statSkillReceived(stat, level, experience);
                                 }
+                                notifyPacketWatcherListenersStats(stat, level, experience);
                             }
                             else
                             {
@@ -1313,6 +1397,7 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
                 if (packet[pos++] != 'c') break;
                 if (packet[pos++] != 'k') break;
                 if (packet[pos++] != ' ') break;
+                args = pos;
                 {
                     final int tickNo = ((packet[pos++]&0xFF)<<24)|((packet[pos++]&0xFF)<<16)|((packet[pos++]&0xFF)<<8)|(packet[pos++]&0xFF);
                     if (pos != end) break;
@@ -1325,6 +1410,7 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
                         listener.tick(tickNo);
                     }
                 }
+                notifyPacketWatcherListenersIntArray(packet, start, args, end);
                 return;
 
             case 'u':
@@ -1337,6 +1423,7 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
                     if (packet[pos++] != 'e') break;
                     if (packet[pos++] != 'm') break;
                     if (packet[pos++] != ' ') break;
+                    args = pos;
                     {
                         final int flags = packet[pos++]&0xFF;
                         final int tag = ((packet[pos++]&0xFF)<<24)|((packet[pos++]&0xFF)<<16)|((packet[pos++]&0xFF)<<8)|(packet[pos++]&0xFF);
@@ -1376,6 +1463,7 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
                             crossfireUpdateItemListener.upditemReceived(flags, tag, valLocation, valFlags, valWeight, valFaceNum, valName, valNamePl, valAnim, valAnimSpeed, valNrof);
                         }
                     }
+                    notifyPacketWatcherListenersMixed(packet, start, args, end);
                     return;
 
                 case 's':
@@ -1384,6 +1472,7 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
                     if (packet[pos++] != 'l') break;
                     if (packet[pos++] != 'l') break;
                     if (packet[pos++] != ' ') break;
+                    args = pos;
                     {
                         final int flags = packet[pos++]&0xFF;
                         final int tag = ((packet[pos++]&0xFF)<<24)|((packet[pos++]&0xFF)<<16)|((packet[pos++]&0xFF)<<8)|(packet[pos++]&0xFF);
@@ -1400,6 +1489,7 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
                             crossfireSpellListener.updateSpell(flags, tag, mana, grace, damage);
                         }
                     }
+                    notifyPacketWatcherListenersMixed(packet, start, args, end);
                     return;
                 }
                 break;
@@ -1412,6 +1502,7 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
                 if (packet[pos++] != 'o') break;
                 if (packet[pos++] != 'n') break;
                 if (packet[pos++] != ' ') break;
+                args = pos;
                 {
                     int csval = 0;
                     do
@@ -1438,6 +1529,7 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
 
                     cmdVersion(csval, scval, vinfo);
                 }
+                notifyPacketWatcherListenersAscii(packet, start, args, end);
                 return;
             }
         }
@@ -1470,6 +1562,19 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
             debugProtocolWrite(sb.toString());
         }
 
+        final String command = extractCommand(packet, start, end);
+        throw new UnknownCommandException("Cannot parse command: "+command);
+    }
+
+    /**
+     * Returns the command string for a received packet.
+     * @param packet the packet contents
+     * @param start the start index into <code>packet</code>
+     * @param end the end index into <code>packet</code>
+     * @return the command string
+     */
+    private static String extractCommand(final byte[] packet, final int start, final int end)
+    {
         int cmdlen;
         for (cmdlen = start; cmdlen < end; cmdlen++)
         {
@@ -1478,7 +1583,7 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
                 break;
             }
         }
-        throw new UnknownCommandException("Cannot parse command: "+new String(packet, start, cmdlen-start, utf8));
+        return new String(packet, start, cmdlen-start, utf8);
     }
 
     /**
@@ -2403,5 +2508,203 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
     public int getMapHeight()
     {
         return mapHeight;
+    }
+
+    /**
+     * Notifies all {@link ReceivedPacketListener}s about an empty packet.
+     * @param command the command string
+     */
+    private void notifyPacketWatcherListenersEmpty(final String command)
+    {
+        for (final ReceivedPacketListener receivedPacketListener : receivedPacketListeners)
+        {
+            receivedPacketListener.processEmpty(command);
+        }
+    }
+
+    /**
+     * Notifies all {@link ReceivedPacketListener}s about a packet having ascii
+     * parameters.
+     * @param packet the packet contents
+     * @param start the start index into <code>packet</code>
+     * @param args the start index into <code>packet</code> of the packet's
+     * arguments
+     * @param end the end index into <code>packet</code>
+     */
+    private void notifyPacketWatcherListenersAscii(final byte[] packet, final int start, final int args, final int end)
+    {
+        if (!receivedPacketListeners.isEmpty())
+        {
+            final String command = extractCommand(packet, start, end);
+            if (start >= end)
+            {
+                notifyPacketWatcherListenersEmpty(command);
+            }
+            else
+            {
+                for (final ReceivedPacketListener receivedPacketListener : receivedPacketListeners)
+                {
+                    receivedPacketListener.processAscii(command, packet, args, end);
+                }
+            }
+        }
+    }
+
+    /**
+     * Notifies all {@link ReceivedPacketListener}s about a packet having an
+     * array of short values as parameters.
+     * @param packet the packet contents
+     * @param start the start index into <code>packet</code>
+     * @param args the start index into <code>packet</code> of the packet's
+     * arguments
+     * @param end the end index into <code>packet</code>
+     */
+    private void notifyPacketWatcherListenersShortArray(final byte[] packet, final int start, final int args, final int end)
+    {
+        if (!receivedPacketListeners.isEmpty())
+        {
+            final String command = extractCommand(packet, start, end);
+            if (start >= end)
+            {
+                notifyPacketWatcherListenersEmpty(command);
+            }
+            else
+            {
+                for (final ReceivedPacketListener receivedPacketListener : receivedPacketListeners)
+                {
+                    receivedPacketListener.processShortArray(command, packet, args, end);
+                }
+            }
+        }
+    }
+
+    /**
+     * Notifies all {@link ReceivedPacketListener}s about a packet having an
+     * array of int values as parameters.
+     * @param packet the packet contents
+     * @param start the start index into <code>packet</code>
+     * @param args the start index into <code>packet</code> of the packet's
+     * arguments
+     * @param end the end index into <code>packet</code>
+     */
+    private void notifyPacketWatcherListenersIntArray(final byte[] packet, final int start, final int args, final int end)
+    {
+        if (!receivedPacketListeners.isEmpty())
+        {
+            final String command = extractCommand(packet, start, end);
+            if (start >= end)
+            {
+                notifyPacketWatcherListenersEmpty(command);
+            }
+            else
+            {
+                for (final ReceivedPacketListener receivedPacketListener : receivedPacketListeners)
+                {
+                    receivedPacketListener.processIntArray(command, packet, args, end);
+                }
+            }
+        }
+    }
+
+    /**
+     * Notifies all {@link ReceivedPacketListener}s about a packet having a
+     * short and an in value as parameters.
+     * @param packet the packet contents
+     * @param start the start index into <code>packet</code>
+     * @param args the start index into <code>packet</code> of the packet's
+     * arguments
+     * @param end the end index into <code>packet</code>
+     */
+    private void notifyPacketWatcherListenersShortInt(final byte[] packet, final int start, final int args, final int end)
+    {
+        if (!receivedPacketListeners.isEmpty())
+        {
+            final String command = extractCommand(packet, start, end);
+            if (start >= end)
+            {
+                notifyPacketWatcherListenersEmpty(command);
+            }
+            else
+            {
+                for (final ReceivedPacketListener receivedPacketListener : receivedPacketListeners)
+                {
+                    receivedPacketListener.processShortInt(command, packet, args, end);
+                }
+            }
+        }
+    }
+
+    /**
+     * Notifies all {@link ReceivedPacketListener}s about a packet having mixed
+     * parameters.
+     * @param packet the packet contents
+     * @param start the start index into <code>packet</code>
+     * @param args the start index into <code>packet</code> of the packet's
+     * arguments
+     * @param end the end index into <code>packet</code>
+     */
+    private void notifyPacketWatcherListenersMixed(final byte[] packet, final int start, final int args, final int end)
+    {
+        if (!receivedPacketListeners.isEmpty())
+        {
+            final String command = extractCommand(packet, start, end);
+            if (start >= end)
+            {
+                notifyPacketWatcherListenersEmpty(command);
+            }
+            else
+            {
+                for (final ReceivedPacketListener receivedPacketListener : receivedPacketListeners)
+                {
+                    receivedPacketListener.processMixed(command, packet, args, end);
+                }
+            }
+        }
+    }
+
+    /**
+     * Notifies all {@link ReceivedPacketListener}s about a packet having stat
+     * parameters.
+     * @param stat the stat value
+     * @param args the stat arguments depending on <code>type</code> and
+     * <code>stat</code>
+     */
+    private void notifyPacketWatcherListenersStats(final int stat, final Object... args)
+    {
+        if (!receivedPacketListeners.isEmpty())
+        {
+            for (final ReceivedPacketListener receivedPacketListener : receivedPacketListeners)
+            {
+                receivedPacketListener.processStats("stats", stat, args);
+            }
+        }
+    }
+
+    /**
+     * Notifies all {@link ReceivedPacketListener}s about a packet having
+     * unknown parameters.
+     * @param packet the packet contents
+     * @param start the start index into <code>packet</code>
+     * @param args the start index into <code>packet</code> of the packet's
+     * arguments
+     * @param end the end index into <code>packet</code>
+     */
+    private void notifyPacketWatcherListenersNodata(final byte[] packet, final int start, final int args, final int end)
+    {
+        if (!receivedPacketListeners.isEmpty())
+        {
+            final String command = extractCommand(packet, start, end);
+            if (start >= end)
+            {
+                notifyPacketWatcherListenersEmpty(command);
+            }
+            else
+            {
+                for (final ReceivedPacketListener receivedPacketListener : receivedPacketListeners)
+                {
+                    receivedPacketListener.processNodata(command, packet, args, end);
+                }
+            }
+        }
     }
 }

@@ -118,9 +118,19 @@ public class DefaultScriptProcess extends Thread implements ScriptProcess
     private final List<ScriptProcessListener> scriptProcessListeners = new ArrayList<ScriptProcessListener>(1);
 
     /**
+     * The {@link PacketWatcher} to process "watch" commands.
+     */
+    private final PacketWatcher packetWatcher;
+
+    /**
      * Whether a "monitor" command is active.
      */
     private boolean isMonitoring = false;
+
+    /**
+     * Whether this script has been killed.
+     */
+    private boolean killed = false;
 
     /**
      * The {@link CrossfireScriptMonitorListener} attached to {@link
@@ -168,6 +178,7 @@ public class DefaultScriptProcess extends Thread implements ScriptProcess
         this.itemsManager = itemsManager;
         this.spellsManager = spellsManager;
         this.mapUpdater = mapUpdater;
+        packetWatcher = new PacketWatcher(crossfireServerConnection, this);
         final Runtime rt = Runtime.getRuntime();
         proc = rt.exec(filename);
         in = proc.getInputStream();
@@ -245,6 +256,7 @@ public class DefaultScriptProcess extends Thread implements ScriptProcess
             {
                 crossfireServerConnection.getScriptMonitorListeners().removeScriptMonitor(crossfireScriptMonitorListener);
             }
+            packetWatcher.destroy();
             for(final ScriptProcessListener scriptProcessListener : scriptProcessListeners)
             {
                 scriptProcessListener.scriptTerminated(result);
@@ -256,6 +268,11 @@ public class DefaultScriptProcess extends Thread implements ScriptProcess
     @Override
     public void commandSent(final String cmd)
     {
+        if (killed)
+        {
+            return;
+        }
+
         try
         {
             osw.write(cmd+"\n");
@@ -264,6 +281,7 @@ public class DefaultScriptProcess extends Thread implements ScriptProcess
         catch (final IOException e)
         {
             e.printStackTrace();
+            killScript();
         }
     }
 
@@ -334,24 +352,6 @@ public class DefaultScriptProcess extends Thread implements ScriptProcess
     public String toString()
     {
         return scriptId+" "+filename;
-    }
-
-    /**
-     * Processes a "watch" command from the script process.
-     * @param parms the command arguments
-     */
-    private static void cmdWatch(final String parms)
-    {
-        System.out.println(" - Watch   :"+parms);
-    }
-
-    /**
-     * Processes an "unwatch" command from the script process.
-     * @param parms the command arguments
-     */
-    private static void cmdUnwatch(final String parms)
-    {
-        System.out.println(" - Unwatch :"+parms);
     }
 
     /**
@@ -717,25 +717,22 @@ public class DefaultScriptProcess extends Thread implements ScriptProcess
         final String[] tmp = cmdline.split(" +", 2);
         if (tmp[0].equals("watch"))
         {
-            if (tmp.length == 2)
+            if (tmp.length == 1)
             {
-                cmdWatch(tmp[1]);
+                packetWatcher.addCommand("");
+            }
+            else if (tmp[1].indexOf(' ') != -1)
+            {
+                reportError("syntax error: "+cmdline);
             }
             else
             {
-                reportError("syntax error: "+cmdline);
+                packetWatcher.addCommand(tmp[1]);
             }
         }
         else if (tmp[0].equals("unwatch"))
         {
-            if (tmp.length == 2)
-            {
-                cmdUnwatch(tmp[1]);
-            }
-            else
-            {
-                reportError("syntax error: "+cmdline);
-            }
+            packetWatcher.removeCommand(tmp.length >= 2 ? tmp[1] : null);
         }
         else if (tmp[0].equals("request"))
         {
@@ -826,6 +823,7 @@ public class DefaultScriptProcess extends Thread implements ScriptProcess
     @Override
     public void killScript()
     {
+        killed = true;
         proc.destroy();
     }
 
