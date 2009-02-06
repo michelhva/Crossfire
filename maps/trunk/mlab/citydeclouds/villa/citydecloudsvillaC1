@@ -9,7 +9,7 @@ enter_x 1
 enter_y 1
 msg
 Created:  2003-08-18 mikeeusa
-Modified: 2008-10-18 Rick Tanner
+Modified: 2009-02-06 Arvid Norlander
 endmsg
 end
 arch blocked
@@ -507,8 +507,8 @@ end
 arch ladder_bi_down
 name ladder to main level (1st floor)
 slaying /mlab/citydeclouds/citydeclouds2G
-hp 29
-sp 23
+hp 20
+sp 29
 x 6
 y 6
 end
