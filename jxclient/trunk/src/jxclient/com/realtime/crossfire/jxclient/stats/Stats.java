@@ -99,12 +99,14 @@ public class Stats
         private final Set<String> unhandledStats = new HashSet<String>(0);
 
         /** {@inheritDoc} */
+        @Override
         public void setSimpleWeaponSpeed(final boolean simpleWeaponSpeed)
         {
             Stats.this.setSimpleWeaponSpeed(simpleWeaponSpeed);
         }
 
         /** {@inheritDoc} */
+        @Override
         public void statInt2Received(final int stat, final short param)
         {
             switch (stat)
@@ -153,6 +155,7 @@ public class Stats
         }
 
         /** {@inheritDoc} */
+        @Override
         public void statInt4Received(final int stat, final int param)
         {
             switch (stat)
@@ -177,6 +180,7 @@ public class Stats
         }
 
         /** {@inheritDoc} */
+        @Override
         public void statInt8Received(final int stat, final long param)
         {
             switch (stat)
@@ -192,6 +196,7 @@ public class Stats
         }
 
         /** {@inheritDoc} */
+        @Override
         public void statStringReceived(final int stat, final String param)
         {
             switch (stat)
@@ -211,6 +216,7 @@ public class Stats
         }
 
         /** {@inheritDoc} */
+        @Override
         public void statSkillReceived(final int stat, final int level, final long experience)
         {
             if (CS_STAT_SKILLINFO <= stat && stat < CS_STAT_SKILLINFO+CS_NUM_SKILLS)

@@ -47,12 +47,14 @@ public class ScriptkillallCommand extends AbstractCommand
     }
 
     /** {@inheritDoc} */
+    @Override
     public boolean allArguments()
     {
         return false;
     }
 
     /** {@inheritDoc} */
+    @Override
     public void execute(final String args)
     {
         final Set<ScriptProcess> scriptProcesses = scriptManager.getScripts(args);

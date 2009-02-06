@@ -73,48 +73,56 @@ public class StatsWatcher
     private final StatsListener statsListener = new StatsListener()
     {
         /** {@inheritDoc} */
+        @Override
         public void reset()
         {
             ignoreLevelChange = System.currentTimeMillis()+DELAY;
         }
 
         /** {@inheritDoc} */
+        @Override
         public void statChanged(final int statnr, final int value)
         {
             checkStats(statnr, value);
         }
 
         /** {@inheritDoc} */
+        @Override
         public void simpleWeaponSpeedChanged(final boolean simpleWeaponSpeed)
         {
             // ignore
         }
 
         /** {@inheritDoc} */
+        @Override
         public void titleChanged(final String title)
         {
             // ignore
         }
 
         /** {@inheritDoc} */
+        @Override
         public void rangeChanged(final String range)
         {
             // ignore
         }
 
         /** {@inheritDoc} */
+        @Override
         public void activeSkillChanged(final String activeSkill)
         {
             // ignore
         }
 
         /** {@inheritDoc} */
+        @Override
         public void experienceChanged(final long exp)
         {
             // ignore
         }
 
         /** {@inheritDoc} */
+        @Override
         public void experienceNextLevelChanged(final long expNextLevel)
         {
             // ignore
@@ -127,6 +135,7 @@ public class StatsWatcher
     private final GuiStateListener guiStateListener = new GuiStateListener()
     {
         /** {@inheritDoc} */
+        @Override
         public void guiStateChanged(final JXCWindowRenderer.GuiState guiState)
         {
             active = guiState == JXCWindowRenderer.GuiState.PLAYING;
@@ -140,18 +149,21 @@ public class StatsWatcher
     private final PlayerListener playerListener = new PlayerListener()
     {
         /** {@inheritDoc} */
+        @Override
         public void playerReceived(final CfPlayer player)
         {
             ignoreLevelChange = System.currentTimeMillis()+DELAY;
         }
 
         /** {@inheritDoc} */
+        @Override
         public void playerAdded(final CfPlayer player)
         {
             // ignore
         }
 
         /** {@inheritDoc} */
+        @Override
         public void playerRemoved(final CfPlayer player)
         {
             // ignore

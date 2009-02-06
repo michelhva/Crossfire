@@ -41,6 +41,7 @@ public class FaceCache
     private final CrossfireFaceListener crossfireFaceListener = new CrossfireFaceListener()
     {
         /** {@inheritDoc} */
+        @Override
         public void faceReceived(final int faceNum, final int faceSetNum, final int faceChecksum, final String faceName)
         {
             // XXX: ignores faceSetNum

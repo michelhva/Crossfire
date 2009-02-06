@@ -91,6 +91,7 @@ public class GUIMetaElement extends ActivatableGUIElement implements GUIScrollab
     private final MetaserverEntryListener metaserverEntryListener = new MetaserverEntryListener()
     {
         /** {@inheritDoc} */
+        @Override
         public void entryChanged()
         {
             setChanged();
@@ -166,6 +167,7 @@ public class GUIMetaElement extends ActivatableGUIElement implements GUIScrollab
     }
 
     /** {@inheritDoc} */
+    @Override
     public boolean canScroll(final int distance)
     {
         if (distance < 0)
@@ -183,12 +185,14 @@ public class GUIMetaElement extends ActivatableGUIElement implements GUIScrollab
     }
 
     /** {@inheritDoc} */
+    @Override
     public void scroll(final int distance)
     {
         setIndex(index+distance);
     }
 
     /** {@inheritDoc} */
+    @Override
     public void resetScroll()
     {
         if (index != defaultIndex)

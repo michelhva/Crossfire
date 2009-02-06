@@ -88,6 +88,7 @@ public class GUISpellLabel extends GUIHTMLLabel
     private final SpellListener spellListener = new SpellListener()
     {
         /** {@inheritDoc} */
+        @Override
         public void spellChanged(final Spell spell)
         {
             if (spell == null)

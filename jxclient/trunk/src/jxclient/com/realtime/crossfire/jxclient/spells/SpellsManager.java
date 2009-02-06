@@ -48,6 +48,7 @@ public class SpellsManager
     private final Comparator<Spell> spellNameComparator = new Comparator<Spell>()
     {
         /** {@inheritDoc} */
+        @Override
         public int compare(final Spell spell1, final Spell spell2)
         {
             final int path1 = spell1.getPath();
@@ -64,18 +65,21 @@ public class SpellsManager
     private final CrossfireSpellListener crossfireSpellListener = new CrossfireSpellListener()
     {
         /** {@inheritDoc} */
+        @Override
         public void addSpell(final int tag, final int level, final int castingTime, final int mana, final int grace, final int damage, final int skill, final int path, final int face, final String name, final String message)
         {
             SpellsManager.this.addSpell(tag, level, castingTime, mana, grace, damage, skill, path, face, name, message);
         }
 
         /** {@inheritDoc} */
+        @Override
         public void deleteSpell(final int tag)
         {
             SpellsManager.this.deleteSpell(tag);
         }
 
         /** {@inheritDoc} */
+        @Override
         public void updateSpell(final int flags, final int tag, final int mana, final int grace, final int damage)
         {
             SpellsManager.this.updateSpell(flags, tag, mana, grace, damage);

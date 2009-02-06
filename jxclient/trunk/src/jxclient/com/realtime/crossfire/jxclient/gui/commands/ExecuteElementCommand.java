@@ -51,12 +51,14 @@ public class ExecuteElementCommand implements GUICommand
     }
 
     /** {@inheritDoc} */
+    @Override
     public boolean canExecute()
     {
         return true;
     }
 
     /** {@inheritDoc} */
+    @Override
     public void execute()
     {
         item.button1Clicked(window);

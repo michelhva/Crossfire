@@ -63,12 +63,14 @@ public class StatGaugeUpdater extends GaugeUpdater
     private final StatsListener statsListener = new StatsListener()
     {
         /** {@inheritDoc} */
+        @Override
         public void reset()
         {
             // ignore
         }
 
         /** {@inheritDoc} */
+        @Override
         public void statChanged(final int statnr, final int value)
         {
             if (stat != statnr)
@@ -112,36 +114,42 @@ public class StatGaugeUpdater extends GaugeUpdater
         }
 
         /** {@inheritDoc} */
+        @Override
         public void simpleWeaponSpeedChanged(final boolean simpleWeaponSpeed)
         {
             // ignore
         }
 
         /** {@inheritDoc} */
+        @Override
         public void titleChanged(final String title)
         {
             // ignore
         }
 
         /** {@inheritDoc} */
+        @Override
         public void rangeChanged(final String range)
         {
             // ignore
         }
 
         /** {@inheritDoc} */
+        @Override
         public void activeSkillChanged(final String activeSkill)
         {
             // ignore
         }
 
         /** {@inheritDoc} */
+        @Override
         public void experienceChanged(final long exp)
         {
             // ignore
         }
 
         /** {@inheritDoc} */
+        @Override
         public void experienceNextLevelChanged(final long expNextLevel)
         {
             if (stat != CrossfireStatsListener.C_STAT_EXP_NEXT_LEVEL)
@@ -162,18 +170,21 @@ public class StatGaugeUpdater extends GaugeUpdater
     private final PlayerListener playerListener = new PlayerListener()
     {
         /** {@inheritDoc} */
+        @Override
         public void playerReceived(final CfPlayer player)
         {
             active = true;
         }
 
         /** {@inheritDoc} */
+        @Override
         public void playerAdded(final CfPlayer player)
         {
             active = true;
         }
 
         /** {@inheritDoc} */
+        @Override
         public void playerRemoved(final CfPlayer player)
         {
             active = false;

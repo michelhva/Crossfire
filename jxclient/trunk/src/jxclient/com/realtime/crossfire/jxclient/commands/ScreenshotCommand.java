@@ -63,12 +63,14 @@ public class ScreenshotCommand extends AbstractCommand
     }
 
     /** {@inheritDoc} */
+    @Override
     public boolean allArguments()
     {
         return true;
     }
 
     /** {@inheritDoc} */
+    @Override
     public void execute(final String args)
     {
         final File file;

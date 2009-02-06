@@ -50,12 +50,14 @@ public class ConnectCommand implements GUICommand
     }
 
     /** {@inheritDoc} */
+    @Override
     public boolean canExecute()
     {
         return true;
     }
 
     /** {@inheritDoc} */
+    @Override
     public void execute()
     {
         window.connect(hostNameInputField.getText());

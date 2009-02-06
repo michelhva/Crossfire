@@ -99,6 +99,7 @@ public class FacesManager
     private final FaceQueueListener faceQueueListener = new FaceQueueListener()
     {
         /** {@inheritDoc} */
+        @Override
         public void faceLoaded(final Face face, final FaceImages faceImages)
         {
             face.setFaceImages(faceImages);
@@ -106,6 +107,7 @@ public class FacesManager
         }
 
         /** {@inheritDoc} */
+        @Override
         public void faceFailed(final Face face)
         {
             face.setFaceImages(unknownFaceImages);

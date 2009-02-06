@@ -43,12 +43,14 @@ public class ScrollResetCommand implements GUICommand
     }
 
     /** {@inheritDoc} */
+    @Override
     public boolean canExecute()
     {
         return true;
     }
 
     /** {@inheritDoc} */
+    @Override
     public void execute()
     {
         scrollable.resetScroll();

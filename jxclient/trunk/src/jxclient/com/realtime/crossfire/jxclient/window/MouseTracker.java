@@ -75,6 +75,7 @@ public class MouseTracker implements MouseInputListener
     }
 
     /** {@inheritDoc} */
+    @Override
     public void mouseDragged(final MouseEvent e)
     {
         if (mouseElement != null)
@@ -86,6 +87,7 @@ public class MouseTracker implements MouseInputListener
     }
 
     /** {@inheritDoc} */
+    @Override
     public void mouseMoved(final MouseEvent e)
     {
         final GUIElement element = findElement(e);
@@ -97,12 +99,14 @@ public class MouseTracker implements MouseInputListener
     }
 
     /** {@inheritDoc} */
+    @Override
     public void mouseClicked(final MouseEvent e)
     {
         // ignore
     }
 
     /** {@inheritDoc} */
+    @Override
     public void mousePressed(final MouseEvent e)
     {
         final GUIElement element = findElement(e);
@@ -114,6 +118,7 @@ public class MouseTracker implements MouseInputListener
     }
 
     /** {@inheritDoc} */
+    @Override
     public void mouseReleased(final MouseEvent e)
     {
         final GUIElement element = findElement(e);
@@ -133,6 +138,7 @@ public class MouseTracker implements MouseInputListener
     }
 
     /** {@inheritDoc} */
+    @Override
     public void mouseEntered(final MouseEvent e)
     {
         final GUIElement element = findElement(e);
@@ -140,6 +146,7 @@ public class MouseTracker implements MouseInputListener
     }
 
     /** {@inheritDoc} */
+    @Override
     public void mouseExited(final MouseEvent e)
     {
         enterElement(null, e);

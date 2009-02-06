@@ -133,18 +133,21 @@ public class MetaserverEntry implements Comparable<MetaserverEntry>
     }
 
     /** {@inheritDoc} */
+    @Override
     public int compareTo(final MetaserverEntry o)
     {
         return hostname.compareTo(o.hostname);
     }
 
     /** {@inheritDoc} */
+    @Override
     public int hashCode()
     {
         return hostname.hashCode();
     }
 
     /** {@inheritDoc} */
+    @Override
     public boolean equals(final Object o)
     {
         if(o == null) return false;

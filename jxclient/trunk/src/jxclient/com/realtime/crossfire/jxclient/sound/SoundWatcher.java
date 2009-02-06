@@ -41,11 +41,13 @@ public class SoundWatcher
     private final CrossfireSoundListener crossfireSoundListener = new CrossfireSoundListener()
     {
         /** {@inheritDoc} */
+        @Override
         public void commandSoundReceived(final int x, final int y, final int num, final int type)
         {
             // ignored
         }
 
+        @Override
         public void commandSound2Received(final int x, final int y, final int dir, final int volume, final int type, final String action, final String name)
         {
             soundManager.playClip(Sounds.CHARACTER, name, action);

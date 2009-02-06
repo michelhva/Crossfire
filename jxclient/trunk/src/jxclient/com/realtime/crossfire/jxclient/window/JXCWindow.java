@@ -278,6 +278,7 @@ public class JXCWindow extends JFrame
     private final ActionListener actionListener = new ActionListener()
     {
         /** {@inheritDoc} */
+        @Override
         public void actionPerformed(final ActionEvent e)
         {
             synchronized (semaphoreDrawing)
@@ -346,6 +347,7 @@ public class JXCWindow extends JFrame
     private final PlayerListener playerListener = new PlayerListener()
     {
         /** {@inheritDoc} */
+        @Override
         public void playerReceived(final CfPlayer player)
         {
             if (windowRenderer.getGuiState() == JXCWindowRenderer.GuiState.NEWCHAR)
@@ -358,12 +360,14 @@ public class JXCWindow extends JFrame
         }
 
         /** {@inheritDoc} */
+        @Override
         public void playerAdded(final CfPlayer player)
         {
             connection.setCharacter(player.getName());
         }
 
         /** {@inheritDoc} */
+        @Override
         public void playerRemoved(final CfPlayer player)
         {
             connection.setCharacter(null);
@@ -373,6 +377,7 @@ public class JXCWindow extends JFrame
     private final ConnectionListener connectionListener = new ConnectionListener()
     {
         /** {@inheritDoc} */
+        @Override
         public void connectionLost()
         {
             setStatus(Status.UNCONNECTED);
@@ -419,6 +424,7 @@ public class JXCWindow extends JFrame
     private final KeyListener keyListener = new KeyListener()
     {
         /** {@inheritDoc} */
+        @Override
         public void keyTyped(final KeyEvent e)
         {
             synchronized (semaphoreDrawing)
@@ -428,6 +434,7 @@ public class JXCWindow extends JFrame
         }
 
         /** {@inheritDoc} */
+        @Override
         public void keyPressed(final KeyEvent e)
         {
             synchronized (semaphoreDrawing)
@@ -437,6 +444,7 @@ public class JXCWindow extends JFrame
         }
 
         /** {@inheritDoc} */
+        @Override
         public void keyReleased(final KeyEvent e)
         {
             synchronized (semaphoreDrawing)
@@ -452,6 +460,7 @@ public class JXCWindow extends JFrame
     private final KeyHandlerListener keyHandlerListener = new KeyHandlerListener()
     {
         /** {@inheritDoc} */
+        @Override
         public void escPressed()
         {
             if (keybindingsManager.escPressed())
@@ -501,6 +510,7 @@ public class JXCWindow extends JFrame
         }
 
         /** {@inheritDoc} */
+        @Override
         public void keyReleased()
         {
             closeKeybindDialog();
@@ -514,6 +524,7 @@ public class JXCWindow extends JFrame
     private final CrossfireQueryListener crossfireQueryListener = new CrossfireQueryListener()
     {
         /** {@inheritDoc} */
+        @Override
         public void commandQueryReceived(final CrossfireCommandQueryEvent evt)
         {
             synchronized (semaphoreDrawing)
@@ -563,6 +574,7 @@ public class JXCWindow extends JFrame
     private final CrossfireDrawextinfoListener crossfireDrawextinfoListener = new CrossfireDrawextinfoListener()
     {
         /** {@inheritDoc} */
+        @Override
         public void commandDrawextinfoReceived(final CrossfireCommandDrawextinfoEvent evt)
         {
             String message = evt.getMessage();

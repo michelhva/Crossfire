@@ -46,12 +46,14 @@ public class ScriptCommand extends AbstractCommand
     }
 
     /** {@inheritDoc} */
+    @Override
     public boolean allArguments()
     {
         return false;
     }
 
     /** {@inheritDoc} */
+    @Override
     public void execute(final String args)
     {
         if (args.length() == 0)

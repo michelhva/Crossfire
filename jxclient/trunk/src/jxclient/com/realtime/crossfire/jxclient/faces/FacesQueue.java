@@ -47,12 +47,14 @@ public class FacesQueue extends DefaultFaceQueue
     private final FaceQueueListener fileCacheFaceQueueListener = new FaceQueueListener()
     {
         /** {@inheritDoc} */
+        @Override
         public void faceLoaded(final Face face, final FaceImages faceImages)
         {
             fireFaceLoaded(face, faceImages);
         }
 
         /** {@inheritDoc} */
+        @Override
         public void faceFailed(final Face face)
         {
             askfaceFaceQueue.loadFace(face);
@@ -65,6 +67,7 @@ public class FacesQueue extends DefaultFaceQueue
     private final FaceQueueListener askfaceFaceQueueListener = new FaceQueueListener()
     {
         /** {@inheritDoc} */
+        @Override
         public void faceLoaded(final Face face, final FaceImages faceImages)
         {
             fireFaceLoaded(face, faceImages);
@@ -72,6 +75,7 @@ public class FacesQueue extends DefaultFaceQueue
         }
 
         /** {@inheritDoc} */
+        @Override
         public void faceFailed(final Face face)
         {
             fireFaceFailed(face);
@@ -98,6 +102,7 @@ public class FacesQueue extends DefaultFaceQueue
     }
 
     /** {@inheritDoc} */
+    @Override
     public void reset()
     {
         fileCacheFaceQueue.reset();
@@ -105,6 +110,7 @@ public class FacesQueue extends DefaultFaceQueue
     }
 
     /** {@inheritDoc} */
+    @Override
     public void loadFace(final Face face)
     {
         fileCacheFaceQueue.loadFace(face);

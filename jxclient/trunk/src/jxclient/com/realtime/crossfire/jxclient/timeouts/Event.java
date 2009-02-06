@@ -70,6 +70,7 @@ public class Event implements Comparable<Event>
     }
 
     /** {@inheritDoc} */
+    @Override
     public int compareTo(final Event event)
     {
         if (timeout < event.timeout) return -1;
@@ -78,12 +79,14 @@ public class Event implements Comparable<Event>
     }
 
     /** {@inheritDoc} */
+    @Override
     public int hashCode()
     {
         return (int)timeout;
     }
 
     /** {@inheritDoc} */
+    @Override
     public boolean equals(final Object o)
     {
         if(o == null) return false;

@@ -87,6 +87,7 @@ public class MessageBufferUpdater
     private final CrossfireQueryListener crossfireQueryListener = new CrossfireQueryListener()
     {
         /** {@inheritDoc} */
+        @Override
         public void commandQueryReceived(final CrossfireCommandQueryEvent evt)
         {
             if (isTypeShown(MessageTypes.MSG_TYPE_QUERY))
@@ -103,6 +104,7 @@ public class MessageBufferUpdater
     private final CrossfireDrawextinfoListener crossfireDrawextinfoListener = new CrossfireDrawextinfoListener()
     {
         /** {@inheritDoc} */
+        @Override
         public void commandDrawextinfoReceived(final CrossfireCommandDrawextinfoEvent evt)
         {
             if (evt.getType() == MessageTypes.MSG_TYPE_QUERY // should not happen; but if it happens just display it
@@ -120,6 +122,7 @@ public class MessageBufferUpdater
     private final CrossfireDrawinfoListener crossfireDrawinfoListener = new CrossfireDrawinfoListener()
     {
         /** {@inheritDoc} */
+        @Override
         public void commandDrawinfoReceived(final CrossfireCommandDrawinfoEvent evt)
         {
             // guess category from message color

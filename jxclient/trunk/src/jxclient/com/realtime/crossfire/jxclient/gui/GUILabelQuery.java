@@ -44,6 +44,7 @@ public class GUILabelQuery extends GUIMultiLineLabel
     private final CrossfireQueryListener crossfireQueryListener = new CrossfireQueryListener()
     {
         /** {@inheritDoc} */
+        @Override
         public void commandQueryReceived(final CrossfireCommandQueryEvent evt)
         {
             setText(evt.getPrompt());

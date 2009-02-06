@@ -36,12 +36,14 @@ public abstract class DefaultFaceQueue implements FaceQueue
     private final List<FaceQueueListener> faceQueueListeners = new LinkedList<FaceQueueListener>();
 
     /** {@inheritDoc} */
+    @Override
     public void addFaceQueueListener(final FaceQueueListener faceQueueListener)
     {
         faceQueueListeners.add(faceQueueListener);
     }
 
     /** {@inheritDoc} */
+    @Override
     public void removeFaceQueueListener(final FaceQueueListener faceQueueListener)
     {
         faceQueueListeners.remove(faceQueueListener);

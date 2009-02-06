@@ -220,6 +220,7 @@ public abstract class GUIElement extends JPanel
         ignore = true;
     }
 
+    @Override
     public String getName()
     {
         return name;

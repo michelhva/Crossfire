@@ -56,6 +56,7 @@ public class ItemInventoryCellRenderer extends JPanel implements ListCellRendere
     }
 
     /** {@inheritDoc} */
+    @Override
     public Component getListCellRendererComponent(final JList list, final Object value, final int index, final boolean isSelected, final boolean cellHasFocus)
     {
         template.setIndex(((GUIItemInventory)value).getIndex());

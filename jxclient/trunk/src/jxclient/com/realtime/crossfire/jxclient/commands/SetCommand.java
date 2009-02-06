@@ -51,12 +51,14 @@ public class SetCommand extends AbstractCommand
     }
 
     /** {@inheritDoc} */
+    @Override
     public boolean allArguments()
     {
         return false;
     }
 
     /** {@inheritDoc} */
+    @Override
     public void execute(final String args)
     {
         final String[] tmp = Patterns.patternWhitespace.split(args, 2);

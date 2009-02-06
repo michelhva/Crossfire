@@ -59,6 +59,7 @@ public class ClipManager
         executorService.execute(new Runnable()
             {
                 /** {@inheritDoc} */
+                @Override
                 public void run()
                 {
                     try

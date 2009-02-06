@@ -64,6 +64,7 @@ public class CommandQueue
     private final CrossfireComcListener crossfireComcListener = new CrossfireComcListener()
     {
         /** {@inheritDoc} */
+        @Override
         public void commandComcReceived(final int packetNo, final int time)
         {
             synchronized (pendingCommands)

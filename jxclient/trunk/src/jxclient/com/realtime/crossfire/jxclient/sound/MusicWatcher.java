@@ -40,6 +40,7 @@ public class MusicWatcher
     private final CrossfireMusicListener crossfireMusicListener = new CrossfireMusicListener()
     {
         /** {@inheritDoc} */
+        @Override
         public void commandMusicReceived(final String music)
         {
             soundManager.playMusic(music.equals("NONE") ? null : music);

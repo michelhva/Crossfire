@@ -76,6 +76,7 @@ public abstract class GUIItemItem extends GUIItem
     private final CfItemListener itemListener = new CfItemListener()
     {
         /** {@inheritDoc} */
+        @Override
         public void itemModified()
         {
             setChanged();
@@ -89,6 +90,7 @@ public abstract class GUIItemItem extends GUIItem
     private final FacesManagerListener facesManagerListener = new FacesManagerListener()
     {
         /** {@inheritDoc} */
+        @Override
         public void faceUpdated(final Face face)
         {
             if (item != null && face.equals(item.getFace()))

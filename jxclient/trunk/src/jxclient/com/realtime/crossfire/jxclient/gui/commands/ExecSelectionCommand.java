@@ -44,6 +44,7 @@ public class ExecSelectionCommand implements GUICommand
         APPLY
             {
                 /** {@inheritDoc} */
+                @Override
                 protected void doExecute(final CfItem item, final CrossfireServerConnection crossfireServerConnection, final int floor, final CommandQueue commandQueue)
                 {
                     crossfireServerConnection.sendApply(item.getTag());
@@ -56,6 +57,7 @@ public class ExecSelectionCommand implements GUICommand
         DROP
             {
                 /** {@inheritDoc} */
+                @Override
                 protected void doExecute(final CfItem item, final CrossfireServerConnection crossfireServerConnection, final int floor, final CommandQueue commandQueue)
                 {
                     if (item.isLocked())
@@ -75,6 +77,7 @@ public class ExecSelectionCommand implements GUICommand
         EXAMINE
             {
                 /** {@inheritDoc} */
+                @Override
                 protected void doExecute(final CfItem item, final CrossfireServerConnection crossfireServerConnection, final int floor, final CommandQueue commandQueue)
                 {
                     crossfireServerConnection.sendExamine(item.getTag());
@@ -87,6 +90,7 @@ public class ExecSelectionCommand implements GUICommand
         LOCK
             {
                 /** {@inheritDoc} */
+                @Override
                 protected void doExecute(final CfItem item, final CrossfireServerConnection crossfireServerConnection, final int floor, final CommandQueue commandQueue)
                 {
                     crossfireServerConnection.sendLock(true, item.getTag());
@@ -99,6 +103,7 @@ public class ExecSelectionCommand implements GUICommand
         LOCK_TOGGLE
             {
                 /** {@inheritDoc} */
+                @Override
                 protected void doExecute(final CfItem item, final CrossfireServerConnection crossfireServerConnection, final int floor, final CommandQueue commandQueue)
                 {
                     crossfireServerConnection.sendLock(!item.isLocked(), item.getTag());
@@ -111,6 +116,7 @@ public class ExecSelectionCommand implements GUICommand
         MARK
             {
                 /** {@inheritDoc} */
+                @Override
                 protected void doExecute(final CfItem item, final CrossfireServerConnection crossfireServerConnection, final int floor, final CommandQueue commandQueue)
                 {
                     crossfireServerConnection.sendMark(item.getTag());
@@ -123,6 +129,7 @@ public class ExecSelectionCommand implements GUICommand
         UNLOCK
             {
                 /** {@inheritDoc} */
+                @Override
                 protected void doExecute(final CfItem item, final CrossfireServerConnection crossfireServerConnection, final int floor, final CommandQueue commandQueue)
                 {
                     crossfireServerConnection.sendLock(false, item.getTag());
@@ -216,12 +223,14 @@ public class ExecSelectionCommand implements GUICommand
     }
 
     /** {@inheritDoc} */
+    @Override
     public boolean canExecute()
     {
         return CommandType.canExecute(list.getSelectedItem());
     }
 
     /** {@inheritDoc} */
+    @Override
     public void execute()
     {
         command.execute(list.getSelectedItem(), crossfireServerConnection, floorManager.getCurrentFloor(), commandQueue);

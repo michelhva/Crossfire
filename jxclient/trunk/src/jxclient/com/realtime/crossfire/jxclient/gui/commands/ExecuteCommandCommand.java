@@ -45,12 +45,14 @@ public class ExecuteCommandCommand implements GUICommand
     }
 
     /** {@inheritDoc} */
+    @Override
     public boolean canExecute()
     {
         return true;
     }
 
     /** {@inheritDoc} */
+    @Override
     public void execute()
     {
         commands.executeCommand(command);

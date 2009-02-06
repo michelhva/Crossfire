@@ -55,48 +55,56 @@ public class ActiveSkillWatcher
     private final StatsListener statsListener = new StatsListener()
     {
         /** {@inheritDoc} */
+        @Override
         public void reset()
         {
             // ignore
         }
 
         /** {@inheritDoc} */
+        @Override
         public void statChanged(final int statnr, final int value)
         {
             // ignore
         }
 
         /** {@inheritDoc} */
+        @Override
         public void simpleWeaponSpeedChanged(final boolean simpleWeaponSpeed)
         {
             // ignore
         }
 
         /** {@inheritDoc} */
+        @Override
         public void titleChanged(final String title)
         {
             // ignore
         }
 
         /** {@inheritDoc} */
+        @Override
         public void rangeChanged(final String range)
         {
             checkRange(range);
         }
 
         /** {@inheritDoc} */
+        @Override
         public void activeSkillChanged(final String activeSkill)
         {
             // ignore
         }
 
         /** {@inheritDoc} */
+        @Override
         public void experienceChanged(final long exp)
         {
             // ignore
         }
 
         /** {@inheritDoc} */
+        @Override
         public void experienceNextLevelChanged(final long expNextLevel)
         {
             // ignore
@@ -109,6 +117,7 @@ public class ActiveSkillWatcher
     private final CrossfireDrawinfoListener drawinfoListener = new CrossfireDrawinfoListener()
     {
         /** {@inheritDoc} */
+        @Override
         public void commandDrawinfoReceived(final CrossfireCommandDrawinfoEvent evt)
         {
             checkMessage(evt.getText());
@@ -121,6 +130,7 @@ public class ActiveSkillWatcher
     private final CrossfireDrawextinfoListener drawextinfoListener = new CrossfireDrawextinfoListener()
     {
         /** {@inheritDoc} */
+        @Override
         public void commandDrawextinfoReceived(final CrossfireCommandDrawextinfoEvent evt)
         {
             checkMessage(evt.getMessage());

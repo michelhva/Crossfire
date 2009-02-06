@@ -42,48 +42,56 @@ public class ActiveSkillGaugeUpdater extends GaugeUpdater
     private final StatsListener statsListener = new StatsListener()
     {
         /** {@inheritDoc} */
+        @Override
         public void reset()
         {
             // ignore
         }
 
         /** {@inheritDoc} */
+        @Override
         public void statChanged(final int statnr, final int value)
         {
             // ignore
         }
 
         /** {@inheritDoc} */
+        @Override
         public void simpleWeaponSpeedChanged(final boolean simpleWeaponSpeed)
         {
             // ignore
         }
 
         /** {@inheritDoc} */
+        @Override
         public void titleChanged(final String title)
         {
             // ignore
         }
 
         /** {@inheritDoc} */
+        @Override
         public void rangeChanged(final String range)
         {
             // ignore
         }
 
         /** {@inheritDoc} */
+        @Override
         public void activeSkillChanged(final String activeSkill)
         {
             setValues(activeSkill.equals(skill) ? 1 : 0, 0, 1);
         }
 
         /** {@inheritDoc} */
+        @Override
         public void experienceChanged(final long exp)
         {
             // ignore
         }
 
         /** {@inheritDoc} */
+        @Override
         public void experienceNextLevelChanged(final long expNextLevel)
         {
             // ignore

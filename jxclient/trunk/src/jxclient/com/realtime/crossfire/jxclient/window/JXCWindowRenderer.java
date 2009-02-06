@@ -435,6 +435,7 @@ public class JXCWindowRenderer
         return new Iterable<Gui>()
         {
             /** {@inheritDoc} */
+            @Override
             public Iterator<Gui> iterator()
             {
                 return new Iterator<Gui>()
@@ -446,18 +447,21 @@ public class JXCWindowRenderer
                     private final ListIterator<Gui> it = openDialogs.listIterator(openDialogs.size());
 
                     /** {@inheritDoc} */
+                    @Override
                     public boolean hasNext()
                     {
                         return it.hasPrevious();
                     }
 
                     /** {@inheritDoc} */
+                    @Override
                     public Gui next()
                     {
                         return it.previous();
                     }
 
                     /** {@inheritDoc} */
+                    @Override
                     public void remove()
                     {
                         throw new UnsupportedOperationException();

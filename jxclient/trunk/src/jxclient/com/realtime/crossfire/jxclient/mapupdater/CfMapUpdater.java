@@ -117,6 +117,7 @@ public class CfMapUpdater
     private final CfMapSquareListener mapSquareListener = new CfMapSquareListener()
     {
         /** {@inheritDoc} */
+        @Override
         public void squareModified(final CfMapSquare mapSquare)
         {
             synchronized (squares)
@@ -132,6 +133,7 @@ public class CfMapUpdater
     private final FacesManagerListener facesManagerListener = new FacesManagerListener()
     {
         /** {@inheritDoc} */
+        @Override
         public void faceUpdated(final Face face)
         {
             updateFace(face.getFaceNum());
@@ -144,36 +146,42 @@ public class CfMapUpdater
     private final CrossfireUpdateMapListener crossfireUpdateMapListener = new CrossfireUpdateMapListener()
     {
         /** {@inheritDoc} */
+        @Override
         public void newMap(final int mapWidth, final int mapHeight)
         {
             processNewMap(mapWidth, mapHeight);
         }
 
         /** {@inheritDoc} */
+        @Override
         public void mapBegin()
         {
             processMapBegin();
         }
 
         /** {@inheritDoc} */
+        @Override
         public void mapClear(final int x, final int y)
         {
             processMapClear(x, y);
         }
 
         /** {@inheritDoc} */
+        @Override
         public void mapDarkness(final int x, final int y, final int darkness)
         {
             processMapDarkness(x, y, darkness);
         }
 
         /** {@inheritDoc} */
+        @Override
         public void mapFace(final int x, final int y, final int layer, final int faceNum)
         {
             processMapFace(x, y, layer, faceNum, true);
         }
 
         /** {@inheritDoc} */
+        @Override
         public void mapAnimation(final int x, final int y, final int layer, final int animationNum, final int animationType)
         {
             final Animation animation = animations.get(animationNum);
@@ -186,24 +194,28 @@ public class CfMapUpdater
         }
 
         /** {@inheritDoc} */
+        @Override
         public void mapAnimationSpeed(final int x, final int y, final int layer, final int animSpeed)
         {
             processMapAnimationSpeed(x, y, layer, animSpeed);
         }
 
         /** {@inheritDoc} */
+        @Override
         public void scroll(final int dx, final int dy)
         {
             processScroll(dx, dy);
         }
 
         /** {@inheritDoc} */
+        @Override
         public void mapEnd()
         {
             processMapEnd(true);
         }
 
         /** {@inheritDoc} */
+        @Override
         public void addAnimation(final int animation, final int flags, final int[] faces)
         {
             animations.addAnimation(animation, flags, faces);

@@ -47,12 +47,14 @@ public class ScriptsCommand extends AbstractCommand
     }
 
     /** {@inheritDoc} */
+    @Override
     public boolean allArguments()
     {
         return false;
     }
 
     /** {@inheritDoc} */
+    @Override
     public void execute(final String args)
     {
         final TreeSet<ScriptProcess> scriptProcesses = new TreeSet<ScriptProcess>(scriptManager.getScripts(args));

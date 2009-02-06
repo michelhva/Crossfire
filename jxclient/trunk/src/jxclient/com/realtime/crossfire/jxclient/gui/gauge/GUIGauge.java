@@ -146,6 +146,7 @@ public class GUIGauge extends GUIElement implements GUIGaugeListener
     }
 
     /** {@inheritDoc} */
+    @Override
     public void setValues(final int curValue, final int minValue, final int maxValue, final String labelText, final String tooltipText)
     {
         if (!orientation.setValues(curValue, minValue, maxValue) && this.tooltipText.equals(tooltipText))

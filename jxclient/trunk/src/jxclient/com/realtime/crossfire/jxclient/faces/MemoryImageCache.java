@@ -36,12 +36,14 @@ public class MemoryImageCache implements ImageCache
     private final Map<Face, ImageIcon> faces = new HashMap<Face, ImageIcon>();
 
     /** {@inheritDoc} */
+    @Override
     public ImageIcon load(final Face face)
     {
         return faces.get(face);
     }
 
     /** {@inheritDoc} */
+    @Override
     public void save(final Face face, final ImageIcon imageIcon)
     {
         faces.put(face, imageIcon);

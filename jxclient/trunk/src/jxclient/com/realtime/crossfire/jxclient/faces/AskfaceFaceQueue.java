@@ -77,6 +77,7 @@ public class AskfaceFaceQueue extends DefaultFaceQueue
     private final CrossfireUpdateFaceListener crossfireUpdateFaceListener = new CrossfireUpdateFaceListener()
     {
         /** {@inheritDoc} */
+        @Override
         public void updateFace(final int faceNum, final int faceSetNum, final byte[] packet, final int pos, final int len)
         {
             faceReceived(faceNum, faceSetNum, packet, pos, len);
@@ -98,6 +99,7 @@ public class AskfaceFaceQueue extends DefaultFaceQueue
     }
 
     /** {@inheritDoc} */
+    @Override
     public void reset()
     {
         synchronized (sync)
@@ -109,6 +111,7 @@ public class AskfaceFaceQueue extends DefaultFaceQueue
     }
 
     /** {@inheritDoc} */
+    @Override
     public void loadFace(final Face face)
     {
         final int faceNum = face.getFaceNum();

@@ -60,6 +60,7 @@ public abstract class AbstractButton extends ActivatableGUIElement
     private final TimeoutEvent timeoutEvent = new TimeoutEvent()
     {
         /** {@inheritDoc} */
+        @Override
         public void timeout()
         {
             execute();

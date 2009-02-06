@@ -75,6 +75,7 @@ public class MetaserverProcessor
     private final Thread thread = new Thread()
     {
         /** {@inheritDoc} */
+        @Override
         public void run()
         {
             try

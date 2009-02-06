@@ -101,30 +101,35 @@ public class ItemsManager
     private final CrossfireUpdateItemListener crossfireUpdateItemListener = new CrossfireUpdateItemListener()
     {
         /** {@inheritDoc} */
+        @Override
         public void delinvReceived(final int tag)
         {
             cleanInventory(tag);
         }
 
         /** {@inheritDoc} */
+        @Override
         public void delitemReceived(final int[] tags)
         {
             removeItems(tags);
         }
 
         /** {@inheritDoc} */
+        @Override
         public void additemReceived(final int location, final int tag, final int flags, final int weight, final int faceNum, final String name, final String namePl, final int anim, final int animSpeed, final int nrof, final int type)
         {
             addItem(new CfItem(location, tag, flags, weight, faceCache.getFace(faceNum), name, namePl, anim, animSpeed, nrof, type));
         }
 
         /** {@inheritDoc} */
+        @Override
         public void additemFinished()
         {
             fireEvents();
         }
 
         /** {@inheritDoc} */
+        @Override
         public void playerReceived(final int tag, final int weight, final int faceNum, final String name)
         {
             stats.setActiveSkill("");
@@ -134,6 +139,7 @@ public class ItemsManager
         }
 
         /** {@inheritDoc} */
+        @Override
         public void upditemReceived(final int flags, final int tag, final int valLocation, final int valFlags, final int valWeight, final int valFaceNum, final String valName, final String valNamePl, final int valAnim, final int valAnimSpeed, final int valNrof)
         {
             updateItem(flags, tag, valLocation, valFlags, valWeight, valFaceNum, valName, valNamePl, valAnim, valAnimSpeed, valNrof);
