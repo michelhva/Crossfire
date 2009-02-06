@@ -44,6 +44,7 @@ public interface JXCSkin extends Iterable<Gui>
 {
     /**
      * Loads the skin from its external representation.
+     * @param skinSource the source to load from
      * @param crossfireServerConnection the server connection to attach to
      * @param window the window to use
      * @param mouseTracker the mouse tracker to use
@@ -57,7 +58,7 @@ public interface JXCSkin extends Iterable<Gui>
      * @param currentSpellManager the current spell manager to use
      * @throws JXCSkinException if the skin cannot be loaded
      */
-    void load(CrossfireServerConnection crossfireServerConnection, JXCWindow window, MouseTracker mouseTracker, MetaserverModel metaserverModel, CommandQueue commandQueue, Resolution resolution, OptionManager optionManager, ExperienceTable experienceTable, Shortcuts shortcuts, Commands commands, CurrentSpellManager currentSpellManager) throws JXCSkinException;
+    void load(JXCSkinSource skinSource, CrossfireServerConnection crossfireServerConnection, JXCWindow window, MouseTracker mouseTracker, MetaserverModel metaserverModel, CommandQueue commandQueue, Resolution resolution, OptionManager optionManager, ExperienceTable experienceTable, Shortcuts shortcuts, Commands commands, CurrentSpellManager currentSpellManager) throws JXCSkinException;
 
     /**
      * Returns a short name for the skin. It is used to construct path or file

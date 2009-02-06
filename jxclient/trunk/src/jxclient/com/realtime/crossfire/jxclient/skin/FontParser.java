@@ -31,17 +31,17 @@ import java.io.InputStream;
 public class FontParser
 {
     /**
-     * The {@link JXCSkinLoader} for loading resources.
+     * The {@link JXCSkinSource} for loading resources.
      */
-    private final JXCSkinLoader skinLoader;
+    private final JXCSkinSource skinSource;
 
     /**
      * Creates a new instance.
-     * @param skinLoader the skin loader for loading resources
+     * @param skinSource the skin source for loading resources
      */
-    public FontParser(final JXCSkinLoader skinLoader)
+    public FontParser(final JXCSkinSource skinSource)
     {
-        this.skinLoader = skinLoader;
+        this.skinSource = skinSource;
     }
 
     /**
@@ -57,7 +57,7 @@ public class FontParser
         final Font font;
         try
         {
-            final InputStream ttf = skinLoader.getInputStream(filename);
+            final InputStream ttf = skinSource.getInputStream(filename);
             try
             {
                 try
@@ -76,7 +76,7 @@ public class FontParser
         }
         catch (final IOException ex)
         {
-            throw new IOException(skinLoader.getURI(filename)+": i/o error: "+ex.getMessage());
+            throw new IOException(skinSource.getURI(filename)+": i/o error: "+ex.getMessage());
         }
         return font;
     }

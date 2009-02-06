@@ -98,24 +98,21 @@ import com.realtime.crossfire.jxclient.window.MouseTracker;
 import java.awt.Color;
 import java.awt.Font;
 import java.awt.image.BufferedImage;
-import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.io.LineNumberReader;
 import java.util.ArrayList;
-import java.util.HashSet;
 import java.util.Iterator;
 import java.util.LinkedHashMap;
 import java.util.List;
 import java.util.Map;
-import java.util.Set;
 
 /**
  * Creates a {@link JXCSkin} instance from a file.
  * @author Andreas Kirschbaum
  */
-public abstract class JXCSkinLoader implements JXCSkin
+public class JXCSkinLoader implements JXCSkin
 {
     /**
      * The default number of ground view objects.
@@ -146,11 +143,6 @@ public abstract class JXCSkinLoader implements JXCSkin
      * The {@link CfMapUpdater} instance to use.
      */
     private final CfMapUpdater mapUpdater;
-
-    /**
-     * Available resolutions for this skin.
-     */
-    private final Set<Resolution> resolutions = new HashSet<Resolution>();
 
     /**
      * All defined gui elements.
@@ -235,12 +227,12 @@ public abstract class JXCSkinLoader implements JXCSkin
     /**
      * The {@link ImageParser} for parsing image specifications.
      */
-    private final ImageParser imageParser = new ImageParser(this);
+    private ImageParser imageParser;
 
     /**
      * The {@link FontParser} for parsing font specifications.
      */
-    private final FontParser fontParser = new FontParser(this);
+    private FontParser fontParser;
 
     /**
      * The {@link GaugeUpdaterParser} for parsing gauge specifications.
@@ -261,7 +253,7 @@ public abstract class JXCSkinLoader implements JXCSkin
      * @param mapUpdater the map updater instance to use
      * @param defaultKeyBindings the default key bindings
      */
-    protected JXCSkinLoader(final ItemsManager itemsManager, final SpellsManager spellsManager, final FacesManager facesManager, final Stats stats, final CfMapUpdater mapUpdater, final KeyBindings defaultKeyBindings)
+    public JXCSkinLoader(final ItemsManager itemsManager, final SpellsManager spellsManager, final FacesManager facesManager, final Stats stats, final CfMapUpdater mapUpdater, final KeyBindings defaultKeyBindings)
     {
         this.itemsManager = itemsManager;
         this.spellsManager = spellsManager;
@@ -274,72 +266,15 @@ public abstract class JXCSkinLoader implements JXCSkin
         guiElementParser = new GuiElementParser(definedGUIElements);
     }
 
-    /**
-     * Checks that the skin exists and can be accessed.
-     * @throws JXCSkinException if the skin does not exist or cannot be loaded
-     */
-    protected void checkAccess() throws JXCSkinException
-    {
-        try
-        {
-            final InputStream is = getInputStream("resolutions");
-            try
-            {
-                final InputStreamReader isr = new InputStreamReader(is, "UTF-8");
-                try
-                {
-                    final BufferedReader br = new BufferedReader(isr);
-                    try
-                    {
-                        for (;;)
-                        {
-                            final String line = br.readLine();
-                            if (line == null)
-                            {
-                                break;
-                            }
-
-                            final Resolution resolution = Resolution.parse(true, line);
-                            if (resolution == null)
-                            {
-                                throw new JXCSkinException(getURI("resolutions")+": invalid resolution '"+line+"' in resolutions file");
-                            }
-                            resolutions.add(resolution);
-                        }
-                    }
-                    finally
-                    {
-                        br.close();
-                    }
-                }
-                finally
-                {
-                    isr.close();
-                }
-            }
-            finally
-            {
-                is.close();
-            }
-        }
-        catch (final IOException ex)
-        {
-            throw new JXCSkinException(getURI("resolutions")+": "+ex.getMessage());
-        }
-
-        if (resolutions.isEmpty())
-        {
-            throw new JXCSkinException(getURI("resolutions")+": empty file");
-        }
-    }
-
     /** {@inheritDoc} */
     @Override
-    public void load(final CrossfireServerConnection crossfireServerConnection, final JXCWindow window, final MouseTracker mouseTracker, final MetaserverModel metaserverModel, final CommandQueue commandQueue, final Resolution resolution, final OptionManager optionManager, final ExperienceTable experienceTable, final Shortcuts shortcuts, final Commands commands, final CurrentSpellManager currentSpellManager) throws JXCSkinException
+    public void load(final JXCSkinSource skinSource, final CrossfireServerConnection crossfireServerConnection, final JXCWindow window, final MouseTracker mouseTracker, final MetaserverModel metaserverModel, final CommandQueue commandQueue, final Resolution resolution, final OptionManager optionManager, final ExperienceTable experienceTable, final Shortcuts shortcuts, final Commands commands, final CurrentSpellManager currentSpellManager) throws JXCSkinException
     {
+        imageParser = new ImageParser(skinSource);
+        fontParser = new FontParser(skinSource);
         if (resolution.isExact())
         {
-            if (!resolutions.contains(resolution))
+            if (!skinSource.containsResolution(resolution))
             {
                 throw new JXCSkinException("resolution "+resolution+" is not supported by the skin "+skinName);
             }
@@ -348,7 +283,7 @@ public abstract class JXCSkinLoader implements JXCSkin
         }
         else
         {
-            if (resolutions.contains(resolution))
+            if (skinSource.containsResolution(resolution))
             {
                 selectedResolution = resolution;
             }
@@ -356,7 +291,7 @@ public abstract class JXCSkinLoader implements JXCSkin
             {
                 Resolution selectedCandidate = null;
                 // select maximum <= requested
-                for (final Resolution candidate: resolutions)
+                for (final Resolution candidate: skinSource)
                 {
                     if (candidate.getWidth() <= resolution.getWidth() && candidate.getHeight() <= resolution.getHeight())
                     {
@@ -369,7 +304,7 @@ public abstract class JXCSkinLoader implements JXCSkin
                 if (selectedCandidate == null)
                 {
                     // select minimum > requested
-                    for (final Resolution candidate: resolutions)
+                    for (final Resolution candidate: skinSource)
                     {
                         if (selectedCandidate == null || selectedCandidate.getArea() > candidate.getArea())
                         {
@@ -404,7 +339,7 @@ public abstract class JXCSkinLoader implements JXCSkin
         checkBoxFactory = null;
         try
         {
-            load("global", selectedResolution, crossfireServerConnection, window, mouseTracker, metaserverModel, commandQueue, null, optionManager, experienceTable, shortcuts, commands, currentSpellManager);
+            load(skinSource, "global", selectedResolution, crossfireServerConnection, window, mouseTracker, metaserverModel, commandQueue, null, optionManager, experienceTable, shortcuts, commands, currentSpellManager);
             for (;;)
             {
                 final String name = dialogs.getDialogToLoad();
@@ -413,7 +348,7 @@ public abstract class JXCSkinLoader implements JXCSkin
                     break;
                 }
                 final Gui gui = dialogs.lookup(name);
-                load(name, selectedResolution, crossfireServerConnection, window, mouseTracker, metaserverModel, commandQueue, gui, optionManager, experienceTable, shortcuts, commands, currentSpellManager);
+                load(skinSource, name, selectedResolution, crossfireServerConnection, window, mouseTracker, metaserverModel, commandQueue, gui, optionManager, experienceTable, shortcuts, commands, currentSpellManager);
                 gui.setStateChanged(false);
             }
         }
@@ -588,6 +523,7 @@ public abstract class JXCSkinLoader implements JXCSkin
 
     /**
      * Loads a skin file and add the entries to a {@link Gui} instance.
+     * @param skinSource th source to load from
      * @param dialogName the key to identify this dialog
      * @param resolution the preferred resolution
      * @param server the server connection to monitor
@@ -603,7 +539,7 @@ public abstract class JXCSkinLoader implements JXCSkin
      * @param currentSpellManager the current spell manager to use
      * @throws JXCSkinException if the file cannot be loaded
      */
-    private void load(final String dialogName, final Resolution resolution, final CrossfireServerConnection server, final JXCWindow window, final MouseTracker mouseTracker, final MetaserverModel metaserverModel, final CommandQueue commandQueue, final Gui gui, final OptionManager optionManager, final ExperienceTable experienceTable, final Shortcuts shortcuts, final Commands commands, final CurrentSpellManager currentSpellManager) throws JXCSkinException
+    private void load(final JXCSkinSource skinSource, final String dialogName, final Resolution resolution, final CrossfireServerConnection server, final JXCWindow window, final MouseTracker mouseTracker, final MetaserverModel metaserverModel, final CommandQueue commandQueue, final Gui gui, final OptionManager optionManager, final ExperienceTable experienceTable, final Shortcuts shortcuts, final Commands commands, final CurrentSpellManager currentSpellManager) throws JXCSkinException
     {
         String resourceName = dialogName+"@"+resolution+".skin";
 
@@ -613,16 +549,16 @@ public abstract class JXCSkinLoader implements JXCSkin
             InputStream inputStream;
             try
             {
-                inputStream = getInputStream(resourceName);
+                inputStream = skinSource.getInputStream(resourceName);
             }
             catch (final IOException ex)
             {
                 resourceName = dialogName+".skin";
-                inputStream = getInputStream(resourceName);
+                inputStream = skinSource.getInputStream(resourceName);
             }
             try
             {
-                load(dialogName, resourceName, inputStream, server, window, mouseTracker, metaserverModel, commandQueue, gui, optionManager, experienceTable, shortcuts, commands, currentSpellManager);
+                load(skinSource, dialogName, resourceName, inputStream, server, window, mouseTracker, metaserverModel, commandQueue, gui, optionManager, experienceTable, shortcuts, commands, currentSpellManager);
             }
             finally
             {
@@ -631,11 +567,11 @@ public abstract class JXCSkinLoader implements JXCSkin
         }
         catch (final IOException ex)
         {
-            throw new JXCSkinException(getURI(resourceName)+": "+ex.getMessage());
+            throw new JXCSkinException(skinSource.getURI(resourceName)+": "+ex.getMessage());
         }
         catch (final JXCSkinException ex)
         {
-            throw new JXCSkinException(getURI(resourceName)+": "+ex.getMessage());
+            throw new JXCSkinException(skinSource.getURI(resourceName)+": "+ex.getMessage());
         }
         finally
         {
@@ -644,22 +580,8 @@ public abstract class JXCSkinLoader implements JXCSkin
     }
 
     /**
-     * Returns an {@link InputStream} for a resource name.
-     * @param name the resource name
-     * @return the input stream for the resource
-     * @throws IOException if the resource cannot be loaded
-     */
-    protected abstract InputStream getInputStream(final String name) throws IOException;
-
-    /**
-     * Returns a description of the location of a resource name.
-     * @param name the resource name
-     * @return the description of the resource
-     */
-    protected abstract String getURI(final String name);
-
-    /**
      * Loads a skin file and add the entries to a {@link Gui} instance.
+     * @param skinSource the source to load from
      * @param dialogName the key to identify this dialog
      * @param resourceName the name of the skin resource; used to construct
      * error messages
@@ -677,7 +599,7 @@ public abstract class JXCSkinLoader implements JXCSkin
      * @param currentSpellManager the current spell manager to use
      * @throws JXCSkinException if the file cannot be loaded
      */
-    private void load(final String dialogName, final String resourceName, final InputStream inputStream, final CrossfireServerConnection server, final JXCWindow window, final MouseTracker mouseTracker, final MetaserverModel metaserverModel, final CommandQueue commandQueue, final Gui gui, final OptionManager optionManager, final ExperienceTable experienceTable, final Shortcuts shortcuts, final Commands commands, final CurrentSpellManager currentSpellManager) throws JXCSkinException
+    private void load(final JXCSkinSource skinSource, final String dialogName, final String resourceName, final InputStream inputStream, final CrossfireServerConnection server, final JXCWindow window, final MouseTracker mouseTracker, final MetaserverModel metaserverModel, final CommandQueue commandQueue, final Gui gui, final OptionManager optionManager, final ExperienceTable experienceTable, final Shortcuts shortcuts, final Commands commands, final CurrentSpellManager currentSpellManager) throws JXCSkinException
     {
         final List<GUIElement> addedElements = new ArrayList<GUIElement>();
         boolean addedElementsContainsWildcard = false;
@@ -1875,7 +1797,7 @@ public abstract class JXCSkinLoader implements JXCSkin
         }
         catch (final IOException ex)
         {
-            throw new JXCSkinException(getURI(resourceName)+": "+ex.getMessage());
+            throw new JXCSkinException(skinSource.getURI(resourceName)+": "+ex.getMessage());
         }
 
         assert gui != null || !definedGUIElements.iterator().hasNext();

@@ -58,9 +58,11 @@ import com.realtime.crossfire.jxclient.settings.options.OptionManager;
 import com.realtime.crossfire.jxclient.shortcuts.Shortcuts;
 import com.realtime.crossfire.jxclient.skills.SkillSet;
 import com.realtime.crossfire.jxclient.skin.JXCSkin;
-import com.realtime.crossfire.jxclient.skin.JXCSkinClassLoader;
-import com.realtime.crossfire.jxclient.skin.JXCSkinDirLoader;
+import com.realtime.crossfire.jxclient.skin.JXCSkinClassSource;
+import com.realtime.crossfire.jxclient.skin.JXCSkinDirSource;
 import com.realtime.crossfire.jxclient.skin.JXCSkinException;
+import com.realtime.crossfire.jxclient.skin.JXCSkinLoader;
+import com.realtime.crossfire.jxclient.skin.JXCSkinSource;
 import com.realtime.crossfire.jxclient.skin.Resolution;
 import com.realtime.crossfire.jxclient.sound.MusicWatcher;
 import com.realtime.crossfire.jxclient.sound.SoundManager;
@@ -1126,17 +1128,18 @@ public class JXCWindow extends JFrame
         // check for skin in directory
         final File dir = new File(skinName);
         final KeyBindings defaultKeyBindings = new KeyBindings(null, commands, this);
-        final JXCSkin newSkin;
+        final JXCSkinSource skinSource;
         if (dir.exists() && dir.isDirectory())
         {
-            newSkin = new JXCSkinDirLoader(itemsManager, spellsManager, facesManager, stats, mapUpdater, dir, defaultKeyBindings);
+            skinSource = new JXCSkinDirSource(dir);
         }
         else
         {
             // fallback: built-in resource
-            newSkin = new JXCSkinClassLoader(itemsManager, spellsManager, facesManager, stats, mapUpdater, "com/realtime/crossfire/jxclient/skins/"+skinName, defaultKeyBindings);
+            skinSource = new JXCSkinClassSource("com/realtime/crossfire/jxclient/skins/"+skinName);
         }
-        newSkin.load(server, this, mouseTracker, metaserverModel, commandQueue, resolution, optionManager, experienceTable, shortcuts, commands, currentSpellManager);
+        final JXCSkin newSkin = new JXCSkinLoader(itemsManager, spellsManager, facesManager, stats, mapUpdater, defaultKeyBindings);
+        newSkin.load(skinSource, server, this, mouseTracker, metaserverModel, commandQueue, resolution, optionManager, experienceTable, shortcuts, commands, currentSpellManager);
         return newSkin;
     }
 
