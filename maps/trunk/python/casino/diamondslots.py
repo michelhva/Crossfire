@@ -32,7 +32,7 @@ spinners = 4 #How many spinners on the slotmachine?
 Slots=CFGamble.SlotMachine(slotname,slotlist,minpot,maxpot)
 
 object = activator.CheckInventory(cointype)
-if (object):
+if (object) and not object.Unpaid:
     pay = CFItemBroker.Item(object).subtract(cost)
     if (pay):
        Slots.placebet(cost)
