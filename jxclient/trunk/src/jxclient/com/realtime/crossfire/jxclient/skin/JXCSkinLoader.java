@@ -309,7 +309,7 @@ public class JXCSkinLoader
         checkBoxFactory = null;
         try
         {
-            load(skinSource, "global", crossfireServerConnection, window, mouseTracker, metaserverModel, commandQueue, null, optionManager, experienceTable, shortcuts, commands, currentSpellManager);
+            load(skinSource, "global", crossfireServerConnection, window, mouseTracker, metaserverModel, commandQueue, null, experienceTable, shortcuts, commands, currentSpellManager);
             for (;;)
             {
                 final String name = skin.getDialogToLoad();
@@ -318,7 +318,7 @@ public class JXCSkinLoader
                     break;
                 }
                 final Gui gui = skin.getDialog(name);
-                load(skinSource, name, crossfireServerConnection, window, mouseTracker, metaserverModel, commandQueue, gui, optionManager, experienceTable, shortcuts, commands, currentSpellManager);
+                load(skinSource, name, crossfireServerConnection, window, mouseTracker, metaserverModel, commandQueue, gui, experienceTable, shortcuts, commands, currentSpellManager);
                 gui.setStateChanged(false);
             }
         }
@@ -349,14 +349,13 @@ public class JXCSkinLoader
      * @param metaserverModel the metaserver model to use
      * @param commandQueue the command queue for sending commands
      * @param gui the Gui representing the skin file
-     * @param optionManager the option manager instance to use
      * @param experienceTable the experience table to use
      * @param shortcuts the shortcuts instance
      * @param commands the commands instance for executing commands
      * @param currentSpellManager the current spell manager to use
      * @throws JXCSkinException if the file cannot be loaded
      */
-    private void load(final JXCSkinSource skinSource, final String dialogName, final CrossfireServerConnection server, final JXCWindow window, final MouseTracker mouseTracker, final MetaserverModel metaserverModel, final CommandQueue commandQueue, final Gui gui, final OptionManager optionManager, final ExperienceTable experienceTable, final Shortcuts shortcuts, final Commands commands, final CurrentSpellManager currentSpellManager) throws JXCSkinException
+    private void load(final JXCSkinSource skinSource, final String dialogName, final CrossfireServerConnection server, final JXCWindow window, final MouseTracker mouseTracker, final MetaserverModel metaserverModel, final CommandQueue commandQueue, final Gui gui, final ExperienceTable experienceTable, final Shortcuts shortcuts, final Commands commands, final CurrentSpellManager currentSpellManager) throws JXCSkinException
     {
         String resourceName = dialogName+"@"+skin.getSelectedResolution()+".skin";
 
@@ -375,7 +374,7 @@ public class JXCSkinLoader
             }
             try
             {
-                load(skinSource, dialogName, resourceName, inputStream, server, window, mouseTracker, metaserverModel, commandQueue, gui, optionManager, experienceTable, shortcuts, commands, currentSpellManager);
+                load(skinSource, dialogName, resourceName, inputStream, server, window, mouseTracker, metaserverModel, commandQueue, gui, experienceTable, shortcuts, commands, currentSpellManager);
             }
             finally
             {
@@ -409,14 +408,13 @@ public class JXCSkinLoader
      * @param metaserverModel the metaserver model to use
      * @param commandQueue the command queue for sending commands
      * @param gui the Gui representing the skin file
-     * @param optionManager the option manager instance to use
      * @param experienceTable the experience table to use
      * @param shortcuts the shortcuts instance
      * @param commands the commands instance for executing commands
      * @param currentSpellManager the current spell manager to use
      * @throws JXCSkinException if the file cannot be loaded
      */
-    private void load(final JXCSkinSource skinSource, final String dialogName, final String resourceName, final InputStream inputStream, final CrossfireServerConnection server, final JXCWindow window, final MouseTracker mouseTracker, final MetaserverModel metaserverModel, final CommandQueue commandQueue, final Gui gui, final OptionManager optionManager, final ExperienceTable experienceTable, final Shortcuts shortcuts, final Commands commands, final CurrentSpellManager currentSpellManager) throws JXCSkinException
+    private void load(final JXCSkinSource skinSource, final String dialogName, final String resourceName, final InputStream inputStream, final CrossfireServerConnection server, final JXCWindow window, final MouseTracker mouseTracker, final MetaserverModel metaserverModel, final CommandQueue commandQueue, final Gui gui, final ExperienceTable experienceTable, final Shortcuts shortcuts, final Commands commands, final CurrentSpellManager currentSpellManager) throws JXCSkinException
     {
         final List<GUIElement> addedElements = new ArrayList<GUIElement>();
         boolean addedElementsContainsWildcard = false;
