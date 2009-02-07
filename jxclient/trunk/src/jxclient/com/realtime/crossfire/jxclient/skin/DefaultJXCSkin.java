@@ -24,12 +24,17 @@ import com.realtime.crossfire.jxclient.gui.GUIElement;
 import com.realtime.crossfire.jxclient.gui.Gui;
 import com.realtime.crossfire.jxclient.gui.keybindings.KeyBindings;
 import com.realtime.crossfire.jxclient.items.ItemsManager;
+import com.realtime.crossfire.jxclient.settings.options.CommandCheckBoxOption;
+import com.realtime.crossfire.jxclient.settings.options.OptionException;
+import com.realtime.crossfire.jxclient.settings.options.OptionManager;
 import com.realtime.crossfire.jxclient.window.GUICommandList;
 import com.realtime.crossfire.jxclient.window.JXCWindow;
 import com.realtime.crossfire.jxclient.window.MouseTracker;
 import java.util.ArrayList;
+import java.util.HashSet;
 import java.util.Iterator;
 import java.util.List;
+import java.util.Set;
 
 public class DefaultJXCSkin implements JXCSkin
 {
@@ -83,13 +88,30 @@ public class DefaultJXCSkin implements JXCSkin
      */
     private final KeyBindings defaultKeyBindings;
 
-    public DefaultJXCSkin(final KeyBindings defaultKeyBindings)
+    /**
+     * The {@link OptionManager} to use.
+     */
+    private final OptionManager optionManager;
+
+    /**
+     * The defined option names.
+     */
+    private final Set<String> optionNames = new HashSet<String>();
+
+    /**
+     * Creates a new instance.
+     * @param defaultKeyBindings the default key bindings
+     * @param optionManager the option manager to use
+     */
+    public DefaultJXCSkin(final KeyBindings defaultKeyBindings, final OptionManager optionManager)
     {
         this.defaultKeyBindings = defaultKeyBindings;
+        this.optionManager = optionManager;
     }
 
     public void reset()
     {
+        unload();
         skinName = "unknown";
         mapWidth = 0;
         mapHeight = 0;
@@ -300,6 +322,16 @@ public class DefaultJXCSkin implements JXCSkin
         return defaultKeyBindings;
     }
 
+    /** {@inheritDoc} */
+    @Override
+    public void unload()
+    {
+        for (final String optionName : optionNames)
+        {
+            optionManager.removeOption(optionName);
+        }
+    }
+
     public CommandParser newCommandParser(final ItemsManager itemsManager, final ExpressionParser expressionParser, final JXCSkinCache<GUIElement> definedGUIElements)
     {
         return new CommandParser(dialogs, itemsManager, expressionParser, definedGUIElements);
@@ -344,5 +376,18 @@ public class DefaultJXCSkin implements JXCSkin
     public void setNumLookObjects(final int numLookObjects)
     {
         this.numLookObjects = numLookObjects;
+    }
+
+    public void addOption(final String optionName, final String documentation, final CommandCheckBoxOption commandCheckBoxOption) throws JXCSkinException
+    {
+        try
+        {
+            optionManager.addOption(optionName, documentation, commandCheckBoxOption);
+        }
+        catch (final OptionException ex)
+        {
+            throw new JXCSkinException(ex.getMessage());
+        }
+        optionNames.add(optionName);
     }
 }

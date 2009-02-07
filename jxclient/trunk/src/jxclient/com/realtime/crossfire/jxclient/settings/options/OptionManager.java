@@ -76,6 +76,17 @@ public class OptionManager
     }
 
     /**
+     * Removes an option by name. Does nothing if the option does not exist.
+     * @param optionName the option name to remove
+     */
+    public void removeOption(final String optionName)
+    {
+        if (optionName == null) throw new IllegalArgumentException();
+
+        options.remove(optionName);
+    }
+
+    /**
      * Return a check box option.
      *
      * @param optionName The option name to look up.
