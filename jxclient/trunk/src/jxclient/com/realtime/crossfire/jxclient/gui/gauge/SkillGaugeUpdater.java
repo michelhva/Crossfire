@@ -74,6 +74,13 @@ public class SkillGaugeUpdater extends GaugeUpdater
     {
         super(experienceTable);
         this.skill = skill;
-        skill.addSkillListener(skillListener);
+        this.skill.addSkillListener(skillListener);
+    }
+
+    /** {@inheritDoc} */
+    @Override
+    public void dispose()
+    {
+        skill.removeSkillListener(skillListener);
     }
 }

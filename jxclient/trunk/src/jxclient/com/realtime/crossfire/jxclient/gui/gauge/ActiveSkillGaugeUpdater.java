@@ -36,6 +36,11 @@ public class ActiveSkillGaugeUpdater extends GaugeUpdater
     private final String skill;
 
     /**
+     * The stats instance to watch.
+     */
+    private final Stats stats;
+
+    /**
      * The {@link StatsListener} registered to be notified about stat
      * changes.
      */
@@ -111,6 +116,14 @@ public class ActiveSkillGaugeUpdater extends GaugeUpdater
     {
         super(experienceTable);
         this.skill = skill;
-        stats.addCrossfireStatsListener(statsListener);
+        this.stats = stats;
+        this.stats.addCrossfireStatsListener(statsListener);
+    }
+
+    /** {@inheritDoc} */
+    @Override
+    public void dispose()
+    {
+        stats.removeCrossfireStatsListener(statsListener);
     }
 }

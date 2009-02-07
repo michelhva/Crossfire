@@ -49,6 +49,11 @@ public abstract class GaugeUpdater
     }
 
     /**
+     * Frees allocated resources.
+     */
+    public abstract void dispose();
+
+    /**
      * Set the gauge to update.
      *
      * @param gauge The gauge.

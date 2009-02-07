@@ -52,6 +52,11 @@ public class StatGaugeUpdater extends GaugeUpdater
     private final Stats stats;
 
     /**
+     * The {@link ItemsManager} instance to watch.
+     */
+    private final ItemsManager itemsManager;
+
+    /**
      * Whether the low food event should be generated.
      */
     private boolean active = false;
@@ -207,7 +212,16 @@ public class StatGaugeUpdater extends GaugeUpdater
         super(experienceTable);
         this.stat = stat;
         this.stats = stats;
-        stats.addCrossfireStatsListener(statsListener);
-        itemsManager.addCrossfirePlayerListener(playerListener);
+        this.itemsManager = itemsManager;
+        this.stats.addCrossfireStatsListener(statsListener);
+        this.itemsManager.addCrossfirePlayerListener(playerListener);
+    }
+
+    /** {@inheritDoc} */
+    @Override
+    public void dispose()
+    {
+        itemsManager.removeCrossfirePlayerListener(playerListener);
+        stats.removeCrossfireStatsListener(statsListener);
     }
 }
