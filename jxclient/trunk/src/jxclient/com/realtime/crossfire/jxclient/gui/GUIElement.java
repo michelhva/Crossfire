@@ -134,6 +134,13 @@ public abstract class GUIElement extends JPanel
     }
 
     /**
+     * Releases all allocated resources.
+     */
+    public void dispose()
+    {
+    }
+
+    /**
      * Return the {@link Gui} this element is part of.
      *
      * @return The gui, or <code>null</code>.

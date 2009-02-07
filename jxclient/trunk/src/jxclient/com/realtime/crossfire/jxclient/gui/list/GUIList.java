@@ -149,6 +149,15 @@ public abstract class GUIList extends ActivatableGUIElement
 
     /** {@inheritDoc} */
     @Override
+    public void dispose()
+    {
+        super.dispose();
+        list.removeListSelectionListener(listSelectionListener);
+        resizeElements(0);
+    }
+
+    /** {@inheritDoc} */
+    @Override
     protected void render(final Graphics g)
     {
         final Graphics2D g2 = (Graphics2D)g;
@@ -200,7 +209,7 @@ public abstract class GUIList extends ActivatableGUIElement
                 final GUIElement element = (GUIElement)model.get(i);
                 if (element instanceof GUIItemItem)
                 {
-                    ((GUIItemItem)element).destroy();
+                    element.dispose();
                 }
             }
             model.removeRange(newSize, oldSize-1);

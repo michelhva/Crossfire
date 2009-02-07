@@ -61,6 +61,13 @@ public abstract class AbstractLabel extends GUIElement
         this.backgroundColor = backgroundColor;
     }
 
+    /** {@inheritDoc} */
+    @Override
+    public void dispose()
+    {
+        super.dispose();
+    }
+
     public void setText(final String text)
     {
         if (text == null) throw new IllegalArgumentException();

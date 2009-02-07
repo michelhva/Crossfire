@@ -58,6 +58,13 @@ public abstract class ActivatableGUIElement extends GUIElement
         super(window, name, x, y, w, h, transparency);
     }
 
+    /** {@inheritDoc} */
+    @Override
+    public void dispose()
+    {
+        super.dispose();
+    }
+
     /**
      * Set the active state.
      *

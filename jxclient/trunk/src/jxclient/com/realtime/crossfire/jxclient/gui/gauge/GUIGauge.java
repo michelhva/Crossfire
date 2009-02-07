@@ -102,6 +102,13 @@ public class GUIGauge extends GUIElement implements GUIGaugeListener
         setValues(0, 0, 0, "", "");
     }
 
+    /** {@inheritDoc} */
+    @Override
+    public void dispose()
+    {
+        super.dispose();
+    }
+
     /**
      * Validates an images's size: checks if the given image has the given size
      * (in pixels).

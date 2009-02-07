@@ -138,6 +138,14 @@ public abstract class GUILog extends GUIElement implements GUIScrollable2
 
     /** {@inheritDoc} */
     @Override
+    public void dispose()
+    {
+        super.dispose();
+        renderStateManager.dispose();
+    }
+
+    /** {@inheritDoc} */
+    @Override
     protected void render(final Graphics g)
     {
         if (renderStateManager == null)

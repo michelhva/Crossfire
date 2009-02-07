@@ -55,6 +55,15 @@ public abstract class Option
     }
 
     /**
+     * Removes a listener for state changes.
+     * @param listener the listener to remove
+     */
+    public void removeOptionListener(final OptionListener listener)
+    {
+        listeners.remove(OptionListener.class, listener);
+    }
+
+    /**
      * Whether the option should not be saved. This function can be overridden
      * for options that are otherwise saved, or for options that should not be
      * saved at all.

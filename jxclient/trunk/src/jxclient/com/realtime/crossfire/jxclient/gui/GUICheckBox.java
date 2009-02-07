@@ -74,6 +74,19 @@ public class GUICheckBox extends ActivatableGUIElement
     private final CheckBoxOption option;
 
     /**
+     * The {@link OptionListener} attached to {@link #option}.
+     */
+    private final OptionListener optionListener = new OptionListener()
+    {
+        /** {@inheritDoc} */
+        @Override
+        public void stateChanged()
+        {
+            setChanged();
+        }
+    };
+
+    /**
      * Create a new instance.
      *
      * @param window The <code>JXCWindow</code> this element belongs to.
@@ -123,15 +136,15 @@ public class GUICheckBox extends ActivatableGUIElement
         this.font = font;
         this.color = color;
         this.option = option;
-        option.addOptionListener(new OptionListener()
-            {
-                /** {@inheritDoc} */
-                @Override
-                public void stateChanged()
-                {
-                    setChanged();
-                }
-            });
+        this.option.addOptionListener(optionListener);
+    }
+
+    /** {@inheritDoc} */
+    @Override
+    public void dispose()
+    {
+        super.dispose();
+        option.removeOptionListener(optionListener);
     }
 
     /** {@inheritDoc} */

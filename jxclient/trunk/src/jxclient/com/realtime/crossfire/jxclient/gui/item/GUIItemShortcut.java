@@ -110,7 +110,15 @@ public class GUIItemShortcut extends GUIItem
         this.font = font;
         this.index = index;
         this.currentSpellManager = currentSpellManager;
-        shortcuts.addShortcutsListener(shortcutsListener);
+        this.shortcuts.addShortcutsListener(shortcutsListener);
+    }
+
+    /** {@inheritDoc} */
+    @Override
+    public void dispose()
+    {
+        super.dispose();
+        shortcuts.removeShortcutsListener(shortcutListener);
     }
 
     /* {@inheritDoc} */

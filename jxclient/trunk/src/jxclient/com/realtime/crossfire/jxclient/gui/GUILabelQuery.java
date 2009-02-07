@@ -39,6 +39,11 @@ public class GUILabelQuery extends GUIMultiLineLabel
     private static final long serialVersionUID = 1;
 
     /**
+     * The {@link CrossfireServerConnection} to monitor.
+     */
+    private final CrossfireServerConnection crossfireServerConnection;
+
+    /**
      * The {@link CrossfireQueryListener} registered to receive query commands.
      */
     private final CrossfireQueryListener crossfireQueryListener = new CrossfireQueryListener()
@@ -77,6 +82,15 @@ public class GUILabelQuery extends GUIMultiLineLabel
     public GUILabelQuery(final JXCWindow window, final String name, final int x, final int y, final int w, final int h, final CrossfireServerConnection crossfireServerConnection, final Font font, final Color color, final Color backgroundColor)
     {
         super(window, name, x, y, w, h, null, font, color, backgroundColor, Alignment.LEFT, "");
-        crossfireServerConnection.addCrossfireQueryListener(crossfireQueryListener);
+        this.crossfireServerConnection = crossfireServerConnection;
+        this.crossfireServerConnection.addCrossfireQueryListener(crossfireQueryListener);
+    }
+
+    /** {@inheritDoc} */
+    @Override
+    public void dispose()
+    {
+        super.dispose();
+        crossfireServerConnection.removeCrossfireQueryListener(crossfireQueryListener);
     }
 }

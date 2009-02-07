@@ -137,8 +137,17 @@ public class GUIItemSpelllist extends GUIItem
         this.selectorImage = selectorImage;
         this.currentSpellManager = currentSpellManager;
         setIndex(defaultIndex);
-        spellsManager.addCrossfireSpellChangedListener(spellsManagerListener);
-        facesManager.addFacesManagerListener(facesManagerListener);
+        this.spellsManager.addCrossfireSpellChangedListener(spellsManagerListener);
+        this.facesManager.addFacesManagerListener(facesManagerListener);
+    }
+
+    /** {@inheritDoc} */
+    @Override
+    public void dispose()
+    {
+        super.dispose();
+        spellsManager.removeCrossfireSpellChangedListener(spellsManagerListener);
+        facesManager.removeFacesManagerListener(facesManagerListener);
     }
 
     /** {@inheritDoc} */

@@ -101,9 +101,15 @@ public class RenderStateManager
     {
         this.renderStateListener = renderStateListener;
         this.buffer = buffer;
-        buffer.addBufferListener(bufferListener);
+        this.buffer.addBufferListener(bufferListener);
         renderState.setHeight(buffer, renderStateListener.getHeight());
         fireChanges();
+    }
+
+    /** {@inheritDoc} */
+    public void dispose()
+    {
+        buffer.removeBufferListener(bufferListener);
     }
 
     /**

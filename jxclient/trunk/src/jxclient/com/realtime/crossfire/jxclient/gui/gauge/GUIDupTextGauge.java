@@ -82,6 +82,13 @@ public class GUIDupTextGauge extends GUIDupGauge
 
     /** {@inheritDoc} */
     @Override
+    public void dispose()
+    {
+        super.dispose();
+    }
+
+    /** {@inheritDoc} */
+    @Override
     protected void render(final Graphics g)
     {
         super.render(g);

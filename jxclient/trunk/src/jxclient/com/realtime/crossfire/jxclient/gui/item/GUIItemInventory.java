@@ -114,9 +114,9 @@ public class GUIItemInventory extends GUIItemItem
 
     /** {@inheritDoc} */
     @Override
-    public void destroy()
+    public void dispose()
     {
-        super.destroy();
+        super.dispose();
         setIndex(-1);
     }
 

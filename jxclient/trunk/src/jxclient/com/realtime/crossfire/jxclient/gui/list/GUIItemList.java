@@ -53,6 +53,13 @@ public abstract class GUIItemList extends GUIList
         super(window, name, x, y, w, h, cellHeight, listCellRenderer);
     }
 
+    /** {@inheritDoc} */
+    @Override
+    public void dispose()
+    {
+        super.dispose();
+    }
+
     /**
      * Returns the selected {@link GUIItemItem} instance.
      * @return the selected instance or <code>null</code> if none is selected

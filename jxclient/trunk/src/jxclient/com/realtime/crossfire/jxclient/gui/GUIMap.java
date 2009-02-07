@@ -352,12 +352,23 @@ public class GUIMap extends GUIElement
         final GraphicsConfiguration gconf = gd.getDefaultConfiguration();
         blackTile = new ImageIcon(gconf.createCompatibleImage(tileSize, tileSize, Transparency.OPAQUE));
 
-        mapUpdater.addCrossfireMapListener(mapListener);
-        mapUpdater.addCrossfireNewmapListener(newmapListener);
-        mapUpdater.addCrossfireMapscrollListener(mapscrollListener);
+        this.mapUpdater.addCrossfireMapListener(mapListener);
+        this.mapUpdater.addCrossfireNewmapListener(newmapListener);
+        this.mapUpdater.addCrossfireMapscrollListener(mapscrollListener);
 
-        crossfireServerConnection.addMapSizeListener(mapSizeListener);
+        this.crossfireServerConnection.addMapSizeListener(mapSizeListener);
         setMapSize(crossfireServerConnection.getMapWidth(), crossfireServerConnection.getMapHeight());
+    }
+
+    /** {@inheritDoc} */
+    @Override
+    public void dispose()
+    {
+        super.dispose();
+        crossfireServerConnection.removeMapSizeListener(mapSizeListener);
+        mapUpdater.removeCrossfireNewmapListener(newmapListener);
+        mapUpdater.removeCrossfireMapscrollListener(mapscrollListener);
+        mapUpdater.removeCrossfireMapListener(mapListener);
     }
 
     /**
