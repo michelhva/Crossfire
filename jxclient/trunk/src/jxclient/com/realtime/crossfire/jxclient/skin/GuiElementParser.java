@@ -30,17 +30,17 @@ import com.realtime.crossfire.jxclient.gui.textinput.GUIText;
 public class GuiElementParser
 {
     /**
-     * All defined gui elements.
+     * The skin for lookin up defined GUI elements.
      */
-    private final JXCSkinCache<GUIElement> definedGUIElements;
+    private final JXCSkin skin;
 
     /**
      * Creates a new instance.
-     * @param definedGUIElements all defined gui elements
+     * @param skin the skin for looking up defined GUI elements
      */
-    public GuiElementParser(final JXCSkinCache<GUIElement> definedGUIElements)
+    public GuiElementParser(final JXCSkin skin)
     {
-        this.definedGUIElements = definedGUIElements;
+        this.skin = skin;
     }
 
     /**
@@ -51,7 +51,7 @@ public class GuiElementParser
      */
     public GUIText lookupTextElement(final String name) throws JXCSkinException
     {
-        final GUIElement element = definedGUIElements.lookup(name);
+        final GUIElement element = skin.lookupGuiElement(name);
         if (!(element instanceof GUIText))
         {
             throw new JXCSkinException("element "+name+" is not a text field");
@@ -68,7 +68,7 @@ public class GuiElementParser
      */
     public AbstractLabel lookupLabelElement(final String name) throws JXCSkinException
     {
-        final GUIElement element = definedGUIElements.lookup(name);
+        final GUIElement element = skin.lookupGuiElement(name);
         if (!(element instanceof AbstractLabel))
         {
             throw new JXCSkinException("element "+name+" is not a label");
