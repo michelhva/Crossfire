@@ -123,7 +123,7 @@ public class GUIMetaElement extends ActivatableGUIElement implements GUIScrollab
         index = defaultIndex;
         this.format = format;
         this.tooltip = tooltip;
-        this.metaserverModel.addMetaserverEntryListener(this.index, metaserverEntryListener);
+        this.metaserverModel.addMetaserverEntryListener(index, metaserverEntryListener);
         setChanged();
         updateTooltip();
     }

@@ -129,6 +129,7 @@ public abstract class GUIItemItem extends GUIItem
     {
         super.dispose();
         facesManager.removeFacesManagerListener(facesManagerListener);
+        setItem(null);
     }
 
     /** {@inheritDoc} */

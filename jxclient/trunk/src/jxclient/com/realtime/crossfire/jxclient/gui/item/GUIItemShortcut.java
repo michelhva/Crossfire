@@ -65,6 +65,12 @@ public class GUIItemShortcut extends GUIItem
 
     private final CurrentSpellManager currentSpellManager;
 
+    /**
+     * The currently monitored {@link Shortcut} instance. Set to
+     * <code>null</code> if not active.
+     */
+    private Shortcut shortcut = null;
+
     private final ShortcutsListener shortcutsListener = new ShortcutsListener()
     {
         /** {@inheritDoc} */
@@ -73,8 +79,7 @@ public class GUIItemShortcut extends GUIItem
         {
             if (index == GUIItemShortcut.this.index)
             {
-                shortcut.addShortcutListener(shortcutListener);
-                setChanged();
+                setShortcut(shortcut);
             }
         }
 
@@ -84,8 +89,7 @@ public class GUIItemShortcut extends GUIItem
         {
             if (index == GUIItemShortcut.this.index)
             {
-                shortcut.removeShortcutListener(shortcutListener);
-                setChanged();
+                setShortcut(null);
             }
         }
     };
@@ -119,6 +123,31 @@ public class GUIItemShortcut extends GUIItem
     {
         super.dispose();
         shortcuts.removeShortcutsListener(shortcutListener);
+        setShortcut(null);
+    }
+
+    /**
+     * Updates {@link #shortcut} and registers/deregisteres {@link
+     * #shortcutListener}.
+     * @param shortcut the new shortcut
+     */
+    private void setShortcut(final Shortcut shortcut)
+    {
+        if (this.shortcut == shortcut)
+        {
+            return;
+        }
+
+        if (this.shortcut != null)
+        {
+            this.shortcut.removeShortcutListener(shortcutListener);
+        }
+        this.shortcut = shortcut;
+        if (this.shortcut != null)
+        {
+            this.shortcut.addShortcutListener(shortcutListener);
+        }
+        setChanged();
     }
 
     /* {@inheritDoc} */
