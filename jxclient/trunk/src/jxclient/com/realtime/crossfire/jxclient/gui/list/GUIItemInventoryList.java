@@ -117,8 +117,16 @@ public class GUIItemInventoryList extends GUIItemList
         this.itemsManager = itemsManager;
         this.currentItem = currentItem;
         setLayoutOrientation(JList.HORIZONTAL_WRAP, -1);
-        itemsManager.getInventoryManager().addLocationsListener(locationsListener);
+        this.itemsManager.getInventoryManager().addLocationsListener(locationsListener);
         rebuildList();
+    }
+
+    /** {@inheritDoc} */
+    @Override
+    public void dispose()
+    {
+        super.dispose();
+        itemsManager.getInventoryManager().removeLocationsListener(locationsListener);
     }
 
     /**

@@ -74,6 +74,13 @@ public class GUIOneLineLabel extends GUILabel
 
     /** {@inheritDoc} */
     @Override
+    public void dispose()
+    {
+        super.dispose();
+    }
+
+    /** {@inheritDoc} */
+    @Override
     protected void render(final Graphics g)
     {
         super.render(g);

@@ -144,19 +144,19 @@ public class GUIItemFloor extends GUIItemItem
         this.facesManager = facesManager;
         defaultIndex = index;
         containerTag = itemsManager.getCurrentFloorManager().getCurrentFloor();
-        itemsManager.getCurrentFloorManager().addCurrentFloorListener(currentFloorListener);
+        this.itemsManager.getCurrentFloorManager().addCurrentFloorListener(currentFloorListener);
         setIndex(index, containerTag, false);
     }
 
     /** {@inheritDoc} */
     @Override
-    public void destroy()
+    public void dispose()
     {
-        super.destroy();
+        super.dispose();
         setIndex(-1, 0, false);
         itemsManager.getCurrentFloorManager().removeCurrentFloorListener(currentFloorListener);
     }
-    
+
     /** {@inheritDoc} */
     @Override
     public boolean canScroll(final int distance)

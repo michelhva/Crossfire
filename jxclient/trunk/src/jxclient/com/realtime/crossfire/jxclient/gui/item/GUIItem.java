@@ -56,6 +56,13 @@ public abstract class GUIItem extends ActivatableGUIElement implements GUIScroll
 
     /** {@inheritDoc} */
     @Override
+    public void dispose()
+    {
+        super.dispose();
+    }
+
+    /** {@inheritDoc} */
+    @Override
     public void mouseClicked(final MouseEvent e)
     {
         super.mouseClicked(e);

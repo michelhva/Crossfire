@@ -69,6 +69,11 @@ public class GUIMagicMap extends GUIElement
     private final FacesManager facesManager;
 
     /**
+     * The {@link CrossfireServerConnection} to monitor.
+     */
+    private final CrossfireServerConnection crossfireServerConnection;
+
+    /**
      * The map width in tiles.
      */
     private int mapWidth;
@@ -340,16 +345,29 @@ public class GUIMagicMap extends GUIElement
         if ((h/TILE_SIZE)%2 != 1) throw new IllegalArgumentException("height is not an odd number of tiles");
         this.mapUpdater = mapUpdater;
         this.facesManager = facesManager;
+        this.crossfireServerConnection = crossfireServerConnection;
         playerX = w/2-TILE_SIZE/2;
         playerY = h/2-TILE_SIZE/2;
 
-        crossfireServerConnection.addMapSizeListener(mapSizeListener);
+        this.crossfireServerConnection.addMapSizeListener(mapSizeListener);
         mapSizeListener.mapSizeChanged(crossfireServerConnection.getMapWidth(), crossfireServerConnection.getMapHeight());
 
-        crossfireServerConnection.addCrossfireMagicmapListener(crossfireMagicmapListener);
-        mapUpdater.addCrossfireNewmapListener(newmapListener);
-        mapUpdater.addCrossfireMapscrollListener(mapscrollListener);
-        mapUpdater.addCrossfireMapListener(mapListener);
+        this.crossfireServerConnection.addCrossfireMagicmapListener(crossfireMagicmapListener);
+        this.mapUpdater.addCrossfireNewmapListener(newmapListener);
+        this.mapUpdater.addCrossfireMapscrollListener(mapscrollListener);
+        this.mapUpdater.addCrossfireMapListener(mapListener);
+    }
+
+    /** {@inheritDoc} */
+    @Override
+    public void dispose()
+    {
+        super.dispose();
+        crossfireServerConnection.removeMapSizeListener(mapSizeListener);
+        crossfireServerConnection.removeCrossfireMagicmapListener(crossfireMagicmapListener);
+        mapUpdater.removeCrossfireNewmapListener(newmapListener);
+        mapUpdater.removeCrossfireMapscrollListener(mapscrollListener);
+        mapUpdater.removeCrossfireMapListener(mapListener);
     }
 
     /**

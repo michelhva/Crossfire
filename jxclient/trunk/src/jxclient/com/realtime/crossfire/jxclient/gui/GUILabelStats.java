@@ -194,6 +194,14 @@ public class GUILabelStats extends GUIOneLineLabel
         super(window, name, x, y, w, h, null, font, color, backgroundColor, alignment, "");
         this.stats = stats;
         this.stat = stat;
-        stats.addCrossfireStatsListener(statsListener);
+        this.stats.addCrossfireStatsListener(statsListener);
+    }
+
+    /** {@inheritDoc} */
+    @Override
+    public void dispose()
+    {
+        super.dispose();
+        stats.removeCrossfireStatsListener(statsListener);
     }
 }

@@ -68,6 +68,13 @@ public class GUIDialogTitle extends GUIPicture
         super(window, name, x, y, w, h, image, alpha);
     }
 
+    /** {@inheritDoc} */
+    @Override
+    public void dispose()
+    {
+        super.dispose();
+    }
+
     /* {@inheritDoc} */
     @Override
     public void mousePressed(final MouseEvent e)

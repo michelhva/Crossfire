@@ -308,6 +308,15 @@ public class Buffer
     }
 
     /**
+     * Removes a listener to be notified of changes.
+     * @param listener the listener
+     */
+    public void removeBufferListener(final BufferListener listener)
+    {
+        listeners.remove(listener);
+    }
+
+    /**
      * Returns the object to synchronize on when calling {@link #iterator()} or
      * {@link #listIterator(int)}.
      * @return the object

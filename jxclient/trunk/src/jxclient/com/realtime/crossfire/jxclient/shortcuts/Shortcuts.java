@@ -346,4 +346,13 @@ public class Shortcuts
     {
         listeners.add(ShortcutsListener.class, listener);
     }
+
+    /**
+     * Removes a {@link ShortcutListener}.
+     * @param listener the listener to remove
+     */
+    public void removeShortcutsListener(final ShortcutListener listener)
+    {
+        listeners.remove(ShortcutListener.class, listener);
+    }
 }

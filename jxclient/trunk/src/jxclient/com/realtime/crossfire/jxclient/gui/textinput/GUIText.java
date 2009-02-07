@@ -145,6 +145,13 @@ public abstract class GUIText extends ActivatableGUIElement implements KeyListen
         setCursor(this.text.length());
     }
 
+    /** {@inheritDoc} */
+    @Override
+    public void dispose()
+    {
+        super.dispose();
+    }
+
     public void setText(final String text)
     {
         this.text.setLength(0);

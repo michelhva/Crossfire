@@ -120,14 +120,14 @@ public abstract class GUIItemItem extends GUIItem
         this.itemPainter = itemPainter;
         this.crossfireServerConnection = crossfireServerConnection;
         this.facesManager = facesManager;
-        facesManager.addFacesManagerListener(facesManagerListener);
+        this.facesManager.addFacesManagerListener(facesManagerListener);
     }
 
-    /**
-     * Unregisters listeners. Must be called when this item not used anymore.
-     */
-    public void destroy()
+    /** {@inheritDoc} */
+    @Override
+    public void dispose()
     {
+        super.dispose();
         facesManager.removeFacesManagerListener(facesManagerListener);
     }
 

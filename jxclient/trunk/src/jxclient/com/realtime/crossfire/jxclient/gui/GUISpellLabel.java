@@ -82,6 +82,11 @@ public class GUISpellLabel extends GUIHTMLLabel
     private final Type type;
 
     /**
+     * The {@link CurrentSpellManager} to monitor.
+     */
+    private final CurrentSpellManager currentSpellManager;
+
+    /**
      * The {@link SpellListener} registered to be notified about changed spell
      * parameters.
      */
@@ -167,6 +172,15 @@ public class GUISpellLabel extends GUIHTMLLabel
         super(window, name, x, y, w, h, picture, font, Color.WHITE, new Color(0, 0, 0, 0F), "");
         this.facesManager = facesManager;
         this.type = type;
-        currentSpellManager.addSpellListener(spellListener);
+        this.currentSpellManager = currentSpellManager;
+        this.currentSpellManager.addSpellListener(spellListener);
+    }
+
+    /** {@inheritDoc} */
+    @Override
+    public void dispose()
+    {
+        super.dispose();
+        currentSpellManager.removeSpellListener(spellListener);
     }
 }

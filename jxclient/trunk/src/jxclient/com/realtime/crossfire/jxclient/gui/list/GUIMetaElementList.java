@@ -147,8 +147,20 @@ public class GUIMetaElementList extends GUIList
         this.tooltip = tooltip;
         this.hostname = hostname;
         this.comment = comment;
-        metaserverModel.addMetaserverListener(metaserverListener);
+        this.metaserverModel.addMetaserverListener(metaserverListener);
         rebuildList();
+    }
+
+    /** {@inheritDoc} */
+    @Override
+    public void dispose()
+    {
+        super.dispose();
+        for (int i = 0; i < metaserverModel.size(); i++)
+        {
+            metaserverModel.removeMetaserverEntryListener(i, metaserverEntryListener);
+        }
+        metaserverModel.removeMetaserverListener(metaserverListener);
     }
 
     /**

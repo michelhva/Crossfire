@@ -110,7 +110,15 @@ public class GUIScrollBar extends ActivatableGUIElement implements ScrollableLis
         this.scrollable = scrollable;
         this.colorBackground = colorBackground;
         this.colorForeground = colorForeground;
-        scrollable.addScrollableListener(this);
+        this.scrollable.addScrollableListener(this);
+    }
+
+    /** {@inheritDoc} */
+    @Override
+    public void dispose()
+    {
+        super.dispose();
+        scrollable.removeScrollableListener(this);
     }
 
     /** {@inheritDoc} */

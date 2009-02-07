@@ -80,6 +80,13 @@ public class GUIPicture extends GUIElement
 
     /** {@inheritDoc} */
     @Override
+    public void dispose()
+    {
+        super.dispose();
+    }
+
+    /** {@inheritDoc} */
+    @Override
     protected void render(final Graphics g)
     {
     }

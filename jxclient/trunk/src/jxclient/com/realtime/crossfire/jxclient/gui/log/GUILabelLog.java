@@ -74,6 +74,13 @@ public class GUILabelLog extends GUILog
         this.defaultColor = defaultColor;
     }
 
+    /** {@inheritDoc} */
+    @Override
+    public void dispose()
+    {
+        super.dispose();
+    }
+
     /**
      * Set the displayed text by parsing a string.
      *

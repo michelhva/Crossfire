@@ -121,6 +121,13 @@ public class GUITextButton extends AbstractButton
 
     /** {@inheritDoc} */
     @Override
+    public void dispose()
+    {
+        super.dispose();
+    }
+
+    /** {@inheritDoc} */
+    @Override
     public void activeChanged()
     {
         setChanged();

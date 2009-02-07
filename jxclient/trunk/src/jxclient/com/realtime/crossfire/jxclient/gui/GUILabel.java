@@ -104,6 +104,13 @@ public abstract class GUILabel extends AbstractLabel
 
     /** {@inheritDoc} */
     @Override
+    public void dispose()
+    {
+        super.dispose();
+    }
+
+    /** {@inheritDoc} */
+    @Override
     protected void textChanged()
     {
         setChanged();

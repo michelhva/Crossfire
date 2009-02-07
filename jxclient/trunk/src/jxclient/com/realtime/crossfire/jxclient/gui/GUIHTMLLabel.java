@@ -75,6 +75,13 @@ public class GUIHTMLLabel extends AbstractLabel
 
     /** {@inheritDoc} */
     @Override
+    public void dispose()
+    {
+        super.dispose();
+    }
+
+    /** {@inheritDoc} */
+    @Override
     protected void textChanged()
     {
         autoResize();

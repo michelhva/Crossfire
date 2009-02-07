@@ -62,6 +62,11 @@ public class MessageBufferUpdater
     };
 
     /**
+     * The {@link CrossfireServerConnection} to monitor.
+     */
+    private final CrossfireServerConnection crossfireServerConnection;
+
+    /**
      * The {@link Parser} instance for parsing drawextinfo messages.
      */
     private final Parser parser = new Parser();
@@ -160,11 +165,20 @@ public class MessageBufferUpdater
      */
     public MessageBufferUpdater(final CrossfireServerConnection crossfireServerConnection, final Buffer buffer, final Color defaultColor)
     {
+        this.crossfireServerConnection = crossfireServerConnection;
         this.buffer = buffer;
         this.defaultColor = defaultColor;
-        crossfireServerConnection.addCrossfireQueryListener(crossfireQueryListener);
-        crossfireServerConnection.addCrossfireDrawextinfoListener(crossfireDrawextinfoListener);
-        crossfireServerConnection.addCrossfireDrawinfoListener(crossfireDrawinfoListener);
+        this.crossfireServerConnection.addCrossfireQueryListener(crossfireQueryListener);
+        this.crossfireServerConnection.addCrossfireDrawextinfoListener(crossfireDrawextinfoListener);
+        this.crossfireServerConnection.addCrossfireDrawinfoListener(crossfireDrawinfoListener);
+    }
+
+    /** {@inheritDoc} */
+    public void dispose()
+    {
+        crossfireServerConnection.removeCrossfireQueryListener(crossfireQueryListener);
+        crossfireServerConnection.removeCrossfireDrawextinfoListener(crossfireDrawextinfoListener);
+        crossfireServerConnection.removeCrossfireDrawinfoListener(crossfireDrawinfoListener);
     }
 
     /**
