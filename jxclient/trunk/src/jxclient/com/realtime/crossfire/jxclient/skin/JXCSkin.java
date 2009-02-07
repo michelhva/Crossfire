@@ -22,6 +22,7 @@ package com.realtime.crossfire.jxclient.skin;
 import com.realtime.crossfire.jxclient.gui.Gui;
 import com.realtime.crossfire.jxclient.gui.keybindings.KeyBindings;
 import com.realtime.crossfire.jxclient.window.GUICommandList;
+import com.realtime.crossfire.jxclient.window.JXCWindow;
 import java.util.Iterator;
 
 /**
@@ -131,11 +132,6 @@ public interface JXCSkin extends Iterable<Gui>
     Gui getDialog(final String name) throws JXCSkinException;
 
     /**
-     * Executes the "event init" commands.
-     */
-    void executeInitEvents();
-
-    /**
      * Returns a named command list.
      * @param name the name of the command list
      * @return the command list
@@ -156,7 +152,13 @@ public interface JXCSkin extends Iterable<Gui>
     KeyBindings getDefaultKeyBindings();
 
     /**
+     * Attaches this skin to a window.
+     * @param window the window to attach to
+     */
+    void attach(JXCWindow window);
+
+    /**
      * Frees all allocated resources.
      */
-    void unload();
+    void detach();
 }

@@ -22,6 +22,7 @@ package com.realtime.crossfire.jxclient.skin;
 import com.realtime.crossfire.jxclient.commands.Commands;
 import com.realtime.crossfire.jxclient.gui.GUIElement;
 import com.realtime.crossfire.jxclient.gui.Gui;
+import com.realtime.crossfire.jxclient.gui.GUIHTMLLabel;
 import com.realtime.crossfire.jxclient.gui.keybindings.KeyBindings;
 import com.realtime.crossfire.jxclient.items.ItemsManager;
 import com.realtime.crossfire.jxclient.settings.options.CommandCheckBoxOption;
@@ -99,6 +100,17 @@ public class DefaultJXCSkin implements JXCSkin
     private final Set<String> optionNames = new HashSet<String>();
 
     /**
+     * The tooltip label or <code>null</code>.
+     */
+    private GUIHTMLLabel tooltipLabel = null;
+
+    /**
+     * The {@link JXCWindow} currently attached to or <code>null</code> if not
+     * attached.
+     */
+    private JXCWindow window = null;
+
+    /**
      * Creates a new instance.
      * @param defaultKeyBindings the default key bindings
      * @param optionManager the option manager to use
@@ -111,13 +123,14 @@ public class DefaultJXCSkin implements JXCSkin
 
     public void reset()
     {
-        unload();
+        detach();
         skinName = "unknown";
         mapWidth = 0;
         mapHeight = 0;
         numLookObjects = DEFAULT_NUM_LOOK_OBJECTS;
         dialogs.clear();
         definedCommandLists.clear();
+        tooltipLabel = null;
     }
 
     /** {@inheritDoc} */
@@ -293,16 +306,6 @@ public class DefaultJXCSkin implements JXCSkin
 
     /** {@inheritDoc} */
     @Override
-    public void executeInitEvents()
-    {
-        for (final GUICommandList commandList : initEvents)
-        {
-            commandList.execute();
-        }
-    }
-
-    /** {@inheritDoc} */
-    @Override
     public GUICommandList getCommandList(final String name) throws JXCSkinException
     {
         return definedCommandLists.lookup(name);
@@ -324,12 +327,34 @@ public class DefaultJXCSkin implements JXCSkin
 
     /** {@inheritDoc} */
     @Override
-    public void unload()
+    public void attach(final JXCWindow window)
     {
+        detach();
+        this.window = window;
+        window.getWindowRenderer().setTooltip(tooltipLabel);
+        window.getTooltipManager().setTooltip(tooltipLabel);
+
+        for (final GUICommandList commandList : initEvents)
+        {
+            commandList.execute();
+        }
+    }
+
+    /** {@inheritDoc} */
+    @Override
+    public void detach()
+    {
+        if (window != null)
+        {
+            window.getWindowRenderer().setTooltip(null);
+            window.getTooltipManager().setTooltip(null);
+            window = null;
+        }
         for (final String optionName : optionNames)
         {
             optionManager.removeOption(optionName);
         }
+        optionNames.clear();
     }
 
     public CommandParser newCommandParser(final ItemsManager itemsManager, final ExpressionParser expressionParser, final JXCSkinCache<GUIElement> definedGUIElements)
@@ -389,5 +414,10 @@ public class DefaultJXCSkin implements JXCSkin
             throw new JXCSkinException(ex.getMessage());
         }
         optionNames.add(optionName);
+    }
+
+    public void setTooltipLabel(final GUIHTMLLabel tooltipLabel)
+    {
+        this.tooltipLabel = tooltipLabel;
     }
 }
