@@ -20,6 +20,7 @@
 package com.realtime.crossfire.jxclient.skin;
 
 import com.realtime.crossfire.jxclient.gui.Gui;
+import com.realtime.crossfire.jxclient.gui.GUIElement;
 import com.realtime.crossfire.jxclient.gui.keybindings.KeyBindings;
 import com.realtime.crossfire.jxclient.window.GUICommandList;
 import com.realtime.crossfire.jxclient.window.JXCWindow;
@@ -161,4 +162,12 @@ public interface JXCSkin extends Iterable<Gui>
      * Frees all allocated resources.
      */
     void detach();
+
+    /**
+     * Returns a {@link GUIElement} by name.
+     * @param name the name
+     * @return the gui element
+     * @throws JXCSkinException if the GUI element does not exist
+     */
+    GUIElement lookupGuiElement(String name) throws JXCSkinException;
 }

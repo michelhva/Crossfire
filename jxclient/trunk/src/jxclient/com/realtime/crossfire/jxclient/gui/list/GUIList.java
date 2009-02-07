@@ -153,7 +153,10 @@ public abstract class GUIList extends ActivatableGUIElement
     {
         super.dispose();
         list.removeListSelectionListener(listSelectionListener);
-        resizeElements(0);
+        synchronized (getTreeLock())
+        {
+            resizeElements(0);
+        }
     }
 
     /** {@inheritDoc} */

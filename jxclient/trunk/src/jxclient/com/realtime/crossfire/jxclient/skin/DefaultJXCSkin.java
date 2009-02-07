@@ -21,8 +21,8 @@ package com.realtime.crossfire.jxclient.skin;
 
 import com.realtime.crossfire.jxclient.commands.Commands;
 import com.realtime.crossfire.jxclient.gui.GUIElement;
-import com.realtime.crossfire.jxclient.gui.Gui;
 import com.realtime.crossfire.jxclient.gui.GUIHTMLLabel;
+import com.realtime.crossfire.jxclient.gui.Gui;
 import com.realtime.crossfire.jxclient.gui.keybindings.KeyBindings;
 import com.realtime.crossfire.jxclient.items.ItemsManager;
 import com.realtime.crossfire.jxclient.settings.options.CommandCheckBoxOption;
@@ -78,6 +78,16 @@ public class DefaultJXCSkin implements JXCSkin
      * All defined command lists.
      */
     private final JXCSkinCache<GUICommandList> definedCommandLists = new JXCSkinCache<GUICommandList>("command list");
+
+    /**
+     * All defined GUI elements.
+     */
+    private final JXCSkinCache<GUIElement> definedGUIElements = new JXCSkinCache<GUIElement>("gui element");
+
+    /**
+     * All GUI elements.
+     */
+    private final Set<GUIElement> guiElements = new HashSet<GUIElement>();
 
     /**
      * All defined dialogs.
@@ -344,20 +354,56 @@ public class DefaultJXCSkin implements JXCSkin
     @Override
     public void detach()
     {
-        if (window != null)
+        if (window == null)
         {
-            window.getWindowRenderer().setTooltip(null);
-            window.getTooltipManager().setTooltip(null);
-            window = null;
+            return;
         }
+
+        window.getWindowRenderer().setTooltip(null);
+        window.getTooltipManager().setTooltip(null);
+        window = null;
         for (final String optionName : optionNames)
         {
             optionManager.removeOption(optionName);
         }
         optionNames.clear();
+        for (final GUIElement guiElement : guiElements)
+        {
+            guiElement.dispose();
+        }
+        guiElements.clear();
+        definedGUIElements.clear();
     }
 
-    public CommandParser newCommandParser(final ItemsManager itemsManager, final ExpressionParser expressionParser, final JXCSkinCache<GUIElement> definedGUIElements)
+    /** {@inheritDoc} */
+    @Override
+    public GUIElement lookupGuiElement(final String name) throws JXCSkinException
+    {
+        return definedGUIElements.lookup(name);
+    }
+
+    /**
+     * Forgets about all named GUI elements. After this function has been
+     * callled, {@link #lookupGuiElement(String)} and {@link
+     * #guiElementIterator()} will not return anything.
+     */
+    public void clearDefinedGuiElements()
+    {
+        definedGUIElements.clear();
+    }
+
+    /**
+     * Adds a new {@link GUIElement} to this skin.
+     * @param guiElement the GUI element
+     * @throws JXCSkinException if the name is not unique
+     */
+    public void insertGuiElement(final GUIElement guiElement) throws JXCSkinException
+    {
+        definedGUIElements.insert(guiElement.getName(), guiElement);
+        guiElements.add(guiElement);
+    }
+
+    public CommandParser newCommandParser(final ItemsManager itemsManager, final ExpressionParser expressionParser)
     {
         return new CommandParser(dialogs, itemsManager, expressionParser, definedGUIElements);
     }
@@ -419,5 +465,15 @@ public class DefaultJXCSkin implements JXCSkin
     public void setTooltipLabel(final GUIHTMLLabel tooltipLabel)
     {
         this.tooltipLabel = tooltipLabel;
+    }
+
+    /**
+     * Returns an {@link Iterator} returning all named {@link GUIElement} of
+     * this skin. The iterator does not support removal.
+     * @return the iterator
+     */
+    public Iterator<GUIElement> guiElementIterator()
+    {
+        return definedGUIElements.iterator();
     }
 }
