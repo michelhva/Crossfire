@@ -79,7 +79,6 @@ import com.realtime.crossfire.jxclient.server.MessageTypes;
 import com.realtime.crossfire.jxclient.server.UnknownCommandException;
 import com.realtime.crossfire.jxclient.settings.options.CheckBoxOption;
 import com.realtime.crossfire.jxclient.settings.options.CommandCheckBoxOption;
-import com.realtime.crossfire.jxclient.settings.options.OptionException;
 import com.realtime.crossfire.jxclient.settings.options.OptionManager;
 import com.realtime.crossfire.jxclient.shortcuts.Shortcuts;
 import com.realtime.crossfire.jxclient.skills.Skill;
@@ -137,6 +136,11 @@ public class JXCSkinLoader
      * The {@link CfMapUpdater} instance to use.
      */
     private final CfMapUpdater mapUpdater;
+
+    /**
+     * The {@link OptionManager} instance to use.
+     */
+    private final OptionManager optionManager;
 
     /**
      * All defined gui elements.
@@ -206,15 +210,17 @@ public class JXCSkinLoader
      * @param stats the stats instance to use
      * @param mapUpdater the map updater instance to use
      * @param defaultKeyBindings the default key bindings
+     * @param optionManager the option manager to use
      */
-    public JXCSkinLoader(final ItemsManager itemsManager, final SpellsManager spellsManager, final FacesManager facesManager, final Stats stats, final CfMapUpdater mapUpdater, final KeyBindings defaultKeyBindings)
+    public JXCSkinLoader(final ItemsManager itemsManager, final SpellsManager spellsManager, final FacesManager facesManager, final Stats stats, final CfMapUpdater mapUpdater, final KeyBindings defaultKeyBindings, final OptionManager optionManager)
     {
         this.itemsManager = itemsManager;
         this.spellsManager = spellsManager;
         this.facesManager = facesManager;
         this.stats = stats;
         this.mapUpdater = mapUpdater;
-        skin = new DefaultJXCSkin(defaultKeyBindings);
+        this.optionManager = optionManager;
+        skin = new DefaultJXCSkin(defaultKeyBindings, optionManager);
         expressionParser = new ExpressionParser(skin.getSelectedResolution());
         commandParser = skin.newCommandParser(itemsManager, expressionParser, definedGUIElements);
         gaugeUpdaterParser = new GaugeUpdaterParser(stats, itemsManager);
@@ -230,7 +236,6 @@ public class JXCSkinLoader
      * @param metaserverModel the metaserver mode to use
      * @param commandQueue the command queue to use
      * @param resolution the preferred screen resolution
-     * @param optionManager the option manager to use
      * @param experienceTable the experience table to use
      * @param shortcuts the shortcuts to use
      * @param commands the commands instance to use
@@ -238,7 +243,7 @@ public class JXCSkinLoader
      * @return the loaded skin
      * @throws JXCSkinException if the skin cannot be loaded
      */
-    public JXCSkin load(final JXCSkinSource skinSource, final CrossfireServerConnection crossfireServerConnection, final JXCWindow window, final MouseTracker mouseTracker, final MetaserverModel metaserverModel, final CommandQueue commandQueue, final Resolution resolution, final OptionManager optionManager, final ExperienceTable experienceTable, final Shortcuts shortcuts, final Commands commands, final CurrentSpellManager currentSpellManager) throws JXCSkinException
+    public JXCSkin load(final JXCSkinSource skinSource, final CrossfireServerConnection crossfireServerConnection, final JXCWindow window, final MouseTracker mouseTracker, final MetaserverModel metaserverModel, final CommandQueue commandQueue, final Resolution resolution, final ExperienceTable experienceTable, final Shortcuts shortcuts, final Commands commands, final CurrentSpellManager currentSpellManager) throws JXCSkinException
     {
         imageParser = new ImageParser(skinSource);
         fontParser = new FontParser(skinSource);
@@ -461,7 +466,7 @@ public class JXCSkinLoader
                         }
                         else if (gui != null && args[0].equals("checkbox"))
                         {
-                            parseCheckbox(args, window, lnr, optionManager);
+                            parseCheckbox(args, window, lnr);
                         }
                         else if (args[0].equals("commandlist"))
                         {
@@ -477,7 +482,7 @@ public class JXCSkinLoader
                         }
                         else if (args[0].equals("def"))
                         {
-                            parseDef(args, lnr, optionManager);
+                            parseDef(args, lnr);
                         }
                         else if (gui != null && args[0].equals("dialog"))
                         {
@@ -767,11 +772,10 @@ public class JXCSkinLoader
      * @param args the command arguments
      * @param window the window to use
      * @param lnr the line number reader for reading more lines
-     * @param optionManager the option manager instance to use
      * @throws IOException if the command cannot be parsed
      * @throws JXCSkinException if the command cannot be parsed
      */
-    private void parseCheckbox(final String[] args, final JXCWindow window, final LineNumberReader lnr, final OptionManager optionManager) throws IOException, JXCSkinException
+    private void parseCheckbox(final String[] args, final JXCWindow window, final LineNumberReader lnr) throws IOException, JXCSkinException
     {
         if (args.length < 7)
         {
@@ -882,11 +886,10 @@ public class JXCSkinLoader
      * Parses a "def" command.
      * @param args the command arguments
      * @param lnr the line number reader for reading more lines
-     * @param optionManager the option manager to use
      * @throws IOException if the command cannot be parsed
      * @throws JXCSkinException if the command cannot be parsed
      */
-    private void parseDef(final String[] args, final LineNumberReader lnr, final OptionManager optionManager) throws IOException, JXCSkinException
+    private void parseDef(final String[] args, final LineNumberReader lnr) throws IOException, JXCSkinException
     {
         if (args.length < 2)
         {
@@ -917,14 +920,7 @@ public class JXCSkinLoader
             final GUICommandList commandOn = skin.getCommandList(args[3]);
             final GUICommandList commandOff = skin.getCommandList(args[4]);
             final String documentation = ParseUtils.parseText(args, 5, lnr);
-            try
-            {
-                optionManager.addOption(optionName, documentation, new CommandCheckBoxOption(commandOn, commandOff));
-            }
-            catch (final OptionException ex)
-            {
-                throw new IOException(ex.getMessage());
-            }
+            skin.addOption(optionName, documentation, new CommandCheckBoxOption(commandOn, commandOff));
         }
         else if (args[1].equals("dialog"))
         {

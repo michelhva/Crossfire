@@ -154,4 +154,9 @@ public interface JXCSkin extends Iterable<Gui>
      * @return the default key bindings
      */
     KeyBindings getDefaultKeyBindings();
+
+    /**
+     * Frees all allocated resources.
+     */
+    void unload();
 }
