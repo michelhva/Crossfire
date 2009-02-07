@@ -20,17 +20,21 @@
 package com.realtime.crossfire.jxclient.skin;
 
 import com.realtime.crossfire.jxclient.commands.Commands;
+import com.realtime.crossfire.jxclient.experience.ExperienceTable;
 import com.realtime.crossfire.jxclient.gui.GUIElement;
 import com.realtime.crossfire.jxclient.gui.GUIHTMLLabel;
 import com.realtime.crossfire.jxclient.gui.Gui;
+import com.realtime.crossfire.jxclient.gui.gauge.GaugeUpdater;
 import com.realtime.crossfire.jxclient.gui.keybindings.KeyBindings;
 import com.realtime.crossfire.jxclient.items.ItemsManager;
 import com.realtime.crossfire.jxclient.settings.options.CommandCheckBoxOption;
 import com.realtime.crossfire.jxclient.settings.options.OptionException;
 import com.realtime.crossfire.jxclient.settings.options.OptionManager;
+import com.realtime.crossfire.jxclient.stats.Stats;
 import com.realtime.crossfire.jxclient.window.GUICommandList;
 import com.realtime.crossfire.jxclient.window.JXCWindow;
 import com.realtime.crossfire.jxclient.window.MouseTracker;
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.Iterator;
@@ -105,9 +109,24 @@ public class DefaultJXCSkin implements JXCSkin
     private final OptionManager optionManager;
 
     /**
+     * The {@link ExperienceTable} to use.
+     */
+    private final ExperienceTable experienceTable;
+
+    /**
+     * The {@link GaugeUpdaterParser} for parsing gauge specifications.
+     */
+    private final GaugeUpdaterParser gaugeUpdaterParser;
+
+    /**
      * The defined option names.
      */
     private final Set<String> optionNames = new HashSet<String>();
+
+    /**
+     * The defined {@link GaugeUpdater}s.
+     */
+    private final List<GaugeUpdater> gaugeUpdaters = new ArrayList<GaugeUpdater>();
 
     /**
      * The tooltip label or <code>null</code>.
@@ -124,11 +143,16 @@ public class DefaultJXCSkin implements JXCSkin
      * Creates a new instance.
      * @param defaultKeyBindings the default key bindings
      * @param optionManager the option manager to use
+     * @param stats the stats instance to use
+     * @param itemsManager the items manager instance to use
+     * @param experienceTable the experience table to use
      */
-    public DefaultJXCSkin(final KeyBindings defaultKeyBindings, final OptionManager optionManager)
+    public DefaultJXCSkin(final KeyBindings defaultKeyBindings, final OptionManager optionManager, final Stats stats, final ItemsManager itemsManager, final ExperienceTable experienceTable)
     {
         this.defaultKeyBindings = defaultKeyBindings;
         this.optionManager = optionManager;
+        this.experienceTable = experienceTable;
+        gaugeUpdaterParser = new GaugeUpdaterParser(stats, itemsManager);
     }
 
     public void reset()
@@ -141,6 +165,11 @@ public class DefaultJXCSkin implements JXCSkin
         dialogs.clear();
         definedCommandLists.clear();
         tooltipLabel = null;
+        for (final GaugeUpdater gaugeUpdater : gaugeUpdaters)
+        {
+            gaugeUpdater.dispose();
+        }
+        gaugeUpdaters.clear();
     }
 
     /** {@inheritDoc} */
@@ -475,5 +504,19 @@ public class DefaultJXCSkin implements JXCSkin
     public Iterator<GUIElement> guiElementIterator()
     {
         return definedGUIElements.iterator();
+    }
+
+    /**
+     * Creates a new {@link GaugeUpdater} instance from a string
+     * representation.
+     * @param name the gauge updater value to parse
+     * @return the gauge updater
+     * @throws IOException if the gauge updater value does not exist
+     */
+    public GaugeUpdater newGaugeUpdater(final String name) throws IOException
+    {
+        final GaugeUpdater gaugeUpdater = gaugeUpdaterParser.parseGaugeUpdater(name, experienceTable);
+        gaugeUpdaters.add(gaugeUpdater);
+        return gaugeUpdater;
     }
 }

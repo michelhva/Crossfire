@@ -1144,8 +1144,8 @@ public class JXCWindow extends JFrame
             // fallback: built-in resource
             skinSource = new JXCSkinClassSource("com/realtime/crossfire/jxclient/skins/"+skinName);
         }
-        final JXCSkinLoader newSkin = new JXCSkinLoader(itemsManager, spellsManager, facesManager, stats, mapUpdater, defaultKeyBindings, optionManager);
-        return newSkin.load(skinSource, server, this, mouseTracker, metaserverModel, commandQueue, resolution, experienceTable, shortcuts, commands, currentSpellManager);
+        final JXCSkinLoader newSkin = new JXCSkinLoader(itemsManager, spellsManager, facesManager, stats, mapUpdater, defaultKeyBindings, optionManager, experienceTable);
+        return newSkin.load(skinSource, server, this, mouseTracker, metaserverModel, commandQueue, resolution, shortcuts, commands, currentSpellManager);
     }
 
     /**

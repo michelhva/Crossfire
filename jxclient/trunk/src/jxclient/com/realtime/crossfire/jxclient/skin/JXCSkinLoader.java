@@ -184,11 +184,6 @@ public class JXCSkinLoader
     private FontParser fontParser;
 
     /**
-     * The {@link GaugeUpdaterParser} for parsing gauge specifications.
-     */
-    private final GaugeUpdaterParser gaugeUpdaterParser;
-
-    /**
      * The {@link GuiElementParser} for parsing gui element specifications.
      */
     private final GuiElementParser guiElementParser;
@@ -207,8 +202,9 @@ public class JXCSkinLoader
      * @param mapUpdater the map updater instance to use
      * @param defaultKeyBindings the default key bindings
      * @param optionManager the option manager to use
+     * @param experienceTable the experience table to use
      */
-    public JXCSkinLoader(final ItemsManager itemsManager, final SpellsManager spellsManager, final FacesManager facesManager, final Stats stats, final CfMapUpdater mapUpdater, final KeyBindings defaultKeyBindings, final OptionManager optionManager)
+    public JXCSkinLoader(final ItemsManager itemsManager, final SpellsManager spellsManager, final FacesManager facesManager, final Stats stats, final CfMapUpdater mapUpdater, final KeyBindings defaultKeyBindings, final OptionManager optionManager, final ExperienceTable experienceTable)
     {
         this.itemsManager = itemsManager;
         this.spellsManager = spellsManager;
@@ -216,10 +212,9 @@ public class JXCSkinLoader
         this.stats = stats;
         this.mapUpdater = mapUpdater;
         this.optionManager = optionManager;
-        skin = new DefaultJXCSkin(defaultKeyBindings, optionManager);
+        skin = new DefaultJXCSkin(defaultKeyBindings, optionManager, stats, itemsManager, experienceTable);
         expressionParser = new ExpressionParser(skin.getSelectedResolution());
         commandParser = skin.newCommandParser(itemsManager, expressionParser);
-        gaugeUpdaterParser = new GaugeUpdaterParser(stats, itemsManager);
         guiElementParser = new GuiElementParser(skin);
     }
 
@@ -232,14 +227,13 @@ public class JXCSkinLoader
      * @param metaserverModel the metaserver mode to use
      * @param commandQueue the command queue to use
      * @param resolution the preferred screen resolution
-     * @param experienceTable the experience table to use
      * @param shortcuts the shortcuts to use
      * @param commands the commands instance to use
      * @param currentSpellManager the current spell manager to use
      * @return the loaded skin
      * @throws JXCSkinException if the skin cannot be loaded
      */
-    public JXCSkin load(final JXCSkinSource skinSource, final CrossfireServerConnection crossfireServerConnection, final JXCWindow window, final MouseTracker mouseTracker, final MetaserverModel metaserverModel, final CommandQueue commandQueue, final Resolution resolution, final ExperienceTable experienceTable, final Shortcuts shortcuts, final Commands commands, final CurrentSpellManager currentSpellManager) throws JXCSkinException
+    public JXCSkin load(final JXCSkinSource skinSource, final CrossfireServerConnection crossfireServerConnection, final JXCWindow window, final MouseTracker mouseTracker, final MetaserverModel metaserverModel, final CommandQueue commandQueue, final Resolution resolution, final Shortcuts shortcuts, final Commands commands, final CurrentSpellManager currentSpellManager) throws JXCSkinException
     {
         imageParser = new ImageParser(skinSource);
         fontParser = new FontParser(skinSource);
@@ -305,7 +299,7 @@ public class JXCSkinLoader
         checkBoxFactory = null;
         try
         {
-            load(skinSource, "global", crossfireServerConnection, window, mouseTracker, metaserverModel, commandQueue, null, experienceTable, shortcuts, commands, currentSpellManager);
+            load(skinSource, "global", crossfireServerConnection, window, mouseTracker, metaserverModel, commandQueue, null, shortcuts, commands, currentSpellManager);
             for (;;)
             {
                 final String name = skin.getDialogToLoad();
@@ -314,7 +308,7 @@ public class JXCSkinLoader
                     break;
                 }
                 final Gui gui = skin.getDialog(name);
-                load(skinSource, name, crossfireServerConnection, window, mouseTracker, metaserverModel, commandQueue, gui, experienceTable, shortcuts, commands, currentSpellManager);
+                load(skinSource, name, crossfireServerConnection, window, mouseTracker, metaserverModel, commandQueue, gui, shortcuts, commands, currentSpellManager);
                 gui.setStateChanged(false);
             }
         }
@@ -345,13 +339,12 @@ public class JXCSkinLoader
      * @param metaserverModel the metaserver model to use
      * @param commandQueue the command queue for sending commands
      * @param gui the Gui representing the skin file
-     * @param experienceTable the experience table to use
      * @param shortcuts the shortcuts instance
      * @param commands the commands instance for executing commands
      * @param currentSpellManager the current spell manager to use
      * @throws JXCSkinException if the file cannot be loaded
      */
-    private void load(final JXCSkinSource skinSource, final String dialogName, final CrossfireServerConnection server, final JXCWindow window, final MouseTracker mouseTracker, final MetaserverModel metaserverModel, final CommandQueue commandQueue, final Gui gui, final ExperienceTable experienceTable, final Shortcuts shortcuts, final Commands commands, final CurrentSpellManager currentSpellManager) throws JXCSkinException
+    private void load(final JXCSkinSource skinSource, final String dialogName, final CrossfireServerConnection server, final JXCWindow window, final MouseTracker mouseTracker, final MetaserverModel metaserverModel, final CommandQueue commandQueue, final Gui gui, final Shortcuts shortcuts, final Commands commands, final CurrentSpellManager currentSpellManager) throws JXCSkinException
     {
         String resourceName = dialogName+"@"+skin.getSelectedResolution()+".skin";
 
@@ -370,7 +363,7 @@ public class JXCSkinLoader
             }
             try
             {
-                load(skinSource, dialogName, resourceName, inputStream, server, window, mouseTracker, metaserverModel, commandQueue, gui, experienceTable, shortcuts, commands, currentSpellManager);
+                load(skinSource, dialogName, resourceName, inputStream, server, window, mouseTracker, metaserverModel, commandQueue, gui, shortcuts, commands, currentSpellManager);
             }
             finally
             {
@@ -404,13 +397,12 @@ public class JXCSkinLoader
      * @param metaserverModel the metaserver model to use
      * @param commandQueue the command queue for sending commands
      * @param gui the Gui representing the skin file
-     * @param experienceTable the experience table to use
      * @param shortcuts the shortcuts instance
      * @param commands the commands instance for executing commands
      * @param currentSpellManager the current spell manager to use
      * @throws JXCSkinException if the file cannot be loaded
      */
-    private void load(final JXCSkinSource skinSource, final String dialogName, final String resourceName, final InputStream inputStream, final CrossfireServerConnection server, final JXCWindow window, final MouseTracker mouseTracker, final MetaserverModel metaserverModel, final CommandQueue commandQueue, final Gui gui, final ExperienceTable experienceTable, final Shortcuts shortcuts, final Commands commands, final CurrentSpellManager currentSpellManager) throws JXCSkinException
+    private void load(final JXCSkinSource skinSource, final String dialogName, final String resourceName, final InputStream inputStream, final CrossfireServerConnection server, final JXCWindow window, final MouseTracker mouseTracker, final MetaserverModel metaserverModel, final CommandQueue commandQueue, final Gui gui, final Shortcuts shortcuts, final Commands commands, final CurrentSpellManager currentSpellManager) throws JXCSkinException
     {
         final List<GUIElement> addedElements = new ArrayList<GUIElement>();
         boolean addedElementsContainsWildcard = false;
@@ -488,11 +480,11 @@ public class JXCSkinLoader
                         }
                         else if (gui != null && args[0].equals("dupgauge"))
                         {
-                            parseDupGauge(args, window, lnr, experienceTable);
+                            parseDupGauge(args, window, lnr);
                         }
                         else if (gui != null && args[0].equals("duptextgauge"))
                         {
-                            parseDupTextGauge(args, window, lnr, experienceTable);
+                            parseDupTextGauge(args, window, lnr);
                         }
                         else if (args[0].equals("event"))
                         {
@@ -504,7 +496,7 @@ public class JXCSkinLoader
                         }
                         else if (gui != null && args[0].equals("gauge"))
                         {
-                            parseGauge(args, window, lnr, experienceTable);
+                            parseGauge(args, window, lnr);
                         }
                         else if (gui != null && args[0].equals("ignore"))
                         {
@@ -620,7 +612,7 @@ public class JXCSkinLoader
                         }
                         else if (gui != null && args[0].equals("textgauge"))
                         {
-                            parseTextGauge(args, window, lnr, experienceTable);
+                            parseTextGauge(args, window, lnr);
                         }
                         else if (args[0].equals("tooltip"))
                         {
@@ -1028,11 +1020,10 @@ public class JXCSkinLoader
      * @param args the command arguments
      * @param window the window to use
      * @param lnr the line number reader for reading more lines
-     * @param experienceTable the experience table to use
      * @throws IOException if the command cannot be parsed
      * @throws JXCSkinException if the command cannot be parsed
      */
-    private void parseDupGauge(final String[] args, final JXCWindow window, final LineNumberReader lnr, final ExperienceTable experienceTable) throws IOException, JXCSkinException
+    private void parseDupGauge(final String[] args, final JXCWindow window, final LineNumberReader lnr) throws IOException, JXCSkinException
     {
         if (args.length < 12)
         {
@@ -1047,7 +1038,7 @@ public class JXCSkinLoader
         final BufferedImage positiveDivImage = imageParser.getImage(args[6]);
         final BufferedImage positiveModImage = imageParser.getImage(args[7]);
         final BufferedImage emptyImage = args[8].equals("null") ? null : imageParser.getImage(args[8]);
-        final GaugeUpdater gaugeUpdater = gaugeUpdaterParser.parseGaugeUpdater(args[9], experienceTable);
+        final GaugeUpdater gaugeUpdater = skin.newGaugeUpdater(args[9]);
         final Orientation orientationDiv = ParseUtils.parseOrientation(args[10]);
         final Orientation orientationMod = ParseUtils.parseOrientation(args[11]);
         final String tooltipPrefix = ParseUtils.parseText(args, 12, lnr);
@@ -1061,11 +1052,10 @@ public class JXCSkinLoader
      * @param args the command arguments
      * @param window the window to use
      * @param lnr the line number reader for reading more lines
-     * @param experienceTable the experience table to use
      * @throws IOException if the command cannot be parsed
      * @throws JXCSkinException if the command cannot be parsed
      */
-    private void parseDupTextGauge(final String[] args, final JXCWindow window, final LineNumberReader lnr, final ExperienceTable experienceTable) throws IOException, JXCSkinException
+    private void parseDupTextGauge(final String[] args, final JXCWindow window, final LineNumberReader lnr) throws IOException, JXCSkinException
     {
         if (args.length < 14)
         {
@@ -1080,7 +1070,7 @@ public class JXCSkinLoader
         final BufferedImage positiveDivImage = imageParser.getImage(args[6]);
         final BufferedImage positiveModImage = imageParser.getImage(args[7]);
         final BufferedImage emptyImage = imageParser.getImage(args[8]);
-        final GaugeUpdater gaugeUpdater = gaugeUpdaterParser.parseGaugeUpdater(args[9], experienceTable);
+        final GaugeUpdater gaugeUpdater = skin.newGaugeUpdater(args[9]);
         final Orientation orientationDiv = ParseUtils.parseOrientation(args[10]);
         final Orientation orientationMod = ParseUtils.parseOrientation(args[11]);
         final Color color = ParseUtils.parseColor(args[12]);
@@ -1274,11 +1264,10 @@ public class JXCSkinLoader
      * @param args the command arguments
      * @param window the window to use
      * @param lnr the line number reader for reading more lines
-     * @param experienceTable the experience table to use
      * @throws IOException if the command cannot be parsed
      * @throws JXCSkinException if the command cannot be parsed
      */
-    private void parseGauge(final String[] args, final JXCWindow window, final LineNumberReader lnr, final ExperienceTable experienceTable) throws IOException, JXCSkinException
+    private void parseGauge(final String[] args, final JXCWindow window, final LineNumberReader lnr) throws IOException, JXCSkinException
     {
         if (args.length < 11)
         {
@@ -1293,7 +1282,7 @@ public class JXCSkinLoader
         final BufferedImage positiveImage = args[6].equals("null") ? null : imageParser.getImage(args[6]);
         final BufferedImage negativeImage = args[7].equals("null") ? null : imageParser.getImage(args[7]);
         final BufferedImage emptyImage = args[8].equals("null") ? null : imageParser.getImage(args[8]);
-        final GaugeUpdater gaugeUpdater = gaugeUpdaterParser.parseGaugeUpdater(args[9], experienceTable);
+        final GaugeUpdater gaugeUpdater = skin.newGaugeUpdater(args[9]);
         final Orientation orientation = ParseUtils.parseOrientation(args[10]);
         final String tooltipPrefix = ParseUtils.parseText(args, 11, lnr);
         final GUIGauge element = new GUIGauge(window, name, x, y, w, h, positiveImage, negativeImage, emptyImage, orientation, tooltipPrefix.length() > 0 ? tooltipPrefix : null);
@@ -2145,11 +2134,10 @@ public class JXCSkinLoader
      * @param args the command arguments
      * @param window the window to use
      * @param lnr the line number reader for reading more lines
-     * @param experienceTable the experience table to use
      * @throws IOException if the command cannot be parsed
      * @throws JXCSkinException if the command cannot be parsed
      */
-    private void parseTextGauge(final String[] args, final JXCWindow window, final LineNumberReader lnr, final ExperienceTable experienceTable) throws IOException, JXCSkinException
+    private void parseTextGauge(final String[] args, final JXCWindow window, final LineNumberReader lnr) throws IOException, JXCSkinException
     {
         if (args.length < 13)
         {
@@ -2164,7 +2152,7 @@ public class JXCSkinLoader
         final BufferedImage positiveImage = imageParser.getImage(args[6]);
         final BufferedImage negativeImage = args[7].equals("null") ? null : imageParser.getImage(args[7]);
         final BufferedImage emptyImage = imageParser.getImage(args[8]);
-        final GaugeUpdater gaugeUpdater = gaugeUpdaterParser.parseGaugeUpdater(args[9], experienceTable);
+        final GaugeUpdater gaugeUpdater = skin.newGaugeUpdater(args[9]);
         final Orientation orientation = ParseUtils.parseOrientation(args[10]);
         final Color color = ParseUtils.parseColor(args[11]);
         final Font font = definedFonts.lookup(args[12]);
