@@ -1099,7 +1099,7 @@ public class JXCWindow extends JFrame
     {
         if (skin != null)
         {
-            skin.unload();
+            skin.detach();
             skin = null;
         }
 
@@ -1113,7 +1113,7 @@ public class JXCWindow extends JFrame
             return false;
         }
 
-        skin.executeInitEvents();
+        skin.attach(this);
         queryDialog = skin.getDialogQuery();
         keybindDialog = skin.getDialogKeyBind();
         dialogQuit = skin.getDialogQuit();
