@@ -20,6 +20,7 @@ import com.realtime.crossfire.jxclient.server.CrossfireUpdateMapListener;
 import com.realtime.crossfire.jxclient.server.MapSizeListener;
 import com.realtime.crossfire.jxclient.server.ReceivedPacketListener;
 import com.realtime.crossfire.jxclient.server.ScriptMonitorListeners;
+import com.realtime.crossfire.jxclient.server.CrossfireSkillInfoListener;
 import junit.framework.Assert;
 
 /**
@@ -173,6 +174,20 @@ public class TestCrossfireServerConnection implements CrossfireServerConnection
     /** {@inheritDoc} */
     @Override
     public void addCrossfireExpTableListener(final CrossfireExpTableListener crossfireExpTableListener)
+    {
+        Assert.fail();
+    }
+
+    /** {@inheritDoc} */
+    @Override
+    public void addCrossfireSkillInfoListener(final CrossfireSkillInfoListener listener)
+    {
+        Assert.fail();
+    }
+
+    /** {@inheritDoc} */
+    @Override
+    public void removeCrossfireSkillInfoListener(final CrossfireSkillInfoListener listener)
     {
         Assert.fail();
     }
