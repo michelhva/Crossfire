@@ -158,6 +158,11 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
     private final List<CrossfireExpTableListener> crossfireExpTableListeners = new ArrayList<CrossfireExpTableListener>();
 
     /**
+     * The {@link CrossfireSkillInfoListener}s to be notified.
+     */
+    private final List<CrossfireSkillInfoListener> crossfireSkillInfoListeners = new ArrayList<CrossfireSkillInfoListener>();
+
+    /**
      * Buffer to build commands to send. It is shared between all sendXxx()
      * functions. It is used to synchronize these functions.
      */
@@ -405,6 +410,20 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
     public void addCrossfireExpTableListener(final CrossfireExpTableListener crossfireExpTableListener)
     {
         crossfireExpTableListeners.add(crossfireExpTableListener);
+    }
+
+    /** {@inheritDoc} */
+    @Override
+    public void addCrossfireSkillInfoListener(final CrossfireSkillInfoListener listener)
+    {
+        crossfireSkillInfoListeners.add(listener);
+    }
+
+    /** {@inheritDoc} */
+    @Override
+    public void removeCrossfireSkillInfoListener(final CrossfireSkillInfoListener listener)
+    {
+        crossfireSkillInfoListeners.remove(listener);
     }
 
     /** {@inheritDoc}
@@ -1904,8 +1923,12 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
      * @param endPos the end position into <code>packet</code>
      * @throws IOException if the packet cannot be parsed
      */
-    private static void processSkillInfoReplyinfo(final byte[] packet, final int startPos, final int endPos) throws IOException
+    private void processSkillInfoReplyinfo(final byte[] packet, final int startPos, final int endPos) throws IOException
     {
+        for (final CrossfireSkillInfoListener crossfireSkillInfoListener : crossfireSkillInfoListeners)
+        {
+            crossfireSkillInfoListener.clearSkills();
+        }
         SkillSetInstance.skillSet.clearSkills();
         final ByteArrayInputStream is = new ByteArrayInputStream(packet, startPos, endPos-startPos);
         try
@@ -1948,6 +1971,10 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
                             continue;
                         }
 
+                        for (final CrossfireSkillInfoListener crossfireSkillInfoListener : crossfireSkillInfoListeners)
+                        {
+                            crossfireSkillInfoListener.addSkill(skillId, sk[1]);
+                        }
                         SkillSetInstance.skillSet.addSkill(skillId, sk[1]);
                     }
                 }

@@ -157,6 +157,18 @@ public interface CrossfireServerConnection extends ServerConnection
     void addCrossfireExpTableListener(CrossfireExpTableListener crossfireExpTableListener);
 
     /**
+     * Adds a listener to be notified about received skill info changes.
+     * @param listener the listener to add
+     */
+    void addCrossfireSkillInfoListener(CrossfireSkillInfoListener listener);
+
+    /**
+     * Removes a listener to be notified about received skill info changes.
+     * @param listener the listener to remove
+     */
+    void removeCrossfireSkillInfoListener(CrossfireSkillInfoListener listener);
+
+    /**
      * Adds a listener to be notified about received packets.
      * @param listener the listener to add
      */
