@@ -98,6 +98,11 @@ public class DefaultScriptProcess extends Thread implements ScriptProcess
     private final CfMapUpdater mapUpdater;
 
     /**
+     * The {@link SkillSet} for looking up skill names.
+     */
+    private final SkillSet skillSet;
+
+    /**
      * The {@link Process} instance for the executed child process.
      */
     private final Process proc;
@@ -166,9 +171,10 @@ public class DefaultScriptProcess extends Thread implements ScriptProcess
      * @param itemsManager the items manager instance to use
      * @param spellsManager the spells manager instance to use
      * @param mapUpdater the map updater instance to use
+     * @param skillSet the skill set for looking up skill names
      * @throws IOException if the script cannot be created
      */
-    public DefaultScriptProcess(final int scriptId, final String filename, final JXCWindow window, final CommandQueue commandQueue, final CrossfireServerConnection crossfireServerConnection, final Stats stats, final ItemsManager itemsManager, final SpellsManager spellsManager, final CfMapUpdater mapUpdater) throws IOException
+    public DefaultScriptProcess(final int scriptId, final String filename, final JXCWindow window, final CommandQueue commandQueue, final CrossfireServerConnection crossfireServerConnection, final Stats stats, final ItemsManager itemsManager, final SpellsManager spellsManager, final CfMapUpdater mapUpdater, final SkillSet skillSet) throws IOException
     {
         this.scriptId = scriptId;
         this.filename = filename;
@@ -179,6 +185,7 @@ public class DefaultScriptProcess extends Thread implements ScriptProcess
         this.itemsManager = itemsManager;
         this.spellsManager = spellsManager;
         this.mapUpdater = mapUpdater;
+        this.skillSet = skillSet;
         packetWatcher = new PacketWatcher(crossfireServerConnection, this);
         final Runtime rt = Runtime.getRuntime();
         proc = rt.exec(filename);
@@ -411,7 +418,7 @@ public class DefaultScriptProcess extends Thread implements ScriptProcess
             sb.append(' ').append(stats.getExperience());
             for (int i = CrossfireStatsListener.CS_STAT_SKILLINFO; i < CrossfireStatsListener.CS_STAT_SKILLINFO+CrossfireStatsListener.CS_NUM_SKILLS; i++)
             {
-                final Skill skill = SkillSet.getSkill(i);
+                final Skill skill = skillSet.getSkill(i);
                 if (skill != null)
                 {
                     sb.append(' ').append(skill.getLevel());
@@ -553,7 +560,7 @@ public class DefaultScriptProcess extends Thread implements ScriptProcess
         {
             for (int i = CrossfireStatsListener.CS_STAT_SKILLINFO; i < CrossfireStatsListener.CS_STAT_SKILLINFO+CrossfireStatsListener.CS_NUM_SKILLS; i++)
             {
-                final Skill skill = SkillSet.getSkill(i);
+                final Skill skill = skillSet.getSkill(i);
                 if (skill != null)
                 {
                     commandSent("request skills "+i+" "+skill);

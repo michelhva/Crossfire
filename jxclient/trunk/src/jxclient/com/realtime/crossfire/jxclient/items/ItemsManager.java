@@ -53,6 +53,11 @@ public class ItemsManager
     private final Stats stats;
 
     /**
+     * The {@link SkillSet} instance to update.
+     */
+    private final SkillSet skillSet;
+
+    /**
      * Maps location to list of items.
      */
     private final Map<Integer, ArrayList<CfItem>> items = new HashMap<Integer, ArrayList<CfItem>>();
@@ -133,7 +138,7 @@ public class ItemsManager
         public void playerReceived(final int tag, final int weight, final int faceNum, final String name)
         {
             stats.setActiveSkill("");
-            SkillSet.clearNumberedSkills();
+            skillSet.clearNumberedSkills();
             setPlayer(new CfPlayer(tag, weight, faceCache.getFace(faceNum), name));
             stats.setStat(CrossfireStatsListener.C_STAT_WEIGHT, weight);
         }
@@ -159,11 +164,13 @@ public class ItemsManager
      * @param crossfireServerConnection the connection to monitor
      * @param faceCache the instance for looking up faces
      * @param stats the instance to update
+     * @param skillSet the skill set instance to update
      */
-    public ItemsManager(final CrossfireServerConnection crossfireServerConnection, final FaceCache faceCache, final Stats stats)
+    public ItemsManager(final CrossfireServerConnection crossfireServerConnection, final FaceCache faceCache, final Stats stats, final SkillSet skillSet)
     {
         this.faceCache = faceCache;
         this.stats = stats;
+        this.skillSet = skillSet;
         crossfireServerConnection.addCrossfireUpdateItemListener(crossfireUpdateItemListener);
     }
 

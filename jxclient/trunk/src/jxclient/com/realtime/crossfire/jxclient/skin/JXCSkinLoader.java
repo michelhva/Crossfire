@@ -144,6 +144,11 @@ public class JXCSkinLoader
     private final OptionManager optionManager;
 
     /**
+     * The {@link SkillSet} instance to use.
+     */
+    private final SkillSet skillSet;
+
+    /**
      * All defined fonts.
      */
     private final JXCSkinCache<Font> definedFonts = new JXCSkinCache<Font>("font");
@@ -203,8 +208,9 @@ public class JXCSkinLoader
      * @param defaultKeyBindings the default key bindings
      * @param optionManager the option manager to use
      * @param experienceTable the experience table to use
+     * @param skillSet the skill set to use
      */
-    public JXCSkinLoader(final ItemsManager itemsManager, final SpellsManager spellsManager, final FacesManager facesManager, final Stats stats, final CfMapUpdater mapUpdater, final KeyBindings defaultKeyBindings, final OptionManager optionManager, final ExperienceTable experienceTable)
+    public JXCSkinLoader(final ItemsManager itemsManager, final SpellsManager spellsManager, final FacesManager facesManager, final Stats stats, final CfMapUpdater mapUpdater, final KeyBindings defaultKeyBindings, final OptionManager optionManager, final ExperienceTable experienceTable, final SkillSet skillSet)
     {
         this.itemsManager = itemsManager;
         this.spellsManager = spellsManager;
@@ -212,7 +218,8 @@ public class JXCSkinLoader
         this.stats = stats;
         this.mapUpdater = mapUpdater;
         this.optionManager = optionManager;
-        skin = new DefaultJXCSkin(defaultKeyBindings, optionManager, stats, itemsManager, experienceTable);
+        this.skillSet = skillSet;
+        skin = new DefaultJXCSkin(defaultKeyBindings, optionManager, stats, itemsManager, experienceTable, skillSet);
         expressionParser = new ExpressionParser(skin.getSelectedResolution());
         commandParser = skin.newCommandParser(itemsManager, expressionParser);
         guiElementParser = new GuiElementParser(skin);
@@ -1175,7 +1182,7 @@ public class JXCSkinLoader
             }
 
             final String subtype = args[2];
-            final Skill skill = SkillSet.getNamedSkill(args[3].replaceAll("_", " "));
+            final Skill skill = skillSet.getNamedSkill(args[3].replaceAll("_", " "));
             final GUICommandList commandList = skin.getCommandList(args[4]);
             if (subtype.equals("add"))
             {
