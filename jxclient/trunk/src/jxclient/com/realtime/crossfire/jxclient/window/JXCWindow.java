@@ -57,6 +57,7 @@ import com.realtime.crossfire.jxclient.settings.options.OptionException;
 import com.realtime.crossfire.jxclient.settings.options.OptionManager;
 import com.realtime.crossfire.jxclient.shortcuts.Shortcuts;
 import com.realtime.crossfire.jxclient.skills.SkillSet;
+import com.realtime.crossfire.jxclient.skills.SkillSetInstance;
 import com.realtime.crossfire.jxclient.skin.JXCSkin;
 import com.realtime.crossfire.jxclient.skin.JXCSkinClassSource;
 import com.realtime.crossfire.jxclient.skin.JXCSkinDirSource;
@@ -143,6 +144,11 @@ public class JXCWindow extends JFrame
      * The {@link Stats} instance.
      */
     private final Stats stats;
+
+    /**
+     * The {@link SkillSet} instance.
+     */
+    private final SkillSet skillSet = new SkillSet();
 
     /**
      * The {@link CfMapUpdater} instance.
@@ -678,6 +684,7 @@ public class JXCWindow extends JFrame
     public JXCWindow(final Object terminateSync, final boolean debugGui, final Writer debugProtocol, final Writer debugKeyboard, final Settings settings, final SoundManager soundManager, final OptionManager optionManager) throws IOException
     {
         super("");
+        SkillSetInstance.skillSet = skillSet;
         this.terminateSync = terminateSync;
         this.debugGui = debugGui;
         this.settings = settings;
@@ -686,8 +693,8 @@ public class JXCWindow extends JFrame
         server = new DefaultCrossfireServerConnection(semaphoreRedraw, debugProtocol);
         final FaceCache faceCache = new FaceCache(server);
         experienceTable = new ExperienceTable(server);
-        stats = new Stats(server, experienceTable);
-        itemsManager = new ItemsManager(server, faceCache, stats);
+        stats = new Stats(server, experienceTable, skillSet);
+        itemsManager = new ItemsManager(server, faceCache, stats, skillSet);
         facesManager = new FacesManager(server, new FileCache(Filenames.getOriginalImageCacheDir()), new FileCache(Filenames.getScaledImageCacheDir()), new FileCache(Filenames.getMagicMapImageCacheDir()), faceCache);
         mapUpdater = new CfMapUpdater(server, facesManager, faceCache, animations);
         spellsManager = new SpellsManager(server);
@@ -699,7 +706,7 @@ public class JXCWindow extends JFrame
         mouseTracker = new MouseTracker(debugGui);
         windowRenderer = new JXCWindowRenderer(this, mouseTracker, semaphoreRedraw);
         mouseTracker.init(windowRenderer);
-        final ScriptManager scriptManager = new ScriptManager(this, commandQueue, server, stats, itemsManager, spellsManager, mapUpdater);
+        final ScriptManager scriptManager = new ScriptManager(this, commandQueue, server, stats, itemsManager, spellsManager, mapUpdater, skillSet);
         commands = new Commands(this, windowRenderer, commandQueue, server, scriptManager, optionManager);
         windowRenderer.init(commands);
         queryDialog = new Gui(this, mouseTracker, commands);
@@ -926,7 +933,7 @@ public class JXCWindow extends JFrame
                 soundManager.mute(Sounds.CHARACTER, false);
                 itemsManager.addCrossfirePlayerListener(playerListener);
                 stats.reset();
-                SkillSet.clearNumberedSkills();
+                skillSet.clearNumberedSkills();
                 connection.connect(connectionListener, crossfireQueryListener, crossfireDrawextinfoListener, skin.getMapWidth(), skin.getMapHeight(), skin.getNumLookObjects());
                 facesManager.reset();
                 commandQueue.clear();
@@ -1144,7 +1151,7 @@ public class JXCWindow extends JFrame
             // fallback: built-in resource
             skinSource = new JXCSkinClassSource("com/realtime/crossfire/jxclient/skins/"+skinName);
         }
-        final JXCSkinLoader newSkin = new JXCSkinLoader(itemsManager, spellsManager, facesManager, stats, mapUpdater, defaultKeyBindings, optionManager, experienceTable);
+        final JXCSkinLoader newSkin = new JXCSkinLoader(itemsManager, spellsManager, facesManager, stats, mapUpdater, defaultKeyBindings, optionManager, experienceTable, skillSet);
         return newSkin.load(skinSource, server, this, mouseTracker, metaserverModel, commandQueue, resolution, shortcuts, commands, currentSpellManager);
     }
 

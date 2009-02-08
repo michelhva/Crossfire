@@ -24,6 +24,7 @@ import com.realtime.crossfire.jxclient.mapupdater.CfMapUpdater;
 import com.realtime.crossfire.jxclient.server.CommandQueue;
 import com.realtime.crossfire.jxclient.server.CrossfireCommandDrawinfoEvent;
 import com.realtime.crossfire.jxclient.server.CrossfireServerConnection;
+import com.realtime.crossfire.jxclient.skills.SkillSet;
 import com.realtime.crossfire.jxclient.spells.SpellsManager;
 import com.realtime.crossfire.jxclient.stats.Stats;
 import com.realtime.crossfire.jxclient.window.JXCWindow;
@@ -74,6 +75,11 @@ public class ScriptManager
     private final CfMapUpdater mapUpdater;
 
     /**
+     * The {@link SkillSet} for looking up skill names.
+     */
+    private final SkillSet skillSet;
+
+    /**
      * All running {@link ScriptProcess}es.
      */
     private final Set<ScriptProcess> scriptProcesses = new CopyOnWriteArraySet<ScriptProcess>();
@@ -92,8 +98,9 @@ public class ScriptManager
      * @param itemsManager the items manager instance to use
      * @param spellsManager the spells manager instance to use
      * @param mapUpdater the map updater instance to use
+     * @param skillSet the skill set for looking up skill names
      */
-    public ScriptManager(final JXCWindow window, final CommandQueue commandQueue, final CrossfireServerConnection crossfireServerConnection, final Stats stats, final ItemsManager itemsManager, final SpellsManager spellsManager, final CfMapUpdater mapUpdater)
+    public ScriptManager(final JXCWindow window, final CommandQueue commandQueue, final CrossfireServerConnection crossfireServerConnection, final Stats stats, final ItemsManager itemsManager, final SpellsManager spellsManager, final CfMapUpdater mapUpdater, final SkillSet skillSet)
     {
         this.window = window;
         this.commandQueue = commandQueue;
@@ -102,6 +109,7 @@ public class ScriptManager
         this.itemsManager = itemsManager;
         this.spellsManager = spellsManager;
         this.mapUpdater = mapUpdater;
+        this.skillSet = skillSet;
     }
 
     /**
@@ -113,7 +121,7 @@ public class ScriptManager
         final DefaultScriptProcess scriptProcess;
         try
         {
-            scriptProcess = new DefaultScriptProcess(nextScriptId, command, window, commandQueue, crossfireServerConnection, stats, itemsManager, spellsManager, mapUpdater);
+            scriptProcess = new DefaultScriptProcess(nextScriptId, command, window, commandQueue, crossfireServerConnection, stats, itemsManager, spellsManager, mapUpdater, skillSet);
         }
         catch (final IOException ex)
         {

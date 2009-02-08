@@ -47,14 +47,21 @@ public class GaugeUpdaterParser
     private final ItemsManager itemsManager;
 
     /**
+     * The {@link SkillSet} for looking up skill names.
+     */
+    private final SkillSet skillSet;
+
+    /**
      * Creates a new instance.
      * @param stats the stats instance to use
      * @param itemsManager the items manager instance to use
+     * @param skillSet the skill set for looking up skill names
      */
-    public GaugeUpdaterParser(final Stats stats, final ItemsManager itemsManager)
+    public GaugeUpdaterParser(final Stats stats, final ItemsManager itemsManager, final SkillSet skillSet)
     {
         this.stats = stats;
         this.itemsManager = itemsManager;
+        this.skillSet = skillSet;
     }
 
     /**
@@ -77,7 +84,7 @@ public class GaugeUpdaterParser
 
         if (name.startsWith("SKILL_"))
         {
-            return new SkillGaugeUpdater(experienceTable, SkillSet.getNamedSkill(name.substring(6).replaceAll("_", " ")));
+            return new SkillGaugeUpdater(experienceTable, skillSet.getNamedSkill(name.substring(6).replaceAll("_", " ")));
         }
 
         if (name.startsWith("ACTIVE_SKILL_"))

@@ -20,7 +20,7 @@
 package com.realtime.crossfire.jxclient.server;
 
 import com.realtime.crossfire.jxclient.items.CfItem;
-import com.realtime.crossfire.jxclient.skills.SkillSet;
+import com.realtime.crossfire.jxclient.skills.SkillSetInstance;
 import com.realtime.crossfire.jxclient.util.HexCodec;
 import java.io.BufferedReader;
 import java.io.ByteArrayInputStream;
@@ -1906,7 +1906,7 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
      */
     private static void processSkillInfoReplyinfo(final byte[] packet, final int startPos, final int endPos) throws IOException
     {
-        SkillSet.clearSkills();
+        SkillSetInstance.skillSet.clearSkills();
         final ByteArrayInputStream is = new ByteArrayInputStream(packet, startPos, endPos-startPos);
         try
         {
@@ -1948,7 +1948,7 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
                             continue;
                         }
 
-                        SkillSet.addSkill(skillId, sk[1]);
+                        SkillSetInstance.skillSet.addSkill(skillId, sk[1]);
                     }
                 }
                 finally

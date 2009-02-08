@@ -30,6 +30,7 @@ import com.realtime.crossfire.jxclient.items.ItemsManager;
 import com.realtime.crossfire.jxclient.settings.options.CommandCheckBoxOption;
 import com.realtime.crossfire.jxclient.settings.options.OptionException;
 import com.realtime.crossfire.jxclient.settings.options.OptionManager;
+import com.realtime.crossfire.jxclient.skills.SkillSet;
 import com.realtime.crossfire.jxclient.stats.Stats;
 import com.realtime.crossfire.jxclient.window.GUICommandList;
 import com.realtime.crossfire.jxclient.window.JXCWindow;
@@ -146,13 +147,14 @@ public class DefaultJXCSkin implements JXCSkin
      * @param stats the stats instance to use
      * @param itemsManager the items manager instance to use
      * @param experienceTable the experience table to use
+     * @param skillSet the skill set for looking up skill names
      */
-    public DefaultJXCSkin(final KeyBindings defaultKeyBindings, final OptionManager optionManager, final Stats stats, final ItemsManager itemsManager, final ExperienceTable experienceTable)
+    public DefaultJXCSkin(final KeyBindings defaultKeyBindings, final OptionManager optionManager, final Stats stats, final ItemsManager itemsManager, final ExperienceTable experienceTable, final SkillSet skillSet)
     {
         this.defaultKeyBindings = defaultKeyBindings;
         this.optionManager = optionManager;
         this.experienceTable = experienceTable;
-        gaugeUpdaterParser = new GaugeUpdaterParser(stats, itemsManager);
+        gaugeUpdaterParser = new GaugeUpdaterParser(stats, itemsManager, skillSet);
     }
 
     public void reset()

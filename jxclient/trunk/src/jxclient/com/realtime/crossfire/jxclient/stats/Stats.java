@@ -58,6 +58,11 @@ public class Stats
     private final ExperienceTable experienceTable;
 
     /**
+     * The {@link SkillSet} instance to use.
+     */
+    private final SkillSet skillSet;
+
+    /**
      * The current stat values.
      */
     private final int[] stats = new int[258];
@@ -221,7 +226,7 @@ public class Stats
         {
             if (CS_STAT_SKILLINFO <= stat && stat < CS_STAT_SKILLINFO+CS_NUM_SKILLS)
             {
-                final Skill sk = SkillSet.getSkill(stat);
+                final Skill sk = skillSet.getSkill(stat);
                 if (sk == null)
                 {
                     System.err.println("ignoring skill value for unknown skill "+stat);
@@ -255,10 +260,12 @@ public class Stats
      * Create a new instance.
      * @param crossfireServerConnection the connection to monitor
      * @param experienceTable the experience table instance to use
+     * @param skillSet the skill set instance to use
      */
-    public Stats(final CrossfireServerConnection crossfireServerConnection, final ExperienceTable experienceTable)
+    public Stats(final CrossfireServerConnection crossfireServerConnection, final ExperienceTable experienceTable, final SkillSet skillSet)
     {
         this.experienceTable = experienceTable; // XXX: should detect changed information
+        this.skillSet = skillSet;
         crossfireServerConnection.addCrossfireStatsListener(crossfireStatsListener);
     }
 

@@ -25,7 +25,8 @@ import java.util.HashMap;
 import java.util.Map;
 
 /**
- * Utility class to maintain the set of skills.
+ * Maintain the set of skills as sent by the server.
+ * @author Andreas Kirschbaum
  */
 public class SkillSet
 {
@@ -33,17 +34,17 @@ public class SkillSet
      * Maps stat number to skill instance. Entries may be <code>null</code> if
      * the server did not provide a mapping.
      */
-    private static final Skill[] numberedSkills = new Skill[CrossfireStatsListener.CS_NUM_SKILLS];
+    private final Skill[] numberedSkills = new Skill[CrossfireStatsListener.CS_NUM_SKILLS];
 
     /**
      * Maps skill name to skill instance.
      */
-    private static final Map<String, Skill> namedSkills = new HashMap<String, Skill>();
+    private final Map<String, Skill> namedSkills = new HashMap<String, Skill>();
 
     /**
-     * Private constructor to prevent instantiation.
+     * Creates a new instance.
      */
-    private SkillSet()
+    public SkillSet()
     {
     }
 
@@ -52,7 +53,7 @@ public class SkillSet
      * @param id The numerical identifier for the new skill.
      * @param skillName The skill name.
      */
-    public static void addSkill(final int id, final String skillName)
+    public void addSkill(final int id, final String skillName)
     {
         final int index = id-CrossfireStatsListener.CS_STAT_SKILLINFO;
         final Skill oldSkill = numberedSkills[index];
@@ -76,7 +77,7 @@ public class SkillSet
      *
      * @return The skill instance.
      */
-    public static Skill getNamedSkill(final String skillName)
+    public Skill getNamedSkill(final String skillName)
     {
         final Skill oldSkill = namedSkills.get(skillName);
         if (oldSkill != null)
@@ -92,7 +93,7 @@ public class SkillSet
     /**
      * Clears all stat info in {@link #numberedSkills}.
      */
-    public static void clearNumberedSkills()
+    public void clearNumberedSkills()
     {
         for (final Skill skill : numberedSkills)
         {
@@ -106,7 +107,7 @@ public class SkillSet
     /**
      * Forget about all skill name mappings.
      */
-    public static void clearSkills()
+    public void clearSkills()
     {
         clearNumberedSkills();
         Arrays.fill(numberedSkills, null);
@@ -118,7 +119,7 @@ public class SkillSet
      * @return The Skill object matching the given identifier; may be
      * <code>null</code> for undefined skills.
      */
-    public static Skill getSkill(final int id)
+    public Skill getSkill(final int id)
     {
         return numberedSkills[id-CrossfireStatsListener.CS_STAT_SKILLINFO];
     }
