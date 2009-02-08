@@ -78,41 +78,69 @@ public class StatGaugeUpdater extends GaugeUpdater
         @Override
         public void statChanged(final int statnr, final int value)
         {
-            if (stat != statnr)
-            {
-                return;
-            }
-
             switch (stat)
             {
             case CrossfireStatsListener.CS_STAT_HP:
-                setValues(value, 0, stats.getStat(CrossfireStatsListener.CS_STAT_MAXHP));
+                if (statnr == CrossfireStatsListener.CS_STAT_HP)
+                {
+                    setValues(value, 0, stats.getStat(CrossfireStatsListener.CS_STAT_MAXHP));
+                }
+                else if (statnr == CrossfireStatsListener.CS_STAT_MAXHP)
+                {
+                    setValues(stats.getStat(CrossfireStatsListener.CS_STAT_HP), 0, value);
+                }
                 break;
 
             case CrossfireStatsListener.CS_STAT_SP:
-                setValues(value, 0, stats.getStat(CrossfireStatsListener.CS_STAT_MAXSP));
+                if (statnr == CrossfireStatsListener.CS_STAT_SP)
+                {
+                    setValues(value, 0, stats.getStat(CrossfireStatsListener.CS_STAT_MAXSP));
+                }
+                else if (statnr == CrossfireStatsListener.CS_STAT_MAXSP)
+                {
+                    setValues(stats.getStat(CrossfireStatsListener.CS_STAT_SP), 0, value);
+                }
                 break;
 
             case CrossfireStatsListener.CS_STAT_FOOD:
-                setValues(value, 0, 999);
+                if (statnr == CrossfireStatsListener.CS_STAT_FOOD)
+                {
+                    setValues(value, 0, 999);
+                }
                 break;
 
             case CrossfireStatsListener.C_STAT_LOWFOOD:
-                setValues(active && stats.getStat(CrossfireStatsListener.CS_STAT_FOOD) < LOWFOOD_LIMIT ? 1 : 0, 0, 1);
+                if (statnr == CrossfireStatsListener.C_STAT_LOWFOOD)
+                {
+                    setValues(active && stats.getStat(CrossfireStatsListener.CS_STAT_FOOD) < LOWFOOD_LIMIT ? 1 : 0, 0, 1);
+                }
                 break;
 
             case CrossfireStatsListener.CS_STAT_GRACE:
-                setValues(value, 0, stats.getStat(CrossfireStatsListener.CS_STAT_MAXGRACE));
+                if (statnr == CrossfireStatsListener.CS_STAT_GRACE)
+                {
+                    setValues(value, 0, stats.getStat(CrossfireStatsListener.CS_STAT_MAXGRACE));
+                }
+                else if (statnr == CrossfireStatsListener.CS_STAT_MAXGRACE)
+                {
+                    setValues(stats.getStat(CrossfireStatsListener.CS_STAT_GRACE), 0, value);
+                }
                 break;
 
             case CrossfireStatsListener.C_STAT_POISONED:
-                setValues(value, 0, 1);
+                if (statnr == CrossfireStatsListener.C_STAT_POISONED)
+                {
+                    setValues(value, 0, 1);
+                }
                 break;
 
             default:
                 if (CrossfireStatsListener.CS_STAT_RESIST_START <= stat && stat <= CrossfireStatsListener.CS_STAT_RESIST_END)
                 {
-                    setValues(value, 0, 100);
+                    if (statnr == stat)
+                    {
+                        setValues(value, 0, 100);
+                    }
                 }
                 break;
             }
@@ -150,22 +178,20 @@ public class StatGaugeUpdater extends GaugeUpdater
         @Override
         public void experienceChanged(final long exp)
         {
-            // ignore
+            if (stat == CrossfireStatsListener.C_STAT_EXP_NEXT_LEVEL)
+            {
+                updateExperienceNextLevel();
+            }
         }
 
         /** {@inheritDoc} */
         @Override
         public void experienceNextLevelChanged(final long expNextLevel)
         {
-            if (stat != CrossfireStatsListener.C_STAT_EXP_NEXT_LEVEL)
+            if (stat == CrossfireStatsListener.C_STAT_EXP_NEXT_LEVEL)
             {
-                return;
+                updateExperienceNextLevel();
             }
-
-            final int level = stats.getStat(CrossfireStatsListener.CS_STAT_LEVEL);
-            final long experience = stats.getExperience();
-            final int perc = getPercentsToNextLevel(level, experience);
-            setValues(perc, 0, 99, perc+"%", level+"<br>Experience:"+Formatter.formatLong(experience)+"<br>Next level:"+Formatter.formatLong(getExperienceToNextLevel(level, experience)));
         }
     };
 
@@ -223,5 +249,17 @@ public class StatGaugeUpdater extends GaugeUpdater
     {
         itemsManager.removeCrossfirePlayerListener(playerListener);
         stats.removeCrossfireStatsListener(statsListener);
+    }
+
+    /**
+     * Updates information for {@link
+     * CrossfireStatsListener#C_STAT_EXP_NEXT_LEVEL}.
+     */
+    private void updateExperienceNextLevel()
+    {
+        final int level = stats.getStat(CrossfireStatsListener.CS_STAT_LEVEL);
+        final long experience = stats.getExperience();
+        final int perc = getPercentsToNextLevel(level, experience);
+        setValues(perc, 0, 99, perc+"%", level+"<br>Experience:"+Formatter.formatLong(experience)+"<br>Next level:"+Formatter.formatLong(getExperienceToNextLevel(level, experience)));
     }
 }
