@@ -19,6 +19,8 @@
 //
 package com.realtime.crossfire.jxclient.skills;
 
+import com.realtime.crossfire.jxclient.server.CrossfireServerConnection;
+import com.realtime.crossfire.jxclient.server.CrossfireSkillInfoListener;
 import com.realtime.crossfire.jxclient.server.CrossfireStatsListener;
 import java.util.Arrays;
 import java.util.HashMap;
@@ -42,10 +44,34 @@ public class SkillSet
     private final Map<String, Skill> namedSkills = new HashMap<String, Skill>();
 
     /**
-     * Creates a new instance.
+     * The {@link CrossfireSkillInfoListener} attached to the server connection
+     * for detecting changed skill info.
      */
-    public SkillSet()
+    private final CrossfireSkillInfoListener crossfireSkillInfoListener = new CrossfireSkillInfoListener()
     {
+        /** {@inheritDoc} */
+        @Override
+        public void clearSkills()
+        {
+            clearNumberedSkills();
+            Arrays.fill(numberedSkills, null);
+        }
+
+        /** {@inheritDoc} */
+        @Override
+        public void addSkill(final int skillId, final String skillName)
+        {
+            SkillSet.this.addSkill(skillId, skillName);
+        }
+    };
+
+    /**
+     * Creates a new instance.
+     * @param crossfireServerConnection the server connection to monitor
+     */
+    public SkillSet(final CrossfireServerConnection crossfireServerConnection)
+    {
+        crossfireServerConnection.addCrossfireSkillInfoListener(crossfireSkillInfoListener);
     }
 
     /**
@@ -53,7 +79,7 @@ public class SkillSet
      * @param id The numerical identifier for the new skill.
      * @param skillName The skill name.
      */
-    public void addSkill(final int id, final String skillName)
+    private void addSkill(final int id, final String skillName)
     {
         final int index = id-CrossfireStatsListener.CS_STAT_SKILLINFO;
         final Skill oldSkill = numberedSkills[index];
@@ -102,15 +128,6 @@ public class SkillSet
                 skill.set(0, 0);
             }
         }
-    }
-
-    /**
-     * Forget about all skill name mappings.
-     */
-    public void clearSkills()
-    {
-        clearNumberedSkills();
-        Arrays.fill(numberedSkills, null);
     }
 
     /**
