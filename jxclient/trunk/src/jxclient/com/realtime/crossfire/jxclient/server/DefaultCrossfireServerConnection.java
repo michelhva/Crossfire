@@ -2117,6 +2117,10 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
                     System.err.println("Expect issues with the ground view display.");
                 }
             }
+            else if (option.equals("faceset"))
+            {
+                // ignore: we do not care about the face set
+            }
             else
             {
                 System.err.println("Warning: ignoring unknown setup option from server: "+option+"="+value);
