@@ -268,6 +268,9 @@ public class MetaserverEntryParser
                         final long uptime = NumberParser.parseLong(value, now);
                         updateSeconds = Math.max((int)((uptime-now)/1000), 0);
                     }
+                    else if (key.equals("flags"))
+                    {
+                    }
                     else
                     {
                         System.err.println("Ignoring unknown key: "+key);
