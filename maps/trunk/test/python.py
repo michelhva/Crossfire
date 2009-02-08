@@ -131,7 +131,7 @@ def do_marker():
 def do_memory():
 	whoami.Say('Value save test')
 	dict = Crossfire.GetPrivateDictionary()
-	if dict.has_key('s'):
+	if 's' in dict:
 		x = dict['s']
 		whoami.Say(' x was %d'%x)
 		x = x + 1
