@@ -1,3 +1,7 @@
+2009-02-08  Andreas Kirschbaum
+
+	* Do not send stray pickup commands before connection setup.
+
 2009-02-07  Andreas Kirschbaum
 
 	* Do not crash when trying to load invalid skin files.

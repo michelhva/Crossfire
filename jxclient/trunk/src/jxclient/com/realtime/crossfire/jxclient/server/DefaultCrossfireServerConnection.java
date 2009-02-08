@@ -2263,6 +2263,10 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
     @Override
     public int sendNcom(final int repeat, final String command)
     {
+        if(!isConnected())
+        {
+            return 0;
+        }
         if (debugProtocol != null)
         {
             debugProtocolWrite("send ncom no="+packet+" repeat="+repeat+" cmd="+command+"\n");
