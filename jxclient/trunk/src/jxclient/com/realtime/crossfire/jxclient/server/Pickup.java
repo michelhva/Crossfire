@@ -227,6 +227,7 @@ public class Pickup
      */
     public void setPickupMode(final long pickupMode, final boolean set)
     {
+        final long oldPickupMode = this.pickupMode;
         if (set)
         {
             this.pickupMode |= pickupMode;
@@ -235,7 +236,10 @@ public class Pickup
         {
             this.pickupMode &= ~pickupMode;
         }
-        update();
+        if (this.pickupMode != oldPickupMode)
+        {
+            update();
+        }
     }
 
     /**
