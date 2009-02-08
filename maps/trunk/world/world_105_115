@@ -9,7 +9,7 @@ enter_x 1
 enter_y 1
 msg
 Created:  2001-02-16
-Modified: 2008-12-16 Rick Tanner
+Modified: 2009-02-06 Arvid Norlander
 endmsg
 outdoor 1
 tile_path_1 world_105_114
@@ -12115,6 +12115,7 @@ x 30
 y 37
 end
 arch wagon
+slaying /none
 x 30
 y 37
 speed 1
