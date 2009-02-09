@@ -8,7 +8,7 @@ enter_x 2
 enter_y 6
 msg
 Created:  1996-06-10
-Modified: 2008-10-13 Rick Tanner
+Modified: 2009-02-09 Arvid Norlander
 endmsg
 end
 arch dungeon_floor
@@ -1262,6 +1262,7 @@ arch blocked
 name darkness
 x 12
 y 12
+move_block all -walk
 no_pass 0
 blocksview 0
 is_floor 1
@@ -1277,6 +1278,7 @@ arch blocked
 name darkness
 x 12
 y 13
+move_block all -walk
 no_pass 0
 blocksview 0
 is_floor 1
