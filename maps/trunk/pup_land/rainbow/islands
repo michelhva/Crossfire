@@ -6,7 +6,7 @@ width 35
 height 36
 msg
 Created:  1996-05-30
-Modified: 2008-11-18 Rick Tanner
+Modified: 2009-02-09 Arvid Norlander
 endmsg
 outdoor 1
 end
@@ -4496,6 +4496,7 @@ end
 arch sea
 x 24
 y 16
+move_block all -boat -walk
 no_pass 0
 end
 arch dungeon_magic
@@ -4512,6 +4513,7 @@ end
 arch sea
 x 24
 y 17
+move_block all -boat -walk
 no_pass 0
 end
 arch dungeon_magic
@@ -4528,6 +4530,7 @@ end
 arch sea
 x 24
 y 18
+move_block all -boat -walk
 no_pass 0
 end
 arch dungeon_magic
@@ -4544,6 +4547,7 @@ end
 arch sea
 x 24
 y 19
+move_block all -boat -walk
 no_pass 0
 end
 arch dungeon_magic
@@ -4721,6 +4725,7 @@ end
 arch sea
 x 25
 y 16
+move_block all -boat -walk
 no_pass 0
 end
 arch mover_5
@@ -4732,6 +4737,7 @@ end
 arch sea
 x 25
 y 17
+move_block all -boat -walk
 no_pass 0
 end
 arch mover_5
@@ -4743,6 +4749,7 @@ end
 arch sea
 x 25
 y 18
+move_block all -boat -walk
 no_pass 0
 end
 arch dungeon_magic
@@ -4759,6 +4766,7 @@ end
 arch sea
 x 25
 y 19
+move_block all -boat -walk
 no_pass 0
 end
 arch dungeon_magic
@@ -4942,6 +4950,7 @@ end
 arch sea
 x 26
 y 19
+move_block all -boat -walk
 no_pass 0
 end
 arch dungeon_magic
