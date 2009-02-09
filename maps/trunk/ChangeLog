@@ -1,3 +1,252 @@
+2009-02-08 15:38  anmaster
+
+	* world/world_105_115: Prevent the wagon outside scorn from being
+	  set to point to a broken random map when cfrhg is used. This
+	  happens because the wagon is unique.
+
+2009-02-08 15:36  anmaster
+
+	* HallOfDMs: /HallOfDMs: Fix typo ("Wraith Hal of Selection" should
+	  be "Wraith Hall of Selection").
+
+2009-02-08 15:34  anmaster
+
+	* test/python.py: /test/python.py: Avoid deprecated syntax.
+
+2009-02-06 20:04  anmaster
+
+	* scorn/shops/scorn.sale1: Add some missing dungeon_magic tiles to
+	  /scorn/shops/scorn.sale1.
+
+2009-02-06 16:34  anmaster
+
+	* python/casino/goldslots.py, python/casino/platinumslots.py,
+	  python/casino/silverslots.py: Fix mixed tab/space indention in
+	  some casino python scripts.
+
+2009-02-06 16:32  anmaster
+
+	* python/casino/diamondslots.py, python/casino/imperialslots.py:
+	  Fix part of bug 2457751 "Unpaid items work for some things...":
+	  Make diamondslots.py and imperialslots.py check that the object
+	  is paid for.
+
+2009-02-06 16:01  anmaster
+
+	* brest/brest.scrolls.right: Fix part of bug 2457751 "Unpaid items
+	  work for some things...": Make some floor in
+	  /brest/brest.scrolls.right shop floor. Also add some missing
+	  spell blocking tiles.
+
+2009-02-06 14:05  anmaster
+
+	* scorn/shops/light_shop: Fix part of bug 2457751 "Unpaid items
+	  work for some things...": Make some floor in
+	  /scorn/shops/light_shop shop floor.
+
+2009-02-06 13:53  anmaster
+
+	* mlab/citydeclouds/cdcapart1: Fix /mlab/citydeclouds/cdcapart1:
+	  When going from player unique map to a shared map you have to use
+	  absolute paths, not relative ones. This will require updating of
+	  the maps stored for the player (if any).
+
+2009-02-06 13:48  anmaster
+
+	* mlab/citydeclouds/villa/citydecloudsvillaC1: Fix exit coordinates
+	  in /mlab/citydeclouds/villa/citydecloudsvillaC1
+
+2009-02-06 13:33  anmaster
+
+	* python/gods/altar_valkyrie.py: Fix part of bug 2457751 "Unpaid
+	  items work for some things...": Valkyrie altars no longer accepts
+	  unpaid items.
+
+2009-02-04 17:08  anmaster
+
+	* python/items/weapon_occidental_mages.py: Fix part 1 of bug
+	  2369423 ("occidental mages weapons bugs"). Part 1 is weapon speed
+	  going the wrong way.
+
+2009-02-03 19:25  anmaster
+
+	* python/CFGamble.py: Fix indentation in CFGamble.py
+
+2009-02-03 19:24  anmaster
+
+	* python/CFDataFile.py, python/CFDialog.py: Try to be a bit more
+	  future compatible with Python 3
+
+2009-02-01 07:39  rjtanner
+
+	* wolfsburg/tt/tta1, wolfsburg/tt/tta2, wolfsburg/tt/ttb1,
+	  wolfsburg/tt/ttb2: Cosmetic changes with Twin Towers maps - nicer
+	  merging with cwall (castle walls) and swall (fence)
+
+2009-01-31 06:32  rjtanner
+
+	* navar_city/magara/houses/museum: Typo correction on girdle of
+	  damage (was dammage) in Museum of Arms
+	  (/navar_city/magara/houses/museum)
+
+2009-01-30 05:07  rjtanner
+
+	* darcap/darcap/circus/fz_o1: Removed the cloud floor tile in the
+	  Fun Zone Obstacle Course 1 (/darcap/darcap/circus/fz_o1) in
+	  Darcap Circus, it was causing problems with the teleporter back
+	  to the Fun Zone Lobby
+
+2009-01-30 04:38  rjtanner
+
+	* wolfsburg/magara/castle/floor_1: Fix entrance from Castle Magara,
+	  floor 1 (/wolfsburg/magara/castle/floor_1) back to the world map
+	  (/world/world_128_109)
+
+2009-01-30 01:51  anmaster
+
+	* python/guilds/guild_dues.py: Fix tabs in
+	  python/guilds/guild_dues.py
+
+2009-01-30 01:45  anmaster
+
+	* python/CFGamble.py: Correct small syntax error in CFGamble.py
+
+2009-01-30 01:38  anmaster
+
+	* python/CFBank.py, python/CFBoard.py, python/CFCampfire.py,
+	  python/CFDataFile.py, python/CFDialog.py, python/CFGamble.py,
+	  python/CFGuilds.py, python/CFItemBroker.py, python/CFLog.py,
+	  python/CFMail.py, python/CFMapTransformer.py, python/CFMove.py,
+	  python/CFTimeOfDay.py, python/CFWorld.py, python/IPO/banksay.py,
+	  python/IPO/board.py, python/IPO/receive.py, python/IPO/say.py,
+	  python/IPO/seen.py, python/IPO/send.py,
+	  python/casino/diamondslots.py, python/casino/goldslots.py,
+	  python/casino/imperialslots.py, python/casino/platinumslots.py,
+	  python/casino/silverslots.py, python/commands/give.py,
+	  python/events/born/log_born.py,
+	  python/events/init/give_command.py,
+	  python/events/init/guild_init.py, python/events/kick/log_kick.py,
+	  python/events/login/log_login.py,
+	  python/events/login/mail_login.py,
+	  python/events/muzzle/log_muzzle.py,
+	  python/events/python_event.py, python/events/python_init.py,
+	  python/events/remove/bank_remove.py,
+	  python/events/remove/guild_remove.py,
+	  python/events/remove/log_remove.py,
+	  python/gods/altar_valkyrie.py, python/guilds/guild_dues.py,
+	  python/guilds/guild_entry.py,
+	  python/guilds/guild_questpoints_apply.py,
+	  python/guilds/guildboard.py, python/guilds/guildbuy.py,
+	  python/guilds/guildjoin.py, python/guilds/guildoracle.py,
+	  python/guilds/guildpay.py, python/guilds/storage_entry.py,
+	  python/items/banquet.py, python/items/campfire_say.py,
+	  python/items/campfire_timer.py,
+	  python/items/experience_rewarder.py,
+	  python/items/positioning_system.py,
+	  python/items/rhyzian_amulet.py,
+	  python/items/ring_occidental_mages.py,
+	  python/items/roll-o-matic.py, python/items/smoking_pipe.py,
+	  python/items/sunnista.py,
+	  python/items/weapon_occidental_mages.py,
+	  python/maps/navar-midane_apply.py,
+	  python/maps/navar-midane_attack.py,
+	  python/maps/navar-midane_pickup.py,
+	  python/maps/navar-midane_time.py,
+	  python/maps/navar_city/university-dorlf.py,
+	  python/maps/witherspoon_manor/devourers.py,
+	  python/maps/witherspoon_manor/ghost.py,
+	  python/maps/witherspoon_manor/rolanda.py,
+	  python/maps/witherspoon_manor/tomb.py,
+	  python/maps/witherspoon_manor/weapon_shop.py,
+	  python/misc/CFInsulter.py, python/misc/CFweardisguise.py,
+	  python/misc/death_message.py, python/misc/doNothing.py,
+	  python/misc/greet_message.py, python/misc/npc_dialog.py,
+	  python/misc/swallow_whole.py, python/monsters/combat_chicken.py,
+	  python/monsters/farnass.py, python/monsters/lursendis.py,
+	  python/tod/filter.py, python/tod/push.py, python/tod/replace.py,
+	  python/tod/replace_in_map.py, python/tod/sleep.py: Set
+	  svn:eol-style on the python scripts in maps.
+
+2009-01-30 01:32  anmaster
+
+	* python/CFBank.py, python/CFBoard.py, python/CFDataFile.py,
+	  python/CFGamble.py, python/CFMail.py, python/IPO/say.py,
+	  python/events/python_event.py, python/events/python_init.py,
+	  python/maps/navar-midane_time.py, python/misc/npc_dialog.py,
+	  python/monsters/combat_chicken.py, python/monsters/farnass.py,
+	  python/tod/filter.py, python/tod/push.py, python/tod/replace.py,
+	  python/tod/replace_in_map.py, python/tod/sleep.py: Avoid features
+	  in the python scripts that are removed from python 3.0. This is
+	  confirmed to still work on at least python 2.5 and as far as I
+	  understand the docs also python 2.4
+
+2009-01-30 01:22  anmaster
+
+	* python/CFBank.py, python/CFCampfire.py, python/CFDataFile.py,
+	  python/CFDialog.py, python/CFGamble.py,
+	  python/CFMapTransformer.py, python/CFMove.py,
+	  python/CFTimeOfDay.py, python/IPO/say.py,
+	  python/commands/give.py, python/events/init/give_command.py,
+	  python/events/kick/log_kick.py,
+	  python/events/login/mail_login.py, python/guilds/README.txt,
+	  python/guilds/guild_dues.py, python/guilds/guild_entry.py,
+	  python/guilds/guild_questpoints_apply.py,
+	  python/guilds/guildboard.py, python/guilds/guildbuy.py,
+	  python/guilds/guildjoin.py, python/guilds/guildoracle.py,
+	  python/guilds/guildpay.py, python/items/banquet.py,
+	  python/items/experience_rewarder.py,
+	  python/items/roll-o-matic.py, python/items/smoking_pipe.py,
+	  python/items/sunnista.py, python/maps/navar-midane_time.py,
+	  python/maps/witherspoon_manor/devourers.py,
+	  python/maps/witherspoon_manor/ghost.py,
+	  python/maps/witherspoon_manor/rolanda.py,
+	  python/maps/witherspoon_manor/tomb.py,
+	  python/maps/witherspoon_manor/weapon_shop.py,
+	  python/misc/CFweardisguise.py, python/misc/npc_dialog.py,
+	  python/misc/swallow_whole.py, python/monsters/combat_chicken.py,
+	  python/monsters/farnass.py, python/monsters/lursendis.py,
+	  python/tod/filter.py, python/tod/push.py, python/tod/replace.py,
+	  python/tod/sleep.py: Run whitespace cleanup script in
+	  maps/python.
+
+2009-01-25 03:54  anmaster
+
+	* darcap/darcap/earthhouse: Fix exit coords in
+	  /darcap/darcap/earthhouse
+
+2009-01-23 19:03  anmaster
+
+	* azumauindo/suno-yamatoshi/buildings/tatemonoA2: Fix destination
+	  of down stairs in
+	  /azumauindo/suno-yamatoshi/buildings/tatemonoA2.
+
+2009-01-23 06:23  rjtanner
+
+	* santo_dominion/lord_byron/armour,
+	  santo_dominion/lord_byron/general,
+	  santo_dominion/lord_byron/magic, santo_dominion/lord_byron/main,
+	  santo_dominion/lord_byron/weapon: Make shop areas of Lord Byron's
+	  Castle (/santo_dominion/lord_byron/main) stand alone maps in
+	  order to support shop headers and inventory signs
+
+2009-01-22 06:10  rjtanner
+
+	* santo_dominion/lord_byron/main: Cosmetic wall changes for nicer
+	  merging
+
+2009-01-22 05:41  rjtanner
+
+	* brest/pshops/pshopsinc2: Restore descriptive name to stairway
+
+2009-01-21 21:59  anmaster
+
+	* brest/pshops/pshopsinc2: Fix the type of stairs (should be
+	  stair2_down, was stair2_up) in /brest/pshops/pshopsinc2.
+
+2009-01-17 08:58  rjtanner
+
+	* ChangeLog: Updated ChangeLog file using svn2cl
+
 2009-01-17 07:54  rjtanner
 
 	* quests/mak/dragons/chaos: Synch with Branches/1.x; Insert floor
