@@ -164,7 +164,7 @@ def do_banquet():
 
 	# Teleport
 	act.Message('You feel grabbed by some powerful force.')
-	act.Teleport(m, int(( size_x - 1 ) / 2), int( size_y - 1 ) / 2)
+	act.Teleport(m, int(( size_x - 1 ) / 2), int((size_y - 1) / 2))
 
 	# Keep free spot by putting a statue
 	statue = im.CreateObject(rw, x, y)
