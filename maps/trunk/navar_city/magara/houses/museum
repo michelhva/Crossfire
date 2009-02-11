@@ -8,244 +8,244 @@ enter_x 4
 enter_y 18
 msg
 Created:  1994-10-11
-Modified: 2009-01-31 Rick Tanner
+Modified: 2009-02-10 Rick Tanner
 endmsg
 end
+arch dungeon_magic
+end
 arch flagstone
 name floor
 face shop_empty.111
 end
-arch dungeon_magic
-end
 arch bwall_0
+end
+arch dungeon_magic
+y 1
 end
 arch flagstone
 name floor
 face shop_empty.111
 y 1
 end
-arch dungeon_magic
-y 1
-end
 arch bwall_0
 y 1
+end
+arch dungeon_magic
+y 2
 end
 arch flagstone
 name floor
 face shop_empty.111
 y 2
 end
-arch dungeon_magic
-y 2
-end
 arch bwall_0
 y 2
 end
+arch dungeon_magic
+y 3
+end
 arch flagstone
 name floor
 face shop_empty.111
 y 3
 end
-arch dungeon_magic
-y 3
-end
 arch bwall_0
 y 3
+end
+arch dungeon_magic
+y 4
 end
 arch flagstone
 name floor
 face shop_empty.111
 y 4
 end
-arch dungeon_magic
-y 4
-end
 arch bwall_0
 y 4
 end
+arch dungeon_magic
+y 5
+end
 arch flagstone
 name floor
 face shop_empty.111
 y 5
 end
-arch dungeon_magic
-y 5
-end
 arch bwall_0
 y 5
+end
+arch dungeon_magic
+y 6
 end
 arch flagstone
 name floor
 face shop_empty.111
 y 6
 end
-arch dungeon_magic
-y 6
-end
 arch bwall_0
 y 6
 end
+arch dungeon_magic
+y 7
+end
 arch flagstone
 name floor
 face shop_empty.111
 y 7
 end
-arch dungeon_magic
-y 7
-end
 arch bwall_0
 y 7
+end
+arch dungeon_magic
+y 8
 end
 arch flagstone
 name floor
 face shop_empty.111
 y 8
 end
-arch dungeon_magic
-y 8
-end
 arch bwall_0
 y 8
 end
+arch dungeon_magic
+y 9
+end
 arch flagstone
 name floor
 face shop_empty.111
 y 9
 end
-arch dungeon_magic
-y 9
-end
 arch bwall_0
 y 9
+end
+arch dungeon_magic
+y 10
 end
 arch flagstone
 name floor
 face shop_empty.111
 y 10
 end
-arch dungeon_magic
-y 10
-end
 arch bwall_0
 y 10
 end
+arch dungeon_magic
+y 11
+end
 arch flagstone
 name floor
 face shop_empty.111
 y 11
 end
-arch dungeon_magic
-y 11
-end
 arch bwall_0
 y 11
+end
+arch dungeon_magic
+y 12
 end
 arch flagstone
 name floor
 face shop_empty.111
 y 12
 end
-arch dungeon_magic
-y 12
-end
 arch bwall_0
 y 12
 end
+arch dungeon_magic
+y 13
+end
 arch flagstone
 name floor
 face shop_empty.111
 y 13
 end
-arch dungeon_magic
-y 13
-end
 arch bwall_0
 y 13
+end
+arch dungeon_magic
+y 14
 end
 arch flagstone
 name floor
 face shop_empty.111
 y 14
 end
-arch dungeon_magic
-y 14
-end
 arch bwall_0
 y 14
 end
+arch dungeon_magic
+y 15
+end
 arch flagstone
 name floor
 face shop_empty.111
 y 15
 end
-arch dungeon_magic
-y 15
-end
 arch bwall_0
 y 15
+end
+arch dungeon_magic
+y 16
 end
 arch flagstone
 name floor
 face shop_empty.111
 y 16
 end
-arch dungeon_magic
-y 16
-end
 arch bwall_0
 y 16
 end
+arch dungeon_magic
+y 17
+end
 arch flagstone
 name floor
 face shop_empty.111
 y 17
 end
-arch dungeon_magic
-y 17
-end
 arch bwall_0
 y 17
+end
+arch dungeon_magic
+y 18
 end
 arch flagstone
 name floor
 face shop_empty.111
 y 18
 end
-arch dungeon_magic
-y 18
-end
 arch bwall_0
 y 18
 end
+arch dungeon_magic
+y 19
+end
 arch flagstone
 name floor
 face shop_empty.111
-y 19
-end
-arch dungeon_magic
 y 19
 end
 arch bwall_0
 y 19
 end
+arch dungeon_magic
+x 1
+end
 arch flagstone
 name floor
 face shop_empty.111
-x 1
-end
-arch dungeon_magic
 x 1
 end
 arch bwall_0
 x 1
 end
-arch flagstone
-name floor
-face shop_empty.111
+arch dungeon_magic
 x 1
 y 1
 end
-arch dungeon_magic
+arch flagstone
+name floor
+face shop_empty.111
 x 1
 y 1
 end
@@ -254,13 +254,13 @@ name Mithril chainmail
 x 1
 y 1
 end
-arch flagstone
-name floor
-face shop_empty.111
+arch dungeon_magic
 x 1
 y 2
 end
-arch dungeon_magic
+arch flagstone
+name floor
+face shop_empty.111
 x 1
 y 2
 end
@@ -269,13 +269,13 @@ name Dragon mail
 x 1
 y 2
 end
-arch flagstone
-name floor
-face shop_empty.111
+arch dungeon_magic
 x 1
 y 3
 end
-arch dungeon_magic
+arch flagstone
+name floor
+face shop_empty.111
 x 1
 y 3
 end
@@ -284,13 +284,13 @@ name Girdle strength
 x 1
 y 3
 end
-arch flagstone
-name floor
-face shop_empty.111
+arch dungeon_magic
 x 1
 y 4
 end
-arch dungeon_magic
+arch flagstone
+name floor
+face shop_empty.111
 x 1
 y 4
 end
@@ -299,13 +299,13 @@ name Girdle con
 x 1
 y 4
 end
-arch flagstone
-name floor
-face shop_empty.111
+arch dungeon_magic
 x 1
 y 5
 end
-arch dungeon_magic
+arch flagstone
+name floor
+face shop_empty.111
 x 1
 y 5
 end
@@ -314,13 +314,13 @@ name Girdle damage
 x 1
 y 5
 end
-arch flagstone
-name floor
-face shop_empty.111
+arch dungeon_magic
 x 1
 y 6
 end
-arch dungeon_magic
+arch flagstone
+name floor
+face shop_empty.111
 x 1
 y 6
 end
@@ -329,13 +329,13 @@ name gauntlets strength
 x 1
 y 6
 end
-arch flagstone
-name floor
-face shop_empty.111
+arch dungeon_magic
 x 1
 y 7
 end
-arch dungeon_magic
+arch flagstone
+name floor
+face shop_empty.111
 x 1
 y 7
 end
@@ -344,13 +344,13 @@ name Gauntlets dex
 x 1
 y 7
 end
-arch flagstone
-name floor
-face shop_empty.111
+arch dungeon_magic
 x 1
 y 8
 end
-arch dungeon_magic
+arch flagstone
+name floor
+face shop_empty.111
 x 1
 y 8
 end
@@ -359,13 +359,13 @@ name Helmet of Briliance
 x 1
 y 8
 end
-arch flagstone
-name floor
-face shop_empty.111
+arch dungeon_magic
 x 1
 y 9
 end
-arch dungeon_magic
+arch flagstone
+name floor
+face shop_empty.111
 x 1
 y 9
 end
@@ -374,13 +374,13 @@ name Helmet of Xrays
 x 1
 y 9
 end
-arch flagstone
-name floor
-face shop_empty.111
+arch dungeon_magic
 x 1
 y 10
 end
-arch dungeon_magic
+arch flagstone
+name floor
+face shop_empty.111
 x 1
 y 10
 end
@@ -389,13 +389,13 @@ name Eyeshield
 x 1
 y 10
 end
-arch flagstone
-name floor
-face shop_empty.111
+arch dungeon_magic
 x 1
 y 11
 end
-arch dungeon_magic
+arch flagstone
+name floor
+face shop_empty.111
 x 1
 y 11
 end
@@ -404,13 +404,13 @@ name Holy shield
 x 1
 y 11
 end
-arch flagstone
-name floor
-face shop_empty.111
+arch dungeon_magic
 x 1
 y 12
 end
-arch dungeon_magic
+arch flagstone
+name floor
+face shop_empty.111
 x 1
 y 12
 end
@@ -419,13 +419,13 @@ name Reflector
 x 1
 y 12
 end
-arch flagstone
-name floor
-face shop_empty.111
+arch dungeon_magic
 x 1
 y 13
 end
-arch dungeon_magic
+arch flagstone
+name floor
+face shop_empty.111
 x 1
 y 13
 end
@@ -434,13 +434,13 @@ name Speed boots
 x 1
 y 13
 end
-arch flagstone
-name floor
-face shop_empty.111
+arch dungeon_magic
 x 1
 y 14
 end
-arch dungeon_magic
+arch flagstone
+name floor
+face shop_empty.111
 x 1
 y 14
 end
@@ -449,13 +449,13 @@ name Levitation boots
 x 1
 y 14
 end
-arch flagstone
-name floor
-face shop_empty.111
+arch dungeon_magic
 x 1
 y 15
 end
-arch dungeon_magic
+arch flagstone
+name floor
+face shop_empty.111
 x 1
 y 15
 end
@@ -464,13 +464,13 @@ name Elven boots
 x 1
 y 15
 end
-arch flagstone
-name floor
-face shop_empty.111
+arch dungeon_magic
 x 1
 y 16
 end
-arch dungeon_magic
+arch flagstone
+name floor
+face shop_empty.111
 x 1
 y 16
 end
@@ -479,13 +479,13 @@ name Bracers dex
 x 1
 y 16
 end
-arch flagstone
-name floor
-face shop_empty.111
+arch dungeon_magic
 x 1
 y 17
 end
-arch dungeon_magic
+arch flagstone
+name floor
+face shop_empty.111
 x 1
 y 17
 end
@@ -494,13 +494,13 @@ name Bracers ac
 x 1
 y 17
 end
-arch flagstone
-name floor
-face shop_empty.111
+arch dungeon_magic
 x 1
 y 18
 end
-arch dungeon_magic
+arch flagstone
+name floor
+face shop_empty.111
 x 1
 y 18
 end
@@ -508,13 +508,13 @@ arch bwall_0
 x 1
 y 18
 end
-arch flagstone
-name floor
-face shop_empty.111
+arch dungeon_magic
 x 1
 y 19
 end
-arch dungeon_magic
+arch flagstone
+name floor
+face shop_empty.111
 x 1
 y 19
 end
@@ -522,24 +522,24 @@ arch bwall_0
 x 1
 y 19
 end
+arch dungeon_magic
+x 2
+end
 arch flagstone
 name floor
 face shop_empty.111
-x 2
-end
-arch dungeon_magic
 x 2
 end
 arch bwall_0
 x 2
 end
-arch flagstone
-name floor
-face shop_empty.111
+arch dungeon_magic
 x 2
 y 1
 end
-arch dungeon_magic
+arch flagstone
+name floor
+face shop_empty.111
 x 2
 y 1
 end
@@ -547,17 +547,7 @@ arch swall_2_1_1
 x 2
 y 1
 end
-arch flagstone
-name floor
-face shop_empty.111
-x 2
-y 2
-end
 arch dungeon_magic
-x 2
-y 2
-end
-arch swall_2_1_1
 x 2
 y 2
 end
@@ -565,15 +555,29 @@ arch flagstone
 name floor
 face shop_empty.111
 x 2
-y 3
+y 2
+end
+arch swall_2_1_1
+x 2
+y 2
 end
 arch dungeon_magic
+x 2
+y 3
+end
+arch flagstone
+name floor
+face shop_empty.111
 x 2
 y 3
 end
 arch swall_2_1_1
 x 2
 y 3
+end
+arch dungeon_magic
+x 2
+y 4
 end
 arch flagstone
 name floor
@@ -581,25 +585,11 @@ face shop_empty.111
 x 2
 y 4
 end
-arch dungeon_magic
-x 2
-y 4
-end
 arch swall_2_1_1
 x 2
 y 4
 end
-arch flagstone
-name floor
-face shop_empty.111
-x 2
-y 5
-end
 arch dungeon_magic
-x 2
-y 5
-end
-arch swall_2_1_1
 x 2
 y 5
 end
@@ -607,13 +597,13 @@ arch flagstone
 name floor
 face shop_empty.111
 x 2
-y 6
-end
-arch dungeon_magic
-x 2
-y 6
+y 5
 end
 arch swall_2_1_1
+x 2
+y 5
+end
+arch dungeon_magic
 x 2
 y 6
 end
@@ -621,15 +611,29 @@ arch flagstone
 name floor
 face shop_empty.111
 x 2
-y 7
+y 6
+end
+arch swall_2_1_1
+x 2
+y 6
 end
 arch dungeon_magic
+x 2
+y 7
+end
+arch flagstone
+name floor
+face shop_empty.111
 x 2
 y 7
 end
 arch swall_2_1_1
 x 2
 y 7
+end
+arch dungeon_magic
+x 2
+y 8
 end
 arch flagstone
 name floor
@@ -637,25 +641,11 @@ face shop_empty.111
 x 2
 y 8
 end
-arch dungeon_magic
-x 2
-y 8
-end
 arch swall_2_1_1
 x 2
 y 8
 end
-arch flagstone
-name floor
-face shop_empty.111
-x 2
-y 9
-end
 arch dungeon_magic
-x 2
-y 9
-end
-arch swall_2_1_1
 x 2
 y 9
 end
@@ -663,13 +653,13 @@ arch flagstone
 name floor
 face shop_empty.111
 x 2
-y 10
-end
-arch dungeon_magic
-x 2
-y 10
+y 9
 end
 arch swall_2_1_1
+x 2
+y 9
+end
+arch dungeon_magic
 x 2
 y 10
 end
@@ -677,15 +667,29 @@ arch flagstone
 name floor
 face shop_empty.111
 x 2
-y 11
+y 10
+end
+arch swall_2_1_1
+x 2
+y 10
 end
 arch dungeon_magic
+x 2
+y 11
+end
+arch flagstone
+name floor
+face shop_empty.111
 x 2
 y 11
 end
 arch swall_2_1_1
 x 2
 y 11
+end
+arch dungeon_magic
+x 2
+y 12
 end
 arch flagstone
 name floor
@@ -693,25 +697,11 @@ face shop_empty.111
 x 2
 y 12
 end
-arch dungeon_magic
-x 2
-y 12
-end
 arch swall_2_1_1
 x 2
 y 12
 end
-arch flagstone
-name floor
-face shop_empty.111
-x 2
-y 13
-end
 arch dungeon_magic
-x 2
-y 13
-end
-arch swall_2_1_1
 x 2
 y 13
 end
@@ -719,13 +709,13 @@ arch flagstone
 name floor
 face shop_empty.111
 x 2
-y 14
-end
-arch dungeon_magic
-x 2
-y 14
+y 13
 end
 arch swall_2_1_1
+x 2
+y 13
+end
+arch dungeon_magic
 x 2
 y 14
 end
@@ -733,9 +723,19 @@ arch flagstone
 name floor
 face shop_empty.111
 x 2
-y 15
+y 14
+end
+arch swall_2_1_1
+x 2
+y 14
 end
 arch dungeon_magic
+x 2
+y 15
+end
+arch flagstone
+name floor
+face shop_empty.111
 x 2
 y 15
 end
@@ -743,13 +743,13 @@ arch swall_2_1_1
 x 2
 y 15
 end
-arch flagstone
-name floor
-face shop_empty.111
+arch dungeon_magic
 x 2
 y 16
 end
-arch dungeon_magic
+arch flagstone
+name floor
+face shop_empty.111
 x 2
 y 16
 end
@@ -757,13 +757,13 @@ arch swall_2_1_1
 x 2
 y 16
 end
-arch flagstone
-name floor
-face shop_empty.111
+arch dungeon_magic
 x 2
 y 17
 end
-arch dungeon_magic
+arch flagstone
+name floor
+face shop_empty.111
 x 2
 y 17
 end
@@ -771,13 +771,13 @@ arch swall_2_1_1
 x 2
 y 17
 end
-arch flagstone
-name floor
-face shop_empty.111
+arch dungeon_magic
 x 2
 y 18
 end
-arch dungeon_magic
+arch flagstone
+name floor
+face shop_empty.111
 x 2
 y 18
 end
@@ -785,13 +785,13 @@ arch bwall_0
 x 2
 y 18
 end
-arch flagstone
-name floor
-face shop_empty.111
+arch dungeon_magic
 x 2
 y 19
 end
-arch dungeon_magic
+arch flagstone
+name floor
+face shop_empty.111
 x 2
 y 19
 end
@@ -799,24 +799,24 @@ arch bwall_0
 x 2
 y 19
 end
+arch dungeon_magic
+x 3
+end
 arch flagstone
 name floor
 face shop_empty.111
-x 3
-end
-arch dungeon_magic
 x 3
 end
 arch bwall_0
 x 3
 end
-arch flagstone
-name floor
-face shop_empty.111
+arch dungeon_magic
 x 3
 y 1
 end
-arch dungeon_magic
+arch flagstone
+name floor
+face shop_empty.111
 x 3
 y 1
 end
@@ -825,13 +825,13 @@ name Mithril chainmail
 x 3
 y 1
 end
-arch flagstone
-name floor
-face shop_empty.111
+arch dungeon_magic
 x 3
 y 2
 end
-arch dungeon_magic
+arch flagstone
+name floor
+face shop_empty.111
 x 3
 y 2
 end
@@ -840,13 +840,13 @@ name Dragon mail
 x 3
 y 2
 end
-arch flagstone
-name floor
-face shop_empty.111
+arch dungeon_magic
 x 3
 y 3
 end
-arch dungeon_magic
+arch flagstone
+name floor
+face shop_empty.111
 x 3
 y 3
 end
@@ -855,13 +855,13 @@ name Girdle strength
 x 3
 y 3
 end
-arch flagstone
-name floor
-face shop_empty.111
+arch dungeon_magic
 x 3
 y 4
 end
-arch dungeon_magic
+arch flagstone
+name floor
+face shop_empty.111
 x 3
 y 4
 end
@@ -870,13 +870,13 @@ name Girdle con
 x 3
 y 4
 end
-arch flagstone
-name floor
-face shop_empty.111
+arch dungeon_magic
 x 3
 y 5
 end
-arch dungeon_magic
+arch flagstone
+name floor
+face shop_empty.111
 x 3
 y 5
 end
@@ -885,13 +885,13 @@ name Girdle dammage
 x 3
 y 5
 end
-arch flagstone
-name floor
-face shop_empty.111
+arch dungeon_magic
 x 3
 y 6
 end
-arch dungeon_magic
+arch flagstone
+name floor
+face shop_empty.111
 x 3
 y 6
 end
@@ -900,13 +900,13 @@ name Gauntlets strength
 x 3
 y 6
 end
-arch flagstone
-name floor
-face shop_empty.111
+arch dungeon_magic
 x 3
 y 7
 end
-arch dungeon_magic
+arch flagstone
+name floor
+face shop_empty.111
 x 3
 y 7
 end
@@ -915,13 +915,13 @@ name Gauntlets dex
 x 3
 y 7
 end
-arch flagstone
-name floor
-face shop_empty.111
+arch dungeon_magic
 x 3
 y 8
 end
-arch dungeon_magic
+arch flagstone
+name floor
+face shop_empty.111
 x 3
 y 8
 end
@@ -930,13 +930,13 @@ name Helmet of Briliance
 x 3
 y 8
 end
-arch flagstone
-name floor
-face shop_empty.111
+arch dungeon_magic
 x 3
 y 9
 end
-arch dungeon_magic
+arch flagstone
+name floor
+face shop_empty.111
 x 3
 y 9
 end
@@ -945,13 +945,13 @@ name Helmet of Xrays
 x 3
 y 9
 end
-arch flagstone
-name floor
-face shop_empty.111
+arch dungeon_magic
 x 3
 y 10
 end
-arch dungeon_magic
+arch flagstone
+name floor
+face shop_empty.111
 x 3
 y 10
 end
@@ -960,13 +960,13 @@ name Eyeshield
 x 3
 y 10
 end
-arch flagstone
-name floor
-face shop_empty.111
+arch dungeon_magic
 x 3
 y 11
 end
-arch dungeon_magic
+arch flagstone
+name floor
+face shop_empty.111
 x 3
 y 11
 end
@@ -975,13 +975,13 @@ name Holy shield
 x 3
 y 11
 end
-arch flagstone
-name floor
-face shop_empty.111
+arch dungeon_magic
 x 3
 y 12
 end
-arch dungeon_magic
+arch flagstone
+name floor
+face shop_empty.111
 x 3
 y 12
 end
@@ -990,13 +990,13 @@ name Reflector
 x 3
 y 12
 end
-arch flagstone
-name floor
-face shop_empty.111
+arch dungeon_magic
 x 3
 y 13
 end
-arch dungeon_magic
+arch flagstone
+name floor
+face shop_empty.111
 x 3
 y 13
 end
@@ -1005,13 +1005,13 @@ name Speed boots
 x 3
 y 13
 end
-arch flagstone
-name floor
-face shop_empty.111
+arch dungeon_magic
 x 3
 y 14
 end
-arch dungeon_magic
+arch flagstone
+name floor
+face shop_empty.111
 x 3
 y 14
 end
@@ -1020,13 +1020,13 @@ name Levitation boots
 x 3
 y 14
 end
-arch flagstone
-name floor
-face shop_empty.111
+arch dungeon_magic
 x 3
 y 15
 end
-arch dungeon_magic
+arch flagstone
+name floor
+face shop_empty.111
 x 3
 y 15
 end
@@ -1035,13 +1035,13 @@ name Elven boots
 x 3
 y 15
 end
-arch flagstone
-name floor
-face shop_empty.111
+arch dungeon_magic
 x 3
 y 16
 end
-arch dungeon_magic
+arch flagstone
+name floor
+face shop_empty.111
 x 3
 y 16
 end
@@ -1050,13 +1050,13 @@ name Bracers dex
 x 3
 y 16
 end
-arch flagstone
-name floor
-face shop_empty.111
+arch dungeon_magic
 x 3
 y 17
 end
-arch dungeon_magic
+arch flagstone
+name floor
+face shop_empty.111
 x 3
 y 17
 end
@@ -1065,13 +1065,13 @@ name Bracers ac
 x 3
 y 17
 end
-arch flagstone
-name floor
-face shop_empty.111
+arch dungeon_magic
 x 3
 y 18
 end
-arch dungeon_magic
+arch flagstone
+name floor
+face shop_empty.111
 x 3
 y 18
 end
@@ -1089,13 +1089,13 @@ endmsg
 x 3
 y 18
 end
-arch flagstone
-name floor
-face shop_empty.111
+arch dungeon_magic
 x 3
 y 19
 end
-arch dungeon_magic
+arch flagstone
+name floor
+face shop_empty.111
 x 3
 y 19
 end
@@ -1103,24 +1103,24 @@ arch bwall_0
 x 3
 y 19
 end
+arch dungeon_magic
+x 4
+end
 arch flagstone
 name floor
 face shop_empty.111
-x 4
-end
-arch dungeon_magic
 x 4
 end
 arch bwall_0
 x 4
 end
-arch flagstone
-name floor
-face shop_empty.111
+arch dungeon_magic
 x 4
 y 1
 end
-arch dungeon_magic
+arch flagstone
+name floor
+face shop_empty.111
 x 4
 y 1
 end
@@ -1129,13 +1129,13 @@ name Sting
 x 4
 y 1
 end
-arch flagstone
-name floor
-face shop_empty.111
+arch dungeon_magic
 x 4
 y 2
 end
-arch dungeon_magic
+arch flagstone
+name floor
+face shop_empty.111
 x 4
 y 2
 end
@@ -1144,13 +1144,13 @@ name Deathbringer
 x 4
 y 2
 end
-arch flagstone
-name floor
-face shop_empty.111
+arch dungeon_magic
 x 4
 y 3
 end
-arch dungeon_magic
+arch flagstone
+name floor
+face shop_empty.111
 x 4
 y 3
 end
@@ -1159,13 +1159,13 @@ name Skullcleaver
 x 4
 y 3
 end
-arch flagstone
-name floor
-face shop_empty.111
+arch dungeon_magic
 x 4
 y 4
 end
-arch dungeon_magic
+arch flagstone
+name floor
+face shop_empty.111
 x 4
 y 4
 end
@@ -1174,13 +1174,13 @@ name Stormbringer
 x 4
 y 4
 end
-arch flagstone
-name floor
-face shop_empty.111
+arch dungeon_magic
 x 4
 y 5
 end
-arch dungeon_magic
+arch flagstone
+name floor
+face shop_empty.111
 x 4
 y 5
 end
@@ -1189,13 +1189,13 @@ name Mournblade
 x 4
 y 5
 end
-arch flagstone
-name floor
-face shop_empty.111
+arch dungeon_magic
 x 4
 y 6
 end
-arch dungeon_magic
+arch flagstone
+name floor
+face shop_empty.111
 x 4
 y 6
 end
@@ -1204,13 +1204,13 @@ name Defender
 x 4
 y 6
 end
-arch flagstone
-name floor
-face shop_empty.111
+arch dungeon_magic
 x 4
 y 7
 end
-arch dungeon_magic
+arch flagstone
+name floor
+face shop_empty.111
 x 4
 y 7
 end
@@ -1219,13 +1219,13 @@ name Firebrand
 x 4
 y 7
 end
-arch flagstone
-name floor
-face shop_empty.111
+arch dungeon_magic
 x 4
 y 8
 end
-arch dungeon_magic
+arch flagstone
+name floor
+face shop_empty.111
 x 4
 y 8
 end
@@ -1234,13 +1234,13 @@ name Frostbrand
 x 4
 y 8
 end
-arch flagstone
-name floor
-face shop_empty.111
+arch dungeon_magic
 x 4
 y 9
 end
-arch dungeon_magic
+arch flagstone
+name floor
+face shop_empty.111
 x 4
 y 9
 end
@@ -1249,13 +1249,13 @@ name Darkblade
 x 4
 y 9
 end
-arch flagstone
-name floor
-face shop_empty.111
+arch dungeon_magic
 x 4
 y 10
 end
-arch dungeon_magic
+arch flagstone
+name floor
+face shop_empty.111
 x 4
 y 10
 end
@@ -1264,13 +1264,13 @@ name Demonbane
 x 4
 y 10
 end
-arch flagstone
-name floor
-face shop_empty.111
+arch dungeon_magic
 x 4
 y 11
 end
-arch dungeon_magic
+arch flagstone
+name floor
+face shop_empty.111
 x 4
 y 11
 end
@@ -1279,13 +1279,13 @@ name Dragonslayer
 x 4
 y 11
 end
-arch flagstone
-name floor
-face shop_empty.111
+arch dungeon_magic
 x 4
 y 12
 end
-arch dungeon_magic
+arch flagstone
+name floor
+face shop_empty.111
 x 4
 y 12
 end
@@ -1294,13 +1294,13 @@ name Mjoellnir
 x 4
 y 12
 end
-arch flagstone
-name floor
-face shop_empty.111
+arch dungeon_magic
 x 4
 y 13
 end
-arch dungeon_magic
+arch flagstone
+name floor
+face shop_empty.111
 x 4
 y 13
 end
@@ -1309,13 +1309,13 @@ name Bonecrusher
 x 4
 y 13
 end
-arch flagstone
-name floor
-face shop_empty.111
+arch dungeon_magic
 x 4
 y 14
 end
-arch dungeon_magic
+arch flagstone
+name floor
+face shop_empty.111
 x 4
 y 14
 end
@@ -1324,13 +1324,13 @@ name Gram
 x 4
 y 14
 end
-arch flagstone
-name floor
-face shop_empty.111
+arch dungeon_magic
 x 4
 y 15
 end
-arch dungeon_magic
+arch flagstone
+name floor
+face shop_empty.111
 x 4
 y 15
 end
@@ -1339,13 +1339,13 @@ name Excalibur
 x 4
 y 15
 end
-arch flagstone
-name floor
-face shop_empty.111
+arch dungeon_magic
 x 4
 y 16
 end
-arch dungeon_magic
+arch flagstone
+name floor
+face shop_empty.111
 x 4
 y 16
 end
@@ -1354,13 +1354,13 @@ name Holy Avenger
 x 4
 y 16
 end
-arch flagstone
-name floor
-face shop_empty.111
+arch dungeon_magic
 x 4
 y 17
 end
-arch dungeon_magic
+arch flagstone
+name floor
+face shop_empty.111
 x 4
 y 17
 end
@@ -1369,13 +1369,13 @@ name Elven Bow
 x 4
 y 17
 end
-arch flagstone
-name floor
-face shop_empty.111
+arch dungeon_magic
 x 4
 y 18
 end
-arch dungeon_magic
+arch flagstone
+name floor
+face shop_empty.111
 x 4
 y 18
 end
@@ -1386,13 +1386,13 @@ sp 7
 x 4
 y 18
 end
-arch flagstone
-name floor
-face shop_empty.111
+arch dungeon_magic
 x 4
 y 19
 end
-arch dungeon_magic
+arch flagstone
+name floor
+face shop_empty.111
 x 4
 y 19
 end
@@ -1400,28 +1400,18 @@ arch bwall_0
 x 4
 y 19
 end
+arch dungeon_magic
+x 5
+end
 arch flagstone
 name floor
 face shop_empty.111
-x 5
-end
-arch dungeon_magic
 x 5
 end
 arch bwall_0
 x 5
 end
-arch flagstone
-name floor
-face shop_empty.111
-x 5
-y 1
-end
 arch dungeon_magic
-x 5
-y 1
-end
-arch swall_2_1_1
 x 5
 y 1
 end
@@ -1429,13 +1419,13 @@ arch flagstone
 name floor
 face shop_empty.111
 x 5
-y 2
-end
-arch dungeon_magic
-x 5
-y 2
+y 1
 end
 arch swall_2_1_1
+x 5
+y 1
+end
+arch dungeon_magic
 x 5
 y 2
 end
@@ -1443,15 +1433,29 @@ arch flagstone
 name floor
 face shop_empty.111
 x 5
-y 3
+y 2
+end
+arch swall_2_1_1
+x 5
+y 2
 end
 arch dungeon_magic
+x 5
+y 3
+end
+arch flagstone
+name floor
+face shop_empty.111
 x 5
 y 3
 end
 arch swall_2_1_1
 x 5
 y 3
+end
+arch dungeon_magic
+x 5
+y 4
 end
 arch flagstone
 name floor
@@ -1459,25 +1463,11 @@ face shop_empty.111
 x 5
 y 4
 end
-arch dungeon_magic
-x 5
-y 4
-end
 arch swall_2_1_1
 x 5
 y 4
 end
-arch flagstone
-name floor
-face shop_empty.111
-x 5
-y 5
-end
 arch dungeon_magic
-x 5
-y 5
-end
-arch swall_2_1_1
 x 5
 y 5
 end
@@ -1485,13 +1475,13 @@ arch flagstone
 name floor
 face shop_empty.111
 x 5
-y 6
-end
-arch dungeon_magic
-x 5
-y 6
+y 5
 end
 arch swall_2_1_1
+x 5
+y 5
+end
+arch dungeon_magic
 x 5
 y 6
 end
@@ -1499,15 +1489,29 @@ arch flagstone
 name floor
 face shop_empty.111
 x 5
-y 7
+y 6
+end
+arch swall_2_1_1
+x 5
+y 6
 end
 arch dungeon_magic
+x 5
+y 7
+end
+arch flagstone
+name floor
+face shop_empty.111
 x 5
 y 7
 end
 arch swall_2_1_1
 x 5
 y 7
+end
+arch dungeon_magic
+x 5
+y 8
 end
 arch flagstone
 name floor
@@ -1515,25 +1519,11 @@ face shop_empty.111
 x 5
 y 8
 end
-arch dungeon_magic
-x 5
-y 8
-end
 arch swall_2_1_1
 x 5
 y 8
 end
-arch flagstone
-name floor
-face shop_empty.111
-x 5
-y 9
-end
 arch dungeon_magic
-x 5
-y 9
-end
-arch swall_2_1_1
 x 5
 y 9
 end
@@ -1541,13 +1531,13 @@ arch flagstone
 name floor
 face shop_empty.111
 x 5
-y 10
-end
-arch dungeon_magic
-x 5
-y 10
+y 9
 end
 arch swall_2_1_1
+x 5
+y 9
+end
+arch dungeon_magic
 x 5
 y 10
 end
@@ -1555,15 +1545,29 @@ arch flagstone
 name floor
 face shop_empty.111
 x 5
-y 11
+y 10
+end
+arch swall_2_1_1
+x 5
+y 10
 end
 arch dungeon_magic
+x 5
+y 11
+end
+arch flagstone
+name floor
+face shop_empty.111
 x 5
 y 11
 end
 arch swall_2_1_1
 x 5
 y 11
+end
+arch dungeon_magic
+x 5
+y 12
 end
 arch flagstone
 name floor
@@ -1571,25 +1575,11 @@ face shop_empty.111
 x 5
 y 12
 end
-arch dungeon_magic
-x 5
-y 12
-end
 arch swall_2_1_1
 x 5
 y 12
 end
-arch flagstone
-name floor
-face shop_empty.111
-x 5
-y 13
-end
 arch dungeon_magic
-x 5
-y 13
-end
-arch swall_2_1_1
 x 5
 y 13
 end
@@ -1597,13 +1587,13 @@ arch flagstone
 name floor
 face shop_empty.111
 x 5
-y 14
-end
-arch dungeon_magic
-x 5
-y 14
+y 13
 end
 arch swall_2_1_1
+x 5
+y 13
+end
+arch dungeon_magic
 x 5
 y 14
 end
@@ -1611,9 +1601,19 @@ arch flagstone
 name floor
 face shop_empty.111
 x 5
-y 15
+y 14
+end
+arch swall_2_1_1
+x 5
+y 14
 end
 arch dungeon_magic
+x 5
+y 15
+end
+arch flagstone
+name floor
+face shop_empty.111
 x 5
 y 15
 end
@@ -1621,13 +1621,13 @@ arch swall_2_1_1
 x 5
 y 15
 end
-arch flagstone
-name floor
-face shop_empty.111
+arch dungeon_magic
 x 5
 y 16
 end
-arch dungeon_magic
+arch flagstone
+name floor
+face shop_empty.111
 x 5
 y 16
 end
@@ -1635,13 +1635,13 @@ arch swall_2_1_1
 x 5
 y 16
 end
-arch flagstone
-name floor
-face shop_empty.111
+arch dungeon_magic
 x 5
 y 17
 end
-arch dungeon_magic
+arch flagstone
+name floor
+face shop_empty.111
 x 5
 y 17
 end
@@ -1649,13 +1649,13 @@ arch swall_2_1_1
 x 5
 y 17
 end
-arch flagstone
-name floor
-face shop_empty.111
+arch dungeon_magic
 x 5
 y 18
 end
-arch dungeon_magic
+arch flagstone
+name floor
+face shop_empty.111
 x 5
 y 18
 end
@@ -1663,13 +1663,13 @@ arch bwall_0
 x 5
 y 18
 end
-arch flagstone
-name floor
-face shop_empty.111
+arch dungeon_magic
 x 5
 y 19
 end
-arch dungeon_magic
+arch flagstone
+name floor
+face shop_empty.111
 x 5
 y 19
 end
@@ -1677,24 +1677,24 @@ arch bwall_0
 x 5
 y 19
 end
+arch dungeon_magic
+x 6
+end
 arch flagstone
 name floor
 face shop_empty.111
-x 6
-end
-arch dungeon_magic
 x 6
 end
 arch bwall_0
 x 6
 end
-arch flagstone
-name floor
-face shop_empty.111
+arch dungeon_magic
 x 6
 y 1
 end
-arch dungeon_magic
+arch flagstone
+name floor
+face shop_empty.111
 x 6
 y 1
 end
@@ -1702,13 +1702,13 @@ arch sting
 x 6
 y 1
 end
-arch flagstone
-name floor
-face shop_empty.111
+arch dungeon_magic
 x 6
 y 2
 end
-arch dungeon_magic
+arch flagstone
+name floor
+face shop_empty.111
 x 6
 y 2
 end
@@ -1716,13 +1716,13 @@ arch deathbringer
 x 6
 y 2
 end
-arch flagstone
-name floor
-face shop_empty.111
+arch dungeon_magic
 x 6
 y 3
 end
-arch dungeon_magic
+arch flagstone
+name floor
+face shop_empty.111
 x 6
 y 3
 end
@@ -1730,13 +1730,13 @@ arch skullcleaver
 x 6
 y 3
 end
-arch flagstone
-name floor
-face shop_empty.111
+arch dungeon_magic
 x 6
 y 4
 end
-arch dungeon_magic
+arch flagstone
+name floor
+face shop_empty.111
 x 6
 y 4
 end
@@ -1744,13 +1744,13 @@ arch stormbringer
 x 6
 y 4
 end
-arch flagstone
-name floor
-face shop_empty.111
+arch dungeon_magic
 x 6
 y 5
 end
-arch dungeon_magic
+arch flagstone
+name floor
+face shop_empty.111
 x 6
 y 5
 end
@@ -1758,13 +1758,13 @@ arch mournblade
 x 6
 y 5
 end
-arch flagstone
-name floor
-face shop_empty.111
+arch dungeon_magic
 x 6
 y 6
 end
-arch dungeon_magic
+arch flagstone
+name floor
+face shop_empty.111
 x 6
 y 6
 end
@@ -1772,13 +1772,13 @@ arch defender
 x 6
 y 6
 end
-arch flagstone
-name floor
-face shop_empty.111
+arch dungeon_magic
 x 6
 y 7
 end
-arch dungeon_magic
+arch flagstone
+name floor
+face shop_empty.111
 x 6
 y 7
 end
@@ -1786,13 +1786,13 @@ arch firebrand
 x 6
 y 7
 end
-arch flagstone
-name floor
-face shop_empty.111
+arch dungeon_magic
 x 6
 y 8
 end
-arch dungeon_magic
+arch flagstone
+name floor
+face shop_empty.111
 x 6
 y 8
 end
@@ -1800,13 +1800,13 @@ arch frostbrand
 x 6
 y 8
 end
-arch flagstone
-name floor
-face shop_empty.111
+arch dungeon_magic
 x 6
 y 9
 end
-arch dungeon_magic
+arch flagstone
+name floor
+face shop_empty.111
 x 6
 y 9
 end
@@ -1814,13 +1814,13 @@ arch darkblade
 x 6
 y 9
 end
-arch flagstone
-name floor
-face shop_empty.111
+arch dungeon_magic
 x 6
 y 10
 end
-arch dungeon_magic
+arch flagstone
+name floor
+face shop_empty.111
 x 6
 y 10
 end
@@ -1828,13 +1828,13 @@ arch demonbane
 x 6
 y 10
 end
-arch flagstone
-name floor
-face shop_empty.111
+arch dungeon_magic
 x 6
 y 11
 end
-arch dungeon_magic
+arch flagstone
+name floor
+face shop_empty.111
 x 6
 y 11
 end
@@ -1842,13 +1842,13 @@ arch dragonslayer
 x 6
 y 11
 end
-arch flagstone
-name floor
-face shop_empty.111
+arch dungeon_magic
 x 6
 y 12
 end
-arch dungeon_magic
+arch flagstone
+name floor
+face shop_empty.111
 x 6
 y 12
 end
@@ -1856,13 +1856,13 @@ arch mjoellnir
 x 6
 y 12
 end
-arch flagstone
-name floor
-face shop_empty.111
+arch dungeon_magic
 x 6
 y 13
 end
-arch dungeon_magic
+arch flagstone
+name floor
+face shop_empty.111
 x 6
 y 13
 end
@@ -1870,13 +1870,13 @@ arch bonecrusher
 x 6
 y 13
 end
-arch flagstone
-name floor
-face shop_empty.111
+arch dungeon_magic
 x 6
 y 14
 end
-arch dungeon_magic
+arch flagstone
+name floor
+face shop_empty.111
 x 6
 y 14
 end
@@ -1884,13 +1884,13 @@ arch gram
 x 6
 y 14
 end
-arch flagstone
-name floor
-face shop_empty.111
+arch dungeon_magic
 x 6
 y 15
 end
-arch dungeon_magic
+arch flagstone
+name floor
+face shop_empty.111
 x 6
 y 15
 end
@@ -1898,13 +1898,13 @@ arch excalibur
 x 6
 y 15
 end
-arch flagstone
-name floor
-face shop_empty.111
+arch dungeon_magic
 x 6
 y 16
 end
-arch dungeon_magic
+arch flagstone
+name floor
+face shop_empty.111
 x 6
 y 16
 end
@@ -1912,13 +1912,13 @@ arch holy_avenger
 x 6
 y 16
 end
-arch flagstone
-name floor
-face shop_empty.111
+arch dungeon_magic
 x 6
 y 17
 end
-arch dungeon_magic
+arch flagstone
+name floor
+face shop_empty.111
 x 6
 y 17
 end
@@ -1926,19 +1926,23 @@ arch elven_bow
 x 6
 y 17
 end
+arch dungeon_magic
+x 6
+y 18
+end
 arch flagstone
 name floor
 face shop_empty.111
 x 6
 y 18
 end
-arch dungeon_magic
-x 6
-y 18
-end
 arch bwall_0
 x 6
 y 18
+end
+arch dungeon_magic
+x 6
+y 19
 end
 arch flagstone
 name floor
@@ -1946,36 +1950,22 @@ face shop_empty.111
 x 6
 y 19
 end
-arch dungeon_magic
-x 6
-y 19
-end
 arch bwall_0
 x 6
 y 19
+end
+arch dungeon_magic
+x 7
 end
 arch flagstone
 name floor
 face shop_empty.111
 x 7
 end
-arch dungeon_magic
-x 7
-end
 arch bwall_0
 x 7
 end
-arch flagstone
-name floor
-face shop_empty.111
-x 7
-y 1
-end
 arch dungeon_magic
-x 7
-y 1
-end
-arch bwall_0
 x 7
 y 1
 end
@@ -1983,15 +1973,29 @@ arch flagstone
 name floor
 face shop_empty.111
 x 7
-y 2
+y 1
+end
+arch bwall_0
+x 7
+y 1
 end
 arch dungeon_magic
+x 7
+y 2
+end
+arch flagstone
+name floor
+face shop_empty.111
 x 7
 y 2
 end
 arch bwall_0
 x 7
 y 2
+end
+arch dungeon_magic
+x 7
+y 3
 end
 arch flagstone
 name floor
@@ -1999,25 +2003,11 @@ face shop_empty.111
 x 7
 y 3
 end
-arch dungeon_magic
-x 7
-y 3
-end
 arch bwall_0
 x 7
 y 3
 end
-arch flagstone
-name floor
-face shop_empty.111
-x 7
-y 4
-end
 arch dungeon_magic
-x 7
-y 4
-end
-arch bwall_0
 x 7
 y 4
 end
@@ -2025,13 +2015,13 @@ arch flagstone
 name floor
 face shop_empty.111
 x 7
-y 5
-end
-arch dungeon_magic
-x 7
-y 5
+y 4
 end
 arch bwall_0
+x 7
+y 4
+end
+arch dungeon_magic
 x 7
 y 5
 end
@@ -2039,15 +2029,29 @@ arch flagstone
 name floor
 face shop_empty.111
 x 7
-y 6
+y 5
+end
+arch bwall_0
+x 7
+y 5
 end
 arch dungeon_magic
+x 7
+y 6
+end
+arch flagstone
+name floor
+face shop_empty.111
 x 7
 y 6
 end
 arch bwall_0
 x 7
 y 6
+end
+arch dungeon_magic
+x 7
+y 7
 end
 arch flagstone
 name floor
@@ -2055,25 +2059,11 @@ face shop_empty.111
 x 7
 y 7
 end
-arch dungeon_magic
-x 7
-y 7
-end
 arch bwall_0
 x 7
 y 7
 end
-arch flagstone
-name floor
-face shop_empty.111
-x 7
-y 8
-end
 arch dungeon_magic
-x 7
-y 8
-end
-arch bwall_0
 x 7
 y 8
 end
@@ -2081,13 +2071,13 @@ arch flagstone
 name floor
 face shop_empty.111
 x 7
-y 9
-end
-arch dungeon_magic
-x 7
-y 9
+y 8
 end
 arch bwall_0
+x 7
+y 8
+end
+arch dungeon_magic
 x 7
 y 9
 end
@@ -2095,15 +2085,29 @@ arch flagstone
 name floor
 face shop_empty.111
 x 7
-y 10
+y 9
+end
+arch bwall_0
+x 7
+y 9
 end
 arch dungeon_magic
+x 7
+y 10
+end
+arch flagstone
+name floor
+face shop_empty.111
 x 7
 y 10
 end
 arch bwall_0
 x 7
 y 10
+end
+arch dungeon_magic
+x 7
+y 11
 end
 arch flagstone
 name floor
@@ -2111,25 +2115,11 @@ face shop_empty.111
 x 7
 y 11
 end
-arch dungeon_magic
-x 7
-y 11
-end
 arch bwall_0
 x 7
 y 11
 end
-arch flagstone
-name floor
-face shop_empty.111
-x 7
-y 12
-end
 arch dungeon_magic
-x 7
-y 12
-end
-arch bwall_0
 x 7
 y 12
 end
@@ -2137,13 +2127,13 @@ arch flagstone
 name floor
 face shop_empty.111
 x 7
-y 13
-end
-arch dungeon_magic
-x 7
-y 13
+y 12
 end
 arch bwall_0
+x 7
+y 12
+end
+arch dungeon_magic
 x 7
 y 13
 end
@@ -2151,15 +2141,29 @@ arch flagstone
 name floor
 face shop_empty.111
 x 7
-y 14
+y 13
+end
+arch bwall_0
+x 7
+y 13
 end
 arch dungeon_magic
+x 7
+y 14
+end
+arch flagstone
+name floor
+face shop_empty.111
 x 7
 y 14
 end
 arch bwall_0
 x 7
 y 14
+end
+arch dungeon_magic
+x 7
+y 15
 end
 arch flagstone
 name floor
@@ -2167,21 +2171,17 @@ face shop_empty.111
 x 7
 y 15
 end
-arch dungeon_magic
-x 7
-y 15
-end
 arch bwall_0
 x 7
 y 15
 end
-arch flagstone
-name floor
-face shop_empty.111
+arch dungeon_magic
 x 7
 y 16
 end
-arch dungeon_magic
+arch flagstone
+name floor
+face shop_empty.111
 x 7
 y 16
 end
@@ -2189,13 +2189,13 @@ arch bwall_0
 x 7
 y 16
 end
-arch flagstone
-name floor
-face shop_empty.111
+arch dungeon_magic
 x 7
 y 17
 end
-arch dungeon_magic
+arch flagstone
+name floor
+face shop_empty.111
 x 7
 y 17
 end
@@ -2203,13 +2203,13 @@ arch bwall_0
 x 7
 y 17
 end
-arch flagstone
-name floor
-face shop_empty.111
+arch dungeon_magic
 x 7
 y 18
 end
-arch dungeon_magic
+arch flagstone
+name floor
+face shop_empty.111
 x 7
 y 18
 end
@@ -2217,13 +2217,13 @@ arch bwall_0
 x 7
 y 18
 end
-arch flagstone
-name floor
-face shop_empty.111
+arch dungeon_magic
 x 7
 y 19
 end
-arch dungeon_magic
+arch flagstone
+name floor
+face shop_empty.111
 x 7
 y 19
 end
