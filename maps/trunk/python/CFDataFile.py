@@ -40,14 +40,14 @@ class CFDataFile:
     def make_file(self, header):
         '''creates a datafile, making the column header from a list passed in'''
         try:
-            file = open(self.filename,'wb')
+            file = open(self.filename,'wt')
         except:
             Crossfire.Log(Crossfire.LogError, "Can't create datafile %s" % self.datafile_name)
         else:
             temp = []
             for item in header:
                 temp.append(str(item))
-            contents = '#|%s\n' %(string.join(temp,'|'))
+            contents = '#|%s\n' %('|'.join(temp))
             file.write(contents)
             file.close()
             Crossfire.Log(Crossfire.LogInfo, "New datafile created: %s" % self.datafile_name)
@@ -56,7 +56,7 @@ class CFDataFile:
         '''Gets the formatted file as a dictionary
         The # key contains the column headers for the file and indicates the 'primary' key'''
         try:
-            file = open(self.filename,'rb')
+            file = open(self.filename,'rt')
         except:
             raise Exception('Unable to read %s' % self.filename)
         else:
@@ -73,7 +73,7 @@ class CFDataFile:
     def putData(self, dic):
         '''Writes dictionary to formatted file - uses | character as a delimiter'''
         try:
-            file = open(self.filename,'wb')
+            file = open(self.filename,'wt')
         except:
             raise Exception('Unable to open %s for writing' % self.datafile_name)
         else:
@@ -81,14 +81,14 @@ class CFDataFile:
             del dic['#']
             index = dic.keys()
             index.sort()
-            contents = '#|%s\n' %(string.join(header,'|'))
+            contents = '#|%s\n' %('|'.join(header))
             file.write(contents)
             for entry in index:
                 tmp = []
                 stringlist = dic[entry]
                 for item in stringlist:
                     tmp.append(str(item))
-                temp = '%s|%s\n' %(entry, (string.join(tmp,'|')))
+                temp = '%s|%s\n' %(entry, ('|'.join(tmp)))
                 file.write(temp)
             file.close()
 
