@@ -10,7 +10,7 @@ enter_x 10
 enter_y 17
 msg
 Created:  2004-07-01 Gene Alexander
-Modified: 2008-12-16 Rick Tanner
+Modified: 2009-02-10 Arvid Norlander
 endmsg
 outdoor 1
 end
@@ -573,6 +573,10 @@ arch shop_empty
 x 4
 y 16
 end
+arch dungeon_magic
+x 4
+y 17
+end
 arch woodfloor
 x 4
 y 17
@@ -833,6 +837,10 @@ arch shop_empty
 x 6
 y 16
 end
+arch dungeon_magic
+x 6
+y 17
+end
 arch woodfloor
 x 6
 y 17
@@ -871,6 +879,10 @@ arch woodfloor
 x 7
 y 3
 end
+arch dungeon_magic
+x 7
+y 4
+end
 arch woodfloor
 x 7
 y 4
@@ -893,6 +905,10 @@ end
 arch woodfloor
 x 7
 y 7
+end
+arch dungeon_magic
+x 7
+y 8
 end
 arch woodfloor
 x 7
@@ -986,6 +1002,10 @@ arch woodfloor
 x 8
 y 3
 end
+arch dungeon_magic
+x 8
+y 4
+end
 arch woodfloor
 x 8
 y 4
@@ -1061,6 +1081,10 @@ arch dwall_2_2_2
 x 8
 y 13
 end
+arch dungeon_magic
+x 8
+y 14
+end
 arch woodfloor
 x 8
 y 14
@@ -1069,6 +1093,10 @@ arch dwall_win1
 x 8
 y 14
 end
+arch dungeon_magic
+x 8
+y 15
+end
 arch woodfloor
 x 8
 y 15
@@ -1076,6 +1104,10 @@ end
 arch dwall_win1
 x 8
 y 15
+end
+arch dungeon_magic
+x 8
+y 16
 end
 arch woodfloor
 x 8
@@ -1127,6 +1159,10 @@ arch woodfloor
 x 9
 y 3
 end
+arch dungeon_magic
+x 9
+y 4
+end
 arch woodfloor
 x 9
 y 4
@@ -1148,6 +1184,10 @@ end
 arch woodfloor
 x 9
 y 7
+end
+arch dungeon_magic
+x 9
+y 8
 end
 arch woodfloor
 x 9
@@ -1182,6 +1222,10 @@ arch woodfloor
 name No Sale Area
 x 9
 y 12
+end
+arch dungeon_magic
+x 9
+y 13
 end
 arch woodfloor
 x 9
@@ -1283,6 +1327,10 @@ end
 arch woodfloor
 x 10
 y 3
+end
+arch dungeon_magic
+x 10
+y 4
 end
 arch magic_ear
 msg
@@ -1395,6 +1443,10 @@ arch shop_mat
 x 10
 y 12
 end
+arch dungeon_magic
+x 10
+y 13
+end
 arch woodfloor
 x 10
 y 13
@@ -1402,6 +1454,10 @@ end
 arch dwall_win2
 x 10
 y 13
+end
+arch dungeon_magic
+x 10
+y 14
 end
 arch woodfloor
 x 10
@@ -1483,6 +1539,10 @@ arch woodfloor
 x 11
 y 3
 end
+arch dungeon_magic
+x 11
+y 4
+end
 arch woodfloor
 x 11
 y 4
@@ -1504,6 +1564,10 @@ end
 arch woodfloor
 x 11
 y 7
+end
+arch dungeon_magic
+x 11
+y 8
 end
 arch woodfloor
 x 11
@@ -1538,6 +1602,10 @@ arch woodfloor
 name No Sale Area
 x 11
 y 12
+end
+arch dungeon_magic
+x 11
+y 13
 end
 arch woodfloor
 x 11
@@ -1636,6 +1704,10 @@ arch woodfloor
 x 12
 y 3
 end
+arch dungeon_magic
+x 12
+y 4
+end
 arch woodfloor
 x 12
 y 4
@@ -1721,6 +1793,10 @@ arch dwall_2_2_3
 x 12
 y 13
 end
+arch dungeon_magic
+x 12
+y 14
+end
 arch woodfloor
 x 12
 y 14
@@ -1729,6 +1805,10 @@ arch dwall_win1
 x 12
 y 14
 end
+arch dungeon_magic
+x 12
+y 15
+end
 arch woodfloor
 x 12
 y 15
@@ -1736,6 +1816,10 @@ end
 arch dwall_win1
 x 12
 y 15
+end
+arch dungeon_magic
+x 12
+y 16
 end
 arch woodfloor
 x 12
@@ -1787,6 +1871,10 @@ arch woodfloor
 x 13
 y 3
 end
+arch dungeon_magic
+x 13
+y 4
+end
 arch woodfloor
 x 13
 y 4
@@ -1809,6 +1897,10 @@ end
 arch woodfloor
 x 13
 y 7
+end
+arch dungeon_magic
+x 13
+y 8
 end
 arch woodfloor
 x 13
@@ -2016,6 +2108,10 @@ arch shop_empty
 x 14
 y 16
 end
+arch dungeon_magic
+x 14
+y 17
+end
 arch woodfloor
 x 14
 y 17
@@ -2219,6 +2315,10 @@ end
 arch shop_empty
 x 16
 y 16
+end
+arch dungeon_magic
+x 16
+y 17
 end
 arch woodfloor
 x 16
