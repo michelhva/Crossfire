@@ -9,7 +9,7 @@ enter_x 13
 enter_y 12
 msg
 Created:  2004-06-27 mikeeusa
-Modified: 2008-10-18 Rick Tanner
+Modified: 2009-02-10 Rick Tanner
 endmsg
 end
 arch dungeon_floor
@@ -9910,7 +9910,7 @@ x 13
 y 10
 end
 arch stair_up_1
-slaying cdcapart2
+slaying /mlab/citydeclouds/cdcapart2
 hp 13
 sp 10
 x 13
