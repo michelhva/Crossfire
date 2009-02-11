@@ -45,7 +45,7 @@ if whoami.Name=='Jack':
  buddylist =   ['buddy','buddy','buddy','buddy','pal','friend','friend','friend','friend','dude','chum', 'sweetie']
 
  guildname=Crossfire.ScriptParameters() # 6 is say event
- text = string.split(Crossfire.WhatIsMessage())
+ text = Crossfire.WhatIsMessage().split()
 
  if (guildname):
      guild = CFGuilds.CFGuild(guildname)

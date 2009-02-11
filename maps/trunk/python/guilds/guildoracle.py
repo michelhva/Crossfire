@@ -36,7 +36,7 @@ print "Activated %s" %guildname
 if (guildname):
     guild = CFGuilds.CFGuild(guildname)
     guildhouse = CFGuilds.CFGuildHouses()
-    text = string.split(Crossfire.WhatIsMessage())
+    text = Crossfire.WhatIsMessage().split()
 
     if guild.info(activatorname) == 0 and isDM == 0:
 	    message = 'You don\'t belong to this guild!'

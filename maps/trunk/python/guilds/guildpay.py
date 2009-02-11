@@ -40,7 +40,7 @@ y2=6
 if (guildname):
 
     guild = CFGuilds.CFGuild(guildname)
-    text = string.split(Crossfire.WhatIsMessage())
+    text = Crossfire.WhatIsMessage().split()
     guildrecord = CFGuilds.CFGuildHouses().info(guildname)
     found = 0
     if text[0] == 'dues' or text[0] == 'Dues':

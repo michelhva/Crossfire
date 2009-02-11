@@ -43,10 +43,10 @@ inverse = "inverse" in parameters and parameters["inverse"] == True
 Crossfire.SetReturnValue(not inverse)
 if not "match" in parameters:
     Crossfire.Log(Crossfire.LogError,"Script filter.py didn't get a 'match' parameter. Only got %s" %parameters)
-elif string.lower(parameters["match"]) == "one":
+elif parameters["match"].lower() == "one":
     if TimeOfDay().matchAny(parameters["when"]):
         Crossfire.SetReturnValue(inverse)
-elif string.lower(parameters["match"]) == "all":
+elif parameters["match"].lower() == "all":
     if TimeOfDay().matchAll(parameters["when"]):
         Crossfire.SetReturnValue(inverse)
 else:
