@@ -13,7 +13,7 @@ height 40
 enter_y 37
 msg
 Created:  2005-05-23 Gene Alexander
-Modified: 2008-12-07 Rick Tanner
+Modified: 2009-02-10 Rick Tanner
 endmsg
 outdoor 1
 tile_path_4 brest.scrolls
@@ -2878,6 +2878,10 @@ arch flagstone_2_1_2
 x 11
 y 1
 end
+arch dungeon_magic
+x 11
+y 2
+end
 arch tile_white_floor
 x 11
 y 2
@@ -2885,6 +2889,10 @@ end
 arch wwall_2_2_2
 x 11
 y 2
+end
+arch dungeon_magic
+x 11
+y 3
 end
 arch tile_white_floor
 x 11
@@ -2929,6 +2937,10 @@ connected 5
 no_magic 1
 damned 1
 end
+arch dungeon_magic
+x 11
+y 5
+end
 arch tile_white_floor
 x 11
 y 5
@@ -2937,6 +2949,10 @@ arch wwall_1_1
 x 11
 y 5
 end
+arch dungeon_magic
+x 11
+y 6
+end
 arch tile_white_floor
 x 11
 y 6
@@ -2944,6 +2960,10 @@ end
 arch wwall_win1
 x 11
 y 6
+end
+arch dungeon_magic
+x 11
+y 7
 end
 arch tile_white_floor
 x 11
@@ -3164,6 +3184,10 @@ arch flagstone_2_1_2
 x 12
 y 1
 end
+arch dungeon_magic
+x 12
+y 2
+end
 arch tile_white_floor
 x 12
 y 2
@@ -3172,6 +3196,10 @@ arch wwall_2_1_2
 x 12
 y 2
 end
+arch dungeon_magic
+x 12
+y 3
+end
 arch check_inv
 slaying irritable_zorn_key
 x 12
@@ -3181,6 +3209,10 @@ end
 arch tile_white_floor
 x 12
 y 3
+end
+arch dungeon_magic
+x 12
+y 4
 end
 arch check_inv
 slaying irritable_zorn_key
@@ -3192,6 +3224,10 @@ arch tile_white_floor
 x 12
 y 4
 end
+arch dungeon_magic
+x 12
+y 5
+end
 arch check_inv
 slaying irritable_zorn_key
 x 12
@@ -3201,6 +3237,10 @@ end
 arch tile_white_floor
 x 12
 y 5
+end
+arch dungeon_magic
+x 12
+y 6
 end
 arch tile_white_floor
 x 12
@@ -3446,6 +3486,10 @@ arch flagstone_2_1_2
 x 13
 y 1
 end
+arch dungeon_magic
+x 13
+y 2
+end
 arch tile_white_floor
 x 13
 y 2
@@ -3454,17 +3498,33 @@ arch wwall_2_1_2
 x 13
 y 2
 end
-arch tile_white_floor
+arch dungeon_magic
 x 13
 y 3
 end
 arch tile_white_floor
 x 13
+y 3
+end
+arch dungeon_magic
+x 13
 y 4
 end
 arch tile_white_floor
 x 13
+y 4
+end
+arch dungeon_magic
+x 13
 y 5
+end
+arch tile_white_floor
+x 13
+y 5
+end
+arch dungeon_magic
+x 13
+y 6
 end
 arch tile_white_floor
 x 13
@@ -3695,6 +3755,10 @@ arch flagstone_2_1_2
 x 14
 y 1
 end
+arch dungeon_magic
+x 14
+y 2
+end
 arch tile_white_floor
 x 14
 y 2
@@ -3703,17 +3767,33 @@ arch wwall_win2
 x 14
 y 2
 end
-arch tile_white_floor
+arch dungeon_magic
 x 14
 y 3
 end
 arch tile_white_floor
 x 14
+y 3
+end
+arch dungeon_magic
+x 14
 y 4
 end
 arch tile_white_floor
 x 14
+y 4
+end
+arch dungeon_magic
+x 14
 y 5
+end
+arch tile_white_floor
+x 14
+y 5
+end
+arch dungeon_magic
+x 14
+y 6
 end
 arch tile_white_floor
 x 14
@@ -3951,6 +4031,10 @@ arch flagstone_2_1_2
 x 15
 y 1
 end
+arch dungeon_magic
+x 15
+y 2
+end
 arch tile_white_floor
 x 15
 y 2
@@ -3959,13 +4043,25 @@ arch wwall_2_1_2
 x 15
 y 2
 end
-arch tile_white_floor
+arch dungeon_magic
 x 15
 y 3
 end
 arch tile_white_floor
 x 15
+y 3
+end
+arch dungeon_magic
+x 15
 y 4
+end
+arch tile_white_floor
+x 15
+y 4
+end
+arch dungeon_magic
+x 15
+y 5
 end
 arch tile_white_floor
 x 15
@@ -3974,6 +4070,10 @@ end
 arch shop_mat
 x 15
 y 5
+end
+arch dungeon_magic
+x 15
+y 6
 end
 arch tile_white_floor
 x 15
@@ -4266,6 +4366,10 @@ arch flagstone_2_1_2
 x 16
 y 1
 end
+arch dungeon_magic
+x 16
+y 2
+end
 arch tile_white_floor
 x 16
 y 2
@@ -4537,6 +4641,10 @@ hp 12
 sp 38
 x 16
 y 38
+end
+arch dungeon_magic
+x 16
+y 39
 end
 arch brush
 x 16
@@ -4990,6 +5098,10 @@ arch footpath_2_2_4
 x 17
 y 38
 end
+arch dungeon_magic
+x 17
+y 39
+end
 arch brush
 x 17
 y 39
@@ -5312,6 +5424,10 @@ endmsg
 x 18
 y 38
 end
+arch dungeon_magic
+x 18
+y 39
+end
 arch brush
 x 18
 y 39
@@ -5565,6 +5681,10 @@ arch brush
 x 19
 y 38
 end
+arch dungeon_magic
+x 19
+y 39
+end
 arch brush
 x 19
 y 39
@@ -5808,6 +5928,10 @@ end
 arch brush
 x 20
 y 38
+end
+arch dungeon_magic
+x 20
+y 39
 end
 arch brush
 x 20
