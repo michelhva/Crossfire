@@ -327,9 +327,9 @@ class Dialog:
         character_status=self.__character.ReadKey("dialog_"+self.__location);
         if character_status == "":
             return "0"
-        pairs=string.split(character_status, ";")
+        pairs=character_status.split(";")
         for i in pairs:
-            subpair=string.split(i, ":")
+            subpair=i.split(":")
             if subpair[0] == key:
                 return subpair[1]
         return "0"
@@ -343,9 +343,9 @@ class Dialog:
         finished = ""
         character_status = self.__character.ReadKey("dialog_"+self.__location);
         if character_status != "":
-            pairs = string.split(character_status, ";")
+            pairs = character_status.split(";")
             for i in pairs:
-                subpair = string.split(i, ":")
+                subpair = i.split(":")
                 if subpair[0] == key:
                     subpair[1] = value
                     ishere = 1
