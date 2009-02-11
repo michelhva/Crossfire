@@ -210,7 +210,7 @@ def do_inventory():
 
 def do_exp():
 	if ( len(topic) < 2 ):
-		whoami.Say("Your exp is %d, perm is %d, mult is %d"%(who.Exp, who.PermExp, who.ExpMult))
+		whoami.Say("Your exp is %d, perm is %d, mult is %d"%(who.Exp, who.PermExp, who.ExpMul))
 		whoami.Say("Syntax is: exp <value> [option] [skill]")
 	else:
 		value = int(topic[1])
