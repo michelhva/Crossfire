@@ -58,7 +58,7 @@ x = activator.X
 y = activator.Y
 
 log = CFLog.CFLog()
-text = string.split(Crossfire.WhatIsMessage())
+text = Crossfire.WhatIsMessage().split()
 
 if text[0] == 'help' or text[0] == 'yes':
 	# split the help message in two parts to prevent the server from truncating it.
@@ -166,7 +166,7 @@ elif text[0] == 'send':
 			inv = activator.CheckInventory(sackName)
 			while inv:
 				next = inv.Below
-				text2 = string.split(inv.Name)
+				text2 = inv.Name.split()
 				if len(text2) == 5 and text2[0] == sackName and text2[1] == 'T:' and text2[3] == 'F:' and text2[2] == text[1]:
 					map = Crossfire.ReadyMap(storage_map)
 					if map:
@@ -197,7 +197,7 @@ elif text[0] == 'receive':
 			item = map.ObjectAt(storage_x, storage_y)
 			while item:
 				previous = item.Above
-				text2 = string.split(item.Name)
+				text2 = item.Name.split()
 				if len(text2) == 5 and text2[0] == sackName and text2[4] == activatorname:
 					item.Name = item.Name+' (used)'
 					item.InsertInto(activator)
