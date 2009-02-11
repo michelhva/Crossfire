@@ -13,7 +13,7 @@ enter_x 6
 enter_y 11
 msg
 Created:  2004-01-25 Ryo Saeba
-Modified: 2008-12-10 Rick Tanner
+Modified: 2009-02-10 Rick Tanner
 endmsg
 end
 arch tile_white_floor
@@ -674,6 +674,10 @@ no_pick 1
 identified 1
 end
 arch tile_white_floor
+x 7
+y 10
+end
+arch menu
 x 7
 y 10
 end
