@@ -53,9 +53,9 @@ inverse = "inverse" in parameters and parameters["inverse"] == True
 match = False
 if not "match" in parameters:
     Crossfire.Log(Crossfire.LogError,"Script sleep.py didn't get a 'match' parameter. Only got %s" %parameters)
-elif string.lower(parameters["match"]) == "one":
+elif parameters["match"].lower() == "one":
     match=TimeOfDay().matchAny(parameters["when"]) != inverse
-elif string.lower(parameters["match"]) == "all":
+elif parameters["match"].lower() == "all":
     match=TimeOfDay().matchAll(parameters["when"]) != inverse
 else:
     Crossfire.Log(Crossfire.LogError,"Script sleep.py didn't get a 'match' parameter. Only got %s" %parameters)

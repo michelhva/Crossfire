@@ -34,7 +34,7 @@ guildname=Crossfire.ScriptParameters() # 6 is say event
 if (guildname):
 
     guild = CFGuilds.CFGuild(guildname)
-    text = string.split(Crossfire.WhatIsMessage())
+    text = Crossfire.WhatIsMessage().split()
     guildrecord = CFGuilds.CFGuildHouses().info(guildname)
     found = 0
     if text[0] == 'enter' or text[0] == 'Enter':
