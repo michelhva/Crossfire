@@ -275,7 +275,7 @@ class Dialog:
     # only need to be a substring of the message in order to trigger a reply.
     def isAnswer(self, msg, keywords):
         for ckey in keywords:
-            if ckey == "*" or string.find(msg.lower(), ckey.lower()) != -1:
+            if ckey == "*" or msg.lower().find(ckey.lower()) != -1:
                 return 1
         return 0
 
