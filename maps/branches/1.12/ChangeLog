@@ -1,3 +1,83 @@
+2009-02-11 05:19  rjtanner
+
+	* HallOfDMs: Backport from trunk - /HallOfDMs: Fix typo ('Wraith
+	  Hal of Selection' should be 'Wraith Hall of Selection')
+
+2009-02-11 05:17  rjtanner
+
+	* scorn/shops/scorn.sale1: Backport from trunk - Add some missing
+	  dungeon_magic tiles to /scorn/shops/scorn.sale1
+
+2009-02-11 05:16  rjtanner
+
+	* scorn/shops/light_shop: Backport from trunk - Fix part of bug
+	  2457751 'Unpaid items work for some things...': Make some floor
+	  sections in /scorn/shops/light_shop shop floor
+
+2009-02-11 05:14  rjtanner
+
+	* mlab/citydeclouds/cdcapart1: Backport from trunk - Fix
+	  /mlab/citydeclouds/cdcapart1: When going from player unique map
+	  to a shared map you have to use absolute paths, not relative
+	  ones. This will require updating of the maps stored for the
+	  player (if any)
+
+2009-02-11 05:13  rjtanner
+
+	* mlab/citydeclouds/villa/citydecloudsvillaC1: Backport from trunk
+	  - Fix exit coordinates in
+	  /mlab/citydeclouds/villa/citydecloudsvillaC1
+
+2009-02-11 05:11  rjtanner
+
+	* brest/brest.scrolls.right: Backport from trunk - Fix part of bug
+	  2457751 'Unpaid items work for some things...' : Make some floor
+	  sections in /brest/brest.scrolls.right shop floor with no_magic
+
+2009-02-11 05:08  rjtanner
+
+	* brest/brest.scrolls.right: Backport from trunk - insert
+	  additinoal no_spell tiles
+
+2009-01-31 06:32  rjtanner
+
+	* navar_city/magara/houses/museum: Typo correction on girdle of
+	  damage (was dammage) in Museum of Arms
+	  (/navar_city/magara/houses/museum)
+
+2009-01-30 05:07  rjtanner
+
+	* darcap/darcap/circus/fz_o1: Removed the cloud floor tile in the
+	  Fun Zone Obstacle Course 1 (/darcap/darcap/circus/fz_o1) in
+	  Darcap Circus, it was causing problems with the teleporter back
+	  to the Fun Zone Lobby
+
+2009-01-30 04:38  rjtanner
+
+	* wolfsburg/magara/castle/floor_1: Fix entrance from Castle Magara,
+	  floor 1 (/wolfsburg/magara/castle/floor_1) back to the world map
+	  (/world/world_128_109)
+
+2009-01-26 06:03  rjtanner
+
+	* azumauindo/suno-yamatoshi/buildings/tatemonoA2,
+	  darcap/darcap/earthhouse: Backport from Trunk, corrected entrance
+	  destination coordinates
+
+2009-01-22 05:44  rjtanner
+
+	* brest/pshops/pshopsinc2: Backport from Trunk, Fix the type of
+	  stairs (should be stair2_down, was stair2_up) in
+	  /brest/pshops/pshopsinc2
+
+2009-01-17 20:03  lalo
+
+	* .: preparing for 1.12 release
+
+2009-01-17 08:58  rjtanner
+
+	* Updated ChangeLog file using svn2cl
+
 2009-01-17 07:54  rjtanner
 
 	* quests/mak/dragons/chaos: Synch with Branches/1.x; Insert floor
