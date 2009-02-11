@@ -12,7 +12,7 @@ height 24
 enter_x 13
 enter_y 20
 msg
-Modified: 2008-12-11 Rick Tanner
+Modified: 2009-02-11 Rick Tanner
 endmsg
 end
 arch flagstone
@@ -2343,22 +2343,27 @@ end
 arch blackslate
 x 17
 y 3
+type 68
 end
 arch blackslate
 x 17
 y 4
+type 68
 end
 arch blackslate
 x 17
 y 5
+type 68
 end
 arch blackslate
 x 17
 y 6
+type 68
 end
 arch blackslate
 x 17
 y 7
+type 68
 end
 arch barrel
 x 17
@@ -2367,6 +2372,7 @@ end
 arch blackslate
 x 17
 y 8
+type 68
 end
 arch barrel
 x 17
@@ -2474,10 +2480,12 @@ end
 arch blackslate
 x 18
 y 3
+type 68
 end
 arch blackslate
 x 18
 y 4
+type 68
 end
 arch create_blue_dragon_mail
 x 18
@@ -2486,6 +2494,7 @@ end
 arch blackslate
 x 18
 y 5
+type 68
 end
 arch create_dragon_mail
 x 18
@@ -2494,6 +2503,7 @@ end
 arch blackslate
 x 18
 y 6
+type 68
 end
 arch create_green_dragon_mail
 x 18
@@ -2502,10 +2512,12 @@ end
 arch blackslate
 x 18
 y 7
+type 68
 end
 arch blackslate
 x 18
 y 8
+type 68
 end
 arch wall_0
 x 18
@@ -2629,6 +2641,7 @@ end
 arch blackslate
 x 19
 y 3
+type 68
 end
 arch forge
 x 19
@@ -2638,6 +2651,7 @@ end
 arch blackslate
 x 19
 y 4
+type 68
 end
 arch dungeon_magic
 x 19
@@ -2646,6 +2660,7 @@ end
 arch blackslate
 x 19
 y 5
+type 68
 end
 arch dungeon_magic
 x 19
@@ -2654,6 +2669,7 @@ end
 arch blackslate
 x 19
 y 6
+type 68
 end
 arch dungeon_magic
 x 19
@@ -2662,10 +2678,12 @@ end
 arch blackslate
 x 19
 y 7
+type 68
 end
 arch blackslate
 x 19
 y 8
+type 68
 end
 arch dungeon_magic
 x 19
@@ -2773,10 +2791,12 @@ end
 arch blackslate
 x 20
 y 3
+type 68
 end
 arch blackslate
 x 20
 y 4
+type 68
 end
 arch create_mithril_ar_ele
 x 20
@@ -2789,10 +2809,7 @@ end
 arch blackslate
 x 20
 y 5
-end
-arch blackslate
-x 20
-y 5
+type 68
 end
 arch dungeon_magic
 x 20
@@ -2801,10 +2818,7 @@ end
 arch blackslate
 x 20
 y 6
-end
-arch blackslate
-x 20
-y 6
+type 68
 end
 arch smith
 x 20
@@ -2817,10 +2831,12 @@ end
 arch blackslate
 x 20
 y 7
+type 68
 end
 arch blackslate
 x 20
 y 8
+type 68
 end
 arch shop_mat
 x 20
@@ -2924,6 +2940,7 @@ end
 arch blackslate
 x 21
 y 3
+type 68
 end
 arch forge
 x 21
@@ -2933,6 +2950,7 @@ end
 arch blackslate
 x 21
 y 4
+type 68
 end
 arch dungeon_magic
 x 21
@@ -2941,6 +2959,7 @@ end
 arch blackslate
 x 21
 y 5
+type 68
 end
 arch dungeon_magic
 x 21
@@ -2949,6 +2968,7 @@ end
 arch blackslate
 x 21
 y 6
+type 68
 end
 arch dungeon_magic
 x 21
@@ -2957,10 +2977,12 @@ end
 arch blackslate
 x 21
 y 7
+type 68
 end
 arch blackslate
 x 21
 y 8
+type 68
 end
 arch dungeon_magic
 x 21
@@ -3056,10 +3078,12 @@ end
 arch blackslate
 x 22
 y 3
+type 68
 end
 arch blackslate
 x 22
 y 4
+type 68
 end
 arch create_dragon_mail
 x 22
@@ -3068,6 +3092,7 @@ end
 arch blackslate
 x 22
 y 5
+type 68
 end
 arch create_dragon_shield
 x 22
@@ -3076,6 +3101,7 @@ end
 arch blackslate
 x 22
 y 6
+type 68
 end
 arch create_eyeshield
 x 22
@@ -3084,10 +3110,12 @@ end
 arch blackslate
 x 22
 y 7
+type 68
 end
 arch blackslate
 x 22
 y 8
+type 68
 end
 arch wall_0
 x 22
@@ -3215,26 +3243,32 @@ end
 arch blackslate
 x 23
 y 3
+type 68
 end
 arch blackslate
 x 23
 y 4
+type 68
 end
 arch blackslate
 x 23
 y 5
+type 68
 end
 arch blackslate
 x 23
 y 6
+type 68
 end
 arch blackslate
 x 23
 y 7
+type 68
 end
 arch blackslate
 x 23
 y 8
+type 68
 end
 arch barrel
 x 23
