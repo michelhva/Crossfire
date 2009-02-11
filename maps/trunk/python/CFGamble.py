@@ -23,18 +23,18 @@ class SlotMachine:
 		self.minpot = minpot
 		self.maxpot = maxpot
 
-        def placebet(self,amount):
+	def placebet(self,amount):
 		if self.slotname not in self.slotdb:
 			self.slotdb[self.slotname] = self.minpot+amount
 		else:
 			temp=self.slotdb[self.slotname]
 			self.slotdb[self.slotname]=temp+amount
 
-        def payoff(self,amount):
+	def payoff(self,amount):
 		temp=self.slotdb[self.slotname]
 		self.slotdb[self.slotname] = temp-amount
 
-        def spin(self,slotnum):
+	def spin(self,slotnum):
 		result=[]
 		while slotnum >=1:
 			r = self.slotlist[random.randint(0,len(self.slotlist)-1)]
