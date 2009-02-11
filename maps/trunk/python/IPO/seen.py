@@ -34,7 +34,7 @@ x=activator.X
 y=activator.Y
 
 log = CFLog.CFLog()
-text = string.split(Crossfire.WhatIsMessage())
+text = Crossfire.WhatIsMessage().split()
 
 if text[0] == 'seen':
     if len(text)==2:

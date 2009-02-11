@@ -35,7 +35,7 @@ whoami = Crossfire.WhoAmI()
 boardname = Crossfire.ScriptParameters()
 if boardname:
 
-	text = string.split(Crossfire.WhatIsMessage(), ' ', 1)
+	text = Crossfire.WhatIsMessage().split(' ', 1)
 
 	if text[0] == 'help' or text[0] == 'yes':
 		message='Help for %s\nList of commands:\n\n- list\n- write <message>\n- remove <id>\n'%boardname

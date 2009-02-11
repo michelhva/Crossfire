@@ -34,7 +34,7 @@ idlist = []
 
 inv = whoami.Inventory
 while inv:
-	text = string.split(inv.Name)
+	text = inv.Name.split()
 	if text[0] == 'mailscroll' or text[0] == 'mailwarning':
 		if text[0] == 'mailscroll':
 			type = 1

@@ -44,7 +44,7 @@ bankdatabase = "ImperialBank_DB"
 fees = (service_charge/100.0)+1
 bank = CFBank.CFBank(bankdatabase)
 
-text = string.split(Crossfire.WhatIsMessage())
+text = Crossfire.WhatIsMessage().split()
 thanks_message = [ \
 	'Thank you for banking the Imperial Way.', \
 	'Thank you for banking the Imperial Way.', \
