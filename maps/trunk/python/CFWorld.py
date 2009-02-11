@@ -13,7 +13,7 @@ bigmapysize = 50
 #Return an x,y tuple of where in bigworld an object is. Return false if not in bigworld. In current bigworld, values range from 5000 to 6499.
 def loc_from_ob(ob):
     cfmap = ob.Map
-    if ((string.find(cfmap.Path,world_prefix) != 0) or (len(cfmap.Path) != world_len)):
+    if ((cfmap.Path.find(world_prefix) != 0) or (len(cfmap.Path) != world_len)):
         return False
     strloc = cfmap.Path[world_prefix_len:].split(world_sep)
     x = (int(strloc[0]) * bigmapxsize) + ob.X
