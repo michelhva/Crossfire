@@ -8,7 +8,7 @@ enter_x 10
 enter_y 13
 msg
 Created:  1997-04-27
-Modified: 2008-10-25 Rick Tanner
+Modified: 2009-02-10 Rick Tanner
 endmsg
 end
 arch grass
@@ -1578,6 +1578,7 @@ Con 126
 hp 32767
 x 11
 y 5
+level 120
 type 0
 resist_physical 99
 resist_magic 100
@@ -1760,6 +1761,7 @@ arch princess
 name The Queen
 x 12
 y 5
+level 120
 end
 arch woodfloor2
 x 12
