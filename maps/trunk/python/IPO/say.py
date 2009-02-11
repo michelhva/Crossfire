@@ -90,8 +90,8 @@ elif text[0] == 'pen':
 
 elif text[0] == 'literacy':
 	if activator.PayAmount(priceScrollOfLiteracy*priceFactor):
-        	whoami.Say('Here is your IPO Scroll of Literacy')
-        	id = activator.Map.CreateObject('scroll of literacy', x, y)
+		whoami.Say('Here is your IPO Scroll of Literacy')
+		id = activator.Map.CreateObject('scroll of literacy', x, y)
 		id.Name = 'IPO Scroll of Literacy'
 		id.NamePl = 'IPO Scrolls of Literacy'
 		id.Value = 0
