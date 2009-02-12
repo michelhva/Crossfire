@@ -708,10 +708,9 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
                                 debugProtocolWrite("recv drawextinfo color="+color+" type="+type+"/"+subtype+" msg="+message+"\n");
                             }
 
-                            final CrossfireCommandDrawextinfoEvent evt = new CrossfireCommandDrawextinfoEvent(this, color, type, subtype, message);
                             for (final CrossfireDrawextinfoListener listener : drawextinfoListeners)
                             {
-                                listener.commandDrawextinfoReceived(evt);
+                                listener.commandDrawextinfoReceived(color, type, subtype, message);
                             }
                         }
                         notifyPacketWatcherListenersAscii(packet, start, args, end);

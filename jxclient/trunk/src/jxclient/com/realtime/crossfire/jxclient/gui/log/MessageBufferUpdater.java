@@ -19,7 +19,6 @@
 //
 package com.realtime.crossfire.jxclient.gui.log;
 
-import com.realtime.crossfire.jxclient.server.CrossfireCommandDrawextinfoEvent;
 import com.realtime.crossfire.jxclient.server.CrossfireCommandDrawinfoEvent;
 import com.realtime.crossfire.jxclient.server.CrossfireCommandQueryEvent;
 import com.realtime.crossfire.jxclient.server.CrossfireDrawextinfoListener;
@@ -110,12 +109,12 @@ public class MessageBufferUpdater
     {
         /** {@inheritDoc} */
         @Override
-        public void commandDrawextinfoReceived(final CrossfireCommandDrawextinfoEvent evt)
+        public void commandDrawextinfoReceived(final int color, final int type, final int subtype, final String message)
         {
-            if (evt.getType() == MessageTypes.MSG_TYPE_QUERY // should not happen; but if it happens just display it
-            || isTypeShown(evt.getType()))
+            if (type == MessageTypes.MSG_TYPE_QUERY // should not happen; but if it happens just display it
+            || isTypeShown(type))
             {
-                parser.parse(evt.getMessage(), findColor(evt.getColor()), buffer);
+                parser.parse(message, findColor(color), buffer);
             }
         }
     };

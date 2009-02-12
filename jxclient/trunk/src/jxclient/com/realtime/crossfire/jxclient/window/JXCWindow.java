@@ -43,7 +43,6 @@ import com.realtime.crossfire.jxclient.metaserver.MetaserverModel;
 import com.realtime.crossfire.jxclient.scripts.ScriptManager;
 import com.realtime.crossfire.jxclient.server.CommandQueue;
 import com.realtime.crossfire.jxclient.server.ConnectionListener;
-import com.realtime.crossfire.jxclient.server.CrossfireCommandDrawextinfoEvent;
 import com.realtime.crossfire.jxclient.server.CrossfireCommandQueryEvent;
 import com.realtime.crossfire.jxclient.server.CrossfireDrawextinfoListener;
 import com.realtime.crossfire.jxclient.server.CrossfireQueryListener;
@@ -582,12 +581,10 @@ public class JXCWindow extends JFrame
     {
         /** {@inheritDoc} */
         @Override
-        public void commandDrawextinfoReceived(final CrossfireCommandDrawextinfoEvent evt)
+        public void commandDrawextinfoReceived(final int color, final int type, final int subtype, String message)
         {
-            String message = evt.getMessage();
-
             final Gui dialog;
-            switch (evt.getType())
+            switch (type)
             {
             case MessageTypes.MSG_TYPE_BOOK:
                 dialog = skin.getDialogBook(1);
