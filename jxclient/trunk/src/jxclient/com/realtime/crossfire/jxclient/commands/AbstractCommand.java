@@ -19,7 +19,7 @@
 //
 package com.realtime.crossfire.jxclient.commands;
 
-import com.realtime.crossfire.jxclient.server.CrossfireCommandDrawinfoEvent;
+import com.realtime.crossfire.jxclient.server.CrossfireDrawinfoListener;
 import com.realtime.crossfire.jxclient.server.CrossfireServerConnection;
 
 /**
@@ -51,7 +51,7 @@ public abstract class AbstractCommand implements Command
      */
     protected void drawInfo(final String message)
     {
-        drawInfo(message, CrossfireCommandDrawinfoEvent.NDI_BLACK);
+        drawInfo(message, CrossfireDrawinfoListener.NDI_BLACK);
     }
 
     /**
@@ -61,7 +61,7 @@ public abstract class AbstractCommand implements Command
      */
     protected void drawInfoError(final String message)
     {
-        drawInfo(message, CrossfireCommandDrawinfoEvent.NDI_RED);
+        drawInfo(message, CrossfireDrawinfoListener.NDI_RED);
     }
 
     /**

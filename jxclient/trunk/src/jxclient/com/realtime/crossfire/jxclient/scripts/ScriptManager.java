@@ -22,7 +22,7 @@ package com.realtime.crossfire.jxclient.scripts;
 import com.realtime.crossfire.jxclient.items.ItemsManager;
 import com.realtime.crossfire.jxclient.mapupdater.CfMapUpdater;
 import com.realtime.crossfire.jxclient.server.CommandQueue;
-import com.realtime.crossfire.jxclient.server.CrossfireCommandDrawinfoEvent;
+import com.realtime.crossfire.jxclient.server.CrossfireDrawinfoListener;
 import com.realtime.crossfire.jxclient.server.CrossfireServerConnection;
 import com.realtime.crossfire.jxclient.skills.SkillSet;
 import com.realtime.crossfire.jxclient.spells.SpellsManager;
@@ -125,7 +125,7 @@ public class ScriptManager
         }
         catch (final IOException ex)
         {
-            crossfireServerConnection.drawInfo("Unable to run script: "+ex.getMessage(), CrossfireCommandDrawinfoEvent.NDI_RED);
+            crossfireServerConnection.drawInfo("Unable to run script: "+ex.getMessage(), CrossfireDrawinfoListener.NDI_RED);
             return;
         }
         nextScriptId++;
@@ -139,15 +139,15 @@ public class ScriptManager
                 scriptProcesses.remove(scriptProcess);
                 if(result == null)
                 {
-                    crossfireServerConnection.drawInfo("Script '"+scriptProcess+"' finished.", CrossfireCommandDrawinfoEvent.NDI_BLACK);
+                    crossfireServerConnection.drawInfo("Script '"+scriptProcess+"' finished.", CrossfireDrawinfoListener.NDI_BLACK);
                 }
                 else
                 {
-                    crossfireServerConnection.drawInfo("Script '"+scriptProcess+"' failed: "+result, CrossfireCommandDrawinfoEvent.NDI_RED);
+                    crossfireServerConnection.drawInfo("Script '"+scriptProcess+"' failed: "+result, CrossfireDrawinfoListener.NDI_RED);
                 }
             }
         });
-        crossfireServerConnection.drawInfo("Script '"+scriptProcess+"' started.", CrossfireCommandDrawinfoEvent.NDI_BLACK);
+        crossfireServerConnection.drawInfo("Script '"+scriptProcess+"' started.", CrossfireDrawinfoListener.NDI_BLACK);
         scriptProcess.start();
     }
 

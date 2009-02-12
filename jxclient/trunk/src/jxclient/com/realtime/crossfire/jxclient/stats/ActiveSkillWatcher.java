@@ -19,7 +19,6 @@
 //
 package com.realtime.crossfire.jxclient.stats;
 
-import com.realtime.crossfire.jxclient.server.CrossfireCommandDrawinfoEvent;
 import com.realtime.crossfire.jxclient.server.CrossfireDrawextinfoListener;
 import com.realtime.crossfire.jxclient.server.CrossfireDrawinfoListener;
 import com.realtime.crossfire.jxclient.server.CrossfireServerConnection;
@@ -117,9 +116,9 @@ public class ActiveSkillWatcher
     {
         /** {@inheritDoc} */
         @Override
-        public void commandDrawinfoReceived(final CrossfireCommandDrawinfoEvent evt)
+        public void commandDrawinfoReceived(final String text, final int type)
         {
-            checkMessage(evt.getText());
+            checkMessage(text);
         }
     };
 

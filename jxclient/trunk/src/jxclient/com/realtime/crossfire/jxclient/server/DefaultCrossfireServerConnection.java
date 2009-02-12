@@ -2140,10 +2140,9 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
     @Override
     public void drawInfo(final String message, final int color)
     {
-        final CrossfireCommandDrawinfoEvent evt = new CrossfireCommandDrawinfoEvent(this, message, color);
         for (final CrossfireDrawinfoListener listener : drawinfoListeners)
         {
-            listener.commandDrawinfoReceived(evt);
+            listener.commandDrawinfoReceived(message, color);
         }
     }
 
