@@ -19,7 +19,6 @@
 //
 package com.realtime.crossfire.jxclient.stats;
 
-import com.realtime.crossfire.jxclient.server.CrossfireCommandDrawinfoEvent;
 import com.realtime.crossfire.jxclient.server.CrossfireDrawextinfoListener;
 import com.realtime.crossfire.jxclient.server.CrossfireDrawinfoListener;
 import com.realtime.crossfire.jxclient.server.CrossfireServerConnection;
@@ -74,9 +73,9 @@ public class PoisonWatcher
     {
         /** {@inheritDoc} */
         @Override
-        public void commandDrawinfoReceived(final CrossfireCommandDrawinfoEvent evt)
+        public void commandDrawinfoReceived(final String text, final int type)
         {
-            check(evt.getText());
+            check(text);
         }
     };
 

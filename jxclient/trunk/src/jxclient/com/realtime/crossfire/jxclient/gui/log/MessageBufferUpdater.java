@@ -19,7 +19,6 @@
 //
 package com.realtime.crossfire.jxclient.gui.log;
 
-import com.realtime.crossfire.jxclient.server.CrossfireCommandDrawinfoEvent;
 import com.realtime.crossfire.jxclient.server.CrossfireDrawextinfoListener;
 import com.realtime.crossfire.jxclient.server.CrossfireDrawinfoListener;
 import com.realtime.crossfire.jxclient.server.CrossfireQueryListener;
@@ -126,27 +125,27 @@ public class MessageBufferUpdater
     {
         /** {@inheritDoc} */
         @Override
-        public void commandDrawinfoReceived(final CrossfireCommandDrawinfoEvent evt)
+        public void commandDrawinfoReceived(final String text, final int type)
         {
             // guess category from message color
-            final int type;
-            switch(evt.getTextType())
+            final int messageType;
+            switch(type)
             {
-            case CrossfireCommandDrawinfoEvent.NDI_WHITE:
-            case CrossfireCommandDrawinfoEvent.NDI_ORANGE:
-            case CrossfireCommandDrawinfoEvent.NDI_BLUE:
-            case CrossfireCommandDrawinfoEvent.NDI_RED:
-                type = MessageTypes.MSG_TYPE_COMMUNICATION;
+            case NDI_WHITE:
+            case NDI_ORANGE:
+            case NDI_BLUE:
+            case NDI_RED:
+                messageType = MessageTypes.MSG_TYPE_COMMUNICATION;
                 break;
 
             default:
-                type = MessageTypes.MSG_TYPE_MISC;
+                messageType = MessageTypes.MSG_TYPE_MISC;
                 break;
             }
 
-            if (isTypeShown(type))
+            if (isTypeShown(messageType))
             {
-                parser.parseWithoutMediaTags(evt.getText(), findColor(evt.getTextType()), buffer);
+                parser.parseWithoutMediaTags(text, findColor(type), buffer);
             }
         }
     };

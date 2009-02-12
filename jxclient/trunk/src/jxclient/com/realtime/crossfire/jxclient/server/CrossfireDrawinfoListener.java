@@ -27,5 +27,31 @@ package com.realtime.crossfire.jxclient.server;
  */
 public interface CrossfireDrawinfoListener
 {
-    void commandDrawinfoReceived(CrossfireCommandDrawinfoEvent evt);
+    int NDI_BLACK = 0;
+
+    int NDI_WHITE = 1;
+
+    int NDI_NAVY = 2;
+
+    int NDI_RED = 3;
+
+    int NDI_ORANGE = 4;
+
+    int NDI_BLUE = 5;
+
+    int NDI_DK_ORANGE = 6;
+
+    int NDI_GREEN = 7;
+
+    int NDI_LT_GREEN = 8;
+
+    int NDI_GREY = 9;
+
+    int NDI_BROWN = 10;
+
+    int NDI_GOLD = 11;
+
+    int NDI_TAN = 12;
+
+    void commandDrawinfoReceived(String text, int type);
 }

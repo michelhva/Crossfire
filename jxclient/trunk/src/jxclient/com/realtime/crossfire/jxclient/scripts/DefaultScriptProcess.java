@@ -26,7 +26,7 @@ import com.realtime.crossfire.jxclient.map.CfMap;
 import com.realtime.crossfire.jxclient.map.CfMapSquare;
 import com.realtime.crossfire.jxclient.mapupdater.CfMapUpdater;
 import com.realtime.crossfire.jxclient.server.CommandQueue;
-import com.realtime.crossfire.jxclient.server.CrossfireCommandDrawinfoEvent;
+import com.realtime.crossfire.jxclient.server.CrossfireDrawinfoListener;
 import com.realtime.crossfire.jxclient.server.CrossfireScriptMonitorListener;
 import com.realtime.crossfire.jxclient.server.CrossfireServerConnection;
 import com.realtime.crossfire.jxclient.server.CrossfireStatsListener;
@@ -817,7 +817,7 @@ public class DefaultScriptProcess extends Thread implements ScriptProcess
      */
     private void reportError(final String string)
     {
-        crossfireServerConnection.drawInfo(string, CrossfireCommandDrawinfoEvent.NDI_RED);
+        crossfireServerConnection.drawInfo(string, CrossfireDrawinfoListener.NDI_RED);
     }
 
     /** {@inheritDoc} */
