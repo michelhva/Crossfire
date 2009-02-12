@@ -79,7 +79,7 @@ class CFDataFile:
         else:
             header = dic['#']
             del dic['#']
-            index = dic.keys()
+            index = list(dic.keys())
             index.sort()
             contents = '#|%s\n' %('|'.join(header))
             file.write(contents)
@@ -150,7 +150,7 @@ class CFData:
 
     def get_keys(self):
         '''returns a sorted list of the primary keys (usually names) in the datafile'''
-        keys = self.datadb.keys()
+        keys = list(self.datadb.keys())
         keys.remove('#')
         keys.sort()
         return keys
