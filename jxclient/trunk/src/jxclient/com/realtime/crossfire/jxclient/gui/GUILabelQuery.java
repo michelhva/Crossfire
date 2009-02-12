@@ -19,7 +19,6 @@
 //
 package com.realtime.crossfire.jxclient.gui;
 
-import com.realtime.crossfire.jxclient.server.CrossfireCommandQueryEvent;
 import com.realtime.crossfire.jxclient.server.CrossfireQueryListener;
 import com.realtime.crossfire.jxclient.server.CrossfireServerConnection;
 import com.realtime.crossfire.jxclient.window.JXCWindow;
@@ -50,9 +49,9 @@ public class GUILabelQuery extends GUIMultiLineLabel
     {
         /** {@inheritDoc} */
         @Override
-        public void commandQueryReceived(final CrossfireCommandQueryEvent evt)
+        public void commandQueryReceived(final String prompt, final int queryType)
         {
-            setText(evt.getPrompt());
+            setText(prompt);
         }
     };
 

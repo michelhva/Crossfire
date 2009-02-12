@@ -1114,10 +1114,9 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
                         debugProtocolWrite("recv query flags="+flags+" text="+text+"\n");
                     }
 
-                    final CrossfireCommandQueryEvent evt = new CrossfireCommandQueryEvent(this, text, flags);
                     for (final CrossfireQueryListener listener : queryListeners)
                     {
-                        listener.commandQueryReceived(evt);
+                        listener.commandQueryReceived(text, flags);
                     }
                 }
                 notifyPacketWatcherListenersAscii(packet, start, args, end);

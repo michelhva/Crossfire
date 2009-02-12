@@ -43,7 +43,6 @@ import com.realtime.crossfire.jxclient.metaserver.MetaserverModel;
 import com.realtime.crossfire.jxclient.scripts.ScriptManager;
 import com.realtime.crossfire.jxclient.server.CommandQueue;
 import com.realtime.crossfire.jxclient.server.ConnectionListener;
-import com.realtime.crossfire.jxclient.server.CrossfireCommandQueryEvent;
 import com.realtime.crossfire.jxclient.server.CrossfireDrawextinfoListener;
 import com.realtime.crossfire.jxclient.server.CrossfireQueryListener;
 import com.realtime.crossfire.jxclient.server.CrossfireServerConnection;
@@ -531,15 +530,15 @@ public class JXCWindow extends JFrame
     {
         /** {@inheritDoc} */
         @Override
-        public void commandQueryReceived(final CrossfireCommandQueryEvent evt)
+        public void commandQueryReceived(final String prompt, final int queryType)
         {
             synchronized (semaphoreDrawing)
             {
                 setStatus(Status.QUERY);
                 windowRenderer.openDialog(queryDialog);
-                queryDialog.setHideInput((evt.getQueryType()&CrossfireCommandQueryEvent.HIDEINPUT) != 0);
+                queryDialog.setHideInput((queryType&CrossfireQueryListener.HIDEINPUT) != 0);
 
-                currentQueryDialogIsNamePrompt = evt.getPrompt().startsWith("What is your name?");
+                currentQueryDialogIsNamePrompt = prompt.startsWith("What is your name?");
                 if (currentQueryDialogIsNamePrompt)
                 {
                     final String playerName = settings.getString("player_"+connection.getHostname(), "");
@@ -552,8 +551,8 @@ public class JXCWindow extends JFrame
                         }
                     }
                 }
-                else if (evt.getPrompt().startsWith("[y] to roll new stats")
-                || evt.getPrompt().startsWith("Welcome, Brave New Warrior!"))
+                else if (prompt.startsWith("[y] to roll new stats")
+                || prompt.startsWith("Welcome, Brave New Warrior!"))
                 {
                     windowRenderer.setGuiState(JXCWindowRenderer.GuiState.NEWCHAR);
                     if (openDialogByName("newchar"))
