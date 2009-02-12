@@ -39,11 +39,12 @@ changer = Crossfire.WhoAmI()
 aname = Crossfire.ScriptParameters()
 atype = getattr(Crossfire.AttackTypeNumber, aname.upper())
 player = changer
-while player.Archetype.Name != 'pl_dragon':
+while player and player.Archetype.Name != 'pl_dragon':
     player = player.Above
-force = player.CheckArchInventory('dragon_ability_force')
-force.Exp = atype
-player.Anim = animations[atype]
-player.Face = faces[atype]
-player.Title = '%s hatchling' % aname
-changer.Say("Your metabolism is now focused on me.")
+if player:
+    force = player.CheckArchInventory('dragon_ability_force')
+    force.Exp = atype
+    player.Anim = animations[atype]
+    player.Face = faces[atype]
+    player.Title = '%s hatchling' % aname
+    changer.Say("Your metabolism is now focused on me.")
