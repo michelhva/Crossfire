@@ -160,6 +160,35 @@ public class ItemsManager
     };
 
     /**
+     * The {@link EventSchedulerCallback} for delaying event generation. This
+     * is needed because the Crossfire server sends multiple item2 commands
+     * for one "get all" command.
+     */
+    private final EventSchedulerCallback fireEventCallback = new EventSchedulerCallback()
+    {
+        /** {@inheritDoc} */
+        @Override
+        public void callback()
+        {
+            floorManager.fireEvents(getItems(currentFloorManager.getCurrentFloor()));
+            final List<CfItem> newItems;
+            synchronized (sync)
+            {
+                newItems = player != null ? getItems(player.getTag()) : null;
+            }
+            if (newItems != null)
+            {
+                inventoryManager.fireEvents(newItems);
+            }
+        }
+    };
+
+    /**
+     * The {@link EventScheduler} for delaying event generation.
+     */
+    private final EventScheduler fireEventScheduler = new EventScheduler(100, 500, fireEventCallback);
+
+    /**
      * Creates a new instance.
      * @param crossfireServerConnection the connection to monitor
      * @param faceCache the instance for looking up faces
@@ -172,6 +201,7 @@ public class ItemsManager
         this.stats = stats;
         this.skillSet = skillSet;
         crossfireServerConnection.addCrossfireUpdateItemListener(crossfireUpdateItemListener);
+        fireEventScheduler.start();
     }
 
     /**
@@ -479,16 +509,7 @@ public class ItemsManager
      */
     public void fireEvents()
     {
-        floorManager.fireEvents(getItems(currentFloorManager.getCurrentFloor()));
-        final List<CfItem> newItems;
-        synchronized (sync)
-        {
-            newItems = player != null ? getItems(player.getTag()) : null;
-        }
-        if (newItems != null)
-        {
-            inventoryManager.fireEvents(newItems);
-        }
+        fireEventScheduler.trigger();
     }
 
     /**
