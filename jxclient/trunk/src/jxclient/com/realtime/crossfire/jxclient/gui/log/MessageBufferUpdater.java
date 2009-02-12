@@ -20,7 +20,6 @@
 package com.realtime.crossfire.jxclient.gui.log;
 
 import com.realtime.crossfire.jxclient.server.CrossfireCommandDrawinfoEvent;
-import com.realtime.crossfire.jxclient.server.CrossfireCommandQueryEvent;
 import com.realtime.crossfire.jxclient.server.CrossfireDrawextinfoListener;
 import com.realtime.crossfire.jxclient.server.CrossfireDrawinfoListener;
 import com.realtime.crossfire.jxclient.server.CrossfireQueryListener;
@@ -92,11 +91,11 @@ public class MessageBufferUpdater
     {
         /** {@inheritDoc} */
         @Override
-        public void commandQueryReceived(final CrossfireCommandQueryEvent evt)
+        public void commandQueryReceived(final String prompt, final int queryType)
         {
             if (isTypeShown(MessageTypes.MSG_TYPE_QUERY))
             {
-                parser.parseWithoutMediaTags(evt.getPrompt(), Color.RED, buffer);
+                parser.parseWithoutMediaTags(prompt, Color.RED, buffer);
             }
         }
     };
