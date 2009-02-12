@@ -71,7 +71,6 @@ import com.realtime.crossfire.jxclient.mapupdater.CfMapUpdater;
 import com.realtime.crossfire.jxclient.mapupdater.MapscrollListener;
 import com.realtime.crossfire.jxclient.metaserver.MetaserverModel;
 import com.realtime.crossfire.jxclient.server.CommandQueue;
-import com.realtime.crossfire.jxclient.server.CrossfireCommandMagicmapEvent;
 import com.realtime.crossfire.jxclient.server.CrossfireMagicmapListener;
 import com.realtime.crossfire.jxclient.server.CrossfireServerConnection;
 import com.realtime.crossfire.jxclient.server.DefaultCrossfireServerConnection;
@@ -1150,7 +1149,7 @@ public class JXCSkinLoader
                 {
                     /** {@inheritDoc} */
                     @Override
-                    public void commandMagicmapReceived(final CrossfireCommandMagicmapEvent evt)
+                    public void commandMagicmapReceived(final int width, final int height, final int px, final int py, final byte[] data, final int pos)
                     {
                         commandList.execute();
                     }

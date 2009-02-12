@@ -27,7 +27,6 @@ import com.realtime.crossfire.jxclient.mapupdater.CfMapUpdater;
 import com.realtime.crossfire.jxclient.mapupdater.MapListener;
 import com.realtime.crossfire.jxclient.mapupdater.MapscrollListener;
 import com.realtime.crossfire.jxclient.mapupdater.NewmapListener;
-import com.realtime.crossfire.jxclient.server.CrossfireCommandMagicmapEvent;
 import com.realtime.crossfire.jxclient.server.CrossfireMagicmapListener;
 import com.realtime.crossfire.jxclient.server.CrossfireMap2Command;
 import com.realtime.crossfire.jxclient.server.CrossfireServerConnection;
@@ -127,7 +126,7 @@ public class GUIMagicMap extends GUIElement
     };
     static
     {
-        assert CrossfireCommandMagicmapEvent.FACE_COLOR_MASK+1 == tileColors.length;
+        assert CrossfireMagicmapListener.FACE_COLOR_MASK+1 == tileColors.length;
     }
 
     /**
@@ -138,24 +137,23 @@ public class GUIMagicMap extends GUIElement
     {
         /** {@inheritDoc} */
         @Override
-        public void commandMagicmapReceived(final CrossfireCommandMagicmapEvent evt)
+        public void commandMagicmapReceived(final int width, final int height, final int px, final int py, final byte[] data, final int pos)
         {
-            int datapos = evt.getPos();
-            final byte[] data = evt.getData();
+            int datapos = pos;
             synchronized (bufferedImageSync)
             {
                 final Graphics2D g = createBufferGraphics();
                 try
                 {
-                    final int offsetX = playerX-evt.getPX()*TILE_SIZE;
-                    final int offsetY = playerY-evt.getPY()*TILE_SIZE;
-                    for (int y = 0; y < evt.getHeight(); y++)
+                    final int offsetX = playerX-px*TILE_SIZE;
+                    final int offsetY = playerY-py*TILE_SIZE;
+                    for (int y = 0; y < height; y++)
                     {
-                        for (int x = 0; x < evt.getWidth(); x++)
+                        for (int x = 0; x < width; x++)
                         {
                             if (data[datapos] != 0)
                             {
-                                g.setColor(tileColors[data[datapos]&CrossfireCommandMagicmapEvent.FACE_COLOR_MASK]);
+                                g.setColor(tileColors[data[datapos]&CrossfireMagicmapListener.FACE_COLOR_MASK]);
                                 final int sx = offsetX+x*TILE_SIZE;
                                 final int sy = offsetY+y*TILE_SIZE;
                                 g.fillRect(sx, sy, TILE_SIZE, TILE_SIZE);

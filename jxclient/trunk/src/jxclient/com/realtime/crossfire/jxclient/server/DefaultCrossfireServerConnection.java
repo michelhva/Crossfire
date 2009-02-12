@@ -984,10 +984,9 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
                             throw new UnknownCommandException("invalid magicmap command");
                         }
 
-                        final CrossfireCommandMagicmapEvent evt = new CrossfireCommandMagicmapEvent(new Object(), width, height, px, py, packet, pos);
                         for (final CrossfireMagicmapListener listener : magicmapListeners)
                         {
-                            listener.commandMagicmapReceived(evt);
+                            listener.commandMagicmapReceived(width, height, px, py, packet, pos);
                         }
                         notifyPacketWatcherListenersMixed(packet, start, args, end);
                         return;
