@@ -438,16 +438,6 @@ public abstract class GUIElement extends JPanel
     }
 
     /**
-     * Return the {@link JXCWindow} this gui element belongs to.
-     *
-     * @return The {@link JXCWindow} this gui element belongs to.
-     */
-    public JXCWindow getWindow()
-    {
-        return window;
-    }
-
-    /**
      * Re-create the contents of {@link #bufferedImage}.
      */
     private void render()
