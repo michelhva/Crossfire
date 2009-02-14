@@ -488,7 +488,7 @@ public class JXCSkinLoader
                         }
                         else if (gui != null && args[0].equals("command_text"))
                         {
-                            parseCommandText(args, window, tooltipManager, windowRenderer, commands);
+                            parseCommandText(args, guiManager, tooltipManager, windowRenderer, commands);
                         }
                         else if (args[0].equals("def"))
                         {
@@ -596,7 +596,7 @@ public class JXCSkinLoader
                         }
                         else if (gui != null && args[0].equals("query_text"))
                         {
-                            parseQueryText(args, window, tooltipManager, windowRenderer);
+                            parseQueryText(args, guiManager, tooltipManager, windowRenderer);
                         }
                         else if (gui != null && args[0].equals("set_forced_active"))
                         {
@@ -628,7 +628,7 @@ public class JXCSkinLoader
                         }
                         else if (gui != null && args[0].equals("text"))
                         {
-                            parseText(args, window, tooltipManager, windowRenderer);
+                            parseText(args, guiManager, tooltipManager, windowRenderer);
                         }
                         else if (gui != null && args[0].equals("textbutton"))
                         {
@@ -866,14 +866,14 @@ public class JXCSkinLoader
     /**
      * Parses a "command_text" command.
      * @param args the command arguments
-     * @param window the window to use
+     * @param guiManager the gui manager to use
      * @param tooltipManager the tooltip manager to update
      * @param windowRenderer the window renderer to notify
      * @param commands the commands to use
      * @throws IOException if the command cannot be parsed
      * @throws JXCSkinException if the command cannot be parsed
      */
-    private void parseCommandText(final String[] args, final JXCWindow window, final TooltipManager tooltipManager, final JXCWindowRenderer windowRenderer, final Commands commands) throws IOException, JXCSkinException
+    private void parseCommandText(final String[] args, final GuiManager guiManager, final TooltipManager tooltipManager, final JXCWindowRenderer windowRenderer, final Commands commands) throws IOException, JXCSkinException
     {
         if (args.length != 12)
         {
@@ -891,7 +891,7 @@ public class JXCSkinLoader
         final Color inactiveColor = ParseUtils.parseColor(args[9]);
         final Color activeColor = ParseUtils.parseColor(args[10]);
         final int margin = expressionParser.parseInt(args[11]);
-        skin.insertGuiElement(new GUICommandText(window, tooltipManager, windowRenderer, name, x, y, w, h, activeImage, inactiveImage, font, inactiveColor, activeColor, margin, "", commands, false));
+        skin.insertGuiElement(new GUICommandText(guiManager, tooltipManager, windowRenderer, name, x, y, w, h, activeImage, inactiveImage, font, inactiveColor, activeColor, margin, "", commands, false));
     }
 
     /**
@@ -1875,13 +1875,13 @@ public class JXCSkinLoader
     /**
      * Parses a "query_text" command.
      * @param args the command arguments
-     * @param window the window to use
+     * @param guiManager the gui manager to use
      * @param tooltipManager the tooltip manager to update
      * @param windowRenderer the window renderer to notify
      * @throws IOException if the command cannot be parsed
      * @throws JXCSkinException if the command cannot be parsed
      */
-    private void parseQueryText(final String[] args, final JXCWindow window, final TooltipManager tooltipManager, final JXCWindowRenderer windowRenderer) throws IOException, JXCSkinException
+    private void parseQueryText(final String[] args, final GuiManager guiManager, final TooltipManager tooltipManager, final JXCWindowRenderer windowRenderer) throws IOException, JXCSkinException
     {
         if (args.length != 12)
         {
@@ -1899,7 +1899,7 @@ public class JXCSkinLoader
         final Color inactiveColor = ParseUtils.parseColor(args[9]);
         final Color activeColor = ParseUtils.parseColor(args[10]);
         final int margin = expressionParser.parseInt(args[11]);
-        skin.insertGuiElement(new GUIQueryText(window, tooltipManager, windowRenderer, name, x, y, w, h, activeImage, inactiveImage, font, inactiveColor, activeColor, margin, "", false));
+        skin.insertGuiElement(new GUIQueryText(guiManager, tooltipManager, windowRenderer, name, x, y, w, h, activeImage, inactiveImage, font, inactiveColor, activeColor, margin, "", false));
     }
 
     /**
@@ -2042,13 +2042,13 @@ public class JXCSkinLoader
     /**
      * Parses a "text" command.
      * @param args the command arguments
-     * @param window the window to use
+     * @param guiManager the gui manager to use
      * @param tooltipManager the tooltip manager to update
      * @param windowRenderer the window renderer to notify
      * @throws IOException if the command cannot be parsed
      * @throws JXCSkinException if the command cannot be parsed
      */
-    private void parseText(final String[] args, final JXCWindow window, final TooltipManager tooltipManager, final JXCWindowRenderer windowRenderer) throws IOException, JXCSkinException
+    private void parseText(final String[] args, final GuiManager guiManager, final TooltipManager tooltipManager, final JXCWindowRenderer windowRenderer) throws IOException, JXCSkinException
     {
         if (args.length != 14)
         {
@@ -2068,7 +2068,7 @@ public class JXCSkinLoader
         final int margin = expressionParser.parseInt(args[11]);
         final GUICommandList commandList = skin.getCommandList(args[12]);
         final boolean ignoreUpDown = NumberParser.parseBoolean(args[13]);
-        skin.insertGuiElement(new GUITextField(window, tooltipManager, windowRenderer, name, x, y, w, h, activeImage, inactiveImage, font, inactiveColor, activeColor, margin, "", commandList, ignoreUpDown));
+        skin.insertGuiElement(new GUITextField(guiManager, tooltipManager, windowRenderer, name, x, y, w, h, activeImage, inactiveImage, font, inactiveColor, activeColor, margin, "", commandList, ignoreUpDown));
     }
 
     /**
