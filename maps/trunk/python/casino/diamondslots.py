@@ -65,7 +65,7 @@ if (object) and not object.Unpaid:
                 pay = slotmajor[slotlist.index(item)]
              else:
                 break
-             payoff = pot*pay
+             payoff = int(pot*pay)
              Slots.payoff(payoff)
              id = Crossfire.CreateObjectByName(cointype)
              id.Quantity = payoff

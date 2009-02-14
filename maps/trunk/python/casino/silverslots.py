@@ -62,7 +62,7 @@ if (activator.PayAmount(cost)):#silvercoin
             pay = slotmajor[slotlist.index(item)]
          else:
             break
-         payoff = pot*pay
+         payoff = int(pot*pay)
          Slots.payoff(payoff)
          id = Crossfire.CreateObjectByName(cointype)
          id.Quantity = payoff
