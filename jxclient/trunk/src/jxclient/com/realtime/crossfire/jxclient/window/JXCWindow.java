@@ -427,7 +427,7 @@ public class JXCWindow extends JFrame
             synchronized (semaphoreDrawing)
             {
                 setStatus(Status.QUERY);
-                guiManager.openQueryDialog(prompt, queryType, connection);
+                guiManager.openQueryDialog(prompt, queryType);
             }
         }
     };
@@ -493,6 +493,7 @@ public class JXCWindow extends JFrame
         addWindowFocusListener(windowFocusListener);
         addWindowListener(windowListener);
         connection = new JXCConnection(keybindingsManager, settings, this, characterPickup, server);
+        guiManager.setConnection(connection);
     }
 
     public static boolean checkFire()
@@ -819,7 +820,7 @@ public class JXCWindow extends JFrame
      */
     public void updatePlayerName(final String playerName)
     {
-        guiManager.updatePlayerName(playerName, connection);
+        guiManager.updatePlayerName(playerName);
     }
 
     /**
