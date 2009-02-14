@@ -475,7 +475,7 @@ public abstract class GUIElement extends JPanel
                 render();
             }
 
-            g.drawImage(bufferedImage, getElementX(), getElementY(), window);
+            g.drawImage(bufferedImage, getElementX(), getElementY(), null);
         }
     }
 
