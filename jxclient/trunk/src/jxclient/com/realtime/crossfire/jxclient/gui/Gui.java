@@ -48,14 +48,9 @@ import java.util.concurrent.CopyOnWriteArrayList;
 public class Gui
 {
     /**
-     * The mouse tracker instance.
+     * The mouse tracker if in GUI debug mode or <code>null</code> otherwise.
      */
     private final MouseTracker mouseTracker;
-
-    /**
-     * Whether the GUI should be drawn in debug mode.
-     */
-    private final boolean debugGui;
 
     /**
      * The list of {@link GUIElement}s comprising this gui.
@@ -132,15 +127,14 @@ public class Gui
 
     /**
      * Creates a new instance.
-     * @param mouseTracker the mouse tracker instance
+     * @param mouseTracker the mouse tracker when in debug GUI mode or
+     * <code>null</code> otherwise
      * @param commands the commands instance for executing commands
      * @param guiManager the gui manager to use
-     * @param debugGui whether the GUI should be drawn in debug mode
      */
-    public Gui(final MouseTracker mouseTracker, final Commands commands, final GuiManager guiManager, final boolean debugGui)
+    public Gui(final MouseTracker mouseTracker, final Commands commands, final GuiManager guiManager)
     {
         this.mouseTracker = mouseTracker;
-        this.debugGui = debugGui;
         keyBindings = new KeyBindings(null, commands, guiManager);
     }
 
@@ -234,7 +228,7 @@ public class Gui
      */
     public void redraw(final Graphics g)
     {
-        if (debugGui)
+        if (mouseTracker != null)
         {
             final GUIElement mouseElement = mouseTracker.getMouseElement();
             final long t0 = System.currentTimeMillis();

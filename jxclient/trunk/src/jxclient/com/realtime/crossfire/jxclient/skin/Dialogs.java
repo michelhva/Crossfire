@@ -82,7 +82,8 @@ public class Dialogs implements Iterable<Gui>
     /**
      * Creates a new dialog instance.
      * @param name the dialog's name
-     * @param mouseTracker the mouse tracker to attach
+     * @param mouseTracker the mouse tracker when in debug GUI mode or
+     * <code>null</code> otherwise
      * @param commands the commands instance to use
      * @param guiManager the gui manager to use
      * @return the new dialog instance
@@ -95,7 +96,7 @@ public class Dialogs implements Iterable<Gui>
         }
         catch (final JXCSkinException ex)
         {
-            final Gui gui = new Gui(mouseTracker, commands, guiManager, debugGui);
+            final Gui gui = new Gui(debugGui ? mouseTracker : null, commands, guiManager);
             try
             {
                 dialogs.insert(name, gui);
