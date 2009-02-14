@@ -9,7 +9,7 @@
     <target name="compile" depends="init">
         <delete dir="${build}/jxclient"/>
         <mkdir dir="${build}/jxclient"/>
-        <javac srcdir="${src.jxclient}" destdir="${build}/jxclient" source="1.5" debug="yes" fork="yes">
+        <javac srcdir="${src.jxclient}" destdir="${build}/jxclient" source="1.6" debug="yes" fork="yes">
             <classpath>
                 <pathelement location="lib/junit-4.2.jar"/>
             </classpath>
