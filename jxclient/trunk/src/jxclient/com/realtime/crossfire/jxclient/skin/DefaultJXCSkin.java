@@ -24,6 +24,7 @@ import com.realtime.crossfire.jxclient.experience.ExperienceTable;
 import com.realtime.crossfire.jxclient.gui.GUIElement;
 import com.realtime.crossfire.jxclient.gui.GUIHTMLLabel;
 import com.realtime.crossfire.jxclient.gui.Gui;
+import com.realtime.crossfire.jxclient.gui.GuiFactory;
 import com.realtime.crossfire.jxclient.gui.gauge.GaugeUpdater;
 import com.realtime.crossfire.jxclient.gui.keybindings.KeyBindings;
 import com.realtime.crossfire.jxclient.items.ItemsManager;
@@ -33,12 +34,11 @@ import com.realtime.crossfire.jxclient.settings.options.CommandCheckBoxOption;
 import com.realtime.crossfire.jxclient.settings.options.OptionException;
 import com.realtime.crossfire.jxclient.settings.options.OptionManager;
 import com.realtime.crossfire.jxclient.skills.SkillSet;
+import com.realtime.crossfire.jxclient.skin.events.SkinEvent;
 import com.realtime.crossfire.jxclient.stats.Stats;
 import com.realtime.crossfire.jxclient.window.GUICommandList;
 import com.realtime.crossfire.jxclient.window.GuiManager;
 import com.realtime.crossfire.jxclient.window.JXCWindow;
-import com.realtime.crossfire.jxclient.window.MouseTracker;
-import com.realtime.crossfire.jxclient.skin.events.SkinEvent;
 import java.io.IOException;
 import java.io.LineNumberReader;
 import java.util.ArrayList;
@@ -165,16 +165,16 @@ public class DefaultJXCSkin implements JXCSkin
      * @param skillSet the skill set for looking up skill names
      * @param expressionParser the expression parser to use
      * @param selectedResolution the resolution to use
-     * @param debugGui whether gui debugging is active
+     * @param guiFactory the gui factory to use
      */
-    public DefaultJXCSkin(final KeyBindings defaultKeyBindings, final OptionManager optionManager, final Stats stats, final ItemsManager itemsManager, final ExperienceTable experienceTable, final SkillSet skillSet, final ExpressionParser expressionParser, final Resolution selectedResolution, final boolean debugGui)
+    public DefaultJXCSkin(final KeyBindings defaultKeyBindings, final OptionManager optionManager, final Stats stats, final ItemsManager itemsManager, final ExperienceTable experienceTable, final SkillSet skillSet, final ExpressionParser expressionParser, final Resolution selectedResolution, final GuiFactory guiFactory)
     {
         this.defaultKeyBindings = defaultKeyBindings;
         this.optionManager = optionManager;
         this.experienceTable = experienceTable;
         this.selectedResolution = selectedResolution;
         gaugeUpdaterParser = new GaugeUpdaterParser(stats, itemsManager, skillSet);
-        dialogs = new Dialogs(debugGui);
+        dialogs = new Dialogs(guiFactory);
         commandParser = newCommandParser(itemsManager, expressionParser);
     }
 
@@ -386,7 +386,6 @@ public class DefaultJXCSkin implements JXCSkin
      * @param element the target element
      * @param command the command to parse the arguments of
      * @param window the window instance
-     * @param mouseTracker the mouse tracker instance
      * @param commands the commands instance for executing commands
      * @param lnr the source to read more parameters from
      * @param commandQueue the command queue for executing commands
@@ -395,10 +394,10 @@ public class DefaultJXCSkin implements JXCSkin
      * @throws IOException if a syntax error occurs
      * @throws JXCSkinException if an element cannot be found
      */
-    public void addCommand(final String listName, final String[] args, final int argc, final GUIElement element, final String command, final JXCWindow window, final MouseTracker mouseTracker, final Commands commands, final LineNumberReader lnr, final CommandQueue commandQueue, final CrossfireServerConnection crossfireServerConnection, final GuiManager guiManager ) throws IOException, JXCSkinException
+    public void addCommand(final String listName, final String[] args, final int argc, final GUIElement element, final String command, final JXCWindow window, final Commands commands, final LineNumberReader lnr, final CommandQueue commandQueue, final CrossfireServerConnection crossfireServerConnection, final GuiManager guiManager ) throws IOException, JXCSkinException
     {
         final GUICommandList commandList = getCommandList(listName);
-        commandList.add(commandParser.parseCommandArgs(args, argc, element, command, window, mouseTracker, commands, lnr, commandQueue, crossfireServerConnection, guiManager));
+        commandList.add(commandParser.parseCommandArgs(args, argc, element, command, window, commands, lnr, commandQueue, crossfireServerConnection, guiManager));
     }
 
     /** {@inheritDoc} */
@@ -493,9 +492,9 @@ public class DefaultJXCSkin implements JXCSkin
         return selectedResolution;
     }
 
-    public void addDialog(final String dialogName, final MouseTracker mouseTracker, final Commands commands, final GuiManager guiManager)
+    public void addDialog(final String dialogName)
     {
-        dialogs.addDialog(dialogName, mouseTracker, commands, guiManager);
+        dialogs.addDialog(dialogName);
     }
 
     public String getDialogToLoad()
