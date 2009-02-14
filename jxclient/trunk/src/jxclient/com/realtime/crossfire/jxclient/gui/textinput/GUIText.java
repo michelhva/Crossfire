@@ -57,6 +57,11 @@ public abstract class GUIText extends ActivatableGUIElement implements KeyListen
     private static final int SCROLL_CHARS = 8;
 
     /**
+     * The associated {@link JXCWindow}.
+     */
+    private final JXCWindow window;
+
+    /**
      * The command history for this text field.
      */
     private final CommandHistory commandHistory;
@@ -121,6 +126,7 @@ public abstract class GUIText extends ActivatableGUIElement implements KeyListen
     {
         super(window, name, x, y, w, h, Transparency.TRANSLUCENT);
         if (2*margin >= w) throw new IllegalArgumentException("margin is too large");
+        this.window = window;
         commandHistory = new CommandHistory(name);
         this.activeImage = activeImage;
         this.inactiveImage = inactiveImage;
@@ -363,7 +369,7 @@ public abstract class GUIText extends ActivatableGUIElement implements KeyListen
         case '\r':
         case '\n':
             final String command = text.toString();
-            getWindow().updatePlayerName(command);
+            window.updatePlayerName(command);
             execute((JXCWindow)e.getSource(), command);
             if (!hideInput)
             {
