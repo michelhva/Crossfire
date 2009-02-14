@@ -19,7 +19,6 @@
 //
 package com.realtime.crossfire.jxclient.window;
 
-import com.realtime.crossfire.jxclient.commands.Commands;
 import com.realtime.crossfire.jxclient.gui.AbstractLabel;
 import com.realtime.crossfire.jxclient.gui.ActivatableGUIElement;
 import com.realtime.crossfire.jxclient.gui.Gui;
@@ -48,18 +47,11 @@ public class JXCWindowRenderer
 
     private final MouseTracker mouseTracker;
 
-    private Commands commands = null;
-
     /**
      * The semaphore used to synchronized map model updates and map view
      * redraws.
      */
     private final Object redrawSemaphore;
-
-    /**
-     * Whether the GUI should be drawn in debug mode.
-     */
-    private final boolean debugGui;
 
     private BufferStrategy bufferStrategy = null;
 
@@ -151,19 +143,16 @@ public class JXCWindowRenderer
      * @param mouseTracker the mouse tracker instance
      * @param redrawSemaphore the semaphore used to synchronized map model
      * updates and map view redraws
-     * @param debugGui whether the GUI should be drawn in debug mode
      */
-    public JXCWindowRenderer(final JXCWindow window, final MouseTracker mouseTracker, final Object redrawSemaphore, final boolean debugGui)
+    public JXCWindowRenderer(final JXCWindow window, final MouseTracker mouseTracker, final Object redrawSemaphore)
     {
         this.window = window;
         this.mouseTracker = mouseTracker;
         this.redrawSemaphore = redrawSemaphore;
-        this.debugGui = debugGui;
     }
 
-    public void init(final Commands commands, final Gui gui)
+    public void init(final Gui gui)
     {
-        this.commands = commands;
         currentGui = gui;
     }
 
