@@ -788,7 +788,7 @@ public class JXCWindow extends JFrame
             skinSource = new JXCSkinClassSource("com/realtime/crossfire/jxclient/skins/"+skinName);
         }
         final JXCSkinLoader newSkin = new JXCSkinLoader(itemsManager, spellsManager, facesManager, stats, mapUpdater, defaultKeyBindings, optionManager, experienceTable, skillSet);
-        return newSkin.load(skinSource, server, this, guiManager.mouseTracker, metaserverModel, commandQueue, resolution, shortcuts, guiManager.getCommands(), currentSpellManager, guiManager, debugGui);
+        return newSkin.load(skinSource, server, this, guiManager.getTooltipManager(), guiManager.getWindowRenderer(), guiManager.mouseTracker, metaserverModel, commandQueue, resolution, shortcuts, guiManager.getCommands(), currentSpellManager, guiManager, debugGui);
     }
 
     /**

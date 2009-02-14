@@ -20,8 +20,9 @@
 package com.realtime.crossfire.jxclient.skin;
 
 import com.realtime.crossfire.jxclient.gui.GUITextButton;
+import com.realtime.crossfire.jxclient.gui.TooltipManager;
 import com.realtime.crossfire.jxclient.window.GUICommandList;
-import com.realtime.crossfire.jxclient.window.JXCWindow;
+import com.realtime.crossfire.jxclient.window.JXCWindowRenderer;
 import java.awt.Color;
 import java.awt.Font;
 
@@ -79,7 +80,9 @@ public class TextButtonFactory
     /**
      * Create a new text button.
      *
-     * @param window The <code>JXCWindow</code> this element belongs to.
+     * @param tooltipManager the tooltip manager to update
+     *
+     * @param windowRenderer the window renderer to notify
      *
      * @param name The name of this element.
      *
@@ -102,8 +105,8 @@ public class TextButtonFactory
      *
      * @return the new text button
      */
-    public GUITextButton newTextButton(final JXCWindow window, final String name, final int x, final int y, final int w, final int h, final String text, final boolean autoRepeat, final GUICommandList commandList)
+    public GUITextButton newTextButton(final TooltipManager tooltipManager, final JXCWindowRenderer windowRenderer, final String name, final int x, final int y, final int w, final int h, final String text, final boolean autoRepeat, final GUICommandList commandList)
     {
-        return new GUITextButton(window, name, x, y, w, h, up, down, text, font, color, autoRepeat, commandList);
+        return new GUITextButton(tooltipManager, windowRenderer, name, x, y, w, h, up, down, text, font, color, autoRepeat, commandList);
     }
 }

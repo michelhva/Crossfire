@@ -23,7 +23,7 @@ import com.realtime.crossfire.jxclient.faces.FacesManager;
 import com.realtime.crossfire.jxclient.spells.CurrentSpellManager;
 import com.realtime.crossfire.jxclient.spells.Spell;
 import com.realtime.crossfire.jxclient.spells.SpellListener;
-import com.realtime.crossfire.jxclient.window.JXCWindow;
+import com.realtime.crossfire.jxclient.window.JXCWindowRenderer;
 import java.awt.Color;
 import java.awt.Font;
 import java.awt.image.BufferedImage;
@@ -144,7 +144,9 @@ public class GUISpellLabel extends GUIHTMLLabel
     /**
      * Create a new instance.
      *
-     * @param window The window this gui element is part of.
+     * @param tooltipManager the tooltip manager to update
+     *
+     * @param windowRenderer the window renderer to notify
      *
      * @param name The gui element name.
      *
@@ -167,9 +169,9 @@ public class GUISpellLabel extends GUIHTMLLabel
      *
      * @param currentSpellManager The current spell manager to track.
      */
-    public GUISpellLabel(final JXCWindow window, final String name, final int x, final int y, final int w, final int h, final BufferedImage picture, final FacesManager facesManager, final Font font, final Type type, final CurrentSpellManager currentSpellManager)
+    public GUISpellLabel(final TooltipManager tooltipManager, final JXCWindowRenderer windowRenderer, final String name, final int x, final int y, final int w, final int h, final BufferedImage picture, final FacesManager facesManager, final Font font, final Type type, final CurrentSpellManager currentSpellManager)
     {
-        super(window, name, x, y, w, h, picture, font, Color.WHITE, new Color(0, 0, 0, 0F), "");
+        super(tooltipManager, windowRenderer, name, x, y, w, h, picture, font, Color.WHITE, new Color(0, 0, 0, 0F), "");
         this.facesManager = facesManager;
         this.type = type;
         this.currentSpellManager = currentSpellManager;

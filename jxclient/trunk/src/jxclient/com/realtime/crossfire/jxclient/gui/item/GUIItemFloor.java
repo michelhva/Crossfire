@@ -22,6 +22,7 @@ package com.realtime.crossfire.jxclient.gui.item;
 
 import com.realtime.crossfire.jxclient.faces.FacesManager;
 import com.realtime.crossfire.jxclient.gui.GUIElement;
+import com.realtime.crossfire.jxclient.gui.TooltipManager;
 import com.realtime.crossfire.jxclient.items.CfItem;
 import com.realtime.crossfire.jxclient.items.CurrentFloorListener;
 import com.realtime.crossfire.jxclient.items.ItemsManager;
@@ -29,6 +30,7 @@ import com.realtime.crossfire.jxclient.items.LocationListener;
 import com.realtime.crossfire.jxclient.server.CommandQueue;
 import com.realtime.crossfire.jxclient.server.CrossfireServerConnection;
 import com.realtime.crossfire.jxclient.window.JXCWindow;
+import com.realtime.crossfire.jxclient.window.JXCWindowRenderer;
 import java.awt.Image;
 import java.util.List;
 
@@ -120,7 +122,8 @@ public class GUIItemFloor extends GUIItemItem
 
     /**
      * Creates a new instance.
-     * @param window the window instance this element belongs to
+     * @param tooltipManager the tooltip manager to update
+     * @param windowRenderer the window renderer to notify
      * @param commandQueue the command queue for sending commands
      * @param name the name of this element
      * @param x the x-coordinate for drawing this element to screen; it is
@@ -135,9 +138,9 @@ public class GUIItemFloor extends GUIItemItem
      * @param itemsManager the items manager instance to use
      * @param facesManager the faces manager instance to use
      */
-    public GUIItemFloor(final JXCWindow window, final CommandQueue commandQueue, final String name, final int x, final int y, final int w, final int h, final ItemPainter itemPainter, final int index, final CrossfireServerConnection crossfireServerConnection, final ItemsManager itemsManager, final FacesManager facesManager)
+    public GUIItemFloor(final TooltipManager tooltipManager, final JXCWindowRenderer windowRenderer, final CommandQueue commandQueue, final String name, final int x, final int y, final int w, final int h, final ItemPainter itemPainter, final int index, final CrossfireServerConnection crossfireServerConnection, final ItemsManager itemsManager, final FacesManager facesManager)
     {
-        super(window, name, x, y, w, h, crossfireServerConnection, itemPainter, facesManager);
+        super(tooltipManager, windowRenderer, name, x, y, w, h, crossfireServerConnection, itemPainter, facesManager);
         this.commandQueue = commandQueue;
         this.crossfireServerConnection = crossfireServerConnection;
         this.itemsManager = itemsManager;

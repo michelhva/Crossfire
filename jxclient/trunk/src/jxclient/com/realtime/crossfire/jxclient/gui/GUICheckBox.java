@@ -21,7 +21,7 @@ package com.realtime.crossfire.jxclient.gui;
 
 import com.realtime.crossfire.jxclient.settings.options.CheckBoxOption;
 import com.realtime.crossfire.jxclient.settings.options.OptionListener;
-import com.realtime.crossfire.jxclient.window.JXCWindow;
+import com.realtime.crossfire.jxclient.window.JXCWindowRenderer;
 import java.awt.Color;
 import java.awt.Font;
 import java.awt.Graphics;
@@ -89,7 +89,9 @@ public class GUICheckBox extends ActivatableGUIElement
     /**
      * Create a new instance.
      *
-     * @param window The <code>JXCWindow</code> this element belongs to.
+     * @param tooltipManager the tooltip manager to update
+     *
+     * @param windowRenderer the window renderer to notify
      *
      * @param name The name of this element.
      *
@@ -115,9 +117,9 @@ public class GUICheckBox extends ActivatableGUIElement
      *
      * @param text The text to display.
      */
-    public GUICheckBox(final JXCWindow window, final String name, final int x, final int y, final int w, final int h, final BufferedImage checkedImage, final BufferedImage uncheckedImage, final Font font, final Color color, final CheckBoxOption option, final String text)
+    public GUICheckBox(final TooltipManager tooltipManager, final JXCWindowRenderer windowRenderer, final String name, final int x, final int y, final int w, final int h, final BufferedImage checkedImage, final BufferedImage uncheckedImage, final Font font, final Color color, final CheckBoxOption option, final String text)
     {
-        super(window, name, x, y, w, h, Transparency.TRANSLUCENT);
+        super(tooltipManager, windowRenderer, name, x, y, w, h, Transparency.TRANSLUCENT);
         if (checkedImage == null) throw new IllegalArgumentException("missing checked image");
         if (uncheckedImage == null) throw new IllegalArgumentException("missing unchecked image");
         if (checkedImage.getHeight() != h) throw new IllegalArgumentException("'checked' height is "+checkedImage.getHeight()+" but checkbox height is "+h);

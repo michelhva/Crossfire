@@ -21,7 +21,7 @@ package com.realtime.crossfire.jxclient.gui;
 
 import com.realtime.crossfire.jxclient.server.CrossfireQueryListener;
 import com.realtime.crossfire.jxclient.server.CrossfireServerConnection;
-import com.realtime.crossfire.jxclient.window.JXCWindow;
+import com.realtime.crossfire.jxclient.window.JXCWindowRenderer;
 import java.awt.Color;
 import java.awt.Font;
 
@@ -58,7 +58,9 @@ public class GUILabelQuery extends GUIMultiLineLabel
     /**
      * Create a new instance.
      *
-     * @param window The <code>JXCWindow</code> this element belongs to.
+     * @param tooltipManager the tooltip manager to update
+     *
+     * @param windowRenderer the window renderer to notify
      *
      * @param name The name of this element.
      *
@@ -78,9 +80,9 @@ public class GUILabelQuery extends GUIMultiLineLabel
      *
      * @param backgroundColor The background color.
      */
-    public GUILabelQuery(final JXCWindow window, final String name, final int x, final int y, final int w, final int h, final CrossfireServerConnection crossfireServerConnection, final Font font, final Color color, final Color backgroundColor)
+    public GUILabelQuery(final TooltipManager tooltipManager, final JXCWindowRenderer windowRenderer, final String name, final int x, final int y, final int w, final int h, final CrossfireServerConnection crossfireServerConnection, final Font font, final Color color, final Color backgroundColor)
     {
-        super(window, name, x, y, w, h, null, font, color, backgroundColor, Alignment.LEFT, "");
+        super(tooltipManager, windowRenderer, name, x, y, w, h, null, font, color, backgroundColor, Alignment.LEFT, "");
         this.crossfireServerConnection = crossfireServerConnection;
         this.crossfireServerConnection.addCrossfireQueryListener(crossfireQueryListener);
     }

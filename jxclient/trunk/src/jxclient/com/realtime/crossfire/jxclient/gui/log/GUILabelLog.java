@@ -19,7 +19,8 @@
 //
 package com.realtime.crossfire.jxclient.gui.log;
 
-import com.realtime.crossfire.jxclient.window.JXCWindow;
+import com.realtime.crossfire.jxclient.gui.TooltipManager;
+import com.realtime.crossfire.jxclient.window.JXCWindowRenderer;
 import java.awt.Color;
 import java.awt.image.BufferedImage;
 
@@ -48,7 +49,9 @@ public class GUILabelLog extends GUILog
     /**
      * Create a new instance.
      *
-     * @param window The <code>JXCWindow</code> this element belongs to.
+     * @param tooltipManager the tooltip manager to update
+     *
+     * @param windowRenderer the window renderer to notify
      *
      * @param name The name of this element.
      *
@@ -68,9 +71,9 @@ public class GUILabelLog extends GUILog
      * @param defaultColor The default color to use for text message not
      * specifying a color.
      */
-    public GUILabelLog(final JXCWindow window, final String name, final int x, final int y, final int w, final int h, final BufferedImage backgroundImage, final Fonts fonts, final Color defaultColor)
+    public GUILabelLog(final TooltipManager tooltipManager, final JXCWindowRenderer windowRenderer, final String name, final int x, final int y, final int w, final int h, final BufferedImage backgroundImage, final Fonts fonts, final Color defaultColor)
     {
-        super(window, name, x, y, w, h, backgroundImage, fonts);
+        super(tooltipManager, windowRenderer, name, x, y, w, h, backgroundImage, fonts);
         this.defaultColor = defaultColor;
     }
 

@@ -23,7 +23,7 @@ import com.realtime.crossfire.jxclient.metaserver.Metaserver;
 import com.realtime.crossfire.jxclient.metaserver.MetaserverEntry;
 import com.realtime.crossfire.jxclient.metaserver.MetaserverEntryListener;
 import com.realtime.crossfire.jxclient.metaserver.MetaserverModel;
-import com.realtime.crossfire.jxclient.window.JXCWindow;
+import com.realtime.crossfire.jxclient.window.JXCWindowRenderer;
 import java.awt.Color;
 import java.awt.Font;
 import java.awt.Graphics;
@@ -101,7 +101,8 @@ public class GUIMetaElement extends ActivatableGUIElement implements GUIScrollab
 
     /**
      * Creates a new instance.
-     * @param window the <code>JXCWindow</code> this element belongs to
+     * @param tooltipManager the tooltip manager to update
+     * @param windowRenderer the window renderer to notify
      * @param metaserverModel the metaserver model to monitor
      * @param name the name of this element
      * @param w the width for drawing this element to screen
@@ -113,9 +114,9 @@ public class GUIMetaElement extends ActivatableGUIElement implements GUIScrollab
      * @param format the format used to display metaserver instances
      * @param tooltip the format used for displaying tooltips
      */
-    public GUIMetaElement(final JXCWindow window, final MetaserverModel metaserverModel, final String name, final int w, final int h, final BufferedImage tcpImage, final Font font, final int defaultIndex, final String format, final String tooltip)
+    public GUIMetaElement(final TooltipManager tooltipManager, final JXCWindowRenderer windowRenderer, final MetaserverModel metaserverModel, final String name, final int w, final int h, final BufferedImage tcpImage, final Font font, final int defaultIndex, final String format, final String tooltip)
     {
-        super(window, name, 0, 0, w, h, Transparency.TRANSLUCENT);
+        super(tooltipManager, windowRenderer, name, 0, 0, w, h, Transparency.TRANSLUCENT);
         this.metaserverModel = metaserverModel;
         this.tcpImage = tcpImage;
         this.font = font;

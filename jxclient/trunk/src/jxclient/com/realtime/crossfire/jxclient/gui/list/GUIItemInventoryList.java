@@ -22,6 +22,7 @@ package com.realtime.crossfire.jxclient.gui.list;
 import com.realtime.crossfire.jxclient.gui.AbstractLabel;
 import com.realtime.crossfire.jxclient.gui.GUIElement;
 import com.realtime.crossfire.jxclient.gui.GUIElementChangedListener;
+import com.realtime.crossfire.jxclient.gui.TooltipManager;
 import com.realtime.crossfire.jxclient.gui.item.GUIItemInventory;
 import com.realtime.crossfire.jxclient.gui.item.GUIItemInventoryFactory;
 import com.realtime.crossfire.jxclient.gui.item.GUIItemItem;
@@ -30,7 +31,7 @@ import com.realtime.crossfire.jxclient.items.ItemsManager;
 import com.realtime.crossfire.jxclient.items.LocationsListener;
 import com.realtime.crossfire.jxclient.server.CommandQueue;
 import com.realtime.crossfire.jxclient.server.CrossfireServerConnection;
-import com.realtime.crossfire.jxclient.window.JXCWindow;
+import com.realtime.crossfire.jxclient.window.JXCWindowRenderer;
 import java.awt.event.InputEvent;
 import java.util.Collection;
 import java.util.List;
@@ -95,7 +96,8 @@ public class GUIItemInventoryList extends GUIItemList
 
     /**
      * Creates a new instance.
-     * @param window the <code>JXCWindow</code> this element belongs to
+     * @param tooltipManager the tooltip manager to update
+     * @param windowRenderer the window renderer to notify
      * @param name the name of this element
      * @param x the x-coordinate for drawing this element to screen; it is relative
      * to <code>gui</code>
@@ -108,9 +110,9 @@ public class GUIItemInventoryList extends GUIItemList
      * @param itemInventoryFactory the factory for creating item inventory
      * instances
      */
-    public GUIItemInventoryList(final JXCWindow window, final CommandQueue commandQueue, final String name, final int x, final int y, final int w, final int h, final int cellHeight, final CrossfireServerConnection crossfireServerConnection, final ItemsManager itemsManager, final AbstractLabel currentItem, final GUIItemInventoryFactory itemInventoryFactory)
+    public GUIItemInventoryList(final TooltipManager tooltipManager, final JXCWindowRenderer windowRenderer, final CommandQueue commandQueue, final String name, final int x, final int y, final int w, final int h, final int cellHeight, final CrossfireServerConnection crossfireServerConnection, final ItemsManager itemsManager, final AbstractLabel currentItem, final GUIItemInventoryFactory itemInventoryFactory)
     {
-        super(window, name, x, y, w, h, cellHeight, new ItemInventoryCellRenderer(itemInventoryFactory.newTemplateItemInventory(cellHeight)));
+        super(tooltipManager, windowRenderer, name, x, y, w, h, cellHeight, new ItemInventoryCellRenderer(itemInventoryFactory.newTemplateItemInventory(cellHeight)));
         this.itemInventoryFactory = itemInventoryFactory;
         this.commandQueue = commandQueue;
         this.crossfireServerConnection = crossfireServerConnection;

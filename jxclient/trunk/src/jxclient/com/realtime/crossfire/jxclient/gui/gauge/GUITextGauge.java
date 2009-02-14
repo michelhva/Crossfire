@@ -19,7 +19,8 @@
 //
 package com.realtime.crossfire.jxclient.gui.gauge;
 
-import com.realtime.crossfire.jxclient.window.JXCWindow;
+import com.realtime.crossfire.jxclient.gui.TooltipManager;
+import com.realtime.crossfire.jxclient.window.JXCWindowRenderer;
 import java.awt.Color;
 import java.awt.Font;
 import java.awt.Graphics;
@@ -56,7 +57,8 @@ public class GUITextGauge extends GUIGauge
 
     /**
      * Creates a new instance.
-     * @param window the <code>JXCWindow</code> this element belongs to.
+     * @param tooltipManager the tooltip manager to update
+     * @param windowRenderer the window renderer to notify
      * @param name the name of this element
      * @param x the x-coordinate for drawing this element to screen
      * @param y the y-coordinate for drawing this element to screen
@@ -70,9 +72,9 @@ public class GUITextGauge extends GUIGauge
      * @param color the text color
      * @param font the text font
      */
-    public GUITextGauge(final JXCWindow window, final String name, final int x, final int y, final int w, final int h, final BufferedImage pictureFull, final BufferedImage pictureNegative, final BufferedImage pictureEmpty, final Orientation orientation, final String tooltipPrefix, final Color color, final Font font)
+    public GUITextGauge(final TooltipManager tooltipManager, final JXCWindowRenderer windowRenderer, final String name, final int x, final int y, final int w, final int h, final BufferedImage pictureFull, final BufferedImage pictureNegative, final BufferedImage pictureEmpty, final Orientation orientation, final String tooltipPrefix, final Color color, final Font font)
     {
-        super(window, name, x, y, w, h, pictureFull, pictureNegative, pictureEmpty, orientation, tooltipPrefix);
+        super(tooltipManager, windowRenderer, name, x, y, w, h, pictureFull, pictureNegative, pictureEmpty, orientation, tooltipPrefix);
         if (color == null) throw new IllegalArgumentException();
         if (font == null) throw new IllegalArgumentException();
         this.color = color;

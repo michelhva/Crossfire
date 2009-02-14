@@ -20,6 +20,7 @@
 package com.realtime.crossfire.jxclient.gui;
 
 import com.realtime.crossfire.jxclient.window.JXCWindow;
+import com.realtime.crossfire.jxclient.window.JXCWindowRenderer;
 import java.awt.Point;
 import java.awt.event.MouseEvent;
 import java.awt.image.BufferedImage;
@@ -52,6 +53,10 @@ public class GUIDialogTitle extends GUIPicture
      *
      * @param window The <code>JXCWindow</code> this element belongs to.
      *
+     * @param tooltipManager the tooltip manager to update
+     *
+     * @param windowRenderer the window renderer to notify
+     *
      * @param name The name of this element.
      *
      * @param x The x-coordinate for drawing this element to screen; it is
@@ -68,9 +73,9 @@ public class GUIDialogTitle extends GUIPicture
      *
      * @param alpha The transparency value.
      */
-    public GUIDialogTitle(final JXCWindow window, final String name, final int x, final int y, final int w, final int h, final BufferedImage image, final float alpha)
+    public GUIDialogTitle(final JXCWindow window, final TooltipManager tooltipManager, final JXCWindowRenderer windowRenderer, final String name, final int x, final int y, final int w, final int h, final BufferedImage image, final float alpha)
     {
-        super(window, name, x, y, w, h, image, alpha);
+        super(tooltipManager, windowRenderer, name, x, y, w, h, image, alpha);
         this.window = window;
     }
 

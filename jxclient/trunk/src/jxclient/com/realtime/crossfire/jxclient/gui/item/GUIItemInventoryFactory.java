@@ -21,10 +21,11 @@
 package com.realtime.crossfire.jxclient.gui.item;
 
 import com.realtime.crossfire.jxclient.faces.FacesManager;
+import com.realtime.crossfire.jxclient.gui.TooltipManager;
 import com.realtime.crossfire.jxclient.items.ItemsManager;
 import com.realtime.crossfire.jxclient.server.CommandQueue;
 import com.realtime.crossfire.jxclient.server.CrossfireServerConnection;
-import com.realtime.crossfire.jxclient.window.JXCWindow;
+import com.realtime.crossfire.jxclient.window.JXCWindowRenderer;
 
 /**
  * A factory for creating {@link GUIItemInventory} instances.
@@ -32,7 +33,15 @@ import com.realtime.crossfire.jxclient.window.JXCWindow;
  */
 public class GUIItemInventoryFactory
 {
-    private final JXCWindow window;
+    /**
+     * The tooltip manager to update.
+     */
+    private final TooltipManager tooltipManager;
+
+    /**
+     * The window renderer to notify.
+     */
+    private final JXCWindowRenderer windowRenderer;
 
     private final CommandQueue commandQueue;
 
@@ -48,10 +57,13 @@ public class GUIItemInventoryFactory
 
     /**
      * Creates a new instance.
+     * @param tooltipManager the tooltip manager to update
+     * @param windowRenderer the window renderer to notify
      */
-    public GUIItemInventoryFactory(final JXCWindow window, final CommandQueue commandQueue, final String name, final ItemPainter itemPainter, final CrossfireServerConnection crossfireServerConnection, final FacesManager facesManager, final ItemsManager itemsManager)
+    public GUIItemInventoryFactory(final TooltipManager tooltipManager, final JXCWindowRenderer windowRenderer, final CommandQueue commandQueue, final String name, final ItemPainter itemPainter, final CrossfireServerConnection crossfireServerConnection, final FacesManager facesManager, final ItemsManager itemsManager)
     {
-        this.window = window;
+        this.tooltipManager = tooltipManager;
+        this.windowRenderer = windowRenderer;
         this.commandQueue = commandQueue;
         this.name = name;
         this.itemPainter = itemPainter;
@@ -67,7 +79,7 @@ public class GUIItemInventoryFactory
      */
     public GUIItemInventory newItemInventory(final int index)
     {
-        return new GUIItemInventory(window, commandQueue, name+index, 0, 0, 1, 1, itemPainter, index, crossfireServerConnection, facesManager, itemsManager);
+        return new GUIItemInventory(tooltipManager, windowRenderer, commandQueue, name+index, 0, 0, 1, 1, itemPainter, index, crossfireServerConnection, facesManager, itemsManager);
     }
 
     /**
@@ -77,6 +89,6 @@ public class GUIItemInventoryFactory
      */
     public GUIItemInventory newTemplateItemInventory(final int cellHeight)
     {
-        return new GUIItemInventory(window, commandQueue, name+"_template", 0, 0, cellHeight, cellHeight, itemPainter, -1, crossfireServerConnection, facesManager, itemsManager);
+        return new GUIItemInventory(tooltipManager, windowRenderer, commandQueue, name+"_template", 0, 0, cellHeight, cellHeight, itemPainter, -1, crossfireServerConnection, facesManager, itemsManager);
     }
 }
