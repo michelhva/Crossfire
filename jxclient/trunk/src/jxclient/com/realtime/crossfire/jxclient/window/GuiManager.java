@@ -225,7 +225,7 @@ public class GuiManager
         this.tooltipManager = tooltipManager;
         this.settings = settings;
         mouseTracker = new MouseTracker(debugGui);
-        windowRenderer = new JXCWindowRenderer(window, mouseTracker, semaphoreRedraw, debugGui);
+        windowRenderer = new JXCWindowRenderer(window, mouseTracker, semaphoreRedraw);
         mouseTracker.init(windowRenderer);
     }
 
@@ -234,7 +234,7 @@ public class GuiManager
     {
         commands = new Commands(window, windowRenderer, commandQueue, server, scriptManager, optionManager, this);
         guiFactory = new GuiFactory(debugGui ? mouseTracker : null, commands, this);
-        windowRenderer.init(commands, guiFactory.newGui());
+        windowRenderer.init(guiFactory.newGui());
         queryDialog = guiFactory.newGui();
         keybindDialog = guiFactory.newGui();
     }
