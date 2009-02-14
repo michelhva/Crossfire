@@ -40,7 +40,6 @@ import com.realtime.crossfire.jxclient.gui.GUIScrollable2;
 import com.realtime.crossfire.jxclient.gui.GUISpellLabel;
 import com.realtime.crossfire.jxclient.gui.GUITextButton;
 import com.realtime.crossfire.jxclient.gui.Gui;
-import com.realtime.crossfire.jxclient.gui.commands.GUICommand;
 import com.realtime.crossfire.jxclient.gui.gauge.GUIDupGauge;
 import com.realtime.crossfire.jxclient.gui.gauge.GUIDupTextGauge;
 import com.realtime.crossfire.jxclient.gui.gauge.GUIGauge;
@@ -173,11 +172,6 @@ public class JXCSkinLoader
     private ExpressionParser expressionParser;
 
     /**
-     * The {@link CommandParser} for parsing command specifications.
-     */
-    private final CommandParser commandParser;
-
-    /**
      * The {@link ImageParser} for parsing image specifications.
      */
     private ImageParser imageParser;
@@ -218,9 +212,8 @@ public class JXCSkinLoader
         this.mapUpdater = mapUpdater;
         this.optionManager = optionManager;
         this.skillSet = skillSet;
-        skin = new DefaultJXCSkin(defaultKeyBindings, optionManager, stats, itemsManager, experienceTable, skillSet);
+        skin = new DefaultJXCSkin(defaultKeyBindings, optionManager, stats, itemsManager, experienceTable, skillSet, expressionParser);
         expressionParser = new ExpressionParser(skin.getSelectedResolution());
-        commandParser = skin.newCommandParser(itemsManager, expressionParser);
         guiElementParser = new GuiElementParser(skin);
     }
 
@@ -812,13 +805,11 @@ public class JXCSkinLoader
 
         final String commandListName = args[1];
         final GUICommandList.CommandType commandListCommandType = NumberParser.parseEnum(GUICommandList.CommandType.class, args[2], "type");
-        final GUICommandList commandList = new GUICommandList(commandListCommandType);
-        skin.addCommandList(commandListName, commandList);
+        skin.addCommandList(commandListName, commandListCommandType);
         if (args.length >= 5)
         {
             final GUIElement element = args[3].equals("null") ? null : skin.lookupGuiElement(args[3]);
-            final GUICommand command = commandParser.parseCommandArgs(args, 5, element, args[4], window, mouseTracker, commands, lnr, commandQueue, server);
-            commandList.add(command);
+            skin.addCommand(commandListName, args, 5, element, args[4], window, mouseTracker, commands, lnr, commandQueue, server);
         }
     }
 
@@ -841,10 +832,8 @@ public class JXCSkinLoader
             throw new IOException("syntax error");
         }
 
-        final GUICommandList commandList = skin.getCommandList(args[1]);
         final GUIElement element = args[2].equals("null") ? null : skin.lookupGuiElement(args[2]);
-        final GUICommand command = commandParser.parseCommandArgs(args, 4, element, args[3], window, mouseTracker, commands, lnr, commandQueue, server);
-        commandList.add(command);
+        skin.addCommand(args[1], args, 4, element, args[3], window, mouseTracker, commands, lnr, commandQueue, server);
     }
 
     /**

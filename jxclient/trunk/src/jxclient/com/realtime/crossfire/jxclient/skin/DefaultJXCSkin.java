@@ -27,6 +27,8 @@ import com.realtime.crossfire.jxclient.gui.Gui;
 import com.realtime.crossfire.jxclient.gui.gauge.GaugeUpdater;
 import com.realtime.crossfire.jxclient.gui.keybindings.KeyBindings;
 import com.realtime.crossfire.jxclient.items.ItemsManager;
+import com.realtime.crossfire.jxclient.server.CommandQueue;
+import com.realtime.crossfire.jxclient.server.CrossfireServerConnection;
 import com.realtime.crossfire.jxclient.settings.options.CommandCheckBoxOption;
 import com.realtime.crossfire.jxclient.settings.options.OptionException;
 import com.realtime.crossfire.jxclient.settings.options.OptionManager;
@@ -36,6 +38,7 @@ import com.realtime.crossfire.jxclient.window.GUICommandList;
 import com.realtime.crossfire.jxclient.window.JXCWindow;
 import com.realtime.crossfire.jxclient.window.MouseTracker;
 import java.io.IOException;
+import java.io.LineNumberReader;
 import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.Iterator;
@@ -130,6 +133,11 @@ public class DefaultJXCSkin implements JXCSkin
     private final List<GaugeUpdater> gaugeUpdaters = new ArrayList<GaugeUpdater>();
 
     /**
+     * The {@link CommandParser} for parsing command specifications.
+     */
+    private final CommandParser commandParser;
+
+    /**
      * The tooltip label or <code>null</code>.
      */
     private GUIHTMLLabel tooltipLabel = null;
@@ -148,13 +156,15 @@ public class DefaultJXCSkin implements JXCSkin
      * @param itemsManager the items manager instance to use
      * @param experienceTable the experience table to use
      * @param skillSet the skill set for looking up skill names
+     * @param expressionParser the expression parser to use
      */
-    public DefaultJXCSkin(final KeyBindings defaultKeyBindings, final OptionManager optionManager, final Stats stats, final ItemsManager itemsManager, final ExperienceTable experienceTable, final SkillSet skillSet)
+    public DefaultJXCSkin(final KeyBindings defaultKeyBindings, final OptionManager optionManager, final Stats stats, final ItemsManager itemsManager, final ExperienceTable experienceTable, final SkillSet skillSet, final ExpressionParser expressionParser)
     {
         this.defaultKeyBindings = defaultKeyBindings;
         this.optionManager = optionManager;
         this.experienceTable = experienceTable;
         gaugeUpdaterParser = new GaugeUpdaterParser(stats, itemsManager, skillSet);
+        commandParser = newCommandParser(itemsManager, expressionParser);
     }
 
     public void reset()
@@ -352,6 +362,28 @@ public class DefaultJXCSkin implements JXCSkin
         return definedCommandLists.lookup(name);
     }
 
+    /**
+     * Parses and builds command arguments.
+     * @param listName the command list name to add to
+     * @param args the list of arguments
+     * @param argc the start index for parsing
+     * @param element the target element
+     * @param command the command to parse the arguments of
+     * @param window the window instance
+     * @param mouseTracker the mouse tracker instance
+     * @param commands the commands instance for executing commands
+     * @param lnr the source to read more parameters from
+     * @param commandQueue the command queue for executing commands
+     * @param crossfireServerConnection the server connection to use
+     * @throws IOException if a syntax error occurs
+     * @throws JXCSkinException if an element cannot be found
+     */
+    public void addCommand(final String listName, final String[] args, final int argc, final GUIElement element, final String command, final JXCWindow window, final MouseTracker mouseTracker, final Commands commands, final LineNumberReader lnr, final CommandQueue commandQueue, final CrossfireServerConnection crossfireServerConnection) throws IOException, JXCSkinException
+    {
+        final GUICommandList commandList = getCommandList(listName);
+        commandList.add(commandParser.parseCommandArgs(args, argc, element, command, window, mouseTracker, commands, lnr, commandQueue, crossfireServerConnection));
+    }
+
     /** {@inheritDoc} */
     @Override
     public boolean hasChangedDialog()
@@ -459,8 +491,9 @@ public class DefaultJXCSkin implements JXCSkin
         return dialogs.getDialogToLoad();
     }
 
-    public void addCommandList(final String commandListName, final GUICommandList commandList) throws JXCSkinException
+    public void addCommandList(final String commandListName, final GUICommandList.CommandType commandListCommandType) throws JXCSkinException
     {
+        final GUICommandList commandList = new GUICommandList(commandListCommandType);
         definedCommandLists.insert(commandListName, commandList);
     }
 
