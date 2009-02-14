@@ -23,6 +23,7 @@ import com.realtime.crossfire.jxclient.commands.Commands;
 import com.realtime.crossfire.jxclient.gui.AbstractLabel;
 import com.realtime.crossfire.jxclient.gui.ActivatableGUIElement;
 import com.realtime.crossfire.jxclient.gui.Gui;
+import com.realtime.crossfire.jxclient.gui.GuiAutoCloseListener;
 import com.realtime.crossfire.jxclient.skin.Resolution;
 import java.awt.Color;
 import java.awt.Dimension;
@@ -115,6 +116,19 @@ public class JXCWindowRenderer
     private GuiState guiState = GuiState.START;
 
     /**
+     * The {@link GuiAutoCloseListener} used to track auto-closing dialogs.
+     */
+    private final GuiAutoCloseListener guiAutoCloseListener = new GuiAutoCloseListener()
+    {
+        /** {@inheritDoc} */
+        @Override
+        public void autoClosed(final Gui gui)
+        {
+            closeDialog(gui);
+        }
+    };
+
+    /**
      * All gui states.
      */
     public enum GuiState
@@ -143,7 +157,7 @@ public class JXCWindowRenderer
     public void init(final Commands commands, final GuiManager guiManager)
     {
         this.commands = commands;
-        currentGui = new Gui(window, mouseTracker, commands, guiManager);
+        currentGui = new Gui(mouseTracker, commands, guiManager);
     }
 
     public void init(final Resolution resolution)
@@ -300,7 +314,7 @@ public class JXCWindowRenderer
 
     public void clearGUI(final GuiManager guiManager)
     {
-        currentGui = new Gui(window, mouseTracker, commands, guiManager);
+        currentGui = new Gui(mouseTracker, commands, guiManager);
         currentGuiChanged = true;
         for (int ig = 0; ig < 3; ig++)
         {
@@ -356,17 +370,19 @@ public class JXCWindowRenderer
      *
      * @param dialog The dialog to show.
      *
+     * @param autoCloseOnDeactivate whether the dialog should auto-close when
+     * it becomes inactive; ignored if the dialog is already open
+     *
      * @return Whether the dialog was opened or raised; <code>false</code> if
      * the dialog already was opened as the topmost dialog.
      */
-    public boolean openDialog(final Gui dialog)
+    public boolean openDialog(final Gui dialog, final boolean autoCloseOnDeactivate)
     {
         if (dialog == currentGui)
         {
             return false;
         }
 
-        dialog.setAutoCloseOnDeactivate(false);
         if (!openDialogs.isEmpty() && openDialogs.get(openDialogs.size()-1) == dialog)
         {
             return false;
@@ -376,6 +392,7 @@ public class JXCWindowRenderer
         if (!openDialogsRemove(dialog))
         {
             dialog.activateDefaultElement();
+            dialog.setGuiAutoCloseListener(autoCloseOnDeactivate ? guiAutoCloseListener : null);
         }
         openDialogsAdd(dialog);
         openDialogsChanged = true;
@@ -581,7 +598,7 @@ public class JXCWindowRenderer
             return false;
         }
 
-        dialog.setAutoCloseOnDeactivate(false);
+        dialog.setGuiAutoCloseListener(null);
         openDialogsAdd(dialog);
         dialog.activateDefaultElement();
         return true;

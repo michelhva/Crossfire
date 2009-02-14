@@ -168,7 +168,7 @@ public class DialogStateParser
 
                             if (open)
                             {
-                                windowRenderer.openDialog(dialog);
+                                windowRenderer.openDialog(dialog, false);
                             }
                             else
                             {

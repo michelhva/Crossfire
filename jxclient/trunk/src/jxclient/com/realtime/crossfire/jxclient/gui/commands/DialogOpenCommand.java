@@ -60,6 +60,6 @@ public class DialogOpenCommand implements GUICommand
     @Override
     public void execute()
     {
-        guiManager.openDialog(dialog);
+        guiManager.openDialog(dialog, false);
     }
 }

@@ -193,7 +193,7 @@ public class GuiManager
                     log.updateText(message);
                 }
             }
-            windowRenderer.openDialog(dialog);
+            windowRenderer.openDialog(dialog, false);
         }
     };
 
@@ -222,8 +222,8 @@ public class GuiManager
     {
         commands = new Commands(window, windowRenderer, commandQueue, server, scriptManager, optionManager, this);
         windowRenderer.init(commands, this);
-        queryDialog = new Gui(window, mouseTracker, commands, this);
-        keybindDialog = new Gui(window, mouseTracker, commands, this);
+        queryDialog = new Gui(mouseTracker, commands, this);
+        keybindDialog = new Gui(mouseTracker, commands, this);
     }
 
     /**
@@ -250,7 +250,7 @@ public class GuiManager
         }
 
         windowRenderer.closeDialog(dialogDisconnect);
-        windowRenderer.openDialog(dialogQuit);
+        windowRenderer.openDialog(dialogQuit, false);
         return true;
     }
 
@@ -277,7 +277,7 @@ public class GuiManager
             {
                 return 1;
             }
-            else if (windowRenderer.openDialog(dialogDisconnect))
+            else if (windowRenderer.openDialog(dialogDisconnect, false))
             {
                 if (dialogQuit != null)
                 {
@@ -295,7 +295,7 @@ public class GuiManager
             {
                 return 2;
             }
-            else if (windowRenderer.openDialog(dialogQuit))
+            else if (windowRenderer.openDialog(dialogQuit, false))
             {
                 if (dialogDisconnect != null)
                 {
@@ -318,7 +318,7 @@ public class GuiManager
      */
     public void openQueryDialog(final String prompt, final int queryType, final JXCConnection connection)
     {
-        windowRenderer.openDialog(queryDialog);
+        windowRenderer.openDialog(queryDialog, false);
         queryDialog.setHideInput((queryType&CrossfireQueryListener.HIDEINPUT) != 0);
         currentQueryDialogIsNamePrompt = prompt.startsWith("What is your name?");
         if (currentQueryDialogIsNamePrompt)
@@ -349,17 +349,19 @@ public class GuiManager
                 openDialogByName("messages");
                 openDialogByName("status");
             }
-            openDialog(queryDialog); // raise dialog
+            openDialog(queryDialog, false); // raise dialog
         }
     }
 
     /**
      * Opens a dialog. Raises the dialog if it is open.
      * @param dialog the dialog to show
+     * @param autoCloseOnDeactivate whether the dialog should auto-close when
+     * it becomes inactive; ignored if the dialog is already open
      */
-    public void openDialog(final Gui dialog)
+    public void openDialog(final Gui dialog, final boolean autoCloseOnDeactivate)
     {
-        windowRenderer.openDialog(dialog);
+        windowRenderer.openDialog(dialog, autoCloseOnDeactivate);
         if (dialog == queryDialog)
         {
             dialog.setHideInput(false);
@@ -413,7 +415,7 @@ public class GuiManager
             return false;
         }
 
-        openDialog(dialog);
+        openDialog(dialog, false);
         return true;
     }
 
@@ -502,7 +504,7 @@ public class GuiManager
      */
     public void openKeybindDialog()
     {
-        windowRenderer.openDialog(keybindDialog);
+        windowRenderer.openDialog(keybindDialog, false);
     }
 
     /**
@@ -608,7 +610,7 @@ public class GuiManager
                 final GUIText textArea2 = dialog.activateCommandInput();
                 if (textArea2 != null)
                 {
-                    openDialog(dialog); // raise dialog
+                    openDialog(dialog, false); // raise dialog
                     return textArea2;
                 }
             }
@@ -624,8 +626,7 @@ public class GuiManager
             final GUIText textArea3 = dialog.activateCommandInput();
             if (textArea3 != null)
             {
-                openDialog(dialog);
-                dialog.setAutoCloseOnDeactivate(true);
+                openDialog(dialog, true);
                 return textArea3;
             }
         }

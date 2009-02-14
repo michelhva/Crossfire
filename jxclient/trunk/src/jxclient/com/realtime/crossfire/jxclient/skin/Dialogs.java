@@ -22,7 +22,6 @@ package com.realtime.crossfire.jxclient.skin;
 import com.realtime.crossfire.jxclient.commands.Commands;
 import com.realtime.crossfire.jxclient.gui.Gui;
 import com.realtime.crossfire.jxclient.window.GuiManager;
-import com.realtime.crossfire.jxclient.window.JXCWindow;
 import com.realtime.crossfire.jxclient.window.MouseTracker;
 import java.util.HashSet;
 import java.util.Iterator;
@@ -69,13 +68,12 @@ public class Dialogs implements Iterable<Gui>
     /**
      * Creates a new dialog instance.
      * @param name the dialog's name
-     * @param window the window to attach to
      * @param mouseTracker the mouse tracker to attach
      * @param commands the commands instance to use
      * @param guiManager the gui manager to use
      * @return the new dialog instance
      */
-    public Gui addDialog(final String name, final JXCWindow window, final MouseTracker mouseTracker, final Commands commands, final GuiManager guiManager)
+    public Gui addDialog(final String name, final MouseTracker mouseTracker, final Commands commands, final GuiManager guiManager)
     {
         try
         {
@@ -83,7 +81,7 @@ public class Dialogs implements Iterable<Gui>
         }
         catch (final JXCSkinException ex)
         {
-            final Gui gui = new Gui(window, mouseTracker, commands, guiManager);
+            final Gui gui = new Gui(mouseTracker, commands, guiManager);
             try
             {
                 dialogs.insert(name, gui);

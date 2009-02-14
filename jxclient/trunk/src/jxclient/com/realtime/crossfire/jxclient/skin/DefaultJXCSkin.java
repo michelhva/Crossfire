@@ -491,9 +491,9 @@ public class DefaultJXCSkin implements JXCSkin
         return selectedResolution;
     }
 
-    public void addDialog(final String dialogName, final JXCWindow window, final MouseTracker mouseTracker, final Commands commands, final GuiManager guiManager)
+    public void addDialog(final String dialogName, final MouseTracker mouseTracker, final Commands commands, final GuiManager guiManager)
     {
-        dialogs.addDialog(dialogName, window, mouseTracker, commands, guiManager);
+        dialogs.addDialog(dialogName, mouseTracker, commands, guiManager);
     }
 
     public String getDialogToLoad()
