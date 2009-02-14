@@ -41,6 +41,7 @@ import com.realtime.crossfire.jxclient.gui.GUISpellLabel;
 import com.realtime.crossfire.jxclient.gui.GUITextButton;
 import com.realtime.crossfire.jxclient.gui.Gui;
 import com.realtime.crossfire.jxclient.gui.GuiFactory;
+import com.realtime.crossfire.jxclient.gui.TooltipManager;
 import com.realtime.crossfire.jxclient.gui.gauge.GUIDupGauge;
 import com.realtime.crossfire.jxclient.gui.gauge.GUIDupTextGauge;
 import com.realtime.crossfire.jxclient.gui.gauge.GUIGauge;
@@ -234,6 +235,8 @@ public class JXCSkinLoader
      * @param skinSource the source to load from
      * @param crossfireServerConnection the server connection to attach to
      * @param window the window to use
+     * @param tooltipManager the tooltip manager to update
+     * @param windowRenderer the window renderer to notify
      * @param mouseTracker the mouse tracker to use
      * @param metaserverModel the metaserver mode to use
      * @param commandQueue the command queue to use
@@ -246,7 +249,7 @@ public class JXCSkinLoader
      * @return the loaded skin
      * @throws JXCSkinException if the skin cannot be loaded
      */
-    public JXCSkin load(final JXCSkinSource skinSource, final CrossfireServerConnection crossfireServerConnection, final JXCWindow window, final MouseTracker mouseTracker, final MetaserverModel metaserverModel, final CommandQueue commandQueue, final Resolution resolution, final Shortcuts shortcuts, final Commands commands, final CurrentSpellManager currentSpellManager, final GuiManager guiManager, final boolean debugGui) throws JXCSkinException
+    public JXCSkin load(final JXCSkinSource skinSource, final CrossfireServerConnection crossfireServerConnection, final JXCWindow window, final TooltipManager tooltipManager, final JXCWindowRenderer windowRenderer, final MouseTracker mouseTracker, final MetaserverModel metaserverModel, final CommandQueue commandQueue, final Resolution resolution, final Shortcuts shortcuts, final Commands commands, final CurrentSpellManager currentSpellManager, final GuiManager guiManager, final boolean debugGui) throws JXCSkinException
     {
         imageParser = new ImageParser(skinSource);
         fontParser = new FontParser(skinSource);
@@ -316,7 +319,7 @@ public class JXCSkinLoader
         checkBoxFactory = null;
         try
         {
-            load(skinSource, "global", crossfireServerConnection, window, metaserverModel, commandQueue, null, shortcuts, commands, currentSpellManager, guiManager);
+            load(skinSource, "global", crossfireServerConnection, window, tooltipManager, windowRenderer, metaserverModel, commandQueue, null, shortcuts, commands, currentSpellManager, guiManager);
             for (;;)
             {
                 final String name = skin.getDialogToLoad();
@@ -325,7 +328,7 @@ public class JXCSkinLoader
                     break;
                 }
                 final Gui gui = skin.getDialog(name);
-                load(skinSource, name, crossfireServerConnection, window, metaserverModel, commandQueue, gui, shortcuts, commands, currentSpellManager, guiManager);
+                load(skinSource, name, crossfireServerConnection, window, tooltipManager, windowRenderer, metaserverModel, commandQueue, gui, shortcuts, commands, currentSpellManager, guiManager);
                 gui.setStateChanged(false);
             }
         }
@@ -352,6 +355,8 @@ public class JXCSkinLoader
      * @param dialogName the key to identify this dialog
      * @param server the server connection to monitor
      * @param window the main window
+     * @param tooltipManager the tooltip manager to update
+     * @param windowRenderer the window renderer to notify
      * @param metaserverModel the metaserver model to use
      * @param commandQueue the command queue for sending commands
      * @param gui the Gui representing the skin file
@@ -361,7 +366,7 @@ public class JXCSkinLoader
      * @param guiManager the gui manager to use
      * @throws JXCSkinException if the file cannot be loaded
      */
-    private void load(final JXCSkinSource skinSource, final String dialogName, final CrossfireServerConnection server, final JXCWindow window, final MetaserverModel metaserverModel, final CommandQueue commandQueue, final Gui gui, final Shortcuts shortcuts, final Commands commands, final CurrentSpellManager currentSpellManager, final GuiManager guiManager) throws JXCSkinException
+    private void load(final JXCSkinSource skinSource, final String dialogName, final CrossfireServerConnection server, final JXCWindow window, final TooltipManager tooltipManager, final JXCWindowRenderer windowRenderer, final MetaserverModel metaserverModel, final CommandQueue commandQueue, final Gui gui, final Shortcuts shortcuts, final Commands commands, final CurrentSpellManager currentSpellManager, final GuiManager guiManager) throws JXCSkinException
     {
         String resourceName = dialogName+"@"+skin.getSelectedResolution()+".skin";
 
@@ -380,7 +385,7 @@ public class JXCSkinLoader
             }
             try
             {
-                load(skinSource, dialogName, resourceName, inputStream, server, window, metaserverModel, commandQueue, gui, shortcuts, commands, currentSpellManager, guiManager);
+                load(skinSource, dialogName, resourceName, inputStream, server, window, tooltipManager, windowRenderer, metaserverModel, commandQueue, gui, shortcuts, commands, currentSpellManager, guiManager);
             }
             finally
             {
@@ -410,6 +415,8 @@ public class JXCSkinLoader
      * @param inputStream the input stream to load from
      * @param server the server connection to monitor
      * @param window the main window
+     * @param tooltipManager the tooltip manager to update
+     * @param windowRenderer the window renderer to notify
      * @param metaserverModel the metaserver model to use
      * @param commandQueue the command queue for sending commands
      * @param gui the Gui representing the skin file
@@ -419,7 +426,7 @@ public class JXCSkinLoader
      * @param guiManager the gui manager to use
      * @throws JXCSkinException if the file cannot be loaded
      */
-    private void load(final JXCSkinSource skinSource, final String dialogName, final String resourceName, final InputStream inputStream, final CrossfireServerConnection server, final JXCWindow window, final MetaserverModel metaserverModel, final CommandQueue commandQueue, final Gui gui, final Shortcuts shortcuts, final Commands commands, final CurrentSpellManager currentSpellManager, final GuiManager guiManager) throws JXCSkinException
+    private void load(final JXCSkinSource skinSource, final String dialogName, final String resourceName, final InputStream inputStream, final CrossfireServerConnection server, final JXCWindow window, final TooltipManager tooltipManager, final JXCWindowRenderer windowRenderer, final MetaserverModel metaserverModel, final CommandQueue commandQueue, final Gui gui, final Shortcuts shortcuts, final Commands commands, final CurrentSpellManager currentSpellManager, final GuiManager guiManager) throws JXCSkinException
     {
         final List<GUIElement> addedElements = new ArrayList<GUIElement>();
         boolean addedElementsContainsWildcard = false;
@@ -465,11 +472,11 @@ public class JXCSkinLoader
                         }
                         else if (gui != null && args[0].equals("button"))
                         {
-                            parseButton(args, window, lnr);
+                            parseButton(args, tooltipManager, windowRenderer, lnr);
                         }
                         else if (gui != null && args[0].equals("checkbox"))
                         {
-                            parseCheckbox(args, window, lnr);
+                            parseCheckbox(args, tooltipManager, windowRenderer, lnr);
                         }
                         else if (args[0].equals("commandlist"))
                         {
@@ -481,7 +488,7 @@ public class JXCSkinLoader
                         }
                         else if (gui != null && args[0].equals("command_text"))
                         {
-                            parseCommandText(args, window, commands);
+                            parseCommandText(args, window, tooltipManager, windowRenderer, commands);
                         }
                         else if (args[0].equals("def"))
                         {
@@ -489,7 +496,7 @@ public class JXCSkinLoader
                         }
                         else if (gui != null && args[0].equals("dialog"))
                         {
-                            parseDialog(args, window, lnr, gui, dialogName);
+                            parseDialog(args, window, tooltipManager, windowRenderer, lnr, gui, dialogName);
                         }
                         else if (gui != null && args[0].equals("dialog_hide"))
                         {
@@ -497,11 +504,11 @@ public class JXCSkinLoader
                         }
                         else if (gui != null && args[0].equals("dupgauge"))
                         {
-                            parseDupGauge(args, window, lnr);
+                            parseDupGauge(args, tooltipManager, windowRenderer, lnr);
                         }
                         else if (gui != null && args[0].equals("duptextgauge"))
                         {
-                            parseDupTextGauge(args, window, lnr);
+                            parseDupTextGauge(args, tooltipManager, windowRenderer, lnr);
                         }
                         else if (args[0].equals("event"))
                         {
@@ -513,7 +520,7 @@ public class JXCSkinLoader
                         }
                         else if (gui != null && args[0].equals("gauge"))
                         {
-                            parseGauge(args, window, lnr);
+                            parseGauge(args, tooltipManager, windowRenderer, lnr);
                         }
                         else if (gui != null && args[0].equals("ignore"))
                         {
@@ -521,11 +528,11 @@ public class JXCSkinLoader
                         }
                         else if (gui != null && args[0].equals("inventory_list"))
                         {
-                            parseInventoryList(args, window, commandQueue, server);
+                            parseInventoryList(args, tooltipManager, windowRenderer, commandQueue, server);
                         }
                         else if (gui != null && args[0].equals("item"))
                         {
-                            parseItem(args, window, commandQueue, server, shortcuts, currentSpellManager);
+                            parseItem(args, tooltipManager, windowRenderer, commandQueue, server, shortcuts, currentSpellManager);
                         }
                         else if (args[0].equals("key"))
                         {
@@ -533,35 +540,35 @@ public class JXCSkinLoader
                         }
                         else if (gui != null && args[0].equals("label_html"))
                         {
-                            parseLabelHtml(args, window, lnr);
+                            parseLabelHtml(args, tooltipManager, windowRenderer, lnr);
                         }
                         else if (gui != null && args[0].equals("label_multi"))
                         {
-                            parseLabelMulti(args, window, lnr);
+                            parseLabelMulti(args, tooltipManager, windowRenderer, lnr);
                         }
                         else if (gui != null && args[0].equals("label_query"))
                         {
-                            parseLabelQuery(args, window, server);
+                            parseLabelQuery(args, tooltipManager, windowRenderer, server);
                         }
                         else if (gui != null && args[0].equals("label_text"))
                         {
-                            parseLabelText(args, window, lnr);
+                            parseLabelText(args, tooltipManager, windowRenderer, lnr);
                         }
                         else if (gui != null && args[0].equals("label_stat"))
                         {
-                            parseLabelStat(args, window);
+                            parseLabelStat(args, tooltipManager, windowRenderer);
                         }
                         else if (gui != null && args[0].equals("label_spell"))
                         {
-                            parseLabelSpell(args, window, currentSpellManager);
+                            parseLabelSpell(args, tooltipManager, windowRenderer, currentSpellManager);
                         }
                         else if (gui != null && args[0].equals("log_label"))
                         {
-                            parseLogLabel(args, window);
+                            parseLogLabel(args, tooltipManager, windowRenderer);
                         }
                         else if (gui != null && args[0].equals("log_message"))
                         {
-                            parseLogMessage(args, window, server);
+                            parseLogMessage(args, tooltipManager, windowRenderer, server);
                         }
                         else if (gui != null && args[0].equals("log_color"))
                         {
@@ -573,23 +580,23 @@ public class JXCSkinLoader
                         }
                         else if (gui != null && args[0].equals("magicmap"))
                         {
-                            parseMagicmap(args, window, server);
+                            parseMagicmap(args, tooltipManager, windowRenderer, server);
                         }
                         else if (gui != null && args[0].equals("map"))
                         {
-                            parseMap(args, window, server);
+                            parseMap(args, tooltipManager, windowRenderer, server);
                         }
                         else if (gui != null && args[0].equals("meta_list"))
                         {
-                            parseMetaList(args, window, metaserverModel);
+                            parseMetaList(args, tooltipManager, windowRenderer, metaserverModel);
                         }
                         else if (gui != null && args[0].equals("picture"))
                         {
-                            parsePicture(args, window);
+                            parsePicture(args, tooltipManager, windowRenderer);
                         }
                         else if (gui != null && args[0].equals("query_text"))
                         {
-                            parseQueryText(args, window);
+                            parseQueryText(args, window, tooltipManager, windowRenderer);
                         }
                         else if (gui != null && args[0].equals("set_forced_active"))
                         {
@@ -613,7 +620,7 @@ public class JXCSkinLoader
                         }
                         else if (gui != null && args[0].equals("scrollbar"))
                         {
-                            parseScrollbar(args, window);
+                            parseScrollbar(args, tooltipManager, windowRenderer);
                         }
                         else if (gui == null && args[0].equals("skin_name"))
                         {
@@ -621,19 +628,19 @@ public class JXCSkinLoader
                         }
                         else if (gui != null && args[0].equals("text"))
                         {
-                            parseText(args, window);
+                            parseText(args, window, tooltipManager, windowRenderer);
                         }
                         else if (gui != null && args[0].equals("textbutton"))
                         {
-                            parseTextButton(args, window, lnr);
+                            parseTextButton(args, tooltipManager, windowRenderer, lnr);
                         }
                         else if (gui != null && args[0].equals("textgauge"))
                         {
-                            parseTextGauge(args, window, lnr);
+                            parseTextGauge(args, tooltipManager, windowRenderer, lnr);
                         }
                         else if (args[0].equals("tooltip"))
                         {
-                            parseTooltip(args, window);
+                            parseTooltip(args, tooltipManager, windowRenderer);
                         }
                         else
                         {
@@ -726,12 +733,13 @@ public class JXCSkinLoader
     /**
      * Parses a "button" command.
      * @param args the command arguments
-     * @param window the window to use
+     * @param tooltipManager the tooltip manager to update
+     * @param windowRenderer the window renderer to notify
      * @param lnr the line number reader for reading more lines
      * @throws IOException if the command cannot be parsed
      * @throws JXCSkinException if the command cannot be parsed
      */
-    private void parseButton(final String[] args, final JXCWindow window, final LineNumberReader lnr) throws IOException, JXCSkinException
+    private void parseButton(final String[] args, final TooltipManager tooltipManager, final JXCWindowRenderer windowRenderer, final LineNumberReader lnr) throws IOException, JXCSkinException
     {
         if (args.length != 10 && args.length < 14)
         {
@@ -769,18 +777,19 @@ public class JXCSkinLoader
             textY = expressionParser.parseInt(args[13]);
             label = ParseUtils.parseText(args, 14, lnr);
         }
-        skin.insertGuiElement(new GUIButton(window, name, x, y, w, h, upImage, downImage, label, font, color, textX, textY, autoRepeat, commandList));
+        skin.insertGuiElement(new GUIButton(tooltipManager, windowRenderer, name, x, y, w, h, upImage, downImage, label, font, color, textX, textY, autoRepeat, commandList));
     }
 
     /**
      * Parses a "checkbox" command.
      * @param args the command arguments
-     * @param window the window to use
+     * @param tooltipManager the tooltip manager to update
+     * @param windowRenderer the window renderer to notify
      * @param lnr the line number reader for reading more lines
      * @throws IOException if the command cannot be parsed
      * @throws JXCSkinException if the command cannot be parsed
      */
-    private void parseCheckbox(final String[] args, final JXCWindow window, final LineNumberReader lnr) throws IOException, JXCSkinException
+    private void parseCheckbox(final String[] args, final TooltipManager tooltipManager, final JXCWindowRenderer windowRenderer, final LineNumberReader lnr) throws IOException, JXCSkinException
     {
         if (args.length < 7)
         {
@@ -799,7 +808,7 @@ public class JXCSkinLoader
         final int h = expressionParser.parseInt(args[5]);
         final CheckBoxOption option = ParseUtils.parseCheckBoxOption(args[6], optionManager);
         final String text = ParseUtils.parseText(args, 7, lnr);
-        skin.insertGuiElement(checkBoxFactory.newCheckBox(window, name, x, y, w, h, option, text));
+        skin.insertGuiElement(checkBoxFactory.newCheckBox(tooltipManager, windowRenderer, name, x, y, w, h, option, text));
     }
 
     /**
@@ -858,11 +867,13 @@ public class JXCSkinLoader
      * Parses a "command_text" command.
      * @param args the command arguments
      * @param window the window to use
+     * @param tooltipManager the tooltip manager to update
+     * @param windowRenderer the window renderer to notify
      * @param commands the commands to use
      * @throws IOException if the command cannot be parsed
      * @throws JXCSkinException if the command cannot be parsed
      */
-    private void parseCommandText(final String[] args, final JXCWindow window, final Commands commands) throws IOException, JXCSkinException
+    private void parseCommandText(final String[] args, final JXCWindow window, final TooltipManager tooltipManager, final JXCWindowRenderer windowRenderer, final Commands commands) throws IOException, JXCSkinException
     {
         if (args.length != 12)
         {
@@ -880,7 +891,7 @@ public class JXCSkinLoader
         final Color inactiveColor = ParseUtils.parseColor(args[9]);
         final Color activeColor = ParseUtils.parseColor(args[10]);
         final int margin = expressionParser.parseInt(args[11]);
-        skin.insertGuiElement(new GUICommandText(window, name, x, y, w, h, activeImage, inactiveImage, font, inactiveColor, activeColor, margin, "", commands, false));
+        skin.insertGuiElement(new GUICommandText(window, tooltipManager, windowRenderer, name, x, y, w, h, activeImage, inactiveImage, font, inactiveColor, activeColor, margin, "", commands, false));
     }
 
     /**
@@ -972,13 +983,15 @@ public class JXCSkinLoader
      * Parses a "dialog" command.
      * @param args the command arguments
      * @param window the window to use
+     * @param tooltipManager the tooltip manager to update
+     * @param windowRenderer the window renderer to notify
      * @param lnr the line number reader for reading more lines
      * @param gui the gui instance to add to
      * @param dialogName the dialog name
      * @throws IOException if the command cannot be parsed
      * @throws JXCSkinException if the command cannot be parsed
      */
-    private void parseDialog(final String[] args, final JXCWindow window, final LineNumberReader lnr, final Gui gui, final String dialogName) throws IOException, JXCSkinException
+    private void parseDialog(final String[] args, final JXCWindow window, final TooltipManager tooltipManager, final JXCWindowRenderer windowRenderer, final LineNumberReader lnr, final Gui gui, final String dialogName) throws IOException, JXCSkinException
     {
         if (args.length < 7)
         {
@@ -997,7 +1010,7 @@ public class JXCSkinLoader
         final int h = expressionParser.parseInt(args[5]);
         final boolean saveDialog = NumberParser.parseBoolean(args[6]);
         final String title = ParseUtils.parseText(args, 7, lnr);
-        for (final GUIElement element : dialogFactory.newDialog(window, name, w, h, title))
+        for (final GUIElement element : dialogFactory.newDialog(window, tooltipManager, windowRenderer, name, w, h, title))
         {
             skin.insertGuiElement(element);
         }
@@ -1031,12 +1044,13 @@ public class JXCSkinLoader
     /**
      * Parses a "dupgauge" command.
      * @param args the command arguments
-     * @param window the window to use
+     * @param tooltipManager the tooltip manager to update
+     * @param windowRenderer the window renderer to notify
      * @param lnr the line number reader for reading more lines
      * @throws IOException if the command cannot be parsed
      * @throws JXCSkinException if the command cannot be parsed
      */
-    private void parseDupGauge(final String[] args, final JXCWindow window, final LineNumberReader lnr) throws IOException, JXCSkinException
+    private void parseDupGauge(final String[] args, final TooltipManager tooltipManager, final JXCWindowRenderer windowRenderer, final LineNumberReader lnr) throws IOException, JXCSkinException
     {
         if (args.length < 12)
         {
@@ -1055,7 +1069,7 @@ public class JXCSkinLoader
         final Orientation orientationDiv = ParseUtils.parseOrientation(args[10]);
         final Orientation orientationMod = ParseUtils.parseOrientation(args[11]);
         final String tooltipPrefix = ParseUtils.parseText(args, 12, lnr);
-        final GUIDupGauge element = new GUIDupGauge(window, name, x, y, w, h, positiveDivImage, positiveModImage, emptyImage, orientationDiv, orientationMod, tooltipPrefix.length() > 0 ? tooltipPrefix : null);
+        final GUIDupGauge element = new GUIDupGauge(tooltipManager, windowRenderer, name, x, y, w, h, positiveDivImage, positiveModImage, emptyImage, orientationDiv, orientationMod, tooltipPrefix.length() > 0 ? tooltipPrefix : null);
         skin.insertGuiElement(element);
         gaugeUpdater.setGauge(element);
     }
@@ -1063,12 +1077,13 @@ public class JXCSkinLoader
     /**
      * Parses a "duptextgauge" command.
      * @param args the command arguments
-     * @param window the window to use
+     * @param tooltipManager the tooltip manager to update
+     * @param windowRenderer the window renderer to notify
      * @param lnr the line number reader for reading more lines
      * @throws IOException if the command cannot be parsed
      * @throws JXCSkinException if the command cannot be parsed
      */
-    private void parseDupTextGauge(final String[] args, final JXCWindow window, final LineNumberReader lnr) throws IOException, JXCSkinException
+    private void parseDupTextGauge(final String[] args, final TooltipManager tooltipManager, final JXCWindowRenderer windowRenderer, final LineNumberReader lnr) throws IOException, JXCSkinException
     {
         if (args.length < 14)
         {
@@ -1089,7 +1104,7 @@ public class JXCSkinLoader
         final Color color = ParseUtils.parseColor(args[12]);
         final Font font = definedFonts.lookup(args[13]);
         final String tooltipPrefix = ParseUtils.parseText(args, 14, lnr);
-        final GUIDupTextGauge element = new GUIDupTextGauge(window, name, x, y, w, h, positiveDivImage, positiveModImage, emptyImage, orientationDiv, orientationMod, tooltipPrefix.length() > 0 ? tooltipPrefix : null, color, font);
+        final GUIDupTextGauge element = new GUIDupTextGauge(tooltipManager, windowRenderer, name, x, y, w, h, positiveDivImage, positiveModImage, emptyImage, orientationDiv, orientationMod, tooltipPrefix.length() > 0 ? tooltipPrefix : null, color, font);
         skin.insertGuiElement(element);
         gaugeUpdater.setGauge(element);
     }
@@ -1200,12 +1215,13 @@ public class JXCSkinLoader
     /**
      * Parses a "gauge" command.
      * @param args the command arguments
-     * @param window the window to use
+     * @param tooltipManager the tooltip manager to update
+     * @param windowRenderer the window renderer to notify
      * @param lnr the line number reader for reading more lines
      * @throws IOException if the command cannot be parsed
      * @throws JXCSkinException if the command cannot be parsed
      */
-    private void parseGauge(final String[] args, final JXCWindow window, final LineNumberReader lnr) throws IOException, JXCSkinException
+    private void parseGauge(final String[] args, final TooltipManager tooltipManager, final JXCWindowRenderer windowRenderer, final LineNumberReader lnr) throws IOException, JXCSkinException
     {
         if (args.length < 11)
         {
@@ -1223,7 +1239,7 @@ public class JXCSkinLoader
         final GaugeUpdater gaugeUpdater = skin.newGaugeUpdater(args[9]);
         final Orientation orientation = ParseUtils.parseOrientation(args[10]);
         final String tooltipPrefix = ParseUtils.parseText(args, 11, lnr);
-        final GUIGauge element = new GUIGauge(window, name, x, y, w, h, positiveImage, negativeImage, emptyImage, orientation, tooltipPrefix.length() > 0 ? tooltipPrefix : null);
+        final GUIGauge element = new GUIGauge(tooltipManager, windowRenderer, name, x, y, w, h, positiveImage, negativeImage, emptyImage, orientation, tooltipPrefix.length() > 0 ? tooltipPrefix : null);
         skin.insertGuiElement(element);
         gaugeUpdater.setGauge(element);
     }
@@ -1248,13 +1264,14 @@ public class JXCSkinLoader
     /**
      * Parses an "inventory_list" command.
      * @param args the command arguments
-     * @param window the window to use
+     * @param tooltipManager the tooltip manager to update
+     * @param windowRenderer the window renderer to notify
      * @param commandQueue the command queue to use
      * @param server the server to use
      * @throws IOException if the command cannot be parsed
      * @throws JXCSkinException if the command cannot be parsed
      */
-    private void parseInventoryList(final String[] args, final JXCWindow window, final CommandQueue commandQueue, final CrossfireServerConnection server) throws IOException, JXCSkinException
+    private void parseInventoryList(final String[] args, final TooltipManager tooltipManager, final JXCWindowRenderer windowRenderer, final CommandQueue commandQueue, final CrossfireServerConnection server) throws IOException, JXCSkinException
     {
         if (args.length != 18)
         {
@@ -1288,15 +1305,16 @@ public class JXCSkinLoader
         final AbstractLabel selectedItem = args[17].equals("null") ? null : guiElementParser.lookupLabelElement(args[17]);
 
         final ItemPainter itemPainter = new ItemPainter(cursedImage, damnedImage, magicImage, blessedImage, appliedImage, selectorImage, lockedImage, unpaidImage, cursedColor, damnedColor, magicColor, blessedColor, appliedColor, selectorColor, lockedColor, unpaidColor, font, nrofColor, cellHeight, cellHeight);
-        final GUIItemInventoryFactory itemInventoryFactory = new GUIItemInventoryFactory(window, commandQueue, name, itemPainter, server, facesManager, itemsManager);
-        final GUIItemInventoryList element = new GUIItemInventoryList(window, commandQueue, name, x, y, w, h, cellHeight, server, itemsManager, selectedItem, itemInventoryFactory);
+        final GUIItemInventoryFactory itemInventoryFactory = new GUIItemInventoryFactory(tooltipManager, windowRenderer, commandQueue, name, itemPainter, server, facesManager, itemsManager);
+        final GUIItemInventoryList element = new GUIItemInventoryList(tooltipManager, windowRenderer, commandQueue, name, x, y, w, h, cellHeight, server, itemsManager, selectedItem, itemInventoryFactory);
         skin.insertGuiElement(element);
     }
 
     /**
      * Parses an "item" command.
      * @param args the command arguments
-     * @param window the window to use
+     * @param tooltipManager the tooltip manager to update
+     * @param windowRenderer the window renderer to notify
      * @param commandQueue the command queue to use
      * @param server the server to use
      * @param shortcuts the shortcuts to use
@@ -1304,7 +1322,7 @@ public class JXCSkinLoader
      * @throws IOException if the command cannot be parsed
      * @throws JXCSkinException if the command cannot be parsed
      */
-    private void parseItem(final String[] args, final JXCWindow window, final CommandQueue commandQueue, final CrossfireServerConnection server, final Shortcuts shortcuts, final CurrentSpellManager currentSpellManager) throws IOException, JXCSkinException
+    private void parseItem(final String[] args, final TooltipManager tooltipManager, final JXCWindowRenderer windowRenderer, final CommandQueue commandQueue, final CrossfireServerConnection server, final Shortcuts shortcuts, final CurrentSpellManager currentSpellManager) throws IOException, JXCSkinException
     {
         if (args.length < 8)
         {
@@ -1345,7 +1363,7 @@ public class JXCSkinLoader
             final Font font = definedFonts.lookup(args[16]);
             final Color nrofColor = ParseUtils.parseColor(args[17]);
             final ItemPainter itemPainter = new ItemPainter(cursedImage, damnedImage, magicImage, blessedImage, appliedImage, selectorImage, lockedImage, unpaidImage, cursedColor, damnedColor, magicColor, blessedColor, appliedColor, selectorColor, lockedColor, unpaidColor, font, nrofColor, w, h);
-            element = new GUIItemFloor(window, commandQueue, name, x, y, w, h, itemPainter, index, server, itemsManager, facesManager);
+            element = new GUIItemFloor(tooltipManager, windowRenderer, commandQueue, name, x, y, w, h, itemPainter, index, server, itemsManager, facesManager);
         }
         else if (type.equals("inventory"))
         {
@@ -1373,7 +1391,7 @@ public class JXCSkinLoader
             final Font font = definedFonts.lookup(args[16]);
             final Color nrofColor = ParseUtils.parseColor(args[17]);
             final ItemPainter itemPainter = new ItemPainter(cursedImage, damnedImage, magicImage, blessedImage, appliedImage, selectorImage, lockedImage, unpaidImage, cursedColor, damnedColor, magicColor, blessedColor, appliedColor, selectorColor, lockedColor, unpaidColor, font, nrofColor, w, h);
-            element = new GUIItemInventory(window, commandQueue, name, x, y, w, h, itemPainter, index, server, facesManager, itemsManager);
+            element = new GUIItemInventory(tooltipManager, windowRenderer, commandQueue, name, x, y, w, h, itemPainter, index, server, facesManager, itemsManager);
         }
         else if (type.equals("shortcut"))
         {
@@ -1385,7 +1403,7 @@ public class JXCSkinLoader
             final BufferedImage cursedImage = imageParser.getImage(args[8]);
             final BufferedImage appliedImage = imageParser.getImage(args[9]);
             final Font font = definedFonts.lookup(args[10]);
-            element = new GUIItemShortcut(window, name, x, y, w, h, cursedImage, appliedImage, index, facesManager, shortcuts, font, currentSpellManager);
+            element = new GUIItemShortcut(tooltipManager, windowRenderer, name, x, y, w, h, cursedImage, appliedImage, index, facesManager, shortcuts, font, currentSpellManager);
         }
         else if (type.equals("spelllist"))
         {
@@ -1395,7 +1413,7 @@ public class JXCSkinLoader
             }
 
             final BufferedImage selectorImage = imageParser.getImage(args[8]);
-            element = new GUIItemSpelllist(window, commandQueue, name, x, y, w, h, selectorImage, index, facesManager, spellsManager, currentSpellManager);
+            element = new GUIItemSpelllist(tooltipManager, windowRenderer, commandQueue, name, x, y, w, h, selectorImage, index, facesManager, spellsManager, currentSpellManager);
         }
         else
         {
@@ -1432,12 +1450,13 @@ public class JXCSkinLoader
     /**
      * Parses a "label_html" command.
      * @param args the command arguments
-     * @param window the window to use
+     * @param tooltipManager the tooltip manager to update
+     * @param windowRenderer the window renderer to notify
      * @param lnr the line number reader for reading more lines
      * @throws IOException if the command cannot be parsed
      * @throws JXCSkinException if the command cannot be parsed
      */
-    private void parseLabelHtml(final String[] args, final JXCWindow window, final LineNumberReader lnr) throws IOException, JXCSkinException
+    private void parseLabelHtml(final String[] args, final TooltipManager tooltipManager, final JXCWindowRenderer windowRenderer, final LineNumberReader lnr) throws IOException, JXCSkinException
     {
         if (args.length < 8)
         {
@@ -1452,18 +1471,19 @@ public class JXCSkinLoader
         final Font font = definedFonts.lookup(args[6]);
         final Color color = ParseUtils.parseColor(args[7]);
         final String text = ParseUtils.parseText(args, 8, lnr);
-        skin.insertGuiElement(new GUIHTMLLabel(window, name, x, y, w, h, null, font, color, new Color(0, 0, 0, 0F), text));
+        skin.insertGuiElement(new GUIHTMLLabel(tooltipManager, windowRenderer, name, x, y, w, h, null, font, color, new Color(0, 0, 0, 0F), text));
     }
 
     /**
      * Parses a "label_multi" command.
      * @param args the command arguments
-     * @param window the window to use
+     * @param tooltipManager the tooltip manager to update
+     * @param windowRenderer the window renderer to notify
      * @param lnr the line number reader for reading more lines
      * @throws IOException if the command cannot be parsed
      * @throws JXCSkinException if the command cannot be parsed
      */
-    private void parseLabelMulti(final String[] args, final JXCWindow window, final LineNumberReader lnr) throws IOException, JXCSkinException
+    private void parseLabelMulti(final String[] args, final TooltipManager tooltipManager, final JXCWindowRenderer windowRenderer, final LineNumberReader lnr) throws IOException, JXCSkinException
     {
         if (args.length < 8)
         {
@@ -1478,18 +1498,19 @@ public class JXCSkinLoader
         final Font font = definedFonts.lookup(args[6]);
         final Color color = ParseUtils.parseColor(args[7]);
         final String text = ParseUtils.parseText(args, 8, lnr);
-        skin.insertGuiElement(new GUIMultiLineLabel(window, name, x, y, w, h, null, font, color, new Color(0, 0, 0, 0F), GUILabel.Alignment.LEFT, text));
+        skin.insertGuiElement(new GUIMultiLineLabel(tooltipManager, windowRenderer, name, x, y, w, h, null, font, color, new Color(0, 0, 0, 0F), GUILabel.Alignment.LEFT, text));
     }
 
     /**
      * Parses a "label_query" command.
      * @param args the command arguments
-     * @param window the window to use
+     * @param tooltipManager the tooltip manager to update
+     * @param windowRenderer the window renderer to notify
      * @param server the server instance to monitor
      * @throws IOException if the command cannot be parsed
      * @throws JXCSkinException if the command cannot be parsed
      */
-    private void parseLabelQuery(final String[] args, final JXCWindow window, final CrossfireServerConnection server) throws IOException, JXCSkinException
+    private void parseLabelQuery(final String[] args, final TooltipManager tooltipManager, final JXCWindowRenderer windowRenderer, final CrossfireServerConnection server) throws IOException, JXCSkinException
     {
         if (args.length != 8)
         {
@@ -1503,19 +1524,20 @@ public class JXCSkinLoader
         final int h = expressionParser.parseInt(args[5]);
         final Font font = definedFonts.lookup(args[6]);
         final Color color = ParseUtils.parseColor(args[7]);
-        final GUILabelQuery element = new GUILabelQuery(window, name, x, y, w, h, server, font, color, new Color(0, 0, 0, 0F));
+        final GUILabelQuery element = new GUILabelQuery(tooltipManager, windowRenderer, name, x, y, w, h, server, font, color, new Color(0, 0, 0, 0F));
         skin.insertGuiElement(element);
     }
 
     /**
      * Parses a "label_text" command.
      * @param args the command arguments
-     * @param window the window to use
+     * @param tooltipManager the tooltip manager to update
+     * @param windowRenderer the window renderer to notify
      * @param lnr the line number reader for reading more lines
      * @throws IOException if the command cannot be parsed
      * @throws JXCSkinException if the command cannot be parsed
      */
-    private void parseLabelText(final String[] args, final JXCWindow window, final LineNumberReader lnr) throws IOException, JXCSkinException
+    private void parseLabelText(final String[] args, final TooltipManager tooltipManager, final JXCWindowRenderer windowRenderer, final LineNumberReader lnr) throws IOException, JXCSkinException
     {
         if (args.length < 8)
         {
@@ -1530,17 +1552,18 @@ public class JXCSkinLoader
         final Font font = definedFonts.lookup(args[6]);
         final Color color = ParseUtils.parseColor(args[7]);
         final String text = ParseUtils.parseText(args, 8, lnr);
-        skin.insertGuiElement(new GUIOneLineLabel(window, name, x, y, w, h, null, font, color, new Color(0, 0, 0, 0F), GUILabel.Alignment.LEFT, text));
+        skin.insertGuiElement(new GUIOneLineLabel(tooltipManager, windowRenderer, name, x, y, w, h, null, font, color, new Color(0, 0, 0, 0F), GUILabel.Alignment.LEFT, text));
     }
 
     /**
      * Parses a "label_stat" command.
      * @param args the command arguments
-     * @param window the window to use
+     * @param tooltipManager the tooltip manager to update
+     * @param windowRenderer the window renderer to notify
      * @throws IOException if the command cannot be parsed
      * @throws JXCSkinException if the command cannot be parsed
      */
-    private void parseLabelStat(final String[] args, final JXCWindow window) throws IOException, JXCSkinException
+    private void parseLabelStat(final String[] args, final TooltipManager tooltipManager, final JXCWindowRenderer windowRenderer) throws IOException, JXCSkinException
     {
         if (args.length != 10)
         {
@@ -1556,19 +1579,20 @@ public class JXCSkinLoader
         final Color color = ParseUtils.parseColor(args[7]);
         final int stat = ParseUtils.parseStat(args[8]);
         final GUILabel.Alignment alignment = NumberParser.parseEnum(GUILabel.Alignment.class, args[9], "text alignment");
-        final GUILabelStats element = new GUILabelStats(window, name, x, y, w, h, font, color, new Color(0, 0, 0, 0F), stat, alignment, stats);
+        final GUILabelStats element = new GUILabelStats(tooltipManager, windowRenderer, name, x, y, w, h, font, color, new Color(0, 0, 0, 0F), stat, alignment, stats);
         skin.insertGuiElement(element);
     }
 
     /**
      * Parses a "label_spell" command.
      * @param args the command arguments
-     * @param window the window to use
+     * @param tooltipManager the tooltip manager to update
+     * @param windowRenderer the window renderer to notify
      * @param currentSpellManager the current spell manager to use
      * @throws IOException if the command cannot be parsed
      * @throws JXCSkinException if the command cannot be parsed
      */
-    private void parseLabelSpell(final String[] args, final JXCWindow window, final CurrentSpellManager currentSpellManager) throws IOException, JXCSkinException
+    private void parseLabelSpell(final String[] args, final TooltipManager tooltipManager, final JXCWindowRenderer windowRenderer, final CurrentSpellManager currentSpellManager) throws IOException, JXCSkinException
     {
         if (args.length != 8)
         {
@@ -1582,18 +1606,19 @@ public class JXCSkinLoader
         final int h = expressionParser.parseInt(args[5]);
         final Font font = definedFonts.lookup(args[6]);
         final GUISpellLabel.Type type = NumberParser.parseEnum(GUISpellLabel.Type.class, args[7], "label type");
-        final GUISpellLabel element = new GUISpellLabel(window, name, x, y, w, h, null, facesManager, font, type, currentSpellManager);
+        final GUISpellLabel element = new GUISpellLabel(tooltipManager, windowRenderer, name, x, y, w, h, null, facesManager, font, type, currentSpellManager);
         skin.insertGuiElement(element);
     }
 
     /**
      * Parses a "log_label" command.
      * @param args the command arguments
-     * @param window the window to use
+     * @param tooltipManager the tooltip manager to update
+     * @param windowRenderer the window renderer to notify
      * @throws IOException if the command cannot be parsed
      * @throws JXCSkinException if the command cannot be parsed
      */
-    private void parseLogLabel(final String[] args, final JXCWindow window) throws IOException, JXCSkinException
+    private void parseLogLabel(final String[] args, final TooltipManager tooltipManager, final JXCWindowRenderer windowRenderer) throws IOException, JXCSkinException
     {
         if (args.length != 12)
         {
@@ -1612,19 +1637,20 @@ public class JXCSkinLoader
         final Font fontArcane = definedFonts.lookup(args[10]);
         final Color defaultColor = ParseUtils.parseColor(args[11]);
         final Fonts fonts = new Fonts(fontPrint, fontFixed, fontFixedBold, fontArcane);
-        final GUILabelLog element = new GUILabelLog(window, name, x, y, w, h, emptyImage, fonts, defaultColor);
+        final GUILabelLog element = new GUILabelLog(tooltipManager, windowRenderer, name, x, y, w, h, emptyImage, fonts, defaultColor);
         skin.insertGuiElement(element);
     }
 
     /**
      * Parses a "log_message" command.
      * @param args the command arguments
-     * @param window the window to use
+     * @param tooltipManager the tooltip manager to update
+     * @param windowRenderer the window renderer to notify
      * @param server the server to use
      * @throws IOException if the command cannot be parsed
      * @throws JXCSkinException if the command cannot be parsed
      */
-    private void parseLogMessage(final String[] args, final JXCWindow window, final CrossfireServerConnection server) throws IOException, JXCSkinException
+    private void parseLogMessage(final String[] args, final TooltipManager tooltipManager, final JXCWindowRenderer windowRenderer, final CrossfireServerConnection server) throws IOException, JXCSkinException
     {
         if (args.length != 12)
         {
@@ -1643,7 +1669,7 @@ public class JXCSkinLoader
         final Font fontArcane = definedFonts.lookup(args[10]);
         final Color defaultColor = ParseUtils.parseColor(args[11]);
         final Fonts fonts = new Fonts(fontPrint, fontFixed, fontFixedBold, fontArcane);
-        final GUIMessageLog element = new GUIMessageLog(window, name, x, y, w, h, server, emptyImage, fonts, defaultColor);
+        final GUIMessageLog element = new GUIMessageLog(tooltipManager, windowRenderer, name, x, y, w, h, server, emptyImage, fonts, defaultColor);
         skin.insertGuiElement(element);
     }
 
@@ -1730,12 +1756,13 @@ public class JXCSkinLoader
     /**
      * Parses a "magicmap" command.
      * @param args the command arguments
-     * @param window the window to use
+     * @param tooltipManager the tooltip manager to update
+     * @param windowRenderer the window renderer to notify
      * @param server the server to monitor
      * @throws IOException if the command cannot be parsed
      * @throws JXCSkinException if the command cannot be parsed
      */
-    private void parseMagicmap(final String[] args, final JXCWindow window, final CrossfireServerConnection server) throws IOException, JXCSkinException
+    private void parseMagicmap(final String[] args, final TooltipManager tooltipManager, final JXCWindowRenderer windowRenderer, final CrossfireServerConnection server) throws IOException, JXCSkinException
     {
         if (args.length != 6)
         {
@@ -1747,19 +1774,20 @@ public class JXCSkinLoader
         final int y = expressionParser.parseInt(args[3]);
         final int w = expressionParser.parseInt(args[4]);
         final int h = expressionParser.parseInt(args[5]);
-        final GUIMagicMap element = new GUIMagicMap(window, name, x, y, w, h, server, mapUpdater, facesManager);
+        final GUIMagicMap element = new GUIMagicMap(tooltipManager, windowRenderer, name, x, y, w, h, server, mapUpdater, facesManager);
         skin.insertGuiElement(element);
     }
 
     /**
      * Parses a "map" command.
      * @param args the command arguments
-     * @param window the window to use
+     * @param tooltipManager the tooltip manager to update
+     * @param windowRenderer the window renderer to notify
      * @param server the server to monitor
      * @throws IOException if the command cannot be parsed
      * @throws JXCSkinException if the command cannot be parsed
      */
-    private void parseMap(final String[] args, final JXCWindow window, final CrossfireServerConnection server) throws IOException, JXCSkinException
+    private void parseMap(final String[] args, final TooltipManager tooltipManager, final JXCWindowRenderer windowRenderer, final CrossfireServerConnection server) throws IOException, JXCSkinException
     {
         if (args.length != 7)
         {
@@ -1781,19 +1809,20 @@ public class JXCSkinLoader
         DefaultCrossfireServerConnection.validateMapSize(tmpW, tmpH);
         skin.setMapSize(tmpW, tmpH);
 
-        final GUIMap element = new GUIMap(window, name, tileSize, x, y, w, h, server, facesManager, mapUpdater);
+        final GUIMap element = new GUIMap(tooltipManager, windowRenderer, name, tileSize, x, y, w, h, server, facesManager, mapUpdater);
         skin.insertGuiElement(element);
     }
 
     /**
      * Parses a "meta_list" command.
      * @param args the command arguments
-     * @param window the window to use
+     * @param tooltipManager the tooltip manager to update
+     * @param windowRenderer the window renderer to notify
      * @param metaserverModel the metaserver model to use
      * @throws IOException if the command cannot be parsed
      * @throws JXCSkinException if the command cannot be parsed
      */
-    private void parseMetaList(final String[] args, final JXCWindow window, final MetaserverModel metaserverModel) throws IOException, JXCSkinException
+    private void parseMetaList(final String[] args, final TooltipManager tooltipManager, final JXCWindowRenderer windowRenderer, final MetaserverModel metaserverModel) throws IOException, JXCSkinException
     {
         if (args.length != 13)
         {
@@ -1813,18 +1842,19 @@ public class JXCSkinLoader
         final String format = args[11];
         final String tooltip = args[12];
 
-        final GUIMetaElementList list = new GUIMetaElementList(window, name, x, y, w, h, cellHeight, metaserverModel, tcpImage, font, format, tooltip, text, label);
+        final GUIMetaElementList list = new GUIMetaElementList(tooltipManager, windowRenderer, name, x, y, w, h, cellHeight, metaserverModel, tcpImage, font, format, tooltip, text, label);
         skin.insertGuiElement(list);
     }
 
     /**
      * Parses a "picture" command.
      * @param args the command arguments
-     * @param window the window to use
+     * @param tooltipManager the tooltip manager to update
+     * @param windowRenderer the window renderer to notify
      * @throws IOException if the command cannot be parsed
      * @throws JXCSkinException if the command cannot be parsed
      */
-    private void parsePicture(final String[] args, final JXCWindow window) throws IOException, JXCSkinException
+    private void parsePicture(final String[] args, final TooltipManager tooltipManager, final JXCWindowRenderer windowRenderer) throws IOException, JXCSkinException
     {
         if (args.length != 8)
         {
@@ -1839,17 +1869,19 @@ public class JXCSkinLoader
         final BufferedImage image = imageParser.getImage(args[6]);
         final float alpha = NumberParser.parseFloat(args[7]);
         if (alpha < 0 || alpha > 1F) throw new IOException("invalid alpha value: "+alpha);
-        skin.insertGuiElement(new GUIPicture(window, name, x, y, w, h, image, alpha));
+        skin.insertGuiElement(new GUIPicture(tooltipManager, windowRenderer, name, x, y, w, h, image, alpha));
     }
 
     /**
      * Parses a "query_text" command.
      * @param args the command arguments
      * @param window the window to use
+     * @param tooltipManager the tooltip manager to update
+     * @param windowRenderer the window renderer to notify
      * @throws IOException if the command cannot be parsed
      * @throws JXCSkinException if the command cannot be parsed
      */
-    private void parseQueryText(final String[] args, final JXCWindow window) throws IOException, JXCSkinException
+    private void parseQueryText(final String[] args, final JXCWindow window, final TooltipManager tooltipManager, final JXCWindowRenderer windowRenderer) throws IOException, JXCSkinException
     {
         if (args.length != 12)
         {
@@ -1867,7 +1899,7 @@ public class JXCSkinLoader
         final Color inactiveColor = ParseUtils.parseColor(args[9]);
         final Color activeColor = ParseUtils.parseColor(args[10]);
         final int margin = expressionParser.parseInt(args[11]);
-        skin.insertGuiElement(new GUIQueryText(window, name, x, y, w, h, activeImage, inactiveImage, font, inactiveColor, activeColor, margin, "", false));
+        skin.insertGuiElement(new GUIQueryText(window, tooltipManager, windowRenderer, name, x, y, w, h, activeImage, inactiveImage, font, inactiveColor, activeColor, margin, "", false));
     }
 
     /**
@@ -1958,11 +1990,12 @@ public class JXCSkinLoader
     /**
      * Parses a "scrollbar" command.
      * @param args the command arguments
-     * @param window the window to use
+     * @param tooltipManager the tooltip manager to update
+     * @param windowRenderer the window renderer to notify
      * @throws IOException if the command cannot be parsed
      * @throws JXCSkinException if the command cannot be parsed
      */
-    private void parseScrollbar(final String[] args, final JXCWindow window) throws IOException, JXCSkinException
+    private void parseScrollbar(final String[] args, final TooltipManager tooltipManager, final JXCWindowRenderer windowRenderer) throws IOException, JXCSkinException
     {
         if (args.length != 10)
         {
@@ -1982,7 +2015,7 @@ public class JXCSkinLoader
         {
             throw new IOException("'"+element+"' is not a scrollable element");
         }
-        skin.insertGuiElement(new GUIScrollBar(window, name, x, y, w, h, proportionalSlider, (GUIScrollable2)element, colorBackground, colorForeground));
+        skin.insertGuiElement(new GUIScrollBar(tooltipManager, windowRenderer, name, x, y, w, h, proportionalSlider, (GUIScrollable2)element, colorBackground, colorForeground));
     }
 
     /**
@@ -2010,10 +2043,12 @@ public class JXCSkinLoader
      * Parses a "text" command.
      * @param args the command arguments
      * @param window the window to use
+     * @param tooltipManager the tooltip manager to update
+     * @param windowRenderer the window renderer to notify
      * @throws IOException if the command cannot be parsed
      * @throws JXCSkinException if the command cannot be parsed
      */
-    private void parseText(final String[] args, final JXCWindow window) throws IOException, JXCSkinException
+    private void parseText(final String[] args, final JXCWindow window, final TooltipManager tooltipManager, final JXCWindowRenderer windowRenderer) throws IOException, JXCSkinException
     {
         if (args.length != 14)
         {
@@ -2033,18 +2068,19 @@ public class JXCSkinLoader
         final int margin = expressionParser.parseInt(args[11]);
         final GUICommandList commandList = skin.getCommandList(args[12]);
         final boolean ignoreUpDown = NumberParser.parseBoolean(args[13]);
-        skin.insertGuiElement(new GUITextField(window, name, x, y, w, h, activeImage, inactiveImage, font, inactiveColor, activeColor, margin, "", commandList, ignoreUpDown));
+        skin.insertGuiElement(new GUITextField(window, tooltipManager, windowRenderer, name, x, y, w, h, activeImage, inactiveImage, font, inactiveColor, activeColor, margin, "", commandList, ignoreUpDown));
     }
 
     /**
      * Parses a "textbutton" command.
      * @param args the command arguments
-     * @param window the window to use
+     * @param tooltipManager the tooltip manager to update
+     * @param windowRenderer the window renderer to notify
      * @param lnr the line number reader for reading more lines
      * @throws IOException if the command cannot be parsed
      * @throws JXCSkinException if the command cannot be parsed
      */
-    private void parseTextButton(final String[] args, final JXCWindow window, final LineNumberReader lnr) throws IOException, JXCSkinException
+    private void parseTextButton(final String[] args, final TooltipManager tooltipManager, final JXCWindowRenderer windowRenderer, final LineNumberReader lnr) throws IOException, JXCSkinException
     {
         if (args.length < 7)
         {
@@ -2064,18 +2100,19 @@ public class JXCSkinLoader
         final boolean autoRepeat = NumberParser.parseBoolean(args[6]);
         final GUICommandList commandList = skin.getCommandList(args[7]);
         final String text = ParseUtils.parseText(args, 8, lnr);
-        skin.insertGuiElement(textButtonFactory.newTextButton(window, name, x, y, w, h, text, autoRepeat, commandList));
+        skin.insertGuiElement(textButtonFactory.newTextButton(tooltipManager, windowRenderer, name, x, y, w, h, text, autoRepeat, commandList));
     }
 
     /**
      * Parses a "textgauge" command.
      * @param args the command arguments
-     * @param window the window to use
+     * @param tooltipManager the tooltip manager to update
+     * @param windowRenderer the window renderer to notify
      * @param lnr the line number reader for reading more lines
      * @throws IOException if the command cannot be parsed
      * @throws JXCSkinException if the command cannot be parsed
      */
-    private void parseTextGauge(final String[] args, final JXCWindow window, final LineNumberReader lnr) throws IOException, JXCSkinException
+    private void parseTextGauge(final String[] args, final TooltipManager tooltipManager, final JXCWindowRenderer windowRenderer, final LineNumberReader lnr) throws IOException, JXCSkinException
     {
         if (args.length < 13)
         {
@@ -2095,7 +2132,7 @@ public class JXCSkinLoader
         final Color color = ParseUtils.parseColor(args[11]);
         final Font font = definedFonts.lookup(args[12]);
         final String tooltipPrefix = ParseUtils.parseText(args, 13, lnr);
-        final GUITextGauge element = new GUITextGauge(window, name, x, y, w, h, positiveImage, negativeImage, emptyImage, orientation, tooltipPrefix.length() > 0 ? tooltipPrefix : null, color, font);
+        final GUITextGauge element = new GUITextGauge(tooltipManager, windowRenderer, name, x, y, w, h, positiveImage, negativeImage, emptyImage, orientation, tooltipPrefix.length() > 0 ? tooltipPrefix : null, color, font);
         skin.insertGuiElement(element);
         gaugeUpdater.setGauge(element);
     }
@@ -2103,11 +2140,12 @@ public class JXCSkinLoader
     /**
      * Parses a "tooltip" command.
      * @param args the command arguments
-     * @param window the window to use
+     * @param tooltipManager the tooltip manager to update
+     * @param windowRenderer the window renderer to notify
      * @throws IOException if the command cannot be parsed
      * @throws JXCSkinException if the command cannot be parsed
      */
-    private void parseTooltip(final String[] args, final JXCWindow window) throws IOException, JXCSkinException
+    private void parseTooltip(final String[] args, final TooltipManager tooltipManager, final JXCWindowRenderer windowRenderer) throws IOException, JXCSkinException
     {
         if (args.length != 2)
         {
@@ -2115,7 +2153,7 @@ public class JXCSkinLoader
         }
 
         final Font font = definedFonts.lookup(args[1]);
-        final GUIHTMLLabel tooltipLabel = new GUIHTMLLabel(window, "tooltip", 0, 0, 1, 1, null, font, Color.BLACK, Color.WHITE, "");
+        final GUIHTMLLabel tooltipLabel = new GUIHTMLLabel(tooltipManager, windowRenderer, "tooltip", 0, 0, 1, 1, null, font, Color.BLACK, Color.WHITE, "");
         tooltipLabel.setAutoResize(true);
         skin.setTooltipLabel(tooltipLabel);
     }

@@ -19,7 +19,7 @@
 //
 package com.realtime.crossfire.jxclient.gui;
 
-import com.realtime.crossfire.jxclient.window.JXCWindow;
+import com.realtime.crossfire.jxclient.window.JXCWindowRenderer;
 import java.awt.AlphaComposite;
 import java.awt.Graphics;
 import java.awt.Graphics2D;
@@ -42,7 +42,9 @@ public class GUIPicture extends GUIElement
     /**
      * Create a new instance.
      *
-     * @param window The <code>JXCWindow</code> this element belongs to.
+     * @param tooltipManager the tooltip manager to update
+     *
+     * @param windowRenderer the window renderer to notify
      *
      * @param name The name of this element.
      *
@@ -60,9 +62,9 @@ public class GUIPicture extends GUIElement
      *
      * @param alpha The transparency value.
      */
-    public GUIPicture(final JXCWindow window, final String name, final int x, final int y, final int w, final int h, final BufferedImage image, final float alpha)
+    public GUIPicture(final TooltipManager tooltipManager, final JXCWindowRenderer windowRenderer, final String name, final int x, final int y, final int w, final int h, final BufferedImage image, final float alpha)
     {
-        super(window, name, x, y, w, h, alpha < 1F ? Transparency.TRANSLUCENT : image.getTransparency());
+        super(tooltipManager, windowRenderer, name, x, y, w, h, alpha < 1F ? Transparency.TRANSLUCENT : image.getTransparency());
         synchronized (bufferedImageSync)
         {
             final Graphics2D g = createBufferGraphics();

@@ -22,7 +22,8 @@ package com.realtime.crossfire.jxclient.gui.log;
 import com.realtime.crossfire.jxclient.gui.GUIElement;
 import com.realtime.crossfire.jxclient.gui.GUIScrollable2;
 import com.realtime.crossfire.jxclient.gui.ScrollableListener;
-import com.realtime.crossfire.jxclient.window.JXCWindow;
+import com.realtime.crossfire.jxclient.gui.TooltipManager;
+import com.realtime.crossfire.jxclient.window.JXCWindowRenderer;
 import java.awt.Color;
 import java.awt.Graphics;
 import java.awt.Graphics2D;
@@ -97,7 +98,9 @@ public abstract class GUILog extends GUIElement implements GUIScrollable2
     /**
      * Create a new instance.
      *
-     * @param window The <code>JXCWindow</code> this element belongs to.
+     * @param tooltipManager the tooltip manager to update
+     *
+     * @param windowRenderer the window renderer to notify
      *
      * @param name The name of this element.
      *
@@ -114,9 +117,9 @@ public abstract class GUILog extends GUIElement implements GUIScrollable2
      *
      * @param fonts The <code>Fonts</code> instance for looking up fonts.
      */
-    protected GUILog(final JXCWindow window, final String name, final int x, final int y, final int w, final int h, final BufferedImage backgroundImage, final Fonts fonts)
+    protected GUILog(final TooltipManager tooltipManager, final JXCWindowRenderer windowRenderer, final String name, final int x, final int y, final int w, final int h, final BufferedImage backgroundImage, final Fonts fonts)
     {
-        super(window, name, x, y, w, h, Transparency.TRANSLUCENT);
+        super(tooltipManager, windowRenderer, name, x, y, w, h, Transparency.TRANSLUCENT);
         this.backgroundImage = backgroundImage;
         this.fonts = fonts;
         final FontRenderContext context;

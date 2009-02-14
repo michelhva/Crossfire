@@ -19,7 +19,7 @@
 //
 package com.realtime.crossfire.jxclient.gui;
 
-import com.realtime.crossfire.jxclient.window.JXCWindow;
+import com.realtime.crossfire.jxclient.window.JXCWindowRenderer;
 import java.awt.Dimension;
 import java.awt.Graphics;
 import java.awt.Graphics2D;
@@ -88,9 +88,14 @@ public abstract class GUIElement extends JPanel
     private boolean changed;
 
     /**
-     * The {@link JXCWindow} this gui element belongs to.
+     * The {@link TooltipManager} to update.
      */
-    private final JXCWindow window;
+    private final TooltipManager tooltipManager;
+
+    /**
+     * The {@link JXCWindowRenderer} to notify.
+     */
+    private final JXCWindowRenderer windowRenderer;
 
     /**
      * The tooltip text to show when the mouse is inside this element. May be
@@ -101,7 +106,9 @@ public abstract class GUIElement extends JPanel
     /**
      * Create a new instance.
      *
-     * @param window The <code>JXCWindow</code> this element belongs to.
+     * @param tooltipManager the tooltip manager to update
+     *
+     * @param windowRenderer the window renderer to notify
      *
      * @param name The name of this element.
      *
@@ -117,10 +124,11 @@ public abstract class GUIElement extends JPanel
      *
      * @param transparency The transparency value for the backing buffer
      */
-    protected GUIElement(final JXCWindow window, final String name, final int x, final int y, final int w, final int h, final int transparency)
+    protected GUIElement(final TooltipManager tooltipManager, final JXCWindowRenderer windowRenderer, final String name, final int x, final int y, final int w, final int h, final int transparency)
     {
         super(false);
-        this.window = window;
+        this.tooltipManager = tooltipManager;
+        this.windowRenderer = windowRenderer;
         this.name = name;
         this.transparency = transparency;
         setOpaque(true);
@@ -242,7 +250,7 @@ public abstract class GUIElement extends JPanel
      */
     public void mouseClicked(final MouseEvent e)
     {
-        window.getWindowRenderer().raiseDialog(gui);
+        windowRenderer.raiseDialog(gui);
     }
 
     /**
@@ -253,7 +261,7 @@ public abstract class GUIElement extends JPanel
      */
     public void mouseEntered(final MouseEvent e)
     {
-        window.getTooltipManager().setElement(this);
+        tooltipManager.setElement(this);
     }
 
     /**
@@ -265,7 +273,7 @@ public abstract class GUIElement extends JPanel
      */
     public void mouseExited(final MouseEvent e)
     {
-        window.getTooltipManager().unsetElement(this);
+        tooltipManager.unsetElement(this);
     }
 
     /**
@@ -378,7 +386,7 @@ public abstract class GUIElement extends JPanel
             }
         }
         this.tooltipText = tooltipText;
-        window.getTooltipManager().updateElement(this);
+        tooltipManager.updateElement(this);
     }
 
     /**

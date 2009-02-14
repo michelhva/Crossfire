@@ -23,7 +23,7 @@ import com.realtime.crossfire.jxclient.server.CrossfireStatsListener;
 import com.realtime.crossfire.jxclient.stats.Stats;
 import com.realtime.crossfire.jxclient.stats.StatsListener;
 import com.realtime.crossfire.jxclient.util.Formatter;
-import com.realtime.crossfire.jxclient.window.JXCWindow;
+import com.realtime.crossfire.jxclient.window.JXCWindowRenderer;
 import java.awt.Color;
 import java.awt.Font;
 
@@ -176,7 +176,8 @@ public class GUILabelStats extends GUIOneLineLabel
 
     /**
      * Creates a new instance.
-     * @param window the <code>JXCWindow</code> this element belongs to
+     * @param tooltipManager the tooltip manager to update
+     * @param windowRenderer the window renderer to notify
      * @param name the name of this element
      * @param x the x-coordinate for drawing this element to screen
      * @param y the y-coordinate for drawing this element to screen
@@ -189,9 +190,9 @@ public class GUILabelStats extends GUIOneLineLabel
      * @param alignment the text alignment
      * @param stats the stats instance to use
      */
-    public GUILabelStats(final JXCWindow window, final String name, final int x, final int y, final int w, final int h, final Font font, final Color color, final Color backgroundColor, final int stat, final Alignment alignment, final Stats stats)
+    public GUILabelStats(final TooltipManager tooltipManager, final JXCWindowRenderer windowRenderer, final String name, final int x, final int y, final int w, final int h, final Font font, final Color color, final Color backgroundColor, final int stat, final Alignment alignment, final Stats stats)
     {
-        super(window, name, x, y, w, h, null, font, color, backgroundColor, alignment, "");
+        super(tooltipManager, windowRenderer, name, x, y, w, h, null, font, color, backgroundColor, alignment, "");
         this.stats = stats;
         this.stat = stat;
         this.stats.addCrossfireStatsListener(statsListener);

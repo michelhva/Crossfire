@@ -19,7 +19,7 @@
 //
 package com.realtime.crossfire.jxclient.gui;
 
-import com.realtime.crossfire.jxclient.window.JXCWindow;
+import com.realtime.crossfire.jxclient.window.JXCWindowRenderer;
 import java.awt.Color;
 import java.awt.Font;
 import java.awt.Graphics;
@@ -41,7 +41,9 @@ public class GUIOneLineLabel extends GUILabel
     /**
      * Create a new instance.
      *
-     * @param window The <code>JXCWindow</code> this element belongs to.
+     * @param tooltipManager the tooltip manager to update
+     *
+     * @param windowRenderer the window renderer to notify
      *
      * @param name The name of this element.
      *
@@ -66,9 +68,9 @@ public class GUIOneLineLabel extends GUILabel
      *
      * @param text The label text.
      */
-    public GUIOneLineLabel(final JXCWindow window, final String name, final int x, final int y, final int w, final int h, final BufferedImage picture, final Font font, final Color color, final Color backgroundColor, final Alignment alignment, final String text)
+    public GUIOneLineLabel(final TooltipManager tooltipManager, final JXCWindowRenderer windowRenderer, final String name, final int x, final int y, final int w, final int h, final BufferedImage picture, final Font font, final Color color, final Color backgroundColor, final Alignment alignment, final String text)
     {
-        super(window, name, x, y, w, h, picture, font, color, backgroundColor, alignment);
+        super(tooltipManager, windowRenderer, name, x, y, w, h, picture, font, color, backgroundColor, alignment);
         setText(text);
     }
 

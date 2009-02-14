@@ -19,7 +19,7 @@
 //
 package com.realtime.crossfire.jxclient.gui;
 
-import com.realtime.crossfire.jxclient.window.JXCWindow;
+import com.realtime.crossfire.jxclient.window.JXCWindowRenderer;
 import java.awt.event.MouseEvent;
 
 /**
@@ -37,7 +37,9 @@ public abstract class ActivatableGUIElement extends GUIElement
     /**
      * Create a new instance.
      *
-     * @param window The <code>JXCWindow</code> this element belongs to.
+     * @param tooltipManager the tooltip manager to update
+     *
+     * @param windowRenderer the window renderer to notify
      *
      * @param name The name of this element.
      *
@@ -53,9 +55,9 @@ public abstract class ActivatableGUIElement extends GUIElement
      *
      * @param transparency The transparency value for the backing buffer
      */
-    protected ActivatableGUIElement(final JXCWindow window, final String name, final int x, final int y, final int w, final int h, final int transparency)
+    protected ActivatableGUIElement(final TooltipManager tooltipManager, final JXCWindowRenderer windowRenderer, final String name, final int x, final int y, final int w, final int h, final int transparency)
     {
-        super(window, name, x, y, w, h, transparency);
+        super(tooltipManager, windowRenderer, name, x, y, w, h, transparency);
     }
 
     /** {@inheritDoc} */

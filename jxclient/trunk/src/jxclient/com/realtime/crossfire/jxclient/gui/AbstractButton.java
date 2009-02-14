@@ -22,7 +22,7 @@ package com.realtime.crossfire.jxclient.gui;
 import com.realtime.crossfire.jxclient.timeouts.TimeoutEvent;
 import com.realtime.crossfire.jxclient.timeouts.Timeouts;
 import com.realtime.crossfire.jxclient.window.GUICommandList;
-import com.realtime.crossfire.jxclient.window.JXCWindow;
+import com.realtime.crossfire.jxclient.window.JXCWindowRenderer;
 import java.awt.event.MouseEvent;
 
 /**
@@ -71,7 +71,9 @@ public abstract class AbstractButton extends ActivatableGUIElement
     /**
      * Create a new instance.
      *
-     * @param window The <code>JXCWindow</code> this element belongs to.
+     * @param tooltipManager the tooltip manager to update
+     *
+     * @param windowRenderer the window renderer to notify
      *
      * @param name The name of this element.
      *
@@ -90,9 +92,9 @@ public abstract class AbstractButton extends ActivatableGUIElement
      *
      * @param commandList The commands to execute when the button is elected.
      */
-    protected AbstractButton(final JXCWindow window, final String name, final int x, final int y, final int w, final int h, final int transparency, final boolean autoRepeat, final GUICommandList commandList)
+    protected AbstractButton(final TooltipManager tooltipManager, final JXCWindowRenderer windowRenderer, final String name, final int x, final int y, final int w, final int h, final int transparency, final boolean autoRepeat, final GUICommandList commandList)
     {
-        super(window, name, x, y, w, h, transparency);
+        super(tooltipManager, windowRenderer, name, x, y, w, h, transparency);
         if (commandList == null) throw new IllegalArgumentException();
         this.autoRepeat = autoRepeat;
         this.commandList = commandList;

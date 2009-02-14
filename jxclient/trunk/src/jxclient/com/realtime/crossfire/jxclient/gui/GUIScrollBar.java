@@ -19,7 +19,7 @@
 //
 package com.realtime.crossfire.jxclient.gui;
 
-import com.realtime.crossfire.jxclient.window.JXCWindow;
+import com.realtime.crossfire.jxclient.window.JXCWindowRenderer;
 import java.awt.Color;
 import java.awt.Graphics;
 import java.awt.Transparency;
@@ -90,7 +90,8 @@ public class GUIScrollBar extends ActivatableGUIElement implements ScrollableLis
 
     /**
      * Creates a new instance.
-     * @param window the <code>JXCWindow</code> this element belongs to
+     * @param tooltipManager the tooltip manager to update
+     * @param windowRenderer the window renderer to notify
      * @param name the name of this element
      * @param x the x-coordinate for drawing this element to screen
      * @param y the y-coordinate for drawing this element to screen
@@ -102,9 +103,9 @@ public class GUIScrollBar extends ActivatableGUIElement implements ScrollableLis
      * @param colorBackground the background color of the slider
      * @param colorForeground the foreground color of the slider
      */
-    public GUIScrollBar(final JXCWindow window, final String name, final int x, final int y, final int w, final int h, final boolean proportionalSlider, final GUIScrollable2 scrollable, final Color colorBackground, final Color colorForeground)
+    public GUIScrollBar(final TooltipManager tooltipManager, final JXCWindowRenderer windowRenderer, final String name, final int x, final int y, final int w, final int h, final boolean proportionalSlider, final GUIScrollable2 scrollable, final Color colorBackground, final Color colorForeground)
     {
-        super(window, name, x, y, w, h, Transparency.OPAQUE);
+        super(tooltipManager, windowRenderer, name, x, y, w, h, Transparency.OPAQUE);
         if (scrollable == null) throw new IllegalArgumentException();
         this.proportionalSlider = proportionalSlider;
         this.scrollable = scrollable;
