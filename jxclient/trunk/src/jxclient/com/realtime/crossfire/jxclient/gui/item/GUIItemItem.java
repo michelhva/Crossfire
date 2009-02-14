@@ -158,7 +158,7 @@ public abstract class GUIItemItem extends GUIItem
 
     /* {@inheritDoc} */
     @Override
-    public void button2Clicked(final JXCWindow window)
+    public void button2Clicked(final JXCWindow window, final int modifiers)
     {
         final CfItem tmpItem = item;
         if (tmpItem == null)

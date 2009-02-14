@@ -61,6 +61,6 @@ public class ExecuteElementCommand implements GUICommand
     @Override
     public void execute()
     {
-        item.button1Clicked(window);
+        item.button1Clicked(window, 0);
     }
 }

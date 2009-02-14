@@ -71,15 +71,15 @@ public abstract class GUIItem extends ActivatableGUIElement implements GUIScroll
         {
         case MouseEvent.BUTTON1:
             setActive(true);
-            button1Clicked(window);
+            button1Clicked(window, e.getModifiersEx());
             break;
 
         case MouseEvent.BUTTON2:
-            button2Clicked(window);
+            button2Clicked(window, e.getModifiersEx());
             break;
 
         case MouseEvent.BUTTON3:
-            button3Clicked(window);
+            button3Clicked(window, e.getModifiersEx());
             break;
         }
     }
@@ -87,20 +87,23 @@ public abstract class GUIItem extends ActivatableGUIElement implements GUIScroll
     /**
      * Called when the left mouse button was pressed.
      * @param window the window instance this element belongs to
+     * @param modifiers the input event modifiers
      */
-    public abstract void button1Clicked(final JXCWindow window);
+    public abstract void button1Clicked(final JXCWindow window, final int modifiers);
 
     /**
      * Called when the middle mouse button was pressed.
      * @param window the window instance this element belongs to
+     * @param modifiers the input event modifiers
      */
-    public abstract void button2Clicked(final JXCWindow window);
+    public abstract void button2Clicked(final JXCWindow window, final int modifiers);
 
     /**
      * Called when the right mouse button was pressed.
      * @param window the window instance this element belongs to
+     * @param modifiers the input event modifiers
      */
-    public abstract void button3Clicked(final JXCWindow window);
+    public abstract void button3Clicked(final JXCWindow window, final int modifiers);
 
     /** {@inheritDoc} */
     @Override

@@ -915,13 +915,4 @@ public class JXCWindow extends JFrame
     {
         connectionStateListeners.remove(listener);
     }
-
-    /**
-     * Returns the {@link KeyHandler}.
-     * @return the key handler.
-     */
-    public KeyHandler getKeyHandler()
-    {
-        return keyHandler;
-    }
 }
