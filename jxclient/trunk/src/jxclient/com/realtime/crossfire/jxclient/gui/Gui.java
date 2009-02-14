@@ -49,11 +49,6 @@ import java.util.concurrent.CopyOnWriteArrayList;
 public class Gui
 {
     /**
-     * The window this gui belongs to.
-     */
-    private final JXCWindow window;
-
-    /**
      * The mouse tracker instance.
      */
     private final MouseTracker mouseTracker;
@@ -126,21 +121,19 @@ public class Gui
     private boolean stateChanged = false;
 
     /**
-     * If set, auto-close this dialog if this dialog looses the active gui
-     * element.
+     * If set, the auto-close listener to notify if this dialog looses the
+     * active gui element.
      */
-    private boolean autoCloseOnDeactivate = false;
+    private GuiAutoCloseListener guiAutoCloseListener = null;
 
     /**
      * Creates a new instance.
-     * @param window the window this gui belongs to
      * @param mouseTracker the mouse tracker instance
      * @param commands the commands instance for executing commands
      * @param guiManager the gui manager to use
      */
-    public Gui(final JXCWindow window, final MouseTracker mouseTracker, final Commands commands, final GuiManager guiManager)
+    public Gui(final MouseTracker mouseTracker, final Commands commands, final GuiManager guiManager)
     {
-        this.window = window;
         this.mouseTracker = mouseTracker;
         keyBindings = new KeyBindings(null, commands, guiManager);
     }
@@ -482,7 +475,7 @@ public class Gui
             }
             this.activeElement.activeChanged();
 
-            autoCloseOnDeactivate = false;
+            guiAutoCloseListener = null;
         }
         else
         {
@@ -494,9 +487,11 @@ public class Gui
             this.activeElement = null;
             previousActiveElement.activeChanged();
 
-            if (autoCloseOnDeactivate)
+            if (guiAutoCloseListener != null)
             {
-                window.getWindowRenderer().closeDialog(this);
+                final GuiAutoCloseListener listener = guiAutoCloseListener;
+                guiAutoCloseListener = null;
+                listener.autoClosed(this);
             }
         }
     }
@@ -760,13 +755,14 @@ public class Gui
     }
 
     /**
-     * Automatically close this dialog when it looses the focus.
-     * @param autoCloseOnDeactivate whether the dialog should be automatically
-     * closed
+     * The {@link GuiAutoCloseListener} to be notified when this dialog becomes
+     * inactive.
+     * @param guiAutoCloseListener the listener to be notified or
+     * <code>null</code>
      */
-    public void setAutoCloseOnDeactivate(final boolean autoCloseOnDeactivate)
+    public void setGuiAutoCloseListener(final GuiAutoCloseListener guiAutoCloseListener)
     {
-        this.autoCloseOnDeactivate = autoCloseOnDeactivate;
+        this.guiAutoCloseListener = guiAutoCloseListener;
     }
 
     /**

@@ -227,7 +227,7 @@ public class CommandParser
                 throw new IOException("syntax error");
             }
 
-            return new DialogOpenCommand(guiManager, dialogs.addDialog(args[argc], window, mouseTracker, commands, guiManager));
+            return new DialogOpenCommand(guiManager, dialogs.addDialog(args[argc], mouseTracker, commands, guiManager));
         }
         else if (command.equals("DIALOG_TOGGLE"))
         {
@@ -236,7 +236,7 @@ public class CommandParser
                 throw new IOException("syntax error");
             }
 
-            return new DialogToggleCommand(guiManager, dialogs.addDialog(args[argc], window, mouseTracker, commands, guiManager));
+            return new DialogToggleCommand(guiManager, dialogs.addDialog(args[argc], mouseTracker, commands, guiManager));
         }
         else if (command.equals("DIALOG_CLOSE"))
         {
@@ -245,7 +245,7 @@ public class CommandParser
                 throw new IOException("syntax error");
             }
 
-            return new DialogCloseCommand(guiManager, dialogs.addDialog(args[argc], window, mouseTracker, commands, guiManager));
+            return new DialogCloseCommand(guiManager, dialogs.addDialog(args[argc], mouseTracker, commands, guiManager));
         }
         else if (command.equals("GUI_EXECUTE_COMMAND"))
         {
