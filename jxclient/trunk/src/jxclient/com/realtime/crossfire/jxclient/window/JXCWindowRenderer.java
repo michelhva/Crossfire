@@ -56,6 +56,11 @@ public class JXCWindowRenderer
      */
     private final Object redrawSemaphore;
 
+    /**
+     * Whether the GUI should be drawn in debug mode.
+     */
+    private final boolean debugGui;
+
     private BufferStrategy bufferStrategy = null;
 
     private DisplayMode oldDisplayMode = null;
@@ -146,18 +151,20 @@ public class JXCWindowRenderer
      * @param mouseTracker the mouse tracker instance
      * @param redrawSemaphore the semaphore used to synchronized map model
      * updates and map view redraws
+     * @param debugGui whether the GUI should be drawn in debug mode
      */
-    public JXCWindowRenderer(final JXCWindow window, final MouseTracker mouseTracker, final Object redrawSemaphore)
+    public JXCWindowRenderer(final JXCWindow window, final MouseTracker mouseTracker, final Object redrawSemaphore, final boolean debugGui)
     {
         this.window = window;
         this.mouseTracker = mouseTracker;
         this.redrawSemaphore = redrawSemaphore;
+        this.debugGui = debugGui;
     }
 
-    public void init(final Commands commands, final GuiManager guiManager)
+    public void init(final Commands commands, final Gui gui)
     {
         this.commands = commands;
-        currentGui = new Gui(mouseTracker, commands, guiManager);
+        currentGui = gui;
     }
 
     public void init(final Resolution resolution)
@@ -312,9 +319,9 @@ public class JXCWindowRenderer
         }
     }
 
-    public void clearGUI(final GuiManager guiManager)
+    public void clearGUI(final Gui gui)
     {
-        currentGui = new Gui(mouseTracker, commands, guiManager);
+        currentGui = gui;
         currentGuiChanged = true;
         for (int ig = 0; ig < 3; ig++)
         {
@@ -329,7 +336,7 @@ public class JXCWindowRenderer
     private void redrawGUIBasic(final Graphics g)
     {
         currentGuiChanged = false;
-        currentGui.redraw(g, window);
+        currentGui.redraw(g);
     }
 
     private void redrawGUIDialog(final Graphics g)
@@ -339,7 +346,7 @@ public class JXCWindowRenderer
         {
             if (!dialog.isHidden(guiState))
             {
-                dialog.redraw(g, window);
+                dialog.redraw(g);
             }
         }
     }

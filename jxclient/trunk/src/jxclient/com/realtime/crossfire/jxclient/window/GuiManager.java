@@ -29,6 +29,11 @@ import javax.swing.Timer;
 public class GuiManager
 {
     /**
+     * Whether gui debugging is active.
+     */
+    private final boolean debugGui;
+
+    /**
      * The semaphore used to synchronized drawing operations.
      */
     private final Object semaphoreDrawing;
@@ -208,12 +213,13 @@ public class GuiManager
      */
     public GuiManager(final JXCWindow window, final boolean debugGui, final Object semaphoreDrawing, final Object semaphoreRedraw, final TooltipManager tooltipManager, final Settings settings)
     {
+        this.debugGui = debugGui;
         this.semaphoreDrawing = semaphoreDrawing;
         this.window = window;
         this.tooltipManager = tooltipManager;
         this.settings = settings;
         mouseTracker = new MouseTracker(debugGui);
-        windowRenderer = new JXCWindowRenderer(window, mouseTracker, semaphoreRedraw);
+        windowRenderer = new JXCWindowRenderer(window, mouseTracker, semaphoreRedraw, debugGui);
         mouseTracker.init(windowRenderer);
     }
 
@@ -221,9 +227,9 @@ public class GuiManager
     public void init(ScriptManager scriptManager, final CommandQueue commandQueue, final CrossfireServerConnection server, final OptionManager optionManager)
     {
         commands = new Commands(window, windowRenderer, commandQueue, server, scriptManager, optionManager, this);
-        windowRenderer.init(commands, this);
-        queryDialog = new Gui(mouseTracker, commands, this);
-        keybindDialog = new Gui(mouseTracker, commands, this);
+        windowRenderer.init(commands, new Gui(mouseTracker, commands, this, debugGui));
+        queryDialog = new Gui(mouseTracker, commands, this, debugGui);
+        keybindDialog = new Gui(mouseTracker, commands, this, debugGui);
     }
 
     /**
@@ -689,7 +695,7 @@ public class GuiManager
      */
     public void showGUIStart()
     {
-        windowRenderer.clearGUI(this);
+        windowRenderer.clearGUI(new Gui(mouseTracker, commands, this, debugGui));
         windowRenderer.setCurrentGui(skin.getStartInterface());
         tooltipManager.reset();
     }
@@ -699,7 +705,7 @@ public class GuiManager
      */
     public void showGUIMeta()
     {
-        windowRenderer.clearGUI(this);
+        windowRenderer.clearGUI(new Gui(mouseTracker, commands, this, debugGui));
         final Gui newGui = skin.getMetaInterface();
         windowRenderer.setCurrentGui(newGui);
         newGui.activateDefaultElement();
@@ -711,7 +717,7 @@ public class GuiManager
      */
     public void showGUIMain()
     {
-        windowRenderer.clearGUI(this);
+        windowRenderer.clearGUI(new Gui(mouseTracker, commands, this, debugGui));
         final Gui newGui = skin.getMainInterface();
         windowRenderer.setCurrentGui(newGui);
         tooltipManager.reset();

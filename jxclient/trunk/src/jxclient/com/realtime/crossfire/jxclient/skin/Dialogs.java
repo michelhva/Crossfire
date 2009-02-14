@@ -36,6 +36,11 @@ import java.util.Set;
 public class Dialogs implements Iterable<Gui>
 {
     /**
+     * Whether gui debugging is active.
+     */
+    private final boolean debugGui;
+
+    /**
      * The existing dialogs.
      */
     private final JXCSkinCache<Gui> dialogs = new JXCSkinCache<Gui>("dialog");
@@ -44,6 +49,15 @@ public class Dialogs implements Iterable<Gui>
      * Names of pending skin files.
      */
     private final Set<String> dialogsToLoad = new HashSet<String>();
+
+    /**
+     * Creates a new instance.
+     * @param debugGui whether gui debugging is active
+     */
+    public Dialogs(final boolean debugGui)
+    {
+        this.debugGui = debugGui;
+    }
 
     /**
      * Forgets about all dialogs.
@@ -81,7 +95,7 @@ public class Dialogs implements Iterable<Gui>
         }
         catch (final JXCSkinException ex)
         {
-            final Gui gui = new Gui(mouseTracker, commands, guiManager);
+            final Gui gui = new Gui(mouseTracker, commands, guiManager, debugGui);
             try
             {
                 dialogs.insert(name, gui);
