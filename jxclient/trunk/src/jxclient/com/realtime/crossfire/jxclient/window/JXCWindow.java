@@ -20,19 +20,12 @@
 package com.realtime.crossfire.jxclient.window;
 
 import com.realtime.crossfire.jxclient.animations.Animations;
-import com.realtime.crossfire.jxclient.commands.Commands;
 import com.realtime.crossfire.jxclient.experience.ExperienceTable;
 import com.realtime.crossfire.jxclient.faces.FaceCache;
 import com.realtime.crossfire.jxclient.faces.FacesManager;
 import com.realtime.crossfire.jxclient.faces.FileCache;
-import com.realtime.crossfire.jxclient.gui.AbstractLabel;
-import com.realtime.crossfire.jxclient.gui.GUIOneLineLabel;
-import com.realtime.crossfire.jxclient.gui.Gui;
 import com.realtime.crossfire.jxclient.gui.TooltipManager;
 import com.realtime.crossfire.jxclient.gui.keybindings.KeyBindings;
-import com.realtime.crossfire.jxclient.gui.list.GUIMetaElementList;
-import com.realtime.crossfire.jxclient.gui.log.GUILabelLog;
-import com.realtime.crossfire.jxclient.gui.textinput.GUIText;
 import com.realtime.crossfire.jxclient.items.CfPlayer;
 import com.realtime.crossfire.jxclient.items.ItemsManager;
 import com.realtime.crossfire.jxclient.items.PlayerListener;
@@ -43,11 +36,9 @@ import com.realtime.crossfire.jxclient.metaserver.MetaserverModel;
 import com.realtime.crossfire.jxclient.scripts.ScriptManager;
 import com.realtime.crossfire.jxclient.server.CommandQueue;
 import com.realtime.crossfire.jxclient.server.ConnectionListener;
-import com.realtime.crossfire.jxclient.server.CrossfireDrawextinfoListener;
 import com.realtime.crossfire.jxclient.server.CrossfireQueryListener;
 import com.realtime.crossfire.jxclient.server.CrossfireServerConnection;
 import com.realtime.crossfire.jxclient.server.DefaultCrossfireServerConnection;
-import com.realtime.crossfire.jxclient.server.MessageTypes;
 import com.realtime.crossfire.jxclient.server.Pickup;
 import com.realtime.crossfire.jxclient.settings.Filenames;
 import com.realtime.crossfire.jxclient.settings.Settings;
@@ -73,8 +64,6 @@ import com.realtime.crossfire.jxclient.stats.ActiveSkillWatcher;
 import com.realtime.crossfire.jxclient.stats.PoisonWatcher;
 import com.realtime.crossfire.jxclient.stats.Stats;
 import java.awt.Graphics;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
 import java.awt.event.KeyEvent;
 import java.awt.event.KeyListener;
 import java.awt.event.WindowAdapter;
@@ -88,7 +77,6 @@ import java.io.Writer;
 import java.util.ArrayList;
 import java.util.List;
 import javax.swing.JFrame;
-import javax.swing.Timer;
 
 /**
  *
@@ -109,6 +97,11 @@ public class JXCWindow extends JFrame
      * The connection state listeners to notify.
      */
     private final List<ConnectionStateListener> connectionStateListeners = new ArrayList<ConnectionStateListener>();
+
+    /**
+     * The {@link GuiManager} for controlling the main GUI state.
+     */
+    private final GuiManager guiManager;
 
     private GuiState guiState = null;
 
@@ -190,24 +183,6 @@ public class JXCWindow extends JFrame
      */
     private final SoundManager soundManager;
 
-    private Gui queryDialog;
-
-    private Gui keybindDialog;
-
-    /**
-     * The "really quit?" dialog. Set to <code>null</code> if the skin does not
-     * define this dialog.
-     */
-    private Gui dialogQuit = null;
-
-    /**
-     * The "really disconnect?" dialog. Set to <code>null</code> if the skin
-     * does not define this dialog.
-     */
-    private Gui dialogDisconnect = null;
-
-    private JXCSkin skin = null;
-
     /**
      * The key bindings manager for this window.
      */
@@ -225,22 +200,10 @@ public class JXCWindow extends JFrame
      */
     private final Object semaphoreRedraw = new Object();
 
-    private final JXCWindowRenderer windowRenderer;
-
-    /**
-     * The {@link TooltipManager} for this window.
-     */
-    private final TooltipManager tooltipManager = new TooltipManager(this);
-
     /**
      * The option manager for this window.
      */
     private final OptionManager optionManager;
-
-    /**
-     * The commands instance for this window.
-     */
-    private final Commands commands;
 
     /**
      * The current spell manager instance for this window.
@@ -258,11 +221,6 @@ public class JXCWindow extends JFrame
     private final Metaserver metaserver = new Metaserver(Filenames.getMetaserverCacheFile(), metaserverModel);
 
     /**
-     * The mouse tracker.
-     */
-    private final MouseTracker mouseTracker;
-
-    /**
      * The connection.
      */
     private final JXCConnection connection;
@@ -271,32 +229,6 @@ public class JXCWindow extends JFrame
      * The size of the client area.
      */
     private Resolution resolution = null;
-
-    /**
-     * Whether the currently shown query dialog is the character name prompt.
-     */
-    private boolean currentQueryDialogIsNamePrompt = false;
-
-    /**
-     * Called periodically to update the display contents.
-     */
-    private final ActionListener actionListener = new ActionListener()
-    {
-        /** {@inheritDoc} */
-        @Override
-        public void actionPerformed(final ActionEvent e)
-        {
-            synchronized (semaphoreDrawing)
-            {
-                windowRenderer.redrawGUI();
-            }
-        }
-    };
-
-    /**
-     * The timer used to update the display contents.
-     */
-    private final Timer timer = new Timer(10, actionListener);
 
     public enum Status
     {
@@ -355,11 +287,7 @@ public class JXCWindow extends JFrame
         @Override
         public void playerReceived(final CfPlayer player)
         {
-            if (windowRenderer.getGuiState() == JXCWindowRenderer.GuiState.NEWCHAR)
-            {
-                openDialogByName("messages"); // hack for race selection
-            }
-            windowRenderer.setGuiState(JXCWindowRenderer.GuiState.PLAYING);
+            guiManager.playerReceived();
             commandQueue.sendNcom(true, 1, "output-count 1"); // to make message merging work reliably
             characterPickup.update();                         // reset pickup mode
         }
@@ -401,17 +329,12 @@ public class JXCWindow extends JFrame
         {
             if (keybindingsManager.windowClosing())
             {
-                closeKeybindDialog();
+                guiManager.closeKeybindDialog();
             }
 
-            if (dialogQuit == null)
+            if(!guiManager.openQuitDialog())
             {
                 quitApplication();
-            }
-            else
-            {
-                windowRenderer.closeDialog(dialogDisconnect);
-                windowRenderer.openDialog(dialogQuit);
             }
         }
 
@@ -468,49 +391,18 @@ public class JXCWindow extends JFrame
         @Override
         public void escPressed()
         {
-            if (keybindingsManager.escPressed())
+            switch (guiManager.escPressed(keybindingsManager.escPressed(), status))
             {
-                windowRenderer.closeDialog(keybindDialog);
-            }
-            else if (deactivateCommandInput())
-            {
-                // ignore
-            }
-            else if (status != JXCWindow.Status.UNCONNECTED)
-            {
-                if (dialogDisconnect == null)
-                {
-                    disconnect();
-                }
-                else if (windowRenderer.openDialog(dialogDisconnect))
-                {
-                    if (dialogQuit != null)
-                    {
-                        windowRenderer.closeDialog(dialogQuit);
-                    }
-                }
-                else
-                {
-                    windowRenderer.closeDialog(dialogDisconnect);
-                }
-            }
-            else
-            {
-                if (dialogQuit == null)
-                {
-                    quitApplication();
-                }
-                else if (windowRenderer.openDialog(dialogQuit))
-                {
-                    if (dialogDisconnect != null)
-                    {
-                        windowRenderer.closeDialog(dialogDisconnect);
-                    }
-                }
-                else
-                {
-                    windowRenderer.closeDialog(dialogQuit);
-                }
+            case 0:
+                break;
+
+            case 1:
+                disconnect();
+                break;
+
+            case 2:
+                quitApplication();
+                break;
             }
         }
 
@@ -518,7 +410,7 @@ public class JXCWindow extends JFrame
         @Override
         public void keyReleased()
         {
-            closeKeybindDialog();
+            guiManager.closeKeybindDialog();
         }
     };
 
@@ -535,122 +427,8 @@ public class JXCWindow extends JFrame
             synchronized (semaphoreDrawing)
             {
                 setStatus(Status.QUERY);
-                windowRenderer.openDialog(queryDialog);
-                queryDialog.setHideInput((queryType&CrossfireQueryListener.HIDEINPUT) != 0);
-
-                currentQueryDialogIsNamePrompt = prompt.startsWith("What is your name?");
-                if (currentQueryDialogIsNamePrompt)
-                {
-                    final String playerName = settings.getString("player_"+connection.getHostname(), "");
-                    if (playerName.length() > 0)
-                    {
-                        final GUIText textArea = queryDialog.getFirstTextArea();
-                        if (textArea != null)
-                        {
-                            textArea.setText(playerName);
-                        }
-                    }
-                }
-                else if (prompt.startsWith("[y] to roll new stats")
-                || prompt.startsWith("Welcome, Brave New Warrior!"))
-                {
-                    windowRenderer.setGuiState(JXCWindowRenderer.GuiState.NEWCHAR);
-                    if (openDialogByName("newchar"))
-                    {
-                        closeDialogByName("messages");
-                        closeDialogByName("status");
-                    }
-                    else
-                    {
-                        // fallback: open both message and status dialogs if this skin
-                        // does not define a login dialog
-                        openDialogByName("messages");
-                        openDialogByName("status");
-                    }
-                    openDialog(queryDialog); // raise dialog
-                }
+                guiManager.openQueryDialog(prompt, queryType, connection);
             }
-        }
-    };
-
-    /**
-     * The {@link CrossfireDrawextinfoListener} attached to {@link #server}.
-     */
-    private final CrossfireDrawextinfoListener crossfireDrawextinfoListener = new CrossfireDrawextinfoListener()
-    {
-        /** {@inheritDoc} */
-        @Override
-        public void commandDrawextinfoReceived(final int color, final int type, final int subtype, String message)
-        {
-            final Gui dialog;
-            switch (type)
-            {
-            case MessageTypes.MSG_TYPE_BOOK:
-                dialog = skin.getDialogBook(1);
-                final GUIOneLineLabel title = dialog.getDialogTitle();
-                if (title != null)
-                {
-                    final String[] tmp = message.split("\n", 2);
-                    title.setText(tmp[0]);
-                    message = tmp.length >= 2 ? tmp[1] : "";
-                }
-                break;
-
-            case MessageTypes.MSG_TYPE_CARD:
-            case MessageTypes.MSG_TYPE_PAPER:
-            case MessageTypes.MSG_TYPE_SIGN:
-            case MessageTypes.MSG_TYPE_MONUMENT:
-            case MessageTypes.MSG_TYPE_DIALOG:
-                dialog = null;
-                break;
-
-            case MessageTypes.MSG_TYPE_MOTD:
-                /*
-                 * We do not display a MOTD dialog, because it interferes with the
-                 * query dialog that gets displayed just after it.
-                 */
-                dialog = null;
-                break;
-
-            case MessageTypes.MSG_TYPE_ADMIN:
-            case MessageTypes.MSG_TYPE_SHOP:
-            case MessageTypes.MSG_TYPE_COMMAND:
-            case MessageTypes.MSG_TYPE_ATTRIBUTE:
-            case MessageTypes.MSG_TYPE_SKILL:
-            case MessageTypes.MSG_TYPE_APPLY:
-            case MessageTypes.MSG_TYPE_ATTACK:
-            case MessageTypes.MSG_TYPE_COMMUNICATION:
-            case MessageTypes.MSG_TYPE_SPELL:
-            case MessageTypes.MSG_TYPE_ITEM:
-            case MessageTypes.MSG_TYPE_MISC:
-            case MessageTypes.MSG_TYPE_VICTIM:
-                dialog = null;
-                break;
-
-            default:
-                dialog = null;
-                break;
-            }
-
-            if (dialog == null)
-            {
-                return;
-            }
-
-            final AbstractLabel label = dialog.getFirstLabel();
-            if (label != null)
-            {
-                label.setText(message);
-            }
-            else
-            {
-                final GUILabelLog log = dialog.getFirstLabelLog();
-                if (log != null)
-                {
-                    log.updateText(message);
-                }
-            }
-            windowRenderer.openDialog(dialog);
         }
     };
 
@@ -698,16 +476,11 @@ public class JXCWindow extends JFrame
         new PoisonWatcher(stats, server);
         new ActiveSkillWatcher(stats, server);
         setDefaultCloseOperation(DO_NOTHING_ON_CLOSE);
-        mouseTracker = new MouseTracker(debugGui);
-        windowRenderer = new JXCWindowRenderer(this, mouseTracker, semaphoreRedraw);
-        mouseTracker.init(windowRenderer);
+        guiManager = new GuiManager(this, debugGui, semaphoreDrawing, semaphoreRedraw, new TooltipManager(this), settings);
         final ScriptManager scriptManager = new ScriptManager(this, commandQueue, server, stats, itemsManager, spellsManager, mapUpdater, skillSet);
-        commands = new Commands(this, windowRenderer, commandQueue, server, scriptManager, optionManager);
-        windowRenderer.init(commands);
-        queryDialog = new Gui(this, mouseTracker, commands);
-        keybindDialog = new Gui(this, mouseTracker, commands);
-        keybindingsManager = new KeybindingsManager(commands, this);
-        keyHandler = new KeyHandler(debugKeyboard, keybindingsManager, commandQueue, windowRenderer, keyHandlerListener);
+        guiManager.init(scriptManager, commandQueue, server, optionManager);
+        keybindingsManager = new KeybindingsManager(guiManager.getCommands(), guiManager);
+        keyHandler = new KeyHandler(debugKeyboard, keybindingsManager, commandQueue, guiManager.getWindowRenderer(), keyHandlerListener);
         try
         {
             characterPickup = new Pickup(commandQueue, optionManager);
@@ -732,7 +505,7 @@ public class JXCWindow extends JFrame
         final boolean result = keybindingsManager.createKeyBinding(perCharacter, cmdlist);
         if (result)
         {
-            openKeybindDialog();
+            guiManager.openKeybindDialog();
         }
         return result;
     }
@@ -742,7 +515,7 @@ public class JXCWindow extends JFrame
         final boolean result = keybindingsManager.removeKeyBinding(perCharacter);
         if (result)
         {
-            openKeybindDialog();
+            guiManager.openKeybindDialog();
         }
         return result;
     }
@@ -805,95 +578,16 @@ public class JXCWindow extends JFrame
         }
     }
 
-    /**
-     * Open a dialog. Raises an already opened dialog.
-     *
-     * @param dialog The dialog to show.
-     */
-    public void openDialog(final Gui dialog)
-    {
-        windowRenderer.openDialog(dialog);
-        if (dialog == queryDialog)
-        {
-            dialog.setHideInput(false);
-        }
-    }
-
-    /**
-     * Toggle a dialog.
-     *
-     * @param dialog The dialog to toggle.
-     */
-    public void toggleDialog(final Gui dialog)
-    {
-        if (windowRenderer.toggleDialog(dialog))
-        {
-            if (dialog == queryDialog)
-            {
-                dialog.setHideInput(false);
-            }
-        }
-    }
-
-    /**
-     * Close the "query" dialog. Does nothing if the dialog is not open.
-     */
-    public void closeQueryDialog()
-    {
-        windowRenderer.closeDialog(queryDialog);
-    }
-
     private void initRendering(final boolean fullScreen)
     {
-        windowRenderer.initRendering(fullScreen);
-        DialogStateParser.load(skin, windowRenderer);
+        guiManager.initRendering(fullScreen);
         keybindingsManager.loadKeybindings();
         loadShortcuts();
     }
 
-    /**
-     * Opens a dialog by name.
-     * @param name the dialog name
-     * @return whether the dialog exists
-     */
-    private boolean openDialogByName(final String name)
-    {
-        final Gui dialog;
-        try
-        {
-            dialog = skin.getDialog(name);
-        }
-        catch (final JXCSkinException ex)
-        {
-            return false;
-        }
-
-        openDialog(dialog);
-        return true;
-    }
-
-    /**
-     * Closes a dialog by name.
-     * @param name the dialog name
-     */
-    private void closeDialogByName(final String name)
-    {
-        final Gui dialog;
-        try
-        {
-            dialog = skin.getDialog(name);
-        }
-        catch (final JXCSkinException ex)
-        {
-            // ignore
-            return;
-        }
-        windowRenderer.closeDialog(dialog);
-    }
-
     public void quitApplication()
     {
-        timer.stop();
+        guiManager.terminate();
         synchronized (terminateSync)
         {
             terminateSync.notifyAll();
@@ -929,7 +623,7 @@ public class JXCWindow extends JFrame
                 itemsManager.addCrossfirePlayerListener(playerListener);
                 stats.reset();
                 skillSet.clearNumberedSkills();
-                connection.connect(connectionListener, crossfireQueryListener, crossfireDrawextinfoListener, skin.getMapWidth(), skin.getMapHeight(), skin.getNumLookObjects());
+                connection.connect(connectionListener, crossfireQueryListener, guiManager.crossfireDrawextinfoListener, guiManager.getSkin().getMapWidth(), guiManager.getSkin().getMapHeight(), guiManager.getSkin().getNumLookObjects());
                 facesManager.reset();
                 commandQueue.clear();
                 itemsManager.reset();
@@ -942,56 +636,38 @@ public class JXCWindow extends JFrame
                 }
             }
 
-            if (dialogDisconnect != null)
-            {
-                windowRenderer.closeDialog(dialogDisconnect);
-            }
-            if (dialogQuit != null)
-            {
-                windowRenderer.closeDialog(dialogQuit);
-            }
-            windowRenderer.closeDialog(queryDialog);
-            windowRenderer.closeDialog(skin.getDialogBook(1));
+            guiManager.closeTransientDialogs();
 
             switch (guiState)
             {
             case START:
                 soundManager.muteMusic(true);
                 soundManager.mute(Sounds.CHARACTER, true);
-                windowRenderer.setGuiState(JXCWindowRenderer.GuiState.START);
+                guiManager.setGuiState(JXCWindowRenderer.GuiState.START);
                 if (DISABLE_START_GUI)
                 {
                     quitApplication();
                 }
                 else
                 {
-                    showGUIStart();
+                    guiManager.showGUIStart();
                 }
                 break;
 
             case METASERVER:
                 soundManager.muteMusic(true);
                 soundManager.mute(Sounds.CHARACTER, true);
-                windowRenderer.setGuiState(JXCWindowRenderer.GuiState.META);
-                showGUIMeta();
+                guiManager.setGuiState(JXCWindowRenderer.GuiState.META);
+                guiManager.showGUIMeta();
                 metaserver.query();
-
-                final String serverName = settings.getString("server", "crossfire.metalforge.net");
-                if (serverName.length() > 0)
-                {
-                    final GUIMetaElementList metaElementList = windowRenderer.getCurrentGui().getMetaElementList();
-                    if (metaElementList != null)
-                    {
-                        metaElementList.setSelectedHostname(serverName);
-                    }
-                }
+                guiManager.activateMetaserverGui();
                 break;
 
             case MAIN:
                 metaserver.disable();
                 soundManager.muteMusic(false);
-                windowRenderer.setGuiState(JXCWindowRenderer.GuiState.LOGIN);
-                showGUIMain();
+                guiManager.setGuiState(JXCWindowRenderer.GuiState.LOGIN);
+                guiManager.showGUIMain();
                 break;
             }
         }
@@ -1001,11 +677,10 @@ public class JXCWindow extends JFrame
     {
         new MusicWatcher(server, soundManager);
         new SoundWatcher(server, soundManager);
-        new StatsWatcher(stats, windowRenderer, itemsManager, soundManager);
+        new StatsWatcher(stats, guiManager.getWindowRenderer(), itemsManager, soundManager);
         this.resolution = resolution;
         addKeyListener(keyListener);
-        addMouseListener(mouseTracker);
-        addMouseMotionListener(mouseTracker);
+        guiManager.init2(this);
         if (!setSkin(skinName))
         {
             if (skinName.equals(Options.DEFAULT_SKIN))
@@ -1020,7 +695,6 @@ public class JXCWindow extends JFrame
                 throw new AssertionError();
             }
         }
-        windowRenderer.init(skin.getResolution());
         initRendering(fullScreen);
 
         if (serverInfo != null)
@@ -1031,7 +705,7 @@ public class JXCWindow extends JFrame
         {
             changeGUI(DISABLE_START_GUI ? GuiState.METASERVER : GuiState.START);
         }
-        timer.start();
+        guiManager.init3();
     }
 
     /**
@@ -1039,10 +713,9 @@ public class JXCWindow extends JFrame
      */
     public void term()
     {
-        windowRenderer.endRendering();
+        guiManager.term();
         saveShortcuts();
         keybindingsManager.saveKeybindings();
-        DialogStateParser.save(skin, windowRenderer);
         optionManager.saveOptions();
         soundManager.shutdown();
     }
@@ -1059,35 +732,11 @@ public class JXCWindow extends JFrame
         changeGUI(GuiState.METASERVER);
     }
 
-    private void showGUIStart()
-    {
-        windowRenderer.clearGUI();
-        windowRenderer.setCurrentGui(skin.getStartInterface());
-        tooltipManager.reset();
-    }
-
-    private void showGUIMeta()
-    {
-        windowRenderer.clearGUI();
-        final Gui newGui = skin.getMetaInterface();
-        windowRenderer.setCurrentGui(newGui);
-        newGui.activateDefaultElement();
-        tooltipManager.reset();
-    }
-
-    private void showGUIMain()
-    {
-        windowRenderer.clearGUI();
-        final Gui newGui = skin.getMainInterface();
-        windowRenderer.setCurrentGui(newGui);
-        tooltipManager.reset();
-    }
-
     /** {@inheritDoc} */
     @Override
     public void paint(final Graphics g)
     {
-        windowRenderer.repaint();
+        guiManager.repaint();
     }
 
     /**
@@ -1099,12 +748,8 @@ public class JXCWindow extends JFrame
      */
     private boolean setSkin(final String skinName)
     {
-        if (skin != null)
-        {
-            skin.detach();
-            skin = null;
-        }
-
+        guiManager.unsetSkin();
+        final JXCSkin skin;
         try
         {
             skin = loadSkin(skinName);
@@ -1114,14 +759,10 @@ public class JXCWindow extends JFrame
             System.err.println("cannot load skin "+skinName+": "+ex.getMessage());
             return false;
         }
-
-        skin.attach(this);
-        queryDialog = skin.getDialogQuery();
-        keybindDialog = skin.getDialogKeyBind();
-        dialogQuit = skin.getDialogQuit();
-        dialogDisconnect = skin.getDialogDisconnect();
+        skin.attach(guiManager);
+        guiManager.setSkin(skin);
         optionManager.loadOptions();
-        keyHandler.setKeyBindings(skin.getDefaultKeyBindings());
+        keyHandler.setKeyBindings(guiManager.getSkin().getDefaultKeyBindings());
         return true;
     }
 
@@ -1135,7 +776,7 @@ public class JXCWindow extends JFrame
     {
         // check for skin in directory
         final File dir = new File(skinName);
-        final KeyBindings defaultKeyBindings = new KeyBindings(null, commands, this);
+        final KeyBindings defaultKeyBindings = new KeyBindings(null, guiManager.getCommands(), guiManager);
         final JXCSkinSource skinSource;
         if (dir.exists() && dir.isDirectory())
         {
@@ -1147,7 +788,7 @@ public class JXCWindow extends JFrame
             skinSource = new JXCSkinClassSource("com/realtime/crossfire/jxclient/skins/"+skinName);
         }
         final JXCSkinLoader newSkin = new JXCSkinLoader(itemsManager, spellsManager, facesManager, stats, mapUpdater, defaultKeyBindings, optionManager, experienceTable, skillSet);
-        return newSkin.load(skinSource, server, this, mouseTracker, metaserverModel, commandQueue, resolution, shortcuts, commands, currentSpellManager);
+        return newSkin.load(skinSource, server, this, guiManager.mouseTracker, metaserverModel, commandQueue, resolution, shortcuts, guiManager.getCommands(), currentSpellManager, guiManager);
     }
 
     /**
@@ -1171,110 +812,13 @@ public class JXCWindow extends JFrame
     }
 
     /**
-     * Activate the command input text field. If the skin defined more than one
-     * input field, the first matching one is selected.
-     *
-     * <p>If neither the main gui nor any visible dialog has an input text
-     * field, invisible guis are checked as well. If one is found, it is made
-     * visible.
-     *
-     * @param newText the new command text if non-<code>null</code>
-     */
-    public void activateCommandInput(final String newText)
-    {
-        final GUIText textArea = activateCommandInput();
-        if (textArea != null && newText != null && newText.length() > 0)
-        {
-            textArea.setText(newText);
-        }
-    }
-
-    /**
-     * Activate the command input text field. If the skin defined more than one
-     * input field, the first matching one is selected.
-     *
-     * <p>If neither the main gui nor any visible dialog has an input text
-     * field, invisible guis are checked as well. If one is found, it is made
-     * visible.
-     *
-     * @return The command input text field, or <code>null</code> if the skin
-     * has no command input text field defined.
-     */
-    private GUIText activateCommandInput()
-    {
-        // check main gui
-        final GUIText textArea1 = windowRenderer.getCurrentGui().activateCommandInput();
-        if (textArea1 != null)
-        {
-            return textArea1;
-        }
-
-        // check visible dialogs
-        for (final Gui dialog : windowRenderer.getOpenDialogs())
-        {
-            if (!dialog.isHidden(windowRenderer.getGuiState()))
-            {
-                final GUIText textArea2 = dialog.activateCommandInput();
-                if (textArea2 != null)
-                {
-                    openDialog(dialog); // raise dialog
-                    return textArea2;
-                }
-            }
-            if (dialog.isModal())
-            {
-                return null;
-            }
-        }
-
-        // check invisible dialogs
-        for (final Gui dialog : skin)
-        {
-            final GUIText textArea3 = dialog.activateCommandInput();
-            if (textArea3 != null)
-            {
-                openDialog(dialog);
-                dialog.setAutoCloseOnDeactivate(true);
-                return textArea3;
-            }
-        }
-
-        return null;
-    }
-
-    /**
-     * Deactivates the command input text field. Does nothing if the command
-     * input text field is not active.
-     * @return  whether the command input text field has been deactivated
-     */
-    private boolean deactivateCommandInput()
-    {
-        for (final Gui dialog : windowRenderer.getOpenDialogs())
-        {
-            if (!dialog.isHidden(windowRenderer.getGuiState()))
-            {
-                if (dialog.deactivateCommandInput())
-                {
-                    return true;
-                }
-                if (dialog.isModal())
-                {
-                    return false;
-                }
-            }
-        }
-
-        return windowRenderer.getCurrentGui().deactivateCommandInput();
-    }
-
-    /**
      * Return the current skin.
      *
      * @return The skin.
      */
     public JXCSkin getSkin()
     {
-        return skin;
+        return guiManager.getSkin();
     }
 
     /**
@@ -1294,7 +838,7 @@ public class JXCWindow extends JFrame
      */
     public JXCWindowRenderer getWindowRenderer()
     {
-        return windowRenderer;
+        return guiManager.getWindowRenderer();
     }
 
     /**
@@ -1304,7 +848,7 @@ public class JXCWindow extends JFrame
      */
     public TooltipManager getTooltipManager()
     {
-        return tooltipManager;
+        return guiManager.getTooltipManager();
     }
 
     /**
@@ -1315,10 +859,7 @@ public class JXCWindow extends JFrame
      */
     public void updatePlayerName(final String playerName)
     {
-        if (currentQueryDialogIsNamePrompt)
-        {
-            settings.putString("player_"+connection.getHostname(), playerName);
-        }
+        guiManager.updatePlayerName(playerName, connection);
     }
 
     /**
@@ -1352,7 +893,7 @@ public class JXCWindow extends JFrame
     {
         setStatus(JXCWindow.Status.PLAYING);
         server.sendReply(reply);
-        closeQueryDialog();
+        guiManager.closeQueryDialog();
     }
 
     /**
@@ -1373,22 +914,6 @@ public class JXCWindow extends JFrame
     public void removeConnectionStateListener(final ConnectionStateListener listener)
     {
         connectionStateListeners.remove(listener);
-    }
-
-    /**
-     * Opens the keybinding dialog. Does nothing if the dialog is opened.
-     */
-    private void openKeybindDialog()
-    {
-        windowRenderer.openDialog(keybindDialog);
-    }
-
-    /**
-     * Closes the keybinding dialog. Does nothing if the dialog is not opened.
-     */
-    private void closeKeybindDialog()
-    {
-        windowRenderer.closeDialog(keybindDialog);
     }
 
     /**

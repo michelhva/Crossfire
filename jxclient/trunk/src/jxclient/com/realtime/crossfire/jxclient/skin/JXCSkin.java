@@ -23,7 +23,7 @@ import com.realtime.crossfire.jxclient.gui.Gui;
 import com.realtime.crossfire.jxclient.gui.GUIElement;
 import com.realtime.crossfire.jxclient.gui.keybindings.KeyBindings;
 import com.realtime.crossfire.jxclient.window.GUICommandList;
-import com.realtime.crossfire.jxclient.window.JXCWindow;
+import com.realtime.crossfire.jxclient.window.GuiManager;
 import java.util.Iterator;
 
 /**
@@ -153,10 +153,10 @@ public interface JXCSkin extends Iterable<Gui>
     KeyBindings getDefaultKeyBindings();
 
     /**
-     * Attaches this skin to a window.
-     * @param window the window to attach to
+     * Attaches this skin to a gui manager.
+     * @param guiManager the gui manager to attach to
      */
-    void attach(JXCWindow window);
+    void attach(GuiManager guiManager);
 
     /**
      * Frees all allocated resources.

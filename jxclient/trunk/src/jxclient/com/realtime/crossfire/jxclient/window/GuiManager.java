@@ -1,0 +1,730 @@
+package com.realtime.crossfire.jxclient.window;
+
+import com.realtime.crossfire.jxclient.commands.Commands;
+import com.realtime.crossfire.jxclient.gui.AbstractLabel;
+import com.realtime.crossfire.jxclient.gui.GUIOneLineLabel;
+import com.realtime.crossfire.jxclient.gui.Gui;
+import com.realtime.crossfire.jxclient.gui.TooltipManager;
+import com.realtime.crossfire.jxclient.gui.list.GUIMetaElementList;
+import com.realtime.crossfire.jxclient.gui.log.GUILabelLog;
+import com.realtime.crossfire.jxclient.gui.textinput.GUIText;
+import com.realtime.crossfire.jxclient.scripts.ScriptManager;
+import com.realtime.crossfire.jxclient.server.CommandQueue;
+import com.realtime.crossfire.jxclient.server.CrossfireDrawextinfoListener;
+import com.realtime.crossfire.jxclient.server.CrossfireQueryListener;
+import com.realtime.crossfire.jxclient.server.CrossfireServerConnection;
+import com.realtime.crossfire.jxclient.server.MessageTypes;
+import com.realtime.crossfire.jxclient.settings.Settings;
+import com.realtime.crossfire.jxclient.settings.options.OptionManager;
+import com.realtime.crossfire.jxclient.skin.JXCSkin;
+import com.realtime.crossfire.jxclient.skin.JXCSkinException;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+import javax.swing.Timer;
+
+/**
+ * Maintains the application's main GUI state.
+ * @author Andreas Kirschbaum
+ */
+public class GuiManager
+{
+    /**
+     * The semaphore used to synchronized drawing operations.
+     */
+    private final Object semaphoreDrawing;
+
+    /**
+     * The associated {@link JXCWindow} instance.
+     */
+    private final JXCWindow window;
+
+    /**
+     * The currently active skin. Set to <code>null</code> if no skin is set.
+     */
+    private JXCSkin skin = null;
+
+    /**
+     * The {@link JXCWindowRenderer} used to paint the gui.
+     */
+    private final JXCWindowRenderer windowRenderer;
+
+    /**
+     * The query dialog.
+     */
+    private Gui queryDialog;
+
+    /**
+     * The keybindings dialog.
+     */
+    private Gui keybindDialog;
+
+    /**
+     * The "really quit?" dialog. Set to <code>null</code> if the skin does not
+     * define this dialog.
+     */
+    private Gui dialogQuit = null;
+
+    /**
+     * The "really disconnect?" dialog. Set to <code>null</code> if the skin
+     * does not define this dialog.
+     */
+    private Gui dialogDisconnect = null;
+
+    /**
+     * Whether the currently shown query dialog is the character name prompt.
+     */
+    private boolean currentQueryDialogIsNamePrompt = false;
+
+    /**
+     * The mouse tracker.
+     */
+    public final MouseTracker mouseTracker;
+
+    /**
+     * The commands instance for this window.
+     */
+    private Commands commands;
+
+    /**
+     * The {@link TooltipManager} for this window.
+     */
+    private final TooltipManager tooltipManager;
+
+    /**
+     * The {@link Settings} to use.
+     */
+    private final Settings settings;
+
+    /**
+     * Called periodically to update the display contents.
+     */
+    private final ActionListener actionListener = new ActionListener()
+    {
+        /** {@inheritDoc} */
+        @Override
+        public void actionPerformed(final ActionEvent e)
+        {
+            synchronized (semaphoreDrawing)
+            {
+                windowRenderer.redrawGUI();
+            }
+        }
+    };
+
+    /**
+     * The timer used to update the display contents.
+     */
+    private final Timer timer = new Timer(10, actionListener);
+
+    /**
+     * The {@link CrossfireDrawextinfoListener}.
+     */
+    public final CrossfireDrawextinfoListener crossfireDrawextinfoListener = new CrossfireDrawextinfoListener()
+    {
+        /** {@inheritDoc} */
+        @Override
+        public void commandDrawextinfoReceived(final int color, final int type, final int subtype, String message)
+        {
+            final Gui dialog;
+            switch (type)
+            {
+            case MessageTypes.MSG_TYPE_BOOK:
+                dialog = skin.getDialogBook(1);
+                final GUIOneLineLabel title = dialog.getDialogTitle();
+                if (title != null)
+                {
+                    final String[] tmp = message.split("\n", 2);
+                    title.setText(tmp[0]);
+                    message = tmp.length >= 2 ? tmp[1] : "";
+                }
+                break;
+
+            case MessageTypes.MSG_TYPE_CARD:
+            case MessageTypes.MSG_TYPE_PAPER:
+            case MessageTypes.MSG_TYPE_SIGN:
+            case MessageTypes.MSG_TYPE_MONUMENT:
+            case MessageTypes.MSG_TYPE_DIALOG:
+                dialog = null;
+                break;
+
+            case MessageTypes.MSG_TYPE_MOTD:
+                /*
+                 * We do not display a MOTD dialog, because it interferes with the
+                 * query dialog that gets displayed just after it.
+                 */
+                dialog = null;
+                break;
+
+            case MessageTypes.MSG_TYPE_ADMIN:
+            case MessageTypes.MSG_TYPE_SHOP:
+            case MessageTypes.MSG_TYPE_COMMAND:
+            case MessageTypes.MSG_TYPE_ATTRIBUTE:
+            case MessageTypes.MSG_TYPE_SKILL:
+            case MessageTypes.MSG_TYPE_APPLY:
+            case MessageTypes.MSG_TYPE_ATTACK:
+            case MessageTypes.MSG_TYPE_COMMUNICATION:
+            case MessageTypes.MSG_TYPE_SPELL:
+            case MessageTypes.MSG_TYPE_ITEM:
+            case MessageTypes.MSG_TYPE_MISC:
+            case MessageTypes.MSG_TYPE_VICTIM:
+                dialog = null;
+                break;
+
+            default:
+                dialog = null;
+                break;
+            }
+
+            if (dialog == null)
+            {
+                return;
+            }
+
+            final AbstractLabel label = dialog.getFirstLabel();
+            if (label != null)
+            {
+                label.setText(message);
+            }
+            else
+            {
+                final GUILabelLog log = dialog.getFirstLabelLog();
+                if (log != null)
+                {
+                    log.updateText(message);
+                }
+            }
+            windowRenderer.openDialog(dialog);
+        }
+    };
+
+    /**
+     * Creates a new instance.
+     * @param window the associated window
+     * @param debugGui whether gui debugging is active
+     * @param semaphoreDrawing the semaphore to use for drawing operations
+     * @param semaphoreRedraw the semaphore to use for redrawing operations
+     * @param tooltipManager the tooltip manager to update
+     * @param settings the settings to use
+     */
+    public GuiManager(final JXCWindow window, final boolean debugGui, final Object semaphoreDrawing, final Object semaphoreRedraw, final TooltipManager tooltipManager, final Settings settings)
+    {
+        this.semaphoreDrawing = semaphoreDrawing;
+        this.window = window;
+        this.tooltipManager = tooltipManager;
+        this.settings = settings;
+        mouseTracker = new MouseTracker(debugGui);
+        windowRenderer = new JXCWindowRenderer(window, mouseTracker, semaphoreRedraw);
+        mouseTracker.init(windowRenderer);
+    }
+
+    @Deprecated
+    public void init(ScriptManager scriptManager, final CommandQueue commandQueue, final CrossfireServerConnection server, final OptionManager optionManager)
+    {
+        commands = new Commands(window, windowRenderer, commandQueue, server, scriptManager, optionManager, this);
+        windowRenderer.init(commands, this);
+        queryDialog = new Gui(window, mouseTracker, commands, this);
+        keybindDialog = new Gui(window, mouseTracker, commands, this);
+    }
+
+    /**
+     * A "player" protocol command has been received.
+     */
+    public void playerReceived()
+    {
+        if (windowRenderer.getGuiState() == JXCWindowRenderer.GuiState.NEWCHAR)
+        {
+            openDialogByName("messages"); // hack for race selection
+        }
+        windowRenderer.setGuiState(JXCWindowRenderer.GuiState.PLAYING);
+    }
+
+    /**
+     * Operns the "quit" dialog. Does nothing if the dialog is open.
+     * @return whether the dialog has been opened
+     */
+    public boolean openQuitDialog()
+    {
+        if (dialogQuit == null)
+        {
+            return false;
+        }
+
+        windowRenderer.closeDialog(dialogDisconnect);
+        windowRenderer.openDialog(dialogQuit);
+        return true;
+    }
+
+    /**
+     * The ESC key has been pressed.
+     * @param closeKeybindDialog whether the keybindings dialog should be closed
+     * @param status the current window status
+     * @return whether how the key has been consumed: 0=ignore key,
+     * 1=disconnect from server, quit=quit application
+     */
+    public int escPressed(final boolean closeKeybindDialog, final JXCWindow.Status status)
+    {
+        if (closeKeybindDialog)
+        {
+            windowRenderer.closeDialog(keybindDialog);
+        }
+        else if (deactivateCommandInput())
+        {
+            // ignore
+        }
+        else if (status != JXCWindow.Status.UNCONNECTED)
+        {
+            if (dialogDisconnect == null)
+            {
+                return 1;
+            }
+            else if (windowRenderer.openDialog(dialogDisconnect))
+            {
+                if (dialogQuit != null)
+                {
+                    windowRenderer.closeDialog(dialogQuit);
+                }
+            }
+            else
+            {
+                windowRenderer.closeDialog(dialogDisconnect);
+            }
+        }
+        else
+        {
+            if (dialogQuit == null)
+            {
+                return 2;
+            }
+            else if (windowRenderer.openDialog(dialogQuit))
+            {
+                if (dialogDisconnect != null)
+                {
+                    windowRenderer.closeDialog(dialogDisconnect);
+                }
+            }
+            else
+            {
+                windowRenderer.closeDialog(dialogQuit);
+            }
+        }
+        return 0;
+    }
+
+    /**
+     * Opens the "query" dialog.
+     * @param prompt the query prompt
+     * @param queryType the query type
+     * @param connection the connection the command was received from
+     */
+    public void openQueryDialog(final String prompt, final int queryType, final JXCConnection connection)
+    {
+        windowRenderer.openDialog(queryDialog);
+        queryDialog.setHideInput((queryType&CrossfireQueryListener.HIDEINPUT) != 0);
+        currentQueryDialogIsNamePrompt = prompt.startsWith("What is your name?");
+        if (currentQueryDialogIsNamePrompt)
+        {
+            final String playerName = settings.getString("player_"+connection.getHostname(), "");
+            if (playerName.length() > 0)
+            {
+                final GUIText textArea = queryDialog.getFirstTextArea();
+                if (textArea != null)
+                {
+                    textArea.setText(playerName);
+                }
+            }
+        }
+        else if (prompt.startsWith("[y] to roll new stats")
+        || prompt.startsWith("Welcome, Brave New Warrior!"))
+        {
+            windowRenderer.setGuiState(JXCWindowRenderer.GuiState.NEWCHAR);
+            if (openDialogByName("newchar"))
+            {
+                closeDialogByName("messages");
+                closeDialogByName("status");
+            }
+            else
+            {
+                // fallback: open both message and status dialogs if this skin
+                // does not define a login dialog
+                openDialogByName("messages");
+                openDialogByName("status");
+            }
+            openDialog(queryDialog); // raise dialog
+        }
+    }
+
+    /**
+     * Opens a dialog. Raises the dialog if it is open.
+     * @param dialog the dialog to show
+     */
+    public void openDialog(final Gui dialog)
+    {
+        windowRenderer.openDialog(dialog);
+        if (dialog == queryDialog)
+        {
+            dialog.setHideInput(false);
+        }
+    }
+
+    /**
+     * Toggles a dialog.
+     * @param dialog the dialog to toggle
+     */
+    public void toggleDialog(final Gui dialog)
+    {
+        if (windowRenderer.toggleDialog(dialog))
+        {
+            if (dialog == queryDialog)
+            {
+                dialog.setHideInput(false);
+            }
+        }
+    }
+
+    /**
+     * Closes the "query" dialog. Does nothing if the dialog is not open.
+     */
+    public void closeQueryDialog()
+    {
+        windowRenderer.closeDialog(queryDialog);
+    }
+
+    public void initRendering(final boolean fullScreen)
+    {
+        windowRenderer.init(skin.getResolution());
+        windowRenderer.initRendering(fullScreen);
+        DialogStateParser.load(skin, windowRenderer);
+    }
+
+    /**
+     * Opens a dialog by name.
+     * @param name the dialog name
+     * @return whether the dialog exists
+     */
+    private boolean openDialogByName(final String name)
+    {
+        final Gui dialog;
+        try
+        {
+            dialog = skin.getDialog(name);
+        }
+        catch (final JXCSkinException ex)
+        {
+            return false;
+        }
+
+        openDialog(dialog);
+        return true;
+    }
+
+    /**
+     * Closes a dialog by name.
+     * @param name the dialog name
+     */
+    private void closeDialogByName(final String name)
+    {
+        final Gui dialog;
+        try
+        {
+            dialog = skin.getDialog(name);
+        }
+        catch (final JXCSkinException ex)
+        {
+            // ignore
+            return;
+        }
+        windowRenderer.closeDialog(dialog);
+    }
+
+    public void terminate()
+    {
+        timer.stop();
+    }
+
+    /**
+     * Closes all transient dialogs: disconnect, quit, query, and book dialogs.
+     */
+    public void closeTransientDialogs()
+    {
+        if (dialogDisconnect != null)
+        {
+            windowRenderer.closeDialog(dialogDisconnect);
+        }
+        if (dialogQuit != null)
+        {
+            windowRenderer.closeDialog(dialogQuit);
+        }
+        windowRenderer.closeDialog(queryDialog);
+        windowRenderer.closeDialog(skin.getDialogBook(1));
+    }
+
+    /**
+     * Updates the current gui state.
+     * @param guiState
+     */
+    public void setGuiState(final JXCWindowRenderer.GuiState guiState)
+    {
+        windowRenderer.setGuiState(guiState);
+    }
+
+    /**
+     * Called when the server selection GUI becomes active. Selects the last
+     * used server entry.
+     */
+    public void activateMetaserverGui()
+    {
+        final String serverName = settings.getString("server", "crossfire.metalforge.net");
+        if (serverName.length() > 0)
+        {
+            final GUIMetaElementList metaElementList = windowRenderer.getCurrentGui().getMetaElementList();
+            if (metaElementList != null)
+            {
+                metaElementList.setSelectedHostname(serverName);
+            }
+        }
+    }
+
+    @Deprecated
+    public void init2(final JXCWindow window)
+    {
+        window.addMouseListener(mouseTracker);
+        window.addMouseMotionListener(mouseTracker);
+    }
+
+    @Deprecated
+    public void init3()
+    {
+        timer.start();
+    }
+
+    /**
+     * Opens the keybinding dialog. Does nothing if the dialog is opened.
+     */
+    public void openKeybindDialog()
+    {
+        windowRenderer.openDialog(keybindDialog);
+    }
+
+    /**
+     * Closes the keybinding dialog. Does nothing if the dialog is not opened.
+     */
+    public void closeKeybindDialog()
+    {
+        windowRenderer.closeDialog(keybindDialog);
+    }
+
+    /**
+     * Sets the current player name. Does nothing if not currently in the
+     * character name prompt.
+     * @param playerName the player name
+     * @param connection the connection the command has been received from
+     */
+    public void updatePlayerName(final String playerName, final JXCConnection connection)
+    {
+        if (currentQueryDialogIsNamePrompt)
+        {
+            settings.putString("player_"+connection.getHostname(), playerName);
+        }
+    }
+
+    /**
+     * Returns the tooltip manager for this window.
+     * @return the tooltip manager for this window
+     */
+    @Deprecated
+    public TooltipManager getTooltipManager()
+    {
+        return tooltipManager;
+    }
+
+    /**
+     * Returns the window renderer instance for this window.
+     * @return the window renderer
+     */
+    @Deprecated
+    public JXCWindowRenderer getWindowRenderer()
+    {
+        return windowRenderer;
+    }
+
+    /**
+     * Returns the current skin.
+     * @return the skin
+     */
+    @Deprecated
+    public JXCSkin getSkin()
+    {
+        return skin;
+    }
+
+    /**
+     * Deactivates the command input text field. Does nothing if the command
+     * input text field is not active.
+     * @return  whether the command input text field has been deactivated
+     */
+    private boolean deactivateCommandInput()
+    {
+        for (final Gui dialog : windowRenderer.getOpenDialogs())
+        {
+            if (!dialog.isHidden(windowRenderer.getGuiState()))
+            {
+                if (dialog.deactivateCommandInput())
+                {
+                    return true;
+                }
+                if (dialog.isModal())
+                {
+                    return false;
+                }
+            }
+        }
+
+        return windowRenderer.getCurrentGui().deactivateCommandInput();
+    }
+
+    /**
+     * Activates the command input text field. If the skin defined more than
+     * one input field, the first matching one is selected.
+     * <p>If neither the main gui nor any visible dialog has an input text
+     * field, invisible guis are checked as well. If one is found, it is made
+     * visible.
+     * @return the command input text field, or <code>null</code> if the skin
+     * has no command input text field defined
+     */
+    private GUIText activateCommandInput()
+    {
+        // check main gui
+        final GUIText textArea1 = windowRenderer.getCurrentGui().activateCommandInput();
+        if (textArea1 != null)
+        {
+            return textArea1;
+        }
+
+        // check visible dialogs
+        for (final Gui dialog : windowRenderer.getOpenDialogs())
+        {
+            if (!dialog.isHidden(windowRenderer.getGuiState()))
+            {
+                final GUIText textArea2 = dialog.activateCommandInput();
+                if (textArea2 != null)
+                {
+                    openDialog(dialog); // raise dialog
+                    return textArea2;
+                }
+            }
+            if (dialog.isModal())
+            {
+                return null;
+            }
+        }
+
+        // check invisible dialogs
+        for (final Gui dialog : skin)
+        {
+            final GUIText textArea3 = dialog.activateCommandInput();
+            if (textArea3 != null)
+            {
+                openDialog(dialog);
+                dialog.setAutoCloseOnDeactivate(true);
+                return textArea3;
+            }
+        }
+
+        return null;
+    }
+
+    /**
+     * Activates the command input text field. If the skin defined more than one
+     * input field, the first matching one is selected.
+     * <p>If neither the main gui nor any visible dialog has an input text
+     * field, invisible guis are checked as well. If one is found, it is made
+     * visible.
+     * @param newText the new command text if non-<code>null</code>
+     */
+    public void activateCommandInput(final String newText)
+    {
+        final GUIText textArea = activateCommandInput();
+        if (textArea != null && newText != null && newText.length() > 0)
+        {
+            textArea.setText(newText);
+        }
+    }
+
+    /**
+     * Unsets the current skin.
+     */
+    public void unsetSkin()
+    {
+        if (skin != null)
+        {
+            skin.detach();
+            skin = null;
+        }
+    }
+
+    /**
+     * Sets a new skin.
+     * @param skin the new skin
+     */
+    public void setSkin(final JXCSkin skin)
+    {
+        this.skin = skin;
+        queryDialog = skin.getDialogQuery();
+        keybindDialog = skin.getDialogKeyBind();
+        dialogQuit = skin.getDialogQuit();
+        dialogDisconnect = skin.getDialogDisconnect();
+    }
+
+    /**
+     * Does a full repaint of the GUI.
+     */
+    public void repaint()
+    {
+        windowRenderer.repaint();
+    }
+
+    /**
+     * Displays the "start" GUI.
+     */
+    public void showGUIStart()
+    {
+        windowRenderer.clearGUI(this);
+        windowRenderer.setCurrentGui(skin.getStartInterface());
+        tooltipManager.reset();
+    }
+
+    /**
+     * Displays the "server selection" GUI.
+     */
+    public void showGUIMeta()
+    {
+        windowRenderer.clearGUI(this);
+        final Gui newGui = skin.getMetaInterface();
+        windowRenderer.setCurrentGui(newGui);
+        newGui.activateDefaultElement();
+        tooltipManager.reset();
+    }
+
+    /**
+     * Displays the "main" GUI.
+     */
+    public void showGUIMain()
+    {
+        windowRenderer.clearGUI(this);
+        final Gui newGui = skin.getMainInterface();
+        windowRenderer.setCurrentGui(newGui);
+        tooltipManager.reset();
+    }
+
+    public void term()
+    {
+        windowRenderer.endRendering();
+        DialogStateParser.save(skin, windowRenderer);
+    }
+
+    @Deprecated
+    public Commands getCommands()
+    {
+        return commands;
+    }
+}

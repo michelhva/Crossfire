@@ -35,6 +35,7 @@ import com.realtime.crossfire.jxclient.settings.options.OptionManager;
 import com.realtime.crossfire.jxclient.skills.SkillSet;
 import com.realtime.crossfire.jxclient.stats.Stats;
 import com.realtime.crossfire.jxclient.window.GUICommandList;
+import com.realtime.crossfire.jxclient.window.GuiManager;
 import com.realtime.crossfire.jxclient.window.JXCWindow;
 import com.realtime.crossfire.jxclient.window.MouseTracker;
 import com.realtime.crossfire.jxclient.skin.events.SkinEvent;
@@ -149,10 +150,10 @@ public class DefaultJXCSkin implements JXCSkin
     private GUIHTMLLabel tooltipLabel = null;
 
     /**
-     * The {@link JXCWindow} currently attached to or <code>null</code> if not
+     * The {@link GuiManager} currently attached to or <code>null</code> if not
      * attached.
      */
-    private JXCWindow window = null;
+    private GuiManager guiManager = null;
 
     /**
      * Creates a new instance.
@@ -388,13 +389,14 @@ public class DefaultJXCSkin implements JXCSkin
      * @param lnr the source to read more parameters from
      * @param commandQueue the command queue for executing commands
      * @param crossfireServerConnection the server connection to use
+     * @param guiManager the gui manager to use
      * @throws IOException if a syntax error occurs
      * @throws JXCSkinException if an element cannot be found
      */
-    public void addCommand(final String listName, final String[] args, final int argc, final GUIElement element, final String command, final JXCWindow window, final MouseTracker mouseTracker, final Commands commands, final LineNumberReader lnr, final CommandQueue commandQueue, final CrossfireServerConnection crossfireServerConnection) throws IOException, JXCSkinException
+    public void addCommand(final String listName, final String[] args, final int argc, final GUIElement element, final String command, final JXCWindow window, final MouseTracker mouseTracker, final Commands commands, final LineNumberReader lnr, final CommandQueue commandQueue, final CrossfireServerConnection crossfireServerConnection, final GuiManager guiManager ) throws IOException, JXCSkinException
     {
         final GUICommandList commandList = getCommandList(listName);
-        commandList.add(commandParser.parseCommandArgs(args, argc, element, command, window, mouseTracker, commands, lnr, commandQueue, crossfireServerConnection));
+        commandList.add(commandParser.parseCommandArgs(args, argc, element, command, window, mouseTracker, commands, lnr, commandQueue, crossfireServerConnection, guiManager));
     }
 
     /** {@inheritDoc} */
@@ -413,12 +415,12 @@ public class DefaultJXCSkin implements JXCSkin
 
     /** {@inheritDoc} */
     @Override
-    public void attach(final JXCWindow window)
+    public void attach(final GuiManager guiManager)
     {
         detach();
-        this.window = window;
-        window.getWindowRenderer().setTooltip(tooltipLabel);
-        window.getTooltipManager().setTooltip(tooltipLabel);
+        this.guiManager = guiManager;
+        guiManager.getWindowRenderer().setTooltip(tooltipLabel);
+        guiManager.getTooltipManager().setTooltip(tooltipLabel);
 
         for (final GUICommandList commandList : initEvents)
         {
@@ -430,14 +432,14 @@ public class DefaultJXCSkin implements JXCSkin
     @Override
     public void detach()
     {
-        if (window == null)
+        if (guiManager == null)
         {
             return;
         }
 
-        window.getWindowRenderer().setTooltip(null);
-        window.getTooltipManager().setTooltip(null);
-        window = null;
+        guiManager.getWindowRenderer().setTooltip(null);
+        guiManager.getTooltipManager().setTooltip(null);
+        guiManager = null;
         for (final String optionName : optionNames)
         {
             optionManager.removeOption(optionName);
@@ -489,9 +491,9 @@ public class DefaultJXCSkin implements JXCSkin
         return selectedResolution;
     }
 
-    public void addDialog(final String dialogName, final JXCWindow window, final MouseTracker mouseTracker, final Commands commands)
+    public void addDialog(final String dialogName, final JXCWindow window, final MouseTracker mouseTracker, final Commands commands, final GuiManager guiManager)
     {
-        dialogs.addDialog(dialogName, window, mouseTracker, commands);
+        dialogs.addDialog(dialogName, window, mouseTracker, commands, guiManager);
     }
 
     public String getDialogToLoad()

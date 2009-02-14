@@ -38,9 +38,9 @@ public class KeybindingsManager
     private final Commands commands;
 
     /**
-     * The associated window.
+     * The {@link GuiManager} to use.
      */
-    private final JXCWindow jxcWindow;
+    private final GuiManager guiManager;
 
     /**
      * The global key bindings.
@@ -62,13 +62,13 @@ public class KeybindingsManager
     /**
      * Creates a new instance.
      * @param commands the commands instance to use
-     * @param jxcWindow the associated window
+     * @param guiManager the gui manager to use
      */
-    public KeybindingsManager(final Commands commands, final JXCWindow jxcWindow)
+    public KeybindingsManager(final Commands commands, final GuiManager guiManager)
     {
         this.commands = commands;
-        this.jxcWindow = jxcWindow;
-        keyBindings = new KeyBindings(Filenames.getKeybindingsFile(null, null), commands, jxcWindow);
+        this.guiManager = guiManager;
+        keyBindings = new KeyBindings(Filenames.getKeybindingsFile(null, null), commands, guiManager);
     }
 
     /**
@@ -142,7 +142,7 @@ public class KeybindingsManager
      */
     public void loadPerCharacterBindings(final String hostname, final String character)
     {
-        characterKeyBindings = new KeyBindings(Filenames.getKeybindingsFile(hostname, character), commands, jxcWindow);
+        characterKeyBindings = new KeyBindings(Filenames.getKeybindingsFile(hostname, character), commands, guiManager);
         try
         {
             characterKeyBindings.loadKeyBindings();

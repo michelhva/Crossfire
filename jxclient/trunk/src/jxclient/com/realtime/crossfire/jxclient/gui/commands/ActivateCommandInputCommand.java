@@ -19,7 +19,7 @@
 //
 package com.realtime.crossfire.jxclient.gui.commands;
 
-import com.realtime.crossfire.jxclient.window.JXCWindow;
+import com.realtime.crossfire.jxclient.window.GuiManager;
 
 /**
  * A {@link GUICommand} which activates the command input field.
@@ -27,8 +27,10 @@ import com.realtime.crossfire.jxclient.window.JXCWindow;
  */
 public class ActivateCommandInputCommand implements GUICommand
 {
-    /** The {@link JXCWindow} instance. */
-    private final JXCWindow jxcWindow;
+    /**
+     * The {@link GuiManager} to affect.
+     */
+    private final GuiManager guiManager;
 
     /** The command text to set. */
     private final String commandText;
@@ -36,12 +38,12 @@ public class ActivateCommandInputCommand implements GUICommand
     /**
      * Creates a new instance.
      * @param commandText the command text to set
-     * @param jxcWindow the window instance
+     * @param guiManager the gui manager to affect
      */
-    public ActivateCommandInputCommand(final String commandText, final JXCWindow jxcWindow)
+    public ActivateCommandInputCommand(final String commandText, final GuiManager guiManager)
     {
         this.commandText = commandText;
-        this.jxcWindow = jxcWindow;
+        this.guiManager = guiManager;
     }
 
     /** {@inheritDoc} */
@@ -55,7 +57,7 @@ public class ActivateCommandInputCommand implements GUICommand
     @Override
     public void execute()
     {
-        jxcWindow.activateCommandInput(commandText);
+        guiManager.activateCommandInput(commandText);
     }
 
     /**
