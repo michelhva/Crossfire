@@ -107,7 +107,7 @@ public class DefaultJXCSkin implements JXCSkin
     /**
      * All defined dialogs.
      */
-    private final Dialogs dialogs = new Dialogs();
+    private final Dialogs dialogs;
 
     /**
      * The default key bindings.
@@ -165,8 +165,9 @@ public class DefaultJXCSkin implements JXCSkin
      * @param skillSet the skill set for looking up skill names
      * @param expressionParser the expression parser to use
      * @param selectedResolution the resolution to use
+     * @param debugGui whether gui debugging is active
      */
-    public DefaultJXCSkin(final KeyBindings defaultKeyBindings, final OptionManager optionManager, final Stats stats, final ItemsManager itemsManager, final ExperienceTable experienceTable, final SkillSet skillSet, final ExpressionParser expressionParser, final Resolution selectedResolution)
+    public DefaultJXCSkin(final KeyBindings defaultKeyBindings, final OptionManager optionManager, final Stats stats, final ItemsManager itemsManager, final ExperienceTable experienceTable, final SkillSet skillSet, final ExpressionParser expressionParser, final Resolution selectedResolution, final boolean debugGui)
     {
         this.defaultKeyBindings = defaultKeyBindings;
         this.optionManager = optionManager;
@@ -174,6 +175,7 @@ public class DefaultJXCSkin implements JXCSkin
         this.selectedResolution = selectedResolution;
         gaugeUpdaterParser = new GaugeUpdaterParser(stats, itemsManager, skillSet);
         commandParser = newCommandParser(itemsManager, expressionParser);
+        dialogs = new Dialogs(debugGui);
     }
 
     public void reset()

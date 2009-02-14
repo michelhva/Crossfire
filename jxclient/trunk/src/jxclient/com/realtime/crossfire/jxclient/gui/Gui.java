@@ -26,7 +26,6 @@ import com.realtime.crossfire.jxclient.gui.log.GUILabelLog;
 import com.realtime.crossfire.jxclient.gui.textinput.GUIText;
 import com.realtime.crossfire.jxclient.gui.textinput.KeyListener;
 import com.realtime.crossfire.jxclient.window.GuiManager;
-import com.realtime.crossfire.jxclient.window.JXCWindow;
 import com.realtime.crossfire.jxclient.window.JXCWindowRenderer;
 import com.realtime.crossfire.jxclient.window.MouseTracker;
 import java.awt.Color;
@@ -52,6 +51,11 @@ public class Gui
      * The mouse tracker instance.
      */
     private final MouseTracker mouseTracker;
+
+    /**
+     * Whether the GUI should be drawn in debug mode.
+     */
+    private final boolean debugGui;
 
     /**
      * The list of {@link GUIElement}s comprising this gui.
@@ -131,10 +135,12 @@ public class Gui
      * @param mouseTracker the mouse tracker instance
      * @param commands the commands instance for executing commands
      * @param guiManager the gui manager to use
+     * @param debugGui whether the GUI should be drawn in debug mode
      */
-    public Gui(final MouseTracker mouseTracker, final Commands commands, final GuiManager guiManager)
+    public Gui(final MouseTracker mouseTracker, final Commands commands, final GuiManager guiManager, final boolean debugGui)
     {
         this.mouseTracker = mouseTracker;
+        this.debugGui = debugGui;
         keyBindings = new KeyBindings(null, commands, guiManager);
     }
 
@@ -225,12 +231,10 @@ public class Gui
      * Repaint the gui and clear the changed flags of all repainted elements.
      *
      * @param g The <code>Graphics</code> to paint into.
-     *
-     * @param window The window to deliver change events to.
      */
-    public void redraw(final Graphics g, final JXCWindow window)
+    public void redraw(final Graphics g)
     {
-        if (window.isDebugGui())
+        if (debugGui)
         {
             final GUIElement mouseElement = mouseTracker.getMouseElement();
             final long t0 = System.currentTimeMillis();
