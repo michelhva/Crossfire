@@ -67,10 +67,8 @@ import com.realtime.crossfire.jxclient.gui.textinput.GUIText;
 import com.realtime.crossfire.jxclient.gui.textinput.GUITextField;
 import com.realtime.crossfire.jxclient.items.ItemsManager;
 import com.realtime.crossfire.jxclient.mapupdater.CfMapUpdater;
-import com.realtime.crossfire.jxclient.mapupdater.MapscrollListener;
 import com.realtime.crossfire.jxclient.metaserver.MetaserverModel;
 import com.realtime.crossfire.jxclient.server.CommandQueue;
-import com.realtime.crossfire.jxclient.server.CrossfireMagicmapListener;
 import com.realtime.crossfire.jxclient.server.CrossfireServerConnection;
 import com.realtime.crossfire.jxclient.server.DefaultCrossfireServerConnection;
 import com.realtime.crossfire.jxclient.server.MessageTypes;
@@ -80,14 +78,17 @@ import com.realtime.crossfire.jxclient.settings.options.CommandCheckBoxOption;
 import com.realtime.crossfire.jxclient.settings.options.OptionManager;
 import com.realtime.crossfire.jxclient.shortcuts.Shortcuts;
 import com.realtime.crossfire.jxclient.skills.Skill;
-import com.realtime.crossfire.jxclient.skills.SkillListener;
 import com.realtime.crossfire.jxclient.skills.SkillSet;
+import com.realtime.crossfire.jxclient.skin.events.ConnectionStateSkinEvent;
+import com.realtime.crossfire.jxclient.skin.events.CrossfireMagicmapSkinEvent;
+import com.realtime.crossfire.jxclient.skin.events.MapscrollSkinEvent;
+import com.realtime.crossfire.jxclient.skin.events.SkillAddedSkinEvent;
+import com.realtime.crossfire.jxclient.skin.events.SkillRemovedSkinEvent;
 import com.realtime.crossfire.jxclient.spells.CurrentSpellManager;
 import com.realtime.crossfire.jxclient.spells.SpellsManager;
 import com.realtime.crossfire.jxclient.stats.Stats;
 import com.realtime.crossfire.jxclient.util.NumberParser;
 import com.realtime.crossfire.jxclient.util.StringUtils;
-import com.realtime.crossfire.jxclient.window.ConnectionStateListener;
 import com.realtime.crossfire.jxclient.window.GUICommandList;
 import com.realtime.crossfire.jxclient.window.JXCWindow;
 import com.realtime.crossfire.jxclient.window.JXCWindowRenderer;
@@ -137,9 +138,19 @@ public class JXCSkinLoader
     private final CfMapUpdater mapUpdater;
 
     /**
+     * The default key bindings.
+     */
+    private final KeyBindings defaultKeyBindings;
+
+    /**
      * The {@link OptionManager} instance to use.
      */
     private final OptionManager optionManager;
+
+    /**
+     * The {@link ExperienceTable} to use.
+     */
+    private final ExperienceTable experienceTable;
 
     /**
      * The {@link SkillSet} instance to use.
@@ -184,12 +195,12 @@ public class JXCSkinLoader
     /**
      * The {@link GuiElementParser} for parsing gui element specifications.
      */
-    private final GuiElementParser guiElementParser;
+    private GuiElementParser guiElementParser;
 
     /**
      * The {@link JXCSkin} being loaded.
      */
-    private final DefaultJXCSkin skin;
+    private DefaultJXCSkin skin;
 
     /**
      * Creates a new instance.
@@ -210,11 +221,10 @@ public class JXCSkinLoader
         this.facesManager = facesManager;
         this.stats = stats;
         this.mapUpdater = mapUpdater;
+        this.defaultKeyBindings = defaultKeyBindings;
         this.optionManager = optionManager;
+        this.experienceTable = experienceTable;
         this.skillSet = skillSet;
-        skin = new DefaultJXCSkin(defaultKeyBindings, optionManager, stats, itemsManager, experienceTable, skillSet, expressionParser);
-        expressionParser = new ExpressionParser(skin.getSelectedResolution());
-        guiElementParser = new GuiElementParser(skin);
     }
 
     /**
@@ -236,6 +246,7 @@ public class JXCSkinLoader
     {
         imageParser = new ImageParser(skinSource);
         fontParser = new FontParser(skinSource);
+        final Resolution selectedResolution;
         if (resolution.isExact())
         {
             if (!skinSource.containsResolution(resolution))
@@ -243,13 +254,13 @@ public class JXCSkinLoader
                 throw new JXCSkinException("resolution "+resolution+" is not supported by the skin "+skin.getPlainSkinName());
             }
 
-            skin.setSelectedResolution(resolution);
+            selectedResolution = resolution;
         }
         else
         {
             if (skinSource.containsResolution(resolution))
             {
-                skin.setSelectedResolution(resolution);
+                selectedResolution = resolution;
             }
             else
             {
@@ -277,11 +288,13 @@ public class JXCSkinLoader
                     }
                     assert selectedCandidate != null; // at least one resolution exists
                 }
-                skin.setSelectedResolution(selectedCandidate);
+                selectedResolution = selectedCandidate;
             }
         }
 
-        expressionParser = new ExpressionParser(skin.getSelectedResolution());
+        expressionParser = new ExpressionParser(selectedResolution);
+        skin = new DefaultJXCSkin(defaultKeyBindings, optionManager, stats, itemsManager, experienceTable, skillSet, expressionParser, selectedResolution);
+        guiElementParser = new GuiElementParser(skin);
         skin.reset();
         imageParser.clear();
         skin.addDialog("keybind", window, mouseTracker, commands);
@@ -1100,22 +1113,7 @@ public class JXCSkinLoader
             }
 
             final GUICommandList commandList = skin.getCommandList(args[2]);
-            window.addConnectionStateListener(new ConnectionStateListener()
-                {
-                    /** {@inheritDoc} */
-                    @Override
-                    public void connect()
-                    {
-                        commandList.execute();
-                    }
-
-                    /** {@inheritDoc} */
-                    @Override
-                    public void disconnect()
-                    {
-                        // ignore
-                    }
-                });
+            skin.addSkinEvent(new ConnectionStateSkinEvent(commandList, window));
         }
         else if (type.equals("init"))
         {
@@ -1134,15 +1132,7 @@ public class JXCSkinLoader
             }
 
             final GUICommandList commandList = skin.getCommandList(args[2]);
-            server.addCrossfireMagicmapListener(new CrossfireMagicmapListener()
-                {
-                    /** {@inheritDoc} */
-                    @Override
-                    public void commandMagicmapReceived(final int width, final int height, final int px, final int py, final byte[] data, final int pos)
-                    {
-                        commandList.execute();
-                    }
-                });
+            skin.addSkinEvent(new CrossfireMagicmapSkinEvent(commandList, server));
         }
         else if (type.equals("mapscroll"))
         {
@@ -1152,15 +1142,7 @@ public class JXCSkinLoader
             }
 
             final GUICommandList commandList = skin.getCommandList(args[2]);
-            mapUpdater.addCrossfireMapscrollListener(new MapscrollListener()
-                {
-                    /** {@inheritDoc} */
-                    @Override
-                    public void mapScrolled(final int dx, final int dy)
-                    {
-                        commandList.execute();
-                    }
-                });
+            skin.addSkinEvent(new MapscrollSkinEvent(commandList, mapUpdater));
         }
         else if (type.equals("skill"))
         {
@@ -1174,55 +1156,11 @@ public class JXCSkinLoader
             final GUICommandList commandList = skin.getCommandList(args[4]);
             if (subtype.equals("add"))
             {
-                skill.addSkillListener(new SkillListener()
-                    {
-                        /** {@inheritDoc} */
-                        @Override
-                        public void gainedSkill()
-                        {
-                            commandList.execute();
-                        }
-
-                        /** {@inheritDoc} */
-                        @Override
-                        public void lostSkill()
-                        {
-                            // ignore
-                        }
-
-                        /** {@inheritDoc} */
-                        @Override
-                        public void changedSkill()
-                        {
-                            // ignore
-                        }
-                    });
+                skin.addSkinEvent(new SkillAddedSkinEvent(commandList, skill));
             }
             else if (subtype.equals("del"))
             {
-                skill.addSkillListener(new SkillListener()
-                    {
-                        /** {@inheritDoc} */
-                        @Override
-                        public void gainedSkill()
-                        {
-                            // ignore
-                        }
-
-                        /** {@inheritDoc} */
-                        @Override
-                        public void lostSkill()
-                        {
-                            commandList.execute();
-                        }
-
-                        /** {@inheritDoc} */
-                        @Override
-                        public void changedSkill()
-                        {
-                            // ignore
-                        }
-                    });
+                skin.addSkinEvent(new SkillRemovedSkinEvent(commandList, skill));
             }
             else
             {

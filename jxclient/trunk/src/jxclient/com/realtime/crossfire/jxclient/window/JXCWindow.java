@@ -1366,6 +1366,16 @@ public class JXCWindow extends JFrame
     }
 
     /**
+     * Remove a connection listener.
+     *
+     * @param listener The listener to remove.
+     */
+    public void removeConnectionStateListener(final ConnectionStateListener listener)
+    {
+        connectionStateListeners.remove(listener);
+    }
+
+    /**
      * Opens the keybinding dialog. Does nothing if the dialog is opened.
      */
     private void openKeybindDialog()
