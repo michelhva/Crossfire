@@ -23,6 +23,7 @@ import com.realtime.crossfire.jxclient.gui.commands.GUICommandFactory;
 import com.realtime.crossfire.jxclient.server.CrossfireServerConnection;
 import com.realtime.crossfire.jxclient.util.StringUtils;
 import com.realtime.crossfire.jxclient.window.GUICommandList;
+import com.realtime.crossfire.jxclient.window.GuiManager;
 import com.realtime.crossfire.jxclient.window.JXCWindow;
 
 /**
@@ -43,6 +44,11 @@ public class BindCommand extends AbstractCommand
     private final Commands commands;
 
     /**
+     * The {@link GuiManager} to use.
+     */
+    private final GuiManager guiManager;
+
+    /**
      * Create a new instance.
      *
      * @param window The window to execute in.
@@ -50,12 +56,15 @@ public class BindCommand extends AbstractCommand
      * @param crossfireServerConnection the connection instance
      *
      * @param commands the commands instance for executing commands
+     *
+     * @param guiManager the gui manager to use
      */
-    protected BindCommand(final JXCWindow window, final CrossfireServerConnection crossfireServerConnection, final Commands commands)
+    protected BindCommand(final JXCWindow window, final CrossfireServerConnection crossfireServerConnection, final Commands commands, final GuiManager guiManager)
     {
         super(crossfireServerConnection);
         this.window = window;
         this.commands = commands;
+        this.guiManager = guiManager;
     }
 
     /** {@inheritDoc} */
@@ -94,7 +103,7 @@ public class BindCommand extends AbstractCommand
         }
 
         final GUICommandList commandList2 = new GUICommandList(GUICommandList.CommandType.AND);
-        commandList2.add(GUICommandFactory.createCommand(commandList, window, commands));
+        commandList2.add(GUICommandFactory.createCommand(commandList, guiManager, commands));
         if (!window.createKeyBinding(perCharacterBinding, commandList2))
         {
             drawInfoError("Cannot use bind -c since no character is logged in.");

@@ -20,7 +20,7 @@
 package com.realtime.crossfire.jxclient.gui.commands;
 
 import com.realtime.crossfire.jxclient.gui.Gui;
-import com.realtime.crossfire.jxclient.window.JXCWindow;
+import com.realtime.crossfire.jxclient.window.GuiManager;
 
 /**
  * A {@link GUICommand} which opens a {@link Gui} dialog.
@@ -29,9 +29,9 @@ import com.realtime.crossfire.jxclient.window.JXCWindow;
 public class DialogOpenCommand implements GUICommand
 {
     /**
-     * The main window.
+     * The {@link GuiManager} to use.
      */
-    private final JXCWindow window;
+    private final GuiManager guiManager;
 
     /**
      * The dialog to open.
@@ -40,12 +40,12 @@ public class DialogOpenCommand implements GUICommand
 
     /**
      * Creates a new instance.
-     * @param window the main window
+     * @param guiManager the gui manager to use
      * @param dialog the dialog to open
      */
-    public DialogOpenCommand(final JXCWindow window, final Gui dialog)
+    public DialogOpenCommand(final GuiManager guiManager, final Gui dialog)
     {
-        this.window = window;
+        this.guiManager = guiManager;
         this.dialog = dialog;
     }
 
@@ -60,6 +60,6 @@ public class DialogOpenCommand implements GUICommand
     @Override
     public void execute()
     {
-        window.openDialog(dialog);
+        guiManager.openDialog(dialog);
     }
 }

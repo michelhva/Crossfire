@@ -20,7 +20,7 @@
 package com.realtime.crossfire.jxclient.gui.commands;
 
 import com.realtime.crossfire.jxclient.gui.Gui;
-import com.realtime.crossfire.jxclient.window.JXCWindow;
+import com.realtime.crossfire.jxclient.window.GuiManager;
 
 /**
  * A {@link GUICommand} which closes a {@link Gui}.
@@ -29,9 +29,9 @@ import com.realtime.crossfire.jxclient.window.JXCWindow;
 public class DialogCloseCommand implements GUICommand
 {
     /**
-     * The window to operate on.
+     * The {@link GuiManager} to use.
      */
-    private final JXCWindow window;
+    private final GuiManager guiManager;
 
     /**
      * The dialog to close.
@@ -40,12 +40,12 @@ public class DialogCloseCommand implements GUICommand
 
     /**
      * Creates a new instance.
-     * @param window the window to operate on
+     * @param guiManager the gui manager to use
      * @param dialog the dialog to close
      */
-    public DialogCloseCommand(final JXCWindow window, final Gui dialog)
+    public DialogCloseCommand(final GuiManager guiManager, final Gui dialog)
     {
-        this.window = window;
+        this.guiManager = guiManager;
         this.dialog = dialog;
     }
 
@@ -60,6 +60,6 @@ public class DialogCloseCommand implements GUICommand
     @Override
     public void execute()
     {
-        window.getWindowRenderer().closeDialog(dialog);
+        guiManager.getWindowRenderer().closeDialog(dialog);
     }
 }

@@ -21,7 +21,7 @@ package com.realtime.crossfire.jxclient.gui.commands;
 
 import com.realtime.crossfire.jxclient.commands.Commands;
 import com.realtime.crossfire.jxclient.util.StringUtils;
-import com.realtime.crossfire.jxclient.window.JXCWindow;
+import com.realtime.crossfire.jxclient.window.GuiManager;
 import java.util.regex.Pattern;
 
 /**
@@ -50,31 +50,31 @@ public class GUICommandFactory
     /**
      * Create a new {@link GUICommand} instance from string representation.
      * @param encodedCommandString the command string representation
-     * @param window the window instance to use
+     * @param guiManager the gui manager to use
      * @param commands the commands instance to use
      * @return the new command instance
      */
-    public static GUICommand createCommandDecode(final String encodedCommandString, final JXCWindow window, final Commands commands)
+    public static GUICommand createCommandDecode(final String encodedCommandString, final GuiManager guiManager, final Commands commands)
     {
-        return createCommand(decode(encodedCommandString), window, commands);
+        return createCommand(decode(encodedCommandString), guiManager, commands);
     }
 
     /**
      * Create a new {@link GUICommand} instance from string representation.
      * @param commandString the command string representation
-     * @param window the window instance to use
+     * @param guiManager the gui manager to use
      * @param commands the commands instance to use
      * @return the new command instance
      */
-    public static GUICommand createCommand(final String commandString, final JXCWindow window, final Commands commands)
+    public static GUICommand createCommand(final String commandString, final GuiManager guiManager, final Commands commands)
     {
         if (commandString.equals("-e"))
         {
-            return new ActivateCommandInputCommand("", window);
+            return new ActivateCommandInputCommand("", guiManager);
         }
         else if (commandString.startsWith("-e "))
         {
-            return new ActivateCommandInputCommand(StringUtils.trimLeading(commandString.substring(3)), window);
+            return new ActivateCommandInputCommand(StringUtils.trimLeading(commandString.substring(3)), guiManager);
         }
         else
         {

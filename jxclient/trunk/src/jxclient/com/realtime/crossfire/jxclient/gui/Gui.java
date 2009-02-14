@@ -25,6 +25,7 @@ import com.realtime.crossfire.jxclient.gui.list.GUIMetaElementList;
 import com.realtime.crossfire.jxclient.gui.log.GUILabelLog;
 import com.realtime.crossfire.jxclient.gui.textinput.GUIText;
 import com.realtime.crossfire.jxclient.gui.textinput.KeyListener;
+import com.realtime.crossfire.jxclient.window.GuiManager;
 import com.realtime.crossfire.jxclient.window.JXCWindow;
 import com.realtime.crossfire.jxclient.window.JXCWindowRenderer;
 import com.realtime.crossfire.jxclient.window.MouseTracker;
@@ -135,12 +136,13 @@ public class Gui
      * @param window the window this gui belongs to
      * @param mouseTracker the mouse tracker instance
      * @param commands the commands instance for executing commands
+     * @param guiManager the gui manager to use
      */
-    public Gui(final JXCWindow window, final MouseTracker mouseTracker, final Commands commands)
+    public Gui(final JXCWindow window, final MouseTracker mouseTracker, final Commands commands, final GuiManager guiManager)
     {
         this.window = window;
         this.mouseTracker = mouseTracker;
-        keyBindings = new KeyBindings(null, commands, window);
+        keyBindings = new KeyBindings(null, commands, guiManager);
     }
 
     /**
@@ -221,7 +223,6 @@ public class Gui
     public void add(final GUIElement element)
     {
         if (element.getGui() != null) throw new IllegalArgumentException();
-        if (element.getWindow() != window) throw new IllegalArgumentException();
 
         updateVisibleElement(element);
         element.setGui(this);

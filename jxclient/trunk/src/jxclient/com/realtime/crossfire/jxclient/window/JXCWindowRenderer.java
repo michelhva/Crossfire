@@ -140,10 +140,10 @@ public class JXCWindowRenderer
         this.redrawSemaphore = redrawSemaphore;
     }
 
-    public void init(final Commands commands)
+    public void init(final Commands commands, final GuiManager guiManager)
     {
         this.commands = commands;
-        currentGui = new Gui(window, mouseTracker, commands);
+        currentGui = new Gui(window, mouseTracker, commands, guiManager);
     }
 
     public void init(final Resolution resolution)
@@ -298,9 +298,9 @@ public class JXCWindowRenderer
         }
     }
 
-    public void clearGUI()
+    public void clearGUI(final GuiManager guiManager)
     {
-        currentGui = new Gui(window, mouseTracker, commands);
+        currentGui = new Gui(window, mouseTracker, commands, guiManager);
         currentGuiChanged = true;
         for (int ig = 0; ig < 3; ig++)
         {
