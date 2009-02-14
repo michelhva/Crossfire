@@ -812,46 +812,6 @@ public class JXCWindow extends JFrame
     }
 
     /**
-     * Return the current skin.
-     *
-     * @return The skin.
-     */
-    public JXCSkin getSkin()
-    {
-        return guiManager.getSkin();
-    }
-
-    /**
-     * Return whether GUI elements should be highlighted.
-     *
-     * @return Whether GUI elements should be highlighted.
-     */
-    public boolean isDebugGui()
-    {
-        return debugGui;
-    }
-
-    /**
-     * Return the window renderer instance for this window.
-     *
-     * @return The window renderer.
-     */
-    public JXCWindowRenderer getWindowRenderer()
-    {
-        return guiManager.getWindowRenderer();
-    }
-
-    /**
-     * Return the tooltip manager for this window.
-     *
-     * @return The tooltip manager for this window.
-     */
-    public TooltipManager getTooltipManager()
-    {
-        return guiManager.getTooltipManager();
-    }
-
-    /**
      * Set the current player name. Does nothing if not currently in the
      * character name prompt.
      *
