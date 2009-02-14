@@ -19,10 +19,8 @@
 //
 package com.realtime.crossfire.jxclient.skin;
 
-import com.realtime.crossfire.jxclient.commands.Commands;
 import com.realtime.crossfire.jxclient.gui.Gui;
-import com.realtime.crossfire.jxclient.window.GuiManager;
-import com.realtime.crossfire.jxclient.window.MouseTracker;
+import com.realtime.crossfire.jxclient.gui.GuiFactory;
 import java.util.HashSet;
 import java.util.Iterator;
 import java.util.Set;
@@ -36,9 +34,9 @@ import java.util.Set;
 public class Dialogs implements Iterable<Gui>
 {
     /**
-     * Whether gui debugging is active.
+     * The {@link GuiFactory} for creating new {@link Gui} instances.
      */
-    private final boolean debugGui;
+    private final GuiFactory guiFactory;
 
     /**
      * The existing dialogs.
@@ -52,11 +50,11 @@ public class Dialogs implements Iterable<Gui>
 
     /**
      * Creates a new instance.
-     * @param debugGui whether gui debugging is active
+     * @param guiFactory the gui factory for creating gui instances
      */
-    public Dialogs(final boolean debugGui)
+    public Dialogs(final GuiFactory guiFactory)
     {
-        this.debugGui = debugGui;
+        this.guiFactory = guiFactory;
     }
 
     /**
@@ -82,13 +80,9 @@ public class Dialogs implements Iterable<Gui>
     /**
      * Creates a new dialog instance.
      * @param name the dialog's name
-     * @param mouseTracker the mouse tracker when in debug GUI mode or
-     * <code>null</code> otherwise
-     * @param commands the commands instance to use
-     * @param guiManager the gui manager to use
      * @return the new dialog instance
      */
-    public Gui addDialog(final String name, final MouseTracker mouseTracker, final Commands commands, final GuiManager guiManager)
+    public Gui addDialog(final String name)
     {
         try
         {
@@ -96,7 +90,7 @@ public class Dialogs implements Iterable<Gui>
         }
         catch (final JXCSkinException ex)
         {
-            final Gui gui = new Gui(debugGui ? mouseTracker : null, commands, guiManager);
+            final Gui gui = guiFactory.newGui();
             try
             {
                 dialogs.insert(name, gui);

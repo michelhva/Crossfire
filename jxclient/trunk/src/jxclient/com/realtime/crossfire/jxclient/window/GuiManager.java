@@ -4,6 +4,7 @@ import com.realtime.crossfire.jxclient.commands.Commands;
 import com.realtime.crossfire.jxclient.gui.AbstractLabel;
 import com.realtime.crossfire.jxclient.gui.GUIOneLineLabel;
 import com.realtime.crossfire.jxclient.gui.Gui;
+import com.realtime.crossfire.jxclient.gui.GuiFactory;
 import com.realtime.crossfire.jxclient.gui.TooltipManager;
 import com.realtime.crossfire.jxclient.gui.list.GUIMetaElementList;
 import com.realtime.crossfire.jxclient.gui.log.GUILabelLog;
@@ -52,6 +53,11 @@ public class GuiManager
      * The {@link JXCWindowRenderer} used to paint the gui.
      */
     private final JXCWindowRenderer windowRenderer;
+
+    /**
+     * The {@link GuiFactory} for creating {@link Gui} instances.
+     */
+    private GuiFactory guiFactory = null;
 
     /**
      * The query dialog.
@@ -224,12 +230,13 @@ public class GuiManager
     }
 
     @Deprecated
-    public void init(ScriptManager scriptManager, final CommandQueue commandQueue, final CrossfireServerConnection server, final OptionManager optionManager)
+    public void init(final ScriptManager scriptManager, final CommandQueue commandQueue, final CrossfireServerConnection server, final OptionManager optionManager)
     {
         commands = new Commands(window, windowRenderer, commandQueue, server, scriptManager, optionManager, this);
-        windowRenderer.init(commands, new Gui(debugGui ? mouseTracker : null, commands, this));
-        queryDialog = new Gui(debugGui ? mouseTracker : null, commands, this);
-        keybindDialog = new Gui(debugGui ? mouseTracker : null, commands, this);
+        guiFactory = new GuiFactory(debugGui ? mouseTracker : null, commands, this);
+        windowRenderer.init(commands, guiFactory.newGui());
+        queryDialog = guiFactory.newGui();
+        keybindDialog = guiFactory.newGui();
     }
 
     /**
@@ -695,7 +702,7 @@ public class GuiManager
      */
     public void showGUIStart()
     {
-        windowRenderer.clearGUI(new Gui(debugGui ? mouseTracker : null, commands, this));
+        windowRenderer.clearGUI(guiFactory.newGui());
         windowRenderer.setCurrentGui(skin.getStartInterface());
         tooltipManager.reset();
     }
@@ -705,7 +712,7 @@ public class GuiManager
      */
     public void showGUIMeta()
     {
-        windowRenderer.clearGUI(new Gui(debugGui ? mouseTracker : null, commands, this));
+        windowRenderer.clearGUI(guiFactory.newGui());
         final Gui newGui = skin.getMetaInterface();
         windowRenderer.setCurrentGui(newGui);
         newGui.activateDefaultElement();
@@ -717,7 +724,7 @@ public class GuiManager
      */
     public void showGUIMain()
     {
-        windowRenderer.clearGUI(new Gui(debugGui ? mouseTracker : null, commands, this));
+        windowRenderer.clearGUI(guiFactory.newGui());
         final Gui newGui = skin.getMainInterface();
         windowRenderer.setCurrentGui(newGui);
         tooltipManager.reset();

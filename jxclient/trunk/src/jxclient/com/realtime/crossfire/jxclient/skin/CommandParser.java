@@ -55,7 +55,6 @@ import com.realtime.crossfire.jxclient.server.CrossfireServerConnection;
 import com.realtime.crossfire.jxclient.util.NumberParser;
 import com.realtime.crossfire.jxclient.window.GuiManager;
 import com.realtime.crossfire.jxclient.window.JXCWindow;
-import com.realtime.crossfire.jxclient.window.MouseTracker;
 import java.io.IOException;
 import java.io.LineNumberReader;
 
@@ -108,7 +107,6 @@ public class CommandParser
      * @param element the target element
      * @param command the command to parse the arguments of
      * @param window the window instance
-     * @param mouseTracker the mouse tracker instance
      * @param commands the commands instance for executing commands
      * @param lnr the source to read more parameters from
      * @param commandQueue the command queue for executing commands
@@ -118,7 +116,7 @@ public class CommandParser
      * @throws IOException if a syntax error occurs
      * @throws JXCSkinException if an element cannot be found
      */
-    public GUICommand parseCommandArgs(final String[] args, final int argc, final GUIElement element, final String command, final JXCWindow window, final MouseTracker mouseTracker, final Commands commands, final LineNumberReader lnr, final CommandQueue commandQueue, final CrossfireServerConnection crossfireServerConnection, final GuiManager guiManager) throws IOException, JXCSkinException
+    public GUICommand parseCommandArgs(final String[] args, final int argc, final GUIElement element, final String command, final JXCWindow window, final Commands commands, final LineNumberReader lnr, final CommandQueue commandQueue, final CrossfireServerConnection crossfireServerConnection, final GuiManager guiManager) throws IOException, JXCSkinException
     {
         if (command.equals("SHOW"))
         {
@@ -227,7 +225,7 @@ public class CommandParser
                 throw new IOException("syntax error");
             }
 
-            return new DialogOpenCommand(guiManager, dialogs.addDialog(args[argc], mouseTracker, commands, guiManager));
+            return new DialogOpenCommand(guiManager, dialogs.addDialog(args[argc]));
         }
         else if (command.equals("DIALOG_TOGGLE"))
         {
@@ -236,7 +234,7 @@ public class CommandParser
                 throw new IOException("syntax error");
             }
 
-            return new DialogToggleCommand(guiManager, dialogs.addDialog(args[argc], mouseTracker, commands, guiManager));
+            return new DialogToggleCommand(guiManager, dialogs.addDialog(args[argc]));
         }
         else if (command.equals("DIALOG_CLOSE"))
         {
@@ -245,7 +243,7 @@ public class CommandParser
                 throw new IOException("syntax error");
             }
 
-            return new DialogCloseCommand(guiManager, dialogs.addDialog(args[argc], mouseTracker, commands, guiManager));
+            return new DialogCloseCommand(guiManager, dialogs.addDialog(args[argc]));
         }
         else if (command.equals("GUI_EXECUTE_COMMAND"))
         {
