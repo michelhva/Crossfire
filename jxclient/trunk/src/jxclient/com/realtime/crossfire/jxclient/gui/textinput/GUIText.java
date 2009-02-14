@@ -22,6 +22,7 @@ package com.realtime.crossfire.jxclient.gui.textinput;
 import com.realtime.crossfire.jxclient.gui.ActivatableGUIElement;
 import com.realtime.crossfire.jxclient.gui.TooltipManager;
 import com.realtime.crossfire.jxclient.settings.CommandHistory;
+import com.realtime.crossfire.jxclient.window.GuiManager;
 import com.realtime.crossfire.jxclient.window.JXCWindow;
 import com.realtime.crossfire.jxclient.window.JXCWindowRenderer;
 import java.awt.Color;
@@ -59,9 +60,9 @@ public abstract class GUIText extends ActivatableGUIElement implements KeyListen
     private static final int SCROLL_CHARS = 8;
 
     /**
-     * The associated {@link JXCWindow}.
+     * The {@link GuiManager} to use.
      */
-    private final JXCWindow window;
+    private final GuiManager guiManager;
 
     /**
      * The command history for this text field.
@@ -124,11 +125,11 @@ public abstract class GUIText extends ActivatableGUIElement implements KeyListen
      */
     private final Object syncCursor = new Object();
 
-    protected GUIText(final JXCWindow window, final TooltipManager tooltipManager, final JXCWindowRenderer windowRenderer, final String name, final int x, final int y, final int w, final int h, final BufferedImage activeImage, final BufferedImage inactiveImage, final Font font, final Color inactiveColor, final Color activeColor, final int margin, final String text, final boolean ignoreUpDown)
+    protected GUIText(final GuiManager guiManager, final TooltipManager tooltipManager, final JXCWindowRenderer windowRenderer, final String name, final int x, final int y, final int w, final int h, final BufferedImage activeImage, final BufferedImage inactiveImage, final Font font, final Color inactiveColor, final Color activeColor, final int margin, final String text, final boolean ignoreUpDown)
     {
         super(tooltipManager, windowRenderer, name, x, y, w, h, Transparency.TRANSLUCENT);
         if (2*margin >= w) throw new IllegalArgumentException("margin is too large");
-        this.window = window;
+        this.guiManager = guiManager;
         commandHistory = new CommandHistory(name);
         this.activeImage = activeImage;
         this.inactiveImage = inactiveImage;
@@ -371,7 +372,7 @@ public abstract class GUIText extends ActivatableGUIElement implements KeyListen
         case '\r':
         case '\n':
             final String command = text.toString();
-            window.updatePlayerName(command);
+            guiManager.updatePlayerName(command);
             execute((JXCWindow)e.getSource(), command);
             if (!hideInput)
             {
