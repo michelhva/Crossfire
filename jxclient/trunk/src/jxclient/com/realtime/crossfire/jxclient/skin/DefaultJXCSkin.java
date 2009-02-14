@@ -174,8 +174,8 @@ public class DefaultJXCSkin implements JXCSkin
         this.experienceTable = experienceTable;
         this.selectedResolution = selectedResolution;
         gaugeUpdaterParser = new GaugeUpdaterParser(stats, itemsManager, skillSet);
-        commandParser = newCommandParser(itemsManager, expressionParser);
         dialogs = new Dialogs(debugGui);
+        commandParser = newCommandParser(itemsManager, expressionParser);
     }
 
     public void reset()
