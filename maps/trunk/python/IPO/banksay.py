@@ -120,7 +120,7 @@ elif text[0] == 'exchange':
 					# prevents the player from carrying too
 					# many coins.
 					id = activator.Map.CreateObject('platinum coin', x, y)
-					CFItemBroker.Item(id).add(amount*(exchange_rate/50))
+					CFItemBroker.Item(id).add(int(amount*(exchange_rate/50)))
 					activator.Take(id)
 
 					message = random.choice(thanks_message)
