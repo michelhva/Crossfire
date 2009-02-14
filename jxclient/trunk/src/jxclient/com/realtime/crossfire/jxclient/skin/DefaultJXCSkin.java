@@ -37,6 +37,7 @@ import com.realtime.crossfire.jxclient.stats.Stats;
 import com.realtime.crossfire.jxclient.window.GUICommandList;
 import com.realtime.crossfire.jxclient.window.JXCWindow;
 import com.realtime.crossfire.jxclient.window.MouseTracker;
+import com.realtime.crossfire.jxclient.skin.events.SkinEvent;
 import java.io.IOException;
 import java.io.LineNumberReader;
 import java.util.ArrayList;
@@ -60,7 +61,7 @@ public class DefaultJXCSkin implements JXCSkin
     /**
      * The selected resolution.
      */
-    private Resolution selectedResolution = new Resolution(true, 0, 0);
+    private final Resolution selectedResolution;
 
     /**
      * The map width in tiles; zero if unset.
@@ -96,6 +97,11 @@ public class DefaultJXCSkin implements JXCSkin
      * All GUI elements.
      */
     private final Set<GUIElement> guiElements = new HashSet<GUIElement>();
+
+    /**
+     * All {@link SkinEvent}s attached to this instance.
+     */
+    private final Set<SkinEvent> skinEvents = new HashSet<SkinEvent>();
 
     /**
      * All defined dialogs.
@@ -157,12 +163,14 @@ public class DefaultJXCSkin implements JXCSkin
      * @param experienceTable the experience table to use
      * @param skillSet the skill set for looking up skill names
      * @param expressionParser the expression parser to use
+     * @param selectedResolution the resolution to use
      */
-    public DefaultJXCSkin(final KeyBindings defaultKeyBindings, final OptionManager optionManager, final Stats stats, final ItemsManager itemsManager, final ExperienceTable experienceTable, final SkillSet skillSet, final ExpressionParser expressionParser)
+    public DefaultJXCSkin(final KeyBindings defaultKeyBindings, final OptionManager optionManager, final Stats stats, final ItemsManager itemsManager, final ExperienceTable experienceTable, final SkillSet skillSet, final ExpressionParser expressionParser, final Resolution selectedResolution)
     {
         this.defaultKeyBindings = defaultKeyBindings;
         this.optionManager = optionManager;
         this.experienceTable = experienceTable;
+        this.selectedResolution = selectedResolution;
         gaugeUpdaterParser = new GaugeUpdaterParser(stats, itemsManager, skillSet);
         commandParser = newCommandParser(itemsManager, expressionParser);
     }
@@ -182,6 +190,11 @@ public class DefaultJXCSkin implements JXCSkin
             gaugeUpdater.dispose();
         }
         gaugeUpdaters.clear();
+        for (final SkinEvent skinEvent : skinEvents)
+        {
+            skinEvent.dispose();
+        }
+        skinEvents.clear();
     }
 
     /** {@inheritDoc} */
@@ -476,11 +489,6 @@ public class DefaultJXCSkin implements JXCSkin
         return selectedResolution;
     }
 
-    public void setSelectedResolution(final Resolution selectedResolution)
-    {
-        this.selectedResolution = selectedResolution;
-    }
-
     public void addDialog(final String dialogName, final JXCWindow window, final MouseTracker mouseTracker, final Commands commands)
     {
         dialogs.addDialog(dialogName, window, mouseTracker, commands);
@@ -553,5 +561,14 @@ public class DefaultJXCSkin implements JXCSkin
         final GaugeUpdater gaugeUpdater = gaugeUpdaterParser.parseGaugeUpdater(name, experienceTable);
         gaugeUpdaters.add(gaugeUpdater);
         return gaugeUpdater;
+    }
+
+    /**
+     * Records a {@link SkinEvent} attached to this instance.
+     * @param skinEvent the skin event to add
+     */
+    public void addSkinEvent(final SkinEvent skinEvent)
+    {
+        skinEvents.add(skinEvent);
     }
 }
