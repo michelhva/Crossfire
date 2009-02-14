@@ -37,6 +37,11 @@ public class GUIDialogTitle extends GUIPicture
     private static final long serialVersionUID = 1;
 
     /**
+     * The {@link JXCWindow} this element belongs to.
+     */
+    private final JXCWindow window;
+
+    /**
      * Set to the distance of the dialog cordinates relative to the mouse
      * position while dragging start. Else set to <code>null</code>.
      */
@@ -66,6 +71,7 @@ public class GUIDialogTitle extends GUIPicture
     public GUIDialogTitle(final JXCWindow window, final String name, final int x, final int y, final int w, final int h, final BufferedImage image, final float alpha)
     {
         super(window, name, x, y, w, h, image, alpha);
+        this.window = window;
     }
 
     /** {@inheritDoc} */
@@ -128,8 +134,8 @@ public class GUIDialogTitle extends GUIPicture
         }
 
         final Point point = e.getLocationOnScreen();
-        final int newX = Math.max(Math.min(point.x+offset.x, getWindow().getWindowWidth()-gui.getWidth()), 0);
-        final int newY = Math.max(Math.min(point.y+offset.y, getWindow().getWindowHeight()-gui.getHeight()), 0);
+        final int newX = Math.max(Math.min(point.x+offset.x, window.getWindowWidth()-gui.getWidth()), 0);
+        final int newY = Math.max(Math.min(point.y+offset.y, window.getWindowHeight()-gui.getHeight()), 0);
         gui.setPosition(newX, newY);
     }
 }
