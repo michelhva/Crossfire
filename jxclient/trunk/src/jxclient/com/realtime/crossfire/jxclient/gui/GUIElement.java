@@ -253,7 +253,7 @@ public abstract class GUIElement extends JPanel
      */
     public void mouseEntered(final MouseEvent e)
     {
-        ((JXCWindow)e.getSource()).getTooltipManager().setElement(this);
+        window.getTooltipManager().setElement(this);
     }
 
     /**
@@ -265,7 +265,7 @@ public abstract class GUIElement extends JPanel
      */
     public void mouseExited(final MouseEvent e)
     {
-        ((JXCWindow)e.getSource()).getTooltipManager().unsetElement(this);
+        window.getTooltipManager().unsetElement(this);
     }
 
     /**
