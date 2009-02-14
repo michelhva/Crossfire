@@ -227,9 +227,9 @@ public class GuiManager
     public void init(ScriptManager scriptManager, final CommandQueue commandQueue, final CrossfireServerConnection server, final OptionManager optionManager)
     {
         commands = new Commands(window, windowRenderer, commandQueue, server, scriptManager, optionManager, this);
-        windowRenderer.init(commands, new Gui(mouseTracker, commands, this, debugGui));
-        queryDialog = new Gui(mouseTracker, commands, this, debugGui);
-        keybindDialog = new Gui(mouseTracker, commands, this, debugGui);
+        windowRenderer.init(commands, new Gui(debugGui ? mouseTracker : null, commands, this));
+        queryDialog = new Gui(debugGui ? mouseTracker : null, commands, this);
+        keybindDialog = new Gui(debugGui ? mouseTracker : null, commands, this);
     }
 
     /**
@@ -695,7 +695,7 @@ public class GuiManager
      */
     public void showGUIStart()
     {
-        windowRenderer.clearGUI(new Gui(mouseTracker, commands, this, debugGui));
+        windowRenderer.clearGUI(new Gui(debugGui ? mouseTracker : null, commands, this));
         windowRenderer.setCurrentGui(skin.getStartInterface());
         tooltipManager.reset();
     }
@@ -705,7 +705,7 @@ public class GuiManager
      */
     public void showGUIMeta()
     {
-        windowRenderer.clearGUI(new Gui(mouseTracker, commands, this, debugGui));
+        windowRenderer.clearGUI(new Gui(debugGui ? mouseTracker : null, commands, this));
         final Gui newGui = skin.getMetaInterface();
         windowRenderer.setCurrentGui(newGui);
         newGui.activateDefaultElement();
@@ -717,7 +717,7 @@ public class GuiManager
      */
     public void showGUIMain()
     {
-        windowRenderer.clearGUI(new Gui(mouseTracker, commands, this, debugGui));
+        windowRenderer.clearGUI(new Gui(debugGui ? mouseTracker : null, commands, this));
         final Gui newGui = skin.getMainInterface();
         windowRenderer.setCurrentGui(newGui);
         tooltipManager.reset();
