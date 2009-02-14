@@ -69,7 +69,7 @@ public class Commands
         commands.put("scriptkillall", new ScriptkillallCommand(scriptManager, crossfireServerConnection));
         commands.put("scripts", new ScriptsCommand(scriptManager, crossfireServerConnection));
         commands.put("scripttell", new ScripttellCommand(scriptManager, crossfireServerConnection));
-        commands.put("exec", new ExecCommand(window, crossfireServerConnection));
+        commands.put("exec", new ExecCommand(guiManager, crossfireServerConnection));
         commands.put("set", new SetCommand(crossfireServerConnection, optionManager));
     }
 

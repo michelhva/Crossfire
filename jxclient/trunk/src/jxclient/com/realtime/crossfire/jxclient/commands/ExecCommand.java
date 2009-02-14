@@ -22,7 +22,7 @@ package com.realtime.crossfire.jxclient.commands;
 import com.realtime.crossfire.jxclient.server.CrossfireServerConnection;
 import com.realtime.crossfire.jxclient.skin.JXCSkinException;
 import com.realtime.crossfire.jxclient.window.GUICommandList;
-import com.realtime.crossfire.jxclient.window.JXCWindow;
+import com.realtime.crossfire.jxclient.window.GuiManager;
 
 /**
  * Implements a "script" command. It runs a new script.
@@ -32,21 +32,21 @@ import com.realtime.crossfire.jxclient.window.JXCWindow;
 public class ExecCommand extends AbstractCommand
 {
     /**
-     * The window to execute in.
+     * The {@link GuiManager} for looking up commands.
      */
-    private final JXCWindow window;
+    private final GuiManager guiManager;
 
     /**
      * Create a new instance.
      *
-     * @param window The window to execute in.
+     * @param guiManager the gui manager for looking up commands
      *
      * @param crossfireServerConnection the connection instance
      */
-    protected ExecCommand(final JXCWindow window, final CrossfireServerConnection crossfireServerConnection)
+    protected ExecCommand(final GuiManager guiManager, final CrossfireServerConnection crossfireServerConnection)
     {
         super(crossfireServerConnection);
-        this.window = window;
+        this.guiManager = guiManager;
     }
 
     /** {@inheritDoc} */
@@ -69,7 +69,7 @@ public class ExecCommand extends AbstractCommand
         final GUICommandList commandList;
         try
         {
-            commandList = window.getSkin().getCommandList(args);
+            commandList = guiManager.getSkin().getCommandList(args);
         }
         catch (final JXCSkinException ex)
         {
