@@ -107,6 +107,11 @@ public class GuiManager
     private final Settings settings;
 
     /**
+     * The {@link JXCConnection} to use.
+     */
+    private JXCConnection connection;
+
+    /**
      * Called periodically to update the display contents.
      */
     private final ActionListener actionListener = new ActionListener()
@@ -327,9 +332,8 @@ public class GuiManager
      * Opens the "query" dialog.
      * @param prompt the query prompt
      * @param queryType the query type
-     * @param connection the connection the command was received from
      */
-    public void openQueryDialog(final String prompt, final int queryType, final JXCConnection connection)
+    public void openQueryDialog(final String prompt, final int queryType)
     {
         windowRenderer.openDialog(queryDialog, false);
         queryDialog.setHideInput((queryType&CrossfireQueryListener.HIDEINPUT) != 0);
@@ -532,9 +536,8 @@ public class GuiManager
      * Sets the current player name. Does nothing if not currently in the
      * character name prompt.
      * @param playerName the player name
-     * @param connection the connection the command has been received from
      */
-    public void updatePlayerName(final String playerName, final JXCConnection connection)
+    public void updatePlayerName(final String playerName)
     {
         if (currentQueryDialogIsNamePrompt)
         {
@@ -740,5 +743,11 @@ public class GuiManager
     public Commands getCommands()
     {
         return commands;
+    }
+
+    @Deprecated
+    public void setConnection(final JXCConnection connection)
+    {
+        this.connection = connection;
     }
 }
