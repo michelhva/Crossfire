@@ -210,7 +210,7 @@ public class JXCWindow extends JFrame
     /**
      * The size of the client area.
      */
-    private Resolution resolution = null;
+    private final Resolution resolution;
 
     private ConnectionStatus status = ConnectionStatus.UNCONNECTED;
 
@@ -443,9 +443,11 @@ public class JXCWindow extends JFrame
      *
      * @param metaserverModel the metaserver model to use
      *
+     * @param resolution the size of the client area
+     *
      * @throws IOException if a resource cannot be loaded
      */
-    public JXCWindow(final Object terminateSync, final boolean debugGui, final Writer debugProtocol, final Writer debugKeyboard, final Settings settings, final OptionManager optionManager, final MetaserverModel metaserverModel) throws IOException
+    public JXCWindow(final Object terminateSync, final boolean debugGui, final Writer debugProtocol, final Writer debugKeyboard, final Settings settings, final OptionManager optionManager, final MetaserverModel metaserverModel, final Resolution resolution) throws IOException
     {
         super("");
         this.terminateSync = terminateSync;
@@ -453,6 +455,7 @@ public class JXCWindow extends JFrame
         this.settings = settings;
         this.optionManager = optionManager;
         this.metaserverModel = metaserverModel;
+        this.resolution = resolution;
         server = new DefaultCrossfireServerConnection(semaphoreRedraw, debugProtocol);
         final FaceCache faceCache = new FaceCache(server);
         experienceTable = new ExperienceTable(server);
@@ -560,9 +563,8 @@ public class JXCWindow extends JFrame
         }
     }
 
-    public void init(final Resolution resolution, final String skinName, final boolean fullScreen, final String serverInfo)
+    public void init(final String skinName, final boolean fullScreen, final String serverInfo)
     {
-        this.resolution = resolution;
         addKeyListener(keyListener);
         if (!setSkin(skinName))
         {
