@@ -113,7 +113,7 @@ public class CfMapUpdaterTest extends TestCase
     public void testFogOfWar1() throws IOException
     {
         final FaceCache faceCache = new FaceCache();
-        final FacesManager facesManager = new FacesManager(null, new MemoryImageCache(), new MemoryImageCache(), new MemoryImageCache(), faceCache);
+        final FacesManager facesManager = new FacesManager(null, new MemoryImageCache(), new MemoryImageCache(), new MemoryImageCache(), faceCache, null);
         defineFace(faceCache, facesManager, 1, "M", png64x64);
         defineFace(faceCache, facesManager, 2, "_", png32x32);
 
@@ -156,7 +156,7 @@ public class CfMapUpdaterTest extends TestCase
     public void testDisplayArtifacts1() throws IOException
     {
         final FaceCache faceCache = new FaceCache();
-        final FacesManager facesManager = new FacesManager(null, new MemoryImageCache(), new MemoryImageCache(), new MemoryImageCache(), faceCache);
+        final FacesManager facesManager = new FacesManager(null, new MemoryImageCache(), new MemoryImageCache(), new MemoryImageCache(), faceCache, null);
         defineFace(faceCache, facesManager, 307, "behemoth.x31", png64x64);
         defineFace(faceCache, facesManager, 308, "behemoth.x32", png64x64);
         defineFace(faceCache, facesManager, 309, "behemoth.x33", png64x64);
