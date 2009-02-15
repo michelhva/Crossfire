@@ -443,7 +443,7 @@ public class JXCWindow extends JFrame
         experienceTable = new ExperienceTable(server);
         skillSet = new SkillSet(server);
         stats = new Stats(server, experienceTable, skillSet);
-        itemsManager = new ItemsManager(server, faceCache, stats, skillSet);
+        itemsManager = new ItemsManager(server, faceCache, stats, skillSet, this);
         facesManager = new FacesManager(server, new FileCache(Filenames.getOriginalImageCacheDir()), new FileCache(Filenames.getScaledImageCacheDir()), new FileCache(Filenames.getMagicMapImageCacheDir()), faceCache);
         mapUpdater = new CfMapUpdater(server, facesManager, faceCache, animations, this);
         spellsManager = new SpellsManager(server, this);
@@ -521,7 +521,6 @@ public class JXCWindow extends JFrame
             {
                 connection.disconnect();
                 itemsManager.removeCrossfirePlayerListener(playerListener);
-                itemsManager.reset();
                 for (final ConnectionStateListener listener : connectionStateListeners)
                 {
                     listener.disconnect();
@@ -533,13 +532,12 @@ public class JXCWindow extends JFrame
             if (this.guiState == GuiState.MAIN)
             {
                 soundManager.mute(Sounds.CHARACTER, false);
-                itemsManager.addCrossfirePlayerListener(playerListener);
                 stats.reset();
                 skillSet.clearNumberedSkills();
                 connection.connect(connectionListener, crossfireQueryListener, guiManager.crossfireDrawextinfoListener, guiManager.getSkin().getMapWidth(), guiManager.getSkin().getMapHeight(), guiManager.getSkin().getNumLookObjects());
                 facesManager.reset();
                 commandQueue.clear();
-                itemsManager.reset();
+                itemsManager.addCrossfirePlayerListener(playerListener);
                 for (final ConnectionStateListener listener : connectionStateListeners)
                 {
                     listener.connect();
