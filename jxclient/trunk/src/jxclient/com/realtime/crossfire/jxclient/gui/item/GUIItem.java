@@ -23,7 +23,6 @@ import com.realtime.crossfire.jxclient.gui.ActivatableGUIElement;
 import com.realtime.crossfire.jxclient.gui.GUIElement;
 import com.realtime.crossfire.jxclient.gui.GUIScrollable;
 import com.realtime.crossfire.jxclient.gui.TooltipManager;
-import com.realtime.crossfire.jxclient.window.JXCWindow;
 import com.realtime.crossfire.jxclient.window.JXCWindowRenderer;
 import java.awt.Transparency;
 import java.awt.event.MouseEvent;
@@ -69,44 +68,40 @@ public abstract class GUIItem extends ActivatableGUIElement implements GUIScroll
     public void mouseClicked(final MouseEvent e)
     {
         super.mouseClicked(e);
-        final JXCWindow window = (JXCWindow)e.getSource();
         switch (e.getButton())
         {
         case MouseEvent.BUTTON1:
             setActive(true);
-            button1Clicked(window, e.getModifiersEx());
+            button1Clicked(e.getModifiersEx());
             break;
 
         case MouseEvent.BUTTON2:
-            button2Clicked(window, e.getModifiersEx());
+            button2Clicked(e.getModifiersEx());
             break;
 
         case MouseEvent.BUTTON3:
-            button3Clicked(window, e.getModifiersEx());
+            button3Clicked(e.getModifiersEx());
             break;
         }
     }
 
     /**
      * Called when the left mouse button was pressed.
-     * @param window the window instance this element belongs to
      * @param modifiers the input event modifiers
      */
-    public abstract void button1Clicked(final JXCWindow window, final int modifiers);
+    public abstract void button1Clicked(final int modifiers);
 
     /**
      * Called when the middle mouse button was pressed.
-     * @param window the window instance this element belongs to
      * @param modifiers the input event modifiers
      */
-    public abstract void button2Clicked(final JXCWindow window, final int modifiers);
+    public abstract void button2Clicked(final int modifiers);
 
     /**
      * Called when the right mouse button was pressed.
-     * @param window the window instance this element belongs to
      * @param modifiers the input event modifiers
      */
-    public abstract void button3Clicked(final JXCWindow window, final int modifiers);
+    public abstract void button3Clicked(final int modifiers);
 
     /** {@inheritDoc} */
     @Override

@@ -29,7 +29,6 @@ import com.realtime.crossfire.jxclient.spells.CurrentSpellManager;
 import com.realtime.crossfire.jxclient.spells.Spell;
 import com.realtime.crossfire.jxclient.spells.SpellsManager;
 import com.realtime.crossfire.jxclient.spells.SpellsManagerListener;
-import com.realtime.crossfire.jxclient.window.JXCWindow;
 import com.realtime.crossfire.jxclient.window.JXCWindowRenderer;
 import java.awt.Color;
 import java.awt.Graphics;
@@ -188,7 +187,7 @@ public class GUIItemSpelllist extends GUIItem
 
     /* {@inheritDoc} */
     @Override
-    public void button1Clicked(final JXCWindow window, final int modifiers)
+    public void button1Clicked(final int modifiers)
     {
         if (spell == null)
         {
@@ -201,13 +200,13 @@ public class GUIItemSpelllist extends GUIItem
 
     /* {@inheritDoc} */
     @Override
-    public void button2Clicked(final JXCWindow window, final int modifiers)
+    public void button2Clicked(final int modifiers)
     {
     }
 
     /* {@inheritDoc} */
     @Override
-    public void button3Clicked(final JXCWindow window, final int modifiers)
+    public void button3Clicked(final int modifiers)
     {
     }
 
