@@ -112,6 +112,11 @@ public class GuiManager
     private JXCConnection connection;
 
     /**
+     * The {@link CrossfireServerConnection} instance to monitor.
+     */
+    private final CrossfireServerConnection server;
+
+    /**
      * Called periodically to update the display contents.
      */
     private final ActionListener actionListener = new ActionListener()
@@ -133,9 +138,9 @@ public class GuiManager
     private final Timer timer = new Timer(10, actionListener);
 
     /**
-     * The {@link CrossfireDrawextinfoListener}.
+     * The {@link CrossfireDrawextinfoListener} attached to {@link #server}.
      */
-    public final CrossfireDrawextinfoListener crossfireDrawextinfoListener = new CrossfireDrawextinfoListener()
+    private final CrossfireDrawextinfoListener crossfireDrawextinfoListener = new CrossfireDrawextinfoListener()
     {
         /** {@inheritDoc} */
         @Override
@@ -214,6 +219,27 @@ public class GuiManager
     };
 
     /**
+     * The {@link ConnectionStateListener} for detecting established or dropped
+     * connections.
+     */
+    private final ConnectionStateListener connectionStateListener = new ConnectionStateListener()
+    {
+        /** {@inheritDoc} */
+        @Override
+        public void connect()
+        {
+            server.addCrossfireDrawextinfoListener(crossfireDrawextinfoListener);
+        }
+
+        /** {@inheritDoc} */
+        @Override
+        public void disconnect()
+        {
+            server.removeCrossfireDrawextinfoListener(crossfireDrawextinfoListener);
+        }
+    };
+
+    /**
      * Creates a new instance.
      * @param window the associated window
      * @param debugGui whether gui debugging is active
@@ -221,16 +247,19 @@ public class GuiManager
      * @param semaphoreRedraw the semaphore to use for redrawing operations
      * @param tooltipManager the tooltip manager to update
      * @param settings the settings to use
+     * @param server the crossfire server connection to monitor
      */
-    public GuiManager(final JXCWindow window, final boolean debugGui, final Object semaphoreDrawing, final Object semaphoreRedraw, final TooltipManager tooltipManager, final Settings settings)
+    public GuiManager(final JXCWindow window, final boolean debugGui, final Object semaphoreDrawing, final Object semaphoreRedraw, final TooltipManager tooltipManager, final Settings settings, final CrossfireServerConnection server)
     {
         this.debugGui = debugGui;
         this.semaphoreDrawing = semaphoreDrawing;
         this.window = window;
         this.tooltipManager = tooltipManager;
         this.settings = settings;
+        this.server = server;
         mouseTracker = new MouseTracker(debugGui);
         windowRenderer = new JXCWindowRenderer(window, mouseTracker, semaphoreRedraw);
+        window.addConnectionStateListener(connectionStateListener);
         mouseTracker.init(windowRenderer);
     }
 

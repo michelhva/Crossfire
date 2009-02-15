@@ -472,7 +472,7 @@ public class JXCWindow extends JFrame
         new PoisonWatcher(stats, server);
         new ActiveSkillWatcher(stats, server);
         setDefaultCloseOperation(DO_NOTHING_ON_CLOSE);
-        guiManager = new GuiManager(this, debugGui, semaphoreDrawing, semaphoreRedraw, new TooltipManager(this), settings);
+        guiManager = new GuiManager(this, debugGui, semaphoreDrawing, semaphoreRedraw, new TooltipManager(this), settings, server);
         final ScriptManager scriptManager = new ScriptManager(commandQueue, server, stats, itemsManager, spellsManager, mapUpdater, skillSet);
         guiManager.init(scriptManager, commandQueue, server, optionManager);
         keybindingsManager = new KeybindingsManager(guiManager.getCommands(), guiManager);
