@@ -17,27 +17,35 @@
 //
 // JXClient is (C)2005 by Yann Chachkoff.
 //
-package com.realtime.crossfire.jxclient.gui;
+package com.realtime.crossfire.jxclient.gui.scrollable;
+
+import com.realtime.crossfire.jxclient.gui.GUIScrollBar;
 
 /**
- * @author Lauwenmark
- * @author Andreas Kirschbaum
+ * A {@link GUIScrollable} that can be attached to {@link GUIScrollBar}s.
  */
-public interface GUIScrollable
+public interface GUIScrollable2 extends GUIScrollable
 {
     /**
-     * Return whether scrolling is possible.
+     * Add a scrollable listener to be informed about changes.
      *
-     * @param distance The distance to scroll.
-     *
-     * @return Whether scrolling is possible.
+     * @param listener The listener to add.
      */
-    boolean canScroll(int distance);
-
-    void scroll(int distance);
+    void addScrollableListener(ScrollableListener listener);
 
     /**
-     * Reset the scroll index to the default value.
+     * Remove a scrollable listener.
+     *
+     * @param listener The listener to remove.
      */
-    void resetScroll();
+    void removeScrollableListener(ScrollableListener listener);
+
+    /**
+     * Scroll to the given location. The possible range is given by a previous
+     * notification through a listener registered with {@link
+     * #addScrollableListener(ScrollableListener)}.
+     *
+     * @param pos The location to scroll to.
+     */
+    void scrollTo(int pos);
 }
