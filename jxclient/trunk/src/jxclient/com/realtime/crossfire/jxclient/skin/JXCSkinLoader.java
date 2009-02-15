@@ -96,6 +96,7 @@ import com.realtime.crossfire.jxclient.window.GuiManager;
 import com.realtime.crossfire.jxclient.window.JXCWindow;
 import com.realtime.crossfire.jxclient.window.JXCWindowRenderer;
 import com.realtime.crossfire.jxclient.window.MouseTracker;
+import com.realtime.crossfire.jxclient.window.RendererGuiState;
 import java.awt.Color;
 import java.awt.Font;
 import java.awt.image.BufferedImage;
@@ -1037,7 +1038,7 @@ public class JXCSkinLoader
 
         for (int i = 1; i < args.length; i++)
         {
-            gui.hideInState(NumberParser.parseEnum(JXCWindowRenderer.GuiState.class, args[i], "gui state"));
+            gui.hideInState(NumberParser.parseEnum(RendererGuiState.class, args[i], "gui state"));
         }
     }
 

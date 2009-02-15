@@ -27,6 +27,7 @@ import com.realtime.crossfire.jxclient.stats.Stats;
 import com.realtime.crossfire.jxclient.stats.StatsListener;
 import com.realtime.crossfire.jxclient.window.GuiStateListener;
 import com.realtime.crossfire.jxclient.window.JXCWindowRenderer;
+import com.realtime.crossfire.jxclient.window.RendererGuiState;
 
 /**
  * Monitors stat changes and generates appropriate sound effects.
@@ -136,9 +137,9 @@ public class StatsWatcher
     {
         /** {@inheritDoc} */
         @Override
-        public void guiStateChanged(final JXCWindowRenderer.GuiState guiState)
+        public void guiStateChanged(final RendererGuiState rendererGuiState)
         {
-            active = guiState == JXCWindowRenderer.GuiState.PLAYING;
+            active = rendererGuiState == RendererGuiState.PLAYING;
             ignoreLevelChange = System.currentTimeMillis()+DELAY;
         }
     };

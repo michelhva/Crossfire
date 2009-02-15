@@ -20,16 +20,18 @@
 package com.realtime.crossfire.jxclient.window;
 
 /**
- * Interface for listeners interested in gui state changes.
- *
+ * All gui states of {@link JXCWindowRenderer}.
  * @author Andreas Kirschbaum
  */
-public interface GuiStateListener
+public enum RendererGuiState
 {
-    /**
-     * The gui state has changed.
-     *
-     * @param rendererGuiState The new guiState.
-     */
-    void guiStateChanged(RendererGuiState rendererGuiState);
+    START,
+
+    META,
+
+    LOGIN,
+
+    NEWCHAR,
+
+    PLAYING;
 }
