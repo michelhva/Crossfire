@@ -303,48 +303,60 @@ public class JXCSkinLoader
         expressionParser = new ExpressionParser(selectedResolution);
         final GuiFactory guiFactory = new GuiFactory(debugGui ? mouseTracker : null, commands, guiManager);
         skin = new DefaultJXCSkin(defaultKeyBindings, optionManager, stats, itemsManager, experienceTable, skillSet, expressionParser, selectedResolution, guiFactory);
-        guiElementParser = new GuiElementParser(skin);
-        skin.reset();
-        imageParser.clear();
-        skin.addDialog("keybind");
-        skin.addDialog("query");
-        skin.addDialog("book");
-        skin.addDialog("main");
-        skin.addDialog("meta");
-        skin.addDialog("quit");
-        skin.addDialog("disconnect");
-        skin.addDialog("start");
-        definedFonts.clear();
-        textButtonFactory = null;
-        dialogFactory = null;
-        checkBoxFactory = null;
+        JXCSkin skinToDetach = skin;
         try
         {
-            load(skinSource, "global", crossfireServerConnection, window, tooltipManager, windowRenderer, metaserverModel, commandQueue, null, shortcuts, commands, currentSpellManager, guiManager);
-            for (;;)
-            {
-                final String name = skin.getDialogToLoad();
-                if (name == null)
-                {
-                    break;
-                }
-                final Gui gui = skin.getDialog(name);
-                load(skinSource, name, crossfireServerConnection, window, tooltipManager, windowRenderer, metaserverModel, commandQueue, gui, shortcuts, commands, currentSpellManager, guiManager);
-                gui.setStateChanged(false);
-            }
-        }
-        finally
-        {
+            guiElementParser = new GuiElementParser(skin);
+            imageParser.clear();
+            skin.addDialog("keybind");
+            skin.addDialog("query");
+            skin.addDialog("book");
+            skin.addDialog("main");
+            skin.addDialog("meta");
+            skin.addDialog("quit");
+            skin.addDialog("disconnect");
+            skin.addDialog("start");
             definedFonts.clear();
             textButtonFactory = null;
             dialogFactory = null;
             checkBoxFactory = null;
-            imageParser.clear();
-        }
+            try
+            {
+                load(skinSource, "global", crossfireServerConnection, window, tooltipManager, windowRenderer, metaserverModel, commandQueue, null, shortcuts, commands, currentSpellManager, guiManager);
+                for (;;)
+                {
+                    final String name = skin.getDialogToLoad();
+                    if (name == null)
+                    {
+                        break;
+                    }
+                    final Gui gui = skin.getDialog(name);
+                    load(skinSource, name, crossfireServerConnection, window, tooltipManager, windowRenderer, metaserverModel, commandQueue, gui, shortcuts, commands, currentSpellManager, guiManager);
+                    gui.setStateChanged(false);
+                }
+            }
+            finally
+            {
+                definedFonts.clear();
+                textButtonFactory = null;
+                dialogFactory = null;
+                checkBoxFactory = null;
+                imageParser.clear();
+            }
 
-        if (skin.getMapWidth() == 0 || skin.getMapHeight() == 0)
+            if (skin.getMapWidth() == 0 || skin.getMapHeight() == 0)
+            {
+                throw new JXCSkinException("Missing map command");
+            }
+
+            skinToDetach = null;
+        }
+        finally
         {
-            throw new JXCSkinException("Missing map command");
+            if (skinToDetach != null)
+            {
+                skinToDetach.detach();
+            }
         }
 
         return skin;

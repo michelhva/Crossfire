@@ -178,28 +178,6 @@ public class DefaultJXCSkin implements JXCSkin
         commandParser = newCommandParser(itemsManager, expressionParser);
     }
 
-    public void reset()
-    {
-        detach();
-        skinName = "unknown";
-        mapWidth = 0;
-        mapHeight = 0;
-        numLookObjects = DEFAULT_NUM_LOOK_OBJECTS;
-        dialogs.clear();
-        definedCommandLists.clear();
-        tooltipLabel = null;
-        for (final GaugeUpdater gaugeUpdater : gaugeUpdaters)
-        {
-            gaugeUpdater.dispose();
-        }
-        gaugeUpdaters.clear();
-        for (final SkinEvent skinEvent : skinEvents)
-        {
-            skinEvent.dispose();
-        }
-        skinEvents.clear();
-    }
-
     /** {@inheritDoc} */
     @Override
     public String getSkinName()
@@ -418,7 +396,11 @@ public class DefaultJXCSkin implements JXCSkin
     @Override
     public void attach(final GuiManager guiManager)
     {
-        detach();
+        if (this.guiManager != null)
+        {
+            throw new IllegalStateException("skin is already attached");
+        }
+
         this.guiManager = guiManager;
         guiManager.getWindowRenderer().setTooltip(tooltipLabel);
         guiManager.getTooltipManager().setTooltip(tooltipLabel);
@@ -433,14 +415,13 @@ public class DefaultJXCSkin implements JXCSkin
     @Override
     public void detach()
     {
-        if (guiManager == null)
+        if (guiManager != null)
         {
-            return;
+            guiManager.getWindowRenderer().setTooltip(null);
+            guiManager.getTooltipManager().setTooltip(null);
+            guiManager = null;
         }
 
-        guiManager.getWindowRenderer().setTooltip(null);
-        guiManager.getTooltipManager().setTooltip(null);
-        guiManager = null;
         for (final String optionName : optionNames)
         {
             optionManager.removeOption(optionName);
