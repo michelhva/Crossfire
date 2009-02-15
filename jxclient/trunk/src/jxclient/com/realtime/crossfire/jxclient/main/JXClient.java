@@ -78,8 +78,6 @@ public class JXClient
     {
         try
         {
-            final SoundManager soundManager = new SoundManager();
-
             final FileOutputStream debugProtocolFileOutputStream = options.getDebugProtocolFilename() == null ? null : new FileOutputStream(options.getDebugProtocolFilename());
             try
             {
@@ -94,7 +92,8 @@ public class JXClient
                         {
                             final OptionManager optionManager = new OptionManager(options.getPrefs());
                             final Object terminateSync = new Object();
-                            final JXCWindow window = new JXCWindow(terminateSync, options.isDebugGui(), debugProtocolOutputStreamWriter, debugKeyboardOutputStreamWriter, options.getPrefs(), soundManager, optionManager);
+                            final JXCWindow window = new JXCWindow(terminateSync, options.isDebugGui(), debugProtocolOutputStreamWriter, debugKeyboardOutputStreamWriter, options.getPrefs(), optionManager);
+                            final SoundManager soundManager = new SoundManager(window);
                             try
                             {
                                 optionManager.addOption("sound_enabled", "Whether sound is enabled.", new SoundCheckBoxOption(soundManager));

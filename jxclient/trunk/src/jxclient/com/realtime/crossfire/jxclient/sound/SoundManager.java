@@ -19,6 +19,8 @@
 //
 package com.realtime.crossfire.jxclient.sound;
 
+import com.realtime.crossfire.jxclient.window.GuiStateListener;
+import com.realtime.crossfire.jxclient.window.JXCWindow;
 import java.util.EnumSet;
 
 /**
@@ -49,6 +51,46 @@ public class SoundManager
      * The muted sounds.
      */
     private final EnumSet<Sounds> mutedSounds = EnumSet.allOf(Sounds.class);
+
+    /**
+     * The {@link GuiStateListener} for detecting established or dropped
+     * connections.
+     */
+    private final GuiStateListener guiStateListener = new GuiStateListener()
+    {
+        /** {@inheritDoc} */
+        @Override
+        public void start()
+        {
+            muteMusic(true);
+            mute(Sounds.CHARACTER, true);
+        }
+
+        /** {@inheritDoc} */
+        @Override
+        public void metaserver()
+        {
+            muteMusic(true);
+            mute(Sounds.CHARACTER, true);
+        }
+
+        /** {@inheritDoc} */
+        @Override
+        public void main()
+        {
+            muteMusic(false);
+            mute(Sounds.CHARACTER, false);
+        }
+    };
+
+    /**
+     * Creates a new instance.
+     * @param window the window to attach to
+     */
+    public SoundManager(final JXCWindow window)
+    {
+        window.addConnectionStateListener(guiStateListener);
+    }
 
     /**
      * Set whether the sound system is enabled.
