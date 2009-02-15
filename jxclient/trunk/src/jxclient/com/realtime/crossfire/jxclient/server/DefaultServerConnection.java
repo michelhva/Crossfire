@@ -66,6 +66,7 @@ public abstract class DefaultServerConnection implements PacketListener, ServerC
             }
 
             clientSocket = new ClientSocket(hostname, port, this, scriptMonitorListeners, connectionListener);
+            clientSocket.connectionProgress(ClientSocketState.CONNECTING);
             clientSocket.start();
         }
     }
@@ -99,5 +100,22 @@ public abstract class DefaultServerConnection implements PacketListener, ServerC
     public ScriptMonitorListeners getScriptMonitorListeners()
     {
         return scriptMonitorListeners;
+    }
+
+    /**
+     * Sends a connection progress notification.
+     * @param clientSocketState the client socket state
+     */
+    protected void connectionProgress(final ClientSocketState clientSocketState)
+    {
+        final ClientSocket socket;
+        synchronized (clientSocketSem)
+        {
+            socket = clientSocket;
+        }
+        if (socket != null)
+        {
+            socket.connectionProgress(clientSocketState);
+        }
     }
 }

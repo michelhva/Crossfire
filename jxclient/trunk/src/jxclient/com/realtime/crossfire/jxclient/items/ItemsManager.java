@@ -21,6 +21,7 @@
 package com.realtime.crossfire.jxclient.items;
 
 import com.realtime.crossfire.jxclient.faces.FaceCache;
+import com.realtime.crossfire.jxclient.server.ClientSocketState;
 import com.realtime.crossfire.jxclient.server.CrossfireServerConnection;
 import com.realtime.crossfire.jxclient.server.CrossfireStatsListener;
 import com.realtime.crossfire.jxclient.server.CrossfireUpdateItemListener;
@@ -209,11 +210,26 @@ public class ItemsManager
         {
             reset();
         }
+
         /** {@inheritDoc} */
         @Override
-        public void main()
+        public void connecting()
         {
             reset();
+        }
+
+        /** {@inheritDoc} */
+        @Override
+        public void connecting(final ClientSocketState clientSocketState)
+        {
+            // ignore
+        }
+
+        /** {@inheritDoc} */
+        @Override
+        public void connected()
+        {
+            // ignore
         }
     };
 

@@ -1,5 +1,6 @@
 package com.realtime.crossfire.jxclient.window;
 
+import com.realtime.crossfire.jxclient.server.ClientSocketState;
 import com.realtime.crossfire.jxclient.server.ConnectionListener;
 import com.realtime.crossfire.jxclient.server.CrossfireServerConnection;
 import com.realtime.crossfire.jxclient.server.Pickup;
@@ -89,9 +90,23 @@ public class JXCConnection
 
         /** {@inheritDoc} */
         @Override
-        public void main()
+        public void connecting()
         {
             connect();
+        }
+
+        /** {@inheritDoc} */
+        @Override
+        public void connecting(final ClientSocketState clientSocketState)
+        {
+            // ignore
+        }
+
+        /** {@inheritDoc} */
+        @Override
+        public void connected()
+        {
+            // ignore
         }
     };
 

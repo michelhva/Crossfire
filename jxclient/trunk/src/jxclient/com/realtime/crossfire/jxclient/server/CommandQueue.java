@@ -112,9 +112,23 @@ public class CommandQueue
 
         /** {@inheritDoc} */
         @Override
-        public void main()
+        public void connecting()
         {
             clear();
+        }
+
+        /** {@inheritDoc} */
+        @Override
+        public void connecting(final ClientSocketState clientSocketState)
+        {
+            // ignore
+        }
+
+        /** {@inheritDoc} */
+        @Override
+        public void connected()
+        {
+            // ignore
         }
     };
 

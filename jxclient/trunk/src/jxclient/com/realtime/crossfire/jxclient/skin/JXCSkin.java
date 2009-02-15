@@ -88,6 +88,13 @@ public interface JXCSkin extends Iterable<Gui>
     Gui getDialogDisconnect();
 
     /**
+     * Returns the "connection in progress" dialog. It is opened while the
+     * connection establishment is in progress.
+     * @return the dialog or <code>null</code> if the dialog does not exist
+     */
+    Gui getDialogConnect();
+
+    /**
      * Returns the key bindings dialog.
      * @return the dialog
      */

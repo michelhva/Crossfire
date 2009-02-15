@@ -20,24 +20,39 @@
 package com.realtime.crossfire.jxclient.server;
 
 /**
- * Interface for clients processing received packets.
+ * Connection progress states of the {@link ClientSocket}. The state
+ * transitions in the declared order.
  * @author Andreas Kirschbaum
  */
-public interface PacketListener
+public enum ClientSocketState
 {
     /**
-     * Called once after the connection has been established and before the
-     * first {@link #processPacket(byte[], int, int)} is called.
+     * The socket is being established.
      */
-    void connected();
+    CONNECTING,
 
     /**
-     * Processes a received packet. This passed buffer must not be modified
-     * except for the packet range.
-     * @param packet the buffer holding the packet
-     * @param start the start index of the packet
-     * @param end the end of the packet data
-     * @throws UnknownCommandException if the packet cannot be parsed
+     * "version" protocol commands are being exchanged.
      */
-    void processPacket(byte[] packet, int start, int end) throws UnknownCommandException;
+    VERSION,
+
+    /**
+     * "setup" protocol commands are being exchanged.
+     */
+    SETUP,
+
+    /**
+     * "requestinfo" protocol commands are being exchanged.
+     */
+    REQUESTINFO,
+
+    /**
+     * "addme" protocol commands are being exchanged.
+     */
+    ADDME,
+
+    /**
+     * Connection is fully established.
+     */
+    CONNECTED;
 }

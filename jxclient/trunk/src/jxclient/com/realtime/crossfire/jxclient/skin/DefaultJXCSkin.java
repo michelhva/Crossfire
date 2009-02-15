@@ -253,6 +253,20 @@ public class DefaultJXCSkin implements JXCSkin
 
     /** {@inheritDoc} */
     @Override
+    public Gui getDialogConnect()
+    {
+        try
+        {
+            return getDialog("connect");
+        }
+        catch (final JXCSkinException ex)
+        {
+            return null;
+        }
+    }
+
+    /** {@inheritDoc} */
+    @Override
     public Gui getDialogKeyBind()
     {
         try

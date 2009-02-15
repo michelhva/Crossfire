@@ -20,6 +20,7 @@
 package com.realtime.crossfire.jxclient.stats;
 
 import com.realtime.crossfire.jxclient.experience.ExperienceTable;
+import com.realtime.crossfire.jxclient.server.ClientSocketState;
 import com.realtime.crossfire.jxclient.server.CrossfireServerConnection;
 import com.realtime.crossfire.jxclient.server.CrossfireStatsListener;
 import com.realtime.crossfire.jxclient.skills.Skill;
@@ -280,9 +281,23 @@ public class Stats
 
         /** {@inheritDoc} */
         @Override
-        public void main()
+        public void connecting()
         {
             reset();
+        }
+
+        /** {@inheritDoc} */
+        @Override
+        public void connecting(final ClientSocketState clientSocketState)
+        {
+            // ignore
+        }
+
+        /** {@inheritDoc} */
+        @Override
+        public void connected()
+        {
+            // ignore
         }
     };
 

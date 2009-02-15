@@ -33,6 +33,7 @@ import com.realtime.crossfire.jxclient.main.Options;
 import com.realtime.crossfire.jxclient.mapupdater.CfMapUpdater;
 import com.realtime.crossfire.jxclient.metaserver.MetaserverModel;
 import com.realtime.crossfire.jxclient.scripts.ScriptManager;
+import com.realtime.crossfire.jxclient.server.ClientSocketState;
 import com.realtime.crossfire.jxclient.server.CommandQueue;
 import com.realtime.crossfire.jxclient.server.ConnectionListener;
 import com.realtime.crossfire.jxclient.server.CrossfireQueryListener;
@@ -272,6 +273,20 @@ public class JXCWindow extends JFrame
             setStatus(ConnectionStatus.UNCONNECTED);
             changeGUI(GuiState.METASERVER);
         }
+
+        /** {@inheritDoc} */
+        @Override
+        public void connected(final ClientSocketState clientSocketState)
+        {
+            for (final GuiStateListener listener : guiStateListeners)
+            {
+                listener.connecting(clientSocketState);
+            }
+            if (clientSocketState == ClientSocketState.CONNECTED)
+            {
+                changeGUI(GuiState.CONNECTED);
+            }
+        }
     };
 
     /**
@@ -412,10 +427,24 @@ public class JXCWindow extends JFrame
 
         /** {@inheritDoc} */
         @Override
-        public void main()
+        public void connecting()
         {
             itemsManager.addCrossfirePlayerListener(playerListener);
             server.addCrossfireQueryListener(crossfireQueryListener);
+        }
+
+        /** {@inheritDoc} */
+        @Override
+        public void connecting(final ClientSocketState clientSocketState)
+        {
+            // ignore
+        }
+
+        /** {@inheritDoc} */
+        @Override
+        public void connected()
+        {
+            // ignore
         }
     };
 
@@ -551,10 +580,17 @@ public class JXCWindow extends JFrame
                 }
                 break;
 
-            case MAIN:
+            case CONNECTING:
                 for (final GuiStateListener listener : guiStateListeners)
                 {
-                    listener.main();
+                    listener.connecting();
+                }
+                break;
+
+            case CONNECTED:
+                for (final GuiStateListener listener : guiStateListeners)
+                {
+                    listener.connected();
                 }
                 break;
             }
@@ -608,7 +644,7 @@ public class JXCWindow extends JFrame
     {
         settings.putString("server", serverInfo);
         connection.setHost(serverInfo);
-        changeGUI(GuiState.MAIN);
+        changeGUI(GuiState.CONNECTING);
     }
 
     public void disconnect()

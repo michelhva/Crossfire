@@ -29,5 +29,7 @@ public enum GuiState
 
     METASERVER,
 
-    MAIN;
+    CONNECTING,
+
+    CONNECTED;
 }

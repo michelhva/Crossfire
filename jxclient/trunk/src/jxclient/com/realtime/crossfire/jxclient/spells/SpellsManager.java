@@ -19,6 +19,7 @@
 //
 package com.realtime.crossfire.jxclient.spells;
 
+import com.realtime.crossfire.jxclient.server.ClientSocketState;
 import com.realtime.crossfire.jxclient.server.CrossfireServerConnection;
 import com.realtime.crossfire.jxclient.server.CrossfireSpellListener;
 import com.realtime.crossfire.jxclient.window.GuiStateListener;
@@ -107,11 +108,26 @@ public class SpellsManager
         {
             // ignore
         }
+
         /** {@inheritDoc} */
         @Override
-        public void main()
+        public void connecting()
         {
             spells.clear();
+        }
+
+        /** {@inheritDoc} */
+        @Override
+        public void connecting(final ClientSocketState clientSocketState)
+        {
+            // ignore
+        }
+
+        /** {@inheritDoc} */
+        @Override
+        public void connected()
+        {
+            // ignore
         }
     };
 

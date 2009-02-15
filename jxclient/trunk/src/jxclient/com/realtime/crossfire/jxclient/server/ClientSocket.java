@@ -140,6 +140,7 @@ public class ClientSocket extends Thread
                 {
                     outputStream = socket.getOutputStream();
                 }
+                packetListener.connected();
                 final byte[] buf = new byte[2+0xFFFF];
                 int pos = 0;
 LOOP:
@@ -258,5 +259,14 @@ LOOP:
         }
 
         scriptMonitorListener.commandSent(buf, len);
+    }
+
+    /**
+     * Sends a connection progress notification.
+     * @param clientSocketState the client socket state
+     */
+    public void connectionProgress(final ClientSocketState clientSocketState)
+    {
+        connectionListener.connected(clientSocketState);
     }
 }

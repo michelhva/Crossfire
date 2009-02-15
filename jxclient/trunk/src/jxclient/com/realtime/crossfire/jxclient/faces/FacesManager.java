@@ -19,6 +19,7 @@
 //
 package com.realtime.crossfire.jxclient.faces;
 
+import com.realtime.crossfire.jxclient.server.ClientSocketState;
 import com.realtime.crossfire.jxclient.server.CrossfireServerConnection;
 import com.realtime.crossfire.jxclient.util.ResourceUtils;
 import com.realtime.crossfire.jxclient.window.GuiStateListener;
@@ -136,11 +137,26 @@ public class FacesManager
         {
             // ignore
         }
+
         /** {@inheritDoc} */
         @Override
-        public void main()
+        public void connecting()
         {
             reset();
+        }
+
+        /** {@inheritDoc} */
+        @Override
+        public void connecting(final ClientSocketState clientSocketState)
+        {
+            // ignore
+        }
+
+        /** {@inheritDoc} */
+        @Override
+        public void connected()
+        {
+            // ignore
         }
     };
 

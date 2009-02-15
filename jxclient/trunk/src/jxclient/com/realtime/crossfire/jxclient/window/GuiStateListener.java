@@ -19,6 +19,8 @@
 //
 package com.realtime.crossfire.jxclient.window;
 
+import com.realtime.crossfire.jxclient.server.ClientSocketState;
+
 /**
  * Interface for listeners interested gui state changes.
  * @author Andreas Kirschbaum
@@ -36,7 +38,18 @@ public interface GuiStateListener
     void metaserver();
 
     /**
-     * The main screen for playing is displayed.
+     * Connection establishment is in progress.
      */
-    void main();
+    void connecting();
+
+    /**
+     * Connection establishment is in progress.
+     * @param clientSocketState the client socket state
+     */
+    void connecting(final ClientSocketState clientSocketState);
+
+    /**
+     * The connection has been established.
+     */
+    void connected();
 }
