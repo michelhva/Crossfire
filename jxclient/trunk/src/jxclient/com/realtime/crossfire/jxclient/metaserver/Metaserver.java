@@ -19,6 +19,8 @@
 //
 package com.realtime.crossfire.jxclient.metaserver;
 
+import com.realtime.crossfire.jxclient.window.GuiStateListener;
+import com.realtime.crossfire.jxclient.window.JXCWindow;
 import java.io.BufferedReader;
 import java.io.File;
 import java.io.IOException;
@@ -67,12 +69,41 @@ public class Metaserver
     private final MetaserverModel metaserverModel;
 
     /**
+     * The {@link GuiStateListener} for detecting established or dropped
+     * connections.
+     */
+    private final GuiStateListener guiStateListener = new GuiStateListener()
+    {
+        /** {@inheritDoc} */
+        @Override
+        public void start()
+        {
+            // ignore
+        }
+
+        /** {@inheritDoc} */
+        @Override
+        public void metaserver()
+        {
+            metaserverProcessor.query();
+        }
+
+        /** {@inheritDoc} */
+        @Override
+        public void main()
+        {
+            metaserverProcessor.disable();
+        }
+    };
+
+    /**
      * Create a new instance.
      *
      * @param metaserverCacheFile The metaserver cache file.
      * @param metaserverModel the metaserver model instance to update
+     * @param window the window to attach to
      */
-    public Metaserver(final File metaserverCacheFile, final MetaserverModel metaserverModel)
+    public Metaserver(final File metaserverCacheFile, final MetaserverModel metaserverModel, final JXCWindow window)
     {
         serverCache = new ServerCache(metaserverCacheFile);
         this.metaserverModel = metaserverModel;
@@ -82,16 +113,8 @@ public class Metaserver
             metaserverModel.add(metaserverEntry);
         }
         metaserverModel.commit();
-    }
-
-    public void query()
-    {
+        window.addConnectionStateListener(guiStateListener);
         metaserverProcessor.query();
-    }
-
-    public void disable()
-    {
-        metaserverProcessor.disable();
     }
 
     /**
