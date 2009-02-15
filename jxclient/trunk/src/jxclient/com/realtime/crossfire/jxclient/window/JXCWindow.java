@@ -643,7 +643,6 @@ public class JXCWindow extends JFrame
             System.err.println("cannot load skin "+skinName+": "+ex.getMessage());
             return false;
         }
-        skin.attach(guiManager);
         guiManager.setSkin(skin);
         optionManager.loadOptions();
         keyHandler.setKeyBindings(skin.getDefaultKeyBindings());
