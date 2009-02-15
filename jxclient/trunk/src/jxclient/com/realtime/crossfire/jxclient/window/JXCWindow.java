@@ -402,6 +402,7 @@ public class JXCWindow extends JFrame
         @Override
         public void start()
         {
+            itemsManager.removeCrossfirePlayerListener(playerListener);
             server.removeCrossfireQueryListener(crossfireQueryListener);
         }
 
@@ -409,6 +410,7 @@ public class JXCWindow extends JFrame
         @Override
         public void metaserver()
         {
+            itemsManager.removeCrossfirePlayerListener(playerListener);
             server.removeCrossfireQueryListener(crossfireQueryListener);
         }
 
@@ -416,6 +418,7 @@ public class JXCWindow extends JFrame
         @Override
         public void main()
         {
+            itemsManager.addCrossfirePlayerListener(playerListener);
             server.addCrossfireQueryListener(crossfireQueryListener);
         }
     };
@@ -537,7 +540,6 @@ public class JXCWindow extends JFrame
             switch (guiState)
             {
             case START:
-                itemsManager.removeCrossfirePlayerListener(playerListener);
                 for (final GuiStateListener listener : guiStateListeners)
                 {
                     listener.start();
@@ -549,7 +551,6 @@ public class JXCWindow extends JFrame
                 break;
 
             case METASERVER:
-                itemsManager.removeCrossfirePlayerListener(playerListener);
                 for (final GuiStateListener listener : guiStateListeners)
                 {
                     listener.metaserver();
@@ -557,7 +558,6 @@ public class JXCWindow extends JFrame
                 break;
 
             case MAIN:
-                itemsManager.addCrossfirePlayerListener(playerListener);
                 for (final GuiStateListener listener : guiStateListeners)
                 {
                     listener.main();
