@@ -230,29 +230,7 @@ public class JXCWindow extends JFrame
      */
     private Resolution resolution = null;
 
-    public enum Status
-    {
-        /**
-         * Represents the unconnected status of the client, which is the first to
-         * happen during a normal gaming session.
-         * @since 1.0
-         */
-        UNCONNECTED,
-
-        /**
-         * Represents the status of the client that is used during play.
-         * @since 1.0
-         */
-        PLAYING,
-
-        /**
-         * Represents the status of the client that is displaying a Query dialog.
-         * @since 1.0
-         */
-        QUERY;
-    }
-
-    private Status status = Status.UNCONNECTED;
+    private ConnectionStatus status = ConnectionStatus.UNCONNECTED;
 
     private final Object semaphoreStatus = new Object();
 
@@ -313,7 +291,7 @@ public class JXCWindow extends JFrame
         @Override
         public void connectionLost()
         {
-            setStatus(Status.UNCONNECTED);
+            setStatus(ConnectionStatus.UNCONNECTED);
             changeGUI(GuiState.METASERVER);
         }
     };
@@ -426,7 +404,7 @@ public class JXCWindow extends JFrame
         {
             synchronized (semaphoreDrawing)
             {
-                setStatus(Status.QUERY);
+                setStatus(ConnectionStatus.QUERY);
                 guiManager.openQueryDialog(prompt, queryType);
             }
         }
@@ -829,7 +807,7 @@ public class JXCWindow extends JFrame
      * @param status The new status value.
      * @since 1.0
      */
-    public void setStatus(final Status status)
+    public void setStatus(final ConnectionStatus status)
     {
         synchronized (semaphoreStatus)
         {
@@ -842,7 +820,7 @@ public class JXCWindow extends JFrame
      * @since 1.0
      * @return A value representing the current status.
      */
-    public Status getStatus()
+    public ConnectionStatus getStatus()
     {
         synchronized (semaphoreStatus)
         {
@@ -852,7 +830,7 @@ public class JXCWindow extends JFrame
 
     public void sendReply(final String reply)
     {
-        setStatus(JXCWindow.Status.PLAYING);
+        setStatus(ConnectionStatus.PLAYING);
         server.sendReply(reply);
         guiManager.closeQueryDialog();
     }
