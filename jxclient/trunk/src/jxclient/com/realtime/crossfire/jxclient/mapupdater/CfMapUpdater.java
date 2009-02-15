@@ -339,7 +339,7 @@ public class CfMapUpdater
     /**
      * Resets the animation state.
      */
-    public void reset()
+    private void reset()
     {
         synchronized (sync)
         {
