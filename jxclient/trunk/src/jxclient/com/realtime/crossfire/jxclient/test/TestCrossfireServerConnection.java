@@ -10,6 +10,7 @@ import com.realtime.crossfire.jxclient.server.CrossfireMagicmapListener;
 import com.realtime.crossfire.jxclient.server.CrossfireMusicListener;
 import com.realtime.crossfire.jxclient.server.CrossfireQueryListener;
 import com.realtime.crossfire.jxclient.server.CrossfireServerConnection;
+import com.realtime.crossfire.jxclient.server.CrossfireSkillInfoListener;
 import com.realtime.crossfire.jxclient.server.CrossfireSoundListener;
 import com.realtime.crossfire.jxclient.server.CrossfireSpellListener;
 import com.realtime.crossfire.jxclient.server.CrossfireStatsListener;
@@ -20,7 +21,6 @@ import com.realtime.crossfire.jxclient.server.CrossfireUpdateMapListener;
 import com.realtime.crossfire.jxclient.server.MapSizeListener;
 import com.realtime.crossfire.jxclient.server.ReceivedPacketListener;
 import com.realtime.crossfire.jxclient.server.ScriptMonitorListeners;
-import com.realtime.crossfire.jxclient.server.CrossfireSkillInfoListener;
 import junit.framework.Assert;
 
 /**
