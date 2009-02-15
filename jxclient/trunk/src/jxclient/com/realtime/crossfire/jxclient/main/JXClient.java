@@ -19,7 +19,10 @@
 //
 package com.realtime.crossfire.jxclient.main;
 
+import com.realtime.crossfire.jxclient.metaserver.Metaserver;
+import com.realtime.crossfire.jxclient.metaserver.MetaserverModel;
 import com.realtime.crossfire.jxclient.server.CrossfireServerConnection;
+import com.realtime.crossfire.jxclient.settings.Filenames;
 import com.realtime.crossfire.jxclient.settings.options.OptionException;
 import com.realtime.crossfire.jxclient.settings.options.OptionManager;
 import com.realtime.crossfire.jxclient.settings.options.SoundCheckBoxOption;
@@ -92,7 +95,9 @@ public class JXClient
                         {
                             final OptionManager optionManager = new OptionManager(options.getPrefs());
                             final Object terminateSync = new Object();
-                            final JXCWindow window = new JXCWindow(terminateSync, options.isDebugGui(), debugProtocolOutputStreamWriter, debugKeyboardOutputStreamWriter, options.getPrefs(), optionManager);
+                            final MetaserverModel metaserverModel = new MetaserverModel();
+                            final JXCWindow window = new JXCWindow(terminateSync, options.isDebugGui(), debugProtocolOutputStreamWriter, debugKeyboardOutputStreamWriter, options.getPrefs(), optionManager, metaserverModel);
+                            new Metaserver(Filenames.getMetaserverCacheFile(), metaserverModel, window);
                             final SoundManager soundManager = new SoundManager(window);
                             try
                             {
