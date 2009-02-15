@@ -37,7 +37,6 @@ import com.realtime.crossfire.jxclient.server.CommandQueue;
 import com.realtime.crossfire.jxclient.server.ConnectionListener;
 import com.realtime.crossfire.jxclient.server.CrossfireQueryListener;
 import com.realtime.crossfire.jxclient.server.CrossfireServerConnection;
-import com.realtime.crossfire.jxclient.server.DefaultCrossfireServerConnection;
 import com.realtime.crossfire.jxclient.server.Pickup;
 import com.realtime.crossfire.jxclient.settings.Filenames;
 import com.realtime.crossfire.jxclient.settings.Settings;
@@ -142,6 +141,9 @@ public class JXCWindow extends JFrame
      */
     private final ExperienceTable experienceTable;
 
+    /**
+     * The {@link CrossfireServerConnection} to use.
+     */
     private final CrossfireServerConnection server;
 
     private final Animations animations = new Animations(this);
@@ -180,12 +182,6 @@ public class JXCWindow extends JFrame
      * in.
      */
     private final Pickup characterPickup;
-
-    /**
-     * The semaphore used to synchronized map model updates and map view
-     * redraws.
-     */
-    private final Object semaphoreRedraw = new Object();
 
     /**
      * The option manager for this window.
@@ -429,10 +425,12 @@ public class JXCWindow extends JFrame
      * @param terminateSync Object to be notified when the application
      * terminates
      *
-     * @param debugGui Whether GUI elements should be highlighted.
+     * @param server the crossfire server connection to use
      *
-     * @param debugProtocol If non-<code>null</code>, write all protocol
-     * commands to this appender.
+     * @param semaphoreRedraw the semaphore used to synchronized map model
+     * updates and map view redraws
+     *
+     * @param debugGui Whether GUI elements should be highlighted.
      *
      * @param debugKeyboard If non-<code>null</code>, write all keyboard debug
      * to this writer.
@@ -447,16 +445,16 @@ public class JXCWindow extends JFrame
      *
      * @throws IOException if a resource cannot be loaded
      */
-    public JXCWindow(final Object terminateSync, final boolean debugGui, final Writer debugProtocol, final Writer debugKeyboard, final Settings settings, final OptionManager optionManager, final MetaserverModel metaserverModel, final Resolution resolution) throws IOException
+    public JXCWindow(final Object terminateSync, final CrossfireServerConnection server, final Object semaphoreRedraw, final boolean debugGui, final Writer debugKeyboard, final Settings settings, final OptionManager optionManager, final MetaserverModel metaserverModel, final Resolution resolution) throws IOException
     {
         super("");
         this.terminateSync = terminateSync;
+        this.server = server;
         this.debugGui = debugGui;
         this.settings = settings;
         this.optionManager = optionManager;
         this.metaserverModel = metaserverModel;
         this.resolution = resolution;
-        server = new DefaultCrossfireServerConnection(semaphoreRedraw, debugProtocol);
         final FaceCache faceCache = new FaceCache(server);
         experienceTable = new ExperienceTable(server);
         skillSet = new SkillSet(server, this);
@@ -759,12 +757,6 @@ public class JXCWindow extends JFrame
     public void removeConnectionStateListener(final GuiStateListener listener)
     {
         guiStateListeners.remove(listener);
-    }
-
-    @Deprecated
-    public CrossfireServerConnection getCrossfireServerConnection()
-    {
-        return server;
     }
 
     @Deprecated

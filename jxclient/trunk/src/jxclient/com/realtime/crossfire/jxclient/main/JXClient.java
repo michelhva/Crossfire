@@ -22,6 +22,7 @@ package com.realtime.crossfire.jxclient.main;
 import com.realtime.crossfire.jxclient.metaserver.Metaserver;
 import com.realtime.crossfire.jxclient.metaserver.MetaserverModel;
 import com.realtime.crossfire.jxclient.server.CrossfireServerConnection;
+import com.realtime.crossfire.jxclient.server.DefaultCrossfireServerConnection;
 import com.realtime.crossfire.jxclient.settings.Filenames;
 import com.realtime.crossfire.jxclient.settings.options.OptionException;
 import com.realtime.crossfire.jxclient.settings.options.OptionManager;
@@ -96,7 +97,9 @@ public class JXClient
                             final OptionManager optionManager = new OptionManager(options.getPrefs());
                             final Object terminateSync = new Object();
                             final MetaserverModel metaserverModel = new MetaserverModel();
-                            final JXCWindow window = new JXCWindow(terminateSync, options.isDebugGui(), debugProtocolOutputStreamWriter, debugKeyboardOutputStreamWriter, options.getPrefs(), optionManager, metaserverModel, options.getResolution());
+                            final Object semaphoreRedraw = new Object();
+                            final CrossfireServerConnection server = new DefaultCrossfireServerConnection(semaphoreRedraw, debugProtocolOutputStreamWriter);
+                            final JXCWindow window = new JXCWindow(terminateSync, server, semaphoreRedraw, options.isDebugGui(), debugKeyboardOutputStreamWriter, options.getPrefs(), optionManager, metaserverModel, options.getResolution());
                             new Metaserver(Filenames.getMetaserverCacheFile(), metaserverModel, window);
                             final SoundManager soundManager = new SoundManager(window);
                             try
@@ -116,7 +119,6 @@ public class JXClient
                                     @Override
                                     public void run()
                                     {
-                                        final CrossfireServerConnection server = window.getCrossfireServerConnection();
                                         final Stats stats = window.getStats();
                                         new MusicWatcher(server, soundManager);
                                         new SoundWatcher(server, soundManager);
