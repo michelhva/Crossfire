@@ -718,6 +718,11 @@ public class GuiManager
             skin.detach();
             skin = null;
         }
+
+        queryDialog = null;
+        keybindDialog = null;
+        dialogQuit = null;
+        dialogDisconnect = null;
     }
 
     /**
