@@ -19,7 +19,7 @@
 //
 package com.realtime.crossfire.jxclient.gui.commands;
 
-import com.realtime.crossfire.jxclient.gui.GUIScrollable;
+import com.realtime.crossfire.jxclient.gui.scrollable.GUIScrollable;
 
 /**
  * A {@link GUICommand} which scrolls a {@link GUIScrollable} gui element by a

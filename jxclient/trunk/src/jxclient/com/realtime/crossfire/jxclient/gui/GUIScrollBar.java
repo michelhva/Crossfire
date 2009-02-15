@@ -19,6 +19,8 @@
 //
 package com.realtime.crossfire.jxclient.gui;
 
+import com.realtime.crossfire.jxclient.gui.scrollable.GUIScrollable2;
+import com.realtime.crossfire.jxclient.gui.scrollable.ScrollableListener;
 import com.realtime.crossfire.jxclient.window.JXCWindowRenderer;
 import java.awt.Color;
 import java.awt.Graphics;
