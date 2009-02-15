@@ -35,7 +35,6 @@ import com.realtime.crossfire.jxclient.skills.SkillSet;
 import com.realtime.crossfire.jxclient.spells.Spell;
 import com.realtime.crossfire.jxclient.spells.SpellsManager;
 import com.realtime.crossfire.jxclient.stats.Stats;
-import com.realtime.crossfire.jxclient.window.JXCWindow;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStream;
@@ -61,11 +60,6 @@ public class DefaultScriptProcess extends Thread implements ScriptProcess
      * The script command including arguments.
      */
     private final String filename;
-
-    /**
-     * The associated {@link JXCWindow} instance.
-     */
-    private final JXCWindow window;
 
     /**
      * The {@link CommandQueue} for sending commands.
@@ -164,7 +158,6 @@ public class DefaultScriptProcess extends Thread implements ScriptProcess
      * Creates a new instance.
      * @param scriptId the script ID identifying the new script
      * @param filename the command including arguments to execute
-     * @param window the associated window instance
      * @param commandQueue the command queue for sending commands
      * @param crossfireServerConnection the server connection
      * @param stats the stats instance to watch
@@ -174,11 +167,10 @@ public class DefaultScriptProcess extends Thread implements ScriptProcess
      * @param skillSet the skill set for looking up skill names
      * @throws IOException if the script cannot be created
      */
-    public DefaultScriptProcess(final int scriptId, final String filename, final JXCWindow window, final CommandQueue commandQueue, final CrossfireServerConnection crossfireServerConnection, final Stats stats, final ItemsManager itemsManager, final SpellsManager spellsManager, final CfMapUpdater mapUpdater, final SkillSet skillSet) throws IOException
+    public DefaultScriptProcess(final int scriptId, final String filename, final CommandQueue commandQueue, final CrossfireServerConnection crossfireServerConnection, final Stats stats, final ItemsManager itemsManager, final SpellsManager spellsManager, final CfMapUpdater mapUpdater, final SkillSet skillSet) throws IOException
     {
         this.scriptId = scriptId;
         this.filename = filename;
-        this.window = window;
         this.commandQueue = commandQueue;
         this.crossfireServerConnection = crossfireServerConnection;
         this.stats = stats;
@@ -452,7 +444,7 @@ public class DefaultScriptProcess extends Thread implements ScriptProcess
         }
         else if (parms.equals("flags"))
         {
-            commandSent("request flags "+stats.getStat(CrossfireStatsListener.CS_STAT_FLAGS)+" "+(window.checkFire() ? "1" : "0")+" "+(commandQueue.checkRun() ? "1" : "0")+" 0");
+            commandSent("request flags "+stats.getStat(CrossfireStatsListener.CS_STAT_FLAGS)+" "+(commandQueue.checkFire() ? "1" : "0")+" "+(commandQueue.checkRun() ? "1" : "0")+" 0");
         }
         else if (parms.equals("items inv"))
         {

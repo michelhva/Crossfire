@@ -452,7 +452,7 @@ public class JXCWindow extends JFrame
         new ActiveSkillWatcher(stats, server);
         setDefaultCloseOperation(DO_NOTHING_ON_CLOSE);
         guiManager = new GuiManager(this, debugGui, semaphoreDrawing, semaphoreRedraw, new TooltipManager(this), settings);
-        final ScriptManager scriptManager = new ScriptManager(this, commandQueue, server, stats, itemsManager, spellsManager, mapUpdater, skillSet);
+        final ScriptManager scriptManager = new ScriptManager(commandQueue, server, stats, itemsManager, spellsManager, mapUpdater, skillSet);
         guiManager.init(scriptManager, commandQueue, server, optionManager);
         keybindingsManager = new KeybindingsManager(guiManager.getCommands(), guiManager);
         shortcutsManager = new ShortcutsManager(commandQueue, spellsManager);
@@ -470,11 +470,6 @@ public class JXCWindow extends JFrame
         addWindowListener(windowListener);
         connection = new JXCConnection(keybindingsManager, settings, this, characterPickup, server);
         guiManager.setConnection(connection);
-    }
-
-    public static boolean checkFire()
-    {
-        return false;
     }
 
     public boolean createKeyBinding(final boolean perCharacter, final GUICommandList cmdlist)

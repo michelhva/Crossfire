@@ -27,7 +27,6 @@ import com.realtime.crossfire.jxclient.server.CrossfireServerConnection;
 import com.realtime.crossfire.jxclient.skills.SkillSet;
 import com.realtime.crossfire.jxclient.spells.SpellsManager;
 import com.realtime.crossfire.jxclient.stats.Stats;
-import com.realtime.crossfire.jxclient.window.JXCWindow;
 import java.io.IOException;
 import java.util.HashSet;
 import java.util.Set;
@@ -39,11 +38,6 @@ import java.util.concurrent.CopyOnWriteArraySet;
  */
 public class ScriptManager
 {
-    /**
-     * The {@link JXCWindow} to execute in.
-     */
-    private final JXCWindow window;
-
     /**
      * The {@link CommandQueue} for sending commands.
      */
@@ -91,7 +85,6 @@ public class ScriptManager
 
     /**
      * Creates a new instance.
-     * @param window the window to execute in
      * @param commandQueue the command queue for sending commands
      * @param crossfireServerConnection the connection instance
      * @param stats the stats instance to watch
@@ -100,9 +93,8 @@ public class ScriptManager
      * @param mapUpdater the map updater instance to use
      * @param skillSet the skill set for looking up skill names
      */
-    public ScriptManager(final JXCWindow window, final CommandQueue commandQueue, final CrossfireServerConnection crossfireServerConnection, final Stats stats, final ItemsManager itemsManager, final SpellsManager spellsManager, final CfMapUpdater mapUpdater, final SkillSet skillSet)
+    public ScriptManager(final CommandQueue commandQueue, final CrossfireServerConnection crossfireServerConnection, final Stats stats, final ItemsManager itemsManager, final SpellsManager spellsManager, final CfMapUpdater mapUpdater, final SkillSet skillSet)
     {
-        this.window = window;
         this.commandQueue = commandQueue;
         this.crossfireServerConnection = crossfireServerConnection;
         this.stats = stats;
@@ -121,7 +113,7 @@ public class ScriptManager
         final DefaultScriptProcess scriptProcess;
         try
         {
-            scriptProcess = new DefaultScriptProcess(nextScriptId, command, window, commandQueue, crossfireServerConnection, stats, itemsManager, spellsManager, mapUpdater, skillSet);
+            scriptProcess = new DefaultScriptProcess(nextScriptId, command, commandQueue, crossfireServerConnection, stats, itemsManager, spellsManager, mapUpdater, skillSet);
         }
         catch (final IOException ex)
         {
