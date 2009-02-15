@@ -409,6 +409,27 @@ public class JXCWindow extends JFrame
     };
 
     /**
+     * The {@link ConnectionStateListener} for detecting established or dropped
+     * connections.
+     */
+    private final ConnectionStateListener connectionStateListener = new ConnectionStateListener()
+    {
+        /** {@inheritDoc} */
+        @Override
+        public void connect()
+        {
+            server.addCrossfireQueryListener(crossfireQueryListener);
+        }
+
+        /** {@inheritDoc} */
+        @Override
+        public void disconnect()
+        {
+            server.removeCrossfireQueryListener(crossfireQueryListener);
+        }
+    };
+
+    /**
      * Create a new instance.
      *
      * @param terminateSync Object to be notified when the application
@@ -468,8 +489,9 @@ public class JXCWindow extends JFrame
         setFocusTraversalKeysEnabled(false);
         addWindowFocusListener(windowFocusListener);
         addWindowListener(windowListener);
-        connection = new JXCConnection(keybindingsManager, settings, this, characterPickup, server, connectionListener, crossfireQueryListener, guiManager);
+        connection = new JXCConnection(keybindingsManager, settings, this, characterPickup, server, connectionListener, guiManager);
         guiManager.setConnection(connection);
+        addConnectionStateListener(connectionStateListener);
     }
 
     public boolean createKeyBinding(final boolean perCharacter, final GUICommandList cmdlist)

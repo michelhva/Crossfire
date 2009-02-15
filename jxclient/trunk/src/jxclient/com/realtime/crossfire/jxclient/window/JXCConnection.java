@@ -1,7 +1,6 @@
 package com.realtime.crossfire.jxclient.window;
 
 import com.realtime.crossfire.jxclient.server.ConnectionListener;
-import com.realtime.crossfire.jxclient.server.CrossfireQueryListener;
 import com.realtime.crossfire.jxclient.server.CrossfireServerConnection;
 import com.realtime.crossfire.jxclient.server.Pickup;
 import com.realtime.crossfire.jxclient.settings.Settings;
@@ -46,11 +45,6 @@ public class JXCConnection
      * The {@link ConnectionListener} to use when connecting.
      */
     private final ConnectionListener connectionListener;
-
-    /**
-     * The {@link CrossfireQueryListener} to use when connecting.
-     */
-    private final CrossfireQueryListener crossfireQueryListener;
 
     /**
      * The {@link GuiManager} to use when connecting.
@@ -102,11 +96,9 @@ public class JXCConnection
      * @param characterPickup the character pickup instance to update
      * @param server the crossfire server connection instance used to connect
      * @param connectionListener the connection listener to use when connecting
-     * @param crossfireQueryListener the crossfire query listener to use when
-     * connecting
      * @param guiManager the gui manager to use when connecting
      */
-    public JXCConnection(final KeybindingsManager keybindingsManager, final Settings settings, final JXCWindow window, final Pickup characterPickup, final CrossfireServerConnection server, final ConnectionListener connectionListener, final CrossfireQueryListener crossfireQueryListener, final GuiManager guiManager)
+    public JXCConnection(final KeybindingsManager keybindingsManager, final Settings settings, final JXCWindow window, final Pickup characterPickup, final CrossfireServerConnection server, final ConnectionListener connectionListener, final GuiManager guiManager)
     {
         this.keybindingsManager = keybindingsManager;
         this.settings = settings;
@@ -114,7 +106,6 @@ public class JXCConnection
         this.characterPickup = characterPickup;
         this.server = server;
         this.connectionListener = connectionListener;
-        this.crossfireQueryListener = crossfireQueryListener;
         this.guiManager = guiManager;
         window.addConnectionStateListener(connectionStateListener);
         updateTitle();
@@ -225,7 +216,6 @@ public class JXCConnection
     private void disconnect()
     {
         server.removeCrossfireDrawextinfoListener(guiManager.crossfireDrawextinfoListener);
-        server.removeCrossfireQueryListener(crossfireQueryListener);
         server.disconnect();
         setHost(null);
     }
@@ -235,7 +225,6 @@ public class JXCConnection
      */
     private void connect()
     {
-        server.addCrossfireQueryListener(crossfireQueryListener);
         server.addCrossfireDrawextinfoListener(guiManager.crossfireDrawextinfoListener);
         final JXCSkin skin = guiManager.getSkin();
         server.setMapSize(skin.getMapWidth(), skin.getMapHeight());
