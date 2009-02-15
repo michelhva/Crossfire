@@ -21,6 +21,8 @@ package com.realtime.crossfire.jxclient.faces;
 
 import com.realtime.crossfire.jxclient.server.CrossfireServerConnection;
 import com.realtime.crossfire.jxclient.util.ResourceUtils;
+import com.realtime.crossfire.jxclient.window.ConnectionStateListener;
+import com.realtime.crossfire.jxclient.window.JXCWindow;
 import java.awt.GraphicsConfiguration;
 import java.awt.GraphicsDevice;
 import java.awt.GraphicsEnvironment;
@@ -116,8 +118,28 @@ public class FacesManager
     };
 
     /**
+     * The {@link ConnectionStateListener} for detecting established or dropped
+     * connections.
+     */
+    private final ConnectionStateListener connectionStateListener = new ConnectionStateListener()
+    {
+        /** {@inheritDoc} */
+        @Override
+        public void connect()
+        {
+            reset();
+        }
+
+        /** {@inheritDoc} */
+        @Override
+        public void disconnect()
+        {
+            // ignore
+        }
+    };
+
+    /**
      * Creates a new instance.
-     * @param faceCache the face cache instance for storing in-memory faces
      * @param crossfireServerConnection the server connection for sending
      * askface commands
      * @param imageCacheOriginal the image cache used for loading original
@@ -126,9 +148,11 @@ public class FacesManager
      * files
      * @param imageCacheMagicMap the image cache used for loading magic map
      * image files
+     * @param faceCache the face cache instance for storing in-memory faces
+     * @param window the window to attach to; <code>null</code> to not attach
      * @throws IOException if the unknown image resource cannot be loaded
      */
-    public FacesManager(final CrossfireServerConnection crossfireServerConnection, final ImageCache imageCacheOriginal, final ImageCache imageCacheScaled, final ImageCache imageCacheMagicMap, final FaceCache faceCache) throws IOException
+    public FacesManager(final CrossfireServerConnection crossfireServerConnection, final ImageCache imageCacheOriginal, final ImageCache imageCacheScaled, final ImageCache imageCacheMagicMap, final FaceCache faceCache, final JXCWindow window) throws IOException
     {
         this.faceCache = faceCache;
         facesQueue = new FacesQueue(crossfireServerConnection, imageCacheOriginal, imageCacheScaled, imageCacheMagicMap);
@@ -146,6 +170,10 @@ public class FacesManager
         unknownFaceImages = FaceImagesUtils.newFaceImages(ResourceUtils.loadImage(UNKNOWN_PNG));
         nextGroupFace = ResourceUtils.loadImage(NEXT_GROUP_FACE).getImage();
         prevGroupFace = ResourceUtils.loadImage(PREV_GROUP_FACE).getImage();
+        if (window != null)
+        {
+            window.addConnectionStateListener(connectionStateListener);
+        }
     }
 
     /**
@@ -243,7 +271,7 @@ public class FacesManager
     /**
      * Forgets about pending faces.
      */
-    public void reset()
+    private void reset()
     {
         faceCache.reset();
         facesQueue.reset();
