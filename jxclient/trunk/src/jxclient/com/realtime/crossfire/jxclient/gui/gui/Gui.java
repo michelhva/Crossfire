@@ -25,8 +25,8 @@ import com.realtime.crossfire.jxclient.gui.keybindings.KeyBindings;
 import com.realtime.crossfire.jxclient.gui.textinput.GUIText;
 import com.realtime.crossfire.jxclient.gui.textinput.KeyListener;
 import com.realtime.crossfire.jxclient.window.GuiManager;
-import com.realtime.crossfire.jxclient.window.JXCWindowRenderer;
 import com.realtime.crossfire.jxclient.window.MouseTracker;
+import com.realtime.crossfire.jxclient.window.RendererGuiState;
 import java.awt.Color;
 import java.awt.Graphics;
 import java.awt.event.KeyEvent;
@@ -69,7 +69,7 @@ public class Gui
     /**
      * The gui states that do not show this dialog.
      */
-    private final EnumSet<JXCWindowRenderer.GuiState> hideInStates = EnumSet.noneOf(JXCWindowRenderer.GuiState.class);
+    private final EnumSet<RendererGuiState> hideInStates = EnumSet.noneOf(RendererGuiState.class);
 
     /**
      * If non-<code>null</code>, this element is always active. No other
@@ -700,7 +700,7 @@ public class Gui
      *
      * @param state The state.
      */
-    public void hideInState(final JXCWindowRenderer.GuiState state)
+    public void hideInState(final RendererGuiState state)
     {
         hideInStates.add(state);
     }
@@ -712,7 +712,7 @@ public class Gui
      *
      * @return Whether this gui is hidden.
      */
-    public boolean isHidden(final JXCWindowRenderer.GuiState state)
+    public boolean isHidden(final RendererGuiState state)
     {
         return hideInStates.contains(state);
     }

@@ -278,11 +278,11 @@ public class GuiManager
      */
     public void playerReceived()
     {
-        if (windowRenderer.getGuiState() == JXCWindowRenderer.GuiState.NEWCHAR)
+        if (windowRenderer.getGuiState() == RendererGuiState.NEWCHAR)
         {
             openDialogByName("messages"); // hack for race selection
         }
-        windowRenderer.setGuiState(JXCWindowRenderer.GuiState.PLAYING);
+        windowRenderer.setGuiState(RendererGuiState.PLAYING);
     }
 
     /**
@@ -382,7 +382,7 @@ public class GuiManager
         else if (prompt.startsWith("[y] to roll new stats")
         || prompt.startsWith("Welcome, Brave New Warrior!"))
         {
-            windowRenderer.setGuiState(JXCWindowRenderer.GuiState.NEWCHAR);
+            windowRenderer.setGuiState(RendererGuiState.NEWCHAR);
             if (openDialogByName("newchar"))
             {
                 closeDialogByName("messages");
@@ -508,11 +508,11 @@ public class GuiManager
 
     /**
      * Updates the current gui state.
-     * @param guiState
+     * @param rendererGuiState
      */
-    public void setGuiState(final JXCWindowRenderer.GuiState guiState)
+    public void setGuiState(final RendererGuiState rendererGuiState)
     {
-        windowRenderer.setGuiState(guiState);
+        windowRenderer.setGuiState(rendererGuiState);
     }
 
     /**

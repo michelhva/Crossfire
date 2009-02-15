@@ -71,7 +71,7 @@ public class JXCWindowRenderer
     private final CopyOnWriteArrayList<Gui> openDialogs = new CopyOnWriteArrayList<Gui>();
 
     /**
-     * Listeners to be notified about {@link #guiState} changes.
+     * Listeners to be notified about {@link #rendererGuiState} changes.
      */
     private final CopyOnWriteArrayList<GuiStateListener> guiStateListeners = new CopyOnWriteArrayList<GuiStateListener>();
 
@@ -110,7 +110,7 @@ public class JXCWindowRenderer
     /**
      * The current gui state.
      */
-    private GuiState guiState = GuiState.START;
+    private RendererGuiState rendererGuiState = RendererGuiState.START;
 
     /**
      * The {@link GuiAutoCloseListener} used to track auto-closing dialogs.
@@ -124,18 +124,6 @@ public class JXCWindowRenderer
             closeDialog(gui);
         }
     };
-
-    /**
-     * All gui states.
-     */
-    public enum GuiState
-    {
-        START,
-        META,
-        LOGIN,
-        NEWCHAR,
-        PLAYING,
-    }
 
     /**
      * Creates a new instance.
@@ -333,7 +321,7 @@ public class JXCWindowRenderer
         openDialogsChanged = false;
         for (final Gui dialog : openDialogs)
         {
-            if (!dialog.isHidden(guiState))
+            if (!dialog.isHidden(rendererGuiState))
             {
                 dialog.redraw(g);
             }
@@ -519,7 +507,7 @@ public class JXCWindowRenderer
 
         for (final Gui dialog : openDialogs)
         {
-            if (!dialog.isHidden(guiState) && dialog.needRedraw())
+            if (!dialog.isHidden(rendererGuiState) && dialog.needRedraw())
             {
                 return true;
             }
@@ -614,20 +602,20 @@ public class JXCWindowRenderer
     /**
      * Set the current gui state.
      *
-     * @param guiState The gui state.
+     * @param rendererGuiState The gui state.
      */
-    public void setGuiState(final GuiState guiState)
+    public void setGuiState(final RendererGuiState rendererGuiState)
     {
-        if (this.guiState == guiState)
+        if (this.rendererGuiState == rendererGuiState)
         {
             return;
         }
 
-        this.guiState = guiState;
+        this.rendererGuiState = rendererGuiState;
         forcePaint = true;
         for (final GuiStateListener listener : guiStateListeners)
         {
-            listener.guiStateChanged(guiState);
+            listener.guiStateChanged(rendererGuiState);
         }
     }
 
@@ -636,13 +624,13 @@ public class JXCWindowRenderer
      *
      * @return The gui state.
      */
-    public GuiState getGuiState()
+    public RendererGuiState getGuiState()
     {
-        return guiState;
+        return rendererGuiState;
     }
 
     /**
-     * Add a gui state listener to be notified about {@link #guiState} changes.
+     * Add a gui state listener to be notified about {@link #rendererGuiState} changes.
      *
      * @param listener The listener to add.
      */
