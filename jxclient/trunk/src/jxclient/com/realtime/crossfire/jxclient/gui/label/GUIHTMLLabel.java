@@ -19,7 +19,6 @@
 //
 package com.realtime.crossfire.jxclient.gui.label;
 
-import com.realtime.crossfire.jxclient.gui.InternalHTMLRenderer;
 import com.realtime.crossfire.jxclient.gui.TooltipManager;
 import com.realtime.crossfire.jxclient.window.JXCWindowRenderer;
 import java.awt.Color;
