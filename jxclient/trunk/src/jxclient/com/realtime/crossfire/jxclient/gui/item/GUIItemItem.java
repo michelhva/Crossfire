@@ -28,7 +28,6 @@ import com.realtime.crossfire.jxclient.gui.TooltipManager;
 import com.realtime.crossfire.jxclient.items.CfItem;
 import com.realtime.crossfire.jxclient.items.CfItemListener;
 import com.realtime.crossfire.jxclient.server.CrossfireServerConnection;
-import com.realtime.crossfire.jxclient.window.JXCWindow;
 import com.realtime.crossfire.jxclient.window.JXCWindowRenderer;
 import java.awt.Color;
 import java.awt.Graphics;
@@ -161,7 +160,7 @@ public abstract class GUIItemItem extends GUIItem
 
     /* {@inheritDoc} */
     @Override
-    public void button2Clicked(final JXCWindow window, final int modifiers)
+    public void button2Clicked(final int modifiers)
     {
         final CfItem tmpItem = item;
         if (tmpItem == null)

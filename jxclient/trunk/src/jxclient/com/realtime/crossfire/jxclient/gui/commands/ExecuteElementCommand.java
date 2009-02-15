@@ -20,7 +20,6 @@
 package com.realtime.crossfire.jxclient.gui.commands;
 
 import com.realtime.crossfire.jxclient.gui.item.GUIItem;
-import com.realtime.crossfire.jxclient.window.JXCWindow;
 
 /**
  * A {@link GUICommand} which executes (i.e., simulates a left-button mouse
@@ -30,23 +29,16 @@ import com.realtime.crossfire.jxclient.window.JXCWindow;
 public class ExecuteElementCommand implements GUICommand
 {
     /**
-     * The main window.
-     */
-    private final JXCWindow window;
-
-    /**
      * The item element to execute.
      */
     private final GUIItem item;
 
     /**
      * Creates a new instance.
-     * @param window the main window
      * @param item the item element to execute
      */
-    public ExecuteElementCommand(final JXCWindow window, final GUIItem item)
+    public ExecuteElementCommand(final GUIItem item)
     {
-        this.window = window;
         this.item = item;
     }
 
@@ -61,6 +53,6 @@ public class ExecuteElementCommand implements GUICommand
     @Override
     public void execute()
     {
-        item.button1Clicked(window, 0);
+        item.button1Clicked(0);
     }
 }

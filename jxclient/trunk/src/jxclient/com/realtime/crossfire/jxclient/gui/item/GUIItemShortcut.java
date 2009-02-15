@@ -30,7 +30,6 @@ import com.realtime.crossfire.jxclient.shortcuts.Shortcuts;
 import com.realtime.crossfire.jxclient.shortcuts.ShortcutsListener;
 import com.realtime.crossfire.jxclient.spells.CurrentSpellManager;
 import com.realtime.crossfire.jxclient.spells.Spell;
-import com.realtime.crossfire.jxclient.window.JXCWindow;
 import com.realtime.crossfire.jxclient.window.JXCWindowRenderer;
 import java.awt.Color;
 import java.awt.Font;
@@ -154,7 +153,7 @@ public class GUIItemShortcut extends GUIItem
 
     /* {@inheritDoc} */
     @Override
-    public void button1Clicked(final JXCWindow window, final int modifiers)
+    public void button1Clicked(final int modifiers)
     {
         final Shortcut shortcut = shortcuts.getShortcut(index);
         if (shortcut != null)
@@ -165,7 +164,7 @@ public class GUIItemShortcut extends GUIItem
 
     /* {@inheritDoc} */
     @Override
-    public void button2Clicked(final JXCWindow window, final int modifiers)
+    public void button2Clicked(final int modifiers)
     {
         final Shortcut shortcut = shortcuts.getShortcut(index);
         if (shortcut != null)
@@ -180,7 +179,7 @@ public class GUIItemShortcut extends GUIItem
 
     /* {@inheritDoc} */
     @Override
-    public void button3Clicked(final JXCWindow window, final int modifiers)
+    public void button3Clicked(final int modifiers)
     {
         final Spell spell = currentSpellManager.getCurrentSpell();
         if (spell == null)

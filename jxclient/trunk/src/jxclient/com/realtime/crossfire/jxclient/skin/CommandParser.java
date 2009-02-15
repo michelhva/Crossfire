@@ -216,7 +216,7 @@ public class CommandParser
                 throw new IOException("'"+element+"' must be an item element");
             }
 
-            return new ExecuteElementCommand(window, (GUIItem)element);
+            return new ExecuteElementCommand((GUIItem)element);
         }
         else if (command.equals("DIALOG_OPEN"))
         {

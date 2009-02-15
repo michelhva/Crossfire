@@ -29,7 +29,6 @@ import com.realtime.crossfire.jxclient.items.ItemsManager;
 import com.realtime.crossfire.jxclient.items.LocationListener;
 import com.realtime.crossfire.jxclient.server.CommandQueue;
 import com.realtime.crossfire.jxclient.server.CrossfireServerConnection;
-import com.realtime.crossfire.jxclient.window.JXCWindow;
 import com.realtime.crossfire.jxclient.window.JXCWindowRenderer;
 import java.awt.Image;
 import java.util.List;
@@ -194,7 +193,7 @@ public class GUIItemFloor extends GUIItemItem
 
     /* {@inheritDoc} */
     @Override
-    public void button1Clicked(final JXCWindow window, final int modifiers)
+    public void button1Clicked(final int modifiers)
     {
         final CfItem item = getItem();
         if (item == null)
@@ -214,7 +213,7 @@ public class GUIItemFloor extends GUIItemItem
 
     /* {@inheritDoc} */
     @Override
-    public void button3Clicked(final JXCWindow window, final int modifiers)
+    public void button3Clicked(final int modifiers)
     {
         final CfItem item = getItem();
         if (item == null)
