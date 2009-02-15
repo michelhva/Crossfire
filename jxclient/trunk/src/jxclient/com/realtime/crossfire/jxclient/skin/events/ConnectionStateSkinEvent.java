@@ -19,8 +19,8 @@
 //
 package com.realtime.crossfire.jxclient.skin.events;
 
-import com.realtime.crossfire.jxclient.window.ConnectionStateListener;
 import com.realtime.crossfire.jxclient.window.GUICommandList;
+import com.realtime.crossfire.jxclient.window.GuiStateListener;
 import com.realtime.crossfire.jxclient.window.JXCWindow;
 
 /**
@@ -41,9 +41,9 @@ public class ConnectionStateSkinEvent implements SkinEvent
     private final JXCWindow window;
 
     /**
-     * The {@link ConnectionStateListener} attached to {@link #window}.
+     * The {@link GuiStateListener} attached to {@link #window}.
      */
-    private final ConnectionStateListener connectionStateListener = new ConnectionStateListener()
+    private final GuiStateListener guiStateListener = new GuiStateListener()
     {
         /** {@inheritDoc} */
         @Override
@@ -69,13 +69,13 @@ public class ConnectionStateSkinEvent implements SkinEvent
     {
         this.commandList = commandList;
         this.window = window;
-        window.addConnectionStateListener(connectionStateListener);
+        window.addConnectionStateListener(guiStateListener);
     }
 
     /** {@inheritDoc} */
     @Override
     public void dispose()
     {
-        window.removeConnectionStateListener(connectionStateListener);
+        window.removeConnectionStateListener(guiStateListener);
     }
 }

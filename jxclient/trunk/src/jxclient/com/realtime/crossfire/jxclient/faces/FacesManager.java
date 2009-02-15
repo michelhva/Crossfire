@@ -21,7 +21,7 @@ package com.realtime.crossfire.jxclient.faces;
 
 import com.realtime.crossfire.jxclient.server.CrossfireServerConnection;
 import com.realtime.crossfire.jxclient.util.ResourceUtils;
-import com.realtime.crossfire.jxclient.window.ConnectionStateListener;
+import com.realtime.crossfire.jxclient.window.GuiStateListener;
 import com.realtime.crossfire.jxclient.window.JXCWindow;
 import java.awt.GraphicsConfiguration;
 import java.awt.GraphicsDevice;
@@ -118,10 +118,10 @@ public class FacesManager
     };
 
     /**
-     * The {@link ConnectionStateListener} for detecting established or dropped
+     * The {@link GuiStateListener} for detecting established or dropped
      * connections.
      */
-    private final ConnectionStateListener connectionStateListener = new ConnectionStateListener()
+    private final GuiStateListener guiStateListener = new GuiStateListener()
     {
         /** {@inheritDoc} */
         @Override
@@ -172,7 +172,7 @@ public class FacesManager
         prevGroupFace = ResourceUtils.loadImage(PREV_GROUP_FACE).getImage();
         if (window != null)
         {
-            window.addConnectionStateListener(connectionStateListener);
+            window.addConnectionStateListener(guiStateListener);
         }
     }
 

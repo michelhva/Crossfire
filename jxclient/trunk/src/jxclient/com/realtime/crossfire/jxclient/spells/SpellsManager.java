@@ -21,7 +21,7 @@ package com.realtime.crossfire.jxclient.spells;
 
 import com.realtime.crossfire.jxclient.server.CrossfireServerConnection;
 import com.realtime.crossfire.jxclient.server.CrossfireSpellListener;
-import com.realtime.crossfire.jxclient.window.ConnectionStateListener;
+import com.realtime.crossfire.jxclient.window.GuiStateListener;
 import com.realtime.crossfire.jxclient.window.JXCWindow;
 import java.util.ArrayList;
 import java.util.Collections;
@@ -89,10 +89,10 @@ public class SpellsManager
     };
 
     /**
-     * The {@link ConnectionStateListener} for detecting established or dropped
+     * The {@link GuiStateListener} for detecting established or dropped
      * connections.
      */
-    private final ConnectionStateListener connectionStateListener = new ConnectionStateListener()
+    private final GuiStateListener guiStateListener = new GuiStateListener()
     {
         /** {@inheritDoc} */
         @Override
@@ -118,7 +118,7 @@ public class SpellsManager
     {
         initSpells();
         crossfireServerConnection.addCrossfireSpellListener(crossfireSpellListener);
-        window.addConnectionStateListener(connectionStateListener);
+        window.addConnectionStateListener(guiStateListener);
     }
 
     public void addCrossfireSpellChangedListener(final SpellsManagerListener listener)

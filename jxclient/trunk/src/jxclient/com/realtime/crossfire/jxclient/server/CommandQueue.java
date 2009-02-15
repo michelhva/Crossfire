@@ -19,7 +19,7 @@
 //
 package com.realtime.crossfire.jxclient.server;
 
-import com.realtime.crossfire.jxclient.window.ConnectionStateListener;
+import com.realtime.crossfire.jxclient.window.GuiStateListener;
 import com.realtime.crossfire.jxclient.window.JXCWindow;
 import java.util.LinkedList;
 import java.util.List;
@@ -91,10 +91,10 @@ public class CommandQueue
     };
 
     /**
-     * The {@link ConnectionStateListener} for detecting established or dropped
+     * The {@link GuiStateListener} for detecting established or dropped
      * connections.
      */
-    private final ConnectionStateListener connectionStateListener = new ConnectionStateListener()
+    private final GuiStateListener guiStateListener = new GuiStateListener()
     {
         /** {@inheritDoc} */
         @Override
@@ -121,7 +121,7 @@ public class CommandQueue
     {
         this.crossfireServerConnection = crossfireServerConnection;
         crossfireServerConnection.addCrossfireComcListener(crossfireComcListener);
-        window.addConnectionStateListener(connectionStateListener);
+        window.addConnectionStateListener(guiStateListener);
     }
 
     /**

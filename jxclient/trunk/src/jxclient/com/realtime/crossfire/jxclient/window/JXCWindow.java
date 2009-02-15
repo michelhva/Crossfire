@@ -94,7 +94,7 @@ public class JXCWindow extends JFrame
     /**
      * The connection state listeners to notify.
      */
-    private final List<ConnectionStateListener> connectionStateListeners = new ArrayList<ConnectionStateListener>();
+    private final List<GuiStateListener> guiStateListeners = new ArrayList<GuiStateListener>();
 
     /**
      * The {@link GuiManager} for controlling the main GUI state.
@@ -409,10 +409,10 @@ public class JXCWindow extends JFrame
     };
 
     /**
-     * The {@link ConnectionStateListener} for detecting established or dropped
+     * The {@link GuiStateListener} for detecting established or dropped
      * connections.
      */
-    private final ConnectionStateListener connectionStateListener = new ConnectionStateListener()
+    private final GuiStateListener guiStateListener = new GuiStateListener()
     {
         /** {@inheritDoc} */
         @Override
@@ -491,7 +491,7 @@ public class JXCWindow extends JFrame
         addWindowListener(windowListener);
         connection = new JXCConnection(keybindingsManager, settings, this, characterPickup, server, connectionListener, guiManager);
         guiManager.setConnection(connection);
-        addConnectionStateListener(connectionStateListener);
+        addConnectionStateListener(guiStateListener);
     }
 
     public boolean createKeyBinding(final boolean perCharacter, final GUICommandList cmdlist)
@@ -544,7 +544,7 @@ public class JXCWindow extends JFrame
             if (this.guiState == GuiState.MAIN)
             {
                 itemsManager.removeCrossfirePlayerListener(playerListener);
-                for (final ConnectionStateListener listener : connectionStateListeners)
+                for (final GuiStateListener listener : guiStateListeners)
                 {
                     listener.disconnect();
                 }
@@ -580,7 +580,7 @@ public class JXCWindow extends JFrame
             case MAIN:
                 soundManager.mute(Sounds.CHARACTER, false);
                 itemsManager.addCrossfirePlayerListener(playerListener);
-                for (final ConnectionStateListener listener : connectionStateListeners)
+                for (final GuiStateListener listener : guiStateListeners)
                 {
                     listener.connect();
                 }
@@ -781,9 +781,9 @@ public class JXCWindow extends JFrame
      *
      * @param listener The listener to add.
      */
-    public void addConnectionStateListener(final ConnectionStateListener listener)
+    public void addConnectionStateListener(final GuiStateListener listener)
     {
-        connectionStateListeners.add(listener);
+        guiStateListeners.add(listener);
     }
 
     /**
@@ -791,8 +791,8 @@ public class JXCWindow extends JFrame
      *
      * @param listener The listener to remove.
      */
-    public void removeConnectionStateListener(final ConnectionStateListener listener)
+    public void removeConnectionStateListener(final GuiStateListener listener)
     {
-        connectionStateListeners.remove(listener);
+        guiStateListeners.remove(listener);
     }
 }
