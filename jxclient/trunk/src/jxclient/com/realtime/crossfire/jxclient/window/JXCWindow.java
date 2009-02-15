@@ -558,20 +558,15 @@ public class JXCWindow extends JFrame
             switch (guiState)
             {
             case START:
+                soundManager.muteMusic(true);
+                soundManager.mute(Sounds.CHARACTER, true);
                 for (final GuiStateListener listener : guiStateListeners)
                 {
                     listener.start();
                 }
-                soundManager.muteMusic(true);
-                soundManager.mute(Sounds.CHARACTER, true);
-                guiManager.setGuiState(RendererGuiState.START);
                 if (DISABLE_START_GUI)
                 {
                     quitApplication();
-                }
-                else
-                {
-                    guiManager.showGUIStart();
                 }
                 break;
 
@@ -582,10 +577,7 @@ public class JXCWindow extends JFrame
                 }
                 soundManager.muteMusic(true);
                 soundManager.mute(Sounds.CHARACTER, true);
-                guiManager.setGuiState(RendererGuiState.META);
-                guiManager.showGUIMeta();
                 metaserver.query();
-                guiManager.activateMetaserverGui();
                 break;
 
             case MAIN:
@@ -597,8 +589,6 @@ public class JXCWindow extends JFrame
                 }
                 metaserver.disable();
                 soundManager.muteMusic(false);
-                guiManager.setGuiState(RendererGuiState.LOGIN);
-                guiManager.showGUIMain();
                 break;
             }
         }
