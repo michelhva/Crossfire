@@ -552,16 +552,6 @@ public class JXCWindow extends JFrame
 
             this.guiState = guiState;
 
-            if (this.guiState == GuiState.MAIN)
-            {
-                soundManager.mute(Sounds.CHARACTER, false);
-                itemsManager.addCrossfirePlayerListener(playerListener);
-                for (final ConnectionStateListener listener : connectionStateListeners)
-                {
-                    listener.connect();
-                }
-            }
-
             switch (guiState)
             {
             case START:
@@ -588,6 +578,12 @@ public class JXCWindow extends JFrame
                 break;
 
             case MAIN:
+                soundManager.mute(Sounds.CHARACTER, false);
+                itemsManager.addCrossfirePlayerListener(playerListener);
+                for (final ConnectionStateListener listener : connectionStateListeners)
+                {
+                    listener.connect();
+                }
                 metaserver.disable();
                 soundManager.muteMusic(false);
                 guiManager.setGuiState(JXCWindowRenderer.GuiState.LOGIN);
