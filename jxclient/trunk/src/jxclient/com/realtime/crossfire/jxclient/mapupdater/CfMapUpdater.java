@@ -232,14 +232,21 @@ public class CfMapUpdater
     {
         /** {@inheritDoc} */
         @Override
-        public void connect()
+        public void start()
         {
             reset();
         }
 
         /** {@inheritDoc} */
         @Override
-        public void disconnect()
+        public void metaserver()
+        {
+            reset();
+        }
+
+        /** {@inheritDoc} */
+        @Override
+        public void main()
         {
             reset();
         }

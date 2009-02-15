@@ -75,16 +75,23 @@ public class SkillSet
     {
         /** {@inheritDoc} */
         @Override
-        public void connect()
+        public void start()
         {
-            clearNumberedSkills();
+            // ignore
         }
 
         /** {@inheritDoc} */
         @Override
-        public void disconnect()
+        public void metaserver()
         {
             // ignore
+        }
+
+        /** {@inheritDoc} */
+        @Override
+        public void main()
+        {
+            clearNumberedSkills();
         }
     };
 

@@ -125,16 +125,22 @@ public class FacesManager
     {
         /** {@inheritDoc} */
         @Override
-        public void connect()
+        public void start()
         {
-            reset();
+            // ignore
         }
 
         /** {@inheritDoc} */
         @Override
-        public void disconnect()
+        public void metaserver()
         {
             // ignore
+        }
+        /** {@inheritDoc} */
+        @Override
+        public void main()
+        {
+            reset();
         }
     };
 

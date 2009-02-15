@@ -20,19 +20,23 @@
 package com.realtime.crossfire.jxclient.window;
 
 /**
- * Interface for listeners interested in connection state related events.
- *
+ * Interface for listeners interested gui state changes.
  * @author Andreas Kirschbaum
  */
 public interface GuiStateListener
 {
     /**
-     * A connection to the server has been established.
+     * The start screen is displayed.
      */
-    void connect();
+    void start();
 
     /**
-     * The connection to the server was disconnected.
+     * The server selection screen is displayed.
      */
-    void disconnect();
+    void metaserver();
+
+    /**
+     * The main screen for playing is displayed.
+     */
+    void main();
 }

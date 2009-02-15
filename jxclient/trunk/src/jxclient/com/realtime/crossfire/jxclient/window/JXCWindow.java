@@ -416,16 +416,23 @@ public class JXCWindow extends JFrame
     {
         /** {@inheritDoc} */
         @Override
-        public void connect()
+        public void start()
         {
-            server.addCrossfireQueryListener(crossfireQueryListener);
+            server.removeCrossfireQueryListener(crossfireQueryListener);
         }
 
         /** {@inheritDoc} */
         @Override
-        public void disconnect()
+        public void metaserver()
         {
             server.removeCrossfireQueryListener(crossfireQueryListener);
+        }
+
+        /** {@inheritDoc} */
+        @Override
+        public void main()
+        {
+            server.addCrossfireQueryListener(crossfireQueryListener);
         }
     };
 
@@ -544,10 +551,6 @@ public class JXCWindow extends JFrame
             if (this.guiState == GuiState.MAIN)
             {
                 itemsManager.removeCrossfirePlayerListener(playerListener);
-                for (final GuiStateListener listener : guiStateListeners)
-                {
-                    listener.disconnect();
-                }
             }
 
             this.guiState = guiState;
@@ -555,6 +558,10 @@ public class JXCWindow extends JFrame
             switch (guiState)
             {
             case START:
+                for (final GuiStateListener listener : guiStateListeners)
+                {
+                    listener.start();
+                }
                 soundManager.muteMusic(true);
                 soundManager.mute(Sounds.CHARACTER, true);
                 guiManager.setGuiState(RendererGuiState.START);
@@ -569,6 +576,10 @@ public class JXCWindow extends JFrame
                 break;
 
             case METASERVER:
+                for (final GuiStateListener listener : guiStateListeners)
+                {
+                    listener.metaserver();
+                }
                 soundManager.muteMusic(true);
                 soundManager.mute(Sounds.CHARACTER, true);
                 guiManager.setGuiState(RendererGuiState.META);
@@ -582,7 +593,7 @@ public class JXCWindow extends JFrame
                 itemsManager.addCrossfirePlayerListener(playerListener);
                 for (final GuiStateListener listener : guiStateListeners)
                 {
-                    listener.connect();
+                    listener.main();
                 }
                 metaserver.disable();
                 soundManager.muteMusic(false);
