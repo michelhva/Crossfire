@@ -19,9 +19,9 @@
 //
 package com.realtime.crossfire.jxclient.window;
 
-import com.realtime.crossfire.jxclient.gui.ActivatableGUIElement;
-import com.realtime.crossfire.jxclient.gui.Gui;
-import com.realtime.crossfire.jxclient.gui.GuiAutoCloseListener;
+import com.realtime.crossfire.jxclient.gui.gui.ActivatableGUIElement;
+import com.realtime.crossfire.jxclient.gui.gui.Gui;
+import com.realtime.crossfire.jxclient.gui.gui.GuiAutoCloseListener;
 import com.realtime.crossfire.jxclient.gui.label.AbstractLabel;
 import com.realtime.crossfire.jxclient.skin.Resolution;
 import java.awt.Color;

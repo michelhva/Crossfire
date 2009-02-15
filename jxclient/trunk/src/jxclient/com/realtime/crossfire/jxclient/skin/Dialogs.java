@@ -19,8 +19,8 @@
 //
 package com.realtime.crossfire.jxclient.skin;
 
-import com.realtime.crossfire.jxclient.gui.Gui;
-import com.realtime.crossfire.jxclient.gui.GuiFactory;
+import com.realtime.crossfire.jxclient.gui.gui.Gui;
+import com.realtime.crossfire.jxclient.gui.gui.GuiFactory;
 import java.util.HashSet;
 import java.util.Iterator;
 import java.util.Set;

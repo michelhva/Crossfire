@@ -19,9 +19,9 @@
 //
 package com.realtime.crossfire.jxclient.gui.list;
 
-import com.realtime.crossfire.jxclient.gui.GUIElement;
-import com.realtime.crossfire.jxclient.gui.GUIElementChangedListener;
-import com.realtime.crossfire.jxclient.gui.TooltipManager;
+import com.realtime.crossfire.jxclient.gui.gui.GUIElement;
+import com.realtime.crossfire.jxclient.gui.gui.GUIElementChangedListener;
+import com.realtime.crossfire.jxclient.gui.gui.TooltipManager;
 import com.realtime.crossfire.jxclient.gui.item.GUIItemInventory;
 import com.realtime.crossfire.jxclient.gui.item.GUIItemInventoryFactory;
 import com.realtime.crossfire.jxclient.gui.item.GUIItemItem;

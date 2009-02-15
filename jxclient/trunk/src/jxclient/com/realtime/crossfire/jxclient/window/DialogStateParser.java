@@ -19,7 +19,7 @@
 //
 package com.realtime.crossfire.jxclient.window;
 
-import com.realtime.crossfire.jxclient.gui.Gui;
+import com.realtime.crossfire.jxclient.gui.gui.Gui;
 import com.realtime.crossfire.jxclient.settings.Filenames;
 import com.realtime.crossfire.jxclient.skin.JXCSkin;
 import com.realtime.crossfire.jxclient.skin.JXCSkinException;

@@ -19,7 +19,7 @@
 //
 package com.realtime.crossfire.jxclient.gui.gauge;
 
-import com.realtime.crossfire.jxclient.gui.GUIElement;
+import com.realtime.crossfire.jxclient.gui.gui.GUIElement;
 import java.awt.Graphics;
 import java.awt.image.BufferedImage;
 

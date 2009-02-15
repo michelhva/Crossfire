@@ -21,7 +21,7 @@
 package com.realtime.crossfire.jxclient.gui.item;
 
 import com.realtime.crossfire.jxclient.faces.FacesManager;
-import com.realtime.crossfire.jxclient.gui.TooltipManager;
+import com.realtime.crossfire.jxclient.gui.gui.TooltipManager;
 import com.realtime.crossfire.jxclient.shortcuts.Shortcut;
 import com.realtime.crossfire.jxclient.shortcuts.ShortcutCommand;
 import com.realtime.crossfire.jxclient.shortcuts.ShortcutListener;

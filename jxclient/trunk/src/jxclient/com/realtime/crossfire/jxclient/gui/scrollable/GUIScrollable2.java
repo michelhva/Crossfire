@@ -19,7 +19,7 @@
 //
 package com.realtime.crossfire.jxclient.gui.scrollable;
 
-import com.realtime.crossfire.jxclient.gui.GUIScrollBar;
+import com.realtime.crossfire.jxclient.gui.gui.GUIScrollBar;
 
 /**
  * A {@link GUIScrollable} that can be attached to {@link GUIScrollBar}s.

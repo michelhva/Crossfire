@@ -19,8 +19,8 @@
 //
 package com.realtime.crossfire.jxclient.gui.log;
 
-import com.realtime.crossfire.jxclient.gui.GUIElement;
-import com.realtime.crossfire.jxclient.gui.TooltipManager;
+import com.realtime.crossfire.jxclient.gui.gui.GUIElement;
+import com.realtime.crossfire.jxclient.gui.gui.TooltipManager;
 import com.realtime.crossfire.jxclient.gui.scrollable.GUIScrollable2;
 import com.realtime.crossfire.jxclient.gui.scrollable.ScrollableListener;
 import com.realtime.crossfire.jxclient.window.JXCWindowRenderer;

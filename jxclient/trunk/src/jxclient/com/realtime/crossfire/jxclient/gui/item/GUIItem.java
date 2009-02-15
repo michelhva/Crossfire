@@ -19,9 +19,9 @@
 //
 package com.realtime.crossfire.jxclient.gui.item;
 
-import com.realtime.crossfire.jxclient.gui.ActivatableGUIElement;
-import com.realtime.crossfire.jxclient.gui.GUIElement;
-import com.realtime.crossfire.jxclient.gui.TooltipManager;
+import com.realtime.crossfire.jxclient.gui.gui.ActivatableGUIElement;
+import com.realtime.crossfire.jxclient.gui.gui.GUIElement;
+import com.realtime.crossfire.jxclient.gui.gui.TooltipManager;
 import com.realtime.crossfire.jxclient.gui.scrollable.GUIScrollable;
 import com.realtime.crossfire.jxclient.window.JXCWindowRenderer;
 import java.awt.Transparency;

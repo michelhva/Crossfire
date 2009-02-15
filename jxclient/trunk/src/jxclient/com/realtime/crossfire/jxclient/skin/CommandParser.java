@@ -20,8 +20,6 @@
 package com.realtime.crossfire.jxclient.skin;
 
 import com.realtime.crossfire.jxclient.commands.Commands;
-import com.realtime.crossfire.jxclient.gui.ActivatableGUIElement;
-import com.realtime.crossfire.jxclient.gui.GUIElement;
 import com.realtime.crossfire.jxclient.gui.commands.ConnectCommand;
 import com.realtime.crossfire.jxclient.gui.commands.DialogCloseCommand;
 import com.realtime.crossfire.jxclient.gui.commands.DialogOpenCommand;
@@ -44,6 +42,8 @@ import com.realtime.crossfire.jxclient.gui.commands.ScrollResetCommand;
 import com.realtime.crossfire.jxclient.gui.commands.ShowCommand;
 import com.realtime.crossfire.jxclient.gui.commands.StartCommand;
 import com.realtime.crossfire.jxclient.gui.commands.ToggleCommand;
+import com.realtime.crossfire.jxclient.gui.gui.ActivatableGUIElement;
+import com.realtime.crossfire.jxclient.gui.gui.GUIElement;
 import com.realtime.crossfire.jxclient.gui.item.GUIItem;
 import com.realtime.crossfire.jxclient.gui.list.GUIItemList;
 import com.realtime.crossfire.jxclient.gui.list.GUIList;

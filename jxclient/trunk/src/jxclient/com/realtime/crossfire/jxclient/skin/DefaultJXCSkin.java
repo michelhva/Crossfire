@@ -21,10 +21,10 @@ package com.realtime.crossfire.jxclient.skin;
 
 import com.realtime.crossfire.jxclient.commands.Commands;
 import com.realtime.crossfire.jxclient.experience.ExperienceTable;
-import com.realtime.crossfire.jxclient.gui.GUIElement;
-import com.realtime.crossfire.jxclient.gui.Gui;
-import com.realtime.crossfire.jxclient.gui.GuiFactory;
 import com.realtime.crossfire.jxclient.gui.gauge.GaugeUpdater;
+import com.realtime.crossfire.jxclient.gui.gui.GUIElement;
+import com.realtime.crossfire.jxclient.gui.gui.Gui;
+import com.realtime.crossfire.jxclient.gui.gui.GuiFactory;
 import com.realtime.crossfire.jxclient.gui.keybindings.KeyBindings;
 import com.realtime.crossfire.jxclient.gui.label.GUIHTMLLabel;
 import com.realtime.crossfire.jxclient.items.ItemsManager;

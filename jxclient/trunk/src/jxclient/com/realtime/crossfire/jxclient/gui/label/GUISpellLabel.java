@@ -20,7 +20,7 @@
 package com.realtime.crossfire.jxclient.gui.label;
 
 import com.realtime.crossfire.jxclient.faces.FacesManager;
-import com.realtime.crossfire.jxclient.gui.TooltipManager;
+import com.realtime.crossfire.jxclient.gui.gui.TooltipManager;
 import com.realtime.crossfire.jxclient.spells.CurrentSpellManager;
 import com.realtime.crossfire.jxclient.spells.Spell;
 import com.realtime.crossfire.jxclient.spells.SpellListener;
