@@ -571,7 +571,6 @@ public class JXCWindow extends JFrame
     {
         this.resolution = resolution;
         addKeyListener(keyListener);
-        guiManager.init2(this);
         if (!setSkin(skinName))
         {
             if (skinName.equals(Options.DEFAULT_SKIN))

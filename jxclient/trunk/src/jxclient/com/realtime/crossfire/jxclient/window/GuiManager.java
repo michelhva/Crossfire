@@ -547,15 +547,10 @@ public class GuiManager
     }
 
     @Deprecated
-    public void init2(final JXCWindow window)
+    public void init3()
     {
         window.addMouseListener(mouseTracker);
         window.addMouseMotionListener(mouseTracker);
-    }
-
-    @Deprecated
-    public void init3()
-    {
         timer.start();
     }
 
