@@ -219,10 +219,10 @@ public class GuiManager
     };
 
     /**
-     * The {@link ConnectionStateListener} for detecting established or dropped
+     * The {@link GuiStateListener} for detecting established or dropped
      * connections.
      */
-    private final ConnectionStateListener connectionStateListener = new ConnectionStateListener()
+    private final GuiStateListener guiStateListener = new GuiStateListener()
     {
         /** {@inheritDoc} */
         @Override
@@ -259,7 +259,7 @@ public class GuiManager
         this.server = server;
         mouseTracker = new MouseTracker(debugGui);
         windowRenderer = new JXCWindowRenderer(window, mouseTracker, semaphoreRedraw);
-        window.addConnectionStateListener(connectionStateListener);
+        window.addConnectionStateListener(guiStateListener);
         mouseTracker.init(windowRenderer);
     }
 

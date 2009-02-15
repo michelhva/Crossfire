@@ -24,7 +24,7 @@ package com.realtime.crossfire.jxclient.window;
  *
  * @author Andreas Kirschbaum
  */
-public interface ConnectionStateListener
+public interface GuiStateListener
 {
     /**
      * A connection to the server has been established.

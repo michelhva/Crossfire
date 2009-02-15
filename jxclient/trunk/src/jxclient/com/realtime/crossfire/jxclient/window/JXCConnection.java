@@ -68,10 +68,10 @@ public class JXCConnection
     private String character = null;
 
     /**
-     * The {@link ConnectionStateListener} for detecting established or dropped
+     * The {@link GuiStateListener} for detecting established or dropped
      * connections.
      */
-    private final ConnectionStateListener connectionStateListener = new ConnectionStateListener()
+    private final GuiStateListener guiStateListener = new GuiStateListener()
     {
         /** {@inheritDoc} */
         @Override
@@ -107,7 +107,7 @@ public class JXCConnection
         this.server = server;
         this.connectionListener = connectionListener;
         this.guiManager = guiManager;
-        window.addConnectionStateListener(connectionStateListener);
+        window.addConnectionStateListener(guiStateListener);
         updateTitle();
     }
 
