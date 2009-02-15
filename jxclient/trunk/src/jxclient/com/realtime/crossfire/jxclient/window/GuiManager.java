@@ -226,16 +226,23 @@ public class GuiManager
     {
         /** {@inheritDoc} */
         @Override
-        public void connect()
+        public void start()
         {
-            server.addCrossfireDrawextinfoListener(crossfireDrawextinfoListener);
+            server.removeCrossfireDrawextinfoListener(crossfireDrawextinfoListener);
         }
 
         /** {@inheritDoc} */
         @Override
-        public void disconnect()
+        public void metaserver()
         {
             server.removeCrossfireDrawextinfoListener(crossfireDrawextinfoListener);
+        }
+
+        /** {@inheritDoc} */
+        @Override
+        public void main()
+        {
+            server.addCrossfireDrawextinfoListener(crossfireDrawextinfoListener);
         }
     };
 

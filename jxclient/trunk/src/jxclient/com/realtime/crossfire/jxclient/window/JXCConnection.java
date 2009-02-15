@@ -75,16 +75,23 @@ public class JXCConnection
     {
         /** {@inheritDoc} */
         @Override
-        public void connect()
+        public void start()
         {
-            JXCConnection.this.connect();
+            disconnect();
         }
 
         /** {@inheritDoc} */
         @Override
-        public void disconnect()
+        public void metaserver()
         {
-            JXCConnection.this.disconnect();
+            disconnect();
+        }
+
+        /** {@inheritDoc} */
+        @Override
+        public void main()
+        {
+            connect();
         }
     };
 

@@ -47,16 +47,23 @@ public class ConnectionStateSkinEvent implements SkinEvent
     {
         /** {@inheritDoc} */
         @Override
-        public void connect()
+        public void start()
         {
-            commandList.execute();
+            // ignore
         }
 
         /** {@inheritDoc} */
         @Override
-        public void disconnect()
+        public void metaserver()
         {
             // ignore
+        }
+
+        /** {@inheritDoc} */
+        @Override
+        public void main()
+        {
+            commandList.execute();
         }
     };
 

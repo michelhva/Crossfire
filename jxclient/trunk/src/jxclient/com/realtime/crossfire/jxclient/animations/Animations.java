@@ -45,16 +45,23 @@ public class Animations
     {
         /** {@inheritDoc} */
         @Override
-        public void connect()
+        public void start()
         {
-            animations.clear();
+            // ignore
         }
 
         /** {@inheritDoc} */
         @Override
-        public void disconnect()
+        public void metaserver()
         {
             // ignore
+        }
+
+        /** {@inheritDoc} */
+        @Override
+        public void main()
+        {
+            animations.clear();
         }
     };
 

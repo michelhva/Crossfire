@@ -96,16 +96,22 @@ public class SpellsManager
     {
         /** {@inheritDoc} */
         @Override
-        public void connect()
+        public void start()
         {
-            spells.clear();
+            // ignore
         }
 
         /** {@inheritDoc} */
         @Override
-        public void disconnect()
+        public void metaserver()
         {
             // ignore
+        }
+        /** {@inheritDoc} */
+        @Override
+        public void main()
+        {
+            spells.clear();
         }
     };
 
