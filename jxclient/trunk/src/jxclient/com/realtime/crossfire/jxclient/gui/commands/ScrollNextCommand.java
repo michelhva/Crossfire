@@ -19,7 +19,7 @@
 //
 package com.realtime.crossfire.jxclient.gui.commands;
 
-import com.realtime.crossfire.jxclient.gui.ActivatableGUIElement;
+import com.realtime.crossfire.jxclient.gui.gui.ActivatableGUIElement;
 
 /**
  * A {@link GUICommand} which transfers the focus between two gui elements.

@@ -19,7 +19,7 @@
 //
 package com.realtime.crossfire.jxclient.gui.label;
 
-import com.realtime.crossfire.jxclient.gui.TooltipManager;
+import com.realtime.crossfire.jxclient.gui.gui.TooltipManager;
 import com.realtime.crossfire.jxclient.server.CrossfireStatsListener;
 import com.realtime.crossfire.jxclient.stats.Stats;
 import com.realtime.crossfire.jxclient.stats.StatsListener;

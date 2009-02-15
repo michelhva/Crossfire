@@ -19,7 +19,7 @@
 //
 package com.realtime.crossfire.jxclient.gui.commands;
 
-import com.realtime.crossfire.jxclient.gui.GUIElement;
+import com.realtime.crossfire.jxclient.gui.gui.GUIElement;
 
 /**
  * A {@link GUICommand} which hides a target {@link GUIElement}.

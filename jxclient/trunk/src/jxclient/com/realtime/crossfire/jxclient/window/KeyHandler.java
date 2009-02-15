@@ -19,7 +19,7 @@
 //
 package com.realtime.crossfire.jxclient.window;
 
-import com.realtime.crossfire.jxclient.gui.Gui;
+import com.realtime.crossfire.jxclient.gui.gui.Gui;
 import com.realtime.crossfire.jxclient.gui.keybindings.KeyBindings;
 import com.realtime.crossfire.jxclient.server.CommandQueue;
 import java.awt.event.InputEvent;

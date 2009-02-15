@@ -19,7 +19,7 @@
 //
 package com.realtime.crossfire.jxclient.gui.list;
 
-import com.realtime.crossfire.jxclient.gui.TooltipManager;
+import com.realtime.crossfire.jxclient.gui.gui.TooltipManager;
 import com.realtime.crossfire.jxclient.gui.item.GUIItemItem;
 import com.realtime.crossfire.jxclient.window.JXCWindowRenderer;
 import java.awt.event.MouseEvent;

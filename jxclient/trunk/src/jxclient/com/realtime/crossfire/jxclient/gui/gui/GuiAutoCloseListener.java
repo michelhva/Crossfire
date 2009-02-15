@@ -17,19 +17,18 @@
 //
 // JXClient is (C)2005 by Yann Chachkoff.
 //
-package com.realtime.crossfire.jxclient.gui;
+package com.realtime.crossfire.jxclient.gui.gui;
 
 /**
- * Interface for listeners interested in the changed flag of {@link GUIElement}
+ * Interface for clients interested in auto-close events of {@link Gui}
  * instances.
  * @author Andreas Kirschbaum
  */
-public interface GUIElementChangedListener
+public interface GuiAutoCloseListener
 {
     /**
-     * Called whenever the changed flag was set while a {@link GUIElement} was
-     * visible.
-     * @param element the affected instance
+     * Called when a dialog has been auto-closed.
+     * @param gui the dialog
      */
-    void notifyChanged(GUIElement element);
+    void autoClosed(Gui gui);
 }

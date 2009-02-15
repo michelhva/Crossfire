@@ -24,7 +24,7 @@ import com.realtime.crossfire.jxclient.experience.ExperienceTable;
 import com.realtime.crossfire.jxclient.faces.FaceCache;
 import com.realtime.crossfire.jxclient.faces.FacesManager;
 import com.realtime.crossfire.jxclient.faces.FileCache;
-import com.realtime.crossfire.jxclient.gui.TooltipManager;
+import com.realtime.crossfire.jxclient.gui.gui.TooltipManager;
 import com.realtime.crossfire.jxclient.gui.keybindings.KeyBindings;
 import com.realtime.crossfire.jxclient.items.CfPlayer;
 import com.realtime.crossfire.jxclient.items.ItemsManager;
