@@ -216,7 +216,7 @@ public class JXCWindow extends JFrame
     /**
      * The metaserver instance for this window.
      */
-    private final Metaserver metaserver = new Metaserver(Filenames.getMetaserverCacheFile(), metaserverModel);
+    private final Metaserver metaserver = new Metaserver(Filenames.getMetaserverCacheFile(), metaserverModel, this);
 
     /**
      * The connection.
@@ -577,7 +577,6 @@ public class JXCWindow extends JFrame
                 }
                 soundManager.muteMusic(true);
                 soundManager.mute(Sounds.CHARACTER, true);
-                metaserver.query();
                 break;
 
             case MAIN:
@@ -587,7 +586,6 @@ public class JXCWindow extends JFrame
                 {
                     listener.main();
                 }
-                metaserver.disable();
                 soundManager.muteMusic(false);
                 break;
             }
