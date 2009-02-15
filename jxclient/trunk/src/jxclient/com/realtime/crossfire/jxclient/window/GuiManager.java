@@ -310,7 +310,10 @@ public class GuiManager
             return false;
         }
 
-        windowRenderer.closeDialog(dialogDisconnect);
+        if (dialogDisconnect != null)
+        {
+            windowRenderer.closeDialog(dialogDisconnect);
+        }
         windowRenderer.openDialog(dialogQuit, false);
         return true;
     }
