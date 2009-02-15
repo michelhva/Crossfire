@@ -44,7 +44,6 @@ import com.realtime.crossfire.jxclient.settings.Filenames;
 import com.realtime.crossfire.jxclient.settings.Settings;
 import com.realtime.crossfire.jxclient.settings.options.OptionException;
 import com.realtime.crossfire.jxclient.settings.options.OptionManager;
-import com.realtime.crossfire.jxclient.shortcuts.Shortcuts;
 import com.realtime.crossfire.jxclient.skills.SkillSet;
 import com.realtime.crossfire.jxclient.skin.JXCSkin;
 import com.realtime.crossfire.jxclient.skin.JXCSkinClassSource;
@@ -71,7 +70,6 @@ import java.awt.event.WindowEvent;
 import java.awt.event.WindowFocusListener;
 import java.awt.event.WindowListener;
 import java.io.File;
-import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.io.Writer;
 import java.util.ArrayList;
@@ -164,11 +162,6 @@ public class JXCWindow extends JFrame
     private final Object semaphoreChangeGui = new Object();
 
     /**
-     * The shortcuts for this window.
-     */
-    private final Shortcuts shortcuts;
-
-    /**
      * The {@link KeyHandler} for processing keyboard input.
      */
     private final KeyHandler keyHandler;
@@ -187,6 +180,11 @@ public class JXCWindow extends JFrame
      * The key bindings manager for this window.
      */
     private final KeybindingsManager keybindingsManager;
+
+    /**
+     * The shortcuts manager for this window.
+     */
+    private final ShortcutsManager shortcutsManager;
 
     /**
      * The current pickup mode. Set to <code>null</code> if no user is logged
@@ -450,7 +448,6 @@ public class JXCWindow extends JFrame
         mapUpdater = new CfMapUpdater(server, facesManager, faceCache, animations);
         spellsManager = new SpellsManager(server);
         commandQueue = new CommandQueue(server);
-        shortcuts = new Shortcuts(commandQueue, spellsManager);
         new PoisonWatcher(stats, server);
         new ActiveSkillWatcher(stats, server);
         setDefaultCloseOperation(DO_NOTHING_ON_CLOSE);
@@ -458,6 +455,7 @@ public class JXCWindow extends JFrame
         final ScriptManager scriptManager = new ScriptManager(this, commandQueue, server, stats, itemsManager, spellsManager, mapUpdater, skillSet);
         guiManager.init(scriptManager, commandQueue, server, optionManager);
         keybindingsManager = new KeybindingsManager(guiManager.getCommands(), guiManager);
+        shortcutsManager = new ShortcutsManager(commandQueue, spellsManager);
         keyHandler = new KeyHandler(debugKeyboard, keybindingsManager, commandQueue, guiManager.getWindowRenderer(), keyHandlerListener);
         try
         {
@@ -499,69 +497,11 @@ public class JXCWindow extends JFrame
         return result;
     }
 
-    /**
-     * Load shortcut info from the backing file.
-     */
-    private void loadShortcuts()
-    {
-        final File file;
-        try
-        {
-            file = Filenames.getShortcutsFile();
-        }
-        catch (final IOException ex)
-        {
-            System.err.println("Cannot read shortcuts file: "+ex.getMessage());
-            return;
-        }
-
-        try
-        {
-            shortcuts.load(file);
-        }
-        catch (final FileNotFoundException ex)
-        {
-            return;
-        }
-        catch (final IOException ex)
-        {
-            System.err.println("Cannot read shortcuts file "+file+": "+ex.getMessage());
-            return;
-        }
-    }
-
-    /**
-     * Save all shortcut info to the backing file.
-     */
-    private void saveShortcuts()
-    {
-        final File file;
-        try
-        {
-            file = Filenames.getShortcutsFile();
-        }
-        catch (final IOException ex)
-        {
-            System.err.println("Cannot write shortcuts file: "+ex.getMessage());
-            return;
-        }
-
-        try
-        {
-            shortcuts.save(file);
-        }
-        catch (final IOException ex)
-        {
-            System.err.println("Cannot write shortcuts file "+file+": "+ex.getMessage());
-            return;
-        }
-    }
-
     private void initRendering(final boolean fullScreen)
     {
         guiManager.initRendering(fullScreen);
         keybindingsManager.loadKeybindings();
-        loadShortcuts();
+        shortcutsManager.loadShortcuts();
     }
 
     public void quitApplication()
@@ -693,7 +633,7 @@ public class JXCWindow extends JFrame
     public void term()
     {
         guiManager.term();
-        saveShortcuts();
+        shortcutsManager.saveShortcuts();
         keybindingsManager.saveKeybindings();
         optionManager.saveOptions();
         soundManager.shutdown();
@@ -767,7 +707,7 @@ public class JXCWindow extends JFrame
             skinSource = new JXCSkinClassSource("com/realtime/crossfire/jxclient/skins/"+skinName);
         }
         final JXCSkinLoader newSkin = new JXCSkinLoader(itemsManager, spellsManager, facesManager, stats, mapUpdater, defaultKeyBindings, optionManager, experienceTable, skillSet);
-        return newSkin.load(skinSource, server, this, guiManager.getTooltipManager(), guiManager.getWindowRenderer(), guiManager.mouseTracker, metaserverModel, commandQueue, resolution, shortcuts, guiManager.getCommands(), currentSpellManager, guiManager, debugGui);
+        return newSkin.load(skinSource, server, this, guiManager.getTooltipManager(), guiManager.getWindowRenderer(), guiManager.mouseTracker, metaserverModel, commandQueue, resolution, shortcutsManager.getShortcuts(), guiManager.getCommands(), currentSpellManager, guiManager, debugGui);
     }
 
     /**
