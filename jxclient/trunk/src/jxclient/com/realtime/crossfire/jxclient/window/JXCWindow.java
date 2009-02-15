@@ -539,6 +539,8 @@ public class JXCWindow extends JFrame
                 return;
             }
 
+            guiManager.closeTransientDialogs();
+
             if (this.guiState == GuiState.MAIN)
             {
                 itemsManager.removeCrossfirePlayerListener(playerListener);
@@ -559,8 +561,6 @@ public class JXCWindow extends JFrame
                     listener.connect();
                 }
             }
-
-            guiManager.closeTransientDialogs();
 
             switch (guiState)
             {
