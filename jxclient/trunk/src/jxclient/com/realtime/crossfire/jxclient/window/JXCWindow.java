@@ -31,7 +31,6 @@ import com.realtime.crossfire.jxclient.items.ItemsManager;
 import com.realtime.crossfire.jxclient.items.PlayerListener;
 import com.realtime.crossfire.jxclient.main.Options;
 import com.realtime.crossfire.jxclient.mapupdater.CfMapUpdater;
-import com.realtime.crossfire.jxclient.metaserver.Metaserver;
 import com.realtime.crossfire.jxclient.metaserver.MetaserverModel;
 import com.realtime.crossfire.jxclient.scripts.ScriptManager;
 import com.realtime.crossfire.jxclient.server.CommandQueue;
@@ -201,12 +200,7 @@ public class JXCWindow extends JFrame
     /**
      * The metaserver model instance for this window.
      */
-    private final MetaserverModel metaserverModel = new MetaserverModel();
-
-    /**
-     * The metaserver instance for this window.
-     */
-    private final Metaserver metaserver = new Metaserver(Filenames.getMetaserverCacheFile(), metaserverModel, this);
+    private final MetaserverModel metaserverModel;
 
     /**
      * The connection.
@@ -444,15 +438,18 @@ public class JXCWindow extends JFrame
      *
      * @param optionManager the option manager instance to use
      *
+     * @param metaserverModel the metaserver model to use
+     *
      * @throws IOException if a resource cannot be loaded
      */
-    public JXCWindow(final Object terminateSync, final boolean debugGui, final Writer debugProtocol, final Writer debugKeyboard, final Settings settings, final OptionManager optionManager) throws IOException
+    public JXCWindow(final Object terminateSync, final boolean debugGui, final Writer debugProtocol, final Writer debugKeyboard, final Settings settings, final OptionManager optionManager, final MetaserverModel metaserverModel) throws IOException
     {
         super("");
         this.terminateSync = terminateSync;
         this.debugGui = debugGui;
         this.settings = settings;
         this.optionManager = optionManager;
+        this.metaserverModel = metaserverModel;
         server = new DefaultCrossfireServerConnection(semaphoreRedraw, debugProtocol);
         final FaceCache faceCache = new FaceCache(server);
         experienceTable = new ExperienceTable(server);
