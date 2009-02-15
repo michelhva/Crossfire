@@ -22,6 +22,8 @@ package com.realtime.crossfire.jxclient.skills;
 import com.realtime.crossfire.jxclient.server.CrossfireServerConnection;
 import com.realtime.crossfire.jxclient.server.CrossfireSkillInfoListener;
 import com.realtime.crossfire.jxclient.server.CrossfireStatsListener;
+import com.realtime.crossfire.jxclient.window.ConnectionStateListener;
+import com.realtime.crossfire.jxclient.window.JXCWindow;
 import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Map;
@@ -66,12 +68,35 @@ public class SkillSet
     };
 
     /**
+     * The {@link ConnectionStateListener} for detecting established or dropped
+     * connections.
+     */
+    private final ConnectionStateListener connectionStateListener = new ConnectionStateListener()
+    {
+        /** {@inheritDoc} */
+        @Override
+        public void connect()
+        {
+            clearNumberedSkills();
+        }
+
+        /** {@inheritDoc} */
+        @Override
+        public void disconnect()
+        {
+            // ignore
+        }
+    };
+
+    /**
      * Creates a new instance.
      * @param crossfireServerConnection the server connection to monitor
+     * @param window the window to attach to
      */
-    public SkillSet(final CrossfireServerConnection crossfireServerConnection)
+    public SkillSet(final CrossfireServerConnection crossfireServerConnection, final JXCWindow window)
     {
         crossfireServerConnection.addCrossfireSkillInfoListener(crossfireSkillInfoListener);
+        window.addConnectionStateListener(connectionStateListener);
     }
 
     /**
