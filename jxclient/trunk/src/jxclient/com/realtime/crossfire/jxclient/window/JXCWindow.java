@@ -468,7 +468,7 @@ public class JXCWindow extends JFrame
         setFocusTraversalKeysEnabled(false);
         addWindowFocusListener(windowFocusListener);
         addWindowListener(windowListener);
-        connection = new JXCConnection(keybindingsManager, settings, this, characterPickup, server);
+        connection = new JXCConnection(keybindingsManager, settings, this, characterPickup, server, connectionListener, crossfireQueryListener, guiManager);
         guiManager.setConnection(connection);
     }
 
@@ -519,7 +519,6 @@ public class JXCWindow extends JFrame
 
             if (this.guiState == GuiState.MAIN)
             {
-                connection.disconnect();
                 itemsManager.removeCrossfirePlayerListener(playerListener);
                 for (final ConnectionStateListener listener : connectionStateListeners)
                 {
@@ -532,7 +531,6 @@ public class JXCWindow extends JFrame
             if (this.guiState == GuiState.MAIN)
             {
                 soundManager.mute(Sounds.CHARACTER, false);
-                connection.connect(connectionListener, crossfireQueryListener, guiManager.crossfireDrawextinfoListener, guiManager.getSkin().getMapWidth(), guiManager.getSkin().getMapHeight(), guiManager.getSkin().getNumLookObjects());
                 itemsManager.addCrossfirePlayerListener(playerListener);
                 for (final ConnectionStateListener listener : connectionStateListeners)
                 {
