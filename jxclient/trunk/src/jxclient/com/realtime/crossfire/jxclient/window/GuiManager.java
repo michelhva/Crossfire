@@ -515,7 +515,7 @@ public class GuiManager
 
     /**
      * Updates the current gui state.
-     * @param rendererGuiState
+     * @param rendererGuiState the new gui state
      */
     public void setGuiState(final RendererGuiState rendererGuiState)
     {
