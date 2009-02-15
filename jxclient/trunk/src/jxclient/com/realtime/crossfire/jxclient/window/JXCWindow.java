@@ -52,8 +52,6 @@ import com.realtime.crossfire.jxclient.skin.JXCSkinException;
 import com.realtime.crossfire.jxclient.skin.JXCSkinLoader;
 import com.realtime.crossfire.jxclient.skin.JXCSkinSource;
 import com.realtime.crossfire.jxclient.skin.Resolution;
-import com.realtime.crossfire.jxclient.sound.SoundManager;
-import com.realtime.crossfire.jxclient.sound.Sounds;
 import com.realtime.crossfire.jxclient.spells.CurrentSpellManager;
 import com.realtime.crossfire.jxclient.spells.SpellsManager;
 import com.realtime.crossfire.jxclient.stats.ActiveSkillWatcher;
@@ -167,11 +165,6 @@ public class JXCWindow extends JFrame
      * The settings instance to use.
      */
     private final Settings settings;
-
-    /**
-     * The {@link SoundManager} instance.
-     */
-    private final SoundManager soundManager;
 
     /**
      * The key bindings manager for this window.
@@ -449,19 +442,16 @@ public class JXCWindow extends JFrame
      *
      * @param settings The settings instance to use.
      *
-     * @param soundManager the sound manager instance to use
-     *
      * @param optionManager the option manager instance to use
      *
      * @throws IOException if a resource cannot be loaded
      */
-    public JXCWindow(final Object terminateSync, final boolean debugGui, final Writer debugProtocol, final Writer debugKeyboard, final Settings settings, final SoundManager soundManager, final OptionManager optionManager) throws IOException
+    public JXCWindow(final Object terminateSync, final boolean debugGui, final Writer debugProtocol, final Writer debugKeyboard, final Settings settings, final OptionManager optionManager) throws IOException
     {
         super("");
         this.terminateSync = terminateSync;
         this.debugGui = debugGui;
         this.settings = settings;
-        this.soundManager = soundManager;
         this.optionManager = optionManager;
         server = new DefaultCrossfireServerConnection(semaphoreRedraw, debugProtocol);
         final FaceCache faceCache = new FaceCache(server);
@@ -550,8 +540,6 @@ public class JXCWindow extends JFrame
             switch (guiState)
             {
             case START:
-                soundManager.muteMusic(true);
-                soundManager.mute(Sounds.CHARACTER, true);
                 itemsManager.removeCrossfirePlayerListener(playerListener);
                 for (final GuiStateListener listener : guiStateListeners)
                 {
@@ -564,8 +552,6 @@ public class JXCWindow extends JFrame
                 break;
 
             case METASERVER:
-                soundManager.muteMusic(true);
-                soundManager.mute(Sounds.CHARACTER, true);
                 itemsManager.removeCrossfirePlayerListener(playerListener);
                 for (final GuiStateListener listener : guiStateListeners)
                 {
@@ -574,8 +560,6 @@ public class JXCWindow extends JFrame
                 break;
 
             case MAIN:
-                soundManager.muteMusic(false);
-                soundManager.mute(Sounds.CHARACTER, false);
                 itemsManager.addCrossfirePlayerListener(playerListener);
                 for (final GuiStateListener listener : guiStateListeners)
                 {
