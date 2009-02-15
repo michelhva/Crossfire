@@ -73,7 +73,7 @@ public class JXCWindowRenderer
     /**
      * Listeners to be notified about {@link #rendererGuiState} changes.
      */
-    private final CopyOnWriteArrayList<GuiStateListener> guiStateListeners = new CopyOnWriteArrayList<GuiStateListener>();
+    private final CopyOnWriteArrayList<RendererGuiStateListener> rendererGuiStateListeners = new CopyOnWriteArrayList<RendererGuiStateListener>();
 
     /**
      * If set, {@link #currentGui} has changed.
@@ -613,7 +613,7 @@ public class JXCWindowRenderer
 
         this.rendererGuiState = rendererGuiState;
         forcePaint = true;
-        for (final GuiStateListener listener : guiStateListeners)
+        for (final RendererGuiStateListener listener : rendererGuiStateListeners)
         {
             listener.guiStateChanged(rendererGuiState);
         }
@@ -634,9 +634,9 @@ public class JXCWindowRenderer
      *
      * @param listener The listener to add.
      */
-    public void addGuiStateListener(final GuiStateListener listener)
+    public void addGuiStateListener(final RendererGuiStateListener listener)
     {
-        guiStateListeners.add(listener);
+        rendererGuiStateListeners.add(listener);
     }
 
     /**
