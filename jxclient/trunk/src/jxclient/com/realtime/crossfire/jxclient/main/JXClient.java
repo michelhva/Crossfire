@@ -96,7 +96,7 @@ public class JXClient
                             final OptionManager optionManager = new OptionManager(options.getPrefs());
                             final Object terminateSync = new Object();
                             final MetaserverModel metaserverModel = new MetaserverModel();
-                            final JXCWindow window = new JXCWindow(terminateSync, options.isDebugGui(), debugProtocolOutputStreamWriter, debugKeyboardOutputStreamWriter, options.getPrefs(), optionManager, metaserverModel);
+                            final JXCWindow window = new JXCWindow(terminateSync, options.isDebugGui(), debugProtocolOutputStreamWriter, debugKeyboardOutputStreamWriter, options.getPrefs(), optionManager, metaserverModel, options.getResolution());
                             new Metaserver(Filenames.getMetaserverCacheFile(), metaserverModel, window);
                             final SoundManager soundManager = new SoundManager(window);
                             try
@@ -121,7 +121,7 @@ public class JXClient
                                         new MusicWatcher(server, soundManager);
                                         new SoundWatcher(server, soundManager);
                                         new StatsWatcher(stats, window.getGuiManager().getWindowRenderer(), window.getItemsManager(), soundManager);
-                                        window.init(options.getResolution(), options.getSkin(), options.isFullScreen(), options.getServer());
+                                        window.init(options.getSkin(), options.isFullScreen(), options.getServer());
                                     }
                                 });
                                 terminateSync.wait();
