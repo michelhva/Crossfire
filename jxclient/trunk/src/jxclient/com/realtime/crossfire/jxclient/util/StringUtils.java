@@ -19,10 +19,10 @@
 //
 package com.realtime.crossfire.jxclient.util;
 
-import java.util.regex.Pattern;
-import java.util.List;
-import java.util.ArrayList;
 import com.realtime.crossfire.jxclient.skin.JXCSkinException;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.regex.Pattern;
 
 /**
  * Utility class for string manipulation.
