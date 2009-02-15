@@ -32,6 +32,8 @@ import com.realtime.crossfire.jxclient.map.CfMapSquareListener;
 import com.realtime.crossfire.jxclient.server.CrossfireMap2Command;
 import com.realtime.crossfire.jxclient.server.CrossfireServerConnection;
 import com.realtime.crossfire.jxclient.server.CrossfireUpdateMapListener;
+import com.realtime.crossfire.jxclient.window.ConnectionStateListener;
+import com.realtime.crossfire.jxclient.window.JXCWindow;
 import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.List;
@@ -223,6 +225,27 @@ public class CfMapUpdater
     };
 
     /**
+     * The {@link ConnectionStateListener} for detecting established or dropped
+     * connections.
+     */
+    private final ConnectionStateListener connectionStateListener = new ConnectionStateListener()
+    {
+        /** {@inheritDoc} */
+        @Override
+        public void connect()
+        {
+            reset();
+        }
+
+        /** {@inheritDoc} */
+        @Override
+        public void disconnect()
+        {
+            reset();
+        }
+    };
+
+    /**
      * Creates a new instance.
      * @param faceCache the instance for looking up faces
      * @param animations the defined animations
@@ -242,8 +265,9 @@ public class CfMapUpdater
      * @param facesManager the faces manager to track for updated faces
      * @param faceCache the instance for looking up faces
      * @param animations the defined animations
+     * @param window the window to attach to
      */
-    public CfMapUpdater(final CrossfireServerConnection crossfireServerConnection, final FacesManager facesManager, final FaceCache faceCache, final Animations animations)
+    public CfMapUpdater(final CrossfireServerConnection crossfireServerConnection, final FacesManager facesManager, final FaceCache faceCache, final Animations animations, final JXCWindow window)
     {
         this.facesManager = facesManager;
         this.faceCache = faceCache;
@@ -255,6 +279,7 @@ public class CfMapUpdater
         }
         map = new CfMap(mapSquareListener);
         visibleAnimations = new CfMapAnimations(crossfireServerConnection, this);
+        window.addConnectionStateListener(connectionStateListener);
     }
 
     /**
