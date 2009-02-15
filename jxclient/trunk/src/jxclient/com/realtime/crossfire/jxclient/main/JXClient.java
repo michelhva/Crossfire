@@ -19,10 +19,15 @@
 //
 package com.realtime.crossfire.jxclient.main;
 
+import com.realtime.crossfire.jxclient.server.CrossfireServerConnection;
 import com.realtime.crossfire.jxclient.settings.options.OptionException;
 import com.realtime.crossfire.jxclient.settings.options.OptionManager;
 import com.realtime.crossfire.jxclient.settings.options.SoundCheckBoxOption;
+import com.realtime.crossfire.jxclient.sound.MusicWatcher;
 import com.realtime.crossfire.jxclient.sound.SoundManager;
+import com.realtime.crossfire.jxclient.sound.SoundWatcher;
+import com.realtime.crossfire.jxclient.sound.StatsWatcher;
+import com.realtime.crossfire.jxclient.stats.Stats;
 import com.realtime.crossfire.jxclient.window.JXCWindow;
 import java.io.FileOutputStream;
 import java.io.IOException;
@@ -107,6 +112,11 @@ public class JXClient
                                     @Override
                                     public void run()
                                     {
+                                        final CrossfireServerConnection server = window.getCrossfireServerConnection();
+                                        final Stats stats = window.getStats();
+                                        new MusicWatcher(server, soundManager);
+                                        new SoundWatcher(server, soundManager);
+                                        new StatsWatcher(stats, window.getGuiManager().getWindowRenderer(), window.getItemsManager(), soundManager);
                                         window.init(options.getResolution(), options.getSkin(), options.isFullScreen(), options.getServer());
                                     }
                                 });
@@ -119,6 +129,7 @@ public class JXClient
                                 public void run()
                                 {
                                     window.term();
+                                    soundManager.shutdown();
                                 }
                             });
                         }

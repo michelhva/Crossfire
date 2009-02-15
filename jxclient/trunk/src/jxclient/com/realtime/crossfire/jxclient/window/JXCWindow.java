@@ -52,11 +52,8 @@ import com.realtime.crossfire.jxclient.skin.JXCSkinException;
 import com.realtime.crossfire.jxclient.skin.JXCSkinLoader;
 import com.realtime.crossfire.jxclient.skin.JXCSkinSource;
 import com.realtime.crossfire.jxclient.skin.Resolution;
-import com.realtime.crossfire.jxclient.sound.MusicWatcher;
 import com.realtime.crossfire.jxclient.sound.SoundManager;
-import com.realtime.crossfire.jxclient.sound.SoundWatcher;
 import com.realtime.crossfire.jxclient.sound.Sounds;
-import com.realtime.crossfire.jxclient.sound.StatsWatcher;
 import com.realtime.crossfire.jxclient.spells.CurrentSpellManager;
 import com.realtime.crossfire.jxclient.spells.SpellsManager;
 import com.realtime.crossfire.jxclient.stats.ActiveSkillWatcher;
@@ -591,9 +588,6 @@ public class JXCWindow extends JFrame
 
     public void init(final Resolution resolution, final String skinName, final boolean fullScreen, final String serverInfo)
     {
-        new MusicWatcher(server, soundManager);
-        new SoundWatcher(server, soundManager);
-        new StatsWatcher(stats, guiManager.getWindowRenderer(), itemsManager, soundManager);
         this.resolution = resolution;
         addKeyListener(keyListener);
         guiManager.init2(this);
@@ -633,7 +627,6 @@ public class JXCWindow extends JFrame
         shortcutsManager.saveShortcuts();
         keybindingsManager.saveKeybindings();
         optionManager.saveOptions();
-        soundManager.shutdown();
     }
 
     public void connect(final String serverInfo)
@@ -790,5 +783,29 @@ public class JXCWindow extends JFrame
     public void removeConnectionStateListener(final GuiStateListener listener)
     {
         guiStateListeners.remove(listener);
+    }
+
+    @Deprecated
+    public CrossfireServerConnection getCrossfireServerConnection()
+    {
+        return server;
+    }
+
+    @Deprecated
+    public Stats getStats()
+    {
+        return stats;
+    }
+
+    @Deprecated
+    public GuiManager getGuiManager()
+    {
+        return guiManager;
+    }
+
+    @Deprecated
+    public ItemsManager getItemsManager()
+    {
+        return itemsManager;
     }
 }
