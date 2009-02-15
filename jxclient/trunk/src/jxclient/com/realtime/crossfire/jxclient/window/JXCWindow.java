@@ -445,7 +445,7 @@ public class JXCWindow extends JFrame
         stats = new Stats(server, experienceTable, skillSet);
         itemsManager = new ItemsManager(server, faceCache, stats, skillSet);
         facesManager = new FacesManager(server, new FileCache(Filenames.getOriginalImageCacheDir()), new FileCache(Filenames.getScaledImageCacheDir()), new FileCache(Filenames.getMagicMapImageCacheDir()), faceCache);
-        mapUpdater = new CfMapUpdater(server, facesManager, faceCache, animations);
+        mapUpdater = new CfMapUpdater(server, facesManager, faceCache, animations, this);
         spellsManager = new SpellsManager(server);
         commandQueue = new CommandQueue(server);
         new PoisonWatcher(stats, server);
@@ -522,7 +522,6 @@ public class JXCWindow extends JFrame
                 connection.disconnect();
                 itemsManager.removeCrossfirePlayerListener(playerListener);
                 itemsManager.reset();
-                mapUpdater.reset();
                 for (final ConnectionStateListener listener : connectionStateListeners)
                 {
                     listener.disconnect();
@@ -543,7 +542,6 @@ public class JXCWindow extends JFrame
                 itemsManager.reset();
                 spellsManager.reset();
                 animations.reset();
-                mapUpdater.reset();
                 for (final ConnectionStateListener listener : connectionStateListeners)
                 {
                     listener.connect();
