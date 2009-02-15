@@ -19,6 +19,7 @@
 //
 package com.realtime.crossfire.jxclient.metaserver;
 
+import com.realtime.crossfire.jxclient.server.ClientSocketState;
 import com.realtime.crossfire.jxclient.window.GuiStateListener;
 import com.realtime.crossfire.jxclient.window.JXCWindow;
 import java.io.BufferedReader;
@@ -90,9 +91,23 @@ public class Metaserver
 
         /** {@inheritDoc} */
         @Override
-        public void main()
+        public void connecting()
         {
             metaserverProcessor.disable();
+        }
+
+        /** {@inheritDoc} */
+        @Override
+        public void connecting(final ClientSocketState clientSocketState)
+        {
+            // ignore
+        }
+
+        /** {@inheritDoc} */
+        @Override
+        public void connected()
+        {
+            // ignore
         }
     };
 

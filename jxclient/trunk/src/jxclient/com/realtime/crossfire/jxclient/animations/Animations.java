@@ -19,6 +19,7 @@
 //
 package com.realtime.crossfire.jxclient.animations;
 
+import com.realtime.crossfire.jxclient.server.ClientSocketState;
 import com.realtime.crossfire.jxclient.window.GuiStateListener;
 import com.realtime.crossfire.jxclient.window.JXCWindow;
 import java.util.HashMap;
@@ -59,9 +60,23 @@ public class Animations
 
         /** {@inheritDoc} */
         @Override
-        public void main()
+        public void connecting()
         {
             animations.clear();
+        }
+
+        /** {@inheritDoc} */
+        @Override
+        public void connecting(final ClientSocketState clientSocketState)
+        {
+            // ignore
+        }
+
+        /** {@inheritDoc} */
+        @Override
+        public void connected()
+        {
+            // ignore
         }
     };
 

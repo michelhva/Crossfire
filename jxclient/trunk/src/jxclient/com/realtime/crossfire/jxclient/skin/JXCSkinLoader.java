@@ -315,6 +315,7 @@ public class JXCSkinLoader
             skin.addDialog("meta");
             skin.addDialog("quit");
             skin.addDialog("disconnect");
+            skin.addDialog("connect");
             skin.addDialog("start");
             definedFonts.clear();
             textButtonFactory = null;

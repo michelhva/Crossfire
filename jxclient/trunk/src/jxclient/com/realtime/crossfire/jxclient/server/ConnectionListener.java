@@ -27,6 +27,12 @@ package com.realtime.crossfire.jxclient.server;
 public interface ConnectionListener
 {
     /**
+     * This function will be called when the connection has been established.
+     * @param clientSocketState the client socket state
+     */
+    void connected(final ClientSocketState clientSocketState);
+
+    /**
      * This function will be called when the connection has been broken.
      */
     void connectionLost();

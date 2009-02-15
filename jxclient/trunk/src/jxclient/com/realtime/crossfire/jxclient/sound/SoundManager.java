@@ -19,6 +19,7 @@
 //
 package com.realtime.crossfire.jxclient.sound;
 
+import com.realtime.crossfire.jxclient.server.ClientSocketState;
 import com.realtime.crossfire.jxclient.window.GuiStateListener;
 import com.realtime.crossfire.jxclient.window.JXCWindow;
 import java.util.EnumSet;
@@ -76,7 +77,22 @@ public class SoundManager
 
         /** {@inheritDoc} */
         @Override
-        public void main()
+        public void connecting()
+        {
+            muteMusic(true);
+            mute(Sounds.CHARACTER, true);
+        }
+
+        /** {@inheritDoc} */
+        @Override
+        public void connecting(final ClientSocketState clientSocketState)
+        {
+            // ignore
+        }
+
+        /** {@inheritDoc} */
+        @Override
+        public void connected()
         {
             muteMusic(false);
             mute(Sounds.CHARACTER, false);

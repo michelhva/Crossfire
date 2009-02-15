@@ -19,6 +19,7 @@
 //
 package com.realtime.crossfire.jxclient.skills;
 
+import com.realtime.crossfire.jxclient.server.ClientSocketState;
 import com.realtime.crossfire.jxclient.server.CrossfireServerConnection;
 import com.realtime.crossfire.jxclient.server.CrossfireSkillInfoListener;
 import com.realtime.crossfire.jxclient.server.CrossfireStatsListener;
@@ -89,9 +90,23 @@ public class SkillSet
 
         /** {@inheritDoc} */
         @Override
-        public void main()
+        public void connecting()
         {
             clearNumberedSkills();
+        }
+
+        /** {@inheritDoc} */
+        @Override
+        public void connecting(final ClientSocketState clientSocketState)
+        {
+            // ignore
+        }
+
+        /** {@inheritDoc} */
+        @Override
+        public void connected()
+        {
+            // ignore
         }
     };
 

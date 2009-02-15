@@ -237,6 +237,11 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
     private final SimpleDateFormat simpleDateFormat = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss,SSS ");
 
     /**
+     * The current connection state.
+     */
+    private ClientSocketState clientSocketState = ClientSocketState.CONNECTING;
+
+    /**
      * Creates a new instance.
      * @param redrawSemaphore the semaphore used to synchronized map model
      * updates and map view redraws
@@ -425,6 +430,19 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
         crossfireSkillInfoListeners.remove(listener);
     }
 
+    /** {@inheritDoc} */
+    @Override
+    public void connected()
+    {
+        for (final CrossfireUpdateMapListener listener : crossfireUpdateMapListeners)
+        {
+            listener.newMap(mapWidth, mapHeight); // XXX: remove
+        }
+
+        setClientSocketState(ClientSocketState.CONNECTING, ClientSocketState.VERSION);
+        sendVersion(1023, 1027, "JXClient Java Client Pegasus 0.1");
+    }
+
     /** {@inheritDoc}
      * Processes a received packet. This function does not avoid index out of
      * bounds accesses to the array <code>packet</code>; instead, a
@@ -480,7 +498,7 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
                             {
                                 debugProtocolWrite("recv addme_success\n");
                             }
-                            // XXX: addme_success command not implemented
+                            cmdAddmeSuccess();
                             notifyPacketWatcherListenersNodata(packet, start, args, end);
                             return;
                         }
@@ -1114,6 +1132,11 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
                         debugProtocolWrite("recv query flags="+flags+" text="+text+"\n");
                     }
 
+                    // XXX: hack to process "What is your name?" prompt even before addme_success is received
+                    if (clientSocketState != ClientSocketState.CONNECTED)
+                    {
+                        setClientSocketState(ClientSocketState.ADDME, ClientSocketState.CONNECTED);
+                    }
                     for (final CrossfireQueryListener listener : queryListeners)
                     {
                         listener.commandQueryReceived(text, flags);
@@ -1583,6 +1606,17 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
     }
 
     /**
+     * Processes the "addme_success" command.
+     */
+    private void cmdAddmeSuccess()
+    {
+        if (clientSocketState != ClientSocketState.CONNECTED)
+        {
+            setClientSocketState(ClientSocketState.ADDME, ClientSocketState.CONNECTED);
+        }
+    }
+
+    /**
      * Returns the command string for a received packet.
      * @param packet the packet contents
      * @param start the start index into <code>packet</code>
@@ -1810,12 +1844,7 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
      */
     private void cmdVersion(final int csval, final int scval, final String vinfo)
     {
-        for (final CrossfireUpdateMapListener listener : crossfireUpdateMapListeners)
-        {
-            listener.newMap(mapWidth, mapHeight);
-        }
-        sendVersion(1023, 1027, "JXClient Java Client Pegasus 0.1");
-        sendToggleextendedtext(MessageTypes.getAllTypes());
+        setClientSocketState(ClientSocketState.VERSION, ClientSocketState.SETUP);
         sendSetup(
             "faceset 0",
             "sound 3",
@@ -1831,10 +1860,6 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
             "tick 1",
             "mapsize "+mapWidth+"x"+mapHeight,
             "num_look_objects "+numLookObjects);
-        sendRequestinfo("image_info");
-        sendRequestinfo("skill_info");
-        sendRequestinfo("exp_table");
-        sendToggleextendedtext(1);
         for(final CrossfireStatsListener crossfireStatsListener : crossfireStatsListeners)
         {
             crossfireStatsListener.setSimpleWeaponSpeed(scval >= 1029);
@@ -1909,7 +1934,6 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
         {
             is.close();
         }
-        sendAddme();
     }
 
     /**
@@ -2012,6 +2036,9 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
         {
             crossfireExpTableListener.expTableReceived(expTable);
         }
+
+        setClientSocketState(ClientSocketState.REQUESTINFO, ClientSocketState.ADDME);
+        sendAddme();
     }
 
     /**
@@ -2123,6 +2150,12 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
                 System.err.println("Warning: ignoring unknown setup option from server: "+option+"="+value);
             }
         }
+
+        setClientSocketState(ClientSocketState.SETUP, ClientSocketState.REQUESTINFO);
+        sendRequestinfo("image_info");
+        sendRequestinfo("skill_info");
+        sendRequestinfo("exp_table");
+        sendToggleextendedtext(MessageTypes.getAllTypes());
     }
 
     /**
@@ -2735,5 +2768,32 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
                 }
             }
         }
+    }
+
+    /** {@inheritDoc} */
+    @Override
+    public void connect(final String hostname, final int port, final ConnectionListener connectionListener)
+    {
+        clientSocketState = ClientSocketState.CONNECTING;
+        super.connect(hostname, port, connectionListener);
+    }
+
+    /**
+     * Updates the {@link #clientSocketState}.
+     * @param prevState the expected current state
+     * @param nextState the next state
+     */
+    private void setClientSocketState(final ClientSocketState prevState, final ClientSocketState nextState)
+    {
+        if (debugProtocol != null)
+        {
+            debugProtocolWrite("connection state: "+nextState+"\n");
+        }
+        if (clientSocketState != prevState)
+        {
+            System.err.println("Warning: connection state is "+clientSocketState+" when switching to state "+nextState+", expecting state "+prevState);
+        }
+        clientSocketState = nextState;
+        connectionProgress(nextState); 
     }
 }

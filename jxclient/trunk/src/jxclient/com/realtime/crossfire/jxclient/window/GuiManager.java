@@ -10,6 +10,7 @@ import com.realtime.crossfire.jxclient.gui.list.GUIMetaElementList;
 import com.realtime.crossfire.jxclient.gui.log.GUILabelLog;
 import com.realtime.crossfire.jxclient.gui.textinput.GUIText;
 import com.realtime.crossfire.jxclient.scripts.ScriptManager;
+import com.realtime.crossfire.jxclient.server.ClientSocketState;
 import com.realtime.crossfire.jxclient.server.CommandQueue;
 import com.realtime.crossfire.jxclient.server.CrossfireDrawextinfoListener;
 import com.realtime.crossfire.jxclient.server.CrossfireQueryListener;
@@ -80,6 +81,18 @@ public class GuiManager
      * does not define this dialog.
      */
     private Gui dialogDisconnect = null;
+
+    /**
+     * The "connect in progress" dialog. Set to <code>null</code> if the skin
+     * does not define this dialog.
+     */
+    private Gui dialogConnect = null;
+
+    /**
+     * The "message" field within {@link #dialogConnect}. Set to
+     * <code>null</code> if the dialog does not define a "message" label.
+     */
+    private AbstractLabel dialogConnectLabel = null;
 
     /**
      * Whether the currently shown query dialog is the character name prompt.
@@ -245,11 +258,33 @@ public class GuiManager
 
         /** {@inheritDoc} */
         @Override
-        public void main()
+        public void connecting()
         {
             server.addCrossfireDrawextinfoListener(crossfireDrawextinfoListener);
             setGuiState(RendererGuiState.LOGIN);
             showGUIMain();
+            if (dialogConnect != null)
+            {
+                windowRenderer.openDialog(dialogConnect, false);
+                updateConnectLabel(ClientSocketState.CONNECTING);
+            }
+        }
+
+        /** {@inheritDoc} */
+        @Override
+        public void connecting(final ClientSocketState clientSocketState)
+        {
+            updateConnectLabel(clientSocketState);
+        }
+
+        /** {@inheritDoc} */
+        @Override
+        public void connected()
+        {
+            if (dialogConnect != null)
+            {
+                windowRenderer.closeDialog(dialogConnect);
+            }
         }
     };
 
@@ -507,7 +542,8 @@ public class GuiManager
     }
 
     /**
-     * Closes all transient dialogs: disconnect, quit, query, and book dialogs.
+     * Closes all transient dialogs: disconnect, quit, connect, query, and book
+     * dialogs.
      */
     public void closeTransientDialogs()
     {
@@ -518,6 +554,10 @@ public class GuiManager
         if (dialogQuit != null)
         {
             windowRenderer.closeDialog(dialogQuit);
+        }
+        if (dialogConnect != null)
+        {
+            windowRenderer.closeDialog(dialogConnect);
         }
         windowRenderer.closeDialog(queryDialog);
         windowRenderer.closeDialog(skin.getDialogBook(1));
@@ -737,6 +777,8 @@ public class GuiManager
         keybindDialog = skin.getDialogKeyBind();
         dialogQuit = skin.getDialogQuit();
         dialogDisconnect = skin.getDialogDisconnect();
+        dialogConnect = skin.getDialogConnect();
+        dialogConnectLabel = dialogConnect == null ? null : dialogConnect.getFirstElement(AbstractLabel.class, "message");
     }
 
     /**
@@ -796,5 +838,48 @@ public class GuiManager
     public void setConnection(final JXCConnection connection)
     {
         this.connection = connection;
+    }
+
+    /**
+     * Updates the "message" field of the connect dialog. Does nothing if
+     * the dialog is not open, does not exist, or if the dialog does not
+     * define a "message" field.
+     * @param clientSocketState the client socket state
+     */
+    private void updateConnectLabel(final ClientSocketState clientSocketState)
+    {
+        if (dialogConnectLabel != null)
+        {
+            String message = null;
+            switch (clientSocketState)
+            {
+            case CONNECTING:
+                message = "Connecting...";
+                break;
+
+            case VERSION:
+                message = "Exchanging version...";
+                break;
+
+            case SETUP:
+                message = "Exchanging configuration...";
+                break;
+
+            case REQUESTINFO:
+                message = "Requesting information...";
+                break;
+
+            case ADDME:
+                message = "Joining the game...";
+                break;
+
+            case CONNECTED:
+                message = "Done.";
+                break;
+            }
+
+            assert message != null;
+            dialogConnectLabel.setText(message);
+        }
     }
 }
