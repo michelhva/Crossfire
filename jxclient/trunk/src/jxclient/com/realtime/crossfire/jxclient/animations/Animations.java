@@ -19,6 +19,8 @@
 //
 package com.realtime.crossfire.jxclient.animations;
 
+import com.realtime.crossfire.jxclient.window.ConnectionStateListener;
+import com.realtime.crossfire.jxclient.window.JXCWindow;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -35,12 +37,37 @@ public class Animations
      */
     private final Map<Integer, Animation> animations = new HashMap<Integer, Animation>();
 
-    /*
-     * Forget about all animations.
+    /**
+     * The {@link ConnectionStateListener} for detecting established or dropped
+     * connections.
      */
-    public void reset()
+    private final ConnectionStateListener connectionStateListener = new ConnectionStateListener()
     {
-        animations.clear();
+        /** {@inheritDoc} */
+        @Override
+        public void connect()
+        {
+            animations.clear();
+        }
+
+        /** {@inheritDoc} */
+        @Override
+        public void disconnect()
+        {
+            // ignore
+        }
+    };
+
+    /**
+     * Creates a new instance.
+     * @param window the window to attach to; <code>null</code> to not attach
+     */
+    public Animations(final JXCWindow window)
+    {
+        if (window != null)
+        {
+            window.addConnectionStateListener(connectionStateListener);
+        }
     }
 
     /**

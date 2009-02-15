@@ -150,7 +150,7 @@ public class JXCWindow extends JFrame
 
     private final CrossfireServerConnection server;
 
-    private final Animations animations = new Animations();
+    private final Animations animations = new Animations(this);
 
     /**
      * The command queue instance for this window.
@@ -541,7 +541,6 @@ public class JXCWindow extends JFrame
                 commandQueue.clear();
                 itemsManager.reset();
                 spellsManager.reset();
-                animations.reset();
                 for (final ConnectionStateListener listener : connectionStateListeners)
                 {
                     listener.connect();
