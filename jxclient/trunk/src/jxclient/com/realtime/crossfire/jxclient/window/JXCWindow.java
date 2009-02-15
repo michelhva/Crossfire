@@ -508,13 +508,6 @@ public class JXCWindow extends JFrame
         return result;
     }
 
-    private void initRendering(final boolean fullScreen)
-    {
-        guiManager.initRendering(fullScreen);
-        keybindingsManager.loadKeybindings();
-        shortcutsManager.loadShortcuts();
-    }
-
     public void quitApplication()
     {
         guiManager.terminate();
@@ -585,7 +578,9 @@ public class JXCWindow extends JFrame
                 throw new AssertionError();
             }
         }
-        initRendering(fullScreen);
+        guiManager.initRendering(fullScreen);
+        keybindingsManager.loadKeybindings();
+        shortcutsManager.loadShortcuts();
 
         if (serverInfo != null)
         {
