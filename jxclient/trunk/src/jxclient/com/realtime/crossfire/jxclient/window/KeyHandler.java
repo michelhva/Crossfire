@@ -121,9 +121,9 @@ public class KeyHandler
         keyShift[keyid] = state;
     }
 
-    private void handleKeyPress(final KeyEvent e, final JXCWindow.Status status)
+    private void handleKeyPress(final KeyEvent e, final ConnectionStatus status)
     {
-        if (status != JXCWindow.Status.PLAYING)
+        if (status != ConnectionStatus.PLAYING)
         {
             debugKeyboardWrite("handleKeyPress: ignoring key because state is not PLAYING but "+status);
             return;
@@ -206,9 +206,9 @@ public class KeyHandler
         }
     }
 
-    private void handleKeyTyped(final KeyEvent e, final JXCWindow.Status status)
+    private void handleKeyTyped(final KeyEvent e, final ConnectionStatus status)
     {
-        if (status != JXCWindow.Status.PLAYING)
+        if (status != ConnectionStatus.PLAYING)
         {
             debugKeyboardWrite("handleKeyTyped: ignoring key because state is not PLAYING but "+status);
             return;
@@ -229,7 +229,7 @@ public class KeyHandler
         debugKeyboardWrite("keyTyped: ignoring key");
     }
 
-    public void keyPressed(final KeyEvent e, final JXCWindow.Status status)
+    public void keyPressed(final KeyEvent e, final ConnectionStatus status)
     {
         debugKeyboardWrite("pressed", e);
         try
@@ -329,7 +329,7 @@ public class KeyHandler
         }
     }
 
-    public void keyTyped(final KeyEvent e, final JXCWindow.Status status)
+    public void keyTyped(final KeyEvent e, final ConnectionStatus status)
     {
         debugKeyboardWrite("typed", e);
         try
