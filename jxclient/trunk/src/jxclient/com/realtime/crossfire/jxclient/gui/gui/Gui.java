@@ -20,13 +20,8 @@
 package com.realtime.crossfire.jxclient.gui.gui;
 
 import com.realtime.crossfire.jxclient.commands.Commands;
-import com.realtime.crossfire.jxclient.gui.GUIMetaElement;
 import com.realtime.crossfire.jxclient.gui.button.AbstractButton;
 import com.realtime.crossfire.jxclient.gui.keybindings.KeyBindings;
-import com.realtime.crossfire.jxclient.gui.label.AbstractLabel;
-import com.realtime.crossfire.jxclient.gui.label.GUIOneLineLabel;
-import com.realtime.crossfire.jxclient.gui.list.GUIMetaElementList;
-import com.realtime.crossfire.jxclient.gui.log.GUILabelLog;
 import com.realtime.crossfire.jxclient.gui.textinput.GUIText;
 import com.realtime.crossfire.jxclient.gui.textinput.KeyListener;
 import com.realtime.crossfire.jxclient.window.GuiManager;
@@ -307,54 +302,37 @@ public class Gui
     }
 
     /**
-     * Return the first {@link GUIText} gui element of this gui.
-     *
-     * @return The <code>GUIText</code> element, or <code>null</code> if this
-     * gui does not contain any <code>GUIText</code> gui elements.
-     */
-    public GUIText getFirstTextArea()
-    {
-        for (final GUIElement element : visibleElements)
-        {
-            if (element instanceof GUIText)
-            {
-                return (GUIText)element;
-            }
-        }
-
-        return null;
-    }
-
-    /**
-     * Returns all {@link GUIMetaElement} gui element of this gui.
+     * Returns all gui elements of this gui belonging to the given class.
+     * @param class_ the class to collect
      * @return the gui elements
      */
-    public Set<GUIMetaElement> getMetaElements()
+    public <T extends GUIElement> Set<T> getElements(final Class<T> class_)
     {
-        final Set<GUIMetaElement> result = new HashSet<GUIMetaElement>(16);
+        final Set<T> result = new HashSet<T>(16);
         for (final GUIElement element : visibleElements)
         {
-            if (element instanceof GUIMetaElement)
+            if (class_.isAssignableFrom(element.getClass()))
             {
-                result.add((GUIMetaElement)element);
+                result.add(class_.cast(element));
             }
         }
         return result;
     }
 
     /**
-     * Return the dialog title gui element of this gui.
-     *
-     * @return The title element, or <code>null</code> if this gui does not
-     * contain a title element.
+     * Returns the first gui element of this gui which belongs to the given
+     * class and that's name ends with the given ending.
+     * @param class_ the class to search for
+     * @param ending the ending to search for
+     * @return the gui element or <code>null</code> if not found
      */
-    public GUIOneLineLabel getDialogTitle()
+    public <T extends GUIElement> T getFirstElementEndingWith(final Class<T> class_, final String ending)
     {
         for (final GUIElement element : visibleElements)
         {
-            if ((element instanceof GUIOneLineLabel) && element.getName().endsWith("_title"))
+            if (class_.isAssignableFrom(element.getClass()) && element.getName().endsWith(ending))
             {
-                return (GUIOneLineLabel)element;
+                return class_.cast(element);
             }
         }
 
@@ -362,18 +340,19 @@ public class Gui
     }
 
     /**
-     * Return the first {@link AbstractLabel} gui element of this gui.
-     *
-     * @return The <code>AbstractLabel</code> element, or <code>null</code> if
-     * this gui does not contain any <code>AbstractLabel</code> gui elements.
+     * Returns the first gui element of this gui which belongs to the given
+     * class and that's name does not end with the given ending.
+     * @param class_ the class to search for
+     * @param ending the ending to search for
+     * @return the gui element or <code>null</code> if not found
      */
-    public AbstractLabel getFirstLabel()
+    public <T extends GUIElement> T getFirstElementNotEndingWith(final Class<T> class_, final String ending)
     {
         for (final GUIElement element : visibleElements)
         {
-            if ((element instanceof AbstractLabel) && !element.getName().endsWith("_title"))
+            if (class_.isAssignableFrom(element.getClass()) && !element.getName().endsWith(ending))
             {
-                return (AbstractLabel)element;
+                return class_.cast(element);
             }
         }
 
@@ -381,35 +360,17 @@ public class Gui
     }
 
     /**
-     * Return the first {@link GUILabelLog} gui element of this gui.
-     *
-     * @return The <code>GUILabelLog</code> element, or <code>null</code> if
-     * this gui does not contain any <code>GUILabelLog</code> gui elements.
+     * Returns the first gui element of this gui belonging to the given class.
+     * @param class_ the class to search for
+     * @return the gui element or <code>null</code> if not found
      */
-    public GUILabelLog getFirstLabelLog()
+    public <T extends GUIElement> T getFirstElement(final Class<T> class_)
     {
         for (final GUIElement element : visibleElements)
         {
-            if (element instanceof GUILabelLog)
+            if (class_.isAssignableFrom(element.getClass()))
             {
-                return (GUILabelLog)element;
-            }
-        }
-
-        return null;
-    }
-
-    /**
-     * Returns the first {@link GUIMetaElementList} gui element of this gui.
-     * @return the gzu element or <code>null</code> if not found
-     */
-    public GUIMetaElementList getMetaElementList()
-    {
-        for (final GUIElement element : visibleElements)
-        {
-            if (element instanceof GUIMetaElementList)
-            {
-                return (GUIMetaElementList)element;
+                return class_.cast(element);
             }
         }
 
@@ -593,7 +554,7 @@ public class Gui
      */
     private GUIText activateFirstTextArea()
     {
-        final GUIText textArea = getFirstTextArea();
+        final GUIText textArea = getFirstElement(GUIText.class);
         if (textArea != null)
         {
             textArea.setActive(true);
@@ -647,20 +608,20 @@ public class Gui
     }
 
     /**
-     * Returns the first button of this gui matching a given name.
+     * Returns the first gui element of this gui belonging to the given class
+     * and hawing the given name.
+     * @param class_ the class to search for
      * @param name the button's name
      * @return the button or <code>null</code> if no button matches
      */
-    public AbstractButton getButton(final String name)
+    public <T extends GUIElement> T getFirstElement(final Class<T> class_, final String name)
     {
         for (final GUIElement element : visibleElements)
         {
-            if (element.getName().equals(name))
+            if (class_.isAssignableFrom(element.getClass())
+            && element.getName().equals(name))
             {
-                if (element instanceof AbstractButton)
-                {
-                    return (AbstractButton)element;
-                }
+                return class_.cast(element);
             }
         }
         return null;
@@ -784,7 +745,7 @@ public class Gui
      */
     public void setHideInput(final boolean hideInput)
     {
-        final GUIText textArea = getFirstTextArea();
+        final GUIText textArea = getFirstElement(GUIText.class);
         if (textArea != null)
         {
             textArea.setHideInput(hideInput);

@@ -146,7 +146,7 @@ public class GuiManager
             {
             case MessageTypes.MSG_TYPE_BOOK:
                 dialog = skin.getDialogBook(1);
-                final GUIOneLineLabel title = dialog.getDialogTitle();
+                final GUIOneLineLabel title = dialog.getFirstElementEndingWith(GUIOneLineLabel.class, "_title");
                 if (title != null)
                 {
                     final String[] tmp = message.split("\n", 2);
@@ -196,14 +196,14 @@ public class GuiManager
                 return;
             }
 
-            final AbstractLabel label = dialog.getFirstLabel();
+            final AbstractLabel label = dialog.getFirstElementNotEndingWith(AbstractLabel.class, "_title");
             if (label != null)
             {
                 label.setText(message);
             }
             else
             {
-                final GUILabelLog log = dialog.getFirstLabelLog();
+                final GUILabelLog log = dialog.getFirstElement(GUILabelLog.class);
                 if (log != null)
                 {
                     log.updateText(message);
@@ -343,7 +343,7 @@ public class GuiManager
             final String playerName = settings.getString("player_"+connection.getHostname(), "");
             if (playerName.length() > 0)
             {
-                final GUIText textArea = queryDialog.getFirstTextArea();
+                final GUIText textArea = queryDialog.getFirstElement(GUIText.class);
                 if (textArea != null)
                 {
                     textArea.setText(playerName);
@@ -495,7 +495,7 @@ public class GuiManager
         final String serverName = settings.getString("server", "crossfire.metalforge.net");
         if (serverName.length() > 0)
         {
-            final GUIMetaElementList metaElementList = windowRenderer.getCurrentGui().getMetaElementList();
+            final GUIMetaElementList metaElementList = windowRenderer.getCurrentGui().getFirstElement(GUIMetaElementList.class);
             if (metaElementList != null)
             {
                 metaElementList.setSelectedHostname(serverName);
