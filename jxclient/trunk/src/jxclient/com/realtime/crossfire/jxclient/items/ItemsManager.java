@@ -26,6 +26,8 @@ import com.realtime.crossfire.jxclient.server.CrossfireStatsListener;
 import com.realtime.crossfire.jxclient.server.CrossfireUpdateItemListener;
 import com.realtime.crossfire.jxclient.skills.SkillSet;
 import com.realtime.crossfire.jxclient.stats.Stats;
+import com.realtime.crossfire.jxclient.window.ConnectionStateListener;
+import com.realtime.crossfire.jxclient.window.JXCWindow;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.HashMap;
@@ -189,25 +191,48 @@ public class ItemsManager
     private final EventScheduler fireEventScheduler = new EventScheduler(100, 500, fireEventCallback);
 
     /**
+     * The {@link ConnectionStateListener} for detecting established or dropped
+     * connections.
+     */
+    private final ConnectionStateListener connectionStateListener = new ConnectionStateListener()
+    {
+        /** {@inheritDoc} */
+        @Override
+        public void connect()
+        {
+            reset();
+        }
+
+        /** {@inheritDoc} */
+        @Override
+        public void disconnect()
+        {
+            reset();
+        }
+    };
+
+    /**
      * Creates a new instance.
      * @param crossfireServerConnection the connection to monitor
      * @param faceCache the instance for looking up faces
      * @param stats the instance to update
      * @param skillSet the skill set instance to update
+     * @param window the window to attach to
      */
-    public ItemsManager(final CrossfireServerConnection crossfireServerConnection, final FaceCache faceCache, final Stats stats, final SkillSet skillSet)
+    public ItemsManager(final CrossfireServerConnection crossfireServerConnection, final FaceCache faceCache, final Stats stats, final SkillSet skillSet, final JXCWindow window)
     {
         this.faceCache = faceCache;
         this.stats = stats;
         this.skillSet = skillSet;
         crossfireServerConnection.addCrossfireUpdateItemListener(crossfireUpdateItemListener);
+        window.addConnectionStateListener(connectionStateListener);
         fireEventScheduler.start();
     }
 
     /**
-     * Reset the manager's state.
+     * Resets the manager's state.
      */
-    public void reset()
+    private void reset()
     {
         synchronized (sync)
         {
