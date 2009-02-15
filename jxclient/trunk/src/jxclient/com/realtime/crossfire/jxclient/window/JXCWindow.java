@@ -646,7 +646,7 @@ public class JXCWindow extends JFrame
         skin.attach(guiManager);
         guiManager.setSkin(skin);
         optionManager.loadOptions();
-        keyHandler.setKeyBindings(guiManager.getSkin().getDefaultKeyBindings());
+        keyHandler.setKeyBindings(skin.getDefaultKeyBindings());
         return true;
     }
 
