@@ -23,7 +23,6 @@ import com.realtime.crossfire.jxclient.gui.ActivatableGUIElement;
 import com.realtime.crossfire.jxclient.gui.TooltipManager;
 import com.realtime.crossfire.jxclient.settings.CommandHistory;
 import com.realtime.crossfire.jxclient.window.GuiManager;
-import com.realtime.crossfire.jxclient.window.JXCWindow;
 import com.realtime.crossfire.jxclient.window.JXCWindowRenderer;
 import java.awt.Color;
 import java.awt.Font;
@@ -373,7 +372,7 @@ public abstract class GUIText extends ActivatableGUIElement implements KeyListen
         case '\n':
             final String command = text.toString();
             guiManager.updatePlayerName(command);
-            execute((JXCWindow)e.getSource(), command);
+            execute(command);
             if (!hideInput)
             {
                 commandHistory.addCommand(command);
@@ -434,11 +433,9 @@ public abstract class GUIText extends ActivatableGUIElement implements KeyListen
     /**
      * Will be called to execute the entered command.
      *
-     * @param window The JXCWindow instance.
-     *
      * @param command The entered command.
      */
-    protected abstract void execute(final JXCWindow window, final String command);
+    protected abstract void execute(final String command);
 
     /**
      * Enable or disable hidden text.

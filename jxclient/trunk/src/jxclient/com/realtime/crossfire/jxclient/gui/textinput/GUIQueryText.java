@@ -39,9 +39,15 @@ public class GUIQueryText extends GUIText
      */
     private static final long serialVersionUID = 1;
 
-    public GUIQueryText(final GuiManager guiManager, final TooltipManager tooltipManager, final JXCWindowRenderer windowRenderer, final String name, final int x, final int y, final int w, final int h, final BufferedImage activeImage, final BufferedImage inactiveImage, final Font font, final Color inactiveColor, final Color activeColor, final int margin, final String text, final boolean ignoreUpDown)
+    /**
+     * The {@link JXCWindow} to send the reply to.
+     */
+    private final JXCWindow window;
+
+    public GUIQueryText(final JXCWindow window, final GuiManager guiManager, final TooltipManager tooltipManager, final JXCWindowRenderer windowRenderer, final String name, final int x, final int y, final int w, final int h, final BufferedImage activeImage, final BufferedImage inactiveImage, final Font font, final Color inactiveColor, final Color activeColor, final int margin, final String text, final boolean ignoreUpDown)
     {
         super(guiManager, tooltipManager, windowRenderer, name, x, y, w, h, activeImage, inactiveImage, font, inactiveColor, activeColor, margin, text, ignoreUpDown);
+        this.window = window;
     }
 
     /** {@inheritDoc} */
@@ -53,7 +59,7 @@ public class GUIQueryText extends GUIText
 
     /** {@inheritDoc} */
     @Override
-    protected void execute(final JXCWindow window, final String command)
+    protected void execute(final String command)
     {
         window.sendReply(command);
         setText("");

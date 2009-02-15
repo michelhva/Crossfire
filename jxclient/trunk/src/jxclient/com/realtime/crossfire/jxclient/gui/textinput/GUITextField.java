@@ -22,7 +22,6 @@ package com.realtime.crossfire.jxclient.gui.textinput;
 import com.realtime.crossfire.jxclient.gui.TooltipManager;
 import com.realtime.crossfire.jxclient.window.GUICommandList;
 import com.realtime.crossfire.jxclient.window.GuiManager;
-import com.realtime.crossfire.jxclient.window.JXCWindow;
 import com.realtime.crossfire.jxclient.window.JXCWindowRenderer;
 import java.awt.Color;
 import java.awt.Font;
@@ -59,7 +58,7 @@ public class GUITextField extends GUIText
 
     /** {@inheritDoc} */
     @Override
-    protected void execute(final JXCWindow window, final String command)
+    protected void execute(final String command)
     {
         commandList.execute();
     }
