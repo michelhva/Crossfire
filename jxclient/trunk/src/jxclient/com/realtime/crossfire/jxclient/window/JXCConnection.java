@@ -215,7 +215,6 @@ public class JXCConnection
      */
     private void disconnect()
     {
-        server.removeCrossfireDrawextinfoListener(guiManager.crossfireDrawextinfoListener);
         server.disconnect();
         setHost(null);
     }
@@ -225,7 +224,6 @@ public class JXCConnection
      */
     private void connect()
     {
-        server.addCrossfireDrawextinfoListener(guiManager.crossfireDrawextinfoListener);
         final JXCSkin skin = guiManager.getSkin();
         server.setMapSize(skin.getMapWidth(), skin.getMapHeight());
         server.setNumLookObjects(skin.getNumLookObjects());
