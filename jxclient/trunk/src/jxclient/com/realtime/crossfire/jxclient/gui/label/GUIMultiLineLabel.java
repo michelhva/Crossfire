@@ -17,26 +17,40 @@
 //
 // JXClient is (C)2005 by Yann Chachkoff.
 //
-package com.realtime.crossfire.jxclient.gui;
+package com.realtime.crossfire.jxclient.gui.label;
 
+import com.realtime.crossfire.jxclient.gui.TooltipManager;
 import com.realtime.crossfire.jxclient.window.JXCWindowRenderer;
 import java.awt.Color;
 import java.awt.Font;
 import java.awt.Graphics;
 import java.awt.Graphics2D;
+import java.awt.geom.Rectangle2D;
 import java.awt.image.BufferedImage;
+import java.util.regex.Pattern;
 
 /**
- * A {@link AbstractLabel} that renders the text as a plain string.
+ * A {@link AbstractLabel} that renders the text as a list of plain strings.
+ * The lines are separated by newline characters.
  *
  * @author Andreas Kirschbaum
  */
-public class GUIOneLineLabel extends GUILabel
+public class GUIMultiLineLabel extends GUILabel
 {
     /**
      * The serial version UID.
      */
     private static final long serialVersionUID = 1;
+
+    /**
+     * The pattern to split the text into lines.
+     */
+    private static final Pattern lineSeparatorPattern = Pattern.compile(" *\n");
+
+    /**
+     * The text lines to draw.
+     */
+    private String[] lines = new String[0];
 
     /**
      * Create a new instance.
@@ -68,7 +82,7 @@ public class GUIOneLineLabel extends GUILabel
      *
      * @param text The label text.
      */
-    public GUIOneLineLabel(final TooltipManager tooltipManager, final JXCWindowRenderer windowRenderer, final String name, final int x, final int y, final int w, final int h, final BufferedImage picture, final Font font, final Color color, final Color backgroundColor, final Alignment alignment, final String text)
+    public GUIMultiLineLabel(final TooltipManager tooltipManager, final JXCWindowRenderer windowRenderer, final String name, final int x, final int y, final int w, final int h, final BufferedImage picture, final Font font, final Color color, final Color backgroundColor, final Alignment alignment, final String text)
     {
         super(tooltipManager, windowRenderer, name, x, y, w, h, picture, font, color, backgroundColor, alignment);
         setText(text);
@@ -83,10 +97,37 @@ public class GUIOneLineLabel extends GUILabel
 
     /** {@inheritDoc} */
     @Override
+    protected void textChanged()
+    {
+        lines = lineSeparatorPattern.split(getText(), -1);
+        super.textChanged();
+    }
+
+    /** {@inheritDoc} */
+    @Override
     protected void render(final Graphics g)
     {
         super.render(g);
+
+        if (lines == null)
+        {
+            return;
+        }
+
+        final Font font = getTextFont();
+        if (font == null)
+        {
+            return;
+        }
+
         final Graphics2D g2 = (Graphics2D)g;
-        drawLine(g2, 0, getHeight(), getText());
+        final Rectangle2D rect = font.getStringBounds("X", g2.getFontRenderContext());
+        final int lineHeight = (int)Math.round(rect.getMaxY()-rect.getMinY()+0.5);
+
+        int y = 0;
+        for (final String line : lines)
+        {
+            y += drawLine(g2, y, lineHeight, line);
+        }
     }
 }
