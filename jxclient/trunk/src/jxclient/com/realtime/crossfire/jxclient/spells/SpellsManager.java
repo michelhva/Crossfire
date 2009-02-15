@@ -21,6 +21,8 @@ package com.realtime.crossfire.jxclient.spells;
 
 import com.realtime.crossfire.jxclient.server.CrossfireServerConnection;
 import com.realtime.crossfire.jxclient.server.CrossfireSpellListener;
+import com.realtime.crossfire.jxclient.window.ConnectionStateListener;
+import com.realtime.crossfire.jxclient.window.JXCWindow;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Comparator;
@@ -87,18 +89,36 @@ public class SpellsManager
     };
 
     /**
+     * The {@link ConnectionStateListener} for detecting established or dropped
+     * connections.
+     */
+    private final ConnectionStateListener connectionStateListener = new ConnectionStateListener()
+    {
+        /** {@inheritDoc} */
+        @Override
+        public void connect()
+        {
+            spells.clear();
+        }
+
+        /** {@inheritDoc} */
+        @Override
+        public void disconnect()
+        {
+            // ignore
+        }
+    };
+
+    /**
      * Create a new instance.
      * @param crossfireServerConnection the connection to listen on
+     * @param window the window to attach to
      */
-    public SpellsManager(final CrossfireServerConnection crossfireServerConnection)
+    public SpellsManager(final CrossfireServerConnection crossfireServerConnection, final JXCWindow window)
     {
         initSpells();
         crossfireServerConnection.addCrossfireSpellListener(crossfireSpellListener);
-    }
-
-    public void reset()
-    {
-        spells.clear();
+        window.addConnectionStateListener(connectionStateListener);
     }
 
     public void addCrossfireSpellChangedListener(final SpellsManagerListener listener)

@@ -446,7 +446,7 @@ public class JXCWindow extends JFrame
         itemsManager = new ItemsManager(server, faceCache, stats, skillSet);
         facesManager = new FacesManager(server, new FileCache(Filenames.getOriginalImageCacheDir()), new FileCache(Filenames.getScaledImageCacheDir()), new FileCache(Filenames.getMagicMapImageCacheDir()), faceCache);
         mapUpdater = new CfMapUpdater(server, facesManager, faceCache, animations, this);
-        spellsManager = new SpellsManager(server);
+        spellsManager = new SpellsManager(server, this);
         commandQueue = new CommandQueue(server);
         new PoisonWatcher(stats, server);
         new ActiveSkillWatcher(stats, server);
@@ -540,7 +540,6 @@ public class JXCWindow extends JFrame
                 facesManager.reset();
                 commandQueue.clear();
                 itemsManager.reset();
-                spellsManager.reset();
                 for (final ConnectionStateListener listener : connectionStateListeners)
                 {
                     listener.connect();
