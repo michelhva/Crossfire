@@ -24,7 +24,7 @@ package com.realtime.crossfire.jxclient.window;
  *
  * @author Andreas Kirschbaum
  */
-public interface GuiStateListener
+public interface RendererGuiStateListener
 {
     /**
      * The gui state has changed.

@@ -25,9 +25,9 @@ import com.realtime.crossfire.jxclient.items.PlayerListener;
 import com.realtime.crossfire.jxclient.server.CrossfireStatsListener;
 import com.realtime.crossfire.jxclient.stats.Stats;
 import com.realtime.crossfire.jxclient.stats.StatsListener;
-import com.realtime.crossfire.jxclient.window.GuiStateListener;
 import com.realtime.crossfire.jxclient.window.JXCWindowRenderer;
 import com.realtime.crossfire.jxclient.window.RendererGuiState;
+import com.realtime.crossfire.jxclient.window.RendererGuiStateListener;
 
 /**
  * Monitors stat changes and generates appropriate sound effects.
@@ -133,7 +133,7 @@ public class StatsWatcher
     /**
      * The gui state listener.
      */
-    private final GuiStateListener guiStateListener = new GuiStateListener()
+    private final RendererGuiStateListener rendererGuiStateListener = new RendererGuiStateListener()
     {
         /** {@inheritDoc} */
         @Override
@@ -184,8 +184,8 @@ public class StatsWatcher
         poisoned = stats.getStat(CrossfireStatsListener.C_STAT_POISONED) != 0;
         level = stats.getStat(CrossfireStatsListener.CS_STAT_LEVEL);
         stats.addCrossfireStatsListener(statsListener);
-        windowRenderer.addGuiStateListener(guiStateListener);
-        guiStateListener.guiStateChanged(windowRenderer.getGuiState());
+        windowRenderer.addGuiStateListener(rendererGuiStateListener);
+        rendererGuiStateListener.guiStateChanged(windowRenderer.getGuiState());
         itemsManager.addCrossfirePlayerListener(playerListener);
     }
 
