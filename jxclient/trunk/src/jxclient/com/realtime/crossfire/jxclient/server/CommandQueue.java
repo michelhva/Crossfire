@@ -19,6 +19,8 @@
 //
 package com.realtime.crossfire.jxclient.server;
 
+import com.realtime.crossfire.jxclient.window.ConnectionStateListener;
+import com.realtime.crossfire.jxclient.window.JXCWindow;
 import java.util.LinkedList;
 import java.util.List;
 
@@ -89,15 +91,37 @@ public class CommandQueue
     };
 
     /**
+     * The {@link ConnectionStateListener} for detecting established or dropped
+     * connections.
+     */
+    private final ConnectionStateListener connectionStateListener = new ConnectionStateListener()
+    {
+        /** {@inheritDoc} */
+        @Override
+        public void connect()
+        {
+            clear();
+        }
+
+        /** {@inheritDoc} */
+        @Override
+        public void disconnect()
+        {
+            // ignore
+        }
+    };
+
+    /**
      * Create a new instance.
-     *
      * @param crossfireServerConnection The server connection for sending
      * ncom commands.
+     * @param window the window to attach to
      */
-    public CommandQueue(final CrossfireServerConnection crossfireServerConnection)
+    public CommandQueue(final CrossfireServerConnection crossfireServerConnection, final JXCWindow window)
     {
         this.crossfireServerConnection = crossfireServerConnection;
         crossfireServerConnection.addCrossfireComcListener(crossfireComcListener);
+        window.addConnectionStateListener(connectionStateListener);
     }
 
     /**
@@ -134,7 +158,7 @@ public class CommandQueue
     /**
      * Forget about sent commands.
      */
-    public void clear()
+    private void clear()
     {
         resetRepeatCount();
         synchronized (pendingCommands)
