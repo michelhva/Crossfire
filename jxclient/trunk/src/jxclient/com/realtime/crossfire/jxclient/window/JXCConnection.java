@@ -1,11 +1,11 @@
 package com.realtime.crossfire.jxclient.window;
 
 import com.realtime.crossfire.jxclient.server.ConnectionListener;
-import com.realtime.crossfire.jxclient.server.CrossfireDrawextinfoListener;
 import com.realtime.crossfire.jxclient.server.CrossfireQueryListener;
 import com.realtime.crossfire.jxclient.server.CrossfireServerConnection;
 import com.realtime.crossfire.jxclient.server.Pickup;
 import com.realtime.crossfire.jxclient.settings.Settings;
+import com.realtime.crossfire.jxclient.skin.JXCSkin;
 import com.realtime.crossfire.jxclient.util.NumberParser;
 import java.awt.Frame;
 
@@ -43,16 +43,19 @@ public class JXCConnection
     private final CrossfireServerConnection server;
 
     /**
-     * The {@link CrossfireQueryListener} attached to {@link #server}. Set to
-     * <code>null</code> when unset.
+     * The {@link ConnectionListener} to use when connecting.
      */
-    private CrossfireQueryListener crossfireQueryListener = null;
+    private final ConnectionListener connectionListener;
 
     /**
-     * The {@link CrossfireDrawextinfoListener} attached to {@link #server}.
-     * Set to <code>null</code> when unset.
+     * The {@link CrossfireQueryListener} to use when connecting.
      */
-    private CrossfireDrawextinfoListener crossfireDrawextinfoListener = null;
+    private final CrossfireQueryListener crossfireQueryListener;
+
+    /**
+     * The {@link GuiManager} to use when connecting.
+     */
+    private final GuiManager guiManager;
 
     /**
      * The currently connected server. Set to <code>null</code> if unconnected.
@@ -71,21 +74,49 @@ public class JXCConnection
     private String character = null;
 
     /**
+     * The {@link ConnectionStateListener} for detecting established or dropped
+     * connections.
+     */
+    private final ConnectionStateListener connectionStateListener = new ConnectionStateListener()
+    {
+        /** {@inheritDoc} */
+        @Override
+        public void connect()
+        {
+            JXCConnection.this.connect();
+        }
+
+        /** {@inheritDoc} */
+        @Override
+        public void disconnect()
+        {
+            JXCConnection.this.disconnect();
+        }
+    };
+
+    /**
      * Creates a new instance.
      * @param keybindingsManager the keybindings manager to update
      * @param settings the settings instance to use
-     * @param frame the frame instance for updating the title
+     * @param window the frame instance for updating the title
      * @param characterPickup the character pickup instance to update
      * @param server the crossfire server connection instance used to connect
-     * to the Crossfire server
+     * @param connectionListener the connection listener to use when connecting
+     * @param crossfireQueryListener the crossfire query listener to use when
+     * connecting
+     * @param guiManager the gui manager to use when connecting
      */
-    public JXCConnection(final KeybindingsManager keybindingsManager, final Settings settings, final Frame frame, final Pickup characterPickup, final CrossfireServerConnection server)
+    public JXCConnection(final KeybindingsManager keybindingsManager, final Settings settings, final JXCWindow window, final Pickup characterPickup, final CrossfireServerConnection server, final ConnectionListener connectionListener, final CrossfireQueryListener crossfireQueryListener, final GuiManager guiManager)
     {
         this.keybindingsManager = keybindingsManager;
         this.settings = settings;
-        this.frame = frame;
+        frame = window;
         this.characterPickup = characterPickup;
         this.server = server;
+        this.connectionListener = connectionListener;
+        this.crossfireQueryListener = crossfireQueryListener;
+        this.guiManager = guiManager;
+        window.addConnectionStateListener(connectionStateListener);
         updateTitle();
     }
 
@@ -191,44 +222,24 @@ public class JXCConnection
     /**
      * Disconnects from the Crossfire server.
      */
-    public void disconnect()
+    private void disconnect()
     {
-        if (crossfireDrawextinfoListener != null)
-        {
-            server.removeCrossfireDrawextinfoListener(crossfireDrawextinfoListener);
-        }
-        if (crossfireQueryListener != null)
-        {
-            server.removeCrossfireQueryListener(crossfireQueryListener);
-        }
+        server.removeCrossfireDrawextinfoListener(guiManager.crossfireDrawextinfoListener);
+        server.removeCrossfireQueryListener(crossfireQueryListener);
         server.disconnect();
         setHost(null);
     }
 
     /**
      * Connect to the Crossfire server.
-     * @param connectionListener the connection listener to attach
-     * @param crossfireQueryListener the crossfire query listener to attach
-     * @param crossfireDrawextinfoListener the crossfire drawinfo listener to
-     * @param mapWidth the map width to request from the Crossfire server
-     * @param mapHeight the map height to request from the Crossfire server
-     * @param numLookObjects the number of ground view objects to request from
-     * the Crossfire server
      */
-    public void connect(final ConnectionListener connectionListener, final CrossfireQueryListener crossfireQueryListener, final CrossfireDrawextinfoListener crossfireDrawextinfoListener, final int mapWidth, final int mapHeight, final int numLookObjects)
+    private void connect()
     {
-        this.crossfireQueryListener = crossfireQueryListener;
-        this.crossfireDrawextinfoListener = crossfireDrawextinfoListener;
-        if (crossfireQueryListener != null)
-        {
-            server.addCrossfireQueryListener(crossfireQueryListener);
-        }
-        if (crossfireDrawextinfoListener != null)
-        {
-            server.addCrossfireDrawextinfoListener(crossfireDrawextinfoListener);
-        }
-        server.setMapSize(mapWidth, mapHeight);
-        server.setNumLookObjects(numLookObjects);
+        server.addCrossfireQueryListener(crossfireQueryListener);
+        server.addCrossfireDrawextinfoListener(guiManager.crossfireDrawextinfoListener);
+        final JXCSkin skin = guiManager.getSkin();
+        server.setMapSize(skin.getMapWidth(), skin.getMapHeight());
+        server.setNumLookObjects(skin.getNumLookObjects());
         server.connect(hostname, port, connectionListener);
     }
 }
