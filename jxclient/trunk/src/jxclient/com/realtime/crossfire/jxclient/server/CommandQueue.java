@@ -221,6 +221,15 @@ public class CommandQueue
     }
 
     /**
+     * Returns whether the character is firing.
+     * @return whether the character is firing
+     */
+    public boolean checkFire()
+    {
+        return false; // XXX: implement
+    }
+
+    /**
      * Sends a "move" command to the server. The repeat count value is the
      * client's current repeat count.
      * @param to the destination location
