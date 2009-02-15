@@ -548,11 +548,6 @@ public class JXCWindow extends JFrame
 
             guiManager.closeTransientDialogs();
 
-            if (this.guiState == GuiState.MAIN)
-            {
-                itemsManager.removeCrossfirePlayerListener(playerListener);
-            }
-
             this.guiState = guiState;
 
             switch (guiState)
@@ -560,6 +555,7 @@ public class JXCWindow extends JFrame
             case START:
                 soundManager.muteMusic(true);
                 soundManager.mute(Sounds.CHARACTER, true);
+                itemsManager.removeCrossfirePlayerListener(playerListener);
                 for (final GuiStateListener listener : guiStateListeners)
                 {
                     listener.start();
@@ -571,22 +567,23 @@ public class JXCWindow extends JFrame
                 break;
 
             case METASERVER:
+                soundManager.muteMusic(true);
+                soundManager.mute(Sounds.CHARACTER, true);
+                itemsManager.removeCrossfirePlayerListener(playerListener);
                 for (final GuiStateListener listener : guiStateListeners)
                 {
                     listener.metaserver();
                 }
-                soundManager.muteMusic(true);
-                soundManager.mute(Sounds.CHARACTER, true);
                 break;
 
             case MAIN:
+                soundManager.muteMusic(false);
                 soundManager.mute(Sounds.CHARACTER, false);
                 itemsManager.addCrossfirePlayerListener(playerListener);
                 for (final GuiStateListener listener : guiStateListeners)
                 {
                     listener.main();
                 }
-                soundManager.muteMusic(false);
                 break;
             }
         }
