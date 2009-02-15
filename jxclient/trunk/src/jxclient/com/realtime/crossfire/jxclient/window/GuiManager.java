@@ -229,6 +229,8 @@ public class GuiManager
         public void start()
         {
             server.removeCrossfireDrawextinfoListener(crossfireDrawextinfoListener);
+            setGuiState(RendererGuiState.START);
+            showGUIStart();
         }
 
         /** {@inheritDoc} */
@@ -236,6 +238,9 @@ public class GuiManager
         public void metaserver()
         {
             server.removeCrossfireDrawextinfoListener(crossfireDrawextinfoListener);
+            setGuiState(RendererGuiState.META);
+            showGUIMeta();
+            activateMetaserverGui();
         }
 
         /** {@inheritDoc} */
@@ -243,6 +248,8 @@ public class GuiManager
         public void main()
         {
             server.addCrossfireDrawextinfoListener(crossfireDrawextinfoListener);
+            setGuiState(RendererGuiState.LOGIN);
+            showGUIMain();
         }
     };
 
@@ -517,7 +524,7 @@ public class GuiManager
      * Updates the current gui state.
      * @param rendererGuiState the new gui state
      */
-    public void setGuiState(final RendererGuiState rendererGuiState)
+    private void setGuiState(final RendererGuiState rendererGuiState)
     {
         windowRenderer.setGuiState(rendererGuiState);
     }
@@ -526,7 +533,7 @@ public class GuiManager
      * Called when the server selection GUI becomes active. Selects the last
      * used server entry.
      */
-    public void activateMetaserverGui()
+    private void activateMetaserverGui()
     {
         final String serverName = settings.getString("server", "crossfire.metalforge.net");
         if (serverName.length() > 0)
@@ -739,7 +746,7 @@ public class GuiManager
     /**
      * Displays the "start" GUI.
      */
-    public void showGUIStart()
+    private void showGUIStart()
     {
         windowRenderer.clearGUI(guiFactory.newGui());
         windowRenderer.setCurrentGui(skin.getStartInterface());
@@ -749,7 +756,7 @@ public class GuiManager
     /**
      * Displays the "server selection" GUI.
      */
-    public void showGUIMeta()
+    private void showGUIMeta()
     {
         windowRenderer.clearGUI(guiFactory.newGui());
         final Gui newGui = skin.getMetaInterface();
@@ -761,7 +768,7 @@ public class GuiManager
     /**
      * Displays the "main" GUI.
      */
-    public void showGUIMain()
+    private void showGUIMain()
     {
         windowRenderer.clearGUI(guiFactory.newGui());
         final Gui newGui = skin.getMainInterface();
