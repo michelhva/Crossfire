@@ -135,63 +135,71 @@ public class ClientSocket extends Thread
             socket = new Socket(host, port);
             try
             {
-                final InputStream inputStream = socket.getInputStream();
-                synchronized (tmp)
+                try
                 {
-                    outputStream = socket.getOutputStream();
-                }
-                packetListener.connected();
-                final byte[] buf = new byte[2+0xFFFF];
-                int pos = 0;
+                    socket.setTcpNoDelay(true);
+                    final InputStream inputStream = socket.getInputStream();
+                    synchronized (tmp)
+                    {
+                        outputStream = socket.getOutputStream();
+                    }
+                    packetListener.connected();
+                    final byte[] buf = new byte[2+0xFFFF];
+                    int pos = 0;
 LOOP:
-                for (;;)
-                {
-                    if (isInterrupted())
-                    {
-                        throw new IOException("thread has been interrupted");
-                    }
-
-                    while (pos < 2)
-                    {
-                        final int len = inputStream.read(buf, pos, buf.length-pos);
-                        if (len <= 0)
-                        {
-                            break LOOP;
-                        }
-
-                        pos += len;
-                    }
-                    final int packetLen = 2+(buf[0]&0xFF)*0x100+(buf[1]&0xFF);
-                    while (pos < packetLen)
-                    {
-                        final int len = inputStream.read(buf, pos, buf.length-pos);
-                        if (len <= 0)
-                        {
-                            break LOOP;
-                        }
-
-                        pos += len;
-                    }
-
-                    int thisStart = 0;
-                    int thisLen = packetLen-2;
                     for (;;)
                     {
-                        packetListener.processPacket(buf, thisStart+2, thisStart+2+thisLen);
-                        thisStart += 2+thisLen;
-                        if (thisStart+2 > pos)
+                        if (isInterrupted())
                         {
-                            break;
+                            throw new IOException("thread has been interrupted");
                         }
-                        thisLen = (buf[thisStart]&0xFF)*0x100+(buf[thisStart+1]&0xFF);
-                        if (thisStart+2+thisLen > pos)
-                        {
-                            break;
-                        }
-                    }
 
-                    System.arraycopy(buf, thisStart, buf, 0, pos-thisStart);
-                    pos -= thisStart;
+                        while (pos < 2)
+                        {
+                            final int len = inputStream.read(buf, pos, buf.length-pos);
+                            if (len <= 0)
+                            {
+                                break LOOP;
+                            }
+
+                            pos += len;
+                        }
+                        final int packetLen = 2+(buf[0]&0xFF)*0x100+(buf[1]&0xFF);
+                        while (pos < packetLen)
+                        {
+                            final int len = inputStream.read(buf, pos, buf.length-pos);
+                            if (len <= 0)
+                            {
+                                break LOOP;
+                            }
+
+                            pos += len;
+                        }
+
+                        int thisStart = 0;
+                        int thisLen = packetLen-2;
+                        for (;;)
+                        {
+                            packetListener.processPacket(buf, thisStart+2, thisStart+2+thisLen);
+                            thisStart += 2+thisLen;
+                            if (thisStart+2 > pos)
+                            {
+                                break;
+                            }
+                            thisLen = (buf[thisStart]&0xFF)*0x100+(buf[thisStart+1]&0xFF);
+                            if (thisStart+2+thisLen > pos)
+                            {
+                                break;
+                            }
+                        }
+
+                        System.arraycopy(buf, thisStart, buf, 0, pos-thisStart);
+                        pos -= thisStart;
+                    }
+                }
+                finally
+                {
+                    socket.shutdownOutput();
                 }
             }
             finally
