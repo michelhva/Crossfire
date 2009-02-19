@@ -7,7 +7,7 @@ enter_x 12
 enter_y 7
 msg
 Created:  2004-10-19 majorwoo josh@woosworld.net
-Modified: 2008-10-22 Rick Tanner
+Modified: 2009-02-18 Rick Tanner
 endmsg
 end
 arch dirtfloor
@@ -2760,7 +2760,7 @@ arch check_floor
 slaying pshop25
 x 18
 y 3
-connected 1
+connected 2
 move_off walk
 end
 arch dirtfloor
@@ -2771,7 +2771,7 @@ end
 arch pedestal
 x 18
 y 4
-connected 1
+connected 2
 end
 arch check_floor
 slaying pshop25
@@ -2787,7 +2787,7 @@ end
 arch ggate_closed
 x 18
 y 4
-connected 1
+connected 2
 end
 arch dungeon_magic
 x 18
@@ -2797,7 +2797,7 @@ arch check_floor
 slaying pshop25
 x 18
 y 5
-connected 1
+connected 2
 move_off walk
 end
 arch dirtfloor
