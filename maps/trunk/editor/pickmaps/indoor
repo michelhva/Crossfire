@@ -5,6 +5,7 @@ width 7
 height 20
 msg
 Created:  2002-08-28
+Modified: 2009-02-20 Arvid Norlander
 endmsg
 end
 arch pentagram
@@ -256,6 +257,10 @@ arch altar_ruggilli
 x 4
 y 16
 end
+arch altar_ixalovh
+x 4
+y 17
+end
 arch pillars
 x 5
 end
@@ -360,4 +365,10 @@ end
 arch altar_valriel
 x 6
 y 16
+end
+arch altar_valkyrie
+x 6
+y 17
+arch altar_valkyrie_pray_event
+end
 end
