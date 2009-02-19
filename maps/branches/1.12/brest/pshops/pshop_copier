@@ -24,16 +24,16 @@ for FILE in pshop*; do
         #go there
         cd $FILE
 
+        #get the pshopnum
+        PSHOPNUM=$(cut -d p -f3 <<< "$FILE")
+
         #for each file in the pshop directory
         for MYFILE in *; do
             #correct the key values on inventory checkers
-            sed "s/pshop1/${FILE}/" "$MYFILE" > "${MYFILE}_2"
+            sed "s/pshop1/${FILE}/;s/^name Private Shop 1,/name Private Shop ${PSHOPNUM},/" "$MYFILE" > "${MYFILE}_2"
             rm -f $MYFILE
             mv "${MYFILE}_2" $MYFILE
         done
-
-        #get the pshopnum
-        PSHOPNUM=$(cut -d p -f3 <<< "$FILE")
 
         #calculate HP and SP based on pshopnum
         if [[ $PSHOPNUM -lt 14 ]]; then
@@ -77,7 +77,7 @@ for FILE in pshop*; do
                         ;;
                     esac
                     if [[ ( $hadhp == 1 ) && ( $hadsp == 1 ) ]]; then
-                        state=1
+                        state=0
                     fi
                 ;;
             esac
