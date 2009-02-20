@@ -27,6 +27,7 @@ import com.realtime.crossfire.jxclient.gui.gui.TooltipManager;
 import com.realtime.crossfire.jxclient.server.CommandQueue;
 import com.realtime.crossfire.jxclient.spells.CurrentSpellManager;
 import com.realtime.crossfire.jxclient.spells.Spell;
+import com.realtime.crossfire.jxclient.spells.SpellListener;
 import com.realtime.crossfire.jxclient.spells.SpellsManager;
 import com.realtime.crossfire.jxclient.spells.SpellsManagerListener;
 import com.realtime.crossfire.jxclient.window.JXCWindowRenderer;
@@ -112,15 +113,18 @@ public class GUIItemSpelllist extends GUIItem
                 setSpell();
             }
         }
+    };
 
+    /**
+     * The {@link SpellListener} attached to {@link #spell}.
+     */
+    private final SpellListener spellListener = new SpellListener()
+    {
         /** {@inheritDoc} */
         @Override
-        public void spellModified(final Spell spell, final int index)
+        public void spellChanged()
         {
-            if (GUIItemSpelllist.this.index == index)
-            {
-                setSpell();
-            }
+            setSpell();
         }
     };
 
@@ -164,6 +168,10 @@ public class GUIItemSpelllist extends GUIItem
         super.dispose();
         spellsManager.removeCrossfireSpellChangedListener(spellsManagerListener);
         facesManager.removeFacesManagerListener(facesManagerListener);
+        if (spell != null)
+        {
+            spell.removeSpellListener(spellListener);
+        }
     }
 
     /** {@inheritDoc} */
@@ -260,7 +268,18 @@ public class GUIItemSpelllist extends GUIItem
             return;
         }
 
+        if (spell != null)
+        {
+            spell.removeSpellListener(spellListener);
+        }
+
         spell = newSpell;
+
+        if (spell != null)
+        {
+            spell.addSpellListener(spellListener);
+        }
+
         setChanged();
 
         setTooltipText(newSpell == null ? null : newSpell.getTooltipText());
