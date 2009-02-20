@@ -56,7 +56,11 @@ public class GUIItemShortcut extends GUIItem
      */
     private final FacesManager facesManager;
 
+    private final Color cursedColor;
+
     private final BufferedImage cursedImage;
+
+    private final Color appliedColor;
 
     private final BufferedImage appliedImage;
 
@@ -65,6 +69,16 @@ public class GUIItemShortcut extends GUIItem
     private final int index;
 
     private final CurrentSpellManager currentSpellManager;
+
+    /**
+     * The item's width in pixel.
+     */
+    private final int w;
+
+    /**
+     * The item's height in pixel.
+     */
+    private final int h;
 
     /**
      * The currently monitored {@link Shortcut} instance. Set to
@@ -105,17 +119,21 @@ public class GUIItemShortcut extends GUIItem
         }
     };
 
-    public GUIItemShortcut(final TooltipManager tooltipManager, final JXCWindowRenderer windowRenderer, final String name, final int x, final int y, final int w, final int h, final BufferedImage cursedImage, final BufferedImage appliedImage, final int index, final FacesManager facesManager, final Shortcuts shortcuts, final Font font, final CurrentSpellManager currentSpellManager)
+    public GUIItemShortcut(final TooltipManager tooltipManager, final JXCWindowRenderer windowRenderer, final String name, final int x, final int y, final int w, final int h, final Color cursedColor, final BufferedImage cursedImage, final Color appliedColor, final BufferedImage appliedImage, final int index, final FacesManager facesManager, final Shortcuts shortcuts, final Font font, final CurrentSpellManager currentSpellManager)
     {
         super(tooltipManager, windowRenderer, name, x, y, w, h);
         this.shortcuts = shortcuts;
         this.facesManager = facesManager;
+        this.cursedColor = cursedColor;
         this.cursedImage = cursedImage;
+        this.appliedColor = appliedColor;
         this.appliedImage = appliedImage;
         this.font = font;
         this.index = index;
         this.currentSpellManager = currentSpellManager;
         this.shortcuts.addShortcutsListener(shortcutsListener);
+        this.w = w;
+        this.h = h;
     }
 
     /** {@inheritDoc} */
@@ -207,8 +225,18 @@ public class GUIItemShortcut extends GUIItem
         if (shortcut instanceof ShortcutSpell)
         {
             final ShortcutSpell shortcutSpell = (ShortcutSpell)shortcut;
+            final Color color = shortcutSpell.isCast() ? cursedColor : appliedColor;
+            if (color != null)
+            {
+                g.setColor(color);
+                g.fillRect(0, 0, w, h);
+            }
             g.drawImage(facesManager.getOriginalImageIcon(shortcutSpell.getSpell().getFaceNum()).getImage(), 0, 0, null);
-            g.drawImage(shortcutSpell.isCast() ? cursedImage : appliedImage, 0, 0, null);
+            final BufferedImage image = shortcutSpell.isCast() ? cursedImage : appliedImage;
+            if (image != null)
+            {
+                g.drawImage(image, 0, 0, null);
+            }
         }
         else if (shortcut instanceof ShortcutCommand)
         {

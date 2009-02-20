@@ -68,9 +68,21 @@ public class GUIItemSpelllist extends GUIItem
      */
     private final SpellsManager spellsManager;
 
+    private final Color selectorColor;
+
     private final BufferedImage selectorImage;
 
     private final CurrentSpellManager currentSpellManager;
+
+    /**
+     * The spelllist's width in pixel.
+     */
+    private final int w;
+
+    /**
+     * The spelllist's height in pixel.
+     */
+    private final int h;
 
     private Spell spell = null;
 
@@ -128,18 +140,21 @@ public class GUIItemSpelllist extends GUIItem
         }
     };
 
-    public GUIItemSpelllist(final TooltipManager tooltipManager, final JXCWindowRenderer windowRenderer, final CommandQueue commandQueue, final String name, final int x, final int y, final int w, final int h, final BufferedImage selectorImage, final int defaultIndex, final FacesManager facesManager, final SpellsManager spellsManager, final CurrentSpellManager currentSpellManager)
+    public GUIItemSpelllist(final TooltipManager tooltipManager, final JXCWindowRenderer windowRenderer, final CommandQueue commandQueue, final String name, final int x, final int y, final int w, final int h, final Color selectorColor, final BufferedImage selectorImage, final int defaultIndex, final FacesManager facesManager, final SpellsManager spellsManager, final CurrentSpellManager currentSpellManager)
     {
         super(tooltipManager, windowRenderer, name, x, y, w, h);
         this.commandQueue = commandQueue;
         this.facesManager = facesManager;
         this.defaultIndex = defaultIndex;
         this.spellsManager = spellsManager;
+        this.selectorColor = selectorColor;
         this.selectorImage = selectorImage;
         this.currentSpellManager = currentSpellManager;
         setIndex(defaultIndex);
         this.spellsManager.addCrossfireSpellChangedListener(spellsManagerListener);
         this.facesManager.addFacesManagerListener(facesManagerListener);
+        this.w = w;
+        this.h = h;
     }
 
     /** {@inheritDoc} */
@@ -223,8 +238,13 @@ public class GUIItemSpelllist extends GUIItem
             return;
         }
 
+        if (isActive() && selectorColor != null)
+        {
+            g.setColor(selectorColor);
+            g.fillRect(0, 0, w, h);
+        }
         g.drawImage(facesManager.getOriginalImageIcon(spell.getFaceNum()).getImage(), 0, 0, null);
-        if (isActive())
+        if (isActive() && selectorImage != null)
         {
             g.drawImage(selectorImage, 0, 0, null);
         }
