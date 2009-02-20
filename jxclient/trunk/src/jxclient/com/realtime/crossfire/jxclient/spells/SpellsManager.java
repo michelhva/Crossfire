@@ -160,14 +160,8 @@ public class SpellsManager
 
     public void addSpell(final int tag, final int level, final int castingTime, final int mana, final int grace, final int damage, final int skill, final int path, final int faceNum, final String spellName, final String message)
     {
-        final Spell spell = new Spell(faceNum, tag, spellName, message);
-        spell.setLevel(level);
-        spell.setCastingTime(castingTime);
-        spell.setMana(mana);
-        spell.setGrace(grace);
-        spell.setDamage(damage);
-        spell.setSkill(skill);
-        spell.setPath(path);
+        final Spell spell = new Spell(spellName);
+        spell.setParameters(faceNum, tag, message, level, castingTime, mana, grace, damage, skill, path);
         addSpell(spell);
     }
 
@@ -196,21 +190,7 @@ public class SpellsManager
         {
             if (spell.getTag() == tag)
             {
-                if ((flags&CrossfireSpellListener.UPD_SP_MANA) != 0)
-                {
-                    spell.setMana(mana);
-                }
-
-                if ((flags&CrossfireSpellListener.UPD_SP_GRACE) != 0)
-                {
-                    spell.setGrace(grace);
-                }
-
-                if ((flags&CrossfireSpellListener.UPD_SP_DAMAGE) != 0)
-                {
-                    spell.setDamage(damage);
-                }
-
+                spell.updateParameters((flags&CrossfireSpellListener.UPD_SP_MANA) != 0, mana, (flags&CrossfireSpellListener.UPD_SP_GRACE) != 0, grace, (flags&CrossfireSpellListener.UPD_SP_DAMAGE) != 0, damage);
                 for (final SpellsManagerListener listener : listeners)
                 {
                     listener.spellModified(spell, index);

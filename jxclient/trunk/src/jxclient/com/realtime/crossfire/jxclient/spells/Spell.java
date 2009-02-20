@@ -29,7 +29,13 @@ import com.realtime.crossfire.jxclient.util.StringSplitter;
  */
 public class Spell
 {
-    private final int tag;
+    private final String name;
+
+    private int faceNum;
+
+    private int tag;
+
+    private String message;
 
     private int level;
 
@@ -44,12 +50,6 @@ public class Spell
     private int skill;
 
     private int path;
-
-    private final int faceNum;
-
-    private final String name;
-
-    private final String message;
 
     public int getTag()
     {
@@ -141,12 +141,41 @@ public class Spell
         this.path = path;
     }
 
-    public Spell(final int faceNum, final int tag, final String name, final String message)
+    public Spell(final String name)
+    {
+        this.name = name;
+    }
+
+    public void setParameters(final int faceNum, final int tag, final String message, final int level, final int castingTime, final int mana, final int grace, final int damage, final int skill, final int path)
     {
         this.faceNum = faceNum;
         this.tag = tag;
-        this.name = name;
         this.message = message;
+        this.level = level;
+        this.castingTime = castingTime;
+        this.mana = mana;
+        this.grace = grace;
+        this.damage = damage;
+        this.skill = skill;
+        this.path = path;
+    }
+
+    public void updateParameters(final boolean updateMana, final int mana, final boolean updateGrace, final int grace, final boolean updateDamage, final int damage)
+    {
+        if (updateMana)
+        {
+            this.mana = mana;
+        }
+
+        if (updateGrace)
+        {
+            this.grace = grace;
+        }
+
+        if (updateDamage)
+        {
+            this.damage = damage;
+        }
     }
 
     @Override
