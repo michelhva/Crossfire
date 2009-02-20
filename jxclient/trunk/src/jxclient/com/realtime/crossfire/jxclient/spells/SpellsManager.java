@@ -48,19 +48,7 @@ public class SpellsManager
      * A {@link Comparator} to compare {@link Spell} instances by spell path
      * and name.
      */
-    private final Comparator<Spell> spellNameComparator = new Comparator<Spell>()
-    {
-        /** {@inheritDoc} */
-        @Override
-        public int compare(final Spell spell1, final Spell spell2)
-        {
-            final int path1 = spell1.getPath();
-            final int path2 = spell2.getPath();
-            if (path1 < path2) return -1;
-            if (path1 > path2) return +1;
-            return String.CASE_INSENSITIVE_ORDER.compare(spell1.getName(), spell2.getName());
-        }
-    };
+    private final Comparator<Spell> spellNameComparator = new SpellComparator();
 
     /**
      * The listener to receive updates for spell information.
