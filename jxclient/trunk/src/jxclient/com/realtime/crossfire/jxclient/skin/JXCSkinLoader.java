@@ -1414,10 +1414,12 @@ public class JXCSkinLoader
                 throw new IOException("syntax error");
             }
 
-            final BufferedImage cursedImage = imageParser.getImage(args[8]);
-            final BufferedImage appliedImage = imageParser.getImage(args[9]);
+            final Color cursedColor = ParseUtils.parseColorNull(args[8]);
+            final BufferedImage cursedImage = imageParser.getImage(cursedColor, args[8]);
+            final Color appliedColor = ParseUtils.parseColorNull(args[9]);
+            final BufferedImage appliedImage = imageParser.getImage(appliedColor, args[9]);
             final Font font = definedFonts.lookup(args[10]);
-            element = new GUIItemShortcut(tooltipManager, windowRenderer, name, x, y, w, h, cursedImage, appliedImage, index, facesManager, shortcuts, font, currentSpellManager);
+            element = new GUIItemShortcut(tooltipManager, windowRenderer, name, x, y, w, h, cursedColor, cursedImage, appliedColor, appliedImage, index, facesManager, shortcuts, font, currentSpellManager);
         }
         else if (type.equals("spelllist"))
         {
@@ -1426,8 +1428,9 @@ public class JXCSkinLoader
                 throw new IOException("syntax error");
             }
 
-            final BufferedImage selectorImage = imageParser.getImage(args[8]);
-            element = new GUIItemSpelllist(tooltipManager, windowRenderer, commandQueue, name, x, y, w, h, selectorImage, index, facesManager, spellsManager, currentSpellManager);
+            final Color selectorColor = ParseUtils.parseColorNull(args[8]);
+            final BufferedImage selectorImage = imageParser.getImage(selectorColor, args[8]);
+            element = new GUIItemSpelllist(tooltipManager, windowRenderer, commandQueue, name, x, y, w, h, selectorColor, selectorImage, index, facesManager, spellsManager, currentSpellManager);
         }
         else
         {
