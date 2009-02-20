@@ -108,7 +108,7 @@ public class ShortcutSpell extends Shortcut
     @Override
     public void execute()
     {
-        commandQueue.sendNcom(false, command+spell.getInternalName());
+        commandQueue.sendNcom(false, command+spell.getTag());
     }
 
     /** {@inheritDoc} */
