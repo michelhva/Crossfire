@@ -29,8 +29,6 @@ import com.realtime.crossfire.jxclient.util.StringSplitter;
  */
 public class Spell
 {
-    private final String internalName;
-
     private final int tag;
 
     private int level;
@@ -149,12 +147,6 @@ public class Spell
         this.tag = tag;
         this.name = name;
         this.message = message;
-        internalName = Integer.toString(tag);
-    }
-
-    public String getInternalName()
-    {
-        return internalName;
     }
 
     @Override

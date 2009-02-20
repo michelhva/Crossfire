@@ -209,7 +209,7 @@ public class GUIItemSpelllist extends GUIItem
             return;
         }
 
-        commandQueue.sendNcom(false, "cast "+spell.getInternalName());
+        commandQueue.sendNcom(false, "cast "+spell.getTag());
         currentSpellManager.setCurrentSpell(spell);
     }
 
