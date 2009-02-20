@@ -185,7 +185,6 @@ public class SpellsManager
 
     public void updateSpell(final int flags, final int tag, final int mana, final int grace, final int damage)
     {
-        int index = 0;
         for (final Spell spell : spells)
         {
             if (spell.getTag() == tag)
@@ -193,7 +192,6 @@ public class SpellsManager
                 spell.updateParameters((flags&CrossfireSpellListener.UPD_SP_MANA) != 0, mana, (flags&CrossfireSpellListener.UPD_SP_GRACE) != 0, grace, (flags&CrossfireSpellListener.UPD_SP_DAMAGE) != 0, damage);
                 break;
             }
-            index++;
         }
     }
 
