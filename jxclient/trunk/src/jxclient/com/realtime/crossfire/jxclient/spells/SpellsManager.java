@@ -262,7 +262,7 @@ public class SpellsManager
     {
         for (final Spell spell : spells)
         {
-            if (spell.getInternalName().equals(spellName))
+            if (spell.getName().equals(spellName))
             {
                 return spell;
             }
