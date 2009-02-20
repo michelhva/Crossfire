@@ -110,4 +110,11 @@ public class ShortcutSpell extends Shortcut
     {
         commandQueue.sendNcom(false, command+spell.getInternalName());
     }
+
+    /** {@inheritDoc} */
+    @Override
+    public String getTooltipText()
+    {
+        return command+spell.getTooltipText();
+    }
 }

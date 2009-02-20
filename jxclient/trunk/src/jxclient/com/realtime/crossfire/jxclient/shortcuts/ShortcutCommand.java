@@ -65,4 +65,11 @@ public class ShortcutCommand extends Shortcut
     {
         commandQueue.sendNcom(false, command);
     }
+
+    /** {@inheritDoc} */
+    @Override
+    public String getTooltipText()
+    {
+        return command;
+    }
 }
