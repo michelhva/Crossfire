@@ -348,7 +348,7 @@ public class Shortcuts
     }
 
     /**
-     * Removes a {@link ShortcutListener}.
+     * Removes a {@link ShortcutsListener}.
      * @param listener the listener to remove
      */
     public void removeShortcutsListener(final ShortcutsListener listener)
