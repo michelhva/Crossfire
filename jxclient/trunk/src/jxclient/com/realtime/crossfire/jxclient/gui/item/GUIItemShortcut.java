@@ -49,6 +49,11 @@ public class GUIItemShortcut extends GUIItem
      */
     private static final Color BACKGROUND_COLOR = new Color(0, 0, 0, 0.0f);
 
+    /**
+     * The default tooltip text for empty slots.
+     */
+    private static final String DEFAULT_TOOLTIP_TEXT = "(empty)";
+
     private final Shortcuts shortcuts;
 
     /**
@@ -116,6 +121,7 @@ public class GUIItemShortcut extends GUIItem
         public void shortcutModified()
         {
             setChanged();
+            updateTooltipText();
         }
     };
 
@@ -134,6 +140,7 @@ public class GUIItemShortcut extends GUIItem
         this.shortcuts.addShortcutsListener(shortcutsListener);
         this.w = w;
         this.h = h;
+        updateTooltipText();
     }
 
     /** {@inheritDoc} */
@@ -167,6 +174,8 @@ public class GUIItemShortcut extends GUIItem
             this.shortcut.addShortcutListener(shortcutListener);
         }
         setChanged();
+
+        updateTooltipText();
     }
 
     /* {@inheritDoc} */
@@ -268,5 +277,13 @@ public class GUIItemShortcut extends GUIItem
     @Override
     public void resetScroll()
     {
+    }
+
+    /**
+     * Updates the tooltip text to reflect current settings.
+     */
+    private void updateTooltipText()
+    {
+        setTooltipText(shortcut == null ? DEFAULT_TOOLTIP_TEXT : shortcut.getTooltipText());
     }
 }

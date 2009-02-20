@@ -68,4 +68,10 @@ public abstract class Shortcut
             listener.shortcutModified();
         }
     }
+
+    /**
+     * Returns the current tooltip text.
+     * @return the tooltip text or <code>null</code>
+     */
+    public abstract String getTooltipText();
 }
