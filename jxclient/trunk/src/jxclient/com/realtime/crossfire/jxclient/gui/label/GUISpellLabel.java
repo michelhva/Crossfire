@@ -22,8 +22,8 @@ package com.realtime.crossfire.jxclient.gui.label;
 import com.realtime.crossfire.jxclient.faces.FacesManager;
 import com.realtime.crossfire.jxclient.gui.gui.TooltipManager;
 import com.realtime.crossfire.jxclient.spells.CurrentSpellManager;
+import com.realtime.crossfire.jxclient.spells.CurrentSpellManagerListener;
 import com.realtime.crossfire.jxclient.spells.Spell;
-import com.realtime.crossfire.jxclient.spells.SpellListener;
 import com.realtime.crossfire.jxclient.window.JXCWindowRenderer;
 import java.awt.Color;
 import java.awt.Font;
@@ -88,10 +88,10 @@ public class GUISpellLabel extends GUIHTMLLabel
     private final CurrentSpellManager currentSpellManager;
 
     /**
-     * The {@link SpellListener} registered to be notified about changed spell
+     * The {@link CurrentSpellManagerListener} registered to be notified about changed spell
      * parameters.
      */
-    private final SpellListener spellListener = new SpellListener()
+    private final CurrentSpellManagerListener currentSpellManagerListener = new CurrentSpellManagerListener()
     {
         /** {@inheritDoc} */
         @Override
@@ -176,7 +176,7 @@ public class GUISpellLabel extends GUIHTMLLabel
         this.facesManager = facesManager;
         this.type = type;
         this.currentSpellManager = currentSpellManager;
-        this.currentSpellManager.addSpellListener(spellListener);
+        this.currentSpellManager.addSpellListener(currentSpellManagerListener);
     }
 
     /** {@inheritDoc} */
@@ -184,6 +184,6 @@ public class GUISpellLabel extends GUIHTMLLabel
     public void dispose()
     {
         super.dispose();
-        currentSpellManager.removeSpellListener(spellListener);
+        currentSpellManager.removeSpellListener(currentSpellManagerListener);
     }
 }

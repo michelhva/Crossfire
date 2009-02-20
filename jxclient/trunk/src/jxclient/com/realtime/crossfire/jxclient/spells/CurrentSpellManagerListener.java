@@ -25,7 +25,7 @@ package com.realtime.crossfire.jxclient.spells;
  * @author Lauwenmark
  * @since 1.0
  */
-public interface SpellListener
+public interface CurrentSpellManagerListener
 {
     void spellChanged(Spell spell);
 }
