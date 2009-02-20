@@ -20,28 +20,13 @@
 package com.realtime.crossfire.jxclient.spells;
 
 /**
- * Interface for listeners interested in {@link SpellsManager} events.
+ * Interface for listeners interested in {@link Spell} related events.
  * @author Andreas Kirschbaum
  */
-public interface SpellsManagerListener
+public interface SpellListener
 {
     /**
-     * A new spell was added.
-     *
-     * @param spell The added spell.
-     *
-     * @param index The current index of <code>spell</code> in the spells
-     * manager.
+     * The associated {@link Spell} instance has changed.
      */
-    void spellAdded(Spell spell, int index);
-
-    /**
-     * A spell was removed.
-     *
-     * @param spell The removed spell.
-     *
-     * @param index The former index of <code>spell</code> in the spells
-     * manager.
-     */
-    void spellRemoved(Spell spell, int index);
+    void spellChanged();
 }

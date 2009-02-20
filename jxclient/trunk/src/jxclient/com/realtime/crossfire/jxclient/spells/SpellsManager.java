@@ -191,10 +191,6 @@ public class SpellsManager
             if (spell.getTag() == tag)
             {
                 spell.updateParameters((flags&CrossfireSpellListener.UPD_SP_MANA) != 0, mana, (flags&CrossfireSpellListener.UPD_SP_GRACE) != 0, grace, (flags&CrossfireSpellListener.UPD_SP_DAMAGE) != 0, damage);
-                for (final SpellsManagerListener listener : listeners)
-                {
-                    listener.spellModified(spell, index);
-                }
                 break;
             }
             index++;

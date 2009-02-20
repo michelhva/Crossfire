@@ -20,6 +20,8 @@
 package com.realtime.crossfire.jxclient.spells;
 
 import com.realtime.crossfire.jxclient.util.StringSplitter;
+import java.util.ArrayList;
+import java.util.List;
 
 /**
  *
@@ -30,6 +32,8 @@ import com.realtime.crossfire.jxclient.util.StringSplitter;
 public class Spell
 {
     private final String name;
+
+    private final List<SpellListener> listeners = new ArrayList<SpellListener>();
 
     private int faceNum;
 
@@ -148,33 +152,99 @@ public class Spell
 
     public void setParameters(final int faceNum, final int tag, final String message, final int level, final int castingTime, final int mana, final int grace, final int damage, final int skill, final int path)
     {
-        this.faceNum = faceNum;
-        this.tag = tag;
-        this.message = message;
-        this.level = level;
-        this.castingTime = castingTime;
-        this.mana = mana;
-        this.grace = grace;
-        this.damage = damage;
-        this.skill = skill;
-        this.path = path;
+        boolean changed = false;
+
+        if (this.faceNum != faceNum)
+        {
+            this.faceNum = faceNum;
+            changed = true;
+        }
+
+        if (this.tag != tag)
+        {
+            this.tag = tag;
+            changed = true;
+        }
+
+        if (this.message != message)
+        {
+            this.message = message;
+            changed = true;
+        }
+
+        if (this.level != level)
+        {
+            this.level = level;
+            changed = true;
+        }
+
+        if (this.castingTime != castingTime)
+        {
+            this.castingTime = castingTime;
+            changed = true;
+        }
+
+        if (this.mana != mana)
+        {
+            this.mana = mana;
+            changed = true;
+        }
+
+        if (this.grace != grace)
+        {
+            this.grace = grace;
+            changed = true;
+        }
+
+        if (this.damage != damage)
+        {
+            this.damage = damage;
+            changed = true;
+        }
+
+        if (this.skill != skill)
+        {
+            this.skill = skill;
+            changed = true;
+        }
+
+        if (this.path != path)
+        {
+            this.path = path;
+            changed = true;
+        }
+
+        if (changed)
+        {
+            fireChanged();
+        }
     }
 
     public void updateParameters(final boolean updateMana, final int mana, final boolean updateGrace, final int grace, final boolean updateDamage, final int damage)
     {
-        if (updateMana)
+        boolean changed = false;
+
+        if (updateMana && this.mana != mana)
         {
             this.mana = mana;
+            changed = true;
         }
 
-        if (updateGrace)
+        if (updateGrace && this.grace != grace)
         {
             this.grace = grace;
+            changed = true;
         }
 
-        if (updateDamage)
+        if (updateDamage && this.damage != damage)
         {
             this.damage = damage;
+            changed = true;
+        }
+
+        if (changed)
+        {
+            fireChanged();
         }
     }
 
@@ -200,5 +270,34 @@ public class Spell
     public String getTooltipText()
     {
         return message.length() <= 0 ? name : name+"<br>"+StringSplitter.splitAsHtml(message);
+    }
+
+    /**
+     * Notifies all listeners.
+     */
+    private void fireChanged()
+    {
+        for (final SpellListener listener : listeners)
+        {
+            listener.spellChanged();
+        }
+    }
+
+    /**
+     * Adds a {@link SpellListener} to be notified of changes.
+     * @param listener the listener to add
+     */
+    public void addSpellListener(final SpellListener listener)
+    {
+        listeners.add(listener);
+    }
+
+    /**
+     * Removes a {@link SpellListener} to be notified of changes.
+     * @param listener the listener to remove
+     */
+    public void removeSpellListener(final SpellListener listener)
+    {
+        listeners.remove(listener);
     }
 }
