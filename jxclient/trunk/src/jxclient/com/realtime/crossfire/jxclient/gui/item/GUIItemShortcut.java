@@ -20,7 +20,9 @@
 
 package com.realtime.crossfire.jxclient.gui.item;
 
+import com.realtime.crossfire.jxclient.faces.Face;
 import com.realtime.crossfire.jxclient.faces.FacesManager;
+import com.realtime.crossfire.jxclient.faces.FacesManagerListener;
 import com.realtime.crossfire.jxclient.gui.gui.TooltipManager;
 import com.realtime.crossfire.jxclient.shortcuts.Shortcut;
 import com.realtime.crossfire.jxclient.shortcuts.ShortcutCommand;
@@ -125,6 +127,22 @@ public class GUIItemShortcut extends GUIItem
         }
     };
 
+    /**
+     * The {@link FacesManagerListener} registered to detect updated faces.
+     */
+    private final FacesManagerListener facesManagerListener = new FacesManagerListener()
+    {
+        /** {@inheritDoc} */
+        @Override
+        public void faceUpdated(final Face face)
+        {
+            if (shortcut != null && shortcut instanceof ShortcutSpell && face.getFaceNum() == ((ShortcutSpell)shortcut).getSpell().getFaceNum())
+            {
+                setChanged();
+            }
+        }
+    };
+
     public GUIItemShortcut(final TooltipManager tooltipManager, final JXCWindowRenderer windowRenderer, final String name, final int x, final int y, final int w, final int h, final Color cursedColor, final BufferedImage cursedImage, final Color appliedColor, final BufferedImage appliedImage, final int index, final FacesManager facesManager, final Shortcuts shortcuts, final Font font, final CurrentSpellManager currentSpellManager)
     {
         super(tooltipManager, windowRenderer, name, x, y, w, h);
@@ -140,6 +158,7 @@ public class GUIItemShortcut extends GUIItem
         this.shortcuts.addShortcutsListener(shortcutsListener);
         this.w = w;
         this.h = h;
+        this.facesManager.addFacesManagerListener(facesManagerListener);
         updateTooltipText();
     }
 
@@ -148,6 +167,7 @@ public class GUIItemShortcut extends GUIItem
     public void dispose()
     {
         super.dispose();
+        facesManager.removeFacesManagerListener(facesManagerListener);
         shortcuts.removeShortcutsListener(shortcutListener);
         setShortcut(null);
     }
