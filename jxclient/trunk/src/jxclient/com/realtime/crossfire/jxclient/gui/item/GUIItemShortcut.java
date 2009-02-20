@@ -168,7 +168,7 @@ public class GUIItemShortcut extends GUIItem
     {
         super.dispose();
         facesManager.removeFacesManagerListener(facesManagerListener);
-        shortcuts.removeShortcutsListener(shortcutListener);
+        shortcuts.removeShortcutsListener(shortcutsListener);
         setShortcut(null);
     }
 
