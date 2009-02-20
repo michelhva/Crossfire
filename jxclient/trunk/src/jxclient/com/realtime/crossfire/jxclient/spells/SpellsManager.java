@@ -179,6 +179,7 @@ public class SpellsManager
         spell.setGrace(grace);
         spell.setDamage(damage);
         spell.setSkill(skill);
+        spell.setPath(path);
         addSpell(spell);
     }
 
@@ -214,12 +215,12 @@ public class SpellsManager
 
                 if ((flags&CrossfireSpellListener.UPD_SP_GRACE) != 0)
                 {
-                    spell.setGrace(mana);
+                    spell.setGrace(grace);
                 }
 
                 if ((flags&CrossfireSpellListener.UPD_SP_DAMAGE) != 0)
                 {
-                    spell.setDamage(mana);
+                    spell.setDamage(damage);
                 }
 
                 for (final SpellsManagerListener listener : listeners)
