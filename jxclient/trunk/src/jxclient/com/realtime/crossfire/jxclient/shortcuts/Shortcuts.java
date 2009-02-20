@@ -194,7 +194,7 @@ public class Shortcuts
                             final ShortcutSpell shortcutSpell = (ShortcutSpell)shortcut;
                             bw.write("spell ");
                             bw.write(shortcutSpell.isCast() ? "cast " : "invoke ");
-                            bw.write(shortcutSpell.getSpell().getInternalName());
+                            bw.write(shortcutSpell.getSpell().getName());
                             bw.write("\n");
                         }
                         else if (shortcut instanceof ShortcutCommand)
