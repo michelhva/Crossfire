@@ -32,7 +32,7 @@ public class CurrentSpellManager
     /**
      * The listeners to notify object changed spell objects.
      */
-    private final List<SpellListener> listeners = new ArrayList<SpellListener>();
+    private final List<CurrentSpellManagerListener> listeners = new ArrayList<CurrentSpellManagerListener>();
 
     /**
      * The currently selected spell, or <code>null</code>.
@@ -52,7 +52,7 @@ public class CurrentSpellManager
         }
 
         currentSpell = spell;
-        for (final SpellListener listener : listeners)
+        for (final CurrentSpellManagerListener listener : listeners)
         {
             listener.spellChanged(spell);
         }
@@ -74,7 +74,7 @@ public class CurrentSpellManager
      *
      * @param listener The listener to add.
      */
-    public void addSpellListener(final SpellListener listener)
+    public void addSpellListener(final CurrentSpellManagerListener listener)
     {
         listeners.add(listener);
     }
@@ -84,7 +84,7 @@ public class CurrentSpellManager
      *
      * @param listener The listener to remove.
      */
-    public void removeSpellListener(final SpellListener listener)
+    public void removeSpellListener(final CurrentSpellManagerListener listener)
     {
         listeners.remove(listener);
     }
