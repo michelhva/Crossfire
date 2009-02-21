@@ -158,7 +158,7 @@ public class SpellsManager
         }
     }
 
-    public void addSpell(final int tag, final int level, final int castingTime, final int mana, final int grace, final int damage, final int skill, final int path, final int faceNum, final String spellName, final String message)
+    private void addSpell(final int tag, final int level, final int castingTime, final int mana, final int grace, final int damage, final int skill, final int path, final int faceNum, final String spellName, final String message)
     {
         final Spell spell = new Spell(spellName);
         spell.setParameters(faceNum, tag, message, level, castingTime, mana, grace, damage, skill, path);
@@ -183,7 +183,7 @@ public class SpellsManager
         }
     }
 
-    public void updateSpell(final int flags, final int tag, final int mana, final int grace, final int damage)
+    private void updateSpell(final int flags, final int tag, final int mana, final int grace, final int damage)
     {
         for (final Spell spell : spells)
         {
@@ -195,7 +195,7 @@ public class SpellsManager
         }
     }
 
-    public void deleteSpell(final int tag)
+    private void deleteSpell(final int tag)
     {
         int index = 0;
         for (final Spell spell : spells)
