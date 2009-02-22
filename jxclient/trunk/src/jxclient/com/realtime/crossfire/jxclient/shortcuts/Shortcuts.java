@@ -260,6 +260,7 @@ public class Shortcuts
             {
                 listener.shortcutRemoved(index, oldShortcut);
             }
+            oldShortcut.dispose();
         }
         shortcuts.set(index, shortcut);
         modified = true;
@@ -280,12 +281,6 @@ public class Shortcuts
     public void setSpellShortcut(final int index, final String spellName, final boolean cast)
     {
         final Spell spell = spellsManager.getSpell(spellName);
-        if (spell == null)
-        {
-            System.err.println("shortcut: ignoring undefined spell '"+spellName+"'");
-            return;
-        }
-
         setSpellShortcut(index, spell, cast);
     }
 

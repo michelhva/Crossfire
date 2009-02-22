@@ -39,7 +39,7 @@ public class Spell
 
     private int tag;
 
-    private String message;
+    private String message = "";
 
     private int level;
 
@@ -54,6 +54,13 @@ public class Spell
     private int skill;
 
     private int path;
+
+    private boolean unknown = false;
+
+    public Spell(final String name)
+    {
+        this.name = name;
+    }
 
     public int getTag()
     {
@@ -110,44 +117,17 @@ public class Spell
         return faceNum;
     }
 
-    public void setLevel(final int level)
+    /**
+     * Marks this spell as known or unknown for the character.
+     * @param unknown whether this spell is unkonwn
+     */
+    public void setUnknown(final boolean unknown)
     {
-        this.level = level;
-    }
-
-    public void setCastingTime(final int castingTime)
-    {
-        this.castingTime = castingTime;
-    }
-
-    public void setMana(final int mana)
-    {
-        this.mana = mana;
-    }
-
-    public void setGrace(final int grace)
-    {
-        this.grace = grace;
-    }
-
-    public void setDamage(final int damage)
-    {
-        this.damage = damage;
-    }
-
-    public void setSkill(final int skill)
-    {
-        this.skill = skill;
-    }
-
-    public void setPath(final int path)
-    {
-        this.path = path;
-    }
-
-    public Spell(final String name)
-    {
-        this.name = name;
+        if (this.unknown != unknown)
+        {
+            this.unknown = unknown;
+            fireChanged();
+        }
     }
 
     public void setParameters(final int faceNum, final int tag, final String message, final int level, final int castingTime, final int mana, final int grace, final int damage, final int skill, final int path)
@@ -166,7 +146,7 @@ public class Spell
             changed = true;
         }
 
-        if (this.message != message)
+        if (!this.message.equals(message))
         {
             this.message = message;
             changed = true;
@@ -214,10 +194,26 @@ public class Spell
             changed = true;
         }
 
+        if (unknown)
+        {
+            unknown = false;
+            changed = true;
+        }
+
         if (changed)
         {
             fireChanged();
         }
+    }
+
+    /**
+     * Updates the spell's parameters from another {@link Spell} instance. The
+     * name and unknown flag values are not copied.
+     * @param spell the spell instance to copy from
+     */
+    public void setParameters(final Spell spell)
+    {
+        setParameters(spell.faceNum, spell.tag, spell.message, spell.level, spell.castingTime, spell.mana, spell.grace, spell.damage, spell.skill, spell.path);
     }
 
     public void updateParameters(final boolean updateMana, final int mana, final boolean updateGrace, final int grace, final boolean updateDamage, final int damage)
@@ -259,7 +255,8 @@ public class Spell
             +" Grace:"+grace
             +" Damage:"+damage
             +" Skill:"+skill
-            +" Path:"+path;
+            +" Path:"+path
+            +" Unknown:"+unknown;
     }
 
     /**
@@ -269,7 +266,17 @@ public class Spell
      */
     public String getTooltipText()
     {
-        return message.length() <= 0 ? name : name+"<br>"+StringSplitter.splitAsHtml(message);
+        final StringBuilder sb = new StringBuilder(name);
+        if (unknown)
+        {
+            sb.append(" (unknown)");
+        }
+        if (message.length() > 0)
+        {
+            sb.append("<br>");
+            sb.append(StringSplitter.splitAsHtml(message));
+        }
+        return sb.toString();
     }
 
     /**
