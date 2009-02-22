@@ -34,6 +34,11 @@ public abstract class Shortcut
     private final EventListenerList listeners = new EventListenerList();
 
     /**
+     * Releases all allocated resources.
+     */
+    public abstract void dispose();
+
+    /**
      * Execute the shortcut.
      */
     public abstract void execute();

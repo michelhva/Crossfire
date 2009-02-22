@@ -61,6 +61,12 @@ public class ShortcutCommand extends Shortcut
 
     /** {@inheritDoc} */
     @Override
+    public void dispose()
+    {
+    }
+
+    /** {@inheritDoc} */
+    @Override
     public void execute()
     {
         commandQueue.sendNcom(false, command);

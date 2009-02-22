@@ -27,7 +27,9 @@ import com.realtime.crossfire.jxclient.window.JXCWindow;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Comparator;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 /**
  * Manages all known spells.
@@ -41,6 +43,12 @@ public class SpellsManager
      * All known spells.
      */
     private final List<Spell> spells = new ArrayList<Spell>();
+
+    /**
+     * All unknown spells that have been referenced before. Maps spell name to
+     * {@link Spell} instance.
+     */
+    private final Map<String, Spell> unknownSpells = new HashMap<String, Spell>();
 
     private final List<SpellsManagerListener> listeners = new ArrayList<SpellsManagerListener>();
 
@@ -150,31 +158,50 @@ public class SpellsManager
     {
         for (int i = spells.size()-1; i >= 0; i--)
         {
-            final Spell spell = spells.remove(i);
-            for (final SpellsManagerListener listener : listeners)
-            {
-                listener.spellRemoved(spell, i);
-            }
+            deleteSpellByIndex(i);
         }
     }
 
+    /**
+     * Adds a new spell. Re-uses entries from {@link #unknownSpells} if
+     * possible.
+     * @param tag the spell's tag
+     * @param level the spell's level
+     * @param castingTime the spell's casting time
+     * @param mana the spell's mana cost
+     * @param grace the spell's grace cost
+     * @param damage the spell's damage
+     * @param skill the spell's skill
+     * @param path the spell's path
+     * @param faceNum the spell's face number
+     * @param spellName the spell's name
+     * @param message the spells' description
+     */
     private void addSpell(final int tag, final int level, final int castingTime, final int mana, final int grace, final int damage, final int skill, final int path, final int faceNum, final String spellName, final String message)
     {
-        final Spell spell = new Spell(spellName);
-        spell.setParameters(faceNum, tag, message, level, castingTime, mana, grace, damage, skill, path);
-        addSpell(spell);
-    }
+        final Spell key = new Spell(spellName);
+        key.setParameters(faceNum, tag, message, level, castingTime, mana, grace, damage, skill, path); // set spell path which is unsed in the comparator
 
-    private void addSpell(final Spell spell)
-    {
-        final int index = Collections.binarySearch(spells, spell, spellNameComparator);
+        final int index = Collections.binarySearch(spells, key, spellNameComparator);
+        final Spell spell;
         if (index < 0)
         {
+            final Spell existingSpell = unknownSpells.remove(spellName);
+            if (existingSpell != null)
+            {
+                spell = existingSpell;
+                spell.setParameters(faceNum, tag, message, level, castingTime, mana, grace, damage, skill, path);
+            }
+            else
+            {
+                spell = key;
+            }
             spells.add(-index-1, spell);
         }
         else
         {
-            spells.set(index, spell);
+            spell = spells.get(index);
+            spell.setParameters(faceNum, tag, message, level, castingTime, mana, grace, damage, skill, path);
         }
 
         for (final SpellsManagerListener listener : listeners)
@@ -183,6 +210,14 @@ public class SpellsManager
         }
     }
 
+    /**
+     * Updates spell information.
+     * @param flags specifies which fields to update
+     * @param tag the spell's tag
+     * @param mana the spell's new mana cost
+     * @param grace the spell's new grace cost
+     * @param damage the spell's new damage
+     */
     private void updateSpell(final int flags, final int tag, final int mana, final int grace, final int damage)
     {
         for (final Spell spell : spells)
@@ -195,6 +230,10 @@ public class SpellsManager
         }
     }
 
+    /**
+     * Deletes a spell.
+     * @param tag the spell's tag
+     */
     private void deleteSpell(final int tag)
     {
         int index = 0;
@@ -202,12 +241,7 @@ public class SpellsManager
         {
             if (spell.getTag() == tag)
             {
-                spells.remove(index);
-
-                for (final SpellsManagerListener listener : listeners)
-                {
-                    listener.spellRemoved(spell, index);
-                }
+                deleteSpellByIndex(index);
                 break;
             }
             index++;
@@ -215,11 +249,27 @@ public class SpellsManager
     }
 
     /**
-     * Find a spell by name.
-     *
-     * @param spellName The spell name to find.
-     *
-     * @return The spell, or <code>null</code> if the spell name is undefined.
+     * Deletes a spell by index into {@link #spells}.
+     * @param index the index to delete
+     */
+    private void deleteSpellByIndex(final int index)
+    {
+        final Spell spell = spells.remove(index);
+        unknownSpells.put(spell.getName(), spell);
+
+        for (final SpellsManagerListener listener : listeners)
+        {
+            listener.spellRemoved(spell, index);
+        }
+
+        spell.setUnknown(true);
+    }
+
+    /**
+     * Returns a {@link Spell} instance by spell name. Creates a new instance
+     * if the spell is unknown.
+     * @param spellName the spell name to find
+     * @return the spell instance
      */
     public Spell getSpell(final String spellName)
     {
@@ -231,6 +281,9 @@ public class SpellsManager
             }
         }
 
-        return null;
+        final Spell spell = new Spell(spellName);
+        spell.setUnknown(true);
+        unknownSpells.put(spell.getName(), spell);
+        return spell;
     }
 }

@@ -21,6 +21,7 @@ package com.realtime.crossfire.jxclient.shortcuts;
 
 import com.realtime.crossfire.jxclient.server.CommandQueue;
 import com.realtime.crossfire.jxclient.spells.Spell;
+import com.realtime.crossfire.jxclient.spells.SpellListener;
 
 /**
  * A {@link Shortcut} that casts a spell.
@@ -55,6 +56,19 @@ public class ShortcutSpell extends Shortcut
     private String command = CAST;
 
     /**
+     * The {@link SpellListener} attached to {@link #spell}.
+     */
+    private final SpellListener spellListener = new SpellListener()
+    {
+        /** {@inheritDoc} */
+        @Override
+        public void spellChanged()
+        {
+            fireModifiedEvent();
+        }
+    };
+
+    /**
      * Creates a new instance.
      * @param commandQueue the command queue for executing commands
      * @param spell the spell to cast
@@ -63,6 +77,7 @@ public class ShortcutSpell extends Shortcut
     {
         this.commandQueue = commandQueue;
         this.spell = spell;
+        spell.addSpellListener(spellListener);
     }
 
     /**
@@ -102,6 +117,13 @@ public class ShortcutSpell extends Shortcut
 
         command = newCommand;
         fireModifiedEvent();
+    }
+
+    /** {@inheritDoc} */
+    @Override
+    public void dispose()
+    {
+        spell.removeSpellListener(spellListener);
     }
 
     /** {@inheritDoc} */
