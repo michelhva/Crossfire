@@ -299,7 +299,7 @@ public class Shortcuts
             return;
         }
 
-        if (command.indexOf('\n') != 0)
+        if (command.contains("\n"))
         {
             System.err.println("shortcut: ignoring multi-line command");
             return;
