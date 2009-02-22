@@ -118,6 +118,15 @@ public class Spell
     }
 
     /**
+     * Returns whether this spell is unknown to the character.
+     * @return whether this spell is unknown
+     */
+    public boolean isUnknown()
+    {
+        return unknown;
+    }
+
+    /**
      * Marks this spell as known or unknown for the character.
      * @param unknown whether this spell is unkonwn
      */

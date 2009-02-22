@@ -130,7 +130,10 @@ public class ShortcutSpell extends Shortcut
     @Override
     public void execute()
     {
-        commandQueue.sendNcom(false, command+spell.getTag());
+        if (!spell.isUnknown())
+        {
+            commandQueue.sendNcom(false, command+spell.getTag());
+        }
     }
 
     /** {@inheritDoc} */
