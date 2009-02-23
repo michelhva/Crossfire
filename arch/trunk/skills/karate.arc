@@ -11,5 +11,7 @@ body_skill -1
 exp 0
 level 100
 attacktype 1
+wc_increase_rate 4
+wc 1
 end
 
