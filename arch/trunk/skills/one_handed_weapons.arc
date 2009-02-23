@@ -9,5 +9,6 @@ body_skill -1
 exp 0
 level 100
 dam 1
+wc_increase_rate 5
 end
 

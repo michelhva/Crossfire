@@ -1,5 +1,12 @@
 Changes for SVN top of tree:
 
+skills/karate.arc, punching.arc, flame_touch.arc, one_handed_weapons.arc,
+missile_weap.arc, throwing.arc, clawing.arc, two_handed_weapons.arc, 
+wraith_feed.arc:  Related to server change 11576 - add wc_increase_rate
+to these skills - for non weapon using skills, make that a lower value so
+that it should be better balanced, and also give it a starting bonus.
+MSW 2009-02-22
+
 connect/Garden_gate/ggate_closed.face
 Fix a typo introduced in revision 11294 (part of change to using .face files)
 that caused closed garden gates to disappear when opened.
