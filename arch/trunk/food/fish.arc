@@ -13,6 +13,7 @@ weight 3500
 identified 1
 name_pl fishes
 client_type 601
+harvestable 1
 harvest_race fish
 harvest_exp 100
 harvest_level 1
@@ -34,6 +35,7 @@ weight 3500
 identified 1
 name_pl fishes
 client_type 601
+harvestable 1
 harvest_race fish
 harvest_exp 100
 harvest_level 1
@@ -59,6 +61,7 @@ weight 3500
 identified 1
 name_pl fishes
 client_type 601
+harvestable 1
 harvest_race fish
 harvest_exp 100
 harvest_level 1
@@ -78,6 +81,7 @@ weight 3500
 identified 1
 name_pl fishes
 client_type 601
+harvestable 1
 harvest_race fish
 harvest_exp 100
 harvest_level 1
@@ -97,6 +101,7 @@ weight 3500
 identified 1
 name_pl fishes
 client_type 601
+harvestable 1
 harvest_race fish
 harvest_exp 100
 harvest_level 1
@@ -116,6 +121,7 @@ weight 3500
 identified 1
 name_pl fishes
 client_type 601
+harvestable 1
 harvest_race fish
 harvest_exp 100
 harvest_level 1
