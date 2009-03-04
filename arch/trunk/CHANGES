@@ -1,5 +1,9 @@
 Changes for SVN top of tree:
 
+food/fish.arc: Make the item fishing_pole work (this item is not found on any
+map currently). The fish in shallow_sea inventory didn't have harvestable set.
+Arvid Norlander 2009-03-04
+
 skills/karate.arc, punching.arc, flame_touch.arc, one_handed_weapons.arc,
 missile_weap.arc, throwing.arc, clawing.arc, two_handed_weapons.arc, 
 wraith_feed.arc:  Related to server change 11576 - add wc_increase_rate
