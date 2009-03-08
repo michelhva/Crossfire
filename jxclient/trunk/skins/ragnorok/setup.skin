@@ -17,7 +17,7 @@ button button_close          180   4  16 16 close_up close_down false command_se
 label_text label_preferences  10  30 180 16 font_title BLACK Status indicators:
 checkbox checkbox_low_food    10  50 180 16 lowfood Low food warning
 checkbox checkbox_poisoned    10  70 180 16 poisoned Poisoned indicator
-checkbox checkbox_hitpoints   10  90 180 16 hitpoints Hitpoint indicator
+checkbox checkbox_hitpoints   10  90 180 16 hitpoints Stats indicators
 
 # Sound group
 label_text label_sound        10 120 180 16 font_title BLACK Sound:
