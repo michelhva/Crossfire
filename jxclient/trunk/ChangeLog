@@ -1,5 +1,8 @@
 2009-03-08  Andreas Kirschbaum
 
+	* Fix crash due to "java.util.ConcurrentModificationException" when updating
+	the ground or inventroy view.
+
 	* Save shortcuts per character.
 
 2009-02-22  Andreas Kirschbaum
