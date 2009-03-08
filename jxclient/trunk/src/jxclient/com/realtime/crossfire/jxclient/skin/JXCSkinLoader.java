@@ -259,7 +259,7 @@ public class JXCSkinLoader
         {
             if (!skinSource.containsResolution(resolution))
             {
-                throw new JXCSkinException("resolution "+resolution+" is not supported by the skin "+skin.getPlainSkinName());
+                throw new JXCSkinException("resolution "+resolution+" is not supported by this skin");
             }
 
             selectedResolution = resolution;
