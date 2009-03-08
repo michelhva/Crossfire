@@ -114,7 +114,24 @@ public abstract class AbstractManager
      */
     public void fireEvents(final List<CfItem> items)
     {
-        fireEvents(modifiedItems, allListeners, items);
+        for (final LocationsListener listener : locationsListeners)
+        {
+            listener.locationsModified(modifiedItems);
+        }
+
+        for (final int index : modifiedItems)
+        {
+            final EventListenerList tileListeners = allListeners.get(index);
+            if (tileListeners != null)
+            {
+                final CfItem item = 0 <= index && index < items.size() ? items.get(index) : null;
+                for (final LocationListener listener : tileListeners.getListeners(LocationListener.class))
+                {
+                    listener.locationModified(index, item);
+                }
+            }
+        }
+        modifiedItems.clear();
     }
 
     /**
@@ -149,33 +166,5 @@ public abstract class AbstractManager
         {
             modifiedItems.add(i);
         }
-    }
-
-    /**
-     * Delivers pending modified events.
-     * @param modified the set of pending events
-     * @param listeners the listeners to be modified
-     * @param items the items that have changed
-     */
-    private void fireEvents(final Set<Integer> modified, final Map<Integer, EventListenerList> listeners, final List<CfItem> items)
-    {
-        for (final LocationsListener listener : locationsListeners)
-        {
-            listener.locationsModified(modified);
-        }
-
-        for (final int index : modified)
-        {
-            final EventListenerList tileListeners = listeners.get(index);
-            if (tileListeners != null)
-            {
-                final CfItem item = 0 <= index && index < items.size() ? items.get(index) : null;
-                for (final LocationListener listener : tileListeners.getListeners(LocationListener.class))
-                {
-                    listener.locationModified(index, item);
-                }
-            }
-        }
-        modified.clear();
     }
 }
