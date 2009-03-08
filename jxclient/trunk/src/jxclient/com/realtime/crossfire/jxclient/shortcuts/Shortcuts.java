@@ -89,7 +89,8 @@ public class Shortcuts
     public void load(final File file) throws IOException
     {
         modified = false;
-        shortcuts.clear();
+
+        clearShortcuts();
         try
         {
             final FileInputStream fis = new FileInputStream(file);
@@ -153,7 +154,7 @@ public class Shortcuts
         }
         catch (final IOException ex)
         {
-            shortcuts.clear();
+            clearShortcuts();
             modified = false;
             throw ex;
         }
@@ -224,6 +225,23 @@ public class Shortcuts
         {
             fos.close();
         }
+    }
+
+    /**
+     * Cleats all defined shortcuts.
+     */
+    private void clearShortcuts()
+    {
+        for (int i = 0; i < shortcuts.size(); i++)
+        {
+            final Shortcut shortcut = shortcuts.get(i);
+            for (final ShortcutsListener listener : listeners.getListeners(ShortcutsListener.class))
+            {
+                listener.shortcutRemoved(i, shortcut);
+            }
+            shortcut.dispose();
+        }
+        shortcuts.clear();
     }
 
     /**
