@@ -23,7 +23,7 @@ commandlist_add command_messages_up_all log_all SCROLL -1
 commandlist_add command_messages_down_all log_all SCROLL 1
 
 # "important" tab
-log_message log_msg 4 30 562 190-30-16-4 empty font_log_print font_log_fixed font_log_fixed_bold font_log_arcane BLACK
+log_message log_msg 4 25 562 190-30-16-4 empty font_log_print font_log_fixed font_log_fixed_bold font_log_arcane BLACK
 log_color log_msg 1 #000000
 log_color log_msg 4 #b78b00
 log_color log_msg 5 #8080ff
@@ -32,14 +32,14 @@ log_color log_msg 7 #00c000
 log_color log_msg 11 #909000
 log_color log_msg 12 #959054
 log_filter log_msg not ATTACK SPELL
-button slider_msg_up    586-4-16 30          16 16 slider_up_up slider_up_down true command_messages_up_msg
-scrollbar slider_msg    586-4-16 46          16 108 true log_msg #c0c0c0 #808080
+button slider_msg_up    586-4-16 25          16 16 slider_up_up slider_up_down true command_messages_up_msg
+scrollbar slider_msg    586-4-16 41          16 108 true log_msg #c0c0c0 #808080
 button slider_msg_down  586-4-16 190-4-16-16 16 16 slider_down_up slider_down_down true command_messages_down_msg
 commandlist_add command_messages_up_msg log_msg SCROLL -1
 commandlist_add command_messages_down_msg log_msg SCROLL 1
 
 # "chat" tab
-log_message log_chat 4 30 562 190-30-16-4 empty font_log_print font_log_fixed font_log_fixed_bold font_log_arcane BLACK
+log_message log_chat 4 25 562 190-30-16-4 empty font_log_print font_log_fixed font_log_fixed_bold font_log_arcane BLACK
 log_color log_chat 1 #000000
 log_color log_chat 4 #b78b00
 log_color log_chat 5 #8080ff
@@ -48,8 +48,8 @@ log_color log_chat 7 #00c000
 log_color log_chat 11 #909000
 log_color log_chat 12 #959054
 log_filter log_chat only COMMUNICATION
-button slider_chat_up   586-4-16 30          16 16 slider_up_up slider_up_down true command_messages_up_chat
-scrollbar slider_chat   586-4-16 46          16 108 true log_chat #c0c0c0 #808080
+button slider_chat_up   586-4-16 25          16 16 slider_up_up slider_up_down true command_messages_up_chat
+scrollbar slider_chat   586-4-16 41          16 108 true log_chat #c0c0c0 #808080
 button slider_chat_down 586-4-16 190-4-16-16 16 16 slider_down_up slider_down_down true command_messages_down_chat
 commandlist_add command_messages_up_chat log_chat SCROLL -1
 commandlist_add command_messages_down_chat log_chat SCROLL 1
