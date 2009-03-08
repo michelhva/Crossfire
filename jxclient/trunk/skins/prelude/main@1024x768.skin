@@ -25,6 +25,10 @@ label_stat label_sp  844+72   3+732 32  32 font_types WHITE SP CENTER
 # Map View Gauges
 picture hpbar_back 478 340 68 7 hpbar_frame 0.9
 gauge hpbar        479 341 66 5 hpbar_full null hpbar_empty HP WE
+picture spbar_back 478 332 68 7 hpbar_frame 0.9
+gauge spbar        479 333 66 5 spbar_full null hpbar_empty SP WE
+picture grbar_back 478 324 68 7 hpbar_frame 0.9
+gauge grbar        479 325 66 5 grbar_full null hpbar_empty GRACE WE
 gauge lowfood      499 286 25 45 lowfood null null LOWFOOD WE
 gauge poisoned     501 299 20 30 poisoned null null POISONED WE
 
