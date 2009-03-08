@@ -230,11 +230,14 @@ public class Shortcuts
         for (int i = 0; i < shortcuts.size(); i++)
         {
             final Shortcut shortcut = shortcuts.get(i);
-            for (final ShortcutsListener listener : listeners.getListeners(ShortcutsListener.class))
+            if (shortcut != null)
             {
-                listener.shortcutRemoved(i, shortcut);
+                for (final ShortcutsListener listener : listeners.getListeners(ShortcutsListener.class))
+                {
+                    listener.shortcutRemoved(i, shortcut);
+                }
+                shortcut.dispose();
             }
-            shortcut.dispose();
         }
         shortcuts.clear();
     }
