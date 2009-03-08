@@ -26,7 +26,6 @@ import java.awt.image.BufferedImage;
 
 /**
  * A gui element implementing a static text field which may contain media tags.
- *
  * @author Andreas Kirschbaum
  */
 public class GUILabelLog extends GUILog
@@ -47,29 +46,19 @@ public class GUILabelLog extends GUILog
     private final Color defaultColor;
 
     /**
-     * Create a new instance.
-     *
+     * Creates a new instance.
      * @param tooltipManager the tooltip manager to update
-     *
      * @param windowRenderer the window renderer to notify
-     *
-     * @param name The name of this element.
-     *
-     * @param x The x-coordinate for drawing this element to screen.
-     *
-     * @param y The y-coordinate for drawing this element to screen.
-     *
-     * @param w The width for drawing this element to screen.
-     *
-     * @param h The height for drawing this element to screen.
-     *
-     * @param backgroundImage The background image; may be <code>null</code> if
-     * unused.
-     *
-     * @param fonts The <code>Fonts</code> instance for looking up fonts.
-     *
-     * @param defaultColor The default color to use for text message not
-     * specifying a color.
+     * @param name the name of this element
+     * @param x the x-coordinate for drawing this element to screen
+     * @param y the y-coordinate for drawing this element to screen
+     * @param w the width for drawing this element to screen
+     * @param h the height for drawing this element to screen
+     * @param backgroundImage the background image; may be <code>null</code> if
+     * unused
+     * @param fonts the <code>Fonts</code> instance for looking up fonts
+     * @param defaultColor the default color to use for text message not
+     * specifying a color
      */
     public GUILabelLog(final TooltipManager tooltipManager, final JXCWindowRenderer windowRenderer, final String name, final int x, final int y, final int w, final int h, final BufferedImage backgroundImage, final Fonts fonts, final Color defaultColor)
     {
@@ -85,9 +74,8 @@ public class GUILabelLog extends GUILog
     }
 
     /**
-     * Set the displayed text by parsing a string.
-     *
-     * @param string The string to parse.
+     * Sets the displayed text by parsing a string.
+     * @param string the string to parse
      */
     public void updateText(final String string)
     {

@@ -27,7 +27,6 @@ import java.awt.image.BufferedImage;
 
 /**
  * A gui element implementing the message window.
- *
  * @author Andreas Kirschbaum
  */
 public class GUIMessageLog extends GUILog
@@ -43,31 +42,20 @@ public class GUIMessageLog extends GUILog
     private final MessageBufferUpdater messageBufferUpdater;
 
     /**
-     * Create a new instance.
-     *
+     * Creates a new instance.
      * @param tooltipManager the tooltip manager to update
-     *
      * @param windowRenderer the window renderer to notify
-     *
-     * @param name The name of this element.
-     *
-     * @param x The x-coordinate for drawing this element to screen.
-     *
-     * @param y The y-coordinate for drawing this element to screen.
-     *
-     * @param w The width for drawing this element to screen.
-     *
-     * @param h The height for drawing this element to screen.
-     *
+     * @param name the name of this element
+     * @param x the x-coordinate for drawing this element to screen
+     * @param y the y-coordinate for drawing this element to screen
+     * @param w the width for drawing this element to screen
+     * @param h the height for drawing this element to screen
      * @param crossfireServerConnection the connection instance
-     *
-     * @param backgroundImage The background image; may be <code>null</code> if
-     * unused.
-     *
-     * @param fonts The <code>Fonts</code> instance for looking up fonts.
-     *
-     * @param defaultColor The default color to use for text message not
-     * specifying a color.
+     * @param backgroundImage the background image; may be <code>null</code> if
+     * unused
+     * @param fonts the <code>Fonts</code> instance for looking up fonts
+     * @param defaultColor the default color to use for text message not
+     * specifying a color
      */
     public GUIMessageLog(final TooltipManager tooltipManager, final JXCWindowRenderer windowRenderer, final String name, final int x, final int y, final int w, final int h, final CrossfireServerConnection crossfireServerConnection, final BufferedImage backgroundImage, final Fonts fonts, final Color defaultColor)
     {
@@ -84,11 +72,9 @@ public class GUIMessageLog extends GUILog
     }
 
     /**
-     * Set a color mapping.
-     *
-     * @param index The color index to change.
-     *
-     * @param color The color to map to.
+     * Sets a color mapping.
+     * @param index the color index to change
+     * @param color the color to map to
      */
     public void setColor(final int index, final Color color)
     {
@@ -97,8 +83,7 @@ public class GUIMessageLog extends GUILog
 
     /**
      * Set the message types to show.
-     *
-     * @param types The types to show.
+     * @param types the types to show
      */
     public void setTypes(final int types)
     {

@@ -35,10 +35,9 @@ import java.util.List;
 import java.util.ListIterator;
 
 /**
- *
- * @version 1.0
+ * Abstract base class for gui elements implementing text fields.
  * @author Lauwenmark
- * @since 1.0
+ * @author Andreas Kirschbaum
  */
 public abstract class GUILog extends GUIElement implements GUIScrollable2
 {
@@ -62,6 +61,10 @@ public abstract class GUILog extends GUIElement implements GUIScrollable2
      */
     protected final Buffer buffer;
 
+    /**
+     * The background image drawn below the text contents. Set to
+     * <code>null</code> if unused.
+     */
     private final BufferedImage backgroundImage;
 
     /**
@@ -74,6 +77,9 @@ public abstract class GUILog extends GUIElement implements GUIScrollable2
      */
     private final RenderStateManager renderStateManager;
 
+    /**
+     * The {@link RenderStateListener} attached to {@link #renderStateManager}.
+     */
     private final RenderStateListener renderStateListener = new RenderStateListener()
     {
         /** {@inheritDoc} */
@@ -96,26 +102,17 @@ public abstract class GUILog extends GUIElement implements GUIScrollable2
     };
 
     /**
-     * Create a new instance.
-     *
+     * Creates a new instance.
      * @param tooltipManager the tooltip manager to update
-     *
      * @param windowRenderer the window renderer to notify
-     *
-     * @param name The name of this element.
-     *
-     * @param x The x-coordinate for drawing this element to screen.
-     *
-     * @param y The y-coordinate for drawing this element to screen.
-     *
-     * @param w The width for drawing this element to screen.
-     *
-     * @param h The height for drawing this element to screen.
-     *
-     * @param backgroundImage The background image; may be <code>null</code> if
-     * unused.
-     *
-     * @param fonts The <code>Fonts</code> instance for looking up fonts.
+     * @param name the name of this element
+     * @param x the x-coordinate for drawing this element to screen
+     * @param y the y-coordinate for drawing this element to screen
+     * @param w the width for drawing this element to screen
+     * @param h the height for drawing this element to screen
+     * @param backgroundImage the background image; may be <code>null</code> if
+     * unused
+     * @param fonts the <code>Fonts</code> instance for looking up fonts
      */
     protected GUILog(final TooltipManager tooltipManager, final JXCWindowRenderer windowRenderer, final String name, final int x, final int y, final int w, final int h, final BufferedImage backgroundImage, final Fonts fonts)
     {
@@ -178,13 +175,10 @@ public abstract class GUILog extends GUIElement implements GUIScrollable2
     }
 
     /**
-     * Draw one {@link Line} to a {@link Graphics2D} instance.
-     *
-     * @param g The graphics to draw to.
-     *
-     * @param y The y-coordinate to start drawing.
-     *
-     * @param line The line to draw.
+     * Draws one {@link Line} to a {@link Graphics2D} instance.
+     * @param g the graphics to draw to
+     * @param y the y-coordinate to start drawing
+     * @param line the line to draw
      */
     private void drawLine(final Graphics g, final int y, final Line line)
     {
