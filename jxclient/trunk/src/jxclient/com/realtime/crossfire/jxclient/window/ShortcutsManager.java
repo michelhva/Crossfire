@@ -50,13 +50,15 @@ public class ShortcutsManager
 
     /**
      * Load shortcut info from the backing file.
+     * @param hostname the current hostname
+     * @param character the current character name
      */
-    public void loadShortcuts()
+    public void loadShortcuts(final String hostname, final String character)
     {
         final File file;
         try
         {
-            file = Filenames.getShortcutsFile();
+            file = Filenames.getShortcutsFile(hostname, character);
         }
         catch (final IOException ex)
         {
@@ -84,24 +86,13 @@ public class ShortcutsManager
      */
     public void saveShortcuts()
     {
-        final File file;
         try
         {
-            file = Filenames.getShortcutsFile();
+            shortcuts.save();
         }
         catch (final IOException ex)
         {
-            System.err.println("Cannot write shortcuts file: "+ex.getMessage());
-            return;
-        }
-
-        try
-        {
-            shortcuts.save(file);
-        }
-        catch (final IOException ex)
-        {
-            System.err.println("Cannot write shortcuts file "+file+": "+ex.getMessage());
+            System.err.println("Cannot write shortcuts file "+shortcuts.getFile()+": "+ex.getMessage());
             return;
         }
     }

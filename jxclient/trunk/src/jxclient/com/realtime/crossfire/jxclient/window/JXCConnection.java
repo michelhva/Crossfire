@@ -22,6 +22,11 @@ public class JXCConnection
     private final KeybindingsManager keybindingsManager;
 
     /**
+     * The {@link ShortcutsManager} to update.
+     */
+    private final ShortcutsManager shortcutsManager;
+
+    /**
      * The settings instance to use.
      */
     private final Settings settings;
@@ -113,6 +118,7 @@ public class JXCConnection
     /**
      * Creates a new instance.
      * @param keybindingsManager the keybindings manager to update
+     * @param shortcutsManager the shortcuts manager to update
      * @param settings the settings instance to use
      * @param window the frame instance for updating the title
      * @param characterPickup the character pickup instance to update
@@ -120,9 +126,10 @@ public class JXCConnection
      * @param connectionListener the connection listener to use when connecting
      * @param guiManager the gui manager to use when connecting
      */
-    public JXCConnection(final KeybindingsManager keybindingsManager, final Settings settings, final JXCWindow window, final Pickup characterPickup, final CrossfireServerConnection server, final ConnectionListener connectionListener, final GuiManager guiManager)
+    public JXCConnection(final KeybindingsManager keybindingsManager, final ShortcutsManager shortcutsManager, final Settings settings, final JXCWindow window, final Pickup characterPickup, final CrossfireServerConnection server, final ConnectionListener connectionListener, final GuiManager guiManager)
     {
         this.keybindingsManager = keybindingsManager;
+        this.shortcutsManager = shortcutsManager;
         this.settings = settings;
         frame = window;
         this.characterPickup = characterPickup;
@@ -156,6 +163,7 @@ public class JXCConnection
         }
 
         keybindingsManager.unloadPerCharacterBindings();
+        shortcutsManager.saveShortcuts();
 
         if (hostname != null && this.character != null)
         {
@@ -176,6 +184,7 @@ public class JXCConnection
         if (hostname != null && character != null)
         {
             keybindingsManager.loadPerCharacterBindings(hostname, character);
+            shortcutsManager.loadShortcuts(hostname, character);
             characterPickup.setPickupMode(settings.getLong("pickup_"+hostname+"_"+character, Pickup.PU_NOTHING));
         }
     }

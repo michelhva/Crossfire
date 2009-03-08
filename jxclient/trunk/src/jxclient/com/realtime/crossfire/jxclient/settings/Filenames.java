@@ -109,13 +109,19 @@ public class Filenames
     /**
      * Return the shortcuts file.
      *
+     * @param hostname The hostname of the character; <code>null</code>=global
+     * key bindings file.
+     *
+     * @param character The character name; <code>null</code>=global key
+     * bindings file.
+     *
      * @return The shortcuts file.
      *
      * @throws IOException If the file cannot be accessed.
      */
-    public static File getShortcutsFile() throws IOException
+    public static File getShortcutsFile(final String hostname, final String character) throws IOException
     {
-        return getSettingsFile("shortcuts.txt");
+        return getSettingsFile("shortcuts-"+encode(hostname)+"-"+encode(character)+".txt");
     }
 
     /**
