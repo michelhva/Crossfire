@@ -54,7 +54,10 @@ public abstract class AbstractManager
      */
     public void reset()
     {
-        modifiedItems.clear();
+        synchronized (modifiedItems)
+        {
+            modifiedItems.clear();
+        }
     }
 
     /**
@@ -114,12 +117,19 @@ public abstract class AbstractManager
      */
     public void fireEvents(final List<CfItem> items)
     {
-        for (final LocationsListener listener : locationsListeners)
+        final Set<Integer> tmp;
+        synchronized (modifiedItems)
         {
-            listener.locationsModified(modifiedItems);
+            tmp = new HashSet<Integer>(modifiedItems);
+            modifiedItems.clear();
         }
 
-        for (final int index : modifiedItems)
+        for (final LocationsListener listener : locationsListeners)
+        {
+            listener.locationsModified(tmp);
+        }
+
+        for (final int index : tmp)
         {
             final EventListenerList tileListeners = allListeners.get(index);
             if (tileListeners != null)
@@ -131,7 +141,6 @@ public abstract class AbstractManager
                 }
             }
         }
-        modifiedItems.clear();
     }
 
     /**
@@ -152,7 +161,10 @@ public abstract class AbstractManager
      */
     public void addModified(final int index)
     {
-        modifiedItems.add(index);
+        synchronized (modifiedItems)
+        {
+            modifiedItems.add(index);
+        }
     }
 
     /**
@@ -162,9 +174,12 @@ public abstract class AbstractManager
      */
     public void addModified(final int start, final int end)
     {
-        for (int i = start; i < end; i++)
+        synchronized (modifiedItems)
         {
-            modifiedItems.add(i);
+            for (int i = start; i < end; i++)
+            {
+                modifiedItems.add(i);
+            }
         }
     }
 }
