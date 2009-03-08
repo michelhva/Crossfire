@@ -34,8 +34,7 @@ import java.util.ArrayList;
 import javax.swing.event.EventListenerList;
 
 /**
- * Manages a list of shortcut commands.
- *
+ * Manages a list of {@link Shortcut}s.
  * @author Andreas Kirschbaum
  */
 public class Shortcuts
@@ -79,12 +78,10 @@ public class Shortcuts
     }
 
     /**
-     * Read shortcut definitions from a file. Previously set shortcuts are
+     * Reads shortcut definitions from a file. Previously set shortcuts are
      * overwritten.
-     *
-     * @param file The file to read.
-     *
-     * @throws IOException If an I/O error occurs.
+     * @param file the file to read
+     * @throws IOException if an I/O error occurs
      */
     public void load(final File file) throws IOException
     {
@@ -162,11 +159,9 @@ public class Shortcuts
     }
 
     /**
-     * Write the shortcut definitions to a file.
-     *
-     * @param file The file to write to.
-     *
-     * @throws IOException If an I/O exception occurs.
+     * Writes the shortcut definitions to a file.
+     * @param file the file to write to
+     * @throws IOException if an I/O exception occurs
      */
     public void save(final File file) throws IOException
     {
@@ -228,7 +223,7 @@ public class Shortcuts
     }
 
     /**
-     * Cleats all defined shortcuts.
+     * Clears all defined shortcuts.
      */
     private void clearShortcuts()
     {
@@ -245,11 +240,9 @@ public class Shortcuts
     }
 
     /**
-     * Return a shortcut.
-     *
-     * @param index The shortcut index.
-     *
-     * @return The shortcut, or <code>null</code> if the shortcut is unset.
+     * Returns a shortcut.
+     * @param index the shortcut index
+     * @return the shortcut or <code>null</code> if the shortcut is unset
      */
     public Shortcut getShortcut(final int index)
     {
@@ -263,6 +256,11 @@ public class Shortcuts
         }
     }
 
+    /**
+     * Sets a {@link Shortcut}.
+     * @param index the shortcut index
+     * @param shortcut the shortcut to set or <code>null</code> to unset
+     */
     public void setShortcut(final int index, final Shortcut shortcut)
     {
         while (shortcuts.size() <= index)
@@ -291,17 +289,35 @@ public class Shortcuts
         }
     }
 
+    /**
+     * Unsets a {@link Shortcut}.
+     * @param index the shortcut index
+     */
     public void unsetShortcut(final int index)
     {
         setShortcut(index, null);
     }
 
+    /**
+     * Sets a {@link Shortcut} to a spell.
+     * @param index the shortcut index
+     * @param spellName the spell name to cast or invoke
+     * @param cast whether the spell should be cast (<code>true</code>) or
+     * invoked (<code>false</code>)
+     */
     public void setSpellShortcut(final int index, final String spellName, final boolean cast)
     {
         final Spell spell = spellsManager.getSpell(spellName);
         setSpellShortcut(index, spell, cast);
     }
 
+    /**
+     * Sets a {@link Shortcut} to a spell.
+     * @param index the shortcut index
+     * @param spell the spell to cast or invoke
+     * @param cast whether the spell should be cast (<code>true</code>) or
+     * invoked (<code>false</code>)
+     */
     public void setSpellShortcut(final int index, final Spell spell, final boolean cast)
     {
         final ShortcutSpell shortcutSpell = new ShortcutSpell(commandQueue, spell);
@@ -309,6 +325,11 @@ public class Shortcuts
         setShortcut(index, shortcutSpell);
     }
 
+    /**
+     * Sets a {@link Shortcut} to a command.
+     * @param index the shortcut index
+     * @param command the command to execute
+     */
     public void setCommandShortcut(final int index, final String command)
     {
         if (command.length() <= 0)
@@ -327,9 +348,8 @@ public class Shortcuts
         setShortcut(index, shortcutCommand);
     }
     /**
-     * Execute a shortcut. Does nothing if the shortcut is unset.
-     *
-     * @param index The shortcut index.
+     * Executes a shortcut. Does nothing if the shortcut is unset.
+     * @param index the shortcut index
      */
     public void executeShortcut(final int index)
     {
@@ -341,9 +361,8 @@ public class Shortcuts
     }
 
     /**
-     * Return the number of shortcut slots.
-     *
-     * @return The number of shortcut slots.
+     * Returns the number of shortcut slots.
+     * @return the number of shortcut slots
      */
     public int size()
     {
@@ -351,9 +370,8 @@ public class Shortcuts
     }
 
     /**
-     * Register a {@link ShortcutsListener}.
-     *
-     * @param listener The listener to register.
+     * Adds a {@link ShortcutsListener}.
+     * @param listener the listener to add
      */
     public void addShortcutsListener(final ShortcutsListener listener)
     {
