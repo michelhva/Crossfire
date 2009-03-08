@@ -110,7 +110,6 @@ public abstract class AbstractManager
 
     /**
      * Delivers pending events.
-     *
      * @param items The item information.
      */
     public void fireEvents(final List<CfItem> items)
