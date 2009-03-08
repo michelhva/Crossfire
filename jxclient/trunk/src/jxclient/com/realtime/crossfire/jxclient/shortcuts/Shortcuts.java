@@ -269,7 +269,6 @@ public class Shortcuts
         while (shortcuts.size() <= index)
         {
             shortcuts.add(null);
-            modified = true;
         }
 
         final Shortcut oldShortcut = shortcuts.get(index);
