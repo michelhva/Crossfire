@@ -29,7 +29,6 @@ import javax.swing.event.EventListenerList;
 
 /**
  * Abstract base class for item managers.
- *
  * @author Andreas Kirschbaum
  */
 public abstract class AbstractManager
@@ -51,7 +50,7 @@ public abstract class AbstractManager
     private final List<LocationsListener> locationsListeners = new ArrayList<LocationsListener>();
 
     /**
-     * Reset the manager's state.
+     * Resets the manager's state.
      */
     public void reset()
     {
@@ -77,11 +76,9 @@ public abstract class AbstractManager
     }
 
     /**
-     * Add a {@link LocationListener}s to be notified about changes in a slot.
-     *
-     * @param index The slot index.
-     *
-     * @param listener The listener.
+     * Adds a {@link LocationListener}s to be notified about changes in a slot.
+     * @param index the slot index
+     * @param listener the listener
      */
     public void addLocationListener(final int index, final LocationListener listener)
     {
@@ -95,12 +92,10 @@ public abstract class AbstractManager
     }
 
     /**
-     * Remove a {@link LocationListener}s to be notified about changes in a
+     * Removes a {@link LocationListener}s to be notified about changes in a
      * slot.
-     *
-     * @param index The slot index.
-     *
-     * @param listener The listener.
+     * @param index the slot index
+     * @param listener the listener
      */
     public void removeLocationListener(final int index, final LocationListener listener)
     {
@@ -114,7 +109,7 @@ public abstract class AbstractManager
     }
 
     /**
-     * Deliver pending events.
+     * Delivers pending events.
      *
      * @param items The item information.
      */
@@ -124,9 +119,8 @@ public abstract class AbstractManager
     }
 
     /**
-     * Add pending modified events.
-     *
-     * @param items The pending events to add; may be <code>null</code>.
+     * Adds pending modified events.
+     * @param items the pending events to add; may be <code>null</code>
      */
     public void addModified(final List<CfItem> items)
     {
@@ -137,9 +131,8 @@ public abstract class AbstractManager
     }
 
     /**
-     * Add pending modified event.
-     *
-     * @param index The index to add.
+     * Adds a pending modified event.
+     * @param index the index having changed
      */
     public void addModified(final int index)
     {
@@ -147,11 +140,9 @@ public abstract class AbstractManager
     }
 
     /**
-     * Add pending modified events.
-     *
-     * @param start The first index to add.
-     *
-     * @param end The first index not to add.
+     * Adds pending modified events.
+     * @param start the first index to add
+     * @param end the first index not to add
      */
     public void addModified(final int start, final int end)
     {
@@ -162,12 +153,9 @@ public abstract class AbstractManager
     }
 
     /**
-     * Deliver pending modified events.
-     *
+     * Delivers pending modified events.
      * @param modified the set of pending events
-     *
      * @param listeners the listeners to be modified
-     *
      * @param items the items that have changed
      */
     private void fireEvents(final Set<Integer> modified, final Map<Integer, EventListenerList> listeners, final List<CfItem> items)
