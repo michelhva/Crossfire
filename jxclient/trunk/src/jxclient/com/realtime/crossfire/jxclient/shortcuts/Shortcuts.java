@@ -52,6 +52,11 @@ public class Shortcuts
     private boolean modified = false;
 
     /**
+     * The backing file.
+     */
+    private File file = null;
+
+    /**
      * The listeners to be notified.
      */
     private final EventListenerList listeners = new EventListenerList();
@@ -153,19 +158,20 @@ public class Shortcuts
         {
             clearShortcuts();
             modified = false;
+            this.file = file;
             throw ex;
         }
         modified = false;
+        this.file = file;
     }
 
     /**
      * Writes the shortcut definitions to a file.
-     * @param file the file to write to
      * @throws IOException if an I/O exception occurs
      */
-    public void save(final File file) throws IOException
+    public void save() throws IOException
     {
-        if (!modified)
+        if (!modified || file == null)
         {
             return;
         }
@@ -387,5 +393,14 @@ public class Shortcuts
     public void removeShortcutsListener(final ShortcutsListener listener)
     {
         listeners.remove(ShortcutsListener.class, listener);
+    }
+
+    /**
+     * Returns the backing file.
+     * @return the backing file or <code>null</code> if unknown
+     */
+    public File getFile()
+    {
+        return file;
     }
 }

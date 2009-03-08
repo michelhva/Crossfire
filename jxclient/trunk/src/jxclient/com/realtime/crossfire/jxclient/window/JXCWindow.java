@@ -513,7 +513,7 @@ public class JXCWindow extends JFrame
         setFocusTraversalKeysEnabled(false);
         addWindowFocusListener(windowFocusListener);
         addWindowListener(windowListener);
-        connection = new JXCConnection(keybindingsManager, settings, this, characterPickup, server, connectionListener, guiManager);
+        connection = new JXCConnection(keybindingsManager, shortcutsManager, settings, this, characterPickup, server, connectionListener, guiManager);
         guiManager.setConnection(connection);
         addConnectionStateListener(guiStateListener);
     }
@@ -616,7 +616,6 @@ public class JXCWindow extends JFrame
         }
         guiManager.initRendering(fullScreen);
         keybindingsManager.loadKeybindings();
-        shortcutsManager.loadShortcuts();
 
         if (serverInfo != null)
         {
@@ -635,7 +634,6 @@ public class JXCWindow extends JFrame
     public void term()
     {
         guiManager.term();
-        shortcutsManager.saveShortcuts();
         keybindingsManager.saveKeybindings();
         optionManager.saveOptions();
     }
