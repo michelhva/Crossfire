@@ -27,7 +27,6 @@ import java.util.regex.Pattern;
 /**
  * Parser to parse drawextinfo messages received from a Crossfire server and
  * update a {@link Buffer} instance.
- *
  * @author Andreas Kirschbaum
  */
 public class Parser
@@ -109,13 +108,10 @@ public class Parser
     private String lastText = "";
 
     /**
-     * Parse a text message.
-     *
-     * @param text The text message to parse.
-     *
-     * @param defaultColor The default color to use.
-     *
-     * @param buffer The buffer to update.
+     * Parses a text message.
+     * @param text the text message to parse
+     * @param defaultColor the default color to use
+     * @param buffer the buffer to update
      */
     public void parse(final String text, final Color defaultColor, final Buffer buffer)
     {
@@ -136,13 +132,10 @@ public class Parser
     }
 
     /**
-     * Parse a plain text message without media tags.
-     *
-     * @param text The text message to parse.
-     *
-     * @param color The color to use.
-     *
-     * @param buffer The buffer to update.
+     * Parses a plain text message without media tags.
+     * @param text the text message to parse
+     * @param color the color to use
+     * @param buffer the buffer to update
      */
     public void parseWithoutMediaTags(final String text, final Color color, final Buffer buffer)
     {
@@ -163,13 +156,10 @@ public class Parser
     }
 
     /**
-     * Parse one text line.
-     *
-     * @param text The text to process.
-     *
-     * @param defaultColor The default color to use.
-     *
-     * @param buffer The buffer instance to add to.
+     * Parses one text line.
+     * @param text the text to process
+     * @param defaultColor the default color to use
+     * @param buffer the buffer instance to add to
      */
     private void parseLine(final String text, final Color defaultColor, final Buffer buffer)
     {
@@ -188,12 +178,9 @@ public class Parser
     }
 
     /**
-     * Parse one text line.
-     *
-     * @param text The text to process.
-     *
-     * @param defaultColor The default color to use.
-     *
+     * Parses one text line.
+     * @param text the text to process
+     * @param defaultColor the default color to use
      * @return the <code>Line</code> instance
      */
     private Line parseLine(final String text, final Color defaultColor)
@@ -240,11 +227,9 @@ public class Parser
     }
 
     /**
-     * Parse one text line of a plain text message without media tags.
-     *
-     * @param text The text to process.
-     *
-     * @param buffer The buffer instance to add to.
+     * Parses one text line of a plain text message without media tags.
+     * @param text the text to process
+     * @param buffer the buffer instance to add to
      */
     private void parseLineWithoutMediaTags(final String text, final Buffer buffer)
     {
@@ -266,9 +251,8 @@ public class Parser
     }
 
     /**
-     * Reset all attributes to default values.
-     *
-     * @param defaultColor The default color to use.
+     * Resets all attributes to default values.
+     * @param defaultColor the default color to use
      */
     private void resetAttributes(final Color defaultColor)
     {
@@ -280,12 +264,10 @@ public class Parser
     }
 
     /**
-     * Process a tag.
-     *
-     * @param tag The tag name to process. Leading and trailing brackets have
-     * been removed.
-     *
-     * @param defaultColor The default color to use.
+     * Processes a tag.
+     * @param tag the tag name to process. Leading and trailing brackets have
+     * been removed
+     * @param defaultColor the default color to use
      */
     private void processTag(final String tag, final Color defaultColor)
     {
@@ -347,11 +329,9 @@ public class Parser
     }
 
     /**
-     * Process one text segment.
-     *
-     * @param text The text segment to process.
-     *
-     * @param line The line to add to.
+     * Processes one text segment.
+     * @param text the text segment to process
+     * @param line the line to add to
      */
     private void processText(final String text, final Line line)
     {
@@ -389,11 +369,9 @@ public class Parser
     }
 
     /**
-     * Return the string representation for a color.
-     *
-     * @param color The color to convert.
-     *
-     * @return The string representation.
+     * Returns the string representation for a color.
+     * @param color the color to convert
+     * @return the string representation
      */
     public static String toString(final Color color)
     {
