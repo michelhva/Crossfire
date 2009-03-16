@@ -112,7 +112,14 @@ public class MessageBufferUpdater
             if (type == MessageTypes.MSG_TYPE_QUERY // should not happen; but if it happens just display it
             || isTypeShown(type))
             {
-                parser.parse(message, findColor(color), buffer);
+                if (type == MessageTypes.MSG_TYPE_COMMUNICATION)
+                {
+                    parser.parseWithoutMediaTags(message, findColor(color), buffer);
+                }
+                else
+                {
+                    parser.parse(message, findColor(color), buffer);
+                }
             }
         }
     };
