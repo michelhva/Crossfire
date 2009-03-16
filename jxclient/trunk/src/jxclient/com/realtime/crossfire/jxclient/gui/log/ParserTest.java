@@ -38,7 +38,6 @@ import junit.textui.TestRunner;
 
 /**
  * Regression tests for class {@link Parser}.
- *
  * @author Andreas Kirschbaum
  */
 public class ParserTest extends TestCase
@@ -54,8 +53,7 @@ public class ParserTest extends TestCase
     private Buffer buffer = null;
 
     /**
-     * Create a new instance.
-     *
+     * Creates a new instance.
      * @param name the test case name
      */
     public ParserTest(final String name)
@@ -63,15 +61,18 @@ public class ParserTest extends TestCase
         super(name);
     }
 
+    /**
+     * Creates a new test suite.
+     * @return the test suite
+     */
     public static Test suite()
     {
         return new TestSuite(ParserTest.class);
     }
 
     /**
-     * Run the regression tests.
-     *
-     * @param args The command line arguments (ignored).
+     * Runs the regression tests.
+     * @param args the command line arguments (ignored)
      */
     public static void main(final String[] args)
     {
@@ -79,7 +80,7 @@ public class ParserTest extends TestCase
     }
 
     /**
-     * Check that an empty string does not add anything.
+     * Checks that an empty string does not add anything.
      */
     public void testEmpty()
     {
@@ -90,7 +91,7 @@ public class ParserTest extends TestCase
     }
 
     /**
-     * Check that unknown attributes are ignored.
+     * Checks that unknown attributes are ignored.
      */
     public void testAttributesIgnore()
     {
@@ -103,7 +104,7 @@ public class ParserTest extends TestCase
     }
 
     /**
-     * Check that attributes are correctly parsed.
+     * Checks that attributes are correctly parsed.
      */
     public void testAttributes1()
     {
@@ -163,7 +164,7 @@ public class ParserTest extends TestCase
     }
 
     /**
-     * Check that attributes are correctly parsed.
+     * Checks that attributes are correctly parsed.
      */
     public void testAttributes2()
     {
@@ -190,7 +191,7 @@ public class ParserTest extends TestCase
     }
 
     /**
-     * Check that font attributes are correctly parsed.
+     * Checks that font attributes are correctly parsed.
      */
     public void testAttributesFont1()
     {
@@ -208,7 +209,7 @@ public class ParserTest extends TestCase
     }
 
     /**
-     * Check that font attributes are correctly parsed: [/fixed] is
+     * Checks that font attributes are correctly parsed: [/fixed] is
      * undefined/does not end [fixed] block.
      */
     public void testAttributesFont2()
@@ -223,7 +224,7 @@ public class ParserTest extends TestCase
     }
 
     /**
-     * Check that color attributes are correctly parsed.
+     * Checks that color attributes are correctly parsed.
      */
     public void testAttributesColor()
     {
@@ -240,7 +241,7 @@ public class ParserTest extends TestCase
     }
 
     /**
-     * Check that attributes are reset for each message.
+     * Checks that attributes are reset for each message.
      */
     public void testAttributesReset()
     {
@@ -256,7 +257,7 @@ public class ParserTest extends TestCase
     }
 
     /**
-     * Check that multi-line messages are correctly parsed.
+     * Checks that multi-line messages are correctly parsed.
      */
     public void testMultiLine()
     {
@@ -276,7 +277,7 @@ public class ParserTest extends TestCase
     }
 
     /**
-     * Check that an un-closed tag is dopped.
+     * Checks that an un-closed tag is dopped.
      */
     public void testDropUnClosedTag()
     {
@@ -313,7 +314,7 @@ public class ParserTest extends TestCase
     }
 
     /**
-     * Check for expected contents of {@link #buffer}.
+     * Checks for expected contents of {@link #buffer}.
      *
      * @param expected The expected buffer contents.
      */
@@ -323,9 +324,8 @@ public class ParserTest extends TestCase
     }
 
     /**
-     * Return a string representation of {@link #buffer}.
-     *
-     * @return The string representation.
+     * Returns a string representation of {@link #buffer}.
+     * @return the string representation
      */
     private String dumpBuffer()
     {
@@ -335,11 +335,9 @@ public class ParserTest extends TestCase
     }
 
     /**
-     * Append the contents of a {@link Buffer} to a {@link StringBuilder}.
-     *
-     * @param sb The <code>StringBuilder</code> to append to.
-     *
-     * @param buffer The <code>Buffer</code> to append.
+     * Appends the contents of a {@link Buffer} to a {@link StringBuilder}.
+     * @param sb the <code>StringBuilder</code> to append to
+     * @param buffer the <code>Buffer</code> to append
      */
     private static void dumpBuffer(final StringBuilder sb, final Buffer buffer)
     {
@@ -356,11 +354,9 @@ public class ParserTest extends TestCase
     }
 
     /**
-     * Append the contents of a {@link Line} to a {@link StringBuilder}.
-     *
-     * @param sb The <code>StringBuilder</code> to append to.
-     *
-     * @param line The <code>Line</code> to append.
+     * Appends the contents of a {@link Line} to a {@link StringBuilder}.
+     * @param sb the <code>StringBuilder</code> to append to
+     * @param line the <code>Line</code> to append
      */
     private static void dumpLine(final StringBuilder sb, final Line line)
     {
@@ -372,11 +368,9 @@ public class ParserTest extends TestCase
     }
 
     /**
-     * Append the contents of a {@link Segment} to a {@link StringBuilder}.
-     *
-     * @param sb The <code>StringBuilder</code> to append to.
-     *
-     * @param segment The <code>Segment</code> to append.
+     * Appends the contents of a {@link Segment} to a {@link StringBuilder}.
+     * @param sb the <code>StringBuilder</code> to append to
+     * @param segment the <code>Segment</code> to append
      */
     private static void dumpSegment(final StringBuilder sb, final Segment segment)
     {
@@ -404,10 +398,8 @@ public class ParserTest extends TestCase
     }
 
     /**
-     * Return the string representation for a font.
-     *
-     * @param font The font to convert.
-     *
+     * Returns the string representation for a font.
+     * @param font the font to convert
      * @param sb the string builder to use
      */
     public static void dumpFont(final FontID font, final StringBuilder sb)
