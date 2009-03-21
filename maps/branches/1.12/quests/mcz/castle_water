@@ -8,7 +8,7 @@ enter_x 1
 enter_y 14
 msg
 Created:  1993-10-19
-Modified: 2008-12-21 Rick Tanner
+Modified: 2009-03-21 Rick Tanner
 endmsg
 end
 arch sea1
@@ -111,13 +111,12 @@ end
 arch rough_wall_2_1_2
 x 1
 end
-arch glue
+arch sea1
 name water
-face sea.111
 x 1
 y 1
-speed 0.000000
-is_floor 1
+move_slow walk
+move_slow_penalty 4.0
 end
 arch random_talisman
 x 1
@@ -131,21 +130,19 @@ arch rough_wall_1_3
 x 1
 y 2
 end
-arch glue
+arch sea1
 name water
-face sea.111
 x 1
 y 3
-speed 0.000000
-is_floor 1
+move_slow walk
+move_slow_penalty 4.0
 end
-arch glue
+arch sea1
 name water
-face sea.111
 x 1
 y 4
-speed 0.000000
-is_floor 1
+move_slow walk
+move_slow_penalty 4.0
 end
 arch snake
 name water snake
@@ -163,53 +160,48 @@ arch rough_wall_2_1_2
 x 1
 y 5
 end
-arch glue
+arch sea1
 name water
-face sea.111
 x 1
 y 6
-speed 0.000000
-is_floor 1
+move_slow walk
+move_slow_penalty 4.0
 end
 arch random_food
 x 1
 y 6
 end
-arch glue
+arch sea1
 name water
-face sea.111
 x 1
 y 7
-speed 0.000000
-is_floor 1
+move_slow walk
+move_slow_penalty 4.0
 end
-arch glue
+arch sea1
 name water
-face sea.111
 x 1
 y 8
-speed 0.000000
-is_floor 1
+move_slow walk
+move_slow_penalty 4.0
 end
 arch water_elemental
 x 1
 y 8
 end
-arch glue
+arch sea1
 name water
-face sea.111
 x 1
 y 9
-speed 0.000000
-is_floor 1
+move_slow walk
+move_slow_penalty 4.0
 end
-arch glue
+arch sea1
 name water
-face sea.111
 x 1
 y 10
-speed 0.000000
-is_floor 1
+move_slow walk
+move_slow_penalty 4.0
 end
 arch snake
 name water snake
@@ -219,29 +211,26 @@ x 1
 y 10
 generator 0
 end
-arch glue
+arch sea1
 name water
-face sea.111
 x 1
 y 11
-speed 0.000000
-is_floor 1
+move_slow walk
+move_slow_penalty 4.0
 end
-arch glue
+arch sea1
 name water
-face sea.111
 x 1
 y 12
-speed 0.000000
-is_floor 1
+move_slow walk
+move_slow_penalty 4.0
 end
-arch glue
+arch sea1
 name water
-face sea.111
 x 1
 y 13
-speed 0.000000
-is_floor 1
+move_slow walk
+move_slow_penalty 4.0
 end
 arch sea1
 x 1
@@ -268,21 +257,19 @@ end
 arch rough_wall_2_1_2
 x 2
 end
-arch glue
+arch sea1
 name water
-face sea.111
 x 2
 y 1
-speed 0.000000
-is_floor 1
+move_slow walk
+move_slow_penalty 4.0
 end
-arch glue
+arch sea1
 name water
-face sea.111
 x 2
 y 2
-speed 0.000000
-is_floor 1
+move_slow walk
+move_slow_penalty 4.0
 end
 arch water_elemental
 x 2
@@ -296,13 +283,12 @@ arch rough_wall_0
 x 2
 y 3
 end
-arch glue
+arch sea1
 name water
-face sea.111
 x 2
 y 4
-speed 0.000000
-is_floor 1
+move_slow walk
+move_slow_penalty 4.0
 end
 arch sea1
 x 2
@@ -312,13 +298,12 @@ arch rough_wall_2_1_2
 x 2
 y 5
 end
-arch glue
+arch sea1
 name water
-face sea.111
 x 2
 y 6
-speed 0.000000
-is_floor 1
+move_slow walk
+move_slow_penalty 4.0
 end
 arch snake
 name water snake
@@ -336,13 +321,12 @@ arch rough_wall_1_4
 x 2
 y 7
 end
-arch glue
+arch sea1
 name water
-face sea.111
 x 2
 y 8
-speed 0.000000
-is_floor 1
+move_slow walk
+move_slow_penalty 4.0
 end
 arch sea1
 x 2
@@ -352,13 +336,12 @@ arch rough_wall_0
 x 2
 y 9
 end
-arch glue
+arch sea1
 name water
-face sea.111
 x 2
 y 10
-speed 0.000000
-is_floor 1
+move_slow walk
+move_slow_penalty 4.0
 end
 arch sea1
 x 2
@@ -368,13 +351,12 @@ arch rough_wall_1_4
 x 2
 y 11
 end
-arch glue
+arch sea1
 name water
-face sea.111
 x 2
 y 12
-speed 0.000000
-is_floor 1
+move_slow walk
+move_slow_penalty 4.0
 end
 arch sea1
 x 2
@@ -414,29 +396,26 @@ arch rough_wall_1_2
 x 3
 y 1
 end
-arch glue
+arch sea1
 name water
-face sea.111
 x 3
 y 2
-speed 0.000000
-is_floor 1
+move_slow walk
+move_slow_penalty 4.0
 end
-arch glue
+arch sea1
 name water
-face sea.111
 x 3
 y 3
-speed 0.000000
-is_floor 1
+move_slow walk
+move_slow_penalty 4.0
 end
-arch glue
+arch sea1
 name water
-face sea.111
 x 3
 y 4
-speed 0.000000
-is_floor 1
+move_slow walk
+move_slow_penalty 4.0
 end
 arch sea1
 x 3
@@ -446,13 +425,12 @@ arch rough_wall_2_1_2
 x 3
 y 5
 end
-arch glue
+arch sea1
 name water
-face sea.111
 x 3
 y 6
-speed 0.000000
-is_floor 1
+move_slow walk
+move_slow_penalty 4.0
 end
 arch snake
 name water snake
@@ -470,13 +448,12 @@ arch rough_wall_1_3
 x 3
 y 7
 end
-arch glue
+arch sea1
 name water
-face sea.111
 x 3
 y 8
-speed 0.000000
-is_floor 1
+move_slow walk
+move_slow_penalty 4.0
 end
 arch snake
 name water snake
@@ -486,13 +463,12 @@ x 3
 y 8
 generator 0
 end
-arch glue
+arch sea1
 name water
-face sea.111
 x 3
 y 9
-speed 0.000000
-is_floor 1
+move_slow walk
+move_slow_penalty 4.0
 end
 arch sea1
 x 3
@@ -510,13 +486,12 @@ arch rough_wall_2_2_4
 x 3
 y 11
 end
-arch glue
+arch sea1
 name water
-face sea.111
 x 3
 y 12
-speed 0.000000
-is_floor 1
+move_slow walk
+move_slow_penalty 4.0
 end
 arch sea1
 x 3
@@ -526,13 +501,12 @@ arch rough_wall_2_1_2
 x 3
 y 13
 end
-arch glue
+arch sea1
 name water
-face sea.111
 x 3
 y 14
-speed 0.000000
-is_floor 1
+move_slow walk
+move_slow_penalty 4.0
 end
 arch random_food
 x 3
@@ -552,13 +526,12 @@ end
 arch rough_wall_2_1_2
 x 4
 end
-arch glue
+arch sea1
 name water
-face sea.111
 x 4
 y 1
-speed 0.000000
-is_floor 1
+move_slow walk
+move_slow_penalty 4.0
 end
 arch snake
 name water snake
@@ -576,13 +549,12 @@ arch rough_wall_1_4
 x 4
 y 2
 end
-arch glue
+arch sea1
 name water
-face sea.111
 x 4
 y 3
-speed 0.000000
-is_floor 1
+move_slow walk
+move_slow_penalty 4.0
 end
 arch sea1
 x 4
@@ -608,21 +580,19 @@ arch rough_wall_1_2
 x 4
 y 6
 end
-arch glue
+arch sea1
 name water
-face sea.111
 x 4
 y 7
-speed 0.000000
-is_floor 1
+move_slow walk
+move_slow_penalty 4.0
 end
-arch glue
+arch sea1
 name water
-face sea.111
 x 4
 y 8
-speed 0.000000
-is_floor 1
+move_slow walk
+move_slow_penalty 4.0
 end
 arch sea1
 x 4
@@ -632,29 +602,26 @@ arch rough_wall_0
 x 4
 y 9
 end
-arch glue
+arch sea1
 name water
-face sea.111
 x 4
 y 10
-speed 0.000000
-is_floor 1
+move_slow walk
+move_slow_penalty 4.0
 end
-arch glue
+arch sea1
 name water
-face sea.111
 x 4
 y 11
-speed 0.000000
-is_floor 1
+move_slow walk
+move_slow_penalty 4.0
 end
-arch glue
+arch sea1
 name water
-face sea.111
 x 4
 y 12
-speed 0.000000
-is_floor 1
+move_slow walk
+move_slow_penalty 4.0
 end
 arch sea1
 x 4
@@ -664,13 +631,12 @@ arch rough_wall_1_3
 x 4
 y 13
 end
-arch glue
+arch sea1
 name water
-face sea.111
 x 4
 y 14
-speed 0.000000
-is_floor 1
+move_slow walk
+move_slow_penalty 4.0
 end
 arch snake
 name water snake
@@ -694,13 +660,12 @@ end
 arch rough_wall_2_1_2
 x 5
 end
-arch glue
+arch sea1
 name water
-face sea.111
 x 5
 y 1
-speed 0.000000
-is_floor 1
+move_slow walk
+move_slow_penalty 4.0
 end
 arch sea1
 x 5
@@ -718,29 +683,26 @@ arch rough_wall_2_2_1
 x 5
 y 3
 end
-arch glue
+arch sea1
 name water
-face sea.111
 x 5
 y 4
-speed 0.000000
-is_floor 1
+move_slow walk
+move_slow_penalty 4.0
 end
-arch glue
+arch sea1
 name water
-face sea.111
 x 5
 y 5
-speed 0.000000
-is_floor 1
+move_slow walk
+move_slow_penalty 4.0
 end
-arch glue
+arch sea1
 name water
-face sea.111
 x 5
 y 6
-speed 0.000000
-is_floor 1
+move_slow walk
+move_slow_penalty 4.0
 end
 arch snake
 name water snake
@@ -766,13 +728,12 @@ arch rough_wall_2_2_1
 x 5
 y 8
 end
-arch glue
+arch sea1
 name water
-face sea.111
 x 5
 y 9
-speed 0.000000
-is_floor 1
+move_slow walk
+move_slow_penalty 4.0
 end
 arch snake
 name water snake
@@ -782,13 +743,12 @@ x 5
 y 9
 generator 0
 end
-arch glue
+arch sea1
 name water
-face sea.111
 x 5
 y 10
-speed 0.000000
-is_floor 1
+move_slow walk
+move_slow_penalty 4.0
 end
 arch sea1
 x 5
@@ -806,21 +766,19 @@ arch rough_wall_1_2
 x 5
 y 12
 end
-arch glue
+arch sea1
 name water
-face sea.111
 x 5
 y 13
-speed 0.000000
-is_floor 1
+move_slow walk
+move_slow_penalty 4.0
 end
-arch glue
+arch sea1
 name water
-face sea.111
 x 5
 y 14
-speed 0.000000
-is_floor 1
+move_slow walk
+move_slow_penalty 4.0
 end
 arch sea1
 x 5
@@ -836,13 +794,12 @@ end
 arch rough_wall_2_1_2
 x 6
 end
-arch glue
+arch sea1
 name water
-face sea.111
 x 6
 y 1
-speed 0.000000
-is_floor 1
+move_slow walk
+move_slow_penalty 4.0
 end
 arch fungus
 name large sea urchin
@@ -866,13 +823,12 @@ name Water Key
 slaying ra-gar-water
 end
 end
-arch glue
+arch sea1
 name water
-face sea.111
 x 6
 y 2
-speed 0.000000
-is_floor 1
+move_slow walk
+move_slow_penalty 4.0
 end
 arch sea1
 x 6
@@ -882,13 +838,12 @@ arch rough_wall_1_3
 x 6
 y 3
 end
-arch glue
+arch sea1
 name water
-face sea.111
 x 6
 y 4
-speed 0.000000
-is_floor 1
+move_slow walk
+move_slow_penalty 4.0
 end
 arch sea1
 x 6
@@ -906,13 +861,12 @@ arch rough_wall_1_2
 x 6
 y 6
 end
-arch glue
+arch sea1
 name water
-face sea.111
 x 6
 y 7
-speed 0.000000
-is_floor 1
+move_slow walk
+move_slow_penalty 4.0
 end
 arch sea1
 x 6
@@ -930,13 +884,12 @@ arch rough_wall_1_2
 x 6
 y 9
 end
-arch glue
+arch sea1
 name water
-face sea.111
 x 6
 y 10
-speed 0.000000
-is_floor 1
+move_slow walk
+move_slow_penalty 4.0
 end
 arch sea1
 x 6
@@ -946,13 +899,12 @@ arch rough_wall_2_1_2
 x 6
 y 11
 end
-arch glue
+arch sea1
 name water
-face sea.111
 x 6
 y 12
-speed 0.000000
-is_floor 1
+move_slow walk
+move_slow_penalty 4.0
 end
 arch snake
 name water snake
@@ -962,21 +914,19 @@ x 6
 y 12
 generator 0
 end
-arch glue
+arch sea1
 name water
-face sea.111
 x 6
 y 13
-speed 0.000000
-is_floor 1
+move_slow walk
+move_slow_penalty 4.0
 end
-arch glue
+arch sea1
 name water
-face sea.111
 x 6
 y 14
-speed 0.000000
-is_floor 1
+move_slow walk
+move_slow_penalty 4.0
 end
 arch sea1
 x 6
@@ -992,13 +942,12 @@ end
 arch rough_wall_2_1_2
 x 7
 end
-arch glue
+arch sea1
 name water
-face sea.111
 x 7
 y 1
-speed 0.000000
-is_floor 1
+move_slow walk
+move_slow_penalty 4.0
 end
 arch random_food
 x 7
@@ -1008,29 +957,26 @@ arch water_elemental
 x 7
 y 1
 end
-arch glue
+arch sea1
 name water
-face sea.111
 x 7
 y 2
-speed 0.000000
-is_floor 1
+move_slow walk
+move_slow_penalty 4.0
 end
-arch glue
+arch sea1
 name water
-face sea.111
 x 7
 y 3
-speed 0.000000
-is_floor 1
+move_slow walk
+move_slow_penalty 4.0
 end
-arch glue
+arch sea1
 name water
-face sea.111
 x 7
 y 4
-speed 0.000000
-is_floor 1
+move_slow walk
+move_slow_penalty 4.0
 end
 arch snake
 name water snake
@@ -1048,41 +994,37 @@ arch rough_wall_2_1_2
 x 7
 y 5
 end
-arch glue
+arch sea1
 name water
-face sea.111
 x 7
 y 6
-speed 0.000000
-is_floor 1
+move_slow walk
+move_slow_penalty 4.0
 end
 arch random_wealth
 x 7
 y 6
 end
-arch glue
+arch sea1
 name water
-face sea.111
 x 7
 y 7
-speed 0.000000
-is_floor 1
+move_slow walk
+move_slow_penalty 4.0
 end
-arch glue
+arch sea1
 name water
-face sea.111
 x 7
 y 8
-speed 0.000000
-is_floor 1
+move_slow walk
+move_slow_penalty 4.0
 end
-arch glue
+arch sea1
 name water
-face sea.111
 x 7
 y 9
-speed 0.000000
-is_floor 1
+move_slow walk
+move_slow_penalty 4.0
 end
 arch snake
 name water snake
@@ -1092,13 +1034,12 @@ x 7
 y 9
 generator 0
 end
-arch glue
+arch sea1
 name water
-face sea.111
 x 7
 y 10
-speed 0.000000
-is_floor 1
+move_slow walk
+move_slow_penalty 4.0
 end
 arch water_elemental
 x 7
@@ -1112,33 +1053,30 @@ arch rough_wall_2_1_2
 x 7
 y 11
 end
-arch glue
+arch sea1
 name water
-face sea.111
 x 7
 y 12
-speed 0.000000
-is_floor 1
+move_slow walk
+move_slow_penalty 4.0
 end
 arch water_elemental
 x 7
 y 12
 end
-arch glue
+arch sea1
 name water
-face sea.111
 x 7
 y 13
-speed 0.000000
-is_floor 1
+move_slow walk
+move_slow_penalty 4.0
 end
-arch glue
+arch sea1
 name water
-face sea.111
 x 7
 y 14
-speed 0.000000
-is_floor 1
+move_slow walk
+move_slow_penalty 4.0
 end
 arch random_wealth
 x 7
