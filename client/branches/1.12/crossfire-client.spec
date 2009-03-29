@@ -8,8 +8,8 @@
 #
 %define Name crossfire
 %define extra client
-%define version 2.0.dev
-%define sndversion 2.0.dev
+%define version 1.12.0
+%define sndversion 1.12.0
 %define release 1
 %define packager Crossfire Developer <crossfire@metalforge.org>
 %define prefix /usr/X11R6
