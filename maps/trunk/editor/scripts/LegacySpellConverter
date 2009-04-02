@@ -229,7 +229,7 @@ void convertGameObject(GameObject gameObject) {
     }
 
     // conversion code based on Crossfire's server/common/loader.l
-    int type = gameObject.getArchTypNr();
+    int type = gameObject.getTypeNo();
     switch (type) {
     case 5: // POTION
     case 18: // ALTAR
