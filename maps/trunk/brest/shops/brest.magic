@@ -13,7 +13,7 @@ enter_x 38
 enter_y 22
 msg
 Created:  1994-07-25
-Modified: 2008-12-14 Rick Tanner
+Modified: 2009-04-03 Andreas Kirschbaum
 endmsg
 end
 arch grass
@@ -3879,25 +3879,13 @@ arch redcwall_2_1_2
 x 28
 y 13
 end
-arch shop_empty
+arch shop_wands
 x 28
 y 14
 end
 arch shop_wands
 x 28
-y 14
-end
-arch shop_special
-x 28
 y 15
-end
-arch shop_wands
-x 28
-y 15
-end
-arch shop_special
-x 28
-y 16
 end
 arch shop_wands
 x 28
@@ -4058,25 +4046,13 @@ arch redcwall_2_2_4
 x 29
 y 13
 end
-arch shop_empty
+arch shop_wands
 x 29
 y 14
 end
 arch shop_wands
 x 29
-y 14
-end
-arch shop_special
-x 29
 y 15
-end
-arch shop_wands
-x 29
-y 15
-end
-arch shop_special
-x 29
-y 16
 end
 arch shop_wands
 x 29
@@ -4193,25 +4169,13 @@ arch shop_potions
 x 30
 y 13
 end
-arch shop_empty
+arch shop_wands
 x 30
 y 14
 end
 arch shop_wands
 x 30
-y 14
-end
-arch shop_special
-x 30
 y 15
-end
-arch shop_wands
-x 30
-y 15
-end
-arch shop_special
-x 30
-y 16
 end
 arch shop_wands
 x 30
