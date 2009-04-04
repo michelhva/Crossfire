@@ -8,7 +8,7 @@ enter_x 46
 enter_y 11
 msg
 Created:  2008-06-19 Chad Opperman | cromagic@sbcglobal.net
-Modified: 2008-10-06 Rick Tanner
+Modified: 2009-03-12 Chad Opperman | cromagic@sbcglobal.net
 endmsg
 end
 arch altar_trigger
@@ -1041,14 +1041,6 @@ arch dungeon_magic
 x 9
 y 4
 end
-arch pedestal
-x 9
-y 4
-invisible 1
-connected 100
-move_on all
-move_off all
-end
 arch teleporter
 hp 1
 sp 11
@@ -1074,14 +1066,6 @@ end
 arch dungeon_magic
 x 9
 y 5
-end
-arch pedestal
-x 9
-y 5
-invisible 1
-connected 100
-move_on all
-move_off all
 end
 arch teleporter
 hp 1
@@ -1109,14 +1093,6 @@ arch dungeon_magic
 x 9
 y 6
 end
-arch pedestal
-x 9
-y 6
-invisible 1
-connected 100
-move_on all
-move_off all
-end
 arch teleporter
 hp 1
 sp 11
@@ -1142,14 +1118,6 @@ end
 arch dungeon_magic
 x 9
 y 7
-end
-arch pedestal
-x 9
-y 7
-invisible 1
-connected 100
-move_on all
-move_off all
 end
 arch teleporter
 hp 1
@@ -1261,14 +1229,6 @@ arch dungeon_magic
 x 9
 y 15
 end
-arch pedestal
-x 9
-y 15
-invisible 1
-connected 100
-move_on all
-move_off all
-end
 arch teleporter
 hp 1
 sp 11
@@ -1294,14 +1254,6 @@ end
 arch dungeon_magic
 x 9
 y 16
-end
-arch pedestal
-x 9
-y 16
-invisible 1
-connected 100
-move_on all
-move_off all
 end
 arch teleporter
 hp 1
@@ -1329,14 +1281,6 @@ arch dungeon_magic
 x 9
 y 17
 end
-arch pedestal
-x 9
-y 17
-invisible 1
-connected 100
-move_on all
-move_off all
-end
 arch teleporter
 hp 1
 sp 11
@@ -1362,14 +1306,6 @@ end
 arch dungeon_magic
 x 9
 y 18
-end
-arch pedestal
-x 9
-y 18
-invisible 1
-connected 100
-move_on all
-move_off all
 end
 arch teleporter
 hp 1
@@ -1467,14 +1403,6 @@ arch dungeon_magic
 x 10
 y 4
 end
-arch pedestal
-x 10
-y 4
-invisible 1
-connected 100
-move_on all
-move_off all
-end
 arch teleporter
 hp 1
 sp 11
@@ -1494,14 +1422,6 @@ arch dungeon_magic
 x 10
 y 5
 end
-arch pedestal
-x 10
-y 5
-invisible 1
-connected 100
-move_on all
-move_off all
-end
 arch teleporter
 hp 1
 sp 11
@@ -1521,14 +1441,6 @@ arch dungeon_magic
 x 10
 y 6
 end
-arch pedestal
-x 10
-y 6
-invisible 1
-connected 100
-move_on all
-move_off all
-end
 arch teleporter
 hp 1
 sp 11
@@ -1547,14 +1459,6 @@ end
 arch dungeon_magic
 x 10
 y 7
-end
-arch pedestal
-x 10
-y 7
-invisible 1
-connected 100
-move_on all
-move_off all
 end
 arch teleporter
 hp 1
@@ -1709,14 +1613,6 @@ arch dungeon_magic
 x 10
 y 15
 end
-arch pedestal
-x 10
-y 15
-invisible 1
-connected 100
-move_on all
-move_off all
-end
 arch teleporter
 hp 1
 sp 11
@@ -1736,14 +1632,6 @@ arch dungeon_magic
 x 10
 y 16
 end
-arch pedestal
-x 10
-y 16
-invisible 1
-connected 100
-move_on all
-move_off all
-end
 arch teleporter
 hp 1
 sp 11
@@ -1762,14 +1650,6 @@ end
 arch dungeon_magic
 x 10
 y 17
-end
-arch pedestal
-x 10
-y 17
-invisible 1
-connected 100
-move_on all
-move_off all
 end
 arch teleporter
 hp 1
@@ -1796,14 +1676,6 @@ end
 arch dungeon_magic
 x 10
 y 18
-end
-arch pedestal
-x 10
-y 18
-invisible 1
-connected 100
-move_on all
-move_off all
 end
 arch teleporter
 hp 1
@@ -1901,14 +1773,6 @@ arch dungeon_magic
 x 11
 y 4
 end
-arch pedestal
-x 11
-y 4
-invisible 1
-connected 100
-move_on all
-move_off all
-end
 arch teleporter
 hp 1
 sp 11
@@ -1928,14 +1792,6 @@ arch dungeon_magic
 x 11
 y 5
 end
-arch pedestal
-x 11
-y 5
-invisible 1
-connected 100
-move_on all
-move_off all
-end
 arch teleporter
 hp 1
 sp 11
@@ -1955,14 +1811,6 @@ arch dungeon_magic
 x 11
 y 6
 end
-arch pedestal
-x 11
-y 6
-invisible 1
-connected 100
-move_on all
-move_off all
-end
 arch teleporter
 hp 1
 sp 11
@@ -1981,14 +1829,6 @@ end
 arch dungeon_magic
 x 11
 y 7
-end
-arch pedestal
-x 11
-y 7
-invisible 1
-connected 100
-move_on all
-move_off all
 end
 arch teleporter
 hp 1
@@ -2008,14 +1848,6 @@ end
 arch dungeon_magic
 x 11
 y 8
-end
-arch pedestal
-x 11
-y 8
-invisible 1
-connected 100
-move_on all
-move_off all
 end
 arch teleporter
 hp 1
@@ -2035,14 +1867,6 @@ end
 arch dungeon_magic
 x 11
 y 9
-end
-arch pedestal
-x 11
-y 9
-invisible 1
-connected 100
-move_on all
-move_off all
 end
 arch teleporter
 hp 1
@@ -2062,14 +1886,6 @@ end
 arch dungeon_magic
 x 11
 y 10
-end
-arch pedestal
-x 11
-y 10
-invisible 1
-connected 100
-move_on all
-move_off all
 end
 arch teleporter
 hp 1
@@ -2089,14 +1905,6 @@ end
 arch dungeon_magic
 x 11
 y 11
-end
-arch pedestal
-x 11
-y 11
-invisible 1
-connected 100
-move_on all
-move_off all
 end
 arch teleporter
 hp 1
@@ -2116,14 +1924,6 @@ end
 arch dungeon_magic
 x 11
 y 12
-end
-arch pedestal
-x 11
-y 12
-invisible 1
-connected 100
-move_on all
-move_off all
 end
 arch teleporter
 hp 1
@@ -2143,14 +1943,6 @@ end
 arch dungeon_magic
 x 11
 y 13
-end
-arch pedestal
-x 11
-y 13
-invisible 1
-connected 100
-move_on all
-move_off all
 end
 arch teleporter
 hp 1
@@ -2170,14 +1962,6 @@ end
 arch dungeon_magic
 x 11
 y 14
-end
-arch pedestal
-x 11
-y 14
-invisible 1
-connected 100
-move_on all
-move_off all
 end
 arch teleporter
 hp 1
@@ -2197,14 +1981,6 @@ end
 arch dungeon_magic
 x 11
 y 15
-end
-arch pedestal
-x 11
-y 15
-invisible 1
-connected 100
-move_on all
-move_off all
 end
 arch teleporter
 hp 1
@@ -2224,14 +2000,6 @@ end
 arch dungeon_magic
 x 11
 y 16
-end
-arch pedestal
-x 11
-y 16
-invisible 1
-connected 100
-move_on all
-move_off all
 end
 arch teleporter
 hp 1
@@ -2251,14 +2019,6 @@ end
 arch dungeon_magic
 x 11
 y 17
-end
-arch pedestal
-x 11
-y 17
-invisible 1
-connected 100
-move_on all
-move_off all
 end
 arch teleporter
 hp 1
@@ -2285,14 +2045,6 @@ end
 arch dungeon_magic
 x 11
 y 18
-end
-arch pedestal
-x 11
-y 18
-invisible 1
-connected 100
-move_on all
-move_off all
 end
 arch teleporter
 hp 1
@@ -2390,14 +2142,6 @@ arch dungeon_magic
 x 12
 y 4
 end
-arch pedestal
-x 12
-y 4
-invisible 1
-connected 100
-move_on all
-move_off all
-end
 arch teleporter
 hp 1
 sp 11
@@ -2417,14 +2161,6 @@ arch dungeon_magic
 x 12
 y 5
 end
-arch pedestal
-x 12
-y 5
-invisible 1
-connected 100
-move_on all
-move_off all
-end
 arch teleporter
 hp 1
 sp 11
@@ -2444,14 +2180,6 @@ arch dungeon_magic
 x 12
 y 6
 end
-arch pedestal
-x 12
-y 6
-invisible 1
-connected 100
-move_on all
-move_off all
-end
 arch teleporter
 hp 1
 sp 11
@@ -2467,17 +2195,17 @@ y 6
 no_magic 1
 damned 1
 end
+arch altar_trigger
+slaying blocked
+exp 1
+food 1
+x 12
+y 7
+last_sp 1
+end
 arch dungeon_magic
 x 12
 y 7
-end
-arch pedestal
-x 12
-y 7
-invisible 1
-connected 100
-move_on all
-move_off all
 end
 arch teleporter
 hp 1
@@ -2493,19 +2221,19 @@ x 12
 y 7
 no_magic 1
 damned 1
+end
+arch altar_trigger
+slaying blocked
+exp 1
+food 1
+x 12
+y 8
+last_sp 1
 end
 arch dungeon_magic
 x 12
 y 8
 end
-arch pedestal
-x 12
-y 8
-invisible 1
-connected 100
-move_on all
-move_off all
-end
 arch teleporter
 hp 1
 sp 11
@@ -2521,17 +2249,17 @@ y 8
 no_magic 1
 damned 1
 end
+arch altar_trigger
+slaying blocked
+exp 1
+food 1
+x 12
+y 9
+last_sp 1
+end
 arch dungeon_magic
 x 12
 y 9
-end
-arch pedestal
-x 12
-y 9
-invisible 1
-connected 100
-move_on all
-move_off all
 end
 arch teleporter
 hp 1
@@ -2547,19 +2275,19 @@ x 12
 y 9
 no_magic 1
 damned 1
+end
+arch altar_trigger
+slaying blocked
+exp 1
+food 1
+x 12
+y 10
+last_sp 1
 end
 arch dungeon_magic
 x 12
 y 10
 end
-arch pedestal
-x 12
-y 10
-invisible 1
-connected 100
-move_on all
-move_off all
-end
 arch teleporter
 hp 1
 sp 11
@@ -2575,17 +2303,17 @@ y 10
 no_magic 1
 damned 1
 end
+arch altar_trigger
+slaying blocked
+exp 1
+food 1
+x 12
+y 11
+last_sp 1
+end
 arch dungeon_magic
 x 12
 y 11
-end
-arch pedestal
-x 12
-y 11
-invisible 1
-connected 100
-move_on all
-move_off all
 end
 arch teleporter
 hp 1
@@ -2602,17 +2330,17 @@ y 11
 no_magic 1
 damned 1
 end
+arch altar_trigger
+slaying blocked
+exp 1
+food 1
+x 12
+y 12
+last_sp 1
+end
 arch dungeon_magic
 x 12
 y 12
-end
-arch pedestal
-x 12
-y 12
-invisible 1
-connected 100
-move_on all
-move_off all
 end
 arch teleporter
 hp 1
@@ -2629,17 +2357,17 @@ y 12
 no_magic 1
 damned 1
 end
+arch altar_trigger
+slaying blocked
+exp 1
+food 1
+x 12
+y 13
+last_sp 1
+end
 arch dungeon_magic
 x 12
 y 13
-end
-arch pedestal
-x 12
-y 13
-invisible 1
-connected 100
-move_on all
-move_off all
 end
 arch teleporter
 hp 1
@@ -2656,17 +2384,17 @@ y 13
 no_magic 1
 damned 1
 end
+arch altar_trigger
+slaying blocked
+exp 1
+food 1
+x 12
+y 14
+last_sp 1
+end
 arch dungeon_magic
 x 12
 y 14
-end
-arch pedestal
-x 12
-y 14
-invisible 1
-connected 100
-move_on all
-move_off all
 end
 arch teleporter
 hp 1
@@ -2682,18 +2410,18 @@ x 12
 y 14
 no_magic 1
 damned 1
+end
+arch altar_trigger
+slaying blocked
+exp 1
+food 1
+x 12
+y 15
+last_sp 1
 end
 arch dungeon_magic
 x 12
 y 15
-end
-arch pedestal
-x 12
-y 15
-invisible 1
-connected 100
-move_on all
-move_off all
 end
 arch teleporter
 hp 1
@@ -2713,14 +2441,6 @@ end
 arch dungeon_magic
 x 12
 y 16
-end
-arch pedestal
-x 12
-y 16
-invisible 1
-connected 100
-move_on all
-move_off all
 end
 arch teleporter
 hp 1
@@ -2740,14 +2460,6 @@ end
 arch dungeon_magic
 x 12
 y 17
-end
-arch pedestal
-x 12
-y 17
-invisible 1
-connected 100
-move_on all
-move_off all
 end
 arch teleporter
 hp 1
@@ -2774,14 +2486,6 @@ end
 arch dungeon_magic
 x 12
 y 18
-end
-arch pedestal
-x 12
-y 18
-invisible 1
-connected 100
-move_on all
-move_off all
 end
 arch teleporter
 hp 1
@@ -2879,14 +2583,6 @@ arch dungeon_magic
 x 13
 y 4
 end
-arch pedestal
-x 13
-y 4
-invisible 1
-connected 100
-move_on all
-move_off all
-end
 arch teleporter
 hp 1
 sp 11
@@ -2906,14 +2602,6 @@ arch dungeon_magic
 x 13
 y 5
 end
-arch pedestal
-x 13
-y 5
-invisible 1
-connected 100
-move_on all
-move_off all
-end
 arch teleporter
 hp 1
 sp 11
@@ -2933,14 +2621,6 @@ arch dungeon_magic
 x 13
 y 6
 end
-arch pedestal
-x 13
-y 6
-invisible 1
-connected 100
-move_on all
-move_off all
-end
 arch teleporter
 hp 1
 sp 11
@@ -2956,17 +2636,17 @@ y 6
 no_magic 1
 damned 1
 end
+arch altar_trigger
+slaying blocked
+exp 1
+food 1
+x 13
+y 7
+last_sp 1
+end
 arch dungeon_magic
 x 13
 y 7
-end
-arch pedestal
-x 13
-y 7
-invisible 1
-connected 100
-move_on all
-move_off all
 end
 arch teleporter
 hp 1
@@ -2982,19 +2662,19 @@ x 13
 y 7
 no_magic 1
 damned 1
+end
+arch altar_trigger
+slaying blocked
+exp 1
+food 1
+x 13
+y 8
+last_sp 1
 end
 arch dungeon_magic
 x 13
 y 8
 end
-arch pedestal
-x 13
-y 8
-invisible 1
-connected 100
-move_on all
-move_off all
-end
 arch teleporter
 hp 1
 sp 11
@@ -3010,17 +2690,17 @@ y 8
 no_magic 1
 damned 1
 end
+arch altar_trigger
+slaying blocked
+exp 1
+food 1
+x 13
+y 9
+last_sp 1
+end
 arch dungeon_magic
 x 13
 y 9
-end
-arch pedestal
-x 13
-y 9
-invisible 1
-connected 100
-move_on all
-move_off all
 end
 arch teleporter
 hp 1
@@ -3036,19 +2716,19 @@ x 13
 y 9
 no_magic 1
 damned 1
+end
+arch altar_trigger
+slaying blocked
+exp 1
+food 1
+x 13
+y 10
+last_sp 1
 end
 arch dungeon_magic
 x 13
 y 10
 end
-arch pedestal
-x 13
-y 10
-invisible 1
-connected 100
-move_on all
-move_off all
-end
 arch teleporter
 hp 1
 sp 11
@@ -3064,17 +2744,17 @@ y 10
 no_magic 1
 damned 1
 end
+arch altar_trigger
+slaying blocked
+exp 1
+food 1
+x 13
+y 11
+last_sp 1
+end
 arch dungeon_magic
 x 13
 y 11
-end
-arch pedestal
-x 13
-y 11
-invisible 1
-connected 100
-move_on all
-move_off all
 end
 arch teleporter
 hp 1
@@ -3091,17 +2771,17 @@ y 11
 no_magic 1
 damned 1
 end
+arch altar_trigger
+slaying blocked
+exp 1
+food 1
+x 13
+y 12
+last_sp 1
+end
 arch dungeon_magic
 x 13
 y 12
-end
-arch pedestal
-x 13
-y 12
-invisible 1
-connected 100
-move_on all
-move_off all
 end
 arch teleporter
 hp 1
@@ -3118,17 +2798,17 @@ y 12
 no_magic 1
 damned 1
 end
+arch altar_trigger
+slaying blocked
+exp 1
+food 1
+x 13
+y 13
+last_sp 1
+end
 arch dungeon_magic
 x 13
 y 13
-end
-arch pedestal
-x 13
-y 13
-invisible 1
-connected 100
-move_on all
-move_off all
 end
 arch teleporter
 hp 1
@@ -3145,17 +2825,17 @@ y 13
 no_magic 1
 damned 1
 end
+arch altar_trigger
+slaying blocked
+exp 1
+food 1
+x 13
+y 14
+last_sp 1
+end
 arch dungeon_magic
 x 13
 y 14
-end
-arch pedestal
-x 13
-y 14
-invisible 1
-connected 100
-move_on all
-move_off all
 end
 arch teleporter
 hp 1
@@ -3171,18 +2851,18 @@ x 13
 y 14
 no_magic 1
 damned 1
+end
+arch altar_trigger
+slaying blocked
+exp 1
+food 1
+x 13
+y 15
+last_sp 1
 end
 arch dungeon_magic
 x 13
 y 15
-end
-arch pedestal
-x 13
-y 15
-invisible 1
-connected 100
-move_on all
-move_off all
 end
 arch teleporter
 hp 1
@@ -3202,14 +2882,6 @@ end
 arch dungeon_magic
 x 13
 y 16
-end
-arch pedestal
-x 13
-y 16
-invisible 1
-connected 100
-move_on all
-move_off all
 end
 arch teleporter
 hp 1
@@ -3229,14 +2901,6 @@ end
 arch dungeon_magic
 x 13
 y 17
-end
-arch pedestal
-x 13
-y 17
-invisible 1
-connected 100
-move_on all
-move_off all
 end
 arch teleporter
 hp 1
@@ -3263,14 +2927,6 @@ end
 arch dungeon_magic
 x 13
 y 18
-end
-arch pedestal
-x 13
-y 18
-invisible 1
-connected 100
-move_on all
-move_off all
 end
 arch teleporter
 hp 1
@@ -3411,14 +3067,6 @@ arch dungeon_magic
 x 14
 y 4
 end
-arch pedestal
-x 14
-y 4
-invisible 1
-connected 100
-move_on all
-move_off all
-end
 arch teleporter
 hp 1
 sp 11
@@ -3438,14 +3086,6 @@ arch dungeon_magic
 x 14
 y 5
 end
-arch pedestal
-x 14
-y 5
-invisible 1
-connected 100
-move_on all
-move_off all
-end
 arch teleporter
 hp 1
 sp 11
@@ -3465,14 +3105,6 @@ arch dungeon_magic
 x 14
 y 6
 end
-arch pedestal
-x 14
-y 6
-invisible 1
-connected 100
-move_on all
-move_off all
-end
 arch teleporter
 hp 1
 sp 11
@@ -3488,17 +3120,17 @@ y 6
 no_magic 1
 damned 1
 end
+arch altar_trigger
+slaying blocked
+exp 1
+food 1
+x 14
+y 7
+last_sp 1
+end
 arch dungeon_magic
 x 14
 y 7
-end
-arch pedestal
-x 14
-y 7
-invisible 1
-connected 100
-move_on all
-move_off all
 end
 arch teleporter
 hp 1
@@ -3514,19 +3146,19 @@ x 14
 y 7
 no_magic 1
 damned 1
+end
+arch altar_trigger
+slaying blocked
+exp 1
+food 1
+x 14
+y 8
+last_sp 1
 end
 arch dungeon_magic
 x 14
 y 8
 end
-arch pedestal
-x 14
-y 8
-invisible 1
-connected 100
-move_on all
-move_off all
-end
 arch teleporter
 hp 1
 sp 11
@@ -3542,17 +3174,17 @@ y 8
 no_magic 1
 damned 1
 end
+arch altar_trigger
+slaying blocked
+exp 1
+food 1
+x 14
+y 9
+last_sp 1
+end
 arch dungeon_magic
 x 14
 y 9
-end
-arch pedestal
-x 14
-y 9
-invisible 1
-connected 100
-move_on all
-move_off all
 end
 arch teleporter
 hp 1
@@ -3568,19 +3200,19 @@ x 14
 y 9
 no_magic 1
 damned 1
+end
+arch altar_trigger
+slaying blocked
+exp 1
+food 1
+x 14
+y 10
+last_sp 1
 end
 arch dungeon_magic
 x 14
 y 10
 end
-arch pedestal
-x 14
-y 10
-invisible 1
-connected 100
-move_on all
-move_off all
-end
 arch teleporter
 hp 1
 sp 11
@@ -3596,17 +3228,17 @@ y 10
 no_magic 1
 damned 1
 end
+arch altar_trigger
+slaying blocked
+exp 1
+food 1
+x 14
+y 11
+last_sp 1
+end
 arch dungeon_magic
 x 14
 y 11
-end
-arch pedestal
-x 14
-y 11
-invisible 1
-connected 100
-move_on all
-move_off all
 end
 arch teleporter
 hp 1
@@ -3623,17 +3255,17 @@ y 11
 no_magic 1
 damned 1
 end
+arch altar_trigger
+slaying blocked
+exp 1
+food 1
+x 14
+y 12
+last_sp 1
+end
 arch dungeon_magic
 x 14
 y 12
-end
-arch pedestal
-x 14
-y 12
-invisible 1
-connected 100
-move_on all
-move_off all
 end
 arch teleporter
 hp 1
@@ -3650,17 +3282,17 @@ y 12
 no_magic 1
 damned 1
 end
+arch altar_trigger
+slaying blocked
+exp 1
+food 1
+x 14
+y 13
+last_sp 1
+end
 arch dungeon_magic
 x 14
 y 13
-end
-arch pedestal
-x 14
-y 13
-invisible 1
-connected 100
-move_on all
-move_off all
 end
 arch teleporter
 hp 1
@@ -3677,17 +3309,17 @@ y 13
 no_magic 1
 damned 1
 end
+arch altar_trigger
+slaying blocked
+exp 1
+food 1
+x 14
+y 14
+last_sp 1
+end
 arch dungeon_magic
 x 14
 y 14
-end
-arch pedestal
-x 14
-y 14
-invisible 1
-connected 100
-move_on all
-move_off all
 end
 arch teleporter
 hp 1
@@ -3703,18 +3335,18 @@ x 14
 y 14
 no_magic 1
 damned 1
+end
+arch altar_trigger
+slaying blocked
+exp 1
+food 1
+x 14
+y 15
+last_sp 1
 end
 arch dungeon_magic
 x 14
 y 15
-end
-arch pedestal
-x 14
-y 15
-invisible 1
-connected 100
-move_on all
-move_off all
 end
 arch teleporter
 hp 1
@@ -3734,14 +3366,6 @@ end
 arch dungeon_magic
 x 14
 y 16
-end
-arch pedestal
-x 14
-y 16
-invisible 1
-connected 100
-move_on all
-move_off all
 end
 arch teleporter
 hp 1
@@ -3761,14 +3385,6 @@ end
 arch dungeon_magic
 x 14
 y 17
-end
-arch pedestal
-x 14
-y 17
-invisible 1
-connected 100
-move_on all
-move_off all
 end
 arch teleporter
 hp 1
@@ -3795,14 +3411,6 @@ end
 arch dungeon_magic
 x 14
 y 18
-end
-arch pedestal
-x 14
-y 18
-invisible 1
-connected 100
-move_on all
-move_off all
 end
 arch teleporter
 hp 1
@@ -3900,14 +3508,6 @@ arch dungeon_magic
 x 15
 y 4
 end
-arch pedestal
-x 15
-y 4
-invisible 1
-connected 100
-move_on all
-move_off all
-end
 arch teleporter
 hp 1
 sp 11
@@ -3927,14 +3527,6 @@ arch dungeon_magic
 x 15
 y 5
 end
-arch pedestal
-x 15
-y 5
-invisible 1
-connected 100
-move_on all
-move_off all
-end
 arch teleporter
 hp 1
 sp 11
@@ -3954,14 +3546,6 @@ arch dungeon_magic
 x 15
 y 6
 end
-arch pedestal
-x 15
-y 6
-invisible 1
-connected 100
-move_on all
-move_off all
-end
 arch teleporter
 hp 1
 sp 11
@@ -3977,17 +3561,17 @@ y 6
 no_magic 1
 damned 1
 end
+arch altar_trigger
+slaying blocked
+exp 1
+food 1
+x 15
+y 7
+last_sp 1
+end
 arch dungeon_magic
 x 15
 y 7
-end
-arch pedestal
-x 15
-y 7
-invisible 1
-connected 100
-move_on all
-move_off all
 end
 arch teleporter
 hp 1
@@ -4003,19 +3587,19 @@ x 15
 y 7
 no_magic 1
 damned 1
+end
+arch altar_trigger
+slaying blocked
+exp 1
+food 1
+x 15
+y 8
+last_sp 1
 end
 arch dungeon_magic
 x 15
 y 8
 end
-arch pedestal
-x 15
-y 8
-invisible 1
-connected 100
-move_on all
-move_off all
-end
 arch teleporter
 hp 1
 sp 11
@@ -4031,17 +3615,17 @@ y 8
 no_magic 1
 damned 1
 end
+arch altar_trigger
+slaying blocked
+exp 1
+food 1
+x 15
+y 9
+last_sp 1
+end
 arch dungeon_magic
 x 15
 y 9
-end
-arch pedestal
-x 15
-y 9
-invisible 1
-connected 100
-move_on all
-move_off all
 end
 arch teleporter
 hp 1
@@ -4057,19 +3641,19 @@ x 15
 y 9
 no_magic 1
 damned 1
+end
+arch altar_trigger
+slaying blocked
+exp 1
+food 1
+x 15
+y 10
+last_sp 1
 end
 arch dungeon_magic
 x 15
 y 10
 end
-arch pedestal
-x 15
-y 10
-invisible 1
-connected 100
-move_on all
-move_off all
-end
 arch teleporter
 hp 1
 sp 11
@@ -4085,17 +3669,17 @@ y 10
 no_magic 1
 damned 1
 end
+arch altar_trigger
+slaying blocked
+exp 1
+food 1
+x 15
+y 11
+last_sp 1
+end
 arch dungeon_magic
 x 15
 y 11
-end
-arch pedestal
-x 15
-y 11
-invisible 1
-connected 100
-move_on all
-move_off all
 end
 arch teleporter
 hp 1
@@ -4112,17 +3696,17 @@ y 11
 no_magic 1
 damned 1
 end
+arch altar_trigger
+slaying blocked
+exp 1
+food 1
+x 15
+y 12
+last_sp 1
+end
 arch dungeon_magic
 x 15
 y 12
-end
-arch pedestal
-x 15
-y 12
-invisible 1
-connected 100
-move_on all
-move_off all
 end
 arch teleporter
 hp 1
@@ -4139,17 +3723,17 @@ y 12
 no_magic 1
 damned 1
 end
+arch altar_trigger
+slaying blocked
+exp 1
+food 1
+x 15
+y 13
+last_sp 1
+end
 arch dungeon_magic
 x 15
 y 13
-end
-arch pedestal
-x 15
-y 13
-invisible 1
-connected 100
-move_on all
-move_off all
 end
 arch teleporter
 hp 1
@@ -4166,17 +3750,17 @@ y 13
 no_magic 1
 damned 1
 end
+arch altar_trigger
+slaying blocked
+exp 1
+food 1
+x 15
+y 14
+last_sp 1
+end
 arch dungeon_magic
 x 15
 y 14
-end
-arch pedestal
-x 15
-y 14
-invisible 1
-connected 100
-move_on all
-move_off all
 end
 arch teleporter
 hp 1
@@ -4192,18 +3776,18 @@ x 15
 y 14
 no_magic 1
 damned 1
+end
+arch altar_trigger
+slaying blocked
+exp 1
+food 1
+x 15
+y 15
+last_sp 1
 end
 arch dungeon_magic
 x 15
 y 15
-end
-arch pedestal
-x 15
-y 15
-invisible 1
-connected 100
-move_on all
-move_off all
 end
 arch teleporter
 hp 1
@@ -4223,14 +3807,6 @@ end
 arch dungeon_magic
 x 15
 y 16
-end
-arch pedestal
-x 15
-y 16
-invisible 1
-connected 100
-move_on all
-move_off all
 end
 arch teleporter
 hp 1
@@ -4250,14 +3826,6 @@ end
 arch dungeon_magic
 x 15
 y 17
-end
-arch pedestal
-x 15
-y 17
-invisible 1
-connected 100
-move_on all
-move_off all
 end
 arch teleporter
 hp 1
@@ -4284,14 +3852,6 @@ end
 arch dungeon_magic
 x 15
 y 18
-end
-arch pedestal
-x 15
-y 18
-invisible 1
-connected 100
-move_on all
-move_off all
 end
 arch teleporter
 hp 1
@@ -4389,14 +3949,6 @@ arch dungeon_magic
 x 16
 y 4
 end
-arch pedestal
-x 16
-y 4
-invisible 1
-connected 100
-move_on all
-move_off all
-end
 arch teleporter
 hp 1
 sp 11
@@ -4416,14 +3968,6 @@ arch dungeon_magic
 x 16
 y 5
 end
-arch pedestal
-x 16
-y 5
-invisible 1
-connected 100
-move_on all
-move_off all
-end
 arch teleporter
 hp 1
 sp 11
@@ -4443,14 +3987,6 @@ arch dungeon_magic
 x 16
 y 6
 end
-arch pedestal
-x 16
-y 6
-invisible 1
-connected 100
-move_on all
-move_off all
-end
 arch teleporter
 hp 1
 sp 11
@@ -4466,17 +4002,17 @@ y 6
 no_magic 1
 damned 1
 end
+arch altar_trigger
+slaying blocked
+exp 1
+food 1
+x 16
+y 7
+last_sp 1
+end
 arch dungeon_magic
 x 16
 y 7
-end
-arch pedestal
-x 16
-y 7
-invisible 1
-connected 100
-move_on all
-move_off all
 end
 arch teleporter
 hp 1
@@ -4492,19 +4028,19 @@ x 16
 y 7
 no_magic 1
 damned 1
+end
+arch altar_trigger
+slaying blocked
+exp 1
+food 1
+x 16
+y 8
+last_sp 1
 end
 arch dungeon_magic
 x 16
 y 8
 end
-arch pedestal
-x 16
-y 8
-invisible 1
-connected 100
-move_on all
-move_off all
-end
 arch teleporter
 hp 1
 sp 11
@@ -4520,17 +4056,17 @@ y 8
 no_magic 1
 damned 1
 end
+arch altar_trigger
+slaying blocked
+exp 1
+food 1
+x 16
+y 9
+last_sp 1
+end
 arch dungeon_magic
 x 16
 y 9
-end
-arch pedestal
-x 16
-y 9
-invisible 1
-connected 100
-move_on all
-move_off all
 end
 arch teleporter
 hp 1
@@ -4546,19 +4082,19 @@ x 16
 y 9
 no_magic 1
 damned 1
+end
+arch altar_trigger
+slaying blocked
+exp 1
+food 1
+x 16
+y 10
+last_sp 1
 end
 arch dungeon_magic
 x 16
 y 10
 end
-arch pedestal
-x 16
-y 10
-invisible 1
-connected 100
-move_on all
-move_off all
-end
 arch teleporter
 hp 1
 sp 11
@@ -4574,17 +4110,17 @@ y 10
 no_magic 1
 damned 1
 end
+arch altar_trigger
+slaying blocked
+exp 1
+food 1
+x 16
+y 11
+last_sp 1
+end
 arch dungeon_magic
 x 16
 y 11
-end
-arch pedestal
-x 16
-y 11
-invisible 1
-connected 100
-move_on all
-move_off all
 end
 arch teleporter
 hp 1
@@ -4601,17 +4137,17 @@ y 11
 no_magic 1
 damned 1
 end
+arch altar_trigger
+slaying blocked
+exp 1
+food 1
+x 16
+y 12
+last_sp 1
+end
 arch dungeon_magic
 x 16
 y 12
-end
-arch pedestal
-x 16
-y 12
-invisible 1
-connected 100
-move_on all
-move_off all
 end
 arch teleporter
 hp 1
@@ -4628,17 +4164,17 @@ y 12
 no_magic 1
 damned 1
 end
+arch altar_trigger
+slaying blocked
+exp 1
+food 1
+x 16
+y 13
+last_sp 1
+end
 arch dungeon_magic
 x 16
 y 13
-end
-arch pedestal
-x 16
-y 13
-invisible 1
-connected 100
-move_on all
-move_off all
 end
 arch teleporter
 hp 1
@@ -4655,17 +4191,17 @@ y 13
 no_magic 1
 damned 1
 end
+arch altar_trigger
+slaying blocked
+exp 1
+food 1
+x 16
+y 14
+last_sp 1
+end
 arch dungeon_magic
 x 16
 y 14
-end
-arch pedestal
-x 16
-y 14
-invisible 1
-connected 100
-move_on all
-move_off all
 end
 arch teleporter
 hp 1
@@ -4681,18 +4217,18 @@ x 16
 y 14
 no_magic 1
 damned 1
+end
+arch altar_trigger
+slaying blocked
+exp 1
+food 1
+x 16
+y 15
+last_sp 1
 end
 arch dungeon_magic
 x 16
 y 15
-end
-arch pedestal
-x 16
-y 15
-invisible 1
-connected 100
-move_on all
-move_off all
 end
 arch teleporter
 hp 1
@@ -4712,14 +4248,6 @@ end
 arch dungeon_magic
 x 16
 y 16
-end
-arch pedestal
-x 16
-y 16
-invisible 1
-connected 100
-move_on all
-move_off all
 end
 arch teleporter
 hp 1
@@ -4739,14 +4267,6 @@ end
 arch dungeon_magic
 x 16
 y 17
-end
-arch pedestal
-x 16
-y 17
-invisible 1
-connected 100
-move_on all
-move_off all
 end
 arch teleporter
 hp 1
@@ -4773,14 +4293,6 @@ end
 arch dungeon_magic
 x 16
 y 18
-end
-arch pedestal
-x 16
-y 18
-invisible 1
-connected 100
-move_on all
-move_off all
 end
 arch teleporter
 hp 1
@@ -4878,14 +4390,6 @@ arch dungeon_magic
 x 17
 y 4
 end
-arch pedestal
-x 17
-y 4
-invisible 1
-connected 100
-move_on all
-move_off all
-end
 arch teleporter
 hp 1
 sp 11
@@ -4905,14 +4409,6 @@ arch dungeon_magic
 x 17
 y 5
 end
-arch pedestal
-x 17
-y 5
-invisible 1
-connected 100
-move_on all
-move_off all
-end
 arch teleporter
 hp 1
 sp 11
@@ -4932,14 +4428,6 @@ arch dungeon_magic
 x 17
 y 6
 end
-arch pedestal
-x 17
-y 6
-invisible 1
-connected 100
-move_on all
-move_off all
-end
 arch teleporter
 hp 1
 sp 11
@@ -4955,17 +4443,17 @@ y 6
 no_magic 1
 damned 1
 end
+arch altar_trigger
+slaying blocked
+exp 1
+food 1
+x 17
+y 7
+last_sp 1
+end
 arch dungeon_magic
 x 17
 y 7
-end
-arch pedestal
-x 17
-y 7
-invisible 1
-connected 100
-move_on all
-move_off all
 end
 arch teleporter
 hp 1
@@ -4981,19 +4469,19 @@ x 17
 y 7
 no_magic 1
 damned 1
+end
+arch altar_trigger
+slaying blocked
+exp 1
+food 1
+x 17
+y 8
+last_sp 1
 end
 arch dungeon_magic
 x 17
 y 8
 end
-arch pedestal
-x 17
-y 8
-invisible 1
-connected 100
-move_on all
-move_off all
-end
 arch teleporter
 hp 1
 sp 11
@@ -5009,17 +4497,17 @@ y 8
 no_magic 1
 damned 1
 end
+arch altar_trigger
+slaying blocked
+exp 1
+food 1
+x 17
+y 9
+last_sp 1
+end
 arch dungeon_magic
 x 17
 y 9
-end
-arch pedestal
-x 17
-y 9
-invisible 1
-connected 100
-move_on all
-move_off all
 end
 arch teleporter
 hp 1
@@ -5035,19 +4523,19 @@ x 17
 y 9
 no_magic 1
 damned 1
+end
+arch altar_trigger
+slaying blocked
+exp 1
+food 1
+x 17
+y 10
+last_sp 1
 end
 arch dungeon_magic
 x 17
 y 10
 end
-arch pedestal
-x 17
-y 10
-invisible 1
-connected 100
-move_on all
-move_off all
-end
 arch teleporter
 hp 1
 sp 11
@@ -5063,17 +4551,17 @@ y 10
 no_magic 1
 damned 1
 end
+arch altar_trigger
+slaying blocked
+exp 1
+food 1
+x 17
+y 11
+last_sp 1
+end
 arch dungeon_magic
 x 17
 y 11
-end
-arch pedestal
-x 17
-y 11
-invisible 1
-connected 100
-move_on all
-move_off all
 end
 arch teleporter
 hp 1
@@ -5090,17 +4578,17 @@ y 11
 no_magic 1
 damned 1
 end
+arch altar_trigger
+slaying blocked
+exp 1
+food 1
+x 17
+y 12
+last_sp 1
+end
 arch dungeon_magic
 x 17
 y 12
-end
-arch pedestal
-x 17
-y 12
-invisible 1
-connected 100
-move_on all
-move_off all
 end
 arch teleporter
 hp 1
@@ -5117,17 +4605,17 @@ y 12
 no_magic 1
 damned 1
 end
+arch altar_trigger
+slaying blocked
+exp 1
+food 1
+x 17
+y 13
+last_sp 1
+end
 arch dungeon_magic
 x 17
 y 13
-end
-arch pedestal
-x 17
-y 13
-invisible 1
-connected 100
-move_on all
-move_off all
 end
 arch teleporter
 hp 1
@@ -5144,17 +4632,17 @@ y 13
 no_magic 1
 damned 1
 end
+arch altar_trigger
+slaying blocked
+exp 1
+food 1
+x 17
+y 14
+last_sp 1
+end
 arch dungeon_magic
 x 17
 y 14
-end
-arch pedestal
-x 17
-y 14
-invisible 1
-connected 100
-move_on all
-move_off all
 end
 arch teleporter
 hp 1
@@ -5170,18 +4658,18 @@ x 17
 y 14
 no_magic 1
 damned 1
+end
+arch altar_trigger
+slaying blocked
+exp 1
+food 1
+x 17
+y 15
+last_sp 1
 end
 arch dungeon_magic
 x 17
 y 15
-end
-arch pedestal
-x 17
-y 15
-invisible 1
-connected 100
-move_on all
-move_off all
 end
 arch teleporter
 hp 1
@@ -5201,14 +4689,6 @@ end
 arch dungeon_magic
 x 17
 y 16
-end
-arch pedestal
-x 17
-y 16
-invisible 1
-connected 100
-move_on all
-move_off all
 end
 arch teleporter
 hp 1
@@ -5228,14 +4708,6 @@ end
 arch dungeon_magic
 x 17
 y 17
-end
-arch pedestal
-x 17
-y 17
-invisible 1
-connected 100
-move_on all
-move_off all
 end
 arch teleporter
 hp 1
@@ -5262,14 +4734,6 @@ end
 arch dungeon_magic
 x 17
 y 18
-end
-arch pedestal
-x 17
-y 18
-invisible 1
-connected 100
-move_on all
-move_off all
 end
 arch teleporter
 hp 1
@@ -5408,14 +4872,6 @@ arch dungeon_magic
 x 18
 y 4
 end
-arch pedestal
-x 18
-y 4
-invisible 1
-connected 100
-move_on all
-move_off all
-end
 arch teleporter
 hp 1
 sp 11
@@ -5435,14 +4891,6 @@ arch dungeon_magic
 x 18
 y 5
 end
-arch pedestal
-x 18
-y 5
-invisible 1
-connected 100
-move_on all
-move_off all
-end
 arch teleporter
 hp 1
 sp 11
@@ -5462,14 +4910,6 @@ arch dungeon_magic
 x 18
 y 6
 end
-arch pedestal
-x 18
-y 6
-invisible 1
-connected 100
-move_on all
-move_off all
-end
 arch teleporter
 hp 1
 sp 11
@@ -5485,17 +4925,17 @@ y 6
 no_magic 1
 damned 1
 end
+arch altar_trigger
+slaying blocked
+exp 1
+food 1
+x 18
+y 7
+last_sp 1
+end
 arch dungeon_magic
 x 18
 y 7
-end
-arch pedestal
-x 18
-y 7
-invisible 1
-connected 100
-move_on all
-move_off all
 end
 arch teleporter
 hp 1
@@ -5511,19 +4951,19 @@ x 18
 y 7
 no_magic 1
 damned 1
+end
+arch altar_trigger
+slaying blocked
+exp 1
+food 1
+x 18
+y 8
+last_sp 1
 end
 arch dungeon_magic
 x 18
 y 8
 end
-arch pedestal
-x 18
-y 8
-invisible 1
-connected 100
-move_on all
-move_off all
-end
 arch teleporter
 hp 1
 sp 11
@@ -5539,17 +4979,17 @@ y 8
 no_magic 1
 damned 1
 end
+arch altar_trigger
+slaying blocked
+exp 1
+food 1
+x 18
+y 9
+last_sp 1
+end
 arch dungeon_magic
 x 18
 y 9
-end
-arch pedestal
-x 18
-y 9
-invisible 1
-connected 100
-move_on all
-move_off all
 end
 arch teleporter
 hp 1
@@ -5565,19 +5005,19 @@ x 18
 y 9
 no_magic 1
 damned 1
+end
+arch altar_trigger
+slaying blocked
+exp 1
+food 1
+x 18
+y 10
+last_sp 1
 end
 arch dungeon_magic
 x 18
 y 10
 end
-arch pedestal
-x 18
-y 10
-invisible 1
-connected 100
-move_on all
-move_off all
-end
 arch teleporter
 hp 1
 sp 11
@@ -5593,17 +5033,17 @@ y 10
 no_magic 1
 damned 1
 end
+arch altar_trigger
+slaying blocked
+exp 1
+food 1
+x 18
+y 11
+last_sp 1
+end
 arch dungeon_magic
 x 18
 y 11
-end
-arch pedestal
-x 18
-y 11
-invisible 1
-connected 100
-move_on all
-move_off all
 end
 arch teleporter
 hp 1
@@ -5620,17 +5060,17 @@ y 11
 no_magic 1
 damned 1
 end
+arch altar_trigger
+slaying blocked
+exp 1
+food 1
+x 18
+y 12
+last_sp 1
+end
 arch dungeon_magic
 x 18
 y 12
-end
-arch pedestal
-x 18
-y 12
-invisible 1
-connected 100
-move_on all
-move_off all
 end
 arch teleporter
 hp 1
@@ -5647,17 +5087,17 @@ y 12
 no_magic 1
 damned 1
 end
+arch altar_trigger
+slaying blocked
+exp 1
+food 1
+x 18
+y 13
+last_sp 1
+end
 arch dungeon_magic
 x 18
 y 13
-end
-arch pedestal
-x 18
-y 13
-invisible 1
-connected 100
-move_on all
-move_off all
 end
 arch teleporter
 hp 1
@@ -5674,17 +5114,17 @@ y 13
 no_magic 1
 damned 1
 end
+arch altar_trigger
+slaying blocked
+exp 1
+food 1
+x 18
+y 14
+last_sp 1
+end
 arch dungeon_magic
 x 18
 y 14
-end
-arch pedestal
-x 18
-y 14
-invisible 1
-connected 100
-move_on all
-move_off all
 end
 arch teleporter
 hp 1
@@ -5700,18 +5140,18 @@ x 18
 y 14
 no_magic 1
 damned 1
+end
+arch altar_trigger
+slaying blocked
+exp 1
+food 1
+x 18
+y 15
+last_sp 1
 end
 arch dungeon_magic
 x 18
 y 15
-end
-arch pedestal
-x 18
-y 15
-invisible 1
-connected 100
-move_on all
-move_off all
 end
 arch teleporter
 hp 1
@@ -5731,14 +5171,6 @@ end
 arch dungeon_magic
 x 18
 y 16
-end
-arch pedestal
-x 18
-y 16
-invisible 1
-connected 100
-move_on all
-move_off all
 end
 arch teleporter
 hp 1
@@ -5758,14 +5190,6 @@ end
 arch dungeon_magic
 x 18
 y 17
-end
-arch pedestal
-x 18
-y 17
-invisible 1
-connected 100
-move_on all
-move_off all
 end
 arch teleporter
 hp 1
@@ -5792,14 +5216,6 @@ end
 arch dungeon_magic
 x 18
 y 18
-end
-arch pedestal
-x 18
-y 18
-invisible 1
-connected 100
-move_on all
-move_off all
 end
 arch teleporter
 hp 1
@@ -5897,14 +5313,6 @@ arch dungeon_magic
 x 19
 y 4
 end
-arch pedestal
-x 19
-y 4
-invisible 1
-connected 100
-move_on all
-move_off all
-end
 arch teleporter
 hp 1
 sp 11
@@ -5924,14 +5332,6 @@ arch dungeon_magic
 x 19
 y 5
 end
-arch pedestal
-x 19
-y 5
-invisible 1
-connected 100
-move_on all
-move_off all
-end
 arch teleporter
 hp 1
 sp 11
@@ -5951,14 +5351,6 @@ arch dungeon_magic
 x 19
 y 6
 end
-arch pedestal
-x 19
-y 6
-invisible 1
-connected 100
-move_on all
-move_off all
-end
 arch teleporter
 hp 1
 sp 11
@@ -5974,17 +5366,17 @@ y 6
 no_magic 1
 damned 1
 end
+arch altar_trigger
+slaying blocked
+exp 1
+food 1
+x 19
+y 7
+last_sp 1
+end
 arch dungeon_magic
 x 19
 y 7
-end
-arch pedestal
-x 19
-y 7
-invisible 1
-connected 100
-move_on all
-move_off all
 end
 arch teleporter
 hp 1
@@ -6000,19 +5392,19 @@ x 19
 y 7
 no_magic 1
 damned 1
+end
+arch altar_trigger
+slaying blocked
+exp 1
+food 1
+x 19
+y 8
+last_sp 1
 end
 arch dungeon_magic
 x 19
 y 8
 end
-arch pedestal
-x 19
-y 8
-invisible 1
-connected 100
-move_on all
-move_off all
-end
 arch teleporter
 hp 1
 sp 11
@@ -6028,17 +5420,17 @@ y 8
 no_magic 1
 damned 1
 end
+arch altar_trigger
+slaying blocked
+exp 1
+food 1
+x 19
+y 9
+last_sp 1
+end
 arch dungeon_magic
 x 19
 y 9
-end
-arch pedestal
-x 19
-y 9
-invisible 1
-connected 100
-move_on all
-move_off all
 end
 arch teleporter
 hp 1
@@ -6054,19 +5446,19 @@ x 19
 y 9
 no_magic 1
 damned 1
+end
+arch altar_trigger
+slaying blocked
+exp 1
+food 1
+x 19
+y 10
+last_sp 1
 end
 arch dungeon_magic
 x 19
 y 10
 end
-arch pedestal
-x 19
-y 10
-invisible 1
-connected 100
-move_on all
-move_off all
-end
 arch teleporter
 hp 1
 sp 11
@@ -6082,17 +5474,17 @@ y 10
 no_magic 1
 damned 1
 end
+arch altar_trigger
+slaying blocked
+exp 1
+food 1
+x 19
+y 11
+last_sp 1
+end
 arch dungeon_magic
 x 19
 y 11
-end
-arch pedestal
-x 19
-y 11
-invisible 1
-connected 100
-move_on all
-move_off all
 end
 arch teleporter
 hp 1
@@ -6109,17 +5501,17 @@ y 11
 no_magic 1
 damned 1
 end
+arch altar_trigger
+slaying blocked
+exp 1
+food 1
+x 19
+y 12
+last_sp 1
+end
 arch dungeon_magic
 x 19
 y 12
-end
-arch pedestal
-x 19
-y 12
-invisible 1
-connected 100
-move_on all
-move_off all
 end
 arch teleporter
 hp 1
@@ -6136,17 +5528,17 @@ y 12
 no_magic 1
 damned 1
 end
+arch altar_trigger
+slaying blocked
+exp 1
+food 1
+x 19
+y 13
+last_sp 1
+end
 arch dungeon_magic
 x 19
 y 13
-end
-arch pedestal
-x 19
-y 13
-invisible 1
-connected 100
-move_on all
-move_off all
 end
 arch teleporter
 hp 1
@@ -6163,17 +5555,17 @@ y 13
 no_magic 1
 damned 1
 end
+arch altar_trigger
+slaying blocked
+exp 1
+food 1
+x 19
+y 14
+last_sp 1
+end
 arch dungeon_magic
 x 19
 y 14
-end
-arch pedestal
-x 19
-y 14
-invisible 1
-connected 100
-move_on all
-move_off all
 end
 arch teleporter
 hp 1
@@ -6189,18 +5581,18 @@ x 19
 y 14
 no_magic 1
 damned 1
+end
+arch altar_trigger
+slaying blocked
+exp 1
+food 1
+x 19
+y 15
+last_sp 1
 end
 arch dungeon_magic
 x 19
 y 15
-end
-arch pedestal
-x 19
-y 15
-invisible 1
-connected 100
-move_on all
-move_off all
 end
 arch teleporter
 hp 1
@@ -6220,14 +5612,6 @@ end
 arch dungeon_magic
 x 19
 y 16
-end
-arch pedestal
-x 19
-y 16
-invisible 1
-connected 100
-move_on all
-move_off all
 end
 arch teleporter
 hp 1
@@ -6247,14 +5631,6 @@ end
 arch dungeon_magic
 x 19
 y 17
-end
-arch pedestal
-x 19
-y 17
-invisible 1
-connected 100
-move_on all
-move_off all
 end
 arch teleporter
 hp 1
@@ -6281,14 +5657,6 @@ end
 arch dungeon_magic
 x 19
 y 18
-end
-arch pedestal
-x 19
-y 18
-invisible 1
-connected 100
-move_on all
-move_off all
 end
 arch teleporter
 hp 1
@@ -6386,14 +5754,6 @@ arch dungeon_magic
 x 20
 y 4
 end
-arch pedestal
-x 20
-y 4
-invisible 1
-connected 100
-move_on all
-move_off all
-end
 arch teleporter
 hp 1
 sp 11
@@ -6413,14 +5773,6 @@ arch dungeon_magic
 x 20
 y 5
 end
-arch pedestal
-x 20
-y 5
-invisible 1
-connected 100
-move_on all
-move_off all
-end
 arch teleporter
 hp 1
 sp 11
@@ -6440,14 +5792,6 @@ arch dungeon_magic
 x 20
 y 6
 end
-arch pedestal
-x 20
-y 6
-invisible 1
-connected 100
-move_on all
-move_off all
-end
 arch teleporter
 hp 1
 sp 11
@@ -6463,17 +5807,17 @@ y 6
 no_magic 1
 damned 1
 end
+arch altar_trigger
+slaying blocked
+exp 1
+food 1
+x 20
+y 7
+last_sp 1
+end
 arch dungeon_magic
 x 20
 y 7
-end
-arch pedestal
-x 20
-y 7
-invisible 1
-connected 100
-move_on all
-move_off all
 end
 arch teleporter
 hp 1
@@ -6490,17 +5834,17 @@ y 7
 no_magic 1
 damned 1
 end
+arch altar_trigger
+slaying blocked
+exp 1
+food 1
+x 20
+y 8
+last_sp 1
+end
 arch dungeon_magic
 x 20
 y 8
-end
-arch pedestal
-x 20
-y 8
-invisible 1
-connected 100
-move_on all
-move_off all
 end
 arch teleporter
 hp 1
@@ -6517,17 +5861,17 @@ y 8
 no_magic 1
 damned 1
 end
+arch altar_trigger
+slaying blocked
+exp 1
+food 1
+x 20
+y 9
+last_sp 1
+end
 arch dungeon_magic
 x 20
 y 9
-end
-arch pedestal
-x 20
-y 9
-invisible 1
-connected 100
-move_on all
-move_off all
 end
 arch teleporter
 hp 1
@@ -6543,18 +5887,18 @@ x 20
 y 9
 no_magic 1
 damned 1
+end
+arch altar_trigger
+slaying blocked
+exp 1
+food 1
+x 20
+y 10
+last_sp 1
 end
 arch dungeon_magic
 x 20
 y 10
-end
-arch pedestal
-x 20
-y 10
-invisible 1
-connected 100
-move_on all
-move_off all
 end
 arch teleporter
 hp 1
@@ -6571,17 +5915,17 @@ y 10
 no_magic 1
 damned 1
 end
+arch altar_trigger
+slaying blocked
+exp 1
+food 1
+x 20
+y 11
+last_sp 1
+end
 arch dungeon_magic
 x 20
 y 11
-end
-arch pedestal
-x 20
-y 11
-invisible 1
-connected 100
-move_on all
-move_off all
 end
 arch teleporter
 hp 1
@@ -6598,17 +5942,17 @@ y 11
 no_magic 1
 damned 1
 end
+arch altar_trigger
+slaying blocked
+exp 1
+food 1
+x 20
+y 12
+last_sp 1
+end
 arch dungeon_magic
 x 20
 y 12
-end
-arch pedestal
-x 20
-y 12
-invisible 1
-connected 100
-move_on all
-move_off all
 end
 arch teleporter
 hp 1
@@ -6625,17 +5969,17 @@ y 12
 no_magic 1
 damned 1
 end
+arch altar_trigger
+slaying blocked
+exp 1
+food 1
+x 20
+y 13
+last_sp 1
+end
 arch dungeon_magic
 x 20
 y 13
-end
-arch pedestal
-x 20
-y 13
-invisible 1
-connected 100
-move_on all
-move_off all
 end
 arch teleporter
 hp 1
@@ -6652,17 +5996,17 @@ y 13
 no_magic 1
 damned 1
 end
+arch altar_trigger
+slaying blocked
+exp 1
+food 1
+x 20
+y 14
+last_sp 1
+end
 arch dungeon_magic
 x 20
 y 14
-end
-arch pedestal
-x 20
-y 14
-invisible 1
-connected 100
-move_on all
-move_off all
 end
 arch teleporter
 hp 1
@@ -6678,18 +6022,18 @@ x 20
 y 14
 no_magic 1
 damned 1
+end
+arch altar_trigger
+slaying blocked
+exp 1
+food 1
+x 20
+y 15
+last_sp 1
 end
 arch dungeon_magic
 x 20
 y 15
-end
-arch pedestal
-x 20
-y 15
-invisible 1
-connected 100
-move_on all
-move_off all
 end
 arch teleporter
 hp 1
@@ -6709,14 +6053,6 @@ end
 arch dungeon_magic
 x 20
 y 16
-end
-arch pedestal
-x 20
-y 16
-invisible 1
-connected 100
-move_on all
-move_off all
 end
 arch teleporter
 hp 1
@@ -6736,14 +6072,6 @@ end
 arch dungeon_magic
 x 20
 y 17
-end
-arch pedestal
-x 20
-y 17
-invisible 1
-connected 100
-move_on all
-move_off all
 end
 arch teleporter
 hp 1
@@ -6770,14 +6098,6 @@ end
 arch dungeon_magic
 x 20
 y 18
-end
-arch pedestal
-x 20
-y 18
-invisible 1
-connected 100
-move_on all
-move_off all
 end
 arch teleporter
 hp 1
@@ -6875,14 +6195,6 @@ arch dungeon_magic
 x 21
 y 4
 end
-arch pedestal
-x 21
-y 4
-invisible 1
-connected 100
-move_on all
-move_off all
-end
 arch teleporter
 hp 1
 sp 11
@@ -6902,14 +6214,6 @@ arch dungeon_magic
 x 21
 y 5
 end
-arch pedestal
-x 21
-y 5
-invisible 1
-connected 100
-move_on all
-move_off all
-end
 arch teleporter
 hp 1
 sp 11
@@ -6929,14 +6233,6 @@ arch dungeon_magic
 x 21
 y 6
 end
-arch pedestal
-x 21
-y 6
-invisible 1
-connected 100
-move_on all
-move_off all
-end
 arch teleporter
 hp 1
 sp 11
@@ -6952,17 +6248,17 @@ y 6
 no_magic 1
 damned 1
 end
+arch altar_trigger
+slaying blocked
+exp 1
+food 1
+x 21
+y 7
+last_sp 1
+end
 arch dungeon_magic
 x 21
 y 7
-end
-arch pedestal
-x 21
-y 7
-invisible 1
-connected 100
-move_on all
-move_off all
 end
 arch teleporter
 hp 1
@@ -6979,17 +6275,17 @@ y 7
 no_magic 1
 damned 1
 end
+arch altar_trigger
+slaying blocked
+exp 1
+food 1
+x 21
+y 8
+last_sp 1
+end
 arch dungeon_magic
 x 21
 y 8
-end
-arch pedestal
-x 21
-y 8
-invisible 1
-connected 100
-move_on all
-move_off all
 end
 arch teleporter
 hp 1
@@ -7006,17 +6302,17 @@ y 8
 no_magic 1
 damned 1
 end
+arch altar_trigger
+slaying blocked
+exp 1
+food 1
+x 21
+y 9
+last_sp 1
+end
 arch dungeon_magic
 x 21
 y 9
-end
-arch pedestal
-x 21
-y 9
-invisible 1
-connected 100
-move_on all
-move_off all
 end
 arch teleporter
 hp 1
@@ -7033,17 +6329,17 @@ y 9
 no_magic 1
 damned 1
 end
+arch altar_trigger
+slaying blocked
+exp 1
+food 1
+x 21
+y 10
+last_sp 1
+end
 arch dungeon_magic
 x 21
 y 10
-end
-arch pedestal
-x 21
-y 10
-invisible 1
-connected 100
-move_on all
-move_off all
 end
 arch teleporter
 hp 1
@@ -7059,6 +6355,14 @@ x 21
 y 10
 no_magic 1
 damned 1
+end
+arch altar_trigger
+slaying blocked
+exp 1
+food 1
+x 21
+y 11
+last_sp 1
 end
 arch light4
 x 21
@@ -7086,14 +6390,6 @@ end
 arch dungeon_magic
 x 21
 y 11
-end
-arch pedestal
-x 21
-y 11
-invisible 1
-connected 100
-move_on all
-move_off all
 end
 arch creator
 x 21
@@ -7134,17 +6430,17 @@ move_type swim
 reflect_missile 1
 reflect_spell 1
 end
+arch altar_trigger
+slaying blocked
+exp 1
+food 1
+x 21
+y 12
+last_sp 1
+end
 arch dungeon_magic
 x 21
 y 12
-end
-arch pedestal
-x 21
-y 12
-invisible 1
-connected 100
-move_on all
-move_off all
 end
 arch teleporter
 hp 1
@@ -7161,17 +6457,17 @@ y 12
 no_magic 1
 damned 1
 end
+arch altar_trigger
+slaying blocked
+exp 1
+food 1
+x 21
+y 13
+last_sp 1
+end
 arch dungeon_magic
 x 21
 y 13
-end
-arch pedestal
-x 21
-y 13
-invisible 1
-connected 100
-move_on all
-move_off all
 end
 arch teleporter
 hp 1
@@ -7188,17 +6484,17 @@ y 13
 no_magic 1
 damned 1
 end
+arch altar_trigger
+slaying blocked
+exp 1
+food 1
+x 21
+y 14
+last_sp 1
+end
 arch dungeon_magic
 x 21
 y 14
-end
-arch pedestal
-x 21
-y 14
-invisible 1
-connected 100
-move_on all
-move_off all
 end
 arch teleporter
 hp 1
@@ -7214,18 +6510,18 @@ x 21
 y 14
 no_magic 1
 damned 1
+end
+arch altar_trigger
+slaying blocked
+exp 1
+food 1
+x 21
+y 15
+last_sp 1
 end
 arch dungeon_magic
 x 21
 y 15
-end
-arch pedestal
-x 21
-y 15
-invisible 1
-connected 100
-move_on all
-move_off all
 end
 arch teleporter
 hp 1
@@ -7245,14 +6541,6 @@ end
 arch dungeon_magic
 x 21
 y 16
-end
-arch pedestal
-x 21
-y 16
-invisible 1
-connected 100
-move_on all
-move_off all
 end
 arch teleporter
 hp 1
@@ -7272,14 +6560,6 @@ end
 arch dungeon_magic
 x 21
 y 17
-end
-arch pedestal
-x 21
-y 17
-invisible 1
-connected 100
-move_on all
-move_off all
 end
 arch teleporter
 hp 1
@@ -7306,14 +6586,6 @@ end
 arch dungeon_magic
 x 21
 y 18
-end
-arch pedestal
-x 21
-y 18
-invisible 1
-connected 100
-move_on all
-move_off all
 end
 arch teleporter
 hp 1
@@ -7454,14 +6726,6 @@ arch dungeon_magic
 x 22
 y 4
 end
-arch pedestal
-x 22
-y 4
-invisible 1
-connected 100
-move_on all
-move_off all
-end
 arch teleporter
 hp 1
 sp 11
@@ -7481,14 +6745,6 @@ arch dungeon_magic
 x 22
 y 5
 end
-arch pedestal
-x 22
-y 5
-invisible 1
-connected 100
-move_on all
-move_off all
-end
 arch teleporter
 hp 1
 sp 11
@@ -7508,14 +6764,6 @@ arch dungeon_magic
 x 22
 y 6
 end
-arch pedestal
-x 22
-y 6
-invisible 1
-connected 100
-move_on all
-move_off all
-end
 arch teleporter
 hp 1
 sp 11
@@ -7531,17 +6779,17 @@ y 6
 no_magic 1
 damned 1
 end
+arch altar_trigger
+slaying blocked
+exp 1
+food 1
+x 22
+y 7
+last_sp 1
+end
 arch dungeon_magic
 x 22
 y 7
-end
-arch pedestal
-x 22
-y 7
-invisible 1
-connected 100
-move_on all
-move_off all
 end
 arch teleporter
 hp 1
@@ -7558,17 +6806,17 @@ y 7
 no_magic 1
 damned 1
 end
+arch altar_trigger
+slaying blocked
+exp 1
+food 1
+x 22
+y 8
+last_sp 1
+end
 arch dungeon_magic
 x 22
 y 8
-end
-arch pedestal
-x 22
-y 8
-invisible 1
-connected 100
-move_on all
-move_off all
 end
 arch teleporter
 hp 1
@@ -7585,17 +6833,17 @@ y 8
 no_magic 1
 damned 1
 end
+arch altar_trigger
+slaying blocked
+exp 1
+food 1
+x 22
+y 9
+last_sp 1
+end
 arch dungeon_magic
 x 22
 y 9
-end
-arch pedestal
-x 22
-y 9
-invisible 1
-connected 100
-move_on all
-move_off all
 end
 arch teleporter
 hp 1
@@ -7611,18 +6859,18 @@ x 22
 y 9
 no_magic 1
 damned 1
+end
+arch altar_trigger
+slaying blocked
+exp 1
+food 1
+x 22
+y 10
+last_sp 1
 end
 arch dungeon_magic
 x 22
 y 10
-end
-arch pedestal
-x 22
-y 10
-invisible 1
-connected 100
-move_on all
-move_off all
 end
 arch teleporter
 hp 1
@@ -7639,17 +6887,17 @@ y 10
 no_magic 1
 damned 1
 end
+arch altar_trigger
+slaying blocked
+exp 1
+food 1
+x 22
+y 11
+last_sp 1
+end
 arch dungeon_magic
 x 22
 y 11
-end
-arch pedestal
-x 22
-y 11
-invisible 1
-connected 100
-move_on all
-move_off all
 end
 arch teleporter
 hp 1
@@ -7666,17 +6914,17 @@ y 11
 no_magic 1
 damned 1
 end
+arch altar_trigger
+slaying blocked
+exp 1
+food 1
+x 22
+y 12
+last_sp 1
+end
 arch dungeon_magic
 x 22
 y 12
-end
-arch pedestal
-x 22
-y 12
-invisible 1
-connected 100
-move_on all
-move_off all
 end
 arch teleporter
 hp 1
@@ -7693,17 +6941,17 @@ y 12
 no_magic 1
 damned 1
 end
+arch altar_trigger
+slaying blocked
+exp 1
+food 1
+x 22
+y 13
+last_sp 1
+end
 arch dungeon_magic
 x 22
 y 13
-end
-arch pedestal
-x 22
-y 13
-invisible 1
-connected 100
-move_on all
-move_off all
 end
 arch teleporter
 hp 1
@@ -7720,17 +6968,17 @@ y 13
 no_magic 1
 damned 1
 end
+arch altar_trigger
+slaying blocked
+exp 1
+food 1
+x 22
+y 14
+last_sp 1
+end
 arch dungeon_magic
 x 22
 y 14
-end
-arch pedestal
-x 22
-y 14
-invisible 1
-connected 100
-move_on all
-move_off all
 end
 arch teleporter
 hp 1
@@ -7746,18 +6994,18 @@ x 22
 y 14
 no_magic 1
 damned 1
+end
+arch altar_trigger
+slaying blocked
+exp 1
+food 1
+x 22
+y 15
+last_sp 1
 end
 arch dungeon_magic
 x 22
 y 15
-end
-arch pedestal
-x 22
-y 15
-invisible 1
-connected 100
-move_on all
-move_off all
 end
 arch teleporter
 hp 1
@@ -7777,14 +7025,6 @@ end
 arch dungeon_magic
 x 22
 y 16
-end
-arch pedestal
-x 22
-y 16
-invisible 1
-connected 100
-move_on all
-move_off all
 end
 arch teleporter
 hp 1
@@ -7804,14 +7044,6 @@ end
 arch dungeon_magic
 x 22
 y 17
-end
-arch pedestal
-x 22
-y 17
-invisible 1
-connected 100
-move_on all
-move_off all
 end
 arch teleporter
 hp 1
@@ -7838,14 +7070,6 @@ end
 arch dungeon_magic
 x 22
 y 18
-end
-arch pedestal
-x 22
-y 18
-invisible 1
-connected 100
-move_on all
-move_off all
 end
 arch teleporter
 hp 1
@@ -7950,14 +7174,6 @@ arch dungeon_magic
 x 23
 y 4
 end
-arch pedestal
-x 23
-y 4
-invisible 1
-connected 100
-move_on all
-move_off all
-end
 arch teleporter
 hp 1
 sp 11
@@ -7977,14 +7193,6 @@ arch dungeon_magic
 x 23
 y 5
 end
-arch pedestal
-x 23
-y 5
-invisible 1
-connected 100
-move_on all
-move_off all
-end
 arch teleporter
 hp 1
 sp 11
@@ -8004,14 +7212,6 @@ arch dungeon_magic
 x 23
 y 6
 end
-arch pedestal
-x 23
-y 6
-invisible 1
-connected 100
-move_on all
-move_off all
-end
 arch teleporter
 hp 1
 sp 11
@@ -8027,17 +7227,17 @@ y 6
 no_magic 1
 damned 1
 end
+arch altar_trigger
+slaying blocked
+exp 1
+food 1
+x 23
+y 7
+last_sp 1
+end
 arch dungeon_magic
 x 23
 y 7
-end
-arch pedestal
-x 23
-y 7
-invisible 1
-connected 100
-move_on all
-move_off all
 end
 arch teleporter
 hp 1
@@ -8053,19 +7253,19 @@ x 23
 y 7
 no_magic 1
 damned 1
+end
+arch altar_trigger
+slaying blocked
+exp 1
+food 1
+x 23
+y 8
+last_sp 1
 end
 arch dungeon_magic
 x 23
 y 8
 end
-arch pedestal
-x 23
-y 8
-invisible 1
-connected 100
-move_on all
-move_off all
-end
 arch teleporter
 hp 1
 sp 11
@@ -8081,17 +7281,17 @@ y 8
 no_magic 1
 damned 1
 end
+arch altar_trigger
+slaying blocked
+exp 1
+food 1
+x 23
+y 9
+last_sp 1
+end
 arch dungeon_magic
 x 23
 y 9
-end
-arch pedestal
-x 23
-y 9
-invisible 1
-connected 100
-move_on all
-move_off all
 end
 arch teleporter
 hp 1
@@ -8107,19 +7307,19 @@ x 23
 y 9
 no_magic 1
 damned 1
+end
+arch altar_trigger
+slaying blocked
+exp 1
+food 1
+x 23
+y 10
+last_sp 1
 end
 arch dungeon_magic
 x 23
 y 10
 end
-arch pedestal
-x 23
-y 10
-invisible 1
-connected 100
-move_on all
-move_off all
-end
 arch teleporter
 hp 1
 sp 11
@@ -8135,17 +7335,17 @@ y 10
 no_magic 1
 damned 1
 end
+arch altar_trigger
+slaying blocked
+exp 1
+food 1
+x 23
+y 11
+last_sp 1
+end
 arch dungeon_magic
 x 23
 y 11
-end
-arch pedestal
-x 23
-y 11
-invisible 1
-connected 100
-move_on all
-move_off all
 end
 arch teleporter
 hp 1
@@ -8162,17 +7362,17 @@ y 11
 no_magic 1
 damned 1
 end
+arch altar_trigger
+slaying blocked
+exp 1
+food 1
+x 23
+y 12
+last_sp 1
+end
 arch dungeon_magic
 x 23
 y 12
-end
-arch pedestal
-x 23
-y 12
-invisible 1
-connected 100
-move_on all
-move_off all
 end
 arch teleporter
 hp 1
@@ -8189,17 +7389,17 @@ y 12
 no_magic 1
 damned 1
 end
+arch altar_trigger
+slaying blocked
+exp 1
+food 1
+x 23
+y 13
+last_sp 1
+end
 arch dungeon_magic
 x 23
 y 13
-end
-arch pedestal
-x 23
-y 13
-invisible 1
-connected 100
-move_on all
-move_off all
 end
 arch teleporter
 hp 1
@@ -8216,17 +7416,17 @@ y 13
 no_magic 1
 damned 1
 end
+arch altar_trigger
+slaying blocked
+exp 1
+food 1
+x 23
+y 14
+last_sp 1
+end
 arch dungeon_magic
 x 23
 y 14
-end
-arch pedestal
-x 23
-y 14
-invisible 1
-connected 100
-move_on all
-move_off all
 end
 arch teleporter
 hp 1
@@ -8242,18 +7442,18 @@ x 23
 y 14
 no_magic 1
 damned 1
+end
+arch altar_trigger
+slaying blocked
+exp 1
+food 1
+x 23
+y 15
+last_sp 1
 end
 arch dungeon_magic
 x 23
 y 15
-end
-arch pedestal
-x 23
-y 15
-invisible 1
-connected 100
-move_on all
-move_off all
 end
 arch teleporter
 hp 1
@@ -8273,14 +7473,6 @@ end
 arch dungeon_magic
 x 23
 y 16
-end
-arch pedestal
-x 23
-y 16
-invisible 1
-connected 100
-move_on all
-move_off all
 end
 arch teleporter
 hp 1
@@ -8300,14 +7492,6 @@ end
 arch dungeon_magic
 x 23
 y 17
-end
-arch pedestal
-x 23
-y 17
-invisible 1
-connected 100
-move_on all
-move_off all
 end
 arch teleporter
 hp 1
@@ -8334,14 +7518,6 @@ end
 arch dungeon_magic
 x 23
 y 18
-end
-arch pedestal
-x 23
-y 18
-invisible 1
-connected 100
-move_on all
-move_off all
 end
 arch teleporter
 hp 1
@@ -8439,14 +7615,6 @@ arch dungeon_magic
 x 24
 y 4
 end
-arch pedestal
-x 24
-y 4
-invisible 1
-connected 100
-move_on all
-move_off all
-end
 arch teleporter
 hp 1
 sp 11
@@ -8466,14 +7634,6 @@ arch dungeon_magic
 x 24
 y 5
 end
-arch pedestal
-x 24
-y 5
-invisible 1
-connected 100
-move_on all
-move_off all
-end
 arch teleporter
 hp 1
 sp 11
@@ -8493,14 +7653,6 @@ arch dungeon_magic
 x 24
 y 6
 end
-arch pedestal
-x 24
-y 6
-invisible 1
-connected 100
-move_on all
-move_off all
-end
 arch teleporter
 hp 1
 sp 11
@@ -8516,17 +7668,17 @@ y 6
 no_magic 1
 damned 1
 end
+arch altar_trigger
+slaying blocked
+exp 1
+food 1
+x 24
+y 7
+last_sp 1
+end
 arch dungeon_magic
 x 24
 y 7
-end
-arch pedestal
-x 24
-y 7
-invisible 1
-connected 100
-move_on all
-move_off all
 end
 arch teleporter
 hp 1
@@ -8542,19 +7694,19 @@ x 24
 y 7
 no_magic 1
 damned 1
+end
+arch altar_trigger
+slaying blocked
+exp 1
+food 1
+x 24
+y 8
+last_sp 1
 end
 arch dungeon_magic
 x 24
 y 8
 end
-arch pedestal
-x 24
-y 8
-invisible 1
-connected 100
-move_on all
-move_off all
-end
 arch teleporter
 hp 1
 sp 11
@@ -8570,17 +7722,17 @@ y 8
 no_magic 1
 damned 1
 end
+arch altar_trigger
+slaying blocked
+exp 1
+food 1
+x 24
+y 9
+last_sp 1
+end
 arch dungeon_magic
 x 24
 y 9
-end
-arch pedestal
-x 24
-y 9
-invisible 1
-connected 100
-move_on all
-move_off all
 end
 arch teleporter
 hp 1
@@ -8596,19 +7748,19 @@ x 24
 y 9
 no_magic 1
 damned 1
+end
+arch altar_trigger
+slaying blocked
+exp 1
+food 1
+x 24
+y 10
+last_sp 1
 end
 arch dungeon_magic
 x 24
 y 10
 end
-arch pedestal
-x 24
-y 10
-invisible 1
-connected 100
-move_on all
-move_off all
-end
 arch teleporter
 hp 1
 sp 11
@@ -8624,17 +7776,17 @@ y 10
 no_magic 1
 damned 1
 end
+arch altar_trigger
+slaying blocked
+exp 1
+food 1
+x 24
+y 11
+last_sp 1
+end
 arch dungeon_magic
 x 24
 y 11
-end
-arch pedestal
-x 24
-y 11
-invisible 1
-connected 100
-move_on all
-move_off all
 end
 arch teleporter
 hp 1
@@ -8651,17 +7803,17 @@ y 11
 no_magic 1
 damned 1
 end
+arch altar_trigger
+slaying blocked
+exp 1
+food 1
+x 24
+y 12
+last_sp 1
+end
 arch dungeon_magic
 x 24
 y 12
-end
-arch pedestal
-x 24
-y 12
-invisible 1
-connected 100
-move_on all
-move_off all
 end
 arch teleporter
 hp 1
@@ -8678,17 +7830,17 @@ y 12
 no_magic 1
 damned 1
 end
+arch altar_trigger
+slaying blocked
+exp 1
+food 1
+x 24
+y 13
+last_sp 1
+end
 arch dungeon_magic
 x 24
 y 13
-end
-arch pedestal
-x 24
-y 13
-invisible 1
-connected 100
-move_on all
-move_off all
 end
 arch teleporter
 hp 1
@@ -8705,17 +7857,17 @@ y 13
 no_magic 1
 damned 1
 end
+arch altar_trigger
+slaying blocked
+exp 1
+food 1
+x 24
+y 14
+last_sp 1
+end
 arch dungeon_magic
 x 24
 y 14
-end
-arch pedestal
-x 24
-y 14
-invisible 1
-connected 100
-move_on all
-move_off all
 end
 arch teleporter
 hp 1
@@ -8731,18 +7883,18 @@ x 24
 y 14
 no_magic 1
 damned 1
+end
+arch altar_trigger
+slaying blocked
+exp 1
+food 1
+x 24
+y 15
+last_sp 1
 end
 arch dungeon_magic
 x 24
 y 15
-end
-arch pedestal
-x 24
-y 15
-invisible 1
-connected 100
-move_on all
-move_off all
 end
 arch teleporter
 hp 1
@@ -8762,14 +7914,6 @@ end
 arch dungeon_magic
 x 24
 y 16
-end
-arch pedestal
-x 24
-y 16
-invisible 1
-connected 100
-move_on all
-move_off all
 end
 arch teleporter
 hp 1
@@ -8789,14 +7933,6 @@ end
 arch dungeon_magic
 x 24
 y 17
-end
-arch pedestal
-x 24
-y 17
-invisible 1
-connected 100
-move_on all
-move_off all
 end
 arch teleporter
 hp 1
@@ -8823,14 +7959,6 @@ end
 arch dungeon_magic
 x 24
 y 18
-end
-arch pedestal
-x 24
-y 18
-invisible 1
-connected 100
-move_on all
-move_off all
 end
 arch teleporter
 hp 1
@@ -8969,14 +8097,6 @@ arch dungeon_magic
 x 25
 y 4
 end
-arch pedestal
-x 25
-y 4
-invisible 1
-connected 100
-move_on all
-move_off all
-end
 arch teleporter
 hp 1
 sp 11
@@ -8996,14 +8116,6 @@ arch dungeon_magic
 x 25
 y 5
 end
-arch pedestal
-x 25
-y 5
-invisible 1
-connected 100
-move_on all
-move_off all
-end
 arch teleporter
 hp 1
 sp 11
@@ -9023,14 +8135,6 @@ arch dungeon_magic
 x 25
 y 6
 end
-arch pedestal
-x 25
-y 6
-invisible 1
-connected 100
-move_on all
-move_off all
-end
 arch teleporter
 hp 1
 sp 11
@@ -9046,17 +8150,17 @@ y 6
 no_magic 1
 damned 1
 end
+arch altar_trigger
+slaying blocked
+exp 1
+food 1
+x 25
+y 7
+last_sp 1
+end
 arch dungeon_magic
 x 25
 y 7
-end
-arch pedestal
-x 25
-y 7
-invisible 1
-connected 100
-move_on all
-move_off all
 end
 arch teleporter
 hp 1
@@ -9072,19 +8176,19 @@ x 25
 y 7
 no_magic 1
 damned 1
+end
+arch altar_trigger
+slaying blocked
+exp 1
+food 1
+x 25
+y 8
+last_sp 1
 end
 arch dungeon_magic
 x 25
 y 8
 end
-arch pedestal
-x 25
-y 8
-invisible 1
-connected 100
-move_on all
-move_off all
-end
 arch teleporter
 hp 1
 sp 11
@@ -9100,17 +8204,17 @@ y 8
 no_magic 1
 damned 1
 end
+arch altar_trigger
+slaying blocked
+exp 1
+food 1
+x 25
+y 9
+last_sp 1
+end
 arch dungeon_magic
 x 25
 y 9
-end
-arch pedestal
-x 25
-y 9
-invisible 1
-connected 100
-move_on all
-move_off all
 end
 arch teleporter
 hp 1
@@ -9126,19 +8230,19 @@ x 25
 y 9
 no_magic 1
 damned 1
+end
+arch altar_trigger
+slaying blocked
+exp 1
+food 1
+x 25
+y 10
+last_sp 1
 end
 arch dungeon_magic
 x 25
 y 10
 end
-arch pedestal
-x 25
-y 10
-invisible 1
-connected 100
-move_on all
-move_off all
-end
 arch teleporter
 hp 1
 sp 11
@@ -9154,17 +8258,17 @@ y 10
 no_magic 1
 damned 1
 end
+arch altar_trigger
+slaying blocked
+exp 1
+food 1
+x 25
+y 11
+last_sp 1
+end
 arch dungeon_magic
 x 25
 y 11
-end
-arch pedestal
-x 25
-y 11
-invisible 1
-connected 100
-move_on all
-move_off all
 end
 arch teleporter
 hp 1
@@ -9181,17 +8285,17 @@ y 11
 no_magic 1
 damned 1
 end
+arch altar_trigger
+slaying blocked
+exp 1
+food 1
+x 25
+y 12
+last_sp 1
+end
 arch dungeon_magic
 x 25
 y 12
-end
-arch pedestal
-x 25
-y 12
-invisible 1
-connected 100
-move_on all
-move_off all
 end
 arch teleporter
 hp 1
@@ -9208,17 +8312,17 @@ y 12
 no_magic 1
 damned 1
 end
+arch altar_trigger
+slaying blocked
+exp 1
+food 1
+x 25
+y 13
+last_sp 1
+end
 arch dungeon_magic
 x 25
 y 13
-end
-arch pedestal
-x 25
-y 13
-invisible 1
-connected 100
-move_on all
-move_off all
 end
 arch teleporter
 hp 1
@@ -9235,17 +8339,17 @@ y 13
 no_magic 1
 damned 1
 end
+arch altar_trigger
+slaying blocked
+exp 1
+food 1
+x 25
+y 14
+last_sp 1
+end
 arch dungeon_magic
 x 25
 y 14
-end
-arch pedestal
-x 25
-y 14
-invisible 1
-connected 100
-move_on all
-move_off all
 end
 arch teleporter
 hp 1
@@ -9261,18 +8365,18 @@ x 25
 y 14
 no_magic 1
 damned 1
+end
+arch altar_trigger
+slaying blocked
+exp 1
+food 1
+x 25
+y 15
+last_sp 1
 end
 arch dungeon_magic
 x 25
 y 15
-end
-arch pedestal
-x 25
-y 15
-invisible 1
-connected 100
-move_on all
-move_off all
 end
 arch teleporter
 hp 1
@@ -9292,14 +8396,6 @@ end
 arch dungeon_magic
 x 25
 y 16
-end
-arch pedestal
-x 25
-y 16
-invisible 1
-connected 100
-move_on all
-move_off all
 end
 arch teleporter
 hp 1
@@ -9319,14 +8415,6 @@ end
 arch dungeon_magic
 x 25
 y 17
-end
-arch pedestal
-x 25
-y 17
-invisible 1
-connected 100
-move_on all
-move_off all
 end
 arch teleporter
 hp 1
@@ -9353,14 +8441,6 @@ end
 arch dungeon_magic
 x 25
 y 18
-end
-arch pedestal
-x 25
-y 18
-invisible 1
-connected 100
-move_on all
-move_off all
 end
 arch teleporter
 hp 1
@@ -9458,14 +8538,6 @@ arch dungeon_magic
 x 26
 y 4
 end
-arch pedestal
-x 26
-y 4
-invisible 1
-connected 100
-move_on all
-move_off all
-end
 arch teleporter
 hp 1
 sp 11
@@ -9485,14 +8557,6 @@ arch dungeon_magic
 x 26
 y 5
 end
-arch pedestal
-x 26
-y 5
-invisible 1
-connected 100
-move_on all
-move_off all
-end
 arch teleporter
 hp 1
 sp 11
@@ -9512,14 +8576,6 @@ arch dungeon_magic
 x 26
 y 6
 end
-arch pedestal
-x 26
-y 6
-invisible 1
-connected 100
-move_on all
-move_off all
-end
 arch teleporter
 hp 1
 sp 11
@@ -9535,17 +8591,17 @@ y 6
 no_magic 1
 damned 1
 end
+arch altar_trigger
+slaying blocked
+exp 1
+food 1
+x 26
+y 7
+last_sp 1
+end
 arch dungeon_magic
 x 26
 y 7
-end
-arch pedestal
-x 26
-y 7
-invisible 1
-connected 100
-move_on all
-move_off all
 end
 arch teleporter
 hp 1
@@ -9561,19 +8617,19 @@ x 26
 y 7
 no_magic 1
 damned 1
+end
+arch altar_trigger
+slaying blocked
+exp 1
+food 1
+x 26
+y 8
+last_sp 1
 end
 arch dungeon_magic
 x 26
 y 8
 end
-arch pedestal
-x 26
-y 8
-invisible 1
-connected 100
-move_on all
-move_off all
-end
 arch teleporter
 hp 1
 sp 11
@@ -9589,17 +8645,17 @@ y 8
 no_magic 1
 damned 1
 end
+arch altar_trigger
+slaying blocked
+exp 1
+food 1
+x 26
+y 9
+last_sp 1
+end
 arch dungeon_magic
 x 26
 y 9
-end
-arch pedestal
-x 26
-y 9
-invisible 1
-connected 100
-move_on all
-move_off all
 end
 arch teleporter
 hp 1
@@ -9615,19 +8671,19 @@ x 26
 y 9
 no_magic 1
 damned 1
+end
+arch altar_trigger
+slaying blocked
+exp 1
+food 1
+x 26
+y 10
+last_sp 1
 end
 arch dungeon_magic
 x 26
 y 10
 end
-arch pedestal
-x 26
-y 10
-invisible 1
-connected 100
-move_on all
-move_off all
-end
 arch teleporter
 hp 1
 sp 11
@@ -9643,17 +8699,17 @@ y 10
 no_magic 1
 damned 1
 end
+arch altar_trigger
+slaying blocked
+exp 1
+food 1
+x 26
+y 11
+last_sp 1
+end
 arch dungeon_magic
 x 26
 y 11
-end
-arch pedestal
-x 26
-y 11
-invisible 1
-connected 100
-move_on all
-move_off all
 end
 arch teleporter
 hp 1
@@ -9670,17 +8726,17 @@ y 11
 no_magic 1
 damned 1
 end
+arch altar_trigger
+slaying blocked
+exp 1
+food 1
+x 26
+y 12
+last_sp 1
+end
 arch dungeon_magic
 x 26
 y 12
-end
-arch pedestal
-x 26
-y 12
-invisible 1
-connected 100
-move_on all
-move_off all
 end
 arch teleporter
 hp 1
@@ -9697,17 +8753,17 @@ y 12
 no_magic 1
 damned 1
 end
+arch altar_trigger
+slaying blocked
+exp 1
+food 1
+x 26
+y 13
+last_sp 1
+end
 arch dungeon_magic
 x 26
 y 13
-end
-arch pedestal
-x 26
-y 13
-invisible 1
-connected 100
-move_on all
-move_off all
 end
 arch teleporter
 hp 1
@@ -9724,17 +8780,17 @@ y 13
 no_magic 1
 damned 1
 end
+arch altar_trigger
+slaying blocked
+exp 1
+food 1
+x 26
+y 14
+last_sp 1
+end
 arch dungeon_magic
 x 26
 y 14
-end
-arch pedestal
-x 26
-y 14
-invisible 1
-connected 100
-move_on all
-move_off all
 end
 arch teleporter
 hp 1
@@ -9750,18 +8806,18 @@ x 26
 y 14
 no_magic 1
 damned 1
+end
+arch altar_trigger
+slaying blocked
+exp 1
+food 1
+x 26
+y 15
+last_sp 1
 end
 arch dungeon_magic
 x 26
 y 15
-end
-arch pedestal
-x 26
-y 15
-invisible 1
-connected 100
-move_on all
-move_off all
 end
 arch teleporter
 hp 1
@@ -9781,14 +8837,6 @@ end
 arch dungeon_magic
 x 26
 y 16
-end
-arch pedestal
-x 26
-y 16
-invisible 1
-connected 100
-move_on all
-move_off all
 end
 arch teleporter
 hp 1
@@ -9808,14 +8856,6 @@ end
 arch dungeon_magic
 x 26
 y 17
-end
-arch pedestal
-x 26
-y 17
-invisible 1
-connected 100
-move_on all
-move_off all
 end
 arch teleporter
 hp 1
@@ -9842,14 +8882,6 @@ end
 arch dungeon_magic
 x 26
 y 18
-end
-arch pedestal
-x 26
-y 18
-invisible 1
-connected 100
-move_on all
-move_off all
 end
 arch teleporter
 hp 1
@@ -9947,14 +8979,6 @@ arch dungeon_magic
 x 27
 y 4
 end
-arch pedestal
-x 27
-y 4
-invisible 1
-connected 100
-move_on all
-move_off all
-end
 arch teleporter
 hp 1
 sp 11
@@ -9974,14 +8998,6 @@ arch dungeon_magic
 x 27
 y 5
 end
-arch pedestal
-x 27
-y 5
-invisible 1
-connected 100
-move_on all
-move_off all
-end
 arch teleporter
 hp 1
 sp 11
@@ -10001,14 +9017,6 @@ arch dungeon_magic
 x 27
 y 6
 end
-arch pedestal
-x 27
-y 6
-invisible 1
-connected 100
-move_on all
-move_off all
-end
 arch teleporter
 hp 1
 sp 11
@@ -10024,17 +9032,17 @@ y 6
 no_magic 1
 damned 1
 end
+arch altar_trigger
+slaying blocked
+exp 1
+food 1
+x 27
+y 7
+last_sp 1
+end
 arch dungeon_magic
 x 27
 y 7
-end
-arch pedestal
-x 27
-y 7
-invisible 1
-connected 100
-move_on all
-move_off all
 end
 arch teleporter
 hp 1
@@ -10050,19 +9058,19 @@ x 27
 y 7
 no_magic 1
 damned 1
+end
+arch altar_trigger
+slaying blocked
+exp 1
+food 1
+x 27
+y 8
+last_sp 1
 end
 arch dungeon_magic
 x 27
 y 8
 end
-arch pedestal
-x 27
-y 8
-invisible 1
-connected 100
-move_on all
-move_off all
-end
 arch teleporter
 hp 1
 sp 11
@@ -10078,17 +9086,17 @@ y 8
 no_magic 1
 damned 1
 end
+arch altar_trigger
+slaying blocked
+exp 1
+food 1
+x 27
+y 9
+last_sp 1
+end
 arch dungeon_magic
 x 27
 y 9
-end
-arch pedestal
-x 27
-y 9
-invisible 1
-connected 100
-move_on all
-move_off all
 end
 arch teleporter
 hp 1
@@ -10104,19 +9112,19 @@ x 27
 y 9
 no_magic 1
 damned 1
+end
+arch altar_trigger
+slaying blocked
+exp 1
+food 1
+x 27
+y 10
+last_sp 1
 end
 arch dungeon_magic
 x 27
 y 10
 end
-arch pedestal
-x 27
-y 10
-invisible 1
-connected 100
-move_on all
-move_off all
-end
 arch teleporter
 hp 1
 sp 11
@@ -10132,17 +9140,17 @@ y 10
 no_magic 1
 damned 1
 end
+arch altar_trigger
+slaying blocked
+exp 1
+food 1
+x 27
+y 11
+last_sp 1
+end
 arch dungeon_magic
 x 27
 y 11
-end
-arch pedestal
-x 27
-y 11
-invisible 1
-connected 100
-move_on all
-move_off all
 end
 arch teleporter
 hp 1
@@ -10159,17 +9167,17 @@ y 11
 no_magic 1
 damned 1
 end
+arch altar_trigger
+slaying blocked
+exp 1
+food 1
+x 27
+y 12
+last_sp 1
+end
 arch dungeon_magic
 x 27
 y 12
-end
-arch pedestal
-x 27
-y 12
-invisible 1
-connected 100
-move_on all
-move_off all
 end
 arch teleporter
 hp 1
@@ -10186,17 +9194,17 @@ y 12
 no_magic 1
 damned 1
 end
+arch altar_trigger
+slaying blocked
+exp 1
+food 1
+x 27
+y 13
+last_sp 1
+end
 arch dungeon_magic
 x 27
 y 13
-end
-arch pedestal
-x 27
-y 13
-invisible 1
-connected 100
-move_on all
-move_off all
 end
 arch teleporter
 hp 1
@@ -10213,17 +9221,17 @@ y 13
 no_magic 1
 damned 1
 end
+arch altar_trigger
+slaying blocked
+exp 1
+food 1
+x 27
+y 14
+last_sp 1
+end
 arch dungeon_magic
 x 27
 y 14
-end
-arch pedestal
-x 27
-y 14
-invisible 1
-connected 100
-move_on all
-move_off all
 end
 arch teleporter
 hp 1
@@ -10239,18 +9247,18 @@ x 27
 y 14
 no_magic 1
 damned 1
+end
+arch altar_trigger
+slaying blocked
+exp 1
+food 1
+x 27
+y 15
+last_sp 1
 end
 arch dungeon_magic
 x 27
 y 15
-end
-arch pedestal
-x 27
-y 15
-invisible 1
-connected 100
-move_on all
-move_off all
 end
 arch teleporter
 hp 1
@@ -10270,14 +9278,6 @@ end
 arch dungeon_magic
 x 27
 y 16
-end
-arch pedestal
-x 27
-y 16
-invisible 1
-connected 100
-move_on all
-move_off all
 end
 arch teleporter
 hp 1
@@ -10297,14 +9297,6 @@ end
 arch dungeon_magic
 x 27
 y 17
-end
-arch pedestal
-x 27
-y 17
-invisible 1
-connected 100
-move_on all
-move_off all
 end
 arch teleporter
 hp 1
@@ -10331,14 +9323,6 @@ end
 arch dungeon_magic
 x 27
 y 18
-end
-arch pedestal
-x 27
-y 18
-invisible 1
-connected 100
-move_on all
-move_off all
 end
 arch teleporter
 hp 1
@@ -10436,14 +9420,6 @@ arch dungeon_magic
 x 28
 y 4
 end
-arch pedestal
-x 28
-y 4
-invisible 1
-connected 100
-move_on all
-move_off all
-end
 arch teleporter
 hp 1
 sp 11
@@ -10463,14 +9439,6 @@ arch dungeon_magic
 x 28
 y 5
 end
-arch pedestal
-x 28
-y 5
-invisible 1
-connected 100
-move_on all
-move_off all
-end
 arch teleporter
 hp 1
 sp 11
@@ -10490,14 +9458,6 @@ arch dungeon_magic
 x 28
 y 6
 end
-arch pedestal
-x 28
-y 6
-invisible 1
-connected 100
-move_on all
-move_off all
-end
 arch teleporter
 hp 1
 sp 11
@@ -10513,17 +9473,17 @@ y 6
 no_magic 1
 damned 1
 end
+arch altar_trigger
+slaying blocked
+exp 1
+food 1
+x 28
+y 7
+last_sp 1
+end
 arch dungeon_magic
 x 28
 y 7
-end
-arch pedestal
-x 28
-y 7
-invisible 1
-connected 100
-move_on all
-move_off all
 end
 arch teleporter
 hp 1
@@ -10539,19 +9499,19 @@ x 28
 y 7
 no_magic 1
 damned 1
+end
+arch altar_trigger
+slaying blocked
+exp 1
+food 1
+x 28
+y 8
+last_sp 1
 end
 arch dungeon_magic
 x 28
 y 8
 end
-arch pedestal
-x 28
-y 8
-invisible 1
-connected 100
-move_on all
-move_off all
-end
 arch teleporter
 hp 1
 sp 11
@@ -10567,17 +9527,17 @@ y 8
 no_magic 1
 damned 1
 end
+arch altar_trigger
+slaying blocked
+exp 1
+food 1
+x 28
+y 9
+last_sp 1
+end
 arch dungeon_magic
 x 28
 y 9
-end
-arch pedestal
-x 28
-y 9
-invisible 1
-connected 100
-move_on all
-move_off all
 end
 arch teleporter
 hp 1
@@ -10593,19 +9553,19 @@ x 28
 y 9
 no_magic 1
 damned 1
+end
+arch altar_trigger
+slaying blocked
+exp 1
+food 1
+x 28
+y 10
+last_sp 1
 end
 arch dungeon_magic
 x 28
 y 10
 end
-arch pedestal
-x 28
-y 10
-invisible 1
-connected 100
-move_on all
-move_off all
-end
 arch teleporter
 hp 1
 sp 11
@@ -10621,17 +9581,17 @@ y 10
 no_magic 1
 damned 1
 end
+arch altar_trigger
+slaying blocked
+exp 1
+food 1
+x 28
+y 11
+last_sp 1
+end
 arch dungeon_magic
 x 28
 y 11
-end
-arch pedestal
-x 28
-y 11
-invisible 1
-connected 100
-move_on all
-move_off all
 end
 arch teleporter
 hp 1
@@ -10648,17 +9608,17 @@ y 11
 no_magic 1
 damned 1
 end
+arch altar_trigger
+slaying blocked
+exp 1
+food 1
+x 28
+y 12
+last_sp 1
+end
 arch dungeon_magic
 x 28
 y 12
-end
-arch pedestal
-x 28
-y 12
-invisible 1
-connected 100
-move_on all
-move_off all
 end
 arch teleporter
 hp 1
@@ -10675,17 +9635,17 @@ y 12
 no_magic 1
 damned 1
 end
+arch altar_trigger
+slaying blocked
+exp 1
+food 1
+x 28
+y 13
+last_sp 1
+end
 arch dungeon_magic
 x 28
 y 13
-end
-arch pedestal
-x 28
-y 13
-invisible 1
-connected 100
-move_on all
-move_off all
 end
 arch teleporter
 hp 1
@@ -10702,17 +9662,17 @@ y 13
 no_magic 1
 damned 1
 end
+arch altar_trigger
+slaying blocked
+exp 1
+food 1
+x 28
+y 14
+last_sp 1
+end
 arch dungeon_magic
 x 28
 y 14
-end
-arch pedestal
-x 28
-y 14
-invisible 1
-connected 100
-move_on all
-move_off all
 end
 arch teleporter
 hp 1
@@ -10728,18 +9688,18 @@ x 28
 y 14
 no_magic 1
 damned 1
+end
+arch altar_trigger
+slaying blocked
+exp 1
+food 1
+x 28
+y 15
+last_sp 1
 end
 arch dungeon_magic
 x 28
 y 15
-end
-arch pedestal
-x 28
-y 15
-invisible 1
-connected 100
-move_on all
-move_off all
 end
 arch teleporter
 hp 1
@@ -10759,14 +9719,6 @@ end
 arch dungeon_magic
 x 28
 y 16
-end
-arch pedestal
-x 28
-y 16
-invisible 1
-connected 100
-move_on all
-move_off all
 end
 arch teleporter
 hp 1
@@ -10786,14 +9738,6 @@ end
 arch dungeon_magic
 x 28
 y 17
-end
-arch pedestal
-x 28
-y 17
-invisible 1
-connected 100
-move_on all
-move_off all
 end
 arch teleporter
 hp 1
@@ -10820,14 +9764,6 @@ end
 arch dungeon_magic
 x 28
 y 18
-end
-arch pedestal
-x 28
-y 18
-invisible 1
-connected 100
-move_on all
-move_off all
 end
 arch teleporter
 hp 1
@@ -10969,14 +9905,6 @@ arch dungeon_magic
 x 29
 y 4
 end
-arch pedestal
-x 29
-y 4
-invisible 1
-connected 100
-move_on all
-move_off all
-end
 arch teleporter
 hp 1
 sp 11
@@ -10996,14 +9924,6 @@ arch dungeon_magic
 x 29
 y 5
 end
-arch pedestal
-x 29
-y 5
-invisible 1
-connected 100
-move_on all
-move_off all
-end
 arch teleporter
 hp 1
 sp 11
@@ -11023,14 +9943,6 @@ arch dungeon_magic
 x 29
 y 6
 end
-arch pedestal
-x 29
-y 6
-invisible 1
-connected 100
-move_on all
-move_off all
-end
 arch teleporter
 hp 1
 sp 11
@@ -11046,17 +9958,17 @@ y 6
 no_magic 1
 damned 1
 end
+arch altar_trigger
+slaying blocked
+exp 1
+food 1
+x 29
+y 7
+last_sp 1
+end
 arch dungeon_magic
 x 29
 y 7
-end
-arch pedestal
-x 29
-y 7
-invisible 1
-connected 100
-move_on all
-move_off all
 end
 arch teleporter
 hp 1
@@ -11072,19 +9984,19 @@ x 29
 y 7
 no_magic 1
 damned 1
+end
+arch altar_trigger
+slaying blocked
+exp 1
+food 1
+x 29
+y 8
+last_sp 1
 end
 arch dungeon_magic
 x 29
 y 8
 end
-arch pedestal
-x 29
-y 8
-invisible 1
-connected 100
-move_on all
-move_off all
-end
 arch teleporter
 hp 1
 sp 11
@@ -11100,17 +10012,17 @@ y 8
 no_magic 1
 damned 1
 end
+arch altar_trigger
+slaying blocked
+exp 1
+food 1
+x 29
+y 9
+last_sp 1
+end
 arch dungeon_magic
 x 29
 y 9
-end
-arch pedestal
-x 29
-y 9
-invisible 1
-connected 100
-move_on all
-move_off all
 end
 arch teleporter
 hp 1
@@ -11126,19 +10038,19 @@ x 29
 y 9
 no_magic 1
 damned 1
+end
+arch altar_trigger
+slaying blocked
+exp 1
+food 1
+x 29
+y 10
+last_sp 1
 end
 arch dungeon_magic
 x 29
 y 10
 end
-arch pedestal
-x 29
-y 10
-invisible 1
-connected 100
-move_on all
-move_off all
-end
 arch teleporter
 hp 1
 sp 11
@@ -11154,17 +10066,17 @@ y 10
 no_magic 1
 damned 1
 end
+arch altar_trigger
+slaying blocked
+exp 1
+food 1
+x 29
+y 11
+last_sp 1
+end
 arch dungeon_magic
 x 29
 y 11
-end
-arch pedestal
-x 29
-y 11
-invisible 1
-connected 100
-move_on all
-move_off all
 end
 arch teleporter
 hp 1
@@ -11181,17 +10093,17 @@ y 11
 no_magic 1
 damned 1
 end
+arch altar_trigger
+slaying blocked
+exp 1
+food 1
+x 29
+y 12
+last_sp 1
+end
 arch dungeon_magic
 x 29
 y 12
-end
-arch pedestal
-x 29
-y 12
-invisible 1
-connected 100
-move_on all
-move_off all
 end
 arch teleporter
 hp 1
@@ -11208,17 +10120,17 @@ y 12
 no_magic 1
 damned 1
 end
+arch altar_trigger
+slaying blocked
+exp 1
+food 1
+x 29
+y 13
+last_sp 1
+end
 arch dungeon_magic
 x 29
 y 13
-end
-arch pedestal
-x 29
-y 13
-invisible 1
-connected 100
-move_on all
-move_off all
 end
 arch teleporter
 hp 1
@@ -11235,17 +10147,17 @@ y 13
 no_magic 1
 damned 1
 end
+arch altar_trigger
+slaying blocked
+exp 1
+food 1
+x 29
+y 14
+last_sp 1
+end
 arch dungeon_magic
 x 29
 y 14
-end
-arch pedestal
-x 29
-y 14
-invisible 1
-connected 100
-move_on all
-move_off all
 end
 arch teleporter
 hp 1
@@ -11261,18 +10173,18 @@ x 29
 y 14
 no_magic 1
 damned 1
+end
+arch altar_trigger
+slaying blocked
+exp 1
+food 1
+x 29
+y 15
+last_sp 1
 end
 arch dungeon_magic
 x 29
 y 15
-end
-arch pedestal
-x 29
-y 15
-invisible 1
-connected 100
-move_on all
-move_off all
 end
 arch teleporter
 hp 1
@@ -11292,14 +10204,6 @@ end
 arch dungeon_magic
 x 29
 y 16
-end
-arch pedestal
-x 29
-y 16
-invisible 1
-connected 100
-move_on all
-move_off all
 end
 arch teleporter
 hp 1
@@ -11319,14 +10223,6 @@ end
 arch dungeon_magic
 x 29
 y 17
-end
-arch pedestal
-x 29
-y 17
-invisible 1
-connected 100
-move_on all
-move_off all
 end
 arch teleporter
 hp 1
@@ -11353,14 +10249,6 @@ end
 arch dungeon_magic
 x 29
 y 18
-end
-arch pedestal
-x 29
-y 18
-invisible 1
-connected 100
-move_on all
-move_off all
 end
 arch teleporter
 hp 1
@@ -11458,14 +10346,6 @@ arch dungeon_magic
 x 30
 y 4
 end
-arch pedestal
-x 30
-y 4
-invisible 1
-connected 100
-move_on all
-move_off all
-end
 arch teleporter
 hp 1
 sp 11
@@ -11485,14 +10365,6 @@ arch dungeon_magic
 x 30
 y 5
 end
-arch pedestal
-x 30
-y 5
-invisible 1
-connected 100
-move_on all
-move_off all
-end
 arch teleporter
 hp 1
 sp 11
@@ -11512,14 +10384,6 @@ arch dungeon_magic
 x 30
 y 6
 end
-arch pedestal
-x 30
-y 6
-invisible 1
-connected 100
-move_on all
-move_off all
-end
 arch teleporter
 hp 1
 sp 11
@@ -11535,17 +10399,17 @@ y 6
 no_magic 1
 damned 1
 end
+arch altar_trigger
+slaying blocked
+exp 1
+food 1
+x 30
+y 7
+last_sp 1
+end
 arch dungeon_magic
 x 30
 y 7
-end
-arch pedestal
-x 30
-y 7
-invisible 1
-connected 100
-move_on all
-move_off all
 end
 arch teleporter
 hp 1
@@ -11561,19 +10425,19 @@ x 30
 y 7
 no_magic 1
 damned 1
+end
+arch altar_trigger
+slaying blocked
+exp 1
+food 1
+x 30
+y 8
+last_sp 1
 end
 arch dungeon_magic
 x 30
 y 8
 end
-arch pedestal
-x 30
-y 8
-invisible 1
-connected 100
-move_on all
-move_off all
-end
 arch teleporter
 hp 1
 sp 11
@@ -11589,17 +10453,17 @@ y 8
 no_magic 1
 damned 1
 end
+arch altar_trigger
+slaying blocked
+exp 1
+food 1
+x 30
+y 9
+last_sp 1
+end
 arch dungeon_magic
 x 30
 y 9
-end
-arch pedestal
-x 30
-y 9
-invisible 1
-connected 100
-move_on all
-move_off all
 end
 arch teleporter
 hp 1
@@ -11615,19 +10479,19 @@ x 30
 y 9
 no_magic 1
 damned 1
+end
+arch altar_trigger
+slaying blocked
+exp 1
+food 1
+x 30
+y 10
+last_sp 1
 end
 arch dungeon_magic
 x 30
 y 10
 end
-arch pedestal
-x 30
-y 10
-invisible 1
-connected 100
-move_on all
-move_off all
-end
 arch teleporter
 hp 1
 sp 11
@@ -11643,17 +10507,17 @@ y 10
 no_magic 1
 damned 1
 end
+arch altar_trigger
+slaying blocked
+exp 1
+food 1
+x 30
+y 11
+last_sp 1
+end
 arch dungeon_magic
 x 30
 y 11
-end
-arch pedestal
-x 30
-y 11
-invisible 1
-connected 100
-move_on all
-move_off all
 end
 arch teleporter
 hp 1
@@ -11670,17 +10534,17 @@ y 11
 no_magic 1
 damned 1
 end
+arch altar_trigger
+slaying blocked
+exp 1
+food 1
+x 30
+y 12
+last_sp 1
+end
 arch dungeon_magic
 x 30
 y 12
-end
-arch pedestal
-x 30
-y 12
-invisible 1
-connected 100
-move_on all
-move_off all
 end
 arch teleporter
 hp 1
@@ -11697,17 +10561,17 @@ y 12
 no_magic 1
 damned 1
 end
+arch altar_trigger
+slaying blocked
+exp 1
+food 1
+x 30
+y 13
+last_sp 1
+end
 arch dungeon_magic
 x 30
 y 13
-end
-arch pedestal
-x 30
-y 13
-invisible 1
-connected 100
-move_on all
-move_off all
 end
 arch teleporter
 hp 1
@@ -11724,17 +10588,17 @@ y 13
 no_magic 1
 damned 1
 end
+arch altar_trigger
+slaying blocked
+exp 1
+food 1
+x 30
+y 14
+last_sp 1
+end
 arch dungeon_magic
 x 30
 y 14
-end
-arch pedestal
-x 30
-y 14
-invisible 1
-connected 100
-move_on all
-move_off all
 end
 arch teleporter
 hp 1
@@ -11750,18 +10614,18 @@ x 30
 y 14
 no_magic 1
 damned 1
+end
+arch altar_trigger
+slaying blocked
+exp 1
+food 1
+x 30
+y 15
+last_sp 1
 end
 arch dungeon_magic
 x 30
 y 15
-end
-arch pedestal
-x 30
-y 15
-invisible 1
-connected 100
-move_on all
-move_off all
 end
 arch teleporter
 hp 1
@@ -11781,14 +10645,6 @@ end
 arch dungeon_magic
 x 30
 y 16
-end
-arch pedestal
-x 30
-y 16
-invisible 1
-connected 100
-move_on all
-move_off all
 end
 arch teleporter
 hp 1
@@ -11808,14 +10664,6 @@ end
 arch dungeon_magic
 x 30
 y 17
-end
-arch pedestal
-x 30
-y 17
-invisible 1
-connected 100
-move_on all
-move_off all
 end
 arch teleporter
 hp 1
@@ -11842,14 +10690,6 @@ end
 arch dungeon_magic
 x 30
 y 18
-end
-arch pedestal
-x 30
-y 18
-invisible 1
-connected 100
-move_on all
-move_off all
 end
 arch teleporter
 hp 1
@@ -11947,14 +10787,6 @@ arch dungeon_magic
 x 31
 y 4
 end
-arch pedestal
-x 31
-y 4
-invisible 1
-connected 100
-move_on all
-move_off all
-end
 arch teleporter
 hp 1
 sp 11
@@ -11974,14 +10806,6 @@ arch dungeon_magic
 x 31
 y 5
 end
-arch pedestal
-x 31
-y 5
-invisible 1
-connected 100
-move_on all
-move_off all
-end
 arch teleporter
 hp 1
 sp 11
@@ -12001,14 +10825,6 @@ arch dungeon_magic
 x 31
 y 6
 end
-arch pedestal
-x 31
-y 6
-invisible 1
-connected 100
-move_on all
-move_off all
-end
 arch teleporter
 hp 1
 sp 11
@@ -12027,14 +10843,6 @@ end
 arch dungeon_magic
 x 31
 y 7
-end
-arch pedestal
-x 31
-y 7
-invisible 1
-connected 100
-move_on all
-move_off all
 end
 arch teleporter
 hp 1
@@ -12054,14 +10862,6 @@ end
 arch dungeon_magic
 x 31
 y 8
-end
-arch pedestal
-x 31
-y 8
-invisible 1
-connected 100
-move_on all
-move_off all
 end
 arch teleporter
 hp 1
@@ -12081,14 +10881,6 @@ end
 arch dungeon_magic
 x 31
 y 9
-end
-arch pedestal
-x 31
-y 9
-invisible 1
-connected 100
-move_on all
-move_off all
 end
 arch teleporter
 hp 1
@@ -12108,14 +10900,6 @@ end
 arch dungeon_magic
 x 31
 y 10
-end
-arch pedestal
-x 31
-y 10
-invisible 1
-connected 100
-move_on all
-move_off all
 end
 arch teleporter
 hp 1
@@ -12135,14 +10919,6 @@ end
 arch dungeon_magic
 x 31
 y 11
-end
-arch pedestal
-x 31
-y 11
-invisible 1
-connected 100
-move_on all
-move_off all
 end
 arch teleporter
 hp 1
@@ -12162,14 +10938,6 @@ end
 arch dungeon_magic
 x 31
 y 12
-end
-arch pedestal
-x 31
-y 12
-invisible 1
-connected 100
-move_on all
-move_off all
 end
 arch teleporter
 hp 1
@@ -12189,14 +10957,6 @@ end
 arch dungeon_magic
 x 31
 y 13
-end
-arch pedestal
-x 31
-y 13
-invisible 1
-connected 100
-move_on all
-move_off all
 end
 arch teleporter
 hp 1
@@ -12216,14 +10976,6 @@ end
 arch dungeon_magic
 x 31
 y 14
-end
-arch pedestal
-x 31
-y 14
-invisible 1
-connected 100
-move_on all
-move_off all
 end
 arch teleporter
 hp 1
@@ -12243,14 +10995,6 @@ end
 arch dungeon_magic
 x 31
 y 15
-end
-arch pedestal
-x 31
-y 15
-invisible 1
-connected 100
-move_on all
-move_off all
 end
 arch teleporter
 hp 1
@@ -12270,14 +11014,6 @@ end
 arch dungeon_magic
 x 31
 y 16
-end
-arch pedestal
-x 31
-y 16
-invisible 1
-connected 100
-move_on all
-move_off all
 end
 arch teleporter
 hp 1
@@ -12297,14 +11033,6 @@ end
 arch dungeon_magic
 x 31
 y 17
-end
-arch pedestal
-x 31
-y 17
-invisible 1
-connected 100
-move_on all
-move_off all
 end
 arch teleporter
 hp 1
@@ -12331,14 +11059,6 @@ end
 arch dungeon_magic
 x 31
 y 18
-end
-arch pedestal
-x 31
-y 18
-invisible 1
-connected 100
-move_on all
-move_off all
 end
 arch teleporter
 hp 1
@@ -12436,14 +11156,6 @@ arch dungeon_magic
 x 32
 y 4
 end
-arch pedestal
-x 32
-y 4
-invisible 1
-connected 100
-move_on all
-move_off all
-end
 arch teleporter
 hp 1
 sp 11
@@ -12463,14 +11175,6 @@ arch dungeon_magic
 x 32
 y 5
 end
-arch pedestal
-x 32
-y 5
-invisible 1
-connected 100
-move_on all
-move_off all
-end
 arch teleporter
 hp 1
 sp 11
@@ -12490,14 +11194,6 @@ arch dungeon_magic
 x 32
 y 6
 end
-arch pedestal
-x 32
-y 6
-invisible 1
-connected 100
-move_on all
-move_off all
-end
 arch teleporter
 hp 1
 sp 11
@@ -12516,14 +11212,6 @@ end
 arch dungeon_magic
 x 32
 y 7
-end
-arch pedestal
-x 32
-y 7
-invisible 1
-connected 100
-move_on all
-move_off all
 end
 arch teleporter
 hp 1
@@ -12678,14 +11366,6 @@ arch dungeon_magic
 x 32
 y 15
 end
-arch pedestal
-x 32
-y 15
-invisible 1
-connected 100
-move_on all
-move_off all
-end
 arch teleporter
 hp 1
 sp 11
@@ -12705,14 +11385,6 @@ arch dungeon_magic
 x 32
 y 16
 end
-arch pedestal
-x 32
-y 16
-invisible 1
-connected 100
-move_on all
-move_off all
-end
 arch teleporter
 hp 1
 sp 11
@@ -12731,14 +11403,6 @@ end
 arch dungeon_magic
 x 32
 y 17
-end
-arch pedestal
-x 32
-y 17
-invisible 1
-connected 100
-move_on all
-move_off all
 end
 arch teleporter
 hp 1
@@ -12765,14 +11429,6 @@ end
 arch dungeon_magic
 x 32
 y 18
-end
-arch pedestal
-x 32
-y 18
-invisible 1
-connected 100
-move_on all
-move_off all
 end
 arch teleporter
 hp 1
@@ -12870,14 +11526,6 @@ arch dungeon_magic
 x 33
 y 4
 end
-arch pedestal
-x 33
-y 4
-invisible 1
-connected 100
-move_on all
-move_off all
-end
 arch teleporter
 hp 1
 sp 11
@@ -12903,14 +11551,6 @@ end
 arch dungeon_magic
 x 33
 y 5
-end
-arch pedestal
-x 33
-y 5
-invisible 1
-connected 100
-move_on all
-move_off all
 end
 arch teleporter
 hp 1
@@ -12938,14 +11578,6 @@ arch dungeon_magic
 x 33
 y 6
 end
-arch pedestal
-x 33
-y 6
-invisible 1
-connected 100
-move_on all
-move_off all
-end
 arch teleporter
 hp 1
 sp 11
@@ -12971,14 +11603,6 @@ end
 arch dungeon_magic
 x 33
 y 7
-end
-arch pedestal
-x 33
-y 7
-invisible 1
-connected 100
-move_on all
-move_off all
 end
 arch teleporter
 hp 1
@@ -13090,14 +11714,6 @@ arch dungeon_magic
 x 33
 y 15
 end
-arch pedestal
-x 33
-y 15
-invisible 1
-connected 100
-move_on all
-move_off all
-end
 arch teleporter
 hp 1
 sp 11
@@ -13123,14 +11739,6 @@ end
 arch dungeon_magic
 x 33
 y 16
-end
-arch pedestal
-x 33
-y 16
-invisible 1
-connected 100
-move_on all
-move_off all
 end
 arch teleporter
 hp 1
@@ -13158,14 +11766,6 @@ arch dungeon_magic
 x 33
 y 17
 end
-arch pedestal
-x 33
-y 17
-invisible 1
-connected 100
-move_on all
-move_off all
-end
 arch teleporter
 hp 1
 sp 11
@@ -13191,14 +11791,6 @@ end
 arch dungeon_magic
 x 33
 y 18
-end
-arch pedestal
-x 33
-y 18
-invisible 1
-connected 100
-move_on all
-move_off all
 end
 arch teleporter
 hp 1
@@ -13612,6 +12204,20 @@ arch swall_2_1_2
 x 35
 y 7
 end
+arch duplicator
+other_arch blocked
+x 35
+y 8
+connected 20
+end
+arch creator
+x 35
+y 8
+connected 777
+lifesave 1
+arch blocked
+end
+end
 arch pedestal
 x 35
 y 8
@@ -13634,6 +12240,20 @@ arch pentagram
 x 35
 y 8
 is_floor 1
+end
+arch duplicator
+other_arch blocked
+x 35
+y 9
+connected 20
+end
+arch creator
+x 35
+y 9
+connected 777
+lifesave 1
+arch blocked
+end
 end
 arch pedestal
 x 35
@@ -13695,6 +12315,20 @@ arch swall_2_1_2
 x 35
 y 12
 end
+arch duplicator
+other_arch blocked
+x 35
+y 13
+connected 20
+end
+arch creator
+x 35
+y 13
+connected 777
+lifesave 1
+arch blocked
+end
+end
 arch pedestal
 x 35
 y 13
@@ -13717,6 +12351,20 @@ arch pentagram
 x 35
 y 13
 is_floor 1
+end
+arch duplicator
+other_arch blocked
+x 35
+y 14
+connected 20
+end
+arch creator
+x 35
+y 14
+connected 777
+lifesave 1
+arch blocked
+end
 end
 arch pedestal
 x 35
@@ -13868,6 +12516,20 @@ arch swall_2_1_2
 x 36
 y 7
 end
+arch duplicator
+other_arch blocked
+x 36
+y 8
+connected 20
+end
+arch creator
+x 36
+y 8
+connected 777
+lifesave 1
+arch blocked
+end
+end
 arch pedestal
 x 36
 y 8
@@ -13890,6 +12552,20 @@ arch pentagram
 x 36
 y 8
 is_floor 1
+end
+arch duplicator
+other_arch blocked
+x 36
+y 9
+connected 20
+end
+arch creator
+x 36
+y 9
+connected 777
+lifesave 1
+arch blocked
+end
 end
 arch pedestal
 x 36
@@ -13942,6 +12618,20 @@ arch swall_2_1_2
 x 36
 y 12
 end
+arch duplicator
+other_arch blocked
+x 36
+y 13
+connected 20
+end
+arch creator
+x 36
+y 13
+connected 777
+lifesave 1
+arch blocked
+end
+end
 arch pedestal
 x 36
 y 13
@@ -13964,6 +12654,20 @@ arch pentagram
 x 36
 y 13
 is_floor 1
+end
+arch duplicator
+other_arch blocked
+x 36
+y 14
+connected 20
+end
+arch creator
+x 36
+y 14
+connected 777
+lifesave 1
+arch blocked
+end
 end
 arch pedestal
 x 36
@@ -14105,13 +12809,6 @@ arch stonefloor2
 x 37
 y 8
 end
-arch grate_open_2
-x 37
-y 8
-connected 100
-no_magic 1
-damned 1
-end
 arch check_inv
 slaying npc
 x 37
@@ -14126,13 +12823,6 @@ end
 arch stonefloor2
 x 37
 y 9
-end
-arch grate_open_2
-x 37
-y 9
-connected 100
-no_magic 1
-damned 1
 end
 arch dungeon_magic
 x 37
@@ -14177,13 +12867,6 @@ arch stonefloor2
 x 37
 y 13
 end
-arch grate_open_2
-x 37
-y 13
-connected 100
-no_magic 1
-damned 1
-end
 arch check_inv
 slaying npc
 x 37
@@ -14198,13 +12881,6 @@ end
 arch stonefloor2
 x 37
 y 14
-end
-arch grate_open_2
-x 37
-y 14
-connected 100
-no_magic 1
-damned 1
 end
 arch dungeon_magic
 x 37
