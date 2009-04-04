@@ -8,7 +8,7 @@ enter_x 1
 enter_y 7
 msg
 Created:  2008-07-27 Chad Opperman | cromagic@sbcglobal.net
-Modified: 2008-10-06 Rick Tanner
+Modified: 2009-03-11 Chad Opperman | cromagic@sbcglobal.net
 endmsg
 end
 arch blackrock
@@ -5328,6 +5328,18 @@ y 14
 end
 arch blocked
 x 15
+y 9
+end
+arch blocked
+x 15
+y 10
+end
+arch blocked
+x 15
+y 11
+end
+arch blocked
+x 15
 y 12
 end
 arch blocked
@@ -5340,29 +5352,67 @@ y 14
 end
 arch swall_2_1_2
 x 16
-y 6
 end
 arch swall_2_1_2
 x 16
-y 7
+y 1
 end
 arch swall_2_1_2
 x 16
-y 8
+y 2
 end
 arch swall_2_1_2
+x 16
+y 3
+end
+arch swall_2_1_2
+x 16
+y 4
+end
+arch swall_2_1_2
+x 16
+y 5
+end
+arch blocked
 x 16
 y 9
 end
-arch swall_2_1_2
+arch teleporter
+slaying fz_lobby
+hp 10
+sp 9
+x 16
+y 10
+speed 5.0
+invisible 1
+end
+arch blackmarble
 x 16
 y 10
 end
-arch swall_2_1_2
+arch teleporter
+slaying fz_lobby
+hp 10
+sp 9
+x 16
+y 11
+speed 5.0
+invisible 1
+end
+arch blackmarble
 x 16
 y 11
 end
-arch blocked
+arch teleporter
+slaying fz_lobby
+hp 10
+sp 9
+x 16
+y 12
+speed 5.0
+invisible 1
+end
+arch blackmarble
 x 16
 y 12
 end
@@ -5379,21 +5429,16 @@ arch blackmarble
 x 16
 y 13
 end
-arch cloudfloor
-x 16
-y 13
-end
 arch blocked
 x 16
 y 14
 end
 arch swall_2_1_2
 x 17
-y 6
 end
 arch button_handle
 x 17
-y 7
+y 1
 connected 2
 end
 arch merchant
@@ -5403,7 +5448,7 @@ msg
 I find watching this game a good way to relax.
 endmsg
 x 17
-y 7
+y 1
 speed 0.02
 level 200
 resist_physical 100
@@ -5438,15 +5483,15 @@ no_damage 1
 end
 arch swall_2_1_2
 x 17
-y 8
+y 2
 end
 arch swall_2_1_2
 x 17
-y 9
+y 3
 end
 arch button_handle
 x 17
-y 10
+y 4
 connected 1
 end
 arch merchant
@@ -5456,7 +5501,7 @@ msg
 I find watching this game a good way to relax.
 endmsg
 x 17
-y 10
+y 4
 speed 0.01
 level 200
 resist_physical 100
@@ -5490,6 +5535,18 @@ stand_still 1
 no_damage 1
 end
 arch swall_2_1_2
+x 17
+y 5
+end
+arch blocked
+x 17
+y 9
+end
+arch blocked
+x 17
+y 10
+end
+arch blocked
 x 17
 y 11
 end
