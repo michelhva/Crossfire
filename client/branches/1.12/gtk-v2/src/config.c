@@ -43,14 +43,12 @@ const char * const rcsid_gtk2_config_c =
 
 #include <dirent.h>
 
-#ifndef alphasort /* eg mingw */
+#ifdef MINGW
 int alphasort(const struct dirent **a, const struct dirent **b)
 {
     return strcoll((*a)->d_name, (*b)->d_name);
 }
-#endif
 
-#ifndef scandir
 int scandir(const char *dir, struct dirent ***namelist,
             int (*select)(const struct dirent *),
             int (*compar)(const struct dirent **, const struct dirent **)) {
