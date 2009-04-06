@@ -1,3 +1,88 @@
+2009-04-03 19:16  rjtanner
+
+	* brest/shops/brest.magic: Backport from trunk - remove duplicated
+	  floor tiles
+
+2009-04-02 22:09  akirschbaum
+
+	* editor/scripts/LegacySpellConverter,
+	  editor/scripts/MapNormalizer: Fix LegacySpellConverter and
+	  MapNormalizer editor plugin scripts.
+
+2009-03-21 21:16  rjtanner
+
+	* quests/mcz/castle_water: Backport from trunk, Fix broken floor in
+	  /quests/mcz/castle_water which was using glue that was supposed
+	  to look like water (and making it a floor). Replace it with a
+	  walkable water floor with same slowdown as glue
+
+2009-03-21 21:14  rjtanner
+
+	* quests/mcz/castle_low1: Backport from trunk, Add missing floor
+	  under wall in /quests/mcz/castle_low1
+
+2009-02-19 01:11  rjtanner
+
+	* pup_land/rainbow/Lv1/hut3: Backport from Trunk; Fix typo in
+	  message in /pup_land/rainbow/Lv1/hut3 (mistery -> mystery)
+
+2009-02-19 01:10  rjtanner
+
+	* pup_land/rainbow/Lv1/cage: Backport from Trunk; Fix broken map in
+	  rainbow quest: Players got stuck in cage map due to arch on
+	  target having move_block all.
+
+2009-02-19 01:08  rjtanner
+
+	* pup_land/rainbow/islands: Backport from Trunk; Unbreak exit from
+	  river map
+
+2009-02-19 01:05  rjtanner
+
+	* brest/pshops/pshop_copier: Backport from Trunk; Fix some bugs in
+	  the pshop_copier script for the brest pshops.
+
+2009-02-19 01:03  rjtanner
+
+	* brest/pshops/pshop1/basement, brest/pshops/pshop10/basement,
+	  brest/pshops/pshop11/basement, brest/pshops/pshop12/basement,
+	  brest/pshops/pshop13/basement, brest/pshops/pshop14/basement,
+	  brest/pshops/pshop15/basement, brest/pshops/pshop16/basement,
+	  brest/pshops/pshop17/basement, brest/pshops/pshop18/basement,
+	  brest/pshops/pshop19/basement, brest/pshops/pshop2/basement,
+	  brest/pshops/pshop20/basement, brest/pshops/pshop21/basement,
+	  brest/pshops/pshop22/basement, brest/pshops/pshop23/basement,
+	  brest/pshops/pshop24/basement, brest/pshops/pshop25/basement,
+	  brest/pshops/pshop26/basement, brest/pshops/pshop27/basement,
+	  brest/pshops/pshop3/basement, brest/pshops/pshop4/basement,
+	  brest/pshops/pshop5/basement, brest/pshops/pshop6/basement,
+	  brest/pshops/pshop7/basement, brest/pshops/pshop8/basement,
+	  brest/pshops/pshop9/basement: Backport from Trunk; Fix broken
+	  connections in the basement maps of all pshops in Brest. This may
+	  require updating unique server maps.
+
+2009-02-11 20:54  rjtanner
+
+	* scorn/temples/ruggilli2: Removed duplicate passes (set the qty to
+	  1) for theservant_ found in /scorn/temples/ruggilli2
+
+2009-02-11 19:36  rjtanner
+
+	* brest/shops/brest.cvt: Set floor tiles in the blacksmith area of
+	  Brest CVT (/brest/shops/brest.cvt) to shop tiles (type 68) in
+	  order for the conversion anvils to function properlly, also
+	  removed some unneeded double stacked slate floor tiles
+
+2009-02-11 05:45  rjtanner
+
+	* lake_country/shops/clems_archery: Set quest items in Clem's
+	  Archery to no_pick to prevent pet theft abuse, also removed
+	  'no_pretext 1' since this is no longer used or supported
+
+2009-02-11 05:39  rjtanner
+
+	* ChangeLog: Updated ChangeLog file using svn2cl
+
 2009-02-11 05:19  rjtanner
 
 	* HallOfDMs: Backport from trunk - /HallOfDMs: Fix typo ('Wraith
