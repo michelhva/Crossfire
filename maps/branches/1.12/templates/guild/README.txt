@@ -5,12 +5,12 @@
 1 Install:
 All files go within the crossfire server folder
 
-Step 1: Copy the map files to ./share/maps/guilds/<guildname> 
+Step 1: Copy the map files to ./share/maps/guilds/<guildname>
 (<guildname> is not the folder name, but rather whatever guild name you are using)
 
-* With the current map and server there are three guilds, they are: GUILD_TEMPLATE, PoisonedDagger, and GreenGoblin.  
-* Whatever name you give the folder should work, but it will still use GUILD_TEMPLATE.  
-* You can change what guild it uses by editing the map files.  
+* With the current map and server there are three guilds, they are: GUILD_TEMPLATE, PoisonedDagger, and GreenGoblin.
+* Whatever name you give the folder should work, but it will still use GUILD_TEMPLATE.
+* You can change what guild it uses by editing the map files.
 
 Modify Map Files:
 
@@ -72,12 +72,12 @@ GuildList:
 All Map Files:
 In all the guild map files, update the Region setting (region Template), it's found at the fourth (4th) line in each file. In the map editor, click on Map -> Map Properties (or hit control-m) as another way to update the Region seting.
 See the "regions" file found at ./share/maps/ for more information.
-  
 
-Step 2: 
+
+Step 2:
 Copy the scripts to ./share/maps/python/guilds
 
-Step 3: 
+Step 3:
 Choose where you want the guild and edit the world map, place a guildhall at that location, and set the exit path to /path/to/guilds/<guildname>; edit the mainfloor map exit (x15, y29 - set to /Edit/This/Exit/Path in the template) back to the world map as well.  If you are using the Storage Hall map (storage_hall), you will need to update the exit path in this map as well - the exit is found at the bottom of the map (x10, y29 - set to /Edit/This/Exit/Path in the template) Otherwise, players may not be able to enter the guild hall map or they may exit out to some other location in the game.
 
 2 Bug reporting:
@@ -93,4 +93,3 @@ Editor: CrossfireEditor
 Date:    3/19/2007
 Map finished by:  Alestan jehloq@yahoo.com
 Date:     8/27/2007
-

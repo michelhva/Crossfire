@@ -2692,7 +2692,7 @@ y 9
 end
 arch guild
 name Guild of the Laughing Skull
-slaying ../guilds/laughing_skull/ground
+slaying ../guilds/laughing_skull/mainfloor
 x 16
 y 9
 move_block 0
@@ -3464,9 +3464,7 @@ y 6
 end
 arch guild
 name Laughing Skull's Storage Room
-slaying ../guilds/laughing_skull/storage_room
-hp 1
-sp 10
+slaying ../guilds/laughing_skull/storage_hall
 x 21
 y 6
 end

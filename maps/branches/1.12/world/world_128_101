@@ -211,9 +211,7 @@ elevation 358
 end
 arch building5_east
 name Nenshou Youso's Chozou Kutsurogi
-slaying /azumauindo/suno-yamatoshi/nenshou_youso/storage_room
-hp 1
-sp 10
+slaying /azumauindo/suno-yamatoshi/nenshou_youso/storage_hall
 y 21
 end
 arch grass
@@ -13393,9 +13391,7 @@ x 40
 y 23
 end
 arch invis_exit
-slaying /azumauindo/zaseki_dzuki_ryoku/ground
-hp 12
-sp 33
+slaying /azumauindo/zaseki_dzuki_ryoku/mainfloor
 x 40
 y 23
 end
@@ -14899,9 +14895,7 @@ elevation 455
 end
 arch building5_east
 name Zaseki Dzuki Ryoku's Chozou Kutsurogi
-slaying /azumauindo/zaseki_dzuki_ryoku/storage_room
-hp 1
-sp 10
+slaying /azumauindo/zaseki_dzuki_ryoku/storage_hall
 x 44
 y 16
 end

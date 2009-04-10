@@ -1,42 +1,48 @@
 arch map
-name Smoking Cauldron Guild Bigchest
+name Bigchest
+difficulty 1
 region darcap
-width 4
-height 4
+width 5
+height 5
+enter_x 2
+enter_y 2
 msg
-Created:  2001-12-23
-Modified: 2008-10-20 Rick Tanner
+Creator: CF Java Map Editor
+Date:    12/23/2001
+Map finised by:  Alestan jehloq@yahoo.com
+Date:     8/27/2007
 endmsg
 end
-arch woodfloor
-unique 1
+arch woodfloor2
 end
 arch woodwall_2_2_2
 end
-arch woodfloor
+arch woodfloor2
 y 1
-unique 1
 end
 arch woodwall_2_1_1
 y 1
 end
-arch woodfloor
+arch woodfloor2
 y 2
-unique 1
 end
 arch woodwall_2_1_1
 y 2
 end
-arch woodfloor
+arch woodfloor2
 y 3
-unique 1
+end
+arch woodwall_2_1_1
+y 3
+end
+arch woodfloor2
+y 4
 end
 arch woodwall_2_2_1
-y 3
+y 4
 end
-arch woodfloor
+arch woodfloor2
 x 1
-unique 1
 end
 arch woodwall_2_1_2
 x 1
@@ -47,8 +53,8 @@ y 1
 unique 1
 end
 arch exit
-slaying /darcap/darcap/guilds/smoking_cauldron/ground
-hp 6
+slaying basement
+hp 1
 sp 9
 x 1
 y 1
@@ -63,13 +69,16 @@ x 1
 y 3
 unique 1
 end
+arch woodfloor2
+x 1
+y 4
+end
 arch woodwall_2_1_2
 x 1
-y 3
+y 4
 end
-arch woodfloor
+arch woodfloor2
 x 2
-unique 1
 end
 arch woodwall_2_1_2
 x 2
@@ -89,41 +98,78 @@ x 2
 y 3
 unique 1
 end
+arch woodfloor2
+x 2
+y 4
+end
 arch woodwall_2_1_2
 x 2
-y 3
+y 4
+end
+arch woodfloor2
+x 3
+end
+arch woodwall_2_1_2
+x 3
 end
 arch woodfloor
 x 3
+y 1
 unique 1
+end
+arch woodfloor
+x 3
+y 2
+unique 1
+end
+arch woodfloor
+x 3
+y 3
+unique 1
+end
+arch woodfloor2
+x 3
+y 4
+end
+arch woodwall_2_1_2
+x 3
+y 4
+end
+arch woodfloor2
+x 4
 end
 arch woodwall_2_2_3
-x 3
+x 4
 end
-arch woodfloor
-x 3
-y 1
-unique 1
-end
-arch woodwall_2_1_1
-x 3
+arch woodfloor2
+x 4
 y 1
 end
-arch woodfloor
-x 3
+arch woodwall_2_1_1
+x 4
+y 1
+end
+arch woodfloor2
+x 4
 y 2
-unique 1
 end
 arch woodwall_2_1_1
-x 3
+x 4
 y 2
 end
-arch woodfloor
-x 3
+arch woodfloor2
+x 4
 y 3
-unique 1
+end
+arch woodwall_2_1_1
+x 4
+y 3
+end
+arch woodfloor2
+x 4
+y 4
 end
 arch woodwall_2_2_4
-x 3
-y 3
+x 4
+y 4
 end

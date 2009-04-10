@@ -7604,9 +7604,7 @@ elevation 2182
 end
 arch guild_fant
 name Black Shield's storage room
-slaying /brest/black_shield/storage_room
-hp 1
-sp 10
+slaying /brest/black_shield/storage_hall
 x 27
 y 28
 end
@@ -11488,9 +11486,7 @@ elevation 485
 end
 arch guild_fant
 name Guild of the Black Shield
-slaying /brest/black_shield/ground
-hp 12
-sp 23
+slaying /brest/black_shield/mainfloor
 x 39
 y 40
 end
