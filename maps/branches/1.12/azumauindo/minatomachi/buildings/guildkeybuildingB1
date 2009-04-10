@@ -2043,9 +2043,13 @@ x 11
 y 4
 end
 arch stair_down_3
-slaying guildkeybuildingB2a
-hp 13
-sp 8
+x 11
+y 4
+end
+arch sign
+msg
+Our most humble apologies.  Guild houses are no longer sold here.  Instead, go to the guild house you wish to purchase, and tell the guardian you wish to buy it.
+endmsg
 x 11
 y 4
 end
@@ -3466,6 +3470,13 @@ sp 8
 x 19
 y 3
 end
+arch sign
+msg
+Our most humble apologies.  Guild houses are no longer sold here.  Instead, go to the guild house you wish to purchase, and tell the guardian you wish to buy it.
+endmsg
+x 19
+y 3
+end
 arch dirtfloor
 x 19
 y 4
@@ -4485,6 +4496,13 @@ arch stair_down_3
 slaying guildkeybuildingB2c
 hp 13
 sp 8
+x 25
+y 4
+end
+arch sign
+msg
+Our most humble apologies.  Guild houses are no longer sold here.  Instead, go to the guild house you wish to purchase, and tell the guardian you wish to buy it.
+endmsg
 x 25
 y 4
 end

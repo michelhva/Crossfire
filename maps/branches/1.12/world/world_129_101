@@ -814,9 +814,7 @@ elevation 221
 end
 arch building5_east
 name Ketsueki Itsuryuu's Chozou Kutsurogi
-slaying /azumauindo/minatomachi/ketsueki_itsuryuu/storage_room
-hp 1
-sp 10
+slaying /azumauindo/minatomachi/ketsueki_itsuryuu/storage_hall
 x 2
 y 32
 end
@@ -2728,9 +2726,7 @@ elevation 387
 end
 arch building9_east
 name Shougyoukumiai dzuki za Ketsueki Itsuryuu
-slaying /azumauindo/minatomachi/ketsueki_itsuryuu/ground
-hp 12
-sp 19
+slaying /azumauindo/minatomachi/ketsueki_itsuryuu/mainfloor
 x 8
 y 34
 end

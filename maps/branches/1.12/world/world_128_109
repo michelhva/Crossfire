@@ -6352,9 +6352,7 @@ y 7
 end
 arch guild
 name Damned Heretics's Storage Room
-slaying /wolfsburg/guilds/damned_heretics/storage_room
-hp 1
-sp 10
+slaying /wolfsburg/guilds/damned_heretics/storage_hall
 x 25
 y 7
 end
@@ -6882,9 +6880,7 @@ y 14
 end
 arch guild
 name Guild of the Damned Heretics
-slaying /wolfsburg/guilds/damned_heretics/ground
-hp 12
-sp 23
+slaying /wolfsburg/guilds/damned_heretics/mainfloor
 x 27
 y 14
 end

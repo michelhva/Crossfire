@@ -9447,6 +9447,8 @@ x 31
 y 9
 end
 arch lightningwall_5
+arch spell_sm_lightning
+end
 x 31
 y 9
 speed 100
@@ -9902,6 +9904,8 @@ x 33
 y 9
 end
 arch lightningwall_5
+arch spell_sm_lightning
+end
 x 33
 y 9
 speed 100
@@ -10101,6 +10105,8 @@ arch woodfloor2
 x 34
 end
 arch lightningwall_5
+arch spell_sm_lightning
+end
 x 34
 speed -0.2
 end

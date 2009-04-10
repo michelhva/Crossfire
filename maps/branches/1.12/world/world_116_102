@@ -5286,9 +5286,7 @@ elevation 0
 end
 arch guild_northwest
 name Guild of the Poisoned Dagger
-slaying /darcap/darcap/guilds/poisoned_dagger/ground
-hp 12
-sp 23
+slaying /darcap/darcap/guilds/poisoned_dagger/mainfloor
 x 19
 y 40
 end
@@ -5807,9 +5805,7 @@ elevation 0
 end
 arch guild_northwest
 name Poisoned Dagger's storage room
-slaying /darcap/darcap/guilds/poisoned_dagger/storage_room
-hp 1
-sp 10
+slaying /darcap/darcap/guilds/poisoned_dagger/storage_hall
 x 21
 y 25
 end
@@ -8168,9 +8164,7 @@ elevation 0
 end
 arch guild_northwest
 name Smoking Cauldron's storage room
-slaying /darcap/darcap/guilds/smoking_cauldron/storage_room
-hp 1
-sp 10
+slaying /darcap/darcap/guilds/smoking_cauldron/storage_hall
 x 28
 y 27
 end
@@ -9215,9 +9209,7 @@ elevation 0
 end
 arch guild_northwest
 name Guild of the Smoking Cauldron
-slaying /darcap/darcap/guilds/smoking_cauldron/ground
-hp 12
-sp 23
+slaying /darcap/darcap/guilds/smoking_cauldron/mainfloor
 x 31
 y 25
 end
