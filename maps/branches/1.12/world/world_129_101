@@ -9,7 +9,7 @@ enter_x 1
 enter_y 1
 msg
 Created:  2005-02-14
-Modified: 2008-11-20 Rick Tanner
+Modified: 2009-04-11 Rick Tanner
 endmsg
 outdoor 1
 tile_path_1 world_129_100
@@ -2727,6 +2727,8 @@ end
 arch building9_east
 name Shougyoukumiai dzuki za Ketsueki Itsuryuu
 slaying /azumauindo/minatomachi/ketsueki_itsuryuu/mainfloor
+hp 15
+sp 28
 x 8
 y 34
 end

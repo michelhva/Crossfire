@@ -8,7 +8,7 @@ enter_x 5
 enter_y 18
 msg
 Created:  1996-02-25
-Modified: 2008-12-04 Rick Tanner
+Modified: 2009-04-11 Rick Tanner
 endmsg
 end
 arch grass
@@ -1581,6 +1581,8 @@ end
 arch guild
 name Guild of the Purple Butterfly
 slaying /pup_land/guilds/purple_butterfly/mainfloor
+hp 15
+sp 28
 x 12
 y 16
 end

@@ -8,7 +8,7 @@ msg
 Created:  1996-02-07
 Updated 2007.11.12 by Gene Alexander
  - make this an outdoor map for day/night/weather
-Modified: 2008-12-04 Rick Tanner
+Modified: 2009-04-11 Rick Tanner
 endmsg
 outdoor 1
 end
@@ -2693,6 +2693,8 @@ end
 arch guild
 name Guild of the Laughing Skull
 slaying ../guilds/laughing_skull/mainfloor
+hp 15
+sp 28
 x 16
 y 9
 move_block 0
