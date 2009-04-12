@@ -9,7 +9,7 @@ enter_x 1
 enter_y 1
 msg
 Created:  2001-02-16
-Modified: 2009-04-11 Rick Tanner
+Modified: 2009-04-12 Rick Tanner
 endmsg
 outdoor 1
 tile_path_1 world_105_114
@@ -6942,9 +6942,6 @@ elevation 10124
 end
 arch market1
 name Guild Houses Inc.
-slaying /scorn/guilds/guildhousesinc
-hp 9
-sp 9
 x 15
 y 39
 end
@@ -7406,9 +7403,6 @@ elevation 9163
 end
 arch market3
 name Guild Houses Inc.
-slaying /scorn/guilds/guildhousesinc
-hp 9
-sp 9
 x 16
 y 39
 end
