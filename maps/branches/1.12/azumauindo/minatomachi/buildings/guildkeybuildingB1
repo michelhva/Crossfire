@@ -10,7 +10,7 @@ enter_x 20
 enter_y 20
 msg
 Created:  2004-08-03 Mikeeusa
-Modified: 2008-10-05 Rick Tanner
+Modified: 2009-04-12 Rick Tanner
 endmsg
 end
 arch blocked
@@ -3464,9 +3464,6 @@ x 19
 y 3
 end
 arch stair_down_3
-slaying guildkeybuildingB2b
-hp 13
-sp 8
 x 19
 y 3
 end
@@ -4493,9 +4490,6 @@ x 25
 y 4
 end
 arch stair_down_3
-slaying guildkeybuildingB2c
-hp 13
-sp 8
 x 25
 y 4
 end
