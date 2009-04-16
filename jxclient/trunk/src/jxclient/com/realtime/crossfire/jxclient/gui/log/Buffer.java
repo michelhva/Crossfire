@@ -207,7 +207,7 @@ public class Buffer
     {
         synchronized (sync)
         {
-            return totalHeight;
+            return Math.max(totalHeight, 1);
         }
     }
 
