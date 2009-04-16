@@ -609,7 +609,7 @@ public class Gui
 
     /**
      * Returns the first gui element of this gui belonging to the given class
-     * and hawing the given name.
+     * and having the given name.
      * @param class_ the class to search for
      * @param name the button's name
      * @return the button or <code>null</code> if no button matches
