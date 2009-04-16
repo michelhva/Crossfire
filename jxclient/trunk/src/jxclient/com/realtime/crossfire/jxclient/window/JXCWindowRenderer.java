@@ -711,4 +711,29 @@ public class JXCWindowRenderer
 
         return true;
     }
+
+    /**
+     * Deactivates the command input text field. Does nothing if the command
+     * input text field is not active.
+     * @return  whether the command input text field has been deactivated
+     */
+    public boolean deactivateCommandInput()
+    {
+        for (final Gui dialog : getOpenDialogs())
+        {
+            if (!dialog.isHidden(rendererGuiState))
+            {
+                if (dialog.deactivateCommandInput())
+                {
+                    return true;
+                }
+                if (dialog.isModal())
+                {
+                    return false;
+                }
+            }
+        }
+
+        return currentGui.deactivateCommandInput();
+    }
 }
