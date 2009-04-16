@@ -748,14 +748,6 @@ public class GuiManager
     }
 
     /**
-     * Does a full repaint of the GUI.
-     */
-    public void repaint()
-    {
-        windowRenderer.repaint();
-    }
-
-    /**
      * Displays the "start" GUI.
      */
     private void showGUIStart()

@@ -654,7 +654,7 @@ public class JXCWindow extends JFrame
     @Override
     public void paint(final Graphics g)
     {
-        guiManager.repaint();
+        guiManager.getWindowRenderer().repaint();
     }
 
     /**
