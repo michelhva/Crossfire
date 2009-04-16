@@ -257,4 +257,13 @@ public abstract class GUILog extends GUIElement implements GUIScrollable2
     {
         listeners.remove(listener);
     }
+
+    /**
+     * Returns the {@link Buffer} instance containing the text messages.
+     * @return the buffer instance
+     */
+    public Buffer getBuffer()
+    {
+        return buffer;
+    }
 }

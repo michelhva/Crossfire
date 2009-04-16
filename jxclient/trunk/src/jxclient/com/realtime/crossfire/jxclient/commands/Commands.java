@@ -71,6 +71,7 @@ public class Commands
         commands.put("scripttell", new ScripttellCommand(scriptManager, crossfireServerConnection));
         commands.put("exec", new ExecCommand(guiManager, crossfireServerConnection));
         commands.put("set", new SetCommand(crossfireServerConnection, optionManager));
+        commands.put("clear", new ClearCommand(windowRenderer, crossfireServerConnection));
     }
 
     /**

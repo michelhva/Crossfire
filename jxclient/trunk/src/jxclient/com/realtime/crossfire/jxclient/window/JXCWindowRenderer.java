@@ -23,6 +23,8 @@ import com.realtime.crossfire.jxclient.gui.gui.ActivatableGUIElement;
 import com.realtime.crossfire.jxclient.gui.gui.Gui;
 import com.realtime.crossfire.jxclient.gui.gui.GuiAutoCloseListener;
 import com.realtime.crossfire.jxclient.gui.label.AbstractLabel;
+import com.realtime.crossfire.jxclient.gui.log.Buffer;
+import com.realtime.crossfire.jxclient.gui.log.GUIMessageLog;
 import com.realtime.crossfire.jxclient.skin.Resolution;
 import java.awt.Color;
 import java.awt.Dimension;
@@ -731,5 +733,41 @@ public class JXCWindowRenderer
         }
 
         return currentGui.deactivateCommandInput();
+    }
+
+    /**
+     * Returns the active message buffer.
+     * @return the active message buffer or <code>null</code> if none is active
+     */
+    public Buffer getActiveMessageBuffer()
+    {
+        for (final Gui dialog : getOpenDialogs())
+        {
+            if (!dialog.isHidden(rendererGuiState))
+            {
+                final Buffer buffer = getActiveMessageBuffer(dialog);
+                if (buffer != null)
+                {
+                    return buffer;
+                }
+                if (dialog.isModal())
+                {
+                    return null;
+                }
+            }
+        }
+
+        return getActiveMessageBuffer(currentGui);
+    }
+
+    /**
+     * Returns the active message buffer for a {@link Gui} instance.
+     * @param gui the gui instance
+     * @return the active message buffer or <code>null</code>
+     */
+    private Buffer getActiveMessageBuffer(final Gui gui)
+    {
+        final GUIMessageLog buffer = gui.getFirstElement(GUIMessageLog.class);
+        return buffer == null ? null : buffer.getBuffer();
     }
 }
