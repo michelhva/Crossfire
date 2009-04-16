@@ -144,11 +144,6 @@ public class JXCWindowRenderer
         currentGui = gui;
     }
 
-    public void init(final Resolution resolution)
-    {
-        displayMode = new DisplayMode(resolution.getWidth(), resolution.getHeight(), DisplayMode.BIT_DEPTH_MULTI, DisplayMode.REFRESH_RATE_UNKNOWN);
-    }
-
     /**
      * Repaint the window.
      */
@@ -157,8 +152,9 @@ public class JXCWindowRenderer
         forcePaint = true;
     }
 
-    public void initRendering(final boolean fullScreen)
+    public void initRendering(final Resolution resolution, final boolean fullScreen)
     {
+        displayMode = new DisplayMode(resolution.getWidth(), resolution.getHeight(), DisplayMode.BIT_DEPTH_MULTI, DisplayMode.REFRESH_RATE_UNKNOWN);
         isFullScreen = false;
         oldDisplayMode = null;
 

@@ -491,8 +491,7 @@ public class GuiManager
 
     public void initRendering(final boolean fullScreen)
     {
-        windowRenderer.init(skin.getResolution());
-        windowRenderer.initRendering(fullScreen);
+        windowRenderer.initRendering(skin.getResolution(), fullScreen);
         DialogStateParser.load(skin, windowRenderer);
     }
 
