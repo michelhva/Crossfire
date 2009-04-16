@@ -242,7 +242,7 @@ public class GuiManager
         public void start()
         {
             server.removeCrossfireDrawextinfoListener(crossfireDrawextinfoListener);
-            setGuiState(RendererGuiState.START);
+            windowRenderer.setGuiState(RendererGuiState.START);
             showGUIStart();
         }
 
@@ -251,7 +251,7 @@ public class GuiManager
         public void metaserver()
         {
             server.removeCrossfireDrawextinfoListener(crossfireDrawextinfoListener);
-            setGuiState(RendererGuiState.META);
+            windowRenderer.setGuiState(RendererGuiState.META);
             showGUIMeta();
             activateMetaserverGui();
         }
@@ -261,7 +261,7 @@ public class GuiManager
         public void connecting()
         {
             server.addCrossfireDrawextinfoListener(crossfireDrawextinfoListener);
-            setGuiState(RendererGuiState.LOGIN);
+            windowRenderer.setGuiState(RendererGuiState.LOGIN);
             showGUIMain();
             if (dialogConnect != null)
             {
@@ -561,15 +561,6 @@ public class GuiManager
         }
         windowRenderer.closeDialog(queryDialog);
         windowRenderer.closeDialog(skin.getDialogBook(1));
-    }
-
-    /**
-     * Updates the current gui state.
-     * @param rendererGuiState the new gui state
-     */
-    private void setGuiState(final RendererGuiState rendererGuiState)
-    {
-        windowRenderer.setGuiState(rendererGuiState);
     }
 
     /**
