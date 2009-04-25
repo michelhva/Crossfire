@@ -4,7 +4,7 @@ region portjoseph
 width 50
 height 50
 msg
-Modified: 2007-12-24 tchize
+Modified: 2009-04-25 Kevin Bulgrien
 endmsg
 outdoor 1
 tile_path_1 world_100_113
@@ -3997,10 +3997,6 @@ arch river_sw-ne_l
 x 16
 y 23
 end
-arch pstone_1
-x 16
-y 24
-end
 arch grass_only
 x 16
 y 24
@@ -4590,10 +4586,6 @@ end
 arch random_weapon
 x 18
 y 28
-end
-arch pstone_1
-x 18
-y 29
 end
 arch grass_only
 x 18
@@ -5857,10 +5849,6 @@ arch river_sw-ne_l
 x 23
 y 25
 end
-arch pstone_1
-x 23
-y 26
-end
 arch grass_only
 x 23
 y 26
@@ -6411,10 +6399,6 @@ arch pstone_1
 x 25
 y 32
 end
-arch pstone_1
-x 25
-y 33
-end
 arch grass_only
 x 25
 y 33
@@ -6687,10 +6671,6 @@ end
 arch river_nw-se_l
 x 26
 y 33
-end
-arch pstone_1
-x 26
-y 34
 end
 arch grass_only
 x 26
