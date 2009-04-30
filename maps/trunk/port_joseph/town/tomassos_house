@@ -8,7 +8,7 @@ enter_x 17
 enter_y 18
 msg
 Created:  2003-07-21
-Modified: 2008-09-21 Rick Tanner
+Modified: 2009-04-29 Kevin Bulgrien
 endmsg
 end
 arch sea
@@ -241,6 +241,13 @@ arch grass
 x 1
 y 18
 end
+arch invis_exit
+slaying /world/world_101_114
+hp 15
+sp 27
+x 1
+y 19
+end
 arch brush
 x 1
 y 19
@@ -330,6 +337,13 @@ arch grass
 x 2
 y 18
 end
+arch invis_exit
+slaying /world/world_101_114
+hp 15
+sp 27
+x 2
+y 19
+end
 arch grass
 x 2
 y 19
@@ -418,6 +432,13 @@ arch grass
 x 3
 y 18
 end
+arch invis_exit
+slaying /world/world_101_114
+hp 15
+sp 27
+x 3
+y 19
+end
 arch brush
 x 3
 y 19
@@ -501,6 +522,13 @@ end
 arch brush
 x 4
 y 18
+end
+arch invis_exit
+slaying /world/world_101_114
+hp 15
+sp 27
+x 4
+y 19
 end
 arch grass
 x 4
@@ -2230,6 +2258,13 @@ arch grass
 x 21
 y 18
 end
+arch invis_exit
+slaying /world/world_101_114
+hp 15
+sp 27
+x 21
+y 19
+end
 arch brush
 x 21
 y 19
@@ -2314,6 +2349,13 @@ arch brush
 x 22
 y 18
 end
+arch invis_exit
+slaying /world/world_101_114
+hp 15
+sp 27
+x 22
+y 19
+end
 arch brush
 x 22
 y 19
@@ -2392,6 +2434,13 @@ end
 arch brush
 x 23
 y 18
+end
+arch invis_exit
+slaying /world/world_101_114
+hp 15
+sp 27
+x 23
+y 19
 end
 arch brush
 x 23
