@@ -8,7 +8,7 @@ enter_x 16
 enter_y 6
 msg
 Created:  1994-05-17 langley (langley@fermat.dartmouth.edu)
-Modified: 2008-12-02 Rick Tanner
+Modified: 2009-04-29 Kevin Bulgrien
 endmsg
 end
 arch brush
@@ -165,11 +165,9 @@ msg
 @match thief
 Who you calling thief?
 @match fight
-Yeah, the fight.  What are you,
-stupid?
+Yeah, the fight.  What are you, stupid?
 @match *
-Why don't you mind your own
-business and watch the fight
+Why don't you mind your own business and watch the fight?
 endmsg
 x 1
 y 11
@@ -254,8 +252,7 @@ end
 arch elf_1
 msg
 @match *
-He dances like a moonbeam on a golden
-summer evening
+He dances like a moonbeam on a golden summer evening.
 endmsg
 x 2
 y 9
@@ -267,7 +264,7 @@ end
 arch northman
 msg
 @match *
-Show your stuff Olaf
+Show your stuff Olaf!
 endmsg
 x 2
 y 10
@@ -358,22 +355,14 @@ msg
 @match redeye
 That's me name, what of it?
 @match percival|percy
-Ah, ye want to learn his secrets?
-Well, the only one who he will speak
-to is the lovely lady Portia.
+Ah, ye want to learn his secrets?  Well, the only one who he will speak to is the lovely lady Portia.
 @match portia|lady
-Ah, a pretty lass in her day.  She
-has a house up near the church.  Ask
-her about Percy, not me.
+Eh, a pretty lass in her day.  Ask her about Percy, not me.  She has a house up near the church.
 @match treasure
-Heh he everyones after a pirate's
-gold.  More like yer bones will
-litter the sandy deep.
+Heh, heh.  Everyones after a pirate's gold aren't they?
+Mind you, if ya go after it, more than likely yer bones will litter the sandy deep.
 @match moogly|bill
-Moogly Bill was a terror to peaceful
-folk.  He took his secrets to his
-grave, and made sure his grave was
-not to be harmed.
+Moogly Bill was a terror to peaceful folk.  He took his secrets to his grave, and made sure his grave was not to be harmed.
 @match *
 What are ye babbling about?
 endmsg
@@ -1032,6 +1021,7 @@ end
 arch bench_1_4
 x 10
 y 3
+move_block walk swim boat
 end
 arch woodfloor
 x 10
@@ -1094,17 +1084,12 @@ arch thief_1
 name thief
 msg
 @match treasure
-Hah, you want in our treasure, well
-you might have better luck than us.
-Its old Moogly Bill's treasure.
-@match grave
-Yes, he was buried with his treasure
-map.  Only Peg Leg Percival knows where.
-Redeye knows Percival, but he won't
-talk to us.
+Hah, you want in our treasure, well you might have better luck than us.
+Its old Moogly Bill's treasure we be chattin' about.
+@match grave|secret
+Yes, he was buried with his treasure map.  Only Pegleg Percival knows where.
 @match redeye
-Redeye is in the back room watching
-the fight.  He's the ugly one.
+Redeye is in the back room watching the fight.  He's the ugly one.
 endmsg
 x 10
 y 12
@@ -1143,6 +1128,7 @@ end
 arch bench_2_1_2
 x 11
 y 3
+move_block walk swim boat
 end
 arch woodfloor
 x 11
@@ -1239,6 +1225,7 @@ end
 arch bench_2_1_2
 x 12
 y 3
+move_block walk swim boat
 end
 arch woodfloor
 x 12
@@ -1295,20 +1282,17 @@ end
 arch pirate
 msg
 @match percy|percival|pegleg
-Old Percival is retired and
-spends his time fishin.  He won't
-talk to the likes o' us.
+Old Percival is retired and spends his time fishin.  He won't talk to the likes o' us.
 @match hello|howdy|hi
 Arr.  Goodday to ye.
 @match bill|moogly
-Ay, the dread pirate Moogly Bill.
-Terror of the high seas.
-No one found his pirate loot, he
-took the secret of it to his grave.
+Ay, the dread pirate Moogly Bill. Terror of the high seas he was.
+No one found his pirate loot, he took the secret of where it is to his grave.
 @match loot
-Enough for a king's ransom . . .
-but he was buried with the map.
-Redeye knows more than we.
+Enough for a king's ransom . . . as Redeye puts it.
+@match buried|where
+<Shrug>.  They buried the map with ole Moogly, rest his soul.
+Redeye knows more about that than we do, but he's pretty tight-lipped about it.
 endmsg
 x 12
 y 12
@@ -1347,6 +1331,7 @@ end
 arch bench_2_1_2
 x 13
 y 3
+move_block walk swim boat
 end
 arch woodfloor
 x 13
@@ -1372,8 +1357,9 @@ arch woman2
 name serving girl
 msg
 @match drink
-Hold your horses, I'll get your
-drinks when I'm good and ready.
+Hold your horses, I'll get your drinks when I'm good and ready.
+@match *
+Set yerself down at a table and I'll take your order.
 endmsg
 x 13
 y 7
@@ -1444,6 +1430,7 @@ end
 arch bench_2_1_2
 x 14
 y 3
+move_block walk swim boat
 end
 arch woodfloor
 x 14
@@ -1503,8 +1490,8 @@ msg
 @match treasure
 I don't know anything, ask them . . .
 @match *
-Pssst.  I overheard those two in the
-next booth whispering about treasure.
+Pssst.
+I overheard those two in the next booth whispering about treasure.
 endmsg
 hp 30
 maxhp 30
@@ -1549,6 +1536,7 @@ end
 arch bench_2_1_2
 x 15
 y 3
+move_block walk swim boat
 end
 arch woodfloor
 x 15
@@ -1631,6 +1619,7 @@ end
 arch bench_1_3
 x 16
 y 3
+move_block walk swim boat
 end
 arch woodfloor
 x 16
@@ -1643,8 +1632,7 @@ end
 arch gnoll
 msg
 @match *
-Keep away from me, yer stinking up the
-bar
+Keep away from me, yer stinking up the bar.
 endmsg
 x 16
 y 4
