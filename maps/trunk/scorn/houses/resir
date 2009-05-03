@@ -9,7 +9,7 @@ enter_x 24
 enter_y 4
 msg
 Created:  2005-07-16 Knut Ahlers (webmaster@knutshome.de)
-Modified: 2008-12-20 Kevin Bulgrien
+Modified: 2009-05-03 Kevin Bulgrien
 endmsg
 maplore
 @def Resir's house
@@ -426,10 +426,6 @@ arch mouse
 x 2
 y 17
 end
-arch mouse
-x 2
-y 17
-end
 arch dirtfloor
 x 2
 y 18
@@ -575,14 +571,6 @@ x 3
 y 17
 end
 arch dirtfloor
-x 3
-y 18
-end
-arch mouse
-x 3
-y 18
-end
-arch mouse
 x 3
 y 18
 end
@@ -1717,17 +1705,9 @@ arch dirtfloor
 x 11
 y 15
 end
-arch dirtfloor
-x 11
-y 15
-end
 arch door_1
 x 11
 y 15
-end
-arch dirtfloor
-x 11
-y 16
 end
 arch dirtfloor
 x 11
@@ -2339,25 +2319,9 @@ arch dirtfloor
 x 15
 y 15
 end
-arch dirtfloor
-x 15
-y 15
-end
-arch dirtfloor
-x 15
-y 15
-end
 arch door_1
 x 15
 y 15
-end
-arch dirtfloor
-x 15
-y 16
-end
-arch dirtfloor
-x 15
-y 16
 end
 arch dirtfloor
 x 15
@@ -2496,10 +2460,6 @@ x 16
 y 14
 end
 arch dirtfloor
-x 16
-y 15
-end
-arch goblin
 x 16
 y 15
 end
@@ -2931,33 +2891,9 @@ arch dirtfloor
 x 19
 y 15
 end
-arch dirtfloor
-x 19
-y 15
-end
-arch dirtfloor
-x 19
-y 15
-end
-arch dirtfloor
-x 19
-y 15
-end
 arch door_1
 x 19
 y 15
-end
-arch dirtfloor
-x 19
-y 16
-end
-arch dirtfloor
-x 19
-y 16
-end
-arch dirtfloor
-x 19
-y 16
 end
 arch dirtfloor
 x 19
