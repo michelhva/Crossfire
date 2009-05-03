@@ -12,7 +12,7 @@
   "post" : [["mork_speak","key"]],
   "msg" : ["I bet Gork send you to get key.  Did he?"]
   }, {
-  "match" : ["yes"],
+  "match" : ["key","send","yes"],
   "pre" : [["can_get_key","1"],["mork_speak","key"]],
   "post" : [["mork_speak",""],["can_get_key","0"]],
   "msg" : ["Ok, I give you key.  Here, it in corner."],
