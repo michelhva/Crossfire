@@ -3,8 +3,8 @@
   <name>MapNormalizer</name>
   <code><![CDATA[import java.io.File;
 import java.util.Iterator;
+import net.sf.gridarta.gui.shrinkmapsizedialog.ShrinkMapSizeUtils;
 import net.sf.gridarta.io.RecursiveFileIterator;
-import net.sf.gridarta.map.ShrinkMapSizeUtils;
 import net.sf.gridarta.utils.CommonConstants;
 
 void normalizeMap(File mapFile, String mapPath) {
