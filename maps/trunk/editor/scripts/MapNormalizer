@@ -31,7 +31,9 @@ void normalizeMap(File mapFile, String mapPath) {
             ShrinkMapSizeUtils.shrinkMap(mapModel, shrinkFlags);
         }
 
-        map.save();
+        if (map.getMapModel().isModified()) {
+            map.save();
+        }
     } finally {
         mapManager.release(map);
     }
