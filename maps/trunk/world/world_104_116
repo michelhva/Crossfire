@@ -4,7 +4,7 @@ region scorn
 width 50
 height 50
 msg
-Modified: 2008-10-30 Rick Tanner
+Modified: 2009-05-18 Kevin Bulgrien
 endmsg
 outdoor 1
 tile_path_1 world_104_115
@@ -8077,7 +8077,7 @@ arch biglake_2_2_2
 x 32
 y 18
 end
-arch river_se-n
+arch river_n-s
 x 32
 y 18
 end
@@ -9322,10 +9322,9 @@ x 36
 y 27
 elevation 5937
 end
-arch river_nw-se_l
+arch biglake_sw
 x 36
 y 27
-elevation 5937
 end
 arch mountain
 x 36
