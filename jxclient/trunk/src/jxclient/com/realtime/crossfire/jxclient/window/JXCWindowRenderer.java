@@ -239,11 +239,6 @@ public class JXCWindowRenderer
         crossfireServerConnection.addCrossfireUpdateMapListener(crossfireUpdateMapListener);
     }
 
-    public void init(final Gui gui)
-    {
-        currentGui = gui;
-    }
-
     /**
      * Repaint the window.
      */
@@ -400,8 +395,7 @@ public class JXCWindowRenderer
 
     public void clearGUI(final Gui gui)
     {
-        currentGui = gui;
-        currentGuiChanged = true;
+        setCurrentGui(gui);
         for (int ig = 0; ig < 3; ig++)
         {
             final Graphics g = bufferStrategy.getDrawGraphics();

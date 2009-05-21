@@ -317,7 +317,7 @@ public class GuiManager
     {
         commands = new Commands(window, windowRenderer, commandQueue, server, scriptManager, optionManager, this);
         guiFactory = new GuiFactory(debugGui ? mouseTracker : null, commands, this);
-        windowRenderer.init(guiFactory.newGui());
+        windowRenderer.setCurrentGui(guiFactory.newGui());
         queryDialog = guiFactory.newGui();
         keybindDialog = guiFactory.newGui();
     }
