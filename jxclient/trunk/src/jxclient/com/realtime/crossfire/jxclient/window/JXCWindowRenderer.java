@@ -25,6 +25,8 @@ import com.realtime.crossfire.jxclient.gui.gui.GuiAutoCloseListener;
 import com.realtime.crossfire.jxclient.gui.label.AbstractLabel;
 import com.realtime.crossfire.jxclient.gui.log.Buffer;
 import com.realtime.crossfire.jxclient.gui.log.GUIMessageLog;
+import com.realtime.crossfire.jxclient.server.CrossfireServerConnection;
+import com.realtime.crossfire.jxclient.server.CrossfireUpdateMapListener;
 import com.realtime.crossfire.jxclient.skin.Resolution;
 import java.awt.Color;
 import java.awt.Dimension;
@@ -92,7 +94,19 @@ public class JXCWindowRenderer
     /**
      * If set, force a full repaint.
      */
-    private boolean forcePaint = false;
+    private volatile boolean forcePaint = false;
+
+    /**
+     * If set, do not repaint anything. It it set while a map update is in
+     * progress.
+     */
+    private volatile boolean inhibitPaint = false;
+
+    /**
+     * If set, at least one call to {@link #redrawGUI)} has been dropped while
+     * {@link #inhibitPaint} was set.
+     */
+    private volatile boolean skippedPaint = false;
 
     /**
      * The x-offset of of the visible window.
@@ -128,17 +142,101 @@ public class JXCWindowRenderer
     };
 
     /**
+     * The listener to detect map model changes.
+     */
+    private final CrossfireUpdateMapListener crossfireUpdateMapListener = new CrossfireUpdateMapListener()
+    {
+        /** {@inheritDoc} */
+        @Override
+        public void newMap(final int mapWidth, final int mapHeight)
+        {
+            // ignore
+        }
+
+        /** {@inheritDoc} */
+        @Override
+        public void mapBegin()
+        {
+            inhibitPaint = true;
+            skippedPaint = false;
+        }
+
+        /** {@inheritDoc} */
+        @Override
+        public void mapClear(final int x, final int y)
+        {
+            // ignore
+        }
+
+        /** {@inheritDoc} */
+        @Override
+        public void mapDarkness(final int x, final int y, final int darkness)
+        {
+            // ignore
+        }
+
+        /** {@inheritDoc} */
+        @Override
+        public void mapFace(final int x, final int y, final int layer, final int faceNum)
+        {
+            // ignore
+        }
+
+        /** {@inheritDoc} */
+        @Override
+        public void mapAnimation(final int x, final int y, final int layer, final int animationNum, final int animationType)
+        {
+            // ignore
+        }
+
+        /** {@inheritDoc} */
+        @Override
+        public void mapAnimationSpeed(final int x, final int y, final int layer, final int animSpeed)
+        {
+            // ignore
+        }
+
+        /** {@inheritDoc} */
+        @Override
+        public void scroll(final int dx, final int dy)
+        {
+            // ignore
+        }
+
+        /** {@inheritDoc} */
+        @Override
+        public void mapEnd()
+        {
+            if (skippedPaint)
+            {
+                forcePaint = true;
+            }
+            inhibitPaint = false;
+        }
+
+        /** {@inheritDoc} */
+        @Override
+        public void addAnimation(final int animation, final int flags, final int[] faces)
+        {
+            // ignore
+        }
+
+    };
+
+    /**
      * Creates a new instance.
      * @param window the associated window
      * @param mouseTracker the mouse tracker instance
      * @param redrawSemaphore the semaphore used to synchronized map model
      * updates and map view redraws
+     * @param crossfireServerConnection the server connection to monitor
      */
-    public JXCWindowRenderer(final JXCWindow window, final MouseTracker mouseTracker, final Object redrawSemaphore)
+    public JXCWindowRenderer(final JXCWindow window, final MouseTracker mouseTracker, final Object redrawSemaphore, final CrossfireServerConnection crossfireServerConnection)
     {
         this.window = window;
         this.mouseTracker = mouseTracker;
         this.redrawSemaphore = redrawSemaphore;
+        crossfireServerConnection.addCrossfireUpdateMapListener(crossfireUpdateMapListener);
     }
 
     public void init(final Gui gui)
@@ -252,6 +350,12 @@ public class JXCWindowRenderer
 
     public void redrawGUI()
     {
+        if (inhibitPaint)
+        {
+            skippedPaint = true;
+            return;
+        }
+
         if (forcePaint)
         {
             forcePaint = false;

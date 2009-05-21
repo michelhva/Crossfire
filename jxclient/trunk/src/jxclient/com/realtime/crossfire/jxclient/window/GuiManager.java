@@ -307,7 +307,7 @@ public class GuiManager
         this.settings = settings;
         this.server = server;
         mouseTracker = new MouseTracker(debugGui);
-        windowRenderer = new JXCWindowRenderer(window, mouseTracker, semaphoreRedraw);
+        windowRenderer = new JXCWindowRenderer(window, mouseTracker, semaphoreRedraw, server);
         window.addConnectionStateListener(guiStateListener);
         mouseTracker.init(windowRenderer);
     }
