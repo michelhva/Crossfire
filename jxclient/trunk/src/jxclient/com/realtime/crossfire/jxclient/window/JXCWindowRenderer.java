@@ -365,13 +365,19 @@ public class JXCWindowRenderer
             do
             {
                 final Graphics g = bufferStrategy.getDrawGraphics();
-                g.translate(offsetX, offsetY);
-                if (bufferStrategy.contentsRestored())
+                try
                 {
-                    redrawBlack(g);
+                    g.translate(offsetX, offsetY);
+                    if (bufferStrategy.contentsRestored())
+                    {
+                        redrawBlack(g);
+                    }
+                    redraw(g);
                 }
-                redraw(g);
-                g.dispose();
+                finally
+                {
+                    g.dispose();
+                }
             }
             while (bufferStrategy.contentsLost());
             bufferStrategy.show();
