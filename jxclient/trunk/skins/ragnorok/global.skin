@@ -89,6 +89,7 @@ key code F7 0 exec command_skills
 key code F9 0 exec command_map
 key code F10 0 exec command_setup
 
+key char 82 -e tell <<reply_to>> -
 key char 97 apply
 key char 100 use_skill disarm traps
 key char 101 examine

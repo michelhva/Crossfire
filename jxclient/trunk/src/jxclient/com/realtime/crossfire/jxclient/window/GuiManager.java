@@ -1,6 +1,7 @@
 package com.realtime.crossfire.jxclient.window;
 
 import com.realtime.crossfire.jxclient.commands.Commands;
+import com.realtime.crossfire.jxclient.commands.Macros;
 import com.realtime.crossfire.jxclient.gui.gui.Gui;
 import com.realtime.crossfire.jxclient.gui.gui.GuiFactory;
 import com.realtime.crossfire.jxclient.gui.gui.TooltipManager;
@@ -128,6 +129,11 @@ public class GuiManager
      * The {@link CrossfireServerConnection} instance to monitor.
      */
     private final CrossfireServerConnection server;
+
+    /**
+     * The {@link Macros} instance to use.
+     */
+    private final Macros macros;
 
     /**
      * Called periodically to update the display contents.
@@ -298,7 +304,7 @@ public class GuiManager
      * @param settings the settings to use
      * @param server the crossfire server connection to monitor
      */
-    public GuiManager(final JXCWindow window, final boolean debugGui, final Object semaphoreDrawing, final Object semaphoreRedraw, final TooltipManager tooltipManager, final Settings settings, final CrossfireServerConnection server)
+    public GuiManager(final JXCWindow window, final boolean debugGui, final Object semaphoreDrawing, final Object semaphoreRedraw, final TooltipManager tooltipManager, final Settings settings, final CrossfireServerConnection server, final Macros macros)
     {
         this.debugGui = debugGui;
         this.semaphoreDrawing = semaphoreDrawing;
@@ -306,6 +312,7 @@ public class GuiManager
         this.tooltipManager = tooltipManager;
         this.settings = settings;
         this.server = server;
+        this.macros = macros;
         mouseTracker = new MouseTracker(debugGui);
         windowRenderer = new JXCWindowRenderer(window, mouseTracker, semaphoreRedraw, server);
         window.addConnectionStateListener(guiStateListener);
@@ -315,8 +322,8 @@ public class GuiManager
     @Deprecated
     public void init(final ScriptManager scriptManager, final CommandQueue commandQueue, final CrossfireServerConnection server, final OptionManager optionManager)
     {
-        commands = new Commands(window, windowRenderer, commandQueue, server, scriptManager, optionManager, this);
-        guiFactory = new GuiFactory(debugGui ? mouseTracker : null, commands, this);
+        commands = new Commands(window, windowRenderer, commandQueue, server, scriptManager, optionManager, this, macros);
+        guiFactory = new GuiFactory(debugGui ? mouseTracker : null, commands, this, macros);
         windowRenderer.setCurrentGui(guiFactory.newGui());
         queryDialog = guiFactory.newGui();
         keybindDialog = guiFactory.newGui();

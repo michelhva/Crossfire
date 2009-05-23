@@ -20,6 +20,7 @@
 package com.realtime.crossfire.jxclient.window;
 
 import com.realtime.crossfire.jxclient.animations.Animations;
+import com.realtime.crossfire.jxclient.commands.Macros;
 import com.realtime.crossfire.jxclient.experience.ExperienceTable;
 import com.realtime.crossfire.jxclient.faces.FaceCache;
 import com.realtime.crossfire.jxclient.faces.FacesManager;
@@ -212,6 +213,11 @@ public class JXCWindow extends JFrame
     private ConnectionStatus status = ConnectionStatus.UNCONNECTED;
 
     private final Object semaphoreStatus = new Object();
+
+    /**
+     * The {@link Macros} instance.
+     */
+    private final Macros macros;
 
     /**
      * The {@link WindowFocusListener} registered for this window. It resets
@@ -484,6 +490,7 @@ public class JXCWindow extends JFrame
         this.optionManager = optionManager;
         this.metaserverModel = metaserverModel;
         this.resolution = resolution;
+        macros = new Macros(server);
         final FaceCache faceCache = new FaceCache(server);
         experienceTable = new ExperienceTable(server);
         skillSet = new SkillSet(server, this);
@@ -496,10 +503,10 @@ public class JXCWindow extends JFrame
         new PoisonWatcher(stats, server);
         new ActiveSkillWatcher(stats, server);
         setDefaultCloseOperation(DO_NOTHING_ON_CLOSE);
-        guiManager = new GuiManager(this, debugGui, semaphoreDrawing, semaphoreRedraw, new TooltipManager(this), settings, server);
+        guiManager = new GuiManager(this, debugGui, semaphoreDrawing, semaphoreRedraw, new TooltipManager(this), settings, server, macros);
         final ScriptManager scriptManager = new ScriptManager(commandQueue, server, stats, itemsManager, spellsManager, mapUpdater, skillSet);
         guiManager.init(scriptManager, commandQueue, server, optionManager);
-        keybindingsManager = new KeybindingsManager(guiManager.getCommands(), guiManager);
+        keybindingsManager = new KeybindingsManager(guiManager.getCommands(), guiManager, macros);
         shortcutsManager = new ShortcutsManager(commandQueue, spellsManager);
         keyHandler = new KeyHandler(debugKeyboard, keybindingsManager, commandQueue, guiManager.getWindowRenderer(), keyHandlerListener);
         try
@@ -693,7 +700,7 @@ public class JXCWindow extends JFrame
     {
         // check for skin in directory
         final File dir = new File(skinName);
-        final KeyBindings defaultKeyBindings = new KeyBindings(null, guiManager.getCommands(), guiManager);
+        final KeyBindings defaultKeyBindings = new KeyBindings(null, guiManager.getCommands(), guiManager, macros);
         final JXCSkinSource skinSource;
         if (dir.exists() && dir.isDirectory())
         {
@@ -705,7 +712,7 @@ public class JXCWindow extends JFrame
             skinSource = new JXCSkinClassSource("com/realtime/crossfire/jxclient/skins/"+skinName);
         }
         final JXCSkinLoader newSkin = new JXCSkinLoader(itemsManager, spellsManager, facesManager, stats, mapUpdater, defaultKeyBindings, optionManager, experienceTable, skillSet);
-        return newSkin.load(skinSource, server, this, guiManager.getTooltipManager(), guiManager.getWindowRenderer(), guiManager.mouseTracker, metaserverModel, commandQueue, resolution, shortcutsManager.getShortcuts(), guiManager.getCommands(), currentSpellManager, guiManager, debugGui);
+        return newSkin.load(skinSource, server, this, guiManager.getTooltipManager(), guiManager.getWindowRenderer(), guiManager.mouseTracker, metaserverModel, commandQueue, resolution, shortcutsManager.getShortcuts(), guiManager.getCommands(), currentSpellManager, guiManager, debugGui, macros);
     }
 
     /**

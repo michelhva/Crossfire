@@ -21,6 +21,7 @@
 package com.realtime.crossfire.jxclient.gui.keybindings;
 
 import com.realtime.crossfire.jxclient.commands.Commands;
+import com.realtime.crossfire.jxclient.commands.Macros;
 import com.realtime.crossfire.jxclient.gui.commands.GUICommandFactory;
 import com.realtime.crossfire.jxclient.window.GUICommandList;
 import com.realtime.crossfire.jxclient.window.GuiManager;
@@ -54,6 +55,11 @@ public class KeyBindings
     private final GuiManager guiManager;
 
     /**
+     * The {@link Macros} instance to use.
+     */
+    private Macros macros;
+
+    /**
      * The active key bindings.
      */
     private final Set<KeyBinding> keybindings = new HashSet<KeyBinding>();
@@ -80,12 +86,14 @@ public class KeyBindings
      * save
      * @param commands the commands instance for executing commands
      * @param guiManager the gui manager to use
+     * @param macros the macros instance to use
      */
-    public KeyBindings(final File file, final Commands commands, final GuiManager guiManager)
+    public KeyBindings(final File file, final Commands commands, final GuiManager guiManager, final Macros macros)
     {
         this.file = file;
         this.commands = commands;
         this.guiManager = guiManager;
+        this.macros = macros;
     }
 
     /**
@@ -375,7 +383,7 @@ public class KeyBindings
             {
                 final char keyChar = (char)Integer.parseInt(tmp[0]);
                 final GUICommandList commandList = new GUICommandList(GUICommandList.CommandType.AND);
-                commandList.add(GUICommandFactory.createCommandDecode(tmp[1], guiManager, commands));
+                commandList.add(GUICommandFactory.createCommandDecode(tmp[1], guiManager, commands, macros));
                 addKeyBindingAsKeyChar(keyChar, commandList, isDefault);
             }
             catch (final NumberFormatException ex)
@@ -417,7 +425,7 @@ public class KeyBindings
             }
 
             final GUICommandList commandList = new GUICommandList(GUICommandList.CommandType.AND);
-            commandList.add(GUICommandFactory.createCommandDecode(tmp[2], guiManager, commands));
+            commandList.add(GUICommandFactory.createCommandDecode(tmp[2], guiManager, commands, macros));
             addKeyBindingAsKeyCode(keyCode, modifiers, commandList, isDefault);
         }
         else

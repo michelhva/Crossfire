@@ -55,6 +55,7 @@ key code F10 0 exec command_shortcut9
 key code F11 0 exec command_shortcutA
 key code F12 0 exec command_shortcutB
 
+key char 82 -e tell <<reply_to>> -
 key char 97 apply
 key char 100 use_skill disarm traps
 key char 101 examine

@@ -20,6 +20,7 @@
 package com.realtime.crossfire.jxclient.skin;
 
 import com.realtime.crossfire.jxclient.commands.Commands;
+import com.realtime.crossfire.jxclient.commands.Macros;
 import com.realtime.crossfire.jxclient.experience.ExperienceTable;
 import com.realtime.crossfire.jxclient.gui.gauge.GaugeUpdater;
 import com.realtime.crossfire.jxclient.gui.gui.GUIElement;
@@ -383,13 +384,14 @@ public class DefaultJXCSkin implements JXCSkin
      * @param commandQueue the command queue for executing commands
      * @param crossfireServerConnection the server connection to use
      * @param guiManager the gui manager to use
+     * @param macros the macros instance to use
      * @throws IOException if a syntax error occurs
      * @throws JXCSkinException if an element cannot be found
      */
-    public void addCommand(final String listName, final String[] args, final int argc, final GUIElement element, final String command, final JXCWindow window, final Commands commands, final LineNumberReader lnr, final CommandQueue commandQueue, final CrossfireServerConnection crossfireServerConnection, final GuiManager guiManager ) throws IOException, JXCSkinException
+    public void addCommand(final String listName, final String[] args, final int argc, final GUIElement element, final String command, final JXCWindow window, final Commands commands, final LineNumberReader lnr, final CommandQueue commandQueue, final CrossfireServerConnection crossfireServerConnection, final GuiManager guiManager, final Macros macros) throws IOException, JXCSkinException
     {
         final GUICommandList commandList = getCommandList(listName);
-        commandList.add(commandParser.parseCommandArgs(args, argc, element, command, window, commands, lnr, commandQueue, crossfireServerConnection, guiManager));
+        commandList.add(commandParser.parseCommandArgs(args, argc, element, command, window, commands, lnr, commandQueue, crossfireServerConnection, guiManager, macros));
     }
 
     /** {@inheritDoc} */
