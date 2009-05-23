@@ -22,8 +22,7 @@ package com.realtime.crossfire.jxclient.gui.keybindings;
 import com.realtime.crossfire.jxclient.window.GUICommandList;
 
 /**
- * Manage the state for the key binding dialog.
- *
+ * Manages the state for the key binding dialog.
  * @author Andreas Kirschbaum
  */
 public class KeyBindingState
@@ -71,15 +70,12 @@ public class KeyBindingState
     private char keyChar = '\0';
 
     /**
-     * Create a new instance.
-     *
-     * @param keyBindings The <code>KeyBindings</code> to modify; may be
-     * <code>null</code> when removing bindings.
-     *
-     * @param keyBindings2 The <code>KeyBindings</code> to modify; only used
-     * when removing bindings; may be <code>null</code> when removing bindings.
-     *
-     * @param commands The commands to bind, or <code>null</code> to unbind.
+     * Creates a new instance.
+     * @param keyBindings the <code>KeyBindings</code> to modify; may be
+     * <code>null</code> when removing bindings
+     * @param keyBindings2 the <code>KeyBindings</code> to modify; only used
+     * when removing bindings; may be <code>null</code> when removing bindings
+     * @param commands the commands to bind, or <code>null</code> to unbind
      */
     public KeyBindingState(final KeyBindings keyBindings, final KeyBindings keyBindings2, final GUICommandList commands)
     {
@@ -89,11 +85,9 @@ public class KeyBindingState
     }
 
     /**
-     * Record a binding by key code.
-     *
-     * @param keyCode The key code that was pressed.
-     *
-     * @param modifiers The bindings that are active.
+     * Records a binding by key code.
+     * @param keyCode the key code that was pressed
+     * @param modifiers the bindings that are active
      */
     public void keyPressed(final int keyCode, final int modifiers)
     {
@@ -104,9 +98,8 @@ public class KeyBindingState
     }
 
     /**
-     * Record a binding by key character.
-     *
-     * @param keyChar The key character that was typed.
+     * Records a binding by key character.
+     * @param keyChar the key character that was typed
      */
     public void keyTyped(final char keyChar)
     {
@@ -118,10 +111,9 @@ public class KeyBindingState
     }
 
     /**
-     * Record a key released event.
-     *
+     * Records a key released event.
      * @return <code>true</code> if the dialog has finished, or
-     * <code>false</code> if the dialog is still active.
+     * <code>false</code> if the dialog is still active
      */
     public boolean keyReleased()
     {
