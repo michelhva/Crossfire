@@ -20,6 +20,7 @@
 package com.realtime.crossfire.jxclient.gui.commands;
 
 import com.realtime.crossfire.jxclient.commands.Commands;
+import com.realtime.crossfire.jxclient.commands.Macros;
 
 /**
  * A {@link GUICommand} which executes a Crossfire command.
@@ -34,14 +35,21 @@ public class ExecuteCommandCommand implements GUICommand
     private final String command;
 
     /**
+     * The {@link Macros} instance to use.
+     */
+    private final Macros macros;
+
+    /**
      * Creates a new instance.
      * @param commands the commands instance for executing the command
      * @param command the command to execute
+     * @param macros the macros instance to use
      */
-    public ExecuteCommandCommand(final Commands commands, final String command)
+    public ExecuteCommandCommand(final Commands commands, final String command, final Macros macros)
     {
         this.commands = commands;
         this.command = command;
+        this.macros = macros;
     }
 
     /** {@inheritDoc} */
@@ -55,7 +63,7 @@ public class ExecuteCommandCommand implements GUICommand
     @Override
     public void execute()
     {
-        commands.executeCommand(command);
+        commands.executeCommand(macros.expandMacros(command));
     }
 
     /**

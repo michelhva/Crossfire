@@ -19,6 +19,7 @@
 //
 package com.realtime.crossfire.jxclient.gui.commands;
 
+import com.realtime.crossfire.jxclient.commands.Macros;
 import com.realtime.crossfire.jxclient.window.GuiManager;
 
 /**
@@ -36,14 +37,21 @@ public class ActivateCommandInputCommand implements GUICommand
     private final String commandText;
 
     /**
+     * The {@link Macros} instance to use.
+     */
+    private final Macros macros;
+
+    /**
      * Creates a new instance.
      * @param commandText the command text to set
      * @param guiManager the gui manager to affect
+     * @param macros the macros instance to use
      */
-    public ActivateCommandInputCommand(final String commandText, final GuiManager guiManager)
+    public ActivateCommandInputCommand(final String commandText, final GuiManager guiManager, final Macros macros)
     {
         this.commandText = commandText;
         this.guiManager = guiManager;
+        this.macros = macros;
     }
 
     /** {@inheritDoc} */
@@ -57,7 +65,7 @@ public class ActivateCommandInputCommand implements GUICommand
     @Override
     public void execute()
     {
-        guiManager.activateCommandInput(commandText);
+        guiManager.activateCommandInput(macros.expandMacros(commandText));
     }
 
     /**

@@ -20,6 +20,7 @@
 package com.realtime.crossfire.jxclient.gui.gui;
 
 import com.realtime.crossfire.jxclient.commands.Commands;
+import com.realtime.crossfire.jxclient.commands.Macros;
 import com.realtime.crossfire.jxclient.gui.button.AbstractButton;
 import com.realtime.crossfire.jxclient.gui.keybindings.KeyBindings;
 import com.realtime.crossfire.jxclient.gui.textinput.GUIText;
@@ -130,11 +131,12 @@ public class Gui
      * <code>null</code> otherwise
      * @param commands the commands instance for executing commands
      * @param guiManager the gui manager to use
+     * @param macros the macros instance to use
      */
-    public Gui(final MouseTracker mouseTracker, final Commands commands, final GuiManager guiManager)
+    public Gui(final MouseTracker mouseTracker, final Commands commands, final GuiManager guiManager, final Macros macros)
     {
         this.mouseTracker = mouseTracker;
-        keyBindings = new KeyBindings(null, commands, guiManager);
+        keyBindings = new KeyBindings(null, commands, guiManager, macros);
     }
 
     /**

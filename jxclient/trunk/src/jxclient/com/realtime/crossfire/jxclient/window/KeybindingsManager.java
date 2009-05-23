@@ -20,6 +20,7 @@
 package com.realtime.crossfire.jxclient.window;
 
 import com.realtime.crossfire.jxclient.commands.Commands;
+import com.realtime.crossfire.jxclient.commands.Macros;
 import com.realtime.crossfire.jxclient.gui.keybindings.KeyBindingState;
 import com.realtime.crossfire.jxclient.gui.keybindings.KeyBindings;
 import com.realtime.crossfire.jxclient.settings.Filenames;
@@ -43,6 +44,11 @@ public class KeybindingsManager
     private final GuiManager guiManager;
 
     /**
+     * The {@link Macros} instance to use.
+     */
+    private final Macros macros;
+
+    /**
      * The global key bindings.
      */
     private final KeyBindings keyBindings;
@@ -63,12 +69,14 @@ public class KeybindingsManager
      * Creates a new instance.
      * @param commands the commands instance to use
      * @param guiManager the gui manager to use
+     * @param macros the macros instance to use
      */
-    public KeybindingsManager(final Commands commands, final GuiManager guiManager)
+    public KeybindingsManager(final Commands commands, final GuiManager guiManager, final Macros macros)
     {
         this.commands = commands;
         this.guiManager = guiManager;
-        keyBindings = new KeyBindings(Filenames.getKeybindingsFile(null, null), commands, guiManager);
+        this.macros = macros;
+        keyBindings = new KeyBindings(Filenames.getKeybindingsFile(null, null), commands, guiManager, macros);
     }
 
     /**
@@ -142,7 +150,7 @@ public class KeybindingsManager
      */
     public void loadPerCharacterBindings(final String hostname, final String character)
     {
-        characterKeyBindings = new KeyBindings(Filenames.getKeybindingsFile(hostname, character), commands, guiManager);
+        characterKeyBindings = new KeyBindings(Filenames.getKeybindingsFile(hostname, character), commands, guiManager, macros);
         try
         {
             characterKeyBindings.loadKeyBindings();

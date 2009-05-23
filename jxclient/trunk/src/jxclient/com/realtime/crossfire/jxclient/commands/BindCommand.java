@@ -49,6 +49,11 @@ public class BindCommand extends AbstractCommand
     private final GuiManager guiManager;
 
     /**
+     * The {@link Macros} instance to use.
+     */
+    private Macros macros;
+
+    /**
      * Create a new instance.
      *
      * @param window The window to execute in.
@@ -58,13 +63,16 @@ public class BindCommand extends AbstractCommand
      * @param commands the commands instance for executing commands
      *
      * @param guiManager the gui manager to use
+     *
+     * @param macros the macros instance to use
      */
-    protected BindCommand(final JXCWindow window, final CrossfireServerConnection crossfireServerConnection, final Commands commands, final GuiManager guiManager)
+    protected BindCommand(final JXCWindow window, final CrossfireServerConnection crossfireServerConnection, final Commands commands, final GuiManager guiManager, final Macros macros)
     {
         super(crossfireServerConnection);
         this.window = window;
         this.commands = commands;
         this.guiManager = guiManager;
+        this.macros = macros;
     }
 
     /** {@inheritDoc} */
@@ -103,7 +111,7 @@ public class BindCommand extends AbstractCommand
         }
 
         final GUICommandList commandList2 = new GUICommandList(GUICommandList.CommandType.AND);
-        commandList2.add(GUICommandFactory.createCommand(commandList, guiManager, commands));
+        commandList2.add(GUICommandFactory.createCommand(commandList, guiManager, commands, macros));
         if (!window.createKeyBinding(perCharacterBinding, commandList2))
         {
             drawInfoError("Cannot use bind -c since no character is logged in.");

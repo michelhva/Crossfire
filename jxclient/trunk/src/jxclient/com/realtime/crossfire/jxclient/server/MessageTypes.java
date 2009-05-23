@@ -81,6 +81,15 @@ public class MessageTypes
     public static final int MSG_TYPE_BOOK_SPELL_SORCERER = 11;
     public static final int MSG_TYPE_BOOK_SPELL_SUMMONER = 12;
 
+    public static final int MSG_TYPE_COMMUNICATION_RANDOM = 1; // random event (coin toss)
+    public static final int MSG_TYPE_COMMUNICATION_SAY = 2; // player says something
+    public static final int MSG_TYPE_COMMUNICATION_ME = 3; // player me's a message
+    public static final int MSG_TYPE_COMMUNICATION_TELL = 4; // player tells something
+    public static final int MSG_TYPE_COMMUNICATION_EMOTE = 5; // player emotes
+    public static final int MSG_TYPE_COMMUNICATION_PARTY = 6; // party message
+    public static final int MSG_TYPE_COMMUNICATION_SHOUT = 7; // shout message
+    public static final int MSG_TYPE_COMMUNICATION_chat = 8; // chat message
+
     /**
      * Private constructor to prevent instantiation.
      */

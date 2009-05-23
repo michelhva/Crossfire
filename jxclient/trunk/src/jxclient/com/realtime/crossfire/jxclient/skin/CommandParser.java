@@ -20,6 +20,7 @@
 package com.realtime.crossfire.jxclient.skin;
 
 import com.realtime.crossfire.jxclient.commands.Commands;
+import com.realtime.crossfire.jxclient.commands.Macros;
 import com.realtime.crossfire.jxclient.gui.commands.ConnectCommand;
 import com.realtime.crossfire.jxclient.gui.commands.DialogCloseCommand;
 import com.realtime.crossfire.jxclient.gui.commands.DialogOpenCommand;
@@ -112,11 +113,12 @@ public class CommandParser
      * @param commandQueue the command queue for executing commands
      * @param crossfireServerConnection the server connection to use
      * @param guiManager the gui manager to use
+     * @param macros the macros instance to use
      * @return the command arguments
      * @throws IOException if a syntax error occurs
      * @throws JXCSkinException if an element cannot be found
      */
-    public GUICommand parseCommandArgs(final String[] args, final int argc, final GUIElement element, final String command, final JXCWindow window, final Commands commands, final LineNumberReader lnr, final CommandQueue commandQueue, final CrossfireServerConnection crossfireServerConnection, final GuiManager guiManager) throws IOException, JXCSkinException
+    public GUICommand parseCommandArgs(final String[] args, final int argc, final GUIElement element, final String command, final JXCWindow window, final Commands commands, final LineNumberReader lnr, final CommandQueue commandQueue, final CrossfireServerConnection crossfireServerConnection, final GuiManager guiManager, final Macros macros) throws IOException, JXCSkinException
     {
         if (command.equals("SHOW"))
         {
@@ -253,7 +255,7 @@ public class CommandParser
             }
 
             final String commandString = ParseUtils.parseText(args, argc, lnr);
-            return new ExecuteCommandCommand(commands, commandString);
+            return new ExecuteCommandCommand(commands, commandString, macros);
         }
         else if (command.equals("EXEC_SELECTION"))
         {

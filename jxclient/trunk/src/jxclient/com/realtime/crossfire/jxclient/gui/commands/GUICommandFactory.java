@@ -20,6 +20,7 @@
 package com.realtime.crossfire.jxclient.gui.commands;
 
 import com.realtime.crossfire.jxclient.commands.Commands;
+import com.realtime.crossfire.jxclient.commands.Macros;
 import com.realtime.crossfire.jxclient.util.StringUtils;
 import com.realtime.crossfire.jxclient.window.GuiManager;
 import java.util.regex.Pattern;
@@ -52,11 +53,12 @@ public class GUICommandFactory
      * @param encodedCommandString the command string representation
      * @param guiManager the gui manager to use
      * @param commands the commands instance to use
+     * @param macros the macros instance to use
      * @return the new command instance
      */
-    public static GUICommand createCommandDecode(final String encodedCommandString, final GuiManager guiManager, final Commands commands)
+    public static GUICommand createCommandDecode(final String encodedCommandString, final GuiManager guiManager, final Commands commands, final Macros macros)
     {
-        return createCommand(decode(encodedCommandString), guiManager, commands);
+        return createCommand(decode(encodedCommandString), guiManager, commands, macros);
     }
 
     /**
@@ -64,21 +66,22 @@ public class GUICommandFactory
      * @param commandString the command string representation
      * @param guiManager the gui manager to use
      * @param commands the commands instance to use
+     * @param macros the macros instance to use
      * @return the new command instance
      */
-    public static GUICommand createCommand(final String commandString, final GuiManager guiManager, final Commands commands)
+    public static GUICommand createCommand(final String commandString, final GuiManager guiManager, final Commands commands, final Macros macros)
     {
         if (commandString.equals("-e"))
         {
-            return new ActivateCommandInputCommand("", guiManager);
+            return new ActivateCommandInputCommand("", guiManager, macros);
         }
         else if (commandString.startsWith("-e "))
         {
-            return new ActivateCommandInputCommand(StringUtils.trimLeading(commandString.substring(3)), guiManager);
+            return new ActivateCommandInputCommand(StringUtils.trimLeading(commandString.substring(3)), guiManager, macros);
         }
         else
         {
-            return new ExecuteCommandCommand(commands, commandString);
+            return new ExecuteCommandCommand(commands, commandString, macros);
         }
     }
 

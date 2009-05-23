@@ -57,11 +57,12 @@ public class Commands
      * @param scriptManager the script manager instance
      * @param optionManager the option manager instance
      * @param guiManager the gui manager to use
+     * @param macros the macros instance to use
      */
-    public Commands(final JXCWindow window, final JXCWindowRenderer windowRenderer, final CommandQueue commandQueue, final CrossfireServerConnection crossfireServerConnection, final ScriptManager scriptManager, final OptionManager optionManager, final GuiManager guiManager)
+    public Commands(final JXCWindow window, final JXCWindowRenderer windowRenderer, final CommandQueue commandQueue, final CrossfireServerConnection crossfireServerConnection, final ScriptManager scriptManager, final OptionManager optionManager, final GuiManager guiManager, final Macros macros)
     {
         this.commandQueue = commandQueue;
-        commands.put("bind", new BindCommand(window, crossfireServerConnection, this, guiManager));
+        commands.put("bind", new BindCommand(window, crossfireServerConnection, this, guiManager, macros));
         commands.put("unbind", new UnbindCommand(window, crossfireServerConnection));
         commands.put("screenshot", new ScreenshotCommand(window, windowRenderer, crossfireServerConnection));
         commands.put("script", new ScriptCommand(scriptManager, crossfireServerConnection));
