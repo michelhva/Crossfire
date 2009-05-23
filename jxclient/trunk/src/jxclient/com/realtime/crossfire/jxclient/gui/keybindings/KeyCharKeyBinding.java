@@ -63,15 +63,13 @@ public class KeyCharKeyBinding extends KeyBinding
     @Override
     public boolean equals(final Object obj)
     {
-        if (obj instanceof KeyCharKeyBinding)
-        {
-            final KeyCharKeyBinding keyBinding = (KeyCharKeyBinding)obj;
-            return keyBinding.getKeyChar() == keyChar;
-        }
-        else
+        if (!(obj instanceof KeyCharKeyBinding))
         {
             return false;
         }
+
+        final KeyCharKeyBinding keyBinding = (KeyCharKeyBinding)obj;
+        return keyBinding.getKeyChar() == keyChar;
     }
 
     /** {@inheritDoc} */

@@ -81,15 +81,13 @@ public class KeyCodeKeyBinding extends KeyBinding
     @Override
     public boolean equals(final Object obj)
     {
-        if (obj instanceof KeyCodeKeyBinding)
-        {
-            final KeyCodeKeyBinding keyBinding = (KeyCodeKeyBinding)obj;
-            return keyBinding.getKeyCode() == keyCode && keyBinding.getModifiers() == modifiers;
-        }
-        else
+        if (!(obj instanceof KeyCodeKeyBinding))
         {
             return false;
         }
+
+        final KeyCodeKeyBinding keyBinding = (KeyCodeKeyBinding)obj;
+        return keyBinding.getKeyCode() == keyCode && keyBinding.getModifiers() == modifiers;
     }
 
     /** {@inheritDoc} */
