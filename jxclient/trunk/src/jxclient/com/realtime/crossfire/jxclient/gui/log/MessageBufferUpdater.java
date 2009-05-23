@@ -41,7 +41,7 @@ public class MessageBufferUpdater
     /**
      * Maps color index to color.
      */
-    private final Color[] colors = new Color[]
+    private final Color[] colors =
     {
         Color.BLACK,            // black
         Color.WHITE,            // white
