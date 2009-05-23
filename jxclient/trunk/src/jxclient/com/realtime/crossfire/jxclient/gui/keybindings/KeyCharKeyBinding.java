@@ -23,7 +23,6 @@ import com.realtime.crossfire.jxclient.window.GUICommandList;
 
 /**
  * A {@link KeyBinding} that matches by key character.
- *
  * @author Andreas Kirschbaum
  */
 public class KeyCharKeyBinding extends KeyBinding
@@ -34,14 +33,11 @@ public class KeyCharKeyBinding extends KeyBinding
     private final int keyChar;
 
     /**
-     * Create a {@link KeyBinding} that matches by key character.
-     *
-     * @param keyChar The key character to match.
-     *
-     * @param commands The commands to associate with this binding.
-     *
-     * @param isDefault Whether the key binding is a "default" binding which
-     * should not be saved.
+     * Creates a {@link KeyBinding} that matches by key character.
+     * @param keyChar the key character to match
+     * @param commands the commands to associate with this binding
+     * @param isDefault whether the key binding is a "default" binding which
+     * should not be saved
      */
     public KeyCharKeyBinding(final char keyChar, final GUICommandList commands, final boolean isDefault)
     {
@@ -50,9 +46,8 @@ public class KeyCharKeyBinding extends KeyBinding
     }
 
     /**
-     * Return the key character to match.
-     *
-     * @return The key character to match.
+     * Returns the key character to match.
+     * @return the key character to match
      */
     public int getKeyChar()
     {
