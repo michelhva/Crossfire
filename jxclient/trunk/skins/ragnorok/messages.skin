@@ -10,7 +10,7 @@ textbutton button_chat 119 5 43 18 false command_message_show_chat Chat
 # "all" tab
 log_message log_all 4 25 562 190-25-16-4 empty font_log_print font_log_fixed font_log_fixed_bold font_log_arcane BLACK
 log_color log_all 1 #000000
-log_color log_all 4 #b78b00
+log_color log_all 4 #896800
 log_color log_all 5 #4040ff
 log_color log_all 6 #d0a000
 log_color log_all 7 #00c000
@@ -25,7 +25,7 @@ commandlist_add command_messages_down_all log_all SCROLL 1
 # "important" tab
 log_message log_msg 4 25 562 190-30-16-4 empty font_log_print font_log_fixed font_log_fixed_bold font_log_arcane BLACK
 log_color log_msg 1 #000000
-log_color log_msg 4 #b78b00
+log_color log_msg 4 #896800
 log_color log_msg 5 #8080ff
 log_color log_msg 6 #d0a000
 log_color log_msg 7 #00c000
@@ -41,7 +41,7 @@ commandlist_add command_messages_down_msg log_msg SCROLL 1
 # "chat" tab
 log_message log_chat 4 25 562 190-30-16-4 empty font_log_print font_log_fixed font_log_fixed_bold font_log_arcane BLACK
 log_color log_chat 1 #000000
-log_color log_chat 4 #b78b00
+log_color log_chat 4 #896800
 log_color log_chat 5 #8080ff
 log_color log_chat 6 #d0a000
 log_color log_chat 7 #00c000
