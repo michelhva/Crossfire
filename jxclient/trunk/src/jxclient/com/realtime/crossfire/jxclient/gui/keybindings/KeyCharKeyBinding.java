@@ -30,7 +30,7 @@ public class KeyCharKeyBinding extends KeyBinding
     /**
      * The key character to match.
      */
-    private final int keyChar;
+    private final char keyChar;
 
     /**
      * Creates a {@link KeyBinding} that matches by key character.
@@ -49,7 +49,7 @@ public class KeyCharKeyBinding extends KeyBinding
      * Returns the key character to match.
      * @return the key character to match
      */
-    public int getKeyChar()
+    public char getKeyChar()
     {
         return keyChar;
     }
