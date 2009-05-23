@@ -81,7 +81,7 @@ public class KeyCodeKeyBinding extends KeyBinding
     @Override
     public boolean equals(final Object obj)
     {
-        if (!(obj instanceof KeyCodeKeyBinding))
+        if (obj == null || !(obj instanceof KeyCodeKeyBinding))
         {
             return false;
         }
