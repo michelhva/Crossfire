@@ -39,7 +39,6 @@ import java.util.Set;
 
 /**
  * Manages a set of key bindings.
- *
  * @author Andreas Kirschbaum
  */
 public class KeyBindings
@@ -54,6 +53,9 @@ public class KeyBindings
      */
     private final GuiManager guiManager;
 
+    /**
+     * The active key bindings.
+     */
     private final Set<KeyBinding> keybindings = new HashSet<KeyBinding>();
 
     /**
@@ -87,9 +89,8 @@ public class KeyBindings
     }
 
     /**
-     * Return the file for saving the bindings; <code>null</code> to not save.
-     *
-     * @return The file.
+     * Returns the file for saving the bindings; <code>null</code> to not save.
+     * @return the file
      */
     public File getFile()
     {
@@ -97,16 +98,12 @@ public class KeyBindings
     }
 
     /**
-     * Add a key binding for a key code/modifiers pair.
-     *
-     * @param keyCode The key code for the key binding.
-     *
-     * @param modifiers The modifiers for the key binding.
-     *
-     * @param cmdlist The commands to associate to the key binding.
-     *
-     * @param isDefault Whether the key binding is a "default" binding which
-     * should not be saved.
+     * Adds a key binding for a key code/modifiers pair.
+     * @param keyCode the key code for the key binding
+     * @param modifiers the modifiers for the key binding
+     * @param cmdlist the commands to associate to the key binding
+     * @param isDefault whether the key binding is a "default" binding which
+     * should not be saved
      */
     public void addKeyBindingAsKeyCode(final int keyCode, final int modifiers, final GUICommandList cmdlist, final boolean isDefault)
     {
@@ -114,14 +111,11 @@ public class KeyBindings
     }
 
     /**
-     * Add a key binding for a key character.
-     *
-     * @param keyChar The key character for the key binding.
-     *
-     * @param cmdlist The commands to associate to the key binding.
-     *
-     * @param isDefault Whether the key binding is a "default" binding which
-     * should not be saved.
+     * Adds a key binding for a key character.
+     * @param keyChar the key character for the key binding
+     * @param cmdlist the commands to associate to the key binding
+     * @param isDefault whether the key binding is a "default" binding which
+     * should not be saved
      */
     public void addKeyBindingAsKeyChar(final char keyChar, final GUICommandList cmdlist, final boolean isDefault)
     {
@@ -129,7 +123,7 @@ public class KeyBindings
     }
 
     /**
-     * Add (or replace) a key binding.
+     * Adds (or replace) a key binding.
      * @param keyBinding the key binding
      */
     private void addKeyBinding(final KeyBinding keyBinding)
@@ -139,11 +133,9 @@ public class KeyBindings
     }
 
     /**
-     * Remove a key binding for a key code/modifiers pair.
-     *
-     * @param keyCode The key code of the key binding.
-     *
-     * @param modifiers The modifiers of the key binding.
+     * Removes a key binding for a key code/modifiers pair.
+     * @param keyCode the key code of the key binding
+     * @param modifiers the modifiers of the key binding
      */
     public void deleteKeyBindingAsKeyCode(final int keyCode, final int modifiers)
     {
@@ -151,9 +143,8 @@ public class KeyBindings
     }
 
     /**
-     * Remove a key binding for a key character.
-     *
-     * @param keyChar The key character of the key binding.
+     * Removes a key binding for a key character.
+     * @param keyChar the key character of the key binding
      */
     public void deleteKeyBindingAsKeyChar(final char keyChar)
     {
@@ -174,8 +165,8 @@ public class KeyBindings
     }
 
     /**
-     * Load the key bindings from the given file.
-     * @throws IOException If the file cannot be read.
+     * Loads the key bindings from the given file.
+     * @throws IOException if the file cannot be read
      */
     public void loadKeyBindings() throws IOException
     {
@@ -246,9 +237,8 @@ public class KeyBindings
     }
 
     /**
-     * Save the key bindings to the given file.
-     *
-     * @throws IOException If the file cannot be written.
+     * Saves the key bindings to the given file.
+     * @throws IOException if the file cannot be written
      */
     public void saveKeyBindings() throws IOException
     {
@@ -326,14 +316,11 @@ public class KeyBindings
     }
 
     /**
-     * Find a key binding associated to a key code/modifiers pair.
-     *
-     * @param keyCode The key code to look up.
-     *
-     * @param modifiers The modifiers to look up.
-     *
-     * @return The key binding, or <code>null</code> if no key binding is
-     * associated.
+     * Finds a key binding associated to a key code/modifiers pair.
+     * @param keyCode the key code to look up
+     * @param modifiers the modifiers to look up
+     * @return the key binding, or <code>null</code> if no key binding is
+     * associated
      */
     private KeyBinding getKeyBindingAsKeyCode(final int keyCode, final int modifiers)
     {
@@ -349,12 +336,10 @@ public class KeyBindings
     }
 
     /**
-     * Find a key binding associated to a key character.
-     *
-     * @param keyChar The key character to look up.
-     *
-     * @return The key binding, or <code>null</code> if no key binding is
-     * associated.
+     * Finds a key binding associated to a key character.
+     * @param keyChar the key character to look up
+     * @return the key binding, or <code>null</code> if no key binding is
+     * associated
      */
     private KeyBinding getKeyBindingAsKeyChar(final char keyChar)
     {
@@ -370,14 +355,11 @@ public class KeyBindings
     }
 
     /**
-     * Parse and add a key binding.
-     *
-     * @param line The key binding to parse.
-     *
-     * @param isDefault Whether the key binding is a "default" binding which
-     * should not be saved.
-     *
-     * @throws InvalidKeyBindingException If the key binding is invalid.
+     * Parses and add a key binding.
+     * @param line the key binding to parse
+     * @param isDefault whether the key binding is a "default" binding which
+     * should not be saved
+     * @throws InvalidKeyBindingException if the key binding is invalid
      */
     public void parseKeyBinding(final String line, final boolean isDefault) throws InvalidKeyBindingException
     {
@@ -445,11 +427,9 @@ public class KeyBindings
     }
 
     /**
-     * Execute a "key press" event.
-     *
-     * @param e The event to execute.
-     *
-     * @return Whether a matching key binding was found.
+     * Executes a "key press" event.
+     * @param e the event to execute
+     * @return whether a matching key binding was found
      */
     public boolean handleKeyPress(final KeyEvent e)
     {
@@ -457,11 +437,9 @@ public class KeyBindings
     }
 
     /**
-     * Execute a "key typed" event.
-     *
-     * @param e The event to execute.
-     *
-     * @return Whether a matching key binding was found.
+     * Executes a "key typed" event.
+     * @param e the event to execute
+     * @return whether a matching key binding was found
      */
     public boolean handleKeyTyped(final KeyEvent e)
     {
@@ -469,7 +447,7 @@ public class KeyBindings
     }
 
     /**
-     * Execute a {@link KeyBinding} instance.
+     * Executes a {@link KeyBinding} instance.
      * @param keyBinding the key binding to execute; may be <code>null</code>
      * @return whether <code>keyBinding</code> is not <code>null</code>
      */
