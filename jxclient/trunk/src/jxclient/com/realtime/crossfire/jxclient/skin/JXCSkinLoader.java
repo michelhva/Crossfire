@@ -183,6 +183,12 @@ public class JXCSkinLoader
     private CheckBoxFactory checkBoxFactory = null;
 
     /**
+     * The {@link ItemPainter} for default item parameters. Set to
+     * <code>null</code> until defined.
+     */
+    private ItemPainter defaultItemPainter = null;
+
+    /**
      * The {@link ExpressionParser} for parsing integer constant expressions.
      */
     private ExpressionParser expressionParser;
@@ -977,6 +983,33 @@ public class JXCSkinLoader
             if (alpha < 0 || alpha > 1F) throw new IOException("invalid alpha value: "+alpha);
             dialogFactory = new DialogFactory(frameNW, frameN, frameNE, frameW, frameC, frameE, frameSW, frameS, frameSE, titleFont, titleColor, titleBackgroundColor, alpha);
         }
+        else if (args[1].equals("item"))
+        {
+            if (args.length != 12)
+            {
+                throw new IOException("syntax error");
+            }
+
+            final Color cursedColor = ParseUtils.parseColorNull(args[2]);
+            final BufferedImage cursedImage = imageParser.getImage(cursedColor, args[2]);
+            final Color damnedColor = ParseUtils.parseColorNull(args[3]);
+            final BufferedImage damnedImage = imageParser.getImage(damnedColor, args[3]);
+            final Color magicColor = ParseUtils.parseColorNull(args[4]);
+            final BufferedImage magicImage = imageParser.getImage(magicColor, args[4]);
+            final Color blessedColor = ParseUtils.parseColorNull(args[5]);
+            final BufferedImage blessedImage = imageParser.getImage(blessedColor, args[5]);
+            final Color appliedColor = ParseUtils.parseColorNull(args[6]);
+            final BufferedImage appliedImage = imageParser.getImage(appliedColor, args[6]);
+            final Color selectorColor = ParseUtils.parseColorNull(args[7]);
+            final BufferedImage selectorImage = imageParser.getImage(selectorColor, args[7]);
+            final Color lockedColor = ParseUtils.parseColorNull(args[8]);
+            final BufferedImage lockedImage = imageParser.getImage(lockedColor, args[8]);
+            final Color unpaidColor = ParseUtils.parseColorNull(args[9]);
+            final BufferedImage unpaidImage = imageParser.getImage(unpaidColor, args[9]);
+            final Font font = definedFonts.lookup(args[10]);
+            final Color nrofColor = ParseUtils.parseColor(args[11]);
+            defaultItemPainter = new ItemPainter(cursedImage, damnedImage, magicImage, blessedImage, appliedImage, selectorImage, lockedImage, unpaidImage, cursedColor, damnedColor, magicColor, blessedColor, appliedColor, selectorColor, lockedColor, unpaidColor, font, nrofColor, 1, 1);
+        }
         else if (args[1].equals("textbutton"))
         {
             if (args.length != 6)
@@ -1292,9 +1325,14 @@ public class JXCSkinLoader
      */
     private void parseInventoryList(final String[] args, final TooltipManager tooltipManager, final JXCWindowRenderer windowRenderer, final CommandQueue commandQueue, final CrossfireServerConnection server) throws IOException, JXCSkinException
     {
-        if (args.length != 18)
+        if (args.length != 8)
         {
             throw new IOException("syntax error");
+        }
+
+        if (defaultItemPainter == null)
+        {
+            throw new IOException("cannot use 'inventory_list' without 'def item' command");
         }
 
         final String name = args[1];
@@ -1303,27 +1341,9 @@ public class JXCSkinLoader
         final int w = expressionParser.parseInt(args[4]);
         final int h = expressionParser.parseInt(args[5]);
         final int cellHeight = expressionParser.parseInt(args[6]);
-        final Color cursedColor = ParseUtils.parseColorNull(args[7]);
-        final BufferedImage cursedImage = imageParser.getImage(cursedColor, args[7]);
-        final Color damnedColor = ParseUtils.parseColorNull(args[8]);
-        final BufferedImage damnedImage = imageParser.getImage(damnedColor, args[8]);
-        final Color magicColor = ParseUtils.parseColorNull(args[9]);
-        final BufferedImage magicImage = imageParser.getImage(magicColor, args[9]);
-        final Color blessedColor = ParseUtils.parseColorNull(args[10]);
-        final BufferedImage blessedImage = imageParser.getImage(blessedColor, args[10]);
-        final Color appliedColor = ParseUtils.parseColorNull(args[11]);
-        final BufferedImage appliedImage = imageParser.getImage(appliedColor, args[11]);
-        final Color selectorColor = ParseUtils.parseColorNull(args[12]);
-        final BufferedImage selectorImage = imageParser.getImage(selectorColor, args[12]);
-        final Color lockedColor = ParseUtils.parseColorNull(args[13]);
-        final BufferedImage lockedImage = imageParser.getImage(lockedColor, args[13]);
-        final Color unpaidColor = ParseUtils.parseColorNull(args[14]);
-        final BufferedImage unpaidImage = imageParser.getImage(unpaidColor, args[14]);
-        final Font font = definedFonts.lookup(args[15]);
-        final Color nrofColor = ParseUtils.parseColor(args[16]);
-        final AbstractLabel selectedItem = args[17].equals("null") ? null : guiElementParser.lookupLabelElement(args[17]);
+        final AbstractLabel selectedItem = args[7].equals("null") ? null : guiElementParser.lookupLabelElement(args[7]);
 
-        final ItemPainter itemPainter = new ItemPainter(cursedImage, damnedImage, magicImage, blessedImage, appliedImage, selectorImage, lockedImage, unpaidImage, cursedColor, damnedColor, magicColor, blessedColor, appliedColor, selectorColor, lockedColor, unpaidColor, font, nrofColor, cellHeight, cellHeight);
+        final ItemPainter itemPainter = defaultItemPainter.newItemPainter(cellHeight, cellHeight);
         final GUIItemInventoryFactory itemInventoryFactory = new GUIItemInventoryFactory(tooltipManager, windowRenderer, commandQueue, name, itemPainter, server, facesManager, itemsManager);
         final GUIItemInventoryList element = new GUIItemInventoryList(tooltipManager, windowRenderer, commandQueue, name, x, y, w, h, cellHeight, server, itemsManager, selectedItem, itemInventoryFactory);
         skin.insertGuiElement(element);
@@ -1358,58 +1378,32 @@ public class JXCSkinLoader
         final GUIItem element;
         if (type.equals("floor"))
         {
-            if (args.length != 18)
+            if (args.length != 8)
             {
                 throw new IOException("syntax error");
             }
 
-            final Color cursedColor = ParseUtils.parseColorNull(args[8]);
-            final BufferedImage cursedImage = imageParser.getImage(cursedColor, args[8]);
-            final Color damnedColor = ParseUtils.parseColorNull(args[9]);
-            final BufferedImage damnedImage = imageParser.getImage(damnedColor, args[9]);
-            final Color magicColor = ParseUtils.parseColorNull(args[10]);
-            final BufferedImage magicImage = imageParser.getImage(magicColor, args[10]);
-            final Color blessedColor = ParseUtils.parseColorNull(args[11]);
-            final BufferedImage blessedImage = imageParser.getImage(blessedColor, args[11]);
-            final Color appliedColor = ParseUtils.parseColorNull(args[12]);
-            final BufferedImage appliedImage = imageParser.getImage(appliedColor, args[12]);
-            final Color selectorColor = ParseUtils.parseColorNull(args[13]);
-            final BufferedImage selectorImage = imageParser.getImage(selectorColor, args[13]);
-            final Color lockedColor = ParseUtils.parseColorNull(args[14]);
-            final BufferedImage lockedImage = imageParser.getImage(lockedColor, args[14]);
-            final Color unpaidColor = ParseUtils.parseColorNull(args[15]);
-            final BufferedImage unpaidImage = imageParser.getImage(unpaidColor, args[15]);
-            final Font font = definedFonts.lookup(args[16]);
-            final Color nrofColor = ParseUtils.parseColor(args[17]);
-            final ItemPainter itemPainter = new ItemPainter(cursedImage, damnedImage, magicImage, blessedImage, appliedImage, selectorImage, lockedImage, unpaidImage, cursedColor, damnedColor, magicColor, blessedColor, appliedColor, selectorColor, lockedColor, unpaidColor, font, nrofColor, w, h);
+            if (defaultItemPainter == null)
+            {
+                throw new IOException("cannot use 'item floor' without 'def item' command");
+            }
+
+            final ItemPainter itemPainter = defaultItemPainter.newItemPainter(w, h);
             element = new GUIItemFloor(tooltipManager, windowRenderer, commandQueue, name, x, y, w, h, itemPainter, index, server, itemsManager, facesManager);
         }
         else if (type.equals("inventory"))
         {
-            if (args.length != 18)
+            if (args.length != 8)
             {
                 throw new IOException("syntax error");
             }
 
-            final Color cursedColor = ParseUtils.parseColorNull(args[8]);
-            final BufferedImage cursedImage = imageParser.getImage(cursedColor, args[8]);
-            final Color damnedColor = ParseUtils.parseColorNull(args[9]);
-            final BufferedImage damnedImage = imageParser.getImage(damnedColor, args[9]);
-            final Color magicColor = ParseUtils.parseColorNull(args[10]);
-            final BufferedImage magicImage = imageParser.getImage(magicColor, args[10]);
-            final Color blessedColor = ParseUtils.parseColorNull(args[11]);
-            final BufferedImage blessedImage = imageParser.getImage(blessedColor, args[11]);
-            final Color appliedColor = ParseUtils.parseColorNull(args[12]);
-            final BufferedImage appliedImage = imageParser.getImage(appliedColor, args[12]);
-            final Color selectorColor = ParseUtils.parseColorNull(args[13]);
-            final BufferedImage selectorImage = imageParser.getImage(selectorColor, args[13]);
-            final Color lockedColor = ParseUtils.parseColorNull(args[14]);
-            final BufferedImage lockedImage = imageParser.getImage(lockedColor, args[14]);
-            final Color unpaidColor = ParseUtils.parseColorNull(args[15]);
-            final BufferedImage unpaidImage = imageParser.getImage(unpaidColor, args[15]);
-            final Font font = definedFonts.lookup(args[16]);
-            final Color nrofColor = ParseUtils.parseColor(args[17]);
-            final ItemPainter itemPainter = new ItemPainter(cursedImage, damnedImage, magicImage, blessedImage, appliedImage, selectorImage, lockedImage, unpaidImage, cursedColor, damnedColor, magicColor, blessedColor, appliedColor, selectorColor, lockedColor, unpaidColor, font, nrofColor, w, h);
+            if (defaultItemPainter == null)
+            {
+                throw new IOException("cannot use 'item floor' without 'def item' command");
+            }
+
+            final ItemPainter itemPainter = defaultItemPainter.newItemPainter(w, h);
             element = new GUIItemInventory(tooltipManager, windowRenderer, commandQueue, name, x, y, w, h, itemPainter, index, server, facesManager, itemsManager);
         }
         else if (type.equals("shortcut"))

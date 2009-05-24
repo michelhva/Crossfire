@@ -4,49 +4,49 @@ dialog_hide START META LOGIN
 
 set_num_look_objects 43
 
-item floor floor0      5+12 5 32 32  0 #FF0000/0.5 #FF8000/0.5 #0000FF/0.5 #0080FF/0.5 marker_applied #F7FBA6/0.6 marker_locked marker_unpaid font_item BLACK
-item floor floor1     37+12 5 32 32  1 #FF0000/0.5 #FF8000/0.5 #0000FF/0.5 #0080FF/0.5 marker_applied #F7FBA6/0.6 marker_locked marker_unpaid font_item BLACK
-item floor floor2     69+12 5 32 32  2 #FF0000/0.5 #FF8000/0.5 #0000FF/0.5 #0080FF/0.5 marker_applied #F7FBA6/0.6 marker_locked marker_unpaid font_item BLACK
-item floor floor3    101+12 5 32 32  3 #FF0000/0.5 #FF8000/0.5 #0000FF/0.5 #0080FF/0.5 marker_applied #F7FBA6/0.6 marker_locked marker_unpaid font_item BLACK
-item floor floor4    133+12 5 32 32  4 #FF0000/0.5 #FF8000/0.5 #0000FF/0.5 #0080FF/0.5 marker_applied #F7FBA6/0.6 marker_locked marker_unpaid font_item BLACK
-item floor floor5    165+12 5 32 32  5 #FF0000/0.5 #FF8000/0.5 #0000FF/0.5 #0080FF/0.5 marker_applied #F7FBA6/0.6 marker_locked marker_unpaid font_item BLACK
-item floor floor6    197+12 5 32 32  6 #FF0000/0.5 #FF8000/0.5 #0000FF/0.5 #0080FF/0.5 marker_applied #F7FBA6/0.6 marker_locked marker_unpaid font_item BLACK
-item floor floor7    229+12 5 32 32  7 #FF0000/0.5 #FF8000/0.5 #0000FF/0.5 #0080FF/0.5 marker_applied #F7FBA6/0.6 marker_locked marker_unpaid font_item BLACK
-item floor floor8    261+12 5 32 32  8 #FF0000/0.5 #FF8000/0.5 #0000FF/0.5 #0080FF/0.5 marker_applied #F7FBA6/0.6 marker_locked marker_unpaid font_item BLACK
-item floor floor9    293+12 5 32 32  9 #FF0000/0.5 #FF8000/0.5 #0000FF/0.5 #0080FF/0.5 marker_applied #F7FBA6/0.6 marker_locked marker_unpaid font_item BLACK
-item floor floor10   325+12 5 32 32 10 #FF0000/0.5 #FF8000/0.5 #0000FF/0.5 #0080FF/0.5 marker_applied #F7FBA6/0.6 marker_locked marker_unpaid font_item BLACK
-item floor floor11   357+12 5 32 32 11 #FF0000/0.5 #FF8000/0.5 #0000FF/0.5 #0080FF/0.5 marker_applied #F7FBA6/0.6 marker_locked marker_unpaid font_item BLACK
-item floor floor12   389+12 5 32 32 12 #FF0000/0.5 #FF8000/0.5 #0000FF/0.5 #0080FF/0.5 marker_applied #F7FBA6/0.6 marker_locked marker_unpaid font_item BLACK
-item floor floor13   421+12 5 32 32 13 #FF0000/0.5 #FF8000/0.5 #0000FF/0.5 #0080FF/0.5 marker_applied #F7FBA6/0.6 marker_locked marker_unpaid font_item BLACK
-item floor floor14   453+12 5 32 32 14 #FF0000/0.5 #FF8000/0.5 #0000FF/0.5 #0080FF/0.5 marker_applied #F7FBA6/0.6 marker_locked marker_unpaid font_item BLACK
-item floor floor15   485+12 5 32 32 15 #FF0000/0.5 #FF8000/0.5 #0000FF/0.5 #0080FF/0.5 marker_applied #F7FBA6/0.6 marker_locked marker_unpaid font_item BLACK
-item floor floor16   517+12 5 32 32 16 #FF0000/0.5 #FF8000/0.5 #0000FF/0.5 #0080FF/0.5 marker_applied #F7FBA6/0.6 marker_locked marker_unpaid font_item BLACK
-item floor floor17   549+12 5 32 32 17 #FF0000/0.5 #FF8000/0.5 #0000FF/0.5 #0080FF/0.5 marker_applied #F7FBA6/0.6 marker_locked marker_unpaid font_item BLACK
-item floor floor18   581+12 5 32 32 18 #FF0000/0.5 #FF8000/0.5 #0000FF/0.5 #0080FF/0.5 marker_applied #F7FBA6/0.6 marker_locked marker_unpaid font_item BLACK
-item floor floor19   613+12 5 32 32 19 #FF0000/0.5 #FF8000/0.5 #0000FF/0.5 #0080FF/0.5 marker_applied #F7FBA6/0.6 marker_locked marker_unpaid font_item BLACK
-item floor floor20   645+12 5 32 32 20 #FF0000/0.5 #FF8000/0.5 #0000FF/0.5 #0080FF/0.5 marker_applied #F7FBA6/0.6 marker_locked marker_unpaid font_item BLACK
-item floor floor21   677+12 5 32 32 21 #FF0000/0.5 #FF8000/0.5 #0000FF/0.5 #0080FF/0.5 marker_applied #F7FBA6/0.6 marker_locked marker_unpaid font_item BLACK
-item floor floor22   709+12 5 32 32 22 #FF0000/0.5 #FF8000/0.5 #0000FF/0.5 #0080FF/0.5 marker_applied #F7FBA6/0.6 marker_locked marker_unpaid font_item BLACK
-item floor floor23   741+12 5 32 32 23 #FF0000/0.5 #FF8000/0.5 #0000FF/0.5 #0080FF/0.5 marker_applied #F7FBA6/0.6 marker_locked marker_unpaid font_item BLACK
-item floor floor24   773+12 5 32 32 24 #FF0000/0.5 #FF8000/0.5 #0000FF/0.5 #0080FF/0.5 marker_applied #F7FBA6/0.6 marker_locked marker_unpaid font_item BLACK
-item floor floor25   805+12 5 32 32 25 #FF0000/0.5 #FF8000/0.5 #0000FF/0.5 #0080FF/0.5 marker_applied #F7FBA6/0.6 marker_locked marker_unpaid font_item BLACK
-item floor floor26   837+12 5 32 32 26 #FF0000/0.5 #FF8000/0.5 #0000FF/0.5 #0080FF/0.5 marker_applied #F7FBA6/0.6 marker_locked marker_unpaid font_item BLACK
-item floor floor27   869+12 5 32 32 27 #FF0000/0.5 #FF8000/0.5 #0000FF/0.5 #0080FF/0.5 marker_applied #F7FBA6/0.6 marker_locked marker_unpaid font_item BLACK
-item floor floor28   901+12 5 32 32 28 #FF0000/0.5 #FF8000/0.5 #0000FF/0.5 #0080FF/0.5 marker_applied #F7FBA6/0.6 marker_locked marker_unpaid font_item BLACK
-item floor floor29   933+12 5 32 32 29 #FF0000/0.5 #FF8000/0.5 #0000FF/0.5 #0080FF/0.5 marker_applied #F7FBA6/0.6 marker_locked marker_unpaid font_item BLACK
-item floor floor30   965+12 5 32 32 30 #FF0000/0.5 #FF8000/0.5 #0000FF/0.5 #0080FF/0.5 marker_applied #F7FBA6/0.6 marker_locked marker_unpaid font_item BLACK
-item floor floor31   997+12 5 32 32 31 #FF0000/0.5 #FF8000/0.5 #0000FF/0.5 #0080FF/0.5 marker_applied #F7FBA6/0.6 marker_locked marker_unpaid font_item BLACK
-item floor floor32  1029+12 5 32 32 32 #FF0000/0.5 #FF8000/0.5 #0000FF/0.5 #0080FF/0.5 marker_applied #F7FBA6/0.6 marker_locked marker_unpaid font_item BLACK
-item floor floor33  1061+12 5 32 32 33 #FF0000/0.5 #FF8000/0.5 #0000FF/0.5 #0080FF/0.5 marker_applied #F7FBA6/0.6 marker_locked marker_unpaid font_item BLACK
-item floor floor34  1093+12 5 32 32 34 #FF0000/0.5 #FF8000/0.5 #0000FF/0.5 #0080FF/0.5 marker_applied #F7FBA6/0.6 marker_locked marker_unpaid font_item BLACK
-item floor floor35  1125+12 5 32 32 35 #FF0000/0.5 #FF8000/0.5 #0000FF/0.5 #0080FF/0.5 marker_applied #F7FBA6/0.6 marker_locked marker_unpaid font_item BLACK
-item floor floor36  1157+12 5 32 32 36 #FF0000/0.5 #FF8000/0.5 #0000FF/0.5 #0080FF/0.5 marker_applied #F7FBA6/0.6 marker_locked marker_unpaid font_item BLACK
-item floor floor37  1189+12 5 32 32 37 #FF0000/0.5 #FF8000/0.5 #0000FF/0.5 #0080FF/0.5 marker_applied #F7FBA6/0.6 marker_locked marker_unpaid font_item BLACK
-item floor floor38  1221+12 5 32 32 38 #FF0000/0.5 #FF8000/0.5 #0000FF/0.5 #0080FF/0.5 marker_applied #F7FBA6/0.6 marker_locked marker_unpaid font_item BLACK
-item floor floor39  1253+12 5 32 32 39 #FF0000/0.5 #FF8000/0.5 #0000FF/0.5 #0080FF/0.5 marker_applied #F7FBA6/0.6 marker_locked marker_unpaid font_item BLACK
-item floor floor40  1285+12 5 32 32 40 #FF0000/0.5 #FF8000/0.5 #0000FF/0.5 #0080FF/0.5 marker_applied #F7FBA6/0.6 marker_locked marker_unpaid font_item BLACK
-item floor floor41  1317+12 5 32 32 41 #FF0000/0.5 #FF8000/0.5 #0000FF/0.5 #0080FF/0.5 marker_applied #F7FBA6/0.6 marker_locked marker_unpaid font_item BLACK
-item floor floor42  1349+12 5 32 32 42 #FF0000/0.5 #FF8000/0.5 #0000FF/0.5 #0080FF/0.5 marker_applied #F7FBA6/0.6 marker_locked marker_unpaid font_item BLACK
+item floor floor0      5+12 5 32 32  0
+item floor floor1     37+12 5 32 32  1
+item floor floor2     69+12 5 32 32  2
+item floor floor3    101+12 5 32 32  3
+item floor floor4    133+12 5 32 32  4
+item floor floor5    165+12 5 32 32  5
+item floor floor6    197+12 5 32 32  6
+item floor floor7    229+12 5 32 32  7
+item floor floor8    261+12 5 32 32  8
+item floor floor9    293+12 5 32 32  9
+item floor floor10   325+12 5 32 32 10
+item floor floor11   357+12 5 32 32 11
+item floor floor12   389+12 5 32 32 12
+item floor floor13   421+12 5 32 32 13
+item floor floor14   453+12 5 32 32 14
+item floor floor15   485+12 5 32 32 15
+item floor floor16   517+12 5 32 32 16
+item floor floor17   549+12 5 32 32 17
+item floor floor18   581+12 5 32 32 18
+item floor floor19   613+12 5 32 32 19
+item floor floor20   645+12 5 32 32 20
+item floor floor21   677+12 5 32 32 21
+item floor floor22   709+12 5 32 32 22
+item floor floor23   741+12 5 32 32 23
+item floor floor24   773+12 5 32 32 24
+item floor floor25   805+12 5 32 32 25
+item floor floor26   837+12 5 32 32 26
+item floor floor27   869+12 5 32 32 27
+item floor floor28   901+12 5 32 32 28
+item floor floor29   933+12 5 32 32 29
+item floor floor30   965+12 5 32 32 30
+item floor floor31   997+12 5 32 32 31
+item floor floor32  1029+12 5 32 32 32
+item floor floor33  1061+12 5 32 32 33
+item floor floor34  1093+12 5 32 32 34
+item floor floor35  1125+12 5 32 32 35
+item floor floor36  1157+12 5 32 32 36
+item floor floor37  1189+12 5 32 32 37
+item floor floor38  1221+12 5 32 32 38
+item floor floor39  1253+12 5 32 32 39
+item floor floor40  1285+12 5 32 32 40
+item floor floor41  1317+12 5 32 32 41
+item floor floor42  1349+12 5 32 32 42
 
 set_invisible border_nw
 set_invisible border_n
