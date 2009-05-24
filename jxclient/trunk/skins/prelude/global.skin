@@ -19,6 +19,7 @@ font font_tooltip        squealer 16
 font font_types          squealer 12
 
 def dialog dialog font_stats12 BLACK GRAY 0.9
+def item marker_cursed marker_cursed marker_magic marker_magic marker_applied #F7FBA6/0.6 marker_locked marker_unpaid font_default_small WHITE
 
 commandlist command_disconnect AND null GUI_META
 commandlist command_resume_disconnect AND null DIALOG_CLOSE disconnect

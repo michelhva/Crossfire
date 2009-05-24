@@ -183,6 +183,18 @@ public class ItemPainter
     }
 
     /**
+     * Creates a new instance having the same parameters as this instance
+     * except for the item's size.
+     * @param w the item's width in pixel
+     * @param h the item's height in pixel
+     * @return the new instance
+     */
+    public ItemPainter newItemPainter(final int w, final int h)
+    {
+        return new ItemPainter(cursedImage, damnedImage, magicImage, blessedImage, appliedImage, selectorImage, lockedImage, unpaidImage, cursedColor, damnedColor, magicColor, blessedColor, appliedColor, selectorColor, lockedColor, unpaidColor, font, nrofColor, w, h);
+    }
+
+    /**
      * Paints an {@link CfItem}.
      * @param g the graphics instance to paint into
      * @param item the item
