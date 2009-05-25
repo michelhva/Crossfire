@@ -69,6 +69,13 @@ public class KeyCharKeyBinding extends KeyBinding
 
     /** {@inheritDoc} */
     @Override
+    public int hashCode()
+    {
+        return keyChar;
+    }
+
+    /** {@inheritDoc} */
+    @Override
     public boolean matchesKeyCode(final int keyCode, final int modifiers)
     {
         return false;

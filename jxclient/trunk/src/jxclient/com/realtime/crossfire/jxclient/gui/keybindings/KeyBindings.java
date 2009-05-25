@@ -296,7 +296,7 @@ public class KeyBindings
                         {
                             final KeyCharKeyBinding keyCharKeyBinding = (KeyCharKeyBinding)keyBinding;
                             bw.write("char ");
-                            bw.write(Character.toString(keyCharKeyBinding.getKeyChar()));
+                            bw.write(Integer.toString(keyCharKeyBinding.getKeyChar()));
                             bw.write(' ');
                             bw.write(GUICommandFactory.encode(keyCharKeyBinding.getCommandString()));
                             bw.newLine();

@@ -60,6 +60,10 @@ public abstract class KeyBinding
     @Override
     public abstract boolean equals(final Object obj);
 
+    /** {@inheritDoc} */
+    @Override
+    public abstract int hashCode();
+
     /**
      * Check whether this key binding matches a key code/modifiers pair.
      *
