@@ -31,14 +31,16 @@ label_stat label_weight        54 30+136 45 16 font_label BLACK WEIGHT RIGHT
 label_text label_weight_sep    99 30+136  6 16 font_label BLACK /
 label_stat label_weight_limit 105 30+136 45 16 font_label BLACK WEIGHT_LIMIT LEFT
 
-key code UP        0 exec command_inventory_up
-key code KP_UP     0 exec command_inventory_up
-key code DOWN      0 exec command_inventory_down
-key code KP_DOWN   0 exec command_inventory_down
-key code LEFT      0 exec command_inventory_prev
-key code KP_LEFT   0 exec command_inventory_prev
-key code RIGHT     0 exec command_inventory_next
-key code KP_RIGHT  0 exec command_inventory_next
+# Cursor keys disabled for now because players want to move around while
+# inventory is open.
+#key code UP        0 exec command_inventory_up
+#key code KP_UP     0 exec command_inventory_up
+#key code DOWN      0 exec command_inventory_down
+#key code KP_DOWN   0 exec command_inventory_down
+#key code LEFT      0 exec command_inventory_prev
+#key code KP_LEFT   0 exec command_inventory_prev
+#key code RIGHT     0 exec command_inventory_next
+#key code KP_RIGHT  0 exec command_inventory_next
 key code PAGE_UP   0 exec command_inventory_pageup
 key code PAGE_DOWN 0 exec command_inventory_pagedown
 key char 10        exec command_inventory_apply

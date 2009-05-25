@@ -1,5 +1,8 @@
 2009-05-25  Andreas Kirschbaum
 
+	* Disable per-dialog key bindings of cursor keys in inventory dialog. Now the
+	character may move around while the inventory dialog is open.
+
 	* Make login/logout messages darker to improve readability.
 
 	* Do not write invalid keybindings files.
