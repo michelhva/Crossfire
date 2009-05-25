@@ -60,12 +60,12 @@ public class Parser
     /**
      * The pattern to split a string into words.
      */
-    private static final Pattern wordSeparatorPattern = Pattern.compile(" ");
+    private static final Pattern WORD_SEPARATOR_PATTERN = Pattern.compile(" ");
 
     /**
      * Pattern to match line breaks.
      */
-    private static final Pattern endOfLinePattern = Pattern.compile(" *\n");
+    private static final Pattern END_OF_LINE_PATTERN = Pattern.compile(" *\n");
 
     /**
      * Whether bold face is enabled.
@@ -124,7 +124,7 @@ public class Parser
         }
 
         resetAttributes(defaultColor);
-        for (final String line : endOfLinePattern.split(text, -1))
+        for (final String line : END_OF_LINE_PATTERN.split(text, -1))
         {
             parseLine(line, defaultColor, buffer);
         }
@@ -148,7 +148,7 @@ public class Parser
         }
 
         resetAttributes(color);
-        for (final String line : endOfLinePattern.split(text, -1))
+        for (final String line : END_OF_LINE_PATTERN.split(text, -1))
         {
             parseLineWithoutMediaTags(line, buffer);
         }
@@ -357,7 +357,7 @@ public class Parser
             newText = text;
         }
 
-        final String[] words = wordSeparatorPattern.split(newText, -1);
+        final String[] words = WORD_SEPARATOR_PATTERN.split(newText, -1);
         for (int i = 0; i < words.length-1; i++)
         {
             line.addSegment(words[i]+" ", bold, italic, underline, font, color);
