@@ -92,6 +92,13 @@ public class KeyCodeKeyBinding extends KeyBinding
 
     /** {@inheritDoc} */
     @Override
+    public int hashCode()
+    {
+        return keyCode^(modifiers<<16); 
+    }
+
+    /** {@inheritDoc} */
+    @Override
     public boolean matchesKeyCode(final int keyCode, final int modifiers)
     {
         return this.keyCode == keyCode && this.modifiers == modifiers;
