@@ -30,7 +30,7 @@ public interface ConnectionListener
      * This function will be called when the connection has been established.
      * @param clientSocketState the client socket state
      */
-    void connected(final ClientSocketState clientSocketState);
+    void connected(ClientSocketState clientSocketState);
 
     /**
      * This function will be called when the connection has been broken.
