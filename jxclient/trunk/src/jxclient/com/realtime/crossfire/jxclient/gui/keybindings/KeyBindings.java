@@ -57,7 +57,7 @@ public class KeyBindings
     /**
      * The {@link Macros} instance to use.
      */
-    private Macros macros;
+    private final Macros macros;
 
     /**
      * The active key bindings.
