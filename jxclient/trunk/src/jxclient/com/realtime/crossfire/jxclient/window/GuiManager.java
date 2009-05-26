@@ -303,6 +303,7 @@ public class GuiManager
      * @param tooltipManager the tooltip manager to update
      * @param settings the settings to use
      * @param server the crossfire server connection to monitor
+     * @param macros the macros instance to use
      */
     public GuiManager(final JXCWindow window, final boolean debugGui, final Object semaphoreDrawing, final Object semaphoreRedraw, final TooltipManager tooltipManager, final Settings settings, final CrossfireServerConnection server, final Macros macros)
     {

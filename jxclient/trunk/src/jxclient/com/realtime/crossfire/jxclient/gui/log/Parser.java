@@ -25,7 +25,7 @@ import java.util.Map;
 import java.util.regex.Pattern;
 
 /**
- * Parser to parse drawextinfo messages received from a Crossfire server and
+ * Parser for parsing drawextinfo messages received from a Crossfire server to
  * update a {@link Buffer} instance.
  * @author Andreas Kirschbaum
  */

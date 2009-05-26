@@ -28,7 +28,6 @@ import java.awt.Color;
 
 /**
  * Adds drawinfo, drawextinfo, and query messages to a {@link Buffer} instance.
- *
  * @author Andreas Kirschbaum
  */
 public class MessageBufferUpdater
@@ -158,14 +157,11 @@ public class MessageBufferUpdater
     };
 
     /**
-     * Create a new instance.
-     *
+     * Creates a new instance.
      * @param crossfireServerConnection the connection instance
-     *
-     * @param buffer The buffer to update.
-     *
-     * @param defaultColor The default color to use for undefined colors
-     * indices.
+     * @param buffer the buffer to update
+     * @param defaultColor the default color to use for undefined colors
+     * indices
      */
     public MessageBufferUpdater(final CrossfireServerConnection crossfireServerConnection, final Buffer buffer, final Color defaultColor)
     {
@@ -186,11 +182,9 @@ public class MessageBufferUpdater
     }
 
     /**
-     * Convert a Crossfire color index to a {@link Color} instance.
-     *
-     * @param index The color index to look up.
-     *
-     * @return The color.
+     * Converts a Crossfire color index to a {@link Color} instance.
+     * @param index the color index to look up
+     * @return the color
      */
     private Color findColor(final int index)
     {
@@ -205,11 +199,9 @@ public class MessageBufferUpdater
     }
 
     /**
-     * Set a color mapping.
-     *
-     * @param index The color index to change.
-     *
-     * @param color The color to map to.
+     * Sets a color mapping.
+     * @param index the color index to change
+     * @param color the color to map to
      */
     public void setColor(final int index, final Color color)
     {
@@ -217,9 +209,8 @@ public class MessageBufferUpdater
     }
 
     /**
-     * Set the message types to show.
-     *
-     * @param types The types to show.
+     * Sets the message types to show.
+     * @param types the types to show
      */
     public void setTypes(final int types)
     {
@@ -227,11 +218,9 @@ public class MessageBufferUpdater
     }
 
     /**
-     * Return whether a message type should be shown.
-     *
-     * @param type The message type.
-     *
-     * @return Whether the message type should be shown.
+     * Returns whether a message type should be shown.
+     * @param type the message type
+     * @return whether the message type should be shown
      */
     private boolean isTypeShown(final int type)
     {

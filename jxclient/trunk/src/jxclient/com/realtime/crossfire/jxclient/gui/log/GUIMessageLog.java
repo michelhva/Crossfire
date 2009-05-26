@@ -82,7 +82,7 @@ public class GUIMessageLog extends GUILog
     }
 
     /**
-     * Set the message types to show.
+     * Sets the message types to show.
      * @param types the types to show
      */
     public void setTypes(final int types)
