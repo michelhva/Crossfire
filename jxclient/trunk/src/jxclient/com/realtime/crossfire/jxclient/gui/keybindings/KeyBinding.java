@@ -22,13 +22,16 @@ package com.realtime.crossfire.jxclient.gui.keybindings;
 import com.realtime.crossfire.jxclient.window.GUICommandList;
 
 /**
- *
- * @version 1.0
+ * Abstract base class for key bindings. A key binding consists of information
+ * about the bound key and an associated {@link GUICommandList}.
  * @author Lauwenmark
- * @since 1.0
+ * @author Andreas Kirschbaum
  */
 public abstract class KeyBinding
 {
+    /**
+     * The associated {@link GUICommandList}.
+     */
     private final GUICommandList commands;
 
     /**
@@ -37,18 +40,20 @@ public abstract class KeyBinding
      */
     private final boolean isDefault;
 
+    /**
+     * Returns the associated {@link GUICommandList}.
+     * @return the associated command list
+     */
     public GUICommandList getCommands()
     {
         return commands;
     }
 
     /**
-     * Create a new instance.
-     *
-     * @param commands The commands to execute.
-     *
-     * @param isDefault Whether the key binding is a "default" binding which
-     * should not be saved.
+     * Creates a new instance.
+     * @param commands the commands to execute
+     * @param isDefault whether the key binding is a "default" binding which
+     * should not be saved
      */
     protected KeyBinding(final GUICommandList commands, final boolean isDefault)
     {
@@ -65,29 +70,23 @@ public abstract class KeyBinding
     public abstract int hashCode();
 
     /**
-     * Check whether this key binding matches a key code/modifiers pair.
-     *
-     * @param keyCode The key code to check.
-     *
-     * @param modifiers The modifiers to check.
-     *
-     * @return Whether the key binding matches the parameters.
+     * Checks whether this key binding matches a key code/modifiers pair.
+     * @param keyCode the key code to check
+     * @param modifiers the modifiers to check
+     * @return whether the key binding matches the parameters
      */
     public abstract boolean matchesKeyCode(final int keyCode, final int modifiers);
 
     /**
      * Check whether this key binding matches a key character.
-     *
-     * @param keyChar The key character to check.
-     *
-     * @return Whether the key binding matches the parameters.
+     * @param keyChar the key character to check
+     * @return whether the key binding matches the parameters
      */
     public abstract boolean matchesKeyChar(final char keyChar);
 
     /**
-     * Return the commands as a string.
-     *
-     * @return The commands as a string.
+     * Returns the commands as a string.
+     * @return the commands as a string
      */
     public String getCommandString()
     {
@@ -95,9 +94,8 @@ public abstract class KeyBinding
     }
 
     /**
-     * Return whether the key binding is a "default" binding which should not
+     * Returns whether the key binding is a "default" binding which should not
      * be saved.
-     *
      * @return <code>true</code>=do not save
      */
     public boolean isDefault()
