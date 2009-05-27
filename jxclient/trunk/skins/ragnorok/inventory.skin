@@ -41,8 +41,8 @@ label_stat label_weight_limit 105 30+136 45 16 font_label BLACK WEIGHT_LIMIT LEF
 #key code KP_LEFT   0 exec command_inventory_prev
 #key code RIGHT     0 exec command_inventory_next
 #key code KP_RIGHT  0 exec command_inventory_next
-key code PAGE_UP   0 exec command_inventory_pageup
-key code PAGE_DOWN 0 exec command_inventory_pagedown
+#key code PAGE_UP   0 exec command_inventory_pageup
+#key code PAGE_DOWN 0 exec command_inventory_pagedown
 key char 10        exec command_inventory_apply
 key char 13        exec command_inventory_apply
 key char 97        exec command_inventory_apply
