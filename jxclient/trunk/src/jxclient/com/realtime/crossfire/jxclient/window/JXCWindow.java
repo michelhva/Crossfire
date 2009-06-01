@@ -416,7 +416,7 @@ public class JXCWindow extends JFrame
         @Override
         public void escPressed()
         {
-            switch (guiManager.escPressed(keybindingsManager.escPressed(), status))
+            switch (guiManager.escPressed(keybindingsManager.escPressed(), getStatus()))
             {
             case 0:
                 break;
