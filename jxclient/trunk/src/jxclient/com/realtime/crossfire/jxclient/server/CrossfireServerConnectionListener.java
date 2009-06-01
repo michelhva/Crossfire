@@ -20,20 +20,15 @@
 package com.realtime.crossfire.jxclient.server;
 
 /**
- * A interface for clients that process connection related events.
- *
+ * Interface for listeners interested in {@link
+ * CrossfireServerConnectionListener} related events.
  * @author Andreas Kirschbaum
  */
-public interface ConnectionListener
+public interface CrossfireServerConnectionListener
 {
     /**
-     * This function will be called when the connection has been established.
-     * @param clientSocketState the client socket state
+     * Called whenever the state has changed.
+     * @param clientSocketState the new state
      */
-    void connected(ClientSocketState clientSocketState);
-
-    /**
-     * This function will be called when the connection has been broken.
-     */
-    void connectionLost();
+    void clientSocketStateChanged(ClientSocketState clientSocketState);
 }

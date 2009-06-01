@@ -47,11 +47,6 @@ public class ClientSocket
     private static final int MAXIMUM_PACKET_SIZE = 65536;
 
     /**
-     * The {@link ConnectionListener}s to notify.
-     */
-    private final List<ConnectionListener> connectionListeners = new ArrayList<ConnectionListener>();
-
-    /**
      * The {@link ClientSocketListener}s to notify.
      */
     private final List<ClientSocketListener> clientSocketListeners = new ArrayList<ClientSocketListener>();
@@ -181,15 +176,6 @@ public class ClientSocket
     {
         thread.interrupt();
         thread.join();
-    }
-
-    /**
-     * Adds a {@link ConnectionListener} to notify.
-     * @param connectionListener the connection listener to add
-     */
-    public void addConnectionListener(final ConnectionListener connectionListener)
-    {
-        connectionListeners.add(connectionListener);
     }
 
     /**
@@ -345,7 +331,6 @@ public class ClientSocket
             outputBuffer.clear();
         }
         inputBuffer.clear();
-        connectionProgress(ClientSocketState.CONNECTING);
         for (final ClientSocketListener clientSocketListener : clientSocketListeners)
         {
             clientSocketListener.connecting();
@@ -407,10 +392,6 @@ public class ClientSocket
         for (final ClientSocketListener clientSocketListener : clientSocketListeners)
         {
             clientSocketListener.disconnected();
-        }
-        for (final ConnectionListener connectionListener : connectionListeners)
-        {
-            connectionListener.connectionLost();
         }
     }
 
@@ -602,18 +583,6 @@ public class ClientSocket
         if (selectionKey != null)
         {
             selectionKey.interestOps(interestOps);
-        }
-    }
-
-    /**
-     * Sends a connection progress notification.
-     * @param clientSocketState the client socket state
-     */
-    public void connectionProgress(final ClientSocketState clientSocketState)
-    {
-        for (final ConnectionListener connectionListener : connectionListeners)
-        {
-            connectionListener.connected(clientSocketState);
         }
     }
 }

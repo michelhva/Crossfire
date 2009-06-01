@@ -71,6 +71,11 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
     private int numLookObjects = 50;
 
     /**
+     * The {@link CrossfireServerConnectionListener}s to notify.
+     */
+    private final List<CrossfireServerConnectionListener> crossfireServerConnectionListeners = new ArrayList<CrossfireServerConnectionListener>();
+
+    /**
      * The {@link MapSizeListener}s to be notified.
      */
     private final List<MapSizeListener> mapSizeListeners = new ArrayList<MapSizeListener>();
@@ -303,6 +308,13 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
         byteBuffer.order(ByteOrder.BIG_ENDIAN);
         this.debugProtocol = debugProtocol;
         addClientSocketListener(clientSocketListener);
+    }
+
+    /** {@inheritDoc} */
+    @Override
+    public synchronized void addCrossfireServerConnectionListener(final CrossfireServerConnectionListener listener)
+    {
+        crossfireServerConnectionListeners.add(listener);
     }
 
     /** {@inheritDoc} */
@@ -2837,6 +2849,9 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
             System.err.println("Warning: connection state is "+clientSocketState+" when switching to state "+nextState+", expecting state "+prevState);
         }
         clientSocketState = nextState;
-        connectionProgress(nextState);
+        for (final CrossfireServerConnectionListener crossfireServerConnectionListener : crossfireServerConnectionListeners)
+        {
+            crossfireServerConnectionListener.clientSocketStateChanged(nextState);
+        }
     }
 }

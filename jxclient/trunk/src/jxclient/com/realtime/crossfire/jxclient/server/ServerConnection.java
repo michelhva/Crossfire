@@ -38,12 +38,6 @@ public interface ServerConnection
     void disconnect();
 
     /**
-     * Adds a {@link ConnectionListener} to notify.
-     * @param connectionListener the connection listener to add
-     */
-    void addConnectionListener(ConnectionListener connectionListener);
-
-    /**
      * Adds a {@link ClientSocketListener} to notify.
      * @param clientSocketListener the client socket listener to add
      */

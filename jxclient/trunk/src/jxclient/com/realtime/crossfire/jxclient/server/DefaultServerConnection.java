@@ -58,13 +58,6 @@ public abstract class DefaultServerConnection implements ServerConnection
 
     /** {@inheritDoc} */
     @Override
-    public void addConnectionListener(final ConnectionListener connectionListener)
-    {
-        clientSocket.addConnectionListener(connectionListener);
-    }
-
-    /** {@inheritDoc} */
-    @Override
     public void addClientSocketListener(final ClientSocketListener clientSocketListener)
     {
         clientSocket.addClientSocketListener(clientSocketListener);
@@ -101,14 +94,5 @@ public abstract class DefaultServerConnection implements ServerConnection
     public void disconnect()
     {
         clientSocket.disconnect();
-    }
-
-    /**
-     * Sends a connection progress notification.
-     * @param clientSocketState the client socket state
-     */
-    protected void connectionProgress(final ClientSocketState clientSocketState)
-    {
-        clientSocket.connectionProgress(clientSocketState);
     }
 }
