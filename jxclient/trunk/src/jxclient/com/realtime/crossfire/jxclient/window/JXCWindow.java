@@ -212,9 +212,15 @@ public class JXCWindow extends JFrame
      */
     private final Resolution resolution;
 
-    private ConnectionStatus status = ConnectionStatus.UNCONNECTED;
+    /**
+     * Whether a server connection is active.
+     */
+    private boolean connected = false;
 
-    private final Object semaphoreStatus = new Object();
+    /**
+     * The synchronization object for accesses to {@link #connected}.
+     */
+    private final Object semaphoreConnected = new Object();
 
     /**
      * The {@link Macros} instance.
@@ -317,7 +323,7 @@ public class JXCWindow extends JFrame
         @Override
         public void disconnected()
         {
-            setStatus(ConnectionStatus.UNCONNECTED);
+            setConnected(false);
             changeGUI(GuiState.METASERVER);
         }
     };
@@ -416,7 +422,7 @@ public class JXCWindow extends JFrame
         @Override
         public void escPressed()
         {
-            switch (guiManager.escPressed(keybindingsManager.escPressed(), getStatus() != ConnectionStatus.UNCONNECTED))
+            switch (guiManager.escPressed(keybindingsManager.escPressed(), isConnected()))
             {
             case 0:
                 break;
@@ -451,7 +457,7 @@ public class JXCWindow extends JFrame
         {
             synchronized (semaphoreDrawing)
             {
-                setStatus(ConnectionStatus.QUERY);
+                setConnected(true);
                 guiManager.openQueryDialog(prompt, queryType);
             }
         }
@@ -786,35 +792,32 @@ public class JXCWindow extends JFrame
     }
 
     /**
-     * Sets the current status of the client to the given value. See the various
-     * STATUS_ constants.
-     * @param status The new status value.
-     * @since 1.0
+     * Records whether a server connection is active.
+     * @param connected whether a server connection is active
      */
-    private void setStatus(final ConnectionStatus status)
+    private void setConnected(final boolean connected)
     {
-        synchronized (semaphoreStatus)
+        synchronized (semaphoreConnected)
         {
-            this.status = status;
+            this.connected = connected;
         }
     }
 
     /**
-     * Gets the current status of the client. See the STATUS_ constants.
-     * @since 1.0
-     * @return A value representing the current status.
+     * Returns whether a server connection is active.
+     * @return whether a server connection is active
      */
-    private ConnectionStatus getStatus()
+    private boolean isConnected()
     {
-        synchronized (semaphoreStatus)
+        synchronized (semaphoreConnected)
         {
-            return status;
+            return connected;
         }
     }
 
     public void sendReply(final String reply)
     {
-        setStatus(ConnectionStatus.PLAYING);
+        setConnected(true);
         server.sendReply(reply);
         guiManager.closeQueryDialog();
     }
