@@ -242,6 +242,54 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
     private ClientSocketState clientSocketState = ClientSocketState.CONNECTING;
 
     /**
+     * The {@link ClientSocketListener} attached to the server socket.
+     */
+    private final ClientSocketListener clientSocketListener = new ClientSocketListener()
+    {
+        /** {@inheritDoc} */
+        @Override
+        public void connecting()
+        {
+            // ignore
+        }
+
+        /** {@inheritDoc} */
+        @Override
+        public void connected()
+        {
+            DefaultCrossfireServerConnection.this.connected();
+        }
+
+        /** {@inheritDoc} */
+        @Override
+        public void packetReceived(final byte[] buf, final int start, final int end) throws UnknownCommandException
+        {
+            processPacket(buf, start, end);
+        }
+
+        /** {@inheritDoc} */
+        @Override
+        public void packetSent(final byte[] buf, final int len)
+        {
+            // ignore
+        }
+
+        /** {@inheritDoc} */
+        @Override
+        public void disconnecting()
+        {
+            // ignore
+        }
+
+        /** {@inheritDoc} */
+        @Override
+        public void disconnected()
+        {
+            // ignore
+        }
+    };
+
+    /**
      * Creates a new instance.
      * @param redrawSemaphore the semaphore used to synchronized map model
      * updates and map view redraws
@@ -254,6 +302,7 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
         this.redrawSemaphore = redrawSemaphore;
         byteBuffer.order(ByteOrder.BIG_ENDIAN);
         this.debugProtocol = debugProtocol;
+        addClientSocketListener(clientSocketListener);
     }
 
     /** {@inheritDoc} */
@@ -431,9 +480,10 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
         crossfireSkillInfoListeners.remove(listener);
     }
 
-    /** {@inheritDoc} */
-    @Override
-    public void connected()
+    /**
+     * Called after the server connection has been established.
+     */
+    private void connected()
     {
         for (final CrossfireUpdateMapListener listener : crossfireUpdateMapListeners)
         {
@@ -444,13 +494,12 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
         sendVersion(1023, 1027, "JXClient Java Client Pegasus 0.1");
     }
 
-    /** {@inheritDoc}
+    /**
      * Processes a received packet. This function does not avoid index out of
      * bounds accesses to the array <code>packet</code>; instead, a
      * <code>try...catch</code> clause is used to detect invalid packets.
      */
-    @Override
-    public void processPacket(final byte[] packet, final int start, final int end) throws UnknownCommandException
+    private void processPacket(final byte[] packet, final int start, final int end) throws UnknownCommandException
     {
         try
         {

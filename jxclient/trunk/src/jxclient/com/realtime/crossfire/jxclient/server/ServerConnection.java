@@ -37,11 +37,21 @@ public interface ServerConnection
      */
     void disconnect();
 
-    ScriptMonitorListeners getScriptMonitorListeners();
-
     /**
      * Adds a {@link ConnectionListener} to notify.
      * @param connectionListener the connection listener to add
      */
     void addConnectionListener(ConnectionListener connectionListener);
+
+    /**
+     * Adds a {@link ClientSocketListener} to notify.
+     * @param clientSocketListener the client socket listener to add
+     */
+    void addClientSocketListener(ClientSocketListener clientSocketListener);
+
+    /**
+     * Removes a {@link ClientSocketListener} to notify.
+     * @param clientSocketListener the client socket listener to remove
+     */
+    void removeClientSocketListener(ClientSocketListener clientSocketListener);
 }

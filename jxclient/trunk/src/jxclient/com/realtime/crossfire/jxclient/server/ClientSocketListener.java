@@ -20,24 +20,20 @@
 package com.realtime.crossfire.jxclient.server;
 
 /**
- * Interface for clients processing received packets.
+ * Interface for listeners interested in {@link ClientSocket} related events.
  * @author Andreas Kirschbaum
  */
-public interface PacketListener
+public interface ClientSocketListener
 {
-    /**
-     * Called once after the connection has been established and before the
-     * first {@link #processPacket(byte[], int, int)} is called.
-     */
+    void connecting();
+
     void connected();
 
-    /**
-     * Processes a received packet. This passed buffer must not be modified
-     * except for the packet range.
-     * @param packet the buffer holding the packet
-     * @param start the start index of the packet
-     * @param end the end of the packet data
-     * @throws UnknownCommandException if the packet cannot be parsed
-     */
-    void processPacket(byte[] packet, int start, int end) throws UnknownCommandException;
+    void packetReceived(byte[] buf, int start, int end) throws UnknownCommandException;
+
+    void packetSent(byte[] buf, int len);
+
+    void disconnecting();
+
+    void disconnected();
 }

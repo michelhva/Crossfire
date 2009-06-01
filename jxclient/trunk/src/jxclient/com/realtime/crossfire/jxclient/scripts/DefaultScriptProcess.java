@@ -25,11 +25,12 @@ import com.realtime.crossfire.jxclient.items.ItemsManager;
 import com.realtime.crossfire.jxclient.map.CfMap;
 import com.realtime.crossfire.jxclient.map.CfMapSquare;
 import com.realtime.crossfire.jxclient.mapupdater.CfMapUpdater;
+import com.realtime.crossfire.jxclient.server.ClientSocketListener;
 import com.realtime.crossfire.jxclient.server.CommandQueue;
 import com.realtime.crossfire.jxclient.server.CrossfireDrawinfoListener;
-import com.realtime.crossfire.jxclient.server.CrossfireScriptMonitorListener;
 import com.realtime.crossfire.jxclient.server.CrossfireServerConnection;
 import com.realtime.crossfire.jxclient.server.CrossfireStatsListener;
+import com.realtime.crossfire.jxclient.server.UnknownCommandException;
 import com.realtime.crossfire.jxclient.skills.Skill;
 import com.realtime.crossfire.jxclient.skills.SkillSet;
 import com.realtime.crossfire.jxclient.spells.Spell;
@@ -132,25 +133,60 @@ public class DefaultScriptProcess extends Thread implements ScriptProcess
     private boolean killed = false;
 
     /**
-     * The {@link CrossfireScriptMonitorListener} attached to {@link
+     * The {@link ClientSocketListener} attached to {@link
      * #crossfireServerConnection} to track commands sent to the server.
      */
-    private final CrossfireScriptMonitorListener crossfireScriptMonitorListener = new CrossfireScriptMonitorListener()
+    private final ClientSocketListener clientSocketListener = new ClientSocketListener()
     {
         /** {@inheritDoc} */
         @Override
-        public void commandSent(final byte[] packet, final int length)
+        public void connecting()
+        {
+            // ignore
+        }
+
+        /** {@inheritDoc} */
+        @Override
+        public void connected()
+        {
+            // ignore
+        }
+
+        /** {@inheritDoc} */
+        @Override
+        public void packetReceived(final byte[] buf, final int start, final int end) throws UnknownCommandException
+        {
+            // ignore
+        }
+
+        /** {@inheritDoc} */
+        @Override
+        public void packetSent(final byte[] buf, final int len)
         {
             final String cmd;
             try
             {
-                cmd = new String(packet, 0, length, "ISO-8859-1");
+                cmd = new String(buf, 0, len, "ISO-8859-1");
             }
             catch (final UnsupportedEncodingException ex)
             {
                 throw new AssertionError(); // will never happen: every JVM must implement ISO-8859-1
             }
-            DefaultScriptProcess.this.commandSent(cmd);
+            commandSent(cmd);
+        }
+
+        /** {@inheritDoc} */
+        @Override
+        public void disconnecting()
+        {
+            // ignore
+        }
+
+        /** {@inheritDoc} */
+        @Override
+        public void disconnected()
+        {
+            // ignore
         }
     };
 
@@ -248,13 +284,13 @@ public class DefaultScriptProcess extends Thread implements ScriptProcess
             {
                 result = ex.getMessage();
             }
-            crossfireServerConnection.getScriptMonitorListeners().removeScriptMonitor(crossfireScriptMonitorListener);
+            crossfireServerConnection.removeClientSocketListener(clientSocketListener);
         }
         finally
         {
             if (isMonitoring)
             {
-                crossfireServerConnection.getScriptMonitorListeners().removeScriptMonitor(crossfireScriptMonitorListener);
+                crossfireServerConnection.removeClientSocketListener(clientSocketListener);
             }
             packetWatcher.destroy();
             for(final ScriptProcessListener scriptProcessListener : scriptProcessListeners)
@@ -692,7 +728,7 @@ public class DefaultScriptProcess extends Thread implements ScriptProcess
         if (!isMonitoring)
         {
             isMonitoring = true;
-            crossfireServerConnection.getScriptMonitorListeners().addScriptMonitor(crossfireScriptMonitorListener);
+            crossfireServerConnection.addClientSocketListener(clientSocketListener);
         }
     }
 
@@ -704,7 +740,7 @@ public class DefaultScriptProcess extends Thread implements ScriptProcess
         if (isMonitoring)
         {
             isMonitoring = false;
-            crossfireServerConnection.getScriptMonitorListeners().removeScriptMonitor(crossfireScriptMonitorListener);
+            crossfireServerConnection.removeClientSocketListener(clientSocketListener);
         }
     }
 
