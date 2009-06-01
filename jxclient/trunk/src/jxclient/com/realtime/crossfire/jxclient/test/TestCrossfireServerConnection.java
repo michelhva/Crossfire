@@ -1,5 +1,6 @@
 package com.realtime.crossfire.jxclient.test;
 
+import com.realtime.crossfire.jxclient.server.ClientSocketListener;
 import com.realtime.crossfire.jxclient.server.ConnectionListener;
 import com.realtime.crossfire.jxclient.server.CrossfireComcListener;
 import com.realtime.crossfire.jxclient.server.CrossfireDrawextinfoListener;
@@ -20,7 +21,6 @@ import com.realtime.crossfire.jxclient.server.CrossfireUpdateItemListener;
 import com.realtime.crossfire.jxclient.server.CrossfireUpdateMapListener;
 import com.realtime.crossfire.jxclient.server.MapSizeListener;
 import com.realtime.crossfire.jxclient.server.ReceivedPacketListener;
-import com.realtime.crossfire.jxclient.server.ScriptMonitorListeners;
 import junit.framework.Assert;
 
 /**
@@ -365,6 +365,20 @@ public class TestCrossfireServerConnection implements CrossfireServerConnection
 
     /** {@inheritDoc} */
     @Override
+    public void addClientSocketListener(final ClientSocketListener clientSocketListener)
+    {
+        throw new AssertionError();
+    }
+
+    /** {@inheritDoc} */
+    @Override
+    public void removeClientSocketListener(final ClientSocketListener clientSocketListener)
+    {
+        throw new AssertionError();
+    }
+
+    /** {@inheritDoc} */
+    @Override
     public void connect(final String hostname, final int port)
     {
         Assert.fail();
@@ -375,13 +389,5 @@ public class TestCrossfireServerConnection implements CrossfireServerConnection
     public void disconnect()
     {
         Assert.fail();
-    }
-
-    /** {@inheritDoc} */
-    @Override
-    public ScriptMonitorListeners getScriptMonitorListeners()
-    {
-        Assert.fail();
-        throw new AssertionError();
     }
 }

@@ -30,15 +30,13 @@ import java.io.IOException;
  * @author Lauwenmark
  * @since 1.0
  */
-public abstract class DefaultServerConnection implements PacketListener, ServerConnection
+public abstract class DefaultServerConnection implements ServerConnection
 {
-    private final ScriptMonitorListeners scriptMonitorListeners = new ScriptMonitorListeners();
-
     private final ClientSocket clientSocket;
 
     protected DefaultServerConnection() throws IOException
     {
-        clientSocket = new ClientSocket(this, scriptMonitorListeners);
+        clientSocket = new ClientSocket();
     }
 
     /**
@@ -65,6 +63,20 @@ public abstract class DefaultServerConnection implements PacketListener, ServerC
         clientSocket.addConnectionListener(connectionListener);
     }
 
+    /** {@inheritDoc} */
+    @Override
+    public void addClientSocketListener(final ClientSocketListener clientSocketListener)
+    {
+        clientSocket.addClientSocketListener(clientSocketListener);
+    }
+
+    /** {@inheritDoc} */
+    @Override
+    public void removeClientSocketListener(final ClientSocketListener clientSocketListener)
+    {
+        clientSocket.removeClientSocketListener(clientSocketListener);
+    }
+
     /**
      * Writes a Crossfire Message on the socket, so it is sent to the server.
      * @param packet the packet to be sent; it does not include the length
@@ -89,13 +101,6 @@ public abstract class DefaultServerConnection implements PacketListener, ServerC
     public void disconnect()
     {
         clientSocket.disconnect();
-    }
-
-    /** {@inheritDoc} */
-    @Override
-    public ScriptMonitorListeners getScriptMonitorListeners()
-    {
-        return scriptMonitorListeners;
     }
 
     /**

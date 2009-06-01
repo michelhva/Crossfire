@@ -47,14 +47,14 @@ public class ClientSocket
     private static final int MAXIMUM_PACKET_SIZE = 65536;
 
     /**
-     * All registered {@link CrossfireScriptMonitorListener}s.
-     */
-    private final CrossfireScriptMonitorListener scriptMonitorListener;
-
-    /**
      * The {@link ConnectionListener}s to notify.
      */
     private final List<ConnectionListener> connectionListeners = new ArrayList<ConnectionListener>();
+
+    /**
+     * The {@link ClientSocketListener}s to notify.
+     */
+    private final List<ClientSocketListener> clientSocketListeners = new ArrayList<ClientSocketListener>();
 
     /**
      * The {@link Selector} used for waiting.
@@ -82,11 +82,6 @@ public class ClientSocket
      * The port to connect to.
      */
     private int port = 0;
-
-    /**
-     * The packet listener which receives the read packets.
-     */
-    private final PacketListener packetListener;
 
     /**
      * A buffer for sending packets.
@@ -163,15 +158,10 @@ public class ClientSocket
 
     /**
      * Creates a new instance.
-     * @param packetListener the packet listener which receives the read
-     * packets
-     * @param scriptMonitorListener the listener to notify
      * @throws IOException if the socket cannot be created
      */
-    public ClientSocket(final PacketListener packetListener, final CrossfireScriptMonitorListener scriptMonitorListener) throws IOException
+    public ClientSocket() throws IOException
     {
-        this.scriptMonitorListener = scriptMonitorListener;
-        this.packetListener = packetListener;
         selector = Selector.open();
     }
 
@@ -200,6 +190,24 @@ public class ClientSocket
     public void addConnectionListener(final ConnectionListener connectionListener)
     {
         connectionListeners.add(connectionListener);
+    }
+
+    /**
+     * Adds a {@link ClientSocketListener} to be notified.
+     * @param clientSocketListener the client socket listener to add
+     */
+    public void addClientSocketListener(final ClientSocketListener clientSocketListener)
+    {
+        clientSocketListeners.add(clientSocketListener);
+    }
+
+    /**
+     * Removes a {@link ClientSocketListener} to be notified.
+     * @param clientSocketListener the client socket listener to remove
+     */
+    public void removeClientSocketListener(final ClientSocketListener clientSocketListener)
+    {
+        clientSocketListeners.remove(clientSocketListener);
     }
 
     /**
@@ -285,7 +293,10 @@ public class ClientSocket
                 }
                 if (notifyConnected)
                 {
-                    packetListener.connected();
+                    for (final ClientSocketListener clientSocketListener : clientSocketListeners)
+                    {
+                        clientSocketListener.connected();
+                    }
                 }
 
                 synchronized (syncOutput)
@@ -335,6 +346,10 @@ public class ClientSocket
         }
         inputBuffer.clear();
         connectionProgress(ClientSocketState.CONNECTING);
+        for (final ClientSocketListener clientSocketListener : clientSocketListeners)
+        {
+            clientSocketListener.connecting();
+        }
     }
 
     /**
@@ -342,6 +357,19 @@ public class ClientSocket
      */
     private void processDisconnect()
     {
+        synchronized (syncOutput)
+        {
+            if (selectionKey == null)
+            {
+                return;
+            }
+        }
+
+        for (final ClientSocketListener clientSocketListener : clientSocketListeners)
+        {
+            clientSocketListener.disconnecting();
+        }
+
         synchronized (syncOutput)
         {
             if (selectionKey == null)
@@ -372,11 +400,14 @@ public class ClientSocket
             socketChannel = null;
         }
 
-//XXX:        connectionProgress(ClientSocketState.DISCONNECTED);
         selectableChannel = null;
 
         inputBuffer.clear();
 
+        for (final ClientSocketListener clientSocketListener : clientSocketListeners)
+        {
+            clientSocketListener.disconnected();
+        }
         for (final ConnectionListener connectionListener : connectionListeners)
         {
             connectionListener.connectionLost();
@@ -431,7 +462,10 @@ public class ClientSocket
             inputLen = -1;
             try
             {
-                packetListener.processPacket(inputBuf, start, end);
+                for (final ClientSocketListener clientSocketListener : clientSocketListeners)
+                {
+                    clientSocketListener.packetReceived(inputBuf, start, end);
+                }
             }
             catch (final UnknownCommandException ex)
             {
@@ -487,7 +521,10 @@ public class ClientSocket
         }
 
         selector.wakeup();
-        scriptMonitorListener.commandSent(buf, len);
+        for (final ClientSocketListener clientSocketListener : clientSocketListeners)
+        {
+            clientSocketListener.packetSent(buf, len);
+        }
     }
 
     /**
