@@ -34,12 +34,14 @@ import com.realtime.crossfire.jxclient.main.Options;
 import com.realtime.crossfire.jxclient.mapupdater.CfMapUpdater;
 import com.realtime.crossfire.jxclient.metaserver.MetaserverModel;
 import com.realtime.crossfire.jxclient.scripts.ScriptManager;
+import com.realtime.crossfire.jxclient.server.ClientSocketListener;
 import com.realtime.crossfire.jxclient.server.ClientSocketState;
 import com.realtime.crossfire.jxclient.server.CommandQueue;
-import com.realtime.crossfire.jxclient.server.ConnectionListener;
 import com.realtime.crossfire.jxclient.server.CrossfireQueryListener;
 import com.realtime.crossfire.jxclient.server.CrossfireServerConnection;
+import com.realtime.crossfire.jxclient.server.CrossfireServerConnectionListener;
 import com.realtime.crossfire.jxclient.server.Pickup;
+import com.realtime.crossfire.jxclient.server.UnknownCommandException;
 import com.realtime.crossfire.jxclient.settings.Filenames;
 import com.realtime.crossfire.jxclient.settings.Settings;
 import com.realtime.crossfire.jxclient.settings.options.OptionException;
@@ -270,19 +272,65 @@ public class JXCWindow extends JFrame
         }
     };
 
-    private final ConnectionListener connectionListener = new ConnectionListener()
+    /**
+     * The {@link ClientSocketListener} used to detect connection state
+     * changes.
+     */
+    private final ClientSocketListener clientSocketListener = new ClientSocketListener()
     {
         /** {@inheritDoc} */
         @Override
-        public void connectionLost()
+        public void connecting()
         {
-            setStatus(ConnectionStatus.UNCONNECTED);
-            changeGUI(GuiState.METASERVER);
+            // ignore
         }
 
         /** {@inheritDoc} */
         @Override
-        public void connected(final ClientSocketState clientSocketState)
+        public void connected()
+        {
+            // ignore
+        }
+
+        /** {@inheritDoc} */
+        @Override
+        public void packetReceived(final byte[] buf, final int start, final int end) throws UnknownCommandException
+        {
+            // ignore
+        }
+
+        /** {@inheritDoc} */
+        @Override
+        public void packetSent(final byte[] buf, final int len)
+        {
+            // ignore
+        }
+
+        /** {@inheritDoc} */
+        @Override
+        public void disconnecting()
+        {
+            // ignore
+        }
+
+        /** {@inheritDoc} */
+        @Override
+        public void disconnected()
+        {
+            setStatus(ConnectionStatus.UNCONNECTED);
+            changeGUI(GuiState.METASERVER);
+        }
+    };
+
+    /**
+     * The {@link CrossfireServerConnectionListener} used to detect connection
+     * progress changes.
+     */
+    private final CrossfireServerConnectionListener crossfireServerConnectionListener = new CrossfireServerConnectionListener()
+    {
+        /** {@inheritDoc} */
+        @Override
+        public void clientSocketStateChanged(final ClientSocketState clientSocketState)
         {
             for (final GuiStateListener listener : guiStateListeners)
             {
@@ -521,7 +569,8 @@ public class JXCWindow extends JFrame
         addWindowFocusListener(windowFocusListener);
         addWindowListener(windowListener);
         connection = new JXCConnection(keybindingsManager, shortcutsManager, settings, this, characterPickup, server, guiManager);
-        server.addConnectionListener(connectionListener);
+        server.addClientSocketListener(clientSocketListener);
+        server.addCrossfireServerConnectionListener(crossfireServerConnectionListener);
         guiManager.setConnection(connection);
         addConnectionStateListener(guiStateListener);
     }

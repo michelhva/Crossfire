@@ -38,6 +38,12 @@ public interface CrossfireServerConnection extends ServerConnection
     void stop() throws InterruptedException;
 
     /**
+     * Adds a listener to be notified about connection progress.
+     * @param listener the listener to add
+     */
+    void addCrossfireServerConnectionListener(CrossfireServerConnectionListener listener);
+
+    /**
      * Adds a listener to be notified about map size changes.
      * @param listener the listener to add
      */

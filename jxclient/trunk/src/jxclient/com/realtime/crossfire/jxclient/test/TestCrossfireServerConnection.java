@@ -1,7 +1,6 @@
 package com.realtime.crossfire.jxclient.test;
 
 import com.realtime.crossfire.jxclient.server.ClientSocketListener;
-import com.realtime.crossfire.jxclient.server.ConnectionListener;
 import com.realtime.crossfire.jxclient.server.CrossfireComcListener;
 import com.realtime.crossfire.jxclient.server.CrossfireDrawextinfoListener;
 import com.realtime.crossfire.jxclient.server.CrossfireDrawinfoListener;
@@ -11,6 +10,7 @@ import com.realtime.crossfire.jxclient.server.CrossfireMagicmapListener;
 import com.realtime.crossfire.jxclient.server.CrossfireMusicListener;
 import com.realtime.crossfire.jxclient.server.CrossfireQueryListener;
 import com.realtime.crossfire.jxclient.server.CrossfireServerConnection;
+import com.realtime.crossfire.jxclient.server.CrossfireServerConnectionListener;
 import com.realtime.crossfire.jxclient.server.CrossfireSkillInfoListener;
 import com.realtime.crossfire.jxclient.server.CrossfireSoundListener;
 import com.realtime.crossfire.jxclient.server.CrossfireSpellListener;
@@ -41,6 +41,13 @@ public class TestCrossfireServerConnection implements CrossfireServerConnection
     /** {@inheritDoc} */
     @Override
     public void stop() throws InterruptedException
+    {
+        Assert.fail();
+    }
+
+    /** {@inheritDoc} */
+    @Override
+    public void addCrossfireServerConnectionListener(final CrossfireServerConnectionListener listener)
     {
         Assert.fail();
     }
@@ -353,13 +360,6 @@ public class TestCrossfireServerConnection implements CrossfireServerConnection
     public int getMapHeight()
     {
         Assert.fail();
-        throw new AssertionError();
-    }
-
-    /** {@inheritDoc} */
-    @Override
-    public void addConnectionListener(final ConnectionListener connectionListener)
-    {
         throw new AssertionError();
     }
 
