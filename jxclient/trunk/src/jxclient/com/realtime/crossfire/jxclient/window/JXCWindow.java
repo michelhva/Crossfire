@@ -316,7 +316,10 @@ public class JXCWindow extends JFrame
         @Override
         public void disconnecting()
         {
-            // ignore
+            if (getGuiState() == GuiState.CONNECTING)
+            {
+                changeGUI(GuiState.CONNECT_FAILED);
+            }
         }
 
         /** {@inheritDoc} */
@@ -324,7 +327,10 @@ public class JXCWindow extends JFrame
         public void disconnected()
         {
             setConnected(false);
-            changeGUI(GuiState.METASERVER);
+            if (getGuiState() != GuiState.CONNECT_FAILED)
+            {
+                changeGUI(GuiState.METASERVER);
+            }
         }
     };
 
@@ -422,6 +428,12 @@ public class JXCWindow extends JFrame
         @Override
         public void escPressed()
         {
+            if (getGuiState() == GuiState.CONNECT_FAILED)
+            {
+                disconnect();
+                return;
+            }
+
             switch (guiManager.escPressed(keybindingsManager.escPressed(), isConnected()))
             {
             case 0:
@@ -502,6 +514,13 @@ public class JXCWindow extends JFrame
         /** {@inheritDoc} */
         @Override
         public void connected()
+        {
+            // ignore
+        }
+
+        /** {@inheritDoc} */
+        @Override
+        public void connectFailed()
         {
             // ignore
         }
@@ -655,7 +674,26 @@ public class JXCWindow extends JFrame
                     listener.connected();
                 }
                 break;
+
+            case CONNECT_FAILED:
+                for (final GuiStateListener listener : guiStateListeners)
+                {
+                    listener.connectFailed();
+                }
+                break;
             }
+        }
+    }
+
+    /**
+     * Returns the current {@link GuiState}.
+     * @return the gui state
+     */
+    private GuiState getGuiState()
+    {
+        synchronized (semaphoreChangeGui)
+        {
+            return guiState;
         }
     }
 

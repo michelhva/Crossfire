@@ -3,3 +3,7 @@ dialog border WIDTH/2-120 HEIGHT/2-134 240 71 false Connecting to server...
 set_modal
 
 label_multi message 10 30 220 32 font_label BLACK Connecting...
+
+key char 10        exec command_disconnect
+key char 13        exec command_disconnect
+key char 32        exec command_disconnect

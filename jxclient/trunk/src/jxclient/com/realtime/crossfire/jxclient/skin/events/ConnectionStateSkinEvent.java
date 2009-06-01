@@ -80,6 +80,13 @@ public class ConnectionStateSkinEvent implements SkinEvent
         {
             commandList.execute();
         }
+
+        /** {@inheritDoc} */
+        @Override
+        public void connectFailed()
+        {
+            // ignore
+        }
     };
 
     /**

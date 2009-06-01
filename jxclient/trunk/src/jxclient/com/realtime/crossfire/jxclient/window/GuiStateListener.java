@@ -52,4 +52,9 @@ public interface GuiStateListener
      * The connection has been established.
      */
     void connected();
+
+    /**
+     * An connection attempt failed.
+     */
+    void connectFailed();
 }

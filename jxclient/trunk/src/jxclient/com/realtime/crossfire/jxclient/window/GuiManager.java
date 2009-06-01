@@ -292,6 +292,17 @@ public class GuiManager
                 windowRenderer.closeDialog(dialogConnect);
             }
         }
+
+        /** {@inheritDoc} */
+        @Override
+        public void connectFailed()
+        {
+            if (dialogConnect != null)
+            {
+                windowRenderer.openDialog(dialogConnect, false);
+                updateConnectLabel(ClientSocketState.CONNECT_FAILED);
+            }
+        }
     };
 
     /**
@@ -840,6 +851,10 @@ public class GuiManager
 
             case CONNECTED:
                 message = "Done.";
+                break;
+
+            case CONNECT_FAILED:
+                message = "Cannot connect to Crossfire server.";
                 break;
             }
 

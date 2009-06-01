@@ -97,6 +97,13 @@ public class SoundManager
             muteMusic(false);
             mute(Sounds.CHARACTER, false);
         }
+
+        /** {@inheritDoc} */
+        @Override
+        public void connectFailed()
+        {
+            // ignore
+        }
     };
 
     /**
