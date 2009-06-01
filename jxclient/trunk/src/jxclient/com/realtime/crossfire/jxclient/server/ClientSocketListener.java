@@ -25,15 +25,39 @@ package com.realtime.crossfire.jxclient.server;
  */
 public interface ClientSocketListener
 {
+    /**
+     * Called when connecting to a Crossfire server.
+     */
     void connecting();
 
+    /**
+     * Called after a connection to a Crossfire server has been established.
+     */
     void connected();
 
+    /**
+     * Called whenever a packet is received from the Crossfire server.
+     * @param buf the packet contents; must not be modified by client code
+     * @param start the start index of the packet in <code>buf</code>
+     * @param end the end index of the packet in <code>buf</code>
+     * @throws UnknownCommandException if the packet cannot be processed
+     */
     void packetReceived(byte[] buf, int start, int end) throws UnknownCommandException;
 
+    /**
+     * Called whenever a packet has been sent to the Crossfire server.
+     * @param buf the packet contents; must not be modified by client code
+     * @param len the length of the packet
+     */
     void packetSent(byte[] buf, int len);
 
+    /**
+     * Called when the connection is being teared down.
+     */
     void disconnecting();
 
+    /**
+     * Called after the connection has been closed.
+     */
     void disconnected();
 }
