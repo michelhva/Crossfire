@@ -20,9 +20,16 @@
 package com.realtime.crossfire.jxclient.server;
 
 import java.io.IOException;
-import java.io.InputStream;
-import java.io.OutputStream;
-import java.net.Socket;
+import java.net.InetSocketAddress;
+import java.net.SocketAddress;
+import java.nio.BufferOverflowException;
+import java.nio.ByteBuffer;
+import java.nio.channels.SelectableChannel;
+import java.nio.channels.SelectionKey;
+import java.nio.channels.Selector;
+import java.nio.channels.SocketChannel;
+import java.util.ArrayList;
+import java.util.List;
 
 /**
  * A socket that processes incoming data.
@@ -32,22 +39,49 @@ import java.net.Socket;
  * clientSocket.disconnect();
  * @author Andreas Kirschbaum
  */
-public class ClientSocket extends Thread
+public class ClientSocket
 {
+    /**
+     * The maximum payload size of a Crossfire protocol packet.
+     */
+    private static final int MAXIMUM_PACKET_SIZE = 65536;
+
     /**
      * All registered {@link CrossfireScriptMonitorListener}s.
      */
     private final CrossfireScriptMonitorListener scriptMonitorListener;
 
     /**
-     * The host to connect to.
+     * The {@link ConnectionListener}s to notify.
      */
-    private final String host;
+    private final List<ConnectionListener> connectionListeners = new ArrayList<ConnectionListener>();
+
+    /**
+     * The {@link Selector} used for waiting.
+     */
+    private final Selector selector;
+
+    /**
+     * Synchronization object for {@link #reconnect}, {@link #host}, and {@link
+     * #port}.
+     */
+    private final Object syncConnect = new Object();
+
+    /**
+     * Set if {@link #host} or {@link #port} has changed and thus a reconnect
+     * is needed.
+     */
+    private boolean reconnect = true;
+
+    /**
+     * The host to connect to. Set to <code>null</code> for disconnect.
+     */
+    private String host = null;
 
     /**
      * The port to connect to.
      */
-    private final int port;
+    private int port = 0;
 
     /**
      * The packet listener which receives the read packets.
@@ -55,48 +89,136 @@ public class ClientSocket extends Thread
     private final PacketListener packetListener;
 
     /**
-     * The connection listener which is notified about connection related
-     * events.
+     * A buffer for sending packets.
      */
-    private final ConnectionListener connectionListener;
+    private final byte[] packetHeader = new byte[2];
 
     /**
-     * Whether this socket is connected.
+     * The {@link SelectableChannel} of {@link #socketChannel}.
      */
-    private boolean connected = true;
+    private SelectableChannel selectableChannel = null;
 
     /**
-     * A buffer for sending packets. It is used for synchronization.
+     * The {@link SelectionKey} registered to {@link #selectableChannel}. It's
+     * interesting ops are {@link #interestOps}.
      */
-    private final byte[] tmp = new byte[2];
+    private SelectionKey selectionKey = null;
 
     /**
-     * The socket. Set to <code>null</code> if not connected.
+     * The currently set interest ops for {@link #selectionKey}.
      */
-    private Socket socket = null;
+    private int interestOps = 0;
 
     /**
-     * The output stream of the socket. Set to <code>null</code> if not
-     * connected.
+     * The receive buffer. It is wrapped into {@link #inputBuffer}.
      */
-    private OutputStream outputStream = null;
+    private final byte[] inputBuf = new byte[2+MAXIMUM_PACKET_SIZE];
+
+    /**
+     * The receive buffer. Contains data pending to be processed.
+     */
+    private final ByteBuffer inputBuffer = ByteBuffer.wrap(inputBuf);
+
+    /**
+     * If set to <code>-1</code>, a two-byte packet header is read next from
+     * {@link #inputBuffer}. Otherwise it is set to the packet length which
+     * will be read from {@link #inputBuffer}.
+     */
+    private int inputLen = -1;
+
+    /**
+     * Synchronization object for {@link #outputBuffer}, {@link #selectionKey},
+     * {@link #interestOps}, and {@link #socketChannel}.
+     */
+    private final Object syncOutput = new Object();
+
+    /**
+     * The output buffer. Contains data pending to send.
+     */
+    private final ByteBuffer outputBuffer = ByteBuffer.allocate(2+MAXIMUM_PACKET_SIZE);
+
+    /**
+     * The {@link SocketChannel} when connected. Set to <code>null</code> when
+     * not connected.
+     */
+    private SocketChannel socketChannel = null;
+
+    /**
+     * Whether {@link #socketChannel} is connected.
+     */
+    private boolean isConnected = false;
+
+    /**
+     * The {@link Thread} used to operate the socket.
+     */
+    private final Thread thread = new Thread(new Runnable()
+    {
+        /** {@inheritDoc} */
+        @Override
+        public void run()
+        {
+            process();
+        }
+    });
 
     /**
      * Creates a new instance.
-     * @param host the host to connect to
-     * @param port the port to connect to
      * @param packetListener the packet listener which receives the read
      * packets
      * @param scriptMonitorListener the listener to notify
-     * @param connectionListener the connection listener to notify
+     * @throws IOException if the socket cannot be created
      */
-    public ClientSocket(final String host, final int port, final PacketListener packetListener, final CrossfireScriptMonitorListener scriptMonitorListener, final ConnectionListener connectionListener)
+    public ClientSocket(final PacketListener packetListener, final CrossfireScriptMonitorListener scriptMonitorListener) throws IOException
     {
         this.scriptMonitorListener = scriptMonitorListener;
-        this.connectionListener = connectionListener;
-        this.host = host;
-        this.port = port;
         this.packetListener = packetListener;
+        selector = Selector.open();
+    }
+
+    /**
+     * Starts operation.
+     */
+    public void start()
+    {
+        thread.start();
+    }
+
+    /**
+     * Stops operation.
+     * @throws InterruptedException if stopping was interrupted
+     */
+    public void stop() throws InterruptedException
+    {
+        thread.interrupt();
+        thread.join();
+    }
+
+    /**
+     * Adds a {@link ConnectionListener} to notify.
+     * @param connectionListener the connection listener to add
+     */
+    public void addConnectionListener(final ConnectionListener connectionListener)
+    {
+        connectionListeners.add(connectionListener);
+    }
+
+    /**
+     * Connects to a server. Disconnects an existing connection if necessary.
+     * @param host the host to connect to
+     * @param port the port to connect to
+     */
+    public void connect(final String host, final int port)
+    {
+        synchronized (syncConnect)
+        {
+            if (this.host == null || this.port == 0 || !this.host.equals(host) || this.port != port)
+            {
+                reconnect = true;
+                this.host = host;
+                this.port = port;
+                selector.wakeup();
+            }
+        }
     }
 
     /**
@@ -104,127 +226,219 @@ public class ClientSocket extends Thread
      */
     public void disconnect()
     {
-        synchronized (tmp)
+        synchronized (syncConnect)
         {
-            if (!connected)
+            if (host != null || port != 0)
+            {
+                reconnect = true;
+                host = null;
+                port = 0;
+                selector.wakeup();
+            }
+        }
+    }
+
+    /**
+     * Reads/writes data from/to the socket. Returns if the {@link #thread} has
+     * been interrupted.
+     */
+    private void process()
+    {
+        while (!thread.isInterrupted())
+        {
+            try
+            {
+                synchronized (syncConnect)
+                {
+                    if (reconnect)
+                    {
+                        reconnect = false;
+                        processDisconnect();
+                        if (host != null && port != 0)
+                        {
+                            processConnect(host, port);
+                        }
+                    }
+                }
+
+                final boolean notifyConnected;
+                synchronized (syncOutput)
+                {
+                    if (!isConnected && socketChannel != null)
+                    {
+                        isConnected = socketChannel.finishConnect();
+                        if (isConnected)
+                        {
+                            interestOps = SelectionKey.OP_READ;
+                            updateInterestOps();
+                            notifyConnected = true;
+                        }
+                        else
+                        {
+                            notifyConnected = false;
+                        }
+                    }
+                    else
+                    {
+                        notifyConnected = false;
+                    }
+                }
+                if (notifyConnected)
+                {
+                    packetListener.connected();
+                }
+
+                synchronized (syncOutput)
+                {
+                    if (outputBuffer.position() > 0)
+                    {
+                        setInterestOps(SelectionKey.OP_WRITE);
+                    }
+                    else
+                    {
+                        unsetInterestOps(SelectionKey.OP_WRITE);
+                    }
+                }
+
+                selector.select();
+                if (isConnected)
+                {
+                    processRead();
+                    processWrite();
+                }
+            }
+            catch (final IOException ex)
+            {
+                processDisconnect();
+            }
+        }
+    }
+
+    /**
+     * Connects the socket. The socket must not be connected.
+     * @param host the host to connect to
+     * @param port the port to connect to
+     * @throws IOException if an I/O error occurs
+     */
+    private void processConnect(final String host, final int port) throws IOException
+    {
+        final SocketAddress socketAddress = new InetSocketAddress(host, port);
+        synchronized (syncOutput)
+        {
+            socketChannel = SocketChannel.open();
+            selectableChannel = socketChannel.configureBlocking(false);
+            isConnected = socketChannel.connect(socketAddress);
+            socketChannel.socket().setTcpNoDelay(true);
+            interestOps = SelectionKey.OP_CONNECT;
+            selectionKey = selectableChannel.register(selector, interestOps);
+            outputBuffer.clear();
+        }
+        inputBuffer.clear();
+        connectionProgress(ClientSocketState.CONNECTING);
+    }
+
+    /**
+     * Disconnects the socket. Does nothing if not currently connected.
+     */
+    private void processDisconnect()
+    {
+        synchronized (syncOutput)
+        {
+            if (selectionKey == null)
             {
                 return;
             }
 
-            connected = false;
+            selectionKey.cancel();
+            selectionKey = null;
+            outputBuffer.clear();
+
             try
             {
-                if (socket != null)
-                {
-                    socket.close();
-                }
+                socketChannel.socket().shutdownOutput();
             }
             catch (final IOException ex)
             {
                 // ignore
             }
+            try
+            {
+                socketChannel.close();
+            }
+            catch (final IOException ex)
+            {
+                // ignore
+            }
+            socketChannel = null;
+        }
+
+//XXX:        connectionProgress(ClientSocketState.DISCONNECTED);
+        selectableChannel = null;
+
+        inputBuffer.clear();
+
+        for (final ConnectionListener connectionListener : connectionListeners)
+        {
+            connectionListener.connectionLost();
         }
     }
 
-    /** {@inheritDoc} */
-    @Override
-    public void run()
+    /**
+     * Reads data from the socket and parses the data into commands.
+     * @throws IOException if an I/O error occurs
+     */
+    private void processRead() throws IOException
     {
-        try
+        if (socketChannel == null)
         {
-            socket = new Socket(host, port);
+            return;
+        }
+
+        synchronized (syncOutput)
+        {
+            socketChannel.read(inputBuffer);
+        }
+        inputBuffer.flip();
+        processReadCommand();
+        inputBuffer.compact();
+    }
+
+    /**
+     * Parses data from {@link #inputBuffer} into commands.
+     */
+    private void processReadCommand()
+    {
+        for (;;)
+        {
+            if (inputLen == -1)
+            {
+                if (inputBuffer.remaining() < 2)
+                {
+                    break;
+                }
+
+                inputLen = (inputBuffer.get()&0xFF)*0x100+(inputBuffer.get()&0xFF);
+            }
+
+            if (inputBuffer.remaining() < inputLen)
+            {
+                break;
+            }
+
+            final int start = inputBuffer.position();
+            final int end = start+inputLen;
+            inputBuffer.position(start+inputLen);
+            inputLen = -1;
             try
             {
-                try
-                {
-                    socket.setTcpNoDelay(true);
-                    final InputStream inputStream = socket.getInputStream();
-                    synchronized (tmp)
-                    {
-                        outputStream = socket.getOutputStream();
-                    }
-                    packetListener.connected();
-                    final byte[] buf = new byte[2+0xFFFF];
-                    int pos = 0;
-LOOP:
-                    for (;;)
-                    {
-                        if (isInterrupted())
-                        {
-                            throw new IOException("thread has been interrupted");
-                        }
-
-                        while (pos < 2)
-                        {
-                            final int len = inputStream.read(buf, pos, buf.length-pos);
-                            if (len <= 0)
-                            {
-                                break LOOP;
-                            }
-
-                            pos += len;
-                        }
-                        final int packetLen = 2+(buf[0]&0xFF)*0x100+(buf[1]&0xFF);
-                        while (pos < packetLen)
-                        {
-                            final int len = inputStream.read(buf, pos, buf.length-pos);
-                            if (len <= 0)
-                            {
-                                break LOOP;
-                            }
-
-                            pos += len;
-                        }
-
-                        int thisStart = 0;
-                        int thisLen = packetLen-2;
-                        for (;;)
-                        {
-                            packetListener.processPacket(buf, thisStart+2, thisStart+2+thisLen);
-                            thisStart += 2+thisLen;
-                            if (thisStart+2 > pos)
-                            {
-                                break;
-                            }
-                            thisLen = (buf[thisStart]&0xFF)*0x100+(buf[thisStart+1]&0xFF);
-                            if (thisStart+2+thisLen > pos)
-                            {
-                                break;
-                            }
-                        }
-
-                        System.arraycopy(buf, thisStart, buf, 0, pos-thisStart);
-                        pos -= thisStart;
-                    }
-                }
-                finally
-                {
-                    socket.shutdownOutput();
-                }
+                packetListener.processPacket(inputBuf, start, end);
             }
-            finally
+            catch (final UnknownCommandException ex)
             {
-                final Socket s = socket;
-                synchronized (tmp)
-                {
-                    connected = false;
-                    socket = null;
-                    outputStream = null;
-                }
-                s.close();
+                disconnect();
+                break;
             }
         }
-        catch (final IOException ex)
-        {
-            System.err.println("Warning: connection to server lost: "+ex.getMessage());
-        }
-        catch (final UnknownCommandException ex)
-        {
-            System.err.println("Warning: received unknown command: "+ex.getMessage());
-            System.err.println(ex.getDetails());
-        }
-
-        connectionListener.connectionLost();
     }
 
     /**
@@ -237,26 +451,32 @@ LOOP:
      */
     public void writePacket(final byte[] buf, final int len)
     {
-        synchronized (tmp)
+        synchronized (syncOutput)
         {
-            if (!connected)
+            if (socketChannel == null)
             {
                 return;
             }
 
-            tmp[0] = (byte)(len/0x100);
-            tmp[1] = (byte)len;
+            packetHeader[0] = (byte)(len/0x100);
+            packetHeader[1] = (byte)len;
             try
             {
-                outputStream.write(tmp);
-                outputStream.write(buf, 0, len);
+                try
+                {
+                    outputBuffer.put(packetHeader);
+                    outputBuffer.put(buf, 0, len);
+                }
+                catch (final BufferOverflowException ex)
+                {
+                    throw new IOException("buffer overflow", ex);
+                }
             }
             catch (final IOException ex)
             {
-                connected = false;
                 try
                 {
-                    socket.close();
+                    socketChannel.close();
                 }
                 catch (final IOException ex2)
                 {
@@ -266,7 +486,86 @@ LOOP:
             }
         }
 
+        selector.wakeup();
         scriptMonitorListener.commandSent(buf, len);
+    }
+
+    /**
+     * Writes some pending data to the socket. Does nothing if no pending data
+     * exists or if the socket does not accept data.
+     * @throws IOException if an I/O error occurs
+     */
+    private void processWrite() throws IOException
+    {
+        synchronized (syncOutput)
+        {
+            if (socketChannel == null)
+            {
+                return;
+            }
+
+            if (outputBuffer.remaining() <= 0)
+            {
+                return;
+            }
+
+            outputBuffer.flip();
+            try
+            {
+                socketChannel.write(outputBuffer);
+            }
+            finally
+            {
+                outputBuffer.compact();
+            }
+        }
+    }
+
+    /**
+     * Removes interest ops to {@link #interestOps} and updates {@link
+     * #selectionKey}.
+     * @param interestOps the interest ops to remove
+     */
+    private void unsetInterestOps(final int interestOps)
+    {
+        assert Thread.holdsLock(syncOutput);
+        if ((this.interestOps&interestOps) == 0)
+        {
+            return;
+        }
+
+        this.interestOps &= ~interestOps;
+        updateInterestOps();
+    }
+
+    /**
+     * Adds interest ops to {@link #interestOps} and updates {@link
+     * #selectionKey}.
+     * @param interestOps the interest ops to add
+     */
+    private void setInterestOps(final int interestOps)
+    {
+        assert Thread.holdsLock(syncOutput);
+        if ((this.interestOps&interestOps) == interestOps)
+        {
+            return;
+        }
+
+        this.interestOps |= interestOps;
+        updateInterestOps();
+    }
+
+    /**
+     * Updates {@link #selectionKey}'s interest ops to match {@link
+     * #interestOps}. Does nothing if <code>selectionKey</code> is <code>null</code>.
+     */
+    private void updateInterestOps()
+    {
+        assert Thread.holdsLock(syncOutput);
+        if (selectionKey != null)
+        {
+            selectionKey.interestOps(interestOps);
+        }
     }
 
     /**
@@ -275,6 +574,9 @@ LOOP:
      */
     public void connectionProgress(final ClientSocketState clientSocketState)
     {
-        connectionListener.connected(clientSocketState);
+        for (final ConnectionListener connectionListener : connectionListeners)
+        {
+            connectionListener.connected(clientSocketState);
+        }
     }
 }
