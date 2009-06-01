@@ -786,17 +786,6 @@ public class JXCWindow extends JFrame
     }
 
     /**
-     * Set the current player name. Does nothing if not currently in the
-     * character name prompt.
-     *
-     * @param playerName The player name.
-     */
-    public void updatePlayerName(final String playerName)
-    {
-        guiManager.updatePlayerName(playerName);
-    }
-
-    /**
      * Sets the current status of the client to the given value. See the various
      * STATUS_ constants.
      * @param status The new status value.
