@@ -791,7 +791,7 @@ public class JXCWindow extends JFrame
      * @param status The new status value.
      * @since 1.0
      */
-    public void setStatus(final ConnectionStatus status)
+    private void setStatus(final ConnectionStatus status)
     {
         synchronized (semaphoreStatus)
         {
@@ -804,7 +804,7 @@ public class JXCWindow extends JFrame
      * @since 1.0
      * @return A value representing the current status.
      */
-    public ConnectionStatus getStatus()
+    private ConnectionStatus getStatus()
     {
         synchronized (semaphoreStatus)
         {
