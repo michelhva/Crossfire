@@ -11,6 +11,11 @@ import java.awt.Frame;
 public class JXCConnection
 {
     /**
+     * The default port number for Crossfire servers.
+     */
+    private final int DEFAULT_CROSSFIRE_PORT = 13327;
+
+    /**
      * The prefix for the window title.
      */
     private static final String TITLE_PREFIX = "jxclient";
@@ -225,7 +230,7 @@ public class JXCConnection
         {
             final String[] tmp = serverInfo.split(":", 2);
             newHostname = tmp[0];
-            newPort = tmp.length < 2 ? 13327 : NumberParser.parseInt(tmp[1], 13327, 1, 65535);
+            newPort = tmp.length < 2 ? DEFAULT_CROSSFIRE_PORT : NumberParser.parseInt(tmp[1], DEFAULT_CROSSFIRE_PORT, 1, 65535);
         }
 
         if ((hostname == null ? newHostname == null : hostname.equals(newHostname))
