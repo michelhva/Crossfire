@@ -121,14 +121,8 @@ public class KeyHandler
         keyShift[keyid] = state;
     }
 
-    private void handleKeyPress(final KeyEvent e, final ConnectionStatus status)
+    private void handleKeyPress(final KeyEvent e)
     {
-        if (status != ConnectionStatus.PLAYING)
-        {
-            debugKeyboardWrite("handleKeyPress: ignoring key because state is not PLAYING but "+status);
-            return;
-        }
-
         if (keybindingsManager.handleKeyPress(e))
         {
             debugKeyboardWrite("keyPressed: keybindingsManager consumed key");
@@ -206,14 +200,8 @@ public class KeyHandler
         }
     }
 
-    private void handleKeyTyped(final KeyEvent e, final ConnectionStatus status)
+    private void handleKeyTyped(final KeyEvent e)
     {
-        if (status != ConnectionStatus.PLAYING)
-        {
-            debugKeyboardWrite("handleKeyTyped: ignoring key because state is not PLAYING but "+status);
-            return;
-        }
-
         if (keybindingsManager.handleKeyTyped(e))
         {
             debugKeyboardWrite("keyTyped: keybindingsManager consumed key");
@@ -229,7 +217,7 @@ public class KeyHandler
         debugKeyboardWrite("keyTyped: ignoring key");
     }
 
-    public void keyPressed(final KeyEvent e, final ConnectionStatus status)
+    public void keyPressed(final KeyEvent e)
     {
         debugKeyboardWrite("pressed", e);
         try
@@ -279,7 +267,7 @@ public class KeyHandler
                         debugKeyboardWrite("keyPressed: main gui "+windowRenderer.getCurrentGui()+" consumed key");
                         return;
                     }
-                    handleKeyPress(e, status);
+                    handleKeyPress(e);
                 }
                 break;
             }
@@ -329,7 +317,7 @@ public class KeyHandler
         }
     }
 
-    public void keyTyped(final KeyEvent e, final ConnectionStatus status)
+    public void keyTyped(final KeyEvent e)
     {
         debugKeyboardWrite("typed", e);
         try
@@ -369,7 +357,7 @@ public class KeyHandler
                     debugKeyboardWrite("keyTyped: main gui "+windowRenderer.getCurrentGui()+" consumed key");
                     return;
                 }
-                handleKeyTyped(e, status);
+                handleKeyTyped(e);
             }
         }
         finally

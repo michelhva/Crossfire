@@ -364,11 +364,11 @@ public class GuiManager
     /**
      * The ESC key has been pressed.
      * @param closeKeybindDialog whether the keybindings dialog should be closed
-     * @param status the current window status
+     * @param connected whether a connection to the server is active
      * @return whether how the key has been consumed: 0=ignore key,
      * 1=disconnect from server, quit=quit application
      */
-    public int escPressed(final boolean closeKeybindDialog, final ConnectionStatus status)
+    public int escPressed(final boolean closeKeybindDialog, final boolean connected)
     {
         if (closeKeybindDialog)
         {
@@ -378,7 +378,7 @@ public class GuiManager
         {
             // ignore
         }
-        else if (status != ConnectionStatus.UNCONNECTED)
+        else if (connected)
         {
             if (dialogDisconnect == null)
             {
