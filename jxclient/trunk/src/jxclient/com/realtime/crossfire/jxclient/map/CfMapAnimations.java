@@ -24,8 +24,10 @@ import com.realtime.crossfire.jxclient.mapupdater.CfMapUpdater;
 import com.realtime.crossfire.jxclient.server.CrossfireMap2Command;
 import com.realtime.crossfire.jxclient.server.CrossfireServerConnection;
 import com.realtime.crossfire.jxclient.server.CrossfireTickListener;
+import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.HashSet;
+import java.util.List;
 import java.util.Map;
 import java.util.Set;
 
@@ -35,6 +37,11 @@ import java.util.Set;
  */
 public class CfMapAnimations
 {
+    /**
+     * Synchronization object.
+     */
+    private final Object sync = new Object();
+
     /**
      * The width of the visible map area.
      */
@@ -99,8 +106,11 @@ public class CfMapAnimations
      */
     public void clear()
     {
-        animations.clear();
-        pendingTickUpdates.clear();
+        synchronized (sync)
+        {
+            animations.clear();
+            pendingTickUpdates.clear();
+        }
     }
 
     /**
@@ -119,7 +129,10 @@ public class CfMapAnimations
 
         final Location location = new Location(x, y, layer);
         final AnimationState animationState = new AnimationState(animation, type, mapUpdater);
-        animations.put(location, animationState);
+        synchronized (sync)
+        {
+            animations.put(location, animationState);
+        }
         animationState.draw(location, -1);
     }
 
@@ -130,9 +143,12 @@ public class CfMapAnimations
      */
     public void remove(final int x, final int y)
     {
-        for (int layer = 0; layer < CrossfireMap2Command.NUM_LAYERS; layer++)
+        synchronized (sync)
         {
-            animations.remove(new Location(x, y, layer));
+            for (int layer = 0; layer < CrossfireMap2Command.NUM_LAYERS; layer++)
+            {
+                animations.remove(new Location(x, y, layer));
+            }
         }
     }
 
@@ -147,7 +163,10 @@ public class CfMapAnimations
         assert 0 <= x;
         assert 0 <= y;
 
-        animations.remove(new Location(x, y, layer));
+        synchronized (sync)
+        {
+            animations.remove(new Location(x, y, layer));
+        }
     }
 
     /**
@@ -163,7 +182,11 @@ public class CfMapAnimations
         assert 0 <= y;
 
         final Location location = new Location(x, y, layer);
-        final AnimationState animationState = animations.get(location);
+        final AnimationState animationState;
+        synchronized (sync)
+        {
+            animationState = animations.get(location);
+        }
         if (animationState == null)
         {
             System.err.println("No animation at "+x+"/"+y+"/"+layer+" to update animation speed.");
@@ -181,19 +204,22 @@ public class CfMapAnimations
      */
     public void scroll(final int dx, final int dy)
     {
-        final Map<Location, AnimationState> tmp = new HashMap<Location, AnimationState>(animations);
-        animations.clear();
-
-        for (final Map.Entry<Location, AnimationState> e : tmp.entrySet())
+        synchronized (sync)
         {
-            final Location location = e.getKey();
-            if (0 <= location.getX() && location.getX() < width && 0 <= location.getY() && location.getY() < height) // out-of-map bounds animations are dropped not scrolled
+            final Map<Location, AnimationState> tmp = new HashMap<Location, AnimationState>(animations);
+            animations.clear();
+
+            for (final Map.Entry<Location, AnimationState> e : tmp.entrySet())
             {
-                final int newX = location.getX()-dx;
-                final int newY = location.getY()-dy;
-                if (0 <= newX && newX < width && 0 <= newY && newY < height) // in-map bounds animations are dropped if scrolled off the visible area
+                final Location location = e.getKey();
+                if (0 <= location.getX() && location.getX() < width && 0 <= location.getY() && location.getY() < height) // out-of-map bounds animations are dropped not scrolled
                 {
-                    animations.put(new Location(newX, newY, location.getLayer()), e.getValue());
+                    final int newX = location.getX()-dx;
+                    final int newY = location.getY()-dy;
+                    if (0 <= newX && newX < width && 0 <= newY && newY < height) // in-map bounds animations are dropped if scrolled off the visible area
+                    {
+                        animations.put(new Location(newX, newY, location.getLayer()), e.getValue());
+                    }
                 }
             }
         }
@@ -205,19 +231,28 @@ public class CfMapAnimations
      */
     public void tick(final int tickNo)
     {
-        for (final AnimationState animationState : pendingTickUpdates)
+        final List<Map.Entry<Location, AnimationState>> animationsToUpdate;
+        synchronized (sync)
         {
-            animationState.setTickno(tickNo);
-        }
-        pendingTickUpdates.clear();
+            for (final AnimationState animationState : pendingTickUpdates)
+            {
+                animationState.setTickno(tickNo);
+            }
+            pendingTickUpdates.clear();
 
-        if (animations.isEmpty())
-        {
-            return;
-        }
+            if (animations.isEmpty())
+            {
+                return;
+            }
 
+            animationsToUpdate = new ArrayList<Map.Entry<Location, AnimationState>>();
+            for (final Map.Entry<Location, AnimationState> e : animations.entrySet())
+            {
+                animationsToUpdate.add(e);
+            }
+        }
         mapUpdater.processMapBegin();
-        for (final Map.Entry<Location, AnimationState> e : animations.entrySet())
+        for (final Map.Entry<Location, AnimationState> e : animationsToUpdate)
         {
             final Location location = e.getKey();
             final AnimationState animationState = e.getValue();
@@ -233,9 +268,12 @@ public class CfMapAnimations
      */
     public void setMapSize(final int width, final int height)
     {
-        this.width = width;
-        this.height = height;
-        animations.clear();
-        pendingTickUpdates.clear();
+        synchronized (sync)
+        {
+            this.width = width;
+            this.height = height;
+            animations.clear();
+            pendingTickUpdates.clear();
+        }
     }
 }
