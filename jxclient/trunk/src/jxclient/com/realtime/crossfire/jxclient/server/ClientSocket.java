@@ -19,6 +19,7 @@
 //
 package com.realtime.crossfire.jxclient.server;
 
+import java.io.EOFException;
 import java.io.IOException;
 import java.net.InetSocketAddress;
 import java.net.SocketAddress;
@@ -414,7 +415,10 @@ public class ClientSocket
 
         synchronized (syncOutput)
         {
-            socketChannel.read(inputBuffer);
+            if (socketChannel.read(inputBuffer) == -1)
+            {
+                throw new EOFException();
+            }
         }
         inputBuffer.flip();
         processReadCommand();
