@@ -331,7 +331,14 @@ public class ClientSocket
         {
             socketChannel = SocketChannel.open();
             selectableChannel = socketChannel.configureBlocking(false);
-            isConnected = socketChannel.connect(socketAddress);
+            try
+            {
+                isConnected = socketChannel.connect(socketAddress);
+            }
+            catch (final IllegalArgumentException ex)
+            {
+                throw new IOException(ex.getMessage(), ex);
+            }
             socketChannel.socket().setTcpNoDelay(true);
             interestOps = SelectionKey.OP_CONNECT;
             selectionKey = selectableChannel.register(selector, interestOps);
