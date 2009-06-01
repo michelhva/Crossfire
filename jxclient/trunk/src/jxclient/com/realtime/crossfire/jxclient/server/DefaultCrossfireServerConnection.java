@@ -2830,6 +2830,7 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
     public void connect(final String hostname, final int port)
     {
         clientSocketState = ClientSocketState.CONNECTING;
+        setClientSocketState(ClientSocketState.CONNECTING, ClientSocketState.CONNECTING);
         super.connect(hostname, port);
     }
 
