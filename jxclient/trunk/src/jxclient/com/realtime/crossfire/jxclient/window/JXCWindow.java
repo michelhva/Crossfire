@@ -382,7 +382,7 @@ public class JXCWindow extends JFrame
         {
             synchronized (semaphoreDrawing)
             {
-                keyHandler.keyTyped(e, getStatus());
+                keyHandler.keyTyped(e);
             }
         }
 
@@ -392,7 +392,7 @@ public class JXCWindow extends JFrame
         {
             synchronized (semaphoreDrawing)
             {
-                keyHandler.keyPressed(e, getStatus());
+                keyHandler.keyPressed(e);
             }
         }
 
@@ -416,7 +416,7 @@ public class JXCWindow extends JFrame
         @Override
         public void escPressed()
         {
-            switch (guiManager.escPressed(keybindingsManager.escPressed(), getStatus()))
+            switch (guiManager.escPressed(keybindingsManager.escPressed(), getStatus() != ConnectionStatus.UNCONNECTED))
             {
             case 0:
                 break;
