@@ -299,6 +299,13 @@ public class Stats
         {
             // ignore
         }
+
+        /** {@inheritDoc} */
+        @Override
+        public void connectFailed()
+        {
+            // ignore
+        }
     };
 
     /**

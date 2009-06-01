@@ -158,6 +158,13 @@ public class FacesManager
         {
             // ignore
         }
+
+        /** {@inheritDoc} */
+        @Override
+        public void connectFailed()
+        {
+            // ignore
+        }
     };
 
     /**

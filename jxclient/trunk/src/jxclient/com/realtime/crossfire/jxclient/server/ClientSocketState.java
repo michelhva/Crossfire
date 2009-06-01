@@ -54,5 +54,10 @@ public enum ClientSocketState
     /**
      * Connection is fully established.
      */
-    CONNECTED;
+    CONNECTED,
+
+    /**
+     * A connection could not be established.
+     */
+    CONNECT_FAILED
 }

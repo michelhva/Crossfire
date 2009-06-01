@@ -125,6 +125,13 @@ public class SpellsManager
         {
             // ignore
         }
+
+        /** {@inheritDoc} */
+        @Override
+        public void connectFailed()
+        {
+            // ignore
+        }
     };
 
     /**

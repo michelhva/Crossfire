@@ -31,5 +31,7 @@ public enum GuiState
 
     CONNECTING,
 
-    CONNECTED;
+    CONNECTED,
+
+    CONNECT_FAILED
 }

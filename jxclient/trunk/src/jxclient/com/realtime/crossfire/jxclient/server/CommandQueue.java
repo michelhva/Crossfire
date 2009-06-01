@@ -130,6 +130,13 @@ public class CommandQueue
         {
             // ignore
         }
+
+        /** {@inheritDoc} */
+        @Override
+        public void connectFailed()
+        {
+            // ignore
+        }
     };
 
     /**

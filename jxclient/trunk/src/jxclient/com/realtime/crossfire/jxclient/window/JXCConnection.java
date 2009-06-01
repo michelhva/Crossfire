@@ -107,6 +107,13 @@ public class JXCConnection
         {
             // ignore
         }
+
+        /** {@inheritDoc} */
+        @Override
+        public void connectFailed()
+        {
+            // ignore
+        }
     };
 
     /**
