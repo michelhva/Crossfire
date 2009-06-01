@@ -13,7 +13,7 @@ public class JXCConnection
     /**
      * The default port number for Crossfire servers.
      */
-    private final int DEFAULT_CROSSFIRE_PORT = 13327;
+    private static final int DEFAULT_CROSSFIRE_PORT = 13327;
 
     /**
      * The prefix for the window title.
