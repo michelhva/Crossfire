@@ -1,7 +1,6 @@
 package com.realtime.crossfire.jxclient.window;
 
 import com.realtime.crossfire.jxclient.server.ClientSocketState;
-import com.realtime.crossfire.jxclient.server.ConnectionListener;
 import com.realtime.crossfire.jxclient.server.CrossfireServerConnection;
 import com.realtime.crossfire.jxclient.server.Pickup;
 import com.realtime.crossfire.jxclient.settings.Settings;
@@ -46,11 +45,6 @@ public class JXCConnection
      * Crossfire server.
      */
     private final CrossfireServerConnection server;
-
-    /**
-     * The {@link ConnectionListener} to use when connecting.
-     */
-    private final ConnectionListener connectionListener;
 
     /**
      * The {@link GuiManager} to use when connecting.
@@ -123,10 +117,9 @@ public class JXCConnection
      * @param window the frame instance for updating the title
      * @param characterPickup the character pickup instance to update
      * @param server the crossfire server connection instance used to connect
-     * @param connectionListener the connection listener to use when connecting
      * @param guiManager the gui manager to use when connecting
      */
-    public JXCConnection(final KeybindingsManager keybindingsManager, final ShortcutsManager shortcutsManager, final Settings settings, final JXCWindow window, final Pickup characterPickup, final CrossfireServerConnection server, final ConnectionListener connectionListener, final GuiManager guiManager)
+    public JXCConnection(final KeybindingsManager keybindingsManager, final ShortcutsManager shortcutsManager, final Settings settings, final JXCWindow window, final Pickup characterPickup, final CrossfireServerConnection server, final GuiManager guiManager)
     {
         this.keybindingsManager = keybindingsManager;
         this.shortcutsManager = shortcutsManager;
@@ -134,7 +127,6 @@ public class JXCConnection
         frame = window;
         this.characterPickup = characterPickup;
         this.server = server;
-        this.connectionListener = connectionListener;
         this.guiManager = guiManager;
         window.addConnectionStateListener(guiStateListener);
         updateTitle();
@@ -258,6 +250,6 @@ public class JXCConnection
         final JXCSkin skin = guiManager.getSkin();
         server.setMapSize(skin.getMapWidth(), skin.getMapHeight());
         server.setNumLookObjects(skin.getNumLookObjects());
-        server.connect(hostname, port, connectionListener);
+        server.connect(hostname, port);
     }
 }

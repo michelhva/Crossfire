@@ -247,8 +247,9 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
      * updates and map view redraws
      * @param debugProtocol tf non-<code>null</code>, write all protocol
      * commands to this writer
+     * @throws IOException if an internal error occurs
      */
-    public DefaultCrossfireServerConnection(final Object redrawSemaphore, final Writer debugProtocol)
+    public DefaultCrossfireServerConnection(final Object redrawSemaphore, final Writer debugProtocol) throws IOException
     {
         this.redrawSemaphore = redrawSemaphore;
         byteBuffer.order(ByteOrder.BIG_ENDIAN);
@@ -2320,10 +2321,6 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
     @Override
     public int sendNcom(final int repeat, final String command)
     {
-        if(!isConnected())
-        {
-            return 0;
-        }
         if (debugProtocol != null)
         {
             debugProtocolWrite("send ncom no="+packet+" repeat="+repeat+" cmd="+command+"\n");
@@ -2533,8 +2530,6 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
     @Override
     public void setMapSize(final int mapWidth, final int mapHeight)
     {
-        if (isConnected()) throw new IllegalStateException();
-
         validateMapSize(mapWidth, mapHeight);
         if (this.mapWidth == mapWidth && this.mapHeight == mapHeight)
         {
@@ -2553,7 +2548,6 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
     @Override
     public void setNumLookObjects(final int numLookObjects)
     {
-        if (isConnected()) throw new IllegalStateException();
         if (numLookObjects < 1) throw new IllegalArgumentException("num_look_objects is not positive");
         this.numLookObjects = numLookObjects;
     }
@@ -2772,10 +2766,10 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
 
     /** {@inheritDoc} */
     @Override
-    public void connect(final String hostname, final int port, final ConnectionListener connectionListener)
+    public void connect(final String hostname, final int port)
     {
         clientSocketState = ClientSocketState.CONNECTING;
-        super.connect(hostname, port, connectionListener);
+        super.connect(hostname, port);
     }
 
     /**
@@ -2794,6 +2788,6 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
             System.err.println("Warning: connection state is "+clientSocketState+" when switching to state "+nextState+", expecting state "+prevState);
         }
         clientSocketState = nextState;
-        connectionProgress(nextState); 
+        connectionProgress(nextState);
     }
 }

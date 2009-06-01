@@ -33,6 +33,20 @@ public class TestCrossfireServerConnection implements CrossfireServerConnection
 {
     /** {@inheritDoc} */
     @Override
+    public void start()
+    {
+        Assert.fail();
+    }
+
+    /** {@inheritDoc} */
+    @Override
+    public void stop() throws InterruptedException
+    {
+        Assert.fail();
+    }
+
+    /** {@inheritDoc} */
+    @Override
     public void addMapSizeListener(final MapSizeListener listener)
     {
         Assert.fail();
@@ -344,7 +358,14 @@ public class TestCrossfireServerConnection implements CrossfireServerConnection
 
     /** {@inheritDoc} */
     @Override
-    public void connect(final String hostname, final int port, final ConnectionListener connectionListener)
+    public void addConnectionListener(final ConnectionListener connectionListener)
+    {
+        throw new AssertionError();
+    }
+
+    /** {@inheritDoc} */
+    @Override
+    public void connect(final String hostname, final int port)
     {
         Assert.fail();
     }
@@ -354,14 +375,6 @@ public class TestCrossfireServerConnection implements CrossfireServerConnection
     public void disconnect()
     {
         Assert.fail();
-    }
-
-    /** {@inheritDoc} */
-    @Override
-    public boolean isConnected()
-    {
-        Assert.fail();
-        throw new AssertionError();
     }
 
     /** {@inheritDoc} */

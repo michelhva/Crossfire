@@ -99,45 +99,53 @@ public class JXClient
                             final MetaserverModel metaserverModel = new MetaserverModel();
                             final Object semaphoreRedraw = new Object();
                             final CrossfireServerConnection server = new DefaultCrossfireServerConnection(semaphoreRedraw, debugProtocolOutputStreamWriter);
-                            final JXCWindow window = new JXCWindow(terminateSync, server, semaphoreRedraw, options.isDebugGui(), debugKeyboardOutputStreamWriter, options.getPrefs(), optionManager, metaserverModel, options.getResolution());
-                            new Metaserver(Filenames.getMetaserverCacheFile(), metaserverModel, window);
-                            final SoundManager soundManager = new SoundManager(window);
+                            server.start();
                             try
                             {
-                                optionManager.addOption("sound_enabled", "Whether sound is enabled.", new SoundCheckBoxOption(soundManager));
-                            }
-                            catch (final OptionException ex)
-                            {
-                                throw new AssertionError();
-                            }
+                                final JXCWindow window = new JXCWindow(terminateSync, server, semaphoreRedraw, options.isDebugGui(), debugKeyboardOutputStreamWriter, options.getPrefs(), optionManager, metaserverModel, options.getResolution());
+                                new Metaserver(Filenames.getMetaserverCacheFile(), metaserverModel, window);
+                                final SoundManager soundManager = new SoundManager(window);
+                                try
+                                {
+                                    optionManager.addOption("sound_enabled", "Whether sound is enabled.", new SoundCheckBoxOption(soundManager));
+                                }
+                                catch (final OptionException ex)
+                                {
+                                    throw new AssertionError();
+                                }
 
-                            synchronized (terminateSync)
-                            {
+                                synchronized (terminateSync)
+                                {
+                                    SwingUtilities.invokeAndWait(new Runnable()
+                                    {
+                                        /** {@inheritDoc} */
+                                        @Override
+                                        public void run()
+                                        {
+                                            final Stats stats = window.getStats();
+                                            new MusicWatcher(server, soundManager);
+                                            new SoundWatcher(server, soundManager);
+                                            new StatsWatcher(stats, window.getGuiManager().getWindowRenderer(), window.getItemsManager(), soundManager);
+                                            window.init(options.getSkin(), options.isFullScreen(), options.getServer());
+                                        }
+                                    });
+                                    terminateSync.wait();
+                                }
                                 SwingUtilities.invokeAndWait(new Runnable()
                                 {
                                     /** {@inheritDoc} */
                                     @Override
                                     public void run()
                                     {
-                                        final Stats stats = window.getStats();
-                                        new MusicWatcher(server, soundManager);
-                                        new SoundWatcher(server, soundManager);
-                                        new StatsWatcher(stats, window.getGuiManager().getWindowRenderer(), window.getItemsManager(), soundManager);
-                                        window.init(options.getSkin(), options.isFullScreen(), options.getServer());
+                                        window.term();
+                                        soundManager.shutdown();
                                     }
                                 });
-                                terminateSync.wait();
                             }
-                            SwingUtilities.invokeAndWait(new Runnable()
+                            finally
                             {
-                                /** {@inheritDoc} */
-                                @Override
-                                public void run()
-                                {
-                                    window.term();
-                                    soundManager.shutdown();
-                                }
-                            });
+                                server.stop();
+                            }
                         }
                         finally
                         {

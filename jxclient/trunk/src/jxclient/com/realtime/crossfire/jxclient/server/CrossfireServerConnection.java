@@ -27,6 +27,17 @@ package com.realtime.crossfire.jxclient.server;
 public interface CrossfireServerConnection extends ServerConnection
 {
     /**
+     * Starts operation.
+     */
+    void start();
+
+    /**
+     * Stops operation.
+     * @throws InterruptedException if stopping was interrupted
+     */
+    void stop() throws InterruptedException;
+
+    /**
      * Adds a listener to be notified about map size changes.
      * @param listener the listener to add
      */

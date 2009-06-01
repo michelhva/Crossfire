@@ -29,21 +29,19 @@ public interface ServerConnection
      * Attempts to connect the client to a server.
      * @param hostname the hostname to connect to
      * @param port the port to connect to
-     * @param connectionListener the connection listener to notify about a
-     * broken connection
      */
-    void connect(String hostname, int port, ConnectionListener connectionListener);
+    void connect(String hostname, int port);
 
     /**
      * Disconnects from the server. Does nothing if not connected.
      */
     void disconnect();
 
-    /**
-     * Returns whether the socket is connected.
-     * @return whether the socket is connected
-     */
-    boolean isConnected();
-
     ScriptMonitorListeners getScriptMonitorListeners();
+
+    /**
+     * Adds a {@link ConnectionListener} to notify.
+     * @param connectionListener the connection listener to add
+     */
+    void addConnectionListener(ConnectionListener connectionListener);
 }

@@ -19,6 +19,8 @@
 //
 package com.realtime.crossfire.jxclient.server;
 
+import java.io.IOException;
+
 /**
  * One of the two most important classes, ServerConnection performs most of the
  * network-related work. It either decodes commands sent by the server itself,
@@ -30,11 +32,38 @@ package com.realtime.crossfire.jxclient.server;
  */
 public abstract class DefaultServerConnection implements PacketListener, ServerConnection
 {
-    private final Object clientSocketSem = new Object();
-
-    private ClientSocket clientSocket = null;
-
     private final ScriptMonitorListeners scriptMonitorListeners = new ScriptMonitorListeners();
+
+    private final ClientSocket clientSocket;
+
+    protected DefaultServerConnection() throws IOException
+    {
+        clientSocket = new ClientSocket(this, scriptMonitorListeners);
+    }
+
+    /**
+     * Starts operation.
+     */
+    public void start()
+    {
+        clientSocket.start();
+    }
+
+    /**
+     * Stops operation.
+     * @throws InterruptedException if stopping was interrupted
+     */
+    public void stop() throws InterruptedException
+    {
+        clientSocket.stop();
+    }
+
+    /** {@inheritDoc} */
+    @Override
+    public void addConnectionListener(final ConnectionListener connectionListener)
+    {
+        clientSocket.addConnectionListener(connectionListener);
+    }
 
     /**
      * Writes a Crossfire Message on the socket, so it is sent to the server.
@@ -45,54 +74,21 @@ public abstract class DefaultServerConnection implements PacketListener, ServerC
      */
     protected void writePacket(final byte[] packet, final int length)
     {
-        synchronized (clientSocketSem)
-        {
-            if (clientSocket != null)
-            {
-                clientSocket.writePacket(packet, length);
-            }
-        }
+        clientSocket.writePacket(packet, length);
     }
 
     /** {@inheritDoc} */
     @Override
-    public void connect(final String hostname, final int port, final ConnectionListener connectionListener)
+    public void connect(final String hostname, final int port)
     {
-        synchronized (clientSocketSem)
-        {
-            if (clientSocket != null)
-            {
-                clientSocket.disconnect();
-            }
-
-            clientSocket = new ClientSocket(hostname, port, this, scriptMonitorListeners, connectionListener);
-            clientSocket.connectionProgress(ClientSocketState.CONNECTING);
-            clientSocket.start();
-        }
+        clientSocket.connect(hostname, port);
     }
 
     /** {@inheritDoc} */
     @Override
     public void disconnect()
     {
-        synchronized (clientSocketSem)
-        {
-            if (clientSocket != null)
-            {
-                clientSocket.disconnect();
-                clientSocket = null;
-            }
-        }
-    }
-
-    /** {@inheritDoc} */
-    @Override
-    public boolean isConnected()
-    {
-        synchronized (clientSocketSem)
-        {
-            return clientSocket != null;
-        }
+        clientSocket.disconnect();
     }
 
     /** {@inheritDoc} */
@@ -108,14 +104,6 @@ public abstract class DefaultServerConnection implements PacketListener, ServerC
      */
     protected void connectionProgress(final ClientSocketState clientSocketState)
     {
-        final ClientSocket socket;
-        synchronized (clientSocketSem)
-        {
-            socket = clientSocket;
-        }
-        if (socket != null)
-        {
-            socket.connectionProgress(clientSocketState);
-        }
+        clientSocket.connectionProgress(clientSocketState);
     }
 }
