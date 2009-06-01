@@ -288,7 +288,7 @@ public class JXCWindow extends JFrame
         @Override
         public void connecting()
         {
-            // ignore
+            setConnected(true);
         }
 
         /** {@inheritDoc} */
@@ -457,7 +457,6 @@ public class JXCWindow extends JFrame
         {
             synchronized (semaphoreDrawing)
             {
-                setConnected(true);
                 guiManager.openQueryDialog(prompt, queryType);
             }
         }
@@ -817,7 +816,6 @@ public class JXCWindow extends JFrame
 
     public void sendReply(final String reply)
     {
-        setConnected(true);
         server.sendReply(reply);
         guiManager.closeQueryDialog();
     }
