@@ -30,6 +30,7 @@ import java.nio.channels.Selector;
 import java.nio.channels.SocketChannel;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Set;
 
 /**
  * A socket that processes incoming data.
@@ -298,11 +299,16 @@ public class ClientSocket
                 }
 
                 selector.select();
-                if (isConnected)
+                final Set<SelectionKey> selectedKeys = selector.selectedKeys();
+                if (selectedKeys.remove(selectionKey))
                 {
-                    processRead();
-                    processWrite();
+                    if (isConnected)
+                    {
+                        processRead();
+                        processWrite();
+                    }
                 }
+                assert selectedKeys.isEmpty();
             }
             catch (final IOException ex)
             {
