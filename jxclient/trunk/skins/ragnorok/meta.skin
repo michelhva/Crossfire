@@ -29,4 +29,5 @@ key code DOWN      0 exec command_metanext
 key code KP_DOWN   0 exec command_metanext
 key code PAGE_UP   0 exec command_metapageup
 key code PAGE_DOWN 0 exec command_metapagedown
-key code ENTER     0 exec command_metaconnect
+key char 10        exec command_metaconnect
+key char 13        exec command_metaconnect
