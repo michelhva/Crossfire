@@ -82,3 +82,63 @@ name depression
 face slevel_F.111
 no_pick 1
 end
+Object dlevel_Bse
+name depression
+face dlevel_Bse.111
+no_pick 1
+end
+Object dlevel_Dse
+name depression
+face dlevel_Dse.111
+no_pick 1
+end
+Object dlevel_se
+name depression
+face dlevel_se.111
+no_pick 1
+end
+Object dlevel_seB
+name depression
+face dlevel_seB.111
+no_pick 1
+end
+Object dlevel_seD
+name depression
+face dlevel_seD.111
+no_pick 1
+end
+Object dlevel_sese
+name depression
+face dlevel_sese.111
+no_pick 1
+end
+Object dlevel_7sw
+name depression
+face dlevel_7sw.111
+no_pick 1
+end
+Object dlevel_Bsw
+name depression
+face dlevel_Bsw.111
+no_pick 1
+end
+Object dlevel_sw
+name depression
+face dlevel_sw.111
+no_pick 1
+end
+Object dlevel_sw7
+name depression
+face dlevel_sw7.111
+no_pick 1
+end
+Object dlevel_swB
+name depression
+face dlevel_swB.111
+no_pick 1
+end
+Object dlevel_swsw
+name depression
+face dlevel_swsw.111
+no_pick 1
+end
