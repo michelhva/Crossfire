@@ -1,5 +1,49 @@
 Changes for SVN top of tree:
 
+wall/slevel/dlevel_0.base.111.png
+wall/slevel/dlevel_1.base.111.png
+wall/slevel/dlevel_2.base.111.png
+wall/slevel/dlevel_3.base.111.png
+wall/slevel/dlevel_4.base.111.png
+wall/slevel/dlevel_5.base.111.png
+wall/slevel/dlevel_6.base.111.png
+wall/slevel/dlevel_7.base.111.png
+wall/slevel/dlevel_9.base.111.png: fixed discolored pixels.
+Kevin Bulgrien 2009-06-01
+
+wall/slevel/dlevel_7sw.base.111.png
+wall/slevel/dlevel_7sw.face
+wall/slevel/dlevel_Bse.base.111.png
+wall/slevel/dlevel_Bse.face
+wall/slevel/dlevel_Bsw.base.111.png
+wall/slevel/dlevel_Bsw.face
+wall/slevel/dlevel_Dse.base.111.png
+wall/slevel/dlevel_Dse.face
+wall/slevel/dlevel_se.base.111.png
+wall/slevel/dlevel_se.face
+wall/slevel/dlevel_seB.base.111.png
+wall/slevel/dlevel_seB.face
+wall/slevel/dlevel_seD.base.111.png
+wall/slevel/dlevel_seD.face
+wall/slevel/dlevel_sese.base.111.png
+wall/slevel/dlevel_sese.face
+wall/slevel/dlevel_sw.base.111.png
+wall/slevel/dlevel_sw.face
+wall/slevel/dlevel_sw7.base.111.png
+wall/slevel/dlevel_sw7.face
+wall/slevel/dlevel_swB.base.111.png
+wall/slevel/dlevel_swB.face
+wall/slevel/dlevel_swsw.base.111.png
+wall/slevel/dlevel_swsw.face
+wall/slevel/dlevel.arc: Add new depression graphics to support drawing of
+  diagonal channels.  These arches support the south edges of the diagonal
+  channels.  Additional tiles are needed for the north edges.  The idea behind
+  these graphics are to allow depressions to contain rivers or lava streams
+  that are flowing in diagonal directions.  Another idea is to make slots that
+  rolling boulders could follow.  A map is being developed that uses these
+  graphics.
+Kevin Bulgrien 2009-06-01
+
 food/fish.arc: Make the item fishing_pole work (this item is not found on any
 map currently). The fish in shallow_sea inventory didn't have harvestable set.
 Arvid Norlander 2009-03-04
