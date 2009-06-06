@@ -50,7 +50,7 @@ public class BindCommand extends AbstractCommand
     /**
      * The {@link Macros} instance to use.
      */
-    private Macros macros;
+    private final Macros macros;
 
     /**
      * Creates a new instance.
