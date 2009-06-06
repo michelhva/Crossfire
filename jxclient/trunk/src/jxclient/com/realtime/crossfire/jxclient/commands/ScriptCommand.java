@@ -23,8 +23,7 @@ import com.realtime.crossfire.jxclient.scripts.ScriptManager;
 import com.realtime.crossfire.jxclient.server.CrossfireServerConnection;
 
 /**
- * Implements a "script" command. It runs a new script.
- *
+ * Implements the "script" command. It runs a new script.
  * @author Andreas Kirschbaum
  */
 public class ScriptCommand extends AbstractCommand

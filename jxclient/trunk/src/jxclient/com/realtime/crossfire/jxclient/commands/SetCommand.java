@@ -26,8 +26,7 @@ import com.realtime.crossfire.jxclient.settings.options.OptionManager;
 import com.realtime.crossfire.jxclient.util.Patterns;
 
 /**
- * Implements the command "set". It allows settings options.
- *
+ * Implements the command "set". It changes settings options.
  * @author Andreas Kirschbaum
  */
 public class SetCommand extends AbstractCommand
@@ -38,10 +37,8 @@ public class SetCommand extends AbstractCommand
     private final OptionManager optionManager;
 
     /**
-     * Create a new instance.
-     *
+     * Creates a new instance.
      * @param crossfireServerConnection the connection instance
-     *
      * @param optionManager the option manager to use
      */
     protected SetCommand(final CrossfireServerConnection crossfireServerConnection, final OptionManager optionManager)
