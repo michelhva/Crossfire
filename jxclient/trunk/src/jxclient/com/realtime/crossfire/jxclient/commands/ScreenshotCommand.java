@@ -65,7 +65,7 @@ public class ScreenshotCommand extends AbstractCommand
      * @param windowRenderer the renderer to use
      * @param crossfireServerConnection the connection instance
      */
-    protected ScreenshotCommand(final JXCWindow window, final JXCWindowRenderer windowRenderer, final CrossfireServerConnection crossfireServerConnection)
+    public ScreenshotCommand(final JXCWindow window, final JXCWindowRenderer windowRenderer, final CrossfireServerConnection crossfireServerConnection)
     {
         super(crossfireServerConnection);
         this.window = window;

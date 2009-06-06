@@ -40,7 +40,7 @@ public class ExecCommand extends AbstractCommand
      * @param guiManager the gui manager for looking up commands
      * @param crossfireServerConnection the connection instance
      */
-    protected ExecCommand(final GuiManager guiManager, final CrossfireServerConnection crossfireServerConnection)
+    public ExecCommand(final GuiManager guiManager, final CrossfireServerConnection crossfireServerConnection)
     {
         super(crossfireServerConnection);
         this.guiManager = guiManager;

@@ -60,7 +60,7 @@ public class BindCommand extends AbstractCommand
      * @param guiManager the gui manager to use
      * @param macros the macros instance to use
      */
-    protected BindCommand(final JXCWindow window, final CrossfireServerConnection crossfireServerConnection, final Commands commands, final GuiManager guiManager, final Macros macros)
+    public BindCommand(final JXCWindow window, final CrossfireServerConnection crossfireServerConnection, final Commands commands, final GuiManager guiManager, final Macros macros)
     {
         super(crossfireServerConnection);
         this.window = window;

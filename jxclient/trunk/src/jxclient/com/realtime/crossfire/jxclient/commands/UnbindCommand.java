@@ -38,7 +38,7 @@ public class UnbindCommand extends AbstractCommand
      * @param window the window to execute in
      * @param crossfireServerConnection the connection instance
      */
-    protected UnbindCommand(final JXCWindow window, final CrossfireServerConnection crossfireServerConnection)
+    public UnbindCommand(final JXCWindow window, final CrossfireServerConnection crossfireServerConnection)
     {
         super(crossfireServerConnection);
         this.window = window;

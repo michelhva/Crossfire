@@ -38,7 +38,7 @@ public class ScriptCommand extends AbstractCommand
      * @param scriptManager the script manager to use
      * @param crossfireServerConnection the connection instance
      */
-    protected ScriptCommand(final ScriptManager scriptManager, final CrossfireServerConnection crossfireServerConnection)
+    public ScriptCommand(final ScriptManager scriptManager, final CrossfireServerConnection crossfireServerConnection)
     {
         super(crossfireServerConnection);
         this.scriptManager = scriptManager;

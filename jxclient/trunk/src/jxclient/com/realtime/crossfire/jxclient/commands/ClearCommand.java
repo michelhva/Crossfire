@@ -39,7 +39,7 @@ public class ClearCommand extends AbstractCommand
      * @param windowRenderer the window renderer to affect
      * @param crossfireServerConnection the connection instance
      */
-    protected ClearCommand(final JXCWindowRenderer windowRenderer, final CrossfireServerConnection crossfireServerConnection)
+    public ClearCommand(final JXCWindowRenderer windowRenderer, final CrossfireServerConnection crossfireServerConnection)
     {
         super(crossfireServerConnection);
         this.windowRenderer = windowRenderer;
