@@ -1022,6 +1022,11 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
                         if (packet[pos++] != ' ') break;
                         args = pos;
 
+                        final boolean widthSign = packet[pos] == '-';
+                        if (widthSign)
+                        {
+                            pos++;
+                        }
                         int width = 0;
                         do
                         {
@@ -1029,7 +1034,16 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
                         }
                         while (packet[pos] != ' ');
                         pos++;
+                        if (widthSign)
+                        {
+                            width = -width;
+                        }
 
+                        final boolean heightSign = packet[pos] == '-';
+                        if (heightSign)
+                        {
+                            pos++;
+                        }
                         int height = 0;
                         do
                         {
@@ -1037,7 +1051,16 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
                         }
                         while (packet[pos] != ' ');
                         pos++;
+                        if (heightSign)
+                        {
+                            height = -height;
+                        }
 
+                        final boolean pxSign = packet[pos] == '-';
+                        if (pxSign)
+                        {
+                            pos++;
+                        }
                         int px = 0;
                         do
                         {
@@ -1045,7 +1068,16 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
                         }
                         while (packet[pos] != ' ');
                         pos++;
+                        if (pxSign)
+                        {
+                            px = -px;
+                        }
 
+                        final boolean pySign = packet[pos] == '-';
+                        if (pySign)
+                        {
+                            pos++;
+                        }
                         int py = 0;
                         do
                         {
@@ -1053,6 +1085,10 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
                         }
                         while (packet[pos] != ' ');
                         pos++;
+                        if (pySign)
+                        {
+                            py = -py;
+                        }
 
                         if (debugProtocol != null)
                         {
