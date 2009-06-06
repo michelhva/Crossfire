@@ -24,7 +24,7 @@ import com.realtime.crossfire.jxclient.server.CrossfireServerConnection;
 import com.realtime.crossfire.jxclient.window.JXCWindowRenderer;
 
 /**
- * Implements the command "clear". It clears all text windows.
+ * Implements the command "clear". It clears the active message window.
  * @author Andreas Kirschbaum
  */
 public class ClearCommand extends AbstractCommand
@@ -35,21 +35,14 @@ public class ClearCommand extends AbstractCommand
     private final JXCWindowRenderer windowRenderer;
 
     /**
-     * The {@link Buffer} instances to clear.
-     */
-    private final Buffer[] buffers;
-
-    /**
      * Creates a new instance.
      * @param windowRenderer the window renderer to affect
      * @param crossfireServerConnection the connection instance
-     * @param buffers the buffers to clear
      */
-    protected ClearCommand(final JXCWindowRenderer windowRenderer, final CrossfireServerConnection crossfireServerConnection, final Buffer... buffers)
+    protected ClearCommand(final JXCWindowRenderer windowRenderer, final CrossfireServerConnection crossfireServerConnection)
     {
         super(crossfireServerConnection);
         this.windowRenderer = windowRenderer;
-        this.buffers = buffers.clone();
     }
 
     /** {@inheritDoc} */
