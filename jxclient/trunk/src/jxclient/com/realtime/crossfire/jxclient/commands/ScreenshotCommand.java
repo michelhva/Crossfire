@@ -38,6 +38,12 @@ import javax.imageio.ImageIO;
 public class ScreenshotCommand extends AbstractCommand
 {
     /**
+     * The number of auto-created screenshot filenames. If more than this
+     * number of screenshots are created, old files will be recycled.
+     */
+    private static final int SCREENSHOT_FILENAMES = 10;
+
+    /**
      * A number for creating screenshot file names. It is incremented for each
      * scrrenshot.
      */
@@ -89,7 +95,7 @@ public class ScreenshotCommand extends AbstractCommand
                 drawInfoError("Failed to create screenshot filename: "+ex.getMessage());
                 return;
             }
-            screenshotId = (screenshotId+1)%10;
+            screenshotId = (screenshotId+1)%SCREENSHOT_FILENAMES;
         }
         else
         {
