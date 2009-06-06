@@ -58,6 +58,26 @@ public class MessageBufferUpdater
     };
 
     /**
+     * The colors names corresponding to {@link #colors}.
+     */
+    private static final String[] COLOR_NAMES =
+    {
+        "black",
+        "white",
+        "navy blue",
+        "red",
+        "orange",
+        "dodger blue",
+        "dark orange",
+        "sea green",
+        "dark sea green",
+        "grey",
+        "brown sienna",
+        "gold",
+        "khaki",
+    };
+
+    /**
      * The {@link CrossfireServerConnection} to monitor.
      */
     private final CrossfireServerConnection crossfireServerConnection;
@@ -195,6 +215,23 @@ public class MessageBufferUpdater
         catch (final ArrayIndexOutOfBoundsException ex)
         {
             return defaultColor;
+        }
+    }
+
+    /**
+     * Returns the name of a color index.
+     * @param index the color index
+     * @return the color name
+     */
+    public static String getColorName(final int index)
+    {
+        try
+        {
+            return COLOR_NAMES[index];
+        }
+        catch (final ArrayIndexOutOfBoundsException ex)
+        {
+            return "undefined";
         }
     }
 
