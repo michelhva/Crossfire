@@ -37,6 +37,10 @@ import javax.imageio.ImageIO;
  */
 public class ScreenshotCommand extends AbstractCommand
 {
+    /**
+     * A number for creating screenshot file names. It is incremented for each
+     * scrrenshot.
+     */
     private static int screenshotId = 0;
 
     /**
