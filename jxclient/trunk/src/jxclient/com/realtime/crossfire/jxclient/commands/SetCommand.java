@@ -41,7 +41,7 @@ public class SetCommand extends AbstractCommand
      * @param crossfireServerConnection the connection instance
      * @param optionManager the option manager to use
      */
-    protected SetCommand(final CrossfireServerConnection crossfireServerConnection, final OptionManager optionManager)
+    public SetCommand(final CrossfireServerConnection crossfireServerConnection, final OptionManager optionManager)
     {
         super(crossfireServerConnection);
         this.optionManager = optionManager;
