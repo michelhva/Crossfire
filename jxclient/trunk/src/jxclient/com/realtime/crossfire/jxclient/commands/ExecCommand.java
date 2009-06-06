@@ -25,8 +25,7 @@ import com.realtime.crossfire.jxclient.window.GUICommandList;
 import com.realtime.crossfire.jxclient.window.GuiManager;
 
 /**
- * Implements a "script" command. It runs a new script.
- *
+ * Implements the "exec" command. It runs a skin command.
  * @author Andreas Kirschbaum
  */
 public class ExecCommand extends AbstractCommand
@@ -37,10 +36,8 @@ public class ExecCommand extends AbstractCommand
     private final GuiManager guiManager;
 
     /**
-     * Create a new instance.
-     *
+     * Creates a new instance.
      * @param guiManager the gui manager for looking up commands
-     *
      * @param crossfireServerConnection the connection instance
      */
     protected ExecCommand(final GuiManager guiManager, final CrossfireServerConnection crossfireServerConnection)

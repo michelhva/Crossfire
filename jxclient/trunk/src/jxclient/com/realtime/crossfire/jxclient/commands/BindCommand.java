@@ -27,8 +27,7 @@ import com.realtime.crossfire.jxclient.window.GuiManager;
 import com.realtime.crossfire.jxclient.window.JXCWindow;
 
 /**
- * Implements a "bind" command. It associates a key with a command.
- *
+ * Implements the "bind" command. It associates a key with a command.
  * @author Andreas Kirschbaum
  */
 public class BindCommand extends AbstractCommand
@@ -54,16 +53,11 @@ public class BindCommand extends AbstractCommand
     private Macros macros;
 
     /**
-     * Create a new instance.
-     *
-     * @param window The window to execute in.
-     *
+     * Creates a new instance.
+     * @param window the window to execute in
      * @param crossfireServerConnection the connection instance
-     *
      * @param commands the commands instance for executing commands
-     *
      * @param guiManager the gui manager to use
-     *
      * @param macros the macros instance to use
      */
     protected BindCommand(final JXCWindow window, final CrossfireServerConnection crossfireServerConnection, final Commands commands, final GuiManager guiManager, final Macros macros)
