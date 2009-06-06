@@ -136,6 +136,7 @@ public class KeyBindings
      */
     private void addKeyBinding(final KeyBinding keyBinding)
     {
+        keybindings.remove(keyBinding);
         keybindings.add(keyBinding);
         modified = true;
     }
