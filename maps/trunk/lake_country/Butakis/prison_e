@@ -7,7 +7,7 @@ height 16
 enter_y 14
 msg
 Created:  1995-03-29 Kundi, Xue (xkd@soda.berkeley.edu)
-Modified: 2008-12-01 Rick Tanner
+Modified: 2009-06-07 Andreas Kirschbaum
 endmsg
 end
 arch dungeon_floor
@@ -1829,11 +1829,10 @@ speed 0.000000
 invisible 1
 connected 37
 end
-arch button_small
-face button_sma.112
+arch detector
+slaying Twis
 x 12
 y 12
-value 1
 connected 35
 end
 arch magic_ear
@@ -1913,7 +1912,6 @@ carrying 5000
 move_type walk
 monster 1
 unaggressive 1
-unique 1
 can_cast_spell 1
 can_use_scroll 1
 arch spell_fear
