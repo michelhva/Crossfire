@@ -8,7 +8,7 @@ other_arch spell_restoration
 level 1
 value 10000000
 animation gu_horn
-speed 0.3
+speed 0.005
 type 35
 material 2
 weight 5000
