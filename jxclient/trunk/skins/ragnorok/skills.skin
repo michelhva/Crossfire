@@ -53,18 +53,21 @@ gauge     act_jeweler        189  70 166  16 skill_active null skill_inactive AC
 gauge     act_woodsman       189  90 166  16 skill_active null skill_inactive ACTIVE_SKILL_woodsman WE
 gauge     act_thaumaturgy    189 110 166  16 skill_active null skill_inactive ACTIVE_SKILL_thaumaturgy WE
 gauge     act_literacy       189 130 166  16 skill_active null skill_inactive ACTIVE_SKILL_literacy WE
+gauge     act_alchemy        189 150 166  16 skill_active null skill_inactive ACTIVE_SKILL_alchemy WE
 label_text label_smithery    190  30  90  16 font_label BLACK Smithery:
 label_text label_bowyer      190  50  90  16 font_label BLACK Bowyer:
 label_text label_jeweler     190  70  90  16 font_label BLACK Jeweler:
 label_text label_woodsman    190  90  90  16 font_label BLACK Woodsman:
 label_text label_thaumaturgy 190 110  90  16 font_label BLACK Thaumaturgy:
 label_text label_literacy    190 130  90  16 font_label BLACK Literacy:
+label_text label_alchemy     190 150  90  16 font_label BLACK Alchemy:
 textgauge res_smithery       280  31  74  14 gauge_gp gauge_gp_negative gauge_empty SKILL_smithery WE BLACK font_label Smithery:
 textgauge res_bowyer         280  51  74  14 gauge_gp gauge_gp_negative gauge_empty SKILL_bowyer WE BLACK font_label Bowyer:
 textgauge res_jeweler        280  71  74  14 gauge_gp gauge_gp_negative gauge_empty SKILL_jeweler WE BLACK font_label Jeweler:
 textgauge res_woodsman       280  91  74  14 gauge_gp gauge_gp_negative gauge_empty SKILL_woodsman WE BLACK font_label Woodsman:
 textgauge res_thaumaturgy    280 111  74  14 gauge_gp gauge_gp_negative gauge_empty SKILL_thaumaturgy WE BLACK font_label Thaumaturgy:
 textgauge res_literacy       280 131  74  14 gauge_gp gauge_gp_negative gauge_empty SKILL_literacy WE BLACK font_label Literacy:
+textgauge res_alchemy        280 151  74  14 gauge_gp gauge_gp_negative gauge_empty SKILL_alchemy WE BLACK font_label Alchemy:
 
 # identify/detection group
 gauge     act_sense_magic    189 200 166  16 skill_active null skill_inactive ACTIVE_SKILL_sense_magic WE
@@ -248,6 +251,12 @@ commandlist res_literacy_hide AND res_literacy HIDE
 event init res_literacy_hide
 event skill add literacy res_literacy_show
 event skill del literacy res_literacy_hide
+
+commandlist res_alchemy_show AND res_alchemy SHOW
+commandlist res_alchemy_hide AND res_alchemy HIDE
+event init res_alchemy_hide
+event skill add alchemy res_alchemy_show
+event skill del alchemy res_alchemy_hide
 
 commandlist res_sense_magic_show AND res_sense_magic SHOW
 commandlist res_sense_magic_hide AND res_sense_magic HIDE
