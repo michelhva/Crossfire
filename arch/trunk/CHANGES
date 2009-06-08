@@ -1,5 +1,9 @@
 Changes for SVN top of tree:
 
+Replace obsolete attributes can_use_rod, can_use_wand, and can_use_horn with
+can_use_range.
+Andreas Kirschbaum 2009-06-09
+
 monster/animal/farmyard/horse.arc
 monster/animal/farmyard/horse.face
 monster/animal/farmyard/horse.base.131.png

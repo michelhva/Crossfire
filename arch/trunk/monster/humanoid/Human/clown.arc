@@ -31,7 +31,7 @@ reflect_spell 1
 reflect_missile 1
 level 10
 can_use_skill 1
-can_use_rod 1
+can_use_range 1
 can_use_bow 1
 can_use_ring 1
 can_use_shield 1
@@ -40,7 +40,6 @@ can_use_weapon 1
 can_use_scroll 1
 can_cast_spell 1
 can_use_skill 1
-can_use_horn 1
 body_skill 1
 body_finger 2
 body_torso 1

@@ -25,7 +25,7 @@ weight 30000
 level 3
 will_apply 2
 pick_up 24
-can_use_rod 1
+can_use_range 1
 can_use_skill 1
 can_cast_spell 1
 can_use_bow 1

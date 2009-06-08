@@ -41,7 +41,7 @@ weight 30000000
 run_away 5
 can_use_weapon 1
 can_use_bow 1
-can_use_rod 1
+can_use_range 1
 can_use_skill 1
 body_skill 1
 body_arm 2

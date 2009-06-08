@@ -40,8 +40,7 @@ can_use_weapon 1
 can_use_shield 1
 can_use_armour 1
 can_use_bow 1
-can_use_rod 1
-can_use_horn 1
+can_use_range 1
 can_use_ring 1
 can_use_scroll 1
 body_skill 1
