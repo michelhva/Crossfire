@@ -26,7 +26,7 @@ level 7
 weight 100000
 attack_movement 7
 can_use_scroll 1
-can_use_rod 1
+can_use_range 1
 can_cast_spell 1
 can_use_shield 1
 can_use_armour 1

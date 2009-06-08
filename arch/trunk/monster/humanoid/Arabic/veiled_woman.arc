@@ -20,7 +20,7 @@ level 1
 speed -0.15
 weight 100000
 unaggressive 1
-can_use_rod 1
+can_use_range 1
 can_use_skill 1
 can_use_weapon 1
 can_use_shield 1

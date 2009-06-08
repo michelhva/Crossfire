@@ -22,7 +22,7 @@ speed 0.3
 weight 50000
 level 1
 can_use_skill 1
-can_use_rod 1
+can_use_range 1
 can_use_ring 1
 body_skill 1
 body_finger 2

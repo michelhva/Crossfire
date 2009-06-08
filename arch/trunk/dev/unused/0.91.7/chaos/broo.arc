@@ -22,7 +22,7 @@ will_apply 2
 pick_up 50
 can_apply 20
 can_use_scroll 1
-can_use_wand 1
+can_use_range 1
 can_use_bow 1
 can_use_ring 1
 can_use_armour 1

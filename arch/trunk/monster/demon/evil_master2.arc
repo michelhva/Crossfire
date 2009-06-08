@@ -42,7 +42,7 @@ can_use_bow 1
 can_use_ring 1
 sleep 1
 can_use_skill 1
-can_use_rod 1
+can_use_range 1
 body_finger 2
 body_skill 1
 body_arm 2
