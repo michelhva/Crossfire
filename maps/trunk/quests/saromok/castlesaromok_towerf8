@@ -732,7 +732,7 @@ reflect_missile 1
 reflect_spell 1
 stand_still 1
 can_see_in_dark 1
-can_use_wand 1
+can_use_range 1
 arch key2
 name Floor 9 Key
 slaying castlesaromok_f9
@@ -834,7 +834,7 @@ can_cast_spell 0
 stand_still 1
 can_see_in_dark 1
 use_content_on_gen 1
-can_use_wand 1
+can_use_range 1
 arch zombie
 name Summoned Zombie
 msg
