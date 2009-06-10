@@ -9,7 +9,7 @@ level 1
 value 10000000
 animation gu_horn
 speed 0.005
-type 35
+type 3
 material 2
 weight 5000
 msg
