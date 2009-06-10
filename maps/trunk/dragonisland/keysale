@@ -444,7 +444,7 @@ end
 arch altar
 name pay 5000 food to get key
 msg
-Pay 5000 food for the key house by the southern wel
+Pay 5000 food for the key house by the southern well.
 endmsg
 food 5000
 x 4
@@ -491,8 +491,7 @@ arch altar
 name pay 500 diamonds to get key
 slaying diamond
 msg
-Pay 500 diamonds to get the key for a
-little house
+Pay 500 diamonds to get the key for a little house.
 endmsg
 food 500
 x 4
@@ -655,8 +654,7 @@ arch altar
 name pay 1500 diamonds to get key
 slaying diamond
 msg
-Pay 1500 diamonds for the key to the
-luxory mano
+Pay 1500 diamonds for the key to the luxory manor.
 endmsg
 food 1500
 x 6
@@ -710,10 +708,7 @@ end
 arch sign
 name explanation sign
 msg
-In this house, you can buy keys. These
-key are unique and will open the
-special doors to which others will
-have no access.
+In this house, you can buy keys. These key are unique and will open the special doors to which others will have no access.
 endmsg
 x 6
 y 13
@@ -966,8 +961,7 @@ arch altar
 name pay 3000 diamonds to get key
 slaying diamond
 msg
-Pay 3000 diamonds to get the key for
-the manor by the northern well.
+Pay 3000 diamonds to get the key for the manor by the northern well.
 endmsg
 food 3000
 x 9
@@ -1008,9 +1002,7 @@ msg
 @match Hello|Hallo|Hi|greet|Greetings
 My Greetings to you!
 @match *
-Get yourself a key here. They are for
-different houses and rooms here in
-Stoneville.
+Get yourself a key here. They are for different houses and rooms here in Stoneville.
 endmsg
 x 9
 y 11
