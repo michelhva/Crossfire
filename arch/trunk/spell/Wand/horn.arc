@@ -2,7 +2,7 @@ Object horn
 nrof 1
 face horn.111
 speed 0.1
-type 35
+type 3
 level 1
 value 5800
 weight 4500
