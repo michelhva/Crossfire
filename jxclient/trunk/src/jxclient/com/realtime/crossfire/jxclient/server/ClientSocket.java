@@ -29,6 +29,7 @@ import java.nio.channels.SelectableChannel;
 import java.nio.channels.SelectionKey;
 import java.nio.channels.Selector;
 import java.nio.channels.SocketChannel;
+import java.nio.channels.UnresolvedAddressException;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Set;
@@ -254,7 +255,7 @@ public class ClientSocket
                     if (reconnect)
                     {
                         reconnect = false;
-                        processDisconnect();
+                        processDisconnect("reconnect");
                         if (host != null && port != 0)
                         {
                             processConnect(host, port);
@@ -318,7 +319,7 @@ public class ClientSocket
             }
             catch (final IOException ex)
             {
-                processDisconnect();
+                processDisconnect(ex.getMessage());
             }
         }
     }
@@ -351,6 +352,10 @@ public class ClientSocket
                 {
                     isConnected = socketChannel.connect(socketAddress);
                 }
+                catch (final UnresolvedAddressException ex)
+                {
+                    throw new IOException("Cannot resolve address: "+socketAddress, ex);
+                }
                 catch (final IllegalArgumentException ex)
                 {
                     throw new IOException(ex.getMessage(), ex);
@@ -374,8 +379,9 @@ public class ClientSocket
 
     /**
      * Disconnects the socket. Does nothing if not currently connected.
+     * @param reason the reason for disconnection
      */
-    private void processDisconnect()
+    private void processDisconnect(final String reason)
     {
         final boolean notifyListeners;
         synchronized (syncOutput)
@@ -387,7 +393,7 @@ public class ClientSocket
         {
             for (final ClientSocketListener clientSocketListener : clientSocketListeners)
             {
-                clientSocketListener.disconnecting();
+                clientSocketListener.disconnecting(reason);
             }
         }
 
@@ -429,7 +435,7 @@ public class ClientSocket
             {
                 for (final ClientSocketListener clientSocketListener : clientSocketListeners)
                 {
-                    clientSocketListener.disconnected();
+                    clientSocketListener.disconnected(reason);
                 }
             }
         }

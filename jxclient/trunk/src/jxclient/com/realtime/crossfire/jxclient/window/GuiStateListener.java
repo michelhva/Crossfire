@@ -55,6 +55,7 @@ public interface GuiStateListener
 
     /**
      * An connection attempt failed.
+     * @param reason the failure reason
      */
-    void connectFailed();
+    void connectFailed(String reason);
 }

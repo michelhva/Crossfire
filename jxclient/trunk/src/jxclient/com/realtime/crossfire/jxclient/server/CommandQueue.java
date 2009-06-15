@@ -133,7 +133,7 @@ public class CommandQueue
 
         /** {@inheritDoc} */
         @Override
-        public void connectFailed()
+        public void connectFailed(final String reason)
         {
             // ignore
         }

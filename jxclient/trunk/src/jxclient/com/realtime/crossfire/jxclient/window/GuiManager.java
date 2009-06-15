@@ -272,7 +272,7 @@ public class GuiManager
             if (dialogConnect != null)
             {
                 windowRenderer.openDialog(dialogConnect, false);
-                updateConnectLabel(ClientSocketState.CONNECTING);
+                updateConnectLabel(ClientSocketState.CONNECTING, null);
             }
         }
 
@@ -280,7 +280,7 @@ public class GuiManager
         @Override
         public void connecting(final ClientSocketState clientSocketState)
         {
-            updateConnectLabel(clientSocketState);
+            updateConnectLabel(clientSocketState, null);
         }
 
         /** {@inheritDoc} */
@@ -295,12 +295,12 @@ public class GuiManager
 
         /** {@inheritDoc} */
         @Override
-        public void connectFailed()
+        public void connectFailed(final String reason)
         {
             if (dialogConnect != null)
             {
                 windowRenderer.openDialog(dialogConnect, false);
-                updateConnectLabel(ClientSocketState.CONNECT_FAILED);
+                updateConnectLabel(ClientSocketState.CONNECT_FAILED, reason);
             }
         }
     };
@@ -821,8 +821,9 @@ public class GuiManager
      * the dialog is not open, does not exist, or if the dialog does not
      * define a "message" field.
      * @param clientSocketState the client socket state
+     * @param param a parameter to display
      */
-    private void updateConnectLabel(final ClientSocketState clientSocketState)
+    private void updateConnectLabel(final ClientSocketState clientSocketState, final String param)
     {
         if (dialogConnectLabel != null)
         {
@@ -854,7 +855,7 @@ public class GuiManager
                 break;
 
             case CONNECT_FAILED:
-                message = "Cannot connect to Crossfire server.";
+                message = "Cannot connect to Crossfire server:\n"+param;
                 break;
             }
 

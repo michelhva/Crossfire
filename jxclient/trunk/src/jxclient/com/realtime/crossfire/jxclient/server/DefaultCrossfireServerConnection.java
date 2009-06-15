@@ -281,14 +281,14 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
 
         /** {@inheritDoc} */
         @Override
-        public void disconnecting()
+        public void disconnecting(final String reason)
         {
             // ignore
         }
 
         /** {@inheritDoc} */
         @Override
-        public void disconnected()
+        public void disconnected(final String reason)
         {
             // ignore
         }
