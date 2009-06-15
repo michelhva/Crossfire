@@ -314,17 +314,17 @@ public class JXCWindow extends JFrame
 
         /** {@inheritDoc} */
         @Override
-        public void disconnecting()
+        public void disconnecting(final String reason)
         {
             if (getGuiState() == GuiState.CONNECTING)
             {
-                changeGUI(GuiState.CONNECT_FAILED);
+                changeGUI(GuiState.CONNECT_FAILED, reason);
             }
         }
 
         /** {@inheritDoc} */
         @Override
-        public void disconnected()
+        public void disconnected(final String reason)
         {
             setConnected(false);
             if (getGuiState() != GuiState.CONNECT_FAILED)
@@ -520,7 +520,7 @@ public class JXCWindow extends JFrame
 
         /** {@inheritDoc} */
         @Override
-        public void connectFailed()
+        public void connectFailed(final String reason)
         {
             // ignore
         }
@@ -630,6 +630,11 @@ public class JXCWindow extends JFrame
 
     public void changeGUI(final GuiState guiState)
     {
+        changeGUI(guiState, null);
+    }
+
+    private void changeGUI(final GuiState guiState, final String param)
+    {
         synchronized (semaphoreChangeGui)
         {
             if (this.guiState == guiState)
@@ -678,7 +683,7 @@ public class JXCWindow extends JFrame
             case CONNECT_FAILED:
                 for (final GuiStateListener listener : guiStateListeners)
                 {
-                    listener.connectFailed();
+                    listener.connectFailed(param);
                 }
                 break;
             }

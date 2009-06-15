@@ -53,11 +53,13 @@ public interface ClientSocketListener
 
     /**
      * Called when the connection is being teared down.
+     * @reason the disconnect reason
      */
-    void disconnecting();
+    void disconnecting(String reason);
 
     /**
      * Called after the connection has been closed.
+     * @reason the disconnect reason
      */
-    void disconnected();
+    void disconnected(String reason);
 }

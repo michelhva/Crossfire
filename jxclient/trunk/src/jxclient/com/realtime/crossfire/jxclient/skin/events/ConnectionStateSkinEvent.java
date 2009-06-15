@@ -83,7 +83,7 @@ public class ConnectionStateSkinEvent implements SkinEvent
 
         /** {@inheritDoc} */
         @Override
-        public void connectFailed()
+        public void connectFailed(final String reason)
         {
             // ignore
         }

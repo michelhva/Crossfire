@@ -13,7 +13,7 @@ public class JXCConnection
     /**
      * The default port number for Crossfire servers.
      */
-    private static final int DEFAULT_CROSSFIRE_PORT = 13327;
+    public static final int DEFAULT_CROSSFIRE_PORT = 13327;
 
     /**
      * The prefix for the window title.
@@ -115,7 +115,7 @@ public class JXCConnection
 
         /** {@inheritDoc} */
         @Override
-        public void connectFailed()
+        public void connectFailed(final String reason)
         {
             // ignore
         }
@@ -151,6 +151,15 @@ public class JXCConnection
     public String getHostname()
     {
         return hostname;
+    }
+
+    /**
+     * Returns the currently connected port.
+     * @return the port or <code>0</code> if unconnected
+     */
+    public int getPort()
+    {
+        return port;
     }
 
     /**
