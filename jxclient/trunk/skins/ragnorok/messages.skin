@@ -25,14 +25,14 @@ commandlist_add command_messages_down_all log_all SCROLL 1
 
 # "important" tab
 log_message log_msg 4 25 562 190-30-16-4 empty font_log_print font_log_fixed font_log_fixed_bold font_log_arcane BLACK
-log_color log_all 1 #808080
-log_color log_all 4 #e07000
-log_color log_all 5 #6040c0
-log_color log_all 6 #aa6600
-log_color log_all 7 #00c000
-log_color log_all 9 #505050
-log_color log_all 11 #a0a000
-log_color log_all 12 #356074
+log_color log_msg 1 #808080
+log_color log_msg 4 #e07000
+log_color log_msg 5 #6040c0
+log_color log_msg 6 #aa6600
+log_color log_msg 7 #00c000
+log_color log_msg 9 #505050
+log_color log_msg 11 #a0a000
+log_color log_msg 12 #356074
 log_filter log_msg not ATTACK SPELL
 button slider_msg_up    586-4-16 25          16 16 slider_up_up slider_up_down true command_messages_up_msg
 scrollbar slider_msg    586-4-16 41          16 108 true log_msg #c0c0c0 #808080
@@ -42,14 +42,14 @@ commandlist_add command_messages_down_msg log_msg SCROLL 1
 
 # "chat" tab
 log_message log_chat 4 25 562 190-30-16-4 empty font_log_print font_log_fixed font_log_fixed_bold font_log_arcane BLACK
-log_color log_all 1 #808080
-log_color log_all 4 #e07000
-log_color log_all 5 #6040c0
-log_color log_all 6 #aa6600
-log_color log_all 7 #00c000
-log_color log_all 9 #505050
-log_color log_all 11 #a0a000
-log_color log_all 12 #356074
+log_color log_chat 1 #808080
+log_color log_chat 4 #e07000
+log_color log_chat 5 #6040c0
+log_color log_chat 6 #aa6600
+log_color log_chat 7 #00c000
+log_color log_chat 9 #505050
+log_color log_chat 11 #a0a000
+log_color log_chat 12 #356074
 log_filter log_chat only COMMUNICATION
 button slider_chat_up   586-4-16 25          16 16 slider_up_up slider_up_down true command_messages_up_chat
 scrollbar slider_chat   586-4-16 41          16 108 true log_chat #c0c0c0 #808080
