@@ -331,8 +331,7 @@ public class ClientSocket
      */
     private void processConnect(final String host, final int port) throws IOException
     {
-
-	disconnectPending = true;
+        disconnectPending = true;
         for (final ClientSocketListener clientSocketListener : clientSocketListeners)
         {
             clientSocketListener.connecting();
