@@ -59,8 +59,8 @@ public class ClientSocket
     private final Selector selector;
 
     /**
-     * Synchronization object for {@link #reconnect}, {@link #host}, and {@link
-     * #port}.
+     * Synchronization object for {@link #reconnect}, {@link #host}, {@link
+     * #port}, and {@link #disconnectPending}.
      */
     private final Object syncConnect = new Object();
 
@@ -79,6 +79,11 @@ public class ClientSocket
      * The port to connect to.
      */
     private int port = 0;
+
+    /**
+     * If set, notify listeners.
+     */
+    private boolean disconnectPending = false;
 
     /**
      * A buffer for sending packets.
@@ -326,28 +331,45 @@ public class ClientSocket
      */
     private void processConnect(final String host, final int port) throws IOException
     {
-        final SocketAddress socketAddress = new InetSocketAddress(host, port);
-        synchronized (syncOutput)
-        {
-            socketChannel = SocketChannel.open();
-            selectableChannel = socketChannel.configureBlocking(false);
-            try
-            {
-                isConnected = socketChannel.connect(socketAddress);
-            }
-            catch (final IllegalArgumentException ex)
-            {
-                throw new IOException(ex.getMessage(), ex);
-            }
-            socketChannel.socket().setTcpNoDelay(true);
-            interestOps = SelectionKey.OP_CONNECT;
-            selectionKey = selectableChannel.register(selector, interestOps);
-            outputBuffer.clear();
-        }
-        inputBuffer.clear();
+
+	disconnectPending = true;
         for (final ClientSocketListener clientSocketListener : clientSocketListeners)
         {
             clientSocketListener.connecting();
+        }
+
+        final SocketAddress socketAddress = new InetSocketAddress(host, port);
+        synchronized (syncOutput)
+        {
+            outputBuffer.clear();
+            inputBuffer.clear();
+            selectionKey = null;
+            try
+            {
+                socketChannel = SocketChannel.open();
+                selectableChannel = socketChannel.configureBlocking(false);
+                try
+                {
+                    isConnected = socketChannel.connect(socketAddress);
+                }
+                catch (final IllegalArgumentException ex)
+                {
+                    throw new IOException(ex.getMessage(), ex);
+                }
+                socketChannel.socket().setTcpNoDelay(true);
+                interestOps = SelectionKey.OP_CONNECT;
+                selectionKey = selectableChannel.register(selector, interestOps);
+            }
+            finally
+            {
+                if (selectionKey == null)
+                {
+                    socketChannel = null;
+                    selectableChannel = null;
+                    isConnected = false;
+                    interestOps = 0;
+                }
+            }
         }
     }
 
@@ -356,56 +378,61 @@ public class ClientSocket
      */
     private void processDisconnect()
     {
+        final boolean notifyListeners;
         synchronized (syncOutput)
         {
-            if (selectionKey == null)
+            notifyListeners = disconnectPending;
+            disconnectPending = false;
+        }
+        if (notifyListeners)
+        {
+            for (final ClientSocketListener clientSocketListener : clientSocketListeners)
             {
-                return;
+                clientSocketListener.disconnecting();
             }
         }
 
-        for (final ClientSocketListener clientSocketListener : clientSocketListeners)
+        try
         {
-            clientSocketListener.disconnecting();
+            synchronized (syncOutput)
+            {
+                if (selectionKey != null)
+                {
+                    selectionKey.cancel();
+                    selectionKey = null;
+                    outputBuffer.clear();
+
+                    try
+                    {
+                        socketChannel.socket().shutdownOutput();
+                    }
+                    catch (final IOException ex)
+                    {
+                        // ignore
+                    }
+                    try
+                    {
+                        socketChannel.close();
+                    }
+                    catch (final IOException ex)
+                    {
+                        // ignore
+                    }
+                    socketChannel = null;
+                    selectableChannel = null;
+                    inputBuffer.clear();
+                }
+            }
         }
-
-        synchronized (syncOutput)
+        finally
         {
-            if (selectionKey == null)
+            if (notifyListeners)
             {
-                return;
+                for (final ClientSocketListener clientSocketListener : clientSocketListeners)
+                {
+                    clientSocketListener.disconnected();
+                }
             }
-
-            selectionKey.cancel();
-            selectionKey = null;
-            outputBuffer.clear();
-
-            try
-            {
-                socketChannel.socket().shutdownOutput();
-            }
-            catch (final IOException ex)
-            {
-                // ignore
-            }
-            try
-            {
-                socketChannel.close();
-            }
-            catch (final IOException ex)
-            {
-                // ignore
-            }
-            socketChannel = null;
-        }
-
-        selectableChannel = null;
-
-        inputBuffer.clear();
-
-        for (final ClientSocketListener clientSocketListener : clientSocketListeners)
-        {
-            clientSocketListener.disconnected();
         }
     }
 
