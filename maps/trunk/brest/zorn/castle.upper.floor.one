@@ -9,7 +9,7 @@ enter_y 3
 msg
 Created:  2006-08-12 Gene Alexander
 Info: Zorn Castle, first upper floor
-Modified: 2008-10-17 Rick Tanner
+Modified: 2009-06-17 Andreas Kirschbaum
 endmsg
 outdoor 1
 end
@@ -6996,20 +6996,20 @@ arch spell_magehound
 end
 arch spell_cause_many_wounds
 end
-arch dragonclaw
+arch dagger
 name dragon claw dagger
 name_pl dragon claw daggers
-skill one handed weapons
 msg
 Ancient dagger made from a claw donated to the
 Zorn family by Xxvlorf the Legendary Dragon.
 endmsg
+face dragon_claw.111
 dam 15
 wc 5
-type 15
 attacktype 1053
 material 0
 value 55000
+weight 1
 last_sp 2
 weapontype 5
 item_power 6
