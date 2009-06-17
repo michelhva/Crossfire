@@ -1,7 +1,6 @@
 Object t_boulder
 race rock
 name boulder
-type 15
 face boulder.111
 nrof 1
 weight 300000
