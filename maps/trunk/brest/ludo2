@@ -8,7 +8,7 @@ enter_x 24
 enter_y 24
 msg
 Created:  1994-05-31
-Modified: 2008-09-11 Rick Tanner
+Modified: 2009-06-18 Andreas Kirschbaum
 endmsg
 end
 arch woodfloor
@@ -3098,6 +3098,10 @@ arch woodfloor
 x 10
 y 4
 end
+arch spider_web
+x 10
+y 4
+end
 arch big_wiz
 name father of ludo
 x 10
@@ -3107,7 +3111,15 @@ arch woodfloor
 x 10
 y 5
 end
+arch spider_web
+x 10
+y 5
+end
 arch woodfloor
+x 10
+y 6
+end
+arch spider_web
 x 10
 y 6
 end
@@ -3155,7 +3167,15 @@ arch woodfloor
 x 10
 y 12
 end
+arch spider_web
+x 10
+y 12
+end
 arch woodfloor
+x 10
+y 13
+end
+arch spider_web
 x 10
 y 13
 end
@@ -3168,7 +3188,15 @@ arch woodfloor
 x 10
 y 14
 end
+arch spider_web
+x 10
+y 14
+end
 arch woodfloor
+x 10
+y 15
+end
+arch spider_web
 x 10
 y 15
 end
@@ -3354,11 +3382,23 @@ arch woodfloor
 x 11
 y 4
 end
+arch spider_web
+x 11
+y 4
+end
 arch woodfloor
 x 11
 y 5
 end
+arch spider_web
+x 11
+y 5
+end
 arch woodfloor
+x 11
+y 6
+end
+arch spider_web
 x 11
 y 6
 end
@@ -3371,6 +3411,10 @@ x 11
 y 7
 end
 arch woodfloor
+x 11
+y 8
+end
+arch spider_web
 x 11
 y 8
 end
@@ -3383,7 +3427,15 @@ arch woodfloor
 x 11
 y 9
 end
+arch spider_web
+x 11
+y 9
+end
 arch woodfloor
+x 11
+y 10
+end
+arch spider_web
 x 11
 y 10
 end
@@ -3399,7 +3451,15 @@ arch woodfloor
 x 11
 y 12
 end
+arch spider_web
+x 11
+y 12
+end
 arch woodfloor
+x 11
+y 13
+end
+arch spider_web
 x 11
 y 13
 end
@@ -3407,7 +3467,15 @@ arch woodfloor
 x 11
 y 14
 end
+arch spider_web
+x 11
+y 14
+end
 arch woodfloor
+x 11
+y 15
+end
+arch spider_web
 x 11
 y 15
 end
@@ -3621,11 +3689,23 @@ arch woodfloor
 x 12
 y 4
 end
+arch spider_web
+x 12
+y 4
+end
 arch woodfloor
 x 12
 y 5
 end
+arch spider_web
+x 12
+y 5
+end
 arch woodfloor
+x 12
+y 6
+end
+arch spider_web
 x 12
 y 6
 end
@@ -3641,11 +3721,23 @@ arch woodfloor
 x 12
 y 8
 end
+arch spider_web
+x 12
+y 8
+end
 arch woodfloor
 x 12
 y 9
 end
+arch spider_web
+x 12
+y 9
+end
 arch woodfloor
+x 12
+y 10
+end
+arch spider_web
 x 12
 y 10
 end
@@ -3661,7 +3753,15 @@ arch woodfloor
 x 12
 y 12
 end
+arch spider_web
+x 12
+y 12
+end
 arch woodfloor
+x 12
+y 13
+end
+arch spider_web
 x 12
 y 13
 end
@@ -3669,7 +3769,15 @@ arch woodfloor
 x 12
 y 14
 end
+arch spider_web
+x 12
+y 14
+end
 arch woodfloor
+x 12
+y 15
+end
+arch spider_web
 x 12
 y 15
 end
@@ -3887,11 +3995,23 @@ arch woodfloor
 x 13
 y 8
 end
+arch spider_web
+x 13
+y 8
+end
 arch woodfloor
 x 13
 y 9
 end
+arch spider_web
+x 13
+y 9
+end
 arch woodfloor
+x 13
+y 10
+end
+arch spider_web
 x 13
 y 10
 end
@@ -4463,6 +4583,10 @@ arch woodfloor
 x 15
 y 5
 end
+arch spider_web
+x 15
+y 5
+end
 arch big_wiz
 name brother of ludo
 x 15
@@ -4472,7 +4596,15 @@ arch woodfloor
 x 15
 y 6
 end
+arch spider_web
+x 15
+y 6
+end
 arch woodfloor
+x 15
+y 7
+end
+arch spider_web
 x 15
 y 7
 end
@@ -4758,11 +4890,23 @@ arch woodfloor
 x 16
 y 5
 end
+arch spider_web
+x 16
+y 5
+end
 arch woodfloor
 x 16
 y 6
 end
+arch spider_web
+x 16
+y 6
+end
 arch woodfloor
+x 16
+y 7
+end
+arch spider_web
 x 16
 y 7
 end
@@ -5085,11 +5229,23 @@ arch woodfloor
 x 17
 y 5
 end
+arch spider_web
+x 17
+y 5
+end
 arch woodfloor
 x 17
 y 6
 end
+arch spider_web
+x 17
+y 6
+end
 arch woodfloor
+x 17
+y 7
+end
+arch spider_web
 x 17
 y 7
 end
@@ -6026,7 +6182,7 @@ arch woodfloor
 x 20
 y 4
 end
-arch random_treasure
+arch spider_web
 x 20
 y 4
 end
@@ -6034,7 +6190,7 @@ arch woodfloor
 x 20
 y 5
 end
-arch random_treasure
+arch spider_web
 x 20
 y 5
 end
@@ -6042,7 +6198,7 @@ arch woodfloor
 x 20
 y 6
 end
-arch random_treasure
+arch spider_web
 x 20
 y 6
 end
@@ -6050,7 +6206,7 @@ arch woodfloor
 x 20
 y 7
 end
-arch random_treasure
+arch spider_web
 x 20
 y 7
 end
@@ -6058,7 +6214,7 @@ arch woodfloor
 x 20
 y 8
 end
-arch random_treasure
+arch spider_web
 x 20
 y 8
 end
@@ -6066,7 +6222,7 @@ arch woodfloor
 x 20
 y 9
 end
-arch random_treasure
+arch spider_web
 x 20
 y 9
 end
@@ -6074,7 +6230,7 @@ arch woodfloor
 x 20
 y 10
 end
-arch random_treasure
+arch spider_web
 x 20
 y 10
 end
@@ -6082,7 +6238,7 @@ arch woodfloor
 x 20
 y 11
 end
-arch random_treasure
+arch spider_web
 x 20
 y 11
 end
@@ -6090,7 +6246,7 @@ arch woodfloor
 x 20
 y 12
 end
-arch random_treasure
+arch spider_web
 x 20
 y 12
 end
@@ -6098,7 +6254,7 @@ arch woodfloor
 x 20
 y 13
 end
-arch random_treasure
+arch spider_web
 x 20
 y 13
 end
@@ -6106,7 +6262,7 @@ arch woodfloor
 x 20
 y 14
 end
-arch random_treasure
+arch spider_web
 x 20
 y 14
 end
@@ -6114,7 +6270,7 @@ arch woodfloor
 x 20
 y 15
 end
-arch random_treasure
+arch spider_web
 x 20
 y 15
 end
@@ -6122,7 +6278,7 @@ arch woodfloor
 x 20
 y 16
 end
-arch random_treasure
+arch spider_web
 x 20
 y 16
 end
@@ -6130,7 +6286,7 @@ arch woodfloor
 x 20
 y 17
 end
-arch random_treasure
+arch spider_web
 x 20
 y 17
 end
@@ -6138,7 +6294,7 @@ arch woodfloor
 x 20
 y 18
 end
-arch random_treasure
+arch spider_web
 x 20
 y 18
 end
@@ -6320,7 +6476,7 @@ arch woodfloor
 x 21
 y 4
 end
-arch random_treasure
+arch spider_web
 x 21
 y 4
 end
@@ -6328,7 +6484,7 @@ arch woodfloor
 x 21
 y 5
 end
-arch random_treasure
+arch spider_web
 x 21
 y 5
 end
@@ -6336,7 +6492,7 @@ arch woodfloor
 x 21
 y 6
 end
-arch random_treasure
+arch spider_web
 x 21
 y 6
 end
@@ -6344,7 +6500,7 @@ arch woodfloor
 x 21
 y 7
 end
-arch random_treasure
+arch spider_web
 x 21
 y 7
 end
@@ -6352,7 +6508,7 @@ arch woodfloor
 x 21
 y 8
 end
-arch random_treasure
+arch spider_web
 x 21
 y 8
 end
@@ -6360,7 +6516,7 @@ arch woodfloor
 x 21
 y 9
 end
-arch random_treasure
+arch spider_web
 x 21
 y 9
 end
@@ -6368,7 +6524,7 @@ arch woodfloor
 x 21
 y 10
 end
-arch random_treasure
+arch spider_web
 x 21
 y 10
 end
@@ -6376,7 +6532,7 @@ arch woodfloor
 x 21
 y 11
 end
-arch random_treasure
+arch spider_web
 x 21
 y 11
 end
@@ -6384,7 +6540,7 @@ arch woodfloor
 x 21
 y 12
 end
-arch random_treasure
+arch spider_web
 x 21
 y 12
 end
@@ -6392,7 +6548,7 @@ arch woodfloor
 x 21
 y 13
 end
-arch random_treasure
+arch spider_web
 x 21
 y 13
 end
@@ -6400,7 +6556,7 @@ arch woodfloor
 x 21
 y 14
 end
-arch random_treasure
+arch spider_web
 x 21
 y 14
 end
@@ -6408,7 +6564,7 @@ arch woodfloor
 x 21
 y 15
 end
-arch random_treasure
+arch spider_web
 x 21
 y 15
 end
@@ -6416,7 +6572,7 @@ arch woodfloor
 x 21
 y 16
 end
-arch random_treasure
+arch spider_web
 x 21
 y 16
 end
@@ -6424,7 +6580,7 @@ arch woodfloor
 x 21
 y 17
 end
-arch random_treasure
+arch spider_web
 x 21
 y 17
 end
@@ -6432,7 +6588,7 @@ arch woodfloor
 x 21
 y 18
 end
-arch random_treasure
+arch spider_web
 x 21
 y 18
 end
@@ -6614,7 +6770,7 @@ arch woodfloor
 x 22
 y 4
 end
-arch random_food
+arch spider_web
 x 22
 y 4
 end
@@ -6622,7 +6778,7 @@ arch woodfloor
 x 22
 y 5
 end
-arch random_food
+arch spider_web
 x 22
 y 5
 end
@@ -6630,7 +6786,7 @@ arch woodfloor
 x 22
 y 6
 end
-arch random_food
+arch spider_web
 x 22
 y 6
 end
@@ -6638,7 +6794,7 @@ arch woodfloor
 x 22
 y 7
 end
-arch random_food
+arch spider_web
 x 22
 y 7
 end
@@ -6646,7 +6802,7 @@ arch woodfloor
 x 22
 y 8
 end
-arch random_food
+arch spider_web
 x 22
 y 8
 end
@@ -6654,7 +6810,7 @@ arch woodfloor
 x 22
 y 9
 end
-arch random_food
+arch spider_web
 x 22
 y 9
 end
@@ -6662,7 +6818,7 @@ arch woodfloor
 x 22
 y 10
 end
-arch random_food
+arch spider_web
 x 22
 y 10
 end
@@ -6670,7 +6826,7 @@ arch woodfloor
 x 22
 y 11
 end
-arch random_food
+arch spider_web
 x 22
 y 11
 end
@@ -6678,7 +6834,7 @@ arch woodfloor
 x 22
 y 12
 end
-arch random_food
+arch spider_web
 x 22
 y 12
 end
@@ -6686,7 +6842,7 @@ arch woodfloor
 x 22
 y 13
 end
-arch random_food
+arch spider_web
 x 22
 y 13
 end
@@ -6694,7 +6850,7 @@ arch woodfloor
 x 22
 y 14
 end
-arch random_food
+arch spider_web
 x 22
 y 14
 end
@@ -6702,7 +6858,7 @@ arch woodfloor
 x 22
 y 15
 end
-arch random_food
+arch spider_web
 x 22
 y 15
 end
@@ -6710,7 +6866,7 @@ arch woodfloor
 x 22
 y 16
 end
-arch random_food
+arch spider_web
 x 22
 y 16
 end
@@ -6718,7 +6874,7 @@ arch woodfloor
 x 22
 y 17
 end
-arch random_food
+arch spider_web
 x 22
 y 17
 end
@@ -6726,7 +6882,7 @@ arch woodfloor
 x 22
 y 18
 end
-arch random_food
+arch spider_web
 x 22
 y 18
 end
@@ -6904,7 +7060,7 @@ arch woodfloor
 x 23
 y 4
 end
-arch random_food
+arch spider_web
 x 23
 y 4
 end
@@ -6912,7 +7068,7 @@ arch woodfloor
 x 23
 y 5
 end
-arch random_food
+arch spider_web
 x 23
 y 5
 end
@@ -6920,7 +7076,7 @@ arch woodfloor
 x 23
 y 6
 end
-arch random_food
+arch spider_web
 x 23
 y 6
 end
@@ -6928,7 +7084,7 @@ arch woodfloor
 x 23
 y 7
 end
-arch random_food
+arch spider_web
 x 23
 y 7
 end
@@ -6936,7 +7092,7 @@ arch woodfloor
 x 23
 y 8
 end
-arch random_food
+arch spider_web
 x 23
 y 8
 end
@@ -6944,7 +7100,7 @@ arch woodfloor
 x 23
 y 9
 end
-arch random_food
+arch spider_web
 x 23
 y 9
 end
@@ -6952,7 +7108,7 @@ arch woodfloor
 x 23
 y 10
 end
-arch random_food
+arch spider_web
 x 23
 y 10
 end
@@ -6960,7 +7116,7 @@ arch woodfloor
 x 23
 y 11
 end
-arch random_food
+arch spider_web
 x 23
 y 11
 end
@@ -6968,7 +7124,7 @@ arch woodfloor
 x 23
 y 12
 end
-arch random_food
+arch spider_web
 x 23
 y 12
 end
@@ -6976,7 +7132,7 @@ arch woodfloor
 x 23
 y 13
 end
-arch random_food
+arch spider_web
 x 23
 y 13
 end
@@ -6984,7 +7140,7 @@ arch woodfloor
 x 23
 y 14
 end
-arch random_food
+arch spider_web
 x 23
 y 14
 end
@@ -6992,7 +7148,7 @@ arch woodfloor
 x 23
 y 15
 end
-arch random_food
+arch spider_web
 x 23
 y 15
 end
@@ -7000,7 +7156,7 @@ arch woodfloor
 x 23
 y 16
 end
-arch random_food
+arch spider_web
 x 23
 y 16
 end
@@ -7008,7 +7164,7 @@ arch woodfloor
 x 23
 y 17
 end
-arch random_food
+arch spider_web
 x 23
 y 17
 end
@@ -7016,7 +7172,7 @@ arch woodfloor
 x 23
 y 18
 end
-arch random_food
+arch spider_web
 x 23
 y 18
 end
@@ -7198,11 +7354,16 @@ arch wall_2_1_2
 x 24
 y 3
 end
+arch wall_1_2
+face wall_1_short.111
+x 24
+y 3
+end
 arch woodfloor
 x 24
 y 4
 end
-arch chest
+arch door_1
 x 24
 y 4
 end
@@ -7210,7 +7371,7 @@ arch woodfloor
 x 24
 y 5
 end
-arch chest
+arch door_1
 x 24
 y 5
 end
@@ -7218,7 +7379,7 @@ arch woodfloor
 x 24
 y 6
 end
-arch chest
+arch wall_1_1
 x 24
 y 6
 end
@@ -7226,7 +7387,7 @@ arch woodfloor
 x 24
 y 7
 end
-arch chest
+arch wall_2_1_1
 x 24
 y 7
 end
@@ -7234,7 +7395,7 @@ arch woodfloor
 x 24
 y 8
 end
-arch chest
+arch wall_2_1_1
 x 24
 y 8
 end
@@ -7242,7 +7403,7 @@ arch woodfloor
 x 24
 y 9
 end
-arch chest
+arch wall_2_1_1
 x 24
 y 9
 end
@@ -7250,7 +7411,7 @@ arch woodfloor
 x 24
 y 10
 end
-arch chest
+arch wall_2_1_1
 x 24
 y 10
 end
@@ -7258,7 +7419,7 @@ arch woodfloor
 x 24
 y 11
 end
-arch chest
+arch wall_2_1_1
 x 24
 y 11
 end
@@ -7266,7 +7427,7 @@ arch woodfloor
 x 24
 y 12
 end
-arch chest
+arch wall_2_1_1
 x 24
 y 12
 end
@@ -7274,7 +7435,7 @@ arch woodfloor
 x 24
 y 13
 end
-arch chest
+arch wall_2_1_1
 x 24
 y 13
 end
@@ -7282,7 +7443,7 @@ arch woodfloor
 x 24
 y 14
 end
-arch chest
+arch wall_2_1_1
 x 24
 y 14
 end
@@ -7290,7 +7451,7 @@ arch woodfloor
 x 24
 y 15
 end
-arch chest
+arch wall_2_1_1
 x 24
 y 15
 end
@@ -7298,7 +7459,7 @@ arch woodfloor
 x 24
 y 16
 end
-arch chest
+arch wall_2_1_1
 x 24
 y 16
 end
@@ -7306,7 +7467,7 @@ arch woodfloor
 x 24
 y 17
 end
-arch chest
+arch wall_2_1_1
 x 24
 y 17
 end
@@ -7314,7 +7475,7 @@ arch woodfloor
 x 24
 y 18
 end
-arch chest
+arch wall_2_1_1
 x 24
 y 18
 end
@@ -7322,7 +7483,7 @@ arch woodfloor
 x 24
 y 19
 end
-arch wall_2_1_2
+arch wall_3_1
 x 24
 y 19
 end
@@ -7479,7 +7640,7 @@ arch woodfloor
 x 25
 y 4
 end
-arch random_weapon
+arch random_treasure
 x 25
 y 4
 end
@@ -7487,7 +7648,7 @@ arch woodfloor
 x 25
 y 5
 end
-arch random_weapon
+arch random_treasure
 x 25
 y 5
 end
@@ -7495,7 +7656,7 @@ arch woodfloor
 x 25
 y 6
 end
-arch random_weapon
+arch random_treasure
 x 25
 y 6
 end
@@ -7503,7 +7664,7 @@ arch woodfloor
 x 25
 y 7
 end
-arch random_weapon
+arch random_treasure
 x 25
 y 7
 end
@@ -7511,7 +7672,7 @@ arch woodfloor
 x 25
 y 8
 end
-arch random_weapon
+arch random_treasure
 x 25
 y 8
 end
@@ -7519,7 +7680,7 @@ arch woodfloor
 x 25
 y 9
 end
-arch random_weapon
+arch random_treasure
 x 25
 y 9
 end
@@ -7527,7 +7688,7 @@ arch woodfloor
 x 25
 y 10
 end
-arch random_weapon
+arch random_treasure
 x 25
 y 10
 end
@@ -7535,7 +7696,7 @@ arch woodfloor
 x 25
 y 11
 end
-arch random_weapon
+arch random_treasure
 x 25
 y 11
 end
@@ -7543,7 +7704,7 @@ arch woodfloor
 x 25
 y 12
 end
-arch random_weapon
+arch random_treasure
 x 25
 y 12
 end
@@ -7551,7 +7712,7 @@ arch woodfloor
 x 25
 y 13
 end
-arch random_weapon
+arch random_treasure
 x 25
 y 13
 end
@@ -7559,7 +7720,7 @@ arch woodfloor
 x 25
 y 14
 end
-arch random_weapon
+arch random_treasure
 x 25
 y 14
 end
@@ -7567,7 +7728,7 @@ arch woodfloor
 x 25
 y 15
 end
-arch random_weapon
+arch random_treasure
 x 25
 y 15
 end
@@ -7575,7 +7736,7 @@ arch woodfloor
 x 25
 y 16
 end
-arch random_weapon
+arch random_treasure
 x 25
 y 16
 end
@@ -7583,7 +7744,7 @@ arch woodfloor
 x 25
 y 17
 end
-arch random_weapon
+arch random_treasure
 x 25
 y 17
 end
@@ -7591,7 +7752,7 @@ arch woodfloor
 x 25
 y 18
 end
-arch random_weapon
+arch random_treasure
 x 25
 y 18
 end
@@ -7757,7 +7918,7 @@ arch woodfloor
 x 26
 y 4
 end
-arch random_treasure
+arch random_food
 x 26
 y 4
 end
@@ -7765,7 +7926,7 @@ arch woodfloor
 x 26
 y 5
 end
-arch random_treasure
+arch random_food
 x 26
 y 5
 end
@@ -7773,7 +7934,7 @@ arch woodfloor
 x 26
 y 6
 end
-arch random_treasure
+arch random_food
 x 26
 y 6
 end
@@ -7781,7 +7942,7 @@ arch woodfloor
 x 26
 y 7
 end
-arch random_wealth
+arch random_food
 x 26
 y 7
 end
@@ -7789,7 +7950,7 @@ arch woodfloor
 x 26
 y 8
 end
-arch random_wealth
+arch random_food
 x 26
 y 8
 end
@@ -7797,7 +7958,7 @@ arch woodfloor
 x 26
 y 9
 end
-arch random_wealth
+arch random_food
 x 26
 y 9
 end
@@ -7805,7 +7966,7 @@ arch woodfloor
 x 26
 y 10
 end
-arch random_weapon
+arch random_food
 x 26
 y 10
 end
@@ -7813,7 +7974,7 @@ arch woodfloor
 x 26
 y 11
 end
-arch random_weapon
+arch random_food
 x 26
 y 11
 end
@@ -7821,7 +7982,7 @@ arch woodfloor
 x 26
 y 12
 end
-arch random_weapon
+arch random_food
 x 26
 y 12
 end
@@ -7829,7 +7990,7 @@ arch woodfloor
 x 26
 y 13
 end
-arch random_weapon
+arch random_food
 x 26
 y 13
 end
@@ -7837,7 +7998,7 @@ arch woodfloor
 x 26
 y 14
 end
-arch random_weapon
+arch random_food
 x 26
 y 14
 end
@@ -7845,7 +8006,7 @@ arch woodfloor
 x 26
 y 15
 end
-arch random_wealth
+arch random_food
 x 26
 y 15
 end
@@ -7853,7 +8014,7 @@ arch woodfloor
 x 26
 y 16
 end
-arch random_wealth
+arch random_food
 x 26
 y 16
 end
@@ -7861,7 +8022,7 @@ arch woodfloor
 x 26
 y 17
 end
-arch random_wealth
+arch random_food
 x 26
 y 17
 end
@@ -7869,7 +8030,7 @@ arch woodfloor
 x 26
 y 18
 end
-arch random_wealth
+arch random_food
 x 26
 y 18
 end
@@ -8067,7 +8228,7 @@ arch woodfloor
 x 27
 y 4
 end
-arch random_treasure
+arch chest
 x 27
 y 4
 end
@@ -8075,7 +8236,7 @@ arch woodfloor
 x 27
 y 5
 end
-arch random_treasure
+arch chest
 x 27
 y 5
 end
@@ -8083,7 +8244,7 @@ arch woodfloor
 x 27
 y 6
 end
-arch random_treasure
+arch chest
 x 27
 y 6
 end
@@ -8091,7 +8252,7 @@ arch woodfloor
 x 27
 y 7
 end
-arch random_wealth
+arch chest
 x 27
 y 7
 end
@@ -8099,7 +8260,7 @@ arch woodfloor
 x 27
 y 8
 end
-arch random_wealth
+arch chest
 x 27
 y 8
 end
@@ -8107,7 +8268,7 @@ arch woodfloor
 x 27
 y 9
 end
-arch random_wealth
+arch chest
 x 27
 y 9
 end
@@ -8115,7 +8276,7 @@ arch woodfloor
 x 27
 y 10
 end
-arch random_wealth
+arch chest
 x 27
 y 10
 end
@@ -8123,7 +8284,7 @@ arch woodfloor
 x 27
 y 11
 end
-arch random_wealth
+arch chest
 x 27
 y 11
 end
@@ -8131,7 +8292,7 @@ arch woodfloor
 x 27
 y 12
 end
-arch random_wealth
+arch chest
 x 27
 y 12
 end
@@ -8139,7 +8300,7 @@ arch woodfloor
 x 27
 y 13
 end
-arch random_wealth
+arch chest
 x 27
 y 13
 end
@@ -8147,7 +8308,7 @@ arch woodfloor
 x 27
 y 14
 end
-arch random_wealth
+arch chest
 x 27
 y 14
 end
@@ -8155,7 +8316,7 @@ arch woodfloor
 x 27
 y 15
 end
-arch random_wealth
+arch chest
 x 27
 y 15
 end
@@ -8163,7 +8324,7 @@ arch woodfloor
 x 27
 y 16
 end
-arch random_wealth
+arch chest
 x 27
 y 16
 end
@@ -8171,7 +8332,7 @@ arch woodfloor
 x 27
 y 17
 end
-arch random_wealth
+arch chest
 x 27
 y 17
 end
@@ -8179,7 +8340,7 @@ arch woodfloor
 x 27
 y 18
 end
-arch random_wealth
+arch chest
 x 27
 y 18
 end
@@ -8353,7 +8514,7 @@ arch woodfloor
 x 28
 y 4
 end
-arch random_treasure
+arch random_weapon
 x 28
 y 4
 end
@@ -8361,7 +8522,7 @@ arch woodfloor
 x 28
 y 5
 end
-arch random_treasure
+arch random_weapon
 x 28
 y 5
 end
@@ -8369,7 +8530,7 @@ arch woodfloor
 x 28
 y 6
 end
-arch random_treasure
+arch random_weapon
 x 28
 y 6
 end
@@ -8377,7 +8538,7 @@ arch woodfloor
 x 28
 y 7
 end
-arch random_wealth
+arch random_weapon
 x 28
 y 7
 end
@@ -8385,7 +8546,7 @@ arch woodfloor
 x 28
 y 8
 end
-arch random_wealth
+arch random_weapon
 x 28
 y 8
 end
@@ -8393,7 +8554,7 @@ arch woodfloor
 x 28
 y 9
 end
-arch random_wealth
+arch random_weapon
 x 28
 y 9
 end
@@ -8401,7 +8562,7 @@ arch woodfloor
 x 28
 y 10
 end
-arch random_wealth
+arch random_weapon
 x 28
 y 10
 end
@@ -8409,7 +8570,7 @@ arch woodfloor
 x 28
 y 11
 end
-arch random_wealth
+arch random_weapon
 x 28
 y 11
 end
@@ -8417,7 +8578,7 @@ arch woodfloor
 x 28
 y 12
 end
-arch random_wealth
+arch random_weapon
 x 28
 y 12
 end
@@ -8425,7 +8586,7 @@ arch woodfloor
 x 28
 y 13
 end
-arch random_wealth
+arch random_weapon
 x 28
 y 13
 end
@@ -8433,7 +8594,7 @@ arch woodfloor
 x 28
 y 14
 end
-arch random_wealth
+arch random_weapon
 x 28
 y 14
 end
@@ -8441,7 +8602,7 @@ arch woodfloor
 x 28
 y 15
 end
-arch random_wealth
+arch random_weapon
 x 28
 y 15
 end
@@ -8449,7 +8610,7 @@ arch woodfloor
 x 28
 y 16
 end
-arch random_wealth
+arch random_weapon
 x 28
 y 16
 end
@@ -8457,7 +8618,7 @@ arch woodfloor
 x 28
 y 17
 end
-arch random_wealth
+arch random_weapon
 x 28
 y 17
 end
@@ -8465,7 +8626,7 @@ arch woodfloor
 x 28
 y 18
 end
-arch random_wealth
+arch random_weapon
 x 28
 y 18
 end
@@ -8627,7 +8788,7 @@ arch woodfloor
 x 29
 y 4
 end
-arch chest
+arch random_treasure
 x 29
 y 4
 end
@@ -8635,7 +8796,7 @@ arch woodfloor
 x 29
 y 5
 end
-arch chest
+arch random_treasure
 x 29
 y 5
 end
@@ -8643,7 +8804,7 @@ arch woodfloor
 x 29
 y 6
 end
-arch chest
+arch random_treasure
 x 29
 y 6
 end
@@ -8651,7 +8812,7 @@ arch woodfloor
 x 29
 y 7
 end
-arch chest
+arch random_wealth
 x 29
 y 7
 end
@@ -8659,7 +8820,7 @@ arch woodfloor
 x 29
 y 8
 end
-arch chest
+arch random_wealth
 x 29
 y 8
 end
@@ -8667,7 +8828,7 @@ arch woodfloor
 x 29
 y 9
 end
-arch chest
+arch random_wealth
 x 29
 y 9
 end
@@ -8675,7 +8836,7 @@ arch woodfloor
 x 29
 y 10
 end
-arch chest
+arch random_weapon
 x 29
 y 10
 end
@@ -8683,7 +8844,7 @@ arch woodfloor
 x 29
 y 11
 end
-arch chest
+arch random_weapon
 x 29
 y 11
 end
@@ -8691,7 +8852,7 @@ arch woodfloor
 x 29
 y 12
 end
-arch chest
+arch random_weapon
 x 29
 y 12
 end
@@ -8699,7 +8860,7 @@ arch woodfloor
 x 29
 y 13
 end
-arch chest
+arch random_weapon
 x 29
 y 13
 end
@@ -8707,7 +8868,7 @@ arch woodfloor
 x 29
 y 14
 end
-arch chest
+arch random_weapon
 x 29
 y 14
 end
@@ -8715,7 +8876,7 @@ arch woodfloor
 x 29
 y 15
 end
-arch chest
+arch random_wealth
 x 29
 y 15
 end
@@ -8723,7 +8884,7 @@ arch woodfloor
 x 29
 y 16
 end
-arch chest
+arch random_wealth
 x 29
 y 16
 end
@@ -8731,7 +8892,7 @@ arch woodfloor
 x 29
 y 17
 end
-arch chest
+arch random_wealth
 x 29
 y 17
 end
@@ -8739,7 +8900,7 @@ arch woodfloor
 x 29
 y 18
 end
-arch chest
+arch random_wealth
 x 29
 y 18
 end
@@ -8941,7 +9102,7 @@ arch woodfloor
 x 30
 y 4
 end
-arch chest
+arch random_treasure
 x 30
 y 4
 end
@@ -8949,7 +9110,7 @@ arch woodfloor
 x 30
 y 5
 end
-arch chest
+arch random_treasure
 x 30
 y 5
 end
@@ -8957,7 +9118,7 @@ arch woodfloor
 x 30
 y 6
 end
-arch chest
+arch random_treasure
 x 30
 y 6
 end
@@ -8965,7 +9126,7 @@ arch woodfloor
 x 30
 y 7
 end
-arch chest
+arch random_wealth
 x 30
 y 7
 end
@@ -8973,7 +9134,7 @@ arch woodfloor
 x 30
 y 8
 end
-arch chest
+arch random_wealth
 x 30
 y 8
 end
@@ -8981,7 +9142,7 @@ arch woodfloor
 x 30
 y 9
 end
-arch chest
+arch random_wealth
 x 30
 y 9
 end
@@ -8989,7 +9150,7 @@ arch woodfloor
 x 30
 y 10
 end
-arch chest
+arch random_wealth
 x 30
 y 10
 end
@@ -8997,7 +9158,7 @@ arch woodfloor
 x 30
 y 11
 end
-arch chest
+arch random_wealth
 x 30
 y 11
 end
@@ -9005,7 +9166,7 @@ arch woodfloor
 x 30
 y 12
 end
-arch chest
+arch random_wealth
 x 30
 y 12
 end
@@ -9013,7 +9174,7 @@ arch woodfloor
 x 30
 y 13
 end
-arch chest
+arch random_wealth
 x 30
 y 13
 end
@@ -9021,7 +9182,7 @@ arch woodfloor
 x 30
 y 14
 end
-arch chest
+arch random_wealth
 x 30
 y 14
 end
@@ -9029,7 +9190,7 @@ arch woodfloor
 x 30
 y 15
 end
-arch chest
+arch random_wealth
 x 30
 y 15
 end
@@ -9037,7 +9198,7 @@ arch woodfloor
 x 30
 y 16
 end
-arch chest
+arch random_wealth
 x 30
 y 16
 end
@@ -9045,7 +9206,7 @@ arch woodfloor
 x 30
 y 17
 end
-arch chest
+arch random_wealth
 x 30
 y 17
 end
@@ -9053,7 +9214,7 @@ arch woodfloor
 x 30
 y 18
 end
-arch chest
+arch random_wealth
 x 30
 y 18
 end
