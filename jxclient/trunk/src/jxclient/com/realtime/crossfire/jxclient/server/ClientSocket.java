@@ -183,7 +183,10 @@ public class ClientSocket
      */
     public void start()
     {
-        debugProtocol.debugProtocolWrite("socket:start");
+        if (debugProtocol != null)
+        {
+            debugProtocol.debugProtocolWrite("socket:start");
+        }
         thread.start();
     }
 
@@ -193,10 +196,16 @@ public class ClientSocket
      */
     public void stop() throws InterruptedException
     {
-        debugProtocol.debugProtocolWrite("socket:stop");
+        if (debugProtocol != null)
+        {
+            debugProtocol.debugProtocolWrite("socket:stop");
+        }
         thread.interrupt();
         thread.join();
-        debugProtocol.debugProtocolWrite("socket:stopped");
+        if (debugProtocol != null)
+        {
+            debugProtocol.debugProtocolWrite("socket:stopped");
+        }
     }
 
     /**
@@ -224,7 +233,10 @@ public class ClientSocket
      */
     public void connect(final String host, final int port)
     {
-        debugProtocol.debugProtocolWrite("socket:connect "+host+":"+port);
+        if (debugProtocol != null)
+        {
+            debugProtocol.debugProtocolWrite("socket:connect "+host+":"+port);
+        }
         synchronized (syncConnect)
         {
             if (this.host == null || this.port == 0 || !this.host.equals(host) || this.port != port)
@@ -242,7 +254,10 @@ public class ClientSocket
      */
     public void disconnect()
     {
-        debugProtocol.debugProtocolWrite("socket:disconnect");
+        if (debugProtocol != null)
+        {
+            debugProtocol.debugProtocolWrite("socket:disconnect");
+        }
         synchronized (syncConnect)
         {
             if (host != null || port != 0)
@@ -334,7 +349,10 @@ public class ClientSocket
             }
             catch (final IOException ex)
             {
-                debugProtocol.debugProtocolWrite("socket:exception "+ex.getMessage(), ex);
+                if (debugProtocol != null)
+                {
+                    debugProtocol.debugProtocolWrite("socket:exception "+ex.getMessage(), ex);
+                }
                 processDisconnect(ex.getMessage());
             }
         }
@@ -348,7 +366,10 @@ public class ClientSocket
      */
     private void processConnect(final String host, final int port) throws IOException
     {
-        debugProtocol.debugProtocolWrite("socket:connecting to "+host+":"+port);
+        if (debugProtocol != null)
+        {
+            debugProtocol.debugProtocolWrite("socket:connecting to "+host+":"+port);
+        }
         disconnectPending = true;
         for (final ClientSocketListener clientSocketListener : clientSocketListeners)
         {
@@ -400,7 +421,10 @@ public class ClientSocket
      */
     private void processDisconnect(final String reason)
     {
-        debugProtocol.debugProtocolWrite("socket:disconnecting");
+        if (debugProtocol != null)
+        {
+            debugProtocol.debugProtocolWrite("socket:disconnecting");
+        }
         final boolean notifyListeners;
         synchronized (syncOutput)
         {
@@ -646,7 +670,10 @@ public class ClientSocket
      */
     private void updateInterestOps()
     {
-        debugProtocol.debugProtocolWrite("socket:set interest ops to "+interestOps);
+        if (debugProtocol != null)
+        {
+            debugProtocol.debugProtocolWrite("socket:set interest ops to "+interestOps);
+        }
         assert Thread.holdsLock(syncOutput);
         if (selectionKey != null)
         {
