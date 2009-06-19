@@ -51,6 +51,11 @@ public class DebugWriter
      */
     public DebugWriter(final Writer writer)
     {
+        if (writer == null)
+        {
+            throw new IllegalArgumentException();
+        }
+
         this.writer = writer;
     }
 

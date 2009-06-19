@@ -99,7 +99,7 @@ public class JXClient
                             final Object terminateSync = new Object();
                             final MetaserverModel metaserverModel = new MetaserverModel();
                             final Object semaphoreRedraw = new Object();
-                            final CrossfireServerConnection server = new DefaultCrossfireServerConnection(semaphoreRedraw, new DebugWriter(debugProtocolOutputStreamWriter));
+                            final CrossfireServerConnection server = new DefaultCrossfireServerConnection(semaphoreRedraw, debugProtocolOutputStreamWriter == null ? null : new DebugWriter(debugProtocolOutputStreamWriter));
                             server.start();
                             try
                             {
