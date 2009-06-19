@@ -20,20 +20,18 @@
 package com.realtime.crossfire.jxclient.server;
 
 import com.realtime.crossfire.jxclient.items.CfItem;
+import com.realtime.crossfire.jxclient.util.DebugWriter;
 import com.realtime.crossfire.jxclient.util.HexCodec;
 import java.io.BufferedReader;
 import java.io.ByteArrayInputStream;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.io.UnsupportedEncodingException;
-import java.io.Writer;
 import java.nio.ByteBuffer;
 import java.nio.ByteOrder;
 import java.nio.charset.Charset;
-import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.Date;
 import java.util.List;
 import java.util.concurrent.CopyOnWriteArrayList;
 import java.util.regex.Pattern;
@@ -234,12 +232,7 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
      * The appender to write protocol commands to. May be <code>null</code> to
      * not write anything.
      */
-    private final Writer debugProtocol;
-
-    /**
-     * A formatter for timestamps.
-     */
-    private final SimpleDateFormat simpleDateFormat = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss,SSS ");
+    private final DebugWriter debugProtocol;
 
     /**
      * The current connection state.
@@ -302,8 +295,9 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
      * commands to this writer
      * @throws IOException if an internal error occurs
      */
-    public DefaultCrossfireServerConnection(final Object redrawSemaphore, final Writer debugProtocol) throws IOException
+    public DefaultCrossfireServerConnection(final Object redrawSemaphore, final DebugWriter debugProtocol) throws IOException
     {
+        super(debugProtocol);
         this.redrawSemaphore = redrawSemaphore;
         byteBuffer.order(ByteOrder.BIG_ENDIAN);
         this.debugProtocol = debugProtocol;
@@ -541,7 +535,7 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
                             if (pos != end) break;
                             if (debugProtocol != null)
                             {
-                                debugProtocolWrite("recv addme_failed\n");
+                                debugProtocol.debugProtocolWrite("recv addme_failed");
                             }
                             // XXX: addme_failed command not implemented
                             notifyPacketWatcherListenersNodata(packet, start, args, end);
@@ -558,7 +552,7 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
                             if (pos != end) break;
                             if (debugProtocol != null)
                             {
-                                debugProtocolWrite("recv addme_success\n");
+                                debugProtocol.debugProtocolWrite("recv addme_success");
                             }
                             cmdAddmeSuccess();
                             notifyPacketWatcherListenersNodata(packet, start, args, end);
@@ -593,7 +587,7 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
                             if (pos > end) break;
                             if (debugProtocol != null)
                             {
-                                debugProtocolWrite("recv addspell tag="+tag+" lvl="+level+" time="+castingTime+" sp="+mana+" gr="+grace+" dam="+damage+" skill="+skill+" path="+path+" face="+face+" name="+name+" msg="+message+"\n");
+                                debugProtocol.debugProtocolWrite("recv addspell tag="+tag+" lvl="+level+" time="+castingTime+" sp="+mana+" gr="+grace+" dam="+damage+" skill="+skill+" path="+path+" face="+face+" name="+name+" msg="+message);
                             }
                             for (final CrossfireSpellListener crossfireSpellListener : crossfireSpellListeners)
                             {
@@ -623,7 +617,7 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
                         if (pos != end) break;
                         if (debugProtocol != null)
                         {
-                            debugProtocolWrite("recv addanim num="+num+" flags="+flags+" faces="+Arrays.toString(faces)+"\n");
+                            debugProtocol.debugProtocolWrite("recv addanim num="+num+" flags="+flags+" faces="+Arrays.toString(faces));
                         }
                         if ((num&~0x1FFF) != 0) throw new UnknownCommandException("invalid animation id "+num);
                         for (final CrossfireUpdateMapListener listener : crossfireUpdateMapListeners)
@@ -648,7 +642,7 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
                     if (pos != end) break;
                     if (debugProtocol != null)
                     {
-                        debugProtocolWrite("recv comc no="+packetNo+" time="+time+"\n");
+                        debugProtocol.debugProtocolWrite("recv comc no="+packetNo+" time="+time);
                     }
                     for (final CrossfireComcListener listener : crossfireComcListeners)
                     {
@@ -682,7 +676,7 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
                                 if (pos != end) break;
                                 if (debugProtocol != null)
                                 {
-                                    debugProtocolWrite("recv delinv tag="+tag+"\n");
+                                    debugProtocol.debugProtocolWrite("recv delinv tag="+tag);
                                 }
                                 for (final CrossfireUpdateItemListener crossfireUpdateItemListener : crossfireUpdateItemListeners)
                                 {
@@ -706,7 +700,7 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
                                 if (pos != end) break;
                                 if (debugProtocol != null)
                                 {
-                                    debugProtocolWrite("recv delitem tags="+Arrays.toString(tags)+"\n");
+                                    debugProtocol.debugProtocolWrite("recv delitem tags="+Arrays.toString(tags));
                                 }
                                 for (final CrossfireUpdateItemListener crossfireUpdateItemListener : crossfireUpdateItemListeners)
                                 {
@@ -730,7 +724,7 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
                             if (pos != end) break;
                             if (debugProtocol != null)
                             {
-                                debugProtocolWrite("recv delspell tag="+tag+"\n");
+                                debugProtocol.debugProtocolWrite("recv delspell tag="+tag);
                             }
                             for (final CrossfireSpellListener crossfireSpellListener : crossfireSpellListeners)
                             {
@@ -785,7 +779,7 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
 
                             if (debugProtocol != null)
                             {
-                                debugProtocolWrite("recv drawextinfo color="+color+" type="+type+"/"+subtype+" msg="+message+"\n");
+                                debugProtocol.debugProtocolWrite("recv drawextinfo color="+color+" type="+type+"/"+subtype+" msg="+message);
                             }
 
                             for (final CrossfireDrawextinfoListener listener : drawextinfoListeners)
@@ -815,7 +809,7 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
 
                             if (debugProtocol != null)
                             {
-                                debugProtocolWrite("recv drawinfo color="+color+" msg="+message+"\n");
+                                debugProtocol.debugProtocolWrite("recv drawinfo color="+color+" msg="+message);
                             }
 
                             drawInfo(message, color);
@@ -857,7 +851,7 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
                         pos++;
                         if (debugProtocol != null)
                         {
-                            debugProtocolWrite("recv ExtendedInfoSet "+string+"\n");
+                            debugProtocol.debugProtocolWrite("recv ExtendedInfoSet "+string);
                         }
                         // XXX: ExtendedInfoSet command not implemented
                     }
@@ -885,7 +879,7 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
                         pos++;
                         if (debugProtocol != null)
                         {
-                            debugProtocolWrite("recv ExtendedTextSet "+type+"\n");
+                            debugProtocol.debugProtocolWrite("recv ExtendedTextSet "+type);
                         }
                         // XXX: ExtendedTextSet command not implemented
                     }
@@ -909,7 +903,7 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
                     final String faceName = new String(packet, pos, end-pos, utf8).intern();
                     if (debugProtocol != null)
                     {
-                        debugProtocolWrite("recv face2 num="+faceNum+" set="+faceSetNum+" checksum="+faceChecksum+" name="+faceName+"\n");
+                        debugProtocol.debugProtocolWrite("recv face2 num="+faceNum+" set="+faceSetNum+" checksum="+faceChecksum+" name="+faceName);
                     }
                     for (final CrossfireFaceListener crossfireFaceListener : crossfireFaceListeners)
                     {
@@ -931,7 +925,7 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
                 if (pos != end) break;
                 if (debugProtocol != null)
                 {
-                    debugProtocolWrite("recv goodbye\n");
+                    debugProtocol.debugProtocolWrite("recv goodbye");
                 }
                 // XXX: goodbye command not implemented
                 notifyPacketWatcherListenersNodata(packet, start, args, end);
@@ -954,7 +948,7 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
                         if (pos+len != end) break;
                         if (debugProtocol != null)
                         {
-                            debugProtocolWrite("recv image2 face="+faceNum+" set="+faceSetNum+" len="+len+"\n");
+                            debugProtocol.debugProtocolWrite("recv image2 face="+faceNum+" set="+faceSetNum+" len="+len);
                         }
                         for (final CrossfireUpdateFaceListener listener : crossfireUpdateFaceListeners)
                         {
@@ -989,7 +983,7 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
                             final int type = ((packet[pos++]&0xFF)<<8)|(packet[pos++]&0xFF);
                             if (debugProtocol != null)
                             {
-                                debugProtocolWrite("recv item2 location="+location+" tag="+tag+" flags="+flags+" weight="+weight+" face="+faceNum+" name="+name+" name_pl="+namePl+" anim="+anim+" anim_speed="+animSpeed+" nrof="+nrof+" type="+type+"\n");
+                                debugProtocol.debugProtocolWrite("recv item2 location="+location+" tag="+tag+" flags="+flags+" weight="+weight+" face="+faceNum+" name="+name+" name_pl="+namePl+" anim="+anim+" anim_speed="+animSpeed+" nrof="+nrof+" type="+type);
                             }
                             for (final CrossfireUpdateItemListener crossfireUpdateItemListener : crossfireUpdateItemListeners)
                             {
@@ -1092,7 +1086,7 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
 
                         if (debugProtocol != null)
                         {
-                            debugProtocolWrite("recv magicmap size="+width+"x"+height+" player="+px+"/"+py+" len="+(end-pos)+"\n");
+                            debugProtocol.debugProtocolWrite("recv magicmap size="+width+"x"+height+" player="+px+"/"+py+" len="+(end-pos));
                         }
 
                         if (end-pos != width*height)
@@ -1129,7 +1123,7 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
                             args = pos;
                             if (debugProtocol != null)
                             {
-                                debugProtocolWrite("recv mapextended\n");
+                                debugProtocol.debugProtocolWrite("recv mapextended");
                             }
                             cmdMapextended(packet, pos, end-pos);
                             notifyPacketWatcherListenersMixed(packet, start, args, end);
@@ -1148,7 +1142,7 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
                     final String music = new String(packet, pos, end-pos, utf8);
                     if (debugProtocol != null)
                     {
-                        debugProtocolWrite("recv music "+music+"\n");
+                        debugProtocol.debugProtocolWrite("recv music "+music);
                     }
 
                     for (final CrossfireMusicListener listener : crossfireMusicListeners)
@@ -1170,7 +1164,7 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
                 if (pos != end) break;
                 if (debugProtocol != null)
                 {
-                    debugProtocolWrite("recv newmap\n");
+                    debugProtocol.debugProtocolWrite("recv newmap");
                 }
                 for (final CrossfireUpdateMapListener listener : crossfireUpdateMapListeners)
                 {
@@ -1197,7 +1191,7 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
                     if (pos != end) break;
                     if (debugProtocol != null)
                     {
-                        debugProtocolWrite("recv player tag="+tag+" weight="+weight+" face="+faceNum+" name="+name+"\n");
+                        debugProtocol.debugProtocolWrite("recv player tag="+tag+" weight="+weight+" face="+faceNum+" name="+name);
                     }
                     for (final CrossfireUpdateItemListener crossfireUpdateItemListener : crossfireUpdateItemListeners)
                     {
@@ -1227,7 +1221,7 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
 
                     if (debugProtocol != null)
                     {
-                        debugProtocolWrite("recv query flags="+flags+" text="+text+"\n");
+                        debugProtocol.debugProtocolWrite("recv query flags="+flags+" text="+text);
                     }
 
                     // XXX: hack to process "What is your name?" prompt even before addme_success is received
@@ -1263,7 +1257,7 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
                     final String infoType = new String(packet, startPos, pos-startPos, utf8);
                     if (debugProtocol != null)
                     {
-                        debugProtocolWrite("recv replyinfo type="+infoType+" len="+(end-(pos+1))+"\n");
+                        debugProtocol.debugProtocolWrite("recv replyinfo type="+infoType+" len="+(end-(pos+1)));
                     }
                     try
                     {
@@ -1307,7 +1301,7 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
                     if (pos != end) break;
                     if (debugProtocol != null)
                     {
-                        debugProtocolWrite("recv setup "+options+"\n");
+                        debugProtocol.debugProtocolWrite("recv setup "+options);
                     }
                     if (options.size()%2 != 0)
                     {
@@ -1330,7 +1324,7 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
                         if (pos != end) break;
                         if (debugProtocol != null)
                         {
-                            debugProtocolWrite("recv smooth face="+facenbr+" smoothpic="+smoothpic+"\n");
+                            debugProtocol.debugProtocolWrite("recv smooth face="+facenbr+" smoothpic="+smoothpic);
                         }
                         // XXX: smooth command not implemented
                     }
@@ -1353,7 +1347,7 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
                             if (pos != end) break;
                             if (debugProtocol != null)
                             {
-                                debugProtocolWrite("recv sound pos="+x+"/"+y+" num="+num+" type="+type+"\n");
+                                debugProtocol.debugProtocolWrite("recv sound pos="+x+"/"+y+" num="+num+" type="+type);
                             }
 
                             for (final CrossfireSoundListener listener : crossfireSoundListeners)
@@ -1382,7 +1376,7 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
                             if (pos != end) break;
                             if (debugProtocol != null)
                             {
-                                debugProtocolWrite("recv sound2 pos="+x+"/"+y+" dir="+dir+" volume="+volume+" type="+type+" action="+action+" name="+name+"\n");
+                                debugProtocol.debugProtocolWrite("recv sound2 pos="+x+"/"+y+" dir="+dir+" volume="+volume+" type="+type+" action="+action+" name="+name);
                             }
 
                             for (final CrossfireSoundListener listener : crossfireSoundListeners)
@@ -1428,7 +1422,7 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
                             final short int2Param = (short)(((packet[pos++]&0xFF)<<8)|(packet[pos++]&0xFF));
                             if (debugProtocol != null)
                             {
-                                debugProtocolWrite("recv stats stat="+stat+" int2="+int2Param+"="+(int2Param&0xFFFF)+"\n");
+                                debugProtocol.debugProtocolWrite("recv stats stat="+stat+" int2="+int2Param+"="+(int2Param&0xFFFF));
                             }
                             for(final CrossfireStatsListener crossfireStatsListener : crossfireStatsListeners)
                             {
@@ -1447,7 +1441,7 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
                             final int int4Param = ((packet[pos++]&0xFF)<<24)|((packet[pos++]&0xFF)<<16)|((packet[pos++]&0xFF)<<8)|(packet[pos++]&0xFF);
                             if (debugProtocol != null)
                             {
-                                debugProtocolWrite("recv stats stat="+stat+" int4="+int4Param+"\n");
+                                debugProtocol.debugProtocolWrite("recv stats stat="+stat+" int4="+int4Param);
                             }
                             for(final CrossfireStatsListener crossfireStatsListener : crossfireStatsListeners)
                             {
@@ -1460,7 +1454,7 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
                             final long int8Param = ((long)(packet[pos++]&0xFF)<<56)|((long)(packet[pos++]&0xFF)<<48)|((long)(packet[pos++]&0xFF)<<40)|((long)(packet[pos++]&0xFF)<<32)|((long)(packet[pos++]&0xFF)<<24)|((packet[pos++]&0xFF)<<16)|((packet[pos++]&0xFF)<<8)|(packet[pos++]&0xFF);
                             if (debugProtocol != null)
                             {
-                                debugProtocolWrite("recv stats stat="+stat+" int8="+int8Param+"\n");
+                                debugProtocol.debugProtocolWrite("recv stats stat="+stat+" int8="+int8Param);
                             }
                             for(final CrossfireStatsListener crossfireStatsListener : crossfireStatsListeners)
                             {
@@ -1476,7 +1470,7 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
                             pos += length;
                             if (debugProtocol != null)
                             {
-                                debugProtocolWrite("recv stats stat="+stat+" str="+strParam+"\n");
+                                debugProtocol.debugProtocolWrite("recv stats stat="+stat+" str="+strParam);
                             }
                             for(final CrossfireStatsListener crossfireStatsListener : crossfireStatsListeners)
                             {
@@ -1491,7 +1485,7 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
                                 final short int2Param2 = (short)(((packet[pos++]&0xFF)<<8)|(packet[pos++]&0xFF));
                                 if (debugProtocol != null)
                                 {
-                                    debugProtocolWrite("recv stats stat="+stat+" int2="+int2Param2+"\n");
+                                    debugProtocol.debugProtocolWrite("recv stats stat="+stat+" int2="+int2Param2);
                                 }
                                 for(final CrossfireStatsListener crossfireStatsListener : crossfireStatsListeners)
                                 {
@@ -1505,7 +1499,7 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
                                 final long experience = ((long)(packet[pos++]&0xFF)<<56)|((long)(packet[pos++]&0xFF)<<48)|((long)(packet[pos++]&0xFF)<<40)|((long)(packet[pos++]&0xFF)<<32)|((long)(packet[pos++]&0xFF)<<24)|((packet[pos++]&0xFF)<<16)|((packet[pos++]&0xFF)<<8)|(packet[pos++]&0xFF);
                                 if (debugProtocol != null)
                                 {
-                                    debugProtocolWrite("recv stats stat="+stat+" level="+level+" experience="+experience+"\n");
+                                    debugProtocol.debugProtocolWrite("recv stats stat="+stat+" level="+level+" experience="+experience);
                                 }
                                 for(final CrossfireStatsListener crossfireStatsListener : crossfireStatsListeners)
                                 {
@@ -1517,7 +1511,7 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
                             {
                                 if (debugProtocol != null)
                                 {
-                                    debugProtocolWrite("recv stats stat="+stat+" <unknown parameter>\n");
+                                    debugProtocol.debugProtocolWrite("recv stats stat="+stat+" <unknown parameter>");
                                 }
                                 throw new UnknownCommandException("unknown stat value: "+stat);
                             }
@@ -1540,7 +1534,7 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
                     if (pos != end) break;
                     if (debugProtocol != null)
                     {
-                        debugProtocolWrite("recv tick "+tickNo+"\n");
+                        debugProtocol.debugProtocolWrite("recv tick "+tickNo);
                     }
                     for (final CrossfireTickListener listener : crossfireTickListeners)
                     {
@@ -1593,7 +1587,7 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
                         if (pos != end) break;
                         if (debugProtocol != null)
                         {
-                            debugProtocolWrite("recv upditem flags="+flags+" tag="+tag+" loc="+valLocation+" flags="+valFlags+" weight="+valWeight+" face="+valFaceNum+" name="+valName+" name_pl="+valNamePl+" anim="+valAnim+" anim_speed="+valAnimSpeed+" nrof="+valNrof+"\n");
+                            debugProtocol.debugProtocolWrite("recv upditem flags="+flags+" tag="+tag+" loc="+valLocation+" flags="+valFlags+" weight="+valWeight+" face="+valFaceNum+" name="+valName+" name_pl="+valNamePl+" anim="+valAnim+" anim_speed="+valAnimSpeed+" nrof="+valNrof);
                         }
                         for (final CrossfireUpdateItemListener crossfireUpdateItemListener : crossfireUpdateItemListeners)
                         {
@@ -1619,7 +1613,7 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
                         if (pos != end) break;
                         if (debugProtocol != null)
                         {
-                            debugProtocolWrite("recv updspell flags="+flags+" tag="+tag+" sp="+mana+" gr="+grace+" dam="+damage+"\n");
+                            debugProtocol.debugProtocolWrite("recv updspell flags="+flags+" tag="+tag+" sp="+mana+" gr="+grace+" dam="+damage);
                         }
                         for (final CrossfireSpellListener crossfireSpellListener : crossfireSpellListeners)
                         {
@@ -1661,7 +1655,7 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
 
                     if (debugProtocol != null)
                     {
-                        debugProtocolWrite("recv version cs="+csval+" sc="+scval+" info="+vinfo+"\n");
+                        debugProtocol.debugProtocolWrite("recv version cs="+csval+" sc="+scval+" info="+vinfo);
                     }
 
                     cmdVersion(csval, scval, vinfo);
@@ -1696,7 +1690,7 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
 
                 HexCodec.hexEncode2(sb, packet[i]&0xFF);
             }
-            debugProtocolWrite(sb.toString());
+            debugProtocol.debugProtocolWrite(sb.toString());
         }
 
         final String command = extractCommand(packet, start, end);
@@ -1751,7 +1745,7 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
             }
             if (debugProtocol != null)
             {
-                debugProtocolWrite("recv map2 begin\n");
+                debugProtocol.debugProtocolWrite("recv map2 begin");
             }
             int pos = start;
             while (pos < end)
@@ -1780,7 +1774,7 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
                             if (len != 0) throw new UnknownCommandException("map2 command contains clear command with length "+len);
                             if (debugProtocol != null)
                             {
-                                debugProtocolWrite("recv map2 "+x+"/"+y+" clear\n");
+                                debugProtocol.debugProtocolWrite("recv map2 "+x+"/"+y+" clear");
                             }
                             for (final CrossfireUpdateMapListener listener : crossfireUpdateMapListeners)
                             {
@@ -1793,7 +1787,7 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
                             final int darkness = packet[pos++]&0xFF;
                             if (debugProtocol != null)
                             {
-                                debugProtocolWrite("recv map2 "+x+"/"+y+" darkness="+darkness+"\n");
+                                debugProtocol.debugProtocolWrite("recv map2 "+x+"/"+y+" darkness="+darkness);
                             }
                             for (final CrossfireUpdateMapListener listener : crossfireUpdateMapListeners)
                             {
@@ -1817,7 +1811,7 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
                             {
                                 if (debugProtocol != null)
                                 {
-                                    debugProtocolWrite("recv map2 "+x+"/"+y+"/"+(type-0x10)+" face="+face+"\n");
+                                    debugProtocol.debugProtocolWrite("recv map2 "+x+"/"+y+"/"+(type-0x10)+" face="+face);
                                 }
                                 for (final CrossfireUpdateMapListener listener : crossfireUpdateMapListeners)
                                 {
@@ -1828,7 +1822,7 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
                             {
                                 if (debugProtocol != null)
                                 {
-                                    debugProtocolWrite("recv map2 "+x+"/"+y+"/"+(type-0x10)+" anim="+(face&0x1FFF)+" type="+((face>>13)&3)+"\n");
+                                    debugProtocol.debugProtocolWrite("recv map2 "+x+"/"+y+"/"+(type-0x10)+" anim="+(face&0x1FFF)+" type="+((face>>13)&3));
                                 }
                                 for (final CrossfireUpdateMapListener listener : crossfireUpdateMapListeners)
                                 {
@@ -1847,7 +1841,7 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
                                     final int smooth = packet[pos++]&0xFF;
                                     if (debugProtocol != null)
                                     {
-                                        debugProtocolWrite("recv map2 "+x+"/"+y+"/"+(type-0x10)+" smooth="+smooth+"\n");
+                                        debugProtocol.debugProtocolWrite("recv map2 "+x+"/"+y+"/"+(type-0x10)+" smooth="+smooth);
                                     }
                                     // XXX: update smoothing information
                                 }
@@ -1856,7 +1850,7 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
                                     final int animSpeed = packet[pos++]&0xFF;
                                     if (debugProtocol != null)
                                     {
-                                        debugProtocolWrite("recv map2 "+x+"/"+y+"/"+(type-0x10)+" anim_speed="+animSpeed+"\n");
+                                        debugProtocol.debugProtocolWrite("recv map2 "+x+"/"+y+"/"+(type-0x10)+" anim_speed="+animSpeed);
                                     }
                                     for (final CrossfireUpdateMapListener listener : crossfireUpdateMapListeners)
                                     {
@@ -1874,7 +1868,7 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
                                 final int animSpeed = packet[pos++]&0xFF;
                                 if (debugProtocol != null)
                                 {
-                                    debugProtocolWrite("recv map2 "+x+"/"+y+"/"+(type-0x10)+" anim_speed="+animSpeed+"\n");
+                                    debugProtocol.debugProtocolWrite("recv map2 "+x+"/"+y+"/"+(type-0x10)+" anim_speed="+animSpeed);
                                 }
                                 for (final CrossfireUpdateMapListener listener : crossfireUpdateMapListeners)
                                 {
@@ -1884,7 +1878,7 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
                                 final int smooth = packet[pos++]&0xFF;
                                 if (debugProtocol != null)
                                 {
-                                    debugProtocolWrite("recv map2 "+x+"/"+y+"/"+(type-0x10)+" smooth="+smooth+"\n");
+                                    debugProtocol.debugProtocolWrite("recv map2 "+x+"/"+y+"/"+(type-0x10)+" smooth="+smooth);
                                 }
                                 // XXX: update smoothing information
                             }
@@ -1892,7 +1886,7 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
                             {
                                 if (debugProtocol != null)
                                 {
-                                    debugProtocolWrite("recv map2 "+x+"/"+y+"/"+(type-0x10)+" <invalid>\n");
+                                    debugProtocol.debugProtocolWrite("recv map2 "+x+"/"+y+"/"+(type-0x10)+" <invalid>");
                                 }
                                 throw new UnknownCommandException("map2 command contains image command with length "+len);
                             }
@@ -1903,7 +1897,7 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
                 case 1:         // scroll information
                     if (debugProtocol != null)
                     {
-                        debugProtocolWrite("recv map2 "+x+"/"+y+" scroll\n");
+                        debugProtocol.debugProtocolWrite("recv map2 "+x+"/"+y+" scroll");
                     }
                     for (final CrossfireUpdateMapListener listener : crossfireUpdateMapListeners)
                     {
@@ -1914,7 +1908,7 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
                 default:
                     if (debugProtocol != null)
                     {
-                        debugProtocolWrite("recv map2 "+x+"/"+y+" <invalid>\n");
+                        debugProtocol.debugProtocolWrite("recv map2 "+x+"/"+y+" <invalid>");
                     }
                     throw new UnknownCommandException("map2 command contains unexpected coordinate type "+coordType);
                 }
@@ -1925,7 +1919,7 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
             }
             if (debugProtocol != null)
             {
-                debugProtocolWrite("recv map2 end\n");
+                debugProtocol.debugProtocolWrite("recv map2 end");
             }
             for (final CrossfireUpdateMapListener listener : crossfireUpdateMapListeners)
             {
@@ -2283,7 +2277,7 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
     {
         if (debugProtocol != null)
         {
-            debugProtocolWrite("send addme\n");
+            debugProtocol.debugProtocolWrite("send addme");
         }
         writePacket(addmePrefix, addmePrefix.length);
     }
@@ -2294,7 +2288,7 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
     {
         if (debugProtocol != null)
         {
-            debugProtocolWrite("send apply tag="+tag+"\n");
+            debugProtocol.debugProtocolWrite("send apply tag="+tag);
         }
         synchronized (writeBuffer)
         {
@@ -2311,7 +2305,7 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
     {
         if (debugProtocol != null)
         {
-            debugProtocolWrite("send askface face="+num+"\n");
+            debugProtocol.debugProtocolWrite("send askface face="+num);
         }
         synchronized (writeBuffer)
         {
@@ -2328,7 +2322,7 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
     {
         if (debugProtocol != null)
         {
-            debugProtocolWrite("send examine tag="+tag+"\n");
+            debugProtocol.debugProtocolWrite("send examine tag="+tag);
         }
         synchronized (writeBuffer)
         {
@@ -2345,7 +2339,7 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
     {
         if (debugProtocol != null)
         {
-            debugProtocolWrite("send lock tag="+tag+" val="+val+"\n");
+            debugProtocol.debugProtocolWrite("send lock tag="+tag+" val="+val);
         }
         synchronized (writeBuffer)
         {
@@ -2363,7 +2357,7 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
     {
         if (debugProtocol != null)
         {
-            debugProtocolWrite("send lockat pos="+dx+"/"+dy+"\n");
+            debugProtocol.debugProtocolWrite("send lockat pos="+dx+"/"+dy);
         }
         synchronized (writeBuffer)
         {
@@ -2382,7 +2376,7 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
     {
         if (debugProtocol != null)
         {
-            debugProtocolWrite("send mark tag="+tag+"\n");
+            debugProtocol.debugProtocolWrite("send mark tag="+tag);
         }
         synchronized (writeBuffer)
         {
@@ -2399,7 +2393,7 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
     {
         if (debugProtocol != null)
         {
-            debugProtocolWrite("send move tag="+tag+" to="+to+" nrof="+nrof+"\n");
+            debugProtocol.debugProtocolWrite("send move tag="+tag+" to="+to+" nrof="+nrof);
         }
         synchronized (writeBuffer)
         {
@@ -2420,7 +2414,7 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
     {
         if (debugProtocol != null)
         {
-            debugProtocolWrite("send ncom no="+packet+" repeat="+repeat+" cmd="+command+"\n");
+            debugProtocol.debugProtocolWrite("send ncom no="+packet+" repeat="+repeat+" cmd="+command);
         }
         final int thisPacket;
         synchronized (writeBuffer)
@@ -2442,7 +2436,7 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
     {
         if (debugProtocol != null)
         {
-            debugProtocolWrite("send reply text="+text+"\n");
+            debugProtocol.debugProtocolWrite("send reply text="+text);
         }
         synchronized (writeBuffer)
         {
@@ -2459,7 +2453,7 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
     {
         if (debugProtocol != null)
         {
-            debugProtocolWrite("send requestinfo type="+infoType+"\n");
+            debugProtocol.debugProtocolWrite("send requestinfo type="+infoType);
         }
         synchronized (writeBuffer)
         {
@@ -2476,7 +2470,7 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
     {
         if (debugProtocol != null)
         {
-            debugProtocolWrite("send setup options="+Arrays.toString(options)+"\n");
+            debugProtocol.debugProtocolWrite("send setup options="+Arrays.toString(options));
         }
         synchronized (writeBuffer)
         {
@@ -2509,7 +2503,7 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
 
         if (debugProtocol != null)
         {
-            debugProtocolWrite("send toggleextendedtext types="+Arrays.toString(types)+"\n");
+            debugProtocol.debugProtocolWrite("send toggleextendedtext types="+Arrays.toString(types));
         }
         synchronized (writeBuffer)
         {
@@ -2530,7 +2524,7 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
     {
         if (debugProtocol != null)
         {
-            debugProtocolWrite("send version cs="+csval+" sc="+scval+" info="+vinfo+"\n");
+            debugProtocol.debugProtocolWrite("send version cs="+csval+" sc="+scval+" info="+vinfo);
         }
         synchronized (writeBuffer)
         {
@@ -2584,26 +2578,6 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
             throw new UnknownCommandException("not a digit: "+ch);
         }
         return digit;
-    }
-
-    /**
-     * Writes a message to the debug protocol.
-     * @param str the message to write
-     */
-    private void debugProtocolWrite(final String str)
-    {
-        try
-        {
-            debugProtocol.append(simpleDateFormat.format(new Date()));
-            debugProtocol.append(str);
-            debugProtocol.flush();
-        }
-        catch (final IOException ex)
-        {
-            System.err.println("Cannot write debug protocol: "+ex.getMessage());
-            System.exit(1);
-            throw new AssertionError();
-        }
     }
 
     /**
@@ -2879,7 +2853,7 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
     {
         if (debugProtocol != null)
         {
-            debugProtocolWrite("connection state: "+nextState+"\n");
+            debugProtocol.debugProtocolWrite("connection state: "+nextState);
         }
         if (clientSocketState != prevState)
         {

@@ -19,6 +19,7 @@
 //
 package com.realtime.crossfire.jxclient.server;
 
+import com.realtime.crossfire.jxclient.util.DebugWriter;
 import java.io.IOException;
 
 /**
@@ -34,9 +35,15 @@ public abstract class DefaultServerConnection implements ServerConnection
 {
     private final ClientSocket clientSocket;
 
-    protected DefaultServerConnection() throws IOException
+    /**
+     * Creates a new instance.
+     * @param debugProtocol tf non-<code>null</code>, write all protocol
+     * commands to this writer
+     * @throws IOException if an internal error occurs
+     */
+    protected DefaultServerConnection(final DebugWriter debugProtocol) throws IOException
     {
-        clientSocket = new ClientSocket();
+        clientSocket = new ClientSocket(debugProtocol);
     }
 
     /**
