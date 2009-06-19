@@ -19,6 +19,7 @@
 //
 package com.realtime.crossfire.jxclient.server;
 
+import com.realtime.crossfire.jxclient.util.DebugWriter;
 import java.io.EOFException;
 import java.io.IOException;
 import java.net.InetSocketAddress;
@@ -48,6 +49,12 @@ public class ClientSocket
      * The maximum payload size of a Crossfire protocol packet.
      */
     private static final int MAXIMUM_PACKET_SIZE = 65536;
+
+    /**
+     * The appender to write state changes to. May be <code>null</code> to not
+     * write anything.
+     */
+    private final DebugWriter debugProtocol;
 
     /**
      * The {@link ClientSocketListener}s to notify.
@@ -161,10 +168,13 @@ public class ClientSocket
 
     /**
      * Creates a new instance.
+     * @param debugProtocol tf non-<code>null</code>, write all protocol
+     * commands to this writer
      * @throws IOException if the socket cannot be created
      */
-    public ClientSocket() throws IOException
+    public ClientSocket(final DebugWriter debugProtocol) throws IOException
     {
+        this.debugProtocol = debugProtocol;
         selector = Selector.open();
     }
 
@@ -173,6 +183,7 @@ public class ClientSocket
      */
     public void start()
     {
+        debugProtocol.debugProtocolWrite("socket:start");
         thread.start();
     }
 
@@ -182,8 +193,10 @@ public class ClientSocket
      */
     public void stop() throws InterruptedException
     {
+        debugProtocol.debugProtocolWrite("socket:stop");
         thread.interrupt();
         thread.join();
+        debugProtocol.debugProtocolWrite("socket:stopped");
     }
 
     /**
@@ -211,6 +224,7 @@ public class ClientSocket
      */
     public void connect(final String host, final int port)
     {
+        debugProtocol.debugProtocolWrite("socket:connect "+host+":"+port);
         synchronized (syncConnect)
         {
             if (this.host == null || this.port == 0 || !this.host.equals(host) || this.port != port)
@@ -228,6 +242,7 @@ public class ClientSocket
      */
     public void disconnect()
     {
+        debugProtocol.debugProtocolWrite("socket:disconnect");
         synchronized (syncConnect)
         {
             if (host != null || port != 0)
@@ -319,6 +334,7 @@ public class ClientSocket
             }
             catch (final IOException ex)
             {
+                debugProtocol.debugProtocolWrite("socket:exception "+ex.getMessage(), ex);
                 processDisconnect(ex.getMessage());
             }
         }
@@ -332,6 +348,7 @@ public class ClientSocket
      */
     private void processConnect(final String host, final int port) throws IOException
     {
+        debugProtocol.debugProtocolWrite("socket:connecting to "+host+":"+port);
         disconnectPending = true;
         for (final ClientSocketListener clientSocketListener : clientSocketListeners)
         {
@@ -383,6 +400,7 @@ public class ClientSocket
      */
     private void processDisconnect(final String reason)
     {
+        debugProtocol.debugProtocolWrite("socket:disconnecting");
         final boolean notifyListeners;
         synchronized (syncOutput)
         {
@@ -628,6 +646,7 @@ public class ClientSocket
      */
     private void updateInterestOps()
     {
+        debugProtocol.debugProtocolWrite("socket:set interest ops to "+interestOps);
         assert Thread.holdsLock(syncOutput);
         if (selectionKey != null)
         {

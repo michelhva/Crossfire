@@ -32,6 +32,7 @@ import com.realtime.crossfire.jxclient.sound.SoundManager;
 import com.realtime.crossfire.jxclient.sound.SoundWatcher;
 import com.realtime.crossfire.jxclient.sound.StatsWatcher;
 import com.realtime.crossfire.jxclient.stats.Stats;
+import com.realtime.crossfire.jxclient.util.DebugWriter;
 import com.realtime.crossfire.jxclient.window.JXCWindow;
 import java.io.FileOutputStream;
 import java.io.IOException;
@@ -98,7 +99,7 @@ public class JXClient
                             final Object terminateSync = new Object();
                             final MetaserverModel metaserverModel = new MetaserverModel();
                             final Object semaphoreRedraw = new Object();
-                            final CrossfireServerConnection server = new DefaultCrossfireServerConnection(semaphoreRedraw, debugProtocolOutputStreamWriter);
+                            final CrossfireServerConnection server = new DefaultCrossfireServerConnection(semaphoreRedraw, new DebugWriter(debugProtocolOutputStreamWriter));
                             server.start();
                             try
                             {
