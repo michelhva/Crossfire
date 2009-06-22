@@ -40,6 +40,7 @@ no_pick 1
 speed -0.50
 weight 300000
 run_away 5
+pick_up 1
 can_use_weapon 1
 can_use_shield 1
 can_use_armour 1

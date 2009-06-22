@@ -34,6 +34,7 @@ no_pick 1
 speed 1.0
 weight 400000
 run_away 3
+pick_up 1
 can_use_scroll 1
 can_use_range 1
 can_cast_spell 1
