@@ -28,6 +28,7 @@ sleep 1
 Wis 13
 alive 1
 run_away 3
+pick_up 1
 can_use_weapon 1
 can_use_skill 1
 body_skill 1

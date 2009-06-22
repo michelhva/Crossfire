@@ -35,6 +35,7 @@ run_away 1
 see_invisible 1
 will_apply 2
 unaggressive 1
+pick_up 1
 can_use_scroll 1
 can_use_skill 1
 can_cast_spell 1

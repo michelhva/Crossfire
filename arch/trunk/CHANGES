@@ -1,5 +1,8 @@
 Changes for SVN top of tree:
 
+Make most trolls and giants pick up items.
+Andreas Kirschbaum 2009-06-22
+
 Remove 'type 15' (weapon) from boulders. Reverts r11291 as the server now can
 handle 'type 0' (misc) objects.
 Andreas Kirschbaum 2009-06-17
