@@ -34,6 +34,7 @@ move_type walk
 sleep 1
 Wis 20
 see_invisible 1
+will_apply 12
 run_away 2
 end
 More

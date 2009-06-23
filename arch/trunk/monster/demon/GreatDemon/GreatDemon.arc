@@ -45,6 +45,7 @@ move_type walk
 sleep 1
 Wis 20
 see_invisible 1
+will_apply 14
 run_away 2
 body_skill 1
 body_finger 2

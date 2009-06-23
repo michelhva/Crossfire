@@ -33,7 +33,7 @@ speed 0.850000
 level 117
 attacktype 66332
 pick_up 24
-will_apply 2
+will_apply 15
 alive 1
 no_pick 1
 monster 1

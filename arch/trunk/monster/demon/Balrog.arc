@@ -40,7 +40,7 @@ level 30
 speed 0.4
 weight 500000
 pick_up 24
-will_apply 2
+will_apply 14
 run_away 10
 can_use_scroll 1
 can_use_skill 1

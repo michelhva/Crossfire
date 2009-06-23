@@ -35,6 +35,7 @@ monster 1
 move_type walk
 Wis 13
 alive 1
+will_apply 12
 run_away 3
 attack_movement 5
 can_use_weapon 1
