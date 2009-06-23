@@ -25,6 +25,7 @@ attacktype 1
 resist_fire -100
 weight 200000
 run_away 15
+will_apply 15
 alive 1
 no_pick 1
 is_animated 1
