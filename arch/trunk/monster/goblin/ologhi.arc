@@ -22,6 +22,7 @@ maxhp 5000
 wc -100
 dam 100
 speed -0.25
+will_apply 12
 attack_movement 5
 resist_physical 100
 resist_magic -100

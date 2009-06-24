@@ -20,7 +20,7 @@ level 3
 speed 0.1
 weight 50000
 run_away 10
-will_apply 2
+will_apply 12
 pick_up 24
 can_use_bow 1
 can_use_ring 1
