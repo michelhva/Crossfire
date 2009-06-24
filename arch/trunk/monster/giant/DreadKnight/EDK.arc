@@ -35,6 +35,7 @@ can_use_ring 1
 can_use_shield 1
 can_use_armour 1
 can_use_weapon 1
+will_apply 12
 resist_physical 70
 resist_magic 100
 resist_fire 50

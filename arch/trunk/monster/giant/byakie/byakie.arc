@@ -38,6 +38,7 @@ alive 1
 no_pick 1
 speed -0.35
 can_cast_spell 1
+will_apply 12
 weight 30000000
 run_away 2
 end
