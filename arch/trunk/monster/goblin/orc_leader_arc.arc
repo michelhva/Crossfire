@@ -20,7 +20,7 @@ level 2
 speed -0.15
 weight 23000
 run_away 25
-will_apply 2
+will_apply 12
 pick_up 24
 can_use_bow 1
 can_use_ring 1
