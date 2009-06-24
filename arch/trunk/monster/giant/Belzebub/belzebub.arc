@@ -33,7 +33,7 @@ speed -0.5
 weight 1000000
 run_away 1
 see_invisible 1
-will_apply 2
+will_apply 12
 unaggressive 1
 pick_up 1
 can_use_scroll 1

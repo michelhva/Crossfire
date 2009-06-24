@@ -44,6 +44,7 @@ can_use_weapon 1
 can_use_bow 1
 can_use_range 1
 can_use_skill 1
+will_apply 12
 body_skill 1
 body_arm 2
 body_range 1

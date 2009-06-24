@@ -47,6 +47,7 @@ can_use_armour 1
 can_use_range 1
 can_use_ring 1
 can_use_scroll 1
+will_apply 12
 body_torso 1
 body_head 1
 body_shoulder 1
