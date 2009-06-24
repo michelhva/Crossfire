@@ -18,7 +18,6 @@ Dex 15
 Con 10
 Wis 13
 level 12
-alive 1
 speed -0.3
 weight 500000
 monster 1
