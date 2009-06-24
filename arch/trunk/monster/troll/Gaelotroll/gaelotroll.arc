@@ -19,7 +19,6 @@ Int 10
 Con 20
 maxhp 3000
 level 50
-alive 1
 speed -0.2
 weight 3000000
 monster 1
