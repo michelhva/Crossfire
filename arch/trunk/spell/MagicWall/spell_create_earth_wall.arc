@@ -3,7 +3,7 @@ anim_suffix spellcasting
 name create earth wall
 name_pl create earth wall
 face spell_summoner.111
-level 4
+level 8
 sp 6
 casting_time 12
 path_attuned 2048
@@ -14,7 +14,7 @@ subtype 15
 value 40
 no_drop 1
 invisible 1
-duration 40
+duration 800
 duration_modifier 1
 range 2
 range_modifier 10
