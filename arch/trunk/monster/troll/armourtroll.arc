@@ -26,7 +26,7 @@ level 8
 speed 0.12
 weight 100000
 run_away 5
-will_apply 2
+will_apply 12
 pick_up 8
 can_use_ring 1
 can_use_weapon 1
@@ -63,7 +63,7 @@ level 8
 speed 0.12
 weight 100000
 run_away 5
-will_apply 2
+will_apply 12
 pick_up 8
 can_use_ring 1
 can_use_weapon 1
@@ -100,7 +100,7 @@ level 8
 speed 0.12
 weight 100000
 run_away 5
-will_apply 2
+will_apply 12
 pick_up 8
 can_use_ring 1
 can_use_weapon 1
