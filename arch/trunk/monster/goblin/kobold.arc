@@ -16,7 +16,6 @@ hp 10
 maxhp 10
 level 1
 speed 0.2
-will_apply 12
 weight 30000
 run_away 90
 end

@@ -27,7 +27,6 @@ resist_electricity 50
 weight 140000
 run_away 15
 run_away 30
-will_apply 12
 can_use_scroll 1
 can_use_skill 1
 can_use_bow 1
