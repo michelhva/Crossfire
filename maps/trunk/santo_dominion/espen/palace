@@ -8,7 +8,7 @@ enter_x 1
 enter_y 15
 msg
 Created:  1994-11-14
-Modified: 2009-07-06 Kevin Bulgrien
+Modified: 2009-07-07 Kevin Bulgrien
 endmsg
 end
 arch woodfloor
@@ -906,9 +906,8 @@ end
 arch sign
 msg
 	Welcome to my mansion...
-Inside this most fantastic mansion lies unknown danger and treasure.......
-Many have entered but, only a few have successfully escaped with the rumored
-great treasures...
+Inside this most fantastic mansion lies unknown danger and treasure...
+Many have entered but, only a few have successfully escaped with the rumored great treasures...
 endmsg
 x 3
 y 16
@@ -1133,7 +1132,7 @@ y 7
 end
 arch magic_mouth
 msg
-Great danger lies beond this door.........
+Great danger lies beond this door...
 endmsg
 x 4
 y 8
@@ -1266,7 +1265,7 @@ y 23
 end
 arch magic_mouth
 msg
-Don't disturb the pets......
+Don't disturb the pets...
 endmsg
 x 4
 y 24
@@ -1774,7 +1773,7 @@ y 26
 end
 arch magic_mouth
 msg
-Don't disturb the pets......
+Don't disturb the pets...
 endmsg
 x 6
 y 27
@@ -6129,8 +6128,7 @@ arch woman
 name Lady Ramsdre
 msg
 @match block|stone
-It used to be opened, but closed when
-the clock was moved to the corner
+It used to be opened, but closed when the clock was moved to the corner
 @match *
 How may I help you
 endmsg
@@ -8159,7 +8157,7 @@ y 8
 end
 arch magic_mouth
 msg
-Dormetory
+Dormatory
 endmsg
 x 27
 y 9
@@ -8186,7 +8184,7 @@ y 10
 end
 arch magic_mouth
 msg
-Dining hall
+Dining Hall
 endmsg
 x 27
 y 11
@@ -8297,7 +8295,7 @@ y 18
 end
 arch magic_mouth
 msg
-Dining hall
+Dining Hall
 endmsg
 x 27
 y 19
@@ -8324,7 +8322,7 @@ y 20
 end
 arch magic_mouth
 msg
-Training hall
+Training Hall
 endmsg
 x 27
 y 21
