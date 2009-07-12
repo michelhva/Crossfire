@@ -3,9 +3,21 @@
   <name>MapNormalizer</name>
   <code><![CDATA[import java.io.File;
 import java.util.Iterator;
+import net.sf.gridarta.gameobject.GameObject;
 import net.sf.gridarta.gui.shrinkmapsizedialog.ShrinkMapSizeUtils;
 import net.sf.gridarta.io.RecursiveFileIterator;
+import net.sf.gridarta.map.mapmodel.MapModel;
+import net.sf.gridarta.map.mapmodel.MapSquare;
 import net.sf.gridarta.utils.CommonConstants;
+
+void normalizeGameObject(GameObject gameObject) {
+    Iterator it = gameObject.iterator();
+    while (it.hasNext()) {
+        normalizeGameObject(it.next());
+    }
+
+    gameObject.setObjectText(gameObject.getArchetype().diffArchText(gameObject.getObjectText(), false));
+}
 
 void normalizeMap(File mapFile, String mapPath) {
     print(mapPath);
@@ -17,18 +29,32 @@ void normalizeMap(File mapFile, String mapPath) {
     }
 
     try {
-        if (!mapPath.startsWith("/styles")
-        && !mapPath.startsWith("/editor")) {
-            mapModel = map.getMapModel();
-            mapArchObject = mapModel.getMapArchObject();
-            int shrinkFlags = 0;
-            if (mapArchObject.getTilePath(CommonConstants.NORTH).length() <= 0 && mapArchObject.getTilePath(CommonConstants.SOUTH).length() <= 0) {
-                shrinkFlags |= ShrinkMapSizeUtils.SHRINK_EAST;
+        mapModel = map.getMapModel();
+        mapModel.beginTransaction("Normalize");
+        try {
+            if (!mapPath.startsWith("/styles")
+            && !mapPath.startsWith("/editor/pickmaps")
+            && !mapPath.startsWith("/editor/walls")) {
+                mapArchObject = mapModel.getMapArchObject();
+                int shrinkFlags = 0;
+                if (mapArchObject.getTilePath(CommonConstants.NORTH).length() <= 0 && mapArchObject.getTilePath(CommonConstants.SOUTH).length() <= 0) {
+                    shrinkFlags |= ShrinkMapSizeUtils.SHRINK_EAST;
+                }
+                if (mapArchObject.getTilePath(CommonConstants.EAST).length() <= 0 && mapArchObject.getTilePath(CommonConstants.WEST).length() <= 0) {
+                    shrinkFlags |= ShrinkMapSizeUtils.SHRINK_SOUTH;
+                }
+                ShrinkMapSizeUtils.shrinkMap(mapModel, shrinkFlags);
             }
-            if (mapArchObject.getTilePath(CommonConstants.EAST).length() <= 0 && mapArchObject.getTilePath(CommonConstants.WEST).length() <= 0) {
-                shrinkFlags |= ShrinkMapSizeUtils.SHRINK_SOUTH;
+
+            Iterator it = mapModel.iterator	();
+            while (it.hasNext()) {
+                Iterator it2 = it.next().iterator();
+                while (it2.hasNext()) {
+                    normalizeGameObject(it2.next());
+                }
             }
-            ShrinkMapSizeUtils.shrinkMap(mapModel, shrinkFlags);
+        } finally {
+            mapModel.endTransaction();
         }
 
         if (map.getMapModel().isModified()) {
