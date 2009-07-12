@@ -4,6 +4,7 @@ width 13
 height 26
 msg
 Created:  2001-02-05
+Modified: 2009-07-12 Andreas Kirschbaum
 endmsg
 end
 arch minor_djinn
@@ -388,7 +389,6 @@ name Golden Naga
 hp 930
 maxhp 930
 exp 10000
-dam 15
 x 2
 y 22
 speed 0.200000
@@ -1563,7 +1563,6 @@ arch cobra
 name Black Naga
 hp 630
 exp 5000
-dam 15
 x 12
 y 11
 attacktype 65

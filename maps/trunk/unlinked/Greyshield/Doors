@@ -5,7 +5,7 @@ height 9
 enter_y 4
 msg
 Created:  1996-11-06 Chris Jeske
-Modified: 2007-11-04 Andreas Kirschbaum
+Modified: 2009-07-12 Andreas Kirschbaum
 endmsg
 end
 arch flagstone
@@ -328,7 +328,6 @@ arch locked_door2
 slaying Juan
 x 5
 y 4
-damned 1
 end
 arch flagstone
 x 5
@@ -472,7 +471,6 @@ arch locked_door2
 slaying Amal
 x 7
 y 4
-damned 1
 end
 arch flagstone
 x 7
@@ -622,7 +620,6 @@ arch locked_door2
 slaying Carlos
 x 9
 y 4
-damned 1
 end
 arch flagstone
 x 9
@@ -768,7 +765,6 @@ arch locked_door2
 slaying Pedro
 x 11
 y 4
-damned 1
 end
 arch flagstone
 x 11

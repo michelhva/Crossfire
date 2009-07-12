@@ -9,7 +9,7 @@ height 14
 enter_x 5
 msg
 Created:  Andreas Vogl (red.blaze@gmx.net)
-Modified: 2008-12-02 Rick Tanner
+Modified: 2009-07-12 Andreas Kirschbaum
 endmsg
 end
 arch blocked
@@ -110,7 +110,6 @@ arch shop_empty
 x 1
 y 5
 unique 1
-damned 1
 end
 arch teleporter
 hp 10
@@ -125,7 +124,6 @@ arch shop_empty
 x 1
 y 6
 unique 1
-damned 1
 end
 arch teleporter
 hp 10
@@ -140,7 +138,6 @@ arch shop_empty
 x 1
 y 7
 unique 1
-damned 1
 end
 arch teleporter
 hp 10
@@ -155,7 +152,6 @@ arch shop_empty
 x 1
 y 8
 unique 1
-damned 1
 end
 arch teleporter
 hp 10
@@ -170,7 +166,6 @@ arch shop_empty
 x 1
 y 9
 unique 1
-damned 1
 end
 arch teleporter
 hp 10
@@ -185,7 +180,6 @@ arch shop_empty
 x 1
 y 10
 unique 1
-damned 1
 end
 arch teleporter
 hp 10
@@ -200,7 +194,6 @@ arch shop_empty
 x 1
 y 11
 unique 1
-damned 1
 end
 arch teleporter
 hp 10
@@ -215,7 +208,6 @@ arch shop_empty
 x 1
 y 12
 unique 1
-damned 1
 end
 arch teleporter
 hp 10
@@ -299,7 +291,6 @@ arch shop_empty
 x 2
 y 5
 unique 1
-damned 1
 end
 arch teleporter
 hp 10
@@ -314,7 +305,6 @@ arch shop_empty
 x 2
 y 6
 unique 1
-damned 1
 end
 arch teleporter
 hp 10
@@ -329,7 +319,6 @@ arch shop_empty
 x 2
 y 7
 unique 1
-damned 1
 end
 arch teleporter
 hp 10
@@ -344,7 +333,6 @@ arch shop_empty
 x 2
 y 8
 unique 1
-damned 1
 end
 arch teleporter
 hp 10
@@ -359,7 +347,6 @@ arch shop_empty
 x 2
 y 9
 unique 1
-damned 1
 end
 arch teleporter
 hp 10
@@ -374,7 +361,6 @@ arch shop_empty
 x 2
 y 10
 unique 1
-damned 1
 end
 arch teleporter
 hp 10
@@ -389,7 +375,6 @@ arch shop_empty
 x 2
 y 11
 unique 1
-damned 1
 end
 arch teleporter
 hp 10
@@ -404,7 +389,6 @@ arch shop_empty
 x 2
 y 12
 unique 1
-damned 1
 end
 arch teleporter
 hp 10
@@ -485,7 +469,6 @@ arch shop_empty
 x 3
 y 5
 unique 1
-damned 1
 end
 arch teleporter
 hp 10
@@ -500,7 +483,6 @@ arch shop_empty
 x 3
 y 6
 unique 1
-damned 1
 end
 arch teleporter
 hp 10
@@ -523,7 +505,6 @@ arch shop_empty
 x 3
 y 8
 unique 1
-damned 1
 end
 arch teleporter
 hp 10
@@ -538,7 +519,6 @@ arch shop_empty
 x 3
 y 9
 unique 1
-damned 1
 end
 arch teleporter
 hp 10
@@ -561,7 +541,6 @@ arch shop_empty
 x 3
 y 11
 unique 1
-damned 1
 end
 arch teleporter
 hp 10
@@ -576,7 +555,6 @@ arch shop_empty
 x 3
 y 12
 unique 1
-damned 1
 end
 arch teleporter
 hp 10
@@ -656,7 +634,6 @@ arch shop_empty
 x 4
 y 5
 unique 1
-damned 1
 end
 arch teleporter
 hp 10
@@ -671,7 +648,6 @@ arch shop_empty
 x 4
 y 6
 unique 1
-damned 1
 end
 arch teleporter
 hp 10
@@ -694,7 +670,6 @@ arch shop_empty
 x 4
 y 8
 unique 1
-damned 1
 end
 arch teleporter
 hp 10
@@ -709,7 +684,6 @@ arch shop_empty
 x 4
 y 9
 unique 1
-damned 1
 end
 arch teleporter
 hp 10
@@ -732,7 +706,6 @@ arch shop_empty
 x 4
 y 11
 unique 1
-damned 1
 end
 arch teleporter
 hp 10
@@ -747,7 +720,6 @@ arch shop_empty
 x 4
 y 12
 unique 1
-damned 1
 end
 arch teleporter
 hp 10
@@ -830,7 +802,6 @@ arch shop_empty
 x 5
 y 6
 unique 1
-damned 1
 end
 arch teleporter
 hp 10
@@ -853,7 +824,6 @@ arch shop_empty
 x 5
 y 8
 unique 1
-damned 1
 end
 arch teleporter
 hp 10
@@ -868,7 +838,6 @@ arch shop_empty
 x 5
 y 9
 unique 1
-damned 1
 end
 arch teleporter
 hp 10
@@ -891,7 +860,6 @@ arch shop_empty
 x 5
 y 11
 unique 1
-damned 1
 end
 arch teleporter
 hp 10
@@ -906,7 +874,6 @@ arch shop_empty
 x 5
 y 12
 unique 1
-damned 1
 end
 arch teleporter
 hp 10
@@ -974,7 +941,6 @@ arch shop_empty
 x 6
 y 5
 unique 1
-damned 1
 end
 arch teleporter
 hp 10
@@ -989,7 +955,6 @@ arch shop_empty
 x 6
 y 6
 unique 1
-damned 1
 end
 arch teleporter
 hp 10
@@ -1012,7 +977,6 @@ arch shop_empty
 x 6
 y 8
 unique 1
-damned 1
 end
 arch teleporter
 hp 10
@@ -1027,7 +991,6 @@ arch shop_empty
 x 6
 y 9
 unique 1
-damned 1
 end
 arch teleporter
 hp 10
@@ -1050,7 +1013,6 @@ arch shop_empty
 x 6
 y 11
 unique 1
-damned 1
 end
 arch teleporter
 hp 10
@@ -1065,7 +1027,6 @@ arch shop_empty
 x 6
 y 12
 unique 1
-damned 1
 end
 arch teleporter
 hp 10
@@ -1133,7 +1094,6 @@ arch shop_empty
 x 7
 y 5
 unique 1
-damned 1
 end
 arch teleporter
 hp 10
@@ -1148,7 +1108,6 @@ arch shop_empty
 x 7
 y 6
 unique 1
-damned 1
 end
 arch teleporter
 hp 10
@@ -1171,7 +1130,6 @@ arch shop_empty
 x 7
 y 8
 unique 1
-damned 1
 end
 arch teleporter
 hp 10
@@ -1186,7 +1144,6 @@ arch shop_empty
 x 7
 y 9
 unique 1
-damned 1
 end
 arch teleporter
 hp 10
@@ -1209,7 +1166,6 @@ arch shop_empty
 x 7
 y 11
 unique 1
-damned 1
 end
 arch teleporter
 hp 10
@@ -1224,7 +1180,6 @@ arch shop_empty
 x 7
 y 12
 unique 1
-damned 1
 end
 arch teleporter
 hp 10
@@ -1308,7 +1263,6 @@ arch shop_empty
 x 8
 y 5
 unique 1
-damned 1
 end
 arch teleporter
 hp 10
@@ -1323,7 +1277,6 @@ arch shop_empty
 x 8
 y 6
 unique 1
-damned 1
 end
 arch teleporter
 hp 10
@@ -1338,7 +1291,6 @@ arch shop_empty
 x 8
 y 7
 unique 1
-damned 1
 end
 arch teleporter
 hp 10
@@ -1353,7 +1305,6 @@ arch shop_empty
 x 8
 y 8
 unique 1
-damned 1
 end
 arch teleporter
 hp 10
@@ -1368,7 +1319,6 @@ arch shop_empty
 x 8
 y 9
 unique 1
-damned 1
 end
 arch teleporter
 hp 10
@@ -1383,7 +1333,6 @@ arch shop_empty
 x 8
 y 10
 unique 1
-damned 1
 end
 arch teleporter
 hp 10
@@ -1398,7 +1347,6 @@ arch shop_empty
 x 8
 y 11
 unique 1
-damned 1
 end
 arch teleporter
 hp 10
@@ -1413,7 +1361,6 @@ arch shop_empty
 x 8
 y 12
 unique 1
-damned 1
 end
 arch teleporter
 hp 10
@@ -1459,7 +1406,6 @@ arch shop_empty
 x 9
 y 5
 unique 1
-damned 1
 end
 arch teleporter
 hp 10
@@ -1474,7 +1420,6 @@ arch shop_empty
 x 9
 y 6
 unique 1
-damned 1
 end
 arch teleporter
 hp 10
@@ -1489,7 +1434,6 @@ arch shop_empty
 x 9
 y 7
 unique 1
-damned 1
 end
 arch teleporter
 hp 10
@@ -1504,7 +1448,6 @@ arch shop_empty
 x 9
 y 8
 unique 1
-damned 1
 end
 arch teleporter
 hp 10
@@ -1519,7 +1462,6 @@ arch shop_empty
 x 9
 y 9
 unique 1
-damned 1
 end
 arch teleporter
 hp 10
@@ -1534,7 +1476,6 @@ arch shop_empty
 x 9
 y 10
 unique 1
-damned 1
 end
 arch teleporter
 hp 10
@@ -1549,7 +1490,6 @@ arch shop_empty
 x 9
 y 11
 unique 1
-damned 1
 end
 arch teleporter
 hp 10
@@ -1564,7 +1504,6 @@ arch shop_empty
 x 9
 y 12
 unique 1
-damned 1
 end
 arch teleporter
 hp 10

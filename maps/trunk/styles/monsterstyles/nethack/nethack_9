@@ -4,6 +4,7 @@ width 13
 height 26
 msg
 Created:  2001-02-05
+Modified: 2009-07-12 Andreas Kirschbaum
 endmsg
 end
 arch mabu
@@ -16,7 +17,6 @@ arch cobra
 name Red Naga
 hp 630
 exp 250
-dam 15
 y 2
 attacktype 1029
 unaggressive 1
@@ -151,7 +151,6 @@ arch neko
 name large cat
 hp 200
 dam 40
-wc 15
 x 1
 y 5
 level 8
@@ -1517,7 +1516,6 @@ arch cobra
 name Black Naga
 hp 630
 exp 5000
-dam 15
 x 12
 y 16
 attacktype 65

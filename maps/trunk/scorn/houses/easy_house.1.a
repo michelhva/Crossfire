@@ -9,7 +9,7 @@ enter_x 10
 enter_y 19
 msg
 Created:  2006-05-26 Bort
-Modified: 2008-09-28 Rick Tanner
+Modified: 2009-07-12 Andreas Kirschbaum
 endmsg
 end
 arch grass
@@ -1546,7 +1546,6 @@ arch mailbox
 name Mr. & Mrs. G's
 x 11
 y 18
-no_pick 1
 arch letter
 msg
 This house is infested with orcs and goblins.

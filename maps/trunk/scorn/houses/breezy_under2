@@ -9,7 +9,7 @@ enter_x 1
 enter_y 1
 msg
 Created:  2003-05-11 Avion
-Modified: 2008-10-26 Rick Tanner
+Modified: 2009-07-12 Andreas Kirschbaum
 endmsg
 end
 arch dungeon_floor
@@ -4906,7 +4906,6 @@ connected 32
 end
 arch ghost
 name Ned
-exp 50
 x 27
 y 29
 sleep 0

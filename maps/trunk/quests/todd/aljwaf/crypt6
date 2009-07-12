@@ -9,7 +9,7 @@ enter_x 1
 enter_y 1
 msg
 Created:  2002-10-20 Todd Mitchell
-Modified: 2008-10-30 Rick Tanner
+Modified: 2009-07-12 Andreas Kirschbaum
 endmsg
 end
 arch dirtfloor
@@ -191,7 +191,6 @@ arch dancingsword
 exp 5000
 x 1
 y 7
-level 10
 attacktype 1
 resist_physical 0
 resist_fire 0
@@ -924,7 +923,6 @@ arch dancingsword
 exp 5000
 x 8
 y 11
-level 10
 attacktype 1
 resist_physical 0
 resist_fire 0
@@ -976,7 +974,6 @@ arch dancingsword
 exp 5000
 x 8
 y 18
-level 10
 attacktype 1
 resist_physical 0
 resist_fire 0

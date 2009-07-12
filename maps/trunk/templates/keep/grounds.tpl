@@ -6,6 +6,7 @@ enter_x 9
 enter_y 28
 msg
 Created:  2002-03-09 Avion
+Modified: 2009-07-12 Andreas Kirschbaum
 endmsg
 outdoor 1
 end
@@ -4848,7 +4849,6 @@ arch woods_3
 x 28
 y 2
 blocksview 1
-is_floor 1
 end
 arch grass
 x 28

@@ -8,7 +8,7 @@ enter_x 13
 enter_y 12
 msg
 Created:  2004-04-10 Avion
-Modified: 2009-02-08 Arvid Norlander
+Modified: 2009-07-12 Andreas Kirschbaum
 endmsg
 end
 arch blocked
@@ -2882,7 +2882,6 @@ x 13
 y 28
 material 0
 weight 0
-no_pick 1
 arch event_close
 title Python
 slaying /python/IPO/send.py

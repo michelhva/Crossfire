@@ -8,7 +8,7 @@ enter_x 23
 enter_y 9
 msg
 Created:  1995-01-02 bt (thomas@nomad.astro.psu.edu)
-Modified: 2008-10-28 Rick Tanner
+Modified: 2009-07-12 Andreas Kirschbaum
 endmsg
 end
 arch dungeon_floor
@@ -1360,7 +1360,6 @@ hp 8
 sp 27
 x 9
 y 9
-no_pick 1
 end
 arch cobblestones2
 x 9

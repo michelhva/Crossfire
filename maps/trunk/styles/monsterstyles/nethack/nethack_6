@@ -4,6 +4,7 @@ width 6
 height 20
 msg
 Created:  2001-02-05
+Modified: 2009-07-12 Andreas Kirschbaum
 endmsg
 end
 arch holy_servant
@@ -57,7 +58,6 @@ name Black Naga Hatchling
 Wis 1
 hp 50
 exp 300
-dam 15
 y 6
 attacktype 1089
 unaggressive 1
@@ -96,7 +96,6 @@ y 15
 end
 arch black_pudding
 name brown pudding
-exp 1200
 y 16
 attacktype 1088
 end
@@ -167,7 +166,6 @@ name Golden Naga Hatchling
 Wis 1
 hp 80
 exp 300
-dam 15
 x 1
 y 6
 unaggressive 1
@@ -207,7 +205,6 @@ arch small_troll
 name yeti
 hp 290
 exp 850
-dam 15
 x 1
 y 16
 attacktype 17
@@ -284,7 +281,6 @@ name Guardian Naga Hatchling
 Wis 1
 hp 150
 exp 300
-dam 15
 x 2
 y 6
 attacktype 1089
