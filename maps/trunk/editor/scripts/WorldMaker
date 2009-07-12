@@ -41,7 +41,7 @@ boolean updateMap(File mapFile, File pictureFile) {
     }
     try {
         try {
-            ImageIO.write(map.getRenderer().getFullImage(), "png", pictureFile);
+            ImageIO.write(rendererFactory.newSimpleLevelRenderer(map.getMapModel()).getFullImage(), "png", pictureFile);
         } catch (IOException ex) {
             print("cannot write " + pictureFile + ": " + ex.getMessage());
             return false;
