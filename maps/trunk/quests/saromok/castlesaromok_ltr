@@ -8,7 +8,7 @@ enter_x 1
 enter_y 4
 msg
 Created:  2008-08-14 Chad Opperman | cromagic@sbcglobal.net
-Modified: 2008-10-20 Rick Tanner
+Modified: 2009-07-12 Andreas Kirschbaum
 endmsg
 end
 arch stonefloor2
@@ -2053,7 +2053,6 @@ unaggressive 0
 reflect_missile 1
 reflect_spell 1
 can_see_in_dark 1
-can_use_range 1
 arch key2
 name icemasterteleport
 slaying icemasterteleport

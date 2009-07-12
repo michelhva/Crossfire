@@ -9,7 +9,7 @@ enter_x 28
 enter_y 14
 msg
 Created:  2002-04-20 Todd Mitchell
-Modified: 2008-10-28 Rick Tanner
+Modified: 2009-07-12 Andreas Kirschbaum
 endmsg
 end
 arch dun_2_2_2
@@ -203,7 +203,6 @@ end
 arch lightningwall_3
 x 1
 y 7
-no_pick 1
 arch spell_sm_lightning
 level 5
 end
@@ -2536,7 +2535,6 @@ end
 arch lightningwall_7
 x 13
 y 4
-no_pick 1
 arch spell_sm_lightning
 level 5
 end
@@ -2568,7 +2566,6 @@ end
 arch lightningwall_7
 x 13
 y 9
-no_pick 1
 arch spell_sm_lightning
 level 5
 end

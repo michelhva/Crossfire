@@ -7,6 +7,7 @@ width 18
 height 18
 msg
 Created:  1998-12-22 Anthony Thyssen (anthony@cit.gu.edu.au)
+Modified: 2009-07-12 Andreas Kirschbaum
 endmsg
 end
 arch dwall_2_2_2
@@ -853,7 +854,6 @@ name Yoroi of Banzai
 ac 4
 x 12
 y 1
-resist_physical 10
 resist_death 100
 value 100000
 weight 5000

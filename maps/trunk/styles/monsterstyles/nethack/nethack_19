@@ -4,6 +4,7 @@ width 13
 height 26
 msg
 Created:  2001-05-05
+Modified: 2009-07-12 Andreas Kirschbaum
 endmsg
 end
 arch Balrog
@@ -109,7 +110,6 @@ name Golden Naga
 hp 930
 maxhp 930
 exp 10000
-dam 15
 x 2
 y 5
 speed 0.200000
@@ -427,7 +427,6 @@ name Guardian Naga
 hp 1230
 maxhp 1230
 exp 20000
-dam 15
 x 8
 y 9
 speed 0.200000

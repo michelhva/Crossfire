@@ -11,7 +11,7 @@ enter_x 8
 enter_y 24
 msg
 Created:  2002-04-02 Bernd Edler (edler@heydernet.de)
-Modified: 2008-12-01 Rick Tanner
+Modified: 2009-07-12 Andreas Kirschbaum
 endmsg
 end
 arch dungeon_magic
@@ -72,12 +72,12 @@ unaggressive 1
 run_away 0
 can_cast_spell 0
 can_use_scroll 0
+can_use_range 0
 can_use_armour 0
 can_use_weapon 0
 can_use_ring 0
 sleep 0
 stand_still 1
-can_use_range 0
 can_see_in_dark 0
 arch scroll
 name wurfbtoken2
@@ -1687,13 +1687,13 @@ ac 0
 x 5
 y 10
 can_use_scroll 0
+can_use_range 0
 can_use_bow 0
 can_use_armour 0
 can_use_weapon 0
 can_use_ring 0
 stand_still 1
 can_use_skill 0
-can_use_range 0
 end
 arch dungeon_magic
 x 5
@@ -1818,7 +1818,6 @@ end
 arch swall_2_1_2
 x 5
 y 23
-no_pick 1
 end
 arch dungeon_magic
 x 5
@@ -2169,7 +2168,6 @@ end
 arch swall_2_1_2
 x 6
 y 20
-no_pick 1
 end
 arch dungeon_magic
 x 6
@@ -2198,7 +2196,6 @@ end
 arch swall_2_1_2
 x 6
 y 23
-no_pick 1
 end
 arch dungeon_magic
 x 6
@@ -3564,12 +3561,12 @@ unaggressive 1
 run_away 0
 can_cast_spell 0
 can_use_scroll 0
+can_use_range 0
 can_use_armour 0
 can_use_weapon 0
 can_use_ring 0
 sleep 0
 stand_still 1
-can_use_range 0
 can_see_in_dark 0
 arch scroll
 name wurfbtoken2
@@ -3909,12 +3906,12 @@ unaggressive 1
 run_away 0
 can_cast_spell 0
 can_use_scroll 0
+can_use_range 0
 can_use_armour 0
 can_use_weapon 0
 can_use_ring 0
 sleep 0
 stand_still 1
-can_use_range 0
 can_see_in_dark 0
 arch scroll
 name wurfbtoken2
@@ -5072,12 +5069,12 @@ unaggressive 1
 run_away 0
 can_cast_spell 0
 can_use_scroll 0
+can_use_range 0
 can_use_armour 0
 can_use_weapon 0
 can_use_ring 0
 sleep 0
 stand_still 1
-can_use_range 0
 can_see_in_dark 0
 arch scroll
 name wurfbtoken2

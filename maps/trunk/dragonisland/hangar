@@ -8,7 +8,7 @@ enter_x 15
 enter_y 1
 msg
 Created:  1997-06-19
-Modified: 2008-12-01 Rick Tanner
+Modified: 2009-07-12 Andreas Kirschbaum
 endmsg
 end
 arch magic_banned
@@ -4768,7 +4768,6 @@ end
 arch button_trigger
 x 14
 y 6
-weight 1
 connected 99
 end
 arch cobblestones2
@@ -4894,12 +4893,12 @@ a penny for a poor beggar
 endmsg
 x 14
 y 18
+can_use_range 0
 can_use_bow 0
 can_use_armour 0
 can_use_weapon 0
 can_use_ring 0
 can_use_skill 0
-can_use_range 0
 end
 arch magic_banned
 x 14
@@ -5097,7 +5096,6 @@ end
 arch button_trigger
 x 15
 y 6
-weight 1
 connected 99
 end
 arch cobblestones2
@@ -5460,7 +5458,6 @@ end
 arch button_trigger
 x 16
 y 6
-weight 1
 connected 99
 end
 arch cobblestones2
@@ -5830,7 +5827,6 @@ end
 arch button_trigger
 x 17
 y 6
-weight 1
 connected 99
 end
 arch cobblestones2

@@ -8,7 +8,7 @@ enter_x 3
 enter_y 9
 msg
 Created:  1996-02-20
-Modified: 2008-10-27 Rick Tanner
+Modified: 2009-07-12 Andreas Kirschbaum
 endmsg
 end
 arch flagstone
@@ -1895,8 +1895,6 @@ name Electric Wyvern
 maxsp 100
 x 8
 y 19
-resist_fire 100
-resist_fear 100
 resist_electricty 100
 arch spell_sm_lightning
 end
@@ -1914,8 +1912,6 @@ name Electric Wyvern
 maxsp 100
 x 8
 y 20
-resist_fire 100
-resist_fear 100
 resist_electricty 100
 arch spell_sm_lightning
 end
@@ -2782,8 +2778,6 @@ name Electric Wyvern
 maxsp 100
 x 12
 y 19
-resist_fire 100
-resist_fear 100
 resist_electricty 100
 arch spell_sm_lightning
 end
@@ -2801,8 +2795,6 @@ name Electric Wyvern
 maxsp 100
 x 12
 y 20
-resist_fire 100
-resist_fear 100
 resist_electricty 100
 arch spell_sm_lightning
 end

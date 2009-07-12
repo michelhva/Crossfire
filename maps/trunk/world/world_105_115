@@ -9,7 +9,7 @@ enter_x 1
 enter_y 1
 msg
 Created:  2001-02-16
-Modified: 2009-02-06 Arvid Norlander
+Modified: 2009-07-12 Andreas Kirschbaum
 endmsg
 outdoor 1
 tile_path_1 world_105_114
@@ -1421,7 +1421,6 @@ speed 0.5
 type 2
 container 10000000
 move_type boat
-move_allow walk
 passenger_limit 4
 end
 arch dungeon_magic
@@ -2741,7 +2740,6 @@ speed 0.5
 type 2
 container 10000000
 move_type boat
-move_allow walk
 passenger_limit 2
 end
 arch dungeon_magic
@@ -3611,7 +3609,6 @@ speed 0.5
 type 2
 container 10000000
 move_type boat
-move_allow walk
 passenger_limit 4
 end
 arch dungeon_magic
@@ -5882,7 +5879,6 @@ speed 0.5
 type 2
 container 10000000
 move_type boat
-move_allow walk
 passenger_limit 4
 end
 arch dungeon_magic

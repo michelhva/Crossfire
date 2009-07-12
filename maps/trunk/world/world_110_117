@@ -3,7 +3,7 @@ name world_110_117
 width 50
 height 50
 msg
-Modified: 2007-12-24 tchize
+Modified: 2009-07-12 Andreas Kirschbaum
 endmsg
 outdoor 1
 tile_path_1 world_110_116
@@ -6994,7 +6994,6 @@ arch darkforest
 x 22
 y 11
 elevation 35
-blocksview 1
 end
 arch grass_only
 x 22
@@ -7283,7 +7282,6 @@ arch darkforest
 x 23
 y 13
 elevation 109
-blocksview 1
 end
 arch woods_3
 x 23

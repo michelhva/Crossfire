@@ -8,7 +8,7 @@ enter_x 1
 enter_y 14
 msg
 Created:  1997-06-07 PeterM (peterm@soda.csua.berkeley.edu)
-Modified: 2008-12-21 Rick Tanner
+Modified: 2009-07-12 Andreas Kirschbaum
 endmsg
 end
 arch pstone_1
@@ -2334,11 +2334,11 @@ resist_counterspell 100
 resist_godpower 100
 resist_holyword 100
 reflect_spell 1
+can_use_range 0
 can_use_bow 0
 can_use_armour 0
 can_use_weapon 0
 can_use_ring 0
-can_use_range 0
 body_torso 0
 body_shoulder 0
 end
@@ -5520,7 +5520,6 @@ speed_left -0.870000
 level 99
 invisible 1
 move_block 0
-no_pick 1
 blocksview 0
 arch spell_firebolt
 end
@@ -5532,7 +5531,6 @@ speed -0.100000
 level 99
 invisible 1
 move_block 0
-no_pick 1
 blocksview 0
 arch spell_firebolt
 end
@@ -5545,7 +5543,6 @@ speed_left -1.060000
 level 100
 invisible 1
 move_block 0
-no_pick 1
 blocksview 0
 arch spell_firebolt
 end
@@ -5557,7 +5554,6 @@ speed -0.100000
 level 99
 invisible 1
 move_block 0
-no_pick 1
 blocksview 0
 arch spell_firebolt
 end
@@ -5569,7 +5565,6 @@ speed -0.100000
 level 99
 invisible 1
 move_block 0
-no_pick 1
 blocksview 0
 arch spell_firebolt
 end

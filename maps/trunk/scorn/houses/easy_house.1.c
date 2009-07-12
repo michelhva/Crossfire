@@ -9,7 +9,7 @@ enter_x 7
 enter_y 5
 msg
 Created:  2006-05-26 Bort
-Modified: 2008-09-28 Rick Tanner
+Modified: 2009-07-12 Andreas Kirschbaum
 endmsg
 end
 arch cobblestones2
@@ -833,7 +833,6 @@ name orc champion Slupb
 hp 20
 maxhp 20
 exp 45
-wc 16
 x 7
 y 13
 level 4

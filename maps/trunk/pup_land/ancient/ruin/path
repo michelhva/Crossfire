@@ -9,7 +9,7 @@ enter_x 3
 enter_y 3
 msg
 Created:  1996-12-08
-Modified: 2008-10-07 Rick Tanner
+Modified: 2009-07-12 Andreas Kirschbaum
 endmsg
 end
 arch blocked
@@ -4836,7 +4836,6 @@ end
 arch t_boulder
 nrof 10
 weight 10000
-is_thrown 1
 end
 end
 arch blocked
@@ -4887,7 +4886,6 @@ can_see_in_dark 1
 arch t_boulder
 nrof 10
 weight 10000
-is_thrown 1
 end
 arch skill_throwing
 end
@@ -5551,7 +5549,6 @@ can_see_in_dark 1
 arch t_boulder
 nrof 10
 weight 10000
-is_thrown 1
 end
 arch skill_throwing
 end
@@ -5604,7 +5601,6 @@ can_see_in_dark 1
 arch t_boulder
 nrof 10
 weight 10000
-is_thrown 1
 end
 arch skill_throwing
 end
