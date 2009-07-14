@@ -8,7 +8,7 @@ enter_x 1
 enter_y 58
 msg
 Created:  1994-07-02
-Modified: 2008-11-27 Rick Tanner
+Modified: 2009-07-14 Andreas Kirschbaum
 endmsg
 end
 arch dirtfloor
@@ -1566,11 +1566,11 @@ arch dirtfloor
 x 3
 y 50
 end
-arch dirtfloor
-x 3
-y 51
-end
 arch chinese_dragon
+x 3
+y 50
+end
+arch dirtfloor
 x 3
 y 51
 end
@@ -1586,11 +1586,11 @@ arch dirtfloor
 x 3
 y 54
 end
-arch dirtfloor
-x 3
-y 55
-end
 arch chinese_dragon
+x 3
+y 54
+end
+arch dirtfloor
 x 3
 y 55
 end
@@ -1912,10 +1912,6 @@ arch dirtfloor
 x 4
 y 50
 end
-arch chinese_dragon
-x 4
-y 50
-end
 arch dirtfloor
 x 4
 y 51
@@ -1933,10 +1929,6 @@ x 4
 y 53
 end
 arch dirtfloor
-x 4
-y 54
-end
-arch chinese_dragon
 x 4
 y 54
 end
