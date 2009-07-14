@@ -24,6 +24,7 @@ dam 1
 speed -0.2
 run_away 15
 can_cast_spell 1
+can_use_range 1
 pick_up 1
 attack_movement 3
 body_range 1
