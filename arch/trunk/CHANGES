@@ -84,7 +84,7 @@ map currently). The fish in shallow_sea inventory didn't have harvestable set.
 Arvid Norlander 2009-03-04
 
 skills/karate.arc, punching.arc, flame_touch.arc, one_handed_weapons.arc,
-missile_weap.arc, throwing.arc, clawing.arc, two_handed_weapons.arc, 
+missile_weap.arc, throwing.arc, clawing.arc, two_handed_weapons.arc,
 wraith_feed.arc:  Related to server change 11576 - add wc_increase_rate
 to these skills - for non weapon using skills, make that a lower value so
 that it should be better balanced, and also give it a starting bonus.
@@ -106,14 +106,14 @@ Arvid Norlander 2009-02-02
 flesh/dragon/dragon_sca.arc
 Give dragons scales object type 73 (inorganic), this avoids alerts in
 server logs: "Query_cost: item green dragon scale hasn't got a valid type"
-but with all scale colors.  Note: object type 72 (flesh) caused the dragon 
+but with all scale colors.  Note: object type 72 (flesh) caused the dragon
 scales weight to increase from 25Kg to 50000Kg and made the scales edible -
 neither is desirable.
-Rick Tanner 2009-01-31 
+Rick Tanner 2009-01-31
 
 misc/t_boulder.arc
 Give throwing boulders object type 15 (weapon), this avoids this alert in
-the server logs: "Query_cost: item boulder hasn't got a valid type" 
+the server logs: "Query_cost: item boulder hasn't got a valid type"
 Rick Tanner 2009-01-31
 
 Lots of *.png (not listing all files because it is almost all *.png)
@@ -176,17 +176,17 @@ Rick Tanner 2008-12-16
 
 gods/items/torc.base.111.png,
 gods/items/valkyrie_amulet_lifesave.arc
-New graphic for Valkyrie's gift (amulet of lifesaving), 
+New graphic for Valkyrie's gift (amulet of lifesaving),
 referred as Valkyrie's Torc
 Rick Tanner 2008-12-15
 
 misc/sky/sky.arc
 misc/sky/sky.base.111.png
-New sky archetype for use on airborn cities, castles, islands, etc. 
+New sky archetype for use on airborn cities, castles, islands, etc.
 such as Pupland Terminal
 Rick Tanner 2008-12-14
 
-construct/window/intermediate_window.arc, construct/window/window.arc 
+construct/window/intermediate_window.arc, construct/window/window.arc
 Remove redundant fields.
 Andreas Kirschbaum 2008-12-12
 
@@ -202,9 +202,9 @@ players inventory
 Rick Tanner 2008-12-09
 
 gods/items/valkyrie_amulet_lifesave.arc, gods/demihumans/valkyrie.trs
-Tentative bug fix for '[ 1990180 ] 2.0 godgiven Valkyrie lifesaving amulet bug?' 
-- created a new amulet archetype that is godgiven and inventory locked by default, 
-updated gods/demihumans/valkyrie.trs file to reference the new amulet archetype 
+Tentative bug fix for '[ 1990180 ] 2.0 godgiven Valkyrie lifesaving amulet bug?'
+- created a new amulet archetype that is godgiven and inventory locked by default,
+updated gods/demihumans/valkyrie.trs file to reference the new amulet archetype
 (Previous checkin had a bug - missed the .arc file at the end of the file name)
 Rick Tanner 2008-12-08
 
@@ -226,7 +226,7 @@ Yann Chachkoff 2008-12-07
 
 /wall/dun/dungeon.arc
 Removed newline at the end of the file, it was
-causing this to appear in the server logs: 
+causing this to appear in the server logs:
 Warning: failed to find arch dun33
 Rick Tanner 2008-12-06
 
@@ -504,7 +504,7 @@ Add correct plural name to flowers_permanent.
 Andreas Kirschbaum 2007-11-23
 
 Add sample support for spellcasting compound animations.
-Try to cast minor healing with a Fenx 
+Try to cast minor healing with a Fenx
 Yann (gros) Chachkoff 2007-11-18
 
 Update spellcasting objects to use inventory objects.
