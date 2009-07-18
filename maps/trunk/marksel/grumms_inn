@@ -8,7 +8,7 @@ enter_x 7
 enter_y 13
 msg
 Created:  2002-10-27 Todd Mitchell
-Modified: 2008-11-02 Rick Tanner
+Modified: 2009-07-18 Kevin Bulgrien
 endmsg
 outdoor 1
 end
@@ -509,20 +509,16 @@ end
 arch a_priest
 msg
 @match yes
-Bless you my son.  Join us at our next
-service.
+Bless you my son.  Join us at our next service.
 @match no
-Then I pray your soul is not eaten by
-the old ones.
-@match old ones
+Then I pray your soul is not eaten by the old ones.
+@match eaten|old|ones
 The dark gods that haunt the wilds.
-They feed upon the unfortunate souls
-not protected by the covenent of God
+They feed upon the unfortunate souls not protected by the covenent of God.
 @match *
-I'm retreiving Father Veratin's chickens. I fear
-Grumm will be angered, and we so wish him to
-attend one of our services. He is a good man,
-but not a man of God. Are you a man of God?
+I'm retrieving Father Veratin's chickens.
+I fear Grumm will be angered, and we so wish him to attend one of our services.
+He is a good man, but not a man of God. Are you a man of God?
 endmsg
 x 4
 y 11
@@ -1313,8 +1309,7 @@ msg
 @match hello|hi
 Good day!
 @match harlon
-He's mad because he lost his pay
-in a game of Orcfingers.
+He's mad because he lost his pay in a game of Orcfingers.
 endmsg
 exp 20
 x 12
@@ -1581,18 +1576,15 @@ end
 arch c_man
 name Frank
 msg
-@match travellers
+@match travelers
 @question bandits What bandits?
-Who would risk the south road with
-those bandits?
+Who would risk the south road with those bandits?
 @match bandits
-My brother used to help station the
-signal tower. Now, I fear he's dead...
+My brother used to help station the signal tower. Now, I fear he's dead...
 <sob>
 @match *
-@question travellers Why are there so few travellers?
-Sigh, it's so boring when so few
-travellers come.
+@question travelers Why are there so few travelers?
+Sigh, it's so boring when so few travelers come.
 endmsg
 x 15
 y 3
@@ -1908,9 +1900,8 @@ arch c_man
 name Riakus
 msg
 @match *
-Hello stranger.  Please tell us news
-from other lands.  We get so few
-visitors..
+Hello stranger.  Please tell us news from other lands.
+We get so few visitors..
 endmsg
 x 18
 y 6
@@ -2013,8 +2004,7 @@ end
 arch dwarf_wiz
 msg
 @match mine
-I'd sooner cut out my tongue than tell
-where the hidden valley lies.
+I'd sooner cut out my tongue than tell where the hidden valley lies.
 @match *
 I'm too busy to answer your queries.
 endmsg
@@ -2140,7 +2130,7 @@ end
 arch warrior_1
 msg
 @match *
-Hand't ya ever seen a dwarf before?!
+Hadn't ya ever seen a dwarf before?!
 endmsg
 x 20
 y 7
