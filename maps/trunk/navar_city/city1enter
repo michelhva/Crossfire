@@ -9,7 +9,7 @@ enter_x 1
 enter_y 5
 msg
 Created:  1993-10-28
-Modified: 2008-09-21 Rick Tanner
+Modified: 2009-07-18 Kevin Bulgrien
 endmsg
 end
 arch dungeon_floor
@@ -927,8 +927,7 @@ end
 arch magic_ear
 msg
 @match hello|hi
-Yes, hello there, would you like to
-enter
+Yes, hello there, would you like to enter?
 endmsg
 x 11
 y 10
@@ -936,8 +935,7 @@ end
 arch magic_ear
 msg
 @match yes
-Please enter, and talk to the next
-guard
+Please enter, and talk to the next guard
 Click
 endmsg
 x 11
@@ -1118,8 +1116,7 @@ name_pl Strange Book
 msg
 The Art of ...r....c.
 by the High Wizard of Navar, Morkov
-Hmmm, some of the title seems to be
-scratched out.
+Hmmm, some of the title seems to be scratched out.
 endmsg
 x 13
 y 7
@@ -1167,8 +1164,7 @@ end
 arch magic_ear
 msg
 @match *
-Well hello, I hope you had a nice
-visit to our city, please come again
+Well hello, I hope you had a nice visit to our city, please come again.
 Click.
 endmsg
 x 14
@@ -1237,12 +1233,9 @@ y 10
 end
 arch sign
 msg
-By the order of the high court,
-all things Necromantic are deemed evil
-and are baned from the city of Navar
+By the order of the high court, all things Necromantic are deemed evil and are banned from the city of Navar
 There is a note attached:
-If ya got any problems with this, talk
-to the high court, not the guards here
+If ya got any problems with this, talk to the high court, not the guards here.
 endmsg
 x 14
 y 10
@@ -1324,8 +1317,7 @@ end
 arch magic_ear
 msg
 @match no
-Then please enter out city and enjoy
-your stay
+Then please enter our city and enjoy your stay.
 Click.
 endmsg
 x 15
@@ -1335,15 +1327,12 @@ end
 arch magic_ear
 msg
 @match hi|hello
-If you want to go in the city you will
-have to drop all your contraband
-inside the doorway...do you have any
-contraband?
+If you want to go in the city you will have to drop all your contraband
+inside the doorway...
+Do you have any contraband?
 @match contraband
-Anything that we do not want in our
-city, Necromantic Spells, creatures of
-the dead, creatures of foul nature,
-and such
+Anything that we do not want in our city:
+Necromantic Spells, creatures of the dead, creatures of foul nature, and such.
 endmsg
 x 15
 y 10
