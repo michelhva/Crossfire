@@ -24,6 +24,7 @@ import java.io.EOFException;
 import java.io.IOException;
 import java.net.InetSocketAddress;
 import java.net.SocketAddress;
+import java.net.SocketException;
 import java.nio.BufferOverflowException;
 import java.nio.ByteBuffer;
 import java.nio.channels.SelectableChannel;
@@ -398,7 +399,14 @@ public class ClientSocket
                 {
                     throw new IOException(ex.getMessage(), ex);
                 }
-                socketChannel.socket().setTcpNoDelay(true);
+                try {
+                    socketChannel.socket().setTcpNoDelay(true);
+                } catch (final SocketException ex) {
+                    if (debugProtocol != null)
+                    {
+                        debugProtocol.debugProtocolWrite("socket:cannot set TCP_NODELAY option: "+ex.getMessage());
+                    }
+                }
                 interestOps = SelectionKey.OP_CONNECT;
                 selectionKey = selectableChannel.register(selector, interestOps);
             }
