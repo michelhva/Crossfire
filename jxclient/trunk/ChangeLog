@@ -1,3 +1,8 @@
+2009-07-20  Andreas Kirschbaum
+
+	* Fix error "Cannot connect to crossfire server: invalid argument:
+	sun.nio.ch.Net.setIntOption" on some platforms.
+
 2009-06-19  Andreas Kirschbaum
 
 	* Include connection related messages to --debug-protocol output.
