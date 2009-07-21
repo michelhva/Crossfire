@@ -55,7 +55,7 @@ public class GUIHTMLLabel extends AbstractLabel
     /**
      * The pattern used to split a string into lines.
      */
-    private static final Pattern patternLineBreak = Pattern.compile("<br>");
+    private static final Pattern PATTERN_LINE_BREAK = Pattern.compile("<br>");
 
     private final Font font;
 
@@ -149,7 +149,7 @@ public class GUIHTMLLabel extends AbstractLabel
                 final FontRenderContext context = g.getFontRenderContext();
                 int width = 0;
                 int height = 0;
-                for (final String str : patternLineBreak.split(getText(), -1))
+                for (final String str : PATTERN_LINE_BREAK.split(getText(), -1))
                 {
                     final Rectangle2D size = font.getStringBounds(str, context);
                     width = Math.max(width, (int)size.getWidth());

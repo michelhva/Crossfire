@@ -45,7 +45,7 @@ public class GUIMultiLineLabel extends GUILabel
     /**
      * The pattern to split the text into lines.
      */
-    private static final Pattern lineSeparatorPattern = Pattern.compile(" *\n");
+    private static final Pattern LINE_SEPARATOR_PATTERN = Pattern.compile(" *\n");
 
     /**
      * The text lines to draw.
@@ -99,7 +99,7 @@ public class GUIMultiLineLabel extends GUILabel
     @Override
     protected void textChanged()
     {
-        lines = lineSeparatorPattern.split(getText(), -1);
+        lines = LINE_SEPARATOR_PATTERN.split(getText(), -1);
         super.textChanged();
     }
 

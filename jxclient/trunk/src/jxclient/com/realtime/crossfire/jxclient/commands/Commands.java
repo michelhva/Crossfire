@@ -117,7 +117,7 @@ public class Commands
             return false;
         }
 
-        final String[] args = Patterns.patternWhitespace.split(StringUtils.trimLeading(command), 2);
+        final String[] args = Patterns.PATTERN_WHITESPACE.split(StringUtils.trimLeading(command), 2);
         final Command cmd = commands.get(args[0]);
         if (cmd == null)
         {
@@ -132,7 +132,7 @@ public class Commands
         }
 
         assert commandList.startsWith(command);
-        final String[] argsList = Patterns.patternWhitespace.split(StringUtils.trimLeading(commandList), 2);
+        final String[] argsList = Patterns.PATTERN_WHITESPACE.split(StringUtils.trimLeading(commandList), 2);
         assert argsList[0].equals(args[0]);
 
         cmd.execute(argsList.length >= 2 ? argsList[1] : "");

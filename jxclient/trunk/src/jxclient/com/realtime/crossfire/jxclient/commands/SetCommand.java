@@ -58,7 +58,7 @@ public class SetCommand extends AbstractCommand
     @Override
     public void execute(final String args)
     {
-        final String[] tmp = Patterns.patternWhitespace.split(args, 2);
+        final String[] tmp = Patterns.PATTERN_WHITESPACE.split(args, 2);
         if (tmp.length != 2)
         {
             drawInfoError("The set command needs two arguments: set <option> <value>");

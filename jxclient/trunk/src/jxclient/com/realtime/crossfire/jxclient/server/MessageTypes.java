@@ -88,7 +88,7 @@ public class MessageTypes
     public static final int MSG_TYPE_COMMUNICATION_EMOTE = 5; // player emotes
     public static final int MSG_TYPE_COMMUNICATION_PARTY = 6; // party message
     public static final int MSG_TYPE_COMMUNICATION_SHOUT = 7; // shout message
-    public static final int MSG_TYPE_COMMUNICATION_chat = 8; // chat message
+    public static final int MSG_TYPE_COMMUNICATION_CHAT = 8; // chat message
 
     /**
      * Private constructor to prevent instantiation.

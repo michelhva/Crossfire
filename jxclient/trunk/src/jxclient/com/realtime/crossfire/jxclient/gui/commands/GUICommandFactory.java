@@ -35,7 +35,7 @@ public class GUICommandFactory
     /**
      * Pattern matching lines that need a {@link #TRAILING_ESCAPE} appended.
      */
-    private static final Pattern patternEncode = Pattern.compile(".*[- \t]$");
+    private static final Pattern PATTERN_ENCODE = Pattern.compile(".*[- \t]$");
     /**
      * Character appended to lines ending with whitespace.
      */
@@ -92,7 +92,7 @@ public class GUICommandFactory
      */
     public static String encode(final String command)
     {
-        return patternEncode.matcher(command).matches() ? command+TRAILING_ESCAPE : command;
+        return PATTERN_ENCODE.matcher(command).matches() ? command+TRAILING_ESCAPE : command;
     }
 
     /**

@@ -31,7 +31,7 @@ public class MetaserverEntry implements Comparable<MetaserverEntry>
     /**
      * Matches html tags.
      */
-    private static final Pattern htmlTagMatcher = Pattern.compile("<[^>]*>");
+    private static final Pattern HTML_TAG_MATCHER = Pattern.compile("<[^>]*>");
 
     private final int updateSeconds;
 
@@ -207,7 +207,7 @@ public class MetaserverEntry implements Comparable<MetaserverEntry>
                     break;
 
                 case 'D':
-                    sb.append(htmlTagMatcher.matcher(comment).replaceAll(" "));
+                    sb.append(HTML_TAG_MATCHER.matcher(comment).replaceAll(" "));
                     break;
 
                 case 'E':

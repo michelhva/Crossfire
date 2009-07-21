@@ -33,7 +33,7 @@ public class StringUtils
     /**
      * A pattern matching leading whitespace.
      */
-    public static final Pattern patternLeadingWhitespace = Pattern.compile("^[ \t]+");
+    public static final Pattern PATTERN_LEADING_WHITESPACE = Pattern.compile("^[ \t]+");
 
     /**
      * Private constructor to prevent instantiation.
@@ -49,7 +49,7 @@ public class StringUtils
      */
     public static String trimLeading(final String str)
     {
-        return patternLeadingWhitespace.matcher(str).replaceAll("");
+        return PATTERN_LEADING_WHITESPACE.matcher(str).replaceAll("");
     }
 
     /**

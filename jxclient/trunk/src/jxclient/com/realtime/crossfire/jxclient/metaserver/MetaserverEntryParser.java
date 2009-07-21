@@ -43,7 +43,7 @@ public class MetaserverEntryParser
     /**
      * The pattern to split a metaserver response line into fields.
      */
-    private static final Pattern fieldSeparatorPattern = Pattern.compile("\\|");
+    private static final Pattern FIELD_SEPARATOR_PATTERN = Pattern.compile("\\|");
 
     /**
      * Whether response parsing is withing a server entry.
@@ -122,7 +122,7 @@ public class MetaserverEntryParser
      */
     public static MetaserverEntry parseEntry(final String entry)
     {
-        final String[] entries = fieldSeparatorPattern.split(entry, -1);
+        final String[] entries = FIELD_SEPARATOR_PATTERN.split(entry, -1);
         if (entries.length != 11)
         {
             return null;

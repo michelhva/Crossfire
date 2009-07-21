@@ -29,7 +29,7 @@ public class Patterns
     /**
      * The pattern to split a command from argments, and to split arguments.
      */
-    public static final Pattern patternWhitespace = Pattern.compile(" +");
+    public static final Pattern PATTERN_WHITESPACE = Pattern.compile(" +");
 
     /**
      * Private constructor to prevent instantiation.
