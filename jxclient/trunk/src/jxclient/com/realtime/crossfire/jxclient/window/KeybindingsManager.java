@@ -294,12 +294,7 @@ public class KeybindingsManager
             return true;
         }
 
-        if (keyBindings.handleKeyTyped(e))
-        {
-            return true;
-        }
-
-        return false;
+        return keyBindings.handleKeyTyped(e);
     }
 
     /**
@@ -314,11 +309,6 @@ public class KeybindingsManager
             return true;
         }
 
-        if (keyBindings.handleKeyPress(e))
-        {
-            return true;
-        }
-
-        return false;
+        return keyBindings.handleKeyPress(e);
     }
 }
