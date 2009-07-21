@@ -592,7 +592,7 @@ public class CfItem
         {
             return totalWeight+" g";
         }
-        if(totalWeight < 10000)
+        if (totalWeight < 10000)
         {
             final int tmp = (totalWeight+50)/100;
             return tmp/10+"."+tmp%10+" kg";

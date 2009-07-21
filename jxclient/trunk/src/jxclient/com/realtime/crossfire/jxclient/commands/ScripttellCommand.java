@@ -58,7 +58,7 @@ public class ScripttellCommand extends AbstractCommand
     @Override
     public void execute(final String args)
     {
-        if(args.isEmpty())
+        if (args.isEmpty())
         {
             drawInfoError("Which script do you want to talk to?");
             return;
@@ -66,20 +66,20 @@ public class ScripttellCommand extends AbstractCommand
 
         final String[] tmp = args.split(" +", 2);
         final Set<ScriptProcess> scriptProcesses = scriptManager.getScripts(tmp[0]);
-        if(scriptProcesses.isEmpty())
+        if (scriptProcesses.isEmpty())
         {
             drawInfoError(scriptManager.hasScripts() ? "No matching scripts." : "No scripts running.");
             return;
         }
 
-        if(tmp.length < 2)
+        if (tmp.length < 2)
         {
             drawInfoError("What do you want to tell the script?");
             return;
         }
 
         final String cmd = "scripttell "+tmp[1];
-        for(final ScriptProcess scriptProcess : scriptProcesses)
+        for (final ScriptProcess scriptProcess : scriptProcesses)
         {
             scriptProcess.commandSent(cmd);
         }

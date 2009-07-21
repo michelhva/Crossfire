@@ -171,7 +171,7 @@ public class ServerCache
                                 System.err.println(file+":"+lnr.getLineNumber()+": syntax error");
                                 continue;
                             }
-                            if(!addEntry(tmp[1], timestamp))
+                            if (!addEntry(tmp[1], timestamp))
                             {
                                 System.err.println(file+":"+lnr.getLineNumber()+": syntax error");
                                 continue;

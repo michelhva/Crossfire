@@ -209,7 +209,7 @@ public abstract class GUIList extends ActivatableGUIElement
         final int oldSize = model.getSize();
         if (newSize < oldSize)
         {
-            for(int i = newSize; i < oldSize; i++)
+            for (int i = newSize; i < oldSize; i++)
             {
                 final GUIElement element = (GUIElement)model.get(i);
                 if (element instanceof GUIItemItem)

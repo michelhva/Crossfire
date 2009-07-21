@@ -129,7 +129,7 @@ public class ScriptManager
             public void scriptTerminated(final String result)
             {
                 scriptProcesses.remove(scriptProcess);
-                if(result == null)
+                if (result == null)
                 {
                     crossfireServerConnection.drawInfo("Script '"+scriptProcess+"' finished.", CrossfireDrawinfoListener.NDI_BLACK);
                 }
@@ -156,7 +156,7 @@ public class ScriptManager
         {
             return getScriptByScriptId(Integer.parseInt(partialScriptName));
         }
-        catch(final NumberFormatException ex)
+        catch (final NumberFormatException ex)
         {
             return getScriptsByName(partialScriptName);
         }
@@ -170,9 +170,9 @@ public class ScriptManager
     private Set<ScriptProcess> getScriptByScriptId(final int scriptId)
     {
         final Set<ScriptProcess> result = new HashSet<ScriptProcess>();
-        for(final ScriptProcess scriptProcess : scriptProcesses)
+        for (final ScriptProcess scriptProcess : scriptProcesses)
         {
-            if(scriptProcess.getScriptId() == scriptId)
+            if (scriptProcess.getScriptId() == scriptId)
             {
                 result.add(scriptProcess);
                 break;
@@ -190,9 +190,9 @@ public class ScriptManager
     private Set<ScriptProcess> getScriptsByName(final String partialScriptName)
     {
         final Set<ScriptProcess> result = new HashSet<ScriptProcess>();
-        for(final ScriptProcess scriptProcess : scriptProcesses)
+        for (final ScriptProcess scriptProcess : scriptProcesses)
         {
-            if(scriptProcess.getFilename().contains(partialScriptName))
+            if (scriptProcess.getFilename().contains(partialScriptName))
             {
                 result.add(scriptProcess);
             }

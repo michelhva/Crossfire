@@ -89,8 +89,8 @@ public class Event implements Comparable<Event>
     @Override
     public boolean equals(final Object obj)
     {
-        if(obj == null) return false;
-        if(obj.getClass() != getClass()) return false;
+        if (obj == null) return false;
+        if (obj.getClass() != getClass()) return false;
         final Event m = (Event)obj;
         return m.timeout == timeout;
     }

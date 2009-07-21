@@ -1424,7 +1424,7 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
                             {
                                 debugProtocol.debugProtocolWrite("recv stats stat="+stat+" int2="+int2Param+"="+(int2Param&0xFFFF));
                             }
-                            for(final CrossfireStatsListener crossfireStatsListener : crossfireStatsListeners)
+                            for (final CrossfireStatsListener crossfireStatsListener : crossfireStatsListeners)
                             {
                                 crossfireStatsListener.statInt2Received(stat, int2Param);
                             }
@@ -1443,7 +1443,7 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
                             {
                                 debugProtocol.debugProtocolWrite("recv stats stat="+stat+" int4="+int4Param);
                             }
-                            for(final CrossfireStatsListener crossfireStatsListener : crossfireStatsListeners)
+                            for (final CrossfireStatsListener crossfireStatsListener : crossfireStatsListeners)
                             {
                                 crossfireStatsListener.statInt4Received(stat, int4Param);
                             }
@@ -1456,7 +1456,7 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
                             {
                                 debugProtocol.debugProtocolWrite("recv stats stat="+stat+" int8="+int8Param);
                             }
-                            for(final CrossfireStatsListener crossfireStatsListener : crossfireStatsListeners)
+                            for (final CrossfireStatsListener crossfireStatsListener : crossfireStatsListeners)
                             {
                                 crossfireStatsListener.statInt8Received(stat, int8Param);
                             }
@@ -1472,7 +1472,7 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
                             {
                                 debugProtocol.debugProtocolWrite("recv stats stat="+stat+" str="+strParam);
                             }
-                            for(final CrossfireStatsListener crossfireStatsListener : crossfireStatsListeners)
+                            for (final CrossfireStatsListener crossfireStatsListener : crossfireStatsListeners)
                             {
                                 crossfireStatsListener.statStringReceived(stat, strParam);
                             }
@@ -1487,7 +1487,7 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
                                 {
                                     debugProtocol.debugProtocolWrite("recv stats stat="+stat+" int2="+int2Param2);
                                 }
-                                for(final CrossfireStatsListener crossfireStatsListener : crossfireStatsListeners)
+                                for (final CrossfireStatsListener crossfireStatsListener : crossfireStatsListeners)
                                 {
                                     crossfireStatsListener.statInt2Received(stat, int2Param2);
                                 }
@@ -1501,7 +1501,7 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
                                 {
                                     debugProtocol.debugProtocolWrite("recv stats stat="+stat+" level="+level+" experience="+experience);
                                 }
-                                for(final CrossfireStatsListener crossfireStatsListener : crossfireStatsListeners)
+                                for (final CrossfireStatsListener crossfireStatsListener : crossfireStatsListeners)
                                 {
                                     crossfireStatsListener.statSkillReceived(stat, level, experience);
                                 }
@@ -1952,7 +1952,7 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
             "tick 1",
             "mapsize "+mapWidth+"x"+mapHeight,
             "num_look_objects "+numLookObjects);
-        for(final CrossfireStatsListener crossfireStatsListener : crossfireStatsListeners)
+        for (final CrossfireStatsListener crossfireStatsListener : crossfireStatsListeners)
         {
             crossfireStatsListener.setSimpleWeaponSpeed(scval >= 1029);
         }

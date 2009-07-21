@@ -58,12 +58,12 @@ public class ScriptkillallCommand extends AbstractCommand
     public void execute(final String args)
     {
         final Set<ScriptProcess> scriptProcesses = scriptManager.getScripts(args);
-        if(scriptProcesses.isEmpty())
+        if (scriptProcesses.isEmpty())
         {
             drawInfoError(scriptManager.hasScripts() ? "No matching scripts." : "No scripts running.");
             return;
         }
-        for(final ScriptProcess scriptProcess : scriptProcesses)
+        for (final ScriptProcess scriptProcess : scriptProcesses)
         {
             scriptProcess.killScript();
         }

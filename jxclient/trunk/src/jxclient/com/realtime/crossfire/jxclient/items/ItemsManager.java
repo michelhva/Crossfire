@@ -692,7 +692,7 @@ public class ItemsManager
         final CfItem item = getItemOrPlayer(tag);
         if (item == null)
         {
-            if(flags != CfItem.UPD_FACE) // XXX: suppress frequent error message due to server bug
+            if (flags != CfItem.UPD_FACE) // XXX: suppress frequent error message due to server bug
             {
                 System.err.println("updateItem: undefined item "+tag);
             }
