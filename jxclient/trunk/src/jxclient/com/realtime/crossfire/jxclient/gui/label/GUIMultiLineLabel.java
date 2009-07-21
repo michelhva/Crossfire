@@ -50,7 +50,7 @@ public class GUIMultiLineLabel extends GUILabel
     /**
      * The text lines to draw.
      */
-    private String[] lines = new String[0];
+    private String[] lines = null;
 
     /**
      * Create a new instance.
@@ -109,7 +109,7 @@ public class GUIMultiLineLabel extends GUILabel
     {
         super.render(g);
 
-        if (lines == null)
+        if (lines == null || lines.length <= 0)
         {
             return;
         }
