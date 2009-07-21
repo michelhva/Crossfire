@@ -784,22 +784,7 @@ public class Gui
      */
     public boolean isChangedFromDefault()
     {
-        if (name == null)
-        {
-            return false;
-        }
-
-        if (w <= 0 || h <= 0)
-        {
-            return false;
-        }
-
-        if (!stateChanged)
-        {
-            return false;
-        }
-
-        return true;
+        return name != null && w > 0 && h > 0 && stateChanged;
     }
 
     /**
