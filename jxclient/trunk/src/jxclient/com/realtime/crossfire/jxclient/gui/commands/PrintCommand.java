@@ -25,13 +25,6 @@ package com.realtime.crossfire.jxclient.gui.commands;
  */
 public class PrintCommand implements GUICommand
 {
-    /**
-     * Creates a new instance.
-     */
-    public PrintCommand()
-    {
-    }
-
     /** {@inheritDoc} */
     @Override
     public boolean canExecute()
