@@ -46,7 +46,7 @@ public class DialogStateParser
     /**
      * The pattern to split fields in the save file.
      */
-    private static final Pattern pattern = Pattern.compile(" ");
+    private static final Pattern PATTERN = Pattern.compile(" ");
 
     /**
      * Private constructor to prevent instantiation.
@@ -112,7 +112,7 @@ public class DialogStateParser
                                 break;
                             }
 
-                            final String[] tmp = pattern.split(line, -1);
+                            final String[] tmp = PATTERN.split(line, -1);
                             if (tmp.length != 6)
                             {
                                 throw new IOException("syntax error: "+line);

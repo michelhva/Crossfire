@@ -44,7 +44,7 @@ public class ExpressionParser
     /**
      * Pattern to parse integer constants.
      */
-    private static final Pattern patternExpr = Pattern.compile("([0-9]+|"+WIDTH+"|"+HEIGHT+"|"+WIDTH+"/2|"+HEIGHT+"/2)([-+])(.+)");
+    private static final Pattern PATTERN_EXPR = Pattern.compile("([0-9]+|"+WIDTH+"|"+HEIGHT+"|"+WIDTH+"/2|"+HEIGHT+"/2)([-+])(.+)");
 
     /**
      * The current resolution for {@link #WIDTH} and {@link #HEIGHT} constants.
@@ -78,7 +78,7 @@ public class ExpressionParser
             // ignore
         }
 
-        Matcher matcher = patternExpr.matcher(str);
+        Matcher matcher = PATTERN_EXPR.matcher(str);
         if (!matcher.matches())
         {
             throw new IOException("invalid number: "+str);
@@ -92,7 +92,7 @@ public class ExpressionParser
                 final boolean negative = matcher.group(2).equals("-");
                 final String rest = matcher.group(3);
 
-                matcher = patternExpr.matcher(rest);
+                matcher = PATTERN_EXPR.matcher(rest);
                 if (!matcher.matches())
                 {
                     final int valueRest = Integer.parseInt(rest);

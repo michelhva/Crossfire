@@ -45,13 +45,13 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
     /**
      * Pattern to split a string by ":".
      */
-    private static final Pattern patternDot = Pattern.compile(":");
+    private static final Pattern PATTERN_DOT = Pattern.compile(":");
 
     /**
      * The {@link Charset} used for parsing or encoding strings received from
      * or sent to the Crossfire server.
      */
-    private static final Charset utf8 = Charset.forName("UTF-8");
+    private static final Charset UTF8 = Charset.forName("UTF-8");
 
     /**
      * The map width in tiles that is negotiated with the server.
@@ -579,10 +579,10 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
                             final int path = ((packet[pos++]&0xFF)<<24)|((packet[pos++]&0xFF)<<16)|((packet[pos++]&0xFF)<<8)|(packet[pos++]&0xFF);
                             final int face = ((packet[pos++]&0xFF)<<24)|((packet[pos++]&0xFF)<<16)|((packet[pos++]&0xFF)<<8)|(packet[pos++]&0xFF);
                             final int nameLength = packet[pos++]&0xFF;
-                            final String name = new String(packet, pos, nameLength, utf8);
+                            final String name = new String(packet, pos, nameLength, UTF8);
                             pos += nameLength;
                             final int messageLength = ((packet[pos++]&0xFF)<<8)|(packet[pos++]&0xFF);
-                            final String message = new String(packet, pos, messageLength, utf8);
+                            final String message = new String(packet, pos, messageLength, UTF8);
                             pos += messageLength;
                             if (pos > end) break;
                             if (debugProtocol != null)
@@ -775,7 +775,7 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
                             while (packet[pos] != ' ');
                             pos++;
 
-                            final String message = new String(packet, pos, end-pos, utf8);
+                            final String message = new String(packet, pos, end-pos, UTF8);
 
                             if (debugProtocol != null)
                             {
@@ -805,7 +805,7 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
                             while (packet[pos] != ' ');
                             pos++;
 
-                            final String message = new String(packet, pos, end-pos, utf8);
+                            final String message = new String(packet, pos, end-pos, UTF8);
 
                             if (debugProtocol != null)
                             {
@@ -847,7 +847,7 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
                         {
                             pos++;
                         }
-                        final String string = new String(packet, startPos, pos-startPos, utf8);
+                        final String string = new String(packet, startPos, pos-startPos, UTF8);
                         pos++;
                         if (debugProtocol != null)
                         {
@@ -875,7 +875,7 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
                         {
                             pos++;
                         }
-                        final String type = new String(packet, startPos, pos-startPos, utf8);
+                        final String type = new String(packet, startPos, pos-startPos, UTF8);
                         pos++;
                         if (debugProtocol != null)
                         {
@@ -900,7 +900,7 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
                     final int faceNum = ((packet[pos++]&0xFF)<<8)|(packet[pos++]&0xFF);
                     final int faceSetNum = packet[pos++]&0xFF;
                     final int faceChecksum = ((packet[pos++]&0xFF)<<24)|((packet[pos++]&0xFF)<<16)|((packet[pos++]&0xFF)<<8)|(packet[pos++]&0xFF);
-                    final String faceName = new String(packet, pos, end-pos, utf8).intern();
+                    final String faceName = new String(packet, pos, end-pos, UTF8).intern();
                     if (debugProtocol != null)
                     {
                         debugProtocol.debugProtocolWrite("recv face2 num="+faceNum+" set="+faceSetNum+" checksum="+faceChecksum+" name="+faceName);
@@ -973,7 +973,7 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
                             final int weight = ((packet[pos++]&0xFF)<<24)|((packet[pos++]&0xFF)<<16)|((packet[pos++]&0xFF)<<8)|(packet[pos++]&0xFF);
                             final int faceNum = ((packet[pos++]&0xFF)<<24)|((packet[pos++]&0xFF)<<16)|((packet[pos++]&0xFF)<<8)|(packet[pos++]&0xFF);
                             final int nameLength = packet[pos++]&0xFF;
-                            final String[] names = new String(packet, pos, nameLength, utf8).split("\0", 2);
+                            final String[] names = new String(packet, pos, nameLength, UTF8).split("\0", 2);
                             pos += nameLength;
                             final String name = names[0].intern();
                             final String namePl = names.length < 2 ? name : names[1].intern();
@@ -1139,7 +1139,7 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
                     if (packet[pos++] != 'c') break;
                     if (packet[pos++] != ' ') break;
                     args = pos;
-                    final String music = new String(packet, pos, end-pos, utf8);
+                    final String music = new String(packet, pos, end-pos, UTF8);
                     if (debugProtocol != null)
                     {
                         debugProtocol.debugProtocolWrite("recv music "+music);
@@ -1186,7 +1186,7 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
                     final int weight = ((packet[pos++]&0xFF)<<24)|((packet[pos++]&0xFF)<<16)|((packet[pos++]&0xFF)<<8)|(packet[pos++]&0xFF);
                     final int faceNum = ((packet[pos++]&0xFF)<<24)|((packet[pos++]&0xFF)<<16)|((packet[pos++]&0xFF)<<8)|(packet[pos++]&0xFF);
                     final int nameLength = packet[pos++]&0xFF;
-                    final String name = new String(packet, pos, nameLength, utf8);
+                    final String name = new String(packet, pos, nameLength, UTF8);
                     pos += nameLength;
                     if (pos != end) break;
                     if (debugProtocol != null)
@@ -1217,7 +1217,7 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
                     while (packet[pos] != ' ');
                     pos++;
 
-                    final String text = new String(packet, pos, end-pos, utf8);
+                    final String text = new String(packet, pos, end-pos, UTF8);
 
                     if (debugProtocol != null)
                     {
@@ -1254,7 +1254,7 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
                     {
                         pos++;
                     }
-                    final String infoType = new String(packet, startPos, pos-startPos, utf8);
+                    final String infoType = new String(packet, startPos, pos-startPos, UTF8);
                     if (debugProtocol != null)
                     {
                         debugProtocol.debugProtocolWrite("recv replyinfo type="+infoType+" len="+(end-(pos+1)));
@@ -1292,7 +1292,7 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
                         {
                             pos++;
                         }
-                        options.add(new String(packet, startPos, pos-startPos, utf8));
+                        options.add(new String(packet, startPos, pos-startPos, UTF8));
                         if (pos < end)
                         {
                             pos++;
@@ -1368,10 +1368,10 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
                             final int volume = packet[pos++];
                             final int type = packet[pos++];
                             final int actionLength = packet[pos++]&0xFF;
-                            final String action = new String(packet, pos, actionLength, utf8);
+                            final String action = new String(packet, pos, actionLength, UTF8);
                             pos += actionLength;
                             final int nameLength = packet[pos++]&0xFF;
-                            final String name = new String(packet, pos, nameLength, utf8);
+                            final String name = new String(packet, pos, nameLength, UTF8);
                             pos += nameLength;
                             if (pos != end) break;
                             if (debugProtocol != null)
@@ -1466,7 +1466,7 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
                         case CrossfireStatsListener.CS_STAT_RANGE:
                         case CrossfireStatsListener.CS_STAT_TITLE:
                             final int length = packet[pos++]&0xFF;
-                            final String strParam = new String(packet, pos, length, utf8);
+                            final String strParam = new String(packet, pos, length, UTF8);
                             pos += length;
                             if (debugProtocol != null)
                             {
@@ -1572,8 +1572,8 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
                             {
                                 namePlIndex++;
                             }
-                            valName = new String(packet, pos, namePlIndex, utf8);
-                            valNamePl = namePlIndex+1 < nameLength ? new String(packet, pos+namePlIndex+1, nameLength-(namePlIndex+1), utf8) : valName;
+                            valName = new String(packet, pos, namePlIndex, UTF8);
+                            valNamePl = namePlIndex+1 < nameLength ? new String(packet, pos+namePlIndex+1, nameLength-(namePlIndex+1), UTF8) : valName;
                             pos += nameLength;
                         }
                         else
@@ -1651,7 +1651,7 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
                     while (packet[pos] != ' ');
                     pos++;
 
-                    final String vinfo = new String(packet, pos, end-pos, utf8);
+                    final String vinfo = new String(packet, pos, end-pos, UTF8);
 
                     if (debugProtocol != null)
                     {
@@ -1725,7 +1725,7 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
                 break;
             }
         }
-        return new String(packet, start, cmdlen-start, utf8);
+        return new String(packet, start, cmdlen-start, UTF8);
     }
 
     /**
@@ -2058,7 +2058,7 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
                             break;
                         }
 
-                        final String[] sk = patternDot.split(r, 2);
+                        final String[] sk = PATTERN_DOT.split(r, 2);
                         if (sk.length != 2)
                         {
                             System.err.println("Ignoring skill definition for invalid skill: "+r+".");
@@ -2424,7 +2424,7 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
             byteBuffer.put(ncomPrefix);
             byteBuffer.putShort((short)thisPacket);
             byteBuffer.putInt(repeat);
-            byteBuffer.put(command.getBytes(utf8));
+            byteBuffer.put(command.getBytes(UTF8));
             writePacket(writeBuffer, byteBuffer.position());
         }
         return thisPacket;
@@ -2442,7 +2442,7 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
         {
             byteBuffer.clear();
             byteBuffer.put(replyPrefix);
-            byteBuffer.put(text.getBytes(utf8));
+            byteBuffer.put(text.getBytes(UTF8));
             writePacket(writeBuffer, byteBuffer.position());
         }
     }
@@ -2459,7 +2459,7 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
         {
             byteBuffer.clear();
             byteBuffer.put(requestinfoPrefix);
-            byteBuffer.put(infoType.getBytes(utf8));
+            byteBuffer.put(infoType.getBytes(UTF8));
             writePacket(writeBuffer, byteBuffer.position());
         }
     }
@@ -2485,7 +2485,7 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
                 for (final String option : options)
                 {
                     byteBuffer.put((byte)' ');
-                    byteBuffer.put(option.getBytes(utf8));
+                    byteBuffer.put(option.getBytes(UTF8));
                 }
             }
             writePacket(writeBuffer, byteBuffer.position());
@@ -2534,7 +2534,7 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
             byteBuffer.put((byte)' ');
             putDecimal(scval);
             byteBuffer.put((byte)' ');
-            byteBuffer.put(vinfo.getBytes(utf8));
+            byteBuffer.put(vinfo.getBytes(UTF8));
             writePacket(writeBuffer, byteBuffer.position());
         }
     }

@@ -10,14 +10,14 @@ public class Filenames
 {
     /**
      * Replaces "unsafe" characters in file names (see {@link
-     * #unsafeFileNameCharacters}).
+     * #UNSAFE_FILENAME_CHARACTERS}).
      */
     public static final String REPLACEMENT_CHARACTER = "_";
     /**
      * Matches all chracters that are considered "unsafe" for file names. These
      * characters will be replaced with {@link #REPLACEMENT_CHARACTER}.
      */
-    public static final Pattern unsafeFileNameCharacters = Pattern.compile("[^a-zA-Z0-9_.]");
+    public static final Pattern UNSAFE_FILENAME_CHARACTERS = Pattern.compile("[^a-zA-Z0-9_.]");
 
     /**
      * Private constructor to prevent instantiation.
@@ -28,7 +28,7 @@ public class Filenames
 
     /**
      * Converts a file name to a "safe" form. The returned file name will not
-     * contain any "unsafe" characters (see {@link #unsafeFileNameCharacters}),
+     * contain any "unsafe" characters (see {@link #UNSAFE_FILENAME_CHARACTERS}),
      * and it will not be empty.
      * @param name the file name to convert
      * @return the converted file name
@@ -36,7 +36,7 @@ public class Filenames
     public static String quoteName(final String name)
     {
         final String trimmedName = name.endsWith(".png") ? name.substring(0, name.length()-4) : name;
-        final String replacedName = unsafeFileNameCharacters.matcher(trimmedName).replaceAll(REPLACEMENT_CHARACTER);
+        final String replacedName = UNSAFE_FILENAME_CHARACTERS.matcher(trimmedName).replaceAll(REPLACEMENT_CHARACTER);
         return replacedName.length() > 0 ? replacedName : REPLACEMENT_CHARACTER;
     }
 }
