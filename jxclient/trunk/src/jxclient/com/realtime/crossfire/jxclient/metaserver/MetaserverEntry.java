@@ -148,11 +148,11 @@ public class MetaserverEntry implements Comparable<MetaserverEntry>
 
     /** {@inheritDoc} */
     @Override
-    public boolean equals(final Object o)
+    public boolean equals(final Object obj)
     {
-        if(o == null) return false;
-        if(o.getClass() != getClass()) return false;
-        final MetaserverEntry m = (MetaserverEntry)o;
+        if(obj == null) return false;
+        if(obj.getClass() != getClass()) return false;
+        final MetaserverEntry m = (MetaserverEntry)obj;
         return m.hostname.equals(hostname);
     }
 
