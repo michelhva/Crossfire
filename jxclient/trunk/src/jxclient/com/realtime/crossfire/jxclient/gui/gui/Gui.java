@@ -70,7 +70,7 @@ public class Gui
     /**
      * The gui states that do not show this dialog.
      */
-    private final EnumSet<RendererGuiState> hideInStates = EnumSet.noneOf(RendererGuiState.class);
+    private final Set<RendererGuiState> hideInStates = EnumSet.noneOf(RendererGuiState.class);
 
     /**
      * If non-<code>null</code>, this element is always active. No other
