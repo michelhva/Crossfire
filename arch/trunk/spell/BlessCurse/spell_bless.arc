@@ -20,4 +20,11 @@ maxgrace 30
 resist_godpower 35
 ac 1
 wc 1
+msg
+This spell grants the character a
+blessing from a worshipped god.  It
+affects resistances and stats, but the
+specific effect varies depending on the
+god the character worships.
+endmsg
 end

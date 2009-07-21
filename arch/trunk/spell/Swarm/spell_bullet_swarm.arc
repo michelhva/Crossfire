@@ -17,4 +17,12 @@ duration_modifier 4
 maxsp 12
 no_drop 1
 invisible 1
+msg
+This spell fires many magic bullets in
+the direction the caster is facing. The
+caster should beware: the bullets will
+do damage to the caster.  The number
+and damage of the bullets depends on
+the level of the caster.
+endmsg
 end

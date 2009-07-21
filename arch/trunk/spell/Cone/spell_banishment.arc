@@ -21,4 +21,10 @@ attacktype 2228224
 no_drop 1
 invisible 1
 skill praying
+msg
+Banishment is a cone spell that may
+cause weaker enemies of your god to
+immediately disappear or die.  It is a
+more powerful version of Holy Word.
+endmsg
 end

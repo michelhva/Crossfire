@@ -16,4 +16,11 @@ invisible 1
 duration 100
 duration_modifier 5
 dam_modifier 1
+msg
+The alchemy spell converts valuable
+items into gold nuggets.  If the item
+is not valuable enough to be converted
+to a nugget, it is destroyed and
+vanishes.
+endmsg
 end
