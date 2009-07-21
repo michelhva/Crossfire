@@ -176,13 +176,13 @@ public abstract class AbstractOrientation implements Orientation
 
     /**
      * Returns the fraction <code>val/max</code> rounded to
-     * [<code>0..width</code>].
+     * [<code>0..size</code>].
      * @param val the value
      * @param max the range size
-     * @param width the size of the result
+     * @param size the size of the result
      * @return the fraction in pixels
      */
-    protected static int calc(final int val, final int max, final int width)
+    protected static int calc(final int val, final int max, final int size)
     {
         if (val <= 0 || max <= 0)
         {
@@ -190,11 +190,11 @@ public abstract class AbstractOrientation implements Orientation
         }
         else if (val >= max)
         {
-            return width;
+            return size;
         }
         else
         {
-            return (width*val+max/2)/max;
+            return (size*val+max/2)/max;
         }
     }
 }
