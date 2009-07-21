@@ -107,7 +107,7 @@ public class GUIMagicMap extends GUIElement
     /**
      * The colors for displaying magic map data.
      */
-    private static final Color[] tileColors = new Color[]
+    private static final Color[] tileColors =
     {
         Color.BLACK,
         Color.WHITE,
