@@ -50,7 +50,7 @@ public class PacketWatcher
      * A {@link Pattern} matching all {@link #commands}. Set to
      * <code>null</code> when not watching for commands.
      */
-    private Pattern pattern;
+    private Pattern pattern = null;
 
     /**
      * The {@link ReceivedPacketListener} attached to {@link
