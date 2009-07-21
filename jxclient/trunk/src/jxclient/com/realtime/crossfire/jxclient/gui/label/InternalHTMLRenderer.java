@@ -71,25 +71,25 @@ public class InternalHTMLRenderer extends HTMLEditorKit.ParserCallback
     }
 
     @Override
-    public void handleStartTag(final HTML.Tag tag, final MutableAttributeSet attrSet, final int pos)
+    public void handleStartTag(final HTML.Tag t, final MutableAttributeSet a, final int pos)
     {
-        if (tag.equals(HTML.Tag.A))
+        if (t.equals(HTML.Tag.A))
         {
             fonts.push(fonts.peek());
             colors.push(Color.YELLOW);
             //y += defaultfont.getSize()+1;
         }
-        else if (tag.equals(HTML.Tag.B))
+        else if (t.equals(HTML.Tag.B))
         {
             fonts.push(fonts.peek().deriveFont(Font.BOLD));
             colors.push(colors.peek());
         }
-        else if (tag.equals(HTML.Tag.I))
+        else if (t.equals(HTML.Tag.I))
         {
             fonts.push(fonts.peek().deriveFont(Font.ITALIC));
             colors.push(colors.peek());
         }
-        else if (tag.equals(HTML.Tag.LI))
+        else if (t.equals(HTML.Tag.LI))
         {
             fonts.push(fonts.peek());
             colors.push(colors.peek());
@@ -111,9 +111,9 @@ public class InternalHTMLRenderer extends HTMLEditorKit.ParserCallback
     }
 
     @Override
-    public void handleSimpleTag(final HTML.Tag tag, final MutableAttributeSet attrSet, final int pos)
+    public void handleSimpleTag(final HTML.Tag t, final MutableAttributeSet a, final int pos)
     {
-        if (tag.equals(HTML.Tag.BR))
+        if (t.equals(HTML.Tag.BR))
         {
             y += fonts.peek().getSize()+1;
             x = origx;
@@ -121,7 +121,7 @@ public class InternalHTMLRenderer extends HTMLEditorKit.ParserCallback
     }
 
     @Override
-    public void handleEndTag(final HTML.Tag tag, final int pos)
+    public void handleEndTag(final HTML.Tag t, final int pos)
     {
         fonts.pop();
         colors.pop();

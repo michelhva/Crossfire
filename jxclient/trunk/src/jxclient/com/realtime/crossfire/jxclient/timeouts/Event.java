@@ -71,10 +71,10 @@ public class Event implements Comparable<Event>
 
     /** {@inheritDoc} */
     @Override
-    public int compareTo(final Event event)
+    public int compareTo(final Event o)
     {
-        if (timeout < event.timeout) return -1;
-        if (timeout > event.timeout) return +1;
+        if (timeout < o.timeout) return -1;
+        if (timeout > o.timeout) return +1;
         return 0;
     }
 
@@ -87,11 +87,11 @@ public class Event implements Comparable<Event>
 
     /** {@inheritDoc} */
     @Override
-    public boolean equals(final Object o)
+    public boolean equals(final Object obj)
     {
-        if(o == null) return false;
-        if(o.getClass() != getClass()) return false;
-        final Event m = (Event)o;
+        if(obj == null) return false;
+        if(obj.getClass() != getClass()) return false;
+        final Event m = (Event)obj;
         return m.timeout == timeout;
     }
 }
