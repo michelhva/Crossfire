@@ -155,7 +155,7 @@ public class GUIMagicMap extends GUIElement
                         {
                             if (data[datapos] != 0)
                             {
-                                g.setColor(tileColors[data[datapos]&CrossfireMagicmapListener.FACE_COLOR_MASK]);
+                                g.setColor(tileColors[data[datapos]&FACE_COLOR_MASK]);
                                 final int sx = offsetX+x*TILE_SIZE;
                                 final int sy = offsetY+y*TILE_SIZE;
                                 g.fillRect(sx, sy, TILE_SIZE, TILE_SIZE);
