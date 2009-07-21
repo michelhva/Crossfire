@@ -293,7 +293,7 @@ public class DefaultScriptProcess extends Thread implements ScriptProcess
                 crossfireServerConnection.removeClientSocketListener(clientSocketListener);
             }
             packetWatcher.destroy();
-            for(final ScriptProcessListener scriptProcessListener : scriptProcessListeners)
+            for (final ScriptProcessListener scriptProcessListener : scriptProcessListeners)
             {
                 scriptProcessListener.scriptTerminated(result);
             }
@@ -329,13 +329,13 @@ public class DefaultScriptProcess extends Thread implements ScriptProcess
     private void commandSentItem(final String cmd, final CfItem item)
     {
         int flags = 0;
-        if(item.isMagic()) flags |= 0x100;
-        if(item.isCursed()) flags |= 0x80;
-        if(item.isDamned()) flags |= 0x40;
-        if(item.isUnpaid()) flags |= 0x20;
-        if(item.isLocked()) flags |= 0x10;
-        if(item.isApplied()) flags |= 0x08;
-        if(item.isOpen()) flags |= 0x04;
+        if (item.isMagic()) flags |= 0x100;
+        if (item.isCursed()) flags |= 0x80;
+        if (item.isDamned()) flags |= 0x40;
+        if (item.isUnpaid()) flags |= 0x20;
+        if (item.isLocked()) flags |= 0x10;
+        if (item.isApplied()) flags |= 0x08;
+        if (item.isOpen()) flags |= 0x04;
         final int nrof = Math.max(1, item.getNrOf());
         final String name = nrof <= 1 ? item.getName() : nrof+" "+item.getName();
         commandSent(cmd+" "+item.getTag()+" "+nrof+" "+Math.max(0, item.getWeight())+" "+flags+" "+item.getType()+" "+name);
@@ -554,7 +554,7 @@ public class DefaultScriptProcess extends Thread implements ScriptProcess
         else if (parms.startsWith("map "))
         {
             final String[] tmp = parms.split(" +");
-            if(tmp.length != 3)
+            if (tmp.length != 3)
             {
                 reportError("syntax error: request "+parms);
                 return;
@@ -867,11 +867,11 @@ public class DefaultScriptProcess extends Thread implements ScriptProcess
     @Override
     public int compareTo(final ScriptProcess o)
     {
-        if(scriptId < o.getScriptId())
+        if (scriptId < o.getScriptId())
         {
             return -1;
         }
-        else if(scriptId > o.getScriptId())
+        else if (scriptId > o.getScriptId())
         {
             return +1;
         }

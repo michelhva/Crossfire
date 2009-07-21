@@ -155,7 +155,7 @@ public class MessageBufferUpdater
         {
             // guess category from message color
             final int messageType;
-            switch(type)
+            switch (type)
             {
             case NDI_WHITE:
             case NDI_ORANGE:

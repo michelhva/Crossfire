@@ -94,7 +94,7 @@ public class RawScale8d
             for (int dy = 0; dy < 8; dy++)
             {
                 final int value = getSourcePixel(8*x+dx, 8*y+dy);
-                if(value != 0)
+                if (value != 0)
                 {
                     final Integer count = pixels.get(value);
                     pixels.put(value, count == null ? 1 : count+1);

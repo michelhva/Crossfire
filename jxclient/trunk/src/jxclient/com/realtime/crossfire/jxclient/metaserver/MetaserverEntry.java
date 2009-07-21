@@ -150,8 +150,8 @@ public class MetaserverEntry implements Comparable<MetaserverEntry>
     @Override
     public boolean equals(final Object obj)
     {
-        if(obj == null) return false;
-        if(obj.getClass() != getClass()) return false;
+        if (obj == null) return false;
+        if (obj.getClass() != getClass()) return false;
         final MetaserverEntry m = (MetaserverEntry)obj;
         return m.hostname.equals(hostname);
     }

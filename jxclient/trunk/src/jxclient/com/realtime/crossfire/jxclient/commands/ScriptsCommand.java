@@ -59,14 +59,14 @@ public class ScriptsCommand extends AbstractCommand
     public void execute(final String args)
     {
         final Set<ScriptProcess> scriptProcesses = new TreeSet<ScriptProcess>(scriptManager.getScripts(args));
-        if(scriptProcesses.isEmpty())
+        if (scriptProcesses.isEmpty())
         {
             drawInfo(scriptManager.hasScripts() ? "No matching scripts." : "No scripts running.");
             return;
         }
 
         drawInfo("Running scripts:");
-        for(final ScriptProcess scriptProcess : scriptProcesses)
+        for (final ScriptProcess scriptProcess : scriptProcesses)
         {
             drawInfo("- "+scriptProcess);
         }

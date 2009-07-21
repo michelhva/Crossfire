@@ -369,7 +369,7 @@ public class JXCWindow extends JFrame
                 guiManager.closeKeybindDialog();
             }
 
-            if(!guiManager.openQuitDialog())
+            if (!guiManager.openQuitDialog())
             {
                 quitApplication();
             }
