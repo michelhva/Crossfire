@@ -411,10 +411,14 @@ public class CfMap
         if (minX > maxX || minY > maxY)
         {
             // current map is undefined ==> start with 1x1 map
-            minX = maxX = x;
-            minY = maxY = y;
-            minPx = maxPx = (x-patchX)>>CfMapPatch.SIZE_LOG;
-            minPy = maxPy = (y-patchY)>>CfMapPatch.SIZE_LOG;
+            minX = x;
+            maxX = x;
+            minY = y;
+            maxY = y;
+            minPx = (x-patchX)>>CfMapPatch.SIZE_LOG;
+            maxPx = minPx;
+            minPy = (y-patchY)>>CfMapPatch.SIZE_LOG;
+            maxPy = minPy;
             patch = new CfMapPatch[1][1];
             patch[0][0] = null;
         }
