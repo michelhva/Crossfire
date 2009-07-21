@@ -659,7 +659,7 @@ public class CfMapUpdater
      */
     public int getHeight()
     {
-        return width;
+        return height;
     }
 
     /**
