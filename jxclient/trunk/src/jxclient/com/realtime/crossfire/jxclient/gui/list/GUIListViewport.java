@@ -37,6 +37,6 @@ public class GUIListViewport extends JViewport
      */
     public void update()
     {
-        super.fireStateChanged();
+        fireStateChanged();
     }
 }
