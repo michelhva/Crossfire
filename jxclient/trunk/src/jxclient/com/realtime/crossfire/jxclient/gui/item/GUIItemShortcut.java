@@ -202,7 +202,6 @@ public class GUIItemShortcut extends GUIItem
     @Override
     public void button1Clicked(final int modifiers)
     {
-        final Shortcut shortcut = shortcuts.getShortcut(index);
         if (shortcut != null)
         {
             shortcut.execute();
@@ -213,7 +212,6 @@ public class GUIItemShortcut extends GUIItem
     @Override
     public void button2Clicked(final int modifiers)
     {
-        final Shortcut shortcut = shortcuts.getShortcut(index);
         if (shortcut != null)
         {
             if (shortcut instanceof ShortcutSpell)
@@ -245,7 +243,6 @@ public class GUIItemShortcut extends GUIItem
         g2.setBackground(BACKGROUND_COLOR);
         g.clearRect(0, 0, getWidth(), getHeight());
 
-        final Shortcut shortcut = shortcuts.getShortcut(index);
         if (shortcut == null)
         {
             return;
