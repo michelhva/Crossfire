@@ -76,7 +76,7 @@ public class KeyHandler
      */
     private final SimpleDateFormat simpleDateFormat = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss,SSS ");
 
-    private final boolean[] keyShift = new boolean[] { false, false, false, false };
+    private final boolean[] keyShift = { false, false, false, false };
 
     private KeyBindings keyBindings = null;
 
