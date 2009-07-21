@@ -36,12 +36,12 @@ public class SoundManager
     /**
      * The clip manager for playing sound effects.
      */
-    private static final ClipManager clipManager = new ClipManager();
+    private final ClipManager clipManager = new ClipManager();
 
     /**
      * The music manager for playing background music.
      */
-    private static final MusicManager musicManager = new MusicManager();
+    private final MusicManager musicManager = new MusicManager();
 
     /**
      * Whether sound is enabled.
@@ -178,7 +178,7 @@ public class SoundManager
      *
      * @param name The music name.
      */
-    public static void playMusic(final String name)
+    public void playMusic(final String name)
     {
         musicManager.play(name);
     }
@@ -189,7 +189,7 @@ public class SoundManager
      * @param muted Whether to mute (<code>true</code>) or unmute
      * (<code>false</code>).
      */
-    public static void muteMusic(final boolean muted)
+    public void muteMusic(final boolean muted)
     {
         musicManager.setMuted(muted);
     }
@@ -197,7 +197,7 @@ public class SoundManager
     /**
      * Terminate all sounds and free resources.
      */
-    public static void shutdown()
+    public void shutdown()
     {
         musicManager.shutdown();
         clipManager.shutdown();
