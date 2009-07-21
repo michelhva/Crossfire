@@ -541,35 +541,7 @@ public class JXCWindowRenderer
             @Override
             public Iterator<Gui> iterator()
             {
-                return new Iterator<Gui>()
-                {
-                    /**
-                     * The backing list iterator; it returns the elements in
-                     * reversed order.
-                     */
-                    private final ListIterator<Gui> it = openDialogs.listIterator(openDialogs.size());
-
-                    /** {@inheritDoc} */
-                    @Override
-                    public boolean hasNext()
-                    {
-                        return it.hasPrevious();
-                    }
-
-                    /** {@inheritDoc} */
-                    @Override
-                    public Gui next()
-                    {
-                        return it.previous();
-                    }
-
-                    /** {@inheritDoc} */
-                    @Override
-                    public void remove()
-                    {
-                        throw new UnsupportedOperationException();
-                    }
-                };
+                return new OpenDialogsIterator();
             }
         };
     }
@@ -873,5 +845,38 @@ public class JXCWindowRenderer
     {
         final GUIMessageLog buffer = gui.getFirstElement(GUIMessageLog.class);
         return buffer == null ? null : buffer.getBuffer();
+    }
+
+    /**
+     * An {@link Iterator} that returns all open dialogs in painting order.
+     */
+    private class OpenDialogsIterator implements Iterator<Gui>
+    {
+        /**
+         * The backing list iterator; it returns the elements in
+         * reversed order.
+         */
+        private final ListIterator<Gui> it = openDialogs.listIterator(openDialogs.size());
+
+        /** {@inheritDoc} */
+        @Override
+        public boolean hasNext()
+        {
+            return it.hasPrevious();
+        }
+
+        /** {@inheritDoc} */
+        @Override
+        public Gui next()
+        {
+            return it.previous();
+        }
+
+        /** {@inheritDoc} */
+        @Override
+        public void remove()
+        {
+            throw new UnsupportedOperationException();
+        }
     }
 }
