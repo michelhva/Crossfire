@@ -21,4 +21,10 @@ attacktype 6
 no_drop 1
 invisible 1
 skill pyromancy
+msg
+Casts cone of fire in front of the
+caster. The spell gains strength as the
+character gains in level, so it remains
+a valuable spell even at high levels.
+endmsg
 end
