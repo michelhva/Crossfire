@@ -33,6 +33,11 @@ import com.realtime.crossfire.jxclient.server.CrossfireServerConnection;
 public class ActiveSkillWatcher
 {
     /**
+     * Prefix string when searching for the currently active skill.
+     */
+    private static final String READIED_SKILLS = "Readied skill: ";
+
+    /**
      * The object used for synchronization.
      */
     private final Object sync = new Object();
@@ -169,9 +174,9 @@ public class ActiveSkillWatcher
      */
     private void checkMessage(final String message)
     {
-        if (message.startsWith("Readied skill: "))
+        if (message.startsWith(READIED_SKILLS))
         {
-            final String tmp = message.substring(15);
+            final String tmp = message.substring(READIED_SKILLS.length());
             setActive(tmp.endsWith(".") ? tmp.substring(0, tmp.length()-1) : tmp);
         }
     }
