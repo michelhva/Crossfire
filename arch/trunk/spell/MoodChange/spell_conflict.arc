@@ -18,4 +18,10 @@ range_modifier 10
 maxgrace 10
 berserk 1
 other_arch detect_magic
+msg
+Confuses and distracts nearby monsters,
+causing them to attack the nearest
+target, whether friend or foe.  This
+spell is granted by Lythander.
+endmsg
 end

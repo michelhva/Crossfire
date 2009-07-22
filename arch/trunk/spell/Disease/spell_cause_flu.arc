@@ -19,4 +19,9 @@ duration_modifier 5
 maxgrace 10
 no_drop 1
 invisible 1
+msg
+Unleashes an outbreak of the flu. It is
+rarely deadly, except to weak monsters,
+but it is very debilitating.
+endmsg
 end

@@ -20,4 +20,9 @@ no_attack 1
 other_arch detect_magic
 race undead
 undead 1
+msg
+Turns nearby undead creatures into pets.
+May affect any or all of the creatures
+standing next to the caster.
+endmsg
 end

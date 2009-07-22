@@ -23,4 +23,11 @@ attacktype 18
 range 2
 range_modifier 12
 move_block all
+msg
+Creates a wall of frost in front of the
+caster. Creatures that cross the wall
+take cold damage. If the spell is cast
+multiple times on the same spot, the
+damage the wall delivers increases.
+endmsg
 end

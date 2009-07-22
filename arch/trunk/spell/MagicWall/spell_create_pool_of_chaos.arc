@@ -23,4 +23,13 @@ attacktype 262144
 range 2
 range_modifier 20
 move_block all
+msg
+Create a wall of chaotic energy in front
+of the caster. Creatures that cross the
+wall are hit with a variety of attacks.
+The effect does not block line-of-sight,
+and if cast multiple times in the same
+place, the damage delivered by the wall
+increases.
+endmsg
 end

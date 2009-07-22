@@ -17,4 +17,10 @@ duration_modifier 4
 maxsp 12
 no_drop 1
 invisible 1
+msg
+Creates many missiles which strike as a
+swarm of Cause Light Wounds bullets.
+This spell is granted to worshippers of
+Sorig and the Devourers.
+endmsg
 end

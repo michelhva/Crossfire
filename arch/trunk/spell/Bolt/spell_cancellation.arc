@@ -18,4 +18,14 @@ duration 1
 no_drop 1
 invisible 1
 duration 8
+msg
+Releases a bolt of energy that removes
+magic, curse, and damnation from
+locations and items. It also removes
+enchantment, so care must be taken not
+to remove desirable attributes from good
+magic items. The spell is useful for
+improving items that have negative magic
+bonuses.
+endmsg
 end

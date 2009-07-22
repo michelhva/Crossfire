@@ -18,4 +18,8 @@ value 30
 attacktype 1048576
 no_drop 1
 invisible 1
+msg
+Fires a bullet which does medium damage
+to a creature in its path.
+endmsg
 end

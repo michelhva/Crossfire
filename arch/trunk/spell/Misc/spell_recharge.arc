@@ -14,4 +14,11 @@ no_drop 1
 invisible 1
 dam 40
 dam_modifier 5
+msg
+Used to add charges to rods or wands
+that are in the caster's possession.
+Mark the item to be charged before
+casting.  The item may explode instead
+of accepting additional charges.
+endmsg
 end

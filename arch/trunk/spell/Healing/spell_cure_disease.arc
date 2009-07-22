@@ -15,4 +15,9 @@ value 50
 no_drop 1
 invisible 1
 attacktype 33554432
+msg
+Cures a character of a disease.  The
+caster may cure others by firing the
+spell at the afflicted character.
+endmsg
 end

@@ -19,4 +19,9 @@ duration_modifier 1
 maxgrace 24
 no_drop 1
 invisible 1
+msg
+Unleashes a very deadly and contagious
+plague.  This spell is granted by the
+Devourers.
+endmsg
 end

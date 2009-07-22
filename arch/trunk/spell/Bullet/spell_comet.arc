@@ -23,9 +23,9 @@ invisible 1
 skill pyromancy
 food 10
 msg
-The comet spells fires a comet in a specified
-direction.  This comet inflicts serious
-physical harm on whatever it hits, and then
+Fires a comet in a specified direction.
+This comet inflicts serious physical
+harm on whatever it hits, and then
 bursts into fire.
 endmsg
 end
