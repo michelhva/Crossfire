@@ -15,4 +15,10 @@ value 70
 no_drop 1
 invisible 1
 attacktype 32
+msg
+Returns a confused character to their
+normal senses by removing the inability
+to reliably control movement and spell
+casting.
+endmsg
 end

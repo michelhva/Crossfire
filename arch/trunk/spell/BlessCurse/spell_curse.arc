@@ -20,4 +20,9 @@ resist_godpower 35
 ac -1
 wc -1
 range 30
+msg
+The caster's god afflicts the recipient
+with a curse that may negatively affect
+AC and WC.
+endmsg
 end

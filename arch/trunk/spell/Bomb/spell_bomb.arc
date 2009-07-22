@@ -21,12 +21,12 @@ attacktype 1
 no_drop 1
 invisible 1
 msg
-Create bomb does just that - it creates a
-bomb in the direction the spell is fired.
-The bomb detonates after a few seconds,
-firing shrapnel as well as encompassing the
-area in an explosions.  Creatures will be
-wounded if they are in the explosion or are
-hit by the flying shrapnel.
+Creates a bomb in the direction the
+spell is fired.  The bomb detonates
+after a few seconds, firing shrapnel and
+encompassing the area in an explosion.
+Creatures are wounded if they are in the
+explosion or if they are hit by the
+flying shrapnel.
 endmsg
 end

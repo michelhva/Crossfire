@@ -18,4 +18,8 @@ value 50
 attacktype 1048576
 no_drop 1
 invisible 1
+msg
+Fires a bullet that damages creatures in
+its path.
+endmsg
 end

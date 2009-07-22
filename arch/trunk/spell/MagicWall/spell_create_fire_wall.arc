@@ -23,4 +23,11 @@ attacktype 6
 range 2
 range_modifier 10
 move_block all
+msg
+Create a line of fire in front of the
+caster. Creatures crossing the line take
+fire damage. Casting the spell multiple
+times on the same area increases the
+damage the wall delivers.
+endmsg
 end

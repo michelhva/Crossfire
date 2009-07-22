@@ -16,4 +16,10 @@ invisible 1
 duration_modifier 4
 duration 500
 Cha 1
+msg
+May increase the caster's Charisma stat
+temporarily. The magnitude of the effect
+depends on the caster's current Charisma
+stat and sorcery skill level.
+endmsg
 end

@@ -15,6 +15,6 @@ no_drop 1
 invisible 1
 msg
 Consecrate is used to convert an altar into
-an altar for your god.
+an altar of the god the caster worships.
 endmsg
 end

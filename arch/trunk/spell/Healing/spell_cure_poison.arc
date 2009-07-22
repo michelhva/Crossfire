@@ -15,4 +15,9 @@ value 40
 no_drop 1
 invisible 1
 attacktype 1024
+msg
+Cleanses damaging poisons from the body.
+The caster can cure others by firing the
+spell toward an afflicted character.
+endmsg
 end

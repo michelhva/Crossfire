@@ -16,4 +16,10 @@ invisible 1
 food 100
 duration_modifier 1
 maxsp 10
+msg
+Creates a food item for the caster.  It
+is possible to specify what to make with
+a command like:  cast create food F,
+where F is the name of the food.
+endmsg
 end
