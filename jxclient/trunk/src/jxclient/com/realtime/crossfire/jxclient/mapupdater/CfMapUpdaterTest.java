@@ -144,7 +144,7 @@ public class CfMapUpdaterTest extends TestCase
         mapUpdater.processMapClear(1, 1);
         mapUpdater.processMapEnd(true);
         assertEquals(""
-            +"[H0=_][#,H0=_]\n"
+            +"[H0=_][#,H0=_,T6=M]\n"
             +"[H0=_][#,H0=_,H6=M]\n"
             , toString(mapUpdater.getMap(), 0, 0, 2, 2));
     }
