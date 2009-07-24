@@ -39,8 +39,9 @@ import java.util.Set;
 import javax.swing.event.EventListenerList;
 
 /**
- * Manages all known items.
- *
+ * Manages items known to the character. This includes items on the floor, in
+ * the character's inventory, the character object itself, and items within
+ * containers known to the character.
  * @author Andreas Kirschbaum
  */
 public class ItemsManager
@@ -285,11 +286,9 @@ public class ItemsManager
     }
 
     /**
-     * Return a list of items in a given location. The returned list may not be
-     * modified by the caller.
-     *
+     * Returns a list of items in a given location. The returned list may not
+     * be modified by the caller.
      * @param location the location
-     *
      * @return the list of items
      */
     public List<CfItem> getItems(final int location)
@@ -307,12 +306,10 @@ public class ItemsManager
     }
 
     /**
-     * Return the number of items in a given location. Undefined locations
+     * Returns the number of items in a given location. Undefined locations
      * return <code>0</code>.
-     *
-     * @param location The location to check.
-     *
-     * @return The number of items.
+     * @param location the location to check
+     * @return the number of items
      */
     public int getNumberOfItems(final int location)
     {
@@ -325,11 +322,9 @@ public class ItemsManager
     }
 
     /**
-     * Return an item by tag. This function may return the player object.
-     *
+     * Returns an item by tag. This function may return the player object.
      * @param tag The tag.
-     *
-     * @return The item or <code>null</code> if no such item exists.
+     * @return the item or <code>null</code> if no such item exists
      */
     public CfItem getItemOrPlayer(final int tag)
     {
@@ -345,10 +340,8 @@ public class ItemsManager
     }
 
     /**
-     * Return an item by tag.
-     *
+     * Returns an item by tag.
      * @param tag the tag
-     *
      * @return the item or <code>null</code> if no such items exists
      */
     public CfItem getItem(final int tag)
@@ -360,9 +353,8 @@ public class ItemsManager
     }
 
     /**
-     * Clear the inventory of an item.
-     *
-     * @param tag The item tag.
+     * Clears the inventory of an item.
+     * @param tag the item tag
      */
     private void cleanInventory(final int tag)
     {
@@ -374,9 +366,8 @@ public class ItemsManager
     }
 
     /**
-     * Delete items by tag.
-     *
-     * @param tags The tags to delete.
+     * Deletes items by tag.
+     * @param tags the tags to delete
      */
     private void removeItems(final int[] tags)
     {
@@ -388,8 +379,7 @@ public class ItemsManager
     }
 
     /**
-     * Delete an item by tag.
-     *
+     * Deletes an item by tag.
      * @param tag the tag of the item to delete
      */
     public void removeItem(final int tag)
@@ -407,8 +397,7 @@ public class ItemsManager
     }
 
     /**
-     * Delete an item.
-     *
+     * Deletes an item.
      * @param item the item to delete
      */
     public void removeItem(final CfItem item)
@@ -430,8 +419,7 @@ public class ItemsManager
     }
 
     /**
-     * Add an item.
-     *
+     * Adds an item.
      * @param item the item to add
      */
     private void addItem(final CfItem item)
@@ -455,11 +443,9 @@ public class ItemsManager
     }
 
     /**
-     * Move an item to a new location.
-     *
-     * @param item The item to move.
-     *
-     * @param newLocation The location to move to.
+     * Moves an item to a new location.
+     * @param item the item to move
+     * @param newLocation the location to move to
      */
     public void moveItem(final CfItem item, final int newLocation)
     {
@@ -477,8 +463,7 @@ public class ItemsManager
     }
 
     /**
-     * Remove an item from {@link #items}. The item must exist.
-     *
+     * Removes an item from {@link #items}. The item must exist.
      * @param item the item to remove
      */
     private void removeItemFromLocation(final CfItem item)
@@ -521,8 +506,7 @@ public class ItemsManager
     }
 
     /**
-     * Add an item to {@link #items}.
-     *
+     * Adds an item to {@link #items}.
      * @param item the item to add
      */
     private void addItemToLocation(final CfItem item)
@@ -559,7 +543,7 @@ public class ItemsManager
     }
 
     /**
-     * Deliver outstanding change events.
+     * Delivers outstanding change events.
      */
     public void fireEvents()
     {
@@ -567,8 +551,7 @@ public class ItemsManager
     }
 
     /**
-     * Set the player object this client controls.
-     *
+     * Sets the player object this client controls.
      * @param player the new player object
      */
     private void setPlayer(final CfPlayer player)
@@ -609,8 +592,7 @@ public class ItemsManager
     }
 
     /**
-     * Return the player object this client controls.
-     *
+     * Returns the player object this client controls.
      * @return the player object
      */
     public CfPlayer getPlayer()
@@ -622,9 +604,8 @@ public class ItemsManager
     }
 
     /**
-     * Add a {@link PlayerListener} to be notified about changes of
-     * the current player.
-     *
+     * Adds a {@link PlayerListener} to be notified about changes of the
+     * current player.
      * @param listener the listener to add
      */
     public void addCrossfirePlayerListener(final PlayerListener listener)
@@ -633,9 +614,8 @@ public class ItemsManager
     }
 
     /**
-     * Remove a {@link PlayerListener} to be notified about changes of
-     * the current player.
-     *
+     * Removes a {@link PlayerListener} to be notified about changes of the
+     * current player.
      * @param listener the listener to remove
      */
     public void removeCrossfirePlayerListener(final PlayerListener listener)
@@ -644,9 +624,8 @@ public class ItemsManager
     }
 
     /**
-     * Return the current floor manager.
-     *
-     * @return The current floor manager.
+     * Returns the current floor manager.
+     * @return the current floor manager
      */
     public CurrentFloorManager getCurrentFloorManager()
     {
@@ -654,9 +633,8 @@ public class ItemsManager
     }
 
     /**
-     * Return the floor manager.
-     *
-     * @return The floor manager.
+     * Returns the floor manager.
+     * @return the floor manager
      */
     public FloorManager getFloorManager()
     {
@@ -664,9 +642,8 @@ public class ItemsManager
     }
 
     /**
-     * Return the inventory manager.
-     *
-     * @return The inventory manager.
+     * Returns the inventory manager.
+     * @return the inventory manager
      */
     public InventoryManager getInventoryManager()
     {
