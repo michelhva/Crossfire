@@ -22,12 +22,13 @@ no_drop 1
 invisible 1
 skill praying
 msg
-Face of death fires a fan of death.
-Creatures caught within this area of death
-either die outright (regardless of how many
-hit points they have) or are completely
-unharmed.  This spell does not harm any
-equipment either on the creatures or on the
-floor.
+Face of death fires a cone of death.
+Creatures caught within this area of
+death either die outright (regardless of
+how many hit points they have) or are
+completely unharmed.  The spell does not
+harm equipment whether worn by creatures
+or laying on the floor.  It is granted
+by the Devourers.
 endmsg
 end

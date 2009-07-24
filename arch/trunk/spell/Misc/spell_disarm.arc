@@ -14,8 +14,12 @@ path_attuned 128
 no_drop 1
 invisible 1
 msg
-Disarm is a safe way to disarm traps.  It
-never fails, but one must cast the spell, and
-thus use up spell points to do so.
+Attempts a disarm of a trap without risk
+of triggering it. The chance of success
+ranges from about 1/2 to about 1/20 and
+is dependent on the caster level, trap
+level, and somewhat upon the caster's
+dexterity stat. It may also be used to
+remove marking runes.
 endmsg
 end

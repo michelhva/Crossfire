@@ -17,4 +17,8 @@ range 12
 range_modifier 5
 other_arch detect_magic
 known_cursed 1
+msg
+Detects cursed or damned objects in the
+caster's inventory.
+endmsg
 end

@@ -21,4 +21,8 @@ attacktype 16386
 no_drop 1
 invisible 1
 skill sorcery
+msg
+Fires a cone of fear, possibly causing
+enemies within the cone to flee.
+endmsg
 end

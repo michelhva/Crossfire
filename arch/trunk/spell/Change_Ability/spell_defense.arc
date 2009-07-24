@@ -34,4 +34,9 @@ resist_fear 30
 resist_deplete 30
 resist_death 30
 resist_blind 30
+msg
+Granted by Lythander to enable a
+worshipper to request resistance to
+various damaging attack types.
+endmsg
 end

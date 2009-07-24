@@ -16,4 +16,10 @@ invisible 1
 duration_modifier 4
 duration 500
 Dex 1
+msg
+May increase the caster's Dexterity stat
+temporarily. The magnitude of increase
+depends on the caster's Dexterity stat
+and sorcery skill level.
+endmsg
 end

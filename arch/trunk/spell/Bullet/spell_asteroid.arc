@@ -23,6 +23,7 @@ invisible 1
 skill evocation
 food 10
 msg
-Info.
+Fires an asteroid bullet that delivers a
+weaponmagic attack.
 endmsg
 end

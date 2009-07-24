@@ -17,4 +17,8 @@ duration_modifier 4
 duration 500
 maxsp 30
 can_see_in_dark 1
+msg
+Allows the caster to see in the dark,
+without a light source.
+endmsg
 end

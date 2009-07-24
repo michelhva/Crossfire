@@ -17,4 +17,9 @@ range 12
 range_modifier 5
 other_arch detect_magic
 known_magical 1
+msg
+Reveals items in the caster's inventory,
+or in the vicinity, that are imbued with
+magical power.
+endmsg
 end

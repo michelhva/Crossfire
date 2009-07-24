@@ -22,4 +22,12 @@ attacktype 10
 range 24
 no_drop 1
 invisible 1
+msg
+Fires a lightning bolt that forks into
+multiple smaller bolts that can cover a
+somewhat cone-shaped area.  It reflects
+off of walls, so can fill a small
+dungeon with a devastating effect, and
+is granted by Sorig.
+endmsg
 end
