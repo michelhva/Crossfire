@@ -54,7 +54,7 @@ public class TooltipManager
     /**
      * Synchronizes access to {@link #activeGuiElement}.
      */
-    private final Object activeGuiElementSync = "activeGuiElementSync";
+    private final Object activeGuiElementSync = new Object();
 
     /**
      * Creates a new instance.
