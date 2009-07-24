@@ -20,6 +20,9 @@
 
 package com.realtime.crossfire.jxclient.items;
 
+import java.lang.reflect.InvocationTargetException;
+import javax.swing.SwingUtilities;
+
 /**
  * A scheduler for synchronous event notifications. Notifications are triggered
  * by calling {@link #trigger()}. Notifications are delivered by calling
@@ -44,9 +47,9 @@ public class EventScheduler
     private final int afterEventDelay;
 
     /**
-     * The {@link EventSchedulerCallback} to notify.
+     * The {@link Runnable} to notify.
      */
-    private final EventSchedulerCallback eventSchedulerCallback;
+    private final Runnable eventSchedulerCallback;
 
     /**
      * The object used to synchronize access to {@link #nextAction} and {@link
@@ -110,8 +113,15 @@ public class EventScheduler
 
                     if (fireEvent)
                     {
-                        eventSchedulerCallback.callback();
-                        nextAction = 0;
+                        try
+                        {
+                            SwingUtilities.invokeAndWait(eventSchedulerCallback);
+                        }
+                        catch(final InvocationTargetException ex)
+                        {
+                            throw new AssertionError(ex);
+                        }
+                        nextAction = System.currentTimeMillis();
                         nextActionNotBefore = System.currentTimeMillis()+afterEventDelay;
                     }
                 }
@@ -128,12 +138,12 @@ public class EventScheduler
      * Creates a new instance.
      * @param delay the initial delay
      * @param afterEventDelay the "after-event" delay
-     * @param eventSchedulerCallback the cllback to notify
+     * @param eventSchedulerCallback the callback to notify
      */
-    public EventScheduler(final int delay, final int afterEventDelay, final EventSchedulerCallback eventSchedulerCallback)
+    public EventScheduler(final int delay, final int afterEventDelay, final Runnable eventSchedulerCallback)
     {
         this.delay = delay;
-        this.afterEventDelay = afterEventDelay;
+        this.afterEventDelay = 1/*afterEventDelay*/;
         this.eventSchedulerCallback = eventSchedulerCallback;
         thread = new Thread(runnable);
     }
