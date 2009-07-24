@@ -23,19 +23,19 @@ import com.realtime.crossfire.jxclient.gui.label.AbstractLabel;
 import com.realtime.crossfire.jxclient.window.JXCWindow;
 
 /**
- * Manages the tooltip display.
- *
+ * Manages the tooltip display. An {@link AbstractLabel} is moved/resized to
+ * display a tooltip text for an "active" GUI element.
  * @author Andreas Kirschbaum
  */
 public class TooltipManager
 {
     /**
-     * Distance of tooltip from this element.
+     * Distance of tooltip from its associated GUI element.
      */
     public static final int TOOLTIP_DISTANCE = 8;
 
     /**
-     * The {@link JXCWindow} to manage to tooltips of.
+     * The {@link JXCWindow} to manage the tooltips of.
      */
     private final JXCWindow window;
 
@@ -52,7 +52,7 @@ public class TooltipManager
     private GUIElement activeGuiElement = null;
 
     /**
-     * Synchronizes access to {@link #activeGuiElement}.
+     * Synchronizes accesses to {@link #activeGuiElement}.
      */
     private final Object activeGuiElementSync = new Object();
 
@@ -75,7 +75,7 @@ public class TooltipManager
     }
 
     /**
-     * Remove the tooltip. If no tooltip is active do nothing.
+     * Removes the tooltip. Does nothing if no tooltip is active.
      */
     public void reset()
     {
@@ -87,9 +87,8 @@ public class TooltipManager
     }
 
     /**
-     * Display the tooltip for a gui element.
-     *
-     * @param guiElement The gui element to show the tooltip of.
+     * Displays the tooltip for a GUI element.
+     * @param guiElement the GUI element to show the tooltip of
      */
     public void setElement(final GUIElement guiElement)
     {
@@ -111,9 +110,9 @@ public class TooltipManager
     }
 
     /**
-     * Remove the tooltip of a gui element.
-     *
-     * @param guiElement The gui element to remove the tooltip of.
+     * Removes the tooltip of a GUI element. Does nothing if the given GUI
+     * element is not active.
+     * @param guiElement the gui element to remove the tooltip of
      */
     public void unsetElement(final GUIElement guiElement)
     {
@@ -129,9 +128,9 @@ public class TooltipManager
     }
 
     /**
-     * Update the tooltip text of a gui element.
-     *
-     * @param guiElement The gui element to process.
+     * Updates the tooltip text of a GUI element. Does nothing if the given GUI
+     * element is not active.
+     * @param guiElement the gui element to process
      */
     public void updateElement(final GUIElement guiElement)
     {
@@ -147,7 +146,7 @@ public class TooltipManager
     }
 
     /**
-     * Add or update the tooltip (text and location) for the {@link
+     * Adds or updates the tooltip (text and location) for the {@link
      * #activeGuiElement}.
      */
     private void addTooltip()
@@ -184,7 +183,7 @@ public class TooltipManager
     }
 
     /**
-     * Remove the tooltip label. Do nothing if no tooltip is active.
+     * Removes the tooltip label. Does nothing if no tooltip is active.
      */
     private void removeTooltip()
     {
