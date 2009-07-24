@@ -36,6 +36,7 @@ import java.util.HashSet;
 import java.util.List;
 import java.util.Map;
 import java.util.Set;
+import java.util.concurrent.CopyOnWriteArrayList;
 import javax.swing.event.EventListenerList;
 
 /**
@@ -64,7 +65,7 @@ public class ItemsManager
     /**
      * Maps location to list of items.
      */
-    private final Map<Integer, ArrayList<CfItem>> items = new HashMap<Integer, ArrayList<CfItem>>();
+    private final Map<Integer, List<CfItem>> items = new HashMap<Integer, List<CfItem>>();
 
     /**
      * Maps item tags to items. The map contains all items currently known to
@@ -302,7 +303,7 @@ public class ItemsManager
         {
             return Collections.emptyList();
         }
-        return new ArrayList<CfItem>(result);
+        return Collections.unmodifiableList(result);
     }
 
     /**
@@ -513,10 +514,10 @@ public class ItemsManager
     {
         final int where = item.getLocation();
 
-        ArrayList<CfItem> list = items.get(where);
+        List<CfItem> list = items.get(where);
         if (list == null)
         {
-            list = new ArrayList<CfItem>();
+            list = new CopyOnWriteArrayList<CfItem>();
             if (items.put(where, list) != null)
             {
                 throw new AssertionError();
