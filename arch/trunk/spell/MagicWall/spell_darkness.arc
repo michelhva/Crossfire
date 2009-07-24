@@ -20,4 +20,9 @@ maxgrace 50
 range 2
 range_modifier 13
 move_block all
+msg
+Places a wall of darkness in front of
+the caster. The wall can be crossed, but
+creatures cannot see through it.
+endmsg
 end

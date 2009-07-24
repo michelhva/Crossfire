@@ -21,4 +21,7 @@ maxgrace 5
 attacktype 1048584
 no_drop 1
 invisible 1
+msg
+A ball lightning spell granted by Sorig.
+endmsg
 end

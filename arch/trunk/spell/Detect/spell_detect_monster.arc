@@ -17,4 +17,9 @@ range 12
 range_modifier 5
 other_arch detect_monster
 monster 1
+msg
+Reveal unseen or hidden monsters in the
+vicinity without having to open doors
+or get them in direct line-of-sight.
+endmsg
 end

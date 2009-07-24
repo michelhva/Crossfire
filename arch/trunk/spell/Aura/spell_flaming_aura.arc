@@ -20,4 +20,10 @@ maxgrace 20
 attacktype 4
 no_drop 1
 invisible 1
+msg
+Surrounds the caster with an aura of
+fire that burns everything in the
+vicinity.  The spell is granted by
+Gorokh and Ruggilli.
+endmsg
 end

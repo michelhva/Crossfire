@@ -17,4 +17,8 @@ range 12
 range_modifier 5
 other_arch detect_monster
 race GOD
+msg
+Detects enemies in the area that have an
+evil alignment.
+endmsg
 end

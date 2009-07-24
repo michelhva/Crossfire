@@ -18,6 +18,7 @@ maxsp 12
 no_drop 1
 invisible 1
 msg
-Info on Frost Nova.
+Fires a swarm of asteroid bullets that
+that deliver a weaponmagic attack.
 endmsg
 end
