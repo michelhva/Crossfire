@@ -167,11 +167,11 @@ public class ItemsManager
      * is needed because the Crossfire server sends multiple item2 commands
      * for one "get all" command.
      */
-    private final EventSchedulerCallback fireEventCallback = new EventSchedulerCallback()
+    private final Runnable fireEventCallback = new Runnable()
     {
         /** {@inheritDoc} */
         @Override
-        public void callback()
+        public void run()
         {
             floorManager.fireEvents(getItems(currentFloorManager.getCurrentFloor()));
             final List<CfItem> newItems;
