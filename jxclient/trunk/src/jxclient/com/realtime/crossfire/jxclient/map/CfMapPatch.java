@@ -127,10 +127,12 @@ public class CfMapPatch
      * <code>LAYERS-1</code>
      * @param mapSquare the map square containing the head face; may be
      * <code>null</code>
+     * @param setAlways if set, always update the face; if unset, only update
+     * when fog-of-war
      */
-    public void setHeadMapSquare(final int x, final int y, final int layer, final CfMapSquare mapSquare)
+    public void setHeadMapSquare(final int x, final int y, final int layer, final CfMapSquare mapSquare, final boolean setAlways)
     {
-        square[x][y].setHeadMapSquare(layer, mapSquare);
+        square[x][y].setHeadMapSquare(layer, mapSquare, setAlways);
     }
 
     /**
