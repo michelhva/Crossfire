@@ -208,7 +208,7 @@ public class CfMapUpdater
         @Override
         public void scroll(final int dx, final int dy)
         {
-            processScroll(dx, dy);
+            processMapScroll(dx, dy);
         }
 
         /** {@inheritDoc} */
@@ -511,7 +511,7 @@ public class CfMapUpdater
      * @param dx the distance to scroll in x-direction in squares
      * @param dy the distance to scroll in y-direction in squares
      */
-    private void processScroll(final int dx, final int dy)
+    private void processMapScroll(final int dx, final int dy)
     {
         synchronized (sync)
         {
