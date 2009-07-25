@@ -24,6 +24,7 @@ Iron skin toughens the skin of the recipient,
 making them harder to hit and reducing the
 amount of damage they take from physical
 attacks.  It does not provide any additional
-protection to non-physical attacks.
+protection to non-physical attacks.  Gaea
+grants this prayer.
 endmsg
 end

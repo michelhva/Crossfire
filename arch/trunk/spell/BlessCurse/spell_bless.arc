@@ -22,9 +22,10 @@ ac 1
 wc 1
 msg
 This spell grants the character a
-blessing from a worshipped god.  It
+blessing from the god they worship.  It
 affects resistances and stats, but the
 specific effect varies depending on the
-god the character worships.
+god the character worships.  Some
+protection from godpower is granted.
 endmsg
 end

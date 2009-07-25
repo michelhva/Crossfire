@@ -23,4 +23,11 @@ range 3
 duration_modifier 19
 food 18
 maxhp 7
+msg
+Fires a ball which explodes on contact
+like a fireball, casting Holy Word on
+the area. The damage type depends on the
+caster's god.  It harms the god's enemy
+races and undead creatures.
+endmsg
 end

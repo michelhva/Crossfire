@@ -18,4 +18,8 @@ duration 300
 duration_modifier 1
 maxgrace 15
 race undead
+msg
+An invisibility spell that hides the
+caster from undead creatures.
+endmsg
 end

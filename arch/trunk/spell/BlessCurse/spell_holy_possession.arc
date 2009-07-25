@@ -22,4 +22,11 @@ attacktype 1
 wc 2
 ac 2
 last_grace 1
+msg
+Blesses the caster with holy power of
+his god, both to attack enemies, and
+and to gain protection from attacks.
+The benefits vary by god, but all give
+signficant protection against godpower.
+endmsg
 end

@@ -17,10 +17,11 @@ invisible 1
 dam 3
 dam_modifier 5
 msg
-Fully identifies a small number of otherwise
-unknown objects in the characters inventory
-(or on the floor where the character is
-standing).  The number of objects identified
-increases as caster level increases.
+Identifies the characteristics of a
+small number of unidentified objects in
+in inventory or on the floor where the
+character is standing.  The number of
+objects identified increases as caster's
+sorcery level increases.
 endmsg
 end

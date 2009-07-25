@@ -22,9 +22,11 @@ no_drop 1
 invisible 1
 skill evocation
 msg
-Large icestorm fires a cone of freezing cold
-air, damaging creatures caught inside it.  It
-does have the side effect of encasing objects
-in blocks of ice.
+Fires a cone of ice that damages
+creatures caught inside it. The spell
+increases in power with the caster's
+evocation level.  A side-effect of the
+storm is that items tend to become
+encased in blocks of ice.
 endmsg
 end

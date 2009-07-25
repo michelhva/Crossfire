@@ -21,4 +21,10 @@ value 120
 attacktype 2097152
 no_drop 1
 invisible 1
+msg
+A more powerful version of the holy word
+spell that does damage to the enemies of
+the caster's god and to undeads.  It has
+no effect on other creatures.
+end msg
 end
