@@ -215,11 +215,11 @@ public class CfMap
                 {
                     if (newMapSquare != null)
                     {
-                        setHeadMapSquare(x-dx, y-dy, layer, newMapSquare);
+                        setHeadMapSquare(x-dx, y-dy, layer, newMapSquare, true);
                     }
                     else if (getHeadMapSquare(x-dx, y-dy, layer) == oldMapSquare)
                     {
-                        setHeadMapSquare(x-dx, y-dy, layer, null);
+                        setHeadMapSquare(x-dx, y-dy, layer, null, true);
                     }
                 }
             }
@@ -250,7 +250,7 @@ public class CfMap
                     }
                     else
                     {
-                        setHeadMapSquare(x-dx, y-dy, layer, null);
+                        setHeadMapSquare(x-dx, y-dy, layer, null, false);
                     }
                 }
             }
@@ -279,10 +279,12 @@ public class CfMap
      * <code>LAYERS-1</code>
      * @param mapSquare the map square containing the head face; may be
      * <code>null</code>
+     * @param setAlways if set, always update the face; if unset, only update
+     * when fog-of-war
      */
-    private void setHeadMapSquare(final int x, final int y, final int layer, final CfMapSquare mapSquare)
+    private void setHeadMapSquare(final int x, final int y, final int layer, final CfMapSquare mapSquare, final boolean setAlways)
     {
-        expandTo(x, y).setHeadMapSquare(ox, oy, layer, mapSquare);
+        expandTo(x, y).setHeadMapSquare(ox, oy, layer, mapSquare, setAlways);
     }
 
     /**

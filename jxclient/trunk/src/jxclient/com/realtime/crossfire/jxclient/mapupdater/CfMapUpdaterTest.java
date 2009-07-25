@@ -81,6 +81,41 @@ public class CfMapUpdaterTest extends TestCase
     };
 
     /**
+     * A .png file of size 128x256.
+     */
+    private static final byte[] png128x256 =
+    {
+        (byte)0x89, (byte)0x50, (byte)0x4e, (byte)0x47, (byte)0x0d, (byte)0x0a, (byte)0x1a, (byte)0x0a,
+        (byte)0x00, (byte)0x00, (byte)0x00, (byte)0x0d, (byte)0x49, (byte)0x48, (byte)0x44, (byte)0x52,
+        (byte)0x00, (byte)0x00, (byte)0x00, (byte)0x80, (byte)0x00, (byte)0x00, (byte)0x01, (byte)0x00,
+        (byte)0x08, (byte)0x06, (byte)0x00, (byte)0x00, (byte)0x00, (byte)0x7b, (byte)0xf9, (byte)0x7e,
+        (byte)0xa7, (byte)0x00, (byte)0x00, (byte)0x00, (byte)0x01, (byte)0x73, (byte)0x52, (byte)0x47,
+        (byte)0x42, (byte)0x00, (byte)0xae, (byte)0xce, (byte)0x1c, (byte)0xe9, (byte)0x00, (byte)0x00,
+        (byte)0x00, (byte)0x95, (byte)0x49, (byte)0x44, (byte)0x41, (byte)0x54, (byte)0x78, (byte)0xda,
+        (byte)0xed, (byte)0xc1, (byte)0x01, (byte)0x01, (byte)0x00, (byte)0x00, (byte)0x00, (byte)0x80,
+        (byte)0x90, (byte)0xfe, (byte)0xaf, (byte)0xee, (byte)0x08, (byte)0x0a, (byte)0x00, (byte)0x00,
+        (byte)0x00, (byte)0x00, (byte)0x00, (byte)0x00, (byte)0x00, (byte)0x00, (byte)0x00, (byte)0x00,
+        (byte)0x00, (byte)0x00, (byte)0x00, (byte)0x00, (byte)0x00, (byte)0x00, (byte)0x00, (byte)0x00,
+        (byte)0x00, (byte)0x00, (byte)0x00, (byte)0x00, (byte)0x00, (byte)0x00, (byte)0x00, (byte)0x00,
+        (byte)0x00, (byte)0x00, (byte)0x00, (byte)0x00, (byte)0x00, (byte)0x00, (byte)0x00, (byte)0x00,
+        (byte)0x00, (byte)0x00, (byte)0x00, (byte)0x00, (byte)0x00, (byte)0x00, (byte)0x00, (byte)0x00,
+        (byte)0x00, (byte)0x00, (byte)0x00, (byte)0x00, (byte)0x00, (byte)0x00, (byte)0x00, (byte)0x00,
+        (byte)0x00, (byte)0x00, (byte)0x00, (byte)0x00, (byte)0x00, (byte)0x00, (byte)0x00, (byte)0x00,
+        (byte)0x00, (byte)0x00, (byte)0x00, (byte)0x00, (byte)0x00, (byte)0x00, (byte)0x00, (byte)0x00,
+        (byte)0x00, (byte)0x00, (byte)0x00, (byte)0x00, (byte)0x00, (byte)0x00, (byte)0x00, (byte)0x00,
+        (byte)0x00, (byte)0x00, (byte)0x00, (byte)0x00, (byte)0x00, (byte)0x00, (byte)0x00, (byte)0x00,
+        (byte)0x00, (byte)0x00, (byte)0x00, (byte)0x00, (byte)0x00, (byte)0x00, (byte)0x00, (byte)0x00,
+        (byte)0x00, (byte)0x00, (byte)0x00, (byte)0x00, (byte)0x00, (byte)0x00, (byte)0x00, (byte)0x00,
+        (byte)0x00, (byte)0x00, (byte)0x00, (byte)0x00, (byte)0x00, (byte)0x00, (byte)0x00, (byte)0x00,
+        (byte)0x00, (byte)0x00, (byte)0x00, (byte)0x00, (byte)0x00, (byte)0x00, (byte)0x00, (byte)0x00,
+        (byte)0x00, (byte)0x00, (byte)0x00, (byte)0x00, (byte)0x00, (byte)0x00, (byte)0x00, (byte)0x00,
+        (byte)0x00, (byte)0x00, (byte)0x00, (byte)0x00, (byte)0x80, (byte)0xaa, (byte)0x01, (byte)0x01,
+        (byte)0x1e, (byte)0x00, (byte)0x01, (byte)0xbc, (byte)0x1b, (byte)0xb9, (byte)0x6f, (byte)0x00,
+        (byte)0x00, (byte)0x00, (byte)0x00, (byte)0x49, (byte)0x45, (byte)0x4e, (byte)0x44, (byte)0xae,
+        (byte)0x42, (byte)0x60, (byte)0x82,
+    };
+
+    /**
      * Create a new instance.
      *
      * @param name the test case name
@@ -235,6 +270,88 @@ public class CfMapUpdaterTest extends TestCase
             , toString(mapUpdater.getMap(), 7, 8, 4, 2));
     }
 
+    /**
+     * Check that a regression causing display artifacts is fixed.
+     * @throws IOException if an error occurs
+     */
+    public void testDisplayArtifacts2() throws IOException
+    {
+        final FaceCache faceCache = new FaceCache();
+        final FacesManager facesManager = new FacesManager(null, new MemoryImageCache(), new MemoryImageCache(), new MemoryImageCache(), faceCache, null);
+        defineFace(faceCache, facesManager, 7, "a.x11", png64x64);
+        defineFace(faceCache, facesManager, 8, "b.x12", png64x64);
+
+        final CfMapUpdater mapUpdater = new CfMapUpdater(faceCache, new Animations(null));
+
+        mapUpdater.processNewMap(10, 10);
+        mapUpdater.processMapBegin();
+        mapUpdater.processMapFace(5, 10, 6, 7, true);
+        mapUpdater.processMapEnd(true);
+
+        mapUpdater.processMapBegin();
+        mapUpdater.processMapFace(4, 10, 6, 8, true);
+        mapUpdater.processMapClear(5, 10);
+        mapUpdater.processMapEnd(true);
+
+        assertEquals(""
+            +"[T6=b.x12][T6=b.x12][]\n"
+            +"[T6=b.x12][H6=b.x12][#,H6=a.x11]\n"
+            , toString(mapUpdater.getMap(), 3, 9, 3, 2));
+    }
+
+    /**
+     * Check that a regression causing display artifacts is fixed.
+     * @throws IOException if an error occurs
+     */
+    public void testDisplayArtifacts3() throws IOException
+    {
+        final FaceCache faceCache = new FaceCache();
+        final FacesManager facesManager = new FacesManager(null, new MemoryImageCache(), new MemoryImageCache(), new MemoryImageCache(), faceCache, null);
+        final CfMapUpdater mapUpdater = new CfMapUpdater(faceCache, new Animations(null));
+
+        mapUpdater.processNewMap(23, 16);
+        defineFace(faceCache, facesManager, 1316, "demon_lord.x11", png128x256);
+
+        mapUpdater.processMapBegin();
+        mapUpdater.processMapFace(4, 17, 6, 1316, true);
+        mapUpdater.processMapEnd(true);
+
+        mapUpdater.processMapBegin();
+        mapUpdater.processMapScroll(-1, 0);
+        mapUpdater.processMapFace(5, 17, 6, 1316, true);
+        mapUpdater.processMapEnd(true);
+
+        mapUpdater.processMapBegin();
+        mapUpdater.processMapClear(5, 17);
+        mapUpdater.processMapFace(6, 17, 6, 1316, true);
+        mapUpdater.processMapEnd(true);
+
+        mapUpdater.processMapBegin();
+        mapUpdater.processMapScroll(-1, 0);
+        mapUpdater.processMapFace(7, 17, 6, 1316, true);
+        mapUpdater.processMapEnd(true);
+
+        mapUpdater.processMapBegin();
+        mapUpdater.processMapScroll(-1, 0);
+        mapUpdater.processMapFace(8, 17, 6, 1316, true);
+        mapUpdater.processMapEnd(true);
+
+        mapUpdater.processMapBegin();
+        mapUpdater.processMapScroll(-1, 0);
+        mapUpdater.processMapFace(9, 17, 6, 1316, true);
+        mapUpdater.processMapEnd(true);
+        assertEquals(""
+            +"[][T6=demon_lord.x11][T6=demon_lord.x11][T6=demon_lord.x11][T6=demon_lord.x11][][][][]\n"
+            , toString(mapUpdater.getMap(), 5, 10, 9, 1));
+
+        mapUpdater.processMapBegin();
+        mapUpdater.processMapScroll(-1, 0);
+        mapUpdater.processMapFace(11, 17, 6, 1316, true);
+        assertEquals(""
+            +"[][][][T6=demon_lord.x11][T6=demon_lord.x11][T6=demon_lord.x11][T6=demon_lord.x11][][]\n"
+            , toString(mapUpdater.getMap(), 5, 10, 9, 1));
+    }
+
     private static String toString(final CfMap map, final int x0, final int y0, final int w, final int h)
     {
         final StringBuilder sb = new StringBuilder();
@@ -283,7 +400,7 @@ public class CfMapUpdaterTest extends TestCase
                         sb.append('T');
                         sb.append(l);
                         sb.append('=');
-                        sb.append(headFace.getFaceName());
+                        sb.append(headFace == null ? "null" : headFace.getFaceName());
                         firstFace = false;
                     }
                 }

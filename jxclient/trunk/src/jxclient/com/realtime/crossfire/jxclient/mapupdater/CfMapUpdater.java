@@ -116,6 +116,11 @@ public class CfMapUpdater
     private final CfMapAnimations visibleAnimations;
 
     /**
+     * All multi-tiled faces with heads outside the visible map area.
+     */
+    private final Set<Location> outOfViewMultiFaces = new HashSet<Location>();
+
+    /**
      * The map square listener attached to {@link #map}.
      */
     private final CfMapSquareListener mapSquareListener = new CfMapSquareListener()
@@ -394,6 +399,7 @@ public class CfMapUpdater
         synchronized (sync)
         {
             visibleAnimations.remove(x, y);
+            outOfViewMultiFaces.clear();
             map.clearSquare(x, y);
         }
     }
@@ -410,12 +416,24 @@ public class CfMapUpdater
     {
         synchronized (sync)
         {
+            final Location location = new Location(x, y, layer);
             if (clearAnimation)
             {
-                final Location location = new Location(x, y, layer);
                 visibleAnimations.remove(location);
             }
-            map.setFace(x, y, layer, getFace(faceNum));
+            final Face face = getFace(faceNum);
+            if (x >= width || y >= height)
+            {
+                if (face == null)
+                {
+                    outOfViewMultiFaces.remove(location);
+                }
+                else if (face.getTileWidth() > 1 || face.getTileHeight() > 1)
+                {
+                    outOfViewMultiFaces.add(location);
+                }
+            }
+            map.setFace(x, y, layer, face);
         }
     }
 
@@ -511,10 +529,17 @@ public class CfMapUpdater
      * @param dx the distance to scroll in x-direction in squares
      * @param dy the distance to scroll in y-direction in squares
      */
-    private void processMapScroll(final int dx, final int dy)
+    public void processMapScroll(final int dx, final int dy)
     {
         synchronized (sync)
         {
+            for (final Location location : outOfViewMultiFaces)
+            {
+                visibleAnimations.remove(location);
+                map.setFace(location.getX(), location.getY(), location.getLayer(), null);
+            }
+            outOfViewMultiFaces.clear();
+
             if (Math.abs(dx) >= width || Math.abs(dy) >= height)
             {
                 map.scroll(dx, dy);
