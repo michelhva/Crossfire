@@ -29,6 +29,7 @@ import com.realtime.crossfire.jxclient.map.CfMap;
 import com.realtime.crossfire.jxclient.map.CfMapAnimations;
 import com.realtime.crossfire.jxclient.map.CfMapSquare;
 import com.realtime.crossfire.jxclient.map.CfMapSquareListener;
+import com.realtime.crossfire.jxclient.map.Location;
 import com.realtime.crossfire.jxclient.server.ClientSocketState;
 import com.realtime.crossfire.jxclient.server.CrossfireMap2Command;
 import com.realtime.crossfire.jxclient.server.CrossfireServerConnection;
@@ -411,7 +412,8 @@ public class CfMapUpdater
         {
             if (clearAnimation)
             {
-                visibleAnimations.remove(x, y, layer);
+                final Location location = new Location(x, y, layer);
+                visibleAnimations.remove(location);
             }
             map.setFace(x, y, layer, getFace(faceNum));
         }
@@ -430,7 +432,8 @@ public class CfMapUpdater
         synchronized (sync)
         {
             map.setFace(x, y, layer, null);
-            visibleAnimations.add(x, y, layer, animation, type);
+            final Location location = new Location(x, y, layer);
+            visibleAnimations.add(location, animation, type);
         }
     }
 
@@ -445,7 +448,8 @@ public class CfMapUpdater
     {
         synchronized (sync)
         {
-            visibleAnimations.updateSpeed(x, y, layer, animationSpeed);
+            final Location location = new Location(x, y, layer);
+            visibleAnimations.updateSpeed(location, animationSpeed);
         }
     }
 
