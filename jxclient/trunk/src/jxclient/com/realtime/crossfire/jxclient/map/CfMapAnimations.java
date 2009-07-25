@@ -115,19 +115,16 @@ public class CfMapAnimations
 
     /**
      * Adds a visible animation.
-     * @param x the x-coordinate to animate
-     * @param y the y-coordinate to animate
-     * @param layer the layer to animate
+     * @param location the location to animate
      * @param animation the animation to display
      * @param type the animation type
      */
-    public void add(final int x, final int y, final int layer, final Animation animation, final int type)
+    public void add(final Location location, final Animation animation, final int type)
     {
-        assert 0 <= x;
-        assert 0 <= y;
+        assert 0 <= location.getX();
+        assert 0 <= location.getY();
         assert 0 <= type && type < 4;
 
-        final Location location = new Location(x, y, layer);
         final AnimationState animationState = new AnimationState(animation, type, mapUpdater);
         synchronized (sync)
         {
@@ -154,34 +151,29 @@ public class CfMapAnimations
 
     /**
      * Removes a visible animation.
-     * @param x the x-coordinate to un-animate
-     * @param y the y-coordinate to un-animate
-     * @param layer the layer to un-animate
+     * @param location the location to un-animate
      */
-    public void remove(final int x, final int y, final int layer)
+    public void remove(final Location location)
     {
-        assert 0 <= x;
-        assert 0 <= y;
+        assert 0 <= location.getX();
+        assert 0 <= location.getY();
 
         synchronized (sync)
         {
-            animations.remove(new Location(x, y, layer));
+            animations.remove(location);
         }
     }
 
     /**
      * Updates the animation speed value.
-     * @param x the x-coordinate to update
-     * @param y the y-coordinate to update
-     * @param layer the layer to update
+     * @param location the location to update
      * @param speed the new animation speed
      */
-    public void updateSpeed(final int x, final int y, final int layer, final int speed)
+    public void updateSpeed(final Location location, final int speed)
     {
-        assert 0 <= x;
-        assert 0 <= y;
+        assert 0 <= location.getX();
+        assert 0 <= location.getY();
 
-        final Location location = new Location(x, y, layer);
         final AnimationState animationState;
         synchronized (sync)
         {
@@ -189,7 +181,7 @@ public class CfMapAnimations
         }
         if (animationState == null)
         {
-            System.err.println("No animation at "+x+"/"+y+"/"+layer+" to update animation speed.");
+            System.err.println("No animation at "+location+" to update animation speed.");
             return;
         }
 
