@@ -14,10 +14,10 @@ casting_time 15
 skill praying
 path_attuned 2048
 msg
-Glyph is a special rune - when casting the
-spell, the caster specifies what other spell
-should be encapsulated in the glyph spell.
-When the glyph is activated, the encapsulated
-spell is cast on the target.
+Glyph is a special rune that may be used
+to encapsulate another spell. The caster
+specifies the spell to be placed inside
+the glyph.  When the rune is triggered,
+the spell is cast on the target.
 endmsg
 end

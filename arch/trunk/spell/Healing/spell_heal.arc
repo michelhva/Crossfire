@@ -16,4 +16,9 @@ no_drop 1
 invisible 1
 hp 0
 dam 9999
+msg
+Mends all wounds of the caster or a
+target.  It does not cure conditions
+like such as disease or poison.
+endmsg
 end

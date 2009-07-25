@@ -18,4 +18,10 @@ duration 200
 duration_modifier 1
 maxsp 10
 make_invisible 1
+msg
+Makes the caster invisible. Unlike the
+normal invisibility spell, the caster
+remains invisible even when attacking or
+casting other spells.
+endmsg
 end

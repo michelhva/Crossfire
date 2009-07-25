@@ -17,4 +17,8 @@ range 12
 range_modifier 5
 other_arch detect_magic
 make_invisible 1
+msg
+Useful for revealing monsters or objects
+that are invisible.
+endmsg
 end

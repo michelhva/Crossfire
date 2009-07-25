@@ -17,4 +17,8 @@ duration_modifier 4
 duration 500
 maxgrace 50
 resist_cold 100
+msg
+Grants complete protection against
+cold-based attacks.
+endmsg
 end
