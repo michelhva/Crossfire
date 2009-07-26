@@ -84,8 +84,14 @@ public class Location
     @Override
     public boolean equals(final Object obj)
     {
-        if (obj == null) return false;
-        if (obj.getClass() != Location.class) return false;
+        if (obj == null)
+        {
+            return false;
+        }
+        if (obj.getClass() != Location.class)
+        {
+            return false;
+        }
         final Location loc = (Location) obj;
         return loc.x == x && loc.y == y && loc.layer == layer;
     }
