@@ -14,4 +14,10 @@ path_attuned 0
 no_drop 1
 invisible 1
 other_arch rune_mark
+msg
+Creates a harmless sign on the floor
+that contains a message of the caster's
+choosing.  It is readable by applying
+as one would any other readable item.
+endmsg
 end

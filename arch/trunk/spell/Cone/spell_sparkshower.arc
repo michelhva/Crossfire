@@ -21,8 +21,7 @@ no_drop 1
 invisible 1
 skill sorcery
 msg
-Sparkshower is a cone of electrical energy.
-Creatures caught within the cone take magical
-and electrical damage.
+Fires cone shaped attack that is made up
+of magical and electrical energy.
 endmsg
 end

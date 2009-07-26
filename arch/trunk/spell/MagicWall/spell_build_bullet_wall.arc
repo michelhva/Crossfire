@@ -21,6 +21,7 @@ dam_modifier 1
 range 0
 maxsp 10
 is_used_up 1
+move_block all
 tear_down 1
 msg
 Build bullet wall creates a wall that fires
@@ -28,5 +29,4 @@ magic bullets, as per the magic bullet spell.
 The bullet wall itself can be torn down, and
 will eventually expire on its own.
 endmsg
-move_block all
 end

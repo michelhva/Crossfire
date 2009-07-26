@@ -21,4 +21,6 @@ attacktype 2050
 no_drop 1
 invisible 1
 skill sorcery
+Fires a cone-shaped force that slows
+down the creatures it hits.
 end

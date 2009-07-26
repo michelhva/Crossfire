@@ -23,4 +23,8 @@ range 2
 maxgrace 10
 no_drop 1
 invisible 1
+msg
+Lights up the environment surrounding
+the caster.
+endmsg
 end

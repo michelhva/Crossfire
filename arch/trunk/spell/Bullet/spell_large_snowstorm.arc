@@ -22,9 +22,10 @@ invisible 1
 skill evocation
 food 8
 msg
-Large snowstorm fires a small snowball that
-explodes into a ice and cold, freezing
-anything within it.  The small snowball
-explodes when it hits something.
+Fires a snowball that explodes into a
+large flurry of ice and cold when it
+hits something.  It delivers cold
+damage, and items caught in the
+explosion are encased in blocks of ice.
 endmsg
 end

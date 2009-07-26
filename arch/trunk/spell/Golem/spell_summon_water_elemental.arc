@@ -22,11 +22,10 @@ no_drop 1
 invisible 1
 skill summoning
 msg
-Summon water elemental summons the creature
-from the elemental plane of water.  This
-elemental will do the caster's wishes, much
-like a golem.  Water elementals attack with
-cold and physical attacks.  They are not,
-however, completely immune to cold attacks.
+Summons a creature from the elemental
+plane of water that is controlled with
+the Fire and direction keys.  This
+elemental attacks deliver cold and
+physical damage.
 endmsg
 end

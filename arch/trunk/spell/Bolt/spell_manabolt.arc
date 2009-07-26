@@ -20,4 +20,8 @@ attacktype 2
 range 12
 no_drop 1
 invisible 1
+msg
+Fires a bolt of magical energy that
+few creatures have resistance to.
+endmsg
 end

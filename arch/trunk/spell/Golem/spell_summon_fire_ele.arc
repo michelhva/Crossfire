@@ -22,11 +22,10 @@ no_drop 1
 invisible 1
 skill summoning
 msg
-Summon fire elemental summons the creature
-from the elemental plane of fire.  This
-elemental will do the casters wishes, much
-like a golem.  Because they are made of fire,
-fire elementals are impervious from fire
-based damage, and have fire based attacks.
+Summons a creature from the elemental
+plane of fire controlled with the Fire
+and direction keys.  They are impervious
+to fire-based damage, and deliver fire-
+based attacks.
 endmsg
 end

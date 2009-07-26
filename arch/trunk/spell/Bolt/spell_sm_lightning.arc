@@ -20,4 +20,8 @@ attacktype 10
 range 12
 no_drop 1
 invisible 1
+A bolt spell that inflicts electrical
+damage on creatures in its path.  It can
+reflect off of walls (and can return to
+strike the caster).
 end

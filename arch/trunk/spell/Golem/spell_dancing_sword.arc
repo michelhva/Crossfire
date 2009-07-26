@@ -22,7 +22,9 @@ attacktype 1
 no_drop 1
 invisible 1
 msg
-Summon a magical sword to control with
-the Fire and direction keys.
+Summon a magical sword that battles on
+behalf of the caster.  The sword may be
+controlled with the Fire and direction
+keys.
 endmsg
 end

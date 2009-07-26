@@ -16,4 +16,9 @@ no_drop 1
 invisible 1
 hp 5
 dam 4
+msg
+A spell that may regenerate a large
+amount of hit points for the caster or
+to another character.
+endmsg
 end

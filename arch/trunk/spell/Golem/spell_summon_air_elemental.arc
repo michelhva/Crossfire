@@ -22,11 +22,9 @@ no_drop 1
 invisible 1
 skill summoning
 msg
-Summon air elemental does just that - summons
-an air elemental.  The air elemental acts in
-much the same way as a golem.  Its attacks
-and protections are that of a standard air
-elemental, which can make it particularly
-useful against some creatures.
+Summon an air elemental that is
+controlled with the Fire and direction
+keys and it's attacks consist of
+electrical energy.
 endmsg
 end
