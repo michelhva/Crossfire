@@ -30,8 +30,8 @@ import java.awt.GraphicsEnvironment;
 import java.awt.Image;
 import java.awt.Transparency;
 import java.io.IOException;
-import java.util.LinkedList;
 import java.util.List;
+import java.util.concurrent.CopyOnWriteArrayList;
 import javax.swing.ImageIcon;
 
 /**
@@ -79,7 +79,7 @@ public class FacesManager
     /**
      * The {@link FacesManagerListener}s to notify about changed faces.
      */
-    private final List<FacesManagerListener> facesManagerListeners = new LinkedList<FacesManagerListener>();
+    private final List<FacesManagerListener> facesManagerListeners = new CopyOnWriteArrayList<FacesManagerListener>();
 
     /**
      * The empty face; returned for face ID 0.
