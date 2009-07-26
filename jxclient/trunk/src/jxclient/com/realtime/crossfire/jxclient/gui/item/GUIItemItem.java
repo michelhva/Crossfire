@@ -206,6 +206,17 @@ public abstract class GUIItemItem extends GUIItem
     }
 
     /**
+     * Sets the current item instance without registering listeners for
+     * updates.
+     * @param item the new current item instance
+     */
+    protected void setItemNoListeners(final CfItem item)
+    {
+        this.item = item;
+        setChangedNoListeners();
+    }
+
+    /**
      * Updates the tooltip text for the current {@link #item}.
      */
     private void updateTooltipText()
@@ -229,5 +240,5 @@ public abstract class GUIItemItem extends GUIItem
      * Returns whether this element should drawn as "selected".
      * @return whether this element is selected
      */
-    protected abstract boolean isSelected(); 
+    protected abstract boolean isSelected();
 }

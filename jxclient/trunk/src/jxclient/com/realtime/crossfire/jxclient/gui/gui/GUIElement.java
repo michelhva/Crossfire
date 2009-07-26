@@ -347,6 +347,15 @@ public abstract class GUIElement extends JPanel
     }
 
     /**
+     * Record that {@link #bufferedImage} has changed and must be repainted.
+     * Does not notify listeners.
+     */
+    public void setChangedNoListeners()
+    {
+        changed = true;
+    }
+
+    /**
      * Returns the changed flag.
      * @return the changed flag
      */

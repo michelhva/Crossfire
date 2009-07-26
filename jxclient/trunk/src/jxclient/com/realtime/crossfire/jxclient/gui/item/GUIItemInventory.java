@@ -301,6 +301,42 @@ public class GUIItemInventory extends GUIItemItem
         }
     }
 
+    /**
+     * Set the inventory slot to display without registering listeners for
+     * updates.
+     * @param index the inventory slot
+     */
+    public void setIndexNoListeners(final int index)
+    {
+        synchronized (sync)
+        {
+            if (this.index == index)
+            {
+                return;
+            }
+
+            this.index = index;
+        }
+
+        final CfPlayer player = itemsManager.getPlayer();
+        if (player != null)
+        {
+            final List<CfItem> list = itemsManager.getItems(player.getTag());
+            if (0 <= this.index && this.index < list.size())
+            {
+                setItemNoListeners(list.get(this.index));
+            }
+            else
+            {
+                setItemNoListeners(null);
+            }
+        }
+        else
+        {
+            setItemNoListeners(null);
+        }
+    }
+
     /** {@inheritDoc} */
     @Override
     protected Image getFace(final CfItem item)
