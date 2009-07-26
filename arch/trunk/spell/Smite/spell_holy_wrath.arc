@@ -26,5 +26,5 @@ A more powerful version of the holy word
 spell that does damage to the enemies of
 the caster's god and to undeads.  It has
 no effect on other creatures.
-end msg
+endmsg
 end
