@@ -18,7 +18,8 @@ maxsp 12
 no_drop 1
 invisible 1
 msg
-Meteor swarm fires several comet spells,
-causing a swath of fire damage.
+Meteor swarm fires several comet spells
+that cut a swath of physical, fire, and
+weaponmagic damage.
 endmsg
 end

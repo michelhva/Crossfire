@@ -15,10 +15,9 @@ skill evocation
 path_attuned 32768
 other_arch rune_drain_magic
 msg
-This creates a rune that, when triggered,
-drains the mana of the target.  This drain in
-mana will make it impossible for the target
-to cast spells until it regains sufficient
-mana to do so.
+This creates a rune that, when
+triggered, drains the mana of the target
+and so reduces the targets immediate
+capacity to cast spells for a time.
 endmsg
 end

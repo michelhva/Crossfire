@@ -24,12 +24,10 @@ no_drop 1
 invisible 1
 skill summoning
 msg
-Summon devil calls up a devil from the
-infernal regions of the underworld.  The
-devil is under the control of the caster,
-much the same way a golem is. The attacks and
-protections are same as that of a normal
-devil, which can make it particularly useful
-against some creatures.
+Calls a devil from the infernal regions
+of the underworld.  The devil is
+controlled with the Fire and direction
+keys, and attacks with electrical
+energy.
 endmsg
 end

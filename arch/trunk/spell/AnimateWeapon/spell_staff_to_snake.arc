@@ -21,4 +21,10 @@ maxgrace 18
 no_drop 1
 invisible 1
 race quarterstaff
+msg
+Converts a staff into a snake which you
+can control with the Fire and direction
+keys.  A quarterstaff in inventory is
+marked before casting the spell.
+endmsg
 end

@@ -19,4 +19,11 @@ attacktype 2
 no_drop 1
 invisible 1
 range 25
+msg
+Fires a target-tracking magical bolt
+that can turn to seek out enemies.  The
+bolt does not always track well and may
+run into walls or even return and strike
+the caster.
+endmsg
 end

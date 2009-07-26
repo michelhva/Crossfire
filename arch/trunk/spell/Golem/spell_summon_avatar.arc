@@ -20,4 +20,10 @@ value 100
 no_drop 1
 invisible 1
 skill praying
+msg
+Summons the strongest fighter of one's
+god.  Control the avatar with the Fire
+and direction keys.  This is the most
+powerful summoning spell.
+endmsg
 end

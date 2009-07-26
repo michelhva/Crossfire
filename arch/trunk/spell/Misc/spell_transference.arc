@@ -16,4 +16,11 @@ invisible 1
 dam 8
 dam_modifier 2
 maxsp 4
+msg
+Transfers spell points to other players
+by firing this spell at them. If used on
+a normal creature, the magical energy
+may cause the creature to explode in a
+ball of fire. 
+endmsg
 end

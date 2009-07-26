@@ -21,4 +21,11 @@ attacktype 1
 no_drop 1
 invisible 1
 skill praying
+msg
+An Ixalovh-granted spell that produces a
+cone of rushing water that can flow
+around corners doing physical damage to
+creatures in its path.  The wave also
+pushes creatures or items in its path.
+endmsg
 end

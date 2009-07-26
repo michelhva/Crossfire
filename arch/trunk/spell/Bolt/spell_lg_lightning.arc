@@ -21,9 +21,10 @@ range 24
 no_drop 1
 invisible 1
 msg
-Large lightning creates a bolt of lightning.
-The large lightning spell has a longer range,
-the bolt persists longer, and it does more
-damage than the small lightning spell.
+Creates a large bolt of lightning with
+extended range that does more electrical
+damage than its smaller counterpart.
+The bolt can reflect off walls and
+return to hit the caster.
 endmsg
 end

@@ -22,11 +22,9 @@ invisible 1
 skill evocation
 food 15
 msg
-Manaball fires a small bullet of magical
-energy, that then explodes when it hits
-something into a burst of magical energy.
-The great advantage of using pure magical
-energy is that few creatures are resistant to
-it.
+Fires a ball of magical energy that
+explodes in a large burst of magical
+energy when it hits something.  Few
+creatures can resist magical attacks.
 endmsg
 end

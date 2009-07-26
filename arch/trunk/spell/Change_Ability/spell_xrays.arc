@@ -17,4 +17,11 @@ duration_modifier 4
 duration 500
 maxsp 36
 xrays 1
+msg
+Temporarily grants the caster an ability
+to see through walls and other objects
+that block line-of-sight.  The range of
+vision is limited one tile on the other
+side of a wall that is one tile thick.
+endmsg
 end

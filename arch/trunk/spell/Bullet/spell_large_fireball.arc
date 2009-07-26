@@ -22,8 +22,9 @@ invisible 1
 skill pyromancy
 food 4
 msg
-This spell fires a small bullet of fire, that
-explodes into a large area of fire when it
-hits something.
+Fires a bullet that explodes into a
+large fire storm when it hits something.
+Items caught in the blaze may be
+destroyed.
 endmsg
 end

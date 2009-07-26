@@ -21,4 +21,10 @@ attacktype 3
 range 12
 no_drop 1
 invisible 1
+msg
+Fires a bolt of hot steam that does both
+magical and physical damage.  A fog of
+steam that blocks line-of-sight remains
+a short time after the spell is cast.
+endmsg
 end

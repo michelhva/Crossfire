@@ -22,11 +22,10 @@ no_drop 1
 invisible 1
 skill summoning
 msg
-Summon earth elemental creates an elemental
-from the surrounding rock.  This elemental
-will do the casters wishes, much like a
-golem.  Earth elementals are slow but very
-durable.  They have powerful physical
-attacks.
+Creates an elemental from surrounding
+rock that is controlled with the Fire
+and direction keys.  An earth elemental
+is very durable and strong, doing
+physical damage, but moves quite slowly.
 endmsg
 end

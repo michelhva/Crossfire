@@ -23,9 +23,8 @@ invisible 1
 skill pyromancy
 food 10
 msg
-Fires a comet in a specified direction.
-This comet inflicts serious physical
-harm on whatever it hits, and then
-bursts into fire.
+Fires a comet that delivers damage in
+three forms: physical, fire-based, and
+weaponmagic.
 endmsg
 end

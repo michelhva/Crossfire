@@ -21,4 +21,10 @@ no_drop 1
 invisible 1
 skill pyromancy
 food 4
+msg
+Fires a bullet that explodes into a
+mid-sized fire storm when it hits
+something.  Items caught in the blaze
+may be destroyed.
+endmsg
 end

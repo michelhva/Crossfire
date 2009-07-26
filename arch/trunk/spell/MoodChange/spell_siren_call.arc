@@ -18,4 +18,10 @@ range_modifier 20
 maxgrace 27
 no_attack 1
 other_arch charm_aura
+msg
+endmsg
+A charm spell granted by Ixalovh.
+Experience is granted if the charm
+succeeds and for any enemies killed by
+the charmed creature.
 end

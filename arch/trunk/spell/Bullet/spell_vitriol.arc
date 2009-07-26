@@ -22,4 +22,10 @@ no_drop 1
 invisible 1
 range 10
 food 20
+msg
+Fires a ball of acid that explodes on
+contact and does acid damage to
+creatures that are hit.  The spell is
+granted by Gorokh.
+endmsg
 end

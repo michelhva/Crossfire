@@ -17,4 +17,11 @@ duration_modifier 4
 maxsp 12
 no_drop 1
 invisible 1
+msg
+Fires a swarm of target-tracking magical
+bolts that can turn to seek out enemies.
+The bolts do not always track well and
+may run into walls or even return and
+strike the caster.
+endmsg
 end

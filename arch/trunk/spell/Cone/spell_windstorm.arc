@@ -21,4 +21,10 @@ attacktype 1
 no_drop 1
 invisible 1
 skill praying
+msg
+Generates a cone-shaped windstorm that
+does minor physical damage and can push
+creatures and objects in its path.
+Sorig followers are granted this spell.
+endmsg
 end
