@@ -106,7 +106,6 @@ public class RenderStateManager
         fireChanges();
     }
 
-    /** {@inheritDoc} */
     public void dispose()
     {
         buffer.removeBufferListener(bufferListener);
