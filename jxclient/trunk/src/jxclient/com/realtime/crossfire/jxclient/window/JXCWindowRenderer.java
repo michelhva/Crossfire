@@ -103,7 +103,7 @@ public class JXCWindowRenderer
     private volatile boolean inhibitPaint = false;
 
     /**
-     * If set, at least one call to {@link #redrawGUI)} has been dropped while
+     * If set, at least one call to {@link #redrawGUI()} has been dropped while
      * {@link #inhibitPaint} was set.
      */
     private volatile boolean skippedPaint = false;

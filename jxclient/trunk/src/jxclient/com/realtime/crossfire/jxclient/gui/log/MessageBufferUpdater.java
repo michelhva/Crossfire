@@ -193,7 +193,6 @@ public class MessageBufferUpdater
         this.crossfireServerConnection.addCrossfireDrawinfoListener(crossfireDrawinfoListener);
     }
 
-    /** {@inheritDoc} */
     public void dispose()
     {
         crossfireServerConnection.removeCrossfireQueryListener(crossfireQueryListener);
