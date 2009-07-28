@@ -18,5 +18,8 @@ duration 500
 maxgrace 40
 resist_slow 50
 dam_modifier 4
-Improves resistance to slow spells.
+msg
+Improves the caster's protection against
+slow spells.
+endmsg
 end

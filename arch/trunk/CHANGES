@@ -1,8 +1,13 @@
 Changes for SVN top of tree:
 
 Add msg/endmsg descriptions to various spells including those that start with
+the letters N-P and update Conflict.  Fix Slow (prior commit did not include
+msg/endmsg tags around the message).
+Kevin Bulgrien 2009-07-28
+
+Add msg/endmsg descriptions to various spells including those that start with
 the letters L-M and S-Z.
-Kevin Bulgrien 2009-07-24
+Kevin Bulgrien 2009-07-26
 
 Add msg/endmsg descriptions to asteroid, show invisible, and other spells with
 names that begin with the letters D through K.

@@ -20,4 +20,9 @@ maxgrace 10
 attacktype 1024
 no_drop 1
 invisible 1
+msg
+Creates a moving ball of poisonous vapor
+that pursues and poisons the caster's
+enemies.  The spell is granted by Gnarg.
+endmsg
 end

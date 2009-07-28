@@ -14,11 +14,12 @@ skill summoning
 path_attuned 2048
 face penta.111
 msg
-Pentagram is a special rune - when casting
-the spell, the caster specifies what other
-spell should be encapsulated in the pentagram
-spell.  When the pentagram is activated, the
-encapsulated spell, which could be a
-summoning spell, is cast.
+Creates a special rune that may be used
+to encapsulate another spell.  When
+casting the spell, the caster specifies
+the spell that should be encapsulated in
+the pentagram.  When the pentagram is
+triggered, the specified spell is cast
+on the target.
 endmsg
 end

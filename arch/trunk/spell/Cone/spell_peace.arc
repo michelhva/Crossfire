@@ -21,4 +21,14 @@ attacktype 0
 no_drop 1
 invisible 1
 skill praying
+msg
+Fires a cone of peacemakers that convert
+aggressive monsters into unaggressive
+creatures that run away from battle and
+assume random movement.  They are no
+longer considered to be monsters, so
+things like mood floors cannot make them
+aggressive again.  This spell is granted
+by Gaea.
+endmsg
 end

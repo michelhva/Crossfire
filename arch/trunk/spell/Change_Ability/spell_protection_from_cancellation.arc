@@ -18,4 +18,9 @@ duration 500
 maxgrace 40
 resist_cancellation 40
 dam_modifier 3
+msg
+Improves the caster's protection against
+attacks that remove magical (+/-)
+bonuses from items.
+endmsg
 end

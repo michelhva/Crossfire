@@ -18,4 +18,8 @@ duration 500
 maxgrace 40
 resist_confusion 50
 dam_modifier 4
+msg
+Improves the caster's protection against
+confusion attacks.
+endmsg
 end

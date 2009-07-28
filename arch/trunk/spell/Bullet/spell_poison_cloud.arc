@@ -21,4 +21,10 @@ no_drop 1
 invisible 1
 skill sorcery
 food 5
+msg
+Fires a bullet that explodes on contact
+into a poisonous cloud.  Affected
+creatures may be slowed, weakened, or
+killed.
+endmsg
 end
