@@ -19,9 +19,10 @@ maxgrace 40
 resist_magic 30
 dam_modifier 3
 msg
-Protection from magic reduces damage from
-magical attacks or spells.  There are a few
-spells that do not hit with a magical attack,
-so it does not offer protection from them.
+Protection from magic reduces damage
+from magical attacks or spells.  There
+are a few spells that do not hit with a
+magical attack, so it does not offer
+protection from them.
 endmsg
 end

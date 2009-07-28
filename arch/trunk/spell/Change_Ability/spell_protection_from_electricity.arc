@@ -18,4 +18,8 @@ duration 500
 maxgrace 40
 resist_electricity 30
 dam_modifier 3
+msg
+Improves the caster's protection against
+electrical attacks.
+endmsg
 end

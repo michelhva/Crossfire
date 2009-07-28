@@ -20,8 +20,8 @@ berserk 1
 other_arch detect_magic
 msg
 Confuses and distracts nearby monsters,
-causing them to attack the nearest
-target, whether friend or foe.  This
-spell is granted by Lythander.
+causing them to go berserk, attacking
+both friend and foe.  This spell is
+granted by Lythander.
 endmsg
 end

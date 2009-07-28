@@ -21,4 +21,10 @@ attacktype 4098
 no_drop 1
 invisible 1
 skill sorcery
+msg
+Fires a cone-shaped spell that may
+paralyze creatures it hits.  Attacking a
+paralyzed target does not break the
+spell. 
+endmsg
 end
