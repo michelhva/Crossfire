@@ -23,7 +23,7 @@ range 1
 range_modifier 60
 move_block all
 msg
-Create repulsion wall creates a wall that will repel any creature unless
-it flies. However it requires alot of mana to cast and has limited duration.
+Creates a wall that repels all creatures
+except those that can fly.
 endmsg
 end
