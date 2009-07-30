@@ -19,9 +19,8 @@ food 999
 dam 9999
 msg
 Restoration heals all damage, confusion,
-poison, and disease, and also provides a full
-stomach of food to the recipient.  The only
-thing it does not take care of is actual
-death.
+poison, and disease, and also provides a
+full stomach of food to the recipient.
+It does not take care of death.
 endmsg
 end

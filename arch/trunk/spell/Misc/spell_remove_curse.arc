@@ -16,10 +16,10 @@ invisible 1
 cursed 1
 maxgrace 30
 msg
-Remove curse eliminates the cursed status of
-any objects the character currently has
-equipped, allowing the character to unequip
-these items.  It does not alter the cursed
-status for objects that are not equipped.
+Eliminates the cursed status of objects
+the character currently is wearing to
+allow the items to be unequipped.  It
+does not alter the cursed status for
+objects that are not equipped.
 endmsg
 end
