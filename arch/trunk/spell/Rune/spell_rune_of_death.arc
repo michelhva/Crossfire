@@ -15,10 +15,10 @@ skill sorcery
 path_attuned 262144
 other_arch rune_death
 msg
-This creates a rune that, when triggered,
-hits the target with death magic.  This
-either results in the death of the creature,
-no matter the creatures hit points, or no
-harm at all.
+Creates a rune that, when triggered,
+hits the target with death magic that
+either results in the death of the
+creature, with no respect to its hit
+points, or, does no harm at all.
 endmsg
 end

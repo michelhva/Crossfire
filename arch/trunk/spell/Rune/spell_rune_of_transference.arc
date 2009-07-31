@@ -16,7 +16,7 @@ skill sorcery
 path_attuned 32768
 maxsp 24
 msg
-This creates a rune that when triggered,
+Creates a rune that when triggered,
 causes the recipient to gain spell
 points.  Numerous runes could be set up
 in advance of a battle to allow quick
