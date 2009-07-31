@@ -1,7 +1,13 @@
 Changes for SVN top of tree:
 
+Add the last of the msg/endmsg descriptions, fixing some previously entered
+without the msg/endmsg tags.  A few non-player spells still do not have
+descriptions.  They are:  spell_create_lava.arc, spell_shell.arc,
+spell_regen_sp.arc, spell_haste.arc, spell_heroism.arc.
+Kevin Bulgrien 2009-07-30
+
 Add msg/endmsg descriptions to various spells with names starting with R.
-Kevin Bulgrien 2009-07-28
+Kevin Bulgrien 2009-07-29
 
 Add msg/endmsg descriptions to various spells including those that start with
 the letters N-P and update Conflict.  Fix Slow (prior commit did not include

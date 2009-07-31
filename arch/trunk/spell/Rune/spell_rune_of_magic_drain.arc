@@ -15,9 +15,9 @@ skill evocation
 path_attuned 32768
 other_arch rune_drain_magic
 msg
-This creates a rune that, when
-triggered, drains the mana of the target
-and so reduces the targets immediate
+Creates a rune that, when triggered,
+drains the spell points of the target
+and therefore reduces the targets
 capacity to cast spells for a time.
 endmsg
 end

@@ -14,4 +14,8 @@ casting_time 10
 skill pyromancy
 path_attuned 8
 other_arch rune_shock
+msg
+Creates a rune trap that delivers
+electrical damage when it is triggered.
+endmsg
 end

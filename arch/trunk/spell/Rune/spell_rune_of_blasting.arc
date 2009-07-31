@@ -15,8 +15,8 @@ skill pyromancy
 path_attuned 512
 other_arch rune_blast
 msg
-This creates a rune that will hit the
-creature that activates it with physical and
+Creates a rune that, when triggered,
+hits the creature with physical and
 magical damage.
 endmsg
 end
