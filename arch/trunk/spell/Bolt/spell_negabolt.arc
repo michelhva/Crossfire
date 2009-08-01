@@ -3,7 +3,7 @@ anim_suffix spellcasting
 name negative energy bolt
 name_pl negative energy bolts
 face spell_evocation.111
-level 4
+level 8
 sp 13
 casting_time 6
 path_attuned 8

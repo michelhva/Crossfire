@@ -3,7 +3,7 @@ anim_suffix spellcasting
 name cure poison
 name_pl cure poison
 face spell_praying.111
-level 4
+level 8
 grace 7
 casting_time 10
 path_attuned 256

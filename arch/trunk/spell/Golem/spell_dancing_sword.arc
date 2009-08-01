@@ -5,7 +5,7 @@ name_pl dancing sword
 face spell_summoner.111
 type 101
 subtype 12
-level 11
+level 22
 value 110
 sp 25
 casting_time 10

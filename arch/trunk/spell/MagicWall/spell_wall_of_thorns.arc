@@ -3,7 +3,7 @@ anim_suffix spellcasting
 name wall of thorns
 name_pl wall of thorns
 face spell_praying.111
-level 6
+level 12
 grace 20
 casting_time 5
 path_attuned 2048

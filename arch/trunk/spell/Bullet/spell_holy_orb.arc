@@ -3,7 +3,7 @@ anim_suffix spellcasting
 name holy orb
 name_pl holy orb
 face spell_praying.111
-level 7
+level 14
 grace 10
 casting_time 5
 path_attuned 65536

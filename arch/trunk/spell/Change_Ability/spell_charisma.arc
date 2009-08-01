@@ -3,7 +3,7 @@ anim_suffix spellcasting
 name charisma
 name_pl charisma
 face spell_sorcery.111
-level 3
+level 6
 sp 12
 casting_time 20
 path_attuned 32

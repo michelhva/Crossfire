@@ -3,7 +3,7 @@ anim_suffix spellcasting
 name shockwave
 name_pl shockwave
 face spell_evocation.111
-level 14
+level 28
 sp 26
 casting_time 9
 path_attuned 0

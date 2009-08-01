@@ -5,7 +5,7 @@ name_pl poison fog
 face spell_praying.111
 type 101
 subtype 35
-level 5
+level 10
 value 50
 grace 15
 casting_time 10

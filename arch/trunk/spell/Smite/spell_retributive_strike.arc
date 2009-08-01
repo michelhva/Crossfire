@@ -5,7 +5,7 @@ name_pl retributive strike
 face spell_praying.111
 type 101
 subtype 10
-level 18
+level 36
 grace 100
 casting_time 8
 path_attuned 131072

@@ -3,7 +3,7 @@ anim_suffix spellcasting
 name word of recall
 name_pl word of recall
 face spell_praying.111
-level 10
+level 20
 grace 40
 casting_time 15
 path_attuned 4096

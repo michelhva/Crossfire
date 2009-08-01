@@ -3,7 +3,7 @@ anim_suffix spellcasting
 name spiderweb
 name_pl spiderweb
 face spell_praying.111
-level 4
+level 8
 grace 10
 casting_time 10
 path_attuned 2048

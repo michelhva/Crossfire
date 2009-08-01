@@ -3,7 +3,7 @@ anim_suffix spellcasting
 name color spray
 name_pl color spray
 face spell_sorcery.111
-level 13
+level 26
 sp 35
 casting_time 2
 path_attuned 0

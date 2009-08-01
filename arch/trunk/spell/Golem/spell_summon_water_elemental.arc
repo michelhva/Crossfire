@@ -3,7 +3,7 @@ anim_suffix spellcasting
 name summon water elemental
 name_pl summon water elemental
 face spell_summoner.111
-level 5
+level 10
 sp 15
 casting_time 11
 path_attuned 64

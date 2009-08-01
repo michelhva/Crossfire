@@ -3,7 +3,7 @@ anim_suffix spellcasting
 name remove damnation
 name_pl remove damnation
 face spell_praying.111
-level 15
+level 30
 grace 150
 casting_time 25
 path_attuned 256

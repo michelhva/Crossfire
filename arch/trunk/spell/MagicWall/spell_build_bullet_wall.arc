@@ -5,7 +5,7 @@ name_pl build bullet wall
 face spell_evocation.111
 type 101
 subtype 15
-level 12
+level 24
 value 120
 sp 35
 casting_time 15

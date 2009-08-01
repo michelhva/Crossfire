@@ -3,7 +3,7 @@ anim_suffix spellcasting
 name small manaball
 name_pl small manaball
 face spell_evocation.111
-level 2
+level 4
 sp 12
 casting_time 9
 path_attuned 32768

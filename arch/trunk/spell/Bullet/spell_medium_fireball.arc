@@ -3,7 +3,7 @@ anim_suffix spellcasting
 name medium fireball
 name_pl medium fireball
 face spell_pyromancy.111
-level 3
+level 6
 sp 10
 casting_time 10
 path_attuned 2

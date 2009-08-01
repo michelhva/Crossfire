@@ -5,7 +5,7 @@ name_pl summon pet monster
 face spell_summoner.111
 type 101
 subtype 27
-level 2
+level 4
 sp 5
 casting_time 10
 path_attuned 64

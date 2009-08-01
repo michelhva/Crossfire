@@ -5,7 +5,7 @@ name_pl cause black death
 type 101
 subtype 45
 face spell_praying.111
-level 15
+level 30
 value 150
 grace 120
 casting_time 10

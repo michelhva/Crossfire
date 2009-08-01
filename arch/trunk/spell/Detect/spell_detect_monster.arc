@@ -3,7 +3,7 @@ anim_suffix spellcasting
 name detect monster
 name_pl detect monster
 face spell_evocation.111
-level 2
+level 4
 sp 2
 casting_time 15
 skill evocation

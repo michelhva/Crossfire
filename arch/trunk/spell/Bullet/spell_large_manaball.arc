@@ -3,7 +3,7 @@ anim_suffix spellcasting
 name large manaball
 name_pl large manaball
 face spell_evocation.111
-level 6
+level 12
 sp 32
 casting_time 9
 path_attuned 32768

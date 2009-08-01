@@ -5,7 +5,7 @@ name_pl sanctuary
 type 101
 subtype 46
 face spell_praying.111
-level 7
+level 14
 value 70
 grace 30
 casting_time 10

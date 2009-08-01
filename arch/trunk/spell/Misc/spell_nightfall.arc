@@ -5,7 +5,7 @@ name_pl nightfall
 face spell_praying.111
 type 101
 subtype 43
-level 16
+level 32
 value 160
 grace 120
 casting_time 15

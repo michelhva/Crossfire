@@ -5,7 +5,7 @@ name_pl build fireball wall
 face spell_pyromancy.111
 type 101
 subtype 15
-level 16
+level 32
 value 160
 sp 45
 casting_time 15

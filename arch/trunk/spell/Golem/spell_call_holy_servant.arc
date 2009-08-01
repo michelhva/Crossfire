@@ -3,7 +3,7 @@ anim_suffix spellcasting
 name call holy servant
 name_pl call holy servant
 face spell_praying.111
-level 6
+level 12
 grace 30
 casting_time 5
 path_attuned 64

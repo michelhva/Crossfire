@@ -3,7 +3,7 @@ anim_suffix spellcasting
 name cancellation
 name_pl cancellation
 face spell_evocation.111
-level 10
+level 20
 sp 30
 casting_time 10
 path_attuned 128

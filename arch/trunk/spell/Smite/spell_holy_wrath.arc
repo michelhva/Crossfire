@@ -5,7 +5,7 @@ name_pl holy wrath
 face spell_praying.111
 type 101
 subtype 10
-level 12
+level 24
 grace 40
 casting_time 5
 path_attuned 65536

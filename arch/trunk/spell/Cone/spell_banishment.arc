@@ -3,7 +3,7 @@ anim_suffix spellcasting
 name banishment
 name_pl banishment
 face spell_praying.111
-level 5
+level 10
 grace 10
 casting_time 10
 path_attuned 65536

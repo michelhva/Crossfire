@@ -3,7 +3,7 @@ anim_suffix spellcasting
 name darkness
 name_pl darkness
 face spell_praying.111
-level 5
+level 10
 grace 15
 casting_time 5
 path_attuned 524288
