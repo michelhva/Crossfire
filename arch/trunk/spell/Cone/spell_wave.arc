@@ -3,7 +3,7 @@ anim_suffix spellcasting
 name wave
 name_pl wave
 face spell_praying.111
-level 3
+level 6
 grace 8
 casting_time 10
 path_attuned 0

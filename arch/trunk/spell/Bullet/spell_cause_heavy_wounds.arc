@@ -3,7 +3,7 @@ anim_suffix spellcasting
 name cause heavy wounds
 name_pl cause heavy wounds
 face spell_praying.111
-level 5
+level 10
 grace 16
 casting_time 5
 path_attuned 131072

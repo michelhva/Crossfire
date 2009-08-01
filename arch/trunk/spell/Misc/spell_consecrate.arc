@@ -5,7 +5,7 @@ name_pl consecrate
 face spell_praying.111
 type 101
 subtype 40
-level 4
+level 8
 value 40
 grace 35
 casting_time 25

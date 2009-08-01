@@ -3,7 +3,7 @@ anim_suffix spellcasting
 name detect curse
 name_pl detect curse
 face spell_praying.111
-level 5
+level 10
 grace 10
 casting_time 20
 skill praying

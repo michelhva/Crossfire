@@ -3,7 +3,7 @@ anim_suffix spellcasting
 name comet
 name_pl comet
 face spell_pyromancy.111
-level 8
+level 16
 value 80
 sp 15
 casting_time 10

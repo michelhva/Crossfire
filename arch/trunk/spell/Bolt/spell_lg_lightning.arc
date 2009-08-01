@@ -3,7 +3,7 @@ anim_suffix spellcasting
 name large lightning
 name_pl large lightnings
 face spell_pyromancy.111
-level 4
+level 8
 sp 13
 casting_time 7
 path_attuned 8

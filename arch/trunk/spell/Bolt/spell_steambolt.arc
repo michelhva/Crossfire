@@ -3,7 +3,7 @@ anim_suffix spellcasting
 name steambolt
 name_pl steambolts
 face spell_sorcery.111
-level 5
+level 10
 sp 10
 maxsp 40
 casting_time 10

@@ -3,7 +3,7 @@ anim_suffix spellcasting
 name earth to dust
 name_pl earth to dust
 face spell_summoner.111
-level 2
+level 4
 sp 5
 casting_time 15
 path_attuned 0

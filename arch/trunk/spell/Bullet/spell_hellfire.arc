@@ -3,7 +3,7 @@ anim_suffix spellcasting
 name hellfire
 name_pl hellfire
 face spell_pyromancy.111
-level 8
+level 16
 sp 13
 casting_time 8
 path_attuned 2

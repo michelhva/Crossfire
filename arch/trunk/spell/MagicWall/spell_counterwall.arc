@@ -3,7 +3,7 @@ anim_suffix spellcasting
 name counterwall
 name_pl counterwall
 face spell_summoner.111
-level 8
+level 16
 sp 8
 attacktype 524288
 casting_time 14

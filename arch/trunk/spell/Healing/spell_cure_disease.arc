@@ -3,7 +3,7 @@ anim_suffix spellcasting
 name cure disease
 name_pl cure disease
 face spell_praying.111
-level 5
+level 10
 grace 30
 casting_time 10
 path_attuned 256

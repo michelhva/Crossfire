@@ -3,7 +3,7 @@ anim_suffix spellcasting
 name create bomb
 name_pl create bomb
 face spell_pyromancy.111
-level 6
+level 12
 sp 10
 casting_time 5
 path_attuned 512

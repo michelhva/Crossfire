@@ -3,7 +3,7 @@ anim_suffix spellcasting
 name cure confusion
 name_pl cure confusion
 face spell_praying.111
-level 7
+level 14
 grace 8
 casting_time 15
 path_attuned 256

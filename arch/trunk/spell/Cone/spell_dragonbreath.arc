@@ -3,7 +3,7 @@ anim_suffix spellcasting
 name dragonbreath
 name_pl dragonbreath
 face spell_pyromancy.111
-level 12
+level 24
 sp 13
 casting_time 5
 path_attuned 2

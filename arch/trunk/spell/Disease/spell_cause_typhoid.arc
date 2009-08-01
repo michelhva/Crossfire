@@ -5,7 +5,7 @@ name_pl cause typhoid
 face spell_praying.111
 type 101
 subtype 45
-level 8
+level 16
 value 80
 grace 60
 casting_time 10

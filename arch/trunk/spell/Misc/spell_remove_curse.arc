@@ -3,7 +3,7 @@ anim_suffix spellcasting
 name remove curse
 name_pl remove curse
 face spell_praying.111
-level 8
+level 16
 grace 80
 casting_time 20
 path_attuned 256

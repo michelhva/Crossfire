@@ -3,7 +3,7 @@ anim_suffix spellcasting
 name invisible to undead
 name_pl invisible to undead
 face spell_praying.111
-level 6
+level 12
 grace 25
 casting_time 5
 path_attuned 0

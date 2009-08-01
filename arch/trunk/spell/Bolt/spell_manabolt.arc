@@ -3,7 +3,7 @@ anim_suffix spellcasting
 name mana bolt
 name_pl mana bolts
 face spell_evocation.111
-level 3
+level 6
 sp 18
 maxsp 30
 casting_time 9

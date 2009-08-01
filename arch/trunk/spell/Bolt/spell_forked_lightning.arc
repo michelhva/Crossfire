@@ -3,7 +3,7 @@ anim_suffix spellcasting
 name forked lightning
 name_pl forked lightnings
 face spell_praying.111
-level 5
+level 10
 grace 15
 maxgrace 24
 casting_time 10

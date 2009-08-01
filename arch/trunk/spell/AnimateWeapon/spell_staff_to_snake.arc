@@ -5,7 +5,7 @@ name_pl staff to snake
 type 101
 subtype 41
 face spell_praying.111
-level 2
+level 6
 value 20
 grace 8
 casting_time 5

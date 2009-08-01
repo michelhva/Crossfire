@@ -5,7 +5,7 @@ name_pl insect plague
 face spell_praying.111
 type 101
 subtype 10
-level 9
+level 18
 grace 45
 casting_time 5
 path_attuned 64

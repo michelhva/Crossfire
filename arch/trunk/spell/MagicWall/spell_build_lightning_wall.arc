@@ -5,7 +5,7 @@ name_pl build lightning wall
 face spell_pyromancy.111
 type 101
 subtype 15
-level 14
+level 28
 value 140
 sp 40
 casting_time 14

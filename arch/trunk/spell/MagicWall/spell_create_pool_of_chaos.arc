@@ -3,7 +3,7 @@ anim_suffix spellcasting
 name create pool of chaos
 name_pl create pool of chaos
 face spell_evocation.111
-level 10
+level 20
 sp 10
 casting_time 15
 path_attuned 2048

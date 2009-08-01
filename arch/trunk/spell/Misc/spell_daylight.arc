@@ -5,7 +5,7 @@ name_pl daylight
 face spell_praying.111
 type 101
 subtype 43
-level 18
+level 36
 value 180
 grace 120
 casting_time 15

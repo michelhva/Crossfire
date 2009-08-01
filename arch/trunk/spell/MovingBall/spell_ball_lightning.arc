@@ -5,7 +5,7 @@ name_pl ball lightning
 face spell_evocation.111
 type 101
 subtype 35
-level 9
+level 18
 value 90
 sp 10
 casting_time 10

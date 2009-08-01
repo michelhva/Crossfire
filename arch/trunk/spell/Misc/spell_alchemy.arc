@@ -3,7 +3,7 @@ anim_suffix spellcasting
 name alchemy
 name_pl alchemy
 face spell_summoner.111
-level 3
+level 6
 sp 5
 casting_time 25
 path_attuned 16384

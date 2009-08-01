@@ -3,7 +3,7 @@ anim_suffix spellcasting
 name detect evil
 name_pl detect evil
 face spell_praying.111
-level 3
+level 6
 grace 3
 casting_time 15
 skill praying

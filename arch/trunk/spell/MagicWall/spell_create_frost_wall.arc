@@ -3,7 +3,7 @@ anim_suffix spellcasting
 name create frost wall
 name_pl create frost wall
 face spell_evocation.111
-level 8
+level 16
 sp 8
 casting_time 10
 path_attuned 2048

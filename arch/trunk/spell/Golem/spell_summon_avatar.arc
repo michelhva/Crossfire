@@ -3,7 +3,7 @@ anim_suffix spellcasting
 name summon avatar
 name_pl summon avatar
 face spell_praying.111
-level 10
+level 20
 grace 60
 casting_time 15
 path_attuned 64

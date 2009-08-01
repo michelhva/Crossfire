@@ -3,7 +3,7 @@ anim_suffix spellcasting
 name summon air elemental
 name_pl summon air elemental
 face spell_summoner.111
-level 6
+level 12
 sp 20
 casting_time 12
 path_attuned 64

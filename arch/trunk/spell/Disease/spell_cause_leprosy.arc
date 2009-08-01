@@ -5,7 +5,7 @@ name_pl cause leprosy
 face spell_praying.111
 type 101
 subtype 45
-level 5
+level 10
 value 50
 grace 20
 casting_time 10

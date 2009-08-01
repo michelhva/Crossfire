@@ -3,7 +3,7 @@ anim_suffix spellcasting
 name counterspell
 name_pl counterspell
 face spell_summoner.111
-level 3
+level 6
 sp 10
 casting_time 2
 path_attuned 128

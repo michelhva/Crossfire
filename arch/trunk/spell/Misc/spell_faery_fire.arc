@@ -5,7 +5,7 @@ name_pl faery fire
 face spell_pyromancy.111
 type 101
 subtype 44
-level 4
+level 8
 value 40
 sp 10
 casting_time 15

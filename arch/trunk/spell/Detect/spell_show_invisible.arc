@@ -3,7 +3,7 @@ anim_suffix spellcasting
 name show invisible
 name_pl show invisible
 face spell_praying.111
-level 7
+level 14
 grace 10
 casting_time 20
 skill praying

@@ -6,7 +6,7 @@ face spell_evocation.111
 skill evocation
 type 101
 subtype 36
-level 12
+level 24
 value 120
 sp 30
 casting_time 12

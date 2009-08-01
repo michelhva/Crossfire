@@ -3,7 +3,7 @@ anim_suffix spellcasting
 name mana blast
 name_pl mana blast
 face spell_evocation.111
-level 2
+level 4
 sp 10
 casting_time 7
 path_attuned 32768

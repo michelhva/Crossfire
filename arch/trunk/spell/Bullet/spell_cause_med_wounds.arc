@@ -3,7 +3,7 @@ anim_suffix spellcasting
 name cause medium wounds
 name_pl cause medium wounds
 face spell_praying.111
-level 3
+level 6
 grace 8
 casting_time 5
 path_attuned 131072

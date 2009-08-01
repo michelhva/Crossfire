@@ -3,7 +3,7 @@ anim_suffix spellcasting
 name poison cloud
 name_pl poison cloud
 face spell_sorcery.111
-level 2
+level 4
 sp 5
 casting_time 10
 path_attuned 16

@@ -3,7 +3,7 @@ anim_suffix spellcasting
 name holy possession
 name_pl holy possession
 face spell_praying.111
-level 9
+level 18
 grace 30
 casting_time 10
 path_attuned 128

@@ -5,7 +5,7 @@ name_pl cause smallpox
 face spell_praying.111
 type 101
 subtype 45
-level 10
+level 20
 value 100
 grace 85
 casting_time 10

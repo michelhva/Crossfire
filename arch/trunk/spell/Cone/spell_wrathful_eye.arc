@@ -3,7 +3,7 @@ anim_suffix spellcasting
 name wrathful eye
 name_pl wrathful eye
 face spell_praying.111
-level 5
+level 10
 grace 30
 casting_time 8
 path_attuned 32

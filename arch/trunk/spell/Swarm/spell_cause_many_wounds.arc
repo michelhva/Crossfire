@@ -6,7 +6,7 @@ face spell_praying.111
 skill praying
 type 101
 subtype 36
-level 12
+level 24
 value 120
 grace 30
 casting_time 5

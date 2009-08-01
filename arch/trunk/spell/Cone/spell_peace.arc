@@ -3,7 +3,7 @@ anim_suffix spellcasting
 name peace
 name_pl peace
 face spell_praying.111
-level 20
+level 40
 grace 80
 casting_time 10
 path_attuned 1

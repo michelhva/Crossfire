@@ -3,7 +3,7 @@ anim_suffix spellcasting
 name medium snowstorm
 name_pl medium snowstorm
 face spell_evocation.111
-level 3
+level 6
 sp 10
 casting_time 5
 path_attuned 4

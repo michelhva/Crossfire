@@ -5,7 +5,7 @@ name_pl cause anthrax
 face spell_praying.111
 type 101
 subtype 45
-level 12
+level 24
 value 120
 grace 50
 casting_time 10

@@ -28,7 +28,7 @@ anim_suffix spellcasting
 name perceive self
 name_pl perceive self
 face spell_praying.111
-level 2
+level 4
 grace 5
 casting_time 1
 path_attuned 8192

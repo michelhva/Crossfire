@@ -3,7 +3,7 @@ anim_suffix spellcasting
 name medium healing
 name_pl medium healing
 face spell_praying.111
-level 4
+level 8
 grace 7
 casting_time 6
 path_attuned 256

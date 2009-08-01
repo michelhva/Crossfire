@@ -5,7 +5,7 @@ name_pl magehounds
 face spell_summoner.111
 type 101
 subtype 27
-level 3
+level 6
 sp 12
 casting_time 10
 path_attuned 64

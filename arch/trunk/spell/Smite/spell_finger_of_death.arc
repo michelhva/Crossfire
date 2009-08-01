@@ -5,7 +5,7 @@ name_pl finger of death
 face spell_praying.111
 type 101
 subtype 10
-level 14
+level 28
 value 140
 grace 50
 casting_time 5

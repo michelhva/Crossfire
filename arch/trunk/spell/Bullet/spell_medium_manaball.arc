@@ -3,7 +3,7 @@ anim_suffix spellcasting
 name medium manaball
 name_pl medium manaball
 face spell_evocation.111
-level 4
+level 8
 sp 6
 casting_time 18
 path_attuned 32768

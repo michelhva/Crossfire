@@ -3,7 +3,7 @@ anim_suffix spellcasting
 name large icestorm
 name_pl large icestorm
 face spell_evocation.111
-level 12
+level 24
 sp 13
 casting_time 9
 path_attuned 4

@@ -3,7 +3,7 @@ anim_suffix spellcasting
 name cure blindness
 name_pl cure blindness
 face spell_praying.111
-level 9
+level 18
 grace 30
 casting_time 10
 path_attuned 256

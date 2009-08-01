@@ -3,7 +3,7 @@ anim_suffix spellcasting
 name vitriol splash
 name_pl vitriol splash
 face spell_praying.111
-level 5
+level 10
 grace 15
 casting_time 10
 path_attuned 512

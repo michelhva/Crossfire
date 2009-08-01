@@ -3,7 +3,7 @@ anim_suffix spellcasting
 name command undead
 name_pl command undead
 face spell_praying.111
-level 5
+level 10
 grace 12
 casting_time 10
 path_attuned 1024
@@ -14,7 +14,7 @@ value 50
 no_drop 1
 invisible 1
 range 1
-range_modifier 3
+range_modifier 15
 maxgrace 25
 no_attack 1
 other_arch detect_magic

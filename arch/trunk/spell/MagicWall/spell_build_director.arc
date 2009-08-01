@@ -5,7 +5,7 @@ name_pl build director
 face spell_summoner.111
 type 101
 subtype 15
-level 10
+level 20
 value 100
 sp 30
 casting_time 13

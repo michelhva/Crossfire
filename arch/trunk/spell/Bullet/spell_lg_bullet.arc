@@ -3,7 +3,7 @@ anim_suffix spellcasting
 name large bullet
 name_pl large bullet
 face spell_evocation.111
-level 4
+level 8
 sp 3
 casting_time 6
 path_attuned 16
