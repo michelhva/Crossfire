@@ -4,7 +4,7 @@ region stoneville
 width 50
 height 50
 msg
-Modified: 2009-07-12 Andreas Kirschbaum
+Modified: 2009-08-02 Kevin Bulgrien
 endmsg
 outdoor 1
 tile_path_1 world_103_126
@@ -49,9 +49,6 @@ end
 arch grass
 y 9
 end
-arch grass_only
-y 9
-end
 arch tree3
 y 9
 end
@@ -59,9 +56,6 @@ arch cobblestones2
 y 10
 end
 arch grass
-y 11
-end
-arch grass_only
 y 11
 end
 arch tree3
@@ -89,9 +83,6 @@ arch grass
 y 18
 end
 arch grass
-y 19
-end
-arch grass_only
 y 19
 end
 arch tree3
@@ -283,10 +274,6 @@ x 1
 y 15
 end
 arch grass
-x 1
-y 16
-end
-arch grass_only
 x 1
 y 16
 end
@@ -514,10 +501,6 @@ arch grass
 x 2
 y 10
 end
-arch grass_only
-x 2
-y 10
-end
 arch tree3
 x 2
 y 10
@@ -589,10 +572,6 @@ arch grass
 x 2
 y 20
 end
-arch grass_only
-x 2
-y 20
-end
 arch tree3
 x 2
 y 20
@@ -605,19 +584,11 @@ arch grass
 x 2
 y 22
 end
-arch grass_only
-x 2
-y 22
-end
 arch tree3
 x 2
 y 22
 end
 arch grass
-x 2
-y 23
-end
-arch grass_only
 x 2
 y 23
 end
@@ -884,19 +855,11 @@ arch grass
 x 3
 y 22
 end
-arch grass_only
-x 3
-y 22
-end
 arch tree3
 x 3
 y 22
 end
 arch grass
-x 3
-y 23
-end
-arch grass_only
 x 3
 y 23
 end
@@ -1129,10 +1092,6 @@ arch grass
 x 4
 y 19
 end
-arch grass_only
-x 4
-y 19
-end
 arch tree3
 x 4
 y 19
@@ -1141,10 +1100,6 @@ arch grass
 x 4
 y 20
 end
-arch grass_only
-x 4
-y 20
-end
 arch tree3
 x 4
 y 20
@@ -1153,19 +1108,11 @@ arch grass
 x 4
 y 21
 end
-arch grass_only
-x 4
-y 21
-end
 arch tree3
 x 4
 y 21
 end
 arch grass
-x 4
-y 22
-end
-arch grass_only
 x 4
 y 22
 end
@@ -1358,10 +1305,6 @@ x 5
 y 10
 end
 arch grass
-x 5
-y 11
-end
-arch grass_only
 x 5
 y 11
 end
@@ -1698,10 +1641,6 @@ arch grass
 x 6
 y 23
 end
-arch grass_only
-x 6
-y 23
-end
 arch tree3
 x 6
 y 23
@@ -1884,10 +1823,6 @@ arch grass
 x 7
 y 10
 end
-arch grass_only
-x 7
-y 10
-end
 arch tree3
 x 7
 y 10
@@ -1939,19 +1874,11 @@ arch grass
 x 7
 y 19
 end
-arch grass_only
-x 7
-y 19
-end
 arch tree3
 x 7
 y 19
 end
 arch grass
-x 7
-y 20
-end
-arch grass_only
 x 7
 y 20
 end
@@ -2218,10 +2145,6 @@ arch grass
 x 8
 y 21
 end
-arch grass_only
-x 8
-y 21
-end
 arch tree3
 x 8
 y 21
@@ -2412,10 +2335,6 @@ arch grass
 x 9
 y 10
 end
-arch grass_only
-x 9
-y 10
-end
 arch tree3
 x 9
 y 10
@@ -2473,10 +2392,6 @@ x 9
 y 21
 end
 arch grass
-x 9
-y 22
-end
-arch grass_only
 x 9
 y 22
 end
@@ -3194,10 +3109,6 @@ arch grass
 x 12
 y 16
 end
-arch grass_only
-x 12
-y 16
-end
 arch tree3
 x 12
 y 16
@@ -3407,10 +3318,6 @@ arch grass
 x 13
 y 9
 end
-arch grass_only
-x 13
-y 9
-end
 arch tree3
 x 13
 y 9
@@ -3440,10 +3347,6 @@ x 13
 y 15
 end
 arch grass
-x 13
-y 16
-end
-arch grass_only
 x 13
 y 16
 end
@@ -3665,18 +3568,10 @@ arch grass
 x 14
 y 10
 end
-arch grass
-x 14
-y 10
-end
 arch tower_a
 name Tall Tower
 x 14
 y 10
-end
-arch grass
-x 14
-y 11
 end
 arch grass
 x 14
