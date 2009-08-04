@@ -10,7 +10,7 @@ enter_x 3
 enter_y 11
 msg
 Created:  2004-08-03 Mikeeusa
-Modified: 2008-11-27 lalo
+Modified: 2009-08-03 Kevin Bulgrien
 endmsg
 outdoor 1
 end
@@ -1857,7 +1857,7 @@ y 1
 end
 arch sign
 msg
-We have finally recovered our altar which had been stolen by this damn kobolds.  We looked everywhere for it, who'd have thought they would take over this abandoned temple and hide the altar on the bottom!  We wonder what their motivation was... maybe they can't tell altars apart?  Or they expected they'd be able to reconsecrate it?  Fools.
+We have finally recovered the altar that had been stolen from us by these cursed kobolds.  We looked everywhere for it; who'd have thought they would take over this abandoned temple and hide the altar on the bottom!  We wonder what their motivation was... maybe they can't tell altars apart?  Or maybe they expected they'd be able to reconsecrate it?  Fools.
 
 Anyway.  Praised be The Brave, The Just.  The altar is back where it belongs, in our chapel under the barracks.
 endmsg
@@ -1883,10 +1883,7 @@ y 3
 end
 arch magic_mouth
 msg
-You hear angry noises behind the door.
-Whatever is in there, sounds more dangerous
-than a kobold.  You wonder if you should
-just leave it alone.
+You hear angry noises behind the door.  Whatever is in there, sounds more dangerous than a kobold.  You wonder if you should just leave it alone.
 endmsg
 x 14
 y 4
