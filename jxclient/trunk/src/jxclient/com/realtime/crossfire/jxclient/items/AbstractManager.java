@@ -134,7 +134,15 @@ public abstract class AbstractManager
             final EventListenerList tileListeners = allListeners.get(index);
             if (tileListeners != null)
             {
-                final CfItem item = 0 <= index && index < items.size() ? items.get(index) : null;
+                CfItem item;
+                try
+                {
+                    item = items.get(index);
+                }
+                catch (final ArrayIndexOutOfBoundsException ex)
+                {
+                    item = null;
+                }
                 for (final LocationListener listener : tileListeners.getListeners(LocationListener.class))
                 {
                     listener.locationModified(index, item);
