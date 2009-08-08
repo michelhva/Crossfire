@@ -1,3 +1,8 @@
+2009-08-08  Andreas Kirschbaum
+
+	* Fix crash due to "java.lang.ArrayIndexOutOfBoundsException" when
+	updating the ground or inventroy view.
+
 2009-07-26  Andreas Kirschbaum
 
 	* Speed up handling of huge character inventories.
