@@ -1,5 +1,9 @@
 Changes for SVN top of tree:
 
+Modify pentagram and glyph msg/endmsg to indicate limitations and to add an
+example of use.
+Kevin Bulgrien 2009-08-08
+
 Add the last of the msg/endmsg descriptions, fixing some previously entered
 without the msg/endmsg tags.  A few non-player spells still do not have
 descriptions.  They are:  spell_create_lava.arc, spell_shell.arc,

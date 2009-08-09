@@ -17,9 +17,10 @@ msg
 Creates a special rune that may be used
 to encapsulate another spell.  When
 casting the spell, the caster specifies
-the spell that should be encapsulated in
-the pentagram.  When the pentagram is
+a summoning spell to encapsulate in the
+pentagram.  When the pentagram is
 triggered, the specified spell is cast
-on the target.
+on the target.  An example of use is:
+cast pentagram summon fire elemental
 endmsg
 end
