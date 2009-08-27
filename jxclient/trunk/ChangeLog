@@ -1,3 +1,8 @@
+2009-08-27  Andreas Kirschbaum
+
+	* Actually fix the crash when updating the ground or inventory
+	view.
+
 2009-08-08  Andreas Kirschbaum
 
 	* Fix crash due to "java.lang.ArrayIndexOutOfBoundsException" when
