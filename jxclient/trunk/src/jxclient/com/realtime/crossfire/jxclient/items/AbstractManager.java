@@ -139,7 +139,7 @@ public abstract class AbstractManager
                 {
                     item = items.get(index);
                 }
-                catch (final ArrayIndexOutOfBoundsException ex)
+                catch (final IndexOutOfBoundsException ex)
                 {
                     item = null;
                 }
