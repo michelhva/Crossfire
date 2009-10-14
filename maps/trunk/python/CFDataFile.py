@@ -18,7 +18,6 @@
 #
 
 import os
-import string
 import Crossfire
 
 class CFDataFile:

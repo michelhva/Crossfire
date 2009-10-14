@@ -1,6 +1,5 @@
 #CFWorld.py
 #A small module for checking where is bigworld an object is if it's in bigworld.
-import string
 import Crossfire
 
 world_prefix = "/world/world_"
