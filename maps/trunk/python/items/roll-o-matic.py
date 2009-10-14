@@ -59,7 +59,7 @@ def handle_move():
 	y = me.Y
 	for check in [0, 1, -1]:
 		d = abs_dir(want_dir + check)
-		if has_floor(x + dir_x[d], y + dir_y[d], floor) == True:
+		if has_floor(x + dir_x[d], y + dir_y[d], floor):
 			if me.Move(d) == 0:
 				continue
 
@@ -68,7 +68,7 @@ def handle_move():
 			done = True
 			break
 
-	if done == False:
+	if not done:
 		me.WriteKey(key_direction, '', 1)
 		me.WriteKey(key_follow, '', 1)
 	return

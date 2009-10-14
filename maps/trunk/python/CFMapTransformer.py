@@ -58,6 +58,7 @@ def MakeIdentifier(key):
 class CFMapTransformer:
     key = None
     cfmap = None
+
     def __init__(self,key,cfmap=None):
         self.key=key
         if (cfmap):
@@ -69,7 +70,6 @@ class CFMapTransformer:
             self.cfmap = o.Map
 
     def transformAll(self, criteria, whatTo):
-        mustClean = False
         if (not isinstance (criteria,list)):
             criteria = [criteria]
         for x in range (self.cfmap.Width):
@@ -94,6 +94,7 @@ class CFMapTransformer:
                         force.WriteKey("inside_speed","%f" %top.Speed,1)
                         top.Speed = 0
                     top=next
+
     def untransformAll(self):
         for x in range(self.cfmap.Width):
             for y in range(self.cfmap.Height):
