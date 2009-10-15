@@ -9,7 +9,7 @@ enter_x 4
 enter_y 13
 msg
 Created:  2002-12-28
-Modified: 2008-12-02 Rick Tanner
+Modified: 2009-10-15 Arvid Norlander
 endmsg
 end
 arch blackmarble
@@ -155,6 +155,7 @@ end
 arch table_3
 x 1
 y 2
+no_pick 1
 end
 arch quarto
 title Fire
@@ -943,6 +944,7 @@ end
 arch table_3
 x 7
 y 2
+no_pick 1
 end
 arch quarto
 title Frost
