@@ -5,6 +5,7 @@ height 16
 enter_x 15
 msg
 Created:  1999-02-03 King Zoobus
+Modified: 2009-10-23 Andreas Kirschbaum
 endmsg
 end
 arch jungle_2
@@ -831,6 +832,8 @@ connected 40
 end
 arch teleporter
 slaying fall
+hp -1
+sp -1
 x 10
 y 4
 speed 0.000000

@@ -7,7 +7,7 @@ height 25
 enter_x 2
 enter_y 1
 msg
-Modified: 2008-10-25 Rick Tanner
+Modified: 2009-10-23 Andreas Kirschbaum
 endmsg
 end
 arch blocked
@@ -4486,6 +4486,8 @@ arch chole_1
 name pit
 slaying snakepit
 face hole.111
+hp -1
+sp -1
 x 32
 y 9
 end

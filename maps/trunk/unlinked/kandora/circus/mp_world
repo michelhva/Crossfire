@@ -6,7 +6,7 @@ enter_x 39
 enter_y 39
 msg
 Created:  1999-02-18 King Zoobus
-Modified: 2008-06-03 Arvid Norlander
+Modified: 2009-10-23 Andreas Kirschbaum
 endmsg
 end
 arch desert
@@ -429,6 +429,8 @@ end
 arch castle
 name swamp castle, with tower
 slaying mp_castle
+hp -1
+sp -1
 x 2
 y 13
 end
@@ -804,6 +806,8 @@ x 4
 end
 arch mountain_cave
 slaying mp_cave
+hp -1
+sp -1
 x 4
 y 1
 end
@@ -947,6 +951,8 @@ end
 arch tavern
 name a fancy establishment
 slaying mp_tavern
+hp -1
+sp -1
 x 4
 y 23
 end
@@ -5145,6 +5151,8 @@ end
 arch cathedral
 name A house of God
 slaying mp_church
+hp -1
+sp -1
 x 25
 y 22
 end
@@ -7809,6 +7817,8 @@ end
 arch store_general
 name pet shop
 slaying petshop
+hp -1
+sp -1
 x 37
 y 7
 end

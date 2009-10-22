@@ -8,7 +8,7 @@ height 60
 enter_x 25
 enter_y 58
 msg
-Modified: 2009-01-23 Rick Tanner
+Modified: 2009-10-23 Andreas Kirschbaum
 endmsg
 end
 arch sea
@@ -6844,6 +6844,8 @@ y 25
 end
 arch stair2_down
 slaying dungeon
+hp -1
+sp -1
 x 23
 y 25
 end
@@ -7358,6 +7360,8 @@ y 10
 end
 arch stair2_down
 slaying dungeon
+hp -1
+sp -1
 x 25
 y 10
 end
@@ -8037,6 +8041,8 @@ y 25
 end
 arch stair2_down
 slaying dungeon
+hp -1
+sp -1
 x 27
 y 25
 end

@@ -6,6 +6,7 @@ enter_x 15
 enter_y 18
 msg
 Created:  1996-09-13 Chris Jeske
+Modified: 2009-10-23 Andreas Kirschbaum
 endmsg
 end
 arch blocked
@@ -2799,6 +2800,8 @@ y 9
 end
 arch teleporter
 slaying Island
+hp -1
+sp -1
 x 21
 y 9
 end
