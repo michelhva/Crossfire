@@ -6,6 +6,7 @@ enter_x 6
 enter_y 1
 msg
 Created:  1996-11-01 Chris Jeske
+Modified: 2009-10-23 Andreas Kirschbaum
 endmsg
 end
 arch grass
@@ -2973,6 +2974,8 @@ y 19
 end
 arch teleporter
 slaying ../../city/city
+hp -1
+sp -1
 x 29
 end
 arch sign

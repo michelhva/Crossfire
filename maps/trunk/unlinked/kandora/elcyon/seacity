@@ -6,7 +6,7 @@ enter_x 1
 enter_y 1
 msg
 Created:  1999-02-06 King Zoobus
-Modified: 2008-06-03 Arvid Norlander
+Modified: 2009-10-23 Andreas Kirschbaum
 endmsg
 end
 arch grass
@@ -515,6 +515,8 @@ end
 arch rl_house1
 name Dwarven Embassy
 slaying dwarf
+hp -1
+sp -1
 x 6
 y 7
 end
@@ -1095,6 +1097,8 @@ end
 arch barrack_up
 name inn by the plaza
 slaying plaza
+hp -1
+sp -1
 x 12
 y 9
 end

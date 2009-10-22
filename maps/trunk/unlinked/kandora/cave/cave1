@@ -5,7 +5,7 @@ height 14
 enter_x 1
 msg
 Created:  1999-02-28 King Zoobus
-Modified: 2007-11-04 Andreas Kirschbaum
+Modified: 2009-10-23 Andreas Kirschbaum
 endmsg
 end
 arch dungeon_floor
@@ -1069,6 +1069,8 @@ slaying cave2
 msg
 scorching hot air wafts from below.
 endmsg
+hp -1
+sp -1
 x 9
 y 5
 end

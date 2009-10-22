@@ -10,6 +10,7 @@ Creator: majorwoo josh@woosworld.net
 Date:    11/19/2004
 Map finised by:  Alestan jehloq@yahoo.com
 Date:     8/27/2007
+Modified: 2009-10-23 Andreas Kirschbaum
 endmsg
 end
 arch dungeon_magic
@@ -4159,8 +4160,8 @@ end
 arch perm_magic_portal
 name The Mazes of Menace
 slaying /quests/peterm/Nethack_in_crossfire_entrance
-hp 0
-sp 0
+hp -1
+sp -1
 x 18
 y 9
 walk_on 0

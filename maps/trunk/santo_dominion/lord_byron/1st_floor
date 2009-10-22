@@ -7,7 +7,7 @@ height 40
 enter_x 20
 enter_y 5
 msg
-Modified: 2008-10-25 Rick Tanner
+Modified: 2009-10-23 Andreas Kirschbaum
 endmsg
 end
 arch woodfloor
@@ -1520,6 +1520,8 @@ y 34
 end
 arch exit
 slaying main
+hp -1
+sp -1
 x 5
 y 34
 end
@@ -3745,6 +3747,8 @@ y 22
 end
 arch exit
 slaying main
+hp -1
+sp -1
 x 14
 y 23
 end
@@ -9387,6 +9391,8 @@ y 36
 end
 arch exit
 slaying main
+hp -1
+sp -1
 x 35
 y 36
 end

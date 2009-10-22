@@ -9,7 +9,7 @@ enter_x 1
 enter_y 1
 msg
 Created:  2001-02-16
-Modified: 2009-07-12 Andreas Kirschbaum
+Modified: 2009-10-23 Andreas Kirschbaum
 endmsg
 outdoor 1
 tile_path_1 world_105_114
@@ -12112,6 +12112,8 @@ y 37
 end
 arch wagon
 slaying /none
+hp -1
+sp -1
 x 30
 y 37
 speed 1

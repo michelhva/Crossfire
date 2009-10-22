@@ -5,7 +5,7 @@ height 14
 enter_x 1
 msg
 Created:  1999-02-28 King Zoobus
-Modified: 2008-06-03 Arvid Norlander
+Modified: 2009-10-23 Andreas Kirschbaum
 endmsg
 end
 arch cobblestones2
@@ -641,6 +641,8 @@ y 7
 end
 arch stair_3_up
 slaying signal2
+hp -1
+sp -1
 x 6
 y 7
 end

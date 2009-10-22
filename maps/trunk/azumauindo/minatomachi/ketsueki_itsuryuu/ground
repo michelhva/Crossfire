@@ -9,7 +9,7 @@ enter_x 12
 enter_y 23
 msg
 Created:  2002-01-10 MikeeUSA
-Modified: 2008-11-20 Rick Tanner
+Modified: 2009-10-22 Andreas Kirschbaum
 endmsg
 end
 arch blocked
@@ -5492,8 +5492,8 @@ name Big Chest
 name_pl Big Chest
 slaying bigchest
 face chest_1.111
-hp 0
-sp 0
+hp -1
+sp -1
 x 24
 y 13
 is_animated 0

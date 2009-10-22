@@ -4,7 +4,7 @@ width 15
 height 13
 msg
 Created:  1999-02-15 King Zoobus
-Modified: 2007-11-04 Andreas Kirschbaum
+Modified: 2009-10-23 Andreas Kirschbaum
 endmsg
 end
 arch goldfloor
@@ -14,6 +14,8 @@ y 1
 end
 arch oakdoor
 slaying ../../town2
+hp -1
+sp -1
 y 1
 end
 arch goldfloor
