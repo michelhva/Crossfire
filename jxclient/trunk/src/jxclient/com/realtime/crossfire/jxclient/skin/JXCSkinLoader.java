@@ -310,7 +310,8 @@ public class JXCSkinLoader
 
         expressionParser = new ExpressionParser(selectedResolution);
         final GuiFactory guiFactory = new GuiFactory(debugGui ? mouseTracker : null, commands, guiManager, macros);
-        skin = new DefaultJXCSkin(defaultKeyBindings, optionManager, stats, itemsManager, experienceTable, skillSet, expressionParser, selectedResolution, guiFactory);
+        final Dialogs dialogs = new Dialogs(guiFactory);
+        skin = new DefaultJXCSkin(defaultKeyBindings, optionManager, stats, itemsManager, experienceTable, skillSet, expressionParser, selectedResolution, dialogs);
         JXCSkin skinToDetach = skin;
         try
         {
