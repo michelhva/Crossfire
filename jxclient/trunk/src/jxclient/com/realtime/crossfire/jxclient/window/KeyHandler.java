@@ -37,13 +37,13 @@ import java.util.Date;
  */
 public class KeyHandler
 {
-    public static final int KEY_SHIFT_SHIFT = 0;
+    private static final int KEY_SHIFT_SHIFT = 0;
 
-    public static final int KEY_SHIFT_CTRL = 1;
+    private static final int KEY_SHIFT_CTRL = 1;
 
-    public static final int KEY_SHIFT_ALT = 2;
+    private static final int KEY_SHIFT_ALT = 2;
 
-    public static final int KEY_SHIFT_ALTGR = 3;
+    private static final int KEY_SHIFT_ALTGR = 3;
 
     /**
      * The {@link Writer} for logging keyboard debug output. Log nothing if
@@ -107,12 +107,12 @@ public class KeyHandler
         this.keyBindings = keyBindings;
     }
 
-    public boolean getKeyShift(final int keyid)
+    private boolean getKeyShift(final int keyid)
     {
         return keyShift[keyid];
     }
 
-    public void setKeyShift(final int keyid, final boolean state)
+    private void setKeyShift(final int keyid, final boolean state)
     {
         if (keyShift[keyid] != state)
         {

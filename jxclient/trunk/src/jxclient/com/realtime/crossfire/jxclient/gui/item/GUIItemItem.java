@@ -160,7 +160,7 @@ public abstract class GUIItemItem extends GUIItem
 
     /* {@inheritDoc} */
     @Override
-    public void button2Clicked(final int modifiers)
+    protected void button2Clicked(final int modifiers)
     {
         final CfItem tmpItem = item;
         if (tmpItem == null)

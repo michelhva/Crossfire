@@ -32,7 +32,7 @@ public class TooltipManager
     /**
      * Distance of tooltip from its associated GUI element.
      */
-    public static final int TOOLTIP_DISTANCE = 8;
+    private static final int TOOLTIP_DISTANCE = 8;
 
     /**
      * The {@link JXCWindow} to manage the tooltips of.

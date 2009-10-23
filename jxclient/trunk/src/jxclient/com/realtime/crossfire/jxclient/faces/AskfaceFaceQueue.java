@@ -40,7 +40,7 @@ public class AskfaceFaceQueue extends DefaultFaceQueue
      * requested, the excess ones are put on hold until some face information
      * is received.
      */
-    public static final int CONCURRENT_ASKFACE_COMMANDS = 8;
+    private static final int CONCURRENT_ASKFACE_COMMANDS = 8;
 
     /**
      * The object use for synchronization.

@@ -141,7 +141,7 @@ public class ParseUtils
      * @param name the color name to parse
      * @return the color or <code>null</code> if the color name does not exist
      */
-    static Color parseColorName(final String name)
+    private static Color parseColorName(final String name)
     {
         if (name.equals("BLACK")) return Color.BLACK;
         if (name.equals("DARK_GRAY")) return Color.DARK_GRAY;

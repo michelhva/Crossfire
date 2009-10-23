@@ -50,7 +50,7 @@ public class GUIHTMLLabel extends AbstractLabel
     /**
      * Size of border around text in auto-resize mode.
      */
-    public static final int AUTO_BORDER_SIZE = 2;
+    private static final int AUTO_BORDER_SIZE = 2;
 
     /**
      * The pattern used to split a string into lines.

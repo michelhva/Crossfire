@@ -53,7 +53,7 @@ public class HexCodec
      * @param sb the <code>StringBuilder</code> to append to
      * @param value the value to append
      */
-    public static void hexEncode4(final StringBuilder sb, final int value)
+    private static void hexEncode4(final StringBuilder sb, final int value)
     {
         hexEncode2(sb, value>>16);
         hexEncode2(sb, value);

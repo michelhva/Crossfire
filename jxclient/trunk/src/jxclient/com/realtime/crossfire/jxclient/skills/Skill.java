@@ -105,7 +105,7 @@ public class Skill
      *
      * @return Whether the skill is known.
      */
-    public boolean isKnown()
+    private boolean isKnown()
     {
         return experience != 0 || level != 0;
     }

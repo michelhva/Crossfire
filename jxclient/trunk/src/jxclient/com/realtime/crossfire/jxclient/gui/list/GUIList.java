@@ -540,7 +540,7 @@ public abstract class GUIList extends ActivatableGUIElement
      * @param layoutOrientation the layout orientation
      * @param visibleRowCount the number of visible rows
      */
-    public void setLayoutOrientation(final int layoutOrientation, final int visibleRowCount)
+    protected void setLayoutOrientation(final int layoutOrientation, final int visibleRowCount)
     {
         synchronized (getTreeLock())
         {

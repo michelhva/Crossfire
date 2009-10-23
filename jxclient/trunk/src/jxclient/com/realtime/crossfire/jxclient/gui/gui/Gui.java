@@ -277,7 +277,7 @@ public class Gui
      *
      * @return The default gui element, or <code>null</code>.
      */
-    public GUIElement getDefaultElement()
+    private GUIElement getDefaultElement()
     {
         for (final GUIElement element : visibleElements)
         {
@@ -467,7 +467,7 @@ public class Gui
      * @param activeElement the gui element
      * @return whether the given gui element is active
      */
-    public boolean isActiveElement(final ActivatableGUIElement activeElement)
+    private boolean isActiveElement(final ActivatableGUIElement activeElement)
     {
         return this.activeElement != null && this.activeElement == activeElement;
     }

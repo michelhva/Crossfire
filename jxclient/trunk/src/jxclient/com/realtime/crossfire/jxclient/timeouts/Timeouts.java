@@ -135,7 +135,7 @@ public class Timeouts
      *
      * @param timeoutEvent The timeout event to execute.
      */
-    public static void add(final int timeout, final TimeoutEvent timeoutEvent)
+    private static void add(final int timeout, final TimeoutEvent timeoutEvent)
     {
         synchronized (events)
         {

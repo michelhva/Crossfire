@@ -91,7 +91,7 @@ public abstract class AbstractLabel extends GUIElement
      *
      * @return The label text.
      */
-    public String getText()
+    protected String getText()
     {
         return text;
     }

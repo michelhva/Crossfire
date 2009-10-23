@@ -79,7 +79,7 @@ public class JXClient
      * Initialization of a JXCWindow is the only task performed here.
      * @param options the options
      */
-    public JXClient(final Options options)
+    private JXClient(final Options options)
     {
         try
         {

@@ -97,17 +97,17 @@ public abstract class GUIItemList extends GUIList
      * Called if the user has clicked the left mouse button.
      * @param modifiers the active modifiers
      */
-    public abstract void button1Clicked(final int modifiers);
+    protected abstract void button1Clicked(final int modifiers);
 
     /**
      * Called if the user has clicked the middle mouse button.
      * @param modifiers the active modifiers
      */
-    public abstract void button2Clicked(final int modifiers);
+    protected abstract void button2Clicked(final int modifiers);
 
     /**
      * Called if the user has clicked the right mouse button.
      * @param modifiers the active modifiers
      */
-    public abstract void button3Clicked(final int modifiers);
+    protected abstract void button3Clicked(final int modifiers);
 }

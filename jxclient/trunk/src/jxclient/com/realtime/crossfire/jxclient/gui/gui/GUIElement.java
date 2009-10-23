@@ -350,7 +350,7 @@ public abstract class GUIElement extends JPanel
      * Record that {@link #bufferedImage} has changed and must be repainted.
      * Does not notify listeners.
      */
-    public void setChangedNoListeners()
+    protected void setChangedNoListeners()
     {
         changed = true;
     }
@@ -432,7 +432,7 @@ public abstract class GUIElement extends JPanel
      *
      * @param h The new height.
      */
-    public void setElementSize(final int w, final int h)
+    protected void setElementSize(final int w, final int h)
     {
         if (getWidth() != w || getHeight() != h)
         {
@@ -445,7 +445,7 @@ public abstract class GUIElement extends JPanel
         }
     }
 
-    protected void createBuffer()
+    private void createBuffer()
     {
         final GraphicsEnvironment ge = GraphicsEnvironment.getLocalGraphicsEnvironment();
         final GraphicsDevice gd = ge.getDefaultScreenDevice();

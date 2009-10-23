@@ -70,7 +70,7 @@ public class StringSplitter
      * @param message the message to split
      * @return the lines
      */
-    public static List<String> split(final String message)
+    private static List<String> split(final String message)
     {
         final String paddedMessage = message.trim()+" ";
 

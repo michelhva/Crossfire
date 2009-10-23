@@ -326,7 +326,7 @@ public class ItemsManager
      * @param tag The tag.
      * @return the item or <code>null</code> if no such item exists
      */
-    public CfItem getItemOrPlayer(final int tag)
+    private CfItem getItemOrPlayer(final int tag)
     {
         synchronized (sync)
         {
@@ -382,7 +382,7 @@ public class ItemsManager
      * Deletes an item by tag.
      * @param tag the tag of the item to delete
      */
-    public void removeItem(final int tag)
+    private void removeItem(final int tag)
     {
         synchronized (sync)
         {
@@ -400,7 +400,7 @@ public class ItemsManager
      * Deletes an item.
      * @param item the item to delete
      */
-    public void removeItem(final CfItem item)
+    private void removeItem(final CfItem item)
     {
         synchronized (sync)
         {
@@ -447,7 +447,7 @@ public class ItemsManager
      * @param item the item to move
      * @param newLocation the location to move to
      */
-    public void moveItem(final CfItem item, final int newLocation)
+    private void moveItem(final CfItem item, final int newLocation)
     {
         synchronized (sync)
         {
@@ -545,7 +545,7 @@ public class ItemsManager
     /**
      * Delivers outstanding change events.
      */
-    public void fireEvents()
+    private void fireEvents()
     {
         fireEventScheduler.trigger();
     }
