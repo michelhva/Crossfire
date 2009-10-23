@@ -581,7 +581,8 @@ public class JXCWindow extends JFrame
         setDefaultCloseOperation(DO_NOTHING_ON_CLOSE);
         mouseTracker = new MouseTracker(debugGui);
         windowRenderer = new JXCWindowRenderer(this, mouseTracker, semaphoreRedraw, server);
-        guiManager = new GuiManager(this, semaphoreDrawing, new TooltipManager(this), settings, server, macros, mouseTracker, windowRenderer);
+        guiManager = new GuiManager(this, semaphoreDrawing, new TooltipManager(this), settings, server, macros, windowRenderer);
+        mouseTracker.init(windowRenderer);
         final ScriptManager scriptManager = new ScriptManager(commandQueue, server, stats, itemsManager, spellsManager, mapUpdater, skillSet);
         guiManager.init(this, scriptManager, commandQueue, server, optionManager, debugGui ? mouseTracker : null);
         keybindingsManager = new KeybindingsManager(guiManager.getCommands(), guiManager, macros);

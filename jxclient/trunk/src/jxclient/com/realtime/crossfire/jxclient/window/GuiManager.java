@@ -298,10 +298,9 @@ public class GuiManager
      * @param settings the settings to use
      * @param server the crossfire server connection to monitor
      * @param macros the macros instance to use
-     * @param mouseTracker the mouse tracker to use
      * @param windowRenderer the window renderer to use
      */
-    public GuiManager(final JXCWindow window, final Object semaphoreDrawing, final TooltipManager tooltipManager, final Settings settings, final CrossfireServerConnection server, final Macros macros, final MouseTracker mouseTracker, final JXCWindowRenderer windowRenderer)
+    public GuiManager(final JXCWindow window, final Object semaphoreDrawing, final TooltipManager tooltipManager, final Settings settings, final CrossfireServerConnection server, final Macros macros, final JXCWindowRenderer windowRenderer)
     {
         this.semaphoreDrawing = semaphoreDrawing;
         this.tooltipManager = tooltipManager;
@@ -310,7 +309,6 @@ public class GuiManager
         this.macros = macros;
         this.windowRenderer = windowRenderer;
         window.addConnectionStateListener(guiStateListener);
-        mouseTracker.init(windowRenderer);
     }
 
     @Deprecated
