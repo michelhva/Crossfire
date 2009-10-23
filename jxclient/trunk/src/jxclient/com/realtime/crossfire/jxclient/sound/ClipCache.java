@@ -23,6 +23,8 @@ import java.io.IOException;
 import javax.sound.sampled.AudioInputStream;
 import javax.sound.sampled.AudioSystem;
 import javax.sound.sampled.Clip;
+import javax.sound.sampled.DataLine;
+import javax.sound.sampled.Line;
 import javax.sound.sampled.LineUnavailableException;
 import javax.sound.sampled.UnsupportedAudioFileException;
 
@@ -42,7 +44,7 @@ public class ClipCache
      *
      * @return The new clip, or <code>null</code> if an error occurs.
      */
-    public static Clip allocateClip(final String name, final String action)
+    public static DataLine allocateClip(final String name, final String action)
     {
         return newClip(name, action);
     }
@@ -52,7 +54,7 @@ public class ClipCache
      *
      * @param clip The clip to deallocate.
      */
-    public static void freeClip(final Clip clip)
+    public static void freeClip(final Line clip)
     {
         clip.close();
     }
@@ -66,7 +68,7 @@ public class ClipCache
      *
      * @return The new clip, or <code>null</code> if an error occurs.
      */
-    private static Clip newClip(final String name, final String action)
+    private static DataLine newClip(final String name, final String action)
     {
         try
         {

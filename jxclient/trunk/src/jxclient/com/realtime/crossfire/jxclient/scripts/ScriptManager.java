@@ -28,6 +28,7 @@ import com.realtime.crossfire.jxclient.skills.SkillSet;
 import com.realtime.crossfire.jxclient.spells.SpellsManager;
 import com.realtime.crossfire.jxclient.stats.Stats;
 import java.io.IOException;
+import java.util.Collection;
 import java.util.HashSet;
 import java.util.Set;
 import java.util.concurrent.CopyOnWriteArraySet;
@@ -76,7 +77,7 @@ public class ScriptManager
     /**
      * All running {@link ScriptProcess}es.
      */
-    private final Set<ScriptProcess> scriptProcesses = new CopyOnWriteArraySet<ScriptProcess>();
+    private final Collection<ScriptProcess> scriptProcesses = new CopyOnWriteArraySet<ScriptProcess>();
 
     /**
      * The script ID for the next created script.
@@ -187,7 +188,7 @@ public class ScriptManager
      * matches all scripts
      * @return the matching scripts, possibly empty
      */
-    private Set<ScriptProcess> getScriptsByName(final String partialScriptName)
+    private Set<ScriptProcess> getScriptsByName(final CharSequence partialScriptName)
     {
         final Set<ScriptProcess> result = new HashSet<ScriptProcess>();
         for (final ScriptProcess scriptProcess : scriptProcesses)

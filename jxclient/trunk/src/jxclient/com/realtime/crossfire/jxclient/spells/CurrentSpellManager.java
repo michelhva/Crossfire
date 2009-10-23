@@ -20,7 +20,7 @@
 package com.realtime.crossfire.jxclient.spells;
 
 import java.util.ArrayList;
-import java.util.List;
+import java.util.Collection;
 
 /**
  * Manages the currently selected spell.
@@ -32,7 +32,7 @@ public class CurrentSpellManager
     /**
      * The listeners to notify object changed spell objects.
      */
-    private final List<CurrentSpellManagerListener> listeners = new ArrayList<CurrentSpellManagerListener>();
+    private final Collection<CurrentSpellManagerListener> listeners = new ArrayList<CurrentSpellManagerListener>();
 
     /**
      * The currently selected spell, or <code>null</code>.

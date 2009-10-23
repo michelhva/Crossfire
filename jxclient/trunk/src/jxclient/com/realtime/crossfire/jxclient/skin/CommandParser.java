@@ -355,7 +355,7 @@ public class CommandParser
                 throw new IOException("syntax error");
             }
 
-            final GUIElement nextElement = definedGUIElements.lookup(args[argc]);
+            final Object nextElement = definedGUIElements.lookup(args[argc]);
             if (!(nextElement instanceof ActivatableGUIElement))
             {
                 throw new IOException("'"+args[argc]+"' cannot become active");

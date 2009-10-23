@@ -21,6 +21,7 @@
 package com.realtime.crossfire.jxclient.gui.item;
 
 import com.realtime.crossfire.jxclient.faces.FacesManager;
+import com.realtime.crossfire.jxclient.gui.gui.GUIElement;
 import com.realtime.crossfire.jxclient.gui.gui.TooltipManager;
 import com.realtime.crossfire.jxclient.items.ItemsManager;
 import com.realtime.crossfire.jxclient.server.CommandQueue;
@@ -77,7 +78,7 @@ public class GUIItemInventoryFactory
      * @param index the item inventory's index
      * @return the new instance
      */
-    public GUIItemInventory newItemInventory(final int index)
+    public GUIElement newItemInventory(final int index)
     {
         return new GUIItemInventory(tooltipManager, windowRenderer, commandQueue, name+index, 0, 0, 1, 1, itemPainter, index, crossfireServerConnection, facesManager, itemsManager);
     }

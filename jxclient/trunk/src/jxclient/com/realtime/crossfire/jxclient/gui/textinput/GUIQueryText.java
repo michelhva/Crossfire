@@ -25,7 +25,7 @@ import com.realtime.crossfire.jxclient.window.JXCWindow;
 import com.realtime.crossfire.jxclient.window.JXCWindowRenderer;
 import java.awt.Color;
 import java.awt.Font;
-import java.awt.image.BufferedImage;
+import java.awt.Image;
 
 /**
  * Input field for "query" dialogs.
@@ -44,7 +44,7 @@ public class GUIQueryText extends GUIText
      */
     private final JXCWindow window;
 
-    public GUIQueryText(final JXCWindow window, final GuiManager guiManager, final TooltipManager tooltipManager, final JXCWindowRenderer windowRenderer, final String name, final int x, final int y, final int w, final int h, final BufferedImage activeImage, final BufferedImage inactiveImage, final Font font, final Color inactiveColor, final Color activeColor, final int margin, final String text, final boolean ignoreUpDown)
+    public GUIQueryText(final JXCWindow window, final GuiManager guiManager, final TooltipManager tooltipManager, final JXCWindowRenderer windowRenderer, final String name, final int x, final int y, final int w, final int h, final Image activeImage, final Image inactiveImage, final Font font, final Color inactiveColor, final Color activeColor, final int margin, final String text, final boolean ignoreUpDown)
     {
         super(guiManager, tooltipManager, windowRenderer, name, x, y, w, h, activeImage, inactiveImage, font, inactiveColor, activeColor, margin, text, ignoreUpDown);
         this.window = window;

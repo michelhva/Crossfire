@@ -22,7 +22,7 @@ package com.realtime.crossfire.jxclient.gui.log;
 import com.realtime.crossfire.jxclient.gui.gui.TooltipManager;
 import com.realtime.crossfire.jxclient.window.JXCWindowRenderer;
 import java.awt.Color;
-import java.awt.image.BufferedImage;
+import java.awt.Image;
 
 /**
  * A gui element implementing a static text field which may contain media tags.
@@ -60,7 +60,7 @@ public class GUILabelLog extends GUILog
      * @param defaultColor the default color to use for text message not
      * specifying a color
      */
-    public GUILabelLog(final TooltipManager tooltipManager, final JXCWindowRenderer windowRenderer, final String name, final int x, final int y, final int w, final int h, final BufferedImage backgroundImage, final Fonts fonts, final Color defaultColor)
+    public GUILabelLog(final TooltipManager tooltipManager, final JXCWindowRenderer windowRenderer, final String name, final int x, final int y, final int w, final int h, final Image backgroundImage, final Fonts fonts, final Color defaultColor)
     {
         super(tooltipManager, windowRenderer, name, x, y, w, h, backgroundImage, fonts);
         this.defaultColor = defaultColor;
@@ -77,7 +77,7 @@ public class GUILabelLog extends GUILog
      * Sets the displayed text by parsing a string.
      * @param string the string to parse
      */
-    public void updateText(final String string)
+    public void updateText(final CharSequence string)
     {
         buffer.clear();
         parser.parse(string, defaultColor, buffer);

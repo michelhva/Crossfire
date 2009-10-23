@@ -22,7 +22,7 @@ package com.realtime.crossfire.jxclient.commands;
 import com.realtime.crossfire.jxclient.scripts.ScriptManager;
 import com.realtime.crossfire.jxclient.scripts.ScriptProcess;
 import com.realtime.crossfire.jxclient.server.CrossfireServerConnection;
-import java.util.Set;
+import java.util.Collection;
 
 /**
  * Implements the "scriptkill" command. It terminates running scripts.
@@ -63,7 +63,7 @@ public class ScriptkillCommand extends AbstractCommand
             return;
         }
 
-        final Set<ScriptProcess> scriptProcesses = scriptManager.getScripts(args);
+        final Collection<ScriptProcess> scriptProcesses = scriptManager.getScripts(args);
         if (scriptProcesses.isEmpty())
         {
             drawInfoError(scriptManager.hasScripts() ? "No matching scripts." : "No scripts running.");

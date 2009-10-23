@@ -155,7 +155,7 @@ public class GuiManager
             {
             case MessageTypes.MSG_TYPE_BOOK:
                 dialog = skin.getDialogBook(1);
-                final GUIOneLineLabel title = dialog.getFirstElementEndingWith(GUIOneLineLabel.class, "_title");
+                final AbstractLabel title = dialog.getFirstElementEndingWith(GUIOneLineLabel.class, "_title");
                 if (title != null)
                 {
                     final String[] tmp = message.split("\n", 2);

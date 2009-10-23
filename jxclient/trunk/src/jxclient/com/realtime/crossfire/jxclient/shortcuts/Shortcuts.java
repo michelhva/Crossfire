@@ -352,7 +352,7 @@ public class Shortcuts
             return;
         }
 
-        final ShortcutCommand shortcutCommand = new ShortcutCommand(commandQueue, command);
+        final Shortcut shortcutCommand = new ShortcutCommand(commandQueue, command);
         setShortcut(index, shortcutCommand);
     }
     /**

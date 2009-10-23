@@ -27,11 +27,11 @@ import com.realtime.crossfire.jxclient.window.JXCWindowRenderer;
 import java.awt.Color;
 import java.awt.Graphics;
 import java.awt.Graphics2D;
+import java.awt.Image;
 import java.awt.Transparency;
 import java.awt.font.FontRenderContext;
-import java.awt.image.BufferedImage;
 import java.util.ArrayList;
-import java.util.List;
+import java.util.Collection;
 import java.util.ListIterator;
 
 /**
@@ -54,7 +54,7 @@ public abstract class GUILog extends GUIElement implements GUIScrollable2
     /**
      * All listeners.
      */
-    private final List<ScrollableListener> listeners = new ArrayList<ScrollableListener>();
+    private final Collection<ScrollableListener> listeners = new ArrayList<ScrollableListener>();
 
     /**
      * The {@link Buffer} containing all received text messages.
@@ -65,7 +65,7 @@ public abstract class GUILog extends GUIElement implements GUIScrollable2
      * The background image drawn below the text contents. Set to
      * <code>null</code> if unused.
      */
-    private final BufferedImage backgroundImage;
+    private final Image backgroundImage;
 
     /**
      * The {@link Fonts} instance for looking up fonts.
@@ -114,7 +114,7 @@ public abstract class GUILog extends GUIElement implements GUIScrollable2
      * unused
      * @param fonts the <code>Fonts</code> instance for looking up fonts
      */
-    protected GUILog(final TooltipManager tooltipManager, final JXCWindowRenderer windowRenderer, final String name, final int x, final int y, final int w, final int h, final BufferedImage backgroundImage, final Fonts fonts)
+    protected GUILog(final TooltipManager tooltipManager, final JXCWindowRenderer windowRenderer, final String name, final int x, final int y, final int w, final int h, final Image backgroundImage, final Fonts fonts)
     {
         super(tooltipManager, windowRenderer, name, x, y, w, h, Transparency.TRANSLUCENT);
         this.backgroundImage = backgroundImage;
@@ -180,7 +180,7 @@ public abstract class GUILog extends GUIElement implements GUIScrollable2
      * @param y the y-coordinate to start drawing
      * @param line the line to draw
      */
-    private void drawLine(final Graphics g, final int y, final Line line)
+    private void drawLine(final Graphics g, final int y, final Iterable<Segment> line)
     {
         for (final Segment segment : line)
         {

@@ -35,7 +35,6 @@ import com.realtime.crossfire.jxclient.server.MapSizeListener;
 import com.realtime.crossfire.jxclient.window.JXCWindowRenderer;
 import java.awt.Color;
 import java.awt.Graphics;
-import java.awt.Graphics2D;
 import java.awt.GraphicsConfiguration;
 import java.awt.GraphicsDevice;
 import java.awt.GraphicsEnvironment;
@@ -162,7 +161,7 @@ public class GUIMap extends GUIElement
         {
             synchronized (bufferedImageSync)
             {
-                final Graphics2D g = createBufferGraphics();
+                final Graphics g = createBufferGraphics();
                 try
                 {
                     final int x0 = map.getOffsetX();
@@ -201,7 +200,7 @@ public class GUIMap extends GUIElement
         {
             synchronized (bufferedImageSync)
             {
-                final Graphics2D g = createBufferGraphics();
+                final Graphics g = createBufferGraphics();
                 try
                 {
                     g.setColor(Color.BLACK);
@@ -259,7 +258,7 @@ public class GUIMap extends GUIElement
                     h = mapHeight+dy;
                 }
 
-                final Graphics2D g = createBufferGraphics();
+                final Graphics g = createBufferGraphics();
                 try
                 {
                     g.copyArea(offsetX+(x+dx)*tileSize, offsetY+(y+dy)*tileSize, w*tileSize, h*tileSize, -dx*tileSize, -dy*tileSize);
@@ -568,7 +567,7 @@ public class GUIMap extends GUIElement
 
         synchronized (bufferedImageSync)
         {
-            final Graphics2D g = createBufferGraphics();
+            final Graphics g = createBufferGraphics();
             try
             {
                 redrawAll(g);

@@ -23,6 +23,7 @@ import java.awt.image.BufferedImage;
 import java.io.File;
 import java.io.IOException;
 import javax.imageio.ImageIO;
+import javax.swing.Icon;
 import javax.swing.ImageIcon;
 
 /**
@@ -44,7 +45,7 @@ public class Images
      * @param outputFile the file to save to
      * @param imageIcon the image to save
      */
-    public static void saveImageIcon(final File outputFile, final ImageIcon imageIcon)
+    public static void saveImageIcon(final File outputFile, final Icon imageIcon)
     {
         final BufferedImage bufferedImage = new BufferedImage(imageIcon.getIconWidth(), imageIcon.getIconHeight(), BufferedImage.TYPE_INT_ARGB);
         imageIcon.paintIcon(null, bufferedImage.getGraphics(), 0, 0);

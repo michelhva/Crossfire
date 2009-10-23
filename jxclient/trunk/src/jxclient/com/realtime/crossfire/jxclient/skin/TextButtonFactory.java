@@ -20,6 +20,7 @@
 package com.realtime.crossfire.jxclient.skin;
 
 import com.realtime.crossfire.jxclient.gui.button.GUITextButton;
+import com.realtime.crossfire.jxclient.gui.gui.GUIElement;
 import com.realtime.crossfire.jxclient.gui.gui.TooltipManager;
 import com.realtime.crossfire.jxclient.window.GUICommandList;
 import com.realtime.crossfire.jxclient.window.JXCWindowRenderer;
@@ -105,7 +106,7 @@ public class TextButtonFactory
      *
      * @return the new text button
      */
-    public GUITextButton newTextButton(final TooltipManager tooltipManager, final JXCWindowRenderer windowRenderer, final String name, final int x, final int y, final int w, final int h, final String text, final boolean autoRepeat, final GUICommandList commandList)
+    public GUIElement newTextButton(final TooltipManager tooltipManager, final JXCWindowRenderer windowRenderer, final String name, final int x, final int y, final int w, final int h, final String text, final boolean autoRepeat, final GUICommandList commandList)
     {
         return new GUITextButton(tooltipManager, windowRenderer, name, x, y, w, h, up, down, text, font, color, autoRepeat, commandList);
     }

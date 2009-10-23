@@ -20,10 +20,11 @@
 package com.realtime.crossfire.jxclient.window;
 
 import com.realtime.crossfire.jxclient.gui.gui.ActivatableGUIElement;
+import com.realtime.crossfire.jxclient.gui.gui.GUIElement;
 import com.realtime.crossfire.jxclient.gui.gui.Gui;
 import com.realtime.crossfire.jxclient.gui.gui.GuiAutoCloseListener;
-import com.realtime.crossfire.jxclient.gui.label.AbstractLabel;
 import com.realtime.crossfire.jxclient.gui.log.Buffer;
+import com.realtime.crossfire.jxclient.gui.log.GUILog;
 import com.realtime.crossfire.jxclient.gui.log.GUIMessageLog;
 import com.realtime.crossfire.jxclient.server.CrossfireServerConnection;
 import com.realtime.crossfire.jxclient.server.CrossfireUpdateMapListener;
@@ -37,7 +38,9 @@ import java.awt.GraphicsEnvironment;
 import java.awt.Insets;
 import java.awt.Point;
 import java.awt.event.MouseEvent;
+import java.awt.event.MouseListener;
 import java.awt.image.BufferStrategy;
+import java.util.Collection;
 import java.util.Iterator;
 import java.util.ListIterator;
 import java.util.concurrent.CopyOnWriteArrayList;
@@ -49,7 +52,7 @@ public class JXCWindowRenderer
 {
     private final JXCWindow window;
 
-    private final MouseTracker mouseTracker;
+    private final MouseListener mouseTracker;
 
     /**
      * The semaphore used to synchronized map model updates and map view
@@ -77,7 +80,7 @@ public class JXCWindowRenderer
     /**
      * Listeners to be notified about {@link #rendererGuiState} changes.
      */
-    private final CopyOnWriteArrayList<RendererGuiStateListener> rendererGuiStateListeners = new CopyOnWriteArrayList<RendererGuiStateListener>();
+    private final Collection<RendererGuiStateListener> rendererGuiStateListeners = new CopyOnWriteArrayList<RendererGuiStateListener>();
 
     /**
      * If set, {@link #currentGui} has changed.
@@ -89,7 +92,7 @@ public class JXCWindowRenderer
     /**
      * The tooltip to use, or <code>null</code> if no tooltips should be shown.
      */
-    private AbstractLabel tooltip = null;
+    private GUIElement tooltip = null;
 
     /**
      * If set, force a full repaint.
@@ -231,7 +234,7 @@ public class JXCWindowRenderer
      * updates and map view redraws
      * @param crossfireServerConnection the server connection to monitor
      */
-    public JXCWindowRenderer(final JXCWindow window, final MouseTracker mouseTracker, final Object redrawSemaphore, final CrossfireServerConnection crossfireServerConnection)
+    public JXCWindowRenderer(final JXCWindow window, final MouseListener mouseTracker, final Object redrawSemaphore, final CrossfireServerConnection crossfireServerConnection)
     {
         this.window = window;
         this.mouseTracker = mouseTracker;
@@ -668,7 +671,7 @@ public class JXCWindowRenderer
      *
      * @param tooltip The tooltip to use, or <code>null</code>.
      */
-    public void setTooltip(final AbstractLabel tooltip)
+    public void setTooltip(final GUIElement tooltip)
     {
         this.tooltip = tooltip;
     }
@@ -843,7 +846,7 @@ public class JXCWindowRenderer
      */
     private Buffer getActiveMessageBuffer(final Gui gui)
     {
-        final GUIMessageLog buffer = gui.getFirstElement(GUIMessageLog.class);
+        final GUILog buffer = gui.getFirstElement(GUIMessageLog.class);
         return buffer == null ? null : buffer.getBuffer();
     }
 

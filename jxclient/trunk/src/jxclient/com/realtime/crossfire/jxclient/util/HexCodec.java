@@ -28,7 +28,7 @@ public class HexCodec
     /**
      * Hex characters for values 0-15.
      */
-    private static final String HEX_CHARS = "0123456789abcdef";
+    private static final CharSequence HEX_CHARS = "0123456789abcdef";
 
     /**
      * Private constructor to prevent instantiation.

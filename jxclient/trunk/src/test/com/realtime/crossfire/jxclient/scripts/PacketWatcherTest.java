@@ -24,7 +24,7 @@ import com.realtime.crossfire.jxclient.server.ReceivedPacketListener;
 import com.realtime.crossfire.jxclient.test.TestCrossfireServerConnection;
 import com.realtime.crossfire.jxclient.test.TestScriptProcess;
 import java.util.ArrayList;
-import java.util.List;
+import java.util.Collection;
 import junit.framework.Test;
 import junit.framework.TestCase;
 import junit.framework.TestSuite;
@@ -68,7 +68,7 @@ public class PacketWatcherTest extends TestCase
      */
     public void test1()
     {
-        final List<ReceivedPacketListener> listeners = new ArrayList<ReceivedPacketListener>();
+        final Collection<ReceivedPacketListener> listeners = new ArrayList<ReceivedPacketListener>();
         final CrossfireServerConnection connection = new TestCrossfireServerConnection()
         {
             /** {@inheritDoc} */

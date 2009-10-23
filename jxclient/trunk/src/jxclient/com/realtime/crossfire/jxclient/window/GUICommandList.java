@@ -23,7 +23,7 @@ import com.realtime.crossfire.jxclient.gui.commands.ActivateCommandInputCommand;
 import com.realtime.crossfire.jxclient.gui.commands.ExecuteCommandCommand;
 import com.realtime.crossfire.jxclient.gui.commands.GUICommand;
 import java.util.ArrayList;
-import java.util.List;
+import java.util.Collection;
 
 /**
  * A list of {@link GUICommand} instances.
@@ -52,7 +52,7 @@ public class GUICommandList
     /**
      * The list of {@link GUICommand}s in execution order.
      */
-    private final List<GUICommand> commandList = new ArrayList<GUICommand>();
+    private final Collection<GUICommand> commandList = new ArrayList<GUICommand>();
 
     /**
      * Create a new instance as an empty command list.
@@ -138,7 +138,7 @@ public class GUICommandList
     {
         final StringBuilder sb = new StringBuilder();
         boolean firstCommand = true;
-        for (final GUICommand guiCommand : commandList)
+        for (final Object guiCommand : commandList)
         {
             final String commandString;
             if (guiCommand instanceof ExecuteCommandCommand)

@@ -21,7 +21,7 @@ package com.realtime.crossfire.jxclient.spells;
 
 import com.realtime.crossfire.jxclient.util.StringSplitter;
 import java.util.ArrayList;
-import java.util.List;
+import java.util.Collection;
 
 /**
  *
@@ -33,7 +33,7 @@ public class Spell
 {
     private final String name;
 
-    private final List<SpellListener> listeners = new ArrayList<SpellListener>();
+    private final Collection<SpellListener> listeners = new ArrayList<SpellListener>();
 
     private int faceNum;
 

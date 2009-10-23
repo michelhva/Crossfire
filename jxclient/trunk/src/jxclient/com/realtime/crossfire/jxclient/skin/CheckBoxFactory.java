@@ -20,6 +20,7 @@
 package com.realtime.crossfire.jxclient.skin;
 
 import com.realtime.crossfire.jxclient.gui.GUICheckBox;
+import com.realtime.crossfire.jxclient.gui.gui.GUIElement;
 import com.realtime.crossfire.jxclient.gui.gui.TooltipManager;
 import com.realtime.crossfire.jxclient.settings.options.CheckBoxOption;
 import com.realtime.crossfire.jxclient.window.JXCWindowRenderer;
@@ -103,7 +104,7 @@ public class CheckBoxFactory
      *
      * @return The new checkbox.
      */
-    public GUICheckBox newCheckBox(final TooltipManager tooltipManager, final JXCWindowRenderer windowRenderer, final String name, final int x, final int y, final int w, final int h, final CheckBoxOption option, final String text)
+    public GUIElement newCheckBox(final TooltipManager tooltipManager, final JXCWindowRenderer windowRenderer, final String name, final int x, final int y, final int w, final int h, final CheckBoxOption option, final String text)
     {
             return new GUICheckBox(tooltipManager, windowRenderer, name, x, y, w, h, checked, unchecked, font, color, option, text);
     }

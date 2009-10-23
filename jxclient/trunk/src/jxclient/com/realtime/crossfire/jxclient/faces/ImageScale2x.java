@@ -21,6 +21,7 @@ package com.realtime.crossfire.jxclient.faces;
 
 import java.awt.image.BufferedImage;
 import java.io.File;
+import javax.swing.Icon;
 import javax.swing.ImageIcon;
 
 /**
@@ -44,7 +45,7 @@ public class ImageScale2x
      *
      * @param srcImageIcon The image to be scaled.
      */
-    public ImageScale2x(final ImageIcon srcImageIcon)
+    public ImageScale2x(final Icon srcImageIcon)
     {
         width = srcImageIcon.getIconWidth();
         height = srcImageIcon.getIconHeight();
@@ -82,7 +83,7 @@ public class ImageScale2x
         System.out.println("Reading: "+srcFile);
         final ImageIcon src = new ImageIcon(srcFile);
         final ImageScale2x scaler = new ImageScale2x(src);
-        final ImageIcon out = scaler.getScaledImage();
+        final Icon out = scaler.getScaledImage();
 
         final String outFile = srcFile.substring(0, srcFile.length()-4)+"2x.png";
         System.out.println("Writing: "+outFile);

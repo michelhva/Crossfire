@@ -23,7 +23,7 @@ import com.realtime.crossfire.jxclient.gui.gui.TooltipManager;
 import com.realtime.crossfire.jxclient.server.CrossfireServerConnection;
 import com.realtime.crossfire.jxclient.window.JXCWindowRenderer;
 import java.awt.Color;
-import java.awt.image.BufferedImage;
+import java.awt.Image;
 
 /**
  * A gui element implementing the message window.
@@ -57,7 +57,7 @@ public class GUIMessageLog extends GUILog
      * @param defaultColor the default color to use for text message not
      * specifying a color
      */
-    public GUIMessageLog(final TooltipManager tooltipManager, final JXCWindowRenderer windowRenderer, final String name, final int x, final int y, final int w, final int h, final CrossfireServerConnection crossfireServerConnection, final BufferedImage backgroundImage, final Fonts fonts, final Color defaultColor)
+    public GUIMessageLog(final TooltipManager tooltipManager, final JXCWindowRenderer windowRenderer, final String name, final int x, final int y, final int w, final int h, final CrossfireServerConnection crossfireServerConnection, final Image backgroundImage, final Fonts fonts, final Color defaultColor)
     {
         super(tooltipManager, windowRenderer, name, x, y, w, h, backgroundImage, fonts);
         messageBufferUpdater = new MessageBufferUpdater(crossfireServerConnection, buffer, defaultColor);

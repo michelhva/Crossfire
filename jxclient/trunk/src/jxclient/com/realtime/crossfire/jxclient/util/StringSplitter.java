@@ -20,7 +20,7 @@
 package com.realtime.crossfire.jxclient.util;
 
 import java.util.ArrayList;
-import java.util.List;
+import java.util.Collection;
 
 /**
  * Utility class for splitting strings.
@@ -70,11 +70,11 @@ public class StringSplitter
      * @param message the message to split
      * @return the lines
      */
-    private static List<String> split(final String message)
+    private static Iterable<String> split(final String message)
     {
         final String paddedMessage = message.trim()+" ";
 
-        final List<String> result = new ArrayList<String>();
+        final Collection<String> result = new ArrayList<String>();
         int start = 0;
         for (;;)
         {

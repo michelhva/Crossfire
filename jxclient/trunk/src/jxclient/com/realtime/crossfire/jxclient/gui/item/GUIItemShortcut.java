@@ -37,7 +37,7 @@ import java.awt.Color;
 import java.awt.Font;
 import java.awt.Graphics;
 import java.awt.Graphics2D;
-import java.awt.image.BufferedImage;
+import java.awt.Image;
 
 public class GUIItemShortcut extends GUIItem
 {
@@ -65,11 +65,11 @@ public class GUIItemShortcut extends GUIItem
 
     private final Color cursedColor;
 
-    private final BufferedImage cursedImage;
+    private final Image cursedImage;
 
     private final Color appliedColor;
 
-    private final BufferedImage appliedImage;
+    private final Image appliedImage;
 
     private final Font font;
 
@@ -143,7 +143,7 @@ public class GUIItemShortcut extends GUIItem
         }
     };
 
-    public GUIItemShortcut(final TooltipManager tooltipManager, final JXCWindowRenderer windowRenderer, final String name, final int x, final int y, final int w, final int h, final Color cursedColor, final BufferedImage cursedImage, final Color appliedColor, final BufferedImage appliedImage, final int index, final FacesManager facesManager, final Shortcuts shortcuts, final Font font, final CurrentSpellManager currentSpellManager)
+    public GUIItemShortcut(final TooltipManager tooltipManager, final JXCWindowRenderer windowRenderer, final String name, final int x, final int y, final int w, final int h, final Color cursedColor, final Image cursedImage, final Color appliedColor, final Image appliedImage, final int index, final FacesManager facesManager, final Shortcuts shortcuts, final Font font, final CurrentSpellManager currentSpellManager)
     {
         super(tooltipManager, windowRenderer, name, x, y, w, h);
         this.shortcuts = shortcuts;
@@ -258,7 +258,7 @@ public class GUIItemShortcut extends GUIItem
                 g.fillRect(0, 0, w, h);
             }
             g.drawImage(facesManager.getOriginalImageIcon(shortcutSpell.getSpell().getFaceNum()).getImage(), 0, 0, null);
-            final BufferedImage image = shortcutSpell.isCast() ? cursedImage : appliedImage;
+            final Image image = shortcutSpell.isCast() ? cursedImage : appliedImage;
             if (image != null)
             {
                 g.drawImage(image, 0, 0, null);

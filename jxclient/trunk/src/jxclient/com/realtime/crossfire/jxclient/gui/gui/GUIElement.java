@@ -461,7 +461,7 @@ public abstract class GUIElement extends JPanel
     {
         synchronized (bufferedImageSync)
         {
-            final Graphics2D g = createBufferGraphics();
+            final Graphics g = createBufferGraphics();
             try
             {
                 render(g);

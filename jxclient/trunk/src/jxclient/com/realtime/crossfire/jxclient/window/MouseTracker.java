@@ -21,6 +21,7 @@ package com.realtime.crossfire.jxclient.window;
 
 import com.realtime.crossfire.jxclient.gui.gui.GUIElement;
 import com.realtime.crossfire.jxclient.gui.gui.Gui;
+import java.awt.Component;
 import java.awt.event.MouseEvent;
 import javax.swing.event.MouseInputListener;
 
@@ -69,7 +70,7 @@ public class MouseTracker implements MouseInputListener
      *
      * @return The gui element in which the mouse is.
      */
-    public GUIElement getMouseElement()
+    public Component getMouseElement()
     {
         return mouseElement;
     }

@@ -19,8 +19,8 @@
 //
 package com.realtime.crossfire.jxclient.faces;
 
+import java.util.Collection;
 import java.util.HashSet;
-import java.util.Set;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 import javax.swing.ImageIcon;
@@ -61,7 +61,7 @@ public class FileCacheFaceQueue extends DefaultFaceQueue
      * The faces for which {@link #loadFace(Face)} has been called but that are
      * not yet processed.
      */
-    private final Set<Face> pendingLoadFaces = new HashSet<Face>();
+    private final Collection<Face> pendingLoadFaces = new HashSet<Face>();
 
     /**
      * Counts the number of calls to {@link #reset()}. An {@link

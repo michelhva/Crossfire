@@ -120,7 +120,7 @@ public class MetaserverEntryParser
      * @return the metaserver entry or <code>null</code> if the line is
      * invalid
      */
-    public static MetaserverEntry parseEntry(final String entry)
+    public static MetaserverEntry parseEntry(final CharSequence entry)
     {
         final String[] entries = FIELD_SEPARATOR_PATTERN.split(entry, -1);
         if (entries.length != 11)

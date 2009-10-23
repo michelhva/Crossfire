@@ -28,9 +28,10 @@ import java.awt.Color;
 import java.awt.Font;
 import java.awt.Graphics;
 import java.awt.Graphics2D;
+import java.awt.Image;
 import java.awt.Transparency;
 import java.awt.event.MouseEvent;
-import java.awt.geom.Rectangle2D;
+import java.awt.geom.RectangularShape;
 import java.awt.image.BufferedImage;
 
 /**
@@ -53,7 +54,7 @@ public class GUICheckBox extends ActivatableGUIElement
     /**
      * The image for the unchecked [ ] state.
      */
-    private final BufferedImage uncheckedImage;
+    private final Image uncheckedImage;
 
     /**
      * The text.
@@ -161,7 +162,7 @@ public class GUICheckBox extends ActivatableGUIElement
         g.setFont(font);
         g.setColor(color);
         g.drawImage(option.isChecked() ? checkedImage : uncheckedImage, 0, 0, null);
-        final Rectangle2D rect = font.getStringBounds(text, g2.getFontRenderContext());
+        final RectangularShape rect = font.getStringBounds(text, g2.getFontRenderContext());
         final int y = (int)Math.round((getHeight()-rect.getMaxY()-rect.getMinY()))/2;
         g.drawString(text, checkedImage.getWidth()+4, y);
     }

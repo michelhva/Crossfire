@@ -20,6 +20,7 @@
 package com.realtime.crossfire.jxclient.metaserver;
 
 import java.util.ArrayList;
+import java.util.Collection;
 import java.util.Collections;
 import java.util.HashMap;
 import java.util.List;
@@ -41,7 +42,7 @@ public class MetaserverModel
      * The pending entries. Only valid between {@link #begin()} and {@link
      * #commit()}.
      */
-    private final List<MetaserverEntry> metalistPending = new ArrayList<MetaserverEntry>();
+    private final Collection<MetaserverEntry> metalistPending = new ArrayList<MetaserverEntry>();
 
     /**
      * Object used for synchronization.
@@ -51,7 +52,7 @@ public class MetaserverModel
     /**
      * All registered metaserver listeners.
      */
-    private final List<MetaserverListener> metaserverListeners = new ArrayList<MetaserverListener>();
+    private final Collection<MetaserverListener> metaserverListeners = new ArrayList<MetaserverListener>();
 
     /**
      * All registered metaserver entry listeners. Maps entry index to list of listeners.
@@ -209,11 +210,11 @@ public class MetaserverModel
      * @param index the entry index
      * @return the listsners list
      */
-    private List<MetaserverEntryListener> getMetaserverEntryListeners(final int index)
+    private Collection<MetaserverEntryListener> getMetaserverEntryListeners(final int index)
     {
         synchronized (metaserverEntryListeners)
         {
-            final List<MetaserverEntryListener> existingListeners = metaserverEntryListeners.get(index);
+            final Collection<MetaserverEntryListener> existingListeners = metaserverEntryListeners.get(index);
             if (existingListeners != null)
             {
                 return existingListeners;

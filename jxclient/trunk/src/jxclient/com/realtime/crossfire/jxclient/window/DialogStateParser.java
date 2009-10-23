@@ -32,6 +32,7 @@ import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.io.OutputStreamWriter;
+import java.io.Writer;
 import java.util.LinkedList;
 import java.util.List;
 import java.util.regex.Pattern;
@@ -299,7 +300,7 @@ public class DialogStateParser
      *
      * @throws IOException If an I/O error occurs.
      */
-    private static void saveDialog(final Gui dialog, final String type, final BufferedWriter bw) throws IOException
+    private static void saveDialog(final Gui dialog, final String type, final Writer bw) throws IOException
     {
         final String dialogName = dialog.getName();
         if (dialogName == null)

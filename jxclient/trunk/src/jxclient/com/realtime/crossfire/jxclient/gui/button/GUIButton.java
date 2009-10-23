@@ -25,6 +25,7 @@ import com.realtime.crossfire.jxclient.window.JXCWindowRenderer;
 import java.awt.Color;
 import java.awt.Font;
 import java.awt.Graphics;
+import java.awt.Image;
 import java.awt.Transparency;
 import java.awt.image.BufferedImage;
 
@@ -41,9 +42,9 @@ public class GUIButton extends AbstractButton
      */
     private static final long serialVersionUID = 1;
 
-    private final BufferedImage imageUp;
+    private final Image imageUp;
 
-    private final BufferedImage imageDown;
+    private final Image imageDown;
 
     private final String text;
 

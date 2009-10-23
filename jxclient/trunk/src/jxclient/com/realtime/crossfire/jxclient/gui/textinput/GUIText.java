@@ -28,6 +28,7 @@ import java.awt.Color;
 import java.awt.Font;
 import java.awt.Graphics;
 import java.awt.Graphics2D;
+import java.awt.Image;
 import java.awt.Toolkit;
 import java.awt.Transparency;
 import java.awt.datatransfer.Clipboard;
@@ -37,8 +38,7 @@ import java.awt.datatransfer.UnsupportedFlavorException;
 import java.awt.event.KeyEvent;
 import java.awt.event.MouseEvent;
 import java.awt.font.FontRenderContext;
-import java.awt.geom.Rectangle2D;
-import java.awt.image.BufferedImage;
+import java.awt.geom.RectangularShape;
 import java.io.IOException;
 
 /**
@@ -68,9 +68,9 @@ public abstract class GUIText extends ActivatableGUIElement implements KeyListen
      */
     private final CommandHistory commandHistory;
 
-    private final BufferedImage activeImage;
+    private final Image activeImage;
 
-    private final BufferedImage inactiveImage;
+    private final Image inactiveImage;
 
     /**
      * The clipboard for cut/copy/paste operations.
@@ -124,7 +124,7 @@ public abstract class GUIText extends ActivatableGUIElement implements KeyListen
      */
     private final Object syncCursor = new Object();
 
-    protected GUIText(final GuiManager guiManager, final TooltipManager tooltipManager, final JXCWindowRenderer windowRenderer, final String name, final int x, final int y, final int w, final int h, final BufferedImage activeImage, final BufferedImage inactiveImage, final Font font, final Color inactiveColor, final Color activeColor, final int margin, final String text, final boolean ignoreUpDown)
+    protected GUIText(final GuiManager guiManager, final TooltipManager tooltipManager, final JXCWindowRenderer windowRenderer, final String name, final int x, final int y, final int w, final int h, final Image activeImage, final Image inactiveImage, final Font font, final Color inactiveColor, final Color activeColor, final int margin, final String text, final boolean ignoreUpDown)
     {
         super(tooltipManager, windowRenderer, name, x, y, w, h, Transparency.TRANSLUCENT);
         if (2*margin >= w) throw new IllegalArgumentException("margin is too large");
@@ -183,14 +183,14 @@ public abstract class GUIText extends ActivatableGUIElement implements KeyListen
         synchronized (syncCursor)
         {
             tmp = getDisplayText();
-            final Rectangle2D rect = font.getStringBounds(tmp, fontRenderContext);
+            final RectangularShape rect = font.getStringBounds(tmp, fontRenderContext);
             y = (int)Math.round((getHeight()-rect.getMaxY()-rect.getMinY()))/2;
             if (isActive())
             {
                 final String tmpPrefix = tmp.substring(0, cursor-offset);
                 final String tmpCursor = tmp.substring(0, cursor-offset+1);
-                final Rectangle2D rectPrefix = font.getStringBounds(tmpPrefix, fontRenderContext);
-                final Rectangle2D rectCursor = font.getStringBounds(tmpCursor, fontRenderContext);
+                final RectangularShape rectPrefix = font.getStringBounds(tmpPrefix, fontRenderContext);
+                final RectangularShape rectCursor = font.getStringBounds(tmpCursor, fontRenderContext);
                 final int cursorX1 = (int)(rectPrefix.getWidth()+0.5);
                 final int cursorX2 = (int)(rectCursor.getWidth()+0.5);
                 g.setColor(inactiveColor);
@@ -468,7 +468,7 @@ public abstract class GUIText extends ActivatableGUIElement implements KeyListen
                 {
                     final String tmp = getDisplayText();
                     final String tmpCursor = tmp.substring(0, cursor-offset+1);
-                    final Rectangle2D rectCursor = font.getStringBounds(tmpCursor, fontRenderContext);
+                    final RectangularShape rectCursor = font.getStringBounds(tmpCursor, fontRenderContext);
                     final int cursorX = (int)(rectCursor.getWidth()+0.5);
                     if (cursorX < getWidth())
                     {

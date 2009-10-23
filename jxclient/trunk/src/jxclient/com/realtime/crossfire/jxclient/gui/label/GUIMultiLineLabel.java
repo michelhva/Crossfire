@@ -25,7 +25,7 @@ import java.awt.Color;
 import java.awt.Font;
 import java.awt.Graphics;
 import java.awt.Graphics2D;
-import java.awt.geom.Rectangle2D;
+import java.awt.geom.RectangularShape;
 import java.awt.image.BufferedImage;
 import java.util.regex.Pattern;
 
@@ -121,7 +121,7 @@ public class GUIMultiLineLabel extends GUILabel
         }
 
         final Graphics2D g2 = (Graphics2D)g;
-        final Rectangle2D rect = font.getStringBounds("X", g2.getFontRenderContext());
+        final RectangularShape rect = font.getStringBounds("X", g2.getFontRenderContext());
         final int lineHeight = (int)Math.round(rect.getMaxY()-rect.getMinY()+0.5);
 
         int y = 0;

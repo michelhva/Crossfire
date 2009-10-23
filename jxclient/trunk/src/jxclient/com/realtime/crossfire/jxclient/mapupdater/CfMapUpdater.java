@@ -37,8 +37,8 @@ import com.realtime.crossfire.jxclient.server.CrossfireUpdateMapListener;
 import com.realtime.crossfire.jxclient.window.GuiStateListener;
 import com.realtime.crossfire.jxclient.window.JXCWindow;
 import java.util.ArrayList;
+import java.util.Collection;
 import java.util.HashSet;
-import java.util.List;
 import java.util.Set;
 
 /**
@@ -92,17 +92,17 @@ public class CfMapUpdater
     /**
      * The listeners to notify about changed map squares.
      */
-    private final List<MapListener> mapListeners = new ArrayList<MapListener>();
+    private final Collection<MapListener> mapListeners = new ArrayList<MapListener>();
 
     /**
      * The listeners to notify about cleared maps.
      */
-    private final List<NewmapListener> newmapListeners = new ArrayList<NewmapListener>();
+    private final Collection<NewmapListener> newmapListeners = new ArrayList<NewmapListener>();
 
     /**
      * The listeners to notify about scrolled maps.
      */
-    private final List<MapscrollListener> mapscrollListeners = new ArrayList<MapscrollListener>();
+    private final Collection<MapscrollListener> mapscrollListeners = new ArrayList<MapscrollListener>();
 
     /**
      * Collects the changed map squares between calls to {@link
@@ -118,7 +118,7 @@ public class CfMapUpdater
     /**
      * All multi-tiled faces with heads outside the visible map area.
      */
-    private final Set<Location> outOfViewMultiFaces = new HashSet<Location>();
+    private final Collection<Location> outOfViewMultiFaces = new HashSet<Location>();
 
     /**
      * The map square listener attached to {@link #map}.

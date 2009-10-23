@@ -119,7 +119,7 @@ public class Filenames
      *
      * @throws IOException If the file cannot be accessed.
      */
-    public static File getShortcutsFile(final String hostname, final String character) throws IOException
+    public static File getShortcutsFile(final CharSequence hostname, final CharSequence character) throws IOException
     {
         return getSettingsFile("shortcuts-"+encode(hostname)+"-"+encode(character)+".txt");
     }
@@ -136,7 +136,7 @@ public class Filenames
      * @return The keybindings file; return <code>null</code> if the file
      * cannot be accessed.
      */
-    public static File getKeybindingsFile(final String hostname, final String character)
+    public static File getKeybindingsFile(final CharSequence hostname, final CharSequence character)
     {
         try
         {
@@ -225,7 +225,7 @@ public class Filenames
      *
      * @return The encoded string.
      */
-    private static String encode(final String str)
+    private static String encode(final CharSequence str)
     {
         final StringBuilder sb = new StringBuilder();
         for (int i = 0; i < str.length(); i++)

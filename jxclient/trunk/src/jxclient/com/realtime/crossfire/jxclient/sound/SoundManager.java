@@ -22,8 +22,8 @@ package com.realtime.crossfire.jxclient.sound;
 import com.realtime.crossfire.jxclient.server.ClientSocketState;
 import com.realtime.crossfire.jxclient.window.GuiStateListener;
 import com.realtime.crossfire.jxclient.window.JXCWindow;
+import java.util.Collection;
 import java.util.EnumSet;
-import java.util.Set;
 
 /**
  * Manages all sounds. Each sound has a sound type ({@link Sounds}) atatched.
@@ -52,7 +52,7 @@ public class SoundManager
     /**
      * The muted sounds.
      */
-    private final Set<Sounds> mutedSounds = EnumSet.allOf(Sounds.class);
+    private final Collection<Sounds> mutedSounds = EnumSet.allOf(Sounds.class);
 
     /**
      * The {@link GuiStateListener} for detecting established or dropped

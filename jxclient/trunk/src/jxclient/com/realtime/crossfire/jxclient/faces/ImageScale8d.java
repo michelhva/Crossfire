@@ -20,6 +20,7 @@
 package com.realtime.crossfire.jxclient.faces;
 
 import java.awt.image.BufferedImage;
+import javax.swing.Icon;
 import javax.swing.ImageIcon;
 
 /**
@@ -48,7 +49,7 @@ public class ImageScale8d
      * Creates a new instance.
      * @param srcImageIcon the image to scale
      */
-    public ImageScale8d(final ImageIcon srcImageIcon)
+    public ImageScale8d(final Icon srcImageIcon)
     {
         width = srcImageIcon.getIconWidth();
         height = srcImageIcon.getIconHeight();
