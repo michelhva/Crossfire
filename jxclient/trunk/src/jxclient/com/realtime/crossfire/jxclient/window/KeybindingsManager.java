@@ -137,7 +137,7 @@ public class KeybindingsManager
      * @return the key bindings or <code>null</code> if no per-character
      * bindings exist because no character is logged in
      */
-    public KeyBindings getKeyBindings(final boolean perCharacter)
+    private KeyBindings getKeyBindings(final boolean perCharacter)
     {
         return perCharacter ? characterKeyBindings : keyBindings;
     }

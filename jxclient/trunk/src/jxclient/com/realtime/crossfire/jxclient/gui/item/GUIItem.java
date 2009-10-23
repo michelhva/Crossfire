@@ -95,13 +95,13 @@ public abstract class GUIItem extends ActivatableGUIElement implements GUIScroll
      * Called when the middle mouse button was pressed.
      * @param modifiers the input event modifiers
      */
-    public abstract void button2Clicked(final int modifiers);
+    protected abstract void button2Clicked(final int modifiers);
 
     /**
      * Called when the right mouse button was pressed.
      * @param modifiers the input event modifiers
      */
-    public abstract void button3Clicked(final int modifiers);
+    protected abstract void button3Clicked(final int modifiers);
 
     /** {@inheritDoc} */
     @Override

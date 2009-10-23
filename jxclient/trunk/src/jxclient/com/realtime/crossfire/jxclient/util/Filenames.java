@@ -12,12 +12,12 @@ public class Filenames
      * Replaces "unsafe" characters in file names (see {@link
      * #UNSAFE_FILENAME_CHARACTERS}).
      */
-    public static final String REPLACEMENT_CHARACTER = "_";
+    private static final String REPLACEMENT_CHARACTER = "_";
     /**
      * Matches all chracters that are considered "unsafe" for file names. These
      * characters will be replaced with {@link #REPLACEMENT_CHARACTER}.
      */
-    public static final Pattern UNSAFE_FILENAME_CHARACTERS = Pattern.compile("[^a-zA-Z0-9_.]");
+    private static final Pattern UNSAFE_FILENAME_CHARACTERS = Pattern.compile("[^a-zA-Z0-9_.]");
 
     /**
      * Private constructor to prevent instantiation.

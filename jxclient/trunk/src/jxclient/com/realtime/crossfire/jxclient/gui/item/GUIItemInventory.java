@@ -262,7 +262,7 @@ public class GUIItemInventory extends GUIItemItem
      * Set the inventory slot to display.
      * @param index the inventory slot
      */
-    public void setIndex(final int index)
+    private void setIndex(final int index)
     {
         synchronized (sync)
         {

@@ -253,7 +253,7 @@ public class Shortcuts
      * @param index the shortcut index
      * @return the shortcut or <code>null</code> if the shortcut is unset
      */
-    public Shortcut getShortcut(final int index)
+    private Shortcut getShortcut(final int index)
     {
         try
         {
@@ -270,7 +270,7 @@ public class Shortcuts
      * @param index the shortcut index
      * @param shortcut the shortcut to set or <code>null</code> to unset
      */
-    public void setShortcut(final int index, final Shortcut shortcut)
+    private void setShortcut(final int index, final Shortcut shortcut)
     {
         while (shortcuts.size() <= index)
         {
@@ -313,7 +313,7 @@ public class Shortcuts
      * @param cast whether the spell should be cast (<code>true</code>) or
      * invoked (<code>false</code>)
      */
-    public void setSpellShortcut(final int index, final String spellName, final boolean cast)
+    private void setSpellShortcut(final int index, final String spellName, final boolean cast)
     {
         final Spell spell = spellsManager.getSpell(spellName);
         setSpellShortcut(index, spell, cast);
@@ -338,7 +338,7 @@ public class Shortcuts
      * @param index the shortcut index
      * @param command the command to execute
      */
-    public void setCommandShortcut(final int index, final String command)
+    private void setCommandShortcut(final int index, final String command)
     {
         if (command.length() <= 0)
         {

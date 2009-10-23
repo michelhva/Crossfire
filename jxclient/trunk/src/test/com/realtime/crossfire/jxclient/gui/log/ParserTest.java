@@ -402,7 +402,7 @@ public class ParserTest extends TestCase
      * @param font the font to convert
      * @param sb the string builder to use
      */
-    public static void dumpFont(final FontID font, final StringBuilder sb)
+    private static void dumpFont(final FontID font, final StringBuilder sb)
     {
         if (font == FontID.PRINT)
         {

@@ -160,7 +160,7 @@ public class SoundManager
      * @param mute Whether to mute (<code>true</code>) or unmute
      * (<code>false</code>).
      */
-    public void mute(final Sounds type, final boolean mute)
+    private void mute(final Sounds type, final boolean mute)
     {
         if (mute)
         {
@@ -190,7 +190,7 @@ public class SoundManager
      * @param muted Whether to mute (<code>true</code>) or unmute
      * (<code>false</code>).
      */
-    public void muteMusic(final boolean muted)
+    private void muteMusic(final boolean muted)
     {
         musicManager.setMuted(muted);
     }

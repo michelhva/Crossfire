@@ -408,7 +408,7 @@ public abstract class GUIText extends ActivatableGUIElement implements KeyListen
      * Inserts a character at the cursort position.
      * @param ch the character
      */
-    public void insertChar(final char ch)
+    private void insertChar(final char ch)
     {
         synchronized (syncCursor)
         {
@@ -421,7 +421,7 @@ public abstract class GUIText extends ActivatableGUIElement implements KeyListen
      * Inserts a string at the cursort position.
      * @param str the string
      */
-    public void insertString(final String str)
+    private void insertString(final String str)
     {
         synchronized (syncCursor)
         {
@@ -509,7 +509,7 @@ public abstract class GUIText extends ActivatableGUIElement implements KeyListen
     /**
      * Perform a "paste" operation from the system clipboard.
      */
-    public void paste()
+    private void paste()
     {
         Transferable content = null;
         if (selection != null)

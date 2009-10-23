@@ -115,7 +115,7 @@ public class ExperienceTable
      *
      * @return The needed experience.
      */
-    public long getExperience(final int level)
+    private long getExperience(final int level)
     {
         if (minLevel >= maxLevel)
         {

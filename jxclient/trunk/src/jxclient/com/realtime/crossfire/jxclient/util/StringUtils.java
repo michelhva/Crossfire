@@ -33,7 +33,7 @@ public class StringUtils
     /**
      * A pattern matching leading whitespace.
      */
-    public static final Pattern PATTERN_LEADING_WHITESPACE = Pattern.compile("^[ \t]+");
+    private static final Pattern PATTERN_LEADING_WHITESPACE = Pattern.compile("^[ \t]+");
 
     /**
      * Private constructor to prevent instantiation.

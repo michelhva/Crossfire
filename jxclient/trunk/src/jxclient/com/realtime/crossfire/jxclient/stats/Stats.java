@@ -330,7 +330,7 @@ public class Stats
      * @param simpleWeaponSpeed Whether <code>CS_STAT_WEAP_SP</code> is the
      * weapon speed value.
      */
-    public void setSimpleWeaponSpeed(final boolean simpleWeaponSpeed)
+    private void setSimpleWeaponSpeed(final boolean simpleWeaponSpeed)
     {
         if (this.simpleWeaponSpeed == simpleWeaponSpeed)
         {
@@ -434,7 +434,7 @@ public class Stats
      * Sets the current Title.
      * @param title The new Title content.
      */
-    public void setTitle(final String title)
+    private void setTitle(final String title)
     {
         if (this.title.equals(title))
         {
@@ -453,7 +453,7 @@ public class Stats
      * active skill for the player.
      * @param range The new content of Range.
      */
-    public void setRange(final String range)
+    private void setRange(final String range)
     {
         if (this.range.equals(range))
         {
@@ -499,7 +499,7 @@ public class Stats
      * Sets the amount of global experience.
      * @param exp The new amount of global experience.
      */
-    public void setExperience(final long exp)
+    private void setExperience(final long exp)
     {
         if (this.exp == exp)
         {

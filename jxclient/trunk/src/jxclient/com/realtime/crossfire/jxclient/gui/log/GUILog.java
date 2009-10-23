@@ -49,7 +49,7 @@ public abstract class GUILog extends GUIElement implements GUIScrollable2
     /**
      * The number of pixels to scroll.
      */
-    public static final int SCROLL_PIXEL = 12;
+    private static final int SCROLL_PIXEL = 12;
 
     /**
      * All listeners.

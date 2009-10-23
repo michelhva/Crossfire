@@ -162,7 +162,7 @@ public class Options
      * Returns the current screen's resolution.
      * @return the screen's resolution.
      */
-    public static String getScreenResolution()
+    private static String getScreenResolution()
     {
         final GraphicsEnvironment ge = GraphicsEnvironment.getLocalGraphicsEnvironment();
         final GraphicsDevice gd = ge.getDefaultScreenDevice();
