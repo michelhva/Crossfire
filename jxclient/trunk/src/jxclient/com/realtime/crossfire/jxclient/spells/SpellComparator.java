@@ -19,6 +19,7 @@
 //
 package com.realtime.crossfire.jxclient.spells;
 
+import java.io.Serializable;
 import java.util.Comparator;
 
 /**
@@ -26,8 +27,13 @@ import java.util.Comparator;
  * name.
  * @author Andreas Kirschbaum
  */
-class SpellComparator implements Comparator<Spell>
+class SpellComparator implements Comparator<Spell>, Serializable
 {
+    /**
+     * The serial version UID.
+     */
+    private static final long serialVersionUID = 1;
+
     /** {@inheritDoc} */
     @Override
     public int compare(final Spell o1, final Spell o2)
