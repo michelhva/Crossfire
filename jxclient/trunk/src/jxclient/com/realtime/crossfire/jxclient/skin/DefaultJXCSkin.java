@@ -25,7 +25,6 @@ import com.realtime.crossfire.jxclient.experience.ExperienceTable;
 import com.realtime.crossfire.jxclient.gui.gauge.GaugeUpdater;
 import com.realtime.crossfire.jxclient.gui.gui.GUIElement;
 import com.realtime.crossfire.jxclient.gui.gui.Gui;
-import com.realtime.crossfire.jxclient.gui.gui.GuiFactory;
 import com.realtime.crossfire.jxclient.gui.keybindings.KeyBindings;
 import com.realtime.crossfire.jxclient.gui.label.GUIHTMLLabel;
 import com.realtime.crossfire.jxclient.items.ItemsManager;
@@ -166,16 +165,16 @@ public class DefaultJXCSkin implements JXCSkin
      * @param skillSet the skill set for looking up skill names
      * @param expressionParser the expression parser to use
      * @param selectedResolution the resolution to use
-     * @param guiFactory the gui factory to use
+     * @param dialogs the dialogs to use
      */
-    public DefaultJXCSkin(final KeyBindings defaultKeyBindings, final OptionManager optionManager, final Stats stats, final ItemsManager itemsManager, final ExperienceTable experienceTable, final SkillSet skillSet, final ExpressionParser expressionParser, final Resolution selectedResolution, final GuiFactory guiFactory)
+    public DefaultJXCSkin(final KeyBindings defaultKeyBindings, final OptionManager optionManager, final Stats stats, final ItemsManager itemsManager, final ExperienceTable experienceTable, final SkillSet skillSet, final ExpressionParser expressionParser, final Resolution selectedResolution, final Dialogs dialogs)
     {
         this.defaultKeyBindings = defaultKeyBindings;
         this.optionManager = optionManager;
         this.experienceTable = experienceTable;
         this.selectedResolution = selectedResolution;
         gaugeUpdaterParser = new GaugeUpdaterParser(stats, itemsManager, skillSet);
-        dialogs = new Dialogs(guiFactory);
+        this.dialogs = dialogs;
         commandParser = new CommandParser(dialogs, itemsManager, expressionParser, definedGUIElements);
     }
 
