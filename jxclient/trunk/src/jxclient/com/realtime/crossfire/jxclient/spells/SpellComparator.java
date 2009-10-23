@@ -27,7 +27,7 @@ import java.util.Comparator;
  * name.
  * @author Andreas Kirschbaum
  */
-class SpellComparator implements Comparator<Spell>, Serializable
+public class SpellComparator implements Comparator<Spell>, Serializable
 {
     /**
      * The serial version UID.
