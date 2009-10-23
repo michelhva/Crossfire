@@ -157,6 +157,8 @@ public class JXCWindow extends JFrame
      */
     private final CommandQueue commandQueue;
 
+    private final MouseTracker mouseTracker;
+
     private final Object semaphoreDrawing = new Object();
 
     private final Object semaphoreChangeGui = new Object();
@@ -575,9 +577,10 @@ public class JXCWindow extends JFrame
         new PoisonWatcher(stats, server);
         new ActiveSkillWatcher(stats, server);
         setDefaultCloseOperation(DO_NOTHING_ON_CLOSE);
-        guiManager = new GuiManager(this, debugGui, semaphoreDrawing, semaphoreRedraw, new TooltipManager(this), settings, server, macros);
+        mouseTracker = new MouseTracker(debugGui);
+        guiManager = new GuiManager(this, semaphoreDrawing, semaphoreRedraw, new TooltipManager(this), settings, server, macros, mouseTracker);
         final ScriptManager scriptManager = new ScriptManager(commandQueue, server, stats, itemsManager, spellsManager, mapUpdater, skillSet);
-        guiManager.init(scriptManager, commandQueue, server, optionManager);
+        guiManager.init(this, scriptManager, commandQueue, server, optionManager, debugGui ? mouseTracker : null);
         keybindingsManager = new KeybindingsManager(guiManager.getCommands(), guiManager, macros);
         shortcutsManager = new ShortcutsManager(commandQueue, spellsManager);
         keyHandler = new KeyHandler(debugKeyboard, keybindingsManager, commandQueue, guiManager.getWindowRenderer(), keyHandlerListener);
@@ -730,6 +733,8 @@ public class JXCWindow extends JFrame
         {
             changeGUI(DISABLE_START_GUI ? GuiState.METASERVER : GuiState.START);
         }
+        addMouseListener(mouseTracker);
+        addMouseMotionListener(mouseTracker);
         guiManager.init3();
     }
 
@@ -810,7 +815,7 @@ public class JXCWindow extends JFrame
             skinSource = new JXCSkinClassSource("com/realtime/crossfire/jxclient/skins/"+skinName);
         }
         final JXCSkinLoader newSkin = new JXCSkinLoader(itemsManager, spellsManager, facesManager, stats, mapUpdater, defaultKeyBindings, optionManager, experienceTable, skillSet);
-        return newSkin.load(skinSource, server, this, guiManager.getTooltipManager(), guiManager.getWindowRenderer(), guiManager.mouseTracker, metaserverModel, commandQueue, resolution, shortcutsManager.getShortcuts(), guiManager.getCommands(), currentSpellManager, guiManager, debugGui, macros);
+        return newSkin.load(skinSource, server, this, guiManager.getTooltipManager(), guiManager.getWindowRenderer(), mouseTracker, metaserverModel, commandQueue, resolution, shortcutsManager.getShortcuts(), guiManager.getCommands(), currentSpellManager, guiManager, debugGui, macros);
     }
 
     /**

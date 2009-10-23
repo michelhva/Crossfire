@@ -32,19 +32,9 @@ import javax.swing.Timer;
 public class GuiManager
 {
     /**
-     * Whether gui debugging is active.
-     */
-    private final boolean debugGui;
-
-    /**
      * The semaphore used to synchronized drawing operations.
      */
     private final Object semaphoreDrawing;
-
-    /**
-     * The associated {@link JXCWindow} instance.
-     */
-    private final JXCWindow window;
 
     /**
      * The currently active skin. Set to <code>null</code> if no skin is set.
@@ -99,11 +89,6 @@ public class GuiManager
      * Whether the currently shown query dialog is the character name prompt.
      */
     private boolean currentQueryDialogIsNamePrompt = false;
-
-    /**
-     * The mouse tracker.
-     */
-    public final MouseTracker mouseTracker;
 
     /**
      * The commands instance for this window.
@@ -308,34 +293,31 @@ public class GuiManager
     /**
      * Creates a new instance.
      * @param window the associated window
-     * @param debugGui whether gui debugging is active
      * @param semaphoreDrawing the semaphore to use for drawing operations
      * @param semaphoreRedraw the semaphore to use for redrawing operations
      * @param tooltipManager the tooltip manager to update
      * @param settings the settings to use
      * @param server the crossfire server connection to monitor
      * @param macros the macros instance to use
+     * @param mouseTracker the mouse tracker to use
      */
-    public GuiManager(final JXCWindow window, final boolean debugGui, final Object semaphoreDrawing, final Object semaphoreRedraw, final TooltipManager tooltipManager, final Settings settings, final CrossfireServerConnection server, final Macros macros)
+    public GuiManager(final JXCWindow window, final Object semaphoreDrawing, final Object semaphoreRedraw, final TooltipManager tooltipManager, final Settings settings, final CrossfireServerConnection server, final Macros macros, final MouseTracker mouseTracker)
     {
-        this.debugGui = debugGui;
         this.semaphoreDrawing = semaphoreDrawing;
-        this.window = window;
         this.tooltipManager = tooltipManager;
         this.settings = settings;
         this.server = server;
         this.macros = macros;
-        mouseTracker = new MouseTracker(debugGui);
         windowRenderer = new JXCWindowRenderer(window, mouseTracker, semaphoreRedraw, server);
         window.addConnectionStateListener(guiStateListener);
         mouseTracker.init(windowRenderer);
     }
 
     @Deprecated
-    public void init(final ScriptManager scriptManager, final CommandQueue commandQueue, final CrossfireServerConnection server, final OptionManager optionManager)
+    public void init(final JXCWindow window, final ScriptManager scriptManager, final CommandQueue commandQueue, final CrossfireServerConnection server, final OptionManager optionManager, final MouseTracker mouseTracker)
     {
         commands = new Commands(window, windowRenderer, commandQueue, server, scriptManager, optionManager, this, macros);
-        guiFactory = new GuiFactory(debugGui ? mouseTracker : null, commands, this, macros);
+        guiFactory = new GuiFactory(mouseTracker, commands, this, macros);
         windowRenderer.setCurrentGui(guiFactory.newGui());
         queryDialog = guiFactory.newGui();
         keybindDialog = guiFactory.newGui();
@@ -601,8 +583,6 @@ public class GuiManager
     @Deprecated
     public void init3()
     {
-        window.addMouseListener(mouseTracker);
-        window.addMouseMotionListener(mouseTracker);
         timer.start();
     }
 
