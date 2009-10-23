@@ -176,7 +176,7 @@ public class DefaultJXCSkin implements JXCSkin
         this.selectedResolution = selectedResolution;
         gaugeUpdaterParser = new GaugeUpdaterParser(stats, itemsManager, skillSet);
         dialogs = new Dialogs(guiFactory);
-        commandParser = newCommandParser(itemsManager, expressionParser);
+        commandParser = new CommandParser(dialogs, itemsManager, expressionParser, definedGUIElements);
     }
 
     /** {@inheritDoc} */
@@ -477,11 +477,6 @@ public class DefaultJXCSkin implements JXCSkin
     {
         definedGUIElements.insert(guiElement.getName(), guiElement);
         guiElements.add(guiElement);
-    }
-
-    public CommandParser newCommandParser(final ItemsManager itemsManager, final ExpressionParser expressionParser)
-    {
-        return new CommandParser(dialogs, itemsManager, expressionParser, definedGUIElements);
     }
 
     public Resolution getSelectedResolution()
