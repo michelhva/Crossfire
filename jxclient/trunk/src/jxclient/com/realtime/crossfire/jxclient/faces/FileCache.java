@@ -24,6 +24,7 @@ import com.realtime.crossfire.jxclient.util.Images;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;
+import javax.swing.Icon;
 import javax.swing.ImageIcon;
 
 /**
@@ -106,7 +107,7 @@ public class FileCache implements ImageCache
      * @param faceChecksum the checksum to save
      * @param imageIcon the image icon to store
      */
-    public void save(final String faceName, final int faceChecksum, final ImageIcon imageIcon)
+    public void save(final String faceName, final int faceChecksum, final Icon imageIcon)
     {
         Images.saveImageIcon(getImageFileName(faceName, faceChecksum), imageIcon);
     }

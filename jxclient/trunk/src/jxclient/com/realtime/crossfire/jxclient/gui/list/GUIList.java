@@ -24,6 +24,7 @@ import com.realtime.crossfire.jxclient.gui.gui.GUIElement;
 import com.realtime.crossfire.jxclient.gui.gui.TooltipManager;
 import com.realtime.crossfire.jxclient.gui.item.GUIItemItem;
 import com.realtime.crossfire.jxclient.window.JXCWindowRenderer;
+import java.awt.Adjustable;
 import java.awt.AlphaComposite;
 import java.awt.Color;
 import java.awt.Composite;
@@ -34,7 +35,6 @@ import java.awt.Transparency;
 import java.awt.event.MouseEvent;
 import javax.swing.DefaultListModel;
 import javax.swing.JList;
-import javax.swing.JScrollBar;
 import javax.swing.JScrollPane;
 import javax.swing.JViewport;
 import javax.swing.ListCellRenderer;
@@ -137,7 +137,7 @@ public abstract class GUIList extends ActivatableGUIElement
 
         synchronized (bufferedImageSync)
         {
-            final Graphics2D g = createBufferGraphics();
+            final Graphics g = createBufferGraphics();
             try
             {
                 render(g);
@@ -333,7 +333,7 @@ public abstract class GUIList extends ActivatableGUIElement
     {
         synchronized (getTreeLock())
         {
-            final JScrollBar scrollBar = scrollPane.getVerticalScrollBar();
+            final Adjustable scrollBar = scrollPane.getVerticalScrollBar();
             if (distance > 0)
             {
                 return scrollBar.getValue() < scrollBar.getMaximum()-scrollBar.getVisibleAmount();
@@ -357,7 +357,7 @@ public abstract class GUIList extends ActivatableGUIElement
     {
         synchronized (getTreeLock())
         {
-            final JScrollBar scrollBar = scrollPane.getVerticalScrollBar();
+            final Adjustable scrollBar = scrollPane.getVerticalScrollBar();
             final int value = scrollBar.getValue()+distance*cellHeight;
             scrollBar.setValue(value);
             final int index = list.getSelectedIndex();

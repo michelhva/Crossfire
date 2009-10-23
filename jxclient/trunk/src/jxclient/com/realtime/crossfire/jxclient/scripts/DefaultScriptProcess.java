@@ -43,7 +43,7 @@ import java.io.InputStreamReader;
 import java.io.OutputStreamWriter;
 import java.io.UnsupportedEncodingException;
 import java.util.ArrayList;
-import java.util.List;
+import java.util.Collection;
 
 /**
  * Default implementation for {@link ScriptProcess}es.
@@ -115,7 +115,7 @@ public class DefaultScriptProcess extends Thread implements ScriptProcess
     /**
      * The {@link ScriptProcessListener}s to notify.
      */
-    private final List<ScriptProcessListener> scriptProcessListeners = new ArrayList<ScriptProcessListener>(1);
+    private final Collection<ScriptProcessListener> scriptProcessListeners = new ArrayList<ScriptProcessListener>(1);
 
     /**
      * The {@link PacketWatcher} to process "watch" commands.
@@ -588,7 +588,7 @@ public class DefaultScriptProcess extends Thread implements ScriptProcess
         {
             for (int i = CrossfireStatsListener.CS_STAT_SKILLINFO; i < CrossfireStatsListener.CS_STAT_SKILLINFO+CrossfireStatsListener.CS_NUM_SKILLS; i++)
             {
-                final Skill skill = skillSet.getSkill(i);
+                final Object skill = skillSet.getSkill(i);
                 if (skill != null)
                 {
                     commandSent("request skills "+i+" "+skill);

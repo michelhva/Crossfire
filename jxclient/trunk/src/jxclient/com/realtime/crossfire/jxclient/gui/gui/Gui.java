@@ -29,11 +29,12 @@ import com.realtime.crossfire.jxclient.window.GuiManager;
 import com.realtime.crossfire.jxclient.window.MouseTracker;
 import com.realtime.crossfire.jxclient.window.RendererGuiState;
 import java.awt.Color;
+import java.awt.Component;
 import java.awt.Graphics;
 import java.awt.event.KeyEvent;
+import java.util.Collection;
 import java.util.EnumSet;
 import java.util.HashSet;
-import java.util.List;
 import java.util.Set;
 import java.util.concurrent.CopyOnWriteArrayList;
 
@@ -55,7 +56,7 @@ public class Gui
     /**
      * The list of {@link GUIElement}s comprising this gui.
      */
-    private final List<GUIElement> visibleElements = new CopyOnWriteArrayList<GUIElement>();
+    private final Collection<GUIElement> visibleElements = new CopyOnWriteArrayList<GUIElement>();
 
     /**
      * The key bindings for this gui.
@@ -70,7 +71,7 @@ public class Gui
     /**
      * The gui states that do not show this dialog.
      */
-    private final Set<RendererGuiState> hideInStates = EnumSet.noneOf(RendererGuiState.class);
+    private final Collection<RendererGuiState> hideInStates = EnumSet.noneOf(RendererGuiState.class);
 
     /**
      * If non-<code>null</code>, this element is always active. No other
@@ -231,7 +232,7 @@ public class Gui
     {
         if (mouseTracker != null)
         {
-            final GUIElement mouseElement = mouseTracker.getMouseElement();
+            final Component mouseElement = mouseTracker.getMouseElement();
             final long t0 = System.currentTimeMillis();
 
             hasChangedElements = false;
@@ -295,7 +296,7 @@ public class Gui
      */
     public void activateDefaultElement()
     {
-        final GUIElement defaultElement = getDefaultElement();
+        final Object defaultElement = getDefaultElement();
         if (defaultElement != null && defaultElement instanceof ActivatableGUIElement)
         {
             final ActivatableGUIElement activatableDefaultElement = (ActivatableGUIElement)defaultElement;
@@ -311,7 +312,7 @@ public class Gui
     public <T extends GUIElement> Set<T> getElements(final Class<T> class_)
     {
         final Set<T> result = new HashSet<T>(16);
-        for (final GUIElement element : visibleElements)
+        for (final Object element : visibleElements)
         {
             if (class_.isAssignableFrom(element.getClass()))
             {
@@ -330,7 +331,7 @@ public class Gui
      */
     public <T extends GUIElement> T getFirstElementEndingWith(final Class<T> class_, final String ending)
     {
-        for (final GUIElement element : visibleElements)
+        for (final Component element : visibleElements)
         {
             if (class_.isAssignableFrom(element.getClass()) && element.getName().endsWith(ending))
             {
@@ -350,7 +351,7 @@ public class Gui
      */
     public <T extends GUIElement> T getFirstElementNotEndingWith(final Class<T> class_, final String ending)
     {
-        for (final GUIElement element : visibleElements)
+        for (final Component element : visibleElements)
         {
             if (class_.isAssignableFrom(element.getClass()) && !element.getName().endsWith(ending))
             {
@@ -368,7 +369,7 @@ public class Gui
      */
     public <T extends GUIElement> T getFirstElement(final Class<T> class_)
     {
-        for (final GUIElement element : visibleElements)
+        for (final Object element : visibleElements)
         {
             if (class_.isAssignableFrom(element.getClass()))
             {
@@ -599,7 +600,7 @@ public class Gui
             return false;
         }
 
-        final GUIText textArea = (GUIText)activeElement;
+        final Component textArea = (GUIText)activeElement;
         if (!textArea.getName().equals("command"))
         {
             return false;
@@ -618,7 +619,7 @@ public class Gui
      */
     public <T extends GUIElement> T getFirstElement(final Class<T> class_, final String name)
     {
-        for (final GUIElement element : visibleElements)
+        for (final Component element : visibleElements)
         {
             if (class_.isAssignableFrom(element.getClass())
             && element.getName().equals(name))

@@ -25,6 +25,7 @@ import com.realtime.crossfire.jxclient.server.CrossfireSpellListener;
 import com.realtime.crossfire.jxclient.window.GuiStateListener;
 import com.realtime.crossfire.jxclient.window.JXCWindow;
 import java.util.ArrayList;
+import java.util.Collection;
 import java.util.Collections;
 import java.util.Comparator;
 import java.util.HashMap;
@@ -50,7 +51,7 @@ public class SpellsManager
      */
     private final Map<String, Spell> unknownSpells = new HashMap<String, Spell>();
 
-    private final List<SpellsManagerListener> listeners = new ArrayList<SpellsManagerListener>();
+    private final Collection<SpellsManagerListener> listeners = new ArrayList<SpellsManagerListener>();
 
     /**
      * A {@link Comparator} to compare {@link Spell} instances by spell path

@@ -25,11 +25,10 @@ import com.realtime.crossfire.jxclient.server.CrossfireMap2Command;
 import com.realtime.crossfire.jxclient.server.CrossfireServerConnection;
 import com.realtime.crossfire.jxclient.server.CrossfireTickListener;
 import java.util.ArrayList;
+import java.util.Collection;
 import java.util.HashMap;
 import java.util.HashSet;
-import java.util.List;
 import java.util.Map;
-import java.util.Set;
 
 /**
  * Manages a set of animated map squares.
@@ -66,7 +65,7 @@ public class CfMapAnimations
      * The {@link AnimationState} instances that have been added but not yet
      * received a "tick" value.
      */
-    private final Set<AnimationState> pendingTickUpdates = new HashSet<AnimationState>();
+    private final Collection<AnimationState> pendingTickUpdates = new HashSet<AnimationState>();
 
     /**
      * The listener for receiving "tick" commands.
@@ -223,7 +222,7 @@ public class CfMapAnimations
      */
     public void tick(final int tickNo)
     {
-        final List<Map.Entry<Location, AnimationState>> animationsToUpdate;
+        final Collection<Map.Entry<Location, AnimationState>> animationsToUpdate;
         synchronized (sync)
         {
             for (final AnimationState animationState : pendingTickUpdates)

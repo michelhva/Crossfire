@@ -19,7 +19,7 @@
 //
 package com.realtime.crossfire.jxclient.faces;
 
-import javax.swing.ImageIcon;
+import javax.swing.Icon;
 
 /**
  * A <code>Face</code> represents one image received from a Crossfire server.
@@ -87,7 +87,7 @@ public class Face
     public void setFaceImages(final FaceImages faceImages)
     {
         this.faceImages = faceImages;
-        final ImageIcon imageIcon = faceImages.getOriginalImageIcon();
+        final Icon imageIcon = faceImages.getOriginalImageIcon();
         final int width = imageIcon.getIconWidth();
         final int height = imageIcon.getIconHeight();
         tileWidth = (width+SQUARE_SIZE-1)/SQUARE_SIZE;

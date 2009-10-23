@@ -138,12 +138,12 @@ public class GUIItemInventoryList extends GUIItemList
     {
         synchronized (getTreeLock())
         {
-            final List<CfItem> inventory = itemsManager.getInventory();
+            final Collection<CfItem> inventory = itemsManager.getInventory();
             final int newSize = inventory.size();
             final int oldSize = resizeElements(newSize);
             for (int i = oldSize; i < newSize; i++)
             {
-                final GUIItemInventory item = itemInventoryFactory.newItemInventory(i);
+                final GUIElement item = itemInventoryFactory.newItemInventory(i);
                 addElement(item);
                 item.setChangedListener(itemChangedListener);
                 assert item.isElementVisible();

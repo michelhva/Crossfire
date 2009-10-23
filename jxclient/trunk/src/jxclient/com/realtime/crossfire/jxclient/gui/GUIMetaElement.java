@@ -31,9 +31,9 @@ import java.awt.Color;
 import java.awt.Font;
 import java.awt.Graphics;
 import java.awt.Graphics2D;
+import java.awt.Image;
 import java.awt.Transparency;
 import java.awt.event.MouseEvent;
-import java.awt.image.BufferedImage;
 
 /**
  * Display a Crossfire server entry.
@@ -56,7 +56,7 @@ public class GUIMetaElement extends ActivatableGUIElement implements GUIScrollab
      * An image to draw before the server description. May be <code>null</code>
      * to draw no image.
      */
-    private final BufferedImage tcpImage;
+    private final Image tcpImage;
 
     /**
      * The font to use.
@@ -117,7 +117,7 @@ public class GUIMetaElement extends ActivatableGUIElement implements GUIScrollab
      * @param format the format used to display metaserver instances
      * @param tooltip the format used for displaying tooltips
      */
-    public GUIMetaElement(final TooltipManager tooltipManager, final JXCWindowRenderer windowRenderer, final MetaserverModel metaserverModel, final String name, final int w, final int h, final BufferedImage tcpImage, final Font font, final int defaultIndex, final String format, final String tooltip)
+    public GUIMetaElement(final TooltipManager tooltipManager, final JXCWindowRenderer windowRenderer, final MetaserverModel metaserverModel, final String name, final int w, final int h, final Image tcpImage, final Font font, final int defaultIndex, final String format, final String tooltip)
     {
         super(tooltipManager, windowRenderer, name, 0, 0, w, h, Transparency.TRANSLUCENT);
         this.metaserverModel = metaserverModel;

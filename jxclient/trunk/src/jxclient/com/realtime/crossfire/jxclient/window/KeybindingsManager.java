@@ -148,7 +148,7 @@ public class KeybindingsManager
      * @param hostname the character's hostname
      * @param character the character's name
      */
-    public void loadPerCharacterBindings(final String hostname, final String character)
+    public void loadPerCharacterBindings(final CharSequence hostname, final CharSequence character)
     {
         characterKeyBindings = new KeyBindings(Filenames.getKeybindingsFile(hostname, character), commands, guiManager, macros);
         try

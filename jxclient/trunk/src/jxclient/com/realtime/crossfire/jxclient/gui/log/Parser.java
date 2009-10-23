@@ -113,7 +113,7 @@ public class Parser
      * @param defaultColor the default color to use
      * @param buffer the buffer to update
      */
-    public void parse(final String text, final Color defaultColor, final Buffer buffer)
+    public void parse(final CharSequence text, final Color defaultColor, final Buffer buffer)
     {
         if (text == null) throw new IllegalArgumentException();
         if (buffer == null) throw new IllegalArgumentException();
@@ -137,7 +137,7 @@ public class Parser
      * @param color the color to use
      * @param buffer the buffer to update
      */
-    public void parseWithoutMediaTags(final String text, final Color color, final Buffer buffer)
+    public void parseWithoutMediaTags(final CharSequence text, final Color color, final Buffer buffer)
     {
         if (text == null) throw new IllegalArgumentException();
         if (buffer == null) throw new IllegalArgumentException();
@@ -340,7 +340,7 @@ public class Parser
             return;
         }
 
-        final String newText;
+        final CharSequence newText;
         final Segment prevSegment = line.getLastSegment();
         if (prevSegment != null
         && prevSegment.isBold() == bold

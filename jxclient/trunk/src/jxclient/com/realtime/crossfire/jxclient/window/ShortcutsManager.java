@@ -53,7 +53,7 @@ public class ShortcutsManager
      * @param hostname the current hostname
      * @param character the current character name
      */
-    public void loadShortcuts(final String hostname, final String character)
+    public void loadShortcuts(final CharSequence hostname, final CharSequence character)
     {
         final File file;
         try

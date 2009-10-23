@@ -25,7 +25,7 @@ import java.awt.Color;
 import java.awt.Font;
 import java.awt.Graphics;
 import java.awt.Graphics2D;
-import java.awt.geom.Rectangle2D;
+import java.awt.geom.RectangularShape;
 import java.awt.image.BufferedImage;
 
 /**
@@ -104,7 +104,7 @@ public class GUITextGauge extends GUIGauge
         g.setColor(color);
         g.setFont(font);
         final String text = labelText;
-        final Rectangle2D rect = font.getStringBounds(text, g2.getFontRenderContext());
+        final RectangularShape rect = font.getStringBounds(text, g2.getFontRenderContext());
         g.drawString(text, (int)Math.round((getWidth()-rect.getWidth())/2), (int)Math.round((getHeight()-rect.getMaxY()-rect.getMinY()))/2);
     }
 

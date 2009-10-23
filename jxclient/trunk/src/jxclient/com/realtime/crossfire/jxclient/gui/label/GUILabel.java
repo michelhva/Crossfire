@@ -24,7 +24,7 @@ import com.realtime.crossfire.jxclient.window.JXCWindowRenderer;
 import java.awt.Color;
 import java.awt.Font;
 import java.awt.Graphics2D;
-import java.awt.geom.Rectangle2D;
+import java.awt.geom.RectangularShape;
 import java.awt.image.BufferedImage;
 
 /**
@@ -142,7 +142,7 @@ public abstract class GUILabel extends AbstractLabel
         g.setBackground(new Color(0, 0, 0, 0.0f));
         g.setFont(textFont);
         g.setColor(textColor);
-        final Rectangle2D rect = textFont.getStringBounds(text, g.getFontRenderContext());
+        final RectangularShape rect = textFont.getStringBounds(text, g.getFontRenderContext());
         final int y = y0+(int)Math.round((h0-rect.getMaxY()-rect.getMinY()))/2;
         switch (textAlignment)
         {

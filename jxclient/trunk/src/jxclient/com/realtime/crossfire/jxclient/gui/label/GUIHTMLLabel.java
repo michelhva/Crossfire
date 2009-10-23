@@ -26,12 +26,13 @@ import java.awt.Font;
 import java.awt.Graphics;
 import java.awt.Graphics2D;
 import java.awt.font.FontRenderContext;
-import java.awt.geom.Rectangle2D;
+import java.awt.geom.RectangularShape;
 import java.awt.image.BufferedImage;
 import java.io.IOException;
 import java.io.Reader;
 import java.io.StringReader;
 import java.util.regex.Pattern;
+import javax.swing.text.html.HTMLEditorKit;
 import javax.swing.text.html.parser.ParserDelegator;
 
 /**
@@ -119,7 +120,7 @@ public class GUIHTMLLabel extends AbstractLabel
         g.setColor(color);
 
         final Reader reader = new StringReader(getText());
-        final InternalHTMLRenderer renderer = new InternalHTMLRenderer(font, color, g, 0, font.getSize(), autoResize ? AUTO_BORDER_SIZE : 0);
+        final HTMLEditorKit.ParserCallback renderer = new InternalHTMLRenderer(font, color, g, 0, font.getSize(), autoResize ? AUTO_BORDER_SIZE : 0);
         final ParserDelegator parserDelegator = new ParserDelegator();
         try
         {
@@ -151,7 +152,7 @@ public class GUIHTMLLabel extends AbstractLabel
                 int height = 0;
                 for (final String str : PATTERN_LINE_BREAK.split(getText(), -1))
                 {
-                    final Rectangle2D size = font.getStringBounds(str, context);
+                    final RectangularShape size = font.getStringBounds(str, context);
                     width = Math.max(width, (int)size.getWidth());
                     height += (int)size.getHeight();
                 }

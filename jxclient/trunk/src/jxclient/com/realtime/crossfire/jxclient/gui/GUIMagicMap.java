@@ -144,7 +144,7 @@ public class GUIMagicMap extends GUIElement
             int datapos = pos;
             synchronized (bufferedImageSync)
             {
-                final Graphics2D g = createBufferGraphics();
+                final Graphics g = createBufferGraphics();
                 try
                 {
                     final int offsetX = playerX-px*TILE_SIZE;
@@ -242,7 +242,7 @@ public class GUIMagicMap extends GUIElement
             final int y0 = map.getOffsetY();
             synchronized (bufferedImageSync)
             {
-                final Graphics2D g = createBufferGraphics();
+                final Graphics g = createBufferGraphics();
                 try
                 {
                     for (final CfMapSquare mapSquare : changedSquares)
@@ -274,7 +274,7 @@ public class GUIMagicMap extends GUIElement
         {
             synchronized (bufferedImageSync)
             {
-                final Graphics2D g = createBufferGraphics();
+                final Graphics g = createBufferGraphics();
                 try
                 {
                     g.setColor(Color.BLACK);
@@ -380,7 +380,7 @@ public class GUIMagicMap extends GUIElement
      * @param x1 the right edge to redraw (exclusive)
      * @param y1 the bottom edge to redraw (exclusive)
      */
-    private void redrawTiles(final Graphics2D g, final CfMap map, final int x0, final int y0, final int x1, final int y1)
+    private void redrawTiles(final Graphics g, final CfMap map, final int x0, final int y0, final int x1, final int y1)
     {
         for (int x = x0; x < x1; x++)
         {
@@ -397,7 +397,7 @@ public class GUIMagicMap extends GUIElement
      * @param x the x-coordinate of the square to clear
      * @param y the y-coordinate of the square to clear
      */
-    private void cleanSquare(final Graphics2D g, final int x, final int y)
+    private void cleanSquare(final Graphics g, final int x, final int y)
     {
         g.setColor(Color.BLACK);
         g.fillRect(x*TILE_SIZE+offsetX, y*TILE_SIZE+offsetY, TILE_SIZE, TILE_SIZE);
@@ -410,7 +410,7 @@ public class GUIMagicMap extends GUIElement
      * @param x the x-coordinate of the map tile to redraw
      * @param y the y-coordinate of the map tile to redraw
      */
-    private void redrawSquare(final Graphics2D g, final CfMap map, final int x, final int y)
+    private void redrawSquare(final Graphics g, final CfMap map, final int x, final int y)
     {
         cleanSquare(g, x, y);
         for (int layer = 0; layer < CrossfireMap2Command.NUM_LAYERS; layer++)
@@ -438,7 +438,7 @@ public class GUIMagicMap extends GUIElement
      * @param y the y coordinate of the square to redraw
      * @param layer the layer to redraw
      */
-    private void redrawSquare(final Graphics2D g, final CfMap map, final int x, final int y, final int layer)
+    private void redrawSquare(final Graphics g, final CfMap map, final int x, final int y, final int layer)
     {
         final int px = x*TILE_SIZE+offsetX;
         final int py = y*TILE_SIZE+offsetY;
@@ -477,7 +477,7 @@ public class GUIMagicMap extends GUIElement
      * Paints the player location.
      * @param g the graphics to paint to
      */
-    private void markPlayer(final Graphics2D g)
+    private void markPlayer(final Graphics g)
     {
         g.setColor(Color.RED);
         g.fillRect(playerX, playerY, TILE_SIZE, TILE_SIZE);

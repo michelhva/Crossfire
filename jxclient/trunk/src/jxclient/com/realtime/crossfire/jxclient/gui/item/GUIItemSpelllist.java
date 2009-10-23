@@ -34,7 +34,8 @@ import com.realtime.crossfire.jxclient.window.JXCWindowRenderer;
 import java.awt.Color;
 import java.awt.Graphics;
 import java.awt.Graphics2D;
-import java.awt.image.BufferedImage;
+import java.awt.Image;
+import java.util.Collection;
 import java.util.List;
 
 public class GUIItemSpelllist extends GUIItem
@@ -71,7 +72,7 @@ public class GUIItemSpelllist extends GUIItem
 
     private final Color selectorColor;
 
-    private final BufferedImage selectorImage;
+    private final Image selectorImage;
 
     private final CurrentSpellManager currentSpellManager;
 
@@ -144,7 +145,7 @@ public class GUIItemSpelllist extends GUIItem
         }
     };
 
-    public GUIItemSpelllist(final TooltipManager tooltipManager, final JXCWindowRenderer windowRenderer, final CommandQueue commandQueue, final String name, final int x, final int y, final int w, final int h, final Color selectorColor, final BufferedImage selectorImage, final int defaultIndex, final FacesManager facesManager, final SpellsManager spellsManager, final CurrentSpellManager currentSpellManager)
+    public GUIItemSpelllist(final TooltipManager tooltipManager, final JXCWindowRenderer windowRenderer, final CommandQueue commandQueue, final String name, final int x, final int y, final int w, final int h, final Color selectorColor, final Image selectorImage, final int defaultIndex, final FacesManager facesManager, final SpellsManager spellsManager, final CurrentSpellManager currentSpellManager)
     {
         super(tooltipManager, windowRenderer, name, x, y, w, h);
         this.commandQueue = commandQueue;
@@ -184,7 +185,7 @@ public class GUIItemSpelllist extends GUIItem
         }
         else if (distance > 0)
         {
-            final List<Spell> list = spellsManager.getSpellList();
+            final Collection<Spell> list = spellsManager.getSpellList();
             return index+distance < list.size();
         }
         else

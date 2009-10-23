@@ -26,6 +26,7 @@ import java.awt.event.InputEvent;
 import java.awt.event.KeyEvent;
 import java.io.IOException;
 import java.io.Writer;
+import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.util.Arrays;
 import java.util.Date;
@@ -74,7 +75,7 @@ public class KeyHandler
     /**
      * A formatter for timestamps.
      */
-    private final SimpleDateFormat simpleDateFormat = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss,SSS ");
+    private final DateFormat simpleDateFormat = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss,SSS ");
 
     private final boolean[] keyShift = { false, false, false, false };
 
@@ -371,7 +372,7 @@ public class KeyHandler
      *
      * @param keyEvent The key event to process.
      */
-    private void updateModifiers(final KeyEvent keyEvent)
+    private void updateModifiers(final InputEvent keyEvent)
     {
         final int mask = keyEvent.getModifiersEx();
         setKeyShift(KEY_SHIFT_SHIFT, (mask&InputEvent.SHIFT_DOWN_MASK) != 0);
@@ -406,7 +407,7 @@ public class KeyHandler
      * Writes a message to the keyboard debug.
      * @param message the message to write
      */
-    private void debugKeyboardWrite(final String message)
+    private void debugKeyboardWrite(final CharSequence message)
     {
         if (debugKeyboard == null)
         {

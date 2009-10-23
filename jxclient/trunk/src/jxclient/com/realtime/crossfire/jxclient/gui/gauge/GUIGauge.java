@@ -25,8 +25,10 @@ import com.realtime.crossfire.jxclient.window.JXCWindowRenderer;
 import java.awt.Color;
 import java.awt.Graphics;
 import java.awt.Graphics2D;
+import java.awt.Image;
 import java.awt.Transparency;
 import java.awt.image.BufferedImage;
+import java.awt.image.RenderedImage;
 
 /**
  * Displays a value as a graphical gauge that's filling state depends on the
@@ -56,7 +58,7 @@ public class GUIGauge extends GUIElement implements GUIGaugeListener
     /**
      * The image representing an empty gauge.
      */
-    private final BufferedImage emptyImage;
+    private final Image emptyImage;
 
     /**
      * The gauge's orientation.
@@ -122,7 +124,7 @@ public class GUIGauge extends GUIElement implements GUIGaugeListener
      * @throws IllegalArgumentException if <code>image</code> is not
      * <code>null</code> and it's size is not <code>w</code>x<code>h</code>
      */
-    private static void checkSize(final BufferedImage image, final String name, final int w, final int h)
+    private static void checkSize(final RenderedImage image, final String name, final int w, final int h)
     {
         if (image == null)
         {

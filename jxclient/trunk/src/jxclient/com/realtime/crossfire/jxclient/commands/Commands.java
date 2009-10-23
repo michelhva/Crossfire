@@ -82,7 +82,7 @@ public class Commands
      *
      * @param commands The commands to execute.
      */
-    public void executeCommand(final String commands)
+    public void executeCommand(final CharSequence commands)
     {
         String cmds = StringUtils.trimLeading(commands);
         while (cmds.length() > 0)

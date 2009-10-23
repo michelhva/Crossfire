@@ -21,8 +21,9 @@ package com.realtime.crossfire.jxclient.gui.log;
 
 import java.awt.Font;
 import java.awt.font.FontRenderContext;
-import java.awt.geom.Rectangle2D;
+import java.awt.geom.RectangularShape;
 import java.util.ArrayList;
+import java.util.Collection;
 import java.util.Collections;
 import java.util.Iterator;
 import java.util.List;
@@ -44,7 +45,7 @@ public class Buffer
     /**
      * The listeners to notify about changes.
      */
-    private final List<BufferListener> listeners = new ArrayList<BufferListener>();
+    private final Collection<BufferListener> listeners = new ArrayList<BufferListener>();
 
     /**
      * The {@link Fonts} instance for looking up fonts.
@@ -267,7 +268,7 @@ public class Buffer
         {
             final String text = segment.getText();
             final Font font = segment.getFont(fonts);
-            final Rectangle2D rect = font.getStringBounds(text, context);
+            final RectangularShape rect = font.getStringBounds(text, context);
             final int width = (int)Math.round(rect.getWidth());
             if (x != 0 && x+width > renderWidth)
             {

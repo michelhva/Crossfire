@@ -21,6 +21,7 @@ package com.realtime.crossfire.jxclient.gui.gauge;
 
 import com.realtime.crossfire.jxclient.gui.gui.GUIElement;
 import java.awt.Graphics;
+import java.awt.Image;
 import java.awt.image.BufferedImage;
 
 /**
@@ -77,7 +78,7 @@ public class GaugeState
     /**
      * The image for painting the "filled" area.
      */
-    private BufferedImage filledPicture = null;
+    private Image filledPicture = null;
 
     /**
      * Creates a new instance.
@@ -107,7 +108,7 @@ public class GaugeState
         final int newFilledY = orientation.getY();
         final int newFilledW = orientation.getW();
         final int newFilledH = orientation.getH();
-        final BufferedImage newFilledPicture = !orientation.isValid() ? null : orientation.isNegativeImage() ? negativeImage : fullImage;
+        final Image newFilledPicture = !orientation.isValid() ? null : orientation.isNegativeImage() ? negativeImage : fullImage;
 
         if (filledX == newFilledX && filledY == newFilledY && filledW == newFilledW && filledH == newFilledH && filledPicture == newFilledPicture)
         {

@@ -19,10 +19,11 @@
 //
 package com.realtime.crossfire.jxclient.server;
 
+import com.realtime.crossfire.jxclient.settings.options.Option;
 import com.realtime.crossfire.jxclient.settings.options.OptionException;
 import com.realtime.crossfire.jxclient.settings.options.OptionManager;
+import java.util.Collection;
 import java.util.LinkedList;
-import java.util.List;
 
 /**
  * Defines constants for pickup mode.
@@ -125,7 +126,7 @@ public class Pickup
     /**
      * All pickup options.
      */
-    private final List<PickupOption> pickupOptions = new LinkedList<PickupOption>();
+    private final Collection<PickupOption> pickupOptions = new LinkedList<PickupOption>();
 
     /**
      * The command queue for sending pickup commands.
@@ -194,7 +195,7 @@ public class Pickup
      * @param option the pickup value
      * @return the pickup option
      */
-    private PickupOption newPickupOption(final long option)
+    private Option newPickupOption(final long option)
     {
         final PickupOption pickupOption = new PickupOption(this, option);
         pickupOptions.add(pickupOption);

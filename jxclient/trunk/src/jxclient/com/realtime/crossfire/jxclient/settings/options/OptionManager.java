@@ -97,7 +97,7 @@ public class OptionManager
      */
     public CheckBoxOption getCheckBoxOption(final String optionName) throws OptionException
     {
-        final Option option = options.get(optionName);
+        final Object option = options.get(optionName);
         if (option == null || !(option instanceof CheckBoxOption))
         {
             throw new OptionException("undefined option: "+optionName);
@@ -114,7 +114,7 @@ public class OptionManager
         for (final Map.Entry<String, Option> e : options.entrySet())
         {
             final String optionName = e.getKey();
-            final Option option = e.getValue();
+            final Object option = e.getValue();
             if (option instanceof CheckBoxOption)
             {
                 final CheckBoxOption checkBoxOption = (CheckBoxOption)option;

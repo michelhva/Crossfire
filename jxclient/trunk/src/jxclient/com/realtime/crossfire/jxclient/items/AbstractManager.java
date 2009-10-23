@@ -20,6 +20,7 @@
 package com.realtime.crossfire.jxclient.items;
 
 import java.util.ArrayList;
+import java.util.Collection;
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.List;
@@ -47,7 +48,7 @@ public abstract class AbstractManager
     /**
      * Listeners interested in ranged changes.
      */
-    private final List<LocationsListener> locationsListeners = new ArrayList<LocationsListener>();
+    private final Collection<LocationsListener> locationsListeners = new ArrayList<LocationsListener>();
 
     /**
      * Resets the manager's state.
@@ -117,7 +118,7 @@ public abstract class AbstractManager
      */
     public void fireEvents(final List<CfItem> items)
     {
-        final Set<Integer> tmp;
+        final Collection<Integer> tmp;
         synchronized (modifiedItems)
         {
             tmp = new HashSet<Integer>(modifiedItems);
@@ -155,7 +156,7 @@ public abstract class AbstractManager
      * Adds pending modified events.
      * @param items the pending events to add; may be <code>null</code>
      */
-    public void addModified(final List<CfItem> items)
+    public void addModified(final Collection<CfItem> items)
     {
         if (items != null)
         {

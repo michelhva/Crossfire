@@ -70,7 +70,7 @@ import java.io.File;
 import java.io.IOException;
 import java.io.Writer;
 import java.util.ArrayList;
-import java.util.List;
+import java.util.Collection;
 import javax.swing.JFrame;
 
 /**
@@ -91,7 +91,7 @@ public class JXCWindow extends JFrame
     /**
      * The connection state listeners to notify.
      */
-    private final List<GuiStateListener> guiStateListeners = new ArrayList<GuiStateListener>();
+    private final Collection<GuiStateListener> guiStateListeners = new ArrayList<GuiStateListener>();
 
     /**
      * The {@link GuiManager} for controlling the main GUI state.

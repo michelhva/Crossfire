@@ -29,12 +29,12 @@ import com.realtime.crossfire.jxclient.skills.SkillSet;
 import com.realtime.crossfire.jxclient.stats.Stats;
 import com.realtime.crossfire.jxclient.window.GuiStateListener;
 import com.realtime.crossfire.jxclient.window.JXCWindow;
+import java.util.Collection;
 import java.util.Collections;
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.List;
 import java.util.Map;
-import java.util.Set;
 import java.util.concurrent.CopyOnWriteArrayList;
 import javax.swing.event.EventListenerList;
 
@@ -81,12 +81,12 @@ public class ItemsManager
     /**
      * The floor manager used to maintain floor object states.
      */
-    private final FloorManager floorManager = new FloorManager();
+    private final AbstractManager floorManager = new FloorManager();
 
     /**
      * The inventory manager used to maintain player inventory state.
      */
-    private final InventoryManager inventoryManager = new InventoryManager();
+    private final AbstractManager inventoryManager = new InventoryManager();
 
     /**
      * The list of {@link PlayerListener}s to be notified about
@@ -154,7 +154,7 @@ public class ItemsManager
             updateItem(flags, tag, valLocation, valFlags, valWeight, valFaceNum, valName, valNamePl, valAnim, valAnimSpeed, valNrof);
             if ((flags&CfItem.UPD_WEIGHT) != 0)
             {
-                final CfPlayer player = getPlayer();
+                final CfItem player = getPlayer();
                 if (player != null && player.getTag() == tag)
                 {
                     stats.setStat(CrossfireStatsListener.C_STAT_WEIGHT, valWeight);
@@ -271,7 +271,7 @@ public class ItemsManager
                 cleanInventory(player.getTag());
             }
             cleanInventory(currentFloorManager.getCurrentFloor());
-            final Set<CfItem> tmp = new HashSet<CfItem>(allItems.values());
+            final Iterable<CfItem> tmp = new HashSet<CfItem>(allItems.values());
             for (final CfItem item : tmp)
             {
                 removeItem(item);
@@ -313,7 +313,7 @@ public class ItemsManager
      */
     public int getNumberOfItems(final int location)
     {
-        final List<CfItem> result;
+        final Collection<CfItem> result;
         synchronized (sync)
         {
             result = items.get(location);
@@ -404,7 +404,7 @@ public class ItemsManager
     {
         synchronized (sync)
         {
-            final CfItem deletedItem = allItems.remove(item.getTag());
+            final Object deletedItem = allItems.remove(item.getTag());
             if (deletedItem == null)
             {
                 throw new AssertionError("cannot find item "+item.getTag());
@@ -595,7 +595,7 @@ public class ItemsManager
      * Returns the player object this client controls.
      * @return the player object
      */
-    public CfPlayer getPlayer()
+    public CfItem getPlayer()
     {
         synchronized (sync)
         {
@@ -636,7 +636,7 @@ public class ItemsManager
      * Returns the floor manager.
      * @return the floor manager
      */
-    public FloorManager getFloorManager()
+    public AbstractManager getFloorManager()
     {
         return floorManager;
     }
@@ -645,7 +645,7 @@ public class ItemsManager
      * Returns the inventory manager.
      * @return the inventory manager
      */
-    public InventoryManager getInventoryManager()
+    public AbstractManager getInventoryManager()
     {
         return inventoryManager;
     }

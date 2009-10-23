@@ -195,7 +195,7 @@ public class DialogFactory
      *
      * @return The gui elements comprising the new dialog.
      */
-    public Collection<GUIElement> newDialog(final JXCWindow window, final TooltipManager tooltipManager, final JXCWindowRenderer windowRenderer, final String name, final int w, final int h, final String title)
+    public Iterable<GUIElement> newDialog(final JXCWindow window, final TooltipManager tooltipManager, final JXCWindowRenderer windowRenderer, final String name, final int w, final int h, final String title)
     {
         if (w <= sizeW+sizeE) throw new IllegalArgumentException("dialog height ("+w+") is smaller than heights of N and S ("+sizeW+"+"+sizeE+")");
         if (h <= sizeN+sizeS) throw new IllegalArgumentException("dialog width ("+h+") is smaller than heights of W and E ("+sizeN+"+"+sizeS+")");
@@ -218,7 +218,7 @@ public class DialogFactory
             result.add(new GUIDialogTitle(window, tooltipManager, windowRenderer, name+"_t", sizeW, sizeN, w-sizeW-sizeE, titleHeight, frameC, alpha));
             if (!title.equals("_"))
             {
-                final GUIOneLineLabel titleLabel = new GUIOneLineLabel(tooltipManager, windowRenderer, name+"_title", sizeW, sizeN, w-sizeW-sizeE, titleHeight, null, titleFont, titleColor, titleBackgroundColor, GUILabel.Alignment.LEFT, title);
+                final GUIElement titleLabel = new GUIOneLineLabel(tooltipManager, windowRenderer, name+"_title", sizeW, sizeN, w-sizeW-sizeE, titleHeight, null, titleFont, titleColor, titleBackgroundColor, GUILabel.Alignment.LEFT, title);
                 result.add(titleLabel);
                 titleLabel.setIgnore();
             }

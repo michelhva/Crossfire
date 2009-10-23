@@ -347,7 +347,7 @@ public class ParserTest extends TestCase
             final Iterator<Line> it = buffer.iterator();
             while (it.hasNext())
             {
-                final Line line = it.next();
+                final Iterable<Segment> line = it.next();
                 dumpLine(sb, line);
             }
         }
@@ -358,7 +358,7 @@ public class ParserTest extends TestCase
      * @param sb the <code>StringBuilder</code> to append to
      * @param line the <code>Line</code> to append
      */
-    private static void dumpLine(final StringBuilder sb, final Line line)
+    private static void dumpLine(final StringBuilder sb, final Iterable<Segment> line)
     {
         sb.append("line:\n");
         for (final Segment segment : line)

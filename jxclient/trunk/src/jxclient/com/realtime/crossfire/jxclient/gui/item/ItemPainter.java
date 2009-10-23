@@ -26,7 +26,7 @@ import java.awt.Font;
 import java.awt.Graphics;
 import java.awt.Graphics2D;
 import java.awt.Image;
-import java.awt.geom.Rectangle2D;
+import java.awt.geom.RectangularShape;
 import java.awt.image.BufferedImage;
 
 /**
@@ -260,7 +260,7 @@ public class ItemPainter
      * @param image the image to paint
      * @param isActive whether painting should be done at all
      */
-    private static void paintImage(final Graphics g, final BufferedImage image, final boolean isActive)
+    private static void paintImage(final Graphics g, final Image image, final boolean isActive)
     {
         if (isActive)
         {
@@ -278,7 +278,7 @@ public class ItemPainter
      */
     private void renderText(final Graphics2D g, final int dx, final int dy, final int height, final String text)
     {
-        final Rectangle2D rect = font.getStringBounds(text, g.getFontRenderContext());
+        final RectangularShape rect = font.getStringBounds(text, g.getFontRenderContext());
         final int y = dy+(int)Math.round((height-rect.getMaxY()-rect.getMinY()))/2;
         g.drawString(text, dx, y);
     }

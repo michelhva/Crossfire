@@ -20,6 +20,7 @@
 package com.realtime.crossfire.jxclient.gui.list;
 
 import com.realtime.crossfire.jxclient.gui.GUIMetaElement;
+import com.realtime.crossfire.jxclient.gui.gui.GUIElement;
 import com.realtime.crossfire.jxclient.gui.gui.TooltipManager;
 import com.realtime.crossfire.jxclient.gui.label.AbstractLabel;
 import com.realtime.crossfire.jxclient.gui.textinput.GUIText;
@@ -184,7 +185,7 @@ public class GUIMetaElementList extends GUIList
             {
                 for (int i = oldSize; i < newSize; i++)
                 {
-                    final GUIMetaElement metaElement = new GUIMetaElement(tooltipManager, windowRenderer, metaserverModel, name+i, 1, 1, tcpImage, font, i, format, tooltip);
+                    final GUIElement metaElement = new GUIMetaElement(tooltipManager, windowRenderer, metaserverModel, name+i, 1, 1, tcpImage, font, i, format, tooltip);
                     addElement(metaElement);
                     metaserverModel.addMetaserverEntryListener(i, metaserverEntryListener);
                 }

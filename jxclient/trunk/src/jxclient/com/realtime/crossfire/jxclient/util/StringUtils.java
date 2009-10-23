@@ -47,7 +47,7 @@ public class StringUtils
      * @param str the string
      * @return the string without leading whitespace
      */
-    public static String trimLeading(final String str)
+    public static String trimLeading(final CharSequence str)
     {
         return PATTERN_LEADING_WHITESPACE.matcher(str).replaceAll("");
     }

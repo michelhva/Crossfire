@@ -22,7 +22,7 @@ package com.realtime.crossfire.jxclient.commands;
 import com.realtime.crossfire.jxclient.scripts.ScriptManager;
 import com.realtime.crossfire.jxclient.scripts.ScriptProcess;
 import com.realtime.crossfire.jxclient.server.CrossfireServerConnection;
-import java.util.Set;
+import java.util.Collection;
 
 /**
  * Implements the "scripttell" command. It sends a "scripttell" command to a
@@ -65,7 +65,7 @@ public class ScripttellCommand extends AbstractCommand
         }
 
         final String[] tmp = args.split(" +", 2);
-        final Set<ScriptProcess> scriptProcesses = scriptManager.getScripts(tmp[0]);
+        final Collection<ScriptProcess> scriptProcesses = scriptManager.getScripts(tmp[0]);
         if (scriptProcesses.isEmpty())
         {
             drawInfoError(scriptManager.hasScripts() ? "No matching scripts." : "No scripts running.");

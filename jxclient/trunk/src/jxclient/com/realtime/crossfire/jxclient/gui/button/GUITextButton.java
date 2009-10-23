@@ -28,7 +28,7 @@ import java.awt.Graphics;
 import java.awt.Graphics2D;
 import java.awt.Image;
 import java.awt.Transparency;
-import java.awt.geom.Rectangle2D;
+import java.awt.geom.RectangularShape;
 
 /**
  * A button which displays a string. The button width does not depend on the
@@ -144,7 +144,7 @@ public class GUITextButton extends AbstractButton
         g.setColor(color);
         (isActive() ? down : up).render(g, getWidth());
         final Graphics2D g2 = (Graphics2D)g;
-        final Rectangle2D rect = font.getStringBounds(text, g2.getFontRenderContext());
+        final RectangularShape rect = font.getStringBounds(text, g2.getFontRenderContext());
         final int y = (int)Math.round((getHeight()-rect.getMaxY()-rect.getMinY()))/2;
         g.drawString(text, (int)Math.round((getWidth()-rect.getWidth())/2), y);
     }

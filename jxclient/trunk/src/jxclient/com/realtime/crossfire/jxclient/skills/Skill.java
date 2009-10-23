@@ -20,7 +20,7 @@
 package com.realtime.crossfire.jxclient.skills;
 
 import java.util.ArrayList;
-import java.util.List;
+import java.util.Collection;
 
 /**
  * One skill of the character.
@@ -33,7 +33,7 @@ public class Skill
     /**
      * The listeners to inform of changes.
      */
-    private final List<SkillListener> listeners = new ArrayList<SkillListener>();
+    private final Collection<SkillListener> listeners = new ArrayList<SkillListener>();
 
     /**
      * The skill name.

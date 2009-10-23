@@ -21,6 +21,7 @@ package com.realtime.crossfire.jxclient.util;
 
 import java.io.IOException;
 import java.io.Writer;
+import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
@@ -38,7 +39,7 @@ public class DebugWriter
     /**
      * A formatter for timestamps.
      */
-    private final SimpleDateFormat simpleDateFormat = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss,SSS ");
+    private final DateFormat simpleDateFormat = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss,SSS ");
 
     /**
      * The object for synchronizing messages.
@@ -63,7 +64,7 @@ public class DebugWriter
      * Writes a message to the debug protocol.
      * @param str the message to write
      */
-    public void debugProtocolWrite(final String str)
+    public void debugProtocolWrite(final CharSequence str)
     {
         synchronized (sync)
         {
@@ -88,7 +89,7 @@ public class DebugWriter
      * @param str the message to write
      * @param throwable the throwable to log
      */
-    public void debugProtocolWrite(final String str, final Throwable throwable)
+    public void debugProtocolWrite(final CharSequence str, final Throwable throwable)
     {
         synchronized (sync)
         {
@@ -99,7 +100,7 @@ public class DebugWriter
                 writer.append("\n");
                 writer.append(throwable.getClass().getName());
                 writer.append("\n");
-                for (final StackTraceElement stack : throwable.getStackTrace())
+                for (final Object stack : throwable.getStackTrace())
                 {
                     writer.append(stack.toString());
                     writer.append("\n");

@@ -35,8 +35,8 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.io.LineNumberReader;
 import java.io.OutputStreamWriter;
+import java.util.Collection;
 import java.util.HashSet;
-import java.util.Set;
 
 /**
  * Manages a set of key bindings.
@@ -62,7 +62,7 @@ public class KeyBindings
     /**
      * The active key bindings.
      */
-    private final Set<KeyBinding> keybindings = new HashSet<KeyBinding>();
+    private final Collection<KeyBinding> keybindings = new HashSet<KeyBinding>();
 
     /**
      * Whether the contents of {@link #keybindings} have been modified from the

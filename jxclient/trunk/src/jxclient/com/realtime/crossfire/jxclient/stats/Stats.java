@@ -28,9 +28,8 @@ import com.realtime.crossfire.jxclient.skills.SkillSet;
 import com.realtime.crossfire.jxclient.window.GuiStateListener;
 import com.realtime.crossfire.jxclient.window.JXCWindow;
 import java.util.ArrayList;
+import java.util.Collection;
 import java.util.HashSet;
-import java.util.List;
-import java.util.Set;
 
 /**
  * This is the representation of all the statistics of a player, like its speed
@@ -53,7 +52,7 @@ public class Stats
     /**
      * The listeners to inform of stat changes.
      */
-    private final List<StatsListener> statsListeners = new ArrayList<StatsListener>();
+    private final Collection<StatsListener> statsListeners = new ArrayList<StatsListener>();
 
     /**
      * The {@link ExperienceTable} instance to use.
@@ -104,7 +103,7 @@ public class Stats
         /**
          * All unhandled stat values for which an error has been printed.
          */
-        private final Set<String> unhandledStats = new HashSet<String>(0);
+        private final Collection<String> unhandledStats = new HashSet<String>(0);
 
         /** {@inheritDoc} */
         @Override

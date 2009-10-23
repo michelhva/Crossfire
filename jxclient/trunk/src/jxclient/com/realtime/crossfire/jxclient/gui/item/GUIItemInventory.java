@@ -23,7 +23,6 @@ package com.realtime.crossfire.jxclient.gui.item;
 import com.realtime.crossfire.jxclient.faces.FacesManager;
 import com.realtime.crossfire.jxclient.gui.gui.TooltipManager;
 import com.realtime.crossfire.jxclient.items.CfItem;
-import com.realtime.crossfire.jxclient.items.CfPlayer;
 import com.realtime.crossfire.jxclient.items.ItemsManager;
 import com.realtime.crossfire.jxclient.items.LocationListener;
 import com.realtime.crossfire.jxclient.server.CommandQueue;
@@ -31,6 +30,7 @@ import com.realtime.crossfire.jxclient.server.CrossfireServerConnection;
 import com.realtime.crossfire.jxclient.window.JXCWindowRenderer;
 import java.awt.Image;
 import java.awt.event.InputEvent;
+import java.util.Collection;
 import java.util.List;
 
 /**
@@ -134,13 +134,13 @@ public class GUIItemInventory extends GUIItemItem
         }
         else if (distance > 0)
         {
-            final CfPlayer player = itemsManager.getPlayer();
+            final CfItem player = itemsManager.getPlayer();
             if (player == null)
             {
                 return false;
             }
 
-            final List<CfItem> list = itemsManager.getItems(player.getTag());
+            final Collection<CfItem> list = itemsManager.getItems(player.getTag());
             synchronized (sync)
             {
                 return index+distance < list.size();
@@ -282,7 +282,7 @@ public class GUIItemInventory extends GUIItemItem
             }
         }
 
-        final CfPlayer player = itemsManager.getPlayer();
+        final CfItem player = itemsManager.getPlayer();
         if (player != null)
         {
             final List<CfItem> list = itemsManager.getItems(player.getTag());
@@ -318,7 +318,7 @@ public class GUIItemInventory extends GUIItemItem
             this.index = index;
         }
 
-        final CfPlayer player = itemsManager.getPlayer();
+        final CfItem player = itemsManager.getPlayer();
         if (player != null)
         {
             final List<CfItem> list = itemsManager.getItems(player.getTag());

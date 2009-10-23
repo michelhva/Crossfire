@@ -55,7 +55,7 @@ public class UnbindCommand extends AbstractCommand
     @Override
     public void execute(final String args)
     {
-        final String commands;
+        final CharSequence commands;
         final boolean perCharacterBinding;
         if (args.equals("-c"))
         {

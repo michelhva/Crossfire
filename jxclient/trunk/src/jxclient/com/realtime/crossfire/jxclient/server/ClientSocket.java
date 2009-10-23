@@ -33,8 +33,7 @@ import java.nio.channels.Selector;
 import java.nio.channels.SocketChannel;
 import java.nio.channels.UnresolvedAddressException;
 import java.util.ArrayList;
-import java.util.List;
-import java.util.Set;
+import java.util.Collection;
 
 /**
  * A socket that processes incoming data.
@@ -60,7 +59,7 @@ public class ClientSocket
     /**
      * The {@link ClientSocketListener}s to notify.
      */
-    private final List<ClientSocketListener> clientSocketListeners = new ArrayList<ClientSocketListener>();
+    private final Collection<ClientSocketListener> clientSocketListeners = new ArrayList<ClientSocketListener>();
 
     /**
      * The {@link Selector} used for waiting.
@@ -337,7 +336,7 @@ public class ClientSocket
                 }
 
                 selector.select();
-                final Set<SelectionKey> selectedKeys = selector.selectedKeys();
+                final Collection<SelectionKey> selectedKeys = selector.selectedKeys();
                 if (selectedKeys.remove(selectionKey))
                 {
                     if (isConnected)

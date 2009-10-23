@@ -32,6 +32,7 @@ import java.nio.ByteOrder;
 import java.nio.charset.Charset;
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Collection;
 import java.util.List;
 import java.util.concurrent.CopyOnWriteArrayList;
 import java.util.regex.Pattern;
@@ -71,98 +72,98 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
     /**
      * The {@link CrossfireServerConnectionListener}s to notify.
      */
-    private final List<CrossfireServerConnectionListener> crossfireServerConnectionListeners = new ArrayList<CrossfireServerConnectionListener>();
+    private final Collection<CrossfireServerConnectionListener> crossfireServerConnectionListeners = new ArrayList<CrossfireServerConnectionListener>();
 
     /**
      * The {@link MapSizeListener}s to be notified.
      */
-    private final List<MapSizeListener> mapSizeListeners = new ArrayList<MapSizeListener>();
+    private final Collection<MapSizeListener> mapSizeListeners = new ArrayList<MapSizeListener>();
 
     /**
      * The {@link CrossfireDrawinfoListener}s to be notified.
      */
-    private final List<CrossfireDrawinfoListener> drawinfoListeners = new ArrayList<CrossfireDrawinfoListener>();
+    private final Collection<CrossfireDrawinfoListener> drawinfoListeners = new ArrayList<CrossfireDrawinfoListener>();
 
     /**
      * The {@link CrossfireDrawextinfoListener}s to be notified.
      */
-    private final List<CrossfireDrawextinfoListener> drawextinfoListeners = new ArrayList<CrossfireDrawextinfoListener>();
+    private final Collection<CrossfireDrawextinfoListener> drawextinfoListeners = new ArrayList<CrossfireDrawextinfoListener>();
 
     /**
      * The {@link CrossfireQueryListener}s to be notified.
      */
-    private final List<CrossfireQueryListener> queryListeners = new ArrayList<CrossfireQueryListener>();
+    private final Collection<CrossfireQueryListener> queryListeners = new ArrayList<CrossfireQueryListener>();
 
     /**
      * The {@link CrossfireMagicmapListener}s to be notified of received
      * magicmap commands.
      */
-    private final List<CrossfireMagicmapListener> magicmapListeners = new ArrayList<CrossfireMagicmapListener>();
+    private final Collection<CrossfireMagicmapListener> magicmapListeners = new ArrayList<CrossfireMagicmapListener>();
 
     /**
      * The {@link CrossfireUpdateFaceListener}s to be notified.
      */
-    private final List<CrossfireUpdateFaceListener> crossfireUpdateFaceListeners = new ArrayList<CrossfireUpdateFaceListener>();
+    private final Collection<CrossfireUpdateFaceListener> crossfireUpdateFaceListeners = new ArrayList<CrossfireUpdateFaceListener>();
 
     /**
      * The {@link CrossfireStatsListener}s to be notified.
      */
-    private final List<CrossfireStatsListener> crossfireStatsListeners = new ArrayList<CrossfireStatsListener>();
+    private final Collection<CrossfireStatsListener> crossfireStatsListeners = new ArrayList<CrossfireStatsListener>();
 
     /**
      * The {@link CrossfireUpdateItemListener}s to be notified.
      */
-    private final List<CrossfireUpdateItemListener> crossfireUpdateItemListeners = new ArrayList<CrossfireUpdateItemListener>();
+    private final Collection<CrossfireUpdateItemListener> crossfireUpdateItemListeners = new ArrayList<CrossfireUpdateItemListener>();
 
     /**
      * The {@link CrossfireUpdateMapListener}s to be notified.
      */
-    private final List<CrossfireUpdateMapListener> crossfireUpdateMapListeners = new ArrayList<CrossfireUpdateMapListener>();
+    private final Collection<CrossfireUpdateMapListener> crossfireUpdateMapListeners = new ArrayList<CrossfireUpdateMapListener>();
 
     /**
      * The {@link CrossfireTickListener}s to be notified.
      */
-    private final List<CrossfireTickListener> crossfireTickListeners = new ArrayList<CrossfireTickListener>();
+    private final Collection<CrossfireTickListener> crossfireTickListeners = new ArrayList<CrossfireTickListener>();
 
     /**
      * The {@link CrossfireSoundListener}s to be notified.
      */
-    private final List<CrossfireSoundListener> crossfireSoundListeners = new ArrayList<CrossfireSoundListener>();
+    private final Collection<CrossfireSoundListener> crossfireSoundListeners = new ArrayList<CrossfireSoundListener>();
 
     /**
      * The {@link CrossfireMusicListener}s to be notified.
      */
-    private final List<CrossfireMusicListener> crossfireMusicListeners = new ArrayList<CrossfireMusicListener>();
+    private final Collection<CrossfireMusicListener> crossfireMusicListeners = new ArrayList<CrossfireMusicListener>();
 
     /**
      * The {@link CrossfireComcListener}s to be notified.
      */
-    private final List<CrossfireComcListener> crossfireComcListeners = new ArrayList<CrossfireComcListener>();
+    private final Collection<CrossfireComcListener> crossfireComcListeners = new ArrayList<CrossfireComcListener>();
 
     /**
      * The {@link CrossfireFaceListener}s to be notified.
      */
-    private final List<CrossfireFaceListener> crossfireFaceListeners = new ArrayList<CrossfireFaceListener>();
+    private final Collection<CrossfireFaceListener> crossfireFaceListeners = new ArrayList<CrossfireFaceListener>();
 
     /**
      * The {@link CrossfireSpellListener}s to be notified.
      */
-    private final List<CrossfireSpellListener> crossfireSpellListeners = new ArrayList<CrossfireSpellListener>();
+    private final Collection<CrossfireSpellListener> crossfireSpellListeners = new ArrayList<CrossfireSpellListener>();
 
     /**
      * The {@link ReceivedPacketListener}s to be notified.
      */
-    private final List<ReceivedPacketListener> receivedPacketListeners = new CopyOnWriteArrayList<ReceivedPacketListener>();
+    private final Collection<ReceivedPacketListener> receivedPacketListeners = new CopyOnWriteArrayList<ReceivedPacketListener>();
 
     /**
      * The {@link CrossfireExpTableListener}s to be notified.
      */
-    private final List<CrossfireExpTableListener> crossfireExpTableListeners = new ArrayList<CrossfireExpTableListener>();
+    private final Collection<CrossfireExpTableListener> crossfireExpTableListeners = new ArrayList<CrossfireExpTableListener>();
 
     /**
      * The {@link CrossfireSkillInfoListener}s to be notified.
      */
-    private final List<CrossfireSkillInfoListener> crossfireSkillInfoListeners = new ArrayList<CrossfireSkillInfoListener>();
+    private final Collection<CrossfireSkillInfoListener> crossfireSkillInfoListeners = new ArrayList<CrossfireSkillInfoListener>();
 
     /**
      * Buffer to build commands to send. It is shared between all sendXxx()

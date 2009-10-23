@@ -35,7 +35,7 @@ public class Filenames
      */
     public static String quoteName(final String name)
     {
-        final String trimmedName = name.endsWith(".png") ? name.substring(0, name.length()-4) : name;
+        final CharSequence trimmedName = name.endsWith(".png") ? name.substring(0, name.length()-4) : name;
         final String replacedName = UNSAFE_FILENAME_CHARACTERS.matcher(trimmedName).replaceAll(REPLACEMENT_CHARACTER);
         return replacedName.length() > 0 ? replacedName : REPLACEMENT_CHARACTER;
     }

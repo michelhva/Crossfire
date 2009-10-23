@@ -26,11 +26,11 @@ import com.realtime.crossfire.jxclient.gui.gauge.GaugeUpdater;
 import com.realtime.crossfire.jxclient.gui.gui.GUIElement;
 import com.realtime.crossfire.jxclient.gui.gui.Gui;
 import com.realtime.crossfire.jxclient.gui.keybindings.KeyBindings;
-import com.realtime.crossfire.jxclient.gui.label.GUIHTMLLabel;
+import com.realtime.crossfire.jxclient.gui.label.AbstractLabel;
 import com.realtime.crossfire.jxclient.items.ItemsManager;
 import com.realtime.crossfire.jxclient.server.CommandQueue;
 import com.realtime.crossfire.jxclient.server.CrossfireServerConnection;
-import com.realtime.crossfire.jxclient.settings.options.CommandCheckBoxOption;
+import com.realtime.crossfire.jxclient.settings.options.Option;
 import com.realtime.crossfire.jxclient.settings.options.OptionException;
 import com.realtime.crossfire.jxclient.settings.options.OptionManager;
 import com.realtime.crossfire.jxclient.skills.SkillSet;
@@ -42,10 +42,9 @@ import com.realtime.crossfire.jxclient.window.JXCWindow;
 import java.io.IOException;
 import java.io.LineNumberReader;
 import java.util.ArrayList;
+import java.util.Collection;
 import java.util.HashSet;
 import java.util.Iterator;
-import java.util.List;
-import java.util.Set;
 
 public class DefaultJXCSkin implements JXCSkin
 {
@@ -82,7 +81,7 @@ public class DefaultJXCSkin implements JXCSkin
     /**
      * All "event init" commands in execution order.
      */
-    private final List<GUICommandList> initEvents = new ArrayList<GUICommandList>();
+    private final Collection<GUICommandList> initEvents = new ArrayList<GUICommandList>();
 
     /**
      * All defined command lists.
@@ -97,12 +96,12 @@ public class DefaultJXCSkin implements JXCSkin
     /**
      * All GUI elements.
      */
-    private final Set<GUIElement> guiElements = new HashSet<GUIElement>();
+    private final Collection<GUIElement> guiElements = new HashSet<GUIElement>();
 
     /**
      * All {@link SkinEvent}s attached to this instance.
      */
-    private final Set<SkinEvent> skinEvents = new HashSet<SkinEvent>();
+    private final Collection<SkinEvent> skinEvents = new HashSet<SkinEvent>();
 
     /**
      * All defined dialogs.
@@ -132,12 +131,12 @@ public class DefaultJXCSkin implements JXCSkin
     /**
      * The defined option names.
      */
-    private final Set<String> optionNames = new HashSet<String>();
+    private final Collection<String> optionNames = new HashSet<String>();
 
     /**
      * The defined {@link GaugeUpdater}s.
      */
-    private final List<GaugeUpdater> gaugeUpdaters = new ArrayList<GaugeUpdater>();
+    private final Collection<GaugeUpdater> gaugeUpdaters = new ArrayList<GaugeUpdater>();
 
     /**
      * The {@link CommandParser} for parsing command specifications.
@@ -147,7 +146,7 @@ public class DefaultJXCSkin implements JXCSkin
     /**
      * The tooltip label or <code>null</code>.
      */
-    private GUIHTMLLabel tooltipLabel = null;
+    private AbstractLabel tooltipLabel = null;
 
     /**
      * The {@link GuiManager} currently attached to or <code>null</code> if not
@@ -515,7 +514,7 @@ public class DefaultJXCSkin implements JXCSkin
         this.numLookObjects = numLookObjects;
     }
 
-    public void addOption(final String optionName, final String documentation, final CommandCheckBoxOption commandCheckBoxOption) throws JXCSkinException
+    public void addOption(final String optionName, final String documentation, final Option commandCheckBoxOption) throws JXCSkinException
     {
         try
         {
@@ -528,7 +527,7 @@ public class DefaultJXCSkin implements JXCSkin
         optionNames.add(optionName);
     }
 
-    public void setTooltipLabel(final GUIHTMLLabel tooltipLabel)
+    public void setTooltipLabel(final AbstractLabel tooltipLabel)
     {
         this.tooltipLabel = tooltipLabel;
     }

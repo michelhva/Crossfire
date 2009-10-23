@@ -42,7 +42,7 @@ public class ServerCache
     /**
      * The default entry for the "localhost" server.
      */
-    public static final String DEFAULT_ENTRY_LOCALHOST = "0|localhost|0|--|Local server. Start server before you try to connect.|0|0|0|||";
+    public static final CharSequence DEFAULT_ENTRY_LOCALHOST = "0|localhost|0|--|Local server. Start server before you try to connect.|0|0|0|||";
 
     /**
      * The cached entries. Maps key (see {@link #makeKey(MetaserverEntry)}) to
@@ -213,7 +213,7 @@ public class ServerCache
      * @param timestamp the query timestamp
      * @return whether the line was parsed correctly
      */
-    private boolean addEntry(final String metaserverEntryLine, final long timestamp)
+    private boolean addEntry(final CharSequence metaserverEntryLine, final long timestamp)
     {
         final MetaserverEntry metaserverEntry = MetaserverEntryParser.parseEntry(metaserverEntryLine);
         if (metaserverEntry == null)

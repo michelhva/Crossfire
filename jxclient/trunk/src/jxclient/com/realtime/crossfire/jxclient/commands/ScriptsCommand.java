@@ -22,7 +22,7 @@ package com.realtime.crossfire.jxclient.commands;
 import com.realtime.crossfire.jxclient.scripts.ScriptManager;
 import com.realtime.crossfire.jxclient.scripts.ScriptProcess;
 import com.realtime.crossfire.jxclient.server.CrossfireServerConnection;
-import java.util.Set;
+import java.util.Collection;
 import java.util.TreeSet;
 
 /**
@@ -58,7 +58,7 @@ public class ScriptsCommand extends AbstractCommand
     @Override
     public void execute(final String args)
     {
-        final Set<ScriptProcess> scriptProcesses = new TreeSet<ScriptProcess>(scriptManager.getScripts(args));
+        final Collection<ScriptProcess> scriptProcesses = new TreeSet<ScriptProcess>(scriptManager.getScripts(args));
         if (scriptProcesses.isEmpty())
         {
             drawInfo(scriptManager.hasScripts() ? "No matching scripts." : "No scripts running.");
@@ -66,7 +66,7 @@ public class ScriptsCommand extends AbstractCommand
         }
 
         drawInfo("Running scripts:");
-        for (final ScriptProcess scriptProcess : scriptProcesses)
+        for (final Object scriptProcess : scriptProcesses)
         {
             drawInfo("- "+scriptProcess);
         }

@@ -21,8 +21,8 @@ package com.realtime.crossfire.jxclient.scripts;
 
 import com.realtime.crossfire.jxclient.server.CrossfireServerConnection;
 import com.realtime.crossfire.jxclient.server.ReceivedPacketListener;
+import java.util.Collection;
 import java.util.HashSet;
-import java.util.Set;
 import java.util.regex.Pattern;
 
 /**
@@ -34,7 +34,7 @@ public class PacketWatcher
     /**
      * The commands to watch for.
      */
-    private final Set<String> commands = new HashSet<String>();
+    private final Collection<String> commands = new HashSet<String>();
 
     /**
      * The {@link CrossfireServerConnection} to watch.
@@ -270,7 +270,7 @@ public class PacketWatcher
      * @param command the command
      * @return whether the command matches
      */
-    private boolean matchesCommand(final String command)
+    private boolean matchesCommand(final CharSequence command)
     {
         return pattern.matcher(command).matches();
     }

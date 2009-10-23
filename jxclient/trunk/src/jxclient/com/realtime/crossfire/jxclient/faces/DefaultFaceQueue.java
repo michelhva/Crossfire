@@ -19,8 +19,8 @@
 //
 package com.realtime.crossfire.jxclient.faces;
 
+import java.util.Collection;
 import java.util.LinkedList;
-import java.util.List;
 
 /**
  * Abstract base class for classes implementing {@link FaceQueue}. This class
@@ -33,7 +33,7 @@ public abstract class DefaultFaceQueue implements FaceQueue
     /**
      * The registered {@link FaceQueueListener}s.
      */
-    private final List<FaceQueueListener> faceQueueListeners = new LinkedList<FaceQueueListener>();
+    private final Collection<FaceQueueListener> faceQueueListeners = new LinkedList<FaceQueueListener>();
 
     /** {@inheritDoc} */
     @Override

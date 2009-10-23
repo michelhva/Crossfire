@@ -19,7 +19,7 @@
 //
 package com.realtime.crossfire.jxclient.gui.log;
 
-import java.util.List;
+import java.util.Collection;
 
 /**
  * Encapsulates the state for a scroll bar. The first line shown is the line
@@ -151,7 +151,7 @@ public class RenderState
      *
      * @param lines The number of lines that have been remove.
      */
-    public synchronized void linesRemoved(final Buffer buffer, final List<Line> lines)
+    public synchronized void linesRemoved(final Buffer buffer, final Collection<Line> lines)
     {
         if (buffer.getTotalHeight() <= height)
         {

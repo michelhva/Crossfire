@@ -40,7 +40,6 @@ import com.realtime.crossfire.jxclient.gui.gui.GUIScrollBar;
 import com.realtime.crossfire.jxclient.gui.gui.Gui;
 import com.realtime.crossfire.jxclient.gui.gui.GuiFactory;
 import com.realtime.crossfire.jxclient.gui.gui.TooltipManager;
-import com.realtime.crossfire.jxclient.gui.item.GUIItem;
 import com.realtime.crossfire.jxclient.gui.item.GUIItemFloor;
 import com.realtime.crossfire.jxclient.gui.item.GUIItemInventory;
 import com.realtime.crossfire.jxclient.gui.item.GUIItemInventoryFactory;
@@ -683,7 +682,7 @@ public class JXCSkinLoader
                 }
                 catch (final IllegalArgumentException ex)
                 {
-                    final String msg = ex.getMessage();
+                    final Object msg = ex.getMessage();
                     if (msg != null)
                     {
                         throw new IOException("invalid parameter ("+ex.getMessage()+") in line "+lnr.getLineNumber());
@@ -1346,7 +1345,7 @@ public class JXCSkinLoader
 
         final ItemPainter itemPainter = defaultItemPainter.newItemPainter(cellHeight, cellHeight);
         final GUIItemInventoryFactory itemInventoryFactory = new GUIItemInventoryFactory(tooltipManager, windowRenderer, commandQueue, name, itemPainter, server, facesManager, itemsManager);
-        final GUIItemInventoryList element = new GUIItemInventoryList(tooltipManager, windowRenderer, commandQueue, name, x, y, w, h, cellHeight, server, itemsManager, selectedItem, itemInventoryFactory);
+        final GUIElement element = new GUIItemInventoryList(tooltipManager, windowRenderer, commandQueue, name, x, y, w, h, cellHeight, server, itemsManager, selectedItem, itemInventoryFactory);
         skin.insertGuiElement(element);
     }
 
@@ -1376,7 +1375,7 @@ public class JXCSkinLoader
         final int w = expressionParser.parseInt(args[5]);
         final int h = expressionParser.parseInt(args[6]);
         final int index = expressionParser.parseInt(args[7]);
-        final GUIItem element;
+        final GUIElement element;
         if (type.equals("floor"))
         {
             if (args.length != 8)
@@ -1541,7 +1540,7 @@ public class JXCSkinLoader
         final int h = expressionParser.parseInt(args[5]);
         final Font font = definedFonts.lookup(args[6]);
         final Color color = ParseUtils.parseColor(args[7]);
-        final GUILabelQuery element = new GUILabelQuery(tooltipManager, windowRenderer, name, x, y, w, h, server, font, color, new Color(0, 0, 0, 0F));
+        final GUIElement element = new GUILabelQuery(tooltipManager, windowRenderer, name, x, y, w, h, server, font, color, new Color(0, 0, 0, 0F));
         skin.insertGuiElement(element);
     }
 
@@ -1596,7 +1595,7 @@ public class JXCSkinLoader
         final Color color = ParseUtils.parseColor(args[7]);
         final int stat = ParseUtils.parseStat(args[8]);
         final GUILabel.Alignment alignment = NumberParser.parseEnum(GUILabel.Alignment.class, args[9], "text alignment");
-        final GUILabelStats element = new GUILabelStats(tooltipManager, windowRenderer, name, x, y, w, h, font, color, new Color(0, 0, 0, 0F), stat, alignment, stats);
+        final GUIElement element = new GUILabelStats(tooltipManager, windowRenderer, name, x, y, w, h, font, color, new Color(0, 0, 0, 0F), stat, alignment, stats);
         skin.insertGuiElement(element);
     }
 
@@ -1623,7 +1622,7 @@ public class JXCSkinLoader
         final int h = expressionParser.parseInt(args[5]);
         final Font font = definedFonts.lookup(args[6]);
         final GUISpellLabel.Type type = NumberParser.parseEnum(GUISpellLabel.Type.class, args[7], "label type");
-        final GUISpellLabel element = new GUISpellLabel(tooltipManager, windowRenderer, name, x, y, w, h, null, facesManager, font, type, currentSpellManager);
+        final GUIElement element = new GUISpellLabel(tooltipManager, windowRenderer, name, x, y, w, h, null, facesManager, font, type, currentSpellManager);
         skin.insertGuiElement(element);
     }
 
@@ -1654,7 +1653,7 @@ public class JXCSkinLoader
         final Font fontArcane = definedFonts.lookup(args[10]);
         final Color defaultColor = ParseUtils.parseColor(args[11]);
         final Fonts fonts = new Fonts(fontPrint, fontFixed, fontFixedBold, fontArcane);
-        final GUILabelLog element = new GUILabelLog(tooltipManager, windowRenderer, name, x, y, w, h, emptyImage, fonts, defaultColor);
+        final GUIElement element = new GUILabelLog(tooltipManager, windowRenderer, name, x, y, w, h, emptyImage, fonts, defaultColor);
         skin.insertGuiElement(element);
     }
 
@@ -1686,7 +1685,7 @@ public class JXCSkinLoader
         final Font fontArcane = definedFonts.lookup(args[10]);
         final Color defaultColor = ParseUtils.parseColor(args[11]);
         final Fonts fonts = new Fonts(fontPrint, fontFixed, fontFixedBold, fontArcane);
-        final GUIMessageLog element = new GUIMessageLog(tooltipManager, windowRenderer, name, x, y, w, h, server, emptyImage, fonts, defaultColor);
+        final GUIElement element = new GUIMessageLog(tooltipManager, windowRenderer, name, x, y, w, h, server, emptyImage, fonts, defaultColor);
         skin.insertGuiElement(element);
     }
 
@@ -1706,7 +1705,7 @@ public class JXCSkinLoader
         final String name = args[1];
         final int index = expressionParser.parseInt(args[2]);
         final Color color = ParseUtils.parseColor(args[3]);
-        final GUIElement element = skin.lookupGuiElement(name);
+        final Object element = skin.lookupGuiElement(name);
         if (!(element instanceof GUIMessageLog))
         {
              throw new IOException("element '"+name+"' is not of type 'log'");
@@ -1762,7 +1761,7 @@ public class JXCSkinLoader
         {
             types = ~types;
         }
-        final GUIElement element = skin.lookupGuiElement(name);
+        final Object element = skin.lookupGuiElement(name);
         if (!(element instanceof GUIMessageLog))
         {
             throw new IOException("element '"+name+"' is not of type 'log'");
@@ -1791,7 +1790,7 @@ public class JXCSkinLoader
         final int y = expressionParser.parseInt(args[3]);
         final int w = expressionParser.parseInt(args[4]);
         final int h = expressionParser.parseInt(args[5]);
-        final GUIMagicMap element = new GUIMagicMap(tooltipManager, windowRenderer, name, x, y, w, h, server, mapUpdater, facesManager);
+        final GUIElement element = new GUIMagicMap(tooltipManager, windowRenderer, name, x, y, w, h, server, mapUpdater, facesManager);
         skin.insertGuiElement(element);
     }
 
@@ -1826,7 +1825,7 @@ public class JXCSkinLoader
         DefaultCrossfireServerConnection.validateMapSize(tmpW, tmpH);
         skin.setMapSize(tmpW, tmpH);
 
-        final GUIMap element = new GUIMap(tooltipManager, windowRenderer, name, tileSize, x, y, w, h, server, facesManager, mapUpdater);
+        final GUIElement element = new GUIMap(tooltipManager, windowRenderer, name, tileSize, x, y, w, h, server, facesManager, mapUpdater);
         skin.insertGuiElement(element);
     }
 
@@ -1859,7 +1858,7 @@ public class JXCSkinLoader
         final String format = args[11];
         final String tooltip = args[12];
 
-        final GUIMetaElementList list = new GUIMetaElementList(tooltipManager, windowRenderer, name, x, y, w, h, cellHeight, metaserverModel, tcpImage, font, format, tooltip, text, label);
+        final GUIElement list = new GUIMetaElementList(tooltipManager, windowRenderer, name, x, y, w, h, cellHeight, metaserverModel, tcpImage, font, format, tooltip, text, label);
         skin.insertGuiElement(list);
     }
 
@@ -1934,7 +1933,7 @@ public class JXCSkinLoader
             throw new IOException("syntax error");
         }
 
-        final GUIElement forcedActive = skin.lookupGuiElement(args[1]);
+        final Object forcedActive = skin.lookupGuiElement(args[1]);
         if (!(forcedActive instanceof ActivatableGUIElement))
         {
             throw new IOException("argument to set_forced_active must be an activatable gui element");
@@ -2026,7 +2025,7 @@ public class JXCSkinLoader
         final int w = expressionParser.parseInt(args[4]);
         final int h = expressionParser.parseInt(args[5]);
         final boolean proportionalSlider = NumberParser.parseBoolean(args[6]);
-        final GUIElement element = skin.lookupGuiElement(args[7]);
+        final Object element = skin.lookupGuiElement(args[7]);
         final Color colorBackground = ParseUtils.parseColor(args[8]);
         final Color colorForeground = ParseUtils.parseColor(args[9]);
         if (!(element instanceof GUIScrollable2))
