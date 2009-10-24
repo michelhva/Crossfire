@@ -115,11 +115,11 @@ public class JXCWindowRenderer
      * If set, do not repaint anything. It it set while a map update is in
      * progress.
      */
-    private volatile boolean inhibitPaint = false;
+    private volatile boolean inhibitPaintMapUpdate = false;
 
     /**
      * If set, at least one call to {@link #redrawGUI()} has been dropped while
-     * {@link #inhibitPaint} was set.
+     * {@link #inhibitPaintMapUpdate} was set.
      */
     private volatile boolean skippedPaint = false;
 
@@ -175,7 +175,7 @@ public class JXCWindowRenderer
         @Override
         public void mapBegin()
         {
-            inhibitPaint = true;
+            inhibitPaintMapUpdate = true;
             skippedPaint = false;
         }
 
@@ -229,7 +229,7 @@ public class JXCWindowRenderer
             {
                 forcePaint = true;
             }
-            inhibitPaint = false;
+            inhibitPaintMapUpdate = false;
         }
 
         /** {@inheritDoc} */
@@ -363,7 +363,7 @@ public class JXCWindowRenderer
 
     public void redrawGUI()
     {
-        if (inhibitPaint)
+        if (inhibitPaintMapUpdate)
         {
             skippedPaint = true;
             return;
