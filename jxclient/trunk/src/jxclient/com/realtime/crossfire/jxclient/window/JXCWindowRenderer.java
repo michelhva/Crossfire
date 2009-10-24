@@ -118,8 +118,15 @@ public class JXCWindowRenderer
     private volatile boolean inhibitPaintMapUpdate = false;
 
     /**
+     * If set, do not repaint anything. It it set while the main widnow is
+     * iconified.
+     */
+    private volatile boolean inhibitPaintIconified = false;
+
+    /**
      * If set, at least one call to {@link #redrawGUI()} has been dropped while
-     * {@link #inhibitPaintMapUpdate} was set.
+     * {@link #inhibitPaintMapUpdate} or {@link #inhibitPaintIconified} was
+     * set.
      */
     private volatile boolean skippedPaint = false;
 
@@ -363,7 +370,7 @@ public class JXCWindowRenderer
 
     public void redrawGUI()
     {
-        if (inhibitPaintMapUpdate)
+        if (inhibitPaintMapUpdate || inhibitPaintIconified)
         {
             skippedPaint = true;
             return;
@@ -912,5 +919,14 @@ public class JXCWindowRenderer
         {
             throw new UnsupportedOperationException();
         }
+    }
+
+    /**
+     * Inhibits or allows painting while the main window is iconified.
+     * @param inhibitPaintIconified whether the main window is iconified
+     */
+    public void setInhibitPaintIconified(final boolean inhibitPaintIconified)
+    {
+        this.inhibitPaintIconified = inhibitPaintIconified;
     }
 }
