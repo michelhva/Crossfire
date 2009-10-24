@@ -30,6 +30,8 @@ import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.util.Arrays;
 import java.util.Date;
+import org.jetbrains.annotations.NotNull;
+import org.jetbrains.annotations.Nullable;
 
 /**
  * Handles keyboard input processing.
@@ -50,35 +52,43 @@ public class KeyHandler
      * The {@link Writer} for logging keyboard debug output. Log nothing if
      * <code>null</code>.
      */
+    @Nullable
     private final Writer debugKeyboard;
 
     /**
      * The {@link KeybindingsManager} to use.
      */
+    @NotNull
     private final KeybindingsManager keybindingsManager;
 
     /**
      * The {@link CommandQueue} to use.
      */
+    @NotNull
     private final CommandQueue commandQueue;
 
     /**
      * The {@link JXCWindowRenderer} to use.
      */
+    @NotNull
     private final JXCWindowRenderer windowRenderer;
 
     /**
      * The {@link KeyHandlerListener} to notify.
      */
+    @NotNull
     private final KeyHandlerListener keyHandlerListener;
 
     /**
      * A formatter for timestamps.
      */
+    @NotNull
     private final DateFormat simpleDateFormat = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss,SSS ");
 
+    @NotNull
     private final boolean[] keyShift = { false, false, false, false };
 
+    @Nullable
     private KeyBindings keyBindings = null;
 
     /**
@@ -89,7 +99,7 @@ public class KeyHandler
      * @param windowRenderer the window renderer to use
      * @param keyHandlerListener the key handler listener to notify
      */
-    public KeyHandler(final Writer debugKeyboard, final KeybindingsManager keybindingsManager, final CommandQueue commandQueue, final JXCWindowRenderer windowRenderer, final KeyHandlerListener keyHandlerListener)
+    public KeyHandler(@Nullable final Writer debugKeyboard, @NotNull final KeybindingsManager keybindingsManager, @NotNull final CommandQueue commandQueue, @NotNull final JXCWindowRenderer windowRenderer, @NotNull final KeyHandlerListener keyHandlerListener)
     {
         this.debugKeyboard = debugKeyboard;
         this.keybindingsManager = keybindingsManager;
@@ -103,7 +113,7 @@ public class KeyHandler
         Arrays.fill(keyShift, false);
     }
 
-    public void setKeyBindings(final KeyBindings keyBindings)
+    public void setKeyBindings(@NotNull final KeyBindings keyBindings)
     {
         this.keyBindings = keyBindings;
     }
@@ -122,7 +132,7 @@ public class KeyHandler
         keyShift[keyid] = state;
     }
 
-    private void handleKeyPress(final KeyEvent e)
+    private void handleKeyPress(@NotNull final KeyEvent e)
     {
         if (keybindingsManager.handleKeyPress(e))
         {
@@ -201,7 +211,7 @@ public class KeyHandler
         }
     }
 
-    private void handleKeyTyped(final KeyEvent e)
+    private void handleKeyTyped(@NotNull final KeyEvent e)
     {
         if (keybindingsManager.handleKeyTyped(e))
         {
@@ -218,7 +228,7 @@ public class KeyHandler
         debugKeyboardWrite("keyTyped: ignoring key");
     }
 
-    public void keyPressed(final KeyEvent e)
+    public void keyPressed(@NotNull final KeyEvent e)
     {
         debugKeyboardWrite("pressed", e);
         try
@@ -279,7 +289,7 @@ public class KeyHandler
         }
     }
 
-    public void keyReleased(final KeyEvent e)
+    public void keyReleased(@NotNull final KeyEvent e)
     {
         debugKeyboardWrite("released", e);
         try
@@ -318,7 +328,7 @@ public class KeyHandler
         }
     }
 
-    public void keyTyped(final KeyEvent e)
+    public void keyTyped(@NotNull final KeyEvent e)
     {
         debugKeyboardWrite("typed", e);
         try
@@ -372,7 +382,7 @@ public class KeyHandler
      *
      * @param keyEvent The key event to process.
      */
-    private void updateModifiers(final InputEvent keyEvent)
+    private void updateModifiers(@NotNull final InputEvent keyEvent)
     {
         final int mask = keyEvent.getModifiersEx();
         setKeyShift(KEY_SHIFT_SHIFT, (mask&InputEvent.SHIFT_DOWN_MASK) != 0);
@@ -393,7 +403,7 @@ public class KeyHandler
      * @param type the event type
      * @param e the key event to write
      */
-    private void debugKeyboardWrite(final String type, final KeyEvent e)
+    private void debugKeyboardWrite(@NotNull final String type, @NotNull final KeyEvent e)
     {
         if (debugKeyboard == null)
         {
@@ -407,7 +417,7 @@ public class KeyHandler
      * Writes a message to the keyboard debug.
      * @param message the message to write
      */
-    private void debugKeyboardWrite(final CharSequence message)
+    private void debugKeyboardWrite(@NotNull final CharSequence message)
     {
         if (debugKeyboard == null)
         {

@@ -20,6 +20,8 @@
 package com.realtime.crossfire.jxclient.faces;
 
 import javax.swing.Icon;
+import org.jetbrains.annotations.NotNull;
+import org.jetbrains.annotations.Nullable;
 
 /**
  * A <code>Face</code> represents one image received from a Crossfire server.
@@ -45,6 +47,7 @@ public class Face
     /**
      * The face name as sent by the server.
      */
+    @NotNull
     private final String faceName;
 
     /**
@@ -65,6 +68,7 @@ public class Face
     /**
      * The images for this face. Set to <code>null</code> if unknown.
      */
+    @Nullable
     private FaceImages faceImages = null;
 
     /**
@@ -73,7 +77,7 @@ public class Face
      * @param faceName the face name
      * @param faceChecksum the image checksum as sent by the server
      */
-    public Face(final int faceNum, final String faceName, final int faceChecksum)
+    public Face(final int faceNum, @NotNull final String faceName, final int faceChecksum)
     {
         this.faceNum = faceNum;
         this.faceName = faceName;
@@ -84,7 +88,7 @@ public class Face
      * Sets the images.
      * @param faceImages the images
      */
-    public void setFaceImages(final FaceImages faceImages)
+    public void setFaceImages(@NotNull final FaceImages faceImages)
     {
         this.faceImages = faceImages;
         final Icon imageIcon = faceImages.getOriginalImageIcon();
@@ -108,6 +112,7 @@ public class Face
      * yet known, or if they have been dropped from the cache.
      * @return the images or <code>null</code>
      */
+    @Nullable
     public FaceImages getFaceImages()
     {
         return faceImages;
@@ -117,6 +122,7 @@ public class Face
      * Returns the face name.
      * @return the face name
      */
+    @NotNull
     public String getFaceName()
     {
         return faceName;
@@ -132,6 +138,7 @@ public class Face
     }
 
     /** {@inheritDoc} */
+    @NotNull
     @Override
     public String toString()
     {
@@ -165,7 +172,7 @@ public class Face
 
     /** {@inheritDoc} */
     @Override
-    public boolean equals(final Object obj)
+    public boolean equals(@Nullable final Object obj)
     {
         if (obj == null) return false;
         if (obj.getClass() != Face.class) return false;

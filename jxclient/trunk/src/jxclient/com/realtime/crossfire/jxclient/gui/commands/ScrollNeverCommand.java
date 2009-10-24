@@ -20,6 +20,7 @@
 package com.realtime.crossfire.jxclient.gui.commands;
 
 import com.realtime.crossfire.jxclient.gui.scrollable.GUIScrollable;
+import org.jetbrains.annotations.NotNull;
 
 /**
  * A {@link GUICommand} which scrolls a target {@link GUIScrollable} gui
@@ -36,6 +37,7 @@ public class ScrollNeverCommand implements GUICommand
     /**
      * The scrollable element.
      */
+    @NotNull
     private final GUIScrollable scrollable;
 
     /**
@@ -43,7 +45,7 @@ public class ScrollNeverCommand implements GUICommand
      * @param distance the distance to scroll
      * @param scrollable the scrollable element
      */
-    public ScrollNeverCommand(final int distance, final GUIScrollable scrollable)
+    public ScrollNeverCommand(final int distance, @NotNull final GUIScrollable scrollable)
     {
         this.distance = distance;
         this.scrollable = scrollable;

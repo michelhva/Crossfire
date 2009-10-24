@@ -19,6 +19,8 @@
 //
 package com.realtime.crossfire.jxclient.settings.options;
 
+import org.jetbrains.annotations.NotNull;
+
 /**
  * Indicates about an incorrect option.
  *
@@ -34,7 +36,7 @@ public class OptionException extends Exception
      *
      * @param reason Describes the error.
      */
-    public OptionException(final String reason)
+    public OptionException(@NotNull final String reason)
     {
         super(reason);
     }

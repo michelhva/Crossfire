@@ -23,6 +23,8 @@ import com.realtime.crossfire.jxclient.gui.gui.GUIElement;
 import java.awt.Graphics;
 import java.awt.Image;
 import java.awt.image.BufferedImage;
+import org.jetbrains.annotations.NotNull;
+import org.jetbrains.annotations.Nullable;
 
 /**
  * The state of a gauge.
@@ -33,16 +35,19 @@ public class GaugeState
     /**
      * The owner gui element.
      */
+    @NotNull
     private final GUIElement owner;
 
     /**
      * The image representing a full gauge.
      */
+    @Nullable
     private final BufferedImage fullImage;
 
     /**
      * The image representing a more-than-empty gauge.
      */
+    @Nullable
     private final BufferedImage negativeImage;
 
     /**
@@ -78,6 +83,7 @@ public class GaugeState
     /**
      * The image for painting the "filled" area.
      */
+    @Nullable
     private Image filledPicture = null;
 
     /**
@@ -89,7 +95,7 @@ public class GaugeState
      * @param dx the x-offset for drawing
      * @param dy the y-offset for drawing
      */
-    public GaugeState(final GUIElement owner, final BufferedImage fullImage, final BufferedImage negativeImage, final int dx, final int dy)
+    public GaugeState(@NotNull final GUIElement owner, @Nullable final BufferedImage fullImage, @Nullable final BufferedImage negativeImage, final int dx, final int dy)
     {
         this.owner = owner;
         this.fullImage = fullImage;
@@ -102,7 +108,7 @@ public class GaugeState
      * Updates the values from a {@link Orientation} state.
      * @param orientation the state
      */
-    public void setValues(final Orientation orientation)
+    public void setValues(@NotNull final Orientation orientation)
     {
         final int newFilledX = orientation.getX();
         final int newFilledY = orientation.getY();
@@ -127,7 +133,7 @@ public class GaugeState
      * Draws the gauge image into the given graphics context.
      * @param g the graphics context
      */
-    public void draw(final Graphics g)
+    public void draw(@NotNull final Graphics g)
     {
         if (filledPicture != null)
         {

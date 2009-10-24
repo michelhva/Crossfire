@@ -19,6 +19,8 @@
 //
 package com.realtime.crossfire.jxclient.skin;
 
+import org.jetbrains.annotations.NotNull;
+
 /**
  *
  * @version 1.0
@@ -30,7 +32,7 @@ public class JXCSkinException extends Exception
     /** The serial version UID. */
     private static final long serialVersionUID = 1;
 
-    public JXCSkinException(final String reason)
+    public JXCSkinException(@NotNull final String reason)
     {
         super(reason);
     }

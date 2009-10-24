@@ -21,6 +21,7 @@ package com.realtime.crossfire.jxclient.faces;
 
 import java.util.Collection;
 import java.util.LinkedList;
+import org.jetbrains.annotations.NotNull;
 
 /**
  * Abstract base class for classes implementing {@link FaceQueue}. This class
@@ -33,18 +34,19 @@ public abstract class DefaultFaceQueue implements FaceQueue
     /**
      * The registered {@link FaceQueueListener}s.
      */
+    @NotNull
     private final Collection<FaceQueueListener> faceQueueListeners = new LinkedList<FaceQueueListener>();
 
     /** {@inheritDoc} */
     @Override
-    public void addFaceQueueListener(final FaceQueueListener faceQueueListener)
+    public void addFaceQueueListener(@NotNull final FaceQueueListener faceQueueListener)
     {
         faceQueueListeners.add(faceQueueListener);
     }
 
     /** {@inheritDoc} */
     @Override
-    public void removeFaceQueueListener(final FaceQueueListener faceQueueListener)
+    public void removeFaceQueueListener(@NotNull final FaceQueueListener faceQueueListener)
     {
         faceQueueListeners.remove(faceQueueListener);
     }
@@ -55,7 +57,7 @@ public abstract class DefaultFaceQueue implements FaceQueue
      * @param face the face that has been loaded
      * @param faceImages the face images instance that has been loaded
      */
-    protected void fireFaceLoaded(final Face face, final FaceImages faceImages)
+    protected void fireFaceLoaded(@NotNull final Face face, @NotNull final FaceImages faceImages)
     {
         for (final FaceQueueListener faceQueueListener : faceQueueListeners)
         {
@@ -67,7 +69,7 @@ public abstract class DefaultFaceQueue implements FaceQueue
      * Notify all listener with {@link FaceQueueListener#faceFailed(Face)}.
      * @param face the face that has failed to load
      */
-    protected void fireFaceFailed(final Face face)
+    protected void fireFaceFailed(@NotNull final Face face)
     {
         for (final FaceQueueListener faceQueueListener : faceQueueListeners)
         {

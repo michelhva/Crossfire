@@ -29,6 +29,7 @@ import com.realtime.crossfire.jxclient.skills.SkillSet;
 import com.realtime.crossfire.jxclient.stats.Stats;
 import com.realtime.crossfire.jxclient.stats.StatsParser;
 import java.io.IOException;
+import org.jetbrains.annotations.NotNull;
 
 /**
  * Creates {@link GaugeUpdater} instances from strig representations.
@@ -39,16 +40,19 @@ public class GaugeUpdaterParser
     /**
      * The {@link Stats} instance to use.
      */
+    @NotNull
     private final Stats stats;
 
     /**
      * The {@link ItemsManager} instance to use.
      */
+    @NotNull
     private final ItemsManager itemsManager;
 
     /**
      * The {@link SkillSet} for looking up skill names.
      */
+    @NotNull
     private final SkillSet skillSet;
 
     /**
@@ -57,7 +61,7 @@ public class GaugeUpdaterParser
      * @param itemsManager the items manager instance to use
      * @param skillSet the skill set for looking up skill names
      */
-    public GaugeUpdaterParser(final Stats stats, final ItemsManager itemsManager, final SkillSet skillSet)
+    public GaugeUpdaterParser(@NotNull final Stats stats, @NotNull final ItemsManager itemsManager, @NotNull final SkillSet skillSet)
     {
         this.stats = stats;
         this.itemsManager = itemsManager;
@@ -71,7 +75,8 @@ public class GaugeUpdaterParser
      * @return the gauge updater
      * @throws IOException if the gauge updater value does not exist
      */
-    public GaugeUpdater parseGaugeUpdater(final String name, final ExperienceTable experienceTable) throws IOException
+    @NotNull
+    public GaugeUpdater parseGaugeUpdater(@NotNull final String name, @NotNull final ExperienceTable experienceTable) throws IOException
     {
         try
         {

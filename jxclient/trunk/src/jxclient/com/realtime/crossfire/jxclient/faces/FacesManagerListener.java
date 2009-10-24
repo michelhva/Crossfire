@@ -19,6 +19,8 @@
 //
 package com.realtime.crossfire.jxclient.faces;
 
+import org.jetbrains.annotations.NotNull;
+
 /**
  * Interface for listeners interested in {@link FacesManager} events.
  * @author Andreas Kirschbaum
@@ -29,5 +31,5 @@ public interface FacesManagerListener
      * Called when a {@link Face} has been updated.
      * @param face the face
      */
-    void faceUpdated(final Face face);
+    void faceUpdated(@NotNull final Face face);
 }

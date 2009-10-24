@@ -20,6 +20,7 @@
 package com.realtime.crossfire.jxclient.faces;
 
 import javax.swing.ImageIcon;
+import org.jetbrains.annotations.NotNull;
 
 /**
  * Utility class for creating {@link FaceImages} instances.
@@ -40,7 +41,8 @@ public class FaceImagesUtils
      * @param originalImageIcon the original face
      * @return the face images instance
      */
-    public static FaceImages newFaceImages(final ImageIcon originalImageIcon)
+    @NotNull
+    public static FaceImages newFaceImages(@NotNull final ImageIcon originalImageIcon)
     {
         final ImageIcon scaledImageIcon = new ImageScale2x(originalImageIcon).getScaledImage();
         final ImageIcon magicMapImageIcon = new ImageScale8d(originalImageIcon).getScaledImage();

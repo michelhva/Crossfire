@@ -27,6 +27,7 @@ import java.awt.Graphics;
 import java.awt.Graphics2D;
 import java.awt.Transparency;
 import java.awt.image.BufferedImage;
+import org.jetbrains.annotations.NotNull;
 
 /**
  *
@@ -64,7 +65,7 @@ public class GUIPicture extends GUIElement
      *
      * @param alpha The transparency value.
      */
-    public GUIPicture(final TooltipManager tooltipManager, final JXCWindowRenderer windowRenderer, final String name, final int x, final int y, final int w, final int h, final BufferedImage image, final float alpha)
+    public GUIPicture(@NotNull final TooltipManager tooltipManager, @NotNull final JXCWindowRenderer windowRenderer, @NotNull final String name, final int x, final int y, final int w, final int h, @NotNull final BufferedImage image, final float alpha)
     {
         super(tooltipManager, windowRenderer, name, x, y, w, h, alpha < 1F ? Transparency.TRANSLUCENT : image.getTransparency());
         synchronized (bufferedImageSync)
@@ -91,7 +92,7 @@ public class GUIPicture extends GUIElement
 
     /** {@inheritDoc} */
     @Override
-    protected void render(final Graphics g)
+    protected void render(@NotNull final Graphics g)
     {
     }
 }

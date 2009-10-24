@@ -19,6 +19,8 @@
 //
 package com.realtime.crossfire.jxclient.metaserver;
 
+import org.jetbrains.annotations.NotNull;
+
 /**
  * Asynchronously queries the metaserver and updates a {@link MetaserverModel}
  * instance. Queries are performed regularly every {@link #UPDATE_INTERVAL} but
@@ -42,11 +44,13 @@ public class MetaserverProcessor
     /**
      * The {@link Metaserver} instance to forward to.
      */
+    @NotNull
     private final Metaserver metaserver;
 
     /**
      * The object used for synchronization.
      */
+    @NotNull
     private final Object sync = new Object();
 
     /**
@@ -72,6 +76,7 @@ public class MetaserverProcessor
     /**
      * The query {@link Thread}.
      */
+    @NotNull
     private final Thread thread = new Thread()
     {
         /** {@inheritDoc} */
@@ -118,7 +123,7 @@ public class MetaserverProcessor
      * Creates a new instance.
      * @param metaserver the metaserver instance to forward to
      */
-    public MetaserverProcessor(final Metaserver metaserver)
+    public MetaserverProcessor(@NotNull final Metaserver metaserver)
     {
         this.metaserver = metaserver;
     }

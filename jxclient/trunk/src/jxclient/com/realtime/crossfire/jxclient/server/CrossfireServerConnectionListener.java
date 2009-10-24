@@ -19,6 +19,8 @@
 //
 package com.realtime.crossfire.jxclient.server;
 
+import org.jetbrains.annotations.NotNull;
+
 /**
  * Interface for listeners interested in {@link
  * CrossfireServerConnectionListener} related events.
@@ -30,5 +32,5 @@ public interface CrossfireServerConnectionListener
      * Called whenever the state has changed.
      * @param clientSocketState the new state
      */
-    void clientSocketStateChanged(ClientSocketState clientSocketState);
+    void clientSocketStateChanged(@NotNull ClientSocketState clientSocketState);
 }

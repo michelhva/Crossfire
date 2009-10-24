@@ -23,6 +23,7 @@ import com.realtime.crossfire.jxclient.gui.gui.TooltipManager;
 import com.realtime.crossfire.jxclient.window.JXCWindowRenderer;
 import java.awt.Color;
 import java.awt.Image;
+import org.jetbrains.annotations.NotNull;
 
 /**
  * A gui element implementing a static text field which may contain media tags.
@@ -38,11 +39,13 @@ public class GUILabelLog extends GUILog
     /**
      * The {@link Parser} instance for parsing drawextinfo messages.
      */
+    @NotNull
     private final Parser parser = new Parser();
 
     /**
      * The default color to use for text message not specifying a color.
      */
+    @NotNull
     private final Color defaultColor;
 
     /**
@@ -60,7 +63,7 @@ public class GUILabelLog extends GUILog
      * @param defaultColor the default color to use for text message not
      * specifying a color
      */
-    public GUILabelLog(final TooltipManager tooltipManager, final JXCWindowRenderer windowRenderer, final String name, final int x, final int y, final int w, final int h, final Image backgroundImage, final Fonts fonts, final Color defaultColor)
+    public GUILabelLog(@NotNull final TooltipManager tooltipManager, @NotNull final JXCWindowRenderer windowRenderer, @NotNull final String name, final int x, final int y, final int w, final int h, @NotNull final Image backgroundImage, @NotNull final Fonts fonts, @NotNull final Color defaultColor)
     {
         super(tooltipManager, windowRenderer, name, x, y, w, h, backgroundImage, fonts);
         this.defaultColor = defaultColor;
@@ -77,7 +80,7 @@ public class GUILabelLog extends GUILog
      * Sets the displayed text by parsing a string.
      * @param string the string to parse
      */
-    public void updateText(final CharSequence string)
+    public void updateText(@NotNull final CharSequence string)
     {
         buffer.clear();
         parser.parse(string, defaultColor, buffer);

@@ -35,6 +35,8 @@ import junit.framework.Test;
 import junit.framework.TestCase;
 import junit.framework.TestSuite;
 import junit.textui.TestRunner;
+import org.jetbrains.annotations.NotNull;
+import org.jetbrains.annotations.Nullable;
 
 /**
  * Regression tests for class {@link Parser}.
@@ -45,18 +47,20 @@ public class ParserTest extends TestCase
     /**
      * The default parser.
      */
+    @Nullable
     private Parser parser = null;
 
     /**
      * The default buffer.
      */
+    @Nullable
     private Buffer buffer = null;
 
     /**
      * Creates a new instance.
      * @param name the test case name
      */
-    public ParserTest(final String name)
+    public ParserTest(@NotNull final String name)
     {
         super(name);
     }
@@ -65,6 +69,7 @@ public class ParserTest extends TestCase
      * Creates a new test suite.
      * @return the test suite
      */
+    @NotNull
     public static Test suite()
     {
         return new TestSuite(ParserTest.class);
@@ -74,7 +79,7 @@ public class ParserTest extends TestCase
      * Runs the regression tests.
      * @param args the command line arguments (ignored)
      */
-    public static void main(final String[] args)
+    public static void main(@NotNull final String[] args)
     {
         TestRunner.run(suite());
     }
@@ -318,7 +323,7 @@ public class ParserTest extends TestCase
      *
      * @param expected The expected buffer contents.
      */
-    private void checkResult(final String expected)
+    private void checkResult(@NotNull final String expected)
     {
         assertEquals(expected, dumpBuffer());
     }
@@ -327,6 +332,7 @@ public class ParserTest extends TestCase
      * Returns a string representation of {@link #buffer}.
      * @return the string representation
      */
+    @NotNull
     private String dumpBuffer()
     {
         final StringBuilder sb = new StringBuilder();
@@ -339,7 +345,7 @@ public class ParserTest extends TestCase
      * @param sb the <code>StringBuilder</code> to append to
      * @param buffer the <code>Buffer</code> to append
      */
-    private static void dumpBuffer(final StringBuilder sb, final Buffer buffer)
+    private static void dumpBuffer(@NotNull final StringBuilder sb, @NotNull final Buffer buffer)
     {
         sb.append("buffer:\n");
         synchronized (buffer.getSyncObject())
@@ -358,7 +364,7 @@ public class ParserTest extends TestCase
      * @param sb the <code>StringBuilder</code> to append to
      * @param line the <code>Line</code> to append
      */
-    private static void dumpLine(final StringBuilder sb, final Iterable<Segment> line)
+    private static void dumpLine(@NotNull final StringBuilder sb, @NotNull final Iterable<Segment> line)
     {
         sb.append("line:\n");
         for (final Segment segment : line)
@@ -372,7 +378,7 @@ public class ParserTest extends TestCase
      * @param sb the <code>StringBuilder</code> to append to
      * @param segment the <code>Segment</code> to append
      */
-    private static void dumpSegment(final StringBuilder sb, final Segment segment)
+    private static void dumpSegment(@NotNull final StringBuilder sb, @NotNull final Segment segment)
     {
         sb.append("segment:");
         if (segment.isBold())
@@ -402,7 +408,7 @@ public class ParserTest extends TestCase
      * @param font the font to convert
      * @param sb the string builder to use
      */
-    private static void dumpFont(final FontID font, final StringBuilder sb)
+    private static void dumpFont(@NotNull final FontID font, @NotNull final StringBuilder sb)
     {
         if (font == FontID.PRINT)
         {

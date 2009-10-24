@@ -24,6 +24,8 @@ import com.realtime.crossfire.jxclient.gui.gui.Gui;
 import java.awt.Component;
 import java.awt.event.MouseEvent;
 import javax.swing.event.MouseInputListener;
+import org.jetbrains.annotations.NotNull;
+import org.jetbrains.annotations.Nullable;
 
 /**
  * Tracks mouse actions and delivers mouse events to affected {@link
@@ -44,11 +46,13 @@ public class MouseTracker implements MouseInputListener
     /**
      * The renderer to access dialogs/gui elements.
      */
+    /*XXX:@NotNull*/
     private JXCWindowRenderer windowRenderer = null;
 
     /**
      * The gui element in which the mouse is.
      */
+    @Nullable
     private GUIElement mouseElement = null;
 
     /**
@@ -60,7 +64,7 @@ public class MouseTracker implements MouseInputListener
         this.debugGui = debugGui;
     }
 
-    public void init(final JXCWindowRenderer windowRenderer)
+    public void init(@NotNull final JXCWindowRenderer windowRenderer)
     {
         this.windowRenderer = windowRenderer;
     }
@@ -70,6 +74,7 @@ public class MouseTracker implements MouseInputListener
      *
      * @return The gui element in which the mouse is.
      */
+    @Nullable
     public Component getMouseElement()
     {
         return mouseElement;
@@ -77,19 +82,20 @@ public class MouseTracker implements MouseInputListener
 
     /** {@inheritDoc} */
     @Override
-    public void mouseDragged(final MouseEvent e)
+    public void mouseDragged(@NotNull final MouseEvent e)
     {
-        if (mouseElement != null)
+        final GUIElement element = mouseElement;
+        if (element != null)
         {
-            e.translatePoint(-mouseElement.getElementX()-windowRenderer.getOffsetX(), -mouseElement.getElementY()-windowRenderer.getOffsetY());
-            mouseElement.mouseMoved(e);
-            mouseElement.mouseDragged(e);
+            e.translatePoint(-element.getElementX()-windowRenderer.getOffsetX(), -element.getElementY()-windowRenderer.getOffsetY());
+            element.mouseMoved(e);
+            element.mouseDragged(e);
         }
     }
 
     /** {@inheritDoc} */
     @Override
-    public void mouseMoved(final MouseEvent e)
+    public void mouseMoved(@NotNull final MouseEvent e)
     {
         final GUIElement element = findElement(e);
         enterElement(element, e);
@@ -101,14 +107,14 @@ public class MouseTracker implements MouseInputListener
 
     /** {@inheritDoc} */
     @Override
-    public void mouseClicked(final MouseEvent e)
+    public void mouseClicked(@NotNull final MouseEvent e)
     {
         // ignore
     }
 
     /** {@inheritDoc} */
     @Override
-    public void mousePressed(final MouseEvent e)
+    public void mousePressed(@NotNull final MouseEvent e)
     {
         final GUIElement element = findElement(e);
         enterElement(element, e);
@@ -120,7 +126,7 @@ public class MouseTracker implements MouseInputListener
 
     /** {@inheritDoc} */
     @Override
-    public void mouseReleased(final MouseEvent e)
+    public void mouseReleased(@NotNull final MouseEvent e)
     {
         final GUIElement element = findElement(e);
         final boolean isClicked = element != null && mouseElement == element;
@@ -140,7 +146,7 @@ public class MouseTracker implements MouseInputListener
 
     /** {@inheritDoc} */
     @Override
-    public void mouseEntered(final MouseEvent e)
+    public void mouseEntered(@NotNull final MouseEvent e)
     {
         final GUIElement element = findElement(e);
         enterElement(element, e);
@@ -148,7 +154,7 @@ public class MouseTracker implements MouseInputListener
 
     /** {@inheritDoc} */
     @Override
-    public void mouseExited(final MouseEvent e)
+    public void mouseExited(@NotNull final MouseEvent e)
     {
         enterElement(null, e);
     }
@@ -160,31 +166,32 @@ public class MouseTracker implements MouseInputListener
      *
      * @param e The event parameter.
      */
-    private void enterElement(final GUIElement element, final MouseEvent e)
+    private void enterElement(@Nullable final GUIElement element, @NotNull final MouseEvent e)
     {
         if (mouseElement == element)
         {
             return;
         }
 
-        if (mouseElement != null)
+        final GUIElement tmp = mouseElement;
+        if (tmp != null)
         {
-            mouseElement.mouseExited(e);
+            tmp.mouseExited(e);
             if (debugGui)
             {
-                mouseElement.setChanged();
+                tmp.setChanged();
             }
         }
 
         mouseElement = element;
 
-        if (mouseElement != null)
+        if (element != null)
         {
             if (debugGui)
             {
-                mouseElement.setChanged();
+                element.setChanged();
             }
-            mouseElement.mouseEntered(e);
+            element.mouseEntered(e);
         }
     }
 
@@ -197,7 +204,8 @@ public class MouseTracker implements MouseInputListener
      *
      * @return The gui element found, or <code>null</code> if none was found.
      */
-    private GUIElement findElement(final MouseEvent e)
+    @Nullable
+    private GUIElement findElement(@NotNull final MouseEvent e)
     {
         GUIElement elected = null;
 
@@ -230,7 +238,8 @@ public class MouseTracker implements MouseInputListener
         return elected;
     }
 
-    private GUIElement manageMouseEvents(final Gui gui, final MouseEvent e)
+    @Nullable
+    private GUIElement manageMouseEvents(@NotNull final Gui gui, @NotNull final MouseEvent e)
     {
         final int x = e.getX()-windowRenderer.getOffsetX();
         final int y = e.getY()-windowRenderer.getOffsetY();

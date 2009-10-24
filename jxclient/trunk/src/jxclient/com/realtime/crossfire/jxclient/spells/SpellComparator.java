@@ -21,6 +21,7 @@ package com.realtime.crossfire.jxclient.spells;
 
 import java.io.Serializable;
 import java.util.Comparator;
+import org.jetbrains.annotations.NotNull;
 
 /**
  * A {@link Comparator} to compare {@link Spell} instances by spell path and
@@ -36,7 +37,7 @@ public class SpellComparator implements Comparator<Spell>, Serializable
 
     /** {@inheritDoc} */
     @Override
-    public int compare(final Spell o1, final Spell o2)
+    public int compare(@NotNull final Spell o1, @NotNull final Spell o2)
     {
         final int path1 = o1.getPath();
         final int path2 = o2.getPath();

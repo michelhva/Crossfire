@@ -19,6 +19,8 @@
 //
 package com.realtime.crossfire.jxclient.map;
 
+import org.jetbrains.annotations.NotNull;
+
 /**
  * Interface for listeners interested in {@link CfMapSquare} events.
  * @author Andreas Kirschbaum
@@ -29,5 +31,5 @@ public interface CfMapSquareListener
      * The map square has changed.
      * @param mapSquare the changed map square
      */
-    void squareModified(CfMapSquare mapSquare);
+    void squareModified(@NotNull CfMapSquare mapSquare);
 }

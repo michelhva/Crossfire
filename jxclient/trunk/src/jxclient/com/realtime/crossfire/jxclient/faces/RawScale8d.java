@@ -21,6 +21,7 @@ package com.realtime.crossfire.jxclient.faces;
 
 import java.util.HashMap;
 import java.util.Map;
+import org.jetbrains.annotations.NotNull;
 
 /**
  * Scales down a raw image to an eigth in both dimensions.
@@ -29,9 +30,11 @@ import java.util.Map;
 public class RawScale8d
 {
     /** The source image data. */
+    @NotNull
     private final int[] srcImage;
 
     /** The destination image data. */
+    @NotNull
     private final int[] dstImage;
 
     /** The width of the source image. */
@@ -43,6 +46,7 @@ public class RawScale8d
     /**
      * Maps pixel value to number of pixels.
      */
+    @NotNull
     private final Map<Integer, Integer> pixels = new HashMap<Integer, Integer>();
 
     /**
@@ -51,7 +55,7 @@ public class RawScale8d
      * @param dataWidth the width of the source image
      * @param dataHeight the height of the source image
      */
-    public RawScale8d(final int[] imageData, final int dataWidth, final int dataHeight)
+    public RawScale8d(@NotNull final int[] imageData, final int dataWidth, final int dataHeight)
     {
         width = dataWidth;
         height = dataHeight;
@@ -123,6 +127,7 @@ public class RawScale8d
      * @return an array of pixels 64 times smaller than the input array
      * containing the scaled down image
      */
+    @NotNull
     public int[] getScaledData()
     {
         for (int x = 0; x < width/8; x++)

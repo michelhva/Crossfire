@@ -29,6 +29,8 @@ import java.awt.Image;
 import java.awt.Transparency;
 import java.awt.image.BufferedImage;
 import java.awt.image.RenderedImage;
+import org.jetbrains.annotations.NotNull;
+import org.jetbrains.annotations.Nullable;
 
 /**
  * Displays a value as a graphical gauge that's filling state depends on the
@@ -47,27 +49,32 @@ public class GUIGauge extends GUIElement implements GUIGaugeListener
      * The tooltip prefix. It is prepended to {@link #tooltipText} to form the
      * tooltip.
      */
+    @Nullable
     private final String tooltipPrefix;
 
     /**
      * The tooltip suffix. It is appended to {@link #tooltipPrefix} to form the
      * tooltip.
      */
+    @NotNull
     private String tooltipText = "";
 
     /**
      * The image representing an empty gauge.
      */
+    @Nullable
     private final Image emptyImage;
 
     /**
      * The gauge's orientation.
      */
+    @NotNull
     private final Orientation orientation;
 
     /**
      * The gauge state.
      */
+    @NotNull
     private final GaugeState gaugeState;
 
     /**
@@ -90,7 +97,7 @@ public class GUIGauge extends GUIElement implements GUIGaugeListener
      * @param tooltipPrefix the prefix for displaying tooltips; if set to
      * <code>null</code> no tooltips are shown
      */
-    public GUIGauge(final TooltipManager tooltipManager, final JXCWindowRenderer windowRenderer, final String name, final int x, final int y, final int w, final int h, final BufferedImage fullImage, final BufferedImage negativeImage, final BufferedImage emptyImage, final Orientation orientation, final String tooltipPrefix)
+    public GUIGauge(@NotNull final TooltipManager tooltipManager, @NotNull final JXCWindowRenderer windowRenderer, @NotNull final String name, final int x, final int y, final int w, final int h, @Nullable final BufferedImage fullImage, @Nullable final BufferedImage negativeImage, @Nullable final BufferedImage emptyImage, @NotNull final Orientation orientation, @Nullable final String tooltipPrefix)
     {
         super(tooltipManager, windowRenderer, name, x, y, w, h, Transparency.TRANSLUCENT);
         checkSize(fullImage, "full", w, h);
@@ -124,7 +131,7 @@ public class GUIGauge extends GUIElement implements GUIGaugeListener
      * @throws IllegalArgumentException if <code>image</code> is not
      * <code>null</code> and it's size is not <code>w</code>x<code>h</code>
      */
-    private static void checkSize(final RenderedImage image, final String name, final int w, final int h)
+    private static void checkSize(@Nullable final RenderedImage image, @NotNull final String name, final int w, final int h)
     {
         if (image == null)
         {
@@ -144,7 +151,7 @@ public class GUIGauge extends GUIElement implements GUIGaugeListener
 
     /** {@inheritDoc} */
     @Override
-    protected void render(final Graphics g)
+    protected void render(@NotNull final Graphics g)
     {
         final Graphics2D g2 = (Graphics2D)g;
         g2.setBackground(new Color(0, 0, 0, 0.0f));
@@ -158,7 +165,7 @@ public class GUIGauge extends GUIElement implements GUIGaugeListener
 
     /** {@inheritDoc} */
     @Override
-    public void setValues(final int curValue, final int minValue, final int maxValue, final String labelText, final String tooltipText)
+    public void setValues(final int curValue, final int minValue, final int maxValue, @NotNull final String labelText, @NotNull final String tooltipText)
     {
         if (!orientation.setValues(curValue, minValue, maxValue) && this.tooltipText.equals(tooltipText))
         {

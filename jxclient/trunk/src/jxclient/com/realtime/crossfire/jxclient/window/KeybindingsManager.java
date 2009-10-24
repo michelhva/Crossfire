@@ -26,6 +26,8 @@ import com.realtime.crossfire.jxclient.gui.keybindings.KeyBindings;
 import com.realtime.crossfire.jxclient.settings.Filenames;
 import java.awt.event.KeyEvent;
 import java.io.IOException;
+import org.jetbrains.annotations.NotNull;
+import org.jetbrains.annotations.Nullable;
 
 /**
  * Manages key bindings.
@@ -36,33 +38,39 @@ public class KeybindingsManager
     /**
      * The commands instance to use.
      */
+    @NotNull
     private final Commands commands;
 
     /**
      * The {@link GuiManager} to use.
      */
+    @NotNull
     private final GuiManager guiManager;
 
     /**
      * The {@link Macros} instance to use.
      */
+    @NotNull
     private final Macros macros;
 
     /**
      * The global key bindings.
      */
+    @NotNull
     private final KeyBindings keyBindings;
 
     /**
      * The key bindings for the current user. Set to <code>null</code> if no
      * user is logged in.
      */
+    @Nullable
     private KeyBindings characterKeyBindings = null;
 
     /**
      * The current key binding state. Set to <code>null</code> if no key
      * binding dialog is active.
      */
+    @Nullable
     private KeyBindingState keyBindingState = null;
 
     /**
@@ -71,7 +79,7 @@ public class KeybindingsManager
      * @param guiManager the gui manager to use
      * @param macros the macros instance to use
      */
-    public KeybindingsManager(final Commands commands, final GuiManager guiManager, final Macros macros)
+    public KeybindingsManager(@NotNull final Commands commands, @NotNull final GuiManager guiManager, @NotNull final Macros macros)
     {
         this.commands = commands;
         this.guiManager = guiManager;
@@ -118,7 +126,7 @@ public class KeybindingsManager
      * @param cmdlist the commands for the key binding
      * @return whether the key bindings dialog should be opened
      */
-    public boolean createKeyBinding(final boolean perCharacter, final GUICommandList cmdlist)
+    public boolean createKeyBinding(final boolean perCharacter, @NotNull final GUICommandList cmdlist)
     {
         final KeyBindings bindings = getKeyBindings(perCharacter);
         if (bindings == null)
@@ -137,6 +145,7 @@ public class KeybindingsManager
      * @return the key bindings or <code>null</code> if no per-character
      * bindings exist because no character is logged in
      */
+    @Nullable
     private KeyBindings getKeyBindings(final boolean perCharacter)
     {
         return perCharacter ? characterKeyBindings : keyBindings;
@@ -148,7 +157,7 @@ public class KeybindingsManager
      * @param hostname the character's hostname
      * @param character the character's name
      */
-    public void loadPerCharacterBindings(final CharSequence hostname, final CharSequence character)
+    public void loadPerCharacterBindings(@NotNull final CharSequence hostname, @NotNull final CharSequence character)
     {
         characterKeyBindings = new KeyBindings(Filenames.getKeybindingsFile(hostname, character), commands, guiManager, macros);
         try
@@ -287,7 +296,7 @@ public class KeybindingsManager
      * @param e the key event
      * @return whether the event has been consumed
      */
-    public boolean handleKeyTyped(final KeyEvent e)
+    public boolean handleKeyTyped(@NotNull final KeyEvent e)
     {
         if (characterKeyBindings != null && characterKeyBindings.handleKeyTyped(e))
         {
@@ -302,7 +311,7 @@ public class KeybindingsManager
      * @param e the key event
      * @return whether the event has been consumed
      */
-    public boolean handleKeyPress(final KeyEvent e)
+    public boolean handleKeyPress(@NotNull final KeyEvent e)
     {
         if (characterKeyBindings != null && characterKeyBindings.handleKeyPress(e))
         {

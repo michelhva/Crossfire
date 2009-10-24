@@ -21,6 +21,8 @@ package com.realtime.crossfire.jxclient.gui.gui;
 
 import com.realtime.crossfire.jxclient.gui.label.AbstractLabel;
 import com.realtime.crossfire.jxclient.window.JXCWindow;
+import org.jetbrains.annotations.NotNull;
+import org.jetbrains.annotations.Nullable;
 
 /**
  * Manages the tooltip display. An {@link AbstractLabel} is moved/resized to
@@ -37,30 +39,34 @@ public class TooltipManager
     /**
      * The {@link JXCWindow} to manage the tooltips of.
      */
+    @NotNull
     private final JXCWindow window;
 
     /**
      * The tooltip label. Set to <code>null</code> if the skin does not use
      * tooltips.
      */
+    @Nullable
     private AbstractLabel tooltip = null;
 
     /**
      * The last known active gui element. It is used to suppress unnecessary
      * change events to the tooltip label.
      */
+    @Nullable
     private GUIElement activeGuiElement = null;
 
     /**
      * Synchronizes accesses to {@link #activeGuiElement}.
      */
+    @NotNull
     private final Object activeGuiElementSync = new Object();
 
     /**
      * Creates a new instance.
      * @param window the window to manage the tooltips of
      */
-    public TooltipManager(final JXCWindow window)
+    public TooltipManager(@NotNull final JXCWindow window)
     {
         this.window = window;
     }
@@ -69,7 +75,7 @@ public class TooltipManager
      * Sets the tooltip label.
      * @param tooltip the tooltip label, or <code>null</code>
      */
-    public void setTooltip(final AbstractLabel tooltip)
+    public void setTooltip(@Nullable final AbstractLabel tooltip)
     {
         this.tooltip = tooltip;
     }
@@ -90,9 +96,8 @@ public class TooltipManager
      * Displays the tooltip for a GUI element.
      * @param guiElement the GUI element to show the tooltip of
      */
-    public void setElement(final GUIElement guiElement)
+    public void setElement(@NotNull final GUIElement guiElement)
     {
-        assert guiElement != null;
         synchronized (activeGuiElementSync)
         {
             if (activeGuiElement == null)
@@ -114,9 +119,8 @@ public class TooltipManager
      * element is not active.
      * @param guiElement the gui element to remove the tooltip of
      */
-    public void unsetElement(final GUIElement guiElement)
+    public void unsetElement(@NotNull final GUIElement guiElement)
     {
-        assert guiElement != null;
         synchronized (activeGuiElementSync)
         {
             if (activeGuiElement == guiElement)
@@ -132,9 +136,8 @@ public class TooltipManager
      * element is not active.
      * @param guiElement the gui element to process
      */
-    public void updateElement(final GUIElement guiElement)
+    public void updateElement(@NotNull final GUIElement guiElement)
     {
-        assert guiElement != null;
         synchronized (activeGuiElementSync)
         {
             if (activeGuiElement == guiElement)

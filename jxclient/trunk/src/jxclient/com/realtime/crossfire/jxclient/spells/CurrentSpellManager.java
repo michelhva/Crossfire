@@ -21,6 +21,8 @@ package com.realtime.crossfire.jxclient.spells;
 
 import java.util.ArrayList;
 import java.util.Collection;
+import org.jetbrains.annotations.NotNull;
+import org.jetbrains.annotations.Nullable;
 
 /**
  * Manages the currently selected spell.
@@ -32,11 +34,13 @@ public class CurrentSpellManager
     /**
      * The listeners to notify object changed spell objects.
      */
+    @NotNull
     private final Collection<CurrentSpellManagerListener> listeners = new ArrayList<CurrentSpellManagerListener>();
 
     /**
      * The currently selected spell, or <code>null</code>.
      */
+    @Nullable
     private Spell currentSpell = null;
 
     /**
@@ -44,7 +48,7 @@ public class CurrentSpellManager
      *
      * @param spell The spell to selected.
      */
-    public void setCurrentSpell(final Spell spell)
+    public void setCurrentSpell(@Nullable final Spell spell)
     {
         if (currentSpell == spell)
         {
@@ -63,6 +67,7 @@ public class CurrentSpellManager
      *
      * @return The spell object, or <code>null</code> if no spell is selected.
      */
+    @Nullable
     public Spell getCurrentSpell()
     {
         return currentSpell;
@@ -74,7 +79,7 @@ public class CurrentSpellManager
      *
      * @param listener The listener to add.
      */
-    public void addSpellListener(final CurrentSpellManagerListener listener)
+    public void addSpellListener(@NotNull final CurrentSpellManagerListener listener)
     {
         listeners.add(listener);
     }
@@ -84,7 +89,7 @@ public class CurrentSpellManager
      *
      * @param listener The listener to remove.
      */
-    public void removeSpellListener(final CurrentSpellManagerListener listener)
+    public void removeSpellListener(@NotNull final CurrentSpellManagerListener listener)
     {
         listeners.remove(listener);
     }

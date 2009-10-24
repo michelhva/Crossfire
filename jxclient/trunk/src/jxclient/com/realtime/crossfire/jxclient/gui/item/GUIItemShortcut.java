@@ -38,6 +38,8 @@ import java.awt.Font;
 import java.awt.Graphics;
 import java.awt.Graphics2D;
 import java.awt.Image;
+import org.jetbrains.annotations.NotNull;
+import org.jetbrains.annotations.Nullable;
 
 public class GUIItemShortcut extends GUIItem
 {
@@ -49,32 +51,42 @@ public class GUIItemShortcut extends GUIItem
     /**
      * The background color of this item.
      */
+    @NotNull
     private static final Color BACKGROUND_COLOR = new Color(0, 0, 0, 0.0f);
 
     /**
      * The default tooltip text for empty slots.
      */
+    @NotNull
     private static final String DEFAULT_TOOLTIP_TEXT = "(empty)";
 
+    @NotNull
     private final Shortcuts shortcuts;
 
     /**
      * The {@link FacesManager} instance for looking up faces.
      */
+    @NotNull
     private final FacesManager facesManager;
 
+    @Nullable
     private final Color cursedColor;
 
+    @Nullable
     private final Image cursedImage;
 
+    @Nullable
     private final Color appliedColor;
 
+    @Nullable
     private final Image appliedImage;
 
+    @NotNull
     private final Font font;
 
     private final int index;
 
+    @NotNull
     private final CurrentSpellManager currentSpellManager;
 
     /**
@@ -91,13 +103,15 @@ public class GUIItemShortcut extends GUIItem
      * The currently monitored {@link Shortcut} instance. Set to
      * <code>null</code> if not active.
      */
+    @Nullable
     private Shortcut shortcut = null;
 
+    @NotNull
     private final ShortcutsListener shortcutsListener = new ShortcutsListener()
     {
         /** {@inheritDoc} */
         @Override
-        public void shortcutAdded(final int index, final Shortcut shortcut)
+        public void shortcutAdded(final int index, @NotNull final Shortcut shortcut)
         {
             if (index == GUIItemShortcut.this.index)
             {
@@ -107,7 +121,7 @@ public class GUIItemShortcut extends GUIItem
 
         /** {@inheritDoc} */
         @Override
-        public void shortcutRemoved(final int index, final Shortcut shortcut)
+        public void shortcutRemoved(final int index, @NotNull final Shortcut shortcut)
         {
             if (index == GUIItemShortcut.this.index)
             {
@@ -116,6 +130,7 @@ public class GUIItemShortcut extends GUIItem
         }
     };
 
+    @NotNull
     private final ShortcutListener shortcutListener = new ShortcutListener()
     {
         /** {@inheritDoc} */
@@ -130,11 +145,12 @@ public class GUIItemShortcut extends GUIItem
     /**
      * The {@link FacesManagerListener} registered to detect updated faces.
      */
+    @NotNull
     private final FacesManagerListener facesManagerListener = new FacesManagerListener()
     {
         /** {@inheritDoc} */
         @Override
-        public void faceUpdated(final Face face)
+        public void faceUpdated(@NotNull final Face face)
         {
             if (shortcut != null && shortcut instanceof ShortcutSpell && face.getFaceNum() == ((ShortcutSpell)shortcut).getSpell().getFaceNum())
             {
@@ -143,7 +159,7 @@ public class GUIItemShortcut extends GUIItem
         }
     };
 
-    public GUIItemShortcut(final TooltipManager tooltipManager, final JXCWindowRenderer windowRenderer, final String name, final int x, final int y, final int w, final int h, final Color cursedColor, final Image cursedImage, final Color appliedColor, final Image appliedImage, final int index, final FacesManager facesManager, final Shortcuts shortcuts, final Font font, final CurrentSpellManager currentSpellManager)
+    public GUIItemShortcut(@NotNull final TooltipManager tooltipManager, @NotNull final JXCWindowRenderer windowRenderer, @NotNull final String name, final int x, final int y, final int w, final int h, @Nullable final Color cursedColor, @Nullable final Image cursedImage, @Nullable final Color appliedColor, @Nullable final Image appliedImage, final int index, @NotNull final FacesManager facesManager, @NotNull final Shortcuts shortcuts, @NotNull final Font font, @NotNull final CurrentSpellManager currentSpellManager)
     {
         super(tooltipManager, windowRenderer, name, x, y, w, h);
         this.shortcuts = shortcuts;
@@ -177,7 +193,7 @@ public class GUIItemShortcut extends GUIItem
      * #shortcutListener}.
      * @param shortcut the new shortcut
      */
-    private void setShortcut(final Shortcut shortcut)
+    private void setShortcut(@Nullable final Shortcut shortcut)
     {
         if (this.shortcut == shortcut)
         {
@@ -237,7 +253,7 @@ public class GUIItemShortcut extends GUIItem
 
     /* {@inheritDoc} */
     @Override
-    protected void render(final Graphics g)
+    protected void render(@NotNull final Graphics g)
     {
         final Graphics2D g2 = (Graphics2D)g;
         g2.setBackground(BACKGROUND_COLOR);

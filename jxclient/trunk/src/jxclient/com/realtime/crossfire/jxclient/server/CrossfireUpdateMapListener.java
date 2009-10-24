@@ -19,6 +19,8 @@
 //
 package com.realtime.crossfire.jxclient.server;
 
+import org.jetbrains.annotations.NotNull;
+
 /**
  * Interface for listeners interested in map related commands.
  * @author Andreas Kirschbaum
@@ -98,5 +100,5 @@ public interface CrossfireUpdateMapListener
      * @param flags the animation flags
      * @param faces the faces list; must not be modified
      */
-    void addAnimation(int animation, int flags, int[] faces);
+    void addAnimation(int animation, int flags, @NotNull int[] faces);
 }

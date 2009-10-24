@@ -27,6 +27,8 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Iterator;
 import java.util.List;
+import org.jetbrains.annotations.NotNull;
+import org.jetbrains.annotations.Nullable;
 
 /**
  * Manages the contents of one text line. A text line consists of a sequence of
@@ -40,6 +42,7 @@ public class Line implements Iterable<Segment>
      * The segments this line consists of. The first segment should be
      * displayed first; subsequent segments are to be displyed without padding.
      */
+    @NotNull
     private final List<Segment> segments = new ArrayList<Segment>();
 
     /**
@@ -56,12 +59,13 @@ public class Line implements Iterable<Segment>
      * @param font the font to use
      * @param color the color to use; <code>null</code> means "default color"
      */
-    public void addSegment(final String text, final boolean bold, final boolean italic, final boolean underline, final FontID font, final Color color)
+    public void addSegment(@NotNull final String text, final boolean bold, final boolean italic, final boolean underline, @NotNull final FontID font, @Nullable final Color color)
     {
         segments.add(new Segment(text, bold, italic, underline, font, color));
     }
 
     /** {@inheritDoc} */
+    @NotNull
     @Override
     public Iterator<Segment> iterator()
     {
@@ -72,6 +76,7 @@ public class Line implements Iterable<Segment>
      * Returns the last segment.
      * @return the last segment or <code>null</code> if the line is empty
      */
+    @Nullable
     public Segment getLastSegment()
     {
         return segments.isEmpty() ? null : segments.get(segments.size()-1);
@@ -116,7 +121,7 @@ public class Line implements Iterable<Segment>
      * @param fonts the fonts instance to use
      * @param context the font render context to use
      */
-    public void updateAttributes(final int begin, final int end, final int y, final int minY, final Fonts fonts, final FontRenderContext context)
+    public void updateAttributes(final int begin, final int end, final int y, final int minY, @NotNull final Fonts fonts, @NotNull final FontRenderContext context)
     {
         for (int i = begin; i < end; i++)
         {

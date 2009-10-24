@@ -26,6 +26,7 @@ import com.realtime.crossfire.jxclient.timeouts.Timeouts;
 import com.realtime.crossfire.jxclient.window.GUICommandList;
 import com.realtime.crossfire.jxclient.window.JXCWindowRenderer;
 import java.awt.event.MouseEvent;
+import org.jetbrains.annotations.NotNull;
 
 /**
  * Abstract base class for button classes.
@@ -57,8 +58,10 @@ public abstract class AbstractButton extends ActivatableGUIElement
     /**
      * The commands to execute when the button is elected.
      */
+    @NotNull
     private final GUICommandList commandList;
 
+    @NotNull
     private final TimeoutEvent timeoutEvent = new TimeoutEvent()
     {
         /** {@inheritDoc} */
@@ -94,7 +97,7 @@ public abstract class AbstractButton extends ActivatableGUIElement
      *
      * @param commandList The commands to execute when the button is elected.
      */
-    protected AbstractButton(final TooltipManager tooltipManager, final JXCWindowRenderer windowRenderer, final String name, final int x, final int y, final int w, final int h, final int transparency, final boolean autoRepeat, final GUICommandList commandList)
+    protected AbstractButton(@NotNull final TooltipManager tooltipManager, @NotNull final JXCWindowRenderer windowRenderer, @NotNull final String name, final int x, final int y, final int w, final int h, final int transparency, final boolean autoRepeat, @NotNull final GUICommandList commandList)
     {
         super(tooltipManager, windowRenderer, name, x, y, w, h, transparency);
         if (commandList == null) throw new IllegalArgumentException();
@@ -111,7 +114,7 @@ public abstract class AbstractButton extends ActivatableGUIElement
 
     /** {@inheritDoc} */
     @Override
-    public void mouseReleased(final MouseEvent e)
+    public void mouseReleased(@NotNull final MouseEvent e)
     {
         super.mouseReleased(e);
         final int b = e.getButton();
@@ -139,7 +142,7 @@ public abstract class AbstractButton extends ActivatableGUIElement
 
     /** {@inheritDoc} */
     @Override
-    public void mousePressed(final MouseEvent e)
+    public void mousePressed(@NotNull final MouseEvent e)
     {
         super.mousePressed(e);
         final int b = e.getButton();
@@ -164,7 +167,7 @@ public abstract class AbstractButton extends ActivatableGUIElement
 
     /** {@inheritDoc} */
     @Override
-    public void mouseExited(final MouseEvent e)
+    public void mouseExited(@NotNull final MouseEvent e)
     {
         if (autoRepeat)
         {

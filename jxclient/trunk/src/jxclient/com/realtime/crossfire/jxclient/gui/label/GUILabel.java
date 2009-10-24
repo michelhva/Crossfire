@@ -26,6 +26,8 @@ import java.awt.Font;
 import java.awt.Graphics2D;
 import java.awt.geom.RectangularShape;
 import java.awt.image.BufferedImage;
+import org.jetbrains.annotations.NotNull;
+import org.jetbrains.annotations.Nullable;
 
 /**
  * Abstrct base class for labels that render text.
@@ -42,16 +44,19 @@ public abstract class GUILabel extends AbstractLabel
     /**
      * The font for rendering the label text.
      */
+    @Nullable
     private final Font textFont;
 
     /**
      * The text color.
      */
+    @NotNull
     private final Color textColor;
 
     /**
      * The text alignment.
      */
+    @NotNull
     private final Alignment textAlignment;
 
     /**
@@ -97,7 +102,7 @@ public abstract class GUILabel extends AbstractLabel
      *
      * @param textAlignment The text alignment.
      */
-    protected GUILabel(final TooltipManager tooltipManager, final JXCWindowRenderer windowRenderer, final String name, final int x, final int y, final int w, final int h, final BufferedImage picture, final Font textFont, final Color textColor, final Color backgroundColor, final Alignment textAlignment)
+    protected GUILabel(@NotNull final TooltipManager tooltipManager, @NotNull final JXCWindowRenderer windowRenderer, @NotNull final String name, final int x, final int y, final int w, final int h, @Nullable final BufferedImage picture, @Nullable final Font textFont, @NotNull final Color textColor, @NotNull final Color backgroundColor, @NotNull final Alignment textAlignment)
     {
         super(tooltipManager, windowRenderer, name, x, y, w, h, picture, backgroundColor);
         this.textFont = textFont;
@@ -132,7 +137,7 @@ public abstract class GUILabel extends AbstractLabel
      *
      * @return The line height.
      */
-    protected int drawLine(final Graphics2D g, final int y0, final int h0, final String text)
+    protected int drawLine(@NotNull final Graphics2D g, final int y0, final int h0, @NotNull final String text)
     {
         if (textFont == null)
         {
@@ -167,6 +172,7 @@ public abstract class GUILabel extends AbstractLabel
      *
      * @return The font.
      */
+    @Nullable
     protected Font getTextFont()
     {
         return textFont;

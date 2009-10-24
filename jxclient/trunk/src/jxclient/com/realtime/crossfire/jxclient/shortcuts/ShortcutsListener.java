@@ -21,6 +21,7 @@
 package com.realtime.crossfire.jxclient.shortcuts;
 
 import java.util.EventListener;
+import org.jetbrains.annotations.NotNull;
 
 /**
  * Interface for listeners for {@link Shortcut} changes.
@@ -34,12 +35,12 @@ public interface ShortcutsListener extends EventListener
      * @param index the shortcut index
      * @param shortcut the shortcut instance
      */
-    void shortcutAdded(int index, Shortcut shortcut);
+    void shortcutAdded(int index, @NotNull Shortcut shortcut);
 
     /**
      * A shortcut has been removed.
      * @param index the shortcut index
      * @param shortcut the shortcut instance
      */
-    void shortcutRemoved(int index, Shortcut shortcut);
+    void shortcutRemoved(int index, @NotNull Shortcut shortcut);
 }

@@ -24,6 +24,8 @@ import java.awt.image.BufferedImage;
 import java.io.IOException;
 import java.io.InputStream;
 import javax.imageio.ImageIO;
+import org.jetbrains.annotations.NotNull;
+import org.jetbrains.annotations.Nullable;
 
 /**
  * Creates {@link BufferedImage} instances from strig representations. Each
@@ -35,18 +37,20 @@ public class ImageParser
     /**
      * All defined images.
      */
+    @NotNull
     private final JXCSkinCache<BufferedImage> definedImages = new JXCSkinCache<BufferedImage>("image");
 
     /**
      * The {@link JXCSkinSource} for loading resources.
      */
+    @NotNull
     private final JXCSkinSource skinSource;
 
     /**
      * Creates a new instance.
      * @param skinSource the skin source for loading resources
      */
-    public ImageParser(final JXCSkinSource skinSource)
+    public ImageParser(@NotNull final JXCSkinSource skinSource)
     {
         this.skinSource = skinSource;
     }
@@ -66,7 +70,8 @@ public class ImageParser
      * @return the image, or <code>null</code> if <code>color!=null</code>
      * @throws IOException if the image cannot be loaded
      */
-    public BufferedImage getImage(final Color color, final String name) throws IOException
+    @Nullable
+    public BufferedImage getImage(@Nullable final Color color, @NotNull final String name) throws IOException
     {
         return color != null ? null : getImage(name);
     }
@@ -77,7 +82,8 @@ public class ImageParser
      * @return the image
      * @throws IOException if the image cannot be loaded
      */
-    public BufferedImage getImage(final String name) throws IOException
+    @NotNull
+    public BufferedImage getImage(@NotNull final String name) throws IOException
     {
         try
         {

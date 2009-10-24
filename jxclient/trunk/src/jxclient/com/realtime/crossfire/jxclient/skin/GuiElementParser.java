@@ -21,6 +21,7 @@ package com.realtime.crossfire.jxclient.skin;
 
 import com.realtime.crossfire.jxclient.gui.label.AbstractLabel;
 import com.realtime.crossfire.jxclient.gui.textinput.GUIText;
+import org.jetbrains.annotations.NotNull;
 
 /**
  * Creates gui element instances from string representations.
@@ -31,13 +32,14 @@ public class GuiElementParser
     /**
      * The skin for lookin up defined GUI elements.
      */
+    @NotNull
     private final JXCSkin skin;
 
     /**
      * Creates a new instance.
      * @param skin the skin for looking up defined GUI elements
      */
-    public GuiElementParser(final JXCSkin skin)
+    public GuiElementParser(@NotNull final JXCSkin skin)
     {
         this.skin = skin;
     }
@@ -48,7 +50,8 @@ public class GuiElementParser
      * @return the <code>GUIText</code> element
      * @throws JXCSkinException if the element name is undefined
      */
-    public GUIText lookupTextElement(final String name) throws JXCSkinException
+    @NotNull
+    public GUIText lookupTextElement(@NotNull final String name) throws JXCSkinException
     {
         final Object element = skin.lookupGuiElement(name);
         if (!(element instanceof GUIText))
@@ -65,7 +68,8 @@ public class GuiElementParser
      * @return the <code>AbstractLabel</code> element
      * @throws JXCSkinException if the element name is undefined
      */
-    public AbstractLabel lookupLabelElement(final String name) throws JXCSkinException
+    @NotNull
+    public AbstractLabel lookupLabelElement(@NotNull final String name) throws JXCSkinException
     {
         final Object element = skin.lookupGuiElement(name);
         if (!(element instanceof AbstractLabel))

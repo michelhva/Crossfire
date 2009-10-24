@@ -21,6 +21,7 @@ package com.realtime.crossfire.jxclient.gui.commands;
 
 import com.realtime.crossfire.jxclient.window.GuiState;
 import com.realtime.crossfire.jxclient.window.JXCWindow;
+import org.jetbrains.annotations.NotNull;
 
 /**
  * A {@link GUICommand} which shows the server selection screen.
@@ -31,13 +32,14 @@ public class MetaCommand implements GUICommand
     /**
      * The main window.
      */
+    @NotNull
     private final JXCWindow window;
 
     /**
      * Creates a new instance.
      * @param window the mainwindow
      */
-    public MetaCommand(final JXCWindow window)
+    public MetaCommand(@NotNull final JXCWindow window)
     {
         this.window = window;
     }

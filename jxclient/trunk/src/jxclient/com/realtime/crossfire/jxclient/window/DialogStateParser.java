@@ -36,6 +36,7 @@ import java.io.Writer;
 import java.util.LinkedList;
 import java.util.List;
 import java.util.regex.Pattern;
+import org.jetbrains.annotations.NotNull;
 
 /**
  * Utility class to store or restore the dialog states to/from a file.
@@ -47,6 +48,7 @@ public class DialogStateParser
     /**
      * The pattern to split fields in the save file.
      */
+    @NotNull
     private static final Pattern PATTERN = Pattern.compile(" ");
 
     /**
@@ -61,7 +63,7 @@ public class DialogStateParser
      * @param skin the skin to update
      * @param windowRenderer the window renderer instance to attach to
      */
-    public static void load(final JXCSkin skin, final JXCWindowRenderer windowRenderer)
+    public static void load(@NotNull final JXCSkin skin, @NotNull final JXCWindowRenderer windowRenderer)
     {
         final String skinName = skin.getSkinName();
         final File dialogsFile;
@@ -209,7 +211,7 @@ public class DialogStateParser
      * @param skin the skin to update
      * @param windowRenderer the window renderer instance to attach to
      */
-    public static void save(final JXCSkin skin, final JXCWindowRenderer windowRenderer)
+    public static void save(@NotNull final JXCSkin skin, @NotNull final JXCWindowRenderer windowRenderer)
     {
         if (!skin.hasChangedDialog())
         {
@@ -300,7 +302,7 @@ public class DialogStateParser
      *
      * @throws IOException If an I/O error occurs.
      */
-    private static void saveDialog(final Gui dialog, final String type, final Writer bw) throws IOException
+    private static void saveDialog(@NotNull final Gui dialog, @NotNull final String type, @NotNull final Writer bw) throws IOException
     {
         final String dialogName = dialog.getName();
         if (dialogName == null)

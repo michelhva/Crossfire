@@ -23,6 +23,7 @@ import com.realtime.crossfire.jxclient.server.ClientSocketState;
 import com.realtime.crossfire.jxclient.window.GUICommandList;
 import com.realtime.crossfire.jxclient.window.GuiStateListener;
 import com.realtime.crossfire.jxclient.window.JXCWindow;
+import org.jetbrains.annotations.NotNull;
 
 /**
  * A {@link SkinEvent} that executes a {@link GUICommandList} at connection
@@ -34,16 +35,19 @@ public class ConnectionStateSkinEvent implements SkinEvent
     /**
      * The {@link GUICommandList} to execute.
      */
+    @NotNull
     private final GUICommandList commandList;
 
     /**
      * The {@link JXCWindow} to attach to.
      */
+    @NotNull
     private final JXCWindow window;
 
     /**
      * The {@link GuiStateListener} attached to {@link #window}.
      */
+    @NotNull
     private final GuiStateListener guiStateListener = new GuiStateListener()
     {
         /** {@inheritDoc} */
@@ -69,7 +73,7 @@ public class ConnectionStateSkinEvent implements SkinEvent
 
         /** {@inheritDoc} */
         @Override
-        public void connecting(final ClientSocketState clientSocketState)
+        public void connecting(@NotNull final ClientSocketState clientSocketState)
         {
             // ignore
         }
@@ -83,7 +87,7 @@ public class ConnectionStateSkinEvent implements SkinEvent
 
         /** {@inheritDoc} */
         @Override
-        public void connectFailed(final String reason)
+        public void connectFailed(@NotNull final String reason)
         {
             // ignore
         }
@@ -94,7 +98,7 @@ public class ConnectionStateSkinEvent implements SkinEvent
      * @param commandList the command list to execute
      * @param window the window to attach to
      */
-    public ConnectionStateSkinEvent(final GUICommandList commandList, final JXCWindow window)
+    public ConnectionStateSkinEvent(@NotNull final GUICommandList commandList, @NotNull final JXCWindow window)
     {
         this.commandList = commandList;
         this.window = window;

@@ -33,6 +33,8 @@ import java.io.IOException;
 import java.util.Collection;
 import java.util.concurrent.CopyOnWriteArrayList;
 import javax.swing.ImageIcon;
+import org.jetbrains.annotations.NotNull;
+import org.jetbrains.annotations.Nullable;
 
 /**
  * Retrieves {@link Face} information by face ID. If a face is not available
@@ -48,62 +50,73 @@ public class FacesManager
     /**
      * The resource name of the "unknown" face.
      */
+    @NotNull
     private static final String UNKNOWN_PNG = "resource/unknown.png";
 
     /**
      * The resource for "Click here for next group of items" buttons.
      */
+    @NotNull
     private static final String NEXT_GROUP_FACE = "resource/next_group.png";
 
     /**
      * The resource for "Click here for previous group of items" buttons.
      */
+    @NotNull
     private static final String PREV_GROUP_FACE = "resource/prev_group.png";
 
     /**
      * The {@link FaceCache} instance used to look up in-memory faces.
      */
+    @NotNull
     private final FaceCache faceCache;
 
     /**
      * The {@link FacesQueue} instance used to load faces not present
      * in-memory.
      */
+    @NotNull
     private final FacesQueue facesQueue;
 
     /**
      * The unknown face.
      */
+    @NotNull
     private final FaceImages unknownFaceImages;
 
     /**
      * The {@link FacesManagerListener}s to notify about changed faces.
      */
+    @NotNull
     private final Collection<FacesManagerListener> facesManagerListeners = new CopyOnWriteArrayList<FacesManagerListener>();
 
     /**
      * The empty face; returned for face ID 0.
      */
+    @NotNull
     private final FaceImages emptyFaceImages;
 
     /**
      * The face to substitute into "Click here for next group of items".
      */
+    @NotNull
     private final Image nextGroupFace;
 
     /**
      * The face to substitute into "Click here for previous group of items".
      */
+    @NotNull
     private final Image prevGroupFace;
 
     /**
      * The {@link FaceQueueListener} registered to {@link #facesQueue}.
      */
+    @NotNull
     private final FaceQueueListener faceQueueListener = new FaceQueueListener()
     {
         /** {@inheritDoc} */
         @Override
-        public void faceLoaded(final Face face, final FaceImages faceImages)
+        public void faceLoaded(@NotNull final Face face, @NotNull final FaceImages faceImages)
         {
             face.setFaceImages(faceImages);
             fireFaceUpdated(face);
@@ -111,7 +124,7 @@ public class FacesManager
 
         /** {@inheritDoc} */
         @Override
-        public void faceFailed(final Face face)
+        public void faceFailed(@NotNull final Face face)
         {
             face.setFaceImages(unknownFaceImages);
             fireFaceUpdated(face);
@@ -122,6 +135,7 @@ public class FacesManager
      * The {@link GuiStateListener} for detecting established or dropped
      * connections.
      */
+    @NotNull
     private final GuiStateListener guiStateListener = new GuiStateListener()
     {
         /** {@inheritDoc} */
@@ -147,7 +161,7 @@ public class FacesManager
 
         /** {@inheritDoc} */
         @Override
-        public void connecting(final ClientSocketState clientSocketState)
+        public void connecting(@NotNull final ClientSocketState clientSocketState)
         {
             // ignore
         }
@@ -161,7 +175,7 @@ public class FacesManager
 
         /** {@inheritDoc} */
         @Override
-        public void connectFailed(final String reason)
+        public void connectFailed(@NotNull final String reason)
         {
             // ignore
         }
@@ -181,7 +195,7 @@ public class FacesManager
      * @param window the window to attach to; <code>null</code> to not attach
      * @throws IOException if the unknown image resource cannot be loaded
      */
-    public FacesManager(final CrossfireServerConnection crossfireServerConnection, final ImageCache imageCacheOriginal, final ImageCache imageCacheScaled, final ImageCache imageCacheMagicMap, final FaceCache faceCache, final JXCWindow window) throws IOException
+    public FacesManager(@Nullable final CrossfireServerConnection crossfireServerConnection, @NotNull final ImageCache imageCacheOriginal, @NotNull final ImageCache imageCacheScaled, @NotNull final ImageCache imageCacheMagicMap, @NotNull final FaceCache faceCache, @Nullable final JXCWindow window) throws IOException
     {
         this.faceCache = faceCache;
         facesQueue = new FacesQueue(crossfireServerConnection, imageCacheOriginal, imageCacheScaled, imageCacheMagicMap);
@@ -212,6 +226,7 @@ public class FacesManager
      * @param faceNum the face ID
      * @return the face, or the "unknown" face if the face is not loaded
      */
+    @NotNull
     public ImageIcon getOriginalImageIcon(final int faceNum)
     {
         return getFaceImages(faceNum).getOriginalImageIcon();
@@ -224,6 +239,7 @@ public class FacesManager
      * @param faceNum the face ID
      * @return the face, or the "unknown" face if the face is not loaded
      */
+    @NotNull
     public ImageIcon getScaledImageIcon(final int faceNum)
     {
         return getFaceImages(faceNum).getScaledImageIcon();
@@ -236,6 +252,7 @@ public class FacesManager
      * @param faceNum the face ID
      * @return the face, or the "unknown" face if the face is not loaded
      */
+    @NotNull
     public ImageIcon getMagicMapImageIcon(final int faceNum)
     {
         return getFaceImages(faceNum).getMagicMapImageIcon();
@@ -248,6 +265,7 @@ public class FacesManager
      * @param faceNum the face ID
      * @return the face images information
      */
+    @NotNull
     public FaceImages getFaceImages(final int faceNum)
     {
         if (faceNum == 0)
@@ -270,7 +288,7 @@ public class FacesManager
      * Notifies all {@link FacesManagerListener}s that a face has been updated.
      * @param face the face
      */
-    private void fireFaceUpdated(final Face face)
+    private void fireFaceUpdated(@NotNull final Face face)
     {
         for (final FacesManagerListener facesManagerListener : facesManagerListeners)
         {
@@ -282,7 +300,7 @@ public class FacesManager
      * Adds a {@link FacesManagerListener} to be notified about updated faces.
      * @param facesManagerListener the listener
      */
-    public void addFacesManagerListener(final FacesManagerListener facesManagerListener)
+    public void addFacesManagerListener(@NotNull final FacesManagerListener facesManagerListener)
     {
         facesManagerListeners.add(facesManagerListener);
     }
@@ -292,7 +310,7 @@ public class FacesManager
      * faces.
      * @param facesManagerListener the listener
      */
-    public void removeFacesManagerListener(final FacesManagerListener facesManagerListener)
+    public void removeFacesManagerListener(@NotNull final FacesManagerListener facesManagerListener)
     {
         facesManagerListeners.remove(facesManagerListener);
     }
@@ -310,6 +328,7 @@ public class FacesManager
      * Returns the {@link FacesQueue} instance.
      * @return the faces queue instance
      */
+    @NotNull
     public FacesQueue getFacesQueue()
     {
         return facesQueue;
@@ -320,6 +339,7 @@ public class FacesManager
      * items".
      * @return the image
      */
+    @NotNull
     public Image getNextGroupFace()
     {
         return nextGroupFace;
@@ -330,6 +350,7 @@ public class FacesManager
      * items".
      * @return the image
      */
+    @NotNull
     public Image getPrevGroupFace()
     {
         return prevGroupFace;

@@ -25,6 +25,8 @@ import com.realtime.crossfire.jxclient.items.CfItem;
 import com.realtime.crossfire.jxclient.items.CurrentFloorManager;
 import com.realtime.crossfire.jxclient.server.CommandQueue;
 import com.realtime.crossfire.jxclient.server.CrossfireServerConnection;
+import org.jetbrains.annotations.NotNull;
+import org.jetbrains.annotations.Nullable;
 
 /**
  * A {@link GUICommand} that executes a command on the selected item of a
@@ -45,7 +47,7 @@ public class ExecSelectionCommand implements GUICommand
             {
                 /** {@inheritDoc} */
                 @Override
-                protected void doExecute(final CfItem item, final CrossfireServerConnection crossfireServerConnection, final int floor, final CommandQueue commandQueue)
+                protected void doExecute(@NotNull final CfItem item, @NotNull final CrossfireServerConnection crossfireServerConnection, final int floor, @NotNull final CommandQueue commandQueue)
                 {
                     crossfireServerConnection.sendApply(item.getTag());
                 }
@@ -58,7 +60,7 @@ public class ExecSelectionCommand implements GUICommand
             {
                 /** {@inheritDoc} */
                 @Override
-                protected void doExecute(final CfItem item, final CrossfireServerConnection crossfireServerConnection, final int floor, final CommandQueue commandQueue)
+                protected void doExecute(@NotNull final CfItem item, @NotNull final CrossfireServerConnection crossfireServerConnection, final int floor, @NotNull final CommandQueue commandQueue)
                 {
                     if (item.isLocked())
                     {
@@ -78,7 +80,7 @@ public class ExecSelectionCommand implements GUICommand
             {
                 /** {@inheritDoc} */
                 @Override
-                protected void doExecute(final CfItem item, final CrossfireServerConnection crossfireServerConnection, final int floor, final CommandQueue commandQueue)
+                protected void doExecute(@NotNull final CfItem item, @NotNull final CrossfireServerConnection crossfireServerConnection, final int floor, @NotNull final CommandQueue commandQueue)
                 {
                     crossfireServerConnection.sendExamine(item.getTag());
                 }
@@ -91,7 +93,7 @@ public class ExecSelectionCommand implements GUICommand
             {
                 /** {@inheritDoc} */
                 @Override
-                protected void doExecute(final CfItem item, final CrossfireServerConnection crossfireServerConnection, final int floor, final CommandQueue commandQueue)
+                protected void doExecute(@NotNull final CfItem item, @NotNull final CrossfireServerConnection crossfireServerConnection, final int floor, @NotNull final CommandQueue commandQueue)
                 {
                     crossfireServerConnection.sendLock(true, item.getTag());
                 }
@@ -104,7 +106,7 @@ public class ExecSelectionCommand implements GUICommand
             {
                 /** {@inheritDoc} */
                 @Override
-                protected void doExecute(final CfItem item, final CrossfireServerConnection crossfireServerConnection, final int floor, final CommandQueue commandQueue)
+                protected void doExecute(@NotNull final CfItem item, @NotNull final CrossfireServerConnection crossfireServerConnection, final int floor, @NotNull final CommandQueue commandQueue)
                 {
                     crossfireServerConnection.sendLock(!item.isLocked(), item.getTag());
                 }
@@ -117,7 +119,7 @@ public class ExecSelectionCommand implements GUICommand
             {
                 /** {@inheritDoc} */
                 @Override
-                protected void doExecute(final CfItem item, final CrossfireServerConnection crossfireServerConnection, final int floor, final CommandQueue commandQueue)
+                protected void doExecute(@NotNull final CfItem item, @NotNull final CrossfireServerConnection crossfireServerConnection, final int floor, @NotNull final CommandQueue commandQueue)
                 {
                     crossfireServerConnection.sendMark(item.getTag());
                 }
@@ -130,7 +132,7 @@ public class ExecSelectionCommand implements GUICommand
             {
                 /** {@inheritDoc} */
                 @Override
-                protected void doExecute(final CfItem item, final CrossfireServerConnection crossfireServerConnection, final int floor, final CommandQueue commandQueue)
+                protected void doExecute(@NotNull final CfItem item, @NotNull final CrossfireServerConnection crossfireServerConnection, final int floor, @NotNull final CommandQueue commandQueue)
                 {
                     crossfireServerConnection.sendLock(false, item.getTag());
                 }
@@ -142,7 +144,7 @@ public class ExecSelectionCommand implements GUICommand
          * @param guiItem the item to check for
          * @return whether the action can be executed
          */
-        public static boolean canExecute(final GUIItemItem guiItem)
+        public static boolean canExecute(@Nullable final GUIItemItem guiItem)
         {
             return guiItem != null && guiItem.getItem() != null;
         }
@@ -154,7 +156,7 @@ public class ExecSelectionCommand implements GUICommand
          * @param floor the current floor index
          * @param commandQueue the command queue to use
          */
-        public void execute(final GUIItemItem guiItem, final CrossfireServerConnection crossfireServerConnection, final int floor, final CommandQueue commandQueue)
+        public void execute(@Nullable final GUIItemItem guiItem, @NotNull final CrossfireServerConnection crossfireServerConnection, final int floor, @NotNull final CommandQueue commandQueue)
         {
             if (guiItem == null)
             {
@@ -177,32 +179,37 @@ public class ExecSelectionCommand implements GUICommand
          * @param floor the current floor index
          * @param commandQueue the command queue to use
          */
-        protected abstract void doExecute(final CfItem item, final CrossfireServerConnection crossfireServerConnection, final int floor, final CommandQueue commandQueue);
+        protected abstract void doExecute(@NotNull final CfItem item, @NotNull final CrossfireServerConnection crossfireServerConnection, final int floor, @NotNull final CommandQueue commandQueue);
     }
 
     /**
      * The list to execute in.
      */
+    @NotNull
     private final GUIItemList list;
 
     /**
      * The command to execute.
      */
+    @NotNull
     private final CommandType command;
 
     /**
      * The connection to execute commands on.
      */
+    @NotNull
     private final CrossfireServerConnection crossfireServerConnection;
 
     /**
      * The floor manager to use.
      */
+    @NotNull
     private final CurrentFloorManager floorManager;
 
     /**
      * The command queue to use.
      */
+    @NotNull
     private final CommandQueue commandQueue;
 
     /**
@@ -213,7 +220,7 @@ public class ExecSelectionCommand implements GUICommand
      * @param floorManager the floor manager to use
      * @param commandQueue the command queue to use
      */
-    public ExecSelectionCommand(final GUIItemList list, final CommandType command, final CrossfireServerConnection crossfireServerConnection, final CurrentFloorManager floorManager, final CommandQueue commandQueue)
+    public ExecSelectionCommand(@NotNull final GUIItemList list, @NotNull final CommandType command, @NotNull final CrossfireServerConnection crossfireServerConnection, @NotNull final CurrentFloorManager floorManager, @NotNull final CommandQueue commandQueue)
     {
         this.list = list;
         this.command = command;

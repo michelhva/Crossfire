@@ -24,6 +24,7 @@ import com.realtime.crossfire.jxclient.settings.options.CheckBoxOption;
 import com.realtime.crossfire.jxclient.settings.options.OptionException;
 import com.realtime.crossfire.jxclient.settings.options.OptionManager;
 import com.realtime.crossfire.jxclient.util.Patterns;
+import org.jetbrains.annotations.NotNull;
 
 /**
  * Implements the command "set". It changes settings options.
@@ -34,6 +35,7 @@ public class SetCommand extends AbstractCommand
     /**
      * The option manager instance.
      */
+    @NotNull
     private final OptionManager optionManager;
 
     /**
@@ -41,7 +43,7 @@ public class SetCommand extends AbstractCommand
      * @param crossfireServerConnection the connection instance
      * @param optionManager the option manager to use
      */
-    public SetCommand(final CrossfireServerConnection crossfireServerConnection, final OptionManager optionManager)
+    public SetCommand(@NotNull final CrossfireServerConnection crossfireServerConnection, @NotNull final OptionManager optionManager)
     {
         super(crossfireServerConnection);
         this.optionManager = optionManager;
@@ -56,7 +58,7 @@ public class SetCommand extends AbstractCommand
 
     /** {@inheritDoc} */
     @Override
-    public void execute(final String args)
+    public void execute(@NotNull final String args)
     {
         final String[] tmp = Patterns.PATTERN_WHITESPACE.split(args, 2);
         if (tmp.length != 2)

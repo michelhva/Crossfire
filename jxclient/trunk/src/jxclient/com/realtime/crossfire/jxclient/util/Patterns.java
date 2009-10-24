@@ -20,6 +20,7 @@
 package com.realtime.crossfire.jxclient.util;
 
 import java.util.regex.Pattern;
+import org.jetbrains.annotations.NotNull;
 
 /**
  * Utility class containing useful {@link Pattern}s.
@@ -29,6 +30,7 @@ public class Patterns
     /**
      * The pattern to split a command from argments, and to split arguments.
      */
+    @NotNull
     public static final Pattern PATTERN_WHITESPACE = Pattern.compile(" +");
 
     /**

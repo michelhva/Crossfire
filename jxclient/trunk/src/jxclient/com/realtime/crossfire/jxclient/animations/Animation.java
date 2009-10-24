@@ -19,6 +19,8 @@
 //
 package com.realtime.crossfire.jxclient.animations;
 
+import org.jetbrains.annotations.NotNull;
+
 /**
  * Manages animations frecevied from the server. Animations are uniquely
  * identified by an animation id. Each animation consists of a list of faces.
@@ -35,6 +37,7 @@ public class Animation
     /**
      * The faces list of the animation.
      */
+    @NotNull
     private final int[] faces;
 
     /**
@@ -44,7 +47,7 @@ public class Animation
      *
      * @param faces The faces list of the animation.
      */
-    public Animation(final int flags, final int[] faces)
+    public Animation(final int flags, @NotNull final int[] faces)
     {
         assert faces.length > 0;
 

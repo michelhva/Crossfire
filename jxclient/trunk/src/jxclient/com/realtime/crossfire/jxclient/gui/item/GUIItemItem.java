@@ -33,6 +33,8 @@ import java.awt.Color;
 import java.awt.Graphics;
 import java.awt.Graphics2D;
 import java.awt.Image;
+import org.jetbrains.annotations.NotNull;
+import org.jetbrains.annotations.Nullable;
 
 /**
  * A {@link GUIElement} instance representing an in-game item.
@@ -48,32 +50,38 @@ public abstract class GUIItemItem extends GUIItem
     /**
      * The background color of this item.
      */
+    @NotNull
     private static final Color BACKGROUND_COLOR = new Color(0, 0, 0, 0.0f);
 
     /**
      * The connection instance.
      */
+    @NotNull
     private final CrossfireServerConnection crossfireServerConnection;
 
     /**
      * The {@link FacesManager} instance to use.
      */
+    @NotNull
     private final FacesManager facesManager;
 
     /**
      * The {@link ItemPainter} for painting the icon.
      */
+    @NotNull
     private final ItemPainter itemPainter;
 
     /**
      * The current item instance.
      */
+    @Nullable
     private CfItem item = null;
 
     /**
      * The {@link CfItemListener} used to detect attribute changes of
      * the displayed item.
      */
+    @NotNull
     private final CfItemListener itemListener = new CfItemListener()
     {
         /** {@inheritDoc} */
@@ -88,11 +96,12 @@ public abstract class GUIItemItem extends GUIItem
     /**
      * The {@link FacesManagerListener} registered to detect updated faces.
      */
+    @NotNull
     private final FacesManagerListener facesManagerListener = new FacesManagerListener()
     {
         /** {@inheritDoc} */
         @Override
-        public void faceUpdated(final Face face)
+        public void faceUpdated(@NotNull final Face face)
         {
             if (item != null && face.equals(item.getFace()))
             {
@@ -116,7 +125,7 @@ public abstract class GUIItemItem extends GUIItem
      * @param itemPainter the item painter for painting the icon
      * @param facesManager the faces manager instance to use
      */
-    protected GUIItemItem(final TooltipManager tooltipManager, final JXCWindowRenderer windowRenderer, final String name, final int x, final int y, final int w, final int h, final CrossfireServerConnection crossfireServerConnection, final ItemPainter itemPainter, final FacesManager facesManager)
+    protected GUIItemItem(@NotNull final TooltipManager tooltipManager, @NotNull final JXCWindowRenderer windowRenderer, @NotNull final String name, final int x, final int y, final int w, final int h, @NotNull final CrossfireServerConnection crossfireServerConnection, @NotNull final ItemPainter itemPainter, @NotNull final FacesManager facesManager)
     {
         super(tooltipManager, windowRenderer, name, x, y, w, h);
         this.itemPainter = itemPainter;
@@ -136,7 +145,7 @@ public abstract class GUIItemItem extends GUIItem
 
     /** {@inheritDoc} */
     @Override
-    protected void render(final Graphics g)
+    protected void render(@NotNull final Graphics g)
     {
         final Graphics2D g2 = (Graphics2D)g;
         g2.setBackground(BACKGROUND_COLOR);
@@ -156,7 +165,8 @@ public abstract class GUIItemItem extends GUIItem
      * @param item the item instance
      * @return the face
      */
-    protected abstract Image getFace(final CfItem item);
+    @NotNull
+    protected abstract Image getFace(@NotNull final CfItem item);
 
     /* {@inheritDoc} */
     @Override
@@ -175,6 +185,7 @@ public abstract class GUIItemItem extends GUIItem
      * Returns the current item instance.
      * @return the current item instance
      */
+    @Nullable
     public CfItem getItem()
     {
         return item;
@@ -184,7 +195,7 @@ public abstract class GUIItemItem extends GUIItem
      * Sets the current item instance.
      * @param item the new current item instance
      */
-    protected void setItem(final CfItem item)
+    protected void setItem(@Nullable final CfItem item)
     {
         if (this.item == item)
         {
@@ -210,7 +221,7 @@ public abstract class GUIItemItem extends GUIItem
      * updates.
      * @param item the new current item instance
      */
-    protected void setItemNoListeners(final CfItem item)
+    protected void setItemNoListeners(@Nullable final CfItem item)
     {
         this.item = item;
         setChangedNoListeners();

@@ -24,6 +24,7 @@ import java.io.Writer;
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.util.Date;
+import org.jetbrains.annotations.NotNull;
 
 /**
  * Writer debug information to a log file.
@@ -34,29 +35,27 @@ public class DebugWriter
     /**
      * The {@link Writer} to write to.
      */
+    @NotNull
     private final Writer writer;
 
     /**
      * A formatter for timestamps.
      */
+    @NotNull
     private final DateFormat simpleDateFormat = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss,SSS ");
 
     /**
      * The object for synchronizing messages.
      */
+    @NotNull
     private final Object sync = new Object();
 
     /**
      * Creates a new instance.
      * @param writer the writer to write to
      */
-    public DebugWriter(final Writer writer)
+    public DebugWriter(@NotNull final Writer writer)
     {
-        if (writer == null)
-        {
-            throw new IllegalArgumentException();
-        }
-
         this.writer = writer;
     }
 
@@ -64,7 +63,7 @@ public class DebugWriter
      * Writes a message to the debug protocol.
      * @param str the message to write
      */
-    public void debugProtocolWrite(final CharSequence str)
+    public void debugProtocolWrite(@NotNull final CharSequence str)
     {
         synchronized (sync)
         {
@@ -89,7 +88,7 @@ public class DebugWriter
      * @param str the message to write
      * @param throwable the throwable to log
      */
-    public void debugProtocolWrite(final CharSequence str, final Throwable throwable)
+    public void debugProtocolWrite(@NotNull final CharSequence str, @NotNull final Throwable throwable)
     {
         synchronized (sync)
         {

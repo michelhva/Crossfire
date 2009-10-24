@@ -20,6 +20,7 @@
 package com.realtime.crossfire.jxclient.gui.commands;
 
 import com.realtime.crossfire.jxclient.gui.list.GUIList;
+import org.jetbrains.annotations.NotNull;
 
 /**
  * A {@link GUICommand} which moves the selected element in a {@link GUIList}
@@ -31,6 +32,7 @@ public class MoveSelectionCommand implements GUICommand
     /**
      * The list to scroll.
      */
+    @NotNull
     private final GUIList list;
 
     /**
@@ -49,7 +51,7 @@ public class MoveSelectionCommand implements GUICommand
      * @param diffLines the distance in lines to scroll
      * @param diffElements the distance in elements to scroll
      */
-    public MoveSelectionCommand(final GUIList list, final int diffLines, final int diffElements)
+    public MoveSelectionCommand(@NotNull final GUIList list, final int diffLines, final int diffElements)
     {
         this.list = list;
         this.diffLines = diffLines;

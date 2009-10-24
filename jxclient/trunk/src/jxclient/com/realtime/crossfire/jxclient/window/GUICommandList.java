@@ -24,6 +24,7 @@ import com.realtime.crossfire.jxclient.gui.commands.ExecuteCommandCommand;
 import com.realtime.crossfire.jxclient.gui.commands.GUICommand;
 import java.util.ArrayList;
 import java.util.Collection;
+import org.jetbrains.annotations.NotNull;
 
 /**
  * A list of {@link GUICommand} instances.
@@ -47,11 +48,13 @@ public class GUICommandList
     /**
      * The command list type.
      */
+    @NotNull
     private final CommandType commandType;
 
     /**
      * The list of {@link GUICommand}s in execution order.
      */
+    @NotNull
     private final Collection<GUICommand> commandList = new ArrayList<GUICommand>();
 
     /**
@@ -59,7 +62,7 @@ public class GUICommandList
      *
      * @param commandType The command list type.
      */
-    public GUICommandList(final CommandType commandType)
+    public GUICommandList(@NotNull final CommandType commandType)
     {
         this.commandType = commandType;
     }
@@ -69,7 +72,7 @@ public class GUICommandList
      *
      * @param guiCommand The command to add.
      */
-    public void add(final GUICommand guiCommand)
+    public void add(@NotNull final GUICommand guiCommand)
     {
         commandList.add(guiCommand);
     }
@@ -134,6 +137,7 @@ public class GUICommandList
      *
      * @return The commands as a string.
      */
+    @NotNull
     public String getCommandString()
     {
         final StringBuilder sb = new StringBuilder();

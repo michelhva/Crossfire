@@ -22,6 +22,8 @@ package com.realtime.crossfire.jxclient.faces;
 import java.util.HashMap;
 import java.util.Map;
 import javax.swing.ImageIcon;
+import org.jetbrains.annotations.NotNull;
+import org.jetbrains.annotations.Nullable;
 
 /**
  * Simple in-memory cache implementing the {@link ImageCache} interface.
@@ -33,18 +35,20 @@ public class MemoryImageCache implements ImageCache
     /**
      * The cache contents. Maps face to image associated with the face.
      */
+    @NotNull
     private final Map<Face, ImageIcon> faces = new HashMap<Face, ImageIcon>();
 
     /** {@inheritDoc} */
+    @Nullable
     @Override
-    public ImageIcon load(final Face face)
+    public ImageIcon load(@NotNull final Face face)
     {
         return faces.get(face);
     }
 
     /** {@inheritDoc} */
     @Override
-    public void save(final Face face, final ImageIcon imageIcon)
+    public void save(@NotNull final Face face, @NotNull final ImageIcon imageIcon)
     {
         faces.put(face, imageIcon);
     }

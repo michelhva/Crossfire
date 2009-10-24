@@ -22,6 +22,7 @@ package com.realtime.crossfire.jxclient.gui.gauge;
 import com.realtime.crossfire.jxclient.experience.ExperienceTable;
 import com.realtime.crossfire.jxclient.skills.Skill;
 import com.realtime.crossfire.jxclient.skills.SkillListener;
+import org.jetbrains.annotations.NotNull;
 
 /**
  * A {@link GaugeUpdater} which monitors a skill.
@@ -33,11 +34,13 @@ public class SkillGaugeUpdater extends GaugeUpdater
     /**
      * The monitored skill.
       */
+    @NotNull
     private final Skill skill;
 
     /**
      * The {@link SkillListener} registered to be notified about skill changes.
      */
+    @NotNull
     private final SkillListener skillListener = new SkillListener()
     {
         /** {@inheritDoc} */
@@ -70,7 +73,7 @@ public class SkillGaugeUpdater extends GaugeUpdater
      *
      * @param skill The skill to monitor.
      */
-    public SkillGaugeUpdater(final ExperienceTable experienceTable, final Skill skill)
+    public SkillGaugeUpdater(@NotNull final ExperienceTable experienceTable, @NotNull final Skill skill)
     {
         super(experienceTable);
         this.skill = skill;

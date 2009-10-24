@@ -32,6 +32,8 @@ import java.awt.Image;
 import java.awt.event.InputEvent;
 import java.util.Collection;
 import java.util.List;
+import org.jetbrains.annotations.NotNull;
+import org.jetbrains.annotations.Nullable;
 
 /**
  * A {@link GUIItem} for displaying inventory objects.
@@ -47,21 +49,25 @@ public class GUIItemInventory extends GUIItemItem
     /**
      * The command queue for sending commands.
      */
+    @NotNull
     private final CommandQueue commandQueue;
 
     /**
      * The server instance.
      */
+    @NotNull
     private final CrossfireServerConnection crossfireServerConnection;
 
     /**
      * The {@link FacesManager} instance to use.
      */
+    @NotNull
     private final FacesManager facesManager;
 
     /**
      * The {@link ItemsManager} instance to watch.
      */
+    @NotNull
     private final ItemsManager itemsManager;
 
     /**
@@ -72,6 +78,7 @@ public class GUIItemInventory extends GUIItemItem
     /**
      * The object used for synchronization on {@link #index}.
      */
+    @NotNull
     private final Object sync = new Object();
 
     /**
@@ -88,11 +95,12 @@ public class GUIItemInventory extends GUIItemItem
      * The {@link LocationListener} used to detect items added to or removed
      * from this inventory slot.
      */
+    @NotNull
     private final LocationListener inventoryLocationListener = new LocationListener()
     {
         /** {@inheritDoc} */
         @Override
-        public void locationModified(final int index, final CfItem item)
+        public void locationModified(final int index, @Nullable final CfItem item)
         {
             synchronized (sync)
             {
@@ -102,7 +110,7 @@ public class GUIItemInventory extends GUIItemItem
         }
     };
 
-    public GUIItemInventory(final TooltipManager tooltipManager, final JXCWindowRenderer windowRenderer, final CommandQueue commandQueue, final String name, final int x, final int y, final int w, final int h, final ItemPainter itemPainter, final int index, final CrossfireServerConnection crossfireServerConnection, final FacesManager facesManager, final ItemsManager itemsManager)
+    public GUIItemInventory(@NotNull final TooltipManager tooltipManager, @NotNull final JXCWindowRenderer windowRenderer, @NotNull final CommandQueue commandQueue, final String name, final int x, final int y, final int w, final int h, @NotNull final ItemPainter itemPainter, final int index, @NotNull final CrossfireServerConnection crossfireServerConnection, @NotNull final FacesManager facesManager, @NotNull final ItemsManager itemsManager)
     {
         super(tooltipManager, windowRenderer, name, x, y, w, h, crossfireServerConnection, itemPainter, facesManager);
         this.commandQueue = commandQueue;
@@ -338,8 +346,9 @@ public class GUIItemInventory extends GUIItemItem
     }
 
     /** {@inheritDoc} */
+    @NotNull
     @Override
-    protected Image getFace(final CfItem item)
+    protected Image getFace(@NotNull final CfItem item)
     {
         return facesManager.getOriginalImageIcon(item.getFace().getFaceNum()).getImage();
     }

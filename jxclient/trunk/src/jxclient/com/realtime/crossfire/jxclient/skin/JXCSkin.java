@@ -25,6 +25,8 @@ import com.realtime.crossfire.jxclient.gui.keybindings.KeyBindings;
 import com.realtime.crossfire.jxclient.window.GUICommandList;
 import com.realtime.crossfire.jxclient.window.GuiManager;
 import java.util.Iterator;
+import org.jetbrains.annotations.NotNull;
+import org.jetbrains.annotations.Nullable;
 
 /**
  * Defines a JXClient skin consisting of a main {@link Gui} and zero or more
@@ -39,12 +41,14 @@ public interface JXCSkin extends Iterable<Gui>
      * names.
      * @return the skin name
      */
+    @NotNull
     String getSkinName();
 
     /**
      * Returns the resolution of this skin.
      * @return the resolution
      */
+    @NotNull
     Resolution getResolution();
 
     /**
@@ -70,6 +74,7 @@ public interface JXCSkin extends Iterable<Gui>
      * order.
      * @return an iterator returning all gui instances
      */
+    @NotNull
     @Override
     Iterator<Gui> iterator();
 
@@ -78,6 +83,7 @@ public interface JXCSkin extends Iterable<Gui>
      * ESCAPE.
      * @return the dialog or <code>null</code> if the dialog does not exist
      */
+    @Nullable
     Gui getDialogQuit();
 
     /**
@@ -85,6 +91,7 @@ public interface JXCSkin extends Iterable<Gui>
      * presses ESCAPE.
      * @return the dialog or <code>null</code> if the dialog does not exist
      */
+    @Nullable
     Gui getDialogDisconnect();
 
     /**
@@ -92,18 +99,21 @@ public interface JXCSkin extends Iterable<Gui>
      * connection establishment is in progress.
      * @return the dialog or <code>null</code> if the dialog does not exist
      */
+    @Nullable
     Gui getDialogConnect();
 
     /**
      * Returns the key bindings dialog.
      * @return the dialog
      */
+    @NotNull
     Gui getDialogKeyBind();
 
     /**
      * Returns the dialog for query text input.
      * @return the dialog
      */
+    @NotNull
     Gui getDialogQuery();
 
     /**
@@ -111,24 +121,28 @@ public interface JXCSkin extends Iterable<Gui>
      * @param booknr the book ID
      * @return the dialog
      */
+    @NotNull
     Gui getDialogBook(int booknr);
 
     /**
      * Returns the main window.
      * @return the dialog
      */
+    @NotNull
     Gui getMainInterface();
 
     /**
      * Returns the server selection window.
      * @return the dialog
      */
+    @NotNull
     Gui getMetaInterface();
 
     /**
      * Returns the start window.
      * @return the dialog
      */
+    @NotNull
     Gui getStartInterface();
 
     /**
@@ -137,7 +151,8 @@ public interface JXCSkin extends Iterable<Gui>
      * @return the dialog
      * @throws JXCSkinException if the dialog does not exist
      */
-    Gui getDialog(final String name) throws JXCSkinException;
+    @NotNull
+    Gui getDialog(@NotNull final String name) throws JXCSkinException;
 
     /**
      * Returns a named command list.
@@ -145,7 +160,8 @@ public interface JXCSkin extends Iterable<Gui>
      * @return the command list
      * @throws JXCSkinException if the command list does not exist
      */
-    GUICommandList getCommandList(String name) throws JXCSkinException;
+    @NotNull
+    GUICommandList getCommandList(@NotNull String name) throws JXCSkinException;
 
     /**
      * Returns whether the dialog state should be saved.
@@ -157,13 +173,14 @@ public interface JXCSkin extends Iterable<Gui>
      * Returns the default key bindings for this skin.
      * @return the default key bindings
      */
+    @NotNull
     KeyBindings getDefaultKeyBindings();
 
     /**
      * Attaches this skin to a gui manager.
      * @param guiManager the gui manager to attach to
      */
-    void attach(GuiManager guiManager);
+    void attach(@NotNull GuiManager guiManager);
 
     /**
      * Frees all allocated resources.
@@ -176,5 +193,6 @@ public interface JXCSkin extends Iterable<Gui>
      * @return the gui element
      * @throws JXCSkinException if the GUI element does not exist
      */
-    GUIElement lookupGuiElement(String name) throws JXCSkinException;
+    @NotNull
+    GUIElement lookupGuiElement(@NotNull String name) throws JXCSkinException;
 }

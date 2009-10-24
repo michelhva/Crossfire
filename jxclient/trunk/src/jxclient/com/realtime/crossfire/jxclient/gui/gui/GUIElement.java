@@ -29,6 +29,8 @@ import java.awt.GraphicsEnvironment;
 import java.awt.event.MouseEvent;
 import java.awt.image.BufferedImage;
 import javax.swing.JPanel;
+import org.jetbrains.annotations.NotNull;
+import org.jetbrains.annotations.Nullable;
 
 /**
  *
@@ -48,19 +50,23 @@ public abstract class GUIElement extends JPanel
      * The {@link Gui} this element is part of. Set to <code>null</code> if
      * this element is not part of any gui.
      */
+    @Nullable
     private Gui gui = null;
 
     /**
      * The {@link GUIElementChangedListener} to be notified whenever the
      * {@link #changed} flag is set.
      */
+    @Nullable
     private GUIElementChangedListener changedListener = null;
 
     /**
      * Object used to synchonize on {@link #bufferedImage} contents.
      */
+    @NotNull
     protected final Object bufferedImageSync = new Object();
 
+    @NotNull
     private BufferedImage bufferedImage;
 
     private boolean visible = true;
@@ -80,6 +86,7 @@ public abstract class GUIElement extends JPanel
     /**
      * The name of this element.
      */
+    @NotNull
     private final String name;
 
     /**
@@ -90,17 +97,20 @@ public abstract class GUIElement extends JPanel
     /**
      * The {@link TooltipManager} to update.
      */
+    @NotNull
     private final TooltipManager tooltipManager;
 
     /**
      * The {@link JXCWindowRenderer} to notify.
      */
+    @NotNull
     private final JXCWindowRenderer windowRenderer;
 
     /**
      * The tooltip text to show when the mouse is inside this element. May be
      * <code>null</code> to show no tooltip.
      */
+    @Nullable
     private String tooltipText = null;
 
     /**
@@ -124,7 +134,7 @@ public abstract class GUIElement extends JPanel
      *
      * @param transparency The transparency value for the backing buffer
      */
-    protected GUIElement(final TooltipManager tooltipManager, final JXCWindowRenderer windowRenderer, final String name, final int x, final int y, final int w, final int h, final int transparency)
+    protected GUIElement(@NotNull final TooltipManager tooltipManager, @NotNull final JXCWindowRenderer windowRenderer, @NotNull final String name, final int x, final int y, final int w, final int h, final int transparency)
     {
         super(false);
         this.tooltipManager = tooltipManager;
@@ -153,6 +163,7 @@ public abstract class GUIElement extends JPanel
      *
      * @return The gui, or <code>null</code>.
      */
+    @Nullable
     public Gui getGui()
     {
         return gui;
@@ -163,7 +174,7 @@ public abstract class GUIElement extends JPanel
      *
      * @param gui The gui, or <code>null</code>.
      */
-    public void setGui(final Gui gui)
+    public void setGui(@Nullable final Gui gui)
     {
         this.gui = gui;
         if (visible && gui != null)
@@ -172,6 +183,7 @@ public abstract class GUIElement extends JPanel
         }
     }
 
+    @NotNull
     @Override
     public String toString()
     {
@@ -235,6 +247,7 @@ public abstract class GUIElement extends JPanel
         ignore = true;
     }
 
+    @NotNull
     @Override
     public String getName()
     {
@@ -248,7 +261,7 @@ public abstract class GUIElement extends JPanel
      *
      * @param e The mouse event relative to this element.
      */
-    public void mouseClicked(final MouseEvent e)
+    public void mouseClicked(@NotNull final MouseEvent e)
     {
         windowRenderer.raiseDialog(gui);
     }
@@ -259,7 +272,7 @@ public abstract class GUIElement extends JPanel
      *
      * @param e The mouse event relative to this element.
      */
-    public void mouseEntered(final MouseEvent e)
+    public void mouseEntered(@NotNull final MouseEvent e)
     {
         tooltipManager.setElement(this);
     }
@@ -271,7 +284,7 @@ public abstract class GUIElement extends JPanel
      *
      * @param e The mouse event relative to this element.
      */
-    public void mouseExited(final MouseEvent e)
+    public void mouseExited(@NotNull final MouseEvent e)
     {
         tooltipManager.unsetElement(this);
     }
@@ -281,7 +294,7 @@ public abstract class GUIElement extends JPanel
      *
      * @param e The mouse event relative to this element.
      */
-    public void mousePressed(final MouseEvent e)
+    public void mousePressed(@NotNull final MouseEvent e)
     {
     }
 
@@ -292,7 +305,7 @@ public abstract class GUIElement extends JPanel
      *
      * @param e The mouse event relative to this element.
      */
-    public void mouseReleased(final MouseEvent e)
+    public void mouseReleased(@NotNull final MouseEvent e)
     {
     }
 
@@ -302,7 +315,7 @@ public abstract class GUIElement extends JPanel
      *
      * @param e The mouse event relative to this element.
      */
-    public void mouseMoved(final MouseEvent e)
+    public void mouseMoved(@NotNull final MouseEvent e)
     {
     }
 
@@ -317,7 +330,7 @@ public abstract class GUIElement extends JPanel
      *
      * @param e The mouse event relative to this element.
      */
-    public void mouseDragged(final MouseEvent e)
+    public void mouseDragged(@NotNull final MouseEvent e)
     {
     }
 
@@ -378,7 +391,7 @@ public abstract class GUIElement extends JPanel
      * @param tooltipText The text to show, or <code>null</cod> to disable the
      * tooltip for this element.
      */
-    public void setTooltipText(final String tooltipText)
+    public void setTooltipText(@Nullable final String tooltipText)
     {
         if (this.tooltipText == null)
         {
@@ -404,6 +417,7 @@ public abstract class GUIElement extends JPanel
      * @return The text to show, or <code>null</cod> to disable the tooltip for
      * this element.
      */
+    @Nullable
     public String getTooltipText()
     {
         return tooltipText;
@@ -478,11 +492,11 @@ public abstract class GUIElement extends JPanel
      *
      * @param g The gaphics to paint to.
      */
-    protected abstract void render(final Graphics g);
+    protected abstract void render(@NotNull final Graphics g);
 
     /** {@inheritDoc} */
     @Override
-    public void paintComponent(final Graphics g)
+    public void paintComponent(@NotNull final Graphics g)
     {
         synchronized (bufferedImageSync)
         {
@@ -501,7 +515,7 @@ public abstract class GUIElement extends JPanel
      * most one such listener may be set per gui element.
      * @param changedListener the listener or <code>null</code> to unset
      */
-    public void setChangedListener(final GUIElementChangedListener changedListener)
+    public void setChangedListener(@Nullable final GUIElementChangedListener changedListener)
     {
         this.changedListener = changedListener;
     }
@@ -512,6 +526,7 @@ public abstract class GUIElement extends JPanel
      * #bufferedImageSync}.
      * @return the graphics instance; must be released afterwards
      */
+    @NotNull
     protected Graphics2D createBufferGraphics()
     {
         assert Thread.holdsLock(bufferedImageSync);

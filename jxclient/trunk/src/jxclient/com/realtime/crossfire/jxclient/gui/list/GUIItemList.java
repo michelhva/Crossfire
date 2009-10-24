@@ -24,6 +24,8 @@ import com.realtime.crossfire.jxclient.gui.item.GUIItemItem;
 import com.realtime.crossfire.jxclient.window.JXCWindowRenderer;
 import java.awt.event.MouseEvent;
 import javax.swing.ListCellRenderer;
+import org.jetbrains.annotations.NotNull;
+import org.jetbrains.annotations.Nullable;
 
 /**
  * A {@link GUIList} instance that displays {@link GUIItemItem} instances.
@@ -50,7 +52,7 @@ public abstract class GUIItemList extends GUIList
      * @param cellHeight the height of each cell
      * @param listCellRenderer the renderer for the list
      */
-    protected GUIItemList(final TooltipManager tooltipManager, final JXCWindowRenderer windowRenderer, final String name, final int x, final int y, final int w, final int h, final int cellHeight, final ListCellRenderer listCellRenderer)
+    protected GUIItemList(@NotNull final TooltipManager tooltipManager, @NotNull final JXCWindowRenderer windowRenderer, @NotNull final String name, final int x, final int y, final int w, final int h, final int cellHeight, @NotNull final ListCellRenderer listCellRenderer)
     {
         super(tooltipManager, windowRenderer, name, x, y, w, h, cellHeight, listCellRenderer);
     }
@@ -66,6 +68,7 @@ public abstract class GUIItemList extends GUIList
      * Returns the selected {@link GUIItemItem} instance.
      * @return the selected instance or <code>null</code> if none is selected
      */
+    @Nullable
     public GUIItemItem getSelectedItem()
     {
         return (GUIItemItem)getSelectedObject();
@@ -73,7 +76,7 @@ public abstract class GUIItemList extends GUIList
 
     /** {@inheritDoc} */
     @Override
-    public void mouseClicked(final MouseEvent e)
+    public void mouseClicked(@NotNull final MouseEvent e)
     {
         super.mouseClicked(e);
         switch (e.getButton())

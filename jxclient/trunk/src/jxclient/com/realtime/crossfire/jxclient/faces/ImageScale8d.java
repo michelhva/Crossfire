@@ -22,6 +22,7 @@ package com.realtime.crossfire.jxclient.faces;
 import java.awt.image.BufferedImage;
 import javax.swing.Icon;
 import javax.swing.ImageIcon;
+import org.jetbrains.annotations.NotNull;
 
 /**
  * A utility to scale down an image by 8 in both dimensions.
@@ -33,6 +34,7 @@ public class ImageScale8d
     /**
      * The source data from the image.
      */
+    @NotNull
     private final int[] srcData;
 
     /**
@@ -49,7 +51,7 @@ public class ImageScale8d
      * Creates a new instance.
      * @param srcImageIcon the image to scale
      */
-    public ImageScale8d(final Icon srcImageIcon)
+    public ImageScale8d(@NotNull final Icon srcImageIcon)
     {
         width = srcImageIcon.getIconWidth();
         height = srcImageIcon.getIconHeight();
@@ -65,6 +67,7 @@ public class ImageScale8d
      * work so it may take some time to return.
      * @return the scaled image
      */
+    @NotNull
     public ImageIcon getScaledImage()
     {
         final RawScale8d scaler = new RawScale8d(srcData, width, height);

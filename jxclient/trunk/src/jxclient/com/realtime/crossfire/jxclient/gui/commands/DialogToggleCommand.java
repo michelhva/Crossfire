@@ -21,6 +21,7 @@ package com.realtime.crossfire.jxclient.gui.commands;
 
 import com.realtime.crossfire.jxclient.gui.gui.Gui;
 import com.realtime.crossfire.jxclient.window.GuiManager;
+import org.jetbrains.annotations.NotNull;
 
 /**
  * A {@link GUICommand} which toggles the visibility of a dialog.
@@ -31,11 +32,13 @@ public class DialogToggleCommand implements GUICommand
     /**
      * The {@link GuiManager} to use.
      */
+    @NotNull
     private final GuiManager guiManager;
 
     /**
      * The dialog to toggle.
      */
+    @NotNull
     private final Gui dialog;
 
     /**
@@ -43,7 +46,7 @@ public class DialogToggleCommand implements GUICommand
      * @param guiManager the gui manager to use
      * @param dialog the dialog to toggle
      */
-    public DialogToggleCommand(final GuiManager guiManager, final Gui dialog)
+    public DialogToggleCommand(@NotNull final GuiManager guiManager, @NotNull final Gui dialog)
     {
         this.guiManager = guiManager;
         this.dialog = dialog;

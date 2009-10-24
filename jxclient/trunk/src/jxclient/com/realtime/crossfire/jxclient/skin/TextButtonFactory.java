@@ -26,6 +26,7 @@ import com.realtime.crossfire.jxclient.window.GUICommandList;
 import com.realtime.crossfire.jxclient.window.JXCWindowRenderer;
 import java.awt.Color;
 import java.awt.Font;
+import org.jetbrains.annotations.NotNull;
 
 /**
  * A factory class to create "textbutton" instances.
@@ -37,21 +38,25 @@ public class TextButtonFactory
     /**
      * The images comprising the "up" button state.
      */
+    @NotNull
     private final GUITextButton.ButtonImages up;
 
     /**
      * The images comprising the "down" button state.
      */
+    @NotNull
     private final GUITextButton.ButtonImages down;
 
     /**
      * The font to use.
      */
+    @NotNull
     private final Font font;
 
     /**
      * The text color.
      */
+    @NotNull
     private final Color color;
 
     /**
@@ -65,13 +70,8 @@ public class TextButtonFactory
      *
      * @param color The text color.
      */
-    public TextButtonFactory(final GUITextButton.ButtonImages up, final GUITextButton.ButtonImages down, final Font font, final Color color)
+    public TextButtonFactory(@NotNull final GUITextButton.ButtonImages up, @NotNull final GUITextButton.ButtonImages down, @NotNull final Font font, @NotNull final Color color)
     {
-        if (up == null) throw new IllegalArgumentException();
-        if (down == null) throw new IllegalArgumentException();
-        if (font == null) throw new IllegalArgumentException();
-        if (color == null) throw new IllegalArgumentException();
-
         this.up = up;
         this.down = down;
         this.font = font;
@@ -106,7 +106,8 @@ public class TextButtonFactory
      *
      * @return the new text button
      */
-    public GUIElement newTextButton(final TooltipManager tooltipManager, final JXCWindowRenderer windowRenderer, final String name, final int x, final int y, final int w, final int h, final String text, final boolean autoRepeat, final GUICommandList commandList)
+    @NotNull
+    public GUIElement newTextButton(@NotNull final TooltipManager tooltipManager, @NotNull final JXCWindowRenderer windowRenderer, @NotNull final String name, final int x, final int y, final int w, final int h, @NotNull final String text, final boolean autoRepeat, @NotNull final GUICommandList commandList)
     {
         return new GUITextButton(tooltipManager, windowRenderer, name, x, y, w, h, up, down, text, font, color, autoRepeat, commandList);
     }

@@ -21,6 +21,7 @@ package com.realtime.crossfire.jxclient.map;
 
 import com.realtime.crossfire.jxclient.animations.Animation;
 import com.realtime.crossfire.jxclient.mapupdater.CfMapUpdater;
+import org.jetbrains.annotations.NotNull;
 
 /**
  * Animation state information.
@@ -31,6 +32,7 @@ public class AnimationState
     /**
      * The animation to display.
      */
+    @NotNull
     private final Animation animation;
 
     /**
@@ -41,6 +43,7 @@ public class AnimationState
     /**
      * The {@link CfMapUpdater} instance to use.
      */
+    @NotNull
     private final CfMapUpdater mapUpdater;
 
     /**
@@ -64,7 +67,7 @@ public class AnimationState
      * @param type the animation type
      * @param mapUpdater the instance to use
      */
-    public AnimationState(final Animation animation, final int type, final CfMapUpdater mapUpdater)
+    public AnimationState(@NotNull final Animation animation, final int type, @NotNull final CfMapUpdater mapUpdater)
     {
         this.animation = animation;
         this.type = type;
@@ -98,7 +101,7 @@ public class AnimationState
      * @param tickno the tick number
      * @param location the location to update
      */
-    public void updateTickno(final int tickno, final Location location)
+    public void updateTickno(final int tickno, @NotNull final Location location)
     {
         final int oldFaceIndex = index/speed;
         final int diff = tickno-this.tickno;
@@ -121,7 +124,7 @@ public class AnimationState
      * @param oldFaceIndex suppress the map face update if the new face
      * index equals this value
      */
-    public void draw(final Location location, final int oldFaceIndex)
+    public void draw(@NotNull final Location location, final int oldFaceIndex)
     {
         final int faceIndex = index/speed;
         if (faceIndex == oldFaceIndex)

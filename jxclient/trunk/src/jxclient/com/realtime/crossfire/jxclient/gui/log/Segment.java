@@ -21,6 +21,8 @@ package com.realtime.crossfire.jxclient.gui.log;
 
 import java.awt.Color;
 import java.awt.Font;
+import org.jetbrains.annotations.NotNull;
+import org.jetbrains.annotations.Nullable;
 
 /**
  * One segment of a {@link Line} which should be displayed without changing
@@ -33,6 +35,7 @@ public class Segment
     /**
      * The text to display.
      */
+    @NotNull
     private final String text;
 
     /**
@@ -53,11 +56,13 @@ public class Segment
     /**
      * The font to use.
      */
+    @NotNull
     private final FontID font;
 
     /**
      * The color to use. <code>null</code> means "default color".
      */
+    @Nullable
     private final Color color;
 
     /**
@@ -99,7 +104,7 @@ public class Segment
      *
      * @param color The color to use; <code>null</code> means "default color".
      */
-    public Segment(final String text, final boolean bold, final boolean italic, final boolean underline, final FontID font, final Color color)
+    public Segment(@NotNull final String text, final boolean bold, final boolean italic, final boolean underline, @NotNull final FontID font, @Nullable final Color color)
     {
         this.text = text;
         this.bold = bold;
@@ -114,6 +119,7 @@ public class Segment
      *
      * @return The text to display.
      */
+    @NotNull
     public String getText()
     {
         return text;
@@ -154,6 +160,7 @@ public class Segment
      *
      * @return The font to use.
      */
+    @NotNull
     public FontID getFontID()
     {
         return font;
@@ -164,6 +171,7 @@ public class Segment
      *
      * @return The color to use; <code>null</code> means "default color".
      */
+    @Nullable
     public Color getColor()
     {
         return color;
@@ -260,7 +268,8 @@ public class Segment
      *
      * @return The font.
      */
-    public Font getFont(final Fonts fonts)
+    @NotNull
+    public Font getFont(@NotNull final Fonts fonts)
     {
         switch (font)
         {

@@ -29,6 +29,7 @@ import java.util.Collection;
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.Map;
+import org.jetbrains.annotations.NotNull;
 
 /**
  * Manages a set of animated map squares.
@@ -39,6 +40,7 @@ public class CfMapAnimations
     /**
      * Synchronization object.
      */
+    @NotNull
     private final Object sync = new Object();
 
     /**
@@ -54,22 +56,26 @@ public class CfMapAnimations
     /**
      * The {@link CfMapUpdater} instance to update.
      */
+    @NotNull
     private final CfMapUpdater mapUpdater;
 
     /**
      * The animations in the visible map area.
      */
+    @NotNull
     private final Map<Location, AnimationState> animations = new HashMap<Location, AnimationState>();
 
     /**
      * The {@link AnimationState} instances that have been added but not yet
      * received a "tick" value.
      */
+    @NotNull
     private final Collection<AnimationState> pendingTickUpdates = new HashSet<AnimationState>();
 
     /**
      * The listener for receiving "tick" commands.
      */
+    @NotNull
     private final CrossfireTickListener crossfireTickListener = new CrossfireTickListener()
     {
         /** {@inheritDoc} */
@@ -84,7 +90,7 @@ public class CfMapAnimations
      * Creates a new instance.
      * @param mapUpdater the instance to update
      */
-    public CfMapAnimations(final CfMapUpdater mapUpdater)
+    public CfMapAnimations(@NotNull final CfMapUpdater mapUpdater)
     {
         this.mapUpdater = mapUpdater;
     }
@@ -94,7 +100,7 @@ public class CfMapAnimations
      * @param crossfireServerConnection the connection to watch
      * @param mapUpdater the instance to update
      */
-    public CfMapAnimations(final CrossfireServerConnection crossfireServerConnection, final CfMapUpdater mapUpdater)
+    public CfMapAnimations(@NotNull final CrossfireServerConnection crossfireServerConnection, @NotNull final CfMapUpdater mapUpdater)
     {
         this(mapUpdater);
         crossfireServerConnection.addCrossfireTickListener(crossfireTickListener);
@@ -118,7 +124,7 @@ public class CfMapAnimations
      * @param animation the animation to display
      * @param type the animation type
      */
-    public void add(final Location location, final Animation animation, final int type)
+    public void add(@NotNull final Location location, @NotNull final Animation animation, final int type)
     {
         assert 0 <= location.getX();
         assert 0 <= location.getY();
@@ -152,7 +158,7 @@ public class CfMapAnimations
      * Removes a visible animation.
      * @param location the location to un-animate
      */
-    public void remove(final Location location)
+    public void remove(@NotNull final Location location)
     {
         assert 0 <= location.getX();
         assert 0 <= location.getY();
@@ -168,7 +174,7 @@ public class CfMapAnimations
      * @param location the location to update
      * @param speed the new animation speed
      */
-    public void updateSpeed(final Location location, final int speed)
+    public void updateSpeed(@NotNull final Location location, final int speed)
     {
         assert 0 <= location.getX();
         assert 0 <= location.getY();

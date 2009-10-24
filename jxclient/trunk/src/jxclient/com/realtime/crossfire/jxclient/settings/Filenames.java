@@ -22,6 +22,8 @@ package com.realtime.crossfire.jxclient.settings;
 import com.realtime.crossfire.jxclient.util.HexCodec;
 import java.io.File;
 import java.io.IOException;
+import org.jetbrains.annotations.NotNull;
+import org.jetbrains.annotations.Nullable;
 
 /**
  * Utility class to return references to settings files.
@@ -42,6 +44,7 @@ public class Filenames
      *
      * @return The image cache directory.
      */
+    @NotNull
     public static File getOriginalImageCacheDir()
     {
         try
@@ -61,6 +64,7 @@ public class Filenames
      *
      * @return The image cache directory.
      */
+    @NotNull
     public static File getScaledImageCacheDir()
     {
         try
@@ -80,6 +84,7 @@ public class Filenames
      *
      * @return The image cache directory.
      */
+    @NotNull
     public static File getMagicMapImageCacheDir()
     {
         try
@@ -101,6 +106,7 @@ public class Filenames
      *
      * @throws IOException If the file cannot be accessed.
      */
+    @NotNull
     public static File getSettingsFile() throws IOException
     {
         return getSettingsFile("jxclient.conf");
@@ -119,7 +125,8 @@ public class Filenames
      *
      * @throws IOException If the file cannot be accessed.
      */
-    public static File getShortcutsFile(final CharSequence hostname, final CharSequence character) throws IOException
+    @NotNull
+    public static File getShortcutsFile(@NotNull final CharSequence hostname, @NotNull final CharSequence character) throws IOException
     {
         return getSettingsFile("shortcuts-"+encode(hostname)+"-"+encode(character)+".txt");
     }
@@ -136,7 +143,8 @@ public class Filenames
      * @return The keybindings file; return <code>null</code> if the file
      * cannot be accessed.
      */
-    public static File getKeybindingsFile(final CharSequence hostname, final CharSequence character)
+    @Nullable
+    public static File getKeybindingsFile(@Nullable final CharSequence hostname, @Nullable final CharSequence character)
     {
         try
         {
@@ -154,6 +162,7 @@ public class Filenames
      * @return The metaserver cache file, or <code>null</code> if the file
      * cannot be accessed.
      */
+    @Nullable
     public static File getMetaserverCacheFile()
     {
         try
@@ -175,7 +184,8 @@ public class Filenames
      *
      * @throws IOException If the file cannot be accessed.
      */
-    public static File getDialogsFile(final String skinName) throws IOException
+    @NotNull
+    public static File getDialogsFile(@NotNull final String skinName) throws IOException
     {
         return new File(getSettingsFile("skin_"+skinName), "dialogs.txt");
     }
@@ -189,7 +199,8 @@ public class Filenames
      *
      * @throws IOException If the file cannot be accessed.
      */
-    public static File getSettingsFile(final String filename) throws IOException
+    @NotNull
+    public static File getSettingsFile(@NotNull final String filename) throws IOException
     {
         final File settingsDir = new File(getCrossfireFile(), "jxclient");
         if (!settingsDir.exists() && !settingsDir.mkdirs())
@@ -207,6 +218,7 @@ public class Filenames
      *
      * @throws IOException If the settings directory cannot be located.
      */
+    @NotNull
     private static File getCrossfireFile() throws IOException
     {
         final String home = System.getProperty("user.home");
@@ -225,7 +237,8 @@ public class Filenames
      *
      * @return The encoded string.
      */
-    private static String encode(final CharSequence str)
+    @NotNull
+    private static String encode(@NotNull final CharSequence str)
     {
         final StringBuilder sb = new StringBuilder();
         for (int i = 0; i < str.length(); i++)

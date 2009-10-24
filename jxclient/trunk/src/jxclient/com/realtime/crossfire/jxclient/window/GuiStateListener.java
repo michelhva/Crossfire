@@ -20,6 +20,7 @@
 package com.realtime.crossfire.jxclient.window;
 
 import com.realtime.crossfire.jxclient.server.ClientSocketState;
+import org.jetbrains.annotations.NotNull;
 
 /**
  * Interface for listeners interested gui state changes.
@@ -46,7 +47,7 @@ public interface GuiStateListener
      * Connection establishment is in progress.
      * @param clientSocketState the client socket state
      */
-    void connecting(final ClientSocketState clientSocketState);
+    void connecting(@NotNull ClientSocketState clientSocketState);
 
     /**
      * The connection has been established.
@@ -57,5 +58,5 @@ public interface GuiStateListener
      * An connection attempt failed.
      * @param reason the failure reason
      */
-    void connectFailed(String reason);
+    void connectFailed(@NotNull String reason);
 }

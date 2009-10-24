@@ -19,6 +19,8 @@
 //
 package com.realtime.crossfire.jxclient.gui.gauge;
 
+import org.jetbrains.annotations.NotNull;
+
 /**
  * Utility class to parse orientation names.
  * @author Andreas Kirschbaum
@@ -39,7 +41,7 @@ public class OrientationParser
      * @return the orientation instance
      * @throws IllegalArgumentException if the orientation name is undefined
      */
-    public static Orientation parseOrientation(final String name)
+    public static Orientation parseOrientation(@NotNull final String name)
     {
         if (name.equals("EW")) return new OrientationEW();
         if (name.equals("NS")) return new OrientationNS();

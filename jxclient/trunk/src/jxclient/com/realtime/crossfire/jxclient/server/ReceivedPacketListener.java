@@ -19,6 +19,8 @@
 //
 package com.realtime.crossfire.jxclient.server;
 
+import org.jetbrains.annotations.NotNull;
+
 /**
  * Interface for listeners interested in received packets.
  * @author Andreas Kirschbaum
@@ -29,7 +31,7 @@ public interface ReceivedPacketListener
      * A packet having no parameters has been received.
      * @param command the command string
      */
-    void processEmpty(final String command);
+    void processEmpty(@NotNull final String command);
 
     /**
      * A packet having ascii parameters has been received.
@@ -38,7 +40,7 @@ public interface ReceivedPacketListener
      * @param start the start index of the packet
      * @param end the end of the packet data
      */
-    void processAscii(String command, byte[] packet, int start, int end);
+    void processAscii(@NotNull String command, @NotNull byte[] packet, int start, int end);
 
     /**
      * A packet having an array of short integer parameters has been received.
@@ -47,7 +49,7 @@ public interface ReceivedPacketListener
      * @param start the start index of the packet
      * @param end the end of the packet data
      */
-    void processShortArray(String command, byte[] packet, int start, int end);
+    void processShortArray(@NotNull String command, @NotNull byte[] packet, int start, int end);
 
     /**
      * A packet having an array of int parameters has been received.
@@ -56,7 +58,7 @@ public interface ReceivedPacketListener
      * @param start the start index of the packet
      * @param end the end of the packet data
      */
-    void processIntArray(String command, byte[] packet, int start, int end);
+    void processIntArray(@NotNull String command, @NotNull byte[] packet, int start, int end);
 
     /**
      * A packet having a short and an int parameter has been received.
@@ -65,7 +67,7 @@ public interface ReceivedPacketListener
      * @param start the start index of the packet
      * @param end the end of the packet data
      */
-    void processShortInt(String command, byte[] packet, int start, int end);
+    void processShortInt(@NotNull String command, @NotNull byte[] packet, int start, int end);
 
     /**
      * A packet having mixed parameters has been received.
@@ -74,7 +76,7 @@ public interface ReceivedPacketListener
      * @param start the start index of the packet
      * @param end the end of the packet data
      */
-    void processMixed(String command, byte[] packet, int start, int end);
+    void processMixed(@NotNull String command, @NotNull byte[] packet, int start, int end);
 
     /**
      * A stats packet has been received.
@@ -83,7 +85,7 @@ public interface ReceivedPacketListener
      * @param args the stat arguments depending on <code>type</code> and
      * <code>stat</code>
      */
-    void processStats(String command, int stat, Object[] args);
+    void processStats(@NotNull String command, int stat, @NotNull Object[] args);
 
     /**
      * A packet having unknown parameters has been received.
@@ -92,5 +94,5 @@ public interface ReceivedPacketListener
      * @param start the start index of the packet
      * @param end the end of the packet data
      */
-    void processNodata(String command, byte[] packet, int start, int end);
+    void processNodata(@NotNull String command, @NotNull byte[] packet, int start, int end);
 }

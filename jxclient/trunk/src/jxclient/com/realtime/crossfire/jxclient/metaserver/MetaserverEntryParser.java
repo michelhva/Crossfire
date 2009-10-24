@@ -22,6 +22,8 @@ package com.realtime.crossfire.jxclient.metaserver;
 import com.realtime.crossfire.jxclient.util.NumberParser;
 import java.io.IOException;
 import java.util.regex.Pattern;
+import org.jetbrains.annotations.NotNull;
+import org.jetbrains.annotations.Nullable;
 
 /**
  * Parser for response lines of metaserver response lines.
@@ -33,16 +35,19 @@ public class MetaserverEntryParser
     /**
      * The default server version if none specified.
      */
+    @NotNull
     private static final String UNKNOWN_VERSION = "?";
 
     /**
      * The default for archbase, mapbase, and codebase if none specified.
      */
+    @NotNull
     private static final String DEFAULT_BASE = "not specified";
 
     /**
      * The pattern to split a metaserver response line into fields.
      */
+    @NotNull
     private static final Pattern FIELD_SEPARATOR_PATTERN = Pattern.compile("\\|");
 
     /**
@@ -58,6 +63,7 @@ public class MetaserverEntryParser
     /**
      * The "hostname" value for the current server entry.
      */
+    @Nullable
     private String hostname = null;
 
     /**
@@ -68,12 +74,14 @@ public class MetaserverEntryParser
     /**
      * The "server version" value for the current server entry.
      */
+    @NotNull
     private String version = UNKNOWN_VERSION;
 
     /**
      * The "comment" value for the current server entry. html_command is
      * preferred over text_comment.
      */
+    @NotNull
     private String comment = "";
 
     /**
@@ -94,16 +102,19 @@ public class MetaserverEntryParser
     /**
      * The "archetype base" value for the current server entry.
      */
+    @NotNull
     private String archbase = DEFAULT_BASE;
 
     /**
      * The "map base" value for the current server entry.
      */
+    @NotNull
     private String mapbase = DEFAULT_BASE;
 
     /**
      * The "code base" value for the current server entry.
      */
+    @NotNull
     private String codebase = DEFAULT_BASE;
 
     /**
@@ -120,7 +131,8 @@ public class MetaserverEntryParser
      * @return the metaserver entry or <code>null</code> if the line is
      * invalid
      */
-    public static MetaserverEntry parseEntry(final CharSequence entry)
+    @Nullable
+    public static MetaserverEntry parseEntry(@NotNull final CharSequence entry)
     {
         final String[] entries = FIELD_SEPARATOR_PATTERN.split(entry, -1);
         if (entries.length != 11)
@@ -168,7 +180,8 @@ public class MetaserverEntryParser
      * invalid
      * @throws IOException if the response line is invalid
      */
-    public MetaserverEntry parseLine(final String line) throws IOException
+    @Nullable
+    public MetaserverEntry parseLine(@NotNull final String line) throws IOException
     {
         if (!inSection)
         {
@@ -185,7 +198,7 @@ public class MetaserverEntryParser
         {
             if (line.equals("END_SERVER_DATA"))
             {
-                final MetaserverEntry metaserverEntry;
+                @Nullable final MetaserverEntry metaserverEntry;
                 if (hostname == null)
                 {
                     System.err.println("Warning: metaserver response missing hostname field, skipping");
@@ -307,13 +320,14 @@ public class MetaserverEntryParser
 
     /**
      * Format a metaserver entry that returns the metaserver entry when parse
-     * with {@link #parseEntry(String)}.
+     * with {@link #parseEntry(CharSequence)}.
      *
      * @param entry The metaserver entry to format.
      *
      * @return The formatted entry.
      */
-    public static String format(final MetaserverEntry entry)
+    @NotNull
+    public static String format(@NotNull final MetaserverEntry entry)
     {
         return entry.getUpdateSeconds()+"|"+replace(entry.getHostname())+"|"+entry.getPlayers()+"|"+replace(entry.getVersion())+"|"+replace(entry.getComment())+"|"+entry.getBytesIn()+"|"+entry.getBytesOut()+"|"+entry.getUptimeSeconds()+"|"+replace(entry.getArchbase())+"|"+replace(entry.getCodebase())+"|"+replace(entry.getMapbase());
     }
@@ -325,7 +339,8 @@ public class MetaserverEntryParser
      *
      * @return The replaced string.
      */
-    private static String replace(final String str)
+    @NotNull
+    private static String replace(@NotNull final String str)
     {
         return str.replaceAll("[\\|\r\n]", " ");
     }

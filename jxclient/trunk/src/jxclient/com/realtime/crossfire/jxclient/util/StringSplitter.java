@@ -21,6 +21,7 @@ package com.realtime.crossfire.jxclient.util;
 
 import java.util.ArrayList;
 import java.util.Collection;
+import org.jetbrains.annotations.NotNull;
 
 /**
  * Utility class for splitting strings.
@@ -51,7 +52,8 @@ public class StringSplitter
      * @param message the message to format
      * @return the formatted message
      */
-    public static String splitAsHtml(final String message)
+    @NotNull
+    public static String splitAsHtml(@NotNull final String message)
     {
         final StringBuilder sb = new StringBuilder();
         for (final String line : split(message))
@@ -70,7 +72,8 @@ public class StringSplitter
      * @param message the message to split
      * @return the lines
      */
-    private static Iterable<String> split(final String message)
+    @NotNull
+    private static Iterable<String> split(@NotNull final String message)
     {
         final String paddedMessage = message.trim()+" ";
 

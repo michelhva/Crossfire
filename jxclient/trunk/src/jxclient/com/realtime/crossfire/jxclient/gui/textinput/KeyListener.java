@@ -20,6 +20,7 @@
 package com.realtime.crossfire.jxclient.gui.textinput;
 
 import java.awt.event.KeyEvent;
+import org.jetbrains.annotations.NotNull;
 
 /**
  * Interface for listeners for keyboard input.
@@ -32,19 +33,19 @@ public interface KeyListener
      * @param e the key event for the key
      * @return whether the key event has been consumed
      */
-    boolean keyTyped(KeyEvent e);
+    boolean keyTyped(@NotNull KeyEvent e);
 
     /**
      * Invoked when a key has been pressed.
      * @param e the key event for the key
      * @return whether the key event has been consumed
      */
-    boolean keyPressed(KeyEvent e);
+    boolean keyPressed(@NotNull KeyEvent e);
 
     /**
      * Invoked when a key has been released.
      * @param e the key event for the key
      * @return whether the key event has been consumed
      */
-    boolean keyReleased(KeyEvent e);
+    boolean keyReleased(@NotNull KeyEvent e);
 }

@@ -20,6 +20,7 @@
 package com.realtime.crossfire.jxclient.settings.options;
 
 import com.realtime.crossfire.jxclient.window.GUICommandList;
+import org.jetbrains.annotations.NotNull;
 
 /**
  * A {@link CheckBoxOption} that executes {@link GUICommandList}s when
@@ -32,11 +33,13 @@ public class CommandCheckBoxOption extends CheckBoxOption
     /**
      * The command list to execute when checked.
      */
+    @NotNull
     private final GUICommandList commandOn;
 
     /**
      * The command list to execute when unchecked.
      */
+    @NotNull
     private final GUICommandList commandOff;
 
     /**
@@ -46,7 +49,7 @@ public class CommandCheckBoxOption extends CheckBoxOption
      *
      * @param commandOff The command list to execute when unchecked.
      */
-    public CommandCheckBoxOption(final GUICommandList commandOn, final GUICommandList commandOff)
+    public CommandCheckBoxOption(@NotNull final GUICommandList commandOn, @NotNull final GUICommandList commandOff)
     {
         this.commandOn = commandOn;
         this.commandOff = commandOff;

@@ -27,16 +27,20 @@ import java.util.Stack;
 import javax.swing.text.MutableAttributeSet;
 import javax.swing.text.html.HTML;
 import javax.swing.text.html.HTMLEditorKit;
+import org.jetbrains.annotations.NotNull;
 
 /**
  * @author Lauwenmark
  */
 public class InternalHTMLRenderer extends HTMLEditorKit.ParserCallback
 {
+    @NotNull
     private final Stack<Font> fonts = new Stack<Font>();
 
+    @NotNull
     private final Stack<Color> colors = new Stack<Color>();
 
+    @NotNull
     private final Graphics gc;
 
     private int x = 0;
@@ -47,7 +51,7 @@ public class InternalHTMLRenderer extends HTMLEditorKit.ParserCallback
 
     private final int borderSize;
 
-    public InternalHTMLRenderer(final Font font, final Color color, final Graphics gc, final int x, final int y, final int borderSize)
+    public InternalHTMLRenderer(@NotNull final Font font, @NotNull final Color color, @NotNull final Graphics gc, final int x, final int y, final int borderSize)
     {
         fonts.push(font);
         colors.push(color);
@@ -59,7 +63,7 @@ public class InternalHTMLRenderer extends HTMLEditorKit.ParserCallback
     }
 
     @Override
-    public void handleText(final char[] data, final int pos)
+    public void handleText(@NotNull final char[] data, final int pos)
     {
         gc.setFont(fonts.peek());
         gc.setColor(colors.peek());
@@ -71,7 +75,7 @@ public class InternalHTMLRenderer extends HTMLEditorKit.ParserCallback
     }
 
     @Override
-    public void handleStartTag(final HTML.Tag t, final MutableAttributeSet a, final int pos)
+    public void handleStartTag(@NotNull final HTML.Tag t, @NotNull final MutableAttributeSet a, final int pos)
     {
         if (t.equals(HTML.Tag.A))
         {
@@ -111,7 +115,7 @@ public class InternalHTMLRenderer extends HTMLEditorKit.ParserCallback
     }
 
     @Override
-    public void handleSimpleTag(final HTML.Tag t, final MutableAttributeSet a, final int pos)
+    public void handleSimpleTag(@NotNull final HTML.Tag t, @NotNull final MutableAttributeSet a, final int pos)
     {
         if (t.equals(HTML.Tag.BR))
         {
@@ -121,7 +125,7 @@ public class InternalHTMLRenderer extends HTMLEditorKit.ParserCallback
     }
 
     @Override
-    public void handleEndTag(final HTML.Tag t, final int pos)
+    public void handleEndTag(@NotNull final HTML.Tag t, final int pos)
     {
         fonts.pop();
         colors.pop();

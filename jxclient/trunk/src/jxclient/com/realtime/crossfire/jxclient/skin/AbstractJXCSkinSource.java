@@ -27,6 +27,7 @@ import java.util.Collections;
 import java.util.HashSet;
 import java.util.Iterator;
 import java.util.Set;
+import org.jetbrains.annotations.NotNull;
 
 /**
  * Abstract base class for {@link JXCSkinSource} implementations.
@@ -37,6 +38,7 @@ public abstract class AbstractJXCSkinSource implements JXCSkinSource
     /**
      * Available resolutions for this skin.
      */
+    @NotNull
     private final Set<Resolution> resolutions = new HashSet<Resolution>();
 
     /**
@@ -100,12 +102,13 @@ public abstract class AbstractJXCSkinSource implements JXCSkinSource
 
     /** {@inheritDoc} */
     @Override
-    public boolean containsResolution(final Resolution resolution)
+    public boolean containsResolution(@NotNull final Resolution resolution)
     {
         return resolutions.contains(resolution);
     }
 
     /** {@inheritDoc} */
+    @NotNull
     @Override
     public Iterator<Resolution> iterator()
     {

@@ -3,6 +3,7 @@ package com.realtime.crossfire.jxclient.test;
 import com.realtime.crossfire.jxclient.scripts.ScriptProcess;
 import com.realtime.crossfire.jxclient.scripts.ScriptProcessListener;
 import junit.framework.Assert;
+import org.jetbrains.annotations.NotNull;
 
 /**
  * Implements {@link ScriptProcess} for regression tests. All functions do call
@@ -20,6 +21,7 @@ public class TestScriptProcess implements ScriptProcess
     }
 
     /** {@inheritDoc} */
+    @NotNull
     @Override
     public String getFilename()
     {
@@ -29,14 +31,14 @@ public class TestScriptProcess implements ScriptProcess
 
     /** {@inheritDoc} */
     @Override
-    public void commandSent(final String cmd)
+    public void commandSent(@NotNull final String cmd)
     {
         Assert.fail();
     }
 
     /** {@inheritDoc} */
     @Override
-    public void addScriptProcessListener(final ScriptProcessListener scriptProcessListener)
+    public void addScriptProcessListener(@NotNull final ScriptProcessListener scriptProcessListener)
     {
         Assert.fail();
     }
@@ -50,7 +52,7 @@ public class TestScriptProcess implements ScriptProcess
 
     /** {@inheritDoc} */
     @Override
-    public int compareTo(final ScriptProcess o)
+    public int compareTo(@NotNull final ScriptProcess o)
     {
         Assert.fail();
         throw new AssertionError();

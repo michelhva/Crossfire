@@ -32,6 +32,8 @@ import java.io.InputStreamReader;
 import java.io.OutputStreamWriter;
 import java.util.ArrayList;
 import javax.swing.event.EventListenerList;
+import org.jetbrains.annotations.NotNull;
+import org.jetbrains.annotations.Nullable;
 
 /**
  * Manages a list of {@link Shortcut}s.
@@ -43,6 +45,7 @@ public class Shortcuts
      * The shortcuts. Maps index to {@link Shortcut}. Unset entries are set to
      * <code>null</code>.
      */
+    @NotNull
     private final ArrayList<Shortcut> shortcuts = new ArrayList<Shortcut>();
 
     /**
@@ -54,21 +57,25 @@ public class Shortcuts
     /**
      * The backing file.
      */
+    @Nullable
     private File file = null;
 
     /**
      * The listeners to be notified.
      */
+    @NotNull
     private final EventListenerList listeners = new EventListenerList();
 
     /**
      * The command queue for executing commands.
      */
+    @NotNull
     private final CommandQueue commandQueue;
 
     /**
      * The {@link SpellsManager} instance to watch.
      */
+    @NotNull
     private final SpellsManager spellsManager;
 
     /**
@@ -76,7 +83,7 @@ public class Shortcuts
      * @param commandQueue the command queue for executing commands
      * @param spellsManager the instance to watch
      */
-    public Shortcuts(final CommandQueue commandQueue, final SpellsManager spellsManager)
+    public Shortcuts(@NotNull final CommandQueue commandQueue, @NotNull final SpellsManager spellsManager)
     {
         this.commandQueue = commandQueue;
         this.spellsManager = spellsManager;
@@ -88,7 +95,7 @@ public class Shortcuts
      * @param file the file to read
      * @throws IOException if an I/O error occurs
      */
-    public void load(final File file) throws IOException
+    public void load(@NotNull final File file) throws IOException
     {
         modified = false;
 
@@ -253,6 +260,7 @@ public class Shortcuts
      * @param index the shortcut index
      * @return the shortcut or <code>null</code> if the shortcut is unset
      */
+    @Nullable
     private Shortcut getShortcut(final int index)
     {
         try
@@ -270,7 +278,7 @@ public class Shortcuts
      * @param index the shortcut index
      * @param shortcut the shortcut to set or <code>null</code> to unset
      */
-    private void setShortcut(final int index, final Shortcut shortcut)
+    private void setShortcut(final int index, @Nullable final Shortcut shortcut)
     {
         while (shortcuts.size() <= index)
         {
@@ -313,7 +321,7 @@ public class Shortcuts
      * @param cast whether the spell should be cast (<code>true</code>) or
      * invoked (<code>false</code>)
      */
-    private void setSpellShortcut(final int index, final String spellName, final boolean cast)
+    private void setSpellShortcut(final int index, @NotNull final String spellName, final boolean cast)
     {
         final Spell spell = spellsManager.getSpell(spellName);
         setSpellShortcut(index, spell, cast);
@@ -326,7 +334,7 @@ public class Shortcuts
      * @param cast whether the spell should be cast (<code>true</code>) or
      * invoked (<code>false</code>)
      */
-    public void setSpellShortcut(final int index, final Spell spell, final boolean cast)
+    public void setSpellShortcut(final int index, @NotNull final Spell spell, final boolean cast)
     {
         final ShortcutSpell shortcutSpell = new ShortcutSpell(commandQueue, spell);
         shortcutSpell.setCast(cast);
@@ -338,7 +346,7 @@ public class Shortcuts
      * @param index the shortcut index
      * @param command the command to execute
      */
-    private void setCommandShortcut(final int index, final String command)
+    private void setCommandShortcut(final int index, @NotNull final String command)
     {
         if (command.length() <= 0)
         {
@@ -381,7 +389,7 @@ public class Shortcuts
      * Adds a {@link ShortcutsListener}.
      * @param listener the listener to add
      */
-    public void addShortcutsListener(final ShortcutsListener listener)
+    public void addShortcutsListener(@NotNull final ShortcutsListener listener)
     {
         listeners.add(ShortcutsListener.class, listener);
     }
@@ -390,7 +398,7 @@ public class Shortcuts
      * Removes a {@link ShortcutsListener}.
      * @param listener the listener to remove
      */
-    public void removeShortcutsListener(final ShortcutsListener listener)
+    public void removeShortcutsListener(@NotNull final ShortcutsListener listener)
     {
         listeners.remove(ShortcutsListener.class, listener);
     }
@@ -399,6 +407,7 @@ public class Shortcuts
      * Returns the backing file.
      * @return the backing file or <code>null</code> if unknown
      */
+    @Nullable
     public File getFile()
     {
         return file;

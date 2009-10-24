@@ -36,6 +36,8 @@ import java.util.Collection;
 import java.util.List;
 import java.util.concurrent.CopyOnWriteArrayList;
 import java.util.regex.Pattern;
+import org.jetbrains.annotations.NotNull;
+import org.jetbrains.annotations.Nullable;
 
 /**
  * Default implementation of {@link CrossfireServerConnection}.
@@ -46,12 +48,14 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
     /**
      * Pattern to split a string by ":".
      */
+    @NotNull
     private static final Pattern PATTERN_DOT = Pattern.compile(":");
 
     /**
      * The {@link Charset} used for parsing or encoding strings received from
      * or sent to the Crossfire server.
      */
+    @NotNull
     private static final Charset UTF8 = Charset.forName("UTF-8");
 
     /**
@@ -72,108 +76,129 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
     /**
      * The {@link CrossfireServerConnectionListener}s to notify.
      */
+    @NotNull
     private final Collection<CrossfireServerConnectionListener> crossfireServerConnectionListeners = new ArrayList<CrossfireServerConnectionListener>();
 
     /**
      * The {@link MapSizeListener}s to be notified.
      */
+    @NotNull
     private final Collection<MapSizeListener> mapSizeListeners = new ArrayList<MapSizeListener>();
 
     /**
      * The {@link CrossfireDrawinfoListener}s to be notified.
      */
+    @NotNull
     private final Collection<CrossfireDrawinfoListener> drawinfoListeners = new ArrayList<CrossfireDrawinfoListener>();
 
     /**
      * The {@link CrossfireDrawextinfoListener}s to be notified.
      */
+    @NotNull
     private final Collection<CrossfireDrawextinfoListener> drawextinfoListeners = new ArrayList<CrossfireDrawextinfoListener>();
 
     /**
      * The {@link CrossfireQueryListener}s to be notified.
      */
+    @NotNull
     private final Collection<CrossfireQueryListener> queryListeners = new ArrayList<CrossfireQueryListener>();
 
     /**
      * The {@link CrossfireMagicmapListener}s to be notified of received
      * magicmap commands.
      */
+    @NotNull
     private final Collection<CrossfireMagicmapListener> magicmapListeners = new ArrayList<CrossfireMagicmapListener>();
 
     /**
      * The {@link CrossfireUpdateFaceListener}s to be notified.
      */
+    @NotNull
     private final Collection<CrossfireUpdateFaceListener> crossfireUpdateFaceListeners = new ArrayList<CrossfireUpdateFaceListener>();
 
     /**
      * The {@link CrossfireStatsListener}s to be notified.
      */
+    @NotNull
     private final Collection<CrossfireStatsListener> crossfireStatsListeners = new ArrayList<CrossfireStatsListener>();
 
     /**
      * The {@link CrossfireUpdateItemListener}s to be notified.
      */
+    @NotNull
     private final Collection<CrossfireUpdateItemListener> crossfireUpdateItemListeners = new ArrayList<CrossfireUpdateItemListener>();
 
     /**
      * The {@link CrossfireUpdateMapListener}s to be notified.
      */
+    @NotNull
     private final Collection<CrossfireUpdateMapListener> crossfireUpdateMapListeners = new ArrayList<CrossfireUpdateMapListener>();
 
     /**
      * The {@link CrossfireTickListener}s to be notified.
      */
+    @NotNull
     private final Collection<CrossfireTickListener> crossfireTickListeners = new ArrayList<CrossfireTickListener>();
 
     /**
      * The {@link CrossfireSoundListener}s to be notified.
      */
+    @NotNull
     private final Collection<CrossfireSoundListener> crossfireSoundListeners = new ArrayList<CrossfireSoundListener>();
 
     /**
      * The {@link CrossfireMusicListener}s to be notified.
      */
+    @NotNull
     private final Collection<CrossfireMusicListener> crossfireMusicListeners = new ArrayList<CrossfireMusicListener>();
 
     /**
      * The {@link CrossfireComcListener}s to be notified.
      */
+    @NotNull
     private final Collection<CrossfireComcListener> crossfireComcListeners = new ArrayList<CrossfireComcListener>();
 
     /**
      * The {@link CrossfireFaceListener}s to be notified.
      */
+    @NotNull
     private final Collection<CrossfireFaceListener> crossfireFaceListeners = new ArrayList<CrossfireFaceListener>();
 
     /**
      * The {@link CrossfireSpellListener}s to be notified.
      */
+    @NotNull
     private final Collection<CrossfireSpellListener> crossfireSpellListeners = new ArrayList<CrossfireSpellListener>();
 
     /**
      * The {@link ReceivedPacketListener}s to be notified.
      */
+    @NotNull
     private final Collection<ReceivedPacketListener> receivedPacketListeners = new CopyOnWriteArrayList<ReceivedPacketListener>();
 
     /**
      * The {@link CrossfireExpTableListener}s to be notified.
      */
+    @NotNull
     private final Collection<CrossfireExpTableListener> crossfireExpTableListeners = new ArrayList<CrossfireExpTableListener>();
 
     /**
      * The {@link CrossfireSkillInfoListener}s to be notified.
      */
+    @NotNull
     private final Collection<CrossfireSkillInfoListener> crossfireSkillInfoListeners = new ArrayList<CrossfireSkillInfoListener>();
 
     /**
      * Buffer to build commands to send. It is shared between all sendXxx()
      * functions. It is used to synchronize these functions.
      */
+    @NotNull
     private final byte[] writeBuffer = new byte[65536];
 
     /**
      * A byte buffer using {@link #writeBuffer} to store the data.
      */
+    @NotNull
     private final ByteBuffer byteBuffer = ByteBuffer.wrap(writeBuffer);
 
     /**
@@ -182,67 +207,85 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
     private int packet = 1;
 
     /** The command prefix for the "addme" command. */
+    @NotNull
     private static final byte[] addmePrefix = { 'a', 'd', 'd', 'm', 'e', ' ', };
 
     /** The command prefix for the "apply" command. */
+    @NotNull
     private static final byte[] applyPrefix = { 'a', 'p', 'p', 'l', 'y', ' ', };
 
     /** The command prefix for the "askface" command. */
+    @NotNull
     private static final byte[] askfacePrefix = { 'a', 's', 'k', 'f', 'a', 'c', 'e', ' ', };
 
     /** The command prefix for the "examine" command. */
+    @NotNull
     private static final byte[] examinePrefix = { 'e', 'x', 'a', 'm', 'i', 'n', 'e', ' ', };
 
     /** The command prefix for the "lock" command. */
+    @NotNull
     private static final byte[] lockPrefix = { 'l', 'o', 'c', 'k', ' ', };
 
     /** The command prefix for the "lookat" command. */
+    @NotNull
     private static final byte[] lookatPrefix = { 'l', 'o', 'o', 'k', 'a', 't', ' ', };
 
     /** The command prefix for the "mark" command. */
+    @NotNull
     private static final byte[] markPrefix = { 'm', 'a', 'r', 'k', ' ', };
 
     /** The command prefix for the "move" command. */
+    @NotNull
     private static final byte[] movePrefix = { 'm', 'o', 'v', 'e', ' ', };
 
     /** The command prefix for the "ncom" command. */
+    @NotNull
     private static final byte[] ncomPrefix = { 'n', 'c', 'o', 'm', ' ', };
 
     /** The command prefix for the "reply" command. */
+    @NotNull
     private static final byte[] replyPrefix = { 'r', 'e', 'p', 'l', 'y', ' ', };
 
     /** The command prefix for the "requestinfo" command. */
+    @NotNull
     private static final byte[] requestinfoPrefix = { 'r', 'e', 'q', 'u', 'e', 's', 't', 'i', 'n', 'f', 'o', ' ', };
 
     /** The command prefix for the "setup" command. */
+    @NotNull
     private static final byte[] setupPrefix = { 's', 'e', 't', 'u', 'p', }; // note that this command does not have a trailing space
 
     /** The command prefix for the "toggleextendedtext" command. */
+    @NotNull
     private static final byte[] toggleextendedtextPrefix = { 't', 'o', 'g', 'g', 'l', 'e', 'e', 'x', 't', 'e', 'n', 'd', 'e', 'd', 't', 'e', 'x', 't', }; // note that this command does not have a trailing space
 
     /** The command prefix for the "version" command. */
+    @NotNull
     private static final byte[] versionPrefix = { 'v', 'e', 'r', 's', 'i', 'o', 'n', ' ', };
 
     /**
      * The semaphore used to synchronized map model updates and map view
      * redraws.
      */
+    @NotNull
     private final Object redrawSemaphore;
 
     /**
      * The appender to write protocol commands to. May be <code>null</code> to
      * not write anything.
      */
+    @Nullable
     private final DebugWriter debugProtocol;
 
     /**
      * The current connection state.
      */
+    @NotNull
     private ClientSocketState clientSocketState = ClientSocketState.CONNECTING;
 
     /**
      * The {@link ClientSocketListener} attached to the server socket.
      */
+    @NotNull
     private final ClientSocketListener clientSocketListener = new ClientSocketListener()
     {
         /** {@inheritDoc} */
@@ -261,28 +304,28 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
 
         /** {@inheritDoc} */
         @Override
-        public void packetReceived(final byte[] buf, final int start, final int end) throws UnknownCommandException
+        public void packetReceived(@NotNull final byte[] buf, final int start, final int end) throws UnknownCommandException
         {
             processPacket(buf, start, end);
         }
 
         /** {@inheritDoc} */
         @Override
-        public void packetSent(final byte[] buf, final int len)
+        public void packetSent(@NotNull final byte[] buf, final int len)
         {
             // ignore
         }
 
         /** {@inheritDoc} */
         @Override
-        public void disconnecting(final String reason)
+        public void disconnecting(@NotNull final String reason)
         {
             // ignore
         }
 
         /** {@inheritDoc} */
         @Override
-        public void disconnected(final String reason)
+        public void disconnected(@NotNull final String reason)
         {
             // ignore
         }
@@ -296,7 +339,7 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
      * commands to this writer
      * @throws IOException if an internal error occurs
      */
-    public DefaultCrossfireServerConnection(final Object redrawSemaphore, final DebugWriter debugProtocol) throws IOException
+    public DefaultCrossfireServerConnection(@NotNull final Object redrawSemaphore, @Nullable final DebugWriter debugProtocol) throws IOException
     {
         super(debugProtocol);
         this.redrawSemaphore = redrawSemaphore;
@@ -307,182 +350,182 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
 
     /** {@inheritDoc} */
     @Override
-    public synchronized void addCrossfireServerConnectionListener(final CrossfireServerConnectionListener listener)
+    public synchronized void addCrossfireServerConnectionListener(@NotNull final CrossfireServerConnectionListener listener)
     {
         crossfireServerConnectionListeners.add(listener);
     }
 
     /** {@inheritDoc} */
     @Override
-    public synchronized void addMapSizeListener(final MapSizeListener listener)
+    public synchronized void addMapSizeListener(@NotNull final MapSizeListener listener)
     {
         mapSizeListeners.add(listener);
     }
 
     /** {@inheritDoc} */
     @Override
-    public synchronized void removeMapSizeListener(final MapSizeListener listener)
+    public synchronized void removeMapSizeListener(@NotNull final MapSizeListener listener)
     {
         mapSizeListeners.remove(listener);
     }
 
     /** {@inheritDoc} */
     @Override
-    public synchronized void addCrossfireDrawinfoListener(final CrossfireDrawinfoListener listener)
+    public synchronized void addCrossfireDrawinfoListener(@NotNull final CrossfireDrawinfoListener listener)
     {
         drawinfoListeners.add(listener);
     }
 
     /** {@inheritDoc} */
     @Override
-    public synchronized void removeCrossfireDrawinfoListener(final CrossfireDrawinfoListener listener)
+    public synchronized void removeCrossfireDrawinfoListener(@NotNull final CrossfireDrawinfoListener listener)
     {
         drawinfoListeners.remove(listener);
     }
 
     /** {@inheritDoc} */
     @Override
-    public synchronized void addCrossfireDrawextinfoListener(final CrossfireDrawextinfoListener listener)
+    public synchronized void addCrossfireDrawextinfoListener(@NotNull final CrossfireDrawextinfoListener listener)
     {
         drawextinfoListeners.add(listener);
     }
 
     /** {@inheritDoc} */
     @Override
-    public synchronized void removeCrossfireDrawextinfoListener(final CrossfireDrawextinfoListener listener)
+    public synchronized void removeCrossfireDrawextinfoListener(@NotNull final CrossfireDrawextinfoListener listener)
     {
         drawextinfoListeners.remove(listener);
     }
 
     /** {@inheritDoc} */
     @Override
-    public synchronized void addCrossfireQueryListener(final CrossfireQueryListener listener)
+    public synchronized void addCrossfireQueryListener(@NotNull final CrossfireQueryListener listener)
     {
         queryListeners.add(listener);
     }
 
     /** {@inheritDoc} */
     @Override
-    public synchronized void removeCrossfireQueryListener(final CrossfireQueryListener listener)
+    public synchronized void removeCrossfireQueryListener(@NotNull final CrossfireQueryListener listener)
     {
         queryListeners.remove(listener);
     }
 
     /** {@inheritDoc} */
     @Override
-    public void addCrossfireMagicmapListener(final CrossfireMagicmapListener listener)
+    public void addCrossfireMagicmapListener(@NotNull final CrossfireMagicmapListener listener)
     {
         magicmapListeners.add(listener);
     }
 
     /** {@inheritDoc} */
     @Override
-    public void removeCrossfireMagicmapListener(final CrossfireMagicmapListener listener)
+    public void removeCrossfireMagicmapListener(@NotNull final CrossfireMagicmapListener listener)
     {
         magicmapListeners.remove(listener);
     }
 
     /** {@inheritDoc} */
     @Override
-    public void addCrossfireUpdateFaceListener(final CrossfireUpdateFaceListener listener)
+    public void addCrossfireUpdateFaceListener(@NotNull final CrossfireUpdateFaceListener listener)
     {
         crossfireUpdateFaceListeners.add(listener);
     }
 
     /** {@inheritDoc} */
     @Override
-    public void addCrossfireStatsListener(final CrossfireStatsListener crossfireStatsListener)
+    public void addCrossfireStatsListener(@NotNull final CrossfireStatsListener crossfireStatsListener)
     {
         crossfireStatsListeners.add(crossfireStatsListener);
     }
 
     /** {@inheritDoc} */
     @Override
-    public void addCrossfireUpdateItemListener(final CrossfireUpdateItemListener crossfireUpdateItemListener)
+    public void addCrossfireUpdateItemListener(@NotNull final CrossfireUpdateItemListener crossfireUpdateItemListener)
     {
         crossfireUpdateItemListeners.add(crossfireUpdateItemListener);
     }
 
     /** {@inheritDoc} */
     @Override
-    public void addCrossfireUpdateMapListener(final CrossfireUpdateMapListener listener)
+    public void addCrossfireUpdateMapListener(@NotNull final CrossfireUpdateMapListener listener)
     {
         crossfireUpdateMapListeners.add(listener);
     }
 
     /** {@inheritDoc} */
     @Override
-    public void addCrossfireTickListener(final CrossfireTickListener listener)
+    public void addCrossfireTickListener(@NotNull final CrossfireTickListener listener)
     {
         crossfireTickListeners.add(listener);
     }
 
     /** {@inheritDoc} */
     @Override
-    public void addCrossfireSoundListener(final CrossfireSoundListener listener)
+    public void addCrossfireSoundListener(@NotNull final CrossfireSoundListener listener)
     {
         crossfireSoundListeners.add(listener);
     }
 
     /** {@inheritDoc} */
     @Override
-    public void addCrossfireMusicListener(final CrossfireMusicListener listener)
+    public void addCrossfireMusicListener(@NotNull final CrossfireMusicListener listener)
     {
         crossfireMusicListeners.add(listener);
     }
 
     /** {@inheritDoc} */
     @Override
-    public void addCrossfireComcListener(final CrossfireComcListener listener)
+    public void addCrossfireComcListener(@NotNull final CrossfireComcListener listener)
     {
         crossfireComcListeners.add(listener);
     }
 
     /** {@inheritDoc} */
     @Override
-    public void addCrossfireFaceListener(final CrossfireFaceListener listener)
+    public void addCrossfireFaceListener(@NotNull final CrossfireFaceListener listener)
     {
         crossfireFaceListeners.add(listener);
     }
 
     /** {@inheritDoc} */
     @Override
-    public void addCrossfireSpellListener(final CrossfireSpellListener listener)
+    public void addCrossfireSpellListener(@NotNull final CrossfireSpellListener listener)
     {
         crossfireSpellListeners.add(listener);
     }
 
     /** {@inheritDoc} */
     @Override
-    public void addPacketWatcherListener(final ReceivedPacketListener listener)
+    public void addPacketWatcherListener(@NotNull final ReceivedPacketListener listener)
     {
         receivedPacketListeners.add(listener);
     }
 
     /** {@inheritDoc} */
     @Override
-    public void removePacketWatcherListener(final ReceivedPacketListener listener)
+    public void removePacketWatcherListener(@NotNull final ReceivedPacketListener listener)
     {
         receivedPacketListeners.remove(listener);
     }
 
     /** {@inheritDoc} */
     @Override
-    public void addCrossfireExpTableListener(final CrossfireExpTableListener crossfireExpTableListener)
+    public void addCrossfireExpTableListener(@NotNull final CrossfireExpTableListener crossfireExpTableListener)
     {
         crossfireExpTableListeners.add(crossfireExpTableListener);
     }
 
     /** {@inheritDoc} */
     @Override
-    public void addCrossfireSkillInfoListener(final CrossfireSkillInfoListener listener)
+    public void addCrossfireSkillInfoListener(@NotNull final CrossfireSkillInfoListener listener)
     {
         crossfireSkillInfoListeners.add(listener);
     }
 
     /** {@inheritDoc} */
     @Override
-    public void removeCrossfireSkillInfoListener(final CrossfireSkillInfoListener listener)
+    public void removeCrossfireSkillInfoListener(@NotNull final CrossfireSkillInfoListener listener)
     {
         crossfireSkillInfoListeners.remove(listener);
     }
@@ -506,7 +549,7 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
      * bounds accesses to the array <code>packet</code>; instead, a
      * <code>try...catch</code> clause is used to detect invalid packets.
      */
-    private void processPacket(final byte[] packet, final int start, final int end) throws UnknownCommandException
+    private void processPacket(@NotNull final byte[] packet, final int start, final int end) throws UnknownCommandException
     {
         try
         {
@@ -1716,7 +1759,7 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
      * @param end the end index into <code>packet</code>
      * @return the command string
      */
-    private static String extractCommand(final byte[] packet, final int start, final int end)
+    private static String extractCommand(@NotNull final byte[] packet, final int start, final int end)
     {
         int cmdlen;
         for (cmdlen = start; cmdlen < end; cmdlen++)
@@ -1736,7 +1779,7 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
      * @param end the end of the payload data to process
      * @throws UnknownCommandException if the command cannot be parsed
      */
-    private void cmdMap2(final byte[] packet, final int start, final int end) throws UnknownCommandException
+    private void cmdMap2(@NotNull final byte[] packet, final int start, final int end) throws UnknownCommandException
     {
         synchronized (redrawSemaphore)
         {
@@ -1935,7 +1978,7 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
      * @param scval the server version
      * @param vinfo the version information string
      */
-    private void cmdVersion(final int csval, final int scval, final String vinfo)
+    private void cmdVersion(final int csval, final int scval, @NotNull final String vinfo)
     {
         setClientSocketState(ClientSocketState.VERSION, ClientSocketState.SETUP);
         sendSetup(
@@ -1968,7 +2011,7 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
      * @param endPos the end offset into <code>packet</code>
      * @throws IOException if an I/O error occurs
      */
-    private void cmdReplyinfo(final String infoType, final byte[] packet, final int startPos, final int endPos) throws IOException
+    private void cmdReplyinfo(@NotNull final String infoType, final byte[] packet, final int startPos, final int endPos) throws IOException
     {
         if (infoType.equals("image_info"))
         {
@@ -1995,7 +2038,7 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
      * @param endPos the end position into <code>packet</code>
      * @throws IOException if the packet cannot be parsed
      */
-    private void processImageInfoReplyinfo(final byte[] packet, final int startPos, final int endPos) throws IOException
+    private void processImageInfoReplyinfo(@NotNull final byte[] packet, final int startPos, final int endPos) throws IOException
     {
         final ByteArrayInputStream is = new ByteArrayInputStream(packet, startPos, endPos-startPos);
         try
@@ -2036,7 +2079,7 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
      * @param endPos the end position into <code>packet</code>
      * @throws IOException if the packet cannot be parsed
      */
-    private void processSkillInfoReplyinfo(final byte[] packet, final int startPos, final int endPos) throws IOException
+    private void processSkillInfoReplyinfo(@NotNull final byte[] packet, final int startPos, final int endPos) throws IOException
     {
         for (final CrossfireSkillInfoListener crossfireSkillInfoListener : crossfireSkillInfoListeners)
         {
@@ -2111,7 +2154,7 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
      * @param startPos the starting position into <code>packet</code>
      * @param endPos the end position into <code>packet</code>
      */
-    private void processExpTableReplyinfo(final byte[] packet, final int startPos, final int endPos)
+    private void processExpTableReplyinfo(@NotNull final byte[] packet, final int startPos, final int endPos)
     {
         int pos = startPos;
         final int numLevels = ((packet[pos++]&0xFF)<<8)|(packet[pos++]&0xFF);
@@ -2139,7 +2182,7 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
      * @param options the option/value pairs
      * @throws UnknownCommandException if a protocol error occurs
      */
-    private void cmdSetup(final List<String> options) throws UnknownCommandException
+    private void cmdSetup(@NotNull final List<String> options) throws UnknownCommandException
     {
         for (int i = 0; i+1 < options.size(); i += 2)
         {
@@ -2257,14 +2300,14 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
      * @param start the starting index into <code>buf</code>
      * @param length the length of the parameter buffer
      */
-    private void cmdMapextended(final byte[] buf, final int start, final int length)
+    private void cmdMapextended(@NotNull final byte[] buf, final int start, final int length)
     {
         // XXX: "MapExtended" command not yet implemented
     }
 
     /** {@inheritDoc} */
     @Override
-    public void drawInfo(final String message, final int color)
+    public void drawInfo(@NotNull final String message, final int color)
     {
         for (final CrossfireDrawinfoListener listener : drawinfoListeners)
         {
@@ -2411,7 +2454,7 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
 
     /** {@inheritDoc} */
     @Override
-    public int sendNcom(final int repeat, final String command)
+    public int sendNcom(final int repeat, @NotNull final String command)
     {
         if (debugProtocol != null)
         {
@@ -2433,7 +2476,7 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
 
     /** {@inheritDoc} */
     @Override
-    public void sendReply(final String text)
+    public void sendReply(@NotNull final String text)
     {
         if (debugProtocol != null)
         {
@@ -2450,7 +2493,7 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
 
     /** {@inheritDoc} */
     @Override
-    public void sendRequestinfo(final String infoType)
+    public void sendRequestinfo(@NotNull final String infoType)
     {
         if (debugProtocol != null)
         {
@@ -2467,7 +2510,7 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
 
     /** {@inheritDoc} */
     @Override
-    public void sendSetup(final String... options)
+    public void sendSetup(@NotNull final String... options)
     {
         if (debugProtocol != null)
         {
@@ -2495,7 +2538,7 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
 
     /** {@inheritDoc} */
     @Override
-    public void sendToggleextendedtext(final int... types)
+    public void sendToggleextendedtext(@NotNull final int... types)
     {
         if (types.length <= 0)
         {
@@ -2521,7 +2564,7 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
 
     /** {@inheritDoc} */
     @Override
-    public void sendVersion(final int csval, final int scval, final String vinfo)
+    public void sendVersion(final int csval, final int scval, @NotNull final String vinfo)
     {
         if (debugProtocol != null)
         {
@@ -2642,7 +2685,7 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
      * Notifies all {@link ReceivedPacketListener}s about an empty packet.
      * @param command the command string
      */
-    private void notifyPacketWatcherListenersEmpty(final String command)
+    private void notifyPacketWatcherListenersEmpty(@NotNull final String command)
     {
         for (final ReceivedPacketListener receivedPacketListener : receivedPacketListeners)
         {
@@ -2659,7 +2702,7 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
      * arguments
      * @param end the end index into <code>packet</code>
      */
-    private void notifyPacketWatcherListenersAscii(final byte[] packet, final int start, final int args, final int end)
+    private void notifyPacketWatcherListenersAscii(@NotNull final byte[] packet, final int start, final int args, final int end)
     {
         if (!receivedPacketListeners.isEmpty())
         {
@@ -2687,7 +2730,7 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
      * arguments
      * @param end the end index into <code>packet</code>
      */
-    private void notifyPacketWatcherListenersShortArray(final byte[] packet, final int start, final int args, final int end)
+    private void notifyPacketWatcherListenersShortArray(@NotNull final byte[] packet, final int start, final int args, final int end)
     {
         if (!receivedPacketListeners.isEmpty())
         {
@@ -2715,7 +2758,7 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
      * arguments
      * @param end the end index into <code>packet</code>
      */
-    private void notifyPacketWatcherListenersIntArray(final byte[] packet, final int start, final int args, final int end)
+    private void notifyPacketWatcherListenersIntArray(@NotNull final byte[] packet, final int start, final int args, final int end)
     {
         if (!receivedPacketListeners.isEmpty())
         {
@@ -2743,7 +2786,7 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
      * arguments
      * @param end the end index into <code>packet</code>
      */
-    private void notifyPacketWatcherListenersShortInt(final byte[] packet, final int start, final int args, final int end)
+    private void notifyPacketWatcherListenersShortInt(@NotNull final byte[] packet, final int start, final int args, final int end)
     {
         if (!receivedPacketListeners.isEmpty())
         {
@@ -2771,7 +2814,7 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
      * arguments
      * @param end the end index into <code>packet</code>
      */
-    private void notifyPacketWatcherListenersMixed(final byte[] packet, final int start, final int args, final int end)
+    private void notifyPacketWatcherListenersMixed(@NotNull final byte[] packet, final int start, final int args, final int end)
     {
         if (!receivedPacketListeners.isEmpty())
         {
@@ -2797,7 +2840,7 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
      * @param args the stat arguments depending on <code>type</code> and
      * <code>stat</code>
      */
-    private void notifyPacketWatcherListenersStats(final int stat, final Object... args)
+    private void notifyPacketWatcherListenersStats(final int stat, @NotNull final Object... args)
     {
         if (!receivedPacketListeners.isEmpty())
         {
@@ -2817,7 +2860,7 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
      * arguments
      * @param end the end index into <code>packet</code>
      */
-    private void notifyPacketWatcherListenersNodata(final byte[] packet, final int start, final int args, final int end)
+    private void notifyPacketWatcherListenersNodata(@NotNull final byte[] packet, final int start, final int args, final int end)
     {
         if (!receivedPacketListeners.isEmpty())
         {
@@ -2838,7 +2881,7 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
 
     /** {@inheritDoc} */
     @Override
-    public void connect(final String hostname, final int port)
+    public void connect(@NotNull final String hostname, final int port)
     {
         clientSocketState = ClientSocketState.CONNECTING;
         setClientSocketState(ClientSocketState.CONNECTING, ClientSocketState.CONNECTING);
@@ -2850,7 +2893,7 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
      * @param prevState the expected current state
      * @param nextState the next state
      */
-    private void setClientSocketState(final ClientSocketState prevState, final ClientSocketState nextState)
+    private void setClientSocketState(@NotNull final ClientSocketState prevState, @NotNull final ClientSocketState nextState)
     {
         if (debugProtocol != null)
         {

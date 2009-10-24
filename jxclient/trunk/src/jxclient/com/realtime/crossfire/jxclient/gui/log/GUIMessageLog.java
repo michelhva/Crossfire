@@ -24,6 +24,7 @@ import com.realtime.crossfire.jxclient.server.CrossfireServerConnection;
 import com.realtime.crossfire.jxclient.window.JXCWindowRenderer;
 import java.awt.Color;
 import java.awt.Image;
+import org.jetbrains.annotations.NotNull;
 
 /**
  * A gui element implementing the message window.
@@ -39,6 +40,7 @@ public class GUIMessageLog extends GUILog
     /**
      * The message buffer updater for updating {@link #buffer}.
      */
+    @NotNull
     private final MessageBufferUpdater messageBufferUpdater;
 
     /**
@@ -57,7 +59,7 @@ public class GUIMessageLog extends GUILog
      * @param defaultColor the default color to use for text message not
      * specifying a color
      */
-    public GUIMessageLog(final TooltipManager tooltipManager, final JXCWindowRenderer windowRenderer, final String name, final int x, final int y, final int w, final int h, final CrossfireServerConnection crossfireServerConnection, final Image backgroundImage, final Fonts fonts, final Color defaultColor)
+    public GUIMessageLog(@NotNull final TooltipManager tooltipManager, @NotNull final JXCWindowRenderer windowRenderer, @NotNull final String name, final int x, final int y, final int w, final int h, @NotNull final CrossfireServerConnection crossfireServerConnection, @NotNull final Image backgroundImage, @NotNull final Fonts fonts, @NotNull final Color defaultColor)
     {
         super(tooltipManager, windowRenderer, name, x, y, w, h, backgroundImage, fonts);
         messageBufferUpdater = new MessageBufferUpdater(crossfireServerConnection, buffer, defaultColor);
@@ -76,7 +78,7 @@ public class GUIMessageLog extends GUILog
      * @param index the color index to change
      * @param color the color to map to
      */
-    public void setColor(final int index, final Color color)
+    public void setColor(final int index, @NotNull final Color color)
     {
         messageBufferUpdater.setColor(index, color);
     }

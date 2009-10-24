@@ -19,6 +19,8 @@
 //
 package com.realtime.crossfire.jxclient.spells;
 
+import org.jetbrains.annotations.NotNull;
+
 /**
  * Interface for listeners interested in {@link SpellsManager} events.
  * @author Andreas Kirschbaum
@@ -33,7 +35,7 @@ public interface SpellsManagerListener
      * @param index The current index of <code>spell</code> in the spells
      * manager.
      */
-    void spellAdded(Spell spell, int index);
+    void spellAdded(@NotNull Spell spell, int index);
 
     /**
      * A spell was removed.
@@ -43,5 +45,5 @@ public interface SpellsManagerListener
      * @param index The former index of <code>spell</code> in the spells
      * manager.
      */
-    void spellRemoved(Spell spell, int index);
+    void spellRemoved(@NotNull Spell spell, int index);
 }

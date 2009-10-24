@@ -34,6 +34,8 @@ import java.io.StringReader;
 import java.util.regex.Pattern;
 import javax.swing.text.html.HTMLEditorKit;
 import javax.swing.text.html.parser.ParserDelegator;
+import org.jetbrains.annotations.NotNull;
+import org.jetbrains.annotations.Nullable;
 
 /**
  *
@@ -56,10 +58,13 @@ public class GUIHTMLLabel extends AbstractLabel
     /**
      * The pattern used to split a string into lines.
      */
+    @NotNull
     private static final Pattern PATTERN_LINE_BREAK = Pattern.compile("<br>");
 
+    @Nullable
     private final Font font;
 
+    @NotNull
     private final Color color;
 
     /**
@@ -67,7 +72,7 @@ public class GUIHTMLLabel extends AbstractLabel
      */
     private boolean autoResize = false;
 
-    public GUIHTMLLabel(final TooltipManager tooltipManager, final JXCWindowRenderer windowRenderer, final String name, final int x, final int y, final int w, final int h, final BufferedImage picture, final Font font, final Color color, final Color backgroundColor, final String text)
+    public GUIHTMLLabel(@NotNull final TooltipManager tooltipManager, @NotNull final JXCWindowRenderer windowRenderer, @NotNull final String name, final int x, final int y, final int w, final int h, @Nullable final BufferedImage picture, @Nullable final Font font, @NotNull final Color color, @NotNull final Color backgroundColor, @NotNull final String text)
     {
         super(tooltipManager, windowRenderer, name, x, y, w, h, picture, backgroundColor);
         this.font = font;
@@ -108,7 +113,7 @@ public class GUIHTMLLabel extends AbstractLabel
 
     /** {@inheritDoc} */
     @Override
-    protected void render(final Graphics g)
+    protected void render(@NotNull final Graphics g)
     {
         super.render(g);
         if (font == null)

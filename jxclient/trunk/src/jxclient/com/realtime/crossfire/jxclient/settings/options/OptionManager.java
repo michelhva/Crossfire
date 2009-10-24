@@ -22,6 +22,7 @@ package com.realtime.crossfire.jxclient.settings.options;
 import com.realtime.crossfire.jxclient.settings.Settings;
 import java.util.HashMap;
 import java.util.Map;
+import org.jetbrains.annotations.NotNull;
 
 /**
  * Maintains a set of named options.
@@ -33,11 +34,13 @@ public class OptionManager
     /**
      * Maps option name to option instance.
      */
+    @NotNull
     private final Map<String, Option> options = new HashMap<String, Option>();
 
     /**
      * The settings instance for loading/saving option values.
      */
+    @NotNull
     private final Settings settings;
 
     /**
@@ -45,7 +48,7 @@ public class OptionManager
      *
      * @param settings The settings instance for loading/saving option values.
      */
-    public OptionManager(final Settings settings)
+    public OptionManager(@NotNull final Settings settings)
     {
         this.settings = settings;
     }
@@ -61,12 +64,8 @@ public class OptionManager
      *
      * @throws OptionException If the option name is not unique.
      */
-    public void addOption(final String optionName, final String documentation, final Option option) throws OptionException
+    public void addOption(@NotNull final String optionName, @NotNull final String documentation, @NotNull final Option option) throws OptionException
     {
-        if (optionName == null) throw new IllegalArgumentException();
-        if (documentation == null) throw new IllegalArgumentException();
-        if (option == null) throw new IllegalArgumentException();
-
         if (options.containsKey(optionName))
         {
             throw new OptionException("duplicate option name: "+optionName);
@@ -79,10 +78,8 @@ public class OptionManager
      * Removes an option by name. Does nothing if the option does not exist.
      * @param optionName the option name to remove
      */
-    public void removeOption(final String optionName)
+    public void removeOption(@NotNull final String optionName)
     {
-        if (optionName == null) throw new IllegalArgumentException();
-
         options.remove(optionName);
     }
 
@@ -95,7 +92,8 @@ public class OptionManager
      *
      * @throws OptionException If the option name does not exist.
      */
-    public CheckBoxOption getCheckBoxOption(final String optionName) throws OptionException
+    @NotNull
+    public CheckBoxOption getCheckBoxOption(@NotNull final String optionName) throws OptionException
     {
         final Object option = options.get(optionName);
         if (option == null || !(option instanceof CheckBoxOption))

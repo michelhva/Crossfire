@@ -24,6 +24,7 @@ import java.util.HashSet;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 import javax.swing.ImageIcon;
+import org.jetbrains.annotations.NotNull;
 
 /**
  * A {@link FaceQueue} loading faces from {@link ImageCache} instances.
@@ -34,33 +35,39 @@ public class FileCacheFaceQueue extends DefaultFaceQueue
     /**
      * The object used for synchronization.
      */
+    @NotNull
     private final Object sync = new Object();
 
     /**
      * The image cache used for loading orignal images.
      */
+    @NotNull
     private final ImageCache imageCacheOriginal;
 
     /**
      * The image cache used for loading scaled images.
      */
+    @NotNull
     private final ImageCache imageCacheScaled;
 
     /**
      * The image cache used for loading magic map images.
      */
+    @NotNull
     private final ImageCache imageCacheMagicMap;
 
     /**
      * The {@link ExecutorService} used to execute face loading. The pool
      * consists of one thread; this means all requests are serialized.
      */
+    @NotNull
     private final ExecutorService executorService = Executors.newFixedThreadPool(1);
 
     /**
      * The faces for which {@link #loadFace(Face)} has been called but that are
      * not yet processed.
      */
+    @NotNull
     private final Collection<Face> pendingLoadFaces = new HashSet<Face>();
 
     /**
@@ -80,7 +87,7 @@ public class FileCacheFaceQueue extends DefaultFaceQueue
      * @param imageCacheMagicMap the image cache used for loading magic map
      * image files
      */
-    public FileCacheFaceQueue(final ImageCache imageCacheOriginal, final ImageCache imageCacheScaled, final ImageCache imageCacheMagicMap)
+    public FileCacheFaceQueue(@NotNull final ImageCache imageCacheOriginal, @NotNull final ImageCache imageCacheScaled, @NotNull final ImageCache imageCacheMagicMap)
     {
         this.imageCacheOriginal = imageCacheOriginal;
         this.imageCacheScaled = imageCacheScaled;
@@ -100,7 +107,7 @@ public class FileCacheFaceQueue extends DefaultFaceQueue
 
     /** {@inheritDoc} */
     @Override
-    public void loadFace(final Face face)
+    public void loadFace(@NotNull final Face face)
     {
         final boolean doAdd;
         synchronized (sync)
@@ -119,7 +126,7 @@ public class FileCacheFaceQueue extends DefaultFaceQueue
      * @param face the face to write
      * @param faceImages the image information to write
      */
-    public void saveFace(final Face face, final FaceImages faceImages)
+    public void saveFace(@NotNull final Face face, @NotNull final FaceImages faceImages)
     {
         executorService.submit(new SaveTask(face, faceImages));
     }
@@ -135,13 +142,14 @@ public class FileCacheFaceQueue extends DefaultFaceQueue
         /**
          * The face to load.
          */
+        @NotNull
         private final Face face;
 
         /**
          * Creates a new instance.
          * @param face the face to load
          */
-        public LoadTask(final Face face)
+        public LoadTask(@NotNull final Face face)
         {
             this.face = face;
         }
@@ -199,11 +207,13 @@ public class FileCacheFaceQueue extends DefaultFaceQueue
         /**
          * The face to save.
          */
+        @NotNull
         private final Face face;
 
         /**
          * The images to save.
          */
+        @NotNull
         private final FaceImages faceImages;
 
         /**
@@ -211,7 +221,7 @@ public class FileCacheFaceQueue extends DefaultFaceQueue
          * @param face the face to save
          * @param faceImages the images to save
          */
-        public SaveTask(final Face face, final FaceImages faceImages)
+        public SaveTask(@NotNull final Face face, @NotNull final FaceImages faceImages)
         {
             this.face = face;
             this.faceImages = faceImages;

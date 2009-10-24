@@ -26,6 +26,7 @@ import java.awt.Color;
 import java.awt.Graphics;
 import java.awt.Transparency;
 import java.awt.event.MouseEvent;
+import org.jetbrains.annotations.NotNull;
 
 /**
  * A scroll bar gui element.
@@ -47,16 +48,19 @@ public class GUIScrollBar extends ActivatableGUIElement implements ScrollableLis
     /**
      * The target element to scroll.
      */
+    @NotNull
     private final GUIScrollable2 scrollable;
 
     /**
      * The background color of the slider.
      */
+    @NotNull
     private final Color colorBackground;
 
     /**
      * The foreground color of the slider.
      */
+    @NotNull
     private final Color colorForeground;
 
     /**
@@ -105,10 +109,9 @@ public class GUIScrollBar extends ActivatableGUIElement implements ScrollableLis
      * @param colorBackground the background color of the slider
      * @param colorForeground the foreground color of the slider
      */
-    public GUIScrollBar(final TooltipManager tooltipManager, final JXCWindowRenderer windowRenderer, final String name, final int x, final int y, final int w, final int h, final boolean proportionalSlider, final GUIScrollable2 scrollable, final Color colorBackground, final Color colorForeground)
+    public GUIScrollBar(@NotNull final TooltipManager tooltipManager, @NotNull final JXCWindowRenderer windowRenderer, @NotNull final String name, final int x, final int y, final int w, final int h, final boolean proportionalSlider, @NotNull final GUIScrollable2 scrollable, @NotNull final Color colorBackground, @NotNull final Color colorForeground)
     {
         super(tooltipManager, windowRenderer, name, x, y, w, h, Transparency.OPAQUE);
-        if (scrollable == null) throw new IllegalArgumentException();
         this.proportionalSlider = proportionalSlider;
         this.scrollable = scrollable;
         this.colorBackground = colorBackground;
@@ -145,7 +148,7 @@ public class GUIScrollBar extends ActivatableGUIElement implements ScrollableLis
 
     /** {@inheritDoc} */
     @Override
-    public void mousePressed(final MouseEvent e)
+    public void mousePressed(@NotNull final MouseEvent e)
     {
         super.mousePressed(e);
         switch (e.getButton())
@@ -177,7 +180,7 @@ public class GUIScrollBar extends ActivatableGUIElement implements ScrollableLis
 
     /** {@inheritDoc} */
     @Override
-    public void mouseReleased(final MouseEvent e)
+    public void mouseReleased(@NotNull final MouseEvent e)
     {
         super.mouseReleased(e);
         switch (e.getButton())
@@ -196,7 +199,7 @@ public class GUIScrollBar extends ActivatableGUIElement implements ScrollableLis
 
     /** {@inheritDoc} */
     @Override
-    public void mouseDragged(final MouseEvent e)
+    public void mouseDragged(@NotNull final MouseEvent e)
     {
         super.mouseDragged(e);
         if (scrolling)
@@ -259,7 +262,7 @@ public class GUIScrollBar extends ActivatableGUIElement implements ScrollableLis
 
     /** {@inheritDoc} */
     @Override
-    protected void render(final Graphics g)
+    protected void render(@NotNull final Graphics g)
     {
         final int sh = getSliderHeightPixels();
         final int sy = getSliderPosPixels(sh);

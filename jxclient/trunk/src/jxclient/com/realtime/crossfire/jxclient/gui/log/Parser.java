@@ -23,6 +23,8 @@ import java.awt.Color;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.regex.Pattern;
+import org.jetbrains.annotations.NotNull;
+import org.jetbrains.annotations.Nullable;
 
 /**
  * Parser for parsing drawextinfo messages received from a Crossfire server to
@@ -34,6 +36,7 @@ public class Parser
     /**
      * Maps font tag name to font instance.
      */
+    @NotNull
     private static final Map<String, FontID> fonts = new HashMap<String, FontID>();
     static
     {
@@ -47,6 +50,7 @@ public class Parser
     /**
      * Maps color tag name to color instance. The keys must be lower case.
      */
+    @NotNull
     private static final Map<String, Color> colors = new HashMap<String, Color>();
     static
     {
@@ -60,11 +64,13 @@ public class Parser
     /**
      * The pattern to split a string into words.
      */
+    @NotNull
     private static final Pattern WORD_SEPARATOR_PATTERN = Pattern.compile(" ");
 
     /**
      * Pattern to match line breaks.
      */
+    @NotNull
     private static final Pattern END_OF_LINE_PATTERN = Pattern.compile(" *\n");
 
     /**
@@ -90,6 +96,7 @@ public class Parser
     /**
      * The color to use. <code>null</code> means default color.
      */
+    @Nullable
     private Color color = null;
 
     /**
@@ -100,11 +107,13 @@ public class Parser
     /**
      * The color of the previously added line of text.
      */
+    @Nullable
     private Color lastColor = null;
 
     /**
      * The contents of the previously added line of text.
      */
+    @NotNull
     private String lastText = "";
 
     /**
@@ -113,11 +122,8 @@ public class Parser
      * @param defaultColor the default color to use
      * @param buffer the buffer to update
      */
-    public void parse(final CharSequence text, final Color defaultColor, final Buffer buffer)
+    public void parse(@NotNull final CharSequence text, @Nullable final Color defaultColor, @NotNull final Buffer buffer)
     {
-        if (text == null) throw new IllegalArgumentException();
-        if (buffer == null) throw new IllegalArgumentException();
-
         if (text.length() == 0)
         {
             return;
@@ -137,11 +143,8 @@ public class Parser
      * @param color the color to use
      * @param buffer the buffer to update
      */
-    public void parseWithoutMediaTags(final CharSequence text, final Color color, final Buffer buffer)
+    public void parseWithoutMediaTags(@NotNull final CharSequence text, @NotNull final Color color, @NotNull final Buffer buffer)
     {
-        if (text == null) throw new IllegalArgumentException();
-        if (buffer == null) throw new IllegalArgumentException();
-
         if (text.length() == 0)
         {
             return;
@@ -161,7 +164,7 @@ public class Parser
      * @param defaultColor the default color to use
      * @param buffer the buffer instance to add to
      */
-    private void parseLine(final String text, final Color defaultColor, final Buffer buffer)
+    private void parseLine(@NotNull final String text, @Nullable final Color defaultColor, @NotNull final Buffer buffer)
     {
         if (lastCount > 0 && text.equals(lastText) && lastColor != null && lastColor.equals(defaultColor))
         {
@@ -183,7 +186,8 @@ public class Parser
      * @param defaultColor the default color to use
      * @return the <code>Line</code> instance
      */
-    private Line parseLine(final String text, final Color defaultColor)
+    @NotNull
+    private Line parseLine(@NotNull final String text, @Nullable final Color defaultColor)
     {
         final Line line = new Line();
 
@@ -231,7 +235,7 @@ public class Parser
      * @param text the text to process
      * @param buffer the buffer instance to add to
      */
-    private void parseLineWithoutMediaTags(final String text, final Buffer buffer)
+    private void parseLineWithoutMediaTags(@NotNull final String text, @NotNull final Buffer buffer)
     {
         final Line line = new Line();
         if (lastCount > 0 && text.equals(lastText) && lastColor == null)
@@ -254,7 +258,7 @@ public class Parser
      * Resets all attributes to default values.
      * @param defaultColor the default color to use
      */
-    private void resetAttributes(final Color defaultColor)
+    private void resetAttributes(@Nullable final Color defaultColor)
     {
         bold = false;
         italic = false;
@@ -269,7 +273,7 @@ public class Parser
      * been removed
      * @param defaultColor the default color to use
      */
-    private void processTag(final String tag, final Color defaultColor)
+    private void processTag(@NotNull final String tag, @Nullable final Color defaultColor)
     {
         if (tag.length() == 0)
         {
@@ -333,7 +337,7 @@ public class Parser
      * @param text the text segment to process
      * @param line the line to add to
      */
-    private void processText(final String text, final Line line)
+    private void processText(@NotNull final String text, @NotNull final Line line)
     {
         if (text.length() == 0)
         {
@@ -373,13 +377,9 @@ public class Parser
      * @param color the color to convert
      * @return the string representation
      */
-    public static String toString(final Color color)
+    @NotNull
+    public static String toString(@NotNull final Color color)
     {
-        if (color == null)
-        {
-            throw new IllegalArgumentException();
-        }
-
         // function need not be efficient since it is used for regression tests
         // only
         for (final Map.Entry<String, Color> e : colors.entrySet())

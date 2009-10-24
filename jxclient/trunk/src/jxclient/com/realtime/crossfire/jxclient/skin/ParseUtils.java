@@ -29,6 +29,8 @@ import com.realtime.crossfire.jxclient.util.NumberParser;
 import java.awt.Color;
 import java.io.IOException;
 import java.io.LineNumberReader;
+import org.jetbrains.annotations.NotNull;
+import org.jetbrains.annotations.Nullable;
 
 /**
  * Utility class for parsing string parameters into values.
@@ -49,7 +51,7 @@ public class ParseUtils
      * @return the stat value
      * @throws IOException if the stat value does not exist
      */
-    static int parseStat(final String name) throws IOException
+    static int parseStat(@NotNull final String name) throws IOException
     {
         try
         {
@@ -69,7 +71,8 @@ public class ParseUtils
      * @return the orientation
      * @throws IOException if the orientation value does not exist
      */
-    static Orientation parseOrientation(final String name) throws IOException
+    @NotNull
+    static Orientation parseOrientation(@NotNull final String name) throws IOException
     {
         try
         {
@@ -89,7 +92,8 @@ public class ParseUtils
      * @return the color
      * @throws IOException if the color name does not exist
      */
-    static Color parseColor(final String name) throws IOException
+    @NotNull
+    static Color parseColor(@NotNull final String name) throws IOException
     {
         final Color color = parseColorNull(name);
         if (color != null)
@@ -104,7 +108,8 @@ public class ParseUtils
      * @param name the color name to parse
      * @return the color or <code>null</code> if the color name does not exist
      */
-    static Color parseColorNull(final String name)
+    @Nullable
+    static Color parseColorNull(@NotNull final String name)
     {
         final int pos = name.lastIndexOf('/');
         if (pos == -1)
@@ -141,7 +146,8 @@ public class ParseUtils
      * @param name the color name to parse
      * @return the color or <code>null</code> if the color name does not exist
      */
-    private static Color parseColorName(final String name)
+    @Nullable
+    private static Color parseColorName(@NotNull final String name)
     {
         if (name.equals("BLACK")) return Color.BLACK;
         if (name.equals("DARK_GRAY")) return Color.DARK_GRAY;
@@ -171,7 +177,8 @@ public class ParseUtils
      * @return the concatenated string
      * @throws IOException if reading from <code>lnr</lnr> fails
      */
-    static String parseText(final String[] args, final int startIndex, final LineNumberReader lnr) throws IOException
+    @NotNull
+    static String parseText(@NotNull final String[] args, final int startIndex, @NotNull final LineNumberReader lnr) throws IOException
     {
         final StringBuilder text = new StringBuilder();
         for (int i = startIndex; i < args.length; i++)
@@ -220,7 +227,8 @@ public class ParseUtils
      * @return the check box option
      * @throws IOException if the check box option name does not exist
      */
-    static CheckBoxOption parseCheckBoxOption(final String name, final OptionManager optionManager) throws IOException
+    @NotNull
+    static CheckBoxOption parseCheckBoxOption(@NotNull final String name, @NotNull final OptionManager optionManager) throws IOException
     {
         try
         {

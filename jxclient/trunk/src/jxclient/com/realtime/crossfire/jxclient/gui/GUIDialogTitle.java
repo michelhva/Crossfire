@@ -26,6 +26,8 @@ import com.realtime.crossfire.jxclient.window.JXCWindowRenderer;
 import java.awt.Point;
 import java.awt.event.MouseEvent;
 import java.awt.image.BufferedImage;
+import org.jetbrains.annotations.NotNull;
+import org.jetbrains.annotations.Nullable;
 
 /**
  * A dialog title that allows to move the dialog.
@@ -42,12 +44,14 @@ public class GUIDialogTitle extends GUIPicture
     /**
      * The {@link JXCWindow} this element belongs to.
      */
+    @NotNull
     private final JXCWindow window;
 
     /**
      * Set to the distance of the dialog cordinates relative to the mouse
      * position while dragging start. Else set to <code>null</code>.
      */
+    @Nullable
     private Point offset = null;
 
     /**
@@ -75,7 +79,7 @@ public class GUIDialogTitle extends GUIPicture
      *
      * @param alpha The transparency value.
      */
-    public GUIDialogTitle(final JXCWindow window, final TooltipManager tooltipManager, final JXCWindowRenderer windowRenderer, final String name, final int x, final int y, final int w, final int h, final BufferedImage image, final float alpha)
+    public GUIDialogTitle(@NotNull final JXCWindow window, @NotNull final TooltipManager tooltipManager, @NotNull final JXCWindowRenderer windowRenderer, @NotNull final String name, final int x, final int y, final int w, final int h, @NotNull final BufferedImage image, final float alpha)
     {
         super(tooltipManager, windowRenderer, name, x, y, w, h, image, alpha);
         this.window = window;
@@ -90,7 +94,7 @@ public class GUIDialogTitle extends GUIPicture
 
     /* {@inheritDoc} */
     @Override
-    public void mousePressed(final MouseEvent e)
+    public void mousePressed(@NotNull final MouseEvent e)
     {
         super.mousePressed(e);
         final Gui gui = getGui();
@@ -106,7 +110,7 @@ public class GUIDialogTitle extends GUIPicture
 
     /* {@inheritDoc} */
     @Override
-    public void mouseReleased(final MouseEvent e)
+    public void mouseReleased(@NotNull final MouseEvent e)
     {
         super.mouseReleased(e);
         moveTo(e);
@@ -115,7 +119,7 @@ public class GUIDialogTitle extends GUIPicture
 
     /* {@inheritDoc} */
     @Override
-    public void mouseDragged(final MouseEvent e)
+    public void mouseDragged(@NotNull final MouseEvent e)
     {
         super.mouseDragged(e);
         moveTo(e);
@@ -126,7 +130,7 @@ public class GUIDialogTitle extends GUIPicture
      *
      * @param e The destination point.
      */
-    private void moveTo(final MouseEvent e)
+    private void moveTo(@NotNull final MouseEvent e)
     {
         if (offset == null)
         {

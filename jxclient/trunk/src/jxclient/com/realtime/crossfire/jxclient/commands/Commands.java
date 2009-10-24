@@ -30,6 +30,7 @@ import com.realtime.crossfire.jxclient.window.JXCWindow;
 import com.realtime.crossfire.jxclient.window.JXCWindowRenderer;
 import java.util.HashMap;
 import java.util.Map;
+import org.jetbrains.annotations.NotNull;
 
 /**
  * Parses and executes client-side commands.
@@ -41,11 +42,13 @@ public class Commands
     /**
      * The command queue for sending commands.
      */
+    @NotNull
     private final CommandQueue commandQueue;
 
     /**
      * Maps command name to {@link Command} instance.
      */
+    @NotNull
     private final Map<String, Command> commands = new HashMap<String, Command>();
 
     /**
@@ -59,7 +62,7 @@ public class Commands
      * @param guiManager the gui manager to use
      * @param macros the macros instance to use
      */
-    public Commands(final JXCWindow window, final JXCWindowRenderer windowRenderer, final CommandQueue commandQueue, final CrossfireServerConnection crossfireServerConnection, final ScriptManager scriptManager, final OptionManager optionManager, final GuiManager guiManager, final Macros macros)
+    public Commands(@NotNull final JXCWindow window, @NotNull final JXCWindowRenderer windowRenderer, @NotNull final CommandQueue commandQueue, @NotNull final CrossfireServerConnection crossfireServerConnection, @NotNull final ScriptManager scriptManager, @NotNull final OptionManager optionManager, @NotNull final GuiManager guiManager, @NotNull final Macros macros)
     {
         this.commandQueue = commandQueue;
         commands.put("bind", new BindCommand(window, crossfireServerConnection, this, guiManager, macros));
@@ -82,7 +85,7 @@ public class Commands
      *
      * @param commands The commands to execute.
      */
-    public void executeCommand(final CharSequence commands)
+    public void executeCommand(@NotNull final CharSequence commands)
     {
         String cmds = StringUtils.trimLeading(commands);
         while (cmds.length() > 0)
@@ -110,7 +113,7 @@ public class Commands
      *
      * @return <code>true</code> if all remaining commands have been consumed.
      */
-    private boolean execute(final String command, final String commandList)
+    private boolean execute(@NotNull final String command, @NotNull final String commandList)
     {
         if (command.length() <= 0)
         {

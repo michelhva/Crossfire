@@ -27,6 +27,7 @@ import com.realtime.crossfire.jxclient.server.CrossfireStatsListener;
 import com.realtime.crossfire.jxclient.stats.Stats;
 import com.realtime.crossfire.jxclient.stats.StatsListener;
 import com.realtime.crossfire.jxclient.util.Formatter;
+import org.jetbrains.annotations.NotNull;
 
 /**
  * A {@link GaugeUpdater} which monitors a stat value.
@@ -49,11 +50,13 @@ public class StatGaugeUpdater extends GaugeUpdater
     /**
      * The {@link Stats} instance to watch.
      */
+    @NotNull
     private final Stats stats;
 
     /**
      * The {@link ItemsManager} instance to watch.
      */
+    @NotNull
     private final ItemsManager itemsManager;
 
     /**
@@ -65,6 +68,7 @@ public class StatGaugeUpdater extends GaugeUpdater
      * The {@link StatsListener} registered to be notified about stat
      * changes.
      */
+    @NotNull
     private final StatsListener statsListener = new StatsListener()
     {
         /** {@inheritDoc} */
@@ -155,21 +159,21 @@ public class StatGaugeUpdater extends GaugeUpdater
 
         /** {@inheritDoc} */
         @Override
-        public void titleChanged(final String title)
+        public void titleChanged(@NotNull final String title)
         {
             // ignore
         }
 
         /** {@inheritDoc} */
         @Override
-        public void rangeChanged(final String range)
+        public void rangeChanged(@NotNull final String range)
         {
             // ignore
         }
 
         /** {@inheritDoc} */
         @Override
-        public void activeSkillChanged(final String activeSkill)
+        public void activeSkillChanged(@NotNull final String activeSkill)
         {
             // ignore
         }
@@ -198,25 +202,26 @@ public class StatGaugeUpdater extends GaugeUpdater
     /**
      * The listener to detect a changed player name.
      */
+    @NotNull
     private final PlayerListener playerListener = new PlayerListener()
     {
         /** {@inheritDoc} */
         @Override
-        public void playerReceived(final CfPlayer player)
+        public void playerReceived(@NotNull final CfPlayer player)
         {
             active = true;
         }
 
         /** {@inheritDoc} */
         @Override
-        public void playerAdded(final CfPlayer player)
+        public void playerAdded(@NotNull final CfPlayer player)
         {
             active = true;
         }
 
         /** {@inheritDoc} */
         @Override
-        public void playerRemoved(final CfPlayer player)
+        public void playerRemoved(@NotNull final CfPlayer player)
         {
             active = false;
         }
@@ -233,7 +238,7 @@ public class StatGaugeUpdater extends GaugeUpdater
      *
      * @param itemsManager the instance to watch
      */
-    public StatGaugeUpdater(final ExperienceTable experienceTable, final int stat, final Stats stats, final ItemsManager itemsManager)
+    public StatGaugeUpdater(@NotNull final ExperienceTable experienceTable, final int stat, @NotNull final Stats stats, @NotNull final ItemsManager itemsManager)
     {
         super(experienceTable);
         this.stat = stat;

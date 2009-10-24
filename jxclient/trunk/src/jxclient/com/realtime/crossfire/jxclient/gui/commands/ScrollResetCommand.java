@@ -20,6 +20,7 @@
 package com.realtime.crossfire.jxclient.gui.commands;
 
 import com.realtime.crossfire.jxclient.gui.scrollable.GUIScrollable;
+import org.jetbrains.annotations.NotNull;
 
 /**
  * A {@link GUICommand} which resets the scroll position of a {@link
@@ -31,13 +32,14 @@ public class ScrollResetCommand implements GUICommand
     /**
      * The scrollable gui element to reset.
      */
+    @NotNull
     private final GUIScrollable scrollable;
 
     /**
      * Creates a new instance.
      * @param scrollable the scrollable gui element to reset
      */
-    public ScrollResetCommand(final GUIScrollable scrollable)
+    public ScrollResetCommand(@NotNull final GUIScrollable scrollable)
     {
         this.scrollable = scrollable;
     }

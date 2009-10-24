@@ -28,6 +28,8 @@ import java.awt.Graphics2D;
 import java.awt.geom.RectangularShape;
 import java.awt.image.BufferedImage;
 import java.util.regex.Pattern;
+import org.jetbrains.annotations.NotNull;
+import org.jetbrains.annotations.Nullable;
 
 /**
  * A {@link AbstractLabel} that renders the text as a list of plain strings.
@@ -45,11 +47,13 @@ public class GUIMultiLineLabel extends GUILabel
     /**
      * The pattern to split the text into lines.
      */
+    @NotNull
     private static final Pattern LINE_SEPARATOR_PATTERN = Pattern.compile(" *\n");
 
     /**
      * The text lines to draw.
      */
+    @Nullable
     private String[] lines = null;
 
     /**
@@ -82,7 +86,7 @@ public class GUIMultiLineLabel extends GUILabel
      *
      * @param text The label text.
      */
-    public GUIMultiLineLabel(final TooltipManager tooltipManager, final JXCWindowRenderer windowRenderer, final String name, final int x, final int y, final int w, final int h, final BufferedImage picture, final Font font, final Color color, final Color backgroundColor, final Alignment alignment, final String text)
+    public GUIMultiLineLabel(@NotNull final TooltipManager tooltipManager, @NotNull final JXCWindowRenderer windowRenderer, @NotNull final String name, final int x, final int y, final int w, final int h, @Nullable final BufferedImage picture, @NotNull final Font font, @NotNull final Color color, @NotNull final Color backgroundColor, @NotNull final Alignment alignment, @NotNull final String text)
     {
         super(tooltipManager, windowRenderer, name, x, y, w, h, picture, font, color, backgroundColor, alignment);
         setText(text);
@@ -105,7 +109,7 @@ public class GUIMultiLineLabel extends GUILabel
 
     /** {@inheritDoc} */
     @Override
-    protected void render(final Graphics g)
+    protected void render(@NotNull final Graphics g)
     {
         super.render(g);
 

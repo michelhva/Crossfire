@@ -26,6 +26,8 @@ import java.awt.Font;
 import java.awt.Graphics;
 import java.awt.Graphics2D;
 import java.awt.image.BufferedImage;
+import org.jetbrains.annotations.NotNull;
+import org.jetbrains.annotations.Nullable;
 
 /**
  * A {@link AbstractLabel} that renders the text as a plain string.
@@ -69,7 +71,7 @@ public class GUIOneLineLabel extends GUILabel
      *
      * @param text The label text.
      */
-    public GUIOneLineLabel(final TooltipManager tooltipManager, final JXCWindowRenderer windowRenderer, final String name, final int x, final int y, final int w, final int h, final BufferedImage picture, final Font font, final Color color, final Color backgroundColor, final Alignment alignment, final String text)
+    public GUIOneLineLabel(@NotNull final TooltipManager tooltipManager, @NotNull final JXCWindowRenderer windowRenderer, @NotNull final String name, final int x, final int y, final int w, final int h, @Nullable final BufferedImage picture, @NotNull final Font font, @NotNull final Color color, @NotNull final Color backgroundColor, @NotNull final Alignment alignment, @NotNull final String text)
     {
         super(tooltipManager, windowRenderer, name, x, y, w, h, picture, font, color, backgroundColor, alignment);
         setText(text);
@@ -84,7 +86,7 @@ public class GUIOneLineLabel extends GUILabel
 
     /** {@inheritDoc} */
     @Override
-    protected void render(final Graphics g)
+    protected void render(@NotNull final Graphics g)
     {
         super.render(g);
         final Graphics2D g2 = (Graphics2D)g;

@@ -27,6 +27,8 @@ import java.util.LinkedList;
 import java.util.List;
 import java.util.Map;
 import javax.swing.ImageIcon;
+import org.jetbrains.annotations.NotNull;
+import org.jetbrains.annotations.Nullable;
 
 /**
  * A {@link FaceQueue} requesting faces by "askface" commands sent to the
@@ -45,11 +47,13 @@ public class AskfaceFaceQueue extends DefaultFaceQueue
     /**
      * The object use for synchronization.
      */
+    @NotNull
     private final Object sync = new Object();
 
     /**
      * The connection to use.
      */
+    @Nullable
     private final CrossfireServerConnection crossfireServerConnection;
 
     /**
@@ -57,28 +61,32 @@ public class AskfaceFaceQueue extends DefaultFaceQueue
      * received a response from the server. Maps face ID to {@link Face}
      * instance.
      */
+    @NotNull
     private final Map<Integer, Face> pendingAskfaces = new HashMap<Integer, Face>();
 
     /**
      * Face numbers for which an "askface" command should be sent. It includes
      * all elements of {@link #pendingAskfaces}.
      */
+    @NotNull
     private final Map<Integer, Face> pendingFaces = new HashMap<Integer, Face>();
 
     /**
      * The same elements as {@link #pendingFaces} in query order.
      */
+    @NotNull
     private final List<Face> pendingFacesQueue = new LinkedList<Face>();
 
     /**
      * The {@link CrossfireUpdateFaceListener} registered to {@link
      * #crossfireServerConnection} receive face commands.
      */
+    @NotNull
     private final CrossfireUpdateFaceListener crossfireUpdateFaceListener = new CrossfireUpdateFaceListener()
     {
         /** {@inheritDoc} */
         @Override
-        public void updateFace(final int faceNum, final int faceSetNum, final byte[] packet, final int pos, final int len)
+        public void updateFace(final int faceNum, final int faceSetNum, @NotNull final byte[] packet, final int pos, final int len)
         {
             faceReceived(faceNum, faceSetNum, packet, pos, len);
         }
@@ -89,7 +97,7 @@ public class AskfaceFaceQueue extends DefaultFaceQueue
      * @param crossfireServerConnection the connection instance for sending
      * askface commands
      */
-    public AskfaceFaceQueue(final CrossfireServerConnection crossfireServerConnection)
+    public AskfaceFaceQueue(@Nullable final CrossfireServerConnection crossfireServerConnection)
     {
         this.crossfireServerConnection = crossfireServerConnection;
         if (crossfireServerConnection != null)
@@ -112,7 +120,7 @@ public class AskfaceFaceQueue extends DefaultFaceQueue
 
     /** {@inheritDoc} */
     @Override
-    public void loadFace(final Face face)
+    public void loadFace(@NotNull final Face face)
     {
         final int faceNum = face.getFaceNum();
         if (faceNum <= 0 || faceNum > 65535)
@@ -164,7 +172,7 @@ public class AskfaceFaceQueue extends DefaultFaceQueue
      * @param pos the starting position into <code>packet</code>
      * @param len the length in bytes
      */
-    private void faceReceived(final int faceNum, final int faceSetNum, final byte[] packet, final int pos, final int len)
+    private void faceReceived(final int faceNum, final int faceSetNum, @NotNull final byte[] packet, final int pos, final int len)
     {
         final Integer faceObject = faceNum;
         synchronized (sync)
@@ -196,7 +204,7 @@ public class AskfaceFaceQueue extends DefaultFaceQueue
      * @param face the face
      * @param data the face information; it is supposed to be a .png file
      */
-    public void processFaceData(final Face face, final byte[] data)
+    public void processFaceData(@NotNull final Face face, @NotNull final byte[] data)
     {
         final ImageIcon originalImageIcon;
         try

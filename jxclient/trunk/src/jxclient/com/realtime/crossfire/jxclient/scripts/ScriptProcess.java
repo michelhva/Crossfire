@@ -19,6 +19,8 @@
 //
 package com.realtime.crossfire.jxclient.scripts;
 
+import org.jetbrains.annotations.NotNull;
+
 /**
  * An external command executed as a client-sided script.
  * @author Andreas Kirschbaum
@@ -35,19 +37,20 @@ public interface ScriptProcess extends Comparable<ScriptProcess>
      * Returns the script's filename.
      * @return the script's filename
      */
+    @NotNull
     String getFilename();
 
     /**
      * Sends a message to the script process.
      * @param cmd the message to send
      */
-    void commandSent(String cmd);
+    void commandSent(@NotNull String cmd);
 
     /**
      * Adds a {@link ScriptProcessListener} to be notified.
      * @param scriptProcessListener the listener to add
      */
-    void addScriptProcessListener(ScriptProcessListener scriptProcessListener);
+    void addScriptProcessListener(@NotNull ScriptProcessListener scriptProcessListener);
 
     /**
      * Kills the script process. Does nothing if the process is not running.

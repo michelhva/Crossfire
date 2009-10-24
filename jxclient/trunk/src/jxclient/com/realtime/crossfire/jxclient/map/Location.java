@@ -19,6 +19,9 @@
 //
 package com.realtime.crossfire.jxclient.map;
 
+import org.jetbrains.annotations.NotNull;
+import org.jetbrains.annotations.Nullable;
+
 /**
  * A location on the map.
  * @author Andreas Kirschbaum
@@ -82,7 +85,7 @@ public class Location
 
     /** {@inheritDoc} */
     @Override
-    public boolean equals(final Object obj)
+    public boolean equals(@Nullable final Object obj)
     {
         if (obj == null)
         {
@@ -104,6 +107,7 @@ public class Location
     }
 
     /** {@inheritDoc} */
+    @NotNull
     @Override
     public String toString()
     {

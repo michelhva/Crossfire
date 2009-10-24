@@ -28,6 +28,8 @@ import java.awt.Graphics2D;
 import java.awt.Image;
 import java.awt.geom.RectangularShape;
 import java.awt.image.BufferedImage;
+import org.jetbrains.annotations.NotNull;
+import org.jetbrains.annotations.Nullable;
 
 /**
  * Paints Crossfire item images.
@@ -38,91 +40,109 @@ public class ItemPainter
     /**
      * The overlay image for cursed objects.
      */
+    @Nullable
     private final BufferedImage cursedImage;
 
     /**
      * The overlay image for damned objects.
      */
+    @Nullable
     private final BufferedImage damnedImage;
 
     /**
      * The overlay image for magical objects.
      */
+    @Nullable
     private final BufferedImage magicImage;
 
     /**
      * The overlay image for blessed objects.
      */
+    @Nullable
     private final BufferedImage blessedImage;
 
     /**
      * The overlay image for applied objects.
      */
+    @Nullable
     private final BufferedImage appliedImage;
 
     /**
      * The overlay image for selected objects.
      */
+    @Nullable
     private final BufferedImage selectorImage;
 
     /**
      * The overlay image for locked objects.
      */
+    @Nullable
     private final BufferedImage lockedImage;
 
     /**
      * The overlay image for unpaid objects.
      */
+    @Nullable
     private final BufferedImage unpaidImage;
 
     /**
      * The background color for cursed objects.
      */
+    @Nullable
     private final Color cursedColor;
 
     /**
      * The background color for damned objects.
      */
+    @Nullable
     private final Color damnedColor;
 
     /**
      * The background color for magical objects.
      */
+    @Nullable
     private final Color magicColor;
 
     /**
      * The background color for blessed objects.
      */
+    @Nullable
     private final Color blessedColor;
 
     /**
      * The background color for applied objects.
      */
+    @Nullable
     private final Color appliedColor;
 
     /**
      * The background color for selected objects.
      */
+    @Nullable
     private final Color selectorColor;
 
     /**
      * The background color for locked objects.
      */
+    @Nullable
     private final Color lockedColor;
 
     /**
      * The background color for unpaid objects.
      */
+    @Nullable
     private final Color unpaidColor;
 
     /**
      * The font for the "nrof" text.
      */
+    @NotNull
     private final Font font;
 
     /**
      * The color for the "nrof" text.
      */
+    @NotNull
     private final Color nrofColor;
 
     /**
@@ -158,7 +178,7 @@ public class ItemPainter
      * @param w the item's width in pixel
      * @param h the item's height in pixel
      */
-    public ItemPainter(final BufferedImage cursedImage, final BufferedImage damnedImage, final BufferedImage magicImage, final BufferedImage blessedImage, final BufferedImage appliedImage, final BufferedImage selectorImage, final BufferedImage lockedImage, final BufferedImage unpaidImage, final Color cursedColor, final Color damnedColor, final Color magicColor, final Color blessedColor, final Color appliedColor, final Color selectorColor, final Color lockedColor, final Color unpaidColor, final Font font, final Color nrofColor, final int w, final int h)
+    public ItemPainter(@Nullable final BufferedImage cursedImage, @Nullable final BufferedImage damnedImage, @Nullable final BufferedImage magicImage, @Nullable final BufferedImage blessedImage, @Nullable final BufferedImage appliedImage, @Nullable final BufferedImage selectorImage, @Nullable final BufferedImage lockedImage, @Nullable final BufferedImage unpaidImage, @Nullable final Color cursedColor, @Nullable final Color damnedColor, @Nullable final Color magicColor, @Nullable final Color blessedColor, @Nullable final Color appliedColor, @Nullable final Color selectorColor, @Nullable final Color lockedColor, @Nullable final Color unpaidColor, @NotNull final Font font, @NotNull final Color nrofColor, final int w, final int h)
     {
         this.cursedImage = cursedImage;
         this.damnedImage = damnedImage;
@@ -189,6 +209,7 @@ public class ItemPainter
      * @param h the item's height in pixel
      * @return the new instance
      */
+    @NotNull
     public ItemPainter newItemPainter(final int w, final int h)
     {
         return new ItemPainter(cursedImage, damnedImage, magicImage, blessedImage, appliedImage, selectorImage, lockedImage, unpaidImage, cursedColor, damnedColor, magicColor, blessedColor, appliedColor, selectorColor, lockedColor, unpaidColor, font, nrofColor, w, h);
@@ -201,7 +222,7 @@ public class ItemPainter
      * @param selected whether the item is selected
      * @param face the item's face
      */
-    public void paint(final Graphics2D g, final CfItem item, final boolean selected, final Image face)
+    public void paint(@NotNull final Graphics2D g, @NotNull final CfItem item, final boolean selected, @NotNull final Image face)
     {
         paintColor(g, appliedColor, item.isApplied());
         paintColor(g, cursedColor, item.isCursed());
@@ -245,7 +266,7 @@ public class ItemPainter
      * @param color the color to use
      * @param isActive whether painting should be done at all
      */
-    private void paintColor(final Graphics g, final Color color, final boolean isActive)
+    private void paintColor(@NotNull final Graphics g, @Nullable final Color color, final boolean isActive)
     {
         if (isActive && color != null)
         {
@@ -260,7 +281,7 @@ public class ItemPainter
      * @param image the image to paint
      * @param isActive whether painting should be done at all
      */
-    private static void paintImage(final Graphics g, final Image image, final boolean isActive)
+    private static void paintImage(@NotNull final Graphics g, @Nullable final Image image, final boolean isActive)
     {
         if (isActive)
         {
@@ -276,7 +297,7 @@ public class ItemPainter
      * @param height the text height
      * @param text the text
      */
-    private void renderText(final Graphics2D g, final int dx, final int dy, final int height, final String text)
+    private void renderText(@NotNull final Graphics2D g, final int dx, final int dy, final int height, @NotNull final String text)
     {
         final RectangularShape rect = font.getStringBounds(text, g.getFontRenderContext());
         final int y = dy+(int)Math.round((height-rect.getMaxY()-rect.getMinY()))/2;

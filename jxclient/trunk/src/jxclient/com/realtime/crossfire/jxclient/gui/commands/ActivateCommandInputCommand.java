@@ -21,6 +21,7 @@ package com.realtime.crossfire.jxclient.gui.commands;
 
 import com.realtime.crossfire.jxclient.commands.Macros;
 import com.realtime.crossfire.jxclient.window.GuiManager;
+import org.jetbrains.annotations.NotNull;
 
 /**
  * A {@link GUICommand} which activates the command input field.
@@ -31,14 +32,17 @@ public class ActivateCommandInputCommand implements GUICommand
     /**
      * The {@link GuiManager} to affect.
      */
+    @NotNull
     private final GuiManager guiManager;
 
     /** The command text to set. */
+    @NotNull
     private final String commandText;
 
     /**
      * The {@link Macros} instance to use.
      */
+    @NotNull
     private final Macros macros;
 
     /**
@@ -47,7 +51,7 @@ public class ActivateCommandInputCommand implements GUICommand
      * @param guiManager the gui manager to affect
      * @param macros the macros instance to use
      */
-    public ActivateCommandInputCommand(final String commandText, final GuiManager guiManager, final Macros macros)
+    public ActivateCommandInputCommand(@NotNull final String commandText, @NotNull final GuiManager guiManager, @NotNull final Macros macros)
     {
         this.commandText = commandText;
         this.guiManager = guiManager;
@@ -72,6 +76,7 @@ public class ActivateCommandInputCommand implements GUICommand
      * Returns the command text to set.
      * @return the command text
      */
+    @NotNull
     public String getCommandText()
     {
         return commandText;

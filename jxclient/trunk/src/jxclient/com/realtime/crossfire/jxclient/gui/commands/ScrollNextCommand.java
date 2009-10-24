@@ -20,6 +20,7 @@
 package com.realtime.crossfire.jxclient.gui.commands;
 
 import com.realtime.crossfire.jxclient.gui.gui.ActivatableGUIElement;
+import org.jetbrains.annotations.NotNull;
 
 /**
  * A {@link GUICommand} which transfers the focus between two gui elements.
@@ -30,11 +31,13 @@ public class ScrollNextCommand implements GUICommand
     /**
      * The element to activate.
      */
+    @NotNull
     private final ActivatableGUIElement nextElement;
 
     /**
      * The element to deactivate.
      */
+    @NotNull
     private final ActivatableGUIElement prevElement;
 
     /**
@@ -42,7 +45,7 @@ public class ScrollNextCommand implements GUICommand
      * @param nextElement the element to activate
      * @param prevElement the element to deactivate
      */
-    public ScrollNextCommand(final ActivatableGUIElement nextElement, final ActivatableGUIElement prevElement)
+    public ScrollNextCommand(@NotNull final ActivatableGUIElement nextElement, @NotNull final ActivatableGUIElement prevElement)
     {
         this.nextElement = nextElement;
         this.prevElement = prevElement;

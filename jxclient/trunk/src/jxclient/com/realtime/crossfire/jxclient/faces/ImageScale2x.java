@@ -23,6 +23,7 @@ import java.awt.image.BufferedImage;
 import java.io.File;
 import javax.swing.Icon;
 import javax.swing.ImageIcon;
+import org.jetbrains.annotations.NotNull;
 
 /**
  * A utility to perform the scale2x algorithm on a Java Image.
@@ -31,6 +32,7 @@ import javax.swing.ImageIcon;
 public class ImageScale2x
 {
     /** The src data from the image. */
+    @NotNull
     private final int[] srcData;
 
     /** The width of the image. */
@@ -43,7 +45,7 @@ public class ImageScale2x
      * Creates a new scaler that will scale the passed image.
      * @param srcImageIcon the image to be scaled
      */
-    public ImageScale2x(final Icon srcImageIcon)
+    public ImageScale2x(@NotNull final Icon srcImageIcon)
     {
         width = srcImageIcon.getIconWidth();
         height = srcImageIcon.getIconHeight();
@@ -59,6 +61,7 @@ public class ImageScale2x
      * the work so it may take some time to return.
      * @return the scaled image
      */
+    @NotNull
     public ImageIcon getScaledImage()
     {
         final RawScale2x scaler = new RawScale2x(srcData, width, height);
@@ -73,7 +76,7 @@ public class ImageScale2x
      * An entry point and a bit of test code.
      * @param args the command-line arguments (ignored)
      */
-    public static void main(final String[] args)
+    public static void main(@NotNull final String[] args)
     {
         final String srcFile = "randam_orig.png";
         System.out.println("Reading: "+srcFile);

@@ -20,6 +20,8 @@
 package com.realtime.crossfire.jxclient.metaserver;
 
 import java.util.regex.Pattern;
+import org.jetbrains.annotations.NotNull;
+import org.jetbrains.annotations.Nullable;
 
 /**
  * Represents a response line from the metaserver.
@@ -31,16 +33,20 @@ public class MetaserverEntry implements Comparable<MetaserverEntry>
     /**
      * Matches html tags.
      */
+    @NotNull
     private static final Pattern HTML_TAG_MATCHER = Pattern.compile("<[^>]*>");
 
     private final int updateSeconds;
 
+    @NotNull
     private final String hostname;
 
     private final int players;
 
+    @NotNull
     private final String version;
 
+    @NotNull
     private final String comment;
 
     private final long bytesIn;
@@ -49,13 +55,16 @@ public class MetaserverEntry implements Comparable<MetaserverEntry>
 
     private final int uptimeSeconds;
 
+    @NotNull
     private final String archbase;
 
+    @NotNull
     private final String mapbase;
 
+    @NotNull
     private final String codebase;
 
-    public MetaserverEntry(final int updateSeconds, final String hostname, final int players, final String version, final String comment, final long bytesIn, final long bytesOut, final int uptimeSeconds, final String archbase, final String mapbase, final String codebase)
+    public MetaserverEntry(final int updateSeconds, @NotNull final String hostname, final int players, @NotNull final String version, @NotNull final String comment, final long bytesIn, final long bytesOut, final int uptimeSeconds, @NotNull final String archbase, @NotNull final String mapbase, @NotNull final String codebase)
     {
         this.updateSeconds = updateSeconds;
         this.hostname = hostname;
@@ -75,6 +84,7 @@ public class MetaserverEntry implements Comparable<MetaserverEntry>
         return updateSeconds;
     }
 
+    @NotNull
     public String getHostname()
     {
         return hostname;
@@ -85,11 +95,13 @@ public class MetaserverEntry implements Comparable<MetaserverEntry>
         return players;
     }
 
+    @NotNull
     public String getVersion()
     {
         return version;
     }
 
+    @NotNull
     public String getComment()
     {
         return comment;
@@ -110,22 +122,26 @@ public class MetaserverEntry implements Comparable<MetaserverEntry>
         return uptimeSeconds;
     }
 
+    @NotNull
     public String getArchbase()
     {
         return archbase;
     }
 
+    @NotNull
     public String getMapbase()
     {
         return mapbase;
     }
 
+    @NotNull
     public String getCodebase()
     {
         return codebase;
     }
 
     /** {@inheritDoc} */
+    @NotNull
     @Override
     public String toString()
     {
@@ -134,7 +150,7 @@ public class MetaserverEntry implements Comparable<MetaserverEntry>
 
     /** {@inheritDoc} */
     @Override
-    public int compareTo(final MetaserverEntry o)
+    public int compareTo(@NotNull final MetaserverEntry o)
     {
         return hostname.compareTo(o.hostname);
     }
@@ -148,7 +164,7 @@ public class MetaserverEntry implements Comparable<MetaserverEntry>
 
     /** {@inheritDoc} */
     @Override
-    public boolean equals(final Object obj)
+    public boolean equals(@Nullable final Object obj)
     {
         if (obj == null) return false;
         if (obj.getClass() != getClass()) return false;
@@ -179,7 +195,8 @@ public class MetaserverEntry implements Comparable<MetaserverEntry>
      *
      * @return The formatted string.
      */
-    public String format(final String format)
+    @NotNull
+    public String format(@NotNull final String format)
     {
         final StringBuilder sb = new StringBuilder();
         final char[] formatChars = format.toCharArray();

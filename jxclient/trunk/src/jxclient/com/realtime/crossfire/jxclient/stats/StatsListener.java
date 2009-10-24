@@ -19,6 +19,8 @@
 //
 package com.realtime.crossfire.jxclient.stats;
 
+import org.jetbrains.annotations.NotNull;
+
 /**
  * Interface for listeners interested in changes of {@link Stats} instances.
  * @author Andreas Kirschbaum
@@ -47,19 +49,19 @@ public interface StatsListener
      * The player's title has changed.
      * @param title the new title
      */
-    void titleChanged(String title);
+    void titleChanged(@NotNull String title);
 
     /**
      * The player's range type has changed.
      * @param range the new range type
      */
-    void rangeChanged(String range);
+    void rangeChanged(@NotNull String range);
 
     /**
      * The player's active skill has changed.
      * @param activeSkill the new active skill
      */
-    void activeSkillChanged(String activeSkill);
+    void activeSkillChanged(@NotNull String activeSkill);
 
     /**
      * The player's experience has changed.

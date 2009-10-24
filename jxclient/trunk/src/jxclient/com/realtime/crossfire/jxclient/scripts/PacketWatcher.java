@@ -24,6 +24,8 @@ import com.realtime.crossfire.jxclient.server.ReceivedPacketListener;
 import java.util.Collection;
 import java.util.HashSet;
 import java.util.regex.Pattern;
+import org.jetbrains.annotations.NotNull;
+import org.jetbrains.annotations.Nullable;
 
 /**
  * Implements the "watch" function for client-sided scripts.
@@ -34,22 +36,26 @@ public class PacketWatcher
     /**
      * The commands to watch for.
      */
+    @NotNull
     private final Collection<String> commands = new HashSet<String>();
 
     /**
      * The {@link CrossfireServerConnection} to watch.
      */
+    @NotNull
     private final CrossfireServerConnection crossfireServerConnection;
 
     /**
      * The {@link ScriptProcess} for sending commands.
      */
+    @NotNull
     private final ScriptProcess scriptProcess;
 
     /**
      * A {@link Pattern} matching all {@link #commands}. Set to
      * <code>null</code> when not watching for commands.
      */
+    @Nullable
     private Pattern pattern = null;
 
     /**
@@ -57,11 +63,12 @@ public class PacketWatcher
      * #crossfireServerConnection}. It is attached if and only if {@link
      * #pattern} is non-<code>null</code>.
      */
+    @NotNull
     private final ReceivedPacketListener receivedPacketListener = new ReceivedPacketListener()
     {
         /** {@inheritDoc} */
         @Override
-        public void processEmpty(final String command)
+        public void processEmpty(@NotNull final String command)
         {
             if (matchesCommand(command))
             {
@@ -71,7 +78,7 @@ public class PacketWatcher
 
         /** {@inheritDoc} */
         @Override
-        public void processAscii(final String command, final byte[] packet, final int start, final int end)
+        public void processAscii(@NotNull final String command, @NotNull final byte[] packet, final int start, final int end)
         {
             if (matchesCommand(command))
             {
@@ -81,7 +88,7 @@ public class PacketWatcher
 
         /** {@inheritDoc} */
         @Override
-        public void processShortArray(final String command, final byte[] packet, final int start, final int end)
+        public void processShortArray(@NotNull final String command, @NotNull final byte[] packet, final int start, final int end)
         {
             if (matchesCommand(command))
             {
@@ -98,7 +105,7 @@ public class PacketWatcher
 
         /** {@inheritDoc} */
         @Override
-        public void processIntArray(final String command, final byte[] packet, final int start, final int end)
+        public void processIntArray(@NotNull final String command, @NotNull final byte[] packet, final int start, final int end)
         {
             if (matchesCommand(command))
             {
@@ -115,7 +122,7 @@ public class PacketWatcher
 
         /** {@inheritDoc} */
         @Override
-        public void processShortInt(final String command, final byte[] packet, final int start, final int end)
+        public void processShortInt(@NotNull final String command, @NotNull final byte[] packet, final int start, final int end)
         {
             if (end-start == 6 && matchesCommand(command))
             {
@@ -125,7 +132,7 @@ public class PacketWatcher
 
         /** {@inheritDoc} */
         @Override
-        public void processMixed(final String command, final byte[] packet, final int start, final int end)
+        public void processMixed(@NotNull final String command, @NotNull final byte[] packet, final int start, final int end)
         {
             if (matchesCommand(command))
             {
@@ -138,7 +145,7 @@ public class PacketWatcher
 
         /** {@inheritDoc} */
         @Override
-        public void processStats(final String command, final int stat, final Object[] args)
+        public void processStats(@NotNull final String command, final int stat, @NotNull final Object[] args)
         {
             if (matchesCommand(command))
             {
@@ -157,7 +164,7 @@ public class PacketWatcher
 
         /** {@inheritDoc} */
         @Override
-        public void processNodata(final String command, final byte[] packet, final int start, final int end)
+        public void processNodata(@NotNull final String command, @NotNull final byte[] packet, final int start, final int end)
         {
             processMixed(command, packet, start, end);
         }
@@ -168,7 +175,7 @@ public class PacketWatcher
          * @param offset the start start offset of the integer value
          * @return the integer value
          */
-        private int getShort(final byte[] packet, final int offset)
+        private int getShort(@NotNull final byte[] packet, final int offset)
         {
             return packet[offset+0]*0x100+packet[offset+1];
         }
@@ -179,7 +186,7 @@ public class PacketWatcher
          * @param offset the start start offset of the integer value
          * @return the integer value
          */
-        private int getInt(final byte[] packet, final int offset)
+        private int getInt(@NotNull final byte[] packet, final int offset)
         {
             return packet[offset+0]*0x1000000+packet[offset+1]*0x10000+packet[offset+2]*0x100+packet[offset+3];
         }
@@ -190,7 +197,7 @@ public class PacketWatcher
      * @param crossfireServerConnection the server connection to watch
      * @param scriptProcess the script process for sending commands
      */
-    public PacketWatcher(final CrossfireServerConnection crossfireServerConnection, final ScriptProcess scriptProcess)
+    public PacketWatcher(@NotNull final CrossfireServerConnection crossfireServerConnection, @NotNull final ScriptProcess scriptProcess)
     {
         this.crossfireServerConnection = crossfireServerConnection;
         this.scriptProcess = scriptProcess;
@@ -245,7 +252,7 @@ public class PacketWatcher
      * Adds a command to watch for.
      * @param command the command
      */
-    public void addCommand(final String command)
+    public void addCommand(@NotNull final String command)
     {
         if (commands.add(command))
         {
@@ -257,7 +264,7 @@ public class PacketWatcher
      * Removes a command to watch for.
      * @param command the command
      */
-    public void removeCommand(final String command)
+    public void removeCommand(@NotNull final String command)
     {
         if (commands.remove(command))
         {
@@ -270,7 +277,7 @@ public class PacketWatcher
      * @param command the command
      * @return whether the command matches
      */
-    private boolean matchesCommand(final CharSequence command)
+    private boolean matchesCommand(@NotNull final CharSequence command)
     {
         return pattern.matcher(command).matches();
     }

@@ -20,6 +20,7 @@
 package com.realtime.crossfire.jxclient.items;
 
 import com.realtime.crossfire.jxclient.faces.Face;
+import org.jetbrains.annotations.NotNull;
 
 /**
  *
@@ -29,7 +30,7 @@ import com.realtime.crossfire.jxclient.faces.Face;
  */
 public class CfPlayer extends CfItem
 {
-    public CfPlayer(final int tag, final int weight, final Face face, final String name)
+    public CfPlayer(final int tag, final int weight, @NotNull final Face face, @NotNull final String name)
     {
         super(0, tag, 0, weight, face, name, name, 0, 0, 1, -1);
     }

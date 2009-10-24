@@ -27,6 +27,8 @@ import java.util.List;
 import java.util.Map;
 import java.util.Set;
 import javax.swing.event.EventListenerList;
+import org.jetbrains.annotations.NotNull;
+import org.jetbrains.annotations.Nullable;
 
 /**
  * Abstract base class for item managers.
@@ -37,17 +39,20 @@ public abstract class AbstractManager
     /**
      * Modified items for which no events have been delivered.
      */
+    @NotNull
     private final Set<Integer> modifiedItems = new HashSet<Integer>();
 
     /**
      * Maps slot index to list of {@link LocationListener}s to be notified
      * about added or removed items.
      */
+    @NotNull
     private final Map<Integer, EventListenerList> allListeners = new HashMap<Integer, EventListenerList>();
 
     /**
      * Listeners interested in ranged changes.
      */
+    @NotNull
     private final Collection<LocationsListener> locationsListeners = new ArrayList<LocationsListener>();
 
     /**
@@ -65,7 +70,7 @@ public abstract class AbstractManager
      * Adds a {@link LocationsListener}s to be notified about changes.
      * @param listener the listener to add
      */
-    public void addLocationsListener(final LocationsListener listener)
+    public void addLocationsListener(@NotNull final LocationsListener listener)
     {
         locationsListeners.add(listener);
     }
@@ -74,7 +79,7 @@ public abstract class AbstractManager
      * Removes a {@link LocationsListener}s to be notified about changes.
      * @param listener the listener to remove
      */
-    public void removeLocationsListener(final LocationsListener listener)
+    public void removeLocationsListener(@NotNull final LocationsListener listener)
     {
         locationsListeners.remove(listener);
     }
@@ -84,7 +89,7 @@ public abstract class AbstractManager
      * @param index the slot index
      * @param listener the listener
      */
-    public void addLocationListener(final int index, final LocationListener listener)
+    public void addLocationListener(final int index, @NotNull final LocationListener listener)
     {
         EventListenerList listeners = allListeners.get(index);
         if (listeners == null)
@@ -101,7 +106,7 @@ public abstract class AbstractManager
      * @param index the slot index
      * @param listener the listener
      */
-    public void removeLocationListener(final int index, final LocationListener listener)
+    public void removeLocationListener(final int index, @NotNull final LocationListener listener)
     {
         final EventListenerList listeners = allListeners.get(index);
         assert listeners != null;
@@ -116,7 +121,7 @@ public abstract class AbstractManager
      * Delivers pending events.
      * @param items The item information.
      */
-    public void fireEvents(final List<CfItem> items)
+    public void fireEvents(@NotNull final List<CfItem> items)
     {
         final Collection<Integer> tmp;
         synchronized (modifiedItems)
@@ -135,7 +140,7 @@ public abstract class AbstractManager
             final EventListenerList tileListeners = allListeners.get(index);
             if (tileListeners != null)
             {
-                CfItem item;
+                @Nullable CfItem item;
                 try
                 {
                     item = items.get(index);
@@ -156,7 +161,7 @@ public abstract class AbstractManager
      * Adds pending modified events.
      * @param items the pending events to add; may be <code>null</code>
      */
-    public void addModified(final Collection<CfItem> items)
+    public void addModified(@Nullable final Collection<CfItem> items)
     {
         if (items != null)
         {

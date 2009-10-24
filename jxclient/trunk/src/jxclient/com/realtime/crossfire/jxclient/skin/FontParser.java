@@ -23,6 +23,7 @@ import java.awt.Font;
 import java.awt.FontFormatException;
 import java.io.IOException;
 import java.io.InputStream;
+import org.jetbrains.annotations.NotNull;
 
 /**
  * Creates {@link Font} instances from strig representations.
@@ -33,13 +34,14 @@ public class FontParser
     /**
      * The {@link JXCSkinSource} for loading resources.
      */
+    @NotNull
     private final JXCSkinSource skinSource;
 
     /**
      * Creates a new instance.
      * @param skinSource the skin source for loading resources
      */
-    public FontParser(final JXCSkinSource skinSource)
+    public FontParser(@NotNull final JXCSkinSource skinSource)
     {
         this.skinSource = skinSource;
     }
@@ -50,7 +52,8 @@ public class FontParser
      * @return the font
      * @throws IOException if the font cannot be loaded
      */
-    public Font getFont(final String name) throws IOException
+    @NotNull
+    public Font getFont(@NotNull final String name) throws IOException
     {
         final String filename = "fonts/"+name+".ttf";
 

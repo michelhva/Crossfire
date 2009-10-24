@@ -22,6 +22,7 @@ package com.realtime.crossfire.jxclient.skin.events;
 import com.realtime.crossfire.jxclient.server.CrossfireMagicmapListener;
 import com.realtime.crossfire.jxclient.server.CrossfireServerConnection;
 import com.realtime.crossfire.jxclient.window.GUICommandList;
+import org.jetbrains.annotations.NotNull;
 
 /**
  * A {@link SkinEvent} that executes a {@link GUICommandList} whenever a
@@ -33,21 +34,24 @@ public class CrossfireMagicmapSkinEvent implements SkinEvent
     /**
      * The {@link GUICommandList} to execute.
      */
+    @NotNull
     private final GUICommandList commandList;
 
     /**
      * The {@link CrossfireServerConnection} for tracking magicmap commands.
      */
+    @NotNull
     private final CrossfireServerConnection server;
 
     /**
      * The {@link CrossfireMagicmapListener} attached to {@link #server}.
      */
+    @NotNull
     private final CrossfireMagicmapListener crossfireMagicmapListener = new CrossfireMagicmapListener()
     {
         /** {@inheritDoc} */
         @Override
-        public void commandMagicmapReceived(final int width, final int height, final int px, final int py, final byte[] data, final int pos)
+        public void commandMagicmapReceived(final int width, final int height, final int px, final int py, @NotNull final byte[] data, final int pos)
         {
             commandList.execute();
         }
@@ -58,7 +62,7 @@ public class CrossfireMagicmapSkinEvent implements SkinEvent
      * @param commandList the command list to execute
      * @param server the connection to attach to
      */
-    public CrossfireMagicmapSkinEvent(final GUICommandList commandList, final CrossfireServerConnection server)
+    public CrossfireMagicmapSkinEvent(@NotNull final GUICommandList commandList, @NotNull final CrossfireServerConnection server)
     {
         this.commandList = commandList;
         this.server = server;

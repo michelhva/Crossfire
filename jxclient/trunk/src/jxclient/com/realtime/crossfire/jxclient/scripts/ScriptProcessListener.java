@@ -19,6 +19,8 @@
 //
 package com.realtime.crossfire.jxclient.scripts;
 
+import org.jetbrains.annotations.Nullable;
+
 /**
  * Interface for listeners interested in {@link ScriptProcess} related events.
  * @author Andreas Kirschbaum
@@ -30,5 +32,5 @@ public interface ScriptProcessListener
      * @param result the termination reason or <code>null</code> if the script
      * exited successfully
      */
-    void scriptTerminated(String result);
+    void scriptTerminated(@Nullable String result);
 }

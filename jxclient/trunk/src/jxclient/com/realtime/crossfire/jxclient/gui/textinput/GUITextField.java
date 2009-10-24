@@ -26,6 +26,7 @@ import com.realtime.crossfire.jxclient.window.JXCWindowRenderer;
 import java.awt.Color;
 import java.awt.Font;
 import java.awt.Image;
+import org.jetbrains.annotations.NotNull;
 
 /**
  * A text input field which executes a {@link GUICommandList} when ENTER is
@@ -40,12 +41,12 @@ public class GUITextField extends GUIText
      */
     private static final long serialVersionUID = 1;
 
+    @NotNull
     private final GUICommandList commandList;
 
-    public GUITextField(final GuiManager guiManager, final TooltipManager tooltipManager, final JXCWindowRenderer windowRenderer, final String name, final int x, final int y, final int w, final int h, final Image activePicture, final Image inactivePicture, final Font font, final Color inactiveColor, final Color activeColor, final int margin, final String text, final GUICommandList commandList, final boolean ignoreUpDown)
+    public GUITextField(@NotNull final GuiManager guiManager, @NotNull final TooltipManager tooltipManager, @NotNull final JXCWindowRenderer windowRenderer, @NotNull final String name, final int x, final int y, final int w, final int h, @NotNull final Image activePicture, @NotNull final Image inactivePicture, @NotNull final Font font, @NotNull final Color inactiveColor, @NotNull final Color activeColor, final int margin, @NotNull final String text, @NotNull final GUICommandList commandList, final boolean ignoreUpDown)
     {
         super(guiManager, tooltipManager, windowRenderer, name, x, y, w, h, activePicture, inactivePicture, font, inactiveColor, activeColor, margin, text, ignoreUpDown);
-        if (commandList == null) throw new IllegalArgumentException();
         this.commandList = commandList;
     }
 
@@ -58,7 +59,7 @@ public class GUITextField extends GUIText
 
     /** {@inheritDoc} */
     @Override
-    protected void execute(final String command)
+    protected void execute(@NotNull final String command)
     {
         commandList.execute();
     }

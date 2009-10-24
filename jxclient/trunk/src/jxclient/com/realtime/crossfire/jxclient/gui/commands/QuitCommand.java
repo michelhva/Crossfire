@@ -20,6 +20,7 @@
 package com.realtime.crossfire.jxclient.gui.commands;
 
 import com.realtime.crossfire.jxclient.window.JXCWindow;
+import org.jetbrains.annotations.NotNull;
 
 /**
  * A {@link GUICommand} which quite the client.
@@ -30,13 +31,14 @@ public class QuitCommand implements GUICommand
     /**
      * The main window.
      */
+    @NotNull
     private final JXCWindow window;
 
     /**
      * Creates a new instance.
      * @param window the main window
      */
-    public QuitCommand(final JXCWindow window)
+    public QuitCommand(@NotNull final JXCWindow window)
     {
         this.window = window;
     }

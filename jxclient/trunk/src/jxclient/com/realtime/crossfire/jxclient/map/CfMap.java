@@ -21,6 +21,8 @@ package com.realtime.crossfire.jxclient.map;
 
 import com.realtime.crossfire.jxclient.faces.Face;
 import com.realtime.crossfire.jxclient.server.CrossfireMap2Command;
+import org.jetbrains.annotations.NotNull;
+import org.jetbrains.annotations.Nullable;
 
 /**
  * Represents a map (as seen by the client). A map is a grid in which {@link
@@ -35,6 +37,7 @@ public class CfMap
     /**
      * The {@link CfMapSquareListener} instance to notify.
      */
+    @NotNull
     private final CfMapSquareListener mapSquareListener;
 
     /**
@@ -102,13 +105,14 @@ public class CfMap
     /**
      * Array of (possibly) defined squares.
      */
+    @Nullable
     private CfMapPatch[][] patch = null;
 
     /**
      * Creates a new (empty) map.
      * @param mapSquareListener the map square listener instance to notify
      */
-    public CfMap(final CfMapSquareListener mapSquareListener)
+    public CfMap(@NotNull final CfMapSquareListener mapSquareListener)
     {
         this.mapSquareListener = mapSquareListener;
     }
@@ -151,7 +155,7 @@ public class CfMap
      * @param layer the layer to set
      * @param face the face to set; may be <code>null</code> to remove the face
      */
-    public void setFace(final int x, final int y, final int layer, final Face face)
+    public void setFace(final int x, final int y, final int layer, @Nullable final Face face)
     {
         if (expandTo(x, y).resetFogOfWar(ox, oy))
         {
@@ -175,7 +179,7 @@ public class CfMap
      * @param layer the layer to set
      * @param face the face to set; may be <code>null</code> to remove the face
      */
-    private void setFaceInternal(final int x, final int y, final int layer, final Face face)
+    private void setFaceInternal(final int x, final int y, final int layer, @Nullable final Face face)
     {
         final CfMapSquare headMapSquare = expandTo(x, y).getSquare(ox, oy);
 
@@ -201,10 +205,8 @@ public class CfMap
      * @param newMapSquare the map square of the tail part to add pointers, or
      * <code>null</code> to remove pointers
      */
-    private void expandFace(final int x, final int y, final int layer, final Face face, final CfMapSquare oldMapSquare, final CfMapSquare newMapSquare)
+    private void expandFace(final int x, final int y, final int layer, @NotNull final Face face, @NotNull final CfMapSquare oldMapSquare, @Nullable final CfMapSquare newMapSquare)
     {
-        assert oldMapSquare != null;
-
         final int sx = face.getTileWidth();
         final int sy = face.getTileHeight();
         for (int dx = 0; dx < sx; dx++)
@@ -234,7 +236,7 @@ public class CfMap
      * @param layer the layer of the face
      * @param face the face to mark dirty
      */
-    private void dirtyFace(final int x, final int y, final int layer, final Face face)
+    private void dirtyFace(final int x, final int y, final int layer, @NotNull final Face face)
     {
         final int sx = face.getTileWidth();
         final int sy = face.getTileHeight();
@@ -265,6 +267,7 @@ public class CfMap
      * @return the face; dark (i.e. not yet set) faces return
      * <code>null</code>
      */
+    @Nullable
     public Face getFace(final int x, final int y, final int layer)
     {
         final CfMapPatch mapPatch = getMapPatch(x, y);
@@ -282,7 +285,7 @@ public class CfMap
      * @param setAlways if set, always update the face; if unset, only update
      * when fog-of-war
      */
-    private void setHeadMapSquare(final int x, final int y, final int layer, final CfMapSquare mapSquare, final boolean setAlways)
+    private void setHeadMapSquare(final int x, final int y, final int layer, @Nullable final CfMapSquare mapSquare, final boolean setAlways)
     {
         expandTo(x, y).setHeadMapSquare(ox, oy, layer, mapSquare, setAlways);
     }
@@ -295,6 +298,7 @@ public class CfMap
      * @return the head map square, or <code>null</code> if this square does
      * not contain a multi-tail
      */
+    @Nullable
     public CfMapSquare getHeadMapSquare(final int x, final int y, final int layer)
     {
         final CfMapPatch mapPatch = getMapPatch(x, y);
@@ -351,6 +355,7 @@ public class CfMap
      * @return the map patch or <code>null</code> if the coordinates are out of
      * map bounds
      */
+    @Nullable
     private CfMapPatch getMapPatch(final int x, final int y)
     {
         if (x < minX || x > maxX || y < minY || y > maxY)
@@ -408,6 +413,7 @@ public class CfMap
      * @return the map patch or <code>null</code> if the coordinates are out of
      * map bounds
      */
+    @Nullable
     private CfMapPatch expandTo(final int x, final int y)
     {
         if (minX > maxX || minY > maxY)
@@ -713,6 +719,7 @@ public class CfMap
      * @param y the y-coordinate
      * @return the map square
      */
+    @NotNull
     public CfMapSquare getMapSquare(final int x, final int y)
     {
         return expandTo(x, y).getSquare(ox, oy);

@@ -27,6 +27,8 @@ import java.awt.Graphics;
 import java.awt.Graphics2D;
 import java.awt.geom.RectangularShape;
 import java.awt.image.BufferedImage;
+import org.jetbrains.annotations.NotNull;
+import org.jetbrains.annotations.Nullable;
 
 /**
  * A {@link GUIGauge} which displays the current value as a text string on top
@@ -43,16 +45,19 @@ public class GUITextGauge extends GUIGauge
     /**
      * The text color.
      */
+    @NotNull
     private final Color color;
 
     /**
      * The text font.
      */
+    @NotNull
     private final Font font;
 
     /**
      * The label text.
      */
+    @NotNull
     private String labelText = "";
 
     /**
@@ -72,11 +77,9 @@ public class GUITextGauge extends GUIGauge
      * @param color the text color
      * @param font the text font
      */
-    public GUITextGauge(final TooltipManager tooltipManager, final JXCWindowRenderer windowRenderer, final String name, final int x, final int y, final int w, final int h, final BufferedImage pictureFull, final BufferedImage pictureNegative, final BufferedImage pictureEmpty, final Orientation orientation, final String tooltipPrefix, final Color color, final Font font)
+    public GUITextGauge(@NotNull final TooltipManager tooltipManager, @NotNull final JXCWindowRenderer windowRenderer, @NotNull final String name, final int x, final int y, final int w, final int h, @NotNull final BufferedImage pictureFull, @Nullable final BufferedImage pictureNegative, @NotNull final BufferedImage pictureEmpty, @NotNull final Orientation orientation, @Nullable final String tooltipPrefix, @NotNull final Color color, @NotNull final Font font)
     {
         super(tooltipManager, windowRenderer, name, x, y, w, h, pictureFull, pictureNegative, pictureEmpty, orientation, tooltipPrefix);
-        if (color == null) throw new IllegalArgumentException();
-        if (font == null) throw new IllegalArgumentException();
         this.color = color;
         this.font = font;
     }
@@ -90,7 +93,7 @@ public class GUITextGauge extends GUIGauge
 
     /** {@inheritDoc} */
     @Override
-    protected void render(final Graphics g)
+    protected void render(@NotNull final Graphics g)
     {
         super.render(g);
 
@@ -110,7 +113,7 @@ public class GUITextGauge extends GUIGauge
 
     /** {@inheritDoc} */
     @Override
-    public void setValues(final int curValue, final int minValue, final int maxValue, final String labelText, final String tooltipText)
+    public void setValues(final int curValue, final int minValue, final int maxValue, @NotNull final String labelText, @NotNull final String tooltipText)
     {
         super.setValues(curValue, minValue, maxValue, labelText, tooltipText);
         this.labelText = labelText;

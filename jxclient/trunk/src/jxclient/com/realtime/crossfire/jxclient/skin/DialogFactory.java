@@ -32,6 +32,7 @@ import java.awt.Font;
 import java.awt.image.BufferedImage;
 import java.util.ArrayList;
 import java.util.Collection;
+import org.jetbrains.annotations.NotNull;
 
 /**
  * A factory class to create "textbutton" instances.
@@ -41,30 +42,39 @@ import java.util.Collection;
 public class DialogFactory
 {
     /** The north-west frame picture. */
+    @NotNull
     private final BufferedImage frameNW;
 
     /** The north frame picture. */
+    @NotNull
     private final BufferedImage frameN;
 
     /** The north-east frame picture. */
+    @NotNull
     private final BufferedImage frameNE;
 
     /** The west frame picture. */
+    @NotNull
     private final BufferedImage frameW;
 
     /** The center frame picture. */
+    @NotNull
     private final BufferedImage frameC;
 
     /** The east frame picture. */
+    @NotNull
     private final BufferedImage frameE;
 
     /** The south-west frame picture. */
+    @NotNull
     private final BufferedImage frameSW;
 
     /** The south frame picture. */
+    @NotNull
     private final BufferedImage frameS;
 
     /** The south-east frame picture. */
+    @NotNull
     private final BufferedImage frameSE;
 
     /** The size of the north border in pixels. */
@@ -129,20 +139,8 @@ public class DialogFactory
      * @param alpha The alpha value for the dialog background except for the
      * title.
      */
-    public DialogFactory(final BufferedImage frameNW, final BufferedImage frameN, final BufferedImage frameNE, final BufferedImage frameW, final BufferedImage frameC, final BufferedImage frameE, final BufferedImage frameSW, final BufferedImage frameS, final BufferedImage frameSE, final Font titleFont, final Color titleColor, final Color titleBackgroundColor, final float alpha)
+    public DialogFactory(@NotNull final BufferedImage frameNW, @NotNull final BufferedImage frameN, @NotNull final BufferedImage frameNE, @NotNull final BufferedImage frameW, @NotNull final BufferedImage frameC, @NotNull final BufferedImage frameE, @NotNull final BufferedImage frameSW, @NotNull final BufferedImage frameS, @NotNull final BufferedImage frameSE, @NotNull final Font titleFont, @NotNull final Color titleColor, @NotNull final Color titleBackgroundColor, final float alpha)
     {
-        if (frameNW == null) throw new IllegalArgumentException();
-        if (frameN == null) throw new IllegalArgumentException();
-        if (frameNE == null) throw new IllegalArgumentException();
-        if (frameW == null) throw new IllegalArgumentException();
-        if (frameC == null) throw new IllegalArgumentException();
-        if (frameE == null) throw new IllegalArgumentException();
-        if (frameSW == null) throw new IllegalArgumentException();
-        if (frameS == null) throw new IllegalArgumentException();
-        if (frameSE == null) throw new IllegalArgumentException();
-        if (titleFont == null) throw new IllegalArgumentException();
-        if (titleColor == null) throw new IllegalArgumentException();
-        if (titleBackgroundColor == null) throw new IllegalArgumentException();
         this.frameNW = frameNW;
         this.frameN = frameN;
         this.frameNE = frameNE;
@@ -195,7 +193,8 @@ public class DialogFactory
      *
      * @return The gui elements comprising the new dialog.
      */
-    public Iterable<GUIElement> newDialog(final JXCWindow window, final TooltipManager tooltipManager, final JXCWindowRenderer windowRenderer, final String name, final int w, final int h, final String title)
+    @NotNull
+    public Iterable<GUIElement> newDialog(@NotNull final JXCWindow window, @NotNull final TooltipManager tooltipManager, @NotNull final JXCWindowRenderer windowRenderer, @NotNull final String name, final int w, final int h, @NotNull final String title)
     {
         if (w <= sizeW+sizeE) throw new IllegalArgumentException("dialog height ("+w+") is smaller than heights of N and S ("+sizeW+"+"+sizeE+")");
         if (h <= sizeN+sizeS) throw new IllegalArgumentException("dialog width ("+h+") is smaller than heights of W and E ("+sizeN+"+"+sizeS+")");

@@ -19,6 +19,8 @@
 //
 package com.realtime.crossfire.jxclient.server;
 
+import org.jetbrains.annotations.NotNull;
+
 /**
  *
  * @version 1.0
@@ -53,5 +55,5 @@ public interface CrossfireDrawinfoListener
 
     int NDI_TAN = 12;
 
-    void commandDrawinfoReceived(String text, int type);
+    void commandDrawinfoReceived(@NotNull String text, int type);
 }

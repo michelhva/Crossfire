@@ -19,6 +19,8 @@
 //
 package com.realtime.crossfire.jxclient.server;
 
+import org.jetbrains.annotations.NotNull;
+
 /**
  * Adds encoding/decoding of crossfire protocol packets to a {@link
  * ServerConnection}.
@@ -41,168 +43,168 @@ public interface CrossfireServerConnection extends ServerConnection
      * Adds a listener to be notified about connection progress.
      * @param listener the listener to add
      */
-    void addCrossfireServerConnectionListener(CrossfireServerConnectionListener listener);
+    void addCrossfireServerConnectionListener(@NotNull CrossfireServerConnectionListener listener);
 
     /**
      * Adds a listener to be notified about map size changes.
      * @param listener the listener to add
      */
-    void addMapSizeListener(MapSizeListener listener);
+    void addMapSizeListener(@NotNull MapSizeListener listener);
 
     /**
      * Removes a listener to be notified about map size changes.
      * @param listener the listener to remove
      */
-    void removeMapSizeListener(MapSizeListener listener);
+    void removeMapSizeListener(@NotNull MapSizeListener listener);
 
     /**
      * Adds a new listener monitoring the drawinfo S-&gt;C messages.
      * @param listener the listener to remove
      */
-    void addCrossfireDrawinfoListener(CrossfireDrawinfoListener listener);
+    void addCrossfireDrawinfoListener(@NotNull CrossfireDrawinfoListener listener);
 
     /**
      * Removes the given listener from the list of objects listening to the
      * drawinfo S-&gt;C messages.
      * @param listener the listener to remove
      */
-    void removeCrossfireDrawinfoListener(CrossfireDrawinfoListener listener);
+    void removeCrossfireDrawinfoListener(@NotNull CrossfireDrawinfoListener listener);
 
     /**
      * Adds a new listener monitoring the drawextinfo S-&gt;C messages.
      * @param listener the listener to remove
      */
-    void addCrossfireDrawextinfoListener(CrossfireDrawextinfoListener listener);
+    void addCrossfireDrawextinfoListener(@NotNull CrossfireDrawextinfoListener listener);
 
     /**
      * Removes the given listener from the list of objects listening to the
      * drawextinfo S-&gt;C messages.
      * @param listener the listener to remove
      */
-    void removeCrossfireDrawextinfoListener(CrossfireDrawextinfoListener listener);
+    void removeCrossfireDrawextinfoListener(@NotNull CrossfireDrawextinfoListener listener);
 
     /**
      * Adds a new listener monitoring the query S-&gt;C messages.
      * @param listener the listener to remove
      */
-    void addCrossfireQueryListener(CrossfireQueryListener listener);
+    void addCrossfireQueryListener(@NotNull CrossfireQueryListener listener);
 
     /**
      * Removes the given listener from the list of objects listening to the
      * query S-&gt;C messages.
      * @param listener the listener to remove
      */
-    void removeCrossfireQueryListener(CrossfireQueryListener listener);
+    void removeCrossfireQueryListener(@NotNull CrossfireQueryListener listener);
 
     /**
      * Adds a listener from the list of objects listening to magicmap messages.
      * @param listener the listener to add
      */
-    void addCrossfireMagicmapListener(CrossfireMagicmapListener listener);
+    void addCrossfireMagicmapListener(@NotNull CrossfireMagicmapListener listener);
 
     /**
      * Removes a listener from the list of objects listening to magicmap
      * messages.
      * @param listener the listener to remove
      */
-    void removeCrossfireMagicmapListener(CrossfireMagicmapListener listener);
+    void removeCrossfireMagicmapListener(@NotNull CrossfireMagicmapListener listener);
 
     /**
      * Add a listener to be notified about face image changes.
      * @param listener the listener to add
      */
-    void addCrossfireUpdateFaceListener(CrossfireUpdateFaceListener listener);
+    void addCrossfireUpdateFaceListener(@NotNull CrossfireUpdateFaceListener listener);
 
     /**
      * Adds a listener to be notified about stats changes.
      * @param crossfireStatsListener the listener to add
      */
-    void addCrossfireStatsListener(CrossfireStatsListener crossfireStatsListener);
+    void addCrossfireStatsListener(@NotNull CrossfireStatsListener crossfireStatsListener);
 
     /**
      * Adds a listener to be notified about item changes.
      * @param crossfireUpdateItemListener the listener to add
      */
-    void addCrossfireUpdateItemListener(CrossfireUpdateItemListener crossfireUpdateItemListener);
+    void addCrossfireUpdateItemListener(@NotNull CrossfireUpdateItemListener crossfireUpdateItemListener);
 
     /**
      * Adds a listener to be notified about map changes.
      * @param listener the listener to add
      */
-    void addCrossfireUpdateMapListener(CrossfireUpdateMapListener listener);
+    void addCrossfireUpdateMapListener(@NotNull CrossfireUpdateMapListener listener);
 
     /**
      * Adds a listener to be notified about tick changes.
      * @param listener the listener to add
      */
-    void addCrossfireTickListener(CrossfireTickListener listener);
+    void addCrossfireTickListener(@NotNull CrossfireTickListener listener);
 
     /**
      * Adds a listener to be notified about received sound commands.
      * @param listener the listener to add
      */
-    void addCrossfireSoundListener(CrossfireSoundListener listener);
+    void addCrossfireSoundListener(@NotNull CrossfireSoundListener listener);
 
     /**
      * Adds a listener to be notified about received music commands.
      * @param listener the listener to add
      */
-    void addCrossfireMusicListener(CrossfireMusicListener listener);
+    void addCrossfireMusicListener(@NotNull CrossfireMusicListener listener);
 
     /**
      * Adds a listener to be notified about received comc commands.
      * @param listener the listener to add
      */
-    void addCrossfireComcListener(CrossfireComcListener listener);
+    void addCrossfireComcListener(@NotNull CrossfireComcListener listener);
 
     /**
      * Adds a listener to be notified about received face commands.
      * @param listener the listener to add
      */
-    void addCrossfireFaceListener(final CrossfireFaceListener listener);
+    void addCrossfireFaceListener(@NotNull CrossfireFaceListener listener);
 
     /**
      * Adds a listener to be notified about received spell commands.
      * @param listener the listener to add
      */
-    void addCrossfireSpellListener(CrossfireSpellListener listener);
+    void addCrossfireSpellListener(@NotNull CrossfireSpellListener listener);
 
     /**
      * Adds a listener to be notified about received experience table changes.
      * @param crossfireExpTableListener the listener to add
      */
-    void addCrossfireExpTableListener(CrossfireExpTableListener crossfireExpTableListener);
+    void addCrossfireExpTableListener(@NotNull CrossfireExpTableListener crossfireExpTableListener);
 
     /**
      * Adds a listener to be notified about received skill info changes.
      * @param listener the listener to add
      */
-    void addCrossfireSkillInfoListener(CrossfireSkillInfoListener listener);
+    void addCrossfireSkillInfoListener(@NotNull CrossfireSkillInfoListener listener);
 
     /**
      * Removes a listener to be notified about received skill info changes.
      * @param listener the listener to remove
      */
-    void removeCrossfireSkillInfoListener(CrossfireSkillInfoListener listener);
+    void removeCrossfireSkillInfoListener(@NotNull CrossfireSkillInfoListener listener);
 
     /**
      * Adds a listener to be notified about received packets.
      * @param listener the listener to add
      */
-    void addPacketWatcherListener(ReceivedPacketListener listener);
+    void addPacketWatcherListener(@NotNull ReceivedPacketListener listener);
 
     /**
      * Removes a listener to be notified about received packets.
      * @param listener the listener to add
      */
-    void removePacketWatcherListener(ReceivedPacketListener listener);
+    void removePacketWatcherListener(@NotNull ReceivedPacketListener listener);
 
     /**
      * Pretends that a drawinfo message has been received.
      * @param message the message
      * @param color the color
      */
-    void drawInfo(String message, int color);
+    void drawInfo(@NotNull String message, int color);
 
     /**
      * Sends an "addme" command to the server.
@@ -261,31 +263,31 @@ public interface CrossfireServerConnection extends ServerConnection
      * @param command the command
      * @return the packet id
      */
-    int sendNcom(int repeat, String command);
+    int sendNcom(int repeat, @NotNull String command);
 
     /**
      * Sends a "reply" command to the server.
      * @param text the text to reply
      */
-    void sendReply(String text);
+    void sendReply(@NotNull String text);
 
     /**
      * Sends a "requestinfo" command to the server.
      * @param infoType the info type to request
      */
-    void sendRequestinfo(String infoType);
+    void sendRequestinfo(@NotNull String infoType);
 
     /**
      * Sends a "setup" command to the server.
      * @param options the option/value pairs to send
      */
-    void sendSetup(String... options);
+    void sendSetup(@NotNull String... options);
 
     /**
      * Sends a "toggleextendedtext" command to the server.
      * @param types the types to request
      */
-    void sendToggleextendedtext(int... types);
+    void sendToggleextendedtext(@NotNull int... types);
 
     /**
      * Sends a "version" command to the server.
@@ -293,7 +295,7 @@ public interface CrossfireServerConnection extends ServerConnection
      * @param scval the server version number
      * @param vinfo the client identification string
      */
-    void sendVersion(int csval, int scval, String vinfo);
+    void sendVersion(int csval, int scval, @NotNull String vinfo);
 
     /**
      * Sets the map size. Must not be called in connected state.

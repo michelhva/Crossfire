@@ -20,6 +20,8 @@
 package com.realtime.crossfire.jxclient.map;
 
 import com.realtime.crossfire.jxclient.faces.Face;
+import org.jetbrains.annotations.NotNull;
+import org.jetbrains.annotations.Nullable;
 
 /**
  * Represents a square area of {@link CfMapSquare}s.
@@ -40,6 +42,7 @@ public class CfMapPatch
     /**
      * The array of {@link CfMapSquare}s. Elements are never <code>null</code>.
      */
+    @NotNull
     private final CfMapSquare[][] square = new CfMapSquare[SIZE][SIZE];
 
     /**
@@ -50,7 +53,7 @@ public class CfMapPatch
      * @param y0 the absolute map y-coordinate of the top left corner of this
      * patch
      */
-    public CfMapPatch(final CfMapSquareListener mapSquareListener, final int x0, final int y0)
+    public CfMapPatch(@NotNull final CfMapSquareListener mapSquareListener, final int x0, final int y0)
     {
         for (int y = 0; y < SIZE; y++)
         {
@@ -130,7 +133,7 @@ public class CfMapPatch
      * @param setAlways if set, always update the face; if unset, only update
      * when fog-of-war
      */
-    public void setHeadMapSquare(final int x, final int y, final int layer, final CfMapSquare mapSquare, final boolean setAlways)
+    public void setHeadMapSquare(final int x, final int y, final int layer, @Nullable final CfMapSquare mapSquare, final boolean setAlways)
     {
         square[x][y].setHeadMapSquare(layer, mapSquare, setAlways);
     }
@@ -143,6 +146,7 @@ public class CfMapPatch
      * @return the head map square, or <code>null</code> if this square does
      * not contain a multi-tail
      */
+    @Nullable
     public CfMapSquare getHeadMapSquare(final int x, final int y, final int layer)
     {
         return square[x][y].getHeadMapSquare(layer);
@@ -176,6 +180,7 @@ public class CfMapPatch
      * @param y the y-coordinate of the square
      * @return the map square
      */
+    @NotNull
     public CfMapSquare getSquare(final int x, final int y)
     {
         return square[x][y];

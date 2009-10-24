@@ -22,6 +22,8 @@ package com.realtime.crossfire.jxclient.faces;
 import com.realtime.crossfire.jxclient.server.CrossfireFaceListener;
 import com.realtime.crossfire.jxclient.server.CrossfireServerConnection;
 import java.util.Arrays;
+import org.jetbrains.annotations.NotNull;
+import org.jetbrains.annotations.Nullable;
 
 /**
  * A cache for {@link Face} instances.
@@ -33,16 +35,18 @@ public class FaceCache
     /**
      * The cached faces. Empty slots are set to <code>null</code>.
      */
+    @NotNull
     private final Face[] faces = new Face[65536];
 
     /**
      * The listener to receive face commands.
      */
+    @NotNull
     private final CrossfireFaceListener crossfireFaceListener = new CrossfireFaceListener()
     {
         /** {@inheritDoc} */
         @Override
-        public void faceReceived(final int faceNum, final int faceSetNum, final int faceChecksum, final String faceName)
+        public void faceReceived(final int faceNum, final int faceSetNum, final int faceChecksum, @NotNull final String faceName)
         {
             // XXX: ignores faceSetNum
             if (faces[faceNum] != null)
@@ -65,7 +69,7 @@ public class FaceCache
      * Creates a new instance.
      * @param crossfireServerConnection the server connection to use
      */
-    public FaceCache(final CrossfireServerConnection crossfireServerConnection)
+    public FaceCache(@NotNull final CrossfireServerConnection crossfireServerConnection)
     {
         this();
         crossfireServerConnection.addCrossfireFaceListener(crossfireFaceListener);
@@ -76,7 +80,7 @@ public class FaceCache
      *
      * @param face The face to add.
      */
-    public void addFace(final Face face)
+    public void addFace(@NotNull final Face face)
     {
         faces[face.getFaceNum()] = face;
     }
@@ -88,6 +92,7 @@ public class FaceCache
      *
      * @return The face, or <code>null</code> if the face is not cached.
      */
+    @Nullable
     public Face getFace(final int faceNum)
     {
         final Face face = faces[faceNum];

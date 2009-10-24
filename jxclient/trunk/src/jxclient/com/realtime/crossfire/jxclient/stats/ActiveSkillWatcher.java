@@ -22,6 +22,7 @@ package com.realtime.crossfire.jxclient.stats;
 import com.realtime.crossfire.jxclient.server.CrossfireDrawextinfoListener;
 import com.realtime.crossfire.jxclient.server.CrossfireDrawinfoListener;
 import com.realtime.crossfire.jxclient.server.CrossfireServerConnection;
+import org.jetbrains.annotations.NotNull;
 
 /**
  * Helper class to synthesize an "active skill" stat value. The Crossfire
@@ -35,26 +36,31 @@ public class ActiveSkillWatcher
     /**
      * Prefix string when searching for the currently active skill.
      */
+    @NotNull
     private static final String READIED_SKILLS = "Readied skill: ";
 
     /**
      * The object used for synchronization.
      */
+    @NotNull
     private final Object sync = new Object();
 
     /**
      * The stats instance to notify.
      */
+    @NotNull
     private final Stats stats;
 
     /**
      * The last known active skill name.
      */
+    @NotNull
     private String activeSkill = "";
 
     /**
      * The stats listener to detect the range stat.
      */
+    @NotNull
     private final StatsListener statsListener = new StatsListener()
     {
         /** {@inheritDoc} */
@@ -80,21 +86,21 @@ public class ActiveSkillWatcher
 
         /** {@inheritDoc} */
         @Override
-        public void titleChanged(final String title)
+        public void titleChanged(@NotNull final String title)
         {
             // ignore
         }
 
         /** {@inheritDoc} */
         @Override
-        public void rangeChanged(final String range)
+        public void rangeChanged(@NotNull final String range)
         {
             checkRange(range);
         }
 
         /** {@inheritDoc} */
         @Override
-        public void activeSkillChanged(final String activeSkill)
+        public void activeSkillChanged(@NotNull final String activeSkill)
         {
             // ignore
         }
@@ -117,11 +123,12 @@ public class ActiveSkillWatcher
     /**
      * The drawinfo listener to receive drawinfo messages.
      */
+    @NotNull
     private final CrossfireDrawinfoListener drawinfoListener = new CrossfireDrawinfoListener()
     {
         /** {@inheritDoc} */
         @Override
-        public void commandDrawinfoReceived(final String text, final int type)
+        public void commandDrawinfoReceived(@NotNull final String text, final int type)
         {
             checkMessage(text);
         }
@@ -130,11 +137,12 @@ public class ActiveSkillWatcher
     /**
      * The drawextinfo listener to receive drawextinfo messages.
      */
+    @NotNull
     private final CrossfireDrawextinfoListener drawextinfoListener = new CrossfireDrawextinfoListener()
     {
         /** {@inheritDoc} */
         @Override
-        public void commandDrawextinfoReceived(final int color, final int type, final int subtype, final String message)
+        public void commandDrawextinfoReceived(final int color, final int type, final int subtype, @NotNull final String message)
         {
             checkMessage(message);
         }
@@ -147,7 +155,7 @@ public class ActiveSkillWatcher
      *
      * @param crossfireServerConnection The connection to watch.
      */
-    public ActiveSkillWatcher(final Stats stats, final CrossfireServerConnection crossfireServerConnection)
+    public ActiveSkillWatcher(@NotNull final Stats stats, @NotNull final CrossfireServerConnection crossfireServerConnection)
     {
         this.stats = stats;
         stats.addCrossfireStatsListener(statsListener);
@@ -160,7 +168,7 @@ public class ActiveSkillWatcher
      * Check whether the range attribute has changed.
      * @param range the new range attribute
      */
-    private void checkRange(final String range)
+    private void checkRange(@NotNull final String range)
     {
         if (range.startsWith("Skill: "))
         {
@@ -172,7 +180,7 @@ public class ActiveSkillWatcher
      * Check whether a drawinfo message is skill related.
      * @param message the message
      */
-    private void checkMessage(final String message)
+    private void checkMessage(@NotNull final String message)
     {
         if (message.startsWith(READIED_SKILLS))
         {
@@ -186,7 +194,7 @@ public class ActiveSkillWatcher
      *
      * @param activeSkill The active skill name.
      */
-    private void setActive(final String activeSkill)
+    private void setActive(@NotNull final String activeSkill)
     {
         // Normalize skill name: the Crossfire server sometimes sends "Skill:
         // <skill item name>" rather than "Skill: <skill name>".

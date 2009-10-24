@@ -23,6 +23,7 @@ import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;
 import java.io.InputStream;
+import org.jetbrains.annotations.NotNull;
 
 /**
  * A {@link JXCSkinSource} that loads from files.
@@ -34,6 +35,7 @@ public class JXCSkinDirSource extends AbstractJXCSkinSource
     /**
      * The base directory.
      */
+    @NotNull
     private final File dir;
 
     /**
@@ -43,23 +45,24 @@ public class JXCSkinDirSource extends AbstractJXCSkinSource
      *
      * @throws JXCSkinException if the skin cannot be loaded
      */
-    public JXCSkinDirSource(final File dir) throws JXCSkinException
+    public JXCSkinDirSource(@NotNull final File dir) throws JXCSkinException
     {
-        if (dir == null) throw new IllegalArgumentException();
         this.dir = dir;
         checkAccess();
     }
 
     /** {@inheritDoc} */
+    @NotNull
     @Override
-    public InputStream getInputStream(final String name) throws IOException
+    public InputStream getInputStream(@NotNull final String name) throws IOException
     {
         return new FileInputStream(new File(dir, name));
     }
 
     /** {@inheritDoc} */
+    @NotNull
     @Override
-    public String getURI(final String name)
+    public String getURI(@NotNull final String name)
     {
         return "file:"+new File(dir, name);
     }

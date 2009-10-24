@@ -40,6 +40,7 @@ import java.awt.Graphics2D;
 import java.awt.Transparency;
 import java.util.Set;
 import javax.swing.ImageIcon;
+import org.jetbrains.annotations.NotNull;
 
 /**
  * Displays magic map results. Fallback for unknown tiles is the normal map
@@ -62,16 +63,19 @@ public class GUIMagicMap extends GUIElement
     /**
      * The {@link CfMapUpdater} instance to use.
      */
+    @NotNull
     private final CfMapUpdater mapUpdater;
 
     /**
      * The {@link FacesManager} instance for looking up faces.
      */
+    @NotNull
     private final FacesManager facesManager;
 
     /**
      * The {@link CrossfireServerConnection} to monitor.
      */
+    @NotNull
     private final CrossfireServerConnection crossfireServerConnection;
 
     /**
@@ -107,6 +111,7 @@ public class GUIMagicMap extends GUIElement
     /**
      * The colors for displaying magic map data.
      */
+    @NotNull
     private static final Color[] tileColors =
     {
         Color.BLACK,
@@ -135,11 +140,12 @@ public class GUIMagicMap extends GUIElement
      * The {@link CrossfireMagicmapListener} registered to receive mapgicmap
      * commands.
      */
+    @NotNull
     private final CrossfireMagicmapListener crossfireMagicmapListener = new CrossfireMagicmapListener()
     {
         /** {@inheritDoc} */
         @Override
-        public void commandMagicmapReceived(final int width, final int height, final int px, final int py, final byte[] data, final int pos)
+        public void commandMagicmapReceived(final int width, final int height, final int px, final int py, @NotNull final byte[] data, final int pos)
         {
             int datapos = pos;
             synchronized (bufferedImageSync)
@@ -178,6 +184,7 @@ public class GUIMagicMap extends GUIElement
      * The {@link MapscrollListener} used to track player position
      * changes into the magic map.
      */
+    @NotNull
     private final MapscrollListener mapscrollListener = new MapscrollListener()
     {
         /** {@inheritDoc} */
@@ -232,11 +239,12 @@ public class GUIMagicMap extends GUIElement
     /**
      * The {@link MapListener} registered to receive map updates.
      */
+    @NotNull
     private final MapListener mapListener = new MapListener()
     {
         /** {@inheritDoc} */
         @Override
-        public void mapChanged(final CfMap map, final Set<CfMapSquare> changedSquares)
+        public void mapChanged(@NotNull final CfMap map, @NotNull final Set<CfMapSquare> changedSquares)
         {
             final int x0 = map.getOffsetX();
             final int y0 = map.getOffsetY();
@@ -266,6 +274,7 @@ public class GUIMagicMap extends GUIElement
      * The {@link NewmapListener} registered to receive newmap
      * commands.
      */
+    @NotNull
     private final NewmapListener newmapListener = new NewmapListener()
     {
         /** {@inheritDoc} */
@@ -296,6 +305,7 @@ public class GUIMagicMap extends GUIElement
      * The {@link MapSizeListener} registered to receive changes of the map
      * view size.
      */
+    @NotNull
     private final MapSizeListener mapSizeListener = new MapSizeListener()
     {
         /** {@inheritDoc} */
@@ -336,7 +346,7 @@ public class GUIMagicMap extends GUIElement
      * @param mapUpdater the map updater instance to use
      * @param facesManager the faces manager instance to use
      */
-    public GUIMagicMap(final TooltipManager tooltipManager, final JXCWindowRenderer windowRenderer, final String name, final int x, final int y, final int w, final int h, final CrossfireServerConnection crossfireServerConnection, final CfMapUpdater mapUpdater, final FacesManager facesManager)
+    public GUIMagicMap(@NotNull final TooltipManager tooltipManager, @NotNull final JXCWindowRenderer windowRenderer, @NotNull final String name, final int x, final int y, final int w, final int h, @NotNull final CrossfireServerConnection crossfireServerConnection, @NotNull final CfMapUpdater mapUpdater, @NotNull final FacesManager facesManager)
     {
         super(tooltipManager, windowRenderer, name, x, y, w, h, Transparency.TRANSLUCENT);
         if (w <= 0 || h <= 0) throw new IllegalArgumentException("area must be non-empty");
@@ -380,7 +390,7 @@ public class GUIMagicMap extends GUIElement
      * @param x1 the right edge to redraw (exclusive)
      * @param y1 the bottom edge to redraw (exclusive)
      */
-    private void redrawTiles(final Graphics g, final CfMap map, final int x0, final int y0, final int x1, final int y1)
+    private void redrawTiles(@NotNull final Graphics g, @NotNull final CfMap map, final int x0, final int y0, final int x1, final int y1)
     {
         for (int x = x0; x < x1; x++)
         {
@@ -397,7 +407,7 @@ public class GUIMagicMap extends GUIElement
      * @param x the x-coordinate of the square to clear
      * @param y the y-coordinate of the square to clear
      */
-    private void cleanSquare(final Graphics g, final int x, final int y)
+    private void cleanSquare(@NotNull final Graphics g, final int x, final int y)
     {
         g.setColor(Color.BLACK);
         g.fillRect(x*TILE_SIZE+offsetX, y*TILE_SIZE+offsetY, TILE_SIZE, TILE_SIZE);
@@ -410,7 +420,7 @@ public class GUIMagicMap extends GUIElement
      * @param x the x-coordinate of the map tile to redraw
      * @param y the y-coordinate of the map tile to redraw
      */
-    private void redrawSquare(final Graphics g, final CfMap map, final int x, final int y)
+    private void redrawSquare(@NotNull final Graphics g, @NotNull final CfMap map, final int x, final int y)
     {
         cleanSquare(g, x, y);
         for (int layer = 0; layer < CrossfireMap2Command.NUM_LAYERS; layer++)
@@ -438,7 +448,7 @@ public class GUIMagicMap extends GUIElement
      * @param y the y coordinate of the square to redraw
      * @param layer the layer to redraw
      */
-    private void redrawSquare(final Graphics g, final CfMap map, final int x, final int y, final int layer)
+    private void redrawSquare(@NotNull final Graphics g, @NotNull final CfMap map, final int x, final int y, final int layer)
     {
         final int px = x*TILE_SIZE+offsetX;
         final int py = y*TILE_SIZE+offsetY;
@@ -477,7 +487,7 @@ public class GUIMagicMap extends GUIElement
      * Paints the player location.
      * @param g the graphics to paint to
      */
-    private void markPlayer(final Graphics g)
+    private void markPlayer(@NotNull final Graphics g)
     {
         g.setColor(Color.RED);
         g.fillRect(playerX, playerY, TILE_SIZE, TILE_SIZE);
@@ -485,7 +495,7 @@ public class GUIMagicMap extends GUIElement
 
     /** {@inheritDoc} */
     @Override
-    protected void render(final Graphics g)
+    protected void render(@NotNull final Graphics g)
     {
     }
 }

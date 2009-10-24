@@ -19,6 +19,8 @@
 //
 package com.realtime.crossfire.jxclient.server;
 
+import org.jetbrains.annotations.NotNull;
+
 /**
  * Interface for listeners interested in item related commands.
  * @author Andreas Kirschbaum
@@ -35,7 +37,7 @@ public interface CrossfireUpdateItemListener
      * A "delitem" command has been received.
      * @param tags the item tags
      */
-    void delitemReceived(int[] tags);
+    void delitemReceived(@NotNull int[] tags);
 
     /**
      * An "additem" has been received.
@@ -51,7 +53,7 @@ public interface CrossfireUpdateItemListener
      * @param nrof the number of items
      * @param type the item's type
      */
-    void additemReceived(int location, int tag, int flags, int weight, int faceNum, String name, String namePl, int anim, int animSpeed, int nrof, int type);
+    void additemReceived(int location, int tag, int flags, int weight, int faceNum, @NotNull String name, @NotNull String namePl, int anim, int animSpeed, int nrof, int type);
 
     /**
      * An "upditem" command has been parsed.
@@ -65,7 +67,7 @@ public interface CrossfireUpdateItemListener
      * @param faceNum the player's face ID
      * @param name the player's name
      */
-    void playerReceived(int tag, int weight, int faceNum, String name);
+    void playerReceived(int tag, int weight, int faceNum, @NotNull String name);
 
     /**
      * An "upditem" command has been received.
@@ -81,5 +83,5 @@ public interface CrossfireUpdateItemListener
      * @param valAnimSpeed the item's animation speed
      * @param valNrof the number of items
      */
-    void upditemReceived(int flags, int tag, int valLocation, int valFlags, int valWeight, int valFaceNum, String valName, String valNamePl, int valAnim, int valAnimSpeed, int valNrof);
+    void upditemReceived(int flags, int tag, int valLocation, int valFlags, int valWeight, int valFaceNum, @NotNull String valName, @NotNull String valNamePl, int valAnim, int valAnimSpeed, int valNrof);
 }

@@ -44,26 +44,34 @@ import java.util.Collection;
 import java.util.Iterator;
 import java.util.ListIterator;
 import java.util.concurrent.CopyOnWriteArrayList;
+import org.jetbrains.annotations.NotNull;
+import org.jetbrains.annotations.Nullable;
 
 /**
  * @author Andreas Kirschbaum
  */
 public class JXCWindowRenderer
 {
+    @NotNull
     private final JXCWindow window;
 
+    @NotNull
     private final MouseListener mouseTracker;
 
     /**
      * The semaphore used to synchronized map model updates and map view
      * redraws.
      */
+    @NotNull
     private final Object redrawSemaphore;
 
+    @Nullable
     private BufferStrategy bufferStrategy = null;
 
+    @Nullable
     private DisplayMode oldDisplayMode = null;
 
+    @Nullable
     private DisplayMode displayMode = null;
 
     /**
@@ -75,11 +83,13 @@ public class JXCWindowRenderer
      * Currently opened dialogs. The ordering is the painting order: the
      * topmost dialog is at the end.
      */
+    @NotNull
     private final CopyOnWriteArrayList<Gui> openDialogs = new CopyOnWriteArrayList<Gui>();
 
     /**
      * Listeners to be notified about {@link #rendererGuiState} changes.
      */
+    @NotNull
     private final Collection<RendererGuiStateListener> rendererGuiStateListeners = new CopyOnWriteArrayList<RendererGuiStateListener>();
 
     /**
@@ -87,11 +97,13 @@ public class JXCWindowRenderer
      */
     private boolean currentGuiChanged = false;
 
+    @NotNull
     private Gui currentGui;
 
     /**
      * The tooltip to use, or <code>null</code> if no tooltips should be shown.
      */
+    @Nullable
     private GUIElement tooltip = null;
 
     /**
@@ -129,16 +141,18 @@ public class JXCWindowRenderer
     /**
      * The current gui state.
      */
+    @NotNull
     private RendererGuiState rendererGuiState = RendererGuiState.START;
 
     /**
      * The {@link GuiAutoCloseListener} used to track auto-closing dialogs.
      */
+    @NotNull
     private final GuiAutoCloseListener guiAutoCloseListener = new GuiAutoCloseListener()
     {
         /** {@inheritDoc} */
         @Override
-        public void autoClosed(final Gui gui)
+        public void autoClosed(@NotNull final Gui gui)
         {
             closeDialog(gui);
         }
@@ -147,6 +161,7 @@ public class JXCWindowRenderer
     /**
      * The listener to detect map model changes.
      */
+    @NotNull
     private final CrossfireUpdateMapListener crossfireUpdateMapListener = new CrossfireUpdateMapListener()
     {
         /** {@inheritDoc} */
@@ -219,7 +234,7 @@ public class JXCWindowRenderer
 
         /** {@inheritDoc} */
         @Override
-        public void addAnimation(final int animation, final int flags, final int[] faces)
+        public void addAnimation(final int animation, final int flags, @NotNull final int[] faces)
         {
             // ignore
         }
@@ -234,7 +249,7 @@ public class JXCWindowRenderer
      * updates and map view redraws
      * @param crossfireServerConnection the server connection to monitor
      */
-    public JXCWindowRenderer(final JXCWindow window, final MouseListener mouseTracker, final Object redrawSemaphore, final CrossfireServerConnection crossfireServerConnection)
+    public JXCWindowRenderer(@NotNull final JXCWindow window, @NotNull final MouseListener mouseTracker, @NotNull final Object redrawSemaphore, @NotNull final CrossfireServerConnection crossfireServerConnection)
     {
         this.window = window;
         this.mouseTracker = mouseTracker;
@@ -250,7 +265,7 @@ public class JXCWindowRenderer
         forcePaint = true;
     }
 
-    public void initRendering(final Resolution resolution, final boolean fullScreen)
+    public void initRendering(@NotNull final Resolution resolution, final boolean fullScreen)
     {
         displayMode = new DisplayMode(resolution.getWidth(), resolution.getHeight(), DisplayMode.BIT_DEPTH_MULTI, DisplayMode.REFRESH_RATE_UNKNOWN);
         isFullScreen = false;
@@ -367,10 +382,12 @@ public class JXCWindowRenderer
         {
             do
             {
+                assert bufferStrategy != null;
                 final Graphics g = bufferStrategy.getDrawGraphics();
                 try
                 {
                     g.translate(offsetX, offsetY);
+                    assert bufferStrategy != null;
                     if (bufferStrategy.contentsRestored())
                     {
                         redrawBlack(g);
@@ -381,9 +398,12 @@ public class JXCWindowRenderer
                 {
                     g.dispose();
                 }
+                assert bufferStrategy != null;
             }
             while (bufferStrategy.contentsLost());
+            assert bufferStrategy != null;
             bufferStrategy.show();
+            assert bufferStrategy != null;
         }
         while (bufferStrategy.contentsLost());
     }
@@ -392,7 +412,7 @@ public class JXCWindowRenderer
      * Paints the view into the given graphics instance.
      * @param g the graphics instance to paint to
      */
-    public void redraw(final Graphics g)
+    public void redraw(@NotNull final Graphics g)
     {
         synchronized (redrawSemaphore)
         {
@@ -402,26 +422,28 @@ public class JXCWindowRenderer
         }
     }
 
-    public void clearGUI(final Gui gui)
+    public void clearGUI(@NotNull final Gui gui)
     {
         setCurrentGui(gui);
         for (int ig = 0; ig < 3; ig++)
         {
+            assert bufferStrategy != null;
             final Graphics g = bufferStrategy.getDrawGraphics();
             g.translate(offsetX, offsetY);
             redrawBlack(g);
             g.dispose();
+            assert bufferStrategy != null;
             bufferStrategy.show();
         }
     }
 
-    private void redrawGUIBasic(final Graphics g)
+    private void redrawGUIBasic(@NotNull final Graphics g)
     {
         currentGuiChanged = false;
         currentGui.redraw(g);
     }
 
-    private void redrawGUIDialog(final Graphics g)
+    private void redrawGUIDialog(@NotNull final Graphics g)
     {
         openDialogsChanged = false;
         for (final Gui dialog : openDialogs)
@@ -433,22 +455,24 @@ public class JXCWindowRenderer
         }
     }
 
-    private void redrawTooltip(final Graphics g)
+    private void redrawTooltip(@NotNull final Graphics g)
     {
         if (tooltip != null)
         {
             if (tooltip.isElementVisible())
             {
+                assert tooltip != null;
                 tooltip.paintComponent(g);
             }
             else
             {
+                assert tooltip != null;
                 tooltip.resetChanged();
             }
         }
     }
 
-    private void redrawBlack(final Graphics g)
+    private void redrawBlack(@NotNull final Graphics g)
     {
         g.setColor(Color.BLACK);
         g.fillRect(0, 0, window.getWindowWidth(), window.getWindowHeight());
@@ -465,7 +489,7 @@ public class JXCWindowRenderer
      * @return Whether the dialog was opened or raised; <code>false</code> if
      * the dialog already was opened as the topmost dialog.
      */
-    public boolean openDialog(final Gui dialog, final boolean autoCloseOnDeactivate)
+    public boolean openDialog(@NotNull final Gui dialog, final boolean autoCloseOnDeactivate)
     {
         if (dialog == currentGui)
         {
@@ -493,7 +517,7 @@ public class JXCWindowRenderer
      *
      * @param dialog The dialog to show.
      */
-    public void raiseDialog(final Gui dialog)
+    public void raiseDialog(@NotNull final Gui dialog)
     {
         if (dialog == currentGui)
         {
@@ -525,7 +549,7 @@ public class JXCWindowRenderer
      *
      * @return Whether the dialog is visible.
      */
-    public boolean isDialogOpen(final Gui dialog)
+    public boolean isDialogOpen(@NotNull final Gui dialog)
     {
         return openDialogs.contains(dialog);
     }
@@ -536,6 +560,7 @@ public class JXCWindowRenderer
      *
      * @return The open dialogs; client code must not modify this list.
      */
+    @NotNull
     public Iterable<Gui> getOpenDialogs()
     {
         return new Iterable<Gui>()
@@ -549,12 +574,13 @@ public class JXCWindowRenderer
         };
     }
 
-    public void setCurrentGui(final Gui gui)
+    public void setCurrentGui(@NotNull final Gui gui)
     {
         currentGui = gui;
         currentGuiChanged = true;
     }
 
+    @NotNull
     public Gui getCurrentGui()
     {
         return currentGui;
@@ -618,7 +644,7 @@ public class JXCWindowRenderer
      *
      * @param dialog The dialog to close.
      */
-    public void closeDialog(final Gui dialog)
+    public void closeDialog(@NotNull final Gui dialog)
     {
         if (openDialogsRemove(dialog))
         {
@@ -639,7 +665,7 @@ public class JXCWindowRenderer
      *
      * @return Whether the dialog is shown.
      */
-    public boolean toggleDialog(final Gui dialog)
+    public boolean toggleDialog(@NotNull final Gui dialog)
     {
         if (dialog == currentGui)
         {
@@ -671,7 +697,7 @@ public class JXCWindowRenderer
      *
      * @param tooltip The tooltip to use, or <code>null</code>.
      */
-    public void setTooltip(final GUIElement tooltip)
+    public void setTooltip(@Nullable final GUIElement tooltip)
     {
         this.tooltip = tooltip;
     }
@@ -681,7 +707,7 @@ public class JXCWindowRenderer
      *
      * @param rendererGuiState The gui state.
      */
-    public void setGuiState(final RendererGuiState rendererGuiState)
+    public void setGuiState(@NotNull final RendererGuiState rendererGuiState)
     {
         if (this.rendererGuiState == rendererGuiState)
         {
@@ -701,6 +727,7 @@ public class JXCWindowRenderer
      *
      * @return The gui state.
      */
+    @NotNull
     public RendererGuiState getGuiState()
     {
         return rendererGuiState;
@@ -711,7 +738,7 @@ public class JXCWindowRenderer
      *
      * @param listener The listener to add.
      */
-    public void addGuiStateListener(final RendererGuiStateListener listener)
+    public void addGuiStateListener(@NotNull final RendererGuiStateListener listener)
     {
         rendererGuiStateListeners.add(listener);
     }
@@ -721,7 +748,7 @@ public class JXCWindowRenderer
      * necessary.
      * @param dialog the dialog
      */
-    private void openDialogsAdd(final Gui dialog)
+    private void openDialogsAdd(@NotNull final Gui dialog)
     {
         if (openDialogs.contains(dialog))
         {
@@ -757,7 +784,7 @@ public class JXCWindowRenderer
      * @param dialog the dialog
      * @return whether the dialog was opened
      */
-    private boolean openDialogsRemove(final Gui dialog)
+    private boolean openDialogsRemove(@NotNull final Gui dialog)
     {
         if (!openDialogs.contains(dialog))
         {
@@ -818,6 +845,7 @@ public class JXCWindowRenderer
      * Returns the active message buffer.
      * @return the active message buffer or <code>null</code> if none is active
      */
+    @Nullable
     public Buffer getActiveMessageBuffer()
     {
         for (final Gui dialog : getOpenDialogs())
@@ -844,7 +872,8 @@ public class JXCWindowRenderer
      * @param gui the gui instance
      * @return the active message buffer or <code>null</code>
      */
-    private Buffer getActiveMessageBuffer(final Gui gui)
+    @Nullable
+    private Buffer getActiveMessageBuffer(@NotNull final Gui gui)
     {
         final GUILog buffer = gui.getFirstElement(GUIMessageLog.class);
         return buffer == null ? null : buffer.getBuffer();
@@ -859,6 +888,7 @@ public class JXCWindowRenderer
          * The backing list iterator; it returns the elements in
          * reversed order.
          */
+        @NotNull
         private final ListIterator<Gui> it = openDialogs.listIterator(openDialogs.size());
 
         /** {@inheritDoc} */
@@ -869,6 +899,7 @@ public class JXCWindowRenderer
         }
 
         /** {@inheritDoc} */
+        @NotNull
         @Override
         public Gui next()
         {

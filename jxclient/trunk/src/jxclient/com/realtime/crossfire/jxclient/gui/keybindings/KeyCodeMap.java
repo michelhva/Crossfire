@@ -23,6 +23,7 @@ import java.awt.event.KeyEvent;
 import java.lang.reflect.Field;
 import java.util.HashMap;
 import java.util.Map;
+import org.jetbrains.annotations.NotNull;
 
 /**
  * Maps between key codes integer constants and string representations.
@@ -34,11 +35,13 @@ public class KeyCodeMap
     /**
      * Maps key name to key code.
      */
+    @NotNull
     private final Map<String, Integer> keyCodes = new HashMap<String, Integer>();
 
     /**
      * Maps key code to key name.
      */
+    @NotNull
     private final Map<Integer, String> keyNames = new HashMap<Integer, String>();
 
     /**
@@ -92,7 +95,7 @@ public class KeyCodeMap
      *
      * @throws NoSuchKeyCodeException If the key name is invalid.
      */
-    public int getKeyCode(final String keyName) throws NoSuchKeyCodeException
+    public int getKeyCode(@NotNull final String keyName) throws NoSuchKeyCodeException
     {
         if (keyCodes.containsKey(keyName))
         {
@@ -116,6 +119,7 @@ public class KeyCodeMap
      *
      * @return The key name.
      */
+    @NotNull
     public String getKeyName(final int keyCode)
     {
         final String keyName = keyNames.get(keyCode);

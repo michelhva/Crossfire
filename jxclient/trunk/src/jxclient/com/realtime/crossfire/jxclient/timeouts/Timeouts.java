@@ -22,6 +22,7 @@ package com.realtime.crossfire.jxclient.timeouts;
 import java.util.IdentityHashMap;
 import java.util.Map;
 import java.util.PriorityQueue;
+import org.jetbrains.annotations.NotNull;
 
 /**
  * Manages a list of timeouts. Client code can register timeouts with {@link
@@ -36,17 +37,20 @@ public class Timeouts
      * Contains all pending timeout events. The head element is the next event
      * to deliver.
      */
+    @NotNull
     private static final PriorityQueue<Event> events = new PriorityQueue<Event>();
 
     /**
      * Maps {@link TimeoutEvent} instance to {@link Event} instance. This
      * information is necessary for removing active timeouts.
      */
+    @NotNull
     private static final Map<TimeoutEvent, Event> timeoutEvents = new IdentityHashMap<TimeoutEvent, Event>();
 
     /**
      * The thread that delivers timeout events.
      */
+    @NotNull
     private static final Thread deliverPendingTimeouts = new Thread()
     {
         /** {@inheritDoc} */
@@ -119,7 +123,7 @@ public class Timeouts
      *
      * @param timeoutEvent The timeout event to execute.
      */
-    public static void reset(final int timeout, final TimeoutEvent timeoutEvent)
+    public static void reset(final int timeout, @NotNull final TimeoutEvent timeoutEvent)
     {
         synchronized (events)
         {
@@ -135,7 +139,7 @@ public class Timeouts
      *
      * @param timeoutEvent The timeout event to execute.
      */
-    private static void add(final int timeout, final TimeoutEvent timeoutEvent)
+    private static void add(final int timeout, @NotNull final TimeoutEvent timeoutEvent)
     {
         synchronized (events)
         {
@@ -154,7 +158,7 @@ public class Timeouts
      *
      * @param timeoutEvent The timeout event to remove.
      */
-    public static void remove(final TimeoutEvent timeoutEvent)
+    public static void remove(@NotNull final TimeoutEvent timeoutEvent)
     {
         synchronized (events)
         {

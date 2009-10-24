@@ -21,6 +21,7 @@ package com.realtime.crossfire.jxclient.skin;
 
 import java.io.IOException;
 import java.io.InputStream;
+import org.jetbrains.annotations.NotNull;
 
 /**
  * A {@link JXCSkinSource} that loads via the class loader.
@@ -32,6 +33,7 @@ public class JXCSkinClassSource extends AbstractJXCSkinSource
     /**
      * The base resource name to prepend to all resource names.
      */
+    @NotNull
     private final String baseName;
 
     /**
@@ -41,16 +43,16 @@ public class JXCSkinClassSource extends AbstractJXCSkinSource
      *
      * @throws JXCSkinException if the skin cannot be loaded
      */
-    public JXCSkinClassSource(final String baseName) throws JXCSkinException
+    public JXCSkinClassSource(@NotNull final String baseName) throws JXCSkinException
     {
-        if (baseName == null) throw new IllegalArgumentException();
         this.baseName = baseName;
         checkAccess();
     }
 
     /** {@inheritDoc} */
+    @NotNull
     @Override
-    public InputStream getInputStream(final String name) throws IOException
+    public InputStream getInputStream(@NotNull final String name) throws IOException
     {
         final InputStream inputStream = getClassLoader().getResourceAsStream(baseName+"/"+name);
         if (inputStream == null)
@@ -61,8 +63,9 @@ public class JXCSkinClassSource extends AbstractJXCSkinSource
     }
 
     /** {@inheritDoc} */
+    @NotNull
     @Override
-    public String getURI(final String name)
+    public String getURI(@NotNull final String name)
     {
         return "resource:"+baseName+"/"+name;
     }
@@ -72,6 +75,7 @@ public class JXCSkinClassSource extends AbstractJXCSkinSource
      *
      * @return The class loader.
      */
+    @NotNull
     private ClassLoader getClassLoader()
     {
         final ClassLoader classLoader = getClass().getClassLoader();

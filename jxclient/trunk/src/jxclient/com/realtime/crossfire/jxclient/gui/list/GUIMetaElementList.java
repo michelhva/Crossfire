@@ -32,6 +32,8 @@ import com.realtime.crossfire.jxclient.metaserver.MetaserverModel;
 import com.realtime.crossfire.jxclient.window.JXCWindowRenderer;
 import java.awt.Font;
 import java.awt.image.BufferedImage;
+import org.jetbrains.annotations.NotNull;
+import org.jetbrains.annotations.Nullable;
 
 /**
  * A {@link GUIList} that tracks a {@link Metaserver} instance.
@@ -47,57 +49,68 @@ public class GUIMetaElementList extends GUIList
     /**
      * The metaserver model to track.
      */
+    @NotNull
     private final MetaserverModel metaserverModel;
 
     /**
      * The {@link TooltipManager} to update.
      */
+    @NotNull
     private final TooltipManager tooltipManager;
 
     /**
      * The {@link JXCWindowRenderer} to use.
      */
+    @NotNull
     private final JXCWindowRenderer windowRenderer;
 
     /**
      * The name of this element.
      */
+    @NotNull
     private final String name;
 
     /**
      * The tcp image for drawing list entries.
      */
+    @Nullable
     private final BufferedImage tcpImage;
 
     /**
      * The font for drawing list entries.
      */
+    @NotNull
     private final Font font;
 
     /**
      * The format for drawing list entries.
      */
+    @NotNull
     private final String format;
 
     /**
      * The tooltip format for drawing list entries.
      */
+    @NotNull
     private final String tooltip;
 
     /**
      * The hostname input field to update; may be <code>null</code>.
      */
+    @Nullable
     private final GUIText hostname;
 
     /**
      * The comment field to update; may be <code>null</code>.
      */
+    @Nullable
     private final AbstractLabel comment;
 
     /**
      * The {@link MetaserverListener} attached to {@link #metaserverModel}. It
      * detects added or removed entries and updates the list accordingly.
      */
+    @NotNull
     private final MetaserverListener metaserverListener = new MetaserverListener()
     {
         /** {@inheritDoc} */
@@ -112,6 +125,7 @@ public class GUIMetaElementList extends GUIList
      * The {@link MetaserverEntryListener} attached to all tracked metaserver
      * entries. It detects changed contents and updates the list accordingly.
      */
+    @NotNull
     private final MetaserverEntryListener metaserverEntryListener = new MetaserverEntryListener()
     {
         /** {@inheritDoc} */
@@ -143,7 +157,7 @@ public class GUIMetaElementList extends GUIList
      * <code>null</code>
      * @param comment the comment field to update; may be <code>null</code>
      */
-    public GUIMetaElementList(final TooltipManager tooltipManager, final JXCWindowRenderer windowRenderer, final String name, final int x, final int y, final int w, final int h, final int cellHeight, final MetaserverModel metaserverModel, final BufferedImage tcpImage, final Font font, final String format, final String tooltip, final GUIText hostname, final AbstractLabel comment)
+    public GUIMetaElementList(@NotNull final TooltipManager tooltipManager, @NotNull final JXCWindowRenderer windowRenderer, @NotNull final String name, final int x, final int y, final int w, final int h, final int cellHeight, @NotNull final MetaserverModel metaserverModel, @Nullable final BufferedImage tcpImage, @NotNull final Font font, @NotNull final String format, @NotNull final String tooltip, @Nullable final GUIText hostname, @Nullable final AbstractLabel comment)
     {
         super(tooltipManager, windowRenderer, name, x, y, w, h, cellHeight, new MetaElementCellRenderer(new GUIMetaElement(tooltipManager, windowRenderer, metaserverModel, name+"_template", w, cellHeight, tcpImage, font, 0, format, tooltip)));
         this.metaserverModel = metaserverModel;
@@ -248,7 +262,7 @@ public class GUIMetaElementList extends GUIList
      * Select an entry by server name.
      * @param serverName the server name
      */
-    public void setSelectedHostname(final String serverName)
+    public void setSelectedHostname(@NotNull final String serverName)
     {
         final int index = metaserverModel.getServerIndex(serverName);
         setSelectedIndex(index);

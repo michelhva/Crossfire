@@ -20,6 +20,8 @@
 package com.realtime.crossfire.jxclient.gui.gauge;
 
 import com.realtime.crossfire.jxclient.experience.ExperienceTable;
+import org.jetbrains.annotations.NotNull;
+import org.jetbrains.annotations.Nullable;
 
 /**
  * Updates the displayed values in a {@link GUIGauge}.
@@ -31,11 +33,13 @@ public abstract class GaugeUpdater
     /**
      * The experience table to query.
      */
+    @NotNull
     private final ExperienceTable experienceTable;
 
     /**
      * Set the gauge to update.
      */
+    @Nullable
     private GUIGaugeListener gauge = null;
 
     /**
@@ -43,7 +47,7 @@ public abstract class GaugeUpdater
      *
      * @param experienceTable The experience table to query.
      */
-    protected GaugeUpdater(final ExperienceTable experienceTable)
+    protected GaugeUpdater(@NotNull final ExperienceTable experienceTable)
     {
         this.experienceTable = experienceTable;
     }
@@ -58,7 +62,7 @@ public abstract class GaugeUpdater
      *
      * @param gauge The gauge.
      */
-    public void setGauge(final GUIGaugeListener gauge)
+    public void setGauge(@NotNull final GUIGaugeListener gauge)
     {
         this.gauge = gauge;
     }
@@ -102,7 +106,7 @@ public abstract class GaugeUpdater
      *
      * @param tooltipText The tooltip suffix.
      */
-    protected void setValues(final int curValue, final int minValue, final int maxValue, final String labelText, final String tooltipText)
+    protected void setValues(final int curValue, final int minValue, final int maxValue, @NotNull final String labelText, @NotNull final String tooltipText)
     {
         if (gauge != null)
         {

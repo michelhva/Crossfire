@@ -37,6 +37,8 @@ import java.util.List;
 import java.util.Map;
 import java.util.concurrent.CopyOnWriteArrayList;
 import javax.swing.event.EventListenerList;
+import org.jetbrains.annotations.NotNull;
+import org.jetbrains.annotations.Nullable;
 
 /**
  * Manages items known to the character. This includes items on the floor, in
@@ -49,64 +51,76 @@ public class ItemsManager
     /**
      * The {@link FaceCache} instance for looking up faces.
      */
+    @NotNull
     private final FaceCache faceCache;
 
     /**
      * The {@link Stats} instance to update.
      */
+    @NotNull
     private final Stats stats;
 
     /**
      * The {@link SkillSet} instance to update.
      */
+    @NotNull
     private final SkillSet skillSet;
 
     /**
      * Maps location to list of items.
      */
+    @NotNull
     private final Map<Integer, List<CfItem>> items = new HashMap<Integer, List<CfItem>>();
 
     /**
      * Maps item tags to items. The map contains all items currently known to
      * the client.
      */
+    @NotNull
     private final Map<Integer, CfItem> allItems  = new HashMap<Integer, CfItem>();
 
     /**
      * The current floor manager used to track the player's current floor
      * location.
      */
+    @NotNull
     private final CurrentFloorManager currentFloorManager = new CurrentFloorManager(this);
 
     /**
      * The floor manager used to maintain floor object states.
      */
+    @NotNull
     private final AbstractManager floorManager = new FloorManager();
 
     /**
      * The inventory manager used to maintain player inventory state.
      */
+    @NotNull
     private final AbstractManager inventoryManager = new InventoryManager();
 
     /**
      * The list of {@link PlayerListener}s to be notified about
      * changes of the current player.
      */
+    @NotNull
     private final EventListenerList playerListeners = new EventListenerList();
 
     /**
      * The synchronization object for XXX.
      */
+    @NotNull
     private final Object sync = new Object();
 
     /**
      * The current player object this client controls.
      */
+    @Nullable
     private CfPlayer player = null;
 
     /**
      * The {@link CrossfireUpdateItemListener} to receive item updates.
      */
+    @NotNull
     private final CrossfireUpdateItemListener crossfireUpdateItemListener = new CrossfireUpdateItemListener()
     {
         /** {@inheritDoc} */
@@ -118,14 +132,14 @@ public class ItemsManager
 
         /** {@inheritDoc} */
         @Override
-        public void delitemReceived(final int[] tags)
+        public void delitemReceived(@NotNull final int[] tags)
         {
             removeItems(tags);
         }
 
         /** {@inheritDoc} */
         @Override
-        public void additemReceived(final int location, final int tag, final int flags, final int weight, final int faceNum, final String name, final String namePl, final int anim, final int animSpeed, final int nrof, final int type)
+        public void additemReceived(final int location, final int tag, final int flags, final int weight, final int faceNum, @NotNull final String name, @NotNull final String namePl, final int anim, final int animSpeed, final int nrof, final int type)
         {
             addItem(new CfItem(location, tag, flags, weight, faceCache.getFace(faceNum), name, namePl, anim, animSpeed, nrof, type));
         }
@@ -139,7 +153,7 @@ public class ItemsManager
 
         /** {@inheritDoc} */
         @Override
-        public void playerReceived(final int tag, final int weight, final int faceNum, final String name)
+        public void playerReceived(final int tag, final int weight, final int faceNum, @NotNull final String name)
         {
             stats.setActiveSkill("");
             skillSet.clearNumberedSkills();
@@ -149,7 +163,7 @@ public class ItemsManager
 
         /** {@inheritDoc} */
         @Override
-        public void upditemReceived(final int flags, final int tag, final int valLocation, final int valFlags, final int valWeight, final int valFaceNum, final String valName, final String valNamePl, final int valAnim, final int valAnimSpeed, final int valNrof)
+        public void upditemReceived(final int flags, final int tag, final int valLocation, final int valFlags, final int valWeight, final int valFaceNum, @NotNull final String valName, @NotNull final String valNamePl, final int valAnim, final int valAnimSpeed, final int valNrof)
         {
             updateItem(flags, tag, valLocation, valFlags, valWeight, valFaceNum, valName, valNamePl, valAnim, valAnimSpeed, valNrof);
             if ((flags&CfItem.UPD_WEIGHT) != 0)
@@ -168,6 +182,7 @@ public class ItemsManager
      * is needed because the Crossfire server sends multiple item2 commands
      * for one "get all" command.
      */
+    @NotNull
     private final Runnable fireEventCallback = new Runnable()
     {
         /** {@inheritDoc} */
@@ -175,7 +190,7 @@ public class ItemsManager
         public void run()
         {
             floorManager.fireEvents(getItems(currentFloorManager.getCurrentFloor()));
-            final List<CfItem> newItems;
+            @Nullable final List<CfItem> newItems;
             synchronized (sync)
             {
                 newItems = player != null ? getItems(player.getTag()) : null;
@@ -190,12 +205,14 @@ public class ItemsManager
     /**
      * The {@link EventScheduler} for delaying event generation.
      */
+    @NotNull
     private final EventScheduler fireEventScheduler = new EventScheduler(100, 500, fireEventCallback);
 
     /**
      * The {@link GuiStateListener} for detecting established or dropped
      * connections.
      */
+    @NotNull
     private final GuiStateListener guiStateListener = new GuiStateListener()
     {
         /** {@inheritDoc} */
@@ -221,7 +238,7 @@ public class ItemsManager
 
         /** {@inheritDoc} */
         @Override
-        public void connecting(final ClientSocketState clientSocketState)
+        public void connecting(@NotNull final ClientSocketState clientSocketState)
         {
             // ignore
         }
@@ -235,7 +252,7 @@ public class ItemsManager
 
         /** {@inheritDoc} */
         @Override
-        public void connectFailed(final String reason)
+        public void connectFailed(@NotNull final String reason)
         {
             // ignore
         }
@@ -249,7 +266,7 @@ public class ItemsManager
      * @param skillSet the skill set instance to update
      * @param window the window to attach to
      */
-    public ItemsManager(final CrossfireServerConnection crossfireServerConnection, final FaceCache faceCache, final Stats stats, final SkillSet skillSet, final JXCWindow window)
+    public ItemsManager(@NotNull final CrossfireServerConnection crossfireServerConnection, @NotNull final FaceCache faceCache, @NotNull final Stats stats, @NotNull final SkillSet skillSet, @NotNull final JXCWindow window)
     {
         this.faceCache = faceCache;
         this.stats = stats;
@@ -291,6 +308,7 @@ public class ItemsManager
      * @param location the location
      * @return the list of items
      */
+    @NotNull
     public List<CfItem> getItems(final int location)
     {
         final List<CfItem> result;
@@ -326,6 +344,7 @@ public class ItemsManager
      * @param tag The tag.
      * @return the item or <code>null</code> if no such item exists
      */
+    @Nullable
     private CfItem getItemOrPlayer(final int tag)
     {
         synchronized (sync)
@@ -344,6 +363,7 @@ public class ItemsManager
      * @param tag the tag
      * @return the item or <code>null</code> if no such items exists
      */
+    @Nullable
     public CfItem getItem(final int tag)
     {
         synchronized (sync)
@@ -369,7 +389,7 @@ public class ItemsManager
      * Deletes items by tag.
      * @param tags the tags to delete
      */
-    private void removeItems(final int[] tags)
+    private void removeItems(@NotNull final int[] tags)
     {
         for (final int tag : tags)
         {
@@ -400,7 +420,7 @@ public class ItemsManager
      * Deletes an item.
      * @param item the item to delete
      */
-    private void removeItem(final CfItem item)
+    private void removeItem(@NotNull final CfItem item)
     {
         synchronized (sync)
         {
@@ -422,7 +442,7 @@ public class ItemsManager
      * Adds an item.
      * @param item the item to add
      */
-    private void addItem(final CfItem item)
+    private void addItem(@NotNull final CfItem item)
     {
         synchronized (sync)
         {
@@ -447,7 +467,7 @@ public class ItemsManager
      * @param item the item to move
      * @param newLocation the location to move to
      */
-    private void moveItem(final CfItem item, final int newLocation)
+    private void moveItem(@NotNull final CfItem item, final int newLocation)
     {
         synchronized (sync)
         {
@@ -466,7 +486,7 @@ public class ItemsManager
      * Removes an item from {@link #items}. The item must exist.
      * @param item the item to remove
      */
-    private void removeItemFromLocation(final CfItem item)
+    private void removeItemFromLocation(@NotNull final CfItem item)
     {
         if (currentFloorManager.isCurrentFloor(item.getTag()))
         {
@@ -509,7 +529,7 @@ public class ItemsManager
      * Adds an item to {@link #items}.
      * @param item the item to add
      */
-    private void addItemToLocation(final CfItem item)
+    private void addItemToLocation(@NotNull final CfItem item)
     {
         final int where = item.getLocation();
 
@@ -554,7 +574,7 @@ public class ItemsManager
      * Sets the player object this client controls.
      * @param player the new player object
      */
-    private void setPlayer(final CfPlayer player)
+    private void setPlayer(@Nullable final CfPlayer player)
     {
         synchronized (sync)
         {
@@ -595,6 +615,7 @@ public class ItemsManager
      * Returns the player object this client controls.
      * @return the player object
      */
+    @Nullable
     public CfItem getPlayer()
     {
         synchronized (sync)
@@ -608,7 +629,7 @@ public class ItemsManager
      * current player.
      * @param listener the listener to add
      */
-    public void addCrossfirePlayerListener(final PlayerListener listener)
+    public void addCrossfirePlayerListener(@NotNull final PlayerListener listener)
     {
         playerListeners.add(PlayerListener.class, listener);
     }
@@ -618,7 +639,7 @@ public class ItemsManager
      * current player.
      * @param listener the listener to remove
      */
-    public void removeCrossfirePlayerListener(final PlayerListener listener)
+    public void removeCrossfirePlayerListener(@NotNull final PlayerListener listener)
     {
         playerListeners.remove(PlayerListener.class, listener);
     }
@@ -627,6 +648,7 @@ public class ItemsManager
      * Returns the current floor manager.
      * @return the current floor manager
      */
+    @NotNull
     public CurrentFloorManager getCurrentFloorManager()
     {
         return currentFloorManager;
@@ -636,6 +658,7 @@ public class ItemsManager
      * Returns the floor manager.
      * @return the floor manager
      */
+    @NotNull
     public AbstractManager getFloorManager()
     {
         return floorManager;
@@ -645,6 +668,7 @@ public class ItemsManager
      * Returns the inventory manager.
      * @return the inventory manager
      */
+    @NotNull
     public AbstractManager getInventoryManager()
     {
         return inventoryManager;
@@ -664,7 +688,7 @@ public class ItemsManager
      * @param valAnimSpeed the item's animation speed
      * @param valNrof the number of items
      */
-    private void updateItem(final int flags, final int tag, final int valLocation, final int valFlags, final int valWeight, final int valFaceNum, final String valName, final String valNamePl, final int valAnim, final int valAnimSpeed, final int valNrof)
+    private void updateItem(final int flags, final int tag, final int valLocation, final int valFlags, final int valWeight, final int valFaceNum, @NotNull final String valName, @NotNull final String valNamePl, final int valAnim, final int valAnimSpeed, final int valNrof)
     {
         final CfItem item = getItemOrPlayer(tag);
         if (item == null)
@@ -699,6 +723,7 @@ public class ItemsManager
      * Returns the player's inventory.
      * @return the inventory items; the list cannot be modified
      */
+    @NotNull
     public List<CfItem> getInventory()
     {
         if (player == null)

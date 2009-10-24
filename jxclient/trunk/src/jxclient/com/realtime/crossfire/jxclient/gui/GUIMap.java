@@ -43,6 +43,7 @@ import java.awt.event.MouseEvent;
 import java.io.IOException;
 import java.util.Set;
 import javax.swing.ImageIcon;
+import org.jetbrains.annotations.NotNull;
 
 /**
  * Display the map view. It supports both normal sized (32x32 pixel) and double
@@ -60,6 +61,7 @@ public class GUIMap extends GUIElement
     /**
      * The color to use for overlaying fog-of-war tiles.
      */
+    @NotNull
     public static final Color FOG_OF_WAR_COLOR = new Color(0, 0, 0.5F, 0.5F);
 
     /**
@@ -71,16 +73,19 @@ public class GUIMap extends GUIElement
     /**
      * The connection instance.
      */
+    @NotNull
     private final CrossfireServerConnection crossfireServerConnection;
 
     /**
      * The instance for looking up faces.
      */
+    @NotNull
     private final FacesManager facesManager;
 
     /**
      * The map updater instance.
      */
+    @NotNull
     private final CfMapUpdater mapUpdater;
 
     /**
@@ -96,6 +101,7 @@ public class GUIMap extends GUIElement
     /**
      * The image used for empty tiles.
      */
+    @NotNull
     private final ImageIcon blackTile;
 
     /**
@@ -148,16 +154,18 @@ public class GUIMap extends GUIElement
      * Cache to lookup darkness overlay colors. Maps darkness value to overlay
      * color. Not yet allocated entries are set to <code>null</code>.
      */
+    @NotNull
     private static final Color[] darknessColors = new Color[256];
 
     /**
      * The {@link MapListener} registered to receive map updates.
      */
+    @NotNull
     private final MapListener mapListener = new MapListener()
     {
         /** {@inheritDoc} */
         @Override
-        public void mapChanged(final CfMap map, final Set<CfMapSquare> changedSquares)
+        public void mapChanged(@NotNull final CfMap map, @NotNull final Set<CfMapSquare> changedSquares)
         {
             synchronized (bufferedImageSync)
             {
@@ -192,6 +200,7 @@ public class GUIMap extends GUIElement
      * The {@link NewmapListener} registered to receive newmap
      * commands.
      */
+    @NotNull
     private final NewmapListener newmapListener = new NewmapListener()
     {
         /** {@inheritDoc} */
@@ -219,6 +228,7 @@ public class GUIMap extends GUIElement
      * The {@link MapscrollListener} registered to receive map_scroll
      * commands.
      */
+    @NotNull
     private final MapscrollListener mapscrollListener = new MapscrollListener()
     {
         /** {@inheritDoc} */
@@ -304,6 +314,7 @@ public class GUIMap extends GUIElement
     /**
      * The listener to registered to detect map size changes.
      */
+    @NotNull
     private final MapSizeListener mapSizeListener = new MapSizeListener()
     {
         /** {@inheritDoc} */
@@ -329,7 +340,7 @@ public class GUIMap extends GUIElement
      * @param tileSize the size of one tile in pixels
      * @throws IOException tf an I/O error occurs
      */
-    public GUIMap(final TooltipManager tooltipManager, final JXCWindowRenderer windowRenderer, final String name, final int tileSize, final int x, final int y, final int w, final int h, final CrossfireServerConnection crossfireServerConnection, final FacesManager facesManager, final CfMapUpdater mapUpdater) throws IOException
+    public GUIMap(@NotNull final TooltipManager tooltipManager, @NotNull final JXCWindowRenderer windowRenderer, @NotNull final String name, final int tileSize, final int x, final int y, final int w, final int h, @NotNull final CrossfireServerConnection crossfireServerConnection, @NotNull final FacesManager facesManager, @NotNull final CfMapUpdater mapUpdater) throws IOException
     {
         super(tooltipManager, windowRenderer, name, x, y, w, h, Transparency.OPAQUE);
         this.crossfireServerConnection = crossfireServerConnection;
@@ -377,7 +388,7 @@ public class GUIMap extends GUIElement
      * Redraws the complete map view.
      * @param g the graphics to draw into
      */
-    private void redrawAll(final Graphics g)
+    private void redrawAll(@NotNull final Graphics g)
     {
         g.setColor(Color.BLACK);
         g.fillRect(0, 0, getWidth(), getHeight());
@@ -398,7 +409,7 @@ public class GUIMap extends GUIElement
      * @param x the x-coordinate of the square to clear
      * @param y the y-coordinate of the square to clear
      */
-    private void cleanSquare(final Graphics g, final int x, final int y)
+    private void cleanSquare(@NotNull final Graphics g, final int x, final int y)
     {
         g.drawImage(blackTile.getImage(), offsetX+x*tileSize, offsetY+y*tileSize, null);
     }
@@ -411,7 +422,7 @@ public class GUIMap extends GUIElement
      * @param x the x-coordinate of the map tile to redraw
      * @param y the y-coordinate of the map tile to redraw
      */
-    private void redrawSquare(final Graphics g, final CfMap map, final int x, final int y)
+    private void redrawSquare(@NotNull final Graphics g, @NotNull final CfMap map, final int x, final int y)
     {
         cleanSquare(g, x, y);
         final CfMapSquare mapSquare = map.getMapSquare(x, y);
@@ -438,7 +449,7 @@ public class GUIMap extends GUIElement
      * @param py the y coordinate of the square to redraw
      * @param mapSquare the map square
      */
-    private void redrawSquare(final Graphics g, final int px, final int py, final CfMapSquare mapSquare)
+    private void redrawSquare(@NotNull final Graphics g, final int px, final int py, @NotNull final CfMapSquare mapSquare)
     {
         final int mapSquareX = mapSquare.getX();
         final int mapSquareY = mapSquare.getY();
@@ -472,7 +483,7 @@ public class GUIMap extends GUIElement
      * @param offsetX the x-offset for shifting the original face
      * @param offsetY the y-offset for shifting the original face
      */
-    private void paintImage(final Graphics g, final Face face, final int px, final int py, final int offsetX, final int offsetY)
+    private void paintImage(@NotNull final Graphics g, @NotNull final Face face, final int px, final int py, final int offsetX, final int offsetY)
     {
         final ImageIcon imageIcon = useBigImages ? facesManager.getScaledImageIcon(face.getFaceNum()) : facesManager.getOriginalImageIcon(face.getFaceNum());
         final int sx = imageIcon.getIconWidth()-offsetX;
@@ -485,7 +496,7 @@ public class GUIMap extends GUIElement
 
     /** {@inheritDoc} */
     @Override
-    public void mouseClicked(final MouseEvent e)
+    public void mouseClicked(@NotNull final MouseEvent e)
     {
         super.mouseClicked(e);
         switch (e.getButton())
@@ -581,7 +592,7 @@ public class GUIMap extends GUIElement
 
     /** {@inheritDoc} */
     @Override
-    protected void render(final Graphics g)
+    protected void render(@NotNull final Graphics g)
     {
     }
 }

@@ -21,6 +21,7 @@
 package com.realtime.crossfire.jxclient.items;
 
 import javax.swing.event.EventListenerList;
+import org.jetbrains.annotations.NotNull;
 
 /**
  * Manages the player's current floor location.
@@ -32,12 +33,14 @@ public class CurrentFloorManager
     /**
      * The items manager.
      */
+    @NotNull
     private final ItemsManager itemsManager;
 
     /**
      * The list of {@link CurrentFloorListener}s to be notified about changes
      * of the current floor location.
      */
+    @NotNull
     private final EventListenerList currentFloorListeners = new EventListenerList();
 
     /**
@@ -50,7 +53,7 @@ public class CurrentFloorManager
      *
      * @param itemsManager The items manager to use.
      */
-    public CurrentFloorManager(final ItemsManager itemsManager)
+    public CurrentFloorManager(@NotNull final ItemsManager itemsManager)
     {
         this.itemsManager = itemsManager;
     }
@@ -105,7 +108,7 @@ public class CurrentFloorManager
      *
      * @param listener the listener to add
      */
-    public void addCurrentFloorListener(final CurrentFloorListener listener)
+    public void addCurrentFloorListener(@NotNull final CurrentFloorListener listener)
     {
         currentFloorListeners.add(CurrentFloorListener.class, listener);
     }
@@ -116,7 +119,7 @@ public class CurrentFloorManager
      *
      * @param listener the listener to remove
      */
-    public void removeCurrentFloorListener(final CurrentFloorListener listener)
+    public void removeCurrentFloorListener(@NotNull final CurrentFloorListener listener)
     {
         currentFloorListeners.remove(CurrentFloorListener.class, listener);
     }

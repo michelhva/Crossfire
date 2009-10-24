@@ -23,6 +23,7 @@ import com.realtime.crossfire.jxclient.window.GuiStateListener;
 import com.realtime.crossfire.jxclient.window.JXCWindow;
 import java.util.LinkedList;
 import java.util.List;
+import org.jetbrains.annotations.NotNull;
 
 /**
  * Maintains the pending (ncom) commands sent to the server.
@@ -40,6 +41,7 @@ public class CommandQueue
     /**
      * The server connection for sending ncom commands.
      */
+    @NotNull
     private final CrossfireServerConnection crossfireServerConnection;
 
     /**
@@ -47,6 +49,7 @@ public class CommandQueue
      * commands has been received. Note that the size may be larger than {@link
      * #MAX_PENDING_COMMANDS} due to "must send" commands.
      */
+    @NotNull
     private final List<Integer> pendingCommands = new LinkedList<Integer>();
 
     /**
@@ -63,6 +66,7 @@ public class CommandQueue
     /**
      * The listener to track comc commands.
      */
+    @NotNull
     private final CrossfireComcListener crossfireComcListener = new CrossfireComcListener()
     {
         /** {@inheritDoc} */
@@ -94,6 +98,7 @@ public class CommandQueue
      * The {@link GuiStateListener} for detecting established or dropped
      * connections.
      */
+    @NotNull
     private final GuiStateListener guiStateListener = new GuiStateListener()
     {
         /** {@inheritDoc} */
@@ -119,7 +124,7 @@ public class CommandQueue
 
         /** {@inheritDoc} */
         @Override
-        public void connecting(final ClientSocketState clientSocketState)
+        public void connecting(@NotNull final ClientSocketState clientSocketState)
         {
             // ignore
         }
@@ -133,7 +138,7 @@ public class CommandQueue
 
         /** {@inheritDoc} */
         @Override
-        public void connectFailed(final String reason)
+        public void connectFailed(@NotNull final String reason)
         {
             // ignore
         }
@@ -145,7 +150,7 @@ public class CommandQueue
      * ncom commands.
      * @param window the window to attach to
      */
-    public CommandQueue(final CrossfireServerConnection crossfireServerConnection, final JXCWindow window)
+    public CommandQueue(@NotNull final CrossfireServerConnection crossfireServerConnection, @NotNull final JXCWindow window)
     {
         this.crossfireServerConnection = crossfireServerConnection;
         crossfireServerConnection.addCrossfireComcListener(crossfireComcListener);
@@ -207,7 +212,7 @@ public class CommandQueue
      *
      * @see #sendNcom(boolean, int, String)
      */
-    public void sendNcom(final boolean mustSend, final String command)
+    public void sendNcom(final boolean mustSend, @NotNull final String command)
     {
         sendNcom(mustSend, getRepeatCount(), command);
     }
@@ -224,7 +229,7 @@ public class CommandQueue
      *
      * @see #sendNcom(boolean, String)
      */
-    public void sendNcom(final boolean mustSend, final int repeat, final String command)
+    public void sendNcom(final boolean mustSend, final int repeat, @NotNull final String command)
     {
         synchronized (pendingCommands)
         {

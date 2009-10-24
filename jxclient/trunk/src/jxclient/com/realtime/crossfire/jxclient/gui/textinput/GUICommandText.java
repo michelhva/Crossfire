@@ -26,6 +26,7 @@ import com.realtime.crossfire.jxclient.window.JXCWindowRenderer;
 import java.awt.Color;
 import java.awt.Font;
 import java.awt.Image;
+import org.jetbrains.annotations.NotNull;
 
 /**
  *
@@ -40,9 +41,10 @@ public class GUICommandText extends GUIText
      */
     private static final long serialVersionUID = 1;
 
+    @NotNull
     private final Commands commands;
 
-    public GUICommandText(final GuiManager guiManager, final TooltipManager tooltipManager, final JXCWindowRenderer windowRenderer, final String name, final int x, final int y, final int w, final int h, final Image activeImage, final Image inactiveImage, final Font font, final Color inactiveColor, final Color activeColor, final int margin, final String text, final Commands commands, final boolean ignoreUpDown)
+    public GUICommandText(@NotNull final GuiManager guiManager, @NotNull final TooltipManager tooltipManager, @NotNull final JXCWindowRenderer windowRenderer, @NotNull final String name, final int x, final int y, final int w, final int h, @NotNull final Image activeImage, @NotNull final Image inactiveImage, @NotNull final Font font, @NotNull final Color inactiveColor, @NotNull final Color activeColor, final int margin, @NotNull final String text, @NotNull final Commands commands, final boolean ignoreUpDown)
     {
         super(guiManager, tooltipManager, windowRenderer, name, x, y, w, h, activeImage, inactiveImage, font, inactiveColor, activeColor, margin, text, ignoreUpDown);
         this.commands = commands;
@@ -57,7 +59,7 @@ public class GUICommandText extends GUIText
 
     /** {@inheritDoc} */
     @Override
-    protected void execute(final String command)
+    protected void execute(@NotNull final String command)
     {
         commands.executeCommand(command);
         setText("");

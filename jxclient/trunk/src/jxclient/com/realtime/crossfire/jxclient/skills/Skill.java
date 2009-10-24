@@ -21,6 +21,7 @@ package com.realtime.crossfire.jxclient.skills;
 
 import java.util.ArrayList;
 import java.util.Collection;
+import org.jetbrains.annotations.NotNull;
 
 /**
  * One skill of the character.
@@ -33,11 +34,13 @@ public class Skill
     /**
      * The listeners to inform of changes.
      */
+    @NotNull
     private final Collection<SkillListener> listeners = new ArrayList<SkillListener>();
 
     /**
      * The skill name.
      */
+    @NotNull
     private final String name;
 
     /**
@@ -55,7 +58,7 @@ public class Skill
      *
      * @param name The skill name.
      */
-    public Skill(final String name)
+    public Skill(@NotNull final String name)
     {
         this.name = name;
     }
@@ -111,6 +114,7 @@ public class Skill
     }
 
     /** {@inheritDoc} */
+    @NotNull
     @Override
     public String toString()
     {
@@ -179,7 +183,7 @@ public class Skill
      *
      * @param listener The listener to add.
      */
-    public void addSkillListener(final SkillListener listener)
+    public void addSkillListener(@NotNull final SkillListener listener)
     {
         listeners.add(listener);
     }
@@ -189,7 +193,7 @@ public class Skill
      *
      * @param listener The listener to remove.
      */
-    public void removeSkillListener(final SkillListener listener)
+    public void removeSkillListener(@NotNull final SkillListener listener)
     {
         listeners.remove(listener);
     }

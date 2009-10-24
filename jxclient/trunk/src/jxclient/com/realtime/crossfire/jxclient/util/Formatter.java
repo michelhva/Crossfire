@@ -1,5 +1,7 @@
 package com.realtime.crossfire.jxclient.util;
 
+import org.jetbrains.annotations.NotNull;
+
 /**
  * Utility class for formatting values into strings.
  * @author Andreas Kirschbaum
@@ -18,6 +20,7 @@ public class Formatter
      * @param value the value
      * @return return the formatted value
      */
+    @NotNull
     public static String formatLong(final long value)
     {
         if (value < 1000000L)
@@ -54,6 +57,7 @@ public class Formatter
      * inclusive
      * @return the formatted value
      */
+    @NotNull
     public static String formatFloat(final double value, final int digits)
     {
         final int tmp;

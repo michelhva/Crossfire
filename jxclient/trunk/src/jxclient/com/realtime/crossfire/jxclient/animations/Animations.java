@@ -24,6 +24,8 @@ import com.realtime.crossfire.jxclient.window.GuiStateListener;
 import com.realtime.crossfire.jxclient.window.JXCWindow;
 import java.util.HashMap;
 import java.util.Map;
+import org.jetbrains.annotations.NotNull;
+import org.jetbrains.annotations.Nullable;
 
 /**
  * Manages animations frecevied from the server. Animations are uniquely
@@ -36,12 +38,14 @@ public class Animations
     /**
      * All defined animations. Maps animation id to animation instance.
      */
+    @NotNull
     private final Map<Integer, Animation> animations = new HashMap<Integer, Animation>();
 
     /**
      * The {@link GuiStateListener} for detecting established or dropped
      * connections.
      */
+    @NotNull
     private final GuiStateListener guiStateListener = new GuiStateListener()
     {
         /** {@inheritDoc} */
@@ -67,7 +71,7 @@ public class Animations
 
         /** {@inheritDoc} */
         @Override
-        public void connecting(final ClientSocketState clientSocketState)
+        public void connecting(@NotNull final ClientSocketState clientSocketState)
         {
             // ignore
         }
@@ -81,7 +85,7 @@ public class Animations
 
         /** {@inheritDoc} */
         @Override
-        public void connectFailed(final String reason)
+        public void connectFailed(@NotNull final String reason)
         {
             // ignore
         }
@@ -91,7 +95,7 @@ public class Animations
      * Creates a new instance.
      * @param window the window to attach to; <code>null</code> to not attach
      */
-    public Animations(final JXCWindow window)
+    public Animations(@Nullable final JXCWindow window)
     {
         if (window != null)
         {
@@ -108,7 +112,7 @@ public class Animations
      *
      * @param faces The faces list of the animation.
      */
-    public void addAnimation(final int animationId, final int flags, final int[] faces)
+    public void addAnimation(final int animationId, final int flags, @NotNull final int[] faces)
     {
         if (faces.length == 1)
         {
@@ -130,6 +134,7 @@ public class Animations
      * @return The animation instance, or <code>null</code> if the animation id
      * does not exist.
      */
+    @Nullable
     public Animation get(final int animationId)
     {
         return animations.get(animationId);

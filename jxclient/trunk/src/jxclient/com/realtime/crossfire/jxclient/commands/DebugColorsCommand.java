@@ -21,6 +21,7 @@ package com.realtime.crossfire.jxclient.commands;
 
 import com.realtime.crossfire.jxclient.gui.log.MessageBufferUpdater;
 import com.realtime.crossfire.jxclient.server.CrossfireServerConnection;
+import org.jetbrains.annotations.NotNull;
 
 /**
  * Implements the "debug_colors" command. It prints text to the log window
@@ -33,7 +34,7 @@ public class DebugColorsCommand extends AbstractCommand
      * Creates a new instance.
      * @param crossfireServerConnection the connection instance
      */
-    public DebugColorsCommand(final CrossfireServerConnection crossfireServerConnection)
+    public DebugColorsCommand(@NotNull final CrossfireServerConnection crossfireServerConnection)
     {
         super(crossfireServerConnection);
     }
@@ -47,7 +48,7 @@ public class DebugColorsCommand extends AbstractCommand
 
     /** {@inheritDoc} */
     @Override
-    public void execute(final String args)
+    public void execute(@NotNull final String args)
     {
         if (args.length() != 0)
         {

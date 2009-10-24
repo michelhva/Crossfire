@@ -25,6 +25,7 @@ import com.realtime.crossfire.jxclient.server.CrossfireServerConnection;
 import com.realtime.crossfire.jxclient.window.JXCWindowRenderer;
 import java.awt.Color;
 import java.awt.Font;
+import org.jetbrains.annotations.NotNull;
 
 /**
  * A {@link GUIHTMLLabel} that displays the last received "query" command.
@@ -41,16 +42,18 @@ public class GUILabelQuery extends GUIMultiLineLabel
     /**
      * The {@link CrossfireServerConnection} to monitor.
      */
+    @NotNull
     private final CrossfireServerConnection crossfireServerConnection;
 
     /**
      * The {@link CrossfireQueryListener} registered to receive query commands.
      */
+    @NotNull
     private final CrossfireQueryListener crossfireQueryListener = new CrossfireQueryListener()
     {
         /** {@inheritDoc} */
         @Override
-        public void commandQueryReceived(final String prompt, final int queryType)
+        public void commandQueryReceived(@NotNull final String prompt, final int queryType)
         {
             setText(prompt);
         }
@@ -81,7 +84,7 @@ public class GUILabelQuery extends GUIMultiLineLabel
      *
      * @param backgroundColor The background color.
      */
-    public GUILabelQuery(final TooltipManager tooltipManager, final JXCWindowRenderer windowRenderer, final String name, final int x, final int y, final int w, final int h, final CrossfireServerConnection crossfireServerConnection, final Font font, final Color color, final Color backgroundColor)
+    public GUILabelQuery(@NotNull final TooltipManager tooltipManager, @NotNull final JXCWindowRenderer windowRenderer, @NotNull final String name, final int x, final int y, final int w, final int h, @NotNull final CrossfireServerConnection crossfireServerConnection, @NotNull final Font font, @NotNull final Color color, @NotNull final Color backgroundColor)
     {
         super(tooltipManager, windowRenderer, name, x, y, w, h, null, font, color, backgroundColor, Alignment.LEFT, "");
         this.crossfireServerConnection = crossfireServerConnection;

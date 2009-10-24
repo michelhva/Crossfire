@@ -22,6 +22,8 @@ package com.realtime.crossfire.jxclient.settings;
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
+import org.jetbrains.annotations.NotNull;
+import org.jetbrains.annotations.Nullable;
 
 /**
  * Manages a list of previously entered commands.
@@ -37,6 +39,7 @@ public class CommandHistory
     /**
      * The commands.
      */
+    @NotNull
     private final List<String> commands = new ArrayList<String>(HISTORY_SIZE);
 
     /**
@@ -48,7 +51,7 @@ public class CommandHistory
      * Creates a new instance.
      * @param ident the identification string for backing up to file
      */
-    public CommandHistory(final String ident)
+    public CommandHistory(@NotNull final String ident)
     {
     }
 
@@ -56,7 +59,7 @@ public class CommandHistory
      * Adds a new command.
      * @param command the command to add
      */
-    public void addCommand(final String command)
+    public void addCommand(@NotNull final String command)
     {
         final String trimmedCommand = command.trim();
         if (trimmedCommand.length() <= 0)
@@ -89,7 +92,7 @@ public class CommandHistory
      * Removes a command.
      * @param command the command to remove
      */
-    private void removeCommand(final String command)
+    private void removeCommand(@NotNull final String command)
     {
         final Iterator<String> it = commands.iterator();
         while (it.hasNext())
@@ -108,6 +111,7 @@ public class CommandHistory
      * @return the previous command or <code>null</code> if no previous command
      * exists
      */
+    @Nullable
     public String up()
     {
         return 1 <= commandIndex && commandIndex <= commands.size() ? commands.get(--commandIndex) : null;
@@ -118,6 +122,7 @@ public class CommandHistory
      * @return the next command or <code>null</code> if no previous command
      * exists
      */
+    @Nullable
     public String down()
     {
         if (commandIndex < commands.size())

@@ -20,6 +20,8 @@
 package com.realtime.crossfire.jxclient.faces;
 
 import com.realtime.crossfire.jxclient.server.CrossfireServerConnection;
+import org.jetbrains.annotations.NotNull;
+import org.jetbrains.annotations.Nullable;
 
 /**
  * The main {@link FaceQueue} for loading faces. It first delegates to a
@@ -33,29 +35,32 @@ public class FacesQueue extends DefaultFaceQueue
      * The {@link FileCacheFaceQueue} instance used to load faces from the file
      * cache.
      */
+    @NotNull
     private final FileCacheFaceQueue fileCacheFaceQueue;
 
     /**
      * The {@link AskfaceFaceQueue} instance used to query faces from the
      * Crossfire server.
      */
+    @NotNull
     private final AskfaceFaceQueue askfaceFaceQueue;
 
     /**
      * The {@link FaceQueueListener} attached to {@link #fileCacheFaceQueue}.
      */
+    @NotNull
     private final FaceQueueListener fileCacheFaceQueueListener = new FaceQueueListener()
     {
         /** {@inheritDoc} */
         @Override
-        public void faceLoaded(final Face face, final FaceImages faceImages)
+        public void faceLoaded(@NotNull final Face face, @NotNull final FaceImages faceImages)
         {
             fireFaceLoaded(face, faceImages);
         }
 
         /** {@inheritDoc} */
         @Override
-        public void faceFailed(final Face face)
+        public void faceFailed(@NotNull final Face face)
         {
             askfaceFaceQueue.loadFace(face);
         }
@@ -64,11 +69,12 @@ public class FacesQueue extends DefaultFaceQueue
     /**
      * The {@link FaceQueueListener} attached to {@link #askfaceFaceQueue}.
      */
+    @NotNull
     private final FaceQueueListener askfaceFaceQueueListener = new FaceQueueListener()
     {
         /** {@inheritDoc} */
         @Override
-        public void faceLoaded(final Face face, final FaceImages faceImages)
+        public void faceLoaded(@NotNull final Face face, @NotNull final FaceImages faceImages)
         {
             fireFaceLoaded(face, faceImages);
             fileCacheFaceQueue.saveFace(face, faceImages);
@@ -76,7 +82,7 @@ public class FacesQueue extends DefaultFaceQueue
 
         /** {@inheritDoc} */
         @Override
-        public void faceFailed(final Face face)
+        public void faceFailed(@NotNull final Face face)
         {
             fireFaceFailed(face);
         }
@@ -93,7 +99,7 @@ public class FacesQueue extends DefaultFaceQueue
      * @param imageCacheMagicMap the image cache used for loading magic map
      * image files
      */
-    public FacesQueue(final CrossfireServerConnection crossfireServerConnection, final ImageCache imageCacheOriginal, final ImageCache imageCacheScaled, final ImageCache imageCacheMagicMap)
+    public FacesQueue(@Nullable final CrossfireServerConnection crossfireServerConnection, @NotNull final ImageCache imageCacheOriginal, @NotNull final ImageCache imageCacheScaled, @NotNull final ImageCache imageCacheMagicMap)
     {
         fileCacheFaceQueue = new FileCacheFaceQueue(imageCacheOriginal, imageCacheScaled, imageCacheMagicMap);
         askfaceFaceQueue = new AskfaceFaceQueue(crossfireServerConnection);
@@ -111,7 +117,7 @@ public class FacesQueue extends DefaultFaceQueue
 
     /** {@inheritDoc} */
     @Override
-    public void loadFace(final Face face)
+    public void loadFace(@NotNull final Face face)
     {
         fileCacheFaceQueue.loadFace(face);
     }
@@ -120,6 +126,7 @@ public class FacesQueue extends DefaultFaceQueue
      * Returns the {@link AskfaceFaceQueue} instance.
      * @return the askface queue
      */
+    @NotNull
     public AskfaceFaceQueue getAskfaceQueue()
     {
         return askfaceFaceQueue;

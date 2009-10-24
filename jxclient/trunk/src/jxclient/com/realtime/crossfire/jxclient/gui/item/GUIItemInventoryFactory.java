@@ -27,6 +27,7 @@ import com.realtime.crossfire.jxclient.items.ItemsManager;
 import com.realtime.crossfire.jxclient.server.CommandQueue;
 import com.realtime.crossfire.jxclient.server.CrossfireServerConnection;
 import com.realtime.crossfire.jxclient.window.JXCWindowRenderer;
+import org.jetbrains.annotations.NotNull;
 
 /**
  * A factory for creating {@link GUIItemInventory} instances.
@@ -37,23 +38,31 @@ public class GUIItemInventoryFactory
     /**
      * The tooltip manager to update.
      */
+    @NotNull
     private final TooltipManager tooltipManager;
 
     /**
      * The window renderer to notify.
      */
+    @NotNull
     private final JXCWindowRenderer windowRenderer;
 
+    @NotNull
     private final CommandQueue commandQueue;
 
+    @NotNull
     private final String name;
 
+    @NotNull
     private final ItemPainter itemPainter;
 
+    @NotNull
     private final CrossfireServerConnection crossfireServerConnection;
 
+    @NotNull
     private final FacesManager facesManager;
 
+    @NotNull
     private final ItemsManager itemsManager;
 
     /**
@@ -61,7 +70,7 @@ public class GUIItemInventoryFactory
      * @param tooltipManager the tooltip manager to update
      * @param windowRenderer the window renderer to notify
      */
-    public GUIItemInventoryFactory(final TooltipManager tooltipManager, final JXCWindowRenderer windowRenderer, final CommandQueue commandQueue, final String name, final ItemPainter itemPainter, final CrossfireServerConnection crossfireServerConnection, final FacesManager facesManager, final ItemsManager itemsManager)
+    public GUIItemInventoryFactory(@NotNull final TooltipManager tooltipManager, @NotNull final JXCWindowRenderer windowRenderer, @NotNull final CommandQueue commandQueue, @NotNull final String name, @NotNull final ItemPainter itemPainter, @NotNull final CrossfireServerConnection crossfireServerConnection, @NotNull final FacesManager facesManager, @NotNull final ItemsManager itemsManager)
     {
         this.tooltipManager = tooltipManager;
         this.windowRenderer = windowRenderer;
@@ -78,6 +87,7 @@ public class GUIItemInventoryFactory
      * @param index the item inventory's index
      * @return the new instance
      */
+    @NotNull
     public GUIElement newItemInventory(final int index)
     {
         return new GUIItemInventory(tooltipManager, windowRenderer, commandQueue, name+index, 0, 0, 1, 1, itemPainter, index, crossfireServerConnection, facesManager, itemsManager);
@@ -88,6 +98,7 @@ public class GUIItemInventoryFactory
      * @param cellHeight the cell size
      * @return the new instance
      */
+    @NotNull
     public GUIItemInventory newTemplateItemInventory(final int cellHeight)
     {
         return new GUIItemInventory(tooltipManager, windowRenderer, commandQueue, name+"_template", 0, 0, cellHeight, cellHeight, itemPainter, -1, crossfireServerConnection, facesManager, itemsManager);

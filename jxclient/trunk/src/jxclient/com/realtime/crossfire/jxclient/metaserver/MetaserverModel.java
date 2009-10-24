@@ -25,6 +25,8 @@ import java.util.Collections;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+import org.jetbrains.annotations.NotNull;
+import org.jetbrains.annotations.Nullable;
 
 /**
  * Maintains the metaserver information.
@@ -36,27 +38,32 @@ public class MetaserverModel
     /**
      * The current entries.
      */
+    @NotNull
     private final List<MetaserverEntry> metalist = new ArrayList<MetaserverEntry>();
 
     /**
      * The pending entries. Only valid between {@link #begin()} and {@link
      * #commit()}.
      */
+    @NotNull
     private final Collection<MetaserverEntry> metalistPending = new ArrayList<MetaserverEntry>();
 
     /**
      * Object used for synchronization.
      */
+    @NotNull
     private final Object sync = new Object();
 
     /**
      * All registered metaserver listeners.
      */
+    @NotNull
     private final Collection<MetaserverListener> metaserverListeners = new ArrayList<MetaserverListener>();
 
     /**
      * All registered metaserver entry listeners. Maps entry index to list of listeners.
      */
+    @NotNull
     private final Map<Integer, List<MetaserverEntryListener>> metaserverEntryListeners = new HashMap<Integer, List<MetaserverEntryListener>>();
 
     /**
@@ -65,6 +72,7 @@ public class MetaserverModel
      * @return the metaserver entry, or <code>null</code> if the index is
      * invalid
      */
+    @Nullable
     public MetaserverEntry getEntry(final int index)
     {
         try
@@ -85,7 +93,7 @@ public class MetaserverModel
      * @param serverName the server name
      * @return the index, or <code>-1</code> if not found
      */
-    public int getServerIndex(final String serverName)
+    public int getServerIndex(@NotNull final String serverName)
     {
         synchronized (sync)
         {
@@ -120,7 +128,7 @@ public class MetaserverModel
      * Adds an entry.
      * @param metaserverEntry the entry to add
      */
-    public void add(final MetaserverEntry metaserverEntry)
+    public void add(@NotNull final MetaserverEntry metaserverEntry)
     {
         synchronized (sync)
         {
@@ -171,7 +179,7 @@ public class MetaserverModel
      * Adds a metaserver listener.
      * @param listener the listener to add
      */
-    public void addMetaserverListener(final MetaserverListener listener)
+    public void addMetaserverListener(@NotNull final MetaserverListener listener)
     {
         metaserverListeners.add(listener);
     }
@@ -180,7 +188,7 @@ public class MetaserverModel
      * Removes a metaserver listener.
      * @param listener the listener to remove
      */
-    public void removeMetaserverListener(final MetaserverListener listener)
+    public void removeMetaserverListener(@NotNull final MetaserverListener listener)
     {
         metaserverListeners.remove(listener);
     }
@@ -190,7 +198,7 @@ public class MetaserverModel
      * @param index the entry index to monitor
      * @param listener the listener to add
      */
-    public void addMetaserverEntryListener(final int index, final MetaserverEntryListener listener)
+    public void addMetaserverEntryListener(final int index, @NotNull final MetaserverEntryListener listener)
     {
         getMetaserverEntryListeners(index).add(listener);
     }
@@ -200,7 +208,7 @@ public class MetaserverModel
      * @param index the entry index to monitor
      * @param listener the listener to remove
      */
-    public void removeMetaserverEntryListener(final int index, final MetaserverEntryListener listener)
+    public void removeMetaserverEntryListener(final int index, @NotNull final MetaserverEntryListener listener)
     {
         getMetaserverEntryListeners(index).remove(listener);
     }
@@ -208,8 +216,9 @@ public class MetaserverModel
     /**
      * Returns the metaserver entry listeners for one entry index.
      * @param index the entry index
-     * @return the listsners list
+     * @return the listeners list
      */
+    @NotNull
     private Collection<MetaserverEntryListener> getMetaserverEntryListeners(final int index)
     {
         synchronized (metaserverEntryListeners)

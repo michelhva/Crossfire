@@ -31,6 +31,7 @@ import java.util.Comparator;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+import org.jetbrains.annotations.NotNull;
 
 /**
  * Manages all known spells.
@@ -43,30 +44,35 @@ public class SpellsManager
     /**
      * All known spells.
      */
+    @NotNull
     private final List<Spell> spells = new ArrayList<Spell>();
 
     /**
      * All unknown spells that have been referenced before. Maps spell name to
      * {@link Spell} instance.
      */
+    @NotNull
     private final Map<String, Spell> unknownSpells = new HashMap<String, Spell>();
 
+    @NotNull
     private final Collection<SpellsManagerListener> listeners = new ArrayList<SpellsManagerListener>();
 
     /**
      * A {@link Comparator} to compare {@link Spell} instances by spell path
      * and name.
      */
+    @NotNull
     private final Comparator<Spell> spellNameComparator = new SpellComparator();
 
     /**
      * The listener to receive updates for spell information.
      */
+    @NotNull
     private final CrossfireSpellListener crossfireSpellListener = new CrossfireSpellListener()
     {
         /** {@inheritDoc} */
         @Override
-        public void addSpell(final int tag, final int level, final int castingTime, final int mana, final int grace, final int damage, final int skill, final int path, final int face, final String name, final String message)
+        public void addSpell(final int tag, final int level, final int castingTime, final int mana, final int grace, final int damage, final int skill, final int path, final int face, @NotNull final String name, @NotNull final String message)
         {
             SpellsManager.this.addSpell(tag, level, castingTime, mana, grace, damage, skill, path, face, name, message);
         }
@@ -90,6 +96,7 @@ public class SpellsManager
      * The {@link GuiStateListener} for detecting established or dropped
      * connections.
      */
+    @NotNull
     private final GuiStateListener guiStateListener = new GuiStateListener()
     {
         /** {@inheritDoc} */
@@ -115,7 +122,7 @@ public class SpellsManager
 
         /** {@inheritDoc} */
         @Override
-        public void connecting(final ClientSocketState clientSocketState)
+        public void connecting(@NotNull final ClientSocketState clientSocketState)
         {
             // ignore
         }
@@ -129,7 +136,7 @@ public class SpellsManager
 
         /** {@inheritDoc} */
         @Override
-        public void connectFailed(final String reason)
+        public void connectFailed(@NotNull final String reason)
         {
             // ignore
         }
@@ -140,23 +147,24 @@ public class SpellsManager
      * @param crossfireServerConnection the connection to listen on
      * @param window the window to attach to
      */
-    public SpellsManager(final CrossfireServerConnection crossfireServerConnection, final JXCWindow window)
+    public SpellsManager(@NotNull final CrossfireServerConnection crossfireServerConnection, @NotNull final JXCWindow window)
     {
         initSpells();
         crossfireServerConnection.addCrossfireSpellListener(crossfireSpellListener);
         window.addConnectionStateListener(guiStateListener);
     }
 
-    public void addCrossfireSpellChangedListener(final SpellsManagerListener listener)
+    public void addCrossfireSpellChangedListener(@NotNull final SpellsManagerListener listener)
     {
         listeners.add(listener);
     }
 
-    public void removeCrossfireSpellChangedListener(final SpellsManagerListener listener)
+    public void removeCrossfireSpellChangedListener(@NotNull final SpellsManagerListener listener)
     {
         listeners.remove(listener);
     }
 
+    @NotNull
     public List<Spell> getSpellList()
     {
         return spells;
@@ -185,7 +193,7 @@ public class SpellsManager
      * @param spellName the spell's name
      * @param message the spells' description
      */
-    private void addSpell(final int tag, final int level, final int castingTime, final int mana, final int grace, final int damage, final int skill, final int path, final int faceNum, final String spellName, final String message)
+    private void addSpell(final int tag, final int level, final int castingTime, final int mana, final int grace, final int damage, final int skill, final int path, final int faceNum, @NotNull final String spellName, @NotNull final String message)
     {
         final Spell key = new Spell(spellName);
         key.setParameters(faceNum, tag, message, level, castingTime, mana, grace, damage, skill, path); // set spell path which is unsed in the comparator
@@ -279,7 +287,8 @@ public class SpellsManager
      * @param spellName the spell name to find
      * @return the spell instance
      */
-    public Spell getSpell(final String spellName)
+    @NotNull
+    public Spell getSpell(@NotNull final String spellName)
     {
         for (final Spell spell : spells)
         {

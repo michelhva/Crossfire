@@ -22,6 +22,8 @@ package com.realtime.crossfire.jxclient.sound;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 import javax.sound.sampled.DataLine;
+import org.jetbrains.annotations.NotNull;
+import org.jetbrains.annotations.Nullable;
 
 /**
  * Manages a set of sound clips (short sound effects). Multiple sound effects
@@ -34,11 +36,13 @@ public class ClipManager
     /**
      * The executor service used to play sound clips.
      */
+    @NotNull
     private final ExecutorService executorService = Executors.newCachedThreadPool();
 
     /**
      * The clip cache used to allocate new clips.
      */
+    @NotNull
     private final ClipCache clipCache = new ClipCache();
 
     /**
@@ -48,7 +52,7 @@ public class ClipManager
      *
      * @param action The action name of the sound effect.
      */
-    public void play(final String name, final String action)
+    public void play(@Nullable final String name, @NotNull final String action)
     {
         final DataLine clip = clipCache.allocateClip(name, action);
         if (clip == null)

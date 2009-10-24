@@ -43,6 +43,7 @@ import javax.swing.ScrollPaneConstants;
 import javax.swing.border.EmptyBorder;
 import javax.swing.event.ListSelectionEvent;
 import javax.swing.event.ListSelectionListener;
+import org.jetbrains.annotations.NotNull;
 
 /**
  * A {@link GUIElement} that displays a list of entries.
@@ -63,31 +64,36 @@ public abstract class GUIList extends ActivatableGUIElement
     /**
      * The list model of {@link #list}.
      */
+    @NotNull
     private final DefaultListModel model = new DefaultListModel();
 
     /**
      * The list used to display the cells.
      */
+    @NotNull
     private final JList list = new JList(model);
 
     /**
      * The viewport used by {@link #scrollPane}.
      */
+    @NotNull
     private final GUIListViewport viewport = new GUIListViewport();
 
     /**
      * The scroll pane instance used to display the list.
      */
+    @NotNull
     private final JScrollPane scrollPane;
 
     /**
      * The {@link ListSelectionListener} attached to {@link #list}.
      */
+    @NotNull
     private final ListSelectionListener listSelectionListener = new ListSelectionListener()
     {
         /** {@inheritDoc} */
         @Override
-        public void valueChanged(final ListSelectionEvent e)
+        public void valueChanged(@NotNull final ListSelectionEvent e)
         {
             selectionChanged();
         }
@@ -107,7 +113,7 @@ public abstract class GUIList extends ActivatableGUIElement
      * @param cellHeight the height of each cell
      * @param listCellRenderer the renderer for the list
      */
-    protected GUIList(final TooltipManager tooltipManager, final JXCWindowRenderer windowRenderer, final String name, final int x, final int y, final int w, final int h, final int cellHeight, final ListCellRenderer listCellRenderer)
+    protected GUIList(@NotNull final TooltipManager tooltipManager, @NotNull final JXCWindowRenderer windowRenderer, @NotNull final String name, final int x, final int y, final int w, final int h, final int cellHeight, @NotNull final ListCellRenderer listCellRenderer)
     {
         super(tooltipManager, windowRenderer, name, x, y, w, h, Transparency.TRANSLUCENT);
         final Dimension size = new Dimension(w, h);
@@ -163,7 +169,7 @@ public abstract class GUIList extends ActivatableGUIElement
 
     /** {@inheritDoc} */
     @Override
-    protected void render(final Graphics g)
+    protected void render(@NotNull final Graphics g)
     {
         final Graphics2D g2 = (Graphics2D)g;
         final Composite composite = g2.getComposite();
@@ -183,7 +189,7 @@ public abstract class GUIList extends ActivatableGUIElement
      * Adds an {@link GUIElement} to the list.
      * @param element the element to add
      */
-    protected void addElement(final GUIElement element)
+    protected void addElement(@NotNull final GUIElement element)
     {
         assert Thread.holdsLock(getTreeLock());
         model.addElement(element);
@@ -417,7 +423,7 @@ public abstract class GUIList extends ActivatableGUIElement
 
     /** {@inheritDoc} */
     @Override
-    public void mouseClicked(final MouseEvent e)
+    public void mouseClicked(@NotNull final MouseEvent e)
     {
         doSelect(e);
         super.mouseClicked(e);
@@ -425,7 +431,7 @@ public abstract class GUIList extends ActivatableGUIElement
 
     /** {@inheritDoc} */
     @Override
-    public void mouseEntered(final MouseEvent e)
+    public void mouseEntered(@NotNull final MouseEvent e)
     {
         super.mouseEntered(e);
         doTooltip(e);
@@ -433,7 +439,7 @@ public abstract class GUIList extends ActivatableGUIElement
 
     /** {@inheritDoc} */
     @Override
-    public void mouseExited(final MouseEvent e)
+    public void mouseExited(@NotNull final MouseEvent e)
     {
         super.mouseExited(e);
         doTooltip(e);
@@ -441,7 +447,7 @@ public abstract class GUIList extends ActivatableGUIElement
 
     /** {@inheritDoc} */
     @Override
-    public void mousePressed(final MouseEvent e)
+    public void mousePressed(@NotNull final MouseEvent e)
     {
         super.mouseClicked(e);
         doSelect(e);
@@ -449,7 +455,7 @@ public abstract class GUIList extends ActivatableGUIElement
 
     /** {@inheritDoc} */
     @Override
-    public void mouseMoved(final MouseEvent e)
+    public void mouseMoved(@NotNull final MouseEvent e)
     {
         super.mouseMoved(e);
         doTooltip(e);
@@ -457,7 +463,7 @@ public abstract class GUIList extends ActivatableGUIElement
 
     /** {@inheritDoc} */
     @Override
-    public void mouseDragged(final MouseEvent e)
+    public void mouseDragged(@NotNull final MouseEvent e)
     {
         super.mouseClicked(e);
         doSelect(e);
@@ -467,7 +473,7 @@ public abstract class GUIList extends ActivatableGUIElement
      * Selects the list entry corresponding to a {@link MouseEvent} instance.
      * @param e the mouse event instance
      */
-    private void doSelect(final MouseEvent e)
+    private void doSelect(@NotNull final MouseEvent e)
     {
         synchronized (getTreeLock())
         {
@@ -479,7 +485,7 @@ public abstract class GUIList extends ActivatableGUIElement
      * Updates the tooltip text corresponding to a {@link MouseEvent} instance.
      * @param e the mouse event instance
      */
-    private void doTooltip(final MouseEvent e)
+    private void doTooltip(@NotNull final MouseEvent e)
     {
         synchronized (getTreeLock())
         {
@@ -553,6 +559,7 @@ public abstract class GUIList extends ActivatableGUIElement
      * Returns the selected list object.
      * @return the selected object or <code>null</code> if none is selected
      */
+    @NotNull
     protected Object getSelectedObject()
     {
         synchronized (getTreeLock())
