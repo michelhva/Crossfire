@@ -9,6 +9,9 @@
         <delete dir="${build}/jxclient"/>
         <mkdir dir="${build}/jxclient"/>
         <javac srcdir="${src.jxclient}" destdir="${build}/jxclient" source="1.6" debug="yes" fork="yes">
+            <classpath>
+                <pathelement location="lib/annotations.jar"/>
+            </classpath>
             <compilerarg value="-Xlint:unchecked"/>
         </javac>
     </target>
