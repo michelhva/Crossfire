@@ -26,6 +26,8 @@ import java.io.FileInputStream;
 import java.io.IOException;
 import javax.swing.Icon;
 import javax.swing.ImageIcon;
+import org.jetbrains.annotations.NotNull;
+import org.jetbrains.annotations.Nullable;
 
 /**
  * A disk based cache for image files.
@@ -36,21 +38,23 @@ public class FileCache implements ImageCache
     /**
      * The directory where the images are saved.
      */
+    @NotNull
     private final File cacheDir;
 
     /**
      * Creates a new instance.
      * @param cacheDir the directory where the images are saved
      */
-    public FileCache(final File cacheDir)
+    public FileCache(@NotNull final File cacheDir)
     {
         this.cacheDir = cacheDir;
         cacheDir.mkdirs();
     }
 
     /** {@inheritDoc} */
+    @Nullable
     @Override
-    public ImageIcon load(final Face face)
+    public ImageIcon load(@NotNull final Face face)
     {
         return load(face.getFaceName(), face.getFaceChecksum());
     }
@@ -62,7 +66,8 @@ public class FileCache implements ImageCache
      * @return the image icon, or <code>null</code> if the cache does not
      * contain the image
      */
-    private ImageIcon load(final String faceName, final int faceChecksum)
+    @Nullable
+    private ImageIcon load(@NotNull final String faceName, final int faceChecksum)
     {
         final File file = getImageFileName(faceName, faceChecksum);
         final long len = file.length();
@@ -96,7 +101,7 @@ public class FileCache implements ImageCache
 
     /** {@inheritDoc} */
     @Override
-    public void save(final Face face, final ImageIcon imageIcon)
+    public void save(@NotNull final Face face, @NotNull final ImageIcon imageIcon)
     {
         save(face.getFaceName(), face.getFaceChecksum(), imageIcon);
     }
@@ -107,7 +112,7 @@ public class FileCache implements ImageCache
      * @param faceChecksum the checksum to save
      * @param imageIcon the image icon to store
      */
-    public void save(final String faceName, final int faceChecksum, final Icon imageIcon)
+    public void save(@NotNull final String faceName, final int faceChecksum, @NotNull final Icon imageIcon)
     {
         Images.saveImageIcon(getImageFileName(faceName, faceChecksum), imageIcon);
     }
@@ -118,7 +123,8 @@ public class FileCache implements ImageCache
      * @param faceChecksum the checksum to hash
      * @return the hashed image name
      */
-    private File getImageFileName(final String faceName, final int faceChecksum)
+    @NotNull
+    private File getImageFileName(@NotNull final String faceName, final int faceChecksum)
     {
         final String quotedFaceName = Filenames.quoteName(faceName);
         final String dirName = quotedFaceName.substring(0, Math.min(2, quotedFaceName.length()));

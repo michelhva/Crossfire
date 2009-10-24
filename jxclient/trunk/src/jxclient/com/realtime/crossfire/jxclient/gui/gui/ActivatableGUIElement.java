@@ -21,6 +21,7 @@ package com.realtime.crossfire.jxclient.gui.gui;
 
 import com.realtime.crossfire.jxclient.window.JXCWindowRenderer;
 import java.awt.event.MouseEvent;
+import org.jetbrains.annotations.NotNull;
 
 /**
  * A {@link GUIElement} that can be set to active or inactive.
@@ -55,7 +56,7 @@ public abstract class ActivatableGUIElement extends GUIElement
      *
      * @param transparency The transparency value for the backing buffer
      */
-    protected ActivatableGUIElement(final TooltipManager tooltipManager, final JXCWindowRenderer windowRenderer, final String name, final int x, final int y, final int w, final int h, final int transparency)
+    protected ActivatableGUIElement(@NotNull final TooltipManager tooltipManager, @NotNull final JXCWindowRenderer windowRenderer, @NotNull final String name, final int x, final int y, final int w, final int h, final int transparency)
     {
         super(tooltipManager, windowRenderer, name, x, y, w, h, transparency);
     }
@@ -95,7 +96,7 @@ public abstract class ActivatableGUIElement extends GUIElement
 
     /** {@inheritDoc} */
     @Override
-    public void mousePressed(final MouseEvent e)
+    public void mousePressed(@NotNull final MouseEvent e)
     {
         setActive(true);
     }

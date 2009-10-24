@@ -28,6 +28,8 @@ import java.awt.Graphics2D;
 import java.awt.Transparency;
 import java.awt.image.BufferedImage;
 import javax.swing.ImageIcon;
+import org.jetbrains.annotations.NotNull;
+import org.jetbrains.annotations.Nullable;
 
 /**
  * Abstract base class for all label classes. It manages the label text, and
@@ -46,17 +48,20 @@ public abstract class AbstractLabel extends GUIElement
     /**
      * The label contents.
      */
+    @NotNull
     private String text = "";
 
+    @Nullable
     private ImageIcon backgroundImage;
 
     /**
      * If set, the opaque background color. This field is ignored if {@link
      * #backgroundImage} is set.
      */
+    @NotNull
     private final Color backgroundColor;
 
-    protected AbstractLabel(final TooltipManager tooltipManager, final JXCWindowRenderer windowRenderer, final String name, final int x, final int y, final int w, final int h, final BufferedImage picture, final Color backgroundColor)
+    protected AbstractLabel(@NotNull final TooltipManager tooltipManager, @NotNull final JXCWindowRenderer windowRenderer, @NotNull final String name, final int x, final int y, final int w, final int h, @Nullable final BufferedImage picture, @NotNull final Color backgroundColor)
     {
         super(tooltipManager, windowRenderer, name, x, y, w, h, Transparency.TRANSLUCENT);
         backgroundImage = picture == null ? null : new ImageIcon(picture);
@@ -70,10 +75,8 @@ public abstract class AbstractLabel extends GUIElement
         super.dispose();
     }
 
-    public void setText(final String text)
+    public void setText(@NotNull final String text)
     {
-        if (text == null) throw new IllegalArgumentException();
-
         if (!this.text.equals(text))
         {
             this.text = text;
@@ -91,6 +94,7 @@ public abstract class AbstractLabel extends GUIElement
      *
      * @return The label text.
      */
+    @NotNull
     protected String getText()
     {
         return text;
@@ -98,7 +102,7 @@ public abstract class AbstractLabel extends GUIElement
 
     /** {@inheritDoc} */
     @Override
-    protected void render(final Graphics g)
+    protected void render(@NotNull final Graphics g)
     {
         if (backgroundImage != null)
         {
@@ -117,7 +121,7 @@ public abstract class AbstractLabel extends GUIElement
      *
      * @param backgroundImage The new background image.
      */
-    protected void setBackgroundImage(final ImageIcon backgroundImage)
+    protected void setBackgroundImage(@Nullable final ImageIcon backgroundImage)
     {
         this.backgroundImage = backgroundImage;
         setChanged();

@@ -23,6 +23,7 @@ import junit.framework.Test;
 import junit.framework.TestCase;
 import junit.framework.TestSuite;
 import junit.textui.TestRunner;
+import org.jetbrains.annotations.NotNull;
 
 /**
  * Regression tests for class {@link Orientation} and implementing classes.
@@ -34,11 +35,12 @@ public class OrientationTest extends TestCase
      * Creates a new instance.
      * @param name the test case name
      */
-    public OrientationTest(final String name)
+    public OrientationTest(@NotNull final String name)
     {
         super(name);
     }
 
+    @NotNull
     public static Test suite()
     {
         return new TestSuite(OrientationTest.class);
@@ -48,7 +50,7 @@ public class OrientationTest extends TestCase
      * Runs the regression tests.
      * @param args the command line arguments (ignored)
      */
-    public static void main(final String[] args)
+    public static void main(@NotNull final String[] args)
     {
         TestRunner.run(suite());
     }
@@ -66,13 +68,13 @@ public class OrientationTest extends TestCase
         check(OrientationSN.class, false, true);
     }
 
-    private static void check(final Class<? extends Orientation> class_, final boolean useX, final boolean flip) throws IllegalAccessException, InstantiationException
+    private static void check(@NotNull final Class<? extends Orientation> class_, final boolean useX, final boolean flip) throws IllegalAccessException, InstantiationException
     {
         checkPositive(class_, useX, flip);
         checkNegative(class_, useX, flip);
     }
 
-    private static void checkPositive(final Class<? extends Orientation> class_, final boolean useX, final boolean flip) throws IllegalAccessException, InstantiationException
+    private static void checkPositive(@NotNull final Class<? extends Orientation> class_, final boolean useX, final boolean flip) throws IllegalAccessException, InstantiationException
     {
         final Orientation o = class_.newInstance();
         o.setHasNegativeImage(false);
@@ -104,7 +106,7 @@ public class OrientationTest extends TestCase
         check(o, useX, flip, true, 0, 0, 0, 32, false);
     }
 
-    private static void checkNegative(final Class<? extends Orientation> class_, final boolean useX, final boolean flip) throws IllegalAccessException, InstantiationException
+    private static void checkNegative(@NotNull final Class<? extends Orientation> class_, final boolean useX, final boolean flip) throws IllegalAccessException, InstantiationException
     {
         final Orientation o = class_.newInstance();
         o.setHasNegativeImage(true);
@@ -136,7 +138,7 @@ public class OrientationTest extends TestCase
         check(o, useX, flip, true, 0, 0, 100, 32, true);
     }
 
-    private static void check(final Orientation o, final boolean useX, final boolean flip, final boolean valid, final int x, final int y, final int w, final int h, final boolean negativeImage)
+    private static void check(@NotNull final Orientation o, final boolean useX, final boolean flip, final boolean valid, final int x, final int y, final int w, final int h, final boolean negativeImage)
     {
         final int isX = useX ? o.getX() : o.getY();
         final int isY = useX ? o.getY() : o.getX();

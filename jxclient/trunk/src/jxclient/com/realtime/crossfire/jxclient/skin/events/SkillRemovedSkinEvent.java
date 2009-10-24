@@ -22,6 +22,7 @@ package com.realtime.crossfire.jxclient.skin.events;
 import com.realtime.crossfire.jxclient.skills.Skill;
 import com.realtime.crossfire.jxclient.skills.SkillListener;
 import com.realtime.crossfire.jxclient.window.GUICommandList;
+import org.jetbrains.annotations.NotNull;
 
 /**
  * A {@link SkinEvent} that executes a {@link GUICommandList} whenever a new
@@ -33,16 +34,19 @@ public class SkillRemovedSkinEvent implements SkinEvent
     /**
      * The {@link GUICommandList} to execute.
      */
+    @NotNull
     private final GUICommandList commandList;
 
     /**
      * The {@link Skill} to monitor.
      */
+    @NotNull
     private final Skill skill;
 
     /**
      * The {@link SkillListener} attached to {@link #skill}.
      */
+    @NotNull
     private final SkillListener skillListener = new SkillListener()
     {
         /** {@inheritDoc} */
@@ -72,7 +76,7 @@ public class SkillRemovedSkinEvent implements SkinEvent
      * @param commandList the command list to execute.
      * @param skill the skill to monitor
      */
-    public SkillRemovedSkinEvent(final GUICommandList commandList, final Skill skill)
+    public SkillRemovedSkinEvent(@NotNull final GUICommandList commandList, @NotNull final Skill skill)
     {
         this.commandList = commandList;
         this.skill = skill;

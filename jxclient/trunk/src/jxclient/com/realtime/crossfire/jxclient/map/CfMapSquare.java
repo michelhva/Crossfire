@@ -21,6 +21,8 @@ package com.realtime.crossfire.jxclient.map;
 
 import com.realtime.crossfire.jxclient.faces.Face;
 import com.realtime.crossfire.jxclient.server.CrossfireMap2Command;
+import org.jetbrains.annotations.NotNull;
+import org.jetbrains.annotations.Nullable;
 
 /**
  * Represents a square in a {@link CfMap}. A square comprises of {@link
@@ -43,11 +45,13 @@ public class CfMapSquare
     /**
      * The default face value for newly creates squares.
      */
+    @Nullable
     public static final Face DEFAULT_FACE = null;
 
     /**
      * The {@link CfMapSquareListener} instance to notify.
      */
+    @NotNull
     private final CfMapSquareListener mapSquareListener;
 
     /**
@@ -76,12 +80,14 @@ public class CfMapSquare
     /**
      * The faces (of head-parts) of all layers as sent by the server.
      */
+    @NotNull
     private final Face[] faces = new Face[CrossfireMap2Command.NUM_LAYERS];
 
     /**
      * If this square contains a non-head part of a multi-square object this
      * points to the head square.
      */
+    @NotNull
     private final CfMapSquare[] heads = new CfMapSquare[CrossfireMap2Command.NUM_LAYERS];
 
     /**
@@ -92,7 +98,7 @@ public class CfMapSquare
      * @param y the absolute map y-coordinate of the top left corner of this
      * patch
      */
-    public CfMapSquare(final CfMapSquareListener mapSquareListener, final int x, final int y)
+    public CfMapSquare(@NotNull final CfMapSquareListener mapSquareListener, final int x, final int y)
     {
         this.mapSquareListener = mapSquareListener;
         this.x = x;
@@ -193,7 +199,7 @@ public class CfMapSquare
      * <code>LAYERS-1</code>
      * @param face the face to set
      */
-    public void setFace(final int layer, final Face face)
+    public void setFace(final int layer, @Nullable final Face face)
     {
         if (faces[layer] != face)
         {
@@ -207,6 +213,7 @@ public class CfMapSquare
      * @param layer the layer to return the face
      * @return the face value
      */
+    @Nullable
     public Face getFace(final int layer)
     {
         return faces[layer];
@@ -221,7 +228,7 @@ public class CfMapSquare
      * @param setAlways if set, always update the face; if unset, only update
      * when fog-of-war
      */
-    public void setHeadMapSquare(final int layer, final CfMapSquare mapSquare, final boolean setAlways)
+    public void setHeadMapSquare(final int layer, @Nullable final CfMapSquare mapSquare, final boolean setAlways)
     {
         if (heads[layer] != mapSquare && (setAlways || heads[layer] == null || heads[layer].isFogOfWar()))
         {
@@ -236,6 +243,7 @@ public class CfMapSquare
      * @return the head map square, or <code>null</code> if this square does
      * not contain a multi-tail
      */
+    @Nullable
     public CfMapSquare getHeadMapSquare(final int layer)
     {
         // suppress parts of fog-of-war objects if this square is not
@@ -274,6 +282,7 @@ public class CfMapSquare
     }
 
     /** {@inheritDoc} */
+    @NotNull
     @Override
     public String toString()
     {

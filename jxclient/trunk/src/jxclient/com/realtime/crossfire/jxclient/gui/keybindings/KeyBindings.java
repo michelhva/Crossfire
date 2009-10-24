@@ -37,6 +37,8 @@ import java.io.LineNumberReader;
 import java.io.OutputStreamWriter;
 import java.util.Collection;
 import java.util.HashSet;
+import org.jetbrains.annotations.NotNull;
+import org.jetbrains.annotations.Nullable;
 
 /**
  * Manages a set of key bindings.
@@ -47,21 +49,25 @@ public class KeyBindings
     /**
      * The commands instance for executing commands.
      */
+    @NotNull
     private final Commands commands;
 
     /**
      * The {@link GuiManager} to use.
      */
+    @NotNull
     private final GuiManager guiManager;
 
     /**
      * The {@link Macros} instance to use.
      */
+    @NotNull
     private final Macros macros;
 
     /**
      * The active key bindings.
      */
+    @NotNull
     private final Collection<KeyBinding> keybindings = new HashSet<KeyBinding>();
 
     /**
@@ -73,11 +79,13 @@ public class KeyBindings
     /**
      * The file for saving the bindings; <code>null</code> to not save.
      */
+    @Nullable
     private final File file;
 
     /**
      * The key code map to use. Set to <code>null</code> until first use.
      */
+    @Nullable
     private KeyCodeMap keyCodeMap = null;
 
     /**
@@ -88,7 +96,7 @@ public class KeyBindings
      * @param guiManager the gui manager to use
      * @param macros the macros instance to use
      */
-    public KeyBindings(final File file, final Commands commands, final GuiManager guiManager, final Macros macros)
+    public KeyBindings(@Nullable final File file, @NotNull final Commands commands, @NotNull final GuiManager guiManager, @NotNull final Macros macros)
     {
         this.file = file;
         this.commands = commands;
@@ -100,6 +108,7 @@ public class KeyBindings
      * Returns the file for saving the bindings; <code>null</code> to not save.
      * @return the file
      */
+    @Nullable
     public File getFile()
     {
         return file;
@@ -113,7 +122,7 @@ public class KeyBindings
      * @param isDefault whether the key binding is a "default" binding which
      * should not be saved
      */
-    public void addKeyBindingAsKeyCode(final int keyCode, final int modifiers, final GUICommandList cmdlist, final boolean isDefault)
+    public void addKeyBindingAsKeyCode(final int keyCode, final int modifiers, @NotNull final GUICommandList cmdlist, final boolean isDefault)
     {
         addKeyBinding(new KeyCodeKeyBinding(keyCode, modifiers, cmdlist, isDefault));
     }
@@ -125,7 +134,7 @@ public class KeyBindings
      * @param isDefault whether the key binding is a "default" binding which
      * should not be saved
      */
-    public void addKeyBindingAsKeyChar(final char keyChar, final GUICommandList cmdlist, final boolean isDefault)
+    public void addKeyBindingAsKeyChar(final char keyChar, @NotNull final GUICommandList cmdlist, final boolean isDefault)
     {
         addKeyBinding(new KeyCharKeyBinding(keyChar, cmdlist, isDefault));
     }
@@ -134,7 +143,7 @@ public class KeyBindings
      * Adds (or replace) a key binding.
      * @param keyBinding the key binding
      */
-    private void addKeyBinding(final KeyBinding keyBinding)
+    private void addKeyBinding(@NotNull final KeyBinding keyBinding)
     {
         keybindings.remove(keyBinding);
         keybindings.add(keyBinding);
@@ -164,7 +173,7 @@ public class KeyBindings
      * Removes a key binding.
      * @param keyBinding the key binding; may be <code>null</code>
      */
-    private void deleteKeyBinding(final KeyBinding keyBinding)
+    private void deleteKeyBinding(@Nullable final KeyBinding keyBinding)
     {
         if (keyBinding != null)
         {
@@ -331,6 +340,7 @@ public class KeyBindings
      * @return the key binding, or <code>null</code> if no key binding is
      * associated
      */
+    @Nullable
     private KeyBinding getKeyBindingAsKeyCode(final int keyCode, final int modifiers)
     {
         for (final KeyBinding keyBinding : keybindings)
@@ -350,6 +360,7 @@ public class KeyBindings
      * @return the key binding, or <code>null</code> if no key binding is
      * associated
      */
+    @Nullable
     private KeyBinding getKeyBindingAsKeyChar(final char keyChar)
     {
         for (final KeyBinding keyBinding : keybindings)
@@ -370,7 +381,7 @@ public class KeyBindings
      * should not be saved
      * @throws InvalidKeyBindingException if the key binding is invalid
      */
-    public void parseKeyBinding(final String line, final boolean isDefault) throws InvalidKeyBindingException
+    public void parseKeyBinding(@NotNull final String line, final boolean isDefault) throws InvalidKeyBindingException
     {
         if (line.startsWith("char "))
         {
@@ -440,7 +451,7 @@ public class KeyBindings
      * @param e the event to execute
      * @return whether a matching key binding was found
      */
-    public boolean handleKeyPress(final KeyEvent e)
+    public boolean handleKeyPress(@NotNull final KeyEvent e)
     {
         return executeKeyBinding(getKeyBindingAsKeyCode(e.getKeyCode(), e.getModifiers()));
     }
@@ -450,7 +461,7 @@ public class KeyBindings
      * @param e the event to execute
      * @return whether a matching key binding was found
      */
-    public boolean handleKeyTyped(final KeyEvent e)
+    public boolean handleKeyTyped(@NotNull final KeyEvent e)
     {
         return executeKeyBinding(getKeyBindingAsKeyChar(e.getKeyChar()));
     }
@@ -460,7 +471,7 @@ public class KeyBindings
      * @param keyBinding the key binding to execute; may be <code>null</code>
      * @return whether <code>keyBinding</code> is not <code>null</code>
      */
-    private static boolean executeKeyBinding(final KeyBinding keyBinding)
+    private static boolean executeKeyBinding(@Nullable final KeyBinding keyBinding)
     {
         if (keyBinding == null)
         {

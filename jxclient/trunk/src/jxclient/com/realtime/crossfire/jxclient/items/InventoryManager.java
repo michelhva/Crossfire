@@ -21,6 +21,7 @@
 package com.realtime.crossfire.jxclient.items;
 
 import java.util.List;
+import org.jetbrains.annotations.NotNull;
 
 /**
  * Manages the items in the player's inventory.
@@ -38,7 +39,7 @@ public class InventoryManager extends AbstractManager
      *
      * @return The insertion index.
      */
-    public static int getInsertionIndex(final List<CfItem> list, final CfItem item)
+    public static int getInsertionIndex(@NotNull final List<CfItem> list, @NotNull final CfItem item)
     {
         for (int i = 0; i < list.size(); i++)
         {
@@ -61,7 +62,7 @@ public class InventoryManager extends AbstractManager
      * </code>item2</code>, 0=<code>item1</code> == </code>item2</code>,
      * +1=<code>item1</code> after </code>item2</code>.
      */
-    private static int compareItem(final CfItem item1, final CfItem item2)
+    private static int compareItem(@NotNull final CfItem item1, @NotNull final CfItem item2)
     {
         if (item1.getType() < item2.getType()) return -1;
         if (item1.getType() > item2.getType()) return +1;

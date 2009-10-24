@@ -1,5 +1,7 @@
 package com.realtime.crossfire.jxclient.server;
 
+import org.jetbrains.annotations.NotNull;
+
 /**
  * Interface for listeners interested in "stats" commands.
  * @author Andreas Kirschbaum
@@ -396,7 +398,7 @@ public interface CrossfireStatsListener
      * @param stat the stat
      * @param param the parameter
      */
-    void statStringReceived(int stat, String param);
+    void statStringReceived(int stat, @NotNull String param);
 
     /**
      * A "stats" command with a skill argument has been received.

@@ -19,6 +19,8 @@
 //
 package com.realtime.crossfire.jxclient.faces;
 
+import org.jetbrains.annotations.NotNull;
+
 /**
  * Interface for classes implementing a means to load {@link Face}s.
  * @author Andreas Kirschbaum
@@ -39,18 +41,18 @@ public interface FaceQueue
      * while still processing may be notified only once.
      * @param face the requested face
      */
-    void loadFace(Face face);
+    void loadFace(@NotNull Face face);
 
     /**
      * Adds a {@link FaceQueueListener} to be notified about processed faces.
      * @param faceQueueListener the listener to add
      */
-    void addFaceQueueListener(FaceQueueListener faceQueueListener);
+    void addFaceQueueListener(@NotNull FaceQueueListener faceQueueListener);
 
     /**
      * Removes a {@link FaceQueueListener} to be notified about processed
      * faces.
      * @param faceQueueListener the listener to remove
      */
-    void removeFaceQueueListener(FaceQueueListener faceQueueListener);
+    void removeFaceQueueListener(@NotNull FaceQueueListener faceQueueListener);
 }

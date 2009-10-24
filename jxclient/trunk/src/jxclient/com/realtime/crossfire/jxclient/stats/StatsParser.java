@@ -22,6 +22,7 @@ package com.realtime.crossfire.jxclient.stats;
 import com.realtime.crossfire.jxclient.server.CrossfireStatsListener;
 import java.util.HashMap;
 import java.util.Map;
+import org.jetbrains.annotations.NotNull;
 
 /**
  * Utility class to parse stat names.
@@ -34,6 +35,7 @@ public class StatsParser
      * Maps stat names to stat index values. Only stats useful in skin files
      * are included.
      */
+    @NotNull
     private static final Map<String, Integer> statTable = new HashMap<String, Integer>();
     static
     {
@@ -99,7 +101,7 @@ public class StatsParser
      *
      * @throws IllegalArgumentException if the stat name is undefined
      */
-    public static int parseStat(final String name)
+    public static int parseStat(@NotNull final String name)
     {
         if (!statTable.containsKey(name))
         {

@@ -26,6 +26,7 @@ import com.realtime.crossfire.jxclient.gui.scrollable.GUIScrollable;
 import com.realtime.crossfire.jxclient.window.JXCWindowRenderer;
 import java.awt.Transparency;
 import java.awt.event.MouseEvent;
+import org.jetbrains.annotations.NotNull;
 
 /**
  * A {@link GUIElement} representing an in-game object.
@@ -51,7 +52,7 @@ public abstract class GUIItem extends ActivatableGUIElement implements GUIScroll
      * @param w the width for drawing this element to screen
      * @param h the height for drawing this element to screen
      */
-    protected GUIItem(final TooltipManager tooltipManager, final JXCWindowRenderer windowRenderer, final String name, final int x, final int y, final int w, final int h)
+    protected GUIItem(@NotNull final TooltipManager tooltipManager, @NotNull final JXCWindowRenderer windowRenderer, @NotNull final String name, final int x, final int y, final int w, final int h)
     {
         super(tooltipManager, windowRenderer, name, x, y, w, h, Transparency.TRANSLUCENT);
     }
@@ -65,7 +66,7 @@ public abstract class GUIItem extends ActivatableGUIElement implements GUIScroll
 
     /** {@inheritDoc} */
     @Override
-    public void mouseClicked(final MouseEvent e)
+    public void mouseClicked(@NotNull final MouseEvent e)
     {
         super.mouseClicked(e);
         switch (e.getButton())

@@ -19,6 +19,8 @@
 //
 package com.realtime.crossfire.jxclient.server;
 
+import org.jetbrains.annotations.NotNull;
+
 /**
  * Encapsulates the message type numbers for drawextinfo messages.
  *
@@ -101,6 +103,7 @@ public class MessageTypes
      * Return all defined message types.
      * @return all defined message types
      */
+    @NotNull
     public static int[] getAllTypes()
     {
         return new int[] {
@@ -135,7 +138,7 @@ public class MessageTypes
      *
      * @throws UnknownCommandException If the string is unknown.
      */
-    public static int parseMessageType(final String str) throws UnknownCommandException
+    public static int parseMessageType(@NotNull final String str) throws UnknownCommandException
     {
         if (str.equals("BOOK")) return MSG_TYPE_BOOK;
         if (str.equals("CARD")) return MSG_TYPE_CARD;

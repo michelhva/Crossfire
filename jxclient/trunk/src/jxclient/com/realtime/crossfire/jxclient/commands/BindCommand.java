@@ -25,6 +25,7 @@ import com.realtime.crossfire.jxclient.util.StringUtils;
 import com.realtime.crossfire.jxclient.window.GUICommandList;
 import com.realtime.crossfire.jxclient.window.GuiManager;
 import com.realtime.crossfire.jxclient.window.JXCWindow;
+import org.jetbrains.annotations.NotNull;
 
 /**
  * Implements the "bind" command. It associates a key with a command.
@@ -35,21 +36,25 @@ public class BindCommand extends AbstractCommand
     /**
      * The windows to execute in.
      */
+    @NotNull
     private final JXCWindow window;
 
     /**
      * The commands instance for executing commands.
      */
+    @NotNull
     private final Commands commands;
 
     /**
      * The {@link GuiManager} to use.
      */
+    @NotNull
     private final GuiManager guiManager;
 
     /**
      * The {@link Macros} instance to use.
      */
+    @NotNull
     private final Macros macros;
 
     /**
@@ -60,7 +65,7 @@ public class BindCommand extends AbstractCommand
      * @param guiManager the gui manager to use
      * @param macros the macros instance to use
      */
-    public BindCommand(final JXCWindow window, final CrossfireServerConnection crossfireServerConnection, final Commands commands, final GuiManager guiManager, final Macros macros)
+    public BindCommand(@NotNull final JXCWindow window, @NotNull final CrossfireServerConnection crossfireServerConnection, @NotNull final Commands commands, @NotNull final GuiManager guiManager, @NotNull final Macros macros)
     {
         super(crossfireServerConnection);
         this.window = window;
@@ -78,7 +83,7 @@ public class BindCommand extends AbstractCommand
 
     /** {@inheritDoc} */
     @Override
-    public void execute(final String args)
+    public void execute(@NotNull final String args)
     {
         final String commandList;
         final boolean perCharacterBinding;

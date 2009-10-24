@@ -22,6 +22,7 @@ package com.realtime.crossfire.jxclient.spells;
 import com.realtime.crossfire.jxclient.util.StringSplitter;
 import java.util.ArrayList;
 import java.util.Collection;
+import org.jetbrains.annotations.NotNull;
 
 /**
  *
@@ -31,14 +32,17 @@ import java.util.Collection;
  */
 public class Spell
 {
+    @NotNull
     private final String name;
 
+    @NotNull
     private final Collection<SpellListener> listeners = new ArrayList<SpellListener>();
 
     private int faceNum;
 
     private int tag;
 
+    @NotNull
     private String message = "";
 
     private int level;
@@ -57,7 +61,7 @@ public class Spell
 
     private boolean unknown = false;
 
-    public Spell(final String name)
+    public Spell(@NotNull final String name)
     {
         this.name = name;
     }
@@ -102,11 +106,13 @@ public class Spell
         return path;
     }
 
+    @NotNull
     public String getName()
     {
         return name;
     }
 
+    @NotNull
     public String getMessage()
     {
         return message;
@@ -139,7 +145,7 @@ public class Spell
         }
     }
 
-    public void setParameters(final int faceNum, final int tag, final String message, final int level, final int castingTime, final int mana, final int grace, final int damage, final int skill, final int path)
+    public void setParameters(final int faceNum, final int tag, @NotNull final String message, final int level, final int castingTime, final int mana, final int grace, final int damage, final int skill, final int path)
     {
         boolean changed = false;
 
@@ -220,7 +226,7 @@ public class Spell
      * name and unknown flag values are not copied.
      * @param spell the spell instance to copy from
      */
-    public void setParameters(final Spell spell)
+    public void setParameters(@NotNull final Spell spell)
     {
         setParameters(spell.faceNum, spell.tag, spell.message, spell.level, spell.castingTime, spell.mana, spell.grace, spell.damage, spell.skill, spell.path);
     }
@@ -253,6 +259,7 @@ public class Spell
         }
     }
 
+    @NotNull
     @Override
     public String toString()
     {
@@ -273,6 +280,7 @@ public class Spell
      *
      * @return The tooltip text.
      */
+    @NotNull
     public String getTooltipText()
     {
         final StringBuilder sb = new StringBuilder(name);
@@ -303,7 +311,7 @@ public class Spell
      * Adds a {@link SpellListener} to be notified of changes.
      * @param listener the listener to add
      */
-    public void addSpellListener(final SpellListener listener)
+    public void addSpellListener(@NotNull final SpellListener listener)
     {
         listeners.add(listener);
     }
@@ -312,7 +320,7 @@ public class Spell
      * Removes a {@link SpellListener} to be notified of changes.
      * @param listener the listener to remove
      */
-    public void removeSpellListener(final SpellListener listener)
+    public void removeSpellListener(@NotNull final SpellListener listener)
     {
         listeners.remove(listener);
     }

@@ -24,6 +24,7 @@ import com.realtime.crossfire.jxclient.settings.options.OptionException;
 import com.realtime.crossfire.jxclient.settings.options.OptionManager;
 import java.util.Collection;
 import java.util.LinkedList;
+import org.jetbrains.annotations.NotNull;
 
 /**
  * Defines constants for pickup mode.
@@ -126,11 +127,13 @@ public class Pickup
     /**
      * All pickup options.
      */
+    @NotNull
     private final Collection<PickupOption> pickupOptions = new LinkedList<PickupOption>();
 
     /**
      * The command queue for sending pickup commands.
      */
+    @NotNull
     private final CommandQueue commandQueue;
 
     /**
@@ -144,7 +147,7 @@ public class Pickup
      * @param optionManager the option manager to use
      * @throws OptionException if an option cannot be registered
      */
-    public Pickup(final CommandQueue commandQueue, final OptionManager optionManager) throws OptionException
+    public Pickup(@NotNull final CommandQueue commandQueue, @NotNull final OptionManager optionManager) throws OptionException
     {
         this.commandQueue = commandQueue;
 //      optionManager.addOption("pickup_ratio0", "Pickup mode: weight/value off", newPickupOption(PU_RATIO, 0));
@@ -195,6 +198,7 @@ public class Pickup
      * @param option the pickup value
      * @return the pickup option
      */
+    @NotNull
     private Option newPickupOption(final long option)
     {
         final PickupOption pickupOption = new PickupOption(this, option);

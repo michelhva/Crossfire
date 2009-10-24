@@ -29,6 +29,7 @@ import java.awt.image.BufferedImage;
 import java.io.File;
 import java.io.IOException;
 import javax.imageio.ImageIO;
+import org.jetbrains.annotations.NotNull;
 
 /**
  * Implements the "screenshot" command. It write the current window contents
@@ -52,11 +53,13 @@ public class ScreenshotCommand extends AbstractCommand
     /**
      * The window to execute in.
      */
+    @NotNull
     private final JXCWindow window;
 
     /**
      * The renderer to use.
      */
+    @NotNull
     private final JXCWindowRenderer windowRenderer;
 
     /**
@@ -65,7 +68,7 @@ public class ScreenshotCommand extends AbstractCommand
      * @param windowRenderer the renderer to use
      * @param crossfireServerConnection the connection instance
      */
-    public ScreenshotCommand(final JXCWindow window, final JXCWindowRenderer windowRenderer, final CrossfireServerConnection crossfireServerConnection)
+    public ScreenshotCommand(@NotNull final JXCWindow window, @NotNull final JXCWindowRenderer windowRenderer, @NotNull final CrossfireServerConnection crossfireServerConnection)
     {
         super(crossfireServerConnection);
         this.window = window;
@@ -81,7 +84,7 @@ public class ScreenshotCommand extends AbstractCommand
 
     /** {@inheritDoc} */
     @Override
-    public void execute(final String args)
+    public void execute(@NotNull final String args)
     {
         final File file;
         if (args.length() == 0)

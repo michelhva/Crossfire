@@ -27,6 +27,7 @@ import com.realtime.crossfire.jxclient.window.JXCWindowRenderer;
 import java.awt.Color;
 import java.awt.Font;
 import java.awt.image.BufferedImage;
+import org.jetbrains.annotations.NotNull;
 
 /**
  * A factory class to create "checkbox" instances.
@@ -38,21 +39,25 @@ public class CheckBoxFactory
     /**
      * The image for the "checked" state.
      */
+    @NotNull
     private final BufferedImage checked;
 
     /**
      * The image for the "unchecked" state.
      */
+    @NotNull
     private final BufferedImage unchecked;
 
     /**
      * The font to use.
      */
+    @NotNull
     private final Font font;
 
     /**
      * The text color.
      */
+    @NotNull
     private final Color color;
 
     /**
@@ -66,13 +71,8 @@ public class CheckBoxFactory
      *
      * @param color The text color.
      */
-    public CheckBoxFactory(final BufferedImage checked, final BufferedImage unchecked, final Font font, final Color color)
+    public CheckBoxFactory(@NotNull final BufferedImage checked, @NotNull final BufferedImage unchecked, @NotNull final Font font, @NotNull final Color color)
     {
-        if (checked == null) throw new IllegalArgumentException();
-        if (unchecked == null) throw new IllegalArgumentException();
-        if (font == null) throw new IllegalArgumentException();
-        if (color == null) throw new IllegalArgumentException();
-
         this.checked = checked;
         this.unchecked = unchecked;
         this.font = font;
@@ -104,7 +104,8 @@ public class CheckBoxFactory
      *
      * @return The new checkbox.
      */
-    public GUIElement newCheckBox(final TooltipManager tooltipManager, final JXCWindowRenderer windowRenderer, final String name, final int x, final int y, final int w, final int h, final CheckBoxOption option, final String text)
+    @NotNull
+    public GUIElement newCheckBox(@NotNull final TooltipManager tooltipManager, @NotNull final JXCWindowRenderer windowRenderer, @NotNull final String name, final int x, final int y, final int w, final int h, @NotNull final CheckBoxOption option, @NotNull final String text)
     {
             return new GUICheckBox(tooltipManager, windowRenderer, name, x, y, w, h, checked, unchecked, font, color, option, text);
     }

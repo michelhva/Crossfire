@@ -20,6 +20,7 @@
 package com.realtime.crossfire.jxclient.gui.log;
 
 import java.util.Collection;
+import org.jetbrains.annotations.NotNull;
 
 /**
  * Encapsulates the state for a scroll bar. The first line shown is the line
@@ -78,7 +79,7 @@ public class RenderState
      *
      * @param h The viewable height.
      */
-    public synchronized void setHeight(final Buffer buffer, final int h)
+    public synchronized void setHeight(@NotNull final Buffer buffer, final int h)
     {
         final int oldHeight = height;
         height = h;
@@ -107,7 +108,7 @@ public class RenderState
      *
      * @param lines The number of lines that have been added.
      */
-    public synchronized void linesAdded(final Buffer buffer, final int lines)
+    public synchronized void linesAdded(@NotNull final Buffer buffer, final int lines)
     {
         if (topOffset < 0)
         {
@@ -131,7 +132,7 @@ public class RenderState
      *
      * @param lines The number of lines that have been replaced.
      */
-    public synchronized void linesReplaced(final Buffer buffer, final int lines)
+    public synchronized void linesReplaced(@NotNull final Buffer buffer, final int lines)
     {
         if (topOffset < 0)
         {
@@ -151,7 +152,7 @@ public class RenderState
      *
      * @param lines The number of lines that have been remove.
      */
-    public synchronized void linesRemoved(final Buffer buffer, final Collection<Line> lines)
+    public synchronized void linesRemoved(@NotNull final Buffer buffer, @NotNull final Collection<Line> lines)
     {
         if (buffer.getTotalHeight() <= height)
         {
@@ -258,7 +259,7 @@ public class RenderState
      *
      * @param y The new location.
      */
-    public synchronized void scrollTo(final Buffer buffer, final int y)
+    public synchronized void scrollTo(@NotNull final Buffer buffer, final int y)
     {
         if (buffer.getTotalHeight() <= height)
         {
@@ -292,7 +293,7 @@ public class RenderState
      *
      * @param buffer The displayed buffer.
      */
-    public synchronized void scrollToBottom(final Buffer buffer)
+    public synchronized void scrollToBottom(@NotNull final Buffer buffer)
     {
         if (buffer.getTotalHeight() <= height)
         {

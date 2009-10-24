@@ -21,6 +21,7 @@ package com.realtime.crossfire.jxclient.gui.commands;
 
 import com.realtime.crossfire.jxclient.commands.Commands;
 import com.realtime.crossfire.jxclient.commands.Macros;
+import org.jetbrains.annotations.NotNull;
 
 /**
  * A {@link GUICommand} which executes a Crossfire command.
@@ -29,14 +30,17 @@ import com.realtime.crossfire.jxclient.commands.Macros;
 public class ExecuteCommandCommand implements GUICommand
 {
     /** The commands instance for executing the command. */
+    @NotNull
     private final Commands commands;
 
     /** The command to execute. */
+    @NotNull
     private final String command;
 
     /**
      * The {@link Macros} instance to use.
      */
+    @NotNull
     private final Macros macros;
 
     /**
@@ -45,7 +49,7 @@ public class ExecuteCommandCommand implements GUICommand
      * @param command the command to execute
      * @param macros the macros instance to use
      */
-    public ExecuteCommandCommand(final Commands commands, final String command, final Macros macros)
+    public ExecuteCommandCommand(@NotNull final Commands commands, @NotNull final String command, @NotNull final Macros macros)
     {
         this.commands = commands;
         this.command = command;
@@ -70,6 +74,7 @@ public class ExecuteCommandCommand implements GUICommand
      * Returns the command to execute.
      * @return the command to execute
      */
+    @NotNull
     public String getCommand()
     {
         return command;

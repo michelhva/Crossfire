@@ -26,6 +26,8 @@ import java.awt.DisplayMode;
 import java.awt.GraphicsDevice;
 import java.awt.GraphicsEnvironment;
 import java.io.IOException;
+import org.jetbrains.annotations.NotNull;
+import org.jetbrains.annotations.Nullable;
 
 /**
  * Command line argument parser.
@@ -34,29 +36,36 @@ import java.io.IOException;
  */
 public class Options
 {
+    @Nullable
     private Settings prefs = null;
 
     private boolean fullScreen = true;
 
+    @Nullable
     private String server = null;
 
     private boolean debugGui = false;
 
+    @Nullable
     private String debugProtocolFilename = null;
 
     /**
      * The filename for keyboard debug logs or <code>null</code> to not log
      * keyboard input.
      */
+    @Nullable
     private String debugKeyboardFilename = null;
 
+    @Nullable
     private Resolution resolution = null;
 
+    @Nullable
     private String skin = null;
 
     /**
      * The default skin name.
      */
+    @NotNull
     public static final String DEFAULT_SKIN = "ragnorok";
 
     /**
@@ -64,7 +73,7 @@ public class Options
      * @param args the command line arguments
      * @throws IOException if an I/O error occurs
      */
-    public void parse(final String[] args) throws IOException
+    public void parse(@NotNull final String[] args) throws IOException
     {
         prefs = new Settings(Filenames.getSettingsFile());
         resolution = Resolution.parse(false, prefs.getString("resolution", getScreenResolution()));
@@ -162,6 +171,7 @@ public class Options
      * Returns the current screen's resolution.
      * @return the screen's resolution.
      */
+    @NotNull
     private static String getScreenResolution()
     {
         final GraphicsEnvironment ge = GraphicsEnvironment.getLocalGraphicsEnvironment();
@@ -170,6 +180,7 @@ public class Options
         return new Resolution(true, displayMode.getWidth(), displayMode.getHeight()).toString();
     }
 
+    @Nullable
     public String getDebugProtocolFilename()
     {
         return debugProtocolFilename;
@@ -179,11 +190,13 @@ public class Options
      * Returns the filename for keyboard debug logs.
      * @return the filename or <code>null</code> to not log keyboard input
      */
+    @Nullable
     public String getDebugKeyboardFilename()
     {
         return debugKeyboardFilename;
     }
 
+    @Nullable
     public Settings getPrefs()
     {
         return prefs;
@@ -194,11 +207,13 @@ public class Options
         return debugGui;
     }
 
+    @Nullable
     public Resolution getResolution()
     {
         return resolution;
     }
 
+    @Nullable
     public String getSkin()
     {
         return skin;
@@ -209,6 +224,7 @@ public class Options
         return fullScreen;
     }
 
+    @Nullable
     public String getServer()
     {
         return server;

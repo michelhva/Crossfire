@@ -21,6 +21,8 @@ package com.realtime.crossfire.jxclient.sound;
 
 import java.io.IOException;
 import java.io.InputStream;
+import org.jetbrains.annotations.NotNull;
+import org.jetbrains.annotations.Nullable;
 
 /**
  * Utility class to locate audio files.
@@ -48,7 +50,8 @@ public class AudioFileLoader
      *
      * @throws IOException If the file cannot be located.
      */
-    public static InputStream getInputStream(final String name, final String action) throws IOException
+    @NotNull
+    public static InputStream getInputStream(@Nullable final String name, @NotNull final String action) throws IOException
     {
         if (name != null)
         {
@@ -74,7 +77,8 @@ public class AudioFileLoader
      *
      * @throws IOException If the file cannot be located.
      */
-    private static InputStream getResource(final String name) throws IOException
+    @NotNull
+    private static InputStream getResource(@NotNull final String name) throws IOException
     {
         final String resource = "resource/sounds/"+name+".wav";
 

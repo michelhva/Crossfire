@@ -19,6 +19,8 @@
 //
 package com.realtime.crossfire.jxclient.server;
 
+import org.jetbrains.annotations.NotNull;
+
 /**
  * Interface for listeners interested in {@link ClientSocket} related events.
  * @author Andreas Kirschbaum
@@ -42,24 +44,24 @@ public interface ClientSocketListener
      * @param end the end index of the packet in <code>buf</code>
      * @throws UnknownCommandException if the packet cannot be processed
      */
-    void packetReceived(byte[] buf, int start, int end) throws UnknownCommandException;
+    void packetReceived(@NotNull byte[] buf, int start, int end) throws UnknownCommandException;
 
     /**
      * Called whenever a packet has been sent to the Crossfire server.
      * @param buf the packet contents; must not be modified by client code
      * @param len the length of the packet
      */
-    void packetSent(byte[] buf, int len);
+    void packetSent(@NotNull byte[] buf, int len);
 
     /**
      * Called when the connection is being teared down.
      * @param reason the disconnect reason
      */
-    void disconnecting(String reason);
+    void disconnecting(@NotNull String reason);
 
     /**
      * Called after the connection has been closed.
      * @param reason the disconnect reason
      */
-    void disconnected(String reason);
+    void disconnected(@NotNull String reason);
 }

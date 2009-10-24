@@ -28,6 +28,7 @@ import com.realtime.crossfire.jxclient.stats.StatsListener;
 import com.realtime.crossfire.jxclient.window.JXCWindowRenderer;
 import com.realtime.crossfire.jxclient.window.RendererGuiState;
 import com.realtime.crossfire.jxclient.window.RendererGuiStateListener;
+import org.jetbrains.annotations.NotNull;
 
 /**
  * Monitors stat changes and generates appropriate sound effects.
@@ -44,6 +45,7 @@ public class StatsWatcher
     /**
      * The {@link SoundManager} instance to watch.
      */
+    @NotNull
     private final SoundManager soundManager;
 
     /**
@@ -71,6 +73,7 @@ public class StatsWatcher
     /**
      * The crossfire stats listener.
      */
+    @NotNull
     private final StatsListener statsListener = new StatsListener()
     {
         /** {@inheritDoc} */
@@ -96,21 +99,21 @@ public class StatsWatcher
 
         /** {@inheritDoc} */
         @Override
-        public void titleChanged(final String title)
+        public void titleChanged(@NotNull final String title)
         {
             // ignore
         }
 
         /** {@inheritDoc} */
         @Override
-        public void rangeChanged(final String range)
+        public void rangeChanged(@NotNull final String range)
         {
             // ignore
         }
 
         /** {@inheritDoc} */
         @Override
-        public void activeSkillChanged(final String activeSkill)
+        public void activeSkillChanged(@NotNull final String activeSkill)
         {
             // ignore
         }
@@ -133,11 +136,12 @@ public class StatsWatcher
     /**
      * The gui state listener.
      */
+    @NotNull
     private final RendererGuiStateListener rendererGuiStateListener = new RendererGuiStateListener()
     {
         /** {@inheritDoc} */
         @Override
-        public void guiStateChanged(final RendererGuiState rendererGuiState)
+        public void guiStateChanged(@NotNull final RendererGuiState rendererGuiState)
         {
             active = rendererGuiState == RendererGuiState.PLAYING;
             ignoreLevelChange = System.currentTimeMillis()+DELAY;
@@ -147,25 +151,26 @@ public class StatsWatcher
     /**
      * The player listener.
      */
+    @NotNull
     private final PlayerListener playerListener = new PlayerListener()
     {
         /** {@inheritDoc} */
         @Override
-        public void playerReceived(final CfPlayer player)
+        public void playerReceived(@NotNull final CfPlayer player)
         {
             ignoreLevelChange = System.currentTimeMillis()+DELAY;
         }
 
         /** {@inheritDoc} */
         @Override
-        public void playerAdded(final CfPlayer player)
+        public void playerAdded(@NotNull final CfPlayer player)
         {
             // ignore
         }
 
         /** {@inheritDoc} */
         @Override
-        public void playerRemoved(final CfPlayer player)
+        public void playerRemoved(@NotNull final CfPlayer player)
         {
             // ignore
         }
@@ -178,7 +183,7 @@ public class StatsWatcher
      * @param itemsManager the instance to watch
      * @param soundManager the sound manager instance to watch
      */
-    public StatsWatcher(final Stats stats, final JXCWindowRenderer windowRenderer, final ItemsManager itemsManager, final SoundManager soundManager)
+    public StatsWatcher(@NotNull final Stats stats, @NotNull final JXCWindowRenderer windowRenderer, @NotNull final ItemsManager itemsManager, @NotNull final SoundManager soundManager)
     {
         this.soundManager = soundManager;
         poisoned = stats.getStat(CrossfireStatsListener.C_STAT_POISONED) != 0;
@@ -231,7 +236,7 @@ public class StatsWatcher
      *
      * @param clip The sound clip to play.
      */
-    private void playClip(final String clip)
+    private void playClip(@NotNull final String clip)
     {
         if (active)
         {

@@ -19,6 +19,8 @@
 //
 package com.realtime.crossfire.jxclient.sound;
 
+import org.jetbrains.annotations.NotNull;
+
 /**
  * Manages all sounds.
  *
@@ -32,15 +34,18 @@ public enum Sounds
     /**
      * The sound to play when the character get poisoned.
      */
+    @NotNull
     public static final String POISON_ON = "poison_on";
 
     /**
      * The sound to play when the character gets unpoisoned.
      */
+    @NotNull
     public static final String POISON_OFF = "poison_off";
 
     /**
      * The sound to play when the character gains a new level.
      */
+    @NotNull
     public static final String LEVEL_UP = "level_up";
 }

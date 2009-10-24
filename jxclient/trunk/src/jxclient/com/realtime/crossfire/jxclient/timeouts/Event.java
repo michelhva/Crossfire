@@ -19,6 +19,9 @@
 //
 package com.realtime.crossfire.jxclient.timeouts;
 
+import org.jetbrains.annotations.NotNull;
+import org.jetbrains.annotations.Nullable;
+
 /**
  * Stores information of a timeout event.
  * @author Andreas Kirschbaum
@@ -34,6 +37,7 @@ public class Event implements Comparable<Event>
     /**
      * The timeout event to execute.
      */
+    @NotNull
     private final TimeoutEvent timeoutEvent;
 
     /**
@@ -43,7 +47,7 @@ public class Event implements Comparable<Event>
      *
      * @param timeoutEvent The timeout event to execute.
      */
-    public Event(final int timeout, final TimeoutEvent timeoutEvent)
+    public Event(final int timeout, @NotNull final TimeoutEvent timeoutEvent)
     {
         this.timeout = System.currentTimeMillis()+timeout;
         this.timeoutEvent = timeoutEvent;
@@ -64,6 +68,7 @@ public class Event implements Comparable<Event>
      *
      * @return The timeout event.
      */
+    @NotNull
     public TimeoutEvent getTimeoutEvent()
     {
         return timeoutEvent;
@@ -71,7 +76,7 @@ public class Event implements Comparable<Event>
 
     /** {@inheritDoc} */
     @Override
-    public int compareTo(final Event o)
+    public int compareTo(@NotNull final Event o)
     {
         if (timeout < o.timeout) return -1;
         if (timeout > o.timeout) return +1;
@@ -87,7 +92,7 @@ public class Event implements Comparable<Event>
 
     /** {@inheritDoc} */
     @Override
-    public boolean equals(final Object obj)
+    public boolean equals(@Nullable final Object obj)
     {
         if (obj == null) return false;
         if (obj.getClass() != getClass()) return false;

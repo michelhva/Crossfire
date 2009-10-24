@@ -23,6 +23,7 @@ import com.realtime.crossfire.jxclient.server.CrossfireExpTableListener;
 import com.realtime.crossfire.jxclient.server.CrossfireServerConnection;
 import java.util.HashMap;
 import java.util.Map;
+import org.jetbrains.annotations.NotNull;
 
 /**
  * Stores experience &lt;-&gt; level mappings.
@@ -34,6 +35,7 @@ public class ExperienceTable
     /**
      * Maps level to experience needed to reach the level.
      */
+    @NotNull
     private final Map<Integer, Long> info = new HashMap<Integer, Long>();
 
     /**
@@ -50,11 +52,12 @@ public class ExperienceTable
      * The {@link CrossfireExpTableListener} to receive updated experience
      * tables.
      */
+    @NotNull
     private final CrossfireExpTableListener crossfireExpTableListener = new CrossfireExpTableListener()
     {
         /** {@inheritDoc} */
         @Override
-        public void expTableReceived(final long[] expTable)
+        public void expTableReceived(@NotNull final long[] expTable)
         {
             clear();
             for (int level = 1; level < expTable.length; level++)
@@ -68,7 +71,7 @@ public class ExperienceTable
      * Creates a new instance.
      * @param crossfireServerConnection the connection to monitor
      */
-    public ExperienceTable(final CrossfireServerConnection crossfireServerConnection)
+    public ExperienceTable(@NotNull final CrossfireServerConnection crossfireServerConnection)
     {
         crossfireServerConnection.addCrossfireExpTableListener(crossfireExpTableListener);
     }

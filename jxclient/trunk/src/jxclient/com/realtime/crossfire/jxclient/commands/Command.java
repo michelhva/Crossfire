@@ -19,6 +19,8 @@
 //
 package com.realtime.crossfire.jxclient.commands;
 
+import org.jetbrains.annotations.NotNull;
+
 /**
  * Implements a client-side command.
  *
@@ -38,5 +40,5 @@ public interface Command
      *
      * @param args The command arguments.
      */
-    void execute(String args);
+    void execute(@NotNull String args);
 }

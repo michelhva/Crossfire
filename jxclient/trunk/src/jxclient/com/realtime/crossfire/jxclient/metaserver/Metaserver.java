@@ -31,6 +31,7 @@ import java.net.HttpURLConnection;
 import java.net.URL;
 import java.util.Map;
 import java.util.Properties;
+import org.jetbrains.annotations.NotNull;
 
 /**
  *
@@ -52,27 +53,32 @@ public class Metaserver
     /**
      * The metaserver URL.
      */
+    @NotNull
     private static final String METASERVER_URL = "http://crossfire.real-time.com/metaserver2/meta_client.php";
 
     /**
      * The {@link MetaserverProcessor} used for metaserver queries.
      */
+    @NotNull
     private final MetaserverProcessor metaserverProcessor = new MetaserverProcessor(this);
 
     /**
      * The cached metaserver entries.
      */
+    @NotNull
     private final ServerCache serverCache;
 
     /**
      * The {@link MetaserverModel} instance to update.
      */
+    @NotNull
     private final MetaserverModel metaserverModel;
 
     /**
      * The {@link GuiStateListener} for detecting established or dropped
      * connections.
      */
+    @NotNull
     private final GuiStateListener guiStateListener = new GuiStateListener()
     {
         /** {@inheritDoc} */
@@ -98,7 +104,7 @@ public class Metaserver
 
         /** {@inheritDoc} */
         @Override
-        public void connecting(final ClientSocketState clientSocketState)
+        public void connecting(@NotNull final ClientSocketState clientSocketState)
         {
             // ignore
         }
@@ -112,7 +118,7 @@ public class Metaserver
 
         /** {@inheritDoc} */
         @Override
-        public void connectFailed(final String reason)
+        public void connectFailed(@NotNull final String reason)
         {
             // ignore
         }
@@ -125,7 +131,7 @@ public class Metaserver
      * @param metaserverModel the metaserver model instance to update
      * @param window the window to attach to
      */
-    public Metaserver(final File metaserverCacheFile, final MetaserverModel metaserverModel, final JXCWindow window)
+    public Metaserver(@NotNull final File metaserverCacheFile, @NotNull final MetaserverModel metaserverModel, @NotNull final JXCWindow window)
     {
         serverCache = new ServerCache(metaserverCacheFile);
         this.metaserverModel = metaserverModel;

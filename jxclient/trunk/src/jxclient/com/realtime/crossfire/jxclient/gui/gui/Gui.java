@@ -37,6 +37,8 @@ import java.util.EnumSet;
 import java.util.HashSet;
 import java.util.Set;
 import java.util.concurrent.CopyOnWriteArrayList;
+import org.jetbrains.annotations.NotNull;
+import org.jetbrains.annotations.Nullable;
 
 /**
  * Combines a list of {@link GUIElement}s to for a gui.
@@ -51,16 +53,19 @@ public class Gui
     /**
      * The mouse tracker if in GUI debug mode or <code>null</code> otherwise.
      */
+    @Nullable
     private final MouseTracker mouseTracker;
 
     /**
      * The list of {@link GUIElement}s comprising this gui.
      */
+    @NotNull
     private final Collection<GUIElement> visibleElements = new CopyOnWriteArrayList<GUIElement>();
 
     /**
      * The key bindings for this gui.
      */
+    @NotNull
     private final KeyBindings keyBindings;
 
     /**
@@ -71,18 +76,21 @@ public class Gui
     /**
      * The gui states that do not show this dialog.
      */
+    @NotNull
     private final Collection<RendererGuiState> hideInStates = EnumSet.noneOf(RendererGuiState.class);
 
     /**
      * If non-<code>null</code>, this element is always active. No other
      * element can become active.
      */
+    @Nullable
     private ActivatableGUIElement forcedActive = null;
 
     /**
      * The gui element which has the focus. Set to <code>null</code> if no such
      * element exists.
      */
+    @Nullable
     private ActivatableGUIElement activeElement = null;
 
     /**
@@ -113,6 +121,7 @@ public class Gui
     /**
      * The name of the dialog, or <code>null</code>.
      */
+    @Nullable
     private String name = null;
 
     /**
@@ -124,6 +133,7 @@ public class Gui
      * If set, the auto-close listener to notify if this dialog looses the
      * active gui element.
      */
+    @Nullable
     private GuiAutoCloseListener guiAutoCloseListener = null;
 
     /**
@@ -134,7 +144,7 @@ public class Gui
      * @param guiManager the gui manager to use
      * @param macros the macros instance to use
      */
-    public Gui(final MouseTracker mouseTracker, final Commands commands, final GuiManager guiManager, final Macros macros)
+    public Gui(@Nullable final MouseTracker mouseTracker, @NotNull final Commands commands, @NotNull final GuiManager guiManager, @NotNull final Macros macros)
     {
         this.mouseTracker = mouseTracker;
         keyBindings = new KeyBindings(null, commands, guiManager, macros);
@@ -145,10 +155,8 @@ public class Gui
      *
      * @param name The name of the dialog.
      */
-    public void setName(final String name)
+    public void setName(@NotNull final String name)
     {
-        if (name == null) throw new IllegalArgumentException();
-
         this.name = name;
     }
 
@@ -215,7 +223,7 @@ public class Gui
      *
      * @param element The <code>GUIElement</code> to add.
      */
-    public void add(final GUIElement element)
+    public void add(@NotNull final GUIElement element)
     {
         if (element.getGui() != null) throw new IllegalArgumentException();
 
@@ -228,7 +236,7 @@ public class Gui
      *
      * @param g The <code>Graphics</code> to paint into.
      */
-    public void redraw(final Graphics g)
+    public void redraw(@NotNull final Graphics g)
     {
         if (mouseTracker != null)
         {
@@ -278,6 +286,7 @@ public class Gui
      *
      * @return The default gui element, or <code>null</code>.
      */
+    @Nullable
     private GUIElement getDefaultElement()
     {
         for (final GUIElement element : visibleElements)
@@ -309,7 +318,8 @@ public class Gui
      * @param class_ the class to collect
      * @return the gui elements
      */
-    public <T extends GUIElement> Set<T> getElements(final Class<T> class_)
+    @NotNull
+    public <T extends GUIElement> Set<T> getElements(@NotNull final Class<T> class_)
     {
         final Set<T> result = new HashSet<T>(16);
         for (final Object element : visibleElements)
@@ -329,7 +339,8 @@ public class Gui
      * @param ending the ending to search for
      * @return the gui element or <code>null</code> if not found
      */
-    public <T extends GUIElement> T getFirstElementEndingWith(final Class<T> class_, final String ending)
+    @Nullable
+    public <T extends GUIElement> T getFirstElementEndingWith(@NotNull final Class<T> class_, @NotNull final String ending)
     {
         for (final Component element : visibleElements)
         {
@@ -349,7 +360,8 @@ public class Gui
      * @param ending the ending to search for
      * @return the gui element or <code>null</code> if not found
      */
-    public <T extends GUIElement> T getFirstElementNotEndingWith(final Class<T> class_, final String ending)
+    @Nullable
+    public <T extends GUIElement> T getFirstElementNotEndingWith(@NotNull final Class<T> class_, @NotNull final String ending)
     {
         for (final Component element : visibleElements)
         {
@@ -367,7 +379,8 @@ public class Gui
      * @param class_ the class to search for
      * @return the gui element or <code>null</code> if not found
      */
-    public <T extends GUIElement> T getFirstElement(final Class<T> class_)
+    @Nullable
+    public <T extends GUIElement> T getFirstElement(@NotNull final Class<T> class_)
     {
         for (final Object element : visibleElements)
         {
@@ -390,6 +403,7 @@ public class Gui
      * @return The <code>GUIElement</code> at the given coordinate, or
      * <code>null</code> if none was found.
      */
+    @Nullable
     public GUIElement getElementFromPoint(final int x, final int y)
     {
         GUIElement elected = null;
@@ -417,10 +431,8 @@ public class Gui
      *
      * @param active The new active state.
      */
-    void setActiveElement(final ActivatableGUIElement activeElement, final boolean active)
+    void setActiveElement(@NotNull final ActivatableGUIElement activeElement, final boolean active)
     {
-        assert activeElement != null;
-
         final ActivatableGUIElement previousActiveElement = this.activeElement;
         if (active)
         {
@@ -468,7 +480,7 @@ public class Gui
      * @param activeElement the gui element
      * @return whether the given gui element is active
      */
-    private boolean isActiveElement(final ActivatableGUIElement activeElement)
+    private boolean isActiveElement(@Nullable final ActivatableGUIElement activeElement)
     {
         return this.activeElement != null && this.activeElement == activeElement;
     }
@@ -479,6 +491,7 @@ public class Gui
      * @return The gui element owning the focus, or <code>null</code> if no
      * such element exists.
      */
+    @Nullable
     public ActivatableGUIElement getActiveElement()
     {
         return activeElement;
@@ -491,7 +504,7 @@ public class Gui
      *
      * @return Whether a gui element did handle the event.
      */
-    public boolean handleKeyPress(final KeyEvent e)
+    public boolean handleKeyPress(@NotNull final KeyEvent e)
     {
         if (activeElement != null)
         {
@@ -514,7 +527,7 @@ public class Gui
      *
      * @return Whether a gui element did handle the event.
      */
-    public boolean handleKeyTyped(final KeyEvent e)
+    public boolean handleKeyTyped(@NotNull final KeyEvent e)
     {
         if (activeElement != null)
         {
@@ -555,6 +568,7 @@ public class Gui
      * @return The <code>GUIText</code> element, or <code>null</code> if this
      * gui does not contain any <code>GUIText</code> gui elements.
      */
+    @Nullable
     private GUIText activateFirstTextArea()
     {
         final GUIText textArea = getFirstElement(GUIText.class);
@@ -571,6 +585,7 @@ public class Gui
      * @return The comment text field, or <code>null</code> if this gui does
      * not contain any command text fields.
      */
+    @Nullable
     public GUIText activateCommandInput()
     {
         final GUIText textArea = activateFirstTextArea();
@@ -617,7 +632,8 @@ public class Gui
      * @param name the button's name
      * @return the button or <code>null</code> if no button matches
      */
-    public <T extends GUIElement> T getFirstElement(final Class<T> class_, final String name)
+    @Nullable
+    public <T extends GUIElement> T getFirstElement(@NotNull final Class<T> class_, @NotNull final String name)
     {
         for (final Component element : visibleElements)
         {
@@ -683,6 +699,7 @@ public class Gui
      *
      * @return The name, or <code>null</code> if this is not a dialog.
      */
+    @Nullable
     public String getName()
     {
         return name;
@@ -693,6 +710,7 @@ public class Gui
      *
      * @return The key bindings.
      */
+    @NotNull
     public KeyBindings getKeyBindings()
     {
         return keyBindings;
@@ -703,7 +721,7 @@ public class Gui
      *
      * @param state The state.
      */
-    public void hideInState(final RendererGuiState state)
+    public void hideInState(@NotNull final RendererGuiState state)
     {
         hideInStates.add(state);
     }
@@ -715,7 +733,7 @@ public class Gui
      *
      * @return Whether this gui is hidden.
      */
-    public boolean isHidden(final RendererGuiState state)
+    public boolean isHidden(@NotNull final RendererGuiState state)
     {
         return hideInStates.contains(state);
     }
@@ -726,7 +744,7 @@ public class Gui
      * @param guiAutoCloseListener the listener to be notified or
      * <code>null</code>
      */
-    public void setGuiAutoCloseListener(final GuiAutoCloseListener guiAutoCloseListener)
+    public void setGuiAutoCloseListener(@Nullable final GuiAutoCloseListener guiAutoCloseListener)
     {
         this.guiAutoCloseListener = guiAutoCloseListener;
     }
@@ -755,7 +773,7 @@ public class Gui
         }
     }
 
-    public void updateVisibleElement(final GUIElement element)
+    public void updateVisibleElement(@NotNull final GUIElement element)
     {
         if (element.isElementVisible())
         {
@@ -793,12 +811,13 @@ public class Gui
      * any other element from getting active.
      * @param forcedActive the element to set or <code>null</code> to unset
      */
-    public void setForcedActive(final ActivatableGUIElement forcedActive)
+    public void setForcedActive(@Nullable final ActivatableGUIElement forcedActive)
     {
         this.forcedActive = forcedActive;
     }
 
     /** {@inheritDoc} */
+    @NotNull
     @Override
     public String toString()
     {

@@ -34,6 +34,8 @@ import java.nio.channels.SocketChannel;
 import java.nio.channels.UnresolvedAddressException;
 import java.util.ArrayList;
 import java.util.Collection;
+import org.jetbrains.annotations.NotNull;
+import org.jetbrains.annotations.Nullable;
 
 /**
  * A socket that processes incoming data.
@@ -54,22 +56,26 @@ public class ClientSocket
      * The appender to write state changes to. May be <code>null</code> to not
      * write anything.
      */
+    @Nullable
     private final DebugWriter debugProtocol;
 
     /**
      * The {@link ClientSocketListener}s to notify.
      */
+    @NotNull
     private final Collection<ClientSocketListener> clientSocketListeners = new ArrayList<ClientSocketListener>();
 
     /**
      * The {@link Selector} used for waiting.
      */
+    @NotNull
     private final Selector selector;
 
     /**
      * Synchronization object for {@link #reconnect}, {@link #host}, {@link
      * #port}, and {@link #disconnectPending}.
      */
+    @NotNull
     private final Object syncConnect = new Object();
 
     /**
@@ -81,6 +87,7 @@ public class ClientSocket
     /**
      * The host to connect to. Set to <code>null</code> for disconnect.
      */
+    @Nullable
     private String host = null;
 
     /**
@@ -96,17 +103,20 @@ public class ClientSocket
     /**
      * A buffer for sending packets.
      */
+    @NotNull
     private final byte[] packetHeader = new byte[2];
 
     /**
      * The {@link SelectableChannel} of {@link #socketChannel}.
      */
+    @Nullable
     private SelectableChannel selectableChannel = null;
 
     /**
      * The {@link SelectionKey} registered to {@link #selectableChannel}. It's
      * interesting ops are {@link #interestOps}.
      */
+    @Nullable
     private SelectionKey selectionKey = null;
 
     /**
@@ -117,11 +127,13 @@ public class ClientSocket
     /**
      * The receive buffer. It is wrapped into {@link #inputBuffer}.
      */
+    @NotNull
     private final byte[] inputBuf = new byte[2+MAXIMUM_PACKET_SIZE];
 
     /**
      * The receive buffer. Contains data pending to be processed.
      */
+    @NotNull
     private final ByteBuffer inputBuffer = ByteBuffer.wrap(inputBuf);
 
     /**
@@ -135,17 +147,20 @@ public class ClientSocket
      * Synchronization object for {@link #outputBuffer}, {@link #selectionKey},
      * {@link #interestOps}, and {@link #socketChannel}.
      */
+    @NotNull
     private final Object syncOutput = new Object();
 
     /**
      * The output buffer. Contains data pending to send.
      */
+    @NotNull
     private final ByteBuffer outputBuffer = ByteBuffer.allocate(2+MAXIMUM_PACKET_SIZE);
 
     /**
      * The {@link SocketChannel} when connected. Set to <code>null</code> when
      * not connected.
      */
+    @Nullable
     private SocketChannel socketChannel = null;
 
     /**
@@ -156,6 +171,7 @@ public class ClientSocket
     /**
      * The {@link Thread} used to operate the socket.
      */
+    @NotNull
     private final Thread thread = new Thread(new Runnable()
     {
         /** {@inheritDoc} */
@@ -172,7 +188,7 @@ public class ClientSocket
      * commands to this writer
      * @throws IOException if the socket cannot be created
      */
-    public ClientSocket(final DebugWriter debugProtocol) throws IOException
+    public ClientSocket(@Nullable final DebugWriter debugProtocol) throws IOException
     {
         this.debugProtocol = debugProtocol;
         selector = Selector.open();
@@ -212,7 +228,7 @@ public class ClientSocket
      * Adds a {@link ClientSocketListener} to be notified.
      * @param clientSocketListener the client socket listener to add
      */
-    public void addClientSocketListener(final ClientSocketListener clientSocketListener)
+    public void addClientSocketListener(@NotNull final ClientSocketListener clientSocketListener)
     {
         clientSocketListeners.add(clientSocketListener);
     }
@@ -221,7 +237,7 @@ public class ClientSocket
      * Removes a {@link ClientSocketListener} to be notified.
      * @param clientSocketListener the client socket listener to remove
      */
-    public void removeClientSocketListener(final ClientSocketListener clientSocketListener)
+    public void removeClientSocketListener(@NotNull final ClientSocketListener clientSocketListener)
     {
         clientSocketListeners.remove(clientSocketListener);
     }
@@ -231,7 +247,7 @@ public class ClientSocket
      * @param host the host to connect to
      * @param port the port to connect to
      */
-    public void connect(final String host, final int port)
+    public void connect(@NotNull final String host, final int port)
     {
         if (debugProtocol != null)
         {
@@ -364,7 +380,7 @@ public class ClientSocket
      * @param port the port to connect to
      * @throws IOException if an I/O error occurs
      */
-    private void processConnect(final String host, final int port) throws IOException
+    private void processConnect(@NotNull final String host, final int port) throws IOException
     {
         if (debugProtocol != null)
         {
@@ -426,7 +442,7 @@ public class ClientSocket
      * Disconnects the socket. Does nothing if not currently connected.
      * @param reason the reason for disconnection
      */
-    private void processDisconnect(final String reason)
+    private void processDisconnect(@NotNull final String reason)
     {
         if (debugProtocol != null)
         {
@@ -562,7 +578,7 @@ public class ClientSocket
      * @param buf the packet to send
      * @param len the number of bytes to send
      */
-    public void writePacket(final byte[] buf, final int len)
+    public void writePacket(@NotNull final byte[] buf, final int len)
     {
         synchronized (syncOutput)
         {

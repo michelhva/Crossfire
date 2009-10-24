@@ -58,6 +58,8 @@ import com.realtime.crossfire.jxclient.window.GuiManager;
 import com.realtime.crossfire.jxclient.window.JXCWindow;
 import java.io.IOException;
 import java.io.LineNumberReader;
+import org.jetbrains.annotations.NotNull;
+import org.jetbrains.annotations.Nullable;
 
 /**
  * Parser for creating {@link GUICommand} instances from string
@@ -69,21 +71,25 @@ public class CommandParser
     /**
      * The {@link Dialogs} instance to use.
      */
+    @NotNull
     private final Dialogs dialogs;
 
     /**
      * The {@link ItemsManager} instance to use.
      */
+    @NotNull
     private final ItemsManager itemsManager;
 
     /**
      * The {@link ExpressionParser} instance to use.
      */
+    @NotNull
     private final ExpressionParser expressionParser;
 
     /**
      * The defined GUI elements.
      */
+    @NotNull
     private final JXCSkinCache<GUIElement> definedGUIElements;
 
     /**
@@ -93,7 +99,7 @@ public class CommandParser
      * @param expressionParser the expression parser instance to use
      * @param definedGUIElements the defined GUI elements
      */
-    public CommandParser(final Dialogs dialogs, final ItemsManager itemsManager, final ExpressionParser expressionParser, final JXCSkinCache<GUIElement> definedGUIElements)
+    public CommandParser(@NotNull final Dialogs dialogs, @NotNull final ItemsManager itemsManager, @NotNull final ExpressionParser expressionParser, @NotNull final JXCSkinCache<GUIElement> definedGUIElements)
     {
         this.dialogs = dialogs;
         this.itemsManager = itemsManager;
@@ -118,7 +124,8 @@ public class CommandParser
      * @throws IOException if a syntax error occurs
      * @throws JXCSkinException if an element cannot be found
      */
-    public GUICommand parseCommandArgs(final String[] args, final int argc, final GUIElement element, final String command, final JXCWindow window, final Commands commands, final LineNumberReader lnr, final CommandQueue commandQueue, final CrossfireServerConnection crossfireServerConnection, final GuiManager guiManager, final Macros macros) throws IOException, JXCSkinException
+    @NotNull
+    public GUICommand parseCommandArgs(@NotNull final String[] args, final int argc, @Nullable final GUIElement element, @NotNull final String command, @NotNull final JXCWindow window, @NotNull final Commands commands, @NotNull final LineNumberReader lnr, @NotNull final CommandQueue commandQueue, @NotNull final CrossfireServerConnection crossfireServerConnection, @NotNull final GuiManager guiManager, @NotNull final Macros macros) throws IOException, JXCSkinException
     {
         if (command.equals("SHOW"))
         {

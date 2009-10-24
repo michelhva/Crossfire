@@ -34,6 +34,8 @@ import java.awt.Graphics2D;
 import java.awt.Image;
 import java.awt.Transparency;
 import java.awt.event.MouseEvent;
+import org.jetbrains.annotations.NotNull;
+import org.jetbrains.annotations.Nullable;
 
 /**
  * Display a Crossfire server entry.
@@ -50,27 +52,32 @@ public class GUIMetaElement extends ActivatableGUIElement implements GUIScrollab
     /**
      * The metaserver model to monitor.
      */
+    @NotNull
     private final MetaserverModel metaserverModel;
 
     /**
      * An image to draw before the server description. May be <code>null</code>
      * to draw no image.
      */
+    @Nullable
     private final Image tcpImage;
 
     /**
      * The font to use.
      */
+    @NotNull
     private final Font font;
 
     /**
      * The format used for displaying {@link Metaserver} instances.
      */
+    @NotNull
     private final String format;
 
     /**
      * The format used for displaying tooltips.
      */
+    @NotNull
     private final String tooltip;
 
     /**
@@ -91,6 +98,7 @@ public class GUIMetaElement extends ActivatableGUIElement implements GUIScrollab
     /**
      * The metaserver entry listener attached for the current {@link #index}.
      */
+    @NotNull
     private final MetaserverEntryListener metaserverEntryListener = new MetaserverEntryListener()
     {
         /** {@inheritDoc} */
@@ -117,7 +125,7 @@ public class GUIMetaElement extends ActivatableGUIElement implements GUIScrollab
      * @param format the format used to display metaserver instances
      * @param tooltip the format used for displaying tooltips
      */
-    public GUIMetaElement(final TooltipManager tooltipManager, final JXCWindowRenderer windowRenderer, final MetaserverModel metaserverModel, final String name, final int w, final int h, final Image tcpImage, final Font font, final int defaultIndex, final String format, final String tooltip)
+    public GUIMetaElement(@NotNull final TooltipManager tooltipManager, @NotNull final JXCWindowRenderer windowRenderer, @NotNull final MetaserverModel metaserverModel, @NotNull final String name, final int w, final int h, @Nullable final Image tcpImage, @NotNull final Font font, final int defaultIndex, @NotNull final String format, @NotNull final String tooltip)
     {
         super(tooltipManager, windowRenderer, name, 0, 0, w, h, Transparency.TRANSLUCENT);
         this.metaserverModel = metaserverModel;
@@ -142,7 +150,7 @@ public class GUIMetaElement extends ActivatableGUIElement implements GUIScrollab
 
     /** {@inheritDoc} */
     @Override
-    protected void render(final Graphics g)
+    protected void render(@NotNull final Graphics g)
     {
         final MetaserverEntry metaEntry = metaserverModel.getEntry(index);
         final Graphics2D g2 = (Graphics2D)g;
@@ -159,7 +167,7 @@ public class GUIMetaElement extends ActivatableGUIElement implements GUIScrollab
 
     /** {@inheritDoc} */
     @Override
-    public void mouseClicked(final MouseEvent e)
+    public void mouseClicked(@NotNull final MouseEvent e)
     {
         super.mouseClicked(e);
         final int b = e.getButton();

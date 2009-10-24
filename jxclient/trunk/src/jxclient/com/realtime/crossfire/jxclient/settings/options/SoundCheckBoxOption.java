@@ -20,6 +20,7 @@
 package com.realtime.crossfire.jxclient.settings.options;
 
 import com.realtime.crossfire.jxclient.sound.SoundManager;
+import org.jetbrains.annotations.NotNull;
 
 /**
  * A {@link CheckBoxOption} that enables/disables sound support.
@@ -31,13 +32,14 @@ public class SoundCheckBoxOption extends CheckBoxOption
     /**
      * The {@link SoundManager} instance to affect.
      */
+    @NotNull
     private final SoundManager soundManager;
 
     /**
      * Creates a new instance.
      * @param soundManager the sound manager instance to affect
      */
-    public SoundCheckBoxOption(final SoundManager soundManager)
+    public SoundCheckBoxOption(@NotNull final SoundManager soundManager)
     {
         this.soundManager = soundManager;
     }

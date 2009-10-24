@@ -26,6 +26,7 @@ import com.realtime.crossfire.jxclient.spells.SpellsManager;
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.IOException;
+import org.jetbrains.annotations.NotNull;
 
 /**
  * Manages shortcuts.
@@ -36,6 +37,7 @@ public class ShortcutsManager
     /**
      * The shortcuts.
      */
+    @NotNull
     private final Shortcuts shortcuts;
 
     /**
@@ -43,7 +45,7 @@ public class ShortcutsManager
      * @param commandQueue the command queue to affect
      * @param spellsManager the spells manager to use
      */
-    public ShortcutsManager(final CommandQueue commandQueue, final SpellsManager spellsManager)
+    public ShortcutsManager(@NotNull final CommandQueue commandQueue, @NotNull final SpellsManager spellsManager)
     {
         shortcuts = new Shortcuts(commandQueue, spellsManager);
     }
@@ -53,7 +55,7 @@ public class ShortcutsManager
      * @param hostname the current hostname
      * @param character the current character name
      */
-    public void loadShortcuts(final CharSequence hostname, final CharSequence character)
+    public void loadShortcuts(@NotNull final CharSequence hostname, @NotNull final CharSequence character)
     {
         final File file;
         try
@@ -98,6 +100,7 @@ public class ShortcutsManager
     }
 
     @Deprecated
+    @NotNull
     public Shortcuts getShortcuts()
     {
         return shortcuts;

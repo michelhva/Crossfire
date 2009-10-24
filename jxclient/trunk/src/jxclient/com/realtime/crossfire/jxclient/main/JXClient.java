@@ -39,6 +39,7 @@ import java.io.IOException;
 import java.io.OutputStreamWriter;
 import java.lang.reflect.InvocationTargetException;
 import javax.swing.SwingUtilities;
+import org.jetbrains.annotations.NotNull;
 
 /**
  * This is the entry point for JXClient. Note that this class doesn't do much
@@ -55,7 +56,7 @@ public class JXClient
      * The program entry point.
      * @param args The command line arguments.
      */
-    public static void main(final String[] args)
+    public static void main(@NotNull final String[] args)
     {
         System.out.println("JXClient - Crossfire Java Client");
         System.out.println("(C)2005 by Lauwenmark.");
@@ -79,7 +80,7 @@ public class JXClient
      * Initialization of a JXCWindow is the only task performed here.
      * @param options the options
      */
-    private JXClient(final Options options)
+    private JXClient(@NotNull final Options options)
     {
         try
         {

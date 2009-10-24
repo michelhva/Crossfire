@@ -20,6 +20,7 @@
 package com.realtime.crossfire.jxclient.shortcuts;
 
 import javax.swing.event.EventListenerList;
+import org.jetbrains.annotations.NotNull;
 
 /**
  * Abstract base class for shortcut commands.
@@ -31,6 +32,7 @@ public abstract class Shortcut
     /**
      * The listeners to be notified.
      */
+    @NotNull
     private final EventListenerList listeners = new EventListenerList();
 
     /**
@@ -48,7 +50,7 @@ public abstract class Shortcut
      *
      * @param listener The listener to register.
      */
-    public void addShortcutListener(final ShortcutListener listener)
+    public void addShortcutListener(@NotNull final ShortcutListener listener)
     {
         listeners.add(ShortcutListener.class, listener);
     }
@@ -58,7 +60,7 @@ public abstract class Shortcut
      *
      * @param listener The listener to unregister.
      */
-    public void removeShortcutListener(final ShortcutListener listener)
+    public void removeShortcutListener(@NotNull final ShortcutListener listener)
     {
         listeners.add(ShortcutListener.class, listener);
     }
@@ -76,7 +78,8 @@ public abstract class Shortcut
 
     /**
      * Returns the current tooltip text.
-     * @return the tooltip text or <code>null</code>
+     * @return the tooltip text
      */
+    @NotNull
     public abstract String getTooltipText();
 }

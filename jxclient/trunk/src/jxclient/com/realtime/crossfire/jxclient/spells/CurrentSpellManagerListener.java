@@ -19,6 +19,8 @@
 //
 package com.realtime.crossfire.jxclient.spells;
 
+import org.jetbrains.annotations.Nullable;
+
 /**
  * A SpellListener is warned each time the currently selected spell has changed.
  * @version 1.0
@@ -27,5 +29,5 @@ package com.realtime.crossfire.jxclient.spells;
  */
 public interface CurrentSpellManagerListener
 {
-    void spellChanged(Spell spell);
+    void spellChanged(@Nullable Spell spell);
 }

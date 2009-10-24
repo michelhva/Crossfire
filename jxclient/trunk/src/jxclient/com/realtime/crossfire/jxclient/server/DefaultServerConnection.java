@@ -21,6 +21,8 @@ package com.realtime.crossfire.jxclient.server;
 
 import com.realtime.crossfire.jxclient.util.DebugWriter;
 import java.io.IOException;
+import org.jetbrains.annotations.NotNull;
+import org.jetbrains.annotations.Nullable;
 
 /**
  * One of the two most important classes, ServerConnection performs most of the
@@ -33,6 +35,7 @@ import java.io.IOException;
  */
 public abstract class DefaultServerConnection implements ServerConnection
 {
+    @NotNull
     private final ClientSocket clientSocket;
 
     /**
@@ -41,7 +44,7 @@ public abstract class DefaultServerConnection implements ServerConnection
      * commands to this writer
      * @throws IOException if an internal error occurs
      */
-    protected DefaultServerConnection(final DebugWriter debugProtocol) throws IOException
+    protected DefaultServerConnection(@Nullable final DebugWriter debugProtocol) throws IOException
     {
         clientSocket = new ClientSocket(debugProtocol);
     }
@@ -65,14 +68,14 @@ public abstract class DefaultServerConnection implements ServerConnection
 
     /** {@inheritDoc} */
     @Override
-    public void addClientSocketListener(final ClientSocketListener clientSocketListener)
+    public void addClientSocketListener(@NotNull final ClientSocketListener clientSocketListener)
     {
         clientSocket.addClientSocketListener(clientSocketListener);
     }
 
     /** {@inheritDoc} */
     @Override
-    public void removeClientSocketListener(final ClientSocketListener clientSocketListener)
+    public void removeClientSocketListener(@NotNull final ClientSocketListener clientSocketListener)
     {
         clientSocket.removeClientSocketListener(clientSocketListener);
     }
@@ -84,14 +87,14 @@ public abstract class DefaultServerConnection implements ServerConnection
      * @param length the length of <code>packet</code>; if the array is larger,
      * excess data is ignored
      */
-    protected void writePacket(final byte[] packet, final int length)
+    protected void writePacket(@NotNull final byte[] packet, final int length)
     {
         clientSocket.writePacket(packet, length);
     }
 
     /** {@inheritDoc} */
     @Override
-    public void connect(final String hostname, final int port)
+    public void connect(@NotNull final String hostname, final int port)
     {
         clientSocket.connect(hostname, port);
     }

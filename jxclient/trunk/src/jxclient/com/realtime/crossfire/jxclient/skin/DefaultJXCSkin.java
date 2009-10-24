@@ -45,6 +45,8 @@ import java.util.ArrayList;
 import java.util.Collection;
 import java.util.HashSet;
 import java.util.Iterator;
+import org.jetbrains.annotations.NotNull;
+import org.jetbrains.annotations.Nullable;
 
 public class DefaultJXCSkin implements JXCSkin
 {
@@ -56,11 +58,13 @@ public class DefaultJXCSkin implements JXCSkin
     /**
      * The skin name.
      */
+    @NotNull
     private String skinName = "unknown";
 
     /**
      * The selected resolution.
      */
+    @NotNull
     private final Resolution selectedResolution;
 
     /**
@@ -81,77 +85,92 @@ public class DefaultJXCSkin implements JXCSkin
     /**
      * All "event init" commands in execution order.
      */
+    @NotNull
     private final Collection<GUICommandList> initEvents = new ArrayList<GUICommandList>();
 
     /**
      * All defined command lists.
      */
+    @NotNull
     private final JXCSkinCache<GUICommandList> definedCommandLists = new JXCSkinCache<GUICommandList>("command list");
 
     /**
      * All defined GUI elements.
      */
+    @NotNull
     private final JXCSkinCache<GUIElement> definedGUIElements = new JXCSkinCache<GUIElement>("gui element");
 
     /**
      * All GUI elements.
      */
+    @NotNull
     private final Collection<GUIElement> guiElements = new HashSet<GUIElement>();
 
     /**
      * All {@link SkinEvent}s attached to this instance.
      */
+    @NotNull
     private final Collection<SkinEvent> skinEvents = new HashSet<SkinEvent>();
 
     /**
      * All defined dialogs.
      */
+    @NotNull
     private final Dialogs dialogs;
 
     /**
      * The default key bindings.
      */
+    @NotNull
     private final KeyBindings defaultKeyBindings;
 
     /**
      * The {@link OptionManager} to use.
      */
+    @NotNull
     private final OptionManager optionManager;
 
     /**
      * The {@link ExperienceTable} to use.
      */
+    @NotNull
     private final ExperienceTable experienceTable;
 
     /**
      * The {@link GaugeUpdaterParser} for parsing gauge specifications.
      */
+    @NotNull
     private final GaugeUpdaterParser gaugeUpdaterParser;
 
     /**
      * The defined option names.
      */
+    @NotNull
     private final Collection<String> optionNames = new HashSet<String>();
 
     /**
      * The defined {@link GaugeUpdater}s.
      */
+    @NotNull
     private final Collection<GaugeUpdater> gaugeUpdaters = new ArrayList<GaugeUpdater>();
 
     /**
      * The {@link CommandParser} for parsing command specifications.
      */
+    @NotNull
     private final CommandParser commandParser;
 
     /**
      * The tooltip label or <code>null</code>.
      */
+    @Nullable
     private AbstractLabel tooltipLabel = null;
 
     /**
      * The {@link GuiManager} currently attached to or <code>null</code> if not
      * attached.
      */
+    @Nullable
     private GuiManager guiManager = null;
 
     /**
@@ -166,7 +185,7 @@ public class DefaultJXCSkin implements JXCSkin
      * @param selectedResolution the resolution to use
      * @param dialogs the dialogs to use
      */
-    public DefaultJXCSkin(final KeyBindings defaultKeyBindings, final OptionManager optionManager, final Stats stats, final ItemsManager itemsManager, final ExperienceTable experienceTable, final SkillSet skillSet, final ExpressionParser expressionParser, final Resolution selectedResolution, final Dialogs dialogs)
+    public DefaultJXCSkin(@NotNull final KeyBindings defaultKeyBindings, @NotNull final OptionManager optionManager, @NotNull final Stats stats, @NotNull final ItemsManager itemsManager, @NotNull final ExperienceTable experienceTable, @NotNull final SkillSet skillSet, @NotNull final ExpressionParser expressionParser, @NotNull final Resolution selectedResolution, @NotNull final Dialogs dialogs)
     {
         this.defaultKeyBindings = defaultKeyBindings;
         this.optionManager = optionManager;
@@ -178,23 +197,26 @@ public class DefaultJXCSkin implements JXCSkin
     }
 
     /** {@inheritDoc} */
+    @NotNull
     @Override
     public String getSkinName()
     {
         return skinName+"@"+selectedResolution;
     }
 
+    @NotNull
     public String getPlainSkinName()
     {
         return skinName;
     }
 
-    public void setSkinName(final String skinName)
+    public void setSkinName(@NotNull final String skinName)
     {
         this.skinName = skinName;
     }
 
     /** {@inheritDoc} */
+    @NotNull
     @Override
     public Resolution getResolution()
     {
@@ -223,6 +245,7 @@ public class DefaultJXCSkin implements JXCSkin
     }
 
     /** {@inheritDoc} */
+    @Nullable
     @Override
     public Gui getDialogQuit()
     {
@@ -237,6 +260,7 @@ public class DefaultJXCSkin implements JXCSkin
     }
 
     /** {@inheritDoc} */
+    @Nullable
     @Override
     public Gui getDialogDisconnect()
     {
@@ -251,6 +275,7 @@ public class DefaultJXCSkin implements JXCSkin
     }
 
     /** {@inheritDoc} */
+    @Nullable
     @Override
     public Gui getDialogConnect()
     {
@@ -265,6 +290,7 @@ public class DefaultJXCSkin implements JXCSkin
     }
 
     /** {@inheritDoc} */
+    @NotNull
     @Override
     public Gui getDialogKeyBind()
     {
@@ -279,6 +305,7 @@ public class DefaultJXCSkin implements JXCSkin
     }
 
     /** {@inheritDoc} */
+    @NotNull
     @Override
     public Gui getDialogQuery()
     {
@@ -293,6 +320,7 @@ public class DefaultJXCSkin implements JXCSkin
     }
 
     /** {@inheritDoc} */
+    @NotNull
     @Override
     public Gui getDialogBook(final int booknr)
     {
@@ -307,6 +335,7 @@ public class DefaultJXCSkin implements JXCSkin
     }
 
     /** {@inheritDoc} */
+    @NotNull
     @Override
     public Gui getMainInterface()
     {
@@ -321,6 +350,7 @@ public class DefaultJXCSkin implements JXCSkin
     }
 
     /** {@inheritDoc} */
+    @NotNull
     @Override
     public Gui getMetaInterface()
     {
@@ -335,6 +365,7 @@ public class DefaultJXCSkin implements JXCSkin
     }
 
     /** {@inheritDoc} */
+    @NotNull
     @Override
     public Gui getStartInterface()
     {
@@ -349,13 +380,15 @@ public class DefaultJXCSkin implements JXCSkin
     }
 
     /** {@inheritDoc} */
+    @NotNull
     @Override
-    public Gui getDialog(final String name) throws JXCSkinException
+    public Gui getDialog(@NotNull final String name) throws JXCSkinException
     {
         return dialogs.lookup(name);
     }
 
     /** {@inheritDoc} */
+    @NotNull
     @Override
     public Iterator<Gui> iterator()
     {
@@ -363,8 +396,9 @@ public class DefaultJXCSkin implements JXCSkin
     }
 
     /** {@inheritDoc} */
+    @NotNull
     @Override
-    public GUICommandList getCommandList(final String name) throws JXCSkinException
+    public GUICommandList getCommandList(@NotNull final String name) throws JXCSkinException
     {
         return definedCommandLists.lookup(name);
     }
@@ -386,7 +420,7 @@ public class DefaultJXCSkin implements JXCSkin
      * @throws IOException if a syntax error occurs
      * @throws JXCSkinException if an element cannot be found
      */
-    public void addCommand(final String listName, final String[] args, final int argc, final GUIElement element, final String command, final JXCWindow window, final Commands commands, final LineNumberReader lnr, final CommandQueue commandQueue, final CrossfireServerConnection crossfireServerConnection, final GuiManager guiManager, final Macros macros) throws IOException, JXCSkinException
+    public void addCommand(@NotNull final String listName, @NotNull final String[] args, final int argc, @Nullable final GUIElement element, @NotNull final String command, @NotNull final JXCWindow window, @NotNull final Commands commands, @NotNull final LineNumberReader lnr, @NotNull final CommandQueue commandQueue, @NotNull final CrossfireServerConnection crossfireServerConnection, @NotNull final GuiManager guiManager, @NotNull final Macros macros) throws IOException, JXCSkinException
     {
         final GUICommandList commandList = getCommandList(listName);
         commandList.add(commandParser.parseCommandArgs(args, argc, element, command, window, commands, lnr, commandQueue, crossfireServerConnection, guiManager, macros));
@@ -400,6 +434,7 @@ public class DefaultJXCSkin implements JXCSkin
     }
 
     /** {@inheritDoc} */
+    @NotNull
     @Override
     public KeyBindings getDefaultKeyBindings()
     {
@@ -408,7 +443,7 @@ public class DefaultJXCSkin implements JXCSkin
 
     /** {@inheritDoc} */
     @Override
-    public void attach(final GuiManager guiManager)
+    public void attach(@NotNull final GuiManager guiManager)
     {
         if (this.guiManager != null)
         {
@@ -432,6 +467,7 @@ public class DefaultJXCSkin implements JXCSkin
         if (guiManager != null)
         {
             guiManager.getWindowRenderer().setTooltip(null);
+            assert guiManager != null;
             guiManager.getTooltipManager().setTooltip(null);
             guiManager = null;
         }
@@ -450,8 +486,9 @@ public class DefaultJXCSkin implements JXCSkin
     }
 
     /** {@inheritDoc} */
+    @NotNull
     @Override
-    public GUIElement lookupGuiElement(final String name) throws JXCSkinException
+    public GUIElement lookupGuiElement(@NotNull final String name) throws JXCSkinException
     {
         return definedGUIElements.lookup(name);
     }
@@ -471,34 +508,36 @@ public class DefaultJXCSkin implements JXCSkin
      * @param guiElement the GUI element
      * @throws JXCSkinException if the name is not unique
      */
-    public void insertGuiElement(final GUIElement guiElement) throws JXCSkinException
+    public void insertGuiElement(@NotNull final GUIElement guiElement) throws JXCSkinException
     {
         definedGUIElements.insert(guiElement.getName(), guiElement);
         guiElements.add(guiElement);
     }
 
+    @NotNull
     public Resolution getSelectedResolution()
     {
         return selectedResolution;
     }
 
-    public void addDialog(final String dialogName)
+    public void addDialog(@NotNull final String dialogName)
     {
         dialogs.addDialog(dialogName);
     }
 
+    @Nullable
     public String getDialogToLoad()
     {
         return dialogs.getDialogToLoad();
     }
 
-    public void addCommandList(final String commandListName, final GUICommandList.CommandType commandListCommandType) throws JXCSkinException
+    public void addCommandList(@NotNull final String commandListName, @NotNull final GUICommandList.CommandType commandListCommandType) throws JXCSkinException
     {
         final GUICommandList commandList = new GUICommandList(commandListCommandType);
         definedCommandLists.insert(commandListName, commandList);
     }
 
-    public void addInitEvent(final GUICommandList commandList)
+    public void addInitEvent(@NotNull final GUICommandList commandList)
     {
         initEvents.add(commandList);
     }
@@ -514,7 +553,7 @@ public class DefaultJXCSkin implements JXCSkin
         this.numLookObjects = numLookObjects;
     }
 
-    public void addOption(final String optionName, final String documentation, final Option commandCheckBoxOption) throws JXCSkinException
+    public void addOption(@NotNull final String optionName, @NotNull final String documentation, @NotNull final Option commandCheckBoxOption) throws JXCSkinException
     {
         try
         {
@@ -527,7 +566,7 @@ public class DefaultJXCSkin implements JXCSkin
         optionNames.add(optionName);
     }
 
-    public void setTooltipLabel(final AbstractLabel tooltipLabel)
+    public void setTooltipLabel(@Nullable final AbstractLabel tooltipLabel)
     {
         this.tooltipLabel = tooltipLabel;
     }
@@ -537,6 +576,7 @@ public class DefaultJXCSkin implements JXCSkin
      * this skin. The iterator does not support removal.
      * @return the iterator
      */
+    @NotNull
     public Iterator<GUIElement> guiElementIterator()
     {
         return definedGUIElements.iterator();
@@ -549,7 +589,8 @@ public class DefaultJXCSkin implements JXCSkin
      * @return the gauge updater
      * @throws IOException if the gauge updater value does not exist
      */
-    public GaugeUpdater newGaugeUpdater(final String name) throws IOException
+    @NotNull
+    public GaugeUpdater newGaugeUpdater(@NotNull final String name) throws IOException
     {
         final GaugeUpdater gaugeUpdater = gaugeUpdaterParser.parseGaugeUpdater(name, experienceTable);
         gaugeUpdaters.add(gaugeUpdater);
@@ -560,7 +601,7 @@ public class DefaultJXCSkin implements JXCSkin
      * Records a {@link SkinEvent} attached to this instance.
      * @param skinEvent the skin event to add
      */
-    public void addSkinEvent(final SkinEvent skinEvent)
+    public void addSkinEvent(@NotNull final SkinEvent skinEvent)
     {
         skinEvents.add(skinEvent);
     }

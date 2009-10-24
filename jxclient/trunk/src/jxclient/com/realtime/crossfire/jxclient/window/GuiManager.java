@@ -24,6 +24,8 @@ import com.realtime.crossfire.jxclient.skin.JXCSkinException;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import javax.swing.Timer;
+import org.jetbrains.annotations.NotNull;
+import org.jetbrains.annotations.Nullable;
 
 /**
  * Maintains the application's main GUI state.
@@ -34,55 +36,65 @@ public class GuiManager
     /**
      * The semaphore used to synchronized drawing operations.
      */
+    @NotNull
     private final Object semaphoreDrawing;
 
     /**
      * The currently active skin. Set to <code>null</code> if no skin is set.
      */
+    @Nullable
     private JXCSkin skin = null;
 
     /**
      * The {@link JXCWindowRenderer} used to paint the gui.
      */
+    @NotNull
     private final JXCWindowRenderer windowRenderer;
 
     /**
      * The {@link GuiFactory} for creating {@link Gui} instances.
      */
+    @Nullable
     private GuiFactory guiFactory = null;
 
     /**
      * The query dialog.
      */
+    @Nullable
     private Gui queryDialog;
 
     /**
      * The keybindings dialog.
      */
+    @Nullable
     private Gui keybindDialog;
 
     /**
      * The "really quit?" dialog. Set to <code>null</code> if the skin does not
      * define this dialog.
      */
+    @Nullable
     private Gui dialogQuit = null;
 
     /**
      * The "really disconnect?" dialog. Set to <code>null</code> if the skin
      * does not define this dialog.
      */
+    @Nullable
     private Gui dialogDisconnect = null;
 
     /**
      * The "connect in progress" dialog. Set to <code>null</code> if the skin
      * does not define this dialog.
      */
+    @Nullable
     private Gui dialogConnect = null;
 
     /**
      * The "message" field within {@link #dialogConnect}. Set to
      * <code>null</code> if the dialog does not define a "message" label.
      */
+    @Nullable
     private AbstractLabel dialogConnectLabel = null;
 
     /**
@@ -93,36 +105,43 @@ public class GuiManager
     /**
      * The commands instance for this window.
      */
+    @NotNull
     private Commands commands;
 
     /**
      * The {@link TooltipManager} for this window.
      */
+    @NotNull
     private final TooltipManager tooltipManager;
 
     /**
      * The {@link Settings} to use.
      */
+    @NotNull
     private final Settings settings;
 
     /**
      * The {@link JXCConnection} to use.
      */
+    @NotNull
     private JXCConnection connection;
 
     /**
      * The {@link CrossfireServerConnection} instance to monitor.
      */
+    @NotNull
     private final CrossfireServerConnection server;
 
     /**
      * The {@link Macros} instance to use.
      */
+    @NotNull
     private final Macros macros;
 
     /**
      * Called periodically to update the display contents.
      */
+    @NotNull
     private final ActionListener actionListener = new ActionListener()
     {
         /** {@inheritDoc} */
@@ -139,18 +158,20 @@ public class GuiManager
     /**
      * The timer used to update the display contents.
      */
+    @NotNull
     private final Timer timer = new Timer(10, actionListener);
 
     /**
      * The {@link CrossfireDrawextinfoListener} attached to {@link #server}.
      */
+    @NotNull
     private final CrossfireDrawextinfoListener crossfireDrawextinfoListener = new CrossfireDrawextinfoListener()
     {
         /** {@inheritDoc} */
         @Override
-        public void commandDrawextinfoReceived(final int color, final int type, final int subtype, String message)
+        public void commandDrawextinfoReceived(final int color, final int type, final int subtype, @NotNull String message)
         {
-            final Gui dialog;
+            @Nullable final Gui dialog;
             switch (type)
             {
             case MessageTypes.MSG_TYPE_BOOK:
@@ -226,6 +247,7 @@ public class GuiManager
      * The {@link GuiStateListener} for detecting established or dropped
      * connections.
      */
+    @NotNull
     private final GuiStateListener guiStateListener = new GuiStateListener()
     {
         /** {@inheritDoc} */
@@ -263,7 +285,7 @@ public class GuiManager
 
         /** {@inheritDoc} */
         @Override
-        public void connecting(final ClientSocketState clientSocketState)
+        public void connecting(@NotNull final ClientSocketState clientSocketState)
         {
             updateConnectLabel(clientSocketState, null);
         }
@@ -280,7 +302,7 @@ public class GuiManager
 
         /** {@inheritDoc} */
         @Override
-        public void connectFailed(final String reason)
+        public void connectFailed(@NotNull final String reason)
         {
             if (dialogConnect != null)
             {
@@ -300,7 +322,7 @@ public class GuiManager
      * @param macros the macros instance to use
      * @param windowRenderer the window renderer to use
      */
-    public GuiManager(final JXCWindow window, final Object semaphoreDrawing, final TooltipManager tooltipManager, final Settings settings, final CrossfireServerConnection server, final Macros macros, final JXCWindowRenderer windowRenderer)
+    public GuiManager(@NotNull final JXCWindow window, @NotNull final Object semaphoreDrawing, @NotNull final TooltipManager tooltipManager, @NotNull final Settings settings, @NotNull final CrossfireServerConnection server, @NotNull final Macros macros, @NotNull final JXCWindowRenderer windowRenderer)
     {
         this.semaphoreDrawing = semaphoreDrawing;
         this.tooltipManager = tooltipManager;
@@ -312,7 +334,7 @@ public class GuiManager
     }
 
     @Deprecated
-    public void init(final JXCWindow window, final ScriptManager scriptManager, final CommandQueue commandQueue, final CrossfireServerConnection server, final OptionManager optionManager, final MouseTracker mouseTracker)
+    public void init(@NotNull final JXCWindow window, @NotNull final ScriptManager scriptManager, @NotNull final CommandQueue commandQueue, @NotNull final CrossfireServerConnection server, @NotNull final OptionManager optionManager, @Nullable final MouseTracker mouseTracker)
     {
         commands = new Commands(window, windowRenderer, commandQueue, server, scriptManager, optionManager, this, macros);
         guiFactory = new GuiFactory(mouseTracker, commands, this, macros);
@@ -413,7 +435,7 @@ public class GuiManager
      * @param prompt the query prompt
      * @param queryType the query type
      */
-    public void openQueryDialog(final String prompt, final int queryType)
+    public void openQueryDialog(@NotNull final String prompt, final int queryType)
     {
         windowRenderer.openDialog(queryDialog, false);
         queryDialog.setHideInput((queryType&CrossfireQueryListener.HIDEINPUT) != 0);
@@ -456,7 +478,7 @@ public class GuiManager
      * @param autoCloseOnDeactivate whether the dialog should auto-close when
      * it becomes inactive; ignored if the dialog is already open
      */
-    public void openDialog(final Gui dialog, final boolean autoCloseOnDeactivate)
+    public void openDialog(@NotNull final Gui dialog, final boolean autoCloseOnDeactivate)
     {
         windowRenderer.openDialog(dialog, autoCloseOnDeactivate);
         if (dialog == queryDialog)
@@ -469,7 +491,7 @@ public class GuiManager
      * Toggles a dialog.
      * @param dialog the dialog to toggle
      */
-    public void toggleDialog(final Gui dialog)
+    public void toggleDialog(@NotNull final Gui dialog)
     {
         if (windowRenderer.toggleDialog(dialog))
         {
@@ -499,7 +521,7 @@ public class GuiManager
      * @param name the dialog name
      * @return whether the dialog exists
      */
-    private boolean openDialogByName(final String name)
+    private boolean openDialogByName(@NotNull final String name)
     {
         final Gui dialog;
         try
@@ -519,7 +541,7 @@ public class GuiManager
      * Closes a dialog by name.
      * @param name the dialog name
      */
-    private void closeDialogByName(final String name)
+    private void closeDialogByName(@NotNull final String name)
     {
         final Gui dialog;
         try
@@ -605,7 +627,7 @@ public class GuiManager
      * character name prompt.
      * @param playerName the player name
      */
-    public void updatePlayerName(final String playerName)
+    public void updatePlayerName(@NotNull final String playerName)
     {
         if (currentQueryDialogIsNamePrompt)
         {
@@ -618,6 +640,7 @@ public class GuiManager
      * @return the tooltip manager for this window
      */
     @Deprecated
+    @NotNull
     public TooltipManager getTooltipManager()
     {
         return tooltipManager;
@@ -628,6 +651,7 @@ public class GuiManager
      * @return the window renderer
      */
     @Deprecated
+    @NotNull
     public JXCWindowRenderer getWindowRenderer()
     {
         return windowRenderer;
@@ -638,6 +662,7 @@ public class GuiManager
      * @return the skin
      */
     @Deprecated
+    @Nullable
     public JXCSkin getSkin()
     {
         return skin;
@@ -652,6 +677,7 @@ public class GuiManager
      * @return the command input text field, or <code>null</code> if the skin
      * has no command input text field defined
      */
+    @Nullable
     private GUIText activateCommandInput()
     {
         // check main gui
@@ -701,7 +727,7 @@ public class GuiManager
      * visible.
      * @param newText the new command text if non-<code>null</code>
      */
-    public void activateCommandInput(final String newText)
+    public void activateCommandInput(@Nullable final String newText)
     {
         final GUIText textArea = activateCommandInput();
         if (textArea != null && newText != null && newText.length() > 0)
@@ -731,7 +757,7 @@ public class GuiManager
      * Sets a new skin.
      * @param skin the new skin
      */
-    public void setSkin(final JXCSkin skin)
+    public void setSkin(@NotNull final JXCSkin skin)
     {
         this.skin = skin;
         skin.attach(this);
@@ -783,13 +809,14 @@ public class GuiManager
     }
 
     @Deprecated
+    @NotNull
     public Commands getCommands()
     {
         return commands;
     }
 
     @Deprecated
-    public void setConnection(final JXCConnection connection)
+    public void setConnection(@NotNull final JXCConnection connection)
     {
         this.connection = connection;
     }
@@ -801,7 +828,7 @@ public class GuiManager
      * @param clientSocketState the client socket state
      * @param param a parameter to display
      */
-    private void updateConnectLabel(final ClientSocketState clientSocketState, final String param)
+    private void updateConnectLabel(@NotNull final ClientSocketState clientSocketState, @Nullable final String param)
     {
         if (dialogConnectLabel != null)
         {

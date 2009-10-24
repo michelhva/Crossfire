@@ -23,6 +23,7 @@ import java.util.Collections;
 import java.util.Iterator;
 import java.util.LinkedHashMap;
 import java.util.Map;
+import org.jetbrains.annotations.NotNull;
 
 /**
  * Implements a cache for elements identified by name.
@@ -34,12 +35,14 @@ public class JXCSkinCache<T> implements Iterable<T>
     /**
      * The description of this cache used for creating error messages.
      */
+    @NotNull
     private final String ident;
 
     /**
      * The cached elements. Maps element name to element. Mapped elements are
      * never <code>null</code>.
      */
+    @NotNull
     private final Map<String, T> cache = new LinkedHashMap<String, T>();
 
     /**
@@ -47,9 +50,8 @@ public class JXCSkinCache<T> implements Iterable<T>
      *
      * @param ident The description of this cache used for creating error messages.
      */
-    public JXCSkinCache(final String ident)
+    public JXCSkinCache(@NotNull final String ident)
     {
-        if (ident == null) throw new IllegalArgumentException();
         this.ident = ident;
     }
 
@@ -70,11 +72,8 @@ public class JXCSkinCache<T> implements Iterable<T>
      *
      * @throws JXCSkinException if the element name is not unique
      */
-    public void insert(final String name, final T t) throws JXCSkinException
+    public void insert(@NotNull final String name, @NotNull final T t) throws JXCSkinException
     {
-        if (name == null) throw new IllegalArgumentException();
-        if (t == null) throw new IllegalArgumentException();
-
         if (cache.containsKey(name))
         {
             throw new JXCSkinException("duplicate "+ident+" name: "+name);
@@ -92,7 +91,8 @@ public class JXCSkinCache<T> implements Iterable<T>
      *
      * @throws JXCSkinException if no such element exists
      */
-    public T lookup(final String name) throws JXCSkinException
+    @NotNull
+    public T lookup(@NotNull final String name) throws JXCSkinException
     {
         final T t = cache.get(name);
         if (t == null)
@@ -108,6 +108,7 @@ public class JXCSkinCache<T> implements Iterable<T>
      *
      * @return An iterator returning all stored values.
      */
+    @NotNull
     @Override
     public Iterator<T> iterator()
     {

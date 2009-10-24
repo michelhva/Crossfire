@@ -19,6 +19,9 @@
 //
 package com.realtime.crossfire.jxclient.skin;
 
+import org.jetbrains.annotations.NotNull;
+import org.jetbrains.annotations.Nullable;
+
 /**
  * Information about jxclient's screen/window resolution. It consists of a size
  * (width and height) and whether the exact resolution should be used, or if a
@@ -66,6 +69,7 @@ public class Resolution
      * @return the <code>Resolution instance</code>, or <code>null</code> if
      * the string representation is invalid
      */
+    @Nullable
     public static Resolution parse(final boolean exact, final String str)
     {
         final String[] tmp = str.split("x", -1);
@@ -127,7 +131,7 @@ public class Resolution
 
     /** {@inheritDoc} */
     @Override
-    public boolean equals(final Object obj)
+    public boolean equals(@Nullable final Object obj)
     {
         if (obj == null) return false;
         if (obj.getClass() != Resolution.class) return false;
@@ -143,6 +147,7 @@ public class Resolution
     }
 
     /** {@inheritDoc} */
+    @NotNull
     @Override
     public String toString()
     {

@@ -21,6 +21,7 @@ package com.realtime.crossfire.jxclient.commands;
 
 import com.realtime.crossfire.jxclient.server.CrossfireDrawinfoListener;
 import com.realtime.crossfire.jxclient.server.CrossfireServerConnection;
+import org.jetbrains.annotations.NotNull;
 
 /**
  * Abstract base class for {@link Command} implementations.
@@ -31,13 +32,14 @@ public abstract class AbstractCommand implements Command
     /**
      * The connection instance.
      */
+    @NotNull
     private final CrossfireServerConnection crossfireServerConnection;
 
     /**
      * Creates a new instance.
      * @param crossfireServerConnection the connection instance
      */
-    protected AbstractCommand(final CrossfireServerConnection crossfireServerConnection)
+    protected AbstractCommand(@NotNull final CrossfireServerConnection crossfireServerConnection)
     {
         this.crossfireServerConnection = crossfireServerConnection;
     }
@@ -46,7 +48,7 @@ public abstract class AbstractCommand implements Command
      * Displays a regular output message.
      * @param message the message
      */
-    protected void drawInfo(final String message)
+    protected void drawInfo(@NotNull final String message)
     {
         drawInfo(message, CrossfireDrawinfoListener.NDI_BLACK);
     }
@@ -55,7 +57,7 @@ public abstract class AbstractCommand implements Command
      * Displays an error message.
      * @param message the error message
      */
-    protected void drawInfoError(final String message)
+    protected void drawInfoError(@NotNull final String message)
     {
         drawInfo(message, CrossfireDrawinfoListener.NDI_RED);
     }
@@ -65,7 +67,7 @@ public abstract class AbstractCommand implements Command
      * @param message the message
      * @param color the color code
      */
-    protected void drawInfo(final String message, final int color)
+    protected void drawInfo(@NotNull final String message, final int color)
     {
         crossfireServerConnection.drawInfo(message, color);
     }

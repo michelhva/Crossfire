@@ -36,6 +36,8 @@ import java.awt.event.InputEvent;
 import java.util.Collection;
 import java.util.List;
 import javax.swing.JList;
+import org.jetbrains.annotations.NotNull;
+import org.jetbrains.annotations.Nullable;
 
 /**
  * A {@link GUIItemList} that displays the character's inventory.
@@ -52,27 +54,33 @@ public class GUIItemInventoryList extends GUIItemList
      * The {@link GUIItemInventoryFactory} for creating new {@link
      * GUIItemInventory} instances.
      */
+    @NotNull
     private final GUIItemInventoryFactory itemInventoryFactory;
 
+    @NotNull
     private final CommandQueue commandQueue;
 
+    @NotNull
     private final CrossfireServerConnection crossfireServerConnection;
 
+    @NotNull
     private final ItemsManager itemsManager;
 
     /**
      * The label to update with information about the selected item.
      */
+    @Nullable
     private final AbstractLabel currentItem;
 
     /**
      * The {@link LocationsListener} to be notified about inventory changes.
      */
+    @NotNull
     private final LocationsListener locationsListener = new LocationsListener()
     {
         /** {@inheritDoc} */
         @Override
-        public void locationsModified(final Collection<Integer> index)
+        public void locationsModified(@NotNull final Collection<Integer> index)
         {
             rebuildList();
         }
@@ -82,11 +90,12 @@ public class GUIItemInventoryList extends GUIItemList
      * The {@link GUIElementChangedListener} attached to all {@link
      * GUIItemInventory} instance in the list.
      */
+    @NotNull
     private final GUIElementChangedListener itemChangedListener = new GUIElementChangedListener()
     {
         /** {@inheritDoc} */
         @Override
-        public void notifyChanged(final GUIElement element)
+        public void notifyChanged(@NotNull final GUIElement element)
         {
             element.resetChanged();
             selectionChanged();
@@ -110,7 +119,7 @@ public class GUIItemInventoryList extends GUIItemList
      * @param itemInventoryFactory the factory for creating item inventory
      * instances
      */
-    public GUIItemInventoryList(final TooltipManager tooltipManager, final JXCWindowRenderer windowRenderer, final CommandQueue commandQueue, final String name, final int x, final int y, final int w, final int h, final int cellHeight, final CrossfireServerConnection crossfireServerConnection, final ItemsManager itemsManager, final AbstractLabel currentItem, final GUIItemInventoryFactory itemInventoryFactory)
+    public GUIItemInventoryList(@NotNull final TooltipManager tooltipManager, @NotNull final JXCWindowRenderer windowRenderer, @NotNull final CommandQueue commandQueue, @NotNull final String name, final int x, final int y, final int w, final int h, final int cellHeight, @NotNull final CrossfireServerConnection crossfireServerConnection, @NotNull final ItemsManager itemsManager, @Nullable final AbstractLabel currentItem, @NotNull final GUIItemInventoryFactory itemInventoryFactory)
     {
         super(tooltipManager, windowRenderer, name, x, y, w, h, cellHeight, new ItemInventoryCellRenderer(itemInventoryFactory.newTemplateItemInventory(cellHeight)));
         this.itemInventoryFactory = itemInventoryFactory;

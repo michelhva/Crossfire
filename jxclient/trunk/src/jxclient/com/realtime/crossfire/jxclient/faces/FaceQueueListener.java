@@ -19,6 +19,8 @@
 //
 package com.realtime.crossfire.jxclient.faces;
 
+import org.jetbrains.annotations.NotNull;
+
 /**
  * Interface for listeners interested in {@link FaceQueue} events.
  * @author Andreas Kirschbaum
@@ -30,11 +32,11 @@ public interface FaceQueueListener
      * @param face the face that has been loaded
      * @param faceImages the face images instance that has been loaded
      */
-    void faceLoaded(Face face, FaceImages faceImages);
+    void faceLoaded(@NotNull Face face, @NotNull FaceImages faceImages);
 
     /**
      * Called after a {@link Face} could not be loaded.
      * @param face the face that has failed to load
      */
-    void faceFailed(Face face);
+    void faceFailed(@NotNull Face face);
 }

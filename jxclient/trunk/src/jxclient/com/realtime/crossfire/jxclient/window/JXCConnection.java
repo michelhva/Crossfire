@@ -7,6 +7,8 @@ import com.realtime.crossfire.jxclient.settings.Settings;
 import com.realtime.crossfire.jxclient.skin.JXCSkin;
 import com.realtime.crossfire.jxclient.util.NumberParser;
 import java.awt.Frame;
+import org.jetbrains.annotations.NotNull;
+import org.jetbrains.annotations.Nullable;
 
 public class JXCConnection
 {
@@ -18,47 +20,56 @@ public class JXCConnection
     /**
      * The prefix for the window title.
      */
+    @NotNull
     private static final String TITLE_PREFIX = "jxclient";
 
     /**
      * The {@link KeybindingsManager} to update.
      */
+    @NotNull
     private final KeybindingsManager keybindingsManager;
 
     /**
      * The {@link ShortcutsManager} to update.
      */
+    @NotNull
     private final ShortcutsManager shortcutsManager;
 
     /**
      * The settings instance to use.
      */
+    @NotNull
     private final Settings settings;
 
     /**
      * The {@link Frame} for updating the title.
      */
+    @NotNull
     private final Frame frame;
 
     /**
      * The {@link Pickup} instance to update.
      */
+    @NotNull
     private final Pickup characterPickup;
 
     /**
      * The {@link CrossfireServerConnection} instance used to connect to the
      * Crossfire server.
      */
+    @NotNull
     private final CrossfireServerConnection server;
 
     /**
      * The {@link GuiManager} to use when connecting.
      */
+    @NotNull
     private final GuiManager guiManager;
 
     /**
      * The currently connected server. Set to <code>null</code> if unconnected.
      */
+    @Nullable
     private String hostname = null;
 
     /**
@@ -70,12 +81,14 @@ public class JXCConnection
      * The currently logged in character. Set to <code>null</code> if not
      * logged in.
      */
+    @Nullable
     private String character = null;
 
     /**
      * The {@link GuiStateListener} for detecting established or dropped
      * connections.
      */
+    @NotNull
     private final GuiStateListener guiStateListener = new GuiStateListener()
     {
         /** {@inheritDoc} */
@@ -101,7 +114,7 @@ public class JXCConnection
 
         /** {@inheritDoc} */
         @Override
-        public void connecting(final ClientSocketState clientSocketState)
+        public void connecting(@NotNull final ClientSocketState clientSocketState)
         {
             // ignore
         }
@@ -115,7 +128,7 @@ public class JXCConnection
 
         /** {@inheritDoc} */
         @Override
-        public void connectFailed(final String reason)
+        public void connectFailed(@NotNull final String reason)
         {
             // ignore
         }
@@ -131,7 +144,7 @@ public class JXCConnection
      * @param server the crossfire server connection instance used to connect
      * @param guiManager the gui manager to use when connecting
      */
-    public JXCConnection(final KeybindingsManager keybindingsManager, final ShortcutsManager shortcutsManager, final Settings settings, final JXCWindow window, final Pickup characterPickup, final CrossfireServerConnection server, final GuiManager guiManager)
+    public JXCConnection(@NotNull final KeybindingsManager keybindingsManager, @NotNull final ShortcutsManager shortcutsManager, @NotNull final Settings settings, @NotNull final JXCWindow window, @NotNull final Pickup characterPickup, @NotNull final CrossfireServerConnection server, @NotNull final GuiManager guiManager)
     {
         this.keybindingsManager = keybindingsManager;
         this.shortcutsManager = shortcutsManager;
@@ -148,6 +161,7 @@ public class JXCConnection
      * Returns the currently connected server.
      * @return the server or <code>null</code> if unconnected
      */
+    @Nullable
     public String getHostname()
     {
         return hostname;
@@ -168,7 +182,7 @@ public class JXCConnection
      * @param character The active character; <code>null</code> if not logged
      * in.
      */
-    public void setCharacter(final String character)
+    public void setCharacter(@Nullable final String character)
     {
         if (this.character == null ? character == null : this.character.equals(character))
         {
@@ -226,9 +240,9 @@ public class JXCConnection
      *
      * @param serverInfo The hostname; <code>null</code> if not connected.
      */
-    public void setHost(final String serverInfo)
+    public void setHost(@Nullable final String serverInfo)
     {
-        final String newHostname;
+        @Nullable final String newHostname;
         final int newPort;
         if (serverInfo == null)
         {

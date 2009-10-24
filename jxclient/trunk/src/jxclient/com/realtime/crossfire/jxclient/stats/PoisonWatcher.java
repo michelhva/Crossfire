@@ -25,6 +25,7 @@ import com.realtime.crossfire.jxclient.server.CrossfireServerConnection;
 import com.realtime.crossfire.jxclient.server.CrossfireStatsListener;
 import com.realtime.crossfire.jxclient.timeouts.TimeoutEvent;
 import com.realtime.crossfire.jxclient.timeouts.Timeouts;
+import org.jetbrains.annotations.NotNull;
 
 /**
  * Helper class to synthesize an "is poisoned" stat value. The Crossfire server
@@ -44,21 +45,25 @@ public class PoisonWatcher
     /**
      * The text message the server sends in poisoned state.
      */
+    @NotNull
     private static final String ASSERT_MESSAGE = "You feel very sick...";
 
     /**
      * The text message the server sends when the poison wears off.
      */
+    @NotNull
     private static final String DEASSERT_MESSAGE = "You feel much better now.";
 
     /**
      * The object used for synchronization.
      */
+    @NotNull
     private final Object sync = new Object();
 
     /**
      * The stats instance to notify.
      */
+    @NotNull
     private final Stats stats;
 
     /**
@@ -69,11 +74,12 @@ public class PoisonWatcher
     /**
      * The drawinfo listener to receive drawinfo messages.
      */
+    @NotNull
     private final CrossfireDrawinfoListener drawinfoListener = new CrossfireDrawinfoListener()
     {
         /** {@inheritDoc} */
         @Override
-        public void commandDrawinfoReceived(final String text, final int type)
+        public void commandDrawinfoReceived(@NotNull final String text, final int type)
         {
             check(text);
         }
@@ -82,11 +88,12 @@ public class PoisonWatcher
     /**
      * The drawextinfo listener to receive drawextinfo messages.
      */
+    @NotNull
     private final CrossfireDrawextinfoListener drawextinfoListener = new CrossfireDrawextinfoListener()
     {
         /** {@inheritDoc} */
         @Override
-        public void commandDrawextinfoReceived(final int color, final int type, final int subtype, final String message)
+        public void commandDrawextinfoReceived(final int color, final int type, final int subtype, @NotNull final String message)
         {
             check(message);
         }
@@ -96,6 +103,7 @@ public class PoisonWatcher
      * The timeout event used to turn off poisoning if the deassert message was
      * missed.
      */
+    @NotNull
     private final TimeoutEvent timeoutEvent = new TimeoutEvent()
     {
         /** {@inheritDoc} */
@@ -113,7 +121,7 @@ public class PoisonWatcher
      *
      * @param crossfireServerConnection The connection to watch.
      */
-    public PoisonWatcher(final Stats stats, final CrossfireServerConnection crossfireServerConnection)
+    public PoisonWatcher(@NotNull final Stats stats, @NotNull final CrossfireServerConnection crossfireServerConnection)
     {
         this.stats = stats;
         crossfireServerConnection.addCrossfireDrawinfoListener(drawinfoListener);
@@ -126,7 +134,7 @@ public class PoisonWatcher
      *
      * @param message The text message.
      */
-    private void check(final String message)
+    private void check(@NotNull final String message)
     {
         if (message.equals(ASSERT_MESSAGE))
         {

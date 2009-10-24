@@ -19,6 +19,8 @@
 //
 package com.realtime.crossfire.jxclient.server;
 
+import org.jetbrains.annotations.NotNull;
+
 /**
  * Interface for listeners interested in "music" commands.
  *
@@ -31,5 +33,5 @@ public interface CrossfireMusicListener
      *
      * @param music The music identification.
      */
-    void commandMusicReceived(String music);
+    void commandMusicReceived(@NotNull String music);
 }

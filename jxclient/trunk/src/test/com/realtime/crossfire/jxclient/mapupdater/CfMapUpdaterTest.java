@@ -32,6 +32,7 @@ import junit.framework.Test;
 import junit.framework.TestCase;
 import junit.framework.TestSuite;
 import junit.textui.TestRunner;
+import org.jetbrains.annotations.NotNull;
 
 /**
  * Regression tests for class {@link CfMapUpdater}.
@@ -43,6 +44,7 @@ public class CfMapUpdaterTest extends TestCase
     /**
      * A .png file of size 64x64.
      */
+    @NotNull
     private static final byte[] png32x32 =
     {
         (byte)0x89, (byte)0x50, (byte)0x4e, (byte)0x47, (byte)0x0d, (byte)0x0a, (byte)0x1a, (byte)0x0a,
@@ -62,6 +64,7 @@ public class CfMapUpdaterTest extends TestCase
     /**
      * A .png file of size 64x64.
      */
+    @NotNull
     private static final byte[] png64x64 =
     {
         (byte)0x89, (byte)0x50, (byte)0x4e, (byte)0x47, (byte)0x0d, (byte)0x0a, (byte)0x1a, (byte)0x0a,
@@ -83,6 +86,7 @@ public class CfMapUpdaterTest extends TestCase
     /**
      * A .png file of size 128x256.
      */
+    @NotNull
     private static final byte[] png128x256 =
     {
         (byte)0x89, (byte)0x50, (byte)0x4e, (byte)0x47, (byte)0x0d, (byte)0x0a, (byte)0x1a, (byte)0x0a,
@@ -120,11 +124,12 @@ public class CfMapUpdaterTest extends TestCase
      *
      * @param name the test case name
      */
-    public CfMapUpdaterTest(final String name)
+    public CfMapUpdaterTest(@NotNull final String name)
     {
         super(name);
     }
 
+    @NotNull
     public static Test suite()
     {
         return new TestSuite(CfMapUpdaterTest.class);
@@ -135,7 +140,7 @@ public class CfMapUpdaterTest extends TestCase
      *
      * @param args The command line arguments (ignored).
      */
-    public static void main(final String[] args)
+    public static void main(@NotNull final String[] args)
     {
         TestRunner.run(suite());
     }
@@ -352,7 +357,8 @@ public class CfMapUpdaterTest extends TestCase
             , toString(mapUpdater.getMap(), 5, 10, 9, 1));
     }
 
-    private static String toString(final CfMap map, final int x0, final int y0, final int w, final int h)
+    @NotNull
+    private static String toString(@NotNull final CfMap map, final int x0, final int y0, final int w, final int h)
     {
         final StringBuilder sb = new StringBuilder();
         for (int y = y0; y < y0+h; y++)
@@ -411,7 +417,7 @@ public class CfMapUpdaterTest extends TestCase
         return sb.toString();
     }
 
-    private static void defineFace(final FaceCache faceCache, final FacesManager facesManager, final int faceNum, final String faceName, final byte[] data)
+    private static void defineFace(@NotNull final FaceCache faceCache, @NotNull final FacesManager facesManager, final int faceNum, @NotNull final String faceName, @NotNull final byte[] data)
     {
         final Face face = new Face(faceNum, faceName, 0);
         faceCache.addFace(face);

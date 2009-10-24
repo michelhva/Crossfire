@@ -19,6 +19,8 @@
 //
 package com.realtime.crossfire.jxclient.server;
 
+import org.jetbrains.annotations.NotNull;
+
 /**
  * Performs most of the network-related work.
  * @author Andreas Kirschbaum
@@ -30,7 +32,7 @@ public interface ServerConnection
      * @param hostname the hostname to connect to
      * @param port the port to connect to
      */
-    void connect(String hostname, int port);
+    void connect(@NotNull String hostname, int port);
 
     /**
      * Disconnects from the server. Does nothing if not connected.
@@ -41,11 +43,11 @@ public interface ServerConnection
      * Adds a {@link ClientSocketListener} to notify.
      * @param clientSocketListener the client socket listener to add
      */
-    void addClientSocketListener(ClientSocketListener clientSocketListener);
+    void addClientSocketListener(@NotNull ClientSocketListener clientSocketListener);
 
     /**
      * Removes a {@link ClientSocketListener} to notify.
      * @param clientSocketListener the client socket listener to remove
      */
-    void removeClientSocketListener(ClientSocketListener clientSocketListener);
+    void removeClientSocketListener(@NotNull ClientSocketListener clientSocketListener);
 }

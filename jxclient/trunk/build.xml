@@ -18,6 +18,7 @@
         <javac srcdir="${src.test}" destdir="${build}/test" source="1.6" debug="yes" fork="yes">
             <classpath>
                 <pathelement location="jxclient.jar"/>
+                <pathelement location="lib/annotations.jar"/>
                 <pathelement location="lib/junit-4.2.jar"/>
             </classpath>
             <compilerarg value="-Xlint:unchecked"/>
@@ -78,6 +79,7 @@
         <junit fork="yes" haltonerror="yes" haltonfailure="yes">
             <jvmarg value="-ea"/>
             <classpath>
+                <pathelement location="lib/annotations.jar"/>
                 <pathelement location="lib/junit-4.2.jar"/>
                 <pathelement location="${build}/test"/>
                 <pathelement location="jxclient.jar"/>

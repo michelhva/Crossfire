@@ -28,6 +28,8 @@ import com.realtime.crossfire.jxclient.window.JXCWindowRenderer;
 import java.awt.Color;
 import java.awt.Font;
 import java.awt.image.BufferedImage;
+import org.jetbrains.annotations.NotNull;
+import org.jetbrains.annotations.Nullable;
 
 /**
  * A {@link GUIHTMLLabel} that displays the currently selected spell.
@@ -75,27 +77,31 @@ public class GUISpellLabel extends GUIHTMLLabel
     /**
      * The instance for looking up faces.
      */
+    @NotNull
     private final FacesManager facesManager;
 
     /**
      * The spell type to display.
      */
+    @NotNull
     private final Type type;
 
     /**
      * The {@link CurrentSpellManager} to monitor.
      */
+    @NotNull
     private final CurrentSpellManager currentSpellManager;
 
     /**
      * The {@link CurrentSpellManagerListener} registered to be notified about changed spell
      * parameters.
      */
+    @NotNull
     private final CurrentSpellManagerListener currentSpellManagerListener = new CurrentSpellManagerListener()
     {
         /** {@inheritDoc} */
         @Override
-        public void spellChanged(final Spell spell)
+        public void spellChanged(@Nullable final Spell spell)
         {
             if (spell == null)
             {
@@ -170,7 +176,7 @@ public class GUISpellLabel extends GUIHTMLLabel
      *
      * @param currentSpellManager The current spell manager to track.
      */
-    public GUISpellLabel(final TooltipManager tooltipManager, final JXCWindowRenderer windowRenderer, final String name, final int x, final int y, final int w, final int h, final BufferedImage picture, final FacesManager facesManager, final Font font, final Type type, final CurrentSpellManager currentSpellManager)
+    public GUISpellLabel(@NotNull final TooltipManager tooltipManager, @NotNull final JXCWindowRenderer windowRenderer, @NotNull final String name, final int x, final int y, final int w, final int h, @Nullable final BufferedImage picture, @NotNull final FacesManager facesManager, @Nullable final Font font, @NotNull final Type type, @NotNull final CurrentSpellManager currentSpellManager)
     {
         super(tooltipManager, windowRenderer, name, x, y, w, h, picture, font, Color.WHITE, new Color(0, 0, 0, 0F), "");
         this.facesManager = facesManager;

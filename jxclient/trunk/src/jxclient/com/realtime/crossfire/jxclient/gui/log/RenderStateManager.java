@@ -20,6 +20,7 @@
 package com.realtime.crossfire.jxclient.gui.log;
 
 import java.util.List;
+import org.jetbrains.annotations.NotNull;
 
 /**
  * Encapsulates the state for rendering a {@link Buffer} instance.
@@ -31,11 +32,13 @@ public class RenderStateManager
     /**
      * The listener to notify about state changes.
      */
+    @NotNull
     private final RenderStateListener renderStateListener;
 
     /**
      * The rendered buffer.
      */
+    @NotNull
     private final Buffer buffer;
 
     /**
@@ -58,11 +61,13 @@ public class RenderStateManager
 
     private boolean lastCanScrollUp = false;
 
+    @NotNull
     private final RenderState renderState = new RenderState();
 
     /**
      * The listener to re-render the window contents after changes.
      */
+    @NotNull
     private final BufferListener bufferListener = new BufferListener()
     {
         /** {@inheritDoc} */
@@ -83,7 +88,7 @@ public class RenderStateManager
 
         /** {@inheritDoc} */
         @Override
-        public void linesRemoved(final List<Line> lines)
+        public void linesRemoved(@NotNull final List<Line> lines)
         {
             renderState.linesRemoved(buffer, lines);
             fireChanges();
@@ -97,7 +102,7 @@ public class RenderStateManager
      *
      * @param buffer The rendered buffer.
      */
-    public RenderStateManager(final RenderStateListener renderStateListener, final Buffer buffer)
+    public RenderStateManager(@NotNull final RenderStateListener renderStateListener, @NotNull final Buffer buffer)
     {
         this.renderStateListener = renderStateListener;
         this.buffer = buffer;

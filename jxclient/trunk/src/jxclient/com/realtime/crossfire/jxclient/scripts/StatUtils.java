@@ -22,6 +22,7 @@ package com.realtime.crossfire.jxclient.scripts;
 import com.realtime.crossfire.jxclient.server.CrossfireStatsListener;
 import java.util.HashMap;
 import java.util.Map;
+import org.jetbrains.annotations.NotNull;
 
 /**
  * Utility class for converting stat values to stat names.
@@ -32,6 +33,7 @@ public class StatUtils
     /**
      * The stat names: maps stat value to stat name.
      */
+    @NotNull
     private static final Map<Integer, String> statNames = new HashMap<Integer, String>();
     static
     {
@@ -87,6 +89,7 @@ public class StatUtils
      * @param stat the stat value
      * @return the stat name
      */
+    @NotNull
     public static String getStatNames(final int stat)
     {
         final String statName = statNames.get(stat);

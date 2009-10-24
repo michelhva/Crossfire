@@ -23,6 +23,7 @@ import com.realtime.crossfire.jxclient.scripts.ScriptManager;
 import com.realtime.crossfire.jxclient.scripts.ScriptProcess;
 import com.realtime.crossfire.jxclient.server.CrossfireServerConnection;
 import java.util.Collection;
+import org.jetbrains.annotations.NotNull;
 
 /**
  * Implements the "scripttell" command. It sends a "scripttell" command to a
@@ -34,6 +35,7 @@ public class ScripttellCommand extends AbstractCommand
     /**
      * The {@link ScriptManager} to use.
      */
+    @NotNull
     private final ScriptManager scriptManager;
 
     /**
@@ -41,7 +43,7 @@ public class ScripttellCommand extends AbstractCommand
      * @param scriptManager the script manager to use
      * @param crossfireServerConnection the connection instance
      */
-    public ScripttellCommand(final ScriptManager scriptManager, final CrossfireServerConnection crossfireServerConnection)
+    public ScripttellCommand(@NotNull final ScriptManager scriptManager, @NotNull final CrossfireServerConnection crossfireServerConnection)
     {
         super(crossfireServerConnection);
         this.scriptManager = scriptManager;
@@ -56,7 +58,7 @@ public class ScripttellCommand extends AbstractCommand
 
     /** {@inheritDoc} */
     @Override
-    public void execute(final String args)
+    public void execute(@NotNull final String args)
     {
         if (args.isEmpty())
         {

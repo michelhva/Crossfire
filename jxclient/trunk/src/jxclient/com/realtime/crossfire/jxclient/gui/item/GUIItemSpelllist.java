@@ -37,6 +37,8 @@ import java.awt.Graphics2D;
 import java.awt.Image;
 import java.util.Collection;
 import java.util.List;
+import org.jetbrains.annotations.NotNull;
+import org.jetbrains.annotations.Nullable;
 
 public class GUIItemSpelllist extends GUIItem
 {
@@ -48,16 +50,19 @@ public class GUIItemSpelllist extends GUIItem
     /**
      * The background color of this item.
      */
+    @NotNull
     private static final Color BACKGROUND_COLOR = new Color(0, 0, 0, 0.0f);
 
     /**
      * The command queue for sending commands.
      */
+    @NotNull
     private final CommandQueue commandQueue;
 
     /**
      * The instance for looking up faces.
      */
+    @NotNull
     private final FacesManager facesManager;
 
     /**
@@ -68,12 +73,16 @@ public class GUIItemSpelllist extends GUIItem
     /**
      * The {@link SpellsManager} instance to watch.
      */
+    @NotNull
     private final SpellsManager spellsManager;
 
+    @Nullable
     private final Color selectorColor;
 
+    @Nullable
     private final Image selectorImage;
 
+    @NotNull
     private final CurrentSpellManager currentSpellManager;
 
     /**
@@ -86,6 +95,7 @@ public class GUIItemSpelllist extends GUIItem
      */
     private final int h;
 
+    @Nullable
     private Spell spell = null;
 
     private int index = -1;
@@ -93,11 +103,12 @@ public class GUIItemSpelllist extends GUIItem
     /**
      * The {@link SpellsManagerListener} used to detect spell changes.
      */
+    @NotNull
     private final SpellsManagerListener spellsManagerListener = new SpellsManagerListener()
     {
         /** {@inheritDoc} */
         @Override
-        public void spellAdded(final Spell spell, final int index)
+        public void spellAdded(@NotNull final Spell spell, final int index)
         {
             if (GUIItemSpelllist.this.index >= index)
             {
@@ -107,7 +118,7 @@ public class GUIItemSpelllist extends GUIItem
 
         /** {@inheritDoc} */
         @Override
-        public void spellRemoved(final Spell spell, final int index)
+        public void spellRemoved(@NotNull final Spell spell, final int index)
         {
             if (GUIItemSpelllist.this.index >= index)
             {
@@ -119,6 +130,7 @@ public class GUIItemSpelllist extends GUIItem
     /**
      * The {@link SpellListener} attached to {@link #spell}.
      */
+    @NotNull
     private final SpellListener spellListener = new SpellListener()
     {
         /** {@inheritDoc} */
@@ -132,11 +144,12 @@ public class GUIItemSpelllist extends GUIItem
     /**
      * The {@link FacesManagerListener} registered to detect updated faces.
      */
+    @NotNull
     private final FacesManagerListener facesManagerListener = new FacesManagerListener()
     {
         /** {@inheritDoc} */
         @Override
-        public void faceUpdated(final Face face)
+        public void faceUpdated(@NotNull final Face face)
         {
             if (spell != null && spell.getFaceNum() == face.getFaceNum())
             {
@@ -145,7 +158,7 @@ public class GUIItemSpelllist extends GUIItem
         }
     };
 
-    public GUIItemSpelllist(final TooltipManager tooltipManager, final JXCWindowRenderer windowRenderer, final CommandQueue commandQueue, final String name, final int x, final int y, final int w, final int h, final Color selectorColor, final Image selectorImage, final int defaultIndex, final FacesManager facesManager, final SpellsManager spellsManager, final CurrentSpellManager currentSpellManager)
+    public GUIItemSpelllist(@NotNull final TooltipManager tooltipManager, @NotNull final JXCWindowRenderer windowRenderer, @NotNull final CommandQueue commandQueue, @NotNull final String name, final int x, final int y, final int w, final int h, @Nullable final Color selectorColor, @Nullable final Image selectorImage, final int defaultIndex, @NotNull final FacesManager facesManager, @NotNull final SpellsManager spellsManager, @NotNull final CurrentSpellManager currentSpellManager)
     {
         super(tooltipManager, windowRenderer, name, x, y, w, h);
         this.commandQueue = commandQueue;
@@ -236,7 +249,7 @@ public class GUIItemSpelllist extends GUIItem
 
     /* {@inheritDoc} */
     @Override
-    protected void render(final Graphics g)
+    protected void render(@NotNull final Graphics g)
     {
         final Graphics2D g2 = (Graphics2D)g;
         g2.setBackground(BACKGROUND_COLOR);

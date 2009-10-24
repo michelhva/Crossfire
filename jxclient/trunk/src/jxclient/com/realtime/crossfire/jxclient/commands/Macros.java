@@ -26,6 +26,7 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
+import org.jetbrains.annotations.NotNull;
 
 /**
  * Manages macro expansion in command strings.
@@ -36,26 +37,30 @@ public class Macros
     /**
      * The "reply_to" macro name.
      */
+    @NotNull
     private static final String REPLY_TO = "reply_to";
 
     /**
      * The {@link Pattern} matching macro names.
      */
+    @NotNull
     private final Pattern macroPattern = Pattern.compile("<<([a-z_]+)>>");
 
     /**
      * The macro expansions. Maps macro name to macro expansion.
      */
+    @NotNull
     private final Map<String, String> expansions = new HashMap<String, String>();
 
     /**
      * The {@link CrossfireDrawextinfoListener} for tracking tells.
      */
+    @NotNull
     private final CrossfireDrawextinfoListener crossfireDrawextinfoListener = new CrossfireDrawextinfoListener()
     {
         /** {@inheritDoc} */
         @Override
-        public void commandDrawextinfoReceived(final int color, final int type, final int subtype, final String message)
+        public void commandDrawextinfoReceived(final int color, final int type, final int subtype, @NotNull final String message)
         {
             switch (type)
             {
@@ -102,7 +107,7 @@ public class Macros
      * @param crossfireServerConnection the crossfire server connection to
      * track
      */
-    public Macros(final CrossfireServerConnection crossfireServerConnection)
+    public Macros(@NotNull final CrossfireServerConnection crossfireServerConnection)
     {
         expansions.put(REPLY_TO, "");
         crossfireServerConnection.addCrossfireDrawextinfoListener(crossfireDrawextinfoListener);
@@ -113,7 +118,8 @@ public class Macros
      * @param string the string to expand
      * @return the expanded string
      */
-    public String expandMacros(final String string)
+    @NotNull
+    public String expandMacros(@NotNull final String string)
     {
         StringBuilder result = null;
         int index = 0;

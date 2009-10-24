@@ -19,6 +19,8 @@
 //
 package com.realtime.crossfire.jxclient.server;
 
+import org.jetbrains.annotations.NotNull;
+
 /**
  *
  * @version 1.0
@@ -36,5 +38,5 @@ public interface CrossfireQueryListener
     /** Query type: hide input being entered. */
     int HIDEINPUT = 4;
 
-    void commandQueryReceived(String prompt, int queryType);
+    void commandQueryReceived(@NotNull String prompt, int queryType);
 }

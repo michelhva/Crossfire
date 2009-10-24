@@ -24,6 +24,7 @@ import com.realtime.crossfire.jxclient.scripts.ScriptProcess;
 import com.realtime.crossfire.jxclient.server.CrossfireServerConnection;
 import java.util.Collection;
 import java.util.TreeSet;
+import org.jetbrains.annotations.NotNull;
 
 /**
  * Implements the "scripts" command. It lists running scripts.
@@ -34,6 +35,7 @@ public class ScriptsCommand extends AbstractCommand
     /**
      * The {@link ScriptManager} to use.
      */
+    @NotNull
     private final ScriptManager scriptManager;
 
     /**
@@ -41,7 +43,7 @@ public class ScriptsCommand extends AbstractCommand
      * @param scriptManager the script manager to use
      * @param crossfireServerConnection the connection instance
      */
-    public ScriptsCommand(final ScriptManager scriptManager, final CrossfireServerConnection crossfireServerConnection)
+    public ScriptsCommand(@NotNull final ScriptManager scriptManager, @NotNull final CrossfireServerConnection crossfireServerConnection)
     {
         super(crossfireServerConnection);
         this.scriptManager = scriptManager;
@@ -56,7 +58,7 @@ public class ScriptsCommand extends AbstractCommand
 
     /** {@inheritDoc} */
     @Override
-    public void execute(final String args)
+    public void execute(@NotNull final String args)
     {
         final Collection<ScriptProcess> scriptProcesses = new TreeSet<ScriptProcess>(scriptManager.getScripts(args));
         if (scriptProcesses.isEmpty())

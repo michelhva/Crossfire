@@ -19,6 +19,8 @@
 //
 package com.realtime.crossfire.jxclient.server;
 
+import org.jetbrains.annotations.NotNull;
+
 /**
  * Interface for listeners interested in "sound" commands.
  *
@@ -74,5 +76,5 @@ public interface CrossfireSoundListener
      *
      * @param name The sound name.
      */
-    void commandSound2Received(int x, int y, int dir, int volume, int type, String action, String name);
+    void commandSound2Received(int x, int y, int dir, int volume, int type, @NotNull String action, @NotNull String name);
 }

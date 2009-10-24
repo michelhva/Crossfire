@@ -19,6 +19,8 @@
 //
 package com.realtime.crossfire.jxclient.server;
 
+import org.jetbrains.annotations.NotNull;
+
 /**
  * Interface for listeners interested in "face1"/"face2" commands.
  * @author Andreas Kirschbaum
@@ -32,5 +34,5 @@ public interface CrossfireFaceListener
      * @param faceChecksum the face checksum
      * @param faceName the face name
      */
-    void faceReceived(int faceNum, int faceSetNum, int faceChecksum, String faceName);
+    void faceReceived(int faceNum, int faceSetNum, int faceChecksum, @NotNull String faceName);
 }

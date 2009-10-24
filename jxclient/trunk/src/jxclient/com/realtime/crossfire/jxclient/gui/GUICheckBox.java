@@ -33,6 +33,7 @@ import java.awt.Transparency;
 import java.awt.event.MouseEvent;
 import java.awt.geom.RectangularShape;
 import java.awt.image.BufferedImage;
+import org.jetbrains.annotations.NotNull;
 
 /**
  * A check box gui element.
@@ -49,36 +50,43 @@ public class GUICheckBox extends ActivatableGUIElement
     /**
      * The image for the checked [x] state.
      */
+    @NotNull
     private final BufferedImage checkedImage;
 
     /**
      * The image for the unchecked [ ] state.
      */
+    @NotNull
     private final Image uncheckedImage;
 
     /**
      * The text.
      */
+    @NotNull
     private final String text;
 
     /**
      * The font to use.
      */
+    @NotNull
     private final Font font;
 
     /**
      * The text color.
      */
+    @NotNull
     private final Color color;
 
     /**
      * The option to display.
      */
+    @NotNull
     private final CheckBoxOption option;
 
     /**
      * The {@link OptionListener} attached to {@link #option}.
      */
+    @NotNull
     private final OptionListener optionListener = new OptionListener()
     {
         /** {@inheritDoc} */
@@ -120,20 +128,14 @@ public class GUICheckBox extends ActivatableGUIElement
      *
      * @param text The text to display.
      */
-    public GUICheckBox(final TooltipManager tooltipManager, final JXCWindowRenderer windowRenderer, final String name, final int x, final int y, final int w, final int h, final BufferedImage checkedImage, final BufferedImage uncheckedImage, final Font font, final Color color, final CheckBoxOption option, final String text)
+    public GUICheckBox(@NotNull final TooltipManager tooltipManager, @NotNull final JXCWindowRenderer windowRenderer, @NotNull final String name, final int x, final int y, final int w, final int h, @NotNull final BufferedImage checkedImage, @NotNull final BufferedImage uncheckedImage, @NotNull final Font font, @NotNull final Color color, @NotNull final CheckBoxOption option, @NotNull final String text)
     {
         super(tooltipManager, windowRenderer, name, x, y, w, h, Transparency.TRANSLUCENT);
-        if (checkedImage == null) throw new IllegalArgumentException("missing checked image");
-        if (uncheckedImage == null) throw new IllegalArgumentException("missing unchecked image");
         if (checkedImage.getHeight() != h) throw new IllegalArgumentException("'checked' height is "+checkedImage.getHeight()+" but checkbox height is "+h);
         if (uncheckedImage.getHeight() != h) throw new IllegalArgumentException("'unchecked' height is "+uncheckedImage.getHeight()+" but checkbox height is "+h);
         if (checkedImage.getWidth() != uncheckedImage.getWidth()) throw new IllegalArgumentException("'checked' width is "+checkedImage.getWidth()+" but 'unchecked' width is "+uncheckedImage.getWidth());
         if (checkedImage.getWidth() >= w) throw new IllegalArgumentException("'checked' width is "+checkedImage.getWidth()+" but checkbox width is "+w);
         if (uncheckedImage.getWidth() >= w) throw new IllegalArgumentException("'unchecked' width is "+uncheckedImage.getWidth()+" but checkbox width is "+w);
-        if (font == null) throw new IllegalArgumentException("missing font");
-        if (color == null) throw new IllegalArgumentException("missing color");
-        if (option == null) throw new IllegalArgumentException("missing option");
-        if (text == null) throw new IllegalArgumentException("missing text");
 
         this.checkedImage = checkedImage;
         this.uncheckedImage = uncheckedImage;
@@ -154,7 +156,7 @@ public class GUICheckBox extends ActivatableGUIElement
 
     /** {@inheritDoc} */
     @Override
-    protected void render(final Graphics g)
+    protected void render(@NotNull final Graphics g)
     {
         final Graphics2D g2 = (Graphics2D)g;
         g2.setBackground(new Color(0, 0, 0, 0.0f));
@@ -169,7 +171,7 @@ public class GUICheckBox extends ActivatableGUIElement
 
     /** {@inheritDoc} */
     @Override
-    public void mouseReleased(final MouseEvent e)
+    public void mouseReleased(@NotNull final MouseEvent e)
     {
         super.mouseReleased(e);
         final int b = e.getButton();
@@ -195,7 +197,7 @@ public class GUICheckBox extends ActivatableGUIElement
 
     /** {@inheritDoc} */
     @Override
-    public void mousePressed(final MouseEvent e)
+    public void mousePressed(@NotNull final MouseEvent e)
     {
         super.mousePressed(e);
         final int b = e.getButton();

@@ -40,6 +40,8 @@ import java.util.ArrayList;
 import java.util.Collection;
 import java.util.HashSet;
 import java.util.Set;
+import org.jetbrains.annotations.NotNull;
+import org.jetbrains.annotations.Nullable;
 
 /**
  * Utility class to update a {@link CfMap} model from protocol commands.
@@ -57,21 +59,25 @@ public class CfMapUpdater
     /**
      * The object used for synchronization.
      */
+    @NotNull
     private final Object sync = new Object();
 
     /**
      * The {@link FacesManager} to track for updated faces.
      */
+    @Nullable
     private final FacesManager facesManager;
 
     /**
      * The {@link FaceCache} instance for looking up faces.
      */
+    @NotNull
     private final FaceCache faceCache;
 
     /**
      * The defined animations.
      */
+    @NotNull
     private final Animations animations;
 
     /**
@@ -87,47 +93,55 @@ public class CfMapUpdater
     /**
      * The current {@link CfMap} instance.
      */
+    @NotNull
     private CfMap map;
 
     /**
      * The listeners to notify about changed map squares.
      */
+    @NotNull
     private final Collection<MapListener> mapListeners = new ArrayList<MapListener>();
 
     /**
      * The listeners to notify about cleared maps.
      */
+    @NotNull
     private final Collection<NewmapListener> newmapListeners = new ArrayList<NewmapListener>();
 
     /**
      * The listeners to notify about scrolled maps.
      */
+    @NotNull
     private final Collection<MapscrollListener> mapscrollListeners = new ArrayList<MapscrollListener>();
 
     /**
      * Collects the changed map squares between calls to {@link
      * #processMapBegin()} and {@link #processMapEnd(boolean)}.
      */
+    @NotNull
     private final Set<CfMapSquare> squares = new HashSet<CfMapSquare>();
 
     /**
      * The animations in the visible map area.
      */
+    @NotNull
     private final CfMapAnimations visibleAnimations;
 
     /**
      * All multi-tiled faces with heads outside the visible map area.
      */
+    @NotNull
     private final Collection<Location> outOfViewMultiFaces = new HashSet<Location>();
 
     /**
      * The map square listener attached to {@link #map}.
      */
+    @NotNull
     private final CfMapSquareListener mapSquareListener = new CfMapSquareListener()
     {
         /** {@inheritDoc} */
         @Override
-        public void squareModified(final CfMapSquare mapSquare)
+        public void squareModified(@NotNull final CfMapSquare mapSquare)
         {
             synchronized (squares)
             {
@@ -139,11 +153,12 @@ public class CfMapUpdater
     /**
      * The listener to detect updated faces.
      */
+    @NotNull
     private final FacesManagerListener facesManagerListener = new FacesManagerListener()
     {
         /** {@inheritDoc} */
         @Override
-        public void faceUpdated(final Face face)
+        public void faceUpdated(@NotNull final Face face)
         {
             updateFace(face.getFaceNum());
         }
@@ -152,6 +167,7 @@ public class CfMapUpdater
     /**
      * The listener to detect map model changes.
      */
+    @NotNull
     private final CrossfireUpdateMapListener crossfireUpdateMapListener = new CrossfireUpdateMapListener()
     {
         /** {@inheritDoc} */
@@ -225,7 +241,7 @@ public class CfMapUpdater
 
         /** {@inheritDoc} */
         @Override
-        public void addAnimation(final int animation, final int flags, final int[] faces)
+        public void addAnimation(final int animation, final int flags, @NotNull final int[] faces)
         {
             animations.addAnimation(animation, flags, faces);
         }
@@ -235,6 +251,7 @@ public class CfMapUpdater
      * The {@link GuiStateListener} for detecting established or dropped
      * connections.
      */
+    @NotNull
     private final GuiStateListener guiStateListener = new GuiStateListener()
     {
         /** {@inheritDoc} */
@@ -260,7 +277,7 @@ public class CfMapUpdater
 
         /** {@inheritDoc} */
         @Override
-        public void connecting(final ClientSocketState clientSocketState)
+        public void connecting(@NotNull final ClientSocketState clientSocketState)
         {
             // ignore
         }
@@ -274,7 +291,7 @@ public class CfMapUpdater
 
         /** {@inheritDoc} */
         @Override
-        public void connectFailed(final String reason)
+        public void connectFailed(@NotNull final String reason)
         {
             // ignore
         }
@@ -285,7 +302,7 @@ public class CfMapUpdater
      * @param faceCache the instance for looking up faces
      * @param animations the defined animations
      */
-    public CfMapUpdater(final FaceCache faceCache, final Animations animations)
+    public CfMapUpdater(@NotNull final FaceCache faceCache, @NotNull final Animations animations)
     {
         facesManager = null;
         this.faceCache = faceCache;
@@ -302,7 +319,7 @@ public class CfMapUpdater
      * @param animations the defined animations
      * @param window the window to attach to
      */
-    public CfMapUpdater(final CrossfireServerConnection crossfireServerConnection, final FacesManager facesManager, final FaceCache faceCache, final Animations animations, final JXCWindow window)
+    public CfMapUpdater(@NotNull final CrossfireServerConnection crossfireServerConnection, @Nullable final FacesManager facesManager, @NotNull final FaceCache faceCache, @NotNull final Animations animations, @NotNull final JXCWindow window)
     {
         this.facesManager = facesManager;
         this.faceCache = faceCache;
@@ -321,7 +338,7 @@ public class CfMapUpdater
      * Adds a listener to notify about changed map squares.
      * @param listener the listener to add
      */
-    public void addCrossfireMapListener(final MapListener listener)
+    public void addCrossfireMapListener(@NotNull final MapListener listener)
     {
         mapListeners.add(listener);
     }
@@ -330,7 +347,7 @@ public class CfMapUpdater
      * Removes a listener to notify about changed map squares.
      * @param listener the listener to remove
      */
-    public void removeCrossfireMapListener(final MapListener listener)
+    public void removeCrossfireMapListener(@NotNull final MapListener listener)
     {
         mapListeners.remove(listener);
     }
@@ -339,7 +356,7 @@ public class CfMapUpdater
      * Adds a listener to notify about cleared maps.
      * @param listener the listener to add
      */
-    public void addCrossfireNewmapListener(final NewmapListener listener)
+    public void addCrossfireNewmapListener(@NotNull final NewmapListener listener)
     {
         newmapListeners.add(listener);
     }
@@ -348,7 +365,7 @@ public class CfMapUpdater
      * Removes a listener to notify about cleared maps.
      * @param listener the listener to remove
      */
-    public void removeCrossfireNewmapListener(final NewmapListener listener)
+    public void removeCrossfireNewmapListener(@NotNull final NewmapListener listener)
     {
         newmapListeners.remove(listener);
     }
@@ -357,7 +374,7 @@ public class CfMapUpdater
      * Adds a listener to notify about scrolled maps.
      * @param listener the listener to add
      */
-    public void addCrossfireMapscrollListener(final MapscrollListener listener)
+    public void addCrossfireMapscrollListener(@NotNull final MapscrollListener listener)
     {
         mapscrollListeners.add(listener);
     }
@@ -366,7 +383,7 @@ public class CfMapUpdater
      * Removes a listener to notify about scrolled maps.
      * @param listener the listener to remove
      */
-    public void removeCrossfireMapscrollListener(final MapscrollListener listener)
+    public void removeCrossfireMapscrollListener(@NotNull final MapscrollListener listener)
     {
         mapscrollListeners.remove(listener);
     }
@@ -445,7 +462,7 @@ public class CfMapUpdater
      * @param animation the animation to set
      * @param type the animation type
      */
-    private void processMapAnimation(final int x, final int y, final int layer, final Animation animation, final int type)
+    private void processMapAnimation(final int x, final int y, final int layer, @NotNull final Animation animation, final int type)
     {
         synchronized (sync)
         {
@@ -514,6 +531,7 @@ public class CfMapUpdater
      * @return return the face instance, or <code>null</code> if
      * <code>faceNum==0</code>
      */
+    @Nullable
     private Face getFace(final int faceNum)
     {
         if (facesManager != null)
@@ -668,6 +686,7 @@ public class CfMapUpdater
      * Returns the current map instance.
      * @return the current map instance
      */
+    @NotNull
     public CfMap getMap()
     {
         return map;
@@ -695,6 +714,7 @@ public class CfMapUpdater
      * Returns the {@link CfMapAnimations} instance.
      * @return the instance
      */
+    @NotNull
     public CfMapAnimations getMapAnimations()
     {
         return visibleAnimations;

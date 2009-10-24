@@ -21,6 +21,7 @@ package com.realtime.crossfire.jxclient.commands;
 
 import com.realtime.crossfire.jxclient.scripts.ScriptManager;
 import com.realtime.crossfire.jxclient.server.CrossfireServerConnection;
+import org.jetbrains.annotations.NotNull;
 
 /**
  * Implements the "script" command. It runs a new script.
@@ -31,6 +32,7 @@ public class ScriptCommand extends AbstractCommand
     /**
      * The {@link ScriptManager} to use.
      */
+    @NotNull
     private final ScriptManager scriptManager;
 
     /**
@@ -38,7 +40,7 @@ public class ScriptCommand extends AbstractCommand
      * @param scriptManager the script manager to use
      * @param crossfireServerConnection the connection instance
      */
-    public ScriptCommand(final ScriptManager scriptManager, final CrossfireServerConnection crossfireServerConnection)
+    public ScriptCommand(@NotNull final ScriptManager scriptManager, @NotNull final CrossfireServerConnection crossfireServerConnection)
     {
         super(crossfireServerConnection);
         this.scriptManager = scriptManager;
@@ -53,7 +55,7 @@ public class ScriptCommand extends AbstractCommand
 
     /** {@inheritDoc} */
     @Override
-    public void execute(final String args)
+    public void execute(@NotNull final String args)
     {
         if (args.length() == 0)
         {

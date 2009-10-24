@@ -20,6 +20,7 @@
 package com.realtime.crossfire.jxclient.items;
 
 import java.util.Collection;
+import org.jetbrains.annotations.NotNull;
 
 /**
  * Interface for listeners interested in changed item locations.
@@ -32,5 +33,5 @@ public interface LocationsListener
      * function must not change the passed collection.
      * @param index the changed locations
      */
-    void locationsModified(Collection<Integer> index);
+    void locationsModified(@NotNull Collection<Integer> index);
 }

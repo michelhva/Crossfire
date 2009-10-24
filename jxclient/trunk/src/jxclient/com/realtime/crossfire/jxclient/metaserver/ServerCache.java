@@ -31,6 +31,7 @@ import java.io.OutputStreamWriter;
 import java.util.HashMap;
 import java.util.Iterator;
 import java.util.Map;
+import org.jetbrains.annotations.NotNull;
 
 /**
  * Maintains a set of known servers backed up in a file.
@@ -42,17 +43,20 @@ public class ServerCache
     /**
      * The default entry for the "localhost" server.
      */
+    @NotNull
     public static final CharSequence DEFAULT_ENTRY_LOCALHOST = "0|localhost|0|--|Local server. Start server before you try to connect.|0|0|0|||";
 
     /**
      * The cached entries. Maps key (see {@link #makeKey(MetaserverEntry)}) to
      * {@link Info} instance for the metaserver entry.
      */
+    @NotNull
     private final Map<String, Info> entries = new HashMap<String, Info>();
 
     /**
      * The backing file.
      */
+    @NotNull
     private final File file;
 
     /**
@@ -60,7 +64,7 @@ public class ServerCache
      *
      * @param file The backing file.
      */
-    public ServerCache(final File file)
+    public ServerCache(@NotNull final File file)
     {
         this.file = file;
 
@@ -72,7 +76,7 @@ public class ServerCache
      *
      * @param metaserverEntry The entry to add.
      */
-    public void put(final MetaserverEntry metaserverEntry)
+    public void put(@NotNull final MetaserverEntry metaserverEntry)
     {
         entries.put(makeKey(metaserverEntry), new Info(metaserverEntry));
     }
@@ -103,6 +107,7 @@ public class ServerCache
      *
      * @return The cached entries; maps key to metaserver entry.
      */
+    @NotNull
     public Map<String, MetaserverEntry> getAll()
     {
         final Map<String, MetaserverEntry> result = new HashMap<String, MetaserverEntry>();
@@ -120,7 +125,8 @@ public class ServerCache
      *
      * @return The key.
      */
-    public static String makeKey(final MetaserverEntry metaserverEntry)
+    @NotNull
+    public static String makeKey(@NotNull final MetaserverEntry metaserverEntry)
     {
         return metaserverEntry.getHostname();
     }
@@ -213,7 +219,7 @@ public class ServerCache
      * @param timestamp the query timestamp
      * @return whether the line was parsed correctly
      */
-    private boolean addEntry(final CharSequence metaserverEntryLine, final long timestamp)
+    private boolean addEntry(@NotNull final CharSequence metaserverEntryLine, final long timestamp)
     {
         final MetaserverEntry metaserverEntry = MetaserverEntryParser.parseEntry(metaserverEntryLine);
         if (metaserverEntry == null)
@@ -284,6 +290,7 @@ public class ServerCache
         /**
          * The metaserver entry.
          */
+        @NotNull
         private final MetaserverEntry metaserverEntry;
 
         /**
@@ -296,7 +303,7 @@ public class ServerCache
          *
          * @param metaserverEntry The metaserver entry.
          */
-        public Info(final MetaserverEntry metaserverEntry)
+        public Info(@NotNull final MetaserverEntry metaserverEntry)
         {
             this(metaserverEntry, System.currentTimeMillis());
         }
@@ -308,7 +315,7 @@ public class ServerCache
          *
          * @param timestamp The timestamp.
          */
-        public Info(final MetaserverEntry metaserverEntry, final long timestamp)
+        public Info(@NotNull final MetaserverEntry metaserverEntry, final long timestamp)
         {
             this.metaserverEntry = metaserverEntry;
             this.timestamp = timestamp;
@@ -319,6 +326,7 @@ public class ServerCache
          *
          * @return The metaserver entry.
          */
+        @NotNull
         public MetaserverEntry getMetaserverEntry()
         {
             return metaserverEntry;

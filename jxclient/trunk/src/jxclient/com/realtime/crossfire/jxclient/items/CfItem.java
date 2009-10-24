@@ -21,6 +21,7 @@ package com.realtime.crossfire.jxclient.items;
 
 import com.realtime.crossfire.jxclient.faces.Face;
 import javax.swing.event.EventListenerList;
+import org.jetbrains.annotations.NotNull;
 
 /**
  * The representation of a Crossfire Item, client-side.
@@ -49,16 +50,19 @@ public class CfItem
     /**
      * The face.
      */
+    @NotNull
     private Face face;
 
     /**
      * The singular name.
      */
+    @NotNull
     private String name;
 
     /**
      * The plural name.
      */
+    @NotNull
     private String namePl;
 
     /**
@@ -201,7 +205,7 @@ public class CfItem
      * @param nrof the number of objects in the stack
      * @param type the type
      */
-    public CfItem(final int location, final int tag, final int flags, final int weight, final Face face, final String name, final String namePl, final int anim, final int animSpeed, final int nrof, final int type)
+    public CfItem(final int location, final int tag, final int flags, final int weight, @NotNull final Face face, @NotNull final String name, @NotNull final String namePl, final int anim, final int animSpeed, final int nrof, final int type)
     {
         this.location = location;
         this.tag = tag;
@@ -246,7 +250,7 @@ public class CfItem
      * Updates the face.
      * @param face the new face
      */
-    public void setFace(final Face face)
+    public void setFace(@NotNull final Face face)
     {
         if (this.face != face)
         {
@@ -260,7 +264,7 @@ public class CfItem
      * @param name the new singular name
      * @param namePl the new plural name
      */
-    public void setName(final String name, final String namePl)
+    public void setName(@NotNull final String name, @NotNull final String namePl)
     {
         if (!this.name.equals(name) || !this.namePl.equals(namePl))
         {
@@ -340,6 +344,7 @@ public class CfItem
      * Returns the face.
      * @return the face
      */
+    @NotNull
     public Face getFace()
     {
         return face;
@@ -349,6 +354,7 @@ public class CfItem
      * Returns the name.
      * @return the name
      */
+    @NotNull
     public String getName()
     {
         return nrof > 1 ? namePl : name;
@@ -474,7 +480,7 @@ public class CfItem
      * @param animSpeed the new animation speed
      * @param nrof the new number of items
      */
-    public void update(final int updateFlags, final int flags, final int weight, final Face face, final String name, final String namePl, final int anim, final int animSpeed, final int nrof)
+    public void update(final int updateFlags, final int flags, final int weight, @NotNull final Face face, @NotNull final String name, @NotNull final String namePl, final int anim, final int animSpeed, final int nrof)
     {
         if ((updateFlags&UPD_FLAGS) != 0)
         {
@@ -530,7 +536,7 @@ public class CfItem
      *
      * @param listener the listener to remove
      */
-    public void addCfItemModifiedListener(final CfItemListener listener)
+    public void addCfItemModifiedListener(@NotNull final CfItemListener listener)
     {
         listeners.add(CfItemListener.class, listener);
     }
@@ -540,7 +546,7 @@ public class CfItem
      *
      * @param listener the listener to remove
      */
-    public void removeCfItemModifiedListener(final CfItemListener listener)
+    public void removeCfItemModifiedListener(@NotNull final CfItemListener listener)
     {
         listeners.remove(CfItemListener.class, listener);
     }
@@ -549,6 +555,7 @@ public class CfItem
      * Returns a description suitable for a tooltip text.
      * @return the tooltip text
      */
+    @NotNull
     public String getTooltipText()
     {
         final String tooltipText1 = getTooltipText1();
@@ -572,6 +579,7 @@ public class CfItem
      * Returns the first line of the tooltip text.
      * @return the tooltip text
      */
+    @NotNull
     public String getTooltipText1()
     {
         return nrof > 1 ? nrof+" "+namePl : name;
@@ -581,6 +589,7 @@ public class CfItem
      * Returns the second line of the tooltip text.
      * @return the tooltip text
      */
+    @NotNull
     public String getTooltipText2()
     {
         final int totalWeight = nrof > 0 ? weight*nrof : weight;
@@ -605,6 +614,7 @@ public class CfItem
      * Returns the third line of the tooltip text.
      * @return the tooltip text
      */
+    @NotNull
     public String getTooltipText3()
     {
         final StringBuilder sb = new StringBuilder();
@@ -623,7 +633,7 @@ public class CfItem
      * @param flag the flag to check
      * @param ident the ident string to append
      */
-    private void appendFlag(final StringBuilder sb, final int flag, final String ident)
+    private void appendFlag(@NotNull final StringBuilder sb, final int flag, @NotNull final String ident)
     {
         if ((flags&flag) != 0)
         {

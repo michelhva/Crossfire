@@ -22,6 +22,7 @@ package com.realtime.crossfire.jxclient.util;
 import java.io.IOException;
 import java.net.URL;
 import javax.swing.ImageIcon;
+import org.jetbrains.annotations.NotNull;
 
 /**
  * Utility class for loading information from resources.
@@ -42,7 +43,8 @@ public class ResourceUtils
      * @return the image
      * @throws IOException if the image cannot be loaded
      */
-    public static ImageIcon loadImage(final String unknownPng) throws IOException
+    @NotNull
+    public static ImageIcon loadImage(@NotNull final String unknownPng) throws IOException
     {
         final URL url = ResourceUtils.class.getClassLoader().getResource(unknownPng);
         if (url == null)

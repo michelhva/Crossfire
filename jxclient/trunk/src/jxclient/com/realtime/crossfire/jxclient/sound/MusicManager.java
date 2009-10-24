@@ -26,6 +26,8 @@ import javax.sound.sampled.AudioSystem;
 import javax.sound.sampled.LineUnavailableException;
 import javax.sound.sampled.SourceDataLine;
 import javax.sound.sampled.UnsupportedAudioFileException;
+import org.jetbrains.annotations.NotNull;
+import org.jetbrains.annotations.Nullable;
 
 /**
  * Plays background music. At most one background music can be concurrently
@@ -39,6 +41,7 @@ public class MusicManager
      * The currently running processor, or <code>null</code> if none is active
      * or if music is disabled.
      */
+    @Nullable
     private Processor processor = null;
 
     /**
@@ -55,6 +58,7 @@ public class MusicManager
      * The currently playing music name. Set to <code>null</code> if no music
      * is playing.
      */
+    @Nullable
     private String name = null;
 
     /**
@@ -63,7 +67,7 @@ public class MusicManager
      *
      * @param name The music name, or <code>null</code> to stop playing music.
      */
-    public void play(final String name)
+    public void play(@Nullable final String name)
     {
         if (this.name == null ? name == null : this.name.equals(name))
         {
@@ -133,6 +137,7 @@ public class MusicManager
         if (processor != null)
         {
             processor.terminate(false, true);
+            assert processor != null;
             processor = null;
         }
     }
@@ -156,6 +161,7 @@ public class MusicManager
         /**
          * The name of the music to play.
          */
+        @NotNull
         private final String name;
 
         /**
@@ -175,7 +181,7 @@ public class MusicManager
          *
          * @param name The music name to play.
          */
-        public Processor(final String name)
+        public Processor(@NotNull final String name)
         {
             this.name = name;
         }
@@ -352,7 +358,7 @@ public class MusicManager
          *
          * @param i The sample offset.
          */
-        private void convertSample(final byte[] buf, final int i)
+        private void convertSample(@NotNull final byte[] buf, final int i)
         {
             final float value = (short)((buf[i]&0xFF)+(buf[i+1]&0xFF)*0x100)*volume;
             final short s = (short)value;

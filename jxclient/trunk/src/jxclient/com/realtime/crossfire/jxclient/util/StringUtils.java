@@ -23,6 +23,7 @@ import com.realtime.crossfire.jxclient.skin.JXCSkinException;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.regex.Pattern;
+import org.jetbrains.annotations.NotNull;
 
 /**
  * Utility class for string manipulation.
@@ -33,6 +34,7 @@ public class StringUtils
     /**
      * A pattern matching leading whitespace.
      */
+    @NotNull
     private static final Pattern PATTERN_LEADING_WHITESPACE = Pattern.compile("^[ \t]+");
 
     /**
@@ -47,7 +49,8 @@ public class StringUtils
      * @param str the string
      * @return the string without leading whitespace
      */
-    public static String trimLeading(final CharSequence str)
+    @NotNull
+    public static String trimLeading(@NotNull final CharSequence str)
     {
         return PATTERN_LEADING_WHITESPACE.matcher(str).replaceAll("");
     }
@@ -58,7 +61,8 @@ public class StringUtils
      * @return the tokens
      * @throws JXCSkinException if the skin cannot be loaded
      */
-    public static String[] splitFields(final String line) throws JXCSkinException
+    @NotNull
+    public static String[] splitFields(@NotNull final String line) throws JXCSkinException
     {
         final List<String> tokens = new ArrayList<String>(64);
 

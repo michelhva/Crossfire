@@ -26,6 +26,7 @@ import java.awt.Component;
 import javax.swing.JList;
 import javax.swing.JPanel;
 import javax.swing.ListCellRenderer;
+import org.jetbrains.annotations.NotNull;
 
 /**
  * A {@link ListCellRenderer} that renders {@link GUIMetaElement} instances.
@@ -41,13 +42,14 @@ public class ItemInventoryCellRenderer extends JPanel implements ListCellRendere
     /**
      * The template used for painting.
      */
+    @NotNull
     private final GUIItemInventory template;
 
     /**
      * Creates a new instance.
      * @param template the template used for painting
      */
-    public ItemInventoryCellRenderer(final GUIItemInventory template)
+    public ItemInventoryCellRenderer(@NotNull final GUIItemInventory template)
     {
         super(new BorderLayout());
         setOpaque(false);
@@ -57,7 +59,7 @@ public class ItemInventoryCellRenderer extends JPanel implements ListCellRendere
 
     /** {@inheritDoc} */
     @Override
-    public Component getListCellRendererComponent(final JList list, final Object value, final int index, final boolean isSelected, final boolean cellHasFocus)
+    public Component getListCellRendererComponent(@NotNull final JList list, @NotNull final Object value, final int index, final boolean isSelected, final boolean cellHasFocus)
     {
         template.setIndexNoListeners(((GUIItemInventory)value).getIndex());
         template.setSelected(isSelected);

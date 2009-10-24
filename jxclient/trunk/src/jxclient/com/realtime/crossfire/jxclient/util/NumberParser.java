@@ -20,6 +20,7 @@
 package com.realtime.crossfire.jxclient.util;
 
 import java.io.IOException;
+import org.jetbrains.annotations.NotNull;
 
 /**
  * Utitlity class for parsing strings into numbers.
@@ -40,7 +41,7 @@ public class NumberParser
      * @param defaultValue the value to return if the number is not a string
      * @return the int value
      */
-    public static int parseInt(final String string, final int defaultValue)
+    public static int parseInt(@NotNull final String string, final int defaultValue)
     {
         try
         {
@@ -62,7 +63,7 @@ public class NumberParser
      * @param maxValue the bound's maximum value
      * @return the int value
      */
-    public static int parseInt(final String string, final int defaultValue, final int minValue, final int maxValue)
+    public static int parseInt(@NotNull final String string, final int defaultValue, final int minValue, final int maxValue)
     {
         final int value = parseInt(string, defaultValue);
         if (value < minValue || value > maxValue)
@@ -80,7 +81,7 @@ public class NumberParser
      * @param defaultValue the value to return if the number is not a string
      * @return the long value
      */
-    public static long parseLong(final String string, final long defaultValue)
+    public static long parseLong(@NotNull final String string, final long defaultValue)
     {
         try
         {
@@ -99,7 +100,7 @@ public class NumberParser
      * @return the floating value
      * @throws IOException if a parsing error occurs
      */
-    public static float parseFloat(final String str) throws IOException
+    public static float parseFloat(@NotNull final String str) throws IOException
     {
         try
         {
@@ -117,7 +118,7 @@ public class NumberParser
      * @return the boolean value
      * @throws IOException if a parsing error occurs
      */
-    public static boolean parseBoolean(final String str) throws IOException
+    public static boolean parseBoolean(@NotNull final String str) throws IOException
     {
         try
         {
@@ -138,7 +139,8 @@ public class NumberParser
      * @return the enum constant
      * @throws IOException if the enum constant does not exist
      */
-    public static <T extends Enum<T>> T parseEnum(final Class<T> class_, final String name, final String ident) throws IOException
+    @NotNull
+    public static <T extends Enum<T>> T parseEnum(@NotNull final Class<T> class_, @NotNull final String name, @NotNull final String ident) throws IOException
     {
         try
         {

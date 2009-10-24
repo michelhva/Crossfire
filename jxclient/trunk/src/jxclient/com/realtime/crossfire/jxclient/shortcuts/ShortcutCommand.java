@@ -20,6 +20,7 @@
 package com.realtime.crossfire.jxclient.shortcuts;
 
 import com.realtime.crossfire.jxclient.server.CommandQueue;
+import org.jetbrains.annotations.NotNull;
 
 /**
  * A {@link Shortcut} that executes a Crossfire command.
@@ -31,11 +32,13 @@ public class ShortcutCommand extends Shortcut
      /**
      * The command queue for sending commands.
      */
+     @NotNull
     private final CommandQueue commandQueue;
 
     /**
      * The command to execute.
      */
+    @NotNull
     private final String command;
 
     /**
@@ -43,7 +46,7 @@ public class ShortcutCommand extends Shortcut
      * @param commandQueue the command queue for sending commands
      * @param command the command to execute
      */
-    public ShortcutCommand(final CommandQueue commandQueue, final String command)
+    public ShortcutCommand(@NotNull final CommandQueue commandQueue, @NotNull final String command)
     {
         this.commandQueue = commandQueue;
         this.command = command;
@@ -54,6 +57,7 @@ public class ShortcutCommand extends Shortcut
      *
      * @return The command.
      */
+    @NotNull
     public String getCommand()
     {
         return command;
@@ -73,6 +77,7 @@ public class ShortcutCommand extends Shortcut
     }
 
     /** {@inheritDoc} */
+    @NotNull
     @Override
     public String getTooltipText()
     {

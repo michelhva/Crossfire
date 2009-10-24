@@ -20,6 +20,7 @@
 package com.realtime.crossfire.jxclient.gui.commands;
 
 import com.realtime.crossfire.jxclient.gui.item.GUIItem;
+import org.jetbrains.annotations.NotNull;
 
 /**
  * A {@link GUICommand} which executes (i.e., simulates a left-button mouse
@@ -31,13 +32,14 @@ public class ExecuteElementCommand implements GUICommand
     /**
      * The item element to execute.
      */
+    @NotNull
     private final GUIItem item;
 
     /**
      * Creates a new instance.
      * @param item the item element to execute
      */
-    public ExecuteElementCommand(final GUIItem item)
+    public ExecuteElementCommand(@NotNull final GUIItem item)
     {
         this.item = item;
     }

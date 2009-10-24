@@ -29,6 +29,7 @@ import java.awt.Graphics2D;
 import java.awt.Image;
 import java.awt.Transparency;
 import java.awt.geom.RectangularShape;
+import org.jetbrains.annotations.NotNull;
 
 /**
  * A button which displays a string. The button width does not depend on the
@@ -46,26 +47,31 @@ public class GUITextButton extends AbstractButton
     /**
      * The images comprising the "up" button state.
      */
+    @NotNull
     private final ButtonImages up;
 
     /**
      * The images comprising the "down" button state.
      */
+    @NotNull
     private final ButtonImages down;
 
     /**
      * The button text.
      */
+    @NotNull
     private final String text;
 
     /**
      * The font to use.
      */
+    @NotNull
     private final Font font;
 
     /**
      * The text color.
      */
+    @NotNull
     private final Color color;
 
     /**
@@ -102,18 +108,13 @@ public class GUITextButton extends AbstractButton
      *
      * @param commandList The commands to execute when the button is selected.
      */
-    public GUITextButton(final TooltipManager tooltipManager, final JXCWindowRenderer windowRenderer, final String name, final int x, final int y, final int w, final int h, final ButtonImages up, final ButtonImages down, final String text, final Font font, final Color color, final boolean autoRepeat, final GUICommandList commandList)
+    public GUITextButton(@NotNull final TooltipManager tooltipManager, @NotNull final JXCWindowRenderer windowRenderer, @NotNull final String name, final int x, final int y, final int w, final int h, @NotNull final ButtonImages up, @NotNull final ButtonImages down, @NotNull final String text, @NotNull final Font font, @NotNull final Color color, final boolean autoRepeat, @NotNull final GUICommandList commandList)
     {
         super(tooltipManager, windowRenderer, name, x, y, w, h, Transparency.TRANSLUCENT, autoRepeat, commandList);
-        if (up == null) throw new IllegalArgumentException();
-        if (down == null) throw new IllegalArgumentException();
         if (up.getHeight() != h) throw new IllegalArgumentException("'up' state is height "+up.getHeight()+" but button height is "+h);
         if (down.getHeight() != h) throw new IllegalArgumentException("'down' state is height "+up.getHeight()+" but button height is "+h);
         if (up.getMinimumWidth() > w) throw new IllegalArgumentException("minimum width in 'up' state is "+up.getMinimumWidth()+" but button width is "+w);
         if (down.getMinimumWidth() > w) throw new IllegalArgumentException("minimum width in 'down' state is "+down.getMinimumWidth()+" but button width is "+w);
-        if (text == null) throw new IllegalArgumentException();
-        if (font == null) throw new IllegalArgumentException();
-        if (color == null) throw new IllegalArgumentException();
 
         this.up = up;
         this.down = down;
@@ -138,7 +139,7 @@ public class GUITextButton extends AbstractButton
 
     /** {@inheritDoc} */
     @Override
-    protected void render(final Graphics g)
+    protected void render(@NotNull final Graphics g)
     {
         g.setFont(font);
         g.setColor(color);
@@ -159,16 +160,19 @@ public class GUITextButton extends AbstractButton
         /**
          * The left border of the button.
          */
+        @NotNull
         private final Image imageLeft;
 
         /**
          * The background of the middle part of the button.
          */
+        @NotNull
         private final Image imageMiddle;
 
         /**
          * The right border of the button.
          */
+        @NotNull
         private final Image imageRight;
 
         /**
@@ -176,11 +180,8 @@ public class GUITextButton extends AbstractButton
          */
         private final int height;
 
-        public ButtonImages(final Image imageLeft, final Image imageMiddle, final Image imageRight)
+        public ButtonImages(@NotNull final Image imageLeft, @NotNull final Image imageMiddle, @NotNull final Image imageRight)
         {
-            if (imageLeft == null) throw new IllegalArgumentException();
-            if (imageMiddle == null) throw new IllegalArgumentException();
-            if (imageRight == null) throw new IllegalArgumentException();
             if (imageLeft.getHeight(null) != imageMiddle.getHeight(null)) throw new IllegalArgumentException("left image height is "+imageLeft.getHeight(null)+" but middle image height is "+imageMiddle.getHeight(null));
             if (imageMiddle.getHeight(null) != imageRight.getHeight(null)) throw new IllegalArgumentException("middle image height is "+imageMiddle.getHeight(null)+" but right image height is "+imageRight.getHeight(null));
 
@@ -215,7 +216,7 @@ public class GUITextButton extends AbstractButton
          *
          * @param w The button width.
          */
-        private void render(final Graphics g, final int w)
+        private void render(@NotNull final Graphics g, final int w)
         {
             g.drawImage(imageLeft, 0, 0, null);
             g.drawImage(imageRight, w-imageRight.getWidth(null), 0, null);

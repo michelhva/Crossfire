@@ -22,6 +22,7 @@ package com.realtime.crossfire.jxclient.skin.events;
 import com.realtime.crossfire.jxclient.mapupdater.CfMapUpdater;
 import com.realtime.crossfire.jxclient.mapupdater.MapscrollListener;
 import com.realtime.crossfire.jxclient.window.GUICommandList;
+import org.jetbrains.annotations.NotNull;
 
 /**
  * A {@link SkinEvent} that executes a {@link GUICommandList} whenever the
@@ -33,16 +34,19 @@ public class MapscrollSkinEvent implements SkinEvent
     /**
      * The {@link GUICommandList} to execute.
      */
+    @NotNull
     private final GUICommandList commandList;
 
     /**
      * The {@link CfMapUpdater} to attach to.
      */
+    @NotNull
     private final CfMapUpdater mapUpdater;
 
     /**
      * The {@link MapscrollListener} attached to {@link #mapUpdater}.
      */
+    @NotNull
     private final MapscrollListener mapscrollListener = new MapscrollListener()
     {
         /** {@inheritDoc} */
@@ -58,7 +62,7 @@ public class MapscrollSkinEvent implements SkinEvent
      * @param commandList the command list to execute
      * @param mapUpdater the map updater to attach to
      */
-    public MapscrollSkinEvent(final GUICommandList commandList, final CfMapUpdater mapUpdater)
+    public MapscrollSkinEvent(@NotNull final GUICommandList commandList, @NotNull final CfMapUpdater mapUpdater)
     {
         this.commandList = commandList;
         this.mapUpdater = mapUpdater;

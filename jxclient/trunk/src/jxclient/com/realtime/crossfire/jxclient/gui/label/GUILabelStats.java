@@ -27,6 +27,7 @@ import com.realtime.crossfire.jxclient.util.Formatter;
 import com.realtime.crossfire.jxclient.window.JXCWindowRenderer;
 import java.awt.Color;
 import java.awt.Font;
+import org.jetbrains.annotations.NotNull;
 
 /**
  * A {@link GUILabel} that displays a value of the last received "stats"
@@ -44,6 +45,7 @@ public class GUILabelStats extends GUIOneLineLabel
     /**
      * The {@link Stats} instance to use.
      */
+    @NotNull
     private final Stats stats;
 
     /**
@@ -54,6 +56,7 @@ public class GUILabelStats extends GUIOneLineLabel
     /**
      * The {@link StatsListener} registered to be notified about stat changes.
      */
+    @NotNull
     private final StatsListener statsListener = new StatsListener()
     {
         /** {@inheritDoc} */
@@ -110,7 +113,7 @@ public class GUILabelStats extends GUIOneLineLabel
 
         /** {@inheritDoc} */
         @Override
-        public void titleChanged(final String title)
+        public void titleChanged(@NotNull final String title)
         {
             if (stat == CrossfireStatsListener.CS_STAT_TITLE)
             {
@@ -120,7 +123,7 @@ public class GUILabelStats extends GUIOneLineLabel
 
         /** {@inheritDoc} */
         @Override
-        public void rangeChanged(final String range)
+        public void rangeChanged(@NotNull final String range)
         {
             if (stat != CrossfireStatsListener.CS_STAT_RANGE)
             {
@@ -149,7 +152,7 @@ public class GUILabelStats extends GUIOneLineLabel
 
         /** {@inheritDoc} */
         @Override
-        public void activeSkillChanged(final String activeSkill)
+        public void activeSkillChanged(@NotNull final String activeSkill)
         {
             // ignore
         }
@@ -191,7 +194,7 @@ public class GUILabelStats extends GUIOneLineLabel
      * @param alignment the text alignment
      * @param stats the stats instance to use
      */
-    public GUILabelStats(final TooltipManager tooltipManager, final JXCWindowRenderer windowRenderer, final String name, final int x, final int y, final int w, final int h, final Font font, final Color color, final Color backgroundColor, final int stat, final Alignment alignment, final Stats stats)
+    public GUILabelStats(@NotNull final TooltipManager tooltipManager, @NotNull final JXCWindowRenderer windowRenderer, @NotNull final String name, final int x, final int y, final int w, final int h, @NotNull final Font font, @NotNull final Color color, @NotNull final Color backgroundColor, final int stat, @NotNull final Alignment alignment, @NotNull final Stats stats)
     {
         super(tooltipManager, windowRenderer, name, x, y, w, h, null, font, color, backgroundColor, alignment, "");
         this.stats = stats;

@@ -21,6 +21,7 @@ package com.realtime.crossfire.jxclient.settings;
 
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
+import org.jetbrains.annotations.NotNull;
 
 /**
  * Utility class to encode arbitrary Strings to fit in a single text line. For
@@ -36,6 +37,7 @@ public class Codec
      * Patterns that must be encoded. The corresponding replacement strings are
      * {@link #replacementsEncode}.
      */
+    @NotNull
     private static final Pattern[] patternsEncode =
     {
         Pattern.compile("\\\\"),
@@ -46,6 +48,7 @@ public class Codec
     /**
      * The replacement strings for {@link #patternsEncode}.
      */
+    @NotNull
     private static final String[] replacementsEncode =
     {
         Matcher.quoteReplacement("\\\\"),
@@ -57,6 +60,7 @@ public class Codec
      * Patterns that must be decoded. The corresponding replacement strings are
      * {@link #replacementsDecode}.
      */
+    @NotNull
     private static final Pattern[] patternsDecode =
     {
         Pattern.compile("\\\\n"),
@@ -67,6 +71,7 @@ public class Codec
     /**
      * The replacement strings for {@link #patternsDecode}.
      */
+    @NotNull
     private static final String[] replacementsDecode =
     {
         Matcher.quoteReplacement("\n"),
@@ -90,7 +95,8 @@ public class Codec
      *
      * @see #decode(String)
      */
-    public static String encode(final String str)
+    @NotNull
+    public static String encode(@NotNull final String str)
     {
         assert patternsEncode.length == replacementsEncode.length;
         String tmp = str;
@@ -110,7 +116,8 @@ public class Codec
      *
      * @see #encode(String)
      */
-    public static String decode(final String str)
+    @NotNull
+    public static String decode(@NotNull final String str)
     {
         assert patternsDecode.length == replacementsDecode.length;
         String tmp = str;

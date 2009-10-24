@@ -20,6 +20,7 @@
 package com.realtime.crossfire.jxclient.server;
 
 import com.realtime.crossfire.jxclient.settings.options.CheckBoxOption;
+import org.jetbrains.annotations.NotNull;
 
 /**
  * A {@link CheckBoxOption} that toggles a pickup setting.
@@ -30,6 +31,7 @@ public class PickupOption extends CheckBoxOption
     /**
      * The pickup instance for modifying the pickup mode.
      */
+    @NotNull
     private final Pickup pickup;
 
     /**
@@ -42,7 +44,7 @@ public class PickupOption extends CheckBoxOption
      * @param pickup the pickup instance for modifying the pickup mode
      * @param option the affected pickup mode
      */
-    public PickupOption(final Pickup pickup, final long option)
+    public PickupOption(@NotNull final Pickup pickup, final long option)
     {
         this.pickup = pickup;
         this.option = option;

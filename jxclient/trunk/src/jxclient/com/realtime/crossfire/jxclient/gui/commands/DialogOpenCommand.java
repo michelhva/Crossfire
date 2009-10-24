@@ -21,6 +21,7 @@ package com.realtime.crossfire.jxclient.gui.commands;
 
 import com.realtime.crossfire.jxclient.gui.gui.Gui;
 import com.realtime.crossfire.jxclient.window.GuiManager;
+import org.jetbrains.annotations.NotNull;
 
 /**
  * A {@link GUICommand} which opens a {@link Gui} dialog.
@@ -31,11 +32,13 @@ public class DialogOpenCommand implements GUICommand
     /**
      * The {@link GuiManager} to use.
      */
+    @NotNull
     private final GuiManager guiManager;
 
     /**
      * The dialog to open.
      */
+    @NotNull
     private final Gui dialog;
 
     /**
@@ -43,7 +46,7 @@ public class DialogOpenCommand implements GUICommand
      * @param guiManager the gui manager to use
      * @param dialog the dialog to open
      */
-    public DialogOpenCommand(final GuiManager guiManager, final Gui dialog)
+    public DialogOpenCommand(@NotNull final GuiManager guiManager, @NotNull final Gui dialog)
     {
         this.guiManager = guiManager;
         this.dialog = dialog;

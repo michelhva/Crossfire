@@ -20,6 +20,7 @@
 package com.realtime.crossfire.jxclient.items;
 
 import java.util.EventListener;
+import org.jetbrains.annotations.NotNull;
 
 /**
  * Interface for listeners for changes of the current player object.
@@ -33,19 +34,19 @@ public interface PlayerListener extends EventListener
      *
      * @param player The corresponding player object.
      */
-    void playerReceived(CfPlayer player);
+    void playerReceived(@NotNull CfPlayer player);
 
     /**
      * A player object has been added.
      *
      * @param player The added player object.
      */
-    void playerAdded(CfPlayer player);
+    void playerAdded(@NotNull CfPlayer player);
 
     /**
      * A player object has been removed.
      *
      * @param player The removed player object.
      */
-    void playerRemoved(CfPlayer player);
+    void playerRemoved(@NotNull CfPlayer player);
 }

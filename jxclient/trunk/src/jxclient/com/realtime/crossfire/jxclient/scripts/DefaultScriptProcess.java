@@ -44,6 +44,8 @@ import java.io.OutputStreamWriter;
 import java.io.UnsupportedEncodingException;
 import java.util.ArrayList;
 import java.util.Collection;
+import org.jetbrains.annotations.NotNull;
+import org.jetbrains.annotations.Nullable;
 
 /**
  * Default implementation for {@link ScriptProcess}es.
@@ -60,66 +62,79 @@ public class DefaultScriptProcess extends Thread implements ScriptProcess
     /**
      * The script command including arguments.
      */
+    @NotNull
     private final String filename;
 
     /**
      * The {@link CommandQueue} for sending commands.
      */
+    @NotNull
     private final CommandQueue commandQueue;
 
     /**
      * The connection instance.
      */
+    @NotNull
     private final CrossfireServerConnection crossfireServerConnection;
 
     /**
      * The {@link Stats} instance to watch.
      */
+    @NotNull
     private final Stats stats;
 
     /**
      * The {@link ItemsManager} instance to use.
      */
+    @NotNull
     private final ItemsManager itemsManager;
 
     /**
      * The {@link SpellsManager} instance to use.
      */
+    @NotNull
     private final SpellsManager spellsManager;
 
     /**
      * The {@link CfMapUpdater} instance to use.
      */
+    @NotNull
     private final CfMapUpdater mapUpdater;
 
     /**
      * The {@link SkillSet} for looking up skill names.
      */
+    @NotNull
     private final SkillSet skillSet;
 
     /**
      * The {@link Process} instance for the executed child process.
      */
+    @NotNull
     private final Process proc;
 
     /**
      * The {@link InputStream} of {@link #proc}.
      */
+    @NotNull
     private final InputStream in;
 
     /**
      * The {@link OutputStreamWriter} associated with {@link #proc}.
      */
+    @NotNull
     private final OutputStreamWriter osw;
 
     /**
      * The {@link ScriptProcessListener}s to notify.
      */
+    @NotNull
     private final Collection<ScriptProcessListener> scriptProcessListeners = new ArrayList<ScriptProcessListener>(1);
 
     /**
      * The {@link PacketWatcher} to process "watch" commands.
      */
+    @NotNull
     private final PacketWatcher packetWatcher;
 
     /**
@@ -136,6 +151,7 @@ public class DefaultScriptProcess extends Thread implements ScriptProcess
      * The {@link ClientSocketListener} attached to {@link
      * #crossfireServerConnection} to track commands sent to the server.
      */
+    @NotNull
     private final ClientSocketListener clientSocketListener = new ClientSocketListener()
     {
         /** {@inheritDoc} */
@@ -154,14 +170,14 @@ public class DefaultScriptProcess extends Thread implements ScriptProcess
 
         /** {@inheritDoc} */
         @Override
-        public void packetReceived(final byte[] buf, final int start, final int end) throws UnknownCommandException
+        public void packetReceived(@NotNull final byte[] buf, final int start, final int end) throws UnknownCommandException
         {
             // ignore
         }
 
         /** {@inheritDoc} */
         @Override
-        public void packetSent(final byte[] buf, final int len)
+        public void packetSent(@NotNull final byte[] buf, final int len)
         {
             final String cmd;
             try
@@ -177,14 +193,14 @@ public class DefaultScriptProcess extends Thread implements ScriptProcess
 
         /** {@inheritDoc} */
         @Override
-        public void disconnecting(final String reason)
+        public void disconnecting(@NotNull final String reason)
         {
             // ignore
         }
 
         /** {@inheritDoc} */
         @Override
-        public void disconnected(final String reason)
+        public void disconnected(@NotNull final String reason)
         {
             // ignore
         }
@@ -203,7 +219,7 @@ public class DefaultScriptProcess extends Thread implements ScriptProcess
      * @param skillSet the skill set for looking up skill names
      * @throws IOException if the script cannot be created
      */
-    public DefaultScriptProcess(final int scriptId, final String filename, final CommandQueue commandQueue, final CrossfireServerConnection crossfireServerConnection, final Stats stats, final ItemsManager itemsManager, final SpellsManager spellsManager, final CfMapUpdater mapUpdater, final SkillSet skillSet) throws IOException
+    public DefaultScriptProcess(final int scriptId, @NotNull final String filename, @NotNull final CommandQueue commandQueue, @NotNull final CrossfireServerConnection crossfireServerConnection, @NotNull final Stats stats, @NotNull final ItemsManager itemsManager, @NotNull final SpellsManager spellsManager, @NotNull final CfMapUpdater mapUpdater, @NotNull final SkillSet skillSet) throws IOException
     {
         this.scriptId = scriptId;
         this.filename = filename;
@@ -229,6 +245,7 @@ public class DefaultScriptProcess extends Thread implements ScriptProcess
     }
 
     /** {@inheritDoc} */
+    @NotNull
     @Override
     public String getFilename()
     {
@@ -239,7 +256,7 @@ public class DefaultScriptProcess extends Thread implements ScriptProcess
     @Override
     public void run()
     {
-        String result = "unexpected";
+        @Nullable String result = "unexpected";
         try
         {
             try
@@ -302,7 +319,7 @@ public class DefaultScriptProcess extends Thread implements ScriptProcess
 
     /** {@inheritDoc} */
     @Override
-    public void commandSent(final String cmd)
+    public void commandSent(@NotNull final String cmd)
     {
         if (killed)
         {
@@ -326,7 +343,7 @@ public class DefaultScriptProcess extends Thread implements ScriptProcess
      * @param cmd the message to send
      * @param item the item to send
      */
-    private void commandSentItem(final String cmd, final CfItem item)
+    private void commandSentItem(@NotNull final String cmd, @NotNull final CfItem item)
     {
         int flags = 0;
         if (item.isMagic()) flags |= 0x100;
@@ -347,7 +364,7 @@ public class DefaultScriptProcess extends Thread implements ScriptProcess
      * @param x the cell's x-coordinate relative to the view area
      * @param y the cell's y-coordinate relative to the view area
      */
-    private void commandSentMap(final CfMap map, final int x, final int y)
+    private void commandSentMap(@NotNull final CfMap map, final int x, final int y)
     {
         final CfMapSquare square = map.getMapSquare(x, y);
         final StringBuilder sb = new StringBuilder("request map ");
@@ -384,6 +401,7 @@ public class DefaultScriptProcess extends Thread implements ScriptProcess
     }
 
     /** {@inheritDoc} */
+    @NotNull
     @Override
     public String toString()
     {
@@ -394,7 +412,7 @@ public class DefaultScriptProcess extends Thread implements ScriptProcess
      * Processes a "request" command from the script process.
      * @param parms the command arguments
      */
-    private void cmdRequest(final String parms)
+    private void cmdRequest(@NotNull final String parms)
     {
         if (parms.equals("player"))
         {
@@ -614,7 +632,7 @@ public class DefaultScriptProcess extends Thread implements ScriptProcess
      * Processes a "issue mark" command from the script process.
      * @param parms the command arguments
      */
-    private void cmdIssueMark(final String parms)
+    private void cmdIssueMark(@NotNull final String parms)
     {
         final int tag;
         try
@@ -633,7 +651,7 @@ public class DefaultScriptProcess extends Thread implements ScriptProcess
      * Processes a "issue lock" command from the script process.
      * @param parms the command arguments
      */
-    private void cmdIssueLock(final String parms)
+    private void cmdIssueLock(@NotNull final String parms)
     {
         final String[] tmp = parms.split(" +", 2);
         if (tmp.length != 2)
@@ -665,7 +683,7 @@ public class DefaultScriptProcess extends Thread implements ScriptProcess
      * Processes a regular "issue" command from the script process.
      * @param parms the command arguments
      */
-    private void cmdIssue(final String parms)
+    private void cmdIssue(@NotNull final String parms)
     {
         final String[] pps = parms.split(" +", 3);
         if (pps.length != 3)
@@ -699,7 +717,7 @@ public class DefaultScriptProcess extends Thread implements ScriptProcess
      * Processes a "draw" command from the script process.
      * @param parms the command arguments
      */
-    private void cmdDraw(final String parms)
+    private void cmdDraw(@NotNull final String parms)
     {
         final String[] pps = parms.split(" +", 2);
         if (pps.length != 2)
@@ -748,7 +766,7 @@ public class DefaultScriptProcess extends Thread implements ScriptProcess
      * Processes a line received from the script process.
      * @param cmdline the line
      */
-    private void runScriptCommand(final String cmdline)
+    private void runScriptCommand(@NotNull final String cmdline)
     {
         final String[] tmp = cmdline.split(" +", 2);
         if (tmp[0].equals("watch"))
@@ -843,14 +861,14 @@ public class DefaultScriptProcess extends Thread implements ScriptProcess
      * Reports an error while executing client commands.
      * @param string the error message
      */
-    private void reportError(final String string)
+    private void reportError(@NotNull final String string)
     {
         crossfireServerConnection.drawInfo(string, CrossfireDrawinfoListener.NDI_RED);
     }
 
     /** {@inheritDoc} */
     @Override
-    public void addScriptProcessListener(final ScriptProcessListener scriptProcessListener)
+    public void addScriptProcessListener(@NotNull final ScriptProcessListener scriptProcessListener)
     {
         scriptProcessListeners.add(scriptProcessListener);
     }
@@ -865,7 +883,7 @@ public class DefaultScriptProcess extends Thread implements ScriptProcess
 
     /** {@inheritDoc} */
     @Override
-    public int compareTo(final ScriptProcess o)
+    public int compareTo(@NotNull final ScriptProcess o)
     {
         if (scriptId < o.getScriptId())
         {

@@ -20,6 +20,7 @@
 package com.realtime.crossfire.jxclient.gui.commands;
 
 import com.realtime.crossfire.jxclient.gui.gui.GUIElement;
+import org.jetbrains.annotations.NotNull;
 
 /**
  * A {@link GUICommand} which toggles the visiblity of a target {@link
@@ -31,13 +32,14 @@ public class ToggleCommand implements GUICommand
     /**
      * The gui element to toggle.
      */
+    @NotNull
     private final GUIElement target;
 
     /**
      * Creates a new instance.
      * @param target the gui element to toggle
      */
-    public ToggleCommand(final GUIElement target)
+    public ToggleCommand(@NotNull final GUIElement target)
     {
         this.target = target;
     }

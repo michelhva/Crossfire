@@ -19,6 +19,8 @@
 //
 package com.realtime.crossfire.jxclient.server;
 
+import org.jetbrains.annotations.NotNull;
+
 /**
  *
  * @version 1.0
@@ -51,5 +53,5 @@ public interface CrossfireMagicmapListener
      * @param data the data describing tiles
      * @param pos the index of the first valid byte in <code>data</code>
      */
-    void commandMagicmapReceived(int width, int height, int px, int py, byte[] data, int pos);
+    void commandMagicmapReceived(int width, int height, int px, int py, @NotNull byte[] data, int pos);
 }

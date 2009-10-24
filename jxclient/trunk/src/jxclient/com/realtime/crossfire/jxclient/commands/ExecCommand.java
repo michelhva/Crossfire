@@ -23,6 +23,7 @@ import com.realtime.crossfire.jxclient.server.CrossfireServerConnection;
 import com.realtime.crossfire.jxclient.skin.JXCSkinException;
 import com.realtime.crossfire.jxclient.window.GUICommandList;
 import com.realtime.crossfire.jxclient.window.GuiManager;
+import org.jetbrains.annotations.NotNull;
 
 /**
  * Implements the "exec" command. It runs a skin command.
@@ -33,6 +34,7 @@ public class ExecCommand extends AbstractCommand
     /**
      * The {@link GuiManager} for looking up commands.
      */
+    @NotNull
     private final GuiManager guiManager;
 
     /**
@@ -40,7 +42,7 @@ public class ExecCommand extends AbstractCommand
      * @param guiManager the gui manager for looking up commands
      * @param crossfireServerConnection the connection instance
      */
-    public ExecCommand(final GuiManager guiManager, final CrossfireServerConnection crossfireServerConnection)
+    public ExecCommand(@NotNull final GuiManager guiManager, @NotNull final CrossfireServerConnection crossfireServerConnection)
     {
         super(crossfireServerConnection);
         this.guiManager = guiManager;
@@ -55,7 +57,7 @@ public class ExecCommand extends AbstractCommand
 
     /** {@inheritDoc} */
     @Override
-    public void execute(final String args)
+    public void execute(@NotNull final String args)
     {
         if (args.length() == 0)
         {

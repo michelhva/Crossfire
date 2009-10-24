@@ -21,6 +21,7 @@ package com.realtime.crossfire.jxclient.sound;
 
 import com.realtime.crossfire.jxclient.server.CrossfireMusicListener;
 import com.realtime.crossfire.jxclient.server.CrossfireServerConnection;
+import org.jetbrains.annotations.NotNull;
 
 /**
  * Monitors music commands and generates appropriate sound effects.
@@ -32,16 +33,18 @@ public class MusicWatcher
     /**
      * The {@link SoundManager} instance to watch.
      */
+    @NotNull
     private final SoundManager soundManager;
 
     /**
      * The crossfire stats listener.
      */
+    @NotNull
     private final CrossfireMusicListener crossfireMusicListener = new CrossfireMusicListener()
     {
         /** {@inheritDoc} */
         @Override
-        public void commandMusicReceived(final String music)
+        public void commandMusicReceived(@NotNull final String music)
         {
             soundManager.playMusic(music.equals("NONE") ? null : music);
         }
@@ -52,7 +55,7 @@ public class MusicWatcher
      * @param crossfireServerConnection the connection instance
      * @param soundManager the sound manager instance to watch
      */
-    public MusicWatcher(final CrossfireServerConnection crossfireServerConnection, final SoundManager soundManager)
+    public MusicWatcher(@NotNull final CrossfireServerConnection crossfireServerConnection, @NotNull final SoundManager soundManager)
     {
         crossfireServerConnection.addCrossfireMusicListener(crossfireMusicListener);
         this.soundManager = soundManager;

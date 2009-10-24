@@ -20,6 +20,8 @@
 package com.realtime.crossfire.jxclient.faces;
 
 import javax.swing.ImageIcon;
+import org.jetbrains.annotations.NotNull;
+import org.jetbrains.annotations.Nullable;
 
 /**
  * Interface for {@link ImageIcon} caching classes.
@@ -33,12 +35,13 @@ public interface ImageCache
      * @return the image icon, or <code>null</code> if the cache does not
      * contain the image
      */
-    ImageIcon load(Face face);
+    @Nullable
+    ImageIcon load(@NotNull Face face);
 
     /**
      * Stores an {@link ImageIcon} into the cache.
      * @param face the face to save
      * @param imageIcon the image icon to store
      */
-    void save(Face face, ImageIcon imageIcon);
+    void save(@NotNull Face face, @NotNull ImageIcon imageIcon);
 }

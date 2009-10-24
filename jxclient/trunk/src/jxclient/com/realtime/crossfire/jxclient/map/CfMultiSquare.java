@@ -21,6 +21,7 @@ package com.realtime.crossfire.jxclient.map;
 
 import com.realtime.crossfire.jxclient.faces.Face;
 import com.realtime.crossfire.jxclient.server.CrossfireMap2Command;
+import org.jetbrains.annotations.NotNull;
 
 /**
  * Represents a square outside the viewable area that contains multi-square
@@ -42,11 +43,13 @@ public class CfMultiSquare
     /**
      * The {@link CfMap} instance this square belongs to.
      */
+    @NotNull
     private final CfMap map;
 
     /**
      * The face values.
      */
+    @NotNull
     private final Face[] faces = new Face[CrossfireMap2Command.NUM_LAYERS];
 
     /**
@@ -55,7 +58,7 @@ public class CfMultiSquare
      * @param y the y-coordinate of this square
      * @param map the <code>CfMap</code> instance this square belongs to
      */
-    public CfMultiSquare(final int x, final int y, final CfMap map)
+    public CfMultiSquare(final int x, final int y, @NotNull final CfMap map)
     {
         this.x = x;
         this.y = y;
@@ -82,7 +85,7 @@ public class CfMultiSquare
      * @param layer the layer to update
      * @param face the face to set; <code>null</code> to clear the face
      */
-    public void setFace(final int layer, final Face face)
+    public void setFace(final int layer, @NotNull final Face face)
     {
         if (faces[layer] != null)
         {

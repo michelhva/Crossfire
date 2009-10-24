@@ -20,6 +20,7 @@
 package com.realtime.crossfire.jxclient.gui.scrollable;
 
 import com.realtime.crossfire.jxclient.gui.gui.GUIScrollBar;
+import org.jetbrains.annotations.NotNull;
 
 /**
  * A {@link GUIScrollable} that can be attached to {@link GUIScrollBar}s.
@@ -31,14 +32,14 @@ public interface GUIScrollable2 extends GUIScrollable
      *
      * @param listener The listener to add.
      */
-    void addScrollableListener(ScrollableListener listener);
+    void addScrollableListener(@NotNull ScrollableListener listener);
 
     /**
      * Remove a scrollable listener.
      *
      * @param listener The listener to remove.
      */
-    void removeScrollableListener(ScrollableListener listener);
+    void removeScrollableListener(@NotNull ScrollableListener listener);
 
     /**
      * Scroll to the given location. The possible range is given by a previous

@@ -40,6 +40,8 @@ import java.awt.event.MouseEvent;
 import java.awt.font.FontRenderContext;
 import java.awt.geom.RectangularShape;
 import java.io.IOException;
+import org.jetbrains.annotations.NotNull;
+import org.jetbrains.annotations.Nullable;
 
 /**
  * @author Lauwenmark
@@ -61,40 +63,51 @@ public abstract class GUIText extends ActivatableGUIElement implements KeyListen
     /**
      * The {@link GuiManager} to use.
      */
+    @NotNull
     private final GuiManager guiManager;
 
     /**
      * The command history for this text field.
      */
+    @NotNull
     private final CommandHistory commandHistory;
 
+    @NotNull
     private final Image activeImage;
 
+    @NotNull
     private final Image inactiveImage;
 
     /**
      * The clipboard for cut/copy/paste operations.
      */
+    @NotNull
     private final Clipboard clipboard = Toolkit.getDefaultToolkit().getSystemClipboard();
 
     /**
      * The system selection for cut/copy/paste operations.
      */
+    @Nullable
     private final Clipboard selection = Toolkit.getDefaultToolkit().getSystemSelection();
 
+    @NotNull
     private final Font font;
 
+    @NotNull
     private final Color inactiveColor;
 
+    @NotNull
     private final Color activeColor;
 
     private final int margin;
 
+    @NotNull
     private final StringBuilder text;
 
     /**
      * The context used to determine character extents.
      */
+    @NotNull
     private final FontRenderContext fontRenderContext;
 
     /**
@@ -122,9 +135,10 @@ public abstract class GUIText extends ActivatableGUIElement implements KeyListen
      * Object used to synchronize on access to {@link #text}, {@link #cursor},
      * and {@link #offset}.
      */
+    @NotNull
     private final Object syncCursor = new Object();
 
-    protected GUIText(final GuiManager guiManager, final TooltipManager tooltipManager, final JXCWindowRenderer windowRenderer, final String name, final int x, final int y, final int w, final int h, final Image activeImage, final Image inactiveImage, final Font font, final Color inactiveColor, final Color activeColor, final int margin, final String text, final boolean ignoreUpDown)
+    protected GUIText(@NotNull final GuiManager guiManager, @NotNull final TooltipManager tooltipManager, @NotNull final JXCWindowRenderer windowRenderer, @NotNull final String name, final int x, final int y, final int w, final int h, @NotNull final Image activeImage, @NotNull final Image inactiveImage, @NotNull final Font font, @NotNull final Color inactiveColor, @NotNull final Color activeColor, final int margin, @NotNull final String text, final boolean ignoreUpDown)
     {
         super(tooltipManager, windowRenderer, name, x, y, w, h, Transparency.TRANSLUCENT);
         if (2*margin >= w) throw new IllegalArgumentException("margin is too large");
@@ -160,13 +174,14 @@ public abstract class GUIText extends ActivatableGUIElement implements KeyListen
         super.dispose();
     }
 
-    public void setText(final String text)
+    public void setText(@NotNull final String text)
     {
         this.text.setLength(0);
         this.text.append(text);
         setCursor(this.text.length());
     }
 
+    @NotNull
     public String getText()
     {
         return text.toString();
@@ -174,7 +189,7 @@ public abstract class GUIText extends ActivatableGUIElement implements KeyListen
 
     /** {@inheritDoc} */
     @Override
-    protected void render(final Graphics g)
+    protected void render(@NotNull final Graphics g)
     {
         g.drawImage(isActive() ? activeImage : inactiveImage, 0, 0, null);
         g.setFont(font);
@@ -201,6 +216,7 @@ public abstract class GUIText extends ActivatableGUIElement implements KeyListen
         g.drawString(tmp, margin, y);
     }
 
+    @NotNull
     private String getDisplayText()
     {
         final String tmpText = text.substring(offset);
@@ -216,7 +232,7 @@ public abstract class GUIText extends ActivatableGUIElement implements KeyListen
 
     /** {@inheritDoc} */
     @Override
-    public void mouseClicked(final MouseEvent e)
+    public void mouseClicked(@NotNull final MouseEvent e)
     {
         super.mouseClicked(e);
         final int b = e.getButton();
@@ -243,7 +259,7 @@ public abstract class GUIText extends ActivatableGUIElement implements KeyListen
     }
 
     @Override
-    public boolean keyPressed(final KeyEvent e)
+    public boolean keyPressed(@NotNull final KeyEvent e)
     {
         switch (e.getKeyCode())
         {
@@ -356,14 +372,14 @@ public abstract class GUIText extends ActivatableGUIElement implements KeyListen
 
     /** {@inheritDoc} */
     @Override
-    public boolean keyReleased(final KeyEvent e)
+    public boolean keyReleased(@NotNull final KeyEvent e)
     {
         return false;
     }
 
     /** {@inheritDoc} */
     @Override
-    public boolean keyTyped(final KeyEvent e)
+    public boolean keyTyped(@NotNull final KeyEvent e)
     {
         final char ch = e.getKeyChar();
         switch (ch)
@@ -421,7 +437,7 @@ public abstract class GUIText extends ActivatableGUIElement implements KeyListen
      * Inserts a string at the cursort position.
      * @param str the string
      */
-    private void insertString(final String str)
+    private void insertString(@NotNull final String str)
     {
         synchronized (syncCursor)
         {
@@ -435,7 +451,7 @@ public abstract class GUIText extends ActivatableGUIElement implements KeyListen
      *
      * @param command The entered command.
      */
-    protected abstract void execute(final String command);
+    protected abstract void execute(@NotNull final String command);
 
     /**
      * Enable or disable hidden text.

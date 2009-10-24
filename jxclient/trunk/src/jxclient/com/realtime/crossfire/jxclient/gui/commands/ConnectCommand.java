@@ -21,6 +21,7 @@ package com.realtime.crossfire.jxclient.gui.commands;
 
 import com.realtime.crossfire.jxclient.gui.textinput.GUIText;
 import com.realtime.crossfire.jxclient.window.JXCWindow;
+import org.jetbrains.annotations.NotNull;
 
 /**
  * A {@link GUICommand} which connectes to a Crossfire server.
@@ -31,11 +32,13 @@ public class ConnectCommand implements GUICommand
     /**
      * The main window.
      */
+    @NotNull
     private final JXCWindow window;
 
     /**
      * The host name input field.
      */
+    @NotNull
     private final GUIText hostNameInputField;
 
     /**
@@ -43,7 +46,7 @@ public class ConnectCommand implements GUICommand
      * @param window the main window
      * @param hostNameInputField the host name input field
      */
-    public ConnectCommand(final JXCWindow window, final GUIText hostNameInputField)
+    public ConnectCommand(@NotNull final JXCWindow window, @NotNull final GUIText hostNameInputField)
     {
         this.window = window;
         this.hostNameInputField = hostNameInputField;

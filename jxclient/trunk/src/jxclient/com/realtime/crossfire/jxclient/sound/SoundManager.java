@@ -24,6 +24,8 @@ import com.realtime.crossfire.jxclient.window.GuiStateListener;
 import com.realtime.crossfire.jxclient.window.JXCWindow;
 import java.util.Collection;
 import java.util.EnumSet;
+import org.jetbrains.annotations.NotNull;
+import org.jetbrains.annotations.Nullable;
 
 /**
  * Manages all sounds. Each sound has a sound type ({@link Sounds}) atatched.
@@ -37,11 +39,13 @@ public class SoundManager
     /**
      * The clip manager for playing sound effects.
      */
+    @NotNull
     private final ClipManager clipManager = new ClipManager();
 
     /**
      * The music manager for playing background music.
      */
+    @NotNull
     private final MusicManager musicManager = new MusicManager();
 
     /**
@@ -52,12 +56,14 @@ public class SoundManager
     /**
      * The muted sounds.
      */
+    @NotNull
     private final Collection<Sounds> mutedSounds = EnumSet.allOf(Sounds.class);
 
     /**
      * The {@link GuiStateListener} for detecting established or dropped
      * connections.
      */
+    @NotNull
     private final GuiStateListener guiStateListener = new GuiStateListener()
     {
         /** {@inheritDoc} */
@@ -86,7 +92,7 @@ public class SoundManager
 
         /** {@inheritDoc} */
         @Override
-        public void connecting(final ClientSocketState clientSocketState)
+        public void connecting(@NotNull final ClientSocketState clientSocketState)
         {
             // ignore
         }
@@ -101,7 +107,7 @@ public class SoundManager
 
         /** {@inheritDoc} */
         @Override
-        public void connectFailed(final String reason)
+        public void connectFailed(@NotNull final String reason)
         {
             // ignore
         }
@@ -111,7 +117,7 @@ public class SoundManager
      * Creates a new instance.
      * @param window the window to attach to
      */
-    public SoundManager(final JXCWindow window)
+    public SoundManager(@NotNull final JXCWindow window)
     {
         window.addConnectionStateListener(guiStateListener);
     }
@@ -141,11 +147,8 @@ public class SoundManager
      *
      * @param action The sound action name.
      */
-    public void playClip(final Sounds type, final String name, final String action)
+    public void playClip(@NotNull final Sounds type, @Nullable final String name, @NotNull final String action)
     {
-        if (type == null) throw new IllegalArgumentException();
-        if (action == null) throw new IllegalArgumentException();
-
         if (enabled && !mutedSounds.contains(type))
         {
             clipManager.play(name, action);
@@ -160,7 +163,7 @@ public class SoundManager
      * @param mute Whether to mute (<code>true</code>) or unmute
      * (<code>false</code>).
      */
-    private void mute(final Sounds type, final boolean mute)
+    private void mute(@NotNull final Sounds type, final boolean mute)
     {
         if (mute)
         {
@@ -179,7 +182,7 @@ public class SoundManager
      *
      * @param name The music name.
      */
-    public void playMusic(final String name)
+    public void playMusic(@Nullable final String name)
     {
         musicManager.play(name);
     }

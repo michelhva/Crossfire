@@ -22,6 +22,7 @@ import com.realtime.crossfire.jxclient.server.CrossfireUpdateMapListener;
 import com.realtime.crossfire.jxclient.server.MapSizeListener;
 import com.realtime.crossfire.jxclient.server.ReceivedPacketListener;
 import junit.framework.Assert;
+import org.jetbrains.annotations.NotNull;
 
 /**
  * Implements {@link CrossfireServerConnection} for regression tests. All
@@ -47,189 +48,189 @@ public class TestCrossfireServerConnection implements CrossfireServerConnection
 
     /** {@inheritDoc} */
     @Override
-    public void addCrossfireServerConnectionListener(final CrossfireServerConnectionListener listener)
+    public void addCrossfireServerConnectionListener(@NotNull final CrossfireServerConnectionListener listener)
     {
         Assert.fail();
     }
 
     /** {@inheritDoc} */
     @Override
-    public void addMapSizeListener(final MapSizeListener listener)
+    public void addMapSizeListener(@NotNull final MapSizeListener listener)
     {
         Assert.fail();
     }
 
     /** {@inheritDoc} */
     @Override
-    public void removeMapSizeListener(final MapSizeListener listener)
+    public void removeMapSizeListener(@NotNull final MapSizeListener listener)
     {
         Assert.fail();
     }
 
     /** {@inheritDoc} */
     @Override
-    public void addCrossfireDrawinfoListener(final CrossfireDrawinfoListener listener)
+    public void addCrossfireDrawinfoListener(@NotNull final CrossfireDrawinfoListener listener)
     {
         Assert.fail();
     }
 
     /** {@inheritDoc} */
     @Override
-    public void removeCrossfireDrawinfoListener(final CrossfireDrawinfoListener listener)
+    public void removeCrossfireDrawinfoListener(@NotNull final CrossfireDrawinfoListener listener)
     {
         Assert.fail();
     }
 
     /** {@inheritDoc} */
     @Override
-    public void addCrossfireDrawextinfoListener(final CrossfireDrawextinfoListener listener)
+    public void addCrossfireDrawextinfoListener(@NotNull final CrossfireDrawextinfoListener listener)
     {
         Assert.fail();
     }
 
     /** {@inheritDoc} */
     @Override
-    public void removeCrossfireDrawextinfoListener(final CrossfireDrawextinfoListener listener)
+    public void removeCrossfireDrawextinfoListener(@NotNull final CrossfireDrawextinfoListener listener)
     {
         Assert.fail();
     }
 
     /** {@inheritDoc} */
     @Override
-    public void addCrossfireQueryListener(final CrossfireQueryListener listener)
+    public void addCrossfireQueryListener(@NotNull final CrossfireQueryListener listener)
     {
         Assert.fail();
     }
 
     /** {@inheritDoc} */
     @Override
-    public void removeCrossfireQueryListener(final CrossfireQueryListener listener)
+    public void removeCrossfireQueryListener(@NotNull final CrossfireQueryListener listener)
     {
         Assert.fail();
     }
 
     /** {@inheritDoc} */
     @Override
-    public void addCrossfireMagicmapListener(final CrossfireMagicmapListener listener)
+    public void addCrossfireMagicmapListener(@NotNull final CrossfireMagicmapListener listener)
     {
         Assert.fail();
     }
 
     /** {@inheritDoc} */
     @Override
-    public void removeCrossfireMagicmapListener(final CrossfireMagicmapListener listener)
+    public void removeCrossfireMagicmapListener(@NotNull final CrossfireMagicmapListener listener)
     {
         Assert.fail();
     }
 
     /** {@inheritDoc} */
     @Override
-    public void addCrossfireUpdateFaceListener(final CrossfireUpdateFaceListener listener)
+    public void addCrossfireUpdateFaceListener(@NotNull final CrossfireUpdateFaceListener listener)
     {
         Assert.fail();
     }
 
     /** {@inheritDoc} */
     @Override
-    public void addCrossfireStatsListener(final CrossfireStatsListener crossfireStatsListener)
+    public void addCrossfireStatsListener(@NotNull final CrossfireStatsListener crossfireStatsListener)
     {
         Assert.fail();
     }
 
     /** {@inheritDoc} */
     @Override
-    public void addCrossfireUpdateItemListener(final CrossfireUpdateItemListener crossfireUpdateItemListener)
+    public void addCrossfireUpdateItemListener(@NotNull final CrossfireUpdateItemListener crossfireUpdateItemListener)
     {
         Assert.fail();
     }
 
     /** {@inheritDoc} */
     @Override
-    public void addCrossfireUpdateMapListener(final CrossfireUpdateMapListener listener)
+    public void addCrossfireUpdateMapListener(@NotNull final CrossfireUpdateMapListener listener)
     {
         Assert.fail();
     }
 
     /** {@inheritDoc} */
     @Override
-    public void addCrossfireTickListener(final CrossfireTickListener listener)
+    public void addCrossfireTickListener(@NotNull final CrossfireTickListener listener)
     {
         Assert.fail();
     }
 
     /** {@inheritDoc} */
     @Override
-    public void addCrossfireSoundListener(final CrossfireSoundListener listener)
+    public void addCrossfireSoundListener(@NotNull final CrossfireSoundListener listener)
     {
         Assert.fail();
     }
 
     /** {@inheritDoc} */
     @Override
-    public void addCrossfireMusicListener(final CrossfireMusicListener listener)
+    public void addCrossfireMusicListener(@NotNull final CrossfireMusicListener listener)
     {
         Assert.fail();
     }
 
     /** {@inheritDoc} */
     @Override
-    public void addCrossfireComcListener(final CrossfireComcListener listener)
+    public void addCrossfireComcListener(@NotNull final CrossfireComcListener listener)
     {
         Assert.fail();
     }
 
     /** {@inheritDoc} */
     @Override
-    public void addCrossfireFaceListener(final CrossfireFaceListener listener)
+    public void addCrossfireFaceListener(@NotNull final CrossfireFaceListener listener)
     {
         Assert.fail();
     }
 
     /** {@inheritDoc} */
     @Override
-    public void addCrossfireSpellListener(final CrossfireSpellListener listener)
+    public void addCrossfireSpellListener(@NotNull final CrossfireSpellListener listener)
     {
         Assert.fail();
     }
 
     /** {@inheritDoc} */
     @Override
-    public void addCrossfireExpTableListener(final CrossfireExpTableListener crossfireExpTableListener)
+    public void addCrossfireExpTableListener(@NotNull final CrossfireExpTableListener crossfireExpTableListener)
     {
         Assert.fail();
     }
 
     /** {@inheritDoc} */
     @Override
-    public void addCrossfireSkillInfoListener(final CrossfireSkillInfoListener listener)
+    public void addCrossfireSkillInfoListener(@NotNull final CrossfireSkillInfoListener listener)
     {
         Assert.fail();
     }
 
     /** {@inheritDoc} */
     @Override
-    public void removeCrossfireSkillInfoListener(final CrossfireSkillInfoListener listener)
+    public void removeCrossfireSkillInfoListener(@NotNull final CrossfireSkillInfoListener listener)
     {
         Assert.fail();
     }
 
     /** {@inheritDoc} */
     @Override
-    public void addPacketWatcherListener(final ReceivedPacketListener listener)
+    public void addPacketWatcherListener(@NotNull final ReceivedPacketListener listener)
     {
         Assert.fail();
     }
 
     /** {@inheritDoc} */
     @Override
-    public void removePacketWatcherListener(final ReceivedPacketListener listener)
+    public void removePacketWatcherListener(@NotNull final ReceivedPacketListener listener)
     {
         Assert.fail();
     }
 
     /** {@inheritDoc} */
     @Override
-    public void drawInfo(final String message, final int color)
+    public void drawInfo(@NotNull final String message, final int color)
     {
         Assert.fail();
     }
@@ -292,7 +293,7 @@ public class TestCrossfireServerConnection implements CrossfireServerConnection
 
     /** {@inheritDoc} */
     @Override
-    public int sendNcom(final int repeat, final String command)
+    public int sendNcom(final int repeat, @NotNull final String command)
     {
         Assert.fail();
         throw new AssertionError();
@@ -300,35 +301,35 @@ public class TestCrossfireServerConnection implements CrossfireServerConnection
 
     /** {@inheritDoc} */
     @Override
-    public void sendReply(final String text)
+    public void sendReply(@NotNull final String text)
     {
         Assert.fail();
     }
 
     /** {@inheritDoc} */
     @Override
-    public void sendRequestinfo(final String infoType)
+    public void sendRequestinfo(@NotNull final String infoType)
     {
         Assert.fail();
     }
 
     /** {@inheritDoc} */
     @Override
-    public void sendSetup(final String... options)
+    public void sendSetup(@NotNull final String... options)
     {
         Assert.fail();
     }
 
     /** {@inheritDoc} */
     @Override
-    public void sendToggleextendedtext(final int... types)
+    public void sendToggleextendedtext(@NotNull final int... types)
     {
         Assert.fail();
     }
 
     /** {@inheritDoc} */
     @Override
-    public void sendVersion(final int csval, final int scval, final String vinfo)
+    public void sendVersion(final int csval, final int scval, @NotNull final String vinfo)
     {
         Assert.fail();
     }
@@ -365,21 +366,21 @@ public class TestCrossfireServerConnection implements CrossfireServerConnection
 
     /** {@inheritDoc} */
     @Override
-    public void addClientSocketListener(final ClientSocketListener clientSocketListener)
+    public void addClientSocketListener(@NotNull final ClientSocketListener clientSocketListener)
     {
         throw new AssertionError();
     }
 
     /** {@inheritDoc} */
     @Override
-    public void removeClientSocketListener(final ClientSocketListener clientSocketListener)
+    public void removeClientSocketListener(@NotNull final ClientSocketListener clientSocketListener)
     {
         throw new AssertionError();
     }
 
     /** {@inheritDoc} */
     @Override
-    public void connect(final String hostname, final int port)
+    public void connect(@NotNull final String hostname, final int port)
     {
         Assert.fail();
     }

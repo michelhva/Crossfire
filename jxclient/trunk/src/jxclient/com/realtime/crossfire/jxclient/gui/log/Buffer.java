@@ -28,6 +28,7 @@ import java.util.Collections;
 import java.util.Iterator;
 import java.util.List;
 import java.util.ListIterator;
+import org.jetbrains.annotations.NotNull;
 
 /**
  * Manages the contents of the contents of a log window. It consists of a list
@@ -45,16 +46,19 @@ public class Buffer
     /**
      * The listeners to notify about changes.
      */
+    @NotNull
     private final Collection<BufferListener> listeners = new ArrayList<BufferListener>();
 
     /**
      * The {@link Fonts} instance for looking up fonts.
      */
+    @NotNull
     private final Fonts fonts;
 
     /**
      * The {@link FontRenderContext} to use.
      */
+    @NotNull
     private final FontRenderContext context;
 
     /**
@@ -65,6 +69,7 @@ public class Buffer
     /**
      * The lines in display order.
      */
+    @NotNull
     private final List<Line> lines = new ArrayList<Line>();
 
     /**
@@ -76,6 +81,7 @@ public class Buffer
      * Object to synchronized access to {@link #lines} and {@link
      * #totalHeight}.
      */
+    @NotNull
     private final Object sync = new Object();
 
     /**
@@ -87,7 +93,7 @@ public class Buffer
      *
      * @param renderWidth The width to render.
      */
-    public Buffer(final Fonts fonts, final FontRenderContext context, final int renderWidth)
+    public Buffer(@NotNull final Fonts fonts, @NotNull final FontRenderContext context, final int renderWidth)
     {
         this.fonts = fonts;
         this.context = context;
@@ -117,7 +123,7 @@ public class Buffer
      *
      * @param line The line to append.
      */
-    public void addLine(final Line line)
+    public void addLine(@NotNull final Line line)
     {
         final int height = calculateHeight(line);
         line.setHeight(height);
@@ -138,7 +144,7 @@ public class Buffer
      *
      * @param line The replacing line.
      */
-    public void replaceLine(final Line line)
+    public void replaceLine(@NotNull final Line line)
     {
         final int height = calculateHeight(line);
         line.setHeight(height);
@@ -191,6 +197,7 @@ public class Buffer
      *
      * @return The line.
      */
+    @NotNull
     public Line getLine(final int line)
     {
         synchronized (sync)
@@ -217,6 +224,7 @@ public class Buffer
      * hold {@link #sync}'s lock.
      * @return the iterator
      */
+    @NotNull
     public Iterator<Line> iterator()
     {
         assert Thread.holdsLock(sync);
@@ -230,6 +238,7 @@ public class Buffer
      *
      * @return The list iterator.
      */
+    @NotNull
     public ListIterator<Line> listIterator(final int line)
     {
         assert Thread.holdsLock(sync);
@@ -256,7 +265,7 @@ public class Buffer
      *
      * @return The height in pixels.
      */
-    private int calculateHeight(final Line line)
+    private int calculateHeight(@NotNull final Line line)
     {
         int height = 0;
         int x = 0;
@@ -303,7 +312,7 @@ public class Buffer
      *
      * @param listener The listener.
      */
-    public void addBufferListener(final BufferListener listener)
+    public void addBufferListener(@NotNull final BufferListener listener)
     {
         listeners.add(listener);
     }
@@ -312,7 +321,7 @@ public class Buffer
      * Removes a listener to be notified of changes.
      * @param listener the listener
      */
-    public void removeBufferListener(final BufferListener listener)
+    public void removeBufferListener(@NotNull final BufferListener listener)
     {
         listeners.remove(listener);
     }
@@ -322,6 +331,7 @@ public class Buffer
      * {@link #listIterator(int)}.
      * @return the object
      */
+    @NotNull
     public Object getSyncObject()
     {
         return sync;

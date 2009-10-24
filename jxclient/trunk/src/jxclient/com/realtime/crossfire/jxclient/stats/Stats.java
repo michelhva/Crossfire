@@ -30,6 +30,7 @@ import com.realtime.crossfire.jxclient.window.JXCWindow;
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.HashSet;
+import org.jetbrains.annotations.NotNull;
 
 /**
  * This is the representation of all the statistics of a player, like its speed
@@ -52,21 +53,25 @@ public class Stats
     /**
      * The listeners to inform of stat changes.
      */
+    @NotNull
     private final Collection<StatsListener> statsListeners = new ArrayList<StatsListener>();
 
     /**
      * The {@link ExperienceTable} instance to use.
      */
+    @NotNull
     private final ExperienceTable experienceTable;
 
     /**
      * The {@link SkillSet} instance to use.
      */
+    @NotNull
     private final SkillSet skillSet;
 
     /**
      * The current stat values.
      */
+    @NotNull
     private final int[] stats = new int[258];
 
     /**
@@ -82,27 +87,32 @@ public class Stats
     /**
      * The current value of the range stat.
      */
+    @NotNull
     private String range = "";
 
     /**
      * The current value of the title stat.
      */
+    @NotNull
     private String title = "";
 
     /**
      * The active skill name.
      */
+    @NotNull
     private String activeSkill = "";
 
     /**
      * The {@link CrossfireStatsListener} attached to the server connection for
      * detecting stat changes.
      */
+    @NotNull
     private final CrossfireStatsListener crossfireStatsListener = new CrossfireStatsListener()
     {
         /**
          * All unhandled stat values for which an error has been printed.
          */
+        @NotNull
         private final Collection<String> unhandledStats = new HashSet<String>(0);
 
         /** {@inheritDoc} */
@@ -204,7 +214,7 @@ public class Stats
 
         /** {@inheritDoc} */
         @Override
-        public void statStringReceived(final int stat, final String param)
+        public void statStringReceived(final int stat, @NotNull final String param)
         {
             switch (stat)
             {
@@ -249,7 +259,7 @@ public class Stats
          * @param stat the stat value
          * @param type the stat type
          */
-        private void reportUnhandledStat(final int stat, final String type)
+        private void reportUnhandledStat(final int stat, @NotNull final String type)
         {
             if (unhandledStats.add(type+"-"+stat))
             {
@@ -262,6 +272,7 @@ public class Stats
      * The {@link GuiStateListener} for detecting established or dropped
      * connections.
      */
+    @NotNull
     private final GuiStateListener guiStateListener = new GuiStateListener()
     {
         /** {@inheritDoc} */
@@ -287,7 +298,7 @@ public class Stats
 
         /** {@inheritDoc} */
         @Override
-        public void connecting(final ClientSocketState clientSocketState)
+        public void connecting(@NotNull final ClientSocketState clientSocketState)
         {
             // ignore
         }
@@ -301,7 +312,7 @@ public class Stats
 
         /** {@inheritDoc} */
         @Override
-        public void connectFailed(final String reason)
+        public void connectFailed(@NotNull final String reason)
         {
             // ignore
         }
@@ -314,7 +325,7 @@ public class Stats
      * @param skillSet the skill set instance to use
      * @param window the window to attach to
      */
-    public Stats(final CrossfireServerConnection crossfireServerConnection, final ExperienceTable experienceTable, final SkillSet skillSet, final JXCWindow window)
+    public Stats(@NotNull final CrossfireServerConnection crossfireServerConnection, @NotNull final ExperienceTable experienceTable, @NotNull final SkillSet skillSet, @NotNull final JXCWindow window)
     {
         this.experienceTable = experienceTable; // XXX: should detect changed information
         this.skillSet = skillSet;
@@ -404,6 +415,7 @@ public class Stats
      * Returns the current Title.
      * @return A String representation of the Title.
      */
+    @NotNull
     public String getTitle()
     {
         return title;
@@ -414,6 +426,7 @@ public class Stats
      * current active skill for the player.
      * @return A String representation of the Range.
      */
+    @NotNull
     public String getRange()
     {
         return range;
@@ -424,6 +437,7 @@ public class Stats
      *
      * @return The active skill name.
      */
+    @NotNull
     public String getActiveSkill()
     {
         return activeSkill;
@@ -433,7 +447,7 @@ public class Stats
      * Sets the current Title.
      * @param title The new Title content.
      */
-    private void setTitle(final String title)
+    private void setTitle(@NotNull final String title)
     {
         if (this.title.equals(title))
         {
@@ -452,7 +466,7 @@ public class Stats
      * active skill for the player.
      * @param range The new content of Range.
      */
-    private void setRange(final String range)
+    private void setRange(@NotNull final String range)
     {
         if (this.range.equals(range))
         {
@@ -471,7 +485,7 @@ public class Stats
      *
      * @param activeSkill The active skill name.
      */
-    public void setActiveSkill(final String activeSkill)
+    public void setActiveSkill(@NotNull final String activeSkill)
     {
         if (this.activeSkill.equals(activeSkill))
         {
@@ -545,7 +559,7 @@ public class Stats
      * Adds a {@link StatsListener} to be notified about stat changes.
      * @param statsListener the listener to add
      */
-    public void addCrossfireStatsListener(final StatsListener statsListener)
+    public void addCrossfireStatsListener(@NotNull final StatsListener statsListener)
     {
         statsListeners.add(statsListener);
     }
@@ -554,7 +568,7 @@ public class Stats
      * Removes a {@link StatsListener} to be notified about stat changes.
      * @param statsListener the listener to remove
      */
-    public void removeCrossfireStatsListener(final StatsListener statsListener)
+    public void removeCrossfireStatsListener(@NotNull final StatsListener statsListener)
     {
         statsListeners.remove(statsListener);
     }

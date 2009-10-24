@@ -22,6 +22,7 @@ package com.realtime.crossfire.jxclient.shortcuts;
 import com.realtime.crossfire.jxclient.server.CommandQueue;
 import com.realtime.crossfire.jxclient.spells.Spell;
 import com.realtime.crossfire.jxclient.spells.SpellListener;
+import org.jetbrains.annotations.NotNull;
 
 /**
  * A {@link Shortcut} that casts a spell.
@@ -33,31 +34,37 @@ public class ShortcutSpell extends Shortcut
     /**
      * Command prefix to "cast" a spell.
      */
+    @NotNull
     private static final String CAST = "cast ";
 
     /**
      * Command prefix to "invoke" a spell.
      */
+    @NotNull
     private static final String INVOKE = "invoke ";
 
     /**
      * The command queue for executing commands.
      */
+    @NotNull
     private final CommandQueue commandQueue;
 
     /**
      * The spell to cast.
      */
+    @NotNull
     private final Spell spell;
 
     /**
      * The command for casting the spell.
      */
+    @NotNull
     private String command = CAST;
 
     /**
      * The {@link SpellListener} attached to {@link #spell}.
      */
+    @NotNull
     private final SpellListener spellListener = new SpellListener()
     {
         /** {@inheritDoc} */
@@ -73,7 +80,7 @@ public class ShortcutSpell extends Shortcut
      * @param commandQueue the command queue for executing commands
      * @param spell the spell to cast
      */
-    public ShortcutSpell(final CommandQueue commandQueue, final Spell spell)
+    public ShortcutSpell(@NotNull final CommandQueue commandQueue, @NotNull final Spell spell)
     {
         this.commandQueue = commandQueue;
         this.spell = spell;
@@ -85,6 +92,7 @@ public class ShortcutSpell extends Shortcut
      *
      * @return The spell.
      */
+    @NotNull
     public Spell getSpell()
     {
         return spell;
@@ -137,6 +145,7 @@ public class ShortcutSpell extends Shortcut
     }
 
     /** {@inheritDoc} */
+    @NotNull
     @Override
     public String getTooltipText()
     {

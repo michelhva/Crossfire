@@ -33,6 +33,8 @@ import java.awt.font.FontRenderContext;
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.ListIterator;
+import org.jetbrains.annotations.NotNull;
+import org.jetbrains.annotations.Nullable;
 
 /**
  * Abstract base class for gui elements implementing text fields.
@@ -54,32 +56,38 @@ public abstract class GUILog extends GUIElement implements GUIScrollable2
     /**
      * All listeners.
      */
+    @NotNull
     private final Collection<ScrollableListener> listeners = new ArrayList<ScrollableListener>();
 
     /**
      * The {@link Buffer} containing all received text messages.
      */
+    @NotNull
     protected final Buffer buffer;
 
     /**
      * The background image drawn below the text contents. Set to
      * <code>null</code> if unused.
      */
+    @Nullable
     private final Image backgroundImage;
 
     /**
      * The {@link Fonts} instance for looking up fonts.
      */
+    @NotNull
     private final Fonts fonts;
 
     /**
      * The rendering state.
      */
+    @NotNull
     private final RenderStateManager renderStateManager;
 
     /**
      * The {@link RenderStateListener} attached to {@link #renderStateManager}.
      */
+    @NotNull
     private final RenderStateListener renderStateListener = new RenderStateListener()
     {
         /** {@inheritDoc} */
@@ -114,7 +122,7 @@ public abstract class GUILog extends GUIElement implements GUIScrollable2
      * unused
      * @param fonts the <code>Fonts</code> instance for looking up fonts
      */
-    protected GUILog(final TooltipManager tooltipManager, final JXCWindowRenderer windowRenderer, final String name, final int x, final int y, final int w, final int h, final Image backgroundImage, final Fonts fonts)
+    protected GUILog(@NotNull final TooltipManager tooltipManager, @NotNull final JXCWindowRenderer windowRenderer, @NotNull final String name, final int x, final int y, final int w, final int h, @Nullable final Image backgroundImage, @NotNull final Fonts fonts)
     {
         super(tooltipManager, windowRenderer, name, x, y, w, h, Transparency.TRANSLUCENT);
         this.backgroundImage = backgroundImage;
@@ -146,7 +154,7 @@ public abstract class GUILog extends GUIElement implements GUIScrollable2
 
     /** {@inheritDoc} */
     @Override
-    protected void render(final Graphics g)
+    protected void render(@NotNull final Graphics g)
     {
         if (renderStateManager == null)
         {
@@ -180,7 +188,7 @@ public abstract class GUILog extends GUIElement implements GUIScrollable2
      * @param y the y-coordinate to start drawing
      * @param line the line to draw
      */
-    private void drawLine(final Graphics g, final int y, final Iterable<Segment> line)
+    private void drawLine(@NotNull final Graphics g, final int y, @NotNull final Iterable<Segment> line)
     {
         for (final Segment segment : line)
         {
@@ -246,14 +254,14 @@ public abstract class GUILog extends GUIElement implements GUIScrollable2
 
     /** {@inheritDoc} */
     @Override
-    public void addScrollableListener(final ScrollableListener listener)
+    public void addScrollableListener(@NotNull final ScrollableListener listener)
     {
         listeners.add(listener);
     }
 
     /** {@inheritDoc} */
     @Override
-    public void removeScrollableListener(final ScrollableListener listener)
+    public void removeScrollableListener(@NotNull final ScrollableListener listener)
     {
         listeners.remove(listener);
     }
@@ -262,6 +270,7 @@ public abstract class GUILog extends GUIElement implements GUIScrollable2
      * Returns the {@link Buffer} instance containing the text messages.
      * @return the buffer instance
      */
+    @NotNull
     public Buffer getBuffer()
     {
         return buffer;

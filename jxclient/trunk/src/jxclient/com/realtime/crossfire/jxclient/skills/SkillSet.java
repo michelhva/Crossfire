@@ -28,6 +28,8 @@ import com.realtime.crossfire.jxclient.window.JXCWindow;
 import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Map;
+import org.jetbrains.annotations.NotNull;
+import org.jetbrains.annotations.Nullable;
 
 /**
  * Maintain the set of skills as sent by the server.
@@ -39,17 +41,20 @@ public class SkillSet
      * Maps stat number to skill instance. Entries may be <code>null</code> if
      * the server did not provide a mapping.
      */
+    @NotNull
     private final Skill[] numberedSkills = new Skill[CrossfireStatsListener.CS_NUM_SKILLS];
 
     /**
      * Maps skill name to skill instance.
      */
+    @NotNull
     private final Map<String, Skill> namedSkills = new HashMap<String, Skill>();
 
     /**
      * The {@link CrossfireSkillInfoListener} attached to the server connection
      * for detecting changed skill info.
      */
+    @NotNull
     private final CrossfireSkillInfoListener crossfireSkillInfoListener = new CrossfireSkillInfoListener()
     {
         /** {@inheritDoc} */
@@ -62,7 +67,7 @@ public class SkillSet
 
         /** {@inheritDoc} */
         @Override
-        public void addSkill(final int skillId, final String skillName)
+        public void addSkill(final int skillId, @NotNull final String skillName)
         {
             SkillSet.this.addSkill(skillId, skillName);
         }
@@ -72,6 +77,7 @@ public class SkillSet
      * The {@link GuiStateListener} for detecting established or dropped
      * connections.
      */
+    @NotNull
     private final GuiStateListener guiStateListener = new GuiStateListener()
     {
         /** {@inheritDoc} */
@@ -97,7 +103,7 @@ public class SkillSet
 
         /** {@inheritDoc} */
         @Override
-        public void connecting(final ClientSocketState clientSocketState)
+        public void connecting(@NotNull final ClientSocketState clientSocketState)
         {
             // ignore
         }
@@ -111,7 +117,7 @@ public class SkillSet
 
         /** {@inheritDoc} */
         @Override
-        public void connectFailed(final String reason)
+        public void connectFailed(@NotNull final String reason)
         {
             // ignore
         }
@@ -122,7 +128,7 @@ public class SkillSet
      * @param crossfireServerConnection the server connection to monitor
      * @param window the window to attach to
      */
-    public SkillSet(final CrossfireServerConnection crossfireServerConnection, final JXCWindow window)
+    public SkillSet(@NotNull final CrossfireServerConnection crossfireServerConnection, @NotNull final JXCWindow window)
     {
         crossfireServerConnection.addCrossfireSkillInfoListener(crossfireSkillInfoListener);
         window.addConnectionStateListener(guiStateListener);
@@ -133,7 +139,7 @@ public class SkillSet
      * @param id The numerical identifier for the new skill.
      * @param skillName The skill name.
      */
-    private void addSkill(final int id, final String skillName)
+    private void addSkill(final int id, @NotNull final String skillName)
     {
         final int index = id-CrossfireStatsListener.CS_STAT_SKILLINFO;
         final Skill oldSkill = numberedSkills[index];
@@ -190,6 +196,7 @@ public class SkillSet
      * @return The Skill object matching the given identifier; may be
      * <code>null</code> for undefined skills.
      */
+    @Nullable
     public Skill getSkill(final int id)
     {
         return numberedSkills[id-CrossfireStatsListener.CS_STAT_SKILLINFO];

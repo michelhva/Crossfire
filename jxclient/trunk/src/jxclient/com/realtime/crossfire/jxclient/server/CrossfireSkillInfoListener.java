@@ -19,9 +19,11 @@
 //
 package com.realtime.crossfire.jxclient.server;
 
+import org.jetbrains.annotations.NotNull;
+
 /**
  * Interface for listeners interested in skill info responses.
- * @author Andreas Kirschbaum 
+ * @author Andreas Kirschbaum
  */
 public interface CrossfireSkillInfoListener
 {
@@ -36,5 +38,5 @@ public interface CrossfireSkillInfoListener
      * @param skillId the skill ID
      * @param skillName the skill name
      */
-    void addSkill(final int skillId, final String skillName);
+    void addSkill(int skillId, @NotNull String skillName);
 }

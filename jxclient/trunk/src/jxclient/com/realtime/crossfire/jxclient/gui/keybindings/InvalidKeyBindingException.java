@@ -19,6 +19,8 @@
 //
 package com.realtime.crossfire.jxclient.gui.keybindings;
 
+import org.jetbrains.annotations.NotNull;
+
 /**
  * Indicates that a key binding is invalid.
  *
@@ -34,7 +36,7 @@ public class InvalidKeyBindingException extends Exception
      *
      * @param reason The error reason.
      */
-    public InvalidKeyBindingException(final String reason)
+    public InvalidKeyBindingException(@NotNull final String reason)
     {
         super(reason);
     }

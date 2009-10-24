@@ -22,6 +22,7 @@ package com.realtime.crossfire.jxclient.skin;
 import java.io.IOException;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
+import org.jetbrains.annotations.NotNull;
 
 /**
  * Parser for integer expressions.
@@ -33,29 +34,33 @@ public class ExpressionParser
      * The identifier evaluating to the width in pixels of the current
      * resolution.
      */
+    @NotNull
     private static final String WIDTH = "WIDTH";
 
     /**
      * The identifier evaluating to the height in pixels of the current
      * resolution.
      */
+    @NotNull
     private static final String HEIGHT = "HEIGHT";
 
     /**
      * Pattern to parse integer constants.
      */
+    @NotNull
     private static final Pattern PATTERN_EXPR = Pattern.compile("([0-9]+|"+WIDTH+"|"+HEIGHT+"|"+WIDTH+"/2|"+HEIGHT+"/2)([-+])(.+)");
 
     /**
      * The current resolution for {@link #WIDTH} and {@link #HEIGHT} constants.
      */
+    @NotNull
     private final Resolution resolution;
 
     /**
      * Creates a new instance.
      * @param resolution the current resolution
      */
-    public ExpressionParser(final Resolution resolution)
+    public ExpressionParser(@NotNull final Resolution resolution)
     {
         this.resolution = resolution;
     }
@@ -67,7 +72,7 @@ public class ExpressionParser
      * @return the integer value
      * @throws IOException if a parsing error occurs
      */
-    public int parseInt(final String str) throws IOException
+    public int parseInt(@NotNull final String str) throws IOException
     {
         try
         {
@@ -132,7 +137,7 @@ public class ExpressionParser
      * @return the integer value
      * @throws NumberFormatException if the string cannot be parsed
      */
-    private int parseIntegerConstant(final String str)
+    private int parseIntegerConstant(@NotNull final String str)
     {
         try
         {

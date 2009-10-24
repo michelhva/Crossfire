@@ -27,6 +27,8 @@ import javax.sound.sampled.DataLine;
 import javax.sound.sampled.Line;
 import javax.sound.sampled.LineUnavailableException;
 import javax.sound.sampled.UnsupportedAudioFileException;
+import org.jetbrains.annotations.NotNull;
+import org.jetbrains.annotations.Nullable;
 
 /**
  * Allocates new sound clips.
@@ -44,7 +46,8 @@ public class ClipCache
      *
      * @return The new clip, or <code>null</code> if an error occurs.
      */
-    public static DataLine allocateClip(final String name, final String action)
+    @Nullable
+    public static DataLine allocateClip(@Nullable final String name, @NotNull final String action)
     {
         return newClip(name, action);
     }
@@ -54,7 +57,7 @@ public class ClipCache
      *
      * @param clip The clip to deallocate.
      */
-    public static void freeClip(final Line clip)
+    public static void freeClip(@NotNull final Line clip)
     {
         clip.close();
     }
@@ -68,7 +71,8 @@ public class ClipCache
      *
      * @return The new clip, or <code>null</code> if an error occurs.
      */
-    private static DataLine newClip(final String name, final String action)
+    @Nullable
+    private static DataLine newClip(@Nullable final String name, @NotNull final String action)
     {
         try
         {

@@ -34,6 +34,8 @@ import junit.framework.Test;
 import junit.framework.TestCase;
 import junit.framework.TestSuite;
 import junit.textui.TestRunner;
+import org.jetbrains.annotations.NotNull;
+import org.jetbrains.annotations.Nullable;
 
 /**
  * Regression tests for class {@link RenderState}.
@@ -47,8 +49,10 @@ public class RenderStateTest extends TestCase
      */
     private static final int HEIGHT = 100;
 
+    @Nullable
     private RenderState rs = null;
 
+    @Nullable
     private Buffer buffer = null;
 
     /**
@@ -56,11 +60,12 @@ public class RenderStateTest extends TestCase
      *
      * @param name the test case name
      */
-    public RenderStateTest(final String name)
+    public RenderStateTest(@NotNull final String name)
     {
         super(name);
     }
 
+    @NotNull
     public static Test suite()
     {
         return new TestSuite(RenderStateTest.class);
@@ -71,7 +76,7 @@ public class RenderStateTest extends TestCase
      *
      * @param args The command line arguments (ignored).
      */
-    public static void main(final String[] args)
+    public static void main(@NotNull final String[] args)
     {
         TestRunner.run(suite());
     }
@@ -182,6 +187,7 @@ public class RenderStateTest extends TestCase
         assertEquals(formatState(expectedTopIndex, expectedTopOffset, expectedScrollPos), formatState(rs.getTopIndex(), rs.getTopOffset(), rs.getScrollPos()));
     }
 
+    @NotNull
     private String formatState(final int topIndex, final int topOffset, final int scrollPos)
     {
         return "top="+topIndex+"/"+topOffset+" pos="+scrollPos+"/"+buffer.getTotalHeight();
@@ -229,7 +235,7 @@ public class RenderStateTest extends TestCase
 
                 /** {@inheritDoc} */
                 @Override
-                public void linesRemoved(final List<Line> lines)
+                public void linesRemoved(@NotNull final List<Line> lines)
                 {
                     rs.linesRemoved(buffer, lines);
                 }

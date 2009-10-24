@@ -20,6 +20,8 @@
 package com.realtime.crossfire.jxclient.gui.keybindings;
 
 import com.realtime.crossfire.jxclient.window.GUICommandList;
+import org.jetbrains.annotations.NotNull;
+import org.jetbrains.annotations.Nullable;
 
 /**
  * A {@link KeyBinding} that matches by key code/modifiers pair.
@@ -50,7 +52,7 @@ public class KeyCodeKeyBinding extends KeyBinding
      * @param isDefault Whether the key binding is a "default" binding which
      * should not be saved.
      */
-    public KeyCodeKeyBinding(final int keyCode, final int modifiers, final GUICommandList commands, final boolean isDefault)
+    public KeyCodeKeyBinding(final int keyCode, final int modifiers, @NotNull final GUICommandList commands, final boolean isDefault)
     {
         super(commands, isDefault);
         this.keyCode = keyCode;
@@ -79,7 +81,7 @@ public class KeyCodeKeyBinding extends KeyBinding
 
     /** {@inheritDoc} */
     @Override
-    public boolean equals(final Object obj)
+    public boolean equals(@Nullable final Object obj)
     {
         if (obj == null || !(obj instanceof KeyCodeKeyBinding))
         {
@@ -94,7 +96,7 @@ public class KeyCodeKeyBinding extends KeyBinding
     @Override
     public int hashCode()
     {
-        return keyCode^(modifiers<<16); 
+        return keyCode^(modifiers<<16);
     }
 
     /** {@inheritDoc} */

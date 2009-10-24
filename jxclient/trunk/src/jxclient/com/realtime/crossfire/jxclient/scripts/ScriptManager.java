@@ -32,6 +32,7 @@ import java.util.Collection;
 import java.util.HashSet;
 import java.util.Set;
 import java.util.concurrent.CopyOnWriteArraySet;
+import org.jetbrains.annotations.NotNull;
 
 /**
  * Maintains currently running script processes.
@@ -42,41 +43,49 @@ public class ScriptManager
     /**
      * The {@link CommandQueue} for sending commands.
      */
+    @NotNull
     private final CommandQueue commandQueue;
 
     /**
      * The {@link CrossfireServerConnection} instance.
      */
+    @NotNull
     private final CrossfireServerConnection crossfireServerConnection;
 
     /**
      * The {@link Stats} instance to watch.
      */
+    @NotNull
     private final Stats stats;
 
     /**
      * The {@link ItemsManager} instance to use.
      */
+    @NotNull
     private final ItemsManager itemsManager;
 
     /**
      * The {@link SpellsManager} instance to use.
      */
+    @NotNull
     private final SpellsManager spellsManager;
 
     /**
      * The {@link CfMapUpdater} instance to use.
      */
+    @NotNull
     private final CfMapUpdater mapUpdater;
 
     /**
      * The {@link SkillSet} for looking up skill names.
      */
+    @NotNull
     private final SkillSet skillSet;
 
     /**
      * All running {@link ScriptProcess}es.
      */
+    @NotNull
     private final Collection<ScriptProcess> scriptProcesses = new CopyOnWriteArraySet<ScriptProcess>();
 
     /**
@@ -94,7 +103,7 @@ public class ScriptManager
      * @param mapUpdater the map updater instance to use
      * @param skillSet the skill set for looking up skill names
      */
-    public ScriptManager(final CommandQueue commandQueue, final CrossfireServerConnection crossfireServerConnection, final Stats stats, final ItemsManager itemsManager, final SpellsManager spellsManager, final CfMapUpdater mapUpdater, final SkillSet skillSet)
+    public ScriptManager(@NotNull final CommandQueue commandQueue, @NotNull final CrossfireServerConnection crossfireServerConnection, @NotNull final Stats stats, @NotNull final ItemsManager itemsManager, @NotNull final SpellsManager spellsManager, @NotNull final CfMapUpdater mapUpdater, @NotNull final SkillSet skillSet)
     {
         this.commandQueue = commandQueue;
         this.crossfireServerConnection = crossfireServerConnection;
@@ -109,7 +118,7 @@ public class ScriptManager
      * Creates a new script instance.
      * @param command the script command including arguments
      */
-    public void newScript(final String command)
+    public void newScript(@NotNull final String command)
     {
         final DefaultScriptProcess scriptProcess;
         try
@@ -151,7 +160,8 @@ public class ScriptManager
      * against; an empty string matches all scripts
      * @return the matching scripts, possibly empty
      */
-    public Set<ScriptProcess> getScripts(final String partialScriptName)
+    @NotNull
+    public Set<ScriptProcess> getScripts(@NotNull final String partialScriptName)
     {
         try
         {
@@ -168,6 +178,7 @@ public class ScriptManager
      * @param scriptId the script ID
      * @return the matching scripts, possibly empty
      */
+    @NotNull
     private Set<ScriptProcess> getScriptByScriptId(final int scriptId)
     {
         final Set<ScriptProcess> result = new HashSet<ScriptProcess>();
@@ -188,7 +199,8 @@ public class ScriptManager
      * matches all scripts
      * @return the matching scripts, possibly empty
      */
-    private Set<ScriptProcess> getScriptsByName(final CharSequence partialScriptName)
+    @NotNull
+    private Set<ScriptProcess> getScriptsByName(@NotNull final CharSequence partialScriptName)
     {
         final Set<ScriptProcess> result = new HashSet<ScriptProcess>();
         for (final ScriptProcess scriptProcess : scriptProcesses)

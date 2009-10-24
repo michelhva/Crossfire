@@ -22,6 +22,7 @@ package com.realtime.crossfire.jxclient.items;
 
 import java.lang.reflect.InvocationTargetException;
 import javax.swing.SwingUtilities;
+import org.jetbrains.annotations.NotNull;
 
 /**
  * A scheduler for synchronous event notifications. Notifications are triggered
@@ -49,17 +50,20 @@ public class EventScheduler
     /**
      * The {@link Runnable} to notify.
      */
+    @NotNull
     private final Runnable eventSchedulerCallback;
 
     /**
      * The object used to synchronize access to {@link #nextAction} and {@link
      * #nextActionNotBefore}.
      */
+    @NotNull
     private final Object sync = new Object();
 
     /**
      * The thread running {@link #runnable}.
      */
+    @NotNull
     private final Thread thread;
 
     /**
@@ -77,6 +81,7 @@ public class EventScheduler
      * The {@link Runnable} delivering notifications through {@link
      * #eventSchedulerCallback}.
      */
+    @NotNull
     private final Runnable runnable = new Runnable()
     {
         /** {@inheritDoc} */
@@ -140,7 +145,7 @@ public class EventScheduler
      * @param afterEventDelay the "after-event" delay
      * @param eventSchedulerCallback the callback to notify
      */
-    public EventScheduler(final int delay, final int afterEventDelay, final Runnable eventSchedulerCallback)
+    public EventScheduler(final int delay, final int afterEventDelay, @NotNull final Runnable eventSchedulerCallback)
     {
         this.delay = delay;
         this.afterEventDelay = 1/*afterEventDelay*/;

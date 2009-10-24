@@ -29,6 +29,7 @@ import junit.framework.Test;
 import junit.framework.TestCase;
 import junit.framework.TestSuite;
 import junit.textui.TestRunner;
+import org.jetbrains.annotations.NotNull;
 
 /**
  * Regression tests for {@link PacketWatcher}.
@@ -40,7 +41,7 @@ public class PacketWatcherTest extends TestCase
      * Creates a new instance.
      * @param name the test case name
      */
-    public PacketWatcherTest(final String name)
+    public PacketWatcherTest(@NotNull final String name)
     {
         super(name);
     }
@@ -49,6 +50,7 @@ public class PacketWatcherTest extends TestCase
      * Creates a new test suite.
      * @return the test suite
      */
+    @NotNull
     public static Test suite()
     {
         return new TestSuite(PacketWatcherTest.class);
@@ -58,7 +60,7 @@ public class PacketWatcherTest extends TestCase
      * Runs the regression tests.
      * @param args the command line arguments (ignored)
      */
-    public static void main(final String[] args)
+    public static void main(@NotNull final String[] args)
     {
         TestRunner.run(suite());
     }
@@ -73,14 +75,14 @@ public class PacketWatcherTest extends TestCase
         {
             /** {@inheritDoc} */
             @Override
-            public void addPacketWatcherListener(final ReceivedPacketListener listener)
+            public void addPacketWatcherListener(@NotNull final ReceivedPacketListener listener)
             {
                 listeners.add(listener);
             }
 
             /** {@inheritDoc} */
             @Override
-            public void removePacketWatcherListener(final ReceivedPacketListener listener)
+            public void removePacketWatcherListener(@NotNull final ReceivedPacketListener listener)
             {
                 listeners.remove(listener);
             }
@@ -90,7 +92,7 @@ public class PacketWatcherTest extends TestCase
         {
             /** {@inheritDoc} */
             @Override
-            public void commandSent(final String cmd)
+            public void commandSent(@NotNull final String cmd)
             {
                 sb.append(cmd).append('\n');
             }

@@ -19,6 +19,8 @@
 //
 package com.realtime.crossfire.jxclient.gui.gauge;
 
+import org.jetbrains.annotations.NotNull;
+
 /**
  * Interface which is implemented by all listener classes.
  * @author Andreas Kirschbaum
@@ -33,5 +35,5 @@ public interface GUIGaugeListener
      * @param labelText the label text
      * @param tooltipText the tooltip suffix
      */
-    void setValues(int curValue, int minValue, int maxValue, String labelText, String tooltipText);
+    void setValues(int curValue, int minValue, int maxValue, @NotNull String labelText, @NotNull String tooltipText);
 }

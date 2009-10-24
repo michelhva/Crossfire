@@ -25,6 +25,7 @@ import com.realtime.crossfire.jxclient.server.CrossfireQueryListener;
 import com.realtime.crossfire.jxclient.server.CrossfireServerConnection;
 import com.realtime.crossfire.jxclient.server.MessageTypes;
 import java.awt.Color;
+import org.jetbrains.annotations.NotNull;
 
 /**
  * Adds drawinfo, drawextinfo, and query messages to a {@link Buffer} instance.
@@ -40,6 +41,7 @@ public class MessageBufferUpdater
     /**
      * Maps color index to color.
      */
+    @NotNull
     private final Color[] colors =
     {
         Color.BLACK,            // black
@@ -60,6 +62,7 @@ public class MessageBufferUpdater
     /**
      * The colors names corresponding to {@link #colors}.
      */
+    @NotNull
     private static final String[] COLOR_NAMES =
     {
         "black",
@@ -80,21 +83,25 @@ public class MessageBufferUpdater
     /**
      * The {@link CrossfireServerConnection} to monitor.
      */
+    @NotNull
     private final CrossfireServerConnection crossfireServerConnection;
 
     /**
      * The {@link Parser} instance for parsing drawextinfo messages.
      */
+    @NotNull
     private final Parser parser = new Parser();
 
     /**
      * The color to use for invalid colors indices.
      */
+    @NotNull
     private final Color defaultColor;
 
     /**
      * The buffer to update.
      */
+    @NotNull
     private final Buffer buffer;
 
     /**
@@ -105,11 +112,12 @@ public class MessageBufferUpdater
     /**
      * The {@link CrossfireQueryListener} registered to receive query commands.
      */
+    @NotNull
     private final CrossfireQueryListener crossfireQueryListener = new CrossfireQueryListener()
     {
         /** {@inheritDoc} */
         @Override
-        public void commandQueryReceived(final String prompt, final int queryType)
+        public void commandQueryReceived(@NotNull final String prompt, final int queryType)
         {
             if (isTypeShown(MessageTypes.MSG_TYPE_QUERY))
             {
@@ -122,11 +130,12 @@ public class MessageBufferUpdater
      * The {@link CrossfireDrawextinfoListener} registered to receive
      * drawextinfo commands.
      */
+    @NotNull
     private final CrossfireDrawextinfoListener crossfireDrawextinfoListener = new CrossfireDrawextinfoListener()
     {
         /** {@inheritDoc} */
         @Override
-        public void commandDrawextinfoReceived(final int color, final int type, final int subtype, final String message)
+        public void commandDrawextinfoReceived(final int color, final int type, final int subtype, @NotNull final String message)
         {
             if (type == MessageTypes.MSG_TYPE_QUERY // should not happen; but if it happens just display it
             || isTypeShown(type))
@@ -147,11 +156,12 @@ public class MessageBufferUpdater
      * The {@link CrossfireDrawinfoListener} registered to receive drawinfo
      * commands.
      */
+    @NotNull
     private final CrossfireDrawinfoListener crossfireDrawinfoListener = new CrossfireDrawinfoListener()
     {
         /** {@inheritDoc} */
         @Override
-        public void commandDrawinfoReceived(final String text, final int type)
+        public void commandDrawinfoReceived(@NotNull final String text, final int type)
         {
             // guess category from message color
             final int messageType;
@@ -183,7 +193,7 @@ public class MessageBufferUpdater
      * @param defaultColor the default color to use for undefined colors
      * indices
      */
-    public MessageBufferUpdater(final CrossfireServerConnection crossfireServerConnection, final Buffer buffer, final Color defaultColor)
+    public MessageBufferUpdater(@NotNull final CrossfireServerConnection crossfireServerConnection, @NotNull final Buffer buffer, @NotNull final Color defaultColor)
     {
         this.crossfireServerConnection = crossfireServerConnection;
         this.buffer = buffer;
@@ -205,6 +215,7 @@ public class MessageBufferUpdater
      * @param index the color index to look up
      * @return the color
      */
+    @NotNull
     private Color findColor(final int index)
     {
         try
@@ -222,6 +233,7 @@ public class MessageBufferUpdater
      * @param index the color index
      * @return the color name
      */
+    @NotNull
     public static String getColorName(final int index)
     {
         try
@@ -239,7 +251,7 @@ public class MessageBufferUpdater
      * @param index the color index to change
      * @param color the color to map to
      */
-    public void setColor(final int index, final Color color)
+    public void setColor(final int index, @NotNull final Color color)
     {
         colors[index] = color;
     }

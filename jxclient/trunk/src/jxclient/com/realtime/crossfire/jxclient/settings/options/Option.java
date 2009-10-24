@@ -20,6 +20,7 @@
 package com.realtime.crossfire.jxclient.settings.options;
 
 import javax.swing.event.EventListenerList;
+import org.jetbrains.annotations.NotNull;
 
 /**
  * The base class for all options. It manages a set of {@link OptionListener}s.
@@ -31,6 +32,7 @@ public abstract class Option
     /**
      * The listeners to be notified.
      */
+    @NotNull
     private final EventListenerList listeners = new EventListenerList();
 
     /**
@@ -49,7 +51,7 @@ public abstract class Option
      *
      * @param listener The listener to add.
      */
-    public void addOptionListener(final OptionListener listener)
+    public void addOptionListener(@NotNull final OptionListener listener)
     {
         listeners.add(OptionListener.class, listener);
     }
@@ -58,7 +60,7 @@ public abstract class Option
      * Removes a listener for state changes.
      * @param listener the listener to remove
      */
-    public void removeOptionListener(final OptionListener listener)
+    public void removeOptionListener(@NotNull final OptionListener listener)
     {
         listeners.remove(OptionListener.class, listener);
     }

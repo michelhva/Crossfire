@@ -20,6 +20,7 @@
 package com.realtime.crossfire.jxclient.gui.commands;
 
 import com.realtime.crossfire.jxclient.gui.gui.GUIElement;
+import org.jetbrains.annotations.NotNull;
 
 /**
  * A {@link GUICommand} which hides a target {@link GUIElement}.
@@ -30,13 +31,14 @@ public class HideCommand implements GUICommand
     /**
      * The gui element to hide.
      */
+    @NotNull
     private final GUIElement target;
 
     /**
      * Creates a new instance.
      * @param target The gui element to hide.
      */
-    public HideCommand(final GUIElement target)
+    public HideCommand(@NotNull final GUIElement target)
     {
         this.target = target;
     }

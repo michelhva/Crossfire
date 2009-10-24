@@ -19,6 +19,8 @@
 //
 package com.realtime.crossfire.jxclient.faces;
 
+import org.jetbrains.annotations.NotNull;
+
 /**
  * A simple implementation of the Scale2x algorithm for scaling raw image data.
  *
@@ -27,9 +29,11 @@ package com.realtime.crossfire.jxclient.faces;
 public class RawScale2x
 {
     /** The source image data. */
+    @NotNull
     private final int[] srcImage;
 
     /** The destination image data. */
+    @NotNull
     private final int[] dstImage;
 
     /** The width of the source image. */
@@ -48,7 +52,7 @@ public class RawScale2x
      *
      * @param dataHeight The height of the source image.
      */
-    public RawScale2x(final int[] imageData, final int dataWidth, final int dataHeight)
+    public RawScale2x(@NotNull final int[] imageData, final int dataWidth, final int dataHeight)
     {
         width = dataWidth;
         height = dataHeight;
@@ -147,6 +151,7 @@ public class RawScale2x
      * @return An array of pixels 4 times the size of the input array
      * containing the smoothly scaled image.
      */
+    @NotNull
     public int[] getScaledData()
     {
         for (int x = 0; x < width; x++)

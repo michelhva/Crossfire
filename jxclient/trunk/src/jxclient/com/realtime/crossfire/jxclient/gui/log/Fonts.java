@@ -20,6 +20,7 @@
 package com.realtime.crossfire.jxclient.gui.log;
 
 import java.awt.Font;
+import org.jetbrains.annotations.NotNull;
 
 /**
  * Manage a set of fonts.
@@ -32,21 +33,25 @@ public class Fonts
      * The font to use for {@link FontID#PRINT}, {@link FontID#HAND}, and
      * {@link FontID#STRANGE} text.
      */
+    @NotNull
     private final Font fontPrint;
 
     /**
      * The font to use for {@link FontID#FIXED} text.
      */
+    @NotNull
     private final Font fontFixed;
 
     /**
      * The font to use for {@link FontID#FIXED} text which has bold enabled.
      */
+    @NotNull
     private final Font fontFixedBold;
 
     /**
      * The font to use for {@link FontID#ARCANE} text.
      */
+    @NotNull
     private final Font fontArcane;
 
     /**
@@ -62,7 +67,7 @@ public class Fonts
      *
      * @param fontArcane The font to use for <code>FontID.ARCANE</code> text.
      */
-    public Fonts(final Font fontPrint, final Font fontFixed, final Font fontFixedBold, final Font fontArcane)
+    public Fonts(@NotNull final Font fontPrint, @NotNull final Font fontFixed, @NotNull final Font fontFixedBold, @NotNull final Font fontArcane)
     {
         this.fontPrint = fontPrint;
         this.fontFixed = fontFixed;
@@ -76,6 +81,7 @@ public class Fonts
      *
      * @return The font.
      */
+    @NotNull
     public Font getFontPrint()
     {
         return fontPrint;
@@ -86,6 +92,7 @@ public class Fonts
      *
      * @return The font.
      */
+    @NotNull
     public Font getFontFixed()
     {
         return fontFixed;
@@ -97,6 +104,7 @@ public class Fonts
      *
      * @return The font.
      */
+    @NotNull
     public Font getFontFixedBold()
     {
         return fontFixedBold;
@@ -107,6 +115,7 @@ public class Fonts
      *
      * @return The font.
      */
+    @NotNull
     public Font getFontArcane()
     {
         return fontArcane;

@@ -22,6 +22,7 @@ package com.realtime.crossfire.jxclient.commands;
 import com.realtime.crossfire.jxclient.gui.log.Buffer;
 import com.realtime.crossfire.jxclient.server.CrossfireServerConnection;
 import com.realtime.crossfire.jxclient.window.JXCWindowRenderer;
+import org.jetbrains.annotations.NotNull;
 
 /**
  * Implements the command "clear". It clears the active message window.
@@ -32,6 +33,7 @@ public class ClearCommand extends AbstractCommand
     /**
      * The {@link JXCWindowRenderer} to affect.
      */
+    @NotNull
     private final JXCWindowRenderer windowRenderer;
 
     /**
@@ -39,7 +41,7 @@ public class ClearCommand extends AbstractCommand
      * @param windowRenderer the window renderer to affect
      * @param crossfireServerConnection the connection instance
      */
-    public ClearCommand(final JXCWindowRenderer windowRenderer, final CrossfireServerConnection crossfireServerConnection)
+    public ClearCommand(@NotNull final JXCWindowRenderer windowRenderer, @NotNull final CrossfireServerConnection crossfireServerConnection)
     {
         super(crossfireServerConnection);
         this.windowRenderer = windowRenderer;
@@ -54,7 +56,7 @@ public class ClearCommand extends AbstractCommand
 
     /** {@inheritDoc} */
     @Override
-    public void execute(final String args)
+    public void execute(@NotNull final String args)
     {
         if (args.length() != 0)
         {

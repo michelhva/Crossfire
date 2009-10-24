@@ -19,6 +19,8 @@
 //
 package com.realtime.crossfire.jxclient.server;
 
+import org.jetbrains.annotations.NotNull;
+
 /**
  * Interface for listeners interested in spell information related messages
  * received from the Crossfire server.
@@ -49,7 +51,7 @@ public interface CrossfireSpellListener
      * @param name the spell name
      * @param message the spell description
      */
-    void addSpell(int tag, int level, int castingTime, int mana, int grace, int damage, int skill, int path, int face, String name, String message);
+    void addSpell(int tag, int level, int castingTime, int mana, int grace, int damage, int skill, int path, int face, @NotNull String name, @NotNull String message);
 
     /**
      * A "delspell" command has been received.

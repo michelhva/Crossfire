@@ -21,6 +21,7 @@ package com.realtime.crossfire.jxclient.sound;
 
 import com.realtime.crossfire.jxclient.server.CrossfireServerConnection;
 import com.realtime.crossfire.jxclient.server.CrossfireSoundListener;
+import org.jetbrains.annotations.NotNull;
 
 /**
  * Monitors sound and sound2 commands received from the server to generate
@@ -33,11 +34,13 @@ public class SoundWatcher
     /**
      * The {@link SoundManager} instance to watch.
      */
+    @NotNull
     private final SoundManager soundManager;
 
     /**
      * The crossfire sound listener.
      */
+    @NotNull
     private final CrossfireSoundListener crossfireSoundListener = new CrossfireSoundListener()
     {
         /** {@inheritDoc} */
@@ -48,7 +51,7 @@ public class SoundWatcher
         }
 
         @Override
-        public void commandSound2Received(final int x, final int y, final int dir, final int volume, final int type, final String action, final String name)
+        public void commandSound2Received(final int x, final int y, final int dir, final int volume, final int type, @NotNull final String action, @NotNull final String name)
         {
             soundManager.playClip(Sounds.CHARACTER, name, action);
         }
@@ -59,7 +62,7 @@ public class SoundWatcher
      * @param crossfireServerConnection the connection to watch
      * @param soundManager the sound manager instance to watch
      */
-    public SoundWatcher(final CrossfireServerConnection crossfireServerConnection, final SoundManager soundManager)
+    public SoundWatcher(@NotNull final CrossfireServerConnection crossfireServerConnection, @NotNull final SoundManager soundManager)
     {
         crossfireServerConnection.addCrossfireSoundListener(crossfireSoundListener);
         this.soundManager = soundManager;

@@ -19,6 +19,8 @@
 //
 package com.realtime.crossfire.jxclient.gui.gui;
 
+import org.jetbrains.annotations.NotNull;
+
 /**
  * Interface for clients interested in auto-close events of {@link Gui}
  * instances.
@@ -30,5 +32,5 @@ public interface GuiAutoCloseListener
      * Called when a dialog has been auto-closed.
      * @param gui the dialog
      */
-    void autoClosed(Gui gui);
+    void autoClosed(@NotNull Gui gui);
 }

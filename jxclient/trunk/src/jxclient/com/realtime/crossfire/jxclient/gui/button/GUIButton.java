@@ -28,6 +28,8 @@ import java.awt.Graphics;
 import java.awt.Image;
 import java.awt.Transparency;
 import java.awt.image.BufferedImage;
+import org.jetbrains.annotations.NotNull;
+import org.jetbrains.annotations.Nullable;
 
 /**
  *
@@ -42,25 +44,28 @@ public class GUIButton extends AbstractButton
      */
     private static final long serialVersionUID = 1;
 
+    @NotNull
     private final Image imageUp;
 
+    @NotNull
     private final Image imageDown;
 
+    @Nullable
     private final String text;
 
+    @Nullable
     private final Font font;
 
     private final int textX;
 
     private final int textY;
 
+    @Nullable
     private final Color color;
 
-    public GUIButton(final TooltipManager tooltipManager, final JXCWindowRenderer windowRenderer, final String name, final int x, final int y, final int w, final int h, final BufferedImage imageUp, final BufferedImage imageDown, final String text, final Font font, final Color color, final int textX, final int textY, final boolean autoRepeat, final GUICommandList commandList)
+    public GUIButton(@NotNull final TooltipManager tooltipManager, @NotNull final JXCWindowRenderer windowRenderer, @NotNull final String name, final int x, final int y, final int w, final int h, @NotNull final BufferedImage imageUp, @NotNull final BufferedImage imageDown, @Nullable final String text, @Nullable final Font font, @Nullable final Color color, final int textX, final int textY, final boolean autoRepeat, @NotNull final GUICommandList commandList)
     {
         super(tooltipManager, windowRenderer, name, x, y, w, h, Transparency.TRANSLUCENT, autoRepeat, commandList);
-        if (imageUp == null) throw new IllegalArgumentException();
-        if (imageDown == null) throw new IllegalArgumentException();
         if (imageUp.getWidth() != imageDown.getWidth()) throw new IllegalArgumentException();
         if (imageUp.getHeight() != imageDown.getHeight()) throw new IllegalArgumentException();
         this.imageUp = imageUp;
@@ -88,7 +93,7 @@ public class GUIButton extends AbstractButton
 
     /** {@inheritDoc} */
     @Override
-    protected void render(final Graphics g)
+    protected void render(@NotNull final Graphics g)
     {
         g.setFont(font);
         g.setColor(color);

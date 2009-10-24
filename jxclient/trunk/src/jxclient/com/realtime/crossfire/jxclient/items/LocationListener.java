@@ -20,6 +20,7 @@
 package com.realtime.crossfire.jxclient.items;
 
 import java.util.EventListener;
+import org.jetbrains.annotations.Nullable;
 
 /**
  * Interface for listeners for changes of item locations.
@@ -36,5 +37,5 @@ public interface LocationListener extends EventListener
      * @param item the new item in the location; will be <code>null</code> if
      * the location is empty
      */
-    void locationModified(int index, CfItem item);
+    void locationModified(int index, @Nullable CfItem item);
 }

@@ -20,6 +20,7 @@
 package com.realtime.crossfire.jxclient.gui.log;
 
 import java.util.List;
+import org.jetbrains.annotations.NotNull;
 
 /**
  * Interface for listeners for changes of {@link Buffer} contents.
@@ -50,5 +51,5 @@ public interface BufferListener
      * @param lines The lines that have been removed from the beginning of the
      * buffer.
      */
-    void linesRemoved(List<Line> lines);
+    void linesRemoved(@NotNull List<Line> lines);
 }

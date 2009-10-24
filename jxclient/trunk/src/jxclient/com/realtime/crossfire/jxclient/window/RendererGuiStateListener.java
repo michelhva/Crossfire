@@ -19,6 +19,8 @@
 //
 package com.realtime.crossfire.jxclient.window;
 
+import org.jetbrains.annotations.NotNull;
+
 /**
  * Interface for listeners interested in gui state changes.
  *
@@ -31,5 +33,5 @@ public interface RendererGuiStateListener
      *
      * @param rendererGuiState The new guiState.
      */
-    void guiStateChanged(RendererGuiState rendererGuiState);
+    void guiStateChanged(@NotNull RendererGuiState rendererGuiState);
 }

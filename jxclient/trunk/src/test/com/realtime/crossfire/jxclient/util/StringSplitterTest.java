@@ -23,6 +23,7 @@ import junit.framework.Test;
 import junit.framework.TestCase;
 import junit.framework.TestSuite;
 import junit.textui.TestRunner;
+import org.jetbrains.annotations.NotNull;
 
 /**
  * Regression tests for class {@link StringSplitter}.
@@ -34,7 +35,7 @@ public class StringSplitterTest extends TestCase
      * Creates a new instance.
      * @param name the test case name
      */
-    public StringSplitterTest(final String name)
+    public StringSplitterTest(@NotNull final String name)
     {
         super(name);
     }
@@ -43,6 +44,7 @@ public class StringSplitterTest extends TestCase
      * Creates a new test suite.
      * @return the test suite
      */
+    @NotNull
     public static Test suite()
     {
         return new TestSuite(StringSplitterTest.class);
@@ -52,7 +54,7 @@ public class StringSplitterTest extends TestCase
      * Runs the regression tests.
      * @param args the command line arguments (ignored)
      */
-    public static void main(final String[] args)
+    public static void main(@NotNull final String[] args)
     {
         TestRunner.run(suite());
     }

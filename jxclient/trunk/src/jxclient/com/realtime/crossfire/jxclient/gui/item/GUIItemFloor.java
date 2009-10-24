@@ -32,6 +32,8 @@ import com.realtime.crossfire.jxclient.server.CrossfireServerConnection;
 import com.realtime.crossfire.jxclient.window.JXCWindowRenderer;
 import java.awt.Image;
 import java.util.List;
+import org.jetbrains.annotations.NotNull;
+import org.jetbrains.annotations.Nullable;
 
 /**
  * A {@link GUIElement} representing an in-game object in the ground view.
@@ -47,21 +49,25 @@ public class GUIItemFloor extends GUIItemItem
     /**
      * The command queue for sending commands.
      */
+    @NotNull
     private final CommandQueue commandQueue;
 
     /**
      * The connection instance.
      */
+    @NotNull
     private final CrossfireServerConnection crossfireServerConnection;
 
     /**
      * The {@link ItemsManager} instance to watch.
      */
+    @NotNull
     private final ItemsManager itemsManager;
 
     /**
      * The {@link FacesManager} instance to use.
      */
+    @NotNull
     private final FacesManager facesManager;
 
     /**
@@ -86,11 +92,12 @@ public class GUIItemFloor extends GUIItemItem
      * The {@link LocationListener} used to detect items added to or removed
      * from this floor tile.
      */
+    @NotNull
     private final LocationListener floorLocationListener = new LocationListener()
     {
         /** {@inheritDoc} */
         @Override
-        public void locationModified(final int index, final CfItem item)
+        public void locationModified(final int index, @Nullable final CfItem item)
         {
             if (containerTag != 0)
             {
@@ -109,6 +116,7 @@ public class GUIItemFloor extends GUIItemItem
      * The {@link CurrentFloorListener} used to be informed when the current
      * floor location changes.
      */
+    @NotNull
     private final CurrentFloorListener currentFloorListener = new CurrentFloorListener()
     {
         /** {@inheritDoc} */
@@ -137,7 +145,7 @@ public class GUIItemFloor extends GUIItemItem
      * @param itemsManager the items manager instance to use
      * @param facesManager the faces manager instance to use
      */
-    public GUIItemFloor(final TooltipManager tooltipManager, final JXCWindowRenderer windowRenderer, final CommandQueue commandQueue, final String name, final int x, final int y, final int w, final int h, final ItemPainter itemPainter, final int index, final CrossfireServerConnection crossfireServerConnection, final ItemsManager itemsManager, final FacesManager facesManager)
+    public GUIItemFloor(@NotNull final TooltipManager tooltipManager, @NotNull final JXCWindowRenderer windowRenderer, @NotNull final CommandQueue commandQueue, @NotNull final String name, final int x, final int y, final int w, final int h, @NotNull final ItemPainter itemPainter, final int index, @NotNull final CrossfireServerConnection crossfireServerConnection, @NotNull final ItemsManager itemsManager, @NotNull final FacesManager facesManager)
     {
         super(tooltipManager, windowRenderer, name, x, y, w, h, crossfireServerConnection, itemPainter, facesManager);
         this.commandQueue = commandQueue;
@@ -299,8 +307,9 @@ public class GUIItemFloor extends GUIItemItem
     }
 
     /** {@inheritDoc} */
+    @NotNull
     @Override
-    protected Image getFace(final CfItem item)
+    protected Image getFace(@NotNull final CfItem item)
     {
         if (!item.isItemGroupButton())
         {

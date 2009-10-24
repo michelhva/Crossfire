@@ -31,6 +31,7 @@ import java.io.LineNumberReader;
 import java.io.OutputStreamWriter;
 import java.util.Map;
 import java.util.TreeMap;
+import org.jetbrains.annotations.NotNull;
 
 /**
  * Maintains a set of key/value pairs. The values are stored in a flat file.
@@ -42,11 +43,13 @@ public class Settings
     /**
      * The file for loading/saving values.
      */
+    @NotNull
     private final File file;
 
     /**
      * The stored values. Maps key name to value.
      */
+    @NotNull
     private final Map<String, String> values = new TreeMap<String, String>();
 
     /**
@@ -59,7 +62,7 @@ public class Settings
      *
      * @param file The file for loading/saving values.
      */
-    public Settings(final File file)
+    public Settings(@NotNull final File file)
     {
         this.file = file;
         loadValues();
@@ -76,7 +79,7 @@ public class Settings
      *
      * @return The value.
      */
-    public String getString(final String key, final String defaultValue)
+    public String getString(@NotNull final String key, @NotNull final String defaultValue)
     {
         final String value = values.get(key);
         return value != null ? value : defaultValue;
@@ -92,7 +95,7 @@ public class Settings
      *
      * @return The value.
      */
-    public boolean getBoolean(final String key, final boolean defaultValue)
+    public boolean getBoolean(@NotNull final String key, final boolean defaultValue)
     {
         final String value = getString(key, Boolean.toString(defaultValue));
         try
@@ -115,7 +118,7 @@ public class Settings
      *
      * @return The value.
      */
-    public int getInt(final String key, final int defaultValue)
+    public int getInt(@NotNull final String key, final int defaultValue)
     {
         return NumberParser.parseInt(getString(key, Integer.toString(defaultValue)), defaultValue);
     }
@@ -130,7 +133,7 @@ public class Settings
      *
      * @return The value.
      */
-    public long getLong(final String key, final long defaultValue)
+    public long getLong(@NotNull final String key, final long defaultValue)
     {
         return NumberParser.parseLong(getString(key, Long.toString(defaultValue)), defaultValue);
     }
@@ -142,7 +145,7 @@ public class Settings
      *
      * @param value The value to store.
      */
-    public void putString(final String key, final String value)
+    public void putString(@NotNull final String key, @NotNull final String value)
     {
         final String oldValue = values.put(key, value);
         if (oldValue == null || !oldValue.equals(value))
@@ -158,7 +161,7 @@ public class Settings
      *
      * @param value The value to store.
      */
-    public void putBoolean(final String key, final boolean value)
+    public void putBoolean(@NotNull final String key, final boolean value)
     {
         putString(key, Boolean.toString(value));
     }
@@ -170,7 +173,7 @@ public class Settings
      *
      * @param value The value to store.
      */
-    public void putInt(final String key, final int value)
+    public void putInt(@NotNull final String key, final int value)
     {
         putString(key, Integer.toString(value));
     }
@@ -182,7 +185,7 @@ public class Settings
      *
      * @param value The value to store.
      */
-    public void putLong(final String key, final long value)
+    public void putLong(@NotNull final String key, final long value)
     {
         putString(key, Long.toString(value));
     }
@@ -192,7 +195,7 @@ public class Settings
      *
      * @param key The key to remove.
      */
-    public void remove(final String key)
+    public void remove(@NotNull final String key)
     {
         if (values.remove(key) != null)
         {
@@ -338,7 +341,7 @@ public class Settings
      *
      * @throws IOException if the node cannot be saved
      */
-    private static void saveNode(final BufferedWriter writer, final Map<String, String> node) throws IOException
+    private static void saveNode(@NotNull final BufferedWriter writer, @NotNull final Map<String, String> node) throws IOException
     {
         if (node.isEmpty())
         {

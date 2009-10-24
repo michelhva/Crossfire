@@ -22,6 +22,7 @@ package com.realtime.crossfire.jxclient.gui.gauge;
 import com.realtime.crossfire.jxclient.experience.ExperienceTable;
 import com.realtime.crossfire.jxclient.stats.Stats;
 import com.realtime.crossfire.jxclient.stats.StatsListener;
+import org.jetbrains.annotations.NotNull;
 
 /**
  * A {@link GaugeUpdater} which monitors a stat value.
@@ -33,17 +34,20 @@ public class ActiveSkillGaugeUpdater extends GaugeUpdater
     /**
      * The skill name to monitor.
      */
+    @NotNull
     private final String skill;
 
     /**
      * The stats instance to watch.
      */
+    @NotNull
     private final Stats stats;
 
     /**
      * The {@link StatsListener} registered to be notified about stat
      * changes.
      */
+    @NotNull
     private final StatsListener statsListener = new StatsListener()
     {
         /** {@inheritDoc} */
@@ -69,21 +73,21 @@ public class ActiveSkillGaugeUpdater extends GaugeUpdater
 
         /** {@inheritDoc} */
         @Override
-        public void titleChanged(final String title)
+        public void titleChanged(@NotNull final String title)
         {
             // ignore
         }
 
         /** {@inheritDoc} */
         @Override
-        public void rangeChanged(final String range)
+        public void rangeChanged(@NotNull final String range)
         {
             // ignore
         }
 
         /** {@inheritDoc} */
         @Override
-        public void activeSkillChanged(final String activeSkill)
+        public void activeSkillChanged(@NotNull final String activeSkill)
         {
             setValues(activeSkill.equals(skill) ? 1 : 0, 0, 1);
         }
@@ -112,7 +116,7 @@ public class ActiveSkillGaugeUpdater extends GaugeUpdater
      *
      * @param stats the instance to watch
      */
-    public ActiveSkillGaugeUpdater(final ExperienceTable experienceTable, final String skill, final Stats stats)
+    public ActiveSkillGaugeUpdater(@NotNull final ExperienceTable experienceTable, @NotNull final String skill, @NotNull final Stats stats)
     {
         super(experienceTable);
         this.skill = skill;

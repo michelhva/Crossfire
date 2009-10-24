@@ -19,6 +19,8 @@
 //
 package com.realtime.crossfire.jxclient.server;
 
+import org.jetbrains.annotations.NotNull;
+
 /**
  * Listener to be notified of updated face information.
  *
@@ -35,5 +37,5 @@ public interface CrossfireUpdateFaceListener
      * @param pos the starting position into <code>data</code>
      * @param len the length in bytes in <code>data</code>
      */
-    void updateFace(int faceNum, int faceSetNum, byte[] packet, int pos, int len);
+    void updateFace(int faceNum, int faceSetNum, @NotNull byte[] packet, int pos, int len);
 }
