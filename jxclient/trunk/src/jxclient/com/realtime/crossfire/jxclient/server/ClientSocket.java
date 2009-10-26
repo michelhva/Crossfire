@@ -365,11 +365,13 @@ public class ClientSocket
             }
             catch (final IOException ex)
             {
+                final String tmp = ex.getMessage();
+                final String message = tmp == null ? "I/O error" : tmp; 
                 if (debugProtocol != null)
                 {
-                    debugProtocol.debugProtocolWrite("socket:exception "+ex.getMessage(), ex);
+                    debugProtocol.debugProtocolWrite("socket:exception "+message, ex);
                 }
-                processDisconnect(ex.getMessage());
+                processDisconnect(message);
             }
         }
     }
