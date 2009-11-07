@@ -8,7 +8,7 @@ enter_x 14
 enter_y 21
 msg
 Created:  1995-04-13 Kundi, Xue (xkd@soda.berkeley.edu)
-Modified: 2008-10-29 Rick Tanner
+Modified: 2009-11-07 Andreas Kirschbaum
 endmsg
 end
 arch jungle_2
@@ -1444,7 +1444,6 @@ speed 1.000000
 no_pick 1
 end
 arch power_crystal
-name Glowing Crystal
 sp 1000
 maxsp 2500
 x 7
