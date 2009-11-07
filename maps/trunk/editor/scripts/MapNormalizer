@@ -3,6 +3,7 @@
   <name>MapNormalizer</name>
   <code><![CDATA[import java.io.File;
 import java.util.Iterator;
+import net.sf.gridarta.gameobject.AttributeListUtils;
 import net.sf.gridarta.gameobject.GameObject;
 import net.sf.gridarta.gui.shrinkmapsizedialog.ShrinkMapSizeUtils;
 import net.sf.gridarta.io.RecursiveFileIterator;
@@ -16,7 +17,7 @@ void normalizeGameObject(GameObject gameObject) {
         normalizeGameObject(it.next());
     }
 
-    gameObject.setObjectText(gameObject.getArchetype().diffArchText(gameObject.getObjectText(), false));
+    gameObject.setObjectText(AttributeListUtils.diffArchTextValues(gameObject.getArchetype(), gameObject.getObjectText()));
 }
 
 void normalizeMap(File mapFile, String mapPath) {
