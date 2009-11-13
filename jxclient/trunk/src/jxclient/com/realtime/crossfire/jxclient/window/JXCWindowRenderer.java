@@ -464,17 +464,16 @@ public class JXCWindowRenderer
 
     private void redrawTooltip(@NotNull final Graphics g)
     {
-        if (tooltip != null)
+        final GUIElement tmpTooltip = tooltip;
+        if (tmpTooltip != null)
         {
-            if (tooltip.isElementVisible())
+            if (tmpTooltip.isElementVisible())
             {
-                assert tooltip != null;
-                tooltip.paintComponent(g);
+                tmpTooltip.paintComponent(g);
             }
             else
             {
-                assert tooltip != null;
-                tooltip.resetChanged();
+                tmpTooltip.resetChanged();
             }
         }
     }

@@ -464,12 +464,12 @@ public class DefaultJXCSkin implements JXCSkin
     @Override
     public void detach()
     {
-        if (guiManager != null)
+        final GuiManager tmpGuiManager = guiManager;
+        if (tmpGuiManager != null)
         {
-            guiManager.getWindowRenderer().setTooltip(null);
-            assert guiManager != null;
-            guiManager.getTooltipManager().setTooltip(null);
             guiManager = null;
+            tmpGuiManager.getWindowRenderer().setTooltip(null);
+            tmpGuiManager.getTooltipManager().setTooltip(null);
         }
 
         for (final String optionName : optionNames)

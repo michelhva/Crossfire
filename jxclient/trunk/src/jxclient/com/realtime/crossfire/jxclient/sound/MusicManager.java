@@ -137,7 +137,6 @@ public class MusicManager
         if (processor != null)
         {
             processor.terminate(false, true);
-            assert processor != null;
             processor = null;
         }
     }
