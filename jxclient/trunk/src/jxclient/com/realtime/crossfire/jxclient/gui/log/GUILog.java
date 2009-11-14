@@ -192,13 +192,7 @@ public abstract class GUILog extends GUIElement implements GUIScrollable2
     {
         for (final Segment segment : line)
         {
-            g.setColor(segment.getColor());
-            g.setFont(segment.getFont(fonts));
-            g.drawString(segment.getText(), segment.getX(), y+segment.getY());
-            if (segment.isUnderline())
-            {
-                g.drawLine(segment.getX(), y+segment.getY()+segment.getUnderlineOffset(), segment.getX()+segment.getWidth()-1, y+segment.getY()+segment.getUnderlineOffset());
-            }
+            segment.draw(g, y, fonts);
         }
     }
 
