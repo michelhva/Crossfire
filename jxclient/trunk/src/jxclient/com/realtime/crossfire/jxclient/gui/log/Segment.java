@@ -19,14 +19,10 @@
 //
 package com.realtime.crossfire.jxclient.gui.log;
 
-import java.awt.Color;
-import java.awt.Font;
 import java.awt.Graphics;
-import java.awt.geom.RectangularShape;
 import java.awt.font.FontRenderContext;
-import java.awt.font.LineMetrics;
+import java.awt.geom.RectangularShape;
 import org.jetbrains.annotations.NotNull;
-import org.jetbrains.annotations.Nullable;
 
 /**
  * One segment of a {@link Line} which should be displayed without changing
@@ -34,161 +30,25 @@ import org.jetbrains.annotations.Nullable;
  *
  * @author Andreas Kirschbaum
  */
-public class Segment
+public interface Segment
 {
     /**
-     * The text to display.
+     * Sets the x-coordinate to display the segment.
+     * @param x the x-coordinate
      */
-    @NotNull
-    private final String text;
+    void setX(int x);
 
     /**
-     * Whether bold face is enabled.
+     * Sets the y-coordinate to display the segment.
+     * @param y the y-coordinate
      */
-    private final boolean bold;
+    void setY(int y);
 
     /**
-     * Whether italic face is enabled.
+     * Sets the width to display the segment.
+     * @param width the width
      */
-    private final boolean italic;
-
-    /**
-     * Whether underlining is enabled.
-     */
-    private final boolean underline;
-
-    /**
-     * The font to use.
-     */
-    @NotNull
-    private final FontID font;
-
-    /**
-     * The color to use. <code>null</code> means "default color".
-     */
-    @Nullable
-    private final Color color;
-
-    /**
-     * The x-coordinate to display the segment. Set to <code>-1</code> if
-     * unknown.
-     */
-    private int x = -1;
-
-    /**
-     * The y-coordinate to display the segment. Set to <code>-1</code> if
-     * unknown.
-     */
-    private int y = -1;
-
-    /**
-     * The width of the segment if displayed. Set to <code>-1</code> if
-     * unknown.
-     */
-    private int width = -1;
-
-    /**
-     * The distance of the underline to the base line. Set to <code>0</code> if
-     * unknown.
-     */
-    private int underlineOffset = 0;
-
-    /**
-     * Create a new segment.
-     *
-     * @param text The text to display.
-     *
-     * @param bold Whether bold face is enabled.
-     *
-     * @param italic Whether italic face is enabled.
-     *
-     * @param underline Whether underlining is enabled.
-     *
-     * @param font The font to use.
-     *
-     * @param color The color to use; <code>null</code> means "default color".
-     */
-    public Segment(@NotNull final String text, final boolean bold, final boolean italic, final boolean underline, @NotNull final FontID font, @Nullable final Color color)
-    {
-        this.text = text;
-        this.bold = bold;
-        this.italic = italic;
-        this.underline = underline;
-        this.font = font;
-        this.color = color;
-    }
-
-    /**
-     * Return the text to display.
-     *
-     * @return The text to display.
-     */
-    @NotNull
-    public String getText()
-    {
-        return text;
-    }
-
-    /**
-     * Set the x-coordinate to display the segment.
-     *
-     * @param x The x-coordinate.
-     */
-    public void setX(final int x)
-    {
-        this.x = x;
-    }
-
-    /**
-     * Set the y-coordinate to display the segment.
-     *
-     * @param y The y-coordinate.
-     */
-    public void setY(final int y)
-    {
-        this.y = y;
-    }
-
-    /**
-     * Set the width to display the segment.
-     *
-     * @param width The width.
-     */
-    public void setWidth(final int width)
-    {
-        this.width = width;
-    }
-
-    /**
-     * Return the {@link Font} to use for a given {@link Segment}.
-     *
-     * @param fonts The <code>Fonts</code> instance to use.
-     *
-     * @return The font.
-     */
-    @NotNull
-    private Font getFont(@NotNull final Fonts fonts)
-    {
-        switch (font)
-        {
-        case PRINT:
-            return fonts.getFontPrint();
-
-        case FIXED:
-            return bold ? fonts.getFontFixedBold() : fonts.getFontFixed();
-
-        case ARCANE:
-            return fonts.getFontArcane();
-
-        case HAND:
-            return fonts.getFontPrint();
-
-        case STRANGE:
-            return fonts.getFontPrint();
-        }
-
-        throw new AssertionError();
-    }
+    void setWidth(int width);
 
     /**
      * Draws this segment to a {@link Graphics} instance.
@@ -196,27 +56,14 @@ public class Segment
      * @param y the y-coordinate to draw to
      * @param fonts the fonts to use
      */
-    public void draw(@NotNull final Graphics g, final int y, @NotNull final Fonts fonts)
-    {
-        g.setColor(color);
-        g.setFont(getFont(fonts));
-        g.drawString(text, x, y+this.y);
-        if (underline)
-        {
-            g.drawLine(x, y+this.y+underlineOffset, x+width-1, y+this.y+underlineOffset);
-        }
-    }
+    void draw(@NotNull Graphics g, int y, @NotNull Fonts fonts);
 
     /**
      * Updates the cached attributes of this segment.
      * @param fonts the fonts instance to use
      * @param context the font render context to use
      */
-    public void updateAttributes(@NotNull final Fonts fonts, @NotNull final FontRenderContext context)
-    {
-        final LineMetrics lineMetrics = getFont(fonts).getLineMetrics(text, context);
-        underlineOffset = Math.round(lineMetrics.getUnderlineOffset());
-    }
+    void updateAttributes(@NotNull Fonts fonts, @NotNull FontRenderContext context);
 
     /**
      * Returns the size of this segment in pixels.
@@ -225,58 +72,5 @@ public class Segment
      * @return the size
      */
     @NotNull
-    public RectangularShape getSize(@NotNull final Fonts fonts, @NotNull final FontRenderContext context)
-    {
-        return getFont(fonts).getStringBounds(text, context);
-    }
-
-    /**
-     * Returns whether this segment matches the given attributes.
-     * @param bold the bold attribute
-     * @param italic the italic attribute
-     * @param underline the underline attribute
-     * @param font the font attribute
-     * @param color the color attribute
-     * @return whether all attributes do match
-     */
-    public boolean matches(final boolean bold, final boolean italic, final boolean underline, @NotNull final FontID font, @Nullable final Color color)
-    {
-        return this.bold == bold
-        && this.italic == italic
-        && this.underline == underline
-        && this.font == font
-        && this.color == color;
-    }
-
-    /** {@inheritDoc} */
-    @NotNull
-    @Override
-    public String toString()
-    {
-        final StringBuilder sb = new StringBuilder();
-        sb.append("segment:");
-        if (bold)
-        {
-            sb.append("(bold)");
-        }
-        if (italic)
-        {
-            sb.append("(italic)");
-        }
-        if (underline)
-        {
-            sb.append("(underline)");
-        }
-        if (font != FontID.PRINT)
-        {
-            sb.append('(').append(font.toString().toLowerCase()).append(')');
-        }
-        if (color != null)
-        {
-            sb.append('(').append(Parser.toString(color)).append(')');
-        }
-        sb.append(text);
-        sb.append('\n');
-        return sb.toString();
-    }
+    RectangularShape getSize(@NotNull Fonts fonts, @NotNull FontRenderContext context);
 }

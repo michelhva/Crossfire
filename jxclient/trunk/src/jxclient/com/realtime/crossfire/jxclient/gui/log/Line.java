@@ -59,7 +59,7 @@ public class Line implements Iterable<Segment>
      */
     public void addSegment(@NotNull final String text, final boolean bold, final boolean italic, final boolean underline, @NotNull final FontID font, @Nullable final Color color)
     {
-        segments.add(new Segment(text, bold, italic, underline, font, color));
+        segments.add(new TextSegment(text, bold, italic, underline, font, color));
     }
 
     /** {@inheritDoc} */
