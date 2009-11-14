@@ -115,17 +115,16 @@ public class Line implements Iterable<Segment>
      * @param begin The index of the first segment to update.
      * @param end The index of the first segment not to update.
      * @param y The top border of the line's bounding box.
-     * @param minY The minimum bottom offset of all segments' bounding boxes.
      * @param fonts the fonts instance to use
      * @param context the font render context to use
      */
-    public void updateAttributes(final int begin, final int end, final int y, final int minY, @NotNull final Fonts fonts, @NotNull final FontRenderContext context)
+    public void updateAttributes(final int begin, final int end, final int y, @NotNull final Fonts fonts, @NotNull final FontRenderContext context)
     {
         for (int i = begin; i < end; i++)
         {
             final Segment segment = segments.get(i);
             segment.updateAttributes(fonts, context);
-            segment.setY(y-minY);
+            segment.setY(y);
         }
     }
 }
