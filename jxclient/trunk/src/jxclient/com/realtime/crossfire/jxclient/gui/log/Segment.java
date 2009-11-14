@@ -311,4 +311,36 @@ public class Segment
         && this.font == font
         && this.color == color;
     }
+
+    /** {@inheritDoc} */
+    @NotNull
+    @Override
+    public String toString()
+    {
+        final StringBuilder sb = new StringBuilder();
+        sb.append("segment:");
+        if (bold)
+        {
+            sb.append("(bold)");
+        }
+        if (italic)
+        {
+            sb.append("(italic)");
+        }
+        if (underline)
+        {
+            sb.append("(underline)");
+        }
+        if (font != FontID.PRINT)
+        {
+            sb.append('(').append(font.toString().toLowerCase()).append(')');
+        }
+        if (color != null)
+        {
+            sb.append('(').append(Parser.toString(color)).append(')');
+        }
+        sb.append(text);
+        sb.append('\n');
+        return sb.toString();
+    }
 }
