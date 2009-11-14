@@ -346,12 +346,7 @@ public class Parser
 
         final CharSequence newText;
         final Segment prevSegment = line.getLastSegment();
-        if (prevSegment != null
-        && prevSegment.isBold() == bold
-        && prevSegment.isItalic() == italic
-        && prevSegment.isUnderline() == underline
-        && prevSegment.getFontID() == font
-        && prevSegment.getColor() == color)
+        if (prevSegment != null && prevSegment.matches(bold, italic, underline, font, color))
         {
             newText = prevSegment.getText()+text;
             line.removeLastSegment();
