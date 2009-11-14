@@ -19,7 +19,6 @@
 //
 package com.realtime.crossfire.jxclient.gui.log;
 
-import java.awt.Font;
 import java.awt.font.FontRenderContext;
 import java.awt.geom.RectangularShape;
 import java.util.ArrayList;
@@ -275,9 +274,7 @@ public class Buffer
         int i = 0;
         for (final Segment segment : line)
         {
-            final String text = segment.getText();
-            final Font font = segment.getFont(fonts);
-            final RectangularShape rect = font.getStringBounds(text, context);
+            final RectangularShape rect = segment.getSize(fonts, context);
             final int width = (int)Math.round(rect.getWidth());
             if (x != 0 && x+width > renderWidth)
             {

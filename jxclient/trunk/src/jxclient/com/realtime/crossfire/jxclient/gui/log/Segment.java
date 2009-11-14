@@ -22,6 +22,9 @@ package com.realtime.crossfire.jxclient.gui.log;
 import java.awt.Color;
 import java.awt.Font;
 import java.awt.Graphics;
+import java.awt.geom.RectangularShape;
+import java.awt.font.FontRenderContext;
+import java.awt.font.LineMetrics;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 
@@ -308,5 +311,28 @@ public class Segment
         {
             g.drawLine(x, y+this.y+underlineOffset, x+width-1, y+this.y+underlineOffset);
         }
+    }
+
+    /**
+     * Updates the cached attributes of this segment.
+     * @param fonts the fonts instance to use
+     * @param context the font render context to use
+     */
+    public void updateAttributes(@NotNull final Fonts fonts, @NotNull final FontRenderContext context)
+    {
+        final LineMetrics lineMetrics = getFont(fonts).getLineMetrics(text, context);
+        underlineOffset = Math.round(lineMetrics.getUnderlineOffset());
+    }
+
+    /**
+     * Returns the size of this segment in pixels.
+     * @param fonts the fonts instance to use
+     * @param context the font render context to use
+     * @return the size
+     */
+    @NotNull
+    public RectangularShape getSize(@NotNull final Fonts fonts, @NotNull final FontRenderContext context)
+    {
+        return getFont(fonts).getStringBounds(text, context);
     }
 }
