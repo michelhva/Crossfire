@@ -20,9 +20,7 @@
 package com.realtime.crossfire.jxclient.gui.log;
 
 import java.awt.Color;
-import java.awt.Font;
 import java.awt.font.FontRenderContext;
-import java.awt.font.LineMetrics;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Iterator;
@@ -126,11 +124,8 @@ public class Line implements Iterable<Segment>
         for (int i = begin; i < end; i++)
         {
             final Segment segment = segments.get(i);
-            final String text = segment.getText();
-            final Font font = segment.getFont(fonts);
-            final LineMetrics lineMetrics = font.getLineMetrics(text, context);
+            segment.updateAttributes(fonts, context);
             segment.setY(y-minY);
-            segment.setUnderlineOffset(Math.round(lineMetrics.getUnderlineOffset()));
         }
     }
 }
