@@ -19,7 +19,6 @@
 //
 package com.realtime.crossfire.jxclient.gui.log;
 
-import java.awt.Color;
 import java.awt.Font;
 import java.awt.FontFormatException;
 import java.awt.Graphics2D;
@@ -369,53 +368,7 @@ public class ParserTest extends TestCase
         sb.append("line:\n");
         for (final Segment segment : line)
         {
-            dumpSegment(sb, segment);
+            sb.append(segment);
         }
-    }
-
-    /**
-     * Appends the contents of a {@link Segment} to a {@link StringBuilder}.
-     * @param sb the <code>StringBuilder</code> to append to
-     * @param segment the <code>Segment</code> to append
-     */
-    private static void dumpSegment(@NotNull final StringBuilder sb, @NotNull final Segment segment)
-    {
-        sb.append("segment:");
-        if (segment.isBold())
-        {
-            sb.append("(bold)");
-        }
-        if (segment.isItalic())
-        {
-            sb.append("(italic)");
-        }
-        if (segment.isUnderline())
-        {
-            sb.append("(underline)");
-        }
-        dumpFont(segment.getFontID(), sb);
-        final Color color = segment.getColor();
-        if (color != null)
-        {
-            sb.append('(').append(Parser.toString(color)).append(')');
-        }
-        sb.append(segment.getText());
-        sb.append('\n');
-    }
-
-    /**
-     * Returns the string representation for a font.
-     * @param font the font to convert
-     * @param sb the string builder to use
-     */
-    private static void dumpFont(@NotNull final FontID font, @NotNull final StringBuilder sb)
-    {
-        if (font == FontID.PRINT)
-        {
-            // ignore
-            return;
-        }
-
-        sb.append('(').append(font.toString().toLowerCase()).append(')');
     }
 }
