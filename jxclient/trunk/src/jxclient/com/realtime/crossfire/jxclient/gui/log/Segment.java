@@ -21,6 +21,7 @@ package com.realtime.crossfire.jxclient.gui.log;
 
 import java.awt.Color;
 import java.awt.Font;
+import java.awt.Graphics;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 
@@ -290,5 +291,22 @@ public class Segment
         }
 
         throw new AssertionError();
+    }
+
+    /**
+     * Draws this segment to a {@link Graphics} instance.
+     * @param g the graphics to draw to
+     * @param y the y-coordinate to draw to
+     * @param fonts the fonts to use
+     */
+    public void draw(@NotNull final Graphics g, final int y, @NotNull final Fonts fonts)
+    {
+        g.setColor(color);
+        g.setFont(getFont(fonts));
+        g.drawString(text, x, y+this.y);
+        if (underline)
+        {
+            g.drawLine(x, y+this.y+underlineOffset, x+width-1, y+this.y+underlineOffset);
+        }
     }
 }
