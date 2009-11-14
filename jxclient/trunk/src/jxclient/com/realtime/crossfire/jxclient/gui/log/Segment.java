@@ -182,17 +182,6 @@ public class Segment
     }
 
     /**
-     * Return the x-coordinate to display the segment. Returns <code>-1</code>
-     * until {@link #setX(int)} was called
-     *
-     * @return The x-coordinate.
-     */
-    public int getX()
-    {
-        return x;
-    }
-
-    /**
      * Set the x-coordinate to display the segment.
      *
      * @param x The x-coordinate.
@@ -203,17 +192,6 @@ public class Segment
     }
 
     /**
-     * Return the y-coordinate to display the segment. Returns <code>-1</code>
-     * until {@link #setY(int)} was called
-     *
-     * @return The y-coordinate.
-     */
-    public int getY()
-    {
-        return y;
-    }
-
-    /**
      * Set the y-coordinate to display the segment.
      *
      * @param y The y-coordinate.
@@ -221,17 +199,6 @@ public class Segment
     public void setY(final int y)
     {
         this.y = y;
-    }
-
-    /**
-     * Return the width of the segment. Returns <code>-1</code> until {@link
-     * #setWidth(int)} was called
-     *
-     * @return The width.
-     */
-    public int getWidth()
-    {
-        return width;
     }
 
     /**
@@ -246,23 +213,14 @@ public class Segment
 
     /**
      * Return the distance of the underline to the base line. Returns
-     * <code>0</code> until {@link #setUnderlineOffset(int)} was called.
+     * <code>0</code> until {@link #updateAttributes(Fonts, FontRenderContext)}
+     * was called.
      *
      * @return The distance.
      */
     public int getUnderlineOffset()
     {
         return underlineOffset;
-    }
-
-    /**
-     * Set the distance of the underline to the base line.
-     *
-     * @param underlineOffset The distance.
-     */
-    public void setUnderlineOffset(final int underlineOffset)
-    {
-        this.underlineOffset = underlineOffset;
     }
 
     /**
@@ -273,7 +231,7 @@ public class Segment
      * @return The font.
      */
     @NotNull
-    public Font getFont(@NotNull final Fonts fonts)
+    private Font getFont(@NotNull final Fonts fonts)
     {
         switch (font)
         {
