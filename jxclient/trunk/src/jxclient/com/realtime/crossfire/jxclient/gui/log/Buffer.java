@@ -278,7 +278,7 @@ public class Buffer
             final int width = (int)Math.round(rect.getWidth());
             if (x != 0 && x+width > renderWidth)
             {
-                line.updateAttributes(beginIndex, i, height, minY, fonts, context);
+                line.updateAttributes(beginIndex, i, height-minY, fonts, context);
 
                 height += maxY-minY;
                 x = 0;
@@ -298,7 +298,7 @@ public class Buffer
             i++;
         }
 
-        line.updateAttributes(beginIndex, i, height, minY, fonts, context);
+        line.updateAttributes(beginIndex, i, height-minY, fonts, context);
         height += maxY-minY;
 
         return Math.max(1, height);
