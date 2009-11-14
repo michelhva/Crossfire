@@ -293,4 +293,22 @@ public class Segment
     {
         return getFont(fonts).getStringBounds(text, context);
     }
+
+    /**
+     * Returns whether this segment matches the given attributes.
+     * @param bold the bold attribute
+     * @param italic the italic attribute
+     * @param underline the underline attribute
+     * @param font the font attribute
+     * @param color the color attribute
+     * @return whether all attributes do match
+     */
+    public boolean matches(final boolean bold, final boolean italic, final boolean underline, @NotNull final FontID font, @Nullable final Color color)
+    {
+        return this.bold == bold
+        && this.italic == italic
+        && this.underline == underline
+        && this.font == font
+        && this.color == color;
+    }
 }
