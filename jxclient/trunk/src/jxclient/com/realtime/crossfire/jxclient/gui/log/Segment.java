@@ -130,58 +130,6 @@ public class Segment
     }
 
     /**
-     * Return whether bold face is enabled.
-     *
-     * @return Whether bold face is enabled.
-     */
-    public boolean isBold()
-    {
-        return bold;
-    }
-
-    /**
-     * Return whether italic face is enabled.
-     *
-     * @return Whether italic face is enabled.
-     */
-    public boolean isItalic()
-    {
-        return italic;
-    }
-
-    /**
-     * Return whether underlining is enabled.
-     *
-     * @return Whether underlining is enabled.
-     */
-    public boolean isUnderline()
-    {
-        return underline;
-    }
-
-    /**
-     * Return the font to use.
-     *
-     * @return The font to use.
-     */
-    @NotNull
-    public FontID getFontID()
-    {
-        return font;
-    }
-
-    /**
-     * Return the color to use.
-     *
-     * @return The color to use; <code>null</code> means "default color".
-     */
-    @Nullable
-    public Color getColor()
-    {
-        return color;
-    }
-
-    /**
      * Set the x-coordinate to display the segment.
      *
      * @param x The x-coordinate.
@@ -209,18 +157,6 @@ public class Segment
     public void setWidth(final int width)
     {
         this.width = width;
-    }
-
-    /**
-     * Return the distance of the underline to the base line. Returns
-     * <code>0</code> until {@link #updateAttributes(Fonts, FontRenderContext)}
-     * was called.
-     *
-     * @return The distance.
-     */
-    public int getUnderlineOffset()
-    {
-        return underlineOffset;
     }
 
     /**
