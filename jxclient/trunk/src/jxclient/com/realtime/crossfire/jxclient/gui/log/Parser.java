@@ -346,14 +346,22 @@ public class Parser
 
         final CharSequence newText;
         final Segment prevSegment = line.getLastSegment();
-        if (prevSegment != null && prevSegment.matches(bold, italic, underline, font, color))
+        if (prevSegment == null || !(prevSegment instanceof TextSegment))
         {
-            newText = prevSegment.getText()+text;
-            line.removeLastSegment();
+            newText = text;
         }
         else
         {
-            newText = text;
+            final TextSegment prevTextSegment = (TextSegment)prevSegment;
+            if (prevTextSegment.matches(bold, italic, underline, font, color))
+            {
+                newText = prevTextSegment.getText()+text;
+                line.removeLastSegment();
+            }
+            else
+            {
+                newText = text;
+            }
         }
 
         final String[] words = WORD_SEPARATOR_PATTERN.split(newText, -1);
