@@ -288,14 +288,4 @@ public class FacesManager
         faceCache.reset();
         facesQueue.reset();
     }
-
-    /**
-     * Returns the {@link FacesQueue} instance.
-     * @return the faces queue instance
-     */
-    @NotNull
-    public FacesQueue getFacesQueue()
-    {
-        return facesQueue;
-    }
 }
