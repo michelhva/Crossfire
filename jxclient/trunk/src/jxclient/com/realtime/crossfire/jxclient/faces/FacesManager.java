@@ -20,7 +20,6 @@
 package com.realtime.crossfire.jxclient.faces;
 
 import com.realtime.crossfire.jxclient.server.ClientSocketState;
-import com.realtime.crossfire.jxclient.server.CrossfireServerConnection;
 import com.realtime.crossfire.jxclient.util.ResourceUtils;
 import com.realtime.crossfire.jxclient.window.GuiStateListener;
 import com.realtime.crossfire.jxclient.window.JXCWindow;
@@ -158,22 +157,15 @@ public class FacesManager
 
     /**
      * Creates a new instance.
-     * @param crossfireServerConnection the server connection for sending
-     * askface commands
-     * @param imageCacheOriginal the image cache used for loading original
-     * image files
-     * @param imageCacheScaled the image cache used for loading scaled image
-     * files
-     * @param imageCacheMagicMap the image cache used for loading magic map
-     * image files
      * @param faceCache the face cache instance for storing in-memory faces
      * @param window the window to attach to; <code>null</code> to not attach
+     * @param facesQueue the faces queue to use
      * @throws IOException if the unknown image resource cannot be loaded
      */
-    public FacesManager(@Nullable final CrossfireServerConnection crossfireServerConnection, @NotNull final ImageCache imageCacheOriginal, @NotNull final ImageCache imageCacheScaled, @NotNull final ImageCache imageCacheMagicMap, @NotNull final FaceCache faceCache, @Nullable final JXCWindow window) throws IOException
+    public FacesManager(@NotNull final FaceCache faceCache, @Nullable final JXCWindow window, @NotNull final FacesQueue facesQueue) throws IOException
     {
         this.faceCache = faceCache;
-        facesQueue = new FacesQueue(crossfireServerConnection, imageCacheOriginal, imageCacheScaled, imageCacheMagicMap);
+        this.facesQueue = facesQueue;
         facesQueue.addFaceQueueListener(faceQueueListener);
 
         final GraphicsEnvironment ge = GraphicsEnvironment.getLocalGraphicsEnvironment();

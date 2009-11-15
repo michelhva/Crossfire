@@ -24,6 +24,7 @@ import com.realtime.crossfire.jxclient.commands.Macros;
 import com.realtime.crossfire.jxclient.experience.ExperienceTable;
 import com.realtime.crossfire.jxclient.faces.FaceCache;
 import com.realtime.crossfire.jxclient.faces.FacesManager;
+import com.realtime.crossfire.jxclient.faces.FacesQueue;
 import com.realtime.crossfire.jxclient.faces.FileCache;
 import com.realtime.crossfire.jxclient.gui.gui.TooltipManager;
 import com.realtime.crossfire.jxclient.gui.keybindings.KeyBindings;
@@ -624,7 +625,8 @@ public class JXCWindow extends JFrame
         skillSet = new SkillSet(server, this);
         stats = new Stats(server, experienceTable, skillSet, this);
         itemsManager = new ItemsManager(server, faceCache, stats, skillSet, this);
-        facesManager = new FacesManager(server, new FileCache(Filenames.getOriginalImageCacheDir()), new FileCache(Filenames.getScaledImageCacheDir()), new FileCache(Filenames.getMagicMapImageCacheDir()), faceCache, this);
+        final FacesQueue facesQueue = new FacesQueue(server, new FileCache(Filenames.getOriginalImageCacheDir()), new FileCache(Filenames.getScaledImageCacheDir()), new FileCache(Filenames.getMagicMapImageCacheDir()));
+        facesManager = new FacesManager(faceCache, this, facesQueue);
         mapUpdater = new CfMapUpdater(server, facesManager, faceCache, animations, this);
         spellsManager = new SpellsManager(server, this);
         commandQueue = new CommandQueue(server, this);
