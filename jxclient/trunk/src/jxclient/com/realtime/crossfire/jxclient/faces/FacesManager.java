@@ -27,7 +27,6 @@ import com.realtime.crossfire.jxclient.window.JXCWindow;
 import java.awt.GraphicsConfiguration;
 import java.awt.GraphicsDevice;
 import java.awt.GraphicsEnvironment;
-import java.awt.Image;
 import java.awt.Transparency;
 import java.io.IOException;
 import java.util.Collection;
@@ -52,18 +51,6 @@ public class FacesManager
      */
     @NotNull
     private static final String UNKNOWN_PNG = "resource/unknown.png";
-
-    /**
-     * The resource for "Click here for next group of items" buttons.
-     */
-    @NotNull
-    private static final String NEXT_GROUP_FACE = "resource/next_group.png";
-
-    /**
-     * The resource for "Click here for previous group of items" buttons.
-     */
-    @NotNull
-    private static final String PREV_GROUP_FACE = "resource/prev_group.png";
 
     /**
      * The {@link FaceCache} instance used to look up in-memory faces.
@@ -95,18 +82,6 @@ public class FacesManager
      */
     @NotNull
     private final FaceImages emptyFaceImages;
-
-    /**
-     * The face to substitute into "Click here for next group of items".
-     */
-    @NotNull
-    private final Image nextGroupFace;
-
-    /**
-     * The face to substitute into "Click here for previous group of items".
-     */
-    @NotNull
-    private final Image prevGroupFace;
 
     /**
      * The {@link FaceQueueListener} registered to {@link #facesQueue}.
@@ -211,8 +186,6 @@ public class FacesManager
         emptyFaceImages = new FaceImages(emptyOriginalImageIcon, emptyScaledImageIcon, emptyMagicMapImageIcon);
 
         unknownFaceImages = FaceImagesUtils.newFaceImages(ResourceUtils.loadImage(UNKNOWN_PNG));
-        nextGroupFace = ResourceUtils.loadImage(NEXT_GROUP_FACE).getImage();
-        prevGroupFace = ResourceUtils.loadImage(PREV_GROUP_FACE).getImage();
         if (window != null)
         {
             window.addConnectionStateListener(guiStateListener);
@@ -332,27 +305,5 @@ public class FacesManager
     public FacesQueue getFacesQueue()
     {
         return facesQueue;
-    }
-
-    /**
-     * Returns the face to substitute into "Click here for next group of
-     * items".
-     * @return the image
-     */
-    @NotNull
-    public Image getNextGroupFace()
-    {
-        return nextGroupFace;
-    }
-
-    /**
-     * Returns the face to substitute into "Click here for previous group of
-     * items".
-     * @return the image
-     */
-    @NotNull
-    public Image getPrevGroupFace()
-    {
-        return prevGroupFace;
     }
 }
