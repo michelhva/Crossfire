@@ -625,9 +625,9 @@ public class JXCWindow extends JFrame
         experienceTable = new ExperienceTable(server);
         skillSet = new SkillSet(server, this);
         stats = new Stats(server, experienceTable, skillSet, this);
-        itemsManager = new ItemsManager(server, faceCache, stats, skillSet, this);
         final FacesQueue facesQueue = new FacesQueue(server, new FileCache(Filenames.getOriginalImageCacheDir()), new FileCache(Filenames.getScaledImageCacheDir()), new FileCache(Filenames.getMagicMapImageCacheDir()));
         facesManager = new FacesManager(faceCache, facesQueue);
+        itemsManager = new ItemsManager(server, facesManager, stats, skillSet, this);
         mapUpdater = new CfMapUpdater(server, facesManager, animations, this);
         spellsManager = new SpellsManager(server, this);
         commandQueue = new CommandQueue(server, this);

@@ -522,7 +522,7 @@ public class CfMapUpdater
     @Nullable
     private Face getFace(final int faceNum)
     {
-        return facesManager.getFace(faceNum);
+        return facesManager.getFace2(faceNum);
     }
 
     /**
