@@ -153,6 +153,15 @@ public class FacesManager
     }
 
     /**
+     * Requests the given face from the server.
+     * @param faceNum the face ID to request
+     */
+    public void requestFace(final int faceNum)
+    {
+        getFaceImages(faceNum);
+    }
+
+    /**
      * Returns the {@link FaceImages} information for a face ID. This function
      * returns immediately even if the face is not loaded. A not loaded face
      * will be updated as soon as loading has finished.
@@ -160,7 +169,7 @@ public class FacesManager
      * @return the face images information
      */
     @NotNull
-    public FaceImages getFaceImages(final int faceNum)
+    private FaceImages getFaceImages(final int faceNum)
     {
         if (faceNum == 0)
         {
