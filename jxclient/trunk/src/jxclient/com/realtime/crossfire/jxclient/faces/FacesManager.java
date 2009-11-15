@@ -19,10 +19,7 @@
 //
 package com.realtime.crossfire.jxclient.faces;
 
-import com.realtime.crossfire.jxclient.server.ClientSocketState;
 import com.realtime.crossfire.jxclient.util.ResourceUtils;
-import com.realtime.crossfire.jxclient.window.GuiStateListener;
-import com.realtime.crossfire.jxclient.window.JXCWindow;
 import java.awt.GraphicsConfiguration;
 import java.awt.GraphicsDevice;
 import java.awt.GraphicsEnvironment;
@@ -32,7 +29,6 @@ import java.util.Collection;
 import java.util.concurrent.CopyOnWriteArrayList;
 import javax.swing.ImageIcon;
 import org.jetbrains.annotations.NotNull;
-import org.jetbrains.annotations.Nullable;
 
 /**
  * Retrieves {@link Face} information by face ID. If a face is not available
@@ -58,11 +54,11 @@ public class FacesManager
     private final FaceCache faceCache;
 
     /**
-     * The {@link FacesQueue} instance used to load faces not present
+     * The {@link FaceQueue} instance used to load faces not present
      * in-memory.
      */
     @NotNull
-    private final FacesQueue facesQueue;
+    private final FaceQueue faceQueue;
 
     /**
      * The unknown face.
@@ -83,7 +79,7 @@ public class FacesManager
     private final FaceImages emptyFaceImages;
 
     /**
-     * The {@link FaceQueueListener} registered to {@link #facesQueue}.
+     * The {@link FaceQueueListener} registered to {@link #faceQueue}.
      */
     @NotNull
     private final FaceQueueListener faceQueueListener = new FaceQueueListener()
@@ -106,67 +102,16 @@ public class FacesManager
     };
 
     /**
-     * The {@link GuiStateListener} for detecting established or dropped
-     * connections.
-     */
-    @NotNull
-    private final GuiStateListener guiStateListener = new GuiStateListener()
-    {
-        /** {@inheritDoc} */
-        @Override
-        public void start()
-        {
-            // ignore
-        }
-
-        /** {@inheritDoc} */
-        @Override
-        public void metaserver()
-        {
-            // ignore
-        }
-
-        /** {@inheritDoc} */
-        @Override
-        public void connecting()
-        {
-            reset();
-        }
-
-        /** {@inheritDoc} */
-        @Override
-        public void connecting(@NotNull final ClientSocketState clientSocketState)
-        {
-            // ignore
-        }
-
-        /** {@inheritDoc} */
-        @Override
-        public void connected()
-        {
-            // ignore
-        }
-
-        /** {@inheritDoc} */
-        @Override
-        public void connectFailed(@NotNull final String reason)
-        {
-            // ignore
-        }
-    };
-
-    /**
      * Creates a new instance.
      * @param faceCache the face cache instance for storing in-memory faces
-     * @param window the window to attach to; <code>null</code> to not attach
-     * @param facesQueue the faces queue to use
+     * @param faceQueue the face queue to use
      * @throws IOException if the unknown image resource cannot be loaded
      */
-    public FacesManager(@NotNull final FaceCache faceCache, @Nullable final JXCWindow window, @NotNull final FacesQueue facesQueue) throws IOException
+    public FacesManager(@NotNull final FaceCache faceCache, @NotNull final FaceQueue faceQueue) throws IOException
     {
         this.faceCache = faceCache;
-        this.facesQueue = facesQueue;
-        facesQueue.addFaceQueueListener(faceQueueListener);
+        this.faceQueue = faceQueue;
+        faceQueue.addFaceQueueListener(faceQueueListener);
 
         final GraphicsEnvironment ge = GraphicsEnvironment.getLocalGraphicsEnvironment();
         final GraphicsDevice gd = ge.getDefaultScreenDevice();
@@ -178,10 +123,6 @@ public class FacesManager
         emptyFaceImages = new FaceImages(emptyOriginalImageIcon, emptyScaledImageIcon, emptyMagicMapImageIcon);
 
         unknownFaceImages = FaceImagesUtils.newFaceImages(ResourceUtils.loadImage(UNKNOWN_PNG));
-        if (window != null)
-        {
-            window.addConnectionStateListener(guiStateListener);
-        }
     }
 
     /**
@@ -245,7 +186,7 @@ public class FacesManager
             return faceImages;
         }
 
-        facesQueue.loadFace(face);
+        faceQueue.loadFace(face);
         return unknownFaceImages;
     }
 
@@ -283,9 +224,9 @@ public class FacesManager
     /**
      * Forgets about pending faces.
      */
-    private void reset()
+    public void reset()
     {
         faceCache.reset();
-        facesQueue.reset();
+        faceQueue.reset();
     }
 }

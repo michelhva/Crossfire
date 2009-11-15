@@ -557,6 +557,7 @@ public class JXCWindow extends JFrame
         @Override
         public void connecting()
         {
+            facesManager.reset();
             itemsManager.addCrossfirePlayerListener(playerListener);
             server.addCrossfireQueryListener(crossfireQueryListener);
         }
@@ -626,7 +627,7 @@ public class JXCWindow extends JFrame
         stats = new Stats(server, experienceTable, skillSet, this);
         itemsManager = new ItemsManager(server, faceCache, stats, skillSet, this);
         final FacesQueue facesQueue = new FacesQueue(server, new FileCache(Filenames.getOriginalImageCacheDir()), new FileCache(Filenames.getScaledImageCacheDir()), new FileCache(Filenames.getMagicMapImageCacheDir()));
-        facesManager = new FacesManager(faceCache, this, facesQueue);
+        facesManager = new FacesManager(faceCache, facesQueue);
         mapUpdater = new CfMapUpdater(server, facesManager, faceCache, animations, this);
         spellsManager = new SpellsManager(server, this);
         commandQueue = new CommandQueue(server, this);
