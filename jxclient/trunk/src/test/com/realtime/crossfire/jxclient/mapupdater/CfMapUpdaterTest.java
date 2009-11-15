@@ -155,9 +155,9 @@ public class CfMapUpdaterTest extends TestCase
     {
         final FaceCache faceCache = new FaceCache();
         final FacesQueue facesQueue = new FacesQueue(null, new MemoryImageCache(), new MemoryImageCache(), new MemoryImageCache());
-        final FacesManager facesManager = new FacesManager(faceCache, null, facesQueue);
-        defineFace(faceCache, facesManager, 1, "M", png64x64);
-        defineFace(faceCache, facesManager, 2, "_", png32x32);
+        new FacesManager(faceCache, null, facesQueue);
+        defineFace(faceCache, facesQueue, 1, "M", png64x64);
+        defineFace(faceCache, facesQueue, 2, "_", png32x32);
 
         final CfMapUpdater mapUpdater = new CfMapUpdater(faceCache, new Animations(null));
 
@@ -200,13 +200,13 @@ public class CfMapUpdaterTest extends TestCase
         final FaceCache faceCache = new FaceCache();
         final FacesQueue facesQueue = new FacesQueue(null, new MemoryImageCache(), new MemoryImageCache(), new MemoryImageCache());
         final FacesManager facesManager = new FacesManager(faceCache, null, facesQueue);
-        defineFace(faceCache, facesManager, 307, "behemoth.x31", png64x64);
-        defineFace(faceCache, facesManager, 308, "behemoth.x32", png64x64);
-        defineFace(faceCache, facesManager, 309, "behemoth.x33", png64x64);
-        defineFace(faceCache, facesManager, 310, "behemoth.x71", png64x64);
-        defineFace(faceCache, facesManager, 932, "charwoman.132", png32x32);
-        defineFace(faceCache, facesManager, 4607, "woodfloor.111", png32x32);
-        defineFace(faceCache, facesManager, 312, "behemoth.x73", png64x64);
+        defineFace(faceCache, facesQueue, 307, "behemoth.x31", png64x64);
+        defineFace(faceCache, facesQueue, 308, "behemoth.x32", png64x64);
+        defineFace(faceCache, facesQueue, 309, "behemoth.x33", png64x64);
+        defineFace(faceCache, facesQueue, 310, "behemoth.x71", png64x64);
+        defineFace(faceCache, facesQueue, 932, "charwoman.132", png32x32);
+        defineFace(faceCache, facesQueue, 4607, "woodfloor.111", png32x32);
+        defineFace(faceCache, facesQueue, 312, "behemoth.x73", png64x64);
 
         final CfMapUpdater mapUpdater = new CfMapUpdater(faceCache, new Animations(null));
 
@@ -286,9 +286,9 @@ public class CfMapUpdaterTest extends TestCase
     {
         final FaceCache faceCache = new FaceCache();
         final FacesQueue facesQueue = new FacesQueue(null, new MemoryImageCache(), new MemoryImageCache(), new MemoryImageCache());
-        final FacesManager facesManager = new FacesManager(faceCache, null, facesQueue);
-        defineFace(faceCache, facesManager, 7, "a.x11", png64x64);
-        defineFace(faceCache, facesManager, 8, "b.x12", png64x64);
+        new FacesManager(faceCache, null, facesQueue);
+        defineFace(faceCache, facesQueue, 7, "a.x11", png64x64);
+        defineFace(faceCache, facesQueue, 8, "b.x12", png64x64);
 
         final CfMapUpdater mapUpdater = new CfMapUpdater(faceCache, new Animations(null));
 
@@ -316,11 +316,11 @@ public class CfMapUpdaterTest extends TestCase
     {
         final FaceCache faceCache = new FaceCache();
         final FacesQueue facesQueue = new FacesQueue(null, new MemoryImageCache(), new MemoryImageCache(), new MemoryImageCache());
-        final FacesManager facesManager = new FacesManager(faceCache, null, facesQueue);
+        new FacesManager(faceCache, null, facesQueue);
         final CfMapUpdater mapUpdater = new CfMapUpdater(faceCache, new Animations(null));
 
         mapUpdater.processNewMap(23, 16);
-        defineFace(faceCache, facesManager, 1316, "demon_lord.x11", png128x256);
+        defineFace(faceCache, facesQueue, 1316, "demon_lord.x11", png128x256);
 
         mapUpdater.processMapBegin();
         mapUpdater.processMapFace(4, 17, 6, 1316, true);
@@ -422,10 +422,10 @@ public class CfMapUpdaterTest extends TestCase
         return sb.toString();
     }
 
-    private static void defineFace(@NotNull final FaceCache faceCache, @NotNull final FacesManager facesManager, final int faceNum, @NotNull final String faceName, @NotNull final byte[] data)
+    private static void defineFace(@NotNull final FaceCache faceCache, @NotNull final FacesQueue facesQueue, final int faceNum, @NotNull final String faceName, @NotNull final byte[] data)
     {
         final Face face = new Face(faceNum, faceName, 0);
         faceCache.addFace(face);
-        facesManager.getFacesQueue().getAskfaceQueue().processFaceData(face, data);
+        facesQueue.getAskfaceQueue().processFaceData(face, data);
     }
 }
