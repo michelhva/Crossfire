@@ -155,7 +155,7 @@ public class CfMapUpdaterTest extends TestCase
     {
         final FaceCache faceCache = new FaceCache();
         final FacesQueue facesQueue = new FacesQueue(null, new MemoryImageCache(), new MemoryImageCache(), new MemoryImageCache());
-        new FacesManager(faceCache, null, facesQueue);
+        new FacesManager(faceCache, facesQueue);
         defineFace(faceCache, facesQueue, 1, "M", png64x64);
         defineFace(faceCache, facesQueue, 2, "_", png32x32);
 
@@ -199,7 +199,7 @@ public class CfMapUpdaterTest extends TestCase
     {
         final FaceCache faceCache = new FaceCache();
         final FacesQueue facesQueue = new FacesQueue(null, new MemoryImageCache(), new MemoryImageCache(), new MemoryImageCache());
-        final FacesManager facesManager = new FacesManager(faceCache, null, facesQueue);
+        final FacesManager facesManager = new FacesManager(faceCache, facesQueue);
         defineFace(faceCache, facesQueue, 307, "behemoth.x31", png64x64);
         defineFace(faceCache, facesQueue, 308, "behemoth.x32", png64x64);
         defineFace(faceCache, facesQueue, 309, "behemoth.x33", png64x64);
@@ -286,7 +286,7 @@ public class CfMapUpdaterTest extends TestCase
     {
         final FaceCache faceCache = new FaceCache();
         final FacesQueue facesQueue = new FacesQueue(null, new MemoryImageCache(), new MemoryImageCache(), new MemoryImageCache());
-        new FacesManager(faceCache, null, facesQueue);
+        new FacesManager(faceCache, facesQueue);
         defineFace(faceCache, facesQueue, 7, "a.x11", png64x64);
         defineFace(faceCache, facesQueue, 8, "b.x12", png64x64);
 
@@ -316,7 +316,7 @@ public class CfMapUpdaterTest extends TestCase
     {
         final FaceCache faceCache = new FaceCache();
         final FacesQueue facesQueue = new FacesQueue(null, new MemoryImageCache(), new MemoryImageCache(), new MemoryImageCache());
-        new FacesManager(faceCache, null, facesQueue);
+        new FacesManager(faceCache, facesQueue);
         final CfMapUpdater mapUpdater = new CfMapUpdater(faceCache, new Animations(null));
 
         mapUpdater.processNewMap(23, 16);
