@@ -19,6 +19,10 @@
 //
 package com.realtime.crossfire.jxclient.faces;
 
+import java.awt.GraphicsConfiguration;
+import java.awt.GraphicsDevice;
+import java.awt.GraphicsEnvironment;
+import java.awt.Transparency;
 import javax.swing.ImageIcon;
 import org.jetbrains.annotations.NotNull;
 
@@ -47,5 +51,22 @@ public class FaceImagesUtils
         final ImageIcon scaledImageIcon = new ImageScale2x(originalImageIcon).getScaledImage();
         final ImageIcon magicMapImageIcon = new ImageScale8d(originalImageIcon).getScaledImage();
         return new FaceImages(originalImageIcon, scaledImageIcon, magicMapImageIcon);
+    }
+
+    /**
+     * Creates a new {@link FaceImages} instance consisting of empty imgaes.
+     * @return the face images instance
+     */
+    @NotNull
+    public static FaceImages newEmptyFaceImages()
+    {
+        final GraphicsEnvironment ge = GraphicsEnvironment.getLocalGraphicsEnvironment();
+        final GraphicsDevice gd = ge.getDefaultScreenDevice();
+        final GraphicsConfiguration gconf = gd.getDefaultConfiguration();
+
+        final ImageIcon emptyOriginalImageIcon = new ImageIcon(gconf.createCompatibleImage(Face.SQUARE_SIZE, Face.SQUARE_SIZE, Transparency.OPAQUE));
+        final ImageIcon emptyScaledImageIcon = new ImageIcon(gconf.createCompatibleImage(Face.SQUARE_SIZE*2, Face.SQUARE_SIZE*2, Transparency.OPAQUE));
+        final ImageIcon emptyMagicMapImageIcon = new ImageIcon(gconf.createCompatibleImage(Face.SQUARE_SIZE/8, Face.SQUARE_SIZE/8, Transparency.OPAQUE));
+        return new FaceImages(emptyOriginalImageIcon, emptyScaledImageIcon, emptyMagicMapImageIcon);
     }
 }
