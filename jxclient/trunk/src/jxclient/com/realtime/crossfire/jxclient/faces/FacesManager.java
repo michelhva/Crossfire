@@ -157,10 +157,23 @@ public class FacesManager
      * Returns the {@link Face} instance for a given face ID. Requests the face
      * face from the server if necessary.
      * @param faceNum the face ID to request
+     * @return the face
+     */
+    @NotNull
+    public Face getFace(final int faceNum)
+    {
+        getFaceImages(faceNum);
+        return faceCache.getFace(faceNum);
+    }
+
+    /**
+     * Returns the {@link Face} instance for a given face ID. Requests the face
+     * face from the server if necessary.
+     * @param faceNum the face ID to request
      * @return the face or <code>null</code> for the empty face
      */
     @Nullable
-    public Face getFace(final int faceNum)
+    public Face getFace2(final int faceNum)
     {
         if (faceNum == 0)
         {

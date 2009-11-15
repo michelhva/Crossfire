@@ -20,7 +20,7 @@
 
 package com.realtime.crossfire.jxclient.items;
 
-import com.realtime.crossfire.jxclient.faces.FaceCache;
+import com.realtime.crossfire.jxclient.faces.FacesManager;
 import com.realtime.crossfire.jxclient.server.ClientSocketState;
 import com.realtime.crossfire.jxclient.server.CrossfireServerConnection;
 import com.realtime.crossfire.jxclient.server.CrossfireStatsListener;
@@ -49,10 +49,10 @@ import org.jetbrains.annotations.Nullable;
 public class ItemsManager
 {
     /**
-     * The {@link FaceCache} instance for looking up faces.
+     * The {@link FacesManager} instance for looking up faces.
      */
     @NotNull
-    private final FaceCache faceCache;
+    private final FacesManager facesManager;
 
     /**
      * The {@link Stats} instance to update.
@@ -141,7 +141,7 @@ public class ItemsManager
         @Override
         public void additemReceived(final int location, final int tag, final int flags, final int weight, final int faceNum, @NotNull final String name, @NotNull final String namePl, final int anim, final int animSpeed, final int nrof, final int type)
         {
-            addItem(new CfItem(location, tag, flags, weight, faceCache.getFace(faceNum), name, namePl, anim, animSpeed, nrof, type));
+            addItem(new CfItem(location, tag, flags, weight, facesManager.getFace(faceNum), name, namePl, anim, animSpeed, nrof, type));
         }
 
         /** {@inheritDoc} */
@@ -157,7 +157,7 @@ public class ItemsManager
         {
             stats.setActiveSkill("");
             skillSet.clearNumberedSkills();
-            setPlayer(new CfPlayer(tag, weight, faceCache.getFace(faceNum), name));
+            setPlayer(new CfPlayer(tag, weight, facesManager.getFace(faceNum), name));
             stats.setStat(CrossfireStatsListener.C_STAT_WEIGHT, weight);
         }
 
@@ -261,14 +261,14 @@ public class ItemsManager
     /**
      * Creates a new instance.
      * @param crossfireServerConnection the connection to monitor
-     * @param faceCache the instance for looking up faces
+     * @param facesManager the faces manager for looking up faces
      * @param stats the instance to update
      * @param skillSet the skill set instance to update
      * @param window the window to attach to
      */
-    public ItemsManager(@NotNull final CrossfireServerConnection crossfireServerConnection, @NotNull final FaceCache faceCache, @NotNull final Stats stats, @NotNull final SkillSet skillSet, @NotNull final JXCWindow window)
+    public ItemsManager(@NotNull final CrossfireServerConnection crossfireServerConnection, @NotNull final FacesManager facesManager, @NotNull final Stats stats, @NotNull final SkillSet skillSet, @NotNull final JXCWindow window)
     {
-        this.faceCache = faceCache;
+        this.facesManager = facesManager;
         this.stats = stats;
         this.skillSet = skillSet;
         crossfireServerConnection.addCrossfireUpdateItemListener(crossfireUpdateItemListener);
@@ -701,7 +701,7 @@ public class ItemsManager
         }
 
         final boolean wasOpen = (flags&CfItem.UPD_FLAGS) != 0 && currentFloorManager.getCurrentFloor() == item.getTag() && item.isOpen();
-        item.update(flags, valFlags, valWeight, faceCache.getFace(valFaceNum), valName, valNamePl, valAnim, valAnimSpeed, valNrof);
+        item.update(flags, valFlags, valWeight, facesManager.getFace(valFaceNum), valName, valNamePl, valAnim, valAnimSpeed, valNrof);
         if ((flags&CfItem.UPD_LOCATION) != 0)
         {
             moveItem(item, valLocation);
