@@ -537,7 +537,7 @@ public class CfMapUpdater
         if (facesManager != null)
         {
             // request face information for later use
-            facesManager.getFaceImages(faceNum);
+            facesManager.requestFace(faceNum);
         }
         return faceNum == 0 ? null : faceCache.getFace(faceNum);
     }
