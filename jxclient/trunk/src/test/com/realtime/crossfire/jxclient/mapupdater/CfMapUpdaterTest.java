@@ -155,11 +155,11 @@ public class CfMapUpdaterTest extends TestCase
     {
         final FaceCache faceCache = new FaceCache();
         final FacesQueue facesQueue = new FacesQueue(null, new MemoryImageCache(), new MemoryImageCache(), new MemoryImageCache());
-        new FacesManager(faceCache, facesQueue);
+        final FacesManager facesManager = new FacesManager(faceCache, facesQueue);
         defineFace(faceCache, facesQueue, 1, "M", png64x64);
         defineFace(faceCache, facesQueue, 2, "_", png32x32);
 
-        final CfMapUpdater mapUpdater = new CfMapUpdater(faceCache, new Animations(null));
+        final CfMapUpdater mapUpdater = new CfMapUpdater(facesManager, new Animations(null));
 
         mapUpdater.processNewMap(5, 5);
         mapUpdater.processMapBegin();
@@ -208,7 +208,7 @@ public class CfMapUpdaterTest extends TestCase
         defineFace(faceCache, facesQueue, 4607, "woodfloor.111", png32x32);
         defineFace(faceCache, facesQueue, 312, "behemoth.x73", png64x64);
 
-        final CfMapUpdater mapUpdater = new CfMapUpdater(faceCache, new Animations(null));
+        final CfMapUpdater mapUpdater = new CfMapUpdater(facesManager, new Animations(null));
 
         mapUpdater.processNewMap(10, 10);
         mapUpdater.processMapBegin();
@@ -286,11 +286,11 @@ public class CfMapUpdaterTest extends TestCase
     {
         final FaceCache faceCache = new FaceCache();
         final FacesQueue facesQueue = new FacesQueue(null, new MemoryImageCache(), new MemoryImageCache(), new MemoryImageCache());
-        new FacesManager(faceCache, facesQueue);
+        final FacesManager facesManager = new FacesManager(faceCache, facesQueue);
         defineFace(faceCache, facesQueue, 7, "a.x11", png64x64);
         defineFace(faceCache, facesQueue, 8, "b.x12", png64x64);
 
-        final CfMapUpdater mapUpdater = new CfMapUpdater(faceCache, new Animations(null));
+        final CfMapUpdater mapUpdater = new CfMapUpdater(facesManager, new Animations(null));
 
         mapUpdater.processNewMap(10, 10);
         mapUpdater.processMapBegin();
@@ -316,8 +316,8 @@ public class CfMapUpdaterTest extends TestCase
     {
         final FaceCache faceCache = new FaceCache();
         final FacesQueue facesQueue = new FacesQueue(null, new MemoryImageCache(), new MemoryImageCache(), new MemoryImageCache());
-        new FacesManager(faceCache, facesQueue);
-        final CfMapUpdater mapUpdater = new CfMapUpdater(faceCache, new Animations(null));
+        final FacesManager facesManager = new FacesManager(faceCache, facesQueue);
+        final CfMapUpdater mapUpdater = new CfMapUpdater(facesManager, new Animations(null));
 
         mapUpdater.processNewMap(23, 16);
         defineFace(faceCache, facesQueue, 1316, "demon_lord.x11", png128x256);
