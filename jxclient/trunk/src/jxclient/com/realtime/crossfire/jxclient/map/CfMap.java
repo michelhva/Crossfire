@@ -413,7 +413,7 @@ public class CfMap
      * @return the map patch or <code>null</code> if the coordinates are out of
      * map bounds
      */
-    @Nullable
+    @NotNull
     private CfMapPatch expandTo(final int x, final int y)
     {
         if (minX > maxX || minY > maxY)
@@ -450,7 +450,9 @@ public class CfMap
             }
         }
 
-        return getMapPatch(x, y);
+        final CfMapPatch result = getMapPatch(x, y);
+        assert result != null;
+        return result;
     }
 
     /**
