@@ -23,7 +23,6 @@ import com.realtime.crossfire.jxclient.server.CrossfireFaceListener;
 import com.realtime.crossfire.jxclient.server.CrossfireServerConnection;
 import java.util.Arrays;
 import org.jetbrains.annotations.NotNull;
-import org.jetbrains.annotations.Nullable;
 
 /**
  * A cache for {@link Face} instances.
@@ -90,9 +89,9 @@ public class FaceCache
      *
      * @param faceNum The face id to look up.
      *
-     * @return The face, or <code>null</code> if the face is not cached.
+     * @return the face
      */
-    @Nullable
+    @NotNull
     public Face getFace(final int faceNum)
     {
         final Face face = faces[faceNum];
