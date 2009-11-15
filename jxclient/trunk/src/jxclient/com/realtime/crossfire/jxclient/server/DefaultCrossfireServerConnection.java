@@ -1294,18 +1294,22 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
                 args = pos;
                 {
                     final int startPos = pos;
-                    while (packet[pos] != '\n')
+                    while (pos < end && packet[pos] != '\n' && packet[pos] != ' ')
                     {
                         pos++;
                     }
                     final String infoType = new String(packet, startPos, pos-startPos, UTF8);
+                    if (pos < end)
+                    {
+                        pos++;
+                    }
                     if (debugProtocol != null)
                     {
-                        debugProtocol.debugProtocolWrite("recv replyinfo type="+infoType+" len="+(end-(pos+1)));
+                        debugProtocol.debugProtocolWrite("recv replyinfo type="+infoType+" len="+(end-pos));
                     }
                     try
                     {
-                        cmdReplyinfo(infoType, packet, pos+1, end);
+                        cmdReplyinfo(infoType, packet, pos, end);
                     }
                     catch (final IOException ex)
                     {
