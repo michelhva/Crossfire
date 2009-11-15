@@ -25,6 +25,7 @@ import java.util.Collection;
 import java.util.concurrent.CopyOnWriteArrayList;
 import javax.swing.ImageIcon;
 import org.jetbrains.annotations.NotNull;
+import org.jetbrains.annotations.Nullable;
 
 /**
  * Retrieves {@link Face} information by face ID. If a face is not available
@@ -153,12 +154,21 @@ public class FacesManager
     }
 
     /**
-     * Requests the given face from the server.
+     * Returns the {@link Face} instance for a given face ID. Requests the face
+     * face from the server if necessary.
      * @param faceNum the face ID to request
+     * @return the face or <code>null</code> for the empty face
      */
-    public void requestFace(final int faceNum)
+    @Nullable
+    public Face getFace(final int faceNum)
     {
+        if (faceNum == 0)
+        {
+            return null;
+        }
+
         getFaceImages(faceNum);
+        return faceCache.getFace(faceNum);
     }
 
     /**

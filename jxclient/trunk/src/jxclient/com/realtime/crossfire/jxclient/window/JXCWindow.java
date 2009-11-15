@@ -628,7 +628,7 @@ public class JXCWindow extends JFrame
         itemsManager = new ItemsManager(server, faceCache, stats, skillSet, this);
         final FacesQueue facesQueue = new FacesQueue(server, new FileCache(Filenames.getOriginalImageCacheDir()), new FileCache(Filenames.getScaledImageCacheDir()), new FileCache(Filenames.getMagicMapImageCacheDir()));
         facesManager = new FacesManager(faceCache, facesQueue);
-        mapUpdater = new CfMapUpdater(server, facesManager, faceCache, animations, this);
+        mapUpdater = new CfMapUpdater(server, facesManager, animations, this);
         spellsManager = new SpellsManager(server, this);
         commandQueue = new CommandQueue(server, this);
         new PoisonWatcher(stats, server);

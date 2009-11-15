@@ -22,7 +22,6 @@ package com.realtime.crossfire.jxclient.mapupdater;
 import com.realtime.crossfire.jxclient.animations.Animation;
 import com.realtime.crossfire.jxclient.animations.Animations;
 import com.realtime.crossfire.jxclient.faces.Face;
-import com.realtime.crossfire.jxclient.faces.FaceCache;
 import com.realtime.crossfire.jxclient.faces.FacesManager;
 import com.realtime.crossfire.jxclient.faces.FacesManagerListener;
 import com.realtime.crossfire.jxclient.map.CfMap;
@@ -65,14 +64,8 @@ public class CfMapUpdater
     /**
      * The {@link FacesManager} to track for updated faces.
      */
-    @Nullable
-    private final FacesManager facesManager;
-
-    /**
-     * The {@link FaceCache} instance for looking up faces.
-     */
     @NotNull
-    private final FaceCache faceCache;
+    private final FacesManager facesManager;
 
     /**
      * The defined animations.
@@ -299,14 +292,14 @@ public class CfMapUpdater
 
     /**
      * Creates a new instance.
-     * @param faceCache the instance for looking up faces
+     * @param facesManager the faces manager to track for updated faces
      * @param animations the defined animations
      */
-    public CfMapUpdater(@NotNull final FaceCache faceCache, @NotNull final Animations animations)
+    public CfMapUpdater(@NotNull final FacesManager facesManager, @NotNull final Animations animations)
     {
-        facesManager = null;
-        this.faceCache = faceCache;
+        this.facesManager = facesManager;
         this.animations = animations;
+        facesManager.addFacesManagerListener(facesManagerListener);
         map = new CfMap(mapSquareListener);
         visibleAnimations = new CfMapAnimations(this);
     }
@@ -315,22 +308,17 @@ public class CfMapUpdater
      * Creates a new instance.
      * @param crossfireServerConnection the connection to monitor
      * @param facesManager the faces manager to track for updated faces
-     * @param faceCache the instance for looking up faces
      * @param animations the defined animations
      * @param window the window to attach to
      */
-    public CfMapUpdater(@NotNull final CrossfireServerConnection crossfireServerConnection, @Nullable final FacesManager facesManager, @NotNull final FaceCache faceCache, @NotNull final Animations animations, @NotNull final JXCWindow window)
+    public CfMapUpdater(@NotNull final CrossfireServerConnection crossfireServerConnection, @NotNull final FacesManager facesManager, @NotNull final Animations animations, @NotNull final JXCWindow window)
     {
         this.facesManager = facesManager;
-        this.faceCache = faceCache;
         this.animations = animations;
-        crossfireServerConnection.addCrossfireUpdateMapListener(crossfireUpdateMapListener);
-        if (facesManager != null)
-        {
-            facesManager.addFacesManagerListener(facesManagerListener);
-        }
+        facesManager.addFacesManagerListener(facesManagerListener);
         map = new CfMap(mapSquareListener);
         visibleAnimations = new CfMapAnimations(crossfireServerConnection, this);
+        crossfireServerConnection.addCrossfireUpdateMapListener(crossfireUpdateMapListener);
         window.addConnectionStateListener(guiStateListener);
     }
 
@@ -534,12 +522,7 @@ public class CfMapUpdater
     @Nullable
     private Face getFace(final int faceNum)
     {
-        if (facesManager != null)
-        {
-            // request face information for later use
-            facesManager.requestFace(faceNum);
-        }
-        return faceNum == 0 ? null : faceCache.getFace(faceNum);
+        return facesManager.getFace(faceNum);
     }
 
     /**
