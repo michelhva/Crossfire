@@ -29,7 +29,7 @@ import org.jetbrains.annotations.NotNull;
  * implement only the actual face loading code.
  * @author Andreas Kirschbaum
  */
-public abstract class DefaultFaceQueue implements FaceQueue
+public abstract class AbstractFaceQueue implements FaceQueue
 {
     /**
      * The registered {@link FaceQueueListener}s.

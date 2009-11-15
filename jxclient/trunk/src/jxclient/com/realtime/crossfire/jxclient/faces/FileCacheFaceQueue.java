@@ -30,7 +30,7 @@ import org.jetbrains.annotations.NotNull;
  * A {@link FaceQueue} loading faces from {@link ImageCache} instances.
  * @author Andreas Kirschbaum
  */
-public class FileCacheFaceQueue extends DefaultFaceQueue
+public class FileCacheFaceQueue extends AbstractFaceQueue
 {
     /**
      * The object used for synchronization.

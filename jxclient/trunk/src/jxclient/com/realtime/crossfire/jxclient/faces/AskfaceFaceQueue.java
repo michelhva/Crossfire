@@ -35,7 +35,7 @@ import org.jetbrains.annotations.Nullable;
  * Crossfire server.
  * @author Andreas Kirschbaum
  */
-public class AskfaceFaceQueue extends DefaultFaceQueue
+public class AskfaceFaceQueue extends AbstractFaceQueue
 {
     /**
      * The maximum number of concurrently sent "askface" commands. If more are

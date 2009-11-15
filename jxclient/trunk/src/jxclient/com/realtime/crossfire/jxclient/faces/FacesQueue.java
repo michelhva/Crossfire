@@ -29,7 +29,7 @@ import org.jetbrains.annotations.Nullable;
  * fails, the face is requested through a {@link AskfaceFaceQueue}.
  * @author Andreas Kirschbaum
  */
-public class FacesQueue extends DefaultFaceQueue
+public class FacesQueue extends AbstractFaceQueue
 {
     /**
      * The {@link FileCacheFaceQueue} instance used to load faces from the file
