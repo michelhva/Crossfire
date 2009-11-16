@@ -20,5 +20,5 @@ resist_electricity 100
 msg
 Grants complete protection from
 electrical attacks.
-msgend
+endmsg
 end
