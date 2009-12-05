@@ -9,7 +9,7 @@ enter_x 1
 enter_y 1
 msg
 Created:  2001-02-16
-Modified: 2009-10-23 Andreas Kirschbaum
+Modified: 2009-12-05 Nicolas Weeger
 endmsg
 outdoor 1
 tile_path_1 world_105_114
@@ -5963,6 +5963,10 @@ y 29
 elevation -90
 end
 arch bungalow
+name Tyl's house
+slaying /scorn/houses/tyl
+hp 4
+sp 8
 x 13
 y 29
 end
@@ -12120,10 +12124,12 @@ speed 1
 move_type walk
 unique 1
 arch event_say
+name event_say
 title Python
 slaying /python/items/roll-o-matic.py
 end
 arch event_time
+name event_time
 title Python
 slaying /python/items/roll-o-matic.py
 end

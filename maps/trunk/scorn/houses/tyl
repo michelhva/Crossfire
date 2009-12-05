@@ -1,0 +1,576 @@
+arch map
+name Tyl's house
+width 10
+height 10
+enter_x 4
+enter_y 8
+msg
+Created:  2009-12-05 Nicolas Weeger
+Modified: 2009-12-05 Nicolas Weeger
+endmsg
+end
+arch woodfloor
+end
+arch wall_2_2_2
+end
+arch woodfloor
+y 1
+end
+arch wall_2_1_1
+y 1
+end
+arch woodfloor
+y 2
+end
+arch wall_2_1_1
+y 2
+end
+arch woodfloor
+y 3
+end
+arch wall_2_1_1
+y 3
+end
+arch woodfloor
+y 4
+end
+arch wall_2_1_1
+y 4
+end
+arch woodfloor
+y 5
+end
+arch wall_2_1_1
+y 5
+end
+arch woodfloor
+y 6
+end
+arch wall_2_1_1
+y 6
+end
+arch woodfloor
+y 7
+end
+arch wall_2_1_1
+y 7
+end
+arch woodfloor
+y 8
+end
+arch wall_2_1_1
+y 8
+end
+arch woodfloor
+y 9
+end
+arch wall_2_2_1
+y 9
+end
+arch woodfloor
+x 1
+end
+arch wall_2_1_2
+x 1
+end
+arch woodfloor
+x 1
+y 1
+end
+arch woodfloor
+x 1
+y 2
+end
+arch woodfloor
+x 1
+y 3
+end
+arch woodfloor
+x 1
+y 4
+end
+arch woodfloor
+x 1
+y 5
+end
+arch woodfloor
+x 1
+y 6
+end
+arch woodfloor
+x 1
+y 7
+end
+arch woodfloor
+x 1
+y 8
+end
+arch woodfloor
+x 1
+y 9
+end
+arch wall_2_1_2
+x 1
+y 9
+end
+arch woodfloor
+x 2
+end
+arch wall_2_1_2
+x 2
+end
+arch woodfloor
+x 2
+y 1
+end
+arch woodfloor
+x 2
+y 2
+end
+arch woodfloor
+x 2
+y 3
+end
+arch woodfloor
+x 2
+y 4
+end
+arch woodfloor
+x 2
+y 5
+end
+arch woodfloor
+x 2
+y 6
+end
+arch woodfloor
+x 2
+y 7
+end
+arch woodfloor
+x 2
+y 8
+end
+arch woodfloor
+x 2
+y 9
+end
+arch wall_2_1_2
+x 2
+y 9
+end
+arch woodfloor
+x 3
+end
+arch wall_2_1_2
+x 3
+end
+arch woodfloor
+x 3
+y 1
+end
+arch woodfloor
+x 3
+y 2
+end
+arch woodfloor
+x 3
+y 3
+end
+arch woodfloor
+x 3
+y 4
+end
+arch magic_ear
+msg
+@match please
+Click.
+endmsg
+x 3
+y 5
+connected 1
+end
+arch woodfloor
+x 3
+y 5
+end
+arch guildmaster
+name Tyl
+msg
+@match please
+Ha well, you seem like a decent follow, so feel free to go look, but don't pick any one of them, please!
+@match see
+Well, I'm not sure, they are precious ones...
+@match store
+@question see Could I see them?
+I store them in this house, in the attic.
+@match job
+@question store Where do you store all those books?
+I collect stories, books, whatever I can find.
+@match hello
+@question job What is your job?
+Hello there!
+@match *
+*grumble*
+endmsg
+x 3
+y 5
+speed 0.1
+type 0
+end
+arch woodfloor
+x 3
+y 6
+end
+arch woodfloor
+x 3
+y 7
+end
+arch woodfloor
+x 3
+y 8
+end
+arch woodfloor
+x 3
+y 9
+end
+arch wall_1_3
+x 3
+y 9
+end
+arch woodfloor
+x 4
+end
+arch wall_2_1_2
+x 4
+end
+arch woodfloor
+x 4
+y 1
+end
+arch woodfloor
+x 4
+y 2
+end
+arch woodfloor
+x 4
+y 3
+end
+arch woodfloor
+x 4
+y 4
+end
+arch woodfloor
+x 4
+y 5
+end
+arch woodfloor
+x 4
+y 6
+end
+arch woodfloor
+x 4
+y 7
+end
+arch woodfloor
+x 4
+y 8
+end
+arch invis_exit
+slaying /world/world_105_115
+hp 13
+sp 29
+x 4
+y 9
+end
+arch woodfloor
+x 4
+y 9
+end
+arch door_2
+x 4
+y 9
+move_block 0
+end
+arch woodfloor
+x 5
+end
+arch wall_2_1_2
+x 5
+end
+arch woodfloor
+x 5
+y 1
+end
+arch woodfloor
+x 5
+y 2
+end
+arch woodfloor
+x 5
+y 3
+end
+arch woodfloor
+x 5
+y 4
+end
+arch woodfloor
+x 5
+y 5
+end
+arch woodfloor
+x 5
+y 6
+end
+arch woodfloor
+x 5
+y 7
+end
+arch woodfloor
+x 5
+y 8
+end
+arch woodfloor
+x 5
+y 9
+end
+arch wall_1_4
+x 5
+y 9
+end
+arch woodfloor
+x 6
+end
+arch wall_2_1_2
+x 6
+end
+arch woodfloor
+x 6
+y 1
+end
+arch woodfloor
+x 6
+y 2
+end
+arch woodfloor
+x 6
+y 3
+end
+arch woodfloor
+x 6
+y 4
+end
+arch woodfloor
+x 6
+y 5
+end
+arch woodfloor
+x 6
+y 6
+end
+arch woodfloor
+x 6
+y 7
+end
+arch woodfloor
+x 6
+y 8
+end
+arch woodfloor
+x 6
+y 9
+end
+arch wall_2_1_2
+x 6
+y 9
+end
+arch woodfloor
+x 7
+end
+arch wall_3_3
+x 7
+end
+arch woodfloor
+x 7
+y 1
+end
+arch wall_2_1_1
+x 7
+y 1
+end
+arch woodfloor
+x 7
+y 2
+end
+arch wall_1_2
+x 7
+y 2
+end
+arch woodfloor
+x 7
+y 3
+end
+arch woodfloor
+x 7
+y 4
+end
+arch woodfloor
+x 7
+y 5
+end
+arch woodfloor
+x 7
+y 6
+end
+arch woodfloor
+x 7
+y 7
+end
+arch woodfloor
+x 7
+y 8
+end
+arch woodfloor
+x 7
+y 9
+end
+arch wall_2_1_2
+x 7
+y 9
+end
+arch woodfloor
+x 8
+end
+arch wall_2_1_2
+x 8
+end
+arch woodfloor
+x 8
+y 1
+end
+arch stair_3_up
+slaying tyl_attic
+hp 8
+sp 1
+x 8
+y 1
+end
+arch woodfloor
+x 8
+y 2
+end
+arch odoorn2_closed_1
+x 8
+y 2
+connected 1
+end
+arch woodfloor
+x 8
+y 3
+end
+arch woodfloor
+x 8
+y 4
+end
+arch woodfloor
+x 8
+y 5
+end
+arch woodfloor
+x 8
+y 6
+end
+arch woodfloor
+x 8
+y 7
+end
+arch woodfloor
+x 8
+y 8
+end
+arch woodfloor
+x 8
+y 9
+end
+arch wall_2_1_2
+x 8
+y 9
+end
+arch woodfloor
+x 9
+end
+arch wall_2_2_3
+x 9
+end
+arch woodfloor
+x 9
+y 1
+end
+arch wall_2_1_1
+x 9
+y 1
+end
+arch woodfloor
+x 9
+y 2
+end
+arch wall_2_1_1
+x 9
+y 2
+end
+arch woodfloor
+x 9
+y 3
+end
+arch wall_2_1_1
+x 9
+y 3
+end
+arch woodfloor
+x 9
+y 4
+end
+arch wall_2_1_1
+x 9
+y 4
+end
+arch woodfloor
+x 9
+y 5
+end
+arch wall_2_1_1
+x 9
+y 5
+end
+arch woodfloor
+x 9
+y 6
+end
+arch wall_2_1_1
+x 9
+y 6
+end
+arch woodfloor
+x 9
+y 7
+end
+arch wall_2_1_1
+x 9
+y 7
+end
+arch woodfloor
+x 9
+y 8
+end
+arch wall_2_1_1
+x 9
+y 8
+end
+arch woodfloor
+x 9
+y 9
+end
+arch wall_2_2_4
+x 9
+y 9
+end
