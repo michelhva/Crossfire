@@ -2,7 +2,6 @@ Object tunic
 name shirt
 name_pl shirts
 client_type 256
-nrof 1
 type 16
 face tunic.111
 last_sp 20

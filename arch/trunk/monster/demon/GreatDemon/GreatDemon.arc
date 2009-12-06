@@ -5,7 +5,6 @@ race demon
 face GreatDemon.x11
 Con 80
 Pow 80
-can_cast_spell 1
 can_see_in_dark 1
 can_use_scroll 1
 can_use_skill 1

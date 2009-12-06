@@ -19,7 +19,6 @@ Int 15
 Dex 13
 Con 8
 Pow 1
-maxsp 10
 can_cast_spell 1
 Wis 20
 attacktype 4098

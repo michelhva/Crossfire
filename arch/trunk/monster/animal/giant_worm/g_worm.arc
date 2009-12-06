@@ -3,7 +3,6 @@ name Giant Worm
 face g_worm.x31
 animation g_worm
 race animal
-attacktype 1025
 monster 1
 move_type walk
 sleep 1

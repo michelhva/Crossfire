@@ -1,5 +1,4 @@
 Object gloves_b
-nrof 1
 name gloves
 client_type 301
 face gloves_b.111

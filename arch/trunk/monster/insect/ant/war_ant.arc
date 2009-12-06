@@ -6,7 +6,6 @@ animation war_ant
 monster 1
 move_type walk
 sleep 1
-Wis 5
 no_pick 1
 alive 1
 exp 1500

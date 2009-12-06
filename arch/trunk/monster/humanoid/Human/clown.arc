@@ -30,7 +30,6 @@ resist_weaponmagic 100
 reflect_spell 1
 reflect_missile 1
 level 10
-can_use_skill 1
 can_use_range 1
 can_use_bow 1
 can_use_ring 1

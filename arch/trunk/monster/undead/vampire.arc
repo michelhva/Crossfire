@@ -3,7 +3,6 @@ randomitems vampire
 race undead
 face vampire.111
 animation vampire
-no_pick 1
 sp 40
 maxsp 40
 Pow 32

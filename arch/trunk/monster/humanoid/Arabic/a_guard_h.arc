@@ -13,14 +13,12 @@ see_invisible 1
 no_pick 1
 no_magic 1
 resist_magic 100
-
 reflect_missile 1
 reflect_spell 1
 hp 250
 maxhp 250
 Int 13
 Dex 12
-Str 18
 Con 15
 Pow 3
 sp 25

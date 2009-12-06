@@ -25,7 +25,6 @@ dam 22
 speed 0.08
 resist_electricity 50
 weight 140000
-run_away 15
 run_away 30
 can_use_scroll 1
 can_use_skill 1

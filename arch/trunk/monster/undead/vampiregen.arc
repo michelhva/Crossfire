@@ -12,7 +12,6 @@ exp 200
 ac 0
 resist_cold 100
 speed 0.001
-weight -1
 sp 127
 maxsp 1
 weight 2000000

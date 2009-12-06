@@ -6,7 +6,6 @@ animation nazgul
 hp 200
 maxhp 200
 Con 10
-Wis 15
 exp 12000
 dam 10
 wc 8

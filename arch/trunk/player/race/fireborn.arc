@@ -38,7 +38,6 @@ resist_cold -30
 resist_ghosthit -50
 # Do they have shoulders?  Or waists?  Or wrists?
 body_range 1
-body_neck 1
 body_neck 2
 body_skill 1
 body_finger 4

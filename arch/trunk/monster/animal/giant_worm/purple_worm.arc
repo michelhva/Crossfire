@@ -3,7 +3,6 @@ name Purple Worm
 face purple_worm.x31
 animation purple_worm
 race animal
-attacktype 1025
 monster 1
 sleep 1
 Str 40

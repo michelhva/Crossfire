@@ -14,7 +14,6 @@ Dex 30
 Str 80
 Con 28
 Pow 48
-can_cast_spell 1
 sp 100
 maxsp 100
 hp 3500

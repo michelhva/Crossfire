@@ -2,7 +2,6 @@ Object lapron
 name apron
 name_pl aprons
 client_type 257
-nrof 1
 type 16
 face lapron.111
 last_sp 11

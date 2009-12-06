@@ -14,7 +14,6 @@ subtype 4
 value 100
 attacktype 32770
 range 12
-duration 1
 no_drop 1
 invisible 1
 duration 8

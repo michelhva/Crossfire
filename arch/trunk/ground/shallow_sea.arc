@@ -8,7 +8,6 @@ smoothface shallow_sea.114 shallow_sea_S.114
 smoothlevel 19
 anim_speed 5
 client_anim_sync 1
-move_block all
 no_pick 1
 is_water 1
 is_floor 1
