@@ -8,6 +8,7 @@ import com.realtime.crossfire.jxclient.server.CrossfireExpTableListener;
 import com.realtime.crossfire.jxclient.server.CrossfireFaceListener;
 import com.realtime.crossfire.jxclient.server.CrossfireMagicmapListener;
 import com.realtime.crossfire.jxclient.server.CrossfireMusicListener;
+import com.realtime.crossfire.jxclient.server.CrossfirePickupListener;
 import com.realtime.crossfire.jxclient.server.CrossfireQueryListener;
 import com.realtime.crossfire.jxclient.server.CrossfireServerConnection;
 import com.realtime.crossfire.jxclient.server.CrossfireServerConnectionListener;
@@ -21,8 +22,8 @@ import com.realtime.crossfire.jxclient.server.CrossfireUpdateItemListener;
 import com.realtime.crossfire.jxclient.server.CrossfireUpdateMapListener;
 import com.realtime.crossfire.jxclient.server.MapSizeListener;
 import com.realtime.crossfire.jxclient.server.ReceivedPacketListener;
-import junit.framework.Assert;
 import org.jetbrains.annotations.NotNull;
+import org.junit.Assert;
 
 /**
  * Implements {@link CrossfireServerConnection} for regression tests. All
@@ -210,6 +211,20 @@ public class TestCrossfireServerConnection implements CrossfireServerConnection
     /** {@inheritDoc} */
     @Override
     public void removeCrossfireSkillInfoListener(@NotNull final CrossfireSkillInfoListener listener)
+    {
+        Assert.fail();
+    }
+
+    /** {@inheritDoc} */
+    @Override
+    public void addCrossfirePickupListener(@NotNull final CrossfirePickupListener listener)
+    {
+        Assert.fail();
+    }
+
+    /** {@inheritDoc} */
+    @Override
+    public void removeCrossfirePickupListener(@NotNull final CrossfirePickupListener listener)
     {
         Assert.fail();
     }

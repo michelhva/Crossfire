@@ -213,7 +213,15 @@ public class Pickup
      */
     public void setPickupMode(final long pickupMode)
     {
+        if (this.pickupMode == pickupMode)
+        {
+            return;
+        }
         this.pickupMode = pickupMode;
+        for (final PickupOption pickupOption : pickupOptions)
+        {
+            pickupOption.setPickupMode(pickupMode);
+        }
     }
 
     /**
@@ -253,7 +261,7 @@ public class Pickup
      */
     public void update()
     {
-        commandQueue.sendNcom(true, 1, "pickup "+(pickupMode == PU_NOTHING ? 0 : (pickupMode|PU_NEWMODE)));
+        commandQueue.sendNcom(true, 1, "pickup "+((pickupMode == PU_NOTHING ? 0 : (pickupMode|PU_NEWMODE))&0xFFFFFFFFL));
         for (final PickupOption pickupOption : pickupOptions)
         {
             pickupOption.setPickupMode(pickupMode);

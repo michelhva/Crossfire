@@ -1,6 +1,7 @@
 package com.realtime.crossfire.jxclient.window;
 
 import com.realtime.crossfire.jxclient.server.ClientSocketState;
+import com.realtime.crossfire.jxclient.server.CrossfirePickupListener;
 import com.realtime.crossfire.jxclient.server.CrossfireServerConnection;
 import com.realtime.crossfire.jxclient.server.Pickup;
 import com.realtime.crossfire.jxclient.settings.Settings;
@@ -135,6 +136,20 @@ public class JXCConnection
     };
 
     /**
+     * The {@link CrossfirePickupListener} for tracking pickup mode changes.
+     */
+    @NotNull
+    private final CrossfirePickupListener crossfirePickupListener = new CrossfirePickupListener()
+    {
+        /** {@inheritDoc} */
+        @Override
+        public void pickupChanged(final int pickupOptions)
+        {
+            characterPickup.setPickupMode(pickupOptions);
+        }
+    };
+
+    /**
      * Creates a new instance.
      * @param keybindingsManager the keybindings manager to update
      * @param shortcutsManager the shortcuts manager to update
@@ -194,6 +209,7 @@ public class JXCConnection
 
         if (hostname != null && this.character != null)
         {
+            server.removeCrossfirePickupListener(crossfirePickupListener);
             final long pickupMode = characterPickup.getPickupMode();
             if (pickupMode != Pickup.PU_NOTHING)
             {
@@ -213,6 +229,7 @@ public class JXCConnection
             keybindingsManager.loadPerCharacterBindings(hostname, character);
             shortcutsManager.loadShortcuts(hostname, character);
             characterPickup.setPickupMode(settings.getLong("pickup_"+hostname+"_"+character, Pickup.PU_NOTHING));
+            server.addCrossfirePickupListener(crossfirePickupListener);
         }
     }
 

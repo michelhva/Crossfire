@@ -188,6 +188,18 @@ public interface CrossfireServerConnection extends ServerConnection
     void removeCrossfireSkillInfoListener(@NotNull CrossfireSkillInfoListener listener);
 
     /**
+     * Adds a listener to be notified about received "pickup" messages.
+     * @param listener the listener to add
+     */
+    void addCrossfirePickupListener(@NotNull CrossfirePickupListener listener);
+
+    /**
+     * Removes a listener to be notified about received "pickup" messages.
+     * @param listener the listener to remove
+     */
+    void removeCrossfirePickupListener(@NotNull CrossfirePickupListener listener);
+
+    /**
      * Adds a listener to be notified about received packets.
      * @param listener the listener to add
      */
