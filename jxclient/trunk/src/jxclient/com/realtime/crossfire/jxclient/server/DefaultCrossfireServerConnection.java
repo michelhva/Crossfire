@@ -189,6 +189,12 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
     private final Collection<CrossfireSkillInfoListener> crossfireSkillInfoListeners = new ArrayList<CrossfireSkillInfoListener>();
 
     /**
+     * The {@link CrossfirePickupListener}s to be notified.
+     */
+    @NotNull
+    private final Collection<CrossfirePickupListener> crossfirePickupListeners = new ArrayList<CrossfirePickupListener>();
+
+    /**
      * Buffer to build commands to send. It is shared between all sendXxx()
      * functions. It is used to synchronize these functions.
      */
@@ -528,6 +534,20 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
     public void removeCrossfireSkillInfoListener(@NotNull final CrossfireSkillInfoListener listener)
     {
         crossfireSkillInfoListeners.remove(listener);
+    }
+
+    /** {@inheritDoc} */
+    @Override
+    public void addCrossfirePickupListener(@NotNull final CrossfirePickupListener listener)
+    {
+        crossfirePickupListeners.add(listener);
+    }
+
+    /** {@inheritDoc} */
+    @Override
+    public void removeCrossfirePickupListener(@NotNull final CrossfirePickupListener listener)
+    {
+        crossfirePickupListeners.remove(listener);
     }
 
     /**
@@ -1218,32 +1238,57 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
                 return;
 
             case 'p':
-                if (packet[pos++] != 'l') break;
-                if (packet[pos++] != 'a') break;
-                if (packet[pos++] != 'y') break;
-                if (packet[pos++] != 'e') break;
-                if (packet[pos++] != 'r') break;
-                if (packet[pos++] != ' ') break;
-                args = pos;
-                {
-                    final int tag = ((packet[pos++]&0xFF)<<24)|((packet[pos++]&0xFF)<<16)|((packet[pos++]&0xFF)<<8)|(packet[pos++]&0xFF);
-                    final int weight = ((packet[pos++]&0xFF)<<24)|((packet[pos++]&0xFF)<<16)|((packet[pos++]&0xFF)<<8)|(packet[pos++]&0xFF);
-                    final int faceNum = ((packet[pos++]&0xFF)<<24)|((packet[pos++]&0xFF)<<16)|((packet[pos++]&0xFF)<<8)|(packet[pos++]&0xFF);
-                    final int nameLength = packet[pos++]&0xFF;
-                    final String name = new String(packet, pos, nameLength, UTF8);
-                    pos += nameLength;
-                    if (pos != end) break;
-                    if (debugProtocol != null)
+                switch (packet[pos++]) {
+                case 'i':
+                    if (packet[pos++] != 'c') break;
+                    if (packet[pos++] != 'k') break;
+                    if (packet[pos++] != 'u') break;
+                    if (packet[pos++] != 'p') break;
+                    if (packet[pos++] != ' ') break;
+                    args = pos;
                     {
-                        debugProtocol.debugProtocolWrite("recv player tag="+tag+" weight="+weight+" face="+faceNum+" name="+name);
+                        final int pickupOptions = ((packet[pos++]&0xFF)<<24)|((packet[pos++]&0xFF)<<16)|((packet[pos++]&0xFF)<<8)|(packet[pos++]&0xFF);
+                        if (pos != end) break;
+                        if (debugProtocol != null)
+                        {
+                            debugProtocol.debugProtocolWrite("recv pickup options="+pickupOptions);
+                        }
+                        for (final CrossfirePickupListener crossfirePickupListener : crossfirePickupListeners)
+                        {
+                            crossfirePickupListener.pickupChanged(pickupOptions);
+                        }
+                        notifyPacketWatcherListenersMixed(packet, start, args, end);
                     }
-                    for (final CrossfireUpdateItemListener crossfireUpdateItemListener : crossfireUpdateItemListeners)
+                    return;
+
+                case 'l':
+                    if (packet[pos++] != 'a') break;
+                    if (packet[pos++] != 'y') break;
+                    if (packet[pos++] != 'e') break;
+                    if (packet[pos++] != 'r') break;
+                    if (packet[pos++] != ' ') break;
+                    args = pos;
                     {
-                        crossfireUpdateItemListener.playerReceived(tag, weight, faceNum, name);
+                        final int tag = ((packet[pos++]&0xFF)<<24)|((packet[pos++]&0xFF)<<16)|((packet[pos++]&0xFF)<<8)|(packet[pos++]&0xFF);
+                        final int weight = ((packet[pos++]&0xFF)<<24)|((packet[pos++]&0xFF)<<16)|((packet[pos++]&0xFF)<<8)|(packet[pos++]&0xFF);
+                        final int faceNum = ((packet[pos++]&0xFF)<<24)|((packet[pos++]&0xFF)<<16)|((packet[pos++]&0xFF)<<8)|(packet[pos++]&0xFF);
+                        final int nameLength = packet[pos++]&0xFF;
+                        final String name = new String(packet, pos, nameLength, UTF8);
+                        pos += nameLength;
+                        if (pos != end) break;
+                        if (debugProtocol != null)
+                        {
+                            debugProtocol.debugProtocolWrite("recv player tag="+tag+" weight="+weight+" face="+faceNum+" name="+name);
+                        }
+                        for (final CrossfireUpdateItemListener crossfireUpdateItemListener : crossfireUpdateItemListeners)
+                        {
+                            crossfireUpdateItemListener.playerReceived(tag, weight, faceNum, name);
+                        }
                     }
+                    notifyPacketWatcherListenersMixed(packet, start, args, end);
+                    return;
                 }
-                notifyPacketWatcherListenersMixed(packet, start, args, end);
-                return;
+                break;
 
             case 'q':
                 if (packet[pos++] != 'u') break;
@@ -1986,6 +2031,7 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
     {
         setClientSocketState(ClientSocketState.VERSION, ClientSocketState.SETUP);
         sendSetup(
+            "want_pickup 1",
             "faceset 0",
             "sound 3",
             "sound2 3",
@@ -2284,6 +2330,10 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
             else if (option.equals("faceset"))
             {
                 // ignore: we do not care about the face set
+            }
+            else if (option.equals("want_pickup"))
+            {
+                // ignore: we do not care whether this option has been ignored
             }
             else
             {
