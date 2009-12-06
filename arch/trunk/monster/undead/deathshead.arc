@@ -29,7 +29,6 @@ resist_acid 90
 resist_paralyze 100
 resist_fear 100
 resist_blind 100
-resist_death 100
 resist_confusion 100
 resist_ghosthit 100
 resist_deplete 100

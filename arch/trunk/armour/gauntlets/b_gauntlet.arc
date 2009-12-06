@@ -1,5 +1,4 @@
 Object b_gauntlets
-nrof 1
 name gauntlets
 client_type 305
 face b_gauntlet_s.111

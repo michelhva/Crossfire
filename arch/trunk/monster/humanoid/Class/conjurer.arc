@@ -22,7 +22,6 @@ exp 25
 speed -0.15
 weight 50000
 level 3
-can_cast_spell 1
 can_use_skill 1
 can_use_scroll 1
 can_use_range 1

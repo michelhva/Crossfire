@@ -10,7 +10,6 @@ path_attuned 2
 other_arch firebolt
 dam 10
 dam_modifier 3
-duration 1
 maxsp 30
 skill pyromancy
 type 101

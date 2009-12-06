@@ -8,6 +8,5 @@ value 50
 weight 1500
 identified 1
 name_pl legs of mutton
-name_pl leg of mutton
 client_type 601
 end

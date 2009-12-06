@@ -1,6 +1,5 @@
 Object mercury
 face mercury.111
-material 2
 value 210
 resist_electricity 100
 resist_acid 100

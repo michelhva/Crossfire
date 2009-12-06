@@ -6,7 +6,6 @@ face bone_head.111
 animation bone_head
 monster 1
 move_type walk fly_low
-sleep 1
 friendly 1
 Wis 20
 no_pick 1

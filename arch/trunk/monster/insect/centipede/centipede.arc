@@ -7,7 +7,6 @@ speed -0.1
 generator 1
 sp 135
 maxsp 60
-weight -1
 no_pick 1
 animation centipede
 monster 1

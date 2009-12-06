@@ -17,7 +17,6 @@ maxhp 60
 speed 0.1
 value 58
 weight 40
-name_pl horns
 client_type 721
 body_range -1
 startequip 1

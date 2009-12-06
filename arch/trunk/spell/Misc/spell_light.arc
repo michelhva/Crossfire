@@ -17,7 +17,6 @@ dam 2
 dam_modifier 20
 duration 1000
 duration_modifier 1
-range_modifier 1
 range_modifier 10
 range 2
 maxgrace 10

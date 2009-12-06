@@ -1,5 +1,4 @@
 Object gloves_w
-nrof 1
 name gloves
 client_type 301
 face gloves_w.111
@@ -15,7 +14,6 @@ weight 100
 body_hand -2
 end
 Object gloves_w_l
-nrof 1
 name gloves
 client_type 301
 face gloves_w.111

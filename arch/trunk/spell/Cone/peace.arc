@@ -7,7 +7,6 @@ wc -90
 move_type fly_low
 type 102
 subtype 7
-no_pick 1
 speed 1
 no_pick 1
 end

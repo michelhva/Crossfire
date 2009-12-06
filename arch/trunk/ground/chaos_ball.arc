@@ -13,7 +13,6 @@ animation chaos_ball
 is_used_up 1
 random_movement 1
 speed 1
-no_pick 1
 attacktype 262144
 move_type fly_low
 no_pick 1

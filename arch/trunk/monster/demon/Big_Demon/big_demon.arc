@@ -13,7 +13,6 @@ resist_confusion 100
 resist_poison 100
 attacktype 1029
 can_see_in_dark 1
-can_cast_spell 1
 see_invisible 1
 exp 20000
 ac -2
@@ -28,7 +27,6 @@ sp 30
 maxsp 50
 maxhp 1000
 level 20
-alive 1
 speed 0.3
 weight 300000
 monster 1

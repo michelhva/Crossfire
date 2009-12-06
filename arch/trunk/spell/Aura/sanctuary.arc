@@ -8,7 +8,6 @@ type 102
 subtype 46
 dam 1
 no_drop 1
-no_pick 1
 speed 1
 no_pick 1
 end

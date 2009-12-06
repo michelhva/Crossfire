@@ -11,7 +11,6 @@ ac 4
 wc 13
 dam 20
 speed 0.3
-attacktype 1048577
 Wis 12
 see_invisible 1
 no_pick 1

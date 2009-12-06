@@ -33,7 +33,6 @@ Int 30
 Dex 40
 Pow 40
 maxsp 90
-can_cast_spell 1
 hp 4000
 maxhp 4000
 level 30
