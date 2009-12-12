@@ -6,7 +6,7 @@ invisible 1
 no_drop 1
 subtype 3
 body_skill -1
-exp 50
+exp 25
 level 250
 end
 
