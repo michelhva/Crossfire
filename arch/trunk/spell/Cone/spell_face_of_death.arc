@@ -3,7 +3,7 @@ anim_suffix spellcasting
 name face of death
 name_pl face of death
 face spell_praying.111
-level 44
+level 34
 grace 80
 casting_time 10
 path_attuned 262144
