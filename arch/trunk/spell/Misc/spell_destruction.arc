@@ -3,7 +3,7 @@ anim_suffix spellcasting
 name destruction
 name_pl destruction
 face spell_sorcery.111
-level 36
+level 30
 sp 30
 casting_time 10
 path_attuned 0

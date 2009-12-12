@@ -3,7 +3,7 @@ anim_suffix spellcasting
 name protection from draining
 name_pl protection from draining
 face spell_praying.111
-level 18
+level 8
 grace 25
 casting_time 10
 path_attuned 1

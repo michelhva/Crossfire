@@ -3,7 +3,7 @@ anim_suffix spellcasting
 name restoration
 name_pl restoration
 face spell_praying.111
-level 40
+level 32
 grace 80
 casting_time 15
 path_attuned 256

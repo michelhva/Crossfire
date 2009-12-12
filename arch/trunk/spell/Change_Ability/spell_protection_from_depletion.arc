@@ -3,7 +3,7 @@ anim_suffix spellcasting
 name protection from depletion
 name_pl protection from depletion
 face spell_praying.111
-level 14
+level 6
 grace 20
 casting_time 10
 path_attuned 1

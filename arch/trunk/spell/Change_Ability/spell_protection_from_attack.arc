@@ -3,7 +3,7 @@ anim_suffix spellcasting
 name protection from attack
 name_pl protection from attack
 face spell_praying.111
-level 26
+level 16
 grace 50
 casting_time 15
 path_attuned 1

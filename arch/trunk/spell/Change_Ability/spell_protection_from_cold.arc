@@ -3,7 +3,7 @@ anim_suffix spellcasting
 name protection from cold
 name_pl protection from cold
 face spell_praying.111
-level 6
+level 2
 grace 15
 casting_time 10
 path_attuned 1
