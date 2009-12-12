@@ -14,7 +14,7 @@ subtype 15
 value 40
 no_drop 1
 invisible 1
-duration 800
+duration 10000
 duration_modifier 1
 range 2
 range_modifier 10

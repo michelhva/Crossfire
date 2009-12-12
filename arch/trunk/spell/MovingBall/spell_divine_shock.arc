@@ -5,7 +5,7 @@ name_pl divine shock
 face spell_praying.111
 type 101
 subtype 35
-level 1
+level 10
 value 10
 grace 3
 casting_time 10

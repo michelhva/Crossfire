@@ -3,7 +3,7 @@ anim_suffix spellcasting
 name protection from electricity
 name_pl protection from electricity
 face spell_praying.111
-level 8
+level 3
 grace 15
 casting_time 10
 path_attuned 1

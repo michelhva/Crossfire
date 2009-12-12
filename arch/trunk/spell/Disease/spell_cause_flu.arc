@@ -5,7 +5,7 @@ name_pl cause flu
 face spell_praying.111
 type 101
 subtype 45
-level 2
+level 4
 value 20
 grace 10
 casting_time 10
