@@ -8,7 +8,7 @@ enter_x 19
 enter_y 13
 msg
 Created:  1999-01-15 Cater/Wade (john_cater@yahoo.com)
-Modified: 2008-12-01 Rick Tanner
+Modified: 2009-12-28 Nicolas Weeger
 endmsg
 end
 arch cobblestones2
@@ -503,6 +503,7 @@ x 5
 y 10
 end
 arch man
+name Cameron
 msg
 @match *
 What can I get you?
@@ -510,6 +511,9 @@ endmsg
 face man.131
 x 5
 y 10
+pick_up 0
+move_type walk boat
+random_movement 1
 end
 arch magic_banned
 x 5
@@ -633,7 +637,8 @@ end
 arch table_4
 x 6
 y 7
-no_pass 1
+move_block all -boat
+no_pick 1
 end
 arch magic_banned
 x 6
@@ -646,7 +651,8 @@ end
 arch table_4
 x 6
 y 8
-no_pass 1
+move_block all -boat
+no_pick 1
 end
 arch magic_banned
 x 6
@@ -659,7 +665,8 @@ end
 arch table_4
 x 6
 y 9
-no_pass 1
+move_block all -boat
+no_pick 1
 end
 arch magic_banned
 x 6
@@ -672,7 +679,8 @@ end
 arch table_4
 x 6
 y 10
-no_pass 1
+move_block all -boat
+no_pick 1
 end
 arch magic_banned
 x 6
@@ -685,7 +693,8 @@ end
 arch table_4
 x 6
 y 11
-no_pass 1
+move_block all -boat
+no_pick 1
 end
 arch magic_banned
 x 6
@@ -1205,6 +1214,10 @@ arch woodfloor
 x 10
 y 5
 end
+arch chair_1.4
+x 10
+y 5
+end
 arch magic_banned
 x 10
 y 6
@@ -1329,6 +1342,10 @@ x 11
 y 5
 end
 arch woodfloor
+x 11
+y 5
+end
+arch table_2
 x 11
 y 5
 end
@@ -1497,6 +1514,10 @@ x 12
 y 5
 end
 arch woodfloor
+x 12
+y 5
+end
+arch chair_1.2
 x 12
 y 5
 end
@@ -2486,6 +2507,7 @@ end
 arch cobblestones2
 x 18
 y 15
+move_block all
 end
 arch cobblestones2
 x 18
@@ -2608,10 +2630,12 @@ hp 29
 sp 35
 x 19
 y 14
+move_on all
 end
 arch cobblestones2
 x 19
 y 15
+move_block all
 end
 arch cobblestones2
 x 19
@@ -2779,10 +2803,12 @@ hp 29
 sp 35
 x 20
 y 14
+move_on all
 end
 arch cobblestones2
 x 20
 y 15
+move_block all
 end
 arch cobblestones2
 x 20
@@ -2902,6 +2928,7 @@ end
 arch cobblestones2
 x 21
 y 15
+move_block all
 end
 arch cobblestones2
 x 21
