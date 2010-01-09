@@ -3123,6 +3123,10 @@ end
 arch chalice
 x 16
 y 20
+arch event_selling
+title cf_darcap
+slaying darcap_church_chalice
+end
 end
 arch woodfloor
 x 16
@@ -3131,6 +3135,7 @@ end
 arch torch_vermilion
 x 16
 y 21
+no_pick 1
 end
 arch woodfloor
 x 16
@@ -3139,6 +3144,10 @@ end
 arch chalice
 x 16
 y 22
+arch event_selling
+title cf_darcap
+slaying darcap_church_chalice
+end
 end
 arch woodfloor
 x 16
@@ -3373,6 +3382,7 @@ end
 arch torch_indigo
 x 17
 y 20
+no_pick 1
 end
 arch woodfloor
 x 17
@@ -3391,6 +3401,7 @@ end
 arch torch_cyan
 x 17
 y 22
+no_pick 1
 end
 arch woodfloor
 x 17
@@ -3621,6 +3632,10 @@ end
 arch chalice
 x 18
 y 20
+arch event_selling
+title cf_darcap
+slaying darcap_church_chalice
+end
 end
 arch woodfloor
 x 18
@@ -3629,6 +3644,7 @@ end
 arch torch_vermilion
 x 18
 y 21
+no_pick 1
 end
 arch woodfloor
 x 18
@@ -3637,6 +3653,8 @@ end
 arch chalice
 x 18
 y 22
+arch event_selling
+end
 end
 arch woodfloor
 x 18
