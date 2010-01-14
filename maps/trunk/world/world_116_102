@@ -5,7 +5,7 @@ region darcap
 width 50
 height 50
 msg
-Modified: 2010-01-09 Nicolas Weeger
+Modified: 2010-01-14 Nicolas Weeger
 endmsg
 outdoor 1
 tile_path_1 world_116_101
@@ -8626,6 +8626,10 @@ y 44
 elevation 0
 end
 arch house_1
+name Sargas's fine fishing supplies
+slaying /darcap/darcap/fishing
+hp 2
+sp 1
 x 29
 y 44
 end
