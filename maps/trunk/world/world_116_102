@@ -5,7 +5,7 @@ region darcap
 width 50
 height 50
 msg
-Modified: 2010-01-14 Nicolas Weeger
+Modified: 2010-01-16 Nicolas Weeger
 endmsg
 outdoor 1
 tile_path_1 world_116_101
@@ -7244,7 +7244,7 @@ Julio the Great, ?-6813 EK, benefactor of the town.
 endmsg
 x 25
 y 41
-move_block -all
+move_block 0
 end
 arch cobblestones2
 x 25
