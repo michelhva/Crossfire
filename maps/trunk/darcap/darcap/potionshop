@@ -1,5 +1,5 @@
 arch map
-name Darcap Potionshop
+name Molthir's Potionshop
 reset_timeout 7200
 difficulty 1
 region darcap
@@ -11,7 +11,7 @@ enter_x 13
 enter_y 14
 msg
 Created:  1996-05-02 bt foom (thomas@astro.psu.edu)
-Modified: 2008-12-01 Rick Tanner
+Modified: 2010-01-17 Nicolas Weeger
 endmsg
 end
 arch woodfloor
@@ -1134,6 +1134,71 @@ end
 arch woodfloor
 x 14
 y 12
+end
+arch guildmaster
+name Molthir
+msg
+@match *
+I'm too busy to help you.
+@match note
+the actuel dialogs are in the various dlg_xxx scrolls in the inventory of this NPC.
+They vary based on the quest currently being done.
+
+Please don't change the @match and @reply unless you know what you are doing :)
+endmsg
+face wizard.151
+hp 100
+maxhp 100
+x 14
+y 12
+randomitems standard
+pick_up 0
+arch scroll_2
+name dlg_standard
+msg
+@match *
+Hello, and welcome to Molthir's potion shop!
+
+I hope you'll find suitable things.
+endmsg
+end
+arch scroll_2
+name dlg_first
+msg
+@match sigh_ok
+This is really generous of you, thanks!
+@match no
+Ha well, maybe later then.
+@match spike
+@reply sigh_ok Ok, *sigh*, I'll go get them.
+@reply no Not now, sorry, I got things to do.
+Ha yes, the famous Potion to cure back aches!
+
+Unfortunately I need some smaprh roots. Bob, at the general store in the south, should have gotten them, but right now I can't get them, I'm doing some alchemy.
+
+Would you mind getting them for me?
+@match *
+@question spike Spike says you got potions that can help his back?
+Hello, and welcome to Molthir's potion shop!
+
+I hope you'll find suitable things.
+endmsg
+end
+arch event_say
+title cf_darcap
+slaying darcap/Molthir
+end
+arch scroll_2
+name dlg_wait_roots
+msg
+@match *
+So, did you get the roots?
+endmsg
+end
+arch event_user
+title cf_darcap
+slaying darcap/Molthir
+end
 end
 arch woodfloor
 x 14
