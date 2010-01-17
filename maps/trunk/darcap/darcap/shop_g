@@ -10,7 +10,7 @@ height 16
 enter_x 2
 enter_y 1
 msg
-Modified: 2008-12-01 Rick Tanner
+Modified: 2010-01-17 Nicolas Weeger
 endmsg
 end
 arch woodfloor
@@ -328,6 +328,59 @@ x 3
 y 7
 pick_up 0
 monster 0
+arch event_say
+title cf_darcap
+slaying darcap/Bob
+end
+arch scroll_2
+name dlg_standard
+msg
+@match hello
+Hello. Would you like to buy some fish?
+@match order|tower
+To open the Tower, you must uses each part
+in order of the sage's names.  Good Luck.
+@match sage
+I don't know.  Go ask them!
+@match name
+My name is Bob.  I own this place.
+@match bakery|food
+yep, I get fresh fish every day.
+@match day
+Yes, every day. Now either buy
+something or leave. I'm busy.
+@match *
+Sorry, I don't understand you
+endmsg
+end
+arch scroll_2
+name dlg_roots
+msg
+@match hello
+Hello. Would you like to buy some fish?
+@match order|tower
+To open the Tower, you must uses each part
+in order of the sage's names.  Good Luck.
+@match sage
+I don't know.  Go ask them!
+@match name
+My name is Bob.  I own this place.
+@match bakery|food
+yep, I get fresh fish every day.
+@match day
+Yes, every day. Now either buy
+something or leave. I'm busy.
+@match roots
+Ha yes, the roots!
+
+I almost forgot.
+
+Here, take them, and give them to Molthir for me, please.
+@match *
+@reply roots Do you have Molthir's smaprh roots?
+Sorry, I don't understand you
+endmsg
+end
 end
 arch shop_empty
 x 3
