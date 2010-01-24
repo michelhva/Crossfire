@@ -1,0 +1,47 @@
+# Quest definition file
+# This file describes the various quests known to the game, and used through the functions in quest.c
+#
+# Format is pretty simple:
+# quest "internal code, whatever you wand but must be unique"
+# title "one-line to describe the quest"
+# description
+# "multi-line"
+# "description if you feel like it"
+# end_description
+# restart "optional integer, if non zero the quest can be done multiple times"
+# (then multiple "step/end_step" blocks)
+# step "integer value for the step"
+# description
+# "multi-line step"
+# "description"
+# end_description
+# end_step
+# (then after all steps)
+# end_quest
+quest darcap/Spike
+title Spike's aching back
+description
+Spike, the weapon shop owner, has backaches, and needs a potion to endure his pains.
+end_description
+restart 1
+step 1
+description
+You need to get a potion from the potion shop.
+end_description
+end_step
+step 2
+description
+You need to get some smaprh roots from Bob's shop in the south of Darcap.
+end_description
+end_step
+step 3
+description
+Bring back the smaprh roots to Molthir.
+end_description
+end_step
+step 4
+description
+Bring back the potion to Spike.
+end_description
+end_step
+end_quest
