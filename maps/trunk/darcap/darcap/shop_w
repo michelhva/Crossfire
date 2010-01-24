@@ -11,7 +11,7 @@ enter_x 14
 enter_y 14
 msg
 Created:  1994-10-11
-Modified: 2010-01-17 Nicolas Weeger
+Modified: 2010-01-24 Nicolas Weeger
 endmsg
 end
 arch shop_empty
@@ -1170,13 +1170,21 @@ So, did you get the potion yet?
 endmsg
 end
 arch scroll_2
-name dlg_ended
+name dlg_again
 msg
+@match quest_accept
+Oh, many thanks!
 @match *
-Ha, my back is so much better, thanks to the potion you brought me!
+@reply quest_accept Ok, I'll go fetch your potion, then.
+Thanks to the potion you brought me, my back is better.
+
+Unfortunately I feel the effects wearing really fast...
+
+Would you be kind enough to go get me another potion from the potion shop?
 endmsg
 end
 arch event_user
+name event_user
 title cf_darcap
 slaying darcap/Spike
 end
