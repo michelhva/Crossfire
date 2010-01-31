@@ -10,8 +10,6 @@ value 1
 weight 50
 identified 1
 client_type 601
-on_use_with_b_slicingknife remove $2 add 2 apple_fourth
-on_use_with_slicingknife remove $2 add 2 apple_fourth
 end
 
 Object apple_fourth
@@ -26,8 +24,6 @@ value 1
 weight 25
 identified 1
 client_type 601
-on_use_with_b_slicingknife remove $2 add 2 apple_eighth
-on_use_with_slicingknife remove $2 add 2 apple_eighth
 end
 
 Object apple_eighth

@@ -9,6 +9,4 @@ weight 100
 identified 1
 name_pl apples
 client_type 601
-on_use_with_b_slicingknife remove $2 add 2 apple_half
-on_use_with_slicingknife remove $2 add 2 apple_half
 end
