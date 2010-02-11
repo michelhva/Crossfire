@@ -9,7 +9,7 @@ enter_x 18
 enter_y 32
 msg
 Created:  1993-10-15
-Modified: 2008-12-21 Rick Tanner
+Modified: 2010-02-11 Nicolas Weeger
 endmsg
 maplore
 @quest Scorn Royalty Quest
@@ -1275,6 +1275,7 @@ food 0
 x 5
 y 1
 arch event_apply
+name event_apply
 title Python
 slaying /python/casino/goldslots.py
 end
@@ -1666,6 +1667,7 @@ food 0
 x 7
 y 1
 arch event_apply
+name event_apply
 title Python
 slaying /python/casino/silverslots.py
 end
@@ -3709,6 +3711,7 @@ y 27
 friendly 1
 unaggressive 0
 arch event_say
+name event_say
 title Python
 slaying /python/IPO/seen.py
 end
@@ -6626,10 +6629,15 @@ msg
 The Dragonlords fear to keep the
 weapon too far from themselves, yet
 don't trust each other enough to keep
-it too close at hand, either.  They
-have hidden it in a mountain eyrie
-near their lair:  you must search the
+it too close at hand, either.
+
+They have hidden it in a mountain eyrie
+near their lair: you must search the
 high mountains near their lair.
+
+Said lair is in mountains south of the road to
+the town you call Navar, and I think there
+is an inn north of it.
 endmsg
 x 31
 y 17

@@ -8,7 +8,7 @@ enter_x 6
 enter_y 1
 msg
 Created:  2000-02-12
-Modified: 2008-12-22 Rick Tanner
+Modified: 2010-02-11 Nicolas Weeger
 endmsg
 maplore
 @quest Scorn Royalty Quest
@@ -434,6 +434,11 @@ booze for me and dropped it at my
 feet, I'd be mighty obliged.  I am
 VERY thirsty!  Yes, if you bring
 enough, I'll let you in!
+@match *
+NONE SHALL pass...
+
+Haaa, how thirsty am I...
+*sigh*
 endmsg
 x 5
 y 5
