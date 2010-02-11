@@ -8,7 +8,7 @@ enter_x 30
 enter_y 7
 msg
 Created:  2000-06-05 peterm
-Modified: 2008-09-28 Rick Tanner
+Modified: 2010-02-11 Nicolas Weeger
 endmsg
 maplore
 @def Scorn Royalty Quest
@@ -451,25 +451,29 @@ SECRET BY ORDER OF HIS MAJESTY ON
 PAIN OF DEATH:
 A strange spiritual ailment befell His
 Majesty on midnight of the Dark Day
-last year.  His strength was being
+last year. His strength was being
 lessened for no reason that our
-physicians could discern.  At length,
-we consulted the High Priests:  they
+physicians could discern. At length,
+we consulted the High Priests: they
 begged their gods for enlightenment
 and at last Gaea told her Devotee the
-cause:
+cause.
+
 A Lord Spectre had forged a foul
 attachment to Our King, to his very
 soul, and was drawing forth a
 portion of his strength in order to
 empower a mighty weapon.
+
 The binding was done in such a way
 that we cannot free the King of the
 connexion without possession of this
 object.
+
 You are to go and find the Lord
 Spectre and destroy him, and return
 the weapon to us here.
+
 The entrance to the warren in which
 the Lord Spectre resides may be found
 on the Pirate Island.
@@ -1503,22 +1507,27 @@ msg
 His Majesty, the King of Scorn, is
 concerned by the threat of war from
 the Dragonlords.
+
 You are to gain the King some
 bargaining leverage by obtaining a
 powerful weapon against the
-Dragonlords.  The King hopes that his
+Dragonlords. The King hopes that his
 possession of this weapon will
 intimidate them and help maintain the
 peace.
-The Dragonlords had captured this
+
+The Dragonlords had captured such
 weapon and are guarding it, hoping
 that it may be kept out of the hands
 of those who would use it against them.
 They cannot destroy it.
+
 The only problem is that we do not
-know where it is hidden.  Perhaps you
+know where it is hidden. Perhaps you
 can bribe the secret out of the
-Dragonlords' Emissary.
+Dragonlords' Emissary. He is reputed
+to drink a lot, so search for him in taverns.
+
 Return with the weapon and you will
 receive your Dukedom.
 endmsg
@@ -1878,29 +1887,36 @@ msg
 A wayward Titan has begun styling
 himself the Rightful King of Scorn,
 and has insulted our King by naming
-him Usurper.  This Titan, whose true
-name is Meganthropopulos, feels that
+him Usurper.
+
+This Titan, whose true name is
+Meganthropopulos, feels that
 he is safe behind the walls of his
 fastness and believes that he cannot
 be made to pay for his arrogance.
 You shall disabuse him of his false
-sense of security.  You will enter his
-fastness and deprive him of the crown
-he has made for himself.  His Majesty
-will not be displeased if you find you
+sense of security.
+
+You will enter his fastness and deprive
+him of the crown he has made for himself.
+His Majesty will not be displeased if you find you
 must also leave Meganthropopulos' dead
 body rotting behind you.
+
 Meganthropopulos has good reason to
-feel himself safe, though.  We could
+feel himself safe, though. We could
 not assail his fastness with an army
-and hope to succeed.  His citadel is
+and hope to succeed. His citadel is
 located on an arid, narrow peninsula
 with only one approach.  One or a few
 mighty heros might be able to sneak in
-to accomplish the task, however.  Go
-and succeed, if you can.  You will
-find his citadel on the extreme
+to accomplish the task, however.
+
+Go and succeed, if you can.
+
+You will find his citadel on the extreme
 south-east of this continent.
+
 When you have returned with
 Meganthropopulos' Crown, His Majesty
 will grant you the rank of Archduke,
@@ -2330,11 +2346,13 @@ arch scroll
 msg
 His Majesty, the King of Scorn, is
 concerned with the recent influx of
-demons in the ruins to the north of
-the city.
+demons in the ruins of the town north of
+Scorn.
+
 Reports have it that the demons are
 issuing from a filthy pit in the
 ground.
+
 Go and investigate, and eliminate the
 threat if possible.  Return with a
 token of your victory.
@@ -2740,15 +2758,18 @@ end
 arch scroll
 msg
 His Majesty, the King of Scorn,
-craves a snack.  To earn your Earldom,
+craves a snack.
+
+To earn your Earldom,
 you will go and return with a wing
 from His Majesty's enemy, Slithselest,
 the self-styled Lord of Wyverns.
+
 When His Majesty dines upon this
 delicacy, you shall earn your Earldom.
+
 Slithselest has his eyrie (it is said)
-in the high mountains to the southeast of
-the Tower of the Stars.
+in the high mountains south of the road to Brest.
 endmsg
 x 20
 y 3
@@ -3073,11 +3094,13 @@ msg
 His Majesty, the King of Scorn, is
 suffering from bunions.  His honorable
 physician believes that a certain rare
-mushroom, obtainable only in a marsh
-to the west will provide a cure.
+mushroom will provide a cure.
+
 Your task is to find and return with
 this rare mushroom.  It is blue in
-color, and grows only in marshy areas
+color, and grows only in marshy areas located
+at the far west of the continent, same level as Scorn city.
+
 Return with one of these mushrooms and
 you will be awarded the title of
 Marquis.
@@ -3488,6 +3511,7 @@ undead in the so-called "Undead Church"
 in Scorn.  He suspects that an
 Animator is at work, setting the dead
 walking.
+
 He offers the title of Baron to
 whomever returns with a token proving
 that the Animator has been destroyed.
@@ -3771,7 +3795,9 @@ His Majesty, the King of Scorn,
 announces that whomsoever returns
 with the Head of the Goblin Chief
 shall be awarded a Knightdom.
-These goblins have been making a
+
+These goblins, who are said to live in
+mountains, have been making a
 nuisance of themselves to the North
 East of Scorn.  Go and make them
 regret their disorderly conduct.
@@ -4135,10 +4161,14 @@ His Majesty, the King of Scorn,
 announces that whomsoever returns
 with the Head of the Ogre Chief
 shall be awarded a Baronetcy.
+
 Ogres have been stealing sheep from
 the hills east of the city.
+
 Go and kill the Ogre Chief and return
 with his head.
+
+They live in a hole north of the road to Navar, our espions report.
 endmsg
 x 29
 y 13
