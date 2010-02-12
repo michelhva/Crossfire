@@ -179,12 +179,6 @@ public class JXCWindow extends JFrame
     private final KeyHandler keyHandler;
 
     /**
-     * The key bindings manager for this window.
-     */
-    @NotNull
-    private final KeybindingsManager keybindingsManager;
-
-    /**
      * The shortcuts manager for this window.
      */
     @NotNull
@@ -357,11 +351,6 @@ public class JXCWindow extends JFrame
         @Override
         public void windowClosing(@NotNull final WindowEvent e)
         {
-            if (keybindingsManager.windowClosing())
-            {
-                guiManager.closeKeybindDialog();
-            }
-
             if (!guiManager.openQuitDialog())
             {
                 guiManager.terminate();
@@ -443,7 +432,7 @@ public class JXCWindow extends JFrame
                 return;
             }
 
-            switch (guiManager.escPressed(keybindingsManager.escPressed(), isConnected()))
+            switch (guiManager.escPressed(isConnected()))
             {
             case 0:
                 break;
@@ -612,10 +601,9 @@ public class JXCWindow extends JFrame
         guiManager = new GuiManager(guiStateManager, semaphoreDrawing, terminateSync, new TooltipManager(windowRenderer), settings, server, macros, windowRenderer);
         mouseTracker.init(windowRenderer);
         final ScriptManager scriptManager = new ScriptManager(commandQueue, server, stats, itemsManager, spellsManager, mapUpdater, skillSet);
-        guiManager.init(this, scriptManager, commandQueue, server, optionManager, debugGui ? mouseTracker : null);
-        keybindingsManager = new KeybindingsManager(guiManager.getCommands(), guiManager, macros);
+        guiManager.init(scriptManager, commandQueue, server, optionManager, debugGui ? mouseTracker : null);
         shortcutsManager = new ShortcutsManager(commandQueue, spellsManager);
-        keyHandler = new KeyHandler(debugKeyboard, keybindingsManager, commandQueue, windowRenderer, keyHandlerListener);
+        keyHandler = new KeyHandler(debugKeyboard, guiManager.getKeybindingsManager(), commandQueue, windowRenderer, keyHandlerListener);
         try
         {
             characterPickup = new Pickup(commandQueue, optionManager);
@@ -627,43 +615,11 @@ public class JXCWindow extends JFrame
         setFocusTraversalKeysEnabled(false);
         addWindowFocusListener(windowFocusListener);
         addWindowListener(windowListener);
-        connection = new JXCConnection(keybindingsManager, shortcutsManager, settings, this, characterPickup, server, guiManager, guiStateManager);
+        connection = new JXCConnection(guiManager.getKeybindingsManager(), shortcutsManager, settings, this, characterPickup, server, guiManager, guiStateManager);
         server.addClientSocketListener(clientSocketListener);
         server.addSentReplyListener(sentReplyListener);
         guiManager.setConnection(connection);
         guiStateManager.addGuiStateListener(guiStateListener);
-    }
-
-    /**
-     * Adds a key binding.
-     * @param perCharacter whether a per-character key binding should be added
-     * @param cmdlist the command list to execute on key press
-     * @return whether the key bindings dialog should be opened
-     */
-    public boolean createKeyBinding(final boolean perCharacter, @NotNull final GUICommandList cmdlist)
-    {
-        final boolean result = keybindingsManager.createKeyBinding(perCharacter, cmdlist);
-        if (result)
-        {
-            guiManager.openKeybindDialog();
-        }
-        return result;
-    }
-
-    /**
-     * Removes a key binding.
-     * @param perCharacter whether a per-character key binding should be
-     * removed
-     * @return whether the key bindings dialog should be opened
-     */
-    public boolean removeKeyBinding(final boolean perCharacter)
-    {
-        final boolean result = keybindingsManager.removeKeyBinding(perCharacter);
-        if (result)
-        {
-            guiManager.openKeybindDialog();
-        }
-        return result;
     }
 
     public void init(@NotNull final String skinName, final boolean fullScreen, @Nullable final String serverInfo)
@@ -684,7 +640,6 @@ public class JXCWindow extends JFrame
             }
         }
         guiManager.initRendering(fullScreen);
-        keybindingsManager.loadKeybindings();
 
         if (serverInfo != null)
         {
@@ -705,7 +660,6 @@ public class JXCWindow extends JFrame
     public void term()
     {
         guiManager.term();
-        keybindingsManager.saveKeybindings();
         optionManager.saveOptions();
     }
 

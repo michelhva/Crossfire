@@ -26,7 +26,6 @@ import com.realtime.crossfire.jxclient.server.CrossfireServerConnection;
 import com.realtime.crossfire.jxclient.util.StringUtils;
 import com.realtime.crossfire.jxclient.window.GUICommandList;
 import com.realtime.crossfire.jxclient.window.GuiManager;
-import com.realtime.crossfire.jxclient.window.JXCWindow;
 import org.jetbrains.annotations.NotNull;
 
 /**
@@ -35,12 +34,6 @@ import org.jetbrains.annotations.NotNull;
  */
 public class BindCommand extends AbstractCommand
 {
-    /**
-     * The windows to execute in.
-     */
-    @NotNull
-    private final JXCWindow window;
-
     /**
      * The commands instance for executing commands.
      */
@@ -61,16 +54,14 @@ public class BindCommand extends AbstractCommand
 
     /**
      * Creates a new instance.
-     * @param window the window to execute in
      * @param crossfireServerConnection the connection instance
      * @param commands the commands instance for executing commands
      * @param guiManager the gui manager to use
      * @param macros the macros instance to use
      */
-    public BindCommand(@NotNull final JXCWindow window, @NotNull final CrossfireServerConnection crossfireServerConnection, @NotNull final Commands commands, @NotNull final GuiManager guiManager, @NotNull final Macros macros)
+    public BindCommand(@NotNull final CrossfireServerConnection crossfireServerConnection, @NotNull final Commands commands, @NotNull final GuiManager guiManager, @NotNull final Macros macros)
     {
         super(crossfireServerConnection);
-        this.window = window;
         this.commands = commands;
         this.guiManager = guiManager;
         this.macros = macros;
@@ -113,7 +104,7 @@ public class BindCommand extends AbstractCommand
 
         final GUICommandList commandList2 = new GUICommandList(GUICommandList.CommandType.AND);
         commandList2.add(GUICommandFactory.createCommand(commandList, guiManager, commands, macros));
-        if (!window.createKeyBinding(perCharacterBinding, commandList2))
+        if (!guiManager.createKeyBinding(perCharacterBinding, commandList2))
         {
             drawInfoError("Cannot use bind -c since no character is logged in.");
             return;

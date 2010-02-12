@@ -97,6 +97,12 @@ public class GuiManager
     private Gui keybindDialog;
 
     /**
+     * The key bindings manager for this window.
+     */
+    @NotNull
+    private KeybindingsManager keybindingsManager;
+
+    /**
      * The "really quit?" dialog. Set to <code>null</code> if the skin does not
      * define this dialog.
      */
@@ -371,13 +377,14 @@ public class GuiManager
     }
 
     @Deprecated
-    public void init(@NotNull final JXCWindow window, @NotNull final ScriptManager scriptManager, @NotNull final CommandQueue commandQueue, @NotNull final CrossfireServerConnection server, @NotNull final OptionManager optionManager, @Nullable final MouseTracker mouseTracker)
+    public void init(@NotNull final ScriptManager scriptManager, @NotNull final CommandQueue commandQueue, @NotNull final CrossfireServerConnection server, @NotNull final OptionManager optionManager, @Nullable final MouseTracker mouseTracker)
     {
-        commands = new Commands(window, windowRenderer, commandQueue, server, scriptManager, optionManager, this, macros);
+        commands = new Commands(windowRenderer, commandQueue, server, scriptManager, optionManager, this, macros);
         guiFactory = new GuiFactory(mouseTracker, commands, this, macros);
         windowRenderer.setCurrentGui(guiFactory.newGui());
         queryDialog = guiFactory.newGui();
         keybindDialog = guiFactory.newGui();
+        keybindingsManager = new KeybindingsManager(commands, this, macros);
     }
 
     /**
@@ -398,6 +405,11 @@ public class GuiManager
      */
     public boolean openQuitDialog()
     {
+        if (keybindingsManager.windowClosing())
+        {
+            closeKeybindDialog();
+        }
+
         if (dialogQuit == null)
         {
             return false;
@@ -413,14 +425,13 @@ public class GuiManager
 
     /**
      * The ESC key has been pressed.
-     * @param closeKeybindDialog whether the keybindings dialog should be closed
      * @param connected whether a connection to the server is active
      * @return whether how the key has been consumed: 0=ignore key,
      * 1=disconnect from server, quit=quit application
      */
-    public int escPressed(final boolean closeKeybindDialog, final boolean connected)
+    public int escPressed(final boolean connected)
     {
-        if (closeKeybindDialog)
+        if (keybindingsManager.escPressed())
         {
             windowRenderer.closeDialog(keybindDialog);
         }
@@ -551,6 +562,7 @@ public class GuiManager
     {
         windowRenderer.initRendering(skin.getResolution(), fullScreen);
         DialogStateParser.load(skin, windowRenderer);
+        keybindingsManager.loadKeybindings();
     }
 
     /**
@@ -850,6 +862,7 @@ public class GuiManager
     {
         windowRenderer.endRendering();
         DialogStateParser.save(skin, windowRenderer);
+        keybindingsManager.saveKeybindings();
     }
 
     @Deprecated
@@ -911,5 +924,44 @@ public class GuiManager
             assert message != null;
             dialogConnectLabel.setText(message);
         }
+    }
+
+    @Deprecated
+    @NotNull
+    public KeybindingsManager getKeybindingsManager()
+    {
+        return keybindingsManager;
+    }
+
+    /**
+     * Adds a key binding.
+     * @param perCharacter whether a per-character key binding should be added
+     * @param cmdlist the command list to execute on key press
+     * @return whether the key bindings dialog should be opened
+     */
+    public boolean createKeyBinding(final boolean perCharacter, @NotNull final GUICommandList cmdlist)
+    {
+        final boolean result = keybindingsManager.createKeyBinding(perCharacter, cmdlist);
+        if (result)
+        {
+            openKeybindDialog();
+        }
+        return result;
+    }
+
+    /**
+     * Removes a key binding.
+     * @param perCharacter whether a per-character key binding should be
+     * removed
+     * @return whether the key bindings dialog should be opened
+     */
+    public boolean removeKeyBinding(final boolean perCharacter)
+    {
+        final boolean result = keybindingsManager.removeKeyBinding(perCharacter);
+        if (result)
+        {
+            openKeybindDialog();
+        }
+        return result;
     }
 }
