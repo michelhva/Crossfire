@@ -19,7 +19,7 @@
  * Copyright (C) 2006-2010 Andreas Kirschbaum.
  */
 
-package com.realtime.crossfire.jxclient.window;
+package com.realtime.crossfire.jxclient.main;
 
 import com.realtime.crossfire.jxclient.commands.Macros;
 import com.realtime.crossfire.jxclient.experience.ExperienceTable;
@@ -32,7 +32,6 @@ import com.realtime.crossfire.jxclient.gui.keybindings.KeyBindings;
 import com.realtime.crossfire.jxclient.items.CfPlayer;
 import com.realtime.crossfire.jxclient.items.ItemsManager;
 import com.realtime.crossfire.jxclient.items.PlayerListener;
-import com.realtime.crossfire.jxclient.main.Options;
 import com.realtime.crossfire.jxclient.mapupdater.CfMapUpdater;
 import com.realtime.crossfire.jxclient.metaserver.MetaserverModel;
 import com.realtime.crossfire.jxclient.scripts.ScriptManager;
@@ -61,6 +60,16 @@ import com.realtime.crossfire.jxclient.spells.SpellsManager;
 import com.realtime.crossfire.jxclient.stats.ActiveSkillWatcher;
 import com.realtime.crossfire.jxclient.stats.PoisonWatcher;
 import com.realtime.crossfire.jxclient.stats.Stats;
+import com.realtime.crossfire.jxclient.window.GuiManager;
+import com.realtime.crossfire.jxclient.window.GuiState;
+import com.realtime.crossfire.jxclient.window.GuiStateListener;
+import com.realtime.crossfire.jxclient.window.GuiStateManager;
+import com.realtime.crossfire.jxclient.window.JXCConnection;
+import com.realtime.crossfire.jxclient.window.JXCWindowRenderer;
+import com.realtime.crossfire.jxclient.window.KeyHandler;
+import com.realtime.crossfire.jxclient.window.KeyHandlerListener;
+import com.realtime.crossfire.jxclient.window.MouseTracker;
+import com.realtime.crossfire.jxclient.window.ShortcutsManager;
 import java.awt.Graphics;
 import java.awt.event.KeyEvent;
 import java.awt.event.KeyListener;
