@@ -21,7 +21,6 @@
 
 package com.realtime.crossfire.jxclient.window;
 
-import com.realtime.crossfire.jxclient.animations.Animations;
 import com.realtime.crossfire.jxclient.commands.Macros;
 import com.realtime.crossfire.jxclient.experience.ExperienceTable;
 import com.realtime.crossfire.jxclient.faces.FaceCache;
@@ -171,12 +170,6 @@ public class JXCWindow extends JFrame
      */
     @NotNull
     private final CrossfireServerConnection server;
-
-    /**
-     * The {@link Animations} instance.
-     */
-    @NotNull
-    private final Animations animations = new Animations(this);
 
     /**
      * The command queue instance for this window.
@@ -631,7 +624,7 @@ public class JXCWindow extends JFrame
         final FacesQueue facesQueue = new FacesQueue(server, new FileCache(Filenames.getOriginalImageCacheDir()), new FileCache(Filenames.getScaledImageCacheDir()), new FileCache(Filenames.getMagicMapImageCacheDir()));
         facesManager = new FacesManager(faceCache, facesQueue);
         itemsManager = new ItemsManager(server, facesManager, stats, skillSet, this);
-        mapUpdater = new CfMapUpdater(server, facesManager, animations, this);
+        mapUpdater = new CfMapUpdater(server, facesManager, this);
         spellsManager = new SpellsManager(server, this);
         commandQueue = new CommandQueue(server, this);
         new PoisonWatcher(stats, server);

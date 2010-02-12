@@ -295,12 +295,11 @@ public class CfMapUpdater
     /**
      * Creates a new instance.
      * @param facesManager the faces manager to track for updated faces
-     * @param animations the defined animations
      */
-    public CfMapUpdater(@NotNull final FacesManager facesManager, @NotNull final Animations animations)
+    public CfMapUpdater(@NotNull final FacesManager facesManager)
     {
         this.facesManager = facesManager;
-        this.animations = animations;
+        this.animations = new Animations(null);
         facesManager.addFacesManagerListener(facesManagerListener);
         map = new CfMap(mapSquareListener);
         visibleAnimations = new CfMapAnimations(this);
@@ -310,13 +309,12 @@ public class CfMapUpdater
      * Creates a new instance.
      * @param crossfireServerConnection the connection to monitor
      * @param facesManager the faces manager to track for updated faces
-     * @param animations the defined animations
      * @param window the window to attach to
      */
-    public CfMapUpdater(@NotNull final CrossfireServerConnection crossfireServerConnection, @NotNull final FacesManager facesManager, @NotNull final Animations animations, @NotNull final JXCWindow window)
+    public CfMapUpdater(@NotNull final CrossfireServerConnection crossfireServerConnection, @NotNull final FacesManager facesManager, @NotNull final JXCWindow window)
     {
         this.facesManager = facesManager;
-        this.animations = animations;
+        this.animations = new Animations(window);
         facesManager.addFacesManagerListener(facesManagerListener);
         map = new CfMap(mapSquareListener);
         visibleAnimations = new CfMapAnimations(crossfireServerConnection, this);
