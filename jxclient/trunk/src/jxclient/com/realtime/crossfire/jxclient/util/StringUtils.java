@@ -21,7 +21,6 @@
 
 package com.realtime.crossfire.jxclient.util;
 
-import com.realtime.crossfire.jxclient.skin.JXCSkinException;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.regex.Pattern;
@@ -61,10 +60,10 @@ public class StringUtils
      * Splits a line into tokens. Handles quoting ("...").
      * @param line the line
      * @return the tokens
-     * @throws JXCSkinException if the skin cannot be loaded
+     * @throws UnterminatedTokenException if a quoted token is unterminated
      */
     @NotNull
-    public static String[] splitFields(@NotNull final String line) throws JXCSkinException
+    public static String[] splitFields(@NotNull final String line) throws UnterminatedTokenException
     {
         final List<String> tokens = new ArrayList<String>(64);
 
@@ -90,7 +89,7 @@ public class StringUtils
                 }
                 if (i >= chars.length)
                 {
-                    throw new JXCSkinException("unterminated token: "+line.substring(start-1));
+                    throw new UnterminatedTokenException(line.substring(start-1));
                 }
                 end = i;
                 i++;
