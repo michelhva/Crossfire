@@ -179,6 +179,12 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
     private final Collection<ReceivedPacketListener> receivedPacketListeners = new CopyOnWriteArrayList<ReceivedPacketListener>();
 
     /**
+     * The {@link SentReplyListener}s to be notified.
+     */
+    @NotNull
+    private final Collection<SentReplyListener> sentReplyListeners = new CopyOnWriteArrayList<SentReplyListener>();
+
+    /**
      * The {@link CrossfireExpTableListener}s to be notified.
      */
     @NotNull
@@ -515,6 +521,20 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
     public void removePacketWatcherListener(@NotNull final ReceivedPacketListener listener)
     {
         receivedPacketListeners.remove(listener);
+    }
+
+    /** {@inheritDoc} */
+    @Override
+    public void addSentReplyListener(@NotNull final SentReplyListener listener)
+    {
+        sentReplyListeners.add(listener);
+    }
+
+    /** {@inheritDoc} */
+    @Override
+    public void removeSentReplyListener(@NotNull final SentReplyListener listener)
+    {
+        sentReplyListeners.remove(listener);
     }
 
     /** {@inheritDoc} */
@@ -2544,6 +2564,10 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
             byteBuffer.put(replyPrefix);
             byteBuffer.put(text.getBytes(UTF8));
             writePacket(writeBuffer, byteBuffer.position());
+        }
+        for (final SentReplyListener sentReplyListener : sentReplyListeners)
+        {
+            sentReplyListener.replySent(text);
         }
     }
 

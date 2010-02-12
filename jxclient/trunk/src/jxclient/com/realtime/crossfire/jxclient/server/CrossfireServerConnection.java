@@ -214,6 +214,18 @@ public interface CrossfireServerConnection extends ServerConnection
     void removePacketWatcherListener(@NotNull ReceivedPacketListener listener);
 
     /**
+     * Adds a listener to be notified about sent reply packets.
+     * @param listener the listener to add
+     */
+    void addSentReplyListener(@NotNull SentReplyListener listener);
+
+    /**
+     * Removes a listener to be notified about sent reply packets.
+     * @param listener the listener to add
+     */
+    void removeSentReplyListener(@NotNull SentReplyListener listener);
+
+    /**
      * Pretends that a drawinfo message has been received.
      * @param message the message
      * @param color the color

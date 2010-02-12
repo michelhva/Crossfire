@@ -43,6 +43,7 @@ import com.realtime.crossfire.jxclient.server.CrossfireUpdateItemListener;
 import com.realtime.crossfire.jxclient.server.CrossfireUpdateMapListener;
 import com.realtime.crossfire.jxclient.server.MapSizeListener;
 import com.realtime.crossfire.jxclient.server.ReceivedPacketListener;
+import com.realtime.crossfire.jxclient.server.SentReplyListener;
 import org.jetbrains.annotations.NotNull;
 import org.junit.Assert;
 
@@ -260,6 +261,20 @@ public class TestCrossfireServerConnection implements CrossfireServerConnection
     /** {@inheritDoc} */
     @Override
     public void removePacketWatcherListener(@NotNull final ReceivedPacketListener listener)
+    {
+        Assert.fail();
+    }
+
+    /** {@inheritDoc} */
+    @Override
+    public void addSentReplyListener(@NotNull final SentReplyListener listener)
+    {
+        Assert.fail();
+    }
+
+    /** {@inheritDoc} */
+    @Override
+    public void removeSentReplyListener(@NotNull final SentReplyListener listener)
     {
         Assert.fail();
     }

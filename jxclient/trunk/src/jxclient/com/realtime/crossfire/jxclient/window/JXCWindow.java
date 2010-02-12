@@ -42,6 +42,7 @@ import com.realtime.crossfire.jxclient.server.CommandQueue;
 import com.realtime.crossfire.jxclient.server.CrossfireQueryListener;
 import com.realtime.crossfire.jxclient.server.CrossfireServerConnection;
 import com.realtime.crossfire.jxclient.server.Pickup;
+import com.realtime.crossfire.jxclient.server.SentReplyListener;
 import com.realtime.crossfire.jxclient.server.UnknownCommandException;
 import com.realtime.crossfire.jxclient.settings.Filenames;
 import com.realtime.crossfire.jxclient.settings.Settings;
@@ -557,6 +558,21 @@ public class JXCWindow extends JFrame
     };
 
     /**
+     * The {@link SentReplyListener} for detecting "reply" commands sent to the
+     * server.
+     */
+    @NotNull
+    private final SentReplyListener sentReplyListener = new SentReplyListener()
+    {
+        /** {@inheritDoc} */
+        @Override
+        public void replySent(@NotNull final String text)
+        {
+            guiManager.closeQueryDialog();
+        }
+    };
+
+    /**
      * Creates a new instance.
      * @param terminateSync the object to be notified when the application
      * terminates
@@ -620,6 +636,7 @@ public class JXCWindow extends JFrame
         addWindowListener(windowListener);
         connection = new JXCConnection(keybindingsManager, shortcutsManager, settings, this, characterPickup, server, guiManager, guiStateManager);
         server.addClientSocketListener(clientSocketListener);
+        server.addSentReplyListener(sentReplyListener);
         guiManager.setConnection(connection);
         guiStateManager.addGuiStateListener(guiStateListener);
     }
@@ -829,16 +846,6 @@ public class JXCWindow extends JFrame
         {
             return connected;
         }
-    }
-
-    /**
-     * Sends a "reply" command to the Crossfire server.
-     * @param reply the reply parameters
-     */
-    public void sendReply(@NotNull final String reply)
-    {
-        server.sendReply(reply);
-        guiManager.closeQueryDialog();
     }
 
     @Deprecated
