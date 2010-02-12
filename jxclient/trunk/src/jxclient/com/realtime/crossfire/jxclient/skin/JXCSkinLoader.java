@@ -648,7 +648,7 @@ public class JXCSkinLoader
                         }
                         else if (gui != null && args[0].equals("query_text"))
                         {
-                            parseQueryText(args, window, guiManager, tooltipManager, windowRenderer);
+                            parseQueryText(args, server, guiManager, tooltipManager, windowRenderer);
                         }
                         else if (gui != null && args[0].equals("set_forced_active"))
                         {
@@ -1924,14 +1924,14 @@ public class JXCSkinLoader
     /**
      * Parses a "query_text" command.
      * @param args the command arguments
-     * @param window the window to use
+     * @param server the crossfire server connectio for sending reply commands
      * @param guiManager the gui manager to use
      * @param tooltipManager the tooltip manager to update
      * @param windowRenderer the window renderer to notify
      * @throws IOException if the command cannot be parsed
      * @throws JXCSkinException if the command cannot be parsed
      */
-    private void parseQueryText(@NotNull final String[] args, @NotNull final JXCWindow window, @NotNull final GuiManager guiManager, @NotNull final TooltipManager tooltipManager, @NotNull final JXCWindowRenderer windowRenderer) throws IOException, JXCSkinException
+    private void parseQueryText(@NotNull final String[] args, @NotNull final CrossfireServerConnection server, @NotNull final GuiManager guiManager, @NotNull final TooltipManager tooltipManager, @NotNull final JXCWindowRenderer windowRenderer) throws IOException, JXCSkinException
     {
         if (args.length != 12)
         {
@@ -1949,7 +1949,7 @@ public class JXCSkinLoader
         final Color inactiveColor = ParseUtils.parseColor(args[9]);
         final Color activeColor = ParseUtils.parseColor(args[10]);
         final int margin = expressionParser.parseInt(args[11]);
-        skin.insertGuiElement(new GUIQueryText(window, guiManager, tooltipManager, windowRenderer, name, x, y, w, h, activeImage, inactiveImage, font, inactiveColor, activeColor, margin, "", false));
+        skin.insertGuiElement(new GUIQueryText(server, guiManager, tooltipManager, windowRenderer, name, x, y, w, h, activeImage, inactiveImage, font, inactiveColor, activeColor, margin, "", false));
     }
 
     /**

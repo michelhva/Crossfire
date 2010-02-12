@@ -22,8 +22,8 @@
 package com.realtime.crossfire.jxclient.gui.textinput;
 
 import com.realtime.crossfire.jxclient.gui.gui.TooltipManager;
+import com.realtime.crossfire.jxclient.server.CrossfireServerConnection;
 import com.realtime.crossfire.jxclient.window.GuiManager;
-import com.realtime.crossfire.jxclient.window.JXCWindow;
 import com.realtime.crossfire.jxclient.window.JXCWindowRenderer;
 import java.awt.Color;
 import java.awt.Font;
@@ -43,15 +43,19 @@ public class GUIQueryText extends GUIText
     private static final long serialVersionUID = 1;
 
     /**
-     * The {@link JXCWindow} to send the reply to.
+     * The {@link CrossfireServerConnection} for sendig reply commands.
      */
     @NotNull
-    private final JXCWindow window;
+    private final CrossfireServerConnection server;
 
-    public GUIQueryText(@NotNull final JXCWindow window, @NotNull final GuiManager guiManager, @NotNull final TooltipManager tooltipManager, @NotNull final JXCWindowRenderer windowRenderer, @NotNull final String name, final int x, final int y, final int w, final int h, @NotNull final Image activeImage, @NotNull final Image inactiveImage, @NotNull final Font font, @NotNull final Color inactiveColor, @NotNull final Color activeColor, final int margin, @NotNull final String text, final boolean ignoreUpDown)
+    /**
+     * Creates a new instance.
+     * @param server the crossfire server connection for sending reply commands
+     */
+    public GUIQueryText(@NotNull final CrossfireServerConnection server, @NotNull final GuiManager guiManager, @NotNull final TooltipManager tooltipManager, @NotNull final JXCWindowRenderer windowRenderer, @NotNull final String name, final int x, final int y, final int w, final int h, @NotNull final Image activeImage, @NotNull final Image inactiveImage, @NotNull final Font font, @NotNull final Color inactiveColor, @NotNull final Color activeColor, final int margin, @NotNull final String text, final boolean ignoreUpDown)
     {
         super(guiManager, tooltipManager, windowRenderer, name, x, y, w, h, activeImage, inactiveImage, font, inactiveColor, activeColor, margin, text, ignoreUpDown);
-        this.window = window;
+        this.server = server;
     }
 
     /** {@inheritDoc} */
@@ -65,7 +69,7 @@ public class GUIQueryText extends GUIText
     @Override
     protected void execute(@NotNull final String command)
     {
-        window.sendReply(command);
+        server.sendReply(command);
         setText("");
     }
 }
