@@ -23,7 +23,7 @@ package com.realtime.crossfire.jxclient.sound;
 
 import com.realtime.crossfire.jxclient.server.ClientSocketState;
 import com.realtime.crossfire.jxclient.window.GuiStateListener;
-import com.realtime.crossfire.jxclient.window.JXCWindow;
+import com.realtime.crossfire.jxclient.window.GuiStateManager;
 import java.util.Collection;
 import java.util.EnumSet;
 import org.jetbrains.annotations.NotNull;
@@ -117,11 +117,11 @@ public class SoundManager
 
     /**
      * Creates a new instance.
-     * @param window the window to attach to
+     * @param guiStateManager the gui state manager to watch
      */
-    public SoundManager(@NotNull final JXCWindow window)
+    public SoundManager(@NotNull final GuiStateManager guiStateManager)
     {
-        window.addGuiStateListener(guiStateListener);
+        guiStateManager.addGuiStateListener(guiStateListener);
     }
 
     /**

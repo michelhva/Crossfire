@@ -41,7 +41,6 @@ import com.realtime.crossfire.jxclient.server.ClientSocketState;
 import com.realtime.crossfire.jxclient.server.CommandQueue;
 import com.realtime.crossfire.jxclient.server.CrossfireQueryListener;
 import com.realtime.crossfire.jxclient.server.CrossfireServerConnection;
-import com.realtime.crossfire.jxclient.server.CrossfireServerConnectionListener;
 import com.realtime.crossfire.jxclient.server.Pickup;
 import com.realtime.crossfire.jxclient.server.UnknownCommandException;
 import com.realtime.crossfire.jxclient.settings.Filenames;
@@ -71,8 +70,6 @@ import java.awt.event.WindowListener;
 import java.io.File;
 import java.io.IOException;
 import java.io.Writer;
-import java.util.ArrayList;
-import java.util.Collection;
 import javax.swing.JFrame;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
@@ -85,20 +82,14 @@ import org.jetbrains.annotations.Nullable;
 public class JXCWindow extends JFrame
 {
     /**
-     * The serial version UID.
-     */
-    private static final long serialVersionUID = 1;
-
-    /**
      * TODO: Remove when more options are implemented in the start screen gui.
      */
     private static final boolean DISABLE_START_GUI = true;
 
     /**
-     * The connection state listeners to notify.
+     * The serial version UID.
      */
-    @NotNull
-    private final Collection<GuiStateListener> guiStateListeners = new ArrayList<GuiStateListener>();
+    private static final long serialVersionUID = 1;
 
     /**
      * The {@link GuiManager} for controlling the main GUI state.
@@ -107,10 +98,10 @@ public class JXCWindow extends JFrame
     private final GuiManager guiManager;
 
     /**
-     * The current GUI state.
+     * The {@link GuiStateManager} instance.
      */
-    @Nullable
-    private GuiState guiState = null;
+    @NotNull
+    private final GuiStateManager guiStateManager;
 
     /**
      * The object to be notified when the application terminates.
@@ -185,9 +176,6 @@ public class JXCWindow extends JFrame
 
     @NotNull
     private final Object semaphoreDrawing = new Object();
-
-    @NotNull
-    private final Object semaphoreChangeGui = new Object();
 
     /**
      * The {@link KeyHandler} for processing keyboard input.
@@ -359,10 +347,7 @@ public class JXCWindow extends JFrame
         @Override
         public void disconnecting(@NotNull final String reason)
         {
-            if (getGuiState() == GuiState.CONNECTING)
-            {
-                changeGUI(GuiState.CONNECT_FAILED, reason);
-            }
+            // ignore
         }
 
         /** {@inheritDoc} */
@@ -370,32 +355,6 @@ public class JXCWindow extends JFrame
         public void disconnected(@NotNull final String reason)
         {
             setConnected(false);
-            if (getGuiState() != GuiState.CONNECT_FAILED)
-            {
-                changeGUI(GuiState.METASERVER);
-            }
-        }
-    };
-
-    /**
-     * The {@link CrossfireServerConnectionListener} used to detect connection
-     * progress changes.
-     */
-    @NotNull
-    private final CrossfireServerConnectionListener crossfireServerConnectionListener = new CrossfireServerConnectionListener()
-    {
-        /** {@inheritDoc} */
-        @Override
-        public void clientSocketStateChanged(@NotNull final ClientSocketState clientSocketState)
-        {
-            for (final GuiStateListener listener : guiStateListeners)
-            {
-                listener.connecting(clientSocketState);
-            }
-            if (clientSocketState == ClientSocketState.CONNECTED)
-            {
-                changeGUI(GuiState.CONNECTED);
-            }
         }
     };
 
@@ -489,7 +448,7 @@ public class JXCWindow extends JFrame
         @Override
         public void escPressed()
         {
-            if (getGuiState() == GuiState.CONNECT_FAILED)
+            if (guiStateManager.getGuiState() == GuiState.CONNECT_FAILED)
             {
                 disconnect();
                 return;
@@ -547,14 +506,20 @@ public class JXCWindow extends JFrame
         @Override
         public void start()
         {
+            guiManager.closeTransientDialogs();
             itemsManager.removeCrossfirePlayerListener(playerListener);
             server.removeCrossfireQueryListener(crossfireQueryListener);
+            if (DISABLE_START_GUI)
+            {
+                quitApplication();
+            }
         }
 
         /** {@inheritDoc} */
         @Override
         public void metaserver()
         {
+            guiManager.closeTransientDialogs();
             itemsManager.removeCrossfirePlayerListener(playerListener);
             server.removeCrossfireQueryListener(crossfireQueryListener);
         }
@@ -563,6 +528,7 @@ public class JXCWindow extends JFrame
         @Override
         public void connecting()
         {
+            guiManager.closeTransientDialogs();
             facesManager.reset();
             itemsManager.addCrossfirePlayerListener(playerListener);
             server.addCrossfireQueryListener(crossfireQueryListener);
@@ -572,21 +538,21 @@ public class JXCWindow extends JFrame
         @Override
         public void connecting(@NotNull final ClientSocketState clientSocketState)
         {
-            // ignore
+            guiManager.closeTransientDialogs();
         }
 
         /** {@inheritDoc} */
         @Override
         public void connected()
         {
-            // ignore
+            guiManager.closeTransientDialogs();
         }
 
         /** {@inheritDoc} */
         @Override
         public void connectFailed(@NotNull final String reason)
         {
-            // ignore
+            guiManager.closeTransientDialogs();
         }
     };
 
@@ -604,9 +570,10 @@ public class JXCWindow extends JFrame
      * @param optionManager the option manager instance to use
      * @param metaserverModel the metaserver model to use
      * @param resolution the size of the client area
+     * @param guiStateManager the gui state manager to use
      * @throws IOException if a resource cannot be loaded
      */
-    public JXCWindow(@NotNull final Object terminateSync, @NotNull final CrossfireServerConnection server, @NotNull final Object semaphoreRedraw, final boolean debugGui, @Nullable final Writer debugKeyboard, @NotNull final Settings settings, @NotNull final OptionManager optionManager, @NotNull final MetaserverModel metaserverModel, @NotNull final Resolution resolution) throws IOException
+    public JXCWindow(@NotNull final Object terminateSync, @NotNull final CrossfireServerConnection server, @NotNull final Object semaphoreRedraw, final boolean debugGui, @Nullable final Writer debugKeyboard, @NotNull final Settings settings, @NotNull final OptionManager optionManager, @NotNull final MetaserverModel metaserverModel, @NotNull final Resolution resolution, @NotNull final GuiStateManager guiStateManager) throws IOException
     {
         super("");
         this.terminateSync = terminateSync;
@@ -616,23 +583,24 @@ public class JXCWindow extends JFrame
         this.optionManager = optionManager;
         this.metaserverModel = metaserverModel;
         this.resolution = resolution;
+        this.guiStateManager = guiStateManager;
         macros = new Macros(server);
         final FaceCache faceCache = new FaceCache(server);
         experienceTable = new ExperienceTable(server);
-        skillSet = new SkillSet(server, this);
-        stats = new Stats(server, experienceTable, skillSet, this);
+        skillSet = new SkillSet(server, guiStateManager);
+        stats = new Stats(server, experienceTable, skillSet, guiStateManager);
         final FacesQueue facesQueue = new FacesQueue(server, new FileCache(Filenames.getOriginalImageCacheDir()), new FileCache(Filenames.getScaledImageCacheDir()), new FileCache(Filenames.getMagicMapImageCacheDir()));
         facesManager = new FacesManager(faceCache, facesQueue);
-        itemsManager = new ItemsManager(server, facesManager, stats, skillSet, this);
-        mapUpdater = new CfMapUpdater(server, facesManager, this);
-        spellsManager = new SpellsManager(server, this);
-        commandQueue = new CommandQueue(server, this);
+        itemsManager = new ItemsManager(server, facesManager, stats, skillSet, guiStateManager);
+        mapUpdater = new CfMapUpdater(server, facesManager, guiStateManager);
+        spellsManager = new SpellsManager(server, guiStateManager);
+        commandQueue = new CommandQueue(server, guiStateManager);
         new PoisonWatcher(stats, server);
         new ActiveSkillWatcher(stats, server);
         setDefaultCloseOperation(DO_NOTHING_ON_CLOSE);
         mouseTracker = new MouseTracker(debugGui);
         windowRenderer = new JXCWindowRenderer(this, mouseTracker, semaphoreRedraw, server);
-        guiManager = new GuiManager(this, semaphoreDrawing, new TooltipManager(this), settings, server, macros, windowRenderer);
+        guiManager = new GuiManager(guiStateManager, semaphoreDrawing, new TooltipManager(this), settings, server, macros, windowRenderer);
         mouseTracker.init(windowRenderer);
         final ScriptManager scriptManager = new ScriptManager(commandQueue, server, stats, itemsManager, spellsManager, mapUpdater, skillSet);
         guiManager.init(this, scriptManager, commandQueue, server, optionManager, debugGui ? mouseTracker : null);
@@ -650,11 +618,10 @@ public class JXCWindow extends JFrame
         setFocusTraversalKeysEnabled(false);
         addWindowFocusListener(windowFocusListener);
         addWindowListener(windowListener);
-        connection = new JXCConnection(keybindingsManager, shortcutsManager, settings, this, characterPickup, server, guiManager);
+        connection = new JXCConnection(keybindingsManager, shortcutsManager, settings, this, characterPickup, server, guiManager, guiStateManager);
         server.addClientSocketListener(clientSocketListener);
-        server.addCrossfireServerConnectionListener(crossfireServerConnectionListener);
         guiManager.setConnection(connection);
-        addGuiStateListener(guiStateListener);
+        guiStateManager.addGuiStateListener(guiStateListener);
     }
 
     /**
@@ -701,90 +668,6 @@ public class JXCWindow extends JFrame
         }
     }
 
-    /**
-     * Sets a new {@link GuiState}.
-     * @param guiState the new gui state
-     */
-    public void changeGUI(final GuiState guiState)
-    {
-        changeGUI(guiState, null);
-    }
-
-    /**
-     * Sets a new {@link GuiState}.
-     * @param guiState the new gui state
-     * @param param a parameter for the new gui state
-     */
-    private void changeGUI(@NotNull final GuiState guiState, @Nullable final String param)
-    {
-        synchronized (semaphoreChangeGui)
-        {
-            if (this.guiState == guiState)
-            {
-                return;
-            }
-
-            guiManager.closeTransientDialogs();
-
-            this.guiState = guiState;
-
-            switch (guiState)
-            {
-            case START:
-                for (final GuiStateListener listener : guiStateListeners)
-                {
-                    listener.start();
-                }
-                if (DISABLE_START_GUI)
-                {
-                    quitApplication();
-                }
-                break;
-
-            case METASERVER:
-                for (final GuiStateListener listener : guiStateListeners)
-                {
-                    listener.metaserver();
-                }
-                break;
-
-            case CONNECTING:
-                for (final GuiStateListener listener : guiStateListeners)
-                {
-                    listener.connecting();
-                }
-                break;
-
-            case CONNECTED:
-                for (final GuiStateListener listener : guiStateListeners)
-                {
-                    listener.connected();
-                }
-                break;
-
-            case CONNECT_FAILED:
-                for (final GuiStateListener listener : guiStateListeners)
-                {
-                    listener.connectFailed(param);
-                }
-                break;
-            }
-        }
-    }
-
-    /**
-     * Returns the current {@link GuiState}.
-     * @return the gui state
-     */
-    @Nullable
-    private GuiState getGuiState()
-    {
-        synchronized (semaphoreChangeGui)
-        {
-            return guiState;
-        }
-    }
-
     public void init(@NotNull final String skinName, final boolean fullScreen, @Nullable final String serverInfo)
     {
         addKeyListener(keyListener);
@@ -811,7 +694,7 @@ public class JXCWindow extends JFrame
         }
         else
         {
-            changeGUI(DISABLE_START_GUI ? GuiState.METASERVER : GuiState.START);
+            guiStateManager.changeGUI(DISABLE_START_GUI ? GuiState.METASERVER : GuiState.START);
         }
         addMouseListener(mouseTracker);
         addMouseMotionListener(mouseTracker);
@@ -836,7 +719,7 @@ public class JXCWindow extends JFrame
     {
         settings.putString("server", serverInfo);
         connection.setHost(serverInfo);
-        changeGUI(GuiState.CONNECTING);
+        guiStateManager.changeGUI(GuiState.CONNECTING);
     }
 
     /**
@@ -844,7 +727,7 @@ public class JXCWindow extends JFrame
      */
     public void disconnect()
     {
-        changeGUI(GuiState.METASERVER);
+        guiStateManager.changeGUI(GuiState.METASERVER);
     }
 
     /**
@@ -903,7 +786,7 @@ public class JXCWindow extends JFrame
             skinSource = new JXCSkinClassSource("com/realtime/crossfire/jxclient/skins/"+skinName);
         }
         final JXCSkinLoader newSkin = new JXCSkinLoader(itemsManager, spellsManager, facesManager, stats, mapUpdater, defaultKeyBindings, optionManager, experienceTable, skillSet);
-        return newSkin.load(skinSource, server, this, guiManager.getTooltipManager(), windowRenderer, mouseTracker, metaserverModel, commandQueue, resolution, shortcutsManager.getShortcuts(), guiManager.getCommands(), currentSpellManager, guiManager, debugGui, macros);
+        return newSkin.load(skinSource, server, this, guiStateManager, guiManager.getTooltipManager(), windowRenderer, mouseTracker, metaserverModel, commandQueue, resolution, shortcutsManager.getShortcuts(), guiManager.getCommands(), currentSpellManager, guiManager, debugGui, macros);
     }
 
     /**
@@ -956,24 +839,6 @@ public class JXCWindow extends JFrame
     {
         server.sendReply(reply);
         guiManager.closeQueryDialog();
-    }
-
-    /**
-     * Adds a gui state listener.
-     * @param listener the listener to add
-     */
-    public void addGuiStateListener(@NotNull final GuiStateListener listener)
-    {
-        guiStateListeners.add(listener);
-    }
-
-    /**
-     * Removes a gui state listener.
-     * @param listener the listener to remove
-     */
-    public void removeGuiStateListener(@NotNull final GuiStateListener listener)
-    {
-        guiStateListeners.remove(listener);
     }
 
     @Deprecated

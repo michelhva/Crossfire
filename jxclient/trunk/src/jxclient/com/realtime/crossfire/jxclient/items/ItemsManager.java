@@ -30,7 +30,7 @@ import com.realtime.crossfire.jxclient.server.CrossfireUpdateItemListener;
 import com.realtime.crossfire.jxclient.skills.SkillSet;
 import com.realtime.crossfire.jxclient.stats.Stats;
 import com.realtime.crossfire.jxclient.window.GuiStateListener;
-import com.realtime.crossfire.jxclient.window.JXCWindow;
+import com.realtime.crossfire.jxclient.window.GuiStateManager;
 import java.util.Collection;
 import java.util.Collections;
 import java.util.HashMap;
@@ -266,15 +266,15 @@ public class ItemsManager
      * @param facesManager the faces manager for looking up faces
      * @param stats the instance to update
      * @param skillSet the skill set instance to update
-     * @param window the window to attach to
+     * @param guiStateManager the gui state manager to watch
      */
-    public ItemsManager(@NotNull final CrossfireServerConnection crossfireServerConnection, @NotNull final FacesManager facesManager, @NotNull final Stats stats, @NotNull final SkillSet skillSet, @NotNull final JXCWindow window)
+    public ItemsManager(@NotNull final CrossfireServerConnection crossfireServerConnection, @NotNull final FacesManager facesManager, @NotNull final Stats stats, @NotNull final SkillSet skillSet, @NotNull final GuiStateManager guiStateManager)
     {
         this.facesManager = facesManager;
         this.stats = stats;
         this.skillSet = skillSet;
         crossfireServerConnection.addCrossfireUpdateItemListener(crossfireUpdateItemListener);
-        window.addGuiStateListener(guiStateListener);
+        guiStateManager.addGuiStateListener(guiStateListener);
         fireEventScheduler.start();
     }
 

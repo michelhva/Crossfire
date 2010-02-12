@@ -25,7 +25,7 @@ import com.realtime.crossfire.jxclient.server.ClientSocketState;
 import com.realtime.crossfire.jxclient.server.CrossfireServerConnection;
 import com.realtime.crossfire.jxclient.server.CrossfireSpellListener;
 import com.realtime.crossfire.jxclient.window.GuiStateListener;
-import com.realtime.crossfire.jxclient.window.JXCWindow;
+import com.realtime.crossfire.jxclient.window.GuiStateManager;
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.Collections;
@@ -147,13 +147,13 @@ public class SpellsManager
     /**
      * Create a new instance.
      * @param crossfireServerConnection the connection to listen on
-     * @param window the window to attach to
+     * @param guiStateManager the gui state manager to watch
      */
-    public SpellsManager(@NotNull final CrossfireServerConnection crossfireServerConnection, @NotNull final JXCWindow window)
+    public SpellsManager(@NotNull final CrossfireServerConnection crossfireServerConnection, @NotNull final GuiStateManager guiStateManager)
     {
         initSpells();
         crossfireServerConnection.addCrossfireSpellListener(crossfireSpellListener);
-        window.addGuiStateListener(guiStateListener);
+        guiStateManager.addGuiStateListener(guiStateListener);
     }
 
     public void addCrossfireSpellChangedListener(@NotNull final SpellsManagerListener listener)

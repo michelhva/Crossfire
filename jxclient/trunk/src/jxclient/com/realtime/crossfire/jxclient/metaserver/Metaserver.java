@@ -23,7 +23,7 @@ package com.realtime.crossfire.jxclient.metaserver;
 
 import com.realtime.crossfire.jxclient.server.ClientSocketState;
 import com.realtime.crossfire.jxclient.window.GuiStateListener;
-import com.realtime.crossfire.jxclient.window.JXCWindow;
+import com.realtime.crossfire.jxclient.window.GuiStateManager;
 import java.io.BufferedReader;
 import java.io.File;
 import java.io.IOException;
@@ -131,9 +131,9 @@ public class Metaserver
      *
      * @param metaserverCacheFile The metaserver cache file.
      * @param metaserverModel the metaserver model instance to update
-     * @param window the window to attach to
+     * @param guiStateManager the gui state manager to watch
      */
-    public Metaserver(@NotNull final File metaserverCacheFile, @NotNull final MetaserverModel metaserverModel, @NotNull final JXCWindow window)
+    public Metaserver(@NotNull final File metaserverCacheFile, @NotNull final MetaserverModel metaserverModel, @NotNull final GuiStateManager guiStateManager)
     {
         serverCache = new ServerCache(metaserverCacheFile);
         this.metaserverModel = metaserverModel;
@@ -143,7 +143,7 @@ public class Metaserver
             metaserverModel.add(metaserverEntry);
         }
         metaserverModel.commit();
-        window.addGuiStateListener(guiStateListener);
+        guiStateManager.addGuiStateListener(guiStateListener);
         metaserverProcessor.query();
     }
 

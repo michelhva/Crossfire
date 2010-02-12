@@ -40,6 +40,7 @@ import com.realtime.crossfire.jxclient.skin.events.SkinEvent;
 import com.realtime.crossfire.jxclient.stats.Stats;
 import com.realtime.crossfire.jxclient.window.GUICommandList;
 import com.realtime.crossfire.jxclient.window.GuiManager;
+import com.realtime.crossfire.jxclient.window.GuiStateManager;
 import com.realtime.crossfire.jxclient.window.JXCWindow;
 import java.io.IOException;
 import java.io.LineNumberReader;
@@ -413,6 +414,7 @@ public class DefaultJXCSkin implements JXCSkin
      * @param element the target element
      * @param command the command to parse the arguments of
      * @param window the window instance
+     * @param guiStateManager the gui state manager instance
      * @param commands the commands instance for executing commands
      * @param lnr the source to read more parameters from
      * @param commandQueue the command queue for executing commands
@@ -422,10 +424,10 @@ public class DefaultJXCSkin implements JXCSkin
      * @throws IOException if a syntax error occurs
      * @throws JXCSkinException if an element cannot be found
      */
-    public void addCommand(@NotNull final String listName, @NotNull final String[] args, final int argc, @Nullable final GUIElement element, @NotNull final String command, @NotNull final JXCWindow window, @NotNull final Commands commands, @NotNull final LineNumberReader lnr, @NotNull final CommandQueue commandQueue, @NotNull final CrossfireServerConnection crossfireServerConnection, @NotNull final GuiManager guiManager, @NotNull final Macros macros) throws IOException, JXCSkinException
+    public void addCommand(@NotNull final String listName, @NotNull final String[] args, final int argc, @Nullable final GUIElement element, @NotNull final String command, @NotNull final JXCWindow window, @NotNull final GuiStateManager guiStateManager, @NotNull final Commands commands, @NotNull final LineNumberReader lnr, @NotNull final CommandQueue commandQueue, @NotNull final CrossfireServerConnection crossfireServerConnection, @NotNull final GuiManager guiManager, @NotNull final Macros macros) throws IOException, JXCSkinException
     {
         final GUICommandList commandList = getCommandList(listName);
-        commandList.add(commandParser.parseCommandArgs(args, argc, element, command, window, commands, lnr, commandQueue, crossfireServerConnection, guiManager, macros));
+        commandList.add(commandParser.parseCommandArgs(args, argc, element, command, window, guiStateManager, commands, lnr, commandQueue, crossfireServerConnection, guiManager, macros));
     }
 
     /** {@inheritDoc} */

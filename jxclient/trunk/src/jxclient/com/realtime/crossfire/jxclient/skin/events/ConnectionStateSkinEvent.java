@@ -24,7 +24,7 @@ package com.realtime.crossfire.jxclient.skin.events;
 import com.realtime.crossfire.jxclient.server.ClientSocketState;
 import com.realtime.crossfire.jxclient.window.GUICommandList;
 import com.realtime.crossfire.jxclient.window.GuiStateListener;
-import com.realtime.crossfire.jxclient.window.JXCWindow;
+import com.realtime.crossfire.jxclient.window.GuiStateManager;
 import org.jetbrains.annotations.NotNull;
 
 /**
@@ -41,13 +41,13 @@ public class ConnectionStateSkinEvent implements SkinEvent
     private final GUICommandList commandList;
 
     /**
-     * The {@link JXCWindow} to attach to.
+     * The {@link GuiStateManager} to watch.
      */
     @NotNull
-    private final JXCWindow window;
+    private final GuiStateManager guiStateManager;
 
     /**
-     * The {@link GuiStateListener} attached to {@link #window}.
+     * The {@link GuiStateListener} attached to {@link #guiStateManager}.
      */
     @NotNull
     private final GuiStateListener guiStateListener = new GuiStateListener()
@@ -98,19 +98,19 @@ public class ConnectionStateSkinEvent implements SkinEvent
     /**
      * Creates a new instance.
      * @param commandList the command list to execute
-     * @param window the window to attach to
+     * @param guiStateManager the gui state manager to watch
      */
-    public ConnectionStateSkinEvent(@NotNull final GUICommandList commandList, @NotNull final JXCWindow window)
+    public ConnectionStateSkinEvent(@NotNull final GUICommandList commandList, @NotNull final GuiStateManager guiStateManager)
     {
         this.commandList = commandList;
-        this.window = window;
-        window.addGuiStateListener(guiStateListener);
+        this.guiStateManager = guiStateManager;
+        guiStateManager.addGuiStateListener(guiStateListener);
     }
 
     /** {@inheritDoc} */
     @Override
     public void dispose()
     {
-        window.removeGuiStateListener(guiStateListener);
+        guiStateManager.removeGuiStateListener(guiStateListener);
     }
 }

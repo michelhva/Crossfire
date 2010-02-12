@@ -26,7 +26,7 @@ import com.realtime.crossfire.jxclient.server.CrossfireServerConnection;
 import com.realtime.crossfire.jxclient.server.CrossfireSkillInfoListener;
 import com.realtime.crossfire.jxclient.server.CrossfireStatsListener;
 import com.realtime.crossfire.jxclient.window.GuiStateListener;
-import com.realtime.crossfire.jxclient.window.JXCWindow;
+import com.realtime.crossfire.jxclient.window.GuiStateManager;
 import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Map;
@@ -128,12 +128,12 @@ public class SkillSet
     /**
      * Creates a new instance.
      * @param crossfireServerConnection the server connection to monitor
-     * @param window the window to attach to
+     * @param guiStateManager the gui state manager to watch
      */
-    public SkillSet(@NotNull final CrossfireServerConnection crossfireServerConnection, @NotNull final JXCWindow window)
+    public SkillSet(@NotNull final CrossfireServerConnection crossfireServerConnection, @NotNull final GuiStateManager guiStateManager)
     {
         crossfireServerConnection.addCrossfireSkillInfoListener(crossfireSkillInfoListener);
-        window.addGuiStateListener(guiStateListener);
+        guiStateManager.addGuiStateListener(guiStateListener);
     }
 
     /**

@@ -35,6 +35,7 @@ import com.realtime.crossfire.jxclient.sound.SoundWatcher;
 import com.realtime.crossfire.jxclient.sound.StatsWatcher;
 import com.realtime.crossfire.jxclient.stats.Stats;
 import com.realtime.crossfire.jxclient.util.DebugWriter;
+import com.realtime.crossfire.jxclient.window.GuiStateManager;
 import com.realtime.crossfire.jxclient.window.JXCWindow;
 import java.io.FileOutputStream;
 import java.io.IOException;
@@ -106,9 +107,10 @@ public class JXClient
                             server.start();
                             try
                             {
-                                final JXCWindow window = new JXCWindow(terminateSync, server, semaphoreRedraw, options.isDebugGui(), debugKeyboardOutputStreamWriter, options.getPrefs(), optionManager, metaserverModel, options.getResolution());
-                                new Metaserver(Filenames.getMetaserverCacheFile(), metaserverModel, window);
-                                final SoundManager soundManager = new SoundManager(window);
+                                final GuiStateManager guiStateManager = new GuiStateManager(server);
+                                final JXCWindow window = new JXCWindow(terminateSync, server, semaphoreRedraw, options.isDebugGui(), debugKeyboardOutputStreamWriter, options.getPrefs(), optionManager, metaserverModel, options.getResolution(), guiStateManager);
+                                new Metaserver(Filenames.getMetaserverCacheFile(), metaserverModel, guiStateManager);
+                                final SoundManager soundManager = new SoundManager(guiStateManager);
                                 try
                                 {
                                     optionManager.addOption("sound_enabled", "Whether sound is enabled.", new SoundCheckBoxOption(soundManager));
