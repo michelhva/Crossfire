@@ -290,6 +290,7 @@ public class JXCConnection
         }
         else
         {
+            settings.putString("server", serverInfo);
             final String[] tmp = serverInfo.split(":", 2);
             newHostname = tmp[0];
             newPort = tmp.length < 2 ? DEFAULT_CROSSFIRE_PORT : NumberParser.parseInt(tmp[1], DEFAULT_CROSSFIRE_PORT, 1, 65535);

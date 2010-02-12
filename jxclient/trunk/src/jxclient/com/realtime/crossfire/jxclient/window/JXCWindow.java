@@ -179,12 +179,6 @@ public class JXCWindow extends JFrame
     private final KeyHandler keyHandler;
 
     /**
-     * The settings instance to use.
-     */
-    @NotNull
-    private final Settings settings;
-
-    /**
      * The key bindings manager for this window.
      */
     @NotNull
@@ -588,7 +582,6 @@ public class JXCWindow extends JFrame
         super("");
         this.server = server;
         this.debugGui = debugGui;
-        this.settings = settings;
         this.optionManager = optionManager;
         this.metaserverModel = metaserverModel;
         this.resolution = resolution;
@@ -715,7 +708,6 @@ public class JXCWindow extends JFrame
      */
     public void connect(@NotNull final String serverInfo)
     {
-        settings.putString("server", serverInfo);
         connection.setHost(serverInfo);
         guiStateManager.changeGUI(GuiState.CONNECTING);
     }
