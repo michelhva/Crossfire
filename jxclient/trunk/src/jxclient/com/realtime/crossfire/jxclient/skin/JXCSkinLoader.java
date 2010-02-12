@@ -94,6 +94,7 @@ import com.realtime.crossfire.jxclient.stats.Stats;
 import com.realtime.crossfire.jxclient.util.NumberParser;
 import com.realtime.crossfire.jxclient.util.Resolution;
 import com.realtime.crossfire.jxclient.util.StringUtils;
+import com.realtime.crossfire.jxclient.util.UnterminatedTokenException;
 import com.realtime.crossfire.jxclient.window.GUICommandList;
 import com.realtime.crossfire.jxclient.window.GuiManager;
 import com.realtime.crossfire.jxclient.window.GuiStateManager;
@@ -501,7 +502,15 @@ public class JXCSkinLoader
                             continue;
                         }
 
-                        final String[] args = StringUtils.splitFields(line);
+                        final String[] args;
+                        try
+                        {
+                            args = StringUtils.splitFields(line);
+                        }
+                        catch (final UnterminatedTokenException ex)
+                        {
+                            throw new JXCSkinException(ex.getMessage());
+                        }
                         if (gui != null && args[0].equals("add"))
                         {
                             if (args.length != 2)
