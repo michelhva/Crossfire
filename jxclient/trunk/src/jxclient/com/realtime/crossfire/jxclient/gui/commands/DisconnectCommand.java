@@ -21,7 +21,7 @@
 
 package com.realtime.crossfire.jxclient.gui.commands;
 
-import com.realtime.crossfire.jxclient.window.JXCWindow;
+import com.realtime.crossfire.jxclient.window.GuiStateManager;
 import org.jetbrains.annotations.NotNull;
 
 /**
@@ -31,18 +31,18 @@ import org.jetbrains.annotations.NotNull;
 public class DisconnectCommand implements GUICommand
 {
     /**
-     * The main window.
+     * The {@link GuiStateManager} instance.
      */
     @NotNull
-    private final JXCWindow window;
+    private final GuiStateManager guiStateManager;
 
     /**
      * Creates a new instance.
-     * @param window the main window
+     * @param guiStateManager the gui state manager instance
      */
-    public DisconnectCommand(@NotNull final JXCWindow window)
+    public DisconnectCommand(@NotNull final GuiStateManager guiStateManager)
     {
-        this.window = window;
+        this.guiStateManager = guiStateManager;
     }
 
     /** {@inheritDoc} */
@@ -56,6 +56,6 @@ public class DisconnectCommand implements GUICommand
     @Override
     public void execute()
     {
-        window.disconnect();
+        guiStateManager.disconnect();
     }
 }

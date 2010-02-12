@@ -41,9 +41,17 @@ public interface GuiStateListener
     void metaserver();
 
     /**
-     * Connection establishment is in progress.
+     * Connection establishment is in progress. This function will be called
+     * before {@link #connecting(String)}.
+     * @param serverInfo the server connecting to
      */
-    void connecting();
+    void preConnecting(@NotNull String serverInfo);
+
+    /**
+     * Connection establishment is in progress.
+     * @param serverInfo the server connecting to
+     */
+    void connecting(@NotNull String serverInfo);
 
     /**
      * Connection establishment is in progress.

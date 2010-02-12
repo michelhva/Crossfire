@@ -439,7 +439,7 @@ public class JXCWindow extends JFrame
         {
             if (guiStateManager.getGuiState() == GuiState.CONNECT_FAILED)
             {
-                disconnect();
+                guiStateManager.disconnect();
                 return;
             }
 
@@ -449,7 +449,7 @@ public class JXCWindow extends JFrame
                 break;
 
             case 1:
-                disconnect();
+                guiStateManager.disconnect();
                 break;
 
             case 2:
@@ -515,7 +515,14 @@ public class JXCWindow extends JFrame
 
         /** {@inheritDoc} */
         @Override
-        public void connecting()
+        public void preConnecting(@NotNull final String serverInfo)
+        {
+            connection.setHost(serverInfo);
+        }
+
+        /** {@inheritDoc} */
+        @Override
+        public void connecting(@NotNull final String serverInfo)
         {
             guiManager.closeTransientDialogs();
             facesManager.reset();
@@ -681,7 +688,7 @@ public class JXCWindow extends JFrame
 
         if (serverInfo != null)
         {
-            connect(serverInfo);
+            guiStateManager.connect(serverInfo);
         }
         else
         {
@@ -700,24 +707,6 @@ public class JXCWindow extends JFrame
         guiManager.term();
         keybindingsManager.saveKeybindings();
         optionManager.saveOptions();
-    }
-
-    /**
-     * Connects to a Crossfire server.
-     * @param serverInfo the server to connect to
-     */
-    public void connect(@NotNull final String serverInfo)
-    {
-        connection.setHost(serverInfo);
-        guiStateManager.changeGUI(GuiState.CONNECTING);
-    }
-
-    /**
-     * Disconnects from a Crossfire server.
-     */
-    public void disconnect()
-    {
-        guiStateManager.changeGUI(GuiState.METASERVER);
     }
 
     /**
