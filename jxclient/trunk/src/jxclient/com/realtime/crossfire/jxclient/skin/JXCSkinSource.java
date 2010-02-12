@@ -21,6 +21,7 @@
 
 package com.realtime.crossfire.jxclient.skin;
 
+import com.realtime.crossfire.jxclient.util.Resolution;
 import java.io.IOException;
 import java.io.InputStream;
 import org.jetbrains.annotations.NotNull;

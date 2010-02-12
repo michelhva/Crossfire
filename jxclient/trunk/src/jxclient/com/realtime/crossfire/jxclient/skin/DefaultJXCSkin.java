@@ -39,6 +39,7 @@ import com.realtime.crossfire.jxclient.settings.options.OptionManager;
 import com.realtime.crossfire.jxclient.skills.SkillSet;
 import com.realtime.crossfire.jxclient.skin.events.SkinEvent;
 import com.realtime.crossfire.jxclient.stats.Stats;
+import com.realtime.crossfire.jxclient.util.Resolution;
 import com.realtime.crossfire.jxclient.window.GUICommandList;
 import com.realtime.crossfire.jxclient.window.GuiManager;
 import com.realtime.crossfire.jxclient.window.GuiStateManager;

@@ -30,7 +30,7 @@ import com.realtime.crossfire.jxclient.gui.log.GUILog;
 import com.realtime.crossfire.jxclient.gui.log.GUIMessageLog;
 import com.realtime.crossfire.jxclient.server.CrossfireServerConnection;
 import com.realtime.crossfire.jxclient.server.CrossfireUpdateMapListener;
-import com.realtime.crossfire.jxclient.skin.Resolution;
+import com.realtime.crossfire.jxclient.util.Resolution;
 import java.awt.Color;
 import java.awt.Dimension;
 import java.awt.DisplayMode;
