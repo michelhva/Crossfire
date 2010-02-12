@@ -79,18 +79,20 @@ import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 
 /**
- *
- * @version 1.0
+ * The main window.
  * @author Lauwenmark
  * @author Andreas Kirschbaum
- * @since 1.0
  */
 public class JXCWindow extends JFrame
 {
-    /** The serial version UID. */
+    /**
+     * The serial version UID.
+     */
     private static final long serialVersionUID = 1;
 
-    /** TODO: Remove when more options are implemented in the start screen gui. */
+    /**
+     * TODO: Remove when more options are implemented in the start screen gui.
+     */
     private static final boolean DISABLE_START_GUI = true;
 
     /**
@@ -105,9 +107,15 @@ public class JXCWindow extends JFrame
     @NotNull
     private final GuiManager guiManager;
 
+    /**
+     * The current GUI state.
+     */
     @Nullable
     private GuiState guiState = null;
 
+    /**
+     * The object to be notified when the application terminates.
+     */
     @NotNull
     private final Object terminateSync;
 
@@ -164,6 +172,9 @@ public class JXCWindow extends JFrame
     @NotNull
     private final CrossfireServerConnection server;
 
+    /**
+     * The {@link Animations} instance.
+     */
     @NotNull
     private final Animations animations = new Animations(this);
 
@@ -587,29 +598,19 @@ public class JXCWindow extends JFrame
     };
 
     /**
-     * Create a new instance.
-     *
-     * @param terminateSync Object to be notified when the application
+     * Creates a new instance.
+     * @param terminateSync the object to be notified when the application
      * terminates
-     *
      * @param server the crossfire server connection to use
-     *
      * @param semaphoreRedraw the semaphore used to synchronized map model
      * updates and map view redraws
-     *
-     * @param debugGui Whether GUI elements should be highlighted.
-     *
-     * @param debugKeyboard If non-<code>null</code>, write all keyboard debug
-     * to this writer.
-     *
-     * @param settings The settings instance to use.
-     *
+     * @param debugGui whether GUI elements should be highlighted
+     * @param debugKeyboard if non-<code>null</code>, write all keyboard debug
+     * to this writer
+     * @param settings the settings instance to use
      * @param optionManager the option manager instance to use
-     *
      * @param metaserverModel the metaserver model to use
-     *
      * @param resolution the size of the client area
-     *
      * @throws IOException if a resource cannot be loaded
      */
     public JXCWindow(@NotNull final Object terminateSync, @NotNull final CrossfireServerConnection server, @NotNull final Object semaphoreRedraw, final boolean debugGui, @Nullable final Writer debugKeyboard, @NotNull final Settings settings, @NotNull final OptionManager optionManager, @NotNull final MetaserverModel metaserverModel, @NotNull final Resolution resolution) throws IOException
@@ -663,6 +664,12 @@ public class JXCWindow extends JFrame
         addConnectionStateListener(guiStateListener);
     }
 
+    /**
+     * Adds a key binding.
+     * @param perCharacter whether a per-character key binding should be added
+     * @param cmdlist the command list to execute on key press
+     * @return whether the key bindings dialog should be opened
+     */
     public boolean createKeyBinding(final boolean perCharacter, @NotNull final GUICommandList cmdlist)
     {
         final boolean result = keybindingsManager.createKeyBinding(perCharacter, cmdlist);
@@ -673,6 +680,12 @@ public class JXCWindow extends JFrame
         return result;
     }
 
+    /**
+     * Removes a key binding.
+     * @param perCharacter whether a per-character key binding should be
+     * removed
+     * @return whether the key bindings dialog should be opened
+     */
     public boolean removeKeyBinding(final boolean perCharacter)
     {
         final boolean result = keybindingsManager.removeKeyBinding(perCharacter);
@@ -683,6 +696,9 @@ public class JXCWindow extends JFrame
         return result;
     }
 
+    /**
+     * Terminates the application.
+     */
     public void quitApplication()
     {
         guiManager.terminate();
@@ -692,11 +708,20 @@ public class JXCWindow extends JFrame
         }
     }
 
+    /**
+     * Sets a new {@link GuiState}.
+     * @param guiState the new gui state
+     */
     public void changeGUI(final GuiState guiState)
     {
         changeGUI(guiState, null);
     }
 
+    /**
+     * Sets a new {@link GuiState}.
+     * @param guiState the new gui state
+     * @param param a parameter for the new gui state
+     */
     private void changeGUI(@NotNull final GuiState guiState, @Nullable final String param)
     {
         synchronized (semaphoreChangeGui)
@@ -810,6 +835,10 @@ public class JXCWindow extends JFrame
         optionManager.saveOptions();
     }
 
+    /**
+     * Connects to a Crossfire server.
+     * @param serverInfo the server to connect to
+     */
     public void connect(@NotNull final String serverInfo)
     {
         settings.putString("server", serverInfo);
@@ -817,12 +846,17 @@ public class JXCWindow extends JFrame
         changeGUI(GuiState.CONNECTING);
     }
 
+    /**
+     * Disconnects from a Crossfire server.
+     */
     public void disconnect()
     {
         changeGUI(GuiState.METASERVER);
     }
 
-    /** {@inheritDoc} */
+    /**
+     * {@inheritDoc}
+     */
     @Override
     public void paint(@NotNull final Graphics g)
     {
@@ -830,11 +864,9 @@ public class JXCWindow extends JFrame
     }
 
     /**
-     * Set the skin to use.
-     *
-     * @param skinName The skin name to set.
-     *
-     * @return Whether loading was successful.
+     * Sets the skin to use.
+     * @param skinName the skin name to set
+     * @return whether loading was successful
      */
     private boolean setSkin(@NotNull final String skinName)
     {
@@ -882,9 +914,8 @@ public class JXCWindow extends JFrame
     }
 
     /**
-     * Return the width of the client area.
-     *
-     * @return The width of the client area.
+     * Returns the width of the client area.
+     * @return the width of the client area
      */
     public int getWindowWidth()
     {
@@ -892,9 +923,8 @@ public class JXCWindow extends JFrame
     }
 
     /**
-     * Return the height of the client area.
-     *
-     * @return The height of the client area.
+     * Returns the height of the client area.
+     * @return the height of the client area
      */
     public int getWindowHeight()
     {
@@ -925,6 +955,10 @@ public class JXCWindow extends JFrame
         }
     }
 
+    /**
+     * Sends a "reply" command to the Crossfire server.
+     * @param reply the reply parameters
+     */
     public void sendReply(@NotNull final String reply)
     {
         server.sendReply(reply);
@@ -932,9 +966,8 @@ public class JXCWindow extends JFrame
     }
 
     /**
-     * Add a connection listener.
-     *
-     * @param listener The listener to add.
+     * Adds a connection listener.
+     * @param listener the listener to add
      */
     public void addConnectionStateListener(@NotNull final GuiStateListener listener)
     {
@@ -942,9 +975,8 @@ public class JXCWindow extends JFrame
     }
 
     /**
-     * Remove a connection listener.
-     *
-     * @param listener The listener to remove.
+     * Removes a connection listener.
+     * @param listener the listener to remove
      */
     public void removeConnectionStateListener(@NotNull final GuiStateListener listener)
     {
