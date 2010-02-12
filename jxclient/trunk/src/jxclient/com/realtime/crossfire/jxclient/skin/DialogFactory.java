@@ -27,7 +27,6 @@ import com.realtime.crossfire.jxclient.gui.gui.GUIElement;
 import com.realtime.crossfire.jxclient.gui.gui.TooltipManager;
 import com.realtime.crossfire.jxclient.gui.label.GUILabel;
 import com.realtime.crossfire.jxclient.gui.label.GUIOneLineLabel;
-import com.realtime.crossfire.jxclient.window.JXCWindow;
 import com.realtime.crossfire.jxclient.window.JXCWindowRenderer;
 import java.awt.Color;
 import java.awt.Font;
@@ -179,8 +178,6 @@ public class DialogFactory
     /**
      * Create a new dialog.
      *
-     * @param window The JXCWindow instance.
-     *
      * @param tooltipManager the tooltip manager to update
      *
      * @param windowRenderer the window renderer to notify
@@ -196,7 +193,7 @@ public class DialogFactory
      * @return The gui elements comprising the new dialog.
      */
     @NotNull
-    public Iterable<GUIElement> newDialog(@NotNull final JXCWindow window, @NotNull final TooltipManager tooltipManager, @NotNull final JXCWindowRenderer windowRenderer, @NotNull final String name, final int w, final int h, @NotNull final String title)
+    public Iterable<GUIElement> newDialog(@NotNull final TooltipManager tooltipManager, @NotNull final JXCWindowRenderer windowRenderer, @NotNull final String name, final int w, final int h, @NotNull final String title)
     {
         if (w <= sizeW+sizeE) throw new IllegalArgumentException("dialog height ("+w+") is smaller than heights of N and S ("+sizeW+"+"+sizeE+")");
         if (h <= sizeN+sizeS) throw new IllegalArgumentException("dialog width ("+h+") is smaller than heights of W and E ("+sizeN+"+"+sizeS+")");
@@ -216,7 +213,7 @@ public class DialogFactory
         result.add(new GUIPicture(tooltipManager, windowRenderer, name+"_se", w-sizeE, h-sizeS, sizeE, sizeS, frameSE, alpha));
         if (titleHeight > 0)
         {
-            result.add(new GUIDialogTitle(window, tooltipManager, windowRenderer, name+"_t", sizeW, sizeN, w-sizeW-sizeE, titleHeight, frameC, alpha));
+            result.add(new GUIDialogTitle(tooltipManager, windowRenderer, name+"_t", sizeW, sizeN, w-sizeW-sizeE, titleHeight, frameC, alpha));
             if (!title.equals("_"))
             {
                 final GUIElement titleLabel = new GUIOneLineLabel(tooltipManager, windowRenderer, name+"_title", sizeW, sizeN, w-sizeW-sizeE, titleHeight, null, titleFont, titleColor, titleBackgroundColor, GUILabel.Alignment.LEFT, title);
