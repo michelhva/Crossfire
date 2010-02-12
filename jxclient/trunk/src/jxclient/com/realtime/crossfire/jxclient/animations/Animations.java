@@ -101,7 +101,7 @@ public class Animations
     {
         if (window != null)
         {
-            window.addConnectionStateListener(guiStateListener);
+            window.addGuiStateListener(guiStateListener);
         }
     }
 

@@ -143,7 +143,7 @@ public class Metaserver
             metaserverModel.add(metaserverEntry);
         }
         metaserverModel.commit();
-        window.addConnectionStateListener(guiStateListener);
+        window.addGuiStateListener(guiStateListener);
         metaserverProcessor.query();
     }
 

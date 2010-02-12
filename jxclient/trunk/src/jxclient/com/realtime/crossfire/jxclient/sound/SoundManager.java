@@ -121,7 +121,7 @@ public class SoundManager
      */
     public SoundManager(@NotNull final JXCWindow window)
     {
-        window.addConnectionStateListener(guiStateListener);
+        window.addGuiStateListener(guiStateListener);
     }
 
     /**

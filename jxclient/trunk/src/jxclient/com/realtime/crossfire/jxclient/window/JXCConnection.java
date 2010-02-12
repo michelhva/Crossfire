@@ -189,7 +189,7 @@ public class JXCConnection
         this.characterPickup = characterPickup;
         this.server = server;
         this.guiManager = guiManager;
-        window.addConnectionStateListener(guiStateListener);
+        window.addGuiStateListener(guiStateListener);
         updateTitle();
     }
 

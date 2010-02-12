@@ -274,7 +274,7 @@ public class ItemsManager
         this.stats = stats;
         this.skillSet = skillSet;
         crossfireServerConnection.addCrossfireUpdateItemListener(crossfireUpdateItemListener);
-        window.addConnectionStateListener(guiStateListener);
+        window.addGuiStateListener(guiStateListener);
         fireEventScheduler.start();
     }
 

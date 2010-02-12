@@ -104,13 +104,13 @@ public class ConnectionStateSkinEvent implements SkinEvent
     {
         this.commandList = commandList;
         this.window = window;
-        window.addConnectionStateListener(guiStateListener);
+        window.addGuiStateListener(guiStateListener);
     }
 
     /** {@inheritDoc} */
     @Override
     public void dispose()
     {
-        window.removeConnectionStateListener(guiStateListener);
+        window.removeGuiStateListener(guiStateListener);
     }
 }

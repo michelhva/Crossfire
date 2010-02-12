@@ -319,7 +319,7 @@ public class CfMapUpdater
         map = new CfMap(mapSquareListener);
         visibleAnimations = new CfMapAnimations(crossfireServerConnection, this);
         crossfireServerConnection.addCrossfireUpdateMapListener(crossfireUpdateMapListener);
-        window.addConnectionStateListener(guiStateListener);
+        window.addGuiStateListener(guiStateListener);
     }
 
     /**
