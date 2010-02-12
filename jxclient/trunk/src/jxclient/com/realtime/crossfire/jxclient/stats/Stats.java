@@ -332,7 +332,7 @@ public class Stats
         this.experienceTable = experienceTable; // XXX: should detect changed information
         this.skillSet = skillSet;
         crossfireServerConnection.addCrossfireStatsListener(crossfireStatsListener);
-        window.addConnectionStateListener(guiStateListener);
+        window.addGuiStateListener(guiStateListener);
     }
 
     /**

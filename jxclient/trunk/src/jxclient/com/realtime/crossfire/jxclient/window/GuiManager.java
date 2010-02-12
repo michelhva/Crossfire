@@ -351,7 +351,7 @@ public class GuiManager
         this.server = server;
         this.macros = macros;
         this.windowRenderer = windowRenderer;
-        window.addConnectionStateListener(guiStateListener);
+        window.addGuiStateListener(guiStateListener);
     }
 
     @Deprecated

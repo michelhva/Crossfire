@@ -156,7 +156,7 @@ public class CommandQueue
     {
         this.crossfireServerConnection = crossfireServerConnection;
         crossfireServerConnection.addCrossfireComcListener(crossfireComcListener);
-        window.addConnectionStateListener(guiStateListener);
+        window.addGuiStateListener(guiStateListener);
     }
 
     /**

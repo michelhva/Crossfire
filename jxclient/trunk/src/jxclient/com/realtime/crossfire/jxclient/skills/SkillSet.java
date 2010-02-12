@@ -133,7 +133,7 @@ public class SkillSet
     public SkillSet(@NotNull final CrossfireServerConnection crossfireServerConnection, @NotNull final JXCWindow window)
     {
         crossfireServerConnection.addCrossfireSkillInfoListener(crossfireSkillInfoListener);
-        window.addConnectionStateListener(guiStateListener);
+        window.addGuiStateListener(guiStateListener);
     }
 
     /**

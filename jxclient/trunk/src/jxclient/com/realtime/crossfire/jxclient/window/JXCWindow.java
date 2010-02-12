@@ -654,7 +654,7 @@ public class JXCWindow extends JFrame
         server.addClientSocketListener(clientSocketListener);
         server.addCrossfireServerConnectionListener(crossfireServerConnectionListener);
         guiManager.setConnection(connection);
-        addConnectionStateListener(guiStateListener);
+        addGuiStateListener(guiStateListener);
     }
 
     /**
@@ -959,19 +959,19 @@ public class JXCWindow extends JFrame
     }
 
     /**
-     * Adds a connection listener.
+     * Adds a gui state listener.
      * @param listener the listener to add
      */
-    public void addConnectionStateListener(@NotNull final GuiStateListener listener)
+    public void addGuiStateListener(@NotNull final GuiStateListener listener)
     {
         guiStateListeners.add(listener);
     }
 
     /**
-     * Removes a connection listener.
+     * Removes a gui state listener.
      * @param listener the listener to remove
      */
-    public void removeConnectionStateListener(@NotNull final GuiStateListener listener)
+    public void removeGuiStateListener(@NotNull final GuiStateListener listener)
     {
         guiStateListeners.remove(listener);
     }

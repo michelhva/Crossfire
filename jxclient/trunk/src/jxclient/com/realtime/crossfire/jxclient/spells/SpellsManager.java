@@ -153,7 +153,7 @@ public class SpellsManager
     {
         initSpells();
         crossfireServerConnection.addCrossfireSpellListener(crossfireSpellListener);
-        window.addConnectionStateListener(guiStateListener);
+        window.addGuiStateListener(guiStateListener);
     }
 
     public void addCrossfireSpellChangedListener(@NotNull final SpellsManagerListener listener)
