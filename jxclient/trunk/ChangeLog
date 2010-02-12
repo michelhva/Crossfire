@@ -1,3 +1,8 @@
+2010-02-12  Andreas Kirschbaum
+
+	* Fix possible crash (ConcurrentModificationException) related to
+	messages window.
+
 2009-12-06  Andreas Kirschbaum
 
 	* Synchronize pickup options with server.

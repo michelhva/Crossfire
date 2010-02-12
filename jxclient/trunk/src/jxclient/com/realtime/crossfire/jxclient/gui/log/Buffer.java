@@ -29,6 +29,7 @@ import java.util.Collections;
 import java.util.Iterator;
 import java.util.List;
 import java.util.ListIterator;
+import java.util.concurrent.CopyOnWriteArrayList;
 import org.jetbrains.annotations.NotNull;
 
 /**
@@ -71,7 +72,7 @@ public class Buffer
      * The lines in display order.
      */
     @NotNull
-    private final List<Line> lines = new ArrayList<Line>();
+    private final List<Line> lines = new CopyOnWriteArrayList<Line>();
 
     /**
      * The total height of all {@link #lines}.
