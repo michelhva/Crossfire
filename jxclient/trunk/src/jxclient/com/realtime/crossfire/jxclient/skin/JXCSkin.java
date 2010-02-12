@@ -23,9 +23,10 @@ package com.realtime.crossfire.jxclient.skin;
 
 import com.realtime.crossfire.jxclient.gui.gui.GUIElement;
 import com.realtime.crossfire.jxclient.gui.gui.Gui;
+import com.realtime.crossfire.jxclient.gui.gui.TooltipManager;
 import com.realtime.crossfire.jxclient.gui.keybindings.KeyBindings;
 import com.realtime.crossfire.jxclient.window.GUICommandList;
-import com.realtime.crossfire.jxclient.window.GuiManager;
+import com.realtime.crossfire.jxclient.window.JXCWindowRenderer;
 import java.util.Iterator;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
@@ -180,9 +181,10 @@ public interface JXCSkin extends Iterable<Gui>
 
     /**
      * Attaches this skin to a gui manager.
-     * @param guiManager the gui manager to attach to
+     * @param windowRenderer the window renderer to attach to
+     * @param tooltipManager the tooltip manager to attach to
      */
-    void attach(@NotNull GuiManager guiManager);
+    void attach(@NotNull JXCWindowRenderer windowRenderer, @NotNull TooltipManager tooltipManager);
 
     /**
      * Frees all allocated resources.

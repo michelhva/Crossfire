@@ -27,6 +27,7 @@ import com.realtime.crossfire.jxclient.experience.ExperienceTable;
 import com.realtime.crossfire.jxclient.gui.gauge.GaugeUpdater;
 import com.realtime.crossfire.jxclient.gui.gui.GUIElement;
 import com.realtime.crossfire.jxclient.gui.gui.Gui;
+import com.realtime.crossfire.jxclient.gui.gui.TooltipManager;
 import com.realtime.crossfire.jxclient.gui.keybindings.KeyBindings;
 import com.realtime.crossfire.jxclient.gui.label.AbstractLabel;
 import com.realtime.crossfire.jxclient.items.ItemsManager;
@@ -42,6 +43,7 @@ import com.realtime.crossfire.jxclient.window.GUICommandList;
 import com.realtime.crossfire.jxclient.window.GuiManager;
 import com.realtime.crossfire.jxclient.window.GuiStateManager;
 import com.realtime.crossfire.jxclient.window.JXCWindow;
+import com.realtime.crossfire.jxclient.window.JXCWindowRenderer;
 import java.io.IOException;
 import java.io.LineNumberReader;
 import java.util.ArrayList;
@@ -170,11 +172,18 @@ public class DefaultJXCSkin implements JXCSkin
     private AbstractLabel tooltipLabel = null;
 
     /**
-     * The {@link GuiManager} currently attached to or <code>null</code> if not
-     * attached.
+     * The {@link JXCWindowRenderer} currently attached to or <code>null</code>
+     * if not attached.
      */
     @Nullable
-    private GuiManager guiManager = null;
+    private JXCWindowRenderer windowRenderer = null;
+
+    /**
+     * The {@link TooltipManager} currently attached to or <code>null</code> if
+     * not attached.
+     */
+    @Nullable
+    private TooltipManager tooltipManager = null;
 
     /**
      * Creates a new instance.
@@ -447,16 +456,17 @@ public class DefaultJXCSkin implements JXCSkin
 
     /** {@inheritDoc} */
     @Override
-    public void attach(@NotNull final GuiManager guiManager)
+    public void attach(@NotNull final JXCWindowRenderer windowRenderer, @NotNull final TooltipManager tooltipManager)
     {
-        if (this.guiManager != null)
+        if (this.windowRenderer != null || this.tooltipManager != null)
         {
             throw new IllegalStateException("skin is already attached");
         }
 
-        this.guiManager = guiManager;
-        guiManager.getWindowRenderer().setTooltip(tooltipLabel);
-        guiManager.getTooltipManager().setTooltip(tooltipLabel);
+        this.windowRenderer = windowRenderer;
+        this.tooltipManager = tooltipManager;
+        windowRenderer.setTooltip(tooltipLabel);
+        tooltipManager.setTooltip(tooltipLabel);
 
         for (final GUICommandList commandList : initEvents)
         {
@@ -468,12 +478,17 @@ public class DefaultJXCSkin implements JXCSkin
     @Override
     public void detach()
     {
-        final GuiManager tmpGuiManager = guiManager;
-        if (tmpGuiManager != null)
+        final JXCWindowRenderer tmpWindowRenderer = windowRenderer;
+        final TooltipManager tmpTooltipManager = tooltipManager;
+        windowRenderer = null;
+        tooltipManager = null;
+        if (tmpWindowRenderer != null)
         {
-            guiManager = null;
-            tmpGuiManager.getWindowRenderer().setTooltip(null);
-            tmpGuiManager.getTooltipManager().setTooltip(null);
+            tmpWindowRenderer.setTooltip(null);
+        }
+        if (tmpTooltipManager != null)
+        {
+            tmpTooltipManager.setTooltip(null);
         }
 
         for (final String optionName : optionNames)

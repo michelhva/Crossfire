@@ -781,7 +781,7 @@ public class GuiManager
     public void setSkin(@NotNull final JXCSkin skin)
     {
         this.skin = skin;
-        skin.attach(this);
+        skin.attach(windowRenderer, tooltipManager);
         queryDialog = skin.getDialogQuery();
         keybindDialog = skin.getDialogKeyBind();
         dialogQuit = skin.getDialogQuit();
