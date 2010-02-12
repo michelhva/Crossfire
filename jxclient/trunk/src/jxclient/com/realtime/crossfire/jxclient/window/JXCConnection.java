@@ -175,21 +175,22 @@ public class JXCConnection
      * @param keybindingsManager the keybindings manager to update
      * @param shortcutsManager the shortcuts manager to update
      * @param settings the settings instance to use
-     * @param window the frame instance for updating the title
+     * @param frame the frame instance for updating the title
      * @param characterPickup the character pickup instance to update
      * @param server the crossfire server connection instance used to connect
      * @param guiManager the gui manager to use when connecting
+     * @param guiStateManager the gui state manager to watch
      */
-    public JXCConnection(@NotNull final KeybindingsManager keybindingsManager, @NotNull final ShortcutsManager shortcutsManager, @NotNull final Settings settings, @NotNull final JXCWindow window, @NotNull final Pickup characterPickup, @NotNull final CrossfireServerConnection server, @NotNull final GuiManager guiManager)
+    public JXCConnection(@NotNull final KeybindingsManager keybindingsManager, @NotNull final ShortcutsManager shortcutsManager, @NotNull final Settings settings, @NotNull final Frame frame, @NotNull final Pickup characterPickup, @NotNull final CrossfireServerConnection server, @NotNull final GuiManager guiManager, @NotNull final GuiStateManager guiStateManager)
     {
         this.keybindingsManager = keybindingsManager;
         this.shortcutsManager = shortcutsManager;
         this.settings = settings;
-        frame = window;
+        this.frame = frame;
         this.characterPickup = characterPickup;
         this.server = server;
         this.guiManager = guiManager;
-        window.addGuiStateListener(guiStateListener);
+        guiStateManager.addGuiStateListener(guiStateListener);
         updateTitle();
     }
 

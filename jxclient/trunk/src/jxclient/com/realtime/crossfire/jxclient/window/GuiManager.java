@@ -335,7 +335,7 @@ public class GuiManager
 
     /**
      * Creates a new instance.
-     * @param window the associated window
+     * @param guiStateManager the gui state manager to watch
      * @param semaphoreDrawing the semaphore to use for drawing operations
      * @param tooltipManager the tooltip manager to update
      * @param settings the settings to use
@@ -343,7 +343,7 @@ public class GuiManager
      * @param macros the macros instance to use
      * @param windowRenderer the window renderer to use
      */
-    public GuiManager(@NotNull final JXCWindow window, @NotNull final Object semaphoreDrawing, @NotNull final TooltipManager tooltipManager, @NotNull final Settings settings, @NotNull final CrossfireServerConnection server, @NotNull final Macros macros, @NotNull final JXCWindowRenderer windowRenderer)
+    public GuiManager(@NotNull final GuiStateManager guiStateManager, @NotNull final Object semaphoreDrawing, @NotNull final TooltipManager tooltipManager, @NotNull final Settings settings, @NotNull final CrossfireServerConnection server, @NotNull final Macros macros, @NotNull final JXCWindowRenderer windowRenderer)
     {
         this.semaphoreDrawing = semaphoreDrawing;
         this.tooltipManager = tooltipManager;
@@ -351,7 +351,7 @@ public class GuiManager
         this.server = server;
         this.macros = macros;
         this.windowRenderer = windowRenderer;
-        window.addGuiStateListener(guiStateListener);
+        guiStateManager.addGuiStateListener(guiStateListener);
     }
 
     @Deprecated

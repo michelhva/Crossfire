@@ -36,7 +36,7 @@ import com.realtime.crossfire.jxclient.server.CrossfireMap2Command;
 import com.realtime.crossfire.jxclient.server.CrossfireServerConnection;
 import com.realtime.crossfire.jxclient.server.CrossfireUpdateMapListener;
 import com.realtime.crossfire.jxclient.window.GuiStateListener;
-import com.realtime.crossfire.jxclient.window.JXCWindow;
+import com.realtime.crossfire.jxclient.window.GuiStateManager;
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.HashSet;
@@ -309,17 +309,17 @@ public class CfMapUpdater
      * Creates a new instance.
      * @param crossfireServerConnection the connection to monitor
      * @param facesManager the faces manager to track for updated faces
-     * @param window the window to attach to
+     * @param guiStateManager the gui state manager to watch
      */
-    public CfMapUpdater(@NotNull final CrossfireServerConnection crossfireServerConnection, @NotNull final FacesManager facesManager, @NotNull final JXCWindow window)
+    public CfMapUpdater(@NotNull final CrossfireServerConnection crossfireServerConnection, @NotNull final FacesManager facesManager, @NotNull final GuiStateManager guiStateManager)
     {
         this.facesManager = facesManager;
-        this.animations = new Animations(window);
+        animations = new Animations(guiStateManager);
         facesManager.addFacesManagerListener(facesManagerListener);
         map = new CfMap(mapSquareListener);
         visibleAnimations = new CfMapAnimations(crossfireServerConnection, this);
         crossfireServerConnection.addCrossfireUpdateMapListener(crossfireUpdateMapListener);
-        window.addGuiStateListener(guiStateListener);
+        guiStateManager.addGuiStateListener(guiStateListener);
     }
 
     /**

@@ -22,7 +22,7 @@
 package com.realtime.crossfire.jxclient.gui.commands;
 
 import com.realtime.crossfire.jxclient.window.GuiState;
-import com.realtime.crossfire.jxclient.window.JXCWindow;
+import com.realtime.crossfire.jxclient.window.GuiStateManager;
 import org.jetbrains.annotations.NotNull;
 
 /**
@@ -32,18 +32,18 @@ import org.jetbrains.annotations.NotNull;
 public class MetaCommand implements GUICommand
 {
     /**
-     * The main window.
+     * The {@link GuiStateManager} to affect.
      */
     @NotNull
-    private final JXCWindow window;
+    private final GuiStateManager guiStateManager;
 
     /**
      * Creates a new instance.
-     * @param window the mainwindow
+     * @param guiStateManager the gui state manager to affect
      */
-    public MetaCommand(@NotNull final JXCWindow window)
+    public MetaCommand(@NotNull final GuiStateManager guiStateManager)
     {
-        this.window = window;
+        this.guiStateManager = guiStateManager;
     }
 
     /** {@inheritDoc} */
@@ -57,6 +57,6 @@ public class MetaCommand implements GUICommand
     @Override
     public void execute()
     {
-        window.changeGUI(GuiState.METASERVER);
+        guiStateManager.changeGUI(GuiState.METASERVER);
     }
 }

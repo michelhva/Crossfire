@@ -22,7 +22,7 @@
 package com.realtime.crossfire.jxclient.server;
 
 import com.realtime.crossfire.jxclient.window.GuiStateListener;
-import com.realtime.crossfire.jxclient.window.JXCWindow;
+import com.realtime.crossfire.jxclient.window.GuiStateManager;
 import java.util.LinkedList;
 import java.util.List;
 import org.jetbrains.annotations.NotNull;
@@ -150,13 +150,13 @@ public class CommandQueue
      * Create a new instance.
      * @param crossfireServerConnection The server connection for sending
      * ncom commands.
-     * @param window the window to attach to
+     * @param guiStateManager the gui state manager to watch
      */
-    public CommandQueue(@NotNull final CrossfireServerConnection crossfireServerConnection, @NotNull final JXCWindow window)
+    public CommandQueue(@NotNull final CrossfireServerConnection crossfireServerConnection, @NotNull final GuiStateManager guiStateManager)
     {
         this.crossfireServerConnection = crossfireServerConnection;
         crossfireServerConnection.addCrossfireComcListener(crossfireComcListener);
-        window.addGuiStateListener(guiStateListener);
+        guiStateManager.addGuiStateListener(guiStateListener);
     }
 
     /**

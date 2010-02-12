@@ -23,7 +23,7 @@ package com.realtime.crossfire.jxclient.animations;
 
 import com.realtime.crossfire.jxclient.server.ClientSocketState;
 import com.realtime.crossfire.jxclient.window.GuiStateListener;
-import com.realtime.crossfire.jxclient.window.JXCWindow;
+import com.realtime.crossfire.jxclient.window.GuiStateManager;
 import java.util.HashMap;
 import java.util.Map;
 import org.jetbrains.annotations.NotNull;
@@ -95,13 +95,14 @@ public class Animations
 
     /**
      * Creates a new instance.
-     * @param window the window to attach to; <code>null</code> to not attach
+     * @param guiStateManager the gui state manager to watch; <code>null</code>
+     * to not watch
      */
-    public Animations(@Nullable final JXCWindow window)
+    public Animations(@Nullable final GuiStateManager guiStateManager)
     {
-        if (window != null)
+        if (guiStateManager != null)
         {
-            window.addGuiStateListener(guiStateListener);
+            guiStateManager.addGuiStateListener(guiStateListener);
         }
     }
 

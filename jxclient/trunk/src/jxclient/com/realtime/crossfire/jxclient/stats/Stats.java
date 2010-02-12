@@ -28,7 +28,7 @@ import com.realtime.crossfire.jxclient.server.CrossfireStatsListener;
 import com.realtime.crossfire.jxclient.skills.Skill;
 import com.realtime.crossfire.jxclient.skills.SkillSet;
 import com.realtime.crossfire.jxclient.window.GuiStateListener;
-import com.realtime.crossfire.jxclient.window.JXCWindow;
+import com.realtime.crossfire.jxclient.window.GuiStateManager;
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.HashSet;
@@ -325,14 +325,14 @@ public class Stats
      * @param crossfireServerConnection the connection to monitor
      * @param experienceTable the experience table instance to use
      * @param skillSet the skill set instance to use
-     * @param window the window to attach to
+     * @param guiStateManager the gui state manager to watch
      */
-    public Stats(@NotNull final CrossfireServerConnection crossfireServerConnection, @NotNull final ExperienceTable experienceTable, @NotNull final SkillSet skillSet, @NotNull final JXCWindow window)
+    public Stats(@NotNull final CrossfireServerConnection crossfireServerConnection, @NotNull final ExperienceTable experienceTable, @NotNull final SkillSet skillSet, @NotNull final GuiStateManager guiStateManager)
     {
         this.experienceTable = experienceTable; // XXX: should detect changed information
         this.skillSet = skillSet;
         crossfireServerConnection.addCrossfireStatsListener(crossfireStatsListener);
-        window.addGuiStateListener(guiStateListener);
+        guiStateManager.addGuiStateListener(guiStateListener);
     }
 
     /**

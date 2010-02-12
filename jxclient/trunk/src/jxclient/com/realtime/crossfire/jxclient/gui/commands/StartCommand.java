@@ -22,7 +22,7 @@
 package com.realtime.crossfire.jxclient.gui.commands;
 
 import com.realtime.crossfire.jxclient.window.GuiState;
-import com.realtime.crossfire.jxclient.window.JXCWindow;
+import com.realtime.crossfire.jxclient.window.GuiStateManager;
 import org.jetbrains.annotations.NotNull;
 
 /**
@@ -32,18 +32,18 @@ import org.jetbrains.annotations.NotNull;
 public class StartCommand implements GUICommand
 {
     /**
-     * The window.
+     * The {@link GuiStateManager} to affect.
      */
     @NotNull
-    private final JXCWindow window;
+    private final GuiStateManager guiStateManager;
 
     /**
      * Creates a new instance.
-     * @param window The window.
+     * @param guiStateManager the gui state manager to affect
      */
-    public StartCommand(@NotNull final JXCWindow window)
+    public StartCommand(@NotNull final GuiStateManager guiStateManager)
     {
-        this.window = window;
+        this.guiStateManager = guiStateManager;
     }
 
     /** {@inheritDoc} */
@@ -57,6 +57,6 @@ public class StartCommand implements GUICommand
     @Override
     public void execute()
     {
-        window.changeGUI(GuiState.START);
+        guiStateManager.changeGUI(GuiState.START);
     }
 }
