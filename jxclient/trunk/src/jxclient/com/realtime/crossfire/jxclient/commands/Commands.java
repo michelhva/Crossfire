@@ -28,7 +28,6 @@ import com.realtime.crossfire.jxclient.settings.options.OptionManager;
 import com.realtime.crossfire.jxclient.util.Patterns;
 import com.realtime.crossfire.jxclient.util.StringUtils;
 import com.realtime.crossfire.jxclient.window.GuiManager;
-import com.realtime.crossfire.jxclient.window.JXCWindow;
 import com.realtime.crossfire.jxclient.window.JXCWindowRenderer;
 import java.util.HashMap;
 import java.util.Map;
@@ -55,7 +54,6 @@ public class Commands
 
     /**
      * Creates a new instance.
-     * @param window the window to execute the commands in
      * @param windowRenderer the renderer to use
      * @param commandQueue the command queue for sending commands
      * @param crossfireServerConnection the connection instance
@@ -64,11 +62,11 @@ public class Commands
      * @param guiManager the gui manager to use
      * @param macros the macros instance to use
      */
-    public Commands(@NotNull final JXCWindow window, @NotNull final JXCWindowRenderer windowRenderer, @NotNull final CommandQueue commandQueue, @NotNull final CrossfireServerConnection crossfireServerConnection, @NotNull final ScriptManager scriptManager, @NotNull final OptionManager optionManager, @NotNull final GuiManager guiManager, @NotNull final Macros macros)
+    public Commands(@NotNull final JXCWindowRenderer windowRenderer, @NotNull final CommandQueue commandQueue, @NotNull final CrossfireServerConnection crossfireServerConnection, @NotNull final ScriptManager scriptManager, @NotNull final OptionManager optionManager, @NotNull final GuiManager guiManager, @NotNull final Macros macros)
     {
         this.commandQueue = commandQueue;
-        commands.put("bind", new BindCommand(window, crossfireServerConnection, this, guiManager, macros));
-        commands.put("unbind", new UnbindCommand(window, crossfireServerConnection));
+        commands.put("bind", new BindCommand(crossfireServerConnection, this, guiManager, macros));
+        commands.put("unbind", new UnbindCommand(guiManager, crossfireServerConnection));
         commands.put("screenshot", new ScreenshotCommand(windowRenderer, crossfireServerConnection));
         commands.put("script", new ScriptCommand(scriptManager, crossfireServerConnection));
         commands.put("scriptkill", new ScriptkillCommand(scriptManager, crossfireServerConnection));
