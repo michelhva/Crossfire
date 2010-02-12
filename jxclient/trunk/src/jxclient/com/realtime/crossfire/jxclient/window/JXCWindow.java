@@ -105,12 +105,6 @@ public class JXCWindow extends JFrame
     private final GuiStateManager guiStateManager;
 
     /**
-     * The object to be notified when the application terminates.
-     */
-    @NotNull
-    private final Object terminateSync;
-
-    /**
      * Whether GUI elements should be highlighted.
      */
     private final boolean debugGui;
@@ -376,7 +370,7 @@ public class JXCWindow extends JFrame
 
             if (!guiManager.openQuitDialog())
             {
-                quitApplication();
+                guiManager.terminate();
             }
         }
 
@@ -384,7 +378,7 @@ public class JXCWindow extends JFrame
         @Override
         public void windowClosed(@NotNull final WindowEvent e)
         {
-            quitApplication();
+            guiManager.terminate();
         }
 
         /** {@inheritDoc} */
@@ -465,7 +459,7 @@ public class JXCWindow extends JFrame
                 break;
 
             case 2:
-                quitApplication();
+                guiManager.terminate();
                 break;
             }
         }
@@ -512,7 +506,7 @@ public class JXCWindow extends JFrame
             server.removeCrossfireQueryListener(crossfireQueryListener);
             if (DISABLE_START_GUI)
             {
-                quitApplication();
+                guiManager.terminate();
             }
         }
 
@@ -592,7 +586,6 @@ public class JXCWindow extends JFrame
     public JXCWindow(@NotNull final Object terminateSync, @NotNull final CrossfireServerConnection server, @NotNull final Object semaphoreRedraw, final boolean debugGui, @Nullable final Writer debugKeyboard, @NotNull final Settings settings, @NotNull final OptionManager optionManager, @NotNull final MetaserverModel metaserverModel, @NotNull final Resolution resolution, @NotNull final GuiStateManager guiStateManager) throws IOException
     {
         super("");
-        this.terminateSync = terminateSync;
         this.server = server;
         this.debugGui = debugGui;
         this.settings = settings;
@@ -616,7 +609,7 @@ public class JXCWindow extends JFrame
         setDefaultCloseOperation(DO_NOTHING_ON_CLOSE);
         mouseTracker = new MouseTracker(debugGui);
         windowRenderer = new JXCWindowRenderer(this, mouseTracker, semaphoreRedraw, server);
-        guiManager = new GuiManager(guiStateManager, semaphoreDrawing, new TooltipManager(this), settings, server, macros, windowRenderer);
+        guiManager = new GuiManager(guiStateManager, semaphoreDrawing, terminateSync, new TooltipManager(this), settings, server, macros, windowRenderer);
         mouseTracker.init(windowRenderer);
         final ScriptManager scriptManager = new ScriptManager(commandQueue, server, stats, itemsManager, spellsManager, mapUpdater, skillSet);
         guiManager.init(this, scriptManager, commandQueue, server, optionManager, debugGui ? mouseTracker : null);
@@ -671,18 +664,6 @@ public class JXCWindow extends JFrame
             guiManager.openKeybindDialog();
         }
         return result;
-    }
-
-    /**
-     * Terminates the application.
-     */
-    public void quitApplication()
-    {
-        guiManager.terminate();
-        synchronized (terminateSync)
-        {
-            terminateSync.notifyAll();
-        }
     }
 
     public void init(@NotNull final String skinName, final boolean fullScreen, @Nullable final String serverInfo)

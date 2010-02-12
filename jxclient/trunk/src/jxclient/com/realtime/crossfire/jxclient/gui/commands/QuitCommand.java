@@ -21,7 +21,7 @@
 
 package com.realtime.crossfire.jxclient.gui.commands;
 
-import com.realtime.crossfire.jxclient.window.JXCWindow;
+import com.realtime.crossfire.jxclient.window.GuiManager;
 import org.jetbrains.annotations.NotNull;
 
 /**
@@ -31,18 +31,18 @@ import org.jetbrains.annotations.NotNull;
 public class QuitCommand implements GUICommand
 {
     /**
-     * The main window.
+     * The {@link GuiManager} instance.
      */
     @NotNull
-    private final JXCWindow window;
+    private final GuiManager guiManager;
 
     /**
      * Creates a new instance.
-     * @param window the main window
+     * @param guiManager the gui manager instance
      */
-    public QuitCommand(@NotNull final JXCWindow window)
+    public QuitCommand(@NotNull final GuiManager guiManager)
     {
-        this.window = window;
+        this.guiManager = guiManager;
     }
 
     /** {@inheritDoc} */
@@ -56,6 +56,6 @@ public class QuitCommand implements GUICommand
     @Override
     public void execute()
     {
-        window.quitApplication();
+        guiManager.terminate();
     }
 }

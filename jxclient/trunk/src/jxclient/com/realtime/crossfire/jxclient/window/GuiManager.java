@@ -61,6 +61,12 @@ public class GuiManager
     private final Object semaphoreDrawing;
 
     /**
+     * The object to be notified when the application terminates.
+     */
+    @NotNull
+    private final Object terminateSync;
+
+    /**
      * The currently active skin. Set to <code>null</code> if no skin is set.
      */
     @Nullable
@@ -337,15 +343,18 @@ public class GuiManager
      * Creates a new instance.
      * @param guiStateManager the gui state manager to watch
      * @param semaphoreDrawing the semaphore to use for drawing operations
+     * @param terminateSync the object to be notified when the application
+     * terminates
      * @param tooltipManager the tooltip manager to update
      * @param settings the settings to use
      * @param server the crossfire server connection to monitor
      * @param macros the macros instance to use
      * @param windowRenderer the window renderer to use
      */
-    public GuiManager(@NotNull final GuiStateManager guiStateManager, @NotNull final Object semaphoreDrawing, @NotNull final TooltipManager tooltipManager, @NotNull final Settings settings, @NotNull final CrossfireServerConnection server, @NotNull final Macros macros, @NotNull final JXCWindowRenderer windowRenderer)
+    public GuiManager(@NotNull final GuiStateManager guiStateManager, @NotNull final Object semaphoreDrawing, @NotNull final Object terminateSync, @NotNull final TooltipManager tooltipManager, @NotNull final Settings settings, @NotNull final CrossfireServerConnection server, @NotNull final Macros macros, @NotNull final JXCWindowRenderer windowRenderer)
     {
         this.semaphoreDrawing = semaphoreDrawing;
+        this.terminateSync = terminateSync;
         this.tooltipManager = tooltipManager;
         this.settings = settings;
         this.server = server;
@@ -577,9 +586,16 @@ public class GuiManager
         windowRenderer.closeDialog(dialog);
     }
 
+    /**
+     * Terminates the application.
+     */
     public void terminate()
     {
         timer.stop();
+        synchronized (terminateSync)
+        {
+            terminateSync.notifyAll();
+        }
     }
 
     /**
