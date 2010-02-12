@@ -46,6 +46,7 @@ import java.util.Collection;
 import java.util.Iterator;
 import java.util.ListIterator;
 import java.util.concurrent.CopyOnWriteArrayList;
+import javax.swing.JFrame;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 
@@ -55,7 +56,7 @@ import org.jetbrains.annotations.Nullable;
 public class JXCWindowRenderer
 {
     @NotNull
-    private final JXCWindow window;
+    private final JFrame frame;
 
     @NotNull
     private final MouseListener mouseTracker;
@@ -252,15 +253,15 @@ public class JXCWindowRenderer
 
     /**
      * Creates a new instance.
-     * @param window the associated window
+     * @param frame the associated window
      * @param mouseTracker the mouse tracker instance
      * @param redrawSemaphore the semaphore used to synchronized map model
      * updates and map view redraws
      * @param crossfireServerConnection the server connection to monitor
      */
-    public JXCWindowRenderer(@NotNull final JXCWindow window, @NotNull final MouseListener mouseTracker, @NotNull final Object redrawSemaphore, @NotNull final CrossfireServerConnection crossfireServerConnection)
+    public JXCWindowRenderer(@NotNull final JFrame frame, @NotNull final MouseListener mouseTracker, @NotNull final Object redrawSemaphore, @NotNull final CrossfireServerConnection crossfireServerConnection)
     {
-        this.window = window;
+        this.frame = frame;
         this.mouseTracker = mouseTracker;
         this.redrawSemaphore = redrawSemaphore;
         crossfireServerConnection.addCrossfireUpdateMapListener(crossfireUpdateMapListener);
@@ -284,8 +285,8 @@ public class JXCWindowRenderer
         final GraphicsDevice gd = ge.getDefaultScreenDevice();
         if (fullScreen && gd.isFullScreenSupported())
         {
-            window.setUndecorated(true);
-            gd.setFullScreenWindow(window);
+            frame.setUndecorated(true);
+            gd.setFullScreenWindow(frame);
             isFullScreen = true;
             final DisplayMode currentDisplayMode = gd.getDisplayMode();
             if (currentDisplayMode.getWidth() == displayMode.getWidth() && currentDisplayMode.getHeight() == displayMode.getHeight())
@@ -298,7 +299,7 @@ public class JXCWindowRenderer
                 {
                     isFullScreen = false;
                     gd.setFullScreenWindow(null);
-//                    window.setUndecorated(false); // XXX: cannot be called anymore
+//                    frame.setUndecorated(false); // XXX: cannot be called anymore
                     // windowed mode
                 }
                 else
@@ -321,7 +322,7 @@ public class JXCWindowRenderer
                     {
                         isFullScreen = false;
                         gd.setFullScreenWindow(null);
-//                        window.setUndecorated(false); // XXX: cannot be called anymore
+//                        frame.setUndecorated(false); // XXX: cannot be called anymore
                         // windowed mode
                     }
                 }
@@ -340,16 +341,16 @@ public class JXCWindowRenderer
             }
 
             final Dimension size = new Dimension(displayMode.getWidth(), displayMode.getHeight());
-            window.getRootPane().setPreferredSize(size);
-            window.pack();
-            window.setResizable(false);
-            window.setVisible(true);
-            window.setLocationRelativeTo(null);
+            frame.getRootPane().setPreferredSize(size);
+            frame.pack();
+            frame.setResizable(false);
+            frame.setVisible(true);
+            frame.setLocationRelativeTo(null);
         }
-        window.createBufferStrategy(2);
-        bufferStrategy = window.getBufferStrategy();
+        frame.createBufferStrategy(2);
+        bufferStrategy = frame.getBufferStrategy();
 
-        final Insets insets = window.getInsets();
+        final Insets insets = frame.getInsets();
         offsetX = insets.left;
         offsetY = insets.top;
     }
@@ -763,7 +764,7 @@ public class JXCWindowRenderer
             return;
         }
 
-        final Point mouse = window.getMousePosition(true);
+        final Point mouse = frame.getMousePosition(true);
         if (mouse == null)
         {
             openDialogs.add(dialog);
@@ -774,7 +775,7 @@ public class JXCWindowRenderer
             mouse.y -= offsetY;
             if (dialog.isWithinDrawingArea(mouse.x, mouse.y))
             {
-                final MouseEvent mouseEvent = new MouseEvent(window, 0, System.currentTimeMillis(), 0, mouse.x, mouse.y, 0, false);
+                final MouseEvent mouseEvent = new MouseEvent(frame, 0, System.currentTimeMillis(), 0, mouse.x, mouse.y, 0, false);
                 mouseTracker.mouseExited(mouseEvent);
                 openDialogs.add(dialog);
                 mouseTracker.mouseEntered(mouseEvent);
@@ -799,7 +800,7 @@ public class JXCWindowRenderer
             return false;
         }
 
-        final Point mouse = window.getMousePosition(true);
+        final Point mouse = frame.getMousePosition(true);
         if (mouse == null)
         {
             openDialogs.remove(dialog);
@@ -810,7 +811,7 @@ public class JXCWindowRenderer
             mouse.y -= offsetY;
             if (dialog.isWithinDrawingArea(mouse.x, mouse.y))
             {
-                final MouseEvent mouseEvent = new MouseEvent(window, 0, System.currentTimeMillis(), 0, mouse.x, mouse.y, 0, false);
+                final MouseEvent mouseEvent = new MouseEvent(frame, 0, System.currentTimeMillis(), 0, mouse.x, mouse.y, 0, false);
                 mouseTracker.mouseExited(mouseEvent);
                 openDialogs.remove(dialog);
                 mouseTracker.mouseEntered(mouseEvent);
