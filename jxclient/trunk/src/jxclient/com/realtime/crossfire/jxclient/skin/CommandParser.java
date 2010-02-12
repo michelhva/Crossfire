@@ -174,7 +174,7 @@ public class CommandParser
                 throw new IOException("syntax error");
             }
 
-            return new QuitCommand(window);
+            return new QuitCommand(guiManager);
         }
         else if (command.equals("CONNECT"))
         {
