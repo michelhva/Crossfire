@@ -1,4 +1,4 @@
-xe/*
+/*
  * This file is part of JXClient, the Fullscreen Java Crossfire Client.
  *
  * JXClient is free software; you can redistribute it and/or modify
