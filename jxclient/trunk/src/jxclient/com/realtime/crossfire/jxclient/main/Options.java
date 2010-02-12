@@ -140,11 +140,11 @@ public class Options
             {
                 System.out.println("");
                 System.out.println("Available options:");
-                System.out.println(" -N             : Disable full-screen mode;");
+                System.out.println(" -N             : Disable full-screen mode.");
                 System.out.println(" --resolution <width>x<height>");
                 System.out.println(" -r <width>x<height>");
-                System.out.println("                : Resolution to use [default is maximum not exceeding current]");
-                System.out.println(" -S <skin>      : Skin name to use. [default, prelude, ragnorok]");
+                System.out.println("                : Resolution to use. [default is maximum not exceeding screen]");
+                System.out.println(" -S <skin>      : Skin name to use.");
                 System.out.println(" --opengl       : Enable the OpenGL rendering pipeline.");
                 System.out.println(" --server <host>: Select a server to connect to; skips main and metaserver");
                 System.out.println("                  windows.");
@@ -153,6 +153,8 @@ public class Options
                 System.out.println("                : Log keyboard input.");
                 System.out.println(" --debug-protocol <log-file>");
                 System.out.println("                : Log messages exchanged with the server.");
+                System.out.println("");
+                System.out.println("Available skins: default, prelude, ragnorok.");
                 System.exit(1);
             }
         }
