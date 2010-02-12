@@ -98,7 +98,14 @@ public class SkillSet
 
         /** {@inheritDoc} */
         @Override
-        public void connecting()
+        public void preConnecting(@NotNull final String serverInfo)
+        {
+            // ignore
+        }
+
+        /** {@inheritDoc} */
+        @Override
+        public void connecting(@NotNull final String serverInfo)
         {
             clearNumberedSkills();
         }

@@ -58,7 +58,6 @@ import com.realtime.crossfire.jxclient.server.CrossfireServerConnection;
 import com.realtime.crossfire.jxclient.util.NumberParser;
 import com.realtime.crossfire.jxclient.window.GuiManager;
 import com.realtime.crossfire.jxclient.window.GuiStateManager;
-import com.realtime.crossfire.jxclient.window.JXCWindow;
 import java.io.IOException;
 import java.io.LineNumberReader;
 import org.jetbrains.annotations.NotNull;
@@ -116,7 +115,6 @@ public class CommandParser
      * @param argc the start index for parsing
      * @param element the target element
      * @param command the command to parse the arguments of
-     * @param window the window instance
      * @param guiStateManager the gui state manager instance
      * @param commands the commands instance for executing commands
      * @param lnr the source to read more parameters from
@@ -129,7 +127,7 @@ public class CommandParser
      * @throws JXCSkinException if an element cannot be found
      */
     @NotNull
-    public GUICommand parseCommandArgs(@NotNull final String[] args, final int argc, @Nullable final GUIElement element, @NotNull final String command, @NotNull final JXCWindow window, @NotNull final GuiStateManager guiStateManager, @NotNull final Commands commands, @NotNull final LineNumberReader lnr, @NotNull final CommandQueue commandQueue, @NotNull final CrossfireServerConnection crossfireServerConnection, @NotNull final GuiManager guiManager, @NotNull final Macros macros) throws IOException, JXCSkinException
+    public GUICommand parseCommandArgs(@NotNull final String[] args, final int argc, @Nullable final GUIElement element, @NotNull final String command, @NotNull final GuiStateManager guiStateManager, @NotNull final Commands commands, @NotNull final LineNumberReader lnr, @NotNull final CommandQueue commandQueue, @NotNull final CrossfireServerConnection crossfireServerConnection, @NotNull final GuiManager guiManager, @NotNull final Macros macros) throws IOException, JXCSkinException
     {
         if (command.equals("SHOW"))
         {
@@ -188,7 +186,7 @@ public class CommandParser
                 throw new IOException("'"+element+"' must be an input field");
             }
 
-            return new ConnectCommand(window, (GUIText)element);
+            return new ConnectCommand(guiStateManager, (GUIText)element);
         }
         else if (command.equals("DISCONNECT"))
         {
@@ -197,7 +195,7 @@ public class CommandParser
                 throw new IOException("syntax error");
             }
 
-            return new DisconnectCommand(window);
+            return new DisconnectCommand(guiStateManager);
         }
         else if (command.equals("GUI_META"))
         {

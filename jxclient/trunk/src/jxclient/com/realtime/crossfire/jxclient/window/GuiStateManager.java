@@ -194,7 +194,11 @@ public class GuiStateManager
             case CONNECTING:
                 for (final GuiStateListener listener : guiStateListeners)
                 {
-                    listener.connecting();
+                    listener.preConnecting(param);
+                }
+                for (final GuiStateListener listener : guiStateListeners)
+                {
+                    listener.connecting(param);
                 }
                 break;
 
@@ -244,5 +248,22 @@ public class GuiStateManager
     public void removeGuiStateListener(@NotNull final GuiStateListener listener)
     {
         guiStateListeners.remove(listener);
+    }
+
+    /**
+     * Connects to a Crossfire server.
+     * @param serverInfo the server to connect to
+     */
+    public void connect(@NotNull final String serverInfo)
+    {
+        changeGUI(GuiState.CONNECTING, serverInfo);
+    }
+
+    /**
+     * Disconnects from the  Crossfire server.
+     */
+    public void disconnect()
+    {
+        changeGUI(GuiState.METASERVER);
     }
 }

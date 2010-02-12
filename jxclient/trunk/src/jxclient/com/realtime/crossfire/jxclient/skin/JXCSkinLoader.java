@@ -532,11 +532,11 @@ public class JXCSkinLoader
                         }
                         else if (args[0].equals("commandlist"))
                         {
-                            parseCommandList(args, window, guiStateManager, lnr, commands, commandQueue, server, guiManager, macros);
+                            parseCommandList(args, guiStateManager, lnr, commands, commandQueue, server, guiManager, macros);
                         }
                         else if (args[0].equals("commandlist_add"))
                         {
-                            parseCommandListAdd(args, window, guiStateManager, lnr, commands, commandQueue, server, guiManager, macros);
+                            parseCommandListAdd(args, guiStateManager, lnr, commands, commandQueue, server, guiManager, macros);
                         }
                         else if (gui != null && args[0].equals("command_text"))
                         {
@@ -867,7 +867,6 @@ public class JXCSkinLoader
     /**
      * Parses a "commandlist" command.
      * @param args the command arguments
-     * @param window the window to use
      * @param guiStateManager the gui state manager instance
      * @param lnr the line number reader for reading more lines
      * @param commands the commands to add to
@@ -877,7 +876,7 @@ public class JXCSkinLoader
      * @throws IOException if the command cannot be parsed
      * @throws JXCSkinException if the command cannot be parsed
      */
-    private void parseCommandList(@NotNull final String[] args, @NotNull final JXCWindow window, @NotNull final GuiStateManager guiStateManager, @NotNull final LineNumberReader lnr, @NotNull final Commands commands, @NotNull final CommandQueue commandQueue, @NotNull final CrossfireServerConnection server, @NotNull final GuiManager guiManager, @NotNull final Macros macros) throws IOException, JXCSkinException
+    private void parseCommandList(@NotNull final String[] args, @NotNull final GuiStateManager guiStateManager, @NotNull final LineNumberReader lnr, @NotNull final Commands commands, @NotNull final CommandQueue commandQueue, @NotNull final CrossfireServerConnection server, @NotNull final GuiManager guiManager, @NotNull final Macros macros) throws IOException, JXCSkinException
     {
         if (args.length != 3 && args.length < 5)
         {
@@ -890,14 +889,13 @@ public class JXCSkinLoader
         if (args.length >= 5)
         {
             final GUIElement element = args[3].equals("null") ? null : skin.lookupGuiElement(args[3]);
-            skin.addCommand(commandListName, args, 5, element, args[4], window, guiStateManager, commands, lnr, commandQueue, server, guiManager, macros);
+            skin.addCommand(commandListName, args, 5, element, args[4], guiStateManager, commands, lnr, commandQueue, server, guiManager, macros);
         }
     }
 
     /**
      * Parses a "commandlist_add" command.
      * @param args the command arguments
-     * @param window the window to use
      * @param guiStateManager the gui state manager instance
      * @param lnr the line number reader for reading more lines
      * @param commands the commands to add to
@@ -908,7 +906,7 @@ public class JXCSkinLoader
      * @throws IOException if the command cannot be parsed
      * @throws JXCSkinException if the command cannot be parsed
      */
-    private void parseCommandListAdd(@NotNull final String[] args, @NotNull final JXCWindow window, @NotNull final GuiStateManager guiStateManager, @NotNull final LineNumberReader lnr, @NotNull final Commands commands, @NotNull final CommandQueue commandQueue, @NotNull final CrossfireServerConnection server, @NotNull final GuiManager guiManager, @NotNull final Macros macros) throws IOException, JXCSkinException
+    private void parseCommandListAdd(@NotNull final String[] args, @NotNull final GuiStateManager guiStateManager, @NotNull final LineNumberReader lnr, @NotNull final Commands commands, @NotNull final CommandQueue commandQueue, @NotNull final CrossfireServerConnection server, @NotNull final GuiManager guiManager, @NotNull final Macros macros) throws IOException, JXCSkinException
     {
         if (args.length < 4)
         {
@@ -916,7 +914,7 @@ public class JXCSkinLoader
         }
 
         final GUIElement element = args[2].equals("null") ? null : skin.lookupGuiElement(args[2]);
-        skin.addCommand(args[1], args, 4, element, args[3], window, guiStateManager, commands, lnr, commandQueue, server, guiManager, macros);
+        skin.addCommand(args[1], args, 4, element, args[3], guiStateManager, commands, lnr, commandQueue, server, guiManager, macros);
     }
 
     /**

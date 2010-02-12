@@ -22,7 +22,7 @@
 package com.realtime.crossfire.jxclient.gui.commands;
 
 import com.realtime.crossfire.jxclient.gui.textinput.GUIText;
-import com.realtime.crossfire.jxclient.window.JXCWindow;
+import com.realtime.crossfire.jxclient.window.GuiStateManager;
 import org.jetbrains.annotations.NotNull;
 
 /**
@@ -32,10 +32,10 @@ import org.jetbrains.annotations.NotNull;
 public class ConnectCommand implements GUICommand
 {
     /**
-     * The main window.
+     * The {@link GuiStateManager} instance.
      */
     @NotNull
-    private final JXCWindow window;
+    private final GuiStateManager guiStateManager;
 
     /**
      * The host name input field.
@@ -45,12 +45,12 @@ public class ConnectCommand implements GUICommand
 
     /**
      * Creates a new instance.
-     * @param window the main window
+     * @param guiStateManager the gui state manager instance
      * @param hostNameInputField the host name input field
      */
-    public ConnectCommand(@NotNull final JXCWindow window, @NotNull final GUIText hostNameInputField)
+    public ConnectCommand(@NotNull final GuiStateManager guiStateManager, @NotNull final GUIText hostNameInputField)
     {
-        this.window = window;
+        this.guiStateManager = guiStateManager;
         this.hostNameInputField = hostNameInputField;
     }
 
@@ -65,6 +65,6 @@ public class ConnectCommand implements GUICommand
     @Override
     public void execute()
     {
-        window.connect(hostNameInputField.getText());
+        guiStateManager.connect(hostNameInputField.getText());
     }
 }
