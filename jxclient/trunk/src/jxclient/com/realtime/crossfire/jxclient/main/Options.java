@@ -23,7 +23,7 @@ package com.realtime.crossfire.jxclient.main;
 
 import com.realtime.crossfire.jxclient.settings.Filenames;
 import com.realtime.crossfire.jxclient.settings.Settings;
-import com.realtime.crossfire.jxclient.skin.Resolution;
+import com.realtime.crossfire.jxclient.util.Resolution;
 import java.awt.DisplayMode;
 import java.awt.GraphicsDevice;
 import java.awt.GraphicsEnvironment;

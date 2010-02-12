@@ -92,6 +92,7 @@ import com.realtime.crossfire.jxclient.spells.CurrentSpellManager;
 import com.realtime.crossfire.jxclient.spells.SpellsManager;
 import com.realtime.crossfire.jxclient.stats.Stats;
 import com.realtime.crossfire.jxclient.util.NumberParser;
+import com.realtime.crossfire.jxclient.util.Resolution;
 import com.realtime.crossfire.jxclient.util.StringUtils;
 import com.realtime.crossfire.jxclient.window.GUICommandList;
 import com.realtime.crossfire.jxclient.window.GuiManager;
