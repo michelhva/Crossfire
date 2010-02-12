@@ -483,7 +483,7 @@ public class JXCWindowRenderer
     private void redrawBlack(@NotNull final Graphics g)
     {
         g.setColor(Color.BLACK);
-        g.fillRect(0, 0, window.getWindowWidth(), window.getWindowHeight());
+        g.fillRect(0, 0, currentGui.getWidth(), currentGui.getHeight());
     }
 
     /**
@@ -929,5 +929,23 @@ public class JXCWindowRenderer
     public void setInhibitPaintIconified(final boolean inhibitPaintIconified)
     {
         this.inhibitPaintIconified = inhibitPaintIconified;
+    }
+
+    /**
+     * Returns the width of the client area.
+     * @return the width of the client area
+     */
+    public int getWindowWidth()
+    {
+        return currentGui.getWidth();
+    }
+
+    /**
+     * Returns the height of the client area.
+     * @return the height of the client area
+     */
+    public int getWindowHeight()
+    {
+        return currentGui.getHeight();
     }
 }

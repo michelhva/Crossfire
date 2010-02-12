@@ -23,7 +23,6 @@ package com.realtime.crossfire.jxclient.commands;
 
 import com.realtime.crossfire.jxclient.server.CrossfireServerConnection;
 import com.realtime.crossfire.jxclient.settings.Filenames;
-import com.realtime.crossfire.jxclient.window.JXCWindow;
 import com.realtime.crossfire.jxclient.window.JXCWindowRenderer;
 import java.awt.Color;
 import java.awt.Graphics;
@@ -53,12 +52,6 @@ public class ScreenshotCommand extends AbstractCommand
     private static int screenshotId = 0;
 
     /**
-     * The window to execute in.
-     */
-    @NotNull
-    private final JXCWindow window;
-
-    /**
      * The renderer to use.
      */
     @NotNull
@@ -66,14 +59,12 @@ public class ScreenshotCommand extends AbstractCommand
 
     /**
      * Creates a new instance.
-     * @param window the window to execute in
      * @param windowRenderer the renderer to use
      * @param crossfireServerConnection the connection instance
      */
-    public ScreenshotCommand(@NotNull final JXCWindow window, @NotNull final JXCWindowRenderer windowRenderer, @NotNull final CrossfireServerConnection crossfireServerConnection)
+    public ScreenshotCommand(@NotNull final JXCWindowRenderer windowRenderer, @NotNull final CrossfireServerConnection crossfireServerConnection)
     {
         super(crossfireServerConnection);
-        this.window = window;
         this.windowRenderer = windowRenderer;
     }
 
@@ -107,12 +98,12 @@ public class ScreenshotCommand extends AbstractCommand
             file = new File(args);
         }
 
-        final BufferedImage image = new BufferedImage(window.getWindowWidth(), window.getWindowHeight(), BufferedImage.TYPE_INT_RGB);
+        final BufferedImage image = new BufferedImage(windowRenderer.getWindowWidth(), windowRenderer.getWindowHeight(), BufferedImage.TYPE_INT_RGB);
         final Graphics grfx = image.createGraphics();
         try
         {
             grfx.setColor(Color.black);
-            grfx.fillRect(0, 0, window.getWindowWidth(), window.getWindowHeight());
+            grfx.fillRect(0, 0, windowRenderer.getWindowWidth(), windowRenderer.getWindowHeight());
             windowRenderer.redraw(grfx);
         }
         finally

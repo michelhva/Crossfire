@@ -22,7 +22,7 @@
 package com.realtime.crossfire.jxclient.gui.gui;
 
 import com.realtime.crossfire.jxclient.gui.label.AbstractLabel;
-import com.realtime.crossfire.jxclient.window.JXCWindow;
+import com.realtime.crossfire.jxclient.window.JXCWindowRenderer;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 
@@ -39,10 +39,10 @@ public class TooltipManager
     private static final int TOOLTIP_DISTANCE = 8;
 
     /**
-     * The {@link JXCWindow} to manage the tooltips of.
+     * The {@link JXCWindowRenderer} to manage the tooltips of.
      */
     @NotNull
-    private final JXCWindow window;
+    private final JXCWindowRenderer windowRenderer;
 
     /**
      * The tooltip label. Set to <code>null</code> if the skin does not use
@@ -66,11 +66,11 @@ public class TooltipManager
 
     /**
      * Creates a new instance.
-     * @param window the window to manage the tooltips of
+     * @param windowRenderer the window renderer to manager the tooltips of
      */
-    public TooltipManager(@NotNull final JXCWindow window)
+    public TooltipManager(@NotNull final JXCWindowRenderer windowRenderer)
     {
-        this.window = window;
+        this.windowRenderer = windowRenderer;
     }
 
     /**
@@ -174,9 +174,9 @@ public class TooltipManager
         tooltip.setElementVisible(true);
         tooltip.setText(tooltipText);
 
-        final int tx = Math.max(0, Math.min(activeGuiElement.getElementX()+activeGuiElement.getWidth()/2-tooltip.getWidth()/2, window.getWindowWidth()-tooltip.getWidth()));
+        final int tx = Math.max(0, Math.min(activeGuiElement.getElementX()+activeGuiElement.getWidth()/2-tooltip.getWidth()/2, windowRenderer.getWindowWidth()-tooltip.getWidth()));
         final int ty;
-        if (activeGuiElement.getElementY()+activeGuiElement.getHeight()+TOOLTIP_DISTANCE+tooltip.getHeight() <= window.getWindowHeight())
+        if (activeGuiElement.getElementY()+activeGuiElement.getHeight()+TOOLTIP_DISTANCE+tooltip.getHeight() <= windowRenderer.getWindowHeight())
         {
             ty = activeGuiElement.getElementY()+activeGuiElement.getHeight()+TOOLTIP_DISTANCE;
         }

@@ -69,7 +69,7 @@ public class Commands
         this.commandQueue = commandQueue;
         commands.put("bind", new BindCommand(window, crossfireServerConnection, this, guiManager, macros));
         commands.put("unbind", new UnbindCommand(window, crossfireServerConnection));
-        commands.put("screenshot", new ScreenshotCommand(window, windowRenderer, crossfireServerConnection));
+        commands.put("screenshot", new ScreenshotCommand(windowRenderer, crossfireServerConnection));
         commands.put("script", new ScriptCommand(scriptManager, crossfireServerConnection));
         commands.put("scriptkill", new ScriptkillCommand(scriptManager, crossfireServerConnection));
         commands.put("scriptkillall", new ScriptkillallCommand(scriptManager, crossfireServerConnection));

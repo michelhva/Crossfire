@@ -23,7 +23,6 @@ package com.realtime.crossfire.jxclient.gui;
 
 import com.realtime.crossfire.jxclient.gui.gui.Gui;
 import com.realtime.crossfire.jxclient.gui.gui.TooltipManager;
-import com.realtime.crossfire.jxclient.window.JXCWindow;
 import com.realtime.crossfire.jxclient.window.JXCWindowRenderer;
 import java.awt.Point;
 import java.awt.event.MouseEvent;
@@ -44,10 +43,10 @@ public class GUIDialogTitle extends GUIPicture
     private static final long serialVersionUID = 1;
 
     /**
-     * The {@link JXCWindow} this element belongs to.
+     * The {@link JXCWindowRenderer} this element belongs to.
      */
     @NotNull
-    private final JXCWindow window;
+    private final JXCWindowRenderer windowRenderer;
 
     /**
      * Set to the distance of the dialog cordinates relative to the mouse
@@ -58,8 +57,6 @@ public class GUIDialogTitle extends GUIPicture
 
     /**
      * Create a new instance.
-     *
-     * @param window The <code>JXCWindow</code> this element belongs to.
      *
      * @param tooltipManager the tooltip manager to update
      *
@@ -81,10 +78,10 @@ public class GUIDialogTitle extends GUIPicture
      *
      * @param alpha The transparency value.
      */
-    public GUIDialogTitle(@NotNull final JXCWindow window, @NotNull final TooltipManager tooltipManager, @NotNull final JXCWindowRenderer windowRenderer, @NotNull final String name, final int x, final int y, final int w, final int h, @NotNull final BufferedImage image, final float alpha)
+    public GUIDialogTitle(@NotNull final TooltipManager tooltipManager, @NotNull final JXCWindowRenderer windowRenderer, @NotNull final String name, final int x, final int y, final int w, final int h, @NotNull final BufferedImage image, final float alpha)
     {
         super(tooltipManager, windowRenderer, name, x, y, w, h, image, alpha);
-        this.window = window;
+        this.windowRenderer = windowRenderer;
     }
 
     /** {@inheritDoc} */
@@ -147,8 +144,8 @@ public class GUIDialogTitle extends GUIPicture
         }
 
         final Point point = e.getLocationOnScreen();
-        final int newX = Math.max(Math.min(point.x+offset.x, window.getWindowWidth()-gui.getWidth()), 0);
-        final int newY = Math.max(Math.min(point.y+offset.y, window.getWindowHeight()-gui.getHeight()), 0);
+        final int newX = Math.max(Math.min(point.x+offset.x, windowRenderer.getWindowWidth()-gui.getWidth()), 0);
+        final int newY = Math.max(Math.min(point.y+offset.y, windowRenderer.getWindowHeight()-gui.getHeight()), 0);
         gui.setPosition(newX, newY);
     }
 }

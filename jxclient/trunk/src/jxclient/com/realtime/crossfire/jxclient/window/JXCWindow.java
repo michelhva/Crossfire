@@ -609,7 +609,7 @@ public class JXCWindow extends JFrame
         setDefaultCloseOperation(DO_NOTHING_ON_CLOSE);
         mouseTracker = new MouseTracker(debugGui);
         windowRenderer = new JXCWindowRenderer(this, mouseTracker, semaphoreRedraw, server);
-        guiManager = new GuiManager(guiStateManager, semaphoreDrawing, terminateSync, new TooltipManager(this), settings, server, macros, windowRenderer);
+        guiManager = new GuiManager(guiStateManager, semaphoreDrawing, terminateSync, new TooltipManager(windowRenderer), settings, server, macros, windowRenderer);
         mouseTracker.init(windowRenderer);
         final ScriptManager scriptManager = new ScriptManager(commandQueue, server, stats, itemsManager, spellsManager, mapUpdater, skillSet);
         guiManager.init(this, scriptManager, commandQueue, server, optionManager, debugGui ? mouseTracker : null);
@@ -765,25 +765,7 @@ public class JXCWindow extends JFrame
             skinSource = new JXCSkinClassSource("com/realtime/crossfire/jxclient/skins/"+skinName);
         }
         final JXCSkinLoader newSkin = new JXCSkinLoader(itemsManager, spellsManager, facesManager, stats, mapUpdater, defaultKeyBindings, optionManager, experienceTable, skillSet);
-        return newSkin.load(skinSource, server, this, guiStateManager, guiManager.getTooltipManager(), windowRenderer, mouseTracker, metaserverModel, commandQueue, resolution, shortcutsManager.getShortcuts(), guiManager.getCommands(), currentSpellManager, guiManager, debugGui, macros);
-    }
-
-    /**
-     * Returns the width of the client area.
-     * @return the width of the client area
-     */
-    public int getWindowWidth()
-    {
-        return resolution.getWidth();
-    }
-
-    /**
-     * Returns the height of the client area.
-     * @return the height of the client area
-     */
-    public int getWindowHeight()
-    {
-        return resolution.getHeight();
+        return newSkin.load(skinSource, server, guiStateManager, guiManager.getTooltipManager(), windowRenderer, mouseTracker, metaserverModel, commandQueue, resolution, shortcutsManager.getShortcuts(), guiManager.getCommands(), currentSpellManager, guiManager, debugGui, macros);
     }
 
     /**
