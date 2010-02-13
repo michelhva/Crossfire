@@ -57,8 +57,8 @@ import com.realtime.crossfire.jxclient.gui.item.ItemPainter;
 import com.realtime.crossfire.jxclient.gui.keybindings.InvalidKeyBindingException;
 import com.realtime.crossfire.jxclient.gui.keybindings.KeyBindings;
 import com.realtime.crossfire.jxclient.gui.label.AbstractLabel;
+import com.realtime.crossfire.jxclient.gui.label.Alignment;
 import com.realtime.crossfire.jxclient.gui.label.GUIHTMLLabel;
-import com.realtime.crossfire.jxclient.gui.label.GUILabel;
 import com.realtime.crossfire.jxclient.gui.label.GUILabelQuery;
 import com.realtime.crossfire.jxclient.gui.label.GUILabelStats;
 import com.realtime.crossfire.jxclient.gui.label.GUIMultiLineLabel;
@@ -1565,7 +1565,7 @@ public class JXCSkinLoader
         final Font font = definedFonts.lookup(args[6]);
         final Color color = ParseUtils.parseColor(args[7]);
         final String text = ParseUtils.parseText(args, 8, lnr);
-        skin.insertGuiElement(new GUIMultiLineLabel(tooltipManager, elementListener, name, x, y, w, h, null, font, color, new Color(0, 0, 0, 0F), GUILabel.Alignment.LEFT, text));
+        skin.insertGuiElement(new GUIMultiLineLabel(tooltipManager, elementListener, name, x, y, w, h, null, font, color, new Color(0, 0, 0, 0F), Alignment.LEFT, text));
     }
 
     /**
@@ -1619,7 +1619,7 @@ public class JXCSkinLoader
         final Font font = definedFonts.lookup(args[6]);
         final Color color = ParseUtils.parseColor(args[7]);
         final String text = ParseUtils.parseText(args, 8, lnr);
-        skin.insertGuiElement(new GUIOneLineLabel(tooltipManager, elementListener, name, x, y, w, h, null, font, color, new Color(0, 0, 0, 0F), GUILabel.Alignment.LEFT, text));
+        skin.insertGuiElement(new GUIOneLineLabel(tooltipManager, elementListener, name, x, y, w, h, null, font, color, new Color(0, 0, 0, 0F), Alignment.LEFT, text));
     }
 
     /**
@@ -1645,7 +1645,7 @@ public class JXCSkinLoader
         final Font font = definedFonts.lookup(args[6]);
         final Color color = ParseUtils.parseColor(args[7]);
         final int stat = ParseUtils.parseStat(args[8]);
-        final GUILabel.Alignment alignment = NumberParser.parseEnum(GUILabel.Alignment.class, args[9], "text alignment");
+        final Alignment alignment = NumberParser.parseEnum(Alignment.class, args[9], "text alignment");
         final GUIElement element = new GUILabelStats(tooltipManager, elementListener, name, x, y, w, h, font, color, new Color(0, 0, 0, 0F), stat, alignment, stats);
         skin.insertGuiElement(element);
     }
