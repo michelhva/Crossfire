@@ -21,13 +21,13 @@
 
 package com.realtime.crossfire.jxclient.skin.skin;
 
+import com.realtime.crossfire.jxclient.gui.command.GUICommandList;
 import com.realtime.crossfire.jxclient.gui.gui.GUIElement;
 import com.realtime.crossfire.jxclient.gui.gui.Gui;
 import com.realtime.crossfire.jxclient.gui.gui.JXCWindowRenderer;
 import com.realtime.crossfire.jxclient.gui.gui.TooltipManager;
 import com.realtime.crossfire.jxclient.gui.keybindings.KeyBindings;
 import com.realtime.crossfire.jxclient.util.Resolution;
-import com.realtime.crossfire.jxclient.window.GUICommandList;
 import java.util.Iterator;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;

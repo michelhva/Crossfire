@@ -22,10 +22,10 @@
 package com.realtime.crossfire.jxclient.skin.factory;
 
 import com.realtime.crossfire.jxclient.gui.button.GUITextButton;
+import com.realtime.crossfire.jxclient.gui.command.GUICommandList;
 import com.realtime.crossfire.jxclient.gui.gui.GUIElement;
 import com.realtime.crossfire.jxclient.gui.gui.GUIElementListener;
 import com.realtime.crossfire.jxclient.gui.gui.TooltipManager;
-import com.realtime.crossfire.jxclient.window.GUICommandList;
 import java.awt.Color;
 import java.awt.Font;
 import org.jetbrains.annotations.NotNull;

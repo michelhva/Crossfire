@@ -21,10 +21,10 @@
 
 package com.realtime.crossfire.jxclient.commands;
 
+import com.realtime.crossfire.jxclient.gui.command.GUICommandList;
 import com.realtime.crossfire.jxclient.gui.commands.GUICommandFactory;
 import com.realtime.crossfire.jxclient.server.CrossfireServerConnection;
 import com.realtime.crossfire.jxclient.util.StringUtils;
-import com.realtime.crossfire.jxclient.window.GUICommandList;
 import com.realtime.crossfire.jxclient.window.GuiManager;
 import org.jetbrains.annotations.NotNull;
 

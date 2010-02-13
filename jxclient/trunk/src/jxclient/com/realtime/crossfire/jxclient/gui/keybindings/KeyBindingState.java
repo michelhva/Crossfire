@@ -21,7 +21,7 @@
 
 package com.realtime.crossfire.jxclient.gui.keybindings;
 
-import com.realtime.crossfire.jxclient.window.GUICommandList;
+import com.realtime.crossfire.jxclient.gui.command.GUICommandList;
 import org.jetbrains.annotations.Nullable;
 
 /**
