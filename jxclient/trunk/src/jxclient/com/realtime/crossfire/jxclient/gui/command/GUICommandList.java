@@ -19,11 +19,10 @@
  * Copyright (C) 2006-2010 Andreas Kirschbaum.
  */
 
-package com.realtime.crossfire.jxclient.window;
+package com.realtime.crossfire.jxclient.gui.command;
 
 import com.realtime.crossfire.jxclient.gui.commands.ActivateCommandInputCommand;
 import com.realtime.crossfire.jxclient.gui.commands.ExecuteCommandCommand;
-import com.realtime.crossfire.jxclient.gui.commands.GUICommand;
 import java.util.ArrayList;
 import java.util.Collection;
 import org.jetbrains.annotations.NotNull;

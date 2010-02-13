@@ -23,6 +23,7 @@ package com.realtime.crossfire.jxclient.skin.io;
 
 import com.realtime.crossfire.jxclient.commands.Commands;
 import com.realtime.crossfire.jxclient.commands.Macros;
+import com.realtime.crossfire.jxclient.gui.command.GUICommand;
 import com.realtime.crossfire.jxclient.gui.commands.ConnectCommand;
 import com.realtime.crossfire.jxclient.gui.commands.DialogCloseCommand;
 import com.realtime.crossfire.jxclient.gui.commands.DialogOpenCommand;
@@ -31,7 +32,6 @@ import com.realtime.crossfire.jxclient.gui.commands.DisconnectCommand;
 import com.realtime.crossfire.jxclient.gui.commands.ExecSelectionCommand;
 import com.realtime.crossfire.jxclient.gui.commands.ExecuteCommandCommand;
 import com.realtime.crossfire.jxclient.gui.commands.ExecuteElementCommand;
-import com.realtime.crossfire.jxclient.gui.commands.GUICommand;
 import com.realtime.crossfire.jxclient.gui.commands.HideCommand;
 import com.realtime.crossfire.jxclient.gui.commands.MetaCommand;
 import com.realtime.crossfire.jxclient.gui.commands.MoveSelectionCommand;

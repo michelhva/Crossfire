@@ -21,6 +21,7 @@
 
 package com.realtime.crossfire.jxclient.gui.commands;
 
+import com.realtime.crossfire.jxclient.gui.command.GUICommand;
 import com.realtime.crossfire.jxclient.gui.item.GUIItemItem;
 import com.realtime.crossfire.jxclient.gui.list.GUIItemList;
 import com.realtime.crossfire.jxclient.items.CfItem;

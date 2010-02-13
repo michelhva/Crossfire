@@ -24,8 +24,8 @@ package com.realtime.crossfire.jxclient.gui.keybindings;
 
 import com.realtime.crossfire.jxclient.commands.Commands;
 import com.realtime.crossfire.jxclient.commands.Macros;
+import com.realtime.crossfire.jxclient.gui.command.GUICommandList;
 import com.realtime.crossfire.jxclient.gui.commands.GUICommandFactory;
-import com.realtime.crossfire.jxclient.window.GUICommandList;
 import com.realtime.crossfire.jxclient.window.GuiManager;
 import java.awt.event.KeyEvent;
 import java.io.BufferedWriter;
