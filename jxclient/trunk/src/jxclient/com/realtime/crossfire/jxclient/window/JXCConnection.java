@@ -26,7 +26,7 @@ import com.realtime.crossfire.jxclient.server.CrossfirePickupListener;
 import com.realtime.crossfire.jxclient.server.CrossfireServerConnection;
 import com.realtime.crossfire.jxclient.server.Pickup;
 import com.realtime.crossfire.jxclient.settings.Settings;
-import com.realtime.crossfire.jxclient.skin.JXCSkin;
+import com.realtime.crossfire.jxclient.skin.skin.JXCSkin;
 import com.realtime.crossfire.jxclient.util.NumberParser;
 import java.awt.Frame;
 import org.jetbrains.annotations.NotNull;

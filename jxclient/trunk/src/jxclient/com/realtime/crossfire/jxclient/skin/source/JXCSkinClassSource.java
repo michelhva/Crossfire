@@ -19,37 +19,36 @@
  * Copyright (C) 2006-2010 Andreas Kirschbaum.
  */
 
-package com.realtime.crossfire.jxclient.skin;
+package com.realtime.crossfire.jxclient.skin.source;
 
-import java.io.File;
-import java.io.FileInputStream;
+import com.realtime.crossfire.jxclient.skin.skin.JXCSkinException;
 import java.io.IOException;
 import java.io.InputStream;
 import org.jetbrains.annotations.NotNull;
 
 /**
- * A {@link JXCSkinSource} that loads from files.
+ * A {@link JXCSkinSource} that loads via the class loader.
  *
  * @author Andreas Kirschbaum
  */
-public class JXCSkinDirSource extends AbstractJXCSkinSource
+public class JXCSkinClassSource extends AbstractJXCSkinSource
 {
     /**
-     * The base directory.
+     * The base resource name to prepend to all resource names.
      */
     @NotNull
-    private final File dir;
+    private final String baseName;
 
     /**
      * Create a new instance.
      *
-     * @param dir The base directory.
+     * @param baseName The base resource name to prepend to all resource names.
      *
      * @throws JXCSkinException if the skin cannot be loaded
      */
-    public JXCSkinDirSource(@NotNull final File dir) throws JXCSkinException
+    public JXCSkinClassSource(@NotNull final String baseName) throws JXCSkinException
     {
-        this.dir = dir;
+        this.baseName = baseName;
         checkAccess();
     }
 
@@ -58,7 +57,12 @@ public class JXCSkinDirSource extends AbstractJXCSkinSource
     @Override
     public InputStream getInputStream(@NotNull final String name) throws IOException
     {
-        return new FileInputStream(new File(dir, name));
+        final InputStream inputStream = getClassLoader().getResourceAsStream(baseName+"/"+name);
+        if (inputStream == null)
+        {
+            throw new IOException("resource '"+baseName+"/"+name+"' not found");
+        }
+        return inputStream;
     }
 
     /** {@inheritDoc} */
@@ -66,6 +70,29 @@ public class JXCSkinDirSource extends AbstractJXCSkinSource
     @Override
     public String getURI(@NotNull final String name)
     {
-        return "file:"+new File(dir, name);
+        return "resource:"+baseName+"/"+name;
+    }
+
+    /**
+     * Return the {@link ClassLoader} to use.
+     *
+     * @return The class loader.
+     */
+    @NotNull
+    private ClassLoader getClassLoader()
+    {
+        final ClassLoader classLoader = getClass().getClassLoader();
+        if (classLoader != null)
+        {
+            return classLoader;
+        }
+
+        final ClassLoader systemClassLoader = ClassLoader.getSystemClassLoader();
+        if (systemClassLoader != null)
+        {
+            return systemClassLoader;
+        }
+
+        throw new InternalError("cannot find class loader");
     }
 }

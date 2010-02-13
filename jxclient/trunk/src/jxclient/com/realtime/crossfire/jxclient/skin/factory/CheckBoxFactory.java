@@ -19,7 +19,7 @@
  * Copyright (C) 2006-2010 Andreas Kirschbaum.
  */
 
-package com.realtime.crossfire.jxclient.skin;
+package com.realtime.crossfire.jxclient.skin.factory;
 
 import com.realtime.crossfire.jxclient.gui.GUICheckBox;
 import com.realtime.crossfire.jxclient.gui.gui.GUIElement;

@@ -19,8 +19,11 @@
  * Copyright (C) 2006-2010 Andreas Kirschbaum.
  */
 
-package com.realtime.crossfire.jxclient.skin;
+package com.realtime.crossfire.jxclient.skin.io;
 
+import com.realtime.crossfire.jxclient.skin.skin.JXCSkinCache;
+import com.realtime.crossfire.jxclient.skin.skin.JXCSkinException;
+import com.realtime.crossfire.jxclient.skin.source.JXCSkinSource;
 import java.awt.Color;
 import java.awt.image.BufferedImage;
 import java.io.IOException;
