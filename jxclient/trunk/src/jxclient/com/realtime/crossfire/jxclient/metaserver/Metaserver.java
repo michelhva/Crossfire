@@ -36,7 +36,6 @@ import java.util.Properties;
 import org.jetbrains.annotations.NotNull;
 
 /**
- *
  * @author Lauwenmark
  * @author Andreas Kirschbaum
  */
@@ -135,7 +134,6 @@ public class Metaserver
 
     /**
      * Create a new instance.
-     *
      * @param metaserverCacheFile The metaserver cache file.
      * @param metaserverModel the metaserver model instance to update
      * @param guiStateManager the gui state manager to watch
@@ -174,51 +172,68 @@ public class Metaserver
         {
             final URL url = new URL(METASERVER_URL);
             final String httpProxy = System.getenv("http_proxy");
-            if (httpProxy != null && httpProxy.length() > 0) {
-                if (httpProxy.regionMatches(true, 0, "http://", 0, 7)) {
+            if (httpProxy != null && httpProxy.length() > 0)
+            {
+                if (httpProxy.regionMatches(true, 0, "http://", 0, 7))
+                {
                     final String[] tmp = httpProxy.substring(7).replaceAll("/.*", "").split(":", 2);
                     final String proxy = tmp[0];
                     final String port = tmp.length >= 2 ? tmp[1] : "80";
                     final Properties systemProperties = System.getProperties();
                     systemProperties.setProperty("http.proxyHost", proxy);
                     systemProperties.setProperty("http.proxyPort", port);
-                } else {
+                }
+                else
+                {
                     System.err.println("Warning: unsupported http_proxy protocol: "+httpProxy);
                 }
             }
             final HttpURLConnection conn = (HttpURLConnection)url.openConnection();
-            try {
+            try
+            {
                 conn.setRequestMethod("GET");
                 conn.setUseCaches(false);
                 conn.connect();
-                if (conn.getResponseCode() == HttpURLConnection.HTTP_OK) {
+                if (conn.getResponseCode() == HttpURLConnection.HTTP_OK)
+                {
                     final InputStream in = conn.getInputStream();
                     final InputStreamReader isr = new InputStreamReader(in, "ISO-8859-1");
-                    try {
+                    try
+                    {
                         final BufferedReader br = new BufferedReader(isr);
-                        try {
+                        try
+                        {
                             final MetaserverEntryParser metaserverEntryParser = new MetaserverEntryParser();
-                            for (;;) {
+                            for (; ;)
+                            {
                                 final String line = br.readLine();
-                                if (line == null) {
+                                if (line == null)
+                                {
                                     break;
                                 }
 
                                 final MetaserverEntry metaserverEntry = metaserverEntryParser.parseLine(line);
-                                if (metaserverEntry != null) {
+                                if (metaserverEntry != null)
+                                {
                                     metaserverModel.add(metaserverEntry);
                                     oldEntries.remove(ServerCache.makeKey(metaserverEntry));
                                     serverCache.put(metaserverEntry);
                                 }
                             }
-                        } finally {
+                        }
+                        finally
+                        {
                             br.close();
                         }
-                    } finally {
+                    }
+                    finally
+                    {
                         isr.close();
                     }
                 }
-            } finally {
+            }
+            finally
+            {
                 conn.disconnect();
             }
         }

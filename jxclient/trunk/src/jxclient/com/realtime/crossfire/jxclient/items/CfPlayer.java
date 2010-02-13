@@ -25,9 +25,8 @@ import com.realtime.crossfire.jxclient.faces.Face;
 import org.jetbrains.annotations.NotNull;
 
 /**
- *
- * @version 1.0
  * @author Lauwenmark
+ * @version 1.0
  * @since 1.0
  */
 public class CfPlayer extends CfItem

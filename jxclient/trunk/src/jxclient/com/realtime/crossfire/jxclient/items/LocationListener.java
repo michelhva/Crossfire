@@ -26,16 +26,13 @@ import org.jetbrains.annotations.Nullable;
 
 /**
  * Interface for listeners for changes of item locations.
- *
  * @author Andreas Kirschbaum
  */
 public interface LocationListener extends EventListener
 {
     /**
      * Will be called when the attribute of a location has changed.
-     *
      * @param index the location that has changed
-     *
      * @param item the new item in the location; will be <code>null</code> if
      * the location is empty
      */

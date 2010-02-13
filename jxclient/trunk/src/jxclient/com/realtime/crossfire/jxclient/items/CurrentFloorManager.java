@@ -27,7 +27,6 @@ import org.jetbrains.annotations.NotNull;
 
 /**
  * Manages the player's current floor location.
- *
  * @author Andreas Kirschbaum
  */
 public class CurrentFloorManager
@@ -39,8 +38,8 @@ public class CurrentFloorManager
     private final ItemsManager itemsManager;
 
     /**
-     * The list of {@link CurrentFloorListener}s to be notified about changes
-     * of the current floor location.
+     * The list of {@link CurrentFloorListener}s to be notified about changes of
+     * the current floor location.
      */
     @NotNull
     private final EventListenerList currentFloorListeners = new EventListenerList();
@@ -52,7 +51,6 @@ public class CurrentFloorManager
 
     /**
      * Create a new instance.
-     *
      * @param itemsManager The items manager to use.
      */
     public CurrentFloorManager(@NotNull final ItemsManager itemsManager)
@@ -62,7 +60,6 @@ public class CurrentFloorManager
 
     /**
      * Set the location to show in the floor view.
-     *
      * @param currentFloor the new location of the floor view
      */
     public synchronized void setCurrentFloor(final int currentFloor)
@@ -84,7 +81,6 @@ public class CurrentFloorManager
 
     /**
      * Return the location to show in the floor view.
-     *
      * @return the floor location
      */
     public synchronized int getCurrentFloor()
@@ -94,9 +90,7 @@ public class CurrentFloorManager
 
     /**
      * Return whether a given location is the current floor.
-     *
      * @param floor The location to compare.
-     *
      * @return Whether the given location is the current floor.
      */
     public synchronized boolean isCurrentFloor(final int floor)
@@ -107,7 +101,6 @@ public class CurrentFloorManager
     /**
      * Add a {@link CurrentFloorListener} to be notified about current floor
      * changes.
-     *
      * @param listener the listener to add
      */
     public void addCurrentFloorListener(@NotNull final CurrentFloorListener listener)
@@ -118,7 +111,6 @@ public class CurrentFloorManager
     /**
      * Remove a {@link CurrentFloorListener} to be notified about current floor
      * changes.
-     *
      * @param listener the listener to remove
      */
     public void removeCurrentFloorListener(@NotNull final CurrentFloorListener listener)

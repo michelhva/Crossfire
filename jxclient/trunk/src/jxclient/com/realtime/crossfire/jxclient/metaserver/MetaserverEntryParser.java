@@ -29,7 +29,6 @@ import org.jetbrains.annotations.Nullable;
 
 /**
  * Parser for response lines of metaserver response lines.
- *
  * @author Andreas Kirschbaum
  */
 public class MetaserverEntryParser
@@ -130,8 +129,7 @@ public class MetaserverEntryParser
     /**
      * Parses a metaserver response line.
      * @param entry the response line to parse
-     * @return the metaserver entry or <code>null</code> if the line is
-     * invalid
+     * @return the metaserver entry or <code>null</code> if the line is invalid
      */
     @Nullable
     public static MetaserverEntry parseEntry(@NotNull final CharSequence entry)
@@ -179,7 +177,7 @@ public class MetaserverEntryParser
      * Parses a metaserver response line.
      * @param line the response line to parse
      * @return the metaserver entry, or <code>null</code> if the line is
-     * invalid
+     *         invalid
      * @throws IOException if the response line is invalid
      */
     @Nullable
@@ -323,9 +321,7 @@ public class MetaserverEntryParser
     /**
      * Format a metaserver entry that returns the metaserver entry when parse
      * with {@link #parseEntry(CharSequence)}.
-     *
      * @param entry The metaserver entry to format.
-     *
      * @return The formatted entry.
      */
     @NotNull
@@ -336,9 +332,7 @@ public class MetaserverEntryParser
 
     /**
      * Replace characters with may cause parsing issues.
-     *
      * @param str The string to replace.
-     *
      * @return The replaced string.
      */
     @NotNull

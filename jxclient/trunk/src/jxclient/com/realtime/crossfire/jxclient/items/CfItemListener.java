@@ -26,7 +26,6 @@ import java.util.EventListener;
 
 /**
  * Interface for listeners for attribute changes of {@link CfItem}s.
- *
  * @author Andreas Kirschbaum
  */
 public interface CfItemListener extends EventListener

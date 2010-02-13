@@ -45,8 +45,8 @@ public abstract class AbstractManager
     private final Set<Integer> modifiedItems = new HashSet<Integer>();
 
     /**
-     * Maps slot index to list of {@link LocationListener}s to be notified
-     * about added or removed items.
+     * Maps slot index to list of {@link LocationListener}s to be notified about
+     * added or removed items.
      */
     @NotNull
     private final Map<Integer, EventListenerList> allListeners = new HashMap<Integer, EventListenerList>();

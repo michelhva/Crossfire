@@ -27,18 +27,14 @@ import org.jetbrains.annotations.NotNull;
 
 /**
  * Manages the items in the player's inventory.
- *
  * @author Andreas Kirschbaum
  */
 public class InventoryManager extends AbstractManager
 {
     /**
      * Find the correct insertion position for an inventory object.
-     *
      * @param list The inventory objects.
-     *
      * @param item The item to add.
-     *
      * @return The insertion index.
      */
     public static int getInsertionIndex(@NotNull final List<CfItem> list, @NotNull final CfItem item)
@@ -55,14 +51,11 @@ public class InventoryManager extends AbstractManager
 
     /**
      * Compare two items by inventory order.
-     *
      * @param item1 The first item to compare.
-     *
      * @param item2 The second item to compare.
-     *
      * @return The comparision result: -1=<code>item1</code> before
-     * </code>item2</code>, 0=<code>item1</code> == </code>item2</code>,
-     * +1=<code>item1</code> after </code>item2</code>.
+     *         </code>item2</code>, 0=<code>item1</code> == </code>item2</code>,
+     *         +1=<code>item1</code> after </code>item2</code>.
      */
     private static int compareItem(@NotNull final CfItem item1, @NotNull final CfItem item2)
     {

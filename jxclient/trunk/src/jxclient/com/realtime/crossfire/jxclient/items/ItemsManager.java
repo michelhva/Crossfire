@@ -79,7 +79,7 @@ public class ItemsManager
      * the client.
      */
     @NotNull
-    private final Map<Integer, CfItem> allItems  = new HashMap<Integer, CfItem>();
+    private final Map<Integer, CfItem> allItems = new HashMap<Integer, CfItem>();
 
     /**
      * The current floor manager used to track the player's current floor
@@ -101,8 +101,8 @@ public class ItemsManager
     private final AbstractManager inventoryManager = new InventoryManager();
 
     /**
-     * The list of {@link PlayerListener}s to be notified about
-     * changes of the current player.
+     * The list of {@link PlayerListener}s to be notified about changes of the
+     * current player.
      */
     @NotNull
     private final EventListenerList playerListeners = new EventListenerList();
@@ -181,8 +181,8 @@ public class ItemsManager
 
     /**
      * The event scheduler callback for delaying event generation. This is
-     * needed because the Crossfire server sends multiple item2 commands for
-     * one "get all" command.
+     * needed because the Crossfire server sends multiple item2 commands for one
+     * "get all" command.
      */
     @NotNull
     private final Runnable fireEventCallback = new Runnable()
@@ -312,8 +312,8 @@ public class ItemsManager
     }
 
     /**
-     * Returns a list of items in a given location. The returned list may not
-     * be modified by the caller.
+     * Returns a list of items in a given location. The returned list may not be
+     * modified by the caller.
      * @param location the location
      * @return the list of items
      */
@@ -634,8 +634,8 @@ public class ItemsManager
     }
 
     /**
-     * Adds a {@link PlayerListener} to be notified about changes of the
-     * current player.
+     * Adds a {@link PlayerListener} to be notified about changes of the current
+     * player.
      * @param listener the listener to add
      */
     public void addCrossfirePlayerListener(@NotNull final PlayerListener listener)

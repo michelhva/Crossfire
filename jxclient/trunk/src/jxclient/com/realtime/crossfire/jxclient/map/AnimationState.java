@@ -123,8 +123,8 @@ public class AnimationState
     /**
      * Updates the map face at the given location.
      * @param location the map location to update
-     * @param oldFaceIndex suppress the map face update if the new face
-     * index equals this value
+     * @param oldFaceIndex suppress the map face update if the new face index
+     * equals this value
      */
     public void draw(@NotNull final Location location, final int oldFaceIndex)
     {
