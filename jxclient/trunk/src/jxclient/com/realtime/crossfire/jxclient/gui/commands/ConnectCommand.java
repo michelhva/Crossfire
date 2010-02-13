@@ -23,7 +23,7 @@ package com.realtime.crossfire.jxclient.gui.commands;
 
 import com.realtime.crossfire.jxclient.gui.command.GUICommand;
 import com.realtime.crossfire.jxclient.gui.textinput.GUIText;
-import com.realtime.crossfire.jxclient.window.GuiStateManager;
+import com.realtime.crossfire.jxclient.server.GuiStateManager;
 import org.jetbrains.annotations.NotNull;
 
 /**

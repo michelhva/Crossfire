@@ -19,9 +19,8 @@
  * Copyright (C) 2006-2010 Andreas Kirschbaum.
  */
 
-package com.realtime.crossfire.jxclient.window;
+package com.realtime.crossfire.jxclient.server;
 
-import com.realtime.crossfire.jxclient.server.ClientSocketState;
 import org.jetbrains.annotations.NotNull;
 
 /**

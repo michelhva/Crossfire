@@ -22,8 +22,8 @@
 package com.realtime.crossfire.jxclient.metaserver;
 
 import com.realtime.crossfire.jxclient.server.ClientSocketState;
-import com.realtime.crossfire.jxclient.window.GuiStateListener;
-import com.realtime.crossfire.jxclient.window.GuiStateManager;
+import com.realtime.crossfire.jxclient.server.GuiStateListener;
+import com.realtime.crossfire.jxclient.server.GuiStateManager;
 import java.io.BufferedReader;
 import java.io.File;
 import java.io.IOException;
