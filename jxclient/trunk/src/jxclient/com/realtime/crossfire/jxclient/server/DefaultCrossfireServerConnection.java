@@ -2110,7 +2110,7 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
      * @param endPos the end position into <code>packet</code>
      * @throws IOException if the packet cannot be parsed
      */
-    private void processImageInfoReplyinfo(@NotNull final byte[] packet, final int startPos, final int endPos) throws IOException
+    private static void processImageInfoReplyinfo(@NotNull final byte[] packet, final int startPos, final int endPos) throws IOException
     {
         final ByteArrayInputStream is = new ByteArrayInputStream(packet, startPos, endPos-startPos);
         try
