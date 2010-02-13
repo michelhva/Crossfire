@@ -21,8 +21,8 @@
 
 package com.realtime.crossfire.jxclient.main;
 
-import com.realtime.crossfire.jxclient.commands.Macros;
 import com.realtime.crossfire.jxclient.commands.Commands;
+import com.realtime.crossfire.jxclient.commands.Macros;
 import com.realtime.crossfire.jxclient.experience.ExperienceTable;
 import com.realtime.crossfire.jxclient.faces.FaceCache;
 import com.realtime.crossfire.jxclient.faces.FacesManager;
@@ -43,6 +43,9 @@ import com.realtime.crossfire.jxclient.server.ClientSocketState;
 import com.realtime.crossfire.jxclient.server.CommandQueue;
 import com.realtime.crossfire.jxclient.server.CrossfireQueryListener;
 import com.realtime.crossfire.jxclient.server.CrossfireServerConnection;
+import com.realtime.crossfire.jxclient.server.GuiState;
+import com.realtime.crossfire.jxclient.server.GuiStateListener;
+import com.realtime.crossfire.jxclient.server.GuiStateManager;
 import com.realtime.crossfire.jxclient.server.Pickup;
 import com.realtime.crossfire.jxclient.server.SentReplyListener;
 import com.realtime.crossfire.jxclient.server.UnknownCommandException;
@@ -64,9 +67,6 @@ import com.realtime.crossfire.jxclient.stats.PoisonWatcher;
 import com.realtime.crossfire.jxclient.stats.Stats;
 import com.realtime.crossfire.jxclient.util.Resolution;
 import com.realtime.crossfire.jxclient.window.GuiManager;
-import com.realtime.crossfire.jxclient.window.GuiState;
-import com.realtime.crossfire.jxclient.window.GuiStateListener;
-import com.realtime.crossfire.jxclient.window.GuiStateManager;
 import com.realtime.crossfire.jxclient.window.JXCConnection;
 import com.realtime.crossfire.jxclient.window.KeyHandler;
 import com.realtime.crossfire.jxclient.window.KeyHandlerListener;

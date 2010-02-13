@@ -19,12 +19,8 @@
  * Copyright (C) 2006-2010 Andreas Kirschbaum.
  */
 
-package com.realtime.crossfire.jxclient.window;
+package com.realtime.crossfire.jxclient.server;
 
-import com.realtime.crossfire.jxclient.server.ClientSocketListener;
-import com.realtime.crossfire.jxclient.server.ClientSocketState;
-import com.realtime.crossfire.jxclient.server.CrossfireServerConnection;
-import com.realtime.crossfire.jxclient.server.CrossfireServerConnectionListener;
 import java.util.ArrayList;
 import java.util.Collection;
 import org.jetbrains.annotations.NotNull;

@@ -21,8 +21,6 @@
 
 package com.realtime.crossfire.jxclient.server;
 
-import com.realtime.crossfire.jxclient.window.GuiStateListener;
-import com.realtime.crossfire.jxclient.window.GuiStateManager;
 import java.util.LinkedList;
 import java.util.List;
 import org.jetbrains.annotations.NotNull;

@@ -40,6 +40,8 @@ import com.realtime.crossfire.jxclient.server.CommandQueue;
 import com.realtime.crossfire.jxclient.server.CrossfireDrawextinfoListener;
 import com.realtime.crossfire.jxclient.server.CrossfireQueryListener;
 import com.realtime.crossfire.jxclient.server.CrossfireServerConnection;
+import com.realtime.crossfire.jxclient.server.GuiStateListener;
+import com.realtime.crossfire.jxclient.server.GuiStateManager;
 import com.realtime.crossfire.jxclient.server.MessageTypes;
 import com.realtime.crossfire.jxclient.settings.Settings;
 import com.realtime.crossfire.jxclient.settings.options.OptionManager;

@@ -23,8 +23,8 @@ package com.realtime.crossfire.jxclient.skin.events;
 
 import com.realtime.crossfire.jxclient.gui.command.GUICommandList;
 import com.realtime.crossfire.jxclient.server.ClientSocketState;
-import com.realtime.crossfire.jxclient.window.GuiStateListener;
-import com.realtime.crossfire.jxclient.window.GuiStateManager;
+import com.realtime.crossfire.jxclient.server.GuiStateListener;
+import com.realtime.crossfire.jxclient.server.GuiStateManager;
 import org.jetbrains.annotations.NotNull;
 
 /**

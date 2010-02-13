@@ -19,7 +19,7 @@
  * Copyright (C) 2006-2010 Andreas Kirschbaum.
  */
 
-package com.realtime.crossfire.jxclient.window;
+package com.realtime.crossfire.jxclient.server;
 
 /**
  * Possible gui states.
