@@ -111,7 +111,8 @@ public class JXClient
                                 final GuiStateManager guiStateManager = new GuiStateManager(server);
                                 final ExperienceTable experienceTable = new ExperienceTable(server);
                                 final SkillSet skillSet = new SkillSet(server, guiStateManager);
-                                final JXCWindow window = new JXCWindow(terminateSync, server, semaphoreRedraw, options.isDebugGui(), debugKeyboardOutputStreamWriter, options.getPrefs(), optionManager, metaserverModel, options.getResolution(), guiStateManager, experienceTable, skillSet);
+                                final Stats stats = new Stats(server, experienceTable, skillSet, guiStateManager);
+                                final JXCWindow window = new JXCWindow(terminateSync, server, semaphoreRedraw, options.isDebugGui(), debugKeyboardOutputStreamWriter, options.getPrefs(), optionManager, metaserverModel, options.getResolution(), guiStateManager, experienceTable, skillSet, stats);
                                 new Metaserver(Filenames.getMetaserverCacheFile(), metaserverModel, guiStateManager);
                                 final SoundManager soundManager = new SoundManager(guiStateManager);
                                 try
@@ -131,7 +132,6 @@ public class JXClient
                                         @Override
                                         public void run()
                                         {
-                                            final Stats stats = window.getStats();
                                             new MusicWatcher(server, soundManager);
                                             new SoundWatcher(server, soundManager);
                                             new StatsWatcher(stats, window.getGuiManager().getWindowRenderer(), window.getItemsManager(), soundManager);
