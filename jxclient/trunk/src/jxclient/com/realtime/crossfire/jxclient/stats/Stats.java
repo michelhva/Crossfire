@@ -21,7 +21,6 @@
 
 package com.realtime.crossfire.jxclient.stats;
 
-import com.realtime.crossfire.jxclient.experience.ExperienceTable;
 import com.realtime.crossfire.jxclient.server.ClientSocketState;
 import com.realtime.crossfire.jxclient.server.CrossfireServerConnection;
 import com.realtime.crossfire.jxclient.server.CrossfireStatsListener;

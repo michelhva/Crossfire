@@ -21,7 +21,7 @@
 
 package com.realtime.crossfire.jxclient.gui.gauge;
 
-import com.realtime.crossfire.jxclient.experience.ExperienceTable;
+import com.realtime.crossfire.jxclient.stats.ExperienceTable;
 import com.realtime.crossfire.jxclient.stats.Stats;
 import com.realtime.crossfire.jxclient.stats.StatsListener;
 import org.jetbrains.annotations.NotNull;

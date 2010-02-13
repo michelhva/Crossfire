@@ -19,7 +19,7 @@
  * Copyright (C) 2006-2010 Andreas Kirschbaum.
  */
 
-package com.realtime.crossfire.jxclient.experience;
+package com.realtime.crossfire.jxclient.stats;
 
 import com.realtime.crossfire.jxclient.server.CrossfireExpTableListener;
 import com.realtime.crossfire.jxclient.server.CrossfireServerConnection;
