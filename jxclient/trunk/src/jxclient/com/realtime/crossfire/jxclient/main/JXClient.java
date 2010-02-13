@@ -143,7 +143,7 @@ public class JXClient
                                         {
                                             new MusicWatcher(server, soundManager);
                                             new SoundWatcher(server, soundManager);
-                                            new StatsWatcher(stats, window.getGuiManager().getWindowRenderer(), itemsManager, soundManager);
+                                            new StatsWatcher(stats, window.getWindowRenderer(), itemsManager, soundManager);
                                             window.init(options.getSkin(), options.isFullScreen(), options.getServer());
                                         }
                                     });
