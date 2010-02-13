@@ -105,7 +105,7 @@ public class GuiManager
      * The key bindings manager for this window.
      */
     @NotNull
-    private KeybindingsManager keybindingsManager;
+    private final KeybindingsManager keybindingsManager;
 
     /**
      * The "really quit?" dialog. Set to <code>null</code> if the skin does not
@@ -144,7 +144,7 @@ public class GuiManager
      * The commands instance for this window.
      */
     @NotNull
-    private Commands commands;
+    private final Commands commands;
 
     /**
      * The {@link TooltipManager} for this window.
@@ -169,12 +169,6 @@ public class GuiManager
      */
     @NotNull
     private final CrossfireServerConnection server;
-
-    /**
-     * The {@link Macros} instance to use.
-     */
-    @NotNull
-    private final Macros macros;
 
     /**
      * Called periodically to update the display contents.
@@ -370,22 +364,20 @@ public class GuiManager
      * @param server the crossfire server connection to monitor
      * @param macros the macros instance to use
      * @param windowRenderer the window renderer to use
+     * @param scriptManager the script manager to use
+     * @param commandQueue the command queue to use
+     * @param optionManager the option manager to use
+     * @param mouseTracker the mouse tracker to use
      */
-    public GuiManager(@NotNull final GuiStateManager guiStateManager, @NotNull final Object semaphoreDrawing, @NotNull final Object terminateSync, @NotNull final TooltipManager tooltipManager, @NotNull final Settings settings, @NotNull final CrossfireServerConnection server, @NotNull final Macros macros, @NotNull final JXCWindowRenderer windowRenderer)
+    public GuiManager(@NotNull final GuiStateManager guiStateManager, @NotNull final Object semaphoreDrawing, @NotNull final Object terminateSync, @NotNull final TooltipManager tooltipManager, @NotNull final Settings settings, @NotNull final CrossfireServerConnection server, @NotNull final Macros macros, @NotNull final JXCWindowRenderer windowRenderer, @NotNull final ScriptManager scriptManager, @NotNull final CommandQueue commandQueue, @NotNull final OptionManager optionManager, @Nullable final MouseTracker mouseTracker)
     {
         this.semaphoreDrawing = semaphoreDrawing;
         this.terminateSync = terminateSync;
         this.tooltipManager = tooltipManager;
         this.settings = settings;
         this.server = server;
-        this.macros = macros;
         this.windowRenderer = windowRenderer;
         guiStateManager.addGuiStateListener(guiStateListener);
-    }
-
-    @Deprecated
-    public void init(@NotNull final ScriptManager scriptManager, @NotNull final CommandQueue commandQueue, @NotNull final CrossfireServerConnection server, @NotNull final OptionManager optionManager, @Nullable final MouseTracker mouseTracker)
-    {
         commands = new Commands(windowRenderer, commandQueue, server, scriptManager, optionManager, this, macros);
         guiFactory = new GuiFactory(mouseTracker, commands, this, macros);
         windowRenderer.setCurrentGui(guiFactory.newGui());
