@@ -965,4 +965,55 @@ public class JXCWindowRenderer
     {
         return currentGui.getHeight();
     }
+
+    /**
+     * Find the gui element for a given {@link MouseEvent}. If a gui element
+     * was found, update the event mouse coordinates to be relative to the gui
+     * element.
+     *
+     * @param e The mouse event to process.
+     *
+     * @return The gui element found, or <code>null</code> if none was found.
+     */
+    @Nullable
+    public GUIElement findElement(@NotNull final MouseEvent e)
+    {
+        GUIElement elected = null;
+
+        for (final Gui dialog : getOpenDialogs())
+        {
+            if (!dialog.isHidden(rendererGuiState))
+            {
+                elected = manageMouseEvents(dialog, e);
+                if (elected != null)
+                {
+                    break;
+                }
+            }
+            if (dialog.isModal())
+            {
+                return null;
+            }
+        }
+
+        if (elected == null)
+        {
+            elected = manageMouseEvents(currentGui, e);
+        }
+
+        if (elected != null)
+        {
+            e.translatePoint(-elected.getElementX()-offsetX, -elected.getElementY()-offsetY);
+        }
+
+        return elected;
+    }
+
+    @Nullable
+    private GUIElement manageMouseEvents(@NotNull final Gui gui, @NotNull final MouseEvent e)
+    {
+        final int x = e.getX()-offsetX;
+        final int y = e.getY()-offsetY;
+        return gui.getElementFromPoint(x, y);
+    }
 }
