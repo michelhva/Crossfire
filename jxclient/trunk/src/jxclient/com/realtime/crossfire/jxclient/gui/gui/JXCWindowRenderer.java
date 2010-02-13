@@ -891,7 +891,7 @@ public class JXCWindowRenderer
      * @return the active message buffer or <code>null</code>
      */
     @Nullable
-    private Buffer getActiveMessageBuffer(@NotNull final Gui gui)
+    private static Buffer getActiveMessageBuffer(@NotNull final Gui gui)
     {
         final GUILog buffer = gui.getFirstElement(GUIMessageLog.class);
         return buffer == null ? null : buffer.getBuffer();
