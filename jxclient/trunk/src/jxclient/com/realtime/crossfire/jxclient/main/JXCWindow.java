@@ -581,8 +581,9 @@ public class JXCWindow extends JFrame
      * @param skillSet the skill set to use
      * @param stats the stats to use
      * @param facesManager the faces manager to use
+     * @param itemsManager the items manager to use
      */
-    public JXCWindow(@NotNull final Object terminateSync, @NotNull final CrossfireServerConnection server, @NotNull final Object semaphoreRedraw, final boolean debugGui, @Nullable final Writer debugKeyboard, @NotNull final Settings settings, @NotNull final OptionManager optionManager, @NotNull final MetaserverModel metaserverModel, @NotNull final Resolution resolution, @NotNull final GuiStateManager guiStateManager, @NotNull final ExperienceTable experienceTable, @NotNull final SkillSet skillSet, @NotNull final Stats stats, @NotNull final FacesManager facesManager)
+    public JXCWindow(@NotNull final Object terminateSync, @NotNull final CrossfireServerConnection server, @NotNull final Object semaphoreRedraw, final boolean debugGui, @Nullable final Writer debugKeyboard, @NotNull final Settings settings, @NotNull final OptionManager optionManager, @NotNull final MetaserverModel metaserverModel, @NotNull final Resolution resolution, @NotNull final GuiStateManager guiStateManager, @NotNull final ExperienceTable experienceTable, @NotNull final SkillSet skillSet, @NotNull final Stats stats, @NotNull final FacesManager facesManager, @NotNull final ItemsManager itemsManager)
     {
         super("");
         this.server = server;
@@ -595,8 +596,8 @@ public class JXCWindow extends JFrame
         this.skillSet = skillSet;
         this.stats = stats;
         this.facesManager = facesManager;
+        this.itemsManager = itemsManager;
         macros = new Macros(server);
-        itemsManager = new ItemsManager(server, facesManager, stats, skillSet, guiStateManager);
         mapUpdater = new CfMapUpdater(server, facesManager, guiStateManager);
         spellsManager = new SpellsManager(server, guiStateManager);
         commandQueue = new CommandQueue(server, guiStateManager);
@@ -760,12 +761,5 @@ public class JXCWindow extends JFrame
     public GuiManager getGuiManager()
     {
         return guiManager;
-    }
-
-    @Deprecated
-    @NotNull
-    public ItemsManager getItemsManager()
-    {
-        return itemsManager;
     }
 }

@@ -26,6 +26,7 @@ import com.realtime.crossfire.jxclient.faces.FaceCache;
 import com.realtime.crossfire.jxclient.faces.FacesManager;
 import com.realtime.crossfire.jxclient.faces.FacesQueue;
 import com.realtime.crossfire.jxclient.faces.FileCache;
+import com.realtime.crossfire.jxclient.items.ItemsManager;
 import com.realtime.crossfire.jxclient.metaserver.Metaserver;
 import com.realtime.crossfire.jxclient.metaserver.MetaserverModel;
 import com.realtime.crossfire.jxclient.server.CrossfireServerConnection;
@@ -119,7 +120,8 @@ public class JXClient
                                 final FaceCache faceCache = new FaceCache(server);
                                 final FacesQueue facesQueue = new FacesQueue(server, new FileCache(Filenames.getOriginalImageCacheDir()), new FileCache(Filenames.getScaledImageCacheDir()), new FileCache(Filenames.getMagicMapImageCacheDir()));
                                 final FacesManager facesManager = new FacesManager(faceCache, facesQueue);
-                                final JXCWindow window = new JXCWindow(terminateSync, server, semaphoreRedraw, options.isDebugGui(), debugKeyboardOutputStreamWriter, options.getPrefs(), optionManager, metaserverModel, options.getResolution(), guiStateManager, experienceTable, skillSet, stats, facesManager);
+                                final ItemsManager itemsManager = new ItemsManager(server, facesManager, stats, skillSet, guiStateManager);
+                                final JXCWindow window = new JXCWindow(terminateSync, server, semaphoreRedraw, options.isDebugGui(), debugKeyboardOutputStreamWriter, options.getPrefs(), optionManager, metaserverModel, options.getResolution(), guiStateManager, experienceTable, skillSet, stats, facesManager, itemsManager);
                                 new Metaserver(Filenames.getMetaserverCacheFile(), metaserverModel, guiStateManager);
                                 final SoundManager soundManager = new SoundManager(guiStateManager);
                                 try
@@ -141,7 +143,7 @@ public class JXClient
                                         {
                                             new MusicWatcher(server, soundManager);
                                             new SoundWatcher(server, soundManager);
-                                            new StatsWatcher(stats, window.getGuiManager().getWindowRenderer(), window.getItemsManager(), soundManager);
+                                            new StatsWatcher(stats, window.getGuiManager().getWindowRenderer(), itemsManager, soundManager);
                                             window.init(options.getSkin(), options.isFullScreen(), options.getServer());
                                         }
                                     });
