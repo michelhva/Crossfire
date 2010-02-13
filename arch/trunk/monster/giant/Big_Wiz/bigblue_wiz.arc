@@ -12,7 +12,6 @@ level 22
 attacktype 128
 Con 29
 Pow 50
-can_cast_spell 1
 sp 140
 maxsp 140
 hp 4000
