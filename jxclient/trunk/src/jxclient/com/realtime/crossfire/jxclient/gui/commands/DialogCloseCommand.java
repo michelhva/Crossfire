@@ -66,6 +66,6 @@ public class DialogCloseCommand implements GUICommand
     @Override
     public void execute()
     {
-        guiManager.getWindowRenderer().closeDialog(dialog);
+        guiManager.closeDialog(dialog);
     }
 }
