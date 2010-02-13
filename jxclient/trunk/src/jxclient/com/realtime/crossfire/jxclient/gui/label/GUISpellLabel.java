@@ -46,37 +46,6 @@ public class GUISpellLabel extends GUIHTMLLabel
     private static final long serialVersionUID = 1;
 
     /**
-     * The display type.
-     */
-    public enum Type
-    {
-        /**
-         * Display the spell name.
-         */
-        SPELL_NAME,
-
-        /**
-         * Display the spell icon.
-         */
-        SPELL_ICON,
-
-        /**
-         * Display the spell cost (mana/grace).
-         */
-        SPELL_COST,
-
-        /**
-         * Display the spell level.
-         */
-        SPELL_LEVEL,
-
-        /**
-         * Display the spell description.
-         */
-        SPELL_DESCRIPTION,
-    }
-
-    /**
      * The instance for looking up faces.
      */
     @NotNull

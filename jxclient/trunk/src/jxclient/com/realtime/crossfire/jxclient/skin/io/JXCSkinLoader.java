@@ -64,6 +64,7 @@ import com.realtime.crossfire.jxclient.gui.label.GUILabelStats;
 import com.realtime.crossfire.jxclient.gui.label.GUIMultiLineLabel;
 import com.realtime.crossfire.jxclient.gui.label.GUIOneLineLabel;
 import com.realtime.crossfire.jxclient.gui.label.GUISpellLabel;
+import com.realtime.crossfire.jxclient.gui.label.Type;
 import com.realtime.crossfire.jxclient.gui.list.GUIItemInventoryList;
 import com.realtime.crossfire.jxclient.gui.list.GUIMetaElementList;
 import com.realtime.crossfire.jxclient.gui.log.Fonts;
@@ -1672,7 +1673,7 @@ public class JXCSkinLoader
         final int w = expressionParser.parseInt(args[4]);
         final int h = expressionParser.parseInt(args[5]);
         final Font font = definedFonts.lookup(args[6]);
-        final GUISpellLabel.Type type = NumberParser.parseEnum(GUISpellLabel.Type.class, args[7], "label type");
+        final Type type = NumberParser.parseEnum(Type.class, args[7], "label type");
         final GUIElement element = new GUISpellLabel(tooltipManager, elementListener, name, x, y, w, h, null, facesManager, font, type, currentSpellManager);
         skin.insertGuiElement(element);
     }
