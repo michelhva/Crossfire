@@ -109,7 +109,6 @@ import com.realtime.crossfire.jxclient.util.StringUtils;
 import com.realtime.crossfire.jxclient.util.UnterminatedTokenException;
 import com.realtime.crossfire.jxclient.window.GuiManager;
 import com.realtime.crossfire.jxclient.window.GuiStateManager;
-import com.realtime.crossfire.jxclient.window.MouseTracker;
 import java.awt.Color;
 import java.awt.Font;
 import java.awt.image.BufferedImage;
@@ -279,7 +278,6 @@ public class JXCSkinLoader
      * @param tooltipManager the tooltip manager to update
      * @param windowRenderer the window renderer to add to
      * @param elementListener the element listener to notify
-     * @param mouseTracker the mouse tracker to use
      * @param metaserverModel the metaserver mode to use
      * @param commandQueue the command queue to use
      * @param resolution the preferred screen resolution
@@ -287,13 +285,13 @@ public class JXCSkinLoader
      * @param commands the commands instance to use
      * @param currentSpellManager the current spell manager to use
      * @param guiManager the gui manager to use
-     * @param debugGui whether gui debugging is active
      * @param macros the macros instance to use
+     * @param guiFactory the gui factory for creating gui elements
      * @return the loaded skin
      * @throws JXCSkinException if the skin cannot be loaded
      */
     @NotNull
-    public JXCSkin load(@NotNull final JXCSkinSource skinSource, @NotNull final CrossfireServerConnection crossfireServerConnection, @NotNull final GuiStateManager guiStateManager, @NotNull final TooltipManager tooltipManager, @NotNull final JXCWindowRenderer windowRenderer, @NotNull final GUIElementListener elementListener, @NotNull final MouseTracker mouseTracker, @NotNull final MetaserverModel metaserverModel, @NotNull final CommandQueue commandQueue, @NotNull final Resolution resolution, @NotNull final Shortcuts shortcuts, @NotNull final Commands commands, @NotNull final CurrentSpellManager currentSpellManager, @NotNull final GuiManager guiManager, final boolean debugGui, @NotNull final Macros macros) throws JXCSkinException
+    public JXCSkin load(@NotNull final JXCSkinSource skinSource, @NotNull final CrossfireServerConnection crossfireServerConnection, @NotNull final GuiStateManager guiStateManager, @NotNull final TooltipManager tooltipManager, @NotNull final JXCWindowRenderer windowRenderer, @NotNull final GUIElementListener elementListener, @NotNull final MetaserverModel metaserverModel, @NotNull final CommandQueue commandQueue, @NotNull final Resolution resolution, @NotNull final Shortcuts shortcuts, @NotNull final Commands commands, @NotNull final CurrentSpellManager currentSpellManager, @NotNull final GuiManager guiManager, @NotNull final Macros macros, @NotNull final GuiFactory guiFactory) throws JXCSkinException
     {
         imageParser = new ImageParser(skinSource);
         fontParser = new FontParser(skinSource);
@@ -344,7 +342,6 @@ public class JXCSkinLoader
         }
 
         expressionParser = new ExpressionParser(selectedResolution);
-        final GuiFactory guiFactory = new GuiFactory(debugGui ? mouseTracker : null, commands, guiManager, macros);
         final Dialogs dialogs = new Dialogs(guiFactory);
         final GaugeUpdaterParser gaugeUpdaterParser = new GaugeUpdaterParser(stats, itemsManager, skillSet);
         skin = new DefaultJXCSkin(defaultKeyBindings, optionManager, itemsManager, experienceTable, expressionParser, selectedResolution, gaugeUpdaterParser, dialogs);
