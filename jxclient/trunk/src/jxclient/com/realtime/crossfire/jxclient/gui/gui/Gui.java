@@ -43,16 +43,16 @@ import org.jetbrains.annotations.Nullable;
 
 /**
  * Combines a list of {@link GUIElement}s to for a gui.
- *
- * <p>A dialog can be modal. Such dialogs do not propagate key or mouse events
- * to lower dialogs.
- *
+ * <p>
+ * A dialog can be modal. Such dialogs do not propagate key or mouse events to
+ * lower dialogs.
  * @author Andreas Kirschbaum
  */
 public class Gui
 {
     /**
-     * The mouse tracker if in GUI debug mode or <code>null</code> otherwise.
+     * The {@link MouseTracker} if in GUI debug mode or <code>null</code>
+     * otherwise.
      */
     @Nullable
     private final MouseTracker mouseTracker;
@@ -64,13 +64,13 @@ public class Gui
     private final Collection<GUIElement> visibleElements = new CopyOnWriteArrayList<GUIElement>();
 
     /**
-     * The key bindings for this gui.
+     * The {@link KeyBindings} for this gui.
      */
     @NotNull
     private final KeyBindings keyBindings;
 
     /**
-     * Whether this dialog is modal.
+     * Whether this dialog is modal. Modal dialogs consume all key presses.
      */
     private boolean modal = false;
 
@@ -152,9 +152,8 @@ public class Gui
     }
 
     /**
-     * Set the name of this dialog.
-     *
-     * @param name The name of the dialog.
+     * Sets the name of this dialog.
+     * @param name the name of the dialog
      */
     public void setName(@NotNull final String name)
     {
@@ -162,11 +161,9 @@ public class Gui
     }
 
     /**
-     * Mark this gui as a "dialog".
-     *
-     * @param w The width.
-     *
-     * @param h The height.
+     * Sets the size of this dialog. Marks this gui as a "dialog".
+     * @param w the width
+     * @param h the height
      */
     public void setSize(final int w, final int h)
     {
@@ -183,6 +180,11 @@ public class Gui
         stateChanged = true;
     }
 
+    /**
+     * Sets the position of this dialog.
+     * @param x the x-coordinate
+     * @param y the y-coordinate
+     */
     public void setPosition(final int x, final int y)
     {
         if (w == 0 || h == 0) throw new IllegalStateException();
@@ -199,9 +201,8 @@ public class Gui
     }
 
     /**
-     * Set the modal state.
-     *
-     * @param modal The new modal state.
+     * Sets the modal state.
+     * @param modal the new modal state
      */
     public void setModal(final boolean modal)
     {
@@ -209,9 +210,8 @@ public class Gui
     }
 
     /**
-     * Return the modal state.
-     *
-     * @return The modal state.
+     * Returns the modal state.
+     * @return the modal state
      */
     public boolean isModal()
     {
@@ -219,10 +219,9 @@ public class Gui
     }
 
     /**
-     * Add a {@link GUIElement} to this gui. The element must not be added to
+     * Adds a {@link GUIElement} to this gui. The element must not be added to
      * more than one gui at a time.
-     *
-     * @param element The <code>GUIElement</code> to add.
+     * @param element the <code>GUIElement</code> to add
      */
     public void add(@NotNull final GUIElement element)
     {
@@ -233,9 +232,8 @@ public class Gui
     }
 
     /**
-     * Repaint the gui and clear the changed flags of all repainted elements.
-     *
-     * @param g The <code>Graphics</code> to paint into.
+     * Repaints the gui and clear the changed flags of all repainted elements.
+     * @param g the <code>Graphics</code> to paint into
      */
     public void redraw(@NotNull final Graphics g)
     {
@@ -271,11 +269,10 @@ public class Gui
     }
 
     /**
-     * Check whether any visible gui element of this gui has been changed since
-     * it was painted last time.
-     *
+     * Checks whether any visible gui element of this gui has been changed
+     * since it was painted last time.
      * @return <code>true</code> if any gui element has changed;
-     * <code>false</code> otherwise.
+     * <code>false</code> otherwise
      */
     public boolean needRedraw()
     {
@@ -283,9 +280,8 @@ public class Gui
     }
 
     /**
-     * Return the first default gui element of this gui.
-     *
-     * @return The default gui element, or <code>null</code>.
+     * Returns the first default gui element of this gui.
+     * @return the default gui element, or <code>null</code>
      */
     @Nullable
     private GUIElement getDefaultElement()
@@ -302,7 +298,7 @@ public class Gui
     }
 
     /**
-     * Activate the first default gui element of this gui.
+     * Activates the first default gui element of this gui.
      */
     public void activateDefaultElement()
     {
@@ -315,7 +311,7 @@ public class Gui
     }
 
     /**
-     * Returns all gui elements of this gui belonging to the given class.
+     * Returnss all gui elements of this gui belonging to the given class.
      * @param class_ the class to collect
      * @return the gui elements
      */
@@ -395,14 +391,11 @@ public class Gui
     }
 
     /**
-     * Determine the {@link GUIElement} for a given coordinate.
-     *
-     * @param x The x-coordinate to check.
-     *
-     * @param y The y-coordinate to check.
-     *
-     * @return The <code>GUIElement</code> at the given coordinate, or
-     * <code>null</code> if none was found.
+     * Determines the {@link GUIElement} for a given coordinate.
+     * @param x the x-coordinate to check
+     * @param y the y-coordinate to check
+     * @return the <code>GUIElement</code> at the given coordinate, or
+     * <code>null</code> if none was found
      */
     @Nullable
     public GUIElement getElementFromPoint(final int x, final int y)
@@ -426,11 +419,9 @@ public class Gui
     }
 
     /**
-     * Set the gui element owning the focus.
-     *
-     * @param activeElement The gui element.
-     *
-     * @param active The new active state.
+     * Sets the gui element owning the focus.
+     * @param activeElement the gui element
+     * @param active the new active state
      */
     void setActiveElement(@NotNull final ActivatableGUIElement activeElement, final boolean active)
     {
@@ -487,10 +478,9 @@ public class Gui
     }
 
     /**
-     * Return the gui element owning the focus.
-     *
-     * @return The gui element owning the focus, or <code>null</code> if no
-     * such element exists.
+     * Returns the gui element owning the focus.
+     * @return the gui element owning the focus, or <code>null</code> if no
+     * such element exists
      */
     @Nullable
     public ActivatableGUIElement getActiveElement()
@@ -499,11 +489,9 @@ public class Gui
     }
 
     /**
-     * Dispatch a key press {@link KeyEvent}.
-     *
-     * @param e The event to dispatch.
-     *
-     * @return Whether a gui element did handle the event.
+     * Dispatches a key press {@link KeyEvent}.
+     * @param e the event to dispatch
+     * @return whether a gui element did handle the event
      */
     public boolean handleKeyPress(@NotNull final KeyEvent e)
     {
@@ -522,11 +510,9 @@ public class Gui
     }
 
     /**
-     * Dispatch a key typed {@link KeyEvent}.
-     *
-     * @param e The event to dispatch.
-     *
-     * @return Whether a gui element did handle the event.
+     * Dispatches a key typed {@link KeyEvent}.
+     * @param e the event to dispatch
+     * @return whether a gui element did handle the event
      */
     public boolean handleKeyTyped(@NotNull final KeyEvent e)
     {
@@ -563,11 +549,10 @@ public class Gui
     }
 
     /**
-     * Return the first {@link GUIText} gui element of this gui and make it
+     * Returns the first {@link GUIText} gui element of this gui and make it
      * active.
-     *
-     * @return The <code>GUIText</code> element, or <code>null</code> if this
-     * gui does not contain any <code>GUIText</code> gui elements.
+     * @return the <code>GUIText</code> element, or <code>null</code> if this
+     * gui does not contain any <code>GUIText</code> gui elements
      */
     @Nullable
     private GUIText activateFirstTextArea()
@@ -581,10 +566,9 @@ public class Gui
     }
 
     /**
-     * Return the first command text field of this gui and make it active.
-     *
-     * @return The comment text field, or <code>null</code> if this gui does
-     * not contain any command text fields.
+     * Returns the first command text field of this gui and make it active.
+     * @return the comment text field, or <code>null</code> if this gui does
+     * not contain any command text fields
      */
     @Nullable
     public GUIText activateCommandInput()
@@ -648,7 +632,7 @@ public class Gui
     }
 
     /**
-     * Notify that one gui element has changed since last redraw.
+     * Notifies that one gui element has changed since last redraw.
      */
     public void setChangedElements()
     {
@@ -656,9 +640,8 @@ public class Gui
     }
 
     /**
-     * The x-offset for drawing gui elements inside this gui.
-     *
-     * @return The x-offset.
+     * Returns the x-offset for drawing gui elements inside this gui.
+     * @return the x-offset
      */
     public int getX()
     {
@@ -666,9 +649,8 @@ public class Gui
     }
 
     /**
-     * The y-offset for drawing gui elements inside this gui.
-     *
-     * @return The y-offset.
+     * Returns the y-offset for drawing gui elements inside this gui.
+     * @return the y-offset
      */
     public int getY()
     {
@@ -676,9 +658,8 @@ public class Gui
     }
 
     /**
-     * The width of the dialog.
-     *
-     * @return The width, or <code>0</code> if this is not a dlalog.
+     * Returns the width of the dialog.
+     * @return the width, or <code>0</code> if this is not a dlalog
      */
     public int getWidth()
     {
@@ -686,9 +667,8 @@ public class Gui
     }
 
     /**
-     * The height of this dialog.
-     *
-     * @return The height, or <code>0</code> if this is not a dialog.
+     * Returns the height of this dialog.
+     * @return the height, or <code>0</code> if this is not a dialog
      */
     public int getHeight()
     {
@@ -696,9 +676,8 @@ public class Gui
     }
 
     /**
-     * Return the name of the dialog.
-     *
-     * @return The name, or <code>null</code> if this is not a dialog.
+     * Returns the name of the dialog.
+     * @return the name, or <code>null</code> if this is not a dialog
      */
     @Nullable
     public String getName()
@@ -707,9 +686,8 @@ public class Gui
     }
 
     /**
-     * Return the key bindings instance for this gui.
-     *
-     * @return The key bindings.
+     * Returns the key bindings instance for this gui.
+     * @return the key bindings
      */
     @NotNull
     public KeyBindings getKeyBindings()
@@ -718,9 +696,8 @@ public class Gui
     }
 
     /**
-     * Hide the dialog in a state.
-     *
-     * @param state The state.
+     * Hides the dialog in a state.
+     * @param state the state
      */
     public void hideInState(@NotNull final RendererGuiState state)
     {
@@ -728,11 +705,9 @@ public class Gui
     }
 
     /**
-     * Return whether this gui is visible in a state.
-     *
-     * @param state The state.
-     *
-     * @return Whether this gui is hidden.
+     * Returns whether this gui is visible in a state.
+     * @param state the state
+     * @return whether this gui is hidden
      */
     public boolean isHidden(@NotNull final RendererGuiState state)
     {
@@ -740,8 +715,8 @@ public class Gui
     }
 
     /**
-     * The {@link GuiAutoCloseListener} to be notified when this dialog becomes
-     * inactive.
+     * Sets the {@link GuiAutoCloseListener} to be notified when this dialog
+     * becomes inactive.
      * @param guiAutoCloseListener the listener to be notified or
      * <code>null</code>
      */
@@ -751,9 +726,8 @@ public class Gui
     }
 
     /**
-     * Set whether the state (position or size) has changed.
-     *
-     * @param stateChanged Whether the state has changed.
+     * Sets whether the state (position or size) has changed.
+     * @param stateChanged whether the state has changed
      */
     public void setStateChanged(final boolean stateChanged)
     {
@@ -761,9 +735,8 @@ public class Gui
     }
 
     /**
-     * Enable or disable hidden text in the first input field.
-     *
-     * @param hideInput If set, hide input; else show input.
+     * Enables or disables hidden text in the first input field.
+     * @param hideInput if set, hide input; else show input
      */
     public void setHideInput(final boolean hideInput)
     {
@@ -774,6 +747,11 @@ public class Gui
         }
     }
 
+    /**
+     * Adds or removes a {@link GUIElement} from this gui. The gui element is
+     * added if it is visible or removed if it is invisible.
+     * @param element the gui element
+     */
     public void updateVisibleElement(@NotNull final GUIElement element)
     {
         if (element.isElementVisible())
