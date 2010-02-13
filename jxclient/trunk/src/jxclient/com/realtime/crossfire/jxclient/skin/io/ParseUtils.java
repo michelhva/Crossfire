@@ -19,7 +19,7 @@
  * Copyright (C) 2006-2010 Andreas Kirschbaum.
  */
 
-package com.realtime.crossfire.jxclient.skin;
+package com.realtime.crossfire.jxclient.skin.io;
 
 import com.realtime.crossfire.jxclient.gui.gauge.Orientation;
 import com.realtime.crossfire.jxclient.gui.gauge.OrientationParser;
@@ -53,7 +53,7 @@ public class ParseUtils
      * @return the stat value
      * @throws IOException if the stat value does not exist
      */
-    static int parseStat(@NotNull final String name) throws IOException
+    public static int parseStat(@NotNull final String name) throws IOException
     {
         try
         {
@@ -74,7 +74,7 @@ public class ParseUtils
      * @throws IOException if the orientation value does not exist
      */
     @NotNull
-    static Orientation parseOrientation(@NotNull final String name) throws IOException
+    public static Orientation parseOrientation(@NotNull final String name) throws IOException
     {
         try
         {
@@ -95,7 +95,7 @@ public class ParseUtils
      * @throws IOException if the color name does not exist
      */
     @NotNull
-    static Color parseColor(@NotNull final String name) throws IOException
+    public static Color parseColor(@NotNull final String name) throws IOException
     {
         final Color color = parseColorNull(name);
         if (color != null)
@@ -111,7 +111,7 @@ public class ParseUtils
      * @return the color or <code>null</code> if the color name does not exist
      */
     @Nullable
-    static Color parseColorNull(@NotNull final String name)
+    public static Color parseColorNull(@NotNull final String name)
     {
         final int pos = name.lastIndexOf('/');
         if (pos == -1)
@@ -180,7 +180,7 @@ public class ParseUtils
      * @throws IOException if reading from <code>lnr</lnr> fails
      */
     @NotNull
-    static String parseText(@NotNull final String[] args, final int startIndex, @NotNull final LineNumberReader lnr) throws IOException
+    public static String parseText(@NotNull final String[] args, final int startIndex, @NotNull final LineNumberReader lnr) throws IOException
     {
         final StringBuilder text = new StringBuilder();
         for (int i = startIndex; i < args.length; i++)
@@ -230,7 +230,7 @@ public class ParseUtils
      * @throws IOException if the check box option name does not exist
      */
     @NotNull
-    static CheckBoxOption parseCheckBoxOption(@NotNull final String name, @NotNull final OptionManager optionManager) throws IOException
+    public static CheckBoxOption parseCheckBoxOption(@NotNull final String name, @NotNull final OptionManager optionManager) throws IOException
     {
         try
         {

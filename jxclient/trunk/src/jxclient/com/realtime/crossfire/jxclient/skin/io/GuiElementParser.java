@@ -19,10 +19,12 @@
  * Copyright (C) 2006-2010 Andreas Kirschbaum.
  */
 
-package com.realtime.crossfire.jxclient.skin;
+package com.realtime.crossfire.jxclient.skin.io;
 
 import com.realtime.crossfire.jxclient.gui.label.AbstractLabel;
 import com.realtime.crossfire.jxclient.gui.textinput.GUIText;
+import com.realtime.crossfire.jxclient.skin.skin.JXCSkin;
+import com.realtime.crossfire.jxclient.skin.skin.JXCSkinException;
 import org.jetbrains.annotations.NotNull;
 
 /**

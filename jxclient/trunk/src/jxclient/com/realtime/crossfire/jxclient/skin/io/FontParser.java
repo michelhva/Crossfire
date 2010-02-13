@@ -19,8 +19,9 @@
  * Copyright (C) 2006-2010 Andreas Kirschbaum.
  */
 
-package com.realtime.crossfire.jxclient.skin;
+package com.realtime.crossfire.jxclient.skin.io;
 
+import com.realtime.crossfire.jxclient.skin.source.JXCSkinSource;
 import java.awt.Font;
 import java.awt.FontFormatException;
 import java.io.IOException;

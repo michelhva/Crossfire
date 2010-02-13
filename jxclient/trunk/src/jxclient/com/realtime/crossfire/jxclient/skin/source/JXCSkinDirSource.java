@@ -19,40 +19,54 @@
  * Copyright (C) 2006-2010 Andreas Kirschbaum.
  */
 
-package com.realtime.crossfire.jxclient.skin;
+package com.realtime.crossfire.jxclient.skin.source;
 
-import com.realtime.crossfire.jxclient.util.Resolution;
+import com.realtime.crossfire.jxclient.skin.skin.JXCSkinException;
+import java.io.File;
+import java.io.FileInputStream;
 import java.io.IOException;
 import java.io.InputStream;
 import org.jetbrains.annotations.NotNull;
 
 /**
- * Interface for providers of {@link JXCSkin} sources.
+ * A {@link JXCSkinSource} that loads from files.
+ *
  * @author Andreas Kirschbaum
  */
-public interface JXCSkinSource extends Iterable<Resolution>
+public class JXCSkinDirSource extends AbstractJXCSkinSource
 {
     /**
-     * Returns an {@link InputStream} for a resource name.
-     * @param name the resource name
-     * @return the input stream for the resource
-     * @throws IOException if the resource cannot be loaded
+     * The base directory.
      */
     @NotNull
-    InputStream getInputStream(@NotNull String name) throws IOException;
+    private final File dir;
 
     /**
-     * Returns a description of the location of a resource name.
-     * @param name the resource name
-     * @return the description of the resource
+     * Create a new instance.
+     *
+     * @param dir The base directory.
+     *
+     * @throws JXCSkinException if the skin cannot be loaded
      */
+    public JXCSkinDirSource(@NotNull final File dir) throws JXCSkinException
+    {
+        this.dir = dir;
+        checkAccess();
+    }
+
+    /** {@inheritDoc} */
     @NotNull
-    String getURI(@NotNull String name);
+    @Override
+    public InputStream getInputStream(@NotNull final String name) throws IOException
+    {
+        return new FileInputStream(new File(dir, name));
+    }
 
-    /**
-     * Returns whether this source defines a given resolution.
-     * @param resolution the resolution
-     * @return whether this source defines the resolution
-     */
-    boolean containsResolution(@NotNull Resolution resolution);
+    /** {@inheritDoc} */
+    @NotNull
+    @Override
+    public String getURI(@NotNull final String name)
+    {
+        return "file:"+new File(dir, name);
+    }
 }

@@ -19,7 +19,7 @@
  * Copyright (C) 2006-2010 Andreas Kirschbaum.
  */
 
-package com.realtime.crossfire.jxclient.skin;
+package com.realtime.crossfire.jxclient.skin.io;
 
 import com.realtime.crossfire.jxclient.commands.Commands;
 import com.realtime.crossfire.jxclient.commands.Macros;
@@ -91,6 +91,14 @@ import com.realtime.crossfire.jxclient.skin.events.CrossfireMagicmapSkinEvent;
 import com.realtime.crossfire.jxclient.skin.events.MapscrollSkinEvent;
 import com.realtime.crossfire.jxclient.skin.events.SkillAddedSkinEvent;
 import com.realtime.crossfire.jxclient.skin.events.SkillRemovedSkinEvent;
+import com.realtime.crossfire.jxclient.skin.factory.CheckBoxFactory;
+import com.realtime.crossfire.jxclient.skin.factory.DialogFactory;
+import com.realtime.crossfire.jxclient.skin.factory.TextButtonFactory;
+import com.realtime.crossfire.jxclient.skin.skin.Dialogs;
+import com.realtime.crossfire.jxclient.skin.skin.JXCSkin;
+import com.realtime.crossfire.jxclient.skin.skin.JXCSkinCache;
+import com.realtime.crossfire.jxclient.skin.skin.JXCSkinException;
+import com.realtime.crossfire.jxclient.skin.source.JXCSkinSource;
 import com.realtime.crossfire.jxclient.spells.CurrentSpellManager;
 import com.realtime.crossfire.jxclient.spells.SpellsManager;
 import com.realtime.crossfire.jxclient.stats.Stats;
