@@ -25,6 +25,7 @@ import com.realtime.crossfire.jxclient.gui.gui.ActivatableGUIElement;
 import com.realtime.crossfire.jxclient.gui.gui.GUIElement;
 import com.realtime.crossfire.jxclient.gui.gui.Gui;
 import com.realtime.crossfire.jxclient.gui.gui.GuiAutoCloseListener;
+import com.realtime.crossfire.jxclient.gui.gui.GUIElementListener;
 import com.realtime.crossfire.jxclient.gui.log.Buffer;
 import com.realtime.crossfire.jxclient.gui.log.GUILog;
 import com.realtime.crossfire.jxclient.gui.log.GUIMessageLog;
@@ -248,7 +249,20 @@ public class JXCWindowRenderer
         {
             // ignore
         }
+    };
 
+    /**
+     * The {@link GUIElementListener} attached to all {@link GUIElement}s.
+     */
+    @NotNull
+    private final GUIElementListener elementListener = new GUIElementListener()
+    {
+        /** {@inheritDoc} */
+        @Override
+        public void mouseClicked(@NotNull final Gui gui)
+        {
+            raiseDialog(gui);
+        }
     };
 
     /**
@@ -886,6 +900,13 @@ public class JXCWindowRenderer
     {
         final GUILog buffer = gui.getFirstElement(GUIMessageLog.class);
         return buffer == null ? null : buffer.getBuffer();
+    }
+
+    @Deprecated
+    @NotNull
+    public GUIElementListener getElementListener()
+    {
+        return elementListener;
     }
 
     /**

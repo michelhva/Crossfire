@@ -21,8 +21,8 @@
 
 package com.realtime.crossfire.jxclient.gui.log;
 
+import com.realtime.crossfire.jxclient.gui.gui.GUIElementListener;
 import com.realtime.crossfire.jxclient.gui.gui.TooltipManager;
-import com.realtime.crossfire.jxclient.window.JXCWindowRenderer;
 import java.awt.Color;
 import java.awt.Image;
 import org.jetbrains.annotations.NotNull;
@@ -53,7 +53,7 @@ public class GUILabelLog extends GUILog
     /**
      * Creates a new instance.
      * @param tooltipManager the tooltip manager to update
-     * @param windowRenderer the window renderer to notify
+     * @param elementListener the element listener to notify
      * @param name the name of this element
      * @param x the x-coordinate for drawing this element to screen
      * @param y the y-coordinate for drawing this element to screen
@@ -65,9 +65,9 @@ public class GUILabelLog extends GUILog
      * @param defaultColor the default color to use for text message not
      * specifying a color
      */
-    public GUILabelLog(@NotNull final TooltipManager tooltipManager, @NotNull final JXCWindowRenderer windowRenderer, @NotNull final String name, final int x, final int y, final int w, final int h, @NotNull final Image backgroundImage, @NotNull final Fonts fonts, @NotNull final Color defaultColor)
+    public GUILabelLog(@NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final String name, final int x, final int y, final int w, final int h, @NotNull final Image backgroundImage, @NotNull final Fonts fonts, @NotNull final Color defaultColor)
     {
-        super(tooltipManager, windowRenderer, name, x, y, w, h, backgroundImage, fonts);
+        super(tooltipManager, elementListener, name, x, y, w, h, backgroundImage, fonts);
         this.defaultColor = defaultColor;
     }
 

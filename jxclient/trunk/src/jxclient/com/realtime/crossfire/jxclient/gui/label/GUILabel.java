@@ -21,8 +21,8 @@
 
 package com.realtime.crossfire.jxclient.gui.label;
 
+import com.realtime.crossfire.jxclient.gui.gui.GUIElementListener;
 import com.realtime.crossfire.jxclient.gui.gui.TooltipManager;
-import com.realtime.crossfire.jxclient.window.JXCWindowRenderer;
 import java.awt.Color;
 import java.awt.Font;
 import java.awt.Graphics2D;
@@ -81,7 +81,7 @@ public abstract class GUILabel extends AbstractLabel
      *
      * @param tooltipManager the tooltip manager to update
      *
-     * @param windowRenderer the window renderer to notify
+     * @param elementListener the element listener to notify
      *
      * @param name The name of this element.
      *
@@ -104,9 +104,9 @@ public abstract class GUILabel extends AbstractLabel
      *
      * @param textAlignment The text alignment.
      */
-    protected GUILabel(@NotNull final TooltipManager tooltipManager, @NotNull final JXCWindowRenderer windowRenderer, @NotNull final String name, final int x, final int y, final int w, final int h, @Nullable final BufferedImage picture, @Nullable final Font textFont, @NotNull final Color textColor, @NotNull final Color backgroundColor, @NotNull final Alignment textAlignment)
+    protected GUILabel(@NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final String name, final int x, final int y, final int w, final int h, @Nullable final BufferedImage picture, @Nullable final Font textFont, @NotNull final Color textColor, @NotNull final Color backgroundColor, @NotNull final Alignment textAlignment)
     {
-        super(tooltipManager, windowRenderer, name, x, y, w, h, picture, backgroundColor);
+        super(tooltipManager, elementListener, name, x, y, w, h, picture, backgroundColor);
         this.textFont = textFont;
         this.textColor = textColor;
         this.textAlignment = textAlignment;

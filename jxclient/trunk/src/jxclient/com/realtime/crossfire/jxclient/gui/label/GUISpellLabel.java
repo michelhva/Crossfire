@@ -22,11 +22,11 @@
 package com.realtime.crossfire.jxclient.gui.label;
 
 import com.realtime.crossfire.jxclient.faces.FacesManager;
+import com.realtime.crossfire.jxclient.gui.gui.GUIElementListener;
 import com.realtime.crossfire.jxclient.gui.gui.TooltipManager;
 import com.realtime.crossfire.jxclient.spells.CurrentSpellManager;
 import com.realtime.crossfire.jxclient.spells.CurrentSpellManagerListener;
 import com.realtime.crossfire.jxclient.spells.Spell;
-import com.realtime.crossfire.jxclient.window.JXCWindowRenderer;
 import java.awt.Color;
 import java.awt.Font;
 import java.awt.image.BufferedImage;
@@ -155,7 +155,7 @@ public class GUISpellLabel extends GUIHTMLLabel
      *
      * @param tooltipManager the tooltip manager to update
      *
-     * @param windowRenderer the window renderer to notify
+     * @param elementListener the element listener to notify
      *
      * @param name The gui element name.
      *
@@ -178,9 +178,9 @@ public class GUISpellLabel extends GUIHTMLLabel
      *
      * @param currentSpellManager The current spell manager to track.
      */
-    public GUISpellLabel(@NotNull final TooltipManager tooltipManager, @NotNull final JXCWindowRenderer windowRenderer, @NotNull final String name, final int x, final int y, final int w, final int h, @Nullable final BufferedImage picture, @NotNull final FacesManager facesManager, @Nullable final Font font, @NotNull final Type type, @NotNull final CurrentSpellManager currentSpellManager)
+    public GUISpellLabel(@NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final String name, final int x, final int y, final int w, final int h, @Nullable final BufferedImage picture, @NotNull final FacesManager facesManager, @Nullable final Font font, @NotNull final Type type, @NotNull final CurrentSpellManager currentSpellManager)
     {
-        super(tooltipManager, windowRenderer, name, x, y, w, h, picture, font, Color.WHITE, new Color(0, 0, 0, 0F), "");
+        super(tooltipManager, elementListener, name, x, y, w, h, picture, font, Color.WHITE, new Color(0, 0, 0, 0F), "");
         this.facesManager = facesManager;
         this.type = type;
         this.currentSpellManager = currentSpellManager;

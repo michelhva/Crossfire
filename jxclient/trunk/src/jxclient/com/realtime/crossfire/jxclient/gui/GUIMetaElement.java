@@ -22,13 +22,13 @@
 package com.realtime.crossfire.jxclient.gui;
 
 import com.realtime.crossfire.jxclient.gui.gui.ActivatableGUIElement;
+import com.realtime.crossfire.jxclient.gui.gui.GUIElementListener;
 import com.realtime.crossfire.jxclient.gui.gui.TooltipManager;
 import com.realtime.crossfire.jxclient.gui.scrollable.GUIScrollable;
 import com.realtime.crossfire.jxclient.metaserver.Metaserver;
 import com.realtime.crossfire.jxclient.metaserver.MetaserverEntry;
 import com.realtime.crossfire.jxclient.metaserver.MetaserverEntryListener;
 import com.realtime.crossfire.jxclient.metaserver.MetaserverModel;
-import com.realtime.crossfire.jxclient.window.JXCWindowRenderer;
 import java.awt.Color;
 import java.awt.Font;
 import java.awt.Graphics;
@@ -115,7 +115,7 @@ public class GUIMetaElement extends ActivatableGUIElement implements GUIScrollab
     /**
      * Creates a new instance.
      * @param tooltipManager the tooltip manager to update
-     * @param windowRenderer the window renderer to notify
+     * @param elementListener the element listener to notify
      * @param metaserverModel the metaserver model to monitor
      * @param name the name of this element
      * @param w the width for drawing this element to screen
@@ -127,9 +127,9 @@ public class GUIMetaElement extends ActivatableGUIElement implements GUIScrollab
      * @param format the format used to display metaserver instances
      * @param tooltip the format used for displaying tooltips
      */
-    public GUIMetaElement(@NotNull final TooltipManager tooltipManager, @NotNull final JXCWindowRenderer windowRenderer, @NotNull final MetaserverModel metaserverModel, @NotNull final String name, final int w, final int h, @Nullable final Image tcpImage, @NotNull final Font font, final int defaultIndex, @NotNull final String format, @NotNull final String tooltip)
+    public GUIMetaElement(@NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final MetaserverModel metaserverModel, @NotNull final String name, final int w, final int h, @Nullable final Image tcpImage, @NotNull final Font font, final int defaultIndex, @NotNull final String format, @NotNull final String tooltip)
     {
-        super(tooltipManager, windowRenderer, name, 0, 0, w, h, Transparency.TRANSLUCENT);
+        super(tooltipManager, elementListener, name, 0, 0, w, h, Transparency.TRANSLUCENT);
         this.metaserverModel = metaserverModel;
         this.tcpImage = tcpImage;
         this.font = font;

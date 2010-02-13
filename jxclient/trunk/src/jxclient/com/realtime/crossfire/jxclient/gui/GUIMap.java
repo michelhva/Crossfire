@@ -24,6 +24,7 @@ package com.realtime.crossfire.jxclient.gui;
 import com.realtime.crossfire.jxclient.faces.Face;
 import com.realtime.crossfire.jxclient.faces.FacesManager;
 import com.realtime.crossfire.jxclient.gui.gui.GUIElement;
+import com.realtime.crossfire.jxclient.gui.gui.GUIElementListener;
 import com.realtime.crossfire.jxclient.gui.gui.TooltipManager;
 import com.realtime.crossfire.jxclient.map.CfMap;
 import com.realtime.crossfire.jxclient.map.CfMapSquare;
@@ -34,7 +35,6 @@ import com.realtime.crossfire.jxclient.mapupdater.NewmapListener;
 import com.realtime.crossfire.jxclient.server.CrossfireMap2Command;
 import com.realtime.crossfire.jxclient.server.CrossfireServerConnection;
 import com.realtime.crossfire.jxclient.server.MapSizeListener;
-import com.realtime.crossfire.jxclient.window.JXCWindowRenderer;
 import java.awt.Color;
 import java.awt.Graphics;
 import java.awt.GraphicsConfiguration;
@@ -330,7 +330,7 @@ public class GUIMap extends GUIElement
     /**
      * Creates a new instance.
      * @param tooltipManager the tooltip manager to update
-     * @param windowRenderer the window renderer to notify
+     * @param elementListener the element listener to notify
      * @param name the name of this element
      * @param x the x-coordinate for drawing this element to screen
      * @param y the y-coordinate for drawing this element to screen
@@ -342,9 +342,9 @@ public class GUIMap extends GUIElement
      * @param tileSize the size of one tile in pixels
      * @throws IOException tf an I/O error occurs
      */
-    public GUIMap(@NotNull final TooltipManager tooltipManager, @NotNull final JXCWindowRenderer windowRenderer, @NotNull final String name, final int tileSize, final int x, final int y, final int w, final int h, @NotNull final CrossfireServerConnection crossfireServerConnection, @NotNull final FacesManager facesManager, @NotNull final CfMapUpdater mapUpdater) throws IOException
+    public GUIMap(@NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final String name, final int tileSize, final int x, final int y, final int w, final int h, @NotNull final CrossfireServerConnection crossfireServerConnection, @NotNull final FacesManager facesManager, @NotNull final CfMapUpdater mapUpdater) throws IOException
     {
-        super(tooltipManager, windowRenderer, name, x, y, w, h, Transparency.OPAQUE);
+        super(tooltipManager, elementListener, name, x, y, w, h, Transparency.OPAQUE);
         this.crossfireServerConnection = crossfireServerConnection;
         this.facesManager = facesManager;
         this.mapUpdater = mapUpdater;

@@ -21,6 +21,7 @@
 
 package com.realtime.crossfire.jxclient.gui;
 
+import com.realtime.crossfire.jxclient.gui.gui.GUIElementListener;
 import com.realtime.crossfire.jxclient.gui.gui.Gui;
 import com.realtime.crossfire.jxclient.gui.gui.TooltipManager;
 import com.realtime.crossfire.jxclient.window.JXCWindowRenderer;
@@ -60,7 +61,9 @@ public class GUIDialogTitle extends GUIPicture
      *
      * @param tooltipManager the tooltip manager to update
      *
-     * @param windowRenderer the window renderer to notify
+     * @param windowRenderer the window renderer this element belongs to
+     *
+     * @param elementListener the element listener to notify
      *
      * @param name The name of this element.
      *
@@ -78,9 +81,9 @@ public class GUIDialogTitle extends GUIPicture
      *
      * @param alpha The transparency value.
      */
-    public GUIDialogTitle(@NotNull final TooltipManager tooltipManager, @NotNull final JXCWindowRenderer windowRenderer, @NotNull final String name, final int x, final int y, final int w, final int h, @NotNull final BufferedImage image, final float alpha)
+    public GUIDialogTitle(@NotNull final TooltipManager tooltipManager, @NotNull final JXCWindowRenderer windowRenderer, @NotNull final GUIElementListener elementListener, @NotNull final String name, final int x, final int y, final int w, final int h, @NotNull final BufferedImage image, final float alpha)
     {
-        super(tooltipManager, windowRenderer, name, x, y, w, h, image, alpha);
+        super(tooltipManager, elementListener, name, x, y, w, h, image, alpha);
         this.windowRenderer = windowRenderer;
     }
 

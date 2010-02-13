@@ -23,9 +23,9 @@ package com.realtime.crossfire.jxclient.gui.item;
 
 import com.realtime.crossfire.jxclient.gui.gui.ActivatableGUIElement;
 import com.realtime.crossfire.jxclient.gui.gui.GUIElement;
+import com.realtime.crossfire.jxclient.gui.gui.GUIElementListener;
 import com.realtime.crossfire.jxclient.gui.gui.TooltipManager;
 import com.realtime.crossfire.jxclient.gui.scrollable.GUIScrollable;
-import com.realtime.crossfire.jxclient.window.JXCWindowRenderer;
 import java.awt.Transparency;
 import java.awt.event.MouseEvent;
 import org.jetbrains.annotations.NotNull;
@@ -45,7 +45,7 @@ public abstract class GUIItem extends ActivatableGUIElement implements GUIScroll
     /**
      * Creates a new instance.
      * @param tooltipManager the tooltip manager to update
-     * @param windowRenderer the window renderer to notify
+     * @param elementListener the element listener to notify
      * @param name the name of this element
      * @param x the x-coordinate for drawing this element to screen; it is
      * relative to <code>gui</code>
@@ -54,9 +54,9 @@ public abstract class GUIItem extends ActivatableGUIElement implements GUIScroll
      * @param w the width for drawing this element to screen
      * @param h the height for drawing this element to screen
      */
-    protected GUIItem(@NotNull final TooltipManager tooltipManager, @NotNull final JXCWindowRenderer windowRenderer, @NotNull final String name, final int x, final int y, final int w, final int h)
+    protected GUIItem(@NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final String name, final int x, final int y, final int w, final int h)
     {
-        super(tooltipManager, windowRenderer, name, x, y, w, h, Transparency.TRANSLUCENT);
+        super(tooltipManager, elementListener, name, x, y, w, h, Transparency.TRANSLUCENT);
     }
 
     /** {@inheritDoc} */

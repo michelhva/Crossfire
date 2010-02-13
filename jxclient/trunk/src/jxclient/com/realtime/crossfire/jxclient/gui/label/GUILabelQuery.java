@@ -21,10 +21,10 @@
 
 package com.realtime.crossfire.jxclient.gui.label;
 
+import com.realtime.crossfire.jxclient.gui.gui.GUIElementListener;
 import com.realtime.crossfire.jxclient.gui.gui.TooltipManager;
 import com.realtime.crossfire.jxclient.server.CrossfireQueryListener;
 import com.realtime.crossfire.jxclient.server.CrossfireServerConnection;
-import com.realtime.crossfire.jxclient.window.JXCWindowRenderer;
 import java.awt.Color;
 import java.awt.Font;
 import org.jetbrains.annotations.NotNull;
@@ -66,7 +66,7 @@ public class GUILabelQuery extends GUIMultiLineLabel
      *
      * @param tooltipManager the tooltip manager to update
      *
-     * @param windowRenderer the window renderer to notify
+     * @param elementListener the element listener to notify
      *
      * @param name The name of this element.
      *
@@ -86,9 +86,9 @@ public class GUILabelQuery extends GUIMultiLineLabel
      *
      * @param backgroundColor The background color.
      */
-    public GUILabelQuery(@NotNull final TooltipManager tooltipManager, @NotNull final JXCWindowRenderer windowRenderer, @NotNull final String name, final int x, final int y, final int w, final int h, @NotNull final CrossfireServerConnection crossfireServerConnection, @NotNull final Font font, @NotNull final Color color, @NotNull final Color backgroundColor)
+    public GUILabelQuery(@NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final String name, final int x, final int y, final int w, final int h, @NotNull final CrossfireServerConnection crossfireServerConnection, @NotNull final Font font, @NotNull final Color color, @NotNull final Color backgroundColor)
     {
-        super(tooltipManager, windowRenderer, name, x, y, w, h, null, font, color, backgroundColor, Alignment.LEFT, "");
+        super(tooltipManager, elementListener, name, x, y, w, h, null, font, color, backgroundColor, Alignment.LEFT, "");
         this.crossfireServerConnection = crossfireServerConnection;
         this.crossfireServerConnection.addCrossfireQueryListener(crossfireQueryListener);
     }

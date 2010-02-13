@@ -23,6 +23,7 @@ package com.realtime.crossfire.jxclient.gui.list;
 
 import com.realtime.crossfire.jxclient.gui.GUIMetaElement;
 import com.realtime.crossfire.jxclient.gui.gui.GUIElement;
+import com.realtime.crossfire.jxclient.gui.gui.GUIElementListener;
 import com.realtime.crossfire.jxclient.gui.gui.TooltipManager;
 import com.realtime.crossfire.jxclient.gui.label.AbstractLabel;
 import com.realtime.crossfire.jxclient.gui.textinput.GUIText;
@@ -31,7 +32,6 @@ import com.realtime.crossfire.jxclient.metaserver.MetaserverEntry;
 import com.realtime.crossfire.jxclient.metaserver.MetaserverEntryListener;
 import com.realtime.crossfire.jxclient.metaserver.MetaserverListener;
 import com.realtime.crossfire.jxclient.metaserver.MetaserverModel;
-import com.realtime.crossfire.jxclient.window.JXCWindowRenderer;
 import java.awt.Font;
 import java.awt.image.BufferedImage;
 import org.jetbrains.annotations.NotNull;
@@ -61,10 +61,10 @@ public class GUIMetaElementList extends GUIList
     private final TooltipManager tooltipManager;
 
     /**
-     * The {@link JXCWindowRenderer} to use.
+     * The {@link GUIElementListener} to use.
      */
     @NotNull
-    private final JXCWindowRenderer windowRenderer;
+    private final GUIElementListener elementListener;
 
     /**
      * The name of this element.
@@ -141,7 +141,7 @@ public class GUIMetaElementList extends GUIList
     /**
      * Creates a new instance.
      * @param tooltipManager the tooltip manager to update
-     * @param windowRenderer the window renderer to notify
+     * @param elementListener the element listener to notify
      * @param name the name of this element
      * @param x the x-coordinate for drawing this element to screen; it is
      * relative to <code>gui</code>
@@ -159,12 +159,12 @@ public class GUIMetaElementList extends GUIList
      * <code>null</code>
      * @param comment the comment field to update; may be <code>null</code>
      */
-    public GUIMetaElementList(@NotNull final TooltipManager tooltipManager, @NotNull final JXCWindowRenderer windowRenderer, @NotNull final String name, final int x, final int y, final int w, final int h, final int cellHeight, @NotNull final MetaserverModel metaserverModel, @Nullable final BufferedImage tcpImage, @NotNull final Font font, @NotNull final String format, @NotNull final String tooltip, @Nullable final GUIText hostname, @Nullable final AbstractLabel comment)
+    public GUIMetaElementList(@NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final String name, final int x, final int y, final int w, final int h, final int cellHeight, @NotNull final MetaserverModel metaserverModel, @Nullable final BufferedImage tcpImage, @NotNull final Font font, @NotNull final String format, @NotNull final String tooltip, @Nullable final GUIText hostname, @Nullable final AbstractLabel comment)
     {
-        super(tooltipManager, windowRenderer, name, x, y, w, h, cellHeight, new MetaElementCellRenderer(new GUIMetaElement(tooltipManager, windowRenderer, metaserverModel, name+"_template", w, cellHeight, tcpImage, font, 0, format, tooltip)));
+        super(tooltipManager, elementListener, name, x, y, w, h, cellHeight, new MetaElementCellRenderer(new GUIMetaElement(tooltipManager, elementListener, metaserverModel, name+"_template", w, cellHeight, tcpImage, font, 0, format, tooltip)));
         this.metaserverModel = metaserverModel;
         this.tooltipManager = tooltipManager;
-        this.windowRenderer = windowRenderer;
+        this.elementListener = elementListener;
         this.name = name;
         this.tcpImage = tcpImage;
         this.font = font;
@@ -201,7 +201,7 @@ public class GUIMetaElementList extends GUIList
             {
                 for (int i = oldSize; i < newSize; i++)
                 {
-                    final GUIElement metaElement = new GUIMetaElement(tooltipManager, windowRenderer, metaserverModel, name+i, 1, 1, tcpImage, font, i, format, tooltip);
+                    final GUIElement metaElement = new GUIMetaElement(tooltipManager, elementListener, metaserverModel, name+i, 1, 1, tcpImage, font, i, format, tooltip);
                     addElement(metaElement);
                     metaserverModel.addMetaserverEntryListener(i, metaserverEntryListener);
                 }

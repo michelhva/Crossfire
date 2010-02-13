@@ -23,9 +23,9 @@ package com.realtime.crossfire.jxclient.skin;
 
 import com.realtime.crossfire.jxclient.gui.GUICheckBox;
 import com.realtime.crossfire.jxclient.gui.gui.GUIElement;
+import com.realtime.crossfire.jxclient.gui.gui.GUIElementListener;
 import com.realtime.crossfire.jxclient.gui.gui.TooltipManager;
 import com.realtime.crossfire.jxclient.settings.options.CheckBoxOption;
-import com.realtime.crossfire.jxclient.window.JXCWindowRenderer;
 import java.awt.Color;
 import java.awt.Font;
 import java.awt.image.BufferedImage;
@@ -86,7 +86,7 @@ public class CheckBoxFactory
      *
      * @param tooltipManager the tooltip manager to update
      *
-     * @param windowRenderer the window renderer to notify
+     * @param elementListener the element listener to notify
      *
      * @param name The name of this element.
      *
@@ -107,8 +107,8 @@ public class CheckBoxFactory
      * @return The new checkbox.
      */
     @NotNull
-    public GUIElement newCheckBox(@NotNull final TooltipManager tooltipManager, @NotNull final JXCWindowRenderer windowRenderer, @NotNull final String name, final int x, final int y, final int w, final int h, @NotNull final CheckBoxOption option, @NotNull final String text)
+    public GUIElement newCheckBox(@NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final String name, final int x, final int y, final int w, final int h, @NotNull final CheckBoxOption option, @NotNull final String text)
     {
-            return new GUICheckBox(tooltipManager, windowRenderer, name, x, y, w, h, checked, unchecked, font, color, option, text);
+            return new GUICheckBox(tooltipManager, elementListener, name, x, y, w, h, checked, unchecked, font, color, option, text);
     }
 }

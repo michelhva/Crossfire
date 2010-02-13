@@ -22,8 +22,8 @@
 package com.realtime.crossfire.jxclient.gui.gauge;
 
 import com.realtime.crossfire.jxclient.gui.gui.GUIElement;
+import com.realtime.crossfire.jxclient.gui.gui.GUIElementListener;
 import com.realtime.crossfire.jxclient.gui.gui.TooltipManager;
-import com.realtime.crossfire.jxclient.window.JXCWindowRenderer;
 import java.awt.Color;
 import java.awt.Graphics;
 import java.awt.Graphics2D;
@@ -82,7 +82,7 @@ public class GUIGauge extends GUIElement implements GUIGaugeListener
     /**
      * Creates a new instance.
      * @param tooltipManager the tooltip manager to update
-     * @param windowRenderer the window renderer to notify
+     * @param elementListener the element listener to notify
      * @param name the name of this element
      * @param x the x-coordinate for drawing this element to screen; it is
      * relative to <code>gui</code>
@@ -99,9 +99,9 @@ public class GUIGauge extends GUIElement implements GUIGaugeListener
      * @param tooltipPrefix the prefix for displaying tooltips; if set to
      * <code>null</code> no tooltips are shown
      */
-    public GUIGauge(@NotNull final TooltipManager tooltipManager, @NotNull final JXCWindowRenderer windowRenderer, @NotNull final String name, final int x, final int y, final int w, final int h, @Nullable final BufferedImage fullImage, @Nullable final BufferedImage negativeImage, @Nullable final BufferedImage emptyImage, @NotNull final Orientation orientation, @Nullable final String tooltipPrefix)
+    public GUIGauge(@NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final String name, final int x, final int y, final int w, final int h, @Nullable final BufferedImage fullImage, @Nullable final BufferedImage negativeImage, @Nullable final BufferedImage emptyImage, @NotNull final Orientation orientation, @Nullable final String tooltipPrefix)
     {
-        super(tooltipManager, windowRenderer, name, x, y, w, h, Transparency.TRANSLUCENT);
+        super(tooltipManager, elementListener, name, x, y, w, h, Transparency.TRANSLUCENT);
         checkSize(fullImage, "full", w, h);
         checkSize(negativeImage, "negative", w, h);
         checkSize(emptyImage, "empty", w, h);

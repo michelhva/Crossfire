@@ -21,7 +21,6 @@
 
 package com.realtime.crossfire.jxclient.gui.gui;
 
-import com.realtime.crossfire.jxclient.window.JXCWindowRenderer;
 import java.awt.Dimension;
 import java.awt.Graphics;
 import java.awt.Graphics2D;
@@ -103,10 +102,10 @@ public abstract class GUIElement extends JPanel
     private final TooltipManager tooltipManager;
 
     /**
-     * The {@link JXCWindowRenderer} to notify.
+     * The {@link GUIElementListener} to notify.
      */
     @NotNull
-    private final JXCWindowRenderer windowRenderer;
+    private final GUIElementListener elementListener;
 
     /**
      * The tooltip text to show when the mouse is inside this element. May be
@@ -120,7 +119,7 @@ public abstract class GUIElement extends JPanel
      *
      * @param tooltipManager the tooltip manager to update
      *
-     * @param windowRenderer the window renderer to notify
+     * @param elementListener the element listener to notify
      *
      * @param name The name of this element.
      *
@@ -136,11 +135,11 @@ public abstract class GUIElement extends JPanel
      *
      * @param transparency The transparency value for the backing buffer
      */
-    protected GUIElement(@NotNull final TooltipManager tooltipManager, @NotNull final JXCWindowRenderer windowRenderer, @NotNull final String name, final int x, final int y, final int w, final int h, final int transparency)
+    protected GUIElement(@NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final String name, final int x, final int y, final int w, final int h, final int transparency)
     {
         super(false);
         this.tooltipManager = tooltipManager;
-        this.windowRenderer = windowRenderer;
+        this.elementListener = elementListener;
         this.name = name;
         this.transparency = transparency;
         setOpaque(true);
@@ -265,7 +264,7 @@ public abstract class GUIElement extends JPanel
      */
     public void mouseClicked(@NotNull final MouseEvent e)
     {
-        windowRenderer.raiseDialog(gui);
+        elementListener.mouseClicked(gui);
     }
 
     /**

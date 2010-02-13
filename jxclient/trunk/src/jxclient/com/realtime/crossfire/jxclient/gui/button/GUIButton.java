@@ -21,9 +21,9 @@
 
 package com.realtime.crossfire.jxclient.gui.button;
 
+import com.realtime.crossfire.jxclient.gui.gui.GUIElementListener;
 import com.realtime.crossfire.jxclient.gui.gui.TooltipManager;
 import com.realtime.crossfire.jxclient.window.GUICommandList;
-import com.realtime.crossfire.jxclient.window.JXCWindowRenderer;
 import java.awt.Color;
 import java.awt.Font;
 import java.awt.Graphics;
@@ -65,9 +65,9 @@ public class GUIButton extends AbstractButton
     @Nullable
     private final Color color;
 
-    public GUIButton(@NotNull final TooltipManager tooltipManager, @NotNull final JXCWindowRenderer windowRenderer, @NotNull final String name, final int x, final int y, final int w, final int h, @NotNull final BufferedImage imageUp, @NotNull final BufferedImage imageDown, @Nullable final String text, @Nullable final Font font, @Nullable final Color color, final int textX, final int textY, final boolean autoRepeat, @NotNull final GUICommandList commandList)
+    public GUIButton(@NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final String name, final int x, final int y, final int w, final int h, @NotNull final BufferedImage imageUp, @NotNull final BufferedImage imageDown, @Nullable final String text, @Nullable final Font font, @Nullable final Color color, final int textX, final int textY, final boolean autoRepeat, @NotNull final GUICommandList commandList)
     {
-        super(tooltipManager, windowRenderer, name, x, y, w, h, Transparency.TRANSLUCENT, autoRepeat, commandList);
+        super(tooltipManager, elementListener, name, x, y, w, h, Transparency.TRANSLUCENT, autoRepeat, commandList);
         if (imageUp.getWidth() != imageDown.getWidth()) throw new IllegalArgumentException();
         if (imageUp.getHeight() != imageDown.getHeight()) throw new IllegalArgumentException();
         this.imageUp = imageUp;

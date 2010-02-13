@@ -26,11 +26,11 @@ import com.realtime.crossfire.jxclient.faces.Face;
 import com.realtime.crossfire.jxclient.faces.FacesManager;
 import com.realtime.crossfire.jxclient.faces.FacesManagerListener;
 import com.realtime.crossfire.jxclient.gui.gui.GUIElement;
+import com.realtime.crossfire.jxclient.gui.gui.GUIElementListener;
 import com.realtime.crossfire.jxclient.gui.gui.TooltipManager;
 import com.realtime.crossfire.jxclient.items.CfItem;
 import com.realtime.crossfire.jxclient.items.CfItemListener;
 import com.realtime.crossfire.jxclient.server.CrossfireServerConnection;
-import com.realtime.crossfire.jxclient.window.JXCWindowRenderer;
 import java.awt.Color;
 import java.awt.Graphics;
 import java.awt.Graphics2D;
@@ -115,7 +115,7 @@ public abstract class GUIItemItem extends GUIItem
     /**
      * Creates a new instance.
      * @param tooltipManager the tooltip manager to update
-     * @param windowRenderer the window renderer to notify
+     * @param elementListener the element listener to notify
      * @param name the name of this element
      * @param x the x-coordinate for drawing this element to screen; it is
      * relative to <code>gui</code>
@@ -127,9 +127,9 @@ public abstract class GUIItemItem extends GUIItem
      * @param itemPainter the item painter for painting the icon
      * @param facesManager the faces manager instance to use
      */
-    protected GUIItemItem(@NotNull final TooltipManager tooltipManager, @NotNull final JXCWindowRenderer windowRenderer, @NotNull final String name, final int x, final int y, final int w, final int h, @NotNull final CrossfireServerConnection crossfireServerConnection, @NotNull final ItemPainter itemPainter, @NotNull final FacesManager facesManager)
+    protected GUIItemItem(@NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final String name, final int x, final int y, final int w, final int h, @NotNull final CrossfireServerConnection crossfireServerConnection, @NotNull final ItemPainter itemPainter, @NotNull final FacesManager facesManager)
     {
-        super(tooltipManager, windowRenderer, name, x, y, w, h);
+        super(tooltipManager, elementListener, name, x, y, w, h);
         this.itemPainter = itemPainter;
         this.crossfireServerConnection = crossfireServerConnection;
         this.facesManager = facesManager;

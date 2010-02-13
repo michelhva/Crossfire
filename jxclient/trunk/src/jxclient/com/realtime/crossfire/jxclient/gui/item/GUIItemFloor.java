@@ -24,6 +24,7 @@ package com.realtime.crossfire.jxclient.gui.item;
 
 import com.realtime.crossfire.jxclient.faces.FacesManager;
 import com.realtime.crossfire.jxclient.gui.gui.GUIElement;
+import com.realtime.crossfire.jxclient.gui.gui.GUIElementListener;
 import com.realtime.crossfire.jxclient.gui.gui.TooltipManager;
 import com.realtime.crossfire.jxclient.items.CfItem;
 import com.realtime.crossfire.jxclient.items.CurrentFloorListener;
@@ -32,7 +33,6 @@ import com.realtime.crossfire.jxclient.items.LocationListener;
 import com.realtime.crossfire.jxclient.server.CommandQueue;
 import com.realtime.crossfire.jxclient.server.CrossfireServerConnection;
 import com.realtime.crossfire.jxclient.util.ResourceUtils;
-import com.realtime.crossfire.jxclient.window.JXCWindowRenderer;
 import java.awt.Image;
 import java.io.IOException;
 import java.util.List;
@@ -158,7 +158,7 @@ public class GUIItemFloor extends GUIItemItem
     /**
      * Creates a new instance.
      * @param tooltipManager the tooltip manager to update
-     * @param windowRenderer the window renderer to notify
+     * @param elementListener the element listener to notify
      * @param commandQueue the command queue for sending commands
      * @param name the name of this element
      * @param x the x-coordinate for drawing this element to screen; it is
@@ -174,9 +174,9 @@ public class GUIItemFloor extends GUIItemItem
      * @param facesManager the faces manager instance to use
      * @throws IOException if a resource cannot be found
      */
-    public GUIItemFloor(@NotNull final TooltipManager tooltipManager, @NotNull final JXCWindowRenderer windowRenderer, @NotNull final CommandQueue commandQueue, @NotNull final String name, final int x, final int y, final int w, final int h, @NotNull final ItemPainter itemPainter, final int index, @NotNull final CrossfireServerConnection crossfireServerConnection, @NotNull final ItemsManager itemsManager, @NotNull final FacesManager facesManager) throws IOException
+    public GUIItemFloor(@NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final CommandQueue commandQueue, @NotNull final String name, final int x, final int y, final int w, final int h, @NotNull final ItemPainter itemPainter, final int index, @NotNull final CrossfireServerConnection crossfireServerConnection, @NotNull final ItemsManager itemsManager, @NotNull final FacesManager facesManager) throws IOException
     {
-        super(tooltipManager, windowRenderer, name, x, y, w, h, crossfireServerConnection, itemPainter, facesManager);
+        super(tooltipManager, elementListener, name, x, y, w, h, crossfireServerConnection, itemPainter, facesManager);
         this.commandQueue = commandQueue;
         this.crossfireServerConnection = crossfireServerConnection;
         this.itemsManager = itemsManager;

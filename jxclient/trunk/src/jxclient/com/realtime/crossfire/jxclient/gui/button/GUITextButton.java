@@ -21,9 +21,9 @@
 
 package com.realtime.crossfire.jxclient.gui.button;
 
+import com.realtime.crossfire.jxclient.gui.gui.GUIElementListener;
 import com.realtime.crossfire.jxclient.gui.gui.TooltipManager;
 import com.realtime.crossfire.jxclient.window.GUICommandList;
-import com.realtime.crossfire.jxclient.window.JXCWindowRenderer;
 import java.awt.Color;
 import java.awt.Font;
 import java.awt.Graphics;
@@ -81,7 +81,7 @@ public class GUITextButton extends AbstractButton
      *
      * @param tooltipManager the tooltip manager to update
      *
-     * @param windowRenderer the window renderer to notify
+     * @param elementListener the element listener to notify
      *
      * @param name The name of this element.
      *
@@ -110,9 +110,9 @@ public class GUITextButton extends AbstractButton
      *
      * @param commandList The commands to execute when the button is selected.
      */
-    public GUITextButton(@NotNull final TooltipManager tooltipManager, @NotNull final JXCWindowRenderer windowRenderer, @NotNull final String name, final int x, final int y, final int w, final int h, @NotNull final ButtonImages up, @NotNull final ButtonImages down, @NotNull final String text, @NotNull final Font font, @NotNull final Color color, final boolean autoRepeat, @NotNull final GUICommandList commandList)
+    public GUITextButton(@NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final String name, final int x, final int y, final int w, final int h, @NotNull final ButtonImages up, @NotNull final ButtonImages down, @NotNull final String text, @NotNull final Font font, @NotNull final Color color, final boolean autoRepeat, @NotNull final GUICommandList commandList)
     {
-        super(tooltipManager, windowRenderer, name, x, y, w, h, Transparency.TRANSLUCENT, autoRepeat, commandList);
+        super(tooltipManager, elementListener, name, x, y, w, h, Transparency.TRANSLUCENT, autoRepeat, commandList);
         if (up.getHeight() != h) throw new IllegalArgumentException("'up' state is height "+up.getHeight()+" but button height is "+h);
         if (down.getHeight() != h) throw new IllegalArgumentException("'down' state is height "+up.getHeight()+" but button height is "+h);
         if (up.getMinimumWidth() > w) throw new IllegalArgumentException("minimum width in 'up' state is "+up.getMinimumWidth()+" but button width is "+w);
