@@ -19,11 +19,9 @@
  * Copyright (C) 2006-2010 Andreas Kirschbaum.
  */
 
-package com.realtime.crossfire.jxclient.server;
+package com.realtime.crossfire.jxclient.settings.options;
 
-import com.realtime.crossfire.jxclient.settings.options.Option;
-import com.realtime.crossfire.jxclient.settings.options.OptionException;
-import com.realtime.crossfire.jxclient.settings.options.OptionManager;
+import com.realtime.crossfire.jxclient.server.CommandQueue;
 import java.util.Collection;
 import java.util.LinkedList;
 import org.jetbrains.annotations.NotNull;
