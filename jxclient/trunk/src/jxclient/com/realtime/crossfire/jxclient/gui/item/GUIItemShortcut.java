@@ -25,6 +25,7 @@ package com.realtime.crossfire.jxclient.gui.item;
 import com.realtime.crossfire.jxclient.faces.Face;
 import com.realtime.crossfire.jxclient.faces.FacesManager;
 import com.realtime.crossfire.jxclient.faces.FacesManagerListener;
+import com.realtime.crossfire.jxclient.gui.gui.GUIElementListener;
 import com.realtime.crossfire.jxclient.gui.gui.TooltipManager;
 import com.realtime.crossfire.jxclient.shortcuts.Shortcut;
 import com.realtime.crossfire.jxclient.shortcuts.ShortcutCommand;
@@ -34,7 +35,6 @@ import com.realtime.crossfire.jxclient.shortcuts.Shortcuts;
 import com.realtime.crossfire.jxclient.shortcuts.ShortcutsListener;
 import com.realtime.crossfire.jxclient.spells.CurrentSpellManager;
 import com.realtime.crossfire.jxclient.spells.Spell;
-import com.realtime.crossfire.jxclient.window.JXCWindowRenderer;
 import java.awt.Color;
 import java.awt.Font;
 import java.awt.Graphics;
@@ -161,9 +161,9 @@ public class GUIItemShortcut extends GUIItem
         }
     };
 
-    public GUIItemShortcut(@NotNull final TooltipManager tooltipManager, @NotNull final JXCWindowRenderer windowRenderer, @NotNull final String name, final int x, final int y, final int w, final int h, @Nullable final Color cursedColor, @Nullable final Image cursedImage, @Nullable final Color appliedColor, @Nullable final Image appliedImage, final int index, @NotNull final FacesManager facesManager, @NotNull final Shortcuts shortcuts, @NotNull final Font font, @NotNull final CurrentSpellManager currentSpellManager)
+    public GUIItemShortcut(@NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final String name, final int x, final int y, final int w, final int h, @Nullable final Color cursedColor, @Nullable final Image cursedImage, @Nullable final Color appliedColor, @Nullable final Image appliedImage, final int index, @NotNull final FacesManager facesManager, @NotNull final Shortcuts shortcuts, @NotNull final Font font, @NotNull final CurrentSpellManager currentSpellManager)
     {
-        super(tooltipManager, windowRenderer, name, x, y, w, h);
+        super(tooltipManager, elementListener, name, x, y, w, h);
         this.shortcuts = shortcuts;
         this.facesManager = facesManager;
         this.cursedColor = cursedColor;

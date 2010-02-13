@@ -22,11 +22,11 @@
 package com.realtime.crossfire.jxclient.gui.button;
 
 import com.realtime.crossfire.jxclient.gui.gui.ActivatableGUIElement;
+import com.realtime.crossfire.jxclient.gui.gui.GUIElementListener;
 import com.realtime.crossfire.jxclient.gui.gui.TooltipManager;
 import com.realtime.crossfire.jxclient.timeouts.TimeoutEvent;
 import com.realtime.crossfire.jxclient.timeouts.Timeouts;
 import com.realtime.crossfire.jxclient.window.GUICommandList;
-import com.realtime.crossfire.jxclient.window.JXCWindowRenderer;
 import java.awt.event.MouseEvent;
 import org.jetbrains.annotations.NotNull;
 
@@ -80,7 +80,7 @@ public abstract class AbstractButton extends ActivatableGUIElement
      *
      * @param tooltipManager the tooltip manager to update
      *
-     * @param windowRenderer the window renderer to notify
+     * @param elementListener the element listener to notify
      *
      * @param name The name of this element.
      *
@@ -99,9 +99,9 @@ public abstract class AbstractButton extends ActivatableGUIElement
      *
      * @param commandList The commands to execute when the button is elected.
      */
-    protected AbstractButton(@NotNull final TooltipManager tooltipManager, @NotNull final JXCWindowRenderer windowRenderer, @NotNull final String name, final int x, final int y, final int w, final int h, final int transparency, final boolean autoRepeat, @NotNull final GUICommandList commandList)
+    protected AbstractButton(@NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final String name, final int x, final int y, final int w, final int h, final int transparency, final boolean autoRepeat, @NotNull final GUICommandList commandList)
     {
-        super(tooltipManager, windowRenderer, name, x, y, w, h, transparency);
+        super(tooltipManager, elementListener, name, x, y, w, h, transparency);
         if (commandList == null) throw new IllegalArgumentException();
         this.autoRepeat = autoRepeat;
         this.commandList = commandList;

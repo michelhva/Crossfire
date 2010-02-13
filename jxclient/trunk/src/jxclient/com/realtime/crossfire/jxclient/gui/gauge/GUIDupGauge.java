@@ -22,8 +22,8 @@
 package com.realtime.crossfire.jxclient.gui.gauge;
 
 import com.realtime.crossfire.jxclient.gui.gui.GUIElement;
+import com.realtime.crossfire.jxclient.gui.gui.GUIElementListener;
 import com.realtime.crossfire.jxclient.gui.gui.TooltipManager;
-import com.realtime.crossfire.jxclient.window.JXCWindowRenderer;
 import java.awt.Color;
 import java.awt.Graphics;
 import java.awt.Graphics2D;
@@ -99,7 +99,7 @@ public class GUIDupGauge extends GUIElement implements GUIGaugeListener
     /**
      * Creates a new instance.
      * @param tooltipManager the tooltip manager to update
-     * @param windowRenderer the window renderer to notify
+     * @param elementListener the element listener to notify
      * @param name the name of this element
      * @param x the x-coordinate for drawing this element to screen; it is
      * relative to <code>gui</code>
@@ -116,9 +116,9 @@ public class GUIDupGauge extends GUIElement implements GUIGaugeListener
      * @param tooltipPrefix the prefix for displaying tooltips; if set to
      * <code>null</code> no tooltips are shown
      */
-    public GUIDupGauge(@NotNull final TooltipManager tooltipManager, @NotNull final JXCWindowRenderer windowRenderer, @NotNull final String name, final int x, final int y, final int w, final int h, @NotNull final BufferedImage fullImageDiv, @NotNull final BufferedImage fullImageMod, @Nullable final BufferedImage emptyImage, @NotNull final Orientation orientationDiv, @NotNull final Orientation orientationMod, @Nullable final String tooltipPrefix)
+    public GUIDupGauge(@NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final String name, final int x, final int y, final int w, final int h, @NotNull final BufferedImage fullImageDiv, @NotNull final BufferedImage fullImageMod, @Nullable final BufferedImage emptyImage, @NotNull final Orientation orientationDiv, @NotNull final Orientation orientationMod, @Nullable final String tooltipPrefix)
     {
-        super(tooltipManager, windowRenderer, name, x, y, w, h, Transparency.TRANSLUCENT);
+        super(tooltipManager, elementListener, name, x, y, w, h, Transparency.TRANSLUCENT);
         checkSize(fullImageDiv, "full-div", w, h/2);
         checkSize(fullImageMod, "full-mod", w, h/2);
         checkSize(emptyImage, "empty", w, h);

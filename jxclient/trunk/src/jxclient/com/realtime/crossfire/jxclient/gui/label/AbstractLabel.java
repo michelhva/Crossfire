@@ -22,8 +22,8 @@
 package com.realtime.crossfire.jxclient.gui.label;
 
 import com.realtime.crossfire.jxclient.gui.gui.GUIElement;
+import com.realtime.crossfire.jxclient.gui.gui.GUIElementListener;
 import com.realtime.crossfire.jxclient.gui.gui.TooltipManager;
-import com.realtime.crossfire.jxclient.window.JXCWindowRenderer;
 import java.awt.Color;
 import java.awt.Graphics;
 import java.awt.Graphics2D;
@@ -63,9 +63,9 @@ public abstract class AbstractLabel extends GUIElement
     @NotNull
     private final Color backgroundColor;
 
-    protected AbstractLabel(@NotNull final TooltipManager tooltipManager, @NotNull final JXCWindowRenderer windowRenderer, @NotNull final String name, final int x, final int y, final int w, final int h, @Nullable final BufferedImage picture, @NotNull final Color backgroundColor)
+    protected AbstractLabel(@NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final String name, final int x, final int y, final int w, final int h, @Nullable final BufferedImage picture, @NotNull final Color backgroundColor)
     {
-        super(tooltipManager, windowRenderer, name, x, y, w, h, Transparency.TRANSLUCENT);
+        super(tooltipManager, elementListener, name, x, y, w, h, Transparency.TRANSLUCENT);
         backgroundImage = picture == null ? null : new ImageIcon(picture);
         this.backgroundColor = backgroundColor;
     }

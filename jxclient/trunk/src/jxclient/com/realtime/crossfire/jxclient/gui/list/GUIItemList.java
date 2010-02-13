@@ -21,9 +21,9 @@
 
 package com.realtime.crossfire.jxclient.gui.list;
 
+import com.realtime.crossfire.jxclient.gui.gui.GUIElementListener;
 import com.realtime.crossfire.jxclient.gui.gui.TooltipManager;
 import com.realtime.crossfire.jxclient.gui.item.GUIItemItem;
-import com.realtime.crossfire.jxclient.window.JXCWindowRenderer;
 import java.awt.event.MouseEvent;
 import javax.swing.ListCellRenderer;
 import org.jetbrains.annotations.NotNull;
@@ -43,7 +43,7 @@ public abstract class GUIItemList extends GUIList
     /**
      * Creates a new instance.
      * @param tooltipManager the tooltip manager to update
-     * @param windowRenderer the window renderer to notify
+     * @param elementListener the element listener to notify
      * @param name the name of this element
      * @param x the x-coordinate for drawing this element to screen; it is
      * relative to <code>gui</code>
@@ -54,9 +54,9 @@ public abstract class GUIItemList extends GUIList
      * @param cellHeight the height of each cell
      * @param listCellRenderer the renderer for the list
      */
-    protected GUIItemList(@NotNull final TooltipManager tooltipManager, @NotNull final JXCWindowRenderer windowRenderer, @NotNull final String name, final int x, final int y, final int w, final int h, final int cellHeight, @NotNull final ListCellRenderer listCellRenderer)
+    protected GUIItemList(@NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final String name, final int x, final int y, final int w, final int h, final int cellHeight, @NotNull final ListCellRenderer listCellRenderer)
     {
-        super(tooltipManager, windowRenderer, name, x, y, w, h, cellHeight, listCellRenderer);
+        super(tooltipManager, elementListener, name, x, y, w, h, cellHeight, listCellRenderer);
     }
 
     /** {@inheritDoc} */

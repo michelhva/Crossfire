@@ -21,8 +21,8 @@
 
 package com.realtime.crossfire.jxclient.gui.label;
 
+import com.realtime.crossfire.jxclient.gui.gui.GUIElementListener;
 import com.realtime.crossfire.jxclient.gui.gui.TooltipManager;
-import com.realtime.crossfire.jxclient.window.JXCWindowRenderer;
 import java.awt.Color;
 import java.awt.Font;
 import java.awt.Graphics;
@@ -74,9 +74,9 @@ public class GUIHTMLLabel extends AbstractLabel
      */
     private boolean autoResize = false;
 
-    public GUIHTMLLabel(@NotNull final TooltipManager tooltipManager, @NotNull final JXCWindowRenderer windowRenderer, @NotNull final String name, final int x, final int y, final int w, final int h, @Nullable final BufferedImage picture, @Nullable final Font font, @NotNull final Color color, @NotNull final Color backgroundColor, @NotNull final String text)
+    public GUIHTMLLabel(@NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final String name, final int x, final int y, final int w, final int h, @Nullable final BufferedImage picture, @Nullable final Font font, @NotNull final Color color, @NotNull final Color backgroundColor, @NotNull final String text)
     {
-        super(tooltipManager, windowRenderer, name, x, y, w, h, picture, backgroundColor);
+        super(tooltipManager, elementListener, name, x, y, w, h, picture, backgroundColor);
         this.font = font;
         this.color = color;
         setText(text);
