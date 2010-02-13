@@ -175,7 +175,7 @@ public class ParseUtils
             }
             catch (final NumberFormatException ex)
             {
-                ; // ignore
+                // ignore
             }
         }
         return null;
