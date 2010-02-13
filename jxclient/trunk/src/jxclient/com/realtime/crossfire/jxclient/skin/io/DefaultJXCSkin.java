@@ -38,7 +38,6 @@ import com.realtime.crossfire.jxclient.server.CrossfireServerConnection;
 import com.realtime.crossfire.jxclient.settings.options.Option;
 import com.realtime.crossfire.jxclient.settings.options.OptionException;
 import com.realtime.crossfire.jxclient.settings.options.OptionManager;
-import com.realtime.crossfire.jxclient.skills.SkillSet;
 import com.realtime.crossfire.jxclient.skin.events.SkinEvent;
 import com.realtime.crossfire.jxclient.skin.skin.Dialogs;
 import com.realtime.crossfire.jxclient.skin.skin.JXCSkin;
@@ -194,14 +193,13 @@ public class DefaultJXCSkin implements JXCSkin
      * @param optionManager the option manager to use
      * @param itemsManager the items manager instance to use
      * @param experienceTable the experience table to use
-     * @param skillSet the skill set for looking up skill names
      * @param expressionParser the expression parser to use
      * @param selectedResolution the resolution to use
      * @param gaugeUpdaterParser the gauge updater parser for parsing gauge
      * specifications
      * @param dialogs the dialogs to use
      */
-    public DefaultJXCSkin(@NotNull final KeyBindings defaultKeyBindings, @NotNull final OptionManager optionManager, @NotNull final ItemsManager itemsManager, @NotNull final ExperienceTable experienceTable, @NotNull final SkillSet skillSet, @NotNull final ExpressionParser expressionParser, @NotNull final Resolution selectedResolution, @NotNull final GaugeUpdaterParser gaugeUpdaterParser, @NotNull final Dialogs dialogs)
+    public DefaultJXCSkin(@NotNull final KeyBindings defaultKeyBindings, @NotNull final OptionManager optionManager, @NotNull final ItemsManager itemsManager, @NotNull final ExperienceTable experienceTable, @NotNull final ExpressionParser expressionParser, @NotNull final Resolution selectedResolution, @NotNull final GaugeUpdaterParser gaugeUpdaterParser, @NotNull final Dialogs dialogs)
     {
         this.defaultKeyBindings = defaultKeyBindings;
         this.optionManager = optionManager;
