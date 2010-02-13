@@ -302,39 +302,36 @@ public class JXCWindowRenderer
             {
                 // full-screen mode, no display mode change
             }
-            else
+            else if (gd.isDisplayChangeSupported())
             {
-                if (!gd.isDisplayChangeSupported())
+                boolean ok = true;
+                try
                 {
-                    isFullScreen = false;
-                    gd.setFullScreenWindow(null);
-//                    frame.setUndecorated(false); // XXX: cannot be called anymore
-                    // windowed mode
+                    gd.setDisplayMode(displayMode);
+                }
+                catch (final IllegalArgumentException ex)
+                {
+                    ok = false;
+                }
+                if (ok)
+                {
+                    oldDisplayMode = currentDisplayMode;
+                    // full-screen mode, display mode change
                 }
                 else
                 {
-                    boolean ok = true;
-                    try
-                    {
-                        gd.setDisplayMode(displayMode);
-                    }
-                    catch (final IllegalArgumentException ex)
-                    {
-                        ok = false;
-                    }
-                    if (ok)
-                    {
-                        oldDisplayMode = currentDisplayMode;
-                        // full-screen mode, display mode change
-                    }
-                    else
-                    {
-                        isFullScreen = false;
-                        gd.setFullScreenWindow(null);
-//                        frame.setUndecorated(false); // XXX: cannot be called anymore
-                        // windowed mode
-                    }
+                    isFullScreen = false;
+                    gd.setFullScreenWindow(null);
+                    //frame.setUndecorated(false); // XXX: cannot be called anymore
+                    // windowed mode
                 }
+            }
+            else
+            {
+                isFullScreen = false;
+                gd.setFullScreenWindow(null);
+                //frame.setUndecorated(false); // XXX: cannot be called anymore
+                // windowed mode
             }
         }
         else

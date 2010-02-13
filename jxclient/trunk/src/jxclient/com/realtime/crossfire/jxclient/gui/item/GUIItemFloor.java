@@ -127,14 +127,14 @@ public class GUIItemFloor extends GUIItemItem
         @Override
         public void locationModified(final int index, @Nullable final CfItem item)
         {
-            if (containerTag != 0)
+            if (containerTag == 0)
             {
-                assert GUIItemFloor.this.index >= 1;
-                assert index+1 == GUIItemFloor.this.index;
+                assert index == GUIItemFloor.this.index;
             }
             else
             {
-                assert index == GUIItemFloor.this.index;
+                assert GUIItemFloor.this.index >= 1;
+                assert index+1 == GUIItemFloor.this.index;
             }
             setItem(item);
         }
@@ -284,40 +284,34 @@ public class GUIItemFloor extends GUIItemItem
 
         if (this.index >= 0)
         {
-            if (this.containerTag != 0)
+            if (this.containerTag == 0)
             {
-                if (this.index > 0)
-                {
-                    itemsManager.getFloorManager().removeLocationListener(this.index-1, floorLocationListener);
-                }
-                else
-                {
-                    // index 0 is the container itself -- no listener needed
-                }
+                itemsManager.getFloorManager().removeLocationListener(this.index, floorLocationListener);
+            }
+            else if (this.index > 0)
+            {
+                itemsManager.getFloorManager().removeLocationListener(this.index-1, floorLocationListener);
             }
             else
             {
-                itemsManager.getFloorManager().removeLocationListener(this.index, floorLocationListener);
+                // index 0 is the container itself -- no listener needed
             }
         }
         this.index = index;
         this.containerTag = containerTag;
         if (this.index >= 0)
         {
-            if (this.containerTag != 0)
+            if (this.containerTag == 0)
             {
-                if (this.index > 0)
-                {
-                    itemsManager.getFloorManager().addLocationListener(this.index-1, floorLocationListener);
-                }
-                else
-                {
-                    // index 0 is the container itself -- no listener needed
-                }
+                itemsManager.getFloorManager().addLocationListener(this.index, floorLocationListener);
+            }
+            else if (this.index > 0)
+            {
+                itemsManager.getFloorManager().addLocationListener(this.index-1, floorLocationListener);
             }
             else
             {
-                itemsManager.getFloorManager().addLocationListener(this.index, floorLocationListener);
+                // index 0 is the container itself -- no listener needed
             }
         }
 

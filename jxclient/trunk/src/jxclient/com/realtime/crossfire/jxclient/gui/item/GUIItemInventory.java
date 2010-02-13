@@ -190,13 +190,13 @@ public class GUIItemInventory extends GUIItemItem
             return;
         }
 
-        if ((modifiers&InputEvent.SHIFT_DOWN_MASK) != 0)
+        if ((modifiers&InputEvent.SHIFT_DOWN_MASK) == 0)
         {
-            crossfireServerConnection.sendLock(!item.isLocked(), item.getTag());
+            crossfireServerConnection.sendExamine(item.getTag());
         }
         else
         {
-            crossfireServerConnection.sendExamine(item.getTag());
+            crossfireServerConnection.sendLock(!item.isLocked(), item.getTag());
         }
     }
 

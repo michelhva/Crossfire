@@ -119,14 +119,14 @@ public class OptionManager
             {
                 final CheckBoxOption checkBoxOption = (CheckBoxOption)option;
                 final boolean checked = settings.getBoolean(optionName, checkBoxOption.isDefaultChecked());
-                if (checkBoxOption.isChecked() != checked)
-                {
-                    checkBoxOption.setChecked(checked);
-                }
-                else
+                if (checkBoxOption.isChecked() == checked)
                 {
                     // make sure the appropriate option command is executed
                     checkBoxOption.fireStateChangedEvent();
+                }
+                else
+                {
+                    checkBoxOption.setChecked(checked);
                 }
             }
             else

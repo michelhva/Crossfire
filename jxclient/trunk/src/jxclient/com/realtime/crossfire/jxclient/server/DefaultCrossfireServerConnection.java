@@ -1739,13 +1739,18 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
                     {
                         final int flags = packet[pos++]&0xFF;
                         final int tag = ((packet[pos++]&0xFF)<<24)|((packet[pos++]&0xFF)<<16)|((packet[pos++]&0xFF)<<8)|(packet[pos++]&0xFF);
-                        final int valLocation = (flags&CfItem.UPD_LOCATION) != 0 ? ((packet[pos++]&0xFF)<<24)|((packet[pos++]&0xFF)<<16)|((packet[pos++]&0xFF)<<8)|(packet[pos++]&0xFF) : 0;
-                        final int valFlags = (flags&CfItem.UPD_FLAGS) != 0 ? ((packet[pos++]&0xFF)<<24)|((packet[pos++]&0xFF)<<16)|((packet[pos++]&0xFF)<<8)|(packet[pos++]&0xFF) : 0;
-                        final int valWeight = (flags&CfItem.UPD_WEIGHT) != 0 ? ((packet[pos++]&0xFF)<<24)|((packet[pos++]&0xFF)<<16)|((packet[pos++]&0xFF)<<8)|(packet[pos++]&0xFF) : 0;
-                        final int valFaceNum = (flags&CfItem.UPD_FACE) != 0 ? ((packet[pos++]&0xFF)<<24)|((packet[pos++]&0xFF)<<16)|((packet[pos++]&0xFF)<<8)|(packet[pos++]&0xFF) : 0;
+                        final int valLocation = (flags&CfItem.UPD_LOCATION) == 0 ? 0 : ((packet[pos++]&0xFF)<<24)|((packet[pos++]&0xFF)<<16)|((packet[pos++]&0xFF)<<8)|(packet[pos++]&0xFF);
+                        final int valFlags = (flags&CfItem.UPD_FLAGS) == 0 ? 0 : ((packet[pos++]&0xFF)<<24)|((packet[pos++]&0xFF)<<16)|((packet[pos++]&0xFF)<<8)|(packet[pos++]&0xFF);
+                        final int valWeight = (flags&CfItem.UPD_WEIGHT) == 0 ? 0 : ((packet[pos++]&0xFF)<<24)|((packet[pos++]&0xFF)<<16)|((packet[pos++]&0xFF)<<8)|(packet[pos++]&0xFF);
+                        final int valFaceNum = (flags&CfItem.UPD_FACE) == 0 ? 0 : ((packet[pos++]&0xFF)<<24)|((packet[pos++]&0xFF)<<16)|((packet[pos++]&0xFF)<<8)|(packet[pos++]&0xFF);
                         final String valName;
                         final String valNamePl;
-                        if ((flags&CfItem.UPD_NAME) != 0)
+                        if ((flags&CfItem.UPD_NAME) == 0)
+                        {
+                            valName = "";
+                            valNamePl = "";
+                        }
+                        else
                         {
                             final int nameLength = packet[pos++]&0xFF;
                             int namePlIndex = 0;
@@ -1757,14 +1762,9 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
                             valNamePl = namePlIndex+1 < nameLength ? new String(packet, pos+namePlIndex+1, nameLength-(namePlIndex+1), UTF8) : valName;
                             pos += nameLength;
                         }
-                        else
-                        {
-                            valName = "";
-                            valNamePl = "";
-                        }
-                        final int valAnim = (flags&CfItem.UPD_ANIM) != 0 ? ((packet[pos++]&0xFF)<<8)|(packet[pos++]&0xFF) : 0;
-                        final int valAnimSpeed = (flags&CfItem.UPD_ANIMSPEED) != 0 ? packet[pos++]&0xFF : 0;
-                        final int valNrof = (flags&CfItem.UPD_NROF) != 0 ? ((packet[pos++]&0xFF)<<24)|((packet[pos++]&0xFF)<<16)|((packet[pos++]&0xFF)<<8)|(packet[pos++]&0xFF) : 0;
+                        final int valAnim = (flags&CfItem.UPD_ANIM) == 0 ? 0 : ((packet[pos++]&0xFF)<<8)|(packet[pos++]&0xFF);
+                        final int valAnimSpeed = (flags&CfItem.UPD_ANIMSPEED) == 0 ? 0 : packet[pos++]&0xFF;
+                        final int valNrof = (flags&CfItem.UPD_NROF) == 0 ? 0 : ((packet[pos++]&0xFF)<<24)|((packet[pos++]&0xFF)<<16)|((packet[pos++]&0xFF)<<8)|(packet[pos++]&0xFF);
                         if (pos != end)
                         {
                             break;
@@ -1791,9 +1791,9 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
                     {
                         final int flags = packet[pos++]&0xFF;
                         final int tag = ((packet[pos++]&0xFF)<<24)|((packet[pos++]&0xFF)<<16)|((packet[pos++]&0xFF)<<8)|(packet[pos++]&0xFF);
-                        final int mana = (flags&CrossfireSpellListener.UPD_SP_MANA) != 0 ? ((packet[pos++]&0xFF)<<8)|(packet[pos++]&0xFF) : 0;
-                        final int grace = (flags&CrossfireSpellListener.UPD_SP_GRACE) != 0 ? ((packet[pos++]&0xFF)<<8)|(packet[pos++]&0xFF) : 0;
-                        final int damage = (flags&CrossfireSpellListener.UPD_SP_DAMAGE) != 0 ? ((packet[pos++]&0xFF)<<8)|(packet[pos++]&0xFF) : 0;
+                        final int mana = (flags&CrossfireSpellListener.UPD_SP_MANA) == 0 ? 0 : ((packet[pos++]&0xFF)<<8)|(packet[pos++]&0xFF);
+                        final int grace = (flags&CrossfireSpellListener.UPD_SP_GRACE) == 0 ? 0 : ((packet[pos++]&0xFF)<<8)|(packet[pos++]&0xFF);
+                        final int damage = (flags&CrossfireSpellListener.UPD_SP_DAMAGE) == 0 ? 0 : ((packet[pos++]&0xFF)<<8)|(packet[pos++]&0xFF);
                         if (pos != end)
                         {
                             break;
