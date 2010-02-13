@@ -316,6 +316,8 @@ public class GuiManager
         @Override
         public void connecting(@NotNull final String serverInfo)
         {
+            server.setMapSize(skin.getMapWidth(), skin.getMapHeight());
+            server.setNumLookObjects(skin.getNumLookObjects());
             server.addCrossfireDrawextinfoListener(crossfireDrawextinfoListener);
             windowRenderer.setGuiState(RendererGuiState.LOGIN);
             showGUIMain();

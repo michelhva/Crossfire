@@ -26,7 +26,6 @@ import com.realtime.crossfire.jxclient.server.CrossfirePickupListener;
 import com.realtime.crossfire.jxclient.server.CrossfireServerConnection;
 import com.realtime.crossfire.jxclient.server.Pickup;
 import com.realtime.crossfire.jxclient.settings.Settings;
-import com.realtime.crossfire.jxclient.skin.skin.JXCSkin;
 import com.realtime.crossfire.jxclient.util.NumberParser;
 import java.awt.Frame;
 import org.jetbrains.annotations.NotNull;
@@ -81,12 +80,6 @@ public class JXCConnection
      */
     @NotNull
     private final CrossfireServerConnection server;
-
-    /**
-     * The {@link GuiManager} to use when connecting.
-     */
-    @NotNull
-    private final GuiManager guiManager;
 
     /**
      * The currently connected server. Set to <code>null</code> if unconnected.
@@ -185,10 +178,9 @@ public class JXCConnection
      * @param frame the frame instance for updating the title
      * @param characterPickup the character pickup instance to update
      * @param server the crossfire server connection instance used to connect
-     * @param guiManager the gui manager to use when connecting
      * @param guiStateManager the gui state manager to watch
      */
-    public JXCConnection(@NotNull final KeybindingsManager keybindingsManager, @NotNull final ShortcutsManager shortcutsManager, @NotNull final Settings settings, @NotNull final Frame frame, @NotNull final Pickup characterPickup, @NotNull final CrossfireServerConnection server, @NotNull final GuiManager guiManager, @NotNull final GuiStateManager guiStateManager)
+    public JXCConnection(@NotNull final KeybindingsManager keybindingsManager, @NotNull final ShortcutsManager shortcutsManager, @NotNull final Settings settings, @NotNull final Frame frame, @NotNull final Pickup characterPickup, @NotNull final CrossfireServerConnection server, @NotNull final GuiStateManager guiStateManager)
     {
         this.keybindingsManager = keybindingsManager;
         this.shortcutsManager = shortcutsManager;
@@ -196,7 +188,6 @@ public class JXCConnection
         this.frame = frame;
         this.characterPickup = characterPickup;
         this.server = server;
-        this.guiManager = guiManager;
         guiStateManager.addGuiStateListener(guiStateListener);
         updateTitle();
     }
@@ -329,9 +320,6 @@ public class JXCConnection
      */
     private void connect()
     {
-        final JXCSkin skin = guiManager.getSkin();
-        server.setMapSize(skin.getMapWidth(), skin.getMapHeight());
-        server.setNumLookObjects(skin.getNumLookObjects());
         server.connect(hostname, port);
     }
 }

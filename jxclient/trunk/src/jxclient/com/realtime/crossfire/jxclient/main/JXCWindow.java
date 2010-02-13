@@ -624,7 +624,7 @@ public class JXCWindow extends JFrame
         setFocusTraversalKeysEnabled(false);
         addWindowFocusListener(windowFocusListener);
         addWindowListener(windowListener);
-        connection = new JXCConnection(guiManager.getKeybindingsManager(), shortcutsManager, settings, this, characterPickup, server, guiManager, guiStateManager);
+        connection = new JXCConnection(guiManager.getKeybindingsManager(), shortcutsManager, settings, this, characterPickup, server, guiStateManager);
         server.addClientSocketListener(clientSocketListener);
         server.addSentReplyListener(sentReplyListener);
         guiManager.setConnection(connection);
