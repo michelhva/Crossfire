@@ -24,6 +24,7 @@ package com.realtime.crossfire.jxclient.skin.io;
 import com.realtime.crossfire.jxclient.commands.Commands;
 import com.realtime.crossfire.jxclient.commands.Macros;
 import com.realtime.crossfire.jxclient.gui.command.GUICommand;
+import com.realtime.crossfire.jxclient.gui.commands.CommandType;
 import com.realtime.crossfire.jxclient.gui.commands.ConnectCommand;
 import com.realtime.crossfire.jxclient.gui.commands.DialogCloseCommand;
 import com.realtime.crossfire.jxclient.gui.commands.DialogOpenCommand;
@@ -276,7 +277,7 @@ public class CommandParser
                 throw new IOException("syntax error");
             }
 
-            final ExecSelectionCommand.CommandType commandType = NumberParser.parseEnum(ExecSelectionCommand.CommandType.class, args[argc], "command name");
+            final CommandType commandType = NumberParser.parseEnum(CommandType.class, args[argc], "command name");
 
             if (!(element instanceof GUIItemList))
             {
