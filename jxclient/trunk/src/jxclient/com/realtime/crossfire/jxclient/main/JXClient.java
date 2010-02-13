@@ -21,6 +21,7 @@
 
 package com.realtime.crossfire.jxclient.main;
 
+import com.realtime.crossfire.jxclient.experience.ExperienceTable;
 import com.realtime.crossfire.jxclient.metaserver.Metaserver;
 import com.realtime.crossfire.jxclient.metaserver.MetaserverModel;
 import com.realtime.crossfire.jxclient.server.CrossfireServerConnection;
@@ -107,7 +108,8 @@ public class JXClient
                             try
                             {
                                 final GuiStateManager guiStateManager = new GuiStateManager(server);
-                                final JXCWindow window = new JXCWindow(terminateSync, server, semaphoreRedraw, options.isDebugGui(), debugKeyboardOutputStreamWriter, options.getPrefs(), optionManager, metaserverModel, options.getResolution(), guiStateManager);
+                                final ExperienceTable experienceTable = new ExperienceTable(server);
+                                final JXCWindow window = new JXCWindow(terminateSync, server, semaphoreRedraw, options.isDebugGui(), debugKeyboardOutputStreamWriter, options.getPrefs(), optionManager, metaserverModel, options.getResolution(), guiStateManager, experienceTable);
                                 new Metaserver(Filenames.getMetaserverCacheFile(), metaserverModel, guiStateManager);
                                 final SoundManager soundManager = new SoundManager(guiStateManager);
                                 try
