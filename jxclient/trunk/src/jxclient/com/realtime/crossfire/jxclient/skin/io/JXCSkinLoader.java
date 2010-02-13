@@ -347,7 +347,7 @@ public class JXCSkinLoader
         final GuiFactory guiFactory = new GuiFactory(debugGui ? mouseTracker : null, commands, guiManager, macros);
         final Dialogs dialogs = new Dialogs(guiFactory);
         final GaugeUpdaterParser gaugeUpdaterParser = new GaugeUpdaterParser(stats, itemsManager, skillSet);
-        skin = new DefaultJXCSkin(defaultKeyBindings, optionManager, itemsManager, experienceTable, skillSet, expressionParser, selectedResolution, gaugeUpdaterParser, dialogs);
+        skin = new DefaultJXCSkin(defaultKeyBindings, optionManager, itemsManager, experienceTable, expressionParser, selectedResolution, gaugeUpdaterParser, dialogs);
         @Nullable JXCSkin skinToDetach = skin;
         try
         {
