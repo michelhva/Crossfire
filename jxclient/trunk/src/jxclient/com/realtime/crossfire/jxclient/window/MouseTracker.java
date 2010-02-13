@@ -22,7 +22,6 @@
 package com.realtime.crossfire.jxclient.window;
 
 import com.realtime.crossfire.jxclient.gui.gui.GUIElement;
-import com.realtime.crossfire.jxclient.gui.gui.Gui;
 import com.realtime.crossfire.jxclient.gui.gui.JXCWindowRenderer;
 import java.awt.Component;
 import java.awt.event.MouseEvent;
@@ -100,7 +99,7 @@ public class MouseTracker implements MouseInputListener
     @Override
     public void mouseMoved(@NotNull final MouseEvent e)
     {
-        final GUIElement element = findElement(e);
+        final GUIElement element = windowRenderer.findElement(e);
         enterElement(element, e);
         if (mouseElement != null)
         {
@@ -119,7 +118,7 @@ public class MouseTracker implements MouseInputListener
     @Override
     public void mousePressed(@NotNull final MouseEvent e)
     {
-        final GUIElement element = findElement(e);
+        final GUIElement element = windowRenderer.findElement(e);
         enterElement(element, e);
         if (mouseElement != null)
         {
@@ -131,7 +130,7 @@ public class MouseTracker implements MouseInputListener
     @Override
     public void mouseReleased(@NotNull final MouseEvent e)
     {
-        final GUIElement element = findElement(e);
+        final GUIElement element = windowRenderer.findElement(e);
         final boolean isClicked = element != null && mouseElement == element;
         enterElement(element, e);
         if (mouseElement != null)
@@ -151,7 +150,7 @@ public class MouseTracker implements MouseInputListener
     @Override
     public void mouseEntered(@NotNull final MouseEvent e)
     {
-        final GUIElement element = findElement(e);
+        final GUIElement element = windowRenderer.findElement(e);
         enterElement(element, e);
     }
 
@@ -196,56 +195,5 @@ public class MouseTracker implements MouseInputListener
             }
             element.mouseEntered(e);
         }
-    }
-
-    /**
-     * Find the gui element for a given {@link MouseEvent}. If a gui element
-     * was found, update the event mouse coordinates to be relative to the gui
-     * element.
-     *
-     * @param e The mouse event to process.
-     *
-     * @return The gui element found, or <code>null</code> if none was found.
-     */
-    @Nullable
-    private GUIElement findElement(@NotNull final MouseEvent e)
-    {
-        GUIElement elected = null;
-
-        for (final Gui dialog : windowRenderer.getOpenDialogs())
-        {
-            if (!dialog.isHidden(windowRenderer.getGuiState()))
-            {
-                elected = manageMouseEvents(dialog, e);
-                if (elected != null)
-                {
-                    break;
-                }
-            }
-            if (dialog.isModal())
-            {
-                return null;
-            }
-        }
-
-        if (elected == null)
-        {
-            elected = manageMouseEvents(windowRenderer.getCurrentGui(), e);
-        }
-
-        if (elected != null)
-        {
-            e.translatePoint(-elected.getElementX()-windowRenderer.getOffsetX(), -elected.getElementY()-windowRenderer.getOffsetY());
-        }
-
-        return elected;
-    }
-
-    @Nullable
-    private GUIElement manageMouseEvents(@NotNull final Gui gui, @NotNull final MouseEvent e)
-    {
-        final int x = e.getX()-windowRenderer.getOffsetX();
-        final int y = e.getY()-windowRenderer.getOffsetY();
-        return gui.getElementFromPoint(x, y);
     }
 }
