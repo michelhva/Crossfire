@@ -22,6 +22,10 @@
 package com.realtime.crossfire.jxclient.main;
 
 import com.realtime.crossfire.jxclient.experience.ExperienceTable;
+import com.realtime.crossfire.jxclient.faces.FaceCache;
+import com.realtime.crossfire.jxclient.faces.FacesManager;
+import com.realtime.crossfire.jxclient.faces.FacesQueue;
+import com.realtime.crossfire.jxclient.faces.FileCache;
 import com.realtime.crossfire.jxclient.metaserver.Metaserver;
 import com.realtime.crossfire.jxclient.metaserver.MetaserverModel;
 import com.realtime.crossfire.jxclient.server.CrossfireServerConnection;
@@ -112,7 +116,10 @@ public class JXClient
                                 final ExperienceTable experienceTable = new ExperienceTable(server);
                                 final SkillSet skillSet = new SkillSet(server, guiStateManager);
                                 final Stats stats = new Stats(server, experienceTable, skillSet, guiStateManager);
-                                final JXCWindow window = new JXCWindow(terminateSync, server, semaphoreRedraw, options.isDebugGui(), debugKeyboardOutputStreamWriter, options.getPrefs(), optionManager, metaserverModel, options.getResolution(), guiStateManager, experienceTable, skillSet, stats);
+                                final FaceCache faceCache = new FaceCache(server);
+                                final FacesQueue facesQueue = new FacesQueue(server, new FileCache(Filenames.getOriginalImageCacheDir()), new FileCache(Filenames.getScaledImageCacheDir()), new FileCache(Filenames.getMagicMapImageCacheDir()));
+                                final FacesManager facesManager = new FacesManager(faceCache, facesQueue);
+                                final JXCWindow window = new JXCWindow(terminateSync, server, semaphoreRedraw, options.isDebugGui(), debugKeyboardOutputStreamWriter, options.getPrefs(), optionManager, metaserverModel, options.getResolution(), guiStateManager, experienceTable, skillSet, stats, facesManager);
                                 new Metaserver(Filenames.getMetaserverCacheFile(), metaserverModel, guiStateManager);
                                 final SoundManager soundManager = new SoundManager(guiStateManager);
                                 try

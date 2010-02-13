@@ -24,10 +24,7 @@ package com.realtime.crossfire.jxclient.main;
 import com.realtime.crossfire.jxclient.commands.Commands;
 import com.realtime.crossfire.jxclient.commands.Macros;
 import com.realtime.crossfire.jxclient.experience.ExperienceTable;
-import com.realtime.crossfire.jxclient.faces.FaceCache;
 import com.realtime.crossfire.jxclient.faces.FacesManager;
-import com.realtime.crossfire.jxclient.faces.FacesQueue;
-import com.realtime.crossfire.jxclient.faces.FileCache;
 import com.realtime.crossfire.jxclient.gui.gui.GuiFactory;
 import com.realtime.crossfire.jxclient.gui.gui.JXCWindowRenderer;
 import com.realtime.crossfire.jxclient.gui.gui.TooltipManager;
@@ -49,7 +46,6 @@ import com.realtime.crossfire.jxclient.server.GuiStateManager;
 import com.realtime.crossfire.jxclient.server.Pickup;
 import com.realtime.crossfire.jxclient.server.SentReplyListener;
 import com.realtime.crossfire.jxclient.server.UnknownCommandException;
-import com.realtime.crossfire.jxclient.settings.Filenames;
 import com.realtime.crossfire.jxclient.settings.Settings;
 import com.realtime.crossfire.jxclient.settings.options.OptionException;
 import com.realtime.crossfire.jxclient.settings.options.OptionManager;
@@ -80,7 +76,6 @@ import java.awt.event.WindowEvent;
 import java.awt.event.WindowFocusListener;
 import java.awt.event.WindowListener;
 import java.io.File;
-import java.io.IOException;
 import java.io.Writer;
 import javax.swing.JFrame;
 import org.jetbrains.annotations.NotNull;
@@ -585,9 +580,9 @@ public class JXCWindow extends JFrame
      * @param experienceTable the experience table to use
      * @param skillSet the skill set to use
      * @param stats the stats to use
-     * @throws IOException if a resource cannot be loaded
+     * @param facesManager the faces manager to use
      */
-    public JXCWindow(@NotNull final Object terminateSync, @NotNull final CrossfireServerConnection server, @NotNull final Object semaphoreRedraw, final boolean debugGui, @Nullable final Writer debugKeyboard, @NotNull final Settings settings, @NotNull final OptionManager optionManager, @NotNull final MetaserverModel metaserverModel, @NotNull final Resolution resolution, @NotNull final GuiStateManager guiStateManager, @NotNull final ExperienceTable experienceTable, @NotNull final SkillSet skillSet, @NotNull final Stats stats) throws IOException
+    public JXCWindow(@NotNull final Object terminateSync, @NotNull final CrossfireServerConnection server, @NotNull final Object semaphoreRedraw, final boolean debugGui, @Nullable final Writer debugKeyboard, @NotNull final Settings settings, @NotNull final OptionManager optionManager, @NotNull final MetaserverModel metaserverModel, @NotNull final Resolution resolution, @NotNull final GuiStateManager guiStateManager, @NotNull final ExperienceTable experienceTable, @NotNull final SkillSet skillSet, @NotNull final Stats stats, @NotNull final FacesManager facesManager)
     {
         super("");
         this.server = server;
@@ -599,10 +594,8 @@ public class JXCWindow extends JFrame
         this.experienceTable = experienceTable;
         this.skillSet = skillSet;
         this.stats = stats;
+        this.facesManager = facesManager;
         macros = new Macros(server);
-        final FaceCache faceCache = new FaceCache(server);
-        final FacesQueue facesQueue = new FacesQueue(server, new FileCache(Filenames.getOriginalImageCacheDir()), new FileCache(Filenames.getScaledImageCacheDir()), new FileCache(Filenames.getMagicMapImageCacheDir()));
-        facesManager = new FacesManager(faceCache, facesQueue);
         itemsManager = new ItemsManager(server, facesManager, stats, skillSet, guiStateManager);
         mapUpdater = new CfMapUpdater(server, facesManager, guiStateManager);
         spellsManager = new SpellsManager(server, guiStateManager);
