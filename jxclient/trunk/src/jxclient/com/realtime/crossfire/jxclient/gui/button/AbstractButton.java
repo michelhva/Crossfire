@@ -102,7 +102,6 @@ public abstract class AbstractButton extends ActivatableGUIElement
     protected AbstractButton(@NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final String name, final int x, final int y, final int w, final int h, final int transparency, final boolean autoRepeat, @NotNull final GUICommandList commandList)
     {
         super(tooltipManager, elementListener, name, x, y, w, h, transparency);
-        if (commandList == null) throw new IllegalArgumentException();
         this.autoRepeat = autoRepeat;
         this.commandList = commandList;
     }
