@@ -306,7 +306,7 @@ public class CfMapUpdater
     public CfMapUpdater(@NotNull final FacesManager facesManager)
     {
         this.facesManager = facesManager;
-        this.animations = new Animations(null);
+        animations = new Animations(null);
         facesManager.addFacesManagerListener(facesManagerListener);
         map = new CfMap(mapSquareListener);
         visibleAnimations = new CfMapAnimations(this);
