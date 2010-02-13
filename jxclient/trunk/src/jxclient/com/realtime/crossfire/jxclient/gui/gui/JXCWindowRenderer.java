@@ -951,7 +951,7 @@ public class JXCWindowRenderer
      */
     public int getWindowWidth()
     {
-        return currentGui.getWidth();
+        return displayMode.getWidth();
     }
 
     /**
@@ -960,7 +960,7 @@ public class JXCWindowRenderer
      */
     public int getWindowHeight()
     {
-        return currentGui.getHeight();
+        return displayMode.getHeight();
     }
 
     /**
