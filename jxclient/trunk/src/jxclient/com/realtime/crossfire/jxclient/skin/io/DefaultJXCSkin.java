@@ -44,7 +44,6 @@ import com.realtime.crossfire.jxclient.skin.skin.Dialogs;
 import com.realtime.crossfire.jxclient.skin.skin.JXCSkin;
 import com.realtime.crossfire.jxclient.skin.skin.JXCSkinCache;
 import com.realtime.crossfire.jxclient.skin.skin.JXCSkinException;
-import com.realtime.crossfire.jxclient.stats.Stats;
 import com.realtime.crossfire.jxclient.util.Resolution;
 import com.realtime.crossfire.jxclient.window.GuiManager;
 import com.realtime.crossfire.jxclient.window.GuiStateManager;
@@ -193,21 +192,22 @@ public class DefaultJXCSkin implements JXCSkin
      * Creates a new instance.
      * @param defaultKeyBindings the default key bindings
      * @param optionManager the option manager to use
-     * @param stats the stats instance to use
      * @param itemsManager the items manager instance to use
      * @param experienceTable the experience table to use
      * @param skillSet the skill set for looking up skill names
      * @param expressionParser the expression parser to use
      * @param selectedResolution the resolution to use
+     * @param gaugeUpdaterParser the gauge updater parser for parsing gauge
+     * specifications
      * @param dialogs the dialogs to use
      */
-    public DefaultJXCSkin(@NotNull final KeyBindings defaultKeyBindings, @NotNull final OptionManager optionManager, @NotNull final Stats stats, @NotNull final ItemsManager itemsManager, @NotNull final ExperienceTable experienceTable, @NotNull final SkillSet skillSet, @NotNull final ExpressionParser expressionParser, @NotNull final Resolution selectedResolution, @NotNull final Dialogs dialogs)
+    public DefaultJXCSkin(@NotNull final KeyBindings defaultKeyBindings, @NotNull final OptionManager optionManager, @NotNull final ItemsManager itemsManager, @NotNull final ExperienceTable experienceTable, @NotNull final SkillSet skillSet, @NotNull final ExpressionParser expressionParser, @NotNull final Resolution selectedResolution, @NotNull final GaugeUpdaterParser gaugeUpdaterParser, @NotNull final Dialogs dialogs)
     {
         this.defaultKeyBindings = defaultKeyBindings;
         this.optionManager = optionManager;
         this.experienceTable = experienceTable;
         this.selectedResolution = selectedResolution;
-        gaugeUpdaterParser = new GaugeUpdaterParser(stats, itemsManager, skillSet);
+        this.gaugeUpdaterParser = gaugeUpdaterParser;
         this.dialogs = dialogs;
         commandParser = new CommandParser(dialogs, itemsManager, expressionParser, definedGUIElements);
     }
