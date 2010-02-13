@@ -180,9 +180,9 @@ public class ItemsManager
     };
 
     /**
-     * The {@link EventSchedulerCallback} for delaying event generation. This
-     * is needed because the Crossfire server sends multiple item2 commands
-     * for one "get all" command.
+     * The event scheduler callback for delaying event generation. This is
+     * needed because the Crossfire server sends multiple item2 commands for
+     * one "get all" command.
      */
     @NotNull
     private final Runnable fireEventCallback = new Runnable()
