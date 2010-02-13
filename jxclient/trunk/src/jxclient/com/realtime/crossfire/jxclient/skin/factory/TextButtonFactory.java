@@ -21,6 +21,7 @@
 
 package com.realtime.crossfire.jxclient.skin.factory;
 
+import com.realtime.crossfire.jxclient.gui.button.ButtonImages;
 import com.realtime.crossfire.jxclient.gui.button.GUITextButton;
 import com.realtime.crossfire.jxclient.gui.command.GUICommandList;
 import com.realtime.crossfire.jxclient.gui.gui.GUIElement;
@@ -41,13 +42,13 @@ public class TextButtonFactory
      * The images comprising the "up" button state.
      */
     @NotNull
-    private final GUITextButton.ButtonImages up;
+    private final ButtonImages up;
 
     /**
      * The images comprising the "down" button state.
      */
     @NotNull
-    private final GUITextButton.ButtonImages down;
+    private final ButtonImages down;
 
     /**
      * The font to use.
@@ -72,7 +73,7 @@ public class TextButtonFactory
      *
      * @param color The text color.
      */
-    public TextButtonFactory(@NotNull final GUITextButton.ButtonImages up, @NotNull final GUITextButton.ButtonImages down, @NotNull final Font font, @NotNull final Color color)
+    public TextButtonFactory(@NotNull final ButtonImages up, @NotNull final ButtonImages down, @NotNull final Font font, @NotNull final Color color)
     {
         this.up = up;
         this.down = down;
