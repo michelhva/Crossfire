@@ -43,8 +43,14 @@ public class SpellComparator implements Comparator<Spell>, Serializable
     {
         final int path1 = o1.getPath();
         final int path2 = o2.getPath();
-        if (path1 < path2) return -1;
-        if (path1 > path2) return +1;
+        if (path1 < path2)
+        {
+            return -1;
+        }
+        if (path1 > path2)
+        {
+            return +1;
+        }
         return String.CASE_INSENSITIVE_ORDER.compare(o1.getName(), o2.getName());
     }
 }

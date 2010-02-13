@@ -135,8 +135,14 @@ public class Resolution
     @Override
     public boolean equals(@Nullable final Object obj)
     {
-        if (obj == null) return false;
-        if (obj.getClass() != Resolution.class) return false;
+        if (obj == null)
+        {
+            return false;
+        }
+        if (obj.getClass() != Resolution.class)
+        {
+            return false;
+        }
         final Resolution resolution = (Resolution)obj;
         return resolution.width == width && resolution.height == height;
     }

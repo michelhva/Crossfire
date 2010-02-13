@@ -176,8 +176,14 @@ public class Face
     @Override
     public boolean equals(@Nullable final Object obj)
     {
-        if (obj == null) return false;
-        if (obj.getClass() != Face.class) return false;
+        if (obj == null)
+        {
+            return false;
+        }
+        if (obj.getClass() != Face.class)
+        {
+            return false;
+        }
         final Face face = (Face)obj;
         return faceNum == face.faceNum;
     }

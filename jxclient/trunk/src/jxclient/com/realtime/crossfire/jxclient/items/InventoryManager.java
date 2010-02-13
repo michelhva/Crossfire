@@ -66,12 +66,27 @@ public class InventoryManager extends AbstractManager
      */
     private static int compareItem(@NotNull final CfItem item1, @NotNull final CfItem item2)
     {
-        if (item1.getType() < item2.getType()) return -1;
-        if (item1.getType() > item2.getType()) return +1;
+        if (item1.getType() < item2.getType())
+        {
+            return -1;
+        }
+        if (item1.getType() > item2.getType())
+        {
+            return +1;
+        }
         final int cmp1 = item1.getName().compareTo(item2.getName());
-        if (cmp1 != 0) return cmp1;
-        if (item1.getTag() < item2.getTag()) return -1;
-        if (item1.getTag() > item2.getTag()) return +1;
+        if (cmp1 != 0)
+        {
+            return cmp1;
+        }
+        if (item1.getTag() < item2.getTag())
+        {
+            return -1;
+        }
+        if (item1.getTag() > item2.getTag())
+        {
+            return +1;
+        }
         return 0;
     }
 }

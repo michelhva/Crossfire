@@ -151,10 +151,22 @@ public class ParseUtils
     @Nullable
     private static Color parseColorName(@NotNull final String name)
     {
-        if (name.equals("BLACK")) return Color.BLACK;
-        if (name.equals("DARK_GRAY")) return Color.DARK_GRAY;
-        if (name.equals("GRAY")) return Color.GRAY;
-        if (name.equals("WHITE")) return Color.WHITE;
+        if (name.equals("BLACK"))
+        {
+            return Color.BLACK;
+        }
+        if (name.equals("DARK_GRAY"))
+        {
+            return Color.DARK_GRAY;
+        }
+        if (name.equals("GRAY"))
+        {
+            return Color.GRAY;
+        }
+        if (name.equals("WHITE"))
+        {
+            return Color.WHITE;
+        }
         if (name.length() == 7 && name.charAt(0) == '#' && name.charAt(1) != '-')
         {
             try

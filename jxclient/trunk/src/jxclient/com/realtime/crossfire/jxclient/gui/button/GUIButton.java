@@ -68,8 +68,14 @@ public class GUIButton extends AbstractButton
     public GUIButton(@NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final String name, final int x, final int y, final int w, final int h, @NotNull final BufferedImage imageUp, @NotNull final BufferedImage imageDown, @Nullable final String text, @Nullable final Font font, @Nullable final Color color, final int textX, final int textY, final boolean autoRepeat, @NotNull final GUICommandList commandList)
     {
         super(tooltipManager, elementListener, name, x, y, w, h, Transparency.TRANSLUCENT, autoRepeat, commandList);
-        if (imageUp.getWidth() != imageDown.getWidth()) throw new IllegalArgumentException();
-        if (imageUp.getHeight() != imageDown.getHeight()) throw new IllegalArgumentException();
+        if (imageUp.getWidth() != imageDown.getWidth())
+        {
+            throw new IllegalArgumentException();
+        }
+        if (imageUp.getHeight() != imageDown.getHeight())
+        {
+            throw new IllegalArgumentException();
+        }
         this.imageUp = imageUp;
         this.imageDown = imageDown;
         this.text = text;

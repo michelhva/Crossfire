@@ -351,11 +351,26 @@ public class GUIMagicMap extends GUIElement
     public GUIMagicMap(@NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final String name, final int x, final int y, final int w, final int h, @NotNull final CrossfireServerConnection crossfireServerConnection, @NotNull final CfMapUpdater mapUpdater, @NotNull final FacesManager facesManager)
     {
         super(tooltipManager, elementListener, name, x, y, w, h, Transparency.TRANSLUCENT);
-        if (w <= 0 || h <= 0) throw new IllegalArgumentException("area must be non-empty");
-        if (w%TILE_SIZE != 0) throw new IllegalArgumentException("width is not a multiple of "+TILE_SIZE);
-        if (h%TILE_SIZE != 0) throw new IllegalArgumentException("height is not a multiple of "+TILE_SIZE);
-        if ((w/TILE_SIZE)%2 != 1) throw new IllegalArgumentException("width is not an odd number of tiles");
-        if ((h/TILE_SIZE)%2 != 1) throw new IllegalArgumentException("height is not an odd number of tiles");
+        if (w <= 0 || h <= 0)
+        {
+            throw new IllegalArgumentException("area must be non-empty");
+        }
+        if (w%TILE_SIZE != 0)
+        {
+            throw new IllegalArgumentException("width is not a multiple of "+TILE_SIZE);
+        }
+        if (h%TILE_SIZE != 0)
+        {
+            throw new IllegalArgumentException("height is not a multiple of "+TILE_SIZE);
+        }
+        if ((w/TILE_SIZE)%2 != 1)
+        {
+            throw new IllegalArgumentException("width is not an odd number of tiles");
+        }
+        if ((h/TILE_SIZE)%2 != 1)
+        {
+            throw new IllegalArgumentException("height is not an odd number of tiles");
+        }
         this.mapUpdater = mapUpdater;
         this.facesManager = facesManager;
         this.crossfireServerConnection = crossfireServerConnection;

@@ -113,10 +113,22 @@ public class GUITextButton extends AbstractButton
     public GUITextButton(@NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final String name, final int x, final int y, final int w, final int h, @NotNull final ButtonImages up, @NotNull final ButtonImages down, @NotNull final String text, @NotNull final Font font, @NotNull final Color color, final boolean autoRepeat, @NotNull final GUICommandList commandList)
     {
         super(tooltipManager, elementListener, name, x, y, w, h, Transparency.TRANSLUCENT, autoRepeat, commandList);
-        if (up.getHeight() != h) throw new IllegalArgumentException("'up' state is height "+up.getHeight()+" but button height is "+h);
-        if (down.getHeight() != h) throw new IllegalArgumentException("'down' state is height "+up.getHeight()+" but button height is "+h);
-        if (up.getMinimumWidth() > w) throw new IllegalArgumentException("minimum width in 'up' state is "+up.getMinimumWidth()+" but button width is "+w);
-        if (down.getMinimumWidth() > w) throw new IllegalArgumentException("minimum width in 'down' state is "+down.getMinimumWidth()+" but button width is "+w);
+        if (up.getHeight() != h)
+        {
+            throw new IllegalArgumentException("'up' state is height "+up.getHeight()+" but button height is "+h);
+        }
+        if (down.getHeight() != h)
+        {
+            throw new IllegalArgumentException("'down' state is height "+up.getHeight()+" but button height is "+h);
+        }
+        if (up.getMinimumWidth() > w)
+        {
+            throw new IllegalArgumentException("minimum width in 'up' state is "+up.getMinimumWidth()+" but button width is "+w);
+        }
+        if (down.getMinimumWidth() > w)
+        {
+            throw new IllegalArgumentException("minimum width in 'down' state is "+down.getMinimumWidth()+" but button width is "+w);
+        }
 
         this.up = up;
         this.down = down;
@@ -184,8 +196,14 @@ public class GUITextButton extends AbstractButton
 
         public ButtonImages(@NotNull final Image imageLeft, @NotNull final Image imageMiddle, @NotNull final Image imageRight)
         {
-            if (imageLeft.getHeight(null) != imageMiddle.getHeight(null)) throw new IllegalArgumentException("left image height is "+imageLeft.getHeight(null)+" but middle image height is "+imageMiddle.getHeight(null));
-            if (imageMiddle.getHeight(null) != imageRight.getHeight(null)) throw new IllegalArgumentException("middle image height is "+imageMiddle.getHeight(null)+" but right image height is "+imageRight.getHeight(null));
+            if (imageLeft.getHeight(null) != imageMiddle.getHeight(null))
+            {
+                throw new IllegalArgumentException("left image height is "+imageLeft.getHeight(null)+" but middle image height is "+imageMiddle.getHeight(null));
+            }
+            if (imageMiddle.getHeight(null) != imageRight.getHeight(null))
+            {
+                throw new IllegalArgumentException("middle image height is "+imageMiddle.getHeight(null)+" but right image height is "+imageRight.getHeight(null));
+            }
 
             this.imageLeft = imageLeft;
             this.imageMiddle = imageMiddle;

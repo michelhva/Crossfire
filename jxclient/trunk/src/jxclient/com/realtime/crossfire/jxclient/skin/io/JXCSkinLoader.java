@@ -1025,7 +1025,10 @@ public class JXCSkinLoader
             final Color titleColor = ParseUtils.parseColor(args[4]);
             final Color titleBackgroundColor = ParseUtils.parseColor(args[5]);
             final float alpha = NumberParser.parseFloat(args[6]);
-            if (alpha < 0 || alpha > 1F) throw new IOException("invalid alpha value: "+alpha);
+            if (alpha < 0 || alpha > 1F)
+            {
+                throw new IOException("invalid alpha value: "+alpha);
+            }
             dialogFactory = new DialogFactory(frameNW, frameN, frameNE, frameW, frameC, frameE, frameSW, frameS, frameSE, titleFont, titleColor, titleBackgroundColor, alpha);
         }
         else if (args[1].equals("item"))
@@ -1864,9 +1867,18 @@ public class JXCSkinLoader
         final int w = expressionParser.parseInt(args[5]);
         final int h = expressionParser.parseInt(args[6]);
 
-        if (tileSize <= 0) throw new IOException("invalid tile size "+tileSize);
-        if (w%tileSize != 0) throw new IOException("map width "+w+" is not a multiple of the tile size "+tileSize);
-        if (h%tileSize != 0) throw new IOException("map height "+h+" is not a multiple of the tile size "+tileSize);
+        if (tileSize <= 0)
+        {
+            throw new IOException("invalid tile size "+tileSize);
+        }
+        if (w%tileSize != 0)
+        {
+            throw new IOException("map width "+w+" is not a multiple of the tile size "+tileSize);
+        }
+        if (h%tileSize != 0)
+        {
+            throw new IOException("map height "+h+" is not a multiple of the tile size "+tileSize);
+        }
         final int tmpW = w/tileSize;
         final int tmpH = h/tileSize;
         DefaultCrossfireServerConnection.validateMapSize(tmpW, tmpH);
@@ -1931,7 +1943,10 @@ public class JXCSkinLoader
         final int h = expressionParser.parseInt(args[5]);
         final BufferedImage image = imageParser.getImage(args[6]);
         final float alpha = NumberParser.parseFloat(args[7]);
-        if (alpha < 0 || alpha > 1F) throw new IOException("invalid alpha value: "+alpha);
+        if (alpha < 0 || alpha > 1F)
+        {
+            throw new IOException("invalid alpha value: "+alpha);
+        }
         skin.insertGuiElement(new GUIPicture(tooltipManager, elementListener, name, x, y, w, h, image, alpha));
     }
 

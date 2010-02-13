@@ -45,10 +45,22 @@ public class OrientationParser
      */
     public static Orientation parseOrientation(@NotNull final String name)
     {
-        if (name.equals("EW")) return new OrientationEW();
-        if (name.equals("NS")) return new OrientationNS();
-        if (name.equals("SN")) return new OrientationSN();
-        if (name.equals("WE")) return new OrientationWE();
+        if (name.equals("EW"))
+        {
+            return new OrientationEW();
+        }
+        if (name.equals("NS"))
+        {
+            return new OrientationNS();
+        }
+        if (name.equals("SN"))
+        {
+            return new OrientationSN();
+        }
+        if (name.equals("WE"))
+        {
+            return new OrientationWE();
+        }
         throw new IllegalArgumentException();
     }
 }

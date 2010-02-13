@@ -618,7 +618,10 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
                             if (packet[pos++] != 'e') break;
                             if (packet[pos++] != 'd') break;
                             args = pos;
-                            if (pos != end) break;
+                            if (pos != end)
+                            {
+                                break;
+                            }
                             if (debugProtocol != null)
                             {
                                 debugProtocol.debugProtocolWrite("recv addme_failed");
@@ -635,7 +638,10 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
                             if (packet[pos++] != 's') break;
                             if (packet[pos++] != 's') break;
                             args = pos;
-                            if (pos != end) break;
+                            if (pos != end)
+                            {
+                                break;
+                            }
                             if (debugProtocol != null)
                             {
                                 debugProtocol.debugProtocolWrite("recv addme_success");
@@ -670,7 +676,10 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
                             final int messageLength = ((packet[pos++]&0xFF)<<8)|(packet[pos++]&0xFF);
                             final String message = new String(packet, pos, messageLength, UTF8);
                             pos += messageLength;
-                            if (pos > end) break;
+                            if (pos > end)
+                            {
+                                break;
+                            }
                             if (debugProtocol != null)
                             {
                                 debugProtocol.debugProtocolWrite("recv addspell tag="+tag+" lvl="+level+" time="+castingTime+" sp="+mana+" gr="+grace+" dam="+damage+" skill="+skill+" path="+path+" face="+face+" name="+name+" msg="+message);
@@ -680,7 +689,10 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
                                 crossfireSpellListener.addSpell(tag, level, castingTime, mana, grace, damage, skill, path, face, name, message);
                             }
                         }
-                        if (pos != end) break;
+                        if (pos != end)
+                        {
+                            break;
+                        }
                         notifyPacketWatcherListenersMixed(packet, start, args, end);
                         return;
                     }
@@ -695,12 +707,18 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
                         final int num = ((packet[pos++]&0xFF)<<8)|(packet[pos++]&0xFF);
                         final int flags = ((packet[pos++]&0xFF)<<8)|(packet[pos++]&0xFF);
                         final int[] faces = new int[(end-pos)/2];
-                        if (faces.length <= 0) throw new UnknownCommandException("no faces in anim command");
+                        if (faces.length <= 0)
+                        {
+                            throw new UnknownCommandException("no faces in anim command");
+                        }
                         for (int i = 0; i < faces.length; i++)
                         {
                             faces[i] = ((packet[pos++]&0xFF)<<8)|(packet[pos++]&0xFF);
                         }
-                        if (pos != end) break;
+                        if (pos != end)
+                        {
+                            break;
+                        }
                         if (debugProtocol != null)
                         {
                             debugProtocol.debugProtocolWrite("recv addanim num="+num+" flags="+flags+" faces="+Arrays.toString(faces));
@@ -725,7 +743,10 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
                 {
                     final int packetNo = ((packet[pos++]&0xFF)<<8)|(packet[pos++]&0xFF);
                     final int time = ((packet[pos++]&0xFF)<<24)|((packet[pos++]&0xFF)<<16)|((packet[pos++]&0xFF)<<8)|(packet[pos++]&0xFF);
-                    if (pos != end) break;
+                    if (pos != end)
+                    {
+                        break;
+                    }
                     if (debugProtocol != null)
                     {
                         debugProtocol.debugProtocolWrite("recv comc no="+packetNo+" time="+time);
@@ -759,7 +780,10 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
                                     tag = tag*10+parseDigit(packet[pos++]);
                                 }
                                 while (pos < end);
-                                if (pos != end) break;
+                                if (pos != end)
+                                {
+                                    break;
+                                }
                                 if (debugProtocol != null)
                                 {
                                     debugProtocol.debugProtocolWrite("recv delinv tag="+tag);
@@ -783,7 +807,10 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
                                 {
                                     tags[i] = ((packet[pos++]&0xFF)<<24)|((packet[pos++]&0xFF)<<16)|((packet[pos++]&0xFF)<<8)|(packet[pos++]&0xFF);
                                 }
-                                if (pos != end) break;
+                                if (pos != end)
+                                {
+                                    break;
+                                }
                                 if (debugProtocol != null)
                                 {
                                     debugProtocol.debugProtocolWrite("recv delitem tags="+Arrays.toString(tags));
@@ -807,7 +834,10 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
                         args = pos;
                         {
                             final int tag = ((packet[pos++]&0xFF)<<24)|((packet[pos++]&0xFF)<<16)|((packet[pos++]&0xFF)<<8)|(packet[pos++]&0xFF);
-                            if (pos != end) break;
+                            if (pos != end)
+                            {
+                                break;
+                            }
                             if (debugProtocol != null)
                             {
                                 debugProtocol.debugProtocolWrite("recv delspell tag="+tag);
@@ -1008,7 +1038,10 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
                 if (packet[pos++] != 'e') break;
                 if (packet[pos++] != ' ') break;
                 args = pos;
-                if (pos != end) break;
+                if (pos != end)
+                {
+                    break;
+                }
                 if (debugProtocol != null)
                 {
                     debugProtocol.debugProtocolWrite("recv goodbye");
@@ -1031,7 +1064,10 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
                         final int faceNum = ((packet[pos++]&0xFF)<<24)|((packet[pos++]&0xFF)<<16)|((packet[pos++]&0xFF)<<8)|(packet[pos++]&0xFF);
                         final int faceSetNum = packet[pos++]&0xFF;
                         final int len = ((packet[pos++]&0xFF)<<24)|((packet[pos++]&0xFF)<<16)|((packet[pos++]&0xFF)<<8)|(packet[pos++]&0xFF);
-                        if (pos+len != end) break;
+                        if (pos+len != end)
+                        {
+                            break;
+                        }
                         if (debugProtocol != null)
                         {
                             debugProtocol.debugProtocolWrite("recv image2 face="+faceNum+" set="+faceSetNum+" len="+len);
@@ -1076,7 +1112,10 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
                                 crossfireUpdateItemListener.additemReceived(location, tag, flags, weight, faceNum, name, namePl, anim, animSpeed, nrof, type);
                             }
                         }
-                        if (pos != end) break;
+                        if (pos != end)
+                        {
+                            break;
+                        }
                         for (final CrossfireUpdateItemListener crossfireUpdateItemListener : crossfireUpdateItemListeners)
                         {
                             crossfireUpdateItemListener.additemFinished();
@@ -1247,7 +1286,10 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
                 if (packet[pos++] != 'a') break;
                 if (packet[pos++] != 'p') break;
                 args = pos;
-                if (pos != end) break;
+                if (pos != end)
+                {
+                    break;
+                }
                 if (debugProtocol != null)
                 {
                     debugProtocol.debugProtocolWrite("recv newmap");
@@ -1270,7 +1312,10 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
                     args = pos;
                     {
                         final int pickupOptions = ((packet[pos++]&0xFF)<<24)|((packet[pos++]&0xFF)<<16)|((packet[pos++]&0xFF)<<8)|(packet[pos++]&0xFF);
-                        if (pos != end) break;
+                        if (pos != end)
+                        {
+                            break;
+                        }
                         if (debugProtocol != null)
                         {
                             debugProtocol.debugProtocolWrite("recv pickup options="+pickupOptions);
@@ -1297,7 +1342,10 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
                         final int nameLength = packet[pos++]&0xFF;
                         final String name = new String(packet, pos, nameLength, UTF8);
                         pos += nameLength;
-                        if (pos != end) break;
+                        if (pos != end)
+                        {
+                            break;
+                        }
                         if (debugProtocol != null)
                         {
                             debugProtocol.debugProtocolWrite("recv player tag="+tag+" weight="+weight+" face="+faceNum+" name="+name);
@@ -1413,7 +1461,10 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
                             pos++;
                         }
                     }
-                    if (pos != end) break;
+                    if (pos != end)
+                    {
+                        break;
+                    }
                     if (debugProtocol != null)
                     {
                         debugProtocol.debugProtocolWrite("recv setup "+options);
@@ -1436,7 +1487,10 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
                     {
                         final int facenbr = ((packet[pos++]&0xFF)<<8)|(packet[pos++]&0xFF);
                         final int smoothpic = ((packet[pos++]&0xFF)<<8)|(packet[pos++]&0xFF);
-                        if (pos != end) break;
+                        if (pos != end)
+                        {
+                            break;
+                        }
                         if (debugProtocol != null)
                         {
                             debugProtocol.debugProtocolWrite("recv smooth face="+facenbr+" smoothpic="+smoothpic);
@@ -1459,7 +1513,10 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
                             final int y = packet[pos++];
                             final int num = ((packet[pos++]&0xFF)<<8)|(packet[pos++]&0xFF);
                             final int type = packet[pos++];
-                            if (pos != end) break;
+                            if (pos != end)
+                            {
+                                break;
+                            }
                             if (debugProtocol != null)
                             {
                                 debugProtocol.debugProtocolWrite("recv sound pos="+x+"/"+y+" num="+num+" type="+type);
@@ -1488,7 +1545,10 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
                             final int nameLength = packet[pos++]&0xFF;
                             final String name = new String(packet, pos, nameLength, UTF8);
                             pos += nameLength;
-                            if (pos != end) break;
+                            if (pos != end)
+                            {
+                                break;
+                            }
                             if (debugProtocol != null)
                             {
                                 debugProtocol.debugProtocolWrite("recv sound2 pos="+x+"/"+y+" dir="+dir+" volume="+volume+" type="+type+" action="+action+" name="+name);
@@ -1633,7 +1693,10 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
                             break;
                         }
                     }
-                    if (pos != end) break;
+                    if (pos != end)
+                    {
+                        break;
+                    }
                     return;
                 }
                 break;
@@ -1646,7 +1709,10 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
                 args = pos;
                 {
                     final int tickNo = ((packet[pos++]&0xFF)<<24)|((packet[pos++]&0xFF)<<16)|((packet[pos++]&0xFF)<<8)|(packet[pos++]&0xFF);
-                    if (pos != end) break;
+                    if (pos != end)
+                    {
+                        break;
+                    }
                     if (debugProtocol != null)
                     {
                         debugProtocol.debugProtocolWrite("recv tick "+tickNo);
@@ -1699,7 +1765,10 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
                         final int valAnim = (flags&CfItem.UPD_ANIM) != 0 ? ((packet[pos++]&0xFF)<<8)|(packet[pos++]&0xFF) : 0;
                         final int valAnimSpeed = (flags&CfItem.UPD_ANIMSPEED) != 0 ? packet[pos++]&0xFF : 0;
                         final int valNrof = (flags&CfItem.UPD_NROF) != 0 ? ((packet[pos++]&0xFF)<<24)|((packet[pos++]&0xFF)<<16)|((packet[pos++]&0xFF)<<8)|(packet[pos++]&0xFF) : 0;
-                        if (pos != end) break;
+                        if (pos != end)
+                        {
+                            break;
+                        }
                         if (debugProtocol != null)
                         {
                             debugProtocol.debugProtocolWrite("recv upditem flags="+flags+" tag="+tag+" loc="+valLocation+" flags="+valFlags+" weight="+valWeight+" face="+valFaceNum+" name="+valName+" name_pl="+valNamePl+" anim="+valAnim+" anim_speed="+valAnimSpeed+" nrof="+valNrof);
@@ -1725,7 +1794,10 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
                         final int mana = (flags&CrossfireSpellListener.UPD_SP_MANA) != 0 ? ((packet[pos++]&0xFF)<<8)|(packet[pos++]&0xFF) : 0;
                         final int grace = (flags&CrossfireSpellListener.UPD_SP_GRACE) != 0 ? ((packet[pos++]&0xFF)<<8)|(packet[pos++]&0xFF) : 0;
                         final int damage = (flags&CrossfireSpellListener.UPD_SP_DAMAGE) != 0 ? ((packet[pos++]&0xFF)<<8)|(packet[pos++]&0xFF) : 0;
-                        if (pos != end) break;
+                        if (pos != end)
+                        {
+                            break;
+                        }
                         if (debugProtocol != null)
                         {
                             debugProtocol.debugProtocolWrite("recv updspell flags="+flags+" tag="+tag+" sp="+mana+" gr="+grace+" dam="+damage);
@@ -1886,7 +1958,10 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
                         switch (type)
                         {
                         case 0: // clear space
-                            if (len != 0) throw new UnknownCommandException("map2 command contains clear command with length "+len);
+                            if (len != 0)
+                            {
+                                throw new UnknownCommandException("map2 command contains clear command with length "+len);
+                            }
                             if (debugProtocol != null)
                             {
                                 debugProtocol.debugProtocolWrite("recv map2 "+x+"/"+y+" clear");
@@ -1898,7 +1973,10 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
                             break;
 
                         case 1: // darkness information
-                            if (len != 1) throw new UnknownCommandException("map2 command contains darkness command with length "+len);
+                            if (len != 1)
+                            {
+                                throw new UnknownCommandException("map2 command contains darkness command with length "+len);
+                            }
                             final int darkness = packet[pos++]&0xFF;
                             if (debugProtocol != null)
                             {
@@ -1920,7 +1998,10 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
                         case 0x17:
                         case 0x18:
                         case 0x19:
-                            if (len < 2) throw new UnknownCommandException("map2 command contains image command with length "+len);
+                            if (len < 2)
+                            {
+                                throw new UnknownCommandException("map2 command contains image command with length "+len);
+                            }
                             final int face = ((packet[pos++]&0xFF)<<8)|(packet[pos++]&0xFF);
                             if ((face&0x8000) == 0)
                             {
@@ -2713,12 +2794,30 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
      */
     public static void validateMapSize(final int mapWidth, final int mapHeight)
     {
-        if (mapWidth%2 == 0) throw new IllegalArgumentException("map width is even");
-        if (mapHeight%2 == 0) throw new IllegalArgumentException("map height is even");
-        if (mapWidth < 3) throw new IllegalArgumentException("map width is less than 3");
-        if (mapWidth > 63) throw new IllegalArgumentException("map width is greater than 63");
-        if (mapHeight < 3) throw new IllegalArgumentException("map width is less than 3");
-        if (mapHeight > 63) throw new IllegalArgumentException("map width is greater than 63");
+        if (mapWidth%2 == 0)
+        {
+            throw new IllegalArgumentException("map width is even");
+        }
+        if (mapHeight%2 == 0)
+        {
+            throw new IllegalArgumentException("map height is even");
+        }
+        if (mapWidth < 3)
+        {
+            throw new IllegalArgumentException("map width is less than 3");
+        }
+        if (mapWidth > 63)
+        {
+            throw new IllegalArgumentException("map width is greater than 63");
+        }
+        if (mapHeight < 3)
+        {
+            throw new IllegalArgumentException("map width is less than 3");
+        }
+        if (mapHeight > 63)
+        {
+            throw new IllegalArgumentException("map width is greater than 63");
+        }
     }
 
     /** {@inheritDoc} */
@@ -2743,7 +2842,10 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
     @Override
     public void setNumLookObjects(final int numLookObjects)
     {
-        if (numLookObjects < 1) throw new IllegalArgumentException("num_look_objects is not positive");
+        if (numLookObjects < 1)
+        {
+            throw new IllegalArgumentException("num_look_objects is not positive");
+        }
         this.numLookObjects = numLookObjects;
     }
 
