@@ -62,21 +62,6 @@ public abstract class GUILabel extends AbstractLabel
     private final Alignment textAlignment;
 
     /**
-     * The text alignment.
-     */
-    public enum Alignment
-    {
-        /** Left-aligned. */
-        LEFT,
-
-        /** Center-aligned. */
-        CENTER,
-
-        /** Right-aligned. */
-        RIGHT,
-    }
-
-    /**
      * Create a new instance.
      *
      * @param tooltipManager the tooltip manager to update

@@ -27,7 +27,7 @@ import com.realtime.crossfire.jxclient.gui.gui.GUIElement;
 import com.realtime.crossfire.jxclient.gui.gui.GUIElementListener;
 import com.realtime.crossfire.jxclient.gui.gui.JXCWindowRenderer;
 import com.realtime.crossfire.jxclient.gui.gui.TooltipManager;
-import com.realtime.crossfire.jxclient.gui.label.GUILabel;
+import com.realtime.crossfire.jxclient.gui.label.Alignment;
 import com.realtime.crossfire.jxclient.gui.label.GUIOneLineLabel;
 import java.awt.Color;
 import java.awt.Font;
@@ -267,7 +267,7 @@ public class DialogFactory
             result.add(new GUIDialogTitle(tooltipManager, windowRenderer, elementListener, name+"_t", sizeW, sizeN, w-sizeW-sizeE, titleHeight, frameC, alpha));
             if (!title.equals("_"))
             {
-                final GUIElement titleLabel = new GUIOneLineLabel(tooltipManager, elementListener, name+"_title", sizeW, sizeN, w-sizeW-sizeE, titleHeight, null, titleFont, titleColor, titleBackgroundColor, GUILabel.Alignment.LEFT, title);
+                final GUIElement titleLabel = new GUIOneLineLabel(tooltipManager, elementListener, name+"_title", sizeW, sizeN, w-sizeW-sizeE, titleHeight, null, titleFont, titleColor, titleBackgroundColor, Alignment.LEFT, title);
                 result.add(titleLabel);
                 titleLabel.setIgnore();
             }
