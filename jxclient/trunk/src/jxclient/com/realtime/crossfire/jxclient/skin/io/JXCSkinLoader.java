@@ -28,8 +28,8 @@ import com.realtime.crossfire.jxclient.faces.FacesManager;
 import com.realtime.crossfire.jxclient.gui.GUIMagicMap;
 import com.realtime.crossfire.jxclient.gui.GUIMap;
 import com.realtime.crossfire.jxclient.gui.GUIPicture;
+import com.realtime.crossfire.jxclient.gui.button.ButtonImages;
 import com.realtime.crossfire.jxclient.gui.button.GUIButton;
-import com.realtime.crossfire.jxclient.gui.button.GUITextButton;
 import com.realtime.crossfire.jxclient.gui.command.CommandCheckBoxOption;
 import com.realtime.crossfire.jxclient.gui.command.CommandType;
 import com.realtime.crossfire.jxclient.gui.command.GUICommandList;
@@ -1071,8 +1071,8 @@ public class JXCSkinLoader
             final String down = args[3];
             final Font font = definedFonts.lookup(args[4]);
             final Color color = ParseUtils.parseColor(args[5]);
-            final GUITextButton.ButtonImages upImages = new GUITextButton.ButtonImages(imageParser.getImage(up+"_w"), imageParser.getImage(up+"_c"), imageParser.getImage(up+"_e"));
-            final GUITextButton.ButtonImages downImages = new GUITextButton.ButtonImages(imageParser.getImage(down+"_w"), imageParser.getImage(down+"_c"), imageParser.getImage(down+"_e"));
+            final ButtonImages upImages = new ButtonImages(imageParser.getImage(up+"_w"), imageParser.getImage(up+"_c"), imageParser.getImage(up+"_e"));
+            final ButtonImages downImages = new ButtonImages(imageParser.getImage(down+"_w"), imageParser.getImage(down+"_c"), imageParser.getImage(down+"_e"));
             textButtonFactory = new TextButtonFactory(upImages, downImages, font, color);
         }
         else
