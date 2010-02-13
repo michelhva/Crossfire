@@ -35,5 +35,5 @@ public enum RendererGuiState
 
     NEWCHAR,
 
-    PLAYING;
+    PLAYING
 }
