@@ -28,11 +28,10 @@ import org.jetbrains.annotations.NotNull;
 
 /**
  * A scheduler for synchronous event notifications. Notifications are triggered
- * by calling {@link #trigger()}. Notifications are delivered by calling
- * {@link EventSchedulerCallback#callback()} of {@link
- * #eventSchedulerCallback}. This callback is called {@link #delay} after the
- * last call to {@link #trigger()} but not faster than once per {@link
- * #eventSchedulerCallback}.
+ * by calling {@link #trigger()}. Notifications are delivered by calling the
+ * event scheduler callback of {@link #eventSchedulerCallback}. This callback
+ * is called {@link #delay} after the last call to {@link #trigger()} but not
+ * faster than once per {@link #eventSchedulerCallback}.
  * @author Andreas Kirschbaum
  */
 public class EventScheduler
