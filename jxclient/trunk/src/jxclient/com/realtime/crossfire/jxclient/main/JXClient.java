@@ -51,12 +51,12 @@ import javax.swing.SwingUtilities;
 import org.jetbrains.annotations.NotNull;
 
 /**
- * This is the entry point for JXClient. Note that this class doesn't do much
- * by itself - most of the work in done in JXCWindow or CrossfireServerConnection.
+ * This is the entry point for JXClient. Note that this class doesn't do much by
+ * itself - most of the work in done in JXCWindow or CrossfireServerConnection.
+ * @author Lauwenmark
+ * @version 1.0
  * @see JXCWindow
  * @see com.realtime.crossfire.jxclient.server.CrossfireServerConnection
- * @version 1.0
- * @author Lauwenmark
  * @since 1.0
  */
 public class JXClient

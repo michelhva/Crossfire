@@ -61,10 +61,10 @@ public class MetaserverProcessor
     private boolean running = false;
 
     /**
-     * Counter used by the query {@link #thread}. If positive, the value will
-     * be decremented once per second; when it reaches zero, it is reset back
-     * to {@link #UPDATE_INTERVAL} and a metaserver query is executed.
-     * <p>
+     * Counter used by the query {@link #thread}. If positive, the value will be
+     * decremented once per second; when it reaches zero, it is reset back to
+     * {@link #UPDATE_INTERVAL} and a metaserver query is executed.
+     * <p/>
      * When set to zero, updating is disabled.
      */
     private int counter = UPDATE_INTERVAL;

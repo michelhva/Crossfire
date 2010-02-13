@@ -27,9 +27,9 @@ import org.jetbrains.annotations.NotNull;
 
 /**
  * The representation of a Crossfire Item, client-side.
- * @version 1.0
  * @author Lauwenmark
  * @author Andreas Kirschbaum
+ * @version 1.0
  * @since 1.0
  */
 public class CfItem
@@ -101,92 +101,92 @@ public class CfItem
     /**
      * The flags mask for applied states.
      */
-    public static final int F_APPLIED      = 0x000F;
+    public static final int F_APPLIED = 0x000F;
 
     /**
      * The location mask.
      */
-    public static final int F_LOCATION     = 0x00F0;
+    public static final int F_LOCATION = 0x00F0;
 
     /**
      * The flags value for blessed items.
      */
-    public static final int F_BLESSED      = 0x0100;
+    public static final int F_BLESSED = 0x0100;
 
     /**
      * The flags value for unpaid items.
      */
-    public static final int F_UNPAID       = 0x0200;
+    public static final int F_UNPAID = 0x0200;
 
     /**
      * The flags value for magical items.
      */
-    public static final int F_MAGIC        = 0x0400;
+    public static final int F_MAGIC = 0x0400;
 
     /**
      * The flags value for cursed items.
      */
-    public static final int F_CURSED       = 0x0800;
+    public static final int F_CURSED = 0x0800;
 
     /**
      * The flags value for damned items.
      */
-    public static final int F_DAMNED       = 0x1000;
+    public static final int F_DAMNED = 0x1000;
 
     /**
      * The flags value for opened items.
      */
-    public static final int F_OPEN         = 0x2000;
+    public static final int F_OPEN = 0x2000;
 
     /**
      * The flags value for non-pickable items.
      */
-    public static final int F_NOPICK       = 0x4000;
+    public static final int F_NOPICK = 0x4000;
 
     /**
      * The flags value for locked items.
      */
-    public static final int F_LOCKED       = 0x8000;
+    public static final int F_LOCKED = 0x8000;
 
     /**
      * The update flags value for location updates.
      */
-    public static final int UPD_LOCATION   = 0x01;
+    public static final int UPD_LOCATION = 0x01;
 
     /**
      * The update flags value for flags updates.
      */
-    public static final int UPD_FLAGS      = 0x02;
+    public static final int UPD_FLAGS = 0x02;
 
     /**
      * The update flags value for weight updates.
      */
-    public static final int UPD_WEIGHT     = 0x04;
+    public static final int UPD_WEIGHT = 0x04;
 
     /**
      * The update flags value for face updates.
      */
-    public static final int UPD_FACE       = 0x08;
+    public static final int UPD_FACE = 0x08;
 
     /**
      * The update flags value for name updates.
      */
-    public static final int UPD_NAME       = 0x10;
+    public static final int UPD_NAME = 0x10;
 
     /**
      * The update flags value for animation updates.
      */
-    public static final int UPD_ANIM       = 0x20;
+    public static final int UPD_ANIM = 0x20;
 
     /**
      * The update flags value for animation speed updates.
      */
-    public static final int UPD_ANIMSPEED  = 0x40;
+    public static final int UPD_ANIMSPEED = 0x40;
 
     /**
      * The update flags value for nrof updates.
      */
-    public static final int UPD_NROF       = 0x80;
+    public static final int UPD_NROF = 0x80;
 
     /**
      * The listeners to be notified.
@@ -535,7 +535,6 @@ public class CfItem
     /**
      * Add a <code>CfItemModifiedListener</code>. The listener will be notified
      * about attribute changes of this item.
-     *
      * @param listener the listener to remove
      */
     public void addCfItemModifiedListener(@NotNull final CfItemListener listener)
@@ -545,7 +544,6 @@ public class CfItem
 
     /**
      * Remove a <code>CfItemModifiedListener</code>.
-     *
      * @param listener the listener to remove
      */
     public void removeCfItemModifiedListener(@NotNull final CfItemListener listener)

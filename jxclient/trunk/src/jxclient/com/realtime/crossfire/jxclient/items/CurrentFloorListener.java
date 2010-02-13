@@ -26,14 +26,12 @@ import java.util.EventListener;
 
 /**
  * Interface for listeners for changes of current floor.
- *
  * @author Andreas Kirschbaum
  */
 public interface CurrentFloorListener extends EventListener
 {
     /**
      * Will be called when the current floor has changed.
-     *
      * @param currentFloor the new current floor
      */
     void currentFloorChanged(int currentFloor);

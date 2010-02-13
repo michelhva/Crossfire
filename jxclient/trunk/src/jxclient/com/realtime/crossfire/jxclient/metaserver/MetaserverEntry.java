@@ -27,7 +27,6 @@ import org.jetbrains.annotations.Nullable;
 
 /**
  * Represents a response line from the metaserver.
- *
  * @author Andreas Kirschbaum
  */
 public class MetaserverEntry implements Comparable<MetaserverEntry>
@@ -142,7 +141,9 @@ public class MetaserverEntry implements Comparable<MetaserverEntry>
         return codebase;
     }
 
-    /** {@inheritDoc} */
+    /**
+     * {@inheritDoc}
+     */
     @NotNull
     @Override
     public String toString()
@@ -150,21 +151,27 @@ public class MetaserverEntry implements Comparable<MetaserverEntry>
         return "Host:"+hostname+" Version:"+version+" Players:"+players+" Comment:"+comment;
     }
 
-    /** {@inheritDoc} */
+    /**
+     * {@inheritDoc}
+     */
     @Override
     public int compareTo(@NotNull final MetaserverEntry o)
     {
         return hostname.compareTo(o.hostname);
     }
 
-    /** {@inheritDoc} */
+    /**
+     * {@inheritDoc}
+     */
     @Override
     public int hashCode()
     {
         return hostname.hashCode();
     }
 
-    /** {@inheritDoc} */
+    /**
+     * {@inheritDoc}
+     */
     @Override
     public boolean equals(@Nullable final Object obj)
     {
@@ -182,25 +189,13 @@ public class MetaserverEntry implements Comparable<MetaserverEntry>
 
     /**
      * Return a formatted string using the given format.
-     *
-     * <p>Supported format strings:
-     * <ul>
-     * <li>%% - a literal % character
-     * <li>%A - archbase
-     * <li>%C - comment
-     * <li>%E - codebase
-     * <li>%H - hostname
-     * <li>%I - bytes in
-     * <li>%M - mapbase
-     * <li>%O - bytes out
-     * <li>%P - number of players
-     * <li>%T - uptime
-     * <li>%U - time since last update
-     * <li>%V - server version
+     * <p/>
+     * Supported format strings: <ul> <li>%% - a literal % character <li>%A -
+     * archbase <li>%C - comment <li>%E - codebase <li>%H - hostname <li>%I -
+     * bytes in <li>%M - mapbase <li>%O - bytes out <li>%P - number of players
+     * <li>%T - uptime <li>%U - time since last update <li>%V - server version
      * </ul>
-     *
      * @param format The format.
-     *
      * @return The formatted string.
      */
     @NotNull

@@ -63,7 +63,8 @@ public class MetaserverModel
     private final Collection<MetaserverListener> metaserverListeners = new ArrayList<MetaserverListener>();
 
     /**
-     * All registered metaserver entry listeners. Maps entry index to list of listeners.
+     * All registered metaserver entry listeners. Maps entry index to list of
+     * listeners.
      */
     @NotNull
     private final Map<Integer, List<MetaserverEntryListener>> metaserverEntryListeners = new HashMap<Integer, List<MetaserverEntryListener>>();
@@ -72,7 +73,7 @@ public class MetaserverModel
      * Returns a metaserver entry by index.
      * @param index the index
      * @return the metaserver entry, or <code>null</code> if the index is
-     * invalid
+     *         invalid
      */
     @Nullable
     public MetaserverEntry getEntry(final int index)

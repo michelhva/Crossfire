@@ -37,7 +37,6 @@ import org.jetbrains.annotations.NotNull;
 
 /**
  * Maintains a set of known servers backed up in a file.
- *
  * @author Andreas Kirschbaum
  */
 public class ServerCache
@@ -63,7 +62,6 @@ public class ServerCache
 
     /**
      * Create a new instance.
-     *
      * @param file The backing file.
      */
     public ServerCache(@NotNull final File file)
@@ -75,7 +73,6 @@ public class ServerCache
 
     /**
      * Add an entry to the cache. Overwrites old entries for the same hostname.
-     *
      * @param metaserverEntry The entry to add.
      */
     public void put(@NotNull final MetaserverEntry metaserverEntry)
@@ -85,7 +82,6 @@ public class ServerCache
 
     /**
      * Expire entries older than a given timestamp from the cache.
-     *
      * @param timestamp The timestamp.
      */
     public void expire(final long timestamp)
@@ -106,7 +102,6 @@ public class ServerCache
     /**
      * Return all cached entries. The returned set may be modified by the
      * caller.
-     *
      * @return The cached entries; maps key to metaserver entry.
      */
     @NotNull
@@ -122,9 +117,7 @@ public class ServerCache
 
     /**
      * Return the key for a metaserver entry.
-     *
      * @param metaserverEntry The metaserver entry.
-     *
      * @return The key.
      */
     @NotNull
@@ -154,7 +147,7 @@ public class ServerCache
                     final LineNumberReader lnr = new LineNumberReader(isr);
                     try
                     {
-                        for (;;)
+                        for (; ;)
                         {
                             final String line = lnr.readLine();
                             if (line == null)

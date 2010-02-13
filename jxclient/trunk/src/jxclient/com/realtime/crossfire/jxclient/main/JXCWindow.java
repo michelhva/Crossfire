@@ -245,15 +245,15 @@ public class JXCWindow extends JFrame
     private final Macros macros;
 
     /**
-     * The {@link WindowFocusListener} registered for this window. It resets
-     * the keyboard modifier state when the window loses the focus. The idea is
-     * to prevent the following: user switches from jxclient to another window
-     * with CTRL+ALT+direction key. This makes jxclient enter RUN mode since
-     * CTRL was pressed. The following key release event is not received by
-     * jxclient because it does not own the focus. Therefore jxclient's CTRL
-     * state is still active when the user switches back to jxclient. A
-     * following direction key then causes the character to run which is not
-     * what the player wants.
+     * The {@link WindowFocusListener} registered for this window. It resets the
+     * keyboard modifier state when the window loses the focus. The idea is to
+     * prevent the following: user switches from jxclient to another window with
+     * CTRL+ALT+direction key. This makes jxclient enter RUN mode since CTRL was
+     * pressed. The following key release event is not received by jxclient
+     * because it does not own the focus. Therefore jxclient's CTRL state is
+     * still active when the user switches back to jxclient. A following
+     * direction key then causes the character to run which is not what the
+     * player wants.
      */
     @NotNull
     private final WindowFocusListener windowFocusListener = new WindowAdapter()
@@ -462,8 +462,8 @@ public class JXCWindow extends JFrame
     };
 
     /**
-     * The {@link CrossfireQueryListener} attached to {@link #server}. It
-     * parses query messages to open/close dialogs.
+     * The {@link CrossfireQueryListener} attached to {@link #server}. It parses
+     * query messages to open/close dialogs.
      */
     @NotNull
     private final CrossfireQueryListener crossfireQueryListener = new CrossfireQueryListener()

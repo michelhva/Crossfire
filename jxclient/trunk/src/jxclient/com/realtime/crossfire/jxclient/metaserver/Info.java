@@ -43,7 +43,6 @@ public class Info
 
     /**
      * Create a new instance. Sets the timestamp to "now".
-     *
      * @param metaserverEntry The metaserver entry.
      */
     public Info(@NotNull final MetaserverEntry metaserverEntry)
@@ -53,9 +52,7 @@ public class Info
 
     /**
      * Create a new instance.
-     *
      * @param metaserverEntry The metaserver entry.
-     *
      * @param timestamp The timestamp.
      */
     public Info(@NotNull final MetaserverEntry metaserverEntry, final long timestamp)
@@ -66,7 +63,6 @@ public class Info
 
     /**
      * Return the metaserver entry.
-     *
      * @return The metaserver entry.
      */
     @NotNull
@@ -77,7 +73,6 @@ public class Info
 
     /**
      * Return the timestamp.
-     *
      * @return The timestamp.
      */
     public long getTimestamp()

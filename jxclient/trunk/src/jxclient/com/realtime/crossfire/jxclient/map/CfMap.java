@@ -29,9 +29,9 @@ import org.jetbrains.annotations.Nullable;
 /**
  * Represents a map (as seen by the client). A map is a grid in which {@link
  * CfMapSquare}s can be stored.
- *
- * <p>The map will be automatically enlarged by accesses to new squares. Not
- * yet set squares are considered dark.
+ * <p/>
+ * The map will be automatically enlarged by accesses to new squares. Not yet
+ * set squares are considered dark.
  * @author Andreas Kirschbaum
  */
 public class CfMap
@@ -141,7 +141,7 @@ public class CfMap
      * @param x the x-coordinate of the square
      * @param y the y-coordinate of the square
      * @return the darkness value of the square; 0=dark, 255=full bright; not
-     * yet set faces return 0
+     *         yet set faces return 0
      */
     public int getDarkness(final int x, final int y)
     {
@@ -266,8 +266,7 @@ public class CfMap
      * @param x the x-coordinate of the square
      * @param y the y-coordinate of the square
      * @param layer the layer of the face
-     * @return the face; dark (i.e. not yet set) faces return
-     * <code>null</code>
+     * @return the face; dark (i.e. not yet set) faces return <code>null</code>
      */
     @Nullable
     public Face getFace(final int x, final int y, final int layer)
@@ -297,8 +296,8 @@ public class CfMap
      * @param x the x-coordinate of the square
      * @param y the y-coordinate of the square
      * @param layer the layer to return the head for
-     * @return the head map square, or <code>null</code> if this square does
-     * not contain a multi-tail
+     * @return the head map square, or <code>null</code> if this square does not
+     *         contain a multi-tail
      */
     @Nullable
     public CfMapSquare getHeadMapSquare(final int x, final int y, final int layer)
@@ -350,12 +349,12 @@ public class CfMap
     }
 
     /**
-     * Checks if a given position is within the defined map area.
-     * <p>Returns additional information in {@link #ox} and {@link #oy}.
+     * Checks if a given position is within the defined map area. <p>Returns
+     * additional information in {@link #ox} and {@link #oy}.
      * @param x the x-coordinate to check
      * @param y the y-coordinate to check
      * @return the map patch or <code>null</code> if the coordinates are out of
-     * map bounds
+     *         map bounds
      */
     @Nullable
     private CfMapPatch getMapPatch(final int x, final int y)
@@ -413,7 +412,7 @@ public class CfMap
      * @param x the x-coordinate to expand the defined area to
      * @param y the y-coordinate to expand the defined area to
      * @return the map patch or <code>null</code> if the coordinates are out of
-     * map bounds
+     *         map bounds
      */
     @NotNull
     private CfMapPatch expandTo(final int x, final int y)

@@ -23,7 +23,6 @@ package com.realtime.crossfire.jxclient.metaserver;
 
 /**
  * Interface for listeners on metaserver related events.
- *
  * @author Andreas Kirschbaum
  */
 public interface MetaserverListener

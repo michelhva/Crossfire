@@ -85,7 +85,9 @@ public class Location
         return layer;
     }
 
-    /** {@inheritDoc} */
+    /**
+     * {@inheritDoc}
+     */
     @Override
     public boolean equals(@Nullable final Object obj)
     {
@@ -97,18 +99,22 @@ public class Location
         {
             return false;
         }
-        final Location loc = (Location) obj;
+        final Location loc = (Location)obj;
         return loc.x == x && loc.y == y && loc.layer == layer;
     }
 
-    /** {@inheritDoc} */
+    /**
+     * {@inheritDoc}
+     */
     @Override
     public int hashCode()
     {
         return x^y*0x1000^layer*0x1000000;
     }
 
-    /** {@inheritDoc} */
+    /**
+     * {@inheritDoc}
+     */
     @NotNull
     @Override
     public String toString()

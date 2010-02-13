@@ -29,12 +29,11 @@ import org.jetbrains.annotations.Nullable;
 /**
  * Represents a square in a {@link CfMap}. A square comprises of {@link
  * CrossfireMap2Command#NUM_LAYERS} faces as well as a darkness value.
- *
- * <p>This class assumes that the "head" part of a face is the part the server
- * did sent. This is the bottom-right part for multi-square objects. Not that
- * this definition is inconsistent to what the server assumes as the head part
- * of an object.
- *
+ * <p/>
+ * This class assumes that the "head" part of a face is the part the server did
+ * sent. This is the bottom-right part for multi-square objects. Not that this
+ * definition is inconsistent to what the server assumes as the head part of an
+ * object.
  * @author Andreas Kirschbaum
  */
 public class CfMapSquare
@@ -242,8 +241,8 @@ public class CfMapSquare
     /**
      * Returns the map square of the head of a multi-square object.
      * @param layer the layer to return the head for
-     * @return the head map square, or <code>null</code> if this square does
-     * not contain a multi-tail
+     * @return the head map square, or <code>null</code> if this square does not
+     *         contain a multi-tail
      */
     @Nullable
     public CfMapSquare getHeadMapSquare(final int layer)
@@ -283,7 +282,9 @@ public class CfMapSquare
         return true;
     }
 
-    /** {@inheritDoc} */
+    /**
+     * {@inheritDoc}
+     */
     @NotNull
     @Override
     public String toString()
