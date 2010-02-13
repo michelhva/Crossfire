@@ -756,10 +756,14 @@ public class JXCWindow extends JFrame
         }
     }
 
+    /**
+     * Returns the window renderer instance for this window.
+     * @return the window renderer
+     */
     @Deprecated
     @NotNull
-    public GuiManager getGuiManager()
+    public JXCWindowRenderer getWindowRenderer()
     {
-        return guiManager;
+        return windowRenderer;
     }
 }

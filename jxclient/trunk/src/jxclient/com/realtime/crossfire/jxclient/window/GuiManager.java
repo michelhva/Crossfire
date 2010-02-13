@@ -719,17 +719,6 @@ public class GuiManager
     }
 
     /**
-     * Returns the window renderer instance for this window.
-     * @return the window renderer
-     */
-    @Deprecated
-    @NotNull
-    public JXCWindowRenderer getWindowRenderer()
-    {
-        return windowRenderer;
-    }
-
-    /**
      * Returns the current skin.
      * @return the skin
      */
