@@ -343,7 +343,7 @@ public class GuiManager
         {
             if (dialogConnect != null)
             {
-                windowRenderer.closeDialog(dialogConnect);
+                closeDialog(dialogConnect);
             }
         }
 
@@ -424,7 +424,7 @@ public class GuiManager
 
         if (dialogDisconnect != null)
         {
-            windowRenderer.closeDialog(dialogDisconnect);
+            closeDialog(dialogDisconnect);
         }
         windowRenderer.openDialog(dialogQuit, false);
         return true;
@@ -440,7 +440,7 @@ public class GuiManager
     {
         if (keybindingsManager.escPressed())
         {
-            windowRenderer.closeDialog(keybindDialog);
+            closeDialog(keybindDialog);
         }
         else if (windowRenderer.deactivateCommandInput())
         {
@@ -456,12 +456,12 @@ public class GuiManager
             {
                 if (dialogQuit != null)
                 {
-                    windowRenderer.closeDialog(dialogQuit);
+                    closeDialog(dialogQuit);
                 }
             }
             else
             {
-                windowRenderer.closeDialog(dialogDisconnect);
+                closeDialog(dialogDisconnect);
             }
         }
         else
@@ -474,12 +474,12 @@ public class GuiManager
             {
                 if (dialogDisconnect != null)
                 {
-                    windowRenderer.closeDialog(dialogDisconnect);
+                    closeDialog(dialogDisconnect);
                 }
             }
             else
             {
-                windowRenderer.closeDialog(dialogQuit);
+                closeDialog(dialogQuit);
             }
         }
         return 0;
@@ -562,7 +562,7 @@ public class GuiManager
      */
     public void closeQueryDialog()
     {
-        windowRenderer.closeDialog(queryDialog);
+        closeDialog(queryDialog);
     }
 
     public void initRendering(final boolean fullScreen)
@@ -609,7 +609,7 @@ public class GuiManager
             // ignore
             return;
         }
-        windowRenderer.closeDialog(dialog);
+        closeDialog(dialog);
     }
 
     /**
@@ -632,18 +632,18 @@ public class GuiManager
     {
         if (dialogDisconnect != null)
         {
-            windowRenderer.closeDialog(dialogDisconnect);
+            closeDialog(dialogDisconnect);
         }
         if (dialogQuit != null)
         {
-            windowRenderer.closeDialog(dialogQuit);
+            closeDialog(dialogQuit);
         }
         if (dialogConnect != null)
         {
-            windowRenderer.closeDialog(dialogConnect);
+            closeDialog(dialogConnect);
         }
-        windowRenderer.closeDialog(queryDialog);
-        windowRenderer.closeDialog(skin.getDialogBook(1));
+        closeDialog(queryDialog);
+        closeDialog(skin.getDialogBook(1));
     }
 
     /**
@@ -682,7 +682,16 @@ public class GuiManager
      */
     public void closeKeybindDialog()
     {
-        windowRenderer.closeDialog(keybindDialog);
+        closeDialog(keybindDialog);
+    }
+
+    /**
+     * Closes the given dialog. Does nothing if the dialog is not opened.
+     * @param dialog the dialog to close
+     */
+    public void closeDialog(@NotNull final Gui dialog)
+    {
+        windowRenderer.closeDialog(dialog);
     }
 
     /**
