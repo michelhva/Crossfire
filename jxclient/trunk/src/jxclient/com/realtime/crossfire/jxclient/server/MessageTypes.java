@@ -142,26 +142,86 @@ public class MessageTypes
      */
     public static int parseMessageType(@NotNull final String str) throws UnknownCommandException
     {
-        if (str.equals("BOOK")) return MSG_TYPE_BOOK;
-        if (str.equals("CARD")) return MSG_TYPE_CARD;
-        if (str.equals("PAPER")) return MSG_TYPE_PAPER;
-        if (str.equals("SIGN")) return MSG_TYPE_SIGN;
-        if (str.equals("MONUMENT")) return MSG_TYPE_MONUMENT;
-        if (str.equals("DIALOG")) return MSG_TYPE_DIALOG;
-        if (str.equals("MOTD")) return MSG_TYPE_MOTD;
-        if (str.equals("ADMIN")) return MSG_TYPE_ADMIN;
-        if (str.equals("SHOP")) return MSG_TYPE_SHOP;
-        if (str.equals("COMMAND")) return MSG_TYPE_COMMAND;
-        if (str.equals("ATTRIBUTE")) return MSG_TYPE_ATTRIBUTE;
-        if (str.equals("SKILL")) return MSG_TYPE_SKILL;
-        if (str.equals("APPLY")) return MSG_TYPE_APPLY;
-        if (str.equals("ATTACK")) return MSG_TYPE_ATTACK;
-        if (str.equals("COMMUNICATION")) return MSG_TYPE_COMMUNICATION;
-        if (str.equals("SPELL")) return MSG_TYPE_SPELL;
-        if (str.equals("ITEM")) return MSG_TYPE_ITEM;
-        if (str.equals("MISC")) return MSG_TYPE_MISC;
-        if (str.equals("VICTIM")) return MSG_TYPE_VICTIM;
-        if (str.equals("QUERY")) return MSG_TYPE_QUERY;
+        if (str.equals("BOOK"))
+        {
+            return MSG_TYPE_BOOK;
+        }
+        if (str.equals("CARD"))
+        {
+            return MSG_TYPE_CARD;
+        }
+        if (str.equals("PAPER"))
+        {
+            return MSG_TYPE_PAPER;
+        }
+        if (str.equals("SIGN"))
+        {
+            return MSG_TYPE_SIGN;
+        }
+        if (str.equals("MONUMENT"))
+        {
+            return MSG_TYPE_MONUMENT;
+        }
+        if (str.equals("DIALOG"))
+        {
+            return MSG_TYPE_DIALOG;
+        }
+        if (str.equals("MOTD"))
+        {
+            return MSG_TYPE_MOTD;
+        }
+        if (str.equals("ADMIN"))
+        {
+            return MSG_TYPE_ADMIN;
+        }
+        if (str.equals("SHOP"))
+        {
+            return MSG_TYPE_SHOP;
+        }
+        if (str.equals("COMMAND"))
+        {
+            return MSG_TYPE_COMMAND;
+        }
+        if (str.equals("ATTRIBUTE"))
+        {
+            return MSG_TYPE_ATTRIBUTE;
+        }
+        if (str.equals("SKILL"))
+        {
+            return MSG_TYPE_SKILL;
+        }
+        if (str.equals("APPLY"))
+        {
+            return MSG_TYPE_APPLY;
+        }
+        if (str.equals("ATTACK"))
+        {
+            return MSG_TYPE_ATTACK;
+        }
+        if (str.equals("COMMUNICATION"))
+        {
+            return MSG_TYPE_COMMUNICATION;
+        }
+        if (str.equals("SPELL"))
+        {
+            return MSG_TYPE_SPELL;
+        }
+        if (str.equals("ITEM"))
+        {
+            return MSG_TYPE_ITEM;
+        }
+        if (str.equals("MISC"))
+        {
+            return MSG_TYPE_MISC;
+        }
+        if (str.equals("VICTIM"))
+        {
+            return MSG_TYPE_VICTIM;
+        }
+        if (str.equals("QUERY"))
+        {
+            return MSG_TYPE_QUERY;
+        }
         throw new UnknownCommandException(str);
     }
 }

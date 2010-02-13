@@ -133,11 +133,26 @@ public class GUICheckBox extends ActivatableGUIElement
     public GUICheckBox(@NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final String name, final int x, final int y, final int w, final int h, @NotNull final BufferedImage checkedImage, @NotNull final BufferedImage uncheckedImage, @NotNull final Font font, @NotNull final Color color, @NotNull final CheckBoxOption option, @NotNull final String text)
     {
         super(tooltipManager, elementListener, name, x, y, w, h, Transparency.TRANSLUCENT);
-        if (checkedImage.getHeight() != h) throw new IllegalArgumentException("'checked' height is "+checkedImage.getHeight()+" but checkbox height is "+h);
-        if (uncheckedImage.getHeight() != h) throw new IllegalArgumentException("'unchecked' height is "+uncheckedImage.getHeight()+" but checkbox height is "+h);
-        if (checkedImage.getWidth() != uncheckedImage.getWidth()) throw new IllegalArgumentException("'checked' width is "+checkedImage.getWidth()+" but 'unchecked' width is "+uncheckedImage.getWidth());
-        if (checkedImage.getWidth() >= w) throw new IllegalArgumentException("'checked' width is "+checkedImage.getWidth()+" but checkbox width is "+w);
-        if (uncheckedImage.getWidth() >= w) throw new IllegalArgumentException("'unchecked' width is "+uncheckedImage.getWidth()+" but checkbox width is "+w);
+        if (checkedImage.getHeight() != h)
+        {
+            throw new IllegalArgumentException("'checked' height is "+checkedImage.getHeight()+" but checkbox height is "+h);
+        }
+        if (uncheckedImage.getHeight() != h)
+        {
+            throw new IllegalArgumentException("'unchecked' height is "+uncheckedImage.getHeight()+" but checkbox height is "+h);
+        }
+        if (checkedImage.getWidth() != uncheckedImage.getWidth())
+        {
+            throw new IllegalArgumentException("'checked' width is "+checkedImage.getWidth()+" but 'unchecked' width is "+uncheckedImage.getWidth());
+        }
+        if (checkedImage.getWidth() >= w)
+        {
+            throw new IllegalArgumentException("'checked' width is "+checkedImage.getWidth()+" but checkbox width is "+w);
+        }
+        if (uncheckedImage.getWidth() >= w)
+        {
+            throw new IllegalArgumentException("'unchecked' width is "+uncheckedImage.getWidth()+" but checkbox width is "+w);
+        }
 
         this.checkedImage = checkedImage;
         this.uncheckedImage = uncheckedImage;

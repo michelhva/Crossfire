@@ -348,13 +348,34 @@ public class DefaultScriptProcess extends Thread implements ScriptProcess
     private void commandSentItem(@NotNull final String cmd, @NotNull final CfItem item)
     {
         int flags = 0;
-        if (item.isMagic()) flags |= 0x100;
-        if (item.isCursed()) flags |= 0x80;
-        if (item.isDamned()) flags |= 0x40;
-        if (item.isUnpaid()) flags |= 0x20;
-        if (item.isLocked()) flags |= 0x10;
-        if (item.isApplied()) flags |= 0x08;
-        if (item.isOpen()) flags |= 0x04;
+        if (item.isMagic())
+        {
+            flags |= 0x100;
+        }
+        if (item.isCursed())
+        {
+            flags |= 0x80;
+        }
+        if (item.isDamned())
+        {
+            flags |= 0x40;
+        }
+        if (item.isUnpaid())
+        {
+            flags |= 0x20;
+        }
+        if (item.isLocked())
+        {
+            flags |= 0x10;
+        }
+        if (item.isApplied())
+        {
+            flags |= 0x08;
+        }
+        if (item.isOpen())
+        {
+            flags |= 0x04;
+        }
         final int nrof = Math.max(1, item.getNrOf());
         final String name = nrof <= 1 ? item.getName() : nrof+" "+item.getName();
         commandSent(cmd+" "+item.getTag()+" "+nrof+" "+Math.max(0, item.getWeight())+" "+flags+" "+item.getType()+" "+name);

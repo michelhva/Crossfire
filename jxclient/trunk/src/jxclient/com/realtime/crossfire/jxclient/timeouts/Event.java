@@ -80,8 +80,14 @@ public class Event implements Comparable<Event>
     @Override
     public int compareTo(@NotNull final Event o)
     {
-        if (timeout < o.timeout) return -1;
-        if (timeout > o.timeout) return +1;
+        if (timeout < o.timeout)
+        {
+            return -1;
+        }
+        if (timeout > o.timeout)
+        {
+            return +1;
+        }
         return 0;
     }
 
@@ -96,8 +102,14 @@ public class Event implements Comparable<Event>
     @Override
     public boolean equals(@Nullable final Object obj)
     {
-        if (obj == null) return false;
-        if (obj.getClass() != getClass()) return false;
+        if (obj == null)
+        {
+            return false;
+        }
+        if (obj.getClass() != getClass())
+        {
+            return false;
+        }
         final Event m = (Event)obj;
         return m.timeout == timeout;
     }

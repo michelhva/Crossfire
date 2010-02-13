@@ -167,7 +167,10 @@ public class Gui
      */
     public void setSize(final int w, final int h)
     {
-        if (w <= 0 || h <= 0) throw new IllegalArgumentException();
+        if (w <= 0 || h <= 0)
+        {
+            throw new IllegalArgumentException();
+        }
 
         if (this.w == w && this.h == h)
         {
@@ -187,7 +190,10 @@ public class Gui
      */
     public void setPosition(final int x, final int y)
     {
-        if (w == 0 || h == 0) throw new IllegalStateException();
+        if (w == 0 || h == 0)
+        {
+            throw new IllegalStateException();
+        }
 
         if (this.x == x && this.y == y)
         {
@@ -225,7 +231,10 @@ public class Gui
      */
     public void add(@NotNull final GUIElement element)
     {
-        if (element.getGui() != null) throw new IllegalArgumentException();
+        if (element.getGui() != null)
+        {
+            throw new IllegalArgumentException();
+        }
 
         updateVisibleElement(element);
         element.setGui(this);

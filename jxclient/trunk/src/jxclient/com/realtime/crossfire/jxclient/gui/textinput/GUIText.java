@@ -143,7 +143,10 @@ public abstract class GUIText extends ActivatableGUIElement implements KeyListen
     protected GUIText(@NotNull final GuiManager guiManager, @NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final String name, final int x, final int y, final int w, final int h, @NotNull final Image activeImage, @NotNull final Image inactiveImage, @NotNull final Font font, @NotNull final Color inactiveColor, @NotNull final Color activeColor, final int margin, @NotNull final String text, final boolean ignoreUpDown)
     {
         super(tooltipManager, elementListener, name, x, y, w, h, Transparency.TRANSLUCENT);
-        if (2*margin >= w) throw new IllegalArgumentException("margin is too large");
+        if (2*margin >= w)
+        {
+            throw new IllegalArgumentException("margin is too large");
+        }
         this.guiManager = guiManager;
         commandHistory = new CommandHistory(name);
         this.activeImage = activeImage;
