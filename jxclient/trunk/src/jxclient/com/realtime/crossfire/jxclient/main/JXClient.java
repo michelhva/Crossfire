@@ -31,6 +31,7 @@ import com.realtime.crossfire.jxclient.settings.Filenames;
 import com.realtime.crossfire.jxclient.settings.options.OptionException;
 import com.realtime.crossfire.jxclient.settings.options.OptionManager;
 import com.realtime.crossfire.jxclient.settings.options.SoundCheckBoxOption;
+import com.realtime.crossfire.jxclient.skills.SkillSet;
 import com.realtime.crossfire.jxclient.sound.MusicWatcher;
 import com.realtime.crossfire.jxclient.sound.SoundManager;
 import com.realtime.crossfire.jxclient.sound.SoundWatcher;
@@ -109,7 +110,8 @@ public class JXClient
                             {
                                 final GuiStateManager guiStateManager = new GuiStateManager(server);
                                 final ExperienceTable experienceTable = new ExperienceTable(server);
-                                final JXCWindow window = new JXCWindow(terminateSync, server, semaphoreRedraw, options.isDebugGui(), debugKeyboardOutputStreamWriter, options.getPrefs(), optionManager, metaserverModel, options.getResolution(), guiStateManager, experienceTable);
+                                final SkillSet skillSet = new SkillSet(server, guiStateManager);
+                                final JXCWindow window = new JXCWindow(terminateSync, server, semaphoreRedraw, options.isDebugGui(), debugKeyboardOutputStreamWriter, options.getPrefs(), optionManager, metaserverModel, options.getResolution(), guiStateManager, experienceTable, skillSet);
                                 new Metaserver(Filenames.getMetaserverCacheFile(), metaserverModel, guiStateManager);
                                 final SoundManager soundManager = new SoundManager(guiStateManager);
                                 try

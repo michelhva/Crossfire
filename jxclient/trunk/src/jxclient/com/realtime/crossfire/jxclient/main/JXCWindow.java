@@ -583,9 +583,10 @@ public class JXCWindow extends JFrame
      * @param resolution the size of the client area
      * @param guiStateManager the gui state manager to use
      * @param experienceTable the experience table to use
+     * @param skillSet the skill set to use
      * @throws IOException if a resource cannot be loaded
      */
-    public JXCWindow(@NotNull final Object terminateSync, @NotNull final CrossfireServerConnection server, @NotNull final Object semaphoreRedraw, final boolean debugGui, @Nullable final Writer debugKeyboard, @NotNull final Settings settings, @NotNull final OptionManager optionManager, @NotNull final MetaserverModel metaserverModel, @NotNull final Resolution resolution, @NotNull final GuiStateManager guiStateManager, @NotNull final ExperienceTable experienceTable) throws IOException
+    public JXCWindow(@NotNull final Object terminateSync, @NotNull final CrossfireServerConnection server, @NotNull final Object semaphoreRedraw, final boolean debugGui, @Nullable final Writer debugKeyboard, @NotNull final Settings settings, @NotNull final OptionManager optionManager, @NotNull final MetaserverModel metaserverModel, @NotNull final Resolution resolution, @NotNull final GuiStateManager guiStateManager, @NotNull final ExperienceTable experienceTable, @NotNull final SkillSet skillSet) throws IOException
     {
         super("");
         this.server = server;
@@ -595,9 +596,9 @@ public class JXCWindow extends JFrame
         this.resolution = resolution;
         this.guiStateManager = guiStateManager;
         this.experienceTable = experienceTable;
+        this.skillSet = skillSet;
         macros = new Macros(server);
         final FaceCache faceCache = new FaceCache(server);
-        skillSet = new SkillSet(server, guiStateManager);
         stats = new Stats(server, experienceTable, skillSet, guiStateManager);
         final FacesQueue facesQueue = new FacesQueue(server, new FileCache(Filenames.getOriginalImageCacheDir()), new FileCache(Filenames.getScaledImageCacheDir()), new FileCache(Filenames.getMagicMapImageCacheDir()));
         facesManager = new FacesManager(faceCache, facesQueue);
