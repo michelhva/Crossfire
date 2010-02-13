@@ -128,7 +128,7 @@ public class PacketWatcher
         {
             if (end-start == 6 && matchesCommand(command))
             {
-                scriptProcess.commandSent("watch "+command+" "+getShort(packet, start+0)+" "+getInt(packet, start+2));
+                scriptProcess.commandSent("watch "+command+" "+getShort(packet, start)+" "+getInt(packet, start+2));
             }
         }
 
@@ -179,7 +179,7 @@ public class PacketWatcher
          */
         private int getShort(@NotNull final byte[] packet, final int offset)
         {
-            return packet[offset+0]*0x100+packet[offset+1];
+            return packet[offset]*0x100+packet[offset+1];
         }
 
         /**
@@ -190,7 +190,7 @@ public class PacketWatcher
          */
         private int getInt(@NotNull final byte[] packet, final int offset)
         {
-            return packet[offset+0]*0x1000000+packet[offset+1]*0x10000+packet[offset+2]*0x100+packet[offset+3];
+            return packet[offset]*0x1000000+packet[offset+1]*0x10000+packet[offset+2]*0x100+packet[offset+3];
         }
     };
 
