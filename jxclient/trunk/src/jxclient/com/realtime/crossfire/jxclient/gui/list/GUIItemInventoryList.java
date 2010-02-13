@@ -221,13 +221,13 @@ public class GUIItemInventoryList extends GUIItemList
             return;
         }
 
-        if ((modifiers&InputEvent.SHIFT_DOWN_MASK) != 0)
+        if ((modifiers&InputEvent.SHIFT_DOWN_MASK) == 0)
         {
-            crossfireServerConnection.sendLock(!item.isLocked(), item.getTag());
+            crossfireServerConnection.sendExamine(item.getTag());
         }
         else
         {
-            crossfireServerConnection.sendExamine(item.getTag());
+            crossfireServerConnection.sendLock(!item.isLocked(), item.getTag());
         }
     }
 
@@ -247,13 +247,13 @@ public class GUIItemInventoryList extends GUIItemList
             return;
         }
 
-        if ((modifiers&InputEvent.SHIFT_DOWN_MASK) != 0)
+        if ((modifiers&InputEvent.SHIFT_DOWN_MASK) == 0)
         {
-            crossfireServerConnection.sendMark(item.getTag());
+            crossfireServerConnection.sendApply(item.getTag());
         }
         else
         {
-            crossfireServerConnection.sendApply(item.getTag());
+            crossfireServerConnection.sendMark(item.getTag());
         }
     }
 

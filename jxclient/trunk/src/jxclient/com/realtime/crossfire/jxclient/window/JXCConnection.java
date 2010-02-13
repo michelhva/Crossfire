@@ -233,13 +233,13 @@ public class JXCConnection
         {
             server.removeCrossfirePickupListener(crossfirePickupListener);
             final long pickupMode = characterPickup.getPickupMode();
-            if (pickupMode != Pickup.PU_NOTHING)
+            if (pickupMode == Pickup.PU_NOTHING)
             {
-                settings.putLong("pickup_"+hostname+"_"+this.character, pickupMode);
+                settings.remove("pickup_"+hostname+"_"+this.character);
             }
             else
             {
-                settings.remove("pickup_"+hostname+"_"+this.character);
+                settings.putLong("pickup_"+hostname+"_"+this.character, pickupMode);
             }
         }
 

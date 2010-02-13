@@ -80,14 +80,14 @@ public class DialogStateParser
                 final File obsoleteDialogsFile = Filenames.getDialogsFile(skinName.replaceAll("@.*", ""));
                 if (obsoleteDialogsFile.exists())
                 {
-                    if (!dialogsFile.exists())
+                    if (dialogsFile.exists())
                     {
-                        dialogsFile.getParentFile().mkdirs();
-                        obsoleteDialogsFile.renameTo(dialogsFile);
+                        obsoleteDialogsFile.delete();
                     }
                     else
                     {
-                        obsoleteDialogsFile.delete();
+                        dialogsFile.getParentFile().mkdirs();
+                        obsoleteDialogsFile.renameTo(dialogsFile);
                     }
                     obsoleteDialogsFile.getParentFile().delete();
                 }

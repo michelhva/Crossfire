@@ -134,10 +134,10 @@ public class RawScale2x
 
         if (different(B, H) && different(D, F))
         {
-            E0 = !different(D, B) ? D : E;
-            E1 = !different(B, F) ? F : E;
-            E2 = !different(D, H) ? D : E;
-            E3 = !different(H, F) ? F : E;
+            E0 = different(D, B) ? E : D;
+            E1 = different(B, F) ? E : F;
+            E2 = different(D, H) ? E : D;
+            E3 = different(H, F) ? E : F;
         }
 
         setDestPixel(x*2, y*2, E0);

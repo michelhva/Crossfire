@@ -116,7 +116,7 @@ public class GaugeState
         final int newFilledY = orientation.getY();
         final int newFilledW = orientation.getW();
         final int newFilledH = orientation.getH();
-        final Image newFilledPicture = !orientation.isValid() ? null : orientation.isNegativeImage() ? negativeImage : fullImage;
+        final Image newFilledPicture = orientation.isValid() ? orientation.isNegativeImage() ? negativeImage : fullImage : null;
 
         if (filledX == newFilledX && filledY == newFilledY && filledW == newFilledW && filledH == newFilledH && filledPicture == newFilledPicture)
         {

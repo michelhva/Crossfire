@@ -185,18 +185,7 @@ public class MetaserverEntryParser
     @Nullable
     public MetaserverEntry parseLine(@NotNull final String line) throws IOException
     {
-        if (!inSection)
-        {
-            if (line.equals("START_SERVER_DATA"))
-            {
-                inSection = true;
-            }
-            else
-            {
-                throw new IOException("syntax error: "+line);
-            }
-        }
-        else
+        if (inSection)
         {
             if (line.equals("END_SERVER_DATA"))
             {
@@ -295,6 +284,17 @@ public class MetaserverEntryParser
                 {
                     throw new IOException("syntax error: "+line);
                 }
+            }
+        }
+        else
+        {
+            if (line.equals("START_SERVER_DATA"))
+            {
+                inSection = true;
+            }
+            else
+            {
+                throw new IOException("syntax error: "+line);
             }
         }
 
