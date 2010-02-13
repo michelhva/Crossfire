@@ -616,7 +616,7 @@ public class Gui
             return false;
         }
 
-        final Component textArea = (GUIText)activeElement;
+        final Component textArea = activeElement;
         if (!textArea.getName().equals("command"))
         {
             return false;
