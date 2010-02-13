@@ -21,6 +21,7 @@
 
 package com.realtime.crossfire.jxclient.commands;
 
+import com.realtime.crossfire.jxclient.gui.gui.JXCWindowRenderer;
 import com.realtime.crossfire.jxclient.scripts.ScriptManager;
 import com.realtime.crossfire.jxclient.server.CommandQueue;
 import com.realtime.crossfire.jxclient.server.CrossfireServerConnection;
@@ -28,7 +29,6 @@ import com.realtime.crossfire.jxclient.settings.options.OptionManager;
 import com.realtime.crossfire.jxclient.util.Patterns;
 import com.realtime.crossfire.jxclient.util.StringUtils;
 import com.realtime.crossfire.jxclient.window.GuiManager;
-import com.realtime.crossfire.jxclient.window.JXCWindowRenderer;
 import java.util.HashMap;
 import java.util.Map;
 import org.jetbrains.annotations.NotNull;

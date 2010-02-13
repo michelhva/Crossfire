@@ -22,7 +22,6 @@
 package com.realtime.crossfire.jxclient.gui.gui;
 
 import com.realtime.crossfire.jxclient.gui.label.AbstractLabel;
-import com.realtime.crossfire.jxclient.window.JXCWindowRenderer;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 

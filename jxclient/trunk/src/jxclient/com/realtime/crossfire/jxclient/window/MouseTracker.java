@@ -23,6 +23,7 @@ package com.realtime.crossfire.jxclient.window;
 
 import com.realtime.crossfire.jxclient.gui.gui.GUIElement;
 import com.realtime.crossfire.jxclient.gui.gui.Gui;
+import com.realtime.crossfire.jxclient.gui.gui.JXCWindowRenderer;
 import java.awt.Component;
 import java.awt.event.MouseEvent;
 import javax.swing.event.MouseInputListener;
