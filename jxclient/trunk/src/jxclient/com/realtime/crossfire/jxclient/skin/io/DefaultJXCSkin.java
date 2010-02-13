@@ -24,6 +24,7 @@ package com.realtime.crossfire.jxclient.skin.io;
 import com.realtime.crossfire.jxclient.commands.Commands;
 import com.realtime.crossfire.jxclient.commands.Macros;
 import com.realtime.crossfire.jxclient.experience.ExperienceTable;
+import com.realtime.crossfire.jxclient.gui.command.CommandType;
 import com.realtime.crossfire.jxclient.gui.command.GUICommandList;
 import com.realtime.crossfire.jxclient.gui.gauge.GaugeUpdater;
 import com.realtime.crossfire.jxclient.gui.gui.GUIElement;
@@ -551,7 +552,7 @@ public class DefaultJXCSkin implements JXCSkin
         return dialogs.getDialogToLoad();
     }
 
-    public void addCommandList(@NotNull final String commandListName, @NotNull final GUICommandList.CommandType commandListCommandType) throws JXCSkinException
+    public void addCommandList(@NotNull final String commandListName, @NotNull final CommandType commandListCommandType) throws JXCSkinException
     {
         final GUICommandList commandList = new GUICommandList(commandListCommandType);
         definedCommandLists.insert(commandListName, commandList);

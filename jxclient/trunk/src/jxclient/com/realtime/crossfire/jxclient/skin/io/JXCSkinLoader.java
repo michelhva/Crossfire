@@ -31,6 +31,7 @@ import com.realtime.crossfire.jxclient.gui.GUIPicture;
 import com.realtime.crossfire.jxclient.gui.button.GUIButton;
 import com.realtime.crossfire.jxclient.gui.button.GUITextButton;
 import com.realtime.crossfire.jxclient.gui.command.CommandCheckBoxOption;
+import com.realtime.crossfire.jxclient.gui.command.CommandType;
 import com.realtime.crossfire.jxclient.gui.command.GUICommandList;
 import com.realtime.crossfire.jxclient.gui.gauge.GUIDupGauge;
 import com.realtime.crossfire.jxclient.gui.gauge.GUIDupTextGauge;
@@ -900,7 +901,7 @@ public class JXCSkinLoader
         }
 
         final String commandListName = args[1];
-        final GUICommandList.CommandType commandListCommandType = NumberParser.parseEnum(GUICommandList.CommandType.class, args[2], "type");
+        final CommandType commandListCommandType = NumberParser.parseEnum(CommandType.class, args[2], "type");
         skin.addCommandList(commandListName, commandListCommandType);
         if (args.length >= 5)
         {
