@@ -24,6 +24,7 @@ package com.realtime.crossfire.jxclient.gui.keybindings;
 
 import com.realtime.crossfire.jxclient.commands.Commands;
 import com.realtime.crossfire.jxclient.commands.Macros;
+import com.realtime.crossfire.jxclient.gui.command.CommandType;
 import com.realtime.crossfire.jxclient.gui.command.GUICommandList;
 import com.realtime.crossfire.jxclient.gui.commands.GUICommandFactory;
 import com.realtime.crossfire.jxclient.window.GuiManager;
@@ -396,7 +397,7 @@ public class KeyBindings
             try
             {
                 final char keyChar = (char)Integer.parseInt(tmp[0]);
-                final GUICommandList commandList = new GUICommandList(GUICommandList.CommandType.AND);
+                final GUICommandList commandList = new GUICommandList(CommandType.AND);
                 commandList.add(GUICommandFactory.createCommandDecode(tmp[1], guiManager, commands, macros));
                 addKeyBindingAsKeyChar(keyChar, commandList, isDefault);
             }
@@ -438,7 +439,7 @@ public class KeyBindings
                 throw new InvalidKeyBindingException("invalid modifier: "+tmp[1]);
             }
 
-            final GUICommandList commandList = new GUICommandList(GUICommandList.CommandType.AND);
+            final GUICommandList commandList = new GUICommandList(CommandType.AND);
             commandList.add(GUICommandFactory.createCommandDecode(tmp[2], guiManager, commands, macros));
             addKeyBindingAsKeyCode(keyCode, modifiers, commandList, isDefault);
         }

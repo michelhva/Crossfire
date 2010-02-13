@@ -37,18 +37,6 @@ public class GUICommandList
     /**
      * The command list type.
      */
-    public enum CommandType
-    {
-        /** List is executed if all entries can execute. */
-        AND,
-
-        /** List is executed if any entry can execute. */
-        OR,
-    }
-
-    /**
-     * The command list type.
-     */
     @NotNull
     private final CommandType commandType;
 
