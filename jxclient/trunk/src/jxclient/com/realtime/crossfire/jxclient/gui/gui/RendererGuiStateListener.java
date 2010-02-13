@@ -19,21 +19,21 @@
  * Copyright (C) 2006-2010 Andreas Kirschbaum.
  */
 
-package com.realtime.crossfire.jxclient.window;
+package com.realtime.crossfire.jxclient.gui.gui;
+
+import org.jetbrains.annotations.NotNull;
 
 /**
- * All gui states of {@link JXCWindowRenderer}.
+ * Interface for listeners interested in gui state changes.
+ *
  * @author Andreas Kirschbaum
  */
-public enum RendererGuiState
+public interface RendererGuiStateListener
 {
-    START,
-
-    META,
-
-    LOGIN,
-
-    NEWCHAR,
-
-    PLAYING;
+    /**
+     * The gui state has changed.
+     *
+     * @param rendererGuiState The new guiState.
+     */
+    void guiStateChanged(@NotNull RendererGuiState rendererGuiState);
 }

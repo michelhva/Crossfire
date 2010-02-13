@@ -21,15 +21,15 @@
 
 package com.realtime.crossfire.jxclient.sound;
 
+import com.realtime.crossfire.jxclient.gui.gui.JXCWindowRenderer;
+import com.realtime.crossfire.jxclient.gui.gui.RendererGuiState;
+import com.realtime.crossfire.jxclient.gui.gui.RendererGuiStateListener;
 import com.realtime.crossfire.jxclient.items.CfPlayer;
 import com.realtime.crossfire.jxclient.items.ItemsManager;
 import com.realtime.crossfire.jxclient.items.PlayerListener;
 import com.realtime.crossfire.jxclient.server.CrossfireStatsListener;
 import com.realtime.crossfire.jxclient.stats.Stats;
 import com.realtime.crossfire.jxclient.stats.StatsListener;
-import com.realtime.crossfire.jxclient.window.JXCWindowRenderer;
-import com.realtime.crossfire.jxclient.window.RendererGuiState;
-import com.realtime.crossfire.jxclient.window.RendererGuiStateListener;
 import org.jetbrains.annotations.NotNull;
 
 /**
