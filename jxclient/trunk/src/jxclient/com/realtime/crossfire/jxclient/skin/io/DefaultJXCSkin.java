@@ -21,8 +21,6 @@
 
 package com.realtime.crossfire.jxclient.skin.io;
 
-import com.realtime.crossfire.jxclient.commands.Commands;
-import com.realtime.crossfire.jxclient.commands.Macros;
 import com.realtime.crossfire.jxclient.gui.command.CommandType;
 import com.realtime.crossfire.jxclient.gui.command.GUICommandList;
 import com.realtime.crossfire.jxclient.gui.gauge.GaugeUpdater;
@@ -32,9 +30,6 @@ import com.realtime.crossfire.jxclient.gui.gui.JXCWindowRenderer;
 import com.realtime.crossfire.jxclient.gui.gui.TooltipManager;
 import com.realtime.crossfire.jxclient.gui.keybindings.KeyBindings;
 import com.realtime.crossfire.jxclient.gui.label.AbstractLabel;
-import com.realtime.crossfire.jxclient.server.CommandQueue;
-import com.realtime.crossfire.jxclient.server.CrossfireServerConnection;
-import com.realtime.crossfire.jxclient.server.GuiStateManager;
 import com.realtime.crossfire.jxclient.settings.options.Option;
 import com.realtime.crossfire.jxclient.settings.options.OptionException;
 import com.realtime.crossfire.jxclient.settings.options.OptionManager;
@@ -45,9 +40,7 @@ import com.realtime.crossfire.jxclient.skin.skin.JXCSkinCache;
 import com.realtime.crossfire.jxclient.skin.skin.JXCSkinException;
 import com.realtime.crossfire.jxclient.stats.ExperienceTable;
 import com.realtime.crossfire.jxclient.util.Resolution;
-import com.realtime.crossfire.jxclient.window.GuiManager;
 import java.io.IOException;
-import java.io.LineNumberReader;
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.HashSet;
@@ -156,12 +149,6 @@ public class DefaultJXCSkin implements JXCSkin
     private final Collection<GaugeUpdater> gaugeUpdaters = new ArrayList<GaugeUpdater>();
 
     /**
-     * The {@link CommandParser} for parsing command specifications.
-     */
-    @NotNull
-    private final CommandParser commandParser;
-
-    /**
      * The tooltip label or <code>null</code>.
      */
     @Nullable
@@ -190,9 +177,8 @@ public class DefaultJXCSkin implements JXCSkin
      * @param gaugeUpdaterParser the gauge updater parser for parsing gauge
      * specifications
      * @param dialogs the dialogs to use
-     * @param commandParser the command parser to use
      */
-    public DefaultJXCSkin(@NotNull final KeyBindings defaultKeyBindings, @NotNull final OptionManager optionManager, @NotNull final ExperienceTable experienceTable, @NotNull final Resolution selectedResolution, @NotNull final GaugeUpdaterParser gaugeUpdaterParser, @NotNull final Dialogs dialogs, @NotNull final CommandParser commandParser)
+    public DefaultJXCSkin(@NotNull final KeyBindings defaultKeyBindings, @NotNull final OptionManager optionManager, @NotNull final ExperienceTable experienceTable, @NotNull final Resolution selectedResolution, @NotNull final GaugeUpdaterParser gaugeUpdaterParser, @NotNull final Dialogs dialogs)
     {
         this.defaultKeyBindings = defaultKeyBindings;
         this.optionManager = optionManager;
@@ -200,7 +186,6 @@ public class DefaultJXCSkin implements JXCSkin
         this.selectedResolution = selectedResolution;
         this.gaugeUpdaterParser = gaugeUpdaterParser;
         this.dialogs = dialogs;
-        this.commandParser = commandParser;
     }
 
     /** {@inheritDoc} */
@@ -408,29 +393,6 @@ public class DefaultJXCSkin implements JXCSkin
     public GUICommandList getCommandList(@NotNull final String name) throws JXCSkinException
     {
         return definedCommandLists.lookup(name);
-    }
-
-    /**
-     * Parses and builds command arguments.
-     * @param listName the command list name to add to
-     * @param args the list of arguments
-     * @param argc the start index for parsing
-     * @param element the target element
-     * @param command the command to parse the arguments of
-     * @param guiStateManager the gui state manager instance
-     * @param commands the commands instance for executing commands
-     * @param lnr the source to read more parameters from
-     * @param commandQueue the command queue for executing commands
-     * @param crossfireServerConnection the server connection to use
-     * @param guiManager the gui manager to use
-     * @param macros the macros instance to use
-     * @throws IOException if a syntax error occurs
-     * @throws JXCSkinException if an element cannot be found
-     */
-    public void addCommand(@NotNull final String listName, @NotNull final String[] args, final int argc, @Nullable final GUIElement element, @NotNull final String command, @NotNull final GuiStateManager guiStateManager, @NotNull final Commands commands, @NotNull final LineNumberReader lnr, @NotNull final CommandQueue commandQueue, @NotNull final CrossfireServerConnection crossfireServerConnection, @NotNull final GuiManager guiManager, @NotNull final Macros macros) throws IOException, JXCSkinException
-    {
-        final GUICommandList commandList = getCommandList(listName);
-        commandList.add(commandParser.parseCommandArgs(args, argc, element, command, guiStateManager, commands, lnr, commandQueue, crossfireServerConnection, guiManager, macros));
     }
 
     /** {@inheritDoc} */

@@ -224,6 +224,12 @@ public class JXCSkinLoader
     private ExpressionParser expressionParser;
 
     /**
+     * The {@link CommandParser} for parsing commands.
+     */
+    @NotNull
+    private CommandParser commandParser;
+
+    /**
      * The {@link ImageParser} for parsing image specifications.
      */
     @NotNull
@@ -352,8 +358,8 @@ public class JXCSkinLoader
         expressionParser = new ExpressionParser(selectedResolution);
         final Dialogs dialogs = new Dialogs(guiFactory);
         final GaugeUpdaterParser gaugeUpdaterParser = new GaugeUpdaterParser(stats, itemsManager, skillSet);
-        final CommandParser commandParser = new CommandParser(dialogs, itemsManager, expressionParser, definedGUIElements);
-        skin = new DefaultJXCSkin(defaultKeyBindings, optionManager, experienceTable, selectedResolution, gaugeUpdaterParser, dialogs, commandParser);
+        commandParser = new CommandParser(dialogs, itemsManager, expressionParser, definedGUIElements);
+        skin = new DefaultJXCSkin(defaultKeyBindings, optionManager, experienceTable, selectedResolution, gaugeUpdaterParser, dialogs);
         @Nullable JXCSkin skinToDetach = skin;
         try
         {
@@ -914,7 +920,7 @@ public class JXCSkinLoader
         if (args.length >= 5)
         {
             final GUIElement element = args[3].equals("null") ? null : definedGUIElements.lookup(args[3]);
-            skin.addCommand(commandListName, args, 5, element, args[4], guiStateManager, commands, lnr, commandQueue, server, guiManager, macros);
+            addCommand(commandListName, args, 5, element, args[4], guiStateManager, commands, lnr, commandQueue, server, guiManager, macros);
         }
     }
 
@@ -939,7 +945,7 @@ public class JXCSkinLoader
         }
 
         final GUIElement element = args[2].equals("null") ? null : definedGUIElements.lookup(args[2]);
-        skin.addCommand(args[1], args, 4, element, args[3], guiStateManager, commands, lnr, commandQueue, server, guiManager, macros);
+        addCommand(args[1], args, 4, element, args[3], guiStateManager, commands, lnr, commandQueue, server, guiManager, macros);
     }
 
     /**
@@ -2256,5 +2262,28 @@ public class JXCSkinLoader
     {
         definedGUIElements.insert(guiElement.getName(), guiElement);
         skin.insertGuiElement(guiElement);
+    }
+
+    /**
+     * Parses and builds command arguments.
+     * @param listName the command list name to add to
+     * @param args the list of arguments
+     * @param argc the start index for parsing
+     * @param element the target element
+     * @param command the command to parse the arguments of
+     * @param guiStateManager the gui state manager instance
+     * @param commands the commands instance for executing commands
+     * @param lnr the source to read more parameters from
+     * @param commandQueue the command queue for executing commands
+     * @param crossfireServerConnection the server connection to use
+     * @param guiManager the gui manager to use
+     * @param macros the macros instance to use
+     * @throws IOException if a syntax error occurs
+     * @throws JXCSkinException if an element cannot be found
+     */
+    public void addCommand(@NotNull final String listName, @NotNull final String[] args, final int argc, @Nullable final GUIElement element, @NotNull final String command, @NotNull final GuiStateManager guiStateManager, @NotNull final Commands commands, @NotNull final LineNumberReader lnr, @NotNull final CommandQueue commandQueue, @NotNull final CrossfireServerConnection crossfireServerConnection, @NotNull final GuiManager guiManager, @NotNull final Macros macros) throws IOException, JXCSkinException
+    {
+        final GUICommandList commandList = skin.getCommandList(listName);
+        commandList.add(commandParser.parseCommandArgs(args, argc, element, command, guiStateManager, commands, lnr, commandQueue, crossfireServerConnection, guiManager, macros));
     }
 }
