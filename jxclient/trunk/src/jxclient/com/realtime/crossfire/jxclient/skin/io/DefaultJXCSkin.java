@@ -32,7 +32,6 @@ import com.realtime.crossfire.jxclient.gui.gui.JXCWindowRenderer;
 import com.realtime.crossfire.jxclient.gui.gui.TooltipManager;
 import com.realtime.crossfire.jxclient.gui.keybindings.KeyBindings;
 import com.realtime.crossfire.jxclient.gui.label.AbstractLabel;
-import com.realtime.crossfire.jxclient.items.ItemsManager;
 import com.realtime.crossfire.jxclient.server.CommandQueue;
 import com.realtime.crossfire.jxclient.server.CrossfireServerConnection;
 import com.realtime.crossfire.jxclient.server.GuiStateManager;
@@ -101,12 +100,6 @@ public class DefaultJXCSkin implements JXCSkin
      */
     @NotNull
     private final JXCSkinCache<GUICommandList> definedCommandLists = new JXCSkinCache<GUICommandList>("command list");
-
-    /**
-     * All defined GUI elements.
-     */
-    @NotNull
-    private final JXCSkinCache<GUIElement> definedGUIElements = new JXCSkinCache<GUIElement>("gui element");
 
     /**
      * All GUI elements.
@@ -192,15 +185,14 @@ public class DefaultJXCSkin implements JXCSkin
      * Creates a new instance.
      * @param defaultKeyBindings the default key bindings
      * @param optionManager the option manager to use
-     * @param itemsManager the items manager instance to use
      * @param experienceTable the experience table to use
-     * @param expressionParser the expression parser to use
      * @param selectedResolution the resolution to use
      * @param gaugeUpdaterParser the gauge updater parser for parsing gauge
      * specifications
      * @param dialogs the dialogs to use
+     * @param commandParser the command parser to use
      */
-    public DefaultJXCSkin(@NotNull final KeyBindings defaultKeyBindings, @NotNull final OptionManager optionManager, @NotNull final ItemsManager itemsManager, @NotNull final ExperienceTable experienceTable, @NotNull final ExpressionParser expressionParser, @NotNull final Resolution selectedResolution, @NotNull final GaugeUpdaterParser gaugeUpdaterParser, @NotNull final Dialogs dialogs)
+    public DefaultJXCSkin(@NotNull final KeyBindings defaultKeyBindings, @NotNull final OptionManager optionManager, @NotNull final ExperienceTable experienceTable, @NotNull final Resolution selectedResolution, @NotNull final GaugeUpdaterParser gaugeUpdaterParser, @NotNull final Dialogs dialogs, @NotNull final CommandParser commandParser)
     {
         this.defaultKeyBindings = defaultKeyBindings;
         this.optionManager = optionManager;
@@ -208,7 +200,7 @@ public class DefaultJXCSkin implements JXCSkin
         this.selectedResolution = selectedResolution;
         this.gaugeUpdaterParser = gaugeUpdaterParser;
         this.dialogs = dialogs;
-        commandParser = new CommandParser(dialogs, itemsManager, expressionParser, definedGUIElements);
+        this.commandParser = commandParser;
     }
 
     /** {@inheritDoc} */
@@ -503,25 +495,6 @@ public class DefaultJXCSkin implements JXCSkin
             guiElement.dispose();
         }
         guiElements.clear();
-        definedGUIElements.clear();
-    }
-
-    /** {@inheritDoc} */
-    @NotNull
-    @Override
-    public GUIElement lookupGuiElement(@NotNull final String name) throws JXCSkinException
-    {
-        return definedGUIElements.lookup(name);
-    }
-
-    /**
-     * Forgets about all named GUI elements. After this function has been
-     * callled, {@link #lookupGuiElement(String)} and {@link
-     * #guiElementIterator()} will not return anything.
-     */
-    public void clearDefinedGuiElements()
-    {
-        definedGUIElements.clear();
     }
 
     /**
@@ -531,7 +504,6 @@ public class DefaultJXCSkin implements JXCSkin
      */
     public void insertGuiElement(@NotNull final GUIElement guiElement) throws JXCSkinException
     {
-        definedGUIElements.insert(guiElement.getName(), guiElement);
         guiElements.add(guiElement);
     }
 
@@ -590,17 +562,6 @@ public class DefaultJXCSkin implements JXCSkin
     public void setTooltipLabel(@Nullable final AbstractLabel tooltipLabel)
     {
         this.tooltipLabel = tooltipLabel;
-    }
-
-    /**
-     * Returns an {@link Iterator} returning all named {@link GUIElement} of
-     * this skin. The iterator does not support removal.
-     * @return the iterator
-     */
-    @NotNull
-    public Iterator<GUIElement> guiElementIterator()
-    {
-        return definedGUIElements.iterator();
     }
 
     /**
