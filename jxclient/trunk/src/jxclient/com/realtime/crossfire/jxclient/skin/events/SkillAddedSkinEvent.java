@@ -21,23 +21,23 @@
 
 package com.realtime.crossfire.jxclient.skin.events;
 
-import com.realtime.crossfire.jxclient.gui.command.GUICommandList;
+import com.realtime.crossfire.jxclient.gui.command.CommandList;
 import com.realtime.crossfire.jxclient.skills.Skill;
 import com.realtime.crossfire.jxclient.skills.SkillListener;
 import org.jetbrains.annotations.NotNull;
 
 /**
- * A {@link SkinEvent} that executes a {@link GUICommandList} whenever a new
+ * A {@link SkinEvent} that executes a {@link CommandList} whenever a new
  * skill has been gained.
  * @author Andreas Kirschbaum
  */
 public class SkillAddedSkinEvent implements SkinEvent
 {
     /**
-     * The {@link GUICommandList} to execute.
+     * The {@link CommandList} to execute.
      */
     @NotNull
-    private final GUICommandList commandList;
+    private final CommandList commandList;
 
     /**
      * The {@link Skill} to monitor.
@@ -78,7 +78,7 @@ public class SkillAddedSkinEvent implements SkinEvent
      * @param commandList the command list to execute.
      * @param skill the skill to monitor
      */
-    public SkillAddedSkinEvent(@NotNull final GUICommandList commandList, @NotNull final Skill skill)
+    public SkillAddedSkinEvent(@NotNull final CommandList commandList, @NotNull final Skill skill)
     {
         this.commandList = commandList;
         this.skill = skill;

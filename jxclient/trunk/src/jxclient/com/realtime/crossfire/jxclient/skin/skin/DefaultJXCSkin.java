@@ -21,8 +21,8 @@
 
 package com.realtime.crossfire.jxclient.skin.skin;
 
-import com.realtime.crossfire.jxclient.gui.command.CommandType;
-import com.realtime.crossfire.jxclient.gui.command.GUICommandList;
+import com.realtime.crossfire.jxclient.gui.command.CommandList;
+import com.realtime.crossfire.jxclient.gui.command.CommandListType;
 import com.realtime.crossfire.jxclient.gui.gauge.GaugeUpdater;
 import com.realtime.crossfire.jxclient.gui.gui.GUIElement;
 import com.realtime.crossfire.jxclient.gui.gui.Gui;
@@ -80,13 +80,13 @@ public class DefaultJXCSkin implements JXCSkin
      * All "event init" commands in execution order.
      */
     @NotNull
-    private final Collection<GUICommandList> initEvents = new ArrayList<GUICommandList>();
+    private final Collection<CommandList> initEvents = new ArrayList<CommandList>();
 
     /**
      * All defined command lists.
      */
     @NotNull
-    private final JXCSkinCache<GUICommandList> definedCommandLists = new JXCSkinCache<GUICommandList>("command list");
+    private final JXCSkinCache<CommandList> definedCommandLists = new JXCSkinCache<CommandList>("command list");
 
     /**
      * All GUI elements.
@@ -367,7 +367,7 @@ public class DefaultJXCSkin implements JXCSkin
     /** {@inheritDoc} */
     @NotNull
     @Override
-    public GUICommandList getCommandList(@NotNull final String name) throws JXCSkinException
+    public CommandList getCommandList(@NotNull final String name) throws JXCSkinException
     {
         return definedCommandLists.lookup(name);
     }
@@ -401,7 +401,7 @@ public class DefaultJXCSkin implements JXCSkin
         windowRenderer.setTooltip(tooltipLabel);
         tooltipManager.setTooltip(tooltipLabel);
 
-        for (final GUICommandList commandList : initEvents)
+        for (final CommandList commandList : initEvents)
         {
             commandList.execute();
         }
@@ -463,13 +463,13 @@ public class DefaultJXCSkin implements JXCSkin
         return dialogs.getDialogToLoad();
     }
 
-    public void addCommandList(@NotNull final String commandListName, @NotNull final CommandType commandListCommandType) throws JXCSkinException
+    public void addCommandList(@NotNull final String commandListName, @NotNull final CommandListType commandListType) throws JXCSkinException
     {
-        final GUICommandList commandList = new GUICommandList(commandListCommandType);
+        final CommandList commandList = new CommandList(commandListType);
         definedCommandLists.insert(commandListName, commandList);
     }
 
-    public void addInitEvent(@NotNull final GUICommandList commandList)
+    public void addInitEvent(@NotNull final CommandList commandList)
     {
         initEvents.add(commandList);
     }

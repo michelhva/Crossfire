@@ -21,7 +21,7 @@
 
 package com.realtime.crossfire.jxclient.gui.commands;
 
-import com.realtime.crossfire.jxclient.gui.command.GUICommandList;
+import com.realtime.crossfire.jxclient.gui.command.CommandList;
 import com.realtime.crossfire.jxclient.gui.gui.Gui;
 import org.jetbrains.annotations.NotNull;
 
@@ -61,7 +61,7 @@ public interface CommandCallback
      * @throws NoSuchCommandException if the command list does not exist
      */
     @NotNull
-    GUICommandList getCommandList(@NotNull String args) throws NoSuchCommandException;
+    CommandList getCommandList(@NotNull String args) throws NoSuchCommandException;
 
     /**
      * Sets the current player name. Does nothing if not currently in the

@@ -21,8 +21,8 @@
 
 package com.realtime.crossfire.jxclient.commands;
 
-import com.realtime.crossfire.jxclient.gui.command.CommandType;
-import com.realtime.crossfire.jxclient.gui.command.GUICommandList;
+import com.realtime.crossfire.jxclient.gui.command.CommandList;
+import com.realtime.crossfire.jxclient.gui.command.CommandListType;
 import com.realtime.crossfire.jxclient.gui.commands.GUICommandFactory;
 import com.realtime.crossfire.jxclient.server.CrossfireServerConnection;
 import com.realtime.crossfire.jxclient.util.StringUtils;
@@ -103,7 +103,7 @@ public class BindCommand extends AbstractCommand
             return;
         }
 
-        final GUICommandList commandList2 = new GUICommandList(CommandType.AND);
+        final CommandList commandList2 = new CommandList(CommandListType.AND);
         commandList2.add(GUICommandFactory.createCommand(commandList, guiManager, commands, macros));
         if (!guiManager.createKeyBinding(perCharacterBinding, commandList2))
         {

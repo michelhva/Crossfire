@@ -21,7 +21,7 @@
 
 package com.realtime.crossfire.jxclient.gui.textinput;
 
-import com.realtime.crossfire.jxclient.gui.command.GUICommandList;
+import com.realtime.crossfire.jxclient.gui.command.CommandList;
 import com.realtime.crossfire.jxclient.gui.commands.CommandCallback;
 import com.realtime.crossfire.jxclient.gui.gui.GUIElementListener;
 import com.realtime.crossfire.jxclient.gui.gui.TooltipManager;
@@ -31,7 +31,7 @@ import java.awt.Image;
 import org.jetbrains.annotations.NotNull;
 
 /**
- * A text input field which executes a {@link GUICommandList} when ENTER is
+ * A text input field which executes a {@link CommandList} when ENTER is
  * pressed.
  *
  * @author Andreas Kirschbaum
@@ -44,9 +44,9 @@ public class GUITextField extends GUIText
     private static final long serialVersionUID = 1;
 
     @NotNull
-    private final GUICommandList commandList;
+    private final CommandList commandList;
 
-    public GUITextField(@NotNull final CommandCallback commandCallback, @NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final String name, final int x, final int y, final int w, final int h, @NotNull final Image activePicture, @NotNull final Image inactivePicture, @NotNull final Font font, @NotNull final Color inactiveColor, @NotNull final Color activeColor, final int margin, @NotNull final String text, @NotNull final GUICommandList commandList, final boolean ignoreUpDown)
+    public GUITextField(@NotNull final CommandCallback commandCallback, @NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final String name, final int x, final int y, final int w, final int h, @NotNull final Image activePicture, @NotNull final Image inactivePicture, @NotNull final Font font, @NotNull final Color inactiveColor, @NotNull final Color activeColor, final int margin, @NotNull final String text, @NotNull final CommandList commandList, final boolean ignoreUpDown)
     {
         super(commandCallback, tooltipManager, elementListener, name, x, y, w, h, activePicture, inactivePicture, font, inactiveColor, activeColor, margin, text, ignoreUpDown);
         this.commandList = commandList;

@@ -21,7 +21,7 @@
 
 package com.realtime.crossfire.jxclient.gui.keybindings;
 
-import com.realtime.crossfire.jxclient.gui.command.GUICommandList;
+import com.realtime.crossfire.jxclient.gui.command.CommandList;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 
@@ -54,7 +54,7 @@ public class KeyCodeKeyBinding extends KeyBinding
      * @param isDefault Whether the key binding is a "default" binding which
      * should not be saved.
      */
-    public KeyCodeKeyBinding(final int keyCode, final int modifiers, @NotNull final GUICommandList commands, final boolean isDefault)
+    public KeyCodeKeyBinding(final int keyCode, final int modifiers, @NotNull final CommandList commands, final boolean isDefault)
     {
         super(commands, isDefault);
         this.keyCode = keyCode;

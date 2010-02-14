@@ -23,7 +23,7 @@ package com.realtime.crossfire.jxclient.window;
 
 import com.realtime.crossfire.jxclient.commands.Commands;
 import com.realtime.crossfire.jxclient.commands.Macros;
-import com.realtime.crossfire.jxclient.gui.command.GUICommandList;
+import com.realtime.crossfire.jxclient.gui.command.CommandList;
 import com.realtime.crossfire.jxclient.gui.keybindings.KeyBindingState;
 import com.realtime.crossfire.jxclient.gui.keybindings.KeyBindings;
 import com.realtime.crossfire.jxclient.settings.Filenames;
@@ -129,7 +129,7 @@ public class KeybindingsManager
      * @param cmdlist the commands for the key binding
      * @return whether the key bindings dialog should be opened
      */
-    public boolean createKeyBinding(final boolean perCharacter, @NotNull final GUICommandList cmdlist)
+    public boolean createKeyBinding(final boolean perCharacter, @NotNull final CommandList cmdlist)
     {
         final KeyBindings bindings = getKeyBindings(perCharacter);
         if (bindings == null)

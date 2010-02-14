@@ -21,7 +21,7 @@
 
 package com.realtime.crossfire.jxclient.gui.keybindings;
 
-import com.realtime.crossfire.jxclient.gui.command.GUICommandList;
+import com.realtime.crossfire.jxclient.gui.command.CommandList;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 
@@ -43,7 +43,7 @@ public class KeyCharKeyBinding extends KeyBinding
      * @param isDefault whether the key binding is a "default" binding which
      * should not be saved
      */
-    public KeyCharKeyBinding(final char keyChar, @NotNull final GUICommandList commands, final boolean isDefault)
+    public KeyCharKeyBinding(final char keyChar, @NotNull final CommandList commands, final boolean isDefault)
     {
         super(commands, isDefault);
         this.keyChar = keyChar;

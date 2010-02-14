@@ -30,8 +30,8 @@ import com.realtime.crossfire.jxclient.gui.GUIPicture;
 import com.realtime.crossfire.jxclient.gui.button.ButtonImages;
 import com.realtime.crossfire.jxclient.gui.button.GUIButton;
 import com.realtime.crossfire.jxclient.gui.command.CommandCheckBoxOption;
-import com.realtime.crossfire.jxclient.gui.command.CommandType;
-import com.realtime.crossfire.jxclient.gui.command.GUICommandList;
+import com.realtime.crossfire.jxclient.gui.command.CommandList;
+import com.realtime.crossfire.jxclient.gui.command.CommandListType;
 import com.realtime.crossfire.jxclient.gui.commands.CommandCallback;
 import com.realtime.crossfire.jxclient.gui.gauge.GUIDupGauge;
 import com.realtime.crossfire.jxclient.gui.gauge.GUIDupTextGauge;
@@ -844,7 +844,7 @@ public class JXCSkinLoader
         final BufferedImage upImage = imageParser.getImage(args[6]);
         final BufferedImage downImage = imageParser.getImage(args[7]);
         final boolean autoRepeat = NumberParser.parseBoolean(args[8]);
-        final GUICommandList commandList = skin.getCommandList(args[9]);
+        final CommandList commandList = skin.getCommandList(args[9]);
         @Nullable final String label;
         @Nullable final Font font;
         @Nullable final Color color;
@@ -922,8 +922,8 @@ public class JXCSkinLoader
         }
 
         final String commandListName = args[1];
-        final CommandType commandListCommandType = NumberParser.parseEnum(CommandType.class, args[2], "type");
-        skin.addCommandList(commandListName, commandListCommandType);
+        final CommandListType commandListType = NumberParser.parseEnum(CommandListType.class, args[2], "type");
+        skin.addCommandList(commandListName, commandListType);
         if (args.length >= 5)
         {
             final GUIElement element = args[3].equals("null") ? null : definedGUIElements.lookup(args[3]);
@@ -1021,8 +1021,8 @@ public class JXCSkinLoader
             }
 
             final String optionName = args[2];
-            final GUICommandList commandOn = skin.getCommandList(args[3]);
-            final GUICommandList commandOff = skin.getCommandList(args[4]);
+            final CommandList commandOn = skin.getCommandList(args[3]);
+            final CommandList commandOff = skin.getCommandList(args[4]);
             final String documentation = ParseUtils.parseText(args, 5, lnr);
             skin.addOption(optionName, documentation, new CommandCheckBoxOption(commandOn, commandOff));
         }
@@ -1255,7 +1255,7 @@ public class JXCSkinLoader
                 throw new IOException("syntax error");
             }
 
-            final GUICommandList commandList = skin.getCommandList(args[2]);
+            final CommandList commandList = skin.getCommandList(args[2]);
             skin.addSkinEvent(new ConnectionStateSkinEvent(commandList, guiStateManager));
         }
         else if (type.equals("init"))
@@ -1274,7 +1274,7 @@ public class JXCSkinLoader
                 throw new IOException("syntax error");
             }
 
-            final GUICommandList commandList = skin.getCommandList(args[2]);
+            final CommandList commandList = skin.getCommandList(args[2]);
             skin.addSkinEvent(new CrossfireMagicmapSkinEvent(commandList, server));
         }
         else if (type.equals("mapscroll"))
@@ -1284,7 +1284,7 @@ public class JXCSkinLoader
                 throw new IOException("syntax error");
             }
 
-            final GUICommandList commandList = skin.getCommandList(args[2]);
+            final CommandList commandList = skin.getCommandList(args[2]);
             skin.addSkinEvent(new MapscrollSkinEvent(commandList, mapUpdater));
         }
         else if (type.equals("skill"))
@@ -1296,7 +1296,7 @@ public class JXCSkinLoader
 
             final String subtype = args[2];
             final Skill skill = skillSet.getNamedSkill(args[3].replaceAll("_", " "));
-            final GUICommandList commandList = skin.getCommandList(args[4]);
+            final CommandList commandList = skin.getCommandList(args[4]);
             if (subtype.equals("add"))
             {
                 skin.addSkinEvent(new SkillAddedSkinEvent(commandList, skill));
@@ -2167,7 +2167,7 @@ public class JXCSkinLoader
         final Color inactiveColor = ParseUtils.parseColor(args[9]);
         final Color activeColor = ParseUtils.parseColor(args[10]);
         final int margin = expressionParser.parseInt(args[11]);
-        final GUICommandList commandList = skin.getCommandList(args[12]);
+        final CommandList commandList = skin.getCommandList(args[12]);
         final boolean ignoreUpDown = NumberParser.parseBoolean(args[13]);
         insertGuiElement(new GUITextField(commandCallback, tooltipManager, elementListener, name, x, y, w, h, activeImage, inactiveImage, font, inactiveColor, activeColor, margin, "", commandList, ignoreUpDown));
     }
@@ -2199,7 +2199,7 @@ public class JXCSkinLoader
         final int w = expressionParser.parseInt(args[4]);
         final int h = expressionParser.parseInt(args[5]);
         final boolean autoRepeat = NumberParser.parseBoolean(args[6]);
-        final GUICommandList commandList = skin.getCommandList(args[7]);
+        final CommandList commandList = skin.getCommandList(args[7]);
         final String text = ParseUtils.parseText(args, 8, lnr);
         assert textButtonFactory != null;
         insertGuiElement(textButtonFactory.newTextButton(tooltipManager, elementListener, name, x, y, w, h, text, autoRepeat, commandList));
@@ -2290,7 +2290,7 @@ public class JXCSkinLoader
      */
     private void addCommand(@NotNull final String listName, @NotNull final String[] args, final int argc, @Nullable final GUIElement element, @NotNull final String command, @NotNull final GuiStateManager guiStateManager, @NotNull final Commands commands, @NotNull final LineNumberReader lnr, @NotNull final CommandQueue commandQueue, @NotNull final CrossfireServerConnection crossfireServerConnection, @NotNull final CommandCallback commandCallback, @NotNull final Macros macros) throws IOException, JXCSkinException
     {
-        final GUICommandList commandList = skin.getCommandList(listName);
+        final CommandList commandList = skin.getCommandList(listName);
         commandList.add(commandParser.parseCommandArgs(args, argc, element, command, guiStateManager, commands, lnr, commandQueue, crossfireServerConnection, commandCallback, macros));
     }
 

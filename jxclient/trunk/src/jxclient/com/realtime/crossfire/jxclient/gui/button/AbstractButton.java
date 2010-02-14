@@ -21,7 +21,7 @@
 
 package com.realtime.crossfire.jxclient.gui.button;
 
-import com.realtime.crossfire.jxclient.gui.command.GUICommandList;
+import com.realtime.crossfire.jxclient.gui.command.CommandList;
 import com.realtime.crossfire.jxclient.gui.gui.ActivatableGUIElement;
 import com.realtime.crossfire.jxclient.gui.gui.GUIElementListener;
 import com.realtime.crossfire.jxclient.gui.gui.TooltipManager;
@@ -61,7 +61,7 @@ public abstract class AbstractButton extends ActivatableGUIElement
      * The commands to execute when the button is elected.
      */
     @NotNull
-    private final GUICommandList commandList;
+    private final CommandList commandList;
 
     @NotNull
     private final TimeoutEvent timeoutEvent = new TimeoutEvent()
@@ -99,7 +99,7 @@ public abstract class AbstractButton extends ActivatableGUIElement
      *
      * @param commandList The commands to execute when the button is elected.
      */
-    protected AbstractButton(@NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final String name, final int x, final int y, final int w, final int h, final int transparency, final boolean autoRepeat, @NotNull final GUICommandList commandList)
+    protected AbstractButton(@NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final String name, final int x, final int y, final int w, final int h, final int transparency, final boolean autoRepeat, @NotNull final CommandList commandList)
     {
         super(tooltipManager, elementListener, name, x, y, w, h, transparency);
         this.autoRepeat = autoRepeat;

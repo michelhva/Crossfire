@@ -25,7 +25,7 @@ import com.realtime.crossfire.jxclient.settings.options.CheckBoxOption;
 import org.jetbrains.annotations.NotNull;
 
 /**
- * A {@link CheckBoxOption} that executes {@link GUICommandList}s when
+ * A {@link CheckBoxOption} that executes {@link CommandList}s when
  * checked/unchecked.
  *
  * @author Andreas Kirschbaum
@@ -36,13 +36,13 @@ public class CommandCheckBoxOption extends CheckBoxOption
      * The command list to execute when checked.
      */
     @NotNull
-    private final GUICommandList commandOn;
+    private final CommandList commandOn;
 
     /**
      * The command list to execute when unchecked.
      */
     @NotNull
-    private final GUICommandList commandOff;
+    private final CommandList commandOff;
 
     /**
      * Create a new instance.
@@ -51,7 +51,7 @@ public class CommandCheckBoxOption extends CheckBoxOption
      *
      * @param commandOff The command list to execute when unchecked.
      */
-    public CommandCheckBoxOption(@NotNull final GUICommandList commandOn, @NotNull final GUICommandList commandOff)
+    public CommandCheckBoxOption(@NotNull final CommandList commandOn, @NotNull final CommandList commandOff)
     {
         this.commandOn = commandOn;
         this.commandOff = commandOff;

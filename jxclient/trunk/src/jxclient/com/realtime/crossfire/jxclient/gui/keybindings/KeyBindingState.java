@@ -21,7 +21,7 @@
 
 package com.realtime.crossfire.jxclient.gui.keybindings;
 
-import com.realtime.crossfire.jxclient.gui.command.GUICommandList;
+import com.realtime.crossfire.jxclient.gui.command.CommandList;
 import org.jetbrains.annotations.Nullable;
 
 /**
@@ -46,7 +46,7 @@ public class KeyBindingState
      * The commands to bind, or <code>null</code> to unbind.
      */
     @Nullable
-    private final GUICommandList commands;
+    private final CommandList commands;
 
     /**
      * The dialog state: 0=waiting for initial key press, 1=waiting for key
@@ -83,7 +83,7 @@ public class KeyBindingState
      * when removing bindings; may be <code>null</code> when removing bindings
      * @param commands the commands to bind, or <code>null</code> to unbind
      */
-    public KeyBindingState(@Nullable final KeyBindings keyBindings, @Nullable final KeyBindings keyBindings2, @Nullable final GUICommandList commands)
+    public KeyBindingState(@Nullable final KeyBindings keyBindings, @Nullable final KeyBindings keyBindings2, @Nullable final CommandList commands)
     {
         this.keyBindings = keyBindings;
         this.keyBindings2 = keyBindings2;
