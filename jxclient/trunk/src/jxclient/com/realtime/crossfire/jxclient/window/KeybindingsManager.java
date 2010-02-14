@@ -23,7 +23,8 @@ package com.realtime.crossfire.jxclient.window;
 
 import com.realtime.crossfire.jxclient.commands.Commands;
 import com.realtime.crossfire.jxclient.commands.Macros;
-import com.realtime.crossfire.jxclient.gui.command.CommandList;
+import com.realtime.crossfire.jxclient.gui.commands.CommandCallback;
+import com.realtime.crossfire.jxclient.gui.commands.CommandList;
 import com.realtime.crossfire.jxclient.gui.keybindings.KeyBindingState;
 import com.realtime.crossfire.jxclient.gui.keybindings.KeyBindings;
 import com.realtime.crossfire.jxclient.settings.Filenames;
@@ -45,10 +46,10 @@ public class KeybindingsManager
     private final Commands commands;
 
     /**
-     * The {@link GuiManager} to use.
+     * The {@link CommandCallback} to use.
      */
     @NotNull
-    private final GuiManager guiManager;
+    private final CommandCallback commandCallback;
 
     /**
      * The {@link Macros} instance to use.
@@ -79,15 +80,15 @@ public class KeybindingsManager
     /**
      * Creates a new instance.
      * @param commands the commands instance to use
-     * @param guiManager the gui manager to use
+     * @param commandCallback the command callback to use
      * @param macros the macros instance to use
      */
-    public KeybindingsManager(@NotNull final Commands commands, @NotNull final GuiManager guiManager, @NotNull final Macros macros)
+    public KeybindingsManager(@NotNull final Commands commands, @NotNull final CommandCallback commandCallback, @NotNull final Macros macros)
     {
         this.commands = commands;
-        this.guiManager = guiManager;
+        this.commandCallback = commandCallback;
         this.macros = macros;
-        keyBindings = new KeyBindings(Filenames.getKeybindingsFile(null, null), commands, guiManager, macros);
+        keyBindings = new KeyBindings(Filenames.getKeybindingsFile(null, null), commands, commandCallback, macros);
     }
 
     /**
@@ -162,7 +163,7 @@ public class KeybindingsManager
      */
     public void loadPerCharacterBindings(@NotNull final CharSequence hostname, @NotNull final CharSequence character)
     {
-        characterKeyBindings = new KeyBindings(Filenames.getKeybindingsFile(hostname, character), commands, guiManager, macros);
+        characterKeyBindings = new KeyBindings(Filenames.getKeybindingsFile(hostname, character), commands, commandCallback, macros);
         try
         {
             characterKeyBindings.loadKeyBindings();

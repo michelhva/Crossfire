@@ -715,7 +715,7 @@ public class JXCWindow extends JFrame
     {
         // check for skin in directory
         final File dir = new File(skinName);
-        final KeyBindings defaultKeyBindings = new KeyBindings(null, guiManager.getCommands(), guiManager, macros);
+        final KeyBindings defaultKeyBindings = new KeyBindings(null, guiManager.getCommands(), guiManager.getCommandCallback(), macros);
         final JXCSkinSource skinSource;
         if (dir.exists() && dir.isDirectory())
         {
@@ -728,7 +728,7 @@ public class JXCWindow extends JFrame
         }
         final JXCSkinLoader newSkin = new JXCSkinLoader(itemsManager, spellsManager, facesManager, stats, mapUpdater, defaultKeyBindings, optionManager, experienceTable, skillSet);
         final Commands commands = guiManager.getCommands();
-        final GuiFactory guiFactory = new GuiFactory(debugGui ? mouseTracker : null, commands, guiManager, macros);
+        final GuiFactory guiFactory = new GuiFactory(debugGui ? mouseTracker : null, commands, guiManager.getCommandCallback(), macros);
         final CommandCallback commandCallback = guiManager.getCommandCallback();
         return newSkin.load(skinSource, server, guiStateManager, guiManager.getTooltipManager(), windowRenderer, windowRenderer.getElementListener(), metaserverModel, commandQueue, resolution, shortcutsManager.getShortcuts(), commands, currentSpellManager, commandCallback, macros, guiFactory);
     }

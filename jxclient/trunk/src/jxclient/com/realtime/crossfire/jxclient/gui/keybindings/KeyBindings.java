@@ -24,10 +24,10 @@ package com.realtime.crossfire.jxclient.gui.keybindings;
 
 import com.realtime.crossfire.jxclient.commands.Commands;
 import com.realtime.crossfire.jxclient.commands.Macros;
-import com.realtime.crossfire.jxclient.gui.command.CommandList;
-import com.realtime.crossfire.jxclient.gui.command.CommandListType;
+import com.realtime.crossfire.jxclient.gui.commands.CommandCallback;
+import com.realtime.crossfire.jxclient.gui.commands.CommandList;
+import com.realtime.crossfire.jxclient.gui.commands.CommandListType;
 import com.realtime.crossfire.jxclient.gui.commands.GUICommandFactory;
-import com.realtime.crossfire.jxclient.window.GuiManager;
 import java.awt.event.KeyEvent;
 import java.io.BufferedWriter;
 import java.io.File;
@@ -56,10 +56,10 @@ public class KeyBindings
     private final Commands commands;
 
     /**
-     * The {@link GuiManager} to use.
+     * The {@link CommandCallback} to use.
      */
     @NotNull
-    private final GuiManager guiManager;
+    private final CommandCallback commandCallback;
 
     /**
      * The {@link Macros} instance to use.
@@ -96,14 +96,14 @@ public class KeyBindings
      * @param file the file for saving the bindings; <code>null</code> to not
      * save
      * @param commands the commands instance for executing commands
-     * @param guiManager the gui manager to use
+     * @param commandCallback the command callback to use
      * @param macros the macros instance to use
      */
-    public KeyBindings(@Nullable final File file, @NotNull final Commands commands, @NotNull final GuiManager guiManager, @NotNull final Macros macros)
+    public KeyBindings(@Nullable final File file, @NotNull final Commands commands, @NotNull final CommandCallback commandCallback, @NotNull final Macros macros)
     {
         this.file = file;
         this.commands = commands;
-        this.guiManager = guiManager;
+        this.commandCallback = commandCallback;
         this.macros = macros;
     }
 
@@ -398,7 +398,7 @@ public class KeyBindings
             {
                 final char keyChar = (char)Integer.parseInt(tmp[0]);
                 final CommandList commandList = new CommandList(CommandListType.AND);
-                commandList.add(GUICommandFactory.createCommandDecode(tmp[1], guiManager, commands, macros));
+                commandList.add(GUICommandFactory.createCommandDecode(tmp[1], commandCallback, commands, macros));
                 addKeyBindingAsKeyChar(keyChar, commandList, isDefault);
             }
             catch (final NumberFormatException ex)
@@ -440,7 +440,7 @@ public class KeyBindings
             }
 
             final CommandList commandList = new CommandList(CommandListType.AND);
-            commandList.add(GUICommandFactory.createCommandDecode(tmp[2], guiManager, commands, macros));
+            commandList.add(GUICommandFactory.createCommandDecode(tmp[2], commandCallback, commands, macros));
             addKeyBindingAsKeyCode(keyCode, modifiers, commandList, isDefault);
         }
         else

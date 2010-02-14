@@ -21,8 +21,8 @@
 
 package com.realtime.crossfire.jxclient.commands;
 
+import com.realtime.crossfire.jxclient.gui.commands.CommandCallback;
 import com.realtime.crossfire.jxclient.server.CrossfireServerConnection;
-import com.realtime.crossfire.jxclient.window.GuiManager;
 import org.jetbrains.annotations.NotNull;
 
 /**
@@ -32,20 +32,20 @@ import org.jetbrains.annotations.NotNull;
 public class UnbindCommand extends AbstractCommand
 {
     /**
-     * The {@link GuiManager} to use.
+     * The {@link CommandCallback} to use.
      */
     @NotNull
-    private final GuiManager guiManager;
+    private final CommandCallback commandCallback;
 
     /**
      * Creates a new instance.
-     * @param guiManager the gui manager to use
+     * @param commandCallback the command callback to use
      * @param crossfireServerConnection the connection instance
      */
-    public UnbindCommand(@NotNull final GuiManager guiManager, @NotNull final CrossfireServerConnection crossfireServerConnection)
+    public UnbindCommand(@NotNull final CommandCallback commandCallback, @NotNull final CrossfireServerConnection crossfireServerConnection)
     {
         super(crossfireServerConnection);
-        this.guiManager = guiManager;
+        this.commandCallback = commandCallback;
     }
 
     /** {@inheritDoc} */
@@ -83,7 +83,7 @@ public class UnbindCommand extends AbstractCommand
             return;
         }
 
-        if (!guiManager.removeKeyBinding(perCharacterBinding))
+        if (!commandCallback.removeKeyBinding(perCharacterBinding))
         {
             drawInfoError("Cannot use unbind -c since no character is logged in.");
             return;
