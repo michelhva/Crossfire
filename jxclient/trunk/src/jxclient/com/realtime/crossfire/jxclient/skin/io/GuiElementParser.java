@@ -21,9 +21,10 @@
 
 package com.realtime.crossfire.jxclient.skin.io;
 
+import com.realtime.crossfire.jxclient.gui.gui.GUIElement;
 import com.realtime.crossfire.jxclient.gui.label.AbstractLabel;
 import com.realtime.crossfire.jxclient.gui.textinput.GUIText;
-import com.realtime.crossfire.jxclient.skin.skin.JXCSkin;
+import com.realtime.crossfire.jxclient.skin.skin.JXCSkinCache;
 import com.realtime.crossfire.jxclient.skin.skin.JXCSkinException;
 import org.jetbrains.annotations.NotNull;
 
@@ -34,18 +35,18 @@ import org.jetbrains.annotations.NotNull;
 public class GuiElementParser
 {
     /**
-     * The skin for lookin up defined GUI elements.
+     * The defined {@link GUIElement}s.
      */
     @NotNull
-    private final JXCSkin skin;
+    private final JXCSkinCache<GUIElement> definedGUIElements;
 
     /**
      * Creates a new instance.
-     * @param skin the skin for looking up defined GUI elements
+     * @param definedGUIElements the defined gui elements
      */
-    public GuiElementParser(@NotNull final JXCSkin skin)
+    public GuiElementParser(@NotNull final JXCSkinCache<GUIElement> definedGUIElements)
     {
-        this.skin = skin;
+        this.definedGUIElements = definedGUIElements;
     }
 
     /**
@@ -57,7 +58,7 @@ public class GuiElementParser
     @NotNull
     public GUIText lookupTextElement(@NotNull final String name) throws JXCSkinException
     {
-        final Object element = skin.lookupGuiElement(name);
+        final Object element = definedGUIElements.lookup(name);
         if (!(element instanceof GUIText))
         {
             throw new JXCSkinException("element "+name+" is not a text field");
@@ -75,7 +76,7 @@ public class GuiElementParser
     @NotNull
     public AbstractLabel lookupLabelElement(@NotNull final String name) throws JXCSkinException
     {
-        final Object element = skin.lookupGuiElement(name);
+        final Object element = definedGUIElements.lookup(name);
         if (!(element instanceof AbstractLabel))
         {
             throw new JXCSkinException("element "+name+" is not a label");
