@@ -38,9 +38,7 @@ import com.realtime.crossfire.jxclient.skin.skin.Dialogs;
 import com.realtime.crossfire.jxclient.skin.skin.JXCSkin;
 import com.realtime.crossfire.jxclient.skin.skin.JXCSkinCache;
 import com.realtime.crossfire.jxclient.skin.skin.JXCSkinException;
-import com.realtime.crossfire.jxclient.stats.ExperienceTable;
 import com.realtime.crossfire.jxclient.util.Resolution;
-import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.HashSet;
@@ -125,18 +123,6 @@ public class DefaultJXCSkin implements JXCSkin
     private final OptionManager optionManager;
 
     /**
-     * The {@link ExperienceTable} to use.
-     */
-    @NotNull
-    private final ExperienceTable experienceTable;
-
-    /**
-     * The {@link GaugeUpdaterParser} for parsing gauge specifications.
-     */
-    @NotNull
-    private final GaugeUpdaterParser gaugeUpdaterParser;
-
-    /**
      * The defined option names.
      */
     @NotNull
@@ -172,19 +158,14 @@ public class DefaultJXCSkin implements JXCSkin
      * Creates a new instance.
      * @param defaultKeyBindings the default key bindings
      * @param optionManager the option manager to use
-     * @param experienceTable the experience table to use
      * @param selectedResolution the resolution to use
-     * @param gaugeUpdaterParser the gauge updater parser for parsing gauge
-     * specifications
      * @param dialogs the dialogs to use
      */
-    public DefaultJXCSkin(@NotNull final KeyBindings defaultKeyBindings, @NotNull final OptionManager optionManager, @NotNull final ExperienceTable experienceTable, @NotNull final Resolution selectedResolution, @NotNull final GaugeUpdaterParser gaugeUpdaterParser, @NotNull final Dialogs dialogs)
+    public DefaultJXCSkin(@NotNull final KeyBindings defaultKeyBindings, @NotNull final OptionManager optionManager, @NotNull final Resolution selectedResolution, @NotNull final Dialogs dialogs)
     {
         this.defaultKeyBindings = defaultKeyBindings;
         this.optionManager = optionManager;
-        this.experienceTable = experienceTable;
         this.selectedResolution = selectedResolution;
-        this.gaugeUpdaterParser = gaugeUpdaterParser;
         this.dialogs = dialogs;
     }
 
@@ -527,18 +508,12 @@ public class DefaultJXCSkin implements JXCSkin
     }
 
     /**
-     * Creates a new {@link GaugeUpdater} instance from a string
-     * representation.
-     * @param name the gauge updater value to parse
-     * @return the gauge updater
-     * @throws IOException if the gauge updater value does not exist
+     * Adds a {@link GaugeUpdater} instance.
+     * @param gaugeUpdater the gauge updater to add
      */
-    @NotNull
-    public GaugeUpdater newGaugeUpdater(@NotNull final String name) throws IOException
+    public void addGaugeUpdater(@NotNull final GaugeUpdater gaugeUpdater)
     {
-        final GaugeUpdater gaugeUpdater = gaugeUpdaterParser.parseGaugeUpdater(name, experienceTable);
         gaugeUpdaters.add(gaugeUpdater);
-        return gaugeUpdater;
     }
 
     /**
