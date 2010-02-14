@@ -97,6 +97,7 @@ import com.realtime.crossfire.jxclient.skin.events.SkillRemovedSkinEvent;
 import com.realtime.crossfire.jxclient.skin.factory.CheckBoxFactory;
 import com.realtime.crossfire.jxclient.skin.factory.DialogFactory;
 import com.realtime.crossfire.jxclient.skin.factory.TextButtonFactory;
+import com.realtime.crossfire.jxclient.skin.skin.DefaultJXCSkin;
 import com.realtime.crossfire.jxclient.skin.skin.Dialogs;
 import com.realtime.crossfire.jxclient.skin.skin.JXCSkin;
 import com.realtime.crossfire.jxclient.skin.skin.JXCSkinCache;
