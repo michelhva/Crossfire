@@ -181,6 +181,12 @@ public class JXCSkinLoader
     private final ExperienceTable experienceTable;
 
     /**
+     * The {@link GaugeUpdaterParser} for parsing gauge specifications.
+     */
+    @NotNull
+    private GaugeUpdaterParser gaugeUpdaterParser;
+
+    /**
      * The {@link SkillSet} instance to use.
      */
     @NotNull
@@ -357,9 +363,9 @@ public class JXCSkinLoader
 
         expressionParser = new ExpressionParser(selectedResolution);
         final Dialogs dialogs = new Dialogs(guiFactory);
-        final GaugeUpdaterParser gaugeUpdaterParser = new GaugeUpdaterParser(stats, itemsManager, skillSet);
+        gaugeUpdaterParser = new GaugeUpdaterParser(stats, itemsManager, skillSet);
         commandParser = new CommandParser(dialogs, itemsManager, expressionParser, definedGUIElements);
-        skin = new DefaultJXCSkin(defaultKeyBindings, optionManager, experienceTable, selectedResolution, gaugeUpdaterParser, dialogs);
+        skin = new DefaultJXCSkin(defaultKeyBindings, optionManager, selectedResolution, dialogs);
         @Nullable JXCSkin skinToDetach = skin;
         try
         {
@@ -1181,7 +1187,7 @@ public class JXCSkinLoader
         final BufferedImage positiveDivImage = imageParser.getImage(args[6]);
         final BufferedImage positiveModImage = imageParser.getImage(args[7]);
         final BufferedImage emptyImage = args[8].equals("null") ? null : imageParser.getImage(args[8]);
-        final GaugeUpdater gaugeUpdater = skin.newGaugeUpdater(args[9]);
+        final GaugeUpdater gaugeUpdater = newGaugeUpdater(args[9]);
         final Orientation orientationDiv = ParseUtils.parseOrientation(args[10]);
         final Orientation orientationMod = ParseUtils.parseOrientation(args[11]);
         final String tooltipPrefix = ParseUtils.parseText(args, 12, lnr);
@@ -1214,7 +1220,7 @@ public class JXCSkinLoader
         final BufferedImage positiveDivImage = imageParser.getImage(args[6]);
         final BufferedImage positiveModImage = imageParser.getImage(args[7]);
         final BufferedImage emptyImage = imageParser.getImage(args[8]);
-        final GaugeUpdater gaugeUpdater = skin.newGaugeUpdater(args[9]);
+        final GaugeUpdater gaugeUpdater = newGaugeUpdater(args[9]);
         final Orientation orientationDiv = ParseUtils.parseOrientation(args[10]);
         final Orientation orientationMod = ParseUtils.parseOrientation(args[11]);
         final Color color = ParseUtils.parseColor(args[12]);
@@ -1352,7 +1358,7 @@ public class JXCSkinLoader
         final BufferedImage positiveImage = args[6].equals("null") ? null : imageParser.getImage(args[6]);
         final BufferedImage negativeImage = args[7].equals("null") ? null : imageParser.getImage(args[7]);
         final BufferedImage emptyImage = args[8].equals("null") ? null : imageParser.getImage(args[8]);
-        final GaugeUpdater gaugeUpdater = skin.newGaugeUpdater(args[9]);
+        final GaugeUpdater gaugeUpdater = newGaugeUpdater(args[9]);
         final Orientation orientation = ParseUtils.parseOrientation(args[10]);
         final String tooltipPrefix = ParseUtils.parseText(args, 11, lnr);
         final GUIGauge element = new GUIGauge(tooltipManager, elementListener, name, x, y, w, h, positiveImage, negativeImage, emptyImage, orientation, tooltipPrefix.length() > 0 ? tooltipPrefix : null);
@@ -2222,7 +2228,7 @@ public class JXCSkinLoader
         final BufferedImage positiveImage = imageParser.getImage(args[6]);
         final BufferedImage negativeImage = args[7].equals("null") ? null : imageParser.getImage(args[7]);
         final BufferedImage emptyImage = imageParser.getImage(args[8]);
-        final GaugeUpdater gaugeUpdater = skin.newGaugeUpdater(args[9]);
+        final GaugeUpdater gaugeUpdater = newGaugeUpdater(args[9]);
         final Orientation orientation = ParseUtils.parseOrientation(args[10]);
         final Color color = ParseUtils.parseColor(args[11]);
         final Font font = definedFonts.lookup(args[12]);
@@ -2285,5 +2291,20 @@ public class JXCSkinLoader
     {
         final GUICommandList commandList = skin.getCommandList(listName);
         commandList.add(commandParser.parseCommandArgs(args, argc, element, command, guiStateManager, commands, lnr, commandQueue, crossfireServerConnection, guiManager, macros));
+    }
+
+    /**
+     * Creates a new {@link GaugeUpdater} instance from a string
+     * representation.
+     * @param name the gauge updater value to parse
+     * @return the gauge updater
+     * @throws IOException if the gauge updater value does not exist
+     */
+    @NotNull
+    private GaugeUpdater newGaugeUpdater(@NotNull final String name) throws IOException
+    {
+        final GaugeUpdater gaugeUpdater = gaugeUpdaterParser.parseGaugeUpdater(name, experienceTable);
+        skin.addGaugeUpdater(gaugeUpdater);
+        return gaugeUpdater;
     }
 }
