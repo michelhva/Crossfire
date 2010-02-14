@@ -19,7 +19,7 @@
  * Copyright (C) 2006-2010 Andreas Kirschbaum.
  */
 
-package com.realtime.crossfire.jxclient.skin.io;
+package com.realtime.crossfire.jxclient.skin.skin;
 
 import com.realtime.crossfire.jxclient.gui.command.CommandType;
 import com.realtime.crossfire.jxclient.gui.command.GUICommandList;
@@ -34,10 +34,6 @@ import com.realtime.crossfire.jxclient.settings.options.Option;
 import com.realtime.crossfire.jxclient.settings.options.OptionException;
 import com.realtime.crossfire.jxclient.settings.options.OptionManager;
 import com.realtime.crossfire.jxclient.skin.events.SkinEvent;
-import com.realtime.crossfire.jxclient.skin.skin.Dialogs;
-import com.realtime.crossfire.jxclient.skin.skin.JXCSkin;
-import com.realtime.crossfire.jxclient.skin.skin.JXCSkinCache;
-import com.realtime.crossfire.jxclient.skin.skin.JXCSkinException;
 import com.realtime.crossfire.jxclient.util.Resolution;
 import java.util.ArrayList;
 import java.util.Collection;
