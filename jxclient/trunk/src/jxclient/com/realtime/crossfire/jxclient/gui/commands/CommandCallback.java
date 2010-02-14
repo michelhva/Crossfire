@@ -21,50 +21,52 @@
 
 package com.realtime.crossfire.jxclient.gui.commands;
 
-import com.realtime.crossfire.jxclient.gui.command.GUICommand;
+import com.realtime.crossfire.jxclient.gui.command.GUICommandList;
 import com.realtime.crossfire.jxclient.gui.gui.Gui;
 import org.jetbrains.annotations.NotNull;
 
 /**
- * A {@link GUICommand} which toggles the visibility of a dialog.
+ * Interface that defines callback functions needed by commands.
  * @author Andreas Kirschbaum
  */
-public class DialogToggleCommand implements GUICommand
+public interface CommandCallback
 {
     /**
-     * The {@link CommandCallback} to use.
+     * Terminates the application.
      */
-    @NotNull
-    private final CommandCallback commandCallback;
+    void quitApplication();
 
     /**
-     * The dialog to toggle.
+     * Opens a dialog. Does nothing if the dialog is open.
+     * @param dialog the dialog to open
      */
-    @NotNull
-    private final Gui dialog;
+    void openDialog(@NotNull Gui dialog);
 
     /**
-     * Creates a new instance.
-     * @param commandCallback the command callback to use
+     * Toggles a dialog.
      * @param dialog the dialog to toggle
      */
-    public DialogToggleCommand(@NotNull final CommandCallback commandCallback, @NotNull final Gui dialog)
-    {
-        this.commandCallback = commandCallback;
-        this.dialog = dialog;
-    }
+    void toggleDialog(@NotNull Gui dialog);
 
-    /** {@inheritDoc} */
-    @Override
-    public boolean canExecute()
-    {
-        return true;
-    }
+    /**
+     * Closes a dialog. Does nothing if the dialog is not open.
+     * @param dialog the dialog to close
+     */
+    void closeDialog(@NotNull Gui dialog);
 
-    /** {@inheritDoc} */
-    @Override
-    public void execute()
-    {
-        commandCallback.toggleDialog(dialog);
-    }
+    /**
+     * Returns a command list.
+     * @param args the command list arguments
+     * @return the command list
+     * @throws NoSuchCommandException if the command list does not exist
+     */
+    @NotNull
+    GUICommandList getCommandList(@NotNull String args) throws NoSuchCommandException;
+
+    /**
+     * Sets the current player name. Does nothing if not currently in the
+     * character name prompt.
+     * @param playerName the player name
+     */
+    void updatePlayerName(@NotNull String playerName);
 }

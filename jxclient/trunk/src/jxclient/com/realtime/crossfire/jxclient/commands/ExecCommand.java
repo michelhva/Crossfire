@@ -22,9 +22,9 @@
 package com.realtime.crossfire.jxclient.commands;
 
 import com.realtime.crossfire.jxclient.gui.command.GUICommandList;
+import com.realtime.crossfire.jxclient.gui.commands.CommandCallback;
+import com.realtime.crossfire.jxclient.gui.commands.NoSuchCommandException;
 import com.realtime.crossfire.jxclient.server.CrossfireServerConnection;
-import com.realtime.crossfire.jxclient.skin.skin.JXCSkinException;
-import com.realtime.crossfire.jxclient.window.GuiManager;
 import org.jetbrains.annotations.NotNull;
 
 /**
@@ -34,20 +34,20 @@ import org.jetbrains.annotations.NotNull;
 public class ExecCommand extends AbstractCommand
 {
     /**
-     * The {@link GuiManager} for looking up commands.
+     * The {@link CommandCallback} to lookup commands.
      */
     @NotNull
-    private final GuiManager guiManager;
+    private final CommandCallback commandCallback;
 
     /**
      * Creates a new instance.
-     * @param guiManager the gui manager for looking up commands
+     * @param commandCallback the command callback to lookup commands
      * @param crossfireServerConnection the connection instance
      */
-    public ExecCommand(@NotNull final GuiManager guiManager, @NotNull final CrossfireServerConnection crossfireServerConnection)
+    public ExecCommand(@NotNull final CommandCallback commandCallback, @NotNull final CrossfireServerConnection crossfireServerConnection)
     {
         super(crossfireServerConnection);
-        this.guiManager = guiManager;
+        this.commandCallback = commandCallback;
     }
 
     /** {@inheritDoc} */
@@ -70,9 +70,9 @@ public class ExecCommand extends AbstractCommand
         final GUICommandList commandList;
         try
         {
-            commandList = guiManager.getSkin().getCommandList(args);
+            commandList = commandCallback.getCommandList(args);
         }
-        catch (final JXCSkinException ex)
+        catch (final NoSuchCommandException ex)
         {
             drawInfoError(ex.getMessage());
             return;

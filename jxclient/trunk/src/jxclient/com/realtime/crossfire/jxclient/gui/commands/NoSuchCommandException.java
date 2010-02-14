@@ -21,41 +21,25 @@
 
 package com.realtime.crossfire.jxclient.gui.commands;
 
-import com.realtime.crossfire.jxclient.gui.command.GUICommand;
 import org.jetbrains.annotations.NotNull;
 
 /**
- * A {@link GUICommand} which quite the client.
+ * An {@link Exception} thrown if a command does not exist.
  * @author Andreas Kirschbaum
  */
-public class QuitCommand implements GUICommand
+public class NoSuchCommandException extends Exception
 {
     /**
-     * The {@link CommandCallback} instance.
+     * The serial version UID.
      */
-    @NotNull
-    private final CommandCallback commandCallback;
+    private static final long serialVersionUID = 1;
 
     /**
      * Creates a new instance.
-     * @param commandCallback the command callback instance
+     * @param reason the failure reason
      */
-    public QuitCommand(@NotNull final CommandCallback commandCallback)
+    public NoSuchCommandException(@NotNull final String reason)
     {
-        this.commandCallback = commandCallback;
-    }
-
-    /** {@inheritDoc} */
-    @Override
-    public boolean canExecute()
-    {
-        return true;
-    }
-
-    /** {@inheritDoc} */
-    @Override
-    public void execute()
-    {
-        commandCallback.quitApplication();
+        super(reason);
     }
 }

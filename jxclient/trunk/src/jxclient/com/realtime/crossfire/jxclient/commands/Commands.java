@@ -21,6 +21,7 @@
 
 package com.realtime.crossfire.jxclient.commands;
 
+import com.realtime.crossfire.jxclient.gui.commands.CommandCallback;
 import com.realtime.crossfire.jxclient.gui.gui.JXCWindowRenderer;
 import com.realtime.crossfire.jxclient.scripts.ScriptManager;
 import com.realtime.crossfire.jxclient.server.CommandQueue;
@@ -60,9 +61,10 @@ public class Commands
      * @param scriptManager the script manager instance
      * @param optionManager the option manager instance
      * @param guiManager the gui manager to use
+     * @param commandCallback the command callback to use
      * @param macros the macros instance to use
      */
-    public Commands(@NotNull final JXCWindowRenderer windowRenderer, @NotNull final CommandQueue commandQueue, @NotNull final CrossfireServerConnection crossfireServerConnection, @NotNull final ScriptManager scriptManager, @NotNull final OptionManager optionManager, @NotNull final GuiManager guiManager, @NotNull final Macros macros)
+    public Commands(@NotNull final JXCWindowRenderer windowRenderer, @NotNull final CommandQueue commandQueue, @NotNull final CrossfireServerConnection crossfireServerConnection, @NotNull final ScriptManager scriptManager, @NotNull final OptionManager optionManager, @NotNull final GuiManager guiManager, @NotNull final CommandCallback commandCallback, @NotNull final Macros macros)
     {
         this.commandQueue = commandQueue;
         commands.put("bind", new BindCommand(crossfireServerConnection, this, guiManager, macros));
@@ -73,7 +75,7 @@ public class Commands
         commands.put("scriptkillall", new ScriptkillallCommand(scriptManager, crossfireServerConnection));
         commands.put("scripts", new ScriptsCommand(scriptManager, crossfireServerConnection));
         commands.put("scripttell", new ScripttellCommand(scriptManager, crossfireServerConnection));
-        commands.put("exec", new ExecCommand(guiManager, crossfireServerConnection));
+        commands.put("exec", new ExecCommand(commandCallback, crossfireServerConnection));
         commands.put("set", new SetCommand(crossfireServerConnection, optionManager));
         commands.put("clear", new ClearCommand(windowRenderer, crossfireServerConnection));
         commands.put("debug_colors", new DebugColorsCommand(crossfireServerConnection));

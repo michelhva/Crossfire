@@ -32,6 +32,7 @@ import com.realtime.crossfire.jxclient.gui.button.GUIButton;
 import com.realtime.crossfire.jxclient.gui.command.CommandCheckBoxOption;
 import com.realtime.crossfire.jxclient.gui.command.CommandType;
 import com.realtime.crossfire.jxclient.gui.command.GUICommandList;
+import com.realtime.crossfire.jxclient.gui.commands.CommandCallback;
 import com.realtime.crossfire.jxclient.gui.gauge.GUIDupGauge;
 import com.realtime.crossfire.jxclient.gui.gauge.GUIDupTextGauge;
 import com.realtime.crossfire.jxclient.gui.gauge.GUIGauge;
@@ -111,7 +112,6 @@ import com.realtime.crossfire.jxclient.util.NumberParser;
 import com.realtime.crossfire.jxclient.util.Resolution;
 import com.realtime.crossfire.jxclient.util.StringUtils;
 import com.realtime.crossfire.jxclient.util.UnterminatedTokenException;
-import com.realtime.crossfire.jxclient.window.GuiManager;
 import java.awt.Color;
 import java.awt.Font;
 import java.awt.image.BufferedImage;
@@ -305,14 +305,14 @@ public class JXCSkinLoader
      * @param shortcuts the shortcuts to use
      * @param commands the commands instance to use
      * @param currentSpellManager the current spell manager to use
-     * @param guiManager the gui manager to use
+     * @param commandCallback the command callback to use
      * @param macros the macros instance to use
      * @param guiFactory the gui factory for creating gui elements
      * @return the loaded skin
      * @throws JXCSkinException if the skin cannot be loaded
      */
     @NotNull
-    public JXCSkin load(@NotNull final JXCSkinSource skinSource, @NotNull final CrossfireServerConnection crossfireServerConnection, @NotNull final GuiStateManager guiStateManager, @NotNull final TooltipManager tooltipManager, @NotNull final JXCWindowRenderer windowRenderer, @NotNull final GUIElementListener elementListener, @NotNull final MetaserverModel metaserverModel, @NotNull final CommandQueue commandQueue, @NotNull final Resolution resolution, @NotNull final Shortcuts shortcuts, @NotNull final Commands commands, @NotNull final CurrentSpellManager currentSpellManager, @NotNull final GuiManager guiManager, @NotNull final Macros macros, @NotNull final GuiFactory guiFactory) throws JXCSkinException
+    public JXCSkin load(@NotNull final JXCSkinSource skinSource, @NotNull final CrossfireServerConnection crossfireServerConnection, @NotNull final GuiStateManager guiStateManager, @NotNull final TooltipManager tooltipManager, @NotNull final JXCWindowRenderer windowRenderer, @NotNull final GUIElementListener elementListener, @NotNull final MetaserverModel metaserverModel, @NotNull final CommandQueue commandQueue, @NotNull final Resolution resolution, @NotNull final Shortcuts shortcuts, @NotNull final Commands commands, @NotNull final CurrentSpellManager currentSpellManager, @NotNull final CommandCallback commandCallback, @NotNull final Macros macros, @NotNull final GuiFactory guiFactory) throws JXCSkinException
     {
         imageParser = new ImageParser(skinSource);
         fontParser = new FontParser(skinSource);
@@ -387,7 +387,7 @@ public class JXCSkinLoader
             checkBoxFactory = null;
             try
             {
-                load(skinSource, "global", crossfireServerConnection, guiStateManager, tooltipManager, windowRenderer, elementListener, metaserverModel, commandQueue, null, shortcuts, commands, currentSpellManager, guiManager, macros);
+                load(skinSource, "global", crossfireServerConnection, guiStateManager, tooltipManager, windowRenderer, elementListener, metaserverModel, commandQueue, null, shortcuts, commands, currentSpellManager, commandCallback, macros);
                 for (;;)
                 {
                     final String name = skin.getDialogToLoad();
@@ -396,7 +396,7 @@ public class JXCSkinLoader
                         break;
                     }
                     final Gui gui = skin.getDialog(name);
-                    load(skinSource, name, crossfireServerConnection, guiStateManager, tooltipManager, windowRenderer, elementListener, metaserverModel, commandQueue, gui, shortcuts, commands, currentSpellManager, guiManager, macros);
+                    load(skinSource, name, crossfireServerConnection, guiStateManager, tooltipManager, windowRenderer, elementListener, metaserverModel, commandQueue, gui, shortcuts, commands, currentSpellManager, commandCallback, macros);
                     gui.setStateChanged(false);
                 }
             }
@@ -442,11 +442,11 @@ public class JXCSkinLoader
      * @param shortcuts the shortcuts instance
      * @param commands the commands instance for executing commands
      * @param currentSpellManager the current spell manager to use
-     * @param guiManager the gui manager to use
+     * @param commandCallback the command callback to use
      * @param macros the macros instance to use
      * @throws JXCSkinException if the file cannot be loaded
      */
-    private void load(@NotNull final JXCSkinSource skinSource, @NotNull final String dialogName, @NotNull final CrossfireServerConnection server, @NotNull final GuiStateManager guiStateManager, @NotNull final TooltipManager tooltipManager, @NotNull final JXCWindowRenderer windowRenderer, @NotNull final GUIElementListener elementListener, @NotNull final MetaserverModel metaserverModel, @NotNull final CommandQueue commandQueue, @Nullable final Gui gui, @NotNull final Shortcuts shortcuts, @NotNull final Commands commands, @NotNull final CurrentSpellManager currentSpellManager, @NotNull final GuiManager guiManager, @NotNull final Macros macros) throws JXCSkinException
+    private void load(@NotNull final JXCSkinSource skinSource, @NotNull final String dialogName, @NotNull final CrossfireServerConnection server, @NotNull final GuiStateManager guiStateManager, @NotNull final TooltipManager tooltipManager, @NotNull final JXCWindowRenderer windowRenderer, @NotNull final GUIElementListener elementListener, @NotNull final MetaserverModel metaserverModel, @NotNull final CommandQueue commandQueue, @Nullable final Gui gui, @NotNull final Shortcuts shortcuts, @NotNull final Commands commands, @NotNull final CurrentSpellManager currentSpellManager, @NotNull final CommandCallback commandCallback, @NotNull final Macros macros) throws JXCSkinException
     {
         String resourceName = dialogName+"@"+skin.getSelectedResolution()+".skin";
 
@@ -465,7 +465,7 @@ public class JXCSkinLoader
             }
             try
             {
-                load(skinSource, dialogName, resourceName, inputStream, server, guiStateManager, tooltipManager, windowRenderer, elementListener, metaserverModel, commandQueue, gui, shortcuts, commands, currentSpellManager, guiManager, macros);
+                load(skinSource, dialogName, resourceName, inputStream, server, guiStateManager, tooltipManager, windowRenderer, elementListener, metaserverModel, commandQueue, gui, shortcuts, commands, currentSpellManager, commandCallback, macros);
             }
             finally
             {
@@ -504,11 +504,11 @@ public class JXCSkinLoader
      * @param shortcuts the shortcuts instance
      * @param commands the commands instance for executing commands
      * @param currentSpellManager the current spell manager to use
-     * @param guiManager the gui manager to use
+     * @param commandCallback the command callback to use
      * @param macros the macros instance to use
      * @throws JXCSkinException if the file cannot be loaded
      */
-    private void load(@NotNull final JXCSkinSource skinSource, @NotNull final String dialogName, @NotNull final String resourceName, @NotNull final InputStream inputStream, @NotNull final CrossfireServerConnection server, @NotNull final GuiStateManager guiStateManager, @NotNull final TooltipManager tooltipManager, @NotNull final JXCWindowRenderer windowRenderer, @NotNull final GUIElementListener elementListener, @NotNull final MetaserverModel metaserverModel, @NotNull final CommandQueue commandQueue, @Nullable final Gui gui, @NotNull final Shortcuts shortcuts, @NotNull final Commands commands, @NotNull final CurrentSpellManager currentSpellManager, @NotNull final GuiManager guiManager, @NotNull final Macros macros) throws JXCSkinException
+    private void load(@NotNull final JXCSkinSource skinSource, @NotNull final String dialogName, @NotNull final String resourceName, @NotNull final InputStream inputStream, @NotNull final CrossfireServerConnection server, @NotNull final GuiStateManager guiStateManager, @NotNull final TooltipManager tooltipManager, @NotNull final JXCWindowRenderer windowRenderer, @NotNull final GUIElementListener elementListener, @NotNull final MetaserverModel metaserverModel, @NotNull final CommandQueue commandQueue, @Nullable final Gui gui, @NotNull final Shortcuts shortcuts, @NotNull final Commands commands, @NotNull final CurrentSpellManager currentSpellManager, @NotNull final CommandCallback commandCallback, @NotNull final Macros macros) throws JXCSkinException
     {
         final List<GUIElement> addedElements = new ArrayList<GUIElement>();
         boolean addedElementsContainsWildcard = false;
@@ -570,15 +570,15 @@ public class JXCSkinLoader
                         }
                         else if (args[0].equals("commandlist"))
                         {
-                            parseCommandList(args, guiStateManager, lnr, commands, commandQueue, server, guiManager, macros);
+                            parseCommandList(args, guiStateManager, lnr, commands, commandQueue, server, commandCallback, macros);
                         }
                         else if (args[0].equals("commandlist_add"))
                         {
-                            parseCommandListAdd(args, guiStateManager, lnr, commands, commandQueue, server, guiManager, macros);
+                            parseCommandListAdd(args, guiStateManager, lnr, commands, commandQueue, server, commandCallback, macros);
                         }
                         else if (gui != null && args[0].equals("command_text"))
                         {
-                            parseCommandText(args, guiManager, tooltipManager, elementListener, commands);
+                            parseCommandText(args, commandCallback, tooltipManager, elementListener, commands);
                         }
                         else if (args[0].equals("def"))
                         {
@@ -686,7 +686,7 @@ public class JXCSkinLoader
                         }
                         else if (gui != null && args[0].equals("query_text"))
                         {
-                            parseQueryText(args, server, guiManager, tooltipManager, elementListener);
+                            parseQueryText(args, server, commandCallback, tooltipManager, elementListener);
                         }
                         else if (gui != null && args[0].equals("set_forced_active"))
                         {
@@ -718,7 +718,7 @@ public class JXCSkinLoader
                         }
                         else if (gui != null && args[0].equals("text"))
                         {
-                            parseText(args, guiManager, tooltipManager, elementListener);
+                            parseText(args, commandCallback, tooltipManager, elementListener);
                         }
                         else if (gui != null && args[0].equals("textbutton"))
                         {
@@ -910,11 +910,11 @@ public class JXCSkinLoader
      * @param commands the commands to add to
      * @param commandQueue the command queue to use
      * @param server the server to use
-     * @param guiManager the gui manager to use
+     * @param commandCallback the command callback to use
      * @throws IOException if the command cannot be parsed
      * @throws JXCSkinException if the command cannot be parsed
      */
-    private void parseCommandList(@NotNull final String[] args, @NotNull final GuiStateManager guiStateManager, @NotNull final LineNumberReader lnr, @NotNull final Commands commands, @NotNull final CommandQueue commandQueue, @NotNull final CrossfireServerConnection server, @NotNull final GuiManager guiManager, @NotNull final Macros macros) throws IOException, JXCSkinException
+    private void parseCommandList(@NotNull final String[] args, @NotNull final GuiStateManager guiStateManager, @NotNull final LineNumberReader lnr, @NotNull final Commands commands, @NotNull final CommandQueue commandQueue, @NotNull final CrossfireServerConnection server, @NotNull final CommandCallback commandCallback, @NotNull final Macros macros) throws IOException, JXCSkinException
     {
         if (args.length != 3 && args.length < 5)
         {
@@ -927,7 +927,7 @@ public class JXCSkinLoader
         if (args.length >= 5)
         {
             final GUIElement element = args[3].equals("null") ? null : definedGUIElements.lookup(args[3]);
-            addCommand(commandListName, args, 5, element, args[4], guiStateManager, commands, lnr, commandQueue, server, guiManager, macros);
+            addCommand(commandListName, args, 5, element, args[4], guiStateManager, commands, lnr, commandQueue, server, commandCallback, macros);
         }
     }
 
@@ -939,12 +939,12 @@ public class JXCSkinLoader
      * @param commands the commands to add to
      * @param commandQueue the command queue to use
      * @param server the server to use
-     * @param guiManager the gui manager to use
+     * @param commandCallback the command callback to use
      * @param macros the macros instance to use
      * @throws IOException if the command cannot be parsed
      * @throws JXCSkinException if the command cannot be parsed
      */
-    private void parseCommandListAdd(@NotNull final String[] args, @NotNull final GuiStateManager guiStateManager, @NotNull final LineNumberReader lnr, @NotNull final Commands commands, @NotNull final CommandQueue commandQueue, @NotNull final CrossfireServerConnection server, @NotNull final GuiManager guiManager, @NotNull final Macros macros) throws IOException, JXCSkinException
+    private void parseCommandListAdd(@NotNull final String[] args, @NotNull final GuiStateManager guiStateManager, @NotNull final LineNumberReader lnr, @NotNull final Commands commands, @NotNull final CommandQueue commandQueue, @NotNull final CrossfireServerConnection server, @NotNull final CommandCallback commandCallback, @NotNull final Macros macros) throws IOException, JXCSkinException
     {
         if (args.length < 4)
         {
@@ -952,20 +952,20 @@ public class JXCSkinLoader
         }
 
         final GUIElement element = args[2].equals("null") ? null : definedGUIElements.lookup(args[2]);
-        addCommand(args[1], args, 4, element, args[3], guiStateManager, commands, lnr, commandQueue, server, guiManager, macros);
+        addCommand(args[1], args, 4, element, args[3], guiStateManager, commands, lnr, commandQueue, server, commandCallback, macros);
     }
 
     /**
      * Parses a "command_text" command.
      * @param args the command arguments
-     * @param guiManager the gui manager to use
+     * @param commandCallback the command callback to use
      * @param tooltipManager the tooltip manager to update
      * @param elementListener the element listener to notify
      * @param commands the commands to use
      * @throws IOException if the command cannot be parsed
      * @throws JXCSkinException if the command cannot be parsed
      */
-    private void parseCommandText(@NotNull final String[] args, @NotNull final GuiManager guiManager, @NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final Commands commands) throws IOException, JXCSkinException
+    private void parseCommandText(@NotNull final String[] args, @NotNull final CommandCallback commandCallback, @NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final Commands commands) throws IOException, JXCSkinException
     {
         if (args.length != 12)
         {
@@ -983,7 +983,7 @@ public class JXCSkinLoader
         final Color inactiveColor = ParseUtils.parseColor(args[9]);
         final Color activeColor = ParseUtils.parseColor(args[10]);
         final int margin = expressionParser.parseInt(args[11]);
-        insertGuiElement(new GUICommandText(guiManager, tooltipManager, elementListener, name, x, y, w, h, activeImage, inactiveImage, font, inactiveColor, activeColor, margin, "", commands, false));
+        insertGuiElement(new GUICommandText(commandCallback, tooltipManager, elementListener, name, x, y, w, h, activeImage, inactiveImage, font, inactiveColor, activeColor, margin, "", commands, false));
     }
 
     /**
@@ -1976,13 +1976,13 @@ public class JXCSkinLoader
      * Parses a "query_text" command.
      * @param args the command arguments
      * @param server the crossfire server connectio for sending reply commands
-     * @param guiManager the gui manager to use
+     * @param commandCallback the command callback to use
      * @param tooltipManager the tooltip manager to update
      * @param elementListener the element listener to notify
      * @throws IOException if the command cannot be parsed
      * @throws JXCSkinException if the command cannot be parsed
      */
-    private void parseQueryText(@NotNull final String[] args, @NotNull final CrossfireServerConnection server, @NotNull final GuiManager guiManager, @NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener) throws IOException, JXCSkinException
+    private void parseQueryText(@NotNull final String[] args, @NotNull final CrossfireServerConnection server, @NotNull final CommandCallback commandCallback, @NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener) throws IOException, JXCSkinException
     {
         if (args.length != 12)
         {
@@ -2000,7 +2000,7 @@ public class JXCSkinLoader
         final Color inactiveColor = ParseUtils.parseColor(args[9]);
         final Color activeColor = ParseUtils.parseColor(args[10]);
         final int margin = expressionParser.parseInt(args[11]);
-        insertGuiElement(new GUIQueryText(server, guiManager, tooltipManager, elementListener, name, x, y, w, h, activeImage, inactiveImage, font, inactiveColor, activeColor, margin, "", false));
+        insertGuiElement(new GUIQueryText(server, commandCallback, tooltipManager, elementListener, name, x, y, w, h, activeImage, inactiveImage, font, inactiveColor, activeColor, margin, "", false));
     }
 
     /**
@@ -2143,13 +2143,13 @@ public class JXCSkinLoader
     /**
      * Parses a "text" command.
      * @param args the command arguments
-     * @param guiManager the gui manager to use
+     * @param commandCallback the command callback to use
      * @param tooltipManager the tooltip manager to update
      * @param elementListener the element listener to notify
      * @throws IOException if the command cannot be parsed
      * @throws JXCSkinException if the command cannot be parsed
      */
-    private void parseText(@NotNull final String[] args, @NotNull final GuiManager guiManager, @NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener) throws IOException, JXCSkinException
+    private void parseText(@NotNull final String[] args, @NotNull final CommandCallback commandCallback, @NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener) throws IOException, JXCSkinException
     {
         if (args.length != 14)
         {
@@ -2169,7 +2169,7 @@ public class JXCSkinLoader
         final int margin = expressionParser.parseInt(args[11]);
         final GUICommandList commandList = skin.getCommandList(args[12]);
         final boolean ignoreUpDown = NumberParser.parseBoolean(args[13]);
-        insertGuiElement(new GUITextField(guiManager, tooltipManager, elementListener, name, x, y, w, h, activeImage, inactiveImage, font, inactiveColor, activeColor, margin, "", commandList, ignoreUpDown));
+        insertGuiElement(new GUITextField(commandCallback, tooltipManager, elementListener, name, x, y, w, h, activeImage, inactiveImage, font, inactiveColor, activeColor, margin, "", commandList, ignoreUpDown));
     }
 
     /**
@@ -2283,15 +2283,15 @@ public class JXCSkinLoader
      * @param lnr the source to read more parameters from
      * @param commandQueue the command queue for executing commands
      * @param crossfireServerConnection the server connection to use
-     * @param guiManager the gui manager to use
+     * @param commandCallback the command callback to use
      * @param macros the macros instance to use
      * @throws IOException if a syntax error occurs
      * @throws JXCSkinException if an element cannot be found
      */
-    private void addCommand(@NotNull final String listName, @NotNull final String[] args, final int argc, @Nullable final GUIElement element, @NotNull final String command, @NotNull final GuiStateManager guiStateManager, @NotNull final Commands commands, @NotNull final LineNumberReader lnr, @NotNull final CommandQueue commandQueue, @NotNull final CrossfireServerConnection crossfireServerConnection, @NotNull final GuiManager guiManager, @NotNull final Macros macros) throws IOException, JXCSkinException
+    private void addCommand(@NotNull final String listName, @NotNull final String[] args, final int argc, @Nullable final GUIElement element, @NotNull final String command, @NotNull final GuiStateManager guiStateManager, @NotNull final Commands commands, @NotNull final LineNumberReader lnr, @NotNull final CommandQueue commandQueue, @NotNull final CrossfireServerConnection crossfireServerConnection, @NotNull final CommandCallback commandCallback, @NotNull final Macros macros) throws IOException, JXCSkinException
     {
         final GUICommandList commandList = skin.getCommandList(listName);
-        commandList.add(commandParser.parseCommandArgs(args, argc, element, command, guiStateManager, commands, lnr, commandQueue, crossfireServerConnection, guiManager, macros));
+        commandList.add(commandParser.parseCommandArgs(args, argc, element, command, guiStateManager, commands, lnr, commandQueue, crossfireServerConnection, commandCallback, macros));
     }
 
     /**

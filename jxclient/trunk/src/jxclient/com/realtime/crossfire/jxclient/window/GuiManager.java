@@ -34,6 +34,8 @@ import com.realtime.crossfire.jxclient.gui.label.GUIOneLineLabel;
 import com.realtime.crossfire.jxclient.gui.list.GUIMetaElementList;
 import com.realtime.crossfire.jxclient.gui.log.GUILabelLog;
 import com.realtime.crossfire.jxclient.gui.textinput.GUIText;
+import com.realtime.crossfire.jxclient.gui.commands.CommandCallback;
+import com.realtime.crossfire.jxclient.gui.commands.NoSuchCommandException;
 import com.realtime.crossfire.jxclient.scripts.ScriptManager;
 import com.realtime.crossfire.jxclient.server.ClientSocketState;
 import com.realtime.crossfire.jxclient.server.CommandQueue;
@@ -354,6 +356,63 @@ public class GuiManager
     };
 
     /**
+     * The {@link CommandCallback}.
+     */
+    @NotNull
+    private final CommandCallback commandCallback = new CommandCallback()
+    {
+        /** {@inheritDoc} */
+        @Override
+        public void quitApplication()
+        {
+            terminate();
+        }
+
+        /** {@inheritDoc} */
+        @Override
+        public void openDialog(@NotNull final Gui dialog)
+        {
+            GuiManager.this.openDialog(dialog, false);
+        }
+
+        /** {@inheritDoc} */
+        @Override
+        public void toggleDialog(@NotNull final Gui dialog)
+        {
+            GuiManager.this.toggleDialog(dialog);
+        }
+
+        /** {@inheritDoc} */
+        @Override
+        public void closeDialog(@NotNull final Gui dialog)
+        {
+            GuiManager.this.closeDialog(dialog);
+        }
+
+        /** {@inheritDoc} */
+        @NotNull
+        @Override
+        public GUICommandList getCommandList(@NotNull final String args) throws NoSuchCommandException
+        {
+            try
+            {
+                return skin.getCommandList(args);
+            }
+            catch (final JXCSkinException ex)
+            {
+                throw new NoSuchCommandException(ex.getMessage());
+            }
+        }
+
+        /** {@inheritDoc} */
+        @Override
+        public void updatePlayerName(@NotNull final String playerName)
+        {
+            GuiManager.this.updatePlayerName(playerName);
+        }
+    };
+
+    /**
      * Creates a new instance.
      * @param guiStateManager the gui state manager to watch
      * @param semaphoreDrawing the semaphore to use for drawing operations
@@ -378,7 +437,7 @@ public class GuiManager
         this.server = server;
         this.windowRenderer = windowRenderer;
         guiStateManager.addGuiStateListener(guiStateListener);
-        commands = new Commands(windowRenderer, commandQueue, server, scriptManager, optionManager, this, macros);
+        commands = new Commands(windowRenderer, commandQueue, server, scriptManager, optionManager, this, commandCallback, macros);
         guiFactory = new GuiFactory(mouseTracker, commands, this, macros);
         windowRenderer.setCurrentGui(guiFactory.newGui());
         queryDialog = guiFactory.newGui();
@@ -711,17 +770,6 @@ public class GuiManager
     }
 
     /**
-     * Returns the current skin.
-     * @return the skin
-     */
-    @Deprecated
-    @Nullable
-    public JXCSkin getSkin()
-    {
-        return skin;
-    }
-
-    /**
      * Activates the command input text field. If the skin defined more than
      * one input field, the first matching one is selected.
      * <p>If neither the main gui nor any visible dialog has an input text
@@ -960,5 +1008,12 @@ public class GuiManager
             openKeybindDialog();
         }
         return result;
+    }
+
+    @Deprecated
+    @NotNull
+    public CommandCallback getCommandCallback()
+    {
+        return commandCallback;
     }
 }

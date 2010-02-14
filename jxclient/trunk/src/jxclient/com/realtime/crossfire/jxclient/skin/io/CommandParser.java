@@ -24,6 +24,7 @@ package com.realtime.crossfire.jxclient.skin.io;
 import com.realtime.crossfire.jxclient.commands.Commands;
 import com.realtime.crossfire.jxclient.commands.Macros;
 import com.realtime.crossfire.jxclient.gui.command.GUICommand;
+import com.realtime.crossfire.jxclient.gui.commands.CommandCallback;
 import com.realtime.crossfire.jxclient.gui.commands.CommandType;
 import com.realtime.crossfire.jxclient.gui.commands.ConnectCommand;
 import com.realtime.crossfire.jxclient.gui.commands.DialogCloseCommand;
@@ -61,7 +62,6 @@ import com.realtime.crossfire.jxclient.skin.skin.Dialogs;
 import com.realtime.crossfire.jxclient.skin.skin.JXCSkinCache;
 import com.realtime.crossfire.jxclient.skin.skin.JXCSkinException;
 import com.realtime.crossfire.jxclient.util.NumberParser;
-import com.realtime.crossfire.jxclient.window.GuiManager;
 import java.io.IOException;
 import java.io.LineNumberReader;
 import org.jetbrains.annotations.NotNull;
@@ -124,14 +124,14 @@ public class CommandParser
      * @param lnr the source to read more parameters from
      * @param commandQueue the command queue for executing commands
      * @param crossfireServerConnection the server connection to use
-     * @param guiManager the gui manager to use
+     * @param commandCallback the command callback to use
      * @param macros the macros instance to use
      * @return the command arguments
      * @throws IOException if a syntax error occurs
      * @throws JXCSkinException if an element cannot be found
      */
     @NotNull
-    public GUICommand parseCommandArgs(@NotNull final String[] args, final int argc, @Nullable final GUIElement element, @NotNull final String command, @NotNull final GuiStateManager guiStateManager, @NotNull final Commands commands, @NotNull final LineNumberReader lnr, @NotNull final CommandQueue commandQueue, @NotNull final CrossfireServerConnection crossfireServerConnection, @NotNull final GuiManager guiManager, @NotNull final Macros macros) throws IOException, JXCSkinException
+    public GUICommand parseCommandArgs(@NotNull final String[] args, final int argc, @Nullable final GUIElement element, @NotNull final String command, @NotNull final GuiStateManager guiStateManager, @NotNull final Commands commands, @NotNull final LineNumberReader lnr, @NotNull final CommandQueue commandQueue, @NotNull final CrossfireServerConnection crossfireServerConnection, @NotNull final CommandCallback commandCallback, @NotNull final Macros macros) throws IOException, JXCSkinException
     {
         if (command.equals("SHOW"))
         {
@@ -176,7 +176,7 @@ public class CommandParser
                 throw new IOException("syntax error");
             }
 
-            return new QuitCommand(guiManager);
+            return new QuitCommand(commandCallback);
         }
         else if (command.equals("CONNECT"))
         {
@@ -240,7 +240,7 @@ public class CommandParser
                 throw new IOException("syntax error");
             }
 
-            return new DialogOpenCommand(guiManager, dialogs.addDialog(args[argc]));
+            return new DialogOpenCommand(commandCallback, dialogs.addDialog(args[argc]));
         }
         else if (command.equals("DIALOG_TOGGLE"))
         {
@@ -249,7 +249,7 @@ public class CommandParser
                 throw new IOException("syntax error");
             }
 
-            return new DialogToggleCommand(guiManager, dialogs.addDialog(args[argc]));
+            return new DialogToggleCommand(commandCallback, dialogs.addDialog(args[argc]));
         }
         else if (command.equals("DIALOG_CLOSE"))
         {
@@ -258,7 +258,7 @@ public class CommandParser
                 throw new IOException("syntax error");
             }
 
-            return new DialogCloseCommand(guiManager, dialogs.addDialog(args[argc]));
+            return new DialogCloseCommand(commandCallback, dialogs.addDialog(args[argc]));
         }
         else if (command.equals("GUI_EXECUTE_COMMAND"))
         {
