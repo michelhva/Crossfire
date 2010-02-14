@@ -21,23 +21,23 @@
 
 package com.realtime.crossfire.jxclient.gui.keybindings;
 
-import com.realtime.crossfire.jxclient.gui.command.GUICommandList;
+import com.realtime.crossfire.jxclient.gui.command.CommandList;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 
 /**
  * Abstract base class for key bindings. A key binding consists of information
- * about the bound key and an associated {@link GUICommandList}.
+ * about the bound key and an associated {@link CommandList}.
  * @author Lauwenmark
  * @author Andreas Kirschbaum
  */
 public abstract class KeyBinding
 {
     /**
-     * The associated {@link GUICommandList}.
+     * The associated {@link CommandList}.
      */
     @NotNull
-    private final GUICommandList commands;
+    private final CommandList commands;
 
     /**
      * Whether the key binding is a "default" binding which should not be
@@ -46,11 +46,11 @@ public abstract class KeyBinding
     private final boolean isDefault;
 
     /**
-     * Returns the associated {@link GUICommandList}.
+     * Returns the associated {@link CommandList}.
      * @return the associated command list
      */
     @NotNull
-    public GUICommandList getCommands()
+    public CommandList getCommands()
     {
         return commands;
     }
@@ -61,7 +61,7 @@ public abstract class KeyBinding
      * @param isDefault whether the key binding is a "default" binding which
      * should not be saved
      */
-    protected KeyBinding(@NotNull final GUICommandList commands, final boolean isDefault)
+    protected KeyBinding(@NotNull final CommandList commands, final boolean isDefault)
     {
         this.commands = commands;
         this.isDefault = isDefault;

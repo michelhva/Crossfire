@@ -23,7 +23,7 @@ package com.realtime.crossfire.jxclient.window;
 
 import com.realtime.crossfire.jxclient.commands.Commands;
 import com.realtime.crossfire.jxclient.commands.Macros;
-import com.realtime.crossfire.jxclient.gui.command.GUICommandList;
+import com.realtime.crossfire.jxclient.gui.command.CommandList;
 import com.realtime.crossfire.jxclient.gui.commands.CommandCallback;
 import com.realtime.crossfire.jxclient.gui.commands.NoSuchCommandException;
 import com.realtime.crossfire.jxclient.gui.gui.Gui;
@@ -392,7 +392,7 @@ public class GuiManager
         /** {@inheritDoc} */
         @NotNull
         @Override
-        public GUICommandList getCommandList(@NotNull final String args) throws NoSuchCommandException
+        public CommandList getCommandList(@NotNull final String args) throws NoSuchCommandException
         {
             try
             {
@@ -984,7 +984,7 @@ public class GuiManager
      * @param cmdlist the command list to execute on key press
      * @return whether the key bindings dialog should be opened
      */
-    public boolean createKeyBinding(final boolean perCharacter, @NotNull final GUICommandList cmdlist)
+    public boolean createKeyBinding(final boolean perCharacter, @NotNull final CommandList cmdlist)
     {
         final boolean result = keybindingsManager.createKeyBinding(perCharacter, cmdlist);
         if (result)

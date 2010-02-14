@@ -21,24 +21,24 @@
 
 package com.realtime.crossfire.jxclient.skin.events;
 
-import com.realtime.crossfire.jxclient.gui.command.GUICommandList;
+import com.realtime.crossfire.jxclient.gui.command.CommandList;
 import com.realtime.crossfire.jxclient.server.ClientSocketState;
 import com.realtime.crossfire.jxclient.server.GuiStateListener;
 import com.realtime.crossfire.jxclient.server.GuiStateManager;
 import org.jetbrains.annotations.NotNull;
 
 /**
- * A {@link SkinEvent} that executes a {@link GUICommandList} at connection
+ * A {@link SkinEvent} that executes a {@link CommandList} at connection
  * setup.
  * @author Andreas Kirschbaum
  */
 public class ConnectionStateSkinEvent implements SkinEvent
 {
     /**
-     * The {@link GUICommandList} to execute.
+     * The {@link CommandList} to execute.
      */
     @NotNull
-    private final GUICommandList commandList;
+    private final CommandList commandList;
 
     /**
      * The {@link GuiStateManager} to watch.
@@ -107,7 +107,7 @@ public class ConnectionStateSkinEvent implements SkinEvent
      * @param commandList the command list to execute
      * @param guiStateManager the gui state manager to watch
      */
-    public ConnectionStateSkinEvent(@NotNull final GUICommandList commandList, @NotNull final GuiStateManager guiStateManager)
+    public ConnectionStateSkinEvent(@NotNull final CommandList commandList, @NotNull final GuiStateManager guiStateManager)
     {
         this.commandList = commandList;
         this.guiStateManager = guiStateManager;

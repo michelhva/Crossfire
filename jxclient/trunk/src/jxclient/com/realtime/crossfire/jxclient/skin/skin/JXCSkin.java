@@ -21,7 +21,7 @@
 
 package com.realtime.crossfire.jxclient.skin.skin;
 
-import com.realtime.crossfire.jxclient.gui.command.GUICommandList;
+import com.realtime.crossfire.jxclient.gui.command.CommandList;
 import com.realtime.crossfire.jxclient.gui.gui.Gui;
 import com.realtime.crossfire.jxclient.gui.gui.JXCWindowRenderer;
 import com.realtime.crossfire.jxclient.gui.gui.TooltipManager;
@@ -164,7 +164,7 @@ public interface JXCSkin extends Iterable<Gui>
      * @throws JXCSkinException if the command list does not exist
      */
     @NotNull
-    GUICommandList getCommandList(@NotNull String name) throws JXCSkinException;
+    CommandList getCommandList(@NotNull String name) throws JXCSkinException;
 
     /**
      * Returns whether the dialog state should be saved.

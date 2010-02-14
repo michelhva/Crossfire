@@ -23,7 +23,7 @@ package com.realtime.crossfire.jxclient.skin.factory;
 
 import com.realtime.crossfire.jxclient.gui.button.ButtonImages;
 import com.realtime.crossfire.jxclient.gui.button.GUITextButton;
-import com.realtime.crossfire.jxclient.gui.command.GUICommandList;
+import com.realtime.crossfire.jxclient.gui.command.CommandList;
 import com.realtime.crossfire.jxclient.gui.gui.GUIElement;
 import com.realtime.crossfire.jxclient.gui.gui.GUIElementListener;
 import com.realtime.crossfire.jxclient.gui.gui.TooltipManager;
@@ -110,7 +110,7 @@ public class TextButtonFactory
      * @return the new text button
      */
     @NotNull
-    public GUIElement newTextButton(@NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final String name, final int x, final int y, final int w, final int h, @NotNull final String text, final boolean autoRepeat, @NotNull final GUICommandList commandList)
+    public GUIElement newTextButton(@NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final String name, final int x, final int y, final int w, final int h, @NotNull final String text, final boolean autoRepeat, @NotNull final CommandList commandList)
     {
         return new GUITextButton(tooltipManager, elementListener, name, x, y, w, h, up, down, text, font, color, autoRepeat, commandList);
     }

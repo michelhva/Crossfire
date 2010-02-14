@@ -21,7 +21,7 @@
 
 package com.realtime.crossfire.jxclient.gui.button;
 
-import com.realtime.crossfire.jxclient.gui.command.GUICommandList;
+import com.realtime.crossfire.jxclient.gui.command.CommandList;
 import com.realtime.crossfire.jxclient.gui.gui.GUIElementListener;
 import com.realtime.crossfire.jxclient.gui.gui.TooltipManager;
 import java.awt.Color;
@@ -109,7 +109,7 @@ public class GUITextButton extends AbstractButton
      *
      * @param commandList The commands to execute when the button is selected.
      */
-    public GUITextButton(@NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final String name, final int x, final int y, final int w, final int h, @NotNull final ButtonImages up, @NotNull final ButtonImages down, @NotNull final String text, @NotNull final Font font, @NotNull final Color color, final boolean autoRepeat, @NotNull final GUICommandList commandList)
+    public GUITextButton(@NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final String name, final int x, final int y, final int w, final int h, @NotNull final ButtonImages up, @NotNull final ButtonImages down, @NotNull final String text, @NotNull final Font font, @NotNull final Color color, final boolean autoRepeat, @NotNull final CommandList commandList)
     {
         super(tooltipManager, elementListener, name, x, y, w, h, Transparency.TRANSLUCENT, autoRepeat, commandList);
         if (up.getHeight() != h)

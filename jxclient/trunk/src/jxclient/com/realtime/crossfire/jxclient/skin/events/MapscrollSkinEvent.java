@@ -21,23 +21,23 @@
 
 package com.realtime.crossfire.jxclient.skin.events;
 
-import com.realtime.crossfire.jxclient.gui.command.GUICommandList;
+import com.realtime.crossfire.jxclient.gui.command.CommandList;
 import com.realtime.crossfire.jxclient.mapupdater.CfMapUpdater;
 import com.realtime.crossfire.jxclient.mapupdater.MapscrollListener;
 import org.jetbrains.annotations.NotNull;
 
 /**
- * A {@link SkinEvent} that executes a {@link GUICommandList} whenever the
+ * A {@link SkinEvent} that executes a {@link CommandList} whenever the
  * map scroll protocol command is received.
  * @author Andreas Kirschbaum
  */
 public class MapscrollSkinEvent implements SkinEvent
 {
     /**
-     * The {@link GUICommandList} to execute.
+     * The {@link CommandList} to execute.
      */
     @NotNull
-    private final GUICommandList commandList;
+    private final CommandList commandList;
 
     /**
      * The {@link CfMapUpdater} to attach to.
@@ -64,7 +64,7 @@ public class MapscrollSkinEvent implements SkinEvent
      * @param commandList the command list to execute
      * @param mapUpdater the map updater to attach to
      */
-    public MapscrollSkinEvent(@NotNull final GUICommandList commandList, @NotNull final CfMapUpdater mapUpdater)
+    public MapscrollSkinEvent(@NotNull final CommandList commandList, @NotNull final CfMapUpdater mapUpdater)
     {
         this.commandList = commandList;
         this.mapUpdater = mapUpdater;

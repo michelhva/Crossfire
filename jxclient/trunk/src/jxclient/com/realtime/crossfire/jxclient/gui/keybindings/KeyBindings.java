@@ -24,8 +24,8 @@ package com.realtime.crossfire.jxclient.gui.keybindings;
 
 import com.realtime.crossfire.jxclient.commands.Commands;
 import com.realtime.crossfire.jxclient.commands.Macros;
-import com.realtime.crossfire.jxclient.gui.command.CommandType;
-import com.realtime.crossfire.jxclient.gui.command.GUICommandList;
+import com.realtime.crossfire.jxclient.gui.command.CommandList;
+import com.realtime.crossfire.jxclient.gui.command.CommandListType;
 import com.realtime.crossfire.jxclient.gui.commands.GUICommandFactory;
 import com.realtime.crossfire.jxclient.window.GuiManager;
 import java.awt.event.KeyEvent;
@@ -125,7 +125,7 @@ public class KeyBindings
      * @param isDefault whether the key binding is a "default" binding which
      * should not be saved
      */
-    public void addKeyBindingAsKeyCode(final int keyCode, final int modifiers, @NotNull final GUICommandList cmdlist, final boolean isDefault)
+    public void addKeyBindingAsKeyCode(final int keyCode, final int modifiers, @NotNull final CommandList cmdlist, final boolean isDefault)
     {
         addKeyBinding(new KeyCodeKeyBinding(keyCode, modifiers, cmdlist, isDefault));
     }
@@ -137,7 +137,7 @@ public class KeyBindings
      * @param isDefault whether the key binding is a "default" binding which
      * should not be saved
      */
-    public void addKeyBindingAsKeyChar(final char keyChar, @NotNull final GUICommandList cmdlist, final boolean isDefault)
+    public void addKeyBindingAsKeyChar(final char keyChar, @NotNull final CommandList cmdlist, final boolean isDefault)
     {
         addKeyBinding(new KeyCharKeyBinding(keyChar, cmdlist, isDefault));
     }
@@ -397,7 +397,7 @@ public class KeyBindings
             try
             {
                 final char keyChar = (char)Integer.parseInt(tmp[0]);
-                final GUICommandList commandList = new GUICommandList(CommandType.AND);
+                final CommandList commandList = new CommandList(CommandListType.AND);
                 commandList.add(GUICommandFactory.createCommandDecode(tmp[1], guiManager, commands, macros));
                 addKeyBindingAsKeyChar(keyChar, commandList, isDefault);
             }
@@ -439,7 +439,7 @@ public class KeyBindings
                 throw new InvalidKeyBindingException("invalid modifier: "+tmp[1]);
             }
 
-            final GUICommandList commandList = new GUICommandList(CommandType.AND);
+            final CommandList commandList = new CommandList(CommandListType.AND);
             commandList.add(GUICommandFactory.createCommandDecode(tmp[2], guiManager, commands, macros));
             addKeyBindingAsKeyCode(keyCode, modifiers, commandList, isDefault);
         }

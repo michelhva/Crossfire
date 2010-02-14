@@ -21,7 +21,7 @@
 
 package com.realtime.crossfire.jxclient.commands;
 
-import com.realtime.crossfire.jxclient.gui.command.GUICommandList;
+import com.realtime.crossfire.jxclient.gui.command.CommandList;
 import com.realtime.crossfire.jxclient.gui.commands.CommandCallback;
 import com.realtime.crossfire.jxclient.gui.commands.NoSuchCommandException;
 import com.realtime.crossfire.jxclient.server.CrossfireServerConnection;
@@ -67,7 +67,7 @@ public class ExecCommand extends AbstractCommand
             return;
         }
 
-        final GUICommandList commandList;
+        final CommandList commandList;
         try
         {
             commandList = commandCallback.getCommandList(args);

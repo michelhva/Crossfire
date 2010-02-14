@@ -32,13 +32,13 @@ import org.jetbrains.annotations.NotNull;
  *
  * @author Andreas Kirschbaum
  */
-public class GUICommandList
+public class CommandList
 {
     /**
      * The command list type.
      */
     @NotNull
-    private final CommandType commandType;
+    private final CommandListType commandListType;
 
     /**
      * The list of {@link GUICommand}s in execution order.
@@ -49,11 +49,11 @@ public class GUICommandList
     /**
      * Create a new instance as an empty command list.
      *
-     * @param commandType The command list type.
+     * @param commandListType The command list type.
      */
-    public GUICommandList(@NotNull final CommandType commandType)
+    public CommandList(@NotNull final CommandListType commandListType)
     {
-        this.commandType = commandType;
+        this.commandListType = commandListType;
     }
 
     /**
@@ -72,7 +72,7 @@ public class GUICommandList
      */
     public boolean canExecute()
     {
-        switch (commandType)
+        switch (commandListType)
         {
         case AND:
             for (final GUICommand command : commandList)
