@@ -19,10 +19,8 @@
  * Copyright (C) 2006-2010 Andreas Kirschbaum.
  */
 
-package com.realtime.crossfire.jxclient.window;
+package com.realtime.crossfire.jxclient.gui.gui;
 
-import com.realtime.crossfire.jxclient.gui.gui.GUIElement;
-import com.realtime.crossfire.jxclient.gui.gui.JXCWindowRenderer;
 import java.awt.Component;
 import java.awt.event.MouseEvent;
 import javax.swing.event.MouseInputListener;
