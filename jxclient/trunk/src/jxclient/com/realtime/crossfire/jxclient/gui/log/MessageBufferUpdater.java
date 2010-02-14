@@ -21,11 +21,11 @@
 
 package com.realtime.crossfire.jxclient.gui.log;
 
-import com.realtime.crossfire.jxclient.server.CrossfireDrawextinfoListener;
-import com.realtime.crossfire.jxclient.server.CrossfireDrawinfoListener;
-import com.realtime.crossfire.jxclient.server.CrossfireQueryListener;
-import com.realtime.crossfire.jxclient.server.CrossfireServerConnection;
-import com.realtime.crossfire.jxclient.server.MessageTypes;
+import com.realtime.crossfire.jxclient.server.crossfire.CrossfireDrawextinfoListener;
+import com.realtime.crossfire.jxclient.server.crossfire.CrossfireDrawinfoListener;
+import com.realtime.crossfire.jxclient.server.crossfire.CrossfireQueryListener;
+import com.realtime.crossfire.jxclient.server.crossfire.CrossfireServerConnection;
+import com.realtime.crossfire.jxclient.server.crossfire.MessageTypes;
 import java.awt.Color;
 import org.jetbrains.annotations.NotNull;
 

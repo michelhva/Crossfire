@@ -21,12 +21,12 @@
 
 package com.realtime.crossfire.jxclient.skills;
 
-import com.realtime.crossfire.jxclient.server.ClientSocketState;
-import com.realtime.crossfire.jxclient.server.CrossfireServerConnection;
-import com.realtime.crossfire.jxclient.server.CrossfireSkillInfoListener;
-import com.realtime.crossfire.jxclient.server.CrossfireStatsListener;
-import com.realtime.crossfire.jxclient.server.GuiStateListener;
-import com.realtime.crossfire.jxclient.server.GuiStateManager;
+import com.realtime.crossfire.jxclient.guistate.GuiStateListener;
+import com.realtime.crossfire.jxclient.guistate.GuiStateManager;
+import com.realtime.crossfire.jxclient.server.crossfire.CrossfireServerConnection;
+import com.realtime.crossfire.jxclient.server.crossfire.CrossfireSkillInfoListener;
+import com.realtime.crossfire.jxclient.server.crossfire.CrossfireStatsListener;
+import com.realtime.crossfire.jxclient.server.socket.ClientSocketState;
 import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Map;

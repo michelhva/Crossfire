@@ -21,9 +21,9 @@
 
 package com.realtime.crossfire.jxclient.animations;
 
-import com.realtime.crossfire.jxclient.server.ClientSocketState;
-import com.realtime.crossfire.jxclient.server.GuiStateListener;
-import com.realtime.crossfire.jxclient.server.GuiStateManager;
+import com.realtime.crossfire.jxclient.guistate.GuiStateListener;
+import com.realtime.crossfire.jxclient.guistate.GuiStateManager;
+import com.realtime.crossfire.jxclient.server.socket.ClientSocketState;
 import java.util.HashMap;
 import java.util.Map;
 import org.jetbrains.annotations.NotNull;

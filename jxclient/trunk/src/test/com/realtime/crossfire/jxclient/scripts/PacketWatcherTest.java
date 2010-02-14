@@ -21,8 +21,8 @@
 
 package com.realtime.crossfire.jxclient.scripts;
 
-import com.realtime.crossfire.jxclient.server.CrossfireServerConnection;
-import com.realtime.crossfire.jxclient.server.ReceivedPacketListener;
+import com.realtime.crossfire.jxclient.server.crossfire.CrossfireServerConnection;
+import com.realtime.crossfire.jxclient.server.server.ReceivedPacketListener;
 import com.realtime.crossfire.jxclient.test.TestCrossfireServerConnection;
 import com.realtime.crossfire.jxclient.test.TestScriptProcess;
 import java.util.ArrayList;

@@ -21,10 +21,10 @@
 
 package com.realtime.crossfire.jxclient.stats;
 
-import com.realtime.crossfire.jxclient.server.CrossfireDrawextinfoListener;
-import com.realtime.crossfire.jxclient.server.CrossfireDrawinfoListener;
-import com.realtime.crossfire.jxclient.server.CrossfireServerConnection;
-import com.realtime.crossfire.jxclient.server.CrossfireStatsListener;
+import com.realtime.crossfire.jxclient.server.crossfire.CrossfireDrawextinfoListener;
+import com.realtime.crossfire.jxclient.server.crossfire.CrossfireDrawinfoListener;
+import com.realtime.crossfire.jxclient.server.crossfire.CrossfireServerConnection;
+import com.realtime.crossfire.jxclient.server.crossfire.CrossfireStatsListener;
 import com.realtime.crossfire.jxclient.timeouts.TimeoutEvent;
 import com.realtime.crossfire.jxclient.timeouts.Timeouts;
 import org.jetbrains.annotations.NotNull;

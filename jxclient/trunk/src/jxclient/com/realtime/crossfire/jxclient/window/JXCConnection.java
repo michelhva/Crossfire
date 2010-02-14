@@ -21,11 +21,11 @@
 
 package com.realtime.crossfire.jxclient.window;
 
-import com.realtime.crossfire.jxclient.server.ClientSocketState;
-import com.realtime.crossfire.jxclient.server.CrossfirePickupListener;
-import com.realtime.crossfire.jxclient.server.CrossfireServerConnection;
-import com.realtime.crossfire.jxclient.server.GuiStateListener;
-import com.realtime.crossfire.jxclient.server.GuiStateManager;
+import com.realtime.crossfire.jxclient.guistate.GuiStateListener;
+import com.realtime.crossfire.jxclient.guistate.GuiStateManager;
+import com.realtime.crossfire.jxclient.server.crossfire.CrossfirePickupListener;
+import com.realtime.crossfire.jxclient.server.crossfire.CrossfireServerConnection;
+import com.realtime.crossfire.jxclient.server.socket.ClientSocketState;
 import com.realtime.crossfire.jxclient.settings.Settings;
 import com.realtime.crossfire.jxclient.settings.options.Pickup;
 import com.realtime.crossfire.jxclient.util.NumberParser;

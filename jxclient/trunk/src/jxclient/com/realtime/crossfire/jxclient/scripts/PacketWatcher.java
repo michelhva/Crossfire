@@ -21,8 +21,8 @@
 
 package com.realtime.crossfire.jxclient.scripts;
 
-import com.realtime.crossfire.jxclient.server.CrossfireServerConnection;
-import com.realtime.crossfire.jxclient.server.ReceivedPacketListener;
+import com.realtime.crossfire.jxclient.server.crossfire.CrossfireServerConnection;
+import com.realtime.crossfire.jxclient.server.server.ReceivedPacketListener;
 import java.util.Collection;
 import java.util.HashSet;
 import java.util.regex.Pattern;

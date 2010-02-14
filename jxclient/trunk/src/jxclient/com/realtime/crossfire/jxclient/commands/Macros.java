@@ -21,9 +21,9 @@
 
 package com.realtime.crossfire.jxclient.commands;
 
-import com.realtime.crossfire.jxclient.server.CrossfireDrawextinfoListener;
-import com.realtime.crossfire.jxclient.server.CrossfireServerConnection;
-import com.realtime.crossfire.jxclient.server.MessageTypes;
+import com.realtime.crossfire.jxclient.server.crossfire.CrossfireDrawextinfoListener;
+import com.realtime.crossfire.jxclient.server.crossfire.CrossfireServerConnection;
+import com.realtime.crossfire.jxclient.server.crossfire.MessageTypes;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.regex.Matcher;

@@ -23,7 +23,7 @@ package com.realtime.crossfire.jxclient.gui.log;
 
 import com.realtime.crossfire.jxclient.gui.gui.GUIElementListener;
 import com.realtime.crossfire.jxclient.gui.gui.TooltipManager;
-import com.realtime.crossfire.jxclient.server.CrossfireServerConnection;
+import com.realtime.crossfire.jxclient.server.crossfire.CrossfireServerConnection;
 import java.awt.Color;
 import java.awt.Image;
 import org.jetbrains.annotations.NotNull;

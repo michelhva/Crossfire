@@ -21,7 +21,7 @@
 
 package com.realtime.crossfire.jxclient.scripts;
 
-import com.realtime.crossfire.jxclient.server.CrossfireStatsListener;
+import com.realtime.crossfire.jxclient.server.crossfire.CrossfireStatsListener;
 import java.util.HashMap;
 import java.util.Map;
 import org.jetbrains.annotations.NotNull;
