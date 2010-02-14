@@ -21,8 +21,8 @@
 
 package com.realtime.crossfire.jxclient.sound;
 
-import com.realtime.crossfire.jxclient.server.CrossfireMusicListener;
-import com.realtime.crossfire.jxclient.server.CrossfireServerConnection;
+import com.realtime.crossfire.jxclient.server.crossfire.CrossfireMusicListener;
+import com.realtime.crossfire.jxclient.server.crossfire.CrossfireServerConnection;
 import org.jetbrains.annotations.NotNull;
 
 /**

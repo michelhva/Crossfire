@@ -23,7 +23,7 @@ package com.realtime.crossfire.jxclient.commands;
 
 import com.realtime.crossfire.jxclient.scripts.ScriptManager;
 import com.realtime.crossfire.jxclient.scripts.ScriptProcess;
-import com.realtime.crossfire.jxclient.server.CrossfireServerConnection;
+import com.realtime.crossfire.jxclient.server.crossfire.CrossfireServerConnection;
 import java.util.Collection;
 import java.util.TreeSet;
 import org.jetbrains.annotations.NotNull;

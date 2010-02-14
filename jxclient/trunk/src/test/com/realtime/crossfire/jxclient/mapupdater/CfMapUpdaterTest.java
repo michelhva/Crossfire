@@ -28,7 +28,7 @@ import com.realtime.crossfire.jxclient.faces.FacesQueue;
 import com.realtime.crossfire.jxclient.faces.MemoryImageCache;
 import com.realtime.crossfire.jxclient.map.CfMap;
 import com.realtime.crossfire.jxclient.map.CfMapSquare;
-import com.realtime.crossfire.jxclient.server.CrossfireMap2Command;
+import com.realtime.crossfire.jxclient.server.crossfire.CrossfireMap2Command;
 import java.io.IOException;
 import junit.framework.Test;
 import junit.framework.TestCase;

@@ -21,7 +21,7 @@
 
 package com.realtime.crossfire.jxclient.settings.options;
 
-import com.realtime.crossfire.jxclient.server.CommandQueue;
+import com.realtime.crossfire.jxclient.queue.CommandQueue;
 import java.util.Collection;
 import java.util.LinkedList;
 import org.jetbrains.annotations.NotNull;

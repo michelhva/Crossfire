@@ -21,7 +21,7 @@
 
 package com.realtime.crossfire.jxclient.window;
 
-import com.realtime.crossfire.jxclient.server.CommandQueue;
+import com.realtime.crossfire.jxclient.queue.CommandQueue;
 import com.realtime.crossfire.jxclient.settings.Filenames;
 import com.realtime.crossfire.jxclient.shortcuts.Shortcuts;
 import com.realtime.crossfire.jxclient.spells.SpellsManager;

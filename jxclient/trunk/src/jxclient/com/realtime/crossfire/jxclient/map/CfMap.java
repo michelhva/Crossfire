@@ -22,7 +22,7 @@
 package com.realtime.crossfire.jxclient.map;
 
 import com.realtime.crossfire.jxclient.faces.Face;
-import com.realtime.crossfire.jxclient.server.CrossfireMap2Command;
+import com.realtime.crossfire.jxclient.server.crossfire.CrossfireMap2Command;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 

@@ -26,17 +26,18 @@ import com.realtime.crossfire.jxclient.animations.Animations;
 import com.realtime.crossfire.jxclient.faces.Face;
 import com.realtime.crossfire.jxclient.faces.FacesManager;
 import com.realtime.crossfire.jxclient.faces.FacesManagerListener;
+import com.realtime.crossfire.jxclient.guistate.GuiStateListener;
+import com.realtime.crossfire.jxclient.guistate.GuiStateManager;
 import com.realtime.crossfire.jxclient.map.CfMap;
 import com.realtime.crossfire.jxclient.map.CfMapAnimations;
 import com.realtime.crossfire.jxclient.map.CfMapSquare;
 import com.realtime.crossfire.jxclient.map.CfMapSquareListener;
 import com.realtime.crossfire.jxclient.map.Location;
-import com.realtime.crossfire.jxclient.server.ClientSocketState;
-import com.realtime.crossfire.jxclient.server.CrossfireMap2Command;
-import com.realtime.crossfire.jxclient.server.CrossfireServerConnection;
-import com.realtime.crossfire.jxclient.server.CrossfireUpdateMapListener;
-import com.realtime.crossfire.jxclient.server.GuiStateListener;
-import com.realtime.crossfire.jxclient.server.GuiStateManager;
+import com.realtime.crossfire.jxclient.server.crossfire.CrossfireMap2Command;
+import com.realtime.crossfire.jxclient.server.crossfire.CrossfireServerConnection;
+import com.realtime.crossfire.jxclient.server.crossfire.CrossfireUpdateMapListener;
+import com.realtime.crossfire.jxclient.server.socket.ClientSocket;
+import com.realtime.crossfire.jxclient.server.socket.ClientSocketState;
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.HashSet;
@@ -48,7 +49,7 @@ import org.jetbrains.annotations.Nullable;
  * Utility class to update a {@link CfMap} model from protocol commands.
  * <p>
  * The map updater is called from two threads: the {@link
- * com.realtime.crossfire.jxclient.server.ClientSocket} reading commands
+ * ClientSocket} reading commands
  * received from the Crossfire server, and {@link
  * com.realtime.crossfire.jxclient.faces.FileCacheFaceQueue} reading faces from
  * the (file) cache. Synchronization is by {@link #sync} and applies to the

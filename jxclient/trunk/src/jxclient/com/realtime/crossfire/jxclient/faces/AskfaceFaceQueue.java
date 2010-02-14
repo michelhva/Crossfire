@@ -21,8 +21,8 @@
 
 package com.realtime.crossfire.jxclient.faces;
 
-import com.realtime.crossfire.jxclient.server.CrossfireServerConnection;
-import com.realtime.crossfire.jxclient.server.CrossfireUpdateFaceListener;
+import com.realtime.crossfire.jxclient.server.crossfire.CrossfireServerConnection;
+import com.realtime.crossfire.jxclient.server.crossfire.CrossfireUpdateFaceListener;
 import java.util.Arrays;
 import java.util.HashMap;
 import java.util.LinkedList;

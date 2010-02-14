@@ -21,8 +21,8 @@
 
 package com.realtime.crossfire.jxclient.stats;
 
-import com.realtime.crossfire.jxclient.server.CrossfireExpTableListener;
-import com.realtime.crossfire.jxclient.server.CrossfireServerConnection;
+import com.realtime.crossfire.jxclient.server.crossfire.CrossfireExpTableListener;
+import com.realtime.crossfire.jxclient.server.crossfire.CrossfireServerConnection;
 import java.util.HashMap;
 import java.util.Map;
 import org.jetbrains.annotations.NotNull;

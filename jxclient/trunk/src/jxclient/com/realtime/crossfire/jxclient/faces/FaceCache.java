@@ -21,8 +21,8 @@
 
 package com.realtime.crossfire.jxclient.faces;
 
-import com.realtime.crossfire.jxclient.server.CrossfireFaceListener;
-import com.realtime.crossfire.jxclient.server.CrossfireServerConnection;
+import com.realtime.crossfire.jxclient.server.crossfire.CrossfireFaceListener;
+import com.realtime.crossfire.jxclient.server.crossfire.CrossfireServerConnection;
 import java.util.Arrays;
 import org.jetbrains.annotations.NotNull;
 

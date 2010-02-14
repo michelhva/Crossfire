@@ -23,9 +23,9 @@ package com.realtime.crossfire.jxclient.map;
 
 import com.realtime.crossfire.jxclient.animations.Animation;
 import com.realtime.crossfire.jxclient.mapupdater.CfMapUpdater;
-import com.realtime.crossfire.jxclient.server.CrossfireMap2Command;
-import com.realtime.crossfire.jxclient.server.CrossfireServerConnection;
-import com.realtime.crossfire.jxclient.server.CrossfireTickListener;
+import com.realtime.crossfire.jxclient.server.crossfire.CrossfireMap2Command;
+import com.realtime.crossfire.jxclient.server.crossfire.CrossfireServerConnection;
+import com.realtime.crossfire.jxclient.server.crossfire.CrossfireTickListener;
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.HashMap;

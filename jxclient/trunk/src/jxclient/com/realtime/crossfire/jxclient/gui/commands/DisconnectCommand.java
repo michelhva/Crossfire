@@ -21,7 +21,7 @@
 
 package com.realtime.crossfire.jxclient.gui.commands;
 
-import com.realtime.crossfire.jxclient.server.GuiStateManager;
+import com.realtime.crossfire.jxclient.guistate.GuiStateManager;
 import org.jetbrains.annotations.NotNull;
 
 /**
