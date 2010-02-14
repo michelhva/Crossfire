@@ -19,9 +19,9 @@
  * Copyright (C) 2006-2010 Andreas Kirschbaum.
  */
 
-package com.realtime.crossfire.jxclient.settings.options;
+package com.realtime.crossfire.jxclient.sound;
 
-import com.realtime.crossfire.jxclient.sound.SoundManager;
+import com.realtime.crossfire.jxclient.settings.options.CheckBoxOption;
 import org.jetbrains.annotations.NotNull;
 
 /**
