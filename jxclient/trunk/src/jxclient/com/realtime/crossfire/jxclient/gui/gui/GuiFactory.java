@@ -24,7 +24,6 @@ package com.realtime.crossfire.jxclient.gui.gui;
 import com.realtime.crossfire.jxclient.commands.Commands;
 import com.realtime.crossfire.jxclient.commands.Macros;
 import com.realtime.crossfire.jxclient.gui.commands.CommandCallback;
-import com.realtime.crossfire.jxclient.window.MouseTracker;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 
