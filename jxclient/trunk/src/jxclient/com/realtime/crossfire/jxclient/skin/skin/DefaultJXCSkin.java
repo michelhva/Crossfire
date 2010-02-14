@@ -21,8 +21,8 @@
 
 package com.realtime.crossfire.jxclient.skin.skin;
 
-import com.realtime.crossfire.jxclient.gui.command.CommandList;
-import com.realtime.crossfire.jxclient.gui.command.CommandListType;
+import com.realtime.crossfire.jxclient.gui.commands.CommandList;
+import com.realtime.crossfire.jxclient.gui.commands.CommandListType;
 import com.realtime.crossfire.jxclient.gui.gauge.GaugeUpdater;
 import com.realtime.crossfire.jxclient.gui.gui.GUIElement;
 import com.realtime.crossfire.jxclient.gui.gui.Gui;

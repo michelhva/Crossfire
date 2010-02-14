@@ -23,9 +23,7 @@ package com.realtime.crossfire.jxclient.gui.commands;
 
 import com.realtime.crossfire.jxclient.commands.Commands;
 import com.realtime.crossfire.jxclient.commands.Macros;
-import com.realtime.crossfire.jxclient.gui.command.GUICommand;
 import com.realtime.crossfire.jxclient.util.StringUtils;
-import com.realtime.crossfire.jxclient.window.GuiManager;
 import java.util.regex.Pattern;
 import org.jetbrains.annotations.NotNull;
 
@@ -58,34 +56,34 @@ public class GUICommandFactory
     /**
      * Create a new {@link GUICommand} instance from string representation.
      * @param encodedCommandString the command string representation
-     * @param guiManager the gui manager to use
+     * @param commandCallback the command callback to use
      * @param commands the commands instance to use
      * @param macros the macros instance to use
      * @return the new command instance
      */
-    public static GUICommand createCommandDecode(@NotNull final String encodedCommandString, @NotNull final GuiManager guiManager, @NotNull final Commands commands, @NotNull final Macros macros)
+    public static GUICommand createCommandDecode(@NotNull final String encodedCommandString, @NotNull final CommandCallback commandCallback, @NotNull final Commands commands, @NotNull final Macros macros)
     {
-        return createCommand(decode(encodedCommandString), guiManager, commands, macros);
+        return createCommand(decode(encodedCommandString), commandCallback, commands, macros);
     }
 
     /**
      * Create a new {@link GUICommand} instance from string representation.
      * @param commandString the command string representation
-     * @param guiManager the gui manager to use
+     * @param commandCallback the command callback to use
      * @param commands the commands instance to use
      * @param macros the macros instance to use
      * @return the new command instance
      */
     @NotNull
-    public static GUICommand createCommand(@NotNull final String commandString, @NotNull final GuiManager guiManager, @NotNull final Commands commands, @NotNull final Macros macros)
+    public static GUICommand createCommand(@NotNull final String commandString, @NotNull final CommandCallback commandCallback, @NotNull final Commands commands, @NotNull final Macros macros)
     {
         if (commandString.equals("-e"))
         {
-            return new ActivateCommandInputCommand("", guiManager, macros);
+            return new ActivateCommandInputCommand("", commandCallback, macros);
         }
         else if (commandString.startsWith("-e "))
         {
-            return new ActivateCommandInputCommand(StringUtils.trimLeading(commandString.substring(3)), guiManager, macros);
+            return new ActivateCommandInputCommand(StringUtils.trimLeading(commandString.substring(3)), commandCallback, macros);
         }
         else
         {

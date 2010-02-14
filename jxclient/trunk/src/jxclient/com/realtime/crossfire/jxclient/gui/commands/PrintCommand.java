@@ -21,8 +21,6 @@
 
 package com.realtime.crossfire.jxclient.gui.commands;
 
-import com.realtime.crossfire.jxclient.gui.command.GUICommand;
-
 /**
  * A {@link GUICommand} which does nothing.
  * @author Andreas Kirschbaum

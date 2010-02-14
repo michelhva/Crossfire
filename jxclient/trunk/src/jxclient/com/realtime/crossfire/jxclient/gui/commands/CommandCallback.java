@@ -21,7 +21,6 @@
 
 package com.realtime.crossfire.jxclient.gui.commands;
 
-import com.realtime.crossfire.jxclient.gui.command.CommandList;
 import com.realtime.crossfire.jxclient.gui.gui.Gui;
 import org.jetbrains.annotations.NotNull;
 
@@ -69,4 +68,30 @@ public interface CommandCallback
      * @param playerName the player name
      */
     void updatePlayerName(@NotNull String playerName);
+
+    /**
+     * Activates the command input text field. If the skin defines more than
+     * one input field, the first matching one is selected.
+     * <p/>
+     * If neither the main gui nor any visible dialog has an input text field,
+     * invisible guis are checked as well. If one is found, it is made visible.
+     * @param newText the new command text if non-<code>null</code>
+     */
+    void activateCommandInput(@NotNull String newText);
+
+    /**
+     * Adds a key binding.
+     * @param perCharacter whether a per-character key binding should be added
+     * @param commandList the command list to execute on key press
+     * @return whether the key bindings dialog should be opened
+     */
+    boolean createKeyBinding(boolean perCharacter, @NotNull CommandList commandList);
+
+    /**
+     * Removes a key binding.
+     * @param perCharacter whether a per-character key binding should be
+     * removed
+     * @return whether the key bindings dialog should be opened
+     */
+    boolean removeKeyBinding(boolean perCharacter);
 }

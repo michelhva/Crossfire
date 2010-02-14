@@ -24,10 +24,10 @@ package com.realtime.crossfire.jxclient.gui.gui;
 import com.realtime.crossfire.jxclient.commands.Commands;
 import com.realtime.crossfire.jxclient.commands.Macros;
 import com.realtime.crossfire.jxclient.gui.button.AbstractButton;
+import com.realtime.crossfire.jxclient.gui.commands.CommandCallback;
 import com.realtime.crossfire.jxclient.gui.keybindings.KeyBindings;
 import com.realtime.crossfire.jxclient.gui.textinput.GUIText;
 import com.realtime.crossfire.jxclient.gui.textinput.KeyListener;
-import com.realtime.crossfire.jxclient.window.GuiManager;
 import com.realtime.crossfire.jxclient.window.MouseTracker;
 import java.awt.Color;
 import java.awt.Component;
@@ -142,13 +142,13 @@ public class Gui
      * @param mouseTracker the mouse tracker when in debug GUI mode or
      * <code>null</code> otherwise
      * @param commands the commands instance for executing commands
-     * @param guiManager the gui manager to use
+     * @param commandCallback the command callback to use
      * @param macros the macros instance to use
      */
-    public Gui(@Nullable final MouseTracker mouseTracker, @NotNull final Commands commands, @NotNull final GuiManager guiManager, @NotNull final Macros macros)
+    public Gui(@Nullable final MouseTracker mouseTracker, @NotNull final Commands commands, @NotNull final CommandCallback commandCallback, @NotNull final Macros macros)
     {
         this.mouseTracker = mouseTracker;
-        keyBindings = new KeyBindings(null, commands, guiManager, macros);
+        keyBindings = new KeyBindings(null, commands, commandCallback, macros);
     }
 
     /**

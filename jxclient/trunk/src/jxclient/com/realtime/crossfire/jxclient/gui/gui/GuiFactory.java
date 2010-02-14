@@ -23,7 +23,7 @@ package com.realtime.crossfire.jxclient.gui.gui;
 
 import com.realtime.crossfire.jxclient.commands.Commands;
 import com.realtime.crossfire.jxclient.commands.Macros;
-import com.realtime.crossfire.jxclient.window.GuiManager;
+import com.realtime.crossfire.jxclient.gui.commands.CommandCallback;
 import com.realtime.crossfire.jxclient.window.MouseTracker;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
@@ -47,10 +47,10 @@ public class GuiFactory
     private final Commands commands;
 
     /**
-     * The gui manager to use.
+     * The {@link CommandCallback} to use.
      */
     @NotNull
-    private final GuiManager guiManager;
+    private final CommandCallback commandCallback;
 
     /**
      * The {@link Macros} instance to use.
@@ -63,14 +63,14 @@ public class GuiFactory
      * @param mouseTracker the mouse tracker when in debug GUI mode or
      * <code>null</code> otherwise
      * @param commands the commands instance for executing commands
-     * @param guiManager the gui manager to use
+     * @param commandCallback the command callback to use
      * @param macros the macros instance to use
      */
-    public GuiFactory(@Nullable final MouseTracker mouseTracker, @NotNull final Commands commands, @NotNull final GuiManager guiManager, @NotNull final Macros macros)
+    public GuiFactory(@Nullable final MouseTracker mouseTracker, @NotNull final Commands commands, @NotNull final CommandCallback commandCallback, @NotNull final Macros macros)
     {
         this.mouseTracker = mouseTracker;
         this.commands = commands;
-        this.guiManager = guiManager;
+        this.commandCallback = commandCallback;
         this.macros = macros;
     }
 
@@ -81,6 +81,6 @@ public class GuiFactory
     @NotNull
     public Gui newGui()
     {
-        return new Gui(mouseTracker, commands, guiManager, macros);
+        return new Gui(mouseTracker, commands, commandCallback, macros);
     }
 }

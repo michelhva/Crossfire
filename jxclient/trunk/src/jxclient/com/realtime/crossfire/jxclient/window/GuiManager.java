@@ -23,8 +23,8 @@ package com.realtime.crossfire.jxclient.window;
 
 import com.realtime.crossfire.jxclient.commands.Commands;
 import com.realtime.crossfire.jxclient.commands.Macros;
-import com.realtime.crossfire.jxclient.gui.command.CommandList;
 import com.realtime.crossfire.jxclient.gui.commands.CommandCallback;
+import com.realtime.crossfire.jxclient.gui.commands.CommandList;
 import com.realtime.crossfire.jxclient.gui.commands.NoSuchCommandException;
 import com.realtime.crossfire.jxclient.gui.gui.Gui;
 import com.realtime.crossfire.jxclient.gui.gui.GuiFactory;
@@ -410,6 +410,27 @@ public class GuiManager
         {
             GuiManager.this.updatePlayerName(playerName);
         }
+
+        /** {@inheritDoc} */
+        @Override
+        public void activateCommandInput(@NotNull final String newText)
+        {
+            GuiManager.this.activateCommandInput(newText);
+        }
+
+        /** {@inheritDoc} */
+        @Override
+        public boolean createKeyBinding(final boolean perCharacter, @NotNull final CommandList commandList)
+        {
+            return GuiManager.this.createKeyBinding(perCharacter, commandList);
+        }
+
+        /** {@inheritDoc} */
+        @Override
+        public boolean removeKeyBinding(final boolean perCharacter)
+        {
+            return GuiManager.this.removeKeyBinding(perCharacter);
+        }
     };
 
     /**
@@ -437,12 +458,12 @@ public class GuiManager
         this.server = server;
         this.windowRenderer = windowRenderer;
         guiStateManager.addGuiStateListener(guiStateListener);
-        commands = new Commands(windowRenderer, commandQueue, server, scriptManager, optionManager, this, commandCallback, macros);
-        guiFactory = new GuiFactory(mouseTracker, commands, this, macros);
+        commands = new Commands(windowRenderer, commandQueue, server, scriptManager, optionManager, commandCallback, macros);
+        guiFactory = new GuiFactory(mouseTracker, commands, commandCallback, macros);
         windowRenderer.setCurrentGui(guiFactory.newGui());
         queryDialog = guiFactory.newGui();
         keybindDialog = guiFactory.newGui();
-        keybindingsManager = new KeybindingsManager(commands, this, macros);
+        keybindingsManager = new KeybindingsManager(commands, commandCallback, macros);
     }
 
     /**
@@ -584,7 +605,7 @@ public class GuiManager
      * @param autoCloseOnDeactivate whether the dialog should auto-close when
      * it becomes inactive; ignored if the dialog is already open
      */
-    public void openDialog(@NotNull final Gui dialog, final boolean autoCloseOnDeactivate)
+    private void openDialog(@NotNull final Gui dialog, final boolean autoCloseOnDeactivate)
     {
         windowRenderer.openDialog(dialog, autoCloseOnDeactivate);
         if (dialog == queryDialog)
@@ -597,7 +618,7 @@ public class GuiManager
      * Toggles a dialog.
      * @param dialog the dialog to toggle
      */
-    public void toggleDialog(@NotNull final Gui dialog)
+    private void toggleDialog(@NotNull final Gui dialog)
     {
         if (windowRenderer.toggleDialog(dialog))
         {
@@ -740,7 +761,7 @@ public class GuiManager
      * Closes the given dialog. Does nothing if the dialog is not opened.
      * @param dialog the dialog to close
      */
-    public void closeDialog(@NotNull final Gui dialog)
+    private void closeDialog(@NotNull final Gui dialog)
     {
         windowRenderer.closeDialog(dialog);
     }
@@ -750,7 +771,7 @@ public class GuiManager
      * character name prompt.
      * @param playerName the player name
      */
-    public void updatePlayerName(@NotNull final String playerName)
+    private void updatePlayerName(@NotNull final String playerName)
     {
         if (currentQueryDialogIsNamePrompt)
         {
@@ -821,14 +842,14 @@ public class GuiManager
     }
 
     /**
-     * Activates the command input text field. If the skin defined more than one
-     * input field, the first matching one is selected.
-     * <p>If neither the main gui nor any visible dialog has an input text
-     * field, invisible guis are checked as well. If one is found, it is made
-     * visible.
+     * Activates the command input text field. If the skin defines more than
+     * one input field, the first matching one is selected.
+     * <p/>
+     * If neither the main gui nor any visible dialog has an input text field,
+     * invisible guis are checked as well. If one is found, it is made visible.
      * @param newText the new command text if non-<code>null</code>
      */
-    public void activateCommandInput(@Nullable final String newText)
+    private void activateCommandInput(@Nullable final String newText)
     {
         final GUIText textArea = activateCommandInput();
         if (textArea != null && newText != null && newText.length() > 0)
@@ -984,7 +1005,7 @@ public class GuiManager
      * @param cmdlist the command list to execute on key press
      * @return whether the key bindings dialog should be opened
      */
-    public boolean createKeyBinding(final boolean perCharacter, @NotNull final CommandList cmdlist)
+    private boolean createKeyBinding(final boolean perCharacter, @NotNull final CommandList cmdlist)
     {
         final boolean result = keybindingsManager.createKeyBinding(perCharacter, cmdlist);
         if (result)
@@ -1000,7 +1021,7 @@ public class GuiManager
      * removed
      * @return whether the key bindings dialog should be opened
      */
-    public boolean removeKeyBinding(final boolean perCharacter)
+    private boolean removeKeyBinding(final boolean perCharacter)
     {
         final boolean result = keybindingsManager.removeKeyBinding(perCharacter);
         if (result)

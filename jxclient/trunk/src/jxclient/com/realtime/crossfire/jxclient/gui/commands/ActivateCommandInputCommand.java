@@ -22,8 +22,6 @@
 package com.realtime.crossfire.jxclient.gui.commands;
 
 import com.realtime.crossfire.jxclient.commands.Macros;
-import com.realtime.crossfire.jxclient.gui.command.GUICommand;
-import com.realtime.crossfire.jxclient.window.GuiManager;
 import org.jetbrains.annotations.NotNull;
 
 /**
@@ -33,10 +31,10 @@ import org.jetbrains.annotations.NotNull;
 public class ActivateCommandInputCommand implements GUICommand
 {
     /**
-     * The {@link GuiManager} to affect.
+     * The {@link CommandCallback} to affect.
      */
     @NotNull
-    private final GuiManager guiManager;
+    private final CommandCallback commandCallback;
 
     /** The command text to set. */
     @NotNull
@@ -51,13 +49,13 @@ public class ActivateCommandInputCommand implements GUICommand
     /**
      * Creates a new instance.
      * @param commandText the command text to set
-     * @param guiManager the gui manager to affect
+     * @param commandCallback the command callback to affect
      * @param macros the macros instance to use
      */
-    public ActivateCommandInputCommand(@NotNull final String commandText, @NotNull final GuiManager guiManager, @NotNull final Macros macros)
+    public ActivateCommandInputCommand(@NotNull final String commandText, @NotNull final CommandCallback commandCallback, @NotNull final Macros macros)
     {
         this.commandText = commandText;
-        this.guiManager = guiManager;
+        this.commandCallback = commandCallback;
         this.macros = macros;
     }
 
@@ -72,7 +70,7 @@ public class ActivateCommandInputCommand implements GUICommand
     @Override
     public void execute()
     {
-        guiManager.activateCommandInput(macros.expandMacros(commandText));
+        commandCallback.activateCommandInput(macros.expandMacros(commandText));
     }
 
     /**

@@ -21,12 +21,12 @@
 
 package com.realtime.crossfire.jxclient.commands;
 
-import com.realtime.crossfire.jxclient.gui.command.CommandList;
-import com.realtime.crossfire.jxclient.gui.command.CommandListType;
+import com.realtime.crossfire.jxclient.gui.commands.CommandCallback;
+import com.realtime.crossfire.jxclient.gui.commands.CommandList;
+import com.realtime.crossfire.jxclient.gui.commands.CommandListType;
 import com.realtime.crossfire.jxclient.gui.commands.GUICommandFactory;
 import com.realtime.crossfire.jxclient.server.CrossfireServerConnection;
 import com.realtime.crossfire.jxclient.util.StringUtils;
-import com.realtime.crossfire.jxclient.window.GuiManager;
 import org.jetbrains.annotations.NotNull;
 
 /**
@@ -42,10 +42,10 @@ public class BindCommand extends AbstractCommand
     private final Commands commands;
 
     /**
-     * The {@link GuiManager} to use.
+     * The {@link CommandCallback} to use.
      */
     @NotNull
-    private final GuiManager guiManager;
+    private final CommandCallback commandCallback;
 
     /**
      * The {@link Macros} instance to use.
@@ -57,14 +57,14 @@ public class BindCommand extends AbstractCommand
      * Creates a new instance.
      * @param crossfireServerConnection the connection instance
      * @param commands the commands instance for executing commands
-     * @param guiManager the gui manager to use
+     * @param commandCallback the command callback to use
      * @param macros the macros instance to use
      */
-    public BindCommand(@NotNull final CrossfireServerConnection crossfireServerConnection, @NotNull final Commands commands, @NotNull final GuiManager guiManager, @NotNull final Macros macros)
+    public BindCommand(@NotNull final CrossfireServerConnection crossfireServerConnection, @NotNull final Commands commands, @NotNull final CommandCallback commandCallback, @NotNull final Macros macros)
     {
         super(crossfireServerConnection);
         this.commands = commands;
-        this.guiManager = guiManager;
+        this.commandCallback = commandCallback;
         this.macros = macros;
     }
 
@@ -104,8 +104,8 @@ public class BindCommand extends AbstractCommand
         }
 
         final CommandList commandList2 = new CommandList(CommandListType.AND);
-        commandList2.add(GUICommandFactory.createCommand(commandList, guiManager, commands, macros));
-        if (!guiManager.createKeyBinding(perCharacterBinding, commandList2))
+        commandList2.add(GUICommandFactory.createCommand(commandList, commandCallback, commands, macros));
+        if (!commandCallback.createKeyBinding(perCharacterBinding, commandList2))
         {
             drawInfoError("Cannot use bind -c since no character is logged in.");
             return;

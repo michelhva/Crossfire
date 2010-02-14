@@ -21,7 +21,6 @@
 
 package com.realtime.crossfire.jxclient.gui.commands;
 
-import com.realtime.crossfire.jxclient.gui.command.GUICommand;
 import com.realtime.crossfire.jxclient.gui.list.GUIItemList;
 import com.realtime.crossfire.jxclient.items.CurrentFloorManager;
 import com.realtime.crossfire.jxclient.server.CommandQueue;
