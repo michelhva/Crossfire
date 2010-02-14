@@ -5,7 +5,7 @@ region darcap
 width 50
 height 50
 msg
-Modified: 2010-01-16 Nicolas Weeger
+Modified: 2010-02-14 Nicolas Weeger
 endmsg
 outdoor 1
 tile_path_1 world_116_101
@@ -5175,7 +5175,10 @@ y 27
 elevation 0
 end
 arch rl_house1
-name town house
+name Thilgar's house
+slaying /darcap/darcap/thilgar
+hp 6
+sp 19
 x 19
 y 27
 end
