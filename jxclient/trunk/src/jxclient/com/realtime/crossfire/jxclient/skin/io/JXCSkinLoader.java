@@ -2281,7 +2281,7 @@ public class JXCSkinLoader
      * @throws IOException if a syntax error occurs
      * @throws JXCSkinException if an element cannot be found
      */
-    public void addCommand(@NotNull final String listName, @NotNull final String[] args, final int argc, @Nullable final GUIElement element, @NotNull final String command, @NotNull final GuiStateManager guiStateManager, @NotNull final Commands commands, @NotNull final LineNumberReader lnr, @NotNull final CommandQueue commandQueue, @NotNull final CrossfireServerConnection crossfireServerConnection, @NotNull final GuiManager guiManager, @NotNull final Macros macros) throws IOException, JXCSkinException
+    private void addCommand(@NotNull final String listName, @NotNull final String[] args, final int argc, @Nullable final GUIElement element, @NotNull final String command, @NotNull final GuiStateManager guiStateManager, @NotNull final Commands commands, @NotNull final LineNumberReader lnr, @NotNull final CommandQueue commandQueue, @NotNull final CrossfireServerConnection crossfireServerConnection, @NotNull final GuiManager guiManager, @NotNull final Macros macros) throws IOException, JXCSkinException
     {
         final GUICommandList commandList = skin.getCommandList(listName);
         commandList.add(commandParser.parseCommandArgs(args, argc, element, command, guiStateManager, commands, lnr, commandQueue, crossfireServerConnection, guiManager, macros));
