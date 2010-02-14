@@ -24,6 +24,7 @@ package com.realtime.crossfire.jxclient.main;
 import com.realtime.crossfire.jxclient.commands.Commands;
 import com.realtime.crossfire.jxclient.commands.Macros;
 import com.realtime.crossfire.jxclient.faces.FacesManager;
+import com.realtime.crossfire.jxclient.gui.commands.CommandCallback;
 import com.realtime.crossfire.jxclient.gui.gui.GuiFactory;
 import com.realtime.crossfire.jxclient.gui.gui.JXCWindowRenderer;
 import com.realtime.crossfire.jxclient.gui.gui.TooltipManager;
@@ -728,7 +729,8 @@ public class JXCWindow extends JFrame
         final JXCSkinLoader newSkin = new JXCSkinLoader(itemsManager, spellsManager, facesManager, stats, mapUpdater, defaultKeyBindings, optionManager, experienceTable, skillSet);
         final Commands commands = guiManager.getCommands();
         final GuiFactory guiFactory = new GuiFactory(debugGui ? mouseTracker : null, commands, guiManager, macros);
-        return newSkin.load(skinSource, server, guiStateManager, guiManager.getTooltipManager(), windowRenderer, windowRenderer.getElementListener(), metaserverModel, commandQueue, resolution, shortcutsManager.getShortcuts(), commands, currentSpellManager, guiManager, macros, guiFactory);
+        final CommandCallback commandCallback = guiManager.getCommandCallback();
+        return newSkin.load(skinSource, server, guiStateManager, guiManager.getTooltipManager(), windowRenderer, windowRenderer.getElementListener(), metaserverModel, commandQueue, resolution, shortcutsManager.getShortcuts(), commands, currentSpellManager, commandCallback, macros, guiFactory);
     }
 
     /**

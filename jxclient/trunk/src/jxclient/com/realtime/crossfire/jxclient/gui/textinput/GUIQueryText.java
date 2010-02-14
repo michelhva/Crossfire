@@ -21,10 +21,10 @@
 
 package com.realtime.crossfire.jxclient.gui.textinput;
 
+import com.realtime.crossfire.jxclient.gui.commands.CommandCallback;
 import com.realtime.crossfire.jxclient.gui.gui.GUIElementListener;
 import com.realtime.crossfire.jxclient.gui.gui.TooltipManager;
 import com.realtime.crossfire.jxclient.server.CrossfireServerConnection;
-import com.realtime.crossfire.jxclient.window.GuiManager;
 import java.awt.Color;
 import java.awt.Font;
 import java.awt.Image;
@@ -51,11 +51,12 @@ public class GUIQueryText extends GUIText
     /**
      * Creates a new instance.
      * @param server the crossfire server connection for sending reply commands
+     * @param commandCallback the command callback to use
      * @param elementListener the element listener to notify
      */
-    public GUIQueryText(@NotNull final CrossfireServerConnection server, @NotNull final GuiManager guiManager, @NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final String name, final int x, final int y, final int w, final int h, @NotNull final Image activeImage, @NotNull final Image inactiveImage, @NotNull final Font font, @NotNull final Color inactiveColor, @NotNull final Color activeColor, final int margin, @NotNull final String text, final boolean ignoreUpDown)
+    public GUIQueryText(@NotNull final CrossfireServerConnection server, @NotNull final CommandCallback commandCallback, @NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final String name, final int x, final int y, final int w, final int h, @NotNull final Image activeImage, @NotNull final Image inactiveImage, @NotNull final Font font, @NotNull final Color inactiveColor, @NotNull final Color activeColor, final int margin, @NotNull final String text, final boolean ignoreUpDown)
     {
-        super(guiManager, tooltipManager, elementListener, name, x, y, w, h, activeImage, inactiveImage, font, inactiveColor, activeColor, margin, text, ignoreUpDown);
+        super(commandCallback, tooltipManager, elementListener, name, x, y, w, h, activeImage, inactiveImage, font, inactiveColor, activeColor, margin, text, ignoreUpDown);
         this.server = server;
     }
 

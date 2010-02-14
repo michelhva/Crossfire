@@ -23,7 +23,6 @@ package com.realtime.crossfire.jxclient.gui.commands;
 
 import com.realtime.crossfire.jxclient.gui.command.GUICommand;
 import com.realtime.crossfire.jxclient.gui.gui.Gui;
-import com.realtime.crossfire.jxclient.window.GuiManager;
 import org.jetbrains.annotations.NotNull;
 
 /**
@@ -33,10 +32,10 @@ import org.jetbrains.annotations.NotNull;
 public class DialogOpenCommand implements GUICommand
 {
     /**
-     * The {@link GuiManager} to use.
+     * The {@link CommandCallback} to use.
      */
     @NotNull
-    private final GuiManager guiManager;
+    private final CommandCallback commandCallback;
 
     /**
      * The dialog to open.
@@ -46,12 +45,12 @@ public class DialogOpenCommand implements GUICommand
 
     /**
      * Creates a new instance.
-     * @param guiManager the gui manager to use
+     * @param commandCallback the command callback to use
      * @param dialog the dialog to open
      */
-    public DialogOpenCommand(@NotNull final GuiManager guiManager, @NotNull final Gui dialog)
+    public DialogOpenCommand(@NotNull final CommandCallback commandCallback, @NotNull final Gui dialog)
     {
-        this.guiManager = guiManager;
+        this.commandCallback = commandCallback;
         this.dialog = dialog;
     }
 
@@ -66,6 +65,6 @@ public class DialogOpenCommand implements GUICommand
     @Override
     public void execute()
     {
-        guiManager.openDialog(dialog, false);
+        commandCallback.openDialog(dialog);
     }
 }
