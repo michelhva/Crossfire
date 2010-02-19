@@ -290,24 +290,24 @@ public class JXCWindowRenderer
         isFullScreen = false;
         oldDisplayMode = null;
 
-        final GraphicsEnvironment ge = GraphicsEnvironment.getLocalGraphicsEnvironment();
-        final GraphicsDevice gd = ge.getDefaultScreenDevice();
-        if (fullScreen && gd.isFullScreenSupported())
+        final GraphicsEnvironment graphicsEnvironment = GraphicsEnvironment.getLocalGraphicsEnvironment();
+        final GraphicsDevice graphicsDevice = graphicsEnvironment.getDefaultScreenDevice();
+        if (fullScreen && graphicsDevice.isFullScreenSupported())
         {
             frame.setUndecorated(true);
-            gd.setFullScreenWindow(frame);
+            graphicsDevice.setFullScreenWindow(frame);
             isFullScreen = true;
-            final DisplayMode currentDisplayMode = gd.getDisplayMode();
+            final DisplayMode currentDisplayMode = graphicsDevice.getDisplayMode();
             if (currentDisplayMode.getWidth() == displayMode.getWidth() && currentDisplayMode.getHeight() == displayMode.getHeight())
             {
                 // full-screen mode, no display mode change
             }
-            else if (gd.isDisplayChangeSupported())
+            else if (graphicsDevice.isDisplayChangeSupported())
             {
                 boolean ok = true;
                 try
                 {
-                    gd.setDisplayMode(displayMode);
+                    graphicsDevice.setDisplayMode(displayMode);
                 }
                 catch (final IllegalArgumentException ex)
                 {
@@ -321,7 +321,7 @@ public class JXCWindowRenderer
                 else
                 {
                     isFullScreen = false;
-                    gd.setFullScreenWindow(null);
+                    graphicsDevice.setFullScreenWindow(null);
                     //frame.setUndecorated(false); // XXX: cannot be called anymore
                     // windowed mode
                 }
@@ -329,7 +329,7 @@ public class JXCWindowRenderer
             else
             {
                 isFullScreen = false;
-                gd.setFullScreenWindow(null);
+                graphicsDevice.setFullScreenWindow(null);
                 //frame.setUndecorated(false); // XXX: cannot be called anymore
                 // windowed mode
             }
