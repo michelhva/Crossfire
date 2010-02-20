@@ -638,10 +638,8 @@ public class GuiManager
         closeDialog(queryDialog);
     }
 
-    public void initRendering(final boolean fullScreen)
+    public void initRendering()
     {
-        windowRenderer.initRendering(skin.getResolution(), fullScreen);
-        DialogStateParser.load(skin, windowRenderer);
         keybindingsManager.loadKeybindings();
     }
 

@@ -64,6 +64,7 @@ import com.realtime.crossfire.jxclient.stats.ExperienceTable;
 import com.realtime.crossfire.jxclient.stats.PoisonWatcher;
 import com.realtime.crossfire.jxclient.stats.Stats;
 import com.realtime.crossfire.jxclient.util.Resolution;
+import com.realtime.crossfire.jxclient.window.DialogStateParser;
 import com.realtime.crossfire.jxclient.window.GuiManager;
 import com.realtime.crossfire.jxclient.window.JXCConnection;
 import com.realtime.crossfire.jxclient.window.KeyHandler;
@@ -636,21 +637,41 @@ public class JXCWindow extends JFrame
     public void init(@NotNull final String skinName, final boolean fullScreen, @Nullable final String serverInfo)
     {
         addKeyListener(keyListener);
-        if (!setSkin(skinName))
+        JXCSkin skin;
+        try
+        {
+            skin = loadSkin(skinName);
+        }
+        catch (final JXCSkinException ex)
         {
             if (skinName.equals(Options.DEFAULT_SKIN))
             {
+                System.err.println("cannot load skin "+skinName+": "+ex.getMessage());
                 System.exit(1);
             }
 
-            System.err.println("trying to load default skin "+Options.DEFAULT_SKIN);
-            if (!setSkin(Options.DEFAULT_SKIN))
+            System.err.println("cannot load skin "+skinName+": "+ex.getMessage()+", trying default skin");
+            try
             {
+                skin = loadSkin(Options.DEFAULT_SKIN);
+            }
+            catch (final JXCSkinException ex2)
+            {
+                System.err.println("cannot load default skin "+Options.DEFAULT_SKIN+": "+ex2.getMessage());
                 System.exit(1);
                 throw new AssertionError();
             }
         }
-        guiManager.initRendering(fullScreen);
+        guiManager.unsetSkin();
+        guiManager.setSkin(skin);
+        optionManager.loadOptions();
+        keyHandler.setKeyBindings(skin.getDefaultKeyBindings());
+        if(!windowRenderer.setResolution(skin.getResolution(), fullScreen))
+        {
+            windowRenderer.setResolution(skin.getResolution(), false);
+        }
+        DialogStateParser.load(skin, windowRenderer);
+        guiManager.initRendering();
 
         if (serverInfo != null)
         {
@@ -681,30 +702,6 @@ public class JXCWindow extends JFrame
     public void paint(@NotNull final Graphics g)
     {
         windowRenderer.repaint();
-    }
-
-    /**
-     * Sets the skin to use.
-     * @param skinName the skin name to set
-     * @return whether loading was successful
-     */
-    private boolean setSkin(@NotNull final String skinName)
-    {
-        guiManager.unsetSkin();
-        final JXCSkin skin;
-        try
-        {
-            skin = loadSkin(skinName);
-        }
-        catch (final JXCSkinException ex)
-        {
-            System.err.println("cannot load skin "+skinName+": "+ex.getMessage());
-            return false;
-        }
-        guiManager.setSkin(skin);
-        optionManager.loadOptions();
-        keyHandler.setKeyBindings(skin.getDefaultKeyBindings());
-        return true;
     }
 
     /**

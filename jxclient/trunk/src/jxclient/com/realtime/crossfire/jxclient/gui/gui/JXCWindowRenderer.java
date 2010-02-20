@@ -302,18 +302,6 @@ public class JXCWindowRenderer
         forcePaint = true;
     }
 
-    public void initRendering(@NotNull final Resolution resolution, final boolean fullScreen)
-    {
-        if(!setResolution(resolution, fullScreen))
-        {
-            setResolution(resolution, false);
-        }
-
-        final Insets insets = frame.getInsets();
-        offsetX = insets.left;
-        offsetY = insets.top;
-    }
-
     /**
      * Tries to switch to the given resolution. If resolution switching fails,
      * the window might be invisible.
@@ -405,6 +393,7 @@ public class JXCWindowRenderer
 
         windowWidth = resolution.getWidth();
         windowHeight = resolution.getHeight();
+
         return true;
     }
 
