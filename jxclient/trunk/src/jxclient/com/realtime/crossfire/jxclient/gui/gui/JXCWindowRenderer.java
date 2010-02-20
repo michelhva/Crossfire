@@ -64,14 +64,24 @@ public class JXCWindowRenderer
     @NotNull
     private final Object redrawSemaphore;
 
+    @NotNull
+    private final GraphicsDevice graphicsDevice;
+
+    /**
+     * The default screen mode that was active when the client did start.
+     */
+    @NotNull
+    private final DisplayMode defaultDisplayMode;
+
     @Nullable
     private BufferStrategy bufferStrategy = null;
 
     @Nullable
     private DisplayMode oldDisplayMode = null;
 
-    @Nullable
-    private DisplayMode displayMode = null;
+    private int windowWidth = 0;
+
+    private int windowHeight = 0;
 
     /**
      * If set, the content of {@link #openDialogs} has changed.
@@ -140,9 +150,14 @@ public class JXCWindowRenderer
     private int offsetY = 0;
 
     /**
-     * Receords whether full-screen has been activated.
+     * Records whether full-screen mode is active.
      */
     private boolean isFullScreen = false;
+
+    /**
+     * Records whether the {@link #frame} has been displayed before.
+     */
+    private boolean wasDisplayed = false;
 
     /**
      * The current gui state.
@@ -274,6 +289,9 @@ public class JXCWindowRenderer
         this.mouseTracker = mouseTracker;
         this.redrawSemaphore = redrawSemaphore;
         crossfireServerConnection.addCrossfireUpdateMapListener(crossfireUpdateMapListener);
+        final GraphicsEnvironment ge = GraphicsEnvironment.getLocalGraphicsEnvironment();
+        graphicsDevice = ge.getDefaultScreenDevice();
+        defaultDisplayMode = graphicsDevice.getDisplayMode();
     }
 
     /**
@@ -286,95 +304,120 @@ public class JXCWindowRenderer
 
     public void initRendering(@NotNull final Resolution resolution, final boolean fullScreen)
     {
-        displayMode = new DisplayMode(resolution.getWidth(), resolution.getHeight(), DisplayMode.BIT_DEPTH_MULTI, DisplayMode.REFRESH_RATE_UNKNOWN);
-        isFullScreen = false;
-        oldDisplayMode = null;
-
-        final GraphicsEnvironment graphicsEnvironment = GraphicsEnvironment.getLocalGraphicsEnvironment();
-        final GraphicsDevice graphicsDevice = graphicsEnvironment.getDefaultScreenDevice();
-        if (fullScreen && graphicsDevice.isFullScreenSupported())
+        if(!setResolution(resolution, fullScreen))
         {
-            frame.setUndecorated(true);
-            graphicsDevice.setFullScreenWindow(frame);
-            isFullScreen = true;
-            final DisplayMode currentDisplayMode = graphicsDevice.getDisplayMode();
-            if (currentDisplayMode.getWidth() == displayMode.getWidth() && currentDisplayMode.getHeight() == displayMode.getHeight())
-            {
-                // full-screen mode, no display mode change
-            }
-            else if (graphicsDevice.isDisplayChangeSupported())
-            {
-                boolean ok = true;
-                try
-                {
-                    graphicsDevice.setDisplayMode(displayMode);
-                }
-                catch (final IllegalArgumentException ex)
-                {
-                    ok = false;
-                }
-                if (ok)
-                {
-                    oldDisplayMode = currentDisplayMode;
-                    // full-screen mode, display mode change
-                }
-                else
-                {
-                    isFullScreen = false;
-                    graphicsDevice.setFullScreenWindow(null);
-                    //frame.setUndecorated(false); // XXX: cannot be called anymore
-                    // windowed mode
-                }
-            }
-            else
-            {
-                isFullScreen = false;
-                graphicsDevice.setFullScreenWindow(null);
-                //frame.setUndecorated(false); // XXX: cannot be called anymore
-                // windowed mode
-            }
+            setResolution(resolution, false);
         }
-        else
-        {
-            // windowed mode
-        }
-
-        if (!isFullScreen)
-        {
-            if (fullScreen)
-            {
-                System.out.println("Warning ! True full-screen support is not available.");
-            }
-
-            final Dimension size = new Dimension(displayMode.getWidth(), displayMode.getHeight());
-            frame.getRootPane().setPreferredSize(size);
-            frame.pack();
-            frame.setResizable(false);
-            frame.setVisible(true);
-            frame.setLocationRelativeTo(null);
-        }
-        frame.createBufferStrategy(2);
-        bufferStrategy = frame.getBufferStrategy();
 
         final Insets insets = frame.getInsets();
         offsetX = insets.left;
         offsetY = insets.top;
     }
 
+    /**
+     * Tries to switch to the given resolution. If resolution switching fails,
+     * the window might be invisible.
+     * @param resolution the resolution to switch to
+     * @param fullScreen whether full-screen mode should be used
+     * @return whether the resolution has been changed
+     */
+    public boolean setResolution(@NotNull final Resolution resolution, final boolean fullScreen)
+    {
+        final DisplayMode currentDisplayMode = graphicsDevice.getDisplayMode();
+        if(isFullScreen == fullScreen && resolution.getWidth() == windowWidth && resolution.getHeight() == windowHeight)
+        {
+            return true;
+        }
+
+        // disable full-screen since switching from full-screen to full-screen
+        // does not work reliably
+        if(isFullScreen)
+        {
+            graphicsDevice.setDisplayMode(defaultDisplayMode);
+        }
+        graphicsDevice.setFullScreenWindow(null);
+        isFullScreen = false;
+
+        frame.dispose();
+        final Dimension dimension = new Dimension(resolution.getWidth(), resolution.getHeight());
+        frame.getRootPane().setPreferredSize(dimension);
+        frame.setResizable(false);
+
+        if(fullScreen)
+        {
+            frame.setUndecorated(true);
+
+            // full-screen switch must happen before display mode change
+            graphicsDevice.setFullScreenWindow(frame);
+            isFullScreen = true;
+
+            if(!graphicsDevice.isFullScreenSupported())
+            {
+                graphicsDevice.setFullScreenWindow(null);
+                isFullScreen = false;
+                return false;
+            }
+
+            if(!resolution.equalsDisplayMode(currentDisplayMode))
+            {
+                if(!graphicsDevice.isDisplayChangeSupported())
+                {
+                    graphicsDevice.setFullScreenWindow(null);
+                    isFullScreen = false;
+                    return false;
+                }
+
+                final DisplayMode newDisplayMode = new DisplayMode(resolution.getWidth(), resolution.getHeight(), DisplayMode.BIT_DEPTH_MULTI, DisplayMode.REFRESH_RATE_UNKNOWN);
+                try
+                {
+                    graphicsDevice.setDisplayMode(newDisplayMode);
+                }
+                catch (final IllegalArgumentException ex)
+                {
+                    isFullScreen = false;
+                    graphicsDevice.setDisplayMode(defaultDisplayMode);
+                    graphicsDevice.setFullScreenWindow(null);
+                    return false;
+                }
+            }
+        }
+        else
+        {
+            frame.setUndecorated(false);
+            frame.setVisible(true);
+        }
+
+        frame.pack();
+        if(!wasDisplayed)
+        {
+            wasDisplayed = true;
+            frame.setLocationRelativeTo(null);
+        }
+
+        frame.createBufferStrategy(2);
+        bufferStrategy = frame.getBufferStrategy();
+
+        final Insets insets = frame.getInsets();
+        offsetX = insets.left;
+        offsetY = insets.top;
+
+        frame.requestFocusInWindow();
+
+        windowWidth = resolution.getWidth();
+        windowHeight = resolution.getHeight();
+        return true;
+    }
+
     public void endRendering()
     {
         final GraphicsEnvironment ge = GraphicsEnvironment.getLocalGraphicsEnvironment();
         final GraphicsDevice gd = ge.getDefaultScreenDevice();
-        if (oldDisplayMode != null)
+        if(oldDisplayMode != null)
         {
             gd.setDisplayMode(oldDisplayMode);
             oldDisplayMode = null;
         }
-        if (isFullScreen)
-        {
-            isFullScreen = false;
-            gd.setFullScreenWindow(null);
-        }
+        gd.setFullScreenWindow(null);
     }
 
     public void redrawGUI()
@@ -951,7 +994,7 @@ public class JXCWindowRenderer
      */
     public int getWindowWidth()
     {
-        return displayMode.getWidth();
+        return windowWidth;
     }
 
     /**
@@ -960,7 +1003,7 @@ public class JXCWindowRenderer
      */
     public int getWindowHeight()
     {
-        return displayMode.getHeight();
+        return windowHeight;
     }
 
     /**

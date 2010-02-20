@@ -368,7 +368,10 @@ public class JXCWindow extends JFrame
         @Override
         public void windowClosed(@NotNull final WindowEvent e)
         {
-            guiManager.terminate();
+            if(!isVisible())
+            {
+                guiManager.terminate();
+            }
         }
 
         /** {@inheritDoc} */
