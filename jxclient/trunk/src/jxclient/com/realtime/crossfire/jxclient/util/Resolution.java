@@ -21,6 +21,7 @@
 
 package com.realtime.crossfire.jxclient.util;
 
+import java.awt.DisplayMode;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 
@@ -129,6 +130,17 @@ public class Resolution
     public int getArea()
     {
         return width*height;
+    }
+
+    /**
+     * Returns whether this resolution matches a {@link DisplayMode}'s
+     * resolution.
+     * @param displayMode the display mode
+     * @return if the resolutions match
+     */
+    public boolean equalsDisplayMode(@NotNull final DisplayMode displayMode)
+    {
+        return width == displayMode.getWidth() && height == displayMode.getHeight();
     }
 
     /** {@inheritDoc} */
