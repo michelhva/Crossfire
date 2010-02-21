@@ -110,27 +110,26 @@ public class Options
             skin = "default";
         }
 
-        for (int i = 0; i < args.length; i++)
+        int i = 0;
+        while (i < args.length)
         {
             if ((args[i].equals("-r") || args[i].equals("--resolution")) && i+1 < args.length)
             {
-                resolution = Resolution.parse(true, args[i+1]);
+                resolution = Resolution.parse(true, args[++i]);
                 if (resolution == null)
                 {
-                    System.err.println("Invalid resolution: "+args[i+1]);
+                    System.err.println("Invalid resolution: "+args[i]);
                     System.exit(1);
                 }
-                i++;
             }
             else if (args[i].equals("-S") && i+1 < args.length)
             {
-                skin = args[i+1];
+                skin = args[++i];
                 if (skin.indexOf('@') != -1)
                 {
                     System.err.println("Invalid skin name: "+skin);
                     System.exit(1);
                 }
-                i++;
             }
             else if (args[i].equals("-N"))
             {
@@ -142,8 +141,7 @@ public class Options
             }
             else if (args[i].equals("--server") && i+1 < args.length)
             {
-                server = args[i+1];
-                i++;
+                server = args[++i];
             }
             else if (args[i].equals("--debug-gui"))
             {
@@ -151,13 +149,11 @@ public class Options
             }
             else if (args[i].equals("--debug-protocol") && i+1 < args.length)
             {
-                debugProtocolFilename = args[i+1];
-                i++;
+                debugProtocolFilename = args[++i];
             }
             else if (args[i].equals("--debug-keyboard") && i+1 < args.length)
             {
-                debugKeyboardFilename = args[i+1];
-                i++;
+                debugKeyboardFilename = args[++i];
             }
             else
             {
@@ -180,6 +176,7 @@ public class Options
                 System.out.println("Available skins: default, prelude, ragnorok.");
                 System.exit(1);
             }
+            i++;
         }
         prefs.putString("resolution", resolution.toString());
         prefs.remove("width"); // delete obsolete entry
