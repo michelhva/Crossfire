@@ -340,7 +340,7 @@ public class JXCWindowRenderer
         debugScreenWrite("setResolution: resolution="+resolution+", fullScreen="+fullScreen);
 
         final DisplayMode currentDisplayMode = graphicsDevice.getDisplayMode();
-        debugScreenWrite("setResolution: currentDisplayMode="+currentDisplayMode.getWidth()+"x"+currentDisplayMode.getHeight());
+        debugScreenWrite("setResolution: current display mode="+currentDisplayMode.getWidth()+"x"+currentDisplayMode.getHeight());
         if(isFullScreen == fullScreen && resolution.getWidth() == windowWidth && resolution.getHeight() == windowHeight)
         {
             debugScreenWrite("setResolution: no change needed");
@@ -445,6 +445,7 @@ public class JXCWindowRenderer
             {
                 wasDisplayed = true;
                 final Point centerPoint = graphicsEnvironment.getCenterPoint();
+                debugScreenWrite("setResolution: screen center point is "+centerPoint);
                 final Point point = new Point(centerPoint.x-dimension.width/2-frameInsets.left, centerPoint.y-dimension.height/2-frameInsets.top);
                 debugScreenWrite("setResolution: moving window to "+point);
                 frame.setLocation(point);
