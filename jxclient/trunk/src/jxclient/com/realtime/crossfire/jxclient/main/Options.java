@@ -38,16 +38,33 @@ import org.jetbrains.annotations.Nullable;
  */
 public class Options
 {
+    /**
+     * The {@link Settings} for saving/restoring defaults.
+     */
     @Nullable
     private Settings prefs = null;
 
+    /**
+     * Whether full-screen mode should be enabled.
+     */
     private boolean fullScreen = true;
 
+    /**
+     * The Crossfire server to connect to or <code>null</code> to show the
+     * server selections screen.
+     */
     @Nullable
     private String server = null;
 
+    /**
+     * Enable debugging of GUI elements.
+     */
     private boolean debugGui = false;
 
+    /**
+     * The filename for Crossfire protocol message logs or <code>null</code> to
+     * not log protocol messages.
+     */
     @Nullable
     private String debugProtocolFilename = null;
 
@@ -58,9 +75,15 @@ public class Options
     @Nullable
     private String debugKeyboardFilename = null;
 
+    /**
+     * The resolution to use or <code>null</code> for default.
+     */
     @Nullable
     private Resolution resolution = null;
 
+    /**
+     * The skin name to load or <code>null</code> for the default skin.
+     */
     @Nullable
     private String skin = null;
 
@@ -184,6 +207,11 @@ public class Options
         return new Resolution(true, displayMode.getWidth(), displayMode.getHeight()).toString();
     }
 
+    /**
+     * Returns the filename for Crossfire protocol debug logs.
+     * @return the filename or <code>null</code> to not log Crossfire protocol
+     * messages
+     */
     @Nullable
     public String getDebugProtocolFilename()
     {
@@ -200,34 +228,58 @@ public class Options
         return debugKeyboardFilename;
     }
 
+    /**
+     * Returns the {@link Settings} for restoring/saving settings.
+     * @return the settings
+     */
     @Nullable
     public Settings getPrefs()
     {
         return prefs;
     }
 
+    /**
+     * Returns whether debugging of GUI elements is enabled.
+     * @return whether debugging of GUI elements is enabled
+     */
     public boolean isDebugGui()
     {
         return debugGui;
     }
 
+    /**
+     * Returns the resolution.
+     * @return the resolution or <code>null</code> for default
+     */
     @Nullable
     public Resolution getResolution()
     {
         return resolution;
     }
 
+    /**
+     * Returns the skin name.
+     * @return the skin name or <code>null</code> for the default skin
+     */
     @Nullable
     public String getSkin()
     {
         return skin;
     }
 
+    /**
+     * Returns whether full-screen mode should be enabled.
+     * @return whether full-screen mode should be enabled
+     */
     public boolean isFullScreen()
     {
         return fullScreen;
     }
 
+    /**
+     * Returns the Crossfire server to connect to.
+     * @return the server or <code>null</code> for interactive server selection
+     */
     @Nullable
     public String getServer()
     {
