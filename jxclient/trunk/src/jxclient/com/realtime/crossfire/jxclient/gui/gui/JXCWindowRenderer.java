@@ -41,7 +41,12 @@ import java.awt.Toolkit;
 import java.awt.event.MouseEvent;
 import java.awt.event.MouseListener;
 import java.awt.image.BufferStrategy;
+import java.io.IOException;
+import java.io.Writer;
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
 import java.util.Collection;
+import java.util.Date;
 import java.util.Iterator;
 import java.util.ListIterator;
 import java.util.concurrent.CopyOnWriteArrayList;
@@ -66,6 +71,12 @@ public class JXCWindowRenderer
      */
     @NotNull
     private final Object redrawSemaphore;
+
+    /**
+     * The {@link Writer} to write screen debug to or <code>null</code>.
+     */
+    @Nullable
+    private final Writer debugScreen;
 
     @NotNull
     private final GraphicsEnvironment graphicsEnvironment;
@@ -170,6 +181,12 @@ public class JXCWindowRenderer
      */
     @NotNull
     private RendererGuiState rendererGuiState = RendererGuiState.START;
+
+    /**
+     * A formatter for timestamps.
+     */
+    @NotNull
+    private final DateFormat simpleDateFormat = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss,SSS ");
 
     /**
      * The {@link GuiAutoCloseListener} used to track auto-closing dialogs.
@@ -288,12 +305,15 @@ public class JXCWindowRenderer
      * @param redrawSemaphore the semaphore used to synchronized map model
      * updates and map view redraws
      * @param crossfireServerConnection the server connection to monitor
+     * @param debugScreen the writer to write screen debug to or
+     * <code>null</code>
      */
-    public JXCWindowRenderer(@NotNull final JFrame frame, @NotNull final MouseListener mouseTracker, @NotNull final Object redrawSemaphore, @NotNull final CrossfireServerConnection crossfireServerConnection)
+    public JXCWindowRenderer(@NotNull final JFrame frame, @NotNull final MouseListener mouseTracker, @NotNull final Object redrawSemaphore, @NotNull final CrossfireServerConnection crossfireServerConnection, @Nullable final Writer debugScreen)
     {
         this.frame = frame;
         this.mouseTracker = mouseTracker;
         this.redrawSemaphore = redrawSemaphore;
+        this.debugScreen = debugScreen;
         crossfireServerConnection.addCrossfireUpdateMapListener(crossfireUpdateMapListener);
         graphicsEnvironment = GraphicsEnvironment.getLocalGraphicsEnvironment();
         graphicsDevice = graphicsEnvironment.getDefaultScreenDevice();
@@ -317,9 +337,14 @@ public class JXCWindowRenderer
      */
     public boolean setResolution(@NotNull final Resolution resolution, final boolean fullScreen)
     {
+        debugScreenWrite("setResolution: resolution="+resolution+", fullScreen="+fullScreen);
+
         final DisplayMode currentDisplayMode = graphicsDevice.getDisplayMode();
+        debugScreenWrite("setResolution: currentDisplayMode="+currentDisplayMode.getWidth()+"x"+currentDisplayMode.getHeight());
         if(isFullScreen == fullScreen && resolution.getWidth() == windowWidth && resolution.getHeight() == windowHeight)
         {
+            debugScreenWrite("setResolution: no change needed");
+            debugScreenWrite("setResolution: success");
             return true;
         }
 
@@ -327,27 +352,34 @@ public class JXCWindowRenderer
         // does not work reliably
         if(isFullScreen)
         {
+            debugScreenWrite("setResolution: resetting screen resolution to "+defaultDisplayMode.getWidth()+"x"+defaultDisplayMode.getHeight());
             graphicsDevice.setDisplayMode(defaultDisplayMode);
         }
+        debugScreenWrite("setResolution: leaving full-screen mode");
         graphicsDevice.setFullScreenWindow(null);
         isFullScreen = false;
 
+        debugScreenWrite("setResolution: disposing frame");
         frame.dispose();
         if(fullScreen)
         {
             final Dimension dimension = new Dimension(resolution.getWidth(), resolution.getHeight());
+            debugScreenWrite("setResolution: full-screen requested, dimension="+dimension);
             frame.getRootPane().setPreferredSize(dimension);
             frame.setResizable(false);
             frame.setUndecorated(true);
 
             // full-screen switch must happen before display mode change
+            debugScreenWrite("setResolution: entering full-screen mode");
             graphicsDevice.setFullScreenWindow(frame);
             isFullScreen = true;
 
             if(!graphicsDevice.isFullScreenSupported())
             {
+                debugScreenWrite("setResolution: full-screen mode is not supported");
                 graphicsDevice.setFullScreenWindow(null);
                 isFullScreen = false;
+                debugScreenWrite("setResolution: failure");
                 return false;
             }
 
@@ -355,66 +387,91 @@ public class JXCWindowRenderer
             {
                 if(!graphicsDevice.isDisplayChangeSupported())
                 {
+                    debugScreenWrite("setResolution: screen resolution change is not supported");
                     graphicsDevice.setFullScreenWindow(null);
                     isFullScreen = false;
+                    debugScreenWrite("setResolution: failure");
                     return false;
                 }
 
                 final DisplayMode newDisplayMode = new DisplayMode(resolution.getWidth(), resolution.getHeight(), DisplayMode.BIT_DEPTH_MULTI, DisplayMode.REFRESH_RATE_UNKNOWN);
                 try
                 {
+                    debugScreenWrite("setResolution: setting screen resolution to "+newDisplayMode.getWidth()+"x"+newDisplayMode.getHeight());
                     graphicsDevice.setDisplayMode(newDisplayMode);
                 }
                 catch (final IllegalArgumentException ex)
                 {
+                    debugScreenWrite("setResolution: setting screen resolution failed: "+ex.getMessage());
                     isFullScreen = false;
+                    debugScreenWrite("setResolution: resetting screen resolution to "+defaultDisplayMode.getWidth()+"x"+defaultDisplayMode.getHeight());
                     graphicsDevice.setDisplayMode(defaultDisplayMode);
+                    debugScreenWrite("setResolution: leaving full-screen mode");
                     graphicsDevice.setFullScreenWindow(null);
+                    debugScreenWrite("setResolution: failure");
                     return false;
                 }
+            }
+            else
+            {
+                debugScreenWrite("setResolution: requested resolution matches screen resolution");
             }
         }
         else
         {
+            debugScreenWrite("setResolution: windowed mode requested");
             frame.setUndecorated(false);
             frame.setResizable(false);
             frame.setVisible(true);
             final Insets frameInsets = frame.getInsets();
+            debugScreenWrite("setResolution: frame insets="+frameInsets);
 
-/*
             final Dimension maxDimension = getMaxWindowDimension(frameInsets);
+            debugScreenWrite("setResolution: maximal window dimension="+maxDimension);
             if(resolution.getWidth() > maxDimension.width || resolution.getHeight() > maxDimension.height)
             {
-
+/*
                 frame.dispose();
+                debugScreenWrite("setResolution: failure");
                 return false;
-            }
 */
+                debugScreenWrite("setResolution: window size exceeds maximum allowed size, ignoring");
+            }
 
             final Dimension dimension = new Dimension(resolution.getWidth(), resolution.getHeight());
+            debugScreenWrite("setResolution: setting window size to "+dimension);
             frame.getRootPane().setPreferredSize(dimension);
             if(!wasDisplayed)
             {
                 wasDisplayed = true;
                 final Point centerPoint = graphicsEnvironment.getCenterPoint();
-                frame.setLocation(centerPoint.x-dimension.width/2-frameInsets.left, centerPoint.y-dimension.height/2-frameInsets.top);
+                final Point point = new Point(centerPoint.x-dimension.width/2-frameInsets.left, centerPoint.y-dimension.height/2-frameInsets.top);
+                debugScreenWrite("setResolution: moving window to "+point);
+                frame.setLocation(point);
             }
         }
 
+        debugScreenWrite("setResolution: packing frame");
         frame.pack();
 
+        debugScreenWrite("setResolution: creating buffer strategy");
         frame.createBufferStrategy(2);
         bufferStrategy = frame.getBufferStrategy();
 
         final Insets insets = frame.getInsets();
+        debugScreenWrite("setResolution: offset="+offsetX+"x"+offsetY);
         offsetX = insets.left;
         offsetY = insets.top;
+        debugScreenWrite("setResolution: offset="+offsetX+"x"+offsetY);
 
+        debugScreenWrite("setResolution: requesting focus");
         frame.requestFocusInWindow();
 
         windowWidth = resolution.getWidth();
         windowHeight = resolution.getHeight();
+        debugScreenWrite("setResolution: gui size="+windowWidth+"x"+windowHeight);
 
+        debugScreenWrite("setResolution: success");
         return true;
     }
 
@@ -427,12 +484,15 @@ public class JXCWindowRenderer
     private Dimension getMaxWindowDimension(@NotNull final Insets frameInsets)
     {
         final Rectangle maximumWindowBounds = graphicsEnvironment.getMaximumWindowBounds();
+        debugScreenWrite("getMaxWindowDimension: maximum window bounds="+maximumWindowBounds);
 
         final GraphicsConfiguration graphicsConfiguration = graphicsDevice.getDefaultConfiguration();
         final Insets screenInsets = Toolkit.getDefaultToolkit().getScreenInsets(graphicsConfiguration);
+        debugScreenWrite("getMaxWindowDimension: screen insets="+screenInsets);
 
         final int maxWidth = maximumWindowBounds.width-screenInsets.left-screenInsets.right-frameInsets.left-frameInsets.right;
         final int maxHeight = maximumWindowBounds.height-screenInsets.top-screenInsets.bottom-frameInsets.top-frameInsets.bottom;
+        debugScreenWrite("getMaxWindowDimension: maximum window dimension="+maxWidth+"x"+maxHeight);
         return new Dimension(maxWidth, maxHeight);
     }
 
@@ -442,9 +502,11 @@ public class JXCWindowRenderer
         final GraphicsDevice gd = ge.getDefaultScreenDevice();
         if(oldDisplayMode != null)
         {
+            debugScreenWrite("setResolution: resetting screen resolution to "+oldDisplayMode.getWidth()+"x"+oldDisplayMode.getHeight());
             gd.setDisplayMode(oldDisplayMode);
             oldDisplayMode = null;
         }
+        debugScreenWrite("endRendering: leaving full-screen mode");
         gd.setFullScreenWindow(null);
     }
 
@@ -1083,5 +1145,31 @@ public class JXCWindowRenderer
         final int x = e.getX()-offsetX;
         final int y = e.getY()-offsetY;
         return gui.getElementFromPoint(x, y);
+    }
+
+    /**
+     * Writes a message to the screen debug.
+     * @param message the message to write
+     */
+    private void debugScreenWrite(@NotNull final CharSequence message)
+    {
+        if (debugScreen == null)
+        {
+            return;
+        }
+
+        try
+        {
+            debugScreen.append(simpleDateFormat.format(new Date()));
+            debugScreen.append(message);
+            debugScreen.append("\n");
+            debugScreen.flush();
+        }
+        catch (final IOException ex)
+        {
+            System.err.println("Cannot write screen debug: "+ex.getMessage());
+            System.exit(1);
+            throw new AssertionError();
+        }
     }
 }

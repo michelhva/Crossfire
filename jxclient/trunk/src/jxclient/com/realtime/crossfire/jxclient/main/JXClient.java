@@ -103,64 +103,75 @@ public class JXClient
                 final Writer debugKeyboardOutputStreamWriter = openDebugStream(options.getDebugKeyboardFilename());
                 try
                 {
-                    final OptionManager optionManager = new OptionManager(options.getPrefs());
-                    final Object terminateSync = new Object();
-                    final MetaserverModel metaserverModel = new MetaserverModel();
-                    final Object semaphoreRedraw = new Object();
-                    final CrossfireServerConnection server = new DefaultCrossfireServerConnection(semaphoreRedraw, debugProtocolOutputStreamWriter == null ? null : new DebugWriter(debugProtocolOutputStreamWriter));
-                    server.start();
+                    final Writer debugScreenOutputStreamWriter = openDebugStream(options.getDebugScreenFilename());
                     try
                     {
-                        final GuiStateManager guiStateManager = new GuiStateManager(server);
-                        final ExperienceTable experienceTable = new ExperienceTable(server);
-                        final SkillSet skillSet = new SkillSet(server, guiStateManager);
-                        final Stats stats = new Stats(server, experienceTable, skillSet, guiStateManager);
-                        final FaceCache faceCache = new FaceCache(server);
-                        final FacesQueue facesQueue = new FacesQueue(server, new FileCache(Filenames.getOriginalImageCacheDir()), new FileCache(Filenames.getScaledImageCacheDir()), new FileCache(Filenames.getMagicMapImageCacheDir()));
-                        final FacesManager facesManager = new FacesManager(faceCache, facesQueue);
-                        final ItemsManager itemsManager = new ItemsManager(server, facesManager, stats, skillSet, guiStateManager);
-                        final JXCWindow window = new JXCWindow(terminateSync, server, semaphoreRedraw, options.isDebugGui(), debugKeyboardOutputStreamWriter, options.getPrefs(), optionManager, metaserverModel, options.getResolution(), guiStateManager, experienceTable, skillSet, stats, facesManager, itemsManager);
-                        new Metaserver(Filenames.getMetaserverCacheFile(), metaserverModel, guiStateManager);
-                        final SoundManager soundManager = new SoundManager(guiStateManager);
+                        final OptionManager optionManager = new OptionManager(options.getPrefs());
+                        final Object terminateSync = new Object();
+                        final MetaserverModel metaserverModel = new MetaserverModel();
+                        final Object semaphoreRedraw = new Object();
+                        final CrossfireServerConnection server = new DefaultCrossfireServerConnection(semaphoreRedraw, debugProtocolOutputStreamWriter == null ? null : new DebugWriter(debugProtocolOutputStreamWriter));
+                        server.start();
                         try
                         {
-                            optionManager.addOption("sound_enabled", "Whether sound is enabled.", new SoundCheckBoxOption(soundManager));
-                        }
-                        catch (final OptionException ex)
-                        {
-                            throw new AssertionError();
-                        }
+                            final GuiStateManager guiStateManager = new GuiStateManager(server);
+                            final ExperienceTable experienceTable = new ExperienceTable(server);
+                            final SkillSet skillSet = new SkillSet(server, guiStateManager);
+                            final Stats stats = new Stats(server, experienceTable, skillSet, guiStateManager);
+                            final FaceCache faceCache = new FaceCache(server);
+                            final FacesQueue facesQueue = new FacesQueue(server, new FileCache(Filenames.getOriginalImageCacheDir()), new FileCache(Filenames.getScaledImageCacheDir()), new FileCache(Filenames.getMagicMapImageCacheDir()));
+                            final FacesManager facesManager = new FacesManager(faceCache, facesQueue);
+                            final ItemsManager itemsManager = new ItemsManager(server, facesManager, stats, skillSet, guiStateManager);
+                            final JXCWindow window = new JXCWindow(terminateSync, server, semaphoreRedraw, options.isDebugGui(), debugKeyboardOutputStreamWriter, debugScreenOutputStreamWriter, options.getPrefs(), optionManager, metaserverModel, options.getResolution(), guiStateManager, experienceTable, skillSet, stats, facesManager, itemsManager);
+                            new Metaserver(Filenames.getMetaserverCacheFile(), metaserverModel, guiStateManager);
+                            final SoundManager soundManager = new SoundManager(guiStateManager);
+                            try
+                            {
+                                optionManager.addOption("sound_enabled", "Whether sound is enabled.", new SoundCheckBoxOption(soundManager));
+                            }
+                            catch (final OptionException ex)
+                            {
+                                throw new AssertionError();
+                            }
 
-                        synchronized (terminateSync)
-                        {
+                            synchronized (terminateSync)
+                            {
+                                SwingUtilities.invokeAndWait(new Runnable()
+                                {
+                                    /** {@inheritDoc} */
+                                    @Override
+                                    public void run()
+                                    {
+                                        new MusicWatcher(server, soundManager);
+                                        new SoundWatcher(server, soundManager);
+                                        new StatsWatcher(stats, window.getWindowRenderer(), itemsManager, soundManager);
+                                        window.init(options.getSkin(), options.isFullScreen(), options.getServer());
+                                    }
+                                });
+                                terminateSync.wait();
+                            }
                             SwingUtilities.invokeAndWait(new Runnable()
                             {
                                 /** {@inheritDoc} */
                                 @Override
                                 public void run()
                                 {
-                                    new MusicWatcher(server, soundManager);
-                                    new SoundWatcher(server, soundManager);
-                                    new StatsWatcher(stats, window.getWindowRenderer(), itemsManager, soundManager);
-                                    window.init(options.getSkin(), options.isFullScreen(), options.getServer());
+                                    window.term();
+                                    soundManager.shutdown();
                                 }
                             });
-                            terminateSync.wait();
                         }
-                        SwingUtilities.invokeAndWait(new Runnable()
+                        finally
                         {
-                            /** {@inheritDoc} */
-                            @Override
-                            public void run()
-                            {
-                                window.term();
-                                soundManager.shutdown();
-                            }
-                        });
+                            server.stop();
+                        }
                     }
                     finally
                     {
-                        server.stop();
+                        if (debugScreenOutputStreamWriter != null)
+                        {
+                            debugScreenOutputStreamWriter.close();
+                        }
                     }
                 }
                 finally

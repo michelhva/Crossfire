@@ -577,6 +577,8 @@ public class JXCWindow extends JFrame
      * @param debugGui whether GUI elements should be highlighted
      * @param debugKeyboard if non-<code>null</code>, write all keyboard debug
      * to this writer
+     * @param debugScreen if non-<code>null</code>, write all screen debug to
+     * this writer
      * @param settings the settings instance to use
      * @param optionManager the option manager instance to use
      * @param metaserverModel the metaserver model to use
@@ -588,7 +590,7 @@ public class JXCWindow extends JFrame
      * @param facesManager the faces manager to use
      * @param itemsManager the items manager to use
      */
-    public JXCWindow(@NotNull final Object terminateSync, @NotNull final CrossfireServerConnection server, @NotNull final Object semaphoreRedraw, final boolean debugGui, @Nullable final Writer debugKeyboard, @NotNull final Settings settings, @NotNull final OptionManager optionManager, @NotNull final MetaserverModel metaserverModel, @NotNull final Resolution resolution, @NotNull final GuiStateManager guiStateManager, @NotNull final ExperienceTable experienceTable, @NotNull final SkillSet skillSet, @NotNull final Stats stats, @NotNull final FacesManager facesManager, @NotNull final ItemsManager itemsManager)
+    public JXCWindow(@NotNull final Object terminateSync, @NotNull final CrossfireServerConnection server, @NotNull final Object semaphoreRedraw, final boolean debugGui, @Nullable final Writer debugKeyboard, @Nullable final Writer debugScreen, @NotNull final Settings settings, @NotNull final OptionManager optionManager, @NotNull final MetaserverModel metaserverModel, @NotNull final Resolution resolution, @NotNull final GuiStateManager guiStateManager, @NotNull final ExperienceTable experienceTable, @NotNull final SkillSet skillSet, @NotNull final Stats stats, @NotNull final FacesManager facesManager, @NotNull final ItemsManager itemsManager)
     {
         super("");
         this.server = server;
@@ -610,7 +612,7 @@ public class JXCWindow extends JFrame
         new ActiveSkillWatcher(stats, server);
         setDefaultCloseOperation(DO_NOTHING_ON_CLOSE);
         mouseTracker = new MouseTracker(debugGui);
-        windowRenderer = new JXCWindowRenderer(this, mouseTracker, semaphoreRedraw, server);
+        windowRenderer = new JXCWindowRenderer(this, mouseTracker, semaphoreRedraw, server, debugScreen);
         mouseTracker.init(windowRenderer);
         final ScriptManager scriptManager = new ScriptManager(commandQueue, server, stats, itemsManager, spellsManager, mapUpdater, skillSet);
         guiManager = new GuiManager(guiStateManager, semaphoreDrawing, terminateSync, new TooltipManager(windowRenderer), settings, server, macros, windowRenderer, scriptManager, commandQueue, optionManager, debugGui ? mouseTracker : null);
