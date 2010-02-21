@@ -668,7 +668,12 @@ public class JXCWindow extends JFrame
         keyHandler.setKeyBindings(skin.getDefaultKeyBindings());
         if(!windowRenderer.setResolution(skin.getResolution(), fullScreen))
         {
-            windowRenderer.setResolution(skin.getResolution(), false);
+            if(!windowRenderer.setResolution(skin.getResolution(), false))
+            {
+                System.err.println("cannot create window with resolution "+skin.getResolution());
+                System.exit(1);
+                throw new AssertionError();
+            }
         }
         DialogStateParser.load(skin, windowRenderer);
         guiManager.initRendering();

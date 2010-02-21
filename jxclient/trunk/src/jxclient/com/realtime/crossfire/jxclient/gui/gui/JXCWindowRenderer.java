@@ -31,10 +31,13 @@ import java.awt.Color;
 import java.awt.Dimension;
 import java.awt.DisplayMode;
 import java.awt.Graphics;
+import java.awt.GraphicsConfiguration;
 import java.awt.GraphicsDevice;
 import java.awt.GraphicsEnvironment;
 import java.awt.Insets;
 import java.awt.Point;
+import java.awt.Rectangle;
+import java.awt.Toolkit;
 import java.awt.event.MouseEvent;
 import java.awt.event.MouseListener;
 import java.awt.image.BufferStrategy;
@@ -63,6 +66,9 @@ public class JXCWindowRenderer
      */
     @NotNull
     private final Object redrawSemaphore;
+
+    @NotNull
+    private final GraphicsEnvironment graphicsEnvironment;
 
     @NotNull
     private final GraphicsDevice graphicsDevice;
@@ -289,8 +295,8 @@ public class JXCWindowRenderer
         this.mouseTracker = mouseTracker;
         this.redrawSemaphore = redrawSemaphore;
         crossfireServerConnection.addCrossfireUpdateMapListener(crossfireUpdateMapListener);
-        final GraphicsEnvironment ge = GraphicsEnvironment.getLocalGraphicsEnvironment();
-        graphicsDevice = ge.getDefaultScreenDevice();
+        graphicsEnvironment = GraphicsEnvironment.getLocalGraphicsEnvironment();
+        graphicsDevice = graphicsEnvironment.getDefaultScreenDevice();
         defaultDisplayMode = graphicsDevice.getDisplayMode();
     }
 
@@ -327,12 +333,11 @@ public class JXCWindowRenderer
         isFullScreen = false;
 
         frame.dispose();
-        final Dimension dimension = new Dimension(resolution.getWidth(), resolution.getHeight());
-        frame.getRootPane().setPreferredSize(dimension);
-        frame.setResizable(false);
-
         if(fullScreen)
         {
+            final Dimension dimension = new Dimension(resolution.getWidth(), resolution.getHeight());
+            frame.getRootPane().setPreferredSize(dimension);
+            frame.setResizable(false);
             frame.setUndecorated(true);
 
             // full-screen switch must happen before display mode change
@@ -372,15 +377,31 @@ public class JXCWindowRenderer
         else
         {
             frame.setUndecorated(false);
+            frame.setResizable(false);
             frame.setVisible(true);
+            final Insets frameInsets = frame.getInsets();
+
+/*
+            final Dimension maxDimension = getMaxWindowDimension(frameInsets);
+            if(resolution.getWidth() > maxDimension.width || resolution.getHeight() > maxDimension.height)
+            {
+
+                frame.dispose();
+                return false;
+            }
+*/
+
+            final Dimension dimension = new Dimension(resolution.getWidth(), resolution.getHeight());
+            frame.getRootPane().setPreferredSize(dimension);
+            if(!wasDisplayed)
+            {
+                wasDisplayed = true;
+                final Point centerPoint = graphicsEnvironment.getCenterPoint();
+                frame.setLocation(centerPoint.x-dimension.width/2-frameInsets.left, centerPoint.y-dimension.height/2-frameInsets.top);
+            }
         }
 
         frame.pack();
-        if(!wasDisplayed)
-        {
-            wasDisplayed = true;
-            frame.setLocationRelativeTo(null);
-        }
 
         frame.createBufferStrategy(2);
         bufferStrategy = frame.getBufferStrategy();
@@ -395,6 +416,24 @@ public class JXCWindowRenderer
         windowHeight = resolution.getHeight();
 
         return true;
+    }
+
+    /**
+     * Returns the maximum dimension of a frame to fit on the screen.
+     * @param frameInsets the frame's insets
+     * @return the maximum dimension
+     */
+    @NotNull
+    private Dimension getMaxWindowDimension(@NotNull final Insets frameInsets)
+    {
+        final Rectangle maximumWindowBounds = graphicsEnvironment.getMaximumWindowBounds();
+
+        final GraphicsConfiguration graphicsConfiguration = graphicsDevice.getDefaultConfiguration();
+        final Insets screenInsets = Toolkit.getDefaultToolkit().getScreenInsets(graphicsConfiguration);
+
+        final int maxWidth = maximumWindowBounds.width-screenInsets.left-screenInsets.right-frameInsets.left-frameInsets.right;
+        final int maxHeight = maximumWindowBounds.height-screenInsets.top-screenInsets.bottom-frameInsets.top-frameInsets.bottom;
+        return new Dimension(maxWidth, maxHeight);
     }
 
     public void endRendering()
