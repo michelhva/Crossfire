@@ -43,12 +43,16 @@ import com.realtime.crossfire.jxclient.sound.StatsWatcher;
 import com.realtime.crossfire.jxclient.stats.ExperienceTable;
 import com.realtime.crossfire.jxclient.stats.Stats;
 import com.realtime.crossfire.jxclient.util.DebugWriter;
+import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.OutputStreamWriter;
+import java.io.Writer;
+import java.io.UnsupportedEncodingException;
 import java.lang.reflect.InvocationTargetException;
 import javax.swing.SwingUtilities;
 import org.jetbrains.annotations.NotNull;
+import org.jetbrains.annotations.Nullable;
 
 /**
  * This is the entry point for JXClient. Note that this class doesn't do much by
@@ -93,107 +97,85 @@ public class JXClient
     {
         try
         {
-            final FileOutputStream debugProtocolFileOutputStream = options.getDebugProtocolFilename() == null ? null : new FileOutputStream(options.getDebugProtocolFilename());
+            final Writer debugProtocolOutputStreamWriter = openDebugStream(options.getDebugProtocolFilename());
             try
             {
-                final OutputStreamWriter debugProtocolOutputStreamWriter = debugProtocolFileOutputStream == null ? null : new OutputStreamWriter(debugProtocolFileOutputStream, "UTF-8");
+                final Writer debugKeyboardOutputStreamWriter = openDebugStream(options.getDebugKeyboardFilename());
                 try
                 {
-                    final FileOutputStream debugKeyboardFileOutputStream = options.getDebugKeyboardFilename() == null ? null : new FileOutputStream(options.getDebugKeyboardFilename());
+                    final OptionManager optionManager = new OptionManager(options.getPrefs());
+                    final Object terminateSync = new Object();
+                    final MetaserverModel metaserverModel = new MetaserverModel();
+                    final Object semaphoreRedraw = new Object();
+                    final CrossfireServerConnection server = new DefaultCrossfireServerConnection(semaphoreRedraw, debugProtocolOutputStreamWriter == null ? null : new DebugWriter(debugProtocolOutputStreamWriter));
+                    server.start();
                     try
                     {
-                        final OutputStreamWriter debugKeyboardOutputStreamWriter = debugKeyboardFileOutputStream == null ? null : new OutputStreamWriter(debugKeyboardFileOutputStream, "UTF-8");
+                        final GuiStateManager guiStateManager = new GuiStateManager(server);
+                        final ExperienceTable experienceTable = new ExperienceTable(server);
+                        final SkillSet skillSet = new SkillSet(server, guiStateManager);
+                        final Stats stats = new Stats(server, experienceTable, skillSet, guiStateManager);
+                        final FaceCache faceCache = new FaceCache(server);
+                        final FacesQueue facesQueue = new FacesQueue(server, new FileCache(Filenames.getOriginalImageCacheDir()), new FileCache(Filenames.getScaledImageCacheDir()), new FileCache(Filenames.getMagicMapImageCacheDir()));
+                        final FacesManager facesManager = new FacesManager(faceCache, facesQueue);
+                        final ItemsManager itemsManager = new ItemsManager(server, facesManager, stats, skillSet, guiStateManager);
+                        final JXCWindow window = new JXCWindow(terminateSync, server, semaphoreRedraw, options.isDebugGui(), debugKeyboardOutputStreamWriter, options.getPrefs(), optionManager, metaserverModel, options.getResolution(), guiStateManager, experienceTable, skillSet, stats, facesManager, itemsManager);
+                        new Metaserver(Filenames.getMetaserverCacheFile(), metaserverModel, guiStateManager);
+                        final SoundManager soundManager = new SoundManager(guiStateManager);
                         try
                         {
-                            final OptionManager optionManager = new OptionManager(options.getPrefs());
-                            final Object terminateSync = new Object();
-                            final MetaserverModel metaserverModel = new MetaserverModel();
-                            final Object semaphoreRedraw = new Object();
-                            final CrossfireServerConnection server = new DefaultCrossfireServerConnection(semaphoreRedraw, debugProtocolOutputStreamWriter == null ? null : new DebugWriter(debugProtocolOutputStreamWriter));
-                            server.start();
-                            try
-                            {
-                                final GuiStateManager guiStateManager = new GuiStateManager(server);
-                                final ExperienceTable experienceTable = new ExperienceTable(server);
-                                final SkillSet skillSet = new SkillSet(server, guiStateManager);
-                                final Stats stats = new Stats(server, experienceTable, skillSet, guiStateManager);
-                                final FaceCache faceCache = new FaceCache(server);
-                                final FacesQueue facesQueue = new FacesQueue(server, new FileCache(Filenames.getOriginalImageCacheDir()), new FileCache(Filenames.getScaledImageCacheDir()), new FileCache(Filenames.getMagicMapImageCacheDir()));
-                                final FacesManager facesManager = new FacesManager(faceCache, facesQueue);
-                                final ItemsManager itemsManager = new ItemsManager(server, facesManager, stats, skillSet, guiStateManager);
-                                final JXCWindow window = new JXCWindow(terminateSync, server, semaphoreRedraw, options.isDebugGui(), debugKeyboardOutputStreamWriter, options.getPrefs(), optionManager, metaserverModel, options.getResolution(), guiStateManager, experienceTable, skillSet, stats, facesManager, itemsManager);
-                                new Metaserver(Filenames.getMetaserverCacheFile(), metaserverModel, guiStateManager);
-                                final SoundManager soundManager = new SoundManager(guiStateManager);
-                                try
-                                {
-                                    optionManager.addOption("sound_enabled", "Whether sound is enabled.", new SoundCheckBoxOption(soundManager));
-                                }
-                                catch (final OptionException ex)
-                                {
-                                    throw new AssertionError();
-                                }
-
-                                synchronized (terminateSync)
-                                {
-                                    SwingUtilities.invokeAndWait(new Runnable()
-                                    {
-                                        /** {@inheritDoc} */
-                                        @Override
-                                        public void run()
-                                        {
-                                            new MusicWatcher(server, soundManager);
-                                            new SoundWatcher(server, soundManager);
-                                            new StatsWatcher(stats, window.getWindowRenderer(), itemsManager, soundManager);
-                                            window.init(options.getSkin(), options.isFullScreen(), options.getServer());
-                                        }
-                                    });
-                                    terminateSync.wait();
-                                }
-                                SwingUtilities.invokeAndWait(new Runnable()
-                                {
-                                    /** {@inheritDoc} */
-                                    @Override
-                                    public void run()
-                                    {
-                                        window.term();
-                                        soundManager.shutdown();
-                                    }
-                                });
-                            }
-                            finally
-                            {
-                                server.stop();
-                            }
+                            optionManager.addOption("sound_enabled", "Whether sound is enabled.", new SoundCheckBoxOption(soundManager));
                         }
-                        finally
+                        catch (final OptionException ex)
                         {
-                            if (debugKeyboardOutputStreamWriter != null)
-                            {
-                                debugKeyboardOutputStreamWriter.close();
-                            }
+                            throw new AssertionError();
                         }
+
+                        synchronized (terminateSync)
+                        {
+                            SwingUtilities.invokeAndWait(new Runnable()
+                            {
+                                /** {@inheritDoc} */
+                                @Override
+                                public void run()
+                                {
+                                    new MusicWatcher(server, soundManager);
+                                    new SoundWatcher(server, soundManager);
+                                    new StatsWatcher(stats, window.getWindowRenderer(), itemsManager, soundManager);
+                                    window.init(options.getSkin(), options.isFullScreen(), options.getServer());
+                                }
+                            });
+                            terminateSync.wait();
+                        }
+                        SwingUtilities.invokeAndWait(new Runnable()
+                        {
+                            /** {@inheritDoc} */
+                            @Override
+                            public void run()
+                            {
+                                window.term();
+                                soundManager.shutdown();
+                            }
+                        });
                     }
                     finally
                     {
-                        if (debugKeyboardFileOutputStream != null)
-                        {
-                            debugKeyboardFileOutputStream.close();
-                        }
+                        server.stop();
                     }
                 }
                 finally
                 {
-                    if (debugProtocolOutputStreamWriter != null)
+                    if (debugKeyboardOutputStreamWriter != null)
                     {
-                        debugProtocolOutputStreamWriter.close();
+                        debugKeyboardOutputStreamWriter.close();
                     }
                 }
             }
             finally
             {
-                if (debugProtocolFileOutputStream != null)
+                if (debugProtocolOutputStreamWriter != null)
                 {
-                    debugProtocolFileOutputStream.close();
+                    debugProtocolOutputStreamWriter.close();
                 }
             }
         }
@@ -217,5 +199,43 @@ public class JXClient
         }
 
         System.exit(0);
+    }
+
+    /**
+     * Opens an debug output stream.
+     * @param filename the filename to write to or <code>null</code>
+     * @return the output stream or <code>null</code>
+     */
+    @Nullable
+    public static Writer openDebugStream(@Nullable final String filename)
+    {
+        if(filename == null)
+        {
+            return null;
+        }
+
+        final FileOutputStream outputStream;
+        try
+        {
+            outputStream = new FileOutputStream(filename);
+        }
+        catch (final FileNotFoundException ex)
+        {
+            System.err.println(filename+": cannot create output file: "+ex.getMessage());
+            return null;
+        }
+
+        final Writer writer;
+        try
+        {
+            writer = new OutputStreamWriter(outputStream, "UTF-8");
+        }
+        catch (final UnsupportedEncodingException ex)
+        {
+            System.err.println("internal error: unsupported encoding 'UTF-8': "+ex.getMessage());
+            return null;
+        }
+
+        return writer;
     }
 }
