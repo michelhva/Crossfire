@@ -1,3 +1,8 @@
+2010-02-21  Andreas Kirschbaum
+
+	* In multi-screen setups do not center the window across multiple
+	screens.
+
 2010-02-12  Andreas Kirschbaum
 
 	* Fix possible crash (ConcurrentModificationException) related to
