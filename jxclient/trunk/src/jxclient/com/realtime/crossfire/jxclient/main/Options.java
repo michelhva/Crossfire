@@ -76,6 +76,13 @@ public class Options
     private String debugKeyboardFilename = null;
 
     /**
+     * The filename for screen debug logs or <code>null</code> to not log
+     * screen logs.
+     */
+    @Nullable
+    private String debugScreenFilename = null;
+
+    /**
      * The resolution to use or <code>null</code> for default.
      */
     @Nullable
@@ -155,6 +162,10 @@ public class Options
             {
                 debugKeyboardFilename = args[++i];
             }
+            else if (args[i].equals("--debug-screen") && i+1 < args.length)
+            {
+                debugScreenFilename = args[++i];
+            }
             else
             {
                 System.out.println("");
@@ -172,6 +183,8 @@ public class Options
                 System.out.println("                : Log keyboard input.");
                 System.out.println(" --debug-protocol <log-file>");
                 System.out.println("                : Log messages exchanged with the server.");
+                System.out.println(" --debug-screen <log-file>");
+                System.out.println("                : Log messages related to screen resolution.");
                 System.out.println("");
                 System.out.println("Available skins: default, prelude, ragnorok.");
                 System.exit(1);
@@ -223,6 +236,16 @@ public class Options
     public String getDebugKeyboardFilename()
     {
         return debugKeyboardFilename;
+    }
+
+    /**
+     * Returns the filename for screen debug logs.
+     * @return the filename or <code>null</code> to not log screen logs
+     */
+    @Nullable
+    public String getDebugScreenFilename()
+    {
+        return debugScreenFilename;
     }
 
     /**
