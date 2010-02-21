@@ -370,10 +370,6 @@ public class JXCWindowRenderer
             frame.setUndecorated(true);
 
             // full-screen switch must happen before display mode change
-            debugScreenWrite("setResolution: entering full-screen mode");
-            graphicsDevice.setFullScreenWindow(frame);
-            isFullScreen = true;
-
             if(!graphicsDevice.isFullScreenSupported())
             {
                 debugScreenWrite("setResolution: full-screen mode is not supported");
@@ -382,6 +378,10 @@ public class JXCWindowRenderer
                 debugScreenWrite("setResolution: failure");
                 return false;
             }
+
+            debugScreenWrite("setResolution: entering full-screen mode");
+            graphicsDevice.setFullScreenWindow(frame);
+            isFullScreen = true;
 
             if(!resolution.equalsDisplayMode(currentDisplayMode))
             {
