@@ -14,7 +14,7 @@ font font_item           regular   8
 font font_metaurl        regular  16
 
 def checkbox checked unchecked font_button BLACK
-def dialog dialog font_title #801010 #e0e0e0 0.9
+def dialog dialog font_title #d0d0d0 #401010 0.9
 def textbutton button_up button_down font_button BLACK
 def item #FF0000/0.5 #FF8000/0.5 #0000FF/0.5 #0080FF/0.5 marker_applied #F7FBA6/0.6 marker_locked marker_unpaid font_item BLACK
 
