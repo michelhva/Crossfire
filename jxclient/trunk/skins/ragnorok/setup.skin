@@ -1,7 +1,7 @@
 
 dialog border                WIDTH/2-262 HEIGHT/2-134 200 168 false Setup
 dialog_hide START META LOGIN NEWCHAR
-button button_close          180   4  16 16 close_up close_down false command_setup_close
+button button_close          178   6  16 16 close_up close_down false command_setup_close
 
 ## Video group
 #label_text label_video        10  30 180 16 font_title BLACK Video:

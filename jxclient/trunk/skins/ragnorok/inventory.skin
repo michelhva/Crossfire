@@ -1,7 +1,7 @@
 
 dialog border 220 340 504 186 true Inventory
 dialog_hide START META LOGIN NEWCHAR
-button button_close  484    4   16 16 close_up close_down false command_inventory_close
+button button_close  482    6   16 16 close_up close_down false command_inventory_close
 
 label_text inv_item 160 30+136 504-160-4 16 font_label BLACK
 inventory_list inv 4 30+4   480 128 32 inv_item
