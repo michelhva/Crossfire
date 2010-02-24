@@ -1,6 +1,6 @@
 
 dialog border WIDTH/2-448 HEIGHT/2-320 896+8 630+8 false Help
-button button_close 4+896-16 4 16 16 close_up close_down false command_help_close
+button button_close 4+896-18 6 16 16 close_up close_down false command_help_close
 
 label_multi help_text 4 30 896 604 font_label DARK_GRAY <<EOF
 Key bindings
