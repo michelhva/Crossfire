@@ -155,35 +155,37 @@ public class TooltipManager
      */
     private void addTooltip()
     {
-        assert activeGuiElement != null;
+        final GUIElement tmpActiveGuiElement = activeGuiElement;
+        assert tmpActiveGuiElement != null;
         assert Thread.holdsLock(activeGuiElementSync);
 
-        if (tooltip == null)
+        final AbstractLabel tmpTooltip = tooltip;
+        if (tmpTooltip == null)
         {
             return;
         }
 
-        final String tooltipText = activeGuiElement.getTooltipText();
+        final String tooltipText = tmpActiveGuiElement.getTooltipText();
         if (tooltipText == null)
         {
-            tooltip.setElementVisible(false);
+            tmpTooltip.setElementVisible(false);
             return;
         }
 
-        tooltip.setElementVisible(true);
-        tooltip.setText(tooltipText);
+        tmpTooltip.setElementVisible(true);
+        tmpTooltip.setText(tooltipText);
 
-        final int tx = Math.max(0, Math.min(activeGuiElement.getElementX()+activeGuiElement.getWidth()/2-tooltip.getWidth()/2, windowRenderer.getWindowWidth()-tooltip.getWidth()));
+        final int tx = Math.max(0, Math.min(tmpActiveGuiElement.getElementX()+tmpActiveGuiElement.getWidth()/2-tmpTooltip.getWidth()/2, windowRenderer.getWindowWidth()-tmpTooltip.getWidth()));
         final int ty;
-        if (activeGuiElement.getElementY()+activeGuiElement.getHeight()+TOOLTIP_DISTANCE+tooltip.getHeight() <= windowRenderer.getWindowHeight())
+        if (tmpActiveGuiElement.getElementY()+tmpActiveGuiElement.getHeight()+TOOLTIP_DISTANCE+tmpTooltip.getHeight() <= windowRenderer.getWindowHeight())
         {
-            ty = activeGuiElement.getElementY()+activeGuiElement.getHeight()+TOOLTIP_DISTANCE;
+            ty = tmpActiveGuiElement.getElementY()+tmpActiveGuiElement.getHeight()+TOOLTIP_DISTANCE;
         }
         else
         {
-            ty = activeGuiElement.getElementY()-tooltip.getHeight()-TOOLTIP_DISTANCE;
+            ty = tmpActiveGuiElement.getElementY()-tmpTooltip.getHeight()-TOOLTIP_DISTANCE;
         }
-        tooltip.setElementLocation(tx, ty);
+        tmpTooltip.setElementLocation(tx, ty);
     }
 
     /**
