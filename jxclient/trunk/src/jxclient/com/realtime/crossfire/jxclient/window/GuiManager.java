@@ -206,6 +206,11 @@ public class GuiManager
         @Override
         public void commandDrawextinfoReceived(final int color, final int type, final int subtype, @NotNull String message)
         {
+            if (skin == null)
+            {
+                throw new IllegalStateException();
+            }
+
             @Nullable final Gui dialog;
             switch (type)
             {
@@ -315,7 +320,16 @@ public class GuiManager
         @Override
         public void connecting(@NotNull final String serverInfo)
         {
-            server.setMapSize(skin.getMapWidth(), skin.getMapHeight());
+            if (skin == null)
+            {
+                throw new IllegalStateException();
+            }
+
+            final int mapWidth = skin.getMapWidth();
+            assert skin != null;
+            final int mapHeight = skin.getMapHeight();
+            server.setMapSize(mapWidth, mapHeight);
+            assert skin != null;
             server.setNumLookObjects(skin.getNumLookObjects());
             server.addCrossfireDrawextinfoListener(crossfireDrawextinfoListener);
             windowRenderer.setGuiState(RendererGuiState.LOGIN);
@@ -395,6 +409,11 @@ public class GuiManager
         @Override
         public CommandList getCommandList(@NotNull final String args) throws NoSuchCommandException
         {
+            if (skin == null)
+            {
+                throw new IllegalStateException();
+            }
+
             try
             {
                 return skin.getCommandList(args);
@@ -499,6 +518,7 @@ public class GuiManager
         {
             closeDialog(dialogDisconnect);
         }
+        assert dialogQuit != null;
         windowRenderer.openDialog(dialogQuit, false);
         return true;
     }
@@ -513,6 +533,7 @@ public class GuiManager
     {
         if (keybindingsManager.escPressed())
         {
+            assert keybindDialog != null;
             closeDialog(keybindDialog);
         }
         else if (windowRenderer.deactivateCommandInput())
@@ -534,6 +555,7 @@ public class GuiManager
             }
             else
             {
+                assert dialogDisconnect != null;
                 closeDialog(dialogDisconnect);
             }
         }
@@ -552,6 +574,7 @@ public class GuiManager
             }
             else
             {
+                assert dialogQuit != null;
                 closeDialog(dialogQuit);
             }
         }
@@ -565,7 +588,13 @@ public class GuiManager
      */
     public void openQueryDialog(@NotNull final String prompt, final int queryType)
     {
+        if (queryDialog == null)
+        {
+            throw new IllegalStateException();
+        }
+
         windowRenderer.openDialog(queryDialog, false);
+        assert queryDialog != null;
         queryDialog.setHideInput((queryType&CrossfireQueryListener.HIDEINPUT) != 0);
         currentQueryDialogIsNamePrompt = prompt.startsWith("What is your name?");
         if (currentQueryDialogIsNamePrompt)
@@ -573,6 +602,7 @@ public class GuiManager
             final String playerName = settings.getString("player_"+connection.getHostname(), "");
             if (playerName.length() > 0)
             {
+                assert queryDialog != null;
                 final GUIText textArea = queryDialog.getFirstElement(GUIText.class);
                 if (textArea != null)
                 {
@@ -596,6 +626,7 @@ public class GuiManager
                 openDialogByName("messages");
                 openDialogByName("status");
             }
+            assert queryDialog != null;
             openDialog(queryDialog, false); // raise dialog
         }
     }
@@ -635,6 +666,11 @@ public class GuiManager
      */
     public void closeQueryDialog()
     {
+        if (queryDialog == null)
+        {
+            throw new IllegalStateException();
+        }
+
         closeDialog(queryDialog);
     }
 
@@ -650,6 +686,11 @@ public class GuiManager
      */
     private boolean openDialogByName(@NotNull final String name)
     {
+        if (skin == null)
+        {
+            throw new IllegalStateException();
+        }
+
         final Gui dialog;
         try
         {
@@ -670,6 +711,11 @@ public class GuiManager
      */
     private void closeDialogByName(@NotNull final String name)
     {
+        if (skin == null)
+        {
+            throw new IllegalStateException();
+        }
+
         final Gui dialog;
         try
         {
@@ -701,6 +747,11 @@ public class GuiManager
      */
     public void closeTransientDialogs()
     {
+        if (queryDialog == null || skin == null)
+        {
+            throw new IllegalStateException();
+        }
+
         if (dialogDisconnect != null)
         {
             closeDialog(dialogDisconnect);
@@ -713,7 +764,9 @@ public class GuiManager
         {
             closeDialog(dialogConnect);
         }
+        assert queryDialog != null;
         closeDialog(queryDialog);
+        assert skin != null;
         closeDialog(skin.getDialogBook(1));
     }
 
@@ -745,6 +798,11 @@ public class GuiManager
      */
     public void openKeybindDialog()
     {
+        if (keybindDialog == null)
+        {
+            throw new IllegalStateException();
+        }
+
         windowRenderer.openDialog(keybindDialog, false);
     }
 
@@ -753,6 +811,11 @@ public class GuiManager
      */
     public void closeKeybindDialog()
     {
+        if (keybindDialog == null)
+        {
+            throw new IllegalStateException();
+        }
+
         closeDialog(keybindDialog);
     }
 
@@ -827,6 +890,7 @@ public class GuiManager
         }
 
         // check invisible dialogs
+        assert skin != null;
         for (final Gui dialog : skin)
         {
             final GUIText textArea3 = dialog.activateCommandInput();
@@ -896,6 +960,7 @@ public class GuiManager
     private void showGUIStart()
     {
         windowRenderer.clearGUI(guiFactory.newGui());
+        assert skin != null;
         windowRenderer.setCurrentGui(skin.getStartInterface());
         tooltipManager.reset();
     }
@@ -906,6 +971,7 @@ public class GuiManager
     private void showGUIMeta()
     {
         windowRenderer.clearGUI(guiFactory.newGui());
+        assert skin != null;
         final Gui newGui = skin.getMetaInterface();
         windowRenderer.setCurrentGui(newGui);
         newGui.activateDefaultElement();
@@ -918,6 +984,7 @@ public class GuiManager
     private void showGUIMain()
     {
         windowRenderer.clearGUI(guiFactory.newGui());
+        assert skin != null;
         final Gui newGui = skin.getMainInterface();
         windowRenderer.setCurrentGui(newGui);
         tooltipManager.reset();
@@ -926,7 +993,10 @@ public class GuiManager
     public void term()
     {
         windowRenderer.endRendering();
-        DialogStateParser.save(skin, windowRenderer);
+        if (skin != null)
+        {
+            DialogStateParser.save(skin, windowRenderer);
+        }
         keybindingsManager.saveKeybindings();
     }
 

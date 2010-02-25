@@ -249,6 +249,7 @@ public class JXCConnection
         if (hostname != null && character != null)
         {
             keybindingsManager.loadPerCharacterBindings(hostname, character);
+            assert hostname != null;
             shortcutsManager.loadShortcuts(hostname, character);
             characterPickup.setPickupMode(settings.getLong("pickup_"+hostname+"_"+character, Pickup.PU_NOTHING));
             server.addCrossfirePickupListener(crossfirePickupListener);
@@ -322,6 +323,7 @@ public class JXCConnection
      */
     private void connect()
     {
+        assert hostname != null;
         server.connect(hostname, port);
     }
 }
