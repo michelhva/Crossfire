@@ -588,34 +588,35 @@ public class ItemsManager
     {
         synchronized (sync)
         {
-            if (this.player == player)
+            final CfPlayer oldPlayer = this.player;
+            if (oldPlayer == player)
             {
-                if (this.player != null)
+                if (oldPlayer != null)
                 {
                     for (final PlayerListener listener : playerListeners.getListeners(PlayerListener.class))
                     {
-                        listener.playerReceived(this.player);
+                        listener.playerReceived(oldPlayer);
                     }
                 }
                 return;
             }
 
-            if (this.player != null)
+            if (oldPlayer != null)
             {
-                inventoryManager.addModified(items.get(this.player.getTag()));
+                inventoryManager.addModified(items.get(oldPlayer.getTag()));
                 for (final PlayerListener listener : playerListeners.getListeners(PlayerListener.class))
                 {
-                    listener.playerRemoved(this.player);
+                    listener.playerRemoved(oldPlayer);
                 }
             }
             this.player = player;
-            if (this.player != null)
+            if (player != null)
             {
-                inventoryManager.addModified(items.get(this.player.getTag()));
+                inventoryManager.addModified(items.get(player.getTag()));
                 for (final PlayerListener listener : playerListeners.getListeners(PlayerListener.class))
                 {
-                    listener.playerAdded(this.player);
-                    listener.playerReceived(this.player);
+                    listener.playerAdded(player);
+                    listener.playerReceived(player);
                 }
             }
         }
