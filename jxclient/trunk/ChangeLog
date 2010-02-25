@@ -1,5 +1,9 @@
 2010-02-24  Andreas Kirschbaum
 
+	* Do not anymore report "addItem: duplicate item xyz" errors as
+	the Crossfire server sometimes sends inconsistent item locations
+	after pickup operations.
+
 	* Change colors of dialog titles. Fix layout of dialogs.
 
 2010-02-21  Andreas Kirschbaum
