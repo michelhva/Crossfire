@@ -26,14 +26,13 @@ import org.jetbrains.annotations.NotNull;
 
 /**
  * Manage a set of fonts.
- *
  * @author Andreas Kirschbaum
  */
-public class Fonts
-{
+public class Fonts {
+
     /**
-     * The font to use for {@link FontID#PRINT}, {@link FontID#HAND}, and
-     * {@link FontID#STRANGE} text.
+     * The font to use for {@link FontID#PRINT}, {@link FontID#HAND}, and {@link
+     * FontID#STRANGE} text.
      */
     @NotNull
     private final Font fontPrint;
@@ -58,19 +57,14 @@ public class Fonts
 
     /**
      * Create a new instance.
-     *
      * @param fontPrint The font to use for <code>FontID.PRINT</code>,
      * <code>FontID.HAND</code>, and <code>FontID.STANGE</code> text.
-     *
      * @param fontFixed The font to use for <code>FontID.FIXED</code> text.
-     *
      * @param fontFixedBold The font to use for <code>FontID.FIXED</code> text
      * which has bold enabled.
-     *
      * @param fontArcane The font to use for <code>FontID.ARCANE</code> text.
      */
-    public Fonts(@NotNull final Font fontPrint, @NotNull final Font fontFixed, @NotNull final Font fontFixedBold, @NotNull final Font fontArcane)
-    {
+    public Fonts(@NotNull final Font fontPrint, @NotNull final Font fontFixed, @NotNull final Font fontFixedBold, @NotNull final Font fontArcane) {
         this.fontPrint = fontPrint;
         this.fontFixed = fontFixed;
         this.fontFixedBold = fontFixedBold;
@@ -78,48 +72,41 @@ public class Fonts
     }
 
     /**
-     * Return the font to use for {@link FontID#PRINT}, {@link FontID#HAND},
-     * and {@link FontID#STRANGE} text.
-     *
+     * Return the font to use for {@link FontID#PRINT}, {@link FontID#HAND}, and
+     * {@link FontID#STRANGE} text.
      * @return The font.
      */
     @NotNull
-    public Font getFontPrint()
-    {
+    public Font getFontPrint() {
         return fontPrint;
     }
 
     /**
      * Return the font to use for {@link FontID#FIXED} text.
-     *
      * @return The font.
      */
     @NotNull
-    public Font getFontFixed()
-    {
+    public Font getFontFixed() {
         return fontFixed;
     }
 
     /**
      * Return the font to use for {@link FontID#FIXED} text which has bold
      * enabled.
-     *
      * @return The font.
      */
     @NotNull
-    public Font getFontFixedBold()
-    {
+    public Font getFontFixedBold() {
         return fontFixedBold;
     }
 
     /**
      * Return the font to use for {@link FontID#ARCANE} text.
-     *
      * @return The font.
      */
     @NotNull
-    public Font getFontArcane()
-    {
+    public Font getFontArcane() {
         return fontArcane;
     }
+
 }

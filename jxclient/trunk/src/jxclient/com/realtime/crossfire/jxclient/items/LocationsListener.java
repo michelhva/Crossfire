@@ -28,12 +28,13 @@ import org.jetbrains.annotations.NotNull;
  * Interface for listeners interested in changed item locations.
  * @author Andreas Kirschbaum
  */
-public interface LocationsListener
-{
+public interface LocationsListener {
+
     /**
      * Called whenever one or more lacations have been changed. The called
      * function must not change the passed collection.
      * @param index the changed locations
      */
     void locationsModified(@NotNull Collection<Integer> index);
+
 }

@@ -33,14 +33,13 @@ import org.jetbrains.annotations.Nullable;
 /**
  * Manages the contents of one text line. A text line consists of a sequence of
  * {@link Segment}s.
- *
  * @author Andreas Kirschbaum
  */
-public class Line implements Iterable<Segment>
-{
+public class Line implements Iterable<Segment> {
+
     /**
-     * The segments this line consists of. The first segment should be
-     * displayed first; subsequent segments are to be displyed without padding.
+     * The segments this line consists of. The first segment should be displayed
+     * first; subsequent segments are to be displyed without padding.
      */
     @NotNull
     private final List<Segment> segments = new ArrayList<Segment>();
@@ -59,16 +58,16 @@ public class Line implements Iterable<Segment>
      * @param font the font to use
      * @param color the color to use; <code>null</code> means "default color"
      */
-    public void addSegment(@NotNull final String text, final boolean bold, final boolean italic, final boolean underline, @NotNull final FontID font, @Nullable final Color color)
-    {
+    public void addSegment(@NotNull final String text, final boolean bold, final boolean italic, final boolean underline, @NotNull final FontID font, @Nullable final Color color) {
         segments.add(new TextSegment(text, bold, italic, underline, font, color));
     }
 
-    /** {@inheritDoc} */
+    /**
+     * {@inheritDoc}
+     */
     @NotNull
     @Override
-    public Iterator<Segment> iterator()
-    {
+    public Iterator<Segment> iterator() {
         return Collections.unmodifiableList(segments).iterator();
     }
 
@@ -77,56 +76,48 @@ public class Line implements Iterable<Segment>
      * @return the last segment or <code>null</code> if the line is empty
      */
     @Nullable
-    public Segment getLastSegment()
-    {
+    public Segment getLastSegment() {
         return segments.isEmpty() ? null : segments.get(segments.size()-1);
     }
 
     /**
      * Remove the last segment. The line must not be empty.
      */
-    public void removeLastSegment()
-    {
+    public void removeLastSegment() {
         segments.remove(segments.size()-1);
     }
 
     /**
      * Return the height of this line. Returns <code>-1</code> until {@link
      * #setHeight(int)} was called.
-     *
      * @return The height of this line.
      */
-    public int getHeight()
-    {
+    public int getHeight() {
         return height;
     }
 
     /**
      * Return the height of this line.
-     *
      * @param height The height.
      */
-    public void setHeight(final int height)
-    {
+    public void setHeight(final int height) {
         this.height = height;
     }
 
     /**
      * Update the cached attributes of some {@link Segment}s.
-     *
      * @param begin The index of the first segment to update.
      * @param end The index of the first segment not to update.
      * @param y The top border of the line's bounding box.
      * @param fonts the fonts instance to use
      * @param context the font render context to use
      */
-    public void updateAttributes(final int begin, final int end, final int y, @NotNull final Fonts fonts, @NotNull final FontRenderContext context)
-    {
-        for (int i = begin; i < end; i++)
-        {
+    public void updateAttributes(final int begin, final int end, final int y, @NotNull final Fonts fonts, @NotNull final FontRenderContext context) {
+        for (int i = begin; i < end; i++) {
             final Segment segment = segments.get(i);
             segment.updateAttributes(fonts, context);
             segment.setY(y);
         }
     }
+
 }

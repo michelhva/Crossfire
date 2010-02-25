@@ -25,13 +25,12 @@ package com.realtime.crossfire.jxclient.util;
  * Utility class for mathematical functions.
  * @author Andreas Kirschbaum
  */
-public class MathUtils
-{
+public class MathUtils {
+
     /**
      * Private constructor to prevent instantiation.
      */
-    private MathUtils()
-    {
+    private MathUtils() {
     }
 
     /**
@@ -40,15 +39,12 @@ public class MathUtils
      * @param denominator the denominator
      * @return the quotient
      */
-    public static int div(final int numerator, final int denominator)
-    {
-        if (numerator >= 0)
-        {
+    public static int div(final int numerator, final int denominator) {
+        if (numerator >= 0) {
             return numerator/denominator;
-        }
-        else
-        {
+        } else {
             return -((denominator-1-numerator)/denominator);
         }
     }
+
 }

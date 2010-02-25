@@ -27,8 +27,8 @@ import org.jetbrains.annotations.NotNull;
  * Interface for listeners interested in "face1"/"face2" commands.
  * @author Andreas Kirschbaum
  */
-public interface CrossfireFaceListener
-{
+public interface CrossfireFaceListener {
+
     /**
      * A face command has been received.
      * @param faceNum the face ID
@@ -37,4 +37,5 @@ public interface CrossfireFaceListener
      * @param faceName the face name
      */
     void faceReceived(int faceNum, int faceSetNum, int faceChecksum, @NotNull String faceName);
+
 }

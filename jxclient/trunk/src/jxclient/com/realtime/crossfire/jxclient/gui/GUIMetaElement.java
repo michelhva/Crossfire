@@ -44,8 +44,8 @@ import org.jetbrains.annotations.Nullable;
  * @author Lauwenmark
  * @author Andreas Kirschbaum
  */
-public class GUIMetaElement extends ActivatableGUIElement implements GUIScrollable
-{
+public class GUIMetaElement extends ActivatableGUIElement implements GUIScrollable {
+
     /**
      * The serial version UID.
      */
@@ -101,12 +101,10 @@ public class GUIMetaElement extends ActivatableGUIElement implements GUIScrollab
      * The metaserver entry listener attached for the current {@link #index}.
      */
     @NotNull
-    private final MetaserverEntryListener metaserverEntryListener = new MetaserverEntryListener()
-    {
+    private final MetaserverEntryListener metaserverEntryListener = new MetaserverEntryListener() {
         /** {@inheritDoc} */
         @Override
-        public void entryChanged()
-        {
+        public void entryChanged() {
             setChanged();
             updateTooltip();
         }
@@ -127,8 +125,7 @@ public class GUIMetaElement extends ActivatableGUIElement implements GUIScrollab
      * @param format the format used to display metaserver instances
      * @param tooltip the format used for displaying tooltips
      */
-    public GUIMetaElement(@NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final MetaserverModel metaserverModel, @NotNull final String name, final int w, final int h, @Nullable final Image tcpImage, @NotNull final Font font, final int defaultIndex, @NotNull final String format, @NotNull final String tooltip)
-    {
+    public GUIMetaElement(@NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final MetaserverModel metaserverModel, @NotNull final String name, final int w, final int h, @Nullable final Image tcpImage, @NotNull final Font font, final int defaultIndex, @NotNull final String format, @NotNull final String tooltip) {
         super(tooltipManager, elementListener, name, 0, 0, w, h, Transparency.TRANSLUCENT);
         this.metaserverModel = metaserverModel;
         this.tcpImage = tcpImage;
@@ -142,39 +139,40 @@ public class GUIMetaElement extends ActivatableGUIElement implements GUIScrollab
         updateTooltip();
     }
 
-    /** {@inheritDoc} */
+    /**
+     * {@inheritDoc}
+     */
     @Override
-    public void dispose()
-    {
+    public void dispose() {
         super.dispose();
         metaserverModel.removeMetaserverEntryListener(index, metaserverEntryListener);
     }
 
-    /** {@inheritDoc} */
+    /**
+     * {@inheritDoc}
+     */
     @Override
-    protected void render(@NotNull final Graphics g)
-    {
+    protected void render(@NotNull final Graphics g) {
         final MetaserverEntry metaEntry = metaserverModel.getEntry(index);
         final Graphics2D g2 = (Graphics2D)g;
         g2.setBackground(new Color(0, 0, 0, 0.0f));
         g.clearRect(0, 0, getWidth(), getHeight());
         g.setFont(font);
         g.setColor(isActive() || selected ? Color.RED : Color.GRAY);
-        if (tcpImage != null)
-        {
+        if (tcpImage != null) {
             g.drawImage(tcpImage, 0, 0, null);
         }
         g.drawString(metaEntry == null ? "" : metaEntry.format(format), tcpImage != null ? 16 : 0, font.getSize()+1);
     }
 
-    /** {@inheritDoc} */
+    /**
+     * {@inheritDoc}
+     */
     @Override
-    public void mouseClicked(@NotNull final MouseEvent e)
-    {
+    public void mouseClicked(@NotNull final MouseEvent e) {
         super.mouseClicked(e);
         final int b = e.getButton();
-        switch (b)
-        {
+        switch (b) {
         case MouseEvent.BUTTON1:
             setActive(true);
             setChanged();
@@ -188,45 +186,43 @@ public class GUIMetaElement extends ActivatableGUIElement implements GUIScrollab
         }
     }
 
-    /** {@inheritDoc} */
+    /**
+     * {@inheritDoc}
+     */
     @Override
-    public boolean canScroll(final int distance)
-    {
-        if (distance < 0)
-        {
+    public boolean canScroll(final int distance) {
+        if (distance < 0) {
             return index >= -distance;
-        }
-        else if (distance > 0)
-        {
+        } else if (distance > 0) {
             return index+distance < metaserverModel.size();
-        }
-        else
-        {
+        } else {
             return false;
         }
     }
 
-    /** {@inheritDoc} */
+    /**
+     * {@inheritDoc}
+     */
     @Override
-    public void scroll(final int distance)
-    {
+    public void scroll(final int distance) {
         setIndex(index+distance);
     }
 
-    /** {@inheritDoc} */
+    /**
+     * {@inheritDoc}
+     */
     @Override
-    public void resetScroll()
-    {
-        if (index != defaultIndex)
-        {
+    public void resetScroll() {
+        if (index != defaultIndex) {
             scroll(defaultIndex-index);
         }
     }
 
-    /** {@inheritDoc} */
+    /**
+     * {@inheritDoc}
+     */
     @Override
-    protected void activeChanged()
-    {
+    protected void activeChanged() {
         setChanged();
     }
 
@@ -234,8 +230,7 @@ public class GUIMetaElement extends ActivatableGUIElement implements GUIScrollab
      * Returns the index of this element.
      * @return the index
      */
-    public int getIndex()
-    {
+    public int getIndex() {
         return index;
     }
 
@@ -243,10 +238,8 @@ public class GUIMetaElement extends ActivatableGUIElement implements GUIScrollab
      * Sets the index of this element.
      * @param index the index
      */
-    public void setIndex(final int index)
-    {
-        if (this.index == index)
-        {
+    public void setIndex(final int index) {
+        if (this.index == index) {
             return;
         }
 
@@ -260,8 +253,7 @@ public class GUIMetaElement extends ActivatableGUIElement implements GUIScrollab
     /**
      * Updates the tooltip text.
      */
-    private void updateTooltip()
-    {
+    private void updateTooltip() {
         final MetaserverEntry metaEntry = metaserverModel.getEntry(index);
         setTooltipText(metaEntry == null ? null : metaEntry.format(tooltip));
     }
@@ -270,14 +262,13 @@ public class GUIMetaElement extends ActivatableGUIElement implements GUIScrollab
      * Sets the selected state.
      * @param selected whether this element should drawn as "selected"
      */
-    public void setSelected(final boolean selected)
-    {
-        if (this.selected == selected)
-        {
+    public void setSelected(final boolean selected) {
+        if (this.selected == selected) {
             return;
         }
 
         this.selected = selected;
         setChanged();
     }
+
 }

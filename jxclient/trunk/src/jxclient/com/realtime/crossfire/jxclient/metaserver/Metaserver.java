@@ -39,8 +39,8 @@ import org.jetbrains.annotations.NotNull;
  * @author Lauwenmark
  * @author Andreas Kirschbaum
  */
-public class Metaserver
-{
+public class Metaserver {
+
     /**
      * The minimal interval (in seconds) between two metasever queries.
      */
@@ -80,54 +80,46 @@ public class Metaserver
      * connections.
      */
     @NotNull
-    private final GuiStateListener guiStateListener = new GuiStateListener()
-    {
+    private final GuiStateListener guiStateListener = new GuiStateListener() {
         /** {@inheritDoc} */
         @Override
-        public void start()
-        {
+        public void start() {
             // ignore
         }
 
         /** {@inheritDoc} */
         @Override
-        public void metaserver()
-        {
+        public void metaserver() {
             metaserverProcessor.query();
         }
 
         /** {@inheritDoc} */
         @Override
-        public void preConnecting(@NotNull final String serverInfo)
-        {
+        public void preConnecting(@NotNull final String serverInfo) {
             // ignore
         }
 
         /** {@inheritDoc} */
         @Override
-        public void connecting(@NotNull final String serverInfo)
-        {
+        public void connecting(@NotNull final String serverInfo) {
             metaserverProcessor.disable();
         }
 
         /** {@inheritDoc} */
         @Override
-        public void connecting(@NotNull final ClientSocketState clientSocketState)
-        {
+        public void connecting(@NotNull final ClientSocketState clientSocketState) {
             // ignore
         }
 
         /** {@inheritDoc} */
         @Override
-        public void connected()
-        {
+        public void connected() {
             // ignore
         }
 
         /** {@inheritDoc} */
         @Override
-        public void connectFailed(@NotNull final String reason)
-        {
+        public void connectFailed(@NotNull final String reason) {
             // ignore
         }
     };
@@ -138,13 +130,11 @@ public class Metaserver
      * @param metaserverModel the metaserver model instance to update
      * @param guiStateManager the gui state manager to watch
      */
-    public Metaserver(@NotNull final File metaserverCacheFile, @NotNull final MetaserverModel metaserverModel, @NotNull final GuiStateManager guiStateManager)
-    {
+    public Metaserver(@NotNull final File metaserverCacheFile, @NotNull final MetaserverModel metaserverModel, @NotNull final GuiStateManager guiStateManager) {
         serverCache = new ServerCache(metaserverCacheFile);
         this.metaserverModel = metaserverModel;
         metaserverModel.begin();
-        for (final MetaserverEntry metaserverEntry : serverCache.getAll().values())
-        {
+        for (final MetaserverEntry metaserverEntry : serverCache.getAll().values()) {
             metaserverModel.add(metaserverEntry);
         }
         metaserverModel.commit();
@@ -155,8 +145,7 @@ public class Metaserver
     /**
      * Update the contents of {@link #metaserverModel}.
      */
-    public void updateMetalist()
-    {
+    public void updateMetalist() {
         metaserverModel.begin();
 
         serverCache.expire(EXPIRE_INTERVAL*1000);
@@ -168,87 +157,67 @@ public class Metaserver
         oldEntries.remove(ServerCache.makeKey(localhostMetaserverEntry));
         serverCache.put(localhostMetaserverEntry);
 
-        try
-        {
+        try {
             final URL url = new URL(METASERVER_URL);
             final String httpProxy = System.getenv("http_proxy");
-            if (httpProxy != null && httpProxy.length() > 0)
-            {
-                if (httpProxy.regionMatches(true, 0, "http://", 0, 7))
-                {
+            if (httpProxy != null && httpProxy.length() > 0) {
+                if (httpProxy.regionMatches(true, 0, "http://", 0, 7)) {
                     final String[] tmp = httpProxy.substring(7).replaceAll("/.*", "").split(":", 2);
                     final String proxy = tmp[0];
                     final String port = tmp.length >= 2 ? tmp[1] : "80";
                     final Properties systemProperties = System.getProperties();
                     systemProperties.setProperty("http.proxyHost", proxy);
                     systemProperties.setProperty("http.proxyPort", port);
-                }
-                else
-                {
+                } else {
                     System.err.println("Warning: unsupported http_proxy protocol: "+httpProxy);
                 }
             }
             final HttpURLConnection conn = (HttpURLConnection)url.openConnection();
-            try
-            {
+            try {
                 conn.setRequestMethod("GET");
                 conn.setUseCaches(false);
                 conn.connect();
-                if (conn.getResponseCode() == HttpURLConnection.HTTP_OK)
-                {
+                if (conn.getResponseCode() == HttpURLConnection.HTTP_OK) {
                     final InputStream in = conn.getInputStream();
                     final InputStreamReader isr = new InputStreamReader(in, "ISO-8859-1");
-                    try
-                    {
+                    try {
                         final BufferedReader br = new BufferedReader(isr);
-                        try
-                        {
+                        try {
                             final MetaserverEntryParser metaserverEntryParser = new MetaserverEntryParser();
-                            for (; ;)
-                            {
+                            for (; ;) {
                                 final String line = br.readLine();
-                                if (line == null)
-                                {
+                                if (line == null) {
                                     break;
                                 }
 
                                 final MetaserverEntry metaserverEntry = metaserverEntryParser.parseLine(line);
-                                if (metaserverEntry != null)
-                                {
+                                if (metaserverEntry != null) {
                                     metaserverModel.add(metaserverEntry);
                                     oldEntries.remove(ServerCache.makeKey(metaserverEntry));
                                     serverCache.put(metaserverEntry);
                                 }
                             }
-                        }
-                        finally
-                        {
+                        } finally {
                             br.close();
                         }
-                    }
-                    finally
-                    {
+                    } finally {
                         isr.close();
                     }
                 }
-            }
-            finally
-            {
+            } finally {
                 conn.disconnect();
             }
-        }
-        catch (final IOException ex)
-        {
+        } catch (final IOException ex) {
             // ignore (but keep already parsed entries)
         }
 
         // add previously known entries that are not anymore present
-        for (final MetaserverEntry metaserverEntry : oldEntries.values())
-        {
+        for (final MetaserverEntry metaserverEntry : oldEntries.values()) {
             metaserverModel.add(metaserverEntry);
         }
 
         metaserverModel.commit();
         serverCache.save();
     }
+
 }

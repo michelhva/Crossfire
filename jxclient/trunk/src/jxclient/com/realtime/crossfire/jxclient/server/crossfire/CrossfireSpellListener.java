@@ -28,15 +28,21 @@ import org.jetbrains.annotations.NotNull;
  * received from the Crossfire server.
  * @author Andreas Kirschbaum
  */
-public interface CrossfireSpellListener
-{
-    /** Flag for updspell command: mana is present. */
+public interface CrossfireSpellListener {
+
+    /**
+     * Flag for updspell command: mana is present.
+     */
     int UPD_SP_MANA = 1;
 
-    /** Flag for updspell command: grace is present. */
+    /**
+     * Flag for updspell command: grace is present.
+     */
     int UPD_SP_GRACE = 2;
 
-    /** Flag for updspell command: damage is present. */
+    /**
+     * Flag for updspell command: damage is present.
+     */
     int UPD_SP_DAMAGE = 4;
 
     /**
@@ -70,4 +76,5 @@ public interface CrossfireSpellListener
      * @param damage the damage done
      */
     void updateSpell(int flags, int tag, int mana, int grace, int damage);
+
 }

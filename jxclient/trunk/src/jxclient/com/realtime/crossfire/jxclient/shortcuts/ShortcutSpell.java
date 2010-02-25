@@ -28,11 +28,10 @@ import org.jetbrains.annotations.NotNull;
 
 /**
  * A {@link Shortcut} that casts a spell.
- *
  * @author Andreas Kirschbaum
  */
-public class ShortcutSpell extends Shortcut
-{
+public class ShortcutSpell extends Shortcut {
+
     /**
      * Command prefix to "cast" a spell.
      */
@@ -67,12 +66,10 @@ public class ShortcutSpell extends Shortcut
      * The {@link SpellListener} attached to {@link #spell}.
      */
     @NotNull
-    private final SpellListener spellListener = new SpellListener()
-    {
+    private final SpellListener spellListener = new SpellListener() {
         /** {@inheritDoc} */
         @Override
-        public void spellChanged()
-        {
+        public void spellChanged() {
             fireModifiedEvent();
         }
     };
@@ -82,8 +79,7 @@ public class ShortcutSpell extends Shortcut
      * @param commandQueue the command queue for executing commands
      * @param spell the spell to cast
      */
-    public ShortcutSpell(@NotNull final CommandQueue commandQueue, @NotNull final Spell spell)
-    {
+    public ShortcutSpell(@NotNull final CommandQueue commandQueue, @NotNull final Spell spell) {
         this.commandQueue = commandQueue;
         this.spell = spell;
         spell.addSpellListener(spellListener);
@@ -91,37 +87,30 @@ public class ShortcutSpell extends Shortcut
 
     /**
      * Return the spell to cast.
-     *
      * @return The spell.
      */
     @NotNull
-    public Spell getSpell()
-    {
+    public Spell getSpell() {
         return spell;
     }
 
     /**
      * Return whether the spell should be "cast" or "invoked".
-     *
      * @return <code>true</code> for "cast", or <code>false</code> for
-     * "invoke".
+     *         "invoke".
      */
-    public boolean isCast()
-    {
+    public boolean isCast() {
         return command == CAST;
     }
 
     /**
      * Set whether the spell should be "cast" or "invoked".
-     *
      * @param cast <code>true</code> for "cast", or <code>false</code> for
      * "invoke".
      */
-    public void setCast(final boolean cast)
-    {
+    public void setCast(final boolean cast) {
         final String newCommand = cast ? CAST : INVOKE;
-        if (command == newCommand)
-        {
+        if (command == newCommand) {
             return;
         }
 
@@ -129,28 +118,31 @@ public class ShortcutSpell extends Shortcut
         fireModifiedEvent();
     }
 
-    /** {@inheritDoc} */
+    /**
+     * {@inheritDoc}
+     */
     @Override
-    public void dispose()
-    {
+    public void dispose() {
         spell.removeSpellListener(spellListener);
     }
 
-    /** {@inheritDoc} */
+    /**
+     * {@inheritDoc}
+     */
     @Override
-    public void execute()
-    {
-        if (!spell.isUnknown())
-        {
+    public void execute() {
+        if (!spell.isUnknown()) {
             commandQueue.sendNcom(false, command+spell.getTag());
         }
     }
 
-    /** {@inheritDoc} */
+    /**
+     * {@inheritDoc}
+     */
     @NotNull
     @Override
-    public String getTooltipText()
-    {
+    public String getTooltipText() {
         return command+spell.getTooltipText();
     }
+
 }

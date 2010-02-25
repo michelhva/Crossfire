@@ -28,8 +28,8 @@ import org.jetbrains.annotations.NotNull;
  * Consists of three {@link ImageIcon}s representing a {@link Face}.
  * @author Andreas Kirschbaum
  */
-public class FaceImages
-{
+public class FaceImages {
+
     /**
      * The {@link ImageIcon} as sent by the Crossfire server.
      */
@@ -48,8 +48,7 @@ public class FaceImages
     @NotNull
     private final ImageIcon magicMapImageIcon;
 
-    public FaceImages(@NotNull final ImageIcon originalImageIcon, @NotNull final ImageIcon scaledImageIcon, @NotNull final ImageIcon magicMapImageIcon)
-    {
+    public FaceImages(@NotNull final ImageIcon originalImageIcon, @NotNull final ImageIcon scaledImageIcon, @NotNull final ImageIcon magicMapImageIcon) {
         this.originalImageIcon = originalImageIcon;
         this.scaledImageIcon = scaledImageIcon;
         this.magicMapImageIcon = magicMapImageIcon;
@@ -60,8 +59,7 @@ public class FaceImages
      * @return the image icon
      */
     @NotNull
-    public ImageIcon getOriginalImageIcon()
-    {
+    public ImageIcon getOriginalImageIcon() {
         return originalImageIcon;
     }
 
@@ -70,8 +68,7 @@ public class FaceImages
      * @return the image icon
      */
     @NotNull
-    public ImageIcon getScaledImageIcon()
-    {
+    public ImageIcon getScaledImageIcon() {
         return scaledImageIcon;
     }
 
@@ -80,8 +77,8 @@ public class FaceImages
      * @return the image icon
      */
     @NotNull
-    public ImageIcon getMagicMapImageIcon()
-    {
+    public ImageIcon getMagicMapImageIcon() {
         return magicMapImageIcon;
     }
+
 }

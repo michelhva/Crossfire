@@ -32,114 +32,95 @@ import org.jetbrains.annotations.Nullable;
  * The executable commands.
  * @author Andreas Kirschbaum
  */
-public enum CommandType
-{
+public enum CommandType {
+
     /**
      * Apply an item.
      */
-    APPLY
-        {
-            /** {@inheritDoc} */
-            @Override
-            protected void doExecute(@NotNull final CfItem item, @NotNull final CrossfireServerConnection crossfireServerConnection, final int floor, @NotNull final CommandQueue commandQueue)
-            {
-                crossfireServerConnection.sendApply(item.getTag());
-            }
-        },
+    APPLY {
+        /** {@inheritDoc} */
+        @Override
+        protected void doExecute(@NotNull final CfItem item, @NotNull final CrossfireServerConnection crossfireServerConnection, final int floor, @NotNull final CommandQueue commandQueue) {
+            crossfireServerConnection.sendApply(item.getTag());
+        }
+    },
 
     /**
      * Drop an item (to the ground of into an opened container).
      */
-    DROP
-        {
-            /** {@inheritDoc} */
-            @Override
-            protected void doExecute(@NotNull final CfItem item, @NotNull final CrossfireServerConnection crossfireServerConnection, final int floor, @NotNull final CommandQueue commandQueue)
-            {
-                if (item.isLocked())
-                {
-                    crossfireServerConnection.drawInfo("This item is locked. To drop it, first unlock by SHIFT+leftclicking on it.", 3);
-                }
-                else
-                {
-                    commandQueue.sendMove(floor, item.getTag());
-                }
+    DROP {
+        /** {@inheritDoc} */
+        @Override
+        protected void doExecute(@NotNull final CfItem item, @NotNull final CrossfireServerConnection crossfireServerConnection, final int floor, @NotNull final CommandQueue commandQueue) {
+            if (item.isLocked()) {
+                crossfireServerConnection.drawInfo("This item is locked. To drop it, first unlock by SHIFT+leftclicking on it.", 3);
+            } else {
+                commandQueue.sendMove(floor, item.getTag());
             }
-        },
+        }
+    },
 
     /**
      * Examine an item.
      */
-    EXAMINE
-        {
-            /** {@inheritDoc} */
-            @Override
-            protected void doExecute(@NotNull final CfItem item, @NotNull final CrossfireServerConnection crossfireServerConnection, final int floor, @NotNull final CommandQueue commandQueue)
-            {
-                crossfireServerConnection.sendExamine(item.getTag());
-            }
-        },
+    EXAMINE {
+        /** {@inheritDoc} */
+        @Override
+        protected void doExecute(@NotNull final CfItem item, @NotNull final CrossfireServerConnection crossfireServerConnection, final int floor, @NotNull final CommandQueue commandQueue) {
+            crossfireServerConnection.sendExamine(item.getTag());
+        }
+    },
 
     /**
      * Lock an item.
      */
-    LOCK
-        {
-            /** {@inheritDoc} */
-            @Override
-            protected void doExecute(@NotNull final CfItem item, @NotNull final CrossfireServerConnection crossfireServerConnection, final int floor, @NotNull final CommandQueue commandQueue)
-            {
-                crossfireServerConnection.sendLock(true, item.getTag());
-            }
-        },
+    LOCK {
+        /** {@inheritDoc} */
+        @Override
+        protected void doExecute(@NotNull final CfItem item, @NotNull final CrossfireServerConnection crossfireServerConnection, final int floor, @NotNull final CommandQueue commandQueue) {
+            crossfireServerConnection.sendLock(true, item.getTag());
+        }
+    },
 
     /**
      * Toggle the lock of an item.
      */
-    LOCK_TOGGLE
-        {
-            /** {@inheritDoc} */
-            @Override
-            protected void doExecute(@NotNull final CfItem item, @NotNull final CrossfireServerConnection crossfireServerConnection, final int floor, @NotNull final CommandQueue commandQueue)
-            {
-                crossfireServerConnection.sendLock(!item.isLocked(), item.getTag());
-            }
-        },
+    LOCK_TOGGLE {
+        /** {@inheritDoc} */
+        @Override
+        protected void doExecute(@NotNull final CfItem item, @NotNull final CrossfireServerConnection crossfireServerConnection, final int floor, @NotNull final CommandQueue commandQueue) {
+            crossfireServerConnection.sendLock(!item.isLocked(), item.getTag());
+        }
+    },
 
     /**
      * Mark an item.
      */
-    MARK
-        {
-            /** {@inheritDoc} */
-            @Override
-            protected void doExecute(@NotNull final CfItem item, @NotNull final CrossfireServerConnection crossfireServerConnection, final int floor, @NotNull final CommandQueue commandQueue)
-            {
-                crossfireServerConnection.sendMark(item.getTag());
-            }
-        },
+    MARK {
+        /** {@inheritDoc} */
+        @Override
+        protected void doExecute(@NotNull final CfItem item, @NotNull final CrossfireServerConnection crossfireServerConnection, final int floor, @NotNull final CommandQueue commandQueue) {
+            crossfireServerConnection.sendMark(item.getTag());
+        }
+    },
 
     /**
      * Unlock an item.
      */
-    UNLOCK
-        {
-            /** {@inheritDoc} */
-            @Override
-            protected void doExecute(@NotNull final CfItem item, @NotNull final CrossfireServerConnection crossfireServerConnection, final int floor, @NotNull final CommandQueue commandQueue)
-            {
-                crossfireServerConnection.sendLock(false, item.getTag());
-            }
-        },
-    ;
+    UNLOCK {
+        /** {@inheritDoc} */
+        @Override
+        protected void doExecute(@NotNull final CfItem item, @NotNull final CrossfireServerConnection crossfireServerConnection, final int floor, @NotNull final CommandQueue commandQueue) {
+            crossfireServerConnection.sendLock(false, item.getTag());
+        }
+    },;
 
     /**
      * Returns whether the action can be executed.
      * @param guiItem the item to check for
      * @return whether the action can be executed
      */
-    public static boolean canExecute(@Nullable final GUIItemItem guiItem)
-    {
+    public static boolean canExecute(@Nullable final GUIItemItem guiItem) {
         return guiItem != null && guiItem.getItem() != null;
     }
 
@@ -150,16 +131,13 @@ public enum CommandType
      * @param floor the current floor index
      * @param commandQueue the command queue to use
      */
-    public void execute(@Nullable final GUIItemItem guiItem, @NotNull final CrossfireServerConnection crossfireServerConnection, final int floor, @NotNull final CommandQueue commandQueue)
-    {
-        if (guiItem == null)
-        {
+    public void execute(@Nullable final GUIItemItem guiItem, @NotNull final CrossfireServerConnection crossfireServerConnection, final int floor, @NotNull final CommandQueue commandQueue) {
+        if (guiItem == null) {
             return;
         }
 
         final CfItem item = guiItem.getItem();
-        if (item == null)
-        {
+        if (item == null) {
             return;
         }
 
@@ -174,4 +152,5 @@ public enum CommandType
      * @param commandQueue the command queue to use
      */
     protected abstract void doExecute(@NotNull final CfItem item, @NotNull final CrossfireServerConnection crossfireServerConnection, final int floor, @NotNull final CommandQueue commandQueue);
+
 }

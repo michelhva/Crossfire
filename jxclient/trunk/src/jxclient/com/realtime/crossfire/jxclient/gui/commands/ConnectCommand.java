@@ -29,8 +29,8 @@ import org.jetbrains.annotations.NotNull;
  * A {@link GUICommand} which connectes to a Crossfire server.
  * @author Andreas Kirschbaum
  */
-public class ConnectCommand implements GUICommand
-{
+public class ConnectCommand implements GUICommand {
+
     /**
      * The {@link GuiStateManager} instance.
      */
@@ -48,23 +48,25 @@ public class ConnectCommand implements GUICommand
      * @param guiStateManager the gui state manager instance
      * @param hostNameInputField the host name input field
      */
-    public ConnectCommand(@NotNull final GuiStateManager guiStateManager, @NotNull final GUIText hostNameInputField)
-    {
+    public ConnectCommand(@NotNull final GuiStateManager guiStateManager, @NotNull final GUIText hostNameInputField) {
         this.guiStateManager = guiStateManager;
         this.hostNameInputField = hostNameInputField;
     }
 
-    /** {@inheritDoc} */
+    /**
+     * {@inheritDoc}
+     */
     @Override
-    public boolean canExecute()
-    {
+    public boolean canExecute() {
         return true;
     }
 
-    /** {@inheritDoc} */
+    /**
+     * {@inheritDoc}
+     */
     @Override
-    public void execute()
-    {
+    public void execute() {
         guiStateManager.connect(hostNameInputField.getText());
     }
+
 }

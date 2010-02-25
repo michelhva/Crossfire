@@ -27,12 +27,13 @@ import org.jetbrains.annotations.Nullable;
  * Interface for listeners interested in {@link ScriptProcess} related events.
  * @author Andreas Kirschbaum
  */
-public interface ScriptProcessListener
-{
+public interface ScriptProcessListener {
+
     /**
      * Called after the script has been terminated.
      * @param result the termination reason or <code>null</code> if the script
      * exited successfully
      */
     void scriptTerminated(@Nullable String result);
+
 }

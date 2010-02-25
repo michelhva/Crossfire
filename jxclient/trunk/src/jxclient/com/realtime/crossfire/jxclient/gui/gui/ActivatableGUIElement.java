@@ -26,11 +26,10 @@ import org.jetbrains.annotations.NotNull;
 
 /**
  * A {@link GUIElement} that can be set to active or inactive.
- *
  * @author Andreas Kirschbaum
  */
-public abstract class ActivatableGUIElement extends GUIElement
-{
+public abstract class ActivatableGUIElement extends GUIElement {
+
     /**
      * The serial version UID.
      */
@@ -38,47 +37,36 @@ public abstract class ActivatableGUIElement extends GUIElement
 
     /**
      * Create a new instance.
-     *
      * @param tooltipManager the tooltip manager to update
-     *
      * @param elementListener the element listener to notify
-     *
      * @param name The name of this element.
-     *
      * @param x The x-coordinate for drawing this element to screen; it is
      * relative to <code>gui</code>.
-     *
      * @param y The y-coordinate for drawing this element to screen; it is
      * relative to <code>gui</code>.
-     *
      * @param w The width for drawing this element to screen.
-     *
      * @param h The height for drawing this element to screen.
-     *
      * @param transparency The transparency value for the backing buffer
      */
-    protected ActivatableGUIElement(@NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final String name, final int x, final int y, final int w, final int h, final int transparency)
-    {
+    protected ActivatableGUIElement(@NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final String name, final int x, final int y, final int w, final int h, final int transparency) {
         super(tooltipManager, elementListener, name, x, y, w, h, transparency);
     }
 
-    /** {@inheritDoc} */
+    /**
+     * {@inheritDoc}
+     */
     @Override
-    public void dispose()
-    {
+    public void dispose() {
         super.dispose();
     }
 
     /**
      * Set the active state.
-     *
      * @param active The new active state.
      */
-    public void setActive(final boolean active)
-    {
+    public void setActive(final boolean active) {
         final Gui gui = getGui();
-        if (gui != null)
-        {
+        if (gui != null) {
             gui.setActiveElement(this, active);
         }
     }
@@ -89,16 +77,17 @@ public abstract class ActivatableGUIElement extends GUIElement
     protected abstract void activeChanged();
 
     /* {@inheritDoc} */
-    public boolean isActive()
-    {
+    public boolean isActive() {
         final Gui gui = getGui();
         return gui != null && gui.getActiveElement() == this;
     }
 
-    /** {@inheritDoc} */
+    /**
+     * {@inheritDoc}
+     */
     @Override
-    public void mousePressed(@NotNull final MouseEvent e)
-    {
+    public void mousePressed(@NotNull final MouseEvent e) {
         setActive(true);
     }
+
 }

@@ -27,14 +27,15 @@ import org.jetbrains.annotations.NotNull;
 /**
  * An UnknownCommandException is generated whenever an unknown message packet is
  * received from the server.
- *
- * @version 1.0
  * @author Lauwenmark
+ * @version 1.0
  * @since 1.0
  */
-public class UnknownCommandException extends Exception
-{
-    /** The serial version UID. */
+public class UnknownCommandException extends Exception {
+
+    /**
+     * The serial version UID.
+     */
     private static final long serialVersionUID = 1;
 
     /**
@@ -47,8 +48,7 @@ public class UnknownCommandException extends Exception
      * Creates a new exception with the given text message as a parameter.
      * @param str the message to assign to this exception
      */
-    public UnknownCommandException(@NotNull final String str)
-    {
+    public UnknownCommandException(@NotNull final String str) {
         super(str);
     }
 
@@ -57,8 +57,7 @@ public class UnknownCommandException extends Exception
      * @return the details
      */
     @NotNull
-    public String getDetails()
-    {
+    public String getDetails() {
         return details;
     }
 
@@ -68,8 +67,8 @@ public class UnknownCommandException extends Exception
      * @param start the starting index into <code>data</code>
      * @param end the end index into <code>data</code>
      */
-    public void setDetails(@NotNull final byte[] data, final int start, final int end)
-    {
+    public void setDetails(@NotNull final byte[] data, final int start, final int end) {
         details = HexCodec.hexDump(data, start, end-start);
     }
+
 }

@@ -23,11 +23,10 @@ package com.realtime.crossfire.jxclient.skills;
 
 /**
  * Interface for listeners on skill related changes.
- *
  * @author Andreas Kirschbaum
  */
-public interface SkillListener
-{
+public interface SkillListener {
+
     /**
      * Notifies the listener that the skill has been gained.
      */
@@ -42,4 +41,5 @@ public interface SkillListener
      * Notifies the listener that the skill has changed.
      */
     void changedSkill();
+
 }

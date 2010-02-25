@@ -27,13 +27,12 @@ import org.jetbrains.annotations.NotNull;
  * Utility class to parse orientation names.
  * @author Andreas Kirschbaum
  */
-public class OrientationParser
-{
+public class OrientationParser {
+
     /**
      * Private constructor to prevent instantiation.
      */
-    private OrientationParser()
-    {
+    private OrientationParser() {
     }
 
     /**
@@ -43,24 +42,20 @@ public class OrientationParser
      * @return the orientation instance
      * @throws IllegalArgumentException if the orientation name is undefined
      */
-    public static Orientation parseOrientation(@NotNull final String name)
-    {
-        if (name.equals("EW"))
-        {
+    public static Orientation parseOrientation(@NotNull final String name) {
+        if (name.equals("EW")) {
             return new OrientationEW();
         }
-        if (name.equals("NS"))
-        {
+        if (name.equals("NS")) {
             return new OrientationNS();
         }
-        if (name.equals("SN"))
-        {
+        if (name.equals("SN")) {
             return new OrientationSN();
         }
-        if (name.equals("WE"))
-        {
+        if (name.equals("WE")) {
             return new OrientationWE();
         }
         throw new IllegalArgumentException();
     }
+
 }

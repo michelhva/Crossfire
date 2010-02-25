@@ -19,20 +19,19 @@
  * Copyright (C) 2006-2010 Andreas Kirschbaum.
  */
 
-
 package com.realtime.crossfire.jxclient.settings.options;
 
 import java.util.EventListener;
 
 /**
  * Interface for listeners for attribute changes of {@link Option}s.
- *
  * @author Andreas Kirschbaum
  */
-public interface OptionListener extends EventListener
-{
+public interface OptionListener extends EventListener {
+
     /**
      * Will be called when the checked state has changed.
      */
     void stateChanged();
+
 }

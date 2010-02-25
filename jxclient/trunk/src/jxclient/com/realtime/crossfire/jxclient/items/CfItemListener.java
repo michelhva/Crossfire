@@ -19,7 +19,6 @@
  * Copyright (C) 2006-2010 Andreas Kirschbaum.
  */
 
-
 package com.realtime.crossfire.jxclient.items;
 
 import java.util.EventListener;
@@ -28,10 +27,11 @@ import java.util.EventListener;
  * Interface for listeners for attribute changes of {@link CfItem}s.
  * @author Andreas Kirschbaum
  */
-public interface CfItemListener extends EventListener
-{
+public interface CfItemListener extends EventListener {
+
     /**
      * Will be called when any attribute has been changed.
      */
     void itemModified();
+
 }

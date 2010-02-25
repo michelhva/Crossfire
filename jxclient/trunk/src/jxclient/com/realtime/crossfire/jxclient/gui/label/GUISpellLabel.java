@@ -35,11 +35,10 @@ import org.jetbrains.annotations.Nullable;
 
 /**
  * A {@link GUIHTMLLabel} that displays the currently selected spell.
- *
  * @author Andreas Kirschbaum
  */
-public class GUISpellLabel extends GUIHTMLLabel
-{
+public class GUISpellLabel extends GUIHTMLLabel {
+
     /**
      * The serial version UID.
      */
@@ -64,24 +63,20 @@ public class GUISpellLabel extends GUIHTMLLabel
     private final CurrentSpellManager currentSpellManager;
 
     /**
-     * The {@link CurrentSpellManagerListener} registered to be notified about changed spell
-     * parameters.
+     * The {@link CurrentSpellManagerListener} registered to be notified about
+     * changed spell parameters.
      */
     @NotNull
-    private final CurrentSpellManagerListener currentSpellManagerListener = new CurrentSpellManagerListener()
-    {
+    private final CurrentSpellManagerListener currentSpellManagerListener = new CurrentSpellManagerListener() {
         /** {@inheritDoc} */
         @Override
-        public void spellChanged(@Nullable final Spell spell)
-        {
-            if (spell == null)
-            {
+        public void spellChanged(@Nullable final Spell spell) {
+            if (spell == null) {
                 setText("");
                 return;
             }
 
-            switch (type)
-            {
+            switch (type) {
             case SPELL_NAME:
                 setText(spell.getName());
                 break;
@@ -94,16 +89,11 @@ public class GUISpellLabel extends GUIHTMLLabel
             case SPELL_COST:
                 final int mana = spell.getMana();
                 final int grace = spell.getGrace();
-                if (grace == 0)
-                {
+                if (grace == 0) {
                     setText("M:"+mana);
-                }
-                else if (mana == 0)
-                {
+                } else if (mana == 0) {
                     setText("G:"+grace);
-                }
-                else
-                {
+                } else {
                     setText("M:"+mana+" G:"+grace);
                 }
                 break;
@@ -121,34 +111,21 @@ public class GUISpellLabel extends GUIHTMLLabel
 
     /**
      * Create a new instance.
-     *
      * @param tooltipManager the tooltip manager to update
-     *
      * @param elementListener the element listener to notify
-     *
      * @param name The gui element name.
-     *
      * @param x The x-coordinate to display at.
-     *
      * @param y The y-coordinate to display at.
-     *
      * @param w The width of the label.
-     *
      * @param h The height of the label.
-     *
      * @param picture The background picture; may be <code>null</code>. It is
      * ignored for type <code>SPELL_ICON</code>.
-     *
      * @param facesManager the instance for looking up faces
-     *
      * @param font The font to use.
-     *
      * @param type The display type.
-     *
      * @param currentSpellManager The current spell manager to track.
      */
-    public GUISpellLabel(@NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final String name, final int x, final int y, final int w, final int h, @Nullable final BufferedImage picture, @NotNull final FacesManager facesManager, @Nullable final Font font, @NotNull final Type type, @NotNull final CurrentSpellManager currentSpellManager)
-    {
+    public GUISpellLabel(@NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final String name, final int x, final int y, final int w, final int h, @Nullable final BufferedImage picture, @NotNull final FacesManager facesManager, @Nullable final Font font, @NotNull final Type type, @NotNull final CurrentSpellManager currentSpellManager) {
         super(tooltipManager, elementListener, name, x, y, w, h, picture, font, Color.WHITE, new Color(0, 0, 0, 0F), "");
         this.facesManager = facesManager;
         this.type = type;
@@ -156,11 +133,13 @@ public class GUISpellLabel extends GUIHTMLLabel
         this.currentSpellManager.addSpellListener(currentSpellManagerListener);
     }
 
-    /** {@inheritDoc} */
+    /**
+     * {@inheritDoc}
+     */
     @Override
-    public void dispose()
-    {
+    public void dispose() {
         super.dispose();
         currentSpellManager.removeSpellListener(currentSpellManagerListener);
     }
+
 }

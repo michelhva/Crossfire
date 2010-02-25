@@ -33,11 +33,10 @@ import org.jetbrains.annotations.NotNull;
 /**
  * A text input field which executes a {@link CommandList} when ENTER is
  * pressed.
- *
  * @author Andreas Kirschbaum
  */
-public class GUITextField extends GUIText
-{
+public class GUITextField extends GUIText {
+
     /**
      * The serial version UID.
      */
@@ -46,23 +45,25 @@ public class GUITextField extends GUIText
     @NotNull
     private final CommandList commandList;
 
-    public GUITextField(@NotNull final CommandCallback commandCallback, @NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final String name, final int x, final int y, final int w, final int h, @NotNull final Image activePicture, @NotNull final Image inactivePicture, @NotNull final Font font, @NotNull final Color inactiveColor, @NotNull final Color activeColor, final int margin, @NotNull final String text, @NotNull final CommandList commandList, final boolean ignoreUpDown)
-    {
+    public GUITextField(@NotNull final CommandCallback commandCallback, @NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final String name, final int x, final int y, final int w, final int h, @NotNull final Image activePicture, @NotNull final Image inactivePicture, @NotNull final Font font, @NotNull final Color inactiveColor, @NotNull final Color activeColor, final int margin, @NotNull final String text, @NotNull final CommandList commandList, final boolean ignoreUpDown) {
         super(commandCallback, tooltipManager, elementListener, name, x, y, w, h, activePicture, inactivePicture, font, inactiveColor, activeColor, margin, text, ignoreUpDown);
         this.commandList = commandList;
     }
 
-    /** {@inheritDoc} */
+    /**
+     * {@inheritDoc}
+     */
     @Override
-    public void dispose()
-    {
+    public void dispose() {
         super.dispose();
     }
 
-    /** {@inheritDoc} */
+    /**
+     * {@inheritDoc}
+     */
     @Override
-    protected void execute(@NotNull final String command)
-    {
+    protected void execute(@NotNull final String command) {
         commandList.execute();
     }
+
 }

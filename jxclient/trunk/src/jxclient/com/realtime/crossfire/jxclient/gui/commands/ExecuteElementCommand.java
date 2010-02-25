@@ -29,8 +29,8 @@ import org.jetbrains.annotations.NotNull;
  * click on) an {@link GUIItem}.
  * @author Andreas Kirschbaum
  */
-public class ExecuteElementCommand implements GUICommand
-{
+public class ExecuteElementCommand implements GUICommand {
+
     /**
      * The item element to execute.
      */
@@ -41,22 +41,24 @@ public class ExecuteElementCommand implements GUICommand
      * Creates a new instance.
      * @param item the item element to execute
      */
-    public ExecuteElementCommand(@NotNull final GUIItem item)
-    {
+    public ExecuteElementCommand(@NotNull final GUIItem item) {
         this.item = item;
     }
 
-    /** {@inheritDoc} */
+    /**
+     * {@inheritDoc}
+     */
     @Override
-    public boolean canExecute()
-    {
+    public boolean canExecute() {
         return true;
     }
 
-    /** {@inheritDoc} */
+    /**
+     * {@inheritDoc}
+     */
     @Override
-    public void execute()
-    {
+    public void execute() {
         item.button1Clicked(0);
     }
+
 }

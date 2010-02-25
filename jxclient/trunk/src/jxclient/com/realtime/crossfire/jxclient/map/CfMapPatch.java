@@ -29,8 +29,8 @@ import org.jetbrains.annotations.Nullable;
  * Represents a square area of {@link CfMapSquare}s.
  * @author Andreas Kirschbaum
  */
-public class CfMapPatch
-{
+public class CfMapPatch {
+
     /**
      * Log2 of {@link #SIZE}.
      */
@@ -55,12 +55,9 @@ public class CfMapPatch
      * @param y0 the absolute map y-coordinate of the top left corner of this
      * patch
      */
-    public CfMapPatch(@NotNull final CfMapSquareListener mapSquareListener, final int x0, final int y0)
-    {
-        for (int y = 0; y < SIZE; y++)
-        {
-            for (int x = 0; x < SIZE; x++)
-            {
+    public CfMapPatch(@NotNull final CfMapSquareListener mapSquareListener, final int x0, final int y0) {
+        for (int y = 0; y < SIZE; y++) {
+            for (int x = 0; x < SIZE; x++) {
                 square[x][y] = new CfMapSquare(mapSquareListener, x0+x, y0+y);
             }
         }
@@ -71,8 +68,7 @@ public class CfMapPatch
      * @param x the x-coordinate of the square
      * @param y the y-coordinate of the square
      */
-    public void dirty(final int x, final int y)
-    {
+    public void dirty(final int x, final int y) {
         square[x][y].dirty();
     }
 
@@ -82,8 +78,7 @@ public class CfMapPatch
      * @param x the x-coordinate of the square
      * @param y the y-coordinate of the square
      */
-    public void clearSquare(final int x, final int y)
-    {
+    public void clearSquare(final int x, final int y) {
         square[x][y].clear();
     }
 
@@ -94,8 +89,7 @@ public class CfMapPatch
      * @param darkness the darkness value to set; 0=dark, 255=full bright
      * @return whether fog-of-war has been cleared
      */
-    public boolean setDarkness(final int x, final int y, final int darkness)
-    {
+    public boolean setDarkness(final int x, final int y, final int darkness) {
         return square[x][y].setDarkness(darkness);
     }
 
@@ -106,8 +100,7 @@ public class CfMapPatch
      * @return the darkness value of the square; 0=dark, 255=full bright. Not
      *         yet set faces return 0
      */
-    public int getDarkness(final int x, final int y)
-    {
+    public int getDarkness(final int x, final int y) {
         return square[x][y].getDarkness();
     }
 
@@ -118,8 +111,7 @@ public class CfMapPatch
      * @param layer the layer of the face
      * @return the face; dark (i.e. not yet set) faces return <code>null</code>
      */
-    public Face getFace(final int x, final int y, final int layer)
-    {
+    public Face getFace(final int x, final int y, final int layer) {
         return square[x][y].getFace(layer);
     }
 
@@ -134,8 +126,7 @@ public class CfMapPatch
      * @param setAlways if set, always update the face; if unset, only update
      * when fog-of-war
      */
-    public void setHeadMapSquare(final int x, final int y, final int layer, @Nullable final CfMapSquare mapSquare, final boolean setAlways)
-    {
+    public void setHeadMapSquare(final int x, final int y, final int layer, @Nullable final CfMapSquare mapSquare, final boolean setAlways) {
         square[x][y].setHeadMapSquare(layer, mapSquare, setAlways);
     }
 
@@ -148,8 +139,7 @@ public class CfMapPatch
      *         contain a multi-tail
      */
     @Nullable
-    public CfMapSquare getHeadMapSquare(final int x, final int y, final int layer)
-    {
+    public CfMapSquare getHeadMapSquare(final int x, final int y, final int layer) {
         return square[x][y].getHeadMapSquare(layer);
     }
 
@@ -159,8 +149,7 @@ public class CfMapPatch
      * @param y the y-coordinate of the square
      * @return whether the square is up-to-date
      */
-    public boolean isFogOfWar(final int x, final int y)
-    {
+    public boolean isFogOfWar(final int x, final int y) {
         return square[x][y].isFogOfWar();
     }
 
@@ -170,8 +159,7 @@ public class CfMapPatch
      * @param y the y-coordinate of the square
      * @return whether this square's fog-of-war state has been reset
      */
-    public boolean resetFogOfWar(final int x, final int y)
-    {
+    public boolean resetFogOfWar(final int x, final int y) {
         return square[x][y].resetFogOfWar();
     }
 
@@ -182,8 +170,8 @@ public class CfMapPatch
      * @return the map square
      */
     @NotNull
-    public CfMapSquare getSquare(final int x, final int y)
-    {
+    public CfMapSquare getSquare(final int x, final int y) {
         return square[x][y];
     }
+
 }

@@ -25,8 +25,8 @@ package com.realtime.crossfire.jxclient.gui.log;
  * Abstract base class for {@link Segment} implementations.
  * @author Andreas Kirschbaum
  */
-public abstract class AbstractSegment implements Segment
-{
+public abstract class AbstractSegment implements Segment {
+
     /**
      * The x-coordinate to display the segment. Set to <code>-1</code> if
      * unknown.
@@ -45,24 +45,28 @@ public abstract class AbstractSegment implements Segment
      */
     protected int width = -1;
 
-    /** {@inheritDoc} */
+    /**
+     * {@inheritDoc}
+     */
     @Override
-    public void setX(final int x)
-    {
+    public void setX(final int x) {
         this.x = x;
     }
 
-    /** {@inheritDoc} */
+    /**
+     * {@inheritDoc}
+     */
     @Override
-    public void setY(final int y)
-    {
+    public void setY(final int y) {
         this.y = y;
     }
 
-    /** {@inheritDoc} */
+    /**
+     * {@inheritDoc}
+     */
     @Override
-    public void setWidth(final int width)
-    {
+    public void setWidth(final int width) {
         this.width = width;
     }
+
 }

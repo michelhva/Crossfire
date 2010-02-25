@@ -25,11 +25,10 @@ import org.jetbrains.annotations.NotNull;
 
 /**
  * Listener to be notified of updated face information.
- *
  * @author Andreas Kirschbaum
  */
-public interface CrossfireUpdateFaceListener
-{
+public interface CrossfireUpdateFaceListener {
+
     /**
      * Notifies that face information has been received from the Crossfire
      * server.
@@ -40,4 +39,5 @@ public interface CrossfireUpdateFaceListener
      * @param len the length in bytes in <code>data</code>
      */
     void updateFace(int faceNum, int faceSetNum, @NotNull byte[] packet, int pos, int len);
+
 }

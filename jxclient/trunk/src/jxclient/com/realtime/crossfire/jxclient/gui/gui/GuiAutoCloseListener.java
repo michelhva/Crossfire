@@ -28,11 +28,12 @@ import org.jetbrains.annotations.NotNull;
  * instances.
  * @author Andreas Kirschbaum
  */
-public interface GuiAutoCloseListener
-{
+public interface GuiAutoCloseListener {
+
     /**
      * Called when a dialog has been auto-closed.
      * @param gui the dialog
      */
     void autoClosed(@NotNull Gui gui);
+
 }

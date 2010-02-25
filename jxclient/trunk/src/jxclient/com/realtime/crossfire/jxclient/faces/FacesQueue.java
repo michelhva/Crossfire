@@ -26,13 +26,13 @@ import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 
 /**
- * The main {@link FaceQueue} for loading faces. It first delegates to a
- * {@link FileCacheFaceQueue} to load the face from the disk cache. If this
- * fails, the face is requested through a {@link AskfaceFaceQueue}.
+ * The main {@link FaceQueue} for loading faces. It first delegates to a {@link
+ * FileCacheFaceQueue} to load the face from the disk cache. If this fails, the
+ * face is requested through a {@link AskfaceFaceQueue}.
  * @author Andreas Kirschbaum
  */
-public class FacesQueue extends AbstractFaceQueue
-{
+public class FacesQueue extends AbstractFaceQueue {
+
     /**
      * The {@link FileCacheFaceQueue} instance used to load faces from the file
      * cache.
@@ -51,19 +51,16 @@ public class FacesQueue extends AbstractFaceQueue
      * The {@link FaceQueueListener} attached to {@link #fileCacheFaceQueue}.
      */
     @NotNull
-    private final FaceQueueListener fileCacheFaceQueueListener = new FaceQueueListener()
-    {
+    private final FaceQueueListener fileCacheFaceQueueListener = new FaceQueueListener() {
         /** {@inheritDoc} */
         @Override
-        public void faceLoaded(@NotNull final Face face, @NotNull final FaceImages faceImages)
-        {
+        public void faceLoaded(@NotNull final Face face, @NotNull final FaceImages faceImages) {
             fireFaceLoaded(face, faceImages);
         }
 
         /** {@inheritDoc} */
         @Override
-        public void faceFailed(@NotNull final Face face)
-        {
+        public void faceFailed(@NotNull final Face face) {
             askfaceFaceQueue.loadFace(face);
         }
     };
@@ -72,20 +69,17 @@ public class FacesQueue extends AbstractFaceQueue
      * The {@link FaceQueueListener} attached to {@link #askfaceFaceQueue}.
      */
     @NotNull
-    private final FaceQueueListener askfaceFaceQueueListener = new FaceQueueListener()
-    {
+    private final FaceQueueListener askfaceFaceQueueListener = new FaceQueueListener() {
         /** {@inheritDoc} */
         @Override
-        public void faceLoaded(@NotNull final Face face, @NotNull final FaceImages faceImages)
-        {
+        public void faceLoaded(@NotNull final Face face, @NotNull final FaceImages faceImages) {
             fireFaceLoaded(face, faceImages);
             fileCacheFaceQueue.saveFace(face, faceImages);
         }
 
         /** {@inheritDoc} */
         @Override
-        public void faceFailed(@NotNull final Face face)
-        {
+        public void faceFailed(@NotNull final Face face) {
             fireFaceFailed(face);
         }
     };
@@ -94,33 +88,34 @@ public class FacesQueue extends AbstractFaceQueue
      * Creates a new instance.
      * @param crossfireServerConnection the server connection for sending
      * askface commands
-     * @param imageCacheOriginal the image cache used for loading original
-     * image files
+     * @param imageCacheOriginal the image cache used for loading original image
+     * files
      * @param imageCacheScaled the image cache used for loading scaled image
      * files
      * @param imageCacheMagicMap the image cache used for loading magic map
      * image files
      */
-    public FacesQueue(@Nullable final CrossfireServerConnection crossfireServerConnection, @NotNull final ImageCache imageCacheOriginal, @NotNull final ImageCache imageCacheScaled, @NotNull final ImageCache imageCacheMagicMap)
-    {
+    public FacesQueue(@Nullable final CrossfireServerConnection crossfireServerConnection, @NotNull final ImageCache imageCacheOriginal, @NotNull final ImageCache imageCacheScaled, @NotNull final ImageCache imageCacheMagicMap) {
         fileCacheFaceQueue = new FileCacheFaceQueue(imageCacheOriginal, imageCacheScaled, imageCacheMagicMap);
         askfaceFaceQueue = new AskfaceFaceQueue(crossfireServerConnection);
         fileCacheFaceQueue.addFaceQueueListener(fileCacheFaceQueueListener);
         askfaceFaceQueue.addFaceQueueListener(askfaceFaceQueueListener);
     }
 
-    /** {@inheritDoc} */
+    /**
+     * {@inheritDoc}
+     */
     @Override
-    public void reset()
-    {
+    public void reset() {
         fileCacheFaceQueue.reset();
         askfaceFaceQueue.reset();
     }
 
-    /** {@inheritDoc} */
+    /**
+     * {@inheritDoc}
+     */
     @Override
-    public void loadFace(@NotNull final Face face)
-    {
+    public void loadFace(@NotNull final Face face) {
         fileCacheFaceQueue.loadFace(face);
     }
 
@@ -129,8 +124,8 @@ public class FacesQueue extends AbstractFaceQueue
      * @return the askface queue
      */
     @NotNull
-    public AskfaceFaceQueue getAskfaceQueue()
-    {
+    public AskfaceFaceQueue getAskfaceQueue() {
         return askfaceFaceQueue;
     }
+
 }

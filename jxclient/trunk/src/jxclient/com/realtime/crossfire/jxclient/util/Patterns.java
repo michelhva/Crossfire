@@ -27,8 +27,8 @@ import org.jetbrains.annotations.NotNull;
 /**
  * Utility class containing useful {@link Pattern}s.
  */
-public class Patterns
-{
+public class Patterns {
+
     /**
      * The pattern to split a command from argments, and to split arguments.
      */
@@ -38,7 +38,7 @@ public class Patterns
     /**
      * Private constructor to prevent instantiation.
      */
-    private Patterns()
-    {
+    private Patterns() {
     }
+
 }

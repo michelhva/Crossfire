@@ -28,8 +28,8 @@ import org.jetbrains.annotations.NotNull;
  * Interface for listeners for changes of the current player object.
  * @author Andreas Kirschbaum
  */
-public interface PlayerListener extends EventListener
-{
+public interface PlayerListener extends EventListener {
+
     /**
      * A "player" command has been received.
      * @param player The corresponding player object.
@@ -47,4 +47,5 @@ public interface PlayerListener extends EventListener
      * @param player The removed player object.
      */
     void playerRemoved(@NotNull CfPlayer player);
+
 }

@@ -31,8 +31,8 @@ import org.jetbrains.annotations.NotNull;
  * Interface for providers of {@link JXCSkin} sources.
  * @author Andreas Kirschbaum
  */
-public interface JXCSkinSource extends Iterable<Resolution>
-{
+public interface JXCSkinSource extends Iterable<Resolution> {
+
     /**
      * Returns an {@link InputStream} for a resource name.
      * @param name the resource name
@@ -56,4 +56,5 @@ public interface JXCSkinSource extends Iterable<Resolution>
      * @return whether this source defines the resolution
      */
     boolean containsResolution(@NotNull Resolution resolution);
+
 }

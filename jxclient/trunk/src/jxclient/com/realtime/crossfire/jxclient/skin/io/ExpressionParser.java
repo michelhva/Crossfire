@@ -31,8 +31,8 @@ import org.jetbrains.annotations.NotNull;
  * Parser for integer expressions.
  * @author Andreas Kirschbaum
  */
-public class ExpressionParser
-{
+public class ExpressionParser {
+
     /**
      * The identifier evaluating to the width in pixels of the current
      * resolution.
@@ -63,8 +63,7 @@ public class ExpressionParser
      * Creates a new instance.
      * @param resolution the current resolution
      */
-    public ExpressionParser(@NotNull final Resolution resolution)
-    {
+    public ExpressionParser(@NotNull final Resolution resolution) {
         this.resolution = resolution;
     }
 
@@ -75,59 +74,43 @@ public class ExpressionParser
      * @return the integer value
      * @throws IOException if a parsing error occurs
      */
-    public int parseInt(@NotNull final String str) throws IOException
-    {
-        try
-        {
+    public int parseInt(@NotNull final String str) throws IOException {
+        try {
             return parseIntegerConstant(str);
-        }
-        catch (final NumberFormatException ex)
-        {
+        } catch (final NumberFormatException ex) {
             // ignore
         }
 
         Matcher matcher = PATTERN_EXPR.matcher(str);
-        if (!matcher.matches())
-        {
+        if (!matcher.matches()) {
             throw new IOException("invalid number: "+str);
         }
         int value;
-        try
-        {
+        try {
             value = parseIntegerConstant(matcher.group(1));
-            for (;;)
-            {
+            for (; ;) {
                 final boolean negative = matcher.group(2).equals("-");
                 final String rest = matcher.group(3);
 
                 matcher = PATTERN_EXPR.matcher(rest);
-                if (!matcher.matches())
-                {
+                if (!matcher.matches()) {
                     final int valueRest = Integer.parseInt(rest);
-                    if (negative)
-                    {
+                    if (negative) {
                         value -= valueRest;
-                    }
-                    else
-                    {
+                    } else {
                         value += valueRest;
                     }
                     break;
                 }
 
                 final int valueRest = parseIntegerConstant(matcher.group(1));
-                if (negative)
-                {
+                if (negative) {
                     value -= valueRest;
-                }
-                else
-                {
+                } else {
                     value += valueRest;
                 }
             }
-        }
-        catch (final NumberFormatException ex)
-        {
+        } catch (final NumberFormatException ex) {
             throw new IOException("invalid number: "+str);
         }
 
@@ -140,35 +123,28 @@ public class ExpressionParser
      * @return the integer value
      * @throws NumberFormatException if the string cannot be parsed
      */
-    private int parseIntegerConstant(@NotNull final String str)
-    {
-        try
-        {
+    private int parseIntegerConstant(@NotNull final String str) {
+        try {
             return Integer.parseInt(str);
-        }
-        catch (final NumberFormatException ex)
-        {
-            if (str.equals(WIDTH))
-            {
+        } catch (final NumberFormatException ex) {
+            if (str.equals(WIDTH)) {
                 return resolution.getWidth();
             }
 
-            if (str.equals(HEIGHT))
-            {
+            if (str.equals(HEIGHT)) {
                 return resolution.getHeight();
             }
 
-            if (str.equals(WIDTH+"/2"))
-            {
+            if (str.equals(WIDTH+"/2")) {
                 return resolution.getWidth()/2;
             }
 
-            if (str.equals(HEIGHT+"/2"))
-            {
+            if (str.equals(HEIGHT+"/2")) {
                 return resolution.getHeight()/2;
             }
 
             throw ex;
         }
     }
+
 }

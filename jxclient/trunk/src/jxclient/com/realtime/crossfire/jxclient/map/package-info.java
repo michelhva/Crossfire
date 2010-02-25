@@ -19,9 +19,9 @@
  * Copyright (C) 2006-2010 Andreas Kirschbaum.
  */
 
-
 /**
  * Implements the map model which is shown in the map and magic map views.
  * @author Andreas Kirschbaum
  */
+
 package com.realtime.crossfire.jxclient.map;

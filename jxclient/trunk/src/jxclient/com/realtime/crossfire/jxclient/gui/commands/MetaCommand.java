@@ -29,8 +29,8 @@ import org.jetbrains.annotations.NotNull;
  * A {@link GUICommand} which shows the server selection screen.
  * @author Andreas Kirschbaum
  */
-public class MetaCommand implements GUICommand
-{
+public class MetaCommand implements GUICommand {
+
     /**
      * The {@link GuiStateManager} to affect.
      */
@@ -41,22 +41,24 @@ public class MetaCommand implements GUICommand
      * Creates a new instance.
      * @param guiStateManager the gui state manager to affect
      */
-    public MetaCommand(@NotNull final GuiStateManager guiStateManager)
-    {
+    public MetaCommand(@NotNull final GuiStateManager guiStateManager) {
         this.guiStateManager = guiStateManager;
     }
 
-    /** {@inheritDoc} */
+    /**
+     * {@inheritDoc}
+     */
     @Override
-    public boolean canExecute()
-    {
+    public boolean canExecute() {
         return true;
     }
 
-    /** {@inheritDoc} */
+    /**
+     * {@inheritDoc}
+     */
     @Override
-    public void execute()
-    {
+    public void execute() {
         guiStateManager.changeGUI(GuiState.METASERVER);
     }
+
 }

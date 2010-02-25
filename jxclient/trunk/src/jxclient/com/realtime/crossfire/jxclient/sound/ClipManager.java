@@ -30,11 +30,10 @@ import org.jetbrains.annotations.Nullable;
 /**
  * Manages a set of sound clips (short sound effects). Multiple sound effects
  * can be played simultaneously.
- *
  * @author Andreas Kirschbaum
  */
-public class ClipManager
-{
+public class ClipManager {
+
     /**
      * The executor service used to play sound clips.
      */
@@ -49,50 +48,38 @@ public class ClipManager
 
     /**
      * Play the given sound effect. This function returns immediately.
-     *
      * @param name An optional prefix for the action name.
-     *
      * @param action The action name of the sound effect.
      */
-    public void play(@Nullable final String name, @NotNull final String action)
-    {
+    public void play(@Nullable final String name, @NotNull final String action) {
         final DataLine clip = clipCache.allocateClip(name, action);
-        if (clip == null)
-        {
+        if (clip == null) {
             return;
         }
 
-        executorService.execute(new Runnable()
-            {
-                /** {@inheritDoc} */
-                @Override
-                public void run()
-                {
-                    try
-                    {
-                        clip.start();
-                        try
-                        {
-                            clip.drain();
-                        }
-                        finally
-                        {
-                            clip.stop();
-                        }
+        executorService.execute(new Runnable() {
+            /** {@inheritDoc} */
+            @Override
+            public void run() {
+                try {
+                    clip.start();
+                    try {
+                        clip.drain();
+                    } finally {
+                        clip.stop();
                     }
-                    finally
-                    {
-                        clipCache.freeClip(clip);
-                    }
+                } finally {
+                    clipCache.freeClip(clip);
                 }
-            });
+            }
+        });
     }
 
     /**
      * Terminate all running clips and free resources.
      */
-    public void shutdown()
-    {
+    public void shutdown() {
         executorService.shutdownNow();
     }
+
 }

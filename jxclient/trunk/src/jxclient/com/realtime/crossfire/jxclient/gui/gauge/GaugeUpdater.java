@@ -27,11 +27,10 @@ import org.jetbrains.annotations.Nullable;
 
 /**
  * Updates the displayed values in a {@link GUIGauge}.
- *
  * @author Andreas Kirschbaum
  */
-public abstract class GaugeUpdater
-{
+public abstract class GaugeUpdater {
+
     /**
      * The experience table to query.
      */
@@ -46,11 +45,9 @@ public abstract class GaugeUpdater
 
     /**
      * Create a new instance.
-     *
      * @param experienceTable The experience table to query.
      */
-    protected GaugeUpdater(@NotNull final ExperienceTable experienceTable)
-    {
+    protected GaugeUpdater(@NotNull final ExperienceTable experienceTable) {
         this.experienceTable = experienceTable;
     }
 
@@ -61,34 +58,24 @@ public abstract class GaugeUpdater
 
     /**
      * Set the gauge to update.
-     *
      * @param gauge The gauge.
      */
-    public void setGauge(@NotNull final GUIGaugeListener gauge)
-    {
+    public void setGauge(@NotNull final GUIGaugeListener gauge) {
         this.gauge = gauge;
     }
 
     /**
      * Update the gauge values.
-     *
      * @param curValue The current value.
-     *
      * @param minValue The minimum value.
-     *
      * @param maxValue The maximum value.
      */
-    protected void setValues(final int curValue, final int minValue, final int maxValue)
-    {
-        if (gauge != null)
-        {
+    protected void setValues(final int curValue, final int minValue, final int maxValue) {
+        if (gauge != null) {
             final String tooltipText;
-            if (minValue == 0)
-            {
+            if (minValue == 0) {
                 tooltipText = curValue+"/"+maxValue;
-            }
-            else
-            {
+            } else {
                 tooltipText = Integer.toString(curValue);
             }
             gauge.setValues(curValue, minValue, maxValue, Integer.toString(curValue), tooltipText);
@@ -97,50 +84,36 @@ public abstract class GaugeUpdater
 
     /**
      * Update the gauge values.
-     *
      * @param curValue The current value.
-     *
      * @param minValue The minimum value.
-     *
      * @param maxValue The maximum value.
-     *
      * @param labelText The text to draw on the gauge.
-     *
      * @param tooltipText The tooltip suffix.
      */
-    protected void setValues(final int curValue, final int minValue, final int maxValue, @NotNull final String labelText, @NotNull final String tooltipText)
-    {
-        if (gauge != null)
-        {
+    protected void setValues(final int curValue, final int minValue, final int maxValue, @NotNull final String labelText, @NotNull final String tooltipText) {
+        if (gauge != null) {
             gauge.setValues(curValue, minValue, maxValue, labelText, tooltipText);
         }
     }
 
     /**
      * Return the experience fraction of the current level.
-     *
      * @param level The level.
-     *
      * @param experience The experience.
-     *
      * @return The fraction in percents.
      */
-    protected int getPercentsToNextLevel(final int level, final long experience)
-    {
+    protected int getPercentsToNextLevel(final int level, final long experience) {
         return experienceTable.getPercentsToNextLevel(level, experience);
     }
 
     /**
      * Return the experience needed to reach nextlevel.
-     *
      * @param level The level.
-     *
      * @param experience The experience.
-     *
      * @return The needed experience.
      */
-    protected long getExperienceToNextLevel(final int level, final long experience)
-    {
+    protected long getExperienceToNextLevel(final int level, final long experience) {
         return experienceTable.getExperienceToNextLevel(level, experience);
     }
+
 }

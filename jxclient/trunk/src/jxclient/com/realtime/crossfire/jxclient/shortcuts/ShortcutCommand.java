@@ -26,15 +26,14 @@ import org.jetbrains.annotations.NotNull;
 
 /**
  * A {@link Shortcut} that executes a Crossfire command.
- *
  * @author Andreas Kirschbaum
  */
-public class ShortcutCommand extends Shortcut
-{
-     /**
+public class ShortcutCommand extends Shortcut {
+
+    /**
      * The command queue for sending commands.
      */
-     @NotNull
+    @NotNull
     private final CommandQueue commandQueue;
 
     /**
@@ -48,41 +47,42 @@ public class ShortcutCommand extends Shortcut
      * @param commandQueue the command queue for sending commands
      * @param command the command to execute
      */
-    public ShortcutCommand(@NotNull final CommandQueue commandQueue, @NotNull final String command)
-    {
+    public ShortcutCommand(@NotNull final CommandQueue commandQueue, @NotNull final String command) {
         this.commandQueue = commandQueue;
         this.command = command;
     }
 
     /**
      * Return the command to execute.
-     *
      * @return The command.
      */
     @NotNull
-    public String getCommand()
-    {
+    public String getCommand() {
         return command;
     }
 
-    /** {@inheritDoc} */
+    /**
+     * {@inheritDoc}
+     */
     @Override
-    public void dispose()
-    {
+    public void dispose() {
     }
 
-    /** {@inheritDoc} */
+    /**
+     * {@inheritDoc}
+     */
     @Override
-    public void execute()
-    {
+    public void execute() {
         commandQueue.sendNcom(false, command);
     }
 
-    /** {@inheritDoc} */
+    /**
+     * {@inheritDoc}
+     */
     @NotNull
     @Override
-    public String getTooltipText()
-    {
+    public String getTooltipText() {
         return command;
     }
+
 }

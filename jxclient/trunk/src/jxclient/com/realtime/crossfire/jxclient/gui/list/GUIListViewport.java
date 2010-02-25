@@ -27,8 +27,8 @@ import javax.swing.JViewport;
  * A {@link JViewport} that allows updating the viewport state.
  * @author Andreas Kirschbaum
  */
-public class GUIListViewport extends JViewport
-{
+public class GUIListViewport extends JViewport {
+
     /**
      * The serial version UID.
      */
@@ -37,8 +37,8 @@ public class GUIListViewport extends JViewport
     /**
      * Updates the viewport state.
      */
-    public void update()
-    {
+    public void update() {
         fireStateChanged();
     }
+
 }

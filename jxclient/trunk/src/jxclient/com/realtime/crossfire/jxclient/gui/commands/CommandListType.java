@@ -25,11 +25,16 @@ package com.realtime.crossfire.jxclient.gui.commands;
  * The command list type.
  * @author Andreas Kirschbaum
  */
-public enum CommandListType
-{
-    /** List is executed if all entries can execute. */
+public enum CommandListType {
+
+    /**
+     * List is executed if all entries can execute.
+     */
     AND,
 
-    /** List is executed if any entry can execute. */
-    OR,
+    /**
+     * List is executed if any entry can execute.
+     */
+    OR
+
 }

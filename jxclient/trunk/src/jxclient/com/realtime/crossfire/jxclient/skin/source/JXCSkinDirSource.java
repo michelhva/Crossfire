@@ -30,11 +30,10 @@ import org.jetbrains.annotations.NotNull;
 
 /**
  * A {@link JXCSkinSource} that loads from files.
- *
  * @author Andreas Kirschbaum
  */
-public class JXCSkinDirSource extends AbstractJXCSkinSource
-{
+public class JXCSkinDirSource extends AbstractJXCSkinSource {
+
     /**
      * The base directory.
      */
@@ -43,30 +42,30 @@ public class JXCSkinDirSource extends AbstractJXCSkinSource
 
     /**
      * Create a new instance.
-     *
      * @param dir The base directory.
-     *
      * @throws JXCSkinException if the skin cannot be loaded
      */
-    public JXCSkinDirSource(@NotNull final File dir) throws JXCSkinException
-    {
+    public JXCSkinDirSource(@NotNull final File dir) throws JXCSkinException {
         this.dir = dir;
         checkAccess();
     }
 
-    /** {@inheritDoc} */
+    /**
+     * {@inheritDoc}
+     */
     @NotNull
     @Override
-    public InputStream getInputStream(@NotNull final String name) throws IOException
-    {
+    public InputStream getInputStream(@NotNull final String name) throws IOException {
         return new FileInputStream(new File(dir, name));
     }
 
-    /** {@inheritDoc} */
+    /**
+     * {@inheritDoc}
+     */
     @NotNull
     @Override
-    public String getURI(@NotNull final String name)
-    {
+    public String getURI(@NotNull final String name) {
         return "file:"+new File(dir, name);
     }
+
 }

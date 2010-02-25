@@ -35,11 +35,10 @@ import org.jetbrains.annotations.NotNull;
 /**
  * Manages the contents of the contents of a log window. It consists of a list
  * of {@link Line}s.
- *
  * @author Andreas Kirschbaum
  */
-public class Buffer
-{
+public class Buffer {
+
     /**
      * The maximum number of lines the buffer can hold.
      */
@@ -88,15 +87,11 @@ public class Buffer
 
     /**
      * Create a new instance.
-     *
      * @param fonts The <code>Fonts</code> instance for looking up fonts.
-     *
      * @param context The <code>FontRenderContext</code> to use.
-     *
      * @param renderWidth The width to render.
      */
-    public Buffer(@NotNull final Fonts fonts, @NotNull final FontRenderContext context, final int renderWidth)
-    {
+    public Buffer(@NotNull final Fonts fonts, @NotNull final FontRenderContext context, final int renderWidth) {
         this.fonts = fonts;
         this.context = context;
         this.renderWidth = renderWidth;
@@ -105,61 +100,50 @@ public class Buffer
     /**
      * Clear all lines from the buffer.
      */
-    public void clear()
-    {
+    public void clear() {
         final List<Line> removedLines;
-        synchronized (sync)
-        {
+        synchronized (sync) {
             removedLines = new ArrayList<Line>(lines);
             totalHeight = 0;
             lines.clear();
         }
-        for (final BufferListener listener : listeners)
-        {
+        for (final BufferListener listener : listeners) {
             listener.linesRemoved(removedLines);
         }
     }
 
     /**
      * Append a {@link Line} to the end of the buffer.
-     *
      * @param line The line to append.
      */
-    public void addLine(@NotNull final Line line)
-    {
+    public void addLine(@NotNull final Line line) {
         final int height = calculateHeight(line);
         line.setHeight(height);
-        synchronized (sync)
-        {
+        synchronized (sync) {
             totalHeight += height;
             lines.add(line);
         }
 
-        for (final BufferListener listener : listeners)
-        {
+        for (final BufferListener listener : listeners) {
             listener.linesAdded(1);
         }
     }
 
     /**
      * Replace the last {@link Line} of this buffer.
-     *
      * @param line The replacing line.
      */
-    public void replaceLine(@NotNull final Line line)
-    {
+    public void replaceLine(@NotNull final Line line) {
         final int height = calculateHeight(line);
         line.setHeight(height);
-        synchronized (sync)
-        {
+        synchronized (sync) {
             totalHeight += height;
             final int lastIndex = lines.size()-1;
             totalHeight -= lines.get(lastIndex).getHeight();
             lines.set(lastIndex, line);
         }
 
-        for (final BufferListener listener : listeners)
-        {
+        for (final BufferListener listener : listeners) {
             listener.linesReplaced(1);
         }
     }
@@ -167,26 +151,21 @@ public class Buffer
     /**
      * Prune excess lines.
      */
-    public void prune()
-    {
+    public void prune() {
         final List<Line> removedLines;
-        synchronized (sync)
-        {
-            if (lines.size() <= MAX_LINES)
-            {
+        synchronized (sync) {
+            if (lines.size() <= MAX_LINES) {
                 return;
             }
 
             removedLines = new ArrayList<Line>(lines.size()-MAX_LINES);
-            while (lines.size() > MAX_LINES)
-            {
+            while (lines.size() > MAX_LINES) {
                 final Line line = lines.remove(0);
                 removedLines.add(line);
                 totalHeight -= line.getHeight();
             }
         }
-        for (final BufferListener listener : listeners)
-        {
+        for (final BufferListener listener : listeners) {
             listener.linesRemoved(removedLines);
         }
     }
@@ -194,29 +173,22 @@ public class Buffer
     /**
      * Return one {@link Line} by line index. The first line has the index
      * <code>0</code>.
-     *
      * @param line The line index.
-     *
      * @return The line.
      */
     @NotNull
-    public Line getLine(final int line)
-    {
-        synchronized (sync)
-        {
+    public Line getLine(final int line) {
+        synchronized (sync) {
             return lines.get(line);
         }
     }
 
     /**
      * Return the total height of all lines.
-     *
      * @return The total height.
      */
-    public int getTotalHeight()
-    {
-        synchronized (sync)
-        {
+    public int getTotalHeight() {
+        synchronized (sync) {
             return Math.max(totalHeight, 1);
         }
     }
@@ -227,60 +199,48 @@ public class Buffer
      * @return the iterator
      */
     @NotNull
-    public Iterator<Line> iterator()
-    {
+    public Iterator<Line> iterator() {
         assert Thread.holdsLock(sync);
         return Collections.unmodifiableList(lines).iterator();
     }
 
     /**
      * Return a {@link ListIterator} for the lines in this buffer.
-     *
      * @param line The initial line index of the list iterator.
-     *
      * @return The list iterator.
      */
     @NotNull
-    public ListIterator<Line> listIterator(final int line)
-    {
+    public ListIterator<Line> listIterator(final int line) {
         assert Thread.holdsLock(sync);
         return Collections.unmodifiableList(lines).listIterator(line);
     }
 
     /**
      * Return the number of lines.
-     *
      * @return The number of lines.
      */
-    public int size()
-    {
-        synchronized (sync)
-        {
+    public int size() {
+        synchronized (sync) {
             return lines.size();
         }
     }
 
     /**
      * Determine the height of a {@link Line} in pixels.
-     *
      * @param line The line to process.
-     *
      * @return The height in pixels.
      */
-    private int calculateHeight(@NotNull final Line line)
-    {
+    private int calculateHeight(@NotNull final Line line) {
         int height = 0;
         int x = 0;
         int minY = 0;
         int maxY = 0;
         int beginIndex = 0;
         int i = 0;
-        for (final Segment segment : line)
-        {
+        for (final Segment segment : line) {
             final RectangularShape rect = segment.getSize(fonts, context);
             final int width = (int)Math.round(rect.getWidth());
-            if (x != 0 && x+width > renderWidth)
-            {
+            if (x != 0 && x+width > renderWidth) {
                 line.updateAttributes(beginIndex, i, height-minY, fonts, context);
 
                 height += maxY-minY;
@@ -309,11 +269,9 @@ public class Buffer
 
     /**
      * Add a listener to notify of changes.
-     *
      * @param listener The listener.
      */
-    public void addBufferListener(@NotNull final BufferListener listener)
-    {
+    public void addBufferListener(@NotNull final BufferListener listener) {
         listeners.add(listener);
     }
 
@@ -321,8 +279,7 @@ public class Buffer
      * Removes a listener to be notified of changes.
      * @param listener the listener
      */
-    public void removeBufferListener(@NotNull final BufferListener listener)
-    {
+    public void removeBufferListener(@NotNull final BufferListener listener) {
         listeners.remove(listener);
     }
 
@@ -332,8 +289,8 @@ public class Buffer
      * @return the object
      */
     @NotNull
-    public Object getSyncObject()
-    {
+    public Object getSyncObject() {
         return sync;
     }
+
 }

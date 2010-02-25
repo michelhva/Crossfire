@@ -31,8 +31,8 @@ import org.jetbrains.annotations.Nullable;
  * @author Lauwenmark
  * @author Andreas Kirschbaum
  */
-public abstract class KeyBinding
-{
+public abstract class KeyBinding {
+
     /**
      * The associated {@link CommandList}.
      */
@@ -50,8 +50,7 @@ public abstract class KeyBinding
      * @return the associated command list
      */
     @NotNull
-    public CommandList getCommands()
-    {
+    public CommandList getCommands() {
         return commands;
     }
 
@@ -61,17 +60,20 @@ public abstract class KeyBinding
      * @param isDefault whether the key binding is a "default" binding which
      * should not be saved
      */
-    protected KeyBinding(@NotNull final CommandList commands, final boolean isDefault)
-    {
+    protected KeyBinding(@NotNull final CommandList commands, final boolean isDefault) {
         this.commands = commands;
         this.isDefault = isDefault;
     }
 
-    /** {@inheritDoc} */
+    /**
+     * {@inheritDoc}
+     */
     @Override
     public abstract boolean equals(@Nullable final Object obj);
 
-    /** {@inheritDoc} */
+    /**
+     * {@inheritDoc}
+     */
     @Override
     public abstract int hashCode();
 
@@ -95,8 +97,7 @@ public abstract class KeyBinding
      * @return the commands as a string
      */
     @NotNull
-    public String getCommandString()
-    {
+    public String getCommandString() {
         return commands.getCommandString();
     }
 
@@ -105,8 +106,8 @@ public abstract class KeyBinding
      * be saved.
      * @return <code>true</code>=do not save
      */
-    public boolean isDefault()
-    {
+    public boolean isDefault() {
         return isDefault;
     }
+
 }

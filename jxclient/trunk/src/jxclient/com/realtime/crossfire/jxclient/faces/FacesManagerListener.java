@@ -27,11 +27,12 @@ import org.jetbrains.annotations.NotNull;
  * Interface for listeners interested in {@link FacesManager} events.
  * @author Andreas Kirschbaum
  */
-public interface FacesManagerListener
-{
+public interface FacesManagerListener {
+
     /**
      * Called when a {@link Face} has been updated.
      * @param face the face
      */
     void faceUpdated(@NotNull final Face face);
+
 }

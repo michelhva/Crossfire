@@ -25,8 +25,8 @@ package com.realtime.crossfire.jxclient.guistate;
  * Possible gui states.
  * @author Andreas Kirschbaum
  */
-public enum GuiState
-{
+public enum GuiState {
+
     START,
 
     METASERVER,
@@ -36,4 +36,5 @@ public enum GuiState
     CONNECTED,
 
     CONNECT_FAILED
+
 }

@@ -30,8 +30,8 @@ import org.jetbrains.annotations.NotNull;
  * ServerConnection}.
  * @author Andreas Kirschbaum
  */
-public interface CrossfireServerConnection extends ServerConnection
-{
+public interface CrossfireServerConnection extends ServerConnection {
+
     /**
      * Starts operation.
      */
@@ -335,8 +335,8 @@ public interface CrossfireServerConnection extends ServerConnection
     void setMapSize(int mapWidth, int mapHeight);
 
     /**
-     * Sets the maximum number of objects in the ground view. Must not be
-     * called in connected state.
+     * Sets the maximum number of objects in the ground view. Must not be called
+     * in connected state.
      * @param numLookObjects the number of objects
      * @throws IllegalArgumentException if the number of objects is invalid
      */
@@ -353,4 +353,5 @@ public interface CrossfireServerConnection extends ServerConnection
      * @return the map height
      */
     int getMapHeight();
+
 }

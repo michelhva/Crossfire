@@ -27,11 +27,10 @@ import org.jetbrains.annotations.NotNull;
 
 /**
  * A list of {@link GUICommand} instances.
- *
  * @author Andreas Kirschbaum
  */
-public class CommandList
-{
+public class CommandList {
+
     /**
      * The command list type.
      */
@@ -46,21 +45,17 @@ public class CommandList
 
     /**
      * Create a new instance as an empty command list.
-     *
      * @param commandListType The command list type.
      */
-    public CommandList(@NotNull final CommandListType commandListType)
-    {
+    public CommandList(@NotNull final CommandListType commandListType) {
         this.commandListType = commandListType;
     }
 
     /**
      * Add a command to the end of this command list.
-     *
      * @param guiCommand The command to add.
      */
-    public void add(@NotNull final GUICommand guiCommand)
-    {
+    public void add(@NotNull final GUICommand guiCommand) {
         commandList.add(guiCommand);
     }
 
@@ -68,15 +63,11 @@ public class CommandList
      * Returns whether execution is possible.
      * @return whether execution is possible
      */
-    public boolean canExecute()
-    {
-        switch (commandListType)
-        {
+    public boolean canExecute() {
+        switch (commandListType) {
         case AND:
-            for (final GUICommand command : commandList)
-            {
-                if (!command.canExecute())
-                {
+            for (final GUICommand command : commandList) {
+                if (!command.canExecute()) {
                     return false;
                 }
             }
@@ -84,16 +75,13 @@ public class CommandList
 
         case OR:
             boolean ok = false;
-            for (final GUICommand command : commandList)
-            {
-                if (command.canExecute())
-                {
+            for (final GUICommand command : commandList) {
+                if (command.canExecute()) {
                     ok = true;
                     break;
                 }
             }
-            if (!ok)
-            {
+            if (!ok) {
                 return false;
             }
             break;
@@ -103,59 +91,46 @@ public class CommandList
     }
 
     /**
-     * Execute the command list by calling {@link GUICommand#execute()} for
-     * each command in order.
+     * Execute the command list by calling {@link GUICommand#execute()} for each
+     * command in order.
      */
-    public void execute()
-    {
-        if (!canExecute())
-        {
+    public void execute() {
+        if (!canExecute()) {
             return;
         }
 
-        for (final GUICommand command : commandList)
-        {
+        for (final GUICommand command : commandList) {
             command.execute();
         }
     }
 
     /**
      * Return the commands as a string.
-     *
      * @return The commands as a string.
      */
     @NotNull
-    public String getCommandString()
-    {
+    public String getCommandString() {
         final StringBuilder sb = new StringBuilder();
         boolean firstCommand = true;
-        for (final Object guiCommand : commandList)
-        {
+        for (final Object guiCommand : commandList) {
             final String commandString;
-            if (guiCommand instanceof ExecuteCommandCommand)
-            {
+            if (guiCommand instanceof ExecuteCommandCommand) {
                 commandString = ((ExecuteCommandCommand)guiCommand).getCommand();
-            }
-            else if (guiCommand instanceof ActivateCommandInputCommand)
-            {
+            } else if (guiCommand instanceof ActivateCommandInputCommand) {
                 final String commandText = ((ActivateCommandInputCommand)guiCommand).getCommandText();
                 commandString = commandText.length() > 0 ? "-e "+commandText : "-e";
-            }
-            else
-            {
+            } else {
                 throw new AssertionError("Cannot encode command of type "+guiCommand.getClass().getName());
             }
 
-            if (firstCommand)
-            {
+            if (firstCommand) {
                 firstCommand = false;
-            }
-            else
-            {
+            } else {
                 sb.append(';');
             }
             sb.append(commandString);
         }
         return sb.toString();
     }
+
 }

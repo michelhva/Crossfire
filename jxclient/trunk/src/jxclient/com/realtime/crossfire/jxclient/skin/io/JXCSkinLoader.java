@@ -131,8 +131,8 @@ import org.jetbrains.annotations.Nullable;
  * Parser for loading {@link JXCSkin} instances from {@link JXCSkinSource}s.
  * @author Andreas Kirschbaum
  */
-public class JXCSkinLoader
-{
+public class JXCSkinLoader {
+
     /**
      * The {@link ItemsManager} instance to use.
      */
@@ -278,8 +278,7 @@ public class JXCSkinLoader
      * @param experienceTable the experience table to use
      * @param skillSet the skill set to use
      */
-    public JXCSkinLoader(@NotNull final ItemsManager itemsManager, @NotNull final SpellsManager spellsManager, @NotNull final FacesManager facesManager, @NotNull final Stats stats, @NotNull final CfMapUpdater mapUpdater, @NotNull final KeyBindings defaultKeyBindings, @NotNull final OptionManager optionManager, @NotNull final ExperienceTable experienceTable, @NotNull final SkillSet skillSet)
-    {
+    public JXCSkinLoader(@NotNull final ItemsManager itemsManager, @NotNull final SpellsManager spellsManager, @NotNull final FacesManager facesManager, @NotNull final Stats stats, @NotNull final CfMapUpdater mapUpdater, @NotNull final KeyBindings defaultKeyBindings, @NotNull final OptionManager optionManager, @NotNull final ExperienceTable experienceTable, @NotNull final SkillSet skillSet) {
         this.itemsManager = itemsManager;
         this.spellsManager = spellsManager;
         this.facesManager = facesManager;
@@ -312,47 +311,33 @@ public class JXCSkinLoader
      * @throws JXCSkinException if the skin cannot be loaded
      */
     @NotNull
-    public JXCSkin load(@NotNull final JXCSkinSource skinSource, @NotNull final CrossfireServerConnection crossfireServerConnection, @NotNull final GuiStateManager guiStateManager, @NotNull final TooltipManager tooltipManager, @NotNull final JXCWindowRenderer windowRenderer, @NotNull final GUIElementListener elementListener, @NotNull final MetaserverModel metaserverModel, @NotNull final CommandQueue commandQueue, @NotNull final Resolution resolution, @NotNull final Shortcuts shortcuts, @NotNull final Commands commands, @NotNull final CurrentSpellManager currentSpellManager, @NotNull final CommandCallback commandCallback, @NotNull final Macros macros, @NotNull final GuiFactory guiFactory) throws JXCSkinException
-    {
+    public JXCSkin load(@NotNull final JXCSkinSource skinSource, @NotNull final CrossfireServerConnection crossfireServerConnection, @NotNull final GuiStateManager guiStateManager, @NotNull final TooltipManager tooltipManager, @NotNull final JXCWindowRenderer windowRenderer, @NotNull final GUIElementListener elementListener, @NotNull final MetaserverModel metaserverModel, @NotNull final CommandQueue commandQueue, @NotNull final Resolution resolution, @NotNull final Shortcuts shortcuts, @NotNull final Commands commands, @NotNull final CurrentSpellManager currentSpellManager, @NotNull final CommandCallback commandCallback, @NotNull final Macros macros, @NotNull final GuiFactory guiFactory) throws JXCSkinException {
         imageParser = new ImageParser(skinSource);
         fontParser = new FontParser(skinSource);
         final Resolution selectedResolution;
-        if (resolution.isExact())
-        {
-            if (!skinSource.containsResolution(resolution))
-            {
+        if (resolution.isExact()) {
+            if (!skinSource.containsResolution(resolution)) {
                 throw new JXCSkinException("resolution "+resolution+" is not supported by this skin");
             }
 
             selectedResolution = resolution;
-        }
-        else
-        {
-            if (skinSource.containsResolution(resolution))
-            {
+        } else {
+            if (skinSource.containsResolution(resolution)) {
                 selectedResolution = resolution;
-            }
-            else
-            {
+            } else {
                 Resolution selectedCandidate = null;
                 // select maximum <= requested
-                for (final Resolution candidate: skinSource)
-                {
-                    if (candidate.getWidth() <= resolution.getWidth() && candidate.getHeight() <= resolution.getHeight())
-                    {
-                        if (selectedCandidate == null || selectedCandidate.getArea() < candidate.getArea())
-                        {
+                for (final Resolution candidate : skinSource) {
+                    if (candidate.getWidth() <= resolution.getWidth() && candidate.getHeight() <= resolution.getHeight()) {
+                        if (selectedCandidate == null || selectedCandidate.getArea() < candidate.getArea()) {
                             selectedCandidate = candidate;
                         }
                     }
                 }
-                if (selectedCandidate == null)
-                {
+                if (selectedCandidate == null) {
                     // select minimum > requested
-                    for (final Resolution candidate: skinSource)
-                    {
-                        if (selectedCandidate == null || selectedCandidate.getArea() > candidate.getArea())
-                        {
+                    for (final Resolution candidate : skinSource) {
+                        if (selectedCandidate == null || selectedCandidate.getArea() > candidate.getArea()) {
                             selectedCandidate = candidate;
                         }
                     }
@@ -368,8 +353,7 @@ public class JXCSkinLoader
         commandParser = new CommandParser(dialogs, itemsManager, expressionParser, definedGUIElements);
         skin = new DefaultJXCSkin(defaultKeyBindings, optionManager, selectedResolution, dialogs);
         @Nullable JXCSkin skinToDetach = skin;
-        try
-        {
+        try {
             guiElementParser = new GuiElementParser(definedGUIElements);
             imageParser.clear();
             skin.addDialog("keybind");
@@ -385,23 +369,18 @@ public class JXCSkinLoader
             textButtonFactory = null;
             dialogFactory = null;
             checkBoxFactory = null;
-            try
-            {
+            try {
                 load(skinSource, "global", crossfireServerConnection, guiStateManager, tooltipManager, windowRenderer, elementListener, metaserverModel, commandQueue, null, shortcuts, commands, currentSpellManager, commandCallback, macros);
-                for (;;)
-                {
+                for (; ;) {
                     final String name = skin.getDialogToLoad();
-                    if (name == null)
-                    {
+                    if (name == null) {
                         break;
                     }
                     final Gui gui = skin.getDialog(name);
                     load(skinSource, name, crossfireServerConnection, guiStateManager, tooltipManager, windowRenderer, elementListener, metaserverModel, commandQueue, gui, shortcuts, commands, currentSpellManager, commandCallback, macros);
                     gui.setStateChanged(false);
                 }
-            }
-            finally
-            {
+            } finally {
                 definedFonts.clear();
                 textButtonFactory = null;
                 dialogFactory = null;
@@ -409,17 +388,13 @@ public class JXCSkinLoader
                 imageParser.clear();
             }
 
-            if (skin.getMapWidth() == 0 || skin.getMapHeight() == 0)
-            {
+            if (skin.getMapWidth() == 0 || skin.getMapHeight() == 0) {
                 throw new JXCSkinException("Missing map command");
             }
 
             skinToDetach = null;
-        }
-        finally
-        {
-            if (skinToDetach != null)
-            {
+        } finally {
+            if (skinToDetach != null) {
                 skinToDetach.detach();
             }
         }
@@ -446,42 +421,28 @@ public class JXCSkinLoader
      * @param macros the macros instance to use
      * @throws JXCSkinException if the file cannot be loaded
      */
-    private void load(@NotNull final JXCSkinSource skinSource, @NotNull final String dialogName, @NotNull final CrossfireServerConnection server, @NotNull final GuiStateManager guiStateManager, @NotNull final TooltipManager tooltipManager, @NotNull final JXCWindowRenderer windowRenderer, @NotNull final GUIElementListener elementListener, @NotNull final MetaserverModel metaserverModel, @NotNull final CommandQueue commandQueue, @Nullable final Gui gui, @NotNull final Shortcuts shortcuts, @NotNull final Commands commands, @NotNull final CurrentSpellManager currentSpellManager, @NotNull final CommandCallback commandCallback, @NotNull final Macros macros) throws JXCSkinException
-    {
+    private void load(@NotNull final JXCSkinSource skinSource, @NotNull final String dialogName, @NotNull final CrossfireServerConnection server, @NotNull final GuiStateManager guiStateManager, @NotNull final TooltipManager tooltipManager, @NotNull final JXCWindowRenderer windowRenderer, @NotNull final GUIElementListener elementListener, @NotNull final MetaserverModel metaserverModel, @NotNull final CommandQueue commandQueue, @Nullable final Gui gui, @NotNull final Shortcuts shortcuts, @NotNull final Commands commands, @NotNull final CurrentSpellManager currentSpellManager, @NotNull final CommandCallback commandCallback, @NotNull final Macros macros) throws JXCSkinException {
         String resourceName = dialogName+"@"+skin.getSelectedResolution()+".skin";
 
         definedGUIElements.clear();
-        try
-        {
+        try {
             InputStream inputStream;
-            try
-            {
+            try {
                 inputStream = skinSource.getInputStream(resourceName);
-            }
-            catch (final IOException ex)
-            {
+            } catch (final IOException ex) {
                 resourceName = dialogName+".skin";
                 inputStream = skinSource.getInputStream(resourceName);
             }
-            try
-            {
+            try {
                 load(skinSource, dialogName, resourceName, inputStream, server, guiStateManager, tooltipManager, windowRenderer, elementListener, metaserverModel, commandQueue, gui, shortcuts, commands, currentSpellManager, commandCallback, macros);
-            }
-            finally
-            {
+            } finally {
                 inputStream.close();
             }
-        }
-        catch (final IOException ex)
-        {
+        } catch (final IOException ex) {
             throw new JXCSkinException(skinSource.getURI(resourceName)+": "+ex.getMessage());
-        }
-        catch (final JXCSkinException ex)
-        {
+        } catch (final JXCSkinException ex) {
             throw new JXCSkinException(skinSource.getURI(resourceName)+": "+ex.getMessage());
-        }
-        finally
-        {
+        } finally {
             definedGUIElements.clear();
         }
     }
@@ -508,268 +469,150 @@ public class JXCSkinLoader
      * @param macros the macros instance to use
      * @throws JXCSkinException if the file cannot be loaded
      */
-    private void load(@NotNull final JXCSkinSource skinSource, @NotNull final String dialogName, @NotNull final String resourceName, @NotNull final InputStream inputStream, @NotNull final CrossfireServerConnection server, @NotNull final GuiStateManager guiStateManager, @NotNull final TooltipManager tooltipManager, @NotNull final JXCWindowRenderer windowRenderer, @NotNull final GUIElementListener elementListener, @NotNull final MetaserverModel metaserverModel, @NotNull final CommandQueue commandQueue, @Nullable final Gui gui, @NotNull final Shortcuts shortcuts, @NotNull final Commands commands, @NotNull final CurrentSpellManager currentSpellManager, @NotNull final CommandCallback commandCallback, @NotNull final Macros macros) throws JXCSkinException
-    {
+    private void load(@NotNull final JXCSkinSource skinSource, @NotNull final String dialogName, @NotNull final String resourceName, @NotNull final InputStream inputStream, @NotNull final CrossfireServerConnection server, @NotNull final GuiStateManager guiStateManager, @NotNull final TooltipManager tooltipManager, @NotNull final JXCWindowRenderer windowRenderer, @NotNull final GUIElementListener elementListener, @NotNull final MetaserverModel metaserverModel, @NotNull final CommandQueue commandQueue, @Nullable final Gui gui, @NotNull final Shortcuts shortcuts, @NotNull final Commands commands, @NotNull final CurrentSpellManager currentSpellManager, @NotNull final CommandCallback commandCallback, @NotNull final Macros macros) throws JXCSkinException {
         final List<GUIElement> addedElements = new ArrayList<GUIElement>();
         boolean addedElementsContainsWildcard = false;
 
-        try
-        {
+        try {
             final InputStreamReader isr = new InputStreamReader(inputStream, "UTF-8");
-            try
-            {
+            try {
                 final LineNumberReader lnr = new LineNumberReader(isr);
-                try
-                {
-                    for (;;)
-                    {
+                try {
+                    for (; ;) {
                         final String line = lnr.readLine();
-                        if (line == null)
-                        {
+                        if (line == null) {
                             break;
                         }
 
-                        if (line.startsWith("#") || line.length() == 0)
-                        {
+                        if (line.startsWith("#") || line.length() == 0) {
                             continue;
                         }
 
                         final String[] args;
-                        try
-                        {
+                        try {
                             args = StringUtils.splitFields(line);
-                        }
-                        catch (final UnterminatedTokenException ex)
-                        {
+                        } catch (final UnterminatedTokenException ex) {
                             throw new JXCSkinException(ex.getMessage());
                         }
-                        if (gui != null && args[0].equals("add"))
-                        {
-                            if (args.length != 2)
-                            {
+                        if (gui != null && args[0].equals("add")) {
+                            if (args.length != 2) {
                                 throw new IOException("syntax error");
                             }
 
-                            if (args[1].equals("*"))
-                            {
+                            if (args[1].equals("*")) {
                                 addedElementsContainsWildcard = true;
                                 addedElements.add(null);
-                            }
-                            else
-                            {
+                            } else {
                                 addedElements.add(definedGUIElements.lookup(args[1]));
                             }
-                        }
-                        else if (gui != null && args[0].equals("button"))
-                        {
+                        } else if (gui != null && args[0].equals("button")) {
                             parseButton(args, tooltipManager, elementListener, lnr);
-                        }
-                        else if (gui != null && args[0].equals("checkbox"))
-                        {
+                        } else if (gui != null && args[0].equals("checkbox")) {
                             parseCheckbox(args, tooltipManager, elementListener, lnr);
-                        }
-                        else if (args[0].equals("commandlist"))
-                        {
+                        } else if (args[0].equals("commandlist")) {
                             parseCommandList(args, guiStateManager, lnr, commands, commandQueue, server, commandCallback, macros);
-                        }
-                        else if (args[0].equals("commandlist_add"))
-                        {
+                        } else if (args[0].equals("commandlist_add")) {
                             parseCommandListAdd(args, guiStateManager, lnr, commands, commandQueue, server, commandCallback, macros);
-                        }
-                        else if (gui != null && args[0].equals("command_text"))
-                        {
+                        } else if (gui != null && args[0].equals("command_text")) {
                             parseCommandText(args, commandCallback, tooltipManager, elementListener, commands);
-                        }
-                        else if (args[0].equals("def"))
-                        {
+                        } else if (args[0].equals("def")) {
                             parseDef(args, lnr);
-                        }
-                        else if (gui != null && args[0].equals("dialog"))
-                        {
+                        } else if (gui != null && args[0].equals("dialog")) {
                             parseDialog(args, tooltipManager, windowRenderer, elementListener, lnr, gui, dialogName);
-                        }
-                        else if (gui != null && args[0].equals("dialog_hide"))
-                        {
+                        } else if (gui != null && args[0].equals("dialog_hide")) {
                             parseDialogHide(args, gui);
-                        }
-                        else if (gui != null && args[0].equals("dupgauge"))
-                        {
+                        } else if (gui != null && args[0].equals("dupgauge")) {
                             parseDupGauge(args, tooltipManager, elementListener, lnr);
-                        }
-                        else if (gui != null && args[0].equals("duptextgauge"))
-                        {
+                        } else if (gui != null && args[0].equals("duptextgauge")) {
                             parseDupTextGauge(args, tooltipManager, elementListener, lnr);
-                        }
-                        else if (args[0].equals("event"))
-                        {
+                        } else if (args[0].equals("event")) {
                             parseEvent(args, guiStateManager, server);
-                        }
-                        else if (args[0].equals("font"))
-                        {
+                        } else if (args[0].equals("font")) {
                             parseFont(args);
-                        }
-                        else if (gui != null && args[0].equals("gauge"))
-                        {
+                        } else if (gui != null && args[0].equals("gauge")) {
                             parseGauge(args, tooltipManager, elementListener, lnr);
-                        }
-                        else if (gui != null && args[0].equals("ignore"))
-                        {
+                        } else if (gui != null && args[0].equals("ignore")) {
                             parseIgnore(args);
-                        }
-                        else if (gui != null && args[0].equals("inventory_list"))
-                        {
+                        } else if (gui != null && args[0].equals("inventory_list")) {
                             parseInventoryList(args, tooltipManager, elementListener, commandQueue, server);
-                        }
-                        else if (gui != null && args[0].equals("item"))
-                        {
+                        } else if (gui != null && args[0].equals("item")) {
                             parseItem(args, tooltipManager, elementListener, commandQueue, server, shortcuts, currentSpellManager);
-                        }
-                        else if (args[0].equals("key"))
-                        {
+                        } else if (args[0].equals("key")) {
                             parseKey(args, gui, line);
-                        }
-                        else if (gui != null && args[0].equals("label_html"))
-                        {
+                        } else if (gui != null && args[0].equals("label_html")) {
                             parseLabelHtml(args, tooltipManager, elementListener, lnr);
-                        }
-                        else if (gui != null && args[0].equals("label_multi"))
-                        {
+                        } else if (gui != null && args[0].equals("label_multi")) {
                             parseLabelMulti(args, tooltipManager, elementListener, lnr);
-                        }
-                        else if (gui != null && args[0].equals("label_query"))
-                        {
+                        } else if (gui != null && args[0].equals("label_query")) {
                             parseLabelQuery(args, tooltipManager, elementListener, server);
-                        }
-                        else if (gui != null && args[0].equals("label_text"))
-                        {
+                        } else if (gui != null && args[0].equals("label_text")) {
                             parseLabelText(args, tooltipManager, elementListener, lnr);
-                        }
-                        else if (gui != null && args[0].equals("label_stat"))
-                        {
+                        } else if (gui != null && args[0].equals("label_stat")) {
                             parseLabelStat(args, tooltipManager, elementListener);
-                        }
-                        else if (gui != null && args[0].equals("label_spell"))
-                        {
+                        } else if (gui != null && args[0].equals("label_spell")) {
                             parseLabelSpell(args, tooltipManager, elementListener, currentSpellManager);
-                        }
-                        else if (gui != null && args[0].equals("log_label"))
-                        {
+                        } else if (gui != null && args[0].equals("log_label")) {
                             parseLogLabel(args, tooltipManager, elementListener);
-                        }
-                        else if (gui != null && args[0].equals("log_message"))
-                        {
+                        } else if (gui != null && args[0].equals("log_message")) {
                             parseLogMessage(args, tooltipManager, elementListener, server);
-                        }
-                        else if (gui != null && args[0].equals("log_color"))
-                        {
+                        } else if (gui != null && args[0].equals("log_color")) {
                             parseLogColor(args);
-                        }
-                        else if (gui != null && args[0].equals("log_filter"))
-                        {
+                        } else if (gui != null && args[0].equals("log_filter")) {
                             parseLogFilter(args);
-                        }
-                        else if (gui != null && args[0].equals("magicmap"))
-                        {
+                        } else if (gui != null && args[0].equals("magicmap")) {
                             parseMagicmap(args, tooltipManager, elementListener, server);
-                        }
-                        else if (gui != null && args[0].equals("map"))
-                        {
+                        } else if (gui != null && args[0].equals("map")) {
                             parseMap(args, tooltipManager, elementListener, server);
-                        }
-                        else if (gui != null && args[0].equals("meta_list"))
-                        {
+                        } else if (gui != null && args[0].equals("meta_list")) {
                             parseMetaList(args, tooltipManager, elementListener, metaserverModel);
-                        }
-                        else if (gui != null && args[0].equals("picture"))
-                        {
+                        } else if (gui != null && args[0].equals("picture")) {
                             parsePicture(args, tooltipManager, elementListener);
-                        }
-                        else if (gui != null && args[0].equals("query_text"))
-                        {
+                        } else if (gui != null && args[0].equals("query_text")) {
                             parseQueryText(args, server, commandCallback, tooltipManager, elementListener);
-                        }
-                        else if (gui != null && args[0].equals("set_forced_active"))
-                        {
+                        } else if (gui != null && args[0].equals("set_forced_active")) {
                             parseSetForcedActive(args, gui);
-                        }
-                        else if (gui != null && args[0].equals("set_default"))
-                        {
+                        } else if (gui != null && args[0].equals("set_default")) {
                             parseSetDefault(args);
-                        }
-                        else if (gui != null && args[0].equals("set_invisible"))
-                        {
+                        } else if (gui != null && args[0].equals("set_invisible")) {
                             parseSetInvisible(args);
-                        }
-                        else if (gui != null && args[0].equals("set_modal"))
-                        {
+                        } else if (gui != null && args[0].equals("set_modal")) {
                             parseSetModal(args, gui);
-                        }
-                        else if (gui != null && args[0].equals("set_num_look_objects"))
-                        {
+                        } else if (gui != null && args[0].equals("set_num_look_objects")) {
                             parseSetNumLookObjects(args);
-                        }
-                        else if (gui != null && args[0].equals("scrollbar"))
-                        {
+                        } else if (gui != null && args[0].equals("scrollbar")) {
                             parseScrollbar(args, tooltipManager, elementListener);
-                        }
-                        else if (gui == null && args[0].equals("skin_name"))
-                        {
+                        } else if (gui == null && args[0].equals("skin_name")) {
                             parseSkinName(args);
-                        }
-                        else if (gui != null && args[0].equals("text"))
-                        {
+                        } else if (gui != null && args[0].equals("text")) {
                             parseText(args, commandCallback, tooltipManager, elementListener);
-                        }
-                        else if (gui != null && args[0].equals("textbutton"))
-                        {
+                        } else if (gui != null && args[0].equals("textbutton")) {
                             parseTextButton(args, tooltipManager, elementListener, lnr);
-                        }
-                        else if (gui != null && args[0].equals("textgauge"))
-                        {
+                        } else if (gui != null && args[0].equals("textgauge")) {
                             parseTextGauge(args, tooltipManager, elementListener, lnr);
-                        }
-                        else if (args[0].equals("tooltip"))
-                        {
+                        } else if (args[0].equals("tooltip")) {
                             parseTooltip(args, tooltipManager, elementListener);
-                        }
-                        else
-                        {
+                        } else {
                             throw new IOException("unknown keyword '"+args[0]+"'");
                         }
                     }
-                }
-                catch (final IOException ex)
-                {
+                } catch (final IOException ex) {
                     throw new IOException(ex.getMessage()+" in line "+lnr.getLineNumber());
-                }
-                catch (final JXCSkinException ex)
-                {
+                } catch (final JXCSkinException ex) {
                     throw new IOException(ex.getMessage()+" in line "+lnr.getLineNumber());
-                }
-                catch (final IllegalArgumentException ex)
-                {
+                } catch (final IllegalArgumentException ex) {
                     final Object msg = ex.getMessage();
-                    if (msg != null)
-                    {
+                    if (msg != null) {
                         throw new IOException("invalid parameter ("+ex.getMessage()+") in line "+lnr.getLineNumber());
-                    }
-                    else
-                    {
+                    } else {
                         throw new IOException("invalid parameter in line "+lnr.getLineNumber());
                     }
-                }
-                finally
-                {
+                } finally {
                     lnr.close();
                 }
-            }
-            finally
-            {
+            } finally {
                 isr.close();
             }
-        }
-        catch (final IOException ex)
-        {
+        } catch (final IOException ex) {
             throw new JXCSkinException(skinSource.getURI(resourceName)+": "+ex.getMessage());
         }
 
@@ -777,24 +620,19 @@ public class JXCSkinLoader
         assert gui != null || !it.hasNext();
 
         final Map<GUIElement, GUIElement> wildcardElements = new LinkedHashMap<GUIElement, GUIElement>();
-        while (it.hasNext())
-        {
+        while (it.hasNext()) {
             final GUIElement element = it.next();
             wildcardElements.put(element, element);
         }
-        for (final GUIElement element : addedElements)
-        {
+        for (final GUIElement element : addedElements) {
             wildcardElements.remove(element);
         }
 
         int i = 0;
-        if (addedElementsContainsWildcard)
-        {
-            while (i < addedElements.size())
-            {
+        if (addedElementsContainsWildcard) {
+            while (i < addedElements.size()) {
                 final GUIElement element = addedElements.get(i);
-                if (element == null)
-                {
+                if (element == null) {
                     break;
                 }
                 gui.add(element);
@@ -804,16 +642,13 @@ public class JXCSkinLoader
             i++;
         }
 
-        for (final GUIElement element : wildcardElements.keySet())
-        {
+        for (final GUIElement element : wildcardElements.keySet()) {
             gui.add(element);
         }
 
-        while (i < addedElements.size())
-        {
+        while (i < addedElements.size()) {
             final GUIElement element = addedElements.get(i);
-            if (element != null)
-            {
+            if (element != null) {
                 gui.add(element);
             }
             i++;
@@ -829,10 +664,8 @@ public class JXCSkinLoader
      * @throws IOException if the command cannot be parsed
      * @throws JXCSkinException if the command cannot be parsed
      */
-    private void parseButton(@NotNull final String[] args, @NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final LineNumberReader lnr) throws IOException, JXCSkinException
-    {
-        if (args.length != 10 && args.length < 14)
-        {
+    private void parseButton(@NotNull final String[] args, @NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final LineNumberReader lnr) throws IOException, JXCSkinException {
+        if (args.length != 10 && args.length < 14) {
             throw new IOException("syntax error");
         }
 
@@ -850,16 +683,13 @@ public class JXCSkinLoader
         @Nullable final Color color;
         final int textX;
         final int textY;
-        if (args.length == 10)
-        {
+        if (args.length == 10) {
             label = null;
             font = null;
             color = null;
             textX = 0;
             textY = 0;
-        }
-        else
-        {
+        } else {
             assert args.length >= 14;
             font = definedFonts.lookup(args[10]);
             color = ParseUtils.parseColor(args[11]);
@@ -879,15 +709,12 @@ public class JXCSkinLoader
      * @throws IOException if the command cannot be parsed
      * @throws JXCSkinException if the command cannot be parsed
      */
-    private void parseCheckbox(@NotNull final String[] args, @NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final LineNumberReader lnr) throws IOException, JXCSkinException
-    {
-        if (args.length < 7)
-        {
+    private void parseCheckbox(@NotNull final String[] args, @NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final LineNumberReader lnr) throws IOException, JXCSkinException {
+        if (args.length < 7) {
             throw new IOException("syntax error");
         }
 
-        if (checkBoxFactory == null)
-        {
+        if (checkBoxFactory == null) {
             throw new IOException("missing 'def checkbox' command");
         }
 
@@ -914,18 +741,15 @@ public class JXCSkinLoader
      * @throws IOException if the command cannot be parsed
      * @throws JXCSkinException if the command cannot be parsed
      */
-    private void parseCommandList(@NotNull final String[] args, @NotNull final GuiStateManager guiStateManager, @NotNull final LineNumberReader lnr, @NotNull final Commands commands, @NotNull final CommandQueue commandQueue, @NotNull final CrossfireServerConnection server, @NotNull final CommandCallback commandCallback, @NotNull final Macros macros) throws IOException, JXCSkinException
-    {
-        if (args.length != 3 && args.length < 5)
-        {
+    private void parseCommandList(@NotNull final String[] args, @NotNull final GuiStateManager guiStateManager, @NotNull final LineNumberReader lnr, @NotNull final Commands commands, @NotNull final CommandQueue commandQueue, @NotNull final CrossfireServerConnection server, @NotNull final CommandCallback commandCallback, @NotNull final Macros macros) throws IOException, JXCSkinException {
+        if (args.length != 3 && args.length < 5) {
             throw new IOException("syntax error");
         }
 
         final String commandListName = args[1];
         final CommandListType commandListType = NumberParser.parseEnum(CommandListType.class, args[2], "type");
         skin.addCommandList(commandListName, commandListType);
-        if (args.length >= 5)
-        {
+        if (args.length >= 5) {
             final GUIElement element = args[3].equals("null") ? null : definedGUIElements.lookup(args[3]);
             addCommand(commandListName, args, 5, element, args[4], guiStateManager, commands, lnr, commandQueue, server, commandCallback, macros);
         }
@@ -944,10 +768,8 @@ public class JXCSkinLoader
      * @throws IOException if the command cannot be parsed
      * @throws JXCSkinException if the command cannot be parsed
      */
-    private void parseCommandListAdd(@NotNull final String[] args, @NotNull final GuiStateManager guiStateManager, @NotNull final LineNumberReader lnr, @NotNull final Commands commands, @NotNull final CommandQueue commandQueue, @NotNull final CrossfireServerConnection server, @NotNull final CommandCallback commandCallback, @NotNull final Macros macros) throws IOException, JXCSkinException
-    {
-        if (args.length < 4)
-        {
+    private void parseCommandListAdd(@NotNull final String[] args, @NotNull final GuiStateManager guiStateManager, @NotNull final LineNumberReader lnr, @NotNull final Commands commands, @NotNull final CommandQueue commandQueue, @NotNull final CrossfireServerConnection server, @NotNull final CommandCallback commandCallback, @NotNull final Macros macros) throws IOException, JXCSkinException {
+        if (args.length < 4) {
             throw new IOException("syntax error");
         }
 
@@ -965,10 +787,8 @@ public class JXCSkinLoader
      * @throws IOException if the command cannot be parsed
      * @throws JXCSkinException if the command cannot be parsed
      */
-    private void parseCommandText(@NotNull final String[] args, @NotNull final CommandCallback commandCallback, @NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final Commands commands) throws IOException, JXCSkinException
-    {
-        if (args.length != 12)
-        {
+    private void parseCommandText(@NotNull final String[] args, @NotNull final CommandCallback commandCallback, @NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final Commands commands) throws IOException, JXCSkinException {
+        if (args.length != 12) {
             throw new IOException("syntax error");
         }
 
@@ -993,17 +813,13 @@ public class JXCSkinLoader
      * @throws IOException if the command cannot be parsed
      * @throws JXCSkinException if the command cannot be parsed
      */
-    private void parseDef(@NotNull final String[] args, @NotNull final LineNumberReader lnr) throws IOException, JXCSkinException
-    {
-        if (args.length < 2)
-        {
+    private void parseDef(@NotNull final String[] args, @NotNull final LineNumberReader lnr) throws IOException, JXCSkinException {
+        if (args.length < 2) {
             throw new IOException("syntax error");
         }
 
-        if (args[1].equals("checkbox"))
-        {
-            if (args.length != 6)
-            {
+        if (args[1].equals("checkbox")) {
+            if (args.length != 6) {
                 throw new IOException("syntax error");
             }
 
@@ -1012,11 +828,8 @@ public class JXCSkinLoader
             final Font font = definedFonts.lookup(args[4]);
             final Color color = ParseUtils.parseColor(args[5]);
             checkBoxFactory = new CheckBoxFactory(checkedImage, uncheckedImage, font, color);
-        }
-        else if (args[1].equals("checkbox_option"))
-        {
-            if (args.length < 5)
-            {
+        } else if (args[1].equals("checkbox_option")) {
+            if (args.length < 5) {
                 throw new IOException("syntax error");
             }
 
@@ -1025,11 +838,8 @@ public class JXCSkinLoader
             final CommandList commandOff = skin.getCommandList(args[4]);
             final String documentation = ParseUtils.parseText(args, 5, lnr);
             skin.addOption(optionName, documentation, new CommandCheckBoxOption(commandOn, commandOff));
-        }
-        else if (args[1].equals("dialog"))
-        {
-            if (args.length != 7)
-            {
+        } else if (args[1].equals("dialog")) {
+            if (args.length != 7) {
                 throw new IOException("syntax error");
             }
 
@@ -1047,16 +857,12 @@ public class JXCSkinLoader
             final Color titleColor = ParseUtils.parseColor(args[4]);
             final Color titleBackgroundColor = ParseUtils.parseColor(args[5]);
             final float alpha = NumberParser.parseFloat(args[6]);
-            if (alpha < 0 || alpha > 1F)
-            {
+            if (alpha < 0 || alpha > 1F) {
                 throw new IOException("invalid alpha value: "+alpha);
             }
             dialogFactory = new DialogFactory(frameNW, frameN, frameNE, frameW, frameC, frameE, frameSW, frameS, frameSE, titleFont, titleColor, titleBackgroundColor, alpha);
-        }
-        else if (args[1].equals("item"))
-        {
-            if (args.length != 12)
-            {
+        } else if (args[1].equals("item")) {
+            if (args.length != 12) {
                 throw new IOException("syntax error");
             }
 
@@ -1079,11 +885,8 @@ public class JXCSkinLoader
             final Font font = definedFonts.lookup(args[10]);
             final Color nrofColor = ParseUtils.parseColor(args[11]);
             defaultItemPainter = new ItemPainter(cursedImage, damnedImage, magicImage, blessedImage, appliedImage, selectorImage, lockedImage, unpaidImage, cursedColor, damnedColor, magicColor, blessedColor, appliedColor, selectorColor, lockedColor, unpaidColor, font, nrofColor, 1, 1);
-        }
-        else if (args[1].equals("textbutton"))
-        {
-            if (args.length != 6)
-            {
+        } else if (args[1].equals("textbutton")) {
+            if (args.length != 6) {
                 throw new IOException("syntax error");
             }
 
@@ -1094,9 +897,7 @@ public class JXCSkinLoader
             final ButtonImages upImages = new ButtonImages(imageParser.getImage(up+"_w"), imageParser.getImage(up+"_c"), imageParser.getImage(up+"_e"));
             final ButtonImages downImages = new ButtonImages(imageParser.getImage(down+"_w"), imageParser.getImage(down+"_c"), imageParser.getImage(down+"_e"));
             textButtonFactory = new TextButtonFactory(upImages, downImages, font, color);
-        }
-        else
-        {
+        } else {
             throw new IOException("unknown type '"+args[1]+"'");
         }
     }
@@ -1113,15 +914,12 @@ public class JXCSkinLoader
      * @throws IOException if the command cannot be parsed
      * @throws JXCSkinException if the command cannot be parsed
      */
-    private void parseDialog(@NotNull final String[] args, @NotNull final TooltipManager tooltipManager, @NotNull final JXCWindowRenderer windowRenderer, @NotNull final GUIElementListener elementListener, @NotNull final LineNumberReader lnr, @NotNull final Gui gui, @NotNull final String dialogName) throws IOException, JXCSkinException
-    {
-        if (args.length < 7)
-        {
+    private void parseDialog(@NotNull final String[] args, @NotNull final TooltipManager tooltipManager, @NotNull final JXCWindowRenderer windowRenderer, @NotNull final GUIElementListener elementListener, @NotNull final LineNumberReader lnr, @NotNull final Gui gui, @NotNull final String dialogName) throws IOException, JXCSkinException {
+        if (args.length < 7) {
             throw new IOException("syntax error");
         }
 
-        if (dialogFactory == null)
-        {
+        if (dialogFactory == null) {
             throw new IOException("missing 'def dialog' command");
         }
 
@@ -1133,12 +931,10 @@ public class JXCSkinLoader
         final boolean saveDialog = NumberParser.parseBoolean(args[6]);
         final String title = ParseUtils.parseText(args, 7, lnr);
         assert dialogFactory != null;
-        for (final GUIElement element : dialogFactory.newDialog(tooltipManager, windowRenderer, elementListener, name, w, h, title))
-        {
+        for (final GUIElement element : dialogFactory.newDialog(tooltipManager, windowRenderer, elementListener, name, w, h, title)) {
             insertGuiElement(element);
         }
-        if (saveDialog)
-        {
+        if (saveDialog) {
             gui.setName(dialogName);
         }
         gui.setSize(w, h);
@@ -1151,15 +947,12 @@ public class JXCSkinLoader
      * @param gui the gui instance to use
      * @throws IOException if the command cannot be parsed
      */
-    private static void parseDialogHide(@NotNull final String[] args, @NotNull final Gui gui) throws IOException
-    {
-        if (args.length < 2)
-        {
+    private static void parseDialogHide(@NotNull final String[] args, @NotNull final Gui gui) throws IOException {
+        if (args.length < 2) {
             throw new IOException("syntax error");
         }
 
-        for (int i = 1; i < args.length; i++)
-        {
+        for (int i = 1; i < args.length; i++) {
             gui.hideInState(NumberParser.parseEnum(RendererGuiState.class, args[i], "gui state"));
         }
     }
@@ -1173,10 +966,8 @@ public class JXCSkinLoader
      * @throws IOException if the command cannot be parsed
      * @throws JXCSkinException if the command cannot be parsed
      */
-    private void parseDupGauge(@NotNull final String[] args, @NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final LineNumberReader lnr) throws IOException, JXCSkinException
-    {
-        if (args.length < 12)
-        {
+    private void parseDupGauge(@NotNull final String[] args, @NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final LineNumberReader lnr) throws IOException, JXCSkinException {
+        if (args.length < 12) {
             throw new IOException("syntax error");
         }
 
@@ -1206,10 +997,8 @@ public class JXCSkinLoader
      * @throws IOException if the command cannot be parsed
      * @throws JXCSkinException if the command cannot be parsed
      */
-    private void parseDupTextGauge(@NotNull final String[] args, @NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final LineNumberReader lnr) throws IOException, JXCSkinException
-    {
-        if (args.length < 14)
-        {
+    private void parseDupTextGauge(@NotNull final String[] args, @NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final LineNumberReader lnr) throws IOException, JXCSkinException {
+        if (args.length < 14) {
             throw new IOException("syntax error");
         }
 
@@ -1240,78 +1029,55 @@ public class JXCSkinLoader
      * @throws IOException if the command cannot be parsed
      * @throws JXCSkinException if the command cannot be parsed
      */
-    private void parseEvent(@NotNull final String[] args, @NotNull final GuiStateManager guiStateManager, @NotNull final CrossfireServerConnection server) throws IOException, JXCSkinException
-    {
-        if (args.length < 2)
-        {
+    private void parseEvent(@NotNull final String[] args, @NotNull final GuiStateManager guiStateManager, @NotNull final CrossfireServerConnection server) throws IOException, JXCSkinException {
+        if (args.length < 2) {
             throw new IOException("syntax error");
         }
 
         final String type = args[1];
-        if (type.equals("connect"))
-        {
-            if (args.length != 3)
-            {
+        if (type.equals("connect")) {
+            if (args.length != 3) {
                 throw new IOException("syntax error");
             }
 
             final CommandList commandList = skin.getCommandList(args[2]);
             skin.addSkinEvent(new ConnectionStateSkinEvent(commandList, guiStateManager));
-        }
-        else if (type.equals("init"))
-        {
-            if (args.length != 3)
-            {
+        } else if (type.equals("init")) {
+            if (args.length != 3) {
                 throw new IOException("syntax error");
             }
 
             skin.addInitEvent(skin.getCommandList(args[2]));
-        }
-        else if (type.equals("magicmap"))
-        {
-            if (args.length != 3)
-            {
+        } else if (type.equals("magicmap")) {
+            if (args.length != 3) {
                 throw new IOException("syntax error");
             }
 
             final CommandList commandList = skin.getCommandList(args[2]);
             skin.addSkinEvent(new CrossfireMagicmapSkinEvent(commandList, server));
-        }
-        else if (type.equals("mapscroll"))
-        {
-            if (args.length != 3)
-            {
+        } else if (type.equals("mapscroll")) {
+            if (args.length != 3) {
                 throw new IOException("syntax error");
             }
 
             final CommandList commandList = skin.getCommandList(args[2]);
             skin.addSkinEvent(new MapscrollSkinEvent(commandList, mapUpdater));
-        }
-        else if (type.equals("skill"))
-        {
-            if (args.length != 5)
-            {
+        } else if (type.equals("skill")) {
+            if (args.length != 5) {
                 throw new IOException("syntax error");
             }
 
             final String subtype = args[2];
             final Skill skill = skillSet.getNamedSkill(args[3].replaceAll("_", " "));
             final CommandList commandList = skin.getCommandList(args[4]);
-            if (subtype.equals("add"))
-            {
+            if (subtype.equals("add")) {
                 skin.addSkinEvent(new SkillAddedSkinEvent(commandList, skill));
-            }
-            else if (subtype.equals("del"))
-            {
+            } else if (subtype.equals("del")) {
                 skin.addSkinEvent(new SkillRemovedSkinEvent(commandList, skill));
-            }
-            else
-            {
+            } else {
                 throw new IOException("undefined event sub-type: "+subtype);
             }
-        }
-        else
-        {
+        } else {
             throw new IOException("undefined event type: "+type);
         }
     }
@@ -1322,10 +1088,8 @@ public class JXCSkinLoader
      * @throws IOException if the command cannot be parsed
      * @throws JXCSkinException if the command cannot be parsed
      */
-    private void parseFont(@NotNull final String[] args) throws IOException, JXCSkinException
-    {
-        if (args.length != 4)
-        {
+    private void parseFont(@NotNull final String[] args) throws IOException, JXCSkinException {
+        if (args.length != 4) {
             throw new IOException("syntax error");
         }
 
@@ -1344,10 +1108,8 @@ public class JXCSkinLoader
      * @throws IOException if the command cannot be parsed
      * @throws JXCSkinException if the command cannot be parsed
      */
-    private void parseGauge(@NotNull final String[] args, @NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final LineNumberReader lnr) throws IOException, JXCSkinException
-    {
-        if (args.length < 11)
-        {
+    private void parseGauge(@NotNull final String[] args, @NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final LineNumberReader lnr) throws IOException, JXCSkinException {
+        if (args.length < 11) {
             throw new IOException("syntax error");
         }
 
@@ -1373,10 +1135,8 @@ public class JXCSkinLoader
      * @throws IOException if the command cannot be parsed
      * @throws JXCSkinException if the command cannot be parsed
      */
-    private void parseIgnore(@NotNull final String[] args) throws IOException, JXCSkinException
-    {
-        if (args.length != 2)
-        {
+    private void parseIgnore(@NotNull final String[] args) throws IOException, JXCSkinException {
+        if (args.length != 2) {
             throw new IOException("syntax error");
         }
 
@@ -1394,15 +1154,12 @@ public class JXCSkinLoader
      * @throws IOException if the command cannot be parsed
      * @throws JXCSkinException if the command cannot be parsed
      */
-    private void parseInventoryList(@NotNull final String[] args, @NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final CommandQueue commandQueue, @NotNull final CrossfireServerConnection server) throws IOException, JXCSkinException
-    {
-        if (args.length != 8)
-        {
+    private void parseInventoryList(@NotNull final String[] args, @NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final CommandQueue commandQueue, @NotNull final CrossfireServerConnection server) throws IOException, JXCSkinException {
+        if (args.length != 8) {
             throw new IOException("syntax error");
         }
 
-        if (defaultItemPainter == null)
-        {
+        if (defaultItemPainter == null) {
             throw new IOException("cannot use 'inventory_list' without 'def item' command");
         }
 
@@ -1433,10 +1190,8 @@ public class JXCSkinLoader
      * @throws IOException if the command cannot be parsed
      * @throws JXCSkinException if the command cannot be parsed
      */
-    private void parseItem(@NotNull final String[] args, @NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final CommandQueue commandQueue, @NotNull final CrossfireServerConnection server, @NotNull final Shortcuts shortcuts, @NotNull final CurrentSpellManager currentSpellManager) throws IOException, JXCSkinException
-    {
-        if (args.length < 8)
-        {
+    private void parseItem(@NotNull final String[] args, @NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final CommandQueue commandQueue, @NotNull final CrossfireServerConnection server, @NotNull final Shortcuts shortcuts, @NotNull final CurrentSpellManager currentSpellManager) throws IOException, JXCSkinException {
+        if (args.length < 8) {
             throw new IOException("syntax error");
         }
 
@@ -1448,40 +1203,30 @@ public class JXCSkinLoader
         final int h = expressionParser.parseInt(args[6]);
         final int index = expressionParser.parseInt(args[7]);
         final GUIElement element;
-        if (type.equals("floor"))
-        {
-            if (args.length != 8)
-            {
+        if (type.equals("floor")) {
+            if (args.length != 8) {
                 throw new IOException("syntax error");
             }
 
-            if (defaultItemPainter == null)
-            {
+            if (defaultItemPainter == null) {
                 throw new IOException("cannot use 'item floor' without 'def item' command");
             }
 
             final ItemPainter itemPainter = defaultItemPainter.newItemPainter(w, h);
             element = new GUIItemFloor(tooltipManager, elementListener, commandQueue, name, x, y, w, h, itemPainter, index, server, itemsManager, facesManager);
-        }
-        else if (type.equals("inventory"))
-        {
-            if (args.length != 8)
-            {
+        } else if (type.equals("inventory")) {
+            if (args.length != 8) {
                 throw new IOException("syntax error");
             }
 
-            if (defaultItemPainter == null)
-            {
+            if (defaultItemPainter == null) {
                 throw new IOException("cannot use 'item floor' without 'def item' command");
             }
 
             final ItemPainter itemPainter = defaultItemPainter.newItemPainter(w, h);
             element = new GUIItemInventory(tooltipManager, elementListener, commandQueue, name, x, y, w, h, itemPainter, index, server, facesManager, itemsManager);
-        }
-        else if (type.equals("shortcut"))
-        {
-            if (args.length != 11)
-            {
+        } else if (type.equals("shortcut")) {
+            if (args.length != 11) {
                 throw new IOException("syntax error");
             }
 
@@ -1491,20 +1236,15 @@ public class JXCSkinLoader
             final BufferedImage appliedImage = imageParser.getImage(appliedColor, args[9]);
             final Font font = definedFonts.lookup(args[10]);
             element = new GUIItemShortcut(tooltipManager, elementListener, name, x, y, w, h, cursedColor, cursedImage, appliedColor, appliedImage, index, facesManager, shortcuts, font, currentSpellManager);
-        }
-        else if (type.equals("spelllist"))
-        {
-            if (args.length != 9)
-            {
+        } else if (type.equals("spelllist")) {
+            if (args.length != 9) {
                 throw new IOException("syntax error");
             }
 
             final Color selectorColor = ParseUtils.parseColorNull(args[8]);
             final BufferedImage selectorImage = imageParser.getImage(selectorColor, args[8]);
             element = new GUIItemSpelllist(tooltipManager, elementListener, commandQueue, name, x, y, w, h, selectorColor, selectorImage, index, facesManager, spellsManager, currentSpellManager);
-        }
-        else
-        {
+        } else {
             throw new IOException("undefined item type: "+type);
         }
         insertGuiElement(element);
@@ -1517,20 +1257,15 @@ public class JXCSkinLoader
      * @param line the unparsed command line
      * @throws IOException if the command cannot be parsed
      */
-    private void parseKey(@NotNull final String[] args, @Nullable final Gui gui, @NotNull final String line) throws IOException
-    {
-        if (args.length < 2)
-        {
+    private void parseKey(@NotNull final String[] args, @Nullable final Gui gui, @NotNull final String line) throws IOException {
+        if (args.length < 2) {
             throw new IOException("syntax error");
         }
 
         final KeyBindings keyBindings = gui != null ? gui.getKeyBindings() : skin.getDefaultKeyBindings();
-        try
-        {
+        try {
             keyBindings.parseKeyBinding(line.substring(4).trim(), true);
-        }
-        catch (final InvalidKeyBindingException ex)
-        {
+        } catch (final InvalidKeyBindingException ex) {
             throw new IOException("invalid key binding: "+ex.getMessage());
         }
     }
@@ -1544,10 +1279,8 @@ public class JXCSkinLoader
      * @throws IOException if the command cannot be parsed
      * @throws JXCSkinException if the command cannot be parsed
      */
-    private void parseLabelHtml(@NotNull final String[] args, @NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final LineNumberReader lnr) throws IOException, JXCSkinException
-    {
-        if (args.length < 8)
-        {
+    private void parseLabelHtml(@NotNull final String[] args, @NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final LineNumberReader lnr) throws IOException, JXCSkinException {
+        if (args.length < 8) {
             throw new IOException("syntax error");
         }
 
@@ -1571,10 +1304,8 @@ public class JXCSkinLoader
      * @throws IOException if the command cannot be parsed
      * @throws JXCSkinException if the command cannot be parsed
      */
-    private void parseLabelMulti(@NotNull final String[] args, @NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final LineNumberReader lnr) throws IOException, JXCSkinException
-    {
-        if (args.length < 8)
-        {
+    private void parseLabelMulti(@NotNull final String[] args, @NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final LineNumberReader lnr) throws IOException, JXCSkinException {
+        if (args.length < 8) {
             throw new IOException("syntax error");
         }
 
@@ -1598,10 +1329,8 @@ public class JXCSkinLoader
      * @throws IOException if the command cannot be parsed
      * @throws JXCSkinException if the command cannot be parsed
      */
-    private void parseLabelQuery(@NotNull final String[] args, @NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final CrossfireServerConnection server) throws IOException, JXCSkinException
-    {
-        if (args.length != 8)
-        {
+    private void parseLabelQuery(@NotNull final String[] args, @NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final CrossfireServerConnection server) throws IOException, JXCSkinException {
+        if (args.length != 8) {
             throw new IOException("syntax error");
         }
 
@@ -1625,10 +1354,8 @@ public class JXCSkinLoader
      * @throws IOException if the command cannot be parsed
      * @throws JXCSkinException if the command cannot be parsed
      */
-    private void parseLabelText(@NotNull final String[] args, @NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final LineNumberReader lnr) throws IOException, JXCSkinException
-    {
-        if (args.length < 8)
-        {
+    private void parseLabelText(@NotNull final String[] args, @NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final LineNumberReader lnr) throws IOException, JXCSkinException {
+        if (args.length < 8) {
             throw new IOException("syntax error");
         }
 
@@ -1651,10 +1378,8 @@ public class JXCSkinLoader
      * @throws IOException if the command cannot be parsed
      * @throws JXCSkinException if the command cannot be parsed
      */
-    private void parseLabelStat(@NotNull final String[] args, @NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener) throws IOException, JXCSkinException
-    {
-        if (args.length != 10)
-        {
+    private void parseLabelStat(@NotNull final String[] args, @NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener) throws IOException, JXCSkinException {
+        if (args.length != 10) {
             throw new IOException("syntax error");
         }
 
@@ -1680,10 +1405,8 @@ public class JXCSkinLoader
      * @throws IOException if the command cannot be parsed
      * @throws JXCSkinException if the command cannot be parsed
      */
-    private void parseLabelSpell(@NotNull final String[] args, @NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final CurrentSpellManager currentSpellManager) throws IOException, JXCSkinException
-    {
-        if (args.length != 8)
-        {
+    private void parseLabelSpell(@NotNull final String[] args, @NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final CurrentSpellManager currentSpellManager) throws IOException, JXCSkinException {
+        if (args.length != 8) {
             throw new IOException("syntax error");
         }
 
@@ -1706,10 +1429,8 @@ public class JXCSkinLoader
      * @throws IOException if the command cannot be parsed
      * @throws JXCSkinException if the command cannot be parsed
      */
-    private void parseLogLabel(@NotNull final String[] args, @NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener) throws IOException, JXCSkinException
-    {
-        if (args.length != 12)
-        {
+    private void parseLogLabel(@NotNull final String[] args, @NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener) throws IOException, JXCSkinException {
+        if (args.length != 12) {
             throw new IOException("syntax error");
         }
 
@@ -1738,10 +1459,8 @@ public class JXCSkinLoader
      * @throws IOException if the command cannot be parsed
      * @throws JXCSkinException if the command cannot be parsed
      */
-    private void parseLogMessage(@NotNull final String[] args, @NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final CrossfireServerConnection server) throws IOException, JXCSkinException
-    {
-        if (args.length != 12)
-        {
+    private void parseLogMessage(@NotNull final String[] args, @NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final CrossfireServerConnection server) throws IOException, JXCSkinException {
+        if (args.length != 12) {
             throw new IOException("syntax error");
         }
 
@@ -1767,10 +1486,8 @@ public class JXCSkinLoader
      * @throws IOException if the command cannot be parsed
      * @throws JXCSkinException if the command cannot be parsed
      */
-    private void parseLogColor(@NotNull final String[] args) throws IOException, JXCSkinException
-    {
-        if (args.length != 4)
-        {
+    private void parseLogColor(@NotNull final String[] args) throws IOException, JXCSkinException {
+        if (args.length != 4) {
             throw new IOException("syntax error");
         }
 
@@ -1778,12 +1495,10 @@ public class JXCSkinLoader
         final int index = expressionParser.parseInt(args[2]);
         final Color color = ParseUtils.parseColor(args[3]);
         final Object element = definedGUIElements.lookup(name);
-        if (!(element instanceof GUIMessageLog))
-        {
-             throw new IOException("element '"+name+"' is not of type 'log'");
+        if (!(element instanceof GUIMessageLog)) {
+            throw new IOException("element '"+name+"' is not of type 'log'");
         }
-        if (index < 0 || index >= MessageBufferUpdater.NUM_COLORS)
-        {
+        if (index < 0 || index >= MessageBufferUpdater.NUM_COLORS) {
             throw new IOException("invalid color index "+index);
         }
         ((GUIMessageLog)element).setColor(index, color);
@@ -1795,47 +1510,34 @@ public class JXCSkinLoader
      * @throws IOException if the command cannot be parsed
      * @throws JXCSkinException if the command cannot be parsed
      */
-    private void parseLogFilter(@NotNull final String[] args) throws IOException, JXCSkinException
-    {
-        if (args.length < 4)
-        {
+    private void parseLogFilter(@NotNull final String[] args) throws IOException, JXCSkinException {
+        if (args.length < 4) {
             throw new IOException("syntax error");
         }
 
         final String name = args[1];
         final String type = args[2];
         final boolean add;
-        if (type.equals("only"))
-        {
+        if (type.equals("only")) {
             add = true;
-        }
-        else if (type.equals("not"))
-        {
+        } else if (type.equals("not")) {
             add = false;
-        }
-        else
-        {
+        } else {
             throw new IOException("type '"+type+"' is invalid");
         }
         int types = 0;
-        for (int i = 3; i < args.length; i++)
-        {
-            try
-            {
+        for (int i = 3; i < args.length; i++) {
+            try {
                 types |= 1<<MessageTypes.parseMessageType(args[i]);
-            }
-            catch (final UnknownCommandException ex)
-            {
+            } catch (final UnknownCommandException ex) {
                 throw new IOException("undefined message type '"+args[i]+"'");
             }
         }
-        if (!add)
-        {
+        if (!add) {
             types = ~types;
         }
         final Object element = definedGUIElements.lookup(name);
-        if (!(element instanceof GUIMessageLog))
-        {
+        if (!(element instanceof GUIMessageLog)) {
             throw new IOException("element '"+name+"' is not of type 'log'");
         }
         ((GUIMessageLog)element).setTypes(types);
@@ -1850,10 +1552,8 @@ public class JXCSkinLoader
      * @throws IOException if the command cannot be parsed
      * @throws JXCSkinException if the command cannot be parsed
      */
-    private void parseMagicmap(@NotNull final String[] args, @NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final CrossfireServerConnection server) throws IOException, JXCSkinException
-    {
-        if (args.length != 6)
-        {
+    private void parseMagicmap(@NotNull final String[] args, @NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final CrossfireServerConnection server) throws IOException, JXCSkinException {
+        if (args.length != 6) {
             throw new IOException("syntax error");
         }
 
@@ -1875,10 +1575,8 @@ public class JXCSkinLoader
      * @throws IOException if the command cannot be parsed
      * @throws JXCSkinException if the command cannot be parsed
      */
-    private void parseMap(@NotNull final String[] args, @NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final CrossfireServerConnection server) throws IOException, JXCSkinException
-    {
-        if (args.length != 7)
-        {
+    private void parseMap(@NotNull final String[] args, @NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final CrossfireServerConnection server) throws IOException, JXCSkinException {
+        if (args.length != 7) {
             throw new IOException("syntax error");
         }
 
@@ -1889,16 +1587,13 @@ public class JXCSkinLoader
         final int w = expressionParser.parseInt(args[5]);
         final int h = expressionParser.parseInt(args[6]);
 
-        if (tileSize <= 0)
-        {
+        if (tileSize <= 0) {
             throw new IOException("invalid tile size "+tileSize);
         }
-        if (w%tileSize != 0)
-        {
+        if (w%tileSize != 0) {
             throw new IOException("map width "+w+" is not a multiple of the tile size "+tileSize);
         }
-        if (h%tileSize != 0)
-        {
+        if (h%tileSize != 0) {
             throw new IOException("map height "+h+" is not a multiple of the tile size "+tileSize);
         }
         final int tmpW = w/tileSize;
@@ -1919,10 +1614,8 @@ public class JXCSkinLoader
      * @throws IOException if the command cannot be parsed
      * @throws JXCSkinException if the command cannot be parsed
      */
-    private void parseMetaList(@NotNull final String[] args, @NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final MetaserverModel metaserverModel) throws IOException, JXCSkinException
-    {
-        if (args.length != 13)
-        {
+    private void parseMetaList(@NotNull final String[] args, @NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final MetaserverModel metaserverModel) throws IOException, JXCSkinException {
+        if (args.length != 13) {
             throw new IOException("syntax error");
         }
 
@@ -1951,10 +1644,8 @@ public class JXCSkinLoader
      * @throws IOException if the command cannot be parsed
      * @throws JXCSkinException if the command cannot be parsed
      */
-    private void parsePicture(@NotNull final String[] args, @NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener) throws IOException, JXCSkinException
-    {
-        if (args.length != 8)
-        {
+    private void parsePicture(@NotNull final String[] args, @NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener) throws IOException, JXCSkinException {
+        if (args.length != 8) {
             throw new IOException("syntax error");
         }
 
@@ -1965,8 +1656,7 @@ public class JXCSkinLoader
         final int h = expressionParser.parseInt(args[5]);
         final BufferedImage image = imageParser.getImage(args[6]);
         final float alpha = NumberParser.parseFloat(args[7]);
-        if (alpha < 0 || alpha > 1F)
-        {
+        if (alpha < 0 || alpha > 1F) {
             throw new IOException("invalid alpha value: "+alpha);
         }
         insertGuiElement(new GUIPicture(tooltipManager, elementListener, name, x, y, w, h, image, alpha));
@@ -1982,10 +1672,8 @@ public class JXCSkinLoader
      * @throws IOException if the command cannot be parsed
      * @throws JXCSkinException if the command cannot be parsed
      */
-    private void parseQueryText(@NotNull final String[] args, @NotNull final CrossfireServerConnection server, @NotNull final CommandCallback commandCallback, @NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener) throws IOException, JXCSkinException
-    {
-        if (args.length != 12)
-        {
+    private void parseQueryText(@NotNull final String[] args, @NotNull final CrossfireServerConnection server, @NotNull final CommandCallback commandCallback, @NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener) throws IOException, JXCSkinException {
+        if (args.length != 12) {
             throw new IOException("syntax error");
         }
 
@@ -2010,16 +1698,13 @@ public class JXCSkinLoader
      * @throws IOException if the command cannot be parsed
      * @throws JXCSkinException if the command cannot be parsed
      */
-    private void parseSetForcedActive(@NotNull final String[] args, @NotNull final Gui gui) throws IOException, JXCSkinException
-    {
-        if (args.length != 2)
-        {
+    private void parseSetForcedActive(@NotNull final String[] args, @NotNull final Gui gui) throws IOException, JXCSkinException {
+        if (args.length != 2) {
             throw new IOException("syntax error");
         }
 
         final Object forcedActive = definedGUIElements.lookup(args[1]);
-        if (!(forcedActive instanceof ActivatableGUIElement))
-        {
+        if (!(forcedActive instanceof ActivatableGUIElement)) {
             throw new IOException("argument to set_forced_active must be an activatable gui element");
         }
         gui.setForcedActive((ActivatableGUIElement)forcedActive);
@@ -2031,10 +1716,8 @@ public class JXCSkinLoader
      * @throws IOException if the command cannot be parsed
      * @throws JXCSkinException if the command cannot be parsed
      */
-    private void parseSetDefault(@NotNull final String[] args) throws IOException, JXCSkinException
-    {
-        if (args.length != 2)
-        {
+    private void parseSetDefault(@NotNull final String[] args) throws IOException, JXCSkinException {
+        if (args.length != 2) {
             throw new IOException("syntax error");
         }
 
@@ -2047,10 +1730,8 @@ public class JXCSkinLoader
      * @throws IOException if the command cannot be parsed
      * @throws JXCSkinException if the command cannot be parsed
      */
-    private void parseSetInvisible(@NotNull final String[] args) throws IOException, JXCSkinException
-    {
-        if (args.length != 2)
-        {
+    private void parseSetInvisible(@NotNull final String[] args) throws IOException, JXCSkinException {
+        if (args.length != 2) {
             throw new IOException("syntax error");
         }
 
@@ -2063,10 +1744,8 @@ public class JXCSkinLoader
      * @param gui the gui to modify
      * @throws IOException if the command cannot be parsed
      */
-    private static void parseSetModal(@NotNull final String[] args, @NotNull final Gui gui) throws IOException
-    {
-        if (args.length != 1)
-        {
+    private static void parseSetModal(@NotNull final String[] args, @NotNull final Gui gui) throws IOException {
+        if (args.length != 1) {
             throw new IOException("syntax error");
         }
 
@@ -2078,10 +1757,8 @@ public class JXCSkinLoader
      * @param args the command arguments
      * @throws IOException if the command cannot be parsed
      */
-    private void parseSetNumLookObjects(@NotNull final String[] args) throws IOException
-    {
-        if (args.length != 2)
-        {
+    private void parseSetNumLookObjects(@NotNull final String[] args) throws IOException {
+        if (args.length != 2) {
             throw new IOException("syntax error");
         }
 
@@ -2096,10 +1773,8 @@ public class JXCSkinLoader
      * @throws IOException if the command cannot be parsed
      * @throws JXCSkinException if the command cannot be parsed
      */
-    private void parseScrollbar(@NotNull final String[] args, @NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener) throws IOException, JXCSkinException
-    {
-        if (args.length != 10)
-        {
+    private void parseScrollbar(@NotNull final String[] args, @NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener) throws IOException, JXCSkinException {
+        if (args.length != 10) {
             throw new IOException("syntax error");
         }
 
@@ -2112,8 +1787,7 @@ public class JXCSkinLoader
         final Object element = definedGUIElements.lookup(args[7]);
         final Color colorBackground = ParseUtils.parseColor(args[8]);
         final Color colorForeground = ParseUtils.parseColor(args[9]);
-        if (!(element instanceof GUIScrollable2))
-        {
+        if (!(element instanceof GUIScrollable2)) {
             throw new IOException("'"+element+"' is not a scrollable element");
         }
         insertGuiElement(new GUIScrollBar(tooltipManager, elementListener, name, x, y, w, h, proportionalSlider, (GUIScrollable2)element, colorBackground, colorForeground));
@@ -2124,16 +1798,13 @@ public class JXCSkinLoader
      * @param args the command arguments
      * @throws IOException if the command cannot be parsed
      */
-    private void parseSkinName(@NotNull final String[] args) throws IOException
-    {
-        if (args.length != 2)
-        {
+    private void parseSkinName(@NotNull final String[] args) throws IOException {
+        if (args.length != 2) {
             throw new IOException("syntax error");
         }
 
         final String newSkinName = args[1];
-        if (!newSkinName.matches("[-a-z_0-9]+"))
-        {
+        if (!newSkinName.matches("[-a-z_0-9]+")) {
             throw new IOException("invalid skin_name: "+newSkinName);
         }
 
@@ -2149,10 +1820,8 @@ public class JXCSkinLoader
      * @throws IOException if the command cannot be parsed
      * @throws JXCSkinException if the command cannot be parsed
      */
-    private void parseText(@NotNull final String[] args, @NotNull final CommandCallback commandCallback, @NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener) throws IOException, JXCSkinException
-    {
-        if (args.length != 14)
-        {
+    private void parseText(@NotNull final String[] args, @NotNull final CommandCallback commandCallback, @NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener) throws IOException, JXCSkinException {
+        if (args.length != 14) {
             throw new IOException("syntax error");
         }
 
@@ -2181,15 +1850,12 @@ public class JXCSkinLoader
      * @throws IOException if the command cannot be parsed
      * @throws JXCSkinException if the command cannot be parsed
      */
-    private void parseTextButton(@NotNull final String[] args, @NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final LineNumberReader lnr) throws IOException, JXCSkinException
-    {
-        if (args.length < 7)
-        {
+    private void parseTextButton(@NotNull final String[] args, @NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final LineNumberReader lnr) throws IOException, JXCSkinException {
+        if (args.length < 7) {
             throw new IOException("syntax error");
         }
 
-        if (textButtonFactory == null)
-        {
+        if (textButtonFactory == null) {
             throw new IOException("missing 'def textbutton' command");
         }
 
@@ -2214,10 +1880,8 @@ public class JXCSkinLoader
      * @throws IOException if the command cannot be parsed
      * @throws JXCSkinException if the command cannot be parsed
      */
-    private void parseTextGauge(@NotNull final String[] args, @NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final LineNumberReader lnr) throws IOException, JXCSkinException
-    {
-        if (args.length < 13)
-        {
+    private void parseTextGauge(@NotNull final String[] args, @NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final LineNumberReader lnr) throws IOException, JXCSkinException {
+        if (args.length < 13) {
             throw new IOException("syntax error");
         }
 
@@ -2247,10 +1911,8 @@ public class JXCSkinLoader
      * @throws IOException if the command cannot be parsed
      * @throws JXCSkinException if the command cannot be parsed
      */
-    private void parseTooltip(@NotNull final String[] args, @NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener) throws IOException, JXCSkinException
-    {
-        if (args.length != 2)
-        {
+    private void parseTooltip(@NotNull final String[] args, @NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener) throws IOException, JXCSkinException {
+        if (args.length != 2) {
             throw new IOException("syntax error");
         }
 
@@ -2265,8 +1927,7 @@ public class JXCSkinLoader
      * @param guiElement the GUI element
      * @throws JXCSkinException if the name is not unique
      */
-    private void insertGuiElement(@NotNull final GUIElement guiElement) throws JXCSkinException
-    {
+    private void insertGuiElement(@NotNull final GUIElement guiElement) throws JXCSkinException {
         definedGUIElements.insert(guiElement.getName(), guiElement);
         skin.insertGuiElement(guiElement);
     }
@@ -2288,8 +1949,7 @@ public class JXCSkinLoader
      * @throws IOException if a syntax error occurs
      * @throws JXCSkinException if an element cannot be found
      */
-    private void addCommand(@NotNull final String listName, @NotNull final String[] args, final int argc, @Nullable final GUIElement element, @NotNull final String command, @NotNull final GuiStateManager guiStateManager, @NotNull final Commands commands, @NotNull final LineNumberReader lnr, @NotNull final CommandQueue commandQueue, @NotNull final CrossfireServerConnection crossfireServerConnection, @NotNull final CommandCallback commandCallback, @NotNull final Macros macros) throws IOException, JXCSkinException
-    {
+    private void addCommand(@NotNull final String listName, @NotNull final String[] args, final int argc, @Nullable final GUIElement element, @NotNull final String command, @NotNull final GuiStateManager guiStateManager, @NotNull final Commands commands, @NotNull final LineNumberReader lnr, @NotNull final CommandQueue commandQueue, @NotNull final CrossfireServerConnection crossfireServerConnection, @NotNull final CommandCallback commandCallback, @NotNull final Macros macros) throws IOException, JXCSkinException {
         final CommandList commandList = skin.getCommandList(listName);
         commandList.add(commandParser.parseCommandArgs(args, argc, element, command, guiStateManager, commands, lnr, commandQueue, crossfireServerConnection, commandCallback, macros));
     }
@@ -2302,10 +1962,10 @@ public class JXCSkinLoader
      * @throws IOException if the gauge updater value does not exist
      */
     @NotNull
-    private GaugeUpdater newGaugeUpdater(@NotNull final String name) throws IOException
-    {
+    private GaugeUpdater newGaugeUpdater(@NotNull final String name) throws IOException {
         final GaugeUpdater gaugeUpdater = gaugeUpdaterParser.parseGaugeUpdater(name, experienceTable);
         skin.addGaugeUpdater(gaugeUpdater);
         return gaugeUpdater;
     }
+
 }

@@ -30,15 +30,15 @@ import org.jetbrains.annotations.NotNull;
  * Utility class for converting stat values to stat names.
  * @author Andreas Kirschbaum
  */
-public class StatUtils
-{
+public class StatUtils {
+
     /**
      * The stat names: maps stat value to stat name.
      */
     @NotNull
     private static final Map<Integer, String> statNames = new HashMap<Integer, String>();
-    static
-    {
+
+    static {
         statNames.put(CrossfireStatsListener.CS_STAT_HP, "hp");
         statNames.put(CrossfireStatsListener.CS_STAT_MAXHP, "maxhp");
         statNames.put(CrossfireStatsListener.CS_STAT_SP, "sp");
@@ -69,12 +69,10 @@ public class StatUtils
         statNames.put(CrossfireStatsListener.CS_STAT_EXP64, "exp");
         statNames.put(CrossfireStatsListener.CS_STAT_RANGE, "range");
         statNames.put(CrossfireStatsListener.CS_STAT_TITLE, "title");
-        for (int stat = CrossfireStatsListener.CS_STAT_RESIST_START; stat < CrossfireStatsListener.CS_STAT_RESIST_START+CrossfireStatsListener.RESIST_TYPES; stat++)
-        {
+        for (int stat = CrossfireStatsListener.CS_STAT_RESIST_START; stat < CrossfireStatsListener.CS_STAT_RESIST_START+CrossfireStatsListener.RESIST_TYPES; stat++) {
             statNames.put(stat, "resists");
         }
-        for (int skill = CrossfireStatsListener.CS_STAT_SKILLINFO; skill < CrossfireStatsListener.CS_STAT_SKILLINFO+CrossfireStatsListener.CS_NUM_SKILLS; skill++)
-        {
+        for (int skill = CrossfireStatsListener.CS_STAT_SKILLINFO; skill < CrossfireStatsListener.CS_STAT_SKILLINFO+CrossfireStatsListener.CS_NUM_SKILLS; skill++) {
             statNames.put(skill, "skill");
         }
     }
@@ -82,8 +80,7 @@ public class StatUtils
     /**
      * Private constructor to prevent instantiation.
      */
-    private StatUtils()
-    {
+    private StatUtils() {
     }
 
     /**
@@ -92,13 +89,12 @@ public class StatUtils
      * @return the stat name
      */
     @NotNull
-    public static String getStatNames(final int stat)
-    {
+    public static String getStatNames(final int stat) {
         final String statName = statNames.get(stat);
-        if (statName == null)
-        {
+        if (statName == null) {
             throw new AssertionError();
         }
         return statName;
     }
+
 }

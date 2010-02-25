@@ -32,13 +32,12 @@ import org.jetbrains.annotations.Nullable;
  * One of the two most important classes, ServerConnection performs most of the
  * network-related work. It either decodes commands sent by the server itself,
  * or delegates their processing to other classes, like Map or Faces.
- *
- * @version 1.0
  * @author Lauwenmark
+ * @version 1.0
  * @since 1.0
  */
-public abstract class DefaultServerConnection implements ServerConnection
-{
+public abstract class DefaultServerConnection implements ServerConnection {
+
     @NotNull
     private final ClientSocket clientSocket;
 
@@ -48,16 +47,14 @@ public abstract class DefaultServerConnection implements ServerConnection
      * commands to this writer
      * @throws IOException if an internal error occurs
      */
-    protected DefaultServerConnection(@Nullable final DebugWriter debugProtocol) throws IOException
-    {
+    protected DefaultServerConnection(@Nullable final DebugWriter debugProtocol) throws IOException {
         clientSocket = new ClientSocket(debugProtocol);
     }
 
     /**
      * Starts operation.
      */
-    public void start()
-    {
+    public void start() {
         clientSocket.start();
     }
 
@@ -65,48 +62,51 @@ public abstract class DefaultServerConnection implements ServerConnection
      * Stops operation.
      * @throws InterruptedException if stopping was interrupted
      */
-    public void stop() throws InterruptedException
-    {
+    public void stop() throws InterruptedException {
         clientSocket.stop();
     }
 
-    /** {@inheritDoc} */
+    /**
+     * {@inheritDoc}
+     */
     @Override
-    public void addClientSocketListener(@NotNull final ClientSocketListener clientSocketListener)
-    {
+    public void addClientSocketListener(@NotNull final ClientSocketListener clientSocketListener) {
         clientSocket.addClientSocketListener(clientSocketListener);
     }
 
-    /** {@inheritDoc} */
+    /**
+     * {@inheritDoc}
+     */
     @Override
-    public void removeClientSocketListener(@NotNull final ClientSocketListener clientSocketListener)
-    {
+    public void removeClientSocketListener(@NotNull final ClientSocketListener clientSocketListener) {
         clientSocket.removeClientSocketListener(clientSocketListener);
     }
 
     /**
      * Writes a Crossfire Message on the socket, so it is sent to the server.
-     * @param packet the packet to be sent; it does not include the length
-     * bytes but only actual payload data
+     * @param packet the packet to be sent; it does not include the length bytes
+     * but only actual payload data
      * @param length the length of <code>packet</code>; if the array is larger,
      * excess data is ignored
      */
-    protected void writePacket(@NotNull final byte[] packet, final int length)
-    {
+    protected void writePacket(@NotNull final byte[] packet, final int length) {
         clientSocket.writePacket(packet, length);
     }
 
-    /** {@inheritDoc} */
+    /**
+     * {@inheritDoc}
+     */
     @Override
-    public void connect(@NotNull final String hostname, final int port)
-    {
+    public void connect(@NotNull final String hostname, final int port) {
         clientSocket.connect(hostname, port);
     }
 
-    /** {@inheritDoc} */
+    /**
+     * {@inheritDoc}
+     */
     @Override
-    public void disconnect()
-    {
+    public void disconnect() {
         clientSocket.disconnect();
     }
+
 }

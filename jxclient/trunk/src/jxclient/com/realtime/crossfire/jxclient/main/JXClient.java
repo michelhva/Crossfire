@@ -63,24 +63,20 @@ import org.jetbrains.annotations.Nullable;
  * @see CrossfireServerConnection
  * @since 1.0
  */
-public class JXClient
-{
+public class JXClient {
+
     /**
      * The program entry point.
      * @param args The command line arguments.
      */
-    public static void main(@NotNull final String[] args)
-    {
+    public static void main(@NotNull final String[] args) {
         System.out.println("JXClient - Crossfire Java Client");
         System.out.println("(C)2005 by Lauwenmark.");
         System.out.println("This software is placed under the GPL License");
         final Options options = new Options();
-        try
-        {
+        try {
             options.parse(args);
-        }
-        catch (final IOException ex)
-        {
+        } catch (final IOException ex) {
             System.err.println(ex.getMessage());
             System.exit(1);
             throw new AssertionError();
@@ -93,27 +89,21 @@ public class JXClient
      * Initialization of a JXCWindow is the only task performed here.
      * @param options the options
      */
-    private JXClient(@NotNull final Options options)
-    {
-        try
-        {
+    private JXClient(@NotNull final Options options) {
+        try {
             final Writer debugProtocolOutputStreamWriter = openDebugStream(options.getDebugProtocolFilename());
-            try
-            {
+            try {
                 final Writer debugKeyboardOutputStreamWriter = openDebugStream(options.getDebugKeyboardFilename());
-                try
-                {
+                try {
                     final Writer debugScreenOutputStreamWriter = openDebugStream(options.getDebugScreenFilename());
-                    try
-                    {
+                    try {
                         final OptionManager optionManager = new OptionManager(options.getPrefs());
                         final Object terminateSync = new Object();
                         final MetaserverModel metaserverModel = new MetaserverModel();
                         final Object semaphoreRedraw = new Object();
                         final CrossfireServerConnection server = new DefaultCrossfireServerConnection(semaphoreRedraw, debugProtocolOutputStreamWriter == null ? null : new DebugWriter(debugProtocolOutputStreamWriter));
                         server.start();
-                        try
-                        {
+                        try {
                             final GuiStateManager guiStateManager = new GuiStateManager(server);
                             final ExperienceTable experienceTable = new ExperienceTable(server);
                             final SkillSet skillSet = new SkillSet(server, guiStateManager);
@@ -125,23 +115,17 @@ public class JXClient
                             final JXCWindow window = new JXCWindow(terminateSync, server, semaphoreRedraw, options.isDebugGui(), debugKeyboardOutputStreamWriter, debugScreenOutputStreamWriter, options.getPrefs(), optionManager, metaserverModel, options.getResolution(), guiStateManager, experienceTable, skillSet, stats, facesManager, itemsManager);
                             new Metaserver(Filenames.getMetaserverCacheFile(), metaserverModel, guiStateManager);
                             final SoundManager soundManager = new SoundManager(guiStateManager);
-                            try
-                            {
+                            try {
                                 optionManager.addOption("sound_enabled", "Whether sound is enabled.", new SoundCheckBoxOption(soundManager));
-                            }
-                            catch (final OptionException ex)
-                            {
+                            } catch (final OptionException ex) {
                                 throw new AssertionError();
                             }
 
-                            synchronized (terminateSync)
-                            {
-                                SwingUtilities.invokeAndWait(new Runnable()
-                                {
+                            synchronized (terminateSync) {
+                                SwingUtilities.invokeAndWait(new Runnable() {
                                     /** {@inheritDoc} */
                                     @Override
-                                    public void run()
-                                    {
+                                    public void run() {
                                         new MusicWatcher(server, soundManager);
                                         new SoundWatcher(server, soundManager);
                                         new StatsWatcher(stats, window.getWindowRenderer(), itemsManager, soundManager);
@@ -150,60 +134,41 @@ public class JXClient
                                 });
                                 terminateSync.wait();
                             }
-                            SwingUtilities.invokeAndWait(new Runnable()
-                            {
+                            SwingUtilities.invokeAndWait(new Runnable() {
                                 /** {@inheritDoc} */
                                 @Override
-                                public void run()
-                                {
+                                public void run() {
                                     window.term();
                                     soundManager.shutdown();
                                 }
                             });
-                        }
-                        finally
-                        {
+                        } finally {
                             server.stop();
                         }
-                    }
-                    finally
-                    {
-                        if (debugScreenOutputStreamWriter != null)
-                        {
+                    } finally {
+                        if (debugScreenOutputStreamWriter != null) {
                             debugScreenOutputStreamWriter.close();
                         }
                     }
-                }
-                finally
-                {
-                    if (debugKeyboardOutputStreamWriter != null)
-                    {
+                } finally {
+                    if (debugKeyboardOutputStreamWriter != null) {
                         debugKeyboardOutputStreamWriter.close();
                     }
                 }
-            }
-            finally
-            {
-                if (debugProtocolOutputStreamWriter != null)
-                {
+            } finally {
+                if (debugProtocolOutputStreamWriter != null) {
                     debugProtocolOutputStreamWriter.close();
                 }
             }
-        }
-        catch (final IOException e)
-        {
+        } catch (final IOException e) {
             e.printStackTrace();
             System.exit(1);
             throw new AssertionError();
-        }
-        catch (final InterruptedException e)
-        {
+        } catch (final InterruptedException e) {
             e.printStackTrace();
             System.exit(1);
             throw new AssertionError();
-        }
-        catch (final InvocationTargetException e)
-        {
+        } catch (final InvocationTargetException e) {
             e.printStackTrace();
             System.exit(1);
             throw new AssertionError();
@@ -218,35 +183,28 @@ public class JXClient
      * @return the output stream or <code>null</code>
      */
     @Nullable
-    public static Writer openDebugStream(@Nullable final String filename)
-    {
-        if(filename == null)
-        {
+    public static Writer openDebugStream(@Nullable final String filename) {
+        if (filename == null) {
             return null;
         }
 
         final FileOutputStream outputStream;
-        try
-        {
+        try {
             outputStream = new FileOutputStream(filename);
-        }
-        catch (final FileNotFoundException ex)
-        {
+        } catch (final FileNotFoundException ex) {
             System.err.println(filename+": cannot create output file: "+ex.getMessage());
             return null;
         }
 
         final Writer writer;
-        try
-        {
+        try {
             writer = new OutputStreamWriter(outputStream, "UTF-8");
-        }
-        catch (final UnsupportedEncodingException ex)
-        {
+        } catch (final UnsupportedEncodingException ex) {
             System.err.println("internal error: unsupported encoding 'UTF-8': "+ex.getMessage());
             return null;
         }
 
         return writer;
     }
+
 }

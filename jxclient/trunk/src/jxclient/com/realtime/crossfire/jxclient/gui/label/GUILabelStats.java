@@ -37,8 +37,8 @@ import org.jetbrains.annotations.NotNull;
  * @author Lauwenmark
  * @author Andreas Kirschbaum
  */
-public class GUILabelStats extends GUIOneLineLabel
-{
+public class GUILabelStats extends GUIOneLineLabel {
+
     /**
      * The serial version UID.
      */
@@ -59,47 +59,39 @@ public class GUILabelStats extends GUIOneLineLabel
      * The {@link StatsListener} registered to be notified about stat changes.
      */
     @NotNull
-    private final StatsListener statsListener = new StatsListener()
-    {
+    private final StatsListener statsListener = new StatsListener() {
         /** {@inheritDoc} */
         @Override
-        public void reset()
-        {
+        public void reset() {
             // ignore
         }
 
         /** {@inheritDoc} */
         @Override
-        public void statChanged(final int statnr, final int value)
-        {
-            switch (stat)
-            {
+        public void statChanged(final int statnr, final int value) {
+            switch (stat) {
             case CrossfireStatsListener.CS_STAT_SPEED:
-                if (stat == statnr)
-                {
+                if (stat == statnr) {
                     setText(Formatter.formatFloat(stats.getFloatStat(stat), 2));
                 }
                 break;
 
             case CrossfireStatsListener.CS_STAT_WEAP_SP:
-                if (stat == statnr)
-                {
+                if (stat == statnr) {
                     setText(Formatter.formatFloat(stats.getWeaponSpeed(), 2));
                 }
                 break;
 
             case CrossfireStatsListener.CS_STAT_WEIGHT_LIM:
             case CrossfireStatsListener.C_STAT_WEIGHT:
-                if (stat == statnr)
-                {
+                if (stat == statnr) {
                     setText(Formatter.formatFloat(((value+50)/100)/10.0, 1));
                     setTooltipText(Formatter.formatFloat(value/1000.0, 3)+"kg");
                 }
                 break;
 
             default:
-                if (stat == statnr)
-                {
+                if (stat == statnr) {
                     setText(String.valueOf(value));
                 }
                 break;
@@ -108,45 +100,33 @@ public class GUILabelStats extends GUIOneLineLabel
 
         /** {@inheritDoc} */
         @Override
-        public void simpleWeaponSpeedChanged(final boolean simpleWeaponSpeed)
-        {
+        public void simpleWeaponSpeedChanged(final boolean simpleWeaponSpeed) {
             // ignore
         }
 
         /** {@inheritDoc} */
         @Override
-        public void titleChanged(@NotNull final String title)
-        {
-            if (stat == CrossfireStatsListener.CS_STAT_TITLE)
-            {
+        public void titleChanged(@NotNull final String title) {
+            if (stat == CrossfireStatsListener.CS_STAT_TITLE) {
                 setText(title);
             }
         }
 
         /** {@inheritDoc} */
         @Override
-        public void rangeChanged(@NotNull final String range)
-        {
-            if (stat != CrossfireStatsListener.CS_STAT_RANGE)
-            {
+        public void rangeChanged(@NotNull final String range) {
+            if (stat != CrossfireStatsListener.CS_STAT_RANGE) {
                 return;
             }
 
             final String text;
-            if (range.startsWith("Range: spell "))
-            {
+            if (range.startsWith("Range: spell ")) {
                 text = range.substring(13);
-            }
-            else if (range.startsWith("Range: "))
-            {
+            } else if (range.startsWith("Range: ")) {
                 text = range.substring(7);
-            }
-            else if (range.startsWith("Skill: "))
-            {
+            } else if (range.startsWith("Skill: ")) {
                 text = range.substring(7);
-            }
-            else
-            {
+            } else {
                 text = range;
             }
             setText(text);
@@ -154,27 +134,22 @@ public class GUILabelStats extends GUIOneLineLabel
 
         /** {@inheritDoc} */
         @Override
-        public void activeSkillChanged(@NotNull final String activeSkill)
-        {
+        public void activeSkillChanged(@NotNull final String activeSkill) {
             // ignore
         }
 
         /** {@inheritDoc} */
         @Override
-        public void experienceChanged(final long exp)
-        {
-            if (stat == CrossfireStatsListener.CS_STAT_EXP || stat == CrossfireStatsListener.CS_STAT_EXP64)
-            {
+        public void experienceChanged(final long exp) {
+            if (stat == CrossfireStatsListener.CS_STAT_EXP || stat == CrossfireStatsListener.CS_STAT_EXP64) {
                 setText(String.valueOf(exp));
             }
         }
 
         /** {@inheritDoc} */
         @Override
-        public void experienceNextLevelChanged(final long expNextLevel)
-        {
-            if (stat == CrossfireStatsListener.C_STAT_EXP_NEXT_LEVEL)
-            {
+        public void experienceNextLevelChanged(final long expNextLevel) {
+            if (stat == CrossfireStatsListener.C_STAT_EXP_NEXT_LEVEL) {
                 setText(String.valueOf(expNextLevel));
             }
         }
@@ -196,19 +171,20 @@ public class GUILabelStats extends GUIOneLineLabel
      * @param alignment the text alignment
      * @param stats the stats instance to use
      */
-    public GUILabelStats(@NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final String name, final int x, final int y, final int w, final int h, @NotNull final Font font, @NotNull final Color color, @NotNull final Color backgroundColor, final int stat, @NotNull final Alignment alignment, @NotNull final Stats stats)
-    {
+    public GUILabelStats(@NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final String name, final int x, final int y, final int w, final int h, @NotNull final Font font, @NotNull final Color color, @NotNull final Color backgroundColor, final int stat, @NotNull final Alignment alignment, @NotNull final Stats stats) {
         super(tooltipManager, elementListener, name, x, y, w, h, null, font, color, backgroundColor, alignment, "");
         this.stats = stats;
         this.stat = stat;
         this.stats.addCrossfireStatsListener(statsListener);
     }
 
-    /** {@inheritDoc} */
+    /**
+     * {@inheritDoc}
+     */
     @Override
-    public void dispose()
-    {
+    public void dispose() {
         super.dispose();
         stats.removeCrossfireStatsListener(statsListener);
     }
+
 }

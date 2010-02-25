@@ -37,8 +37,8 @@ import org.jetbrains.annotations.Nullable;
  * Manages key bindings.
  * @author Andreas Kirschbaum
  */
-public class KeybindingsManager
-{
+public class KeybindingsManager {
+
     /**
      * The commands instance to use.
      */
@@ -71,8 +71,8 @@ public class KeybindingsManager
     private KeyBindings characterKeyBindings = null;
 
     /**
-     * The current key binding state. Set to <code>null</code> if no key
-     * binding dialog is active.
+     * The current key binding state. Set to <code>null</code> if no key binding
+     * dialog is active.
      */
     @Nullable
     private KeyBindingState keyBindingState = null;
@@ -83,8 +83,7 @@ public class KeybindingsManager
      * @param commandCallback the command callback to use
      * @param macros the macros instance to use
      */
-    public KeybindingsManager(@NotNull final Commands commands, @NotNull final CommandCallback commandCallback, @NotNull final Macros macros)
-    {
+    public KeybindingsManager(@NotNull final Commands commands, @NotNull final CommandCallback commandCallback, @NotNull final Macros macros) {
         this.commands = commands;
         this.commandCallback = commandCallback;
         this.macros = macros;
@@ -97,10 +96,8 @@ public class KeybindingsManager
      * removed
      * @return whether the key bindings dialog should be opened
      */
-    public boolean removeKeyBinding(final boolean perCharacter)
-    {
-        if (perCharacter && characterKeyBindings == null)
-        {
+    public boolean removeKeyBinding(final boolean perCharacter) {
+        if (perCharacter && characterKeyBindings == null) {
             return false;
         }
 
@@ -112,10 +109,8 @@ public class KeybindingsManager
      * Should be called when the main window is closing.
      * @return whether the key bindings dialog should be closed
      */
-    public boolean windowClosing()
-    {
-        if (keyBindingState == null)
-        {
+    public boolean windowClosing() {
+        if (keyBindingState == null) {
             return false;
         }
 
@@ -130,11 +125,9 @@ public class KeybindingsManager
      * @param cmdlist the commands for the key binding
      * @return whether the key bindings dialog should be opened
      */
-    public boolean createKeyBinding(final boolean perCharacter, @NotNull final CommandList cmdlist)
-    {
+    public boolean createKeyBinding(final boolean perCharacter, @NotNull final CommandList cmdlist) {
         final KeyBindings bindings = getKeyBindings(perCharacter);
-        if (bindings == null)
-        {
+        if (bindings == null) {
             return false;
         }
 
@@ -147,29 +140,24 @@ public class KeybindingsManager
      * @param perCharacter if set, return the per-character key bindings; else
      * return the global bindings
      * @return the key bindings or <code>null</code> if no per-character
-     * bindings exist because no character is logged in
+     *         bindings exist because no character is logged in
      */
     @Nullable
-    private KeyBindings getKeyBindings(final boolean perCharacter)
-    {
+    private KeyBindings getKeyBindings(final boolean perCharacter) {
         return perCharacter ? characterKeyBindings : keyBindings;
     }
 
     /**
-     * Loads the per-character key bindings. This function should be called
-     * when a character logs in.
+     * Loads the per-character key bindings. This function should be called when
+     * a character logs in.
      * @param hostname the character's hostname
      * @param character the character's name
      */
-    public void loadPerCharacterBindings(@NotNull final CharSequence hostname, @NotNull final CharSequence character)
-    {
+    public void loadPerCharacterBindings(@NotNull final CharSequence hostname, @NotNull final CharSequence character) {
         characterKeyBindings = new KeyBindings(Filenames.getKeybindingsFile(hostname, character), commands, commandCallback, macros);
-        try
-        {
+        try {
             characterKeyBindings.loadKeyBindings();
-        }
-        catch (final IOException ex)
-        {
+        } catch (final IOException ex) {
             System.err.println("Cannot read keybindings file "+characterKeyBindings.getFile()+": "+ex.getMessage());
         }
     }
@@ -178,16 +166,11 @@ public class KeybindingsManager
      * Unloads (clears and saves) the per-character key bindings. This function
      * should be called when a character logs out.
      */
-    public void unloadPerCharacterBindings()
-    {
-        if (characterKeyBindings != null)
-        {
-            try
-            {
+    public void unloadPerCharacterBindings() {
+        if (characterKeyBindings != null) {
+            try {
                 characterKeyBindings.saveKeyBindings();
-            }
-            catch (final IOException ex)
-            {
+            } catch (final IOException ex) {
                 System.err.println("Cannot write keybindings file "+characterKeyBindings.getFile()+": "+ex.getMessage());
             }
             characterKeyBindings = null;
@@ -197,14 +180,10 @@ public class KeybindingsManager
     /**
      * Saves the key bindings to the backing file.
      */
-    public void saveKeybindings()
-    {
-        try
-        {
+    public void saveKeybindings() {
+        try {
             keyBindings.saveKeyBindings();
-        }
-        catch (final IOException ex)
-        {
+        } catch (final IOException ex) {
             System.err.println("Cannot write keybindings file "+keyBindings.getFile()+": "+ex.getMessage());
             return;
         }
@@ -213,14 +192,10 @@ public class KeybindingsManager
     /**
      * Loads the key bindings from the backing file.
      */
-    public void loadKeybindings()
-    {
-        try
-        {
+    public void loadKeybindings() {
+        try {
             keyBindings.loadKeyBindings();
-        }
-        catch (final IOException ex)
-        {
+        } catch (final IOException ex) {
             System.err.println("Cannot read keybindings file "+keyBindings.getFile()+": "+ex.getMessage());
             return;
         }
@@ -231,10 +206,8 @@ public class KeybindingsManager
      * @param keyChar the character information of the key event
      * @return whether the event has been consumed
      */
-    public boolean keyTyped(final char keyChar)
-    {
-        if (keyBindingState == null)
-        {
+    public boolean keyTyped(final char keyChar) {
+        if (keyBindingState == null) {
             return false;
         }
 
@@ -246,15 +219,12 @@ public class KeybindingsManager
      * Processes a key released event.
      * @return whether the event has been consumed
      */
-    public boolean keyReleased()
-    {
-        if (keyBindingState == null)
-        {
+    public boolean keyReleased() {
+        if (keyBindingState == null) {
             return false;
         }
 
-        if (!keyBindingState.keyReleased())
-        {
+        if (!keyBindingState.keyReleased()) {
             return false;
         }
 
@@ -268,10 +238,8 @@ public class KeybindingsManager
      * @param modifiers the modifiers of the key event
      * @return whether the event has been consumed
      */
-    public boolean keyPressed(final int keyCode, final int modifiers)
-    {
-        if (keyBindingState == null)
-        {
+    public boolean keyPressed(final int keyCode, final int modifiers) {
+        if (keyBindingState == null) {
             return false;
         }
 
@@ -282,12 +250,10 @@ public class KeybindingsManager
     /**
      * Processes a pressed ESC key.
      * @return whether the event has been consumed and the key bindings dialog
-     * should be closed
+     *         should be closed
      */
-    public boolean escPressed()
-    {
-        if (keyBindingState == null)
-        {
+    public boolean escPressed() {
+        if (keyBindingState == null) {
             return false;
         }
 
@@ -300,10 +266,8 @@ public class KeybindingsManager
      * @param e the key event
      * @return whether the event has been consumed
      */
-    public boolean handleKeyTyped(@NotNull final KeyEvent e)
-    {
-        if (characterKeyBindings != null && characterKeyBindings.handleKeyTyped(e))
-        {
+    public boolean handleKeyTyped(@NotNull final KeyEvent e) {
+        if (characterKeyBindings != null && characterKeyBindings.handleKeyTyped(e)) {
             return true;
         }
 
@@ -315,13 +279,12 @@ public class KeybindingsManager
      * @param e the key event
      * @return whether the event has been consumed
      */
-    public boolean handleKeyPress(@NotNull final KeyEvent e)
-    {
-        if (characterKeyBindings != null && characterKeyBindings.handleKeyPress(e))
-        {
+    public boolean handleKeyPress(@NotNull final KeyEvent e) {
+        if (characterKeyBindings != null && characterKeyBindings.handleKeyPress(e)) {
             return true;
         }
 
         return keyBindings.handleKeyPress(e);
     }
+
 }

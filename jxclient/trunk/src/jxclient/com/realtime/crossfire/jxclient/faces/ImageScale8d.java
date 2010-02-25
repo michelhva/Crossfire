@@ -28,11 +28,10 @@ import org.jetbrains.annotations.NotNull;
 
 /**
  * A utility to scale down an image by 8 in both dimensions.
- *
  * @author Andreas Kirschbaum
  */
-public class ImageScale8d
-{
+public class ImageScale8d {
+
     /**
      * The source data from the image.
      */
@@ -53,8 +52,7 @@ public class ImageScale8d
      * Creates a new instance.
      * @param srcImageIcon the image to scale
      */
-    public ImageScale8d(@NotNull final Icon srcImageIcon)
-    {
+    public ImageScale8d(@NotNull final Icon srcImageIcon) {
         width = srcImageIcon.getIconWidth();
         height = srcImageIcon.getIconHeight();
 
@@ -70,8 +68,7 @@ public class ImageScale8d
      * @return the scaled image
      */
     @NotNull
-    public ImageIcon getScaledImage()
-    {
+    public ImageIcon getScaledImage() {
         final RawScale8d scaler = new RawScale8d(srcData, width, height);
 
         final BufferedImage image = new BufferedImage(width/8, height/8, BufferedImage.TYPE_INT_ARGB);
@@ -79,4 +76,5 @@ public class ImageScale8d
 
         return new ImageIcon(image);
     }
+
 }

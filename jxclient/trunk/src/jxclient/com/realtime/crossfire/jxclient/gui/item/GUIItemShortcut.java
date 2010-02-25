@@ -19,7 +19,6 @@
  * Copyright (C) 2006-2010 Andreas Kirschbaum.
  */
 
-
 package com.realtime.crossfire.jxclient.gui.item;
 
 import com.realtime.crossfire.jxclient.faces.Face;
@@ -43,8 +42,8 @@ import java.awt.Image;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 
-public class GUIItemShortcut extends GUIItem
-{
+public class GUIItemShortcut extends GUIItem {
+
     /**
      * The serial version UID.
      */
@@ -109,36 +108,29 @@ public class GUIItemShortcut extends GUIItem
     private Shortcut shortcut = null;
 
     @NotNull
-    private final ShortcutsListener shortcutsListener = new ShortcutsListener()
-    {
+    private final ShortcutsListener shortcutsListener = new ShortcutsListener() {
         /** {@inheritDoc} */
         @Override
-        public void shortcutAdded(final int index, @NotNull final Shortcut shortcut)
-        {
-            if (index == GUIItemShortcut.this.index)
-            {
+        public void shortcutAdded(final int index, @NotNull final Shortcut shortcut) {
+            if (index == GUIItemShortcut.this.index) {
                 setShortcut(shortcut);
             }
         }
 
         /** {@inheritDoc} */
         @Override
-        public void shortcutRemoved(final int index, @NotNull final Shortcut shortcut)
-        {
-            if (index == GUIItemShortcut.this.index)
-            {
+        public void shortcutRemoved(final int index, @NotNull final Shortcut shortcut) {
+            if (index == GUIItemShortcut.this.index) {
                 setShortcut(null);
             }
         }
     };
 
     @NotNull
-    private final ShortcutListener shortcutListener = new ShortcutListener()
-    {
+    private final ShortcutListener shortcutListener = new ShortcutListener() {
         /** {@inheritDoc} */
         @Override
-        public void shortcutModified()
-        {
+        public void shortcutModified() {
             setChanged();
             updateTooltipText();
         }
@@ -148,21 +140,17 @@ public class GUIItemShortcut extends GUIItem
      * The {@link FacesManagerListener} registered to detect updated faces.
      */
     @NotNull
-    private final FacesManagerListener facesManagerListener = new FacesManagerListener()
-    {
+    private final FacesManagerListener facesManagerListener = new FacesManagerListener() {
         /** {@inheritDoc} */
         @Override
-        public void faceUpdated(@NotNull final Face face)
-        {
-            if (shortcut != null && shortcut instanceof ShortcutSpell && face.getFaceNum() == ((ShortcutSpell)shortcut).getSpell().getFaceNum())
-            {
+        public void faceUpdated(@NotNull final Face face) {
+            if (shortcut != null && shortcut instanceof ShortcutSpell && face.getFaceNum() == ((ShortcutSpell)shortcut).getSpell().getFaceNum()) {
                 setChanged();
             }
         }
     };
 
-    public GUIItemShortcut(@NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final String name, final int x, final int y, final int w, final int h, @Nullable final Color cursedColor, @Nullable final Image cursedImage, @Nullable final Color appliedColor, @Nullable final Image appliedImage, final int index, @NotNull final FacesManager facesManager, @NotNull final Shortcuts shortcuts, @NotNull final Font font, @NotNull final CurrentSpellManager currentSpellManager)
-    {
+    public GUIItemShortcut(@NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final String name, final int x, final int y, final int w, final int h, @Nullable final Color cursedColor, @Nullable final Image cursedImage, @Nullable final Color appliedColor, @Nullable final Image appliedImage, final int index, @NotNull final FacesManager facesManager, @NotNull final Shortcuts shortcuts, @NotNull final Font font, @NotNull final CurrentSpellManager currentSpellManager) {
         super(tooltipManager, elementListener, name, x, y, w, h);
         this.shortcuts = shortcuts;
         this.facesManager = facesManager;
@@ -180,10 +168,11 @@ public class GUIItemShortcut extends GUIItem
         updateTooltipText();
     }
 
-    /** {@inheritDoc} */
+    /**
+     * {@inheritDoc}
+     */
     @Override
-    public void dispose()
-    {
+    public void dispose() {
         super.dispose();
         facesManager.removeFacesManagerListener(facesManagerListener);
         shortcuts.removeShortcutsListener(shortcutsListener);
@@ -195,20 +184,16 @@ public class GUIItemShortcut extends GUIItem
      * #shortcutListener}.
      * @param shortcut the new shortcut
      */
-    private void setShortcut(@Nullable final Shortcut shortcut)
-    {
-        if (this.shortcut == shortcut)
-        {
+    private void setShortcut(@Nullable final Shortcut shortcut) {
+        if (this.shortcut == shortcut) {
             return;
         }
 
-        if (this.shortcut != null)
-        {
+        if (this.shortcut != null) {
             this.shortcut.removeShortcutListener(shortcutListener);
         }
         this.shortcut = shortcut;
-        if (this.shortcut != null)
-        {
+        if (this.shortcut != null) {
             this.shortcut.addShortcutListener(shortcutListener);
         }
         setChanged();
@@ -218,22 +203,17 @@ public class GUIItemShortcut extends GUIItem
 
     /* {@inheritDoc} */
     @Override
-    public void button1Clicked(final int modifiers)
-    {
-        if (shortcut != null)
-        {
+    public void button1Clicked(final int modifiers) {
+        if (shortcut != null) {
             shortcut.execute();
         }
     }
 
     /* {@inheritDoc} */
     @Override
-    public void button2Clicked(final int modifiers)
-    {
-        if (shortcut != null)
-        {
-            if (shortcut instanceof ShortcutSpell)
-            {
+    public void button2Clicked(final int modifiers) {
+        if (shortcut != null) {
+            if (shortcut instanceof ShortcutSpell) {
                 final ShortcutSpell shortcutSpell = (ShortcutSpell)shortcut;
                 shortcutSpell.setCast(!shortcutSpell.isCast());
             }
@@ -242,12 +222,10 @@ public class GUIItemShortcut extends GUIItem
 
     /* {@inheritDoc} */
     @Override
-    public void button3Clicked(final int modifiers)
-    {
+    public void button3Clicked(final int modifiers) {
         final Spell spell = currentSpellManager.getCurrentSpell();
-        if (spell == null)
-        {
-           return;
+        if (spell == null) {
+            return;
         }
 
         shortcuts.setSpellShortcut(index, spell, true);
@@ -255,39 +233,30 @@ public class GUIItemShortcut extends GUIItem
 
     /* {@inheritDoc} */
     @Override
-    protected void render(@NotNull final Graphics g)
-    {
+    protected void render(@NotNull final Graphics g) {
         final Graphics2D g2 = (Graphics2D)g;
         g2.setBackground(BACKGROUND_COLOR);
         g.clearRect(0, 0, getWidth(), getHeight());
 
-        if (shortcut == null)
-        {
+        if (shortcut == null) {
             return;
         }
 
-        if (shortcut instanceof ShortcutSpell)
-        {
+        if (shortcut instanceof ShortcutSpell) {
             final ShortcutSpell shortcutSpell = (ShortcutSpell)shortcut;
             final Color color = shortcutSpell.isCast() ? cursedColor : appliedColor;
-            if (color != null)
-            {
+            if (color != null) {
                 g.setColor(color);
                 g.fillRect(0, 0, w, h);
             }
             g.drawImage(facesManager.getOriginalImageIcon(shortcutSpell.getSpell().getFaceNum()).getImage(), 0, 0, null);
             final Image image = shortcutSpell.isCast() ? cursedImage : appliedImage;
-            if (image != null)
-            {
+            if (image != null) {
                 g.drawImage(image, 0, 0, null);
             }
-        }
-        else if (shortcut instanceof ShortcutCommand)
-        {
+        } else if (shortcut instanceof ShortcutCommand) {
             // XXX: todo
-        }
-        else
-        {
+        } else {
             throw new AssertionError();
         }
         g.setFont(font);
@@ -295,30 +264,33 @@ public class GUIItemShortcut extends GUIItem
         g.drawString("F"+(index+1), 1, 1+font.getSize()); // XXX: define in skin
     }
 
-    /** {@inheritDoc} */
+    /**
+     * {@inheritDoc}
+     */
     @Override
-    public boolean canScroll(final int distance)
-    {
+    public boolean canScroll(final int distance) {
         return false;
     }
 
-    /** {@inheritDoc} */
+    /**
+     * {@inheritDoc}
+     */
     @Override
-    public void scroll(final int distance)
-    {
+    public void scroll(final int distance) {
     }
 
-    /** {@inheritDoc} */
+    /**
+     * {@inheritDoc}
+     */
     @Override
-    public void resetScroll()
-    {
+    public void resetScroll() {
     }
 
     /**
      * Updates the tooltip text to reflect current settings.
      */
-    private void updateTooltipText()
-    {
+    private void updateTooltipText() {
         setTooltipText(shortcut == null ? DEFAULT_TOOLTIP_TEXT : shortcut.getTooltipText());
     }
+
 }

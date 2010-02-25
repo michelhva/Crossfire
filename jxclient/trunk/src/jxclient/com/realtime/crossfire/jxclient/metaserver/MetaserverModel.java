@@ -35,8 +35,8 @@ import org.jetbrains.annotations.Nullable;
  * @author Lauwenmark
  * @author Andreas Kirschbaum
  */
-public class MetaserverModel
-{
+public class MetaserverModel {
+
     /**
      * The current entries.
      */
@@ -76,17 +76,12 @@ public class MetaserverModel
      *         invalid
      */
     @Nullable
-    public MetaserverEntry getEntry(final int index)
-    {
-        try
-        {
-            synchronized (sync)
-            {
+    public MetaserverEntry getEntry(final int index) {
+        try {
+            synchronized (sync) {
                 return metalist.get(index);
             }
-        }
-        catch (final IndexOutOfBoundsException ex)
-        {
+        } catch (final IndexOutOfBoundsException ex) {
             return null;
         }
     }
@@ -96,15 +91,11 @@ public class MetaserverModel
      * @param serverName the server name
      * @return the index, or <code>-1</code> if not found
      */
-    public int getServerIndex(@NotNull final String serverName)
-    {
-        synchronized (sync)
-        {
+    public int getServerIndex(@NotNull final String serverName) {
+        synchronized (sync) {
             int index = 0;
-            for (final MetaserverEntry metaserverEntry : metalist)
-            {
-                if (metaserverEntry.getHostname().equals(serverName))
-                {
+            for (final MetaserverEntry metaserverEntry : metalist) {
+                if (metaserverEntry.getHostname().equals(serverName)) {
                     return index;
                 }
 
@@ -119,10 +110,8 @@ public class MetaserverModel
      * Returns the number of metaserver entries.
      * @return the number of metaserver entries
      */
-    public int size()
-    {
-        synchronized (sync)
-        {
+    public int size() {
+        synchronized (sync) {
             return metalist.size();
         }
     }
@@ -131,10 +120,8 @@ public class MetaserverModel
      * Adds an entry.
      * @param metaserverEntry the entry to add
      */
-    public void add(@NotNull final MetaserverEntry metaserverEntry)
-    {
-        synchronized (sync)
-        {
+    public void add(@NotNull final MetaserverEntry metaserverEntry) {
+        synchronized (sync) {
             metalistPending.add(metaserverEntry);
         }
     }
@@ -142,20 +129,17 @@ public class MetaserverModel
     /**
      * Starts an update transaction.
      */
-    public void begin()
-    {
+    public void begin() {
         metalistPending.clear();
     }
 
     /**
      * Finishes an update transaction.
      */
-    public void commit()
-    {
+    public void commit() {
         final int oldMetalistSize;
         final int newMetalistSize;
-        synchronized (sync)
-        {
+        synchronized (sync) {
             oldMetalistSize = metalist.size();
             metalist.clear();
             metalist.addAll(metalistPending);
@@ -164,15 +148,12 @@ public class MetaserverModel
         }
         metalistPending.clear();
 
-        for (final MetaserverListener metaserverListener : metaserverListeners)
-        {
+        for (final MetaserverListener metaserverListener : metaserverListeners) {
             metaserverListener.numberOfEntriesChanged();
         }
 
-        for (int i = 0, imax = Math.max(oldMetalistSize, newMetalistSize); i < imax; i++)
-        {
-            for (final MetaserverEntryListener metaserverEntryListener : getMetaserverEntryListeners(i))
-            {
+        for (int i = 0, imax = Math.max(oldMetalistSize, newMetalistSize); i < imax; i++) {
+            for (final MetaserverEntryListener metaserverEntryListener : getMetaserverEntryListeners(i)) {
                 metaserverEntryListener.entryChanged();
             }
         }
@@ -182,8 +163,7 @@ public class MetaserverModel
      * Adds a metaserver listener.
      * @param listener the listener to add
      */
-    public void addMetaserverListener(@NotNull final MetaserverListener listener)
-    {
+    public void addMetaserverListener(@NotNull final MetaserverListener listener) {
         metaserverListeners.add(listener);
     }
 
@@ -191,8 +171,7 @@ public class MetaserverModel
      * Removes a metaserver listener.
      * @param listener the listener to remove
      */
-    public void removeMetaserverListener(@NotNull final MetaserverListener listener)
-    {
+    public void removeMetaserverListener(@NotNull final MetaserverListener listener) {
         metaserverListeners.remove(listener);
     }
 
@@ -201,8 +180,7 @@ public class MetaserverModel
      * @param index the entry index to monitor
      * @param listener the listener to add
      */
-    public void addMetaserverEntryListener(final int index, @NotNull final MetaserverEntryListener listener)
-    {
+    public void addMetaserverEntryListener(final int index, @NotNull final MetaserverEntryListener listener) {
         getMetaserverEntryListeners(index).add(listener);
     }
 
@@ -211,8 +189,7 @@ public class MetaserverModel
      * @param index the entry index to monitor
      * @param listener the listener to remove
      */
-    public void removeMetaserverEntryListener(final int index, @NotNull final MetaserverEntryListener listener)
-    {
+    public void removeMetaserverEntryListener(final int index, @NotNull final MetaserverEntryListener listener) {
         getMetaserverEntryListeners(index).remove(listener);
     }
 
@@ -222,13 +199,10 @@ public class MetaserverModel
      * @return the listeners list
      */
     @NotNull
-    private Collection<MetaserverEntryListener> getMetaserverEntryListeners(final int index)
-    {
-        synchronized (metaserverEntryListeners)
-        {
+    private Collection<MetaserverEntryListener> getMetaserverEntryListeners(final int index) {
+        synchronized (metaserverEntryListeners) {
             final Collection<MetaserverEntryListener> existingListeners = metaserverEntryListeners.get(index);
-            if (existingListeners != null)
-            {
+            if (existingListeners != null) {
                 return existingListeners;
             }
 
@@ -237,4 +211,5 @@ public class MetaserverModel
             return newListeners;
         }
     }
+
 }

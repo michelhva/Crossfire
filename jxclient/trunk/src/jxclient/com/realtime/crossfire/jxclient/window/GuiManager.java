@@ -60,8 +60,8 @@ import org.jetbrains.annotations.Nullable;
  * Maintains the application's main GUI state.
  * @author Andreas Kirschbaum
  */
-public class GuiManager
-{
+public class GuiManager {
+
     /**
      * The semaphore used to synchronized drawing operations.
      */
@@ -177,14 +177,11 @@ public class GuiManager
      * Called periodically to update the display contents.
      */
     @NotNull
-    private final ActionListener actionListener = new ActionListener()
-    {
+    private final ActionListener actionListener = new ActionListener() {
         /** {@inheritDoc} */
         @Override
-        public void actionPerformed(final ActionEvent e)
-        {
-            synchronized (semaphoreDrawing)
-            {
+        public void actionPerformed(final ActionEvent e) {
+            synchronized (semaphoreDrawing) {
                 windowRenderer.redrawGUI();
             }
         }
@@ -200,25 +197,20 @@ public class GuiManager
      * The {@link CrossfireDrawextinfoListener} attached to {@link #server}.
      */
     @NotNull
-    private final CrossfireDrawextinfoListener crossfireDrawextinfoListener = new CrossfireDrawextinfoListener()
-    {
+    private final CrossfireDrawextinfoListener crossfireDrawextinfoListener = new CrossfireDrawextinfoListener() {
         /** {@inheritDoc} */
         @Override
-        public void commandDrawextinfoReceived(final int color, final int type, final int subtype, @NotNull String message)
-        {
-            if (skin == null)
-            {
+        public void commandDrawextinfoReceived(final int color, final int type, final int subtype, @NotNull String message) {
+            if (skin == null) {
                 throw new IllegalStateException();
             }
 
             @Nullable final Gui dialog;
-            switch (type)
-            {
+            switch (type) {
             case MessageTypes.MSG_TYPE_BOOK:
                 dialog = skin.getDialogBook(1);
                 final AbstractLabel title = dialog.getFirstElementEndingWith(GUIOneLineLabel.class, "_title");
-                if (title != null)
-                {
+                if (title != null) {
                     final String[] tmp = message.split("\n", 2);
                     title.setText(tmp[0]);
                     message = tmp.length >= 2 ? tmp[1] : "";
@@ -261,21 +253,16 @@ public class GuiManager
                 break;
             }
 
-            if (dialog == null)
-            {
+            if (dialog == null) {
                 return;
             }
 
             final AbstractLabel label = dialog.getFirstElementNotEndingWith(AbstractLabel.class, "_title");
-            if (label != null)
-            {
+            if (label != null) {
                 label.setText(message);
-            }
-            else
-            {
+            } else {
                 final GUILabelLog log = dialog.getFirstElement(GUILabelLog.class);
-                if (log != null)
-                {
+                if (log != null) {
                     log.updateText(message);
                 }
             }
@@ -288,12 +275,10 @@ public class GuiManager
      * connections.
      */
     @NotNull
-    private final GuiStateListener guiStateListener = new GuiStateListener()
-    {
+    private final GuiStateListener guiStateListener = new GuiStateListener() {
         /** {@inheritDoc} */
         @Override
-        public void start()
-        {
+        public void start() {
             server.removeCrossfireDrawextinfoListener(crossfireDrawextinfoListener);
             windowRenderer.setGuiState(RendererGuiState.START);
             showGUIStart();
@@ -301,8 +286,7 @@ public class GuiManager
 
         /** {@inheritDoc} */
         @Override
-        public void metaserver()
-        {
+        public void metaserver() {
             server.removeCrossfireDrawextinfoListener(crossfireDrawextinfoListener);
             windowRenderer.setGuiState(RendererGuiState.META);
             showGUIMeta();
@@ -311,17 +295,14 @@ public class GuiManager
 
         /** {@inheritDoc} */
         @Override
-        public void preConnecting(@NotNull final String serverInfo)
-        {
+        public void preConnecting(@NotNull final String serverInfo) {
             // ignore
         }
 
         /** {@inheritDoc} */
         @Override
-        public void connecting(@NotNull final String serverInfo)
-        {
-            if (skin == null)
-            {
+        public void connecting(@NotNull final String serverInfo) {
+            if (skin == null) {
                 throw new IllegalStateException();
             }
 
@@ -334,8 +315,7 @@ public class GuiManager
             server.addCrossfireDrawextinfoListener(crossfireDrawextinfoListener);
             windowRenderer.setGuiState(RendererGuiState.LOGIN);
             showGUIMain();
-            if (dialogConnect != null)
-            {
+            if (dialogConnect != null) {
                 windowRenderer.openDialog(dialogConnect, false);
                 updateConnectLabel(ClientSocketState.CONNECTING, null);
             }
@@ -343,27 +323,22 @@ public class GuiManager
 
         /** {@inheritDoc} */
         @Override
-        public void connecting(@NotNull final ClientSocketState clientSocketState)
-        {
+        public void connecting(@NotNull final ClientSocketState clientSocketState) {
             updateConnectLabel(clientSocketState, null);
         }
 
         /** {@inheritDoc} */
         @Override
-        public void connected()
-        {
-            if (dialogConnect != null)
-            {
+        public void connected() {
+            if (dialogConnect != null) {
                 closeDialog(dialogConnect);
             }
         }
 
         /** {@inheritDoc} */
         @Override
-        public void connectFailed(@NotNull final String reason)
-        {
-            if (dialogConnect != null)
-            {
+        public void connectFailed(@NotNull final String reason) {
+            if (dialogConnect != null) {
                 windowRenderer.openDialog(dialogConnect, false);
                 updateConnectLabel(ClientSocketState.CONNECT_FAILED, reason);
             }
@@ -374,81 +349,67 @@ public class GuiManager
      * The {@link CommandCallback}.
      */
     @NotNull
-    private final CommandCallback commandCallback = new CommandCallback()
-    {
+    private final CommandCallback commandCallback = new CommandCallback() {
         /** {@inheritDoc} */
         @Override
-        public void quitApplication()
-        {
+        public void quitApplication() {
             terminate();
         }
 
         /** {@inheritDoc} */
         @Override
-        public void openDialog(@NotNull final Gui dialog)
-        {
+        public void openDialog(@NotNull final Gui dialog) {
             GuiManager.this.openDialog(dialog, false);
         }
 
         /** {@inheritDoc} */
         @Override
-        public void toggleDialog(@NotNull final Gui dialog)
-        {
+        public void toggleDialog(@NotNull final Gui dialog) {
             GuiManager.this.toggleDialog(dialog);
         }
 
         /** {@inheritDoc} */
         @Override
-        public void closeDialog(@NotNull final Gui dialog)
-        {
+        public void closeDialog(@NotNull final Gui dialog) {
             GuiManager.this.closeDialog(dialog);
         }
 
         /** {@inheritDoc} */
         @NotNull
         @Override
-        public CommandList getCommandList(@NotNull final String args) throws NoSuchCommandException
-        {
-            if (skin == null)
-            {
+        public CommandList getCommandList(@NotNull final String args) throws NoSuchCommandException {
+            if (skin == null) {
                 throw new IllegalStateException();
             }
 
-            try
-            {
+            try {
                 return skin.getCommandList(args);
-            }
-            catch (final JXCSkinException ex)
-            {
+            } catch (final JXCSkinException ex) {
                 throw new NoSuchCommandException(ex.getMessage());
             }
         }
 
         /** {@inheritDoc} */
         @Override
-        public void updatePlayerName(@NotNull final String playerName)
-        {
+        public void updatePlayerName(@NotNull final String playerName) {
             GuiManager.this.updatePlayerName(playerName);
         }
 
         /** {@inheritDoc} */
         @Override
-        public void activateCommandInput(@NotNull final String newText)
-        {
+        public void activateCommandInput(@NotNull final String newText) {
             GuiManager.this.activateCommandInput(newText);
         }
 
         /** {@inheritDoc} */
         @Override
-        public boolean createKeyBinding(final boolean perCharacter, @NotNull final CommandList commandList)
-        {
+        public boolean createKeyBinding(final boolean perCharacter, @NotNull final CommandList commandList) {
             return GuiManager.this.createKeyBinding(perCharacter, commandList);
         }
 
         /** {@inheritDoc} */
         @Override
-        public boolean removeKeyBinding(final boolean perCharacter)
-        {
+        public boolean removeKeyBinding(final boolean perCharacter) {
             return GuiManager.this.removeKeyBinding(perCharacter);
         }
     };
@@ -469,8 +430,7 @@ public class GuiManager
      * @param optionManager the option manager to use
      * @param mouseTracker the mouse tracker to use
      */
-    public GuiManager(@NotNull final GuiStateManager guiStateManager, @NotNull final Object semaphoreDrawing, @NotNull final Object terminateSync, @NotNull final TooltipManager tooltipManager, @NotNull final Settings settings, @NotNull final CrossfireServerConnection server, @NotNull final Macros macros, @NotNull final JXCWindowRenderer windowRenderer, @NotNull final ScriptManager scriptManager, @NotNull final CommandQueue commandQueue, @NotNull final OptionManager optionManager, @Nullable final MouseTracker mouseTracker)
-    {
+    public GuiManager(@NotNull final GuiStateManager guiStateManager, @NotNull final Object semaphoreDrawing, @NotNull final Object terminateSync, @NotNull final TooltipManager tooltipManager, @NotNull final Settings settings, @NotNull final CrossfireServerConnection server, @NotNull final Macros macros, @NotNull final JXCWindowRenderer windowRenderer, @NotNull final ScriptManager scriptManager, @NotNull final CommandQueue commandQueue, @NotNull final OptionManager optionManager, @Nullable final MouseTracker mouseTracker) {
         this.semaphoreDrawing = semaphoreDrawing;
         this.terminateSync = terminateSync;
         this.tooltipManager = tooltipManager;
@@ -489,10 +449,8 @@ public class GuiManager
     /**
      * A "player" protocol command has been received.
      */
-    public void playerReceived()
-    {
-        if (windowRenderer.getGuiState() == RendererGuiState.NEWCHAR)
-        {
+    public void playerReceived() {
+        if (windowRenderer.getGuiState() == RendererGuiState.NEWCHAR) {
             openDialogByName("messages"); // hack for race selection
         }
         windowRenderer.setGuiState(RendererGuiState.PLAYING);
@@ -502,20 +460,16 @@ public class GuiManager
      * Operns the "quit" dialog. Does nothing if the dialog is open.
      * @return whether the dialog has been opened
      */
-    public boolean openQuitDialog()
-    {
-        if (keybindingsManager.windowClosing())
-        {
+    public boolean openQuitDialog() {
+        if (keybindingsManager.windowClosing()) {
             closeKeybindDialog();
         }
 
-        if (dialogQuit == null)
-        {
+        if (dialogQuit == null) {
             return false;
         }
 
-        if (dialogDisconnect != null)
-        {
+        if (dialogDisconnect != null) {
             closeDialog(dialogDisconnect);
         }
         assert dialogQuit != null;
@@ -526,54 +480,34 @@ public class GuiManager
     /**
      * The ESC key has been pressed.
      * @param connected whether a connection to the server is active
-     * @return whether how the key has been consumed: 0=ignore key,
-     * 1=disconnect from server, quit=quit application
+     * @return whether how the key has been consumed: 0=ignore key, 1=disconnect
+     *         from server, quit=quit application
      */
-    public int escPressed(final boolean connected)
-    {
-        if (keybindingsManager.escPressed())
-        {
+    public int escPressed(final boolean connected) {
+        if (keybindingsManager.escPressed()) {
             assert keybindDialog != null;
             closeDialog(keybindDialog);
-        }
-        else if (windowRenderer.deactivateCommandInput())
-        {
+        } else if (windowRenderer.deactivateCommandInput()) {
             // ignore
-        }
-        else if (connected)
-        {
-            if (dialogDisconnect == null)
-            {
+        } else if (connected) {
+            if (dialogDisconnect == null) {
                 return 1;
-            }
-            else if (windowRenderer.openDialog(dialogDisconnect, false))
-            {
-                if (dialogQuit != null)
-                {
+            } else if (windowRenderer.openDialog(dialogDisconnect, false)) {
+                if (dialogQuit != null) {
                     closeDialog(dialogQuit);
                 }
-            }
-            else
-            {
+            } else {
                 assert dialogDisconnect != null;
                 closeDialog(dialogDisconnect);
             }
-        }
-        else
-        {
-            if (dialogQuit == null)
-            {
+        } else {
+            if (dialogQuit == null) {
                 return 2;
-            }
-            else if (windowRenderer.openDialog(dialogQuit, false))
-            {
-                if (dialogDisconnect != null)
-                {
+            } else if (windowRenderer.openDialog(dialogQuit, false)) {
+                if (dialogDisconnect != null) {
                     closeDialog(dialogDisconnect);
                 }
-            }
-            else
-            {
+            } else {
                 assert dialogQuit != null;
                 closeDialog(dialogQuit);
             }
@@ -586,10 +520,8 @@ public class GuiManager
      * @param prompt the query prompt
      * @param queryType the query type
      */
-    public void openQueryDialog(@NotNull final String prompt, final int queryType)
-    {
-        if (queryDialog == null)
-        {
+    public void openQueryDialog(@NotNull final String prompt, final int queryType) {
+        if (queryDialog == null) {
             throw new IllegalStateException();
         }
 
@@ -597,30 +529,21 @@ public class GuiManager
         assert queryDialog != null;
         queryDialog.setHideInput((queryType&CrossfireQueryListener.HIDEINPUT) != 0);
         currentQueryDialogIsNamePrompt = prompt.startsWith("What is your name?");
-        if (currentQueryDialogIsNamePrompt)
-        {
+        if (currentQueryDialogIsNamePrompt) {
             final String playerName = settings.getString("player_"+connection.getHostname(), "");
-            if (playerName.length() > 0)
-            {
+            if (playerName.length() > 0) {
                 assert queryDialog != null;
                 final GUIText textArea = queryDialog.getFirstElement(GUIText.class);
-                if (textArea != null)
-                {
+                if (textArea != null) {
                     textArea.setText(playerName);
                 }
             }
-        }
-        else if (prompt.startsWith("[y] to roll new stats")
-        || prompt.startsWith("Welcome, Brave New Warrior!"))
-        {
+        } else if (prompt.startsWith("[y] to roll new stats") || prompt.startsWith("Welcome, Brave New Warrior!")) {
             windowRenderer.setGuiState(RendererGuiState.NEWCHAR);
-            if (openDialogByName("newchar"))
-            {
+            if (openDialogByName("newchar")) {
                 closeDialogByName("messages");
                 closeDialogByName("status");
-            }
-            else
-            {
+            } else {
                 // fallback: open both message and status dialogs if this skin
                 // does not define a login dialog
                 openDialogByName("messages");
@@ -634,14 +557,12 @@ public class GuiManager
     /**
      * Opens a dialog. Raises the dialog if it is open.
      * @param dialog the dialog to show
-     * @param autoCloseOnDeactivate whether the dialog should auto-close when
-     * it becomes inactive; ignored if the dialog is already open
+     * @param autoCloseOnDeactivate whether the dialog should auto-close when it
+     * becomes inactive; ignored if the dialog is already open
      */
-    private void openDialog(@NotNull final Gui dialog, final boolean autoCloseOnDeactivate)
-    {
+    private void openDialog(@NotNull final Gui dialog, final boolean autoCloseOnDeactivate) {
         windowRenderer.openDialog(dialog, autoCloseOnDeactivate);
-        if (dialog == queryDialog)
-        {
+        if (dialog == queryDialog) {
             dialog.setHideInput(false);
         }
     }
@@ -650,12 +571,9 @@ public class GuiManager
      * Toggles a dialog.
      * @param dialog the dialog to toggle
      */
-    private void toggleDialog(@NotNull final Gui dialog)
-    {
-        if (windowRenderer.toggleDialog(dialog))
-        {
-            if (dialog == queryDialog)
-            {
+    private void toggleDialog(@NotNull final Gui dialog) {
+        if (windowRenderer.toggleDialog(dialog)) {
+            if (dialog == queryDialog) {
                 dialog.setHideInput(false);
             }
         }
@@ -664,18 +582,15 @@ public class GuiManager
     /**
      * Closes the "query" dialog. Does nothing if the dialog is not open.
      */
-    public void closeQueryDialog()
-    {
-        if (queryDialog == null)
-        {
+    public void closeQueryDialog() {
+        if (queryDialog == null) {
             throw new IllegalStateException();
         }
 
         closeDialog(queryDialog);
     }
 
-    public void initRendering()
-    {
+    public void initRendering() {
         keybindingsManager.loadKeybindings();
     }
 
@@ -684,20 +599,15 @@ public class GuiManager
      * @param name the dialog name
      * @return whether the dialog exists
      */
-    private boolean openDialogByName(@NotNull final String name)
-    {
-        if (skin == null)
-        {
+    private boolean openDialogByName(@NotNull final String name) {
+        if (skin == null) {
             throw new IllegalStateException();
         }
 
         final Gui dialog;
-        try
-        {
+        try {
             dialog = skin.getDialog(name);
-        }
-        catch (final JXCSkinException ex)
-        {
+        } catch (final JXCSkinException ex) {
             return false;
         }
 
@@ -709,20 +619,15 @@ public class GuiManager
      * Closes a dialog by name.
      * @param name the dialog name
      */
-    private void closeDialogByName(@NotNull final String name)
-    {
-        if (skin == null)
-        {
+    private void closeDialogByName(@NotNull final String name) {
+        if (skin == null) {
             throw new IllegalStateException();
         }
 
         final Gui dialog;
-        try
-        {
+        try {
             dialog = skin.getDialog(name);
-        }
-        catch (final JXCSkinException ex)
-        {
+        } catch (final JXCSkinException ex) {
             // ignore
             return;
         }
@@ -732,11 +637,9 @@ public class GuiManager
     /**
      * Terminates the application.
      */
-    public void terminate()
-    {
+    public void terminate() {
         timer.stop();
-        synchronized (terminateSync)
-        {
+        synchronized (terminateSync) {
             terminateSync.notifyAll();
         }
     }
@@ -745,23 +648,18 @@ public class GuiManager
      * Closes all transient dialogs: disconnect, quit, connect, query, and book
      * dialogs.
      */
-    public void closeTransientDialogs()
-    {
-        if (queryDialog == null || skin == null)
-        {
+    public void closeTransientDialogs() {
+        if (queryDialog == null || skin == null) {
             throw new IllegalStateException();
         }
 
-        if (dialogDisconnect != null)
-        {
+        if (dialogDisconnect != null) {
             closeDialog(dialogDisconnect);
         }
-        if (dialogQuit != null)
-        {
+        if (dialogQuit != null) {
             closeDialog(dialogQuit);
         }
-        if (dialogConnect != null)
-        {
+        if (dialogConnect != null) {
             closeDialog(dialogConnect);
         }
         assert queryDialog != null;
@@ -774,32 +672,26 @@ public class GuiManager
      * Called when the server selection GUI becomes active. Selects the last
      * used server entry.
      */
-    private void activateMetaserverGui()
-    {
+    private void activateMetaserverGui() {
         final String serverName = settings.getString("server", "crossfire.metalforge.net");
-        if (serverName.length() > 0)
-        {
+        if (serverName.length() > 0) {
             final GUIMetaElementList metaElementList = windowRenderer.getCurrentGui().getFirstElement(GUIMetaElementList.class);
-            if (metaElementList != null)
-            {
+            if (metaElementList != null) {
                 metaElementList.setSelectedHostname(serverName);
             }
         }
     }
 
     @Deprecated
-    public void init3()
-    {
+    public void init3() {
         timer.start();
     }
 
     /**
      * Opens the keybinding dialog. Does nothing if the dialog is opened.
      */
-    public void openKeybindDialog()
-    {
-        if (keybindDialog == null)
-        {
+    public void openKeybindDialog() {
+        if (keybindDialog == null) {
             throw new IllegalStateException();
         }
 
@@ -809,10 +701,8 @@ public class GuiManager
     /**
      * Closes the keybinding dialog. Does nothing if the dialog is not opened.
      */
-    public void closeKeybindDialog()
-    {
-        if (keybindDialog == null)
-        {
+    public void closeKeybindDialog() {
+        if (keybindDialog == null) {
             throw new IllegalStateException();
         }
 
@@ -823,8 +713,7 @@ public class GuiManager
      * Closes the given dialog. Does nothing if the dialog is not opened.
      * @param dialog the dialog to close
      */
-    private void closeDialog(@NotNull final Gui dialog)
-    {
+    private void closeDialog(@NotNull final Gui dialog) {
         windowRenderer.closeDialog(dialog);
     }
 
@@ -833,10 +722,8 @@ public class GuiManager
      * character name prompt.
      * @param playerName the player name
      */
-    private void updatePlayerName(@NotNull final String playerName)
-    {
-        if (currentQueryDialogIsNamePrompt)
-        {
+    private void updatePlayerName(@NotNull final String playerName) {
+        if (currentQueryDialogIsNamePrompt) {
             settings.putString("player_"+connection.getHostname(), playerName);
         }
     }
@@ -847,55 +734,45 @@ public class GuiManager
      */
     @Deprecated
     @NotNull
-    public TooltipManager getTooltipManager()
-    {
+    public TooltipManager getTooltipManager() {
         return tooltipManager;
     }
 
     /**
-     * Activates the command input text field. If the skin defined more than
-     * one input field, the first matching one is selected.
-     * <p>If neither the main gui nor any visible dialog has an input text
-     * field, invisible guis are checked as well. If one is found, it is made
-     * visible.
+     * Activates the command input text field. If the skin defined more than one
+     * input field, the first matching one is selected. <p>If neither the main
+     * gui nor any visible dialog has an input text field, invisible guis are
+     * checked as well. If one is found, it is made visible.
      * @return the command input text field, or <code>null</code> if the skin
-     * has no command input text field defined
+     *         has no command input text field defined
      */
     @Nullable
-    private GUIText activateCommandInput()
-    {
+    private GUIText activateCommandInput() {
         // check main gui
         final GUIText textArea1 = windowRenderer.getCurrentGui().activateCommandInput();
-        if (textArea1 != null)
-        {
+        if (textArea1 != null) {
             return textArea1;
         }
 
         // check visible dialogs
-        for (final Gui dialog : windowRenderer.getOpenDialogs())
-        {
-            if (!dialog.isHidden(windowRenderer.getGuiState()))
-            {
+        for (final Gui dialog : windowRenderer.getOpenDialogs()) {
+            if (!dialog.isHidden(windowRenderer.getGuiState())) {
                 final GUIText textArea2 = dialog.activateCommandInput();
-                if (textArea2 != null)
-                {
+                if (textArea2 != null) {
                     openDialog(dialog, false); // raise dialog
                     return textArea2;
                 }
             }
-            if (dialog.isModal())
-            {
+            if (dialog.isModal()) {
                 return null;
             }
         }
 
         // check invisible dialogs
         assert skin != null;
-        for (final Gui dialog : skin)
-        {
+        for (final Gui dialog : skin) {
             final GUIText textArea3 = dialog.activateCommandInput();
-            if (textArea3 != null)
-            {
+            if (textArea3 != null) {
                 openDialog(dialog, true);
                 return textArea3;
             }
@@ -905,18 +782,16 @@ public class GuiManager
     }
 
     /**
-     * Activates the command input text field. If the skin defines more than
-     * one input field, the first matching one is selected.
+     * Activates the command input text field. If the skin defines more than one
+     * input field, the first matching one is selected.
      * <p/>
      * If neither the main gui nor any visible dialog has an input text field,
      * invisible guis are checked as well. If one is found, it is made visible.
      * @param newText the new command text if non-<code>null</code>
      */
-    private void activateCommandInput(@Nullable final String newText)
-    {
+    private void activateCommandInput(@Nullable final String newText) {
         final GUIText textArea = activateCommandInput();
-        if (textArea != null && newText != null && newText.length() > 0)
-        {
+        if (textArea != null && newText != null && newText.length() > 0) {
             textArea.setText(newText);
         }
     }
@@ -924,10 +799,8 @@ public class GuiManager
     /**
      * Unsets the current skin.
      */
-    public void unsetSkin()
-    {
-        if (skin != null)
-        {
+    public void unsetSkin() {
+        if (skin != null) {
             skin.detach();
             skin = null;
         }
@@ -942,8 +815,7 @@ public class GuiManager
      * Sets a new skin.
      * @param skin the new skin
      */
-    public void setSkin(@NotNull final JXCSkin skin)
-    {
+    public void setSkin(@NotNull final JXCSkin skin) {
         this.skin = skin;
         skin.attach(windowRenderer, tooltipManager);
         queryDialog = skin.getDialogQuery();
@@ -957,8 +829,7 @@ public class GuiManager
     /**
      * Displays the "start" GUI.
      */
-    private void showGUIStart()
-    {
+    private void showGUIStart() {
         windowRenderer.clearGUI(guiFactory.newGui());
         assert skin != null;
         windowRenderer.setCurrentGui(skin.getStartInterface());
@@ -968,8 +839,7 @@ public class GuiManager
     /**
      * Displays the "server selection" GUI.
      */
-    private void showGUIMeta()
-    {
+    private void showGUIMeta() {
         windowRenderer.clearGUI(guiFactory.newGui());
         assert skin != null;
         final Gui newGui = skin.getMetaInterface();
@@ -981,8 +851,7 @@ public class GuiManager
     /**
      * Displays the "main" GUI.
      */
-    private void showGUIMain()
-    {
+    private void showGUIMain() {
         windowRenderer.clearGUI(guiFactory.newGui());
         assert skin != null;
         final Gui newGui = skin.getMainInterface();
@@ -990,11 +859,9 @@ public class GuiManager
         tooltipManager.reset();
     }
 
-    public void term()
-    {
+    public void term() {
         windowRenderer.endRendering();
-        if (skin != null)
-        {
+        if (skin != null) {
             DialogStateParser.save(skin, windowRenderer);
         }
         keybindingsManager.saveKeybindings();
@@ -1002,31 +869,26 @@ public class GuiManager
 
     @Deprecated
     @NotNull
-    public Commands getCommands()
-    {
+    public Commands getCommands() {
         return commands;
     }
 
     @Deprecated
-    public void setConnection(@NotNull final JXCConnection connection)
-    {
+    public void setConnection(@NotNull final JXCConnection connection) {
         this.connection = connection;
     }
 
     /**
-     * Updates the "message" field of the connect dialog. Does nothing if
-     * the dialog is not open, does not exist, or if the dialog does not
-     * define a "message" field.
+     * Updates the "message" field of the connect dialog. Does nothing if the
+     * dialog is not open, does not exist, or if the dialog does not define a
+     * "message" field.
      * @param clientSocketState the client socket state
      * @param param a parameter to display
      */
-    private void updateConnectLabel(@NotNull final ClientSocketState clientSocketState, @Nullable final String param)
-    {
-        if (dialogConnectLabel != null)
-        {
+    private void updateConnectLabel(@NotNull final ClientSocketState clientSocketState, @Nullable final String param) {
+        if (dialogConnectLabel != null) {
             String message = null;
-            switch (clientSocketState)
-            {
+            switch (clientSocketState) {
             case CONNECTING:
                 message = "Connecting...";
                 break;
@@ -1063,8 +925,7 @@ public class GuiManager
 
     @Deprecated
     @NotNull
-    public KeybindingsManager getKeybindingsManager()
-    {
+    public KeybindingsManager getKeybindingsManager() {
         return keybindingsManager;
     }
 
@@ -1074,11 +935,9 @@ public class GuiManager
      * @param cmdlist the command list to execute on key press
      * @return whether the key bindings dialog should be opened
      */
-    private boolean createKeyBinding(final boolean perCharacter, @NotNull final CommandList cmdlist)
-    {
+    private boolean createKeyBinding(final boolean perCharacter, @NotNull final CommandList cmdlist) {
         final boolean result = keybindingsManager.createKeyBinding(perCharacter, cmdlist);
-        if (result)
-        {
+        if (result) {
             openKeybindDialog();
         }
         return result;
@@ -1090,11 +949,9 @@ public class GuiManager
      * removed
      * @return whether the key bindings dialog should be opened
      */
-    private boolean removeKeyBinding(final boolean perCharacter)
-    {
+    private boolean removeKeyBinding(final boolean perCharacter) {
         final boolean result = keybindingsManager.removeKeyBinding(perCharacter);
-        if (result)
-        {
+        if (result) {
             openKeybindDialog();
         }
         return result;
@@ -1102,8 +959,8 @@ public class GuiManager
 
     @Deprecated
     @NotNull
-    public CommandCallback getCommandCallback()
-    {
+    public CommandCallback getCommandCallback() {
         return commandCallback;
     }
+
 }

@@ -29,8 +29,8 @@ import org.jetbrains.annotations.Nullable;
  * Represents a response line from the metaserver.
  * @author Andreas Kirschbaum
  */
-public class MetaserverEntry implements Comparable<MetaserverEntry>
-{
+public class MetaserverEntry implements Comparable<MetaserverEntry> {
+
     /**
      * Matches html tags.
      */
@@ -65,8 +65,7 @@ public class MetaserverEntry implements Comparable<MetaserverEntry>
     @NotNull
     private final String codebase;
 
-    public MetaserverEntry(final int updateSeconds, @NotNull final String hostname, final int players, @NotNull final String version, @NotNull final String comment, final long bytesIn, final long bytesOut, final int uptimeSeconds, @NotNull final String archbase, @NotNull final String mapbase, @NotNull final String codebase)
-    {
+    public MetaserverEntry(final int updateSeconds, @NotNull final String hostname, final int players, @NotNull final String version, @NotNull final String comment, final long bytesIn, final long bytesOut, final int uptimeSeconds, @NotNull final String archbase, @NotNull final String mapbase, @NotNull final String codebase) {
         this.updateSeconds = updateSeconds;
         this.hostname = hostname;
         this.players = players;
@@ -80,64 +79,53 @@ public class MetaserverEntry implements Comparable<MetaserverEntry>
         this.codebase = codebase;
     }
 
-    public int getUpdateSeconds()
-    {
+    public int getUpdateSeconds() {
         return updateSeconds;
     }
 
     @NotNull
-    public String getHostname()
-    {
+    public String getHostname() {
         return hostname;
     }
 
-    public int getPlayers()
-    {
+    public int getPlayers() {
         return players;
     }
 
     @NotNull
-    public String getVersion()
-    {
+    public String getVersion() {
         return version;
     }
 
     @NotNull
-    public String getComment()
-    {
+    public String getComment() {
         return comment;
     }
 
-    public long getBytesIn()
-    {
+    public long getBytesIn() {
         return bytesIn;
     }
 
-    public long getBytesOut()
-    {
+    public long getBytesOut() {
         return bytesOut;
     }
 
-    public int getUptimeSeconds()
-    {
+    public int getUptimeSeconds() {
         return uptimeSeconds;
     }
 
     @NotNull
-    public String getArchbase()
-    {
+    public String getArchbase() {
         return archbase;
     }
 
     @NotNull
-    public String getMapbase()
-    {
+    public String getMapbase() {
         return mapbase;
     }
 
     @NotNull
-    public String getCodebase()
-    {
+    public String getCodebase() {
         return codebase;
     }
 
@@ -146,8 +134,7 @@ public class MetaserverEntry implements Comparable<MetaserverEntry>
      */
     @NotNull
     @Override
-    public String toString()
-    {
+    public String toString() {
         return "Host:"+hostname+" Version:"+version+" Players:"+players+" Comment:"+comment;
     }
 
@@ -155,8 +142,7 @@ public class MetaserverEntry implements Comparable<MetaserverEntry>
      * {@inheritDoc}
      */
     @Override
-    public int compareTo(@NotNull final MetaserverEntry o)
-    {
+    public int compareTo(@NotNull final MetaserverEntry o) {
         return hostname.compareTo(o.hostname);
     }
 
@@ -164,8 +150,7 @@ public class MetaserverEntry implements Comparable<MetaserverEntry>
      * {@inheritDoc}
      */
     @Override
-    public int hashCode()
-    {
+    public int hashCode() {
         return hostname.hashCode();
     }
 
@@ -173,14 +158,11 @@ public class MetaserverEntry implements Comparable<MetaserverEntry>
      * {@inheritDoc}
      */
     @Override
-    public boolean equals(@Nullable final Object obj)
-    {
-        if (obj == null)
-        {
+    public boolean equals(@Nullable final Object obj) {
+        if (obj == null) {
             return false;
         }
-        if (obj.getClass() != getClass())
-        {
+        if (obj.getClass() != getClass()) {
             return false;
         }
         final MetaserverEntry m = (MetaserverEntry)obj;
@@ -199,21 +181,15 @@ public class MetaserverEntry implements Comparable<MetaserverEntry>
      * @return The formatted string.
      */
     @NotNull
-    public String format(@NotNull final String format)
-    {
+    public String format(@NotNull final String format) {
         final StringBuilder sb = new StringBuilder();
         final char[] formatChars = format.toCharArray();
-        for (int i = 0; i < formatChars.length; i++)
-        {
-            if (formatChars[i] != '%' || i+1 >= formatChars.length)
-            {
+        for (int i = 0; i < formatChars.length; i++) {
+            if (formatChars[i] != '%' || i+1 >= formatChars.length) {
                 sb.append(formatChars[i]);
-            }
-            else
-            {
+            } else {
                 i++;
-                switch (formatChars[i])
-                {
+                switch (formatChars[i]) {
                 case '%':
                     sb.append('%');
                     break;
@@ -275,4 +251,5 @@ public class MetaserverEntry implements Comparable<MetaserverEntry>
         }
         return sb.toString();
     }
+
 }

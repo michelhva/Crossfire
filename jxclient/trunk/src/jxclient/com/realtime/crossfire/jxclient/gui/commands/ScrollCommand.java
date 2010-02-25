@@ -29,8 +29,8 @@ import org.jetbrains.annotations.NotNull;
  * given distance.
  * @author Andreas Kirschbaum
  */
-public class ScrollCommand implements GUICommand
-{
+public class ScrollCommand implements GUICommand {
+
     /**
      * The distance to scroll.
      */
@@ -47,23 +47,25 @@ public class ScrollCommand implements GUICommand
      * @param distance the distance to scroll
      * @param scrollable the scrollable element
      */
-    public ScrollCommand(final int distance, @NotNull final GUIScrollable scrollable)
-    {
+    public ScrollCommand(final int distance, @NotNull final GUIScrollable scrollable) {
         this.distance = distance;
         this.scrollable = scrollable;
     }
 
-    /** {@inheritDoc} */
+    /**
+     * {@inheritDoc}
+     */
     @Override
-    public boolean canExecute()
-    {
+    public boolean canExecute() {
         return scrollable.canScroll(distance);
     }
 
-    /** {@inheritDoc} */
+    /**
+     * {@inheritDoc}
+     */
     @Override
-    public void execute()
-    {
+    public void execute() {
         scrollable.scroll(distance);
     }
+
 }

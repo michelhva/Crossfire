@@ -29,8 +29,8 @@ import org.jetbrains.annotations.NotNull;
  * Utility class for splitting strings.
  * @author Andreas Kirschbaum
  */
-public class StringSplitter
-{
+public class StringSplitter {
+
     /**
      * The preferred line length in characters.
      */
@@ -44,8 +44,7 @@ public class StringSplitter
     /**
      * Private constructor to prevent instantation.
      */
-    private StringSplitter()
-    {
+    private StringSplitter() {
     }
 
     /**
@@ -55,13 +54,10 @@ public class StringSplitter
      * @return the formatted message
      */
     @NotNull
-    public static String splitAsHtml(@NotNull final String message)
-    {
+    public static String splitAsHtml(@NotNull final String message) {
         final StringBuilder sb = new StringBuilder();
-        for (final String line : split(message))
-        {
-            if (sb.length() > 0)
-            {
+        for (final String line : split(message)) {
+            if (sb.length() > 0) {
                 sb.append("<br>");
             }
             sb.append(line);
@@ -75,45 +71,33 @@ public class StringSplitter
      * @return the lines
      */
     @NotNull
-    private static Iterable<String> split(@NotNull final String message)
-    {
+    private static Iterable<String> split(@NotNull final String message) {
         final String paddedMessage = message.trim()+" ";
 
         final Collection<String> result = new ArrayList<String>();
         int start = 0;
-        for (;;)
-        {
-            while (start < paddedMessage.length() && paddedMessage.charAt(start) == ' ')
-            {
+        for (; ;) {
+            while (start < paddedMessage.length() && paddedMessage.charAt(start) == ' ') {
                 start++;
             }
-            if (start >= paddedMessage.length())
-            {
+            if (start >= paddedMessage.length()) {
                 break;
             }
 
             final int nextSpace = paddedMessage.indexOf(' ', Math.min(start+PREFERRED_LINE_LENGTH, paddedMessage.length()-1));
             assert nextSpace != -1;
-            if (nextSpace-start <= PREFERRED_LINE_LENGTH)
-            {
+            if (nextSpace-start <= PREFERRED_LINE_LENGTH) {
                 result.add(paddedMessage.substring(start, nextSpace));
                 start = nextSpace+1;
-            }
-            else
-            {
+            } else {
                 final int prevSpace = paddedMessage.lastIndexOf(' ', nextSpace-1);
-                if (prevSpace != -1 && prevSpace > start)
-                {
+                if (prevSpace != -1 && prevSpace > start) {
                     result.add(paddedMessage.substring(start, prevSpace));
                     start = prevSpace+1;
-                }
-                else if (nextSpace-start <= MAXIMUM_LINE_LENGTH)
-                {
+                } else if (nextSpace-start <= MAXIMUM_LINE_LENGTH) {
                     result.add(paddedMessage.substring(start, nextSpace));
                     start = nextSpace+1;
-                }
-                else
-                {
+                } else {
                     final int end = Math.min(start+MAXIMUM_LINE_LENGTH, paddedMessage.length());
                     result.add(paddedMessage.substring(start, end));
                     start = end;
@@ -122,4 +106,5 @@ public class StringSplitter
         }
         return result;
     }
+
 }

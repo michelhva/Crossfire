@@ -37,8 +37,8 @@ import org.jetbrains.annotations.Nullable;
  * @author Lauwenmark
  * @author Andreas Kirschbaum
  */
-public interface JXCSkin extends Iterable<Gui>
-{
+public interface JXCSkin extends Iterable<Gui> {
+
     /**
      * Returns a short name for the skin. It is used to construct path or file
      * names.
@@ -190,4 +190,5 @@ public interface JXCSkin extends Iterable<Gui>
      * Frees all allocated resources.
      */
     void detach();
+
 }

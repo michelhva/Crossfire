@@ -29,8 +29,8 @@ import org.jetbrains.annotations.NotNull;
  * Implements the "script" command. It runs a new script.
  * @author Andreas Kirschbaum
  */
-public class ScriptCommand extends AbstractCommand
-{
+public class ScriptCommand extends AbstractCommand {
+
     /**
      * The {@link ScriptManager} to use.
      */
@@ -42,29 +42,30 @@ public class ScriptCommand extends AbstractCommand
      * @param scriptManager the script manager to use
      * @param crossfireServerConnection the connection instance
      */
-    public ScriptCommand(@NotNull final ScriptManager scriptManager, @NotNull final CrossfireServerConnection crossfireServerConnection)
-    {
+    public ScriptCommand(@NotNull final ScriptManager scriptManager, @NotNull final CrossfireServerConnection crossfireServerConnection) {
         super(crossfireServerConnection);
         this.scriptManager = scriptManager;
     }
 
-    /** {@inheritDoc} */
+    /**
+     * {@inheritDoc}
+     */
     @Override
-    public boolean allArguments()
-    {
+    public boolean allArguments() {
         return false;
     }
 
-    /** {@inheritDoc} */
+    /**
+     * {@inheritDoc}
+     */
     @Override
-    public void execute(@NotNull final String args)
-    {
-        if (args.length() == 0)
-        {
+    public void execute(@NotNull final String args) {
+        if (args.length() == 0) {
             drawInfoError("Which script do you want to run?");
             return;
         }
 
         scriptManager.newScript(args);
     }
+
 }

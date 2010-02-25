@@ -25,21 +25,21 @@ import org.jetbrains.annotations.NotNull;
 
 /**
  * Indicates about an incorrect option.
- *
  * @author Andreas Kirschbaum
  */
-public class OptionException extends Exception
-{
-    /** The serial version UID. */
+public class OptionException extends Exception {
+
+    /**
+     * The serial version UID.
+     */
     private static final long serialVersionUID = 1;
 
     /**
      * Create a new instance.
-     *
      * @param reason Describes the error.
      */
-    public OptionException(@NotNull final String reason)
-    {
+    public OptionException(@NotNull final String reason) {
         super(reason);
     }
+
 }

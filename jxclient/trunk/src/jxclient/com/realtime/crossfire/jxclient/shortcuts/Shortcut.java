@@ -26,11 +26,10 @@ import org.jetbrains.annotations.NotNull;
 
 /**
  * Abstract base class for shortcut commands.
- *
  * @author Andreas Kirschbaum
  */
-public abstract class Shortcut
-{
+public abstract class Shortcut {
+
     /**
      * The listeners to be notified.
      */
@@ -49,31 +48,25 @@ public abstract class Shortcut
 
     /**
      * Register a shortcut listener.
-     *
      * @param listener The listener to register.
      */
-    public void addShortcutListener(@NotNull final ShortcutListener listener)
-    {
+    public void addShortcutListener(@NotNull final ShortcutListener listener) {
         listeners.add(ShortcutListener.class, listener);
     }
 
     /**
      * Unregister a shortcut listener.
-     *
      * @param listener The listener to unregister.
      */
-    public void removeShortcutListener(@NotNull final ShortcutListener listener)
-    {
+    public void removeShortcutListener(@NotNull final ShortcutListener listener) {
         listeners.add(ShortcutListener.class, listener);
     }
 
     /**
      * Notify all listeners about a modification.
      */
-    protected void fireModifiedEvent()
-    {
-        for (final ShortcutListener listener : listeners.getListeners(ShortcutListener.class))
-        {
+    protected void fireModifiedEvent() {
+        for (final ShortcutListener listener : listeners.getListeners(ShortcutListener.class)) {
             listener.shortcutModified();
         }
     }
@@ -84,4 +77,5 @@ public abstract class Shortcut
      */
     @NotNull
     public abstract String getTooltipText();
+
 }

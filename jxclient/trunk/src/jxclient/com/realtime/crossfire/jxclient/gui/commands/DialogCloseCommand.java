@@ -28,8 +28,8 @@ import org.jetbrains.annotations.NotNull;
  * A {@link GUICommand} which closes a {@link Gui}.
  * @author Andreas Kirschbaum
  */
-public class DialogCloseCommand implements GUICommand
-{
+public class DialogCloseCommand implements GUICommand {
+
     /**
      * The {@link CommandCallback} to use.
      */
@@ -47,23 +47,25 @@ public class DialogCloseCommand implements GUICommand
      * @param commandCallback the command callback to use
      * @param dialog the dialog to close
      */
-    public DialogCloseCommand(@NotNull final CommandCallback commandCallback, @NotNull final Gui dialog)
-    {
+    public DialogCloseCommand(@NotNull final CommandCallback commandCallback, @NotNull final Gui dialog) {
         this.commandCallback = commandCallback;
         this.dialog = dialog;
     }
 
-    /** {@inheritDoc} */
+    /**
+     * {@inheritDoc}
+     */
     @Override
-    public boolean canExecute()
-    {
+    public boolean canExecute() {
         return true;
     }
 
-    /** {@inheritDoc} */
+    /**
+     * {@inheritDoc}
+     */
     @Override
-    public void execute()
-    {
+    public void execute() {
         commandCallback.closeDialog(dialog);
     }
+
 }

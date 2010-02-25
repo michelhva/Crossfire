@@ -28,30 +28,33 @@ import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 
 /**
- * Simple in-memory cache implementing the {@link ImageCache} interface.
- * Primary use is from regression tests.
+ * Simple in-memory cache implementing the {@link ImageCache} interface. Primary
+ * use is from regression tests.
  * @author Andreas Kirschbaum
  */
-public class MemoryImageCache implements ImageCache
-{
+public class MemoryImageCache implements ImageCache {
+
     /**
      * The cache contents. Maps face to image associated with the face.
      */
     @NotNull
     private final Map<Face, ImageIcon> faces = new HashMap<Face, ImageIcon>();
 
-    /** {@inheritDoc} */
+    /**
+     * {@inheritDoc}
+     */
     @Nullable
     @Override
-    public ImageIcon load(@NotNull final Face face)
-    {
+    public ImageIcon load(@NotNull final Face face) {
         return faces.get(face);
     }
 
-    /** {@inheritDoc} */
+    /**
+     * {@inheritDoc}
+     */
     @Override
-    public void save(@NotNull final Face face, @NotNull final ImageIcon imageIcon)
-    {
+    public void save(@NotNull final Face face, @NotNull final ImageIcon imageIcon) {
         faces.put(face, imageIcon);
     }
+
 }

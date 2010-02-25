@@ -34,8 +34,8 @@ import org.jetbrains.annotations.NotNull;
 /**
  * @author Lauwenmark
  */
-public class InternalHTMLRenderer extends HTMLEditorKit.ParserCallback
-{
+public class InternalHTMLRenderer extends HTMLEditorKit.ParserCallback {
+
     @NotNull
     private final Stack<Font> fonts = new Stack<Font>();
 
@@ -53,8 +53,7 @@ public class InternalHTMLRenderer extends HTMLEditorKit.ParserCallback
 
     private final int borderSize;
 
-    public InternalHTMLRenderer(@NotNull final Font font, @NotNull final Color color, @NotNull final Graphics gc, final int x, final int y, final int borderSize)
-    {
+    public InternalHTMLRenderer(@NotNull final Font font, @NotNull final Color color, @NotNull final Graphics gc, final int x, final int y, final int borderSize) {
         fonts.push(font);
         colors.push(color);
         this.gc = gc;
@@ -65,8 +64,7 @@ public class InternalHTMLRenderer extends HTMLEditorKit.ParserCallback
     }
 
     @Override
-    public void handleText(@NotNull final char[] data, final int pos)
-    {
+    public void handleText(@NotNull final char[] data, final int pos) {
         gc.setFont(fonts.peek());
         gc.setColor(colors.peek());
         final FontMetrics m = gc.getFontMetrics();
@@ -77,26 +75,18 @@ public class InternalHTMLRenderer extends HTMLEditorKit.ParserCallback
     }
 
     @Override
-    public void handleStartTag(@NotNull final HTML.Tag t, @NotNull final MutableAttributeSet a, final int pos)
-    {
-        if (t.equals(HTML.Tag.A))
-        {
+    public void handleStartTag(@NotNull final HTML.Tag t, @NotNull final MutableAttributeSet a, final int pos) {
+        if (t.equals(HTML.Tag.A)) {
             fonts.push(fonts.peek());
             colors.push(Color.YELLOW);
             //y += defaultfont.getSize()+1;
-        }
-        else if (t.equals(HTML.Tag.B))
-        {
+        } else if (t.equals(HTML.Tag.B)) {
             fonts.push(fonts.peek().deriveFont(Font.BOLD));
             colors.push(colors.peek());
-        }
-        else if (t.equals(HTML.Tag.I))
-        {
+        } else if (t.equals(HTML.Tag.I)) {
             fonts.push(fonts.peek().deriveFont(Font.ITALIC));
             colors.push(colors.peek());
-        }
-        else if (t.equals(HTML.Tag.LI))
-        {
+        } else if (t.equals(HTML.Tag.LI)) {
             fonts.push(fonts.peek());
             colors.push(colors.peek());
             gc.setFont(fonts.peek());
@@ -108,28 +98,24 @@ public class InternalHTMLRenderer extends HTMLEditorKit.ParserCallback
             final int w = m.stringWidth(str);
             gc.drawString(str, x+borderSize, y+borderSize);
             x += w;
-        }
-        else
-        {
+        } else {
             fonts.push(fonts.peek());
             colors.push(colors.peek());
         }
     }
 
     @Override
-    public void handleSimpleTag(@NotNull final HTML.Tag t, @NotNull final MutableAttributeSet a, final int pos)
-    {
-        if (t.equals(HTML.Tag.BR))
-        {
+    public void handleSimpleTag(@NotNull final HTML.Tag t, @NotNull final MutableAttributeSet a, final int pos) {
+        if (t.equals(HTML.Tag.BR)) {
             y += fonts.peek().getSize()+1;
             x = origx;
         }
     }
 
     @Override
-    public void handleEndTag(@NotNull final HTML.Tag t, final int pos)
-    {
+    public void handleEndTag(@NotNull final HTML.Tag t, final int pos) {
         fonts.pop();
         colors.pop();
     }
+
 }

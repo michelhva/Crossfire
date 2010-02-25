@@ -28,8 +28,8 @@ import org.jetbrains.annotations.NotNull;
  * Interface for listeners interested gui state changes.
  * @author Andreas Kirschbaum
  */
-public interface GuiStateListener
-{
+public interface GuiStateListener {
+
     /**
      * The start screen is displayed.
      */
@@ -69,4 +69,5 @@ public interface GuiStateListener
      * @param reason the failure reason
      */
     void connectFailed(@NotNull String reason);
+
 }

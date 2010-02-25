@@ -23,11 +23,13 @@ package com.realtime.crossfire.jxclient.gui.keybindings;
 
 /**
  * Indicates that a key code does not exist.
- *
  * @author Andreas Kirschbaum
  */
-public class NoSuchKeyCodeException extends Exception
-{
-    /** The serial version UID. */
+public class NoSuchKeyCodeException extends Exception {
+
+    /**
+     * The serial version UID.
+     */
     private static final long serialVersionUID = 1;
+
 }

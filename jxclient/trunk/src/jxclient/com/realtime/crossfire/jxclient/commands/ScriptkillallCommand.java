@@ -31,8 +31,8 @@ import org.jetbrains.annotations.NotNull;
  * Implements the "scriptkillall" command. It terminates all running scripts.
  * @author Andreas Kirschbaum
  */
-public class ScriptkillallCommand extends AbstractCommand
-{
+public class ScriptkillallCommand extends AbstractCommand {
+
     /**
      * The {@link ScriptManager} to use.
      */
@@ -44,32 +44,32 @@ public class ScriptkillallCommand extends AbstractCommand
      * @param scriptManager the script manager to use
      * @param crossfireServerConnection the connection instance
      */
-    public ScriptkillallCommand(@NotNull final ScriptManager scriptManager, @NotNull final CrossfireServerConnection crossfireServerConnection)
-    {
+    public ScriptkillallCommand(@NotNull final ScriptManager scriptManager, @NotNull final CrossfireServerConnection crossfireServerConnection) {
         super(crossfireServerConnection);
         this.scriptManager = scriptManager;
     }
 
-    /** {@inheritDoc} */
+    /**
+     * {@inheritDoc}
+     */
     @Override
-    public boolean allArguments()
-    {
+    public boolean allArguments() {
         return false;
     }
 
-    /** {@inheritDoc} */
+    /**
+     * {@inheritDoc}
+     */
     @Override
-    public void execute(@NotNull final String args)
-    {
+    public void execute(@NotNull final String args) {
         final Collection<ScriptProcess> scriptProcesses = scriptManager.getScripts(args);
-        if (scriptProcesses.isEmpty())
-        {
+        if (scriptProcesses.isEmpty()) {
             drawInfoError(scriptManager.hasScripts() ? "No matching scripts." : "No scripts running.");
             return;
         }
-        for (final ScriptProcess scriptProcess : scriptProcesses)
-        {
+        for (final ScriptProcess scriptProcess : scriptProcesses) {
             scriptProcess.killScript();
         }
     }
+
 }

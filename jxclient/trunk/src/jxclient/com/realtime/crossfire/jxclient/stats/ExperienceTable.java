@@ -29,11 +29,10 @@ import org.jetbrains.annotations.NotNull;
 
 /**
  * Stores experience &lt;-&gt; level mappings.
- *
  * @author Andreas Kirschbaum
  */
-public class ExperienceTable
-{
+public class ExperienceTable {
+
     /**
      * Maps level to experience needed to reach the level.
      */
@@ -55,15 +54,12 @@ public class ExperienceTable
      * tables.
      */
     @NotNull
-    private final CrossfireExpTableListener crossfireExpTableListener = new CrossfireExpTableListener()
-    {
+    private final CrossfireExpTableListener crossfireExpTableListener = new CrossfireExpTableListener() {
         /** {@inheritDoc} */
         @Override
-        public void expTableReceived(@NotNull final long[] expTable)
-        {
+        public void expTableReceived(@NotNull final long[] expTable) {
             clear();
-            for (int level = 1; level < expTable.length; level++)
-            {
+            for (int level = 1; level < expTable.length; level++) {
                 add(level, expTable[level]);
             }
         }
@@ -73,16 +69,14 @@ public class ExperienceTable
      * Creates a new instance.
      * @param crossfireServerConnection the connection to monitor
      */
-    public ExperienceTable(@NotNull final CrossfireServerConnection crossfireServerConnection)
-    {
+    public ExperienceTable(@NotNull final CrossfireServerConnection crossfireServerConnection) {
         crossfireServerConnection.addCrossfireExpTableListener(crossfireExpTableListener);
     }
 
     /**
      * Forget about all level-$&gt; mappings.
      */
-    private void clear()
-    {
+    private void clear() {
         info.clear();
         minLevel = Integer.MAX_VALUE;
         maxLevel = Integer.MIN_VALUE;
@@ -90,64 +84,49 @@ public class ExperienceTable
 
     /**
      * Add a new level-&gt;experience mapping.
-     *
      * @param level The level to update.
-     *
      * @param exp The experience needed to reach level <code>level</code>.
      */
-    private void add(final int level, final long exp)
-    {
-        if (level < 1)
-        {
+    private void add(final int level, final long exp) {
+        if (level < 1) {
             return;
         }
 
         info.put(level, exp);
-        if (minLevel > level)
-        {
+        if (minLevel > level) {
             minLevel = level;
         }
-        if (maxLevel < level)
-        {
+        if (maxLevel < level) {
             maxLevel = level;
         }
     }
 
     /**
      * Return the experience needed for a given level.
-     *
      * @param level The level to reach.
-     *
      * @return The needed experience.
      */
-    private long getExperience(final int level)
-    {
-        if (minLevel >= maxLevel)
-        {
+    private long getExperience(final int level) {
+        if (minLevel >= maxLevel) {
             return 0;
         }
 
         final Long exp = info.get(level);
-        if (exp != null)
-        {
+        if (exp != null) {
             return exp;
         }
 
-        if (level < minLevel)
-        {
+        if (level < minLevel) {
             return info.get(minLevel);
         }
 
-        if (level > maxLevel)
-        {
+        if (level > maxLevel) {
             return maxLevel;
         }
 
-        for (int i = level; i < maxLevel; i++)
-        {
+        for (int i = level; i < maxLevel; i++) {
             final Long tmp = info.get(i);
-            if (tmp != null)
-            {
+            if (tmp != null) {
                 return tmp;
             }
         }
@@ -157,48 +136,38 @@ public class ExperienceTable
 
     /**
      * Return the experience needed to reach the next level.
-     *
      * @param currentLevel The current level.
-     *
      * @param currentExp The current experience.
-     *
      * @return The experience to reach level <code>currentLevel+1</code>.
      */
-    public long getExperienceToNextLevel(final int currentLevel, final long currentExp)
-    {
+    public long getExperienceToNextLevel(final int currentLevel, final long currentExp) {
         final long expNextLevel = getExperience(currentLevel+1);
         return Math.max(0, expNextLevel-currentExp);
     }
 
     /**
      * Return the experience fraction of the current level in percents. The
-     * value starts at 0% when a new level has been gained; the next level is
-     * at 100%.
-     *
+     * value starts at 0% when a new level has been gained; the next level is at
+     * 100%.
      * @param currentLevel The current level.
-     *
      * @param currentExp The current experience.
-     *
      * @return The experience fraction.
      */
-    public int getPercentsToNextLevel(final int currentLevel, final long currentExp)
-    {
+    public int getPercentsToNextLevel(final int currentLevel, final long currentExp) {
         final long expThisLevel = getExperience(currentLevel);
         final long expNextLevel = getExperience(currentLevel+1);
-        if (expThisLevel >= expNextLevel)
-        {
+        if (expThisLevel >= expNextLevel) {
             return 0;
         }
 
-        if (currentExp < expThisLevel)
-        {
+        if (currentExp < expThisLevel) {
             return 0;
         }
-        if (currentExp >= expNextLevel)
-        {
+        if (currentExp >= expNextLevel) {
             return 100;
         }
 
         return (int)((currentExp-expThisLevel)*100/(expNextLevel-expThisLevel));
     }
+
 }

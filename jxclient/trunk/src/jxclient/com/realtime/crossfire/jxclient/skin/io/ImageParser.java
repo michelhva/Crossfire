@@ -37,8 +37,8 @@ import org.jetbrains.annotations.Nullable;
  * image is loaded only once.
  * @author Andreas Kirschbaum
  */
-public class ImageParser
-{
+public class ImageParser {
+
     /**
      * All defined images.
      */
@@ -55,16 +55,14 @@ public class ImageParser
      * Creates a new instance.
      * @param skinSource the skin source for loading resources
      */
-    public ImageParser(@NotNull final JXCSkinSource skinSource)
-    {
+    public ImageParser(@NotNull final JXCSkinSource skinSource) {
         this.skinSource = skinSource;
     }
 
     /**
      * Forgets all defined images.
      */
-    public void clear()
-    {
+    public void clear() {
         definedImages.clear();
     }
 
@@ -76,8 +74,7 @@ public class ImageParser
      * @throws IOException if the image cannot be loaded
      */
     @Nullable
-    public BufferedImage getImage(@Nullable final Color color, @NotNull final String name) throws IOException
-    {
+    public BufferedImage getImage(@Nullable final Color color, @NotNull final String name) throws IOException {
         return color != null ? null : getImage(name);
     }
 
@@ -88,40 +85,30 @@ public class ImageParser
      * @throws IOException if the image cannot be loaded
      */
     @NotNull
-    public BufferedImage getImage(@NotNull final String name) throws IOException
-    {
-        try
-        {
+    public BufferedImage getImage(@NotNull final String name) throws IOException {
+        try {
             return definedImages.lookup(name);
-        }
-        catch (final JXCSkinException ex)
-        {
+        } catch (final JXCSkinException ex) {
             // ignore
         }
 
         final String filename = "pictures/"+name+".png";
         final BufferedImage image;
         final InputStream inputStream = skinSource.getInputStream(filename);
-        try
-        {
+        try {
             image = ImageIO.read(inputStream);
-        }
-        finally
-        {
+        } finally {
             inputStream.close();
         }
-        if (image == null)
-        {
+        if (image == null) {
             throw new IOException("image '"+skinSource.getURI(filename)+"' does not exist");
         }
-        try
-        {
+        try {
             definedImages.insert(name, image);
-        }
-        catch (final JXCSkinException ex)
-        {
+        } catch (final JXCSkinException ex) {
             throw new AssertionError();
         }
         return image;
     }
+
 }

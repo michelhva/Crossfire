@@ -37,8 +37,8 @@ import org.jetbrains.annotations.Nullable;
  * of the gauge.
  * @author Andreas Kirschbaum
  */
-public class GUITextGauge extends GUIGauge
-{
+public class GUITextGauge extends GUIGauge {
+
     /**
      * The serial version UID.
      */
@@ -79,28 +79,28 @@ public class GUITextGauge extends GUIGauge
      * @param color the text color
      * @param font the text font
      */
-    public GUITextGauge(@NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final String name, final int x, final int y, final int w, final int h, @NotNull final BufferedImage pictureFull, @Nullable final BufferedImage pictureNegative, @NotNull final BufferedImage pictureEmpty, @NotNull final Orientation orientation, @Nullable final String tooltipPrefix, @NotNull final Color color, @NotNull final Font font)
-    {
+    public GUITextGauge(@NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final String name, final int x, final int y, final int w, final int h, @NotNull final BufferedImage pictureFull, @Nullable final BufferedImage pictureNegative, @NotNull final BufferedImage pictureEmpty, @NotNull final Orientation orientation, @Nullable final String tooltipPrefix, @NotNull final Color color, @NotNull final Font font) {
         super(tooltipManager, elementListener, name, x, y, w, h, pictureFull, pictureNegative, pictureEmpty, orientation, tooltipPrefix);
         this.color = color;
         this.font = font;
     }
 
-    /** {@inheritDoc} */
+    /**
+     * {@inheritDoc}
+     */
     @Override
-    public void dispose()
-    {
+    public void dispose() {
         super.dispose();
     }
 
-    /** {@inheritDoc} */
+    /**
+     * {@inheritDoc}
+     */
     @Override
-    protected void render(@NotNull final Graphics g)
-    {
+    protected void render(@NotNull final Graphics g) {
         super.render(g);
 
-        if (font == null)
-        {
+        if (font == null) {
             return;
         }
 
@@ -113,12 +113,14 @@ public class GUITextGauge extends GUIGauge
         g.drawString(text, (int)Math.round((getWidth()-rect.getWidth())/2), (int)Math.round((getHeight()-rect.getMaxY()-rect.getMinY()))/2);
     }
 
-    /** {@inheritDoc} */
+    /**
+     * {@inheritDoc}
+     */
     @Override
-    public void setValues(final int curValue, final int minValue, final int maxValue, @NotNull final String labelText, @NotNull final String tooltipText)
-    {
+    public void setValues(final int curValue, final int minValue, final int maxValue, @NotNull final String labelText, @NotNull final String tooltipText) {
         super.setValues(curValue, minValue, maxValue, labelText, tooltipText);
         this.labelText = labelText;
         setChanged();
     }
+
 }

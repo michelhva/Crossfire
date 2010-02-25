@@ -26,11 +26,10 @@ import org.jetbrains.annotations.Nullable;
 /**
  * Plays background music. At most one background music can be concurrently
  * active (except for fading in/out effects).
- *
  * @author Andreas Kirschbaum
  */
-public class MusicManager
-{
+public class MusicManager {
+
     /**
      * The currently running processor, or <code>null</code> if none is active
      * or if music is disabled.
@@ -49,8 +48,8 @@ public class MusicManager
     private boolean muted = true;
 
     /**
-     * The currently playing music name. Set to <code>null</code> if no music
-     * is playing.
+     * The currently playing music name. Set to <code>null</code> if no music is
+     * playing.
      */
     @Nullable
     private String name = null;
@@ -58,13 +57,10 @@ public class MusicManager
     /**
      * Play the given music. If the new music name is unchanged, continue
      * playing.
-     *
      * @param name The music name, or <code>null</code> to stop playing music.
      */
-    public void play(@Nullable final String name)
-    {
-        if (this.name == null ? name == null : this.name.equals(name))
-        {
+    public void play(@Nullable final String name) {
+        if (this.name == null ? name == null : this.name.equals(name)) {
             return;
         }
 
@@ -74,13 +70,10 @@ public class MusicManager
 
     /**
      * Set whether background music is enabled.
-     *
      * @param enabled Whether background music is enabled.
      */
-    public void setEnabled(final boolean enabled)
-    {
-        if (this.enabled == enabled)
-        {
+    public void setEnabled(final boolean enabled) {
+        if (this.enabled == enabled) {
             return;
         }
 
@@ -90,13 +83,10 @@ public class MusicManager
 
     /**
      * Set whether background music is muted.
-     *
      * @param muted Whether background music is muted.
      */
-    public void setMuted(final boolean muted)
-    {
-        if (this.muted == muted)
-        {
+    public void setMuted(final boolean muted) {
+        if (this.muted == muted) {
             return;
         }
 
@@ -108,16 +98,13 @@ public class MusicManager
      * Restart the current music. Take into account {@link #enabled} and {@link
      * #muted} settings.
      */
-    private void restart()
-    {
-        if (processor != null)
-        {
+    private void restart() {
+        if (processor != null) {
             processor.terminate(enabled, false);
             processor = null;
         }
 
-        if (enabled && !muted && name != null)
-        {
+        if (enabled && !muted && name != null) {
             processor = new Processor(name);
             processor.start();
         }
@@ -126,12 +113,11 @@ public class MusicManager
     /**
      * Terminate a playing background music and free resources.
      */
-    public void shutdown()
-    {
-        if (processor != null)
-        {
+    public void shutdown() {
+        if (processor != null) {
             processor.terminate(false, true);
             processor = null;
         }
     }
+
 }

@@ -23,22 +23,24 @@ package com.realtime.crossfire.jxclient.settings.options;
 
 /**
  * A {@link CheckBoxOption} that has no immediate effect when triggered.
- *
  * @author Andreas Kirschbaum
  */
-public class PassiveCheckBoxOption extends CheckBoxOption
-{
-    /** {@inheritDoc} */
+public class PassiveCheckBoxOption extends CheckBoxOption {
+
+    /**
+     * {@inheritDoc}
+     */
     @Override
-    protected void execute(final boolean checked)
-    {
+    protected void execute(final boolean checked) {
         // nothing
     }
 
-    /** {@inheritDoc} */
+    /**
+     * {@inheritDoc}
+     */
     @Override
-    public boolean isDefaultChecked()
-    {
+    public boolean isDefaultChecked() {
         return true;
     }
+
 }

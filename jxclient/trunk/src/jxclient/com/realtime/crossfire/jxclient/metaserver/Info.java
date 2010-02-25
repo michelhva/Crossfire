@@ -28,8 +28,8 @@ import org.jetbrains.annotations.NotNull;
  * timestamp of last update.
  * @author Andreas Kirschbaum
  */
-public class Info
-{
+public class Info {
+
     /**
      * The metaserver entry.
      */
@@ -45,8 +45,7 @@ public class Info
      * Create a new instance. Sets the timestamp to "now".
      * @param metaserverEntry The metaserver entry.
      */
-    public Info(@NotNull final MetaserverEntry metaserverEntry)
-    {
+    public Info(@NotNull final MetaserverEntry metaserverEntry) {
         this(metaserverEntry, System.currentTimeMillis());
     }
 
@@ -55,8 +54,7 @@ public class Info
      * @param metaserverEntry The metaserver entry.
      * @param timestamp The timestamp.
      */
-    public Info(@NotNull final MetaserverEntry metaserverEntry, final long timestamp)
-    {
+    public Info(@NotNull final MetaserverEntry metaserverEntry, final long timestamp) {
         this.metaserverEntry = metaserverEntry;
         this.timestamp = timestamp;
     }
@@ -66,8 +64,7 @@ public class Info
      * @return The metaserver entry.
      */
     @NotNull
-    public MetaserverEntry getMetaserverEntry()
-    {
+    public MetaserverEntry getMetaserverEntry() {
         return metaserverEntry;
     }
 
@@ -75,8 +72,8 @@ public class Info
      * Return the timestamp.
      * @return The timestamp.
      */
-    public long getTimestamp()
-    {
+    public long getTimestamp() {
         return timestamp;
     }
+
 }

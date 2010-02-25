@@ -30,13 +30,12 @@ import org.jetbrains.annotations.NotNull;
  * Utility class for loading information from resources.
  * @author Andreas Kirschbaum
  */
-public class ResourceUtils
-{
+public class ResourceUtils {
+
     /**
      * Private constructor to prevent instantiation.
      */
-    private ResourceUtils()
-    {
+    private ResourceUtils() {
     }
 
     /**
@@ -46,18 +45,16 @@ public class ResourceUtils
      * @throws IOException if the image cannot be loaded
      */
     @NotNull
-    public static ImageIcon loadImage(@NotNull final String unknownPng) throws IOException
-    {
+    public static ImageIcon loadImage(@NotNull final String unknownPng) throws IOException {
         final URL url = ResourceUtils.class.getClassLoader().getResource(unknownPng);
-        if (url == null)
-        {
+        if (url == null) {
             throw new IOException("cannot find "+unknownPng);
         }
         final ImageIcon imageIcon = new ImageIcon(url);
-        if (imageIcon.getIconWidth() <= 0 || imageIcon.getIconHeight() <= 0)
-        {
+        if (imageIcon.getIconWidth() <= 0 || imageIcon.getIconHeight() <= 0) {
             throw new IOException("cannot load "+unknownPng);
         }
         return imageIcon;
     }
+
 }

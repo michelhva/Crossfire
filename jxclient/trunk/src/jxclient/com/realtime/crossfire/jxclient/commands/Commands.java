@@ -35,11 +35,10 @@ import org.jetbrains.annotations.NotNull;
 
 /**
  * Parses and executes client-side commands.
- *
  * @author Andreas Kirschbaum
  */
-public class Commands
-{
+public class Commands {
+
     /**
      * The command queue for sending commands.
      */
@@ -62,8 +61,7 @@ public class Commands
      * @param commandCallback the command callback to use
      * @param macros the macros instance to use
      */
-    public Commands(@NotNull final JXCWindowRenderer windowRenderer, @NotNull final CommandQueue commandQueue, @NotNull final CrossfireServerConnection crossfireServerConnection, @NotNull final ScriptManager scriptManager, @NotNull final OptionManager optionManager, @NotNull final CommandCallback commandCallback, @NotNull final Macros macros)
-    {
+    public Commands(@NotNull final JXCWindowRenderer windowRenderer, @NotNull final CommandQueue commandQueue, @NotNull final CrossfireServerConnection crossfireServerConnection, @NotNull final ScriptManager scriptManager, @NotNull final OptionManager optionManager, @NotNull final CommandCallback commandCallback, @NotNull final Macros macros) {
         this.commandQueue = commandQueue;
         commands.put("bind", new BindCommand(crossfireServerConnection, this, commandCallback, macros));
         commands.put("unbind", new UnbindCommand(commandCallback, crossfireServerConnection));
@@ -80,23 +78,18 @@ public class Commands
     }
 
     /**
-     * Execute a command or a list of commands. The commands may be a client-
-     * or a server-sided command.
-     *
+     * Execute a command or a list of commands. The commands may be a client- or
+     * a server-sided command.
      * @param commands The commands to execute.
      */
-    public void executeCommand(@NotNull final CharSequence commands)
-    {
+    public void executeCommand(@NotNull final CharSequence commands) {
         String cmds = StringUtils.trimLeading(commands);
-        while (cmds.length() > 0)
-        {
+        while (cmds.length() > 0) {
             final String[] cmd = cmds.split(" *; *", 2);
-            if (execute(cmd[0], cmds))
-            {
+            if (execute(cmd[0], cmds)) {
                 break;
             }
-            if (cmd.length <= 1)
-            {
+            if (cmd.length <= 1) {
                 break;
             }
             cmds = cmd[1];
@@ -105,31 +98,24 @@ public class Commands
 
     /**
      * Execute a client-side command.
-     *
      * @param command The command.
-     *
      * @param commandList The command and all remaining commands of the command
      * list.
-     *
      * @return <code>true</code> if all remaining commands have been consumed.
      */
-    private boolean execute(@NotNull final String command, @NotNull final String commandList)
-    {
-        if (command.length() <= 0)
-        {
+    private boolean execute(@NotNull final String command, @NotNull final String commandList) {
+        if (command.length() <= 0) {
             return false;
         }
 
         final String[] args = Patterns.PATTERN_WHITESPACE.split(StringUtils.trimLeading(command), 2);
         final Command cmd = commands.get(args[0]);
-        if (cmd == null)
-        {
+        if (cmd == null) {
             commandQueue.sendNcom(false, command);
             return false;
         }
 
-        if (!cmd.allArguments())
-        {
+        if (!cmd.allArguments()) {
             cmd.execute(args.length >= 2 ? args[1] : "");
             return false;
         }
@@ -141,4 +127,5 @@ public class Commands
         cmd.execute(argsList.length >= 2 ? argsList[1] : "");
         return true;
     }
+
 }

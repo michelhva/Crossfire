@@ -19,7 +19,6 @@
  * Copyright (C) 2006-2010 Andreas Kirschbaum.
  */
 
-
 package com.realtime.crossfire.jxclient.gui.item;
 
 import com.realtime.crossfire.jxclient.faces.Face;
@@ -42,8 +41,8 @@ import org.jetbrains.annotations.Nullable;
  * A {@link GUIElement} instance representing an in-game item.
  * @author Andreas Kirschbaum
  */
-public abstract class GUIItemItem extends GUIItem
-{
+public abstract class GUIItemItem extends GUIItem {
+
     /**
      * The serial version UID.
      */
@@ -80,16 +79,14 @@ public abstract class GUIItemItem extends GUIItem
     private CfItem item = null;
 
     /**
-     * The {@link CfItemListener} used to detect attribute changes of
-     * the displayed item.
+     * The {@link CfItemListener} used to detect attribute changes of the
+     * displayed item.
      */
     @NotNull
-    private final CfItemListener itemListener = new CfItemListener()
-    {
+    private final CfItemListener itemListener = new CfItemListener() {
         /** {@inheritDoc} */
         @Override
-        public void itemModified()
-        {
+        public void itemModified() {
             setChanged();
             updateTooltipText();
         }
@@ -99,14 +96,11 @@ public abstract class GUIItemItem extends GUIItem
      * The {@link FacesManagerListener} registered to detect updated faces.
      */
     @NotNull
-    private final FacesManagerListener facesManagerListener = new FacesManagerListener()
-    {
+    private final FacesManagerListener facesManagerListener = new FacesManagerListener() {
         /** {@inheritDoc} */
         @Override
-        public void faceUpdated(@NotNull final Face face)
-        {
-            if (item != null && face.equals(item.getFace()))
-            {
+        public void faceUpdated(@NotNull final Face face) {
+            if (item != null && face.equals(item.getFace())) {
                 setChanged();
             }
         }
@@ -127,8 +121,7 @@ public abstract class GUIItemItem extends GUIItem
      * @param itemPainter the item painter for painting the icon
      * @param facesManager the faces manager instance to use
      */
-    protected GUIItemItem(@NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final String name, final int x, final int y, final int w, final int h, @NotNull final CrossfireServerConnection crossfireServerConnection, @NotNull final ItemPainter itemPainter, @NotNull final FacesManager facesManager)
-    {
+    protected GUIItemItem(@NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final String name, final int x, final int y, final int w, final int h, @NotNull final CrossfireServerConnection crossfireServerConnection, @NotNull final ItemPainter itemPainter, @NotNull final FacesManager facesManager) {
         super(tooltipManager, elementListener, name, x, y, w, h);
         this.itemPainter = itemPainter;
         this.crossfireServerConnection = crossfireServerConnection;
@@ -136,26 +129,27 @@ public abstract class GUIItemItem extends GUIItem
         this.facesManager.addFacesManagerListener(facesManagerListener);
     }
 
-    /** {@inheritDoc} */
+    /**
+     * {@inheritDoc}
+     */
     @Override
-    public void dispose()
-    {
+    public void dispose() {
         super.dispose();
         facesManager.removeFacesManagerListener(facesManagerListener);
         setItem(null);
     }
 
-    /** {@inheritDoc} */
+    /**
+     * {@inheritDoc}
+     */
     @Override
-    protected void render(@NotNull final Graphics g)
-    {
+    protected void render(@NotNull final Graphics g) {
         final Graphics2D g2 = (Graphics2D)g;
         g2.setBackground(BACKGROUND_COLOR);
         g.clearRect(0, 0, getWidth(), getHeight());
 
         final CfItem tmpItem = item;
-        if (tmpItem == null)
-        {
+        if (tmpItem == null) {
             return;
         }
 
@@ -172,11 +166,9 @@ public abstract class GUIItemItem extends GUIItem
 
     /* {@inheritDoc} */
     @Override
-    protected void button2Clicked(final int modifiers)
-    {
+    protected void button2Clicked(final int modifiers) {
         final CfItem tmpItem = item;
-        if (tmpItem == null)
-        {
+        if (tmpItem == null) {
             return;
         }
 
@@ -188,8 +180,7 @@ public abstract class GUIItemItem extends GUIItem
      * @return the current item instance
      */
     @Nullable
-    public CfItem getItem()
-    {
+    public CfItem getItem() {
         return item;
     }
 
@@ -197,20 +188,16 @@ public abstract class GUIItemItem extends GUIItem
      * Sets the current item instance.
      * @param item the new current item instance
      */
-    protected void setItem(@Nullable final CfItem item)
-    {
-        if (this.item == item)
-        {
+    protected void setItem(@Nullable final CfItem item) {
+        if (this.item == item) {
             return;
         }
 
-        if (this.item != null)
-        {
+        if (this.item != null) {
             this.item.removeCfItemModifiedListener(itemListener);
         }
         this.item = item;
-        if (this.item != null)
-        {
+        if (this.item != null) {
             this.item.addCfItemModifiedListener(itemListener);
         }
 
@@ -223,8 +210,7 @@ public abstract class GUIItemItem extends GUIItem
      * updates.
      * @param item the new current item instance
      */
-    protected void setItemNoListeners(@Nullable final CfItem item)
-    {
+    protected void setItemNoListeners(@Nullable final CfItem item) {
         this.item = item;
         setChangedNoListeners();
     }
@@ -232,10 +218,8 @@ public abstract class GUIItemItem extends GUIItem
     /**
      * Updates the tooltip text for the current {@link #item}.
      */
-    private void updateTooltipText()
-    {
-        if (item == null)
-        {
+    private void updateTooltipText() {
+        if (item == null) {
             setTooltipText(null);
             return;
         }
@@ -254,4 +238,5 @@ public abstract class GUIItemItem extends GUIItem
      * @return whether this element is selected
      */
     protected abstract boolean isSelected();
+
 }

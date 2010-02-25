@@ -26,11 +26,10 @@ import org.jetbrains.annotations.NotNull;
 
 /**
  * The base class for all options. It manages a set of {@link OptionListener}s.
- *
  * @author Andreas Kirschbaum
  */
-public abstract class Option
-{
+public abstract class Option {
+
     /**
      * The listeners to be notified.
      */
@@ -40,21 +39,17 @@ public abstract class Option
     /**
      * Notify all listeners that the state has changed.
      */
-    protected void fireStateChangedEvent()
-    {
-        for (final OptionListener listener : listeners.getListeners(OptionListener.class))
-        {
+    protected void fireStateChangedEvent() {
+        for (final OptionListener listener : listeners.getListeners(OptionListener.class)) {
             listener.stateChanged();
         }
     }
 
     /**
      * Add a listener for state changes.
-     *
      * @param listener The listener to add.
      */
-    public void addOptionListener(@NotNull final OptionListener listener)
-    {
+    public void addOptionListener(@NotNull final OptionListener listener) {
         listeners.add(OptionListener.class, listener);
     }
 
@@ -62,8 +57,7 @@ public abstract class Option
      * Removes a listener for state changes.
      * @param listener the listener to remove
      */
-    public void removeOptionListener(@NotNull final OptionListener listener)
-    {
+    public void removeOptionListener(@NotNull final OptionListener listener) {
         listeners.remove(OptionListener.class, listener);
     }
 
@@ -73,8 +67,8 @@ public abstract class Option
      * saved at all.
      * @return whether the option value should not be saved
      */
-    public boolean inhibitSave()
-    {
+    public boolean inhibitSave() {
         return false;
     }
+
 }

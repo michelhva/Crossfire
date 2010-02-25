@@ -27,8 +27,8 @@ import org.jetbrains.annotations.NotNull;
  * Interface for listeners interested in changes of {@link Stats} instances.
  * @author Andreas Kirschbaum
  */
-public interface StatsListener
-{
+public interface StatsListener {
+
     /**
      * The stats instance is about to be reset.
      */
@@ -76,4 +76,5 @@ public interface StatsListener
      * @param expNextLevel the new experience
      */
     void experienceNextLevelChanged(long expNextLevel);
+
 }

@@ -27,8 +27,8 @@ import org.jetbrains.annotations.NotNull;
  * Interface for listeners interested in map related commands.
  * @author Andreas Kirschbaum
  */
-public interface CrossfireUpdateMapListener
-{
+public interface CrossfireUpdateMapListener {
+
     /**
      * A "newmap" command has been received.
      * @param mapWidth the map width
@@ -103,4 +103,5 @@ public interface CrossfireUpdateMapListener
      * @param faces the faces list; must not be modified
      */
     void addAnimation(int animation, int flags, @NotNull int[] faces);
+
 }

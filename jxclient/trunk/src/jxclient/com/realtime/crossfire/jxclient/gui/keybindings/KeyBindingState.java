@@ -28,8 +28,8 @@ import org.jetbrains.annotations.Nullable;
  * Manages the state for the key binding dialog.
  * @author Andreas Kirschbaum
  */
-public class KeyBindingState
-{
+public class KeyBindingState {
+
     /**
      * The {@link KeyBindings} to modify.
      */
@@ -83,8 +83,7 @@ public class KeyBindingState
      * when removing bindings; may be <code>null</code> when removing bindings
      * @param commands the commands to bind, or <code>null</code> to unbind
      */
-    public KeyBindingState(@Nullable final KeyBindings keyBindings, @Nullable final KeyBindings keyBindings2, @Nullable final CommandList commands)
-    {
+    public KeyBindingState(@Nullable final KeyBindings keyBindings, @Nullable final KeyBindings keyBindings2, @Nullable final CommandList commands) {
         this.keyBindings = keyBindings;
         this.keyBindings2 = keyBindings2;
         this.commands = commands;
@@ -95,8 +94,7 @@ public class KeyBindingState
      * @param keyCode the key code that was pressed
      * @param modifiers the bindings that are active
      */
-    public void keyPressed(final int keyCode, final int modifiers)
-    {
+    public void keyPressed(final int keyCode, final int modifiers) {
         state = 1;
         type = 0;
         this.keyCode = keyCode;
@@ -107,10 +105,8 @@ public class KeyBindingState
      * Records a binding by key character.
      * @param keyChar the key character that was typed
      */
-    public void keyTyped(final char keyChar)
-    {
-        if (state != 0)
-        {
+    public void keyTyped(final char keyChar) {
+        if (state != 0) {
             type = 1;
             this.keyChar = keyChar;
         }
@@ -119,50 +115,35 @@ public class KeyBindingState
     /**
      * Records a key released event.
      * @return <code>true</code> if the dialog has finished, or
-     * <code>false</code> if the dialog is still active
+     *         <code>false</code> if the dialog is still active
      */
-    public boolean keyReleased()
-    {
-        if (state == 0)
-        {
+    public boolean keyReleased() {
+        if (state == 0) {
             return false;
         }
 
         assert type != -1;
-        if (commands != null)
-        {
-            if (type == 0)
-            {
+        if (commands != null) {
+            if (type == 0) {
                 keyBindings.addKeyBindingAsKeyCode(keyCode, modifiers, commands, false);
-            }
-            else
-            {
+            } else {
                 keyBindings.addKeyBindingAsKeyChar(keyChar, commands, false);
             }
-        }
-        else
-        {
-            if (type == 0)
-            {
-                if (keyBindings != null)
-                {
+        } else {
+            if (type == 0) {
+                if (keyBindings != null) {
                     keyBindings.deleteKeyBindingAsKeyCode(keyCode, modifiers);
                 }
 
-                if (keyBindings2 != null)
-                {
+                if (keyBindings2 != null) {
                     keyBindings2.deleteKeyBindingAsKeyCode(keyCode, modifiers);
                 }
-            }
-            else
-            {
-                if (keyBindings != null)
-                {
+            } else {
+                if (keyBindings != null) {
                     keyBindings.deleteKeyBindingAsKeyChar(keyChar);
                 }
 
-                if (keyBindings2 != null)
-                {
+                if (keyBindings2 != null) {
                     keyBindings2.deleteKeyBindingAsKeyChar(keyChar);
                 }
             }
@@ -170,4 +151,5 @@ public class KeyBindingState
 
         return true;
     }
+
 }

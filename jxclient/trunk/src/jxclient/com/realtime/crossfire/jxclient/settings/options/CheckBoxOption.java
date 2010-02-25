@@ -24,11 +24,10 @@ package com.realtime.crossfire.jxclient.settings.options;
 /**
  * The base class for all check box options. It manages the checked/unchecked
  * state and notifies listeners about changes.
- *
  * @author Andreas Kirschbaum
  */
-public abstract class CheckBoxOption extends Option
-{
+public abstract class CheckBoxOption extends Option {
+
     /**
      * The current state.
      */
@@ -36,23 +35,18 @@ public abstract class CheckBoxOption extends Option
 
     /**
      * Return the current state.
-     *
      * @return The current state.
      */
-    public boolean isChecked()
-    {
+    public boolean isChecked() {
         return checked;
     }
 
     /**
      * Set the current state.
-     *
      * @param checked The new state.
      */
-    public void setChecked(final boolean checked)
-    {
-        if (this.checked == checked)
-        {
+    public void setChecked(final boolean checked) {
+        if (this.checked == checked) {
             return;
         }
 
@@ -63,8 +57,7 @@ public abstract class CheckBoxOption extends Option
     /**
      * Toggle the checked state.
      */
-    public void toggleChecked()
-    {
+    public void toggleChecked() {
         setChecked(!checked);
     }
 
@@ -75,18 +68,19 @@ public abstract class CheckBoxOption extends Option
      */
     protected abstract void execute(final boolean checked);
 
-    /** {@inheritDoc} */
+    /**
+     * {@inheritDoc}
+     */
     @Override
-    protected void fireStateChangedEvent()
-    {
+    protected void fireStateChangedEvent() {
         execute(checked);
         super.fireStateChangedEvent();
     }
 
     /**
      * Return the default value of {@link #isChecked()}.
-     *
      * @return The default value.
      */
     public abstract boolean isDefaultChecked();
+
 }

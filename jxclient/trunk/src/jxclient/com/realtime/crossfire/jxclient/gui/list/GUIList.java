@@ -51,8 +51,8 @@ import org.jetbrains.annotations.NotNull;
  * A {@link GUIElement} that displays a list of entries.
  * @author Andreas Kirschbaum
  */
-public abstract class GUIList extends ActivatableGUIElement
-{
+public abstract class GUIList extends ActivatableGUIElement {
+
     /**
      * The serial version UID.
      */
@@ -91,12 +91,10 @@ public abstract class GUIList extends ActivatableGUIElement
      * The {@link ListSelectionListener} attached to {@link #list}.
      */
     @NotNull
-    private final ListSelectionListener listSelectionListener = new ListSelectionListener()
-    {
+    private final ListSelectionListener listSelectionListener = new ListSelectionListener() {
         /** {@inheritDoc} */
         @Override
-        public void valueChanged(@NotNull final ListSelectionEvent e)
-        {
+        public void valueChanged(@NotNull final ListSelectionEvent e) {
             selectionChanged();
         }
     };
@@ -115,8 +113,7 @@ public abstract class GUIList extends ActivatableGUIElement
      * @param cellHeight the height of each cell
      * @param listCellRenderer the renderer for the list
      */
-    protected GUIList(@NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final String name, final int x, final int y, final int w, final int h, final int cellHeight, @NotNull final ListCellRenderer listCellRenderer)
-    {
+    protected GUIList(@NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final String name, final int x, final int y, final int w, final int h, final int cellHeight, @NotNull final ListCellRenderer listCellRenderer) {
         super(tooltipManager, elementListener, name, x, y, w, h, Transparency.TRANSLUCENT);
         final Dimension size = new Dimension(w, h);
 
@@ -143,36 +140,33 @@ public abstract class GUIList extends ActivatableGUIElement
         list.setSize(getWidth(), Integer.MAX_VALUE);
         list.addListSelectionListener(listSelectionListener);
 
-        synchronized (bufferedImageSync)
-        {
+        synchronized (bufferedImageSync) {
             final Graphics g = createBufferGraphics();
-            try
-            {
+            try {
                 render(g);
-            }
-            finally
-            {
+            } finally {
                 g.dispose();
             }
         }
     }
 
-    /** {@inheritDoc} */
+    /**
+     * {@inheritDoc}
+     */
     @Override
-    public void dispose()
-    {
+    public void dispose() {
         super.dispose();
         list.removeListSelectionListener(listSelectionListener);
-        synchronized (getTreeLock())
-        {
+        synchronized (getTreeLock()) {
             resizeElements(0);
         }
     }
 
-    /** {@inheritDoc} */
+    /**
+     * {@inheritDoc}
+     */
     @Override
-    protected void render(@NotNull final Graphics g)
-    {
+    protected void render(@NotNull final Graphics g) {
         final Graphics2D g2 = (Graphics2D)g;
         final Composite composite = g2.getComposite();
         g2.setComposite(AlphaComposite.Clear);
@@ -180,8 +174,7 @@ public abstract class GUIList extends ActivatableGUIElement
         g.fillRect(0, 0, getWidth(), getHeight());
         g2.setComposite(composite);
 
-        synchronized (getTreeLock())
-        {
+        synchronized (getTreeLock()) {
             scrollPane.paint(g);
             viewport.paint(g);
         }
@@ -191,44 +184,37 @@ public abstract class GUIList extends ActivatableGUIElement
      * Adds an {@link GUIElement} to the list.
      * @param element the element to add
      */
-    protected void addElement(@NotNull final GUIElement element)
-    {
+    protected void addElement(@NotNull final GUIElement element) {
         assert Thread.holdsLock(getTreeLock());
         model.addElement(element);
         list.setSize(getWidth(), Integer.MAX_VALUE);
         viewport.update();
-        if (model.getSize() == 1)
-        {
+        if (model.getSize() == 1) {
             setSelectedIndex(0);
         }
     }
 
     /**
      * Changes the number of list elements. If the new element count is less
-     * than the current count, excess elements are cut off. Otherwise the
-     * caller has to add elements with {@link #addElement(GUIElement)}.
+     * than the current count, excess elements are cut off. Otherwise the caller
+     * has to add elements with {@link #addElement(GUIElement)}.
      * @param newSize the new element count
      * @return the number of elements to add by the caller
      */
-    protected int resizeElements(final int newSize)
-    {
+    protected int resizeElements(final int newSize) {
         assert Thread.holdsLock(getTreeLock());
         final int index = list.getSelectedIndex();
         final int oldSize = model.getSize();
-        if (newSize < oldSize)
-        {
-            for (int i = newSize; i < oldSize; i++)
-            {
+        if (newSize < oldSize) {
+            for (int i = newSize; i < oldSize; i++) {
                 final GUIElement element = (GUIElement)model.get(i);
-                if (element instanceof GUIItemItem)
-                {
+                if (element instanceof GUIItemItem) {
                     element.dispose();
                 }
             }
             model.removeRange(newSize, oldSize-1);
             list.setSize(getWidth(), Integer.MAX_VALUE);
-            if (index >= newSize && newSize > 0)
-            {
+            if (index >= newSize && newSize > 0) {
                 setSelectedIndex(newSize-1);
             }
             setChanged();
@@ -242,13 +228,10 @@ public abstract class GUIList extends ActivatableGUIElement
      * @param diffElements the distance in elements to move
      * @return whether moving is possible
      */
-    public boolean canMoveSelection(final int diffLines, final int diffElements)
-    {
-        synchronized (getTreeLock())
-        {
+    public boolean canMoveSelection(final int diffLines, final int diffElements) {
+        synchronized (getTreeLock()) {
             final int distance;
-            switch (list.getLayoutOrientation())
-            {
+            switch (list.getLayoutOrientation()) {
             case JList.HORIZONTAL_WRAP:
                 distance = (list.getWidth()/cellHeight)*diffLines+diffElements;
                 break;
@@ -258,16 +241,11 @@ public abstract class GUIList extends ActivatableGUIElement
                 break;
             }
             final int index = list.getSelectedIndex();
-            if (distance > 0)
-            {
+            if (distance > 0) {
                 return index == -1 || index+distance < list.getModel().getSize();
-            }
-            else if (distance < 0)
-            {
+            } else if (distance < 0) {
                 return index == -1 || index >= -distance;
-            }
-            else
-            {
+            } else {
                 return false;
             }
         }
@@ -278,13 +256,10 @@ public abstract class GUIList extends ActivatableGUIElement
      * @param diffLines the distance in lines to move
      * @param diffElements the distance in elements to move
      */
-    public void moveSelection(final int diffLines, final int diffElements)
-    {
-        synchronized (getTreeLock())
-        {
+    public void moveSelection(final int diffLines, final int diffElements) {
+        synchronized (getTreeLock()) {
             final int distance;
-            switch (list.getLayoutOrientation())
-            {
+            switch (list.getLayoutOrientation()) {
             case JList.HORIZONTAL_WRAP:
                 distance = (list.getWidth()/cellHeight)*diffLines+diffElements;
                 break;
@@ -295,36 +270,22 @@ public abstract class GUIList extends ActivatableGUIElement
             }
             final int index = list.getSelectedIndex();
             final int newIndex;
-            if (distance > 0)
-            {
-                if (index == -1)
-                {
+            if (distance > 0) {
+                if (index == -1) {
                     newIndex = 0;
-                }
-                else
-                {
+                } else {
                     newIndex = Math.min(index+distance, list.getModel().getSize()-1);
                 }
-            }
-            else if (distance < 0)
-            {
-                if (index == -1)
-                {
+            } else if (distance < 0) {
+                if (index == -1) {
                     newIndex = list.getModel().getSize()-1;
-                }
-                else
-                {
+                } else {
                     newIndex = Math.max(index+distance, 0);
                 }
-            }
-            else
-            {
-                if (index == -1)
-                {
+            } else {
+                if (index == -1) {
                     newIndex = 0;
-                }
-                else
-                {
+                } else {
                     newIndex = index;
                 }
             }
@@ -337,21 +298,14 @@ public abstract class GUIList extends ActivatableGUIElement
      * @param distance the distance to scroll
      * @return whether scrolling is possible
      */
-    public boolean canScroll(final int distance)
-    {
-        synchronized (getTreeLock())
-        {
+    public boolean canScroll(final int distance) {
+        synchronized (getTreeLock()) {
             final Adjustable scrollBar = scrollPane.getVerticalScrollBar();
-            if (distance > 0)
-            {
+            if (distance > 0) {
                 return scrollBar.getValue() < scrollBar.getMaximum()-scrollBar.getVisibleAmount();
-            }
-            else if (distance < 0)
-            {
+            } else if (distance < 0) {
                 return scrollBar.getValue() > scrollBar.getMinimum();
-            }
-            else
-            {
+            } else {
                 return false;
             }
         }
@@ -361,21 +315,16 @@ public abstract class GUIList extends ActivatableGUIElement
      * Moves the list.
      * @param distance the distance to scroll
      */
-    public void scroll(final int distance)
-    {
-        synchronized (getTreeLock())
-        {
+    public void scroll(final int distance) {
+        synchronized (getTreeLock()) {
             final Adjustable scrollBar = scrollPane.getVerticalScrollBar();
             final int value = scrollBar.getValue()+distance*cellHeight;
             scrollBar.setValue(value);
             final int index = list.getSelectedIndex();
-            if (index != -1)
-            {
+            if (index != -1) {
                 final int firstIndex = list.getFirstVisibleIndex();
-                if (index < firstIndex)
-                {
-                    switch (list.getLayoutOrientation())
-                    {
+                if (index < firstIndex) {
+                    switch (list.getLayoutOrientation()) {
                     case JList.HORIZONTAL_WRAP:
                         final int columns = list.getWidth()/cellHeight;
                         setSelectedIndex(firstIndex+index%columns);
@@ -385,28 +334,19 @@ public abstract class GUIList extends ActivatableGUIElement
                         setSelectedIndex(firstIndex);
                         break;
                     }
-                }
-                else
-                {
+                } else {
                     final int lastIndex = list.getLastVisibleIndex();
-                    if (index > lastIndex)
-                    {
-                        switch (list.getLayoutOrientation())
-                        {
+                    if (index > lastIndex) {
+                        switch (list.getLayoutOrientation()) {
                         case JList.HORIZONTAL_WRAP:
                             final int columns = list.getWidth()/cellHeight;
                             final int newTmpColumn = lastIndex-lastIndex%columns+index%columns;
                             final int newColumn;
-                            if (newTmpColumn <= lastIndex)
-                            {
+                            if (newTmpColumn <= lastIndex) {
                                 newColumn = newTmpColumn;
-                            }
-                            else if (newTmpColumn >= columns)
-                            {
+                            } else if (newTmpColumn >= columns) {
                                 newColumn = newTmpColumn-columns;
-                            }
-                            else
-                            {
+                            } else {
                                 newColumn = lastIndex;
                             }
                             setSelectedIndex(newColumn);
@@ -423,50 +363,56 @@ public abstract class GUIList extends ActivatableGUIElement
         setChanged();
     }
 
-    /** {@inheritDoc} */
+    /**
+     * {@inheritDoc}
+     */
     @Override
-    public void mouseClicked(@NotNull final MouseEvent e)
-    {
+    public void mouseClicked(@NotNull final MouseEvent e) {
         doSelect(e);
         super.mouseClicked(e);
     }
 
-    /** {@inheritDoc} */
+    /**
+     * {@inheritDoc}
+     */
     @Override
-    public void mouseEntered(@NotNull final MouseEvent e)
-    {
+    public void mouseEntered(@NotNull final MouseEvent e) {
         super.mouseEntered(e);
         doTooltip(e);
     }
 
-    /** {@inheritDoc} */
+    /**
+     * {@inheritDoc}
+     */
     @Override
-    public void mouseExited(@NotNull final MouseEvent e)
-    {
+    public void mouseExited(@NotNull final MouseEvent e) {
         super.mouseExited(e);
         doTooltip(e);
     }
 
-    /** {@inheritDoc} */
+    /**
+     * {@inheritDoc}
+     */
     @Override
-    public void mousePressed(@NotNull final MouseEvent e)
-    {
+    public void mousePressed(@NotNull final MouseEvent e) {
         super.mouseClicked(e);
         doSelect(e);
     }
 
-    /** {@inheritDoc} */
+    /**
+     * {@inheritDoc}
+     */
     @Override
-    public void mouseMoved(@NotNull final MouseEvent e)
-    {
+    public void mouseMoved(@NotNull final MouseEvent e) {
         super.mouseMoved(e);
         doTooltip(e);
     }
 
-    /** {@inheritDoc} */
+    /**
+     * {@inheritDoc}
+     */
     @Override
-    public void mouseDragged(@NotNull final MouseEvent e)
-    {
+    public void mouseDragged(@NotNull final MouseEvent e) {
         super.mouseClicked(e);
         doSelect(e);
     }
@@ -475,10 +421,8 @@ public abstract class GUIList extends ActivatableGUIElement
      * Selects the list entry corresponding to a {@link MouseEvent} instance.
      * @param e the mouse event instance
      */
-    private void doSelect(@NotNull final MouseEvent e)
-    {
-        synchronized (getTreeLock())
-        {
+    private void doSelect(@NotNull final MouseEvent e) {
+        synchronized (getTreeLock()) {
             setSelectedIndex(list.getFirstVisibleIndex()+list.locationToIndex(e.getPoint()));
         }
     }
@@ -487,10 +431,8 @@ public abstract class GUIList extends ActivatableGUIElement
      * Updates the tooltip text corresponding to a {@link MouseEvent} instance.
      * @param e the mouse event instance
      */
-    private void doTooltip(@NotNull final MouseEvent e)
-    {
-        synchronized (getTreeLock())
-        {
+    private void doTooltip(@NotNull final MouseEvent e) {
+        synchronized (getTreeLock()) {
             updateTooltip(list.getFirstVisibleIndex()+list.locationToIndex(e.getPoint()));
         }
     }
@@ -499,20 +441,16 @@ public abstract class GUIList extends ActivatableGUIElement
      * Update the selected list entry.
      * @param newIndex the new selected list entry
      */
-    protected void setSelectedIndex(final int newIndex)
-    {
-        synchronized (getTreeLock())
-        {
+    protected void setSelectedIndex(final int newIndex) {
+        synchronized (getTreeLock()) {
             final int newIndex2 = Math.min(Math.max(newIndex, 0), list.getModel().getSize()-1);
             final int index = list.getSelectedIndex();
-            if (newIndex2 == index)
-            {
+            if (newIndex2 == index) {
                 return;
             }
 
             list.setSelectedIndex(newIndex2);
-            if (newIndex2 >= 0)
-            {
+            if (newIndex2 >= 0) {
                 list.ensureIndexIsVisible(newIndex2);
             }
         }
@@ -522,10 +460,8 @@ public abstract class GUIList extends ActivatableGUIElement
     /**
      * Called whenever the selected list entry has changed.
      */
-    protected void selectionChanged()
-    {
-        synchronized (getTreeLock())
-        {
+    protected void selectionChanged() {
+        synchronized (getTreeLock()) {
             selectionChanged(list.getSelectedIndex());
         }
     }
@@ -548,10 +484,8 @@ public abstract class GUIList extends ActivatableGUIElement
      * @param layoutOrientation the layout orientation
      * @param visibleRowCount the number of visible rows
      */
-    protected void setLayoutOrientation(final int layoutOrientation, final int visibleRowCount)
-    {
-        synchronized (getTreeLock())
-        {
+    protected void setLayoutOrientation(final int layoutOrientation, final int visibleRowCount) {
+        synchronized (getTreeLock()) {
             list.setLayoutOrientation(layoutOrientation);
             list.setVisibleRowCount(visibleRowCount);
         }
@@ -562,11 +496,10 @@ public abstract class GUIList extends ActivatableGUIElement
      * @return the selected object or <code>null</code> if none is selected
      */
     @NotNull
-    protected Object getSelectedObject()
-    {
-        synchronized (getTreeLock())
-        {
+    protected Object getSelectedObject() {
+        synchronized (getTreeLock()) {
             return list.getSelectedValue();
         }
     }
+
 }

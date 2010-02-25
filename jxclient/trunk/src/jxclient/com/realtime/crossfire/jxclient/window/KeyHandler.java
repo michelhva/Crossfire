@@ -41,8 +41,8 @@ import org.jetbrains.annotations.Nullable;
  * @author Lauwenmark
  * @author Andreas Kirschbaum
  */
-public class KeyHandler
-{
+public class KeyHandler {
+
     private static final int KEY_SHIFT_SHIFT = 0;
 
     private static final int KEY_SHIFT_CTRL = 1;
@@ -89,7 +89,12 @@ public class KeyHandler
     private final DateFormat simpleDateFormat = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss,SSS ");
 
     @NotNull
-    private final boolean[] keyShift = { false, false, false, false };
+    private final boolean[] keyShift = {
+        false,
+        false,
+        false,
+        false
+    };
 
     @Nullable
     private KeyBindings keyBindings = null;
@@ -102,8 +107,7 @@ public class KeyHandler
      * @param windowRenderer the window renderer to use
      * @param keyHandlerListener the key handler listener to notify
      */
-    public KeyHandler(@Nullable final Writer debugKeyboard, @NotNull final KeybindingsManager keybindingsManager, @NotNull final CommandQueue commandQueue, @NotNull final JXCWindowRenderer windowRenderer, @NotNull final KeyHandlerListener keyHandlerListener)
-    {
+    public KeyHandler(@Nullable final Writer debugKeyboard, @NotNull final KeybindingsManager keybindingsManager, @NotNull final CommandQueue commandQueue, @NotNull final JXCWindowRenderer windowRenderer, @NotNull final KeyHandlerListener keyHandlerListener) {
         this.debugKeyboard = debugKeyboard;
         this.keybindingsManager = keybindingsManager;
         this.commandQueue = commandQueue;
@@ -111,48 +115,38 @@ public class KeyHandler
         this.keyHandlerListener = keyHandlerListener;
     }
 
-    public void reset()
-    {
+    public void reset() {
         Arrays.fill(keyShift, false);
     }
 
-    public void setKeyBindings(@NotNull final KeyBindings keyBindings)
-    {
+    public void setKeyBindings(@NotNull final KeyBindings keyBindings) {
         this.keyBindings = keyBindings;
     }
 
-    private boolean getKeyShift(final int keyid)
-    {
+    private boolean getKeyShift(final int keyid) {
         return keyShift[keyid];
     }
 
-    private void setKeyShift(final int keyid, final boolean state)
-    {
-        if (keyShift[keyid] != state)
-        {
+    private void setKeyShift(final int keyid, final boolean state) {
+        if (keyShift[keyid] != state) {
             debugKeyboardWrite("setKeyShift: "+keyid+"="+state);
         }
         keyShift[keyid] = state;
     }
 
-    private void handleKeyPress(@NotNull final KeyEvent e)
-    {
-        if (keybindingsManager.handleKeyPress(e))
-        {
+    private void handleKeyPress(@NotNull final KeyEvent e) {
+        if (keybindingsManager.handleKeyPress(e)) {
             debugKeyboardWrite("keyPressed: keybindingsManager consumed key");
             return;
         }
 
-        if (keyBindings != null && keyBindings.handleKeyPress(e))
-        {
+        if (keyBindings != null && keyBindings.handleKeyPress(e)) {
             debugKeyboardWrite("keyPressed: skin default key bindings consumed key");
             return;
         }
 
-        if (e.getModifiers() == 0)
-        {
-            switch (e.getKeyCode())
-            {
+        if (e.getModifiers() == 0) {
+            switch (e.getKeyCode()) {
             case KeyEvent.VK_0:
                 debugKeyboardWrite("keyPressed: number key");
                 commandQueue.addToRepeatCount(0);
@@ -207,23 +201,18 @@ public class KeyHandler
                 debugKeyboardWrite("keyPressed: ignoring key");
                 break;
             }
-        }
-        else
-        {
+        } else {
             debugKeyboardWrite("keyPressed: ignoring key because modifiers != 0");
         }
     }
 
-    private void handleKeyTyped(@NotNull final KeyEvent e)
-    {
-        if (keybindingsManager.handleKeyTyped(e))
-        {
+    private void handleKeyTyped(@NotNull final KeyEvent e) {
+        if (keybindingsManager.handleKeyTyped(e)) {
             debugKeyboardWrite("keyTyped: keybindingsManager consumed key");
             return;
         }
 
-        if (keyBindings != null && keyBindings.handleKeyTyped(e))
-        {
+        if (keyBindings != null && keyBindings.handleKeyTyped(e)) {
             debugKeyboardWrite("keyTyped: skin default key bindings consumed key");
             return;
         }
@@ -231,14 +220,11 @@ public class KeyHandler
         debugKeyboardWrite("keyTyped: ignoring key");
     }
 
-    public void keyPressed(@NotNull final KeyEvent e)
-    {
+    public void keyPressed(@NotNull final KeyEvent e) {
         debugKeyboardWrite("pressed", e);
-        try
-        {
+        try {
             updateModifiers(e);
-            switch (e.getKeyCode())
-            {
+            switch (e.getKeyCode()) {
             case KeyEvent.VK_ALT:
             case KeyEvent.VK_ALT_GRAPH:
             case KeyEvent.VK_SHIFT:
@@ -247,37 +233,27 @@ public class KeyHandler
                 break;
 
             default:
-                if (e.getKeyCode() == KeyEvent.VK_ESCAPE)
-                {
+                if (e.getKeyCode() == KeyEvent.VK_ESCAPE) {
                     debugKeyboardWrite("keyPressed: ESC");
                     keyHandlerListener.escPressed();
-                }
-                else if (keybindingsManager.keyPressed(e.getKeyCode(), e.getModifiers()))
-                {
+                } else if (keybindingsManager.keyPressed(e.getKeyCode(), e.getModifiers())) {
                     debugKeyboardWrite("keyPressed: keybindingsManager consumed key");
                     // done
-                }
-                else
-                {
-                    for (final Gui dialog : windowRenderer.getOpenDialogs())
-                    {
-                        if (!dialog.isHidden(windowRenderer.getGuiState()))
-                        {
-                            if (dialog.handleKeyPress(e))
-                            {
+                } else {
+                    for (final Gui dialog : windowRenderer.getOpenDialogs()) {
+                        if (!dialog.isHidden(windowRenderer.getGuiState())) {
+                            if (dialog.handleKeyPress(e)) {
                                 debugKeyboardWrite("keyPressed: dialog "+dialog+" consumed key");
                                 return;
                             }
-                            if (dialog.isModal())
-                            {
+                            if (dialog.isModal()) {
                                 debugKeyboardWrite("keyPressed: dialog "+dialog+" is modal");
                                 return;
                             }
                             debugKeyboardWrite("keyPressed: dialog "+dialog+" didn't consume key");
                         }
                     }
-                    if (windowRenderer.getCurrentGui().handleKeyPress(e))
-                    {
+                    if (windowRenderer.getCurrentGui().handleKeyPress(e)) {
                         debugKeyboardWrite("keyPressed: main gui "+windowRenderer.getCurrentGui()+" consumed key");
                         return;
                     }
@@ -285,21 +261,16 @@ public class KeyHandler
                 }
                 break;
             }
-        }
-        finally
-        {
+        } finally {
             debugKeyboardWrite("");
         }
     }
 
-    public void keyReleased(@NotNull final KeyEvent e)
-    {
+    public void keyReleased(@NotNull final KeyEvent e) {
         debugKeyboardWrite("released", e);
-        try
-        {
+        try {
             updateModifiers(e);
-            switch (e.getKeyCode())
-            {
+            switch (e.getKeyCode()) {
             case KeyEvent.VK_ALT:
             case KeyEvent.VK_ALT_GRAPH:
             case KeyEvent.VK_SHIFT:
@@ -308,94 +279,71 @@ public class KeyHandler
                 break;
 
             default:
-                if (e.getKeyCode() == KeyEvent.VK_ESCAPE)
-                {
+                if (e.getKeyCode() == KeyEvent.VK_ESCAPE) {
                     debugKeyboardWrite("keyReleased: ignoring ESC");
                     // ignore
-                }
-                else if (keybindingsManager.keyReleased())
-                {
+                } else if (keybindingsManager.keyReleased()) {
                     debugKeyboardWrite("keyReleased: keybindingsManager consumed key");
                     keyHandlerListener.keyReleased();
-                }
-                else
-                {
+                } else {
                     debugKeyboardWrite("keyReleased: ignoring key");
                 }
                 break;
             }
-        }
-        finally
-        {
+        } finally {
             debugKeyboardWrite("");
         }
     }
 
-    public void keyTyped(@NotNull final KeyEvent e)
-    {
+    public void keyTyped(@NotNull final KeyEvent e) {
         debugKeyboardWrite("typed", e);
-        try
-        {
+        try {
             if (e.getKeyChar() == 27) // ignore ESC key
             {
                 debugKeyboardWrite("keyTyped: ignoring ESC");
                 return;
             }
 
-            if (keybindingsManager.keyTyped(e.getKeyChar()))
-            {
+            if (keybindingsManager.keyTyped(e.getKeyChar())) {
                 debugKeyboardWrite("keyTyped: keybindingsManager consumed key");
                 commandQueue.resetRepeatCount();
-            }
-            else
-            {
-                for (final Gui dialog : windowRenderer.getOpenDialogs())
-                {
-                    if (!dialog.isHidden(windowRenderer.getGuiState()))
-                    {
-                        if (dialog.handleKeyTyped(e))
-                        {
+            } else {
+                for (final Gui dialog : windowRenderer.getOpenDialogs()) {
+                    if (!dialog.isHidden(windowRenderer.getGuiState())) {
+                        if (dialog.handleKeyTyped(e)) {
                             debugKeyboardWrite("keyTyped: dialog "+dialog+" consumed key");
                             return;
                         }
-                        if (dialog.isModal())
-                        {
+                        if (dialog.isModal()) {
                             debugKeyboardWrite("keyTyped: dialog "+dialog+" is modal");
                             return;
                         }
                         debugKeyboardWrite("keyTyped: dialog "+dialog+" didn't consume key");
                     }
                 }
-                if (windowRenderer.getCurrentGui().handleKeyTyped(e))
-                {
+                if (windowRenderer.getCurrentGui().handleKeyTyped(e)) {
                     debugKeyboardWrite("keyTyped: main gui "+windowRenderer.getCurrentGui()+" consumed key");
                     return;
                 }
                 handleKeyTyped(e);
             }
-        }
-        finally
-        {
+        } finally {
             debugKeyboardWrite("");
         }
     }
 
     /**
      * Update the saved modifier state from a key event.
-     *
      * @param keyEvent The key event to process.
      */
-    private void updateModifiers(@NotNull final InputEvent keyEvent)
-    {
+    private void updateModifiers(@NotNull final InputEvent keyEvent) {
         final int mask = keyEvent.getModifiersEx();
         setKeyShift(KEY_SHIFT_SHIFT, (mask&InputEvent.SHIFT_DOWN_MASK) != 0);
         setKeyShift(KEY_SHIFT_CTRL, (mask&InputEvent.CTRL_DOWN_MASK) != 0);
         setKeyShift(KEY_SHIFT_ALT, (mask&InputEvent.ALT_DOWN_MASK) != 0);
         setKeyShift(KEY_SHIFT_ALTGR, (mask&InputEvent.ALT_GRAPH_DOWN_MASK) != 0);
-        if (!getKeyShift(KEY_SHIFT_CTRL))
-        {
-            if (commandQueue.stopRunning())
-            {
+        if (!getKeyShift(KEY_SHIFT_CTRL)) {
+            if (commandQueue.stopRunning()) {
                 debugKeyboardWrite("updateModifiers: stopping run");
             }
         }
@@ -406,10 +354,8 @@ public class KeyHandler
      * @param type the event type
      * @param e the key event to write
      */
-    private void debugKeyboardWrite(@NotNull final String type, @NotNull final KeyEvent e)
-    {
-        if (debugKeyboard == null)
-        {
+    private void debugKeyboardWrite(@NotNull final String type, @NotNull final KeyEvent e) {
+        if (debugKeyboard == null) {
             return;
         }
 
@@ -420,25 +366,21 @@ public class KeyHandler
      * Writes a message to the keyboard debug.
      * @param message the message to write
      */
-    private void debugKeyboardWrite(@NotNull final CharSequence message)
-    {
-        if (debugKeyboard == null)
-        {
+    private void debugKeyboardWrite(@NotNull final CharSequence message) {
+        if (debugKeyboard == null) {
             return;
         }
 
-        try
-        {
+        try {
             debugKeyboard.append(simpleDateFormat.format(new Date()));
             debugKeyboard.append(message);
             debugKeyboard.append("\n");
             debugKeyboard.flush();
-        }
-        catch (final IOException ex)
-        {
+        } catch (final IOException ex) {
             System.err.println("Cannot write keyboard debug: "+ex.getMessage());
             System.exit(1);
             throw new AssertionError();
         }
     }
+
 }

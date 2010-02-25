@@ -36,8 +36,8 @@ import org.jetbrains.annotations.Nullable;
  * @author Lauwenmark
  * @author Andreas Kirschbaum
  */
-public class Options
-{
+public class Options {
+
     /**
      * The {@link Settings} for saving/restoring defaults.
      */
@@ -76,8 +76,8 @@ public class Options
     private String debugKeyboardFilename = null;
 
     /**
-     * The filename for screen debug logs or <code>null</code> to not log
-     * screen logs.
+     * The filename for screen debug logs or <code>null</code> to not log screen
+     * logs.
      */
     @Nullable
     private String debugScreenFilename = null;
@@ -105,69 +105,45 @@ public class Options
      * @param args the command line arguments
      * @throws IOException if an I/O error occurs
      */
-    public void parse(@NotNull final String[] args) throws IOException
-    {
+    public void parse(@NotNull final String[] args) throws IOException {
         prefs = new Settings(Filenames.getSettingsFile());
         resolution = Resolution.parse(false, prefs.getString("resolution", getScreenResolution()));
         skin = prefs.getString("skin", "default");
 
         // fix changed default skin name
-        if (skin.equals("com.realtime.crossfire.jxclient.JXCSkinPrelude"))
-        {
+        if (skin.equals("com.realtime.crossfire.jxclient.JXCSkinPrelude")) {
             skin = "default";
         }
 
         int i = 0;
-        while (i < args.length)
-        {
-            if ((args[i].equals("-r") || args[i].equals("--resolution")) && i+1 < args.length)
-            {
+        while (i < args.length) {
+            if ((args[i].equals("-r") || args[i].equals("--resolution")) && i+1 < args.length) {
                 resolution = Resolution.parse(true, args[++i]);
-                if (resolution == null)
-                {
+                if (resolution == null) {
                     System.err.println("Invalid resolution: "+args[i]);
                     System.exit(1);
                 }
-            }
-            else if (args[i].equals("-S") && i+1 < args.length)
-            {
+            } else if (args[i].equals("-S") && i+1 < args.length) {
                 skin = args[++i];
-                if (skin.indexOf('@') != -1)
-                {
+                if (skin.indexOf('@') != -1) {
                     System.err.println("Invalid skin name: "+skin);
                     System.exit(1);
                 }
-            }
-            else if (args[i].equals("-N"))
-            {
+            } else if (args[i].equals("-N")) {
                 fullScreen = false;
-            }
-            else if (args[i].equals("--opengl"))
-            {
+            } else if (args[i].equals("--opengl")) {
                 System.setProperty("sun.java2d.opengl", "True");
-            }
-            else if (args[i].equals("--server") && i+1 < args.length)
-            {
+            } else if (args[i].equals("--server") && i+1 < args.length) {
                 server = args[++i];
-            }
-            else if (args[i].equals("--debug-gui"))
-            {
+            } else if (args[i].equals("--debug-gui")) {
                 debugGui = true;
-            }
-            else if (args[i].equals("--debug-protocol") && i+1 < args.length)
-            {
+            } else if (args[i].equals("--debug-protocol") && i+1 < args.length) {
                 debugProtocolFilename = args[++i];
-            }
-            else if (args[i].equals("--debug-keyboard") && i+1 < args.length)
-            {
+            } else if (args[i].equals("--debug-keyboard") && i+1 < args.length) {
                 debugKeyboardFilename = args[++i];
-            }
-            else if (args[i].equals("--debug-screen") && i+1 < args.length)
-            {
+            } else if (args[i].equals("--debug-screen") && i+1 < args.length) {
                 debugScreenFilename = args[++i];
-            }
-            else
-            {
+            } else {
                 System.out.println("");
                 System.out.println("Available options:");
                 System.out.println(" -N             : Disable full-screen mode.");
@@ -198,8 +174,7 @@ public class Options
 
         // Map "default to actual skin name; must be after skin name has
         // been written to preferences.
-        if (skin.equals("default"))
-        {
+        if (skin.equals("default")) {
             skin = DEFAULT_SKIN;
         }
     }
@@ -209,8 +184,7 @@ public class Options
      * @return the screen's resolution.
      */
     @NotNull
-    private static String getScreenResolution()
-    {
+    private static String getScreenResolution() {
         final GraphicsEnvironment ge = GraphicsEnvironment.getLocalGraphicsEnvironment();
         final GraphicsDevice gd = ge.getDefaultScreenDevice();
         final DisplayMode displayMode = gd.getDisplayMode();
@@ -220,11 +194,10 @@ public class Options
     /**
      * Returns the filename for Crossfire protocol debug logs.
      * @return the filename or <code>null</code> to not log Crossfire protocol
-     * messages
+     *         messages
      */
     @Nullable
-    public String getDebugProtocolFilename()
-    {
+    public String getDebugProtocolFilename() {
         return debugProtocolFilename;
     }
 
@@ -233,8 +206,7 @@ public class Options
      * @return the filename or <code>null</code> to not log keyboard input
      */
     @Nullable
-    public String getDebugKeyboardFilename()
-    {
+    public String getDebugKeyboardFilename() {
         return debugKeyboardFilename;
     }
 
@@ -243,8 +215,7 @@ public class Options
      * @return the filename or <code>null</code> to not log screen logs
      */
     @Nullable
-    public String getDebugScreenFilename()
-    {
+    public String getDebugScreenFilename() {
         return debugScreenFilename;
     }
 
@@ -253,8 +224,7 @@ public class Options
      * @return the settings
      */
     @Nullable
-    public Settings getPrefs()
-    {
+    public Settings getPrefs() {
         return prefs;
     }
 
@@ -262,8 +232,7 @@ public class Options
      * Returns whether debugging of GUI elements is enabled.
      * @return whether debugging of GUI elements is enabled
      */
-    public boolean isDebugGui()
-    {
+    public boolean isDebugGui() {
         return debugGui;
     }
 
@@ -272,8 +241,7 @@ public class Options
      * @return the resolution or <code>null</code> for default
      */
     @Nullable
-    public Resolution getResolution()
-    {
+    public Resolution getResolution() {
         return resolution;
     }
 
@@ -282,8 +250,7 @@ public class Options
      * @return the skin name or <code>null</code> for the default skin
      */
     @Nullable
-    public String getSkin()
-    {
+    public String getSkin() {
         return skin;
     }
 
@@ -291,8 +258,7 @@ public class Options
      * Returns whether full-screen mode should be enabled.
      * @return whether full-screen mode should be enabled
      */
-    public boolean isFullScreen()
-    {
+    public boolean isFullScreen() {
         return fullScreen;
     }
 
@@ -301,8 +267,8 @@ public class Options
      * @return the server or <code>null</code> for interactive server selection
      */
     @Nullable
-    public String getServer()
-    {
+    public String getServer() {
         return server;
     }
+
 }

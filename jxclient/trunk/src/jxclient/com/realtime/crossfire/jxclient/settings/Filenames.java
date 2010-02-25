@@ -29,32 +29,25 @@ import org.jetbrains.annotations.Nullable;
 
 /**
  * Utility class to return references to settings files.
- *
  * @author Andreas Kirschbaum
  */
-public class Filenames
-{
+public class Filenames {
+
     /**
      * Private constructor to prevent instantiation.
      */
-    private Filenames()
-    {
+    private Filenames() {
     }
 
     /**
      * Return the image cache directory.
-     *
      * @return The image cache directory.
      */
     @NotNull
-    public static File getOriginalImageCacheDir()
-    {
-        try
-        {
+    public static File getOriginalImageCacheDir() {
+        try {
             return getSettingsFile("cache");
-        }
-        catch (final IOException ex)
-        {
+        } catch (final IOException ex) {
             System.err.println(ex.getMessage());
             System.exit(1);
             throw new AssertionError();
@@ -63,18 +56,13 @@ public class Filenames
 
     /**
      * Return the image cache directory for double size images.
-     *
      * @return The image cache directory.
      */
     @NotNull
-    public static File getScaledImageCacheDir()
-    {
-        try
-        {
+    public static File getScaledImageCacheDir() {
+        try {
             return getSettingsFile("cache-x2");
-        }
-        catch (final IOException ex)
-        {
+        } catch (final IOException ex) {
             System.err.println(ex.getMessage());
             System.exit(1);
             throw new AssertionError();
@@ -83,18 +71,13 @@ public class Filenames
 
     /**
      * Return the image cache directory for magic map sized images.
-     *
      * @return The image cache directory.
      */
     @NotNull
-    public static File getMagicMapImageCacheDir()
-    {
-        try
-        {
+    public static File getMagicMapImageCacheDir() {
+        try {
             return getSettingsFile("cache-mm");
-        }
-        catch (final IOException ex)
-        {
+        } catch (final IOException ex) {
             System.err.println(ex.getMessage());
             System.exit(1);
             throw new AssertionError();
@@ -103,110 +86,81 @@ public class Filenames
 
     /**
      * Return the main settings file.
-     *
      * @return The main settings file.
-     *
      * @throws IOException If the file cannot be accessed.
      */
     @NotNull
-    public static File getSettingsFile() throws IOException
-    {
+    public static File getSettingsFile() throws IOException {
         return getSettingsFile("jxclient.conf");
     }
 
     /**
      * Return the shortcuts file.
-     *
      * @param hostname The hostname of the character; <code>null</code>=global
      * key bindings file.
-     *
      * @param character The character name; <code>null</code>=global key
      * bindings file.
-     *
      * @return The shortcuts file.
-     *
      * @throws IOException If the file cannot be accessed.
      */
     @NotNull
-    public static File getShortcutsFile(@NotNull final CharSequence hostname, @NotNull final CharSequence character) throws IOException
-    {
+    public static File getShortcutsFile(@NotNull final CharSequence hostname, @NotNull final CharSequence character) throws IOException {
         return getSettingsFile("shortcuts-"+encode(hostname)+"-"+encode(character)+".txt");
     }
 
     /**
      * Return the keybindings file.
-     *
      * @param hostname The hostname of the character; <code>null</code>=global
      * key bindings file.
-     *
      * @param character The character name; <code>null</code>=global key
      * bindings file.
-     *
-     * @return The keybindings file; return <code>null</code> if the file
-     * cannot be accessed.
+     * @return The keybindings file; return <code>null</code> if the file cannot
+     *         be accessed.
      */
     @Nullable
-    public static File getKeybindingsFile(@Nullable final CharSequence hostname, @Nullable final CharSequence character)
-    {
-        try
-        {
+    public static File getKeybindingsFile(@Nullable final CharSequence hostname, @Nullable final CharSequence character) {
+        try {
             return getSettingsFile(hostname == null || character == null ? "keybindings.txt" : "keybindings-"+encode(hostname)+"-"+encode(character)+".txt");
-        }
-        catch (final IOException ex)
-        {
+        } catch (final IOException ex) {
             return null;
         }
     }
 
     /**
      * Return the metaserver cache file.
-     *
      * @return The metaserver cache file, or <code>null</code> if the file
-     * cannot be accessed.
+     *         cannot be accessed.
      */
     @Nullable
-    public static File getMetaserverCacheFile()
-    {
-        try
-        {
+    public static File getMetaserverCacheFile() {
+        try {
             return getSettingsFile("metaserver.txt");
-        }
-        catch (final IOException ex)
-        {
+        } catch (final IOException ex) {
             return null;
         }
     }
 
     /**
      * Return the file for storing dialog related information for a skin.
-     *
      * @param skinName Identifies the skin.
-     *
      * @return The file.
-     *
      * @throws IOException If the file cannot be accessed.
      */
     @NotNull
-    public static File getDialogsFile(@NotNull final String skinName) throws IOException
-    {
+    public static File getDialogsFile(@NotNull final String skinName) throws IOException {
         return new File(getSettingsFile("skin_"+skinName), "dialogs.txt");
     }
 
     /**
      * Return a file within the settings directory.
-     *
      * @param filename The filename.
-     *
      * @return The settings file.
-     *
      * @throws IOException If the file cannot be accessed.
      */
     @NotNull
-    public static File getSettingsFile(@NotNull final String filename) throws IOException
-    {
+    public static File getSettingsFile(@NotNull final String filename) throws IOException {
         final File settingsDir = new File(getCrossfireFile(), "jxclient");
-        if (!settingsDir.exists() && !settingsDir.mkdirs())
-        {
+        if (!settingsDir.exists() && !settingsDir.mkdirs()) {
             throw new IOException("cannot create "+settingsDir);
         }
 
@@ -215,17 +169,13 @@ public class Filenames
 
     /**
      * Return the crossfire settings directory.
-     *
      * @return The settings directory.
-     *
      * @throws IOException If the settings directory cannot be located.
      */
     @NotNull
-    private static File getCrossfireFile() throws IOException
-    {
+    private static File getCrossfireFile() throws IOException {
         final String home = System.getProperty("user.home");
-        if (home == null)
-        {
+        if (home == null) {
             throw new IOException("cannot find home directory");
         }
 
@@ -234,33 +184,22 @@ public class Filenames
 
     /**
      * Encode a string to make it safe as a file name.
-     *
      * @param str The string to encode.
-     *
      * @return The encoded string.
      */
     @NotNull
-    private static String encode(@NotNull final CharSequence str)
-    {
+    private static String encode(@NotNull final CharSequence str) {
         final StringBuilder sb = new StringBuilder();
-        for (int i = 0; i < str.length(); i++)
-        {
+        for (int i = 0; i < str.length(); i++) {
             final char ch = str.charAt(i);
-            if (('a' <= ch && ch <= 'z')
-            || ('A' <= ch && ch <= 'Z')
-            || ('0' <= ch && ch <= '9')
-            || ch == '-'
-            || ch == '_'
-            || ch == '.')
-            {
+            if (('a' <= ch && ch <= 'z') || ('A' <= ch && ch <= 'Z') || ('0' <= ch && ch <= '9') || ch == '-' || ch == '_' || ch == '.') {
                 sb.append(ch);
-            }
-            else
-            {
+            } else {
                 sb.append('%');
                 HexCodec.hexEncode2(sb, ch);
             }
         }
         return sb.toString();
     }
+
 }

@@ -33,8 +33,8 @@ import org.jetbrains.annotations.Nullable;
  * Implements the "watch" function for client-sided scripts.
  * @author Andreas Kirschbaum
  */
-public class PacketWatcher
-{
+public class PacketWatcher {
+
     /**
      * The commands to watch for.
      */
@@ -66,38 +66,30 @@ public class PacketWatcher
      * #pattern} is non-<code>null</code>.
      */
     @NotNull
-    private final ReceivedPacketListener receivedPacketListener = new ReceivedPacketListener()
-    {
+    private final ReceivedPacketListener receivedPacketListener = new ReceivedPacketListener() {
         /** {@inheritDoc} */
         @Override
-        public void processEmpty(@NotNull final String command)
-        {
-            if (matchesCommand(command))
-            {
+        public void processEmpty(@NotNull final String command) {
+            if (matchesCommand(command)) {
                 scriptProcess.commandSent("watch "+command);
             }
         }
 
         /** {@inheritDoc} */
         @Override
-        public void processAscii(@NotNull final String command, @NotNull final byte[] packet, final int start, final int end)
-        {
-            if (matchesCommand(command))
-            {
+        public void processAscii(@NotNull final String command, @NotNull final byte[] packet, final int start, final int end) {
+            if (matchesCommand(command)) {
                 scriptProcess.commandSent("watch "+command+" "+new String(packet, start, end-start));
             }
         }
 
         /** {@inheritDoc} */
         @Override
-        public void processShortArray(@NotNull final String command, @NotNull final byte[] packet, final int start, final int end)
-        {
-            if (matchesCommand(command))
-            {
+        public void processShortArray(@NotNull final String command, @NotNull final byte[] packet, final int start, final int end) {
+            if (matchesCommand(command)) {
                 final StringBuilder sb = new StringBuilder("watch ");
                 sb.append(command);
-                for (int i = 0; i < 100 && start+2*i+1 < end; i++)
-                {
+                for (int i = 0; i < 100 && start+2*i+1 < end; i++) {
                     sb.append(' ');
                     sb.append(getShort(packet, start+2*i));
                 }
@@ -107,14 +99,11 @@ public class PacketWatcher
 
         /** {@inheritDoc} */
         @Override
-        public void processIntArray(@NotNull final String command, @NotNull final byte[] packet, final int start, final int end)
-        {
-            if (matchesCommand(command))
-            {
+        public void processIntArray(@NotNull final String command, @NotNull final byte[] packet, final int start, final int end) {
+            if (matchesCommand(command)) {
                 final StringBuilder sb = new StringBuilder("watch ");
                 sb.append(command);
-                for (int i = start; i+3 < end; i += 4)
-                {
+                for (int i = start; i+3 < end; i += 4) {
                     sb.append(' ');
                     sb.append(getInt(packet, i));
                 }
@@ -124,20 +113,16 @@ public class PacketWatcher
 
         /** {@inheritDoc} */
         @Override
-        public void processShortInt(@NotNull final String command, @NotNull final byte[] packet, final int start, final int end)
-        {
-            if (end-start == 6 && matchesCommand(command))
-            {
+        public void processShortInt(@NotNull final String command, @NotNull final byte[] packet, final int start, final int end) {
+            if (end-start == 6 && matchesCommand(command)) {
                 scriptProcess.commandSent("watch "+command+" "+getShort(packet, start)+" "+getInt(packet, start+2));
             }
         }
 
         /** {@inheritDoc} */
         @Override
-        public void processMixed(@NotNull final String command, @NotNull final byte[] packet, final int start, final int end)
-        {
-            if (matchesCommand(command))
-            {
+        public void processMixed(@NotNull final String command, @NotNull final byte[] packet, final int start, final int end) {
+            if (matchesCommand(command)) {
                 final StringBuilder sb = new StringBuilder("watch ");
                 sb.append(command);
                 sb.append(' ');
@@ -147,16 +132,13 @@ public class PacketWatcher
 
         /** {@inheritDoc} */
         @Override
-        public void processStats(@NotNull final String command, final int stat, @NotNull final Object[] args)
-        {
-            if (matchesCommand(command))
-            {
+        public void processStats(@NotNull final String command, final int stat, @NotNull final Object[] args) {
+            if (matchesCommand(command)) {
                 final StringBuilder sb = new StringBuilder("watch ");
                 sb.append(command);
                 sb.append(' ');
                 sb.append(StatUtils.getStatNames(stat));
-                for (final Object arg : args)
-                {
+                for (final Object arg : args) {
                     sb.append(' ');
                     sb.append(arg);
                 }
@@ -166,8 +148,7 @@ public class PacketWatcher
 
         /** {@inheritDoc} */
         @Override
-        public void processNodata(@NotNull final String command, @NotNull final byte[] packet, final int start, final int end)
-        {
+        public void processNodata(@NotNull final String command, @NotNull final byte[] packet, final int start, final int end) {
             processMixed(command, packet, start, end);
         }
 
@@ -177,8 +158,7 @@ public class PacketWatcher
          * @param offset the start start offset of the integer value
          * @return the integer value
          */
-        private int getShort(@NotNull final byte[] packet, final int offset)
-        {
+        private int getShort(@NotNull final byte[] packet, final int offset) {
             return packet[offset]*0x100+packet[offset+1];
         }
 
@@ -188,8 +168,7 @@ public class PacketWatcher
          * @param offset the start start offset of the integer value
          * @return the integer value
          */
-        private int getInt(@NotNull final byte[] packet, final int offset)
-        {
+        private int getInt(@NotNull final byte[] packet, final int offset) {
             return packet[offset]*0x1000000+packet[offset+1]*0x10000+packet[offset+2]*0x100+packet[offset+3];
         }
     };
@@ -199,8 +178,7 @@ public class PacketWatcher
      * @param crossfireServerConnection the server connection to watch
      * @param scriptProcess the script process for sending commands
      */
-    public PacketWatcher(@NotNull final CrossfireServerConnection crossfireServerConnection, @NotNull final ScriptProcess scriptProcess)
-    {
+    public PacketWatcher(@NotNull final CrossfireServerConnection crossfireServerConnection, @NotNull final ScriptProcess scriptProcess) {
         this.crossfireServerConnection = crossfireServerConnection;
         this.scriptProcess = scriptProcess;
         rebuildPattern();
@@ -210,10 +188,8 @@ public class PacketWatcher
      * Releases allocated resources. Must be called before this instance is
      * freed.
      */
-    public void destroy()
-    {
-        if (pattern != null)
-        {
+    public void destroy() {
+        if (pattern != null) {
             pattern = null;
             crossfireServerConnection.removePacketWatcherListener(receivedPacketListener);
         }
@@ -222,27 +198,20 @@ public class PacketWatcher
     /**
      * Rebuilds {@link #pattern} from {@link #commands}.
      */
-    private void rebuildPattern()
-    {
+    private void rebuildPattern() {
         final StringBuilder sb = new StringBuilder();
-        for (final String command : commands)
-        {
+        for (final String command : commands) {
             sb.append(Pattern.quote(command));
             sb.append(".*|");
         }
         final int length = sb.length();
-        if (length <= 0)
-        {
-            if (pattern != null)
-            {
+        if (length <= 0) {
+            if (pattern != null) {
                 pattern = null;
                 crossfireServerConnection.removePacketWatcherListener(receivedPacketListener);
             }
-        }
-        else
-        {
-            if (pattern == null)
-            {
+        } else {
+            if (pattern == null) {
                 crossfireServerConnection.addPacketWatcherListener(receivedPacketListener);
             }
             sb.setLength(length-1);
@@ -254,10 +223,8 @@ public class PacketWatcher
      * Adds a command to watch for.
      * @param command the command
      */
-    public void addCommand(@NotNull final String command)
-    {
-        if (commands.add(command))
-        {
+    public void addCommand(@NotNull final String command) {
+        if (commands.add(command)) {
             rebuildPattern();
         }
     }
@@ -266,10 +233,8 @@ public class PacketWatcher
      * Removes a command to watch for.
      * @param command the command
      */
-    public void removeCommand(@NotNull final String command)
-    {
-        if (commands.remove(command))
-        {
+    public void removeCommand(@NotNull final String command) {
+        if (commands.remove(command)) {
             rebuildPattern();
         }
     }
@@ -279,8 +244,8 @@ public class PacketWatcher
      * @param command the command
      * @return whether the command matches
      */
-    private boolean matchesCommand(@NotNull final CharSequence command)
-    {
+    private boolean matchesCommand(@NotNull final CharSequence command) {
         return pattern.matcher(command).matches();
     }
+
 }

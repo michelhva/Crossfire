@@ -25,12 +25,13 @@ import org.jetbrains.annotations.NotNull;
 
 /**
  * Manages all sounds.
- *
  * @author Andreas Kirschbaum
  */
-public enum Sounds
-{
-    /** A character related sound event. */
+public enum Sounds {
+
+    /**
+     * A character related sound event.
+     */
     CHARACTER;
 
     /**
@@ -50,4 +51,5 @@ public enum Sounds
      */
     @NotNull
     public static final String LEVEL_UP = "level_up";
+
 }

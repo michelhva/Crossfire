@@ -33,15 +33,15 @@ import org.jetbrains.annotations.Nullable;
  * update a {@link Buffer} instance.
  * @author Andreas Kirschbaum
  */
-public class Parser
-{
+public class Parser {
+
     /**
      * Maps font tag name to font instance.
      */
     @NotNull
     private static final Map<String, FontID> fonts = new HashMap<String, FontID>();
-    static
-    {
+
+    static {
         fonts.put("print", FontID.PRINT);
         fonts.put("fixed", FontID.FIXED);
         fonts.put("arcane", FontID.ARCANE);
@@ -54,8 +54,8 @@ public class Parser
      */
     @NotNull
     private static final Map<String, Color> colors = new HashMap<String, Color>();
-    static
-    {
+
+    static {
         colors.put("black", Color.BLACK);
         colors.put("blue", Color.BLUE);
         colors.put("green", Color.GREEN);
@@ -124,16 +124,13 @@ public class Parser
      * @param defaultColor the default color to use
      * @param buffer the buffer to update
      */
-    public void parse(@NotNull final CharSequence text, @Nullable final Color defaultColor, @NotNull final Buffer buffer)
-    {
-        if (text.length() == 0)
-        {
+    public void parse(@NotNull final CharSequence text, @Nullable final Color defaultColor, @NotNull final Buffer buffer) {
+        if (text.length() == 0) {
             return;
         }
 
         resetAttributes(defaultColor);
-        for (final String line : END_OF_LINE_PATTERN.split(text, -1))
-        {
+        for (final String line : END_OF_LINE_PATTERN.split(text, -1)) {
             parseLine(line, defaultColor, buffer);
         }
         buffer.prune();
@@ -145,16 +142,13 @@ public class Parser
      * @param color the color to use
      * @param buffer the buffer to update
      */
-    public void parseWithoutMediaTags(@NotNull final CharSequence text, @NotNull final Color color, @NotNull final Buffer buffer)
-    {
-        if (text.length() == 0)
-        {
+    public void parseWithoutMediaTags(@NotNull final CharSequence text, @NotNull final Color color, @NotNull final Buffer buffer) {
+        if (text.length() == 0) {
             return;
         }
 
         resetAttributes(color);
-        for (final String line : END_OF_LINE_PATTERN.split(text, -1))
-        {
+        for (final String line : END_OF_LINE_PATTERN.split(text, -1)) {
             parseLineWithoutMediaTags(line, buffer);
         }
         buffer.prune();
@@ -166,15 +160,11 @@ public class Parser
      * @param defaultColor the default color to use
      * @param buffer the buffer instance to add to
      */
-    private void parseLine(@NotNull final String text, @Nullable final Color defaultColor, @NotNull final Buffer buffer)
-    {
-        if (lastCount > 0 && text.equals(lastText) && lastColor != null && lastColor.equals(defaultColor))
-        {
+    private void parseLine(@NotNull final String text, @Nullable final Color defaultColor, @NotNull final Buffer buffer) {
+        if (lastCount > 0 && text.equals(lastText) && lastColor != null && lastColor.equals(defaultColor)) {
             lastCount++;
             buffer.replaceLine(parseLine(text+" [["+lastCount+" times]", defaultColor));
-        }
-        else
-        {
+        } else {
             lastCount = 1;
             lastText = text;
             lastColor = defaultColor;
@@ -189,43 +179,33 @@ public class Parser
      * @return the <code>Line</code> instance
      */
     @NotNull
-    private Line parseLine(@NotNull final String text, @Nullable final Color defaultColor)
-    {
+    private Line parseLine(@NotNull final String text, @Nullable final Color defaultColor) {
         final Line line = new Line();
 
         int begin = 0;
         boolean active = false;
         final int imax = text.length();
-        for (int i = 0; i < imax; i++)
-        {
+        for (int i = 0; i < imax; i++) {
             final char ch = text.charAt(i);
-            if (active)
-            {
-                if (ch == ']')
-                {
+            if (active) {
+                if (ch == ']') {
                     processTag(text.substring(begin, i), defaultColor);
                     begin = i+1;
                     active = false;
-                }
-                else if (ch == '[' && i == begin)
-                {
+                } else if (ch == '[' && i == begin) {
                     processText("[", line);
                     begin = i+1;
                     active = false;
                 }
-            }
-            else
-            {
-                if (ch == '[')
-                {
+            } else {
+                if (ch == '[') {
                     processText(text.substring(begin, i), line);
                     begin = i+1;
                     active = true;
                 }
             }
         }
-        if (!active)
-        {
+        if (!active) {
             processText(text.substring(begin, imax), line);
         }
 
@@ -237,17 +217,13 @@ public class Parser
      * @param text the text to process
      * @param buffer the buffer instance to add to
      */
-    private void parseLineWithoutMediaTags(@NotNull final String text, @NotNull final Buffer buffer)
-    {
+    private void parseLineWithoutMediaTags(@NotNull final String text, @NotNull final Buffer buffer) {
         final Line line = new Line();
-        if (lastCount > 0 && text.equals(lastText) && lastColor == null)
-        {
+        if (lastCount > 0 && text.equals(lastText) && lastColor == null) {
             lastCount++;
             processText(text+" ["+lastCount+" times]", line);
             buffer.replaceLine(line);
-        }
-        else
-        {
+        } else {
             lastCount = 1;
             lastText = text;
             lastColor = null;
@@ -260,8 +236,7 @@ public class Parser
      * Resets all attributes to default values.
      * @param defaultColor the default color to use
      */
-    private void resetAttributes(@Nullable final Color defaultColor)
-    {
+    private void resetAttributes(@Nullable final Color defaultColor) {
         bold = false;
         italic = false;
         underline = false;
@@ -275,61 +250,37 @@ public class Parser
      * been removed
      * @param defaultColor the default color to use
      */
-    private void processTag(@NotNull final String tag, @Nullable final Color defaultColor)
-    {
-        if (tag.length() == 0)
-        {
+    private void processTag(@NotNull final String tag, @Nullable final Color defaultColor) {
+        if (tag.length() == 0) {
             return;
         }
 
-        if (tag.equals("b"))
-        {
+        if (tag.equals("b")) {
             bold = true;
-        }
-        else if (tag.equals("/b"))
-        {
+        } else if (tag.equals("/b")) {
             bold = false;
-        }
-        else if (tag.equals("i"))
-        {
+        } else if (tag.equals("i")) {
             italic = true;
-        }
-        else if (tag.equals("/i"))
-        {
+        } else if (tag.equals("/i")) {
             italic = false;
-        }
-        else if (tag.equals("ul"))
-        {
+        } else if (tag.equals("ul")) {
             underline = true;
-        }
-        else if (tag.equals("/ul"))
-        {
+        } else if (tag.equals("/ul")) {
             underline = false;
-        }
-        else if (fonts.containsKey(tag))
-        {
+        } else if (fonts.containsKey(tag)) {
             font = fonts.get(tag);
             assert font != null;
-        }
-        else if (tag.startsWith("color="))
-        {
+        } else if (tag.startsWith("color=")) {
             final String colorName = tag.substring(6).toLowerCase();
-            if (colors.containsKey(colorName))
-            {
+            if (colors.containsKey(colorName)) {
                 color = colors.get(colorName);
                 assert color != null;
-            }
-            else
-            {
+            } else {
                 // ignore unknown color
             }
-        }
-        else if (tag.equals("/color"))
-        {
+        } else if (tag.equals("/color")) {
             color = defaultColor;
-        }
-        else
-        {
+        } else {
             // ignore unknown tag
         }
     }
@@ -339,40 +290,30 @@ public class Parser
      * @param text the text segment to process
      * @param line the line to add to
      */
-    private void processText(@NotNull final String text, @NotNull final Line line)
-    {
-        if (text.length() == 0)
-        {
+    private void processText(@NotNull final String text, @NotNull final Line line) {
+        if (text.length() == 0) {
             return;
         }
 
         final CharSequence newText;
         final Segment prevSegment = line.getLastSegment();
-        if (prevSegment == null || !(prevSegment instanceof TextSegment))
-        {
+        if (prevSegment == null || !(prevSegment instanceof TextSegment)) {
             newText = text;
-        }
-        else
-        {
+        } else {
             final TextSegment prevTextSegment = (TextSegment)prevSegment;
-            if (prevTextSegment.matches(bold, italic, underline, font, color))
-            {
+            if (prevTextSegment.matches(bold, italic, underline, font, color)) {
                 newText = prevTextSegment.getText()+text;
                 line.removeLastSegment();
-            }
-            else
-            {
+            } else {
                 newText = text;
             }
         }
 
         final String[] words = WORD_SEPARATOR_PATTERN.split(newText, -1);
-        for (int i = 0; i < words.length-1; i++)
-        {
+        for (int i = 0; i < words.length-1; i++) {
             line.addSegment(words[i]+" ", bold, italic, underline, font, color);
         }
-        if (words[words.length-1].length() > 0)
-        {
+        if (words[words.length-1].length() > 0) {
             line.addSegment(words[words.length-1], bold, italic, underline, font, color);
         }
     }
@@ -383,18 +324,16 @@ public class Parser
      * @return the string representation
      */
     @NotNull
-    public static String toString(@NotNull final Color color)
-    {
+    public static String toString(@NotNull final Color color) {
         // function need not be efficient since it is used for regression tests
         // only
-        for (final Map.Entry<String, Color> e : colors.entrySet())
-        {
-            if (e.getValue() == color)
-            {
+        for (final Map.Entry<String, Color> e : colors.entrySet()) {
+            if (e.getValue() == color) {
                 return e.getKey();
             }
         }
 
         return "unknown";
     }
+
 }

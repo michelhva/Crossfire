@@ -28,8 +28,8 @@ import org.jetbrains.annotations.NotNull;
  * A {@link GUICommand} which hides a target {@link GUIElement}.
  * @author Andreas Kirschbaum
  */
-public class HideCommand implements GUICommand
-{
+public class HideCommand implements GUICommand {
+
     /**
      * The gui element to hide.
      */
@@ -40,22 +40,24 @@ public class HideCommand implements GUICommand
      * Creates a new instance.
      * @param target The gui element to hide.
      */
-    public HideCommand(@NotNull final GUIElement target)
-    {
+    public HideCommand(@NotNull final GUIElement target) {
         this.target = target;
     }
 
-    /** {@inheritDoc} */
+    /**
+     * {@inheritDoc}
+     */
     @Override
-    public boolean canExecute()
-    {
+    public boolean canExecute() {
         return true;
     }
 
-    /** {@inheritDoc} */
+    /**
+     * {@inheritDoc}
+     */
     @Override
-    public void execute()
-    {
+    public void execute() {
         target.setElementVisible(false);
     }
+
 }

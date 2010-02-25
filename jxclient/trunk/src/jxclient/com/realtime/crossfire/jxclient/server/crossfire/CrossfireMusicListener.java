@@ -25,15 +25,14 @@ import org.jetbrains.annotations.NotNull;
 
 /**
  * Interface for listeners interested in "music" commands.
- *
  * @author Andreas Kirschbaum
  */
-public interface CrossfireMusicListener
-{
+public interface CrossfireMusicListener {
+
     /**
      * A music command has been received.
-     *
      * @param music The music identification.
      */
     void commandMusicReceived(@NotNull String music);
+
 }

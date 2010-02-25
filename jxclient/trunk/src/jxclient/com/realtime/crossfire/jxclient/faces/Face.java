@@ -30,12 +30,11 @@ import org.jetbrains.annotations.Nullable;
  * The face is uniquely identified by a face id; it has a face name and three
  * images (original as sent by the server, scaled for use in map view, scaled
  * for use in magic map view) attached.
- *
  * @author Lauwenmark
  * @author Andreas Kirschbaum
  */
-public class Face
-{
+public class Face {
+
     /**
      * The size of one square in pixels.
      */
@@ -79,8 +78,7 @@ public class Face
      * @param faceName the face name
      * @param faceChecksum the image checksum as sent by the server
      */
-    public Face(final int faceNum, @NotNull final String faceName, final int faceChecksum)
-    {
+    public Face(final int faceNum, @NotNull final String faceName, final int faceChecksum) {
         this.faceNum = faceNum;
         this.faceName = faceName;
         this.faceChecksum = faceChecksum;
@@ -90,8 +88,7 @@ public class Face
      * Sets the images.
      * @param faceImages the images
      */
-    public void setFaceImages(@NotNull final FaceImages faceImages)
-    {
+    public void setFaceImages(@NotNull final FaceImages faceImages) {
         this.faceImages = faceImages;
         final Icon imageIcon = faceImages.getOriginalImageIcon();
         final int width = imageIcon.getIconWidth();
@@ -104,8 +101,7 @@ public class Face
      * Returns the unique face id.
      * @return the face id
      */
-    public int getFaceNum()
-    {
+    public int getFaceNum() {
         return faceNum;
     }
 
@@ -115,8 +111,7 @@ public class Face
      * @return the images or <code>null</code>
      */
     @Nullable
-    public FaceImages getFaceImages()
-    {
+    public FaceImages getFaceImages() {
         return faceImages;
     }
 
@@ -125,8 +120,7 @@ public class Face
      * @return the face name
      */
     @NotNull
-    public String getFaceName()
-    {
+    public String getFaceName() {
         return faceName;
     }
 
@@ -134,16 +128,16 @@ public class Face
      * Returns the face checksum.
      * @return the face checksum
      */
-    public int getFaceChecksum()
-    {
+    public int getFaceChecksum() {
         return faceChecksum;
     }
 
-    /** {@inheritDoc} */
+    /**
+     * {@inheritDoc}
+     */
     @NotNull
     @Override
-    public String toString()
-    {
+    public String toString() {
         return faceName;
     }
 
@@ -151,8 +145,7 @@ public class Face
      * Returns the face width in tiles.
      * @return the tile width
      */
-    public int getTileWidth()
-    {
+    public int getTileWidth() {
         return tileWidth;
     }
 
@@ -160,31 +153,31 @@ public class Face
      * Returns the face height in tiles.
      * @return the tile height
      */
-    public int getTileHeight()
-    {
+    public int getTileHeight() {
         return tileHeight;
     }
 
-    /** {@inheritDoc} */
+    /**
+     * {@inheritDoc}
+     */
     @Override
-    public int hashCode()
-    {
+    public int hashCode() {
         return faceChecksum;
     }
 
-    /** {@inheritDoc} */
+    /**
+     * {@inheritDoc}
+     */
     @Override
-    public boolean equals(@Nullable final Object obj)
-    {
-        if (obj == null)
-        {
+    public boolean equals(@Nullable final Object obj) {
+        if (obj == null) {
             return false;
         }
-        if (obj.getClass() != Face.class)
-        {
+        if (obj.getClass() != Face.class) {
             return false;
         }
         final Face face = (Face)obj;
         return faceNum == face.faceNum;
     }
+
 }

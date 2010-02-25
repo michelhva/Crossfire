@@ -31,8 +31,8 @@ import org.jetbrains.annotations.Nullable;
  * Parser for response lines of metaserver response lines.
  * @author Andreas Kirschbaum
  */
-public class MetaserverEntryParser
-{
+public class MetaserverEntryParser {
+
     /**
      * The default server version if none specified.
      */
@@ -121,8 +121,7 @@ public class MetaserverEntryParser
     /**
      * Creates a new instance.
      */
-    public MetaserverEntryParser()
-    {
+    public MetaserverEntryParser() {
         clear();
     }
 
@@ -132,11 +131,9 @@ public class MetaserverEntryParser
      * @return the metaserver entry or <code>null</code> if the line is invalid
      */
     @Nullable
-    public static MetaserverEntry parseEntry(@NotNull final CharSequence entry)
-    {
+    public static MetaserverEntry parseEntry(@NotNull final CharSequence entry) {
         final String[] entries = FIELD_SEPARATOR_PATTERN.split(entry, -1);
-        if (entries.length != 11)
-        {
+        if (entries.length != 11) {
             return null;
         }
 
@@ -151,8 +148,7 @@ public class MetaserverEntryParser
         final String archbase;
         final String mapbase;
         final String codebase;
-        try
-        {
+        try {
             updateSeconds = Integer.parseInt(entries[0]);
             hostname = entries[1];
             players = Integer.parseInt(entries[2]);
@@ -164,9 +160,7 @@ public class MetaserverEntryParser
             archbase = entries[8];
             codebase = entries[9];
             mapbase = entries[10];
-        }
-        catch (final NumberFormatException ex)
-        {
+        } catch (final NumberFormatException ex) {
             return null;
         }
 
@@ -181,117 +175,67 @@ public class MetaserverEntryParser
      * @throws IOException if the response line is invalid
      */
     @Nullable
-    public MetaserverEntry parseLine(@NotNull final String line) throws IOException
-    {
-        if (inSection)
-        {
-            if (line.equals("END_SERVER_DATA"))
-            {
+    public MetaserverEntry parseLine(@NotNull final String line) throws IOException {
+        if (inSection) {
+            if (line.equals("END_SERVER_DATA")) {
                 @Nullable final MetaserverEntry metaserverEntry;
-                if (hostname == null)
-                {
+                if (hostname == null) {
                     System.err.println("Warning: metaserver response missing hostname field, skipping");
                     metaserverEntry = null;
-                }
-                else
-                {
+                } else {
                     metaserverEntry = new MetaserverEntry(updateSeconds, hostname, players, version, comment, bytesIn, bytesOut, uptimeSeconds, archbase, mapbase, codebase);
                 }
                 clear();
                 inSection = false;
                 return metaserverEntry;
-            }
-            else
-            {
+            } else {
                 final String[] tmp = line.split("=", 2);
-                if (tmp.length == 2)
-                {
+                if (tmp.length == 2) {
                     final String key = tmp[0];
                     final String value = tmp[1];
-                    if (key.equals("hostname"))
-                    {
+                    if (key.equals("hostname")) {
                         hostname = value;
-                    }
-                    else if (key.equals("port"))
-                    {
-                    }
-                    else if (key.equals("html_comment"))
-                    {
+                    } else if (key.equals("port")) {
+                    } else if (key.equals("html_comment")) {
                         comment = value;
-                    }
-                    else if (key.equals("text_comment"))
-                    {
-                        if (comment.length() == 0)
-                        {
+                    } else if (key.equals("text_comment")) {
+                        if (comment.length() == 0) {
                             comment = value;
                         }
-                    }
-                    else if (key.equals("archbase"))
-                    {
+                    } else if (key.equals("archbase")) {
                         archbase = value;
-                    }
-                    else if (key.equals("mapbase"))
-                    {
+                    } else if (key.equals("mapbase")) {
                         mapbase = value;
-                    }
-                    else if (key.equals("codebase"))
-                    {
+                    } else if (key.equals("codebase")) {
                         codebase = value;
-                    }
-                    else if (key.equals("num_players"))
-                    {
+                    } else if (key.equals("num_players")) {
                         players = NumberParser.parseInt(value, 0);
-                    }
-                    else if (key.equals("in_bytes"))
-                    {
+                    } else if (key.equals("in_bytes")) {
                         bytesIn = NumberParser.parseLong(value, 0);
-                    }
-                    else if (key.equals("out_bytes"))
-                    {
+                    } else if (key.equals("out_bytes")) {
                         bytesOut = NumberParser.parseLong(value, 0);
-                    }
-                    else if (key.equals("uptime"))
-                    {
+                    } else if (key.equals("uptime")) {
                         uptimeSeconds = NumberParser.parseInt(value, 0);
-                    }
-                    else if (key.equals("version"))
-                    {
+                    } else if (key.equals("version")) {
                         version = value;
-                    }
-                    else if (key.equals("sc_version"))
-                    {
-                    }
-                    else if (key.equals("cs_version"))
-                    {
-                    }
-                    else if (key.equals("last_update"))
-                    {
+                    } else if (key.equals("sc_version")) {
+                    } else if (key.equals("cs_version")) {
+                    } else if (key.equals("last_update")) {
                         final long now = (System.currentTimeMillis()+500)/1000;
                         final long uptime = NumberParser.parseLong(value, now);
                         updateSeconds = Math.max((int)((uptime-now)/1000), 0);
-                    }
-                    else if (key.equals("flags"))
-                    {
-                    }
-                    else
-                    {
+                    } else if (key.equals("flags")) {
+                    } else {
                         System.err.println("Ignoring unknown key: "+key);
                     }
-                }
-                else
-                {
+                } else {
                     throw new IOException("syntax error: "+line);
                 }
             }
-        }
-        else
-        {
-            if (line.equals("START_SERVER_DATA"))
-            {
+        } else {
+            if (line.equals("START_SERVER_DATA")) {
                 inSection = true;
-            }
-            else
-            {
+            } else {
                 throw new IOException("syntax error: "+line);
             }
         }
@@ -303,8 +247,7 @@ public class MetaserverEntryParser
      * Resets values for the current server entry. Will be called whenever
      * parsing of a new entry starts.
      */
-    private void clear()
-    {
+    private void clear() {
         updateSeconds = 0;
         hostname = null;
         players = 0;
@@ -325,8 +268,7 @@ public class MetaserverEntryParser
      * @return The formatted entry.
      */
     @NotNull
-    public static String format(@NotNull final MetaserverEntry entry)
-    {
+    public static String format(@NotNull final MetaserverEntry entry) {
         return entry.getUpdateSeconds()+"|"+replace(entry.getHostname())+"|"+entry.getPlayers()+"|"+replace(entry.getVersion())+"|"+replace(entry.getComment())+"|"+entry.getBytesIn()+"|"+entry.getBytesOut()+"|"+entry.getUptimeSeconds()+"|"+replace(entry.getArchbase())+"|"+replace(entry.getCodebase())+"|"+replace(entry.getMapbase());
     }
 
@@ -336,8 +278,8 @@ public class MetaserverEntryParser
      * @return The replaced string.
      */
     @NotNull
-    private static String replace(@NotNull final String str)
-    {
+    private static String replace(@NotNull final String str) {
         return str.replaceAll("[\\|\r\n]", " ");
     }
+
 }

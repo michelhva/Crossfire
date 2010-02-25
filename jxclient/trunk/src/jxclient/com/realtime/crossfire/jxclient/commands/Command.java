@@ -25,22 +25,20 @@ import org.jetbrains.annotations.NotNull;
 
 /**
  * Implements a client-side command.
- *
  * @author Andreas Kirschbaum
  */
-public interface Command
-{
+public interface Command {
+
     /**
      * Return whether all remaining commands should be included as arguments.
-     *
      * @return Whether all remaining commands should be included as arguments.
      */
     boolean allArguments();
 
     /**
      * Execute the command with the given arguments.
-     *
      * @param args The command arguments.
      */
     void execute(@NotNull String args);
+
 }

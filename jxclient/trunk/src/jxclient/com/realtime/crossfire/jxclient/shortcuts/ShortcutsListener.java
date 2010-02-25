@@ -19,7 +19,6 @@
  * Copyright (C) 2006-2010 Andreas Kirschbaum.
  */
 
-
 package com.realtime.crossfire.jxclient.shortcuts;
 
 import java.util.EventListener;
@@ -27,11 +26,10 @@ import org.jetbrains.annotations.NotNull;
 
 /**
  * Interface for listeners for {@link Shortcut} changes.
- *
  * @author Andreas Kirschbaum
  */
-public interface ShortcutsListener extends EventListener
-{
+public interface ShortcutsListener extends EventListener {
+
     /**
      * A shortcut has been added.
      * @param index the shortcut index
@@ -45,4 +43,5 @@ public interface ShortcutsListener extends EventListener
      * @param shortcut the shortcut instance
      */
     void shortcutRemoved(int index, @NotNull Shortcut shortcut);
+
 }

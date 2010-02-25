@@ -30,11 +30,10 @@ import org.jetbrains.annotations.NotNull;
  * Manages a list of timeouts. Client code can register timeouts with {@link
  * #add(int, TimeoutEvent)} or {@link #reset(int, TimeoutEvent)}. These timeout
  * events are called after the given timeout has expired.
- *
  * @author Andreas Kirschbaum
  */
-public class Timeouts
-{
+public class Timeouts {
+
     /**
      * Contains all pending timeout events. The head element is the next event
      * to deliver.
@@ -53,82 +52,62 @@ public class Timeouts
      * The thread that delivers timeout events.
      */
     @NotNull
-    private static final Thread deliverPendingTimeouts = new Thread()
-    {
+    private static final Thread deliverPendingTimeouts = new Thread() {
         /** {@inheritDoc} */
         @Override
-        public void run()
-        {
+        public void run() {
             boolean doWait = true;
-            while (!isInterrupted())
-            {
+            while (!isInterrupted()) {
                 final Event event;
                 final boolean execute;
-                synchronized (events)
-                {
-                    if (doWait)
-                    {
+                synchronized (events) {
+                    if (doWait) {
                         doWait = false;
                         final Event tmp = events.peek();
-                        try
-                        {
-                            if (tmp == null)
-                            {
+                        try {
+                            if (tmp == null) {
                                 events.wait();
-                            }
-                            else
-                            {
+                            } else {
                                 events.wait(tmp.getTimeout()-System.currentTimeMillis());
                             }
-                        }
-                        catch (final InterruptedException ex)
-                        {
+                        } catch (final InterruptedException ex) {
                             break;
                         }
                     }
 
                     event = events.peek();
                     execute = event != null && event.getTimeout() <= System.currentTimeMillis();
-                    if (execute)
-                    {
+                    if (execute) {
                         events.poll();
                     }
                 }
-                if (execute)
-                {
+                if (execute) {
                     event.getTimeoutEvent().timeout();
-                }
-                else
-                {
+                } else {
                     doWait = true;
                 }
             }
         }
     };
-    static
-    {
+
+    static {
         deliverPendingTimeouts.start();
     }
 
     /**
      * Private constructor to prevent instantiation.
      */
-    private Timeouts()
-    {
+    private Timeouts() {
     }
 
     /**
-     * Set the timeout value for a given event. If the event is not yet
-     * pending, it is added.
-     *
+     * Set the timeout value for a given event. If the event is not yet pending,
+     * it is added.
      * @param timeout The new timeout in milliseconds.
-     *
      * @param timeoutEvent The timeout event to execute.
      */
-    public static void reset(final int timeout, @NotNull final TimeoutEvent timeoutEvent)
-    {
-        synchronized (events)
-        {
+    public static void reset(final int timeout, @NotNull final TimeoutEvent timeoutEvent) {
+        synchronized (events) {
             remove(timeoutEvent);
             add(timeout, timeoutEvent);
         }
@@ -136,15 +115,11 @@ public class Timeouts
 
     /**
      * Add a timeout event.
-     *
      * @param timeout The timeout in milliseconds.
-     *
      * @param timeoutEvent The timeout event to execute.
      */
-    private static void add(final int timeout, @NotNull final TimeoutEvent timeoutEvent)
-    {
-        synchronized (events)
-        {
+    private static void add(final int timeout, @NotNull final TimeoutEvent timeoutEvent) {
+        synchronized (events) {
             assert !timeoutEvents.containsKey(timeoutEvent);
 
             final Event event = new Event(timeout, timeoutEvent);
@@ -157,16 +132,12 @@ public class Timeouts
     /**
      * Remove a timeout event. If the timeout event is not active, nothing
      * happens.
-     *
      * @param timeoutEvent The timeout event to remove.
      */
-    public static void remove(@NotNull final TimeoutEvent timeoutEvent)
-    {
-        synchronized (events)
-        {
+    public static void remove(@NotNull final TimeoutEvent timeoutEvent) {
+        synchronized (events) {
             final Event event = timeoutEvents.remove(timeoutEvent);
-            if (event != null)
-            {
+            if (event != null) {
                 events.remove(event);
             }
         }

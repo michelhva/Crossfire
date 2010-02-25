@@ -19,7 +19,6 @@
  * Copyright (C) 2006-2010 Andreas Kirschbaum.
  */
 
-
 package com.realtime.crossfire.jxclient.items;
 
 import java.util.EventListener;
@@ -28,11 +27,12 @@ import java.util.EventListener;
  * Interface for listeners for changes of current floor.
  * @author Andreas Kirschbaum
  */
-public interface CurrentFloorListener extends EventListener
-{
+public interface CurrentFloorListener extends EventListener {
+
     /**
      * Will be called when the current floor has changed.
      * @param currentFloor the new current floor
      */
     void currentFloorChanged(int currentFloor);
+
 }

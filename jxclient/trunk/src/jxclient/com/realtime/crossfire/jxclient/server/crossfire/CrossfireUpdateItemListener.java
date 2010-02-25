@@ -27,8 +27,8 @@ import org.jetbrains.annotations.NotNull;
  * Interface for listeners interested in item related commands.
  * @author Andreas Kirschbaum
  */
-public interface CrossfireUpdateItemListener
-{
+public interface CrossfireUpdateItemListener {
+
     /**
      * A "delinv" command has been received.
      * @param tag the item tag
@@ -86,4 +86,5 @@ public interface CrossfireUpdateItemListener
      * @param valNrof the number of items
      */
     void upditemReceived(int flags, int tag, int valLocation, int valFlags, int valWeight, int valFaceNum, @NotNull String valName, @NotNull String valNamePl, int valAnim, int valAnimSpeed, int valNrof);
+
 }

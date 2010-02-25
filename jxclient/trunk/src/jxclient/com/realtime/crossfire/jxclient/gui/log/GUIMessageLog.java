@@ -32,8 +32,8 @@ import org.jetbrains.annotations.NotNull;
  * A gui element implementing the message window.
  * @author Andreas Kirschbaum
  */
-public class GUIMessageLog extends GUILog
-{
+public class GUIMessageLog extends GUILog {
+
     /**
      * The serial version UID.
      */
@@ -61,16 +61,16 @@ public class GUIMessageLog extends GUILog
      * @param defaultColor the default color to use for text message not
      * specifying a color
      */
-    public GUIMessageLog(@NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final String name, final int x, final int y, final int w, final int h, @NotNull final CrossfireServerConnection crossfireServerConnection, @NotNull final Image backgroundImage, @NotNull final Fonts fonts, @NotNull final Color defaultColor)
-    {
+    public GUIMessageLog(@NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final String name, final int x, final int y, final int w, final int h, @NotNull final CrossfireServerConnection crossfireServerConnection, @NotNull final Image backgroundImage, @NotNull final Fonts fonts, @NotNull final Color defaultColor) {
         super(tooltipManager, elementListener, name, x, y, w, h, backgroundImage, fonts);
         messageBufferUpdater = new MessageBufferUpdater(crossfireServerConnection, buffer, defaultColor);
     }
 
-    /** {@inheritDoc} */
+    /**
+     * {@inheritDoc}
+     */
     @Override
-    public void dispose()
-    {
+    public void dispose() {
         super.dispose();
         messageBufferUpdater.dispose();
     }
@@ -80,8 +80,7 @@ public class GUIMessageLog extends GUILog
      * @param index the color index to change
      * @param color the color to map to
      */
-    public void setColor(final int index, @NotNull final Color color)
-    {
+    public void setColor(final int index, @NotNull final Color color) {
         messageBufferUpdater.setColor(index, color);
     }
 
@@ -89,8 +88,8 @@ public class GUIMessageLog extends GUILog
      * Sets the message types to show.
      * @param types the types to show
      */
-    public void setTypes(final int types)
-    {
+    public void setTypes(final int types) {
         messageBufferUpdater.setTypes(types);
     }
+
 }

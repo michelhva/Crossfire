@@ -31,20 +31,18 @@ import org.jetbrains.annotations.NotNull;
  * Regression tests for class {@link Orientation} and implementing classes.
  * @author Andreas Kirschbaum
  */
-public class OrientationTest extends TestCase
-{
+public class OrientationTest extends TestCase {
+
     /**
      * Creates a new instance.
      * @param name the test case name
      */
-    public OrientationTest(@NotNull final String name)
-    {
+    public OrientationTest(@NotNull final String name) {
         super(name);
     }
 
     @NotNull
-    public static Test suite()
-    {
+    public static Test suite() {
         return new TestSuite(OrientationTest.class);
     }
 
@@ -52,8 +50,7 @@ public class OrientationTest extends TestCase
      * Runs the regression tests.
      * @param args the command line arguments (ignored)
      */
-    public static void main(@NotNull final String[] args)
-    {
+    public static void main(@NotNull final String[] args) {
         TestRunner.run(suite());
     }
 
@@ -62,22 +59,19 @@ public class OrientationTest extends TestCase
      * @throws IllegalAccessException if the test failed
      * @throws InstantiationException if the test failed
      */
-    public void testOrientations() throws IllegalAccessException, InstantiationException
-    {
+    public void testOrientations() throws IllegalAccessException, InstantiationException {
         check(OrientationWE.class, true, false);
         check(OrientationEW.class, true, true);
         check(OrientationNS.class, false, false);
         check(OrientationSN.class, false, true);
     }
 
-    private static void check(@NotNull final Class<? extends Orientation> class_, final boolean useX, final boolean flip) throws IllegalAccessException, InstantiationException
-    {
+    private static void check(@NotNull final Class<? extends Orientation> class_, final boolean useX, final boolean flip) throws IllegalAccessException, InstantiationException {
         checkPositive(class_, useX, flip);
         checkNegative(class_, useX, flip);
     }
 
-    private static void checkPositive(@NotNull final Class<? extends Orientation> class_, final boolean useX, final boolean flip) throws IllegalAccessException, InstantiationException
-    {
+    private static void checkPositive(@NotNull final Class<? extends Orientation> class_, final boolean useX, final boolean flip) throws IllegalAccessException, InstantiationException {
         final Orientation o = class_.newInstance();
         o.setHasNegativeImage(false);
         o.setExtends(useX ? 100 : 32, useX ? 32 : 100);
@@ -108,8 +102,7 @@ public class OrientationTest extends TestCase
         check(o, useX, flip, true, 0, 0, 0, 32, false);
     }
 
-    private static void checkNegative(@NotNull final Class<? extends Orientation> class_, final boolean useX, final boolean flip) throws IllegalAccessException, InstantiationException
-    {
+    private static void checkNegative(@NotNull final Class<? extends Orientation> class_, final boolean useX, final boolean flip) throws IllegalAccessException, InstantiationException {
         final Orientation o = class_.newInstance();
         o.setHasNegativeImage(true);
         o.setExtends(useX ? 100 : 32, useX ? 32 : 100);
@@ -140,8 +133,7 @@ public class OrientationTest extends TestCase
         check(o, useX, flip, true, 0, 0, 100, 32, true);
     }
 
-    private static void check(@NotNull final Orientation o, final boolean useX, final boolean flip, final boolean valid, final int x, final int y, final int w, final int h, final boolean negativeImage)
-    {
+    private static void check(@NotNull final Orientation o, final boolean useX, final boolean flip, final boolean valid, final int x, final int y, final int w, final int h, final boolean negativeImage) {
         final int isX = useX ? o.getX() : o.getY();
         final int isY = useX ? o.getY() : o.getX();
         final int isW = useX ? o.getW() : o.getH();
@@ -153,4 +145,5 @@ public class OrientationTest extends TestCase
         assertEquals(h, isH);
         assertEquals(negativeImage, o.isNegativeImage());
     }
+
 }

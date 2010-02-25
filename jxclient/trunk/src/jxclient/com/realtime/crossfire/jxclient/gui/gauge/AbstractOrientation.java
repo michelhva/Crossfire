@@ -25,8 +25,8 @@ package com.realtime.crossfire.jxclient.gui.gauge;
  * Abstract base class for implementing {@link Orientation} instances.
  * @author Andreas Kirschbaum
  */
-public abstract class AbstractOrientation implements Orientation
-{
+public abstract class AbstractOrientation implements Orientation {
+
     /**
      * The total width of the image.
      */
@@ -82,16 +82,15 @@ public abstract class AbstractOrientation implements Orientation
     /**
      * Creates a new instance.
      */
-    protected AbstractOrientation()
-    {
+    protected AbstractOrientation() {
     }
 
-    /** {@inheritDoc} */
+    /**
+     * {@inheritDoc}
+     */
     @Override
-    public void setHasNegativeImage(final boolean hasNegativeImage)
-    {
-        if (this.hasNegativeImage == hasNegativeImage)
-        {
+    public void setHasNegativeImage(final boolean hasNegativeImage) {
+        if (this.hasNegativeImage == hasNegativeImage) {
             return;
         }
 
@@ -99,12 +98,12 @@ public abstract class AbstractOrientation implements Orientation
         recalc();
     }
 
-    /** {@inheritDoc} */
+    /**
+     * {@inheritDoc}
+     */
     @Override
-    public boolean setValues(final int cur, final int min, final int max)
-    {
-        if (this.cur == cur && this.min == min && this.max == max)
-        {
+    public boolean setValues(final int cur, final int min, final int max) {
+        if (this.cur == cur && this.min == min && this.max == max) {
             return false;
         }
 
@@ -115,12 +114,12 @@ public abstract class AbstractOrientation implements Orientation
         return true;
     }
 
-    /** {@inheritDoc} */
+    /**
+     * {@inheritDoc}
+     */
     @Override
-    public void setExtends(final int width, final int height)
-    {
-        if (this.width == width && this.height == height)
-        {
+    public void setExtends(final int width, final int height) {
+        if (this.width == width && this.height == height) {
             return;
         }
 
@@ -129,45 +128,51 @@ public abstract class AbstractOrientation implements Orientation
         recalc();
     }
 
-    /** {@inheritDoc} */
+    /**
+     * {@inheritDoc}
+     */
     @Override
-    public int getX()
-    {
+    public int getX() {
         return x;
     }
 
-    /** {@inheritDoc} */
+    /**
+     * {@inheritDoc}
+     */
     @Override
-    public int getY()
-    {
+    public int getY() {
         return y;
     }
 
-    /** {@inheritDoc} */
+    /**
+     * {@inheritDoc}
+     */
     @Override
-    public int getW()
-    {
+    public int getW() {
         return w;
     }
 
-    /** {@inheritDoc} */
+    /**
+     * {@inheritDoc}
+     */
     @Override
-    public int getH()
-    {
+    public int getH() {
         return h;
     }
 
-    /** {@inheritDoc} */
+    /**
+     * {@inheritDoc}
+     */
     @Override
-    public boolean isNegativeImage()
-    {
+    public boolean isNegativeImage() {
         return cur < min && hasNegativeImage;
     }
 
-    /** {@inheritDoc} */
+    /**
+     * {@inheritDoc}
+     */
     @Override
-    public boolean isValid()
-    {
+    public boolean isValid() {
         return min < max;
     }
 
@@ -184,19 +189,14 @@ public abstract class AbstractOrientation implements Orientation
      * @param size the size of the result
      * @return the fraction in pixels
      */
-    protected static int calc(final int val, final int max, final int size)
-    {
-        if (val <= 0 || max <= 0)
-        {
+    protected static int calc(final int val, final int max, final int size) {
+        if (val <= 0 || max <= 0) {
             return 0;
-        }
-        else if (val >= max)
-        {
+        } else if (val >= max) {
             return size;
-        }
-        else
-        {
+        } else {
             return (size*val+max/2)/max;
         }
     }
+
 }

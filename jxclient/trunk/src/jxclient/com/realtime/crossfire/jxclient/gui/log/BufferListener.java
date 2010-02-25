@@ -26,14 +26,12 @@ import org.jetbrains.annotations.NotNull;
 
 /**
  * Interface for listeners for changes of {@link Buffer} contents.
- *
  * @author Andreas Kirschbaum
  */
-public interface BufferListener
-{
+public interface BufferListener {
+
     /**
      * Some lines have been added to the buffer.
-     *
      * @param lines The number of lines that have been added to the end of the
      * buffer.
      */
@@ -41,7 +39,6 @@ public interface BufferListener
 
     /**
      * Some lines have been replaced at the end of the buffer.
-     *
      * @param lines The number of lines that have been replaced at the end of
      * the buffer.
      */
@@ -49,9 +46,9 @@ public interface BufferListener
 
     /**
      * Some lines have been removed from the buffer.
-     *
      * @param lines The lines that have been removed from the beginning of the
      * buffer.
      */
     void linesRemoved(@NotNull List<Line> lines);
+
 }

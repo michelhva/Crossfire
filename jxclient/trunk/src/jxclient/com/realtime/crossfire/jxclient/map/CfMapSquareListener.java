@@ -27,11 +27,12 @@ import org.jetbrains.annotations.NotNull;
  * Interface for listeners interested in {@link CfMapSquare} events.
  * @author Andreas Kirschbaum
  */
-public interface CfMapSquareListener
-{
+public interface CfMapSquareListener {
+
     /**
      * The map square has changed.
      * @param mapSquare the changed map square
      */
     void squareModified(@NotNull CfMapSquare mapSquare);
+
 }

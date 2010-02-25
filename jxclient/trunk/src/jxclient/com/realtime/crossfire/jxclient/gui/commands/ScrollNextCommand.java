@@ -28,8 +28,8 @@ import org.jetbrains.annotations.NotNull;
  * A {@link GUICommand} which transfers the focus between two gui elements.
  * @author Andreas Kirschbaum
  */
-public class ScrollNextCommand implements GUICommand
-{
+public class ScrollNextCommand implements GUICommand {
+
     /**
      * The element to activate.
      */
@@ -47,26 +47,27 @@ public class ScrollNextCommand implements GUICommand
      * @param nextElement the element to activate
      * @param prevElement the element to deactivate
      */
-    public ScrollNextCommand(@NotNull final ActivatableGUIElement nextElement, @NotNull final ActivatableGUIElement prevElement)
-    {
+    public ScrollNextCommand(@NotNull final ActivatableGUIElement nextElement, @NotNull final ActivatableGUIElement prevElement) {
         this.nextElement = nextElement;
         this.prevElement = prevElement;
     }
 
-    /** {@inheritDoc} */
+    /**
+     * {@inheritDoc}
+     */
     @Override
-    public boolean canExecute()
-    {
+    public boolean canExecute() {
         return true;
     }
 
-    /** {@inheritDoc} */
+    /**
+     * {@inheritDoc}
+     */
     @Override
-    public void execute()
-    {
-        if (prevElement.isActive())
-        {
+    public void execute() {
+        if (prevElement.isActive()) {
             nextElement.setActive(true);
         }
     }
+
 }

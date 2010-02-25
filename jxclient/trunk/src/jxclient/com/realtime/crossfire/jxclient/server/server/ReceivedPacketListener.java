@@ -27,8 +27,8 @@ import org.jetbrains.annotations.NotNull;
  * Interface for listeners interested in received packets.
  * @author Andreas Kirschbaum
  */
-public interface ReceivedPacketListener
-{
+public interface ReceivedPacketListener {
+
     /**
      * A packet having no parameters has been received.
      * @param command the command string
@@ -97,4 +97,5 @@ public interface ReceivedPacketListener
      * @param end the end of the packet data
      */
     void processNodata(@NotNull String command, @NotNull byte[] packet, int start, int end);
+
 }

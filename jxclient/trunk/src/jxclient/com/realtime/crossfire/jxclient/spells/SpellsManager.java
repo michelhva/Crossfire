@@ -37,12 +37,11 @@ import org.jetbrains.annotations.NotNull;
 
 /**
  * Manages all known spells.
- *
  * @author Lauwenmark
  * @author Andreas Kirschbaum
  */
-public class SpellsManager
-{
+public class SpellsManager {
+
     /**
      * All known spells.
      */
@@ -60,8 +59,8 @@ public class SpellsManager
     private final Collection<SpellsManagerListener> listeners = new ArrayList<SpellsManagerListener>();
 
     /**
-     * A {@link Comparator} to compare {@link Spell} instances by spell path
-     * and name.
+     * A {@link Comparator} to compare {@link Spell} instances by spell path and
+     * name.
      */
     @NotNull
     private final Comparator<Spell> spellNameComparator = new SpellComparator();
@@ -70,26 +69,22 @@ public class SpellsManager
      * The listener to receive updates for spell information.
      */
     @NotNull
-    private final CrossfireSpellListener crossfireSpellListener = new CrossfireSpellListener()
-    {
+    private final CrossfireSpellListener crossfireSpellListener = new CrossfireSpellListener() {
         /** {@inheritDoc} */
         @Override
-        public void addSpell(final int tag, final int level, final int castingTime, final int mana, final int grace, final int damage, final int skill, final int path, final int face, @NotNull final String name, @NotNull final String message)
-        {
+        public void addSpell(final int tag, final int level, final int castingTime, final int mana, final int grace, final int damage, final int skill, final int path, final int face, @NotNull final String name, @NotNull final String message) {
             SpellsManager.this.addSpell(tag, level, castingTime, mana, grace, damage, skill, path, face, name, message);
         }
 
         /** {@inheritDoc} */
         @Override
-        public void deleteSpell(final int tag)
-        {
+        public void deleteSpell(final int tag) {
             SpellsManager.this.deleteSpell(tag);
         }
 
         /** {@inheritDoc} */
         @Override
-        public void updateSpell(final int flags, final int tag, final int mana, final int grace, final int damage)
-        {
+        public void updateSpell(final int flags, final int tag, final int mana, final int grace, final int damage) {
             SpellsManager.this.updateSpell(flags, tag, mana, grace, damage);
         }
     };
@@ -99,54 +94,46 @@ public class SpellsManager
      * connections.
      */
     @NotNull
-    private final GuiStateListener guiStateListener = new GuiStateListener()
-    {
+    private final GuiStateListener guiStateListener = new GuiStateListener() {
         /** {@inheritDoc} */
         @Override
-        public void start()
-        {
+        public void start() {
             // ignore
         }
 
         /** {@inheritDoc} */
         @Override
-        public void metaserver()
-        {
+        public void metaserver() {
             // ignore
         }
 
         /** {@inheritDoc} */
         @Override
-        public void preConnecting(@NotNull final String serverInfo)
-        {
+        public void preConnecting(@NotNull final String serverInfo) {
             // ignore
         }
 
         /** {@inheritDoc} */
         @Override
-        public void connecting(@NotNull final String serverInfo)
-        {
+        public void connecting(@NotNull final String serverInfo) {
             spells.clear();
         }
 
         /** {@inheritDoc} */
         @Override
-        public void connecting(@NotNull final ClientSocketState clientSocketState)
-        {
+        public void connecting(@NotNull final ClientSocketState clientSocketState) {
             // ignore
         }
 
         /** {@inheritDoc} */
         @Override
-        public void connected()
-        {
+        public void connected() {
             // ignore
         }
 
         /** {@inheritDoc} */
         @Override
-        public void connectFailed(@NotNull final String reason)
-        {
+        public void connectFailed(@NotNull final String reason) {
             // ignore
         }
     };
@@ -156,33 +143,27 @@ public class SpellsManager
      * @param crossfireServerConnection the connection to listen on
      * @param guiStateManager the gui state manager to watch
      */
-    public SpellsManager(@NotNull final CrossfireServerConnection crossfireServerConnection, @NotNull final GuiStateManager guiStateManager)
-    {
+    public SpellsManager(@NotNull final CrossfireServerConnection crossfireServerConnection, @NotNull final GuiStateManager guiStateManager) {
         initSpells();
         crossfireServerConnection.addCrossfireSpellListener(crossfireSpellListener);
         guiStateManager.addGuiStateListener(guiStateListener);
     }
 
-    public void addCrossfireSpellChangedListener(@NotNull final SpellsManagerListener listener)
-    {
+    public void addCrossfireSpellChangedListener(@NotNull final SpellsManagerListener listener) {
         listeners.add(listener);
     }
 
-    public void removeCrossfireSpellChangedListener(@NotNull final SpellsManagerListener listener)
-    {
+    public void removeCrossfireSpellChangedListener(@NotNull final SpellsManagerListener listener) {
         listeners.remove(listener);
     }
 
     @NotNull
-    public List<Spell> getSpellList()
-    {
+    public List<Spell> getSpellList() {
         return spells;
     }
 
-    private void initSpells()
-    {
-        for (int i = spells.size()-1; i >= 0; i--)
-        {
+    private void initSpells() {
+        for (int i = spells.size()-1; i >= 0; i--) {
             deleteSpellByIndex(i);
         }
     }
@@ -202,35 +183,27 @@ public class SpellsManager
      * @param spellName the spell's name
      * @param message the spells' description
      */
-    private void addSpell(final int tag, final int level, final int castingTime, final int mana, final int grace, final int damage, final int skill, final int path, final int faceNum, @NotNull final String spellName, @NotNull final String message)
-    {
+    private void addSpell(final int tag, final int level, final int castingTime, final int mana, final int grace, final int damage, final int skill, final int path, final int faceNum, @NotNull final String spellName, @NotNull final String message) {
         final Spell key = new Spell(spellName);
         key.setParameters(faceNum, tag, message, level, castingTime, mana, grace, damage, skill, path); // set spell path which is unsed in the comparator
 
         final int index = Collections.binarySearch(spells, key, spellNameComparator);
         final Spell spell;
-        if (index < 0)
-        {
+        if (index < 0) {
             final Spell existingSpell = unknownSpells.remove(spellName);
-            if (existingSpell != null)
-            {
+            if (existingSpell != null) {
                 spell = existingSpell;
                 spell.setParameters(faceNum, tag, message, level, castingTime, mana, grace, damage, skill, path);
-            }
-            else
-            {
+            } else {
                 spell = key;
             }
             spells.add(-index-1, spell);
-        }
-        else
-        {
+        } else {
             spell = spells.get(index);
             spell.setParameters(faceNum, tag, message, level, castingTime, mana, grace, damage, skill, path);
         }
 
-        for (final SpellsManagerListener listener : listeners)
-        {
+        for (final SpellsManagerListener listener : listeners) {
             listener.spellAdded(spell, index);
         }
     }
@@ -243,12 +216,9 @@ public class SpellsManager
      * @param grace the spell's new grace cost
      * @param damage the spell's new damage
      */
-    private void updateSpell(final int flags, final int tag, final int mana, final int grace, final int damage)
-    {
-        for (final Spell spell : spells)
-        {
-            if (spell.getTag() == tag)
-            {
+    private void updateSpell(final int flags, final int tag, final int mana, final int grace, final int damage) {
+        for (final Spell spell : spells) {
+            if (spell.getTag() == tag) {
                 spell.updateParameters((flags&CrossfireSpellListener.UPD_SP_MANA) != 0, mana, (flags&CrossfireSpellListener.UPD_SP_GRACE) != 0, grace, (flags&CrossfireSpellListener.UPD_SP_DAMAGE) != 0, damage);
                 break;
             }
@@ -259,13 +229,10 @@ public class SpellsManager
      * Deletes a spell.
      * @param tag the spell's tag
      */
-    private void deleteSpell(final int tag)
-    {
+    private void deleteSpell(final int tag) {
         int index = 0;
-        for (final Spell spell : spells)
-        {
-            if (spell.getTag() == tag)
-            {
+        for (final Spell spell : spells) {
+            if (spell.getTag() == tag) {
                 deleteSpellByIndex(index);
                 break;
             }
@@ -277,13 +244,11 @@ public class SpellsManager
      * Deletes a spell by index into {@link #spells}.
      * @param index the index to delete
      */
-    private void deleteSpellByIndex(final int index)
-    {
+    private void deleteSpellByIndex(final int index) {
         final Spell spell = spells.remove(index);
         unknownSpells.put(spell.getName(), spell);
 
-        for (final SpellsManagerListener listener : listeners)
-        {
+        for (final SpellsManagerListener listener : listeners) {
             listener.spellRemoved(spell, index);
         }
 
@@ -291,18 +256,15 @@ public class SpellsManager
     }
 
     /**
-     * Returns a {@link Spell} instance by spell name. Creates a new instance
-     * if the spell is unknown.
+     * Returns a {@link Spell} instance by spell name. Creates a new instance if
+     * the spell is unknown.
      * @param spellName the spell name to find
      * @return the spell instance
      */
     @NotNull
-    public Spell getSpell(@NotNull final String spellName)
-    {
-        for (final Spell spell : spells)
-        {
-            if (spell.getName().equals(spellName))
-            {
+    public Spell getSpell(@NotNull final String spellName) {
+        for (final Spell spell : spells) {
+            if (spell.getName().equals(spellName)) {
                 return spell;
             }
         }
@@ -312,4 +274,5 @@ public class SpellsManager
         unknownSpells.put(spell.getName(), spell);
         return spell;
     }
+
 }

@@ -28,8 +28,8 @@ import org.jetbrains.annotations.NotNull;
  * A {@link GUICommand} which toggles the visibility of a dialog.
  * @author Andreas Kirschbaum
  */
-public class DialogToggleCommand implements GUICommand
-{
+public class DialogToggleCommand implements GUICommand {
+
     /**
      * The {@link CommandCallback} to use.
      */
@@ -47,23 +47,25 @@ public class DialogToggleCommand implements GUICommand
      * @param commandCallback the command callback to use
      * @param dialog the dialog to toggle
      */
-    public DialogToggleCommand(@NotNull final CommandCallback commandCallback, @NotNull final Gui dialog)
-    {
+    public DialogToggleCommand(@NotNull final CommandCallback commandCallback, @NotNull final Gui dialog) {
         this.commandCallback = commandCallback;
         this.dialog = dialog;
     }
 
-    /** {@inheritDoc} */
+    /**
+     * {@inheritDoc}
+     */
     @Override
-    public boolean canExecute()
-    {
+    public boolean canExecute() {
         return true;
     }
 
-    /** {@inheritDoc} */
+    /**
+     * {@inheritDoc}
+     */
     @Override
-    public void execute()
-    {
+    public void execute() {
         commandCallback.toggleDialog(dialog);
     }
+
 }

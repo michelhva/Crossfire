@@ -29,8 +29,8 @@ import org.jetbrains.annotations.NotNull;
  * element.
  * @author Andreas Kirschbaum
  */
-public class MoveSelectionCommand implements GUICommand
-{
+public class MoveSelectionCommand implements GUICommand {
+
     /**
      * The list to scroll.
      */
@@ -53,31 +53,30 @@ public class MoveSelectionCommand implements GUICommand
      * @param diffLines the distance in lines to scroll
      * @param diffElements the distance in elements to scroll
      */
-    public MoveSelectionCommand(@NotNull final GUIList list, final int diffLines, final int diffElements)
-    {
+    public MoveSelectionCommand(@NotNull final GUIList list, final int diffLines, final int diffElements) {
         this.list = list;
         this.diffLines = diffLines;
         this.diffElements = diffElements;
     }
 
-    /** {@inheritDoc} */
+    /**
+     * {@inheritDoc}
+     */
     @Override
-    public boolean canExecute()
-    {
+    public boolean canExecute() {
         return list.canMoveSelection(diffLines, diffElements) || list.canScroll(diffLines);
     }
 
-    /** {@inheritDoc} */
+    /**
+     * {@inheritDoc}
+     */
     @Override
-    public void execute()
-    {
-        if (list.canMoveSelection(diffLines, diffElements))
-        {
+    public void execute() {
+        if (list.canMoveSelection(diffLines, diffElements)) {
             list.moveSelection(diffLines, diffElements);
-        }
-        else
-        {
+        } else {
             list.scroll(diffLines);
         }
     }
+
 }

@@ -37,11 +37,10 @@ import org.jetbrains.annotations.NotNull;
 
 /**
  * Maintains a set of key/value pairs. The values are stored in a flat file.
- *
  * @author Andreas Kirschbaum
  */
-public class Settings
-{
+public class Settings {
+
     /**
      * The file for loading/saving values.
      */
@@ -61,11 +60,9 @@ public class Settings
 
     /**
      * Create a new instance.
-     *
      * @param file The file for loading/saving values.
      */
-    public Settings(@NotNull final File file)
-    {
+    public Settings(@NotNull final File file) {
         this.file = file;
         loadValues();
         noSave = false;
@@ -74,15 +71,11 @@ public class Settings
     /**
      * Return the string associated with the specified key at a node, or
      * <code>defaultValue</code> if there is no association for this key.
-     *
      * @param key Key to get value for.
-     *
      * @param defaultValue the defaultValue
-     *
      * @return The value.
      */
-    public String getString(@NotNull final String key, @NotNull final String defaultValue)
-    {
+    public String getString(@NotNull final String key, @NotNull final String defaultValue) {
         final String value = values.get(key);
         return value != null ? value : defaultValue;
     }
@@ -90,22 +83,15 @@ public class Settings
     /**
      * Return the boolean associated with the specified key at a node, or
      * <code>defaultValue</code> if there is no association for this key.
-     *
      * @param key Key to get value for.
-     *
      * @param defaultValue the defaultValue
-     *
      * @return The value.
      */
-    public boolean getBoolean(@NotNull final String key, final boolean defaultValue)
-    {
+    public boolean getBoolean(@NotNull final String key, final boolean defaultValue) {
         final String value = getString(key, Boolean.toString(defaultValue));
-        try
-        {
+        try {
             return Boolean.parseBoolean(value);
-        }
-        catch (final NumberFormatException ex)
-        {
+        } catch (final NumberFormatException ex) {
             return defaultValue;
         }
     }
@@ -113,94 +99,70 @@ public class Settings
     /**
      * Return the integer associated with the specified key at a node, or
      * <code>defaultValue</code> if there is no association for this key.
-     *
      * @param key Key to get value for.
-     *
      * @param defaultValue the defaultValue
-     *
      * @return The value.
      */
-    public int getInt(@NotNull final String key, final int defaultValue)
-    {
+    public int getInt(@NotNull final String key, final int defaultValue) {
         return NumberParser.parseInt(getString(key, Integer.toString(defaultValue)), defaultValue);
     }
 
     /**
      * Return the long associated with the specified key at a node, or
      * <code>defaultValue</code> if there is no association for this key.
-     *
      * @param key Key to get value for.
-     *
      * @param defaultValue the defaultValue
-     *
      * @return The value.
      */
-    public long getLong(@NotNull final String key, final long defaultValue)
-    {
+    public long getLong(@NotNull final String key, final long defaultValue) {
         return NumberParser.parseLong(getString(key, Long.toString(defaultValue)), defaultValue);
     }
 
     /**
      * Store a key/value pair.
-     *
      * @param key The key to store.
-     *
      * @param value The value to store.
      */
-    public void putString(@NotNull final String key, @NotNull final String value)
-    {
+    public void putString(@NotNull final String key, @NotNull final String value) {
         final String oldValue = values.put(key, value);
-        if (oldValue == null || !oldValue.equals(value))
-        {
+        if (oldValue == null || !oldValue.equals(value)) {
             setChanged();
         }
     }
 
     /**
      * Store a key/value pair.
-     *
      * @param key The key to store.
-     *
      * @param value The value to store.
      */
-    public void putBoolean(@NotNull final String key, final boolean value)
-    {
+    public void putBoolean(@NotNull final String key, final boolean value) {
         putString(key, Boolean.toString(value));
     }
 
     /**
      * Store a key/value pair.
-     *
      * @param key The key to store.
-     *
      * @param value The value to store.
      */
-    public void putInt(@NotNull final String key, final int value)
-    {
+    public void putInt(@NotNull final String key, final int value) {
         putString(key, Integer.toString(value));
     }
 
     /**
      * Store a key/value pair.
-     *
      * @param key The key to store.
-     *
      * @param value The value to store.
      */
-    public void putLong(@NotNull final String key, final long value)
-    {
+    public void putLong(@NotNull final String key, final long value) {
         putString(key, Long.toString(value));
     }
 
     /**
      * Remove a key. Does nothing if the key has no associated value.
-     *
      * @param key The key to remove.
      */
-    public void remove(@NotNull final String key)
-    {
-        if (values.remove(key) != null)
-        {
+    public void remove(@NotNull final String key) {
+        if (values.remove(key) != null) {
             setChanged();
         }
     }
@@ -209,19 +171,14 @@ public class Settings
      * This function is called whenever the contents of {@link #values} has
      * changed.
      */
-    private void setChanged()
-    {
-        if (noSave)
-        {
+    private void setChanged() {
+        if (noSave) {
             return;
         }
 
-        try
-        {
+        try {
             saveValues();
-        }
-        catch (final IOException ex)
-        {
+        } catch (final IOException ex) {
             System.err.println(file+": "+ex.getMessage());
         }
     }
@@ -229,37 +186,28 @@ public class Settings
     /**
      * Load the values from the backing file.
      */
-    private void loadValues()
-    {
+    private void loadValues() {
         values.clear();
 
-        try
-        {
+        try {
             final FileInputStream fis = new FileInputStream(file);
-            try
-            {
+            try {
                 final InputStreamReader isr = new InputStreamReader(fis, "UTF-8");
-                try
-                {
+                try {
                     final LineNumberReader lnr = new LineNumberReader(isr);
-                    try
-                    {
-                        for (;;)
-                        {
+                    try {
+                        for (; ;) {
                             final String line2 = lnr.readLine();
-                            if (line2 == null)
-                            {
+                            if (line2 == null) {
                                 break;
                             }
                             final String line = Codec.decode(line2.trim());
-                            if (line == null || line.startsWith("#") || line.length() == 0)
-                            {
+                            if (line == null || line.startsWith("#") || line.length() == 0) {
                                 continue;
                             }
 
                             final String[] tmp = line.split("=", 2);
-                            if (tmp.length != 2)
-                            {
+                            if (tmp.length != 2) {
                                 System.err.println(file+":"+lnr.getLineNumber()+": syntax error");
                                 continue;
                             }
@@ -268,90 +216,62 @@ public class Settings
 
                             putString(key, value);
                         }
-                    }
-                    finally
-                    {
+                    } finally {
                         lnr.close();
                     }
-                }
-                finally
-                {
+                } finally {
                     isr.close();
                 }
-            }
-            finally
-            {
+            } finally {
                 fis.close();
             }
-        }
-        catch (final FileNotFoundException ex)
-        {
+        } catch (final FileNotFoundException ex) {
             // ignore
-        }
-        catch (final IOException ex)
-        {
+        } catch (final IOException ex) {
             System.err.println(file+": "+ex.getMessage());
         }
     }
 
     /**
      * Save the values to the backing file.
-     *
      * @throws IOException if the values cannot be saved
      */
-    private void saveValues() throws IOException
-    {
-        final File tmpFile = new File(file.getPath() + ".tmp");
+    private void saveValues() throws IOException {
+        final File tmpFile = new File(file.getPath()+".tmp");
         final FileOutputStream fos = new FileOutputStream(tmpFile);
-        try
-        {
+        try {
             final OutputStreamWriter osw = new OutputStreamWriter(fos, "UTF-8");
-            try
-            {
+            try {
                 final BufferedWriter bw = new BufferedWriter(osw);
-                try
-                {
+                try {
                     saveNode(bw, values);
-                }
-                finally
-                {
+                } finally {
                     bw.close();
                 }
-            }
-            finally
-            {
+            } finally {
                 osw.close();
             }
-        }
-        finally
-        {
+        } finally {
             fos.close();
         }
 
-        if (!tmpFile.renameTo(file))
-        {
+        if (!tmpFile.renameTo(file)) {
             throw new IOException("cannot rename "+tmpFile+" to "+file);
         }
     }
 
     /**
      * Save one node.
-     *
      * @param writer The <code>Writer</code> to write to.
-     *
      * @param node The node to save.
-     *
      * @throws IOException if the node cannot be saved
      */
-    private static void saveNode(@NotNull final BufferedWriter writer, @NotNull final Map<String, String> node) throws IOException
-    {
-        if (node.isEmpty())
-        {
+    private static void saveNode(@NotNull final BufferedWriter writer, @NotNull final Map<String, String> node) throws IOException {
+        if (node.isEmpty()) {
             return;
         }
 
-        for (final Map.Entry<String, String> entry : node.entrySet())
-        {
+        for (final Map.Entry<String, String> entry : node.entrySet()) {
             writer.newLine();
             writer.write(Codec.encode(entry.getKey()));
             writer.write("=");
@@ -359,4 +279,5 @@ public class Settings
             writer.newLine();
         }
     }
+
 }

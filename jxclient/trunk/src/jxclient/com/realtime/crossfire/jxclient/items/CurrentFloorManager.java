@@ -19,7 +19,6 @@
  * Copyright (C) 2006-2010 Andreas Kirschbaum.
  */
 
-
 package com.realtime.crossfire.jxclient.items;
 
 import javax.swing.event.EventListenerList;
@@ -29,8 +28,8 @@ import org.jetbrains.annotations.NotNull;
  * Manages the player's current floor location.
  * @author Andreas Kirschbaum
  */
-public class CurrentFloorManager
-{
+public class CurrentFloorManager {
+
     /**
      * The items manager.
      */
@@ -53,8 +52,7 @@ public class CurrentFloorManager
      * Create a new instance.
      * @param itemsManager The items manager to use.
      */
-    public CurrentFloorManager(@NotNull final ItemsManager itemsManager)
-    {
+    public CurrentFloorManager(@NotNull final ItemsManager itemsManager) {
         this.itemsManager = itemsManager;
     }
 
@@ -62,10 +60,8 @@ public class CurrentFloorManager
      * Set the location to show in the floor view.
      * @param currentFloor the new location of the floor view
      */
-    public synchronized void setCurrentFloor(final int currentFloor)
-    {
-        if (this.currentFloor == currentFloor)
-        {
+    public synchronized void setCurrentFloor(final int currentFloor) {
+        if (this.currentFloor == currentFloor) {
             return;
         }
 
@@ -73,8 +69,7 @@ public class CurrentFloorManager
         this.currentFloor = currentFloor;
         itemsManager.getFloorManager().addModified(itemsManager.getNumberOfItems(this.currentFloor));
 
-        for (final CurrentFloorListener listener : currentFloorListeners.getListeners(CurrentFloorListener.class))
-        {
+        for (final CurrentFloorListener listener : currentFloorListeners.getListeners(CurrentFloorListener.class)) {
             listener.currentFloorChanged(this.currentFloor);
         }
     }
@@ -83,8 +78,7 @@ public class CurrentFloorManager
      * Return the location to show in the floor view.
      * @return the floor location
      */
-    public synchronized int getCurrentFloor()
-    {
+    public synchronized int getCurrentFloor() {
         return currentFloor;
     }
 
@@ -93,8 +87,7 @@ public class CurrentFloorManager
      * @param floor The location to compare.
      * @return Whether the given location is the current floor.
      */
-    public synchronized boolean isCurrentFloor(final int floor)
-    {
+    public synchronized boolean isCurrentFloor(final int floor) {
         return currentFloor == floor;
     }
 
@@ -103,8 +96,7 @@ public class CurrentFloorManager
      * changes.
      * @param listener the listener to add
      */
-    public void addCurrentFloorListener(@NotNull final CurrentFloorListener listener)
-    {
+    public void addCurrentFloorListener(@NotNull final CurrentFloorListener listener) {
         currentFloorListeners.add(CurrentFloorListener.class, listener);
     }
 
@@ -113,8 +105,8 @@ public class CurrentFloorManager
      * changes.
      * @param listener the listener to remove
      */
-    public void removeCurrentFloorListener(@NotNull final CurrentFloorListener listener)
-    {
+    public void removeCurrentFloorListener(@NotNull final CurrentFloorListener listener) {
         currentFloorListeners.remove(CurrentFloorListener.class, listener);
     }
+
 }

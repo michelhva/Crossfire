@@ -30,18 +30,16 @@ import org.jetbrains.annotations.NotNull;
  * any string <code>s</code>, <code>encode(s)</code> is a string that does not
  * contain \r or \n characters and <code>s.equals(decode(encode(s)))</code>
  * holds.
- *
  * @author Andreas Kirschbaum
  */
-public class Codec
-{
+public class Codec {
+
     /**
      * Patterns that must be encoded. The corresponding replacement strings are
      * {@link #replacementsEncode}.
      */
     @NotNull
-    private static final Pattern[] patternsEncode =
-    {
+    private static final Pattern[] patternsEncode = {
         Pattern.compile("\\\\"),
         Pattern.compile("\r"),
         Pattern.compile("\n"),
@@ -51,8 +49,7 @@ public class Codec
      * The replacement strings for {@link #patternsEncode}.
      */
     @NotNull
-    private static final String[] replacementsEncode =
-    {
+    private static final String[] replacementsEncode = {
         Matcher.quoteReplacement("\\\\"),
         Matcher.quoteReplacement("\\r"),
         Matcher.quoteReplacement("\\n"),
@@ -63,8 +60,7 @@ public class Codec
      * {@link #replacementsDecode}.
      */
     @NotNull
-    private static final Pattern[] patternsDecode =
-    {
+    private static final Pattern[] patternsDecode = {
         Pattern.compile("\\\\n"),
         Pattern.compile("\\\\r"),
         Pattern.compile("\\\\\\\\"),
@@ -74,8 +70,7 @@ public class Codec
      * The replacement strings for {@link #patternsDecode}.
      */
     @NotNull
-    private static final String[] replacementsDecode =
-    {
+    private static final String[] replacementsDecode = {
         Matcher.quoteReplacement("\n"),
         Matcher.quoteReplacement("\r"),
         Matcher.quoteReplacement("\\"),
@@ -84,26 +79,20 @@ public class Codec
     /**
      * Private constructor to prevent instantiation.
      */
-    private Codec()
-    {
+    private Codec() {
     }
 
     /**
      * Encode a string to make it fit into one line.
-     *
      * @param str The string to be encoded.
-     *
      * @return The encoded string.
-     *
      * @see #decode(String)
      */
     @NotNull
-    public static String encode(@NotNull final String str)
-    {
+    public static String encode(@NotNull final String str) {
         assert patternsEncode.length == replacementsEncode.length;
         String tmp = str;
-        for (int i = 0; i < patternsEncode.length; i++)
-        {
+        for (int i = 0; i < patternsEncode.length; i++) {
             tmp = patternsEncode[i].matcher(tmp).replaceAll(replacementsEncode[i]);
         }
         return tmp;
@@ -111,22 +100,18 @@ public class Codec
 
     /**
      * Decode a string which was encoded by {@link #encode(String)}.
-     *
      * @param str The string to be decoded.
-     *
      * @return The decoded string.
-     *
      * @see #encode(String)
      */
     @NotNull
-    public static String decode(@NotNull final String str)
-    {
+    public static String decode(@NotNull final String str) {
         assert patternsDecode.length == replacementsDecode.length;
         String tmp = str;
-        for (int i = 0; i < patternsDecode.length; i++)
-        {
+        for (int i = 0; i < patternsDecode.length; i++) {
             tmp = patternsDecode[i].matcher(tmp).replaceAll(replacementsDecode[i]);
         }
         return tmp;
     }
+
 }

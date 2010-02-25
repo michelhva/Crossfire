@@ -35,8 +35,8 @@ import org.jetbrains.annotations.NotNull;
  * @author Lauwenmark
  * @author Andreas Kirschbaum
  */
-public abstract class GUIItem extends ActivatableGUIElement implements GUIScrollable
-{
+public abstract class GUIItem extends ActivatableGUIElement implements GUIScrollable {
+
     /**
      * The serial version UID.
      */
@@ -54,25 +54,25 @@ public abstract class GUIItem extends ActivatableGUIElement implements GUIScroll
      * @param w the width for drawing this element to screen
      * @param h the height for drawing this element to screen
      */
-    protected GUIItem(@NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final String name, final int x, final int y, final int w, final int h)
-    {
+    protected GUIItem(@NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final String name, final int x, final int y, final int w, final int h) {
         super(tooltipManager, elementListener, name, x, y, w, h, Transparency.TRANSLUCENT);
     }
 
-    /** {@inheritDoc} */
+    /**
+     * {@inheritDoc}
+     */
     @Override
-    public void dispose()
-    {
+    public void dispose() {
         super.dispose();
     }
 
-    /** {@inheritDoc} */
+    /**
+     * {@inheritDoc}
+     */
     @Override
-    public void mouseClicked(@NotNull final MouseEvent e)
-    {
+    public void mouseClicked(@NotNull final MouseEvent e) {
         super.mouseClicked(e);
-        switch (e.getButton())
-        {
+        switch (e.getButton()) {
         case MouseEvent.BUTTON1:
             setActive(true);
             button1Clicked(e.getModifiersEx());
@@ -106,17 +106,18 @@ public abstract class GUIItem extends ActivatableGUIElement implements GUIScroll
      */
     protected abstract void button3Clicked(final int modifiers);
 
-    /** {@inheritDoc} */
+    /**
+     * {@inheritDoc}
+     */
     @Override
-    public void activeChanged()
-    {
+    public void activeChanged() {
         setChanged();
     }
 
     @Override
-    public void setElementVisible(final boolean visible)
-    {
+    public void setElementVisible(final boolean visible) {
         super.setElementVisible(visible);
         setChanged();
     }
+
 }

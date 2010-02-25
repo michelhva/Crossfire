@@ -28,12 +28,13 @@ import org.jetbrains.annotations.NotNull;
  * instances.
  * @author Andreas Kirschbaum
  */
-public interface GUIElementChangedListener
-{
+public interface GUIElementChangedListener {
+
     /**
      * Called whenever the changed flag was set while a {@link GUIElement} was
      * visible.
      * @param element the affected instance
      */
     void notifyChanged(@NotNull GUIElement element);
+
 }

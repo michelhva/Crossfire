@@ -26,11 +26,10 @@ import org.jetbrains.annotations.NotNull;
 
 /**
  * A {@link CheckBoxOption} that enables/disables sound support.
- *
  * @author Andreas Kirschbaum
  */
-public class SoundCheckBoxOption extends CheckBoxOption
-{
+public class SoundCheckBoxOption extends CheckBoxOption {
+
     /**
      * The {@link SoundManager} instance to affect.
      */
@@ -41,22 +40,24 @@ public class SoundCheckBoxOption extends CheckBoxOption
      * Creates a new instance.
      * @param soundManager the sound manager instance to affect
      */
-    public SoundCheckBoxOption(@NotNull final SoundManager soundManager)
-    {
+    public SoundCheckBoxOption(@NotNull final SoundManager soundManager) {
         this.soundManager = soundManager;
     }
 
-    /** {@inheritDoc} */
+    /**
+     * {@inheritDoc}
+     */
     @Override
-    protected void execute(final boolean checked)
-    {
+    protected void execute(final boolean checked) {
         soundManager.setEnabled(checked);
     }
 
-    /** {@inheritDoc} */
+    /**
+     * {@inheritDoc}
+     */
     @Override
-    public boolean isDefaultChecked()
-    {
+    public boolean isDefaultChecked() {
         return true;
     }
+
 }

@@ -27,12 +27,12 @@ import com.realtime.crossfire.jxclient.mapupdater.MapscrollListener;
 import org.jetbrains.annotations.NotNull;
 
 /**
- * A {@link SkinEvent} that executes a {@link CommandList} whenever the
- * map scroll protocol command is received.
+ * A {@link SkinEvent} that executes a {@link CommandList} whenever the map
+ * scroll protocol command is received.
  * @author Andreas Kirschbaum
  */
-public class MapscrollSkinEvent implements SkinEvent
-{
+public class MapscrollSkinEvent implements SkinEvent {
+
     /**
      * The {@link CommandList} to execute.
      */
@@ -49,12 +49,10 @@ public class MapscrollSkinEvent implements SkinEvent
      * The {@link MapscrollListener} attached to {@link #mapUpdater}.
      */
     @NotNull
-    private final MapscrollListener mapscrollListener = new MapscrollListener()
-    {
+    private final MapscrollListener mapscrollListener = new MapscrollListener() {
         /** {@inheritDoc} */
         @Override
-        public void mapScrolled(final int dx, final int dy)
-        {
+        public void mapScrolled(final int dx, final int dy) {
             commandList.execute();
         }
     };
@@ -64,17 +62,18 @@ public class MapscrollSkinEvent implements SkinEvent
      * @param commandList the command list to execute
      * @param mapUpdater the map updater to attach to
      */
-    public MapscrollSkinEvent(@NotNull final CommandList commandList, @NotNull final CfMapUpdater mapUpdater)
-    {
+    public MapscrollSkinEvent(@NotNull final CommandList commandList, @NotNull final CfMapUpdater mapUpdater) {
         this.commandList = commandList;
         this.mapUpdater = mapUpdater;
         mapUpdater.addCrossfireMapscrollListener(mapscrollListener);
     }
 
-    /** {@inheritDoc} */
+    /**
+     * {@inheritDoc}
+     */
     @Override
-    public void dispose()
-    {
+    public void dispose() {
         mapUpdater.removeCrossfireMapscrollListener(mapscrollListener);
     }
+
 }

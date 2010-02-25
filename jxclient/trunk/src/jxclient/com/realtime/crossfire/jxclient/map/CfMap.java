@@ -34,8 +34,8 @@ import org.jetbrains.annotations.Nullable;
  * set squares are considered dark.
  * @author Andreas Kirschbaum
  */
-public class CfMap
-{
+public class CfMap {
+
     /**
      * The {@link CfMapSquareListener} instance to notify.
      */
@@ -114,8 +114,7 @@ public class CfMap
      * Creates a new (empty) map.
      * @param mapSquareListener the map square listener instance to notify
      */
-    public CfMap(@NotNull final CfMapSquareListener mapSquareListener)
-    {
+    public CfMap(@NotNull final CfMapSquareListener mapSquareListener) {
         this.mapSquareListener = mapSquareListener;
     }
 
@@ -125,12 +124,9 @@ public class CfMap
      * @param y the y-coordinate of the square
      * @param darkness the darkness value to set; 0=dark, 255=full bright
      */
-    public void setDarkness(final int x, final int y, final int darkness)
-    {
-        if (expandTo(x, y).setDarkness(ox, oy, darkness))
-        {
-            for (int l = 0; l < CrossfireMap2Command.NUM_LAYERS; l++)
-            {
+    public void setDarkness(final int x, final int y, final int darkness) {
+        if (expandTo(x, y).setDarkness(ox, oy, darkness)) {
+            for (int l = 0; l < CrossfireMap2Command.NUM_LAYERS; l++) {
                 setFaceInternal(x, y, l, CfMapSquare.DEFAULT_FACE);
             }
         }
@@ -143,8 +139,7 @@ public class CfMap
      * @return the darkness value of the square; 0=dark, 255=full bright; not
      *         yet set faces return 0
      */
-    public int getDarkness(final int x, final int y)
-    {
+    public int getDarkness(final int x, final int y) {
         final CfMapPatch mapPatch = getMapPatch(x, y);
         return mapPatch != null ? mapPatch.getDarkness(ox, oy) : CfMapSquare.DEFAULT_DARKNESS;
     }
@@ -157,19 +152,14 @@ public class CfMap
      * @param layer the layer to set
      * @param face the face to set; may be <code>null</code> to remove the face
      */
-    public void setFace(final int x, final int y, final int layer, @Nullable final Face face)
-    {
-        if (expandTo(x, y).resetFogOfWar(ox, oy))
-        {
+    public void setFace(final int x, final int y, final int layer, @Nullable final Face face) {
+        if (expandTo(x, y).resetFogOfWar(ox, oy)) {
             setDarkness(x, y, CfMapSquare.DEFAULT_DARKNESS);
-            for (int l = 0; l < CrossfireMap2Command.NUM_LAYERS; l++)
-            {
+            for (int l = 0; l < CrossfireMap2Command.NUM_LAYERS; l++) {
                 setFaceInternal(x, y, l, l == layer ? face : CfMapSquare.DEFAULT_FACE);
             }
             dirty(x, y);
-        }
-        else
-        {
+        } else {
             setFaceInternal(x, y, layer, face);
         }
     }
@@ -181,18 +171,15 @@ public class CfMap
      * @param layer the layer to set
      * @param face the face to set; may be <code>null</code> to remove the face
      */
-    private void setFaceInternal(final int x, final int y, final int layer, @Nullable final Face face)
-    {
+    private void setFaceInternal(final int x, final int y, final int layer, @Nullable final Face face) {
         final CfMapSquare headMapSquare = expandTo(x, y).getSquare(ox, oy);
 
         final Face oldFace = headMapSquare.getFace(layer);
-        if (oldFace != null)
-        {
+        if (oldFace != null) {
             expandFace(x, y, layer, oldFace, headMapSquare, null);
         }
         headMapSquare.setFace(layer, face);
-        if (face != null)
-        {
+        if (face != null) {
             expandFace(x, y, layer, face, headMapSquare, headMapSquare);
         }
     }
@@ -207,22 +194,15 @@ public class CfMap
      * @param newMapSquare the map square of the tail part to add pointers, or
      * <code>null</code> to remove pointers
      */
-    private void expandFace(final int x, final int y, final int layer, @NotNull final Face face, @NotNull final CfMapSquare oldMapSquare, @Nullable final CfMapSquare newMapSquare)
-    {
+    private void expandFace(final int x, final int y, final int layer, @NotNull final Face face, @NotNull final CfMapSquare oldMapSquare, @Nullable final CfMapSquare newMapSquare) {
         final int sx = face.getTileWidth();
         final int sy = face.getTileHeight();
-        for (int dx = 0; dx < sx; dx++)
-        {
-            for (int dy = 0; dy < sy; dy++)
-            {
-                if (dx > 0 || dy > 0)
-                {
-                    if (newMapSquare != null)
-                    {
+        for (int dx = 0; dx < sx; dx++) {
+            for (int dy = 0; dy < sy; dy++) {
+                if (dx > 0 || dy > 0) {
+                    if (newMapSquare != null) {
                         setHeadMapSquare(x-dx, y-dy, layer, newMapSquare, true);
-                    }
-                    else if (getHeadMapSquare(x-dx, y-dy, layer) == oldMapSquare)
-                    {
+                    } else if (getHeadMapSquare(x-dx, y-dy, layer) == oldMapSquare) {
                         setHeadMapSquare(x-dx, y-dy, layer, null, true);
                     }
                 }
@@ -238,22 +218,15 @@ public class CfMap
      * @param layer the layer of the face
      * @param face the face to mark dirty
      */
-    private void dirtyFace(final int x, final int y, final int layer, @NotNull final Face face)
-    {
+    private void dirtyFace(final int x, final int y, final int layer, @NotNull final Face face) {
         final int sx = face.getTileWidth();
         final int sy = face.getTileHeight();
-        for (int dx = 0; dx < sx; dx++)
-        {
-            for (int dy = 0; dy < sy; dy++)
-            {
-                if (dx > 0 || dy > 0)
-                {
-                    if (isFogOfWar(x-dx, y-dy))
-                    {
+        for (int dx = 0; dx < sx; dx++) {
+            for (int dy = 0; dy < sy; dy++) {
+                if (dx > 0 || dy > 0) {
+                    if (isFogOfWar(x-dx, y-dy)) {
                         dirty(x-dx, y-dy);
-                    }
-                    else
-                    {
+                    } else {
                         setHeadMapSquare(x-dx, y-dy, layer, null, false);
                     }
                 }
@@ -269,8 +242,7 @@ public class CfMap
      * @return the face; dark (i.e. not yet set) faces return <code>null</code>
      */
     @Nullable
-    public Face getFace(final int x, final int y, final int layer)
-    {
+    public Face getFace(final int x, final int y, final int layer) {
         final CfMapPatch mapPatch = getMapPatch(x, y);
         return mapPatch != null ? mapPatch.getFace(ox, oy, layer) : CfMapSquare.DEFAULT_FACE;
     }
@@ -286,8 +258,7 @@ public class CfMap
      * @param setAlways if set, always update the face; if unset, only update
      * when fog-of-war
      */
-    private void setHeadMapSquare(final int x, final int y, final int layer, @Nullable final CfMapSquare mapSquare, final boolean setAlways)
-    {
+    private void setHeadMapSquare(final int x, final int y, final int layer, @Nullable final CfMapSquare mapSquare, final boolean setAlways) {
         expandTo(x, y).setHeadMapSquare(ox, oy, layer, mapSquare, setAlways);
     }
 
@@ -300,8 +271,7 @@ public class CfMap
      *         contain a multi-tail
      */
     @Nullable
-    public CfMapSquare getHeadMapSquare(final int x, final int y, final int layer)
-    {
+    public CfMapSquare getHeadMapSquare(final int x, final int y, final int layer) {
         final CfMapPatch mapPatch = getMapPatch(x, y);
         return mapPatch != null ? mapPatch.getHeadMapSquare(ox, oy, layer) : null;
     }
@@ -312,15 +282,12 @@ public class CfMap
      * @param x the x-coordinate of the square
      * @param y the y-coordinate of the square
      */
-    public void clearSquare(final int x, final int y)
-    {
+    public void clearSquare(final int x, final int y) {
         final CfMapPatch mapPatch = expandTo(x, y);
         mapPatch.clearSquare(ox, oy);
-        for (int layer = 0; layer < CrossfireMap2Command.NUM_LAYERS; layer++)
-        {
+        for (int layer = 0; layer < CrossfireMap2Command.NUM_LAYERS; layer++) {
             final Face face = mapPatch.getFace(ox, oy, layer);
-            if (face != null)
-            {
+            if (face != null) {
                 dirtyFace(x, y, layer, face);
             }
         }
@@ -331,8 +298,7 @@ public class CfMap
      * @param x the x-coordinate of the square
      * @param y the y-coordinate of the square
      */
-    public void dirty(final int x, final int y)
-    {
+    public void dirty(final int x, final int y) {
         expandTo(x, y).dirty(ox, oy);
     }
 
@@ -342,8 +308,7 @@ public class CfMap
      * @param y the y-coordinate of the square
      * @return whether the tile contains fog-of-war data
      */
-    public boolean isFogOfWar(final int x, final int y)
-    {
+    public boolean isFogOfWar(final int x, final int y) {
         final CfMapPatch mapPatch = getMapPatch(x, y);
         return mapPatch != null && mapPatch.isFogOfWar(ox, oy);
     }
@@ -357,10 +322,8 @@ public class CfMap
      *         map bounds
      */
     @Nullable
-    private CfMapPatch getMapPatch(final int x, final int y)
-    {
-        if (x < minX || x > maxX || y < minY || y > maxY)
-        {
+    private CfMapPatch getMapPatch(final int x, final int y) {
+        if (x < minX || x > maxX || y < minY || y > maxY) {
             return null;
         }
 
@@ -378,8 +341,7 @@ public class CfMap
         assert oy < CfMapPatch.SIZE;
 
         final CfMapPatch mapPatch = patch[px][py];
-        if (mapPatch != null)
-        {
+        if (mapPatch != null) {
             return mapPatch;
         }
 
@@ -392,10 +354,8 @@ public class CfMap
      * @param dx the x-difference to scroll
      * @param dy the y-difference to scroll
      */
-    public void scroll(final int dx, final int dy)
-    {
-        if (dx == 0 && dy == 0)
-        {
+    public void scroll(final int dx, final int dy) {
+        if (dx == 0 && dy == 0) {
             return;
         }
 
@@ -415,10 +375,8 @@ public class CfMap
      *         map bounds
      */
     @NotNull
-    private CfMapPatch expandTo(final int x, final int y)
-    {
-        if (minX > maxX || minY > maxY)
-        {
+    private CfMapPatch expandTo(final int x, final int y) {
+        if (minX > maxX || minY > maxY) {
             // current map is undefined ==> start with 1x1 map
             minX = x;
             maxX = x;
@@ -430,23 +388,17 @@ public class CfMap
             maxPy = minPy;
             patch = new CfMapPatch[1][1];
             patch[0][0] = null;
-        }
-        else
-        {
-            if (x < minX)
-            {
+        } else {
+            if (x < minX) {
                 increase(x-minX, 0);
             }
-            if (x > maxX)
-            {
+            if (x > maxX) {
                 increase(x-maxX, 0);
             }
-            if (y < minY)
-            {
+            if (y < minY) {
                 increase(0, y-minY);
             }
-            if (y > maxY)
-            {
+            if (y > maxY) {
                 increase(0, y-maxY);
             }
         }
@@ -463,25 +415,19 @@ public class CfMap
      * @param dy the increase in y-direction; dy&lt;0 means "expand (-dy) tiles
      * to the top", dy&gt;0 means "expand (dy) tiles to the bottom"
      */
-    private void increase(final int dx, final int dy)
-    {
-        if (dx < 0)
-        {
+    private void increase(final int dx, final int dy) {
+        if (dx < 0) {
             final int newMinX = minX+dx;
             final int newMinPx = (newMinX-patchX)>>CfMapPatch.SIZE_LOG;
             final int diffPw = minPx-newMinPx;
-            if (diffPw == 0)
-            {
+            if (diffPw == 0) {
                 // new size fits within current patch ==> no change to
                 // <code>patch</code>
                 minX = newMinX;
-            }
-            else
-            {
+            } else {
                 // need to add (diffPw) patches to the left
 
-                if (diffPw <= 0)
-                {
+                if (diffPw <= 0) {
                     throw new AssertionError();
                 }
 
@@ -491,29 +437,23 @@ public class CfMap
                 final int oldPh = patch[0].length;
 
                 // new width must be more than old size
-                if (newPw <= oldPw)
-                {
+                if (newPw <= oldPw) {
                     throw new AssertionError();
                 }
-                if (newPw != oldPw+diffPw)
-                {
+                if (newPw != oldPw+diffPw) {
                     throw new AssertionError();
                 }
-                if (newPh != oldPh)
-                {
+                if (newPh != oldPh) {
                     throw new AssertionError();
                 }
 
                 final CfMapPatch[][] newPatch = new CfMapPatch[newPw][newPh];
-                for (int y = 0; y < oldPh; y++)
-                {
-                    for (int x = 0; x < diffPw; x++)
-                    {
+                for (int y = 0; y < oldPh; y++) {
+                    for (int x = 0; x < diffPw; x++) {
                         newPatch[x][y] = null;
                     }
 
-                    for (int x = 0; x < oldPw; x++)
-                    {
+                    for (int x = 0; x < oldPw; x++) {
                         newPatch[x+diffPw][y] = patch[x][y];
                     }
                 }
@@ -522,24 +462,18 @@ public class CfMap
                 minPx = newMinPx;
                 patch = newPatch;
             }
-        }
-        else if (dx > 0)
-        {
+        } else if (dx > 0) {
             final int newMaxX = maxX+dx;
             final int newMaxPx = (newMaxX-patchX)>>CfMapPatch.SIZE_LOG;
             final int diffPw = newMaxPx-maxPx;
-            if (diffPw == 0)
-            {
+            if (diffPw == 0) {
                 // new size fits within current patch ==> no change to
                 // <code>patch</code>
                 maxX = newMaxX;
-            }
-            else
-            {
+            } else {
                 // need to add (diffPw) patches to the right
 
-                if (diffPw <= 0)
-                {
+                if (diffPw <= 0) {
                     throw new AssertionError();
                 }
 
@@ -549,29 +483,23 @@ public class CfMap
                 final int oldPh = patch[0].length;
 
                 // new width must be more than old size
-                if (newPw <= oldPw)
-                {
+                if (newPw <= oldPw) {
                     throw new AssertionError();
                 }
-                if (newPw != oldPw+diffPw)
-                {
+                if (newPw != oldPw+diffPw) {
                     throw new AssertionError();
                 }
-                if (newPh != oldPh)
-                {
+                if (newPh != oldPh) {
                     throw new AssertionError();
                 }
 
                 final CfMapPatch[][] newPatch = new CfMapPatch[newPw][newPh];
-                for (int y = 0; y < oldPh; y++)
-                {
-                    for (int x = 0; x < oldPw; x++)
-                    {
+                for (int y = 0; y < oldPh; y++) {
+                    for (int x = 0; x < oldPw; x++) {
                         newPatch[x][y] = patch[x][y];
                     }
 
-                    for (int x = 0; x < diffPw; x++)
-                    {
+                    for (int x = 0; x < diffPw; x++) {
                         newPatch[x+oldPw][y] = null;
                     }
                 }
@@ -582,23 +510,18 @@ public class CfMap
             }
         }
 
-        if (dy < 0)
-        {
+        if (dy < 0) {
             final int newMinY = minY+dy;
             final int newMinPy = (newMinY-patchY)>>CfMapPatch.SIZE_LOG;
             final int diffPh = minPy-newMinPy;
-            if (diffPh == 0)
-            {
+            if (diffPh == 0) {
                 // new size fits within current patch ==> no change to
                 // <code>patch</code>
                 minY = newMinY;
-            }
-            else
-            {
+            } else {
                 // need to add (diffPh) patches to the top
 
-                if (diffPh <= 0)
-                {
+                if (diffPh <= 0) {
                     throw new AssertionError();
                 }
 
@@ -608,31 +531,24 @@ public class CfMap
                 final int oldPh = patch[0].length;
 
                 // new height must be more than old size
-                if (newPh <= oldPh)
-                {
+                if (newPh <= oldPh) {
                     throw new AssertionError();
                 }
-                if (newPh != oldPh+diffPh)
-                {
+                if (newPh != oldPh+diffPh) {
                     throw new AssertionError();
                 }
-                if (newPw != oldPw)
-                {
+                if (newPw != oldPw) {
                     throw new AssertionError();
                 }
 
                 final CfMapPatch[][] newPatch = new CfMapPatch[newPw][newPh];
-                for (int y = 0; y < diffPh; y++)
-                {
-                    for (int x = 0; x < oldPw; x++)
-                    {
+                for (int y = 0; y < diffPh; y++) {
+                    for (int x = 0; x < oldPw; x++) {
                         newPatch[x][y] = null;
                     }
                 }
-                for (int y = 0; y < oldPh; y++)
-                {
-                    for (int x = 0; x < oldPw; x++)
-                    {
+                for (int y = 0; y < oldPh; y++) {
+                    for (int x = 0; x < oldPw; x++) {
                         newPatch[x][y+diffPh] = patch[x][y];
                     }
                 }
@@ -641,24 +557,18 @@ public class CfMap
                 minPy = newMinPy;
                 patch = newPatch;
             }
-        }
-        else if (dy > 0)
-        {
+        } else if (dy > 0) {
             final int newMaxY = maxY+dy;
             final int newMaxPy = (newMaxY-patchY)>>CfMapPatch.SIZE_LOG;
             final int diffPh = newMaxPy-maxPy;
-            if (diffPh == 0)
-            {
+            if (diffPh == 0) {
                 // new size fits within current patch ==> no change to
                 // <code>patch</code>
                 maxY = newMaxY;
-            }
-            else
-            {
+            } else {
                 // need to add (diffPh) patches to the bottom
 
-                if (diffPh <= 0)
-                {
+                if (diffPh <= 0) {
                     throw new AssertionError();
                 }
 
@@ -668,31 +578,24 @@ public class CfMap
                 final int oldPh = patch[0].length;
 
                 // new height must be more than old size
-                if (newPh <= oldPh)
-                {
+                if (newPh <= oldPh) {
                     throw new AssertionError();
                 }
-                if (newPh != oldPh+diffPh)
-                {
+                if (newPh != oldPh+diffPh) {
                     throw new AssertionError();
                 }
-                if (newPw != oldPw)
-                {
+                if (newPw != oldPw) {
                     throw new AssertionError();
                 }
 
                 final CfMapPatch[][] newPatch = new CfMapPatch[newPw][newPh];
-                for (int y = 0; y < oldPh; y++)
-                {
-                    for (int x = 0; x < oldPw; x++)
-                    {
+                for (int y = 0; y < oldPh; y++) {
+                    for (int x = 0; x < oldPw; x++) {
                         newPatch[x][y] = patch[x][y];
                     }
                 }
-                for (int y = 0; y < diffPh; y++)
-                {
-                    for (int x = 0; x < oldPw; x++)
-                    {
+                for (int y = 0; y < diffPh; y++) {
+                    for (int x = 0; x < oldPw; x++) {
                         newPatch[x][y+oldPh] = null;
                     }
                 }
@@ -711,8 +614,7 @@ public class CfMap
      * @param max the maximum coordinate
      * @return the number of patches
      */
-    private static int size(final int min, final int max)
-    {
+    private static int size(final int min, final int max) {
         return max-min+1;
     }
 
@@ -723,8 +625,7 @@ public class CfMap
      * @return the map square
      */
     @NotNull
-    public CfMapSquare getMapSquare(final int x, final int y)
-    {
+    public CfMapSquare getMapSquare(final int x, final int y) {
         return expandTo(x, y).getSquare(ox, oy);
     }
 
@@ -733,8 +634,7 @@ public class CfMap
      * ({@link CfMapSquare#getX()} to a relative x-coordinate.
      * @return the x offset
      */
-    public int getOffsetX()
-    {
+    public int getOffsetX() {
         return patchX;
     }
 
@@ -743,8 +643,8 @@ public class CfMap
      * ({@link CfMapSquare#getY()} to a relative y-coordinate.
      * @return the y offset
      */
-    public int getOffsetY()
-    {
+    public int getOffsetY() {
         return patchY;
     }
+
 }

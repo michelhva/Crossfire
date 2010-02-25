@@ -28,8 +28,8 @@ import org.jetbrains.annotations.NotNull;
  * Interface that defines callback functions needed by commands.
  * @author Andreas Kirschbaum
  */
-public interface CommandCallback
-{
+public interface CommandCallback {
+
     /**
      * Terminates the application.
      */
@@ -70,8 +70,8 @@ public interface CommandCallback
     void updatePlayerName(@NotNull String playerName);
 
     /**
-     * Activates the command input text field. If the skin defines more than
-     * one input field, the first matching one is selected.
+     * Activates the command input text field. If the skin defines more than one
+     * input field, the first matching one is selected.
      * <p/>
      * If neither the main gui nor any visible dialog has an input text field,
      * invisible guis are checked as well. If one is found, it is made visible.
@@ -94,4 +94,5 @@ public interface CommandCallback
      * @return whether the key bindings dialog should be opened
      */
     boolean removeKeyBinding(boolean perCharacter);
+
 }

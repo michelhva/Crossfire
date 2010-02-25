@@ -19,7 +19,6 @@
  * Copyright (C) 2006-2010 Andreas Kirschbaum.
  */
 
-
 package com.realtime.crossfire.jxclient.items;
 
 import java.util.List;
@@ -29,20 +28,17 @@ import org.jetbrains.annotations.NotNull;
  * Manages the items in the player's inventory.
  * @author Andreas Kirschbaum
  */
-public class InventoryManager extends AbstractManager
-{
+public class InventoryManager extends AbstractManager {
+
     /**
      * Find the correct insertion position for an inventory object.
      * @param list The inventory objects.
      * @param item The item to add.
      * @return The insertion index.
      */
-    public static int getInsertionIndex(@NotNull final List<CfItem> list, @NotNull final CfItem item)
-    {
-        for (int i = 0; i < list.size(); i++)
-        {
-            if (compareItem(list.get(i), item) >= 0)
-            {
+    public static int getInsertionIndex(@NotNull final List<CfItem> list, @NotNull final CfItem item) {
+        for (int i = 0; i < list.size(); i++) {
+            if (compareItem(list.get(i), item) >= 0) {
                 return i;
             }
         }
@@ -57,29 +53,24 @@ public class InventoryManager extends AbstractManager
      *         </code>item2</code>, 0=<code>item1</code> == </code>item2</code>,
      *         +1=<code>item1</code> after </code>item2</code>.
      */
-    private static int compareItem(@NotNull final CfItem item1, @NotNull final CfItem item2)
-    {
-        if (item1.getType() < item2.getType())
-        {
+    private static int compareItem(@NotNull final CfItem item1, @NotNull final CfItem item2) {
+        if (item1.getType() < item2.getType()) {
             return -1;
         }
-        if (item1.getType() > item2.getType())
-        {
+        if (item1.getType() > item2.getType()) {
             return +1;
         }
         final int cmp1 = item1.getName().compareTo(item2.getName());
-        if (cmp1 != 0)
-        {
+        if (cmp1 != 0) {
             return cmp1;
         }
-        if (item1.getTag() < item2.getTag())
-        {
+        if (item1.getTag() < item2.getTag()) {
             return -1;
         }
-        if (item1.getTag() > item2.getTag())
-        {
+        if (item1.getTag() > item2.getTag()) {
             return +1;
         }
         return 0;
     }
+
 }

@@ -38,111 +38,132 @@ import org.jetbrains.annotations.NotNull;
 
 /**
  * A factory class to create "textbutton" instances.
- *
  * @author Andreas Kirschbaum
  */
-public class DialogFactory
-{
-    /** The north-west frame picture. */
+public class DialogFactory {
+
+    /**
+     * The north-west frame picture.
+     */
     @NotNull
     private final BufferedImage frameNW;
 
-    /** The north frame picture. */
+    /**
+     * The north frame picture.
+     */
     @NotNull
     private final BufferedImage frameN;
 
-    /** The north-east frame picture. */
+    /**
+     * The north-east frame picture.
+     */
     @NotNull
     private final BufferedImage frameNE;
 
-    /** The west frame picture. */
+    /**
+     * The west frame picture.
+     */
     @NotNull
     private final BufferedImage frameW;
 
-    /** The center frame picture. */
+    /**
+     * The center frame picture.
+     */
     @NotNull
     private final BufferedImage frameC;
 
-    /** The east frame picture. */
+    /**
+     * The east frame picture.
+     */
     @NotNull
     private final BufferedImage frameE;
 
-    /** The south-west frame picture. */
+    /**
+     * The south-west frame picture.
+     */
     @NotNull
     private final BufferedImage frameSW;
 
-    /** The south frame picture. */
+    /**
+     * The south frame picture.
+     */
     @NotNull
     private final BufferedImage frameS;
 
-    /** The south-east frame picture. */
+    /**
+     * The south-east frame picture.
+     */
     @NotNull
     private final BufferedImage frameSE;
 
-    /** The size of the north border in pixels. */
+    /**
+     * The size of the north border in pixels.
+     */
     private final int sizeN;
 
-    /** The size of the south border in pixels. */
+    /**
+     * The size of the south border in pixels.
+     */
     private final int sizeS;
 
-    /** The size of the west border in pixels. */
+    /**
+     * The size of the west border in pixels.
+     */
     private final int sizeW;
 
-    /** The size of the east border in pixels. */
+    /**
+     * The size of the east border in pixels.
+     */
     private final int sizeE;
 
-    /** The width of the center area in pixels. */
+    /**
+     * The width of the center area in pixels.
+     */
     private final int contentWidth;
 
-    /** The height of the center area in pixels. */
+    /**
+     * The height of the center area in pixels.
+     */
     private final int contentHeight;
 
-    /** The font for the dialog title. */
+    /**
+     * The font for the dialog title.
+     */
     private final Font titleFont;
 
-    /** The color for the dialog title. */
+    /**
+     * The color for the dialog title.
+     */
     private final Color titleColor;
 
-    /** The background color for the dialog title. */
+    /**
+     * The background color for the dialog title.
+     */
     private final Color titleBackgroundColor;
 
-    /**y
-     * The alpha value for the dialog background except for the title.
+    /**
+     * y The alpha value for the dialog background except for the title.
      */
     private final float alpha;
 
     /**
      * Create a new instance. The border images must have matching sizes.
-     *
      * @param frameNW The north-west frame picture.
-     *
      * @param frameN The north frame picture.
-     *
      * @param frameNE The north-east frame picture.
-     *
      * @param frameW The west frame picture.
-     *
      * @param frameC The center frame picture.
-     *
      * @param frameE The east frame picture.
-     *
      * @param frameSW The south-west frame picture.
-     *
      * @param frameS The south frame picture.
-     *
      * @param frameSE The south-east frame picture.
-     *
      * @param titleFont The font for the dialog title.
-     *
      * @param titleColor The color for the dialog title.
-     *
      * @param titleBackgroundColor The background color for the dialog title.
-     *
      * @param alpha The alpha value for the dialog background except for the
      * title.
      */
-    public DialogFactory(@NotNull final BufferedImage frameNW, @NotNull final BufferedImage frameN, @NotNull final BufferedImage frameNE, @NotNull final BufferedImage frameW, @NotNull final BufferedImage frameC, @NotNull final BufferedImage frameE, @NotNull final BufferedImage frameSW, @NotNull final BufferedImage frameS, @NotNull final BufferedImage frameSE, @NotNull final Font titleFont, @NotNull final Color titleColor, @NotNull final Color titleBackgroundColor, final float alpha)
-    {
+    public DialogFactory(@NotNull final BufferedImage frameNW, @NotNull final BufferedImage frameN, @NotNull final BufferedImage frameNE, @NotNull final BufferedImage frameW, @NotNull final BufferedImage frameC, @NotNull final BufferedImage frameE, @NotNull final BufferedImage frameSW, @NotNull final BufferedImage frameS, @NotNull final BufferedImage frameSE, @NotNull final Font titleFont, @NotNull final Color titleColor, @NotNull final Color titleBackgroundColor, final float alpha) {
         this.frameNW = frameNW;
         this.frameN = frameN;
         this.frameNE = frameNE;
@@ -156,54 +177,42 @@ public class DialogFactory
         sizeS = frameS.getHeight(null);
         sizeW = frameW.getWidth(null);
         sizeE = frameE.getWidth(null);
-        if (frameNW.getHeight(null) != sizeN)
-        {
+        if (frameNW.getHeight(null) != sizeN) {
             throw new IllegalArgumentException("height of NW ("+frameNW.getHeight(null)+") does not match height of N ("+sizeN+")");
         }
-        if (frameNE.getHeight(null) != sizeN)
-        {
+        if (frameNE.getHeight(null) != sizeN) {
             throw new IllegalArgumentException("height of NE ("+frameNE.getHeight(null)+") does not match height of N ("+sizeN+")");
         }
-        if (frameSW.getHeight(null) != sizeS)
-        {
+        if (frameSW.getHeight(null) != sizeS) {
             throw new IllegalArgumentException("height of SW ("+frameSW.getHeight(null)+") does not match height of N ("+sizeS+")");
         }
-        if (frameSE.getHeight(null) != sizeS)
-        {
+        if (frameSE.getHeight(null) != sizeS) {
             throw new IllegalArgumentException("height of SE ("+frameSE.getHeight(null)+") does not match height of N ("+sizeS+")");
         }
-        if (frameNW.getWidth(null) != sizeW)
-        {
+        if (frameNW.getWidth(null) != sizeW) {
             throw new IllegalArgumentException("width of NW ("+frameNW.getWidth(null)+") does not match width of W");
         }
-        if (frameNE.getWidth(null) != sizeE)
-        {
+        if (frameNE.getWidth(null) != sizeE) {
             throw new IllegalArgumentException("width of NE ("+frameNE.getWidth(null)+") does not match width of E");
         }
-        if (frameSW.getWidth(null) != sizeW)
-        {
+        if (frameSW.getWidth(null) != sizeW) {
             throw new IllegalArgumentException("width of SW ("+frameSW.getWidth(null)+") does not match width of W");
         }
-        if (frameSE.getWidth(null) != sizeE)
-        {
+        if (frameSE.getWidth(null) != sizeE) {
             throw new IllegalArgumentException("width of SE ("+frameSE.getWidth(null)+") does not match width of E");
         }
         contentWidth = frameC.getWidth(null);
         contentHeight = frameC.getHeight(null);
-        if (frameN.getWidth(null) != contentWidth)
-        {
+        if (frameN.getWidth(null) != contentWidth) {
             throw new IllegalArgumentException("width of N ("+frameN.getWidth(null)+") does not match width of C ("+contentWidth+")");
         }
-        if (frameS.getWidth(null) != contentWidth)
-        {
+        if (frameS.getWidth(null) != contentWidth) {
             throw new IllegalArgumentException("width of S ("+frameS.getWidth(null)+") does not match width of C ("+contentWidth+")");
         }
-        if (frameW.getHeight(null) != contentHeight)
-        {
+        if (frameW.getHeight(null) != contentHeight) {
             throw new IllegalArgumentException("width of W ("+frameW.getHeight(null)+") does not match height of C ("+contentHeight+")");
         }
-        if (frameE.getHeight(null) != contentHeight)
-        {
+        if (frameE.getHeight(null) != contentHeight) {
             throw new IllegalArgumentException("width of E ("+frameE.getHeight(null)+") does not match height of C ("+contentHeight+")");
         }
         this.titleFont = titleFont;
@@ -214,40 +223,27 @@ public class DialogFactory
 
     /**
      * Create a new dialog.
-     *
      * @param tooltipManager the tooltip manager to update
-     *
      * @param windowRenderer the window renderer the dialog belongs to
-     *
      * @param elementListener the element listener to notify
-     *
      * @param name The base name of the dialog's gui elements.
-     *
      * @param w The width of the dialog, including the frames.
-     *
      * @param h The height of the dialog, including the frames.
-     *
      * @param title The dialog's title, or an empty string for no title.
-     *
      * @return The gui elements comprising the new dialog.
      */
     @NotNull
-    public Iterable<GUIElement> newDialog(@NotNull final TooltipManager tooltipManager, @NotNull final JXCWindowRenderer windowRenderer, @NotNull final GUIElementListener elementListener, @NotNull final String name, final int w, final int h, @NotNull final String title)
-    {
-        if (w <= sizeW+sizeE)
-        {
+    public Iterable<GUIElement> newDialog(@NotNull final TooltipManager tooltipManager, @NotNull final JXCWindowRenderer windowRenderer, @NotNull final GUIElementListener elementListener, @NotNull final String name, final int w, final int h, @NotNull final String title) {
+        if (w <= sizeW+sizeE) {
             throw new IllegalArgumentException("dialog height ("+w+") is smaller than heights of N and S ("+sizeW+"+"+sizeE+")");
         }
-        if (h <= sizeN+sizeS)
-        {
+        if (h <= sizeN+sizeS) {
             throw new IllegalArgumentException("dialog width ("+h+") is smaller than heights of W and E ("+sizeN+"+"+sizeS+")");
         }
-        if (w > sizeW+contentWidth+sizeE)
-        {
+        if (w > sizeW+contentWidth+sizeE) {
             throw new IllegalArgumentException("dialog width ("+w+") is wider than W+C+E ("+sizeW+"+"+contentWidth+"+"+sizeE+")");
         }
-        if (h > sizeN+contentHeight+sizeS)
-        {
+        if (h > sizeN+contentHeight+sizeS) {
             throw new IllegalArgumentException("dialog height ("+h+") is taller than N+C+S ("+sizeN+"+"+contentHeight+"+"+sizeS+")");
         }
 
@@ -262,11 +258,9 @@ public class DialogFactory
         result.add(new GUIPicture(tooltipManager, elementListener, name+"_sw", 0, h-sizeS, sizeW, sizeS, frameSW, alpha));
         result.add(new GUIPicture(tooltipManager, elementListener, name+"_s", sizeW, h-sizeS, w-sizeW-sizeE, sizeS, frameS, alpha));
         result.add(new GUIPicture(tooltipManager, elementListener, name+"_se", w-sizeE, h-sizeS, sizeE, sizeS, frameSE, alpha));
-        if (titleHeight > 0)
-        {
+        if (titleHeight > 0) {
             result.add(new GUIDialogTitle(tooltipManager, windowRenderer, elementListener, name+"_t", sizeW, sizeN, w-sizeW-sizeE, titleHeight, frameC, alpha));
-            if (!title.equals("_"))
-            {
+            if (!title.equals("_")) {
                 final GUIElement titleLabel = new GUIOneLineLabel(tooltipManager, elementListener, name+"_title", sizeW, sizeN, w-sizeW-sizeE, titleHeight, null, titleFont, titleColor, titleBackgroundColor, Alignment.LEFT, " "+title);
                 result.add(titleLabel);
                 titleLabel.setIgnore();
@@ -274,4 +268,5 @@ public class DialogFactory
         }
         return result;
     }
+
 }

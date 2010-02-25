@@ -36,18 +36,17 @@ import org.jetbrains.annotations.NotNull;
 /**
  * This is the representation of all the statistics of a player, like its speed
  * or its experience.
- *
+ * <p/>
  * <p>Constants named <code>C_STAT_xxx</code> are client-sided; constants named
  * <code>CS_STAT_xxx</code> are stats as sent by the server.
- *
  * @author Lauwenmark
  * @author Andreas Kirschbaum
  */
-public class Stats
-{
+public class Stats {
+
     /**
-     * Whether the {@link CrossfireStatsListener#CS_STAT_WEAP_SP} value
-     * contains the weapon speed directly.
+     * Whether the {@link CrossfireStatsListener#CS_STAT_WEAP_SP} value contains
+     * the weapon speed directly.
      */
     private boolean simpleWeaponSpeed = false;
 
@@ -108,8 +107,7 @@ public class Stats
      * detecting stat changes.
      */
     @NotNull
-    private final CrossfireStatsListener crossfireStatsListener = new CrossfireStatsListener()
-    {
+    private final CrossfireStatsListener crossfireStatsListener = new CrossfireStatsListener() {
         /**
          * All unhandled stat values for which an error has been printed.
          */
@@ -118,17 +116,14 @@ public class Stats
 
         /** {@inheritDoc} */
         @Override
-        public void setSimpleWeaponSpeed(final boolean simpleWeaponSpeed)
-        {
+        public void setSimpleWeaponSpeed(final boolean simpleWeaponSpeed) {
             Stats.this.setSimpleWeaponSpeed(simpleWeaponSpeed);
         }
 
         /** {@inheritDoc} */
         @Override
-        public void statInt2Received(final int stat, final short param)
-        {
-            switch (stat)
-            {
+        public void statInt2Received(final int stat, final short param) {
+            switch (stat) {
             case CS_STAT_HP:
             case CS_STAT_MAXHP:
             case CS_STAT_SP:
@@ -149,8 +144,7 @@ public class Stats
             case CS_STAT_GRACE:
             case CS_STAT_MAXGRACE:
                 setStat(stat, param);
-                if (stat == CS_STAT_LEVEL)
-                {
+                if (stat == CS_STAT_LEVEL) {
                     calcExperienceToNextLevel();
                 }
                 break;
@@ -160,12 +154,9 @@ public class Stats
                 break;
 
             default:
-                if (CS_STAT_RESIST_START <= stat && stat < CS_STAT_RESIST_START+RESIST_TYPES)
-                {
+                if (CS_STAT_RESIST_START <= stat && stat < CS_STAT_RESIST_START+RESIST_TYPES) {
                     setStat(stat, param);
-                }
-                else
-                {
+                } else {
                     reportUnhandledStat(stat, "int2");
                 }
                 break;
@@ -174,10 +165,8 @@ public class Stats
 
         /** {@inheritDoc} */
         @Override
-        public void statInt4Received(final int stat, final int param)
-        {
-            switch (stat)
-            {
+        public void statInt4Received(final int stat, final int param) {
+            switch (stat) {
             case CS_STAT_EXP:
                 setExperience(param&0xFFFFFFFFL);
                 break;
@@ -199,10 +188,8 @@ public class Stats
 
         /** {@inheritDoc} */
         @Override
-        public void statInt8Received(final int stat, final long param)
-        {
-            switch (stat)
-            {
+        public void statInt8Received(final int stat, final long param) {
+            switch (stat) {
             case CS_STAT_EXP64:
                 setExperience(param);
                 break;
@@ -215,10 +202,8 @@ public class Stats
 
         /** {@inheritDoc} */
         @Override
-        public void statStringReceived(final int stat, @NotNull final String param)
-        {
-            switch (stat)
-            {
+        public void statStringReceived(final int stat, @NotNull final String param) {
+            switch (stat) {
             case CS_STAT_RANGE:
                 setRange(param);
                 break;
@@ -235,22 +220,15 @@ public class Stats
 
         /** {@inheritDoc} */
         @Override
-        public void statSkillReceived(final int stat, final int level, final long experience)
-        {
-            if (CS_STAT_SKILLINFO <= stat && stat < CS_STAT_SKILLINFO+CS_NUM_SKILLS)
-            {
+        public void statSkillReceived(final int stat, final int level, final long experience) {
+            if (CS_STAT_SKILLINFO <= stat && stat < CS_STAT_SKILLINFO+CS_NUM_SKILLS) {
                 final Skill sk = skillSet.getSkill(stat);
-                if (sk == null)
-                {
+                if (sk == null) {
                     System.err.println("ignoring skill value for unknown skill "+stat);
-                }
-                else
-                {
+                } else {
                     sk.set(level, experience);
                 }
-            }
-            else
-            {
+            } else {
                 reportUnhandledStat(stat, "skill");
             }
         }
@@ -260,10 +238,8 @@ public class Stats
          * @param stat the stat value
          * @param type the stat type
          */
-        private void reportUnhandledStat(final int stat, @NotNull final String type)
-        {
-            if (unhandledStats.add(type+"-"+stat))
-            {
+        private void reportUnhandledStat(final int stat, @NotNull final String type) {
+            if (unhandledStats.add(type+"-"+stat)) {
                 System.err.println("Warning: unhandled stat "+stat+" of type "+type);
             }
         }
@@ -274,54 +250,46 @@ public class Stats
      * connections.
      */
     @NotNull
-    private final GuiStateListener guiStateListener = new GuiStateListener()
-    {
+    private final GuiStateListener guiStateListener = new GuiStateListener() {
         /** {@inheritDoc} */
         @Override
-        public void start()
-        {
+        public void start() {
             // ignore
         }
 
         /** {@inheritDoc} */
         @Override
-        public void metaserver()
-        {
+        public void metaserver() {
             // ignore
         }
 
         /** {@inheritDoc} */
         @Override
-        public void preConnecting(@NotNull final String serverInfo)
-        {
+        public void preConnecting(@NotNull final String serverInfo) {
             // ignore
         }
 
         /** {@inheritDoc} */
         @Override
-        public void connecting(@NotNull final String serverInfo)
-        {
+        public void connecting(@NotNull final String serverInfo) {
             reset();
         }
 
         /** {@inheritDoc} */
         @Override
-        public void connecting(@NotNull final ClientSocketState clientSocketState)
-        {
+        public void connecting(@NotNull final ClientSocketState clientSocketState) {
             // ignore
         }
 
         /** {@inheritDoc} */
         @Override
-        public void connected()
-        {
+        public void connected() {
             // ignore
         }
 
         /** {@inheritDoc} */
         @Override
-        public void connectFailed(@NotNull final String reason)
-        {
+        public void connectFailed(@NotNull final String reason) {
             // ignore
         }
     };
@@ -333,8 +301,7 @@ public class Stats
      * @param skillSet the skill set instance to use
      * @param guiStateManager the gui state manager to watch
      */
-    public Stats(@NotNull final CrossfireServerConnection crossfireServerConnection, @NotNull final ExperienceTable experienceTable, @NotNull final SkillSet skillSet, @NotNull final GuiStateManager guiStateManager)
-    {
+    public Stats(@NotNull final CrossfireServerConnection crossfireServerConnection, @NotNull final ExperienceTable experienceTable, @NotNull final SkillSet skillSet, @NotNull final GuiStateManager guiStateManager) {
         this.experienceTable = experienceTable; // XXX: should detect changed information
         this.skillSet = skillSet;
         crossfireServerConnection.addCrossfireStatsListener(crossfireStatsListener);
@@ -342,22 +309,18 @@ public class Stats
     }
 
     /**
-     * Set whether the {@link CrossfireStatsListener#CS_STAT_WEAP_SP} value contains the weapon speed
-     * directly.
-     *
+     * Set whether the {@link CrossfireStatsListener#CS_STAT_WEAP_SP} value
+     * contains the weapon speed directly.
      * @param simpleWeaponSpeed Whether <code>CS_STAT_WEAP_SP</code> is the
      * weapon speed value.
      */
-    private void setSimpleWeaponSpeed(final boolean simpleWeaponSpeed)
-    {
-        if (this.simpleWeaponSpeed == simpleWeaponSpeed)
-        {
+    private void setSimpleWeaponSpeed(final boolean simpleWeaponSpeed) {
+        if (this.simpleWeaponSpeed == simpleWeaponSpeed) {
             return;
         }
 
         this.simpleWeaponSpeed = simpleWeaponSpeed;
-        for (final StatsListener statsListener : statsListeners)
-        {
+        for (final StatsListener statsListener : statsListeners) {
             statsListener.simpleWeaponSpeedChanged(this.simpleWeaponSpeed);
         }
     }
@@ -365,14 +328,11 @@ public class Stats
     /**
      * Forget about all stats.
      */
-    private void reset()
-    {
-        for (final StatsListener statsListener : statsListeners)
-        {
+    private void reset() {
+        for (final StatsListener statsListener : statsListeners) {
             statsListener.reset();
         }
-        for (int statnr = 0; statnr < stats.length; statnr++)
-        {
+        for (int statnr = 0; statnr < stats.length; statnr++) {
             setStat(statnr, 0);
         }
         setExperience(0);
@@ -386,8 +346,7 @@ public class Stats
      * @param statnr The stat identifier. See the CS_STAT constants.
      * @return The statistic value (or "score").
      */
-    public int getStat(final int statnr)
-    {
+    public int getStat(final int statnr) {
         return stats[statnr];
     }
 
@@ -396,8 +355,7 @@ public class Stats
      * @param statnr The stat identifier. See the CS_STAT constants.
      * @return The statistic value.
      */
-    public double getFloatStat(final int statnr)
-    {
+    public double getFloatStat(final int statnr) {
         return (double)stats[statnr]/CrossfireStatsListener.FLOAT_MULTI;
     }
 
@@ -406,15 +364,13 @@ public class Stats
      * @param statnr The stat identifier. See the CS_STAT constants.
      * @param value The value to assign to the chosen statistic.
      */
-    public void setStat(final int statnr, final int value)
-    {
+    public void setStat(final int statnr, final int value) {
         if (stats[statnr] == value) {
             return;
         }
 
         stats[statnr] = value;
-        for (final StatsListener statsListener : statsListeners)
-        {
+        for (final StatsListener statsListener : statsListeners) {
             statsListener.statChanged(statnr, stats[statnr]);
         }
     }
@@ -424,8 +380,7 @@ public class Stats
      * @return A String representation of the Title.
      */
     @NotNull
-    public String getTitle()
-    {
+    public String getTitle() {
         return title;
     }
 
@@ -435,19 +390,16 @@ public class Stats
      * @return A String representation of the Range.
      */
     @NotNull
-    public String getRange()
-    {
+    public String getRange() {
         return range;
     }
 
     /**
      * Returns the active skill name.
-     *
      * @return The active skill name.
      */
     @NotNull
-    public String getActiveSkill()
-    {
+    public String getActiveSkill() {
         return activeSkill;
     }
 
@@ -455,16 +407,13 @@ public class Stats
      * Sets the current Title.
      * @param title The new Title content.
      */
-    private void setTitle(@NotNull final String title)
-    {
-        if (this.title.equals(title))
-        {
+    private void setTitle(@NotNull final String title) {
+        if (this.title.equals(title)) {
             return;
         }
 
         this.title = title;
-        for (final StatsListener statsListener : statsListeners)
-        {
+        for (final StatsListener statsListener : statsListeners) {
             statsListener.titleChanged(this.title);
         }
     }
@@ -474,35 +423,28 @@ public class Stats
      * active skill for the player.
      * @param range The new content of Range.
      */
-    private void setRange(@NotNull final String range)
-    {
-        if (this.range.equals(range))
-        {
+    private void setRange(@NotNull final String range) {
+        if (this.range.equals(range)) {
             return;
         }
 
         this.range = range;
-        for (final StatsListener statsListener : statsListeners)
-        {
+        for (final StatsListener statsListener : statsListeners) {
             statsListener.rangeChanged(this.range);
         }
     }
 
     /**
      * Set the active skill name.
-     *
      * @param activeSkill The active skill name.
      */
-    public void setActiveSkill(@NotNull final String activeSkill)
-    {
-        if (this.activeSkill.equals(activeSkill))
-        {
+    public void setActiveSkill(@NotNull final String activeSkill) {
+        if (this.activeSkill.equals(activeSkill)) {
             return;
         }
 
         this.activeSkill = activeSkill;
-        for (final StatsListener statsListener : statsListeners)
-        {
+        for (final StatsListener statsListener : statsListeners) {
             statsListener.activeSkillChanged(this.activeSkill);
         }
     }
@@ -511,8 +453,7 @@ public class Stats
      * Returns the amount of global experience.
      * @return Amount of global experience.
      */
-    public long getExperience()
-    {
+    public long getExperience() {
         return exp;
     }
 
@@ -520,16 +461,13 @@ public class Stats
      * Sets the amount of global experience.
      * @param exp The new amount of global experience.
      */
-    private void setExperience(final long exp)
-    {
-        if (this.exp == exp)
-        {
+    private void setExperience(final long exp) {
+        if (this.exp == exp) {
             return;
         }
 
         this.exp = exp;
-        for (final StatsListener statsListener : statsListeners)
-        {
+        for (final StatsListener statsListener : statsListeners) {
             statsListener.experienceChanged(this.exp);
         }
 
@@ -540,25 +478,21 @@ public class Stats
      * Returns the experience needed to reach the next level.
      * @return the experience needed
      */
-    public long getExperienceNextLevel()
-    {
+    public long getExperienceNextLevel() {
         return expNextLevel;
     }
 
     /**
      * Calculates experience needed to reach the next level.
      */
-    private void calcExperienceToNextLevel()
-    {
+    private void calcExperienceToNextLevel() {
         final long newExpNextLevel = experienceTable.getExperienceToNextLevel(stats[CrossfireStatsListener.CS_STAT_LEVEL], exp);
-        if (expNextLevel == newExpNextLevel)
-        {
+        if (expNextLevel == newExpNextLevel) {
             return;
         }
 
         expNextLevel = newExpNextLevel;
-        for (final StatsListener statsListener : statsListeners)
-        {
+        for (final StatsListener statsListener : statsListeners) {
             statsListener.experienceNextLevelChanged(expNextLevel);
         }
     }
@@ -567,8 +501,7 @@ public class Stats
      * Adds a {@link StatsListener} to be notified about stat changes.
      * @param statsListener the listener to add
      */
-    public void addCrossfireStatsListener(@NotNull final StatsListener statsListener)
-    {
+    public void addCrossfireStatsListener(@NotNull final StatsListener statsListener) {
         statsListeners.add(statsListener);
     }
 
@@ -576,29 +509,25 @@ public class Stats
      * Removes a {@link StatsListener} to be notified about stat changes.
      * @param statsListener the listener to remove
      */
-    public void removeCrossfireStatsListener(@NotNull final StatsListener statsListener)
-    {
+    public void removeCrossfireStatsListener(@NotNull final StatsListener statsListener) {
         statsListeners.remove(statsListener);
     }
 
     /**
      * Return the weapon speed stat.
-     *
      * @return The weapon speed stat.
      */
-    public double getWeaponSpeed()
-    {
+    public double getWeaponSpeed() {
         final double weaponSpeed = getFloatStat(CrossfireStatsListener.CS_STAT_WEAP_SP);
-        if (simpleWeaponSpeed)
-        {
+        if (simpleWeaponSpeed) {
             return weaponSpeed;
         }
 
-        if (weaponSpeed < 0.001)
-        {
+        if (weaponSpeed < 0.001) {
             return 0;
         }
 
         return getFloatStat(CrossfireStatsListener.CS_STAT_SPEED)/weaponSpeed;
     }
+
 }

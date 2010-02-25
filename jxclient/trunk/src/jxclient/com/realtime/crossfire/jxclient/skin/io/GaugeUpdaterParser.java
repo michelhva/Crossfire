@@ -37,8 +37,8 @@ import org.jetbrains.annotations.NotNull;
  * Creates {@link GaugeUpdater} instances from strig representations.
  * @author Andreas Kirschbaum
  */
-public class GaugeUpdaterParser
-{
+public class GaugeUpdaterParser {
+
     /**
      * The {@link Stats} instance to use.
      */
@@ -63,8 +63,7 @@ public class GaugeUpdaterParser
      * @param itemsManager the items manager instance to use
      * @param skillSet the skill set for looking up skill names
      */
-    public GaugeUpdaterParser(@NotNull final Stats stats, @NotNull final ItemsManager itemsManager, @NotNull final SkillSet skillSet)
-    {
+    public GaugeUpdaterParser(@NotNull final Stats stats, @NotNull final ItemsManager itemsManager, @NotNull final SkillSet skillSet) {
         this.stats = stats;
         this.itemsManager = itemsManager;
         this.skillSet = skillSet;
@@ -78,27 +77,22 @@ public class GaugeUpdaterParser
      * @throws IOException if the gauge updater value does not exist
      */
     @NotNull
-    public GaugeUpdater parseGaugeUpdater(@NotNull final String name, @NotNull final ExperienceTable experienceTable) throws IOException
-    {
-        try
-        {
+    public GaugeUpdater parseGaugeUpdater(@NotNull final String name, @NotNull final ExperienceTable experienceTable) throws IOException {
+        try {
             return new StatGaugeUpdater(experienceTable, StatsParser.parseStat(name), stats, itemsManager);
-        }
-        catch (final IllegalArgumentException ex)
-        {
+        } catch (final IllegalArgumentException ex) {
             // ignore
         }
 
-        if (name.startsWith("SKILL_"))
-        {
+        if (name.startsWith("SKILL_")) {
             return new SkillGaugeUpdater(experienceTable, skillSet.getNamedSkill(name.substring(6).replaceAll("_", " ")));
         }
 
-        if (name.startsWith("ACTIVE_SKILL_"))
-        {
+        if (name.startsWith("ACTIVE_SKILL_")) {
             return new ActiveSkillGaugeUpdater(experienceTable, name.substring(13).replaceAll("_", " "), stats);
         }
 
         throw new IOException("invalid stat name: "+name);
     }
+
 }

@@ -37,8 +37,8 @@ import org.jetbrains.annotations.Nullable;
  * Maintain the set of skills as sent by the server.
  * @author Andreas Kirschbaum
  */
-public class SkillSet
-{
+public class SkillSet {
+
     /**
      * Maps stat number to skill instance. Entries may be <code>null</code> if
      * the server did not provide a mapping.
@@ -57,20 +57,17 @@ public class SkillSet
      * for detecting changed skill info.
      */
     @NotNull
-    private final CrossfireSkillInfoListener crossfireSkillInfoListener = new CrossfireSkillInfoListener()
-    {
+    private final CrossfireSkillInfoListener crossfireSkillInfoListener = new CrossfireSkillInfoListener() {
         /** {@inheritDoc} */
         @Override
-        public void clearSkills()
-        {
+        public void clearSkills() {
             clearNumberedSkills();
             Arrays.fill(numberedSkills, null);
         }
 
         /** {@inheritDoc} */
         @Override
-        public void addSkill(final int skillId, @NotNull final String skillName)
-        {
+        public void addSkill(final int skillId, @NotNull final String skillName) {
             SkillSet.this.addSkill(skillId, skillName);
         }
     };
@@ -80,54 +77,46 @@ public class SkillSet
      * connections.
      */
     @NotNull
-    private final GuiStateListener guiStateListener = new GuiStateListener()
-    {
+    private final GuiStateListener guiStateListener = new GuiStateListener() {
         /** {@inheritDoc} */
         @Override
-        public void start()
-        {
+        public void start() {
             // ignore
         }
 
         /** {@inheritDoc} */
         @Override
-        public void metaserver()
-        {
+        public void metaserver() {
             // ignore
         }
 
         /** {@inheritDoc} */
         @Override
-        public void preConnecting(@NotNull final String serverInfo)
-        {
+        public void preConnecting(@NotNull final String serverInfo) {
             // ignore
         }
 
         /** {@inheritDoc} */
         @Override
-        public void connecting(@NotNull final String serverInfo)
-        {
+        public void connecting(@NotNull final String serverInfo) {
             clearNumberedSkills();
         }
 
         /** {@inheritDoc} */
         @Override
-        public void connecting(@NotNull final ClientSocketState clientSocketState)
-        {
+        public void connecting(@NotNull final ClientSocketState clientSocketState) {
             // ignore
         }
 
         /** {@inheritDoc} */
         @Override
-        public void connected()
-        {
+        public void connected() {
             // ignore
         }
 
         /** {@inheritDoc} */
         @Override
-        public void connectFailed(@NotNull final String reason)
-        {
+        public void connectFailed(@NotNull final String reason) {
             // ignore
         }
     };
@@ -137,8 +126,7 @@ public class SkillSet
      * @param crossfireServerConnection the server connection to monitor
      * @param guiStateManager the gui state manager to watch
      */
-    public SkillSet(@NotNull final CrossfireServerConnection crossfireServerConnection, @NotNull final GuiStateManager guiStateManager)
-    {
+    public SkillSet(@NotNull final CrossfireServerConnection crossfireServerConnection, @NotNull final GuiStateManager guiStateManager) {
         crossfireServerConnection.addCrossfireSkillInfoListener(crossfireSkillInfoListener);
         guiStateManager.addGuiStateListener(guiStateListener);
     }
@@ -148,18 +136,15 @@ public class SkillSet
      * @param id The numerical identifier for the new skill.
      * @param skillName The skill name.
      */
-    private void addSkill(final int id, @NotNull final String skillName)
-    {
+    private void addSkill(final int id, @NotNull final String skillName) {
         final int index = id-CrossfireStatsListener.CS_STAT_SKILLINFO;
         final Skill oldSkill = numberedSkills[index];
         final Skill newSkill = getNamedSkill(skillName);
-        if (oldSkill == newSkill)
-        {
+        if (oldSkill == newSkill) {
             return;
         }
 
-        if (oldSkill != null)
-        {
+        if (oldSkill != null) {
             oldSkill.set(0, 0);
         }
         numberedSkills[index] = newSkill;
@@ -167,16 +152,12 @@ public class SkillSet
 
     /**
      * Return the skill instance for a given skill name.
-     *
      * @param skillName The skill name to look up.
-     *
      * @return The skill instance.
      */
-    public Skill getNamedSkill(final String skillName)
-    {
+    public Skill getNamedSkill(final String skillName) {
         final Skill oldSkill = namedSkills.get(skillName);
-        if (oldSkill != null)
-        {
+        if (oldSkill != null) {
             return oldSkill;
         }
 
@@ -188,12 +169,9 @@ public class SkillSet
     /**
      * Clears all stat info in {@link #numberedSkills}.
      */
-    public void clearNumberedSkills()
-    {
-        for (final Skill skill : numberedSkills)
-        {
-            if (skill != null)
-            {
+    public void clearNumberedSkills() {
+        for (final Skill skill : numberedSkills) {
+            if (skill != null) {
                 skill.set(0, 0);
             }
         }
@@ -203,11 +181,11 @@ public class SkillSet
      * Returns the given skill as a Skill object.
      * @param id The numerical skill identifier.
      * @return The Skill object matching the given identifier; may be
-     * <code>null</code> for undefined skills.
+     *         <code>null</code> for undefined skills.
      */
     @Nullable
-    public Skill getSkill(final int id)
-    {
+    public Skill getSkill(final int id) {
         return numberedSkills[id-CrossfireStatsListener.CS_STAT_SKILLINFO];
     }
+
 }

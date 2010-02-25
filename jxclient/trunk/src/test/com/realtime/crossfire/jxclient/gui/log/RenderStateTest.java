@@ -41,11 +41,10 @@ import org.jetbrains.annotations.Nullable;
 
 /**
  * Regression tests for class {@link RenderState}.
- *
  * @author Andreas Kirschbaum
  */
-public class RenderStateTest extends TestCase
-{
+public class RenderStateTest extends TestCase {
+
     /**
      * Assumed height of log window.
      */
@@ -59,36 +58,29 @@ public class RenderStateTest extends TestCase
 
     /**
      * Create a new instance.
-     *
      * @param name the test case name
      */
-    public RenderStateTest(@NotNull final String name)
-    {
+    public RenderStateTest(@NotNull final String name) {
         super(name);
     }
 
     @NotNull
-    public static Test suite()
-    {
+    public static Test suite() {
         return new TestSuite(RenderStateTest.class);
     }
 
     /**
      * Run the regression tests.
-     *
      * @param args The command line arguments (ignored).
      */
-    public static void main(@NotNull final String[] args)
-    {
+    public static void main(@NotNull final String[] args) {
         TestRunner.run(suite());
     }
 
-    public void test1()
-    {
+    public void test1() {
         final Parser parser = new Parser();
 
-        for (int i = 0; i < HEIGHT+10; i++)
-        {
+        for (int i = 0; i < HEIGHT+10; i++) {
             parser.parse("xxx", null, buffer);
         }
         checkState(10, 0, 10);
@@ -114,8 +106,7 @@ public class RenderStateTest extends TestCase
         checkState(10, 0, 10);
     }
 
-    public void test2()
-    {
+    public void test2() {
         final Parser parser = new Parser();
 
         checkState(0, 0, 0);
@@ -125,8 +116,7 @@ public class RenderStateTest extends TestCase
         checkState(0, 0, 0);
 
         // add lines to completely fill visible area
-        for (int i = 2; i < HEIGHT; i++)
-        {
+        for (int i = 2; i < HEIGHT; i++) {
             parser.parse("xxx", null, buffer);
         }
         checkState(0, 0, 0);
@@ -156,8 +146,7 @@ public class RenderStateTest extends TestCase
         checkState(4, 0, 4);
 
         // completely fill buffer
-        for (int i = HEIGHT+4; i < Buffer.MAX_LINES; i++)
-        {
+        for (int i = HEIGHT+4; i < Buffer.MAX_LINES; i++) {
             parser.parse("xxx", null, buffer);
         }
         checkState(Buffer.MAX_LINES-HEIGHT, 0, Buffer.MAX_LINES-HEIGHT);
@@ -171,8 +160,7 @@ public class RenderStateTest extends TestCase
         checkState(Buffer.MAX_LINES-HEIGHT-1, 0, Buffer.MAX_LINES-HEIGHT-1);
 
         // fill more lines ==> scroll position sticks
-        for (int i = 0; i < Buffer.MAX_LINES-HEIGHT-2; i++)
-        {
+        for (int i = 0; i < Buffer.MAX_LINES-HEIGHT-2; i++) {
             parser.parse("xxx", null, buffer);
         }
         checkState(1, 0, 1);
@@ -184,21 +172,20 @@ public class RenderStateTest extends TestCase
         checkState(0, 0, 0);
     }
 
-    private void checkState(final int expectedTopIndex, final int expectedTopOffset, final int expectedScrollPos)
-    {
+    private void checkState(final int expectedTopIndex, final int expectedTopOffset, final int expectedScrollPos) {
         assertEquals(formatState(expectedTopIndex, expectedTopOffset, expectedScrollPos), formatState(rs.getTopIndex(), rs.getTopOffset(), rs.getScrollPos()));
     }
 
     @NotNull
-    private String formatState(final int topIndex, final int topOffset, final int scrollPos)
-    {
+    private String formatState(final int topIndex, final int topOffset, final int scrollPos) {
         return "top="+topIndex+"/"+topOffset+" pos="+scrollPos+"/"+buffer.getTotalHeight();
     }
 
-    /** {@inheritDoc} */
+    /**
+     * {@inheritDoc}
+     */
     @Override
-    public void setUp() throws FontFormatException, IOException
-    {
+    public void setUp() throws FontFormatException, IOException {
         final GraphicsEnvironment ge = GraphicsEnvironment.getLocalGraphicsEnvironment();
         final GraphicsDevice gd = ge.getDefaultScreenDevice();
         final GraphicsConfiguration gconf = gd.getDefaultConfiguration();
@@ -206,12 +193,9 @@ public class RenderStateTest extends TestCase
         final Graphics2D g = image.createGraphics();
         final Font font;
         final FileInputStream fis = new FileInputStream("skins/ragnorok/fonts/regular.ttf");
-        try
-        {
+        try {
             font = Font.createFont(Font.TRUETYPE_FONT, fis);
-        }
-        finally
-        {
+        } finally {
             fis.close();
         }
         buffer = new Buffer(new Fonts(font, font, font, font), g.getFontRenderContext(), 100);
@@ -219,28 +203,25 @@ public class RenderStateTest extends TestCase
         rs = new RenderState();
         rs.setHeight(buffer, HEIGHT);
 
-        buffer.addBufferListener(new BufferListener()
-            {
-                /** {@inheritDoc} */
-                @Override
-                public void linesAdded(final int lines)
-                {
-                    rs.linesAdded(buffer, lines);
-                }
+        buffer.addBufferListener(new BufferListener() {
+            /** {@inheritDoc} */
+            @Override
+            public void linesAdded(final int lines) {
+                rs.linesAdded(buffer, lines);
+            }
 
-                /** {@inheritDoc} */
-                @Override
-                public void linesReplaced(final int lines)
-                {
-                    rs.linesReplaced(buffer, lines);
-                }
+            /** {@inheritDoc} */
+            @Override
+            public void linesReplaced(final int lines) {
+                rs.linesReplaced(buffer, lines);
+            }
 
-                /** {@inheritDoc} */
-                @Override
-                public void linesRemoved(@NotNull final List<Line> lines)
-                {
-                    rs.linesRemoved(buffer, lines);
-                }
-            });
+            /** {@inheritDoc} */
+            @Override
+            public void linesRemoved(@NotNull final List<Line> lines) {
+                rs.linesRemoved(buffer, lines);
+            }
+        });
     }
+
 }

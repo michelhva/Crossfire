@@ -33,8 +33,8 @@ import org.jetbrains.annotations.NotNull;
  * Adds drawinfo, drawextinfo, and query messages to a {@link Buffer} instance.
  * @author Andreas Kirschbaum
  */
-public class MessageBufferUpdater
-{
+public class MessageBufferUpdater {
+
     /**
      * The number of supported colors.
      */
@@ -44,29 +44,40 @@ public class MessageBufferUpdater
      * Maps color index to color.
      */
     @NotNull
-    private final Color[] colors =
-    {
-        Color.BLACK,            // black
-        Color.WHITE,            // white
-        Color.BLUE,             // navy blue
-        Color.RED,              // red
-        Color.ORANGE,           // orange
-        Color.CYAN,             // dodger blue
-        new Color(0xFFC000),    // dark orange
-        Color.GREEN,            // sea green
-        new Color(0x008000),    // dark sea green
-        Color.GRAY,             // grey
-        new Color(0x806000),    // brown sienna
-        Color.YELLOW,           // gold
-        new Color(0xBDB76B),    // khaki
+    private final Color[] colors = {
+        Color.BLACK,
+        // black
+        Color.WHITE,
+        // white
+        Color.BLUE,
+        // navy blue
+        Color.RED,
+        // red
+        Color.ORANGE,
+        // orange
+        Color.CYAN,
+        // dodger blue
+        new Color(0xFFC000),
+        // dark orange
+        Color.GREEN,
+        // sea green
+        new Color(0x008000),
+        // dark sea green
+        Color.GRAY,
+        // grey
+        new Color(0x806000),
+        // brown sienna
+        Color.YELLOW,
+        // gold
+        new Color(0xBDB76B),
+        // khaki
     };
 
     /**
      * The colors names corresponding to {@link #colors}.
      */
     @NotNull
-    private static final String[] COLOR_NAMES =
-    {
+    private static final String[] COLOR_NAMES = {
         "black",
         "white",
         "navy blue",
@@ -115,14 +126,11 @@ public class MessageBufferUpdater
      * The {@link CrossfireQueryListener} registered to receive query commands.
      */
     @NotNull
-    private final CrossfireQueryListener crossfireQueryListener = new CrossfireQueryListener()
-    {
+    private final CrossfireQueryListener crossfireQueryListener = new CrossfireQueryListener() {
         /** {@inheritDoc} */
         @Override
-        public void commandQueryReceived(@NotNull final String prompt, final int queryType)
-        {
-            if (isTypeShown(MessageTypes.MSG_TYPE_QUERY))
-            {
+        public void commandQueryReceived(@NotNull final String prompt, final int queryType) {
+            if (isTypeShown(MessageTypes.MSG_TYPE_QUERY)) {
                 parser.parseWithoutMediaTags(prompt, Color.RED, buffer);
             }
         }
@@ -133,21 +141,15 @@ public class MessageBufferUpdater
      * drawextinfo commands.
      */
     @NotNull
-    private final CrossfireDrawextinfoListener crossfireDrawextinfoListener = new CrossfireDrawextinfoListener()
-    {
+    private final CrossfireDrawextinfoListener crossfireDrawextinfoListener = new CrossfireDrawextinfoListener() {
         /** {@inheritDoc} */
         @Override
-        public void commandDrawextinfoReceived(final int color, final int type, final int subtype, @NotNull final String message)
-        {
+        public void commandDrawextinfoReceived(final int color, final int type, final int subtype, @NotNull final String message) {
             if (type == MessageTypes.MSG_TYPE_QUERY // should not happen; but if it happens just display it
-            || isTypeShown(type))
-            {
-                if (type == MessageTypes.MSG_TYPE_COMMUNICATION)
-                {
+                || isTypeShown(type)) {
+                if (type == MessageTypes.MSG_TYPE_COMMUNICATION) {
                     parser.parseWithoutMediaTags(message, findColor(color), buffer);
-                }
-                else
-                {
+                } else {
                     parser.parse(message, findColor(color), buffer);
                 }
             }
@@ -159,16 +161,13 @@ public class MessageBufferUpdater
      * commands.
      */
     @NotNull
-    private final CrossfireDrawinfoListener crossfireDrawinfoListener = new CrossfireDrawinfoListener()
-    {
+    private final CrossfireDrawinfoListener crossfireDrawinfoListener = new CrossfireDrawinfoListener() {
         /** {@inheritDoc} */
         @Override
-        public void commandDrawinfoReceived(@NotNull final String text, final int type)
-        {
+        public void commandDrawinfoReceived(@NotNull final String text, final int type) {
             // guess category from message color
             final int messageType;
-            switch (type)
-            {
+            switch (type) {
             case NDI_WHITE:
             case NDI_ORANGE:
             case NDI_BLUE:
@@ -181,8 +180,7 @@ public class MessageBufferUpdater
                 break;
             }
 
-            if (isTypeShown(messageType))
-            {
+            if (isTypeShown(messageType)) {
                 parser.parseWithoutMediaTags(text, findColor(type), buffer);
             }
         }
@@ -195,8 +193,7 @@ public class MessageBufferUpdater
      * @param defaultColor the default color to use for undefined colors
      * indices
      */
-    public MessageBufferUpdater(@NotNull final CrossfireServerConnection crossfireServerConnection, @NotNull final Buffer buffer, @NotNull final Color defaultColor)
-    {
+    public MessageBufferUpdater(@NotNull final CrossfireServerConnection crossfireServerConnection, @NotNull final Buffer buffer, @NotNull final Color defaultColor) {
         this.crossfireServerConnection = crossfireServerConnection;
         this.buffer = buffer;
         this.defaultColor = defaultColor;
@@ -205,8 +202,7 @@ public class MessageBufferUpdater
         this.crossfireServerConnection.addCrossfireDrawinfoListener(crossfireDrawinfoListener);
     }
 
-    public void dispose()
-    {
+    public void dispose() {
         crossfireServerConnection.removeCrossfireQueryListener(crossfireQueryListener);
         crossfireServerConnection.removeCrossfireDrawextinfoListener(crossfireDrawextinfoListener);
         crossfireServerConnection.removeCrossfireDrawinfoListener(crossfireDrawinfoListener);
@@ -218,14 +214,10 @@ public class MessageBufferUpdater
      * @return the color
      */
     @NotNull
-    private Color findColor(final int index)
-    {
-        try
-        {
+    private Color findColor(final int index) {
+        try {
             return colors[index];
-        }
-        catch (final ArrayIndexOutOfBoundsException ex)
-        {
+        } catch (final ArrayIndexOutOfBoundsException ex) {
             return defaultColor;
         }
     }
@@ -236,14 +228,10 @@ public class MessageBufferUpdater
      * @return the color name
      */
     @NotNull
-    public static String getColorName(final int index)
-    {
-        try
-        {
+    public static String getColorName(final int index) {
+        try {
             return COLOR_NAMES[index];
-        }
-        catch (final ArrayIndexOutOfBoundsException ex)
-        {
+        } catch (final ArrayIndexOutOfBoundsException ex) {
             return "undefined";
         }
     }
@@ -253,8 +241,7 @@ public class MessageBufferUpdater
      * @param index the color index to change
      * @param color the color to map to
      */
-    public void setColor(final int index, @NotNull final Color color)
-    {
+    public void setColor(final int index, @NotNull final Color color) {
         colors[index] = color;
     }
 
@@ -262,8 +249,7 @@ public class MessageBufferUpdater
      * Sets the message types to show.
      * @param types the types to show
      */
-    public void setTypes(final int types)
-    {
+    public void setTypes(final int types) {
         this.types = types;
     }
 
@@ -272,8 +258,8 @@ public class MessageBufferUpdater
      * @param type the message type
      * @return whether the message type should be shown
      */
-    private boolean isTypeShown(final int type)
-    {
+    private boolean isTypeShown(final int type) {
         return type < 0 || type > 31 || (types&(1<<type)) != 0;
     }
+
 }

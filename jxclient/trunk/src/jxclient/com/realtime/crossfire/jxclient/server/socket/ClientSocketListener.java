@@ -27,8 +27,8 @@ import org.jetbrains.annotations.NotNull;
  * Interface for listeners interested in {@link ClientSocket} related events.
  * @author Andreas Kirschbaum
  */
-public interface ClientSocketListener
-{
+public interface ClientSocketListener {
+
     /**
      * Called when connecting to a Crossfire server.
      */
@@ -66,4 +66,5 @@ public interface ClientSocketListener
      * @param reason the disconnect reason
      */
     void disconnected(@NotNull String reason);
+
 }

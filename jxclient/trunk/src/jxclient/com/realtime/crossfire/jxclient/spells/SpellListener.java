@@ -25,10 +25,11 @@ package com.realtime.crossfire.jxclient.spells;
  * Interface for listeners interested in {@link Spell} related events.
  * @author Andreas Kirschbaum
  */
-public interface SpellListener
-{
+public interface SpellListener {
+
     /**
      * The associated {@link Spell} instance has changed.
      */
     void spellChanged();
+
 }

@@ -28,14 +28,13 @@ import org.jetbrains.annotations.NotNull;
 
 /**
  * A {@link GaugeUpdater} which monitors a skill.
- *
  * @author Andreas Kirschbaum
  */
-public class SkillGaugeUpdater extends GaugeUpdater
-{
+public class SkillGaugeUpdater extends GaugeUpdater {
+
     /**
      * The monitored skill.
-      */
+     */
     @NotNull
     private final Skill skill;
 
@@ -43,26 +42,22 @@ public class SkillGaugeUpdater extends GaugeUpdater
      * The {@link SkillListener} registered to be notified about skill changes.
      */
     @NotNull
-    private final SkillListener skillListener = new SkillListener()
-    {
+    private final SkillListener skillListener = new SkillListener() {
         /** {@inheritDoc} */
         @Override
-        public void gainedSkill()
-        {
+        public void gainedSkill() {
             changedSkill();
         }
 
         /** {@inheritDoc} */
         @Override
-        public void lostSkill()
-        {
+        public void lostSkill() {
             setValues(0, 0, 0, "", "");
         }
 
         /** {@inheritDoc} */
         @Override
-        public void changedSkill()
-        {
+        public void changedSkill() {
             final int percents = getPercentsToNextLevel(skill.getLevel(), skill.getExperience());
             setValues(percents, 0, 99, Integer.toString(skill.getLevel()), percents+"% "+skill.getExperience()+" (lvl "+skill.getLevel()+")");
         }
@@ -70,22 +65,21 @@ public class SkillGaugeUpdater extends GaugeUpdater
 
     /**
      * Create a new instance.
-     *
      * @param experienceTable The experience table to query.
-     *
      * @param skill The skill to monitor.
      */
-    public SkillGaugeUpdater(@NotNull final ExperienceTable experienceTable, @NotNull final Skill skill)
-    {
+    public SkillGaugeUpdater(@NotNull final ExperienceTable experienceTable, @NotNull final Skill skill) {
         super(experienceTable);
         this.skill = skill;
         this.skill.addSkillListener(skillListener);
     }
 
-    /** {@inheritDoc} */
+    /**
+     * {@inheritDoc}
+     */
     @Override
-    public void dispose()
-    {
+    public void dispose() {
         skill.removeSkillListener(skillListener);
     }
+
 }

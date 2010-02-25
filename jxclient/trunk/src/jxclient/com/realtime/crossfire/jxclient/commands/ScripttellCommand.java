@@ -32,8 +32,8 @@ import org.jetbrains.annotations.NotNull;
  * script.
  * @author Andreas Kirschbaum
  */
-public class ScripttellCommand extends AbstractCommand
-{
+public class ScripttellCommand extends AbstractCommand {
+
     /**
      * The {@link ScriptManager} to use.
      */
@@ -45,47 +45,45 @@ public class ScripttellCommand extends AbstractCommand
      * @param scriptManager the script manager to use
      * @param crossfireServerConnection the connection instance
      */
-    public ScripttellCommand(@NotNull final ScriptManager scriptManager, @NotNull final CrossfireServerConnection crossfireServerConnection)
-    {
+    public ScripttellCommand(@NotNull final ScriptManager scriptManager, @NotNull final CrossfireServerConnection crossfireServerConnection) {
         super(crossfireServerConnection);
         this.scriptManager = scriptManager;
     }
 
-    /** {@inheritDoc} */
+    /**
+     * {@inheritDoc}
+     */
     @Override
-    public boolean allArguments()
-    {
+    public boolean allArguments() {
         return false;
     }
 
-    /** {@inheritDoc} */
+    /**
+     * {@inheritDoc}
+     */
     @Override
-    public void execute(@NotNull final String args)
-    {
-        if (args.isEmpty())
-        {
+    public void execute(@NotNull final String args) {
+        if (args.isEmpty()) {
             drawInfoError("Which script do you want to talk to?");
             return;
         }
 
         final String[] tmp = args.split(" +", 2);
         final Collection<ScriptProcess> scriptProcesses = scriptManager.getScripts(tmp[0]);
-        if (scriptProcesses.isEmpty())
-        {
+        if (scriptProcesses.isEmpty()) {
             drawInfoError(scriptManager.hasScripts() ? "No matching scripts." : "No scripts running.");
             return;
         }
 
-        if (tmp.length < 2)
-        {
+        if (tmp.length < 2) {
             drawInfoError("What do you want to tell the script?");
             return;
         }
 
         final String cmd = "scripttell "+tmp[1];
-        for (final ScriptProcess scriptProcess : scriptProcesses)
-        {
+        for (final ScriptProcess scriptProcess : scriptProcesses) {
             scriptProcess.commandSent(cmd);
         }
     }
+
 }

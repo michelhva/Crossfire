@@ -38,13 +38,12 @@ import org.jetbrains.annotations.Nullable;
  * Utility class for parsing string parameters into values.
  * @author Andreas Kirschbaum
  */
-public class ParseUtils
-{
+public class ParseUtils {
+
     /**
      * Private constructor to prevent instantiation.
      */
-    private ParseUtils()
-    {
+    private ParseUtils() {
     }
 
     /**
@@ -53,14 +52,10 @@ public class ParseUtils
      * @return the stat value
      * @throws IOException if the stat value does not exist
      */
-    public static int parseStat(@NotNull final String name) throws IOException
-    {
-        try
-        {
+    public static int parseStat(@NotNull final String name) throws IOException {
+        try {
             return StatsParser.parseStat(name);
-        }
-        catch (final IllegalArgumentException ex)
-        {
+        } catch (final IllegalArgumentException ex) {
             // ignore
         }
 
@@ -74,14 +69,10 @@ public class ParseUtils
      * @throws IOException if the orientation value does not exist
      */
     @NotNull
-    public static Orientation parseOrientation(@NotNull final String name) throws IOException
-    {
-        try
-        {
+    public static Orientation parseOrientation(@NotNull final String name) throws IOException {
+        try {
             return OrientationParser.parseOrientation(name);
-        }
-        catch (final IllegalArgumentException ex)
-        {
+        } catch (final IllegalArgumentException ex) {
             // ignore
         }
 
@@ -95,11 +86,9 @@ public class ParseUtils
      * @throws IOException if the color name does not exist
      */
     @NotNull
-    public static Color parseColor(@NotNull final String name) throws IOException
-    {
+    public static Color parseColor(@NotNull final String name) throws IOException {
         final Color color = parseColorNull(name);
-        if (color != null)
-        {
+        if (color != null) {
             return color;
         }
         throw new IOException("unknown color name "+name);
@@ -111,32 +100,25 @@ public class ParseUtils
      * @return the color or <code>null</code> if the color name does not exist
      */
     @Nullable
-    public static Color parseColorNull(@NotNull final String name)
-    {
+    public static Color parseColorNull(@NotNull final String name) {
         final int pos = name.lastIndexOf('/');
-        if (pos == -1)
-        {
+        if (pos == -1) {
             return parseColorName(name);
         }
 
         int alpha = 255;
-        try
-        {
+        try {
             alpha = (int)(255*NumberParser.parseFloat(name.substring(pos+1))+0.5);
-        }
-        catch (final IOException ex)
-        {
+        } catch (final IOException ex) {
             /* ignore */
         }
-        if (alpha < 0 || alpha > 255)
-        {
+        if (alpha < 0 || alpha > 255) {
             return parseColorName(name);
         }
 
         final String colorName = name.substring(0, pos);
         final Color color = parseColorName(colorName);
-        if (alpha == 255)
-        {
+        if (alpha == 255) {
             return color;
         }
 
@@ -149,32 +131,23 @@ public class ParseUtils
      * @return the color or <code>null</code> if the color name does not exist
      */
     @Nullable
-    private static Color parseColorName(@NotNull final String name)
-    {
-        if (name.equals("BLACK"))
-        {
+    private static Color parseColorName(@NotNull final String name) {
+        if (name.equals("BLACK")) {
             return Color.BLACK;
         }
-        if (name.equals("DARK_GRAY"))
-        {
+        if (name.equals("DARK_GRAY")) {
             return Color.DARK_GRAY;
         }
-        if (name.equals("GRAY"))
-        {
+        if (name.equals("GRAY")) {
             return Color.GRAY;
         }
-        if (name.equals("WHITE"))
-        {
+        if (name.equals("WHITE")) {
             return Color.WHITE;
         }
-        if (name.length() == 7 && name.charAt(0) == '#' && name.charAt(1) != '-')
-        {
-            try
-            {
+        if (name.length() == 7 && name.charAt(0) == '#' && name.charAt(1) != '-') {
+            try {
                 return new Color(Integer.parseInt(name.substring(1), 16));
-            }
-            catch (final NumberFormatException ex)
-            {
+            } catch (final NumberFormatException ex) {
                 // ignore
             }
         }
@@ -192,41 +165,32 @@ public class ParseUtils
      * @throws IOException if reading from <code>lnr</lnr> fails
      */
     @NotNull
-    public static String parseText(@NotNull final String[] args, final int startIndex, @NotNull final LineNumberReader lnr) throws IOException
-    {
+    public static String parseText(@NotNull final String[] args, final int startIndex, @NotNull final LineNumberReader lnr) throws IOException {
         final StringBuilder text = new StringBuilder();
-        for (int i = startIndex; i < args.length; i++)
-        {
-            if (i > startIndex)
-            {
+        for (int i = startIndex; i < args.length; i++) {
+            if (i > startIndex) {
                 text.append(' ');
             }
             text.append(args[i]);
         }
-        if (text.toString().equals("<<EOF"))
-        {
+        if (text.toString().equals("<<EOF")) {
             text.setLength(0);
-            for (;;)
-            {
+            for (; ;) {
                 final String line = lnr.readLine();
-                if (line == null)
-                {
+                if (line == null) {
                     throw new IOException();
                 }
-                if (line.equals("EOF"))
-                {
+                if (line.equals("EOF")) {
                     break;
                 }
-                if (line.startsWith("#"))
-                {
+                if (line.startsWith("#")) {
                     continue;
                 }
 
                 text.append(line);
                 text.append('\n');
             }
-            if (text.length() > 0)
-            {
+            if (text.length() > 0) {
                 text.setLength(text.length()-1);
             }
         }
@@ -242,15 +206,12 @@ public class ParseUtils
      * @throws IOException if the check box option name does not exist
      */
     @NotNull
-    public static CheckBoxOption parseCheckBoxOption(@NotNull final String name, @NotNull final OptionManager optionManager) throws IOException
-    {
-        try
-        {
+    public static CheckBoxOption parseCheckBoxOption(@NotNull final String name, @NotNull final OptionManager optionManager) throws IOException {
+        try {
             return optionManager.getCheckBoxOption(name);
-        }
-        catch (final OptionException ex)
-        {
+        } catch (final OptionException ex) {
             throw new IOException(ex.getMessage());
         }
     }
+
 }

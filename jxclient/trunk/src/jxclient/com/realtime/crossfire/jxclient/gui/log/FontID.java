@@ -24,9 +24,9 @@ package com.realtime.crossfire.jxclient.gui.log;
 /**
  * Available font types.
  * @author Andreas Kirschbaum
-  */
-public enum FontID
-{
+ */
+public enum FontID {
+
     /**
      * The default font.
      */
@@ -51,4 +51,5 @@ public enum FontID
      * The font used by the [strange] tag.
      */
     STRANGE
+
 }

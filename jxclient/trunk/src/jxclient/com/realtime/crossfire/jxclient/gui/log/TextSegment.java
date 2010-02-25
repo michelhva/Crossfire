@@ -35,8 +35,8 @@ import org.jetbrains.annotations.Nullable;
  * attributes.
  * @author Andreas Kirschbaum
  */
-public class TextSegment extends AbstractSegment
-{
+public class TextSegment extends AbstractSegment {
+
     /**
      * The text to display.
      */
@@ -78,21 +78,14 @@ public class TextSegment extends AbstractSegment
 
     /**
      * Create a new segment.
-     *
      * @param text The text to display.
-     *
      * @param bold Whether bold face is enabled.
-     *
      * @param italic Whether italic face is enabled.
-     *
      * @param underline Whether underlining is enabled.
-     *
      * @param font The font to use.
-     *
      * @param color The color to use; <code>null</code> means "default color".
      */
-    public TextSegment(@NotNull final String text, final boolean bold, final boolean italic, final boolean underline, @NotNull final FontID font, @Nullable final Color color)
-    {
+    public TextSegment(@NotNull final String text, final boolean bold, final boolean italic, final boolean underline, @NotNull final FontID font, @Nullable final Color color) {
         this.text = text;
         this.bold = bold;
         this.italic = italic;
@@ -103,27 +96,21 @@ public class TextSegment extends AbstractSegment
 
     /**
      * Return the text to display.
-     *
      * @return The text to display.
      */
     @NotNull
-    public String getText()
-    {
+    public String getText() {
         return text;
     }
 
     /**
      * Return the {@link Font} to use for a given {@link Segment}.
-     *
      * @param fonts The <code>Fonts</code> instance to use.
-     *
      * @return The font.
      */
     @NotNull
-    private Font getFont(@NotNull final Fonts fonts)
-    {
-        switch (font)
-        {
+    private Font getFont(@NotNull final Fonts fonts) {
+        switch (font) {
         case PRINT:
             return fonts.getFontPrint();
 
@@ -143,32 +130,34 @@ public class TextSegment extends AbstractSegment
         throw new AssertionError();
     }
 
-    /** {@inheritDoc} */
+    /**
+     * {@inheritDoc}
+     */
     @Override
-    public void draw(@NotNull final Graphics g, final int y, @NotNull final Fonts fonts)
-    {
+    public void draw(@NotNull final Graphics g, final int y, @NotNull final Fonts fonts) {
         g.setColor(color);
         g.setFont(getFont(fonts));
         g.drawString(text, x, y+this.y);
-        if (underline)
-        {
+        if (underline) {
             g.drawLine(x, y+this.y+underlineOffset, x+width-1, y+this.y+underlineOffset);
         }
     }
 
-    /** {@inheritDoc} */
+    /**
+     * {@inheritDoc}
+     */
     @Override
-    public void updateAttributes(@NotNull final Fonts fonts, @NotNull final FontRenderContext context)
-    {
+    public void updateAttributes(@NotNull final Fonts fonts, @NotNull final FontRenderContext context) {
         final LineMetrics lineMetrics = getFont(fonts).getLineMetrics(text, context);
         underlineOffset = Math.round(lineMetrics.getUnderlineOffset());
     }
 
-    /** {@inheritDoc} */
+    /**
+     * {@inheritDoc}
+     */
     @NotNull
     @Override
-    public RectangularShape getSize(@NotNull final Fonts fonts, @NotNull final FontRenderContext context)
-    {
+    public RectangularShape getSize(@NotNull final Fonts fonts, @NotNull final FontRenderContext context) {
         return getFont(fonts).getStringBounds(text, context);
     }
 
@@ -181,44 +170,36 @@ public class TextSegment extends AbstractSegment
      * @param color the color attribute
      * @return whether all attributes do match
      */
-    public boolean matches(final boolean bold, final boolean italic, final boolean underline, @NotNull final FontID font, @Nullable final Color color)
-    {
-        return this.bold == bold
-        && this.italic == italic
-        && this.underline == underline
-        && this.font == font
-        && this.color == color;
+    public boolean matches(final boolean bold, final boolean italic, final boolean underline, @NotNull final FontID font, @Nullable final Color color) {
+        return this.bold == bold && this.italic == italic && this.underline == underline && this.font == font && this.color == color;
     }
 
-    /** {@inheritDoc} */
+    /**
+     * {@inheritDoc}
+     */
     @NotNull
     @Override
-    public String toString()
-    {
+    public String toString() {
         final StringBuilder sb = new StringBuilder();
         sb.append("segment:");
-        if (bold)
-        {
+        if (bold) {
             sb.append("(bold)");
         }
-        if (italic)
-        {
+        if (italic) {
             sb.append("(italic)");
         }
-        if (underline)
-        {
+        if (underline) {
             sb.append("(underline)");
         }
-        if (font != FontID.PRINT)
-        {
+        if (font != FontID.PRINT) {
             sb.append('(').append(font.toString().toLowerCase()).append(')');
         }
-        if (color != null)
-        {
+        if (color != null) {
             sb.append('(').append(Parser.toString(color)).append(')');
         }
         sb.append(text);
         sb.append('\n');
         return sb.toString();
     }
+
 }

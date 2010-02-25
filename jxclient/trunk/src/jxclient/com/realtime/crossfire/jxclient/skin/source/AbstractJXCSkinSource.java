@@ -37,8 +37,8 @@ import org.jetbrains.annotations.NotNull;
  * Abstract base class for {@link JXCSkinSource} implementations.
  * @author Andreas Kirschbaum
  */
-public abstract class AbstractJXCSkinSource implements JXCSkinSource
-{
+public abstract class AbstractJXCSkinSource implements JXCSkinSource {
+
     /**
      * Available resolutions for this skin.
      */
@@ -49,73 +49,59 @@ public abstract class AbstractJXCSkinSource implements JXCSkinSource
      * Checks that the skin exists and can be accessed.
      * @throws JXCSkinException if the skin does not exist or cannot be loaded
      */
-    protected void checkAccess() throws JXCSkinException
-    {
-        try
-        {
+    protected void checkAccess() throws JXCSkinException {
+        try {
             final InputStream is = getInputStream("resolutions");
-            try
-            {
+            try {
                 final InputStreamReader isr = new InputStreamReader(is, "UTF-8");
-                try
-                {
+                try {
                     final BufferedReader br = new BufferedReader(isr);
-                    try
-                    {
-                        for (;;)
-                        {
+                    try {
+                        for (; ;) {
                             final String line = br.readLine();
-                            if (line == null)
-                            {
+                            if (line == null) {
                                 break;
                             }
 
                             final Resolution resolution = Resolution.parse(true, line);
-                            if (resolution == null)
-                            {
+                            if (resolution == null) {
                                 throw new JXCSkinException(getURI("resolutions")+": invalid resolution '"+line+"' in resolutions file");
                             }
                             resolutions.add(resolution);
                         }
-                    }
-                    finally
-                    {
+                    } finally {
                         br.close();
                     }
-                }
-                finally
-                {
+                } finally {
                     isr.close();
                 }
-            }
-            finally
-            {
+            } finally {
                 is.close();
             }
-        }
-        catch (final IOException ex)
-        {
+        } catch (final IOException ex) {
             throw new JXCSkinException(getURI("resolutions")+": "+ex.getMessage());
         }
 
-        if (resolutions.isEmpty())
-        {
+        if (resolutions.isEmpty()) {
             throw new JXCSkinException(getURI("resolutions")+": empty file");
         }
     }
 
-    /** {@inheritDoc} */
+    /**
+     * {@inheritDoc}
+     */
     @Override
-    public boolean containsResolution(@NotNull final Resolution resolution)
-    {
+    public boolean containsResolution(@NotNull final Resolution resolution) {
         return resolutions.contains(resolution);
     }
 
-    /** {@inheritDoc} */
+    /**
+     * {@inheritDoc}
+     */
     @NotNull
     @Override
-    public Iterator<Resolution> iterator()
-    {
+    public Iterator<Resolution> iterator() {
         return Collections.unmodifiableSet(resolutions).iterator();
     }
+
 }

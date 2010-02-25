@@ -27,13 +27,12 @@ import java.util.Collection;
 import org.jetbrains.annotations.NotNull;
 
 /**
- *
- * @version 1.0
  * @author Lauwenmark
+ * @version 1.0
  * @since 1.0
  */
-public class Spell
-{
+public class Spell {
+
     @NotNull
     private final String name;
 
@@ -63,65 +62,53 @@ public class Spell
 
     private boolean unknown = false;
 
-    public Spell(@NotNull final String name)
-    {
+    public Spell(@NotNull final String name) {
         this.name = name;
     }
 
-    public int getTag()
-    {
+    public int getTag() {
         return tag;
     }
 
-    public int getLevel()
-    {
+    public int getLevel() {
         return level;
     }
 
-    public int getCastingTime()
-    {
+    public int getCastingTime() {
         return castingTime;
     }
 
-    public int getMana()
-    {
+    public int getMana() {
         return mana;
     }
 
-    public int getGrace()
-    {
+    public int getGrace() {
         return grace;
     }
 
-    public int getDamage()
-    {
+    public int getDamage() {
         return damage;
     }
 
-    public int getSkill()
-    {
+    public int getSkill() {
         return skill;
     }
 
-    public int getPath()
-    {
+    public int getPath() {
         return path;
     }
 
     @NotNull
-    public String getName()
-    {
+    public String getName() {
         return name;
     }
 
     @NotNull
-    public String getMessage()
-    {
+    public String getMessage() {
         return message;
     }
 
-    public int getFaceNum()
-    {
+    public int getFaceNum() {
         return faceNum;
     }
 
@@ -129,8 +116,7 @@ public class Spell
      * Returns whether this spell is unknown to the character.
      * @return whether this spell is unknown
      */
-    public boolean isUnknown()
-    {
+    public boolean isUnknown() {
         return unknown;
     }
 
@@ -138,87 +124,72 @@ public class Spell
      * Marks this spell as known or unknown for the character.
      * @param unknown whether this spell is unkonwn
      */
-    public void setUnknown(final boolean unknown)
-    {
-        if (this.unknown != unknown)
-        {
+    public void setUnknown(final boolean unknown) {
+        if (this.unknown != unknown) {
             this.unknown = unknown;
             fireChanged();
         }
     }
 
-    public void setParameters(final int faceNum, final int tag, @NotNull final String message, final int level, final int castingTime, final int mana, final int grace, final int damage, final int skill, final int path)
-    {
+    public void setParameters(final int faceNum, final int tag, @NotNull final String message, final int level, final int castingTime, final int mana, final int grace, final int damage, final int skill, final int path) {
         boolean changed = false;
 
-        if (this.faceNum != faceNum)
-        {
+        if (this.faceNum != faceNum) {
             this.faceNum = faceNum;
             changed = true;
         }
 
-        if (this.tag != tag)
-        {
+        if (this.tag != tag) {
             this.tag = tag;
             changed = true;
         }
 
-        if (!this.message.equals(message))
-        {
+        if (!this.message.equals(message)) {
             this.message = message;
             changed = true;
         }
 
-        if (this.level != level)
-        {
+        if (this.level != level) {
             this.level = level;
             changed = true;
         }
 
-        if (this.castingTime != castingTime)
-        {
+        if (this.castingTime != castingTime) {
             this.castingTime = castingTime;
             changed = true;
         }
 
-        if (this.mana != mana)
-        {
+        if (this.mana != mana) {
             this.mana = mana;
             changed = true;
         }
 
-        if (this.grace != grace)
-        {
+        if (this.grace != grace) {
             this.grace = grace;
             changed = true;
         }
 
-        if (this.damage != damage)
-        {
+        if (this.damage != damage) {
             this.damage = damage;
             changed = true;
         }
 
-        if (this.skill != skill)
-        {
+        if (this.skill != skill) {
             this.skill = skill;
             changed = true;
         }
 
-        if (this.path != path)
-        {
+        if (this.path != path) {
             this.path = path;
             changed = true;
         }
 
-        if (unknown)
-        {
+        if (unknown) {
             unknown = false;
             changed = true;
         }
 
-        if (changed)
-        {
+        if (changed) {
             fireChanged();
         }
     }
@@ -228,70 +199,50 @@ public class Spell
      * name and unknown flag values are not copied.
      * @param spell the spell instance to copy from
      */
-    public void setParameters(@NotNull final Spell spell)
-    {
+    public void setParameters(@NotNull final Spell spell) {
         setParameters(spell.faceNum, spell.tag, spell.message, spell.level, spell.castingTime, spell.mana, spell.grace, spell.damage, spell.skill, spell.path);
     }
 
-    public void updateParameters(final boolean updateMana, final int mana, final boolean updateGrace, final int grace, final boolean updateDamage, final int damage)
-    {
+    public void updateParameters(final boolean updateMana, final int mana, final boolean updateGrace, final int grace, final boolean updateDamage, final int damage) {
         boolean changed = false;
 
-        if (updateMana && this.mana != mana)
-        {
+        if (updateMana && this.mana != mana) {
             this.mana = mana;
             changed = true;
         }
 
-        if (updateGrace && this.grace != grace)
-        {
+        if (updateGrace && this.grace != grace) {
             this.grace = grace;
             changed = true;
         }
 
-        if (updateDamage && this.damage != damage)
-        {
+        if (updateDamage && this.damage != damage) {
             this.damage = damage;
             changed = true;
         }
 
-        if (changed)
-        {
+        if (changed) {
             fireChanged();
         }
     }
 
     @NotNull
     @Override
-    public String toString()
-    {
-        return "Name:"+name
-            +" ID:"+tag
-            +" Level:"+level
-            +" Time:"+castingTime
-            +" Mana:"+mana
-            +" Grace:"+grace
-            +" Damage:"+damage
-            +" Skill:"+skill
-            +" Path:"+path
-            +" Unknown:"+unknown;
+    public String toString() {
+        return "Name:"+name+" ID:"+tag+" Level:"+level+" Time:"+castingTime+" Mana:"+mana+" Grace:"+grace+" Damage:"+damage+" Skill:"+skill+" Path:"+path+" Unknown:"+unknown;
     }
 
     /**
      * Return a description for this spell to be used in tooltips.
-     *
      * @return The tooltip text.
      */
     @NotNull
-    public String getTooltipText()
-    {
+    public String getTooltipText() {
         final StringBuilder sb = new StringBuilder(name);
-        if (unknown)
-        {
+        if (unknown) {
             sb.append(" (unknown)");
         }
-        if (message.length() > 0)
-        {
+        if (message.length() > 0) {
             sb.append("<br>");
             sb.append(StringSplitter.splitAsHtml(message));
         }
@@ -301,10 +252,8 @@ public class Spell
     /**
      * Notifies all listeners.
      */
-    private void fireChanged()
-    {
-        for (final SpellListener listener : listeners)
-        {
+    private void fireChanged() {
+        for (final SpellListener listener : listeners) {
             listener.spellChanged();
         }
     }
@@ -313,8 +262,7 @@ public class Spell
      * Adds a {@link SpellListener} to be notified of changes.
      * @param listener the listener to add
      */
-    public void addSpellListener(@NotNull final SpellListener listener)
-    {
+    public void addSpellListener(@NotNull final SpellListener listener) {
         listeners.add(listener);
     }
 
@@ -322,8 +270,8 @@ public class Spell
      * Removes a {@link SpellListener} to be notified of changes.
      * @param listener the listener to remove
      */
-    public void removeSpellListener(@NotNull final SpellListener listener)
-    {
+    public void removeSpellListener(@NotNull final SpellListener listener) {
         listeners.remove(listener);
     }
+
 }

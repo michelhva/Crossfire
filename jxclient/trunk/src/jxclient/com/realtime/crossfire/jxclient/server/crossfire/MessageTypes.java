@@ -26,80 +26,155 @@ import org.jetbrains.annotations.NotNull;
 
 /**
  * Encapsulates the message type numbers for drawextinfo messages.
- *
  * @author Andreas Kirschbaum
  */
-public class MessageTypes
-{
-    /** Internally used drawextinfo message type: a query message has been received. */
+public class MessageTypes {
+
+    /**
+     * Internally used drawextinfo message type: a query message has been
+     * received.
+     */
     public static final int MSG_TYPE_QUERY = 30;
 
-    /** drawextinfo message type: character did read a book. */
+    /**
+     * drawextinfo message type: character did read a book.
+     */
     public static final int MSG_TYPE_BOOK = 1;
-    /** drawextinfo message type: character did read a card. */
+
+    /**
+     * drawextinfo message type: character did read a card.
+     */
     public static final int MSG_TYPE_CARD = 2;
-    /** drawextinfo message type: character did read a paper. */
+
+    /**
+     * drawextinfo message type: character did read a paper.
+     */
     public static final int MSG_TYPE_PAPER = 3;
-    /** drawextinfo message type: character did read a sign. */
+
+    /**
+     * drawextinfo message type: character did read a sign.
+     */
     public static final int MSG_TYPE_SIGN = 4;
-    /** drawextinfo message type: character did read a monument. */
+
+    /**
+     * drawextinfo message type: character did read a monument.
+     */
     public static final int MSG_TYPE_MONUMENT = 5;
-    /** drawextinfo message type: a NPC/magic mouth/altar/etc. talks. */
+
+    /**
+     * drawextinfo message type: a NPC/magic mouth/altar/etc. talks.
+     */
     public static final int MSG_TYPE_DIALOG = 6;
-    /** drawextinfo message type: motd text. */
+
+    /**
+     * drawextinfo message type: motd text.
+     */
     public static final int MSG_TYPE_MOTD = 7;
-    /** drawextinfo message type: general server message. */
+
+    /**
+     * drawextinfo message type: general server message.
+     */
     public static final int MSG_TYPE_ADMIN = 8;
-    /** drawextinfo message type: shop related message. */
+
+    /**
+     * drawextinfo message type: shop related message.
+     */
     public static final int MSG_TYPE_SHOP = 9;
-    /** drawextinfo message type: response to command processing. */
+
+    /**
+     * drawextinfo message type: response to command processing.
+     */
     public static final int MSG_TYPE_COMMAND = 10;
-    /** drawextinfo message type: attribute (stats, resistances, etc.) change
-     * message. */
+
+    /**
+     * drawextinfo message type: attribute (stats, resistances, etc.) change
+     * message.
+     */
     public static final int MSG_TYPE_ATTRIBUTE = 11;
-    /** drawextinfo message type: message related to using skills. */
+
+    /**
+     * drawextinfo message type: message related to using skills.
+     */
     public static final int MSG_TYPE_SKILL = 12;
-    /** drawextinfo message type: an object was applied. */
+
+    /**
+     * drawextinfo message type: an object was applied.
+     */
     public static final int MSG_TYPE_APPLY = 13;
-    /** drawextinfo message type: attack related message. */
+
+    /**
+     * drawextinfo message type: attack related message.
+     */
     public static final int MSG_TYPE_ATTACK = 14;
-    /** drawextinfo message type: communication between players. */
+
+    /**
+     * drawextinfo message type: communication between players.
+     */
     public static final int MSG_TYPE_COMMUNICATION = 15;
-    /** drawextinfo message type: spell related information. */
+
+    /**
+     * drawextinfo message type: spell related information.
+     */
     public static final int MSG_TYPE_SPELL = 16;
-    /** drawextinfo message type: item related information. */
+
+    /**
+     * drawextinfo message type: item related information.
+     */
     public static final int MSG_TYPE_ITEM = 17;
-    /** drawextinfo message type: message that does not fit in any other category. */
+
+    /**
+     * drawextinfo message type: message that does not fit in any other
+     * category.
+     */
     public static final int MSG_TYPE_MISC = 18;
-    /** drawextinfo message type: something bad is happening to the player. */
+
+    /**
+     * drawextinfo message type: something bad is happening to the player.
+     */
     public static final int MSG_TYPE_VICTIM = 19;
 
     public static final int MSG_TYPE_BOOK_CLASP_1 = 1;
+
     public static final int MSG_TYPE_BOOK_CLASP_2 = 2;
+
     public static final int MSG_TYPE_BOOK_ELEGANT_1 = 3;
+
     public static final int MSG_TYPE_BOOK_ELEGANT_2 = 4;
+
     public static final int MSG_TYPE_BOOK_QUARTO_1 = 5;
+
     public static final int MSG_TYPE_BOOK_QUARTO_2 = 6;
+
     public static final int MSG_TYPE_BOOK_SPELL_EVOKER = 8;
+
     public static final int MSG_TYPE_BOOK_SPELL_PRAYER = 9;
+
     public static final int MSG_TYPE_BOOK_SPELL_PYRO = 10;
+
     public static final int MSG_TYPE_BOOK_SPELL_SORCERER = 11;
+
     public static final int MSG_TYPE_BOOK_SPELL_SUMMONER = 12;
 
     public static final int MSG_TYPE_COMMUNICATION_RANDOM = 1; // random event (coin toss)
+
     public static final int MSG_TYPE_COMMUNICATION_SAY = 2; // player says something
+
     public static final int MSG_TYPE_COMMUNICATION_ME = 3; // player me's a message
+
     public static final int MSG_TYPE_COMMUNICATION_TELL = 4; // player tells something
+
     public static final int MSG_TYPE_COMMUNICATION_EMOTE = 5; // player emotes
+
     public static final int MSG_TYPE_COMMUNICATION_PARTY = 6; // party message
+
     public static final int MSG_TYPE_COMMUNICATION_SHOUT = 7; // shout message
+
     public static final int MSG_TYPE_COMMUNICATION_CHAT = 8; // chat message
 
     /**
      * Private constructor to prevent instantiation.
      */
-    private MessageTypes()
-    {
+    private MessageTypes() {
     }
 
     /**
@@ -107,8 +182,7 @@ public class MessageTypes
      * @return all defined message types
      */
     @NotNull
-    public static int[] getAllTypes()
-    {
+    public static int[] getAllTypes() {
         return new int[] {
             MSG_TYPE_BOOK,
             MSG_TYPE_CARD,
@@ -134,95 +208,72 @@ public class MessageTypes
 
     /**
      * Parse a string into a message type.
-     *
      * @param str The string to parse.
-     *
      * @return The message type.
-     *
      * @throws UnknownCommandException If the string is unknown.
      */
-    public static int parseMessageType(@NotNull final String str) throws UnknownCommandException
-    {
-        if (str.equals("BOOK"))
-        {
+    public static int parseMessageType(@NotNull final String str) throws UnknownCommandException {
+        if (str.equals("BOOK")) {
             return MSG_TYPE_BOOK;
         }
-        if (str.equals("CARD"))
-        {
+        if (str.equals("CARD")) {
             return MSG_TYPE_CARD;
         }
-        if (str.equals("PAPER"))
-        {
+        if (str.equals("PAPER")) {
             return MSG_TYPE_PAPER;
         }
-        if (str.equals("SIGN"))
-        {
+        if (str.equals("SIGN")) {
             return MSG_TYPE_SIGN;
         }
-        if (str.equals("MONUMENT"))
-        {
+        if (str.equals("MONUMENT")) {
             return MSG_TYPE_MONUMENT;
         }
-        if (str.equals("DIALOG"))
-        {
+        if (str.equals("DIALOG")) {
             return MSG_TYPE_DIALOG;
         }
-        if (str.equals("MOTD"))
-        {
+        if (str.equals("MOTD")) {
             return MSG_TYPE_MOTD;
         }
-        if (str.equals("ADMIN"))
-        {
+        if (str.equals("ADMIN")) {
             return MSG_TYPE_ADMIN;
         }
-        if (str.equals("SHOP"))
-        {
+        if (str.equals("SHOP")) {
             return MSG_TYPE_SHOP;
         }
-        if (str.equals("COMMAND"))
-        {
+        if (str.equals("COMMAND")) {
             return MSG_TYPE_COMMAND;
         }
-        if (str.equals("ATTRIBUTE"))
-        {
+        if (str.equals("ATTRIBUTE")) {
             return MSG_TYPE_ATTRIBUTE;
         }
-        if (str.equals("SKILL"))
-        {
+        if (str.equals("SKILL")) {
             return MSG_TYPE_SKILL;
         }
-        if (str.equals("APPLY"))
-        {
+        if (str.equals("APPLY")) {
             return MSG_TYPE_APPLY;
         }
-        if (str.equals("ATTACK"))
-        {
+        if (str.equals("ATTACK")) {
             return MSG_TYPE_ATTACK;
         }
-        if (str.equals("COMMUNICATION"))
-        {
+        if (str.equals("COMMUNICATION")) {
             return MSG_TYPE_COMMUNICATION;
         }
-        if (str.equals("SPELL"))
-        {
+        if (str.equals("SPELL")) {
             return MSG_TYPE_SPELL;
         }
-        if (str.equals("ITEM"))
-        {
+        if (str.equals("ITEM")) {
             return MSG_TYPE_ITEM;
         }
-        if (str.equals("MISC"))
-        {
+        if (str.equals("MISC")) {
             return MSG_TYPE_MISC;
         }
-        if (str.equals("VICTIM"))
-        {
+        if (str.equals("VICTIM")) {
             return MSG_TYPE_VICTIM;
         }
-        if (str.equals("QUERY"))
-        {
+        if (str.equals("QUERY")) {
             return MSG_TYPE_QUERY;
         }
         throw new UnknownCommandException(str);
     }
+
 }

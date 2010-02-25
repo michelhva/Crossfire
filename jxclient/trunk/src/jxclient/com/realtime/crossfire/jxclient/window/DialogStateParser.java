@@ -43,11 +43,10 @@ import org.jetbrains.annotations.NotNull;
 
 /**
  * Utility class to store or restore the dialog states to/from a file.
- *
  * @author Andreas Kirschbaum
  */
-public class DialogStateParser
-{
+public class DialogStateParser {
+
     /**
      * The pattern to split fields in the save file.
      */
@@ -57,8 +56,7 @@ public class DialogStateParser
     /**
      * Private constructor to prevent instantiation.
      */
-    private DialogStateParser()
-    {
+    private DialogStateParser() {
     }
 
     /**
@@ -66,145 +64,102 @@ public class DialogStateParser
      * @param skin the skin to update
      * @param windowRenderer the window renderer instance to attach to
      */
-    public static void load(@NotNull final JXCSkin skin, @NotNull final JXCWindowRenderer windowRenderer)
-    {
+    public static void load(@NotNull final JXCSkin skin, @NotNull final JXCWindowRenderer windowRenderer) {
         final String skinName = skin.getSkinName();
         final File dialogsFile;
-        try
-        {
+        try {
             dialogsFile = Filenames.getDialogsFile(skinName);
 
             // Hack for loading obsolete state files
-            if (skinName.endsWith("@1024x768"))
-            {
+            if (skinName.endsWith("@1024x768")) {
                 final File obsoleteDialogsFile = Filenames.getDialogsFile(skinName.replaceAll("@.*", ""));
-                if (obsoleteDialogsFile.exists())
-                {
-                    if (dialogsFile.exists())
-                    {
+                if (obsoleteDialogsFile.exists()) {
+                    if (dialogsFile.exists()) {
                         obsoleteDialogsFile.delete();
-                    }
-                    else
-                    {
+                    } else {
                         dialogsFile.getParentFile().mkdirs();
                         obsoleteDialogsFile.renameTo(dialogsFile);
                     }
                     obsoleteDialogsFile.getParentFile().delete();
                 }
             }
-        }
-        catch (final IOException ex)
-        {
+        } catch (final IOException ex) {
             System.err.println(skin.getSkinName()+": "+ex.getMessage());
             return;
         }
 
-        try
-        {
+        try {
             final FileInputStream fis = new FileInputStream(dialogsFile);
-            try
-            {
+            try {
                 final InputStreamReader isr = new InputStreamReader(fis, "UTF-8");
-                try
-                {
+                try {
                     final BufferedReader br = new BufferedReader(isr);
-                    try
-                    {
-                        for (;;)
-                        {
+                    try {
+                        for (; ;) {
                             final String line = br.readLine();
-                            if (line == null)
-                            {
+                            if (line == null) {
                                 break;
                             }
 
                             final String[] tmp = PATTERN.split(line, -1);
-                            if (tmp.length != 6)
-                            {
+                            if (tmp.length != 6) {
                                 throw new IOException("syntax error: "+line);
                             }
 
                             final boolean open;
-                            if (tmp[0].equals("open"))
-                            {
+                            if (tmp[0].equals("open")) {
                                 open = true;
-                            }
-                            else if (tmp[0].equals("close"))
-                            {
+                            } else if (tmp[0].equals("close")) {
                                 open = false;
-                            }
-                            else
-                            {
+                            } else {
                                 throw new IOException("syntax error: "+line);
                             }
 
                             final Gui dialog;
-                            try
-                            {
+                            try {
                                 dialog = skin.getDialog(tmp[1]);
-                            }
-                            catch (final JXCSkinException ex)
-                            {
+                            } catch (final JXCSkinException ex) {
                                 throw new IOException("no such dialog: "+tmp[1]);
                             }
 
                             final int x, y, w, h;
-                            try
-                            {
+                            try {
                                 x = Integer.parseInt(tmp[2]);
                                 y = Integer.parseInt(tmp[3]);
                                 w = Integer.parseInt(tmp[4]);
                                 h = Integer.parseInt(tmp[5]);
-                            }
-                            catch (final NumberFormatException ex)
-                            {
+                            } catch (final NumberFormatException ex) {
                                 throw new IOException("syntax error: "+line);
                             }
 
-                            try
-                            {
+                            try {
                                 dialog.setSize(w, h);
-                            }
-                            catch (final IllegalArgumentException ex)
-                            {
+                            } catch (final IllegalArgumentException ex) {
                                 throw new IOException("invalid dialog size for "+tmp[1]+": "+w+"x"+h);
                             }
 
                             dialog.setPosition(x, y);
 
-                            if (open)
-                            {
+                            if (open) {
                                 windowRenderer.openDialog(dialog, false);
-                            }
-                            else
-                            {
+                            } else {
                                 windowRenderer.closeDialog(dialog);
                             }
 
                             dialog.setStateChanged(false);
                         }
-                    }
-                    finally
-                    {
+                    } finally {
                         br.close();
                     }
-                }
-                finally
-                {
+                } finally {
                     isr.close();
                 }
-            }
-            finally
-            {
+            } finally {
                 fis.close();
             }
-        }
-        catch (final FileNotFoundException ex)
-        {
+        } catch (final FileNotFoundException ex) {
             // ignore
-        }
-        catch (final IOException ex)
-        {
+        } catch (final IOException ex) {
             System.err.println(dialogsFile+": "+ex.getMessage());
         }
     }
@@ -214,80 +169,58 @@ public class DialogStateParser
      * @param skin the skin to update
      * @param windowRenderer the window renderer instance to attach to
      */
-    public static void save(@NotNull final JXCSkin skin, @NotNull final JXCWindowRenderer windowRenderer)
-    {
-        if (!skin.hasChangedDialog())
-        {
+    public static void save(@NotNull final JXCSkin skin, @NotNull final JXCWindowRenderer windowRenderer) {
+        if (!skin.hasChangedDialog()) {
             return;
         }
 
         final File dialogsFile;
-        try
-        {
+        try {
             dialogsFile = Filenames.getDialogsFile(skin.getSkinName());
-        }
-        catch (final IOException ex)
-        {
+        } catch (final IOException ex) {
             System.err.println(skin.getSkinName()+": "+ex.getMessage());
             return;
         }
 
         final File dir = dialogsFile.getParentFile();
-        if (dir != null)
-        {
+        if (dir != null) {
             dir.mkdirs();
         }
 
         final List<Gui> openDialogs = new LinkedList<Gui>();
-        for (final Gui dialog : windowRenderer.getOpenDialogs())
-        {
+        for (final Gui dialog : windowRenderer.getOpenDialogs()) {
             openDialogs.add(0, dialog);
         }
 
-        try
-        {
+        try {
             final FileOutputStream fos = new FileOutputStream(dialogsFile);
-            try
-            {
+            try {
                 final OutputStreamWriter osw = new OutputStreamWriter(fos, "UTF-8");
-                try
-                {
+                try {
                     final BufferedWriter bw = new BufferedWriter(osw);
-                    try
-                    {
-                        for (final Gui dialog : openDialogs)
-                        {
+                    try {
+                        for (final Gui dialog : openDialogs) {
                             saveDialog(dialog, "open", bw);
                             assert !dialog.isChangedFromDefault();
                         }
 
-                        for (final Gui dialog : skin)
-                        {
-                            if (!windowRenderer.isDialogOpen(dialog))
-                            {
+                        for (final Gui dialog : skin) {
+                            if (!windowRenderer.isDialogOpen(dialog)) {
                                 saveDialog(dialog, "close", bw);
                             }
 
                             assert !dialog.isChangedFromDefault();
                         }
-                    }
-                    finally
-                    {
+                    } finally {
                         bw.close();
                     }
-                }
-                finally
-                {
+                } finally {
                     osw.close();
                 }
-            }
-            finally
-            {
+            } finally {
                 fos.close();
             }
-        }
-        catch (final IOException ex)
-        {
+        } catch (final IOException ex) {
             System.err.println(dialogsFile+": "+ex.getMessage());
         }
 
@@ -296,32 +229,24 @@ public class DialogStateParser
 
     /**
      * Save the state of one dialog.
-     *
      * @param dialog The dialog to save.
-     *
      * @param type The dialog state; either "open" or "close".
-     *
      * @param bw The writer to use.
-     *
      * @throws IOException If an I/O error occurs.
      */
-    private static void saveDialog(@NotNull final Gui dialog, @NotNull final String type, @NotNull final Writer bw) throws IOException
-    {
+    private static void saveDialog(@NotNull final Gui dialog, @NotNull final String type, @NotNull final Writer bw) throws IOException {
         final String dialogName = dialog.getName();
-        if (dialogName == null)
-        {
+        if (dialogName == null) {
             return;
         }
 
         final int w = dialog.getWidth();
-        if (w <= 0)
-        {
+        if (w <= 0) {
             return;
         }
 
         final int h = dialog.getHeight();
-        if (h <= 0)
-        {
+        if (h <= 0) {
             return;
         }
 
@@ -340,4 +265,5 @@ public class DialogStateParser
 
         dialog.setStateChanged(false);
     }
+
 }

@@ -32,8 +32,8 @@ import org.jetbrains.annotations.Nullable;
  * The state of a gauge.
  * @author Andreas Kirschbaum
  */
-public class GaugeState
-{
+public class GaugeState {
+
     /**
      * The owner gui element.
      */
@@ -97,8 +97,7 @@ public class GaugeState
      * @param dx the x-offset for drawing
      * @param dy the y-offset for drawing
      */
-    public GaugeState(@NotNull final GUIElement owner, @Nullable final BufferedImage fullImage, @Nullable final BufferedImage negativeImage, final int dx, final int dy)
-    {
+    public GaugeState(@NotNull final GUIElement owner, @Nullable final BufferedImage fullImage, @Nullable final BufferedImage negativeImage, final int dx, final int dy) {
         this.owner = owner;
         this.fullImage = fullImage;
         this.negativeImage = negativeImage;
@@ -110,16 +109,14 @@ public class GaugeState
      * Updates the values from a {@link Orientation} state.
      * @param orientation the state
      */
-    public void setValues(@NotNull final Orientation orientation)
-    {
+    public void setValues(@NotNull final Orientation orientation) {
         final int newFilledX = orientation.getX();
         final int newFilledY = orientation.getY();
         final int newFilledW = orientation.getW();
         final int newFilledH = orientation.getH();
         final Image newFilledPicture = orientation.isValid() ? orientation.isNegativeImage() ? negativeImage : fullImage : null;
 
-        if (filledX == newFilledX && filledY == newFilledY && filledW == newFilledW && filledH == newFilledH && filledPicture == newFilledPicture)
-        {
+        if (filledX == newFilledX && filledY == newFilledY && filledW == newFilledW && filledH == newFilledH && filledPicture == newFilledPicture) {
             return;
         }
 
@@ -135,11 +132,10 @@ public class GaugeState
      * Draws the gauge image into the given graphics context.
      * @param g the graphics context
      */
-    public void draw(@NotNull final Graphics g)
-    {
-        if (filledPicture != null)
-        {
+    public void draw(@NotNull final Graphics g) {
+        if (filledPicture != null) {
             g.drawImage(filledPicture, filledX+dx, filledY+dy, filledX+dx+filledW, filledY+dy+filledH, filledX, filledY, filledX+filledW, filledY+filledH, null);
         }
     }
+
 }

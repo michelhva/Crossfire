@@ -30,8 +30,8 @@ import org.jetbrains.annotations.Nullable;
  * display a tooltip text for an "active" GUI element.
  * @author Andreas Kirschbaum
  */
-public class TooltipManager
-{
+public class TooltipManager {
+
     /**
      * Distance of tooltip from its associated GUI element.
      */
@@ -67,8 +67,7 @@ public class TooltipManager
      * Creates a new instance.
      * @param windowRenderer the window renderer to manager the tooltips of
      */
-    public TooltipManager(@NotNull final JXCWindowRenderer windowRenderer)
-    {
+    public TooltipManager(@NotNull final JXCWindowRenderer windowRenderer) {
         this.windowRenderer = windowRenderer;
     }
 
@@ -76,18 +75,15 @@ public class TooltipManager
      * Sets the tooltip label.
      * @param tooltip the tooltip label, or <code>null</code>
      */
-    public void setTooltip(@Nullable final AbstractLabel tooltip)
-    {
+    public void setTooltip(@Nullable final AbstractLabel tooltip) {
         this.tooltip = tooltip;
     }
 
     /**
      * Removes the tooltip. Does nothing if no tooltip is active.
      */
-    public void reset()
-    {
-        synchronized (activeGuiElementSync)
-        {
+    public void reset() {
+        synchronized (activeGuiElementSync) {
             removeTooltip();
             activeGuiElement = null;
         }
@@ -97,17 +93,12 @@ public class TooltipManager
      * Displays the tooltip for a GUI element.
      * @param guiElement the GUI element to show the tooltip of
      */
-    public void setElement(@NotNull final GUIElement guiElement)
-    {
-        synchronized (activeGuiElementSync)
-        {
-            if (activeGuiElement == null)
-            {
+    public void setElement(@NotNull final GUIElement guiElement) {
+        synchronized (activeGuiElementSync) {
+            if (activeGuiElement == null) {
                 activeGuiElement = guiElement;
                 addTooltip();
-            }
-            else if (activeGuiElement != guiElement)
-            {
+            } else if (activeGuiElement != guiElement) {
                 removeTooltip();
                 activeGuiElement = guiElement;
                 addTooltip();
@@ -120,12 +111,9 @@ public class TooltipManager
      * element is not active.
      * @param guiElement the gui element to remove the tooltip of
      */
-    public void unsetElement(@NotNull final GUIElement guiElement)
-    {
-        synchronized (activeGuiElementSync)
-        {
-            if (activeGuiElement == guiElement)
-            {
+    public void unsetElement(@NotNull final GUIElement guiElement) {
+        synchronized (activeGuiElementSync) {
+            if (activeGuiElement == guiElement) {
                 removeTooltip();
                 activeGuiElement = null;
             }
@@ -137,12 +125,9 @@ public class TooltipManager
      * element is not active.
      * @param guiElement the gui element to process
      */
-    public void updateElement(@NotNull final GUIElement guiElement)
-    {
-        synchronized (activeGuiElementSync)
-        {
-            if (activeGuiElement == guiElement)
-            {
+    public void updateElement(@NotNull final GUIElement guiElement) {
+        synchronized (activeGuiElementSync) {
+            if (activeGuiElement == guiElement) {
                 removeTooltip();
                 addTooltip();
             }
@@ -153,21 +138,18 @@ public class TooltipManager
      * Adds or updates the tooltip (text and location) for the {@link
      * #activeGuiElement}.
      */
-    private void addTooltip()
-    {
+    private void addTooltip() {
         final GUIElement tmpActiveGuiElement = activeGuiElement;
         assert tmpActiveGuiElement != null;
         assert Thread.holdsLock(activeGuiElementSync);
 
         final AbstractLabel tmpTooltip = tooltip;
-        if (tmpTooltip == null)
-        {
+        if (tmpTooltip == null) {
             return;
         }
 
         final String tooltipText = tmpActiveGuiElement.getTooltipText();
-        if (tooltipText == null)
-        {
+        if (tooltipText == null) {
             tmpTooltip.setElementVisible(false);
             return;
         }
@@ -177,12 +159,9 @@ public class TooltipManager
 
         final int tx = Math.max(0, Math.min(tmpActiveGuiElement.getElementX()+tmpActiveGuiElement.getWidth()/2-tmpTooltip.getWidth()/2, windowRenderer.getWindowWidth()-tmpTooltip.getWidth()));
         final int ty;
-        if (tmpActiveGuiElement.getElementY()+tmpActiveGuiElement.getHeight()+TOOLTIP_DISTANCE+tmpTooltip.getHeight() <= windowRenderer.getWindowHeight())
-        {
+        if (tmpActiveGuiElement.getElementY()+tmpActiveGuiElement.getHeight()+TOOLTIP_DISTANCE+tmpTooltip.getHeight() <= windowRenderer.getWindowHeight()) {
             ty = tmpActiveGuiElement.getElementY()+tmpActiveGuiElement.getHeight()+TOOLTIP_DISTANCE;
-        }
-        else
-        {
+        } else {
             ty = tmpActiveGuiElement.getElementY()-tmpTooltip.getHeight()-TOOLTIP_DISTANCE;
         }
         tmpTooltip.setElementLocation(tx, ty);
@@ -191,11 +170,10 @@ public class TooltipManager
     /**
      * Removes the tooltip label. Does nothing if no tooltip is active.
      */
-    private void removeTooltip()
-    {
-        if (tooltip != null)
-        {
+    private void removeTooltip() {
+        if (tooltip != null) {
             tooltip.setElementVisible(false);
         }
     }
+
 }

@@ -34,13 +34,12 @@ import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 
 /**
- * A {@link AbstractLabel} that renders the text as a list of plain strings.
- * The lines are separated by newline characters.
- *
+ * A {@link AbstractLabel} that renders the text as a list of plain strings. The
+ * lines are separated by newline characters.
  * @author Andreas Kirschbaum
  */
-public class GUIMultiLineLabel extends GUILabel
-{
+public class GUIMultiLineLabel extends GUILabel {
+
     /**
      * The serial version UID.
      */
@@ -60,69 +59,56 @@ public class GUIMultiLineLabel extends GUILabel
 
     /**
      * Create a new instance.
-     *
      * @param tooltipManager the tooltip manager to update
-     *
      * @param elementListener the element listener to notify
-     *
      * @param name The name of this element.
-     *
      * @param x The x-coordinate for drawing this element to screen.
-     *
      * @param y The y-coordinate for drawing this element to screen.
-     *
      * @param w The width for drawing this element to screen.
-     *
      * @param h The height for drawing this element to screen.
-     *
      * @param picture The background image; <code>null</code> for no
      * background.
-     *
      * @param font The font for rendering the label text.
-     *
      * @param color The font color.
-     *
      * @param backgroundColor The background color.
-     *
      * @param alignment The text alignment.
-     *
      * @param text The label text.
      */
-    public GUIMultiLineLabel(@NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final String name, final int x, final int y, final int w, final int h, @Nullable final BufferedImage picture, @NotNull final Font font, @NotNull final Color color, @NotNull final Color backgroundColor, @NotNull final Alignment alignment, @NotNull final String text)
-    {
+    public GUIMultiLineLabel(@NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final String name, final int x, final int y, final int w, final int h, @Nullable final BufferedImage picture, @NotNull final Font font, @NotNull final Color color, @NotNull final Color backgroundColor, @NotNull final Alignment alignment, @NotNull final String text) {
         super(tooltipManager, elementListener, name, x, y, w, h, picture, font, color, backgroundColor, alignment);
         setText(text);
     }
 
-    /** {@inheritDoc} */
+    /**
+     * {@inheritDoc}
+     */
     @Override
-    public void dispose()
-    {
+    public void dispose() {
         super.dispose();
     }
 
-    /** {@inheritDoc} */
+    /**
+     * {@inheritDoc}
+     */
     @Override
-    protected void textChanged()
-    {
+    protected void textChanged() {
         lines = LINE_SEPARATOR_PATTERN.split(getText(), -1);
         super.textChanged();
     }
 
-    /** {@inheritDoc} */
+    /**
+     * {@inheritDoc}
+     */
     @Override
-    protected void render(@NotNull final Graphics g)
-    {
+    protected void render(@NotNull final Graphics g) {
         super.render(g);
 
-        if (lines == null || lines.length <= 0)
-        {
+        if (lines == null || lines.length <= 0) {
             return;
         }
 
         final Font font = getTextFont();
-        if (font == null)
-        {
+        if (font == null) {
             return;
         }
 
@@ -131,9 +117,9 @@ public class GUIMultiLineLabel extends GUILabel
         final int lineHeight = (int)Math.round(rect.getMaxY()-rect.getMinY()+0.5);
 
         int y = 0;
-        for (final String line : lines)
-        {
+        for (final String line : lines) {
             y += drawLine(g2, y, lineHeight, line);
         }
     }
+
 }

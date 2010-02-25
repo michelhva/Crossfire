@@ -30,98 +30,156 @@ import org.jetbrains.annotations.NotNull;
  * Defines constants for pickup mode.
  * @author Andreas Kirschbaum
  */
-public class Pickup
-{
+public class Pickup {
+
     /**
      * The default pickup mode.
      */
     public static final long DEFAULT_PICKUP_MODE = 0;
 
-    /** Pickup mode: nothing. */
+    /**
+     * Pickup mode: nothing.
+     */
     public static final long PU_NOTHING = 0x00000000L;
 
-    /** Pickup mode: mask for value/weight ratio. */
+    /**
+     * Pickup mode: mask for value/weight ratio.
+     */
     public static final long PU_RATIO = 0x0000000FL;
 
-    /** Pickup mode: food. */
+    /**
+     * Pickup mode: food.
+     */
     public static final long PU_FOOD = 0x00000010L;
 
-    /** Pickup mode: drinks. */
+    /**
+     * Pickup mode: drinks.
+     */
     public static final long PU_DRINK = 0x00000020L;
 
-    /** Pickup mode: rings and amulets. */
+    /**
+     * Pickup mode: rings and amulets.
+     */
     public static final long PU_VALUABLES = 0x00000040L;
 
-    /** Pickup mode: bows. */
+    /**
+     * Pickup mode: bows.
+     */
     public static final long PU_BOW = 0x00000080L;
 
-    /** Pickup mode: arrows. */
+    /**
+     * Pickup mode: arrows.
+     */
     public static final long PU_ARROW = 0x00000100L;
 
-    /** Pickup mode: helmets. */
+    /**
+     * Pickup mode: helmets.
+     */
     public static final long PU_HELMET = 0x00000200L;
 
-    /** Pickup mode: shields. */
+    /**
+     * Pickup mode: shields.
+     */
     public static final long PU_SHIELD = 0x00000400L;
 
-    /** Pickup mode: armors. */
+    /**
+     * Pickup mode: armors.
+     */
     public static final long PU_ARMOUR = 0x00000800L;
 
-    /** Pickup mode: boots. */
+    /**
+     * Pickup mode: boots.
+     */
     public static final long PU_BOOTS = 0x00001000L;
 
-    /** Pickup mode: gloves. */
+    /**
+     * Pickup mode: gloves.
+     */
     public static final long PU_GLOVES = 0x00002000L;
 
-    /** Pickup mode: cloaks. */
+    /**
+     * Pickup mode: cloaks.
+     */
     public static final long PU_CLOAK = 0x00004000L;
 
-    /** Pickup mode: keys. */
+    /**
+     * Pickup mode: keys.
+     */
     public static final long PU_KEY = 0x00008000L;
 
-    /** Pickup mode: missile weapons. */
+    /**
+     * Pickup mode: missile weapons.
+     */
     public static final long PU_MISSILEWEAPON = 0x00010000L;
 
-    /** Pickup mode: all weapons. */
+    /**
+     * Pickup mode: all weapons.
+     */
     public static final long PU_ALLWEAPON = 0x00020000L;
 
-    /** Pickup mode: magical items. */
+    /**
+     * Pickup mode: magical items.
+     */
     public static final long PU_MAGICAL = 0x00040000L;
 
-    /** Pickup mode: potions. */
+    /**
+     * Pickup mode: potions.
+     */
     public static final long PU_POTION = 0x00080000L;
 
-    /** Pickup mode: spellbooks. */
+    /**
+     * Pickup mode: spellbooks.
+     */
     public static final long PU_SPELLBOOK = 0x00100000L;
 
-    /** Pickup mode: skillscrolls. */
+    /**
+     * Pickup mode: skillscrolls.
+     */
     public static final long PU_SKILLSCROLL = 0x00200000L;
 
-    /** Pickup mode: normal books and scrolls. */
+    /**
+     * Pickup mode: normal books and scrolls.
+     */
     public static final long PU_READABLES = 0x00400000L;
 
-    /** Pickup mode: magic devices. */
+    /**
+     * Pickup mode: magic devices.
+     */
     public static final long PU_MAGIC_DEVICE = 0x00800000L;
 
-    /** Pickup mode: ignore cursed items. */
+    /**
+     * Pickup mode: ignore cursed items.
+     */
     public static final long PU_NOT_CURSED = 0x01000000L;
 
-    /** Pickup mode: jewels and money. */
+    /**
+     * Pickup mode: jewels and money.
+     */
     public static final long PU_JEWELS = 0x02000000L;
 
-    /** Pickup mode: flesh. */
+    /**
+     * Pickup mode: flesh.
+     */
     public static final long PU_FLESH = 0x04000000L;
 
-    /** Pickup mode: debug. */
+    /**
+     * Pickup mode: debug.
+     */
     public static final long PU_DEBUG = 0x10000000L;
 
-    /** Pickup mode: disable pickup. */
+    /**
+     * Pickup mode: disable pickup.
+     */
     public static final long PU_INHIBIT = 0x20000000L;
 
-    /** Pickup mode: stop before pickup. */
+    /**
+     * Pickup mode: stop before pickup.
+     */
     public static final long PU_STOP = 0x40000000L;
 
-    /** Pickup mode: enable newpickup mode. */
+    /**
+     * Pickup mode: enable newpickup mode.
+     */
     public static final long PU_NEWMODE = 0x80000000L;
 
     /**
@@ -147,25 +205,24 @@ public class Pickup
      * @param optionManager the option manager to use
      * @throws OptionException if an option cannot be registered
      */
-    public Pickup(@NotNull final CommandQueue commandQueue, @NotNull final OptionManager optionManager) throws OptionException
-    {
+    public Pickup(@NotNull final CommandQueue commandQueue, @NotNull final OptionManager optionManager) throws OptionException {
         this.commandQueue = commandQueue;
-//      optionManager.addOption("pickup_ratio0", "Pickup mode: weight/value off", newPickupOption(PU_RATIO, 0));
-//      optionManager.addOption("pickup_ratio5", "Pickup mode: weight/value >= 5", newPickupOption(PU_RATIO, 1));
-//      optionManager.addOption("pickup_ratio10", "Pickup mode: weight/value >= 10", newPickupOption(PU_RATIO, 2));
-//      optionManager.addOption("pickup_ratio15", "Pickup mode: weight/value >= 15", newPickupOption(PU_RATIO, 3));
-//      optionManager.addOption("pickup_ratio20", "Pickup mode: weight/value >= 20", newPickupOption(PU_RATIO, 4));
-//      optionManager.addOption("pickup_ratio25", "Pickup mode: weight/value >= 25", newPickupOption(PU_RATIO, 5));
-//      optionManager.addOption("pickup_ratio30", "Pickup mode: weight/value >= 30", newPickupOption(PU_RATIO, 6));
-//      optionManager.addOption("pickup_ratio35", "Pickup mode: weight/value >= 35", newPickupOption(PU_RATIO, 7));
-//      optionManager.addOption("pickup_ratio40", "Pickup mode: weight/value >= 40", newPickupOption(PU_RATIO, 8));
-//      optionManager.addOption("pickup_ratio45", "Pickup mode: weight/value >= 45", newPickupOption(PU_RATIO, 9));
-//      optionManager.addOption("pickup_ratio50", "Pickup mode: weight/value >= 50", newPickupOption(PU_RATIO, 10));
-//      optionManager.addOption("pickup_ratio55", "Pickup mode: weight/value >= 55", newPickupOption(PU_RATIO, 11));
-//      optionManager.addOption("pickup_ratio60", "Pickup mode: weight/value >= 60", newPickupOption(PU_RATIO, 12));
-//      optionManager.addOption("pickup_ratio65", "Pickup mode: weight/value >= 65", newPickupOption(PU_RATIO, 13));
-//      optionManager.addOption("pickup_ratio70", "Pickup mode: weight/value >= 70", newPickupOption(PU_RATIO, 14));
-//      optionManager.addOption("pickup_ratio75", "Pickup mode: weight/value >= 75", newPickupOption(PU_RATIO, 15));
+        //      optionManager.addOption("pickup_ratio0", "Pickup mode: weight/value off", newPickupOption(PU_RATIO, 0));
+        //      optionManager.addOption("pickup_ratio5", "Pickup mode: weight/value >= 5", newPickupOption(PU_RATIO, 1));
+        //      optionManager.addOption("pickup_ratio10", "Pickup mode: weight/value >= 10", newPickupOption(PU_RATIO, 2));
+        //      optionManager.addOption("pickup_ratio15", "Pickup mode: weight/value >= 15", newPickupOption(PU_RATIO, 3));
+        //      optionManager.addOption("pickup_ratio20", "Pickup mode: weight/value >= 20", newPickupOption(PU_RATIO, 4));
+        //      optionManager.addOption("pickup_ratio25", "Pickup mode: weight/value >= 25", newPickupOption(PU_RATIO, 5));
+        //      optionManager.addOption("pickup_ratio30", "Pickup mode: weight/value >= 30", newPickupOption(PU_RATIO, 6));
+        //      optionManager.addOption("pickup_ratio35", "Pickup mode: weight/value >= 35", newPickupOption(PU_RATIO, 7));
+        //      optionManager.addOption("pickup_ratio40", "Pickup mode: weight/value >= 40", newPickupOption(PU_RATIO, 8));
+        //      optionManager.addOption("pickup_ratio45", "Pickup mode: weight/value >= 45", newPickupOption(PU_RATIO, 9));
+        //      optionManager.addOption("pickup_ratio50", "Pickup mode: weight/value >= 50", newPickupOption(PU_RATIO, 10));
+        //      optionManager.addOption("pickup_ratio55", "Pickup mode: weight/value >= 55", newPickupOption(PU_RATIO, 11));
+        //      optionManager.addOption("pickup_ratio60", "Pickup mode: weight/value >= 60", newPickupOption(PU_RATIO, 12));
+        //      optionManager.addOption("pickup_ratio65", "Pickup mode: weight/value >= 65", newPickupOption(PU_RATIO, 13));
+        //      optionManager.addOption("pickup_ratio70", "Pickup mode: weight/value >= 70", newPickupOption(PU_RATIO, 14));
+        //      optionManager.addOption("pickup_ratio75", "Pickup mode: weight/value >= 75", newPickupOption(PU_RATIO, 15));
         optionManager.addOption("pickup_food", "Pickup mode: food", newPickupOption(PU_FOOD));
         optionManager.addOption("pickup_drink", "Pickup mode: drinks", newPickupOption(PU_DRINK));
         optionManager.addOption("pickup_valuables", "Pickup mode: valuables", newPickupOption(PU_VALUABLES));
@@ -199,8 +256,7 @@ public class Pickup
      * @return the pickup option
      */
     @NotNull
-    private Option newPickupOption(final long option)
-    {
+    private Option newPickupOption(final long option) {
         final PickupOption pickupOption = new PickupOption(this, option);
         pickupOptions.add(pickupOption);
         return pickupOption;
@@ -211,15 +267,12 @@ public class Pickup
      * command to the server.
      * @param pickupMode the pickup mode
      */
-    public void setPickupMode(final long pickupMode)
-    {
-        if (this.pickupMode == pickupMode)
-        {
+    public void setPickupMode(final long pickupMode) {
+        if (this.pickupMode == pickupMode) {
             return;
         }
         this.pickupMode = pickupMode;
-        for (final PickupOption pickupOption : pickupOptions)
-        {
+        for (final PickupOption pickupOption : pickupOptions) {
             pickupOption.setPickupMode(pickupMode);
         }
     }
@@ -228,8 +281,7 @@ public class Pickup
      * Returns the pickup mode.
      * @return the pickup mode
      */
-    public long getPickupMode()
-    {
+    public long getPickupMode() {
         return pickupMode;
     }
 
@@ -238,33 +290,27 @@ public class Pickup
      * @param pickupMode the pickup mode(s) to affect
      * @param set <code>true</code>=set, <code>false</code>=unset
      */
-    public void setPickupMode(final long pickupMode, final boolean set)
-    {
+    public void setPickupMode(final long pickupMode, final boolean set) {
         final long oldPickupMode = this.pickupMode;
-        if (set)
-        {
+        if (set) {
             this.pickupMode |= pickupMode;
-        }
-        else
-        {
+        } else {
             this.pickupMode &= ~pickupMode;
         }
-        if (this.pickupMode != oldPickupMode)
-        {
+        if (this.pickupMode != oldPickupMode) {
             update();
         }
     }
 
     /**
-     * Notifies the Crossfire server and all pickup options that the pickup
-     * mode has changed.
+     * Notifies the Crossfire server and all pickup options that the pickup mode
+     * has changed.
      */
-    public void update()
-    {
+    public void update() {
         commandQueue.sendNcom(true, 1, "pickup "+((pickupMode == PU_NOTHING ? 0 : (pickupMode|PU_NEWMODE))&0xFFFFFFFFL));
-        for (final PickupOption pickupOption : pickupOptions)
-        {
+        for (final PickupOption pickupOption : pickupOptions) {
             pickupOption.setPickupMode(pickupMode);
         }
     }
+
 }

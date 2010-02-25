@@ -33,8 +33,8 @@ import org.jetbrains.annotations.Nullable;
  * A {@link GUIList} instance that displays {@link GUIItemItem} instances.
  * @author Andreas Kirschbaum
  */
-public abstract class GUIItemList extends GUIList
-{
+public abstract class GUIItemList extends GUIList {
+
     /**
      * The serial version UID.
      */
@@ -54,15 +54,15 @@ public abstract class GUIItemList extends GUIList
      * @param cellHeight the height of each cell
      * @param listCellRenderer the renderer for the list
      */
-    protected GUIItemList(@NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final String name, final int x, final int y, final int w, final int h, final int cellHeight, @NotNull final ListCellRenderer listCellRenderer)
-    {
+    protected GUIItemList(@NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final String name, final int x, final int y, final int w, final int h, final int cellHeight, @NotNull final ListCellRenderer listCellRenderer) {
         super(tooltipManager, elementListener, name, x, y, w, h, cellHeight, listCellRenderer);
     }
 
-    /** {@inheritDoc} */
+    /**
+     * {@inheritDoc}
+     */
     @Override
-    public void dispose()
-    {
+    public void dispose() {
         super.dispose();
     }
 
@@ -71,18 +71,17 @@ public abstract class GUIItemList extends GUIList
      * @return the selected instance or <code>null</code> if none is selected
      */
     @Nullable
-    public GUIItemItem getSelectedItem()
-    {
+    public GUIItemItem getSelectedItem() {
         return (GUIItemItem)getSelectedObject();
     }
 
-    /** {@inheritDoc} */
+    /**
+     * {@inheritDoc}
+     */
     @Override
-    public void mouseClicked(@NotNull final MouseEvent e)
-    {
+    public void mouseClicked(@NotNull final MouseEvent e) {
         super.mouseClicked(e);
-        switch (e.getButton())
-        {
+        switch (e.getButton()) {
         case MouseEvent.BUTTON1:
             setActive(true);
             button1Clicked(e.getModifiersEx());
@@ -115,4 +114,5 @@ public abstract class GUIItemList extends GUIList
      * @param modifiers the active modifiers
      */
     protected abstract void button3Clicked(final int modifiers);
+
 }

@@ -24,11 +24,10 @@ package com.realtime.crossfire.jxclient.gui.log;
 /**
  * Interface for listeners interested in changes of a {@link RenderStateManager}
  * instance.
- *
  * @author Andreas Kirschbaum
  */
-public interface RenderStateListener
-{
+public interface RenderStateListener {
+
     /**
      * Notifies the listener about a state change in the tracked {@link
      * RenderStateManager} object.
@@ -37,8 +36,8 @@ public interface RenderStateListener
 
     /**
      * Return the height of the rendered gui element in pixels.
-     *
      * @return The height.
      */
     int getHeight();
+
 }

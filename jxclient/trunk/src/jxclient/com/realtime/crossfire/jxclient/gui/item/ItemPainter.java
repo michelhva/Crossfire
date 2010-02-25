@@ -19,7 +19,6 @@
  * Copyright (C) 2006-2010 Andreas Kirschbaum.
  */
 
-
 package com.realtime.crossfire.jxclient.gui.item;
 
 import com.realtime.crossfire.jxclient.items.CfItem;
@@ -37,8 +36,8 @@ import org.jetbrains.annotations.Nullable;
  * Paints Crossfire item images.
  * @author Andreas Kirschbaum
  */
-public class ItemPainter
-{
+public class ItemPainter {
+
     /**
      * The overlay image for cursed objects.
      */
@@ -180,8 +179,7 @@ public class ItemPainter
      * @param w the item's width in pixel
      * @param h the item's height in pixel
      */
-    public ItemPainter(@Nullable final BufferedImage cursedImage, @Nullable final BufferedImage damnedImage, @Nullable final BufferedImage magicImage, @Nullable final BufferedImage blessedImage, @Nullable final BufferedImage appliedImage, @Nullable final BufferedImage selectorImage, @Nullable final BufferedImage lockedImage, @Nullable final BufferedImage unpaidImage, @Nullable final Color cursedColor, @Nullable final Color damnedColor, @Nullable final Color magicColor, @Nullable final Color blessedColor, @Nullable final Color appliedColor, @Nullable final Color selectorColor, @Nullable final Color lockedColor, @Nullable final Color unpaidColor, @NotNull final Font font, @NotNull final Color nrofColor, final int w, final int h)
-    {
+    public ItemPainter(@Nullable final BufferedImage cursedImage, @Nullable final BufferedImage damnedImage, @Nullable final BufferedImage magicImage, @Nullable final BufferedImage blessedImage, @Nullable final BufferedImage appliedImage, @Nullable final BufferedImage selectorImage, @Nullable final BufferedImage lockedImage, @Nullable final BufferedImage unpaidImage, @Nullable final Color cursedColor, @Nullable final Color damnedColor, @Nullable final Color magicColor, @Nullable final Color blessedColor, @Nullable final Color appliedColor, @Nullable final Color selectorColor, @Nullable final Color lockedColor, @Nullable final Color unpaidColor, @NotNull final Font font, @NotNull final Color nrofColor, final int w, final int h) {
         this.cursedImage = cursedImage;
         this.damnedImage = damnedImage;
         this.magicImage = magicImage;
@@ -205,15 +203,14 @@ public class ItemPainter
     }
 
     /**
-     * Creates a new instance having the same parameters as this instance
-     * except for the item's size.
+     * Creates a new instance having the same parameters as this instance except
+     * for the item's size.
      * @param w the item's width in pixel
      * @param h the item's height in pixel
      * @return the new instance
      */
     @NotNull
-    public ItemPainter newItemPainter(final int w, final int h)
-    {
+    public ItemPainter newItemPainter(final int w, final int h) {
         return new ItemPainter(cursedImage, damnedImage, magicImage, blessedImage, appliedImage, selectorImage, lockedImage, unpaidImage, cursedColor, damnedColor, magicColor, blessedColor, appliedColor, selectorColor, lockedColor, unpaidColor, font, nrofColor, w, h);
     }
 
@@ -224,8 +221,7 @@ public class ItemPainter
      * @param selected whether the item is selected
      * @param face the item's face
      */
-    public void paint(@NotNull final Graphics2D g, @NotNull final CfItem item, final boolean selected, @NotNull final Image face)
-    {
+    public void paint(@NotNull final Graphics2D g, @NotNull final CfItem item, final boolean selected, @NotNull final Image face) {
         paintColor(g, appliedColor, item.isApplied());
         paintColor(g, cursedColor, item.isCursed());
         paintColor(g, damnedColor, item.isDamned());
@@ -243,17 +239,13 @@ public class ItemPainter
         paintImage(g, lockedImage, item.isLocked());
         paintImage(g, selectorImage, selected);
         paintImage(g, unpaidImage, item.isUnpaid());
-        if (w <= h)
-        {
-            if (item.getNrOf() > 1)
-            {
+        if (w <= h) {
+            if (item.getNrOf() > 1) {
                 g.setFont(font);
                 g.setColor(nrofColor);
                 g.drawString(String.valueOf(item.getNrOf()), 1, 1+font.getSize());
             }
-        }
-        else
-        {
+        } else {
             g.setFont(font);
             g.setColor(nrofColor);
             g.setBackground(new Color(0, 0, 0, 0.0f));
@@ -268,10 +260,8 @@ public class ItemPainter
      * @param color the color to use
      * @param isActive whether painting should be done at all
      */
-    private void paintColor(@NotNull final Graphics g, @Nullable final Color color, final boolean isActive)
-    {
-        if (isActive && color != null)
-        {
+    private void paintColor(@NotNull final Graphics g, @Nullable final Color color, final boolean isActive) {
+        if (isActive && color != null) {
             g.setColor(color);
             g.fillRect(0, 0, w, h);
         }
@@ -283,10 +273,8 @@ public class ItemPainter
      * @param image the image to paint
      * @param isActive whether painting should be done at all
      */
-    private static void paintImage(@NotNull final Graphics g, @Nullable final Image image, final boolean isActive)
-    {
-        if (isActive)
-        {
+    private static void paintImage(@NotNull final Graphics g, @Nullable final Image image, final boolean isActive) {
+        if (isActive) {
             g.drawImage(image, 0, 0, null);
         }
     }
@@ -299,10 +287,10 @@ public class ItemPainter
      * @param height the text height
      * @param text the text
      */
-    private void renderText(@NotNull final Graphics2D g, final int dx, final int dy, final int height, @NotNull final String text)
-    {
+    private void renderText(@NotNull final Graphics2D g, final int dx, final int dy, final int height, @NotNull final String text) {
         final RectangularShape rect = font.getStringBounds(text, g.getFontRenderContext());
         final int y = dy+(int)Math.round((height-rect.getMaxY()-rect.getMinY()))/2;
         g.drawString(text, dx, y);
     }
+
 }

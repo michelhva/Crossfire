@@ -31,8 +31,8 @@ import org.jetbrains.annotations.Nullable;
  * Manages a list of previously entered commands.
  * @author Andreas Kirschbaum
  */
-public class CommandHistory
-{
+public class CommandHistory {
+
     /**
      * The maximum number of commands to store.
      */
@@ -53,19 +53,16 @@ public class CommandHistory
      * Creates a new instance.
      * @param ident the identification string for backing up to file
      */
-    public CommandHistory(@NotNull final String ident)
-    {
+    public CommandHistory(@NotNull final String ident) {
     }
 
     /**
      * Adds a new command.
      * @param command the command to add
      */
-    public void addCommand(@NotNull final String command)
-    {
+    public void addCommand(@NotNull final String command) {
         final String trimmedCommand = command.trim();
-        if (trimmedCommand.length() <= 0)
-        {
+        if (trimmedCommand.length() <= 0) {
             return;
         }
         removeCommand(trimmedCommand);
@@ -78,13 +75,10 @@ public class CommandHistory
      * Cut off old entries if more than {@link #HISTORY_SIZE} commands are
      * present.
      */
-    private void trimToMaxSize()
-    {
-        while (commands.size() > HISTORY_SIZE)
-        {
+    private void trimToMaxSize() {
+        while (commands.size() > HISTORY_SIZE) {
             commands.remove(0);
-            if (commandIndex > 0)
-            {
+            if (commandIndex > 0) {
                 commandIndex--;
             }
         }
@@ -94,14 +88,11 @@ public class CommandHistory
      * Removes a command.
      * @param command the command to remove
      */
-    private void removeCommand(@NotNull final String command)
-    {
+    private void removeCommand(@NotNull final String command) {
         final Iterator<String> it = commands.iterator();
-        while (it.hasNext())
-        {
+        while (it.hasNext()) {
             final String oldCommand = it.next();
-            if (oldCommand.equals(command))
-            {
+            if (oldCommand.equals(command)) {
                 it.remove();
                 break;
             }
@@ -111,26 +102,24 @@ public class CommandHistory
     /**
      * Returns the previous command.
      * @return the previous command or <code>null</code> if no previous command
-     * exists
+     *         exists
      */
     @Nullable
-    public String up()
-    {
+    public String up() {
         return 1 <= commandIndex && commandIndex <= commands.size() ? commands.get(--commandIndex) : null;
     }
 
     /**
      * Returns the next command.
      * @return the next command or <code>null</code> if no previous command
-     * exists
+     *         exists
      */
     @Nullable
-    public String down()
-    {
-        if (commandIndex < commands.size())
-        {
+    public String down() {
+        if (commandIndex < commands.size()) {
             commandIndex++;
         }
         return commandIndex < commands.size() ? commands.get(commandIndex) : null;
     }
+
 }

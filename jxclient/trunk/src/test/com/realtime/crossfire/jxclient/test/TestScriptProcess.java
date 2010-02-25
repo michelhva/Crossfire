@@ -31,51 +31,58 @@ import org.jetbrains.annotations.NotNull;
  * {@link Assert#fail()}. Sub-classes may override some functions.
  * @author Andreas Kirschbaum
  */
-public class TestScriptProcess implements ScriptProcess
-{
-    /** {@inheritDoc} */
+public class TestScriptProcess implements ScriptProcess {
+
+    /**
+     * {@inheritDoc}
+     */
     @Override
-    public int getScriptId()
-    {
+    public int getScriptId() {
         Assert.fail();
         throw new AssertionError();
     }
 
-    /** {@inheritDoc} */
+    /**
+     * {@inheritDoc}
+     */
     @NotNull
     @Override
-    public String getFilename()
-    {
+    public String getFilename() {
         Assert.fail();
         throw new AssertionError();
     }
 
-    /** {@inheritDoc} */
+    /**
+     * {@inheritDoc}
+     */
     @Override
-    public void commandSent(@NotNull final String cmd)
-    {
+    public void commandSent(@NotNull final String cmd) {
         Assert.fail();
     }
 
-    /** {@inheritDoc} */
+    /**
+     * {@inheritDoc}
+     */
     @Override
-    public void addScriptProcessListener(@NotNull final ScriptProcessListener scriptProcessListener)
-    {
+    public void addScriptProcessListener(@NotNull final ScriptProcessListener scriptProcessListener) {
         Assert.fail();
     }
 
-    /** {@inheritDoc} */
+    /**
+     * {@inheritDoc}
+     */
     @Override
-    public void killScript()
-    {
+    public void killScript() {
         Assert.fail();
     }
 
-    /** {@inheritDoc} */
+    /**
+     * {@inheritDoc}
+     */
     @Override
-    public int compareTo(@NotNull final ScriptProcess o)
-    {
+    public int compareTo(@NotNull final ScriptProcess o) {
         Assert.fail();
         throw new AssertionError();
     }
+
 }

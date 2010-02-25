@@ -33,11 +33,10 @@ import org.jetbrains.annotations.Nullable;
 
 /**
  * A dialog title that allows to move the dialog.
- *
  * @author Andreas Kirschbaum
  */
-public class GUIDialogTitle extends GUIPicture
-{
+public class GUIDialogTitle extends GUIPicture {
+
     /**
      * The serial version UID.
      */
@@ -58,50 +57,38 @@ public class GUIDialogTitle extends GUIPicture
 
     /**
      * Create a new instance.
-     *
      * @param tooltipManager the tooltip manager to update
-     *
      * @param windowRenderer the window renderer this element belongs to
-     *
      * @param elementListener the element listener to notify
-     *
      * @param name The name of this element.
-     *
      * @param x The x-coordinate for drawing this element to screen; it is
      * relative to <code>gui</code>.
-     *
      * @param y The y-coordinate for drawing this element to screen; it is
      * relative to <code>gui</code>.
-     *
      * @param w The width for drawing this element to screen.
-     *
      * @param h The height for drawing this element to screen.
-     *
      * @param image The picture to paint.
-     *
      * @param alpha The transparency value.
      */
-    public GUIDialogTitle(@NotNull final TooltipManager tooltipManager, @NotNull final JXCWindowRenderer windowRenderer, @NotNull final GUIElementListener elementListener, @NotNull final String name, final int x, final int y, final int w, final int h, @NotNull final BufferedImage image, final float alpha)
-    {
+    public GUIDialogTitle(@NotNull final TooltipManager tooltipManager, @NotNull final JXCWindowRenderer windowRenderer, @NotNull final GUIElementListener elementListener, @NotNull final String name, final int x, final int y, final int w, final int h, @NotNull final BufferedImage image, final float alpha) {
         super(tooltipManager, elementListener, name, x, y, w, h, image, alpha);
         this.windowRenderer = windowRenderer;
     }
 
-    /** {@inheritDoc} */
+    /**
+     * {@inheritDoc}
+     */
     @Override
-    public void dispose()
-    {
+    public void dispose() {
         super.dispose();
     }
 
     /* {@inheritDoc} */
     @Override
-    public void mousePressed(@NotNull final MouseEvent e)
-    {
+    public void mousePressed(@NotNull final MouseEvent e) {
         super.mousePressed(e);
         final Gui gui = getGui();
-        if (gui == null)
-        {
+        if (gui == null) {
             offset = null;
             return;
         }
@@ -112,8 +99,7 @@ public class GUIDialogTitle extends GUIPicture
 
     /* {@inheritDoc} */
     @Override
-    public void mouseReleased(@NotNull final MouseEvent e)
-    {
+    public void mouseReleased(@NotNull final MouseEvent e) {
         super.mouseReleased(e);
         moveTo(e);
         offset = null;
@@ -121,27 +107,22 @@ public class GUIDialogTitle extends GUIPicture
 
     /* {@inheritDoc} */
     @Override
-    public void mouseDragged(@NotNull final MouseEvent e)
-    {
+    public void mouseDragged(@NotNull final MouseEvent e) {
         super.mouseDragged(e);
         moveTo(e);
     }
 
     /**
      * Move the dialog the given point.
-     *
      * @param e The destination point.
      */
-    private void moveTo(@NotNull final MouseEvent e)
-    {
-        if (offset == null)
-        {
+    private void moveTo(@NotNull final MouseEvent e) {
+        if (offset == null) {
             return;
         }
 
         final Gui gui = getGui();
-        if (gui == null)
-        {
+        if (gui == null) {
             offset = null;
             return;
         }
@@ -151,4 +132,5 @@ public class GUIDialogTitle extends GUIPicture
         final int newY = Math.max(Math.min(point.y+offset.y, windowRenderer.getWindowHeight()-gui.getHeight()), 0);
         gui.setPosition(newX, newY);
     }
+
 }

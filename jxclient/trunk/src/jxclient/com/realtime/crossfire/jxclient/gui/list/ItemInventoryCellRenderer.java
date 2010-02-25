@@ -34,8 +34,8 @@ import org.jetbrains.annotations.NotNull;
  * A {@link ListCellRenderer} that renders {@link GUIMetaElement} instances.
  * @author Andreas Kirschbaum
  */
-public class ItemInventoryCellRenderer extends JPanel implements ListCellRenderer
-{
+public class ItemInventoryCellRenderer extends JPanel implements ListCellRenderer {
+
     /**
      * The serial version UID.
      */
@@ -51,20 +51,21 @@ public class ItemInventoryCellRenderer extends JPanel implements ListCellRendere
      * Creates a new instance.
      * @param template the template used for painting
      */
-    public ItemInventoryCellRenderer(@NotNull final GUIItemInventory template)
-    {
+    public ItemInventoryCellRenderer(@NotNull final GUIItemInventory template) {
         super(new BorderLayout());
         setOpaque(false);
         this.template = template;
         add(template, BorderLayout.CENTER);
     }
 
-    /** {@inheritDoc} */
+    /**
+     * {@inheritDoc}
+     */
     @Override
-    public Component getListCellRendererComponent(@NotNull final JList list, @NotNull final Object value, final int index, final boolean isSelected, final boolean cellHasFocus)
-    {
+    public Component getListCellRendererComponent(@NotNull final JList list, @NotNull final Object value, final int index, final boolean isSelected, final boolean cellHasFocus) {
         template.setIndexNoListeners(((GUIItemInventory)value).getIndex());
         template.setSelected(isSelected);
         return this;
     }
+
 }

@@ -29,11 +29,10 @@ import org.jetbrains.annotations.NotNull;
 
 /**
  * Maps between key codes integer constants and string representations.
- *
  * @author Andreas Kirschbaum
  */
-public class KeyCodeMap
-{
+public class KeyCodeMap {
+
     /**
      * Maps key name to key code.
      */
@@ -49,35 +48,21 @@ public class KeyCodeMap
     /**
      * Create a new instance.
      */
-    public KeyCodeMap()
-    {
-        for (final Field field : KeyEvent.class.getDeclaredFields())
-        {
-            if (field.getName().startsWith("VK_"))
-            {
+    public KeyCodeMap() {
+        for (final Field field : KeyEvent.class.getDeclaredFields()) {
+            if (field.getName().startsWith("VK_")) {
                 final int keyCode;
-                try
-                {
+                try {
                     keyCode = field.getInt(null);
-                }
-                catch (final SecurityException ex)
-                {
+                } catch (final SecurityException ex) {
                     continue;
-                }
-                catch (final IllegalArgumentException ex)
-                {
+                } catch (final IllegalArgumentException ex) {
                     continue;
-                }
-                catch (final IllegalAccessException ex)
-                {
+                } catch (final IllegalAccessException ex) {
                     continue;
-                }
-                catch (final NullPointerException ex)
-                {
+                } catch (final NullPointerException ex) {
                     continue;
-                }
-                catch (final ExceptionInInitializerError ex)
-                {
+                } catch (final ExceptionInInitializerError ex) {
                     continue;
                 }
                 final String keyName = field.getName().substring(3);
@@ -90,46 +75,35 @@ public class KeyCodeMap
 
     /**
      * Return the key code for a key name.
-     *
      * @param keyName The key name to convert.
-     *
      * @return The key code.
-     *
      * @throws NoSuchKeyCodeException If the key name is invalid.
      */
-    public int getKeyCode(@NotNull final String keyName) throws NoSuchKeyCodeException
-    {
-        if (keyCodes.containsKey(keyName))
-        {
+    public int getKeyCode(@NotNull final String keyName) throws NoSuchKeyCodeException {
+        if (keyCodes.containsKey(keyName)) {
             return keyCodes.get(keyName);
         }
 
-        try
-        {
+        try {
             return Integer.parseInt(keyName);
-        }
-        catch (final NumberFormatException ex)
-        {
+        } catch (final NumberFormatException ex) {
             throw new NoSuchKeyCodeException();
         }
     }
 
     /**
      * Return the key name for a key code.
-     *
      * @param keyCode The key code to convert.
-     *
      * @return The key name.
      */
     @NotNull
-    public String getKeyName(final int keyCode)
-    {
+    public String getKeyName(final int keyCode) {
         final String keyName = keyNames.get(keyCode);
-        if (keyName != null)
-        {
+        if (keyName != null) {
             return keyName;
         }
 
         return Integer.toString(keyCode);
     }
+
 }

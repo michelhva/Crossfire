@@ -25,8 +25,8 @@ package com.realtime.crossfire.jxclient.gui.gauge;
  * Interface for orientation images.
  * @author Andreas Kirschbaum
  */
-public interface Orientation
-{
+public interface Orientation {
+
     /**
      * Sets whether the gauge can display negative images. By default negative
      * images are not supported.
@@ -85,4 +85,5 @@ public interface Orientation
      * @return whether the values are valid
      */
     boolean isValid();
+
 }

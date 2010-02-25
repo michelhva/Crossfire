@@ -32,8 +32,8 @@ import org.jetbrains.annotations.NotNull;
  * A {@link FaceQueue} loading faces from {@link ImageCache} instances.
  * @author Andreas Kirschbaum
  */
-public class FileCacheFaceQueue extends AbstractFaceQueue
-{
+public class FileCacheFaceQueue extends AbstractFaceQueue {
+
     /**
      * The object used for synchronization.
      */
@@ -82,54 +82,51 @@ public class FileCacheFaceQueue extends AbstractFaceQueue
 
     /**
      * Creates a new instance.
-     * @param imageCacheOriginal the image cache used for loading original
-     * image files
+     * @param imageCacheOriginal the image cache used for loading original image
+     * files
      * @param imageCacheScaled the image cache used for loading scaled image
      * files
      * @param imageCacheMagicMap the image cache used for loading magic map
      * image files
      */
-    public FileCacheFaceQueue(@NotNull final ImageCache imageCacheOriginal, @NotNull final ImageCache imageCacheScaled, @NotNull final ImageCache imageCacheMagicMap)
-    {
+    public FileCacheFaceQueue(@NotNull final ImageCache imageCacheOriginal, @NotNull final ImageCache imageCacheScaled, @NotNull final ImageCache imageCacheMagicMap) {
         this.imageCacheOriginal = imageCacheOriginal;
         this.imageCacheScaled = imageCacheScaled;
         this.imageCacheMagicMap = imageCacheMagicMap;
     }
 
-    /** {@inheritDoc} */
+    /**
+     * {@inheritDoc}
+     */
     @Override
-    public void reset()
-    {
-        synchronized (sync)
-        {
+    public void reset() {
+        synchronized (sync) {
             id++;
             pendingLoadFaces.clear();
         }
     }
 
-    /** {@inheritDoc} */
+    /**
+     * {@inheritDoc}
+     */
     @Override
-    public void loadFace(@NotNull final Face face)
-    {
+    public void loadFace(@NotNull final Face face) {
         final boolean doAdd;
-        synchronized (sync)
-        {
+        synchronized (sync) {
             doAdd = pendingLoadFaces.add(face);
         }
-        if (doAdd)
-        {
+        if (doAdd) {
             executorService.submit(new LoadTask(face));
         }
     }
 
     /**
-     * Saves a face to the cacches. This function returns immediately; the
-     * faces are written asynchronously.
+     * Saves a face to the cacches. This function returns immediately; the faces
+     * are written asynchronously.
      * @param face the face to write
      * @param faceImages the image information to write
      */
-    public void saveFace(@NotNull final Face face, @NotNull final FaceImages faceImages)
-    {
+    public void saveFace(@NotNull final Face face, @NotNull final FaceImages faceImages) {
         executorService.submit(new SaveTask(face, faceImages));
     }
 
@@ -137,8 +134,8 @@ public class FileCacheFaceQueue extends AbstractFaceQueue
      * A thread which loads one face from the caches.
      * @author Andreas Kirschbaum
      */
-    private class LoadTask implements Runnable
-    {
+    private class LoadTask implements Runnable {
+
         private final int taskId = id;
 
         /**
@@ -151,49 +148,41 @@ public class FileCacheFaceQueue extends AbstractFaceQueue
          * Creates a new instance.
          * @param face the face to load
          */
-        public LoadTask(@NotNull final Face face)
-        {
+        public LoadTask(@NotNull final Face face) {
             this.face = face;
         }
 
-        /** {@inheritDoc} */
+        /**
+         * {@inheritDoc}
+         */
         @Override
-        public void run()
-        {
-            try
-            {
-                if (taskId != id)
-                {
+        public void run() {
+            try {
+                if (taskId != id) {
                     return;
                 }
 
                 final ImageIcon originalImageIcon = imageCacheOriginal.load(face);
-                if (originalImageIcon == null)
-                {
+                if (originalImageIcon == null) {
                     fireFaceFailed(face);
                     return;
                 }
 
                 final ImageIcon scaledImageIcon = imageCacheScaled.load(face);
-                if (scaledImageIcon == null)
-                {
+                if (scaledImageIcon == null) {
                     fireFaceFailed(face);
                     return;
                 }
 
                 final ImageIcon magicMapImageIcon = imageCacheMagicMap.load(face);
-                if (magicMapImageIcon == null)
-                {
+                if (magicMapImageIcon == null) {
                     fireFaceFailed(face);
                     return;
                 }
 
                 fireFaceLoaded(face, new FaceImages(originalImageIcon, scaledImageIcon, magicMapImageIcon));
-            }
-            finally
-            {
-                synchronized (sync)
-                {
+            } finally {
+                synchronized (sync) {
                     pendingLoadFaces.remove(face);
                 }
             }
@@ -204,8 +193,8 @@ public class FileCacheFaceQueue extends AbstractFaceQueue
      * A thread which saves one face to the caches.
      * @author Andreas Kirschbaum
      */
-    private class SaveTask implements Runnable
-    {
+    private class SaveTask implements Runnable {
+
         /**
          * The face to save.
          */
@@ -223,19 +212,20 @@ public class FileCacheFaceQueue extends AbstractFaceQueue
          * @param face the face to save
          * @param faceImages the images to save
          */
-        public SaveTask(@NotNull final Face face, @NotNull final FaceImages faceImages)
-        {
+        public SaveTask(@NotNull final Face face, @NotNull final FaceImages faceImages) {
             this.face = face;
             this.faceImages = faceImages;
         }
 
-        /** {@inheritDoc} */
+        /**
+         * {@inheritDoc}
+         */
         @Override
-        public void run()
-        {
+        public void run() {
             imageCacheOriginal.save(face, faceImages.getOriginalImageIcon());
             imageCacheScaled.save(face, faceImages.getScaledImageIcon());
             imageCacheMagicMap.save(face, faceImages.getMagicMapImageIcon());
         }
     }
+
 }

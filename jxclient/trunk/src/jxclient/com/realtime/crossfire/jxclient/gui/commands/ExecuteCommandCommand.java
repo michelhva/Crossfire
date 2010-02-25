@@ -29,13 +29,17 @@ import org.jetbrains.annotations.NotNull;
  * A {@link GUICommand} which executes a Crossfire command.
  * @author Andreas Kirschbaum
  */
-public class ExecuteCommandCommand implements GUICommand
-{
-    /** The commands instance for executing the command. */
+public class ExecuteCommandCommand implements GUICommand {
+
+    /**
+     * The commands instance for executing the command.
+     */
     @NotNull
     private final Commands commands;
 
-    /** The command to execute. */
+    /**
+     * The command to execute.
+     */
     @NotNull
     private final String command;
 
@@ -51,24 +55,25 @@ public class ExecuteCommandCommand implements GUICommand
      * @param command the command to execute
      * @param macros the macros instance to use
      */
-    public ExecuteCommandCommand(@NotNull final Commands commands, @NotNull final String command, @NotNull final Macros macros)
-    {
+    public ExecuteCommandCommand(@NotNull final Commands commands, @NotNull final String command, @NotNull final Macros macros) {
         this.commands = commands;
         this.command = command;
         this.macros = macros;
     }
 
-    /** {@inheritDoc} */
+    /**
+     * {@inheritDoc}
+     */
     @Override
-    public boolean canExecute()
-    {
+    public boolean canExecute() {
         return true;
     }
 
-    /** {@inheritDoc} */
+    /**
+     * {@inheritDoc}
+     */
     @Override
-    public void execute()
-    {
+    public void execute() {
         commands.executeCommand(macros.expandMacros(command));
     }
 
@@ -77,8 +82,8 @@ public class ExecuteCommandCommand implements GUICommand
      * @return the command to execute
      */
     @NotNull
-    public String getCommand()
-    {
+    public String getCommand() {
         return command;
     }
+
 }

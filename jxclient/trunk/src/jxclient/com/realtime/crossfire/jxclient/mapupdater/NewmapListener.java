@@ -22,12 +22,12 @@
 package com.realtime.crossfire.jxclient.mapupdater;
 
 /**
- *
- * @version 1.0
  * @author Lauwenmark
+ * @version 1.0
  * @since 1.0
  */
-public interface NewmapListener
-{
+public interface NewmapListener {
+
     void commandNewmapReceived();
+
 }

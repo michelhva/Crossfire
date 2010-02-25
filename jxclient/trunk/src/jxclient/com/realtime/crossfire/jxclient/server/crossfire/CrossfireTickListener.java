@@ -25,11 +25,12 @@ package com.realtime.crossfire.jxclient.server.crossfire;
  * Interface for listeners interested in "tick" commands.
  * @author Andreas Kirschbaum
  */
-public interface CrossfireTickListener
-{
+public interface CrossfireTickListener {
+
     /**
      * A "tick" command has been received.
      * @param tickNo the current tick
      */
     void tick(int tickNo);
+
 }

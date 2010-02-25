@@ -32,11 +32,10 @@ import org.jetbrains.annotations.NotNull;
 
 /**
  * Abstract base class for button classes.
- *
  * @author Andreas Kirschbaum
  */
-public abstract class AbstractButton extends ActivatableGUIElement
-{
+public abstract class AbstractButton extends ActivatableGUIElement {
+
     /**
      * The serial version UID.
      */
@@ -64,12 +63,10 @@ public abstract class AbstractButton extends ActivatableGUIElement
     private final CommandList commandList;
 
     @NotNull
-    private final TimeoutEvent timeoutEvent = new TimeoutEvent()
-    {
+    private final TimeoutEvent timeoutEvent = new TimeoutEvent() {
         /** {@inheritDoc} */
         @Override
-        public void timeout()
-        {
+        public void timeout() {
             execute();
             Timeouts.reset(TIMEOUT_SECOND, timeoutEvent);
         }
@@ -77,57 +74,44 @@ public abstract class AbstractButton extends ActivatableGUIElement
 
     /**
      * Create a new instance.
-     *
      * @param tooltipManager the tooltip manager to update
-     *
      * @param elementListener the element listener to notify
-     *
      * @param name The name of this element.
-     *
      * @param x The x-coordinate for drawing this element to screen.
-     *
      * @param y The y-coordinate for drawing this element to screen.
-     *
      * @param w The width for drawing this element to screen.
-     *
      * @param h The height for drawing this element to screen.
-     *
      * @param transparency The transparency value for the backing buffer
-     *
      * @param autoRepeat Whether the button should autorepeat while being
      * pressed.
-     *
      * @param commandList The commands to execute when the button is elected.
      */
-    protected AbstractButton(@NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final String name, final int x, final int y, final int w, final int h, final int transparency, final boolean autoRepeat, @NotNull final CommandList commandList)
-    {
+    protected AbstractButton(@NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final String name, final int x, final int y, final int w, final int h, final int transparency, final boolean autoRepeat, @NotNull final CommandList commandList) {
         super(tooltipManager, elementListener, name, x, y, w, h, transparency);
         this.autoRepeat = autoRepeat;
         this.commandList = commandList;
     }
 
-    /** {@inheritDoc} */
+    /**
+     * {@inheritDoc}
+     */
     @Override
-    public void dispose()
-    {
+    public void dispose() {
         super.dispose();
     }
 
-    /** {@inheritDoc} */
+    /**
+     * {@inheritDoc}
+     */
     @Override
-    public void mouseReleased(@NotNull final MouseEvent e)
-    {
+    public void mouseReleased(@NotNull final MouseEvent e) {
         super.mouseReleased(e);
         final int b = e.getButton();
-        switch (b)
-        {
+        switch (b) {
         case MouseEvent.BUTTON1:
-            if (autoRepeat)
-            {
+            if (autoRepeat) {
                 Timeouts.remove(timeoutEvent);
-            }
-            else
-            {
+            } else {
                 execute();
             }
             setActive(false);
@@ -141,18 +125,17 @@ public abstract class AbstractButton extends ActivatableGUIElement
         }
     }
 
-    /** {@inheritDoc} */
+    /**
+     * {@inheritDoc}
+     */
     @Override
-    public void mousePressed(@NotNull final MouseEvent e)
-    {
+    public void mousePressed(@NotNull final MouseEvent e) {
         super.mousePressed(e);
         final int b = e.getButton();
-        switch (b)
-        {
+        switch (b) {
         case MouseEvent.BUTTON1:
             setActive(true);
-            if (autoRepeat)
-            {
+            if (autoRepeat) {
                 execute();
                 Timeouts.reset(TIMEOUT_FIRST, timeoutEvent);
             }
@@ -166,12 +149,12 @@ public abstract class AbstractButton extends ActivatableGUIElement
         }
     }
 
-    /** {@inheritDoc} */
+    /**
+     * {@inheritDoc}
+     */
     @Override
-    public void mouseExited(@NotNull final MouseEvent e)
-    {
-        if (autoRepeat)
-        {
+    public void mouseExited(@NotNull final MouseEvent e) {
+        if (autoRepeat) {
             Timeouts.remove(timeoutEvent);
         }
         setActive(false);
@@ -181,16 +164,15 @@ public abstract class AbstractButton extends ActivatableGUIElement
      * Returns whether the command actions can be executed.
      * @return whether execution is possible
      */
-    public boolean canExecute()
-    {
+    public boolean canExecute() {
         return commandList.canExecute();
     }
 
     /**
      * Execute the command actions.
      */
-    public void execute()
-    {
+    public void execute() {
         commandList.execute();
     }
+
 }

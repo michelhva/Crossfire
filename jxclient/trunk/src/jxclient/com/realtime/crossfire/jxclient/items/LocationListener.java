@@ -28,8 +28,8 @@ import org.jetbrains.annotations.Nullable;
  * Interface for listeners for changes of item locations.
  * @author Andreas Kirschbaum
  */
-public interface LocationListener extends EventListener
-{
+public interface LocationListener extends EventListener {
+
     /**
      * Will be called when the attribute of a location has changed.
      * @param index the location that has changed
@@ -37,4 +37,5 @@ public interface LocationListener extends EventListener
      * the location is empty
      */
     void locationModified(int index, @Nullable CfItem item);
+
 }

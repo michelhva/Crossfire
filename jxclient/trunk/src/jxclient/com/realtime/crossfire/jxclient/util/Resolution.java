@@ -31,8 +31,8 @@ import org.jetbrains.annotations.Nullable;
  * similar resolution is allowed.
  * @author Andreas Kirschbaum
  */
-public class Resolution
-{
+public class Resolution {
+
     /**
      * Whether the resolution is exact (<code>true</code>), or a choosing
      * similar resolution if allowed (<code>false</code>).
@@ -56,8 +56,7 @@ public class Resolution
      * @param width the width in pixels
      * @param height the height in pixels
      */
-    public Resolution(final boolean exact, final int width, final int height)
-    {
+    public Resolution(final boolean exact, final int width, final int height) {
         this.exact = exact;
         this.width = width;
         this.height = height;
@@ -69,26 +68,21 @@ public class Resolution
      * from {@link #toString()}.
      * @param exact whether the resolution is exact
      * @param str the string representation
-     * @return the <code>Resolution instance</code>, or <code>null</code> if
-     * the string representation is invalid
+     * @return the <code>Resolution instance</code>, or <code>null</code> if the
+     *         string representation is invalid
      */
     @Nullable
-    public static Resolution parse(final boolean exact, final String str)
-    {
+    public static Resolution parse(final boolean exact, final String str) {
         final String[] tmp = str.split("x", -1);
-        if (tmp.length != 2)
-        {
+        if (tmp.length != 2) {
             return null;
         }
         final int width;
         final int height;
-        try
-        {
+        try {
             width = Integer.parseInt(tmp[0]);
             height = Integer.parseInt(tmp[1]);
-        }
-        catch (final NumberFormatException ex)
-        {
+        } catch (final NumberFormatException ex) {
             return null;
         }
 
@@ -100,8 +94,7 @@ public class Resolution
      * choosing similar resolution if allowed (<code>false</code>).
      * @return whether the resolution is exact
      */
-    public boolean isExact()
-    {
+    public boolean isExact() {
         return exact;
     }
 
@@ -109,8 +102,7 @@ public class Resolution
      * Returns the width in pixels.
      * @return the width
      */
-    public int getWidth()
-    {
+    public int getWidth() {
         return width;
     }
 
@@ -118,8 +110,7 @@ public class Resolution
      * Returns the height in pixels.
      * @return the height
      */
-    public int getHeight()
-    {
+    public int getHeight() {
         return height;
     }
 
@@ -127,8 +118,7 @@ public class Resolution
      * Returns the area in pixels.
      * @return the area
      */
-    public int getArea()
-    {
+    public int getArea() {
         return width*height;
     }
 
@@ -138,39 +128,40 @@ public class Resolution
      * @param displayMode the display mode
      * @return if the resolutions match
      */
-    public boolean equalsDisplayMode(@NotNull final DisplayMode displayMode)
-    {
+    public boolean equalsDisplayMode(@NotNull final DisplayMode displayMode) {
         return width == displayMode.getWidth() && height == displayMode.getHeight();
     }
 
-    /** {@inheritDoc} */
+    /**
+     * {@inheritDoc}
+     */
     @Override
-    public boolean equals(@Nullable final Object obj)
-    {
-        if (obj == null)
-        {
+    public boolean equals(@Nullable final Object obj) {
+        if (obj == null) {
             return false;
         }
-        if (obj.getClass() != Resolution.class)
-        {
+        if (obj.getClass() != Resolution.class) {
             return false;
         }
         final Resolution resolution = (Resolution)obj;
         return resolution.width == width && resolution.height == height;
     }
 
-    /** {@inheritDoc} */
+    /**
+     * {@inheritDoc}
+     */
     @Override
-    public int hashCode()
-    {
+    public int hashCode() {
         return width^(height<<16)^(height>>16);
     }
 
-    /** {@inheritDoc} */
+    /**
+     * {@inheritDoc}
+     */
     @NotNull
     @Override
-    public String toString()
-    {
+    public String toString() {
         return width+"x"+height;
     }
+
 }

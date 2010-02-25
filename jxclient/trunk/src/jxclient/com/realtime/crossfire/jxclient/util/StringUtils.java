@@ -30,8 +30,8 @@ import org.jetbrains.annotations.NotNull;
  * Utility class for string manipulation.
  * @author Andreas Kirschbaum
  */
-public class StringUtils
-{
+public class StringUtils {
+
     /**
      * A pattern matching leading whitespace.
      */
@@ -41,8 +41,7 @@ public class StringUtils
     /**
      * Private constructor to prevent instantiation.
      */
-    private StringUtils()
-    {
+    private StringUtils() {
     }
 
     /**
@@ -51,8 +50,7 @@ public class StringUtils
      * @return the string without leading whitespace
      */
     @NotNull
-    public static String trimLeading(@NotNull final CharSequence str)
-    {
+    public static String trimLeading(@NotNull final CharSequence str) {
         return PATTERN_LEADING_WHITESPACE.matcher(str).replaceAll("");
     }
 
@@ -63,43 +61,34 @@ public class StringUtils
      * @throws UnterminatedTokenException if a quoted token is unterminated
      */
     @NotNull
-    public static String[] splitFields(@NotNull final String line) throws UnterminatedTokenException
-    {
+    public static String[] splitFields(@NotNull final String line) throws UnterminatedTokenException {
         final List<String> tokens = new ArrayList<String>(64);
 
         final char[] chars = line.toCharArray();
 
         int i = 0;
-        while (i < chars.length)
-        {
-            while (i < chars.length && (chars[i] == ' ' || chars[i] == '\t'))
-            {
+        while (i < chars.length) {
+            while (i < chars.length && (chars[i] == ' ' || chars[i] == '\t')) {
                 i++;
             }
             final int start;
             final int end;
-            if (i < chars.length && (chars[i] == '"' || chars[i] == '\''))
-            {
+            if (i < chars.length && (chars[i] == '"' || chars[i] == '\'')) {
                 // quoted token
                 final char quoteChar = chars[i++];
                 start = i;
-                while (i < chars.length && chars[i] != quoteChar)
-                {
+                while (i < chars.length && chars[i] != quoteChar) {
                     i++;
                 }
-                if (i >= chars.length)
-                {
+                if (i >= chars.length) {
                     throw new UnterminatedTokenException(line.substring(start-1));
                 }
                 end = i;
                 i++;
-            }
-            else
-            {
+            } else {
                 // unquoted token
                 start = i;
-                while (i < chars.length && (chars[i] != ' ' && chars[i] != '\t'))
-                {
+                while (i < chars.length && (chars[i] != ' ' && chars[i] != '\t')) {
                     i++;
                 }
                 end = i;
@@ -109,4 +98,5 @@ public class StringUtils
 
         return tokens.toArray(new String[tokens.size()]);
     }
+
 }

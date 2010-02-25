@@ -24,17 +24,15 @@ package com.realtime.crossfire.jxclient.server.crossfire;
 /**
  * Interface for listeners interested in comc commands received from the
  * server.
- *
  * @author Andreas Kirschbaum
  */
-public interface CrossfireComcListener
-{
+public interface CrossfireComcListener {
+
     /**
      * Called whenever a comc command has been received.
-     *
      * @param packetNo The command number.
-     *
      * @param time The execution time.
      */
     void commandComcReceived(int packetNo, int time);
+
 }
