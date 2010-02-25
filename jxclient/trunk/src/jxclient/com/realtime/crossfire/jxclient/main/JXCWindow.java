@@ -45,7 +45,6 @@ import com.realtime.crossfire.jxclient.server.crossfire.CrossfireServerConnectio
 import com.realtime.crossfire.jxclient.server.crossfire.SentReplyListener;
 import com.realtime.crossfire.jxclient.server.socket.ClientSocketListener;
 import com.realtime.crossfire.jxclient.server.socket.ClientSocketState;
-import com.realtime.crossfire.jxclient.server.socket.UnknownCommandException;
 import com.realtime.crossfire.jxclient.settings.Settings;
 import com.realtime.crossfire.jxclient.settings.options.OptionException;
 import com.realtime.crossfire.jxclient.settings.options.OptionManager;
@@ -321,7 +320,7 @@ public class JXCWindow extends JFrame
 
         /** {@inheritDoc} */
         @Override
-        public void packetReceived(@NotNull final byte[] buf, final int start, final int end) throws UnknownCommandException
+        public void packetReceived(@NotNull final byte[] buf, final int start, final int end)
         {
             // ignore
         }
