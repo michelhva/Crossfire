@@ -32,7 +32,6 @@ import com.realtime.crossfire.jxclient.server.crossfire.CrossfireDrawinfoListene
 import com.realtime.crossfire.jxclient.server.crossfire.CrossfireServerConnection;
 import com.realtime.crossfire.jxclient.server.crossfire.CrossfireStatsListener;
 import com.realtime.crossfire.jxclient.server.socket.ClientSocketListener;
-import com.realtime.crossfire.jxclient.server.socket.UnknownCommandException;
 import com.realtime.crossfire.jxclient.skills.Skill;
 import com.realtime.crossfire.jxclient.skills.SkillSet;
 import com.realtime.crossfire.jxclient.spells.Spell;
@@ -172,7 +171,7 @@ public class DefaultScriptProcess extends Thread implements ScriptProcess
 
         /** {@inheritDoc} */
         @Override
-        public void packetReceived(@NotNull final byte[] buf, final int start, final int end) throws UnknownCommandException
+        public void packetReceived(@NotNull final byte[] buf, final int start, final int end)
         {
             // ignore
         }
