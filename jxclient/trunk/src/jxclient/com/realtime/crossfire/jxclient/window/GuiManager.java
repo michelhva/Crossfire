@@ -89,8 +89,8 @@ public class GuiManager
     /**
      * The {@link GuiFactory} for creating {@link Gui} instances.
      */
-    @Nullable
-    private GuiFactory guiFactory = null;
+    @NotNull
+    private final GuiFactory guiFactory;
 
     /**
      * The query dialog.
