@@ -279,6 +279,7 @@ public class GuiManager {
         /** {@inheritDoc} */
         @Override
         public void start() {
+            closeTransientDialogs();
             server.removeCrossfireDrawextinfoListener(crossfireDrawextinfoListener);
             windowRenderer.setGuiState(RendererGuiState.START);
             showGUIStart();
@@ -287,6 +288,7 @@ public class GuiManager {
         /** {@inheritDoc} */
         @Override
         public void metaserver() {
+            closeTransientDialogs();
             server.removeCrossfireDrawextinfoListener(crossfireDrawextinfoListener);
             windowRenderer.setGuiState(RendererGuiState.META);
             showGUIMeta();
@@ -306,6 +308,7 @@ public class GuiManager {
                 throw new IllegalStateException();
             }
 
+            closeTransientDialogs();
             final int mapWidth = skin.getMapWidth();
             assert skin != null;
             final int mapHeight = skin.getMapHeight();
@@ -330,14 +333,13 @@ public class GuiManager {
         /** {@inheritDoc} */
         @Override
         public void connected() {
-            if (dialogConnect != null) {
-                closeDialog(dialogConnect);
-            }
+            closeTransientDialogs();
         }
 
         /** {@inheritDoc} */
         @Override
         public void connectFailed(@NotNull final String reason) {
+            closeTransientDialogs();
             if (dialogConnect != null) {
                 windowRenderer.openDialog(dialogConnect, false);
                 updateConnectLabel(ClientSocketState.CONNECT_FAILED, reason);

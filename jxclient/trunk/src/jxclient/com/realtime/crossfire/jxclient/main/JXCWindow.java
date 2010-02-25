@@ -456,7 +456,6 @@ public class JXCWindow extends JFrame {
         /** {@inheritDoc} */
         @Override
         public void start() {
-            guiManager.closeTransientDialogs();
             itemsManager.removeCrossfirePlayerListener(playerListener);
             server.removeCrossfireQueryListener(crossfireQueryListener);
             if (DISABLE_START_GUI) {
@@ -467,7 +466,6 @@ public class JXCWindow extends JFrame {
         /** {@inheritDoc} */
         @Override
         public void metaserver() {
-            guiManager.closeTransientDialogs();
             itemsManager.removeCrossfirePlayerListener(playerListener);
             server.removeCrossfireQueryListener(crossfireQueryListener);
         }
@@ -481,7 +479,6 @@ public class JXCWindow extends JFrame {
         /** {@inheritDoc} */
         @Override
         public void connecting(@NotNull final String serverInfo) {
-            guiManager.closeTransientDialogs();
             facesManager.reset();
             itemsManager.addCrossfirePlayerListener(playerListener);
             server.addCrossfireQueryListener(crossfireQueryListener);
@@ -490,19 +487,19 @@ public class JXCWindow extends JFrame {
         /** {@inheritDoc} */
         @Override
         public void connecting(@NotNull final ClientSocketState clientSocketState) {
-            guiManager.closeTransientDialogs();
+            // ignore
         }
 
         /** {@inheritDoc} */
         @Override
         public void connected() {
-            guiManager.closeTransientDialogs();
+            // ignore
         }
 
         /** {@inheritDoc} */
         @Override
         public void connectFailed(@NotNull final String reason) {
-            guiManager.closeTransientDialogs();
+            // ignore
         }
     };
 
