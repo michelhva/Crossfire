@@ -458,7 +458,8 @@ public class ItemsManager
             final CfItem oldItem = allItems.get(item.getTag());
             if (oldItem != null)
             {
-                System.err.println("addItem: duplicate item "+item.getTag());
+                //XXX: Do not complain about duplicate items as the Crossfire server sometimes does not correctly remove items from the ground when a player picks up items
+                //System.err.println("addItem: duplicate item "+item.getTag());
                 removeItem(oldItem);
             }
 
