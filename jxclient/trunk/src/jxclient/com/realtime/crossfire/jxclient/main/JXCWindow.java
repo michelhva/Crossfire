@@ -193,10 +193,9 @@ public class JXCWindow extends JFrame
     private final ShortcutsManager shortcutsManager;
 
     /**
-     * The current pickup mode. Set to <code>null</code> if no user is logged
-     * in.
+     * The current pickup mode.
      */
-    @Nullable
+    @NotNull
     private final Pickup characterPickup;
 
     /**
