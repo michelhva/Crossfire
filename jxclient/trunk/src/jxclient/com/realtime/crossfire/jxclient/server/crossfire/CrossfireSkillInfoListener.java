@@ -27,11 +27,11 @@ import org.jetbrains.annotations.NotNull;
  * Interface for listeners interested in skill info responses.
  * @author Andreas Kirschbaum
  */
-public interface CrossfireSkillInfoListener
-{
+public interface CrossfireSkillInfoListener {
+
     /**
-     * Clears all skill info. This function is called whenever new skill info
-     * is available.
+     * Clears all skill info. This function is called whenever new skill info is
+     * available.
      */
     void clearSkills();
 
@@ -41,4 +41,5 @@ public interface CrossfireSkillInfoListener
      * @param skillName the skill name
      */
     void addSkill(int skillId, @NotNull String skillName);
+
 }

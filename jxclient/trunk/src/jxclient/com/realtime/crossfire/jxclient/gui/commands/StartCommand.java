@@ -29,8 +29,8 @@ import org.jetbrains.annotations.NotNull;
  * A {@link GUICommand} which shows the start screen.
  * @author Andreas Kirschbaum
  */
-public class StartCommand implements GUICommand
-{
+public class StartCommand implements GUICommand {
+
     /**
      * The {@link GuiStateManager} to affect.
      */
@@ -41,22 +41,24 @@ public class StartCommand implements GUICommand
      * Creates a new instance.
      * @param guiStateManager the gui state manager to affect
      */
-    public StartCommand(@NotNull final GuiStateManager guiStateManager)
-    {
+    public StartCommand(@NotNull final GuiStateManager guiStateManager) {
         this.guiStateManager = guiStateManager;
     }
 
-    /** {@inheritDoc} */
+    /**
+     * {@inheritDoc}
+     */
     @Override
-    public boolean canExecute()
-    {
+    public boolean canExecute() {
         return true;
     }
 
-    /** {@inheritDoc} */
+    /**
+     * {@inheritDoc}
+     */
     @Override
-    public void execute()
-    {
+    public void execute() {
         guiStateManager.changeGUI(GuiState.START);
     }
+
 }

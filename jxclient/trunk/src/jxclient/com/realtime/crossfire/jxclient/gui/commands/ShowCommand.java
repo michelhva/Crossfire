@@ -28,8 +28,8 @@ import org.jetbrains.annotations.NotNull;
  * A {@link GUICommand} which shows a target {@link GUIElement}.
  * @author Andreas Kirschbaum
  */
-public class ShowCommand implements GUICommand
-{
+public class ShowCommand implements GUICommand {
+
     /**
      * The gui element to show.
      */
@@ -40,22 +40,24 @@ public class ShowCommand implements GUICommand
      * Creates a new instance.
      * @param target the gui element to show
      */
-    public ShowCommand(@NotNull final GUIElement target)
-    {
+    public ShowCommand(@NotNull final GUIElement target) {
         this.target = target;
     }
 
-    /** {@inheritDoc} */
+    /**
+     * {@inheritDoc}
+     */
     @Override
-    public boolean canExecute()
-    {
+    public boolean canExecute() {
         return true;
     }
 
-    /** {@inheritDoc} */
+    /**
+     * {@inheritDoc}
+     */
     @Override
-    public void execute()
-    {
+    public void execute() {
         target.setElementVisible(true);
     }
+
 }

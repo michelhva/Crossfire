@@ -32,8 +32,8 @@ import org.jetbrains.annotations.NotNull;
  * @version 1.0
  * @since 1.0
  */
-public class CfItem
-{
+public class CfItem {
+
     /**
      * The tag.
      */
@@ -207,8 +207,7 @@ public class CfItem
      * @param nrof the number of objects in the stack
      * @param type the type
      */
-    public CfItem(final int location, final int tag, final int flags, final int weight, @NotNull final Face face, @NotNull final String name, @NotNull final String namePl, final int anim, final int animSpeed, final int nrof, final int type)
-    {
+    public CfItem(final int location, final int tag, final int flags, final int weight, @NotNull final Face face, @NotNull final String name, @NotNull final String namePl, final int anim, final int animSpeed, final int nrof, final int type) {
         this.location = location;
         this.tag = tag;
         this.flags = flags;
@@ -226,10 +225,8 @@ public class CfItem
      * Updates the flags.
      * @param flags the new flags
      */
-    public void setFlags(final int flags)
-    {
-        if (this.flags != flags)
-        {
+    public void setFlags(final int flags) {
+        if (this.flags != flags) {
             this.flags = flags;
             modified = true;
         }
@@ -239,10 +236,8 @@ public class CfItem
      * Updates the weight.
      * @param weight the new weight
      */
-    public void setWeight(final int weight)
-    {
-        if (this.weight != weight)
-        {
+    public void setWeight(final int weight) {
+        if (this.weight != weight) {
             this.weight = weight;
             modified = true;
         }
@@ -252,10 +247,8 @@ public class CfItem
      * Updates the face.
      * @param face the new face
      */
-    public void setFace(@NotNull final Face face)
-    {
-        if (this.face != face)
-        {
+    public void setFace(@NotNull final Face face) {
+        if (this.face != face) {
             this.face = face;
             modified = true;
         }
@@ -266,10 +259,8 @@ public class CfItem
      * @param name the new singular name
      * @param namePl the new plural name
      */
-    public void setName(@NotNull final String name, @NotNull final String namePl)
-    {
-        if (!this.name.equals(name) || !this.namePl.equals(namePl))
-        {
+    public void setName(@NotNull final String name, @NotNull final String namePl) {
+        if (!this.name.equals(name) || !this.namePl.equals(namePl)) {
             this.name = name;
             this.namePl = namePl;
             modified = true;
@@ -280,10 +271,8 @@ public class CfItem
      * Updates the animation.
      * @param anim the new animation
      */
-    public void setAnim(final int anim)
-    {
-        if (this.anim != anim)
-        {
+    public void setAnim(final int anim) {
+        if (this.anim != anim) {
             this.anim = anim;
             modified = true;
         }
@@ -293,10 +282,8 @@ public class CfItem
      * Updates the animation speed.
      * @param animSpeed the new animation speed
      */
-    public void setAnimSpeed(final int animSpeed)
-    {
-        if (this.animSpeed != animSpeed)
-        {
+    public void setAnimSpeed(final int animSpeed) {
+        if (this.animSpeed != animSpeed) {
             this.animSpeed = animSpeed;
             modified = true;
         }
@@ -306,10 +293,8 @@ public class CfItem
      * Updates the number of objects in the stack.
      * @param nrof the new number of objects
      */
-    public void setNrOf(final int nrof)
-    {
-        if (this.nrof != nrof)
-        {
+    public void setNrOf(final int nrof) {
+        if (this.nrof != nrof) {
             this.nrof = nrof;
             modified = true;
         }
@@ -319,8 +304,7 @@ public class CfItem
      * Updates the location.
      * @param location the new location
      */
-    public void setLocation(final int location)
-    {
+    public void setLocation(final int location) {
         this.location = location;
     }
 
@@ -328,8 +312,7 @@ public class CfItem
      * Returns the tag.
      * @return the tag
      */
-    public int getTag()
-    {
+    public int getTag() {
         return tag;
     }
 
@@ -337,8 +320,7 @@ public class CfItem
      * Returns the weight.
      * @return the weight
      */
-    public int getWeight()
-    {
+    public int getWeight() {
         return weight;
     }
 
@@ -347,8 +329,7 @@ public class CfItem
      * @return the face
      */
     @NotNull
-    public Face getFace()
-    {
+    public Face getFace() {
         return face;
     }
 
@@ -357,8 +338,7 @@ public class CfItem
      * @return the name
      */
     @NotNull
-    public String getName()
-    {
+    public String getName() {
         return nrof > 1 ? namePl : name;
     }
 
@@ -366,8 +346,7 @@ public class CfItem
      * Returns the number of objects in this item stack.
      * @return whether the number of objects
      */
-    public int getNrOf()
-    {
+    public int getNrOf() {
         return nrof;
     }
 
@@ -375,8 +354,7 @@ public class CfItem
      * Returns whether this item is applied.
      * @return whether this item is applied
      */
-    public boolean isApplied()
-    {
+    public boolean isApplied() {
         return (flags&F_APPLIED) != 0;
     }
 
@@ -384,8 +362,7 @@ public class CfItem
      * Returns whether this item is blessed.
      * @return whether this item is blessed
      */
-    public boolean isBlessed()
-    {
+    public boolean isBlessed() {
         return (flags&F_BLESSED) != 0;
     }
 
@@ -393,8 +370,7 @@ public class CfItem
      * Returns whether this item is unpaid.
      * @return whether this item is unpaid
      */
-    public boolean isUnpaid()
-    {
+    public boolean isUnpaid() {
         return (flags&F_UNPAID) != 0;
     }
 
@@ -402,8 +378,7 @@ public class CfItem
      * Returns whether this item is magical.
      * @return whether this item is magical
      */
-    public boolean isMagic()
-    {
+    public boolean isMagic() {
         return (flags&F_MAGIC) != 0;
     }
 
@@ -411,8 +386,7 @@ public class CfItem
      * Returns whether this item is cursed.
      * @return whether this item is cursed
      */
-    public boolean isCursed()
-    {
+    public boolean isCursed() {
         return (flags&F_CURSED) != 0;
     }
 
@@ -420,8 +394,7 @@ public class CfItem
      * Returns whether this item is damned.
      * @return whether this item is damned
      */
-    public boolean isDamned()
-    {
+    public boolean isDamned() {
         return (flags&F_DAMNED) != 0;
     }
 
@@ -429,8 +402,7 @@ public class CfItem
      * Returns whether this item is an opened container.
      * @return whether this item is an opened container
      */
-    public boolean isOpen()
-    {
+    public boolean isOpen() {
         return (flags&F_OPEN) != 0;
     }
 
@@ -438,8 +410,7 @@ public class CfItem
      * Returns whether this item cannot be picked up.
      * @return whether this item cannot be picked up
      */
-    public boolean isNoPick()
-    {
+    public boolean isNoPick() {
         return (flags&F_NOPICK) != 0;
     }
 
@@ -447,8 +418,7 @@ public class CfItem
      * Returns whether this item is locked.
      * @return whether this item is locked
      */
-    public boolean isLocked()
-    {
+    public boolean isLocked() {
         return (flags&F_LOCKED) != 0;
     }
 
@@ -456,8 +426,7 @@ public class CfItem
      * Returns the location.
      * @return the location
      */
-    public int getLocation()
-    {
+    public int getLocation() {
         return location;
     }
 
@@ -465,8 +434,7 @@ public class CfItem
      * Returns the type.
      * @return the type
      */
-    public int getType()
-    {
+    public int getType() {
         return type;
     }
 
@@ -482,34 +450,26 @@ public class CfItem
      * @param animSpeed the new animation speed
      * @param nrof the new number of items
      */
-    public void update(final int updateFlags, final int flags, final int weight, @NotNull final Face face, @NotNull final String name, @NotNull final String namePl, final int anim, final int animSpeed, final int nrof)
-    {
-        if ((updateFlags&UPD_FLAGS) != 0)
-        {
+    public void update(final int updateFlags, final int flags, final int weight, @NotNull final Face face, @NotNull final String name, @NotNull final String namePl, final int anim, final int animSpeed, final int nrof) {
+        if ((updateFlags&UPD_FLAGS) != 0) {
             setFlags(flags);
         }
-        if ((updateFlags&UPD_WEIGHT) != 0)
-        {
+        if ((updateFlags&UPD_WEIGHT) != 0) {
             setWeight(weight);
         }
-        if ((updateFlags&UPD_FACE) != 0)
-        {
+        if ((updateFlags&UPD_FACE) != 0) {
             setFace(face);
         }
-        if ((updateFlags&UPD_NAME) != 0)
-        {
+        if ((updateFlags&UPD_NAME) != 0) {
             setName(name, namePl);
         }
-        if ((updateFlags&UPD_ANIM) != 0)
-        {
+        if ((updateFlags&UPD_ANIM) != 0) {
             setAnim(anim);
         }
-        if ((updateFlags&UPD_ANIMSPEED) != 0)
-        {
+        if ((updateFlags&UPD_ANIMSPEED) != 0) {
             setAnimSpeed(animSpeed);
         }
-        if ((updateFlags&UPD_NROF) != 0)
-        {
+        if ((updateFlags&UPD_NROF) != 0) {
             setNrOf(nrof);
         }
         fireModified();
@@ -518,16 +478,13 @@ public class CfItem
     /**
      * Notify all listener.
      */
-    public void fireModified()
-    {
-        if (!modified)
-        {
+    public void fireModified() {
+        if (!modified) {
             return;
         }
         modified = false;
 
-        for (final CfItemListener listener : listeners.getListeners(CfItemListener.class))
-        {
+        for (final CfItemListener listener : listeners.getListeners(CfItemListener.class)) {
             listener.itemModified();
         }
     }
@@ -537,8 +494,7 @@ public class CfItem
      * about attribute changes of this item.
      * @param listener the listener to remove
      */
-    public void addCfItemModifiedListener(@NotNull final CfItemListener listener)
-    {
+    public void addCfItemModifiedListener(@NotNull final CfItemListener listener) {
         listeners.add(CfItemListener.class, listener);
     }
 
@@ -546,8 +502,7 @@ public class CfItem
      * Remove a <code>CfItemModifiedListener</code>.
      * @param listener the listener to remove
      */
-    public void removeCfItemModifiedListener(@NotNull final CfItemListener listener)
-    {
+    public void removeCfItemModifiedListener(@NotNull final CfItemListener listener) {
         listeners.remove(CfItemListener.class, listener);
     }
 
@@ -556,19 +511,16 @@ public class CfItem
      * @return the tooltip text
      */
     @NotNull
-    public String getTooltipText()
-    {
+    public String getTooltipText() {
         final String tooltipText1 = getTooltipText1();
         final String tooltipText2 = getTooltipText2();
         final String tooltipText3 = getTooltipText3();
         final StringBuilder sb = new StringBuilder(tooltipText1);
-        if (tooltipText2.length() > 0)
-        {
+        if (tooltipText2.length() > 0) {
             sb.append("<br>");
             sb.append(tooltipText2);
         }
-        if (tooltipText3.length() > 0)
-        {
+        if (tooltipText3.length() > 0) {
             sb.append("<br>");
             sb.append(tooltipText3);
         }
@@ -580,8 +532,7 @@ public class CfItem
      * @return the tooltip text
      */
     @NotNull
-    public String getTooltipText1()
-    {
+    public String getTooltipText1() {
         return nrof > 1 ? nrof+" "+namePl : name;
     }
 
@@ -590,19 +541,15 @@ public class CfItem
      * @return the tooltip text
      */
     @NotNull
-    public String getTooltipText2()
-    {
+    public String getTooltipText2() {
         final int totalWeight = nrof > 0 ? weight*nrof : weight;
-        if (totalWeight <= 0)
-        {
+        if (totalWeight <= 0) {
             return "";
         }
-        if (totalWeight < 1000)
-        {
+        if (totalWeight < 1000) {
             return totalWeight+" g";
         }
-        if (totalWeight < 10000)
-        {
+        if (totalWeight < 10000) {
             final int tmp = (totalWeight+50)/100;
             return tmp/10+"."+tmp%10+" kg";
         }
@@ -615,8 +562,7 @@ public class CfItem
      * @return the tooltip text
      */
     @NotNull
-    public String getTooltipText3()
-    {
+    public String getTooltipText3() {
         final StringBuilder sb = new StringBuilder();
         appendFlag(sb, F_BLESSED, "blessed");
         appendFlag(sb, F_MAGIC, "magic");
@@ -633,10 +579,8 @@ public class CfItem
      * @param flag the flag to check
      * @param ident the ident string to append
      */
-    private void appendFlag(@NotNull final StringBuilder sb, final int flag, @NotNull final String ident)
-    {
-        if ((flags&flag) != 0)
-        {
+    private void appendFlag(@NotNull final StringBuilder sb, final int flag, @NotNull final String ident) {
+        if ((flags&flag) != 0) {
             sb.append('(');
             sb.append(ident);
             sb.append(')');
@@ -648,8 +592,8 @@ public class CfItem
      * in the ground view.
      * @return whether this object is a group button
      */
-    public boolean isItemGroupButton()
-    {
+    public boolean isItemGroupButton() {
         return flags == 0 && weight == -1 && nrof == 0 && type == 0 && name.startsWith("Click here to see ");
     }
+
 }

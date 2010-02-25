@@ -28,13 +28,12 @@ import org.jetbrains.annotations.NotNull;
  * Utitlity class for parsing strings into numbers.
  * @author Andreas Kirschbaum
  */
-public class NumberParser
-{
+public class NumberParser {
+
     /**
      * Private constructor to prevent instantiation.
      */
-    private NumberParser()
-    {
+    private NumberParser() {
     }
 
     /**
@@ -43,14 +42,10 @@ public class NumberParser
      * @param defaultValue the value to return if the number is not a string
      * @return the int value
      */
-    public static int parseInt(@NotNull final String string, final int defaultValue)
-    {
-        try
-        {
+    public static int parseInt(@NotNull final String string, final int defaultValue) {
+        try {
             return Integer.parseInt(string);
-        }
-        catch (final NumberFormatException ex)
-        {
+        } catch (final NumberFormatException ex) {
             System.err.println("Warning: invalid value "+string+", using "+defaultValue+" instead.");
             return defaultValue;
         }
@@ -65,11 +60,9 @@ public class NumberParser
      * @param maxValue the bound's maximum value
      * @return the int value
      */
-    public static int parseInt(@NotNull final String string, final int defaultValue, final int minValue, final int maxValue)
-    {
+    public static int parseInt(@NotNull final String string, final int defaultValue, final int minValue, final int maxValue) {
         final int value = parseInt(string, defaultValue);
-        if (value < minValue || value > maxValue)
-        {
+        if (value < minValue || value > maxValue) {
             System.err.println("Warning: invalid value "+string+", using "+defaultValue+" instead.");
             return defaultValue;
         }
@@ -83,14 +76,10 @@ public class NumberParser
      * @param defaultValue the value to return if the number is not a string
      * @return the long value
      */
-    public static long parseLong(@NotNull final String string, final long defaultValue)
-    {
-        try
-        {
+    public static long parseLong(@NotNull final String string, final long defaultValue) {
+        try {
             return Long.parseLong(string);
-        }
-        catch (final NumberFormatException ex)
-        {
+        } catch (final NumberFormatException ex) {
             System.err.println("Warning: invalid value "+string+", using "+defaultValue+" instead.");
             return defaultValue;
         }
@@ -102,14 +91,10 @@ public class NumberParser
      * @return the floating value
      * @throws IOException if a parsing error occurs
      */
-    public static float parseFloat(@NotNull final String str) throws IOException
-    {
-        try
-        {
+    public static float parseFloat(@NotNull final String str) throws IOException {
+        try {
             return Float.parseFloat(str);
-        }
-        catch (final NumberFormatException ex)
-        {
+        } catch (final NumberFormatException ex) {
             throw new IOException("invalid number: "+str);
         }
     }
@@ -120,14 +105,10 @@ public class NumberParser
      * @return the boolean value
      * @throws IOException if a parsing error occurs
      */
-    public static boolean parseBoolean(@NotNull final String str) throws IOException
-    {
-        try
-        {
+    public static boolean parseBoolean(@NotNull final String str) throws IOException {
+        try {
             return Boolean.parseBoolean(str);
-        }
-        catch (final NumberFormatException ex)
-        {
+        } catch (final NumberFormatException ex) {
             throw new IOException("invalid boolean: "+str);
         }
     }
@@ -142,15 +123,12 @@ public class NumberParser
      * @throws IOException if the enum constant does not exist
      */
     @NotNull
-    public static <T extends Enum<T>> T parseEnum(@NotNull final Class<T> class_, @NotNull final String name, @NotNull final String ident) throws IOException
-    {
-        try
-        {
+    public static <T extends Enum<T>> T parseEnum(@NotNull final Class<T> class_, @NotNull final String name, @NotNull final String ident) throws IOException {
+        try {
             return Enum.valueOf(class_, name);
-        }
-        catch (final IllegalArgumentException ex)
-        {
+        } catch (final IllegalArgumentException ex) {
             throw new IOException("no such "+ident+" type: "+name);
         }
     }
+
 }

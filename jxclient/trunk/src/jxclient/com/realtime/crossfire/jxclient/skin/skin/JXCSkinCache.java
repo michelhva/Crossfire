@@ -29,11 +29,10 @@ import org.jetbrains.annotations.NotNull;
 
 /**
  * Implements a cache for elements identified by name.
- *
  * @author Andreas Kirschbaum
  */
-public class JXCSkinCache<T> implements Iterable<T>
-{
+public class JXCSkinCache<T> implements Iterable<T> {
+
     /**
      * The description of this cache used for creating error messages.
      */
@@ -49,35 +48,28 @@ public class JXCSkinCache<T> implements Iterable<T>
 
     /**
      * Create a new instance.
-     *
-     * @param ident The description of this cache used for creating error messages.
+     * @param ident The description of this cache used for creating error
+     * messages.
      */
-    public JXCSkinCache(@NotNull final String ident)
-    {
+    public JXCSkinCache(@NotNull final String ident) {
         this.ident = ident;
     }
 
     /**
      * Forget all cached elements.
      */
-    public void clear()
-    {
+    public void clear() {
         cache.clear();
     }
 
     /**
      * Add a new element to the cache.
-     *
      * @param name The element name to add.
-     *
      * @param t The element to add.
-     *
      * @throws JXCSkinException if the element name is not unique
      */
-    public void insert(@NotNull final String name, @NotNull final T t) throws JXCSkinException
-    {
-        if (cache.containsKey(name))
-        {
+    public void insert(@NotNull final String name, @NotNull final T t) throws JXCSkinException {
+        if (cache.containsKey(name)) {
             throw new JXCSkinException("duplicate "+ident+" name: "+name);
         }
 
@@ -86,19 +78,14 @@ public class JXCSkinCache<T> implements Iterable<T>
 
     /**
      * Lookup an element by name.
-     *
      * @param name The name of the element.
-     *
      * @return The element.
-     *
      * @throws JXCSkinException if no such element exists
      */
     @NotNull
-    public T lookup(@NotNull final String name) throws JXCSkinException
-    {
+    public T lookup(@NotNull final String name) throws JXCSkinException {
         final T t = cache.get(name);
-        if (t == null)
-        {
+        if (t == null) {
             throw new JXCSkinException("undefined "+ident+" name: "+name);
         }
 
@@ -107,13 +94,12 @@ public class JXCSkinCache<T> implements Iterable<T>
 
     /**
      * Return all stored values.
-     *
      * @return An iterator returning all stored values.
      */
     @NotNull
     @Override
-    public Iterator<T> iterator()
-    {
+    public Iterator<T> iterator() {
         return Collections.unmodifiableCollection(cache.values()).iterator();
     }
+
 }

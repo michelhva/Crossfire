@@ -27,11 +27,10 @@ import org.jetbrains.annotations.NotNull;
 /**
  * A {@link CheckBoxOption} that executes {@link CommandList}s when
  * checked/unchecked.
- *
  * @author Andreas Kirschbaum
  */
-public class CommandCheckBoxOption extends CheckBoxOption
-{
+public class CommandCheckBoxOption extends CheckBoxOption {
+
     /**
      * The command list to execute when checked.
      */
@@ -46,35 +45,32 @@ public class CommandCheckBoxOption extends CheckBoxOption
 
     /**
      * Create a new instance.
-     *
      * @param commandOn The command list to execute when checked.
-     *
      * @param commandOff The command list to execute when unchecked.
      */
-    public CommandCheckBoxOption(@NotNull final CommandList commandOn, @NotNull final CommandList commandOff)
-    {
+    public CommandCheckBoxOption(@NotNull final CommandList commandOn, @NotNull final CommandList commandOff) {
         this.commandOn = commandOn;
         this.commandOff = commandOff;
     }
 
-    /** {@inheritDoc} */
+    /**
+     * {@inheritDoc}
+     */
     @Override
-    protected void execute(final boolean checked)
-    {
-        if (checked)
-        {
+    protected void execute(final boolean checked) {
+        if (checked) {
             commandOn.execute();
-        }
-        else
-        {
+        } else {
             commandOff.execute();
         }
     }
 
-    /** {@inheritDoc} */
+    /**
+     * {@inheritDoc}
+     */
     @Override
-    public boolean isDefaultChecked()
-    {
+    public boolean isDefaultChecked() {
         return true;
     }
+
 }

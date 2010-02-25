@@ -37,12 +37,12 @@ import org.jetbrains.annotations.Nullable;
  * Crossfire server.
  * @author Andreas Kirschbaum
  */
-public class AskfaceFaceQueue extends AbstractFaceQueue
-{
+public class AskfaceFaceQueue extends AbstractFaceQueue {
+
     /**
      * The maximum number of concurrently sent "askface" commands. If more are
-     * requested, the excess ones are put on hold until some face information
-     * is received.
+     * requested, the excess ones are put on hold until some face information is
+     * received.
      */
     private static final int CONCURRENT_ASKFACE_COMMANDS = 8;
 
@@ -84,12 +84,10 @@ public class AskfaceFaceQueue extends AbstractFaceQueue
      * #crossfireServerConnection} receive face commands.
      */
     @NotNull
-    private final CrossfireUpdateFaceListener crossfireUpdateFaceListener = new CrossfireUpdateFaceListener()
-    {
+    private final CrossfireUpdateFaceListener crossfireUpdateFaceListener = new CrossfireUpdateFaceListener() {
         /** {@inheritDoc} */
         @Override
-        public void updateFace(final int faceNum, final int faceSetNum, @NotNull final byte[] packet, final int pos, final int len)
-        {
+        public void updateFace(final int faceNum, final int faceSetNum, @NotNull final byte[] packet, final int pos, final int len) {
             faceReceived(faceNum, faceSetNum, packet, pos, len);
         }
     };
@@ -99,43 +97,39 @@ public class AskfaceFaceQueue extends AbstractFaceQueue
      * @param crossfireServerConnection the connection instance for sending
      * askface commands
      */
-    public AskfaceFaceQueue(@Nullable final CrossfireServerConnection crossfireServerConnection)
-    {
+    public AskfaceFaceQueue(@Nullable final CrossfireServerConnection crossfireServerConnection) {
         this.crossfireServerConnection = crossfireServerConnection;
-        if (crossfireServerConnection != null)
-        {
+        if (crossfireServerConnection != null) {
             crossfireServerConnection.addCrossfireUpdateFaceListener(crossfireUpdateFaceListener);
         }
     }
 
-    /** {@inheritDoc} */
+    /**
+     * {@inheritDoc}
+     */
     @Override
-    public void reset()
-    {
-        synchronized (sync)
-        {
+    public void reset() {
+        synchronized (sync) {
             pendingAskfaces.clear();
             pendingFaces.clear();
             pendingFacesQueue.clear();
         }
     }
 
-    /** {@inheritDoc} */
+    /**
+     * {@inheritDoc}
+     */
     @Override
-    public void loadFace(@NotNull final Face face)
-    {
+    public void loadFace(@NotNull final Face face) {
         final int faceNum = face.getFaceNum();
-        if (faceNum <= 0 || faceNum > 65535)
-        {
+        if (faceNum <= 0 || faceNum > 65535) {
             fireFaceFailed(face);
             return;
         }
 
         final Integer faceObject = faceNum;
-        synchronized (sync)
-        {
-            if (pendingFaces.put(faceObject, face) != null)
-            {
+        synchronized (sync) {
+            if (pendingFaces.put(faceObject, face) != null) {
                 // move image to front of queue
                 pendingFacesQueue.remove(face);
                 pendingFacesQueue.add(0, face);
@@ -146,25 +140,23 @@ public class AskfaceFaceQueue extends AbstractFaceQueue
             sendAskface();
         }
     }
+
     /**
      * Sends some pending "askface" commands.
      */
-    private void sendAskface()
-    {
-        for (final Face face : pendingFacesQueue)
-        {
-            if (pendingAskfaces.size() >= CONCURRENT_ASKFACE_COMMANDS)
-            {
+    private void sendAskface() {
+        for (final Face face : pendingFacesQueue) {
+            if (pendingAskfaces.size() >= CONCURRENT_ASKFACE_COMMANDS) {
                 break;
             }
 
             final int faceNum = face.getFaceNum();
-            if (pendingAskfaces.put(faceNum, face) == null && crossfireServerConnection != null)
-            {
+            if (pendingAskfaces.put(faceNum, face) == null && crossfireServerConnection != null) {
                 crossfireServerConnection.sendAskface(faceNum);
             }
         }
     }
+
     /**
      * Notifies the askface manager that image information have been received
      * from the server.
@@ -174,24 +166,17 @@ public class AskfaceFaceQueue extends AbstractFaceQueue
      * @param pos the starting position into <code>packet</code>
      * @param len the length in bytes
      */
-    private void faceReceived(final int faceNum, final int faceSetNum, @NotNull final byte[] packet, final int pos, final int len)
-    {
+    private void faceReceived(final int faceNum, final int faceSetNum, @NotNull final byte[] packet, final int pos, final int len) {
         final Integer faceObject = faceNum;
-        synchronized (sync)
-        {
+        synchronized (sync) {
             final Face face = pendingAskfaces.remove(faceObject);
-            if (face == null)
-            {
+            if (face == null) {
                 System.err.println("received unexpected image for face "+faceNum);
-            }
-            else
-            {
-                if (pendingFaces.remove(faceObject) != face)
-                {
+            } else {
+                if (pendingFaces.remove(faceObject) != face) {
                     assert false;
                 }
-                if (!pendingFacesQueue.remove(face))
-                {
+                if (!pendingFacesQueue.remove(face)) {
                     assert false;
                 }
 
@@ -206,25 +191,21 @@ public class AskfaceFaceQueue extends AbstractFaceQueue
      * @param face the face
      * @param data the face information; it is supposed to be a .png file
      */
-    public void processFaceData(@NotNull final Face face, @NotNull final byte[] data)
-    {
+    public void processFaceData(@NotNull final Face face, @NotNull final byte[] data) {
         final ImageIcon originalImageIcon;
-        try
-        {
+        try {
             originalImageIcon = new ImageIcon(data);
-        }
-        catch (final IllegalArgumentException ex)
-        {
+        } catch (final IllegalArgumentException ex) {
             System.err.println("Invalid .png data for face "+face+": "+ex.getMessage());
             return;
         }
 
-        if (originalImageIcon.getIconWidth() <= 0 || originalImageIcon.getIconHeight() <= 0)
-        {
+        if (originalImageIcon.getIconWidth() <= 0 || originalImageIcon.getIconHeight() <= 0) {
             fireFaceFailed(face);
             return;
         }
 
         fireFaceLoaded(face, FaceImagesUtils.newFaceImages(originalImageIcon));
     }
+
 }

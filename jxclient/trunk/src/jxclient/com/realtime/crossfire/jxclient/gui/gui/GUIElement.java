@@ -34,29 +34,28 @@ import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 
 /**
- *
- * @version 1.0
  * @author Lauwenmark
  * @author Andreas Kirschbaum
+ * @version 1.0
  * @since 1.0
  */
-public abstract class GUIElement extends JPanel
-{
+public abstract class GUIElement extends JPanel {
+
     /**
      * The serial version UID.
      */
     private static final long serialVersionUID = 1;
 
     /**
-     * The {@link Gui} this element is part of. Set to <code>null</code> if
-     * this element is not part of any gui.
+     * The {@link Gui} this element is part of. Set to <code>null</code> if this
+     * element is not part of any gui.
      */
     @Nullable
     private Gui gui = null;
 
     /**
-     * The {@link GUIElementChangedListener} to be notified whenever the
-     * {@link #changed} flag is set.
+     * The {@link GUIElementChangedListener} to be notified whenever the {@link
+     * #changed} flag is set.
      */
     @Nullable
     private GUIElementChangedListener changedListener = null;
@@ -116,27 +115,18 @@ public abstract class GUIElement extends JPanel
 
     /**
      * Create a new instance.
-     *
      * @param tooltipManager the tooltip manager to update
-     *
      * @param elementListener the element listener to notify
-     *
      * @param name The name of this element.
-     *
      * @param x The x-coordinate for drawing this element to screen; it is
      * relative to <code>gui</code>.
-     *
      * @param y The y-coordinate for drawing this element to screen; it is
      * relative to <code>gui</code>.
-     *
      * @param w The width for drawing this element to screen.
-     *
      * @param h The height for drawing this element to screen.
-     *
      * @param transparency The transparency value for the backing buffer
      */
-    protected GUIElement(@NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final String name, final int x, final int y, final int w, final int h, final int transparency)
-    {
+    protected GUIElement(@NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final String name, final int x, final int y, final int w, final int h, final int transparency) {
         super(false);
         this.tooltipManager = tooltipManager;
         this.elementListener = elementListener;
@@ -155,206 +145,166 @@ public abstract class GUIElement extends JPanel
     /**
      * Releases all allocated resources.
      */
-    public void dispose()
-    {
+    public void dispose() {
     }
 
     /**
      * Return the {@link Gui} this element is part of.
-     *
      * @return The gui, or <code>null</code>.
      */
     @Nullable
-    public Gui getGui()
-    {
+    public Gui getGui() {
         return gui;
     }
 
     /**
      * Set the {@link Gui} this element is part of.
-     *
      * @param gui The gui, or <code>null</code>.
      */
-    public void setGui(@Nullable final Gui gui)
-    {
+    public void setGui(@Nullable final Gui gui) {
         this.gui = gui;
-        if (visible && gui != null)
-        {
+        if (visible && gui != null) {
             gui.setChangedElements();
         }
     }
 
     @NotNull
     @Override
-    public String toString()
-    {
+    public String toString() {
         return name;
     }
 
-    public int getElementX()
-    {
+    public int getElementX() {
         return gui != null ? gui.getX()+getX() : getX();
     }
 
-    public int getElementY()
-    {
+    public int getElementY() {
         return gui != null ? gui.getY()+getY() : getY();
     }
 
-    public boolean isElementVisible()
-    {
+    public boolean isElementVisible() {
         return visible;
     }
 
-    public void setElementVisible(final boolean visible)
-    {
-        if (this.visible != visible)
-        {
+    public void setElementVisible(final boolean visible) {
+        if (this.visible != visible) {
             this.visible = visible;
             setChanged();
             final Gui tmpGui = gui;
-            if (tmpGui != null)
-            {
+            if (tmpGui != null) {
                 tmpGui.updateVisibleElement(this);
             }
         }
     }
 
-    public boolean isDefault()
-    {
+    public boolean isDefault() {
         return isDefault;
     }
 
-    public void setDefault(final boolean isDefault)
-    {
+    public void setDefault(final boolean isDefault) {
         this.isDefault = isDefault;
     }
 
     /**
      * Return whether this gui element should be ignored for user interaction.
-     *
      * @return Whether this gui element should be ignored for user interaction.
      */
-    public boolean isIgnore()
-    {
+    public boolean isIgnore() {
         return ignore;
     }
 
     /**
      * Mark this gui element to be ignored for user interaction.
      */
-    public void setIgnore()
-    {
+    public void setIgnore() {
         ignore = true;
     }
 
     @NotNull
     @Override
-    public String getName()
-    {
+    public String getName() {
         return name;
     }
 
     /**
-     * Will be called when the user has clicked (pressed+released) this
-     * element. This event will be delivered after {@link
-     * #mouseReleased(MouseEvent)}.
-     *
+     * Will be called when the user has clicked (pressed+released) this element.
+     * This event will be delivered after {@link #mouseReleased(MouseEvent)}.
      * @param e The mouse event relative to this element.
      */
-    public void mouseClicked(@NotNull final MouseEvent e)
-    {
+    public void mouseClicked(@NotNull final MouseEvent e) {
         elementListener.mouseClicked(gui);
     }
 
     /**
      * Will be called when the mouse has entered the bounding box of this
      * element.
-     *
      * @param e The mouse event relative to this element.
      */
-    public void mouseEntered(@NotNull final MouseEvent e)
-    {
+    public void mouseEntered(@NotNull final MouseEvent e) {
         tooltipManager.setElement(this);
     }
 
     /**
      * Will be called when the mouse has left the bounding box of this element.
-     * This function will not be called unless {@link
-     * #mouseEntered(MouseEvent)} has been called before.
-     *
+     * This function will not be called unless {@link #mouseEntered(MouseEvent)}
+     * has been called before.
      * @param e The mouse event relative to this element.
      */
-    public void mouseExited(@NotNull final MouseEvent e)
-    {
+    public void mouseExited(@NotNull final MouseEvent e) {
         tooltipManager.unsetElement(this);
     }
 
     /**
      * Will be called when the user has pressed the mouse inside this element.
-     *
      * @param e The mouse event relative to this element.
      */
-    public void mousePressed(@NotNull final MouseEvent e)
-    {
+    public void mousePressed(@NotNull final MouseEvent e) {
     }
 
     /**
      * Will be called when the user has released the mouse. This event may be
-     * deleivered even if no previous {@link #mousePressed(MouseEvent)} has
-     * been delivered before.
-     *
+     * deleivered even if no previous {@link #mousePressed(MouseEvent)} has been
+     * delivered before.
      * @param e The mouse event relative to this element.
      */
-    public void mouseReleased(@NotNull final MouseEvent e)
-    {
+    public void mouseReleased(@NotNull final MouseEvent e) {
     }
 
     /**
-     * Will be called when the mouse moves within this component.
-     * before.
-     *
+     * Will be called when the mouse moves within this component. before.
      * @param e The mouse event relative to this element.
      */
-    public void mouseMoved(@NotNull final MouseEvent e)
-    {
+    public void mouseMoved(@NotNull final MouseEvent e) {
     }
 
     /**
      * Will be called when the mouse moves within this component while the
      * button is pressed. This event will be delivered after {@link
      * #mouseMoved(MouseEvent)}.
-     *
-     * <p>Note: if the mouse leaves this elements's bounding box while the
-     * mouse button is still pressed, further <code>mouseDragged</code> (but no
+     * <p/>
+     * <p>Note: if the mouse leaves this elements's bounding box while the mouse
+     * button is still pressed, further <code>mouseDragged</code> (but no
      * <code>mouseMoved</code>) events will be generated.
-     *
      * @param e The mouse event relative to this element.
      */
-    public void mouseDragged(@NotNull final MouseEvent e)
-    {
+    public void mouseDragged(@NotNull final MouseEvent e) {
     }
 
     /**
      * Record that {@link #bufferedImage} has changed and must be repainted.
      */
-    public void setChanged()
-    {
-        if (changed)
-        {
+    public void setChanged() {
+        if (changed) {
             return;
         }
 
         changed = true;
-        if (visible)
-        {
-            if (gui != null)
-            {
+        if (visible) {
+            if (gui != null) {
                 gui.setChangedElements();
             }
 
-            if (changedListener != null)
-            {
+            if (changedListener != null) {
                 changedListener.notifyChanged(this);
             }
         }
@@ -364,8 +314,7 @@ public abstract class GUIElement extends JPanel
      * Record that {@link #bufferedImage} has changed and must be repainted.
      * Does not notify listeners.
      */
-    protected void setChangedNoListeners()
-    {
+    protected void setChangedNoListeners() {
         changed = true;
     }
 
@@ -373,38 +322,29 @@ public abstract class GUIElement extends JPanel
      * Returns the changed flag.
      * @return the changed flag
      */
-    public boolean isChanged()
-    {
+    public boolean isChanged() {
         return changed;
     }
 
     /**
      * Clears the changed flag.
      */
-    public void resetChanged()
-    {
+    public void resetChanged() {
         changed = false;
     }
 
     /**
      * Set the tooltip text to show when the mouse is inside this element.
-     *
      * @param tooltipText The text to show, or <code>null</cod> to disable the
      * tooltip for this element.
      */
-    public void setTooltipText(@Nullable final String tooltipText)
-    {
-        if (this.tooltipText == null)
-        {
-            if (tooltipText == null)
-            {
+    public void setTooltipText(@Nullable final String tooltipText) {
+        if (this.tooltipText == null) {
+            if (tooltipText == null) {
                 return;
             }
-        }
-        else
-        {
-            if (tooltipText != null && tooltipText.equals(this.tooltipText))
-            {
+        } else {
+            if (tooltipText != null && tooltipText.equals(this.tooltipText)) {
                 return;
             }
         }
@@ -414,27 +354,21 @@ public abstract class GUIElement extends JPanel
 
     /**
      * Return the tooltip text to show when the mouse is inside this element.
-     *
      * @return The text to show, or <code>null</cod> to disable the tooltip for
-     * this element.
+     *         this element.
      */
     @Nullable
-    public String getTooltipText()
-    {
+    public String getTooltipText() {
         return tooltipText;
     }
 
     /**
      * Change the location of this gui element.
-     *
      * @param x The new x-coordinate.
-     *
      * @param y The new y-coordinate.
      */
-    public void setElementLocation(final int x, final int y)
-    {
-        if (getX() != x || getY() != y)
-        {
+    public void setElementLocation(final int x, final int y) {
+        if (getX() != x || getY() != y) {
             setLocation(x, y);
             setChanged();
         }
@@ -442,15 +376,11 @@ public abstract class GUIElement extends JPanel
 
     /**
      * Change the size of this gui element.
-     *
      * @param w The new width.
-     *
      * @param h The new height.
      */
-    protected void setElementSize(final int w, final int h)
-    {
-        if (getWidth() != w || getHeight() != h)
-        {
+    protected void setElementSize(final int w, final int h) {
+        if (getWidth() != w || getHeight() != h) {
             final Dimension size = new Dimension(w, h);
             setPreferredSize(size);
             setMinimumSize(size);
@@ -460,8 +390,7 @@ public abstract class GUIElement extends JPanel
         }
     }
 
-    private void createBuffer()
-    {
+    private void createBuffer() {
         final GraphicsEnvironment ge = GraphicsEnvironment.getLocalGraphicsEnvironment();
         final GraphicsDevice gd = ge.getDefaultScreenDevice();
         final GraphicsConfiguration gconf = gd.getDefaultConfiguration();
@@ -472,17 +401,12 @@ public abstract class GUIElement extends JPanel
     /**
      * Re-create the contents of {@link #bufferedImage}.
      */
-    private void render()
-    {
-        synchronized (bufferedImageSync)
-        {
+    private void render() {
+        synchronized (bufferedImageSync) {
             final Graphics g = createBufferGraphics();
-            try
-            {
+            try {
                 render(g);
-            }
-            finally
-            {
+            } finally {
                 g.dispose();
             }
         }
@@ -490,19 +414,17 @@ public abstract class GUIElement extends JPanel
 
     /**
      * Paint the elements's contents into the passed graphics.
-     *
      * @param g The gaphics to paint to.
      */
     protected abstract void render(@NotNull final Graphics g);
 
-    /** {@inheritDoc} */
+    /**
+     * {@inheritDoc}
+     */
     @Override
-    public void paintComponent(@NotNull final Graphics g)
-    {
-        synchronized (bufferedImageSync)
-        {
-            if (changed)
-            {
+    public void paintComponent(@NotNull final Graphics g) {
+        synchronized (bufferedImageSync) {
+            if (changed) {
                 changed = false;
                 render();
             }
@@ -516,8 +438,7 @@ public abstract class GUIElement extends JPanel
      * most one such listener may be set per gui element.
      * @param changedListener the listener or <code>null</code> to unset
      */
-    public void setChangedListener(@Nullable final GUIElementChangedListener changedListener)
-    {
+    public void setChangedListener(@Nullable final GUIElementChangedListener changedListener) {
         this.changedListener = changedListener;
     }
 
@@ -528,9 +449,9 @@ public abstract class GUIElement extends JPanel
      * @return the graphics instance; must be released afterwards
      */
     @NotNull
-    protected Graphics2D createBufferGraphics()
-    {
+    protected Graphics2D createBufferGraphics() {
         assert Thread.holdsLock(bufferedImageSync);
         return bufferedImage.createGraphics();
     }
+
 }

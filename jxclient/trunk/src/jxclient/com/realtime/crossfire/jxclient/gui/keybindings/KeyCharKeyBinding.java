@@ -29,8 +29,8 @@ import org.jetbrains.annotations.Nullable;
  * A {@link KeyBinding} that matches by key character.
  * @author Andreas Kirschbaum
  */
-public class KeyCharKeyBinding extends KeyBinding
-{
+public class KeyCharKeyBinding extends KeyBinding {
+
     /**
      * The key character to match.
      */
@@ -43,8 +43,7 @@ public class KeyCharKeyBinding extends KeyBinding
      * @param isDefault whether the key binding is a "default" binding which
      * should not be saved
      */
-    public KeyCharKeyBinding(final char keyChar, @NotNull final CommandList commands, final boolean isDefault)
-    {
+    public KeyCharKeyBinding(final char keyChar, @NotNull final CommandList commands, final boolean isDefault) {
         super(commands, isDefault);
         this.keyChar = keyChar;
     }
@@ -53,17 +52,16 @@ public class KeyCharKeyBinding extends KeyBinding
      * Returns the key character to match.
      * @return the key character to match
      */
-    public char getKeyChar()
-    {
+    public char getKeyChar() {
         return keyChar;
     }
 
-    /** {@inheritDoc} */
+    /**
+     * {@inheritDoc}
+     */
     @Override
-    public boolean equals(@Nullable final Object obj)
-    {
-        if (obj == null || !(obj instanceof KeyCharKeyBinding))
-        {
+    public boolean equals(@Nullable final Object obj) {
+        if (obj == null || !(obj instanceof KeyCharKeyBinding)) {
             return false;
         }
 
@@ -71,24 +69,28 @@ public class KeyCharKeyBinding extends KeyBinding
         return keyBinding.getKeyChar() == keyChar;
     }
 
-    /** {@inheritDoc} */
+    /**
+     * {@inheritDoc}
+     */
     @Override
-    public int hashCode()
-    {
+    public int hashCode() {
         return keyChar;
     }
 
-    /** {@inheritDoc} */
+    /**
+     * {@inheritDoc}
+     */
     @Override
-    public boolean matchesKeyCode(final int keyCode, final int modifiers)
-    {
+    public boolean matchesKeyCode(final int keyCode, final int modifiers) {
         return false;
     }
 
-    /** {@inheritDoc} */
+    /**
+     * {@inheritDoc}
+     */
     @Override
-    public boolean matchesKeyChar(final char keyChar)
-    {
+    public boolean matchesKeyChar(final char keyChar) {
         return this.keyChar == keyChar;
     }
+
 }

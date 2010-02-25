@@ -27,8 +27,8 @@ import org.jetbrains.annotations.NotNull;
  * Utilit class for en-/decoding hexadecimal strings.
  * @author Andreas Kirschbaum
  */
-public class HexCodec
-{
+public class HexCodec {
+
     /**
      * Hex characters for values 0-15.
      */
@@ -38,8 +38,7 @@ public class HexCodec
     /**
      * Private constructor to prevent instantiation.
      */
-    private HexCodec()
-    {
+    private HexCodec() {
     }
 
     /**
@@ -47,8 +46,7 @@ public class HexCodec
      * @param sb the <code>StringBuilder</code> to append to
      * @param value the value to append
      */
-    public static void hexEncode2(@NotNull final StringBuilder sb, final int value)
-    {
+    public static void hexEncode2(@NotNull final StringBuilder sb, final int value) {
         sb.append(HEX_CHARS.charAt((value>>4)&15));
         sb.append(HEX_CHARS.charAt(value&15));
     }
@@ -58,8 +56,7 @@ public class HexCodec
      * @param sb the <code>StringBuilder</code> to append to
      * @param value the value to append
      */
-    private static void hexEncode4(@NotNull final StringBuilder sb, final int value)
-    {
+    private static void hexEncode4(@NotNull final StringBuilder sb, final int value) {
         hexEncode2(sb, value>>16);
         hexEncode2(sb, value);
     }
@@ -71,15 +68,12 @@ public class HexCodec
      * @param end the end index
      * @return the hex dump
      */
-    public static String hexDump(@NotNull final byte[] data, final int start, final int end)
-    {
+    public static String hexDump(@NotNull final byte[] data, final int start, final int end) {
         final StringBuilder sb = new StringBuilder();
-        for (int i = start; i < end; i += 16)
-        {
+        for (int i = start; i < end; i += 16) {
             hexEncode4(sb, i-start);
             sb.append(':');
-            for (int j = i; j < i+16 && j < end; j++)
-            {
+            for (int j = i; j < i+16 && j < end; j++) {
                 sb.append(' ');
                 hexEncode2(sb, data[j]);
             }
@@ -87,4 +81,5 @@ public class HexCodec
         }
         return sb.toString();
     }
+
 }

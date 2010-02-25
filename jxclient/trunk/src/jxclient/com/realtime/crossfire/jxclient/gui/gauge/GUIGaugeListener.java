@@ -27,8 +27,8 @@ import org.jetbrains.annotations.NotNull;
  * Interface which is implemented by all listener classes.
  * @author Andreas Kirschbaum
  */
-public interface GUIGaugeListener
-{
+public interface GUIGaugeListener {
+
     /**
      * Sets the values to display.
      * @param curValue the values to display
@@ -38,4 +38,5 @@ public interface GUIGaugeListener
      * @param tooltipText the tooltip suffix
      */
     void setValues(int curValue, int minValue, int maxValue, @NotNull String labelText, @NotNull String tooltipText);
+
 }

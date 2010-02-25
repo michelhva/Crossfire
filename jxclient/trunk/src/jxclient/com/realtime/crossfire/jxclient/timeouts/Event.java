@@ -28,8 +28,8 @@ import org.jetbrains.annotations.Nullable;
  * Stores information of a timeout event.
  * @author Andreas Kirschbaum
  */
-public class Event implements Comparable<Event>
-{
+public class Event implements Comparable<Event> {
+
     /**
      * The timeout. It is an absolue timestamp as returned by {@link
      * System#currentTimeMillis()}.
@@ -44,73 +44,66 @@ public class Event implements Comparable<Event>
 
     /**
      * Create a new instance.
-     *
      * @param timeout The timeout in milliseconds; relative to "now".
-     *
      * @param timeoutEvent The timeout event to execute.
      */
-    public Event(final int timeout, @NotNull final TimeoutEvent timeoutEvent)
-    {
+    public Event(final int timeout, @NotNull final TimeoutEvent timeoutEvent) {
         this.timeout = System.currentTimeMillis()+timeout;
         this.timeoutEvent = timeoutEvent;
     }
 
     /**
      * Return the timeout.
-     *
      * @return The timeout.
      */
-    public long getTimeout()
-    {
+    public long getTimeout() {
         return timeout;
     }
 
     /**
      * Return the timeout event.
-     *
      * @return The timeout event.
      */
     @NotNull
-    public TimeoutEvent getTimeoutEvent()
-    {
+    public TimeoutEvent getTimeoutEvent() {
         return timeoutEvent;
     }
 
-    /** {@inheritDoc} */
+    /**
+     * {@inheritDoc}
+     */
     @Override
-    public int compareTo(@NotNull final Event o)
-    {
-        if (timeout < o.timeout)
-        {
+    public int compareTo(@NotNull final Event o) {
+        if (timeout < o.timeout) {
             return -1;
         }
-        if (timeout > o.timeout)
-        {
+        if (timeout > o.timeout) {
             return +1;
         }
         return 0;
     }
 
-    /** {@inheritDoc} */
+    /**
+     * {@inheritDoc}
+     */
     @Override
-    public int hashCode()
-    {
+    public int hashCode() {
         return (int)timeout;
     }
 
-    /** {@inheritDoc} */
+    /**
+     * {@inheritDoc}
+     */
     @Override
-    public boolean equals(@Nullable final Object obj)
-    {
-        if (obj == null)
-        {
+    public boolean equals(@Nullable final Object obj) {
+        if (obj == null) {
             return false;
         }
-        if (obj.getClass() != getClass())
-        {
+        if (obj.getClass() != getClass()) {
             return false;
         }
         final Event m = (Event)obj;
         return m.timeout == timeout;
     }
+
 }

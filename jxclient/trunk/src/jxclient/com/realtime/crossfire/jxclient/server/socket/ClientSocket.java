@@ -47,8 +47,8 @@ import org.jetbrains.annotations.Nullable;
  * clientSocket.disconnect();
  * @author Andreas Kirschbaum
  */
-public class ClientSocket
-{
+public class ClientSocket {
+
     /**
      * The maximum payload size of a Crossfire protocol packet.
      */
@@ -81,8 +81,8 @@ public class ClientSocket
     private final Object syncConnect = new Object();
 
     /**
-     * Set if {@link #host} or {@link #port} has changed and thus a reconnect
-     * is needed.
+     * Set if {@link #host} or {@link #port} has changed and thus a reconnect is
+     * needed.
      */
     private boolean reconnect = true;
 
@@ -140,8 +140,8 @@ public class ClientSocket
 
     /**
      * If set to <code>-1</code>, a two-byte packet header is read next from
-     * {@link #inputBuffer}. Otherwise it is set to the packet length which
-     * will be read from {@link #inputBuffer}.
+     * {@link #inputBuffer}. Otherwise it is set to the packet length which will
+     * be read from {@link #inputBuffer}.
      */
     private int inputLen = -1;
 
@@ -174,12 +174,10 @@ public class ClientSocket
      * The {@link Thread} used to operate the socket.
      */
     @NotNull
-    private final Thread thread = new Thread(new Runnable()
-    {
+    private final Thread thread = new Thread(new Runnable() {
         /** {@inheritDoc} */
         @Override
-        public void run()
-        {
+        public void run() {
             process();
         }
     });
@@ -190,8 +188,7 @@ public class ClientSocket
      * commands to this writer
      * @throws IOException if the socket cannot be created
      */
-    public ClientSocket(@Nullable final DebugWriter debugProtocol) throws IOException
-    {
+    public ClientSocket(@Nullable final DebugWriter debugProtocol) throws IOException {
         this.debugProtocol = debugProtocol;
         selector = Selector.open();
     }
@@ -199,10 +196,8 @@ public class ClientSocket
     /**
      * Starts operation.
      */
-    public void start()
-    {
-        if (debugProtocol != null)
-        {
+    public void start() {
+        if (debugProtocol != null) {
             debugProtocol.debugProtocolWrite("socket:start");
         }
         thread.start();
@@ -212,16 +207,13 @@ public class ClientSocket
      * Stops operation.
      * @throws InterruptedException if stopping was interrupted
      */
-    public void stop() throws InterruptedException
-    {
-        if (debugProtocol != null)
-        {
+    public void stop() throws InterruptedException {
+        if (debugProtocol != null) {
             debugProtocol.debugProtocolWrite("socket:stop");
         }
         thread.interrupt();
         thread.join();
-        if (debugProtocol != null)
-        {
+        if (debugProtocol != null) {
             debugProtocol.debugProtocolWrite("socket:stopped");
         }
     }
@@ -230,8 +222,7 @@ public class ClientSocket
      * Adds a {@link ClientSocketListener} to be notified.
      * @param clientSocketListener the client socket listener to add
      */
-    public void addClientSocketListener(@NotNull final ClientSocketListener clientSocketListener)
-    {
+    public void addClientSocketListener(@NotNull final ClientSocketListener clientSocketListener) {
         clientSocketListeners.add(clientSocketListener);
     }
 
@@ -239,8 +230,7 @@ public class ClientSocket
      * Removes a {@link ClientSocketListener} to be notified.
      * @param clientSocketListener the client socket listener to remove
      */
-    public void removeClientSocketListener(@NotNull final ClientSocketListener clientSocketListener)
-    {
+    public void removeClientSocketListener(@NotNull final ClientSocketListener clientSocketListener) {
         clientSocketListeners.remove(clientSocketListener);
     }
 
@@ -249,16 +239,12 @@ public class ClientSocket
      * @param host the host to connect to
      * @param port the port to connect to
      */
-    public void connect(@NotNull final String host, final int port)
-    {
-        if (debugProtocol != null)
-        {
+    public void connect(@NotNull final String host, final int port) {
+        if (debugProtocol != null) {
             debugProtocol.debugProtocolWrite("socket:connect "+host+":"+port);
         }
-        synchronized (syncConnect)
-        {
-            if (this.host == null || this.port == 0 || !this.host.equals(host) || this.port != port)
-            {
+        synchronized (syncConnect) {
+            if (this.host == null || this.port == 0 || !this.host.equals(host) || this.port != port) {
                 reconnect = true;
                 this.host = host;
                 this.port = port;
@@ -270,16 +256,12 @@ public class ClientSocket
     /**
      * Terminates the connection. Does nothing if not connected.
      */
-    public void disconnect()
-    {
-        if (debugProtocol != null)
-        {
+    public void disconnect() {
+        if (debugProtocol != null) {
             debugProtocol.debugProtocolWrite("socket:disconnect");
         }
-        synchronized (syncConnect)
-        {
-            if (host != null || port != 0)
-            {
+        synchronized (syncConnect) {
+            if (host != null || port != 0) {
                 reconnect = true;
                 host = null;
                 port = 0;
@@ -292,85 +274,61 @@ public class ClientSocket
      * Reads/writes data from/to the socket. Returns if the {@link #thread} has
      * been interrupted.
      */
-    private void process()
-    {
-        while (!thread.isInterrupted())
-        {
-            try
-            {
-                synchronized (syncConnect)
-                {
-                    if (reconnect)
-                    {
+    private void process() {
+        while (!thread.isInterrupted()) {
+            try {
+                synchronized (syncConnect) {
+                    if (reconnect) {
                         reconnect = false;
                         processDisconnect("reconnect");
-                        if (host != null && port != 0)
-                        {
+                        if (host != null && port != 0) {
                             processConnect(host, port);
                         }
                     }
                 }
 
                 final boolean notifyConnected;
-                synchronized (syncOutput)
-                {
-                    if (!isConnected && socketChannel != null)
-                    {
+                synchronized (syncOutput) {
+                    if (!isConnected && socketChannel != null) {
                         isConnected = socketChannel.finishConnect();
-                        if (isConnected)
-                        {
+                        if (isConnected) {
                             interestOps = SelectionKey.OP_READ;
                             updateInterestOps();
                             notifyConnected = true;
-                        }
-                        else
-                        {
+                        } else {
                             notifyConnected = false;
                         }
-                    }
-                    else
-                    {
+                    } else {
                         notifyConnected = false;
                     }
                 }
-                if (notifyConnected)
-                {
-                    for (final ClientSocketListener clientSocketListener : clientSocketListeners)
-                    {
+                if (notifyConnected) {
+                    for (final ClientSocketListener clientSocketListener : clientSocketListeners) {
                         clientSocketListener.connected();
                     }
                 }
 
-                synchronized (syncOutput)
-                {
-                    if (outputBuffer.position() > 0)
-                    {
+                synchronized (syncOutput) {
+                    if (outputBuffer.position() > 0) {
                         setInterestOps(SelectionKey.OP_WRITE);
-                    }
-                    else
-                    {
+                    } else {
                         unsetInterestOps(SelectionKey.OP_WRITE);
                     }
                 }
 
                 selector.select();
                 final Collection<SelectionKey> selectedKeys = selector.selectedKeys();
-                if (selectedKeys.remove(selectionKey))
-                {
-                    if (isConnected)
-                    {
+                if (selectedKeys.remove(selectionKey)) {
+                    if (isConnected) {
                         processRead();
                         processWrite();
                     }
                 }
                 assert selectedKeys.isEmpty();
-            }
-            catch (final IOException ex)
-            {
+            } catch (final IOException ex) {
                 final String tmp = ex.getMessage();
                 final String message = tmp == null ? "I/O error" : tmp;
-                if (debugProtocol != null)
-                {
+                if (debugProtocol != null) {
                     debugProtocol.debugProtocolWrite("socket:exception "+message, ex);
                 }
                 processDisconnect(message);
@@ -384,55 +342,41 @@ public class ClientSocket
      * @param port the port to connect to
      * @throws IOException if an I/O error occurs
      */
-    private void processConnect(@NotNull final String host, final int port) throws IOException
-    {
-        if (debugProtocol != null)
-        {
+    private void processConnect(@NotNull final String host, final int port) throws IOException {
+        if (debugProtocol != null) {
             debugProtocol.debugProtocolWrite("socket:connecting to "+host+":"+port);
         }
         disconnectPending = true;
-        for (final ClientSocketListener clientSocketListener : clientSocketListeners)
-        {
+        for (final ClientSocketListener clientSocketListener : clientSocketListeners) {
             clientSocketListener.connecting();
         }
 
         final SocketAddress socketAddress = new InetSocketAddress(host, port);
-        synchronized (syncOutput)
-        {
+        synchronized (syncOutput) {
             outputBuffer.clear();
             inputBuffer.clear();
             selectionKey = null;
-            try
-            {
+            try {
                 socketChannel = SocketChannel.open();
                 selectableChannel = socketChannel.configureBlocking(false);
-                try
-                {
+                try {
                     isConnected = socketChannel.connect(socketAddress);
-                }
-                catch (final UnresolvedAddressException ex)
-                {
+                } catch (final UnresolvedAddressException ex) {
                     throw new IOException("Cannot resolve address: "+socketAddress, ex);
-                }
-                catch (final IllegalArgumentException ex)
-                {
+                } catch (final IllegalArgumentException ex) {
                     throw new IOException(ex.getMessage(), ex);
                 }
                 try {
                     socketChannel.socket().setTcpNoDelay(true);
                 } catch (final SocketException ex) {
-                    if (debugProtocol != null)
-                    {
+                    if (debugProtocol != null) {
                         debugProtocol.debugProtocolWrite("socket:cannot set TCP_NODELAY option: "+ex.getMessage());
                     }
                 }
                 interestOps = SelectionKey.OP_CONNECT;
                 selectionKey = selectableChannel.register(selector, interestOps);
-            }
-            finally
-            {
-                if (selectionKey == null)
-                {
+            } finally {
+                if (selectionKey == null) {
                     socketChannel = null;
                     selectableChannel = null;
                     isConnected = false;
@@ -446,50 +390,36 @@ public class ClientSocket
      * Disconnects the socket. Does nothing if not currently connected.
      * @param reason the reason for disconnection
      */
-    private void processDisconnect(@NotNull final String reason)
-    {
-        if (debugProtocol != null)
-        {
+    private void processDisconnect(@NotNull final String reason) {
+        if (debugProtocol != null) {
             debugProtocol.debugProtocolWrite("socket:disconnecting");
         }
         final boolean notifyListeners;
-        synchronized (syncOutput)
-        {
+        synchronized (syncOutput) {
             notifyListeners = disconnectPending;
             disconnectPending = false;
         }
-        if (notifyListeners)
-        {
-            for (final ClientSocketListener clientSocketListener : clientSocketListeners)
-            {
+        if (notifyListeners) {
+            for (final ClientSocketListener clientSocketListener : clientSocketListeners) {
                 clientSocketListener.disconnecting(reason);
             }
         }
 
-        try
-        {
-            synchronized (syncOutput)
-            {
-                if (selectionKey != null)
-                {
+        try {
+            synchronized (syncOutput) {
+                if (selectionKey != null) {
                     selectionKey.cancel();
                     selectionKey = null;
                     outputBuffer.clear();
 
-                    try
-                    {
+                    try {
                         socketChannel.socket().shutdownOutput();
-                    }
-                    catch (final IOException ex)
-                    {
+                    } catch (final IOException ex) {
                         // ignore
                     }
-                    try
-                    {
+                    try {
                         socketChannel.close();
-                    }
-                    catch (final IOException ex)
-                    {
+                    } catch (final IOException ex) {
                         // ignore
                     }
                     socketChannel = null;
@@ -497,13 +427,9 @@ public class ClientSocket
                     inputBuffer.clear();
                 }
             }
-        }
-        finally
-        {
-            if (notifyListeners)
-            {
-                for (final ClientSocketListener clientSocketListener : clientSocketListeners)
-                {
+        } finally {
+            if (notifyListeners) {
+                for (final ClientSocketListener clientSocketListener : clientSocketListeners) {
                     clientSocketListener.disconnected(reason);
                 }
             }
@@ -514,17 +440,13 @@ public class ClientSocket
      * Reads data from the socket and parses the data into commands.
      * @throws IOException if an I/O error occurs
      */
-    private void processRead() throws IOException
-    {
-        if (socketChannel == null)
-        {
+    private void processRead() throws IOException {
+        if (socketChannel == null) {
             return;
         }
 
-        synchronized (syncOutput)
-        {
-            if (socketChannel.read(inputBuffer) == -1)
-            {
+        synchronized (syncOutput) {
+            if (socketChannel.read(inputBuffer) == -1) {
                 throw new EOFException();
             }
         }
@@ -536,22 +458,17 @@ public class ClientSocket
     /**
      * Parses data from {@link #inputBuffer} into commands.
      */
-    private void processReadCommand()
-    {
-        for (;;)
-        {
-            if (inputLen == -1)
-            {
-                if (inputBuffer.remaining() < 2)
-                {
+    private void processReadCommand() {
+        for (; ;) {
+            if (inputLen == -1) {
+                if (inputBuffer.remaining() < 2) {
                     break;
                 }
 
                 inputLen = (inputBuffer.get()&0xFF)*0x100+(inputBuffer.get()&0xFF);
             }
 
-            if (inputBuffer.remaining() < inputLen)
-            {
+            if (inputBuffer.remaining() < inputLen) {
                 break;
             }
 
@@ -559,15 +476,11 @@ public class ClientSocket
             final int end = start+inputLen;
             inputBuffer.position(start+inputLen);
             inputLen = -1;
-            try
-            {
-                for (final ClientSocketListener clientSocketListener : clientSocketListeners)
-                {
+            try {
+                for (final ClientSocketListener clientSocketListener : clientSocketListeners) {
                     clientSocketListener.packetReceived(inputBuf, start, end);
                 }
-            }
-            catch (final UnknownCommandException ex)
-            {
+            } catch (final UnknownCommandException ex) {
                 disconnect();
                 break;
             }
@@ -576,43 +489,30 @@ public class ClientSocket
 
     /**
      * Writes a packet. The packet contents must not change until this function
-     * has returned.
-     * <p>This function may be called even if the socket has been closed. In
-     * this case he packet is discarded.
+     * has returned. <p>This function may be called even if the socket has been
+     * closed. In this case he packet is discarded.
      * @param buf the packet to send
      * @param len the number of bytes to send
      */
-    public void writePacket(@NotNull final byte[] buf, final int len)
-    {
-        synchronized (syncOutput)
-        {
-            if (socketChannel == null)
-            {
+    public void writePacket(@NotNull final byte[] buf, final int len) {
+        synchronized (syncOutput) {
+            if (socketChannel == null) {
                 return;
             }
 
             packetHeader[0] = (byte)(len/0x100);
             packetHeader[1] = (byte)len;
-            try
-            {
-                try
-                {
+            try {
+                try {
                     outputBuffer.put(packetHeader);
                     outputBuffer.put(buf, 0, len);
-                }
-                catch (final BufferOverflowException ex)
-                {
+                } catch (final BufferOverflowException ex) {
                     throw new IOException("buffer overflow", ex);
                 }
-            }
-            catch (final IOException ex)
-            {
-                try
-                {
+            } catch (final IOException ex) {
+                try {
                     socketChannel.close();
-                }
-                catch (final IOException ex2)
-                {
+                } catch (final IOException ex2) {
                     // ignore
                 }
                 return;
@@ -620,8 +520,7 @@ public class ClientSocket
         }
 
         selector.wakeup();
-        for (final ClientSocketListener clientSocketListener : clientSocketListeners)
-        {
+        for (final ClientSocketListener clientSocketListener : clientSocketListeners) {
             clientSocketListener.packetSent(buf, len);
         }
     }
@@ -631,27 +530,20 @@ public class ClientSocket
      * exists or if the socket does not accept data.
      * @throws IOException if an I/O error occurs
      */
-    private void processWrite() throws IOException
-    {
-        synchronized (syncOutput)
-        {
-            if (socketChannel == null)
-            {
+    private void processWrite() throws IOException {
+        synchronized (syncOutput) {
+            if (socketChannel == null) {
                 return;
             }
 
-            if (outputBuffer.remaining() <= 0)
-            {
+            if (outputBuffer.remaining() <= 0) {
                 return;
             }
 
             outputBuffer.flip();
-            try
-            {
+            try {
                 socketChannel.write(outputBuffer);
-            }
-            finally
-            {
+            } finally {
                 outputBuffer.compact();
             }
         }
@@ -662,11 +554,9 @@ public class ClientSocket
      * #selectionKey}.
      * @param interestOps the interest ops to remove
      */
-    private void unsetInterestOps(final int interestOps)
-    {
+    private void unsetInterestOps(final int interestOps) {
         assert Thread.holdsLock(syncOutput);
-        if ((this.interestOps&interestOps) == 0)
-        {
+        if ((this.interestOps&interestOps) == 0) {
             return;
         }
 
@@ -679,11 +569,9 @@ public class ClientSocket
      * #selectionKey}.
      * @param interestOps the interest ops to add
      */
-    private void setInterestOps(final int interestOps)
-    {
+    private void setInterestOps(final int interestOps) {
         assert Thread.holdsLock(syncOutput);
-        if ((this.interestOps&interestOps) == interestOps)
-        {
+        if ((this.interestOps&interestOps) == interestOps) {
             return;
         }
 
@@ -693,18 +581,17 @@ public class ClientSocket
 
     /**
      * Updates {@link #selectionKey}'s interest ops to match {@link
-     * #interestOps}. Does nothing if <code>selectionKey</code> is <code>null</code>.
+     * #interestOps}. Does nothing if <code>selectionKey</code> is
+     * <code>null</code>.
      */
-    private void updateInterestOps()
-    {
-        if (debugProtocol != null)
-        {
+    private void updateInterestOps() {
+        if (debugProtocol != null) {
             debugProtocol.debugProtocolWrite("socket:set interest ops to "+interestOps);
         }
         assert Thread.holdsLock(syncOutput);
-        if (selectionKey != null)
-        {
+        if (selectionKey != null) {
             selectionKey.interestOps(interestOps);
         }
     }
+
 }

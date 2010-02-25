@@ -25,8 +25,8 @@ package com.realtime.crossfire.jxclient.gui.label;
  * The display type.
  * @author Andreas Kirschbaum
  */
-public enum Type
-{
+public enum Type {
+
     /**
      * Display the spell name.
      */
@@ -50,5 +50,6 @@ public enum Type
     /**
      * Display the spell description.
      */
-    SPELL_DESCRIPTION,
+    SPELL_DESCRIPTION
+
 }

@@ -39,8 +39,8 @@ import org.jetbrains.annotations.Nullable;
  * value.
  * @author Andreas Kirschbaum
  */
-public class GUIDupGauge extends GUIElement implements GUIGaugeListener
-{
+public class GUIDupGauge extends GUIElement implements GUIGaugeListener {
+
     /**
      * The serial version UID.
      */
@@ -116,8 +116,7 @@ public class GUIDupGauge extends GUIElement implements GUIGaugeListener
      * @param tooltipPrefix the prefix for displaying tooltips; if set to
      * <code>null</code> no tooltips are shown
      */
-    public GUIDupGauge(@NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final String name, final int x, final int y, final int w, final int h, @NotNull final BufferedImage fullImageDiv, @NotNull final BufferedImage fullImageMod, @Nullable final BufferedImage emptyImage, @NotNull final Orientation orientationDiv, @NotNull final Orientation orientationMod, @Nullable final String tooltipPrefix)
-    {
+    public GUIDupGauge(@NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final String name, final int x, final int y, final int w, final int h, @NotNull final BufferedImage fullImageDiv, @NotNull final BufferedImage fullImageMod, @Nullable final BufferedImage emptyImage, @NotNull final Orientation orientationDiv, @NotNull final Orientation orientationMod, @Nullable final String tooltipPrefix) {
         super(tooltipManager, elementListener, name, x, y, w, h, Transparency.TRANSLUCENT);
         checkSize(fullImageDiv, "full-div", w, h/2);
         checkSize(fullImageMod, "full-mod", w, h/2);
@@ -134,10 +133,11 @@ public class GUIDupGauge extends GUIElement implements GUIGaugeListener
         setValues(0, 0, 99, "", "");
     }
 
-    /** {@inheritDoc} */
+    /**
+     * {@inheritDoc}
+     */
     @Override
-    public void dispose()
-    {
+    public void dispose() {
         super.dispose();
     }
 
@@ -152,56 +152,47 @@ public class GUIDupGauge extends GUIElement implements GUIGaugeListener
      * @throws IllegalArgumentException if <code>image</code> is not
      * <code>null</code> and it's size is not <code>w</code>x<code>h</code>
      */
-    private static void checkSize(@Nullable final RenderedImage image, @NotNull final String name, final int w, final int h)
-    {
-        if (image == null)
-        {
+    private static void checkSize(@Nullable final RenderedImage image, @NotNull final String name, final int w, final int h) {
+        if (image == null) {
             return;
         }
 
-        if (image.getWidth() != w)
-        {
+        if (image.getWidth() != w) {
             throw new IllegalArgumentException("width of '"+name+"' does not match element width");
         }
 
-        if (image.getHeight() != h)
-        {
+        if (image.getHeight() != h) {
             throw new IllegalArgumentException("height of '"+name+"' does not match element height");
         }
     }
 
-    /** {@inheritDoc} */
+    /**
+     * {@inheritDoc}
+     */
     @Override
-    protected void render(@NotNull final Graphics g)
-    {
+    protected void render(@NotNull final Graphics g) {
         final Graphics2D g2 = (Graphics2D)g;
         g2.setBackground(new Color(0, 0, 0, 0.0f));
         g.clearRect(0, 0, getWidth(), getHeight());
-        if (emptyImage != null)
-        {
+        if (emptyImage != null) {
             g.drawImage(emptyImage, 0, 0, null);
         }
         gaugeStateDiv.draw(g);
         gaugeStateMod.draw(g);
     }
 
-    /** {@inheritDoc} */
+    /**
+     * {@inheritDoc}
+     */
     @Override
-    public void setValues(final int curValue, final int minValue, final int maxValue, @NotNull final String labelText, @NotNull final String tooltipText)
-    {
-        if (minValue != 0)
-        {
+    public void setValues(final int curValue, final int minValue, final int maxValue, @NotNull final String labelText, @NotNull final String tooltipText) {
+        if (minValue != 0) {
             throw new IllegalArgumentException();
         }
-        if (maxValue != 99)
-        {
+        if (maxValue != 99) {
             throw new IllegalArgumentException();
         }
-        if (!orientationDiv.setValues(curValue/10, 0, 9)
-        && !orientationMod.setValues(curValue%10, 0, 9)
-        && this.labelText.equals(labelText)
-        && this.tooltipText.equals(tooltipText))
-        {
+        if (!orientationDiv.setValues(curValue/10, 0, 9) && !orientationMod.setValues(curValue%10, 0, 9) && this.labelText.equals(labelText) && this.tooltipText.equals(tooltipText)) {
             return;
         }
 
@@ -213,4 +204,5 @@ public class GUIDupGauge extends GUIElement implements GUIGaugeListener
 
         setTooltipText(tooltipPrefix == null || tooltipText.length() == 0 ? null : tooltipPrefix+tooltipText);
     }
+
 }

@@ -33,12 +33,12 @@ import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 
 /**
- * A {@link GUIDupGauge} which displays the current value as a text string on top
- * of the gauge.
+ * A {@link GUIDupGauge} which displays the current value as a text string on
+ * top of the gauge.
  * @author Andreas Kirschbaum
  */
-public class GUIDupTextGauge extends GUIDupGauge
-{
+public class GUIDupTextGauge extends GUIDupGauge {
+
     /**
      * The serial version UID.
      */
@@ -80,28 +80,28 @@ public class GUIDupTextGauge extends GUIDupGauge
      * @param color the text color
      * @param font the text font
      */
-    public GUIDupTextGauge(@NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final String name, final int x, final int y, final int w, final int h, @NotNull final BufferedImage pictureFullDiv, final BufferedImage pictureFullMod, @NotNull final BufferedImage pictureEmpty, @NotNull final Orientation orientationDiv, @NotNull final Orientation orientationMod, @Nullable final String tooltipPrefix, @NotNull final Color color, @NotNull final Font font)
-    {
+    public GUIDupTextGauge(@NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final String name, final int x, final int y, final int w, final int h, @NotNull final BufferedImage pictureFullDiv, final BufferedImage pictureFullMod, @NotNull final BufferedImage pictureEmpty, @NotNull final Orientation orientationDiv, @NotNull final Orientation orientationMod, @Nullable final String tooltipPrefix, @NotNull final Color color, @NotNull final Font font) {
         super(tooltipManager, elementListener, name, x, y, w, h, pictureFullDiv, pictureFullMod, pictureEmpty, orientationDiv, orientationMod, tooltipPrefix);
         this.color = color;
         this.font = font;
     }
 
-    /** {@inheritDoc} */
+    /**
+     * {@inheritDoc}
+     */
     @Override
-    public void dispose()
-    {
+    public void dispose() {
         super.dispose();
     }
 
-    /** {@inheritDoc} */
+    /**
+     * {@inheritDoc}
+     */
     @Override
-    protected void render(@NotNull final Graphics g)
-    {
+    protected void render(@NotNull final Graphics g) {
         super.render(g);
 
-        if (font == null)
-        {
+        if (font == null) {
             return;
         }
 
@@ -114,12 +114,14 @@ public class GUIDupTextGauge extends GUIDupGauge
         g.drawString(text, (int)Math.round((getWidth()-rect.getWidth())/2), (int)Math.round((getHeight()-rect.getMaxY()-rect.getMinY()))/2);
     }
 
-    /** {@inheritDoc} */
+    /**
+     * {@inheritDoc}
+     */
     @Override
-    public void setValues(final int curValue, final int minValue, final int maxValue, @NotNull final String labelText, @NotNull final String tooltipText)
-    {
+    public void setValues(final int curValue, final int minValue, final int maxValue, @NotNull final String labelText, @NotNull final String tooltipText) {
         super.setValues(curValue, minValue, maxValue, labelText, tooltipText);
         this.labelText = labelText;
         setChanged();
     }
+
 }

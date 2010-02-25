@@ -25,14 +25,21 @@ package com.realtime.crossfire.jxclient.gui.label;
  * The text alignment.
  * @author Andreas Kirschbaum
  */
-public enum Alignment
-{
-    /** Left-aligned. */
+public enum Alignment {
+
+    /**
+     * Left-aligned.
+     */
     LEFT,
 
-    /** Center-aligned. */
+    /**
+     * Center-aligned.
+     */
     CENTER,
 
-    /** Right-aligned. */
-    RIGHT,
+    /**
+     * Right-aligned.
+     */
+    RIGHT
+
 }

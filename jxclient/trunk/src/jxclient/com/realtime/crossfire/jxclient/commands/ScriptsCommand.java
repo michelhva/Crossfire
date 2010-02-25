@@ -32,8 +32,8 @@ import org.jetbrains.annotations.NotNull;
  * Implements the "scripts" command. It lists running scripts.
  * @author Andreas Kirschbaum
  */
-public class ScriptsCommand extends AbstractCommand
-{
+public class ScriptsCommand extends AbstractCommand {
+
     /**
      * The {@link ScriptManager} to use.
      */
@@ -45,34 +45,34 @@ public class ScriptsCommand extends AbstractCommand
      * @param scriptManager the script manager to use
      * @param crossfireServerConnection the connection instance
      */
-    public ScriptsCommand(@NotNull final ScriptManager scriptManager, @NotNull final CrossfireServerConnection crossfireServerConnection)
-    {
+    public ScriptsCommand(@NotNull final ScriptManager scriptManager, @NotNull final CrossfireServerConnection crossfireServerConnection) {
         super(crossfireServerConnection);
         this.scriptManager = scriptManager;
     }
 
-    /** {@inheritDoc} */
+    /**
+     * {@inheritDoc}
+     */
     @Override
-    public boolean allArguments()
-    {
+    public boolean allArguments() {
         return false;
     }
 
-    /** {@inheritDoc} */
+    /**
+     * {@inheritDoc}
+     */
     @Override
-    public void execute(@NotNull final String args)
-    {
+    public void execute(@NotNull final String args) {
         final Collection<ScriptProcess> scriptProcesses = new TreeSet<ScriptProcess>(scriptManager.getScripts(args));
-        if (scriptProcesses.isEmpty())
-        {
+        if (scriptProcesses.isEmpty()) {
             drawInfo(scriptManager.hasScripts() ? "No matching scripts." : "No scripts running.");
             return;
         }
 
         drawInfo("Running scripts:");
-        for (final Object scriptProcess : scriptProcesses)
-        {
+        for (final Object scriptProcess : scriptProcesses) {
             drawInfo("- "+scriptProcess);
         }
     }
+
 }

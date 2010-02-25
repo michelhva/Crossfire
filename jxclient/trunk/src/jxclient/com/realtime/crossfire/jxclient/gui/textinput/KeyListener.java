@@ -28,8 +28,8 @@ import org.jetbrains.annotations.NotNull;
  * Interface for listeners for keyboard input.
  * @author Andreas Kirschbaum
  */
-public interface KeyListener
-{
+public interface KeyListener {
+
     /**
      * Invoked when a key has been typed.
      * @param e the key event for the key
@@ -50,4 +50,5 @@ public interface KeyListener
      * @return whether the key event has been consumed
      */
     boolean keyReleased(@NotNull KeyEvent e);
+
 }

@@ -31,8 +31,8 @@ import org.jetbrains.annotations.NotNull;
  * #query()} automatically re-starts queries.
  * @author Andreas Kirschbaum
  */
-public class MetaserverProcessor
-{
+public class MetaserverProcessor {
+
     /**
      * The regular update-interval in seconds.
      */
@@ -79,43 +79,32 @@ public class MetaserverProcessor
      * The query {@link Thread}.
      */
     @NotNull
-    private final Thread thread = new Thread()
-    {
+    private final Thread thread = new Thread() {
         /** {@inheritDoc} */
         @Override
-        public void run()
-        {
-            try
-            {
-                while (!isInterrupted())
-                {
+        public void run() {
+            try {
+                while (!isInterrupted()) {
                     boolean executeProcess = false;
-                    synchronized (sync)
-                    {
+                    synchronized (sync) {
                         sync.wait(1000);
-                        if (counter > 0)
-                        {
+                        if (counter > 0) {
                             counter--;
-                            if (counter == 0)
-                            {
+                            if (counter == 0) {
                                 executeProcess = true;
                                 counter = UPDATE_INTERVAL;
                             }
                         }
                     }
-                    if (executeProcess)
-                    {
+                    if (executeProcess) {
                         final long now = System.currentTimeMillis();
-                        if (nextQuery <= now)
-                        {
+                        if (nextQuery <= now) {
                             nextQuery = now+MIN_UPDATE_INTERVAL;
                             metaserver.updateMetalist();
                         }
                     }
                 }
-            }
-            catch (final InterruptedException ex)
-            {
+            } catch (final InterruptedException ex) {
                 // ignore
             }
         }
@@ -125,8 +114,7 @@ public class MetaserverProcessor
      * Creates a new instance.
      * @param metaserver the metaserver instance to forward to
      */
-    public MetaserverProcessor(@NotNull final Metaserver metaserver)
-    {
+    public MetaserverProcessor(@NotNull final Metaserver metaserver) {
         this.metaserver = metaserver;
     }
 
@@ -134,12 +122,9 @@ public class MetaserverProcessor
      * Immediately triggers a metaserver query and enables periodic re-queries.
      * The immediate query is skipped if a recent query has been executed.
      */
-    public void query()
-    {
-        synchronized (sync)
-        {
-            if (!running)
-            {
+    public void query() {
+        synchronized (sync) {
+            if (!running) {
                 running = true;
                 thread.start();
             }
@@ -151,11 +136,10 @@ public class MetaserverProcessor
      * Disables periodic re-queries. Re-enable periodic queries with {@link
      * #query()}.
      */
-    public void disable()
-    {
-        synchronized (sync)
-        {
+    public void disable() {
+        synchronized (sync) {
             counter = 0;
         }
     }
+
 }

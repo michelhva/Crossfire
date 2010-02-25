@@ -28,11 +28,10 @@ import org.jetbrains.annotations.Nullable;
 
 /**
  * Manages the currently selected spell.
- *
  * @author Andreas Kirschbaum
  */
-public class CurrentSpellManager
-{
+public class CurrentSpellManager {
+
     /**
      * The listeners to notify object changed spell objects.
      */
@@ -47,52 +46,43 @@ public class CurrentSpellManager
 
     /**
      * Set the currently selected spell.
-     *
      * @param spell The spell to selected.
      */
-    public void setCurrentSpell(@Nullable final Spell spell)
-    {
-        if (currentSpell == spell)
-        {
+    public void setCurrentSpell(@Nullable final Spell spell) {
+        if (currentSpell == spell) {
             return;
         }
 
         currentSpell = spell;
-        for (final CurrentSpellManagerListener listener : listeners)
-        {
+        for (final CurrentSpellManagerListener listener : listeners) {
             listener.spellChanged(spell);
         }
     }
 
     /**
      * Return the currently selected spell object.
-     *
      * @return The spell object, or <code>null</code> if no spell is selected.
      */
     @Nullable
-    public Spell getCurrentSpell()
-    {
+    public Spell getCurrentSpell() {
         return currentSpell;
     }
 
     /**
      * Add a spell listener to be notified if the current spell object has
      * changed.
-     *
      * @param listener The listener to add.
      */
-    public void addSpellListener(@NotNull final CurrentSpellManagerListener listener)
-    {
+    public void addSpellListener(@NotNull final CurrentSpellManagerListener listener) {
         listeners.add(listener);
     }
 
     /**
      * Remove a spell listener.
-     *
      * @param listener The listener to remove.
      */
-    public void removeSpellListener(@NotNull final CurrentSpellManagerListener listener)
-    {
+    public void removeSpellListener(@NotNull final CurrentSpellManagerListener listener) {
         listeners.remove(listener);
     }
+
 }

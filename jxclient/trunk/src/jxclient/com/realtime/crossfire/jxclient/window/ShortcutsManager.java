@@ -34,8 +34,8 @@ import org.jetbrains.annotations.NotNull;
  * Manages shortcuts.
  * @author Andreas Kirschbaum
  */
-public class ShortcutsManager
-{
+public class ShortcutsManager {
+
     /**
      * The shortcuts.
      */
@@ -47,8 +47,7 @@ public class ShortcutsManager
      * @param commandQueue the command queue to affect
      * @param spellsManager the spells manager to use
      */
-    public ShortcutsManager(@NotNull final CommandQueue commandQueue, @NotNull final SpellsManager spellsManager)
-    {
+    public ShortcutsManager(@NotNull final CommandQueue commandQueue, @NotNull final SpellsManager spellsManager) {
         shortcuts = new Shortcuts(commandQueue, spellsManager);
     }
 
@@ -57,29 +56,20 @@ public class ShortcutsManager
      * @param hostname the current hostname
      * @param character the current character name
      */
-    public void loadShortcuts(@NotNull final CharSequence hostname, @NotNull final CharSequence character)
-    {
+    public void loadShortcuts(@NotNull final CharSequence hostname, @NotNull final CharSequence character) {
         final File file;
-        try
-        {
+        try {
             file = Filenames.getShortcutsFile(hostname, character);
-        }
-        catch (final IOException ex)
-        {
+        } catch (final IOException ex) {
             System.err.println("Cannot read shortcuts file: "+ex.getMessage());
             return;
         }
 
-        try
-        {
+        try {
             shortcuts.load(file);
-        }
-        catch (final FileNotFoundException ex)
-        {
+        } catch (final FileNotFoundException ex) {
             return;
-        }
-        catch (final IOException ex)
-        {
+        } catch (final IOException ex) {
             System.err.println("Cannot read shortcuts file "+file+": "+ex.getMessage());
             return;
         }
@@ -88,14 +78,10 @@ public class ShortcutsManager
     /**
      * Save all shortcut info to the backing file.
      */
-    public void saveShortcuts()
-    {
-        try
-        {
+    public void saveShortcuts() {
+        try {
             shortcuts.save();
-        }
-        catch (final IOException ex)
-        {
+        } catch (final IOException ex) {
             System.err.println("Cannot write shortcuts file "+shortcuts.getFile()+": "+ex.getMessage());
             return;
         }
@@ -103,8 +89,8 @@ public class ShortcutsManager
 
     @Deprecated
     @NotNull
-    public Shortcuts getShortcuts()
-    {
+    public Shortcuts getShortcuts() {
         return shortcuts;
     }
+
 }

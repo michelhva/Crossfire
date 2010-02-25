@@ -27,8 +27,8 @@ import org.jetbrains.annotations.NotNull;
  * An {@link Exception} thrown if a command does not exist.
  * @author Andreas Kirschbaum
  */
-public class NoSuchCommandException extends Exception
-{
+public class NoSuchCommandException extends Exception {
+
     /**
      * The serial version UID.
      */
@@ -38,8 +38,8 @@ public class NoSuchCommandException extends Exception
      * Creates a new instance.
      * @param reason the failure reason
      */
-    public NoSuchCommandException(@NotNull final String reason)
-    {
+    public NoSuchCommandException(@NotNull final String reason) {
         super(reason);
     }
+
 }

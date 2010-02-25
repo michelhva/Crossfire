@@ -34,8 +34,8 @@ import org.jetbrains.annotations.NotNull;
  * Manages macro expansion in command strings.
  * @author Andreas Kirschbaum
  */
-public class Macros
-{
+public class Macros {
+
     /**
      * The "reply_to" macro name.
      */
@@ -58,14 +58,11 @@ public class Macros
      * The {@link CrossfireDrawextinfoListener} for tracking tells.
      */
     @NotNull
-    private final CrossfireDrawextinfoListener crossfireDrawextinfoListener = new CrossfireDrawextinfoListener()
-    {
+    private final CrossfireDrawextinfoListener crossfireDrawextinfoListener = new CrossfireDrawextinfoListener() {
         /** {@inheritDoc} */
         @Override
-        public void commandDrawextinfoReceived(final int color, final int type, final int subtype, @NotNull final String message)
-        {
-            switch (type)
-            {
+        public void commandDrawextinfoReceived(final int color, final int type, final int subtype, @NotNull final String message) {
+            switch (type) {
             case MessageTypes.MSG_TYPE_BOOK:
             case MessageTypes.MSG_TYPE_CARD:
             case MessageTypes.MSG_TYPE_PAPER:
@@ -83,11 +80,9 @@ public class Macros
                 break;
 
             case MessageTypes.MSG_TYPE_COMMUNICATION:
-                if (subtype == MessageTypes.MSG_TYPE_COMMUNICATION_TELL)
-                {
+                if (subtype == MessageTypes.MSG_TYPE_COMMUNICATION_TELL) {
                     final int index = message.indexOf(" tells you:");
-                    if (index != -1)
-                    {
+                    if (index != -1) {
                         final String name = message.substring(0, index);
                         expansions.put(REPLY_TO, name);
                     }
@@ -109,8 +104,7 @@ public class Macros
      * @param crossfireServerConnection the crossfire server connection to
      * track
      */
-    public Macros(@NotNull final CrossfireServerConnection crossfireServerConnection)
-    {
+    public Macros(@NotNull final CrossfireServerConnection crossfireServerConnection) {
         expansions.put(REPLY_TO, "");
         crossfireServerConnection.addCrossfireDrawextinfoListener(crossfireDrawextinfoListener);
     }
@@ -121,32 +115,28 @@ public class Macros
      * @return the expanded string
      */
     @NotNull
-    public String expandMacros(@NotNull final String string)
-    {
+    public String expandMacros(@NotNull final String string) {
         StringBuilder result = null;
         int index = 0;
         final Matcher macroMatcher = macroPattern.matcher(string);
-        while (macroMatcher.find())
-        {
-            if (result == null)
-            {
+        while (macroMatcher.find()) {
+            if (result == null) {
                 result = new StringBuilder();
             }
 
             final String name = macroMatcher.group(1);
             String expansion = expansions.get(name);
-            if (expansion == null)
-            {
+            if (expansion == null) {
                 expansion = macroMatcher.group(); // do not expand unknown macro names
             }
             result.append(string.substring(index, macroMatcher.start()));
             result.append(expansion);
             index = macroMatcher.end();
         }
-        if (result != null)
-        {
+        if (result != null) {
             result.append(string.substring(index, string.length()));
         }
         return result == null ? string : result.toString();
     }
+
 }

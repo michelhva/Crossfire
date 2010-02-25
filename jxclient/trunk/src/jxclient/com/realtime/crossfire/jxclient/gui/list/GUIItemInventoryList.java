@@ -45,8 +45,8 @@ import org.jetbrains.annotations.Nullable;
  * A {@link GUIItemList} that displays the character's inventory.
  * @author Andreas Kirschbaum
  */
-public class GUIItemInventoryList extends GUIItemList
-{
+public class GUIItemInventoryList extends GUIItemList {
+
     /**
      * The serial version UID.
      */
@@ -78,12 +78,10 @@ public class GUIItemInventoryList extends GUIItemList
      * The {@link LocationsListener} to be notified about inventory changes.
      */
     @NotNull
-    private final LocationsListener locationsListener = new LocationsListener()
-    {
+    private final LocationsListener locationsListener = new LocationsListener() {
         /** {@inheritDoc} */
         @Override
-        public void locationsModified(@NotNull final Collection<Integer> index)
-        {
+        public void locationsModified(@NotNull final Collection<Integer> index) {
             rebuildList();
         }
     };
@@ -93,12 +91,10 @@ public class GUIItemInventoryList extends GUIItemList
      * GUIItemInventory} instance in the list.
      */
     @NotNull
-    private final GUIElementChangedListener itemChangedListener = new GUIElementChangedListener()
-    {
+    private final GUIElementChangedListener itemChangedListener = new GUIElementChangedListener() {
         /** {@inheritDoc} */
         @Override
-        public void notifyChanged(@NotNull final GUIElement element)
-        {
+        public void notifyChanged(@NotNull final GUIElement element) {
             element.resetChanged();
             selectionChanged();
             setChanged();
@@ -110,19 +106,19 @@ public class GUIItemInventoryList extends GUIItemList
      * @param tooltipManager the tooltip manager to update
      * @param elementListener the element listener to notify
      * @param name the name of this element
-     * @param x the x-coordinate for drawing this element to screen; it is relative
-     * to <code>gui</code>
-     * @param y the y-coordinate for drawing this element to screen; it is relative
-     * to <code>gui</code>
+     * @param x the x-coordinate for drawing this element to screen; it is
+     * relative to <code>gui</code>
+     * @param y the y-coordinate for drawing this element to screen; it is
+     * relative to <code>gui</code>
      * @param w the width for drawing this element to screen
      * @param h the height for drawing this element to screen
      * @param cellHeight the height of each cell
-     * @param currentItem the label to update with information about the selected item.
+     * @param currentItem the label to update with information about the
+     * selected item.
      * @param itemInventoryFactory the factory for creating item inventory
      * instances
      */
-    public GUIItemInventoryList(@NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final CommandQueue commandQueue, @NotNull final String name, final int x, final int y, final int w, final int h, final int cellHeight, @NotNull final CrossfireServerConnection crossfireServerConnection, @NotNull final ItemsManager itemsManager, @Nullable final AbstractLabel currentItem, @NotNull final GUIItemInventoryFactory itemInventoryFactory)
-    {
+    public GUIItemInventoryList(@NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final CommandQueue commandQueue, @NotNull final String name, final int x, final int y, final int w, final int h, final int cellHeight, @NotNull final CrossfireServerConnection crossfireServerConnection, @NotNull final ItemsManager itemsManager, @Nullable final AbstractLabel currentItem, @NotNull final GUIItemInventoryFactory itemInventoryFactory) {
         super(tooltipManager, elementListener, name, x, y, w, h, cellHeight, new ItemInventoryCellRenderer(itemInventoryFactory.newTemplateItemInventory(cellHeight)));
         this.itemInventoryFactory = itemInventoryFactory;
         this.commandQueue = commandQueue;
@@ -134,10 +130,11 @@ public class GUIItemInventoryList extends GUIItemList
         rebuildList();
     }
 
-    /** {@inheritDoc} */
+    /**
+     * {@inheritDoc}
+     */
     @Override
-    public void dispose()
-    {
+    public void dispose() {
         super.dispose();
         itemsManager.getInventoryManager().removeLocationsListener(locationsListener);
     }
@@ -145,15 +142,12 @@ public class GUIItemInventoryList extends GUIItemList
     /**
      * Rebuilds the list cells.
      */
-    private void rebuildList()
-    {
-        synchronized (getTreeLock())
-        {
+    private void rebuildList() {
+        synchronized (getTreeLock()) {
             final Collection<CfItem> inventory = itemsManager.getInventory();
             final int newSize = inventory.size();
             final int oldSize = resizeElements(newSize);
-            for (int i = oldSize; i < newSize; i++)
-            {
+            for (int i = oldSize; i < newSize; i++) {
                 final GUIElement item = itemInventoryFactory.newItemInventory(i);
                 addElement(item);
                 item.setChangedListener(itemChangedListener);
@@ -166,21 +160,18 @@ public class GUIItemInventoryList extends GUIItemList
         setChanged();
     }
 
-    /** {@inheritDoc} */
+    /**
+     * {@inheritDoc}
+     */
     @Override
-    protected void selectionChanged(final int selectedIndex)
-    {
-        if (currentItem != null)
-        {
+    protected void selectionChanged(final int selectedIndex) {
+        if (currentItem != null) {
             final List<CfItem> inventory = itemsManager.getInventory();
             final CfItem item = selectedIndex >= 0 && selectedIndex < inventory.size() ? inventory.get(selectedIndex) : null;
-            if (item == null)
-            {
+            if (item == null) {
                 currentItem.setText("");
                 currentItem.setTooltipText("");
-            }
-            else
-            {
+            } else {
                 final String tooltipText1 = item.getTooltipText1();
                 final String tooltipText2 = item.getTooltipText2();
                 final String tooltipText3 = item.getTooltipText3();
@@ -190,96 +181,81 @@ public class GUIItemInventoryList extends GUIItemList
         }
     }
 
-    /** {@inheritDoc} */
+    /**
+     * {@inheritDoc}
+     */
     @Override
-    protected void updateTooltip(final int index)
-    {
+    protected void updateTooltip(final int index) {
         final List<CfItem> inventory = itemsManager.getInventory();
         final CfItem item = 0 <= index && index < inventory.size() ? inventory.get(index) : null;
         setTooltipText(item == null ? null : item.getTooltipText());
     }
 
-    /** {@inheritDoc} */
+    /**
+     * {@inheritDoc}
+     */
     @Override
-    protected void activeChanged()
-    {
+    protected void activeChanged() {
     }
 
     /* {@inheritDoc} */
     @Override
-    public void button1Clicked(final int modifiers)
-    {
+    public void button1Clicked(final int modifiers) {
         final GUIItemItem guiItem = getSelectedItem();
-        if (guiItem == null)
-        {
+        if (guiItem == null) {
             return;
         }
 
         final CfItem item = guiItem.getItem();
-        if (item == null)
-        {
+        if (item == null) {
             return;
         }
 
-        if ((modifiers&InputEvent.SHIFT_DOWN_MASK) == 0)
-        {
+        if ((modifiers&InputEvent.SHIFT_DOWN_MASK) == 0) {
             crossfireServerConnection.sendExamine(item.getTag());
-        }
-        else
-        {
+        } else {
             crossfireServerConnection.sendLock(!item.isLocked(), item.getTag());
         }
     }
 
     /* {@inheritDoc} */
     @Override
-    public void button2Clicked(final int modifiers)
-    {
+    public void button2Clicked(final int modifiers) {
         final GUIItemItem guiItem = getSelectedItem();
-        if (guiItem == null)
-        {
+        if (guiItem == null) {
             return;
         }
 
         final CfItem item = guiItem.getItem();
-        if (item == null)
-        {
+        if (item == null) {
             return;
         }
 
-        if ((modifiers&InputEvent.SHIFT_DOWN_MASK) == 0)
-        {
+        if ((modifiers&InputEvent.SHIFT_DOWN_MASK) == 0) {
             crossfireServerConnection.sendApply(item.getTag());
-        }
-        else
-        {
+        } else {
             crossfireServerConnection.sendMark(item.getTag());
         }
     }
 
     /* {@inheritDoc} */
     @Override
-    public void button3Clicked(final int modifiers)
-    {
+    public void button3Clicked(final int modifiers) {
         final GUIItemItem guiItem = getSelectedItem();
-        if (guiItem == null)
-        {
+        if (guiItem == null) {
             return;
         }
 
         final CfItem item = guiItem.getItem();
-        if (item == null)
-        {
+        if (item == null) {
             return;
         }
 
-        if (item.isLocked())
-        {
+        if (item.isLocked()) {
             crossfireServerConnection.drawInfo("This item is locked. To drop it, first unlock by SHIFT+leftclicking on it.", 3);
-        }
-        else
-        {
+        } else {
             commandQueue.sendMove(itemsManager.getCurrentFloorManager().getCurrentFloor(), item.getTag());
         }
     }
+
 }

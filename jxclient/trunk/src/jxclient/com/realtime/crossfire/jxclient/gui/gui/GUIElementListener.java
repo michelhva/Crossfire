@@ -27,11 +27,12 @@ import org.jetbrains.annotations.NotNull;
  * Listener for {@link GUIElement} related events.
  * @author Andreas Kirschbaum
  */
-public interface GUIElementListener
-{
+public interface GUIElementListener {
+
     /**
      * A {@link Gui} has been clicked into.
      * @param gui the gui
      */
     void mouseClicked(@NotNull Gui gui);
+
 }

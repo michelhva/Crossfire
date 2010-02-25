@@ -40,13 +40,12 @@ import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 
 /**
- *
- * @version 1.0
  * @author Lauwenmark
+ * @version 1.0
  * @since 1.0
  */
-public class GUIHTMLLabel extends AbstractLabel
-{
+public class GUIHTMLLabel extends AbstractLabel {
+
     /**
      * The serial version UID.
      */
@@ -74,25 +73,26 @@ public class GUIHTMLLabel extends AbstractLabel
      */
     private boolean autoResize = false;
 
-    public GUIHTMLLabel(@NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final String name, final int x, final int y, final int w, final int h, @Nullable final BufferedImage picture, @Nullable final Font font, @NotNull final Color color, @NotNull final Color backgroundColor, @NotNull final String text)
-    {
+    public GUIHTMLLabel(@NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final String name, final int x, final int y, final int w, final int h, @Nullable final BufferedImage picture, @Nullable final Font font, @NotNull final Color color, @NotNull final Color backgroundColor, @NotNull final String text) {
         super(tooltipManager, elementListener, name, x, y, w, h, picture, backgroundColor);
         this.font = font;
         this.color = color;
         setText(text);
     }
 
-    /** {@inheritDoc} */
+    /**
+     * {@inheritDoc}
+     */
     @Override
-    public void dispose()
-    {
+    public void dispose() {
         super.dispose();
     }
 
-    /** {@inheritDoc} */
+    /**
+     * {@inheritDoc}
+     */
     @Override
-    protected void textChanged()
-    {
+    protected void textChanged() {
         autoResize();
         setChanged();
     }
@@ -100,26 +100,23 @@ public class GUIHTMLLabel extends AbstractLabel
     /**
      * Enable or disable auto-resizing. If enabled, the gui element's size
      * changes to the displayed text's size.
-     *
      * @param autoResize If set, enable auto-resizing; if unset, disable
      * auto-resizing.
      */
-    public void setAutoResize(final boolean autoResize)
-    {
-        if (this.autoResize != autoResize)
-        {
+    public void setAutoResize(final boolean autoResize) {
+        if (this.autoResize != autoResize) {
             this.autoResize = autoResize;
             autoResize();
         }
     }
 
-    /** {@inheritDoc} */
+    /**
+     * {@inheritDoc}
+     */
     @Override
-    protected void render(@NotNull final Graphics g)
-    {
+    protected void render(@NotNull final Graphics g) {
         super.render(g);
-        if (font == null)
-        {
+        if (font == null) {
             return;
         }
 
@@ -129,12 +126,9 @@ public class GUIHTMLLabel extends AbstractLabel
         final Reader reader = new StringReader(getText());
         final HTMLEditorKit.ParserCallback renderer = new InternalHTMLRenderer(font, color, g, 0, font.getSize(), autoResize ? AUTO_BORDER_SIZE : 0);
         final ParserDelegator parserDelegator = new ParserDelegator();
-        try
-        {
+        try {
             parserDelegator.parse(reader, renderer, false);
-        }
-        catch (final IOException ex)
-        {
+        } catch (final IOException ex) {
             // XXX: handle exception
         }
     }
@@ -142,33 +136,27 @@ public class GUIHTMLLabel extends AbstractLabel
     /**
      * If auto-resizing is enabled, calculate the new width and height.
      */
-    private void autoResize()
-    {
-        if (!autoResize)
-        {
+    private void autoResize() {
+        if (!autoResize) {
             return;
         }
 
-        synchronized (bufferedImageSync)
-        {
+        synchronized (bufferedImageSync) {
             final Graphics2D g = createBufferGraphics();
-            try
-            {
+            try {
                 final FontRenderContext context = g.getFontRenderContext();
                 int width = 0;
                 int height = 0;
-                for (final String str : PATTERN_LINE_BREAK.split(getText(), -1))
-                {
+                for (final String str : PATTERN_LINE_BREAK.split(getText(), -1)) {
                     final RectangularShape size = font.getStringBounds(str, context);
                     width = Math.max(width, (int)size.getWidth());
                     height += (int)size.getHeight();
                 }
                 setElementSize(Math.max(1, width+2*AUTO_BORDER_SIZE), Math.max(1, height+2*AUTO_BORDER_SIZE));
-            }
-            finally
-            {
+            } finally {
                 g.dispose();
             }
         }
     }
+
 }

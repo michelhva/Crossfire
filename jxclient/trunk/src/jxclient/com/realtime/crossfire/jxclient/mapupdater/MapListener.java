@@ -27,17 +27,17 @@ import java.util.Set;
 import org.jetbrains.annotations.NotNull;
 
 /**
- *
- * @version 1.0
  * @author Lauwenmark
+ * @version 1.0
  * @since 1.0
  */
-public interface MapListener
-{
+public interface MapListener {
+
     /**
      * The map has changed.
      * @param map the changed map
      * @param changedSquares the changed map squares
      */
     void mapChanged(@NotNull CfMap map, @NotNull Set<CfMapSquare> changedSquares);
+
 }

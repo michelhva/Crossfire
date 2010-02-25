@@ -32,8 +32,8 @@ import org.jetbrains.annotations.NotNull;
  * Creates {@link Font} instances from strig representations.
  * @author Andreas Kirschbaum
  */
-public class FontParser
-{
+public class FontParser {
+
     /**
      * The {@link JXCSkinSource} for loading resources.
      */
@@ -44,8 +44,7 @@ public class FontParser
      * Creates a new instance.
      * @param skinSource the skin source for loading resources
      */
-    public FontParser(@NotNull final JXCSkinSource skinSource)
-    {
+    public FontParser(@NotNull final JXCSkinSource skinSource) {
         this.skinSource = skinSource;
     }
 
@@ -56,34 +55,25 @@ public class FontParser
      * @throws IOException if the font cannot be loaded
      */
     @NotNull
-    public Font getFont(@NotNull final String name) throws IOException
-    {
+    public Font getFont(@NotNull final String name) throws IOException {
         final String filename = "fonts/"+name+".ttf";
 
         final Font font;
-        try
-        {
+        try {
             final InputStream ttf = skinSource.getInputStream(filename);
-            try
-            {
-                try
-                {
+            try {
+                try {
                     font = Font.createFont(Font.TRUETYPE_FONT, ttf);
-                }
-                catch (final FontFormatException ex)
-                {
+                } catch (final FontFormatException ex) {
                     throw new IOException(filename+": invalid font format: "+ex.getMessage());
                 }
-            }
-            finally
-            {
+            } finally {
                 ttf.close();
             }
-        }
-        catch (final IOException ex)
-        {
+        } catch (final IOException ex) {
             throw new IOException(skinSource.getURI(filename)+": i/o error: "+ex.getMessage());
         }
         return font;
     }
+
 }

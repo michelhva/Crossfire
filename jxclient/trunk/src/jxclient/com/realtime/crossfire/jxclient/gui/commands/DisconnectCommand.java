@@ -28,8 +28,8 @@ import org.jetbrains.annotations.NotNull;
  * A {@link GUICommand} which disconnects from the Crossfire server.
  * @author Andreas Kirschbaum
  */
-public class DisconnectCommand implements GUICommand
-{
+public class DisconnectCommand implements GUICommand {
+
     /**
      * The {@link GuiStateManager} instance.
      */
@@ -40,22 +40,24 @@ public class DisconnectCommand implements GUICommand
      * Creates a new instance.
      * @param guiStateManager the gui state manager instance
      */
-    public DisconnectCommand(@NotNull final GuiStateManager guiStateManager)
-    {
+    public DisconnectCommand(@NotNull final GuiStateManager guiStateManager) {
         this.guiStateManager = guiStateManager;
     }
 
-    /** {@inheritDoc} */
+    /**
+     * {@inheritDoc}
+     */
     @Override
-    public boolean canExecute()
-    {
+    public boolean canExecute() {
         return true;
     }
 
-    /** {@inheritDoc} */
+    /**
+     * {@inheritDoc}
+     */
     @Override
-    public void execute()
-    {
+    public void execute() {
         guiStateManager.disconnect();
     }
+
 }

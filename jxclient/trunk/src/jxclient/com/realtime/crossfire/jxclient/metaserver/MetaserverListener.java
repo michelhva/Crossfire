@@ -25,10 +25,11 @@ package com.realtime.crossfire.jxclient.metaserver;
  * Interface for listeners on metaserver related events.
  * @author Andreas Kirschbaum
  */
-public interface MetaserverListener
-{
+public interface MetaserverListener {
+
     /**
      * The number of metaserver entries has changed.
      */
     void numberOfEntriesChanged();
+
 }

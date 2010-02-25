@@ -28,8 +28,8 @@ import org.jetbrains.annotations.Nullable;
  * A location on the map.
  * @author Andreas Kirschbaum
  */
-public class Location
-{
+public class Location {
+
     /**
      * The x-coordinate.
      */
@@ -51,8 +51,7 @@ public class Location
      * @param y the y-coordinate
      * @param layer the layer
      */
-    public Location(final int x, final int y, final int layer)
-    {
+    public Location(final int x, final int y, final int layer) {
         this.x = x;
         this.y = y;
         this.layer = layer;
@@ -62,8 +61,7 @@ public class Location
      * Returns the x-coordinate.
      * @return the x-coordinate
      */
-    public int getX()
-    {
+    public int getX() {
         return x;
     }
 
@@ -71,8 +69,7 @@ public class Location
      * Returns the y-coordinate.
      * @return the y-coordinate
      */
-    public int getY()
-    {
+    public int getY() {
         return y;
     }
 
@@ -80,8 +77,7 @@ public class Location
      * Returns the layer.
      * @return the layer
      */
-    public int getLayer()
-    {
+    public int getLayer() {
         return layer;
     }
 
@@ -89,14 +85,11 @@ public class Location
      * {@inheritDoc}
      */
     @Override
-    public boolean equals(@Nullable final Object obj)
-    {
-        if (obj == null)
-        {
+    public boolean equals(@Nullable final Object obj) {
+        if (obj == null) {
             return false;
         }
-        if (obj.getClass() != Location.class)
-        {
+        if (obj.getClass() != Location.class) {
             return false;
         }
         final Location loc = (Location)obj;
@@ -107,8 +100,7 @@ public class Location
      * {@inheritDoc}
      */
     @Override
-    public int hashCode()
-    {
+    public int hashCode() {
         return x^y*0x1000^layer*0x1000000;
     }
 
@@ -117,8 +109,8 @@ public class Location
      */
     @NotNull
     @Override
-    public String toString()
-    {
+    public String toString() {
         return x+"/"+y+"/"+layer;
     }
+
 }

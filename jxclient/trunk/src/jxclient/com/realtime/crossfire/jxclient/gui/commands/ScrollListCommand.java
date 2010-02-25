@@ -28,8 +28,8 @@ import org.jetbrains.annotations.NotNull;
  * A {@link GUICommand} which scrolls a {@link GUIList} instance.
  * @author Andreas Kirschbaum
  */
-public class ScrollListCommand implements GUICommand
-{
+public class ScrollListCommand implements GUICommand {
+
     /**
      * The list to scroll.
      */
@@ -46,23 +46,25 @@ public class ScrollListCommand implements GUICommand
      * @param list the list to scroll
      * @param distance the distance to scroll
      */
-    public ScrollListCommand(@NotNull final GUIList list, final int distance)
-    {
+    public ScrollListCommand(@NotNull final GUIList list, final int distance) {
         this.list = list;
         this.distance = distance;
     }
 
-    /** {@inheritDoc} */
+    /**
+     * {@inheritDoc}
+     */
     @Override
-    public boolean canExecute()
-    {
+    public boolean canExecute() {
         return list.canScroll(distance);
     }
 
-    /** {@inheritDoc} */
+    /**
+     * {@inheritDoc}
+     */
     @Override
-    public void execute()
-    {
+    public void execute() {
         list.scroll(distance);
     }
+
 }

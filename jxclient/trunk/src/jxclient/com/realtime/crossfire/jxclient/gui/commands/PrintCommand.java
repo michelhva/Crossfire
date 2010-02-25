@@ -25,18 +25,21 @@ package com.realtime.crossfire.jxclient.gui.commands;
  * A {@link GUICommand} which does nothing.
  * @author Andreas Kirschbaum
  */
-public class PrintCommand implements GUICommand
-{
-    /** {@inheritDoc} */
+public class PrintCommand implements GUICommand {
+
+    /**
+     * {@inheritDoc}
+     */
     @Override
-    public boolean canExecute()
-    {
+    public boolean canExecute() {
         return true;
     }
 
-    /** {@inheritDoc} */
+    /**
+     * {@inheritDoc}
+     */
     @Override
-    public void execute()
-    {
+    public void execute() {
     }
+
 }

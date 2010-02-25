@@ -19,7 +19,6 @@
  * Copyright (C) 2006-2010 Andreas Kirschbaum.
  */
 
-
 package com.realtime.crossfire.jxclient.gui.item;
 
 import com.realtime.crossfire.jxclient.faces.Face;
@@ -42,8 +41,8 @@ import java.util.List;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 
-public class GUIItemSpelllist extends GUIItem
-{
+public class GUIItemSpelllist extends GUIItem {
+
     /**
      * The serial version UID.
      */
@@ -106,24 +105,19 @@ public class GUIItemSpelllist extends GUIItem
      * The {@link SpellsManagerListener} used to detect spell changes.
      */
     @NotNull
-    private final SpellsManagerListener spellsManagerListener = new SpellsManagerListener()
-    {
+    private final SpellsManagerListener spellsManagerListener = new SpellsManagerListener() {
         /** {@inheritDoc} */
         @Override
-        public void spellAdded(@NotNull final Spell spell, final int index)
-        {
-            if (GUIItemSpelllist.this.index >= index)
-            {
+        public void spellAdded(@NotNull final Spell spell, final int index) {
+            if (GUIItemSpelllist.this.index >= index) {
                 setSpell();
             }
         }
 
         /** {@inheritDoc} */
         @Override
-        public void spellRemoved(@NotNull final Spell spell, final int index)
-        {
-            if (GUIItemSpelllist.this.index >= index)
-            {
+        public void spellRemoved(@NotNull final Spell spell, final int index) {
+            if (GUIItemSpelllist.this.index >= index) {
                 setSpell();
             }
         }
@@ -133,12 +127,10 @@ public class GUIItemSpelllist extends GUIItem
      * The {@link SpellListener} attached to {@link #spell}.
      */
     @NotNull
-    private final SpellListener spellListener = new SpellListener()
-    {
+    private final SpellListener spellListener = new SpellListener() {
         /** {@inheritDoc} */
         @Override
-        public void spellChanged()
-        {
+        public void spellChanged() {
             setSpell();
         }
     };
@@ -147,21 +139,17 @@ public class GUIItemSpelllist extends GUIItem
      * The {@link FacesManagerListener} registered to detect updated faces.
      */
     @NotNull
-    private final FacesManagerListener facesManagerListener = new FacesManagerListener()
-    {
+    private final FacesManagerListener facesManagerListener = new FacesManagerListener() {
         /** {@inheritDoc} */
         @Override
-        public void faceUpdated(@NotNull final Face face)
-        {
-            if (spell != null && spell.getFaceNum() == face.getFaceNum())
-            {
+        public void faceUpdated(@NotNull final Face face) {
+            if (spell != null && spell.getFaceNum() == face.getFaceNum()) {
                 setChanged();
             }
         }
     };
 
-    public GUIItemSpelllist(@NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final CommandQueue commandQueue, @NotNull final String name, final int x, final int y, final int w, final int h, @Nullable final Color selectorColor, @Nullable final Image selectorImage, final int defaultIndex, @NotNull final FacesManager facesManager, @NotNull final SpellsManager spellsManager, @NotNull final CurrentSpellManager currentSpellManager)
-    {
+    public GUIItemSpelllist(@NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final CommandQueue commandQueue, @NotNull final String name, final int x, final int y, final int w, final int h, @Nullable final Color selectorColor, @Nullable final Image selectorImage, final int defaultIndex, @NotNull final FacesManager facesManager, @NotNull final SpellsManager spellsManager, @NotNull final CurrentSpellManager currentSpellManager) {
         super(tooltipManager, elementListener, name, x, y, w, h);
         this.commandQueue = commandQueue;
         this.facesManager = facesManager;
@@ -177,59 +165,51 @@ public class GUIItemSpelllist extends GUIItem
         this.h = h;
     }
 
-    /** {@inheritDoc} */
+    /**
+     * {@inheritDoc}
+     */
     @Override
-    public void dispose()
-    {
+    public void dispose() {
         super.dispose();
         spellsManager.removeCrossfireSpellChangedListener(spellsManagerListener);
         facesManager.removeFacesManagerListener(facesManagerListener);
-        if (spell != null)
-        {
+        if (spell != null) {
             spell.removeSpellListener(spellListener);
         }
     }
 
-    /** {@inheritDoc} */
+    /**
+     * {@inheritDoc}
+     */
     @Override
-    public boolean canScroll(final int distance)
-    {
-        if (distance < 0)
-        {
+    public boolean canScroll(final int distance) {
+        if (distance < 0) {
             return index >= -distance;
-        }
-        else if (distance > 0)
-        {
+        } else if (distance > 0) {
             final Collection<Spell> list = spellsManager.getSpellList();
             return index+distance < list.size();
-        }
-        else
-        {
+        } else {
             return false;
         }
     }
 
     /* {@inheritDoc} */
     @Override
-    public void scroll(final int distance)
-    {
+    public void scroll(final int distance) {
         setIndex(index+distance);
         setChanged();
     }
 
     /* {@inheritDoc} */
     @Override
-    public void resetScroll()
-    {
+    public void resetScroll() {
         setIndex(defaultIndex);
     }
 
     /* {@inheritDoc} */
     @Override
-    public void button1Clicked(final int modifiers)
-    {
-        if (spell == null)
-        {
+    public void button1Clicked(final int modifiers) {
+        if (spell == null) {
             return;
         }
 
@@ -239,60 +219,50 @@ public class GUIItemSpelllist extends GUIItem
 
     /* {@inheritDoc} */
     @Override
-    public void button2Clicked(final int modifiers)
-    {
+    public void button2Clicked(final int modifiers) {
     }
 
     /* {@inheritDoc} */
     @Override
-    public void button3Clicked(final int modifiers)
-    {
+    public void button3Clicked(final int modifiers) {
     }
 
     /* {@inheritDoc} */
     @Override
-    protected void render(@NotNull final Graphics g)
-    {
+    protected void render(@NotNull final Graphics g) {
         final Graphics2D g2 = (Graphics2D)g;
         g2.setBackground(BACKGROUND_COLOR);
         g.clearRect(0, 0, getWidth(), getHeight());
 
-        if (spell == null)
-        {
+        if (spell == null) {
             return;
         }
 
-        if (isActive() && selectorColor != null)
-        {
+        if (isActive() && selectorColor != null) {
             g.setColor(selectorColor);
             g.fillRect(0, 0, w, h);
         }
         g.drawImage(facesManager.getOriginalImageIcon(spell.getFaceNum()).getImage(), 0, 0, null);
-        if (isActive() && selectorImage != null)
-        {
+        if (isActive() && selectorImage != null) {
             g.drawImage(selectorImage, 0, 0, null);
         }
     }
 
-    private void setSpell()
-    {
+    private void setSpell() {
         final List<Spell> list = spellsManager.getSpellList();
         final Spell newSpell = 0 <= index && index < list.size() ? list.get(index) : null;
 
-        if (spell == newSpell)
-        {
+        if (spell == newSpell) {
             return;
         }
 
-        if (spell != null)
-        {
+        if (spell != null) {
             spell.removeSpellListener(spellListener);
         }
 
         spell = newSpell;
 
-        if (spell != null)
-        {
+        if (spell != null) {
             spell.addSpellListener(spellListener);
         }
 
@@ -301,14 +271,13 @@ public class GUIItemSpelllist extends GUIItem
         setTooltipText(newSpell == null ? null : newSpell.getTooltipText());
     }
 
-    private void setIndex(final int index)
-    {
-        if (this.index == index)
-        {
+    private void setIndex(final int index) {
+        if (this.index == index) {
             return;
         }
         this.index = index;
 
         setSpell();
     }
+
 }

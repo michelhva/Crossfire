@@ -49,8 +49,8 @@ import org.jetbrains.annotations.Nullable;
  * @author Lauwenmark
  * @author Andreas Kirschbaum
  */
-public abstract class GUIText extends ActivatableGUIElement implements KeyListener
-{
+public abstract class GUIText extends ActivatableGUIElement implements KeyListener {
+
     /**
      * The serial version UID.
      */
@@ -140,11 +140,9 @@ public abstract class GUIText extends ActivatableGUIElement implements KeyListen
     @NotNull
     private final Object syncCursor = new Object();
 
-    protected GUIText(@NotNull final CommandCallback commandCallback, @NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final String name, final int x, final int y, final int w, final int h, @NotNull final Image activeImage, @NotNull final Image inactiveImage, @NotNull final Font font, @NotNull final Color inactiveColor, @NotNull final Color activeColor, final int margin, @NotNull final String text, final boolean ignoreUpDown)
-    {
+    protected GUIText(@NotNull final CommandCallback commandCallback, @NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final String name, final int x, final int y, final int w, final int h, @NotNull final Image activeImage, @NotNull final Image inactiveImage, @NotNull final Font font, @NotNull final Color inactiveColor, @NotNull final Color activeColor, final int margin, @NotNull final String text, final boolean ignoreUpDown) {
         super(tooltipManager, elementListener, name, x, y, w, h, Transparency.TRANSLUCENT);
-        if (2*margin >= w)
-        {
+        if (2*margin >= w) {
             throw new IllegalArgumentException("margin is too large");
         }
         this.commandCallback = commandCallback;
@@ -157,56 +155,50 @@ public abstract class GUIText extends ActivatableGUIElement implements KeyListen
         this.margin = margin;
         this.text = new StringBuilder(text);
         this.ignoreUpDown = ignoreUpDown;
-        synchronized (bufferedImageSync)
-        {
+        synchronized (bufferedImageSync) {
             final Graphics2D g = createBufferGraphics();
-            try
-            {
+            try {
                 fontRenderContext = g.getFontRenderContext();
-            }
-            finally
-            {
+            } finally {
                 g.dispose();
             }
         }
         setCursor(this.text.length());
     }
 
-    /** {@inheritDoc} */
+    /**
+     * {@inheritDoc}
+     */
     @Override
-    public void dispose()
-    {
+    public void dispose() {
         super.dispose();
     }
 
-    public void setText(@NotNull final String text)
-    {
+    public void setText(@NotNull final String text) {
         this.text.setLength(0);
         this.text.append(text);
         setCursor(this.text.length());
     }
 
     @NotNull
-    public String getText()
-    {
+    public String getText() {
         return text.toString();
     }
 
-    /** {@inheritDoc} */
+    /**
+     * {@inheritDoc}
+     */
     @Override
-    protected void render(@NotNull final Graphics g)
-    {
+    protected void render(@NotNull final Graphics g) {
         g.drawImage(isActive() ? activeImage : inactiveImage, 0, 0, null);
         g.setFont(font);
         final String tmp;
         final int y;
-        synchronized (syncCursor)
-        {
+        synchronized (syncCursor) {
             tmp = getDisplayText();
             final RectangularShape rect = font.getStringBounds(tmp, fontRenderContext);
             y = (int)Math.round((getHeight()-rect.getMaxY()-rect.getMinY()))/2;
-            if (isActive())
-            {
+            if (isActive()) {
                 final String tmpPrefix = tmp.substring(0, cursor-offset);
                 final String tmpCursor = tmp.substring(0, cursor-offset+1);
                 final RectangularShape rectPrefix = font.getStringBounds(tmpPrefix, fontRenderContext);
@@ -222,11 +214,9 @@ public abstract class GUIText extends ActivatableGUIElement implements KeyListen
     }
 
     @NotNull
-    private String getDisplayText()
-    {
+    private String getDisplayText() {
         final String tmpText = text.substring(offset);
-        if (!hideInput)
-        {
+        if (!hideInput) {
             return tmpText+" ";
         }
 
@@ -235,14 +225,14 @@ public abstract class GUIText extends ActivatableGUIElement implements KeyListen
         return hiddenText+" ";
     }
 
-    /** {@inheritDoc} */
+    /**
+     * {@inheritDoc}
+     */
     @Override
-    public void mouseClicked(@NotNull final MouseEvent e)
-    {
+    public void mouseClicked(@NotNull final MouseEvent e) {
         super.mouseClicked(e);
         final int b = e.getButton();
-        switch (b)
-        {
+        switch (b) {
         case MouseEvent.BUTTON1:
             setActive(true);
             setChanged();
@@ -256,23 +246,20 @@ public abstract class GUIText extends ActivatableGUIElement implements KeyListen
         }
     }
 
-    /** {@inheritDoc} */
+    /**
+     * {@inheritDoc}
+     */
     @Override
-    protected void activeChanged()
-    {
+    protected void activeChanged() {
         setChanged();
     }
 
     @Override
-    public boolean keyPressed(@NotNull final KeyEvent e)
-    {
-        switch (e.getKeyCode())
-        {
+    public boolean keyPressed(@NotNull final KeyEvent e) {
+        switch (e.getKeyCode()) {
         case KeyEvent.VK_BACK_SPACE:
-            synchronized (syncCursor)
-            {
-                if (cursor > 0)
-                {
+            synchronized (syncCursor) {
+                if (cursor > 0) {
                     text.delete(cursor-1, cursor);
                     setCursor(cursor-1);
                 }
@@ -280,10 +267,8 @@ public abstract class GUIText extends ActivatableGUIElement implements KeyListen
             return true;
 
         case KeyEvent.VK_DELETE:
-            synchronized (syncCursor)
-            {
-                if (cursor < text.length())
-                {
+            synchronized (syncCursor) {
+                if (cursor < text.length()) {
                     text.delete(cursor, cursor+1);
                     setChanged();
                 }
@@ -292,10 +277,8 @@ public abstract class GUIText extends ActivatableGUIElement implements KeyListen
 
         case KeyEvent.VK_KP_LEFT:
         case KeyEvent.VK_LEFT:
-            synchronized (syncCursor)
-            {
-                if (cursor > 0)
-                {
+            synchronized (syncCursor) {
+                if (cursor > 0) {
                     setCursor(cursor-1);
                 }
             }
@@ -303,10 +286,8 @@ public abstract class GUIText extends ActivatableGUIElement implements KeyListen
 
         case KeyEvent.VK_KP_RIGHT:
         case KeyEvent.VK_RIGHT:
-            synchronized (syncCursor)
-            {
-                if (cursor < text.length())
-                {
+            synchronized (syncCursor) {
+                if (cursor < text.length()) {
                     setCursor(cursor+1);
                 }
             }
@@ -314,8 +295,7 @@ public abstract class GUIText extends ActivatableGUIElement implements KeyListen
 
         case KeyEvent.VK_KP_UP:
         case KeyEvent.VK_UP:
-            if (!ignoreUpDown)
-            {
+            if (!ignoreUpDown) {
                 historyPrev();
                 return true;
             }
@@ -323,28 +303,23 @@ public abstract class GUIText extends ActivatableGUIElement implements KeyListen
 
         case KeyEvent.VK_KP_DOWN:
         case KeyEvent.VK_DOWN:
-            if (!ignoreUpDown)
-            {
+            if (!ignoreUpDown) {
                 historyNext();
                 return true;
             }
             break;
 
         case KeyEvent.VK_HOME:
-            synchronized (syncCursor)
-            {
-                if (cursor > 0)
-                {
+            synchronized (syncCursor) {
+                if (cursor > 0) {
                     setCursor(0);
                 }
             }
             return true;
 
         case KeyEvent.VK_END:
-            synchronized (syncCursor)
-            {
-                if (cursor < text.length())
-                {
+            synchronized (syncCursor) {
+                if (cursor < text.length()) {
                     setCursor(text.length());
                 }
             }
@@ -357,11 +332,9 @@ public abstract class GUIText extends ActivatableGUIElement implements KeyListen
     /**
      * Activate the previous command from the command history.
      */
-    private void historyPrev()
-    {
+    private void historyPrev() {
         final String commandUp = commandHistory.up();
-        if (commandUp != null)
-        {
+        if (commandUp != null) {
             setText(commandUp);
         }
     }
@@ -369,33 +342,32 @@ public abstract class GUIText extends ActivatableGUIElement implements KeyListen
     /**
      * Activate the next command from the command history.
      */
-    private void historyNext()
-    {
+    private void historyNext() {
         final String commandDown = commandHistory.down();
         setText(commandDown != null ? commandDown : "");
     }
 
-    /** {@inheritDoc} */
+    /**
+     * {@inheritDoc}
+     */
     @Override
-    public boolean keyReleased(@NotNull final KeyEvent e)
-    {
+    public boolean keyReleased(@NotNull final KeyEvent e) {
         return false;
     }
 
-    /** {@inheritDoc} */
+    /**
+     * {@inheritDoc}
+     */
     @Override
-    public boolean keyTyped(@NotNull final KeyEvent e)
-    {
+    public boolean keyTyped(@NotNull final KeyEvent e) {
         final char ch = e.getKeyChar();
-        switch (ch)
-        {
+        switch (ch) {
         case '\r':
         case '\n':
             final String command = text.toString();
             commandCallback.updatePlayerName(command);
             execute(command);
-            if (!hideInput)
-            {
+            if (!hideInput) {
                 commandHistory.addCommand(command);
             }
             setActive(false);
@@ -414,8 +386,7 @@ public abstract class GUIText extends ActivatableGUIElement implements KeyListen
             return true;
 
         default:
-            if (ch != KeyEvent.CHAR_UNDEFINED && ch != (char)127 && ch >= ' ')
-            {
+            if (ch != KeyEvent.CHAR_UNDEFINED && ch != (char)127 && ch >= ' ') {
                 insertChar(ch);
                 return true;
             }
@@ -429,10 +400,8 @@ public abstract class GUIText extends ActivatableGUIElement implements KeyListen
      * Inserts a character at the cursort position.
      * @param ch the character
      */
-    private void insertChar(final char ch)
-    {
-        synchronized (syncCursor)
-        {
+    private void insertChar(final char ch) {
+        synchronized (syncCursor) {
             text.insert(cursor, ch);
             setCursor(cursor+1);
         }
@@ -442,10 +411,8 @@ public abstract class GUIText extends ActivatableGUIElement implements KeyListen
      * Inserts a string at the cursort position.
      * @param str the string
      */
-    private void insertString(@NotNull final String str)
-    {
-        synchronized (syncCursor)
-        {
+    private void insertString(@NotNull final String str) {
+        synchronized (syncCursor) {
             text.insert(cursor, str);
             setCursor(cursor+str.length());
         }
@@ -453,20 +420,16 @@ public abstract class GUIText extends ActivatableGUIElement implements KeyListen
 
     /**
      * Will be called to execute the entered command.
-     *
      * @param command The entered command.
      */
     protected abstract void execute(@NotNull final String command);
 
     /**
      * Enable or disable hidden text.
-     *
      * @param hideInput If set, hide input; else show input.
      */
-    public void setHideInput(final boolean hideInput)
-    {
-        if (this.hideInput != hideInput)
-        {
+    public void setHideInput(final boolean hideInput) {
+        if (this.hideInput != hideInput) {
             this.hideInput = hideInput;
             setChanged();
         }
@@ -474,46 +437,33 @@ public abstract class GUIText extends ActivatableGUIElement implements KeyListen
 
     /**
      * Set the cursor position. Make sure the cursor position is visible.
-     *
      * @param cursor The new cursor position.
      */
-    private void setCursor(final int cursor)
-    {
-        synchronized (syncCursor)
-        {
-            if (this.cursor < cursor)
-            {
+    private void setCursor(final int cursor) {
+        synchronized (syncCursor) {
+            if (this.cursor < cursor) {
                 // cursor moved right
 
-                for (;;)
-                {
+                for (; ;) {
                     final String tmp = getDisplayText();
                     final String tmpCursor = tmp.substring(0, cursor-offset+1);
                     final RectangularShape rectCursor = font.getStringBounds(tmpCursor, fontRenderContext);
                     final int cursorX = (int)(rectCursor.getWidth()+0.5);
-                    if (cursorX < getWidth())
-                    {
+                    if (cursorX < getWidth()) {
                         break;
                     }
 
-                    if (offset+SCROLL_CHARS <= cursor)
-                    {
+                    if (offset+SCROLL_CHARS <= cursor) {
                         offset += SCROLL_CHARS;
-                    }
-                    else
-                    {
+                    } else {
                         offset = cursor;
                     }
                 }
-            }
-            else if (this.cursor > cursor)
-            {
+            } else if (this.cursor > cursor) {
                 // cursor moved left
 
-                while (cursor < offset)
-                {
-                    if (offset <= SCROLL_CHARS)
-                    {
+                while (cursor < offset) {
+                    if (offset <= SCROLL_CHARS) {
                         offset = 0;
                         break;
                     }
@@ -530,35 +480,27 @@ public abstract class GUIText extends ActivatableGUIElement implements KeyListen
     /**
      * Perform a "paste" operation from the system clipboard.
      */
-    private void paste()
-    {
+    private void paste() {
         Transferable content = null;
-        if (selection != null)
-        {
+        if (selection != null) {
             content = selection.getContents(this);
         }
-        if (content == null)
-        {
+        if (content == null) {
             content = clipboard.getContents(this);
         }
-        if (content == null)
-        {
+        if (content == null) {
             return;
         }
 
         final String str;
-        try
-        {
+        try {
             str = (String)content.getTransferData(DataFlavor.stringFlavor);
-        }
-        catch (final UnsupportedFlavorException ex)
-        {
+        } catch (final UnsupportedFlavorException ex) {
             return;
-        }
-        catch (final IOException ex)
-        {
+        } catch (final IOException ex) {
             return;
         }
         insertString(str);
     }
+
 }

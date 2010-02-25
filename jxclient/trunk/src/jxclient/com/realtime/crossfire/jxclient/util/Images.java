@@ -33,32 +33,28 @@ import org.jetbrains.annotations.NotNull;
  * Utility class for manipulating images.
  * @author Andreas Kirschbaum
  */
-public class Images
-{
+public class Images {
+
     /**
      * Private constructor to prevent instantiation.
      */
-    private Images()
-    {
+    private Images() {
     }
 
     /**
-     * Saves an {@link ImageIcon} to a file. I/O errors are reported to
-     * {@link System#err} but otherwise ignored.
+     * Saves an {@link ImageIcon} to a file. I/O errors are reported to {@link
+     * System#err} but otherwise ignored.
      * @param outputFile the file to save to
      * @param imageIcon the image to save
      */
-    public static void saveImageIcon(@NotNull final File outputFile, @NotNull final Icon imageIcon)
-    {
+    public static void saveImageIcon(@NotNull final File outputFile, @NotNull final Icon imageIcon) {
         final BufferedImage bufferedImage = new BufferedImage(imageIcon.getIconWidth(), imageIcon.getIconHeight(), BufferedImage.TYPE_INT_ARGB);
         imageIcon.paintIcon(null, bufferedImage.getGraphics(), 0, 0);
-        try
-        {
+        try {
             ImageIO.write(bufferedImage, "png", outputFile);
-        }
-        catch (final IOException ex)
-        {
+        } catch (final IOException ex) {
             System.err.println("Cannot write cache file "+outputFile+": "+ex.getMessage());
         }
     }
+
 }

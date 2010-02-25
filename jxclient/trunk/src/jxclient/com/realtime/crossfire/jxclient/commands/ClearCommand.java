@@ -30,8 +30,8 @@ import org.jetbrains.annotations.NotNull;
  * Implements the command "clear". It clears the active message window.
  * @author Andreas Kirschbaum
  */
-public class ClearCommand extends AbstractCommand
-{
+public class ClearCommand extends AbstractCommand {
+
     /**
      * The {@link JXCWindowRenderer} to affect.
      */
@@ -43,36 +43,36 @@ public class ClearCommand extends AbstractCommand
      * @param windowRenderer the window renderer to affect
      * @param crossfireServerConnection the connection instance
      */
-    public ClearCommand(@NotNull final JXCWindowRenderer windowRenderer, @NotNull final CrossfireServerConnection crossfireServerConnection)
-    {
+    public ClearCommand(@NotNull final JXCWindowRenderer windowRenderer, @NotNull final CrossfireServerConnection crossfireServerConnection) {
         super(crossfireServerConnection);
         this.windowRenderer = windowRenderer;
     }
 
-    /** {@inheritDoc} */
+    /**
+     * {@inheritDoc}
+     */
     @Override
-    public boolean allArguments()
-    {
+    public boolean allArguments() {
         return false;
     }
 
-    /** {@inheritDoc} */
+    /**
+     * {@inheritDoc}
+     */
     @Override
-    public void execute(@NotNull final String args)
-    {
-        if (args.length() != 0)
-        {
+    public void execute(@NotNull final String args) {
+        if (args.length() != 0) {
             drawInfoError("The clear command does not take arguments.");
             return;
         }
 
         final Buffer buffer = windowRenderer.getActiveMessageBuffer();
-        if (buffer == null)
-        {
+        if (buffer == null) {
             drawInfoError("No active text window.");
             return;
         }
 
         buffer.clear();
     }
+
 }

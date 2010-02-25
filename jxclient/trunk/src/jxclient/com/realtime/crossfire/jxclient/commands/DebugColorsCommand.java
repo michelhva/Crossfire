@@ -26,41 +26,41 @@ import com.realtime.crossfire.jxclient.server.crossfire.CrossfireServerConnectio
 import org.jetbrains.annotations.NotNull;
 
 /**
- * Implements the "debug_colors" command. It prints text to the log window
- * using different colors.
+ * Implements the "debug_colors" command. It prints text to the log window using
+ * different colors.
  * @author Andreas Kirschbaum
  */
-public class DebugColorsCommand extends AbstractCommand
-{
+public class DebugColorsCommand extends AbstractCommand {
+
     /**
      * Creates a new instance.
      * @param crossfireServerConnection the connection instance
      */
-    public DebugColorsCommand(@NotNull final CrossfireServerConnection crossfireServerConnection)
-    {
+    public DebugColorsCommand(@NotNull final CrossfireServerConnection crossfireServerConnection) {
         super(crossfireServerConnection);
     }
 
-    /** {@inheritDoc} */
+    /**
+     * {@inheritDoc}
+     */
     @Override
-    public boolean allArguments()
-    {
+    public boolean allArguments() {
         return false;
     }
 
-    /** {@inheritDoc} */
+    /**
+     * {@inheritDoc}
+     */
     @Override
-    public void execute(@NotNull final String args)
-    {
-        if (args.length() != 0)
-        {
+    public void execute(@NotNull final String args) {
+        if (args.length() != 0) {
             drawInfoError("The debug_colors commands does not take arguments.");
             return;
         }
 
-        for (int color = 0; color < 16; color++)
-        {
+        for (int color = 0; color < 16; color++) {
             drawInfo("This line is color #"+color+" ("+MessageBufferUpdater.getColorName(color)+").", color);
         }
     }
+
 }

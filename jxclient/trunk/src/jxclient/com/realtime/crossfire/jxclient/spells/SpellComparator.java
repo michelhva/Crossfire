@@ -30,27 +30,27 @@ import org.jetbrains.annotations.NotNull;
  * name.
  * @author Andreas Kirschbaum
  */
-public class SpellComparator implements Comparator<Spell>, Serializable
-{
+public class SpellComparator implements Comparator<Spell>, Serializable {
+
     /**
      * The serial version UID.
      */
     private static final long serialVersionUID = 1;
 
-    /** {@inheritDoc} */
+    /**
+     * {@inheritDoc}
+     */
     @Override
-    public int compare(@NotNull final Spell o1, @NotNull final Spell o2)
-    {
+    public int compare(@NotNull final Spell o1, @NotNull final Spell o2) {
         final int path1 = o1.getPath();
         final int path2 = o2.getPath();
-        if (path1 < path2)
-        {
+        if (path1 < path2) {
             return -1;
         }
-        if (path1 > path2)
-        {
+        if (path1 > path2) {
             return +1;
         }
         return String.CASE_INSENSITIVE_ORDER.compare(o1.getName(), o2.getName());
     }
+
 }

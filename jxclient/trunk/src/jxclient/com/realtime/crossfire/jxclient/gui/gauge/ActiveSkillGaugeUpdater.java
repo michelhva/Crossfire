@@ -28,11 +28,10 @@ import org.jetbrains.annotations.NotNull;
 
 /**
  * A {@link GaugeUpdater} which monitors a stat value.
- *
  * @author Andreas Kirschbaum
  */
-public class ActiveSkillGaugeUpdater extends GaugeUpdater
-{
+public class ActiveSkillGaugeUpdater extends GaugeUpdater {
+
     /**
      * The skill name to monitor.
      */
@@ -46,90 +45,78 @@ public class ActiveSkillGaugeUpdater extends GaugeUpdater
     private final Stats stats;
 
     /**
-     * The {@link StatsListener} registered to be notified about stat
-     * changes.
+     * The {@link StatsListener} registered to be notified about stat changes.
      */
     @NotNull
-    private final StatsListener statsListener = new StatsListener()
-    {
+    private final StatsListener statsListener = new StatsListener() {
         /** {@inheritDoc} */
         @Override
-        public void reset()
-        {
+        public void reset() {
             // ignore
         }
 
         /** {@inheritDoc} */
         @Override
-        public void statChanged(final int statnr, final int value)
-        {
+        public void statChanged(final int statnr, final int value) {
             // ignore
         }
 
         /** {@inheritDoc} */
         @Override
-        public void simpleWeaponSpeedChanged(final boolean simpleWeaponSpeed)
-        {
+        public void simpleWeaponSpeedChanged(final boolean simpleWeaponSpeed) {
             // ignore
         }
 
         /** {@inheritDoc} */
         @Override
-        public void titleChanged(@NotNull final String title)
-        {
+        public void titleChanged(@NotNull final String title) {
             // ignore
         }
 
         /** {@inheritDoc} */
         @Override
-        public void rangeChanged(@NotNull final String range)
-        {
+        public void rangeChanged(@NotNull final String range) {
             // ignore
         }
 
         /** {@inheritDoc} */
         @Override
-        public void activeSkillChanged(@NotNull final String activeSkill)
-        {
+        public void activeSkillChanged(@NotNull final String activeSkill) {
             setValues(activeSkill.equals(skill) ? 1 : 0, 0, 1);
         }
 
         /** {@inheritDoc} */
         @Override
-        public void experienceChanged(final long exp)
-        {
+        public void experienceChanged(final long exp) {
             // ignore
         }
 
         /** {@inheritDoc} */
         @Override
-        public void experienceNextLevelChanged(final long expNextLevel)
-        {
+        public void experienceNextLevelChanged(final long expNextLevel) {
             // ignore
         }
     };
 
     /**
      * Create a new instance.
-     *
      * @param experienceTable The experience table to query.
-     *
      * @param skill The skill name to monitor.
-     *
      * @param stats the instance to watch
      */
-    public ActiveSkillGaugeUpdater(@NotNull final ExperienceTable experienceTable, @NotNull final String skill, @NotNull final Stats stats)
-    {
+    public ActiveSkillGaugeUpdater(@NotNull final ExperienceTable experienceTable, @NotNull final String skill, @NotNull final Stats stats) {
         super(experienceTable);
         this.skill = skill;
         this.stats = stats;
         this.stats.addCrossfireStatsListener(statsListener);
     }
 
-    /** {@inheritDoc} */
+    /**
+     * {@inheritDoc}
+     */
     @Override
-    public void dispose()
-    {
+    public void dispose() {
         stats.removeCrossfireStatsListener(statsListener);
     }
+
 }

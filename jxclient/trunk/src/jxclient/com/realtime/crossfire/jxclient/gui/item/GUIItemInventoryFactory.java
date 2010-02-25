@@ -19,7 +19,6 @@
  * Copyright (C) 2006-2010 Andreas Kirschbaum.
  */
 
-
 package com.realtime.crossfire.jxclient.gui.item;
 
 import com.realtime.crossfire.jxclient.faces.FacesManager;
@@ -35,8 +34,8 @@ import org.jetbrains.annotations.NotNull;
  * A factory for creating {@link GUIItemInventory} instances.
  * @author Andreas Kirschbaum
  */
-public class GUIItemInventoryFactory
-{
+public class GUIItemInventoryFactory {
+
     /**
      * The tooltip manager to update.
      */
@@ -72,8 +71,7 @@ public class GUIItemInventoryFactory
      * @param tooltipManager the tooltip manager to update
      * @param elementListener the element listener to notify
      */
-    public GUIItemInventoryFactory(@NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final CommandQueue commandQueue, @NotNull final String name, @NotNull final ItemPainter itemPainter, @NotNull final CrossfireServerConnection crossfireServerConnection, @NotNull final FacesManager facesManager, @NotNull final ItemsManager itemsManager)
-    {
+    public GUIItemInventoryFactory(@NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final CommandQueue commandQueue, @NotNull final String name, @NotNull final ItemPainter itemPainter, @NotNull final CrossfireServerConnection crossfireServerConnection, @NotNull final FacesManager facesManager, @NotNull final ItemsManager itemsManager) {
         this.tooltipManager = tooltipManager;
         this.elementListener = elementListener;
         this.commandQueue = commandQueue;
@@ -90,8 +88,7 @@ public class GUIItemInventoryFactory
      * @return the new instance
      */
     @NotNull
-    public GUIElement newItemInventory(final int index)
-    {
+    public GUIElement newItemInventory(final int index) {
         return new GUIItemInventory(tooltipManager, elementListener, commandQueue, name+index, 0, 0, 1, 1, itemPainter, index, crossfireServerConnection, facesManager, itemsManager);
     }
 
@@ -101,8 +98,8 @@ public class GUIItemInventoryFactory
      * @return the new instance
      */
     @NotNull
-    public GUIItemInventory newTemplateItemInventory(final int cellHeight)
-    {
+    public GUIItemInventory newTemplateItemInventory(final int cellHeight) {
         return new GUIItemInventory(tooltipManager, elementListener, commandQueue, name+"_template", 0, 0, cellHeight, cellHeight, itemPainter, -1, crossfireServerConnection, facesManager, itemsManager);
     }
+
 }

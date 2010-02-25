@@ -29,8 +29,8 @@ import org.jetbrains.annotations.NotNull;
  * GUIElement}.
  * @author Andreas Kirschbaum
  */
-public class ToggleCommand implements GUICommand
-{
+public class ToggleCommand implements GUICommand {
+
     /**
      * The gui element to toggle.
      */
@@ -41,22 +41,24 @@ public class ToggleCommand implements GUICommand
      * Creates a new instance.
      * @param target the gui element to toggle
      */
-    public ToggleCommand(@NotNull final GUIElement target)
-    {
+    public ToggleCommand(@NotNull final GUIElement target) {
         this.target = target;
     }
 
-    /** {@inheritDoc} */
+    /**
+     * {@inheritDoc}
+     */
     @Override
-    public boolean canExecute()
-    {
+    public boolean canExecute() {
         return true;
     }
 
-    /** {@inheritDoc} */
+    /**
+     * {@inheritDoc}
+     */
     @Override
-    public void execute()
-    {
+    public void execute() {
         target.setElementVisible(!target.isElementVisible());
     }
+
 }

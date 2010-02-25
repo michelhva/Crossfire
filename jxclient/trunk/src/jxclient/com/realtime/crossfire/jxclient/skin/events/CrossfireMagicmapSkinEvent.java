@@ -27,12 +27,12 @@ import com.realtime.crossfire.jxclient.server.crossfire.CrossfireServerConnectio
 import org.jetbrains.annotations.NotNull;
 
 /**
- * A {@link SkinEvent} that executes a {@link CommandList} whenever a
- * magicmap protocol command is received.
+ * A {@link SkinEvent} that executes a {@link CommandList} whenever a magicmap
+ * protocol command is received.
  * @author Andreas Kirschbaum
  */
-public class CrossfireMagicmapSkinEvent implements SkinEvent
-{
+public class CrossfireMagicmapSkinEvent implements SkinEvent {
+
     /**
      * The {@link CommandList} to execute.
      */
@@ -49,12 +49,10 @@ public class CrossfireMagicmapSkinEvent implements SkinEvent
      * The {@link CrossfireMagicmapListener} attached to {@link #server}.
      */
     @NotNull
-    private final CrossfireMagicmapListener crossfireMagicmapListener = new CrossfireMagicmapListener()
-    {
+    private final CrossfireMagicmapListener crossfireMagicmapListener = new CrossfireMagicmapListener() {
         /** {@inheritDoc} */
         @Override
-        public void commandMagicmapReceived(final int width, final int height, final int px, final int py, @NotNull final byte[] data, final int pos)
-        {
+        public void commandMagicmapReceived(final int width, final int height, final int px, final int py, @NotNull final byte[] data, final int pos) {
             commandList.execute();
         }
     };
@@ -64,17 +62,18 @@ public class CrossfireMagicmapSkinEvent implements SkinEvent
      * @param commandList the command list to execute
      * @param server the connection to attach to
      */
-    public CrossfireMagicmapSkinEvent(@NotNull final CommandList commandList, @NotNull final CrossfireServerConnection server)
-    {
+    public CrossfireMagicmapSkinEvent(@NotNull final CommandList commandList, @NotNull final CrossfireServerConnection server) {
         this.commandList = commandList;
         this.server = server;
         server.addCrossfireMagicmapListener(crossfireMagicmapListener);
     }
 
-    /** {@inheritDoc} */
+    /**
+     * {@inheritDoc}
+     */
     @Override
-    public void dispose()
-    {
+    public void dispose() {
         server.removeCrossfireMagicmapListener(crossfireMagicmapListener);
     }
+
 }

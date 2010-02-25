@@ -19,7 +19,6 @@
  * Copyright (C) 2006-2010 Andreas Kirschbaum.
  */
 
-
 package com.realtime.crossfire.jxclient.gui.item;
 
 import com.realtime.crossfire.jxclient.faces.FacesManager;
@@ -41,8 +40,8 @@ import org.jetbrains.annotations.Nullable;
  * A {@link GUIItem} for displaying inventory objects.
  * @author Andreas Kirschbaum
  */
-public class GUIItemInventory extends GUIItemItem
-{
+public class GUIItemInventory extends GUIItemItem {
+
     /**
      * The serial version UID.
      */
@@ -98,22 +97,18 @@ public class GUIItemInventory extends GUIItemItem
      * from this inventory slot.
      */
     @NotNull
-    private final LocationListener inventoryLocationListener = new LocationListener()
-    {
+    private final LocationListener inventoryLocationListener = new LocationListener() {
         /** {@inheritDoc} */
         @Override
-        public void locationModified(final int index, @Nullable final CfItem item)
-        {
-            synchronized (sync)
-            {
+        public void locationModified(final int index, @Nullable final CfItem item) {
+            synchronized (sync) {
                 assert index == GUIItemInventory.this.index;
             }
             setItem(item);
         }
     };
 
-    public GUIItemInventory(@NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final CommandQueue commandQueue, final String name, final int x, final int y, final int w, final int h, @NotNull final ItemPainter itemPainter, final int index, @NotNull final CrossfireServerConnection crossfireServerConnection, @NotNull final FacesManager facesManager, @NotNull final ItemsManager itemsManager)
-    {
+    public GUIItemInventory(@NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final CommandQueue commandQueue, final String name, final int x, final int y, final int w, final int h, @NotNull final ItemPainter itemPainter, final int index, @NotNull final CrossfireServerConnection crossfireServerConnection, @NotNull final FacesManager facesManager, @NotNull final ItemsManager itemsManager) {
         super(tooltipManager, elementListener, name, x, y, w, h, crossfireServerConnection, itemPainter, facesManager);
         this.commandQueue = commandQueue;
         this.crossfireServerConnection = crossfireServerConnection;
@@ -123,51 +118,43 @@ public class GUIItemInventory extends GUIItemItem
         setIndex(index);
     }
 
-    /** {@inheritDoc} */
+    /**
+     * {@inheritDoc}
+     */
     @Override
-    public void dispose()
-    {
+    public void dispose() {
         super.dispose();
         setIndex(-1);
     }
 
-    /** {@inheritDoc} */
+    /**
+     * {@inheritDoc}
+     */
     @Override
-    public boolean canScroll(final int distance)
-    {
-        if (distance < 0)
-        {
-            synchronized (sync)
-            {
+    public boolean canScroll(final int distance) {
+        if (distance < 0) {
+            synchronized (sync) {
                 return index >= -distance;
             }
-        }
-        else if (distance > 0)
-        {
+        } else if (distance > 0) {
             final CfItem player = itemsManager.getPlayer();
-            if (player == null)
-            {
+            if (player == null) {
                 return false;
             }
 
             final Collection<CfItem> list = itemsManager.getItems(player.getTag());
-            synchronized (sync)
-            {
+            synchronized (sync) {
                 return index+distance < list.size();
             }
-        }
-        else
-        {
+        } else {
             return false;
         }
     }
 
     /* {@inheritDoc} */
     @Override
-    public void scroll(final int distance)
-    {
-        synchronized (sync)
-        {
+    public void scroll(final int distance) {
+        synchronized (sync) {
             setIndex(index+distance);
         }
         setChanged();
@@ -175,40 +162,31 @@ public class GUIItemInventory extends GUIItemItem
 
     /* {@inheritDoc} */
     @Override
-    public void resetScroll()
-    {
+    public void resetScroll() {
         setIndex(defaultIndex);
     }
 
     /* {@inheritDoc} */
     @Override
-    public void button1Clicked(final int modifiers)
-    {
+    public void button1Clicked(final int modifiers) {
         final CfItem item = getItem();
-        if (item == null)
-        {
+        if (item == null) {
             return;
         }
 
-        if ((modifiers&InputEvent.SHIFT_DOWN_MASK) == 0)
-        {
+        if ((modifiers&InputEvent.SHIFT_DOWN_MASK) == 0) {
             crossfireServerConnection.sendExamine(item.getTag());
-        }
-        else
-        {
+        } else {
             crossfireServerConnection.sendLock(!item.isLocked(), item.getTag());
         }
     }
 
     /* {@inheritDoc} */
     @Override
-    public void button2Clicked(final int modifiers)
-    {
+    public void button2Clicked(final int modifiers) {
         final CfItem item = getItem();
-        if (item != null)
-        {
-            if ((modifiers&InputEvent.SHIFT_DOWN_MASK) != 0)
-            {
+        if (item != null) {
+            if ((modifiers&InputEvent.SHIFT_DOWN_MASK) != 0) {
                 crossfireServerConnection.sendMark(item.getTag());
                 return;
             }
@@ -217,12 +195,12 @@ public class GUIItemInventory extends GUIItemItem
         super.button2Clicked(modifiers);
     }
 
-    /** {@inheritDoc} */
+    /**
+     * {@inheritDoc}
+     */
     @Override
-    public void setSelected(final boolean selected)
-    {
-        if (this.selected == selected)
-        {
+    public void setSelected(final boolean selected) {
+        if (this.selected == selected) {
             return;
         }
 
@@ -230,25 +208,23 @@ public class GUIItemInventory extends GUIItemItem
         setChanged();
     }
 
-    /** {@inheritDoc} */
+    /**
+     * {@inheritDoc}
+     */
     @Override
-    protected boolean isSelected()
-    {
+    protected boolean isSelected() {
         return selected || isActive();
     }
 
     /* {@inheritDoc} */
     @Override
-    public void button3Clicked(final int modifiers)
-    {
+    public void button3Clicked(final int modifiers) {
         final CfItem item = getItem();
-        if (item == null)
-        {
+        if (item == null) {
             return;
         }
 
-        if (item.isLocked())
-        {
+        if (item.isLocked()) {
             crossfireServerConnection.drawInfo("This item is locked. To drop it, first unlock by SHIFT+leftclicking on it.", 3);
             return;
         }
@@ -260,10 +236,8 @@ public class GUIItemInventory extends GUIItemItem
      * Returns the slot index.
      * @return the slow tindex
      */
-    public int getIndex()
-    {
-        synchronized (sync)
-        {
+    public int getIndex() {
+        synchronized (sync) {
             return index;
         }
     }
@@ -272,41 +246,30 @@ public class GUIItemInventory extends GUIItemItem
      * Set the inventory slot to display.
      * @param index the inventory slot
      */
-    private void setIndex(final int index)
-    {
-        synchronized (sync)
-        {
-            if (this.index == index)
-            {
+    private void setIndex(final int index) {
+        synchronized (sync) {
+            if (this.index == index) {
                 return;
             }
 
-            if (this.index >= 0)
-            {
+            if (this.index >= 0) {
                 itemsManager.getInventoryManager().removeLocationListener(this.index, inventoryLocationListener);
             }
             this.index = index;
-            if (this.index >= 0)
-            {
+            if (this.index >= 0) {
                 itemsManager.getInventoryManager().addLocationListener(this.index, inventoryLocationListener);
             }
         }
 
         final CfItem player = itemsManager.getPlayer();
-        if (player != null)
-        {
+        if (player != null) {
             final List<CfItem> list = itemsManager.getItems(player.getTag());
-            if (0 <= this.index && this.index < list.size())
-            {
+            if (0 <= this.index && this.index < list.size()) {
                 setItem(list.get(this.index));
-            }
-            else
-            {
+            } else {
                 setItem(null);
             }
-        }
-        else
-        {
+        } else {
             setItem(null);
         }
     }
@@ -316,12 +279,9 @@ public class GUIItemInventory extends GUIItemItem
      * updates.
      * @param index the inventory slot
      */
-    public void setIndexNoListeners(final int index)
-    {
-        synchronized (sync)
-        {
-            if (this.index == index)
-            {
+    public void setIndexNoListeners(final int index) {
+        synchronized (sync) {
+            if (this.index == index) {
                 return;
             }
 
@@ -329,29 +289,25 @@ public class GUIItemInventory extends GUIItemItem
         }
 
         final CfItem player = itemsManager.getPlayer();
-        if (player != null)
-        {
+        if (player != null) {
             final List<CfItem> list = itemsManager.getItems(player.getTag());
-            if (0 <= this.index && this.index < list.size())
-            {
+            if (0 <= this.index && this.index < list.size()) {
                 setItemNoListeners(list.get(this.index));
-            }
-            else
-            {
+            } else {
                 setItemNoListeners(null);
             }
-        }
-        else
-        {
+        } else {
             setItemNoListeners(null);
         }
     }
 
-    /** {@inheritDoc} */
+    /**
+     * {@inheritDoc}
+     */
     @NotNull
     @Override
-    protected Image getFace(@NotNull final CfItem item)
-    {
+    protected Image getFace(@NotNull final CfItem item) {
         return facesManager.getOriginalImageIcon(item.getFace().getFaceNum()).getImage();
     }
+
 }

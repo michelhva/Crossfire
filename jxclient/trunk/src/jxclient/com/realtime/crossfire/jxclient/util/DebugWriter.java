@@ -32,8 +32,8 @@ import org.jetbrains.annotations.NotNull;
  * Writer debug information to a log file.
  * @author Andreas Kirschbaum
  */
-public class DebugWriter
-{
+public class DebugWriter {
+
     /**
      * The {@link Writer} to write to.
      */
@@ -56,8 +56,7 @@ public class DebugWriter
      * Creates a new instance.
      * @param writer the writer to write to
      */
-    public DebugWriter(@NotNull final Writer writer)
-    {
+    public DebugWriter(@NotNull final Writer writer) {
         this.writer = writer;
     }
 
@@ -65,19 +64,14 @@ public class DebugWriter
      * Writes a message to the debug protocol.
      * @param str the message to write
      */
-    public void debugProtocolWrite(@NotNull final CharSequence str)
-    {
-        synchronized (sync)
-        {
-            try
-            {
+    public void debugProtocolWrite(@NotNull final CharSequence str) {
+        synchronized (sync) {
+            try {
                 writer.append(simpleDateFormat.format(new Date()));
                 writer.append(str);
                 writer.append("\n");
                 writer.flush();
-            }
-            catch (final IOException ex)
-            {
+            } catch (final IOException ex) {
                 System.err.println("Cannot write debug protocol: "+ex.getMessage());
                 System.exit(1);
                 throw new AssertionError();
@@ -90,30 +84,25 @@ public class DebugWriter
      * @param str the message to write
      * @param throwable the throwable to log
      */
-    public void debugProtocolWrite(@NotNull final CharSequence str, @NotNull final Throwable throwable)
-    {
-        synchronized (sync)
-        {
-            try
-            {
+    public void debugProtocolWrite(@NotNull final CharSequence str, @NotNull final Throwable throwable) {
+        synchronized (sync) {
+            try {
                 writer.append(simpleDateFormat.format(new Date()));
                 writer.append(str);
                 writer.append("\n");
                 writer.append(throwable.getClass().getName());
                 writer.append("\n");
-                for (final Object stack : throwable.getStackTrace())
-                {
+                for (final Object stack : throwable.getStackTrace()) {
                     writer.append(stack.toString());
                     writer.append("\n");
                 }
                 writer.flush();
-            }
-            catch (final IOException ex)
-            {
+            } catch (final IOException ex) {
                 System.err.println("Cannot write debug protocol: "+ex.getMessage());
                 System.exit(1);
                 throw new AssertionError();
             }
         }
     }
+
 }

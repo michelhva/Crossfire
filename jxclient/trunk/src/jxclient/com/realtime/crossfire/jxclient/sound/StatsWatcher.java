@@ -34,11 +34,10 @@ import org.jetbrains.annotations.NotNull;
 
 /**
  * Monitors stat changes and generates appropriate sound effects.
- *
  * @author Andreas Kirschbaum
  */
-public class StatsWatcher
-{
+public class StatsWatcher {
+
     /**
      * Duration for which to ignore level changes after login.
      */
@@ -76,61 +75,52 @@ public class StatsWatcher
      * The crossfire stats listener.
      */
     @NotNull
-    private final StatsListener statsListener = new StatsListener()
-    {
+    private final StatsListener statsListener = new StatsListener() {
         /** {@inheritDoc} */
         @Override
-        public void reset()
-        {
+        public void reset() {
             ignoreLevelChange = System.currentTimeMillis()+DELAY;
         }
 
         /** {@inheritDoc} */
         @Override
-        public void statChanged(final int statnr, final int value)
-        {
+        public void statChanged(final int statnr, final int value) {
             checkStats(statnr, value);
         }
 
         /** {@inheritDoc} */
         @Override
-        public void simpleWeaponSpeedChanged(final boolean simpleWeaponSpeed)
-        {
+        public void simpleWeaponSpeedChanged(final boolean simpleWeaponSpeed) {
             // ignore
         }
 
         /** {@inheritDoc} */
         @Override
-        public void titleChanged(@NotNull final String title)
-        {
+        public void titleChanged(@NotNull final String title) {
             // ignore
         }
 
         /** {@inheritDoc} */
         @Override
-        public void rangeChanged(@NotNull final String range)
-        {
+        public void rangeChanged(@NotNull final String range) {
             // ignore
         }
 
         /** {@inheritDoc} */
         @Override
-        public void activeSkillChanged(@NotNull final String activeSkill)
-        {
+        public void activeSkillChanged(@NotNull final String activeSkill) {
             // ignore
         }
 
         /** {@inheritDoc} */
         @Override
-        public void experienceChanged(final long exp)
-        {
+        public void experienceChanged(final long exp) {
             // ignore
         }
 
         /** {@inheritDoc} */
         @Override
-        public void experienceNextLevelChanged(final long expNextLevel)
-        {
+        public void experienceNextLevelChanged(final long expNextLevel) {
             // ignore
         }
     };
@@ -139,12 +129,10 @@ public class StatsWatcher
      * The gui state listener.
      */
     @NotNull
-    private final RendererGuiStateListener rendererGuiStateListener = new RendererGuiStateListener()
-    {
+    private final RendererGuiStateListener rendererGuiStateListener = new RendererGuiStateListener() {
         /** {@inheritDoc} */
         @Override
-        public void guiStateChanged(@NotNull final RendererGuiState rendererGuiState)
-        {
+        public void guiStateChanged(@NotNull final RendererGuiState rendererGuiState) {
             active = rendererGuiState == RendererGuiState.PLAYING;
             ignoreLevelChange = System.currentTimeMillis()+DELAY;
         }
@@ -154,26 +142,22 @@ public class StatsWatcher
      * The player listener.
      */
     @NotNull
-    private final PlayerListener playerListener = new PlayerListener()
-    {
+    private final PlayerListener playerListener = new PlayerListener() {
         /** {@inheritDoc} */
         @Override
-        public void playerReceived(@NotNull final CfPlayer player)
-        {
+        public void playerReceived(@NotNull final CfPlayer player) {
             ignoreLevelChange = System.currentTimeMillis()+DELAY;
         }
 
         /** {@inheritDoc} */
         @Override
-        public void playerAdded(@NotNull final CfPlayer player)
-        {
+        public void playerAdded(@NotNull final CfPlayer player) {
             // ignore
         }
 
         /** {@inheritDoc} */
         @Override
-        public void playerRemoved(@NotNull final CfPlayer player)
-        {
+        public void playerRemoved(@NotNull final CfPlayer player) {
             // ignore
         }
     };
@@ -185,8 +169,7 @@ public class StatsWatcher
      * @param itemsManager the instance to watch
      * @param soundManager the sound manager instance to watch
      */
-    public StatsWatcher(@NotNull final Stats stats, @NotNull final JXCWindowRenderer windowRenderer, @NotNull final ItemsManager itemsManager, @NotNull final SoundManager soundManager)
-    {
+    public StatsWatcher(@NotNull final Stats stats, @NotNull final JXCWindowRenderer windowRenderer, @NotNull final ItemsManager itemsManager, @NotNull final SoundManager soundManager) {
         this.soundManager = soundManager;
         poisoned = stats.getStat(CrossfireStatsListener.C_STAT_POISONED) != 0;
         level = stats.getStat(CrossfireStatsListener.CS_STAT_LEVEL);
@@ -201,31 +184,22 @@ public class StatsWatcher
      * @param statnr the changed stat number
      * @param value the new stat value
      */
-    private void checkStats(final int statnr, final int value)
-    {
-        if (statnr == CrossfireStatsListener.C_STAT_POISONED)
-        {
+    private void checkStats(final int statnr, final int value) {
+        if (statnr == CrossfireStatsListener.C_STAT_POISONED) {
             final boolean newPoisoned = value != 0;
-            if (poisoned != newPoisoned)
-            {
+            if (poisoned != newPoisoned) {
                 poisoned = newPoisoned;
-                if (active)
-                {
+                if (active) {
                     playClip(newPoisoned ? Sounds.POISON_ON : Sounds.POISON_OFF);
                 }
             }
-        }
-        else if (statnr == CrossfireStatsListener.CS_STAT_LEVEL)
-        {
+        } else if (statnr == CrossfireStatsListener.CS_STAT_LEVEL) {
             final int newLevel = value;
-            if (level != newLevel)
-            {
-                if (ignoreLevelChange != 0 && ignoreLevelChange <= System.currentTimeMillis())
-                {
+            if (level != newLevel) {
+                if (ignoreLevelChange != 0 && ignoreLevelChange <= System.currentTimeMillis()) {
                     ignoreLevelChange = 0;
                 }
-                if (ignoreLevelChange == 0 && level < newLevel && active)
-                {
+                if (ignoreLevelChange == 0 && level < newLevel && active) {
                     playClip(Sounds.LEVEL_UP);
                 }
                 level = newLevel;
@@ -235,14 +209,12 @@ public class StatsWatcher
 
     /**
      * Play a clip if sounds should be generated.
-     *
      * @param clip The sound clip to play.
      */
-    private void playClip(@NotNull final String clip)
-    {
-        if (active)
-        {
+    private void playClip(@NotNull final String clip) {
+        if (active) {
             soundManager.playClip(Sounds.CHARACTER, null, clip);
         }
     }
+
 }

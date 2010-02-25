@@ -35,8 +35,8 @@ import org.jetbrains.annotations.Nullable;
  * loading.
  * @author Andreas Kirschbaum
  */
-public class Dialogs implements Iterable<Gui>
-{
+public class Dialogs implements Iterable<Gui> {
+
     /**
      * The {@link GuiFactory} for creating new {@link Gui} instances.
      */
@@ -59,16 +59,14 @@ public class Dialogs implements Iterable<Gui>
      * Creates a new instance.
      * @param guiFactory the gui factory for creating gui instances
      */
-    public Dialogs(@NotNull final GuiFactory guiFactory)
-    {
+    public Dialogs(@NotNull final GuiFactory guiFactory) {
         this.guiFactory = guiFactory;
     }
 
     /**
      * Forgets about all dialogs.
      */
-    public void clear()
-    {
+    public void clear() {
         dialogs.clear();
         dialogsToLoad.clear();
     }
@@ -80,8 +78,7 @@ public class Dialogs implements Iterable<Gui>
      * @throws JXCSkinException if the dialog does not exist
      */
     @NotNull
-    public Gui lookup(@NotNull final String name) throws JXCSkinException
-    {
+    public Gui lookup(@NotNull final String name) throws JXCSkinException {
         return dialogs.lookup(name);
     }
 
@@ -91,21 +88,14 @@ public class Dialogs implements Iterable<Gui>
      * @return the new dialog instance
      */
     @NotNull
-    public Gui addDialog(@NotNull final String name)
-    {
-        try
-        {
+    public Gui addDialog(@NotNull final String name) {
+        try {
             return dialogs.lookup(name);
-        }
-        catch (final JXCSkinException ex)
-        {
+        } catch (final JXCSkinException ex) {
             final Gui gui = guiFactory.newGui();
-            try
-            {
+            try {
                 dialogs.insert(name, gui);
-            }
-            catch (final JXCSkinException ex2)
-            {
+            } catch (final JXCSkinException ex2) {
                 throw new AssertionError();
             }
             dialogsToLoad.add(name);
@@ -118,11 +108,9 @@ public class Dialogs implements Iterable<Gui>
      * @return a dialog pending loading or <code>null</code>
      */
     @Nullable
-    public String getDialogToLoad()
-    {
+    public String getDialogToLoad() {
         final Iterator<String> it = dialogsToLoad.iterator();
-        if (!it.hasNext())
-        {
+        if (!it.hasNext()) {
             return null;
         }
 
@@ -131,11 +119,12 @@ public class Dialogs implements Iterable<Gui>
         return result;
     }
 
-    /** {@inheritDoc} */
+    /**
+     * {@inheritDoc}
+     */
     @NotNull
     @Override
-    public Iterator<Gui> iterator()
-    {
+    public Iterator<Gui> iterator() {
         return dialogs.iterator();
     }
 
@@ -143,16 +132,14 @@ public class Dialogs implements Iterable<Gui>
      * Returns whether the dialog state should be saved.
      * @return whether the dialog state should be saved
      */
-    public boolean hasChangedDialog()
-    {
-        for (final Gui dialog : dialogs)
-        {
-            if (dialog.isChangedFromDefault())
-            {
+    public boolean hasChangedDialog() {
+        for (final Gui dialog : dialogs) {
+            if (dialog.isChangedFromDefault()) {
                 return true;
             }
         }
 
         return false;
     }
+
 }

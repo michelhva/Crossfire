@@ -32,8 +32,8 @@ import org.jetbrains.annotations.NotNull;
  * Implements the command "set". It changes settings options.
  * @author Andreas Kirschbaum
  */
-public class SetCommand extends AbstractCommand
-{
+public class SetCommand extends AbstractCommand {
+
     /**
      * The option manager instance.
      */
@@ -45,26 +45,26 @@ public class SetCommand extends AbstractCommand
      * @param crossfireServerConnection the connection instance
      * @param optionManager the option manager to use
      */
-    public SetCommand(@NotNull final CrossfireServerConnection crossfireServerConnection, @NotNull final OptionManager optionManager)
-    {
+    public SetCommand(@NotNull final CrossfireServerConnection crossfireServerConnection, @NotNull final OptionManager optionManager) {
         super(crossfireServerConnection);
         this.optionManager = optionManager;
     }
 
-    /** {@inheritDoc} */
+    /**
+     * {@inheritDoc}
+     */
     @Override
-    public boolean allArguments()
-    {
+    public boolean allArguments() {
         return false;
     }
 
-    /** {@inheritDoc} */
+    /**
+     * {@inheritDoc}
+     */
     @Override
-    public void execute(@NotNull final String args)
-    {
+    public void execute(@NotNull final String args) {
         final String[] tmp = Patterns.PATTERN_WHITESPACE.split(args, 2);
-        if (tmp.length != 2)
-        {
+        if (tmp.length != 2) {
             drawInfoError("The set command needs two arguments: set <option> <value>");
             return;
         }
@@ -72,31 +72,24 @@ public class SetCommand extends AbstractCommand
         final String optionName = tmp[0];
         final String optionArgs = tmp[1];
         final CheckBoxOption option;
-        try
-        {
+        try {
             option = optionManager.getCheckBoxOption(optionName);
-        }
-        catch (final OptionException ex)
-        {
+        } catch (final OptionException ex) {
             drawInfoError("Unknown option '"+optionName+"'");
             return;
         }
 
         final boolean checked;
-        if (optionArgs.equals("on"))
-        {
+        if (optionArgs.equals("on")) {
             checked = true;
-        }
-        else if (optionArgs.equals("off"))
-        {
+        } else if (optionArgs.equals("off")) {
             checked = false;
-        }
-        else
-        {
+        } else {
             drawInfoError("The '"+optionArgs+"' for option '"+optionName+"'is invalid. Valid arguments are 'on' or 'off'.");
             return;
         }
 
         option.setChecked(checked);
     }
+
 }

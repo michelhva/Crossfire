@@ -25,15 +25,16 @@ import com.realtime.crossfire.jxclient.server.socket.ClientSocketState;
 import org.jetbrains.annotations.NotNull;
 
 /**
- * Interface for listeners interested in {@link
- * CrossfireServerConnectionListener} related events.
+ * Interface for listeners interested in {@link CrossfireServerConnectionListener}
+ * related events.
  * @author Andreas Kirschbaum
  */
-public interface CrossfireServerConnectionListener
-{
+public interface CrossfireServerConnectionListener {
+
     /**
      * Called whenever the state has changed.
      * @param clientSocketState the new state
      */
     void clientSocketStateChanged(@NotNull ClientSocketState clientSocketState);
+
 }

@@ -37,14 +37,13 @@ import org.jetbrains.annotations.NotNull;
  * Regression tests for {@link PacketWatcher}.
  * @author Andreas Kirschbaum
  */
-public class PacketWatcherTest extends TestCase
-{
+public class PacketWatcherTest extends TestCase {
+
     /**
      * Creates a new instance.
      * @param name the test case name
      */
-    public PacketWatcherTest(@NotNull final String name)
-    {
+    public PacketWatcherTest(@NotNull final String name) {
         super(name);
     }
 
@@ -53,8 +52,7 @@ public class PacketWatcherTest extends TestCase
      * @return the test suite
      */
     @NotNull
-    public static Test suite()
-    {
+    public static Test suite() {
         return new TestSuite(PacketWatcherTest.class);
     }
 
@@ -62,48 +60,40 @@ public class PacketWatcherTest extends TestCase
      * Runs the regression tests.
      * @param args the command line arguments (ignored)
      */
-    public static void main(@NotNull final String[] args)
-    {
+    public static void main(@NotNull final String[] args) {
         TestRunner.run(suite());
     }
 
     /**
      * Checks that {@link PacketWatcher#addCommand(String)} does work.
      */
-    public void test1()
-    {
+    public void test1() {
         final Collection<ReceivedPacketListener> listeners = new ArrayList<ReceivedPacketListener>();
-        final CrossfireServerConnection connection = new TestCrossfireServerConnection()
-        {
+        final CrossfireServerConnection connection = new TestCrossfireServerConnection() {
             /** {@inheritDoc} */
             @Override
-            public void addPacketWatcherListener(@NotNull final ReceivedPacketListener listener)
-            {
+            public void addPacketWatcherListener(@NotNull final ReceivedPacketListener listener) {
                 listeners.add(listener);
             }
 
             /** {@inheritDoc} */
             @Override
-            public void removePacketWatcherListener(@NotNull final ReceivedPacketListener listener)
-            {
+            public void removePacketWatcherListener(@NotNull final ReceivedPacketListener listener) {
                 listeners.remove(listener);
             }
         };
         final StringBuilder sb = new StringBuilder();
-        final ScriptProcess scriptProcess = new TestScriptProcess()
-        {
+        final ScriptProcess scriptProcess = new TestScriptProcess() {
             /** {@inheritDoc} */
             @Override
-            public void commandSent(@NotNull final String cmd)
-            {
+            public void commandSent(@NotNull final String cmd) {
                 sb.append(cmd).append('\n');
             }
         };
         final PacketWatcher packetWatcher = new PacketWatcher(connection, scriptProcess);
 
         sb.setLength(0);
-        for (final ReceivedPacketListener listener : listeners)
-        {
+        for (final ReceivedPacketListener listener : listeners) {
             listener.processEmpty("command");
         }
         assertEquals("", sb.toString());
@@ -111,12 +101,12 @@ public class PacketWatcherTest extends TestCase
         packetWatcher.addCommand("command");
 
         sb.setLength(0);
-        for (final ReceivedPacketListener listener : listeners)
-        {
+        for (final ReceivedPacketListener listener : listeners) {
             listener.processEmpty("comman");
             listener.processEmpty("command");
             listener.processEmpty("commandx");
         }
         assertEquals("watch command\nwatch commandx\n", sb.toString());
     }
+
 }

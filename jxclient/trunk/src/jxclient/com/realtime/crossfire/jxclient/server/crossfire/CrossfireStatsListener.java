@@ -27,8 +27,8 @@ import org.jetbrains.annotations.NotNull;
  * Interface for listeners interested in "stats" commands.
  * @author Andreas Kirschbaum
  */
-public interface CrossfireStatsListener
-{
+public interface CrossfireStatsListener {
+
     /**
      * The Hit Points stat.
      */
@@ -135,7 +135,8 @@ public interface CrossfireStatsListener
     int CS_STAT_WEAP_SP = 19;
 
     /**
-     * The Range stat - this is what is currently readied by the player to fire.
+     * The Range stat - this is what is currently readied by the player to
+     * fire.
      */
     int CS_STAT_RANGE = 20;
 
@@ -372,22 +373,22 @@ public interface CrossfireStatsListener
     int C_STAT_POISONED = 256;
 
     /**
-     * CS_NUM_SKILLS does not match how many skills there really
-     * are - instead, it is used as a range of values so that the client
-     * can have some idea how many skill categories there may be.
+     * CS_NUM_SKILLS does not match how many skills there really are - instead,
+     * it is used as a range of values so that the client can have some idea how
+     * many skill categories there may be.
      */
     int CS_NUM_SKILLS = 50;
 
     /**
-     * CS_STAT_SKILLINFO is used as the starting index point.  Skill number->name
-     * map is generated dynamically for the client, so a bunch of entries will
-     * be used here.
+     * CS_STAT_SKILLINFO is used as the starting index point.  Skill
+     * number->name map is generated dynamically for the client, so a bunch of
+     * entries will be used here.
      */
     int CS_STAT_SKILLINFO = 140;
 
     /**
-     * Sets whether the {@link CrossfireStatsListener#CS_STAT_WEAP_SP} value contains the weapon
-     * speed directly.
+     * Sets whether the {@link CrossfireStatsListener#CS_STAT_WEAP_SP} value
+     * contains the weapon speed directly.
      * @param simpleWeaponSpeed whether <code>CS_STAT_WEAP_SP</code> is the
      * weapon speed value
      */
@@ -428,4 +429,5 @@ public interface CrossfireStatsListener
      * @param experience the experience parameter
      */
     void statSkillReceived(int stat, int level, long experience);
+
 }

@@ -27,8 +27,8 @@ import org.jetbrains.annotations.NotNull;
  * A {@link CheckBoxOption} that toggles a pickup setting.
  * @author Andreas Kirschbaum
  */
-public class PickupOption extends CheckBoxOption
-{
+public class PickupOption extends CheckBoxOption {
+
     /**
      * The pickup instance for modifying the pickup mode.
      */
@@ -45,30 +45,32 @@ public class PickupOption extends CheckBoxOption
      * @param pickup the pickup instance for modifying the pickup mode
      * @param option the affected pickup mode
      */
-    public PickupOption(@NotNull final Pickup pickup, final long option)
-    {
+    public PickupOption(@NotNull final Pickup pickup, final long option) {
         this.pickup = pickup;
         this.option = option;
     }
 
-    /** {@inheritDoc} */
+    /**
+     * {@inheritDoc}
+     */
     @Override
-    protected void execute(final boolean checked)
-    {
+    protected void execute(final boolean checked) {
         pickup.setPickupMode(option, checked);
     }
 
-    /** {@inheritDoc} */
+    /**
+     * {@inheritDoc}
+     */
     @Override
-    public boolean isDefaultChecked()
-    {
+    public boolean isDefaultChecked() {
         return (Pickup.DEFAULT_PICKUP_MODE&option) == option;
     }
 
-    /** {@inheritDoc} */
+    /**
+     * {@inheritDoc}
+     */
     @Override
-    public boolean inhibitSave()
-    {
+    public boolean inhibitSave() {
         return true;
     }
 
@@ -76,8 +78,8 @@ public class PickupOption extends CheckBoxOption
      * Notifies this instance that the pickup mode has changed.
      * @param pickupMode the new pickup mode
      */
-    public void setPickupMode(final long pickupMode)
-    {
+    public void setPickupMode(final long pickupMode) {
         setChecked((pickupMode&option) == option);
     }
+
 }

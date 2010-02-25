@@ -28,8 +28,8 @@ import org.jetbrains.annotations.NotNull;
  * Utility class for manipulating filenames.
  * @author Andreas Kirschbaum
  */
-public class Filenames
-{
+public class Filenames {
+
     /**
      * Replaces "unsafe" characters in file names (see {@link
      * #UNSAFE_FILENAME_CHARACTERS}).
@@ -47,8 +47,7 @@ public class Filenames
     /**
      * Private constructor to prevent instantiation.
      */
-    private Filenames()
-    {
+    private Filenames() {
     }
 
     /**
@@ -59,10 +58,10 @@ public class Filenames
      * @return the converted file name
      */
     @NotNull
-    public static String quoteName(@NotNull final String name)
-    {
+    public static String quoteName(@NotNull final String name) {
         final CharSequence trimmedName = name.endsWith(".png") ? name.substring(0, name.length()-4) : name;
         final String replacedName = UNSAFE_FILENAME_CHARACTERS.matcher(trimmedName).replaceAll(REPLACEMENT_CHARACTER);
         return replacedName.length() > 0 ? replacedName : REPLACEMENT_CHARACTER;
     }
+
 }

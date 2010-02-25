@@ -29,8 +29,8 @@ import org.jetbrains.annotations.NotNull;
  * GUIScrollable}.
  * @author Andreas Kirschbaum
  */
-public class ScrollResetCommand implements GUICommand
-{
+public class ScrollResetCommand implements GUICommand {
+
     /**
      * The scrollable gui element to reset.
      */
@@ -41,22 +41,24 @@ public class ScrollResetCommand implements GUICommand
      * Creates a new instance.
      * @param scrollable the scrollable gui element to reset
      */
-    public ScrollResetCommand(@NotNull final GUIScrollable scrollable)
-    {
+    public ScrollResetCommand(@NotNull final GUIScrollable scrollable) {
         this.scrollable = scrollable;
     }
 
-    /** {@inheritDoc} */
+    /**
+     * {@inheritDoc}
+     */
     @Override
-    public boolean canExecute()
-    {
+    public boolean canExecute() {
         return true;
     }
 
-    /** {@inheritDoc} */
+    /**
+     * {@inheritDoc}
+     */
     @Override
-    public void execute()
-    {
+    public void execute() {
         scrollable.resetScroll();
     }
+
 }

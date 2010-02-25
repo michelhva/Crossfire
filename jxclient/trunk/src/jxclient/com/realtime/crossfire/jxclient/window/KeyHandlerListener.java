@@ -25,8 +25,8 @@ package com.realtime.crossfire.jxclient.window;
  * Interface for listeners interested in pressed ESC keys.
  * @author Andreas Kirschbaum
  */
-public interface KeyHandlerListener
-{
+public interface KeyHandlerListener {
+
     /**
      * The ESC key has been pressed.
      */
@@ -36,4 +36,5 @@ public interface KeyHandlerListener
      * A key (but not ESC) has been released.
      */
     void keyReleased();
+
 }

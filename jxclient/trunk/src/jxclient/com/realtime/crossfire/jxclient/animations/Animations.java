@@ -32,11 +32,10 @@ import org.jetbrains.annotations.Nullable;
 /**
  * Manages animations frecevied from the server. Animations are uniquely
  * identified by an animation id. Each animation consists of a list of faces.
- *
  * @author Andreas Kirschbaum
  */
-public class Animations
-{
+public class Animations {
+
     /**
      * All defined animations. Maps animation id to animation instance.
      */
@@ -48,54 +47,46 @@ public class Animations
      * connections.
      */
     @NotNull
-    private final GuiStateListener guiStateListener = new GuiStateListener()
-    {
+    private final GuiStateListener guiStateListener = new GuiStateListener() {
         /** {@inheritDoc} */
         @Override
-        public void start()
-        {
+        public void start() {
             // ignore
         }
 
         /** {@inheritDoc} */
         @Override
-        public void metaserver()
-        {
+        public void metaserver() {
             // ignore
         }
 
         /** {@inheritDoc} */
         @Override
-        public void preConnecting(@NotNull final String serverInfo)
-        {
+        public void preConnecting(@NotNull final String serverInfo) {
             // ignore
         }
 
         /** {@inheritDoc} */
         @Override
-        public void connecting(@NotNull final String serverInfo)
-        {
+        public void connecting(@NotNull final String serverInfo) {
             animations.clear();
         }
 
         /** {@inheritDoc} */
         @Override
-        public void connecting(@NotNull final ClientSocketState clientSocketState)
-        {
+        public void connecting(@NotNull final ClientSocketState clientSocketState) {
             // ignore
         }
 
         /** {@inheritDoc} */
         @Override
-        public void connected()
-        {
+        public void connected() {
             // ignore
         }
 
         /** {@inheritDoc} */
         @Override
-        public void connectFailed(@NotNull final String reason)
-        {
+        public void connectFailed(@NotNull final String reason) {
             // ignore
         }
     };
@@ -105,48 +96,38 @@ public class Animations
      * @param guiStateManager the gui state manager to watch; <code>null</code>
      * to not watch
      */
-    public Animations(@Nullable final GuiStateManager guiStateManager)
-    {
-        if (guiStateManager != null)
-        {
+    public Animations(@Nullable final GuiStateManager guiStateManager) {
+        if (guiStateManager != null) {
             guiStateManager.addGuiStateListener(guiStateListener);
         }
     }
 
     /**
      * Define a new animation.
-     *
      * @param animationId The animation id.
-     *
      * @param flags Flags for the animation; currently unused.
-     *
      * @param faces The faces list of the animation.
      */
-    public void addAnimation(final int animationId, final int flags, @NotNull final int[] faces)
-    {
-        if (faces.length == 1)
-        {
+    public void addAnimation(final int animationId, final int flags, @NotNull final int[] faces) {
+        if (faces.length == 1) {
             System.err.println("Warning: animation id "+animationId+" has only one face");
         }
 
         final Animation animation = new Animation(flags, faces);
-        if (animations.put(animationId, animation) != null)
-        {
+        if (animations.put(animationId, animation) != null) {
             System.err.println("Warning: duplicate animation id "+animationId);
         }
     }
 
     /**
      * Return the animation for an animation id.
-     *
      * @param animationId The animation id.
-     *
      * @return The animation instance, or <code>null</code> if the animation id
-     * does not exist.
+     *         does not exist.
      */
     @Nullable
-    public Animation get(final int animationId)
-    {
+    public Animation get(final int animationId) {
         return animations.get(animationId);
     }
+
 }

@@ -34,16 +34,16 @@ import org.jetbrains.annotations.NotNull;
  * A thread that plays a music file over and over until terminated.
  * @author Andreas Kirschbaum
  */
-public class Processor extends Thread
-{
+public class Processor extends Thread {
+
     /**
      * The minimum factor for fading in/out effects.
      */
     private static final float MIN_VALUE = 1E-3F;
 
     /**
-     * The step for the fading in/out factor. It is multiplied to the
-     * current value for each sample.
+     * The step for the fading in/out factor. It is multiplied to the current
+     * value for each sample.
      */
     private static final float VOLUME_STEP_PER_SAMPLE = 1.00005F;
 
@@ -67,87 +67,68 @@ public class Processor extends Thread
 
     /**
      * Create a new instance.
-     *
      * @param name The music name to play.
      */
-    public Processor(@NotNull final String name)
-    {
+    public Processor(@NotNull final String name) {
         this.name = name;
     }
 
     /**
      * Stop playing music. The music is faded out rather than cut off.
-     *
-     * @param fadeOut Whether tp fade out the music (<code>true</code>) or
-     * to cut it off (<code>false</code>).
-     *
+     * @param fadeOut Whether tp fade out the music (<code>true</code>) or to
+     * cut it off (<code>false</code>).
      * @param join Whether to wait for thread termination.
      */
-    public void terminate(final boolean fadeOut, final boolean join)
-    {
+    public void terminate(final boolean fadeOut, final boolean join) {
         state = fadeOut ? 2 : 4;
 
-        if (join)
-        {
-            try
-            {
+        if (join) {
+            try {
                 join();
-            }
-            catch (final InterruptedException ex)
-            {
+            } catch (final InterruptedException ex) {
                 throw new AssertionError();
             }
         }
     }
 
-    /** {@inheritDoc} */
+    /**
+     * {@inheritDoc}
+     */
     @Override
-    public void run()
-    {
-        try
-        {
+    public void run() {
+        try {
             AudioInputStream audioInputStream = AudioSystem.getAudioInputStream(AudioFileLoader.getInputStream(null, name));
-            try
-            {
+            try {
                 final SourceDataLine sourceDataLine = AudioSystem.getSourceDataLine(audioInputStream.getFormat());
                 final AudioFormat audioFormat = sourceDataLine.getFormat();
 
-                if (audioFormat.getChannels() > 2)
-                {
+                if (audioFormat.getChannels() > 2) {
                     System.err.println("music "+name+": cannot handle more than two channels");
                     return;
                 }
-                if (audioFormat.getEncoding() != AudioFormat.Encoding.PCM_SIGNED)
-                {
+                if (audioFormat.getEncoding() != AudioFormat.Encoding.PCM_SIGNED) {
                     System.err.println("music "+name+": encoding must be PCM_SIGNED");
                     return;
                 }
-                if (audioFormat.getSampleSizeInBits() != 16)
-                {
+                if (audioFormat.getSampleSizeInBits() != 16) {
                     System.err.println("music "+name+": sample size must be 16 bits");
                     return;
                 }
-                if (audioFormat.isBigEndian())
-                {
+                if (audioFormat.isBigEndian()) {
                     System.err.println("music "+name+": cannot handle little endian encoding");
                     return;
                 }
 
                 sourceDataLine.open(audioInputStream.getFormat());
-                try
-                {
+                try {
                     sourceDataLine.start();
-                    try
-                    {
+                    try {
                         final byte[] buf = new byte[8192];
-                        while (state < 3 && !isInterrupted())
-                        {
+                        while (state < 3 && !isInterrupted()) {
                             int len = audioInputStream.read(buf, 0, buf.length);
-                            if (len == -1)
-                            {
+                            if (len == -1) {
                                 final AudioInputStream newAudioInputStream = AudioSystem.getAudioInputStream(AudioFileLoader.getInputStream(null, name));
-                                if (!newAudioInputStream.getFormat().matches(audioInputStream.getFormat()))
-                                {
+                                if (!newAudioInputStream.getFormat().matches(audioInputStream.getFormat())) {
                                     newAudioInputStream.close();
                                     System.err.println("music "+name+": file format has changed");
                                     break;
@@ -156,21 +137,17 @@ public class Processor extends Thread
                                 audioInputStream = newAudioInputStream;
                                 oldAudioInputStream.close();
                                 len = audioInputStream.read(buf, 0, buf.length);
-                                if (len == -1)
-                                {
+                                if (len == -1) {
                                     System.err.println("music "+name+": cannot re-read file");
                                     break;
                                 }
                             }
 
-                            switch (state)
-                            {
+                            switch (state) {
                             case 0: // fade in
-                                for (int i = 0; i+3 < len; i += 4)
-                                {
+                                for (int i = 0; i+3 < len; i += 4) {
                                     volume *= VOLUME_STEP_PER_SAMPLE;
-                                    if (volume >= 1F)
-                                    {
+                                    if (volume >= 1F) {
                                         state = 1;
                                         volume = 1F;
                                         break;
@@ -185,11 +162,9 @@ public class Processor extends Thread
                                 break;
 
                             case 2: // fade out
-                                for (int i = 0; i+3 < len; i += 4)
-                                {
+                                for (int i = 0; i+3 < len; i += 4) {
                                     volume /= VOLUME_STEP_PER_SAMPLE;
-                                    if (volume <= MIN_VALUE)
-                                    {
+                                    if (volume <= MIN_VALUE) {
                                         state = 3;
                                         len = i;
                                         break;
@@ -206,60 +181,42 @@ public class Processor extends Thread
 
                             sourceDataLine.write(buf, 0, len);
                         }
-                        if (state != 4)
-                        {
+                        if (state != 4) {
                             sourceDataLine.drain();
                         }
-                    }
-                    finally
-                    {
+                    } finally {
                         sourceDataLine.stop();
                     }
-                }
-                finally
-                {
+                } finally {
                     sourceDataLine.close();
                 }
-            }
-            finally
-            {
+            } finally {
                 audioInputStream.close();
             }
-        }
-        catch (final IOException ex)
-        {
+        } catch (final IOException ex) {
             System.err.println("music "+name+": "+ex.getMessage());
-        }
-        catch (final LineUnavailableException ex)
-        {
+        } catch (final LineUnavailableException ex) {
             System.err.println("music "+name+": "+ex.getMessage());
-        }
-        catch (final UnsupportedAudioFileException ex)
-        {
+        } catch (final UnsupportedAudioFileException ex) {
             System.err.println("music "+name+": "+ex.getMessage());
         }
     }
 
     /**
      * Convert one audio sample according to the current {@link #volume}.
-     *
      * @param buf The buffer holding the sample.
-     *
      * @param i The sample offset.
      */
-    private void convertSample(@NotNull final byte[] buf, final int i)
-    {
+    private void convertSample(@NotNull final byte[] buf, final int i) {
         final float value = (short)((buf[i]&0xFF)+(buf[i+1]&0xFF)*0x100)*volume;
         final short s = (short)value;
-        if (s >= 0)
-        {
+        if (s >= 0) {
             buf[i] = (byte)s;
             buf[i+1] = (byte)(s/0x100);
-        }
-        else
-        {
+        } else {
             buf[i] = (byte)s;
             buf[i+1] = (byte)((s+0x10000)/0x100);
         }
     }
+
 }

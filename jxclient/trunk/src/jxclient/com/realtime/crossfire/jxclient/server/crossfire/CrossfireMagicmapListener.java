@@ -24,13 +24,12 @@ package com.realtime.crossfire.jxclient.server.crossfire;
 import org.jetbrains.annotations.NotNull;
 
 /**
- *
- * @version 1.0
  * @author Lauwenmark
+ * @version 1.0
  * @since 1.0
  */
-public interface CrossfireMagicmapListener
-{
+public interface CrossfireMagicmapListener {
+
     /**
      * Bitmask to extract the color information of a tile.
      */
@@ -56,4 +55,5 @@ public interface CrossfireMagicmapListener
      * @param pos the index of the first valid byte in <code>data</code>
      */
     void commandMagicmapReceived(int width, int height, int px, int py, @NotNull byte[] data, int pos);
+
 }

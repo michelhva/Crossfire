@@ -72,8 +72,8 @@ import org.jetbrains.annotations.Nullable;
  * representations.
  * @author Andreas Kirschbaum
  */
-public class CommandParser
-{
+public class CommandParser {
+
     /**
      * The {@link Dialogs} instance to use.
      */
@@ -105,8 +105,7 @@ public class CommandParser
      * @param expressionParser the expression parser instance to use
      * @param definedGUIElements the defined GUI elements
      */
-    public CommandParser(@NotNull final Dialogs dialogs, @NotNull final ItemsManager itemsManager, @NotNull final ExpressionParser expressionParser, @NotNull final JXCSkinCache<GUIElement> definedGUIElements)
-    {
+    public CommandParser(@NotNull final Dialogs dialogs, @NotNull final ItemsManager itemsManager, @NotNull final ExpressionParser expressionParser, @NotNull final JXCSkinCache<GUIElement> definedGUIElements) {
         this.dialogs = dialogs;
         this.itemsManager = itemsManager;
         this.expressionParser = expressionParser;
@@ -131,259 +130,186 @@ public class CommandParser
      * @throws JXCSkinException if an element cannot be found
      */
     @NotNull
-    public GUICommand parseCommandArgs(@NotNull final String[] args, final int argc, @Nullable final GUIElement element, @NotNull final String command, @NotNull final GuiStateManager guiStateManager, @NotNull final Commands commands, @NotNull final LineNumberReader lnr, @NotNull final CommandQueue commandQueue, @NotNull final CrossfireServerConnection crossfireServerConnection, @NotNull final CommandCallback commandCallback, @NotNull final Macros macros) throws IOException, JXCSkinException
-    {
-        if (command.equals("SHOW"))
-        {
-            if (args.length != argc)
-            {
+    public GUICommand parseCommandArgs(@NotNull final String[] args, final int argc, @Nullable final GUIElement element, @NotNull final String command, @NotNull final GuiStateManager guiStateManager, @NotNull final Commands commands, @NotNull final LineNumberReader lnr, @NotNull final CommandQueue commandQueue, @NotNull final CrossfireServerConnection crossfireServerConnection, @NotNull final CommandCallback commandCallback, @NotNull final Macros macros) throws IOException, JXCSkinException {
+        if (command.equals("SHOW")) {
+            if (args.length != argc) {
                 throw new IOException("syntax error");
             }
 
             return new ShowCommand(element);
-        }
-        else if (command.equals("HIDE"))
-        {
-            if (args.length != argc)
-            {
+        } else if (command.equals("HIDE")) {
+            if (args.length != argc) {
                 throw new IOException("syntax error");
             }
 
             return new HideCommand(element);
-        }
-        else if (command.equals("TOGGLE"))
-        {
-            if (args.length != argc)
-            {
+        } else if (command.equals("TOGGLE")) {
+            if (args.length != argc) {
                 throw new IOException("syntax error");
             }
 
             return new ToggleCommand(element);
-        }
-        else if (command.equals("PRINT"))
-        {
-            if (args.length != argc)
-            {
+        } else if (command.equals("PRINT")) {
+            if (args.length != argc) {
                 throw new IOException("syntax error");
             }
 
             return new PrintCommand();
-        }
-        else if (command.equals("QUIT"))
-        {
-            if (args.length != argc)
-            {
+        } else if (command.equals("QUIT")) {
+            if (args.length != argc) {
                 throw new IOException("syntax error");
             }
 
             return new QuitCommand(commandCallback);
-        }
-        else if (command.equals("CONNECT"))
-        {
-            if (args.length != argc)
-            {
+        } else if (command.equals("CONNECT")) {
+            if (args.length != argc) {
                 throw new IOException("syntax error");
             }
 
-            if (!(element instanceof GUIText))
-            {
+            if (!(element instanceof GUIText)) {
                 throw new IOException("'"+element+"' must be an input field");
             }
 
             return new ConnectCommand(guiStateManager, (GUIText)element);
-        }
-        else if (command.equals("DISCONNECT"))
-        {
-            if (args.length != argc)
-            {
+        } else if (command.equals("DISCONNECT")) {
+            if (args.length != argc) {
                 throw new IOException("syntax error");
             }
 
             return new DisconnectCommand(guiStateManager);
-        }
-        else if (command.equals("GUI_META"))
-        {
-            if (args.length != argc)
-            {
+        } else if (command.equals("GUI_META")) {
+            if (args.length != argc) {
                 throw new IOException("syntax error");
             }
 
             return new MetaCommand(guiStateManager);
-        }
-        else if (command.equals("GUI_START"))
-        {
-            if (args.length != argc)
-            {
+        } else if (command.equals("GUI_START")) {
+            if (args.length != argc) {
                 throw new IOException("syntax error");
             }
 
             return new StartCommand(guiStateManager);
-        }
-        else if (command.equals("GUI_EXECUTE_ELEMENT"))
-        {
-            if (args.length != argc)
-            {
+        } else if (command.equals("GUI_EXECUTE_ELEMENT")) {
+            if (args.length != argc) {
                 throw new IOException("syntax error");
             }
 
-            if (!(element instanceof GUIItem))
-            {
+            if (!(element instanceof GUIItem)) {
                 throw new IOException("'"+element+"' must be an item element");
             }
 
             return new ExecuteElementCommand((GUIItem)element);
-        }
-        else if (command.equals("DIALOG_OPEN"))
-        {
-            if (args.length != argc+1)
-            {
+        } else if (command.equals("DIALOG_OPEN")) {
+            if (args.length != argc+1) {
                 throw new IOException("syntax error");
             }
 
             return new DialogOpenCommand(commandCallback, dialogs.addDialog(args[argc]));
-        }
-        else if (command.equals("DIALOG_TOGGLE"))
-        {
-            if (args.length != argc+1)
-            {
+        } else if (command.equals("DIALOG_TOGGLE")) {
+            if (args.length != argc+1) {
                 throw new IOException("syntax error");
             }
 
             return new DialogToggleCommand(commandCallback, dialogs.addDialog(args[argc]));
-        }
-        else if (command.equals("DIALOG_CLOSE"))
-        {
-            if (args.length != argc+1)
-            {
+        } else if (command.equals("DIALOG_CLOSE")) {
+            if (args.length != argc+1) {
                 throw new IOException("syntax error");
             }
 
             return new DialogCloseCommand(commandCallback, dialogs.addDialog(args[argc]));
-        }
-        else if (command.equals("GUI_EXECUTE_COMMAND"))
-        {
-            if (args.length < argc+1)
-            {
+        } else if (command.equals("GUI_EXECUTE_COMMAND")) {
+            if (args.length < argc+1) {
                 throw new IOException("syntax error");
             }
 
             final String commandString = ParseUtils.parseText(args, argc, lnr);
             return new ExecuteCommandCommand(commands, commandString, macros);
-        }
-        else if (command.equals("EXEC_SELECTION"))
-        {
-            if (args.length != argc+1)
-            {
+        } else if (command.equals("EXEC_SELECTION")) {
+            if (args.length != argc+1) {
                 throw new IOException("syntax error");
             }
 
             final CommandType commandType = NumberParser.parseEnum(CommandType.class, args[argc], "command name");
 
-            if (!(element instanceof GUIItemList))
-            {
+            if (!(element instanceof GUIItemList)) {
                 throw new IOException("'"+element+"' must be an item list");
             }
 
             return new ExecSelectionCommand((GUIItemList)element, commandType, crossfireServerConnection, itemsManager.getCurrentFloorManager(), commandQueue);
-        }
-        else if (command.equals("MOVE_SELECTION"))
-        {
-            if (args.length != argc+2)
-            {
+        } else if (command.equals("MOVE_SELECTION")) {
+            if (args.length != argc+2) {
                 throw new IOException("syntax error");
             }
 
             final int diffLines = expressionParser.parseInt(args[argc]);
             final int diffElements = expressionParser.parseInt(args[argc+1]);
-            if (diffLines == 0 && diffElements == 0)
-            {
+            if (diffLines == 0 && diffElements == 0) {
                 throw new IOException("Invalid zero scroll distance");
             }
 
-            if (!(element instanceof GUIList))
-            {
+            if (!(element instanceof GUIList)) {
                 throw new IOException("'"+element+"' must be a list");
             }
 
             return new MoveSelectionCommand((GUIList)element, diffLines, diffElements);
-        }
-        else if (command.equals("SCROLL_LIST"))
-        {
-            if (args.length != argc+1)
-            {
+        } else if (command.equals("SCROLL_LIST")) {
+            if (args.length != argc+1) {
                 throw new IOException("syntax error");
             }
 
             final int distance = expressionParser.parseInt(args[argc]);
-            if (distance == 0)
-            {
+            if (distance == 0) {
                 throw new IOException("Invalid zero scroll distance");
             }
 
-            if (!(element instanceof GUIList))
-            {
+            if (!(element instanceof GUIList)) {
                 throw new IOException("'"+element+"' must be a list");
             }
 
             return new ScrollListCommand((GUIList)element, distance);
-        }
-        else if (command.equals("SCROLL") || command.equals("SCROLL_NEVER"))
-        {
-            if (args.length != argc+1)
-            {
+        } else if (command.equals("SCROLL") || command.equals("SCROLL_NEVER")) {
+            if (args.length != argc+1) {
                 throw new IOException("syntax error");
             }
 
             final int distance = expressionParser.parseInt(args[argc]);
-            if (distance == 0)
-            {
+            if (distance == 0) {
                 throw new IOException("Invalid zero scroll distance");
             }
 
-            if (!(element instanceof GUIScrollable))
-            {
+            if (!(element instanceof GUIScrollable)) {
                 throw new IOException("'"+element+"' must be a scrollable element");
             }
 
             return command.equals("SCROLL") ? new ScrollCommand(distance, (GUIScrollable)element) : new ScrollNeverCommand(distance, (GUIScrollable)element);
-        }
-        else if (command.equals("SCROLL_RESET"))
-        {
-            if (args.length != argc)
-            {
+        } else if (command.equals("SCROLL_RESET")) {
+            if (args.length != argc) {
                 throw new IOException("syntax error");
             }
 
-            if (!(element instanceof GUIScrollable))
-            {
+            if (!(element instanceof GUIScrollable)) {
                 throw new IOException("'"+element+"' must be a scrollable element");
             }
 
             return new ScrollResetCommand((GUIScrollable)element);
-        }
-        else if (command.equals("SCROLLNEXT"))
-        {
-            if (args.length != argc+1)
-            {
+        } else if (command.equals("SCROLLNEXT")) {
+            if (args.length != argc+1) {
                 throw new IOException("syntax error");
             }
 
             final Object nextElement = definedGUIElements.lookup(args[argc]);
-            if (!(nextElement instanceof ActivatableGUIElement))
-            {
+            if (!(nextElement instanceof ActivatableGUIElement)) {
                 throw new IOException("'"+args[argc]+"' cannot become active");
             }
 
-            if (!(element instanceof ActivatableGUIElement))
-            {
+            if (!(element instanceof ActivatableGUIElement)) {
                 throw new IOException("'"+element+"' cannot become active");
             }
 
             return new ScrollNextCommand((ActivatableGUIElement)nextElement, (ActivatableGUIElement)element);
-        }
-        else
-        {
+        } else {
             throw new JXCSkinException("unknown command '"+command+"'");
         }
     }
+
 }

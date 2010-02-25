@@ -32,11 +32,10 @@ import org.jetbrains.annotations.NotNull;
 
 /**
  * Input field for "query" dialogs.
- *
  * @author Andreas Kirschbaum
  */
-public class GUIQueryText extends GUIText
-{
+public class GUIQueryText extends GUIText {
+
     /**
      * The serial version UID.
      */
@@ -54,24 +53,26 @@ public class GUIQueryText extends GUIText
      * @param commandCallback the command callback to use
      * @param elementListener the element listener to notify
      */
-    public GUIQueryText(@NotNull final CrossfireServerConnection server, @NotNull final CommandCallback commandCallback, @NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final String name, final int x, final int y, final int w, final int h, @NotNull final Image activeImage, @NotNull final Image inactiveImage, @NotNull final Font font, @NotNull final Color inactiveColor, @NotNull final Color activeColor, final int margin, @NotNull final String text, final boolean ignoreUpDown)
-    {
+    public GUIQueryText(@NotNull final CrossfireServerConnection server, @NotNull final CommandCallback commandCallback, @NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final String name, final int x, final int y, final int w, final int h, @NotNull final Image activeImage, @NotNull final Image inactiveImage, @NotNull final Font font, @NotNull final Color inactiveColor, @NotNull final Color activeColor, final int margin, @NotNull final String text, final boolean ignoreUpDown) {
         super(commandCallback, tooltipManager, elementListener, name, x, y, w, h, activeImage, inactiveImage, font, inactiveColor, activeColor, margin, text, ignoreUpDown);
         this.server = server;
     }
 
-    /** {@inheritDoc} */
+    /**
+     * {@inheritDoc}
+     */
     @Override
-    public void dispose()
-    {
+    public void dispose() {
         super.dispose();
     }
 
-    /** {@inheritDoc} */
+    /**
+     * {@inheritDoc}
+     */
     @Override
-    protected void execute(@NotNull final String command)
-    {
+    protected void execute(@NotNull final String command) {
         server.sendReply(command);
         setText("");
     }
+
 }

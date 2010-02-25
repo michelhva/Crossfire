@@ -27,8 +27,8 @@ import org.jetbrains.annotations.NotNull;
  * An external command executed as a client-sided script.
  * @author Andreas Kirschbaum
  */
-public interface ScriptProcess extends Comparable<ScriptProcess>
-{
+public interface ScriptProcess extends Comparable<ScriptProcess> {
+
     /**
      * Returns the script ID identifying this script instance.
      * @return the script ID
@@ -58,4 +58,5 @@ public interface ScriptProcess extends Comparable<ScriptProcess>
      * Kills the script process. Does nothing if the process is not running.
      */
     void killScript();
+
 }

@@ -32,8 +32,8 @@ import org.jetbrains.annotations.NotNull;
  * representation.
  * @author Andreas Kirschbaum
  */
-public class GUICommandFactory
-{
+public class GUICommandFactory {
+
     /**
      * Pattern matching lines that need a {@link #TRAILING_ESCAPE} appended.
      */
@@ -49,8 +49,7 @@ public class GUICommandFactory
     /**
      * Private constructor to prevent instantiation.
      */
-    private GUICommandFactory()
-    {
+    private GUICommandFactory() {
     }
 
     /**
@@ -61,8 +60,7 @@ public class GUICommandFactory
      * @param macros the macros instance to use
      * @return the new command instance
      */
-    public static GUICommand createCommandDecode(@NotNull final String encodedCommandString, @NotNull final CommandCallback commandCallback, @NotNull final Commands commands, @NotNull final Macros macros)
-    {
+    public static GUICommand createCommandDecode(@NotNull final String encodedCommandString, @NotNull final CommandCallback commandCallback, @NotNull final Commands commands, @NotNull final Macros macros) {
         return createCommand(decode(encodedCommandString), commandCallback, commands, macros);
     }
 
@@ -75,18 +73,12 @@ public class GUICommandFactory
      * @return the new command instance
      */
     @NotNull
-    public static GUICommand createCommand(@NotNull final String commandString, @NotNull final CommandCallback commandCallback, @NotNull final Commands commands, @NotNull final Macros macros)
-    {
-        if (commandString.equals("-e"))
-        {
+    public static GUICommand createCommand(@NotNull final String commandString, @NotNull final CommandCallback commandCallback, @NotNull final Commands commands, @NotNull final Macros macros) {
+        if (commandString.equals("-e")) {
             return new ActivateCommandInputCommand("", commandCallback, macros);
-        }
-        else if (commandString.startsWith("-e "))
-        {
+        } else if (commandString.startsWith("-e ")) {
             return new ActivateCommandInputCommand(StringUtils.trimLeading(commandString.substring(3)), commandCallback, macros);
-        }
-        else
-        {
+        } else {
             return new ExecuteCommandCommand(commands, commandString, macros);
         }
     }
@@ -97,8 +89,7 @@ public class GUICommandFactory
      * @return the encoded key binding
      */
     @NotNull
-    public static String encode(@NotNull final String command)
-    {
+    public static String encode(@NotNull final String command) {
         return PATTERN_ENCODE.matcher(command).matches() ? command+TRAILING_ESCAPE : command;
     }
 
@@ -108,8 +99,8 @@ public class GUICommandFactory
      * @return the decoded key binding
      */
     @NotNull
-    private static String decode(@NotNull final String command)
-    {
+    private static String decode(@NotNull final String command) {
         return command.endsWith(TRAILING_ESCAPE) ? command.substring(0, command.length()-TRAILING_ESCAPE.length()) : command;
     }
+
 }

@@ -25,12 +25,12 @@ import com.realtime.crossfire.jxclient.gui.scrollable.GUIScrollable;
 import org.jetbrains.annotations.NotNull;
 
 /**
- * A {@link GUICommand} which scrolls a target {@link GUIScrollable} gui
- * element if executed but always reports that scrolling is not possible.
+ * A {@link GUICommand} which scrolls a target {@link GUIScrollable} gui element
+ * if executed but always reports that scrolling is not possible.
  * @author Andreas Kirschbaum
  */
-public class ScrollNeverCommand implements GUICommand
-{
+public class ScrollNeverCommand implements GUICommand {
+
     /**
      * The distance to scroll.
      */
@@ -47,23 +47,25 @@ public class ScrollNeverCommand implements GUICommand
      * @param distance the distance to scroll
      * @param scrollable the scrollable element
      */
-    public ScrollNeverCommand(final int distance, @NotNull final GUIScrollable scrollable)
-    {
+    public ScrollNeverCommand(final int distance, @NotNull final GUIScrollable scrollable) {
         this.distance = distance;
         this.scrollable = scrollable;
     }
 
-    /** {@inheritDoc} */
+    /**
+     * {@inheritDoc}
+     */
     @Override
-    public boolean canExecute()
-    {
+    public boolean canExecute() {
         return false;
     }
 
-    /** {@inheritDoc} */
+    /**
+     * {@inheritDoc}
+     */
     @Override
-    public void execute()
-    {
+    public void execute() {
         scrollable.scroll(distance);
     }
+
 }

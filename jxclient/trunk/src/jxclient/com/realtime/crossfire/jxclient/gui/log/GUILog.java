@@ -43,8 +43,8 @@ import org.jetbrains.annotations.Nullable;
  * @author Lauwenmark
  * @author Andreas Kirschbaum
  */
-public abstract class GUILog extends GUIElement implements GUIScrollable2
-{
+public abstract class GUILog extends GUIElement implements GUIScrollable2 {
+
     /**
      * The serial version UID.
      */
@@ -90,23 +90,19 @@ public abstract class GUILog extends GUIElement implements GUIScrollable2
      * The {@link RenderStateListener} attached to {@link #renderStateManager}.
      */
     @NotNull
-    private final RenderStateListener renderStateListener = new RenderStateListener()
-    {
+    private final RenderStateListener renderStateListener = new RenderStateListener() {
         /** {@inheritDoc} */
         @Override
-        public void stateChanged()
-        {
+        public void stateChanged() {
             setChanged();
-            for (final ScrollableListener listener : listeners)
-            {
+            for (final ScrollableListener listener : listeners) {
                 listener.setRange(0, buffer.getTotalHeight(), renderStateManager.getScrollPos(), GUILog.super.getHeight());
             }
         }
 
         /** {@inheritDoc} */
         @Override
-        public int getHeight()
-        {
+        public int getHeight() {
             return GUILog.super.getHeight();
         }
     };
@@ -124,21 +120,16 @@ public abstract class GUILog extends GUIElement implements GUIScrollable2
      * unused
      * @param fonts the <code>Fonts</code> instance for looking up fonts
      */
-    protected GUILog(@NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final String name, final int x, final int y, final int w, final int h, @Nullable final Image backgroundImage, @NotNull final Fonts fonts)
-    {
+    protected GUILog(@NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final String name, final int x, final int y, final int w, final int h, @Nullable final Image backgroundImage, @NotNull final Fonts fonts) {
         super(tooltipManager, elementListener, name, x, y, w, h, Transparency.TRANSLUCENT);
         this.backgroundImage = backgroundImage;
         this.fonts = fonts;
         final FontRenderContext context;
-        synchronized (bufferedImageSync)
-        {
+        synchronized (bufferedImageSync) {
             final Graphics2D g = createBufferGraphics();
-            try
-            {
+            try {
                 context = g.getFontRenderContext();
-            }
-            finally
-            {
+            } finally {
                 g.dispose();
             }
         }
@@ -146,37 +137,35 @@ public abstract class GUILog extends GUIElement implements GUIScrollable2
         renderStateManager = new RenderStateManager(renderStateListener, buffer);
     }
 
-    /** {@inheritDoc} */
+    /**
+     * {@inheritDoc}
+     */
     @Override
-    public void dispose()
-    {
+    public void dispose() {
         super.dispose();
         renderStateManager.dispose();
     }
 
-    /** {@inheritDoc} */
+    /**
+     * {@inheritDoc}
+     */
     @Override
-    protected void render(@NotNull final Graphics g)
-    {
-        if (renderStateManager == null)
-        {
+    protected void render(@NotNull final Graphics g) {
+        if (renderStateManager == null) {
             return;
         }
 
         final Graphics2D g2 = (Graphics2D)g;
         g2.setBackground(new Color(0, 0, 0, 0.0f));
         g.clearRect(0, 0, getWidth(), getHeight());
-        if (backgroundImage != null)
-        {
+        if (backgroundImage != null) {
             g.drawImage(backgroundImage, 0, 0, null);
         }
 
         int y = -renderStateManager.getTopOffset();
-        synchronized (buffer.getSyncObject())
-        {
+        synchronized (buffer.getSyncObject()) {
             final ListIterator<Line> it = buffer.listIterator(renderStateManager.getTopIndex());
-            while (y < getHeight() && it.hasNext())
-            {
+            while (y < getHeight() && it.hasNext()) {
                 final Line line = it.next();
                 drawLine(g, y, line);
                 y += line.getHeight();
@@ -190,75 +179,70 @@ public abstract class GUILog extends GUIElement implements GUIScrollable2
      * @param y the y-coordinate to start drawing
      * @param line the line to draw
      */
-    private void drawLine(@NotNull final Graphics g, final int y, @NotNull final Iterable<Segment> line)
-    {
-        for (final Segment segment : line)
-        {
+    private void drawLine(@NotNull final Graphics g, final int y, @NotNull final Iterable<Segment> line) {
+        for (final Segment segment : line) {
             segment.draw(g, y, fonts);
         }
     }
 
-    /** {@inheritDoc} */
+    /**
+     * {@inheritDoc}
+     */
     @Override
     public boolean canScroll(final int distance) // XXX: implement |distance|>1
     {
-        if (distance < 0)
-        {
+        if (distance < 0) {
             return renderStateManager.canScrollUp();
-        }
-        else if (distance > 0)
-        {
+        } else if (distance > 0) {
             return renderStateManager.canScrollDown();
-        }
-        else
-        {
+        } else {
             return false;
         }
     }
 
-    /** {@inheritDoc} */
+    /**
+     * {@inheritDoc}
+     */
     @Override
-    public void scroll(final int distance)
-    {
-        if (distance < 0)
-        {
+    public void scroll(final int distance) {
+        if (distance < 0) {
             renderStateManager.scrollUp(-distance*SCROLL_PIXEL);
-        }
-        else if (distance > 0)
-        {
+        } else if (distance > 0) {
             renderStateManager.scrollDown(distance*SCROLL_PIXEL);
-        }
-        else
-        {
+        } else {
             assert false;
         }
     }
 
-    /** {@inheritDoc} */
+    /**
+     * {@inheritDoc}
+     */
     @Override
-    public void resetScroll()
-    {
+    public void resetScroll() {
         renderStateManager.resetScroll();
     }
 
-    /** {@inheritDoc} */
+    /**
+     * {@inheritDoc}
+     */
     @Override
-    public void scrollTo(final int pos)
-    {
+    public void scrollTo(final int pos) {
         renderStateManager.scrollTo(pos);
     }
 
-    /** {@inheritDoc} */
+    /**
+     * {@inheritDoc}
+     */
     @Override
-    public void addScrollableListener(@NotNull final ScrollableListener listener)
-    {
+    public void addScrollableListener(@NotNull final ScrollableListener listener) {
         listeners.add(listener);
     }
 
-    /** {@inheritDoc} */
+    /**
+     * {@inheritDoc}
+     */
     @Override
-    public void removeScrollableListener(@NotNull final ScrollableListener listener)
-    {
+    public void removeScrollableListener(@NotNull final ScrollableListener listener) {
         listeners.remove(listener);
     }
 
@@ -267,8 +251,8 @@ public abstract class GUILog extends GUIElement implements GUIScrollable2
      * @return the buffer instance
      */
     @NotNull
-    public Buffer getBuffer()
-    {
+    public Buffer getBuffer() {
         return buffer;
     }
+
 }

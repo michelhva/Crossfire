@@ -33,8 +33,8 @@ import org.jetbrains.annotations.NotNull;
  * A scroll bar gui element.
  * @author Andreas Kirschbaum
  */
-public class GUIScrollBar extends ActivatableGUIElement implements ScrollableListener
-{
+public class GUIScrollBar extends ActivatableGUIElement implements ScrollableListener {
+
     /**
      * The serial version UID.
      */
@@ -110,8 +110,7 @@ public class GUIScrollBar extends ActivatableGUIElement implements ScrollableLis
      * @param colorBackground the background color of the slider
      * @param colorForeground the foreground color of the slider
      */
-    public GUIScrollBar(@NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final String name, final int x, final int y, final int w, final int h, final boolean proportionalSlider, @NotNull final GUIScrollable2 scrollable, @NotNull final Color colorBackground, @NotNull final Color colorForeground)
-    {
+    public GUIScrollBar(@NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final String name, final int x, final int y, final int w, final int h, final boolean proportionalSlider, @NotNull final GUIScrollable2 scrollable, @NotNull final Color colorBackground, @NotNull final Color colorForeground) {
         super(tooltipManager, elementListener, name, x, y, w, h, Transparency.OPAQUE);
         this.proportionalSlider = proportionalSlider;
         this.scrollable = scrollable;
@@ -120,24 +119,24 @@ public class GUIScrollBar extends ActivatableGUIElement implements ScrollableLis
         this.scrollable.addScrollableListener(this);
     }
 
-    /** {@inheritDoc} */
+    /**
+     * {@inheritDoc}
+     */
     @Override
-    public void dispose()
-    {
+    public void dispose() {
         super.dispose();
         scrollable.removeScrollableListener(this);
     }
 
-    /** {@inheritDoc} */
+    /**
+     * {@inheritDoc}
+     */
     @Override
-    public void setRange(final int valueMin, final int valueMax, final int sliderPos, final int sliderSize)
-    {
-        if (valueMax <= valueMin)
-        {
+    public void setRange(final int valueMin, final int valueMax, final int sliderPos, final int sliderSize) {
+        if (valueMax <= valueMin) {
             throw new IllegalArgumentException();
         }
-        if (sliderSize <= 0)
-        {
+        if (sliderSize <= 0) {
             throw new IllegalArgumentException();
         }
 
@@ -147,32 +146,28 @@ public class GUIScrollBar extends ActivatableGUIElement implements ScrollableLis
         setPosition(sliderPos);
     }
 
-    /** {@inheritDoc} */
+    /**
+     * {@inheritDoc}
+     */
     @Override
-    protected void activeChanged()
-    {
+    protected void activeChanged() {
     }
 
-    /** {@inheritDoc} */
+    /**
+     * {@inheritDoc}
+     */
     @Override
-    public void mousePressed(@NotNull final MouseEvent e)
-    {
+    public void mousePressed(@NotNull final MouseEvent e) {
         super.mousePressed(e);
-        switch (e.getButton())
-        {
+        switch (e.getButton()) {
         case MouseEvent.BUTTON1:
             final int sh = getSliderHeightPixels();
             offset = e.getY()-getSliderPosPixels(sh);
-            if (offset < 0)
-            {
+            if (offset < 0) {
                 scrollable.scrollTo(sliderPos-sliderSize);
-            }
-            else if (offset >= sh)
-            {
+            } else if (offset >= sh) {
                 scrollable.scrollTo(sliderPos+sliderSize);
-            }
-            else
-            {
+            } else {
                 scrolling = true;
             }
             break;
@@ -185,13 +180,13 @@ public class GUIScrollBar extends ActivatableGUIElement implements ScrollableLis
         }
     }
 
-    /** {@inheritDoc} */
+    /**
+     * {@inheritDoc}
+     */
     @Override
-    public void mouseReleased(@NotNull final MouseEvent e)
-    {
+    public void mouseReleased(@NotNull final MouseEvent e) {
         super.mouseReleased(e);
-        switch (e.getButton())
-        {
+        switch (e.getButton()) {
         case MouseEvent.BUTTON1:
             scrolling = false;
             break;
@@ -204,13 +199,13 @@ public class GUIScrollBar extends ActivatableGUIElement implements ScrollableLis
         }
     }
 
-    /** {@inheritDoc} */
+    /**
+     * {@inheritDoc}
+     */
     @Override
-    public void mouseDragged(@NotNull final MouseEvent e)
-    {
+    public void mouseDragged(@NotNull final MouseEvent e) {
         super.mouseDragged(e);
-        if (scrolling)
-        {
+        if (scrolling) {
             scrollable.scrollTo(getSliderPos(e.getY()-offset));
         }
     }
@@ -220,8 +215,7 @@ public class GUIScrollBar extends ActivatableGUIElement implements ScrollableLis
      * @param yPixels the y-coordinate within the gui element
      * @return the position in slider-coordinates
      */
-    private int getSliderPos(final int yPixels)
-    {
+    private int getSliderPos(final int yPixels) {
         return (int)(yPixels*(double)(valueSize-sliderSize)/(getHeight()-getSliderHeightPixels())+0.5);
     }
 
@@ -230,18 +224,12 @@ public class GUIScrollBar extends ActivatableGUIElement implements ScrollableLis
      * valid value.
      * @param pos the slider position
      */
-    private void setPosition(final int pos)
-    {
-        if (pos < valueMin)
-        {
+    private void setPosition(final int pos) {
+        if (pos < valueMin) {
             sliderPos = valueMin;
-        }
-        else if (pos+sliderSize > valueMin+valueSize)
-        {
+        } else if (pos+sliderSize > valueMin+valueSize) {
             sliderPos = valueMin+valueSize-sliderSize;
-        }
-        else
-        {
+        } else {
             sliderPos = pos;
         }
         setChanged();
@@ -251,26 +239,24 @@ public class GUIScrollBar extends ActivatableGUIElement implements ScrollableLis
      * Returns the height of the slider in pixels.
      * @return the height of the slider in pixels
      */
-    private int getSliderHeightPixels()
-    {
+    private int getSliderHeightPixels() {
         return proportionalSlider ? Math.max((int)(getHeight()*(double)sliderSize/valueSize+0.5), getWidth()) : getWidth();
     }
 
     /**
      * Returns the y-coordinate of the slider.
      * @param sh the height of the slider in pixels
-     *
      * @return The y-coordinate.
      */
-    private int getSliderPosPixels(final int sh)
-    {
+    private int getSliderPosPixels(final int sh) {
         return (int)(sliderPos*(double)(getHeight()-sh)/(valueSize-sliderSize)+0.5);
     }
 
-    /** {@inheritDoc} */
+    /**
+     * {@inheritDoc}
+     */
     @Override
-    protected void render(@NotNull final Graphics g)
-    {
+    protected void render(@NotNull final Graphics g) {
         final int sh = getSliderHeightPixels();
         final int sy = getSliderPosPixels(sh);
         g.setColor(colorBackground);
@@ -279,4 +265,5 @@ public class GUIScrollBar extends ActivatableGUIElement implements ScrollableLis
         g.setColor(colorForeground);
         g.fillRect(0, sy, getWidth(), sh);
     }
+
 }

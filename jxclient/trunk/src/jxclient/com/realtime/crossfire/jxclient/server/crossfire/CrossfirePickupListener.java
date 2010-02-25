@@ -25,8 +25,7 @@ package com.realtime.crossfire.jxclient.server.crossfire;
  * Interface for listeners interested in "pickup" messages.
  * @author Andreas Kirschbaum
  */
-public interface CrossfirePickupListener
-{
+public interface CrossfirePickupListener {
 
     /**
      * A "pickup" message has been received.

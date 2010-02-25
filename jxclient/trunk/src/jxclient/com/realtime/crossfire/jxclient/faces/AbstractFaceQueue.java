@@ -31,38 +31,38 @@ import org.jetbrains.annotations.NotNull;
  * implement only the actual face loading code.
  * @author Andreas Kirschbaum
  */
-public abstract class AbstractFaceQueue implements FaceQueue
-{
+public abstract class AbstractFaceQueue implements FaceQueue {
+
     /**
      * The registered {@link FaceQueueListener}s.
      */
     @NotNull
     private final Collection<FaceQueueListener> faceQueueListeners = new LinkedList<FaceQueueListener>();
 
-    /** {@inheritDoc} */
+    /**
+     * {@inheritDoc}
+     */
     @Override
-    public void addFaceQueueListener(@NotNull final FaceQueueListener faceQueueListener)
-    {
+    public void addFaceQueueListener(@NotNull final FaceQueueListener faceQueueListener) {
         faceQueueListeners.add(faceQueueListener);
     }
 
-    /** {@inheritDoc} */
+    /**
+     * {@inheritDoc}
+     */
     @Override
-    public void removeFaceQueueListener(@NotNull final FaceQueueListener faceQueueListener)
-    {
+    public void removeFaceQueueListener(@NotNull final FaceQueueListener faceQueueListener) {
         faceQueueListeners.remove(faceQueueListener);
     }
 
     /**
-     * Notify all listener with {@link
-     * FaceQueueListener#faceLoaded(Face, FaceImages)}.
+     * Notify all listener with {@link FaceQueueListener#faceLoaded(Face,
+     * FaceImages)}.
      * @param face the face that has been loaded
      * @param faceImages the face images instance that has been loaded
      */
-    protected void fireFaceLoaded(@NotNull final Face face, @NotNull final FaceImages faceImages)
-    {
-        for (final FaceQueueListener faceQueueListener : faceQueueListeners)
-        {
+    protected void fireFaceLoaded(@NotNull final Face face, @NotNull final FaceImages faceImages) {
+        for (final FaceQueueListener faceQueueListener : faceQueueListeners) {
             faceQueueListener.faceLoaded(face, faceImages);
         }
     }
@@ -71,11 +71,10 @@ public abstract class AbstractFaceQueue implements FaceQueue
      * Notify all listener with {@link FaceQueueListener#faceFailed(Face)}.
      * @param face the face that has failed to load
      */
-    protected void fireFaceFailed(@NotNull final Face face)
-    {
-        for (final FaceQueueListener faceQueueListener : faceQueueListeners)
-        {
+    protected void fireFaceFailed(@NotNull final Face face) {
+        for (final FaceQueueListener faceQueueListener : faceQueueListeners) {
             faceQueueListener.faceFailed(face);
         }
     }
+
 }

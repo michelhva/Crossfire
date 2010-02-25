@@ -38,8 +38,8 @@ import org.jetbrains.annotations.Nullable;
  * FacesManagerListener}s are notified.
  * @author Andreas Kirschbaum
  */
-public class FacesManager
-{
+public class FacesManager {
+
     /**
      * The resource name of the "unknown" face.
      */
@@ -53,8 +53,7 @@ public class FacesManager
     private final FaceCache faceCache;
 
     /**
-     * The {@link FaceQueue} instance used to load faces not present
-     * in-memory.
+     * The {@link FaceQueue} instance used to load faces not present in-memory.
      */
     @NotNull
     private final FaceQueue faceQueue;
@@ -81,20 +80,17 @@ public class FacesManager
      * The {@link FaceQueueListener} registered to {@link #faceQueue}.
      */
     @NotNull
-    private final FaceQueueListener faceQueueListener = new FaceQueueListener()
-    {
+    private final FaceQueueListener faceQueueListener = new FaceQueueListener() {
         /** {@inheritDoc} */
         @Override
-        public void faceLoaded(@NotNull final Face face, @NotNull final FaceImages faceImages)
-        {
+        public void faceLoaded(@NotNull final Face face, @NotNull final FaceImages faceImages) {
             face.setFaceImages(faceImages);
             fireFaceUpdated(face);
         }
 
         /** {@inheritDoc} */
         @Override
-        public void faceFailed(@NotNull final Face face)
-        {
+        public void faceFailed(@NotNull final Face face) {
             face.setFaceImages(unknownFaceImages);
             fireFaceUpdated(face);
         }
@@ -106,8 +102,7 @@ public class FacesManager
      * @param faceQueue the face queue to use
      * @throws IOException if the unknown image resource cannot be loaded
      */
-    public FacesManager(@NotNull final FaceCache faceCache, @NotNull final FaceQueue faceQueue) throws IOException
-    {
+    public FacesManager(@NotNull final FaceCache faceCache, @NotNull final FaceQueue faceQueue) throws IOException {
         this.faceCache = faceCache;
         this.faceQueue = faceQueue;
         faceQueue.addFaceQueueListener(faceQueueListener);
@@ -124,8 +119,7 @@ public class FacesManager
      * @return the face, or the "unknown" face if the face is not loaded
      */
     @NotNull
-    public ImageIcon getOriginalImageIcon(final int faceNum)
-    {
+    public ImageIcon getOriginalImageIcon(final int faceNum) {
         return getFaceImages(faceNum).getOriginalImageIcon();
     }
 
@@ -137,8 +131,7 @@ public class FacesManager
      * @return the face, or the "unknown" face if the face is not loaded
      */
     @NotNull
-    public ImageIcon getScaledImageIcon(final int faceNum)
-    {
+    public ImageIcon getScaledImageIcon(final int faceNum) {
         return getFaceImages(faceNum).getScaledImageIcon();
     }
 
@@ -150,8 +143,7 @@ public class FacesManager
      * @return the face, or the "unknown" face if the face is not loaded
      */
     @NotNull
-    public ImageIcon getMagicMapImageIcon(final int faceNum)
-    {
+    public ImageIcon getMagicMapImageIcon(final int faceNum) {
         return getFaceImages(faceNum).getMagicMapImageIcon();
     }
 
@@ -162,8 +154,7 @@ public class FacesManager
      * @return the face
      */
     @NotNull
-    public Face getFace(final int faceNum)
-    {
+    public Face getFace(final int faceNum) {
         getFaceImages(faceNum);
         return faceCache.getFace(faceNum);
     }
@@ -175,10 +166,8 @@ public class FacesManager
      * @return the face or <code>null</code> for the empty face
      */
     @Nullable
-    public Face getFace2(final int faceNum)
-    {
-        if (faceNum == 0)
-        {
+    public Face getFace2(final int faceNum) {
+        if (faceNum == 0) {
             return null;
         }
 
@@ -194,17 +183,14 @@ public class FacesManager
      * @return the face images information
      */
     @NotNull
-    private FaceImages getFaceImages(final int faceNum)
-    {
-        if (faceNum == 0)
-        {
+    private FaceImages getFaceImages(final int faceNum) {
+        if (faceNum == 0) {
             return emptyFaceImages;
         }
 
         final Face face = faceCache.getFace(faceNum);
         final FaceImages faceImages = face.getFaceImages();
-        if (faceImages != null)
-        {
+        if (faceImages != null) {
             return faceImages;
         }
 
@@ -216,10 +202,8 @@ public class FacesManager
      * Notifies all {@link FacesManagerListener}s that a face has been updated.
      * @param face the face
      */
-    private void fireFaceUpdated(@NotNull final Face face)
-    {
-        for (final FacesManagerListener facesManagerListener : facesManagerListeners)
-        {
+    private void fireFaceUpdated(@NotNull final Face face) {
+        for (final FacesManagerListener facesManagerListener : facesManagerListeners) {
             facesManagerListener.faceUpdated(face);
         }
     }
@@ -228,8 +212,7 @@ public class FacesManager
      * Adds a {@link FacesManagerListener} to be notified about updated faces.
      * @param facesManagerListener the listener
      */
-    public void addFacesManagerListener(@NotNull final FacesManagerListener facesManagerListener)
-    {
+    public void addFacesManagerListener(@NotNull final FacesManagerListener facesManagerListener) {
         facesManagerListeners.add(facesManagerListener);
     }
 
@@ -238,17 +221,16 @@ public class FacesManager
      * faces.
      * @param facesManagerListener the listener
      */
-    public void removeFacesManagerListener(@NotNull final FacesManagerListener facesManagerListener)
-    {
+    public void removeFacesManagerListener(@NotNull final FacesManagerListener facesManagerListener) {
         facesManagerListeners.remove(facesManagerListener);
     }
 
     /**
      * Forgets about pending faces.
      */
-    public void reset()
-    {
+    public void reset() {
         faceCache.reset();
         faceQueue.reset();
     }
+
 }

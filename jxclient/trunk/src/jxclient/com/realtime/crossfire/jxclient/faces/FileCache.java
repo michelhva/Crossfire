@@ -35,8 +35,8 @@ import org.jetbrains.annotations.Nullable;
  * A disk based cache for image files.
  * @author Andreas Kirschbaum
  */
-public class FileCache implements ImageCache
-{
+public class FileCache implements ImageCache {
+
     /**
      * The directory where the images are saved.
      */
@@ -47,17 +47,17 @@ public class FileCache implements ImageCache
      * Creates a new instance.
      * @param cacheDir the directory where the images are saved
      */
-    public FileCache(@NotNull final File cacheDir)
-    {
+    public FileCache(@NotNull final File cacheDir) {
         this.cacheDir = cacheDir;
         cacheDir.mkdirs();
     }
 
-    /** {@inheritDoc} */
+    /**
+     * {@inheritDoc}
+     */
     @Nullable
     @Override
-    public ImageIcon load(@NotNull final Face face)
-    {
+    public ImageIcon load(@NotNull final Face face) {
         return load(face.getFaceName(), face.getFaceChecksum());
     }
 
@@ -66,45 +66,37 @@ public class FileCache implements ImageCache
      * @param faceName the image name to retrieve
      * @param faceChecksum the checksum to retrieve
      * @return the image icon, or <code>null</code> if the cache does not
-     * contain the image
+     *         contain the image
      */
     @Nullable
-    private ImageIcon load(@NotNull final String faceName, final int faceChecksum)
-    {
+    private ImageIcon load(@NotNull final String faceName, final int faceChecksum) {
         final File file = getImageFileName(faceName, faceChecksum);
         final long len = file.length();
-        if (len >= 0x10000 || len <= 0)
-        {
+        if (len >= 0x10000 || len <= 0) {
             return null;
         }
         final byte[] data = new byte[(int)len];
-        try
-        {
+        try {
             final FileInputStream fis = new FileInputStream(file);
-            try
-            {
-                if (fis.read(data) != data.length)
-                {
+            try {
+                if (fis.read(data) != data.length) {
                     return null;
                 }
-            }
-            finally
-            {
+            } finally {
                 fis.close();
             }
-        }
-        catch (final IOException ex)
-        {
+        } catch (final IOException ex) {
             return null;
         }
         final ImageIcon imageIcon = new ImageIcon(data); // cannot use ImageIcon(String) since this caches "file not found"
         return imageIcon.getIconWidth() <= 0 && imageIcon.getIconHeight() <= 0 ? null : imageIcon;
     }
 
-    /** {@inheritDoc} */
+    /**
+     * {@inheritDoc}
+     */
     @Override
-    public void save(@NotNull final Face face, @NotNull final ImageIcon imageIcon)
-    {
+    public void save(@NotNull final Face face, @NotNull final ImageIcon imageIcon) {
         save(face.getFaceName(), face.getFaceChecksum(), imageIcon);
     }
 
@@ -114,8 +106,7 @@ public class FileCache implements ImageCache
      * @param faceChecksum the checksum to save
      * @param imageIcon the image icon to store
      */
-    public void save(@NotNull final String faceName, final int faceChecksum, @NotNull final Icon imageIcon)
-    {
+    public void save(@NotNull final String faceName, final int faceChecksum, @NotNull final Icon imageIcon) {
         Images.saveImageIcon(getImageFileName(faceName, faceChecksum), imageIcon);
     }
 
@@ -126,15 +117,14 @@ public class FileCache implements ImageCache
      * @return the hashed image name
      */
     @NotNull
-    private File getImageFileName(@NotNull final String faceName, final int faceChecksum)
-    {
+    private File getImageFileName(@NotNull final String faceName, final int faceChecksum) {
         final String quotedFaceName = Filenames.quoteName(faceName);
         final String dirName = quotedFaceName.substring(0, Math.min(2, quotedFaceName.length()));
         final File dir = new File(new File(cacheDir, dirName), quotedFaceName);
-        if (!dir.exists() && !dir.mkdirs())
-        {
+        if (!dir.exists() && !dir.mkdirs()) {
             System.err.println("Cannot create directory: "+dir);
         }
         return new File(dir, Integer.toString(faceChecksum));
     }
+
 }

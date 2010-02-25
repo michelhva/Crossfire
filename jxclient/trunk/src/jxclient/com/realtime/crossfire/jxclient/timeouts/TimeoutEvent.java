@@ -23,13 +23,13 @@ package com.realtime.crossfire.jxclient.timeouts;
 
 /**
  * Interface for timeout events to be registered with {@link Timeouts}.
- *
  * @author Andreas Kirschbaum
  */
-public interface TimeoutEvent
-{
+public interface TimeoutEvent {
+
     /**
      * Will be called when the timeout event is due.
      */
     void timeout();
+
 }

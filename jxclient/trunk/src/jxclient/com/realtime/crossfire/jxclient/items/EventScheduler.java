@@ -19,7 +19,6 @@
  * Copyright (C) 2006-2010 Andreas Kirschbaum.
  */
 
-
 package com.realtime.crossfire.jxclient.items;
 
 import java.lang.reflect.InvocationTargetException;
@@ -34,8 +33,8 @@ import org.jetbrains.annotations.NotNull;
  * faster than once per {@link #eventSchedulerCallback}.
  * @author Andreas Kirschbaum
  */
-public class EventScheduler
-{
+public class EventScheduler {
+
     /**
      * The delay beween a call to {@link #trigger()} until the {@link
      * #eventSchedulerCallback} is notified.
@@ -83,56 +82,39 @@ public class EventScheduler
      * #eventSchedulerCallback}.
      */
     @NotNull
-    private final Runnable runnable = new Runnable()
-    {
+    private final Runnable runnable = new Runnable() {
         /** {@inheritDoc} */
         @Override
-        public void run()
-        {
-            for (; ;)
-            {
-                try
-                {
+        public void run() {
+            for (; ;) {
+                try {
                     final long now = System.currentTimeMillis();
                     final boolean fireEvent;
-                    synchronized (sync)
-                    {
-                        if (nextAction == 0)
-                        {
+                    synchronized (sync) {
+                        if (nextAction == 0) {
                             sync.wait();
                             fireEvent = false;
-                        }
-                        else
-                        {
+                        } else {
                             final long delay = Math.max(nextAction, nextActionNotBefore)-now;
-                            if (delay > 0)
-                            {
+                            if (delay > 0) {
                                 sync.wait(delay);
                                 fireEvent = false;
-                            }
-                            else
-                            {
+                            } else {
                                 fireEvent = true;
                             }
                         }
                     }
 
-                    if (fireEvent)
-                    {
-                        try
-                        {
+                    if (fireEvent) {
+                        try {
                             SwingUtilities.invokeAndWait(eventSchedulerCallback);
-                        }
-                        catch (final InvocationTargetException ex)
-                        {
+                        } catch (final InvocationTargetException ex) {
                             throw new AssertionError(ex);
                         }
                         nextAction = System.currentTimeMillis();
                         nextActionNotBefore = System.currentTimeMillis()+afterEventDelay;
                     }
-                }
-                catch (final InterruptedException ex)
-                {
+                } catch (final InterruptedException ex) {
                     thread.interrupt();
                     break;
                 }
@@ -146,8 +128,7 @@ public class EventScheduler
      * @param afterEventDelay the "after-event" delay
      * @param eventSchedulerCallback the callback to notify
      */
-    public EventScheduler(final int delay, final int afterEventDelay, @NotNull final Runnable eventSchedulerCallback)
-    {
+    public EventScheduler(final int delay, final int afterEventDelay, @NotNull final Runnable eventSchedulerCallback) {
         this.delay = delay;
         this.afterEventDelay = 1/*afterEventDelay*/;
         this.eventSchedulerCallback = eventSchedulerCallback;
@@ -157,21 +138,19 @@ public class EventScheduler
     /**
      * Activates this instance.
      */
-    public void start()
-    {
+    public void start() {
         thread.start();
     }
 
     /**
      * Notifies the callback.
      */
-    public void trigger()
-    {
+    public void trigger() {
         final long now = System.currentTimeMillis();
-        synchronized (sync)
-        {
+        synchronized (sync) {
             nextAction = now+delay;
             sync.notifyAll();
         }
     }
+
 }

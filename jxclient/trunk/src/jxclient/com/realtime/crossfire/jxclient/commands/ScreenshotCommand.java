@@ -37,11 +37,11 @@ import org.jetbrains.annotations.NotNull;
  * into a .png file.
  * @author Andreas Kirschbaum
  */
-public class ScreenshotCommand extends AbstractCommand
-{
+public class ScreenshotCommand extends AbstractCommand {
+
     /**
-     * The number of auto-created screenshot filenames. If more than this
-     * number of screenshots are created, old files will be recycled.
+     * The number of auto-created screenshot filenames. If more than this number
+     * of screenshots are created, old files will be recycled.
      */
     private static final int SCREENSHOT_FILENAMES = 10;
 
@@ -62,64 +62,52 @@ public class ScreenshotCommand extends AbstractCommand
      * @param windowRenderer the renderer to use
      * @param crossfireServerConnection the connection instance
      */
-    public ScreenshotCommand(@NotNull final JXCWindowRenderer windowRenderer, @NotNull final CrossfireServerConnection crossfireServerConnection)
-    {
+    public ScreenshotCommand(@NotNull final JXCWindowRenderer windowRenderer, @NotNull final CrossfireServerConnection crossfireServerConnection) {
         super(crossfireServerConnection);
         this.windowRenderer = windowRenderer;
     }
 
-    /** {@inheritDoc} */
+    /**
+     * {@inheritDoc}
+     */
     @Override
-    public boolean allArguments()
-    {
+    public boolean allArguments() {
         return true;
     }
 
-    /** {@inheritDoc} */
+    /**
+     * {@inheritDoc}
+     */
     @Override
-    public void execute(@NotNull final String args)
-    {
+    public void execute(@NotNull final String args) {
         final File file;
-        if (args.length() == 0)
-        {
-            try
-            {
+        if (args.length() == 0) {
+            try {
                 file = Filenames.getSettingsFile("screenshot"+screenshotId+".png");
-            }
-            catch (final IOException ex)
-            {
+            } catch (final IOException ex) {
                 drawInfoError("Failed to create screenshot filename: "+ex.getMessage());
                 return;
             }
             screenshotId = (screenshotId+1)%SCREENSHOT_FILENAMES;
-        }
-        else
-        {
+        } else {
             file = new File(args);
         }
 
         final BufferedImage image = new BufferedImage(windowRenderer.getWindowWidth(), windowRenderer.getWindowHeight(), BufferedImage.TYPE_INT_RGB);
         final Graphics grfx = image.createGraphics();
-        try
-        {
+        try {
             grfx.setColor(Color.black);
             grfx.fillRect(0, 0, windowRenderer.getWindowWidth(), windowRenderer.getWindowHeight());
             windowRenderer.redraw(grfx);
-        }
-        finally
-        {
+        } finally {
             grfx.dispose();
         }
-        try
-        {
+        try {
             ImageIO.write(image, "png", file);
-        }
-        catch (final IOException ex)
-        {
+        } catch (final IOException ex) {
             drawInfoError("Cannot write screenshot "+file.getPath()+": "+ex.getMessage());
             return;
-        }
-        catch (final NullPointerException ex) // ImageIO.write() crashes if the destination cannot be written to
+        } catch (final NullPointerException ex) // ImageIO.write() crashes if the destination cannot be written to
         {
             drawInfoError("Cannot write screenshot "+file.getPath());
             return;
@@ -127,4 +115,5 @@ public class ScreenshotCommand extends AbstractCommand
 
         drawInfo("Saved screenshot to "+file.getPath());
     }
+
 }

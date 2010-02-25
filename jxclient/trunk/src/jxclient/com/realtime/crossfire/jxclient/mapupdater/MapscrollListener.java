@@ -22,17 +22,17 @@
 package com.realtime.crossfire.jxclient.mapupdater;
 
 /**
- *
- * @version 1.0
  * @author Lauwenmark
+ * @version 1.0
  * @since 1.0
  */
-public interface MapscrollListener
-{
+public interface MapscrollListener {
+
     /**
      * The map contents have scrolled.
      * @param dx the x-distance
      * @param dy the y-distance
      */
     void mapScrolled(int dx, int dy);
+
 }

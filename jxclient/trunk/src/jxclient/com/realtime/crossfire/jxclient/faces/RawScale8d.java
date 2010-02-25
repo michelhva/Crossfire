@@ -29,20 +29,28 @@ import org.jetbrains.annotations.NotNull;
  * Scales down a raw image to an eigth in both dimensions.
  * @author Andreas Kirschbaum
  */
-public class RawScale8d
-{
-    /** The source image data. */
+public class RawScale8d {
+
+    /**
+     * The source image data.
+     */
     @NotNull
     private final int[] srcImage;
 
-    /** The destination image data. */
+    /**
+     * The destination image data.
+     */
     @NotNull
     private final int[] dstImage;
 
-    /** The width of the source image. */
+    /**
+     * The width of the source image.
+     */
     private final int width;
 
-    /** The height of the source image. */
+    /**
+     * The height of the source image.
+     */
     private final int height;
 
     /**
@@ -57,8 +65,7 @@ public class RawScale8d
      * @param dataWidth the width of the source image
      * @param dataHeight the height of the source image
      */
-    public RawScale8d(@NotNull final int[] imageData, final int dataWidth, final int dataHeight)
-    {
+    public RawScale8d(@NotNull final int[] imageData, final int dataWidth, final int dataHeight) {
         width = dataWidth;
         height = dataHeight;
         srcImage = imageData;
@@ -71,8 +78,7 @@ public class RawScale8d
      * @param y the y location of the pixel to set
      * @param p the value of the pixel to set
      */
-    private void setDestPixel(final int x, final int y, final int p)
-    {
+    private void setDestPixel(final int x, final int y, final int p) {
         dstImage[x+(y*width/8)] = p;
     }
 
@@ -82,8 +88,7 @@ public class RawScale8d
      * @param y the y location of the pixel to retrieve
      * @return the pixel value at the specified location
      */
-    private int getSourcePixel(final int x, final int y)
-    {
+    private int getSourcePixel(final int x, final int y) {
         return srcImage[x+y*width];
     }
 
@@ -92,16 +97,12 @@ public class RawScale8d
      * @param x the x location in the source image of the pixel to process
      * @param y the y location in the source image of the pixel to process
      */
-    private void process(final int x, final int y)
-    {
+    private void process(final int x, final int y) {
         pixels.clear();
-        for (int dx = 0; dx < 8; dx++)
-        {
-            for (int dy = 0; dy < 8; dy++)
-            {
+        for (int dx = 0; dx < 8; dx++) {
+            for (int dy = 0; dy < 8; dy++) {
                 final int value = getSourcePixel(8*x+dx, 8*y+dy);
-                if (value != 0)
-                {
+                if (value != 0) {
                     final Integer count = pixels.get(value);
                     pixels.put(value, count == null ? 1 : count+1);
                 }
@@ -109,11 +110,9 @@ public class RawScale8d
         }
         int maxCount = 0;
         int maxPixel = 0;
-        for (final Map.Entry<Integer, Integer> e : pixels.entrySet())
-        {
+        for (final Map.Entry<Integer, Integer> e : pixels.entrySet()) {
             final int thisCount = e.getValue();
-            if (thisCount > maxCount)
-            {
+            if (thisCount > maxCount) {
                 maxCount = thisCount;
                 maxPixel = e.getKey();
             }
@@ -127,19 +126,17 @@ public class RawScale8d
      * Returns the scale image data. Note this is the method that does the work
      * so it might take some time to process.
      * @return an array of pixels 64 times smaller than the input array
-     * containing the scaled down image
+     *         containing the scaled down image
      */
     @NotNull
-    public int[] getScaledData()
-    {
-        for (int x = 0; x < width/8; x++)
-        {
-            for (int y = 0; y < height/8; y++)
-            {
+    public int[] getScaledData() {
+        for (int x = 0; x < width/8; x++) {
+            for (int y = 0; y < height/8; y++) {
                 process(x, y);
             }
         }
 
         return dstImage;
     }
+
 }

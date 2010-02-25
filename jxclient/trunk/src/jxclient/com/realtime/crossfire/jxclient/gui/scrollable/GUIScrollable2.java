@@ -27,18 +27,16 @@ import org.jetbrains.annotations.NotNull;
 /**
  * A {@link GUIScrollable} that can be attached to {@link GUIScrollBar}s.
  */
-public interface GUIScrollable2 extends GUIScrollable
-{
+public interface GUIScrollable2 extends GUIScrollable {
+
     /**
      * Add a scrollable listener to be informed about changes.
-     *
      * @param listener The listener to add.
      */
     void addScrollableListener(@NotNull ScrollableListener listener);
 
     /**
      * Remove a scrollable listener.
-     *
      * @param listener The listener to remove.
      */
     void removeScrollableListener(@NotNull ScrollableListener listener);
@@ -47,8 +45,8 @@ public interface GUIScrollable2 extends GUIScrollable
      * Scroll to the given location. The possible range is given by a previous
      * notification through a listener registered with {@link
      * #addScrollableListener(ScrollableListener)}.
-     *
      * @param pos The location to scroll to.
      */
     void scrollTo(int pos);
+
 }

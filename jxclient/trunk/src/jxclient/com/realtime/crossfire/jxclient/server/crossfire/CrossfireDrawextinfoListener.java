@@ -24,12 +24,12 @@ package com.realtime.crossfire.jxclient.server.crossfire;
 import org.jetbrains.annotations.NotNull;
 
 /**
- *
- * @version 1.0
  * @author Lauwenmark
+ * @version 1.0
  * @since 1.0
  */
-public interface CrossfireDrawextinfoListener
-{
+public interface CrossfireDrawextinfoListener {
+
     void commandDrawextinfoReceived(int color, int type, int subtype, @NotNull String message);
+
 }

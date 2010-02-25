@@ -35,8 +35,8 @@ import org.jetbrains.annotations.Nullable;
  * changes.
  * @author Andreas Kirschbaum
  */
-public class GuiStateManager
-{
+public class GuiStateManager {
+
     /**
      * The current GUI state.
      */
@@ -60,18 +60,14 @@ public class GuiStateManager
      * progress changes.
      */
     @NotNull
-    private final CrossfireServerConnectionListener crossfireServerConnectionListener = new CrossfireServerConnectionListener()
-    {
+    private final CrossfireServerConnectionListener crossfireServerConnectionListener = new CrossfireServerConnectionListener() {
         /** {@inheritDoc} */
         @Override
-        public void clientSocketStateChanged(@NotNull final ClientSocketState clientSocketState)
-        {
-            for (final GuiStateListener listener : guiStateListeners)
-            {
+        public void clientSocketStateChanged(@NotNull final ClientSocketState clientSocketState) {
+            for (final GuiStateListener listener : guiStateListeners) {
                 listener.connecting(clientSocketState);
             }
-            if (clientSocketState == ClientSocketState.CONNECTED)
-            {
+            if (clientSocketState == ClientSocketState.CONNECTED) {
                 changeGUI(GuiState.CONNECTED);
             }
         }
@@ -82,44 +78,36 @@ public class GuiStateManager
      * changes.
      */
     @NotNull
-    private final ClientSocketListener clientSocketListener = new ClientSocketListener()
-    {
+    private final ClientSocketListener clientSocketListener = new ClientSocketListener() {
         /** {@inheritDoc} */
         @Override
-        public void connecting()
-        {
+        public void connecting() {
             // ignore
         }
 
         /** {@inheritDoc} */
         @Override
-        public void connected()
-        {
+        public void connected() {
             // ignore
         }
 
         /** {@inheritDoc} */
         @Override
-        public void packetReceived(@NotNull final byte[] buf, final int start, final int end)
-        {
+        public void packetReceived(@NotNull final byte[] buf, final int start, final int end) {
             // ignore
         }
 
         /** {@inheritDoc} */
         @Override
-        public void packetSent(@NotNull final byte[] buf, final int len)
-        {
+        public void packetSent(@NotNull final byte[] buf, final int len) {
             // ignore
         }
 
         /** {@inheritDoc} */
         @Override
-        public void disconnecting(@NotNull final String reason)
-        {
-            synchronized (sync)
-            {
-                if (guiState == GuiState.CONNECTING)
-                {
+        public void disconnecting(@NotNull final String reason) {
+            synchronized (sync) {
+                if (guiState == GuiState.CONNECTING) {
                     changeGUI(GuiState.CONNECT_FAILED, reason);
                 }
             }
@@ -127,12 +115,9 @@ public class GuiStateManager
 
         /** {@inheritDoc} */
         @Override
-        public void disconnected(@NotNull final String reason)
-        {
-            synchronized (sync)
-            {
-                if (guiState != GuiState.CONNECT_FAILED)
-                {
+        public void disconnected(@NotNull final String reason) {
+            synchronized (sync) {
+                if (guiState != GuiState.CONNECT_FAILED) {
                     changeGUI(GuiState.METASERVER);
                 }
             }
@@ -144,8 +129,7 @@ public class GuiStateManager
      * @param crossfireServerConnection the crossfire server connection to
      * monitor
      */
-    public GuiStateManager(@NotNull final CrossfireServerConnection crossfireServerConnection)
-    {
+    public GuiStateManager(@NotNull final CrossfireServerConnection crossfireServerConnection) {
         crossfireServerConnection.addCrossfireServerConnectionListener(crossfireServerConnectionListener);
         crossfireServerConnection.addClientSocketListener(clientSocketListener);
     }
@@ -154,8 +138,7 @@ public class GuiStateManager
      * Sets a new {@link GuiState}.
      * @param guiState the new gui state
      */
-    public void changeGUI(final GuiState guiState)
-    {
+    public void changeGUI(final GuiState guiState) {
         changeGUI(guiState, null);
     }
 
@@ -164,54 +147,44 @@ public class GuiStateManager
      * @param guiState the new gui state
      * @param param a parameter for the new gui state
      */
-    public void changeGUI(@NotNull final GuiState guiState, @Nullable final String param)
-    {
-        synchronized (sync)
-        {
-            if (this.guiState == guiState)
-            {
+    public void changeGUI(@NotNull final GuiState guiState, @Nullable final String param) {
+        synchronized (sync) {
+            if (this.guiState == guiState) {
                 return;
             }
 
             this.guiState = guiState;
 
-            switch (guiState)
-            {
+            switch (guiState) {
             case START:
-                for (final GuiStateListener listener : guiStateListeners)
-                {
+                for (final GuiStateListener listener : guiStateListeners) {
                     listener.start();
                 }
                 break;
 
             case METASERVER:
-                for (final GuiStateListener listener : guiStateListeners)
-                {
+                for (final GuiStateListener listener : guiStateListeners) {
                     listener.metaserver();
                 }
                 break;
 
             case CONNECTING:
-                for (final GuiStateListener listener : guiStateListeners)
-                {
+                for (final GuiStateListener listener : guiStateListeners) {
                     listener.preConnecting(param);
                 }
-                for (final GuiStateListener listener : guiStateListeners)
-                {
+                for (final GuiStateListener listener : guiStateListeners) {
                     listener.connecting(param);
                 }
                 break;
 
             case CONNECTED:
-                for (final GuiStateListener listener : guiStateListeners)
-                {
+                for (final GuiStateListener listener : guiStateListeners) {
                     listener.connected();
                 }
                 break;
 
             case CONNECT_FAILED:
-                for (final GuiStateListener listener : guiStateListeners)
-                {
+                for (final GuiStateListener listener : guiStateListeners) {
                     listener.connectFailed(param);
                 }
                 break;
@@ -224,10 +197,8 @@ public class GuiStateManager
      * @return the gui state
      */
     @Nullable
-    public GuiState getGuiState()
-    {
-        synchronized (sync)
-        {
+    public GuiState getGuiState() {
+        synchronized (sync) {
             return guiState;
         }
     }
@@ -236,8 +207,7 @@ public class GuiStateManager
      * Adds a gui state listener.
      * @param listener the listener to add
      */
-    public void addGuiStateListener(@NotNull final GuiStateListener listener)
-    {
+    public void addGuiStateListener(@NotNull final GuiStateListener listener) {
         guiStateListeners.add(listener);
     }
 
@@ -245,8 +215,7 @@ public class GuiStateManager
      * Removes a gui state listener.
      * @param listener the listener to remove
      */
-    public void removeGuiStateListener(@NotNull final GuiStateListener listener)
-    {
+    public void removeGuiStateListener(@NotNull final GuiStateListener listener) {
         guiStateListeners.remove(listener);
     }
 
@@ -254,16 +223,15 @@ public class GuiStateManager
      * Connects to a Crossfire server.
      * @param serverInfo the server to connect to
      */
-    public void connect(@NotNull final String serverInfo)
-    {
+    public void connect(@NotNull final String serverInfo) {
         changeGUI(GuiState.CONNECTING, serverInfo);
     }
 
     /**
      * Disconnects from the  Crossfire server.
      */
-    public void disconnect()
-    {
+    public void disconnect() {
         changeGUI(GuiState.METASERVER);
     }
+
 }

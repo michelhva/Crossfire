@@ -25,31 +25,29 @@ package com.realtime.crossfire.jxclient.gui.gauge;
  * Implements an {@link Orientation} which grows west to east.
  * @author Andreas Kirschbaum
  */
-public class OrientationWE extends AbstractOrientation
-{
+public class OrientationWE extends AbstractOrientation {
+
     /**
      * Creates a new instance.
      */
-    public OrientationWE()
-    {
+    public OrientationWE() {
         recalc();
     }
 
-    /** {@inheritDoc} */
+    /**
+     * {@inheritDoc}
+     */
     @Override
-    protected void recalc()
-    {
+    protected void recalc() {
         x = 0;
-        if (isNegativeImage())
-        {
+        if (isNegativeImage()) {
             w = calc(min-cur, max-min, width);
-        }
-        else
-        {
+        } else {
             w = calc(cur-min, max-min, width);
         }
 
         y = 0;
         h = height;
     }
+
 }

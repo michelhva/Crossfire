@@ -27,8 +27,8 @@ import org.jetbrains.annotations.NotNull;
  * Interface for listeners interested in {@link FaceQueue} events.
  * @author Andreas Kirschbaum
  */
-public interface FaceQueueListener
-{
+public interface FaceQueueListener {
+
     /**
      * Called after a {@link Face} has been loaded successfully.
      * @param face the face that has been loaded
@@ -41,4 +41,5 @@ public interface FaceQueueListener
      * @param face the face that has failed to load
      */
     void faceFailed(@NotNull Face face);
+
 }

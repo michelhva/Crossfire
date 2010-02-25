@@ -28,12 +28,11 @@ import com.realtime.crossfire.jxclient.server.socket.ClientSocketState;
 import org.jetbrains.annotations.NotNull;
 
 /**
- * A {@link SkinEvent} that executes a {@link CommandList} at connection
- * setup.
+ * A {@link SkinEvent} that executes a {@link CommandList} at connection setup.
  * @author Andreas Kirschbaum
  */
-public class ConnectionStateSkinEvent implements SkinEvent
-{
+public class ConnectionStateSkinEvent implements SkinEvent {
+
     /**
      * The {@link CommandList} to execute.
      */
@@ -50,54 +49,46 @@ public class ConnectionStateSkinEvent implements SkinEvent
      * The {@link GuiStateListener} attached to {@link #guiStateManager}.
      */
     @NotNull
-    private final GuiStateListener guiStateListener = new GuiStateListener()
-    {
+    private final GuiStateListener guiStateListener = new GuiStateListener() {
         /** {@inheritDoc} */
         @Override
-        public void start()
-        {
+        public void start() {
             // ignore
         }
 
         /** {@inheritDoc} */
         @Override
-        public void metaserver()
-        {
+        public void metaserver() {
             // ignore
         }
 
         /** {@inheritDoc} */
         @Override
-        public void preConnecting(@NotNull final String serverInfo)
-        {
+        public void preConnecting(@NotNull final String serverInfo) {
             // ignore
         }
 
         /** {@inheritDoc} */
         @Override
-        public void connecting(@NotNull final String serverInfo)
-        {
+        public void connecting(@NotNull final String serverInfo) {
             // ignore
         }
 
         /** {@inheritDoc} */
         @Override
-        public void connecting(@NotNull final ClientSocketState clientSocketState)
-        {
+        public void connecting(@NotNull final ClientSocketState clientSocketState) {
             // ignore
         }
 
         /** {@inheritDoc} */
         @Override
-        public void connected()
-        {
+        public void connected() {
             commandList.execute();
         }
 
         /** {@inheritDoc} */
         @Override
-        public void connectFailed(@NotNull final String reason)
-        {
+        public void connectFailed(@NotNull final String reason) {
             // ignore
         }
     };
@@ -107,17 +98,18 @@ public class ConnectionStateSkinEvent implements SkinEvent
      * @param commandList the command list to execute
      * @param guiStateManager the gui state manager to watch
      */
-    public ConnectionStateSkinEvent(@NotNull final CommandList commandList, @NotNull final GuiStateManager guiStateManager)
-    {
+    public ConnectionStateSkinEvent(@NotNull final CommandList commandList, @NotNull final GuiStateManager guiStateManager) {
         this.commandList = commandList;
         this.guiStateManager = guiStateManager;
         guiStateManager.addGuiStateListener(guiStateListener);
     }
 
-    /** {@inheritDoc} */
+    /**
+     * {@inheritDoc}
+     */
     @Override
-    public void dispose()
-    {
+    public void dispose() {
         guiStateManager.removeGuiStateListener(guiStateListener);
     }
+
 }

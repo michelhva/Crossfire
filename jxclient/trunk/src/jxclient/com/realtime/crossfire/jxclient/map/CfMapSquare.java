@@ -36,8 +36,8 @@ import org.jetbrains.annotations.Nullable;
  * object.
  * @author Andreas Kirschbaum
  */
-public class CfMapSquare
-{
+public class CfMapSquare {
+
     /**
      * The default darkness value for newly creates squares.
      */
@@ -99,8 +99,7 @@ public class CfMapSquare
      * @param y the absolute map y-coordinate of the top left corner of this
      * patch
      */
-    public CfMapSquare(@NotNull final CfMapSquareListener mapSquareListener, final int x, final int y)
-    {
+    public CfMapSquare(@NotNull final CfMapSquareListener mapSquareListener, final int x, final int y) {
         this.mapSquareListener = mapSquareListener;
         this.x = x;
         this.y = y;
@@ -110,8 +109,7 @@ public class CfMapSquare
      * Returns the absolute map x-coordinate of this square.
      * @return the x-coordinate
      */
-    public int getX()
-    {
+    public int getX() {
         return x;
     }
 
@@ -119,16 +117,14 @@ public class CfMapSquare
      * Returns the absolute map y-coordinate of this square.
      * @return the y-coordinate
      */
-    public int getY()
-    {
+    public int getY() {
         return y;
     }
 
     /**
      * Marks this square as dirty, i.e., needing redraw.
      */
-    public void dirty()
-    {
+    public void dirty() {
         mapSquareListener.squareModified(this);
     }
 
@@ -136,28 +132,22 @@ public class CfMapSquare
      * Marks this square as 'fog-og-war'. The values will be still returned
      * until a new value will be set.
      */
-    public void clear()
-    {
-        if (fogOfWar)
-        {
+    public void clear() {
+        if (fogOfWar) {
             return;
         }
 
         // need to check individual values because the server sometimes sends a
         // "clear" command for already cleared squares; without this check the
         // black square would be displayed as fog-of-war
-        if (darkness == DEFAULT_DARKNESS)
-        {
+        if (darkness == DEFAULT_DARKNESS) {
             int layer;
-            for (layer = 0; layer < faces.length; layer++)
-            {
-                if (faces[layer] != DEFAULT_FACE || heads[layer] != null)
-                {
+            for (layer = 0; layer < faces.length; layer++) {
+                if (faces[layer] != DEFAULT_FACE || heads[layer] != null) {
                     break;
                 }
             }
-            if (layer >= faces.length)
-            {
+            if (layer >= faces.length) {
                 return;
             }
         }
@@ -172,14 +162,12 @@ public class CfMapSquare
      * <code>255</code>; 0=dark, 255=full bright
      * @return whether fog-of-war has been cleared
      */
-    public boolean setDarkness(final int darkness)
-    {
+    public boolean setDarkness(final int darkness) {
         final boolean result = fogOfWar;
         final boolean markDirty = fogOfWar || this.darkness != darkness;
         fogOfWar = false;
         this.darkness = darkness;
-        if (markDirty)
-        {
+        if (markDirty) {
             dirty();
         }
         return result;
@@ -189,8 +177,7 @@ public class CfMapSquare
      * Returns the darkness value of this square.
      * @return the darkness value of the square. 0=dark, 255=full bright
      */
-    public int getDarkness()
-    {
+    public int getDarkness() {
         return darkness;
     }
 
@@ -200,10 +187,8 @@ public class CfMapSquare
      * <code>LAYERS-1</code>
      * @param face the face to set
      */
-    public void setFace(final int layer, @Nullable final Face face)
-    {
-        if (faces[layer] != face)
-        {
+    public void setFace(final int layer, @Nullable final Face face) {
+        if (faces[layer] != face) {
             faces[layer] = face;
             dirty();
         }
@@ -215,8 +200,7 @@ public class CfMapSquare
      * @return the face value
      */
     @Nullable
-    public Face getFace(final int layer)
-    {
+    public Face getFace(final int layer) {
         return faces[layer];
     }
 
@@ -229,10 +213,8 @@ public class CfMapSquare
      * @param setAlways if set, always update the face; if unset, only update
      * when fog-of-war
      */
-    public void setHeadMapSquare(final int layer, @Nullable final CfMapSquare mapSquare, final boolean setAlways)
-    {
-        if (heads[layer] != mapSquare && (setAlways || heads[layer] == null || heads[layer].isFogOfWar()))
-        {
+    public void setHeadMapSquare(final int layer, @Nullable final CfMapSquare mapSquare, final boolean setAlways) {
+        if (heads[layer] != mapSquare && (setAlways || heads[layer] == null || heads[layer].isFogOfWar())) {
             heads[layer] = mapSquare;
             dirty();
         }
@@ -245,12 +227,10 @@ public class CfMapSquare
      *         contain a multi-tail
      */
     @Nullable
-    public CfMapSquare getHeadMapSquare(final int layer)
-    {
+    public CfMapSquare getHeadMapSquare(final int layer) {
         // suppress parts of fog-of-war objects if this square is not
         // fog-of-war
-        if (heads[layer] != null && !fogOfWar && heads[layer].fogOfWar)
-        {
+        if (heads[layer] != null && !fogOfWar && heads[layer].fogOfWar) {
             return null;
         }
 
@@ -261,8 +241,7 @@ public class CfMapSquare
      * Determines if the square is not up-to-date.
      * @return whether this square contains fog-of-war data
      */
-    public boolean isFogOfWar()
-    {
+    public boolean isFogOfWar() {
         return fogOfWar;
     }
 
@@ -270,10 +249,8 @@ public class CfMapSquare
      * Returns and resets the "fog-of-war" flag.
      * @return whether this square's fog-of-war state has been reset
      */
-    public boolean resetFogOfWar()
-    {
-        if (!fogOfWar)
-        {
+    public boolean resetFogOfWar() {
+        if (!fogOfWar) {
             return false;
         }
 
@@ -287,8 +264,8 @@ public class CfMapSquare
      */
     @NotNull
     @Override
-    public String toString()
-    {
+    public String toString() {
         return x+"/"+y;
     }
+
 }

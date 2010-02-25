@@ -32,8 +32,8 @@ import org.jetbrains.annotations.NotNull;
  * Creates gui element instances from string representations.
  * @author Andreas Kirschbaum
  */
-public class GuiElementParser
-{
+public class GuiElementParser {
+
     /**
      * The defined {@link GUIElement}s.
      */
@@ -44,8 +44,7 @@ public class GuiElementParser
      * Creates a new instance.
      * @param definedGUIElements the defined gui elements
      */
-    public GuiElementParser(@NotNull final JXCSkinCache<GUIElement> definedGUIElements)
-    {
+    public GuiElementParser(@NotNull final JXCSkinCache<GUIElement> definedGUIElements) {
         this.definedGUIElements = definedGUIElements;
     }
 
@@ -56,11 +55,9 @@ public class GuiElementParser
      * @throws JXCSkinException if the element name is undefined
      */
     @NotNull
-    public GUIText lookupTextElement(@NotNull final String name) throws JXCSkinException
-    {
+    public GUIText lookupTextElement(@NotNull final String name) throws JXCSkinException {
         final Object element = definedGUIElements.lookup(name);
-        if (!(element instanceof GUIText))
-        {
+        if (!(element instanceof GUIText)) {
             throw new JXCSkinException("element "+name+" is not a text field");
         }
 
@@ -74,14 +71,13 @@ public class GuiElementParser
      * @throws JXCSkinException if the element name is undefined
      */
     @NotNull
-    public AbstractLabel lookupLabelElement(@NotNull final String name) throws JXCSkinException
-    {
+    public AbstractLabel lookupLabelElement(@NotNull final String name) throws JXCSkinException {
         final Object element = definedGUIElements.lookup(name);
-        if (!(element instanceof AbstractLabel))
-        {
+        if (!(element instanceof AbstractLabel)) {
             throw new JXCSkinException("element "+name+" is not a label");
         }
 
         return (AbstractLabel)element;
     }
+
 }

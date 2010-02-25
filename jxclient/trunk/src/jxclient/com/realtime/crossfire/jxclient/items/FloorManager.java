@@ -19,13 +19,12 @@
  * Copyright (C) 2006-2010 Andreas Kirschbaum.
  */
 
-
 package com.realtime.crossfire.jxclient.items;
 
 /**
  * Manages the items on the floor.
  * @author Andreas Kirschbaum
  */
-public class FloorManager extends AbstractManager
-{
+public class FloorManager extends AbstractManager {
+
 }

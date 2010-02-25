@@ -33,11 +33,10 @@ import org.jetbrains.annotations.NotNull;
 
 /**
  * A factory class to create "checkbox" instances.
- *
  * @author Andreas Kirschbaum
  */
-public class CheckBoxFactory
-{
+public class CheckBoxFactory {
+
     /**
      * The image for the "checked" state.
      */
@@ -64,17 +63,12 @@ public class CheckBoxFactory
 
     /**
      * Create a new instance.
-     *
      * @param checked The image for the "checked" state.
-     *
      * @param unchecked The image for the "unchecked" state.
-     *
      * @param font The font to use.
-     *
      * @param color The text color.
      */
-    public CheckBoxFactory(@NotNull final BufferedImage checked, @NotNull final BufferedImage unchecked, @NotNull final Font font, @NotNull final Color color)
-    {
+    public CheckBoxFactory(@NotNull final BufferedImage checked, @NotNull final BufferedImage unchecked, @NotNull final Font font, @NotNull final Color color) {
         this.checked = checked;
         this.unchecked = unchecked;
         this.font = font;
@@ -83,32 +77,22 @@ public class CheckBoxFactory
 
     /**
      * Create a new checkbox.
-     *
      * @param tooltipManager the tooltip manager to update
-     *
      * @param elementListener the element listener to notify
-     *
      * @param name The name of this element.
-     *
      * @param x The x-coordinate for drawing this element to screen; it is
      * relative to <code>gui</code>.
-     *
      * @param y The y-coordinate for drawing this element to screen; it is
      * relative to <code>gui</code>.
-     *
      * @param w The width for drawing this element to screen.
-     *
      * @param h The height for drawing this element to screen.
-     *
      * @param option The option to affect.
-     *
      * @param text The button text.
-     *
      * @return The new checkbox.
      */
     @NotNull
-    public GUIElement newCheckBox(@NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final String name, final int x, final int y, final int w, final int h, @NotNull final CheckBoxOption option, @NotNull final String text)
-    {
-            return new GUICheckBox(tooltipManager, elementListener, name, x, y, w, h, checked, unchecked, font, color, option, text);
+    public GUIElement newCheckBox(@NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final String name, final int x, final int y, final int w, final int h, @NotNull final CheckBoxOption option, @NotNull final String text) {
+        return new GUICheckBox(tooltipManager, elementListener, name, x, y, w, h, checked, unchecked, font, color, option, text);
     }
+
 }

@@ -24,13 +24,12 @@ package com.realtime.crossfire.jxclient.server.crossfire;
 import org.jetbrains.annotations.NotNull;
 
 /**
- *
- * @version 1.0
  * @author Lauwenmark
+ * @version 1.0
  * @since 1.0
  */
-public interface CrossfireDrawinfoListener
-{
+public interface CrossfireDrawinfoListener {
+
     int NDI_BLACK = 0;
 
     int NDI_WHITE = 1;
@@ -58,4 +57,5 @@ public interface CrossfireDrawinfoListener
     int NDI_TAN = 12;
 
     void commandDrawinfoReceived(@NotNull String text, int type);
+
 }

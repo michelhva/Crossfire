@@ -87,8 +87,8 @@ import org.jetbrains.annotations.Nullable;
  * @author Lauwenmark
  * @author Andreas Kirschbaum
  */
-public class JXCWindow extends JFrame
-{
+public class JXCWindow extends JFrame {
+
     /**
      * TODO: Remove when more options are implemented in the start screen gui.
      */
@@ -256,12 +256,10 @@ public class JXCWindow extends JFrame
      * player wants.
      */
     @NotNull
-    private final WindowFocusListener windowFocusListener = new WindowAdapter()
-    {
+    private final WindowFocusListener windowFocusListener = new WindowAdapter() {
         /** {@inheritDoc} */
         @Override
-        public void windowLostFocus(final WindowEvent e)
-        {
+        public void windowLostFocus(final WindowEvent e) {
             keyHandler.reset();
             commandQueue.stopRunning();
         }
@@ -271,12 +269,10 @@ public class JXCWindow extends JFrame
      * The listener to detect a changed player name.
      */
     @NotNull
-    private final PlayerListener playerListener = new PlayerListener()
-    {
+    private final PlayerListener playerListener = new PlayerListener() {
         /** {@inheritDoc} */
         @Override
-        public void playerReceived(@NotNull final CfPlayer player)
-        {
+        public void playerReceived(@NotNull final CfPlayer player) {
             guiManager.playerReceived();
             commandQueue.sendNcom(true, 1, "output-count 1"); // to make message merging work reliably
             characterPickup.update();                         // reset pickup mode
@@ -284,15 +280,13 @@ public class JXCWindow extends JFrame
 
         /** {@inheritDoc} */
         @Override
-        public void playerAdded(@NotNull final CfPlayer player)
-        {
+        public void playerAdded(@NotNull final CfPlayer player) {
             connection.setCharacter(player.getName());
         }
 
         /** {@inheritDoc} */
         @Override
-        public void playerRemoved(@NotNull final CfPlayer player)
-        {
+        public void playerRemoved(@NotNull final CfPlayer player) {
             connection.setCharacter(null);
         }
     };
@@ -302,47 +296,40 @@ public class JXCWindow extends JFrame
      * changes.
      */
     @NotNull
-    private final ClientSocketListener clientSocketListener = new ClientSocketListener()
-    {
+    private final ClientSocketListener clientSocketListener = new ClientSocketListener() {
         /** {@inheritDoc} */
         @Override
-        public void connecting()
-        {
+        public void connecting() {
             setConnected(true);
         }
 
         /** {@inheritDoc} */
         @Override
-        public void connected()
-        {
+        public void connected() {
             // ignore
         }
 
         /** {@inheritDoc} */
         @Override
-        public void packetReceived(@NotNull final byte[] buf, final int start, final int end)
-        {
+        public void packetReceived(@NotNull final byte[] buf, final int start, final int end) {
             // ignore
         }
 
         /** {@inheritDoc} */
         @Override
-        public void packetSent(@NotNull final byte[] buf, final int len)
-        {
+        public void packetSent(@NotNull final byte[] buf, final int len) {
             // ignore
         }
 
         /** {@inheritDoc} */
         @Override
-        public void disconnecting(@NotNull final String reason)
-        {
+        public void disconnecting(@NotNull final String reason) {
             // ignore
         }
 
         /** {@inheritDoc} */
         @Override
-        public void disconnected(@NotNull final String reason)
-        {
+        public void disconnected(@NotNull final String reason) {
             setConnected(false);
         }
     };
@@ -351,39 +338,32 @@ public class JXCWindow extends JFrame
      * The window listener attached to this frame.
      */
     @NotNull
-    private final WindowListener windowListener = new WindowAdapter()
-    {
+    private final WindowListener windowListener = new WindowAdapter() {
         /** {@inheritDoc} */
         @Override
-        public void windowClosing(@NotNull final WindowEvent e)
-        {
-            if (!guiManager.openQuitDialog())
-            {
+        public void windowClosing(@NotNull final WindowEvent e) {
+            if (!guiManager.openQuitDialog()) {
                 guiManager.terminate();
             }
         }
 
         /** {@inheritDoc} */
         @Override
-        public void windowClosed(@NotNull final WindowEvent e)
-        {
-            if(!isVisible())
-            {
+        public void windowClosed(@NotNull final WindowEvent e) {
+            if (!isVisible()) {
                 guiManager.terminate();
             }
         }
 
         /** {@inheritDoc} */
         @Override
-        public void windowIconified(@NotNull final WindowEvent e)
-        {
+        public void windowIconified(@NotNull final WindowEvent e) {
             windowRenderer.setInhibitPaintIconified(true);
         }
 
         /** {@inheritDoc} */
         @Override
-        public void windowDeiconified(@NotNull final WindowEvent e)
-        {
+        public void windowDeiconified(@NotNull final WindowEvent e) {
             windowRenderer.setInhibitPaintIconified(false);
         }
     };
@@ -392,34 +372,27 @@ public class JXCWindow extends JFrame
      * The {@link KeyListener} attached to the main window.
      */
     @NotNull
-    private final KeyListener keyListener = new KeyListener()
-    {
+    private final KeyListener keyListener = new KeyListener() {
         /** {@inheritDoc} */
         @Override
-        public void keyTyped(@NotNull final KeyEvent e)
-        {
-            synchronized (semaphoreDrawing)
-            {
+        public void keyTyped(@NotNull final KeyEvent e) {
+            synchronized (semaphoreDrawing) {
                 keyHandler.keyTyped(e);
             }
         }
 
         /** {@inheritDoc} */
         @Override
-        public void keyPressed(@NotNull final KeyEvent e)
-        {
-            synchronized (semaphoreDrawing)
-            {
+        public void keyPressed(@NotNull final KeyEvent e) {
+            synchronized (semaphoreDrawing) {
                 keyHandler.keyPressed(e);
             }
         }
 
         /** {@inheritDoc} */
         @Override
-        public void keyReleased(@NotNull final KeyEvent e)
-        {
-            synchronized (semaphoreDrawing)
-            {
+        public void keyReleased(@NotNull final KeyEvent e) {
+            synchronized (semaphoreDrawing) {
                 keyHandler.keyReleased(e);
             }
         }
@@ -429,20 +402,16 @@ public class JXCWindow extends JFrame
      * The {@link KeyHandlerListener} attached to {@link #keyHandler}.
      */
     @NotNull
-    private final KeyHandlerListener keyHandlerListener = new KeyHandlerListener()
-    {
+    private final KeyHandlerListener keyHandlerListener = new KeyHandlerListener() {
         /** {@inheritDoc} */
         @Override
-        public void escPressed()
-        {
-            if (guiStateManager.getGuiState() == GuiState.CONNECT_FAILED)
-            {
+        public void escPressed() {
+            if (guiStateManager.getGuiState() == GuiState.CONNECT_FAILED) {
                 guiStateManager.disconnect();
                 return;
             }
 
-            switch (guiManager.escPressed(isConnected()))
-            {
+            switch (guiManager.escPressed(isConnected())) {
             case 0:
                 break;
 
@@ -458,8 +427,7 @@ public class JXCWindow extends JFrame
 
         /** {@inheritDoc} */
         @Override
-        public void keyReleased()
-        {
+        public void keyReleased() {
             guiManager.closeKeybindDialog();
         }
     };
@@ -469,14 +437,11 @@ public class JXCWindow extends JFrame
      * query messages to open/close dialogs.
      */
     @NotNull
-    private final CrossfireQueryListener crossfireQueryListener = new CrossfireQueryListener()
-    {
+    private final CrossfireQueryListener crossfireQueryListener = new CrossfireQueryListener() {
         /** {@inheritDoc} */
         @Override
-        public void commandQueryReceived(@NotNull final String prompt, final int queryType)
-        {
-            synchronized (semaphoreDrawing)
-            {
+        public void commandQueryReceived(@NotNull final String prompt, final int queryType) {
+            synchronized (semaphoreDrawing) {
                 guiManager.openQueryDialog(prompt, queryType);
             }
         }
@@ -487,25 +452,21 @@ public class JXCWindow extends JFrame
      * connections.
      */
     @NotNull
-    private final GuiStateListener guiStateListener = new GuiStateListener()
-    {
+    private final GuiStateListener guiStateListener = new GuiStateListener() {
         /** {@inheritDoc} */
         @Override
-        public void start()
-        {
+        public void start() {
             guiManager.closeTransientDialogs();
             itemsManager.removeCrossfirePlayerListener(playerListener);
             server.removeCrossfireQueryListener(crossfireQueryListener);
-            if (DISABLE_START_GUI)
-            {
+            if (DISABLE_START_GUI) {
                 guiManager.terminate();
             }
         }
 
         /** {@inheritDoc} */
         @Override
-        public void metaserver()
-        {
+        public void metaserver() {
             guiManager.closeTransientDialogs();
             itemsManager.removeCrossfirePlayerListener(playerListener);
             server.removeCrossfireQueryListener(crossfireQueryListener);
@@ -513,15 +474,13 @@ public class JXCWindow extends JFrame
 
         /** {@inheritDoc} */
         @Override
-        public void preConnecting(@NotNull final String serverInfo)
-        {
+        public void preConnecting(@NotNull final String serverInfo) {
             connection.setHost(serverInfo);
         }
 
         /** {@inheritDoc} */
         @Override
-        public void connecting(@NotNull final String serverInfo)
-        {
+        public void connecting(@NotNull final String serverInfo) {
             guiManager.closeTransientDialogs();
             facesManager.reset();
             itemsManager.addCrossfirePlayerListener(playerListener);
@@ -530,22 +489,19 @@ public class JXCWindow extends JFrame
 
         /** {@inheritDoc} */
         @Override
-        public void connecting(@NotNull final ClientSocketState clientSocketState)
-        {
+        public void connecting(@NotNull final ClientSocketState clientSocketState) {
             guiManager.closeTransientDialogs();
         }
 
         /** {@inheritDoc} */
         @Override
-        public void connected()
-        {
+        public void connected() {
             guiManager.closeTransientDialogs();
         }
 
         /** {@inheritDoc} */
         @Override
-        public void connectFailed(@NotNull final String reason)
-        {
+        public void connectFailed(@NotNull final String reason) {
             guiManager.closeTransientDialogs();
         }
     };
@@ -555,12 +511,10 @@ public class JXCWindow extends JFrame
      * server.
      */
     @NotNull
-    private final SentReplyListener sentReplyListener = new SentReplyListener()
-    {
+    private final SentReplyListener sentReplyListener = new SentReplyListener() {
         /** {@inheritDoc} */
         @Override
-        public void replySent(@NotNull final String text)
-        {
+        public void replySent(@NotNull final String text) {
             guiManager.closeQueryDialog();
         }
     };
@@ -588,8 +542,7 @@ public class JXCWindow extends JFrame
      * @param facesManager the faces manager to use
      * @param itemsManager the items manager to use
      */
-    public JXCWindow(@NotNull final Object terminateSync, @NotNull final CrossfireServerConnection server, @NotNull final Object semaphoreRedraw, final boolean debugGui, @Nullable final Writer debugKeyboard, @Nullable final Writer debugScreen, @NotNull final Settings settings, @NotNull final OptionManager optionManager, @NotNull final MetaserverModel metaserverModel, @NotNull final Resolution resolution, @NotNull final GuiStateManager guiStateManager, @NotNull final ExperienceTable experienceTable, @NotNull final SkillSet skillSet, @NotNull final Stats stats, @NotNull final FacesManager facesManager, @NotNull final ItemsManager itemsManager)
-    {
+    public JXCWindow(@NotNull final Object terminateSync, @NotNull final CrossfireServerConnection server, @NotNull final Object semaphoreRedraw, final boolean debugGui, @Nullable final Writer debugKeyboard, @Nullable final Writer debugScreen, @NotNull final Settings settings, @NotNull final OptionManager optionManager, @NotNull final MetaserverModel metaserverModel, @NotNull final Resolution resolution, @NotNull final GuiStateManager guiStateManager, @NotNull final ExperienceTable experienceTable, @NotNull final SkillSet skillSet, @NotNull final Stats stats, @NotNull final FacesManager facesManager, @NotNull final ItemsManager itemsManager) {
         super("");
         this.server = server;
         this.debugGui = debugGui;
@@ -616,12 +569,9 @@ public class JXCWindow extends JFrame
         guiManager = new GuiManager(guiStateManager, semaphoreDrawing, terminateSync, new TooltipManager(windowRenderer), settings, server, macros, windowRenderer, scriptManager, commandQueue, optionManager, debugGui ? mouseTracker : null);
         shortcutsManager = new ShortcutsManager(commandQueue, spellsManager);
         keyHandler = new KeyHandler(debugKeyboard, guiManager.getKeybindingsManager(), commandQueue, windowRenderer, keyHandlerListener);
-        try
-        {
+        try {
             characterPickup = new Pickup(commandQueue, optionManager);
-        }
-        catch (final OptionException ex)
-        {
+        } catch (final OptionException ex) {
             throw new AssertionError();
         }
         setFocusTraversalKeysEnabled(false);
@@ -634,29 +584,21 @@ public class JXCWindow extends JFrame
         guiStateManager.addGuiStateListener(guiStateListener);
     }
 
-    public void init(@NotNull final String skinName, final boolean fullScreen, @Nullable final String serverInfo)
-    {
+    public void init(@NotNull final String skinName, final boolean fullScreen, @Nullable final String serverInfo) {
         addKeyListener(keyListener);
         JXCSkin skin;
-        try
-        {
+        try {
             skin = loadSkin(skinName);
-        }
-        catch (final JXCSkinException ex)
-        {
-            if (skinName.equals(Options.DEFAULT_SKIN))
-            {
+        } catch (final JXCSkinException ex) {
+            if (skinName.equals(Options.DEFAULT_SKIN)) {
                 System.err.println("cannot load skin "+skinName+": "+ex.getMessage());
                 System.exit(1);
             }
 
             System.err.println("cannot load skin "+skinName+": "+ex.getMessage()+", trying default skin");
-            try
-            {
+            try {
                 skin = loadSkin(Options.DEFAULT_SKIN);
-            }
-            catch (final JXCSkinException ex2)
-            {
+            } catch (final JXCSkinException ex2) {
                 System.err.println("cannot load default skin "+Options.DEFAULT_SKIN+": "+ex2.getMessage());
                 System.exit(1);
                 throw new AssertionError();
@@ -666,10 +608,8 @@ public class JXCWindow extends JFrame
         guiManager.setSkin(skin);
         optionManager.loadOptions();
         keyHandler.setKeyBindings(skin.getDefaultKeyBindings());
-        if(!windowRenderer.setResolution(skin.getResolution(), fullScreen))
-        {
-            if(!windowRenderer.setResolution(skin.getResolution(), false))
-            {
+        if (!windowRenderer.setResolution(skin.getResolution(), fullScreen)) {
+            if (!windowRenderer.setResolution(skin.getResolution(), false)) {
                 System.err.println("cannot create window with resolution "+skin.getResolution());
                 System.exit(1);
                 throw new AssertionError();
@@ -678,12 +618,9 @@ public class JXCWindow extends JFrame
         DialogStateParser.load(skin, windowRenderer);
         guiManager.initRendering();
 
-        if (serverInfo != null)
-        {
+        if (serverInfo != null) {
             guiStateManager.connect(serverInfo);
-        }
-        else
-        {
+        } else {
             guiStateManager.changeGUI(DISABLE_START_GUI ? GuiState.METASERVER : GuiState.START);
         }
         addMouseListener(mouseTracker);
@@ -694,8 +631,7 @@ public class JXCWindow extends JFrame
     /**
      * Frees all resources. Should be called before the application terminates.
      */
-    public void term()
-    {
+    public void term() {
         guiManager.term();
         optionManager.saveOptions();
     }
@@ -704,8 +640,7 @@ public class JXCWindow extends JFrame
      * {@inheritDoc}
      */
     @Override
-    public void paint(@NotNull final Graphics g)
-    {
+    public void paint(@NotNull final Graphics g) {
         windowRenderer.repaint();
     }
 
@@ -716,18 +651,14 @@ public class JXCWindow extends JFrame
      * @throws JXCSkinException if the skin file cannot be loaded
      */
     @NotNull
-    private JXCSkin loadSkin(@NotNull final String skinName) throws JXCSkinException
-    {
+    private JXCSkin loadSkin(@NotNull final String skinName) throws JXCSkinException {
         // check for skin in directory
         final File dir = new File(skinName);
         final KeyBindings defaultKeyBindings = new KeyBindings(null, guiManager.getCommands(), guiManager.getCommandCallback(), macros);
         final JXCSkinSource skinSource;
-        if (dir.exists() && dir.isDirectory())
-        {
+        if (dir.exists() && dir.isDirectory()) {
             skinSource = new JXCSkinDirSource(dir);
-        }
-        else
-        {
+        } else {
             // fallback: built-in resource
             skinSource = new JXCSkinClassSource("com/realtime/crossfire/jxclient/skins/"+skinName);
         }
@@ -742,10 +673,8 @@ public class JXCWindow extends JFrame
      * Records whether a server connection is active.
      * @param connected whether a server connection is active
      */
-    private void setConnected(final boolean connected)
-    {
-        synchronized (semaphoreConnected)
-        {
+    private void setConnected(final boolean connected) {
+        synchronized (semaphoreConnected) {
             this.connected = connected;
         }
     }
@@ -754,10 +683,8 @@ public class JXCWindow extends JFrame
      * Returns whether a server connection is active.
      * @return whether a server connection is active
      */
-    private boolean isConnected()
-    {
-        synchronized (semaphoreConnected)
-        {
+    private boolean isConnected() {
+        synchronized (semaphoreConnected) {
             return connected;
         }
     }
@@ -768,8 +695,8 @@ public class JXCWindow extends JFrame
      */
     @Deprecated
     @NotNull
-    public JXCWindowRenderer getWindowRenderer()
-    {
+    public JXCWindowRenderer getWindowRenderer() {
         return windowRenderer;
     }
+
 }

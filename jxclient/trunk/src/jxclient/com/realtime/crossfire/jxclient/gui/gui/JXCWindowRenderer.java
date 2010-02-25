@@ -57,8 +57,8 @@ import org.jetbrains.annotations.Nullable;
 /**
  * @author Andreas Kirschbaum
  */
-public class JXCWindowRenderer
-{
+public class JXCWindowRenderer {
+
     @NotNull
     private final JFrame frame;
 
@@ -106,8 +106,8 @@ public class JXCWindowRenderer
     private boolean openDialogsChanged = false;
 
     /**
-     * Currently opened dialogs. The ordering is the painting order: the
-     * topmost dialog is at the end.
+     * Currently opened dialogs. The ordering is the painting order: the topmost
+     * dialog is at the end.
      */
     @NotNull
     private final CopyOnWriteArrayList<Gui> openDialogs = new CopyOnWriteArrayList<Gui>();
@@ -192,12 +192,10 @@ public class JXCWindowRenderer
      * The {@link GuiAutoCloseListener} used to track auto-closing dialogs.
      */
     @NotNull
-    private final GuiAutoCloseListener guiAutoCloseListener = new GuiAutoCloseListener()
-    {
+    private final GuiAutoCloseListener guiAutoCloseListener = new GuiAutoCloseListener() {
         /** {@inheritDoc} */
         @Override
-        public void autoClosed(@NotNull final Gui gui)
-        {
+        public void autoClosed(@NotNull final Gui gui) {
             closeDialog(gui);
         }
     };
@@ -206,71 +204,60 @@ public class JXCWindowRenderer
      * The listener to detect map model changes.
      */
     @NotNull
-    private final CrossfireUpdateMapListener crossfireUpdateMapListener = new CrossfireUpdateMapListener()
-    {
+    private final CrossfireUpdateMapListener crossfireUpdateMapListener = new CrossfireUpdateMapListener() {
         /** {@inheritDoc} */
         @Override
-        public void newMap(final int mapWidth, final int mapHeight)
-        {
+        public void newMap(final int mapWidth, final int mapHeight) {
             // ignore
         }
 
         /** {@inheritDoc} */
         @Override
-        public void mapBegin()
-        {
+        public void mapBegin() {
             inhibitPaintMapUpdate = true;
             skippedPaint = false;
         }
 
         /** {@inheritDoc} */
         @Override
-        public void mapClear(final int x, final int y)
-        {
+        public void mapClear(final int x, final int y) {
             // ignore
         }
 
         /** {@inheritDoc} */
         @Override
-        public void mapDarkness(final int x, final int y, final int darkness)
-        {
+        public void mapDarkness(final int x, final int y, final int darkness) {
             // ignore
         }
 
         /** {@inheritDoc} */
         @Override
-        public void mapFace(final int x, final int y, final int layer, final int faceNum)
-        {
+        public void mapFace(final int x, final int y, final int layer, final int faceNum) {
             // ignore
         }
 
         /** {@inheritDoc} */
         @Override
-        public void mapAnimation(final int x, final int y, final int layer, final int animationNum, final int animationType)
-        {
+        public void mapAnimation(final int x, final int y, final int layer, final int animationNum, final int animationType) {
             // ignore
         }
 
         /** {@inheritDoc} */
         @Override
-        public void mapAnimationSpeed(final int x, final int y, final int layer, final int animSpeed)
-        {
+        public void mapAnimationSpeed(final int x, final int y, final int layer, final int animSpeed) {
             // ignore
         }
 
         /** {@inheritDoc} */
         @Override
-        public void scroll(final int dx, final int dy)
-        {
+        public void scroll(final int dx, final int dy) {
             // ignore
         }
 
         /** {@inheritDoc} */
         @Override
-        public void mapEnd()
-        {
-            if (skippedPaint)
-            {
+        public void mapEnd() {
+            if (skippedPaint) {
                 forcePaint = true;
             }
             inhibitPaintMapUpdate = false;
@@ -278,8 +265,7 @@ public class JXCWindowRenderer
 
         /** {@inheritDoc} */
         @Override
-        public void addAnimation(final int animation, final int flags, @NotNull final int[] faces)
-        {
+        public void addAnimation(final int animation, final int flags, @NotNull final int[] faces) {
             // ignore
         }
     };
@@ -288,12 +274,10 @@ public class JXCWindowRenderer
      * The {@link GUIElementListener} attached to all {@link GUIElement}s.
      */
     @NotNull
-    private final GUIElementListener elementListener = new GUIElementListener()
-    {
+    private final GUIElementListener elementListener = new GUIElementListener() {
         /** {@inheritDoc} */
         @Override
-        public void mouseClicked(@NotNull final Gui gui)
-        {
+        public void mouseClicked(@NotNull final Gui gui) {
             raiseDialog(gui);
         }
     };
@@ -308,8 +292,7 @@ public class JXCWindowRenderer
      * @param debugScreen the writer to write screen debug to or
      * <code>null</code>
      */
-    public JXCWindowRenderer(@NotNull final JFrame frame, @NotNull final MouseListener mouseTracker, @NotNull final Object redrawSemaphore, @NotNull final CrossfireServerConnection crossfireServerConnection, @Nullable final Writer debugScreen)
-    {
+    public JXCWindowRenderer(@NotNull final JFrame frame, @NotNull final MouseListener mouseTracker, @NotNull final Object redrawSemaphore, @NotNull final CrossfireServerConnection crossfireServerConnection, @Nullable final Writer debugScreen) {
         this.frame = frame;
         this.mouseTracker = mouseTracker;
         this.redrawSemaphore = redrawSemaphore;
@@ -323,8 +306,7 @@ public class JXCWindowRenderer
     /**
      * Repaint the window.
      */
-    public void repaint()
-    {
+    public void repaint() {
         forcePaint = true;
     }
 
@@ -335,14 +317,12 @@ public class JXCWindowRenderer
      * @param fullScreen whether full-screen mode should be used
      * @return whether the resolution has been changed
      */
-    public boolean setResolution(@NotNull final Resolution resolution, final boolean fullScreen)
-    {
+    public boolean setResolution(@NotNull final Resolution resolution, final boolean fullScreen) {
         debugScreenWrite("setResolution: resolution="+resolution+", fullScreen="+fullScreen);
 
         final DisplayMode currentDisplayMode = graphicsDevice.getDisplayMode();
         debugScreenWrite("setResolution: current display mode="+currentDisplayMode.getWidth()+"x"+currentDisplayMode.getHeight());
-        if(isFullScreen == fullScreen && resolution.getWidth() == windowWidth && resolution.getHeight() == windowHeight)
-        {
+        if (isFullScreen == fullScreen && resolution.getWidth() == windowWidth && resolution.getHeight() == windowHeight) {
             debugScreenWrite("setResolution: no change needed");
             debugScreenWrite("setResolution: success");
             return true;
@@ -350,8 +330,7 @@ public class JXCWindowRenderer
 
         // disable full-screen since switching from full-screen to full-screen
         // does not work reliably
-        if(isFullScreen)
-        {
+        if (isFullScreen) {
             debugScreenWrite("setResolution: resetting screen resolution to "+defaultDisplayMode.getWidth()+"x"+defaultDisplayMode.getHeight());
             graphicsDevice.setDisplayMode(defaultDisplayMode);
         }
@@ -361,8 +340,7 @@ public class JXCWindowRenderer
 
         debugScreenWrite("setResolution: disposing frame");
         frame.dispose();
-        if(fullScreen)
-        {
+        if (fullScreen) {
             final Dimension dimension = new Dimension(resolution.getWidth(), resolution.getHeight());
             debugScreenWrite("setResolution: full-screen requested, dimension="+dimension);
             frame.getRootPane().setPreferredSize(dimension);
@@ -370,8 +348,7 @@ public class JXCWindowRenderer
             frame.setUndecorated(true);
 
             // full-screen switch must happen before display mode change
-            if(!graphicsDevice.isFullScreenSupported())
-            {
+            if (!graphicsDevice.isFullScreenSupported()) {
                 debugScreenWrite("setResolution: full-screen mode is not supported");
                 graphicsDevice.setFullScreenWindow(null);
                 isFullScreen = false;
@@ -383,10 +360,8 @@ public class JXCWindowRenderer
             graphicsDevice.setFullScreenWindow(frame);
             isFullScreen = true;
 
-            if(!resolution.equalsDisplayMode(currentDisplayMode))
-            {
-                if(!graphicsDevice.isDisplayChangeSupported())
-                {
+            if (!resolution.equalsDisplayMode(currentDisplayMode)) {
+                if (!graphicsDevice.isDisplayChangeSupported()) {
                     debugScreenWrite("setResolution: screen resolution change is not supported");
                     graphicsDevice.setFullScreenWindow(null);
                     isFullScreen = false;
@@ -395,13 +370,10 @@ public class JXCWindowRenderer
                 }
 
                 final DisplayMode newDisplayMode = new DisplayMode(resolution.getWidth(), resolution.getHeight(), DisplayMode.BIT_DEPTH_MULTI, DisplayMode.REFRESH_RATE_UNKNOWN);
-                try
-                {
+                try {
                     debugScreenWrite("setResolution: setting screen resolution to "+newDisplayMode.getWidth()+"x"+newDisplayMode.getHeight());
                     graphicsDevice.setDisplayMode(newDisplayMode);
-                }
-                catch (final IllegalArgumentException ex)
-                {
+                } catch (final IllegalArgumentException ex) {
                     debugScreenWrite("setResolution: setting screen resolution failed: "+ex.getMessage());
                     isFullScreen = false;
                     debugScreenWrite("setResolution: resetting screen resolution to "+defaultDisplayMode.getWidth()+"x"+defaultDisplayMode.getHeight());
@@ -411,14 +383,10 @@ public class JXCWindowRenderer
                     debugScreenWrite("setResolution: failure");
                     return false;
                 }
-            }
-            else
-            {
+            } else {
                 debugScreenWrite("setResolution: requested resolution matches screen resolution");
             }
-        }
-        else
-        {
+        } else {
             debugScreenWrite("setResolution: windowed mode requested");
             frame.setUndecorated(false);
             frame.setResizable(false);
@@ -428,21 +396,19 @@ public class JXCWindowRenderer
 
             final Dimension maxDimension = getMaxWindowDimension(frameInsets);
             debugScreenWrite("setResolution: maximal window dimension="+maxDimension);
-            if(resolution.getWidth() > maxDimension.width || resolution.getHeight() > maxDimension.height)
-            {
-/*
-                frame.dispose();
-                debugScreenWrite("setResolution: failure");
-                return false;
-*/
+            if (resolution.getWidth() > maxDimension.width || resolution.getHeight() > maxDimension.height) {
+                /*
+                                frame.dispose();
+                                debugScreenWrite("setResolution: failure");
+                                return false;
+                */
                 debugScreenWrite("setResolution: window size exceeds maximum allowed size, ignoring");
             }
 
             final Dimension dimension = new Dimension(resolution.getWidth(), resolution.getHeight());
             debugScreenWrite("setResolution: setting window size to "+dimension);
             frame.getRootPane().setPreferredSize(dimension);
-            if(!wasDisplayed)
-            {
+            if (!wasDisplayed) {
                 wasDisplayed = true;
                 final Point centerPoint = graphicsEnvironment.getCenterPoint();
                 debugScreenWrite("setResolution: screen center point is "+centerPoint);
@@ -482,8 +448,7 @@ public class JXCWindowRenderer
      * @return the maximum dimension
      */
     @NotNull
-    private Dimension getMaxWindowDimension(@NotNull final Insets frameInsets)
-    {
+    private Dimension getMaxWindowDimension(@NotNull final Insets frameInsets) {
         final Rectangle maximumWindowBounds = graphicsEnvironment.getMaximumWindowBounds();
         debugScreenWrite("getMaxWindowDimension: maximum window bounds="+maximumWindowBounds);
 
@@ -497,12 +462,10 @@ public class JXCWindowRenderer
         return new Dimension(maxWidth, maxHeight);
     }
 
-    public void endRendering()
-    {
+    public void endRendering() {
         final GraphicsEnvironment ge = GraphicsEnvironment.getLocalGraphicsEnvironment();
         final GraphicsDevice gd = ge.getDefaultScreenDevice();
-        if(oldDisplayMode != null)
-        {
+        if (oldDisplayMode != null) {
             debugScreenWrite("setResolution: resetting screen resolution to "+oldDisplayMode.getWidth()+"x"+oldDisplayMode.getHeight());
             gd.setDisplayMode(oldDisplayMode);
             oldDisplayMode = null;
@@ -511,72 +474,55 @@ public class JXCWindowRenderer
         gd.setFullScreenWindow(null);
     }
 
-    public void redrawGUI()
-    {
-        if (inhibitPaintMapUpdate || inhibitPaintIconified)
-        {
+    public void redrawGUI() {
+        if (inhibitPaintMapUpdate || inhibitPaintIconified) {
             skippedPaint = true;
             return;
         }
 
-        if (forcePaint)
-        {
+        if (forcePaint) {
             forcePaint = false;
-        }
-        else if (!needRedraw())
-        {
+        } else if (!needRedraw()) {
             return;
         }
 
-        do
-        {
-            do
-            {
+        do {
+            do {
                 assert bufferStrategy != null;
                 final Graphics g = bufferStrategy.getDrawGraphics();
-                try
-                {
+                try {
                     g.translate(offsetX, offsetY);
                     assert bufferStrategy != null;
-                    if (bufferStrategy.contentsRestored())
-                    {
+                    if (bufferStrategy.contentsRestored()) {
                         redrawBlack(g);
                     }
                     redraw(g);
-                }
-                finally
-                {
+                } finally {
                     g.dispose();
                 }
                 assert bufferStrategy != null;
-            }
-            while (bufferStrategy.contentsLost());
+            } while (bufferStrategy.contentsLost());
             assert bufferStrategy != null;
             bufferStrategy.show();
             assert bufferStrategy != null;
-        }
-        while (bufferStrategy.contentsLost());
+        } while (bufferStrategy.contentsLost());
     }
 
     /**
      * Paints the view into the given graphics instance.
      * @param g the graphics instance to paint to
      */
-    public void redraw(@NotNull final Graphics g)
-    {
-        synchronized (redrawSemaphore)
-        {
+    public void redraw(@NotNull final Graphics g) {
+        synchronized (redrawSemaphore) {
             redrawGUIBasic(g);
             redrawGUIDialog(g);
             redrawTooltip(g);
         }
     }
 
-    public void clearGUI(@NotNull final Gui gui)
-    {
+    public void clearGUI(@NotNull final Gui gui) {
         setCurrentGui(gui);
-        for (int ig = 0; ig < 3; ig++)
-        {
+        for (int ig = 0; ig < 3; ig++) {
             assert bufferStrategy != null;
             final Graphics g = bufferStrategy.getDrawGraphics();
             g.translate(offsetX, offsetY);
@@ -587,72 +533,55 @@ public class JXCWindowRenderer
         }
     }
 
-    private void redrawGUIBasic(@NotNull final Graphics g)
-    {
+    private void redrawGUIBasic(@NotNull final Graphics g) {
         currentGuiChanged = false;
         currentGui.redraw(g);
     }
 
-    private void redrawGUIDialog(@NotNull final Graphics g)
-    {
+    private void redrawGUIDialog(@NotNull final Graphics g) {
         openDialogsChanged = false;
-        for (final Gui dialog : openDialogs)
-        {
-            if (!dialog.isHidden(rendererGuiState))
-            {
+        for (final Gui dialog : openDialogs) {
+            if (!dialog.isHidden(rendererGuiState)) {
                 dialog.redraw(g);
             }
         }
     }
 
-    private void redrawTooltip(@NotNull final Graphics g)
-    {
+    private void redrawTooltip(@NotNull final Graphics g) {
         final GUIElement tmpTooltip = tooltip;
-        if (tmpTooltip != null)
-        {
-            if (tmpTooltip.isElementVisible())
-            {
+        if (tmpTooltip != null) {
+            if (tmpTooltip.isElementVisible()) {
                 tmpTooltip.paintComponent(g);
-            }
-            else
-            {
+            } else {
                 tmpTooltip.resetChanged();
             }
         }
     }
 
-    private void redrawBlack(@NotNull final Graphics g)
-    {
+    private void redrawBlack(@NotNull final Graphics g) {
         g.setColor(Color.BLACK);
         g.fillRect(0, 0, currentGui.getWidth(), currentGui.getHeight());
     }
 
     /**
      * Open a dialog. Raises an already opened dialog.
-     *
      * @param dialog The dialog to show.
-     *
-     * @param autoCloseOnDeactivate whether the dialog should auto-close when
-     * it becomes inactive; ignored if the dialog is already open
-     *
+     * @param autoCloseOnDeactivate whether the dialog should auto-close when it
+     * becomes inactive; ignored if the dialog is already open
      * @return Whether the dialog was opened or raised; <code>false</code> if
-     * the dialog already was opened as the topmost dialog.
+     *         the dialog already was opened as the topmost dialog.
      */
-    public boolean openDialog(@NotNull final Gui dialog, final boolean autoCloseOnDeactivate)
-    {
-        if (dialog == currentGui)
-        {
+    public boolean openDialog(@NotNull final Gui dialog, final boolean autoCloseOnDeactivate) {
+        if (dialog == currentGui) {
             return false;
         }
 
-        if (!openDialogs.isEmpty() && openDialogs.get(openDialogs.size()-1) == dialog)
-        {
+        if (!openDialogs.isEmpty() && openDialogs.get(openDialogs.size()-1) == dialog) {
             return false;
         }
 
         dialog.setStateChanged(true);
-        if (!openDialogsRemove(dialog))
-        {
+        if (!openDialogsRemove(dialog)) {
             dialog.activateDefaultElement();
             dialog.setGuiAutoCloseListener(autoCloseOnDeactivate ? guiAutoCloseListener : null);
         }
@@ -663,28 +592,22 @@ public class JXCWindowRenderer
 
     /**
      * Raise an already opened dialog.
-     *
      * @param dialog The dialog to show.
      */
-    public void raiseDialog(@NotNull final Gui dialog)
-    {
-        if (dialog == currentGui)
-        {
+    public void raiseDialog(@NotNull final Gui dialog) {
+        if (dialog == currentGui) {
             return;
         }
 
-        if (!openDialogs.isEmpty() && openDialogs.get(openDialogs.size()-1) == dialog)
-        {
+        if (!openDialogs.isEmpty() && openDialogs.get(openDialogs.size()-1) == dialog) {
             return;
         }
 
-        if (!isDialogOpen(dialog))
-        {
+        if (!isDialogOpen(dialog)) {
             return;
         }
 
-        if (!openDialogsRemove(dialog))
-        {
+        if (!openDialogsRemove(dialog)) {
             assert false;
         }
         openDialogsAdd(dialog);
@@ -693,74 +616,58 @@ public class JXCWindowRenderer
 
     /**
      * Return whether a given dialog is currently visible.
-     *
      * @param dialog The dialog to check.
-     *
      * @return Whether the dialog is visible.
      */
-    public boolean isDialogOpen(@NotNull final Gui dialog)
-    {
+    public boolean isDialogOpen(@NotNull final Gui dialog) {
         return openDialogs.contains(dialog);
     }
 
     /**
      * Return all open dialogs in reverse painting order; the first element is
      * the top-most dialog.
-     *
      * @return The open dialogs; client code must not modify this list.
      */
     @NotNull
-    public Iterable<Gui> getOpenDialogs()
-    {
-        return new Iterable<Gui>()
-        {
+    public Iterable<Gui> getOpenDialogs() {
+        return new Iterable<Gui>() {
             /** {@inheritDoc} */
             @Override
-            public Iterator<Gui> iterator()
-            {
+            public Iterator<Gui> iterator() {
                 return new OpenDialogsIterator();
             }
         };
     }
 
-    public void setCurrentGui(@NotNull final Gui gui)
-    {
+    public void setCurrentGui(@NotNull final Gui gui) {
         currentGui = gui;
         currentGuiChanged = true;
     }
 
     @NotNull
-    public Gui getCurrentGui()
-    {
+    public Gui getCurrentGui() {
         return currentGui;
     }
 
     /**
      * Check whether any gui element has changed and needs a redraw.
-     *
      * @return whether any gui element has changed
      */
-    private boolean needRedraw()
-    {
-        if (openDialogsChanged)
-        {
+    private boolean needRedraw() {
+        if (openDialogsChanged) {
             return true;
         }
 
-        if (currentGuiChanged)
-        {
+        if (currentGuiChanged) {
             return true;
         }
 
-        if (currentGui.needRedraw())
-        {
-                return true;
+        if (currentGui.needRedraw()) {
+            return true;
         }
 
-        for (final Gui dialog : openDialogs)
-        {
-            if (!dialog.isHidden(rendererGuiState) && dialog.needRedraw())
-            {
+        for (final Gui dialog : openDialogs) {
+            if (!dialog.isHidden(rendererGuiState) && dialog.needRedraw()) {
                 return true;
             }
         }
@@ -770,37 +677,29 @@ public class JXCWindowRenderer
 
     /**
      * Return the x-offset of of the visible window.
-     *
      * @return The x-offset of of the visible window.
      */
-    public int getOffsetX()
-    {
+    public int getOffsetX() {
         return offsetX;
     }
 
     /**
      * Return the y-offset of of the visible window.
-     *
      * @return The y-offset of of the visible window.
      */
-    public int getOffsetY()
-    {
+    public int getOffsetY() {
         return offsetY;
     }
 
     /**
      * Close a dialog. Does nothing if the given dialog is not open.
-     *
      * @param dialog The dialog to close.
      */
-    public void closeDialog(@NotNull final Gui dialog)
-    {
-        if (openDialogsRemove(dialog))
-        {
+    public void closeDialog(@NotNull final Gui dialog) {
+        if (openDialogsRemove(dialog)) {
             dialog.setStateChanged(true);
             final ActivatableGUIElement activeElement = dialog.getActiveElement();
-            if (activeElement != null)
-            {
+            if (activeElement != null) {
                 activeElement.setActive(false);
             }
             openDialogsChanged = true;
@@ -809,26 +708,20 @@ public class JXCWindowRenderer
 
     /**
      * Toggle a dialog: if the dialog is not shown, show it; else hide it.
-     *
      * @param dialog The dialog to toggle.
-     *
      * @return Whether the dialog is shown.
      */
-    public boolean toggleDialog(@NotNull final Gui dialog)
-    {
-        if (dialog == currentGui)
-        {
+    public boolean toggleDialog(@NotNull final Gui dialog) {
+        if (dialog == currentGui) {
             return true;
         }
 
         openDialogsChanged = true;
         dialog.setStateChanged(true);
 
-        if (openDialogsRemove(dialog))
-        {
+        if (openDialogsRemove(dialog)) {
             final ActivatableGUIElement activeElement = dialog.getActiveElement();
-            if (activeElement != null)
-            {
+            if (activeElement != null) {
                 activeElement.setActive(false);
             }
             return false;
@@ -843,52 +736,43 @@ public class JXCWindowRenderer
     /**
      * Set the tooltip to use, or <code>null</code> if no tooltips should be
      * shown.
-     *
      * @param tooltip The tooltip to use, or <code>null</code>.
      */
-    public void setTooltip(@Nullable final GUIElement tooltip)
-    {
+    public void setTooltip(@Nullable final GUIElement tooltip) {
         this.tooltip = tooltip;
     }
 
     /**
      * Set the current gui state.
-     *
      * @param rendererGuiState The gui state.
      */
-    public void setGuiState(@NotNull final RendererGuiState rendererGuiState)
-    {
-        if (this.rendererGuiState == rendererGuiState)
-        {
+    public void setGuiState(@NotNull final RendererGuiState rendererGuiState) {
+        if (this.rendererGuiState == rendererGuiState) {
             return;
         }
 
         this.rendererGuiState = rendererGuiState;
         forcePaint = true;
-        for (final RendererGuiStateListener listener : rendererGuiStateListeners)
-        {
+        for (final RendererGuiStateListener listener : rendererGuiStateListeners) {
             listener.guiStateChanged(rendererGuiState);
         }
     }
 
     /**
      * Return the current gui state.
-     *
      * @return The gui state.
      */
     @NotNull
-    public RendererGuiState getGuiState()
-    {
+    public RendererGuiState getGuiState() {
         return rendererGuiState;
     }
 
     /**
-     * Add a gui state listener to be notified about {@link #rendererGuiState} changes.
-     *
+     * Add a gui state listener to be notified about {@link #rendererGuiState}
+     * changes.
      * @param listener The listener to add.
      */
-    public void addGuiStateListener(@NotNull final RendererGuiStateListener listener)
-    {
+    public void addGuiStateListener(@NotNull final RendererGuiStateListener listener) {
         rendererGuiStateListeners.add(listener);
     }
 
@@ -897,31 +781,23 @@ public class JXCWindowRenderer
      * necessary.
      * @param dialog the dialog
      */
-    private void openDialogsAdd(@NotNull final Gui dialog)
-    {
-        if (openDialogs.contains(dialog))
-        {
+    private void openDialogsAdd(@NotNull final Gui dialog) {
+        if (openDialogs.contains(dialog)) {
             return;
         }
 
         final Point mouse = frame.getMousePosition(true);
-        if (mouse == null)
-        {
+        if (mouse == null) {
             openDialogs.add(dialog);
-        }
-        else
-        {
+        } else {
             mouse.x -= offsetX;
             mouse.y -= offsetY;
-            if (dialog.isWithinDrawingArea(mouse.x, mouse.y))
-            {
+            if (dialog.isWithinDrawingArea(mouse.x, mouse.y)) {
                 final MouseEvent mouseEvent = new MouseEvent(frame, 0, System.currentTimeMillis(), 0, mouse.x, mouse.y, 0, false);
                 mouseTracker.mouseExited(mouseEvent);
                 openDialogs.add(dialog);
                 mouseTracker.mouseEntered(mouseEvent);
-            }
-            else
-            {
+            } else {
                 openDialogs.add(dialog);
             }
         }
@@ -933,31 +809,23 @@ public class JXCWindowRenderer
      * @param dialog the dialog
      * @return whether the dialog was opened
      */
-    private boolean openDialogsRemove(@NotNull final Gui dialog)
-    {
-        if (!openDialogs.contains(dialog))
-        {
+    private boolean openDialogsRemove(@NotNull final Gui dialog) {
+        if (!openDialogs.contains(dialog)) {
             return false;
         }
 
         final Point mouse = frame.getMousePosition(true);
-        if (mouse == null)
-        {
+        if (mouse == null) {
             openDialogs.remove(dialog);
-        }
-        else
-        {
+        } else {
             mouse.x -= offsetX;
             mouse.y -= offsetY;
-            if (dialog.isWithinDrawingArea(mouse.x, mouse.y))
-            {
+            if (dialog.isWithinDrawingArea(mouse.x, mouse.y)) {
                 final MouseEvent mouseEvent = new MouseEvent(frame, 0, System.currentTimeMillis(), 0, mouse.x, mouse.y, 0, false);
                 mouseTracker.mouseExited(mouseEvent);
                 openDialogs.remove(dialog);
                 mouseTracker.mouseEntered(mouseEvent);
-            }
-            else
-            {
+            } else {
                 openDialogs.remove(dialog);
             }
         }
@@ -968,20 +836,15 @@ public class JXCWindowRenderer
     /**
      * Deactivates the command input text field. Does nothing if the command
      * input text field is not active.
-     * @return  whether the command input text field has been deactivated
+     * @return whether the command input text field has been deactivated
      */
-    public boolean deactivateCommandInput()
-    {
-        for (final Gui dialog : getOpenDialogs())
-        {
-            if (!dialog.isHidden(rendererGuiState))
-            {
-                if (dialog.deactivateCommandInput())
-                {
+    public boolean deactivateCommandInput() {
+        for (final Gui dialog : getOpenDialogs()) {
+            if (!dialog.isHidden(rendererGuiState)) {
+                if (dialog.deactivateCommandInput()) {
                     return true;
                 }
-                if (dialog.isModal())
-                {
+                if (dialog.isModal()) {
                     return false;
                 }
             }
@@ -995,19 +858,14 @@ public class JXCWindowRenderer
      * @return the active message buffer or <code>null</code> if none is active
      */
     @Nullable
-    public Buffer getActiveMessageBuffer()
-    {
-        for (final Gui dialog : getOpenDialogs())
-        {
-            if (!dialog.isHidden(rendererGuiState))
-            {
+    public Buffer getActiveMessageBuffer() {
+        for (final Gui dialog : getOpenDialogs()) {
+            if (!dialog.isHidden(rendererGuiState)) {
                 final Buffer buffer = getActiveMessageBuffer(dialog);
-                if (buffer != null)
-                {
+                if (buffer != null) {
                     return buffer;
                 }
-                if (dialog.isModal())
-                {
+                if (dialog.isModal()) {
                     return null;
                 }
             }
@@ -1022,50 +880,51 @@ public class JXCWindowRenderer
      * @return the active message buffer or <code>null</code>
      */
     @Nullable
-    private static Buffer getActiveMessageBuffer(@NotNull final Gui gui)
-    {
+    private static Buffer getActiveMessageBuffer(@NotNull final Gui gui) {
         final GUILog buffer = gui.getFirstElement(GUIMessageLog.class);
         return buffer == null ? null : buffer.getBuffer();
     }
 
     @Deprecated
     @NotNull
-    public GUIElementListener getElementListener()
-    {
+    public GUIElementListener getElementListener() {
         return elementListener;
     }
 
     /**
      * An {@link Iterator} that returns all open dialogs in painting order.
      */
-    private class OpenDialogsIterator implements Iterator<Gui>
-    {
+    private class OpenDialogsIterator implements Iterator<Gui> {
+
         /**
-         * The backing list iterator; it returns the elements in
-         * reversed order.
+         * The backing list iterator; it returns the elements in reversed
+         * order.
          */
         @NotNull
         private final ListIterator<Gui> it = openDialogs.listIterator(openDialogs.size());
 
-        /** {@inheritDoc} */
+        /**
+         * {@inheritDoc}
+         */
         @Override
-        public boolean hasNext()
-        {
+        public boolean hasNext() {
             return it.hasPrevious();
         }
 
-        /** {@inheritDoc} */
+        /**
+         * {@inheritDoc}
+         */
         @NotNull
         @Override
-        public Gui next()
-        {
+        public Gui next() {
             return it.previous();
         }
 
-        /** {@inheritDoc} */
+        /**
+         * {@inheritDoc}
+         */
         @Override
-        public void remove()
-        {
+        public void remove() {
             throw new UnsupportedOperationException();
         }
     }
@@ -1074,8 +933,7 @@ public class JXCWindowRenderer
      * Inhibits or allows painting while the main window is iconified.
      * @param inhibitPaintIconified whether the main window is iconified
      */
-    public void setInhibitPaintIconified(final boolean inhibitPaintIconified)
-    {
+    public void setInhibitPaintIconified(final boolean inhibitPaintIconified) {
         this.inhibitPaintIconified = inhibitPaintIconified;
     }
 
@@ -1083,8 +941,7 @@ public class JXCWindowRenderer
      * Returns the width of the client area.
      * @return the width of the client area
      */
-    public int getWindowWidth()
-    {
+    public int getWindowWidth() {
         return windowWidth;
     }
 
@@ -1092,48 +949,38 @@ public class JXCWindowRenderer
      * Returns the height of the client area.
      * @return the height of the client area
      */
-    public int getWindowHeight()
-    {
+    public int getWindowHeight() {
         return windowHeight;
     }
 
     /**
-     * Find the gui element for a given {@link MouseEvent}. If a gui element
-     * was found, update the event mouse coordinates to be relative to the gui
+     * Find the gui element for a given {@link MouseEvent}. If a gui element was
+     * found, update the event mouse coordinates to be relative to the gui
      * element.
-     *
      * @param e The mouse event to process.
-     *
      * @return The gui element found, or <code>null</code> if none was found.
      */
     @Nullable
-    public GUIElement findElement(@NotNull final MouseEvent e)
-    {
+    public GUIElement findElement(@NotNull final MouseEvent e) {
         GUIElement elected = null;
 
-        for (final Gui dialog : getOpenDialogs())
-        {
-            if (!dialog.isHidden(rendererGuiState))
-            {
+        for (final Gui dialog : getOpenDialogs()) {
+            if (!dialog.isHidden(rendererGuiState)) {
                 elected = manageMouseEvents(dialog, e);
-                if (elected != null)
-                {
+                if (elected != null) {
                     break;
                 }
             }
-            if (dialog.isModal())
-            {
+            if (dialog.isModal()) {
                 return null;
             }
         }
 
-        if (elected == null)
-        {
+        if (elected == null) {
             elected = manageMouseEvents(currentGui, e);
         }
 
-        if (elected != null)
-        {
+        if (elected != null) {
             e.translatePoint(-elected.getElementX()-offsetX, -elected.getElementY()-offsetY);
         }
 
@@ -1141,8 +988,7 @@ public class JXCWindowRenderer
     }
 
     @Nullable
-    private GUIElement manageMouseEvents(@NotNull final Gui gui, @NotNull final MouseEvent e)
-    {
+    private GUIElement manageMouseEvents(@NotNull final Gui gui, @NotNull final MouseEvent e) {
         final int x = e.getX()-offsetX;
         final int y = e.getY()-offsetY;
         return gui.getElementFromPoint(x, y);
@@ -1152,25 +998,21 @@ public class JXCWindowRenderer
      * Writes a message to the screen debug.
      * @param message the message to write
      */
-    private void debugScreenWrite(@NotNull final CharSequence message)
-    {
-        if (debugScreen == null)
-        {
+    private void debugScreenWrite(@NotNull final CharSequence message) {
+        if (debugScreen == null) {
             return;
         }
 
-        try
-        {
+        try {
             debugScreen.append(simpleDateFormat.format(new Date()));
             debugScreen.append(message);
             debugScreen.append("\n");
             debugScreen.flush();
-        }
-        catch (final IOException ex)
-        {
+        } catch (final IOException ex) {
             System.err.println("Cannot write screen debug: "+ex.getMessage());
             System.exit(1);
             throw new AssertionError();
         }
     }
+
 }

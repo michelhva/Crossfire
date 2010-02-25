@@ -28,12 +28,12 @@ import com.realtime.crossfire.jxclient.server.crossfire.CrossfireServerConnectio
 import org.jetbrains.annotations.NotNull;
 
 /**
- * A {@link GUICommand} that executes a command on the selected item of a
- * {@link GUIItemList}.
+ * A {@link GUICommand} that executes a command on the selected item of a {@link
+ * GUIItemList}.
  * @author Andreas Kirschbaum
  */
-public class ExecSelectionCommand implements GUICommand
-{
+public class ExecSelectionCommand implements GUICommand {
+
     /**
      * The list to execute in.
      */
@@ -72,8 +72,7 @@ public class ExecSelectionCommand implements GUICommand
      * @param floorManager the floor manager to use
      * @param commandQueue the command queue to use
      */
-    public ExecSelectionCommand(@NotNull final GUIItemList list, @NotNull final CommandType command, @NotNull final CrossfireServerConnection crossfireServerConnection, @NotNull final CurrentFloorManager floorManager, @NotNull final CommandQueue commandQueue)
-    {
+    public ExecSelectionCommand(@NotNull final GUIItemList list, @NotNull final CommandType command, @NotNull final CrossfireServerConnection crossfireServerConnection, @NotNull final CurrentFloorManager floorManager, @NotNull final CommandQueue commandQueue) {
         this.list = list;
         this.command = command;
         this.crossfireServerConnection = crossfireServerConnection;
@@ -81,17 +80,20 @@ public class ExecSelectionCommand implements GUICommand
         this.commandQueue = commandQueue;
     }
 
-    /** {@inheritDoc} */
+    /**
+     * {@inheritDoc}
+     */
     @Override
-    public boolean canExecute()
-    {
+    public boolean canExecute() {
         return CommandType.canExecute(list.getSelectedItem());
     }
 
-    /** {@inheritDoc} */
+    /**
+     * {@inheritDoc}
+     */
     @Override
-    public void execute()
-    {
+    public void execute() {
         command.execute(list.getSelectedItem(), crossfireServerConnection, floorManager.getCurrentFloor(), commandQueue);
     }
+
 }

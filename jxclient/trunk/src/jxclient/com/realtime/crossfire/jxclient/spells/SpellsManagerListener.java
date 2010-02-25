@@ -27,13 +27,11 @@ import org.jetbrains.annotations.NotNull;
  * Interface for listeners interested in {@link SpellsManager} events.
  * @author Andreas Kirschbaum
  */
-public interface SpellsManagerListener
-{
+public interface SpellsManagerListener {
+
     /**
      * A new spell was added.
-     *
      * @param spell The added spell.
-     *
      * @param index The current index of <code>spell</code> in the spells
      * manager.
      */
@@ -41,11 +39,10 @@ public interface SpellsManagerListener
 
     /**
      * A spell was removed.
-     *
      * @param spell The removed spell.
-     *
      * @param index The former index of <code>spell</code> in the spells
      * manager.
      */
     void spellRemoved(@NotNull Spell spell, int index);
+
 }

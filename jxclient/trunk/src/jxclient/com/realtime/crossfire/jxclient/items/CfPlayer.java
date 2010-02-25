@@ -29,10 +29,10 @@ import org.jetbrains.annotations.NotNull;
  * @version 1.0
  * @since 1.0
  */
-public class CfPlayer extends CfItem
-{
-    public CfPlayer(final int tag, final int weight, @NotNull final Face face, @NotNull final String name)
-    {
+public class CfPlayer extends CfItem {
+
+    public CfPlayer(final int tag, final int weight, @NotNull final Face face, @NotNull final String name) {
         super(0, tag, 0, weight, face, name, name, 0, 0, 1, -1);
     }
+
 }

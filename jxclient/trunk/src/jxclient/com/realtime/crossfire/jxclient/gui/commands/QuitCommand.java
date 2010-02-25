@@ -27,8 +27,8 @@ import org.jetbrains.annotations.NotNull;
  * A {@link GUICommand} which quite the client.
  * @author Andreas Kirschbaum
  */
-public class QuitCommand implements GUICommand
-{
+public class QuitCommand implements GUICommand {
+
     /**
      * The {@link CommandCallback} instance.
      */
@@ -39,22 +39,24 @@ public class QuitCommand implements GUICommand
      * Creates a new instance.
      * @param commandCallback the command callback instance
      */
-    public QuitCommand(@NotNull final CommandCallback commandCallback)
-    {
+    public QuitCommand(@NotNull final CommandCallback commandCallback) {
         this.commandCallback = commandCallback;
     }
 
-    /** {@inheritDoc} */
+    /**
+     * {@inheritDoc}
+     */
     @Override
-    public boolean canExecute()
-    {
+    public boolean canExecute() {
         return true;
     }
 
-    /** {@inheritDoc} */
+    /**
+     * {@inheritDoc}
+     */
     @Override
-    public void execute()
-    {
+    public void execute() {
         commandCallback.quitApplication();
     }
+
 }

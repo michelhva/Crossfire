@@ -26,13 +26,12 @@ import com.realtime.crossfire.jxclient.server.crossfire.CrossfireSoundListener;
 import org.jetbrains.annotations.NotNull;
 
 /**
- * Monitors sound and sound2 commands received from the server to generate
- * sound effects.
- *
+ * Monitors sound and sound2 commands received from the server to generate sound
+ * effects.
  * @author Andreas Kirschbaum
  */
-public class SoundWatcher
-{
+public class SoundWatcher {
+
     /**
      * The {@link SoundManager} instance to watch.
      */
@@ -43,18 +42,15 @@ public class SoundWatcher
      * The crossfire sound listener.
      */
     @NotNull
-    private final CrossfireSoundListener crossfireSoundListener = new CrossfireSoundListener()
-    {
+    private final CrossfireSoundListener crossfireSoundListener = new CrossfireSoundListener() {
         /** {@inheritDoc} */
         @Override
-        public void commandSoundReceived(final int x, final int y, final int num, final int type)
-        {
+        public void commandSoundReceived(final int x, final int y, final int num, final int type) {
             // ignored
         }
 
         @Override
-        public void commandSound2Received(final int x, final int y, final int dir, final int volume, final int type, @NotNull final String action, @NotNull final String name)
-        {
+        public void commandSound2Received(final int x, final int y, final int dir, final int volume, final int type, @NotNull final String action, @NotNull final String name) {
             soundManager.playClip(Sounds.CHARACTER, name, action);
         }
     };
@@ -64,9 +60,9 @@ public class SoundWatcher
      * @param crossfireServerConnection the connection to watch
      * @param soundManager the sound manager instance to watch
      */
-    public SoundWatcher(@NotNull final CrossfireServerConnection crossfireServerConnection, @NotNull final SoundManager soundManager)
-    {
+    public SoundWatcher(@NotNull final CrossfireServerConnection crossfireServerConnection, @NotNull final SoundManager soundManager) {
         crossfireServerConnection.addCrossfireSoundListener(crossfireSoundListener);
         this.soundManager = soundManager;
     }
+
 }

@@ -31,8 +31,8 @@ import org.jetbrains.annotations.NotNull;
  * Implements the "exec" command. It runs a skin command.
  * @author Andreas Kirschbaum
  */
-public class ExecCommand extends AbstractCommand
-{
+public class ExecCommand extends AbstractCommand {
+
     /**
      * The {@link CommandCallback} to lookup commands.
      */
@@ -44,39 +44,37 @@ public class ExecCommand extends AbstractCommand
      * @param commandCallback the command callback to lookup commands
      * @param crossfireServerConnection the connection instance
      */
-    public ExecCommand(@NotNull final CommandCallback commandCallback, @NotNull final CrossfireServerConnection crossfireServerConnection)
-    {
+    public ExecCommand(@NotNull final CommandCallback commandCallback, @NotNull final CrossfireServerConnection crossfireServerConnection) {
         super(crossfireServerConnection);
         this.commandCallback = commandCallback;
     }
 
-    /** {@inheritDoc} */
+    /**
+     * {@inheritDoc}
+     */
     @Override
-    public boolean allArguments()
-    {
+    public boolean allArguments() {
         return false;
     }
 
-    /** {@inheritDoc} */
+    /**
+     * {@inheritDoc}
+     */
     @Override
-    public void execute(@NotNull final String args)
-    {
-        if (args.length() == 0)
-        {
+    public void execute(@NotNull final String args) {
+        if (args.length() == 0) {
             drawInfoError("Which command do you want to run?");
             return;
         }
 
         final CommandList commandList;
-        try
-        {
+        try {
             commandList = commandCallback.getCommandList(args);
-        }
-        catch (final NoSuchCommandException ex)
-        {
+        } catch (final NoSuchCommandException ex) {
             drawInfoError(ex.getMessage());
             return;
         }
         commandList.execute();
     }
+
 }

@@ -27,8 +27,8 @@ import org.jetbrains.annotations.NotNull;
  * Exception thrown for unterminated quoted tokens.
  * @author Andreas Kirschbaum
  */
-public class UnterminatedTokenException extends Exception
-{
+public class UnterminatedTokenException extends Exception {
+
     /**
      * The serial version UID.
      */
@@ -38,8 +38,8 @@ public class UnterminatedTokenException extends Exception
      * Creates a new instance.
      * @param token the unterminated token
      */
-    public UnterminatedTokenException(@NotNull final String token)
-    {
+    public UnterminatedTokenException(@NotNull final String token) {
         super("unterminated token: "+token);
     }
+
 }

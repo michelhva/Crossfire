@@ -33,8 +33,8 @@ import java.awt.Frame;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 
-public class JXCConnection
-{
+public class JXCConnection {
+
     /**
      * The default port number for Crossfire servers.
      */
@@ -95,8 +95,8 @@ public class JXCConnection
     private int port = 0;
 
     /**
-     * The currently logged in character. Set to <code>null</code> if not
-     * logged in.
+     * The currently logged in character. Set to <code>null</code> if not logged
+     * in.
      */
     @Nullable
     private String character = null;
@@ -106,54 +106,46 @@ public class JXCConnection
      * connections.
      */
     @NotNull
-    private final GuiStateListener guiStateListener = new GuiStateListener()
-    {
+    private final GuiStateListener guiStateListener = new GuiStateListener() {
         /** {@inheritDoc} */
         @Override
-        public void start()
-        {
+        public void start() {
             disconnect();
         }
 
         /** {@inheritDoc} */
         @Override
-        public void metaserver()
-        {
+        public void metaserver() {
             disconnect();
         }
 
         /** {@inheritDoc} */
         @Override
-        public void preConnecting(@NotNull final String serverInfo)
-        {
+        public void preConnecting(@NotNull final String serverInfo) {
             // ignore
         }
 
         /** {@inheritDoc} */
         @Override
-        public void connecting(@NotNull final String serverInfo)
-        {
+        public void connecting(@NotNull final String serverInfo) {
             connect();
         }
 
         /** {@inheritDoc} */
         @Override
-        public void connecting(@NotNull final ClientSocketState clientSocketState)
-        {
+        public void connecting(@NotNull final ClientSocketState clientSocketState) {
             // ignore
         }
 
         /** {@inheritDoc} */
         @Override
-        public void connected()
-        {
+        public void connected() {
             // ignore
         }
 
         /** {@inheritDoc} */
         @Override
-        public void connectFailed(@NotNull final String reason)
-        {
+        public void connectFailed(@NotNull final String reason) {
             // ignore
         }
     };
@@ -162,12 +154,10 @@ public class JXCConnection
      * The {@link CrossfirePickupListener} for tracking pickup mode changes.
      */
     @NotNull
-    private final CrossfirePickupListener crossfirePickupListener = new CrossfirePickupListener()
-    {
+    private final CrossfirePickupListener crossfirePickupListener = new CrossfirePickupListener() {
         /** {@inheritDoc} */
         @Override
-        public void pickupChanged(final int pickupOptions)
-        {
+        public void pickupChanged(final int pickupOptions) {
             characterPickup.setPickupMode(pickupOptions);
         }
     };
@@ -182,8 +172,7 @@ public class JXCConnection
      * @param server the crossfire server connection instance used to connect
      * @param guiStateManager the gui state manager to watch
      */
-    public JXCConnection(@NotNull final KeybindingsManager keybindingsManager, @NotNull final ShortcutsManager shortcutsManager, @NotNull final Settings settings, @NotNull final Frame frame, @NotNull final Pickup characterPickup, @NotNull final CrossfireServerConnection server, @NotNull final GuiStateManager guiStateManager)
-    {
+    public JXCConnection(@NotNull final KeybindingsManager keybindingsManager, @NotNull final ShortcutsManager shortcutsManager, @NotNull final Settings settings, @NotNull final Frame frame, @NotNull final Pickup characterPickup, @NotNull final CrossfireServerConnection server, @NotNull final GuiStateManager guiStateManager) {
         this.keybindingsManager = keybindingsManager;
         this.shortcutsManager = shortcutsManager;
         this.settings = settings;
@@ -199,8 +188,7 @@ public class JXCConnection
      * @return the server or <code>null</code> if unconnected
      */
     @Nullable
-    public String getHostname()
-    {
+    public String getHostname() {
         return hostname;
     }
 
@@ -208,37 +196,29 @@ public class JXCConnection
      * Returns the currently connected port.
      * @return the port or <code>0</code> if unconnected
      */
-    public int getPort()
-    {
+    public int getPort() {
         return port;
     }
 
     /**
      * Update the active character name.
-     *
      * @param character The active character; <code>null</code> if not logged
      * in.
      */
-    public void setCharacter(@Nullable final String character)
-    {
-        if (this.character == null ? character == null : this.character.equals(character))
-        {
+    public void setCharacter(@Nullable final String character) {
+        if (this.character == null ? character == null : this.character.equals(character)) {
             return;
         }
 
         keybindingsManager.unloadPerCharacterBindings();
         shortcutsManager.saveShortcuts();
 
-        if (hostname != null && this.character != null)
-        {
+        if (hostname != null && this.character != null) {
             server.removeCrossfirePickupListener(crossfirePickupListener);
             final long pickupMode = characterPickup.getPickupMode();
-            if (pickupMode == Pickup.PU_NOTHING)
-            {
+            if (pickupMode == Pickup.PU_NOTHING) {
                 settings.remove("pickup_"+hostname+"_"+this.character);
-            }
-            else
-            {
+            } else {
                 settings.putLong("pickup_"+hostname+"_"+this.character, pickupMode);
             }
         }
@@ -246,8 +226,7 @@ public class JXCConnection
         this.character = character;
         updateTitle();
 
-        if (hostname != null && character != null)
-        {
+        if (hostname != null && character != null) {
             keybindingsManager.loadPerCharacterBindings(hostname, character);
             assert hostname != null;
             shortcutsManager.loadShortcuts(hostname, character);
@@ -259,47 +238,34 @@ public class JXCConnection
     /**
      * Update the window title to reflect the current connection state.
      */
-    private void updateTitle()
-    {
-        if (hostname == null)
-        {
+    private void updateTitle() {
+        if (hostname == null) {
             frame.setTitle(TITLE_PREFIX);
-        }
-        else if (character == null)
-        {
+        } else if (character == null) {
             frame.setTitle(TITLE_PREFIX+" - "+hostname);
-        }
-        else
-        {
+        } else {
             frame.setTitle(TITLE_PREFIX+" - "+hostname+" - "+character);
         }
     }
 
     /**
      * Update information about the connected host.
-     *
      * @param serverInfo The hostname; <code>null</code> if not connected.
      */
-    public void setHost(@Nullable final String serverInfo)
-    {
+    public void setHost(@Nullable final String serverInfo) {
         @Nullable final String newHostname;
         final int newPort;
-        if (serverInfo == null)
-        {
+        if (serverInfo == null) {
             newHostname = null;
             newPort = 0;
-        }
-        else
-        {
+        } else {
             settings.putString("server", serverInfo);
             final String[] tmp = serverInfo.split(":", 2);
             newHostname = tmp[0];
             newPort = tmp.length < 2 ? DEFAULT_CROSSFIRE_PORT : NumberParser.parseInt(tmp[1], DEFAULT_CROSSFIRE_PORT, 1, 65535);
         }
 
-        if ((hostname == null ? newHostname == null : hostname.equals(newHostname))
-        && port == newPort)
-        {
+        if ((hostname == null ? newHostname == null : hostname.equals(newHostname)) && port == newPort) {
             return;
         }
 
@@ -312,8 +278,7 @@ public class JXCConnection
     /**
      * Disconnects from the Crossfire server.
      */
-    private void disconnect()
-    {
+    private void disconnect() {
         server.disconnect();
         setHost(null);
     }
@@ -321,9 +286,9 @@ public class JXCConnection
     /**
      * Connect to the Crossfire server.
      */
-    private void connect()
-    {
+    private void connect() {
         assert hostname != null;
         server.connect(hostname, port);
     }
+
 }

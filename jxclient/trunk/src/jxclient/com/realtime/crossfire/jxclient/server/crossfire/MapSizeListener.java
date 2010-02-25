@@ -25,12 +25,13 @@ package com.realtime.crossfire.jxclient.server.crossfire;
  * Listener for clients interested in map size changes.
  * @author Andreas Kirschbaum
  */
-public interface MapSizeListener
-{
+public interface MapSizeListener {
+
     /**
      * The map size has changed.
      * @param mapWidth the new map width in tiles
      * @param mapHeight the new map height in tiles
      */
     void mapSizeChanged(int mapWidth, int mapHeight);
+
 }

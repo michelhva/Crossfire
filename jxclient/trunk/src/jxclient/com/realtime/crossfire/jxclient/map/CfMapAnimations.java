@@ -37,8 +37,8 @@ import org.jetbrains.annotations.NotNull;
  * Manages a set of animated map squares.
  * @author Andreas Kirschbaum
  */
-public class CfMapAnimations
-{
+public class CfMapAnimations {
+
     /**
      * Synchronization object.
      */
@@ -78,12 +78,10 @@ public class CfMapAnimations
      * The listener for receiving "tick" commands.
      */
     @NotNull
-    private final CrossfireTickListener crossfireTickListener = new CrossfireTickListener()
-    {
+    private final CrossfireTickListener crossfireTickListener = new CrossfireTickListener() {
         /** {@inheritDoc} */
         @Override
-        public void tick(final int tickNo)
-        {
+        public void tick(final int tickNo) {
             CfMapAnimations.this.tick(tickNo);
         }
     };
@@ -92,8 +90,7 @@ public class CfMapAnimations
      * Creates a new instance.
      * @param mapUpdater the instance to update
      */
-    public CfMapAnimations(@NotNull final CfMapUpdater mapUpdater)
-    {
+    public CfMapAnimations(@NotNull final CfMapUpdater mapUpdater) {
         this.mapUpdater = mapUpdater;
     }
 
@@ -102,8 +99,7 @@ public class CfMapAnimations
      * @param crossfireServerConnection the connection to watch
      * @param mapUpdater the instance to update
      */
-    public CfMapAnimations(@NotNull final CrossfireServerConnection crossfireServerConnection, @NotNull final CfMapUpdater mapUpdater)
-    {
+    public CfMapAnimations(@NotNull final CrossfireServerConnection crossfireServerConnection, @NotNull final CfMapUpdater mapUpdater) {
         this(mapUpdater);
         crossfireServerConnection.addCrossfireTickListener(crossfireTickListener);
     }
@@ -111,10 +107,8 @@ public class CfMapAnimations
     /**
      * Forgets all animations.
      */
-    public void clear()
-    {
-        synchronized (sync)
-        {
+    public void clear() {
+        synchronized (sync) {
             animations.clear();
             pendingTickUpdates.clear();
         }
@@ -126,15 +120,13 @@ public class CfMapAnimations
      * @param animation the animation to display
      * @param type the animation type
      */
-    public void add(@NotNull final Location location, @NotNull final Animation animation, final int type)
-    {
+    public void add(@NotNull final Location location, @NotNull final Animation animation, final int type) {
         assert 0 <= location.getX();
         assert 0 <= location.getY();
         assert 0 <= type && type < 4;
 
         final AnimationState animationState = new AnimationState(animation, type, mapUpdater);
-        synchronized (sync)
-        {
+        synchronized (sync) {
             animations.put(location, animationState);
         }
         animationState.draw(location, -1);
@@ -145,12 +137,9 @@ public class CfMapAnimations
      * @param x the x-coordinate to un-animate
      * @param y the y-coordinate to un-animate
      */
-    public void remove(final int x, final int y)
-    {
-        synchronized (sync)
-        {
-            for (int layer = 0; layer < CrossfireMap2Command.NUM_LAYERS; layer++)
-            {
+    public void remove(final int x, final int y) {
+        synchronized (sync) {
+            for (int layer = 0; layer < CrossfireMap2Command.NUM_LAYERS; layer++) {
                 animations.remove(new Location(x, y, layer));
             }
         }
@@ -160,13 +149,11 @@ public class CfMapAnimations
      * Removes a visible animation.
      * @param location the location to un-animate
      */
-    public void remove(@NotNull final Location location)
-    {
+    public void remove(@NotNull final Location location) {
         assert 0 <= location.getX();
         assert 0 <= location.getY();
 
-        synchronized (sync)
-        {
+        synchronized (sync) {
             animations.remove(location);
         }
     }
@@ -176,18 +163,15 @@ public class CfMapAnimations
      * @param location the location to update
      * @param speed the new animation speed
      */
-    public void updateSpeed(@NotNull final Location location, final int speed)
-    {
+    public void updateSpeed(@NotNull final Location location, final int speed) {
         assert 0 <= location.getX();
         assert 0 <= location.getY();
 
         final AnimationState animationState;
-        synchronized (sync)
-        {
+        synchronized (sync) {
             animationState = animations.get(location);
         }
-        if (animationState == null)
-        {
+        if (animationState == null) {
             System.err.println("No animation at "+location+" to update animation speed.");
             return;
         }
@@ -201,15 +185,12 @@ public class CfMapAnimations
      * @param dx the x-distance to scroll
      * @param dy the y-distance to scroll
      */
-    public void scroll(final int dx, final int dy)
-    {
-        synchronized (sync)
-        {
+    public void scroll(final int dx, final int dy) {
+        synchronized (sync) {
             final Map<Location, AnimationState> tmp = new HashMap<Location, AnimationState>(animations);
             animations.clear();
 
-            for (final Map.Entry<Location, AnimationState> e : tmp.entrySet())
-            {
+            for (final Map.Entry<Location, AnimationState> e : tmp.entrySet()) {
                 final Location location = e.getKey();
                 if (0 <= location.getX() && location.getX() < width && 0 <= location.getY() && location.getY() < height) // out-of-map bounds animations are dropped not scrolled
                 {
@@ -228,31 +209,25 @@ public class CfMapAnimations
      * Processes a tick command.
      * @param tickNo the current tick number
      */
-    public void tick(final int tickNo)
-    {
+    public void tick(final int tickNo) {
         final Collection<Map.Entry<Location, AnimationState>> animationsToUpdate;
-        synchronized (sync)
-        {
-            for (final AnimationState animationState : pendingTickUpdates)
-            {
+        synchronized (sync) {
+            for (final AnimationState animationState : pendingTickUpdates) {
                 animationState.setTickno(tickNo);
             }
             pendingTickUpdates.clear();
 
-            if (animations.isEmpty())
-            {
+            if (animations.isEmpty()) {
                 return;
             }
 
             animationsToUpdate = new ArrayList<Map.Entry<Location, AnimationState>>();
-            for (final Map.Entry<Location, AnimationState> e : animations.entrySet())
-            {
+            for (final Map.Entry<Location, AnimationState> e : animations.entrySet()) {
                 animationsToUpdate.add(e);
             }
         }
         mapUpdater.processMapBegin();
-        for (final Map.Entry<Location, AnimationState> e : animationsToUpdate)
-        {
+        for (final Map.Entry<Location, AnimationState> e : animationsToUpdate) {
             final Location location = e.getKey();
             final AnimationState animationState = e.getValue();
             animationState.updateTickno(tickNo, location);
@@ -265,14 +240,13 @@ public class CfMapAnimations
      * @param width the map width
      * @param height the map height
      */
-    public void setMapSize(final int width, final int height)
-    {
-        synchronized (sync)
-        {
+    public void setMapSize(final int width, final int height) {
+        synchronized (sync) {
             this.width = width;
             this.height = height;
             animations.clear();
             pendingTickUpdates.clear();
         }
     }
+
 }

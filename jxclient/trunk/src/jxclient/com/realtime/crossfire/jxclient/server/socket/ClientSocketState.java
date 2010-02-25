@@ -22,12 +22,12 @@
 package com.realtime.crossfire.jxclient.server.socket;
 
 /**
- * Connection progress states of the {@link ClientSocket}. The state
- * transitions in the declared order.
+ * Connection progress states of the {@link ClientSocket}. The state transitions
+ * in the declared order.
  * @author Andreas Kirschbaum
  */
-public enum ClientSocketState
-{
+public enum ClientSocketState {
+
     /**
      * The socket is being established.
      */
@@ -62,4 +62,5 @@ public enum ClientSocketState
      * A connection could not be established.
      */
     CONNECT_FAILED
+
 }

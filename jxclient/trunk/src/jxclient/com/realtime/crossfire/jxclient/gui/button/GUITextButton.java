@@ -35,11 +35,10 @@ import org.jetbrains.annotations.NotNull;
 /**
  * A button which displays a string. The button width does not depend on the
  * underlying images.
- *
  * @author Andreas Kirschbaum
  */
-public class GUITextButton extends AbstractButton
-{
+public class GUITextButton extends AbstractButton {
+
     /**
      * The serial version UID.
      */
@@ -77,55 +76,36 @@ public class GUITextButton extends AbstractButton
 
     /**
      * Create a new instance.
-     *
      * @param tooltipManager the tooltip manager to update
-     *
      * @param elementListener the element listener to notify
-     *
      * @param name The name of this element.
-     *
      * @param x The x-coordinate for drawing this element to screen; it is
      * relative to <code>gui</code>.
-     *
      * @param y The y-coordinate for drawing this element to screen; it is
      * relative to <code>gui</code>.
-     *
      * @param w The width for drawing this element to screen.
-     *
      * @param h The height for drawing this element to screen.
-     *
      * @param up The images comprising the "up" button state.
-     *
      * @param down The images comprising the "down" button state.
-     *
      * @param text The button text.
-     *
      * @param font The font to use.
-     *
      * @param color The text color.
-     *
      * @param autoRepeat Whether the button should autorepeat while being
      * pressed.
-     *
      * @param commandList The commands to execute when the button is selected.
      */
-    public GUITextButton(@NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final String name, final int x, final int y, final int w, final int h, @NotNull final ButtonImages up, @NotNull final ButtonImages down, @NotNull final String text, @NotNull final Font font, @NotNull final Color color, final boolean autoRepeat, @NotNull final CommandList commandList)
-    {
+    public GUITextButton(@NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final String name, final int x, final int y, final int w, final int h, @NotNull final ButtonImages up, @NotNull final ButtonImages down, @NotNull final String text, @NotNull final Font font, @NotNull final Color color, final boolean autoRepeat, @NotNull final CommandList commandList) {
         super(tooltipManager, elementListener, name, x, y, w, h, Transparency.TRANSLUCENT, autoRepeat, commandList);
-        if (up.getHeight() != h)
-        {
+        if (up.getHeight() != h) {
             throw new IllegalArgumentException("'up' state is height "+up.getHeight()+" but button height is "+h);
         }
-        if (down.getHeight() != h)
-        {
+        if (down.getHeight() != h) {
             throw new IllegalArgumentException("'down' state is height "+up.getHeight()+" but button height is "+h);
         }
-        if (up.getMinimumWidth() > w)
-        {
+        if (up.getMinimumWidth() > w) {
             throw new IllegalArgumentException("minimum width in 'up' state is "+up.getMinimumWidth()+" but button width is "+w);
         }
-        if (down.getMinimumWidth() > w)
-        {
+        if (down.getMinimumWidth() > w) {
             throw new IllegalArgumentException("minimum width in 'down' state is "+down.getMinimumWidth()+" but button width is "+w);
         }
 
@@ -136,24 +116,27 @@ public class GUITextButton extends AbstractButton
         this.color = color;
     }
 
-    /** {@inheritDoc} */
+    /**
+     * {@inheritDoc}
+     */
     @Override
-    public void dispose()
-    {
+    public void dispose() {
         super.dispose();
     }
 
-    /** {@inheritDoc} */
+    /**
+     * {@inheritDoc}
+     */
     @Override
-    public void activeChanged()
-    {
+    public void activeChanged() {
         setChanged();
     }
 
-    /** {@inheritDoc} */
+    /**
+     * {@inheritDoc}
+     */
     @Override
-    protected void render(@NotNull final Graphics g)
-    {
+    protected void render(@NotNull final Graphics g) {
         g.setFont(font);
         g.setColor(color);
         (isActive() ? down : up).render(g, getWidth());
@@ -162,4 +145,5 @@ public class GUITextButton extends AbstractButton
         final int y = (int)Math.round((getHeight()-rect.getMaxY()-rect.getMinY()))/2;
         g.drawString(text, (int)Math.round((getWidth()-rect.getWidth())/2), y);
     }
+
 }

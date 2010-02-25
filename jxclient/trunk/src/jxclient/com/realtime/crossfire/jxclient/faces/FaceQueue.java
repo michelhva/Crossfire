@@ -27,12 +27,12 @@ import org.jetbrains.annotations.NotNull;
  * Interface for classes implementing a means to load {@link Face}s.
  * @author Andreas Kirschbaum
  */
-public interface FaceQueue
-{
+public interface FaceQueue {
+
     /**
-     * Reset the processing: forget about pending faces. This function is
-     * called whenever the server socket breaks, or when a new connection has
-     * been established.
+     * Reset the processing: forget about pending faces. This function is called
+     * whenever the server socket breaks, or when a new connection has been
+     * established.
      */
     void reset();
 
@@ -57,4 +57,5 @@ public interface FaceQueue
      * @param faceQueueListener the listener to remove
      */
     void removeFaceQueueListener(@NotNull FaceQueueListener faceQueueListener);
+
 }

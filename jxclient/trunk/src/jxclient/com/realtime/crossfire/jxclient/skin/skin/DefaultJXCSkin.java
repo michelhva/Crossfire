@@ -42,8 +42,8 @@ import java.util.Iterator;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 
-public class DefaultJXCSkin implements JXCSkin
-{
+public class DefaultJXCSkin implements JXCSkin {
+
     /**
      * The default number of ground view objects.
      */
@@ -157,242 +157,231 @@ public class DefaultJXCSkin implements JXCSkin
      * @param selectedResolution the resolution to use
      * @param dialogs the dialogs to use
      */
-    public DefaultJXCSkin(@NotNull final KeyBindings defaultKeyBindings, @NotNull final OptionManager optionManager, @NotNull final Resolution selectedResolution, @NotNull final Dialogs dialogs)
-    {
+    public DefaultJXCSkin(@NotNull final KeyBindings defaultKeyBindings, @NotNull final OptionManager optionManager, @NotNull final Resolution selectedResolution, @NotNull final Dialogs dialogs) {
         this.defaultKeyBindings = defaultKeyBindings;
         this.optionManager = optionManager;
         this.selectedResolution = selectedResolution;
         this.dialogs = dialogs;
     }
 
-    /** {@inheritDoc} */
+    /**
+     * {@inheritDoc}
+     */
     @NotNull
     @Override
-    public String getSkinName()
-    {
+    public String getSkinName() {
         return skinName+"@"+selectedResolution;
     }
 
     @NotNull
-    public String getPlainSkinName()
-    {
+    public String getPlainSkinName() {
         return skinName;
     }
 
-    public void setSkinName(@NotNull final String skinName)
-    {
+    public void setSkinName(@NotNull final String skinName) {
         this.skinName = skinName;
     }
 
-    /** {@inheritDoc} */
+    /**
+     * {@inheritDoc}
+     */
     @NotNull
     @Override
-    public Resolution getResolution()
-    {
+    public Resolution getResolution() {
         return selectedResolution;
     }
 
-    /** {@inheritDoc} */
+    /**
+     * {@inheritDoc}
+     */
     @Override
-    public int getMapWidth()
-    {
+    public int getMapWidth() {
         return mapWidth;
     }
 
-    /** {@inheritDoc} */
+    /**
+     * {@inheritDoc}
+     */
     @Override
-    public int getMapHeight()
-    {
+    public int getMapHeight() {
         return mapHeight;
     }
 
-    /** {@inheritDoc} */
+    /**
+     * {@inheritDoc}
+     */
     @Override
-    public int getNumLookObjects()
-    {
+    public int getNumLookObjects() {
         return numLookObjects;
     }
 
-    /** {@inheritDoc} */
+    /**
+     * {@inheritDoc}
+     */
     @Nullable
     @Override
-    public Gui getDialogQuit()
-    {
-        try
-        {
+    public Gui getDialogQuit() {
+        try {
             return getDialog("quit");
-        }
-        catch (final JXCSkinException ex)
-        {
+        } catch (final JXCSkinException ex) {
             return null;
         }
     }
 
-    /** {@inheritDoc} */
+    /**
+     * {@inheritDoc}
+     */
     @Nullable
     @Override
-    public Gui getDialogDisconnect()
-    {
-        try
-        {
+    public Gui getDialogDisconnect() {
+        try {
             return getDialog("disconnect");
-        }
-        catch (final JXCSkinException ex)
-        {
+        } catch (final JXCSkinException ex) {
             return null;
         }
     }
 
-    /** {@inheritDoc} */
+    /**
+     * {@inheritDoc}
+     */
     @Nullable
     @Override
-    public Gui getDialogConnect()
-    {
-        try
-        {
+    public Gui getDialogConnect() {
+        try {
             return getDialog("connect");
-        }
-        catch (final JXCSkinException ex)
-        {
+        } catch (final JXCSkinException ex) {
             return null;
         }
     }
 
-    /** {@inheritDoc} */
+    /**
+     * {@inheritDoc}
+     */
     @NotNull
     @Override
-    public Gui getDialogKeyBind()
-    {
-        try
-        {
+    public Gui getDialogKeyBind() {
+        try {
             return getDialog("keybind");
-        }
-        catch (final JXCSkinException ex)
-        {
+        } catch (final JXCSkinException ex) {
             throw new AssertionError("keybind dialog does not exist");
         }
     }
 
-    /** {@inheritDoc} */
+    /**
+     * {@inheritDoc}
+     */
     @NotNull
     @Override
-    public Gui getDialogQuery()
-    {
-        try
-        {
+    public Gui getDialogQuery() {
+        try {
             return getDialog("query");
-        }
-        catch (final JXCSkinException ex)
-        {
+        } catch (final JXCSkinException ex) {
             throw new AssertionError("query dialog does not exist");
         }
     }
 
-    /** {@inheritDoc} */
+    /**
+     * {@inheritDoc}
+     */
     @NotNull
     @Override
-    public Gui getDialogBook(final int booknr)
-    {
-        try
-        {
+    public Gui getDialogBook(final int booknr) {
+        try {
             return getDialog("book");
-        }
-        catch (final JXCSkinException ex)
-        {
+        } catch (final JXCSkinException ex) {
             throw new AssertionError("book dialog does not exist");
         }
     }
 
-    /** {@inheritDoc} */
+    /**
+     * {@inheritDoc}
+     */
     @NotNull
     @Override
-    public Gui getMainInterface()
-    {
-        try
-        {
+    public Gui getMainInterface() {
+        try {
             return getDialog("main");
-        }
-        catch (final JXCSkinException ex)
-        {
+        } catch (final JXCSkinException ex) {
             throw new AssertionError("main dialog does not exist");
         }
     }
 
-    /** {@inheritDoc} */
+    /**
+     * {@inheritDoc}
+     */
     @NotNull
     @Override
-    public Gui getMetaInterface()
-    {
-        try
-        {
+    public Gui getMetaInterface() {
+        try {
             return getDialog("meta");
-        }
-        catch (final JXCSkinException ex)
-        {
+        } catch (final JXCSkinException ex) {
             throw new AssertionError("meta dialog does not exist");
         }
     }
 
-    /** {@inheritDoc} */
+    /**
+     * {@inheritDoc}
+     */
     @NotNull
     @Override
-    public Gui getStartInterface()
-    {
-        try
-        {
+    public Gui getStartInterface() {
+        try {
             return getDialog("start");
-        }
-        catch (final JXCSkinException ex)
-        {
+        } catch (final JXCSkinException ex) {
             throw new AssertionError("start dialog does not exist");
         }
     }
 
-    /** {@inheritDoc} */
+    /**
+     * {@inheritDoc}
+     */
     @NotNull
     @Override
-    public Gui getDialog(@NotNull final String name) throws JXCSkinException
-    {
+    public Gui getDialog(@NotNull final String name) throws JXCSkinException {
         return dialogs.lookup(name);
     }
 
-    /** {@inheritDoc} */
+    /**
+     * {@inheritDoc}
+     */
     @NotNull
     @Override
-    public Iterator<Gui> iterator()
-    {
+    public Iterator<Gui> iterator() {
         return dialogs.iterator();
     }
 
-    /** {@inheritDoc} */
+    /**
+     * {@inheritDoc}
+     */
     @NotNull
     @Override
-    public CommandList getCommandList(@NotNull final String name) throws JXCSkinException
-    {
+    public CommandList getCommandList(@NotNull final String name) throws JXCSkinException {
         return definedCommandLists.lookup(name);
     }
 
-    /** {@inheritDoc} */
+    /**
+     * {@inheritDoc}
+     */
     @Override
-    public boolean hasChangedDialog()
-    {
+    public boolean hasChangedDialog() {
         return dialogs.hasChangedDialog();
     }
 
-    /** {@inheritDoc} */
+    /**
+     * {@inheritDoc}
+     */
     @NotNull
     @Override
-    public KeyBindings getDefaultKeyBindings()
-    {
+    public KeyBindings getDefaultKeyBindings() {
         return defaultKeyBindings;
     }
 
-    /** {@inheritDoc} */
+    /**
+     * {@inheritDoc}
+     */
     @Override
-    public void attach(@NotNull final JXCWindowRenderer windowRenderer, @NotNull final TooltipManager tooltipManager)
-    {
-        if (this.windowRenderer != null || this.tooltipManager != null)
-        {
+    public void attach(@NotNull final JXCWindowRenderer windowRenderer, @NotNull final TooltipManager tooltipManager) {
+        if (this.windowRenderer != null || this.tooltipManager != null) {
             throw new IllegalStateException("skin is already attached");
         }
 
@@ -401,36 +390,32 @@ public class DefaultJXCSkin implements JXCSkin
         windowRenderer.setTooltip(tooltipLabel);
         tooltipManager.setTooltip(tooltipLabel);
 
-        for (final CommandList commandList : initEvents)
-        {
+        for (final CommandList commandList : initEvents) {
             commandList.execute();
         }
     }
 
-    /** {@inheritDoc} */
+    /**
+     * {@inheritDoc}
+     */
     @Override
-    public void detach()
-    {
+    public void detach() {
         final JXCWindowRenderer tmpWindowRenderer = windowRenderer;
         final TooltipManager tmpTooltipManager = tooltipManager;
         windowRenderer = null;
         tooltipManager = null;
-        if (tmpWindowRenderer != null)
-        {
+        if (tmpWindowRenderer != null) {
             tmpWindowRenderer.setTooltip(null);
         }
-        if (tmpTooltipManager != null)
-        {
+        if (tmpTooltipManager != null) {
             tmpTooltipManager.setTooltip(null);
         }
 
-        for (final String optionName : optionNames)
-        {
+        for (final String optionName : optionNames) {
             optionManager.removeOption(optionName);
         }
         optionNames.clear();
-        for (final GUIElement guiElement : guiElements)
-        {
+        for (final GUIElement guiElement : guiElements) {
             guiElement.dispose();
         }
         guiElements.clear();
@@ -441,65 +426,52 @@ public class DefaultJXCSkin implements JXCSkin
      * @param guiElement the GUI element
      * @throws JXCSkinException if the name is not unique
      */
-    public void insertGuiElement(@NotNull final GUIElement guiElement) throws JXCSkinException
-    {
+    public void insertGuiElement(@NotNull final GUIElement guiElement) throws JXCSkinException {
         guiElements.add(guiElement);
     }
 
     @NotNull
-    public Resolution getSelectedResolution()
-    {
+    public Resolution getSelectedResolution() {
         return selectedResolution;
     }
 
-    public void addDialog(@NotNull final String dialogName)
-    {
+    public void addDialog(@NotNull final String dialogName) {
         dialogs.addDialog(dialogName);
     }
 
     @Nullable
-    public String getDialogToLoad()
-    {
+    public String getDialogToLoad() {
         return dialogs.getDialogToLoad();
     }
 
-    public void addCommandList(@NotNull final String commandListName, @NotNull final CommandListType commandListType) throws JXCSkinException
-    {
+    public void addCommandList(@NotNull final String commandListName, @NotNull final CommandListType commandListType) throws JXCSkinException {
         final CommandList commandList = new CommandList(commandListType);
         definedCommandLists.insert(commandListName, commandList);
     }
 
-    public void addInitEvent(@NotNull final CommandList commandList)
-    {
+    public void addInitEvent(@NotNull final CommandList commandList) {
         initEvents.add(commandList);
     }
 
-    public void setMapSize(final int mapWidth, final int mapHeight)
-    {
+    public void setMapSize(final int mapWidth, final int mapHeight) {
         this.mapWidth = mapWidth;
         this.mapHeight = mapHeight;
     }
 
-    public void setNumLookObjects(final int numLookObjects)
-    {
+    public void setNumLookObjects(final int numLookObjects) {
         this.numLookObjects = numLookObjects;
     }
 
-    public void addOption(@NotNull final String optionName, @NotNull final String documentation, @NotNull final Option commandCheckBoxOption) throws JXCSkinException
-    {
-        try
-        {
+    public void addOption(@NotNull final String optionName, @NotNull final String documentation, @NotNull final Option commandCheckBoxOption) throws JXCSkinException {
+        try {
             optionManager.addOption(optionName, documentation, commandCheckBoxOption);
-        }
-        catch (final OptionException ex)
-        {
+        } catch (final OptionException ex) {
             throw new JXCSkinException(ex.getMessage());
         }
         optionNames.add(optionName);
     }
 
-    public void setTooltipLabel(@Nullable final AbstractLabel tooltipLabel)
-    {
+    public void setTooltipLabel(@Nullable final AbstractLabel tooltipLabel) {
         this.tooltipLabel = tooltipLabel;
     }
 
@@ -507,8 +479,7 @@ public class DefaultJXCSkin implements JXCSkin
      * Adds a {@link GaugeUpdater} instance.
      * @param gaugeUpdater the gauge updater to add
      */
-    public void addGaugeUpdater(@NotNull final GaugeUpdater gaugeUpdater)
-    {
+    public void addGaugeUpdater(@NotNull final GaugeUpdater gaugeUpdater) {
         gaugeUpdaters.add(gaugeUpdater);
     }
 
@@ -516,8 +487,8 @@ public class DefaultJXCSkin implements JXCSkin
      * Records a {@link SkinEvent} attached to this instance.
      * @param skinEvent the skin event to add
      */
-    public void addSkinEvent(@NotNull final SkinEvent skinEvent)
-    {
+    public void addSkinEvent(@NotNull final SkinEvent skinEvent) {
         skinEvents.add(skinEvent);
     }
+
 }

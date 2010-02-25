@@ -29,8 +29,8 @@ import org.jetbrains.annotations.NotNull;
  * Animation state information.
  * @author Andreas Kirschbaum
  */
-public class AnimationState
-{
+public class AnimationState {
+
     /**
      * The animation to display.
      */
@@ -69,8 +69,7 @@ public class AnimationState
      * @param type the animation type
      * @param mapUpdater the instance to use
      */
-    public AnimationState(@NotNull final Animation animation, final int type, @NotNull final CfMapUpdater mapUpdater)
-    {
+    public AnimationState(@NotNull final Animation animation, final int type, @NotNull final CfMapUpdater mapUpdater) {
         this.animation = animation;
         this.type = type;
         this.mapUpdater = mapUpdater;
@@ -80,8 +79,7 @@ public class AnimationState
      * Sets the animation speed.
      * @param speed the new animation speed to set
      */
-    public void setSpeed(final int speed)
-    {
+    public void setSpeed(final int speed) {
         assert speed > 0;
         final int tmpIndex = index/this.speed;
         final int tmpDelay = Math.min(index%this.speed, speed-1);
@@ -93,8 +91,7 @@ public class AnimationState
      * Sets the tick number. This function does not update the displayed face.
      * @param tickno the current tick number
      */
-    public void setTickno(final int tickno)
-    {
+    public void setTickno(final int tickno) {
         this.tickno = tickno;
     }
 
@@ -103,16 +100,12 @@ public class AnimationState
      * @param tickno the tick number
      * @param location the location to update
      */
-    public void updateTickno(final int tickno, @NotNull final Location location)
-    {
+    public void updateTickno(final int tickno, @NotNull final Location location) {
         final int oldFaceIndex = index/speed;
         final int diff = tickno-this.tickno;
-        if (tickno < this.tickno)
-        {
+        if (tickno < this.tickno) {
             System.err.println("Ignoring inconsistent tick value: current tick number is "+tickno+", previous tick number was "+this.tickno+".");
-        }
-        else
-        {
+        } else {
             index = (index+diff)%(speed*animation.getFaces());
         }
         this.tickno = tickno;
@@ -126,15 +119,14 @@ public class AnimationState
      * @param oldFaceIndex suppress the map face update if the new face index
      * equals this value
      */
-    public void draw(@NotNull final Location location, final int oldFaceIndex)
-    {
+    public void draw(@NotNull final Location location, final int oldFaceIndex) {
         final int faceIndex = index/speed;
-        if (faceIndex == oldFaceIndex)
-        {
+        if (faceIndex == oldFaceIndex) {
             return;
         }
 
         final int face = animation.getFace(faceIndex);
         mapUpdater.processMapFace(location.getX(), location.getY(), location.getLayer(), face, false);
     }
+
 }

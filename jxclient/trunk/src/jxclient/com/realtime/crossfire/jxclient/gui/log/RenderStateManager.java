@@ -26,11 +26,10 @@ import org.jetbrains.annotations.NotNull;
 
 /**
  * Encapsulates the state for rendering a {@link Buffer} instance.
- *
  * @author Andreas Kirschbaum
  */
-public class RenderStateManager
-{
+public class RenderStateManager {
+
     /**
      * The listener to notify about state changes.
      */
@@ -70,28 +69,24 @@ public class RenderStateManager
      * The listener to re-render the window contents after changes.
      */
     @NotNull
-    private final BufferListener bufferListener = new BufferListener()
-    {
+    private final BufferListener bufferListener = new BufferListener() {
         /** {@inheritDoc} */
         @Override
-        public void linesAdded(final int lines)
-        {
+        public void linesAdded(final int lines) {
             renderState.linesAdded(buffer, lines);
             fireChanges();
         }
 
         /** {@inheritDoc} */
         @Override
-        public void linesReplaced(final int lines)
-        {
+        public void linesReplaced(final int lines) {
             renderState.linesReplaced(buffer, lines);
             fireChanges();
         }
 
         /** {@inheritDoc} */
         @Override
-        public void linesRemoved(@NotNull final List<Line> lines)
-        {
+        public void linesRemoved(@NotNull final List<Line> lines) {
             renderState.linesRemoved(buffer, lines);
             fireChanges();
         }
@@ -99,13 +94,10 @@ public class RenderStateManager
 
     /**
      * Create a new instance.
-     *
      * @param renderStateListener The listener to notify about state changes.
-     *
      * @param buffer The rendered buffer.
      */
-    public RenderStateManager(@NotNull final RenderStateListener renderStateListener, @NotNull final Buffer buffer)
-    {
+    public RenderStateManager(@NotNull final RenderStateListener renderStateListener, @NotNull final Buffer buffer) {
         this.renderStateListener = renderStateListener;
         this.buffer = buffer;
         this.buffer.addBufferListener(bufferListener);
@@ -113,52 +105,43 @@ public class RenderStateManager
         fireChanges();
     }
 
-    public void dispose()
-    {
+    public void dispose() {
         buffer.removeBufferListener(bufferListener);
     }
 
     /**
      * Return the first line to render.
-     *
      * @return The line index.
      */
-    public int getTopIndex()
-    {
+    public int getTopIndex() {
         return renderState.getTopIndex();
     }
 
     /**
      * Return the pixel offset for the first line to render.
-     *
      * @return The pixel offset.
      */
-    public int getTopOffset()
-    {
+    public int getTopOffset() {
         return renderState.getTopOffset();
     }
 
-    public int getScrollPos()
-    {
+    public int getScrollPos() {
         return renderState.getScrollPos();
     }
 
     /**
      * Reset the scrolling range to default values.
      */
-    public void resetScroll()
-    {
+    public void resetScroll() {
         renderState.scrollToBottom(buffer);
         fireChanges();
     }
 
     /**
      * Scroll up by pixels.
-     *
      * @param dy The number of pixels to scroll.
      */
-    public void scrollUp(final int dy)
-    {
+    public void scrollUp(final int dy) {
         assert dy > 0;
         renderState.scrollTo(buffer, renderState.getScrollPos()-dy);
         fireChanges();
@@ -166,11 +149,9 @@ public class RenderStateManager
 
     /**
      * Scroll down by pixels.
-     *
      * @param dy The number of pixels to scroll.
      */
-    public void scrollDown(final int dy)
-    {
+    public void scrollDown(final int dy) {
         assert dy > 0;
         renderState.scrollTo(buffer, renderState.getScrollPos()+dy);
         fireChanges();
@@ -178,11 +159,9 @@ public class RenderStateManager
 
     /**
      * Scroll to a location.
-     *
      * @param y The location.
      */
-    public void scrollTo(final int y)
-    {
+    public void scrollTo(final int y) {
         renderState.scrollTo(buffer, y);
         fireChanges();
     }
@@ -191,8 +170,7 @@ public class RenderStateManager
      * Whether scrolling up is possible.
      * @return whether scrolling up is possible
      */
-    public boolean canScrollUp()
-    {
+    public boolean canScrollUp() {
         return renderState.canScrollUp();
     }
 
@@ -200,48 +178,41 @@ public class RenderStateManager
      * Whether scrolling down is possible.
      * @return whether scrolling down is possible
      */
-    public boolean canScrollDown()
-    {
+    public boolean canScrollDown() {
         return renderState.canScrollDown();
     }
 
-    private void fireChanges()
-    {
+    private void fireChanges() {
         boolean fireChanges = false;
 
-        if (lastTopIndex != renderState.getTopIndex())
-        {
+        if (lastTopIndex != renderState.getTopIndex()) {
             lastTopIndex = renderState.getTopIndex();
             fireChanges = true;
         }
 
-        if (lastTopOffset != renderState.getTopOffset())
-        {
+        if (lastTopOffset != renderState.getTopOffset()) {
             lastTopOffset = renderState.getTopOffset();
             fireChanges = true;
         }
 
-        if (lastScrollPos != renderState.getScrollPos())
-        {
+        if (lastScrollPos != renderState.getScrollPos()) {
             lastScrollPos = renderState.getScrollPos();
             fireChanges = true;
         }
 
-        if (lastCanScrollDown != renderState.canScrollDown())
-        {
+        if (lastCanScrollDown != renderState.canScrollDown()) {
             lastCanScrollDown = renderState.canScrollDown();
             fireChanges = true;
         }
 
-        if (lastCanScrollUp != renderState.canScrollUp())
-        {
+        if (lastCanScrollUp != renderState.canScrollUp()) {
             lastCanScrollUp = renderState.canScrollUp();
             fireChanges = true;
         }
 
-        if (renderState.mustRepaint() || fireChanges)
-        {
+        if (renderState.mustRepaint() || fireChanges) {
             renderStateListener.stateChanged();
         }
     }
+
 }

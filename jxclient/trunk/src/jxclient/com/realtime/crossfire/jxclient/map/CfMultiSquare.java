@@ -30,8 +30,8 @@ import org.jetbrains.annotations.NotNull;
  * objects.
  * @author Andreas Kirschbaum
  */
-public class CfMultiSquare
-{
+public class CfMultiSquare {
+
     /**
      * The x-coordinate of this square.
      */
@@ -60,8 +60,7 @@ public class CfMultiSquare
      * @param y the y-coordinate of this square
      * @param map the <code>CfMap</code> instance this square belongs to
      */
-    public CfMultiSquare(final int x, final int y, @NotNull final CfMap map)
-    {
+    public CfMultiSquare(final int x, final int y, @NotNull final CfMap map) {
         this.x = x;
         this.y = y;
         this.map = map;
@@ -70,12 +69,9 @@ public class CfMultiSquare
     /**
      * Clears all faces from this square.
      */
-    public void clear()
-    {
-        for (int layer = 0; layer < CrossfireMap2Command.NUM_LAYERS; layer++)
-        {
-            if (faces[layer] != null)
-            {
+    public void clear() {
+        for (int layer = 0; layer < CrossfireMap2Command.NUM_LAYERS; layer++) {
+            if (faces[layer] != null) {
                 map.setFace(x, y, layer, null); // XXX: do not reset fog-of-war state
                 faces[layer] = null;
             }
@@ -87,16 +83,14 @@ public class CfMultiSquare
      * @param layer the layer to update
      * @param face the face to set; <code>null</code> to clear the face
      */
-    public void setFace(final int layer, @NotNull final Face face)
-    {
-        if (faces[layer] != null)
-        {
+    public void setFace(final int layer, @NotNull final Face face) {
+        if (faces[layer] != null) {
             map.setFace(x, y, layer, null); // XXX: do not reset fog-of-war state
         }
         faces[layer] = face;
-        if (faces[layer] != null)
-        {
+        if (faces[layer] != null) {
             map.setFace(x, y, layer, faces[layer]); // XXX: do not reset fog-of-war state
         }
     }
+
 }

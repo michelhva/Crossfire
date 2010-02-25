@@ -29,8 +29,8 @@ import org.jetbrains.annotations.NotNull;
  * Abstract base class for {@link Command} implementations.
  * @author Andreas Kirschbaum
  */
-public abstract class AbstractCommand implements Command
-{
+public abstract class AbstractCommand implements Command {
+
     /**
      * The connection instance.
      */
@@ -41,8 +41,7 @@ public abstract class AbstractCommand implements Command
      * Creates a new instance.
      * @param crossfireServerConnection the connection instance
      */
-    protected AbstractCommand(@NotNull final CrossfireServerConnection crossfireServerConnection)
-    {
+    protected AbstractCommand(@NotNull final CrossfireServerConnection crossfireServerConnection) {
         this.crossfireServerConnection = crossfireServerConnection;
     }
 
@@ -50,8 +49,7 @@ public abstract class AbstractCommand implements Command
      * Displays a regular output message.
      * @param message the message
      */
-    protected void drawInfo(@NotNull final String message)
-    {
+    protected void drawInfo(@NotNull final String message) {
         drawInfo(message, CrossfireDrawinfoListener.NDI_BLACK);
     }
 
@@ -59,8 +57,7 @@ public abstract class AbstractCommand implements Command
      * Displays an error message.
      * @param message the error message
      */
-    protected void drawInfoError(@NotNull final String message)
-    {
+    protected void drawInfoError(@NotNull final String message) {
         drawInfo(message, CrossfireDrawinfoListener.NDI_RED);
     }
 
@@ -69,8 +66,8 @@ public abstract class AbstractCommand implements Command
      * @param message the message
      * @param color the color code
      */
-    protected void drawInfo(@NotNull final String message, final int color)
-    {
+    protected void drawInfo(@NotNull final String message, final int color) {
         crossfireServerConnection.drawInfo(message, color);
     }
+
 }

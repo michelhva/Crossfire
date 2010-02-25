@@ -28,11 +28,10 @@ import org.jetbrains.annotations.NotNull;
 
 /**
  * Maintains a set of named options.
- *
  * @author Andreas Kirschbaum
  */
-public class OptionManager
-{
+public class OptionManager {
+
     /**
      * Maps option name to option instance.
      */
@@ -47,29 +46,21 @@ public class OptionManager
 
     /**
      * Create a new instance.
-     *
      * @param settings The settings instance for loading/saving option values.
      */
-    public OptionManager(@NotNull final Settings settings)
-    {
+    public OptionManager(@NotNull final Settings settings) {
         this.settings = settings;
     }
 
     /**
      * Add a new option.
-     *
      * @param optionName The option name to add.
-     *
      * @param documentation The documentation string for the settings.
-     *
      * @param option The option to add.
-     *
      * @throws OptionException If the option name is not unique.
      */
-    public void addOption(@NotNull final String optionName, @NotNull final String documentation, @NotNull final Option option) throws OptionException
-    {
-        if (options.containsKey(optionName))
-        {
+    public void addOption(@NotNull final String optionName, @NotNull final String documentation, @NotNull final Option option) throws OptionException {
+        if (options.containsKey(optionName)) {
             throw new OptionException("duplicate option name: "+optionName);
         }
 
@@ -80,26 +71,20 @@ public class OptionManager
      * Removes an option by name. Does nothing if the option does not exist.
      * @param optionName the option name to remove
      */
-    public void removeOption(@NotNull final String optionName)
-    {
+    public void removeOption(@NotNull final String optionName) {
         options.remove(optionName);
     }
 
     /**
      * Return a check box option.
-     *
      * @param optionName The option name to look up.
-     *
      * @return The option.
-     *
      * @throws OptionException If the option name does not exist.
      */
     @NotNull
-    public CheckBoxOption getCheckBoxOption(@NotNull final String optionName) throws OptionException
-    {
+    public CheckBoxOption getCheckBoxOption(@NotNull final String optionName) throws OptionException {
         final Object option = options.get(optionName);
-        if (option == null || !(option instanceof CheckBoxOption))
-        {
+        if (option == null || !(option instanceof CheckBoxOption)) {
             throw new OptionException("undefined option: "+optionName);
         }
 
@@ -109,28 +94,20 @@ public class OptionManager
     /**
      * Load all options' states from the backing settings instance.
      */
-    public void loadOptions()
-    {
-        for (final Map.Entry<String, Option> e : options.entrySet())
-        {
+    public void loadOptions() {
+        for (final Map.Entry<String, Option> e : options.entrySet()) {
             final String optionName = e.getKey();
             final Object option = e.getValue();
-            if (option instanceof CheckBoxOption)
-            {
+            if (option instanceof CheckBoxOption) {
                 final CheckBoxOption checkBoxOption = (CheckBoxOption)option;
                 final boolean checked = settings.getBoolean(optionName, checkBoxOption.isDefaultChecked());
-                if (checkBoxOption.isChecked() == checked)
-                {
+                if (checkBoxOption.isChecked() == checked) {
                     // make sure the appropriate option command is executed
                     checkBoxOption.fireStateChangedEvent();
-                }
-                else
-                {
+                } else {
                     checkBoxOption.setChecked(checked);
                 }
-            }
-            else
-            {
+            } else {
                 throw new AssertionError();
             }
         }
@@ -139,24 +116,19 @@ public class OptionManager
     /**
      * Save all options' states to the backing settings instance.
      */
-    public void saveOptions()
-    {
-        for (final Map.Entry<String, Option> e : options.entrySet())
-        {
+    public void saveOptions() {
+        for (final Map.Entry<String, Option> e : options.entrySet()) {
             final String optionName = e.getKey();
             final Option option = e.getValue();
-            if (!option.inhibitSave())
-            {
-                if (option instanceof CheckBoxOption)
-                {
+            if (!option.inhibitSave()) {
+                if (option instanceof CheckBoxOption) {
                     final CheckBoxOption checkBoxOption = (CheckBoxOption)option;
                     settings.putBoolean(optionName, checkBoxOption.isChecked());
-                }
-                else
-                {
+                } else {
                     throw new AssertionError();
                 }
             }
         }
     }
+
 }

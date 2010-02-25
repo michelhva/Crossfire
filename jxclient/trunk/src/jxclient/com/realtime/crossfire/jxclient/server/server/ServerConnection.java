@@ -28,8 +28,8 @@ import org.jetbrains.annotations.NotNull;
  * Performs most of the network-related work.
  * @author Andreas Kirschbaum
  */
-public interface ServerConnection
-{
+public interface ServerConnection {
+
     /**
      * Attempts to connect the client to a server.
      * @param hostname the hostname to connect to
@@ -53,4 +53,5 @@ public interface ServerConnection
      * @param clientSocketListener the client socket listener to remove
      */
     void removeClientSocketListener(@NotNull ClientSocketListener clientSocketListener);
+
 }

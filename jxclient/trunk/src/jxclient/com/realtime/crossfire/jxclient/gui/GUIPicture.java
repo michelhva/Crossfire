@@ -32,13 +32,12 @@ import java.awt.image.BufferedImage;
 import org.jetbrains.annotations.NotNull;
 
 /**
- *
- * @version 1.0
  * @author Lauwenmark
+ * @version 1.0
  * @since 1.0
  */
-public class GUIPicture extends GUIElement
-{
+public class GUIPicture extends GUIElement {
+
     /**
      * The serial version UID.
      */
@@ -46,55 +45,44 @@ public class GUIPicture extends GUIElement
 
     /**
      * Create a new instance.
-     *
      * @param tooltipManager the tooltip manager to update
-     *
      * @param elementListener the element listener to notify
-     *
      * @param name The name of this element.
-     *
      * @param x The x-coordinate for drawing this element to screen; it is
      * relative to <code>gui</code>.
-     *
      * @param y The y-coordinate for drawing this element to screen; it is
      * relative to <code>gui</code>.
-     *
      * @param w The width for drawing this element to screen.
-     *
      * @param h The height for drawing this element to screen.
-     *
      * @param image The picture to paint.
-     *
      * @param alpha The transparency value.
      */
-    public GUIPicture(@NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final String name, final int x, final int y, final int w, final int h, @NotNull final BufferedImage image, final float alpha)
-    {
+    public GUIPicture(@NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final String name, final int x, final int y, final int w, final int h, @NotNull final BufferedImage image, final float alpha) {
         super(tooltipManager, elementListener, name, x, y, w, h, alpha < 1F ? Transparency.TRANSLUCENT : image.getTransparency());
-        synchronized (bufferedImageSync)
-        {
+        synchronized (bufferedImageSync) {
             final Graphics2D g = createBufferGraphics();
-            try
-            {
+            try {
                 g.setComposite(AlphaComposite.getInstance(AlphaComposite.SRC_OVER, alpha));
                 g.drawImage(image, 0, 0, image.getWidth(), image.getHeight(), null);
-            }
-            finally
-            {
+            } finally {
                 g.dispose();
             }
         }
     }
 
-    /** {@inheritDoc} */
+    /**
+     * {@inheritDoc}
+     */
     @Override
-    public void dispose()
-    {
+    public void dispose() {
         super.dispose();
     }
 
-    /** {@inheritDoc} */
+    /**
+     * {@inheritDoc}
+     */
     @Override
-    protected void render(@NotNull final Graphics g)
-    {
+    protected void render(@NotNull final Graphics g) {
     }
+
 }

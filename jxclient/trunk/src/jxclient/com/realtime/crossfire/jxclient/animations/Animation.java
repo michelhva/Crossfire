@@ -26,11 +26,10 @@ import org.jetbrains.annotations.NotNull;
 /**
  * Manages animations frecevied from the server. Animations are uniquely
  * identified by an animation id. Each animation consists of a list of faces.
- *
  * @author Andreas Kirschbaum
  */
-public class Animation
-{
+public class Animation {
+
     /**
      * Flags for the animation; currently unused.
      */
@@ -44,13 +43,10 @@ public class Animation
 
     /**
      * Create a new instance.
-     *
      * @param flags Flags for the animation; currently unused.
-     *
      * @param faces The faces list of the animation.
      */
-    public Animation(final int flags, @NotNull final int[] faces)
-    {
+    public Animation(final int flags, @NotNull final int[] faces) {
         assert faces.length > 0;
 
         this.flags = flags;
@@ -60,23 +56,19 @@ public class Animation
 
     /**
      * Return the number of faces of this animation.
-     *
      * @return The number of faces.
      */
-    public int getFaces()
-    {
+    public int getFaces() {
         return faces.length;
     }
 
     /**
      * Return one face of this animation.
-     *
      * @param index The face index.
-     *
      * @return The face.
      */
-    public int getFace(final int index)
-    {
+    public int getFace(final int index) {
         return faces[index];
     }
+
 }

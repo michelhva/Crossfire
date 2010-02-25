@@ -24,21 +24,27 @@ package com.realtime.crossfire.jxclient.server.crossfire;
 import org.jetbrains.annotations.NotNull;
 
 /**
- *
- * @version 1.0
  * @author Lauwenmark
+ * @version 1.0
  * @since 1.0
  */
-public interface CrossfireQueryListener
-{
-    /** Query type: yes/no question. */
+public interface CrossfireQueryListener {
+
+    /**
+     * Query type: yes/no question.
+     */
     int YESNO = 1;
 
-    /** Query type: single character response expected. */
+    /**
+     * Query type: single character response expected.
+     */
     int SINGLECHAR = 2;
 
-    /** Query type: hide input being entered. */
+    /**
+     * Query type: hide input being entered.
+     */
     int HIDEINPUT = 4;
 
     void commandQueryReceived(@NotNull String prompt, int queryType);
+
 }

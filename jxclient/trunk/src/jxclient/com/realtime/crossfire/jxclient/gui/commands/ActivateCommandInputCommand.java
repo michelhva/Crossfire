@@ -28,15 +28,17 @@ import org.jetbrains.annotations.NotNull;
  * A {@link GUICommand} which activates the command input field.
  * @author Andreas Kirschbaum
  */
-public class ActivateCommandInputCommand implements GUICommand
-{
+public class ActivateCommandInputCommand implements GUICommand {
+
     /**
      * The {@link CommandCallback} to affect.
      */
     @NotNull
     private final CommandCallback commandCallback;
 
-    /** The command text to set. */
+    /**
+     * The command text to set.
+     */
     @NotNull
     private final String commandText;
 
@@ -52,24 +54,25 @@ public class ActivateCommandInputCommand implements GUICommand
      * @param commandCallback the command callback to affect
      * @param macros the macros instance to use
      */
-    public ActivateCommandInputCommand(@NotNull final String commandText, @NotNull final CommandCallback commandCallback, @NotNull final Macros macros)
-    {
+    public ActivateCommandInputCommand(@NotNull final String commandText, @NotNull final CommandCallback commandCallback, @NotNull final Macros macros) {
         this.commandText = commandText;
         this.commandCallback = commandCallback;
         this.macros = macros;
     }
 
-    /** {@inheritDoc} */
+    /**
+     * {@inheritDoc}
+     */
     @Override
-    public boolean canExecute()
-    {
+    public boolean canExecute() {
         return true;
     }
 
-    /** {@inheritDoc} */
+    /**
+     * {@inheritDoc}
+     */
     @Override
-    public void execute()
-    {
+    public void execute() {
         commandCallback.activateCommandInput(macros.expandMacros(commandText));
     }
 
@@ -78,8 +81,8 @@ public class ActivateCommandInputCommand implements GUICommand
      * @return the command text
      */
     @NotNull
-    public String getCommandText()
-    {
+    public String getCommandText() {
         return commandText;
     }
+
 }

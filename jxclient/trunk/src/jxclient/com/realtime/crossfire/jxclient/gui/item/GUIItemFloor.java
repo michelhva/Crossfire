@@ -19,7 +19,6 @@
  * Copyright (C) 2006-2010 Andreas Kirschbaum.
  */
 
-
 package com.realtime.crossfire.jxclient.gui.item;
 
 import com.realtime.crossfire.jxclient.faces.FacesManager;
@@ -43,8 +42,8 @@ import org.jetbrains.annotations.Nullable;
  * A {@link GUIElement} representing an in-game object in the ground view.
  * @author Andreas Kirschbaum
  */
-public class GUIItemFloor extends GUIItemItem
-{
+public class GUIItemFloor extends GUIItemItem {
+
     /**
      * The resource for "Click here for next group of items" buttons.
      */
@@ -104,9 +103,8 @@ public class GUIItemFloor extends GUIItemItem
     private final int defaultIndex;
 
     /**
-     * The currently shown index. It is the item's index for ground view, and
-     * +1 for container view; index 0 for container view is the container
-     * itself.
+     * The currently shown index. It is the item's index for ground view, and +1
+     * for container view; index 0 for container view is the container itself.
      */
     private int index = -1;
 
@@ -121,18 +119,13 @@ public class GUIItemFloor extends GUIItemItem
      * from this floor tile.
      */
     @NotNull
-    private final LocationListener floorLocationListener = new LocationListener()
-    {
+    private final LocationListener floorLocationListener = new LocationListener() {
         /** {@inheritDoc} */
         @Override
-        public void locationModified(final int index, @Nullable final CfItem item)
-        {
-            if (containerTag == 0)
-            {
+        public void locationModified(final int index, @Nullable final CfItem item) {
+            if (containerTag == 0) {
                 assert index == GUIItemFloor.this.index;
-            }
-            else
-            {
+            } else {
                 assert GUIItemFloor.this.index >= 1;
                 assert index+1 == GUIItemFloor.this.index;
             }
@@ -145,12 +138,10 @@ public class GUIItemFloor extends GUIItemItem
      * floor location changes.
      */
     @NotNull
-    private final CurrentFloorListener currentFloorListener = new CurrentFloorListener()
-    {
+    private final CurrentFloorListener currentFloorListener = new CurrentFloorListener() {
         /** {@inheritDoc} */
         @Override
-        public void currentFloorChanged(final int currentFloor)
-        {
+        public void currentFloorChanged(final int currentFloor) {
             setIndex(index, currentFloor, true);
         }
     };
@@ -174,8 +165,7 @@ public class GUIItemFloor extends GUIItemItem
      * @param facesManager the faces manager instance to use
      * @throws IOException if a resource cannot be found
      */
-    public GUIItemFloor(@NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final CommandQueue commandQueue, @NotNull final String name, final int x, final int y, final int w, final int h, @NotNull final ItemPainter itemPainter, final int index, @NotNull final CrossfireServerConnection crossfireServerConnection, @NotNull final ItemsManager itemsManager, @NotNull final FacesManager facesManager) throws IOException
-    {
+    public GUIItemFloor(@NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final CommandQueue commandQueue, @NotNull final String name, final int x, final int y, final int w, final int h, @NotNull final ItemPainter itemPainter, final int index, @NotNull final CrossfireServerConnection crossfireServerConnection, @NotNull final ItemsManager itemsManager, @NotNull final FacesManager facesManager) throws IOException {
         super(tooltipManager, elementListener, name, x, y, w, h, crossfireServerConnection, itemPainter, facesManager);
         this.commandQueue = commandQueue;
         this.crossfireServerConnection = crossfireServerConnection;
@@ -189,155 +179,120 @@ public class GUIItemFloor extends GUIItemItem
         setIndex(index, containerTag, false);
     }
 
-    /** {@inheritDoc} */
+    /**
+     * {@inheritDoc}
+     */
     @Override
-    public void dispose()
-    {
+    public void dispose() {
         super.dispose();
         setIndex(-1, 0, false);
         itemsManager.getCurrentFloorManager().removeCurrentFloorListener(currentFloorListener);
     }
 
-    /** {@inheritDoc} */
+    /**
+     * {@inheritDoc}
+     */
     @Override
-    public boolean canScroll(final int distance)
-    {
-        if (distance < 0)
-        {
+    public boolean canScroll(final int distance) {
+        if (distance < 0) {
             return index >= -distance;
-        }
-        else if (distance > 0)
-        {
+        } else if (distance > 0) {
             return index+distance < itemsManager.getNumberOfItems(itemsManager.getCurrentFloorManager().getCurrentFloor());
-        }
-        else
-        {
+        } else {
             return false;
         }
     }
 
     /* {@inheritDoc} */
     @Override
-    public void scroll(final int distance)
-    {
+    public void scroll(final int distance) {
         setIndex(index+distance, containerTag, false);
     }
 
     /* {@inheritDoc} */
     @Override
-    public void resetScroll()
-    {
+    public void resetScroll() {
         setIndex(defaultIndex, containerTag, false);
     }
 
     /* {@inheritDoc} */
     @Override
-    public void button1Clicked(final int modifiers)
-    {
+    public void button1Clicked(final int modifiers) {
         final CfItem item = getItem();
-        if (item == null)
-        {
+        if (item == null) {
             return;
         }
 
-        if (item.isItemGroupButton())
-        {
+        if (item.isItemGroupButton()) {
             crossfireServerConnection.sendApply(item.getTag());
-        }
-        else
-        {
+        } else {
             crossfireServerConnection.sendExamine(item.getTag());
         }
     }
 
     /* {@inheritDoc} */
     @Override
-    public void button3Clicked(final int modifiers)
-    {
+    public void button3Clicked(final int modifiers) {
         final CfItem item = getItem();
-        if (item == null)
-        {
+        if (item == null) {
             return;
         }
-        if (itemsManager.getPlayer() != null)
-        {
+        if (itemsManager.getPlayer() != null) {
             commandQueue.sendMove(itemsManager.getPlayer().getTag(), item.getTag());
         }
     }
 
     /**
      * Set the floor tile to display.
-     *
      * @param index the floor tile
-     *
      * @param containerTag The new container tag.
-     *
      * @param forced if unset, do nothing if the <code>index</code> is
      * unchanged; if set, always render the item
      */
-    private void setIndex(final int index, final int containerTag, final boolean forced)
-    {
-        if (!forced && this.index == index)
-        {
+    private void setIndex(final int index, final int containerTag, final boolean forced) {
+        if (!forced && this.index == index) {
             return;
         }
 
-        if (this.index >= 0)
-        {
-            if (this.containerTag == 0)
-            {
+        if (this.index >= 0) {
+            if (this.containerTag == 0) {
                 itemsManager.getFloorManager().removeLocationListener(this.index, floorLocationListener);
-            }
-            else if (this.index > 0)
-            {
+            } else if (this.index > 0) {
                 itemsManager.getFloorManager().removeLocationListener(this.index-1, floorLocationListener);
-            }
-            else
-            {
+            } else {
                 // index 0 is the container itself -- no listener needed
             }
         }
         this.index = index;
         this.containerTag = containerTag;
-        if (this.index >= 0)
-        {
-            if (this.containerTag == 0)
-            {
+        if (this.index >= 0) {
+            if (this.containerTag == 0) {
                 itemsManager.getFloorManager().addLocationListener(this.index, floorLocationListener);
-            }
-            else if (this.index > 0)
-            {
+            } else if (this.index > 0) {
                 itemsManager.getFloorManager().addLocationListener(this.index-1, floorLocationListener);
-            }
-            else
-            {
+            } else {
                 // index 0 is the container itself -- no listener needed
             }
         }
 
-        if (this.containerTag == 0)
-        {
+        if (this.containerTag == 0) {
             final List<CfItem> list = itemsManager.getItems(itemsManager.getCurrentFloorManager().getCurrentFloor());
             setItem(0 <= this.index && this.index < list.size() ? list.get(this.index) : null);
-        }
-        else if (this.index > 0)
-        {
+        } else if (this.index > 0) {
             final List<CfItem> list = itemsManager.getItems(itemsManager.getCurrentFloorManager().getCurrentFloor());
             setItem(this.index-1 < list.size() ? list.get(this.index-1) : null);
-        }
-        else
-        {
+        } else {
             setItem(itemsManager.getItem(containerTag));
         }
     }
 
-    /** {@inheritDoc} */
+    /**
+     * {@inheritDoc}
+     */
     @NotNull
     @Override
-    protected Image getFace(@NotNull final CfItem item)
-    {
-        if (!item.isItemGroupButton())
-        {
+    protected Image getFace(@NotNull final CfItem item) {
+        if (!item.isItemGroupButton()) {
             return facesManager.getOriginalImageIcon(item.getFace().getFaceNum()).getImage();
         }
 
@@ -348,17 +303,20 @@ public class GUIItemFloor extends GUIItemItem
         return index > 0 ? nextGroupFace : prevGroupFace;
     }
 
-    /** {@inheritDoc} */
+    /**
+     * {@inheritDoc}
+     */
     @Override
-    public void setSelected(final boolean selected)
-    {
+    public void setSelected(final boolean selected) {
         // ignore: floor objects are never selected
     }
 
-    /** {@inheritDoc} */
+    /**
+     * {@inheritDoc}
+     */
     @Override
-    protected boolean isSelected()
-    {
+    protected boolean isSelected() {
         return false;
     }
+
 }

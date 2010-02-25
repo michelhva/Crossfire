@@ -28,11 +28,10 @@ import org.jetbrains.annotations.NotNull;
 
 /**
  * A {@link JXCSkinSource} that loads via the class loader.
- *
  * @author Andreas Kirschbaum
  */
-public class JXCSkinClassSource extends AbstractJXCSkinSource
-{
+public class JXCSkinClassSource extends AbstractJXCSkinSource {
+
     /**
      * The base resource name to prepend to all resource names.
      */
@@ -41,58 +40,53 @@ public class JXCSkinClassSource extends AbstractJXCSkinSource
 
     /**
      * Create a new instance.
-     *
      * @param baseName The base resource name to prepend to all resource names.
-     *
      * @throws JXCSkinException if the skin cannot be loaded
      */
-    public JXCSkinClassSource(@NotNull final String baseName) throws JXCSkinException
-    {
+    public JXCSkinClassSource(@NotNull final String baseName) throws JXCSkinException {
         this.baseName = baseName;
         checkAccess();
     }
 
-    /** {@inheritDoc} */
+    /**
+     * {@inheritDoc}
+     */
     @NotNull
     @Override
-    public InputStream getInputStream(@NotNull final String name) throws IOException
-    {
+    public InputStream getInputStream(@NotNull final String name) throws IOException {
         final InputStream inputStream = getClassLoader().getResourceAsStream(baseName+"/"+name);
-        if (inputStream == null)
-        {
+        if (inputStream == null) {
             throw new IOException("resource '"+baseName+"/"+name+"' not found");
         }
         return inputStream;
     }
 
-    /** {@inheritDoc} */
+    /**
+     * {@inheritDoc}
+     */
     @NotNull
     @Override
-    public String getURI(@NotNull final String name)
-    {
+    public String getURI(@NotNull final String name) {
         return "resource:"+baseName+"/"+name;
     }
 
     /**
      * Return the {@link ClassLoader} to use.
-     *
      * @return The class loader.
      */
     @NotNull
-    private ClassLoader getClassLoader()
-    {
+    private ClassLoader getClassLoader() {
         final ClassLoader classLoader = getClass().getClassLoader();
-        if (classLoader != null)
-        {
+        if (classLoader != null) {
             return classLoader;
         }
 
         final ClassLoader systemClassLoader = ClassLoader.getSystemClassLoader();
-        if (systemClassLoader != null)
-        {
+        if (systemClassLoader != null) {
             return systemClassLoader;
         }
 
         throw new InternalError("cannot find class loader");
     }
+
 }

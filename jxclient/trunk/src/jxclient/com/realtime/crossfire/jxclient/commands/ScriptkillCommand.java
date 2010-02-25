@@ -31,8 +31,8 @@ import org.jetbrains.annotations.NotNull;
  * Implements the "scriptkill" command. It terminates running scripts.
  * @author Andreas Kirschbaum
  */
-public class ScriptkillCommand extends AbstractCommand
-{
+public class ScriptkillCommand extends AbstractCommand {
+
     /**
      * The {@link ScriptManager} to use.
      */
@@ -44,41 +44,40 @@ public class ScriptkillCommand extends AbstractCommand
      * @param scriptManager the script manager to use
      * @param crossfireServerConnection the connection instance
      */
-    public ScriptkillCommand(@NotNull final ScriptManager scriptManager, @NotNull final CrossfireServerConnection crossfireServerConnection)
-    {
+    public ScriptkillCommand(@NotNull final ScriptManager scriptManager, @NotNull final CrossfireServerConnection crossfireServerConnection) {
         super(crossfireServerConnection);
         this.scriptManager = scriptManager;
     }
 
-    /** {@inheritDoc} */
+    /**
+     * {@inheritDoc}
+     */
     @Override
-    public boolean allArguments()
-    {
+    public boolean allArguments() {
         return false;
     }
 
-    /** {@inheritDoc} */
+    /**
+     * {@inheritDoc}
+     */
     @Override
-    public void execute(@NotNull final String args)
-    {
-        if (args.isEmpty())
-        {
+    public void execute(@NotNull final String args) {
+        if (args.isEmpty()) {
             drawInfoError("Which script to you want to kill?");
             return;
         }
 
         final Collection<ScriptProcess> scriptProcesses = scriptManager.getScripts(args);
-        if (scriptProcesses.isEmpty())
-        {
+        if (scriptProcesses.isEmpty()) {
             drawInfoError(scriptManager.hasScripts() ? "No matching scripts." : "No scripts running.");
             return;
         }
-        if (scriptProcesses.size() > 1)
-        {
+        if (scriptProcesses.size() > 1) {
             drawInfoError("More than one script matches: "+scriptProcesses+".");
             return;
         }
         final ScriptProcess scriptProcess = scriptProcesses.iterator().next();
         scriptProcess.killScript();
     }
+
 }

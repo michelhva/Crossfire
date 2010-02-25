@@ -25,15 +25,14 @@ import org.jetbrains.annotations.NotNull;
 
 /**
  * Interface for listeners interested in gui state changes.
- *
  * @author Andreas Kirschbaum
  */
-public interface RendererGuiStateListener
-{
+public interface RendererGuiStateListener {
+
     /**
      * The gui state has changed.
-     *
      * @param rendererGuiState The new guiState.
      */
     void guiStateChanged(@NotNull RendererGuiState rendererGuiState);
+
 }

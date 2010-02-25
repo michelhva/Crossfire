@@ -33,11 +33,10 @@ import org.jetbrains.annotations.Nullable;
  * Manages all sounds. Each sound has a sound type ({@link Sounds}) atatched.
  * Sound types can be disabled (by the user) or muted (by the application). A
  * sound is played only if it is neither disabled nor muted.
- *
  * @author Andreas Kirschbaum
  */
-public class SoundManager
-{
+public class SoundManager {
+
     /**
      * The clip manager for playing sound effects.
      */
@@ -66,58 +65,50 @@ public class SoundManager
      * connections.
      */
     @NotNull
-    private final GuiStateListener guiStateListener = new GuiStateListener()
-    {
+    private final GuiStateListener guiStateListener = new GuiStateListener() {
         /** {@inheritDoc} */
         @Override
-        public void start()
-        {
+        public void start() {
             muteMusic(true);
             mute(Sounds.CHARACTER, true);
         }
 
         /** {@inheritDoc} */
         @Override
-        public void metaserver()
-        {
+        public void metaserver() {
             muteMusic(true);
             mute(Sounds.CHARACTER, true);
         }
 
         /** {@inheritDoc} */
         @Override
-        public void preConnecting(@NotNull final String serverInfo)
-        {
+        public void preConnecting(@NotNull final String serverInfo) {
             // ignore
         }
 
         /** {@inheritDoc} */
         @Override
-        public void connecting(@NotNull final String serverInfo)
-        {
+        public void connecting(@NotNull final String serverInfo) {
             muteMusic(true);
             mute(Sounds.CHARACTER, true);
         }
 
         /** {@inheritDoc} */
         @Override
-        public void connecting(@NotNull final ClientSocketState clientSocketState)
-        {
+        public void connecting(@NotNull final ClientSocketState clientSocketState) {
             // ignore
         }
 
         /** {@inheritDoc} */
         @Override
-        public void connected()
-        {
+        public void connected() {
             muteMusic(false);
             mute(Sounds.CHARACTER, false);
         }
 
         /** {@inheritDoc} */
         @Override
-        public void connectFailed(@NotNull final String reason)
-        {
+        public void connectFailed(@NotNull final String reason) {
             // ignore
         }
     };
@@ -126,20 +117,16 @@ public class SoundManager
      * Creates a new instance.
      * @param guiStateManager the gui state manager to watch
      */
-    public SoundManager(@NotNull final GuiStateManager guiStateManager)
-    {
+    public SoundManager(@NotNull final GuiStateManager guiStateManager) {
         guiStateManager.addGuiStateListener(guiStateListener);
     }
 
     /**
      * Set whether the sound system is enabled.
-     *
      * @param enabled Whether the sound system is enabled.
      */
-    public void setEnabled(final boolean enabled)
-    {
-        if (this.enabled == enabled)
-        {
+    public void setEnabled(final boolean enabled) {
+        if (this.enabled == enabled) {
             return;
         }
 
@@ -149,37 +136,26 @@ public class SoundManager
 
     /**
      * Play a sound clip.
-     *
      * @param type The sound type.
-     *
      * @param name An optional prefix for the action name.
-     *
      * @param action The sound action name.
      */
-    public void playClip(@NotNull final Sounds type, @Nullable final String name, @NotNull final String action)
-    {
-        if (enabled && !mutedSounds.contains(type))
-        {
+    public void playClip(@NotNull final Sounds type, @Nullable final String name, @NotNull final String action) {
+        if (enabled && !mutedSounds.contains(type)) {
             clipManager.play(name, action);
         }
     }
 
     /**
      * Mute or unmute sound effects.
-     *
      * @param type The sound type to affect.
-     *
      * @param mute Whether to mute (<code>true</code>) or unmute
      * (<code>false</code>).
      */
-    private void mute(@NotNull final Sounds type, final boolean mute)
-    {
-        if (mute)
-        {
+    private void mute(@NotNull final Sounds type, final boolean mute) {
+        if (mute) {
             mutedSounds.add(type);
-        }
-        else
-        {
+        } else {
             mutedSounds.remove(type);
             // XXX: stop running sounds of type
         }
@@ -188,31 +164,27 @@ public class SoundManager
     /**
      * Play a background music. If the new music name is unchanged, continue
      * playing.
-     *
      * @param name The music name.
      */
-    public void playMusic(@Nullable final String name)
-    {
+    public void playMusic(@Nullable final String name) {
         musicManager.play(name);
     }
 
     /**
      * Mute or unmute background music.
-     *
      * @param muted Whether to mute (<code>true</code>) or unmute
      * (<code>false</code>).
      */
-    private void muteMusic(final boolean muted)
-    {
+    private void muteMusic(final boolean muted) {
         musicManager.setMuted(muted);
     }
 
     /**
      * Terminate all sounds and free resources.
      */
-    public void shutdown()
-    {
+    public void shutdown() {
         musicManager.shutdown();
         clipManager.shutdown();
     }
+
 }

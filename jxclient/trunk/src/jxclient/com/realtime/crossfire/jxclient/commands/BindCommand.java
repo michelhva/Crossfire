@@ -33,8 +33,8 @@ import org.jetbrains.annotations.NotNull;
  * Implements the "bind" command. It associates a key with a command.
  * @author Andreas Kirschbaum
  */
-public class BindCommand extends AbstractCommand
-{
+public class BindCommand extends AbstractCommand {
+
     /**
      * The commands instance for executing commands.
      */
@@ -60,55 +60,50 @@ public class BindCommand extends AbstractCommand
      * @param commandCallback the command callback to use
      * @param macros the macros instance to use
      */
-    public BindCommand(@NotNull final CrossfireServerConnection crossfireServerConnection, @NotNull final Commands commands, @NotNull final CommandCallback commandCallback, @NotNull final Macros macros)
-    {
+    public BindCommand(@NotNull final CrossfireServerConnection crossfireServerConnection, @NotNull final Commands commands, @NotNull final CommandCallback commandCallback, @NotNull final Macros macros) {
         super(crossfireServerConnection);
         this.commands = commands;
         this.commandCallback = commandCallback;
         this.macros = macros;
     }
 
-    /** {@inheritDoc} */
+    /**
+     * {@inheritDoc}
+     */
     @Override
-    public boolean allArguments()
-    {
+    public boolean allArguments() {
         return true;
     }
 
-    /** {@inheritDoc} */
+    /**
+     * {@inheritDoc}
+     */
     @Override
-    public void execute(@NotNull final String args)
-    {
+    public void execute(@NotNull final String args) {
         final String commandList;
         final boolean perCharacterBinding;
-        if (args.equals("-c"))
-        {
+        if (args.equals("-c")) {
             perCharacterBinding = true;
             commandList = "";
-        }
-        else if (args.startsWith("-c "))
-        {
+        } else if (args.startsWith("-c ")) {
             perCharacterBinding = true;
             commandList = StringUtils.trimLeading(args.substring(3));
-        }
-        else
-        {
+        } else {
             perCharacterBinding = false;
             commandList = args;
         }
 
-        if (commandList.length() == 0)
-        {
+        if (commandList.length() == 0) {
             drawInfoError("Which command do you want to bind?");
             return;
         }
 
         final CommandList commandList2 = new CommandList(CommandListType.AND);
         commandList2.add(GUICommandFactory.createCommand(commandList, commandCallback, commands, macros));
-        if (!commandCallback.createKeyBinding(perCharacterBinding, commandList2))
-        {
+        if (!commandCallback.createKeyBinding(perCharacterBinding, commandList2)) {
             drawInfoError("Cannot use bind -c since no character is logged in.");
             return;
         }
     }
+
 }

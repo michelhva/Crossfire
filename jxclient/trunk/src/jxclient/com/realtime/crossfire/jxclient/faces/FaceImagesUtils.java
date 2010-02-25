@@ -32,13 +32,12 @@ import org.jetbrains.annotations.NotNull;
  * Utility class for creating {@link FaceImages} instances.
  * @author Andreas Kirschbaum
  */
-public class FaceImagesUtils
-{
+public class FaceImagesUtils {
+
     /**
      * Private constructor to prevent instantiation.
      */
-    private FaceImagesUtils()
-    {
+    private FaceImagesUtils() {
     }
 
     /**
@@ -48,8 +47,7 @@ public class FaceImagesUtils
      * @return the face images instance
      */
     @NotNull
-    public static FaceImages newFaceImages(@NotNull final ImageIcon originalImageIcon)
-    {
+    public static FaceImages newFaceImages(@NotNull final ImageIcon originalImageIcon) {
         final ImageIcon scaledImageIcon = new ImageScale2x(originalImageIcon).getScaledImage();
         final ImageIcon magicMapImageIcon = new ImageScale8d(originalImageIcon).getScaledImage();
         return new FaceImages(originalImageIcon, scaledImageIcon, magicMapImageIcon);
@@ -60,8 +58,7 @@ public class FaceImagesUtils
      * @return the face images instance
      */
     @NotNull
-    public static FaceImages newEmptyFaceImages()
-    {
+    public static FaceImages newEmptyFaceImages() {
         final GraphicsEnvironment ge = GraphicsEnvironment.getLocalGraphicsEnvironment();
         final GraphicsDevice gd = ge.getDefaultScreenDevice();
         final GraphicsConfiguration gconf = gd.getDefaultConfiguration();
@@ -71,4 +68,5 @@ public class FaceImagesUtils
         final ImageIcon emptyMagicMapImageIcon = new ImageIcon(gconf.createCompatibleImage(Face.SQUARE_SIZE/8, Face.SQUARE_SIZE/8, Transparency.OPAQUE));
         return new FaceImages(emptyOriginalImageIcon, emptyScaledImageIcon, emptyMagicMapImageIcon);
     }
+
 }

@@ -53,8 +53,8 @@ import org.jetbrains.annotations.Nullable;
  * @author Lauwenmark
  * @author Andreas Kirschbaum
  */
-public class DefaultScriptProcess extends Thread implements ScriptProcess
-{
+public class DefaultScriptProcess extends Thread implements ScriptProcess {
+
     /**
      * The script ID identifying this script instance.
      */
@@ -153,40 +153,32 @@ public class DefaultScriptProcess extends Thread implements ScriptProcess
      * #crossfireServerConnection} to track commands sent to the server.
      */
     @NotNull
-    private final ClientSocketListener clientSocketListener = new ClientSocketListener()
-    {
+    private final ClientSocketListener clientSocketListener = new ClientSocketListener() {
         /** {@inheritDoc} */
         @Override
-        public void connecting()
-        {
+        public void connecting() {
             // ignore
         }
 
         /** {@inheritDoc} */
         @Override
-        public void connected()
-        {
+        public void connected() {
             // ignore
         }
 
         /** {@inheritDoc} */
         @Override
-        public void packetReceived(@NotNull final byte[] buf, final int start, final int end)
-        {
+        public void packetReceived(@NotNull final byte[] buf, final int start, final int end) {
             // ignore
         }
 
         /** {@inheritDoc} */
         @Override
-        public void packetSent(@NotNull final byte[] buf, final int len)
-        {
+        public void packetSent(@NotNull final byte[] buf, final int len) {
             final String cmd;
-            try
-            {
+            try {
                 cmd = new String(buf, 0, len, "ISO-8859-1");
-            }
-            catch (final UnsupportedEncodingException ex)
-            {
+            } catch (final UnsupportedEncodingException ex) {
                 throw new AssertionError(); // will never happen: every JVM must implement ISO-8859-1
             }
             commandSent(cmd);
@@ -194,15 +186,13 @@ public class DefaultScriptProcess extends Thread implements ScriptProcess
 
         /** {@inheritDoc} */
         @Override
-        public void disconnecting(@NotNull final String reason)
-        {
+        public void disconnecting(@NotNull final String reason) {
             // ignore
         }
 
         /** {@inheritDoc} */
         @Override
-        public void disconnected(@NotNull final String reason)
-        {
+        public void disconnected(@NotNull final String reason) {
             // ignore
         }
     };
@@ -220,8 +210,7 @@ public class DefaultScriptProcess extends Thread implements ScriptProcess
      * @param skillSet the skill set for looking up skill names
      * @throws IOException if the script cannot be created
      */
-    public DefaultScriptProcess(final int scriptId, @NotNull final String filename, @NotNull final CommandQueue commandQueue, @NotNull final CrossfireServerConnection crossfireServerConnection, @NotNull final Stats stats, @NotNull final ItemsManager itemsManager, @NotNull final SpellsManager spellsManager, @NotNull final CfMapUpdater mapUpdater, @NotNull final SkillSet skillSet) throws IOException
-    {
+    public DefaultScriptProcess(final int scriptId, @NotNull final String filename, @NotNull final CommandQueue commandQueue, @NotNull final CrossfireServerConnection crossfireServerConnection, @NotNull final Stats stats, @NotNull final ItemsManager itemsManager, @NotNull final SpellsManager spellsManager, @NotNull final CfMapUpdater mapUpdater, @NotNull final SkillSet skillSet) throws IOException {
         this.scriptId = scriptId;
         this.filename = filename;
         this.commandQueue = commandQueue;
@@ -238,102 +227,83 @@ public class DefaultScriptProcess extends Thread implements ScriptProcess
         osw = new OutputStreamWriter(proc.getOutputStream());
     }
 
-    /** {@inheritDoc} */
+    /**
+     * {@inheritDoc}
+     */
     @Override
-    public int getScriptId()
-    {
+    public int getScriptId() {
         return scriptId;
     }
 
-    /** {@inheritDoc} */
+    /**
+     * {@inheritDoc}
+     */
     @NotNull
     @Override
-    public String getFilename()
-    {
+    public String getFilename() {
         return filename;
     }
 
-    /** {@inheritDoc} */
+    /**
+     * {@inheritDoc}
+     */
     @Override
-    public void run()
-    {
+    public void run() {
         @Nullable String result = "unexpected";
-        try
-        {
-            try
-            {
+        try {
+            try {
                 final InputStreamReader isr = new InputStreamReader(in);
-                try
-                {
+                try {
                     final BufferedReader br = new BufferedReader(isr);
-                    try
-                    {
-                        for (;;)
-                        {
+                    try {
+                        for (; ;) {
                             final String line = br.readLine();
-                            if (line == null)
-                            {
+                            if (line == null) {
                                 break;
                             }
 
                             runScriptCommand(line);
                         }
-                    }
-                    finally
-                    {
+                    } finally {
                         br.close();
                     }
-                }
-                finally
-                {
+                } finally {
                     isr.close();
                 }
-                try
-                {
+                try {
                     final int exitStatus = proc.waitFor();
                     result = exitStatus == 0 ? null : "exit "+exitStatus;
-                }
-                catch (final InterruptedException ex)
-                {
+                } catch (final InterruptedException ex) {
                     result = ex.getMessage();
                 }
-            }
-            catch (final IOException ex)
-            {
+            } catch (final IOException ex) {
                 result = ex.getMessage();
             }
             crossfireServerConnection.removeClientSocketListener(clientSocketListener);
-        }
-        finally
-        {
-            if (isMonitoring)
-            {
+        } finally {
+            if (isMonitoring) {
                 crossfireServerConnection.removeClientSocketListener(clientSocketListener);
             }
             packetWatcher.destroy();
-            for (final ScriptProcessListener scriptProcessListener : scriptProcessListeners)
-            {
+            for (final ScriptProcessListener scriptProcessListener : scriptProcessListeners) {
                 scriptProcessListener.scriptTerminated(result);
             }
         }
     }
 
-    /** {@inheritDoc} */
+    /**
+     * {@inheritDoc}
+     */
     @Override
-    public void commandSent(@NotNull final String cmd)
-    {
-        if (killed)
-        {
+    public void commandSent(@NotNull final String cmd) {
+        if (killed) {
             return;
         }
 
-        try
-        {
+        try {
             osw.write(cmd+"\n");
             osw.flush();
-        }
-        catch (final IOException e)
-        {
+        } catch (final IOException e) {
             e.printStackTrace();
             killScript();
         }
@@ -344,35 +314,27 @@ public class DefaultScriptProcess extends Thread implements ScriptProcess
      * @param cmd the message to send
      * @param item the item to send
      */
-    private void commandSentItem(@NotNull final String cmd, @NotNull final CfItem item)
-    {
+    private void commandSentItem(@NotNull final String cmd, @NotNull final CfItem item) {
         int flags = 0;
-        if (item.isMagic())
-        {
+        if (item.isMagic()) {
             flags |= 0x100;
         }
-        if (item.isCursed())
-        {
+        if (item.isCursed()) {
             flags |= 0x80;
         }
-        if (item.isDamned())
-        {
+        if (item.isDamned()) {
             flags |= 0x40;
         }
-        if (item.isUnpaid())
-        {
+        if (item.isUnpaid()) {
             flags |= 0x20;
         }
-        if (item.isLocked())
-        {
+        if (item.isLocked()) {
             flags |= 0x10;
         }
-        if (item.isApplied())
-        {
+        if (item.isApplied()) {
             flags |= 0x08;
         }
-        if (item.isOpen())
-        {
+        if (item.isOpen()) {
             flags |= 0x04;
         }
         final int nrof = Math.max(1, item.getNrOf());
@@ -386,8 +348,7 @@ public class DefaultScriptProcess extends Thread implements ScriptProcess
      * @param x the cell's x-coordinate relative to the view area
      * @param y the cell's y-coordinate relative to the view area
      */
-    private void commandSentMap(@NotNull final CfMap map, final int x, final int y)
-    {
+    private void commandSentMap(@NotNull final CfMap map, final int x, final int y) {
         final CfMapSquare square = map.getMapSquare(x, y);
         final StringBuilder sb = new StringBuilder("request map ");
         sb.append(x);
@@ -398,22 +359,17 @@ public class DefaultScriptProcess extends Thread implements ScriptProcess
         sb.append(" n y n "); // XXX: smoothing
         sb.append(square.isFogOfWar() ? 'y' : 'n');
         sb.append(" smooth 0 0 0 heads"); // XXX: smoothing
-        for (int i = 0; i < 3; i++)
-        {
+        for (int i = 0; i < 3; i++) {
             sb.append(' ');
             final Face face = square.getFace(i);
             sb.append(face == CfMapSquare.DEFAULT_FACE ? 0 : face.getFaceNum());
         }
         sb.append(" tails");
-        for (int i = 0; i < 3; i++)
-        {
+        for (int i = 0; i < 3; i++) {
             final CfMapSquare headSquare = square.getHeadMapSquare(i);
-            if (headSquare == null)
-            {
+            if (headSquare == null) {
                 sb.append(" 0");
-            }
-            else
-            {
+            } else {
                 sb.append(' ');
                 final Face face = headSquare.getFace(i);
                 sb.append(face == CfMapSquare.DEFAULT_FACE ? 0 : face.getFaceNum());
@@ -422,11 +378,12 @@ public class DefaultScriptProcess extends Thread implements ScriptProcess
         commandSent(sb.toString());
     }
 
-    /** {@inheritDoc} */
+    /**
+     * {@inheritDoc}
+     */
     @NotNull
     @Override
-    public String toString()
-    {
+    public String toString() {
         return scriptId+" "+filename;
     }
 
@@ -434,218 +391,131 @@ public class DefaultScriptProcess extends Thread implements ScriptProcess
      * Processes a "request" command from the script process.
      * @param parms the command arguments
      */
-    private void cmdRequest(@NotNull final String parms)
-    {
-        if (parms.equals("player"))
-        {
+    private void cmdRequest(@NotNull final String parms) {
+        if (parms.equals("player")) {
             commandSent("request player "+itemsManager.getPlayer().getTag()+" "+stats.getTitle());
-        }
-        else if (parms.equals("range"))
-        {
+        } else if (parms.equals("range")) {
             commandSent("request range "+stats.getRange());
-        }
-        else if (parms.equals("weight"))
-        {
+        } else if (parms.equals("weight")) {
             commandSent("request weight "+stats.getStat(CrossfireStatsListener.CS_STAT_WEIGHT_LIM)+" "+itemsManager.getPlayer().getWeight());
-        }
-        else if (parms.equals("stat stats"))
-        {
-            commandSent("request stat stats "+
-                        stats.getStat(CrossfireStatsListener.CS_STAT_STR)+" "+
-                        stats.getStat(CrossfireStatsListener.CS_STAT_CON)+" "+
-                        stats.getStat(CrossfireStatsListener.CS_STAT_DEX)+" "+
-                        stats.getStat(CrossfireStatsListener.CS_STAT_INT)+" "+
-                        stats.getStat(CrossfireStatsListener.CS_STAT_WIS)+" "+
-                        stats.getStat(CrossfireStatsListener.CS_STAT_POW)+" "+
-                        stats.getStat(CrossfireStatsListener.CS_STAT_CHA));
-        }
-        else if (parms.equals("stat cmbt"))
-        {
-            commandSent("request stat cmbt "+
-                        stats.getStat(CrossfireStatsListener.CS_STAT_WC)+" "+
-                        stats.getStat(CrossfireStatsListener.CS_STAT_AC)+" "+
-                        stats.getStat(CrossfireStatsListener.CS_STAT_DAM)+" "+
-                        stats.getStat(CrossfireStatsListener.CS_STAT_SPEED)+" "+
-                        stats.getStat(CrossfireStatsListener.CS_STAT_WEAP_SP));
-        }
-        else if (parms.equals("stat hp"))
-        {
-            commandSent("request stat hp "+
-                        stats.getStat(CrossfireStatsListener.CS_STAT_HP)+" "+
-                        stats.getStat(CrossfireStatsListener.CS_STAT_MAXHP)+" "+
-                        stats.getStat(CrossfireStatsListener.CS_STAT_SP)+" "+
-                        stats.getStat(CrossfireStatsListener.CS_STAT_MAXSP)+" "+
-                        stats.getStat(CrossfireStatsListener.CS_STAT_GRACE)+" "+
-                        stats.getStat(CrossfireStatsListener.CS_STAT_MAXGRACE)+" "+
-                        stats.getStat(CrossfireStatsListener.CS_STAT_FOOD));
-        }
-        else if (parms.equals("stat xp"))
-        {
+        } else if (parms.equals("stat stats")) {
+            commandSent("request stat stats "+stats.getStat(CrossfireStatsListener.CS_STAT_STR)+" "+stats.getStat(CrossfireStatsListener.CS_STAT_CON)+" "+stats.getStat(CrossfireStatsListener.CS_STAT_DEX)+" "+stats.getStat(CrossfireStatsListener.CS_STAT_INT)+" "+stats.getStat(CrossfireStatsListener.CS_STAT_WIS)+" "+stats.getStat(CrossfireStatsListener.CS_STAT_POW)+" "+stats.getStat(CrossfireStatsListener.CS_STAT_CHA));
+        } else if (parms.equals("stat cmbt")) {
+            commandSent("request stat cmbt "+stats.getStat(CrossfireStatsListener.CS_STAT_WC)+" "+stats.getStat(CrossfireStatsListener.CS_STAT_AC)+" "+stats.getStat(CrossfireStatsListener.CS_STAT_DAM)+" "+stats.getStat(CrossfireStatsListener.CS_STAT_SPEED)+" "+stats.getStat(CrossfireStatsListener.CS_STAT_WEAP_SP));
+        } else if (parms.equals("stat hp")) {
+            commandSent("request stat hp "+stats.getStat(CrossfireStatsListener.CS_STAT_HP)+" "+stats.getStat(CrossfireStatsListener.CS_STAT_MAXHP)+" "+stats.getStat(CrossfireStatsListener.CS_STAT_SP)+" "+stats.getStat(CrossfireStatsListener.CS_STAT_MAXSP)+" "+stats.getStat(CrossfireStatsListener.CS_STAT_GRACE)+" "+stats.getStat(CrossfireStatsListener.CS_STAT_MAXGRACE)+" "+stats.getStat(CrossfireStatsListener.CS_STAT_FOOD));
+        } else if (parms.equals("stat xp")) {
             final StringBuilder sb = new StringBuilder("request stat xp ");
             sb.append(stats.getStat(CrossfireStatsListener.CS_STAT_LEVEL));
             sb.append(' ').append(stats.getExperience());
-            for (int i = CrossfireStatsListener.CS_STAT_SKILLINFO; i < CrossfireStatsListener.CS_STAT_SKILLINFO+CrossfireStatsListener.CS_NUM_SKILLS; i++)
-            {
+            for (int i = CrossfireStatsListener.CS_STAT_SKILLINFO; i < CrossfireStatsListener.CS_STAT_SKILLINFO+CrossfireStatsListener.CS_NUM_SKILLS; i++) {
                 final Skill skill = skillSet.getSkill(i);
-                if (skill != null)
-                {
+                if (skill != null) {
                     sb.append(' ').append(skill.getLevel());
                     sb.append(' ').append(skill.getExperience());
-                }
-                else
-                {
+                } else {
                     sb.append(" 0 0");
                 }
             }
             commandSent(sb.toString());
-        }
-        else if (parms.equals("stat resists"))
-        {
+        } else if (parms.equals("stat resists")) {
             final StringBuilder sb = new StringBuilder("request stat resists");
-            for (int i = CrossfireStatsListener.CS_STAT_RESIST_START; i <= CrossfireStatsListener.CS_STAT_RESIST_END; i++)
-            {
+            for (int i = CrossfireStatsListener.CS_STAT_RESIST_START; i <= CrossfireStatsListener.CS_STAT_RESIST_END; i++) {
                 sb.append(' ');
                 sb.append(stats.getStat(i));
             }
             // add dummy values for GTK client compatibility
-            for (int i = CrossfireStatsListener.CS_STAT_RESIST_END+1-CrossfireStatsListener.CS_STAT_RESIST_START; i < 30; i++)
-            {
+            for (int i = CrossfireStatsListener.CS_STAT_RESIST_END+1-CrossfireStatsListener.CS_STAT_RESIST_START; i < 30; i++) {
                 sb.append(" 0");
             }
             commandSent(sb.toString());
-        }
-        else if (parms.equals("stat paths"))
-        {
+        } else if (parms.equals("stat paths")) {
             commandSent("request stat paths "+stats.getStat(CrossfireStatsListener.CS_STAT_SPELL_ATTUNE)+" "+stats.getStat(CrossfireStatsListener.CS_STAT_SPELL_REPEL)+" "+stats.getStat(CrossfireStatsListener.CS_STAT_SPELL_DENY));
-        }
-        else if (parms.equals("flags"))
-        {
+        } else if (parms.equals("flags")) {
             commandSent("request flags "+stats.getStat(CrossfireStatsListener.CS_STAT_FLAGS)+" "+(commandQueue.checkFire() ? "1" : "0")+" "+(commandQueue.checkRun() ? "1" : "0")+" 0");
-        }
-        else if (parms.equals("items inv"))
-        {
-            for (final CfItem item : itemsManager.getInventory())
-            {
+        } else if (parms.equals("items inv")) {
+            for (final CfItem item : itemsManager.getInventory()) {
                 commandSentItem("request items inv", item);
             }
             commandSent("request items inv end");
-        }
-        else if (parms.equals("items actv"))
-        {
-            for (final CfItem item : itemsManager.getInventory())
-            {
-                if (item.isApplied())
-                {
+        } else if (parms.equals("items actv")) {
+            for (final CfItem item : itemsManager.getInventory()) {
+                if (item.isApplied()) {
                     commandSentItem("request items actv", item);
                 }
             }
             commandSent("request items actv end");
-        }
-        else if (parms.equals("items on"))
-        {
-            for (final CfItem item : itemsManager.getItems(0))
-            {
+        } else if (parms.equals("items on")) {
+            for (final CfItem item : itemsManager.getItems(0)) {
                 commandSentItem("request items on", item);
             }
             commandSent("request items on end");
-        }
-        else if (parms.equals("items cont"))
-        {
+        } else if (parms.equals("items cont")) {
             final int containerTag = itemsManager.getCurrentFloorManager().getCurrentFloor();
-            if (containerTag != 0)
-            {
-                for (final CfItem item : itemsManager.getItems(containerTag))
-                {
+            if (containerTag != 0) {
+                for (final CfItem item : itemsManager.getItems(containerTag)) {
                     commandSentItem("request items cont", item);
                 }
             }
             commandSent("request items cont end");
-        }
-        else if (parms.equals("map pos"))
-        {
+        } else if (parms.equals("map pos")) {
             commandSent("request map pos "+mapUpdater.getWidth()/2+" "+mapUpdater.getHeight()/2);
-        }
-        else if (parms.equals("map near"))
-        {
+        } else if (parms.equals("map near")) {
             final CfMap map = mapUpdater.getMap();
             final int centerX = mapUpdater.getWidth()/2;
             final int centerY = mapUpdater.getHeight()/2;
-            for (int y = -1; y <= +1; y++)
-            {
-                for (int x = -1; x <= +1; x++)
-                {
+            for (int y = -1; y <= +1; y++) {
+                for (int x = -1; x <= +1; x++) {
                     commandSentMap(map, centerX+x, centerY+y);
                 }
             }
-        }
-        else if (parms.equals("map all"))
-        {
+        } else if (parms.equals("map all")) {
             final CfMap map = mapUpdater.getMap();
             final int width = mapUpdater.getWidth()/2;
             final int height = mapUpdater.getHeight()/2;
-            for (int y = 0; y < height; y++)
-            {
-                for (int x = 0; x < width; x++)
-                {
+            for (int y = 0; y < height; y++) {
+                for (int x = 0; x < width; x++) {
                     commandSentMap(map, x, y);
                 }
             }
-        }
-        else if (parms.startsWith("map "))
-        {
+        } else if (parms.startsWith("map ")) {
             final String[] tmp = parms.split(" +");
-            if (tmp.length != 3)
-            {
+            if (tmp.length != 3) {
                 reportError("syntax error: request "+parms);
                 return;
             }
 
             final int x;
-            try
-            {
+            try {
                 x = Integer.parseInt(tmp[1]);
-            }
-            catch (final NumberFormatException ex)
-            {
+            } catch (final NumberFormatException ex) {
                 reportError("syntax error: request "+parms);
                 return;
             }
 
             final int y;
-            try
-            {
+            try {
                 y = Integer.parseInt(tmp[2]);
-            }
-            catch (final NumberFormatException ex)
-            {
+            } catch (final NumberFormatException ex) {
                 reportError("syntax error: request "+parms);
                 return;
             }
 
             commandSentMap(mapUpdater.getMap(), x, y);
-        }
-        else if (parms.equals("skills"))
-        {
-            for (int i = CrossfireStatsListener.CS_STAT_SKILLINFO; i < CrossfireStatsListener.CS_STAT_SKILLINFO+CrossfireStatsListener.CS_NUM_SKILLS; i++)
-            {
+        } else if (parms.equals("skills")) {
+            for (int i = CrossfireStatsListener.CS_STAT_SKILLINFO; i < CrossfireStatsListener.CS_STAT_SKILLINFO+CrossfireStatsListener.CS_NUM_SKILLS; i++) {
                 final Object skill = skillSet.getSkill(i);
-                if (skill != null)
-                {
+                if (skill != null) {
                     commandSent("request skills "+i+" "+skill);
                 }
             }
             commandSent("request skills end");
-        }
-        else if (parms.equals("spells"))
-        {
-            for (final Spell spell : spellsManager.getSpellList())
-            {
+        } else if (parms.equals("spells")) {
+            for (final Spell spell : spellsManager.getSpellList()) {
                 commandSent("request spells "+spell.getTag()+" "+spell.getLevel()+" "+spell.getMana()+" "+spell.getGrace()+" "+spell.getSkill()+" "+spell.getPath()+" "+spell.getCastingTime()+" "+spell.getDamage()+" "+spell.getName());
             }
             commandSent("request spells end");
-        }
-        else
-        {
+        } else {
             reportError("syntax error: request "+parms);
         }
     }
@@ -654,15 +524,11 @@ public class DefaultScriptProcess extends Thread implements ScriptProcess
      * Processes a "issue mark" command from the script process.
      * @param parms the command arguments
      */
-    private void cmdIssueMark(@NotNull final String parms)
-    {
+    private void cmdIssueMark(@NotNull final String parms) {
         final int tag;
-        try
-        {
+        try {
             tag = Integer.parseInt(parms);
-        }
-        catch (final NumberFormatException ex)
-        {
+        } catch (final NumberFormatException ex) {
             reportError("syntax error: issue mark "+parms);
             return;
         }
@@ -673,28 +539,22 @@ public class DefaultScriptProcess extends Thread implements ScriptProcess
      * Processes a "issue lock" command from the script process.
      * @param parms the command arguments
      */
-    private void cmdIssueLock(@NotNull final String parms)
-    {
+    private void cmdIssueLock(@NotNull final String parms) {
         final String[] tmp = parms.split(" +", 2);
-        if (tmp.length != 2)
-        {
+        if (tmp.length != 2) {
             reportError("syntax error: issue lock "+parms);
             return;
         }
         final int val;
         final int tag;
-        try
-        {
+        try {
             val = Integer.parseInt(tmp[0]);
             tag = Integer.parseInt(tmp[1]);
-        }
-        catch (final NumberFormatException ex)
-        {
+        } catch (final NumberFormatException ex) {
             reportError("syntax error: issue lock "+parms);
             return;
         }
-        if (val < 0 || val > 1)
-        {
+        if (val < 0 || val > 1) {
             reportError("syntax error: issue lock "+parms);
             return;
         }
@@ -705,28 +565,22 @@ public class DefaultScriptProcess extends Thread implements ScriptProcess
      * Processes a regular "issue" command from the script process.
      * @param parms the command arguments
      */
-    private void cmdIssue(@NotNull final String parms)
-    {
+    private void cmdIssue(@NotNull final String parms) {
         final String[] pps = parms.split(" +", 3);
-        if (pps.length != 3)
-        {
+        if (pps.length != 3) {
             reportError("syntax error: issue "+parms);
             return;
         }
         final int repeat;
         final int tmp;
-        try
-        {
+        try {
             repeat = Integer.parseInt(pps[0]);
             tmp = Integer.parseInt(pps[1]);
-        }
-        catch (final NumberFormatException ex)
-        {
+        } catch (final NumberFormatException ex) {
             reportError("syntax error: issue "+parms);
             return;
         }
-        if (tmp < 0 || tmp > 1)
-        {
+        if (tmp < 0 || tmp > 1) {
             reportError("syntax error: issue "+parms);
             return;
         }
@@ -739,21 +593,16 @@ public class DefaultScriptProcess extends Thread implements ScriptProcess
      * Processes a "draw" command from the script process.
      * @param parms the command arguments
      */
-    private void cmdDraw(@NotNull final String parms)
-    {
+    private void cmdDraw(@NotNull final String parms) {
         final String[] pps = parms.split(" +", 2);
-        if (pps.length != 2)
-        {
+        if (pps.length != 2) {
             reportError("syntax error: draw "+parms);
             return;
         }
         final int color;
-        try
-        {
+        try {
             color = Integer.parseInt(pps[0]);
-        }
-        catch (final NumberFormatException ex)
-        {
+        } catch (final NumberFormatException ex) {
             reportError("syntax error: draw "+parms);
             return;
         }
@@ -763,10 +612,8 @@ public class DefaultScriptProcess extends Thread implements ScriptProcess
     /**
      * Processes a "monitor" command from the script process.
      */
-    private void cmdMonitor()
-    {
-        if (!isMonitoring)
-        {
+    private void cmdMonitor() {
+        if (!isMonitoring) {
             isMonitoring = true;
             crossfireServerConnection.addClientSocketListener(clientSocketListener);
         }
@@ -775,10 +622,8 @@ public class DefaultScriptProcess extends Thread implements ScriptProcess
     /**
      * Processes an "unmonitor" command from the script process.
      */
-    private void cmdUnmonitor()
-    {
-        if (isMonitoring)
-        {
+    private void cmdUnmonitor() {
+        if (isMonitoring) {
             isMonitoring = false;
             crossfireServerConnection.removeClientSocketListener(clientSocketListener);
         }
@@ -788,93 +633,53 @@ public class DefaultScriptProcess extends Thread implements ScriptProcess
      * Processes a line received from the script process.
      * @param cmdline the line
      */
-    private void runScriptCommand(@NotNull final String cmdline)
-    {
+    private void runScriptCommand(@NotNull final String cmdline) {
         final String[] tmp = cmdline.split(" +", 2);
-        if (tmp[0].equals("watch"))
-        {
-            if (tmp.length == 1)
-            {
+        if (tmp[0].equals("watch")) {
+            if (tmp.length == 1) {
                 packetWatcher.addCommand("");
-            }
-            else if (tmp[1].indexOf(' ') != -1)
-            {
+            } else if (tmp[1].indexOf(' ') != -1) {
                 reportError("syntax error: "+cmdline);
-            }
-            else
-            {
+            } else {
                 packetWatcher.addCommand(tmp[1]);
             }
-        }
-        else if (tmp[0].equals("unwatch"))
-        {
+        } else if (tmp[0].equals("unwatch")) {
             packetWatcher.removeCommand(tmp.length >= 2 ? tmp[1] : null);
-        }
-        else if (tmp[0].equals("request"))
-        {
-            if (tmp.length == 2)
-            {
+        } else if (tmp[0].equals("request")) {
+            if (tmp.length == 2) {
                 cmdRequest(tmp[1]);
-            }
-            else
-            {
+            } else {
                 reportError("syntax error: "+cmdline);
             }
-        }
-        else if (tmp[0].equals("issue"))
-        {
-            if (tmp.length != 2)
-            {
+        } else if (tmp[0].equals("issue")) {
+            if (tmp.length != 2) {
                 reportError("syntax error: "+cmdline);
-            }
-            else if (tmp[1].startsWith("mark "))
-            {
+            } else if (tmp[1].startsWith("mark ")) {
                 cmdIssueMark(tmp[1].substring(5));
-            }
-            else if (tmp[1].startsWith("lock "))
-            {
+            } else if (tmp[1].startsWith("lock ")) {
                 cmdIssueLock(tmp[1].substring(5));
-            }
-            else
-            {
+            } else {
                 cmdIssue(tmp[1]);
             }
-        }
-        else if (tmp[0].equals("draw"))
-        {
-            if (tmp.length == 2)
-            {
+        } else if (tmp[0].equals("draw")) {
+            if (tmp.length == 2) {
                 cmdDraw(tmp[1]);
-            }
-            else
-            {
+            } else {
                 reportError("syntax error: "+cmdline);
             }
-        }
-        else if (tmp[0].equals("monitor"))
-        {
-            if (tmp.length == 1)
-            {
+        } else if (tmp[0].equals("monitor")) {
+            if (tmp.length == 1) {
                 cmdMonitor();
-            }
-            else
-            {
+            } else {
                 reportError("The 'monitor' command does not take arguments.");
             }
-        }
-        else if (tmp[0].equals("unmonitor"))
-        {
-            if (tmp.length == 1)
-            {
+        } else if (tmp[0].equals("unmonitor")) {
+            if (tmp.length == 1) {
                 cmdUnmonitor();
-            }
-            else
-            {
+            } else {
                 reportError("The 'unmonitor' command does not take arguments.");
             }
-        }
-        else
-        {
+        } else {
             reportError("unrecognized command from script: "+cmdline);
         }
     }
@@ -883,41 +688,39 @@ public class DefaultScriptProcess extends Thread implements ScriptProcess
      * Reports an error while executing client commands.
      * @param string the error message
      */
-    private void reportError(@NotNull final String string)
-    {
+    private void reportError(@NotNull final String string) {
         crossfireServerConnection.drawInfo(string, CrossfireDrawinfoListener.NDI_RED);
     }
 
-    /** {@inheritDoc} */
+    /**
+     * {@inheritDoc}
+     */
     @Override
-    public void addScriptProcessListener(@NotNull final ScriptProcessListener scriptProcessListener)
-    {
+    public void addScriptProcessListener(@NotNull final ScriptProcessListener scriptProcessListener) {
         scriptProcessListeners.add(scriptProcessListener);
     }
 
-    /** {@inheritDoc} */
+    /**
+     * {@inheritDoc}
+     */
     @Override
-    public void killScript()
-    {
+    public void killScript() {
         killed = true;
         proc.destroy();
     }
 
-    /** {@inheritDoc} */
+    /**
+     * {@inheritDoc}
+     */
     @Override
-    public int compareTo(@NotNull final ScriptProcess o)
-    {
-        if (scriptId < o.getScriptId())
-        {
+    public int compareTo(@NotNull final ScriptProcess o) {
+        if (scriptId < o.getScriptId()) {
             return -1;
-        }
-        else if (scriptId > o.getScriptId())
-        {
+        } else if (scriptId > o.getScriptId()) {
             return +1;
-        }
-        else
-        {
+        } else {
             return 0;
         }
     }
+
 }

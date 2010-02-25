@@ -29,13 +29,13 @@ import org.jetbrains.annotations.Nullable;
  * Interface for {@link ImageIcon} caching classes.
  * @author Andreas Kirschbaum
  */
-public interface ImageCache
-{
+public interface ImageCache {
+
     /**
      * Retrieves an image from the cache.
      * @param face the face to retrieve
      * @return the image icon, or <code>null</code> if the cache does not
-     * contain the image
+     *         contain the image
      */
     @Nullable
     ImageIcon load(@NotNull Face face);
@@ -46,4 +46,5 @@ public interface ImageCache
      * @param imageIcon the image icon to store
      */
     void save(@NotNull Face face, @NotNull ImageIcon imageIcon);
+
 }

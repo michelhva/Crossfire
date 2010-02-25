@@ -27,13 +27,12 @@ import org.jetbrains.annotations.NotNull;
  * Utility class for formatting values into strings.
  * @author Andreas Kirschbaum
  */
-public class Formatter
-{
+public class Formatter {
+
     /**
      * Private constructor to prevent instantiation.
      */
-    private Formatter()
-    {
+    private Formatter() {
     }
 
     /**
@@ -42,33 +41,28 @@ public class Formatter
      * @return return the formatted value
      */
     @NotNull
-    public static String formatLong(final long value)
-    {
-        if (value < 1000000L)
-        {
+    public static String formatLong(final long value) {
+        if (value < 1000000L) {
             return Long.toString(value);
         }
 
-        if (value < 10000000L)
-        {
+        if (value < 10000000L) {
             final long tmp = (value+50000L)/100000L;
             return tmp/10+"."+tmp%10+" million";
         }
 
-        if (value < 1000000000L)
-        {
+        if (value < 1000000000L) {
             final long tmp = (value+500000L)/1000000L;
             return tmp+" million";
         }
 
-        if (value < 10000000000L)
-        {
+        if (value < 10000000000L) {
             final long tmp = (value+50000000L)/100000000L;
             return tmp/10+"."+tmp%10+" billion";
         }
 
-         final long tmp = (value+500000000L)/1000000000L;
-         return tmp+" billion";
+        final long tmp = (value+500000000L)/1000000000L;
+        return tmp+" billion";
     }
 
     /**
@@ -79,11 +73,9 @@ public class Formatter
      * @return the formatted value
      */
     @NotNull
-    public static String formatFloat(final double value, final int digits)
-    {
+    public static String formatFloat(final double value, final int digits) {
         final int tmp;
-        switch (digits)
-        {
+        switch (digits) {
         case 1:
             tmp = (int)(value*10+0.5);
             return tmp/10+"."+tmp%10;
@@ -99,4 +91,5 @@ public class Formatter
 
         throw new IllegalArgumentException();
     }
+
 }

@@ -28,11 +28,10 @@ import org.jetbrains.annotations.NotNull;
 
 /**
  * A cache for {@link Face} instances.
- *
  * @author Andreas Kirschbaum
  */
-public class FaceCache
-{
+public class FaceCache {
+
     /**
      * The cached faces. Empty slots are set to <code>null</code>.
      */
@@ -43,15 +42,12 @@ public class FaceCache
      * The listener to receive face commands.
      */
     @NotNull
-    private final CrossfireFaceListener crossfireFaceListener = new CrossfireFaceListener()
-    {
+    private final CrossfireFaceListener crossfireFaceListener = new CrossfireFaceListener() {
         /** {@inheritDoc} */
         @Override
-        public void faceReceived(final int faceNum, final int faceSetNum, final int faceChecksum, @NotNull final String faceName)
-        {
+        public void faceReceived(final int faceNum, final int faceSetNum, final int faceChecksum, @NotNull final String faceName) {
             // XXX: ignores faceSetNum
-            if (faces[faceNum] != null)
-            {
+            if (faces[faceNum] != null) {
                 System.err.println("Warning: defining duplicate face "+faceNum+" ("+faceName+")");
             }
             faces[faceNum] = new Face(faceNum, faceName, faceChecksum);
@@ -61,8 +57,7 @@ public class FaceCache
     /**
      * Creates a new instance.
      */
-    public FaceCache()
-    {
+    public FaceCache() {
         faces[0] = new Face(0, "empty", 0);
     }
 
@@ -70,35 +65,28 @@ public class FaceCache
      * Creates a new instance.
      * @param crossfireServerConnection the server connection to use
      */
-    public FaceCache(@NotNull final CrossfireServerConnection crossfireServerConnection)
-    {
+    public FaceCache(@NotNull final CrossfireServerConnection crossfireServerConnection) {
         this();
         crossfireServerConnection.addCrossfireFaceListener(crossfireFaceListener);
     }
 
     /**
      * Add a new face to the cache.
-     *
      * @param face The face to add.
      */
-    public void addFace(@NotNull final Face face)
-    {
+    public void addFace(@NotNull final Face face) {
         faces[face.getFaceNum()] = face;
     }
 
     /**
      * Return a face by face id.
-     *
      * @param faceNum The face id to look up.
-     *
      * @return the face
      */
     @NotNull
-    public Face getFace(final int faceNum)
-    {
+    public Face getFace(final int faceNum) {
         final Face face = faces[faceNum];
-        if (face != null)
-        {
+        if (face != null) {
             return face;
         }
 
@@ -108,12 +96,12 @@ public class FaceCache
     }
 
     /**
-     * Forgets about all face information. Should be called when connecting to
-     * a Crossfire server.
+     * Forgets about all face information. Should be called when connecting to a
+     * Crossfire server.
      */
-    public void reset()
-    {
+    public void reset() {
         Arrays.fill(faces, null);
         faces[0] = new Face(0, "empty", 0);
     }
+
 }

@@ -25,8 +25,8 @@ package com.realtime.crossfire.jxclient.gui.commands;
  * An executable command.
  * @author Andreas Kirschbaum
  */
-public interface GUICommand
-{
+public interface GUICommand {
+
     /**
      * Returns whether this command may be executed.
      * @return whether this command may be executed
@@ -38,4 +38,5 @@ public interface GUICommand
      * returns <code>false</code>.
      */
     void execute();
+
 }

@@ -33,14 +33,13 @@ import org.jetbrains.annotations.NotNull;
  * Helper class to synthesize an "is poisoned" stat value. The Crossfire server
  * currently does not send this information, therefore drawinfo messages are
  * tracked.
- *
  * @author Andreas Kirschbaum
  */
-public class PoisonWatcher
-{
+public class PoisonWatcher {
+
     /**
-     * Timeout after that the "poisoned" state is reset. This allow to prevent
-     * a stuck poison warning if the deassertion was missed for any reason.
+     * Timeout after that the "poisoned" state is reset. This allow to prevent a
+     * stuck poison warning if the deassertion was missed for any reason.
      */
     private static final int TIMEOUT_DEASSERT = 10000;
 
@@ -77,12 +76,10 @@ public class PoisonWatcher
      * The drawinfo listener to receive drawinfo messages.
      */
     @NotNull
-    private final CrossfireDrawinfoListener drawinfoListener = new CrossfireDrawinfoListener()
-    {
+    private final CrossfireDrawinfoListener drawinfoListener = new CrossfireDrawinfoListener() {
         /** {@inheritDoc} */
         @Override
-        public void commandDrawinfoReceived(@NotNull final String text, final int type)
-        {
+        public void commandDrawinfoReceived(@NotNull final String text, final int type) {
             check(text);
         }
     };
@@ -91,12 +88,10 @@ public class PoisonWatcher
      * The drawextinfo listener to receive drawextinfo messages.
      */
     @NotNull
-    private final CrossfireDrawextinfoListener drawextinfoListener = new CrossfireDrawextinfoListener()
-    {
+    private final CrossfireDrawextinfoListener drawextinfoListener = new CrossfireDrawextinfoListener() {
         /** {@inheritDoc} */
         @Override
-        public void commandDrawextinfoReceived(final int color, final int type, final int subtype, @NotNull final String message)
-        {
+        public void commandDrawextinfoReceived(final int color, final int type, final int subtype, @NotNull final String message) {
             check(message);
         }
     };
@@ -106,25 +101,20 @@ public class PoisonWatcher
      * missed.
      */
     @NotNull
-    private final TimeoutEvent timeoutEvent = new TimeoutEvent()
-    {
+    private final TimeoutEvent timeoutEvent = new TimeoutEvent() {
         /** {@inheritDoc} */
         @Override
-        public void timeout()
-        {
+        public void timeout() {
             setActive(false);
         }
     };
 
     /**
      * Create a new instance.
-     *
      * @param stats The stats instance to notify.
-     *
      * @param crossfireServerConnection The connection to watch.
      */
-    public PoisonWatcher(@NotNull final Stats stats, @NotNull final CrossfireServerConnection crossfireServerConnection)
-    {
+    public PoisonWatcher(@NotNull final Stats stats, @NotNull final CrossfireServerConnection crossfireServerConnection) {
         this.stats = stats;
         crossfireServerConnection.addCrossfireDrawinfoListener(drawinfoListener);
         crossfireServerConnection.addCrossfireDrawextinfoListener(drawextinfoListener);
@@ -133,41 +123,29 @@ public class PoisonWatcher
 
     /**
      * Examine a text message.
-     *
      * @param message The text message.
      */
-    private void check(@NotNull final String message)
-    {
-        if (message.equals(ASSERT_MESSAGE))
-        {
+    private void check(@NotNull final String message) {
+        if (message.equals(ASSERT_MESSAGE)) {
             setActive(true);
-        }
-        else if (message.equals(DEASSERT_MESSAGE))
-        {
+        } else if (message.equals(DEASSERT_MESSAGE)) {
             setActive(false);
         }
     }
 
     /**
      * Set the current poisoned state.
-     *
      * @param active The new poisoned state.
      */
-    private void setActive(final boolean active)
-    {
-        synchronized (sync)
-        {
-            if (active)
-            {
+    private void setActive(final boolean active) {
+        synchronized (sync) {
+            if (active) {
                 Timeouts.reset(TIMEOUT_DEASSERT, timeoutEvent);
-            }
-            else
-            {
+            } else {
                 Timeouts.remove(timeoutEvent);
             }
 
-            if (this.active == active)
-            {
+            if (this.active == active) {
                 return;
             }
 
@@ -175,4 +153,5 @@ public class PoisonWatcher
             stats.setStat(CrossfireStatsListener.C_STAT_POISONED, active ? 1 : 0);
         }
     }
+
 }

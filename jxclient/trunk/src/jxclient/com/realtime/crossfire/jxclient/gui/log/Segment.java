@@ -27,13 +27,12 @@ import java.awt.geom.RectangularShape;
 import org.jetbrains.annotations.NotNull;
 
 /**
- * One segment of a {@link Line} which should be displayed without changing
- * text attributes.
- *
+ * One segment of a {@link Line} which should be displayed without changing text
+ * attributes.
  * @author Andreas Kirschbaum
  */
-public interface Segment
-{
+public interface Segment {
+
     /**
      * Sets the x-coordinate to display the segment.
      * @param x the x-coordinate
@@ -75,4 +74,5 @@ public interface Segment
      */
     @NotNull
     RectangularShape getSize(@NotNull Fonts fonts, @NotNull FontRenderContext context);
+
 }

@@ -19,20 +19,19 @@
  * Copyright (C) 2006-2010 Andreas Kirschbaum.
  */
 
-
 package com.realtime.crossfire.jxclient.shortcuts;
 
 import java.util.EventListener;
 
 /**
  * Interface for listeners for {@link Shortcut} changes.
- *
  * @author Andreas Kirschbaum
  */
-public interface ShortcutListener extends EventListener
-{
+public interface ShortcutListener extends EventListener {
+
     /**
      * Will be called when any attribute has been changed.
      */
     void shortcutModified();
+
 }

@@ -27,12 +27,12 @@ import com.realtime.crossfire.jxclient.skills.SkillListener;
 import org.jetbrains.annotations.NotNull;
 
 /**
- * A {@link SkinEvent} that executes a {@link CommandList} whenever a new
- * skill has been lost.
+ * A {@link SkinEvent} that executes a {@link CommandList} whenever a new skill
+ * has been lost.
  * @author Andreas Kirschbaum
  */
-public class SkillRemovedSkinEvent implements SkinEvent
-{
+public class SkillRemovedSkinEvent implements SkinEvent {
+
     /**
      * The {@link CommandList} to execute.
      */
@@ -49,26 +49,22 @@ public class SkillRemovedSkinEvent implements SkinEvent
      * The {@link SkillListener} attached to {@link #skill}.
      */
     @NotNull
-    private final SkillListener skillListener = new SkillListener()
-    {
+    private final SkillListener skillListener = new SkillListener() {
         /** {@inheritDoc} */
         @Override
-        public void gainedSkill()
-        {
+        public void gainedSkill() {
             // ignore
         }
 
         /** {@inheritDoc} */
         @Override
-        public void lostSkill()
-        {
+        public void lostSkill() {
             commandList.execute();
         }
 
         /** {@inheritDoc} */
         @Override
-        public void changedSkill()
-        {
+        public void changedSkill() {
             // ignore
         }
     };
@@ -78,17 +74,18 @@ public class SkillRemovedSkinEvent implements SkinEvent
      * @param commandList the command list to execute.
      * @param skill the skill to monitor
      */
-    public SkillRemovedSkinEvent(@NotNull final CommandList commandList, @NotNull final Skill skill)
-    {
+    public SkillRemovedSkinEvent(@NotNull final CommandList commandList, @NotNull final Skill skill) {
         this.commandList = commandList;
         this.skill = skill;
         skill.addSkillListener(skillListener);
     }
 
-    /** {@inheritDoc} */
+    /**
+     * {@inheritDoc}
+     */
     @Override
-    public void dispose()
-    {
+    public void dispose() {
         skill.removeSkillListener(skillListener);
     }
+
 }

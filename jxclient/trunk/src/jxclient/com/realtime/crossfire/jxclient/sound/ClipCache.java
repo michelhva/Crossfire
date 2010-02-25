@@ -34,76 +34,56 @@ import org.jetbrains.annotations.Nullable;
 
 /**
  * Allocates new sound clips.
- *
  * @author Andreas Kirschbaum
  */
-public class ClipCache
-{
+public class ClipCache {
+
     /**
      * Allocate a new clip.
-     *
      * @param name An optional prefix for the action name.
-     *
      * @param action The action name of the clip to allocate.
-     *
      * @return The new clip, or <code>null</code> if an error occurs.
      */
     @Nullable
-    public static DataLine allocateClip(@Nullable final String name, @NotNull final String action)
-    {
+    public static DataLine allocateClip(@Nullable final String name, @NotNull final String action) {
         return newClip(name, action);
     }
 
     /**
      * Deallocate a clip.
-     *
      * @param clip The clip to deallocate.
      */
-    public static void freeClip(@NotNull final Line clip)
-    {
+    public static void freeClip(@NotNull final Line clip) {
         clip.close();
     }
 
     /**
      * Allocate a new clip.
-     *
      * @param name An optional prefix for the action name.
-     *
      * @param action The action name of the clip to allocate.
-     *
      * @return The new clip, or <code>null</code> if an error occurs.
      */
     @Nullable
-    private static DataLine newClip(@Nullable final String name, @NotNull final String action)
-    {
-        try
-        {
+    private static DataLine newClip(@Nullable final String name, @NotNull final String action) {
+        try {
             final AudioInputStream audioInputStream = AudioSystem.getAudioInputStream(AudioFileLoader.getInputStream(name, action));
-            try
-            {
+            try {
                 final Clip clip = AudioSystem.getClip();
                 clip.open(audioInputStream);
                 return clip;
-            }
-            finally
-            {
+            } finally {
                 audioInputStream.close();
             }
-        }
-        catch (final UnsupportedAudioFileException ex)
-        {
+        } catch (final UnsupportedAudioFileException ex) {
             System.err.println("sound "+name+": "+ex.getMessage());
             return null;
-        }
-        catch (final LineUnavailableException ex)
-        {
+        } catch (final LineUnavailableException ex) {
             System.err.println("sound "+name+": "+ex.getMessage());
             return null;
-        }
-        catch (final IOException ex)
-        {
+        } catch (final IOException ex) {
             System.err.println("sound "+name+": "+ex.getMessage());
             return null;
         }
     }
+
 }

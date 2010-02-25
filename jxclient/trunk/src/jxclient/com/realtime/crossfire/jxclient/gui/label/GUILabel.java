@@ -33,11 +33,10 @@ import org.jetbrains.annotations.Nullable;
 
 /**
  * Abstrct base class for labels that render text.
- *
  * @author Andreas Kirschbaum
  */
-public abstract class GUILabel extends AbstractLabel
-{
+public abstract class GUILabel extends AbstractLabel {
+
     /**
      * The serial version UID.
      */
@@ -63,71 +62,53 @@ public abstract class GUILabel extends AbstractLabel
 
     /**
      * Create a new instance.
-     *
      * @param tooltipManager the tooltip manager to update
-     *
      * @param elementListener the element listener to notify
-     *
      * @param name The name of this element.
-     *
      * @param x The x-coordinate for drawing this element to screen.
-     *
      * @param y The y-coordinate for drawing this element to screen.
-     *
      * @param w The width for drawing this element to screen.
-     *
      * @param h The height for drawing this element to screen.
-     *
      * @param picture The background image; <code>null</code> for no
      * background.
-     *
      * @param textFont The font for rendering the label text.
-     *
      * @param textColor The font color.
-     *
      * @param backgroundColor The background color.
-     *
      * @param textAlignment The text alignment.
      */
-    protected GUILabel(@NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final String name, final int x, final int y, final int w, final int h, @Nullable final BufferedImage picture, @Nullable final Font textFont, @NotNull final Color textColor, @NotNull final Color backgroundColor, @NotNull final Alignment textAlignment)
-    {
+    protected GUILabel(@NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final String name, final int x, final int y, final int w, final int h, @Nullable final BufferedImage picture, @Nullable final Font textFont, @NotNull final Color textColor, @NotNull final Color backgroundColor, @NotNull final Alignment textAlignment) {
         super(tooltipManager, elementListener, name, x, y, w, h, picture, backgroundColor);
         this.textFont = textFont;
         this.textColor = textColor;
         this.textAlignment = textAlignment;
     }
 
-    /** {@inheritDoc} */
+    /**
+     * {@inheritDoc}
+     */
     @Override
-    public void dispose()
-    {
+    public void dispose() {
         super.dispose();
     }
 
-    /** {@inheritDoc} */
+    /**
+     * {@inheritDoc}
+     */
     @Override
-    protected void textChanged()
-    {
+    protected void textChanged() {
         setChanged();
     }
 
     /**
      * Draw one line of text.
-     *
      * @param g The graphics to paint to.
-     *
      * @param y0 The y-ccordinate to draw to.
-     *
      * @param h0 The line height.
-     *
      * @param text The text to draw.
-     *
      * @return The line height.
      */
-    protected int drawLine(@NotNull final Graphics2D g, final int y0, final int h0, @NotNull final String text)
-    {
-        if (textFont == null)
-        {
+    protected int drawLine(@NotNull final Graphics2D g, final int y0, final int h0, @NotNull final String text) {
+        if (textFont == null) {
             return 0;
         }
 
@@ -136,8 +117,7 @@ public abstract class GUILabel extends AbstractLabel
         g.setColor(textColor);
         final RectangularShape rect = textFont.getStringBounds(text, g.getFontRenderContext());
         final int y = y0+(int)Math.round((h0-rect.getMaxY()-rect.getMinY()))/2;
-        switch (textAlignment)
-        {
+        switch (textAlignment) {
         case LEFT:
             g.drawString(text, 0, y);
             break;
@@ -156,12 +136,11 @@ public abstract class GUILabel extends AbstractLabel
 
     /**
      * Return the font.
-     *
      * @return The font.
      */
     @Nullable
-    protected Font getTextFont()
-    {
+    protected Font getTextFont() {
         return textFont;
     }
+
 }

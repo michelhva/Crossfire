@@ -31,8 +31,8 @@ import org.jetbrains.annotations.Nullable;
  * Factory for creating {@link Gui} instances.
  * @author Andreas Kirschbaum
  */
-public class GuiFactory
-{
+public class GuiFactory {
+
     /**
      * The mouse tracker when in debug GUI mode or <code>null</code> otherwise.
      */
@@ -65,8 +65,7 @@ public class GuiFactory
      * @param commandCallback the command callback to use
      * @param macros the macros instance to use
      */
-    public GuiFactory(@Nullable final MouseTracker mouseTracker, @NotNull final Commands commands, @NotNull final CommandCallback commandCallback, @NotNull final Macros macros)
-    {
+    public GuiFactory(@Nullable final MouseTracker mouseTracker, @NotNull final Commands commands, @NotNull final CommandCallback commandCallback, @NotNull final Macros macros) {
         this.mouseTracker = mouseTracker;
         this.commands = commands;
         this.commandCallback = commandCallback;
@@ -78,8 +77,8 @@ public class GuiFactory
      * @return the new gui instance
      */
     @NotNull
-    public Gui newGui()
-    {
+    public Gui newGui() {
         return new Gui(mouseTracker, commands, commandCallback, macros);
     }
+
 }

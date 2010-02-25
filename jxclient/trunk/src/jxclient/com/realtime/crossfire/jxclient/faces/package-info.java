@@ -31,4 +31,5 @@
  * and the face is requested through a {@link
  * com.realtime.crossfire.jxclient.faces.FacesQueue} instance.
  */
+
 package com.realtime.crossfire.jxclient.faces;

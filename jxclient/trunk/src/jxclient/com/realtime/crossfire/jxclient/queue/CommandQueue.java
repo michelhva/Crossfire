@@ -32,11 +32,10 @@ import org.jetbrains.annotations.NotNull;
 
 /**
  * Maintains the pending (ncom) commands sent to the server.
- *
  * @author Andreas Kirschbaum
  */
-public class CommandQueue
-{
+public class CommandQueue {
+
     /**
      * Maximum number of pending commands sent to the server. Excess commands
      * will be dropped.
@@ -72,27 +71,21 @@ public class CommandQueue
      * The listener to track comc commands.
      */
     @NotNull
-    private final CrossfireComcListener crossfireComcListener = new CrossfireComcListener()
-    {
+    private final CrossfireComcListener crossfireComcListener = new CrossfireComcListener() {
         /** {@inheritDoc} */
         @Override
-        public void commandComcReceived(final int packetNo, final int time)
-        {
-            synchronized (pendingCommands)
-            {
+        public void commandComcReceived(final int packetNo, final int time) {
+            synchronized (pendingCommands) {
                 final int index = pendingCommands.indexOf(packetNo);
-                if (index == -1)
-                {
+                if (index == -1) {
                     System.err.println("Error: got unexpected comc command #"+packetNo);
                     return;
                 }
-                if (index > 0)
-                {
+                if (index > 0) {
                     System.err.println("Warning: got out of order comc command #"+packetNo);
                 }
 
-                for (int i = 0; i <= index; i++)
-                {
+                for (int i = 0; i <= index; i++) {
                     pendingCommands.remove(0);
                 }
             }
@@ -104,66 +97,57 @@ public class CommandQueue
      * connections.
      */
     @NotNull
-    private final GuiStateListener guiStateListener = new GuiStateListener()
-    {
+    private final GuiStateListener guiStateListener = new GuiStateListener() {
         /** {@inheritDoc} */
         @Override
-        public void start()
-        {
+        public void start() {
             // ignore
         }
 
         /** {@inheritDoc} */
         @Override
-        public void metaserver()
-        {
+        public void metaserver() {
             // ignore
         }
 
         /** {@inheritDoc} */
         @Override
-        public void preConnecting(@NotNull final String serverInfo)
-        {
+        public void preConnecting(@NotNull final String serverInfo) {
             // ignore
         }
 
         /** {@inheritDoc} */
         @Override
-        public void connecting(@NotNull final String serverInfo)
-        {
+        public void connecting(@NotNull final String serverInfo) {
             clear();
         }
 
         /** {@inheritDoc} */
         @Override
-        public void connecting(@NotNull final ClientSocketState clientSocketState)
-        {
+        public void connecting(@NotNull final ClientSocketState clientSocketState) {
             // ignore
         }
 
         /** {@inheritDoc} */
         @Override
-        public void connected()
-        {
+        public void connected() {
             // ignore
         }
 
         /** {@inheritDoc} */
         @Override
-        public void connectFailed(@NotNull final String reason)
-        {
+        public void connectFailed(@NotNull final String reason) {
             // ignore
         }
     };
 
     /**
      * Create a new instance.
-     * @param crossfireServerConnection The server connection for sending
-     * ncom commands.
+     * @param crossfireServerConnection The server connection for sending ncom
+     * commands.
      * @param guiStateManager the gui state manager to watch
      */
-    public CommandQueue(@NotNull final CrossfireServerConnection crossfireServerConnection, @NotNull final GuiStateManager guiStateManager)
-    {
+    public CommandQueue(@NotNull final CrossfireServerConnection crossfireServerConnection, @NotNull final GuiStateManager guiStateManager) {
         this.crossfireServerConnection = crossfireServerConnection;
         crossfireServerConnection.addCrossfireComcListener(crossfireComcListener);
         guiStateManager.addGuiStateListener(guiStateListener);
@@ -171,11 +155,9 @@ public class CommandQueue
 
     /**
      * Return the current repeat count and reset it to zero.
-     *
      * @return The current repeat count.
      */
-    private int getRepeatCount()
-    {
+    private int getRepeatCount() {
         final int oldRepeatCount = repeatCount;
         resetRepeatCount();
         return oldRepeatCount;
@@ -184,18 +166,15 @@ public class CommandQueue
     /**
      * Reset the current repeat count to zero.
      */
-    public void resetRepeatCount()
-    {
+    public void resetRepeatCount() {
         repeatCount = 0;
     }
 
     /**
      * Add a digit to the current repeat count.
-     *
      * @param digit The digit (0-9) to add.
      */
-    public void addToRepeatCount(final int digit)
-    {
+    public void addToRepeatCount(final int digit) {
         assert 0 <= digit && digit <= 9;
         repeatCount = (10*repeatCount+digit)%100000;
     }
@@ -203,11 +182,9 @@ public class CommandQueue
     /**
      * Forget about sent commands.
      */
-    private void clear()
-    {
+    private void clear() {
         resetRepeatCount();
-        synchronized (pendingCommands)
-        {
+        synchronized (pendingCommands) {
             pendingCommands.clear();
             isRunning = false;
         }
@@ -216,49 +193,35 @@ public class CommandQueue
     /**
      * Send a "ncom" command to the server. This function uses the default
      * repeat count.
-     *
      * @param mustSend If set, always send the command; if unset, drop the
      * command if the command queue is full.
-     *
      * @param command The command to send.
-     *
      * @see #sendNcom(boolean, int, String)
      */
-    public void sendNcom(final boolean mustSend, @NotNull final String command)
-    {
+    public void sendNcom(final boolean mustSend, @NotNull final String command) {
         sendNcom(mustSend, getRepeatCount(), command);
     }
 
     /**
      * Send a "ncom" command to the server.
-     *
      * @param mustSend If set, always send the command; if unset, drop the
      * command if the command queue is full.
-     *
      * @param repeat The repeat count.
-     *
      * @param command The command to send.
-     *
      * @see #sendNcom(boolean, String)
      */
-    public void sendNcom(final boolean mustSend, final int repeat, @NotNull final String command)
-    {
-        synchronized (pendingCommands)
-        {
-            if (!mustSend && pendingCommands.size() >= MAX_PENDING_COMMANDS)
-            {
+    public void sendNcom(final boolean mustSend, final int repeat, @NotNull final String command) {
+        synchronized (pendingCommands) {
+            if (!mustSend && pendingCommands.size() >= MAX_PENDING_COMMANDS) {
                 return;
             }
 
             final int packetNo = crossfireServerConnection.sendNcom(repeat, command);
             pendingCommands.add(packetNo);
 
-            if (command.startsWith("run "))
-            {
+            if (command.startsWith("run ")) {
                 isRunning = true;
-            }
-            else if (command.startsWith("run_stop"))
-            {
+            } else if (command.startsWith("run_stop")) {
                 isRunning = false;
             }
         }
@@ -269,11 +232,9 @@ public class CommandQueue
      * nothing.
      * @return whether running was active
      */
-    public boolean stopRunning()
-    {
+    public boolean stopRunning() {
         final boolean result = isRunning;
-        if (result)
-        {
+        if (result) {
             sendNcom(true, 0, "run_stop");
             assert !isRunning;
         }
@@ -284,8 +245,7 @@ public class CommandQueue
      * Returns whether the character is running.
      * @return whether the character is running
      */
-    public boolean checkRun()
-    {
+    public boolean checkRun() {
         return isRunning;
     }
 
@@ -293,8 +253,7 @@ public class CommandQueue
      * Returns whether the character is firing.
      * @return whether the character is firing
      */
-    public boolean checkFire()
-    {
+    public boolean checkFire() {
         return false; // XXX: implement
     }
 
@@ -304,8 +263,8 @@ public class CommandQueue
      * @param to the destination location
      * @param tag the item to move
      */
-    public void sendMove(final int to, final int tag)
-    {
+    public void sendMove(final int to, final int tag) {
         crossfireServerConnection.sendMove(to, tag, getRepeatCount());
     }
+
 }

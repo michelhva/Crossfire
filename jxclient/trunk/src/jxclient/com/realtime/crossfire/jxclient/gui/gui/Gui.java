@@ -42,13 +42,13 @@ import org.jetbrains.annotations.Nullable;
 
 /**
  * Combines a list of {@link GUIElement}s to for a gui.
- * <p>
+ * <p/>
  * A dialog can be modal. Such dialogs do not propagate key or mouse events to
  * lower dialogs.
  * @author Andreas Kirschbaum
  */
-public class Gui
-{
+public class Gui {
+
     /**
      * The {@link MouseTracker} if in GUI debug mode or <code>null</code>
      * otherwise.
@@ -80,8 +80,8 @@ public class Gui
     private final Collection<RendererGuiState> hideInStates = EnumSet.noneOf(RendererGuiState.class);
 
     /**
-     * If non-<code>null</code>, this element is always active. No other
-     * element can become active.
+     * If non-<code>null</code>, this element is always active. No other element
+     * can become active.
      */
     @Nullable
     private ActivatableGUIElement forcedActive = null;
@@ -144,8 +144,7 @@ public class Gui
      * @param commandCallback the command callback to use
      * @param macros the macros instance to use
      */
-    public Gui(@Nullable final MouseTracker mouseTracker, @NotNull final Commands commands, @NotNull final CommandCallback commandCallback, @NotNull final Macros macros)
-    {
+    public Gui(@Nullable final MouseTracker mouseTracker, @NotNull final Commands commands, @NotNull final CommandCallback commandCallback, @NotNull final Macros macros) {
         this.mouseTracker = mouseTracker;
         keyBindings = new KeyBindings(null, commands, commandCallback, macros);
     }
@@ -154,8 +153,7 @@ public class Gui
      * Sets the name of this dialog.
      * @param name the name of the dialog
      */
-    public void setName(@NotNull final String name)
-    {
+    public void setName(@NotNull final String name) {
         this.name = name;
     }
 
@@ -164,15 +162,12 @@ public class Gui
      * @param w the width
      * @param h the height
      */
-    public void setSize(final int w, final int h)
-    {
-        if (w <= 0 || h <= 0)
-        {
+    public void setSize(final int w, final int h) {
+        if (w <= 0 || h <= 0) {
             throw new IllegalArgumentException();
         }
 
-        if (this.w == w && this.h == h)
-        {
+        if (this.w == w && this.h == h) {
             return;
         }
 
@@ -187,15 +182,12 @@ public class Gui
      * @param x the x-coordinate
      * @param y the y-coordinate
      */
-    public void setPosition(final int x, final int y)
-    {
-        if (w == 0 || h == 0)
-        {
+    public void setPosition(final int x, final int y) {
+        if (w == 0 || h == 0) {
             throw new IllegalStateException();
         }
 
-        if (this.x == x && this.y == y)
-        {
+        if (this.x == x && this.y == y) {
             return;
         }
 
@@ -209,8 +201,7 @@ public class Gui
      * Sets the modal state.
      * @param modal the new modal state
      */
-    public void setModal(final boolean modal)
-    {
+    public void setModal(final boolean modal) {
         this.modal = modal;
     }
 
@@ -218,8 +209,7 @@ public class Gui
      * Returns the modal state.
      * @return the modal state
      */
-    public boolean isModal()
-    {
+    public boolean isModal() {
         return modal;
     }
 
@@ -228,10 +218,8 @@ public class Gui
      * more than one gui at a time.
      * @param element the <code>GUIElement</code> to add
      */
-    public void add(@NotNull final GUIElement element)
-    {
-        if (element.getGui() != null)
-        {
+    public void add(@NotNull final GUIElement element) {
+        if (element.getGui() != null) {
             throw new IllegalArgumentException();
         }
 
@@ -243,16 +231,13 @@ public class Gui
      * Repaints the gui and clear the changed flags of all repainted elements.
      * @param g the <code>Graphics</code> to paint into
      */
-    public void redraw(@NotNull final Graphics g)
-    {
-        if (mouseTracker != null)
-        {
+    public void redraw(@NotNull final Graphics g) {
+        if (mouseTracker != null) {
             final Component mouseElement = mouseTracker.getMouseElement();
             final long t0 = System.currentTimeMillis();
 
             hasChangedElements = false;
-            for (final GUIElement element : visibleElements)
-            {
+            for (final GUIElement element : visibleElements) {
                 element.paintComponent(g);
                 g.setColor(element == mouseElement ? Color.RED : Color.WHITE);
                 g.drawRect(element.getElementX(), element.getElementY(), element.getWidth()-1, element.getHeight()-1);
@@ -260,30 +245,25 @@ public class Gui
 
             final long t1 = System.currentTimeMillis();
             g.setColor(Color.YELLOW);
-            if (mouseElement != null)
-            {
+            if (mouseElement != null) {
                 g.drawString(mouseElement.getName(), 16, 16);
             }
             g.drawString((t1-t0)+"ms", 16, 32);
-        }
-        else
-        {
+        } else {
             hasChangedElements = false;
-            for (final GUIElement element : visibleElements)
-            {
+            for (final GUIElement element : visibleElements) {
                 element.paintComponent(g);
             }
         }
     }
 
     /**
-     * Checks whether any visible gui element of this gui has been changed
-     * since it was painted last time.
+     * Checks whether any visible gui element of this gui has been changed since
+     * it was painted last time.
      * @return <code>true</code> if any gui element has changed;
-     * <code>false</code> otherwise
+     *         <code>false</code> otherwise
      */
-    public boolean needRedraw()
-    {
+    public boolean needRedraw() {
         return hasChangedElements;
     }
 
@@ -292,12 +272,9 @@ public class Gui
      * @return the default gui element, or <code>null</code>
      */
     @Nullable
-    private GUIElement getDefaultElement()
-    {
-        for (final GUIElement element : visibleElements)
-        {
-            if (element.isDefault())
-            {
+    private GUIElement getDefaultElement() {
+        for (final GUIElement element : visibleElements) {
+            if (element.isDefault()) {
                 return element;
             }
         }
@@ -308,11 +285,9 @@ public class Gui
     /**
      * Activates the first default gui element of this gui.
      */
-    public void activateDefaultElement()
-    {
+    public void activateDefaultElement() {
         final Object defaultElement = getDefaultElement();
-        if (defaultElement != null && defaultElement instanceof ActivatableGUIElement)
-        {
+        if (defaultElement != null && defaultElement instanceof ActivatableGUIElement) {
             final ActivatableGUIElement activatableDefaultElement = (ActivatableGUIElement)defaultElement;
             activatableDefaultElement.setActive(true);
         }
@@ -324,13 +299,10 @@ public class Gui
      * @return the gui elements
      */
     @NotNull
-    public <T extends GUIElement> Set<T> getElements(@NotNull final Class<T> class_)
-    {
+    public <T extends GUIElement> Set<T> getElements(@NotNull final Class<T> class_) {
         final Set<T> result = new HashSet<T>(16);
-        for (final Object element : visibleElements)
-        {
-            if (class_.isAssignableFrom(element.getClass()))
-            {
+        for (final Object element : visibleElements) {
+            if (class_.isAssignableFrom(element.getClass())) {
                 result.add(class_.cast(element));
             }
         }
@@ -345,12 +317,9 @@ public class Gui
      * @return the gui element or <code>null</code> if not found
      */
     @Nullable
-    public <T extends GUIElement> T getFirstElementEndingWith(@NotNull final Class<T> class_, @NotNull final String ending)
-    {
-        for (final Component element : visibleElements)
-        {
-            if (class_.isAssignableFrom(element.getClass()) && element.getName().endsWith(ending))
-            {
+    public <T extends GUIElement> T getFirstElementEndingWith(@NotNull final Class<T> class_, @NotNull final String ending) {
+        for (final Component element : visibleElements) {
+            if (class_.isAssignableFrom(element.getClass()) && element.getName().endsWith(ending)) {
                 return class_.cast(element);
             }
         }
@@ -366,12 +335,9 @@ public class Gui
      * @return the gui element or <code>null</code> if not found
      */
     @Nullable
-    public <T extends GUIElement> T getFirstElementNotEndingWith(@NotNull final Class<T> class_, @NotNull final String ending)
-    {
-        for (final Component element : visibleElements)
-        {
-            if (class_.isAssignableFrom(element.getClass()) && !element.getName().endsWith(ending))
-            {
+    public <T extends GUIElement> T getFirstElementNotEndingWith(@NotNull final Class<T> class_, @NotNull final String ending) {
+        for (final Component element : visibleElements) {
+            if (class_.isAssignableFrom(element.getClass()) && !element.getName().endsWith(ending)) {
                 return class_.cast(element);
             }
         }
@@ -385,12 +351,9 @@ public class Gui
      * @return the gui element or <code>null</code> if not found
      */
     @Nullable
-    public <T extends GUIElement> T getFirstElement(@NotNull final Class<T> class_)
-    {
-        for (final Object element : visibleElements)
-        {
-            if (class_.isAssignableFrom(element.getClass()))
-            {
+    public <T extends GUIElement> T getFirstElement(@NotNull final Class<T> class_) {
+        for (final Object element : visibleElements) {
+            if (class_.isAssignableFrom(element.getClass())) {
                 return class_.cast(element);
             }
         }
@@ -403,20 +366,15 @@ public class Gui
      * @param x the x-coordinate to check
      * @param y the y-coordinate to check
      * @return the <code>GUIElement</code> at the given coordinate, or
-     * <code>null</code> if none was found
+     *         <code>null</code> if none was found
      */
     @Nullable
-    public GUIElement getElementFromPoint(final int x, final int y)
-    {
+    public GUIElement getElementFromPoint(final int x, final int y) {
         GUIElement elected = null;
-        for (final GUIElement element : visibleElements)
-        {
-            if (!element.isIgnore())
-            {
-                if (element.getElementX() <= x && x < element.getElementX()+element.getWidth())
-                {
-                    if (element.getElementY() <= y && y < element.getElementY()+element.getHeight())
-                    {
+        for (final GUIElement element : visibleElements) {
+            if (!element.isIgnore()) {
+                if (element.getElementX() <= x && x < element.getElementX()+element.getWidth()) {
+                    if (element.getElementY() <= y && y < element.getElementY()+element.getHeight()) {
                         elected = element;
                     }
                 }
@@ -431,42 +389,33 @@ public class Gui
      * @param activeElement the gui element
      * @param active the new active state
      */
-    void setActiveElement(@NotNull final ActivatableGUIElement activeElement, final boolean active)
-    {
+    void setActiveElement(@NotNull final ActivatableGUIElement activeElement, final boolean active) {
         final ActivatableGUIElement previousActiveElement = this.activeElement;
-        if (active)
-        {
-            if (forcedActive != null && forcedActive != activeElement)
-            {
+        if (active) {
+            if (forcedActive != null && forcedActive != activeElement) {
                 return;
             }
 
-            if (isActiveElement(activeElement))
-            {
+            if (isActiveElement(activeElement)) {
                 return;
             }
 
             this.activeElement = activeElement;
-            if (previousActiveElement != null)
-            {
+            if (previousActiveElement != null) {
                 previousActiveElement.activeChanged();
             }
             this.activeElement.activeChanged();
 
             guiAutoCloseListener = null;
-        }
-        else
-        {
-            if (!isActiveElement(activeElement))
-            {
+        } else {
+            if (!isActiveElement(activeElement)) {
                 return;
             }
 
             this.activeElement = null;
             previousActiveElement.activeChanged();
 
-            if (guiAutoCloseListener != null)
-            {
+            if (guiAutoCloseListener != null) {
                 final GuiAutoCloseListener listener = guiAutoCloseListener;
                 guiAutoCloseListener = null;
                 listener.autoClosed(this);
@@ -480,19 +429,17 @@ public class Gui
      * @param activeElement the gui element
      * @return whether the given gui element is active
      */
-    private boolean isActiveElement(@Nullable final ActivatableGUIElement activeElement)
-    {
+    private boolean isActiveElement(@Nullable final ActivatableGUIElement activeElement) {
         return this.activeElement != null && this.activeElement == activeElement;
     }
 
     /**
      * Returns the gui element owning the focus.
-     * @return the gui element owning the focus, or <code>null</code> if no
-     * such element exists
+     * @return the gui element owning the focus, or <code>null</code> if no such
+     *         element exists
      */
     @Nullable
-    public ActivatableGUIElement getActiveElement()
-    {
+    public ActivatableGUIElement getActiveElement() {
         return activeElement;
     }
 
@@ -501,14 +448,10 @@ public class Gui
      * @param e the event to dispatch
      * @return whether a gui element did handle the event
      */
-    public boolean handleKeyPress(@NotNull final KeyEvent e)
-    {
-        if (activeElement != null)
-        {
-            if (activeElement instanceof KeyListener)
-            {
-                if (((KeyListener)activeElement).keyPressed(e))
-                {
+    public boolean handleKeyPress(@NotNull final KeyEvent e) {
+        if (activeElement != null) {
+            if (activeElement instanceof KeyListener) {
+                if (((KeyListener)activeElement).keyPressed(e)) {
                     return true;
                 }
             }
@@ -522,32 +465,23 @@ public class Gui
      * @param e the event to dispatch
      * @return whether a gui element did handle the event
      */
-    public boolean handleKeyTyped(@NotNull final KeyEvent e)
-    {
-        if (activeElement != null)
-        {
-            if (activeElement instanceof KeyListener)
-            {
-                if (((KeyListener)activeElement).keyTyped(e))
-                {
+    public boolean handleKeyTyped(@NotNull final KeyEvent e) {
+        if (activeElement != null) {
+            if (activeElement instanceof KeyListener) {
+                if (((KeyListener)activeElement).keyTyped(e)) {
                     return true;
                 }
-            }
-            else if (activeElement instanceof AbstractButton)
-            {
-                if (e.getKeyChar() == '\r' || e.getKeyChar() == '\n' || e.getKeyChar() == ' ')
-                {
+            } else if (activeElement instanceof AbstractButton) {
+                if (e.getKeyChar() == '\r' || e.getKeyChar() == '\n' || e.getKeyChar() == ' ') {
                     ((AbstractButton)activeElement).execute();
                     return true;
                 }
             }
         }
 
-        if (e.getKeyChar() == '\r' || e.getKeyChar() == '\n' || e.getKeyChar() == ' ')
-        {
+        if (e.getKeyChar() == '\r' || e.getKeyChar() == '\n' || e.getKeyChar() == ' ') {
             final GUIElement defaultElement = getDefaultElement();
-            if (defaultElement != null && defaultElement instanceof AbstractButton)
-            {
+            if (defaultElement != null && defaultElement instanceof AbstractButton) {
                 ((AbstractButton)defaultElement).execute();
                 return true;
             }
@@ -560,14 +494,12 @@ public class Gui
      * Returns the first {@link GUIText} gui element of this gui and make it
      * active.
      * @return the <code>GUIText</code> element, or <code>null</code> if this
-     * gui does not contain any <code>GUIText</code> gui elements
+     *         gui does not contain any <code>GUIText</code> gui elements
      */
     @Nullable
-    private GUIText activateFirstTextArea()
-    {
+    private GUIText activateFirstTextArea() {
         final GUIText textArea = getFirstElement(GUIText.class);
-        if (textArea != null)
-        {
+        if (textArea != null) {
             textArea.setActive(true);
         }
         return textArea;
@@ -575,15 +507,13 @@ public class Gui
 
     /**
      * Returns the first command text field of this gui and make it active.
-     * @return the comment text field, or <code>null</code> if this gui does
-     * not contain any command text fields
+     * @return the comment text field, or <code>null</code> if this gui does not
+     *         contain any command text fields
      */
     @Nullable
-    public GUIText activateCommandInput()
-    {
+    public GUIText activateCommandInput() {
         final GUIText textArea = activateFirstTextArea();
-        if (textArea != null && textArea.getName().equals("command"))
-        {
+        if (textArea != null && textArea.getName().equals("command")) {
             return textArea;
         }
 
@@ -596,21 +526,17 @@ public class Gui
      * command text input field.
      * @return whether the command text input field has been deactivated
      */
-    public boolean deactivateCommandInput()
-    {
-        if (activeElement == null)
-        {
+    public boolean deactivateCommandInput() {
+        if (activeElement == null) {
             return false;
         }
 
-        if (!(activeElement instanceof GUIText))
-        {
+        if (!(activeElement instanceof GUIText)) {
             return false;
         }
 
         final Component textArea = activeElement;
-        if (!textArea.getName().equals("command"))
-        {
+        if (!textArea.getName().equals("command")) {
             return false;
         }
 
@@ -626,13 +552,9 @@ public class Gui
      * @return the button or <code>null</code> if no button matches
      */
     @Nullable
-    public <T extends GUIElement> T getFirstElement(@NotNull final Class<T> class_, @NotNull final String name)
-    {
-        for (final Component element : visibleElements)
-        {
-            if (class_.isAssignableFrom(element.getClass())
-            && element.getName().equals(name))
-            {
+    public <T extends GUIElement> T getFirstElement(@NotNull final Class<T> class_, @NotNull final String name) {
+        for (final Component element : visibleElements) {
+            if (class_.isAssignableFrom(element.getClass()) && element.getName().equals(name)) {
                 return class_.cast(element);
             }
         }
@@ -642,8 +564,7 @@ public class Gui
     /**
      * Notifies that one gui element has changed since last redraw.
      */
-    public void setChangedElements()
-    {
+    public void setChangedElements() {
         hasChangedElements = true;
     }
 
@@ -651,8 +572,7 @@ public class Gui
      * Returns the x-offset for drawing gui elements inside this gui.
      * @return the x-offset
      */
-    public int getX()
-    {
+    public int getX() {
         return x;
     }
 
@@ -660,8 +580,7 @@ public class Gui
      * Returns the y-offset for drawing gui elements inside this gui.
      * @return the y-offset
      */
-    public int getY()
-    {
+    public int getY() {
         return y;
     }
 
@@ -669,8 +588,7 @@ public class Gui
      * Returns the width of the dialog.
      * @return the width, or <code>0</code> if this is not a dlalog
      */
-    public int getWidth()
-    {
+    public int getWidth() {
         return w;
     }
 
@@ -678,8 +596,7 @@ public class Gui
      * Returns the height of this dialog.
      * @return the height, or <code>0</code> if this is not a dialog
      */
-    public int getHeight()
-    {
+    public int getHeight() {
         return h;
     }
 
@@ -688,8 +605,7 @@ public class Gui
      * @return the name, or <code>null</code> if this is not a dialog
      */
     @Nullable
-    public String getName()
-    {
+    public String getName() {
         return name;
     }
 
@@ -698,8 +614,7 @@ public class Gui
      * @return the key bindings
      */
     @NotNull
-    public KeyBindings getKeyBindings()
-    {
+    public KeyBindings getKeyBindings() {
         return keyBindings;
     }
 
@@ -707,8 +622,7 @@ public class Gui
      * Hides the dialog in a state.
      * @param state the state
      */
-    public void hideInState(@NotNull final RendererGuiState state)
-    {
+    public void hideInState(@NotNull final RendererGuiState state) {
         hideInStates.add(state);
     }
 
@@ -717,8 +631,7 @@ public class Gui
      * @param state the state
      * @return whether this gui is hidden
      */
-    public boolean isHidden(@NotNull final RendererGuiState state)
-    {
+    public boolean isHidden(@NotNull final RendererGuiState state) {
         return hideInStates.contains(state);
     }
 
@@ -728,8 +641,7 @@ public class Gui
      * @param guiAutoCloseListener the listener to be notified or
      * <code>null</code>
      */
-    public void setGuiAutoCloseListener(@Nullable final GuiAutoCloseListener guiAutoCloseListener)
-    {
+    public void setGuiAutoCloseListener(@Nullable final GuiAutoCloseListener guiAutoCloseListener) {
         this.guiAutoCloseListener = guiAutoCloseListener;
     }
 
@@ -737,8 +649,7 @@ public class Gui
      * Sets whether the state (position or size) has changed.
      * @param stateChanged whether the state has changed
      */
-    public void setStateChanged(final boolean stateChanged)
-    {
+    public void setStateChanged(final boolean stateChanged) {
         this.stateChanged = stateChanged;
     }
 
@@ -746,11 +657,9 @@ public class Gui
      * Enables or disables hidden text in the first input field.
      * @param hideInput if set, hide input; else show input
      */
-    public void setHideInput(final boolean hideInput)
-    {
+    public void setHideInput(final boolean hideInput) {
         final GUIText textArea = getFirstElement(GUIText.class);
-        if (textArea != null)
-        {
+        if (textArea != null) {
             textArea.setHideInput(hideInput);
         }
     }
@@ -760,14 +669,10 @@ public class Gui
      * added if it is visible or removed if it is invisible.
      * @param element the gui element
      */
-    public void updateVisibleElement(@NotNull final GUIElement element)
-    {
-        if (element.isElementVisible())
-        {
+    public void updateVisibleElement(@NotNull final GUIElement element) {
+        if (element.isElementVisible()) {
             visibleElements.add(element);
-        }
-        else
-        {
+        } else {
             visibleElements.remove(element);
         }
         hasChangedElements = true;
@@ -779,8 +684,7 @@ public class Gui
      * @param y the y-coordinate of the the point
      * @return whether the coordinate is within the drawing area
      */
-    public boolean isWithinDrawingArea(final int x, final int y)
-    {
+    public boolean isWithinDrawingArea(final int x, final int y) {
         return this.x <= x && x < this.x+w && this.y <= y && y < this.y+h;
     }
 
@@ -788,8 +692,7 @@ public class Gui
      * Returns whether this dialog has changed from its default state.
      * @return whether the state has changed
      */
-    public boolean isChangedFromDefault()
-    {
+    public boolean isChangedFromDefault() {
         return name != null && w > 0 && h > 0 && stateChanged;
     }
 
@@ -798,16 +701,17 @@ public class Gui
      * any other element from getting active.
      * @param forcedActive the element to set or <code>null</code> to unset
      */
-    public void setForcedActive(@Nullable final ActivatableGUIElement forcedActive)
-    {
+    public void setForcedActive(@Nullable final ActivatableGUIElement forcedActive) {
         this.forcedActive = forcedActive;
     }
 
-    /** {@inheritDoc} */
+    /**
+     * {@inheritDoc}
+     */
     @NotNull
     @Override
-    public String toString()
-    {
+    public String toString() {
         return (name == null ? "" : name)+"["+w+"x"+h+"]";
     }
+
 }

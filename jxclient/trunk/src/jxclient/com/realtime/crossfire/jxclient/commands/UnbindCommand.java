@@ -29,8 +29,8 @@ import org.jetbrains.annotations.NotNull;
  * Implements the "unbind" command. It removes a key binding.
  * @author Andreas Kirschbaum
  */
-public class UnbindCommand extends AbstractCommand
-{
+public class UnbindCommand extends AbstractCommand {
+
     /**
      * The {@link CommandCallback} to use.
      */
@@ -42,51 +42,46 @@ public class UnbindCommand extends AbstractCommand
      * @param commandCallback the command callback to use
      * @param crossfireServerConnection the connection instance
      */
-    public UnbindCommand(@NotNull final CommandCallback commandCallback, @NotNull final CrossfireServerConnection crossfireServerConnection)
-    {
+    public UnbindCommand(@NotNull final CommandCallback commandCallback, @NotNull final CrossfireServerConnection crossfireServerConnection) {
         super(crossfireServerConnection);
         this.commandCallback = commandCallback;
     }
 
-    /** {@inheritDoc} */
+    /**
+     * {@inheritDoc}
+     */
     @Override
-    public boolean allArguments()
-    {
+    public boolean allArguments() {
         return false;
     }
 
-    /** {@inheritDoc} */
+    /**
+     * {@inheritDoc}
+     */
     @Override
-    public void execute(@NotNull final String args)
-    {
+    public void execute(@NotNull final String args) {
         final CharSequence commands;
         final boolean perCharacterBinding;
-        if (args.equals("-c"))
-        {
+        if (args.equals("-c")) {
             perCharacterBinding = true;
             commands = "";
-        }
-        else if (args.startsWith("-c "))
-        {
+        } else if (args.startsWith("-c ")) {
             perCharacterBinding = true;
             commands = args.substring(3).trim();
-        }
-        else
-        {
+        } else {
             perCharacterBinding = false;
             commands = args;
         }
 
-        if (commands.length() != 0)
-        {
+        if (commands.length() != 0) {
             drawInfoError("No arguments allowed.");
             return;
         }
 
-        if (!commandCallback.removeKeyBinding(perCharacterBinding))
-        {
+        if (!commandCallback.removeKeyBinding(perCharacterBinding)) {
             drawInfoError("Cannot use unbind -c since no character is logged in.");
             return;
         }
     }
+
 }

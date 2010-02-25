@@ -25,8 +25,8 @@ package com.realtime.crossfire.jxclient.gui.gui;
  * All gui states of {@link JXCWindowRenderer}.
  * @author Andreas Kirschbaum
  */
-public enum RendererGuiState
-{
+public enum RendererGuiState {
+
     START,
 
     META,
@@ -36,4 +36,5 @@ public enum RendererGuiState
     NEWCHAR,
 
     PLAYING
+
 }

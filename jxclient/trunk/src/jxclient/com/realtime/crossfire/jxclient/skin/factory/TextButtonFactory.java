@@ -33,11 +33,10 @@ import org.jetbrains.annotations.NotNull;
 
 /**
  * A factory class to create "textbutton" instances.
- *
  * @author Andreas Kirschbaum
  */
-public class TextButtonFactory
-{
+public class TextButtonFactory {
+
     /**
      * The images comprising the "up" button state.
      */
@@ -64,17 +63,12 @@ public class TextButtonFactory
 
     /**
      * Create a new instance.
-     *
      * @param up The images comprising the "up" button state.
-     *
      * @param down The images comprising the "down" button state.
-     *
      * @param font The font to use.
-     *
      * @param color The text color.
      */
-    public TextButtonFactory(@NotNull final ButtonImages up, @NotNull final ButtonImages down, @NotNull final Font font, @NotNull final Color color)
-    {
+    public TextButtonFactory(@NotNull final ButtonImages up, @NotNull final ButtonImages down, @NotNull final Font font, @NotNull final Color color) {
         this.up = up;
         this.down = down;
         this.font = font;
@@ -83,35 +77,24 @@ public class TextButtonFactory
 
     /**
      * Create a new text button.
-     *
      * @param tooltipManager the tooltip manager to update
-     *
      * @param elementListener the element listener to notify
-     *
      * @param name The name of this element.
-     *
      * @param x The x-coordinate for drawing this element to screen; it is
      * relative to <code>gui</code>.
-     *
      * @param y The y-coordinate for drawing this element to screen; it is
      * relative to <code>gui</code>.
-     *
      * @param w The width for drawing this element to screen.
-     *
      * @param h The height for drawing this element to screen.
-     *
      * @param text The button text.
-     *
      * @param autoRepeat Whether the button should autorepeat while being
      * pressed.
-     *
      * @param commandList The commands to execute when the button is elected.
-     *
      * @return the new text button
      */
     @NotNull
-    public GUIElement newTextButton(@NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final String name, final int x, final int y, final int w, final int h, @NotNull final String text, final boolean autoRepeat, @NotNull final CommandList commandList)
-    {
+    public GUIElement newTextButton(@NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final String name, final int x, final int y, final int w, final int h, @NotNull final String text, final boolean autoRepeat, @NotNull final CommandList commandList) {
         return new GUITextButton(tooltipManager, elementListener, name, x, y, w, h, up, down, text, font, color, autoRepeat, commandList);
     }
+
 }

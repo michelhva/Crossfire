@@ -27,12 +27,11 @@ import org.jetbrains.annotations.NotNull;
 
 /**
  * One skill of the character.
- *
  * @author Lauwenmark
  * @author Andreas Kirschbaum
  */
-public class Skill
-{
+public class Skill {
+
     /**
      * The listeners to inform of changes.
      */
@@ -57,25 +56,19 @@ public class Skill
 
     /**
      * Create a new instance.
-     *
      * @param name The skill name.
      */
-    public Skill(@NotNull final String name)
-    {
+    public Skill(@NotNull final String name) {
         this.name = name;
     }
 
     /**
      * Update the skill attributes.
-     *
      * @param level The new skill level.
-     *
      * @param experience The new skill experience.
      */
-    public void set(final int level, final long experience)
-    {
-        if (this.level == level && this.experience == experience)
-        {
+    public void set(final int level, final long experience) {
+        if (this.level == level && this.experience == experience) {
             return;
         }
 
@@ -87,62 +80,50 @@ public class Skill
 
     /**
      * Return the skill experience.
-     *
      * @return The skill experience.
      */
-    public long getExperience()
-    {
+    public long getExperience() {
         return experience;
     }
 
     /**
      * Return the skill level.
-     *
      * @return The skill level.
      */
-    public int getLevel()
-    {
+    public int getLevel() {
         return level;
     }
 
     /**
      * Return whether the skill is known.
-     *
      * @return Whether the skill is known.
      */
-    private boolean isKnown()
-    {
+    private boolean isKnown() {
         return experience != 0 || level != 0;
     }
 
-    /** {@inheritDoc} */
+    /**
+     * {@inheritDoc}
+     */
     @NotNull
     @Override
-    public String toString()
-    {
+    public String toString() {
         return name;
     }
 
     /**
      * Notify all listeners about changes.
-     *
      * @param oldKnown Whether the skill was known before the update.
      */
-    private void fireEvents(final boolean oldKnown)
-    {
+    private void fireEvents(final boolean oldKnown) {
         final boolean newKnown = isKnown();
 
-        if (!oldKnown)
-        {
+        if (!oldKnown) {
             assert newKnown;
             fireAddSkill();
-        }
-        else if (!newKnown)
-        {
+        } else if (!newKnown) {
             fireDelSkill();
-        }
-        else
-        {
+        } else {
             fireUpdSkill();
         }
     }
@@ -150,10 +131,8 @@ public class Skill
     /**
      * Notify all listeners about a gained skill.
      */
-    private void fireAddSkill()
-    {
-        for (final SkillListener listener : listeners)
-        {
+    private void fireAddSkill() {
+        for (final SkillListener listener : listeners) {
             listener.gainedSkill();
         }
     }
@@ -161,10 +140,8 @@ public class Skill
     /**
      * Notify all listeners about a lost attribute.
      */
-    private void fireDelSkill()
-    {
-        for (final SkillListener listener : listeners)
-        {
+    private void fireDelSkill() {
+        for (final SkillListener listener : listeners) {
             listener.lostSkill();
         }
     }
@@ -172,31 +149,26 @@ public class Skill
     /**
      * Notify all listeners about an updated attribute.
      */
-    private void fireUpdSkill()
-    {
-        for (final SkillListener listener : listeners)
-        {
+    private void fireUpdSkill() {
+        for (final SkillListener listener : listeners) {
             listener.changedSkill();
         }
     }
 
     /**
      * Add a listener to be notified of changes.
-     *
      * @param listener The listener to add.
      */
-    public void addSkillListener(@NotNull final SkillListener listener)
-    {
+    public void addSkillListener(@NotNull final SkillListener listener) {
         listeners.add(listener);
     }
 
     /**
      * Remove a listener to be notified of changes.
-     *
      * @param listener The listener to remove.
      */
-    public void removeSkillListener(@NotNull final SkillListener listener)
-    {
+    public void removeSkillListener(@NotNull final SkillListener listener) {
         listeners.remove(listener);
     }
+
 }

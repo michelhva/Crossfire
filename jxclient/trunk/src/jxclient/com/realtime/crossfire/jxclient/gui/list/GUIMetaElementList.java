@@ -41,8 +41,8 @@ import org.jetbrains.annotations.Nullable;
  * A {@link GUIList} that tracks a {@link Metaserver} instance.
  * @author Andreas Kirschbaum
  */
-public class GUIMetaElementList extends GUIList
-{
+public class GUIMetaElementList extends GUIList {
+
     /**
      * The serial version UID.
      */
@@ -113,12 +113,10 @@ public class GUIMetaElementList extends GUIList
      * detects added or removed entries and updates the list accordingly.
      */
     @NotNull
-    private final MetaserverListener metaserverListener = new MetaserverListener()
-    {
+    private final MetaserverListener metaserverListener = new MetaserverListener() {
         /** {@inheritDoc} */
         @Override
-        public void numberOfEntriesChanged()
-        {
+        public void numberOfEntriesChanged() {
             rebuildList();
         }
     };
@@ -128,12 +126,10 @@ public class GUIMetaElementList extends GUIList
      * entries. It detects changed contents and updates the list accordingly.
      */
     @NotNull
-    private final MetaserverEntryListener metaserverEntryListener = new MetaserverEntryListener()
-    {
+    private final MetaserverEntryListener metaserverEntryListener = new MetaserverEntryListener() {
         /** {@inheritDoc} */
         @Override
-        public void entryChanged()
-        {
+        public void entryChanged() {
             setChanged();
         }
     };
@@ -159,8 +155,7 @@ public class GUIMetaElementList extends GUIList
      * <code>null</code>
      * @param comment the comment field to update; may be <code>null</code>
      */
-    public GUIMetaElementList(@NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final String name, final int x, final int y, final int w, final int h, final int cellHeight, @NotNull final MetaserverModel metaserverModel, @Nullable final BufferedImage tcpImage, @NotNull final Font font, @NotNull final String format, @NotNull final String tooltip, @Nullable final GUIText hostname, @Nullable final AbstractLabel comment)
-    {
+    public GUIMetaElementList(@NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final String name, final int x, final int y, final int w, final int h, final int cellHeight, @NotNull final MetaserverModel metaserverModel, @Nullable final BufferedImage tcpImage, @NotNull final Font font, @NotNull final String format, @NotNull final String tooltip, @Nullable final GUIText hostname, @Nullable final AbstractLabel comment) {
         super(tooltipManager, elementListener, name, x, y, w, h, cellHeight, new MetaElementCellRenderer(new GUIMetaElement(tooltipManager, elementListener, metaserverModel, name+"_template", w, cellHeight, tcpImage, font, 0, format, tooltip)));
         this.metaserverModel = metaserverModel;
         this.tooltipManager = tooltipManager;
@@ -176,13 +171,13 @@ public class GUIMetaElementList extends GUIList
         rebuildList();
     }
 
-    /** {@inheritDoc} */
+    /**
+     * {@inheritDoc}
+     */
     @Override
-    public void dispose()
-    {
+    public void dispose() {
         super.dispose();
-        for (int i = 0; i < metaserverModel.size(); i++)
-        {
+        for (int i = 0; i < metaserverModel.size(); i++) {
             metaserverModel.removeMetaserverEntryListener(i, metaserverEntryListener);
         }
         metaserverModel.removeMetaserverListener(metaserverListener);
@@ -191,25 +186,18 @@ public class GUIMetaElementList extends GUIList
     /**
      * Rebuild the list cells.
      */
-    private void rebuildList()
-    {
-        synchronized (getTreeLock())
-        {
+    private void rebuildList() {
+        synchronized (getTreeLock()) {
             final int newSize = metaserverModel.size();
             final int oldSize = resizeElements(newSize);
-            if (oldSize < newSize)
-            {
-                for (int i = oldSize; i < newSize; i++)
-                {
+            if (oldSize < newSize) {
+                for (int i = oldSize; i < newSize; i++) {
                     final GUIElement metaElement = new GUIMetaElement(tooltipManager, elementListener, metaserverModel, name+i, 1, 1, tcpImage, font, i, format, tooltip);
                     addElement(metaElement);
                     metaserverModel.addMetaserverEntryListener(i, metaserverEntryListener);
                 }
-            }
-            else
-            {
-                for (int i = newSize; i < oldSize; i++)
-                {
+            } else {
+                for (int i = newSize; i < oldSize; i++) {
                     metaserverModel.removeMetaserverEntryListener(i, metaserverEntryListener);
                 }
             }
@@ -217,33 +205,29 @@ public class GUIMetaElementList extends GUIList
         setChanged();
     }
 
-    /** {@inheritDoc} */
+    /**
+     * {@inheritDoc}
+     */
     @Override
-    protected void activeChanged()
-    {
+    protected void activeChanged() {
     }
 
-    /** {@inheritDoc} */
+    /**
+     * {@inheritDoc}
+     */
     @Override
-    protected void selectionChanged(final int selectedIndex)
-    {
-        if (selectedIndex == -1)
-        {
+    protected void selectionChanged(final int selectedIndex) {
+        if (selectedIndex == -1) {
             // do not update hostname
-            if (comment != null)
-            {
+            if (comment != null) {
                 comment.setText("");
             }
-        }
-        else
-        {
+        } else {
             final MetaserverEntry metaEntry = metaserverModel.getEntry(selectedIndex);
-            if (hostname != null)
-            {
+            if (hostname != null) {
                 hostname.setText(metaEntry != null ? metaEntry.getHostname() : "");
             }
-            if (comment != null)
-            {
+            if (comment != null) {
                 comment.setText(metaEntry != null ? metaEntry.getComment() : "");
             }
         }
@@ -254,8 +238,7 @@ public class GUIMetaElementList extends GUIList
      * @param index the index to check
      */
     @Override
-    protected void updateTooltip(final int index)
-    {
+    protected void updateTooltip(final int index) {
         final MetaserverEntry metaEntry = metaserverModel.getEntry(index);
         setTooltipText(metaEntry == null ? null : metaEntry.format(tooltip));
     }
@@ -264,13 +247,12 @@ public class GUIMetaElementList extends GUIList
      * Select an entry by server name.
      * @param serverName the server name
      */
-    public void setSelectedHostname(@NotNull final String serverName)
-    {
+    public void setSelectedHostname(@NotNull final String serverName) {
         final int index = metaserverModel.getServerIndex(serverName);
         setSelectedIndex(index);
-        if (index == -1 && hostname != null)
-        {
+        if (index == -1 && hostname != null) {
             hostname.setText(serverName);
         }
     }
+
 }

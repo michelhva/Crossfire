@@ -25,21 +25,21 @@ import org.jetbrains.annotations.NotNull;
 
 /**
  * Indicates that a key binding is invalid.
- *
  * @author Andreas Kirschbaum
  */
-public class InvalidKeyBindingException extends Exception
-{
-    /** The serial version UID. */
+public class InvalidKeyBindingException extends Exception {
+
+    /**
+     * The serial version UID.
+     */
     private static final long serialVersionUID = 1;
 
     /**
      * Create a new instance.
-     *
      * @param reason The error reason.
      */
-    public InvalidKeyBindingException(@NotNull final String reason)
-    {
+    public InvalidKeyBindingException(@NotNull final String reason) {
         super(reason);
     }
+
 }

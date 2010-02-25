@@ -31,8 +31,8 @@ import org.jetbrains.annotations.NotNull;
  * A gui element implementing a static text field which may contain media tags.
  * @author Andreas Kirschbaum
  */
-public class GUILabelLog extends GUILog
-{
+public class GUILabelLog extends GUILog {
+
     /**
      * The serial version UID.
      */
@@ -65,16 +65,16 @@ public class GUILabelLog extends GUILog
      * @param defaultColor the default color to use for text message not
      * specifying a color
      */
-    public GUILabelLog(@NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final String name, final int x, final int y, final int w, final int h, @NotNull final Image backgroundImage, @NotNull final Fonts fonts, @NotNull final Color defaultColor)
-    {
+    public GUILabelLog(@NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final String name, final int x, final int y, final int w, final int h, @NotNull final Image backgroundImage, @NotNull final Fonts fonts, @NotNull final Color defaultColor) {
         super(tooltipManager, elementListener, name, x, y, w, h, backgroundImage, fonts);
         this.defaultColor = defaultColor;
     }
 
-    /** {@inheritDoc} */
+    /**
+     * {@inheritDoc}
+     */
     @Override
-    public void dispose()
-    {
+    public void dispose() {
         super.dispose();
     }
 
@@ -82,10 +82,10 @@ public class GUILabelLog extends GUILog
      * Sets the displayed text by parsing a string.
      * @param string the string to parse
      */
-    public void updateText(@NotNull final CharSequence string)
-    {
+    public void updateText(@NotNull final CharSequence string) {
         buffer.clear();
         parser.parse(string, defaultColor, buffer);
         scrollTo(0);
     }
+
 }

@@ -25,8 +25,8 @@ package com.realtime.crossfire.jxclient.server.crossfire;
  * Utility class defining constants used by the "map2" Crossfire command.
  * @author Andreas Kirschbaum
  */
-public class CrossfireMap2Command
-{
+public class CrossfireMap2Command {
+
     /**
      * The total number of map layers to display.
      */
@@ -40,7 +40,7 @@ public class CrossfireMap2Command
     /**
      * Private constructor to prevent instantiation.
      */
-    private CrossfireMap2Command()
-    {
+    private CrossfireMap2Command() {
     }
+
 }

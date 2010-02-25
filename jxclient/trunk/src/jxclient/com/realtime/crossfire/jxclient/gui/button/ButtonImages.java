@@ -29,8 +29,8 @@ import org.jetbrains.annotations.NotNull;
  * A set of images to form a button image.
  * @author Andreas Kirschbaum
  */
-public class ButtonImages
-{
+public class ButtonImages {
+
     public static final int OFFSET = 3;
 
     /**
@@ -56,14 +56,11 @@ public class ButtonImages
      */
     private final int height;
 
-    public ButtonImages(@NotNull final Image imageLeft, @NotNull final Image imageMiddle, @NotNull final Image imageRight)
-    {
-        if (imageLeft.getHeight(null) != imageMiddle.getHeight(null))
-        {
+    public ButtonImages(@NotNull final Image imageLeft, @NotNull final Image imageMiddle, @NotNull final Image imageRight) {
+        if (imageLeft.getHeight(null) != imageMiddle.getHeight(null)) {
             throw new IllegalArgumentException("left image height is "+imageLeft.getHeight(null)+" but middle image height is "+imageMiddle.getHeight(null));
         }
-        if (imageMiddle.getHeight(null) != imageRight.getHeight(null))
-        {
+        if (imageMiddle.getHeight(null) != imageRight.getHeight(null)) {
             throw new IllegalArgumentException("middle image height is "+imageMiddle.getHeight(null)+" but right image height is "+imageRight.getHeight(null));
         }
 
@@ -77,8 +74,7 @@ public class ButtonImages
      * Return the button height.
      * @return the height
      */
-    public int getHeight()
-    {
+    public int getHeight() {
         return height;
     }
 
@@ -86,32 +82,28 @@ public class ButtonImages
      * Return the minimal possible button width.
      * @return the minimal button width
      */
-    public int getMinimumWidth()
-    {
+    public int getMinimumWidth() {
         return imageLeft.getWidth(null)+2*OFFSET+imageRight.getWidth(null);
     }
 
     /**
      * Draw the button.
-     *
      * @param g The graphics to paint into.
-     *
      * @param w The button width.
      */
-    public void render(@NotNull final Graphics g, final int w)
-    {
+    public void render(@NotNull final Graphics g, final int w) {
         g.drawImage(imageLeft, 0, 0, null);
         g.drawImage(imageRight, w-imageRight.getWidth(null), 0, null);
 
         final int middleWidth = imageMiddle.getWidth(null);
         int tmpWidth = w-imageLeft.getWidth(null)-imageRight.getWidth(null);
         int tmpX = imageLeft.getWidth(null);
-        while (tmpWidth > 0)
-        {
+        while (tmpWidth > 0) {
             final int thisWidth = Math.min(tmpWidth, middleWidth);
             g.drawImage(imageMiddle, tmpX, 0, tmpX+thisWidth, height, 0, 0, thisWidth, height, null);
             tmpX += thisWidth;
             tmpWidth -= thisWidth;
         }
     }
+
 }
