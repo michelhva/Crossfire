@@ -21,12 +21,19 @@ import CFGuilds
 import CFItemBroker
 import random
 import string
+import sys
+import CFBank
+import CFMail
+
+
 guildname=Crossfire.ScriptParameters() # 6 is say event
 if (guildname):
      guild = CFGuilds.CFGuild(guildname)
 activator=Crossfire.WhoIsActivator()
 in_guild=CFGuilds.SearchGuilds(activator.Name)
-gbfile="/usr/games/crossfire/share/crossfire/maps/python/guilds/balance.2/%s.txt" %(guildname)#location of the balance of dues paid, where it should go depends on your distribution, uses an absolute path.
+bankdatabase = "ImperialBank_DB"
+bank = CFBank.CFBank(bankdatabase)
+
 
 
 
@@ -52,20 +59,25 @@ if whoami.Name=='Jack':
  remarklist = ['Excellent','Thank You','Thank You','Thank You', 'Thank You', 'Great', 'OK', 'Wonderful', 'Swell', 'Dude', 'Big Spender']
  exclaimlist = ['Hey','Hey','Hey','Hey', 'Now just a minute', 'AHEM', 'OK...Wait a minute', 'Look chowderhead']
  buddylist =   ['buddy','buddy','buddy','buddy','pal','friend','friend','friend','friend','dude','chum', 'sweetie']
-
- guildname=Crossfire.ScriptParameters() # 6 is say event
- text = Crossfire.WhatIsMessage().split()
  
+ guildname=Crossfire.ScriptParameters() # 6 is say event
+ accountname=guildname+str(guildname.__hash__())
+ text = Crossfire.WhatIsMessage().split()
+
 
  
  if (guildname):
      guild = CFGuilds.CFGuild(guildname)
      cointype = "jadecoin" #What type of token are we using for guild dues?
      object = activator.CheckInventory(cointype)
-     if text[0] == 'help' or text[0] == 'yes':
-         message='Let me know how many jade coins you want to pay.  Say pay <amount>'
-
-     elif text[0] == 'pay':
+     if text[0].upper() == 'HELP' or text[0].upper() == 'YES':
+         message='Let me know how many jade coins you want to pay.  Say pay <amount>\nYou can also check the balance by saying "balance".'
+     elif text[0].upper()=='WITHDRAW':
+	message='not implemented quite yet...'     
+     elif text[0].upper()=='BALANCE':
+	balance=bank.getbalance(accountname)
+	message="The guild currently has %s Jade coins on deposit" %(str(balance))
+     elif text[0].upper() == 'PAY':
          if len(text)==2:
              cost = int(text[1])
 	     if cost <0:
@@ -75,14 +87,14 @@ if whoami.Name=='Jack':
                  if (pay):
                      guild.pay_dues(activatorname,cost)
                      message = "%s, %d %s paid to the guild." %(random.choice(remarklist),cost, cointype)
-                     guildbalance = open(str(gbfile), 'r')
-                     guildbalance2 = guildbalance.read()
-                     guildbalance1 = int(guildbalance2) + int(cost)
-                     guildbalance.close()
-                     guildbalance3 = open(str(gbfile), 'w')
-                     guildbalance4 = str(guildbalance1)
-                     guildbalance3.write(guildbalance4)
-                     print guildbalance4
+		     bank.deposit(accountname, cost)
+                     
+                     
+                     
+                     
+                     
+                     
+                     
 
                  else:
                      if cost > 1:
@@ -99,8 +111,10 @@ if whoami.Name=='Jack':
  else:
      activator.Write('Guildname Error, please notify a DM')
 else:
-  guildbalance=open(str(gbfile), 'r')
-  balance=guildbalance.read()
+  accountname=guildname+str(guildname.__hash__())
+  
+  balance=bank.getbalance(accountname)
+  whoami.Say(str(balance))
   x = activator.X
   y = activator.Y
   amount=int(balance)
@@ -109,11 +123,9 @@ else:
       message = 'No dues have been paid.'
   else:
       message = '%d dues withdrawn.' % amount
+      bank.withdraw(accountname, amount)
       id = activator.Map.CreateObject('jadecoin', x, y)
       CFItemBroker.Item(id).add(amount)
       activator.Take(id)
 
-  guildbalance.close()
-  guildbalance3= open(str(gbfile), 'w')
-  guildbalance3.write('0')
-  guildbalance3.close()
+  
