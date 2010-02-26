@@ -1,5 +1,6 @@
 arch map
 name basement
+swap_time 300
 difficulty 1
 region Template
 width 25
@@ -9,8 +10,8 @@ Creator: CF Java Map Editor
 Date:    6/15/2003
 Map finised by:  Alestan jehloq@yahoo.com
 Date:     8/27/2007
+Modified: 2009-12-12 perkins
 endmsg
-unique 1
 end
 arch woodfloor
 end
@@ -1469,6 +1470,20 @@ end
 arch mine_1_2
 x 6
 y 8
+end
+arch trap_blades
+Cha 127
+hp 1000
+dam 0
+x 6
+y 9
+level 100
+attacktype 0
+arch event_trigger
+name GUILD_TEMPLATE Initiate A
+title Python
+slaying /python/guilds/arrest.py
+end
 end
 arch dungeon_magic
 x 6
@@ -4011,6 +4026,20 @@ x 16
 y 12
 unique 1
 end
+arch trap_blades
+Cha 127
+hp 1000
+dam 0
+x 16
+y 13
+level 100
+attacktype 0
+arch event_trigger
+name GUILD_TEMPLATE Initiate A
+title Python
+slaying /python/guilds/arrest.py
+end
+end
 arch dungeon_magic
 x 16
 y 13
@@ -4038,6 +4067,20 @@ end
 arch dungeon_magic
 x 16
 y 14
+end
+arch trap_blades
+Cha 127
+hp 1000
+dam 0
+x 16
+y 15
+level 100
+attacktype 0
+arch event_trigger
+name GUILD_TEMPLATE Initiate A
+title Python
+slaying /python/guilds/arrest.py
+end
 end
 arch dungeon_magic
 x 16
@@ -4492,6 +4535,29 @@ is_animated 0
 fly_on 0
 unique 1
 end
+arch trap_blades
+Cha 127
+hp 1000
+dam 0
+x 19
+y 1
+level 100
+attacktype 0
+arch event_trigger
+name GUILD_TEMPLATE Initiate A
+title Python
+slaying /python/guilds/arrest.py
+end
+end
+arch counterspell
+wc -120
+x 19
+y 2
+speed 10
+nrof 1
+invisible 1
+identified 1
+end
 arch blocked
 x 19
 y 5
@@ -4861,6 +4927,20 @@ food 1
 x 21
 y 24
 connected 31
+end
+arch trap_blades
+Cha 127
+hp 1000
+dam 0
+x 22
+y 1
+level 100
+attacktype 0
+arch event_trigger
+name GUILD_TEMPLATE Initiate A
+title Python
+slaying /python/guilds/arrest.py
+end
 end
 arch blocked
 x 22

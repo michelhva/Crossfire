@@ -1,9 +1,10 @@
 arch map
 name The Grand Hall
+reset_timeout 300
 difficulty 1
 region Template
 darkness 1
-width 20
+width 22
 height 26
 enter_x 15
 enter_y 2
@@ -13,7 +14,7 @@ CF Java Map Editor
 Date:    6/14/2003
 Map finised by:  Alestan jehloq@yahoo.com
 Date:     8/27/2007
-Modified: 2008-05-30 Andreas Kirschbaum
+Modified: 2009-12-12 perkins
 endmsg
 end
 arch flagstone
@@ -856,10 +857,6 @@ y 7
 unique 1
 end
 arch swall_2_1_2
-x 4
-y 7
-end
-arch dungeon_magic
 x 4
 y 7
 end
@@ -2106,16 +2103,6 @@ x 9
 y 11
 unique 1
 end
-arch button_handle
-name GuildMaster
-msg
-Throw this to make the person in the chair a guild master.
-endmsg
-x 9
-y 11
-connected 111
-activate_on_release 0
-end
 arch flagstone
 x 9
 y 12
@@ -2164,19 +2151,13 @@ x 9
 y 15
 connected 5
 end
-arch marble
+arch dungeon_magic
 x 9
 y 16
 end
-arch trigger_marker
-slaying GuildMaster
-msg
-You have one day's use of these facilities.
-endmsg
-food 504
+arch marble
 x 9
 y 16
-connected 111
 end
 arch chair_3.2
 name Seat of Peril
@@ -2184,10 +2165,6 @@ x 9
 y 16
 material 0
 no_pick 1
-end
-arch dungeon_magic
-x 9
-y 16
 end
 arch marble
 x 9
@@ -3919,11 +3896,6 @@ end
 arch flagstone
 x 16
 y 12
-unique 1
-end
-arch dungeon_magic
-x 16
-y 12
 end
 arch dwall_2_2_2
 x 16
@@ -3932,56 +3904,41 @@ end
 arch flagstone
 x 16
 y 13
+end
+arch dwall_2_1_1
+x 16
+y 13
+end
+arch flagstone
+x 16
+y 14
+end
+arch dwall_2_1_1
+x 16
+y 14
+end
+arch flagstone
+x 16
+y 15
+end
+arch dwall_3_2
+x 16
+y 15
+end
+arch flagstone
+x 16
+y 16
 unique 1
 end
 arch dungeon_magic
 x 16
-y 13
+y 16
 end
 arch swall_1_1
 x 16
-y 13
+y 16
 end
 arch dwall_1_2
-x 16
-y 13
-end
-arch flagstone
-x 16
-y 14
-unique 1
-end
-arch dungeon_magic
-x 16
-y 14
-end
-arch swall_2_1_1
-x 16
-y 14
-end
-arch flagstone
-x 16
-y 15
-unique 1
-end
-arch dungeon_magic
-x 16
-y 15
-end
-arch swall_2_1_1
-x 16
-y 15
-end
-arch flagstone
-x 16
-y 16
-unique 1
-end
-arch dungeon_magic
-x 16
-y 16
-end
-arch swall_2_1_1
 x 16
 y 16
 end
@@ -4198,16 +4155,37 @@ arch dungeon_magic
 x 17
 y 11
 end
+arch guard
+x 17
+y 11
+level 1000
+attacktype 5201023
+monster 0
+friendly 1
+hitback 1
+reflect_missile 0
+reflect_spell 0
+can_use_scroll 1
+can_use_bow 1
+can_use_armour 1
+can_use_weapon 1
+can_use_ring 1
+can_use_skill 1
+can_use_rod 1
+can_see_in_dark 1
+can_use_wand 1
+arch event_say
+name GUILD_TEMPLATE Novice
+title Python
+slaying /python/guilds/clearance.py
+end
+end
 arch flagstone
 x 17
 y 12
 unique 1
 end
-arch dungeon_magic
-x 17
-y 12
-end
-arch dwall_win2
+arch dwall_1_3
 x 17
 y 12
 end
@@ -4216,15 +4194,31 @@ x 17
 y 13
 unique 1
 end
+arch dungeon_magic
+x 17
+y 13
+end
 arch flagstone
 x 17
 y 14
 unique 1
 end
+arch dungeon_magic
+x 17
+y 14
+end
 arch flagstone
 x 17
 y 15
 unique 1
+end
+arch dungeon_magic
+x 17
+y 15
+end
+arch dwall_win2
+x 17
+y 15
 end
 arch flagstone
 x 17
@@ -4282,309 +4276,703 @@ end
 arch flagstone
 x 18
 end
-arch dwall_2_2_3
+arch dwall_2_1_2
 x 18
 end
 arch flagstone
 x 18
 y 1
+unique 1
 end
-arch dwall_2_1_1
+arch dungeon_magic
 x 18
 y 1
 end
 arch flagstone
 x 18
 y 2
+unique 1
 end
-arch dwall_2_1_1
+arch dungeon_magic
 x 18
 y 2
 end
 arch flagstone
 x 18
 y 3
+unique 1
 end
-arch dwall_2_1_1
+arch dungeon_magic
 x 18
 y 3
 end
 arch flagstone
 x 18
 y 4
+unique 1
 end
-arch dwall_2_1_1
+arch dungeon_magic
 x 18
 y 4
 end
 arch flagstone
 x 18
 y 5
+unique 1
 end
-arch dwall_2_1_1
+arch dungeon_magic
 x 18
 y 5
 end
 arch flagstone
 x 18
 y 6
+unique 1
 end
-arch dwall_2_1_1
+arch dungeon_magic
 x 18
 y 6
 end
 arch flagstone
 x 18
 y 7
+unique 1
 end
-arch dwall_2_1_1
+arch dungeon_magic
 x 18
 y 7
 end
 arch flagstone
 x 18
 y 8
+unique 1
 end
-arch dwall_2_1_1
+arch dungeon_magic
 x 18
 y 8
 end
 arch flagstone
 x 18
 y 9
+unique 1
 end
-arch dwall_2_1_1
+arch dungeon_magic
 x 18
 y 9
 end
 arch flagstone
 x 18
 y 10
+unique 1
 end
-arch dwall_2_1_1
+arch dungeon_magic
 x 18
 y 10
 end
 arch flagstone
 x 18
 y 11
+unique 1
 end
-arch dwall_2_1_1
+arch dungeon_magic
 x 18
 y 11
+end
+arch dungeon_magic
+x 18
+y 12
+end
+arch button_trigger
+x 18
+y 12
+connected 9999
 end
 arch flagstone
 x 18
 y 12
+unique 1
+end
+arch odoorn2_closed_1
+x 18
+y 12
+connected 9999
+end
+arch button_trigger
+x 18
+y 13
+connected 9999
+end
+arch flagstone
+x 18
+y 13
+unique 1
+end
+arch dungeon_magic
+x 18
+y 13
+end
+arch dungeon_magic
+x 18
+y 14
+end
+arch flagstone
+x 18
+y 14
+unique 1
+end
+arch stair_down_1
+slaying novice_lounge
+x 18
+y 14
+end
+arch trap_blades
+msg
+endmsg
+Cha 200000
+hp 1000
+dam 0
+x 18
+y 14
+level 100
+attacktype 0
+arch event_trigger
+name GUILD_TEMPLATE Initiate A
+title Python
+slaying /python/guilds/arrest.py
+end
+end
+arch flagstone
+x 18
+y 15
+unique 1
+end
+arch dungeon_magic
+x 18
+y 15
+end
+arch dwall_win2
+x 18
+y 15
+end
+arch flagstone
+x 18
+y 16
+unique 1
+end
+arch flagstone
+x 18
+y 17
+unique 1
+end
+arch flagstone
+x 18
+y 18
+unique 1
+end
+arch flagstone
+x 18
+y 19
+unique 1
+end
+arch flagstone
+x 18
+y 20
+unique 1
+end
+arch flagstone
+x 18
+y 21
+unique 1
+end
+arch flagstone
+x 18
+y 22
+unique 1
+end
+arch flagstone
+x 18
+y 23
+unique 1
+end
+arch flagstone
+x 18
+y 24
+unique 1
+end
+arch flagstone
+x 18
+y 25
+end
+arch dwall_2_1_2
+x 18
+y 25
+end
+arch flagstone
+x 19
+end
+arch dwall_2_2_3
+x 19
+end
+arch flagstone
+x 19
+y 1
+end
+arch dwall_2_1_1
+x 19
+y 1
+end
+arch flagstone
+x 19
+y 2
+end
+arch dwall_2_1_1
+x 19
+y 2
+end
+arch flagstone
+x 19
+y 3
+end
+arch dwall_2_1_1
+x 19
+y 3
+end
+arch flagstone
+x 19
+y 4
+end
+arch dwall_2_1_1
+x 19
+y 4
+end
+arch flagstone
+x 19
+y 5
+end
+arch dwall_2_1_1
+x 19
+y 5
+end
+arch flagstone
+x 19
+y 6
+end
+arch dwall_2_1_1
+x 19
+y 6
+end
+arch flagstone
+x 19
+y 7
+end
+arch dwall_2_1_1
+x 19
+y 7
+end
+arch flagstone
+x 19
+y 8
+end
+arch dwall_2_1_1
+x 19
+y 8
+end
+arch flagstone
+x 19
+y 9
+end
+arch dwall_2_1_1
+x 19
+y 9
+end
+arch flagstone
+x 19
+y 10
+end
+arch dwall_2_1_1
+x 19
+y 10
+end
+arch flagstone
+x 19
+y 11
+end
+arch dwall_2_1_1
+x 19
+y 11
+end
+arch flagstone
+x 19
+y 12
+end
+arch dwall_2_1_1
+x 19
+y 12
+end
+arch flagstone
+x 19
+y 13
+end
+arch dwall_2_1_1
+x 19
+y 13
+end
+arch flagstone
+x 19
+y 14
+end
+arch dwall_2_1_1
+x 19
+y 14
+end
+arch flagstone
+x 19
+y 15
 end
 arch dwall_3_4
-x 18
-y 12
-end
-arch flagstone
-x 18
-y 13
-end
-arch dwall_2_1_1
-x 18
-y 13
-end
-arch flagstone
-x 18
-y 14
-end
-arch dwall_2_1_1
-x 18
-y 14
-end
-arch flagstone
-x 18
-y 15
-end
-arch dwall_2_1_1
-x 18
+x 19
 y 15
 end
 arch flagstone
-x 18
+x 19
 y 16
 end
 arch dwall_2_1_1
-x 18
+x 19
 y 16
 end
 arch flagstone
-x 18
+x 19
 y 17
 end
 arch dwall_2_1_1
-x 18
+x 19
 y 17
 end
 arch flagstone
-x 18
+x 19
 y 18
 end
 arch dwall_2_1_1
-x 18
+x 19
 y 18
 end
 arch flagstone
-x 18
+x 19
 y 19
 end
 arch dwall_2_1_1
-x 18
+x 19
 y 19
 end
 arch flagstone
-x 18
+x 19
 y 20
 end
 arch dwall_2_1_1
-x 18
+x 19
 y 20
 end
 arch flagstone
-x 18
+x 19
 y 21
 end
 arch dwall_2_1_1
-x 18
+x 19
 y 21
 end
 arch flagstone
-x 18
+x 19
 y 22
 end
 arch dwall_2_1_1
-x 18
+x 19
 y 22
 end
 arch flagstone
-x 18
+x 19
 y 23
 end
 arch dwall_2_1_1
-x 18
+x 19
 y 23
 end
 arch flagstone
-x 18
+x 19
 y 24
 end
 arch dwall_2_1_1
-x 18
+x 19
 y 24
 end
 arch flagstone
-x 18
+x 19
 y 25
 end
 arch dwall_2_2_4
-x 18
+x 19
 y 25
 end
 arch blocked
-x 19
+x 20
 end
 arch blocked
-x 19
+x 20
 y 1
 end
 arch blocked
-x 19
+x 20
 y 2
 end
 arch blocked
-x 19
+x 20
 y 3
 end
 arch blocked
-x 19
+x 20
 y 4
 end
 arch blocked
-x 19
+x 20
 y 5
 end
 arch blocked
-x 19
+x 20
 y 6
 end
 arch blocked
-x 19
+x 20
 y 7
 end
 arch blocked
-x 19
+x 20
 y 8
 end
 arch blocked
-x 19
+x 20
 y 9
 end
 arch blocked
-x 19
+x 20
 y 10
 end
 arch blocked
-x 19
+x 20
 y 11
 end
 arch blocked
-x 19
+x 20
 y 12
 end
 arch blocked
-x 19
+x 20
 y 13
 end
 arch blocked
-x 19
+x 20
 y 14
 end
 arch blocked
-x 19
+x 20
 y 15
 end
 arch blocked
-x 19
+x 20
 y 16
 end
 arch blocked
-x 19
+x 20
 y 17
 end
 arch blocked
-x 19
+x 20
 y 18
 end
 arch blocked
-x 19
+x 20
 y 19
 end
 arch blocked
-x 19
+x 20
 y 20
 end
 arch blocked
-x 19
+x 20
 y 21
 end
 arch blocked
-x 19
+x 20
 y 22
 end
 arch blocked
-x 19
+x 20
 y 23
 end
 arch blocked
-x 19
+x 20
 y 24
 end
 arch blocked
-x 19
+x 20
 y 25
+end
+arch button_small
+x 21
+connected 9991
+end
+arch lightningwall_5
+x 21
+y 1
+speed 0.0
+level 100
+connected 9991
+move_block 0
+arch spell_large_lightning
+end
+end
+arch director_5
+x 21
+y 1
+end
+arch detector
+slaying lightning
+x 21
+y 2
+speed 1.0
+connected 9999
+end
+arch lightningwall_5
+sp 1
+x 21
+y 3
+speed 0.0
+level 100
+connected 9991
+move_block 0
+arch spell_large_lightning
+end
+end
+arch director_1
+x 21
+y 3
+end
+arch lightningwall_5
+sp 1
+x 21
+y 4
+speed 0.0
+level 100
+connected 9991
+move_block 0
+arch spell_large_lightning
+end
+end
+arch director_1
+x 21
+y 4
+end
+arch lightningwall_5
+sp 1
+x 21
+y 5
+speed 0.0
+level 100
+connected 9991
+move_block 0
+arch spell_large_lightning
+end
+end
+arch director_1
+x 21
+y 5
+end
+arch lightningwall_5
+sp 1
+x 21
+y 6
+speed 0.0
+level 100
+connected 9991
+move_block 0
+arch spell_large_lightning
+end
+end
+arch director_1
+x 21
+y 6
+end
+arch lightningwall_5
+sp 1
+x 21
+y 7
+speed 0.0
+level 100
+connected 9991
+move_block 0
+arch spell_large_lightning
+end
+end
+arch director_1
+x 21
+y 7
+end
+arch lightningwall_5
+sp 1
+x 21
+y 8
+speed 0.0
+level 100
+connected 9991
+move_block 0
+arch spell_large_lightning
+end
+end
+arch director_1
+x 21
+y 8
+end
+arch lightningwall_5
+sp 1
+x 21
+y 9
+speed 0.0
+level 100
+connected 9991
+move_block 0
+arch spell_large_lightning
+end
+end
+arch director_1
+x 21
+y 9
+end
+arch lightningwall_5
+sp 1
+x 21
+y 10
+speed 0.0
+level 100
+connected 9991
+move_block 0
+arch spell_large_lightning
+end
+end
+arch director_1
+x 21
+y 10
+end
+arch lightningwall_5
+sp 1
+x 21
+y 11
+speed 0.0
+level 100
+connected 9991
+move_block 0
+arch spell_large_lightning
+end
+end
+arch director_1
+x 21
+y 11
 end

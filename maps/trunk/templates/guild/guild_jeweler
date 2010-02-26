@@ -1,5 +1,6 @@
 arch map
 name Guild Jeweler
+swap_time 300
 difficulty 1
 region Template
 width 7
@@ -12,6 +13,7 @@ Editor: CrossfireEditor
 Date:    3/19/2007
 Map finised by:  Alestan jehloq@yahoo.com
 Date:     8/27/2007
+Modified: 2009-12-12 perkins
 endmsg
 end
 arch woodfloor
@@ -97,6 +99,7 @@ end
 arch woodfloor
 x 1
 y 4
+unique 1
 end
 arch firepot
 x 1
@@ -120,6 +123,7 @@ resist_fire 100
 resist_electricity 100
 resist_cold 100
 resist_acid 100
+material 0
 no_pick 1
 end
 arch woodfloor
@@ -141,12 +145,27 @@ resist_cold 100
 resist_confusion 100
 resist_acid 100
 resist_drain 100
+material 0
 no_pick 1
 end
 arch woodfloor
 x 1
 y 7
 unique 1
+end
+arch trap_blades
+Cha 127
+hp 1000
+dam 0
+x 1
+y 8
+level 100
+attacktype 0
+arch event_trigger
+name GUILD_TEMPLATE Initiate A
+title Python
+slaying /python/guilds/arrest.py
+end
 end
 arch duplicator
 other_arch jeweler_bench
@@ -214,6 +233,7 @@ end
 arch woodfloor
 x 2
 y 5
+unique 1
 end
 arch woodfloor
 x 2
@@ -231,6 +251,7 @@ resist_cold 100
 resist_confusion 100
 resist_acid 100
 resist_drain 100
+material 0
 no_pick 1
 end
 arch woodfloor
@@ -261,6 +282,9 @@ end
 arch woodfloor
 x 3
 y 2
+move_block all
+no_magic 1
+damned 1
 end
 arch dungeon_magic
 x 3
@@ -306,6 +330,44 @@ end
 arch woodfloor
 x 3
 y 5
+unique 1
+end
+arch lightningwall_5
+sp 0
+x 3
+y 6
+speed 0.0
+level 111
+invisible 1
+connected 990
+move_block 0
+blocksview 0
+no_damage 1
+arch spell_banishment
+end
+end
+arch woodfloor
+x 3
+y 6
+unique 1
+end
+arch lightningwall_5
+x 3
+y 6
+speed 0.0
+level 111
+invisible 1
+connected 990
+move_block 0
+blocksview 0
+no_damage 1
+arch spelldirect_dragonbreath
+other_arch god_power
+sp 0
+level 115
+duration 20
+casting_time 0
+end
 end
 arch woodfloor
 x 3
@@ -316,10 +378,6 @@ arch woodfloor
 x 3
 y 7
 unique 1
-end
-arch charwoman
-x 3
-y 7
 end
 arch woodfloor
 x 3
@@ -368,6 +426,7 @@ end
 arch woodfloor
 x 4
 y 5
+unique 1
 end
 arch woodfloor
 x 4
@@ -406,29 +465,12 @@ end
 arch woodfloor
 x 4
 y 8
+unique 1
 end
 arch table_3
 x 4
 y 8
-resist_physical 100
-resist_magic 100
-resist_fire 100
-resist_electricity 100
-resist_cold 100
-resist_confusion 100
-resist_acid 100
-resist_drain 100
-resist_weaponmagic 100
-resist_ghosthit 100
-resist_poison 100
-resist_slow 100
-resist_paralyze 100
-resist_fear 100
-resist_deplete 100
-resist_death 100
-resist_chaos 100
-resist_holyword 100
-resist_blind 100
+material 0
 no_pick 1
 end
 arch woodfloor
@@ -446,9 +488,25 @@ arch woodfloor
 x 5
 y 1
 end
+arch check_floor
+slaying GuildMaster
+x 5
+y 2
+connected 122
+move_block all
+end
 arch woodfloor
 x 5
 y 2
+end
+arch button_lever
+name Hard Reset
+msg
+Pull this lever to clear the room.
+endmsg
+x 5
+y 2
+connected 990
 end
 arch woodfloor
 x 5
@@ -479,13 +537,7 @@ end
 arch table_4
 x 5
 y 5
-resist_physical 100
-resist_magic 100
-resist_fire 100
-resist_electricity 100
-resist_cold 100
-resist_acid 100
-resist_chaos 100
+material 0
 no_pick 1
 end
 arch woodfloor
@@ -496,6 +548,10 @@ end
 arch barrel
 x 5
 y 6
+material 0
+move_type 0
+move_block 0
+can_roll 0
 end
 arch woodfloor
 x 5
@@ -505,15 +561,7 @@ end
 arch table_4
 x 5
 y 7
-resist_physical 100
-resist_magic 100
-resist_fire 100
-resist_electricity 100
-resist_cold 100
-resist_confusion 100
-resist_acid 100
-resist_drain 100
-resist_chaos 100
+material 0
 no_pick 1
 end
 arch woodfloor
@@ -551,6 +599,14 @@ end
 arch woodfloor
 x 6
 y 2
+end
+arch invis_exit
+slaying secondfloor
+hp 2
+sp 14
+x 6
+y 2
+invisible 0
 end
 arch woodfloor
 x 6
