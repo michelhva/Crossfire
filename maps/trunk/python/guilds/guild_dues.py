@@ -21,7 +21,17 @@ import CFGuilds
 import CFItemBroker
 import random
 import string
-gbfile='/cftmp/guildbalance.txt' #location of the balance of dues paid, where it should go depends on your distribution, uses an absolute path.
+guildname=Crossfire.ScriptParameters() # 6 is say event
+if (guildname):
+     guild = CFGuilds.CFGuild(guildname)
+activator=Crossfire.WhoIsActivator()
+in_guild=CFGuilds.SearchGuilds(activator.Name)
+gbfile="/usr/games/crossfire/share/crossfire/maps/python/guilds/balance.2/%s.txt" %(guildname)#location of the balance of dues paid, where it should go depends on your distribution, uses an absolute path.
+
+
+
+
+
 x=6
 y=7
 x1=31
@@ -38,7 +48,6 @@ activator=Crossfire.WhoIsActivator()
 activatorname=activator.Name
 mymap = activator.Map
 whoami=Crossfire.WhoAmI()
-print whoami.Name
 if whoami.Name=='Jack':
  remarklist = ['Excellent','Thank You','Thank You','Thank You', 'Thank You', 'Great', 'OK', 'Wonderful', 'Swell', 'Dude', 'Big Spender']
  exclaimlist = ['Hey','Hey','Hey','Hey', 'Now just a minute', 'AHEM', 'OK...Wait a minute', 'Look chowderhead']
@@ -46,18 +55,21 @@ if whoami.Name=='Jack':
 
  guildname=Crossfire.ScriptParameters() # 6 is say event
  text = Crossfire.WhatIsMessage().split()
+ 
 
+ 
  if (guildname):
      guild = CFGuilds.CFGuild(guildname)
      cointype = "jadecoin" #What type of token are we using for guild dues?
      object = activator.CheckInventory(cointype)
-
      if text[0] == 'help' or text[0] == 'yes':
          message='Let me know how many jade coins you want to pay.  Say pay <amount>'
 
      elif text[0] == 'pay':
          if len(text)==2:
              cost = int(text[1])
+	     if cost <0:
+		cost=-1*cost
              if (object):
                  pay = CFItemBroker.Item(object).subtract(cost)
                  if (pay):

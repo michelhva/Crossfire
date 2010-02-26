@@ -1,7 +1,8 @@
 arch map
-name Bigchest
+name Guild Bigchest
+reset_timeout 300
 difficulty 1
-region Template
+region darcap
 width 5
 height 5
 enter_x 2
@@ -11,6 +12,7 @@ Creator: CF Java Map Editor
 Date:    12/23/2001
 Map finised by:  Alestan jehloq@yahoo.com
 Date:     8/27/2007
+Modified: 2009-05-08 Logan Perkins
 endmsg
 end
 arch woodfloor2

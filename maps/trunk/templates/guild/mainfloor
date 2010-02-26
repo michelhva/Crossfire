@@ -1,9 +1,9 @@
 arch map
 name Main Floor
-reset_timeout 7200
+reset_timeout 300
 difficulty 1
 region Template
-width 36
+width 41
 height 30
 enter_x 15
 enter_y 28
@@ -15,7 +15,7 @@ Avion
 Date:    11/19/2004
 Map finised by:  Alestan jehloq@yahoo.com
 Date:     8/27/2007
-Modified: 2009-07-12 Andreas Kirschbaum
+Modified: 2009-12-12 perkins
 endmsg
 outdoor 1
 end
@@ -664,12 +664,6 @@ arch dungeon_magic
 x 2
 y 24
 end
-arch creator
-other_arch flagstone
-x 2
-y 24
-connected 76
-end
 arch goldfloor
 name drop 30,000 rubies for a forge
 slaying ruby
@@ -1032,6 +1026,15 @@ x 4
 y 4
 unique 1
 end
+arch button_lever
+name BBQ Reset Access
+msg
+Pull to let unwanted guests out.
+endmsg
+x 4
+y 4
+connected 7200
+end
 arch dungeon_magic
 x 4
 y 5
@@ -1050,6 +1053,7 @@ x 4
 y 5
 connected 999
 arch event_apply
+name GUILD_TEMPLATE
 title Python
 slaying /python/guilds/guild_dues.py
 end
@@ -1087,6 +1091,7 @@ friendly 1
 sleep 0
 stand_still 1
 arch event_say
+name GUILD_TEMPLATE
 title Python
 slaying /python/guilds/guild_dues.py
 end
@@ -1226,10 +1231,10 @@ y 21
 unique 1
 end
 arch check_floor
-slaying Tool_Token
+slaying GUILD_TEMPLATE_Tool_Token
 x 4
 y 21
-connected 73
+connected 73000
 end
 arch grass
 x 4
@@ -1640,16 +1645,10 @@ end
 arch woodfloor
 x 6
 y 4
-unique 1
-end
-arch check_floor
-slaying GuildMaster
-x 6
-y 4
-connected 79
-move_block all
+unique 0
 end
 arch grate_closed_2
+name Guild Master Area Gate
 x 6
 y 4
 connected 79
@@ -1838,7 +1837,7 @@ x 6
 y 21
 type 17
 invisible 1
-connected 73
+connected 73000
 end
 arch grass
 x 6
@@ -1929,11 +1928,17 @@ end
 arch woodfloor
 x 7
 y 3
-unique 1
+unique 0
 end
 arch statue2
+name Guard Statue
 x 7
 y 3
+arch event_say
+name GUILD_TEMPLATE GuildMaster
+title Python
+slaying /python/guilds/clearance.py
+end
 end
 arch dungeon_magic
 x 7
@@ -1943,12 +1948,6 @@ arch woodfloor
 x 7
 y 4
 unique 1
-end
-arch check_floor
-slaying GuildMaster
-x 7
-y 4
-connected 79
 end
 arch dungeon_magic
 x 7
@@ -1960,6 +1959,7 @@ y 5
 unique 1
 end
 arch statue2
+name Guard Statue
 x 7
 y 5
 end
@@ -2470,12 +2470,6 @@ end
 arch dungeon_magic
 x 8
 y 24
-end
-arch creator
-other_arch flagstone
-x 8
-y 24
-connected 76
 end
 arch goldfloor
 name drop 30,000 rubies for a workbench
@@ -3340,6 +3334,7 @@ end
 arch grass
 x 11
 y 21
+unique 1
 end
 arch grass
 x 11
@@ -3523,7 +3518,7 @@ arch creator
 other_arch woodfloor
 x 12
 y 10
-connected 60
+connected 9999
 end
 arch dungeon_magic
 x 12
@@ -3538,6 +3533,21 @@ y 10
 connected 9999
 unique 1
 end
+arch trap_blades
+msg
+endmsg
+Cha 200000
+hp 1000
+dam 0
+x 12
+y 11
+attacktype 0
+arch event_trigger
+name GUILD_TEMPLATE Initiate A
+title Python
+slaying /python/guilds/arrest.py
+end
+end
 arch dungeon_magic
 x 12
 y 11
@@ -3555,6 +3565,19 @@ arch woodfloor
 x 12
 y 12
 unique 1
+end
+arch rune_heal
+hp 100000
+x 12
+y 12
+invisible 0
+arch spell_heal
+end
+arch event_trigger
+name GUILD_TEMPLATE Initiate A
+title Python
+slaying /python/guilds/arrest.py
+end
 end
 arch dungeon_magic
 x 12
@@ -3578,8 +3601,14 @@ arch book_clasp
 name Owners Guide
 msg
 Welcome to your new Guild House!
-A few things to note, bugs should be reported to jehloq@yahoo.com.
-In the upper left corner, there are two levers, the left one pays out fees and dues, fees are dropped onto the floor and dues go straight into your inventory.  The one on the right sets what happens if a non member tries to enter.  In the left position, they are held in a prison and must wait for the guild master, get a DM to help, or step into chaos long enough to word of recall out.  In the right position, it simply throws them out of the entry portal.  The work rooms are not player unique maps, so multiple people can enter the same work room.  The maps also do not reset, there is a small fee for using the maps, that the guild masters collect, use the funds from it to replace broken equipment.  To control who has access to the rooms, in the basement there are tokens, one of each kind is free, further ones must be purchased at ten gold apeice.  Once in a while the mechanish malfunctions and eats your money, just like a real vending machine, if this happns, sorry, just put more in and it should work.  You may buy four aditional tokens per map reset, if you buy a fifth, it will refund your money and tell you it is sold out, putting more money in is simply eaten by the machine.  Questions or comments, please send them to jehloq@yahoo.com
+A few things to note, bugs should be reported to alestan@meflin.com.
+In the upper left corner, there are two levers, the left one pays out fees and dues, fees are dropped onto the floor and dues go straight into your inventory.  The one on the right sets what happens if a non member tries to enter.  In the left position, they are held in a prison and must wait for the guild master, get a DM to help, or step into chaos long enough to word of recall out.  In the right position, it simply throws them out of the entry portal.  The work rooms are not player unique maps, so multiple people can enter the same work room.  The maps also do not reset, there is a small fee for using the maps, that the guild masters collect, use the funds from it to replace broken equipment.  To control who has access to the rooms, in the basement there are tokens, one of each kind is free, further ones must be purchased at ten gold apeice.  Once in a while the mechanish malfunctions and eats your money, just like a real vending machine, if this happns, sorry, just put more in and it should work.  You may buy four aditional tokens per map reset, if you buy a fifth, it will refund your money and tell you it is sold out, putting more money in is simply eaten by the machine.  Questions or comments, please send them to alestan@meflin.com
+
+New in this update:  Security system for the guild.  It's not perfect yet, but it catches most people trying to sneak into the guild.  Guild Storage room, the old storage hall is set up, thanks to Chad, to be a sorting/staging room.  It is not secure, so it is suggested that valueable items are not left unattended in it.  Also, if the gates are up in front of the stairs and you jump down one of the holes, a guildmaster will have to come rescue you because there is no way out.  New guild storage area is added under the guild.  The entrance is through the basement to the north.  This one splits up whos allowed to enter by guild rank.  Play around with it, most of the bugs should have been fixed already.
+
+Known bugs:  Some areas may be accessible by dimension door that should not be accessable.  Some of the floor in the storage rooms beneath the guild hall may not be buildable.  Those are the major ones.
+
+P.S.  This latest version now includes a security system.  Anyone caught on the mainfloor who does not belong is jailed for a random length of time between 15 minutes and four hours, or life.  Anyone caught entering the GM only area in the guild_hq, will be given one of 9 random curses.  At present, they must see a DM to have it removed.
 
 Alestan
 endmsg
@@ -3662,6 +3691,7 @@ end
 arch grass
 x 12
 y 21
+unique 1
 end
 arch dungeon_magic
 x 12
@@ -3954,6 +3984,21 @@ x 13
 y 19
 unique 1
 end
+arch trap_blades
+msg
+endmsg
+Cha 200000
+hp 1000
+dam 0
+x 13
+y 20
+attacktype 0
+arch event_trigger
+name GUILD_TEMPLATE Initiate A
+title Python
+slaying /python/guilds/arrest.py
+end
+end
 arch dungeon_magic
 x 13
 y 20
@@ -3966,7 +4011,7 @@ end
 arch woodfloor
 x 13
 y 20
-unique 1
+unique 0
 end
 arch mdoor_closed_1
 x 13
@@ -3989,6 +4034,7 @@ end
 arch footpath_2_1_1
 x 13
 y 21
+unique 1
 end
 arch dungeon_magic
 x 13
@@ -3997,6 +4043,7 @@ end
 arch footpath_2_2_1
 x 13
 y 22
+unique 1
 end
 arch dungeon_magic
 x 13
@@ -4242,10 +4289,25 @@ x 14
 y 19
 unique 1
 end
+arch lightningwall_5
+sp 7
+x 14
+y 20
+speed 0.1
+invisible 1
+arch spell_strength
+duration 1
+arch event_apply
+name GUILD_TEMPATE Initiate
+title Python
+slaying /python/guilds/arrest.py
+end
+end
+end
 arch woodfloor
 x 14
 y 20
-unique 1
+unique 0
 end
 arch dwall_1_4
 x 14
@@ -4265,8 +4327,9 @@ arch creator
 other_arch grass
 x 14
 y 21
-connected 81
+connected 122
 arch grass
+unique 1
 end
 end
 arch goldfloor
@@ -4285,6 +4348,7 @@ end
 arch footpath_2_1_2
 x 14
 y 22
+unique 1
 end
 arch dungeon_magic
 x 14
@@ -4331,6 +4395,15 @@ x 14
 y 26
 end
 arch grass
+x 14
+y 26
+end
+arch sign
+name Posted:  No Tresspassing
+msg
+Violators will be jailed, if they live that long.
+In all seriousness, permenant character damage can result from trying to break into the guild.
+endmsg
 x 14
 y 26
 end
@@ -4569,7 +4642,7 @@ move_block swim boat
 unique 1
 end
 arch check_floor
-slaying Kennel_Token
+slaying GUILD_TEMPLATE_Kennel_Token
 x 15
 y 21
 connected 998
@@ -4581,15 +4654,11 @@ end
 arch footpath_2_2_3
 x 15
 y 22
+unique 1
 end
 arch dungeon_magic
 x 15
 y 23
-end
-arch pedestal_trigger
-x 15
-y 23
-connected 454
 end
 arch magic_mouth
 msg
@@ -4598,19 +4667,15 @@ endmsg
 x 15
 y 23
 end
+arch button_small
+x 15
+y 23
+connected 99919
+end
 arch footpath_2_1_1
 x 15
 y 23
-end
-arch teleporter
-name leave_guild
-hp 15
-sp 26
-x 15
-y 23
-speed 0.0
-invisible 1
-connected 454
+unique 0
 end
 arch dungeon_magic
 x 15
@@ -4620,11 +4685,10 @@ arch footpath_2_1_1
 x 15
 y 24
 end
-arch dun0
-name Guardian
-face guildmaste.111
+arch grate_closed_1
 x 15
 y 24
+connected 454
 end
 arch dungeon_magic
 x 15
@@ -4689,9 +4753,9 @@ x 15
 y 29
 end
 arch exit
-slaying /Edit/This/Exit/Path
-hp 13
-sp 20
+slaying ../../lone_town/town
+hp 12
+sp 17
 x 15
 y 29
 invisible 1
@@ -4999,11 +5063,21 @@ arch river_ne-w
 x 16
 y 25
 end
+arch footpath_2_1_1
+x 16
+y 26
+end
 arch dungeon_magic
 x 16
 y 26
 end
 arch grass
+x 16
+y 26
+end
+arch dun0
+name Guardian
+face guildmaste.111
 x 16
 y 26
 end
@@ -5383,10 +5457,10 @@ y 4
 unique 1
 end
 arch check_floor
-slaying Gard_Token
+slaying GUILD_TEMPLATE_Gard_Token
 x 18
 y 4
-connected 72
+connected 72000
 end
 arch dungeon_magic
 x 18
@@ -5715,6 +5789,21 @@ y 21
 move_block swim boat
 unique 1
 end
+arch trap_blades
+msg
+endmsg
+Cha 200000
+hp 1000
+dam 0
+x 18
+y 21
+attacktype 0
+arch event_trigger
+name GUILD_TEMPLATE Initiate A
+title Python
+slaying /python/guilds/arrest.py
+end
+end
 arch dungeon_magic
 x 18
 y 22
@@ -5835,10 +5924,26 @@ arch dwall_1_2
 x 19
 y 3
 end
+arch trap_blades
+msg
+endmsg
+Cha 200000
+hp 1000
+dam 0
+x 19
+y 4
+level 100
+attacktype 0
+arch event_trigger
+name GUILD_TEMPLATE Initiate A
+title Python
+slaying /python/guilds/arrest.py
+end
+end
 arch woodfloor
 x 19
 y 4
-unique 1
+unique 0
 end
 arch igate_closed_2
 x 19
@@ -6163,7 +6268,7 @@ end
 arch pedestal_trigger
 x 20
 y 4
-connected 72
+connected 72000
 end
 arch dungeon_magic
 x 20
@@ -6425,6 +6530,10 @@ arch swall_2_1_2
 x 20
 y 29
 end
+arch button_small
+x 21
+connected 9991
+end
 arch dungeon_magic
 x 21
 end
@@ -6621,6 +6730,7 @@ end
 arch evergreen
 x 21
 y 22
+move_block all
 end
 arch dungeon_magic
 x 21
@@ -6629,6 +6739,18 @@ end
 arch grass
 x 21
 y 23
+end
+arch button_lever
+name BBQ Reset.
+slaying guild_bbq
+msg
+Careful, make sure no one you care about is in there.
+endmsg
+hp 0
+sp 1
+x 21
+y 23
+type 66
 end
 arch dungeon_magic
 x 21
@@ -6903,42 +7025,44 @@ end
 arch grass
 x 22
 y 22
-move_block swim boat
-unique 1
 end
 arch dungeon_magic
 x 22
 y 22
-end
-arch creator
-other_arch grass
-x 22
-y 22
-connected 779
-arch grass
-end
-end
-arch goldfloor
-name drop 30,000 rubies for stove
-slaying ruby
-food 30000
-x 22
-y 22
-connected 110
-unique 1
-end
-arch grass
-x 22
-y 23
-end
-arch dungeon_magic
-x 22
-y 23
 end
 arch ytree_2
 x 22
-y 23
+y 22
 move_block all
+end
+arch trap_blades
+msg
+endmsg
+Cha 200000
+hp 1000
+dam 0
+x 22
+y 23
+level 100
+attacktype 0
+arch event_trigger
+name GUILD_TEMPLATE Initiate
+title Python
+slaying /python/guilds/arrest.py
+end
+end
+arch dungeon_magic
+x 22
+y 23
+end
+arch grass
+x 22
+y 23
+end
+arch igate_closed_2
+x 22
+y 23
+connected 7200
 end
 arch dungeon_magic
 x 22
@@ -7215,7 +7339,12 @@ end
 arch flagstone
 x 23
 y 24
-unique 1
+unique 0
+end
+arch pedestal_trigger
+x 23
+y 24
+connected 112
 end
 arch ggate_closed
 x 23
@@ -7742,6 +7871,33 @@ arch grass
 x 25
 y 22
 end
+arch grass
+x 25
+y 22
+move_block swim boat
+unique 1
+end
+arch dungeon_magic
+x 25
+y 22
+end
+arch creator
+other_arch grass
+x 25
+y 22
+connected 110
+arch grass
+end
+end
+arch goldfloor
+name drop 30,000 rubies for stove
+slaying ruby
+food 30000
+x 25
+y 22
+connected 110
+unique 1
+end
 arch dungeon_magic
 x 25
 y 23
@@ -7749,7 +7905,6 @@ end
 arch grass
 x 25
 y 23
-unique 1
 end
 arch trigger_marker
 slaying guild_bbq111
@@ -7759,7 +7914,7 @@ endmsg
 food 504
 x 25
 y 23
-connected 111
+connected 11100
 end
 arch dungeon_magic
 x 25
@@ -9049,15 +9204,6 @@ y 2
 speed 0.0
 connected 130
 end
-arch altar_trigger
-name Drop 100 platinum to enter
-slaying platinacoin
-food 100
-x 30
-y 2
-last_sp 1
-connected 131
-end
 arch teleporter
 hp 9
 sp 23
@@ -9065,15 +9211,6 @@ x 30
 y 3
 speed 0.0
 connected 120
-end
-arch altar_trigger
-name Drop 100 platinum to enter
-slaying platinacoin
-food 100
-x 30
-y 3
-last_sp 1
-connected 121
 end
 arch teleporter
 hp 25
@@ -9090,7 +9227,7 @@ food 100
 x 30
 y 4
 last_sp 1
-connected 111
+connected 11100
 end
 arch grass
 x 30
@@ -9359,14 +9496,6 @@ arch grass
 x 31
 y 4
 end
-arch teleporter
-hp 4
-sp 21
-x 31
-y 4
-speed 0.0
-connected 60
-end
 arch pedestal
 x 31
 y 4
@@ -9376,14 +9505,6 @@ end
 arch grass
 x 31
 y 5
-end
-arch teleporter
-hp 18
-sp 4
-x 31
-y 5
-speed 0.0
-connected 81
 end
 arch pedestal_trigger
 x 31
@@ -9449,6 +9570,8 @@ arch lightningwall_5
 x 31
 y 9
 speed 100
+arch spell_sm_lightning
+end
 end
 arch woodfloor2
 x 31
@@ -9615,25 +9738,7 @@ other_arch jadecoin
 hp -1
 x 32
 y 1
-connected 111
-lifesave 1
-activate_on_release 0
-end
-arch creator
-other_arch jadecoin
-hp -1
-x 32
-y 1
-connected 13100
-lifesave 1
-activate_on_release 0
-end
-arch creator
-other_arch jadecoin
-hp -1
-x 32
-y 1
-connected 12100
+connected 11100
 lifesave 1
 activate_on_release 0
 end
@@ -9644,6 +9749,32 @@ x 32
 y 1
 speed 0.0
 connected 999
+end
+arch grass
+x 32
+y 3
+end
+arch button_lever
+name The Big Lever
+msg
+Pull to establish this guild.
+endmsg
+x 32
+y 3
+connected 77
+end
+arch grass
+x 32
+y 4
+end
+arch button_lever
+name bbq
+msg
+Pull to establish this guild.
+endmsg
+x 32
+y 4
+connected 110
 end
 arch blocked
 x 32
@@ -9664,6 +9795,10 @@ end
 arch blocked
 x 32
 y 12
+end
+arch blocked
+x 32
+y 13
 end
 arch blocked
 x 32
@@ -9844,7 +9979,7 @@ y 28
 connected 334
 activate_on_release 0
 arch event_apply
-name TEST
+name PrupleButterfly
 title Python
 slaying /python/guilds/guildbuy.py
 end
@@ -9904,6 +10039,8 @@ arch lightningwall_5
 x 33
 y 9
 speed 100
+arch spell_sm_lightning
+end
 end
 arch grass
 x 33
@@ -10102,6 +10239,8 @@ end
 arch lightningwall_5
 x 34
 speed -0.2
+arch spell_sm_lightning
+end
 end
 arch woodfloor2
 x 34
@@ -10165,10 +10304,6 @@ arch blocked
 x 34
 y 14
 end
-arch magma
-x 34
-y 15
-end
 arch blocked
 x 34
 y 15
@@ -10182,6 +10317,7 @@ x 34
 y 16
 end
 arch exit
+slaying ./mainfloor
 msg
 Say Sorry!
 endmsg
@@ -10189,6 +10325,7 @@ hp 32
 sp 16
 x 34
 y 16
+move_on walk
 end
 arch blocked
 x 34
@@ -10242,56 +10379,294 @@ arch dun_2_2_4
 x 34
 y 29
 end
-arch blocked
+arch lightningwall_5
+x 35
+speed 0.0
+level 100
+connected 99919
+move_block 0
+arch spell_large_lightning
+end
+end
+arch director_5
 x 35
 end
-arch blocked
+arch detector
+slaying lightning
 x 35
 y 1
+speed 1.0
+connected 454
 end
-arch blocked
+arch lightningwall_5
+sp 1
+x 35
+y 2
+speed 0.0
+level 100
+connected 99919
+move_block 0
+arch spell_large_lightning
+end
+end
+arch director_1
 x 35
 y 2
 end
-arch blocked
+arch lightningwall_5
+sp 1
+x 35
+y 3
+speed 0.0
+level 100
+connected 99919
+move_block 0
+arch spell_large_lightning
+end
+end
+arch director_1
 x 35
 y 3
 end
-arch blocked
+arch lightningwall_5
+sp 1
+x 35
+y 4
+speed 0.0
+level 100
+connected 99919
+move_block 0
+arch spell_large_lightning
+end
+end
+arch director_1
 x 35
 y 4
 end
-arch blocked
+arch lightningwall_5
+sp 1
+x 35
+y 5
+speed 0.0
+level 100
+connected 99919
+move_block 0
+arch spell_large_lightning
+end
+end
+arch director_1
 x 35
 y 5
 end
-arch blocked
+arch lightningwall_5
+sp 1
+x 35
+y 6
+speed 0.0
+level 100
+connected 99919
+move_block 0
+arch spell_large_lightning
+end
+end
+arch director_1
 x 35
 y 6
 end
-arch blocked
+arch lightningwall_5
+sp 1
+x 35
+y 7
+speed 0.0
+level 100
+connected 99919
+move_block 0
+arch spell_large_lightning
+end
+end
+arch director_1
 x 35
 y 7
 end
 arch blocked
 x 35
+y 7
+end
+arch lightningwall_5
+sp 1
+x 35
+y 8
+speed 0.0
+level 100
+connected 99919
+move_block 0
+arch spell_large_lightning
+end
+end
+arch director_1
+x 35
 y 8
 end
-arch magma
+arch lightningwall_5
+sp 1
+x 35
+y 9
+speed 0.0
+level 100
+connected 99919
+move_block 0
+arch spell_large_lightning
+end
+end
+arch director_1
+x 35
+y 9
+end
+arch lightningwall_5
+sp 1
+x 35
+y 10
+speed 0.0
+level 100
+connected 99919
+move_block 0
+arch spell_large_lightning
+end
+end
+arch director_1
+x 35
+y 10
+end
+arch lightningwall_5
+x 35
+y 12
+speed 0.0
+level 100
+connected 73000
+move_block 0
+arch spell_large_lightning
+end
+end
+arch director_5
+x 35
+y 12
+end
+arch detector
+slaying lightning
+x 35
+y 13
+speed 1.0
+connected 73
+end
+arch lightningwall_5
+sp 1
+x 35
+y 14
+speed 0.0
+level 100
+connected 73000
+move_block 0
+arch spell_large_lightning
+end
+end
+arch director_1
+x 35
+y 14
+end
+arch lightningwall_5
+sp 1
+x 35
+y 15
+speed 0.0
+level 100
+connected 73000
+move_block 0
+arch spell_large_lightning
+end
+end
+arch director_1
 x 35
 y 15
 end
-arch blocked
+arch lightningwall_5
+sp 1
 x 35
-y 15
+y 16
+speed 0.0
+level 100
+connected 73000
+move_block 0
+arch spell_large_lightning
 end
-arch blocked
+end
+arch director_1
 x 35
 y 16
 end
-arch blocked
+arch lightningwall_5
+sp 1
 x 35
 y 17
+speed 0.0
+level 100
+connected 73000
+move_block 0
+arch spell_large_lightning
+end
+end
+arch director_1
+x 35
+y 17
+end
+arch lightningwall_5
+sp 1
+x 35
+y 18
+speed 0.0
+level 100
+connected 73000
+move_block 0
+arch spell_large_lightning
+end
+end
+arch director_1
+x 35
+y 18
+end
+arch lightningwall_5
+sp 1
+x 35
+y 19
+speed 0.0
+level 100
+connected 73000
+move_block 0
+arch spell_large_lightning
+end
+end
+arch director_1
+x 35
+y 19
+end
+arch lightningwall_5
+sp 1
+x 35
+y 20
+speed 0.0
+level 100
+connected 73000
+move_block 0
+arch spell_large_lightning
+end
+end
+arch director_1
+x 35
+y 20
+end
+arch button_small
+x 35
+y 24
+connected 99919
 end
 arch blocked
 x 35
@@ -10316,4 +10691,927 @@ end
 arch blocked
 x 35
 y 29
+end
+arch woodfloor2
+x 36
+end
+arch woodfloor2
+x 36
+y 1
+end
+arch detector
+slaying lightning
+x 36
+y 1
+speed 1.0
+connected 1
+end
+arch blocked
+x 36
+y 2
+end
+arch pit_open
+hp 9
+sp 3
+x 36
+y 3
+end
+arch pit_open
+hp 11
+sp 9
+x 36
+y 4
+end
+arch pit_open
+hp 16
+sp 14
+x 36
+y 5
+end
+arch pit_open
+hp 24
+sp 19
+x 36
+y 6
+end
+arch pit_open
+hp 3
+sp 18
+x 36
+y 7
+end
+arch blocked
+x 36
+y 8
+end
+arch creator
+x 36
+y 10
+connected 1
+lifesave 1
+arch rune_restoration
+msg
+
+endmsg
+animation trap_blades
+Cha 200000
+hp 1000
+dam 0
+level 100
+attacktype 0
+arch event_trigger
+name GUILD_TEMPLATE Initiate
+title Python
+slaying /python/guilds/arrest.py
+end
+end
+end
+arch pit_open
+hp 40
+sp 14
+x 36
+y 10
+end
+arch dungeon_magic
+x 36
+y 12
+end
+arch grass
+x 36
+y 12
+end
+arch exit
+slaying ./mainfloor
+msg
+Say Sorry!
+endmsg
+hp 32
+sp 16
+x 36
+y 12
+move_on all
+end
+arch dungeon_magic
+x 36
+y 13
+end
+arch grass
+x 36
+y 13
+end
+arch exit
+slaying ./mainfloor
+msg
+Say Sorry!
+endmsg
+hp 32
+sp 16
+x 36
+y 13
+move_on all
+end
+arch dungeon_magic
+x 36
+y 14
+end
+arch grass
+x 36
+y 14
+end
+arch exit
+slaying ./mainfloor
+msg
+Say Sorry!
+endmsg
+hp 32
+sp 16
+x 36
+y 14
+move_on all
+end
+arch dungeon_magic
+x 36
+y 15
+end
+arch grass
+x 36
+y 15
+end
+arch exit
+slaying ./mainfloor
+msg
+Say Sorry!
+endmsg
+hp 32
+sp 16
+x 36
+y 15
+move_on all
+end
+arch dungeon_magic
+x 36
+y 16
+end
+arch grass
+x 36
+y 16
+end
+arch exit
+slaying ./mainfloor
+msg
+Say Sorry!
+endmsg
+hp 32
+sp 16
+x 36
+y 16
+move_on all
+end
+arch dungeon_magic
+x 36
+y 17
+end
+arch grass
+x 36
+y 17
+end
+arch exit
+slaying ./mainfloor
+msg
+Say Sorry!
+endmsg
+hp 32
+sp 16
+x 36
+y 17
+move_on all
+end
+arch button_small
+x 36
+y 20
+connected 99919
+end
+arch blocked
+x 37
+y 2
+end
+arch pit_open
+hp 14
+sp 5
+x 37
+y 3
+end
+arch pit_open
+hp 16
+sp 9
+x 37
+y 4
+end
+arch pit_open
+hp 24
+sp 14
+x 37
+y 5
+end
+arch pit_open
+hp 15
+sp 22
+x 37
+y 6
+end
+arch pit_open
+hp 9
+sp 5
+x 37
+y 7
+end
+arch blocked
+x 37
+y 8
+end
+arch blocked
+x 37
+y 11
+end
+arch blocked
+x 37
+y 12
+end
+arch blocked
+x 37
+y 13
+end
+arch blocked
+x 37
+y 14
+end
+arch blocked
+x 37
+y 15
+end
+arch blocked
+x 37
+y 16
+end
+arch blocked
+x 37
+y 17
+end
+arch lightningwall_5
+x 37
+y 18
+speed 0.0
+level 100
+connected 9991
+move_block 0
+arch spell_large_lightning
+end
+end
+arch director_5
+x 37
+y 18
+end
+arch detector
+slaying lightning
+x 37
+y 19
+speed 1.0
+connected 79
+end
+arch lightningwall_5
+sp 1
+x 37
+y 20
+speed 0.0
+level 100
+connected 9991
+move_block 0
+arch spell_large_lightning
+end
+end
+arch director_1
+x 37
+y 20
+end
+arch lightningwall_5
+sp 1
+x 37
+y 21
+speed 0.0
+level 100
+connected 9991
+move_block 0
+arch spell_large_lightning
+end
+end
+arch director_1
+x 37
+y 21
+end
+arch lightningwall_5
+sp 1
+x 37
+y 22
+speed 0.0
+level 100
+connected 9991
+move_block 0
+arch spell_large_lightning
+end
+end
+arch director_1
+x 37
+y 22
+end
+arch lightningwall_5
+sp 1
+x 37
+y 23
+speed 0.0
+level 100
+connected 9991
+move_block 0
+arch spell_large_lightning
+end
+end
+arch director_1
+x 37
+y 23
+end
+arch blocked
+x 37
+y 24
+end
+arch lightningwall_5
+sp 1
+x 37
+y 24
+speed 0.0
+level 100
+connected 9991
+move_block 0
+arch spell_large_lightning
+end
+end
+arch director_1
+x 37
+y 24
+end
+arch blocked
+x 37
+y 25
+end
+arch lightningwall_5
+sp 1
+x 37
+y 25
+speed 0.0
+level 100
+connected 9991
+move_block 0
+arch spell_large_lightning
+end
+end
+arch director_1
+x 37
+y 25
+end
+arch blocked
+x 37
+y 26
+end
+arch lightningwall_5
+sp 1
+x 37
+y 26
+speed 0.0
+level 100
+connected 9991
+move_block 0
+arch spell_large_lightning
+end
+end
+arch director_1
+x 37
+y 26
+end
+arch lightningwall_5
+sp 1
+x 37
+y 27
+speed 0.0
+level 100
+connected 9991
+move_block 0
+arch spell_large_lightning
+end
+end
+arch director_1
+x 37
+y 27
+end
+arch lightningwall_5
+sp 1
+x 37
+y 28
+speed 0.0
+level 100
+connected 9991
+move_block 0
+arch spell_large_lightning
+end
+end
+arch director_1
+x 37
+y 28
+end
+arch blocked
+x 38
+y 2
+end
+arch pit_open
+hp 19
+sp 5
+x 38
+y 3
+end
+arch pit_open
+hp 24
+sp 8
+x 38
+y 4
+end
+arch pit_open
+hp 6
+sp 19
+x 38
+y 5
+end
+arch pit_open
+hp 13
+sp 17
+x 38
+y 6
+end
+arch pit_open
+hp 12
+sp 7
+x 38
+y 7
+end
+arch blocked
+x 38
+y 8
+end
+arch blocked
+x 38
+y 11
+end
+arch blocked
+x 38
+y 12
+end
+arch blocked
+x 38
+y 13
+end
+arch blocked
+x 38
+y 14
+end
+arch blocked
+x 38
+y 15
+end
+arch blocked
+x 38
+y 16
+end
+arch blocked
+x 38
+y 17
+end
+arch lightningwall_5
+x 38
+y 20
+speed 0.0
+level 100
+connected 72000
+move_block 0
+arch spell_large_lightning
+end
+end
+arch director_5
+x 38
+y 20
+end
+arch detector
+slaying lightning
+x 38
+y 21
+speed 1.0
+connected 72
+end
+arch lightningwall_5
+sp 1
+x 38
+y 22
+speed 0.0
+level 100
+connected 72000
+move_block 0
+arch spell_large_lightning
+end
+end
+arch director_1
+x 38
+y 22
+end
+arch lightningwall_5
+sp 1
+x 38
+y 23
+speed 0.0
+level 100
+connected 72000
+move_block 0
+arch spell_large_lightning
+end
+end
+arch director_1
+x 38
+y 23
+end
+arch lightningwall_5
+sp 1
+x 38
+y 24
+speed 0.0
+level 100
+connected 72000
+move_block 0
+arch spell_large_lightning
+end
+end
+arch director_1
+x 38
+y 24
+end
+arch lightningwall_5
+sp 1
+x 38
+y 25
+speed 0.0
+level 100
+connected 72000
+move_block 0
+arch spell_large_lightning
+end
+end
+arch director_1
+x 38
+y 25
+end
+arch lightningwall_5
+sp 1
+x 38
+y 26
+speed 0.0
+level 100
+connected 72000
+move_block 0
+arch spell_large_lightning
+end
+end
+arch director_1
+x 38
+y 26
+end
+arch lightningwall_5
+sp 1
+x 38
+y 27
+speed 0.0
+level 100
+connected 72000
+move_block 0
+arch spell_large_lightning
+end
+end
+arch director_1
+x 38
+y 27
+end
+arch lightningwall_5
+sp 1
+x 38
+y 28
+speed 0.0
+level 100
+connected 72000
+move_block 0
+arch spell_large_lightning
+end
+end
+arch director_1
+x 38
+y 28
+end
+arch lightningwall_5
+sp 1
+x 38
+y 29
+speed 0.0
+level 100
+connected 72000
+move_block 0
+arch spell_large_lightning
+end
+end
+arch director_1
+x 38
+y 29
+end
+arch blocked
+x 39
+end
+arch blocked
+x 39
+y 1
+end
+arch blocked
+x 39
+y 2
+end
+arch pit_open
+hp 24
+sp 3
+x 39
+y 3
+end
+arch pit_open
+hp 6
+sp 14
+x 39
+y 4
+end
+arch pit_open
+hp 11
+sp 19
+x 39
+y 5
+end
+arch pit_open
+hp 16
+sp 17
+x 39
+y 6
+end
+arch pit_open
+hp 15
+sp 22
+x 39
+y 7
+end
+arch blocked
+x 39
+y 8
+end
+arch trap_blades
+msg
+endmsg
+Cha 200000
+hp 1000
+dam 0
+x 39
+y 9
+level 100
+attacktype 0
+arch event_trigger
+name GUILD_TEMPLATE Initiate A
+title Python
+slaying /python/guilds/arrest.py
+end
+end
+arch blocked
+x 39
+y 11
+end
+arch blocked
+x 39
+y 12
+end
+arch grass
+x 39
+y 13
+end
+arch teleporter
+name ancient pupland portal
+hp 4
+sp 3
+x 39
+y 13
+speed 1
+end
+arch grass
+x 39
+y 14
+end
+arch teleporter
+name ancient pupland portal
+hp 4
+sp 4
+x 39
+y 14
+speed 1
+end
+arch grass
+x 39
+y 15
+end
+arch teleporter
+name ancient pupland portal
+hp 4
+sp 5
+x 39
+y 15
+speed 1
+end
+arch blocked
+x 39
+y 16
+end
+arch blocked
+x 39
+y 17
+end
+arch blocked
+x 39
+y 18
+end
+arch blocked
+x 39
+y 19
+end
+arch blocked
+x 39
+y 20
+end
+arch blocked
+x 39
+y 21
+end
+arch blocked
+x 39
+y 22
+end
+arch blocked
+x 39
+y 23
+end
+arch blocked
+x 39
+y 24
+end
+arch blocked
+x 40
+y 2
+end
+arch pit_open
+hp 6
+sp 9
+x 40
+y 3
+end
+arch pit_open
+hp 11
+sp 14
+x 40
+y 4
+end
+arch pit_open
+hp 16
+sp 19
+x 40
+y 5
+end
+arch pit_open
+hp 8
+sp 17
+x 40
+y 6
+end
+arch pit_open
+hp 15
+sp 22
+x 40
+y 7
+end
+arch blocked
+x 40
+y 8
+end
+arch blocked
+x 40
+y 11
+end
+arch blocked
+x 40
+y 12
+end
+arch grass
+x 40
+y 13
+end
+arch teleporter
+name ancient pupland portal
+hp 5
+sp 5
+x 40
+y 13
+speed 1
+end
+arch grass
+x 40
+y 14
+end
+arch teleporter
+name ancient pupland portal
+hp 5
+sp 4
+x 40
+y 14
+speed 1
+end
+arch grass
+x 40
+y 15
+end
+arch teleporter
+name ancient pupland portal
+hp 5
+sp 3
+x 40
+y 15
+speed 1
+end
+arch blocked
+x 40
+y 16
+end
+arch blocked
+x 40
+y 17
+end
+arch teleporter
+slaying /scorn/misc/jail
+hp 14
+sp 1
+x 40
+y 18
+move_block all
+end
+arch teleporter
+slaying /scorn/misc/jail
+hp 14
+sp 3
+x 40
+y 19
+move_block all
+end
+arch teleporter
+slaying /scorn/misc/jail
+hp 14
+sp 5
+x 40
+y 20
+move_block all
+end
+arch teleporter
+slaying /scorn/misc/jail
+hp 14
+sp 9
+x 40
+y 21
+move_block all
+end
+arch teleporter
+slaying /scorn/misc/jail
+hp 14
+sp 11
+x 40
+y 22
+move_block all
+end
+arch teleporter
+slaying /scorn/misc/jail
+hp 14
+sp 13
+x 40
+y 23
+move_block all
+end
+arch blocked
+x 40
+y 24
 end

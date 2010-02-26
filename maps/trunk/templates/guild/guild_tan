@@ -1,18 +1,11 @@
 arch map
-name Guild Thaumaturgy Lab
+name Guild Tannery
 reset_timeout 300
-difficulty 1
-region Template
 width 14
-height 7
-enter_x 6
-enter_y 3
+height 11
 msg
-Creator: Rick Tanner
-Editor: CrossfireEditor
-Date:    3/19/2007
-Map finised by:  Alestan jehloq@yahoo.com
-Date:     8/27/2007
+Creator: Default
+Date:    2008-06-24
 Modified: 2009-12-12 perkins
 endmsg
 end
@@ -55,8 +48,32 @@ end
 arch woodfloor
 y 6
 end
-arch dwall_2_2_1
+arch dwall_2_1_1
 y 6
+end
+arch woodfloor
+y 7
+end
+arch dwall_2_1_1
+y 7
+end
+arch woodfloor
+y 8
+end
+arch dwall_2_1_1
+y 8
+end
+arch woodfloor
+y 9
+end
+arch dwall_2_1_1
+y 9
+end
+arch woodfloor
+y 10
+end
+arch dwall_2_2_1
+y 10
 end
 arch woodfloor
 x 1
@@ -78,22 +95,13 @@ title Python
 slaying /python/guilds/arrest.py
 end
 end
-arch magic_ear
-msg
-@match xyzzy
-The Collosal Cave Awaits!
-endmsg
-x 1
-y 1
-connected 1
-end
 arch woodfloor
 x 1
 y 1
 unique 1
 end
 arch duplicator
-other_arch thaumaturg_desk
+other_arch tanbench
 x 1
 y 1
 connected 8002
@@ -106,14 +114,16 @@ y 1
 connected 8002
 lifesave 1
 activate_on_push 0
-arch thaumaturg_desk
+arch tanbench
+weight 1000000
 magic 3
 container 1000000
 end
 end
-arch thaumaturg_desk
+arch tanbench
 x 1
 y 1
+weight 1000000
 magic 3
 container 1000000
 end
@@ -127,18 +137,38 @@ x 1
 y 3
 unique 1
 end
-arch light3
-x 1
-y 3
-end
 arch woodfloor
 x 1
 y 4
 unique 1
 end
+arch woodfloor
+x 1
+y 5
+unique 1
+end
+arch light3
+x 1
+y 5
+end
+arch woodfloor
+x 1
+y 6
+unique 1
+end
+arch woodfloor
+x 1
+y 7
+unique 1
+end
+arch woodfloor
+x 1
+y 8
+unique 1
+end
 arch table_4
 x 1
-y 4
+y 8
 resist_physical 100
 resist_magic 100
 resist_fire 100
@@ -149,11 +179,11 @@ no_pick 1
 end
 arch woodfloor
 x 1
-y 5
+y 9
 unique 1
 end
 arch altar_trigger
-name New Thaumaturge Desk 30000 Rubies
+name New Tanning Bench 30000 Rubies
 slaying ruby
 msg
 Removing your old cauldron. Please wait.
@@ -161,16 +191,16 @@ endmsg
 exp 60
 food 30000
 x 1
-y 5
+y 9
 connected 8002
 end
 arch woodfloor
 x 1
-y 6
+y 10
 end
 arch dwall_2_1_2
 x 1
-y 6
+y 10
 end
 arch woodfloor
 x 2
@@ -192,17 +222,6 @@ arch woodfloor
 x 2
 y 3
 unique 1
-end
-arch chair_2.4
-x 2
-y 3
-resist_physical 100
-resist_magic 100
-resist_fire 100
-resist_electricity 100
-resist_cold 100
-material 0
-no_pick 1
 end
 arch woodfloor
 x 2
@@ -214,13 +233,44 @@ x 2
 y 5
 unique 1
 end
+arch chair_2.4
+x 2
+y 5
+resist_physical 100
+resist_magic 100
+resist_fire 100
+resist_electricity 100
+resist_cold 100
+material 0
+no_pick 1
+end
 arch woodfloor
 x 2
 y 6
+unique 1
+end
+arch woodfloor
+x 2
+y 7
+unique 1
+end
+arch woodfloor
+x 2
+y 8
+unique 1
+end
+arch woodfloor
+x 2
+y 9
+unique 1
+end
+arch woodfloor
+x 2
+y 10
 end
 arch dwall_2_1_2
 x 2
-y 6
+y 10
 end
 arch woodfloor
 x 3
@@ -254,10 +304,20 @@ x 3
 y 3
 unique 1
 end
+arch woodfloor
+x 3
+y 4
+unique 1
+end
+arch woodfloor
+x 3
+y 5
+unique 1
+end
 arch lightningwall_5
 sp 0
 x 3
-y 3
+y 5
 speed 0.0
 level 111
 invisible 1
@@ -270,12 +330,12 @@ end
 end
 arch woodfloor
 x 3
-y 3
+y 5
 unique 1
 end
 arch lightningwall_5
 x 3
-y 3
+y 5
 speed 0.0
 level 111
 invisible 1
@@ -291,29 +351,39 @@ duration 20
 casting_time 0
 end
 end
-arch woodfloor
-x 3
-y 3
-unique 1
-end
 arch table_burl_3
 x 3
-y 3
+y 5
 no_pick 1
 end
 arch woodfloor
 x 3
-y 4
+y 5
 unique 1
 end
 arch woodfloor
 x 3
-y 5
+y 6
+unique 1
+end
+arch woodfloor
+x 3
+y 7
+unique 1
+end
+arch woodfloor
+x 3
+y 8
+unique 1
+end
+arch woodfloor
+x 3
+y 9
 unique 1
 end
 arch table_3
 x 3
-y 5
+y 9
 resist_physical 100
 resist_magic 100
 resist_fire 100
@@ -324,11 +394,11 @@ no_pick 1
 end
 arch woodfloor
 x 3
-y 6
+y 10
 end
 arch dwall_2_1_2
 x 3
-y 6
+y 10
 end
 arch woodfloor
 x 4
@@ -376,9 +446,29 @@ x 4
 y 5
 unique 1
 end
+arch woodfloor
+x 4
+y 6
+unique 1
+end
+arch woodfloor
+x 4
+y 7
+unique 1
+end
+arch woodfloor
+x 4
+y 8
+unique 1
+end
+arch woodfloor
+x 4
+y 9
+unique 1
+end
 arch barrel
 x 4
-y 5
+y 9
 material 0
 move_type 0
 move_block 0
@@ -386,11 +476,11 @@ can_roll 0
 end
 arch woodfloor
 x 4
-y 6
+y 10
 end
 arch dwall_2_1_2
 x 4
-y 6
+y 10
 end
 arch woodfloor
 x 5
@@ -423,17 +513,37 @@ x 5
 y 5
 unique 1
 end
-arch light3
-x 5
-y 5
-end
 arch woodfloor
 x 5
 y 6
+unique 1
+end
+arch woodfloor
+x 5
+y 7
+unique 1
+end
+arch woodfloor
+x 5
+y 8
+unique 1
+end
+arch woodfloor
+x 5
+y 9
+unique 1
+end
+arch light3
+x 5
+y 9
+end
+arch woodfloor
+x 5
+y 10
 end
 arch dwall_2_1_2
 x 5
-y 6
+y 10
 end
 arch woodfloor
 x 6
@@ -455,53 +565,57 @@ x 6
 y 2
 unique 1
 end
-arch dwall_0
-x 6
-y 2
-end
-arch magic_mouth
-msg
-Be sure to leave no items behind;
-the cleaning staff is very, very thorough.
-endmsg
-x 6
-y 3
-end
 arch woodfloor
 x 6
 y 3
 unique 1
 end
+arch woodfloor
+x 6
+y 4
+unique 1
+end
 arch pedestal
 x 6
-y 3
+y 5
 invisible 1
 connected 22
 end
 arch woodfloor
 x 6
-y 4
-end
-arch dwall_0
-x 6
-y 4
+y 5
+unique 1
 end
 arch woodfloor
 x 6
-y 5
+y 6
+unique 1
+end
+arch woodfloor
+x 6
+y 7
+unique 1
+end
+arch woodfloor
+x 6
+y 8
+end
+arch woodfloor
+x 6
+y 9
 unique 1
 end
 arch brazier
 x 6
-y 5
+y 9
 end
 arch woodfloor
 x 6
-y 6
+y 10
 end
 arch dwall_2_1_2
 x 6
-y 6
+y 10
 end
 arch woodfloor
 x 7
@@ -521,61 +635,93 @@ arch woodfloor
 x 7
 y 2
 end
-arch dwall_1_2
+arch dwall_2_1_1
 x 7
 y 2
 end
-arch dungeon_magic
+arch woodfloor
+x 7
+y 3
+end
+arch dwall_2_1_1
 x 7
 y 3
 end
 arch woodfloor
 x 7
-y 3
+y 4
+end
+arch dwall_1_2
+x 7
+y 4
+end
+arch invis_exit
+slaying secondfloor
+hp 5
+sp 7
+x 7
+y 5
+end
+arch dungeon_magic
+x 7
+y 5
+end
+arch woodfloor
+x 7
+y 5
 unique 1
 end
 arch grate_closed_2
 x 7
-y 3
+y 5
 connected 22
 blocksview 1
 no_magic 1
 damned 1
 end
-arch invis_exit
-slaying secondfloor
-hp 9
-sp 17
-x 7
-y 3
-end
 arch woodfloor
 x 7
-y 4
+y 6
 end
 arch dwall_1_1
 x 7
-y 4
+y 6
 end
 arch woodfloor
 x 7
-y 5
+y 7
 end
 arch dwall_2_1_1
 x 7
-y 5
+y 7
 end
 arch woodfloor
 x 7
-y 6
+y 8
+end
+arch dwall_2_1_1
+x 7
+y 8
 end
 arch woodfloor
 x 7
-y 6
+y 9
+end
+arch dwall_2_1_1
+x 7
+y 9
+end
+arch woodfloor
+x 7
+y 10
+end
+arch woodfloor
+x 7
+y 10
 end
 arch dwall_3_1
 x 7
-y 6
+y 10
 end
 arch woodfloor
 x 8
@@ -611,10 +757,6 @@ arch woodfloor
 x 8
 y 2
 end
-arch dwall_0
-x 8
-y 2
-end
 arch woodfloor
 x 8
 y 3
@@ -623,81 +765,38 @@ arch woodfloor
 x 8
 y 4
 end
-arch dwall_0
-x 8
-y 4
-end
-arch creator
-other_arch thaumaturg_desk
-x 8
-y 5
-connected 1
-lifesave 1
-activate_on_push 0
-arch wand
-name Wand
-other_arch thaumaturg_desk
-hp 100
-speed 0
-connected 22
-lifesave 1
-arch angel
-name Angel of Death
-Con 0
-hp 1500
-maxhp 1
-exp 1
-dam 12000
-speed 5.0
-level 200
-attacktype 1048833
-pick_up 0
-will_apply 0
-move_type all
-see_invisible 0
-reflect_spell 1
-run_away 0
-can_cast_spell 0
-sleep 0
-one_hit 1
-end
-end
-end
-arch woodfloor
-hp 3
-sp 3
-x 8
-y 5
-type 41
-connected 1
-unique 1
-end
-arch teleporter
-name leave_guild
-hp 3
-sp 3
-x 8
-y 5
-speed 0.0
-invisible 1
-connected 1
-end
 arch woodfloor
 x 8
 y 5
+end
+arch woodfloor
+x 8
+y 6
+end
+arch woodfloor
+x 8
+y 7
+end
+arch woodfloor
+x 8
+y 8
+end
+arch woodfloor
+x 8
+y 9
 no_pick 0
 end
 arch woodfloor
 x 8
-y 6
+y 10
 end
 arch woodfloor
 x 8
-y 6
+y 10
 end
 arch dwall_2_1_2
 x 8
-y 6
+y 10
 end
 arch woodfloor
 x 9
@@ -740,20 +839,68 @@ end
 arch woodfloor
 x 9
 y 4
+unique 1
+end
+arch invis_exit
+slaying secondfloor
+hp 11
+sp 17
+x 9
+y 4
 end
 arch woodfloor
+x 9
+y 5
+unique 1
+end
+arch invis_exit
+slaying secondfloor
+hp 11
+sp 17
 x 9
 y 5
 end
 arch woodfloor
 x 9
 y 6
+unique 1
 end
-arch dwall_2_1_2
+arch invis_exit
+slaying secondfloor
+hp 11
+sp 17
 x 9
 y 6
 end
 arch woodfloor
+x 9
+y 7
+unique 1
+end
+arch invis_exit
+slaying secondfloor
+hp 11
+sp 17
+x 9
+y 7
+end
+arch woodfloor
+x 9
+y 8
+end
+arch woodfloor
+x 9
+y 9
+end
+arch woodfloor
+x 9
+y 10
+end
+arch dwall_2_1_2
+x 9
+y 10
+end
+arch woodfloor
 x 10
 unique 1
 end
@@ -790,8 +937,24 @@ end
 arch woodfloor
 x 10
 y 3
+unique 1
+end
+arch invis_exit
+slaying secondfloor
+hp 11
+sp 17
+x 10
+y 3
 end
 arch woodfloor
+x 10
+y 4
+unique 1
+end
+arch invis_exit
+slaying secondfloor
+hp 11
+sp 17
 x 10
 y 4
 end
@@ -802,10 +965,42 @@ end
 arch woodfloor
 x 10
 y 6
+unique 1
+end
+arch invis_exit
+slaying secondfloor
+hp 11
+sp 17
+x 10
+y 6
+end
+arch woodfloor
+x 10
+y 7
+unique 1
+end
+arch invis_exit
+slaying secondfloor
+hp 11
+sp 17
+x 10
+y 7
+end
+arch woodfloor
+x 10
+y 8
+end
+arch woodfloor
+x 10
+y 9
+end
+arch woodfloor
+x 10
+y 10
 end
 arch dwall_2_1_2
 x 10
-y 6
+y 10
 end
 arch woodfloor
 x 11
@@ -844,8 +1039,24 @@ end
 arch woodfloor
 x 11
 y 3
+unique 1
+end
+arch invis_exit
+slaying secondfloor
+hp 11
+sp 17
+x 11
+y 3
 end
 arch woodfloor
+x 11
+y 4
+unique 1
+end
+arch invis_exit
+slaying secondfloor
+hp 11
+sp 17
 x 11
 y 4
 end
@@ -856,10 +1067,42 @@ end
 arch woodfloor
 x 11
 y 6
+unique 1
+end
+arch invis_exit
+slaying secondfloor
+hp 11
+sp 17
+x 11
+y 6
+end
+arch woodfloor
+x 11
+y 7
+unique 1
+end
+arch invis_exit
+slaying secondfloor
+hp 11
+sp 17
+x 11
+y 7
+end
+arch woodfloor
+x 11
+y 8
+end
+arch woodfloor
+x 11
+y 9
+end
+arch woodfloor
+x 11
+y 10
 end
 arch dwall_2_1_2
 x 11
-y 6
+y 10
 end
 arch woodfloor
 x 12
@@ -898,8 +1141,24 @@ end
 arch woodfloor
 x 12
 y 3
+unique 1
+end
+arch invis_exit
+slaying secondfloor
+hp 11
+sp 17
+x 12
+y 3
 end
 arch woodfloor
+x 12
+y 4
+unique 1
+end
+arch invis_exit
+slaying secondfloor
+hp 11
+sp 17
 x 12
 y 4
 end
@@ -910,10 +1169,42 @@ end
 arch woodfloor
 x 12
 y 6
+unique 1
+end
+arch invis_exit
+slaying secondfloor
+hp 11
+sp 17
+x 12
+y 6
+end
+arch woodfloor
+x 12
+y 7
+unique 1
+end
+arch invis_exit
+slaying secondfloor
+hp 11
+sp 17
+x 12
+y 7
+end
+arch woodfloor
+x 12
+y 8
+end
+arch woodfloor
+x 12
+y 9
+end
+arch woodfloor
+x 12
+y 10
 end
 arch dwall_2_1_2
 x 12
-y 6
+y 10
 end
 arch woodfloor
 x 13
@@ -952,8 +1243,24 @@ end
 arch woodfloor
 x 13
 y 3
+unique 1
+end
+arch invis_exit
+slaying secondfloor
+hp 11
+sp 17
+x 13
+y 3
 end
 arch woodfloor
+x 13
+y 4
+unique 1
+end
+arch invis_exit
+slaying secondfloor
+hp 11
+sp 17
 x 13
 y 4
 end
@@ -964,8 +1271,40 @@ end
 arch woodfloor
 x 13
 y 6
+unique 1
+end
+arch invis_exit
+slaying secondfloor
+hp 11
+sp 17
+x 13
+y 6
+end
+arch woodfloor
+x 13
+y 7
+unique 1
+end
+arch invis_exit
+slaying secondfloor
+hp 11
+sp 17
+x 13
+y 7
+end
+arch woodfloor
+x 13
+y 8
+end
+arch woodfloor
+x 13
+y 9
+end
+arch woodfloor
+x 13
+y 10
 end
 arch dwall_2_1_2
 x 13
-y 6
+y 10
 end

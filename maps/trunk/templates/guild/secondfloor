@@ -1,7 +1,8 @@
 arch map
 name secondfloor
+reset_timeout 300
 difficulty 1
-width 20
+width 23
 height 20
 enter_x 12
 enter_y 11
@@ -10,7 +11,7 @@ Creator: majorwoo josh@woosworld.net
 Date:    11/19/2004
 Map finised by:  Alestan jehloq@yahoo.com
 Date:     8/27/2007
-Modified: 2009-10-23 Andreas Kirschbaum
+Modified: 2009-12-12 perkins
 endmsg
 end
 arch dungeon_magic
@@ -107,7 +108,7 @@ arch woodfloor
 y 9
 unique 1
 end
-arch dwall_2_1_1
+arch dwall_3_2
 y 9
 end
 arch dungeon_magic
@@ -220,14 +221,24 @@ end
 arch dwall_2_1_2
 x 1
 end
+arch lbulletwall_4
+name Vibrantly Glowing Crystal
+dam 121
+x 1
+y 1
+speed 0.1
+level 10
+invisible 1
+move_block 0
+no_pass 0
+blocksview 0
+arch spell_transference
+end
+end
 arch woodfloor
 x 1
 y 1
 unique 1
-end
-arch dungeon_magic
-x 1
-y 1
 end
 arch lbulletwall_4
 name Vibrantly Glowing Crystal
@@ -238,17 +249,161 @@ speed 0
 level 107
 invisible 1
 connected 2
+move_block 0
 no_pass 0
 blocksview 0
+arch spell_transference
+dam 120
+end
+end
+arch lbulletwall_4
+name Vibrantly Glowing Crystal
+dam 121
+x 1
+y 1
+speed 0
+level 20
+invisible 1
+connected 5
+move_block 0
+no_pass 0
+blocksview 0
+arch spell_transference
+dam 60
+end
+end
+arch woodfloor
+x 1
+y 1
+unique 1
+end
+arch lbulletwall_4
+name Vibrantly Glowing Crystal
+sp 3
+dam 121
+x 1
+y 1
+speed 0
+level 10
+invisible 1
+move_block 0
+no_pass 0
+blocksview 0
+arch spell_transference
+end
+end
+arch woodfloor
+x 1
+y 1
+unique 1
+end
+arch lbulletwall_4
+name Vibrantly Glowing Crystal
+sp 3
+dam 121
+x 1
+y 1
+speed 0
+level 20
+invisible 1
+connected 5
+move_block 0
+no_pass 0
+blocksview 0
+arch spell_transference
+dam 60
+end
+end
+arch woodfloor
+x 1
+y 1
+unique 1
+end
+arch lbulletwall_4
+name Vibrantly Glowing Crystal
+sp 3
+dam 121
+x 1
+y 1
+speed 0.1
+level 107
+invisible 1
+connected 2
+move_block 0
+no_pass 0
+blocksview 0
+arch spell_transference
+dam 120
+end
+end
+arch woodfloor
+x 1
+y 1
+unique 1
+end
+arch lbulletwall_4
+name Vibrantly Glowing Crystal
+sp 5
+dam 121
+x 1
+y 1
+speed 0.1
+level 10
+invisible 1
+move_block 0
+no_pass 0
+blocksview 0
+arch spell_transference
+end
+end
+arch woodfloor
+x 1
+y 1
+unique 1
+end
+arch lbulletwall_4
+name Vibrantly Glowing Crystal
+sp 5
+dam 121
+x 1
+y 1
+speed 0
+level 20
+invisible 1
+connected 5
+move_block 0
+no_pass 0
+blocksview 0
+arch spell_transference
+dam 60
+end
+end
+arch woodfloor
+x 1
+y 1
+unique 1
+end
+arch lbulletwall_4
+name Vibrantly Glowing Crystal
+sp 5
+dam 121
+x 1
+y 1
+speed 0.1
+level 107
+invisible 1
+connected 2
+move_block 0
+no_pass 0
+blocksview 0
+arch spell_transference
+dam 120
+end
 end
 arch woodfloor
 x 1
 y 2
 unique 1
-end
-arch dungeon_magic
-x 1
-y 2
 end
 arch lbulletwall_4
 name Vibrantly Glowing Crystal
@@ -257,20 +412,62 @@ dam 121
 x 1
 y 2
 speed 0
+level 10
+invisible 1
+move_block 0
+no_pass 0
+blocksview 0
+arch spell_transference
+end
+end
+arch woodfloor
+x 1
+y 2
+unique 1
+end
+arch lbulletwall_4
+name Vibrantly Glowing Crystal
+sp 3
+dam 121
+x 1
+y 2
+speed 0
+level 20
+invisible 1
+connected 5
+move_block 0
+no_pass 0
+blocksview 0
+arch spell_transference
+dam 60
+end
+end
+arch woodfloor
+x 1
+y 2
+unique 1
+end
+arch lbulletwall_4
+name Vibrantly Glowing Crystal
+sp 3
+dam 121
+x 1
+y 2
+speed 0.1
 level 107
 invisible 1
 connected 2
+move_block 0
 no_pass 0
 blocksview 0
+arch spell_transference
+dam 120
+end
 end
 arch woodfloor
 x 1
 y 3
 unique 1
-end
-arch dungeon_magic
-x 1
-y 3
 end
 arch lbulletwall_4
 name Vibrantly Glowing Crystal
@@ -282,8 +479,182 @@ speed 0
 level 107
 invisible 1
 connected 2
+move_block 0
 no_pass 0
 blocksview 0
+arch spell_transference
+dam 120
+end
+end
+arch woodfloor
+x 1
+y 3
+unique 1
+end
+arch lbulletwall_4
+name Vibrantly Glowing Crystal
+sp 2
+dam 121
+x 1
+y 3
+speed 0
+level 20
+invisible 1
+connected 5
+move_block 0
+no_pass 0
+blocksview 0
+arch spell_transference
+dam 60
+end
+end
+arch woodfloor
+x 1
+y 3
+unique 1
+end
+arch lbulletwall_4
+name Vibrantly Glowing Crystal
+sp 2
+dam 121
+x 1
+y 3
+speed 0.1
+level 10
+invisible 1
+move_block 0
+no_pass 0
+blocksview 0
+arch spell_transference
+end
+end
+arch woodfloor
+x 1
+y 3
+unique 1
+end
+arch lbulletwall_4
+name Vibrantly Glowing Crystal
+sp 3
+dam 121
+x 1
+y 3
+speed 0
+level 10
+invisible 1
+move_block 0
+no_pass 0
+blocksview 0
+arch spell_transference
+end
+end
+arch woodfloor
+x 1
+y 3
+unique 1
+end
+arch lbulletwall_4
+name Vibrantly Glowing Crystal
+sp 3
+dam 121
+x 1
+y 3
+speed 0
+level 20
+invisible 1
+connected 5
+move_block 0
+no_pass 0
+blocksview 0
+arch spell_transference
+dam 60
+end
+end
+arch woodfloor
+x 1
+y 3
+unique 1
+end
+arch lbulletwall_4
+name Vibrantly Glowing Crystal
+sp 3
+dam 121
+x 1
+y 3
+speed 0.1
+level 107
+invisible 1
+connected 2
+move_block 0
+no_pass 0
+blocksview 0
+arch spell_transference
+dam 120
+end
+end
+arch woodfloor
+x 1
+y 3
+unique 1
+end
+arch lbulletwall_4
+name Vibrantly Glowing Crystal
+sp 1
+dam 121
+x 1
+y 3
+speed 0
+level 107
+invisible 1
+connected 2
+move_block 0
+no_pass 0
+blocksview 0
+arch spell_transference
+dam 120
+end
+end
+arch woodfloor
+x 1
+y 3
+unique 1
+end
+arch lbulletwall_4
+name Vibrantly Glowing Crystal
+sp 1
+dam 121
+x 1
+y 3
+speed 0
+level 20
+invisible 1
+connected 5
+move_block 0
+no_pass 0
+blocksview 0
+arch spell_transference
+dam 60
+end
+end
+arch woodfloor
+x 1
+y 3
+unique 1
+end
+arch lbulletwall_4
+name Vibrantly Glowing Crystal
+sp 1
+dam 121
+x 1
+y 3
+speed 0.1
+level 10
+invisible 1
+move_block 0
+no_pass 0
+blocksview 0
+arch spell_transference
+end
 end
 arch woodfloor
 x 1
@@ -307,6 +678,10 @@ x 1
 y 5
 unique 1
 end
+arch tanbench
+x 1
+y 5
+end
 arch dungeon_magic
 x 1
 y 6
@@ -343,6 +718,10 @@ x 1
 y 9
 unique 1
 end
+arch dwall_2_1_2
+x 1
+y 9
+end
 arch dungeon_magic
 x 1
 y 10
@@ -354,26 +733,17 @@ unique 1
 end
 arch dungeon_magic
 x 1
-y 11
-end
-arch woodfloor
-x 1
-y 11
-unique 1
-end
-arch dungeon_magic
-x 1
-y 11
+y 10
 end
 arch creator
 other_arch woodfloor
 x 1
-y 11
+y 10
 connected 10
 end
 arch woodfloor
 x 1
-y 11
+y 10
 unique 1
 end
 arch goldfloor
@@ -381,16 +751,16 @@ name drop 15 diamonds of exceptional beauty for Jewelers room
 slaying diamond of exceptional beauty
 food 15
 x 1
-y 11
+y 10
 connected 10
 end
 arch dungeon_magic
 x 1
-y 12
+y 11
 end
 arch woodfloor
 x 1
-y 12
+y 11
 unique 1
 end
 arch trigger_marker
@@ -400,8 +770,21 @@ You have one day's use of these facilities.
 endmsg
 food 504
 x 1
-y 12
+y 11
 connected 11
+end
+arch dungeon_magic
+x 1
+y 12
+end
+arch woodfloor
+x 1
+y 12
+unique 1
+end
+arch cwall_0
+x 1
+y 12
 end
 arch dungeon_magic
 x 1
@@ -493,9 +876,47 @@ x 2
 y 1
 unique 1
 end
-arch dungeon_magic
+arch lbulletwall_4
+name Vibrantly Glowing Crystal
+sp 5
+dam 121
 x 2
 y 1
+speed 0.1
+level 10
+invisible 1
+move_block 0
+no_pass 0
+blocksview 0
+arch spell_transference
+end
+end
+arch woodfloor
+x 2
+y 1
+unique 1
+end
+arch lbulletwall_4
+name Vibrantly Glowing Crystal
+sp 5
+dam 121
+x 2
+y 1
+speed 0
+level 20
+invisible 1
+connected 5
+move_block 0
+no_pass 0
+blocksview 0
+arch spell_transference
+dam 60
+end
+end
+arch woodfloor
+x 2
+y 1
+unique 1
 end
 arch lbulletwall_4
 name Vibrantly Glowing Crystal
@@ -507,8 +928,12 @@ speed 0
 level 107
 invisible 1
 connected 2
+move_block 0
 no_pass 0
 blocksview 0
+arch spell_transference
+dam 120
+end
 end
 arch magic_mouth
 msg
@@ -517,14 +942,16 @@ endmsg
 x 2
 y 2
 end
+arch pedestal
+x 2
+y 2
+invisible 1
+connected 952
+end
 arch woodfloor
 x 2
 y 2
 unique 1
-end
-arch dungeon_magic
-x 2
-y 2
 end
 arch button_lever
 name Vibrantly Flashing Crystal
@@ -533,15 +960,16 @@ animation power_crystal
 x 2
 y 2
 connected 2
+move_block 0
+end
+arch light4
+x 2
+y 2
 end
 arch woodfloor
 x 2
 y 3
 unique 1
-end
-arch dungeon_magic
-x 2
-y 3
 end
 arch lbulletwall_4
 name Vibrantly Glowing Crystal
@@ -553,8 +981,53 @@ speed 0
 level 107
 invisible 1
 connected 2
+move_block 0
 no_pass 0
 blocksview 0
+arch spell_transference
+dam 120
+end
+end
+arch woodfloor
+x 2
+y 3
+unique 1
+end
+arch lbulletwall_4
+name Vibrantly Glowing Crystal
+sp 1
+dam 60
+x 2
+y 3
+speed 0
+level 20
+invisible 1
+connected 5
+move_block 0
+no_pass 0
+blocksview 0
+arch spell_transference
+end
+end
+arch woodfloor
+x 2
+y 3
+unique 1
+end
+arch lbulletwall_4
+name Vibrantly Glowing Crystal
+sp 1
+dam 121
+x 2
+y 3
+speed 0.1
+level 10
+invisible 1
+move_block 0
+no_pass 0
+blocksview 0
+arch spell_transference
+end
 end
 arch woodfloor
 x 2
@@ -614,6 +1087,10 @@ x 2
 y 9
 unique 1
 end
+arch dwall_2_1_2
+x 2
+y 9
+end
 arch dungeon_magic
 x 2
 y 10
@@ -621,66 +1098,61 @@ end
 arch woodfloor
 x 2
 y 10
-unique 1
-end
-arch dungeon_magic
-x 2
-y 11
-end
-arch woodfloor
-x 2
-y 11
-unique 1
-end
-arch dungeon_magic
-x 2
-y 12
-end
-arch woodfloor
-x 2
-y 12
 unique 1
 end
 arch check_floor
-slaying Jewe_Token
+slaying GUILD_TEMPLATE_Jewe_Token
 x 2
-y 12
+y 11
 connected 898
 end
 arch dungeon_magic
 x 2
-y 13
+y 11
 end
 arch woodfloor
 x 2
-y 13
+y 11
+unique 1
+end
+arch dungeon_magic
+x 2
+y 12
+end
+arch woodfloor
+x 2
+y 12
 unique 1
 end
 arch check_floor
 race Jewelry Pass
 x 2
-y 13
+y 12
 connected 898
 end
 arch grate_closed_1
 x 2
+y 12
+connected 898
+end
+arch pedestal
+x 2
 y 13
+invisible 1
 connected 898
 end
 arch dungeon_magic
 x 2
-y 14
+y 13
 end
 arch woodfloor
 x 2
-y 14
+y 13
 unique 1
 end
-arch pedestal
+arch dungeon_magic
 x 2
 y 14
-invisible 1
-connected 898
 end
 arch check_floor
 slaying guild_jewel11
@@ -688,7 +1160,19 @@ x 2
 y 14
 connected 12
 end
+arch woodfloor
+x 2
+y 14
+unique 1
+end
 arch dungeon_magic
+x 2
+y 15
+end
+arch invis_exit
+slaying guild_jeweler
+hp 3
+sp 4
 x 2
 y 15
 end
@@ -704,13 +1188,6 @@ connected 12
 no_magic 1
 damned 1
 end
-arch invis_exit
-slaying guild_jeweler
-hp 3
-sp 4
-x 2
-y 15
-end
 arch woodfloor
 x 2
 y 16
@@ -721,6 +1198,15 @@ x 2
 y 16
 invisible 1
 connected 12
+end
+arch dungeon_magic
+x 2
+y 16
+end
+arch woodfloor
+x 2
+y 16
+unique 1
 end
 arch woodfloor
 x 2
@@ -760,9 +1246,47 @@ x 3
 y 1
 unique 1
 end
-arch dungeon_magic
+arch lbulletwall_4
+name Vibrantly Glowing Crystal
+sp 6
+dam 121
 x 3
 y 1
+speed 0.1
+level 10
+invisible 1
+move_block 0
+no_pass 0
+blocksview 0
+arch spell_transference
+end
+end
+arch woodfloor
+x 3
+y 1
+unique 1
+end
+arch lbulletwall_4
+name Vibrantly Glowing Crystal
+sp 6
+dam 121
+x 3
+y 1
+speed 0
+level 20
+invisible 1
+connected 5
+move_block 0
+no_pass 0
+blocksview 0
+arch spell_transference
+dam 60
+end
+end
+arch woodfloor
+x 3
+y 1
+unique 1
 end
 arch lbulletwall_4
 name Vibrantly Glowing Crystal
@@ -774,17 +1298,123 @@ speed 0
 level 107
 invisible 1
 connected 2
+move_block 0
 no_pass 0
 blocksview 0
+arch spell_transference
+dam 121
+end
+end
+arch woodfloor
+x 3
+y 1
+unique 1
+end
+arch lbulletwall_4
+name Vibrantly Glowing Crystal
+sp 5
+dam 121
+x 3
+y 1
+speed 0.1
+level 10
+invisible 1
+move_block 0
+no_pass 0
+blocksview 0
+arch spell_transference
+end
+end
+arch woodfloor
+x 3
+y 1
+unique 1
+end
+arch lbulletwall_4
+name Vibrantly Glowing Crystal
+sp 5
+dam 121
+x 3
+y 1
+speed 0
+level 20
+invisible 1
+connected 5
+move_block 0
+no_pass 0
+blocksview 0
+arch spell_transference
+dam 60
+end
+end
+arch woodfloor
+x 3
+y 1
+unique 1
+end
+arch lbulletwall_4
+name Vibrantly Glowing Crystal
+sp 5
+dam 121
+x 3
+y 1
+speed 0
+level 107
+invisible 1
+connected 2
+move_block 0
+no_pass 0
+blocksview 0
+arch spell_transference
+dam 121
+end
 end
 arch woodfloor
 x 3
 y 2
 unique 1
 end
-arch dungeon_magic
+arch lbulletwall_4
+name Vibrantly Glowing Crystal
+sp 7
+dam 121
 x 3
 y 2
+speed 0.1
+level 10
+invisible 1
+move_block 0
+no_pass 0
+blocksview 0
+arch spell_transference
+end
+end
+arch woodfloor
+x 3
+y 2
+unique 1
+end
+arch lbulletwall_4
+name Vibrantly Glowing Crystal
+sp 7
+dam 121
+x 3
+y 2
+speed 0
+level 20
+invisible 1
+connected 5
+move_block 0
+no_pass 0
+blocksview 0
+arch spell_transference
+dam 60
+end
+end
+arch woodfloor
+x 3
+y 2
+unique 1
 end
 arch lbulletwall_4
 name Vibrantly Glowing Crystal
@@ -796,17 +1426,59 @@ speed 0
 level 107
 invisible 1
 connected 2
+move_block 0
 no_pass 0
 blocksview 0
+arch spell_transference
+dam 121
+end
 end
 arch woodfloor
 x 3
 y 3
 unique 1
 end
-arch dungeon_magic
+arch lbulletwall_4
+name Vibrantly Glowing Crystal
+sp 8
+dam 121
 x 3
 y 3
+speed 0
+level 50
+invisible 1
+connected 5
+move_block 0
+no_pass 0
+blocksview 0
+arch spell_transference
+dam 60
+end
+end
+arch woodfloor
+x 3
+y 3
+unique 1
+end
+arch lbulletwall_4
+name Vibrantly Glowing Crystal
+sp 8
+dam 121
+x 3
+y 3
+speed 0.1
+level 20
+invisible 1
+move_block 0
+no_pass 0
+blocksview 0
+arch spell_transference
+end
+end
+arch woodfloor
+x 3
+y 3
+unique 1
 end
 arch lbulletwall_4
 name Vibrantly Glowing Crystal
@@ -818,8 +1490,76 @@ speed 0
 level 107
 invisible 1
 connected 2
+move_block 0
 no_pass 0
 blocksview 0
+arch spell_transference
+dam 121
+end
+end
+arch woodfloor
+x 3
+y 3
+unique 1
+end
+arch lbulletwall_4
+name Vibrantly Glowing Crystal
+sp 1
+dam 121
+x 3
+y 3
+speed 0
+level 107
+invisible 1
+connected 2
+move_block 0
+no_pass 0
+blocksview 0
+arch spell_transference
+dam 121
+end
+end
+arch woodfloor
+x 3
+y 3
+unique 1
+end
+arch lbulletwall_4
+name Vibrantly Glowing Crystal
+sp 1
+dam 121
+x 3
+y 3
+speed 0
+level 20
+invisible 1
+connected 5
+move_block 0
+no_pass 0
+blocksview 0
+arch spell_transference
+dam 60
+end
+end
+arch woodfloor
+x 3
+y 3
+unique 1
+end
+arch lbulletwall_4
+name Vibrantly Glowing Crystal
+sp 1
+dam 121
+x 3
+y 3
+speed 0.1
+level 10
+invisible 1
+move_block 0
+no_pass 0
+blocksview 0
+arch spell_transference
+end
 end
 arch woodfloor
 x 3
@@ -879,6 +1619,10 @@ x 3
 y 9
 unique 1
 end
+arch dwall_2_1_2
+x 3
+y 9
+end
 arch dungeon_magic
 x 3
 y 10
@@ -905,6 +1649,10 @@ arch woodfloor
 x 3
 y 12
 unique 1
+end
+arch cwall_0
+x 3
+y 12
 end
 arch dungeon_magic
 x 3
@@ -987,43 +1735,336 @@ end
 arch dwall_2_1_2
 x 4
 end
-arch dungeon_magic
-x 4
-y 1
-end
 arch woodfloor
 x 4
 y 1
 unique 1
 end
-arch dungeon_magic
+arch lbulletwall_4
+name Vibrantly Glowing Crystal
+sp 7
+dam 121
 x 4
-y 2
+y 1
+speed 0
+level 20
+invisible 1
+connected 5
+move_block 0
+no_pass 0
+blocksview 0
+arch spell_transference
+dam 60
+end
+end
+arch woodfloor
+x 4
+y 1
+unique 1
+end
+arch lbulletwall_4
+name Vibrantly Glowing Crystal
+sp 7
+dam 121
+x 4
+y 1
+speed 00
+level 107
+invisible 1
+connected 2
+move_block 0
+no_pass 0
+blocksview 0
+arch spell_transference
+dam 121
+end
+end
+arch woodfloor
+x 4
+y 1
+unique 1
+end
+arch lbulletwall_4
+name Vibrantly Glowing Crystal
+sp 7
+dam 121
+x 4
+y 1
+speed 0.1
+level 10
+invisible 1
+move_block 0
+no_pass 0
+blocksview 0
+arch spell_transference
+end
+end
+arch woodfloor
+x 4
+y 1
+unique 1
+end
+arch lbulletwall_4
+name Vibrantly Glowing Crystal
+sp 5
+dam 121
+x 4
+y 1
+speed 0.1
+level 10
+invisible 1
+move_block 0
+no_pass 0
+blocksview 0
+arch spell_transference
+end
+end
+arch woodfloor
+x 4
+y 1
+unique 1
+end
+arch lbulletwall_4
+name Vibrantly Glowing Crystal
+sp 5
+dam 121
+x 4
+y 1
+speed 0
+level 20
+invisible 1
+connected 5
+move_block 0
+no_pass 0
+blocksview 0
+arch spell_transference
+dam 60
+end
+end
+arch woodfloor
+x 4
+y 1
+unique 1
+end
+arch lbulletwall_4
+name Vibrantly Glowing Crystal
+sp 5
+dam 121
+x 4
+y 1
+speed 0
+level 107
+invisible 1
+connected 2
+move_block 0
+no_pass 0
+blocksview 0
+arch spell_transference
+dam 121
+end
 end
 arch woodfloor
 x 4
 y 2
 unique 1
 end
-arch dungeon_magic
+arch lbulletwall_4
+name Vibrantly Glowing Crystal
+sp 7
+dam 121
 x 4
-y 3
+y 2
+speed 0
+level 20
+invisible 1
+connected 5
+move_block 0
+no_pass 0
+blocksview 0
+arch spell_transference
+dam 60
+end
+end
+arch woodfloor
+x 4
+y 2
+unique 1
+end
+arch lbulletwall_4
+name Vibrantly Glowing Crystal
+sp 7
+dam 121
+x 4
+y 2
+speed .1
+level 10
+invisible 1
+move_block 0
+no_pass 0
+blocksview 0
+arch spell_transference
+end
+end
+arch woodfloor
+x 4
+y 2
+unique 1
+end
+arch lbulletwall_4
+name Vibrantly Glowing Crystal
+sp 7
+dam 121
+x 4
+y 2
+speed 0
+level 107
+invisible 1
+connected 2
+move_block 0
+no_pass 0
+blocksview 0
+arch spell_transference
+dam 121
+end
 end
 arch woodfloor
 x 4
 y 3
 unique 1
+end
+arch lbulletwall_4
+name Vibrantly Glowing Crystal
+sp 7
+dam 121
+x 4
+y 3
+speed 0
+level 107
+invisible 1
+connected 2
+move_block 0
+no_pass 0
+blocksview 0
+arch spell_transference
+dam 121
+end
+end
+arch woodfloor
+x 4
+y 3
+unique 1
+end
+arch lbulletwall_4
+name Vibrantly Glowing Crystal
+sp 3
+dam 121
+x 4
+y 3
+speed 0.1
+level 10
+invisible 1
+move_block 0
+no_pass 0
+blocksview 0
+arch spell_transference
+end
+end
+arch woodfloor
+x 4
+y 3
+unique 1
+end
+arch lbulletwall_4
+name Vibrantly Glowing Crystal
+sp 3
+dam 121
+x 4
+y 3
+speed 0
+level 20
+invisible 1
+connected 5
+move_block 0
+no_pass 0
+blocksview 0
+arch spell_transference
+dam 60
+end
+end
+arch woodfloor
+x 4
+y 3
+unique 1
+end
+arch lbulletwall_4
+name Vibrantly Glowing Crystal
+sp 1
+dam 121
+x 4
+y 3
+speed 0
+level 107
+invisible 1
+connected 2
+move_block 0
+no_pass 0
+blocksview 0
+arch spell_transference
+dam 121
+end
+end
+arch woodfloor
+x 4
+y 3
+unique 1
+end
+arch lbulletwall_4
+name Vibrantly Glowing Crystal
+sp 1
+dam 121
+x 4
+y 3
+speed 0
+level 20
+invisible 1
+connected 5
+move_block 0
+no_pass 0
+blocksview 0
+arch spell_transference
+dam 60
+end
+end
+arch woodfloor
+x 4
+y 3
+unique 1
+end
+arch lbulletwall_4
+name Vibrantly Glowing Crystal
+sp 1
+dam 121
+x 4
+y 3
+speed 0.1
+level 10
+invisible 1
+move_block 0
+no_pass 0
+blocksview 0
+arch spell_transference
+end
+end
+arch dungeon_magic
+x 4
+y 4
 end
 arch woodfloor
 x 4
 y 4
 unique 1
 end
-arch dungeon_magic
-x 4
-y 4
-end
-arch dwall_win2
+arch dwall_3_3
 x 4
 y 4
 end
@@ -1036,6 +2077,10 @@ x 4
 y 5
 unique 1
 end
+arch dwall_2_1_1
+x 4
+y 5
+end
 arch dungeon_magic
 x 4
 y 6
@@ -1044,6 +2089,17 @@ arch woodfloor
 x 4
 y 6
 unique 1
+end
+arch dwall_2_1_1
+x 4
+y 6
+end
+arch invis_exit
+slaying guild_tan
+hp 6
+sp 5
+x 4
+y 7
 end
 arch dungeon_magic
 x 4
@@ -1054,6 +2110,12 @@ x 4
 y 7
 unique 1
 end
+arch igate_closed_2
+x 4
+y 7
+connected 51
+activate_on_release 0
+end
 arch dungeon_magic
 x 4
 y 8
@@ -1063,6 +2125,10 @@ x 4
 y 8
 unique 1
 end
+arch dwall_2_1_1
+x 4
+y 8
+end
 arch dungeon_magic
 x 4
 y 9
@@ -1071,6 +2137,10 @@ arch woodfloor
 x 4
 y 9
 unique 1
+end
+arch dwall_3_1
+x 4
+y 9
 end
 arch dungeon_magic
 x 4
@@ -1110,12 +2180,38 @@ unique 1
 end
 arch dungeon_magic
 x 4
+y 13
+end
+arch woodfloor
+x 4
+y 13
+unique 1
+end
+arch grate_closed_1
+x 4
+y 13
+connected 9192
+end
+arch dungeon_magic
+x 4
 y 14
 end
 arch woodfloor
 x 4
 y 14
 unique 1
+end
+arch button_lever
+name Jewelry Room Reset.
+slaying guild_jeweler
+msg
+Careful, make sure no one you care about is in there.
+endmsg
+hp 5
+sp 1
+x 4
+y 14
+type 66
 end
 arch dungeon_magic
 x 4
@@ -1205,10 +2301,6 @@ arch dwall_2_2_1
 x 5
 y 1
 end
-arch dungeon_magic
-x 5
-y 2
-end
 arch woodfloor
 x 5
 y 2
@@ -1219,6 +2311,70 @@ x 5
 y 2
 invisible 1
 connected 42
+end
+arch woodfloor
+x 5
+y 2
+unique 1
+end
+arch lbulletwall_4
+name Vibrantly Glowing Crystal
+sp 7
+dam 121
+x 5
+y 2
+speed 0
+level 20
+invisible 1
+connected 5
+move_block 0
+no_pass 0
+blocksview 0
+arch spell_transference
+dam 60
+end
+end
+arch woodfloor
+x 5
+y 2
+unique 1
+end
+arch lbulletwall_4
+name Vibrantly Glowing Crystal
+sp 7
+dam 121
+x 5
+y 2
+speed .1
+level 10
+invisible 1
+move_block 0
+no_pass 0
+blocksview 0
+arch spell_transference
+end
+end
+arch woodfloor
+x 5
+y 2
+unique 1
+end
+arch lbulletwall_4
+name Vibrantly Glowing Crystal
+sp 7
+dam 121
+x 5
+y 2
+speed 0
+level 107
+invisible 1
+connected 2
+move_block 0
+no_pass 0
+blocksview 0
+arch spell_transference
+dam 120
+end
 end
 arch dungeon_magic
 x 5
@@ -1251,6 +2407,24 @@ x 5
 y 5
 unique 1
 end
+arch button_lever
+name Tanning Room Reset.
+slaying guild_tan
+msg
+Careful, make sure no one you care about is in there.
+endmsg
+hp 9
+sp 1
+x 5
+y 5
+type 66
+end
+arch check_floor
+slaying guild_tan21
+x 5
+y 6
+connected 51
+end
 arch dungeon_magic
 x 5
 y 6
@@ -1262,12 +2436,46 @@ unique 1
 end
 arch dungeon_magic
 x 5
+y 6
+end
+arch woodfloor
+x 5
+y 6
+unique 1
+end
+arch dungeon_magic
+x 5
+y 6
+end
+arch woodfloor
+x 5
+y 6
+unique 1
+end
+arch cwall_0
+x 5
+y 6
+end
+arch check_floor
+slaying guild_tan21
+x 5
+y 7
+connected 51
+end
+arch dungeon_magic
+x 5
 y 7
 end
 arch woodfloor
 x 5
 y 7
 unique 1
+end
+arch check_floor
+slaying guild_tan21
+x 5
+y 8
+connected 51
 end
 arch dungeon_magic
 x 5
@@ -1286,6 +2494,10 @@ arch woodfloor
 x 5
 y 9
 unique 1
+end
+arch dwall_2_1_2
+x 5
+y 9
 end
 arch dungeon_magic
 x 5
@@ -1325,12 +2537,38 @@ unique 1
 end
 arch dungeon_magic
 x 5
+y 13
+end
+arch woodfloor
+x 5
+y 13
+unique 1
+end
+arch dwall_1_1
+x 5
+y 13
+end
+arch dungeon_magic
+x 5
 y 14
 end
 arch woodfloor
 x 5
 y 14
 unique 1
+end
+arch dungeon_magic
+x 5
+y 14
+end
+arch woodfloor
+x 5
+y 14
+unique 1
+end
+arch dwall_2_1_1
+x 5
+y 14
 end
 arch dungeon_magic
 x 5
@@ -1342,6 +2580,19 @@ y 15
 unique 1
 end
 arch dwall_2_1_2
+x 5
+y 15
+end
+arch dungeon_magic
+x 5
+y 15
+end
+arch woodfloor
+x 5
+y 15
+unique 1
+end
+arch dwall_3_1
 x 5
 y 15
 end
@@ -1407,7 +2658,7 @@ end
 arch pedestal
 x 6
 y 2
-connected 746
+connected 42
 end
 arch woodfloor
 x 6
@@ -1432,14 +2683,14 @@ arch dwall_2_2_3
 x 6
 y 3
 end
+arch dungeon_magic
+x 6
+y 4
+end
 arch woodfloor
 x 6
 y 4
 unique 1
-end
-arch dungeon_magic
-x 6
-y 4
 end
 arch swall_1_4
 x 6
@@ -1460,12 +2711,57 @@ unique 1
 end
 arch dungeon_magic
 x 6
+y 5
+end
+arch woodfloor
+x 6
+y 5
+unique 1
+end
+arch dungeon_magic
+x 6
+y 5
+end
+arch woodfloor
+x 6
+y 5
+unique 1
+end
+arch grate_closed_2
+x 6
+y 5
+connected 9193
+end
+arch dungeon_magic
+x 6
 y 6
 end
 arch woodfloor
 x 6
 y 6
 unique 1
+end
+arch dungeon_magic
+x 6
+y 6
+end
+arch woodfloor
+x 6
+y 6
+unique 1
+end
+arch dungeon_magic
+x 6
+y 6
+end
+arch woodfloor
+x 6
+y 6
+unique 1
+end
+arch cwall_0
+x 6
+y 6
 end
 arch dungeon_magic
 x 6
@@ -1492,63 +2788,67 @@ end
 arch woodfloor
 x 6
 y 9
-unique 1
-end
-arch dungeon_magic
-x 6
-y 10
-end
-arch woodfloor
-x 6
-y 10
-unique 1
-end
-arch dungeon_magic
-x 6
-y 11
-end
-arch woodfloor
-x 6
-y 11
-unique 1
-end
-arch dungeon_magic
-x 6
-y 12
-end
-arch woodfloor
-x 6
-y 12
-unique 1
-end
-arch dungeon_magic
-x 6
-y 13
-end
-arch woodfloor
-x 6
-y 13
-unique 1
-end
-arch dungeon_magic
-x 6
-y 14
-end
-arch woodfloor
-x 6
-y 14
-unique 1
-end
-arch dungeon_magic
-x 6
-y 15
-end
-arch woodfloor
-x 6
-y 15
 unique 1
 end
 arch dwall_2_1_2
+x 6
+y 9
+end
+arch dungeon_magic
+x 6
+y 10
+end
+arch woodfloor
+x 6
+y 10
+unique 1
+end
+arch dungeon_magic
+x 6
+y 11
+end
+arch woodfloor
+x 6
+y 11
+unique 1
+end
+arch dungeon_magic
+x 6
+y 12
+end
+arch woodfloor
+x 6
+y 12
+unique 1
+end
+arch dungeon_magic
+x 6
+y 13
+end
+arch woodfloor
+x 6
+y 13
+unique 1
+end
+arch dungeon_magic
+x 6
+y 14
+end
+arch woodfloor
+x 6
+y 14
+unique 1
+end
+arch woodfloor
+x 6
+y 15
+unique 1
+end
+arch dungeon_magic
+x 6
+y 15
+end
+arch dwall_win2
 x 6
 y 15
 end
@@ -1613,17 +2913,20 @@ x 7
 y 2
 unique 1
 end
-arch pedestal
-x 7
-y 2
-invisible 1
-connected 42
-end
 arch check_floor
 slaying guild_charge41
 x 7
 y 2
 connected 42
+end
+arch dungeon_magic
+x 7
+y 2
+end
+arch woodfloor
+x 7
+y 2
+unique 1
 end
 arch dungeon_magic
 x 7
@@ -1661,6 +2964,12 @@ x 7
 y 5
 unique 1
 end
+arch check_floor
+slaying guild_tan21
+x 7
+y 6
+connected 897
+end
 arch dungeon_magic
 x 7
 y 6
@@ -1688,6 +2997,24 @@ x 7
 y 8
 unique 1
 end
+arch trigger_marker
+slaying guild_tan21
+msg
+You have one day's use of these facilities.
+endmsg
+food 504
+x 7
+y 8
+connected 52
+end
+arch altar_trigger
+name Drop 100 platinum to enter Tannery
+slaying platinacoin
+food 100
+x 7
+y 8
+connected 52
+end
 arch dungeon_magic
 x 7
 y 9
@@ -1696,6 +3023,10 @@ arch woodfloor
 x 7
 y 9
 unique 1
+end
+arch dwall_2_1_2
+x 7
+y 9
 end
 arch dungeon_magic
 x 7
@@ -1775,6 +3106,15 @@ y 17
 invisible 1
 connected 22
 end
+arch dungeon_magic
+x 7
+y 17
+end
+arch woodfloor
+x 7
+y 17
+unique 1
+end
 arch woodfloor
 x 7
 y 18
@@ -1838,6 +3178,15 @@ connected 82
 end
 arch dungeon_magic
 x 8
+y 2
+end
+arch woodfloor
+x 8
+y 2
+unique 1
+end
+arch dungeon_magic
+x 8
 y 3
 end
 arch woodfloor
@@ -1863,6 +3212,22 @@ arch swall_2_1_2
 x 8
 y 4
 end
+arch trap_blades
+msg
+endmsg
+Cha 200000
+hp 1000
+dam 0
+x 8
+y 5
+level 100
+attacktype 0
+arch event_trigger
+name GUILD_TEMPLATE Initiate A
+title Python
+slaying /python/guilds/arrest.py
+end
+end
 arch dungeon_magic
 x 8
 y 5
@@ -1872,6 +3237,28 @@ x 8
 y 5
 unique 1
 end
+arch trap_blades
+msg
+endmsg
+Cha 200000
+hp 1000
+dam 0
+x 8
+y 6
+level 100
+attacktype 0
+arch event_trigger
+name GUILD_TEMPLATE Initiate A
+title Python
+slaying /python/guilds/arrest.py
+end
+end
+arch pedestal
+x 8
+y 6
+invisible 1
+connected 335
+end
 arch dungeon_magic
 x 8
 y 6
@@ -1880,6 +3267,22 @@ arch woodfloor
 x 8
 y 6
 unique 1
+end
+arch trap_blades
+msg
+endmsg
+Cha 200000
+hp 1000
+dam 0
+x 8
+y 7
+level 100
+attacktype 0
+arch event_trigger
+name GUILD_TEMPLATE Initiate A
+title Python
+slaying /python/guilds/arrest.py
+end
 end
 arch dungeon_magic
 x 8
@@ -1899,10 +3302,6 @@ x 8
 y 8
 unique 1
 end
-arch dwall_2_2_2
-x 8
-y 8
-end
 arch dungeon_magic
 x 8
 y 9
@@ -1910,20 +3309,24 @@ end
 arch woodfloor
 x 8
 y 9
+unique 1
+end
+arch dwall_3_3
+x 8
+y 9
+end
+arch dungeon_magic
+x 8
+y 10
+end
+arch woodfloor
+x 8
+y 10
 unique 1
 end
 arch dwall_1_2
 x 8
-y 9
-end
-arch dungeon_magic
-x 8
 y 10
-end
-arch woodfloor
-x 8
-y 10
-unique 1
 end
 arch dungeon_magic
 x 8
@@ -2008,6 +3411,13 @@ x 8
 y 17
 unique 1
 end
+arch invis_exit
+slaying guild_thaum
+hp 6
+sp 3
+x 8
+y 17
+end
 arch grate_closed_2
 x 8
 y 17
@@ -2015,13 +3425,6 @@ connected 22
 blocksview 1
 no_magic 1
 damned 1
-end
-arch invis_exit
-slaying guild_thaum
-hp 6
-sp 3
-x 8
-y 17
 end
 arch dungeon_magic
 x 8
@@ -2111,7 +3514,7 @@ x 9
 y 4
 unique 1
 end
-arch swall_3_1
+arch swall_4
 x 9
 y 4
 end
@@ -2124,6 +3527,10 @@ x 9
 y 5
 unique 1
 end
+arch dwall_1_2
+x 9
+y 5
+end
 arch dungeon_magic
 x 9
 y 6
@@ -2131,46 +3538,51 @@ end
 arch woodfloor
 x 9
 y 6
+unique 1
+end
+arch igate_closed_2
+x 9
+y 6
+connected 335
+end
+arch dungeon_magic
+x 9
+y 7
+end
+arch woodfloor
+x 9
+y 7
 unique 1
 end
 arch dwall_1_1
 x 9
-y 6
+y 7
 end
 arch dungeon_magic
 x 9
-y 7
+y 8
 end
 arch woodfloor
 x 9
-y 7
+y 8
 unique 1
 end
 arch dwall_2_1_1
 x 9
-y 7
+y 8
 end
 arch dungeon_magic
 x 9
-y 8
+y 9
 end
 arch woodfloor
 x 9
-y 8
+y 9
 unique 1
 end
 arch dwall_3_1
 x 9
-y 8
-end
-arch dungeon_magic
-x 9
 y 9
-end
-arch woodfloor
-x 9
-y 9
-unique 1
 end
 arch dungeon_magic
 x 9
@@ -2230,6 +3642,18 @@ x 9
 y 15
 unique 1
 end
+arch button_lever
+name Wand Room Reset.
+slaying guild_thaum
+msg
+Careful, make sure no one you care about is in there.
+endmsg
+hp 9
+sp 1
+x 9
+y 15
+type 66
+end
 arch dungeon_magic
 x 9
 y 16
@@ -2257,12 +3681,6 @@ arch woodfloor
 x 9
 y 17
 unique 1
-end
-arch pedestal
-x 9
-y 17
-invisible 1
-connected 899
 end
 arch dungeon_magic
 x 9
@@ -2329,10 +3747,19 @@ y 2
 unique 1
 end
 arch check_floor
-slaying GC_Token
+slaying GUILD_TEMPLATE_GC_Token
 x 10
 y 2
 connected 82
+end
+arch dungeon_magic
+x 10
+y 2
+end
+arch woodfloor
+x 10
+y 2
+unique 1
 end
 arch dungeon_magic
 x 10
@@ -2365,6 +3792,12 @@ x 10
 y 5
 unique 1
 end
+arch check_floor
+slaying GUILD_TEMPLATE_Tan_Token
+x 10
+y 6
+connected 331
+end
 arch dungeon_magic
 x 10
 y 6
@@ -2377,39 +3810,48 @@ end
 arch dungeon_magic
 x 10
 y 7
+end
+arch woodfloor
+x 10
+y 7
+unique 1
+end
+arch dungeon_magic
+x 10
+y 8
+end
+arch woodfloor
+x 10
+y 8
+unique 1
 end
 arch creator
+other_arch woodfloor
 x 10
-y 7
+y 8
+connected 50
 end
 arch goldfloor
-slaying Glowing Crystal Token
-food 1
+name drop 30,000 rubies for Tannery room
+slaying ruby
+food 30000
 x 10
-y 7
-connected 80
+y 8
+connected 50
+activate_on_release 0
 end
 arch dungeon_magic
 x 10
-y 8
+y 9
 end
 arch woodfloor
 x 10
-y 8
+y 9
 unique 1
 end
 arch dwall_1_3
 x 10
-y 8
-end
-arch dungeon_magic
-x 10
 y 9
-end
-arch woodfloor
-x 10
-y 9
-unique 1
 end
 arch dungeon_magic
 x 10
@@ -2462,6 +3904,20 @@ unique 1
 end
 arch dungeon_magic
 x 10
+y 14
+end
+arch woodfloor
+x 10
+y 14
+unique 1
+end
+arch grate_closed_2
+x 10
+y 14
+connected 9191
+end
+arch dungeon_magic
+x 10
 y 15
 end
 arch woodfloor
@@ -2471,12 +3927,17 @@ unique 1
 end
 arch dungeon_magic
 x 10
-y 16
+y 15
 end
 arch woodfloor
 x 10
-y 16
+y 15
 unique 1
+end
+arch grate_closed_2
+x 10
+y 15
+connected 9191
 end
 arch dungeon_magic
 x 10
@@ -2491,27 +3952,19 @@ arch cwall_0
 x 10
 y 16
 end
-arch dungeon_magic
+arch pedestal
 x 10
 y 17
-end
-arch woodfloor
-x 10
-y 17
-unique 1
-end
-arch igate_closed_2
-x 10
-y 17
+invisible 1
 connected 899
 end
 arch dungeon_magic
 x 10
-y 18
+y 17
 end
 arch woodfloor
 x 10
-y 18
+y 17
 unique 1
 end
 arch dungeon_magic
@@ -2582,6 +4035,12 @@ x 11
 y 2
 unique 1
 end
+arch pedestal
+x 11
+y 3
+invisible 1
+connected 81
+end
 arch dungeon_magic
 x 11
 y 3
@@ -2590,12 +4049,6 @@ arch woodfloor
 x 11
 y 3
 unique 1
-end
-arch pedestal
-x 11
-y 3
-invisible 1
-connected 81
 end
 arch dungeon_magic
 x 11
@@ -2719,6 +4172,10 @@ x 11
 y 16
 unique 1
 end
+arch cwall_0
+x 11
+y 16
+end
 arch dungeon_magic
 x 11
 y 17
@@ -2728,8 +4185,7 @@ x 11
 y 17
 unique 1
 end
-arch check_floor
-slaying Thau_Token
+arch igate_closed_2
 x 11
 y 17
 connected 899
@@ -2743,24 +4199,9 @@ x 11
 y 18
 unique 1
 end
-arch dungeon_magic
+arch cwall_0
 x 11
 y 18
-end
-arch woodfloor
-x 11
-y 18
-unique 1
-end
-arch trigger_marker
-slaying guild_thaum21
-msg
-You have one day's use of these facilities.
-endmsg
-food 504
-x 11
-y 18
-connected 21
 end
 arch dungeon_magic
 x 11
@@ -2895,6 +4336,22 @@ x 12
 y 10
 unique 1
 end
+arch trap_blades
+msg
+endmsg
+Cha 200000
+hp 1000
+dam 0
+x 12
+y 11
+level 100
+attacktype 0
+arch event_trigger
+name GUILD_TEMPLATE Initiate A
+title Python
+slaying /python/guilds/arrest.py
+end
+end
 arch dungeon_magic
 x 12
 y 11
@@ -2956,6 +4413,12 @@ x 12
 y 16
 unique 1
 end
+arch check_floor
+slaying GUILD_TEMPLATE_Thau_Token
+x 12
+y 17
+connected 899
+end
 arch dungeon_magic
 x 12
 y 17
@@ -2974,28 +4437,15 @@ x 12
 y 18
 unique 1
 end
-arch dungeon_magic
+arch trigger_marker
+slaying guild_thaum21
+msg
+You have one day's use of these facilities.
+endmsg
+food 504
 x 12
 y 18
-end
-arch woodfloor
-x 12
-y 18
-unique 1
-end
-arch creator
-other_arch woodfloor
-x 12
-y 18
-connected 20
-end
-arch goldfloor
-name drop 30,000 rubies for Thaumaturgy room
-slaying ruby
-food 30000
-x 12
-y 18
-connected 20
+connected 21
 end
 arch woodfloor
 x 12
@@ -3092,10 +4542,23 @@ x 13
 y 7
 unique 1
 end
+arch cwall_0
+x 13
+y 7
+end
+arch dungeon_magic
+x 13
+y 8
+end
+arch woodfloor
+x 13
+y 8
+unique 1
+end
 arch creator
 other_arch woodfloor
 x 13
-y 7
+y 8
 connected 30
 end
 arch goldfloor
@@ -3103,30 +4566,21 @@ name drop 30,000 diamonds for Alchemy room
 slaying diamond
 food 30000
 x 13
-y 7
+y 8
 connected 30
 end
 arch dungeon_magic
 x 13
-y 8
+y 9
 end
 arch woodfloor
 x 13
-y 8
+y 9
 unique 1
 end
 arch dwall_1_4
 x 13
-y 8
-end
-arch dungeon_magic
-x 13
 y 9
-end
-arch woodfloor
-x 13
-y 9
-unique 1
 end
 arch dungeon_magic
 x 13
@@ -3186,6 +4640,38 @@ x 13
 y 15
 unique 1
 end
+arch woodfloor
+x 13
+y 15
+type 71
+unique 0
+is_buildable 1
+end
+arch guard
+x 13
+y 15
+level 1000
+attacktype 5201023
+monster 0
+friendly 1
+hitback 1
+reflect_missile 0
+reflect_spell 0
+can_use_scroll 1
+can_use_bow 1
+can_use_armour 1
+can_use_weapon 1
+can_use_ring 1
+can_use_skill 1
+can_use_rod 1
+can_see_in_dark 1
+can_use_wand 1
+arch event_say
+name GUILD_TEMPLATE GuildMaster
+title Python
+slaying /python/guilds/clearance.py
+end
+end
 arch dungeon_magic
 x 13
 y 16
@@ -3212,6 +4698,20 @@ arch woodfloor
 x 13
 y 18
 unique 1
+end
+arch creator
+other_arch woodfloor
+x 13
+y 18
+connected 20
+end
+arch goldfloor
+name drop 30,000 rubies for Thaumaturgy room
+slaying ruby
+food 30000
+x 13
+y 18
+connected 20
 end
 arch woodfloor
 x 13
@@ -3259,16 +4759,12 @@ connected 32
 end
 arch dungeon_magic
 x 14
-y 4
+y 3
 end
 arch woodfloor
 x 14
-y 4
-end
-arch grate_closed_1
-x 14
-y 4
-connected 32
+y 3
+unique 1
 end
 arch invis_exit
 slaying guild_alchemy
@@ -3279,12 +4775,16 @@ y 4
 end
 arch dungeon_magic
 x 14
-y 5
+y 4
 end
 arch woodfloor
 x 14
-y 5
-unique 1
+y 4
+end
+arch grate_closed_1
+x 14
+y 4
+connected 32
 end
 arch pedestal
 x 14
@@ -3300,37 +4800,52 @@ connected 32
 end
 arch dungeon_magic
 x 14
+y 5
+end
+arch woodfloor
+x 14
+y 5
+unique 1
+end
+arch pedestal
+x 14
+y 6
+invisible 1
+connected 897
+end
+arch dungeon_magic
+x 14
 y 6
 end
 arch woodfloor
 x 14
 y 6
+unique 1
+end
+arch dungeon_magic
+x 14
+y 7
+end
+arch woodfloor
+x 14
+y 7
 unique 1
 end
 arch check_floor
 race Alchemy Pass
 x 14
-y 6
+y 7
 connected 897
 end
 arch grate_closed_1
 x 14
-y 6
+y 7
 connected 897
-end
-arch dungeon_magic
-x 14
-y 7
-end
-arch woodfloor
-x 14
-y 7
-unique 1
 end
 arch check_floor
-slaying Alch_Token
+slaying GUILD_TEMPLATE_Alch_Token
 x 14
-y 7
+y 8
 connected 897
 end
 arch dungeon_magic
@@ -3340,33 +4855,33 @@ end
 arch woodfloor
 x 14
 y 8
+unique 1
+end
+arch dungeon_magic
+x 14
+y 9
+end
+arch woodfloor
+x 14
+y 9
 unique 1
 end
 arch dwall_3_3
 x 14
-y 8
+y 9
 end
 arch dungeon_magic
 x 14
-y 9
+y 10
 end
 arch woodfloor
 x 14
-y 9
+y 10
 unique 1
 end
 arch dwall_1_2
 x 14
-y 9
-end
-arch dungeon_magic
-x 14
 y 10
-end
-arch woodfloor
-x 14
-y 10
-unique 1
 end
 arch dungeon_magic
 x 14
@@ -3412,6 +4927,11 @@ x 14
 y 14
 unique 1
 end
+arch grate_closed_2
+x 14
+y 14
+connected 918
+end
 arch dungeon_magic
 x 14
 y 15
@@ -3419,27 +4939,35 @@ end
 arch woodfloor
 x 14
 y 15
-unique 1
-end
-arch dungeon_magic
-x 14
-y 16
-end
-arch woodfloor
-x 14
-y 16
-unique 1
-end
-arch dungeon_magic
-x 14
-y 17
-end
-arch woodfloor
-x 14
-y 17
 unique 1
 end
 arch dwall_1_1
+x 14
+y 15
+end
+arch dungeon_magic
+x 14
+y 16
+end
+arch woodfloor
+x 14
+y 16
+unique 1
+end
+arch dwall_2_1_1
+x 14
+y 16
+end
+arch dungeon_magic
+x 14
+y 17
+end
+arch woodfloor
+x 14
+y 17
+unique 1
+end
+arch dwall_2_1_1
 x 14
 y 17
 end
@@ -3546,6 +5074,19 @@ x 15
 y 7
 unique 1
 end
+arch cwall_0
+x 15
+y 7
+end
+arch dungeon_magic
+x 15
+y 8
+end
+arch woodfloor
+x 15
+y 8
+unique 1
+end
 arch trigger_marker
 slaying guild_alchemy31
 msg
@@ -3553,44 +5094,44 @@ You have one day's use of these facilities.
 endmsg
 food 504
 x 15
-y 7
+y 8
 connected 31
 end
 arch dungeon_magic
 x 15
-y 8
+y 9
 end
 arch woodfloor
 x 15
-y 8
+y 9
 unique 1
 end
 arch dwall_2_1_2
 x 15
-y 8
+y 9
 end
 arch dungeon_magic
 x 15
-y 9
+y 10
 end
 arch woodfloor
 x 15
-y 9
+y 10
 unique 1
 end
 arch dungeon_magic
 x 15
-y 10
+y 11
 end
 arch woodfloor
 x 15
-y 10
+y 11
 unique 1
 end
 arch creator
 other_arch woodfloor
 x 15
-y 10
+y 11
 connected 7
 end
 arch goldfloor
@@ -3598,17 +5139,8 @@ name drop 20 amulets of Lifesaving for a portal to the Mazes of Menace
 slaying amulet_lifesave
 food 20
 x 15
-y 10
+y 11
 connected 7
-unique 1
-end
-arch dungeon_magic
-x 15
-y 11
-end
-arch woodfloor
-x 15
-y 11
 unique 1
 end
 arch dungeon_magic
@@ -3633,6 +5165,22 @@ arch dwall_2_1_2
 x 15
 y 13
 end
+arch trap_blades
+msg
+endmsg
+Cha 200000
+hp 1000
+dam 0
+x 15
+y 14
+level 100
+attacktype 0
+arch event_trigger
+name GUILD_TEMPLATE Initiate A
+title Python
+slaying /python/guilds/arrest.py
+end
+end
 arch dungeon_magic
 x 15
 y 14
@@ -3641,6 +5189,31 @@ arch woodfloor
 x 15
 y 14
 unique 1
+end
+arch button_lever
+name Tanning Room Reset Access
+msg
+Pull to pay out dues and fees.
+endmsg
+x 15
+y 14
+connected 9193
+end
+arch trap_blades
+msg
+endmsg
+Cha 200000
+hp 1000
+dam 0
+x 15
+y 15
+level 100
+attacktype 0
+arch event_trigger
+name GUILD_TEMPLATE Initiate A
+title Python
+slaying /python/guilds/arrest.py
+end
 end
 arch dungeon_magic
 x 15
@@ -3651,6 +5224,15 @@ x 15
 y 15
 unique 1
 end
+arch button_lever
+name Alchemy Room Reset Access
+msg
+Pull to pay out dues and fees.
+endmsg
+x 15
+y 15
+connected 9194
+end
 arch dungeon_magic
 x 15
 y 16
@@ -3660,11 +5242,14 @@ x 15
 y 16
 unique 1
 end
-arch check_floor
-slaying GuildMaster
+arch button_lever
+name Jewelry Room Reset Access
+msg
+Pull to pay out dues and fees.
+endmsg
 x 15
 y 16
-connected 918
+connected 9192
 end
 arch dungeon_magic
 x 15
@@ -3675,16 +5260,14 @@ x 15
 y 17
 unique 1
 end
-arch check_floor
-slaying GuildMaster
+arch button_lever
+name Wand Room Reset Access
+msg
+Pull to pay out dues and fees.
+endmsg
 x 15
 y 17
-connected 918
-end
-arch grate_closed_1
-x 15
-y 17
-connected 918
+connected 9191
 end
 arch dungeon_magic
 x 15
@@ -3694,12 +5277,6 @@ arch woodfloor
 x 15
 y 18
 unique 1
-end
-arch pedestal
-x 15
-y 18
-invisible 1
-connected 918
 end
 arch button_lever
 name Guild Dues
@@ -3781,7 +5358,7 @@ x 16
 y 4
 unique 1
 end
-arch dwall_3_4
+arch dwall_3_1
 x 16
 y 4
 end
@@ -3794,9 +5371,17 @@ x 16
 y 5
 unique 1
 end
-arch dwall_2_1_1
+arch button_lever
+name Alchemy Room Reset.
+slaying guild_alchemy
+msg
+Careful, make sure no one you care about is in there.
+endmsg
+hp 10
+sp 10
 x 16
 y 5
+type 66
 end
 arch dungeon_magic
 x 16
@@ -3807,10 +5392,6 @@ x 16
 y 6
 unique 1
 end
-arch dwall_2_1_1
-x 16
-y 6
-end
 arch dungeon_magic
 x 16
 y 7
@@ -3820,9 +5401,10 @@ x 16
 y 7
 unique 1
 end
-arch dwall_2_1_1
+arch grate_closed_1
 x 16
 y 7
+connected 9194
 end
 arch dungeon_magic
 x 16
@@ -3832,10 +5414,6 @@ arch woodfloor
 x 16
 y 8
 unique 1
-end
-arch dwall_3_4
-x 16
-y 8
 end
 arch dungeon_magic
 x 16
@@ -3846,7 +5424,7 @@ x 16
 y 9
 unique 1
 end
-arch dwall_2_1_1
+arch dwall_3_3
 x 16
 y 9
 end
@@ -3911,6 +5489,15 @@ x 16
 y 14
 unique 1
 end
+arch dungeon_magic
+x 16
+y 14
+end
+arch woodfloor
+x 16
+y 14
+unique 1
+end
 arch dwall_2_1_1
 x 16
 y 14
@@ -3924,6 +5511,15 @@ x 16
 y 15
 unique 1
 end
+arch dungeon_magic
+x 16
+y 15
+end
+arch woodfloor
+x 16
+y 15
+unique 1
+end
 arch dwall_2_1_1
 x 16
 y 15
@@ -3937,6 +5533,15 @@ x 16
 y 16
 unique 1
 end
+arch dungeon_magic
+x 16
+y 16
+end
+arch woodfloor
+x 16
+y 16
+unique 1
+end
 arch dwall_2_1_1
 x 16
 y 16
@@ -3950,6 +5555,15 @@ x 16
 y 17
 unique 1
 end
+arch dungeon_magic
+x 16
+y 17
+end
+arch woodfloor
+x 16
+y 17
+unique 1
+end
 arch dwall_2_1_1
 x 16
 y 17
@@ -3963,9 +5577,31 @@ x 16
 y 18
 unique 1
 end
+arch dungeon_magic
+x 16
+y 18
+end
+arch woodfloor
+x 16
+y 18
+unique 1
+end
 arch dwall_2_1_1
 x 16
 y 18
+end
+arch dungeon_magic
+x 16
+y 19
+end
+arch woodfloor
+x 16
+y 19
+unique 1
+end
+arch dwall_2_1_2
+x 16
+y 19
 end
 arch dungeon_magic
 x 16
@@ -3980,179 +5616,436 @@ arch dwall_2_2_4
 x 16
 y 19
 end
-arch blocked
-x 17
-end
-arch blocked
-x 17
-y 1
-end
-arch blocked
-x 17
-y 2
-end
-arch blocked
-x 17
-y 3
-end
-arch blocked
+arch dungeon_magic
 x 17
 y 4
 end
-arch blocked
+arch woodfloor
+x 17
+y 4
+unique 1
+end
+arch dwall_2_2_3
+x 17
+y 4
+end
+arch dungeon_magic
 x 17
 y 5
 end
-arch blocked
+arch woodfloor
+x 17
+y 5
+unique 1
+end
+arch dwall_2_1_1
+x 17
+y 5
+end
+arch dungeon_magic
 x 17
 y 6
 end
-arch blocked
+arch woodfloor
+x 17
+y 6
+unique 1
+end
+arch dwall_2_1_1
+x 17
+y 6
+end
+arch dungeon_magic
 x 17
 y 7
 end
-arch blocked
+arch woodfloor
+x 17
+y 7
+unique 1
+end
+arch dwall_2_1_1
+x 17
+y 7
+end
+arch dungeon_magic
 x 17
 y 8
 end
-arch blocked
+arch woodfloor
+x 17
+y 8
+unique 1
+end
+arch dwall_2_1_1
+x 17
+y 8
+end
+arch dungeon_magic
 x 17
 y 9
 end
-arch blocked
+arch woodfloor
 x 17
+y 9
+unique 1
+end
+arch dwall_2_1_2
+x 17
+y 9
+end
+arch dungeon_magic
+x 17
+y 9
+end
+arch woodfloor
+x 17
+y 9
+unique 1
+end
+arch dwall_2_2_4
+x 17
+y 9
+end
+arch lightningwall_5
+x 18
+speed 0.0
+level 100
+connected 9991
+move_block 0
+arch spell_large_lightning
+end
+end
+arch director_5
+x 18
+end
+arch detector
+slaying lightning
+x 18
+y 1
+speed 1.0
+connected 918
+end
+arch lightningwall_5
+sp 1
+x 18
+y 2
+speed 0.0
+level 100
+connected 9991
+move_block 0
+arch spell_large_lightning
+end
+end
+arch director_1
+x 18
+y 2
+end
+arch lightningwall_5
+sp 1
+x 18
+y 3
+speed 0.0
+level 100
+connected 9991
+move_block 0
+arch spell_large_lightning
+end
+end
+arch director_1
+x 18
+y 3
+end
+arch lightningwall_5
+sp 1
+x 18
+y 4
+speed 0.0
+level 100
+connected 9991
+move_block 0
+arch spell_large_lightning
+end
+end
+arch director_1
+x 18
+y 4
+end
+arch lightningwall_5
+sp 1
+x 18
+y 5
+speed 0.0
+level 100
+connected 9991
+move_block 0
+arch spell_large_lightning
+end
+end
+arch director_1
+x 18
+y 5
+end
+arch blocked
+x 18
+y 6
+end
+arch lightningwall_5
+sp 1
+x 18
+y 6
+speed 0.0
+level 100
+connected 9991
+move_block 0
+arch spell_large_lightning
+end
+end
+arch director_1
+x 18
+y 6
+end
+arch blocked
+x 18
+y 7
+end
+arch lightningwall_5
+sp 1
+x 18
+y 7
+speed 0.0
+level 100
+connected 9991
+move_block 0
+arch spell_large_lightning
+end
+end
+arch director_1
+x 18
+y 7
+end
+arch blocked
+x 18
+y 8
+end
+arch lightningwall_5
+sp 1
+x 18
+y 8
+speed 0.0
+level 100
+connected 9991
+move_block 0
+arch spell_large_lightning
+end
+end
+arch director_1
+x 18
+y 8
+end
+arch lightningwall_5
+sp 1
+x 18
+y 9
+speed 0.0
+level 100
+connected 9991
+move_block 0
+arch spell_large_lightning
+end
+end
+arch director_1
+x 18
+y 9
+end
+arch lightningwall_5
+sp 1
+x 18
+y 10
+speed 0.0
+level 100
+connected 9991
+move_block 0
+arch spell_large_lightning
+end
+end
+arch director_1
+x 18
 y 10
 end
 arch blocked
-x 17
+x 19
+end
+arch blocked
+x 19
+y 1
+end
+arch blocked
+x 19
+y 2
+end
+arch blocked
+x 19
+y 3
+end
+arch blocked
+x 19
+y 4
+end
+arch blocked
+x 19
+y 5
+end
+arch blocked
+x 19
+y 6
+end
+arch blocked
+x 19
+y 7
+end
+arch blocked
+x 19
+y 8
+end
+arch blocked
+x 19
+y 9
+end
+arch blocked
+x 19
+y 10
+end
+arch blocked
+x 19
 y 11
 end
 arch blocked
-x 17
+x 19
 y 12
 end
 arch blocked
-x 17
+x 19
 y 13
 end
 arch blocked
-x 17
+x 19
 y 14
 end
 arch blocked
-x 17
+x 19
 y 15
 end
 arch blocked
-x 17
+x 19
 y 16
 end
 arch blocked
-x 17
+x 19
 y 17
 end
 arch blocked
-x 17
+x 19
 y 18
 end
 arch blocked
-x 17
+x 19
 y 19
 end
 arch woodfloor
-x 18
+x 20
 unique 1
 end
 arch teleporter
 hp 18
 sp 1
-x 18
+x 20
 speed 0
 connected 3
 end
 arch boulder
-x 18
+x 20
 end
 arch woodfloor
-x 18
+x 20
 y 1
 unique 1
 end
 arch teleporter
 hp 18
 sp 2
-x 18
+x 20
 y 1
 speed 0
 connected 3
 end
 arch woodfloor
-x 18
+x 20
 y 2
 unique 1
 end
 arch teleporter
 hp 18
 sp 3
-x 18
+x 20
 y 2
 speed 0
 connected 3
 end
 arch woodfloor
-x 18
+x 20
 y 3
 unique 1
 end
 arch teleporter
 hp 18
 sp 4
-x 18
+x 20
 y 3
 speed 0
 connected 3
 end
 arch woodfloor
-x 18
+x 20
 y 4
 unique 1
 end
 arch teleporter
 hp 18
 sp 5
-x 18
+x 20
 y 4
 speed 0
 connected 3
 end
 arch woodfloor
-x 18
+x 20
 y 5
 unique 1
 end
 arch button_plate
-x 18
+x 20
 y 5
 connected 4
 end
 arch blocked
-x 18
+x 20
 y 6
 end
 arch woodfloor
-x 18
+x 20
 y 8
 unique 1
 end
 arch woodfloor
-x 18
+x 20
 y 9
 unique 1
 end
 arch teleporter
 hp 15
 sp 12
-x 18
+x 20
 y 9
 speed 0
 connected 7
@@ -4160,21 +6053,21 @@ end
 arch perm_magic_portal
 name The Mazes of Menace
 slaying /quests/peterm/Nethack_in_crossfire_entrance
-hp -1
-sp -1
-x 18
+hp 0
+sp 0
+x 20
 y 9
 walk_on 0
 fly_on 0
 end
 arch blocked
-x 18
+x 20
 y 10
 end
 arch teleporter
 hp 1
-sp 12
-x 18
+sp 11
+x 20
 y 11
 speed 0.0
 connected 10
@@ -4183,14 +6076,14 @@ arch altar_trigger
 name Drop 100 platinum to enter Jewelers Room
 slaying platinacoin
 food 200
-x 18
+x 20
 y 11
 connected 11
 end
 arch teleporter
 hp 15
-sp 6
-x 18
+sp 8
+x 20
 y 12
 speed 0.0
 connected 30
@@ -4199,19 +6092,19 @@ arch altar_trigger
 name Drop 100 platinum to enter Alchemy Room
 slaying platinacoin
 food 100
-x 18
+x 20
 y 12
 connected 31
 end
 arch teleporter
 hp 11
 sp 5
-x 18
+x 20
 y 13
 connected 80
 end
 arch pedestal_trigger
-x 18
+x 20
 y 13
 type 17
 invisible 1
@@ -4219,28 +6112,35 @@ connected 81
 end
 arch creator
 other_arch jadecoin
-x 18
+x 20
+y 14
+connected 52
+lifesave 1
+end
+arch creator
+other_arch jadecoin
+x 20
 y 14
 connected 41
 lifesave 1
 end
 arch creator
 other_arch jadecoin
-x 18
+x 20
 y 14
 connected 31
 lifesave 1
 end
 arch creator
 other_arch jadecoin
-x 18
+x 20
 y 14
 connected 21
 lifesave 1
 end
 arch creator
 other_arch jadecoin
-x 18
+x 20
 y 14
 connected 11
 lifesave 1
@@ -4248,58 +6148,115 @@ end
 arch teleporter
 hp 15
 sp 18
-x 18
+x 20
 y 14
 speed 0.0
 connected 999
 end
-arch blocked
-x 19
+arch woodfloor2
+x 20
+y 15
+end
+arch lightningwall_5
+dam 6
+x 20
+y 15
+speed 100.0
+arch spell_sm_lightning
+end
+end
+arch woodfloor2
+x 20
+y 17
+unique 1
+end
+arch grate_closed_1
+x 20
+y 17
+connected 953
+end
+arch woodfloor2
+x 20
+y 18
+end
+arch detector
+slaying lightning
+x 20
+y 18
+speed 1.0
+connected 955
+end
+arch woodfloor2
+x 20
+y 19
+end
+arch detector
+slaying lightning
+x 20
+y 19
+speed 1.0
+connected 5
 end
 arch blocked
-x 19
+x 21
+end
+arch button_small
+x 21
+connected 9991
+end
+arch dungeon_magic
+x 21
+end
+arch grass
+x 21
+end
+arch swall_2_1_2
+x 21
+end
+arch blocked
+x 21
 y 1
 end
 arch blocked
-x 19
+x 21
 y 2
 end
 arch blocked
-x 19
+x 21
 y 3
 end
 arch blocked
-x 19
+x 21
 y 4
 end
 arch blocked
-x 19
+x 21
 y 5
 end
 arch blocked
-x 19
+x 21
 y 6
 end
 arch blocked
-x 19
+x 21
 y 7
 end
 arch blocked
-x 19
+x 21
 y 8
 end
 arch blocked
-x 19
+x 21
 y 9
 end
 arch blocked
-x 19
+x 21
 y 10
 end
 arch teleporter
-hp 10
-sp 19
-x 19
+hp 12
+sp 18
+x 21
 y 11
 speed 0.0
 connected 20
@@ -4308,14 +6265,14 @@ arch altar_trigger
 name Drop 100 platinum to enter Thaumaturgy Room
 slaying platinacoin
 food 100
-x 19
+x 21
 y 11
 connected 21
 end
 arch teleporter
 hp 10
 sp 1
-x 19
+x 21
 y 12
 speed 0.0
 connected 40
@@ -4324,7 +6281,129 @@ arch altar_trigger
 name Drop 100 platinum to enter Glowing Crystal Room
 slaying platinacoin
 food 100
-x 19
+x 21
 y 12
 connected 41
+end
+arch blocked
+x 21
+y 15
+end
+arch blocked
+x 21
+y 16
+end
+arch blocked
+x 21
+y 17
+end
+arch blocked
+x 21
+y 18
+end
+arch lbulletwall_4
+name Vibrantly Glowing Crystal
+sp 5
+dam 6
+x 22
+speed 0.1
+level 107
+invisible 1
+move_block 0
+no_pass 0
+blocksview 0
+end
+arch woodfloor2
+x 22
+y 1
+end
+arch woodfloor2
+x 22
+y 2
+unique 1
+end
+arch grate_closed_1
+x 22
+y 2
+connected 50
+end
+arch woodfloor2
+x 22
+y 3
+end
+arch woodfloor2
+x 22
+y 4
+end
+arch woodfloor2
+x 22
+y 5
+end
+arch woodfloor2
+x 22
+y 6
+end
+arch grate_closed_1
+x 22
+y 6
+connected 331
+end
+arch woodfloor2
+x 22
+y 7
+end
+arch detector
+slaying lightning
+x 22
+y 7
+speed 1.0
+connected 335
+end
+arch director_3
+sp 1
+x 22
+y 8
+end
+arch woodfloor2
+x 22
+y 15
+end
+arch lightningwall_5
+dam 6
+x 22
+y 15
+speed 100.0
+arch spell_sm_lightning
+end
+end
+arch grass
+x 22
+y 17
+unique 1
+end
+arch grate_open_1
+x 22
+y 17
+connected 955
+end
+arch woodfloor2
+x 22
+y 18
+unique 1
+end
+arch grate_closed_1
+x 22
+y 18
+connected 952
+end
+arch woodfloor2
+x 22
+y 19
+end
+arch detector
+slaying lightning
+x 22
+y 19
+speed 1.0
+connected 953
 end

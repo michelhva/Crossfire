@@ -1,9 +1,10 @@
 arch map
 name Guild Tool Shed
+reset_timeout 300
 difficulty 1
 region Template
 width 28
-height 16
+height 18
 enter_x 14
 enter_y 4
 msg
@@ -12,8 +13,8 @@ Editor: CrossfireEditor
 Date:    3/17/2007
 Map finised by:  Alestan jehloq@yahoo.com
 Date:     8/27/2007
+Modified: 2009-12-12 perkins
 endmsg
-unique 1
 end
 arch grass
 end
@@ -64,6 +65,12 @@ y 14
 end
 arch grass
 y 15
+end
+arch grass
+y 16
+end
+arch grass
+y 17
 end
 arch grass
 x 1
@@ -100,7 +107,7 @@ arch flagstone
 x 1
 y 5
 end
-arch dwall_win1
+arch dwall_2_1_1
 x 1
 y 5
 end
@@ -116,9 +123,11 @@ arch flagstone
 x 1
 y 7
 end
-arch dwall_2_1_1
+arch dwall_win1
 x 1
 y 7
+no_magic 1
+damned 1
 end
 arch flagstone
 x 1
@@ -159,30 +168,48 @@ end
 arch dwall_2_1_1
 x 1
 y 12
+end
+arch flagstone
+x 1
+y 13
+end
+arch dwall_2_1_1
+x 1
+y 13
+end
+arch flagstone
+x 1
+y 14
+end
+arch dwall_2_1_1
+x 1
+y 14
 end
 arch dwall_win1
 x 1
-y 12
+y 14
+no_magic 1
+damned 1
 end
 arch flagstone
 x 1
-y 13
+y 15
 end
 arch dwall_2_1_1
 x 1
-y 13
+y 15
 end
 arch flagstone
 x 1
-y 14
+y 16
 end
 arch dwall_2_2_1
 x 1
-y 14
+y 16
 end
 arch grass
 x 1
-y 15
+y 17
 end
 arch grass
 x 2
@@ -212,11 +239,6 @@ x 2
 y 4
 unique 1
 end
-arch firepot
-x 2
-y 4
-glow_radius 4
-end
 arch flagstone
 x 2
 y 5
@@ -227,19 +249,34 @@ x 2
 y 6
 unique 1
 end
+arch firepot
+x 2
+y 6
+glow_radius 4
+end
 arch flagstone
 x 2
 y 7
 unique 1
 end
+arch flagstone
+x 2
+y 8
+unique 1
+end
+arch flagstone
+x 2
+y 9
+unique 1
+end
 arch dungeon_magic
 x 2
-y 7
+y 9
 end
 arch creator
 other_arch flagstone
 x 2
-y 7
+y 9
 connected 76
 arch flagstone
 unique 1
@@ -250,18 +287,18 @@ name drop 30,000 rubies for a forge
 slaying ruby
 food 30000
 x 2
-y 7
+y 9
 connected 130
 unique 1
 end
 arch flagstone
 x 2
-y 8
+y 10
 unique 1
 end
 arch dungeon_magic
 x 2
-y 8
+y 10
 end
 arch trigger_marker
 slaying guild_forge121
@@ -270,71 +307,71 @@ You have one day's use of these facilities.
 endmsg
 food 504
 x 2
-y 8
+y 10
 connected 131
 end
 arch dungeon_magic
 x 2
-y 9
+y 11
 end
 arch flagstone
 x 2
-y 9
+y 11
 unique 1
 end
 arch check_floor
 slaying guild_forge121
 x 2
-y 9
+y 11
 connected 132
 end
 arch flagstone
 x 2
-y 10
+y 12
 unique 1
 end
 arch grate_closed_1
 x 2
-y 10
+y 12
 connected 132
 end
 arch flagstone
 x 2
-y 11
+y 13
 unique 1
 end
 arch pedestal
 x 2
-y 11
+y 13
 invisible 1
 connected 132
 end
 arch flagstone
 x 2
-y 12
+y 14
 unique 1
 end
 arch flagstone
 x 2
-y 13
+y 15
 unique 1
 end
 arch firepot
 x 2
-y 13
+y 15
 glow_radius 4
 end
 arch flagstone
 x 2
-y 14
+y 16
 end
 arch dwall_2_1_2
 x 2
-y 14
+y 16
 end
 arch grass
 x 2
-y 15
+y 17
 end
 arch grass
 x 3
@@ -364,10 +401,6 @@ x 3
 y 4
 unique 1
 end
-arch charwoman
-x 3
-y 4
-end
 arch flagstone
 x 3
 y 5
@@ -376,24 +409,18 @@ end
 arch flagstone
 x 3
 y 6
-end
-arch dwall_2_2_2
-x 3
-y 6
+unique 1
 end
 arch flagstone
 x 3
 y 7
-end
-arch dwall_2_1_1
-x 3
-y 7
+unique 1
 end
 arch flagstone
 x 3
 y 8
 end
-arch dwall_2_1_1
+arch dwall_2_2_2
 x 3
 y 8
 end
@@ -417,31 +444,47 @@ arch flagstone
 x 3
 y 11
 end
-arch dwall_1_2
+arch dwall_2_1_1
 x 3
 y 11
 end
 arch flagstone
 x 3
 y 12
-unique 1
+end
+arch dwall_2_1_1
+x 3
+y 12
 end
 arch flagstone
 x 3
 y 13
-unique 1
+end
+arch dwall_1_2
+x 3
+y 13
 end
 arch flagstone
 x 3
 y 14
+unique 1
+end
+arch flagstone
+x 3
+y 15
+unique 1
+end
+arch flagstone
+x 3
+y 16
 end
 arch dwall_2_1_2
 x 3
-y 14
+y 16
 end
 arch grass
 x 3
-y 15
+y 17
 end
 arch grass
 x 4
@@ -479,14 +522,24 @@ end
 arch flagstone
 x 4
 y 6
-end
-arch dwall_2_1_2
-x 4
-y 6
+unique 1
 end
 arch flagstone
 x 4
 y 7
+unique 1
+end
+arch flagstone
+x 4
+y 8
+end
+arch dwall_2_1_2
+x 4
+y 8
+end
+arch flagstone
+x 4
+y 9
 unique 1
 end
 arch altar_trigger
@@ -498,25 +551,11 @@ endmsg
 exp 60
 food 25000
 x 4
-y 7
+y 9
 connected 8004
 end
 arch flagstone
 x 4
-y 8
-unique 1
-end
-arch charwoman
-x 4
-y 8
-end
-arch flagstone
-x 4
-y 9
-unique 1
-end
-arch flagstone
-x 4
 y 10
 unique 1
 end
@@ -524,11 +563,6 @@ arch flagstone
 x 4
 y 11
 unique 1
-end
-arch firepot
-x 4
-y 11
-glow_radius 4
 end
 arch flagstone
 x 4
@@ -538,23 +572,38 @@ end
 arch flagstone
 x 4
 y 13
+unique 1
+end
+arch firepot
+x 4
+y 13
+glow_radius 4
+end
+arch flagstone
+x 4
+y 14
+unique 1
+end
+arch flagstone
+x 4
+y 15
 unique 1
 end
 arch longtable_0
 x 4
-y 13
+y 15
 end
 arch flagstone
 x 4
-y 14
+y 16
 end
 arch dwall_2_1_2
 x 4
-y 14
+y 16
 end
 arch grass
 x 4
-y 15
+y 17
 end
 arch grass
 x 5
@@ -592,10 +641,7 @@ end
 arch flagstone
 x 5
 y 6
-end
-arch dwall_win2
-x 5
-y 6
+unique 1
 end
 arch flagstone
 x 5
@@ -605,39 +651,44 @@ end
 arch flagstone
 x 5
 y 8
+end
+arch dwall_win2
+x 5
+y 8
+no_magic 1
+damned 1
+end
+arch flagstone
+x 5
+y 9
+unique 1
+end
+arch flagstone
+x 5
+y 10
 unique 1
 end
 arch longtable_1_1
 x 5
-y 8
+y 10
 end
 arch flagstone
 x 5
-y 9
+y 11
 unique 1
 end
 arch longtable_2_1_1
 x 5
-y 9
+y 11
 end
 arch flagstone
 x 5
-y 10
+y 12
 unique 1
 end
 arch longtable_1_2
 x 5
-y 10
-end
-arch flagstone
-x 5
-y 11
-unique 1
-end
-arch flagstone
-x 5
 y 12
-unique 1
 end
 arch flagstone
 x 5
@@ -647,14 +698,24 @@ end
 arch flagstone
 x 5
 y 14
+unique 1
+end
+arch flagstone
+x 5
+y 15
+unique 1
+end
+arch flagstone
+x 5
+y 16
 end
 arch dwall_2_1_2
 x 5
-y 14
+y 16
 end
 arch grass
 x 5
-y 15
+y 17
 end
 arch grass
 x 6
@@ -692,31 +753,31 @@ end
 arch flagstone
 x 6
 y 6
-end
-arch dwall_2_1_2
-x 6
-y 6
+unique 1
 end
 arch flagstone
 x 6
 y 7
 unique 1
-end
-arch firepot
-x 6
-y 7
-glow_radius 4
 end
 arch flagstone
 x 6
 y 8
-unique 1
+end
+arch dwall_2_1_2
+x 6
+y 8
 end
 arch flagstone
 x 6
 y 9
 unique 1
 end
+arch firepot
+x 6
+y 9
+glow_radius 4
+end
 arch flagstone
 x 6
 y 10
@@ -732,6 +793,63 @@ x 6
 y 12
 unique 1
 end
+arch woodfloor
+x 6
+y 12
+unique 1
+end
+arch lightningwall_5
+sp 0
+x 6
+y 12
+speed 0.0
+level 111
+invisible 1
+connected 991
+move_block 0
+blocksview 0
+no_damage 1
+arch spell_banishment
+end
+end
+arch woodfloor
+x 6
+y 12
+unique 1
+end
+arch lightningwall_5
+x 6
+y 12
+speed 0.0
+level 111
+invisible 1
+connected 991
+move_block 0
+blocksview 0
+no_damage 1
+arch spelldirect_dragonbreath
+other_arch god_power
+sp 0
+level 115
+duration 20
+casting_time 0
+end
+end
+arch woodfloor
+x 6
+y 12
+unique 1
+end
+arch table_burl_3
+x 6
+y 12
+no_pick 1
+end
+arch flagstone
+x 6
+y 12
+unique 1
+end
 arch flagstone
 x 6
 y 13
@@ -740,14 +858,26 @@ end
 arch flagstone
 x 6
 y 14
+unique 1
+end
+arch flagstone
+x 6
+y 15
+unique 1
+end
+arch flagstone
+x 6
+y 16
 end
 arch dwall_win2
 x 6
-y 14
+y 16
+no_magic 1
+damned 1
 end
 arch grass
 x 6
-y 15
+y 17
 end
 arch grass
 x 7
@@ -768,9 +898,11 @@ arch flagstone
 x 7
 y 3
 end
-arch dwall_2_1_2
+arch dwall_win2
 x 7
 y 3
+no_magic 1
+damned 1
 end
 arch flagstone
 x 7
@@ -785,50 +917,42 @@ end
 arch flagstone
 x 7
 y 6
-end
-arch dwall_2_1_2
-x 7
-y 6
+unique 1
 end
 arch flagstone
 x 7
 y 7
+unique 1
+end
+arch flagstone
+x 7
+y 8
+end
+arch dwall_2_1_2
+x 7
+y 8
+end
+arch flagstone
+x 7
+y 9
 unique 1
 end
 arch barrel
 x 7
-y 7
+y 9
 end
 arch flagstone
 x 7
-y 8
+y 10
 unique 1
 end
 arch flagstone
 x 7
-y 9
+y 11
 unique 1
 end
 arch longtable_1_1
 x 7
-y 9
-end
-arch flagstone
-x 7
-y 10
-unique 1
-end
-arch longtable_2_1_1
-x 7
-y 10
-end
-arch flagstone
-x 7
-y 11
-unique 1
-end
-arch longtable_1_2
-x 7
 y 11
 end
 arch flagstone
@@ -836,22 +960,40 @@ x 7
 y 12
 unique 1
 end
+arch longtable_2_1_1
+x 7
+y 12
+end
 arch flagstone
 x 7
 y 13
 unique 1
 end
+arch longtable_1_2
+x 7
+y 13
+end
 arch flagstone
 x 7
 y 14
+unique 1
+end
+arch flagstone
+x 7
+y 15
+unique 1
+end
+arch flagstone
+x 7
+y 16
 end
 arch dwall_2_1_2
 x 7
-y 14
+y 16
 end
 arch grass
 x 7
-y 15
+y 17
 end
 arch grass
 x 8
@@ -872,25 +1014,39 @@ arch flagstone
 x 8
 y 3
 end
-arch dwall_win2
+arch dwall_2_1_2
+x 8
+y 3
+end
+arch flagstone
+x 8
+y 3
+end
+arch dwall_3_3
 x 8
 y 3
 end
 arch flagstone
 x 8
 y 4
-unique 1
+end
+arch dwall_2_1_1
+x 8
+y 4
 end
 arch flagstone
 x 8
 y 5
-unique 1
+end
+arch dwall_2_1_1
+x 8
+y 5
 end
 arch flagstone
 x 8
 y 6
 end
-arch dwall_win2
+arch dwall_2_2_1
 x 8
 y 6
 end
@@ -902,7 +1058,12 @@ end
 arch flagstone
 x 8
 y 8
-unique 1
+end
+arch dwall_win2
+x 8
+y 8
+no_magic 1
+damned 1
 end
 arch flagstone
 x 8
@@ -929,21 +1090,31 @@ x 8
 y 13
 unique 1
 end
-arch longtable_0
-x 8
-y 13
-end
 arch flagstone
 x 8
 y 14
+unique 1
+end
+arch flagstone
+x 8
+y 15
+unique 1
+end
+arch longtable_0
+x 8
+y 15
+end
+arch flagstone
+x 8
+y 16
 end
 arch dwall_2_1_2
 x 8
-y 14
+y 16
 end
 arch grass
 x 8
-y 15
+y 17
 end
 arch grass
 x 9
@@ -970,24 +1141,18 @@ y 3
 end
 arch flagstone
 x 9
-y 3
-end
-arch dwall_3_3
-x 9
-y 3
-end
-arch flagstone
-x 9
 y 4
+no_magic 1
 unique 1
 end
-arch flagstone
+arch button_lever
+name Hard Reset
+msg
+Pull this lever to clear the room.
+endmsg
 x 9
 y 4
-end
-arch dwall_1_2
-x 9
-y 4
+connected 991
 end
 arch flagstone
 x 9
@@ -998,51 +1163,52 @@ arch flagstone
 x 9
 y 6
 end
-arch dwall_2_1_2
+arch dwall_1_3
 x 9
 y 6
 end
 arch flagstone
 x 9
 y 7
+unique 1
+end
+arch flagstone
+x 9
+y 8
+end
+arch dwall_2_1_2
+x 9
+y 8
+end
+arch flagstone
+x 9
+y 9
 unique 1
 end
 arch duplicator
 other_arch forge
 x 9
-y 7
+y 9
 connected 8004
 activate_on_release 0
 end
 arch creator
 other_arch forge
 x 9
-y 7
+y 9
 connected 8004
 lifesave 1
 activate_on_push 0
 arch forge
 magic 4
+container 1000000
 end
 end
 arch forge
 x 9
-y 7
+y 9
 magic 4
-end
-arch flagstone
-x 9
-y 8
-unique 1
-end
-arch flagstone
-x 9
-y 9
-unique 1
-end
-arch barrel
-x 9
-y 9
+container 1000000
 end
 arch flagstone
 x 9
@@ -1054,7 +1220,7 @@ x 9
 y 11
 unique 1
 end
-arch longtable_0
+arch barrel
 x 9
 y 11
 end
@@ -1068,22 +1234,36 @@ x 9
 y 13
 unique 1
 end
-arch firepot
+arch longtable_0
 x 9
 y 13
-glow_radius 4
 end
 arch flagstone
 x 9
 y 14
+unique 1
+end
+arch flagstone
+x 9
+y 15
+unique 1
+end
+arch firepot
+x 9
+y 15
+glow_radius 4
+end
+arch flagstone
+x 9
+y 16
 end
 arch dwall_2_1_2
 x 9
-y 14
+y 16
 end
 arch grass
 x 9
-y 15
+y 17
 end
 arch grass
 x 10
@@ -1111,14 +1291,8 @@ end
 arch flagstone
 x 10
 y 4
+no_magic 1
 unique 1
-end
-arch check_floor
-slaying GuildMaster
-x 10
-y 4
-connected 122
-move_block all
 end
 arch button_lever
 name Dues
@@ -1134,28 +1308,49 @@ x 10
 y 5
 unique 1
 end
+arch trap_blades
+msg
+
+endmsg
+Cha 127
+hp 1000
+dam 0
+x 10
+y 6
+level 100
+attacktype 0
+move_on walk fly low
+arch event_trigger
+name GUILD_TEMPLATE Initiate A
+title Python
+slaying /python/guilds/arrest.py
+end
+end
+arch dungeon_magic
+x 10
+y 6
+end
 arch flagstone
 x 10
 y 6
+unique 1
+end
+arch grate_closed_1
+x 10
+y 6
+connected 918
+end
+arch flagstone
+x 10
+y 7
+unique 1
+end
+arch flagstone
+x 10
+y 8
 end
 arch dwall_3_3
 x 10
-y 6
-end
-arch flagstone
-x 10
-y 7
-end
-arch dwall_2_1_1
-x 10
-y 7
-end
-arch flagstone
-x 10
-y 8
-end
-arch dwall_2_1_1
-x 10
 y 8
 end
 arch flagstone
@@ -1169,26 +1364,28 @@ end
 arch flagstone
 x 10
 y 10
+end
+arch dwall_2_1_1
+x 10
+y 10
+end
+arch flagstone
+x 10
+y 11
+end
+arch dwall_2_1_1
+x 10
+y 11
+end
+arch flagstone
+x 10
+y 12
 end
 arch dwall_win1
 x 10
-y 10
-end
-arch flagstone
-x 10
-y 11
-end
-arch dwall_2_1_1
-x 10
-y 11
-end
-arch flagstone
-x 10
 y 12
-end
-arch dwall_2_1_1
-x 10
-y 12
+no_magic 1
+damned 1
 end
 arch flagstone
 x 10
@@ -1201,14 +1398,30 @@ end
 arch flagstone
 x 10
 y 14
+end
+arch dwall_2_1_1
+x 10
+y 14
+end
+arch flagstone
+x 10
+y 15
+end
+arch dwall_2_1_1
+x 10
+y 15
+end
+arch flagstone
+x 10
+y 16
 end
 arch dwall_3_1
 x 10
-y 14
+y 16
 end
 arch grass
 x 10
-y 15
+y 17
 end
 arch grass
 x 11
@@ -1235,35 +1448,54 @@ y 3
 end
 arch flagstone
 x 11
-y 3
-end
-arch dwall_3_3
-x 11
-y 3
-end
-arch flagstone
-x 11
 y 4
+no_magic 1
 unique 1
 end
-arch flagstone
+arch button_lever
+name Hard Reset
+msg
+Pull this lever to clear the room.
+endmsg
 x 11
 y 4
-end
-arch dwall_1_2
-x 11
-y 4
+connected 990
 end
 arch flagstone
 x 11
 y 5
 unique 1
 end
+arch guard
+x 11
+y 5
+level 1000
+attacktype 5201023
+monster 0
+friendly 1
+hitback 1
+reflect_missile 0
+reflect_spell 0
+can_use_scroll 1
+can_use_bow 1
+can_use_armour 1
+can_use_weapon 1
+can_use_ring 1
+can_use_skill 1
+can_use_rod 1
+can_see_in_dark 1
+can_use_wand 1
+arch event_say
+name GUILD_TEMPLATE GuildMaster
+title Python
+slaying /python/guilds/clearance.py
+end
+end
 arch flagstone
 x 11
 y 6
 end
-arch dwall_2_1_2
+arch dwall_1_4
 x 11
 y 6
 end
@@ -1272,38 +1504,44 @@ x 11
 y 7
 unique 1
 end
+arch flagstone
+x 11
+y 8
+end
+arch dwall_2_1_2
+x 11
+y 8
+end
+arch flagstone
+x 11
+y 9
+unique 1
+end
 arch duplicator
 other_arch workbench
 x 11
-y 7
+y 9
 connected 8005
 activate_on_release 0
 end
 arch creator
 other_arch workbench
 x 11
-y 7
+y 9
 connected 8005
 lifesave 1
 activate_on_push 0
 arch workbench
+weight 100000
 magic 4
+container 1000000
 end
 end
 arch workbench
 x 11
-y 7
-magic 4
-end
-arch flagstone
-x 11
-y 8
-unique 1
-end
-arch flagstone
-x 11
 y 9
-unique 1
+magic 4
+container 1000000
 end
 arch flagstone
 x 11
@@ -1325,22 +1563,32 @@ x 11
 y 13
 unique 1
 end
+arch flagstone
+x 11
+y 14
+unique 1
+end
+arch flagstone
+x 11
+y 15
+unique 1
+end
 arch firepot
 x 11
-y 13
+y 15
 glow_radius 4
 end
 arch flagstone
 x 11
-y 14
+y 16
 end
 arch dwall_2_1_2
 x 11
-y 14
+y 16
 end
 arch grass
 x 11
-y 15
+y 17
 end
 arch grass
 x 12
@@ -1367,19 +1615,33 @@ y 3
 end
 arch flagstone
 x 12
+y 3
+end
+arch dwall_3_3
+x 12
+y 3
+end
+arch flagstone
+x 12
 y 4
-unique 1
+end
+arch dwall_2_1_1
+x 12
+y 4
 end
 arch flagstone
 x 12
 y 5
-unique 1
+end
+arch dwall_2_1_1
+x 12
+y 5
 end
 arch flagstone
 x 12
 y 6
 end
-arch dwall_win2
+arch dwall_2_2_4
 x 12
 y 6
 end
@@ -1391,16 +1653,17 @@ end
 arch flagstone
 x 12
 y 8
-unique 1
+end
+arch dwall_win2
+x 12
+y 8
+no_magic 1
+damned 1
 end
 arch flagstone
 x 12
 y 9
 unique 1
-end
-arch longtable_1_4
-x 12
-y 9
 end
 arch flagstone
 x 12
@@ -1426,21 +1689,35 @@ x 12
 y 13
 unique 1
 end
-arch longtable_0
+arch longtable_1_4
 x 12
 y 13
 end
 arch flagstone
 x 12
 y 14
+unique 1
+end
+arch flagstone
+x 12
+y 15
+unique 1
+end
+arch longtable_0
+x 12
+y 15
+end
+arch flagstone
+x 12
+y 16
 end
 arch dwall_2_1_2
 x 12
-y 14
+y 16
 end
 arch grass
 x 12
-y 15
+y 17
 end
 arch grass
 x 13
@@ -1470,11 +1747,6 @@ x 13
 y 4
 unique 1
 end
-arch firepot
-x 13
-y 4
-glow_radius 4
-end
 arch flagstone
 x 13
 y 5
@@ -1483,31 +1755,32 @@ end
 arch flagstone
 x 13
 y 6
+unique 1
 end
-arch dwall_2_1_2
+arch firepot
 x 13
 y 6
+glow_radius 4
 end
 arch flagstone
 x 13
 y 7
 unique 1
-end
-arch longtable_0
-x 13
-y 7
 end
 arch flagstone
 x 13
 y 8
-unique 1
+end
+arch dwall_2_1_2
+x 13
+y 8
 end
 arch flagstone
 x 13
 y 9
 unique 1
 end
-arch longtable_1_3
+arch longtable_0
 x 13
 y 9
 end
@@ -1535,17 +1808,31 @@ x 13
 y 13
 unique 1
 end
+arch longtable_1_3
+x 13
+y 13
+end
 arch flagstone
 x 13
 y 14
+unique 1
+end
+arch flagstone
+x 13
+y 15
+unique 1
+end
+arch flagstone
+x 13
+y 16
 end
 arch dwall_2_1_2
 x 13
-y 14
+y 16
 end
 arch grass
 x 13
-y 15
+y 17
 end
 arch grass
 x 14
@@ -1583,19 +1870,7 @@ sp 22
 x 14
 y 3
 end
-arch magic_mouth
-msg
-Did you clean up after yourself?
-If not, the cleaning staff will.
-endmsg
-x 14
-y 4
-end
 arch flagstone
-msg
-Be sure to leave no items behind;
-the cleaning service is very, very thorough!
-endmsg
 x 14
 y 4
 unique 1
@@ -1605,13 +1880,22 @@ x 14
 y 5
 unique 1
 end
-arch flagstone
+arch magic_mouth
+msg
+Did you clean up after yourself?
+If not, the cleaning staff will.
+endmsg
 x 14
 y 6
 end
-arch dwall_2_1_2
+arch flagstone
+msg
+Be sure to leave no items behind;
+the cleaning service is very, very thorough!
+endmsg
 x 14
 y 6
+unique 1
 end
 arch flagstone
 x 14
@@ -1621,7 +1905,10 @@ end
 arch flagstone
 x 14
 y 8
-unique 1
+end
+arch dwall_2_1_2
+x 14
+y 8
 end
 arch flagstone
 x 14
@@ -1643,6 +1930,58 @@ x 14
 y 12
 unique 1
 end
+arch woodfloor
+x 14
+y 12
+unique 1
+end
+arch lightningwall_5
+sp 0
+x 14
+y 12
+speed 0.0
+level 111
+invisible 1
+connected 990
+move_block 0
+blocksview 0
+no_damage 1
+arch spell_banishment
+end
+end
+arch woodfloor
+x 14
+y 12
+unique 1
+end
+arch lightningwall_5
+x 14
+y 12
+speed 0.0
+level 111
+invisible 1
+connected 990
+move_block 0
+blocksview 0
+no_damage 1
+arch spelldirect_dragonbreath
+other_arch god_power
+sp 0
+level 115
+duration 20
+casting_time 0
+end
+end
+arch woodfloor
+x 14
+y 12
+unique 1
+end
+arch flagstone
+x 14
+y 12
+unique 1
+end
 arch flagstone
 x 14
 y 13
@@ -1651,14 +1990,26 @@ end
 arch flagstone
 x 14
 y 14
+unique 1
+end
+arch flagstone
+x 14
+y 15
+unique 1
+end
+arch flagstone
+x 14
+y 16
 end
 arch dwall_win2
 x 14
-y 14
+y 16
+no_magic 1
+damned 1
 end
 arch grass
 x 14
-y 15
+y 17
 end
 arch grass
 x 15
@@ -1688,11 +2039,6 @@ x 15
 y 4
 unique 1
 end
-arch firepot
-x 15
-y 4
-glow_radius 4
-end
 arch flagstone
 x 15
 y 5
@@ -1701,24 +2047,27 @@ end
 arch flagstone
 x 15
 y 6
+unique 1
 end
-arch dwall_win2
+arch firepot
 x 15
 y 6
+glow_radius 4
 end
 arch flagstone
 x 15
 y 7
 unique 1
-end
-arch charwoman
-x 15
-y 7
 end
 arch flagstone
 x 15
 y 8
-unique 1
+end
+arch dwall_win2
+x 15
+y 8
+no_magic 1
+damned 1
 end
 arch flagstone
 x 15
@@ -1745,21 +2094,31 @@ x 15
 y 13
 unique 1
 end
-arch longtable_0
-x 15
-y 13
-end
 arch flagstone
 x 15
 y 14
+unique 1
+end
+arch flagstone
+x 15
+y 15
+unique 1
+end
+arch longtable_0
+x 15
+y 15
+end
+arch flagstone
+x 15
+y 16
 end
 arch dwall_2_1_2
 x 15
-y 14
+y 16
 end
 arch grass
 x 15
-y 15
+y 17
 end
 arch grass
 x 16
@@ -1797,14 +2156,24 @@ end
 arch flagstone
 x 16
 y 6
-end
-arch dwall_2_1_2
-x 16
-y 6
+unique 1
 end
 arch flagstone
 x 16
 y 7
+unique 1
+end
+arch flagstone
+x 16
+y 8
+end
+arch dwall_2_1_2
+x 16
+y 8
+end
+arch flagstone
+x 16
+y 9
 unique 1
 end
 arch altar_trigger
@@ -1816,63 +2185,63 @@ endmsg
 exp 60
 food 25000
 x 16
-y 7
+y 9
 connected 8005
 end
 arch flagstone
 x 16
-y 8
+y 10
 unique 1
 end
 arch longtable_1_1
 x 16
-y 8
+y 10
 end
 arch flagstone
 x 16
-y 9
+y 11
 unique 1
 end
 arch longtable_1_2
 x 16
-y 9
+y 11
 end
 arch flagstone
 x 16
-y 10
+y 12
 unique 1
 end
 arch flagstone
 x 16
-y 11
+y 13
 unique 1
 end
 arch firepot
 x 16
-y 11
+y 13
 glow_radius 4
 end
 arch flagstone
 x 16
-y 12
-unique 1
-end
-arch flagstone
-x 16
-y 13
-unique 1
-end
-arch flagstone
-x 16
 y 14
+unique 1
+end
+arch flagstone
+x 16
+y 15
+unique 1
+end
+arch flagstone
+x 16
+y 16
 end
 arch dwall_2_1_2
 x 16
-y 14
+y 16
 end
 arch grass
 x 16
-y 15
+y 17
 end
 arch grass
 x 17
@@ -1902,10 +2271,6 @@ x 17
 y 4
 unique 1
 end
-arch charwoman
-x 17
-y 4
-end
 arch flagstone
 x 17
 y 5
@@ -1914,25 +2279,19 @@ end
 arch flagstone
 x 17
 y 6
+unique 1
+end
+arch flagstone
+x 17
+y 7
+unique 1
+end
+arch flagstone
+x 17
+y 8
 end
 arch dwall_2_2_3
 x 17
-y 6
-end
-arch flagstone
-x 17
-y 7
-end
-arch dwall_2_1_1
-x 17
-y 7
-end
-arch flagstone
-x 17
-y 8
-end
-arch dwall_2_1_1
-x 17
 y 8
 end
 arch flagstone
@@ -1955,31 +2314,47 @@ arch flagstone
 x 17
 y 11
 end
-arch dwall_1_2
+arch dwall_2_1_1
 x 17
 y 11
 end
 arch flagstone
 x 17
 y 12
-unique 1
+end
+arch dwall_2_1_1
+x 17
+y 12
 end
 arch flagstone
 x 17
 y 13
-unique 1
+end
+arch dwall_1_2
+x 17
+y 13
 end
 arch flagstone
 x 17
 y 14
+unique 1
+end
+arch flagstone
+x 17
+y 15
+unique 1
+end
+arch flagstone
+x 17
+y 16
 end
 arch dwall_2_1_2
 x 17
-y 14
+y 16
 end
 arch grass
 x 17
-y 15
+y 17
 end
 arch grass
 x 18
@@ -2022,16 +2397,26 @@ end
 arch flagstone
 x 18
 y 7
+unique 1
+end
+arch flagstone
+x 18
+y 8
+unique 1
+end
+arch flagstone
+x 18
+y 9
 unique 1
 end
 arch dungeon_magic
 x 18
-y 7
+y 9
 end
 arch creator
 other_arch flagstone
 x 18
-y 7
+y 9
 connected 76
 arch flagstone
 unique 1
@@ -2042,18 +2427,18 @@ name drop 30,000 rubies for a workbench
 slaying ruby
 food 30000
 x 18
-y 7
+y 9
 connected 120
 unique 1
 end
 arch flagstone
 x 18
-y 8
+y 10
 unique 1
 end
 arch dungeon_magic
 x 18
-y 8
+y 10
 end
 arch trigger_marker
 slaying guild_boyer121
@@ -2062,42 +2447,22 @@ You have one day's use of these facilities.
 endmsg
 food 504
 x 18
-y 8
+y 10
 connected 121
 end
 arch dungeon_magic
 x 18
-y 9
+y 11
 end
 arch flagstone
 x 18
-y 9
+y 11
 unique 1
 end
 arch check_floor
 slaying guild_boyer121
 x 18
-y 9
-connected 122
-end
-arch flagstone
-x 18
-y 10
-unique 1
-end
-arch grate_closed_1
-x 18
-y 10
-connected 122
-end
-arch flagstone
-x 18
 y 11
-end
-arch pedestal
-x 18
-y 11
-invisible 1
 connected 122
 end
 arch flagstone
@@ -2105,27 +2470,47 @@ x 18
 y 12
 unique 1
 end
+arch grate_closed_1
+x 18
+y 12
+connected 122
+end
 arch flagstone
 x 18
 y 13
+end
+arch pedestal
+x 18
+y 13
+invisible 1
+connected 122
+end
+arch flagstone
+x 18
+y 14
+unique 1
+end
+arch flagstone
+x 18
+y 15
 unique 1
 end
 arch firepot
 x 18
-y 13
+y 15
 glow_radius 4
 end
 arch flagstone
 x 18
-y 14
+y 16
 end
 arch dwall_2_1_2
 x 18
-y 14
+y 16
 end
 arch grass
 x 18
-y 15
+y 17
 end
 arch grass
 x 19
@@ -2173,7 +2558,7 @@ arch flagstone
 x 19
 y 5
 end
-arch dwall_win1
+arch dwall_2_1_1
 x 19
 y 5
 end
@@ -2189,9 +2574,11 @@ arch flagstone
 x 19
 y 7
 end
-arch dwall_3_2
+arch dwall_win1
 x 19
 y 7
+no_magic 1
+damned 1
 end
 arch flagstone
 x 19
@@ -2205,7 +2592,7 @@ arch flagstone
 x 19
 y 9
 end
-arch dwall_2_1_1
+arch dwall_3_2
 x 19
 y 9
 end
@@ -2213,7 +2600,7 @@ arch flagstone
 x 19
 y 10
 end
-arch dwall_3_2
+arch dwall_2_1_1
 x 19
 y 10
 end
@@ -2228,30 +2615,48 @@ end
 arch flagstone
 x 19
 y 12
+end
+arch dwall_3_2
+x 19
+y 12
+end
+arch flagstone
+x 19
+y 13
+end
+arch dwall_2_1_1
+x 19
+y 13
+end
+arch flagstone
+x 19
+y 14
 end
 arch dwall_win1
 x 19
-y 12
+y 14
+no_magic 1
+damned 1
 end
 arch flagstone
 x 19
-y 13
+y 15
 end
 arch dwall_2_1_1
 x 19
-y 13
+y 15
 end
 arch flagstone
 x 19
-y 14
+y 16
 end
 arch dwall_2_2_4
 x 19
-y 14
+y 16
 end
 arch grass
 x 19
-y 15
+y 17
 end
 arch grass
 x 20
@@ -2284,36 +2689,36 @@ arch grass
 x 20
 y 6
 end
-arch flagstone
+arch grass
 x 20
 y 7
+end
+arch grass
+x 20
+y 8
+end
+arch flagstone
+x 20
+y 9
 end
 arch dwall_1_3
 x 20
-y 7
-end
-arch flagstone
-x 20
-y 8
-end
-arch flagstone
-x 20
 y 9
 end
 arch flagstone
 x 20
 y 10
+end
+arch flagstone
+x 20
+y 11
+end
+arch flagstone
+x 20
+y 12
 end
 arch dwall_1_3
 x 20
-y 10
-end
-arch grass
-x 20
-y 11
-end
-arch grass
-x 20
 y 12
 end
 arch grass
@@ -2328,8 +2733,32 @@ arch grass
 x 20
 y 15
 end
+arch grass
+x 20
+y 16
+end
+arch grass
+x 20
+y 17
+end
 arch blocked
 x 21
+end
+arch dungeon_magic
+x 21
+end
+arch grass
+x 21
+end
+arch swall_2_1_2
+x 21
+end
+arch blocked
+x 21
+end
+arch button_small
+x 21
+connected 9991
 end
 arch blocked
 x 21
@@ -2454,26 +2883,82 @@ arch blocked
 x 22
 y 15
 end
-arch blocked
+arch lightningwall_5
+x 23
+speed 0.0
+level 100
+connected 9991
+move_block 0
+arch spell_large_lightning
+end
+end
+arch director_5
 x 23
 end
-arch blocked
+arch detector
+slaying lightning
 x 23
 y 1
+speed 1.0
+connected 918
 end
-arch blocked
+arch lightningwall_5
+sp 1
+x 23
+y 2
+speed 0.0
+level 100
+connected 9991
+move_block 0
+arch spell_large_lightning
+end
+end
+arch director_1
 x 23
 y 2
 end
-arch blocked
+arch lightningwall_5
+sp 1
+x 23
+y 3
+speed 0.0
+level 100
+connected 9991
+move_block 0
+arch spell_large_lightning
+end
+end
+arch director_1
 x 23
 y 3
 end
-arch blocked
+arch lightningwall_5
+sp 1
+x 23
+y 4
+speed 0.0
+level 100
+connected 9991
+move_block 0
+arch spell_large_lightning
+end
+end
+arch director_1
 x 23
 y 4
 end
-arch blocked
+arch lightningwall_5
+sp 1
+x 23
+y 5
+speed 0.0
+level 100
+connected 9991
+move_block 0
+arch spell_large_lightning
+end
+end
+arch director_1
 x 23
 y 5
 end
@@ -2481,7 +2966,37 @@ arch blocked
 x 23
 y 6
 end
+arch lightningwall_5
+sp 1
+x 23
+y 6
+speed 0.0
+level 100
+connected 9991
+move_block 0
+arch spell_large_lightning
+end
+end
+arch director_1
+x 23
+y 6
+end
 arch blocked
+x 23
+y 7
+end
+arch lightningwall_5
+sp 1
+x 23
+y 7
+speed 0.0
+level 100
+connected 9991
+move_block 0
+arch spell_large_lightning
+end
+end
+arch director_1
 x 23
 y 7
 end
@@ -2489,33 +3004,50 @@ arch blocked
 x 23
 y 8
 end
-arch blocked
+arch lightningwall_5
+sp 1
+x 23
+y 8
+speed 0.0
+level 100
+connected 9991
+move_block 0
+arch spell_large_lightning
+end
+end
+arch director_1
+x 23
+y 8
+end
+arch lightningwall_5
+sp 1
+x 23
+y 9
+speed 0.0
+level 100
+connected 9991
+move_block 0
+arch spell_large_lightning
+end
+end
+arch director_1
 x 23
 y 9
 end
-arch blocked
+arch lightningwall_5
+sp 1
 x 23
 y 10
+speed 0.0
+level 100
+connected 9991
+move_block 0
+arch spell_large_lightning
 end
-arch blocked
-x 23
-y 11
 end
-arch blocked
+arch director_1
 x 23
-y 12
-end
-arch blocked
-x 23
-y 13
-end
-arch blocked
-x 23
-y 14
-end
-arch blocked
-x 23
-y 15
+y 10
 end
 arch blocked
 x 24

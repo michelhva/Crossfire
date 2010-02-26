@@ -28,15 +28,22 @@ activatorname=activator.Name
 mymap = activator.Map
 x=32
 y=16
+x1=36
+y1=20
+activatorx=activator.X
+activatory=activator.Y
 whoami=Crossfire.WhoAmI()
-guildname=Crossfire.ScriptParameters() # 6 is say event
 
+guildname=Crossfire.ScriptParameters() # 6 is say event
+print guildname
 if (guildname):
 
     guild = CFGuilds.CFGuild(guildname)
     text = Crossfire.WhatIsMessage().split()
     guildrecord = CFGuilds.CFGuildHouses().info(guildname)
+    whoami.Say(str(type(guildrecord)))
     found = 0
+    whoami.Say(guildrecord['Status'])
     if text[0] == 'enter' or text[0] == 'Enter':
 
             if guildrecord['Status'] == 'inactive':
@@ -58,24 +65,31 @@ if (guildname):
                         message = 'Granted, but you are on probation'
                         x=15
 			y=22
+			activator.Teleport(mymap,int(x1),int(y1))
+			activator.Teleport(mymap,int(activatorx),int(activatory))
                     else:
                         message = 'Entry granted for %s' %activatorname
                         y=22
 			x=15
+			activator.Teleport(mymap,int(x1),int(y1))
+			activator.Teleport(mymap,int(activatorx),int(activatory))
                 else:
                     message = 'You try my patience %s.  BEGONE!' %activatorname
-                activator.Teleport(mymap,int(x),int(y)) #teleport them
+                    activator.Teleport(mymap,int(x),int(y)) #teleport them
 
     elif text[0] == 'buy' or text[0] == 'Buy':
         if guildrecord['Status'] == 'inactive':
             in_guild = CFGuilds.SearchGuilds(activatorname)
             if in_guild == 0:
                 x = 30
-                y = 22
+                y = 19
                 message = "Proceed, but know ye that three are required to found a guild and the cost is high"
                 activator.Teleport(mymap,int(x),int(y)) #teleport them
             else:
-                message = "Sorry you already belong to the %s guild.  You must quit that guild before founding your own." %in_guild
+                x = 30
+                y = 19
+                message = "Proceed, but know ye that three are required to found a guild and the cost is high"
+                activator.Teleport(mymap,int(x),int(y)) #teleport them
         else:
             message = 'This guild is already owned.'
     else:
@@ -85,3 +99,5 @@ else:
     message = 'Guild Guardian Error, please notify a DM'
 
 whoami.Say(message)
+
+print guild
