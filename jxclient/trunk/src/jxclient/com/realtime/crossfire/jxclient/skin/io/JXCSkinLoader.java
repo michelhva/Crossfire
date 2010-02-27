@@ -59,6 +59,7 @@ import com.realtime.crossfire.jxclient.gui.keybindings.KeyBindings;
 import com.realtime.crossfire.jxclient.gui.label.AbstractLabel;
 import com.realtime.crossfire.jxclient.gui.label.Alignment;
 import com.realtime.crossfire.jxclient.gui.label.GUIHTMLLabel;
+import com.realtime.crossfire.jxclient.gui.label.GUILabelMessage;
 import com.realtime.crossfire.jxclient.gui.label.GUILabelQuery;
 import com.realtime.crossfire.jxclient.gui.label.GUILabelStats;
 import com.realtime.crossfire.jxclient.gui.label.GUIMultiLineLabel;
@@ -545,6 +546,8 @@ public class JXCSkinLoader {
                             parseLabelMulti(args, tooltipManager, elementListener, lnr);
                         } else if (gui != null && args[0].equals("label_query")) {
                             parseLabelQuery(args, tooltipManager, elementListener, server);
+                        } else if (gui != null && args[0].equals("label_message")) {
+                            parseLabelMessage(args, tooltipManager, elementListener, server);
                         } else if (gui != null && args[0].equals("label_text")) {
                             parseLabelText(args, tooltipManager, elementListener, lnr);
                         } else if (gui != null && args[0].equals("label_stat")) {
@@ -1342,6 +1345,31 @@ public class JXCSkinLoader {
         final Font font = definedFonts.lookup(args[6]);
         final Color color = ParseUtils.parseColor(args[7]);
         final GUIElement element = new GUILabelQuery(tooltipManager, elementListener, name, x, y, w, h, server, font, color, new Color(0, 0, 0, 0F));
+        insertGuiElement(element);
+    }
+
+    /**
+     * Parses a "label_message" command.
+     * @param args the command arguments
+     * @param tooltipManager the tooltip manager to update
+     * @param elementListener the element listener to notify
+     * @param server the server instance to monitor
+     * @throws IOException if the command cannot be parsed
+     * @throws JXCSkinException if the command cannot be parsed
+     */
+    private void parseLabelMessage(@NotNull final String[] args, @NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final CrossfireServerConnection server) throws IOException, JXCSkinException {
+        if (args.length != 8) {
+            throw new IOException("syntax error");
+        }
+
+        final String name = args[1];
+        final int x = expressionParser.parseInt(args[2]);
+        final int y = expressionParser.parseInt(args[3]);
+        final int w = expressionParser.parseInt(args[4]);
+        final int h = expressionParser.parseInt(args[5]);
+        final Font font = definedFonts.lookup(args[6]);
+        final Color color = ParseUtils.parseColor(args[7]);
+        final GUIElement element = new GUILabelMessage(tooltipManager, elementListener, name, x, y, w, h, server, font, color, new Color(0, 0, 0, 0F));
         insertGuiElement(element);
     }
 
