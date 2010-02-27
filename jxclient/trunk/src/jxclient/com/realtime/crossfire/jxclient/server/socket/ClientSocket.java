@@ -281,9 +281,11 @@ public class ClientSocket {
                 synchronized (syncConnect) {
                     if (reconnect) {
                         reconnect = false;
-                        processDisconnect("reconnect");
                         if (host != null && port != 0) {
+                            processDisconnect("reconnect to "+host+":"+port);
                             processConnect(host, port);
+                        } else {
+                            processDisconnect("disconnect");
                         }
                     }
                 }
@@ -393,7 +395,7 @@ public class ClientSocket {
      */
     private void processDisconnect(@NotNull final String reason) {
         if (debugProtocol != null) {
-            debugProtocol.debugProtocolWrite("socket:disconnecting");
+            debugProtocol.debugProtocolWrite("socket:disconnecting: "+reason);
         }
         final boolean notifyListeners;
         synchronized (syncOutput) {
