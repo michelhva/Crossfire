@@ -15,7 +15,7 @@ Avion
 Date:    11/19/2004
 Map finised by:  Alestan jehloq@yahoo.com
 Date:     8/27/2007
-Modified: 2009-12-12 perkins
+Modified: 2010-02-27 perkins
 endmsg
 outdoor 1
 end
@@ -1026,15 +1026,6 @@ x 4
 y 4
 unique 1
 end
-arch button_lever
-name BBQ Reset Access
-msg
-Pull to let unwanted guests out.
-endmsg
-x 4
-y 4
-connected 7200
-end
 arch dungeon_magic
 x 4
 y 5
@@ -1045,18 +1036,13 @@ y 5
 unique 1
 end
 arch button_lever
-name Guild Dues
+name BBQ Reset Access
 msg
-Pull to pay out dues and fees.
+Pull to let unwanted guests out.
 endmsg
 x 4
 y 5
-connected 999
-arch event_apply
-name GUILD_TEMPLATE
-title Python
-slaying /python/guilds/guild_dues.py
-end
+connected 7200
 end
 arch woodfloor
 x 4
@@ -7871,33 +7857,6 @@ arch grass
 x 25
 y 22
 end
-arch grass
-x 25
-y 22
-move_block swim boat
-unique 1
-end
-arch dungeon_magic
-x 25
-y 22
-end
-arch creator
-other_arch grass
-x 25
-y 22
-connected 110
-arch grass
-end
-end
-arch goldfloor
-name drop 30,000 rubies for stove
-slaying ruby
-food 30000
-x 25
-y 22
-connected 110
-unique 1
-end
 arch dungeon_magic
 x 25
 y 23
@@ -9228,6 +9187,11 @@ x 30
 y 4
 last_sp 1
 connected 11100
+arch event_trigger
+name GUILD_TEMPLATE
+title Python
+slaying /python/guilds/guild_dues.py
+end
 end
 arch grass
 x 30
@@ -11511,6 +11475,29 @@ arch blocked
 x 40
 y 8
 end
+arch dungeon_magic
+x 40
+y 10
+end
+arch woodfloor
+x 40
+y 10
+unique 1
+end
+arch button_lever
+name Guild Dues
+msg
+Pull to pay out dues and fees.
+endmsg
+x 40
+y 10
+connected 999
+arch event_apply
+name GUILD_TEMPLATE
+title Python
+slaying /python/guilds/guild_dues.py
+end
+end
 arch blocked
 x 40
 y 11
@@ -11614,4 +11601,18 @@ end
 arch blocked
 x 40
 y 24
+end
+arch button_small
+x 40
+y 25
+connected 110
+end
+arch card
+name Generic Token
+name_pl Generic Tokens
+slaying Generic Token
+x 40
+y 29
+value 800
+identified 1
 end
