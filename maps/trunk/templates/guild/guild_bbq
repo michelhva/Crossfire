@@ -13,7 +13,7 @@ Editor: CrossfireEditor
 Date:    3/15/2007
 Map finised by:  Alestan jehloq@yahoo.com
 Date:     8/27/2007
-Modified: 2009-12-12 perkins
+Modified: 2010-02-27 perkins
 endmsg
 outdoor 1
 end
@@ -290,13 +290,13 @@ y 8
 unique 1
 end
 arch altar_trigger
-name New Stove 30000 Rubies
-slaying ruby
+name New Stove
+slaying Stove
 msg
 Removing your old stove. Please wait.
 endmsg
 exp 60
-food 30000
+food 1
 x 2
 y 8
 connected 9002

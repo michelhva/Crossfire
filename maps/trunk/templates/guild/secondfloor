@@ -11,7 +11,7 @@ Creator: majorwoo josh@woosworld.net
 Date:    11/19/2004
 Map finised by:  Alestan jehloq@yahoo.com
 Date:     8/27/2007
-Modified: 2009-12-12 perkins
+Modified: 2010-02-27 perkins
 endmsg
 end
 arch dungeon_magic
@@ -730,29 +730,6 @@ arch woodfloor
 x 1
 y 10
 unique 1
-end
-arch dungeon_magic
-x 1
-y 10
-end
-arch creator
-other_arch woodfloor
-x 1
-y 10
-connected 10
-end
-arch woodfloor
-x 1
-y 10
-unique 1
-end
-arch goldfloor
-name drop 15 diamonds of exceptional beauty for Jewelers room
-slaying diamond of exceptional beauty
-food 15
-x 1
-y 10
-connected 10
 end
 arch dungeon_magic
 x 1
@@ -3014,6 +2991,11 @@ food 100
 x 7
 y 8
 connected 52
+arch event_trigger
+name GUILD_TEMPLATE
+title Python
+slaying /python/guilds/guild_dues.py
+end
 end
 arch dungeon_magic
 x 7
@@ -3825,21 +3807,6 @@ x 10
 y 8
 unique 1
 end
-arch creator
-other_arch woodfloor
-x 10
-y 8
-connected 50
-end
-arch goldfloor
-name drop 30,000 rubies for Tannery room
-slaying ruby
-food 30000
-x 10
-y 8
-connected 50
-activate_on_release 0
-end
 arch dungeon_magic
 x 10
 y 9
@@ -4011,20 +3978,6 @@ arch woodfloor
 x 11
 y 1
 unique 1
-end
-arch creator
-other_arch woodfloor
-x 11
-y 1
-connected 40
-end
-arch goldfloor
-name drop 100 jade coins for Glowing Crystal Room
-slaying jadecoin
-food 100
-x 11
-y 1
-connected 40
 end
 arch dungeon_magic
 x 11
@@ -4555,20 +4508,6 @@ x 13
 y 8
 unique 1
 end
-arch creator
-other_arch woodfloor
-x 13
-y 8
-connected 30
-end
-arch goldfloor
-name drop 30,000 diamonds for Alchemy room
-slaying diamond
-food 30000
-x 13
-y 8
-connected 30
-end
 arch dungeon_magic
 x 13
 y 9
@@ -4698,20 +4637,6 @@ arch woodfloor
 x 13
 y 18
 unique 1
-end
-arch creator
-other_arch woodfloor
-x 13
-y 18
-connected 20
-end
-arch goldfloor
-name drop 30,000 rubies for Thaumaturgy room
-slaying ruby
-food 30000
-x 13
-y 18
-connected 20
 end
 arch woodfloor
 x 13
@@ -5277,15 +5202,6 @@ arch woodfloor
 x 15
 y 18
 unique 1
-end
-arch button_lever
-name Guild Dues
-msg
-Pull to pay out dues and fees.
-endmsg
-x 15
-y 18
-connected 999
 end
 arch woodfloor
 x 15
@@ -6079,6 +5995,11 @@ food 200
 x 20
 y 11
 connected 11
+arch event_trigger
+name GUILD_TEMPLATE
+title Python
+slaying /python/guilds/guild_dues.py
+end
 end
 arch teleporter
 hp 15
@@ -6095,6 +6016,11 @@ food 100
 x 20
 y 12
 connected 31
+arch event_trigger
+name GUILD_TEMPLATE
+title Python
+slaying /python/guilds/guild_dues.py
+end
 end
 arch teleporter
 hp 11
@@ -6268,6 +6194,11 @@ food 100
 x 21
 y 11
 connected 21
+arch event_trigger
+name GUILD_TEMPLATE
+title Python
+slaying /python/guilds/guild_dues.py
+end
 end
 arch teleporter
 hp 10
@@ -6284,6 +6215,21 @@ food 100
 x 21
 y 12
 connected 41
+arch event_trigger
+name GUILD_TEMPLATE
+title Python
+slaying /python/guilds/guild_dues.py
+end
+end
+arch button_small
+x 21
+y 13
+connected 20
+end
+arch button_small
+x 21
+y 14
+connected 10
 end
 arch blocked
 x 21
@@ -6363,6 +6309,21 @@ arch director_3
 sp 1
 x 22
 y 8
+end
+arch button_small
+x 22
+y 12
+connected 30
+end
+arch button_small
+x 22
+y 13
+connected 40
+end
+arch button_small
+x 22
+y 14
+connected 50
 end
 arch woodfloor2
 x 22

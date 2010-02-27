@@ -13,7 +13,7 @@ Editor: CrossfireEditor
 Date:    3/19/2007
 Map finised by:  Alestan jehloq@yahoo.com
 Date:     8/27/2007
-Modified: 2009-12-12 perkins
+Modified: 2010-02-27 perkins
 endmsg
 end
 arch woodfloor
@@ -153,13 +153,13 @@ y 5
 unique 1
 end
 arch altar_trigger
-name New Thaumaturge Desk 30000 Rubies
-slaying ruby
+name New Thaumaturge Desk
+slaying ThaymaturgyDesk
 msg
 Removing your old cauldron. Please wait.
 endmsg
 exp 60
-food 30000
+food 1
 x 1
 y 5
 connected 8002
