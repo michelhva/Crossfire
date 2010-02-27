@@ -39,8 +39,9 @@ public interface ServerConnection {
 
     /**
      * Disconnects from the server. Does nothing if not connected.
+     * @param reason the reason for the disconnect
      */
-    void disconnect();
+    void disconnect(@NotNull String reason);
 
     /**
      * Adds a {@link ClientSocketListener} to notify.

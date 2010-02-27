@@ -255,10 +255,11 @@ public class ClientSocket {
 
     /**
      * Terminates the connection. Does nothing if not connected.
+     * @param reason the reason for the disconnect
      */
-    public void disconnect() {
+    public void disconnect(@NotNull final String reason) {
         if (debugProtocol != null) {
-            debugProtocol.debugProtocolWrite("socket:disconnect");
+            debugProtocol.debugProtocolWrite("socket:disconnect: "+reason);
         }
         synchronized (syncConnect) {
             if (host != null || port != 0) {
@@ -481,7 +482,7 @@ public class ClientSocket {
                     clientSocketListener.packetReceived(inputBuf, start, end);
                 }
             } catch (final UnknownCommandException ex) {
-                disconnect();
+                disconnect(ex.getMessage());
                 break;
             }
         }
