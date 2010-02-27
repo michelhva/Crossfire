@@ -494,7 +494,7 @@ public class TestCrossfireServerConnection implements CrossfireServerConnection 
      * {@inheritDoc}
      */
     @Override
-    public void disconnect() {
+    public void disconnect(@NotNull final String reason) {
         Assert.fail();
     }
 

@@ -110,13 +110,13 @@ public class JXCConnection {
         /** {@inheritDoc} */
         @Override
         public void start() {
-            disconnect();
+            disconnect("display start screen");
         }
 
         /** {@inheritDoc} */
         @Override
         public void metaserver() {
-            disconnect();
+            disconnect("display metaserver screen");
         }
 
         /** {@inheritDoc} */
@@ -277,9 +277,10 @@ public class JXCConnection {
 
     /**
      * Disconnects from the Crossfire server.
+     * @param reason the reason for the disconnect
      */
-    private void disconnect() {
-        server.disconnect();
+    private void disconnect(@NotNull final String reason) {
+        server.disconnect(reason);
         setHost(null);
     }
 
