@@ -289,7 +289,9 @@ public class ClientSocket {
 
                 final boolean notifyConnected;
                 synchronized (syncOutput) {
-                    if (!isConnected && socketChannel != null) {
+                    if (isConnected || socketChannel == null) {
+                        notifyConnected = false;
+                    } else {
                         isConnected = socketChannel.finishConnect();
                         if (isConnected) {
                             interestOps = SelectionKey.OP_READ;
@@ -298,8 +300,6 @@ public class ClientSocket {
                         } else {
                             notifyConnected = false;
                         }
-                    } else {
-                        notifyConnected = false;
                     }
                 }
                 if (notifyConnected) {
