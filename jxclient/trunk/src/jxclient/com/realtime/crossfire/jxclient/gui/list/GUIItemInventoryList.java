@@ -59,12 +59,22 @@ public class GUIItemInventoryList extends GUIItemList {
     @NotNull
     private final GUIItemInventoryFactory itemInventoryFactory;
 
+    /**
+     * The {@link CommandQueue} to sending commands to the server.
+     */
     @NotNull
     private final CommandQueue commandQueue;
 
+    /**
+     * The {@link CrossfireServerConnection} for sending commands to the
+     * server.
+     */
     @NotNull
     private final CrossfireServerConnection crossfireServerConnection;
 
+    /**
+     * The {@link ItemsManager} for looking up items.
+     */
     @NotNull
     private final ItemsManager itemsManager;
 
@@ -105,6 +115,7 @@ public class GUIItemInventoryList extends GUIItemList {
      * Creates a new instance.
      * @param tooltipManager the tooltip manager to update
      * @param elementListener the element listener to notify
+     * @param commandQueue the command queue for sending commands to the server
      * @param name the name of this element
      * @param x the x-coordinate for drawing this element to screen; it is
      * relative to <code>gui</code>
@@ -113,6 +124,9 @@ public class GUIItemInventoryList extends GUIItemList {
      * @param w the width for drawing this element to screen
      * @param h the height for drawing this element to screen
      * @param cellHeight the height of each cell
+     * @param crossfireServerConnection the crossfire server connection for
+     * sending commands to the server
+     * @param itemsManager the items manager for looking up items
      * @param currentItem the label to update with information about the
      * selected item.
      * @param itemInventoryFactory the factory for creating item inventory
