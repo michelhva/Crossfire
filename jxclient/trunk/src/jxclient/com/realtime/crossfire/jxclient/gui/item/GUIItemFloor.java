@@ -33,9 +33,7 @@ import com.realtime.crossfire.jxclient.items.ItemsManager;
 import com.realtime.crossfire.jxclient.items.LocationListener;
 import com.realtime.crossfire.jxclient.queue.CommandQueue;
 import com.realtime.crossfire.jxclient.server.crossfire.CrossfireServerConnection;
-import com.realtime.crossfire.jxclient.util.ResourceUtils;
 import java.awt.Image;
-import java.io.IOException;
 import java.util.List;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
@@ -45,18 +43,6 @@ import org.jetbrains.annotations.Nullable;
  * @author Andreas Kirschbaum
  */
 public class GUIItemFloor extends GUIItemItem {
-
-    /**
-     * The resource for "Click here for next group of items" buttons.
-     */
-    @NotNull
-    private static final String NEXT_GROUP_FACE = "resource/next_group.png";
-
-    /**
-     * The resource for "Click here for previous group of items" buttons.
-     */
-    @NotNull
-    private static final String PREV_GROUP_FACE = "resource/prev_group.png";
 
     /**
      * The serial version UID.
@@ -179,9 +165,10 @@ public class GUIItemFloor extends GUIItemItem {
      * @param itemSet the item set instance to use
      * @param floorManager the floor manager instance to use
      * @param facesManager the faces manager instance to use
-     * @throws IOException if a resource cannot be found
+     * @param nextGroupFace the image for "prev group of items"
+     * @param prevGroupFace the image for "next group of items"
      */
-    public GUIItemFloor(@NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final CommandQueue commandQueue, @NotNull final String name, final int x, final int y, final int w, final int h, @NotNull final ItemPainter itemPainter, final int index, @NotNull final CrossfireServerConnection crossfireServerConnection, @NotNull final ItemsManager itemsManager, @NotNull final ItemSet itemSet, @NotNull final AbstractManager floorManager, @NotNull final FacesManager facesManager) throws IOException {
+    public GUIItemFloor(@NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final CommandQueue commandQueue, @NotNull final String name, final int x, final int y, final int w, final int h, @NotNull final ItemPainter itemPainter, final int index, @NotNull final CrossfireServerConnection crossfireServerConnection, @NotNull final ItemsManager itemsManager, @NotNull final ItemSet itemSet, @NotNull final AbstractManager floorManager, @NotNull final FacesManager facesManager, @NotNull final Image nextGroupFace, @NotNull final Image prevGroupFace) {
         super(tooltipManager, elementListener, name, x, y, w, h, crossfireServerConnection, itemPainter, facesManager);
         this.commandQueue = commandQueue;
         this.crossfireServerConnection = crossfireServerConnection;
@@ -189,8 +176,8 @@ public class GUIItemFloor extends GUIItemItem {
         this.itemSet = itemSet;
         this.floorManager = floorManager;
         this.facesManager = facesManager;
-        nextGroupFace = ResourceUtils.loadImage(NEXT_GROUP_FACE).getImage();
-        prevGroupFace = ResourceUtils.loadImage(PREV_GROUP_FACE).getImage();
+        this.nextGroupFace = nextGroupFace;
+        this.prevGroupFace = prevGroupFace;
         defaultIndex = index;
         containerTag = itemsManager.getCurrentFloorManager().getCurrentFloor();
         this.itemsManager.getCurrentFloorManager().addCurrentFloorListener(currentFloorListener);

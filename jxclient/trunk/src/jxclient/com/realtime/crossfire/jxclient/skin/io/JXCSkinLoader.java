@@ -113,10 +113,12 @@ import com.realtime.crossfire.jxclient.stats.ExperienceTable;
 import com.realtime.crossfire.jxclient.stats.Stats;
 import com.realtime.crossfire.jxclient.util.NumberParser;
 import com.realtime.crossfire.jxclient.util.Resolution;
+import com.realtime.crossfire.jxclient.util.ResourceUtils;
 import com.realtime.crossfire.jxclient.util.StringUtils;
 import com.realtime.crossfire.jxclient.util.UnterminatedTokenException;
 import java.awt.Color;
 import java.awt.Font;
+import java.awt.Image;
 import java.awt.image.BufferedImage;
 import java.io.IOException;
 import java.io.InputStream;
@@ -135,6 +137,18 @@ import org.jetbrains.annotations.Nullable;
  * @author Andreas Kirschbaum
  */
 public class JXCSkinLoader {
+
+    /**
+     * The resource for "Click here for next group of items" buttons.
+     */
+    @NotNull
+    private static final String NEXT_GROUP_FACE = "resource/next_group.png";
+
+    /**
+     * The resource for "Click here for previous group of items" buttons.
+     */
+    @NotNull
+    private static final String PREV_GROUP_FACE = "resource/prev_group.png";
 
     /**
      * The {@link ItemsManager} instance to use.
@@ -374,6 +388,19 @@ public class JXCSkinLoader {
             }
         }
 
+        final Image nextGroupFace;
+        try {
+            nextGroupFace = ResourceUtils.loadImage(NEXT_GROUP_FACE).getImage();
+        } catch (final IOException ex) {
+            throw new JXCSkinException(ex.getMessage());
+        }
+        final Image prevGroupFace;
+        try {
+            prevGroupFace = ResourceUtils.loadImage(PREV_GROUP_FACE).getImage();
+        } catch (final IOException ex) {
+            throw new JXCSkinException(ex.getMessage());
+        }
+
         expressionParser = new ExpressionParser(selectedResolution);
         final Dialogs dialogs = new Dialogs(guiFactory);
         gaugeUpdaterParser = new GaugeUpdaterParser(stats, itemsManager, skillSet);
@@ -397,14 +424,14 @@ public class JXCSkinLoader {
             dialogFactory = null;
             checkBoxFactory = null;
             try {
-                load(skinSource, "global", crossfireServerConnection, guiStateManager, tooltipManager, windowRenderer, elementListener, metaserverModel, commandQueue, null, shortcuts, commands, currentSpellManager, commandCallback, macros);
+                load(skinSource, "global", crossfireServerConnection, guiStateManager, tooltipManager, windowRenderer, elementListener, metaserverModel, commandQueue, null, shortcuts, commands, currentSpellManager, commandCallback, macros, nextGroupFace, prevGroupFace);
                 for (; ;) {
                     final String name = skin.getDialogToLoad();
                     if (name == null) {
                         break;
                     }
                     final Gui gui = skin.getDialog(name);
-                    load(skinSource, name, crossfireServerConnection, guiStateManager, tooltipManager, windowRenderer, elementListener, metaserverModel, commandQueue, gui, shortcuts, commands, currentSpellManager, commandCallback, macros);
+                    load(skinSource, name, crossfireServerConnection, guiStateManager, tooltipManager, windowRenderer, elementListener, metaserverModel, commandQueue, gui, shortcuts, commands, currentSpellManager, commandCallback, macros, nextGroupFace, prevGroupFace);
                     gui.setStateChanged(false);
                 }
             } finally {
@@ -446,9 +473,11 @@ public class JXCSkinLoader {
      * @param currentSpellManager the current spell manager to use
      * @param commandCallback the command callback to use
      * @param macros the macros instance to use
+     * @param nextGroupFace the image for "prev group of items"
+     * @param prevGroupFace the image for "next group of items"
      * @throws JXCSkinException if the file cannot be loaded
      */
-    private void load(@NotNull final JXCSkinSource skinSource, @NotNull final String dialogName, @NotNull final CrossfireServerConnection server, @NotNull final GuiStateManager guiStateManager, @NotNull final TooltipManager tooltipManager, @NotNull final JXCWindowRenderer windowRenderer, @NotNull final GUIElementListener elementListener, @NotNull final MetaserverModel metaserverModel, @NotNull final CommandQueue commandQueue, @Nullable final Gui gui, @NotNull final Shortcuts shortcuts, @NotNull final Commands commands, @NotNull final CurrentSpellManager currentSpellManager, @NotNull final CommandCallback commandCallback, @NotNull final Macros macros) throws JXCSkinException {
+    private void load(@NotNull final JXCSkinSource skinSource, @NotNull final String dialogName, @NotNull final CrossfireServerConnection server, @NotNull final GuiStateManager guiStateManager, @NotNull final TooltipManager tooltipManager, @NotNull final JXCWindowRenderer windowRenderer, @NotNull final GUIElementListener elementListener, @NotNull final MetaserverModel metaserverModel, @NotNull final CommandQueue commandQueue, @Nullable final Gui gui, @NotNull final Shortcuts shortcuts, @NotNull final Commands commands, @NotNull final CurrentSpellManager currentSpellManager, @NotNull final CommandCallback commandCallback, @NotNull final Macros macros, @NotNull final Image nextGroupFace, @NotNull final Image prevGroupFace) throws JXCSkinException {
         String resourceName = dialogName+"@"+skin.getSelectedResolution()+".skin";
 
         definedGUIElements.clear();
@@ -461,7 +490,7 @@ public class JXCSkinLoader {
                 inputStream = skinSource.getInputStream(resourceName);
             }
             try {
-                load(skinSource, dialogName, resourceName, inputStream, server, guiStateManager, tooltipManager, windowRenderer, elementListener, metaserverModel, commandQueue, gui, shortcuts, commands, currentSpellManager, commandCallback, macros);
+                load(skinSource, dialogName, resourceName, inputStream, server, guiStateManager, tooltipManager, windowRenderer, elementListener, metaserverModel, commandQueue, gui, shortcuts, commands, currentSpellManager, commandCallback, macros, nextGroupFace, prevGroupFace);
             } finally {
                 inputStream.close();
             }
@@ -494,9 +523,11 @@ public class JXCSkinLoader {
      * @param currentSpellManager the current spell manager to use
      * @param commandCallback the command callback to use
      * @param macros the macros instance to use
+     * @param nextGroupFace the image for "prev group of items"
+     * @param prevGroupFace the image for "next group of items"
      * @throws JXCSkinException if the file cannot be loaded
      */
-    private void load(@NotNull final JXCSkinSource skinSource, @NotNull final String dialogName, @NotNull final String resourceName, @NotNull final InputStream inputStream, @NotNull final CrossfireServerConnection server, @NotNull final GuiStateManager guiStateManager, @NotNull final TooltipManager tooltipManager, @NotNull final JXCWindowRenderer windowRenderer, @NotNull final GUIElementListener elementListener, @NotNull final MetaserverModel metaserverModel, @NotNull final CommandQueue commandQueue, @Nullable final Gui gui, @NotNull final Shortcuts shortcuts, @NotNull final Commands commands, @NotNull final CurrentSpellManager currentSpellManager, @NotNull final CommandCallback commandCallback, @NotNull final Macros macros) throws JXCSkinException {
+    private void load(@NotNull final JXCSkinSource skinSource, @NotNull final String dialogName, @NotNull final String resourceName, @NotNull final InputStream inputStream, @NotNull final CrossfireServerConnection server, @NotNull final GuiStateManager guiStateManager, @NotNull final TooltipManager tooltipManager, @NotNull final JXCWindowRenderer windowRenderer, @NotNull final GUIElementListener elementListener, @NotNull final MetaserverModel metaserverModel, @NotNull final CommandQueue commandQueue, @Nullable final Gui gui, @NotNull final Shortcuts shortcuts, @NotNull final Commands commands, @NotNull final CurrentSpellManager currentSpellManager, @NotNull final CommandCallback commandCallback, @NotNull final Macros macros, @NotNull final Image nextGroupFace, @NotNull final Image prevGroupFace) throws JXCSkinException {
         final List<GUIElement> addedElements = new ArrayList<GUIElement>();
         boolean addedElementsContainsWildcard = false;
 
@@ -563,7 +594,7 @@ public class JXCSkinLoader {
                         } else if (gui != null && args[0].equals("inventory_list")) {
                             parseInventoryList(args, tooltipManager, elementListener, commandQueue, server);
                         } else if (gui != null && args[0].equals("item")) {
-                            parseItem(args, tooltipManager, elementListener, commandQueue, server, shortcuts, currentSpellManager);
+                            parseItem(args, tooltipManager, elementListener, commandQueue, server, shortcuts, currentSpellManager, nextGroupFace, prevGroupFace);
                         } else if (args[0].equals("key")) {
                             parseKey(args, gui, line);
                         } else if (gui != null && args[0].equals("label_html")) {
@@ -1216,10 +1247,12 @@ public class JXCSkinLoader {
      * @param server the server to use
      * @param shortcuts the shortcuts to use
      * @param currentSpellManager the current spell manager to use
+     * @param nextGroupFace the image for "prev group of items"
+     * @param prevGroupFace the image for "next group of items"
      * @throws IOException if the command cannot be parsed
      * @throws JXCSkinException if the command cannot be parsed
      */
-    private void parseItem(@NotNull final String[] args, @NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final CommandQueue commandQueue, @NotNull final CrossfireServerConnection server, @NotNull final Shortcuts shortcuts, @NotNull final CurrentSpellManager currentSpellManager) throws IOException, JXCSkinException {
+    private void parseItem(@NotNull final String[] args, @NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final CommandQueue commandQueue, @NotNull final CrossfireServerConnection server, @NotNull final Shortcuts shortcuts, @NotNull final CurrentSpellManager currentSpellManager, @NotNull final Image nextGroupFace, @NotNull final Image prevGroupFace) throws IOException, JXCSkinException {
         if (args.length < 8) {
             throw new IOException("syntax error");
         }
@@ -1242,7 +1275,7 @@ public class JXCSkinLoader {
             }
 
             final ItemPainter itemPainter = defaultItemPainter.newItemPainter(w, h);
-            element = new GUIItemFloor(tooltipManager, elementListener, commandQueue, name, x, y, w, h, itemPainter, index, server, itemsManager, itemSet, floorManager, facesManager);
+            element = new GUIItemFloor(tooltipManager, elementListener, commandQueue, name, x, y, w, h, itemPainter, index, server, itemsManager, itemSet, floorManager, facesManager, nextGroupFace, prevGroupFace);
         } else if (type.equals("inventory")) {
             if (args.length != 8) {
                 throw new IOException("syntax error");
