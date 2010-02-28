@@ -152,7 +152,7 @@ public class GUILabelMessage extends GUIMultiLineLabel {
                 pos = endPos+1;
             }
         }
-        super.setText(sb.toString());
+        super.setText(sb.length() > 0 ? sb.substring(1) : "");
     }
 
 }
