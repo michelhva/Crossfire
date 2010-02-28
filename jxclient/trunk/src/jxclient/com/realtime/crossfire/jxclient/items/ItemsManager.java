@@ -167,13 +167,15 @@ public class ItemsManager {
         /** {@inheritDoc} */
         @Override
         public void run() {
-            floorManager.fireEvents(itemSet.getItemsByLocation(currentFloorManager.getCurrentFloor()));
-            @Nullable final List<CfItem> newItems;
+            floorManager.fireEvents(currentFloorManager.getCurrentFloor());
+            final int playerTag;
+            final boolean hasPlayer;
             synchronized (sync) {
-                newItems = player != null ? itemSet.getItemsByLocation(player.getTag()) : null;
+                hasPlayer = player != null;
+                playerTag = player != null ? player.getTag() : 0;
             }
-            if (newItems != null) {
-                inventoryManager.fireEvents(newItems);
+            if (hasPlayer) {
+                inventoryManager.fireEvents(playerTag);
             }
         }
     };
