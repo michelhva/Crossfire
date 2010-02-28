@@ -28,7 +28,6 @@ import com.realtime.crossfire.jxclient.server.crossfire.CrossfireDrawinfoListene
 import com.realtime.crossfire.jxclient.server.crossfire.CrossfireServerConnection;
 import java.awt.Color;
 import java.awt.Font;
-import java.util.regex.Pattern;
 import org.jetbrains.annotations.NotNull;
 
 /**
@@ -46,19 +45,6 @@ public class GUILabelMessage extends GUIMultiLineLabel {
      * The serial version UID.
      */
     private static final long serialVersionUID = 1;
-
-    /**
-     * Pattern for text replacement. Texts matching this pattern are replaced
-     * by {@link #REPLACEMENT}.
-     */
-    @NotNull
-    private static final Pattern pattern = Pattern.compile(" already exists\\. Please choose ");
-
-    /**
-     * The replacement text for {@link #pattern} matches.
-     */
-    @NotNull
-    private static final String REPLACEMENT = " already exists.\nPlease choose ";
 
     /**
      * The {@link CrossfireServerConnection} to monitor.
