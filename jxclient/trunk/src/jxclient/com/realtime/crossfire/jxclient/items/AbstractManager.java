@@ -45,8 +45,8 @@ public abstract class AbstractManager {
     private final Set<Integer> modifiedItems = new HashSet<Integer>();
 
     /**
-     * Maps slot index to list of {@link LocationListener}s to be notified about
-     * added or removed items.
+     * Maps slot index to list of {@link LocationListener}s to be notified
+     * about added or removed items.
      */
     @NotNull
     private final Map<Integer, EventListenerList> allListeners = new HashMap<Integer, EventListenerList>();
@@ -67,7 +67,7 @@ public abstract class AbstractManager {
     }
 
     /**
-     * Adds a {@link LocationsListener}s to be notified about changes.
+     * Adds a {@link LocationsListener} to be notified about changes.
      * @param listener the listener to add
      */
     public void addLocationsListener(@NotNull final LocationsListener listener) {
@@ -75,7 +75,7 @@ public abstract class AbstractManager {
     }
 
     /**
-     * Removes a {@link LocationsListener}s to be notified about changes.
+     * Removes a {@link LocationsListener} to be notified about changes.
      * @param listener the listener to remove
      */
     public void removeLocationsListener(@NotNull final LocationsListener listener) {
@@ -83,7 +83,7 @@ public abstract class AbstractManager {
     }
 
     /**
-     * Adds a {@link LocationListener}s to be notified about changes in a slot.
+     * Adds a {@link LocationListener} to be notified about changes in a slot.
      * @param index the slot index
      * @param listener the listener
      */
@@ -97,7 +97,7 @@ public abstract class AbstractManager {
     }
 
     /**
-     * Removes a {@link LocationListener}s to be notified about changes in a
+     * Removes a {@link LocationListener} to be notified about changes in a
      * slot.
      * @param index the slot index
      * @param listener the listener
