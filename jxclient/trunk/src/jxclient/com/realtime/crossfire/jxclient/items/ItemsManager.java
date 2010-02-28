@@ -397,15 +397,13 @@ public class ItemsManager {
         }
 
         final int where = item.getLocation();
-        @Nullable final AbstractManager abstractManager;
         if (currentFloorManager.isCurrentFloor(where)) {
-            abstractManager = floorManager;
+            floorManager.removeItem(item);
         } else if (player != null && where == player.getTag()) {
-            abstractManager = inventoryManager;
+            inventoryManager.removeItem(item);
         } else {
-            abstractManager = null;
+            itemSet.removeItem(item);
         }
-        itemSet.removeItem(item, abstractManager);
     }
 
     /**
