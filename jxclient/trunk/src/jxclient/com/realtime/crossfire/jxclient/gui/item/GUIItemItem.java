@@ -239,4 +239,17 @@ public abstract class GUIItemItem extends GUIItem {
      */
     protected abstract boolean isSelected();
 
+    /**
+     * Returns the slot index.
+     * @return the slot tindex
+     */
+    public abstract int getIndex();
+
+    /**
+     * Sets the slot index to display without registering listeners for
+     * updates.
+     * @param index the slot index
+     */
+    public abstract void setIndexNoListeners(final int index);
+
 }

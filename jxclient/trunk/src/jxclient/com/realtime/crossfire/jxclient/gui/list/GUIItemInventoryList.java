@@ -141,7 +141,7 @@ public class GUIItemInventoryList extends GUIItemList {
      * instances
      */
     public GUIItemInventoryList(@NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final CommandQueue commandQueue, @NotNull final String name, final int x, final int y, final int w, final int h, final int cellHeight, @NotNull final CrossfireServerConnection crossfireServerConnection, @NotNull final ItemsManager itemsManager, @NotNull final AbstractManager inventoryManager, @Nullable final AbstractLabel currentItem, @NotNull final GUIItemInventoryFactory itemInventoryFactory) {
-        super(tooltipManager, elementListener, name, x, y, w, h, cellHeight, new ItemInventoryCellRenderer(itemInventoryFactory.newTemplateItemInventory(cellHeight)));
+        super(tooltipManager, elementListener, name, x, y, w, h, cellHeight, new ItemItemCellRenderer(itemInventoryFactory.newTemplateItemInventory(cellHeight)));
         this.inventoryManager = inventoryManager;
         this.itemInventoryFactory = itemInventoryFactory;
         this.commandQueue = commandQueue;
