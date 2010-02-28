@@ -26,6 +26,7 @@ import com.realtime.crossfire.jxclient.gui.gui.GUIElementListener;
 import com.realtime.crossfire.jxclient.gui.gui.TooltipManager;
 import com.realtime.crossfire.jxclient.items.AbstractManager;
 import com.realtime.crossfire.jxclient.items.CfItem;
+import com.realtime.crossfire.jxclient.items.ItemSet;
 import com.realtime.crossfire.jxclient.items.ItemsManager;
 import com.realtime.crossfire.jxclient.items.LocationListener;
 import com.realtime.crossfire.jxclient.queue.CommandQueue;
@@ -73,6 +74,12 @@ public class GUIItemInventory extends GUIItemItem {
     private final ItemsManager itemsManager;
 
     /**
+     * The {@link ItemSet} to query.
+     */
+    @NotNull
+    private final ItemSet itemSet;
+
+    /**
      * The inventory manager instance to watch.
      */
     @NotNull
@@ -115,12 +122,13 @@ public class GUIItemInventory extends GUIItemItem {
         }
     };
 
-    public GUIItemInventory(@NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final CommandQueue commandQueue, final String name, final int x, final int y, final int w, final int h, @NotNull final ItemPainter itemPainter, final int index, @NotNull final CrossfireServerConnection crossfireServerConnection, @NotNull final FacesManager facesManager, @NotNull final ItemsManager itemsManager, @NotNull final AbstractManager inventoryManager) {
+    public GUIItemInventory(@NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final CommandQueue commandQueue, final String name, final int x, final int y, final int w, final int h, @NotNull final ItemPainter itemPainter, final int index, @NotNull final CrossfireServerConnection crossfireServerConnection, @NotNull final FacesManager facesManager, @NotNull final ItemsManager itemsManager, @NotNull final ItemSet itemSet, @NotNull final AbstractManager inventoryManager) {
         super(tooltipManager, elementListener, name, x, y, w, h, crossfireServerConnection, itemPainter, facesManager);
         this.commandQueue = commandQueue;
         this.crossfireServerConnection = crossfireServerConnection;
         this.facesManager = facesManager;
         this.itemsManager = itemsManager;
+        this.itemSet = itemSet;
         defaultIndex = index;
         this.inventoryManager = inventoryManager;
         setIndex(index);
@@ -150,7 +158,7 @@ public class GUIItemInventory extends GUIItemItem {
                 return false;
             }
 
-            final Collection<CfItem> list = itemsManager.getItems(player.getTag());
+            final Collection<CfItem> list = itemSet.getItems(player.getTag());
             synchronized (sync) {
                 return index+distance < list.size();
             }
@@ -271,7 +279,7 @@ public class GUIItemInventory extends GUIItemItem {
 
         final CfItem player = itemsManager.getPlayer();
         if (player != null) {
-            final List<CfItem> list = itemsManager.getItems(player.getTag());
+            final List<CfItem> list = itemSet.getItems(player.getTag());
             if (0 <= this.index && this.index < list.size()) {
                 setItem(list.get(this.index));
             } else {
@@ -298,7 +306,7 @@ public class GUIItemInventory extends GUIItemItem {
 
         final CfItem player = itemsManager.getPlayer();
         if (player != null) {
-            final List<CfItem> list = itemsManager.getItems(player.getTag());
+            final List<CfItem> list = itemSet.getItems(player.getTag());
             if (0 <= this.index && this.index < list.size()) {
                 setItemNoListeners(list.get(this.index));
             } else {

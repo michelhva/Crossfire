@@ -23,6 +23,7 @@ package com.realtime.crossfire.jxclient.scripts;
 
 import com.realtime.crossfire.jxclient.faces.Face;
 import com.realtime.crossfire.jxclient.items.CfItem;
+import com.realtime.crossfire.jxclient.items.ItemSet;
 import com.realtime.crossfire.jxclient.items.ItemsManager;
 import com.realtime.crossfire.jxclient.map.CfMap;
 import com.realtime.crossfire.jxclient.map.CfMapSquare;
@@ -89,6 +90,12 @@ public class DefaultScriptProcess extends Thread implements ScriptProcess {
      */
     @NotNull
     private final ItemsManager itemsManager;
+
+    /**
+     * The {@link ItemSet} instance to use.
+     */
+    @NotNull
+    private final ItemSet itemSet;
 
     /**
      * The {@link SpellsManager} instance to use.
@@ -205,18 +212,20 @@ public class DefaultScriptProcess extends Thread implements ScriptProcess {
      * @param crossfireServerConnection the server connection
      * @param stats the stats instance to watch
      * @param itemsManager the items manager instance to use
+     * @param itemSet the item set instance to use
      * @param spellsManager the spells manager instance to use
      * @param mapUpdater the map updater instance to use
      * @param skillSet the skill set for looking up skill names
      * @throws IOException if the script cannot be created
      */
-    public DefaultScriptProcess(final int scriptId, @NotNull final String filename, @NotNull final CommandQueue commandQueue, @NotNull final CrossfireServerConnection crossfireServerConnection, @NotNull final Stats stats, @NotNull final ItemsManager itemsManager, @NotNull final SpellsManager spellsManager, @NotNull final CfMapUpdater mapUpdater, @NotNull final SkillSet skillSet) throws IOException {
+    public DefaultScriptProcess(final int scriptId, @NotNull final String filename, @NotNull final CommandQueue commandQueue, @NotNull final CrossfireServerConnection crossfireServerConnection, @NotNull final Stats stats, @NotNull final ItemsManager itemsManager, @NotNull final ItemSet itemSet, @NotNull final SpellsManager spellsManager, @NotNull final CfMapUpdater mapUpdater, @NotNull final SkillSet skillSet) throws IOException {
         this.scriptId = scriptId;
         this.filename = filename;
         this.commandQueue = commandQueue;
         this.crossfireServerConnection = crossfireServerConnection;
         this.stats = stats;
         this.itemsManager = itemsManager;
+        this.itemSet = itemSet;
         this.spellsManager = spellsManager;
         this.mapUpdater = mapUpdater;
         this.skillSet = skillSet;
@@ -446,14 +455,14 @@ public class DefaultScriptProcess extends Thread implements ScriptProcess {
             }
             commandSent("request items actv end");
         } else if (parms.equals("items on")) {
-            for (final CfItem item : itemsManager.getItems(0)) {
+            for (final CfItem item : itemSet.getItems(0)) {
                 commandSentItem("request items on", item);
             }
             commandSent("request items on end");
         } else if (parms.equals("items cont")) {
             final int containerTag = itemsManager.getCurrentFloorManager().getCurrentFloor();
             if (containerTag != 0) {
-                for (final CfItem item : itemsManager.getItems(containerTag)) {
+                for (final CfItem item : itemSet.getItems(containerTag)) {
                     commandSentItem("request items cont", item);
                 }
             }

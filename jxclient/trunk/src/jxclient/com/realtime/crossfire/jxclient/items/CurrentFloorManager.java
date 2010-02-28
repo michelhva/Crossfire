@@ -31,10 +31,10 @@ import org.jetbrains.annotations.NotNull;
 public class CurrentFloorManager {
 
     /**
-     * The items manager.
+     * The {@link ItemSet} to query.
      */
     @NotNull
-    private final ItemsManager itemsManager;
+    private final ItemSet itemSet;
 
     /**
      * The {@link AbstractManager} for reporting modified items.
@@ -56,11 +56,11 @@ public class CurrentFloorManager {
 
     /**
      * Create a new instance.
-     * @param itemsManager The items manager to use.
+     * @param itemSet the item set to query
      * @param abstractManager the abstract manager for reporting modified items
      */
-    public CurrentFloorManager(@NotNull final ItemsManager itemsManager, @NotNull final AbstractManager abstractManager) {
-        this.itemsManager = itemsManager;
+    public CurrentFloorManager(@NotNull final ItemSet itemSet, @NotNull final AbstractManager abstractManager) {
+        this.itemSet = itemSet;
         this.abstractManager = abstractManager;
     }
 
@@ -73,9 +73,9 @@ public class CurrentFloorManager {
             return;
         }
 
-        abstractManager.addModified(itemsManager.getNumberOfItems(this.currentFloor));
+        abstractManager.addModified(itemSet.getNumberOfItems(this.currentFloor));
         this.currentFloor = currentFloor;
-        abstractManager.addModified(itemsManager.getNumberOfItems(this.currentFloor));
+        abstractManager.addModified(itemSet.getNumberOfItems(this.currentFloor));
 
         for (final CurrentFloorListener listener : currentFloorListeners.getListeners(CurrentFloorListener.class)) {
             listener.currentFloorChanged(this.currentFloor);

@@ -35,6 +35,7 @@ import com.realtime.crossfire.jxclient.guistate.GuiStateListener;
 import com.realtime.crossfire.jxclient.guistate.GuiStateManager;
 import com.realtime.crossfire.jxclient.items.AbstractManager;
 import com.realtime.crossfire.jxclient.items.CfPlayer;
+import com.realtime.crossfire.jxclient.items.ItemSet;
 import com.realtime.crossfire.jxclient.items.ItemsManager;
 import com.realtime.crossfire.jxclient.items.PlayerListener;
 import com.realtime.crossfire.jxclient.mapupdater.CfMapUpdater;
@@ -128,6 +129,12 @@ public class JXCWindow extends JFrame {
      */
     @NotNull
     private final ItemsManager itemsManager;
+
+    /**
+     * The {@link ItemSet} instance.
+     */
+    @NotNull
+    private final ItemSet itemSet;
 
     /**
      * The inventory manager instance.
@@ -551,10 +558,11 @@ public class JXCWindow extends JFrame {
      * @param stats the stats to use
      * @param facesManager the faces manager to use
      * @param itemsManager the items manager to use
+     * @param itemSet the item set to use
      * @param inventoryManager the inventory manager to use
      * @param floorManager the floor manager to use
      */
-    public JXCWindow(@NotNull final Object terminateSync, @NotNull final CrossfireServerConnection server, @NotNull final Object semaphoreRedraw, final boolean debugGui, @Nullable final Writer debugKeyboard, @Nullable final Writer debugScreen, @NotNull final Settings settings, @NotNull final OptionManager optionManager, @NotNull final MetaserverModel metaserverModel, @NotNull final Resolution resolution, @NotNull final GuiStateManager guiStateManager, @NotNull final ExperienceTable experienceTable, @NotNull final SkillSet skillSet, @NotNull final Stats stats, @NotNull final FacesManager facesManager, @NotNull final ItemsManager itemsManager, @NotNull final AbstractManager inventoryManager, @NotNull final AbstractManager floorManager) {
+    public JXCWindow(@NotNull final Object terminateSync, @NotNull final CrossfireServerConnection server, @NotNull final Object semaphoreRedraw, final boolean debugGui, @Nullable final Writer debugKeyboard, @Nullable final Writer debugScreen, @NotNull final Settings settings, @NotNull final OptionManager optionManager, @NotNull final MetaserverModel metaserverModel, @NotNull final Resolution resolution, @NotNull final GuiStateManager guiStateManager, @NotNull final ExperienceTable experienceTable, @NotNull final SkillSet skillSet, @NotNull final Stats stats, @NotNull final FacesManager facesManager, @NotNull final ItemsManager itemsManager, @NotNull final ItemSet itemSet, @NotNull final AbstractManager inventoryManager, @NotNull final AbstractManager floorManager) {
         super("");
         this.server = server;
         this.debugGui = debugGui;
@@ -567,6 +575,7 @@ public class JXCWindow extends JFrame {
         this.stats = stats;
         this.facesManager = facesManager;
         this.itemsManager = itemsManager;
+        this.itemSet = itemSet;
         this.inventoryManager = inventoryManager;
         this.floorManager = floorManager;
         macros = new Macros(server);
@@ -579,7 +588,7 @@ public class JXCWindow extends JFrame {
         mouseTracker = new MouseTracker(debugGui);
         windowRenderer = new JXCWindowRenderer(this, mouseTracker, semaphoreRedraw, server, debugScreen);
         mouseTracker.init(windowRenderer);
-        final ScriptManager scriptManager = new ScriptManager(commandQueue, server, stats, itemsManager, spellsManager, mapUpdater, skillSet);
+        final ScriptManager scriptManager = new ScriptManager(commandQueue, server, stats, itemsManager, itemSet, spellsManager, mapUpdater, skillSet);
         guiManager = new GuiManager(guiStateManager, semaphoreDrawing, terminateSync, new TooltipManager(windowRenderer), settings, server, macros, windowRenderer, scriptManager, commandQueue, optionManager, debugGui ? mouseTracker : null);
         shortcutsManager = new ShortcutsManager(commandQueue, spellsManager);
         keyHandler = new KeyHandler(debugKeyboard, guiManager.getKeybindingsManager(), commandQueue, windowRenderer, keyHandlerListener);
@@ -676,7 +685,7 @@ public class JXCWindow extends JFrame {
             // fallback: built-in resource
             skinSource = new JXCSkinClassSource("com/realtime/crossfire/jxclient/skins/"+skinName);
         }
-        final JXCSkinLoader newSkin = new JXCSkinLoader(itemsManager, inventoryManager, floorManager, spellsManager, facesManager, stats, mapUpdater, defaultKeyBindings, optionManager, experienceTable, skillSet);
+        final JXCSkinLoader newSkin = new JXCSkinLoader(itemsManager, itemSet, inventoryManager, floorManager, spellsManager, facesManager, stats, mapUpdater, defaultKeyBindings, optionManager, experienceTable, skillSet);
         final Commands commands = guiManager.getCommands();
         final GuiFactory guiFactory = new GuiFactory(debugGui ? mouseTracker : null, commands, guiManager.getCommandCallback(), macros);
         final CommandCallback commandCallback = guiManager.getCommandCallback();
