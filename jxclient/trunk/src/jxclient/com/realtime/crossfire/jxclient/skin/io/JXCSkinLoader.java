@@ -78,6 +78,7 @@ import com.realtime.crossfire.jxclient.gui.textinput.GUIQueryText;
 import com.realtime.crossfire.jxclient.gui.textinput.GUIText;
 import com.realtime.crossfire.jxclient.gui.textinput.GUITextField;
 import com.realtime.crossfire.jxclient.guistate.GuiStateManager;
+import com.realtime.crossfire.jxclient.items.AbstractManager;
 import com.realtime.crossfire.jxclient.items.ItemsManager;
 import com.realtime.crossfire.jxclient.mapupdater.CfMapUpdater;
 import com.realtime.crossfire.jxclient.metaserver.MetaserverModel;
@@ -139,6 +140,12 @@ public class JXCSkinLoader {
      */
     @NotNull
     private final ItemsManager itemsManager;
+
+    /**
+     * The {@link AbstractManager} instance to use.
+     */
+    @NotNull
+    private final AbstractManager floorManager;
 
     /**
      * The {@link SpellsManager} instance to use.
@@ -270,6 +277,7 @@ public class JXCSkinLoader {
     /**
      * Creates a new instance.
      * @param itemsManager the items manager instance to use
+     * @param floorManager the floor manager instance to use
      * @param spellsManager the spells manager instance to use
      * @param facesManager the faces manager instance to use
      * @param stats the stats instance to use
@@ -279,8 +287,9 @@ public class JXCSkinLoader {
      * @param experienceTable the experience table to use
      * @param skillSet the skill set to use
      */
-    public JXCSkinLoader(@NotNull final ItemsManager itemsManager, @NotNull final SpellsManager spellsManager, @NotNull final FacesManager facesManager, @NotNull final Stats stats, @NotNull final CfMapUpdater mapUpdater, @NotNull final KeyBindings defaultKeyBindings, @NotNull final OptionManager optionManager, @NotNull final ExperienceTable experienceTable, @NotNull final SkillSet skillSet) {
+    public JXCSkinLoader(@NotNull final ItemsManager itemsManager, @NotNull final AbstractManager floorManager, @NotNull final SpellsManager spellsManager, @NotNull final FacesManager facesManager, @NotNull final Stats stats, @NotNull final CfMapUpdater mapUpdater, @NotNull final KeyBindings defaultKeyBindings, @NotNull final OptionManager optionManager, @NotNull final ExperienceTable experienceTable, @NotNull final SkillSet skillSet) {
         this.itemsManager = itemsManager;
+        this.floorManager = floorManager;
         this.spellsManager = spellsManager;
         this.facesManager = facesManager;
         this.stats = stats;
@@ -1216,7 +1225,7 @@ public class JXCSkinLoader {
             }
 
             final ItemPainter itemPainter = defaultItemPainter.newItemPainter(w, h);
-            element = new GUIItemFloor(tooltipManager, elementListener, commandQueue, name, x, y, w, h, itemPainter, index, server, itemsManager, facesManager);
+            element = new GUIItemFloor(tooltipManager, elementListener, commandQueue, name, x, y, w, h, itemPainter, index, server, itemsManager, floorManager, facesManager);
         } else if (type.equals("inventory")) {
             if (args.length != 8) {
                 throw new IOException("syntax error");
