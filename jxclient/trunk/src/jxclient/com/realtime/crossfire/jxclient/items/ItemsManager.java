@@ -445,14 +445,14 @@ public class ItemsManager {
             }
 
             if (oldPlayer != null) {
-                itemSet.addModified(oldPlayer.getTag(), inventoryManager);
+                inventoryManager.updatePlayer(oldPlayer.getTag());
                 for (final PlayerListener listener : playerListeners.getListeners(PlayerListener.class)) {
                     listener.playerRemoved(oldPlayer);
                 }
             }
             this.player = player;
             if (player != null) {
-                itemSet.addModified(player.getTag(), inventoryManager);
+                inventoryManager.updatePlayer(player.getTag());
                 for (final PlayerListener listener : playerListeners.getListeners(PlayerListener.class)) {
                     listener.playerAdded(player);
                     listener.playerReceived(player);

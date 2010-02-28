@@ -98,4 +98,12 @@ public class InventoryManager extends AbstractManager {
         addModified(startIndex, endIndex);
     }
 
+    /**
+     * Marks all inventory items as modified.
+     * @param playerTag the player's tag
+     */
+    public void updatePlayer(final int playerTag) {
+        addModified(itemSet.getItemsByLocation(playerTag));
+    }
+
 }
