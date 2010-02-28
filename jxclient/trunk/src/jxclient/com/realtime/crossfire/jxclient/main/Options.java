@@ -107,7 +107,7 @@ public class Options {
      */
     public void parse(@NotNull final String[] args) throws IOException {
         prefs = new Settings(Filenames.getSettingsFile());
-        resolution = Resolution.parse(false, prefs.getString("resolution", getScreenResolution()));
+        resolution = getScreenResolution();
         skin = prefs.getString("skin", "default");
 
         // fix changed default skin name
@@ -167,7 +167,7 @@ public class Options {
             }
             i++;
         }
-        prefs.putString("resolution", resolution.toString());
+        prefs.remove("resolution"); // delete obsolete entry
         prefs.remove("width"); // delete obsolete entry
         prefs.remove("height"); // delete obsolete entry
         prefs.putString("skin", skin);
@@ -184,11 +184,11 @@ public class Options {
      * @return the screen's resolution.
      */
     @NotNull
-    private static String getScreenResolution() {
+    private static Resolution getScreenResolution() {
         final GraphicsEnvironment ge = GraphicsEnvironment.getLocalGraphicsEnvironment();
         final GraphicsDevice gd = ge.getDefaultScreenDevice();
         final DisplayMode displayMode = gd.getDisplayMode();
-        return new Resolution(true, displayMode.getWidth(), displayMode.getHeight()).toString();
+        return new Resolution(true, displayMode.getWidth(), displayMode.getHeight());
     }
 
     /**
