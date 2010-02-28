@@ -157,15 +157,6 @@ public class ItemSet {
     }
 
     /**
-     * Marks an item as modified.
-     * @param tag the item's tag
-     * @param abstractManager the abstract manager to notify
-     */
-    public void addModified(final int tag, @NotNull final AbstractManager abstractManager) {
-        abstractManager.addModified(items.get(tag));
-    }
-
-    /**
      * Returns the inventory of an item.
      * @param tag the item's tag
      * @return the inventory items; the list cannot be modified
