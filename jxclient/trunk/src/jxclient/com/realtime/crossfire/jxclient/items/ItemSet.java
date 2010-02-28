@@ -116,9 +116,9 @@ public class ItemSet {
     /**
      * Adds a {@link CfItem}.
      * @param item the item to add
-     * @param abstractManager the abstract manager to notify about changes
+     * @return the index where the item has been inserted
      */
-    public void addItem(@NotNull final CfItem item, @Nullable final AbstractManager abstractManager) {
+    public int addItem2(@NotNull final CfItem item) {
         final int where = item.getLocation();
         List<CfItem> list = items.get(where);
         if (list == null) {
@@ -129,9 +129,7 @@ public class ItemSet {
         }
 
         list.add(item);
-        if (abstractManager != null) {
-            abstractManager.addModified(list.size()-1);
-        }
+        return list.size()-1;
     }
 
     /**
