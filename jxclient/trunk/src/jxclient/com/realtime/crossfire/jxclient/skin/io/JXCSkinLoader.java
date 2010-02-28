@@ -142,7 +142,13 @@ public class JXCSkinLoader {
     private final ItemsManager itemsManager;
 
     /**
-     * The {@link AbstractManager} instance to use.
+     * The inventory manager instance to use.
+     */
+    @NotNull
+    private final AbstractManager inventoryManager;
+
+    /**
+     * The floor manager instance to use.
      */
     @NotNull
     private final AbstractManager floorManager;
@@ -277,6 +283,7 @@ public class JXCSkinLoader {
     /**
      * Creates a new instance.
      * @param itemsManager the items manager instance to use
+     * @param inventoryManager the inventory manager instance to use
      * @param floorManager the floor manager instance to use
      * @param spellsManager the spells manager instance to use
      * @param facesManager the faces manager instance to use
@@ -287,8 +294,9 @@ public class JXCSkinLoader {
      * @param experienceTable the experience table to use
      * @param skillSet the skill set to use
      */
-    public JXCSkinLoader(@NotNull final ItemsManager itemsManager, @NotNull final AbstractManager floorManager, @NotNull final SpellsManager spellsManager, @NotNull final FacesManager facesManager, @NotNull final Stats stats, @NotNull final CfMapUpdater mapUpdater, @NotNull final KeyBindings defaultKeyBindings, @NotNull final OptionManager optionManager, @NotNull final ExperienceTable experienceTable, @NotNull final SkillSet skillSet) {
+    public JXCSkinLoader(@NotNull final ItemsManager itemsManager, @NotNull final AbstractManager inventoryManager, @NotNull final AbstractManager floorManager, @NotNull final SpellsManager spellsManager, @NotNull final FacesManager facesManager, @NotNull final Stats stats, @NotNull final CfMapUpdater mapUpdater, @NotNull final KeyBindings defaultKeyBindings, @NotNull final OptionManager optionManager, @NotNull final ExperienceTable experienceTable, @NotNull final SkillSet skillSet) {
         this.itemsManager = itemsManager;
+        this.inventoryManager = inventoryManager;
         this.floorManager = floorManager;
         this.spellsManager = spellsManager;
         this.facesManager = facesManager;
@@ -1185,8 +1193,8 @@ public class JXCSkinLoader {
 
         assert defaultItemPainter != null;
         final ItemPainter itemPainter = defaultItemPainter.newItemPainter(cellHeight, cellHeight);
-        final GUIItemInventoryFactory itemInventoryFactory = new GUIItemInventoryFactory(tooltipManager, elementListener, commandQueue, name, itemPainter, server, facesManager, itemsManager);
-        final GUIElement element = new GUIItemInventoryList(tooltipManager, elementListener, commandQueue, name, x, y, w, h, cellHeight, server, itemsManager, selectedItem, itemInventoryFactory);
+        final GUIItemInventoryFactory itemInventoryFactory = new GUIItemInventoryFactory(tooltipManager, elementListener, commandQueue, name, itemPainter, server, facesManager, itemsManager, inventoryManager);
+        final GUIElement element = new GUIItemInventoryList(tooltipManager, elementListener, commandQueue, name, x, y, w, h, cellHeight, server, itemsManager, inventoryManager, selectedItem, itemInventoryFactory);
         insertGuiElement(element);
     }
 
@@ -1236,7 +1244,7 @@ public class JXCSkinLoader {
             }
 
             final ItemPainter itemPainter = defaultItemPainter.newItemPainter(w, h);
-            element = new GUIItemInventory(tooltipManager, elementListener, commandQueue, name, x, y, w, h, itemPainter, index, server, facesManager, itemsManager);
+            element = new GUIItemInventory(tooltipManager, elementListener, commandQueue, name, x, y, w, h, itemPainter, index, server, facesManager, itemsManager, inventoryManager);
         } else if (type.equals("shortcut")) {
             if (args.length != 11) {
                 throw new IOException("syntax error");

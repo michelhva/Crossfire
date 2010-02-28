@@ -67,6 +67,12 @@ public class ItemsManager {
     @NotNull
     private final SkillSet skillSet;
 
+
+    /**
+     * The inventory manager used to maintain player inventory state.
+     */
+    @NotNull
+    private final AbstractManager inventoryManager;
     /**
      * The floor manager used to maintain floor object states.
      */
@@ -85,12 +91,6 @@ public class ItemsManager {
      */
     @NotNull
     private final Map<Integer, CfItem> allItems = new HashMap<Integer, CfItem>();
-
-    /**
-     * The inventory manager used to maintain player inventory state.
-     */
-    @NotNull
-    private final AbstractManager inventoryManager = new InventoryManager();
 
     /**
      * The current floor manager used to track the player's current floor
@@ -251,13 +251,15 @@ public class ItemsManager {
      * @param facesManager the faces manager for looking up faces
      * @param stats the instance to update
      * @param skillSet the skill set instance to update
+     * @param inventoryManager the inventory manager to use
      * @param floorManager the floor manager instance to use
      * @param guiStateManager the gui state manager to watch
      */
-    public ItemsManager(@NotNull final CrossfireServerConnection crossfireServerConnection, @NotNull final FacesManager facesManager, @NotNull final Stats stats, @NotNull final SkillSet skillSet, @NotNull final AbstractManager floorManager, @NotNull final GuiStateManager guiStateManager) {
+    public ItemsManager(@NotNull final CrossfireServerConnection crossfireServerConnection, @NotNull final FacesManager facesManager, @NotNull final Stats stats, @NotNull final SkillSet skillSet, @NotNull final AbstractManager inventoryManager, @NotNull final AbstractManager floorManager, @NotNull final GuiStateManager guiStateManager) {
         this.facesManager = facesManager;
         this.stats = stats;
         this.skillSet = skillSet;
+        this.inventoryManager = inventoryManager;
         this.floorManager = floorManager;
         currentFloorManager = new CurrentFloorManager(this, floorManager);
         crossfireServerConnection.addCrossfireUpdateItemListener(crossfireUpdateItemListener);
@@ -579,15 +581,6 @@ public class ItemsManager {
     @NotNull
     public CurrentFloorManager getCurrentFloorManager() {
         return currentFloorManager;
-    }
-
-    /**
-     * Returns the inventory manager.
-     * @return the inventory manager
-     */
-    @NotNull
-    public AbstractManager getInventoryManager() {
-        return inventoryManager;
     }
 
     /**

@@ -24,6 +24,7 @@ package com.realtime.crossfire.jxclient.gui.item;
 import com.realtime.crossfire.jxclient.faces.FacesManager;
 import com.realtime.crossfire.jxclient.gui.gui.GUIElementListener;
 import com.realtime.crossfire.jxclient.gui.gui.TooltipManager;
+import com.realtime.crossfire.jxclient.items.AbstractManager;
 import com.realtime.crossfire.jxclient.items.CfItem;
 import com.realtime.crossfire.jxclient.items.ItemsManager;
 import com.realtime.crossfire.jxclient.items.LocationListener;
@@ -72,6 +73,12 @@ public class GUIItemInventory extends GUIItemItem {
     private final ItemsManager itemsManager;
 
     /**
+     * The inventory manager instance to watch.
+     */
+    @NotNull
+    private final AbstractManager inventoryManager;
+
+    /**
      * The default scroll index.
      */
     private final int defaultIndex;
@@ -108,13 +115,14 @@ public class GUIItemInventory extends GUIItemItem {
         }
     };
 
-    public GUIItemInventory(@NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final CommandQueue commandQueue, final String name, final int x, final int y, final int w, final int h, @NotNull final ItemPainter itemPainter, final int index, @NotNull final CrossfireServerConnection crossfireServerConnection, @NotNull final FacesManager facesManager, @NotNull final ItemsManager itemsManager) {
+    public GUIItemInventory(@NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final CommandQueue commandQueue, final String name, final int x, final int y, final int w, final int h, @NotNull final ItemPainter itemPainter, final int index, @NotNull final CrossfireServerConnection crossfireServerConnection, @NotNull final FacesManager facesManager, @NotNull final ItemsManager itemsManager, @NotNull final AbstractManager inventoryManager) {
         super(tooltipManager, elementListener, name, x, y, w, h, crossfireServerConnection, itemPainter, facesManager);
         this.commandQueue = commandQueue;
         this.crossfireServerConnection = crossfireServerConnection;
         this.facesManager = facesManager;
         this.itemsManager = itemsManager;
         defaultIndex = index;
+        this.inventoryManager = inventoryManager;
         setIndex(index);
     }
 
@@ -253,11 +261,11 @@ public class GUIItemInventory extends GUIItemItem {
             }
 
             if (this.index >= 0) {
-                itemsManager.getInventoryManager().removeLocationListener(this.index, inventoryLocationListener);
+                inventoryManager.removeLocationListener(this.index, inventoryLocationListener);
             }
             this.index = index;
             if (this.index >= 0) {
-                itemsManager.getInventoryManager().addLocationListener(this.index, inventoryLocationListener);
+                inventoryManager.addLocationListener(this.index, inventoryLocationListener);
             }
         }
 
