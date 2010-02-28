@@ -29,6 +29,7 @@ import com.realtime.crossfire.jxclient.guistate.GuiStateManager;
 import com.realtime.crossfire.jxclient.items.AbstractManager;
 import com.realtime.crossfire.jxclient.items.FloorManager;
 import com.realtime.crossfire.jxclient.items.InventoryManager;
+import com.realtime.crossfire.jxclient.items.ItemSet;
 import com.realtime.crossfire.jxclient.items.ItemsManager;
 import com.realtime.crossfire.jxclient.metaserver.Metaserver;
 import com.realtime.crossfire.jxclient.metaserver.MetaserverModel;
@@ -116,8 +117,9 @@ public class JXClient {
                             final FacesManager facesManager = new FacesManager(faceCache, facesQueue);
                             final AbstractManager inventoryManager = new InventoryManager();
                             final AbstractManager floorManager = new FloorManager();
-                            final ItemsManager itemsManager = new ItemsManager(server, facesManager, stats, skillSet, inventoryManager, floorManager, guiStateManager);
-                            final JXCWindow window = new JXCWindow(terminateSync, server, semaphoreRedraw, options.isDebugGui(), debugKeyboardOutputStreamWriter, debugScreenOutputStreamWriter, options.getPrefs(), optionManager, metaserverModel, options.getResolution(), guiStateManager, experienceTable, skillSet, stats, facesManager, itemsManager, inventoryManager, floorManager);
+                            final ItemSet itemSet = new ItemSet();
+                            final ItemsManager itemsManager = new ItemsManager(server, facesManager, stats, skillSet, inventoryManager, floorManager, guiStateManager, itemSet);
+                            final JXCWindow window = new JXCWindow(terminateSync, server, semaphoreRedraw, options.isDebugGui(), debugKeyboardOutputStreamWriter, debugScreenOutputStreamWriter, options.getPrefs(), optionManager, metaserverModel, options.getResolution(), guiStateManager, experienceTable, skillSet, stats, facesManager, itemsManager, itemSet, inventoryManager, floorManager);
                             new Metaserver(Filenames.getMetaserverCacheFile(), metaserverModel, guiStateManager);
                             final SoundManager soundManager = new SoundManager(guiStateManager);
                             try {
