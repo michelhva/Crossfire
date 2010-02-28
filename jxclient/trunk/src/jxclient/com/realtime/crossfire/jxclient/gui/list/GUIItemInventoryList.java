@@ -29,6 +29,7 @@ import com.realtime.crossfire.jxclient.gui.item.GUIItemInventory;
 import com.realtime.crossfire.jxclient.gui.item.GUIItemInventoryFactory;
 import com.realtime.crossfire.jxclient.gui.item.GUIItemItem;
 import com.realtime.crossfire.jxclient.gui.label.AbstractLabel;
+import com.realtime.crossfire.jxclient.items.AbstractManager;
 import com.realtime.crossfire.jxclient.items.CfItem;
 import com.realtime.crossfire.jxclient.items.ItemsManager;
 import com.realtime.crossfire.jxclient.items.LocationsListener;
@@ -79,6 +80,12 @@ public class GUIItemInventoryList extends GUIItemList {
     private final ItemsManager itemsManager;
 
     /**
+     * The inventory manager to monitor.
+     */
+    @NotNull
+    private final AbstractManager inventoryManager;
+
+    /**
      * The label to update with information about the selected item.
      */
     @Nullable
@@ -127,20 +134,22 @@ public class GUIItemInventoryList extends GUIItemList {
      * @param crossfireServerConnection the crossfire server connection for
      * sending commands to the server
      * @param itemsManager the items manager for looking up items
+     * @param inventoryManager the inventory manager to monitor
      * @param currentItem the label to update with information about the
      * selected item.
      * @param itemInventoryFactory the factory for creating item inventory
      * instances
      */
-    public GUIItemInventoryList(@NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final CommandQueue commandQueue, @NotNull final String name, final int x, final int y, final int w, final int h, final int cellHeight, @NotNull final CrossfireServerConnection crossfireServerConnection, @NotNull final ItemsManager itemsManager, @Nullable final AbstractLabel currentItem, @NotNull final GUIItemInventoryFactory itemInventoryFactory) {
+    public GUIItemInventoryList(@NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final CommandQueue commandQueue, @NotNull final String name, final int x, final int y, final int w, final int h, final int cellHeight, @NotNull final CrossfireServerConnection crossfireServerConnection, @NotNull final ItemsManager itemsManager, @NotNull final AbstractManager inventoryManager, @Nullable final AbstractLabel currentItem, @NotNull final GUIItemInventoryFactory itemInventoryFactory) {
         super(tooltipManager, elementListener, name, x, y, w, h, cellHeight, new ItemInventoryCellRenderer(itemInventoryFactory.newTemplateItemInventory(cellHeight)));
+        this.inventoryManager = inventoryManager;
         this.itemInventoryFactory = itemInventoryFactory;
         this.commandQueue = commandQueue;
         this.crossfireServerConnection = crossfireServerConnection;
         this.itemsManager = itemsManager;
         this.currentItem = currentItem;
         setLayoutOrientation(JList.HORIZONTAL_WRAP, -1);
-        this.itemsManager.getInventoryManager().addLocationsListener(locationsListener);
+        this.inventoryManager.addLocationsListener(locationsListener);
         rebuildList();
     }
 
@@ -150,7 +159,7 @@ public class GUIItemInventoryList extends GUIItemList {
     @Override
     public void dispose() {
         super.dispose();
-        itemsManager.getInventoryManager().removeLocationsListener(locationsListener);
+        inventoryManager.removeLocationsListener(locationsListener);
     }
 
     /**
