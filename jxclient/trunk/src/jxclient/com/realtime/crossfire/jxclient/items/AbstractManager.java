@@ -97,6 +97,16 @@ public abstract class AbstractManager {
     }
 
     /**
+     * Removes a {@link CfItem}.
+     * @param item the item
+     */
+    public void removeItem(@NotNull final CfItem item) {
+        final int startIndex = itemSet.removeItem(item);
+        final int endIndex = itemSet.getNumberOfItemsByLocation(item.getLocation())+1;
+        addModified(startIndex, endIndex);
+    }
+
+    /**
      * Adds a {@link LocationListener} to be notified about changes in a slot.
      * @param index the slot index
      * @param listener the listener

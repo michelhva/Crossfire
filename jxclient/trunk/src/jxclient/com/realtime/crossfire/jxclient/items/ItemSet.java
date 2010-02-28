@@ -90,9 +90,9 @@ public class ItemSet {
     /**
      * Removes a {@link CfItem}.
      * @param item the item to remove
-     * @param abstractManager the abstract manager to notify about changes
+     * @return the index where the item has been inserted
      */
-    public void removeItem(@NotNull final CfItem item, @Nullable final AbstractManager abstractManager) {
+    public int removeItem(@NotNull final CfItem item) {
         final int where = item.getLocation();
         final List<CfItem> list = items.get(where);
         if (list == null) {
@@ -110,9 +110,7 @@ public class ItemSet {
             }
         }
 
-        if (abstractManager != null) {
-            abstractManager.addModified(index, list.size()+1);
-        }
+        return index;
     }
 
     /**
