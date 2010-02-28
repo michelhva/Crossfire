@@ -108,7 +108,7 @@ public class Options {
     public void parse(@NotNull final String[] args) throws IOException {
         prefs = new Settings(Filenames.getSettingsFile());
         resolution = getScreenResolution();
-        skin = prefs.getString("skin", "default");
+        skin = "default";
 
         // fix changed default skin name
         if (skin.equals("com.realtime.crossfire.jxclient.JXCSkinPrelude")) {
@@ -170,7 +170,7 @@ public class Options {
         prefs.remove("resolution"); // delete obsolete entry
         prefs.remove("width"); // delete obsolete entry
         prefs.remove("height"); // delete obsolete entry
-        prefs.putString("skin", skin);
+        prefs.remove("skin"); // delete obsolete entry
 
         // Map "default to actual skin name; must be after skin name has
         // been written to preferences.
