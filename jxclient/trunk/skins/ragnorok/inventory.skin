@@ -53,4 +53,5 @@ key char 76        exec command_inventory_unlock
 key char 109       exec command_inventory_mark
 key char 117       exec command_inventory_unlock
 
-# XXX: event connect command_inventory_reset
+commandlist command_inventory_reset OR inv SCROLL_RESET
+event connect command_inventory_reset
