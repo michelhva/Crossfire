@@ -26,6 +26,7 @@ import com.realtime.crossfire.jxclient.gui.gui.GUIElement;
 import com.realtime.crossfire.jxclient.gui.gui.GUIElementListener;
 import com.realtime.crossfire.jxclient.gui.gui.TooltipManager;
 import com.realtime.crossfire.jxclient.gui.item.GUIItemItem;
+import com.realtime.crossfire.jxclient.gui.scrollable.GUIScrollable;
 import java.awt.Adjustable;
 import java.awt.AlphaComposite;
 import java.awt.Color;
@@ -51,7 +52,7 @@ import org.jetbrains.annotations.NotNull;
  * A {@link GUIElement} that displays a list of entries.
  * @author Andreas Kirschbaum
  */
-public abstract class GUIList extends ActivatableGUIElement {
+public abstract class GUIList extends ActivatableGUIElement implements GUIScrollable {
 
     /**
      * The serial version UID.
@@ -298,6 +299,7 @@ public abstract class GUIList extends ActivatableGUIElement {
      * @param distance the distance to scroll
      * @return whether scrolling is possible
      */
+    @Override
     public boolean canScroll(final int distance) {
         synchronized (getTreeLock()) {
             final Adjustable scrollBar = scrollPane.getVerticalScrollBar();
@@ -315,6 +317,7 @@ public abstract class GUIList extends ActivatableGUIElement {
      * Moves the list.
      * @param distance the distance to scroll
      */
+    @Override
     public void scroll(final int distance) {
         synchronized (getTreeLock()) {
             final Adjustable scrollBar = scrollPane.getVerticalScrollBar();
@@ -361,6 +364,14 @@ public abstract class GUIList extends ActivatableGUIElement {
             }
         }
         setChanged();
+    }
+
+    /**
+     * {@inheritDoc}
+     */
+    @Override
+    public void resetScroll() {
+        setSelectedIndex(0);
     }
 
     /**
