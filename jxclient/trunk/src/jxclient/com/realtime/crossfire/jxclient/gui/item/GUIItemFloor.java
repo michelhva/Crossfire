@@ -25,6 +25,7 @@ import com.realtime.crossfire.jxclient.faces.FacesManager;
 import com.realtime.crossfire.jxclient.gui.gui.GUIElement;
 import com.realtime.crossfire.jxclient.gui.gui.GUIElementListener;
 import com.realtime.crossfire.jxclient.gui.gui.TooltipManager;
+import com.realtime.crossfire.jxclient.items.AbstractManager;
 import com.realtime.crossfire.jxclient.items.CfItem;
 import com.realtime.crossfire.jxclient.items.CurrentFloorListener;
 import com.realtime.crossfire.jxclient.items.ItemsManager;
@@ -78,6 +79,12 @@ public class GUIItemFloor extends GUIItemItem {
      */
     @NotNull
     private final ItemsManager itemsManager;
+
+    /**
+     * The {@link AbstractManager} instance to watch.
+     */
+    @NotNull
+    private final AbstractManager floorManager;
 
     /**
      * The {@link FacesManager} instance to use.
@@ -162,14 +169,16 @@ public class GUIItemFloor extends GUIItemItem {
      * @param index the initial scroll index
      * @param crossfireServerConnection the connection instance
      * @param itemsManager the items manager instance to use
+     * @param floorManager the floor manager instance to use
      * @param facesManager the faces manager instance to use
      * @throws IOException if a resource cannot be found
      */
-    public GUIItemFloor(@NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final CommandQueue commandQueue, @NotNull final String name, final int x, final int y, final int w, final int h, @NotNull final ItemPainter itemPainter, final int index, @NotNull final CrossfireServerConnection crossfireServerConnection, @NotNull final ItemsManager itemsManager, @NotNull final FacesManager facesManager) throws IOException {
+    public GUIItemFloor(@NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final CommandQueue commandQueue, @NotNull final String name, final int x, final int y, final int w, final int h, @NotNull final ItemPainter itemPainter, final int index, @NotNull final CrossfireServerConnection crossfireServerConnection, @NotNull final ItemsManager itemsManager, @NotNull final AbstractManager floorManager, @NotNull final FacesManager facesManager) throws IOException {
         super(tooltipManager, elementListener, name, x, y, w, h, crossfireServerConnection, itemPainter, facesManager);
         this.commandQueue = commandQueue;
         this.crossfireServerConnection = crossfireServerConnection;
         this.itemsManager = itemsManager;
+        this.floorManager = floorManager;
         this.facesManager = facesManager;
         nextGroupFace = ResourceUtils.loadImage(NEXT_GROUP_FACE).getImage();
         prevGroupFace = ResourceUtils.loadImage(PREV_GROUP_FACE).getImage();
@@ -256,9 +265,9 @@ public class GUIItemFloor extends GUIItemItem {
 
         if (this.index >= 0) {
             if (this.containerTag == 0) {
-                itemsManager.getFloorManager().removeLocationListener(this.index, floorLocationListener);
+                floorManager.removeLocationListener(this.index, floorLocationListener);
             } else if (this.index > 0) {
-                itemsManager.getFloorManager().removeLocationListener(this.index-1, floorLocationListener);
+                floorManager.removeLocationListener(this.index-1, floorLocationListener);
             } else {
                 // index 0 is the container itself -- no listener needed
             }
@@ -267,9 +276,9 @@ public class GUIItemFloor extends GUIItemItem {
         this.containerTag = containerTag;
         if (this.index >= 0) {
             if (this.containerTag == 0) {
-                itemsManager.getFloorManager().addLocationListener(this.index, floorLocationListener);
+                floorManager.addLocationListener(this.index, floorLocationListener);
             } else if (this.index > 0) {
-                itemsManager.getFloorManager().addLocationListener(this.index-1, floorLocationListener);
+                floorManager.addLocationListener(this.index-1, floorLocationListener);
             } else {
                 // index 0 is the container itself -- no listener needed
             }
