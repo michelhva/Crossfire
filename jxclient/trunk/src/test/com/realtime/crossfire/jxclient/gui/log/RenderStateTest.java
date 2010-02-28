@@ -81,27 +81,42 @@ public class RenderStateTest extends TestCase {
         final Parser parser = new Parser();
 
         for (int i = 0; i < HEIGHT+10; i++) {
+            assert buffer != null;
             parser.parse("xxx"+i, null, buffer);
         }
         checkState(10, 0, 10);
 
         // scroll to valid positions
+        assert buffer != null;
+        assert rs != null;
         rs.scrollTo(buffer, 0);
         checkState(0, 0, 0);
+        assert buffer != null;
+        assert rs != null;
         rs.scrollTo(buffer, 5);
         checkState(5, 0, 5);
+        assert rs != null;
+        assert buffer != null;
         rs.scrollTo(buffer, 10);
         checkState(10, 0, 10);
 
         // scroll to invalid positions
+        assert rs != null;
+        assert buffer != null;
         rs.scrollTo(buffer, -1);
         checkState(0, 0, 0);
+        assert rs != null;
+        assert buffer != null;
         rs.scrollTo(buffer, -10);
         checkState(0, 0, 0);
 
         // scroll to invalid positions
+        assert rs != null;
+        assert buffer != null;
         rs.scrollTo(buffer, 11);
         checkState(10, 0, 10);
+        assert rs != null;
+        assert buffer != null;
         rs.scrollTo(buffer, 21);
         checkState(10, 0, 10);
     }
@@ -110,74 +125,99 @@ public class RenderStateTest extends TestCase {
         final Parser parser = new Parser();
 
         checkState(0, 0, 0);
+        assert buffer != null;
         parser.parse("xxx1", null, buffer);
         checkState(0, 0, 0);
+        assert buffer != null;
         parser.parse("xxx2", null, buffer);
         checkState(0, 0, 0);
 
         // add lines to completely fill visible area
         for (int i = 2; i < HEIGHT; i++) {
+            assert buffer != null;
             parser.parse("xxx3"+i, null, buffer);
         }
         checkState(0, 0, 0);
 
         // add one more line ==> buffer sticks at bottom
+        assert buffer != null;
         parser.parse("xxx4", null, buffer);
         checkState(1, 0, 1);
 
         // add one more line ==> buffer sticks at bottom
+        assert buffer != null;
         parser.parse("xxx5", null, buffer);
         checkState(2, 0, 2);
 
         // scroll up one line
+        assert rs != null;
+        assert buffer != null;
         rs.scrollTo(buffer, 1);
         checkState(1, 0, 1);
 
         // add one more line ==> buffer sticks at scroll position
+        assert buffer != null;
         parser.parse("xxx6", null, buffer);
         checkState(1, 0, 1);
 
         // scroll back to bottom
+        assert rs != null;
+        assert buffer != null;
         rs.scrollTo(buffer, 3);
         checkState(3, 0, 3);
 
         // add one more line ==> buffer sticks at bottom
+        assert buffer != null;
         parser.parse("xxx7", null, buffer);
         checkState(4, 0, 4);
 
         // completely fill buffer
         for (int i = HEIGHT+4; i < Buffer.MAX_LINES; i++) {
+            assert buffer != null;
             parser.parse("xxx8"+i, null, buffer);
         }
         checkState(Buffer.MAX_LINES-HEIGHT, 0, Buffer.MAX_LINES-HEIGHT);
 
         // add one more line ==> buffer sticks at bottom
+        assert buffer != null;
         parser.parse("xxx9", null, buffer);
         checkState(Buffer.MAX_LINES-HEIGHT, 0, Buffer.MAX_LINES-HEIGHT);
 
         // scroll one line up
+        assert rs != null;
+        assert buffer != null;
         rs.scrollTo(buffer, Buffer.MAX_LINES-HEIGHT-1);
         checkState(Buffer.MAX_LINES-HEIGHT-1, 0, Buffer.MAX_LINES-HEIGHT-1);
 
         // fill more lines ==> scroll position sticks
         for (int i = 0; i < Buffer.MAX_LINES-HEIGHT-2; i++) {
+            assert buffer != null;
             parser.parse("xxx0"+i, null, buffer);
         }
         checkState(1, 0, 1);
+        assert buffer != null;
         parser.parse("xxx1", null, buffer);
         checkState(0, 0, 0);
 
         // add one more line ==> scroll position hits top
+        assert buffer != null;
         parser.parse("xxx2", null, buffer);
         checkState(0, 0, 0);
     }
 
     private void checkState(final int expectedTopIndex, final int expectedTopOffset, final int expectedScrollPos) {
-        assertEquals(formatState(expectedTopIndex, expectedTopOffset, expectedScrollPos), formatState(rs.getTopIndex(), rs.getTopOffset(), rs.getScrollPos()));
+        assert rs != null;
+        final int topIndex = rs.getTopIndex();
+        assert rs != null;
+        final int topOffset = rs.getTopOffset();
+        assert rs != null;
+        final int scrollPos = rs.getScrollPos();
+        assertEquals(formatState(expectedTopIndex, expectedTopOffset, expectedScrollPos), formatState(topIndex, topOffset, scrollPos));
     }
 
     @NotNull
     private String formatState(final int topIndex, final int topOffset, final int scrollPos) {
+        assert buffer != null;
         return "top="+topIndex+"/"+topOffset+" pos="+scrollPos+"/"+buffer.getTotalHeight();
     }
 
@@ -201,27 +241,36 @@ public class RenderStateTest extends TestCase {
         buffer = new Buffer(new Fonts(font, font, font, font), g.getFontRenderContext(), 100);
         g.dispose();
         rs = new RenderState();
+        assert buffer != null;
         rs.setHeight(buffer, HEIGHT);
 
-        buffer.addBufferListener(new BufferListener() {
+        final BufferListener bufferListener = new BufferListener() {
             /** {@inheritDoc} */
             @Override
             public void linesAdded(final int lines) {
+                assert rs != null;
+                assert buffer != null;
                 rs.linesAdded(buffer, lines);
             }
 
             /** {@inheritDoc} */
             @Override
             public void linesReplaced(final int lines) {
+                assert rs != null;
+                assert buffer != null;
                 rs.linesReplaced(buffer, lines);
             }
 
             /** {@inheritDoc} */
             @Override
             public void linesRemoved(@NotNull final List<Line> lines) {
+                assert rs != null;
+                assert buffer != null;
                 rs.linesRemoved(buffer, lines);
             }
-        });
+        };
+        assert buffer != null;
+        buffer.addBufferListener(bufferListener);
     }
 
 }
