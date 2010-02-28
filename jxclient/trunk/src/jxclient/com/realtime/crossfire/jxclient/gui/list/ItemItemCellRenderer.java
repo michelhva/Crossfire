@@ -22,7 +22,7 @@
 package com.realtime.crossfire.jxclient.gui.list;
 
 import com.realtime.crossfire.jxclient.gui.GUIMetaElement;
-import com.realtime.crossfire.jxclient.gui.item.GUIItemInventory;
+import com.realtime.crossfire.jxclient.gui.item.GUIItemItem;
 import java.awt.BorderLayout;
 import java.awt.Component;
 import javax.swing.JList;
@@ -34,7 +34,7 @@ import org.jetbrains.annotations.NotNull;
  * A {@link ListCellRenderer} that renders {@link GUIMetaElement} instances.
  * @author Andreas Kirschbaum
  */
-public class ItemInventoryCellRenderer extends JPanel implements ListCellRenderer {
+public class ItemItemCellRenderer extends JPanel implements ListCellRenderer {
 
     /**
      * The serial version UID.
@@ -45,13 +45,13 @@ public class ItemInventoryCellRenderer extends JPanel implements ListCellRendere
      * The template used for painting.
      */
     @NotNull
-    private final GUIItemInventory template;
+    private final GUIItemItem template;
 
     /**
      * Creates a new instance.
      * @param template the template used for painting
      */
-    public ItemInventoryCellRenderer(@NotNull final GUIItemInventory template) {
+    public ItemItemCellRenderer(@NotNull final GUIItemItem template) {
         super(new BorderLayout());
         setOpaque(false);
         this.template = template;
@@ -63,7 +63,7 @@ public class ItemInventoryCellRenderer extends JPanel implements ListCellRendere
      */
     @Override
     public Component getListCellRendererComponent(@NotNull final JList list, @NotNull final Object value, final int index, final boolean isSelected, final boolean cellHasFocus) {
-        template.setIndexNoListeners(((GUIItemInventory)value).getIndex());
+        template.setIndexNoListeners(((GUIItemItem)value).getIndex());
         template.setSelected(isSelected);
         return this;
     }

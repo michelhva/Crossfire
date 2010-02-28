@@ -249,9 +249,9 @@ public class GUIItemInventory extends GUIItemItem {
     }
 
     /**
-     * Returns the slot index.
-     * @return the slow tindex
+     * {@inheritDoc}
      */
+    @Override
     public int getIndex() {
         synchronized (sync) {
             return index;
@@ -291,10 +291,9 @@ public class GUIItemInventory extends GUIItemItem {
     }
 
     /**
-     * Set the inventory slot to display without registering listeners for
-     * updates.
-     * @param index the inventory slot
+     * {@inheritDoc}
      */
+    @Override
     public void setIndexNoListeners(final int index) {
         synchronized (sync) {
             if (this.index == index) {

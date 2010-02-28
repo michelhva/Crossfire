@@ -261,6 +261,14 @@ public class GUIItemFloor extends GUIItemItem {
     }
 
     /**
+     * {@inheritDoc}
+     */
+    @Override
+    public int getIndex() {
+        return index;
+    }
+
+    /**
      * Set the floor tile to display.
      * @param index the floor tile
      * @param containerTag The new container tag.
@@ -301,6 +309,28 @@ public class GUIItemFloor extends GUIItemItem {
             setItem(this.index-1 < list.size() ? list.get(this.index-1) : null);
         } else {
             setItem(itemSet.getItem(containerTag));
+        }
+    }
+
+    /**
+     * {@inheritDoc}
+     */
+    @Override
+    public void setIndexNoListeners(final int index) {
+        if (this.index == index) {
+            return;
+        }
+
+        this.index = index;
+
+        if (containerTag == 0) {
+            final List<CfItem> list = itemSet.getItems(itemsManager.getCurrentFloorManager().getCurrentFloor());
+            setItemNoListeners(0 <= this.index && this.index < list.size() ? list.get(this.index) : null);
+        } else if (this.index > 0) {
+            final List<CfItem> list = itemSet.getItems(itemsManager.getCurrentFloorManager().getCurrentFloor());
+            setItemNoListeners(this.index-1 < list.size() ? list.get(this.index-1) : null);
+        } else {
+            setItemNoListeners(itemSet.getItem(containerTag));
         }
     }
 
