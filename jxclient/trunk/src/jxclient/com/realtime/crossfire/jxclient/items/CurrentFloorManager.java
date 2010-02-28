@@ -73,9 +73,9 @@ public class CurrentFloorManager {
             return;
         }
 
-        abstractManager.addModified(itemSet.getNumberOfItems(this.currentFloor));
+        abstractManager.addModified(itemSet.getNumberOfItemsByLocation(this.currentFloor));
         this.currentFloor = currentFloor;
-        abstractManager.addModified(itemSet.getNumberOfItems(this.currentFloor));
+        abstractManager.addModified(itemSet.getNumberOfItemsByLocation(this.currentFloor));
 
         for (final CurrentFloorListener listener : currentFloorListeners.getListeners(CurrentFloorListener.class)) {
             listener.currentFloorChanged(this.currentFloor);

@@ -167,10 +167,10 @@ public class ItemsManager {
         /** {@inheritDoc} */
         @Override
         public void run() {
-            floorManager.fireEvents(itemSet.getItems(currentFloorManager.getCurrentFloor()));
+            floorManager.fireEvents(itemSet.getItemsByLocation(currentFloorManager.getCurrentFloor()));
             @Nullable final List<CfItem> newItems;
             synchronized (sync) {
-                newItems = player != null ? itemSet.getItems(player.getTag()) : null;
+                newItems = player != null ? itemSet.getItemsByLocation(player.getTag()) : null;
             }
             if (newItems != null) {
                 inventoryManager.fireEvents(newItems);
@@ -266,11 +266,10 @@ public class ItemsManager {
                 cleanInventory(player.getTag());
             }
             cleanInventory(currentFloorManager.getCurrentFloor());
-            final Iterable<CfItem> tmp = itemSet.removeAll();
+            final Iterable<CfItem> tmp = itemSet.removeAllItems();
             for (final CfItem item : tmp) {
                 removeItem(item);
             }
-            assert itemSet.isEmpty();
             fireEvents();
             currentFloorManager.setCurrentFloor(0);
             floorManager.reset();
@@ -291,7 +290,7 @@ public class ItemsManager {
                 return player;
             }
 
-            return itemSet.getItem(tag);
+            return itemSet.getItemByTag(tag);
         }
     }
 
@@ -300,7 +299,7 @@ public class ItemsManager {
      * @param tag the item tag
      */
     private void cleanInventory(final int tag) {
-        for (final CfItem item : itemSet.getItems(tag)) {
+        for (final CfItem item : itemSet.getItemsByLocation(tag)) {
             removeItem(item);
         }
         fireEvents();
@@ -323,7 +322,7 @@ public class ItemsManager {
      */
     private void removeItem(final int tag) {
         synchronized (sync) {
-            final CfItem item = itemSet.removeTag(tag);
+            final CfItem item = itemSet.removeItemByTag(tag);
             if (item != null) {
                 removeItemFromLocation(item);
                 return;
@@ -338,7 +337,7 @@ public class ItemsManager {
      */
     private void removeItem(@NotNull final CfItem item) {
         synchronized (sync) {
-            final Object deletedItem = itemSet.removeTag(item.getTag());
+            final Object deletedItem = itemSet.removeItemByTag(item.getTag());
             if (deletedItem == null) {
                 throw new AssertionError("cannot find item "+item.getTag());
             }
@@ -356,7 +355,7 @@ public class ItemsManager {
      */
     private void addItem(@NotNull final CfItem item) {
         synchronized (sync) {
-            final CfItem deletedItem = itemSet.removeTag(item.getTag());
+            final CfItem deletedItem = itemSet.removeItemByTag(item.getTag());
             if (deletedItem != null) {
                 //XXX: Do not complain about duplicate items as the Crossfire server sometimes does not correctly remove items from the ground when a player picks up items
                 //System.err.println("addItem: duplicate item "+item.getTag());
@@ -376,7 +375,7 @@ public class ItemsManager {
      */
     private void moveItem(@NotNull final CfItem item, final int newLocation) {
         synchronized (sync) {
-            if (itemSet.getItem(item.getTag()) != item) {
+            if (itemSet.getItemByTag(item.getTag()) != item) {
                 throw new AssertionError("invalid item "+item.getTag());
             }
 
@@ -404,7 +403,7 @@ public class ItemsManager {
         } else {
             abstractManager = null;
         }
-        itemSet.removeItemFromLocation(item, abstractManager);
+        itemSet.removeItem(item, abstractManager);
     }
 
     /**
@@ -544,7 +543,7 @@ public class ItemsManager {
      */
     @NotNull
     public List<CfItem> getInventory() {
-        return player == null ? Collections.<CfItem>emptyList() : itemSet.getInventory(player.getTag());
+        return player == null ? Collections.<CfItem>emptyList() : itemSet.getInventoryByTag(player.getTag());
     }
 
 }
