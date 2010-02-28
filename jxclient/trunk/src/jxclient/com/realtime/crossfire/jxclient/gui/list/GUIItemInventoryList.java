@@ -25,9 +25,8 @@ import com.realtime.crossfire.jxclient.gui.gui.GUIElement;
 import com.realtime.crossfire.jxclient.gui.gui.GUIElementChangedListener;
 import com.realtime.crossfire.jxclient.gui.gui.GUIElementListener;
 import com.realtime.crossfire.jxclient.gui.gui.TooltipManager;
-import com.realtime.crossfire.jxclient.gui.item.GUIItemInventory;
-import com.realtime.crossfire.jxclient.gui.item.GUIItemInventoryFactory;
 import com.realtime.crossfire.jxclient.gui.item.GUIItemItem;
+import com.realtime.crossfire.jxclient.gui.item.GUIItemItemFactory;
 import com.realtime.crossfire.jxclient.gui.label.AbstractLabel;
 import com.realtime.crossfire.jxclient.items.AbstractManager;
 import com.realtime.crossfire.jxclient.items.CfItem;
@@ -54,11 +53,11 @@ public class GUIItemInventoryList extends GUIItemList {
     private static final long serialVersionUID = 1;
 
     /**
-     * The {@link GUIItemInventoryFactory} for creating new {@link
-     * GUIItemInventory} instances.
+     * The {@link GUIItemItemFactory} for creating new {@link GUIItemItem}
+     * instances.
      */
     @NotNull
-    private final GUIItemInventoryFactory itemInventoryFactory;
+    private final GUIItemItemFactory itemItemFactory;
 
     /**
      * The {@link CommandQueue} to sending commands to the server.
@@ -105,7 +104,7 @@ public class GUIItemInventoryList extends GUIItemList {
 
     /**
      * The {@link GUIElementChangedListener} attached to all {@link
-     * GUIItemInventory} instance in the list.
+     * GUIItemItem} instance in the list.
      */
     @NotNull
     private final GUIElementChangedListener itemChangedListener = new GUIElementChangedListener() {
@@ -137,13 +136,12 @@ public class GUIItemInventoryList extends GUIItemList {
      * @param inventoryManager the inventory manager to monitor
      * @param currentItem the label to update with information about the
      * selected item.
-     * @param itemInventoryFactory the factory for creating item inventory
-     * instances
+     * @param itemItemFactory the factory for creating item instances
      */
-    public GUIItemInventoryList(@NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final CommandQueue commandQueue, @NotNull final String name, final int x, final int y, final int w, final int h, final int cellHeight, @NotNull final CrossfireServerConnection crossfireServerConnection, @NotNull final ItemsManager itemsManager, @NotNull final AbstractManager inventoryManager, @Nullable final AbstractLabel currentItem, @NotNull final GUIItemInventoryFactory itemInventoryFactory) {
-        super(tooltipManager, elementListener, name, x, y, w, h, cellHeight, new ItemItemCellRenderer(itemInventoryFactory.newTemplateItemInventory(cellHeight)));
+    public GUIItemInventoryList(@NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final CommandQueue commandQueue, @NotNull final String name, final int x, final int y, final int w, final int h, final int cellHeight, @NotNull final CrossfireServerConnection crossfireServerConnection, @NotNull final ItemsManager itemsManager, @NotNull final AbstractManager inventoryManager, @Nullable final AbstractLabel currentItem, @NotNull final GUIItemItemFactory itemItemFactory) {
+        super(tooltipManager, elementListener, name, x, y, w, h, cellHeight, new ItemItemCellRenderer(itemItemFactory.newTemplateItemInventory(cellHeight)));
         this.inventoryManager = inventoryManager;
-        this.itemInventoryFactory = itemInventoryFactory;
+        this.itemItemFactory = itemItemFactory;
         this.commandQueue = commandQueue;
         this.crossfireServerConnection = crossfireServerConnection;
         this.itemsManager = itemsManager;
@@ -171,7 +169,7 @@ public class GUIItemInventoryList extends GUIItemList {
             final int newSize = inventory.size();
             final int oldSize = resizeElements(newSize);
             for (int i = oldSize; i < newSize; i++) {
-                final GUIElement item = itemInventoryFactory.newItemInventory(i);
+                final GUIElement item = itemItemFactory.newItemInventory(i);
                 addElement(item);
                 item.setChangedListener(itemChangedListener);
                 assert item.isElementVisible();

@@ -36,7 +36,7 @@ import org.jetbrains.annotations.NotNull;
  * A factory for creating {@link GUIItemInventory} instances.
  * @author Andreas Kirschbaum
  */
-public class GUIItemInventoryFactory {
+public class GUIItemInventoryFactory implements GUIItemItemFactory {
 
     /**
      * The tooltip manager to update.
@@ -98,22 +98,20 @@ public class GUIItemInventoryFactory {
     }
 
     /**
-     * Creates a new {@link GUIItemInventory} instance.
-     * @param index the item inventory's index
-     * @return the new instance
+     * {@inheritDoc}
      */
+    @Override
     @NotNull
     public GUIElement newItemInventory(final int index) {
         return new GUIItemInventory(tooltipManager, elementListener, commandQueue, name+index, 0, 0, 1, 1, itemPainter, index, crossfireServerConnection, facesManager, itemsManager, itemSet, inventoryManager);
     }
 
     /**
-     * Creates a new {@link GUIItemInventory} instance.
-     * @param cellHeight the cell size
-     * @return the new instance
+     * {@inheritDoc}
      */
+    @Override
     @NotNull
-    public GUIItemInventory newTemplateItemInventory(final int cellHeight) {
+    public GUIItemItem newTemplateItemInventory(final int cellHeight) {
         return new GUIItemInventory(tooltipManager, elementListener, commandQueue, name+"_template", 0, 0, cellHeight, cellHeight, itemPainter, -1, crossfireServerConnection, facesManager, itemsManager, itemSet, inventoryManager);
     }
 
