@@ -473,8 +473,8 @@ public class JXCSkinLoader {
      * @param currentSpellManager the current spell manager to use
      * @param commandCallback the command callback to use
      * @param macros the macros instance to use
-     * @param nextGroupFace the image for "prev group of items"
-     * @param prevGroupFace the image for "next group of items"
+     * @param nextGroupFace the image for "next group of items"
+     * @param prevGroupFace the image for "prev group of items"
      * @throws JXCSkinException if the file cannot be loaded
      */
     private void load(@NotNull final JXCSkinSource skinSource, @NotNull final String dialogName, @NotNull final CrossfireServerConnection server, @NotNull final GuiStateManager guiStateManager, @NotNull final TooltipManager tooltipManager, @NotNull final JXCWindowRenderer windowRenderer, @NotNull final GUIElementListener elementListener, @NotNull final MetaserverModel metaserverModel, @NotNull final CommandQueue commandQueue, @Nullable final Gui gui, @NotNull final Shortcuts shortcuts, @NotNull final Commands commands, @NotNull final CurrentSpellManager currentSpellManager, @NotNull final CommandCallback commandCallback, @NotNull final Macros macros, @NotNull final Image nextGroupFace, @NotNull final Image prevGroupFace) throws JXCSkinException {
@@ -523,8 +523,8 @@ public class JXCSkinLoader {
      * @param currentSpellManager the current spell manager to use
      * @param commandCallback the command callback to use
      * @param macros the macros instance to use
-     * @param nextGroupFace the image for "prev group of items"
-     * @param prevGroupFace the image for "next group of items"
+     * @param nextGroupFace the image for "next group of items"
+     * @param prevGroupFace the image for "prev group of items"
      * @throws JXCSkinException if the file cannot be loaded
      */
     private void load(@NotNull final JXCSkinSource skinSource, @NotNull final String dialogName, @NotNull final String resourceName, @NotNull final InputStream inputStream, @NotNull final CrossfireServerConnection server, @NotNull final GuiStateManager guiStateManager, @NotNull final TooltipManager tooltipManager, @NotNull final JXCWindowRenderer windowRenderer, @NotNull final GUIElementListener elementListener, @NotNull final MetaserverModel metaserverModel, @NotNull final CommandQueue commandQueue, @Nullable final Gui gui, @NotNull final Shortcuts shortcuts, @NotNull final Commands commands, @NotNull final CurrentSpellManager currentSpellManager, @NotNull final CommandCallback commandCallback, @NotNull final Macros macros, @NotNull final Image nextGroupFace, @NotNull final Image prevGroupFace) throws JXCSkinException {
@@ -1247,8 +1247,8 @@ public class JXCSkinLoader {
      * @param server the server to use
      * @param shortcuts the shortcuts to use
      * @param currentSpellManager the current spell manager to use
-     * @param nextGroupFace the image for "prev group of items"
-     * @param prevGroupFace the image for "next group of items"
+     * @param nextGroupFace the image for "next group of items"
+     * @param prevGroupFace the image for "prev group of items"
      * @throws IOException if the command cannot be parsed
      * @throws JXCSkinException if the command cannot be parsed
      */
