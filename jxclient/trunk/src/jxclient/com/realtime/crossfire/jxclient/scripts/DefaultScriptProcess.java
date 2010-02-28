@@ -455,14 +455,14 @@ public class DefaultScriptProcess extends Thread implements ScriptProcess {
             }
             commandSent("request items actv end");
         } else if (parms.equals("items on")) {
-            for (final CfItem item : itemSet.getItems(0)) {
+            for (final CfItem item : itemSet.getItemsByLocation(0)) {
                 commandSentItem("request items on", item);
             }
             commandSent("request items on end");
         } else if (parms.equals("items cont")) {
             final int containerTag = itemsManager.getCurrentFloorManager().getCurrentFloor();
             if (containerTag != 0) {
-                for (final CfItem item : itemSet.getItems(containerTag)) {
+                for (final CfItem item : itemSet.getItemsByLocation(containerTag)) {
                     commandSentItem("request items cont", item);
                 }
             }

@@ -215,7 +215,7 @@ public class GUIItemFloor extends GUIItemItem {
         if (distance < 0) {
             return index >= -distance;
         } else if (distance > 0) {
-            return index+distance < itemSet.getNumberOfItems(itemsManager.getCurrentFloorManager().getCurrentFloor());
+            return index+distance < itemSet.getNumberOfItemsByLocation(itemsManager.getCurrentFloorManager().getCurrentFloor());
         } else {
             return false;
         }
@@ -302,13 +302,13 @@ public class GUIItemFloor extends GUIItemItem {
         }
 
         if (this.containerTag == 0) {
-            final List<CfItem> list = itemSet.getItems(itemsManager.getCurrentFloorManager().getCurrentFloor());
+            final List<CfItem> list = itemSet.getItemsByLocation(itemsManager.getCurrentFloorManager().getCurrentFloor());
             setItem(0 <= this.index && this.index < list.size() ? list.get(this.index) : null);
         } else if (this.index > 0) {
-            final List<CfItem> list = itemSet.getItems(itemsManager.getCurrentFloorManager().getCurrentFloor());
+            final List<CfItem> list = itemSet.getItemsByLocation(itemsManager.getCurrentFloorManager().getCurrentFloor());
             setItem(this.index-1 < list.size() ? list.get(this.index-1) : null);
         } else {
-            setItem(itemSet.getItem(containerTag));
+            setItem(itemSet.getItemByTag(containerTag));
         }
     }
 
@@ -324,13 +324,13 @@ public class GUIItemFloor extends GUIItemItem {
         this.index = index;
 
         if (containerTag == 0) {
-            final List<CfItem> list = itemSet.getItems(itemsManager.getCurrentFloorManager().getCurrentFloor());
+            final List<CfItem> list = itemSet.getItemsByLocation(itemsManager.getCurrentFloorManager().getCurrentFloor());
             setItemNoListeners(0 <= this.index && this.index < list.size() ? list.get(this.index) : null);
         } else if (this.index > 0) {
-            final List<CfItem> list = itemSet.getItems(itemsManager.getCurrentFloorManager().getCurrentFloor());
+            final List<CfItem> list = itemSet.getItemsByLocation(itemsManager.getCurrentFloorManager().getCurrentFloor());
             setItemNoListeners(this.index-1 < list.size() ? list.get(this.index-1) : null);
         } else {
-            setItemNoListeners(itemSet.getItem(containerTag));
+            setItemNoListeners(itemSet.getItemByTag(containerTag));
         }
     }
 

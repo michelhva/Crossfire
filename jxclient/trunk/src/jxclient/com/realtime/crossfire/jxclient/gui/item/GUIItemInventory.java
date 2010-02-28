@@ -158,7 +158,7 @@ public class GUIItemInventory extends GUIItemItem {
                 return false;
             }
 
-            final Collection<CfItem> list = itemSet.getItems(player.getTag());
+            final Collection<CfItem> list = itemSet.getItemsByLocation(player.getTag());
             synchronized (sync) {
                 return index+distance < list.size();
             }
@@ -279,7 +279,7 @@ public class GUIItemInventory extends GUIItemItem {
 
         final CfItem player = itemsManager.getPlayer();
         if (player != null) {
-            final List<CfItem> list = itemSet.getItems(player.getTag());
+            final List<CfItem> list = itemSet.getItemsByLocation(player.getTag());
             if (0 <= this.index && this.index < list.size()) {
                 setItem(list.get(this.index));
             } else {
@@ -305,7 +305,7 @@ public class GUIItemInventory extends GUIItemItem {
 
         final CfItem player = itemsManager.getPlayer();
         if (player != null) {
-            final List<CfItem> list = itemSet.getItems(player.getTag());
+            final List<CfItem> list = itemSet.getItemsByLocation(player.getTag());
             if (0 <= this.index && this.index < list.size()) {
                 setItemNoListeners(list.get(this.index));
             } else {

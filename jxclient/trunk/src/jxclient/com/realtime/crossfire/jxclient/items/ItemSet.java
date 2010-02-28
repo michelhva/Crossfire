@@ -32,7 +32,8 @@ import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 
 /**
- * Model class maintaining the {@link CfItem}s known to the player.
+ * Model class maintaining the {@link CfItem}s known to the player. Access is
+ * not synchronized.
  * @author Andreas Kirschbaum
  */
 public class ItemSet {
@@ -45,42 +46,24 @@ public class ItemSet {
     private final Map<Integer, CfItem> allItems = new HashMap<Integer, CfItem>();
 
     /**
-     * Maps location to list of items.
+     * Maps location (=tag) to list of items in that location.
      */
     @NotNull
     private final Map<Integer, List<CfItem>> items = new HashMap<Integer, List<CfItem>>();
 
     /**
-     * The synchronization object for accessing {@link #allItems} and {@link
-     * #items}.
-     */
-    @NotNull
-    private final Object sync = new Object();
-
-    /**
-     * Returns a list of items in a given location. The returned list may not be
-     * modified by the caller.
+     * Returns a list of items in a given location. The returned list may not
+     * be modified by the caller.
      * @param location the location
      * @return the list of items
      */
     @NotNull
-    public List<CfItem> getItems(final int location) {
-        final List<CfItem> result;
-        synchronized (sync) {
-            result = items.get(location);
-        }
+    public List<CfItem> getItemsByLocation(final int location) {
+        final List<CfItem> result = items.get(location);
         if (result == null) {
             return Collections.emptyList();
         }
         return Collections.unmodifiableList(result);
-    }
-
-    /**
-     * Returns whether no items are known.
-     * @return whether no items are known
-     */
-    public boolean isEmpty() {
-        return items.isEmpty();
     }
 
     /**
@@ -89,12 +72,19 @@ public class ItemSet {
      * @param location the location to check
      * @return the number of items
      */
-    public int getNumberOfItems(final int location) {
-        final Collection<CfItem> result;
-        synchronized (sync) {
-            result = items.get(location);
-        }
+    public int getNumberOfItemsByLocation(final int location) {
+        final Collection<CfItem> result = items.get(location);
         return result == null ? 0 : result.size();
+    }
+
+    /**
+     * Adds an item.
+     * @param item the item
+     */
+    public void addItem(@NotNull final CfItem item) {
+        if (allItems.put(item.getTag(), item) != null) {
+            throw new AssertionError("duplicate item "+item.getTag());
+        }
     }
 
     /**
@@ -102,7 +92,7 @@ public class ItemSet {
      * @param item the item to remove
      * @param abstractManager the abstract manager to notify about changes
      */
-    public void removeItemFromLocation(@NotNull final CfItem item, @Nullable final AbstractManager abstractManager) {
+    public void removeItem(@NotNull final CfItem item, @Nullable final AbstractManager abstractManager) {
         final int where = item.getLocation();
         final List<CfItem> list = items.get(where);
         if (list == null) {
@@ -183,7 +173,7 @@ public class ItemSet {
      * @return the inventory items; the list cannot be modified
      */
     @NotNull
-    public List<CfItem> getInventory(final int tag) {
+    public List<CfItem> getInventoryByTag(final int tag) {
         final List<CfItem> inventory = items.get(tag);
         if (inventory == null) {
             return Collections.emptyList();
@@ -197,10 +187,8 @@ public class ItemSet {
      * @return the item or <code>null</code> if no such items exists
      */
     @Nullable
-    public CfItem getItem(final int tag) {
-        synchronized (sync) {
-            return allItems.get(tag);
-        }
+    public CfItem getItemByTag(final int tag) {
+        return allItems.get(tag);
     }
 
     /**
@@ -209,10 +197,8 @@ public class ItemSet {
      * @return the removed item or <code>null</code>
      */
     @Nullable
-    public CfItem removeTag(final int tag) {
-        synchronized (sync) {
-            return allItems.remove(tag);
-        }
+    public CfItem removeItemByTag(final int tag) {
+        return allItems.remove(tag);
     }
 
     /**
@@ -220,22 +206,8 @@ public class ItemSet {
      * @return the removed items; may be modified by the caller
      */
     @NotNull
-    public Iterable<CfItem> removeAll() {
-        synchronized (sync) {
-            return new HashSet<CfItem>(allItems.values());
-        }
-    }
-
-    /**
-     * Adds an item.
-     * @param item the item
-     */
-    public void addItem(@NotNull final CfItem item) {
-        synchronized (sync) {
-            if (allItems.put(item.getTag(), item) != null) {
-                throw new AssertionError("duplicate item "+item.getTag());
-            }
-        }
+    public Iterable<CfItem> removeAllItems() {
+        return new HashSet<CfItem>(allItems.values());
     }
 
 }
