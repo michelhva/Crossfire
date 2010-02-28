@@ -1,5 +1,7 @@
 2010-02-28  Andreas Kirschbaum
 
+	* Fix spurious disconnects when reading books or after issuing /clear.
+
 	* Fix syntax error in prelude skin.
 
 	* Command-line option "-S" is not anymore persistent.

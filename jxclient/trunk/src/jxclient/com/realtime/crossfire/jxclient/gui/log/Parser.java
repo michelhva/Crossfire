@@ -102,23 +102,6 @@ public class Parser {
     private Color color = null;
 
     /**
-     * The number of repetitions of the previously added line of text.
-     */
-    private int lastCount = 0;
-
-    /**
-     * The color of the previously added line of text.
-     */
-    @Nullable
-    private Color lastColor = null;
-
-    /**
-     * The contents of the previously added line of text.
-     */
-    @NotNull
-    private String lastText = "";
-
-    /**
      * Parses a text message.
      * @param text the text message to parse
      * @param defaultColor the default color to use
@@ -161,13 +144,9 @@ public class Parser {
      * @param buffer the buffer instance to add to
      */
     private void parseLine(@NotNull final String text, @Nullable final Color defaultColor, @NotNull final Buffer buffer) {
-        if (lastCount > 0 && text.equals(lastText) && lastColor != null && lastColor.equals(defaultColor)) {
-            lastCount++;
-            buffer.replaceLine(parseLine(text+" [["+lastCount+" times]", defaultColor));
+        if (buffer.mergeLines(text, defaultColor)) {
+            buffer.replaceLine(parseLine(text+" [["+buffer.getLastCount()+" times]", defaultColor));
         } else {
-            lastCount = 1;
-            lastText = text;
-            lastColor = defaultColor;
             buffer.addLine(parseLine(text, defaultColor));
         }
     }
@@ -219,14 +198,10 @@ public class Parser {
      */
     private void parseLineWithoutMediaTags(@NotNull final String text, @NotNull final Buffer buffer) {
         final Line line = new Line();
-        if (lastCount > 0 && text.equals(lastText) && lastColor == null) {
-            lastCount++;
-            processText(text+" ["+lastCount+" times]", line);
+        if (buffer.mergeLines(text, null)) {
+            processText(text+" ["+buffer.getLastCount()+" times]", line);
             buffer.replaceLine(line);
         } else {
-            lastCount = 1;
-            lastText = text;
-            lastColor = null;
             processText(text, line);
             buffer.addLine(line);
         }
