@@ -39,6 +39,12 @@ import org.jetbrains.annotations.Nullable;
 public abstract class AbstractManager {
 
     /**
+     * The {@link ItemSet} for looking up {@link CfItem}s.
+     */
+    @NotNull
+    private final ItemSet itemSet;
+
+    /**
      * Modified items for which no events have been delivered.
      */
     @NotNull
@@ -56,6 +62,14 @@ public abstract class AbstractManager {
      */
     @NotNull
     private final Collection<LocationsListener> locationsListeners = new ArrayList<LocationsListener>();
+
+    /**
+     * Creates a new instance.
+     * @param itemSet the item set for looking up items
+     */
+    protected AbstractManager(@NotNull final ItemSet itemSet) {
+        this.itemSet = itemSet;
+    }
 
     /**
      * Resets the manager's state.
@@ -113,9 +127,9 @@ public abstract class AbstractManager {
 
     /**
      * Delivers pending events.
-     * @param items The item information.
+     * @param tag the tag for looking up items
      */
-    public void fireEvents(@NotNull final List<CfItem> items) {
+    public void fireEvents(final int tag) {
         final Collection<Integer> tmp;
         synchronized (modifiedItems) {
             tmp = new HashSet<Integer>(modifiedItems);
@@ -126,6 +140,7 @@ public abstract class AbstractManager {
             listener.locationsModified(tmp);
         }
 
+        final List<CfItem> items = itemSet.getItemsByLocation(tag);
         for (final int index : tmp) {
             final EventListenerList tileListeners = allListeners.get(index);
             if (tileListeners != null) {

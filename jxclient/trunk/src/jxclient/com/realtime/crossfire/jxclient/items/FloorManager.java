@@ -21,10 +21,20 @@
 
 package com.realtime.crossfire.jxclient.items;
 
+import org.jetbrains.annotations.NotNull;
+
 /**
  * Manages the items on the floor.
  * @author Andreas Kirschbaum
  */
 public class FloorManager extends AbstractManager {
+
+    /**
+     * Creates a new instance.
+     * @param itemSet the item set for looking up items
+     */
+    public FloorManager(@NotNull final ItemSet itemSet) {
+        super(itemSet);
+    }
 
 }

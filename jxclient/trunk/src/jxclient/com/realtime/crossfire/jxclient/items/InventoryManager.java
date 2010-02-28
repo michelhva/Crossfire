@@ -31,6 +31,14 @@ import org.jetbrains.annotations.NotNull;
 public class InventoryManager extends AbstractManager {
 
     /**
+     * Creates a new instance.
+     * @param itemSet the item set for looking up items
+     */
+    public InventoryManager(@NotNull final ItemSet itemSet) {
+        super(itemSet);
+    }
+
+    /**
      * Find the correct insertion position for an inventory object.
      * @param list The inventory objects.
      * @param item The item to add.
