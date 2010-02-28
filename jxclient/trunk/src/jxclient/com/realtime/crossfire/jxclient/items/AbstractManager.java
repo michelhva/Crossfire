@@ -200,4 +200,13 @@ public abstract class AbstractManager {
         }
     }
 
+    /**
+     * Adds a {@link CfItem}.
+     * @param item the item
+     */
+    public void addItem(@NotNull final CfItem item) {
+        final int index = itemSet.addItem2(item);
+        addModified(index);
+    }
+
 }

@@ -413,11 +413,11 @@ public class ItemsManager {
     private void addItemToLocation(@NotNull final CfItem item) {
         final int where = item.getLocation();
         if (currentFloorManager.isCurrentFloor(where)) {
-            itemSet.addItem(item, floorManager);
+            floorManager.addItem(item);
         } else if (player != null && where == player.getTag()) {
             inventoryManager.addInventoryItem(item);
         } else {
-            itemSet.addItem(item, null);
+            itemSet.addItem2(item);
         }
     }
 
