@@ -137,9 +137,9 @@ public class ItemSet {
     /**
      * Adds an inventory {@link CfItem}.
      * @param item the item to add
-     * @param abstractManager the abstract manager to notify about changes
+     * @return the index where the item has been inserted
      */
-    public void addInventoryItem(final CfItem item, @NotNull final AbstractManager abstractManager) {
+    public int addInventoryItem(final CfItem item) {
         final int where = item.getLocation();
         List<CfItem> list = items.get(where);
         if (list == null) {
@@ -153,7 +153,7 @@ public class ItemSet {
         // position
         final int index = InventoryManager.getInsertionIndex(list, item);
         list.add(index, item);
-        abstractManager.addModified(index, list.size());
+        return index;
     }
 
     /**

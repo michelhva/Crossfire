@@ -31,11 +31,18 @@ import org.jetbrains.annotations.NotNull;
 public class InventoryManager extends AbstractManager {
 
     /**
+     * The {@link ItemSet} for looking up items.
+     */
+    @NotNull
+    private final ItemSet itemSet;
+
+    /**
      * Creates a new instance.
      * @param itemSet the item set for looking up items
      */
     public InventoryManager(@NotNull final ItemSet itemSet) {
         super(itemSet);
+        this.itemSet = itemSet;
     }
 
     /**
@@ -79,6 +86,16 @@ public class InventoryManager extends AbstractManager {
             return +1;
         }
         return 0;
+    }
+
+    /**
+     * Adds an {@link CfItem}.
+     * @param item the item to add
+     */
+    public void addInventoryItem(@NotNull final CfItem item) {
+        final int startIndex = itemSet.addInventoryItem(item);
+        final int endIndex = itemSet.getNumberOfItemsByLocation(item.getLocation());
+        addModified(startIndex, endIndex);
     }
 
 }

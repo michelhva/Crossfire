@@ -116,7 +116,7 @@ public class JXClient {
                             final FacesQueue facesQueue = new FacesQueue(server, new FileCache(Filenames.getOriginalImageCacheDir()), new FileCache(Filenames.getScaledImageCacheDir()), new FileCache(Filenames.getMagicMapImageCacheDir()));
                             final FacesManager facesManager = new FacesManager(faceCache, facesQueue);
                             final ItemSet itemSet = new ItemSet();
-                            final AbstractManager inventoryManager = new InventoryManager(itemSet);
+                            final InventoryManager inventoryManager = new InventoryManager(itemSet);
                             final AbstractManager floorManager = new FloorManager(itemSet);
                             final ItemsManager itemsManager = new ItemsManager(server, facesManager, stats, skillSet, inventoryManager, floorManager, guiStateManager, itemSet);
                             final JXCWindow window = new JXCWindow(terminateSync, server, semaphoreRedraw, options.isDebugGui(), debugKeyboardOutputStreamWriter, debugScreenOutputStreamWriter, options.getPrefs(), optionManager, metaserverModel, options.getResolution(), guiStateManager, experienceTable, skillSet, stats, facesManager, itemsManager, itemSet, inventoryManager, floorManager);

@@ -67,7 +67,7 @@ public class ItemsManager {
      * The inventory manager used to maintain player inventory state.
      */
     @NotNull
-    private final AbstractManager inventoryManager;
+    private final InventoryManager inventoryManager;
     /**
      * The floor manager used to maintain floor object states.
      */
@@ -246,7 +246,7 @@ public class ItemsManager {
      * @param guiStateManager the gui state manager to watch
      * @param itemSet the item set to use
      */
-    public ItemsManager(@NotNull final CrossfireServerConnection crossfireServerConnection, @NotNull final FacesManager facesManager, @NotNull final Stats stats, @NotNull final SkillSet skillSet, @NotNull final AbstractManager inventoryManager, @NotNull final AbstractManager floorManager, @NotNull final GuiStateManager guiStateManager, @NotNull final ItemSet itemSet) {
+    public ItemsManager(@NotNull final CrossfireServerConnection crossfireServerConnection, @NotNull final FacesManager facesManager, @NotNull final Stats stats, @NotNull final SkillSet skillSet, @NotNull final InventoryManager inventoryManager, @NotNull final AbstractManager floorManager, @NotNull final GuiStateManager guiStateManager, @NotNull final ItemSet itemSet) {
         this.facesManager = facesManager;
         this.stats = stats;
         this.skillSet = skillSet;
@@ -415,7 +415,7 @@ public class ItemsManager {
         if (currentFloorManager.isCurrentFloor(where)) {
             itemSet.addItem(item, floorManager);
         } else if (player != null && where == player.getTag()) {
-            itemSet.addInventoryItem(item, inventoryManager);
+            inventoryManager.addInventoryItem(item);
         } else {
             itemSet.addItem(item, null);
         }
