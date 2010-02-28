@@ -27,6 +27,7 @@ import java.util.Collections;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+import java.util.concurrent.CopyOnWriteArrayList;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 
@@ -60,7 +61,7 @@ public class MetaserverModel {
      * All registered metaserver listeners.
      */
     @NotNull
-    private final Collection<MetaserverListener> metaserverListeners = new ArrayList<MetaserverListener>();
+    private final Collection<MetaserverListener> metaserverListeners = new CopyOnWriteArrayList<MetaserverListener>();
 
     /**
      * All registered metaserver entry listeners. Maps entry index to list of
@@ -206,7 +207,7 @@ public class MetaserverModel {
                 return existingListeners;
             }
 
-            final List<MetaserverEntryListener> newListeners = new ArrayList<MetaserverEntryListener>();
+            final List<MetaserverEntryListener> newListeners = new CopyOnWriteArrayList<MetaserverEntryListener>();
             metaserverEntryListeners.put(index, newListeners);
             return newListeners;
         }
