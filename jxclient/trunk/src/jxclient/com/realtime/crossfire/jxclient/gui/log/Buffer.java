@@ -21,6 +21,7 @@
 
 package com.realtime.crossfire.jxclient.gui.log;
 
+import java.awt.Color;
 import java.awt.font.FontRenderContext;
 import java.awt.geom.RectangularShape;
 import java.util.ArrayList;
@@ -31,6 +32,7 @@ import java.util.List;
 import java.util.ListIterator;
 import java.util.concurrent.CopyOnWriteArrayList;
 import org.jetbrains.annotations.NotNull;
+import org.jetbrains.annotations.Nullable;
 
 /**
  * Manages the contents of the contents of a log window. It consists of a list
@@ -86,6 +88,23 @@ public class Buffer {
     private final Object sync = new Object();
 
     /**
+     * The number of repetitions of the previously added line of text.
+     */
+    private int lastCount = 0;
+
+    /**
+     * The color of the previously added line of text.
+     */
+    @Nullable
+    private Color lastColor = null;
+
+    /**
+     * The contents of the previously added line of text.
+     */
+    @NotNull
+    private String lastText = "";
+
+    /**
      * Create a new instance.
      * @param fonts The <code>Fonts</code> instance for looking up fonts.
      * @param context The <code>FontRenderContext</code> to use.
@@ -110,6 +129,9 @@ public class Buffer {
         for (final BufferListener listener : listeners) {
             listener.linesRemoved(removedLines);
         }
+        lastCount = 0;
+        lastText = "";
+        lastColor = null;
     }
 
     /**
@@ -291,6 +313,36 @@ public class Buffer {
     @NotNull
     public Object getSyncObject() {
         return sync;
+    }
+
+    /**
+     * Checks whether a new text line should be merged with a preceeding line.
+     * @param text the text line contents
+     * @param color the text line color
+     * @return whether the line should be merged
+     */
+    public boolean mergeLines(@NotNull final String text, @Nullable final Color color) {
+        if (lastCount > 0 && text.equals(lastText)) {
+            if (lastColor == null ? color == null : lastColor.equals(color)) {
+                lastCount++;
+                return true;
+            }
+        }
+
+        lastCount = 1;
+        lastText = text;
+        lastColor = color;
+        return false;
+
+    }
+
+    /**
+     * Returns the number of merged lines. Should not be called unless directly
+     * after {@link #mergeLines(String, Color)} did freturn <code>true</code>.
+     * @return the number of merged lines
+     */
+    public int getLastCount() {
+        return lastCount;
     }
 
 }
