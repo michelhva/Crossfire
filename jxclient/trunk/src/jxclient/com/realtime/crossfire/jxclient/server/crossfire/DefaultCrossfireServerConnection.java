@@ -2208,9 +2208,13 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
             return;
             }
         } catch (final ArrayIndexOutOfBoundsException ex) {
-            // ignore
+            if (debugProtocol != null) {
+                debugProtocol.debugProtocolWrite("ArrayIndexOutOfBoundsException while command parsing: "+ex, ex);
+            }
         } catch (final StringIndexOutOfBoundsException ex) {
-            // ignore
+            if (debugProtocol != null) {
+                debugProtocol.debugProtocolWrite("StringIndexOutOfBoundsException while command parsing: "+ex, ex);
+            }
         } catch (final UnknownCommandException ex) {
             ex.setDetails(packet, start, end);
             throw ex;
