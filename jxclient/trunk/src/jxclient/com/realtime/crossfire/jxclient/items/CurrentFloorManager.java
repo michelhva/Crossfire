@@ -37,6 +37,12 @@ public class CurrentFloorManager {
     private final ItemsManager itemsManager;
 
     /**
+     * The {@link AbstractManager} for reporting modified items.
+     */
+    @NotNull
+    private final AbstractManager abstractManager;
+
+    /**
      * The list of {@link CurrentFloorListener}s to be notified about changes of
      * the current floor location.
      */
@@ -51,9 +57,11 @@ public class CurrentFloorManager {
     /**
      * Create a new instance.
      * @param itemsManager The items manager to use.
+     * @param abstractManager the abstract manager for reporting modified items
      */
-    public CurrentFloorManager(@NotNull final ItemsManager itemsManager) {
+    public CurrentFloorManager(@NotNull final ItemsManager itemsManager, @NotNull final AbstractManager abstractManager) {
         this.itemsManager = itemsManager;
+        this.abstractManager = abstractManager;
     }
 
     /**
@@ -65,9 +73,9 @@ public class CurrentFloorManager {
             return;
         }
 
-        itemsManager.getFloorManager().addModified(itemsManager.getNumberOfItems(this.currentFloor));
+        abstractManager.addModified(itemsManager.getNumberOfItems(this.currentFloor));
         this.currentFloor = currentFloor;
-        itemsManager.getFloorManager().addModified(itemsManager.getNumberOfItems(this.currentFloor));
+        abstractManager.addModified(itemsManager.getNumberOfItems(this.currentFloor));
 
         for (final CurrentFloorListener listener : currentFloorListeners.getListeners(CurrentFloorListener.class)) {
             listener.currentFloorChanged(this.currentFloor);

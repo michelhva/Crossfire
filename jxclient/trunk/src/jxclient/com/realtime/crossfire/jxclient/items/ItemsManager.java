@@ -81,13 +81,6 @@ public class ItemsManager {
     private final Map<Integer, CfItem> allItems = new HashMap<Integer, CfItem>();
 
     /**
-     * The current floor manager used to track the player's current floor
-     * location.
-     */
-    @NotNull
-    private final CurrentFloorManager currentFloorManager = new CurrentFloorManager(this);
-
-    /**
      * The floor manager used to maintain floor object states.
      */
     @NotNull
@@ -98,6 +91,13 @@ public class ItemsManager {
      */
     @NotNull
     private final AbstractManager inventoryManager = new InventoryManager();
+
+    /**
+     * The current floor manager used to track the player's current floor
+     * location.
+     */
+    @NotNull
+    private final CurrentFloorManager currentFloorManager = new CurrentFloorManager(this, floorManager);
 
     /**
      * The list of {@link PlayerListener}s to be notified about changes of the
