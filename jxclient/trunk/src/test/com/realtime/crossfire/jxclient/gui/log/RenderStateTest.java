@@ -81,7 +81,7 @@ public class RenderStateTest extends TestCase {
         final Parser parser = new Parser();
 
         for (int i = 0; i < HEIGHT+10; i++) {
-            parser.parse("xxx", null, buffer);
+            parser.parse("xxx"+i, null, buffer);
         }
         checkState(10, 0, 10);
 
@@ -110,23 +110,23 @@ public class RenderStateTest extends TestCase {
         final Parser parser = new Parser();
 
         checkState(0, 0, 0);
-        parser.parse("xxx", null, buffer);
+        parser.parse("xxx1", null, buffer);
         checkState(0, 0, 0);
-        parser.parse("xxx", null, buffer);
+        parser.parse("xxx2", null, buffer);
         checkState(0, 0, 0);
 
         // add lines to completely fill visible area
         for (int i = 2; i < HEIGHT; i++) {
-            parser.parse("xxx", null, buffer);
+            parser.parse("xxx3"+i, null, buffer);
         }
         checkState(0, 0, 0);
 
         // add one more line ==> buffer sticks at bottom
-        parser.parse("xxx", null, buffer);
+        parser.parse("xxx4", null, buffer);
         checkState(1, 0, 1);
 
         // add one more line ==> buffer sticks at bottom
-        parser.parse("xxx", null, buffer);
+        parser.parse("xxx5", null, buffer);
         checkState(2, 0, 2);
 
         // scroll up one line
@@ -134,7 +134,7 @@ public class RenderStateTest extends TestCase {
         checkState(1, 0, 1);
 
         // add one more line ==> buffer sticks at scroll position
-        parser.parse("xxx", null, buffer);
+        parser.parse("xxx6", null, buffer);
         checkState(1, 0, 1);
 
         // scroll back to bottom
@@ -142,17 +142,17 @@ public class RenderStateTest extends TestCase {
         checkState(3, 0, 3);
 
         // add one more line ==> buffer sticks at bottom
-        parser.parse("xxx", null, buffer);
+        parser.parse("xxx7", null, buffer);
         checkState(4, 0, 4);
 
         // completely fill buffer
         for (int i = HEIGHT+4; i < Buffer.MAX_LINES; i++) {
-            parser.parse("xxx", null, buffer);
+            parser.parse("xxx8"+i, null, buffer);
         }
         checkState(Buffer.MAX_LINES-HEIGHT, 0, Buffer.MAX_LINES-HEIGHT);
 
         // add one more line ==> buffer sticks at bottom
-        parser.parse("xxx", null, buffer);
+        parser.parse("xxx9", null, buffer);
         checkState(Buffer.MAX_LINES-HEIGHT, 0, Buffer.MAX_LINES-HEIGHT);
 
         // scroll one line up
@@ -161,14 +161,14 @@ public class RenderStateTest extends TestCase {
 
         // fill more lines ==> scroll position sticks
         for (int i = 0; i < Buffer.MAX_LINES-HEIGHT-2; i++) {
-            parser.parse("xxx", null, buffer);
+            parser.parse("xxx0"+i, null, buffer);
         }
         checkState(1, 0, 1);
-        parser.parse("xxx", null, buffer);
+        parser.parse("xxx1", null, buffer);
         checkState(0, 0, 0);
 
         // add one more line ==> scroll position hits top
-        parser.parse("xxx", null, buffer);
+        parser.parse("xxx2", null, buffer);
         checkState(0, 0, 0);
     }
 
