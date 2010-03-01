@@ -30,6 +30,7 @@ import com.realtime.crossfire.jxclient.gui.item.GUIItemItemFactory;
 import com.realtime.crossfire.jxclient.gui.label.AbstractLabel;
 import com.realtime.crossfire.jxclient.items.AbstractManager;
 import com.realtime.crossfire.jxclient.items.CfItem;
+import com.realtime.crossfire.jxclient.items.ItemSet;
 import com.realtime.crossfire.jxclient.items.ItemsManager;
 import com.realtime.crossfire.jxclient.items.LocationsListener;
 import com.realtime.crossfire.jxclient.queue.CommandQueue;
@@ -77,6 +78,12 @@ public class GUIItemInventoryList extends GUIItemList {
      */
     @NotNull
     private final ItemsManager itemsManager;
+
+    /**
+     * The {@link ItemSet} for looking up items.
+     */
+    @NotNull
+    private final ItemSet itemSet;
 
     /**
      * The inventory manager to monitor.
@@ -133,18 +140,20 @@ public class GUIItemInventoryList extends GUIItemList {
      * @param crossfireServerConnection the crossfire server connection for
      * sending commands to the server
      * @param itemsManager the items manager for looking up items
+     * @param itemSet the item set for looking up items
      * @param inventoryManager the inventory manager to monitor
      * @param currentItem the label to update with information about the
      * selected item.
      * @param itemItemFactory the factory for creating item instances
      */
-    public GUIItemInventoryList(@NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final CommandQueue commandQueue, @NotNull final String name, final int x, final int y, final int w, final int h, final int cellHeight, @NotNull final CrossfireServerConnection crossfireServerConnection, @NotNull final ItemsManager itemsManager, @NotNull final AbstractManager inventoryManager, @Nullable final AbstractLabel currentItem, @NotNull final GUIItemItemFactory itemItemFactory) {
+    public GUIItemInventoryList(@NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final CommandQueue commandQueue, @NotNull final String name, final int x, final int y, final int w, final int h, final int cellHeight, @NotNull final CrossfireServerConnection crossfireServerConnection, @NotNull final ItemsManager itemsManager, @NotNull final ItemSet itemSet, @NotNull final AbstractManager inventoryManager, @Nullable final AbstractLabel currentItem, @NotNull final GUIItemItemFactory itemItemFactory) {
         super(tooltipManager, elementListener, name, x, y, w, h, cellHeight, new ItemItemCellRenderer(itemItemFactory.newTemplateItemInventory(cellHeight)));
         this.inventoryManager = inventoryManager;
         this.itemItemFactory = itemItemFactory;
         this.commandQueue = commandQueue;
         this.crossfireServerConnection = crossfireServerConnection;
         this.itemsManager = itemsManager;
+        this.itemSet = itemSet;
         this.currentItem = currentItem;
         setLayoutOrientation(JList.HORIZONTAL_WRAP, -1);
         this.inventoryManager.addLocationsListener(locationsListener);
@@ -165,7 +174,7 @@ public class GUIItemInventoryList extends GUIItemList {
      */
     private void rebuildList() {
         synchronized (getTreeLock()) {
-            final Collection<CfItem> inventory = itemsManager.getInventory();
+            final Collection<CfItem> inventory = itemSet.getPlayerInventory();
             final int newSize = inventory.size();
             final int oldSize = resizeElements(newSize);
             for (int i = oldSize; i < newSize; i++) {
@@ -187,7 +196,7 @@ public class GUIItemInventoryList extends GUIItemList {
     @Override
     protected void selectionChanged(final int selectedIndex) {
         if (currentItem != null) {
-            final List<CfItem> inventory = itemsManager.getInventory();
+            final List<CfItem> inventory = itemSet.getPlayerInventory();
             final CfItem item = selectedIndex >= 0 && selectedIndex < inventory.size() ? inventory.get(selectedIndex) : null;
             if (item == null) {
                 currentItem.setText("");
@@ -207,7 +216,7 @@ public class GUIItemInventoryList extends GUIItemList {
      */
     @Override
     protected void updateTooltip(final int index) {
-        final List<CfItem> inventory = itemsManager.getInventory();
+        final List<CfItem> inventory = itemSet.getPlayerInventory();
         final CfItem item = 0 <= index && index < inventory.size() ? inventory.get(index) : null;
         setTooltipText(item == null ? null : item.getTooltipText());
     }

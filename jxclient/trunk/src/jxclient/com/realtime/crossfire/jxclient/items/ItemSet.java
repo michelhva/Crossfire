@@ -28,12 +28,13 @@ import java.util.HashSet;
 import java.util.List;
 import java.util.Map;
 import java.util.concurrent.CopyOnWriteArrayList;
+import javax.swing.event.EventListenerList;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 
 /**
  * Model class maintaining the {@link CfItem}s known to the player. Access is
- * not synchronized.
+ * not synchronized [XXX: incorrect].
  * @author Andreas Kirschbaum
  */
 public class ItemSet {
@@ -50,6 +51,43 @@ public class ItemSet {
      */
     @NotNull
     private final Map<Integer, List<CfItem>> items = new HashMap<Integer, List<CfItem>>();
+
+    /**
+     * The synchronization object for XXX.
+     */
+    @NotNull
+    private final Object sync = new Object();
+
+    /**
+     * The current player object this client controls.
+     */
+    @Nullable
+    private CfPlayer player = null;
+
+    /**
+     * The list of {@link PlayerListener}s to be notified about changes of the
+     * current player.
+     */
+    @NotNull
+    private final EventListenerList playerListeners = new EventListenerList();
+
+    /**
+     * Adds a {@link PlayerListener} to be notified about changes of the current
+     * player.
+     * @param listener the listener to add
+     */
+    public void addCrossfirePlayerListener(@NotNull final PlayerListener listener) {
+        playerListeners.add(PlayerListener.class, listener);
+    }
+
+    /**
+     * Removes a {@link PlayerListener} to be notified about changes of the
+     * current player.
+     * @param listener the listener to remove
+     */
+    public void removeCrossfirePlayerListener(@NotNull final PlayerListener listener) {
+        playerListeners.remove(PlayerListener.class, listener);
+    }
 
     /**
      * Returns a list of items in a given location. The returned list may not
@@ -195,6 +233,57 @@ public class ItemSet {
     @NotNull
     public Iterable<CfItem> removeAllItems() {
         return new HashSet<CfItem>(allItems.values());
+    }
+
+    /**
+     * Returns the player object this client controls.
+     * @return the player object
+     */
+    @Nullable
+    public CfItem getPlayer() {
+        synchronized (sync) {
+            return player;
+        }
+    }
+
+    /**
+     * Sets the player object this client controls.
+     * @param player the new player object
+     */
+    public void setPlayer(@Nullable final CfPlayer player) {
+        synchronized (sync) {
+            final CfPlayer oldPlayer = this.player;
+            if (oldPlayer == player) {
+                if (oldPlayer != null) {
+                    for (final PlayerListener listener : playerListeners.getListeners(PlayerListener.class)) {
+                        listener.playerReceived(oldPlayer);
+                    }
+                }
+                return;
+            }
+
+            if (oldPlayer != null) {
+                for (final PlayerListener listener : playerListeners.getListeners(PlayerListener.class)) {
+                    listener.playerRemoved(oldPlayer);
+                }
+            }
+            this.player = player;
+            if (player != null) {
+                for (final PlayerListener listener : playerListeners.getListeners(PlayerListener.class)) {
+                    listener.playerAdded(player);
+                    listener.playerReceived(player);
+                }
+            }
+        }
+    }
+
+    /**
+     * Returns the player's inventory.
+     * @return the inventory items; the list cannot be modified
+     */
+    @NotNull
+    public List<CfItem> getPlayerInventory() {
+        return player == null ? Collections.<CfItem>emptyList() : getInventoryByTag(player.getTag());
     }
 
 }

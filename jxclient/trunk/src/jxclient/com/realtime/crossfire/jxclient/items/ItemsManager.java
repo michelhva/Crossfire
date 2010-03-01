@@ -30,9 +30,6 @@ import com.realtime.crossfire.jxclient.server.crossfire.CrossfireUpdateItemListe
 import com.realtime.crossfire.jxclient.server.socket.ClientSocketState;
 import com.realtime.crossfire.jxclient.skills.SkillSet;
 import com.realtime.crossfire.jxclient.stats.Stats;
-import java.util.Collections;
-import java.util.List;
-import javax.swing.event.EventListenerList;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 
@@ -82,23 +79,10 @@ public class ItemsManager {
     private final CurrentFloorManager currentFloorManager;
 
     /**
-     * The list of {@link PlayerListener}s to be notified about changes of the
-     * current player.
-     */
-    @NotNull
-    private final EventListenerList playerListeners = new EventListenerList();
-
-    /**
      * The synchronization object for XXX.
      */
     @NotNull
     private final Object sync = new Object();
-
-    /**
-     * The current player object this client controls.
-     */
-    @Nullable
-    private CfPlayer player = null;
 
     /**
      * The known {@link CfItem}s.
@@ -140,7 +124,7 @@ public class ItemsManager {
         public void playerReceived(final int tag, final int weight, final int faceNum, @NotNull final String name) {
             stats.setActiveSkill("");
             skillSet.clearNumberedSkills();
-            setPlayer(new CfPlayer(tag, weight, facesManager.getFace(faceNum), name));
+            itemSet.setPlayer(new CfPlayer(tag, weight, facesManager.getFace(faceNum), name));
             stats.setStat(CrossfireStatsListener.C_STAT_WEIGHT, weight);
         }
 
@@ -149,7 +133,7 @@ public class ItemsManager {
         public void upditemReceived(final int flags, final int tag, final int valLocation, final int valFlags, final int valWeight, final int valFaceNum, @NotNull final String valName, @NotNull final String valNamePl, final int valAnim, final int valAnimSpeed, final int valNrof) {
             updateItem(flags, tag, valLocation, valFlags, valWeight, valFaceNum, valName, valNamePl, valAnim, valAnimSpeed, valNrof);
             if ((flags&CfItem.UPD_WEIGHT) != 0) {
-                final CfItem player = getPlayer();
+                final CfItem player = itemSet.getPlayer();
                 if (player != null && player.getTag() == tag) {
                     stats.setStat(CrossfireStatsListener.C_STAT_WEIGHT, valWeight);
                 }
@@ -168,14 +152,9 @@ public class ItemsManager {
         @Override
         public void run() {
             floorManager.fireEvents(currentFloorManager.getCurrentFloor());
-            final int playerTag;
-            final boolean hasPlayer;
-            synchronized (sync) {
-                hasPlayer = player != null;
-                playerTag = player != null ? player.getTag() : 0;
-            }
-            if (hasPlayer) {
-                inventoryManager.fireEvents(playerTag);
+            final CfItem player = itemSet.getPlayer();
+            if (player != null) {
+                inventoryManager.fireEvents(player.getTag());
             }
         }
     };
@@ -264,6 +243,7 @@ public class ItemsManager {
      */
     private void reset() {
         synchronized (sync) {
+            final CfItem player = itemSet.getPlayer();
             if (player != null) {
                 cleanInventory(player.getTag());
             }
@@ -276,7 +256,7 @@ public class ItemsManager {
             currentFloorManager.setCurrentFloor(0);
             floorManager.reset();
             inventoryManager.reset();
-            setPlayer(null);
+            itemSet.setPlayer(null);
         }
     }
 
@@ -288,6 +268,7 @@ public class ItemsManager {
     @Nullable
     private CfItem getItemOrPlayer(final int tag) {
         synchronized (sync) {
+            final CfItem player = itemSet.getPlayer();
             if (player != null && player.getTag() == tag) {
                 return player;
             }
@@ -399,10 +380,13 @@ public class ItemsManager {
         final int where = item.getLocation();
         if (currentFloorManager.isCurrentFloor(where)) {
             floorManager.removeItem(item);
-        } else if (player != null && where == player.getTag()) {
-            inventoryManager.removeItem(item);
         } else {
-            itemSet.removeItem(item);
+            final CfItem player = itemSet.getPlayer();
+            if (player != null && where == player.getTag()) {
+                inventoryManager.removeItem(item);
+            } else {
+                itemSet.removeItem(item);
+            }
         }
     }
 
@@ -414,10 +398,13 @@ public class ItemsManager {
         final int where = item.getLocation();
         if (currentFloorManager.isCurrentFloor(where)) {
             floorManager.addItem(item);
-        } else if (player != null && where == player.getTag()) {
-            inventoryManager.addInventoryItem(item);
         } else {
-            itemSet.addItem2(item);
+            final CfItem player = itemSet.getPlayer();
+            if (player != null && where == player.getTag()) {
+                inventoryManager.addInventoryItem(item);
+            } else {
+                itemSet.addItem2(item);
+            }
         }
     }
 
@@ -426,68 +413,6 @@ public class ItemsManager {
      */
     private void fireEvents() {
         fireEventScheduler.trigger();
-    }
-
-    /**
-     * Sets the player object this client controls.
-     * @param player the new player object
-     */
-    private void setPlayer(@Nullable final CfPlayer player) {
-        synchronized (sync) {
-            final CfPlayer oldPlayer = this.player;
-            if (oldPlayer == player) {
-                if (oldPlayer != null) {
-                    for (final PlayerListener listener : playerListeners.getListeners(PlayerListener.class)) {
-                        listener.playerReceived(oldPlayer);
-                    }
-                }
-                return;
-            }
-
-            if (oldPlayer != null) {
-                inventoryManager.updatePlayer(oldPlayer.getTag());
-                for (final PlayerListener listener : playerListeners.getListeners(PlayerListener.class)) {
-                    listener.playerRemoved(oldPlayer);
-                }
-            }
-            this.player = player;
-            if (player != null) {
-                inventoryManager.updatePlayer(player.getTag());
-                for (final PlayerListener listener : playerListeners.getListeners(PlayerListener.class)) {
-                    listener.playerAdded(player);
-                    listener.playerReceived(player);
-                }
-            }
-        }
-    }
-
-    /**
-     * Returns the player object this client controls.
-     * @return the player object
-     */
-    @Nullable
-    public CfItem getPlayer() {
-        synchronized (sync) {
-            return player;
-        }
-    }
-
-    /**
-     * Adds a {@link PlayerListener} to be notified about changes of the current
-     * player.
-     * @param listener the listener to add
-     */
-    public void addCrossfirePlayerListener(@NotNull final PlayerListener listener) {
-        playerListeners.add(PlayerListener.class, listener);
-    }
-
-    /**
-     * Removes a {@link PlayerListener} to be notified about changes of the
-     * current player.
-     * @param listener the listener to remove
-     */
-    public void removeCrossfirePlayerListener(@NotNull final PlayerListener listener) {
-        playerListeners.remove(PlayerListener.class, listener);
     }
 
     /**
@@ -535,15 +460,6 @@ public class ItemsManager {
                 currentFloorManager.setCurrentFloor(0);
             }
         }
-    }
-
-    /**
-     * Returns the player's inventory.
-     * @return the inventory items; the list cannot be modified
-     */
-    @NotNull
-    public List<CfItem> getInventory() {
-        return player == null ? Collections.<CfItem>emptyList() : itemSet.getInventoryByTag(player.getTag());
     }
 
 }

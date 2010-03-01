@@ -25,7 +25,7 @@ import com.realtime.crossfire.jxclient.gui.gauge.ActiveSkillGaugeUpdater;
 import com.realtime.crossfire.jxclient.gui.gauge.GaugeUpdater;
 import com.realtime.crossfire.jxclient.gui.gauge.SkillGaugeUpdater;
 import com.realtime.crossfire.jxclient.gui.gauge.StatGaugeUpdater;
-import com.realtime.crossfire.jxclient.items.ItemsManager;
+import com.realtime.crossfire.jxclient.items.ItemSet;
 import com.realtime.crossfire.jxclient.skills.SkillSet;
 import com.realtime.crossfire.jxclient.stats.ExperienceTable;
 import com.realtime.crossfire.jxclient.stats.Stats;
@@ -46,10 +46,10 @@ public class GaugeUpdaterParser {
     private final Stats stats;
 
     /**
-     * The {@link ItemsManager} instance to use.
+     * The {@link ItemSet} to use.
      */
     @NotNull
-    private final ItemsManager itemsManager;
+    private final ItemSet itemSet;
 
     /**
      * The {@link SkillSet} for looking up skill names.
@@ -60,12 +60,12 @@ public class GaugeUpdaterParser {
     /**
      * Creates a new instance.
      * @param stats the stats instance to use
-     * @param itemsManager the items manager instance to use
+     * @param itemSet the item set to use
      * @param skillSet the skill set for looking up skill names
      */
-    public GaugeUpdaterParser(@NotNull final Stats stats, @NotNull final ItemsManager itemsManager, @NotNull final SkillSet skillSet) {
+    public GaugeUpdaterParser(@NotNull final Stats stats, @NotNull final ItemSet itemSet, @NotNull final SkillSet skillSet) {
         this.stats = stats;
-        this.itemsManager = itemsManager;
+        this.itemSet = itemSet;
         this.skillSet = skillSet;
     }
 
@@ -79,7 +79,7 @@ public class GaugeUpdaterParser {
     @NotNull
     public GaugeUpdater parseGaugeUpdater(@NotNull final String name, @NotNull final ExperienceTable experienceTable) throws IOException {
         try {
-            return new StatGaugeUpdater(experienceTable, StatsParser.parseStat(name), stats, itemsManager);
+            return new StatGaugeUpdater(experienceTable, StatsParser.parseStat(name), stats, itemSet);
         } catch (final IllegalArgumentException ex) {
             // ignore
         }
