@@ -286,4 +286,20 @@ public class ItemSet {
         return player == null ? Collections.<CfItem>emptyList() : getInventoryByTag(player.getTag());
     }
 
+    /**
+     * Returns an item by tag. This function may return the player object.
+     * @param tag The tag.
+     * @return the item or <code>null</code> if no such item exists
+     */
+    @Nullable
+    public CfItem getItemOrPlayer(final int tag) {
+        synchronized (sync) {
+            if (player != null && player.getTag() == tag) {
+                return player;
+            }
+
+            return getItemByTag(tag);
+        }
+    }
+
 }

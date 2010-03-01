@@ -31,7 +31,6 @@ import com.realtime.crossfire.jxclient.server.socket.ClientSocketState;
 import com.realtime.crossfire.jxclient.skills.SkillSet;
 import com.realtime.crossfire.jxclient.stats.Stats;
 import org.jetbrains.annotations.NotNull;
-import org.jetbrains.annotations.Nullable;
 
 /**
  * Manages items known to the character. This includes items on the floor, in
@@ -261,23 +260,6 @@ public class ItemsManager {
     }
 
     /**
-     * Returns an item by tag. This function may return the player object.
-     * @param tag The tag.
-     * @return the item or <code>null</code> if no such item exists
-     */
-    @Nullable
-    private CfItem getItemOrPlayer(final int tag) {
-        synchronized (sync) {
-            final CfItem player = itemSet.getPlayer();
-            if (player != null && player.getTag() == tag) {
-                return player;
-            }
-
-            return itemSet.getItemByTag(tag);
-        }
-    }
-
-    /**
      * Clears the inventory of an item.
      * @param tag the item tag
      */
@@ -439,7 +421,7 @@ public class ItemsManager {
      * @param valNrof the number of items
      */
     private void updateItem(final int flags, final int tag, final int valLocation, final int valFlags, final int valWeight, final int valFaceNum, @NotNull final String valName, @NotNull final String valNamePl, final int valAnim, final int valAnimSpeed, final int valNrof) {
-        final CfItem item = getItemOrPlayer(tag);
+        final CfItem item = itemSet.getItemOrPlayer(tag);
         if (item == null) {
             if (flags != CfItem.UPD_FACE) // XXX: suppress frequent error message due to server bug
             {
