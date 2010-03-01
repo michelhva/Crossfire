@@ -403,7 +403,7 @@ public class JXCSkinLoader {
 
         expressionParser = new ExpressionParser(selectedResolution);
         final Dialogs dialogs = new Dialogs(guiFactory);
-        gaugeUpdaterParser = new GaugeUpdaterParser(stats, itemsManager, skillSet);
+        gaugeUpdaterParser = new GaugeUpdaterParser(stats, itemSet, skillSet);
         commandParser = new CommandParser(dialogs, itemsManager, expressionParser, definedGUIElements);
         skin = new DefaultJXCSkin(defaultKeyBindings, optionManager, selectedResolution, dialogs);
         @Nullable JXCSkin skinToDetach = skin;
@@ -1234,7 +1234,7 @@ public class JXCSkinLoader {
         assert defaultItemPainter != null;
         final ItemPainter itemPainter = defaultItemPainter.newItemPainter(cellHeight, cellHeight);
         final GUIItemInventoryFactory itemInventoryFactory = new GUIItemInventoryFactory(tooltipManager, elementListener, commandQueue, name, itemPainter, server, facesManager, itemsManager, itemSet, inventoryManager);
-        final GUIElement element = new GUIItemInventoryList(tooltipManager, elementListener, commandQueue, name, x, y, w, h, cellHeight, server, itemsManager, inventoryManager, selectedItem, itemInventoryFactory);
+        final GUIElement element = new GUIItemInventoryList(tooltipManager, elementListener, commandQueue, name, x, y, w, h, cellHeight, server, itemsManager, itemSet, inventoryManager, selectedItem, itemInventoryFactory);
         insertGuiElement(element);
     }
 

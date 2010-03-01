@@ -25,7 +25,7 @@ import com.realtime.crossfire.jxclient.gui.gui.JXCWindowRenderer;
 import com.realtime.crossfire.jxclient.gui.gui.RendererGuiState;
 import com.realtime.crossfire.jxclient.gui.gui.RendererGuiStateListener;
 import com.realtime.crossfire.jxclient.items.CfPlayer;
-import com.realtime.crossfire.jxclient.items.ItemsManager;
+import com.realtime.crossfire.jxclient.items.ItemSet;
 import com.realtime.crossfire.jxclient.items.PlayerListener;
 import com.realtime.crossfire.jxclient.server.crossfire.CrossfireStatsListener;
 import com.realtime.crossfire.jxclient.stats.Stats;
@@ -166,17 +166,17 @@ public class StatsWatcher {
      * Creates a new instance.
      * @param stats The stats instance to watch.
      * @param windowRenderer The window renderer instance.
-     * @param itemsManager the instance to watch
+     * @param itemSet the item set to watch
      * @param soundManager the sound manager instance to watch
      */
-    public StatsWatcher(@NotNull final Stats stats, @NotNull final JXCWindowRenderer windowRenderer, @NotNull final ItemsManager itemsManager, @NotNull final SoundManager soundManager) {
+    public StatsWatcher(@NotNull final Stats stats, @NotNull final JXCWindowRenderer windowRenderer, @NotNull final ItemSet itemSet, @NotNull final SoundManager soundManager) {
         this.soundManager = soundManager;
         poisoned = stats.getStat(CrossfireStatsListener.C_STAT_POISONED) != 0;
         level = stats.getStat(CrossfireStatsListener.CS_STAT_LEVEL);
         stats.addCrossfireStatsListener(statsListener);
         windowRenderer.addGuiStateListener(rendererGuiStateListener);
         rendererGuiStateListener.guiStateChanged(windowRenderer.getGuiState());
-        itemsManager.addCrossfirePlayerListener(playerListener);
+        itemSet.addCrossfirePlayerListener(playerListener);
     }
 
     /**

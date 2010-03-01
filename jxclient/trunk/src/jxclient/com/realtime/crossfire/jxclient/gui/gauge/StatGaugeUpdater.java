@@ -22,7 +22,7 @@
 package com.realtime.crossfire.jxclient.gui.gauge;
 
 import com.realtime.crossfire.jxclient.items.CfPlayer;
-import com.realtime.crossfire.jxclient.items.ItemsManager;
+import com.realtime.crossfire.jxclient.items.ItemSet;
 import com.realtime.crossfire.jxclient.items.PlayerListener;
 import com.realtime.crossfire.jxclient.server.crossfire.CrossfireStatsListener;
 import com.realtime.crossfire.jxclient.stats.ExperienceTable;
@@ -55,10 +55,10 @@ public class StatGaugeUpdater extends GaugeUpdater {
     private final Stats stats;
 
     /**
-     * The {@link ItemsManager} instance to watch.
+     * The {@link ItemSet} instance to watch.
      */
     @NotNull
-    private final ItemsManager itemsManager;
+    private final ItemSet itemSet;
 
     /**
      * Whether the low food event should be generated.
@@ -202,15 +202,15 @@ public class StatGaugeUpdater extends GaugeUpdater {
      * @param experienceTable The experience table to query.
      * @param stat The stat value to monitor.
      * @param stats the instance to watch
-     * @param itemsManager the instance to watch
+     * @param itemSet the item set to watch
      */
-    public StatGaugeUpdater(@NotNull final ExperienceTable experienceTable, final int stat, @NotNull final Stats stats, @NotNull final ItemsManager itemsManager) {
+    public StatGaugeUpdater(@NotNull final ExperienceTable experienceTable, final int stat, @NotNull final Stats stats, @NotNull final ItemSet itemSet) {
         super(experienceTable);
         this.stat = stat;
         this.stats = stats;
-        this.itemsManager = itemsManager;
+        this.itemSet = itemSet;
         this.stats.addCrossfireStatsListener(statsListener);
-        this.itemsManager.addCrossfirePlayerListener(playerListener);
+        this.itemSet.addCrossfirePlayerListener(playerListener);
     }
 
     /**
@@ -218,7 +218,7 @@ public class StatGaugeUpdater extends GaugeUpdater {
      */
     @Override
     public void dispose() {
-        itemsManager.removeCrossfirePlayerListener(playerListener);
+        itemSet.removeCrossfirePlayerListener(playerListener);
         stats.removeCrossfireStatsListener(statsListener);
     }
 

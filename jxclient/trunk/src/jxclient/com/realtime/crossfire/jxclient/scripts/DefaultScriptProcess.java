@@ -402,11 +402,11 @@ public class DefaultScriptProcess extends Thread implements ScriptProcess {
      */
     private void cmdRequest(@NotNull final String parms) {
         if (parms.equals("player")) {
-            commandSent("request player "+itemsManager.getPlayer().getTag()+" "+stats.getTitle());
+            commandSent("request player "+itemSet.getPlayer().getTag()+" "+stats.getTitle());
         } else if (parms.equals("range")) {
             commandSent("request range "+stats.getRange());
         } else if (parms.equals("weight")) {
-            commandSent("request weight "+stats.getStat(CrossfireStatsListener.CS_STAT_WEIGHT_LIM)+" "+itemsManager.getPlayer().getWeight());
+            commandSent("request weight "+stats.getStat(CrossfireStatsListener.CS_STAT_WEIGHT_LIM)+" "+itemSet.getPlayer().getWeight());
         } else if (parms.equals("stat stats")) {
             commandSent("request stat stats "+stats.getStat(CrossfireStatsListener.CS_STAT_STR)+" "+stats.getStat(CrossfireStatsListener.CS_STAT_CON)+" "+stats.getStat(CrossfireStatsListener.CS_STAT_DEX)+" "+stats.getStat(CrossfireStatsListener.CS_STAT_INT)+" "+stats.getStat(CrossfireStatsListener.CS_STAT_WIS)+" "+stats.getStat(CrossfireStatsListener.CS_STAT_POW)+" "+stats.getStat(CrossfireStatsListener.CS_STAT_CHA));
         } else if (parms.equals("stat cmbt")) {
@@ -443,12 +443,12 @@ public class DefaultScriptProcess extends Thread implements ScriptProcess {
         } else if (parms.equals("flags")) {
             commandSent("request flags "+stats.getStat(CrossfireStatsListener.CS_STAT_FLAGS)+" "+(commandQueue.checkFire() ? "1" : "0")+" "+(commandQueue.checkRun() ? "1" : "0")+" 0");
         } else if (parms.equals("items inv")) {
-            for (final CfItem item : itemsManager.getInventory()) {
+            for (final CfItem item : itemSet.getPlayerInventory()) {
                 commandSentItem("request items inv", item);
             }
             commandSent("request items inv end");
         } else if (parms.equals("items actv")) {
-            for (final CfItem item : itemsManager.getInventory()) {
+            for (final CfItem item : itemSet.getPlayerInventory()) {
                 if (item.isApplied()) {
                     commandSentItem("request items actv", item);
                 }

@@ -135,7 +135,7 @@ public class JXClient {
                                     public void run() {
                                         new MusicWatcher(server, soundManager);
                                         new SoundWatcher(server, soundManager);
-                                        new StatsWatcher(stats, window.getWindowRenderer(), itemsManager, soundManager);
+                                        new StatsWatcher(stats, window.getWindowRenderer(), itemSet, soundManager);
                                         window.init(options.getSkin(), options.isFullScreen(), options.getServer());
                                     }
                                 });

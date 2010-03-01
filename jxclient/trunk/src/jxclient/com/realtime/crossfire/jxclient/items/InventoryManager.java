@@ -37,12 +37,45 @@ public class InventoryManager extends AbstractManager {
     private final ItemSet itemSet;
 
     /**
+     * The {@link PlayerListener} for detecting changed player instances.
+     */
+    @NotNull
+    private final PlayerListener playerListener = new PlayerListener() {
+
+        /**
+         * {@inheritDoc}
+         */
+        @Override
+        public void playerReceived(@NotNull final CfPlayer player) {
+            updatePlayer(player.getTag());
+        }
+
+        /**
+         * {@inheritDoc}
+         */
+        @Override
+        public void playerAdded(@NotNull final CfPlayer player) {
+            updatePlayer(player.getTag());
+        }
+
+        /**
+         * {@inheritDoc}
+         */
+        @Override
+        public void playerRemoved(@NotNull final CfPlayer player) {
+            updatePlayer(player.getTag());
+        }
+
+    };
+
+    /**
      * Creates a new instance.
      * @param itemSet the item set for looking up items
      */
     public InventoryManager(@NotNull final ItemSet itemSet) {
         super(itemSet);
         this.itemSet = itemSet;
+        itemSet.addCrossfirePlayerListener(playerListener);
     }
 
     /**

@@ -153,7 +153,7 @@ public class GUIItemInventory extends GUIItemItem {
                 return index >= -distance;
             }
         } else if (distance > 0) {
-            final CfItem player = itemsManager.getPlayer();
+            final CfItem player = itemSet.getPlayer();
             if (player == null) {
                 return false;
             }
@@ -277,7 +277,7 @@ public class GUIItemInventory extends GUIItemItem {
             }
         }
 
-        final CfItem player = itemsManager.getPlayer();
+        final CfItem player = itemSet.getPlayer();
         if (player != null) {
             final List<CfItem> list = itemSet.getItemsByLocation(player.getTag());
             if (0 <= this.index && this.index < list.size()) {
@@ -303,7 +303,7 @@ public class GUIItemInventory extends GUIItemItem {
             this.index = index;
         }
 
-        final CfItem player = itemsManager.getPlayer();
+        final CfItem player = itemSet.getPlayer();
         if (player != null) {
             final List<CfItem> list = itemSet.getItemsByLocation(player.getTag());
             if (0 <= this.index && this.index < list.size()) {

@@ -242,8 +242,9 @@ public class GUIItemFloor extends GUIItemItem {
         if (item == null) {
             return;
         }
-        if (itemsManager.getPlayer() != null) {
-            commandQueue.sendMove(itemsManager.getPlayer().getTag(), item.getTag());
+        final CfItem player = itemSet.getPlayer();
+        if (player != null) {
+            commandQueue.sendMove(player.getTag(), item.getTag());
         }
     }
 
