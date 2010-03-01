@@ -75,7 +75,7 @@ public class InventoryManager extends AbstractManager {
     public InventoryManager(@NotNull final ItemSet itemSet) {
         super(itemSet);
         this.itemSet = itemSet;
-        itemSet.addCrossfirePlayerListener(playerListener);
+        itemSet.addPlayerListener(playerListener);
     }
 
     /**

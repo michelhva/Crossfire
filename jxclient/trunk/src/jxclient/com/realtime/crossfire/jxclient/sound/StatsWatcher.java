@@ -176,7 +176,7 @@ public class StatsWatcher {
         stats.addCrossfireStatsListener(statsListener);
         windowRenderer.addGuiStateListener(rendererGuiStateListener);
         rendererGuiStateListener.guiStateChanged(windowRenderer.getGuiState());
-        itemSet.addCrossfirePlayerListener(playerListener);
+        itemSet.addPlayerListener(playerListener);
     }
 
     /**

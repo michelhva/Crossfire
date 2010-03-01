@@ -210,7 +210,7 @@ public class StatGaugeUpdater extends GaugeUpdater {
         this.stats = stats;
         this.itemSet = itemSet;
         this.stats.addCrossfireStatsListener(statsListener);
-        this.itemSet.addCrossfirePlayerListener(playerListener);
+        this.itemSet.addPlayerListener(playerListener);
     }
 
     /**
@@ -218,7 +218,7 @@ public class StatGaugeUpdater extends GaugeUpdater {
      */
     @Override
     public void dispose() {
-        itemSet.removeCrossfirePlayerListener(playerListener);
+        itemSet.removePlayerListener(playerListener);
         stats.removeCrossfireStatsListener(statsListener);
     }
 
