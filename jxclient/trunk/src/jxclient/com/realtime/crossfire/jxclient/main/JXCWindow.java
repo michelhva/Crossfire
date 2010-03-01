@@ -476,7 +476,7 @@ public class JXCWindow extends JFrame {
         /** {@inheritDoc} */
         @Override
         public void start() {
-            itemSet.removeCrossfirePlayerListener(playerListener);
+            itemSet.removePlayerListener(playerListener);
             server.removeCrossfireQueryListener(crossfireQueryListener);
             if (DISABLE_START_GUI) {
                 guiManager.terminate();
@@ -486,7 +486,7 @@ public class JXCWindow extends JFrame {
         /** {@inheritDoc} */
         @Override
         public void metaserver() {
-            itemSet.removeCrossfirePlayerListener(playerListener);
+            itemSet.removePlayerListener(playerListener);
             server.removeCrossfireQueryListener(crossfireQueryListener);
         }
 
@@ -500,7 +500,7 @@ public class JXCWindow extends JFrame {
         @Override
         public void connecting(@NotNull final String serverInfo) {
             facesManager.reset();
-            itemSet.addCrossfirePlayerListener(playerListener);
+            itemSet.addPlayerListener(playerListener);
             server.addCrossfireQueryListener(crossfireQueryListener);
         }
 

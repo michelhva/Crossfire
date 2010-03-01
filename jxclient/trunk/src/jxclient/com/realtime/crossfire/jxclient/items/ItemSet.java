@@ -76,7 +76,7 @@ public class ItemSet {
      * player.
      * @param listener the listener to add
      */
-    public void addCrossfirePlayerListener(@NotNull final PlayerListener listener) {
+    public void addPlayerListener(@NotNull final PlayerListener listener) {
         playerListeners.add(PlayerListener.class, listener);
     }
 
@@ -85,7 +85,7 @@ public class ItemSet {
      * current player.
      * @param listener the listener to remove
      */
-    public void removeCrossfirePlayerListener(@NotNull final PlayerListener listener) {
+    public void removePlayerListener(@NotNull final PlayerListener listener) {
         playerListeners.remove(PlayerListener.class, listener);
     }
 
