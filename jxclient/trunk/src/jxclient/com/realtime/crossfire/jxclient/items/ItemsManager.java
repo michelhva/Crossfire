@@ -247,7 +247,7 @@ public class ItemsManager {
                 cleanInventory(player.getTag());
             }
             cleanInventory(currentFloorManager.getCurrentFloor());
-            final Iterable<CfItem> tmp = itemSet.removeAllItems();
+            final Iterable<CfItem> tmp = itemSet.getAllItems();
             for (final CfItem item : tmp) {
                 removeItem(item);
             }

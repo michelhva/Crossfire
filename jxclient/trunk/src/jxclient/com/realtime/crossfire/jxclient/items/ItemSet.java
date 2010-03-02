@@ -227,11 +227,11 @@ public class ItemSet {
     }
 
     /**
-     * Removes all items.
-     * @return the removed items; may be modified by the caller
+     * Returns all items.
+     * @return the items; may be modified by the caller
      */
     @NotNull
-    public Iterable<CfItem> removeAllItems() {
+    public Iterable<CfItem> getAllItems() {
         return new HashSet<CfItem>(allItems.values());
     }
 
