@@ -278,7 +278,7 @@ public class GUIMagicMap extends GUIElement {
             offsetX = playerX-((mapWidth-1)/2)*TILE_SIZE;
             offsetY = playerY-((mapHeight-1)/2)*TILE_SIZE;
             synchronized (bufferedImageSync) {
-                final Graphics2D g = createBufferGraphics();
+                final Graphics g = createBufferGraphics();
                 try {
                     g.setColor(Color.BLACK);
                     g.fillRect(0, 0, getWidth(), getHeight());
