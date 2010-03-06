@@ -309,6 +309,7 @@ public class GuiManager {
             }
 
             closeTransientDialogs();
+            assert skin != null;
             final int mapWidth = skin.getMapWidth();
             assert skin != null;
             final int mapHeight = skin.getMapHeight();
