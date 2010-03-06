@@ -793,7 +793,7 @@ public class JXCWindowRenderer {
             mouse.x -= offsetX;
             mouse.y -= offsetY;
             if (dialog.isWithinDrawingArea(mouse.x, mouse.y)) {
-                final MouseEvent mouseEvent = new MouseEvent(frame, 0, System.currentTimeMillis(), 0, mouse.x, mouse.y, 0, false);
+                final MouseEvent mouseEvent = new MouseEvent(frame, 0, System.currentTimeMillis(), 0, mouse.x+offsetX, mouse.y+offsetY, 0, false);
                 mouseTracker.mouseExited(mouseEvent);
                 openDialogs.add(dialog);
                 mouseTracker.mouseEntered(mouseEvent);
