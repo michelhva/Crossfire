@@ -29,7 +29,6 @@ import com.realtime.crossfire.jxclient.gui.item.GUIItemItem;
 import com.realtime.crossfire.jxclient.gui.item.GUIItemItemFactory;
 import com.realtime.crossfire.jxclient.gui.label.AbstractLabel;
 import com.realtime.crossfire.jxclient.items.CfItem;
-import com.realtime.crossfire.jxclient.items.FloorView;
 import com.realtime.crossfire.jxclient.items.ItemView;
 import com.realtime.crossfire.jxclient.items.LocationsListener;
 import com.realtime.crossfire.jxclient.queue.CommandQueue;
@@ -72,12 +71,6 @@ public class GUIItemList extends GUIList {
     private final CrossfireServerConnection crossfireServerConnection;
 
     /**
-     * The {@link FloorView} to use.
-     */
-    @NotNull
-    private final FloorView floorView;
-
-    /**
      * The {@link ItemView} to monitor.
      */
     @NotNull
@@ -90,7 +83,7 @@ public class GUIItemList extends GUIList {
     private final AbstractLabel currentItem;
 
     /**
-     * The {@link LocationsListener} to be notified about inventory changes.
+     * The {@link LocationsListener} to be notified about changes.
      */
     @NotNull
     private final LocationsListener locationsListener = new LocationsListener() {
@@ -135,19 +128,17 @@ public class GUIItemList extends GUIList {
      * @param cellHeight the height of each cell
      * @param crossfireServerConnection the crossfire server connection for
      * sending commands to the server
-     * @param floorView the floor view to use
      * @param itemView the item view to monitor
      * @param currentItem the label to update with information about the
      * selected item.
      * @param itemItemFactory the factory for creating item instances
      */
-    public GUIItemList(@NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final CommandQueue commandQueue, @NotNull final String name, final int x, final int y, final int w, final int h, final int cellHeight, @NotNull final CrossfireServerConnection crossfireServerConnection, @NotNull final FloorView floorView, @NotNull final ItemView itemView, @Nullable final AbstractLabel currentItem, @NotNull final GUIItemItemFactory itemItemFactory) {
+    public GUIItemList(@NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final CommandQueue commandQueue, @NotNull final String name, final int x, final int y, final int w, final int h, final int cellHeight, @NotNull final CrossfireServerConnection crossfireServerConnection, @NotNull final ItemView itemView, @Nullable final AbstractLabel currentItem, @NotNull final GUIItemItemFactory itemItemFactory) {
         super(tooltipManager, elementListener, name, x, y, w, h, cellHeight, new ItemItemCellRenderer(itemItemFactory.newTemplateItem(cellHeight)));
         this.itemView = itemView;
         this.itemItemFactory = itemItemFactory;
         this.commandQueue = commandQueue;
         this.crossfireServerConnection = crossfireServerConnection;
-        this.floorView = floorView;
         this.currentItem = currentItem;
         setLayoutOrientation(JList.HORIZONTAL_WRAP, -1);
         this.itemView.addLocationsListener(locationsListener);
@@ -336,7 +327,7 @@ public class GUIItemList extends GUIList {
         if (item.isLocked()) {
             crossfireServerConnection.drawInfo("This item is locked. To drop it, first unlock by SHIFT+leftclicking on it.", 3);
         } else {
-            commandQueue.sendMove(floorView.getCurrentFloor(), item.getTag());
+            commandQueue.sendMove(itemItemFactory.getMoveLocation(), item.getTag());
         }
     }
 

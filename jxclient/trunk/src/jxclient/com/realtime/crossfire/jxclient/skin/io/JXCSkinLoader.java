@@ -49,8 +49,10 @@ import com.realtime.crossfire.jxclient.gui.gui.JXCWindowRenderer;
 import com.realtime.crossfire.jxclient.gui.gui.RendererGuiState;
 import com.realtime.crossfire.jxclient.gui.gui.TooltipManager;
 import com.realtime.crossfire.jxclient.gui.item.GUIItemFloor;
+import com.realtime.crossfire.jxclient.gui.item.GUIItemFloorFactory;
 import com.realtime.crossfire.jxclient.gui.item.GUIItemInventory;
 import com.realtime.crossfire.jxclient.gui.item.GUIItemInventoryFactory;
+import com.realtime.crossfire.jxclient.gui.item.GUIItemItemFactory;
 import com.realtime.crossfire.jxclient.gui.item.GUIItemShortcut;
 import com.realtime.crossfire.jxclient.gui.item.GUIItemSpelllist;
 import com.realtime.crossfire.jxclient.gui.item.ItemPainter;
@@ -584,7 +586,9 @@ public class JXCSkinLoader {
                         } else if (gui != null && args[0].equals("ignore")) {
                             parseIgnore(args);
                         } else if (gui != null && args[0].equals("inventory_list")) {
-                            parseInventoryList(args, tooltipManager, elementListener, commandQueue, server);
+                            parseList(args, true, tooltipManager, elementListener, commandQueue, server, nextGroupFace, prevGroupFace);
+                        } else if (gui != null && args[0].equals("floor_list")) {
+                            parseList(args, false, tooltipManager, elementListener, commandQueue, server, nextGroupFace, prevGroupFace);
                         } else if (gui != null && args[0].equals("item")) {
                             parseItem(args, tooltipManager, elementListener, commandQueue, server, shortcuts, currentSpellManager, nextGroupFace, prevGroupFace);
                         } else if (args[0].equals("key")) {
@@ -1197,22 +1201,26 @@ public class JXCSkinLoader {
     }
 
     /**
-     * Parses an "inventory_list" command.
+     * Parses an "inventory_list" or a "floor_list" command.
      * @param args the command arguments
+     * @param inventoryList <code>true</code> for "inventory_list" command,
+     * <code>false</code> for "floor_list" command
      * @param tooltipManager the tooltip manager to update
      * @param elementListener the element listener to notify
      * @param commandQueue the command queue to use
      * @param server the server to use
+     * @param nextGroupFace the image for "next group of items"
+     * @param prevGroupFace the image for "prev group of items"
      * @throws IOException if the command cannot be parsed
      * @throws JXCSkinException if the command cannot be parsed
      */
-    private void parseInventoryList(@NotNull final String[] args, @NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final CommandQueue commandQueue, @NotNull final CrossfireServerConnection server) throws IOException, JXCSkinException {
+    private void parseList(@NotNull final String[] args, final boolean inventoryList, @NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final CommandQueue commandQueue, @NotNull final CrossfireServerConnection server, @NotNull final Image nextGroupFace, @NotNull final Image prevGroupFace) throws IOException, JXCSkinException {
         if (args.length != 8) {
             throw new IOException("syntax error");
         }
 
         if (defaultItemPainter == null) {
-            throw new IOException("cannot use 'inventory_list' without 'def item' command");
+            throw new IOException("cannot use '"+(inventoryList ? "inventory_list" : "floor_list")+"' without 'def item' command");
         }
 
         final String name = args[1];
@@ -1225,8 +1233,13 @@ public class JXCSkinLoader {
 
         assert defaultItemPainter != null;
         final ItemPainter itemPainter = defaultItemPainter.newItemPainter(cellHeight, cellHeight);
-        final GUIItemInventoryFactory itemInventoryFactory = new GUIItemInventoryFactory(tooltipManager, elementListener, commandQueue, name, itemPainter, server, facesManager, floorView, inventoryView);
-        final GUIElement element = new GUIItemList(tooltipManager, elementListener, commandQueue, name, x, y, w, h, cellHeight, server, floorView, inventoryView, selectedItem, itemInventoryFactory);
+        final GUIItemItemFactory itemFactory;
+        if (inventoryList) {
+            itemFactory = new GUIItemInventoryFactory(tooltipManager, elementListener, commandQueue, name, itemPainter, server, facesManager, floorView, inventoryView);
+        } else {
+            itemFactory = new GUIItemFloorFactory(tooltipManager, elementListener, commandQueue, name, itemPainter, server, facesManager, floorView, itemSet, nextGroupFace, prevGroupFace);
+        }
+        final GUIElement element = new GUIItemList(tooltipManager, elementListener, commandQueue, name, x, y, w, h, cellHeight, server, inventoryList ? inventoryView : floorView, selectedItem, itemFactory);
         insertGuiElement(element);
     }
 
