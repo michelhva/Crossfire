@@ -4,7 +4,7 @@ dialog_hide START META LOGIN
 
 set_num_look_objects 43
 
-floor_list floor 5 5 1400 32 32 null
+floor_list floor 5 5 WIDTH 32 32 null
 
 set_invisible border_nw
 set_invisible border_n
