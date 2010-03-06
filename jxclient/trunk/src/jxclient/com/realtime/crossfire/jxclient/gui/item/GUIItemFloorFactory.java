@@ -26,16 +26,18 @@ import com.realtime.crossfire.jxclient.gui.gui.GUIElement;
 import com.realtime.crossfire.jxclient.gui.gui.GUIElementListener;
 import com.realtime.crossfire.jxclient.gui.gui.TooltipManager;
 import com.realtime.crossfire.jxclient.items.FloorView;
-import com.realtime.crossfire.jxclient.items.ItemView;
+import com.realtime.crossfire.jxclient.items.ItemSet;
+import com.realtime.crossfire.jxclient.items.CfItem;
 import com.realtime.crossfire.jxclient.queue.CommandQueue;
 import com.realtime.crossfire.jxclient.server.crossfire.CrossfireServerConnection;
+import java.awt.Image;
 import org.jetbrains.annotations.NotNull;
 
 /**
- * A factory for creating {@link GUIItemInventory} instances.
+ * A factory for creating {@link GUIItemFloor} instances.
  * @author Andreas Kirschbaum
  */
-public class GUIItemInventoryFactory implements GUIItemItemFactory {
+public class GUIItemFloorFactory implements GUIItemItemFactory {
 
     /**
      * The tooltip manager to update.
@@ -49,38 +51,75 @@ public class GUIItemInventoryFactory implements GUIItemItemFactory {
     @NotNull
     private final GUIElementListener elementListener;
 
+    /**
+     * The {@link CommandQueue} for sending commands.
+     */
     @NotNull
     private final CommandQueue commandQueue;
 
+    /**
+     * The base name.
+     */
     @NotNull
     private final String name;
 
+    /**
+     * The {@link ItemPainter} to use.
+     */
     @NotNull
     private final ItemPainter itemPainter;
 
+    /**
+     * The {@link CrossfireServerConnection} to use.
+     */
     @NotNull
     private final CrossfireServerConnection crossfireServerConnection;
 
+    /**
+     * The {@link FacesManager} to use.
+     */
     @NotNull
     private final FacesManager facesManager;
 
+    /**
+     * The {@link FloorView} to use.
+     */
     @NotNull
     private final FloorView floorView;
 
     /**
-     * The inventory view to use.
+     * The {@link ItemSet} to use.
      */
     @NotNull
-    private final ItemView inventoryView;
+    private final ItemSet itemSet;
+
+    /**
+     * The {@link Image} for "next group of items".
+     */
+    @NotNull
+    private final Image nextGroupFace;
+
+    /**
+     * The {@link Image} for "prev group of items".
+     */
+    @NotNull
+    private final Image prevGroupFace;
 
     /**
      * Creates a new instance.
      * @param tooltipManager the tooltip manager to update
      * @param elementListener the element listener to notify
+     * @param commandQueue the command queue for sending commands
+     * @param name the base name
+     * @param itemPainter the item painter to use
+     * @param crossfireServerConnection the crossfire server connection to use
+     * @param facesManager the faces manager to use
      * @param floorView the floor view to use
-     * @param inventoryView the inventory view to use
+     * @param itemSet the item set to use
+     * @param nextGroupFace the image for "next group of items"
+     * @param prevGroupFace the image for "prev group of items"
      */
-    public GUIItemInventoryFactory(@NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final CommandQueue commandQueue, @NotNull final String name, @NotNull final ItemPainter itemPainter, @NotNull final CrossfireServerConnection crossfireServerConnection, @NotNull final FacesManager facesManager, @NotNull final FloorView floorView, @NotNull final ItemView inventoryView) {
+    public GUIItemFloorFactory(@NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final CommandQueue commandQueue, @NotNull final String name, @NotNull final ItemPainter itemPainter, @NotNull final CrossfireServerConnection crossfireServerConnection, @NotNull final FacesManager facesManager, @NotNull final FloorView floorView, @NotNull final ItemSet itemSet, @NotNull final Image nextGroupFace, @NotNull final Image prevGroupFace) {
         this.tooltipManager = tooltipManager;
         this.elementListener = elementListener;
         this.commandQueue = commandQueue;
@@ -89,7 +128,9 @@ public class GUIItemInventoryFactory implements GUIItemItemFactory {
         this.crossfireServerConnection = crossfireServerConnection;
         this.facesManager = facesManager;
         this.floorView = floorView;
-        this.inventoryView = inventoryView;
+        this.itemSet = itemSet;
+        this.nextGroupFace = nextGroupFace;
+        this.prevGroupFace = prevGroupFace;
     }
 
     /**
@@ -98,7 +139,7 @@ public class GUIItemInventoryFactory implements GUIItemItemFactory {
     @Override
     @NotNull
     public GUIElement newItem(final int index) {
-        return new GUIItemInventory(tooltipManager, elementListener, commandQueue, name+index, 0, 0, 1, 1, itemPainter, index, crossfireServerConnection, facesManager, floorView, inventoryView);
+        return new GUIItemFloor(tooltipManager, elementListener, commandQueue, name+index, 0, 0, 1, 1, itemPainter, index, crossfireServerConnection, floorView, itemSet, facesManager, nextGroupFace, prevGroupFace);
     }
 
     /**
@@ -107,7 +148,7 @@ public class GUIItemInventoryFactory implements GUIItemItemFactory {
     @Override
     @NotNull
     public GUIItemItem newTemplateItem(final int cellHeight) {
-        return new GUIItemInventory(tooltipManager, elementListener, commandQueue, name+"_template", 0, 0, cellHeight, cellHeight, itemPainter, -1, crossfireServerConnection, facesManager, floorView, inventoryView);
+        return new GUIItemFloor(tooltipManager, elementListener, commandQueue, name+"_template", 0, 0, cellHeight, cellHeight, itemPainter, -1, crossfireServerConnection, floorView, itemSet, facesManager, nextGroupFace, prevGroupFace);
     }
 
     /**
@@ -115,7 +156,8 @@ public class GUIItemInventoryFactory implements GUIItemItemFactory {
      */
     @Override
     public int getMoveLocation() {
-        return floorView.getCurrentFloor();
+        final CfItem player = itemSet.getPlayer();
+        return player == null ? 0 : player.getTag();
     }
 
 }
