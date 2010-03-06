@@ -621,6 +621,14 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
      * {@inheritDoc}
      */
     @Override
+    public void removeCrossfireUpdateItemListener(@NotNull final CrossfireUpdateItemListener crossfireUpdateItemListener) {
+        crossfireUpdateItemListeners.remove(crossfireUpdateItemListener);
+    }
+
+    /**
+     * {@inheritDoc}
+     */
+    @Override
     public void addCrossfireUpdateMapListener(@NotNull final CrossfireUpdateMapListener listener) {
         crossfireUpdateMapListeners.add(listener);
     }
@@ -1401,9 +1409,6 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
                     }
                     if (pos != end) {
                         break;
-                    }
-                    for (final CrossfireUpdateItemListener crossfireUpdateItemListener : crossfireUpdateItemListeners) {
-                        crossfireUpdateItemListener.additemFinished();
                     }
                 }
                 notifyPacketWatcherListenersMixed(packet, start, args, end);

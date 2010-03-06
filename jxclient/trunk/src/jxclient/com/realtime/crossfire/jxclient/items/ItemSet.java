@@ -21,11 +21,14 @@
 
 package com.realtime.crossfire.jxclient.items;
 
+import com.realtime.crossfire.jxclient.faces.Face;
+import com.realtime.crossfire.jxclient.util.HashedEventListenerList;
 import java.util.Collection;
 import java.util.Collections;
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.List;
+import java.util.ListIterator;
 import java.util.Map;
 import java.util.concurrent.CopyOnWriteArrayList;
 import javax.swing.event.EventListenerList;
@@ -33,8 +36,7 @@ import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 
 /**
- * Model class maintaining the {@link CfItem}s known to the player. Access is
- * not synchronized [XXX: incorrect].
+ * Model class maintaining the {@link CfItem}s known to the player.
  * @author Andreas Kirschbaum
  */
 public class ItemSet {
@@ -62,31 +64,57 @@ public class ItemSet {
      * The current player object this client controls.
      */
     @Nullable
-    private CfPlayer player = null;
+    private CfItem player = null;
 
     /**
-     * The list of {@link PlayerListener}s to be notified about changes of the
-     * current player.
+     * The currently opened container or <code>0</code>.
+     */
+    private int openContainerFloor = 0;
+
+    /**
+     * The list of {@link ItemSetListener}s to be notified about changes.
      */
     @NotNull
-    private final EventListenerList playerListeners = new EventListenerList();
+    private final EventListenerList itemSetListeners = new EventListenerList();
 
     /**
-     * Adds a {@link PlayerListener} to be notified about changes of the current
-     * player.
+     * The registered {@link ItemListener}s to be notified about changes.
+     */
+    @NotNull
+    private final HashedEventListenerList itemListeners = new HashedEventListenerList();
+
+    /**
+     * Adds an {@link ItemSetListener} to be notified about changes.
      * @param listener the listener to add
      */
-    public void addPlayerListener(@NotNull final PlayerListener listener) {
-        playerListeners.add(PlayerListener.class, listener);
+    public void addItemSetListener(@NotNull final ItemSetListener listener) {
+        itemSetListeners.add(ItemSetListener.class, listener);
     }
 
     /**
-     * Removes a {@link PlayerListener} to be notified about changes of the
-     * current player.
+     * Removes an {@link ItemSetListener} to be notified about changes.
      * @param listener the listener to remove
      */
-    public void removePlayerListener(@NotNull final PlayerListener listener) {
-        playerListeners.remove(PlayerListener.class, listener);
+    public void removeItemSetListener(@NotNull final ItemSetListener listener) {
+        itemSetListeners.remove(ItemSetListener.class, listener);
+    }
+
+    /**
+     * Adds an {@link ItemListener} to be notified about changes.
+     * @param tag the item tag to watch
+     * @param listener the listener to add
+     */
+    public void addInventoryListener(final int tag, @NotNull final ItemListener listener) {
+        itemListeners.add(tag, ItemListener.class, listener);
+    }
+
+    /**
+     * Removes an {@link ItemListener} to be notified about changes.
+     * @param tag the item tag to watch
+     * @param listener the listener to add
+     */
+    public void removeInventoryListener(final int tag, @NotNull final ItemListener listener) {
+        itemListeners.remove(tag, ItemListener.class, listener);
     }
 
     /**
@@ -116,47 +144,93 @@ public class ItemSet {
     }
 
     /**
-     * Adds an item.
-     * @param item the item
+     * Removes a {@link CfItem}.
+     * @param tag the item's tag to remove
+     * @param notifyListeners whether listeners should be notified about the
+     * removal
+     * @return the index where the item has been removed from or
+     * <code>-1</code>
      */
-    public void addItem(@NotNull final CfItem item) {
-        if (allItems.put(item.getTag(), item) != null) {
-            throw new AssertionError("duplicate item "+item.getTag());
+    private int removeItemByTag(final int tag, final boolean notifyListeners) {
+        synchronized (sync) {
+            final CfItem item = allItems.remove(tag);
+            if (item == null) {
+                return -1;
+            }
+
+            for (final ItemSetListener listener : itemSetListeners.getListeners(ItemSetListener.class)) {
+                listener.itemRemoved(item);
+            }
+
+            final int where = item.getLocation();
+            final List<CfItem> list = items.get(where);
+            if (list == null) {
+                throw new AssertionError("cannot find item "+item.getTag());
+            }
+
+            final int index = list.indexOf(item);
+            if (list.remove(index) == null) {
+                throw new AssertionError("cannot find item "+item.getTag());
+            }
+
+            if (list.isEmpty()) {
+                if (items.remove(item.getLocation()) != list) {
+                    throw new AssertionError();
+                }
+            }
+
+            for (final ItemListener itemListener : itemListeners.getListeners(where, ItemListener.class)) {
+                itemListener.inventoryRemoved(where, index);
+            }
+
+            if (notifyListeners) {
+                for (final ItemSetListener listener : itemSetListeners.getListeners(ItemSetListener.class)) {
+                    listener.itemRemoved(item);
+                }
+            }
+
+            for (final ItemListener itemListener : itemListeners.getListeners(tag, ItemListener.class)) {
+                itemListener.itemRemoved(tag);
+            }
+
+            return index;
         }
     }
 
     /**
-     * Removes a {@link CfItem}.
-     * @param item the item to remove
-     * @return the index where the item has been inserted
+     * Deletes items by tag.
+     * @param tags the tags to delete
      */
-    public int removeItem(@NotNull final CfItem item) {
-        final int where = item.getLocation();
-        final List<CfItem> list = items.get(where);
-        if (list == null) {
-            throw new AssertionError("cannot find item "+item.getTag());
-        }
-
-        final int index = list.indexOf(item);
-        if (list.remove(index) == null) {
-            throw new AssertionError("cannot find item "+item.getTag());
-        }
-
-        if (list.isEmpty()) {
-            if (items.remove(item.getLocation()) != list) {
-                throw new AssertionError();
+    public void removeItems(@NotNull final int[] tags) {
+        for (final int tag : tags) {
+            if (removeItemByTag(tag, true) == -1) {
+                System.err.println("removeItem3: item "+tag+" does not exist");
             }
         }
+    }
 
-        return index;
+    /**
+     * Adds an item.
+     * @param item the item to add
+     */
+    public void addItem(@NotNull final CfItem item) {
+        addItem(item, true);
     }
 
     /**
      * Adds a {@link CfItem}.
      * @param item the item to add
+     * @param notifyListeners whether listeners should be notified about the
+     * addition
      * @return the index where the item has been inserted
      */
-    public int addItem2(@NotNull final CfItem item) {
+    private int addItem(@NotNull final CfItem item, final boolean notifyListeners) {
+        removeItemByTag(item.getTag(), true);
+
+        if (allItems.put(item.getTag(), item) != null) {
+            throw new AssertionError("duplicate item "+item.getTag());
+        }
+
         final int where = item.getLocation();
         List<CfItem> list = items.get(where);
         if (list == null) {
@@ -167,29 +241,18 @@ public class ItemSet {
         }
 
         list.add(item);
-        return list.size()-1;
-    }
 
-    /**
-     * Adds an inventory {@link CfItem}.
-     * @param item the item to add
-     * @return the index where the item has been inserted
-     */
-    public int addInventoryItem(final CfItem item) {
-        final int where = item.getLocation();
-        List<CfItem> list = items.get(where);
-        if (list == null) {
-            list = new CopyOnWriteArrayList<CfItem>();
-            if (items.put(where, list) != null) {
-                throw new AssertionError();
+        if (notifyListeners) {
+            for (final ItemSetListener listener : itemSetListeners.getListeners(ItemSetListener.class)) {
+                listener.itemAdded(item);
             }
         }
 
-        // inventory order differs from server order, so insert at correct
-        // position
-        final int index = InventoryManager.getInsertionIndex(list, item);
-        list.add(index, item);
-        return index;
+        for (final ItemListener itemListener : itemListeners.getListeners(where, ItemListener.class)) {
+            itemListener.inventoryAdded(where, list.size()-1, item);
+        }
+
+        return list.size()-1;
     }
 
     /**
@@ -198,7 +261,7 @@ public class ItemSet {
      * @return the inventory items; the list cannot be modified
      */
     @NotNull
-    public List<CfItem> getInventoryByTag(final int tag) {
+    private List<CfItem> getInventoryByTag(final int tag) {
         final List<CfItem> inventory = items.get(tag);
         if (inventory == null) {
             return Collections.emptyList();
@@ -217,25 +280,6 @@ public class ItemSet {
     }
 
     /**
-     * Removes an item by tag.
-     * @param tag the item's tag
-     * @return the removed item or <code>null</code>
-     */
-    @Nullable
-    public CfItem removeItemByTag(final int tag) {
-        return allItems.remove(tag);
-    }
-
-    /**
-     * Returns all items.
-     * @return the items; may be modified by the caller
-     */
-    @NotNull
-    public Iterable<CfItem> getAllItems() {
-        return new HashSet<CfItem>(allItems.values());
-    }
-
-    /**
      * Returns the player object this client controls.
      * @return the player object
      */
@@ -250,29 +294,15 @@ public class ItemSet {
      * Sets the player object this client controls.
      * @param player the new player object
      */
-    public void setPlayer(@Nullable final CfPlayer player) {
+    public void setPlayer(@Nullable final CfItem player) {
         synchronized (sync) {
-            final CfPlayer oldPlayer = this.player;
-            if (oldPlayer == player) {
-                if (oldPlayer != null) {
-                    for (final PlayerListener listener : playerListeners.getListeners(PlayerListener.class)) {
-                        listener.playerReceived(oldPlayer);
-                    }
-                }
+            if (this.player == player) {
                 return;
             }
 
-            if (oldPlayer != null) {
-                for (final PlayerListener listener : playerListeners.getListeners(PlayerListener.class)) {
-                    listener.playerRemoved(oldPlayer);
-                }
-            }
             this.player = player;
-            if (player != null) {
-                for (final PlayerListener listener : playerListeners.getListeners(PlayerListener.class)) {
-                    listener.playerAdded(player);
-                    listener.playerReceived(player);
-                }
+            for (final ItemSetListener listener : itemSetListeners.getListeners(ItemSetListener.class)) {
+                listener.playerChanged(player);
             }
         }
     }
@@ -292,14 +322,133 @@ public class ItemSet {
      * @return the item or <code>null</code> if no such item exists
      */
     @Nullable
-    public CfItem getItemOrPlayer(final int tag) {
+    private CfItem getItemOrPlayer(final int tag) {
         synchronized (sync) {
             if (player != null && player.getTag() == tag) {
                 return player;
             }
 
-            return getItemByTag(tag);
+            return allItems.get(tag);
         }
+    }
+
+    /**
+     * Clears the inventory of an item.
+     * @param tag the item tag
+     */
+    public void cleanInventory(final int tag) {
+        final List<CfItem> inventoryItems = getItemsByLocation(tag);
+        final ListIterator<CfItem> it = inventoryItems.listIterator(inventoryItems.size());
+        while (it.hasPrevious()) {
+            final CfItem item = it.previous();
+            removeItemByTag(item.getTag(), true);
+        }
+    }
+
+    /**
+     * Processes an "upditem" command.
+     * @param flags the changed values
+     * @param tag the item's tag
+     * @param valLocation the item's location
+     * @param valFlags the item's flags
+     * @param valWeight the item's weight
+     * @param valFace the item's face
+     * @param valName the item's singular name
+     * @param valNamePl the item's plural name
+     * @param valAnim the item's animation ID
+     * @param valAnimSpeed the item's animation speed
+     * @param valNrof the number of items
+     */
+    public void updateItem(final int flags, final int tag, final int valLocation, final int valFlags, final int valWeight, final Face valFace, @NotNull final String valName, @NotNull final String valNamePl, final int valAnim, final int valAnimSpeed, final int valNrof) {
+        synchronized (sync) {
+            final CfItem item = getItemOrPlayer(tag);
+            if (item == null) {
+                if (flags != CfItem.UPD_FACE) { // XXX: suppress frequent error message due to server bug
+                    System.err.println("updateItem: undefined item "+tag);
+                }
+                return;
+            }
+
+            final boolean wasOpen = (flags&CfItem.UPD_FLAGS) != 0 && openContainerFloor == item.getTag() && item.isOpen();
+            item.update(flags, valFlags, valWeight, valFace, valName, valNamePl, valAnim, valAnimSpeed, valNrof);
+            if ((flags&CfItem.UPD_LOCATION) != 0) {
+                removeItemByTag(item.getTag(), false);
+                item.setLocation(valLocation);
+                addItem(item, false);
+
+                for (final ItemSetListener listener : itemSetListeners.getListeners(ItemSetListener.class)) {
+                    listener.itemMoved(item);
+                }
+            }
+            if ((flags&~CfItem.UPD_LOCATION) != 0) {
+                for (final ItemSetListener listener : itemSetListeners.getListeners(ItemSetListener.class)) {
+                    listener.itemChanged(item);
+                }
+                for (final ItemListener itemListener : itemListeners.getListeners(tag, ItemListener.class)) {
+                    itemListener.itemChanged(tag);
+                }
+            }
+            if ((flags&CfItem.UPD_FLAGS) != 0) {
+                if (item.isOpen()) {
+                    setOpenContainer(item.getTag());
+                } else if (wasOpen) {
+                    setOpenContainer(0);
+                }
+            }
+        }
+    }
+
+    /**
+     * Resets the manager's state.
+     */
+    public void reset() {
+        synchronized (sync) {
+            if (player != null) {
+                cleanInventory(player.getTag());
+            }
+            final Iterable<CfItem> tmp = new HashSet<CfItem>(allItems.values());
+            for (final CfItem item : tmp) {
+                removeItemByTag(item.getTag(), true);
+            }
+            setOpenContainer(0);
+            setPlayer(null);
+        }
+    }
+
+    /**
+     * Sets the currently opened container.
+     * @param openContainerFloor the opened container's tag or <code>0</code>
+     */
+    private void setOpenContainer(final int openContainerFloor) {
+        if (this.openContainerFloor == openContainerFloor) {
+            return;
+        }
+
+        this.openContainerFloor = openContainerFloor;
+        for (final ItemSetListener listener : itemSetListeners.getListeners(ItemSetListener.class)) {
+            listener.openContainerChanged(openContainerFloor);
+        }
+    }
+
+    /**
+     * Returns the currently opened container.
+     * @return the opened container's tag
+     */
+    public int getOpenContainer() {
+        return openContainerFloor;
+    }
+
+    /**
+     * Returns a {@link CfItem} from the inventory of an item.
+     * @param tag the item's tag
+     * @param index the index of the inventory item to return
+     * @return the inventory item or <code>null</code> if the index does not
+     * exist
+     */
+    @Nullable
+    public CfItem getInventoryItem(final int tag, final int index) {
+        final List<CfItem> inventoryItems = getInventoryByTag(tag);
+        return 0 <= index && index < inventoryItems.size() ? inventoryItems.get(index) : null;
     }
 
 }

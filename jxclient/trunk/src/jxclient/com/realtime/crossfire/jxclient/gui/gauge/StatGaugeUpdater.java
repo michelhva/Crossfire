@@ -21,15 +21,16 @@
 
 package com.realtime.crossfire.jxclient.gui.gauge;
 
-import com.realtime.crossfire.jxclient.items.CfPlayer;
+import com.realtime.crossfire.jxclient.items.CfItem;
 import com.realtime.crossfire.jxclient.items.ItemSet;
-import com.realtime.crossfire.jxclient.items.PlayerListener;
+import com.realtime.crossfire.jxclient.items.ItemSetListener;
 import com.realtime.crossfire.jxclient.server.crossfire.CrossfireStatsListener;
 import com.realtime.crossfire.jxclient.stats.ExperienceTable;
 import com.realtime.crossfire.jxclient.stats.Stats;
 import com.realtime.crossfire.jxclient.stats.StatsListener;
 import com.realtime.crossfire.jxclient.util.Formatter;
 import org.jetbrains.annotations.NotNull;
+import org.jetbrains.annotations.Nullable;
 
 /**
  * A {@link GaugeUpdater} which monitors a stat value.
@@ -177,24 +178,56 @@ public class StatGaugeUpdater extends GaugeUpdater {
      * The listener to detect a changed player name.
      */
     @NotNull
-    private final PlayerListener playerListener = new PlayerListener() {
-        /** {@inheritDoc} */
+    private final ItemSetListener itemSetListener = new ItemSetListener() {
+
+        /**
+         * {@inheritDoc}
+         */
         @Override
-        public void playerReceived(@NotNull final CfPlayer player) {
-            active = true;
+        public void itemAdded(@NotNull final CfItem item) {
+            // ignore
         }
 
-        /** {@inheritDoc} */
+        /**
+         * {@inheritDoc}
+         */
         @Override
-        public void playerAdded(@NotNull final CfPlayer player) {
-            active = true;
+        public void itemMoved(@NotNull final CfItem item) {
+            // ignore
         }
 
-        /** {@inheritDoc} */
+        /**
+         * {@inheritDoc}
+         */
         @Override
-        public void playerRemoved(@NotNull final CfPlayer player) {
-            active = false;
+        public void itemChanged(@NotNull final CfItem item) {
+            // ignore
         }
+
+        /**
+         * {@inheritDoc}
+         */
+        @Override
+        public void itemRemoved(@NotNull final CfItem item) {
+            // ignore
+        }
+
+        /**
+         * {@inheritDoc}
+         */
+        @Override
+        public void playerChanged(@Nullable final CfItem player) {
+            active = player != null;
+        }
+
+        /**
+         * {@inheritDoc}
+         */
+        @Override
+        public void openContainerChanged(final int tag) {
+            // ignore
+        }
+
     };
 
     /**
@@ -210,7 +243,7 @@ public class StatGaugeUpdater extends GaugeUpdater {
         this.stats = stats;
         this.itemSet = itemSet;
         this.stats.addCrossfireStatsListener(statsListener);
-        this.itemSet.addPlayerListener(playerListener);
+        this.itemSet.addItemSetListener(itemSetListener);
     }
 
     /**
@@ -218,7 +251,7 @@ public class StatGaugeUpdater extends GaugeUpdater {
      */
     @Override
     public void dispose() {
-        itemSet.removePlayerListener(playerListener);
+        itemSet.removeItemSetListener(itemSetListener);
         stats.removeCrossfireStatsListener(statsListener);
     }
 

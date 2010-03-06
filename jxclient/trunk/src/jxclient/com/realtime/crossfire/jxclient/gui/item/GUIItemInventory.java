@@ -24,19 +24,16 @@ package com.realtime.crossfire.jxclient.gui.item;
 import com.realtime.crossfire.jxclient.faces.FacesManager;
 import com.realtime.crossfire.jxclient.gui.gui.GUIElementListener;
 import com.realtime.crossfire.jxclient.gui.gui.TooltipManager;
-import com.realtime.crossfire.jxclient.items.AbstractManager;
 import com.realtime.crossfire.jxclient.items.CfItem;
-import com.realtime.crossfire.jxclient.items.ItemSet;
-import com.realtime.crossfire.jxclient.items.ItemsManager;
+import com.realtime.crossfire.jxclient.items.FloorView;
+import com.realtime.crossfire.jxclient.items.ItemListener;
+import com.realtime.crossfire.jxclient.items.ItemView;
 import com.realtime.crossfire.jxclient.items.LocationListener;
 import com.realtime.crossfire.jxclient.queue.CommandQueue;
 import com.realtime.crossfire.jxclient.server.crossfire.CrossfireServerConnection;
 import java.awt.Image;
 import java.awt.event.InputEvent;
-import java.util.Collection;
-import java.util.List;
 import org.jetbrains.annotations.NotNull;
-import org.jetbrains.annotations.Nullable;
 
 /**
  * A {@link GUIItem} for displaying inventory objects.
@@ -68,22 +65,16 @@ public class GUIItemInventory extends GUIItemItem {
     private final FacesManager facesManager;
 
     /**
-     * The {@link ItemsManager} instance to watch.
+     * The {@link FloorView} to use.
      */
     @NotNull
-    private final ItemsManager itemsManager;
+    private final FloorView floorView;
 
     /**
-     * The {@link ItemSet} to query.
+     * The inventory view to watch.
      */
     @NotNull
-    private final ItemSet itemSet;
-
-    /**
-     * The inventory manager instance to watch.
-     */
-    @NotNull
-    private final AbstractManager inventoryManager;
+    private final ItemView inventoryView;
 
     /**
      * The default scroll index.
@@ -107,30 +98,50 @@ public class GUIItemInventory extends GUIItemItem {
     private boolean selected = false;
 
     /**
-     * The {@link LocationListener} used to detect items added to or removed
+     * The {@link ItemListener} used to detect items added to or removed
      * from this inventory slot.
      */
     @NotNull
-    private final LocationListener inventoryLocationListener = new LocationListener() {
-        /** {@inheritDoc} */
+    private final LocationListener locationListener = new LocationListener() {
+
+        /**
+         * {@inheritDoc}
+         */
         @Override
-        public void locationModified(final int index, @Nullable final CfItem item) {
-            synchronized (sync) {
-                assert index == GUIItemInventory.this.index;
-            }
-            setItem(item);
+        public void locationChanged() {
+            setChanged();
+            updateTooltipText();
         }
+
     };
 
-    public GUIItemInventory(@NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final CommandQueue commandQueue, final String name, final int x, final int y, final int w, final int h, @NotNull final ItemPainter itemPainter, final int index, @NotNull final CrossfireServerConnection crossfireServerConnection, @NotNull final FacesManager facesManager, @NotNull final ItemsManager itemsManager, @NotNull final ItemSet itemSet, @NotNull final AbstractManager inventoryManager) {
+    /**
+     * Creates a new instance.
+     * @param tooltipManager the tooltip manager to update
+     * @param elementListener the element listener to notify
+     * @param commandQueue the command queue for sending commands
+     * @param name the name of this element
+     * @param x the x-coordinate for drawing this element to screen; it is
+     * relative to <code>gui</code>
+     * @param y the y-coordinate for drawing this element to screen; it is
+     * relative to <code>gui</code>
+     * @param w the width for drawing this element to screen
+     * @param h the height for drawing this element to screen
+     * @param index the default scroll index
+     * @param crossfireServerConnection the connection instance
+     * @param itemPainter the item painter for painting the icon
+     * @param facesManager the faces manager instance to use
+     * @param floorView the floor view to use
+     * @param inventoryView the inventory view to watch
+     */
+    public GUIItemInventory(@NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final CommandQueue commandQueue, final String name, final int x, final int y, final int w, final int h, @NotNull final ItemPainter itemPainter, final int index, @NotNull final CrossfireServerConnection crossfireServerConnection, @NotNull final FacesManager facesManager, @NotNull final FloorView floorView, @NotNull final ItemView inventoryView) {
         super(tooltipManager, elementListener, name, x, y, w, h, crossfireServerConnection, itemPainter, facesManager);
         this.commandQueue = commandQueue;
         this.crossfireServerConnection = crossfireServerConnection;
         this.facesManager = facesManager;
-        this.itemsManager = itemsManager;
-        this.itemSet = itemSet;
+        this.floorView = floorView;
         defaultIndex = index;
-        this.inventoryManager = inventoryManager;
+        this.inventoryView = inventoryView;
         setIndex(index);
     }
 
@@ -153,14 +164,8 @@ public class GUIItemInventory extends GUIItemItem {
                 return index >= -distance;
             }
         } else if (distance > 0) {
-            final CfItem player = itemSet.getPlayer();
-            if (player == null) {
-                return false;
-            }
-
-            final Collection<CfItem> list = itemSet.getItemsByLocation(player.getTag());
             synchronized (sync) {
-                return index+distance < list.size();
+                return index+distance < inventoryView.getSize();
             }
         } else {
             return false;
@@ -174,6 +179,7 @@ public class GUIItemInventory extends GUIItemItem {
             setIndex(index+distance);
         }
         setChanged();
+        updateTooltipText();
     }
 
     /* {@inheritDoc} */
@@ -245,7 +251,7 @@ public class GUIItemInventory extends GUIItemItem {
             return;
         }
 
-        commandQueue.sendMove(itemsManager.getCurrentFloorManager().getCurrentFloor(), item.getTag());
+        commandQueue.sendMove(floorView.getCurrentFloor(), item.getTag());
     }
 
     /**
@@ -269,25 +275,15 @@ public class GUIItemInventory extends GUIItemItem {
             }
 
             if (this.index >= 0) {
-                inventoryManager.removeLocationListener(this.index, inventoryLocationListener);
+                inventoryView.removeLocationListener(this.index, locationListener);
             }
             this.index = index;
             if (this.index >= 0) {
-                inventoryManager.addLocationListener(this.index, inventoryLocationListener);
+                inventoryView.addLocationListener(this.index, locationListener);
             }
         }
 
-        final CfItem player = itemSet.getPlayer();
-        if (player != null) {
-            final List<CfItem> list = itemSet.getItemsByLocation(player.getTag());
-            if (0 <= this.index && this.index < list.size()) {
-                setItem(list.get(this.index));
-            } else {
-                setItem(null);
-            }
-        } else {
-            setItem(null);
-        }
+        setItem(inventoryView.getItem(this.index));
     }
 
     /**
@@ -303,17 +299,7 @@ public class GUIItemInventory extends GUIItemItem {
             this.index = index;
         }
 
-        final CfItem player = itemSet.getPlayer();
-        if (player != null) {
-            final List<CfItem> list = itemSet.getItemsByLocation(player.getTag());
-            if (0 <= this.index && this.index < list.size()) {
-                setItemNoListeners(list.get(this.index));
-            } else {
-                setItemNoListeners(null);
-            }
-        } else {
-            setItemNoListeners(null);
-        }
+        setItemNoListeners(inventoryView.getItem(this.index));
     }
 
     /**
@@ -323,6 +309,15 @@ public class GUIItemInventory extends GUIItemItem {
     @Override
     protected Image getFace(@NotNull final CfItem item) {
         return facesManager.getOriginalImageIcon(item.getFace().getFaceNum()).getImage();
+    }
+
+    /**
+     * {@inheritDoc}
+     */
+    @Override
+    public void setChanged() {
+        super.setChanged();
+        setItem(inventoryView == null ? null : inventoryView.getItem(index));
     }
 
 }

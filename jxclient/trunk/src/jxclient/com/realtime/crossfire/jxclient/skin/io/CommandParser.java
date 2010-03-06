@@ -55,7 +55,7 @@ import com.realtime.crossfire.jxclient.gui.list.GUIList;
 import com.realtime.crossfire.jxclient.gui.scrollable.GUIScrollable;
 import com.realtime.crossfire.jxclient.gui.textinput.GUIText;
 import com.realtime.crossfire.jxclient.guistate.GuiStateManager;
-import com.realtime.crossfire.jxclient.items.ItemsManager;
+import com.realtime.crossfire.jxclient.items.FloorView;
 import com.realtime.crossfire.jxclient.queue.CommandQueue;
 import com.realtime.crossfire.jxclient.server.crossfire.CrossfireServerConnection;
 import com.realtime.crossfire.jxclient.skin.skin.Dialogs;
@@ -81,10 +81,10 @@ public class CommandParser {
     private final Dialogs dialogs;
 
     /**
-     * The {@link ItemsManager} instance to use.
+     * The {@link FloorView} to use.
      */
     @NotNull
-    private final ItemsManager itemsManager;
+    private final FloorView floorView;
 
     /**
      * The {@link ExpressionParser} instance to use.
@@ -101,13 +101,13 @@ public class CommandParser {
     /**
      * Creates a new instance.
      * @param dialogs the dialogs instance to use
-     * @param itemsManager the items manager instance to use
+     * @param floorView the floor view to use
      * @param expressionParser the expression parser instance to use
      * @param definedGUIElements the defined GUI elements
      */
-    public CommandParser(@NotNull final Dialogs dialogs, @NotNull final ItemsManager itemsManager, @NotNull final ExpressionParser expressionParser, @NotNull final JXCSkinCache<GUIElement> definedGUIElements) {
+    public CommandParser(@NotNull final Dialogs dialogs, @NotNull final FloorView floorView, @NotNull final ExpressionParser expressionParser, @NotNull final JXCSkinCache<GUIElement> definedGUIElements) {
         this.dialogs = dialogs;
-        this.itemsManager = itemsManager;
+        this.floorView = floorView;
         this.expressionParser = expressionParser;
         this.definedGUIElements = definedGUIElements;
     }
@@ -235,7 +235,7 @@ public class CommandParser {
                 throw new IOException("'"+element+"' must be an item list");
             }
 
-            return new ExecSelectionCommand((GUIItemList)element, commandType, crossfireServerConnection, itemsManager.getCurrentFloorManager(), commandQueue);
+            return new ExecSelectionCommand((GUIItemList)element, commandType, crossfireServerConnection, floorView, commandQueue);
         } else if (command.equals("MOVE_SELECTION")) {
             if (args.length != argc+2) {
                 throw new IOException("syntax error");

@@ -78,9 +78,9 @@ import com.realtime.crossfire.jxclient.gui.textinput.GUIQueryText;
 import com.realtime.crossfire.jxclient.gui.textinput.GUIText;
 import com.realtime.crossfire.jxclient.gui.textinput.GUITextField;
 import com.realtime.crossfire.jxclient.guistate.GuiStateManager;
-import com.realtime.crossfire.jxclient.items.AbstractManager;
+import com.realtime.crossfire.jxclient.items.FloorView;
+import com.realtime.crossfire.jxclient.items.InventoryView;
 import com.realtime.crossfire.jxclient.items.ItemSet;
-import com.realtime.crossfire.jxclient.items.ItemsManager;
 import com.realtime.crossfire.jxclient.mapupdater.CfMapUpdater;
 import com.realtime.crossfire.jxclient.metaserver.MetaserverModel;
 import com.realtime.crossfire.jxclient.queue.CommandQueue;
@@ -151,28 +151,22 @@ public class JXCSkinLoader {
     private static final String PREV_GROUP_FACE = "resource/prev_group.png";
 
     /**
-     * The {@link ItemsManager} instance to use.
-     */
-    @NotNull
-    private final ItemsManager itemsManager;
-
-    /**
      * The {@link ItemSet} instance to use.
      */
     @NotNull
     private final ItemSet itemSet;
 
     /**
-     * The inventory manager instance to use.
+     * The {@link InventoryView} to use.
      */
     @NotNull
-    private final AbstractManager inventoryManager;
+    private final InventoryView inventoryView;
 
     /**
-     * The floor manager instance to use.
+     * The {@link FloorView} to use.
      */
     @NotNull
-    private final AbstractManager floorManager;
+    private final FloorView floorView;
 
     /**
      * The {@link SpellsManager} instance to use.
@@ -303,10 +297,9 @@ public class JXCSkinLoader {
 
     /**
      * Creates a new instance.
-     * @param itemsManager the items manager instance to use
      * @param itemSet the item set instance to use
-     * @param inventoryManager the inventory manager instance to use
-     * @param floorManager the floor manager instance to use
+     * @param inventoryView the inventory view to use
+     * @param floorView the floor view to use
      * @param spellsManager the spells manager instance to use
      * @param facesManager the faces manager instance to use
      * @param stats the stats instance to use
@@ -316,11 +309,10 @@ public class JXCSkinLoader {
      * @param experienceTable the experience table to use
      * @param skillSet the skill set to use
      */
-    public JXCSkinLoader(@NotNull final ItemsManager itemsManager, @NotNull final ItemSet itemSet, @NotNull final AbstractManager inventoryManager, @NotNull final AbstractManager floorManager, @NotNull final SpellsManager spellsManager, @NotNull final FacesManager facesManager, @NotNull final Stats stats, @NotNull final CfMapUpdater mapUpdater, @NotNull final KeyBindings defaultKeyBindings, @NotNull final OptionManager optionManager, @NotNull final ExperienceTable experienceTable, @NotNull final SkillSet skillSet) {
-        this.itemsManager = itemsManager;
+    public JXCSkinLoader(@NotNull final ItemSet itemSet, @NotNull final InventoryView inventoryView, @NotNull final FloorView floorView, @NotNull final SpellsManager spellsManager, @NotNull final FacesManager facesManager, @NotNull final Stats stats, @NotNull final CfMapUpdater mapUpdater, @NotNull final KeyBindings defaultKeyBindings, @NotNull final OptionManager optionManager, @NotNull final ExperienceTable experienceTable, @NotNull final SkillSet skillSet) {
         this.itemSet = itemSet;
-        this.inventoryManager = inventoryManager;
-        this.floorManager = floorManager;
+        this.inventoryView = inventoryView;
+        this.floorView = floorView;
         this.spellsManager = spellsManager;
         this.facesManager = facesManager;
         this.stats = stats;
@@ -404,7 +396,7 @@ public class JXCSkinLoader {
         expressionParser = new ExpressionParser(selectedResolution);
         final Dialogs dialogs = new Dialogs(guiFactory);
         gaugeUpdaterParser = new GaugeUpdaterParser(stats, itemSet, skillSet);
-        commandParser = new CommandParser(dialogs, itemsManager, expressionParser, definedGUIElements);
+        commandParser = new CommandParser(dialogs, floorView, expressionParser, definedGUIElements);
         skin = new DefaultJXCSkin(defaultKeyBindings, optionManager, selectedResolution, dialogs);
         @Nullable JXCSkin skinToDetach = skin;
         try {
@@ -1233,8 +1225,8 @@ public class JXCSkinLoader {
 
         assert defaultItemPainter != null;
         final ItemPainter itemPainter = defaultItemPainter.newItemPainter(cellHeight, cellHeight);
-        final GUIItemInventoryFactory itemInventoryFactory = new GUIItemInventoryFactory(tooltipManager, elementListener, commandQueue, name, itemPainter, server, facesManager, itemsManager, itemSet, inventoryManager);
-        final GUIElement element = new GUIItemInventoryList(tooltipManager, elementListener, commandQueue, name, x, y, w, h, cellHeight, server, itemsManager, itemSet, inventoryManager, selectedItem, itemInventoryFactory);
+        final GUIItemInventoryFactory itemInventoryFactory = new GUIItemInventoryFactory(tooltipManager, elementListener, commandQueue, name, itemPainter, server, facesManager, floorView, inventoryView);
+        final GUIElement element = new GUIItemInventoryList(tooltipManager, elementListener, commandQueue, name, x, y, w, h, cellHeight, server, floorView, inventoryView, selectedItem, itemInventoryFactory);
         insertGuiElement(element);
     }
 
@@ -1275,7 +1267,7 @@ public class JXCSkinLoader {
             }
 
             final ItemPainter itemPainter = defaultItemPainter.newItemPainter(w, h);
-            element = new GUIItemFloor(tooltipManager, elementListener, commandQueue, name, x, y, w, h, itemPainter, index, server, itemsManager, itemSet, floorManager, facesManager, nextGroupFace, prevGroupFace);
+            element = new GUIItemFloor(tooltipManager, elementListener, commandQueue, name, x, y, w, h, itemPainter, index, server, floorView, itemSet, facesManager, nextGroupFace, prevGroupFace);
         } else if (type.equals("inventory")) {
             if (args.length != 8) {
                 throw new IOException("syntax error");
@@ -1286,7 +1278,7 @@ public class JXCSkinLoader {
             }
 
             final ItemPainter itemPainter = defaultItemPainter.newItemPainter(w, h);
-            element = new GUIItemInventory(tooltipManager, elementListener, commandQueue, name, x, y, w, h, itemPainter, index, server, facesManager, itemsManager, itemSet, inventoryManager);
+            element = new GUIItemInventory(tooltipManager, elementListener, commandQueue, name, x, y, w, h, itemPainter, index, server, facesManager, floorView, inventoryView);
         } else if (type.equals("shortcut")) {
             if (args.length != 11) {
                 throw new IOException("syntax error");

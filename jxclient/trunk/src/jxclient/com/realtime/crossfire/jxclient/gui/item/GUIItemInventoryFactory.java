@@ -25,9 +25,8 @@ import com.realtime.crossfire.jxclient.faces.FacesManager;
 import com.realtime.crossfire.jxclient.gui.gui.GUIElement;
 import com.realtime.crossfire.jxclient.gui.gui.GUIElementListener;
 import com.realtime.crossfire.jxclient.gui.gui.TooltipManager;
-import com.realtime.crossfire.jxclient.items.AbstractManager;
-import com.realtime.crossfire.jxclient.items.ItemSet;
-import com.realtime.crossfire.jxclient.items.ItemsManager;
+import com.realtime.crossfire.jxclient.items.FloorView;
+import com.realtime.crossfire.jxclient.items.ItemView;
 import com.realtime.crossfire.jxclient.queue.CommandQueue;
 import com.realtime.crossfire.jxclient.server.crossfire.CrossfireServerConnection;
 import org.jetbrains.annotations.NotNull;
@@ -66,25 +65,22 @@ public class GUIItemInventoryFactory implements GUIItemItemFactory {
     private final FacesManager facesManager;
 
     @NotNull
-    private final ItemsManager itemsManager;
-
-    @NotNull
-    private final ItemSet itemSet;
+    private final FloorView floorView;
 
     /**
-     * The inventory manager to use.
+     * The inventory view to use.
      */
     @NotNull
-    private final AbstractManager inventoryManager;
+    private final ItemView inventoryView;
 
     /**
      * Creates a new instance.
      * @param tooltipManager the tooltip manager to update
      * @param elementListener the element listener to notify
-     * @param itemSet the item set to use
-     * @param inventoryManager the inventory manager to use
+     * @param floorView the floor view to use
+     * @param inventoryView the inventory view to use
      */
-    public GUIItemInventoryFactory(@NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final CommandQueue commandQueue, @NotNull final String name, @NotNull final ItemPainter itemPainter, @NotNull final CrossfireServerConnection crossfireServerConnection, @NotNull final FacesManager facesManager, @NotNull final ItemsManager itemsManager, @NotNull final ItemSet itemSet, @NotNull final AbstractManager inventoryManager) {
+    public GUIItemInventoryFactory(@NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final CommandQueue commandQueue, @NotNull final String name, @NotNull final ItemPainter itemPainter, @NotNull final CrossfireServerConnection crossfireServerConnection, @NotNull final FacesManager facesManager, @NotNull final FloorView floorView, @NotNull final ItemView inventoryView) {
         this.tooltipManager = tooltipManager;
         this.elementListener = elementListener;
         this.commandQueue = commandQueue;
@@ -92,9 +88,8 @@ public class GUIItemInventoryFactory implements GUIItemItemFactory {
         this.itemPainter = itemPainter;
         this.crossfireServerConnection = crossfireServerConnection;
         this.facesManager = facesManager;
-        this.itemsManager = itemsManager;
-        this.itemSet = itemSet;
-        this.inventoryManager = inventoryManager;
+        this.floorView = floorView;
+        this.inventoryView = inventoryView;
     }
 
     /**
@@ -103,7 +98,7 @@ public class GUIItemInventoryFactory implements GUIItemItemFactory {
     @Override
     @NotNull
     public GUIElement newItemInventory(final int index) {
-        return new GUIItemInventory(tooltipManager, elementListener, commandQueue, name+index, 0, 0, 1, 1, itemPainter, index, crossfireServerConnection, facesManager, itemsManager, itemSet, inventoryManager);
+        return new GUIItemInventory(tooltipManager, elementListener, commandQueue, name+index, 0, 0, 1, 1, itemPainter, index, crossfireServerConnection, facesManager, floorView, inventoryView);
     }
 
     /**
@@ -112,7 +107,7 @@ public class GUIItemInventoryFactory implements GUIItemItemFactory {
     @Override
     @NotNull
     public GUIItemItem newTemplateItemInventory(final int cellHeight) {
-        return new GUIItemInventory(tooltipManager, elementListener, commandQueue, name+"_template", 0, 0, cellHeight, cellHeight, itemPainter, -1, crossfireServerConnection, facesManager, itemsManager, itemSet, inventoryManager);
+        return new GUIItemInventory(tooltipManager, elementListener, commandQueue, name+"_template", 0, 0, cellHeight, cellHeight, itemPainter, -1, crossfireServerConnection, facesManager, floorView, inventoryView);
     }
 
 }

@@ -24,10 +24,9 @@ package com.realtime.crossfire.jxclient.sound;
 import com.realtime.crossfire.jxclient.gui.gui.JXCWindowRenderer;
 import com.realtime.crossfire.jxclient.gui.gui.RendererGuiState;
 import com.realtime.crossfire.jxclient.gui.gui.RendererGuiStateListener;
-import com.realtime.crossfire.jxclient.items.CfPlayer;
-import com.realtime.crossfire.jxclient.items.ItemSet;
-import com.realtime.crossfire.jxclient.items.PlayerListener;
+import com.realtime.crossfire.jxclient.server.crossfire.CrossfireServerConnection;
 import com.realtime.crossfire.jxclient.server.crossfire.CrossfireStatsListener;
+import com.realtime.crossfire.jxclient.server.crossfire.CrossfireUpdateItemListener;
 import com.realtime.crossfire.jxclient.stats.Stats;
 import com.realtime.crossfire.jxclient.stats.StatsListener;
 import org.jetbrains.annotations.NotNull;
@@ -139,44 +138,68 @@ public class StatsWatcher {
     };
 
     /**
-     * The player listener.
+     * The {@link CrossfireUpdateItemListener} to receive item updates.
      */
     @NotNull
-    private final PlayerListener playerListener = new PlayerListener() {
-        /** {@inheritDoc} */
+    private final CrossfireUpdateItemListener crossfireUpdateItemListener = new CrossfireUpdateItemListener() {
+
+        /**
+         * {@inheritDoc}
+         */
         @Override
-        public void playerReceived(@NotNull final CfPlayer player) {
+        public void delinvReceived(final int tag) {
+            // ignore
+        }
+
+        /**
+         * {@inheritDoc}
+         */
+        @Override
+        public void delitemReceived(@NotNull final int[] tags) {
+            // ignore
+        }
+
+        /**
+         * {@inheritDoc}
+         */
+        @Override
+        public void additemReceived(final int location, final int tag, final int flags, final int weight, final int faceNum, @NotNull final String name, @NotNull final String namePl, final int anim, final int animSpeed, final int nrof, final int type) {
+            // ignore
+        }
+
+        /**
+         * {@inheritDoc}
+         */
+        @Override
+        public void playerReceived(final int tag, final int weight, final int faceNum, @NotNull final String name) {
             ignoreLevelChange = System.currentTimeMillis()+DELAY;
         }
 
-        /** {@inheritDoc} */
+        /**
+         * {@inheritDoc}
+         */
         @Override
-        public void playerAdded(@NotNull final CfPlayer player) {
+        public void upditemReceived(final int flags, final int tag, final int valLocation, final int valFlags, final int valWeight, final int valFaceNum, @NotNull final String valName, @NotNull final String valNamePl, final int valAnim, final int valAnimSpeed, final int valNrof) {
             // ignore
         }
 
-        /** {@inheritDoc} */
-        @Override
-        public void playerRemoved(@NotNull final CfPlayer player) {
-            // ignore
-        }
     };
 
     /**
      * Creates a new instance.
      * @param stats The stats instance to watch.
      * @param windowRenderer The window renderer instance.
-     * @param itemSet the item set to watch
+     * @param server the crossfire server connection to watch
      * @param soundManager the sound manager instance to watch
      */
-    public StatsWatcher(@NotNull final Stats stats, @NotNull final JXCWindowRenderer windowRenderer, @NotNull final ItemSet itemSet, @NotNull final SoundManager soundManager) {
+    public StatsWatcher(@NotNull final Stats stats, @NotNull final JXCWindowRenderer windowRenderer, @NotNull final CrossfireServerConnection server, @NotNull final SoundManager soundManager) {
         this.soundManager = soundManager;
         poisoned = stats.getStat(CrossfireStatsListener.C_STAT_POISONED) != 0;
         level = stats.getStat(CrossfireStatsListener.CS_STAT_LEVEL);
         stats.addCrossfireStatsListener(statsListener);
         windowRenderer.addGuiStateListener(rendererGuiStateListener);
         rendererGuiStateListener.guiStateChanged(windowRenderer.getGuiState());
-        itemSet.addPlayerListener(playerListener);
+        server.addCrossfireUpdateItemListener(crossfireUpdateItemListener);
     }
 
     /**

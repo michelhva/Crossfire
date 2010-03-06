@@ -26,9 +26,9 @@ import com.realtime.crossfire.jxclient.faces.FacesManager;
 import com.realtime.crossfire.jxclient.faces.FacesQueue;
 import com.realtime.crossfire.jxclient.faces.FileCache;
 import com.realtime.crossfire.jxclient.guistate.GuiStateManager;
-import com.realtime.crossfire.jxclient.items.AbstractManager;
-import com.realtime.crossfire.jxclient.items.FloorManager;
-import com.realtime.crossfire.jxclient.items.InventoryManager;
+import com.realtime.crossfire.jxclient.items.FloorView;
+import com.realtime.crossfire.jxclient.items.InventoryComparator;
+import com.realtime.crossfire.jxclient.items.InventoryView;
 import com.realtime.crossfire.jxclient.items.ItemSet;
 import com.realtime.crossfire.jxclient.items.ItemsManager;
 import com.realtime.crossfire.jxclient.metaserver.Metaserver;
@@ -116,10 +116,10 @@ public class JXClient {
                             final FacesQueue facesQueue = new FacesQueue(server, new FileCache(Filenames.getOriginalImageCacheDir()), new FileCache(Filenames.getScaledImageCacheDir()), new FileCache(Filenames.getMagicMapImageCacheDir()));
                             final FacesManager facesManager = new FacesManager(faceCache, facesQueue);
                             final ItemSet itemSet = new ItemSet();
-                            final InventoryManager inventoryManager = new InventoryManager(itemSet);
-                            final AbstractManager floorManager = new FloorManager(itemSet);
-                            final ItemsManager itemsManager = new ItemsManager(server, facesManager, stats, skillSet, inventoryManager, floorManager, guiStateManager, itemSet);
-                            final JXCWindow window = new JXCWindow(terminateSync, server, semaphoreRedraw, options.isDebugGui(), debugKeyboardOutputStreamWriter, debugScreenOutputStreamWriter, options.getPrefs(), optionManager, metaserverModel, options.getResolution(), guiStateManager, experienceTable, skillSet, stats, facesManager, itemsManager, itemSet, inventoryManager, floorManager);
+                            final InventoryView inventoryView = new InventoryView(itemSet, new InventoryComparator());
+                            final FloorView floorView = new FloorView(itemSet);
+                            new ItemsManager(server, facesManager, stats, skillSet, guiStateManager, itemSet);
+                            final JXCWindow window = new JXCWindow(terminateSync, server, semaphoreRedraw, options.isDebugGui(), debugKeyboardOutputStreamWriter, debugScreenOutputStreamWriter, options.getPrefs(), optionManager, metaserverModel, options.getResolution(), guiStateManager, experienceTable, skillSet, stats, facesManager, itemSet, inventoryView, floorView);
                             new Metaserver(Filenames.getMetaserverCacheFile(), metaserverModel, guiStateManager);
                             final SoundManager soundManager = new SoundManager(guiStateManager);
                             try {
@@ -135,7 +135,7 @@ public class JXClient {
                                     public void run() {
                                         new MusicWatcher(server, soundManager);
                                         new SoundWatcher(server, soundManager);
-                                        new StatsWatcher(stats, window.getWindowRenderer(), itemSet, soundManager);
+                                        new StatsWatcher(stats, window.getWindowRenderer(), server, soundManager);
                                         window.init(options.getSkin(), options.isFullScreen(), options.getServer());
                                     }
                                 });
