@@ -25,7 +25,6 @@ import com.realtime.crossfire.jxclient.util.DoubleMapping;
 import java.util.ArrayList;
 import java.util.Comparator;
 import java.util.List;
-import javax.swing.event.EventListenerList;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 
@@ -65,12 +64,6 @@ public class InventoryView extends AbstractItemView {
      */
     @NotNull
     private final DoubleMapping mapping = new DoubleMapping();
-
-    /**
-     * The registered {@link LocationsListener}s to be notified about changes.
-     */
-    @NotNull
-    private final EventListenerList locationsListeners = new EventListenerList();
 
     /**
      * The {@link ItemSetListener} attached to {@link #itemSet} to track the
@@ -192,24 +185,6 @@ public class InventoryView extends AbstractItemView {
     }
 
     /**
-     * Adds a {@link LocationsListener} to be notified when any displayed item
-     * has changed.
-     * @param locationsListener the locations listener to add
-     */
-    public void addLocationsListener(@NotNull final LocationsListener locationsListener) {
-        locationsListeners.add(LocationsListener.class, locationsListener);
-    }
-
-    /**
-     * Removes a {@link LocationsListener} to be notified when any displayed
-     * item has changed.
-     * @param locationsListener the locations listener to remove
-     */
-    public void removeLocationsListener(@NotNull final LocationsListener locationsListener) {
-        locationsListeners.remove(LocationsListener.class, locationsListener);
-    }
-
-    /**
      * Updates the current player object.
      * @param currentPlayerTag the tag of the player object or <code>-1</code>
      */
@@ -264,16 +239,6 @@ public class InventoryView extends AbstractItemView {
             return items.get(index);
         } catch (final IndexOutOfBoundsException ex) {
             return null;
-        }
-    }
-
-    /**
-     * {@inheritDoc}
-     */
-    @Override
-    protected void deliverEvents(@NotNull final Integer[] modifiedSlots) {
-        for (final LocationsListener locationsListener : locationsListeners.getListeners(LocationsListener.class)) {
-            locationsListener.locationsModified(modifiedSlots);
         }
     }
 
