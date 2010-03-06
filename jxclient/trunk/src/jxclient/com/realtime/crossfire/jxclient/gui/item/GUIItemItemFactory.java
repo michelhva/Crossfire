@@ -36,7 +36,7 @@ public interface GUIItemItemFactory {
      * @return the new instance
      */
     @NotNull
-    GUIElement newItemInventory(int index);
+    GUIElement newItem(int index);
 
     /**
      * Creates a new {@link GUIItemInventory} instance.
@@ -44,6 +44,6 @@ public interface GUIItemItemFactory {
      * @return the new instance
      */
     @NotNull
-    GUIItemItem newTemplateItemInventory(int cellHeight);
+    GUIItemItem newTemplateItem(int cellHeight);
 
 }
