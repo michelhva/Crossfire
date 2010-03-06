@@ -448,7 +448,11 @@ public class ItemSet {
     @Nullable
     public CfItem getInventoryItem(final int tag, final int index) {
         final List<CfItem> inventoryItems = getInventoryByTag(tag);
-        return 0 <= index && index < inventoryItems.size() ? inventoryItems.get(index) : null;
+        try {
+            return 0 <= index && index < inventoryItems.size() ? inventoryItems.get(index) : null;
+        } catch (final ArrayIndexOutOfBoundsException ex) {
+            return null;
+        }
     }
 
 }
