@@ -2,8 +2,6 @@
 dialog border -5 HEIGHT-37 WIDTH+10 42 true
 dialog_hide START META LOGIN
 
-set_num_look_objects 52
-
 floor_list floor 5 5 WIDTH 32 32 null
 
 set_invisible border_nw
