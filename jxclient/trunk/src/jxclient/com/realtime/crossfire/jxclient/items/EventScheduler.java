@@ -111,7 +111,7 @@ public class EventScheduler {
                         } catch (final InvocationTargetException ex) {
                             throw new AssertionError(ex);
                         }
-                        nextAction = System.currentTimeMillis();
+                        nextAction = 0;
                         nextActionNotBefore = System.currentTimeMillis()+afterEventDelay;
                     }
                 } catch (final InterruptedException ex) {
