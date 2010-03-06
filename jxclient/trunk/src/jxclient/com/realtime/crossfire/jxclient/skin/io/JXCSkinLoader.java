@@ -1241,6 +1241,10 @@ public class JXCSkinLoader {
         }
         final GUIElement element = new GUIItemList(tooltipManager, elementListener, commandQueue, name, x, y, w, h, cellHeight, server, inventoryList ? inventoryView : floorView, selectedItem, itemFactory);
         insertGuiElement(element);
+
+        if (!inventoryList) {
+            skin.setNumLookObjects(Math.max(h/cellHeight, 1)*Math.max(w/cellHeight, 1));
+        }
     }
 
     /**
