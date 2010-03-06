@@ -66,7 +66,7 @@ import com.realtime.crossfire.jxclient.gui.label.GUIMultiLineLabel;
 import com.realtime.crossfire.jxclient.gui.label.GUIOneLineLabel;
 import com.realtime.crossfire.jxclient.gui.label.GUISpellLabel;
 import com.realtime.crossfire.jxclient.gui.label.Type;
-import com.realtime.crossfire.jxclient.gui.list.GUIItemInventoryList;
+import com.realtime.crossfire.jxclient.gui.list.GUIItemList;
 import com.realtime.crossfire.jxclient.gui.list.GUIMetaElementList;
 import com.realtime.crossfire.jxclient.gui.log.Fonts;
 import com.realtime.crossfire.jxclient.gui.log.GUILabelLog;
@@ -1226,7 +1226,7 @@ public class JXCSkinLoader {
         assert defaultItemPainter != null;
         final ItemPainter itemPainter = defaultItemPainter.newItemPainter(cellHeight, cellHeight);
         final GUIItemInventoryFactory itemInventoryFactory = new GUIItemInventoryFactory(tooltipManager, elementListener, commandQueue, name, itemPainter, server, facesManager, floorView, inventoryView);
-        final GUIElement element = new GUIItemInventoryList(tooltipManager, elementListener, commandQueue, name, x, y, w, h, cellHeight, server, floorView, inventoryView, selectedItem, itemInventoryFactory);
+        final GUIElement element = new GUIItemList(tooltipManager, elementListener, commandQueue, name, x, y, w, h, cellHeight, server, floorView, inventoryView, selectedItem, itemInventoryFactory);
         insertGuiElement(element);
     }
 
