@@ -187,6 +187,14 @@ public class TestCrossfireServerConnection implements CrossfireServerConnection 
      * {@inheritDoc}
      */
     @Override
+    public void removeCrossfireUpdateItemListener(@NotNull final CrossfireUpdateItemListener crossfireUpdateItemListener) {
+        Assert.fail();
+    }
+
+    /**
+     * {@inheritDoc}
+     */
+    @Override
     public void addCrossfireUpdateMapListener(@NotNull final CrossfireUpdateMapListener listener) {
         Assert.fail();
     }

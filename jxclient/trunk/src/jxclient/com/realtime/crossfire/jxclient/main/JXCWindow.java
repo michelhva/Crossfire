@@ -33,17 +33,18 @@ import com.realtime.crossfire.jxclient.gui.keybindings.KeyBindings;
 import com.realtime.crossfire.jxclient.guistate.GuiState;
 import com.realtime.crossfire.jxclient.guistate.GuiStateListener;
 import com.realtime.crossfire.jxclient.guistate.GuiStateManager;
-import com.realtime.crossfire.jxclient.items.AbstractManager;
-import com.realtime.crossfire.jxclient.items.CfPlayer;
+import com.realtime.crossfire.jxclient.items.CfItem;
+import com.realtime.crossfire.jxclient.items.FloorView;
+import com.realtime.crossfire.jxclient.items.InventoryView;
 import com.realtime.crossfire.jxclient.items.ItemSet;
-import com.realtime.crossfire.jxclient.items.ItemsManager;
-import com.realtime.crossfire.jxclient.items.PlayerListener;
+import com.realtime.crossfire.jxclient.items.ItemSetListener;
 import com.realtime.crossfire.jxclient.mapupdater.CfMapUpdater;
 import com.realtime.crossfire.jxclient.metaserver.MetaserverModel;
 import com.realtime.crossfire.jxclient.queue.CommandQueue;
 import com.realtime.crossfire.jxclient.scripts.ScriptManager;
 import com.realtime.crossfire.jxclient.server.crossfire.CrossfireQueryListener;
 import com.realtime.crossfire.jxclient.server.crossfire.CrossfireServerConnection;
+import com.realtime.crossfire.jxclient.server.crossfire.CrossfireUpdateItemListener;
 import com.realtime.crossfire.jxclient.server.crossfire.SentReplyListener;
 import com.realtime.crossfire.jxclient.server.socket.ClientSocketListener;
 import com.realtime.crossfire.jxclient.server.socket.ClientSocketState;
@@ -125,28 +126,22 @@ public class JXCWindow extends JFrame {
     private final FacesManager facesManager;
 
     /**
-     * The {@link ItemsManager} instance.
-     */
-    @NotNull
-    private final ItemsManager itemsManager;
-
-    /**
      * The {@link ItemSet} instance.
      */
     @NotNull
     private final ItemSet itemSet;
 
     /**
-     * The inventory manager instance.
+     * The {@link InventoryView} instance.
      */
     @NotNull
-    private final AbstractManager inventoryManager;
+    private final InventoryView inventoryView;
 
     /**
-     * The floor manager instance.
+     * The {@link FloorView} instance.
      */
     @NotNull
-    private final AbstractManager floorManager;
+    private final FloorView floorView;
 
     /**
      * The {@link SpellsManager} instance.
@@ -286,29 +281,109 @@ public class JXCWindow extends JFrame {
     };
 
     /**
-     * The listener to detect a changed player name.
+     * The {@link CrossfireUpdateItemListener} to receive item updates.
      */
     @NotNull
-    private final PlayerListener playerListener = new PlayerListener() {
-        /** {@inheritDoc} */
+    private final CrossfireUpdateItemListener crossfireUpdateItemListener = new CrossfireUpdateItemListener() {
+
+        /**
+         * {@inheritDoc}
+         */
         @Override
-        public void playerReceived(@NotNull final CfPlayer player) {
+        public void delinvReceived(final int tag) {
+            // ignore
+        }
+
+        /**
+         * {@inheritDoc}
+         */
+        @Override
+        public void delitemReceived(@NotNull final int[] tags) {
+            // ignore
+        }
+
+        /**
+         * {@inheritDoc}
+         */
+        @Override
+        public void additemReceived(final int location, final int tag, final int flags, final int weight, final int faceNum, @NotNull final String name, @NotNull final String namePl, final int anim, final int animSpeed, final int nrof, final int type) {
+            // ignore
+        }
+
+        /**
+         * {@inheritDoc}
+         */
+        @Override
+        public void playerReceived(final int tag, final int weight, final int faceNum, @NotNull final String name) {
             guiManager.playerReceived();
             commandQueue.sendNcom(true, 1, "output-count 1"); // to make message merging work reliably
             characterPickup.update();                         // reset pickup mode
         }
 
-        /** {@inheritDoc} */
+        /**
+         * {@inheritDoc}
+         */
         @Override
-        public void playerAdded(@NotNull final CfPlayer player) {
-            connection.setCharacter(player.getName());
+        public void upditemReceived(final int flags, final int tag, final int valLocation, final int valFlags, final int valWeight, final int valFaceNum, @NotNull final String valName, @NotNull final String valNamePl, final int valAnim, final int valAnimSpeed, final int valNrof) {
+            // ignore
         }
 
-        /** {@inheritDoc} */
+    };
+
+    /**
+     * The listener to detect a changed player name.
+     */
+    @NotNull
+    private final ItemSetListener itemSetListener = new ItemSetListener() {
+
+        /**
+         * {@inheritDoc}
+         */
         @Override
-        public void playerRemoved(@NotNull final CfPlayer player) {
-            connection.setCharacter(null);
+        public void itemAdded(@NotNull final CfItem item) {
+            // ignore
         }
+
+        /**
+         * {@inheritDoc}
+         */
+        @Override
+        public void itemMoved(@NotNull final CfItem item) {
+            // ignore
+        }
+
+        /**
+         * {@inheritDoc}
+         */
+        @Override
+        public void itemChanged(@NotNull final CfItem item) {
+            // ignore
+        }
+
+        /**
+         * {@inheritDoc}
+         */
+        @Override
+        public void itemRemoved(@NotNull final CfItem item) {
+            // ignore
+        }
+
+        /**
+         * {@inheritDoc}
+         */
+        @Override
+        public void playerChanged(@Nullable final CfItem player) {
+            connection.setCharacter(player == null ? null : player.getName());
+        }
+
+        /**
+         * {@inheritDoc}
+         */
+        @Override
+        public void openContainerChanged(final int tag) {
+            // ignore
+        }
+
     };
 
     /**
@@ -476,8 +551,9 @@ public class JXCWindow extends JFrame {
         /** {@inheritDoc} */
         @Override
         public void start() {
-            itemSet.removePlayerListener(playerListener);
+            itemSet.removeItemSetListener(itemSetListener);
             server.removeCrossfireQueryListener(crossfireQueryListener);
+            server.removeCrossfireUpdateItemListener(crossfireUpdateItemListener);
             if (DISABLE_START_GUI) {
                 guiManager.terminate();
             }
@@ -486,8 +562,9 @@ public class JXCWindow extends JFrame {
         /** {@inheritDoc} */
         @Override
         public void metaserver() {
-            itemSet.removePlayerListener(playerListener);
+            itemSet.removeItemSetListener(itemSetListener);
             server.removeCrossfireQueryListener(crossfireQueryListener);
+            server.removeCrossfireUpdateItemListener(crossfireUpdateItemListener);
         }
 
         /** {@inheritDoc} */
@@ -500,8 +577,9 @@ public class JXCWindow extends JFrame {
         @Override
         public void connecting(@NotNull final String serverInfo) {
             facesManager.reset();
-            itemSet.addPlayerListener(playerListener);
+            itemSet.addItemSetListener(itemSetListener);
             server.addCrossfireQueryListener(crossfireQueryListener);
+            server.addCrossfireUpdateItemListener(crossfireUpdateItemListener);
         }
 
         /** {@inheritDoc} */
@@ -557,12 +635,11 @@ public class JXCWindow extends JFrame {
      * @param skillSet the skill set to use
      * @param stats the stats to use
      * @param facesManager the faces manager to use
-     * @param itemsManager the items manager to use
      * @param itemSet the item set to use
-     * @param inventoryManager the inventory manager to use
-     * @param floorManager the floor manager to use
+     * @param inventoryView the inventory view to use
+     * @param floorView the floor view to use
      */
-    public JXCWindow(@NotNull final Object terminateSync, @NotNull final CrossfireServerConnection server, @NotNull final Object semaphoreRedraw, final boolean debugGui, @Nullable final Writer debugKeyboard, @Nullable final Writer debugScreen, @NotNull final Settings settings, @NotNull final OptionManager optionManager, @NotNull final MetaserverModel metaserverModel, @NotNull final Resolution resolution, @NotNull final GuiStateManager guiStateManager, @NotNull final ExperienceTable experienceTable, @NotNull final SkillSet skillSet, @NotNull final Stats stats, @NotNull final FacesManager facesManager, @NotNull final ItemsManager itemsManager, @NotNull final ItemSet itemSet, @NotNull final AbstractManager inventoryManager, @NotNull final AbstractManager floorManager) {
+    public JXCWindow(@NotNull final Object terminateSync, @NotNull final CrossfireServerConnection server, @NotNull final Object semaphoreRedraw, final boolean debugGui, @Nullable final Writer debugKeyboard, @Nullable final Writer debugScreen, @NotNull final Settings settings, @NotNull final OptionManager optionManager, @NotNull final MetaserverModel metaserverModel, @NotNull final Resolution resolution, @NotNull final GuiStateManager guiStateManager, @NotNull final ExperienceTable experienceTable, @NotNull final SkillSet skillSet, @NotNull final Stats stats, @NotNull final FacesManager facesManager, @NotNull final ItemSet itemSet, @NotNull final InventoryView inventoryView, @NotNull final FloorView floorView) {
         super("");
         this.server = server;
         this.debugGui = debugGui;
@@ -574,10 +651,9 @@ public class JXCWindow extends JFrame {
         this.skillSet = skillSet;
         this.stats = stats;
         this.facesManager = facesManager;
-        this.itemsManager = itemsManager;
         this.itemSet = itemSet;
-        this.inventoryManager = inventoryManager;
-        this.floorManager = floorManager;
+        this.inventoryView = inventoryView;
+        this.floorView = floorView;
         macros = new Macros(server);
         mapUpdater = new CfMapUpdater(server, facesManager, guiStateManager);
         spellsManager = new SpellsManager(server, guiStateManager);
@@ -588,7 +664,7 @@ public class JXCWindow extends JFrame {
         mouseTracker = new MouseTracker(debugGui);
         windowRenderer = new JXCWindowRenderer(this, mouseTracker, semaphoreRedraw, server, debugScreen);
         mouseTracker.init(windowRenderer);
-        final ScriptManager scriptManager = new ScriptManager(commandQueue, server, stats, itemsManager, itemSet, spellsManager, mapUpdater, skillSet);
+        final ScriptManager scriptManager = new ScriptManager(commandQueue, server, stats, floorView, itemSet, spellsManager, mapUpdater, skillSet);
         guiManager = new GuiManager(guiStateManager, semaphoreDrawing, terminateSync, new TooltipManager(windowRenderer), settings, server, macros, windowRenderer, scriptManager, commandQueue, optionManager, debugGui ? mouseTracker : null);
         shortcutsManager = new ShortcutsManager(commandQueue, spellsManager);
         keyHandler = new KeyHandler(debugKeyboard, guiManager.getKeybindingsManager(), commandQueue, windowRenderer, keyHandlerListener);
@@ -685,7 +761,7 @@ public class JXCWindow extends JFrame {
             // fallback: built-in resource
             skinSource = new JXCSkinClassSource("com/realtime/crossfire/jxclient/skins/"+skinName);
         }
-        final JXCSkinLoader newSkin = new JXCSkinLoader(itemsManager, itemSet, inventoryManager, floorManager, spellsManager, facesManager, stats, mapUpdater, defaultKeyBindings, optionManager, experienceTable, skillSet);
+        final JXCSkinLoader newSkin = new JXCSkinLoader(itemSet, inventoryView, floorView, spellsManager, facesManager, stats, mapUpdater, defaultKeyBindings, optionManager, experienceTable, skillSet);
         final Commands commands = guiManager.getCommands();
         final GuiFactory guiFactory = new GuiFactory(debugGui ? mouseTracker : null, commands, guiManager.getCommandCallback(), macros);
         final CommandCallback commandCallback = guiManager.getCommandCallback();

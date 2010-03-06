@@ -22,20 +22,16 @@
 package com.realtime.crossfire.jxclient.items;
 
 import java.util.EventListener;
-import org.jetbrains.annotations.Nullable;
 
 /**
- * Interface for listeners for changes of item locations.
+ * Interface for listeners interested in changed items.
  * @author Andreas Kirschbaum
  */
 public interface LocationListener extends EventListener {
 
     /**
-     * Will be called when the attribute of a location has changed.
-     * @param index the location that has changed
-     * @param item the new item in the location; will be <code>null</code> if
-     * the location is empty
+     * Called whenever the tracked item has changed.
      */
-    void locationModified(int index, @Nullable CfItem item);
+    void locationChanged();
 
 }

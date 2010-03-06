@@ -182,6 +182,16 @@ public abstract class GUIList extends ActivatableGUIElement implements GUIScroll
     }
 
     /**
+     * Returns the {@link GUIElement} for a given index.
+     * @param index the index
+     * @return the gui element
+     */
+    @NotNull
+    public GUIElement getElement(final int index) {
+        return (GUIElement)model.get(index);
+    }
+
+    /**
      * Adds an {@link GUIElement} to the list.
      * @param element the element to add
      */

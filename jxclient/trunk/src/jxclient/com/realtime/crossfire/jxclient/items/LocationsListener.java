@@ -21,20 +21,19 @@
 
 package com.realtime.crossfire.jxclient.items;
 
-import java.util.Collection;
+import java.util.EventListener;
 import org.jetbrains.annotations.NotNull;
 
 /**
  * Interface for listeners interested in changed item locations.
  * @author Andreas Kirschbaum
  */
-public interface LocationsListener {
+public interface LocationsListener extends EventListener {
 
     /**
-     * Called whenever one or more lacations have been changed. The called
-     * function must not change the passed collection.
-     * @param index the changed locations
+     * Called whenever one or more locations have been changed.
+     * @param changedSlots the changed slots; must not be modified
      */
-    void locationsModified(@NotNull Collection<Integer> index);
+    void locationsModified(@NotNull Integer[] changedSlots);
 
 }

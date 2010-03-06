@@ -21,31 +21,38 @@
 
 package com.realtime.crossfire.jxclient.items;
 
-import java.util.EventListener;
+import java.util.Comparator;
 import org.jetbrains.annotations.NotNull;
 
 /**
- * Interface for listeners for changes of the current player object.
+ * A {@link Comparator} that compares {@link CfItem} instances in inventory
+ * view order.
  * @author Andreas Kirschbaum
  */
-public interface PlayerListener extends EventListener {
+public class InventoryComparator implements Comparator<CfItem> {
 
     /**
-     * A "player" command has been received.
-     * @param player The corresponding player object.
+     * {@inheritDoc}
      */
-    void playerReceived(@NotNull CfPlayer player);
-
-    /**
-     * A player object has been added.
-     * @param player The added player object.
-     */
-    void playerAdded(@NotNull CfPlayer player);
-
-    /**
-     * A player object has been removed.
-     * @param player The removed player object.
-     */
-    void playerRemoved(@NotNull CfPlayer player);
+    @Override
+    public int compare(@NotNull final CfItem o1, @NotNull final CfItem o2) {
+        if (o1.getType() < o2.getType()) {
+            return -1;
+        }
+        if (o1.getType() > o2.getType()) {
+            return +1;
+        }
+        final int cmp1 = o1.getName().compareTo(o2.getName());
+        if (cmp1 != 0) {
+            return cmp1;
+        }
+        if (o1.getTag() < o2.getTag()) {
+            return -1;
+        }
+        if (o1.getTag() > o2.getTag()) {
+            return +1;
+        }
+        return 0;
+    }
 
 }

@@ -25,18 +25,14 @@ import com.realtime.crossfire.jxclient.faces.FacesManager;
 import com.realtime.crossfire.jxclient.gui.gui.GUIElement;
 import com.realtime.crossfire.jxclient.gui.gui.GUIElementListener;
 import com.realtime.crossfire.jxclient.gui.gui.TooltipManager;
-import com.realtime.crossfire.jxclient.items.AbstractManager;
 import com.realtime.crossfire.jxclient.items.CfItem;
-import com.realtime.crossfire.jxclient.items.CurrentFloorListener;
 import com.realtime.crossfire.jxclient.items.ItemSet;
-import com.realtime.crossfire.jxclient.items.ItemsManager;
+import com.realtime.crossfire.jxclient.items.ItemView;
 import com.realtime.crossfire.jxclient.items.LocationListener;
 import com.realtime.crossfire.jxclient.queue.CommandQueue;
 import com.realtime.crossfire.jxclient.server.crossfire.CrossfireServerConnection;
 import java.awt.Image;
-import java.util.List;
 import org.jetbrains.annotations.NotNull;
-import org.jetbrains.annotations.Nullable;
 
 /**
  * A {@link GUIElement} representing an in-game object in the ground view.
@@ -62,22 +58,16 @@ public class GUIItemFloor extends GUIItemItem {
     private final CrossfireServerConnection crossfireServerConnection;
 
     /**
-     * The {@link ItemsManager} instance to watch.
+     * The floor view to watch.
      */
     @NotNull
-    private final ItemsManager itemsManager;
+    private final ItemView floorView;
 
     /**
-     * The {@link ItemSet} instance to watch.
+     * The {@link ItemSet} to use.
      */
     @NotNull
     private final ItemSet itemSet;
-
-    /**
-     * The {@link AbstractManager} instance to watch.
-     */
-    @NotNull
-    private final AbstractManager floorManager;
 
     /**
      * The {@link FacesManager} instance to use.
@@ -109,41 +99,20 @@ public class GUIItemFloor extends GUIItemItem {
     private int index = -1;
 
     /**
-     * Whether currently a container is shown: 0=ground view, else=container
-     * view.
-     */
-    private int containerTag;
-
-    /**
      * The {@link LocationListener} used to detect items added to or removed
      * from this floor tile.
      */
     @NotNull
-    private final LocationListener floorLocationListener = new LocationListener() {
-        /** {@inheritDoc} */
-        @Override
-        public void locationModified(final int index, @Nullable final CfItem item) {
-            if (containerTag == 0) {
-                assert index == GUIItemFloor.this.index;
-            } else {
-                assert GUIItemFloor.this.index >= 1;
-                assert index+1 == GUIItemFloor.this.index;
-            }
-            setItem(item);
-        }
-    };
+    private final LocationListener locationListener = new LocationListener() {
 
-    /**
-     * The {@link CurrentFloorListener} used to be informed when the current
-     * floor location changes.
-     */
-    @NotNull
-    private final CurrentFloorListener currentFloorListener = new CurrentFloorListener() {
-        /** {@inheritDoc} */
+        /**
+         * {@inheritDoc}
+         */
         @Override
-        public void currentFloorChanged(final int currentFloor) {
-            setIndex(index, currentFloor, true);
+        public void locationChanged() {
+            setIndex(index, true);
         }
+
     };
 
     /**
@@ -161,27 +130,23 @@ public class GUIItemFloor extends GUIItemItem {
      * @param itemPainter the item painter for painting the icon
      * @param index the initial scroll index
      * @param crossfireServerConnection the connection instance
-     * @param itemsManager the items manager instance to use
-     * @param itemSet the item set instance to use
-     * @param floorManager the floor manager instance to use
+     * @param floorView the floor view to use
+     * @param itemSet the item set to use
      * @param facesManager the faces manager instance to use
      * @param nextGroupFace the image for "prev group of items"
      * @param prevGroupFace the image for "next group of items"
      */
-    public GUIItemFloor(@NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final CommandQueue commandQueue, @NotNull final String name, final int x, final int y, final int w, final int h, @NotNull final ItemPainter itemPainter, final int index, @NotNull final CrossfireServerConnection crossfireServerConnection, @NotNull final ItemsManager itemsManager, @NotNull final ItemSet itemSet, @NotNull final AbstractManager floorManager, @NotNull final FacesManager facesManager, @NotNull final Image nextGroupFace, @NotNull final Image prevGroupFace) {
+    public GUIItemFloor(@NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final CommandQueue commandQueue, @NotNull final String name, final int x, final int y, final int w, final int h, @NotNull final ItemPainter itemPainter, final int index, @NotNull final CrossfireServerConnection crossfireServerConnection, @NotNull final ItemView floorView, @NotNull final ItemSet itemSet, @NotNull final FacesManager facesManager, @NotNull final Image nextGroupFace, @NotNull final Image prevGroupFace) {
         super(tooltipManager, elementListener, name, x, y, w, h, crossfireServerConnection, itemPainter, facesManager);
         this.commandQueue = commandQueue;
         this.crossfireServerConnection = crossfireServerConnection;
-        this.itemsManager = itemsManager;
+        this.floorView = floorView;
         this.itemSet = itemSet;
-        this.floorManager = floorManager;
         this.facesManager = facesManager;
         this.nextGroupFace = nextGroupFace;
         this.prevGroupFace = prevGroupFace;
         defaultIndex = index;
-        containerTag = itemsManager.getCurrentFloorManager().getCurrentFloor();
-        this.itemsManager.getCurrentFloorManager().addCurrentFloorListener(currentFloorListener);
-        setIndex(index, containerTag, false);
+        setIndex(index, false);
     }
 
     /**
@@ -190,8 +155,7 @@ public class GUIItemFloor extends GUIItemItem {
     @Override
     public void dispose() {
         super.dispose();
-        setIndex(-1, 0, false);
-        itemsManager.getCurrentFloorManager().removeCurrentFloorListener(currentFloorListener);
+        setIndex(-1, false);
     }
 
     /**
@@ -202,7 +166,7 @@ public class GUIItemFloor extends GUIItemItem {
         if (distance < 0) {
             return index >= -distance;
         } else if (distance > 0) {
-            return index+distance < itemSet.getNumberOfItemsByLocation(itemsManager.getCurrentFloorManager().getCurrentFloor());
+            return index+distance < floorView.getSize();
         } else {
             return false;
         }
@@ -211,13 +175,13 @@ public class GUIItemFloor extends GUIItemItem {
     /* {@inheritDoc} */
     @Override
     public void scroll(final int distance) {
-        setIndex(index+distance, containerTag, false);
+        setIndex(index+distance, false);
     }
 
     /* {@inheritDoc} */
     @Override
     public void resetScroll() {
-        setIndex(defaultIndex, containerTag, false);
+        setIndex(defaultIndex, false);
     }
 
     /* {@inheritDoc} */
@@ -242,10 +206,13 @@ public class GUIItemFloor extends GUIItemItem {
         if (item == null) {
             return;
         }
+
         final CfItem player = itemSet.getPlayer();
-        if (player != null) {
-            commandQueue.sendMove(player.getTag(), item.getTag());
+        if (player == null) {
+            return;
         }
+
+        commandQueue.sendMove(player.getTag(), item.getTag());
     }
 
     /**
@@ -259,45 +226,23 @@ public class GUIItemFloor extends GUIItemItem {
     /**
      * Set the floor tile to display.
      * @param index the floor tile
-     * @param containerTag The new container tag.
      * @param forced if unset, do nothing if the <code>index</code> is
      * unchanged; if set, always render the item
      */
-    private void setIndex(final int index, final int containerTag, final boolean forced) {
-        if (!forced && this.index == index) {
+    private void setIndex(final int index, final boolean forced) {
+        if (this.index != index) {
+            if (this.index >= 0) {
+                floorView.removeLocationListener(this.index, locationListener);
+            }
+            this.index = index;
+            if (this.index >= 0) {
+                floorView.addLocationListener(this.index, locationListener);
+            }
+        } else if (!forced) {
             return;
         }
 
-        if (this.index >= 0) {
-            if (this.containerTag == 0) {
-                floorManager.removeLocationListener(this.index, floorLocationListener);
-            } else if (this.index > 0) {
-                floorManager.removeLocationListener(this.index-1, floorLocationListener);
-            } else {
-                // index 0 is the container itself -- no listener needed
-            }
-        }
-        this.index = index;
-        this.containerTag = containerTag;
-        if (this.index >= 0) {
-            if (this.containerTag == 0) {
-                floorManager.addLocationListener(this.index, floorLocationListener);
-            } else if (this.index > 0) {
-                floorManager.addLocationListener(this.index-1, floorLocationListener);
-            } else {
-                // index 0 is the container itself -- no listener needed
-            }
-        }
-
-        if (this.containerTag == 0) {
-            final List<CfItem> list = itemSet.getItemsByLocation(itemsManager.getCurrentFloorManager().getCurrentFloor());
-            setItem(0 <= this.index && this.index < list.size() ? list.get(this.index) : null);
-        } else if (this.index > 0) {
-            final List<CfItem> list = itemSet.getItemsByLocation(itemsManager.getCurrentFloorManager().getCurrentFloor());
-            setItem(this.index-1 < list.size() ? list.get(this.index-1) : null);
-        } else {
-            setItem(itemSet.getItemByTag(containerTag));
-        }
+        setItem(floorView.getItem(index));
     }
 
     /**
@@ -311,15 +256,7 @@ public class GUIItemFloor extends GUIItemItem {
 
         this.index = index;
 
-        if (containerTag == 0) {
-            final List<CfItem> list = itemSet.getItemsByLocation(itemsManager.getCurrentFloorManager().getCurrentFloor());
-            setItemNoListeners(0 <= this.index && this.index < list.size() ? list.get(this.index) : null);
-        } else if (this.index > 0) {
-            final List<CfItem> list = itemSet.getItemsByLocation(itemsManager.getCurrentFloorManager().getCurrentFloor());
-            setItemNoListeners(this.index-1 < list.size() ? list.get(this.index-1) : null);
-        } else {
-            setItemNoListeners(itemSet.getItemByTag(containerTag));
-        }
+        setItemNoListeners(floorView.getItem(index));
     }
 
     /**

@@ -22,7 +22,7 @@
 package com.realtime.crossfire.jxclient.gui.commands;
 
 import com.realtime.crossfire.jxclient.gui.list.GUIItemList;
-import com.realtime.crossfire.jxclient.items.CurrentFloorManager;
+import com.realtime.crossfire.jxclient.items.FloorView;
 import com.realtime.crossfire.jxclient.queue.CommandQueue;
 import com.realtime.crossfire.jxclient.server.crossfire.CrossfireServerConnection;
 import org.jetbrains.annotations.NotNull;
@@ -53,10 +53,10 @@ public class ExecSelectionCommand implements GUICommand {
     private final CrossfireServerConnection crossfireServerConnection;
 
     /**
-     * The floor manager to use.
+     * The {@link FloorView} to use.
      */
     @NotNull
-    private final CurrentFloorManager floorManager;
+    private final FloorView floorView;
 
     /**
      * The command queue to use.
@@ -69,14 +69,14 @@ public class ExecSelectionCommand implements GUICommand {
      * @param list the list to execute in
      * @param command the command to execute
      * @param crossfireServerConnection the connection to execute commands on
-     * @param floorManager the floor manager to use
+     * @param floorView the floor view to use
      * @param commandQueue the command queue to use
      */
-    public ExecSelectionCommand(@NotNull final GUIItemList list, @NotNull final CommandType command, @NotNull final CrossfireServerConnection crossfireServerConnection, @NotNull final CurrentFloorManager floorManager, @NotNull final CommandQueue commandQueue) {
+    public ExecSelectionCommand(@NotNull final GUIItemList list, @NotNull final CommandType command, @NotNull final CrossfireServerConnection crossfireServerConnection, @NotNull final FloorView floorView, @NotNull final CommandQueue commandQueue) {
         this.list = list;
         this.command = command;
         this.crossfireServerConnection = crossfireServerConnection;
-        this.floorManager = floorManager;
+        this.floorView = floorView;
         this.commandQueue = commandQueue;
     }
 
@@ -93,7 +93,7 @@ public class ExecSelectionCommand implements GUICommand {
      */
     @Override
     public void execute() {
-        command.execute(list.getSelectedItem(), crossfireServerConnection, floorManager.getCurrentFloor(), commandQueue);
+        command.execute(list.getSelectedItem(), crossfireServerConnection, floorView.getCurrentFloor(), commandQueue);
     }
 
 }

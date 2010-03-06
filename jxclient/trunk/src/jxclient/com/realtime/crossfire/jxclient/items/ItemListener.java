@@ -21,20 +21,40 @@
 
 package com.realtime.crossfire.jxclient.items;
 
+import java.util.EventListener;
 import org.jetbrains.annotations.NotNull;
 
 /**
- * Manages the items on the floor.
+ * Interface for listeners for changes of item locations.
  * @author Andreas Kirschbaum
  */
-public class FloorManager extends AbstractManager {
+public interface ItemListener extends EventListener {
 
     /**
-     * Creates a new instance.
-     * @param itemSet the item set for looking up items
+     * The watched item has changed.
+     * @param tag the watched item's tag
      */
-    public FloorManager(@NotNull final ItemSet itemSet) {
-        super(itemSet);
-    }
+    void itemChanged(int tag);
+
+    /**
+     * The watched item has been removed from the location.
+     * @param tag the watched item's tag
+     */
+    void itemRemoved(int tag);
+
+    /**
+     * An inventory {@link CfItem} has been added to the watched item.
+     * @param tag the watched item's tag
+     * @param index the inventory index
+     * @param item the inventory item
+     */
+    void inventoryAdded(int tag, int index, @NotNull CfItem item);
+
+    /**
+     * An inventory item has been removed from the watched item.
+     * @param tag the watched item's tag
+     * @param index the inventory index
+     */
+    void inventoryRemoved(int tag, int index);
 
 }

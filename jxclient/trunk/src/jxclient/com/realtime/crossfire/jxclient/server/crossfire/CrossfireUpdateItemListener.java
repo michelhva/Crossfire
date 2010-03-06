@@ -58,11 +58,6 @@ public interface CrossfireUpdateItemListener {
     void additemReceived(int location, int tag, int flags, int weight, int faceNum, @NotNull String name, @NotNull String namePl, int anim, int animSpeed, int nrof, int type);
 
     /**
-     * An "upditem" command has been parsed.
-     */
-    void additemFinished();
-
-    /**
      * A "player" command has been received.
      * @param tag the player's taqg
      * @param weight the player's weight

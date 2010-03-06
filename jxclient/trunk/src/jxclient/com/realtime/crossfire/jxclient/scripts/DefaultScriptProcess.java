@@ -23,8 +23,8 @@ package com.realtime.crossfire.jxclient.scripts;
 
 import com.realtime.crossfire.jxclient.faces.Face;
 import com.realtime.crossfire.jxclient.items.CfItem;
+import com.realtime.crossfire.jxclient.items.FloorView;
 import com.realtime.crossfire.jxclient.items.ItemSet;
-import com.realtime.crossfire.jxclient.items.ItemsManager;
 import com.realtime.crossfire.jxclient.map.CfMap;
 import com.realtime.crossfire.jxclient.map.CfMapSquare;
 import com.realtime.crossfire.jxclient.mapupdater.CfMapUpdater;
@@ -86,10 +86,10 @@ public class DefaultScriptProcess extends Thread implements ScriptProcess {
     private final Stats stats;
 
     /**
-     * The {@link ItemsManager} instance to use.
+     * The {@link FloorView} to use.
      */
     @NotNull
-    private final ItemsManager itemsManager;
+    private final FloorView floorView;
 
     /**
      * The {@link ItemSet} instance to use.
@@ -211,20 +211,20 @@ public class DefaultScriptProcess extends Thread implements ScriptProcess {
      * @param commandQueue the command queue for sending commands
      * @param crossfireServerConnection the server connection
      * @param stats the stats instance to watch
-     * @param itemsManager the items manager instance to use
+     * @param floorView the floor view to use
      * @param itemSet the item set instance to use
      * @param spellsManager the spells manager instance to use
      * @param mapUpdater the map updater instance to use
      * @param skillSet the skill set for looking up skill names
      * @throws IOException if the script cannot be created
      */
-    public DefaultScriptProcess(final int scriptId, @NotNull final String filename, @NotNull final CommandQueue commandQueue, @NotNull final CrossfireServerConnection crossfireServerConnection, @NotNull final Stats stats, @NotNull final ItemsManager itemsManager, @NotNull final ItemSet itemSet, @NotNull final SpellsManager spellsManager, @NotNull final CfMapUpdater mapUpdater, @NotNull final SkillSet skillSet) throws IOException {
+    public DefaultScriptProcess(final int scriptId, @NotNull final String filename, @NotNull final CommandQueue commandQueue, @NotNull final CrossfireServerConnection crossfireServerConnection, @NotNull final Stats stats, @NotNull final FloorView floorView, @NotNull final ItemSet itemSet, @NotNull final SpellsManager spellsManager, @NotNull final CfMapUpdater mapUpdater, @NotNull final SkillSet skillSet) throws IOException {
         this.scriptId = scriptId;
         this.filename = filename;
         this.commandQueue = commandQueue;
         this.crossfireServerConnection = crossfireServerConnection;
         this.stats = stats;
-        this.itemsManager = itemsManager;
+        this.floorView = floorView;
         this.itemSet = itemSet;
         this.spellsManager = spellsManager;
         this.mapUpdater = mapUpdater;
@@ -460,7 +460,7 @@ public class DefaultScriptProcess extends Thread implements ScriptProcess {
             }
             commandSent("request items on end");
         } else if (parms.equals("items cont")) {
-            final int containerTag = itemsManager.getCurrentFloorManager().getCurrentFloor();
+            final int containerTag = floorView.getCurrentFloor();
             if (containerTag != 0) {
                 for (final CfItem item : itemSet.getItemsByLocation(containerTag)) {
                     commandSentItem("request items cont", item);

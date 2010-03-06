@@ -218,7 +218,7 @@ public abstract class GUIItemItem extends GUIItem {
     /**
      * Updates the tooltip text for the current {@link #item}.
      */
-    private void updateTooltipText() {
+    protected void updateTooltipText() {
         if (item == null) {
             setTooltipText(null);
             return;
