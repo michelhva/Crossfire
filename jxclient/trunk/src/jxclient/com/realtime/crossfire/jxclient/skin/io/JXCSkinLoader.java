@@ -79,8 +79,8 @@ import com.realtime.crossfire.jxclient.gui.textinput.GUIText;
 import com.realtime.crossfire.jxclient.gui.textinput.GUITextField;
 import com.realtime.crossfire.jxclient.guistate.GuiStateManager;
 import com.realtime.crossfire.jxclient.items.FloorView;
-import com.realtime.crossfire.jxclient.items.InventoryView;
 import com.realtime.crossfire.jxclient.items.ItemSet;
+import com.realtime.crossfire.jxclient.items.ItemView;
 import com.realtime.crossfire.jxclient.mapupdater.CfMapUpdater;
 import com.realtime.crossfire.jxclient.metaserver.MetaserverModel;
 import com.realtime.crossfire.jxclient.queue.CommandQueue;
@@ -157,10 +157,10 @@ public class JXCSkinLoader {
     private final ItemSet itemSet;
 
     /**
-     * The {@link InventoryView} to use.
+     * The inventory {@link ItemView} to use.
      */
     @NotNull
-    private final InventoryView inventoryView;
+    private final ItemView inventoryView;
 
     /**
      * The {@link FloorView} to use.
@@ -298,7 +298,7 @@ public class JXCSkinLoader {
     /**
      * Creates a new instance.
      * @param itemSet the item set instance to use
-     * @param inventoryView the inventory view to use
+     * @param inventoryView the inventory item view to use
      * @param floorView the floor view to use
      * @param spellsManager the spells manager instance to use
      * @param facesManager the faces manager instance to use
@@ -309,7 +309,7 @@ public class JXCSkinLoader {
      * @param experienceTable the experience table to use
      * @param skillSet the skill set to use
      */
-    public JXCSkinLoader(@NotNull final ItemSet itemSet, @NotNull final InventoryView inventoryView, @NotNull final FloorView floorView, @NotNull final SpellsManager spellsManager, @NotNull final FacesManager facesManager, @NotNull final Stats stats, @NotNull final CfMapUpdater mapUpdater, @NotNull final KeyBindings defaultKeyBindings, @NotNull final OptionManager optionManager, @NotNull final ExperienceTable experienceTable, @NotNull final SkillSet skillSet) {
+    public JXCSkinLoader(@NotNull final ItemSet itemSet, @NotNull final ItemView inventoryView, @NotNull final FloorView floorView, @NotNull final SpellsManager spellsManager, @NotNull final FacesManager facesManager, @NotNull final Stats stats, @NotNull final CfMapUpdater mapUpdater, @NotNull final KeyBindings defaultKeyBindings, @NotNull final OptionManager optionManager, @NotNull final ExperienceTable experienceTable, @NotNull final SkillSet skillSet) {
         this.itemSet = itemSet;
         this.inventoryView = inventoryView;
         this.floorView = floorView;

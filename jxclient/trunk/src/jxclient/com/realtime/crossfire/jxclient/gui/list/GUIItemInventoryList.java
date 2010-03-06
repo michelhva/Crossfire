@@ -30,7 +30,7 @@ import com.realtime.crossfire.jxclient.gui.item.GUIItemItemFactory;
 import com.realtime.crossfire.jxclient.gui.label.AbstractLabel;
 import com.realtime.crossfire.jxclient.items.CfItem;
 import com.realtime.crossfire.jxclient.items.FloorView;
-import com.realtime.crossfire.jxclient.items.InventoryView;
+import com.realtime.crossfire.jxclient.items.ItemView;
 import com.realtime.crossfire.jxclient.items.LocationsListener;
 import com.realtime.crossfire.jxclient.queue.CommandQueue;
 import com.realtime.crossfire.jxclient.server.crossfire.CrossfireServerConnection;
@@ -77,10 +77,10 @@ public class GUIItemInventoryList extends GUIItemList {
     private final FloorView floorView;
 
     /**
-     * The {@link InventoryView} to monitor.
+     * The {@link ItemView} to monitor.
      */
     @NotNull
-    private final InventoryView inventoryView;
+    private final ItemView itemView;
 
     /**
      * The label to update with information about the selected item.
@@ -135,21 +135,21 @@ public class GUIItemInventoryList extends GUIItemList {
      * @param crossfireServerConnection the crossfire server connection for
      * sending commands to the server
      * @param floorView the floor view to use
-     * @param inventoryView the inventory view to monitor
+     * @param itemView the item view to monitor
      * @param currentItem the label to update with information about the
      * selected item.
      * @param itemItemFactory the factory for creating item instances
      */
-    public GUIItemInventoryList(@NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final CommandQueue commandQueue, @NotNull final String name, final int x, final int y, final int w, final int h, final int cellHeight, @NotNull final CrossfireServerConnection crossfireServerConnection, @NotNull final FloorView floorView, @NotNull final InventoryView inventoryView, @Nullable final AbstractLabel currentItem, @NotNull final GUIItemItemFactory itemItemFactory) {
+    public GUIItemInventoryList(@NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final CommandQueue commandQueue, @NotNull final String name, final int x, final int y, final int w, final int h, final int cellHeight, @NotNull final CrossfireServerConnection crossfireServerConnection, @NotNull final FloorView floorView, @NotNull final ItemView itemView, @Nullable final AbstractLabel currentItem, @NotNull final GUIItemItemFactory itemItemFactory) {
         super(tooltipManager, elementListener, name, x, y, w, h, cellHeight, new ItemItemCellRenderer(itemItemFactory.newTemplateItemInventory(cellHeight)));
-        this.inventoryView = inventoryView;
+        this.itemView = itemView;
         this.itemItemFactory = itemItemFactory;
         this.commandQueue = commandQueue;
         this.crossfireServerConnection = crossfireServerConnection;
         this.floorView = floorView;
         this.currentItem = currentItem;
         setLayoutOrientation(JList.HORIZONTAL_WRAP, -1);
-        this.inventoryView.addLocationsListener(locationsListener);
+        this.itemView.addLocationsListener(locationsListener);
         rebuildList(null);
     }
 
@@ -159,7 +159,7 @@ public class GUIItemInventoryList extends GUIItemList {
     @Override
     public void dispose() {
         super.dispose();
-        inventoryView.removeLocationsListener(locationsListener);
+        itemView.removeLocationsListener(locationsListener);
     }
 
     /**
@@ -168,7 +168,7 @@ public class GUIItemInventoryList extends GUIItemList {
      */
     private void rebuildList(@Nullable final Integer[] changedSlots) {
         synchronized (getTreeLock()) {
-            final int newSize = inventoryView.getSize();
+            final int newSize = itemView.getSize();
             final int oldSize = resizeElements(newSize);
             if (oldSize < newSize) {
                 for (int i = oldSize; i < newSize; i++) {
@@ -221,7 +221,7 @@ public class GUIItemInventoryList extends GUIItemList {
     @Override
     protected void selectionChanged(final int selectedIndex) {
         if (currentItem != null) {
-            final CfItem item = inventoryView.getItem(selectedIndex);
+            final CfItem item = itemView.getItem(selectedIndex);
             if (item == null) {
                 currentItem.setText("");
                 currentItem.setTooltipText("");
@@ -240,7 +240,7 @@ public class GUIItemInventoryList extends GUIItemList {
      */
     @Override
     protected void updateTooltip(final int index) {
-        final CfItem item = inventoryView.getItem(index);
+        final CfItem item = itemView.getItem(index);
         setTooltipText(item == null ? null : item.getTooltipText());
     }
 

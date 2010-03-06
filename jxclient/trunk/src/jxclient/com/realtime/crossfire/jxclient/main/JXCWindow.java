@@ -35,9 +35,9 @@ import com.realtime.crossfire.jxclient.guistate.GuiStateListener;
 import com.realtime.crossfire.jxclient.guistate.GuiStateManager;
 import com.realtime.crossfire.jxclient.items.CfItem;
 import com.realtime.crossfire.jxclient.items.FloorView;
-import com.realtime.crossfire.jxclient.items.InventoryView;
 import com.realtime.crossfire.jxclient.items.ItemSet;
 import com.realtime.crossfire.jxclient.items.ItemSetListener;
+import com.realtime.crossfire.jxclient.items.ItemView;
 import com.realtime.crossfire.jxclient.mapupdater.CfMapUpdater;
 import com.realtime.crossfire.jxclient.metaserver.MetaserverModel;
 import com.realtime.crossfire.jxclient.queue.CommandQueue;
@@ -132,10 +132,10 @@ public class JXCWindow extends JFrame {
     private final ItemSet itemSet;
 
     /**
-     * The {@link InventoryView} instance.
+     * The inventory {@link ItemView} instance.
      */
     @NotNull
-    private final InventoryView inventoryView;
+    private final ItemView inventoryView;
 
     /**
      * The {@link FloorView} instance.
@@ -636,10 +636,10 @@ public class JXCWindow extends JFrame {
      * @param stats the stats to use
      * @param facesManager the faces manager to use
      * @param itemSet the item set to use
-     * @param inventoryView the inventory view to use
+     * @param inventoryView the inventory item view to use
      * @param floorView the floor view to use
      */
-    public JXCWindow(@NotNull final Object terminateSync, @NotNull final CrossfireServerConnection server, @NotNull final Object semaphoreRedraw, final boolean debugGui, @Nullable final Writer debugKeyboard, @Nullable final Writer debugScreen, @NotNull final Settings settings, @NotNull final OptionManager optionManager, @NotNull final MetaserverModel metaserverModel, @NotNull final Resolution resolution, @NotNull final GuiStateManager guiStateManager, @NotNull final ExperienceTable experienceTable, @NotNull final SkillSet skillSet, @NotNull final Stats stats, @NotNull final FacesManager facesManager, @NotNull final ItemSet itemSet, @NotNull final InventoryView inventoryView, @NotNull final FloorView floorView) {
+    public JXCWindow(@NotNull final Object terminateSync, @NotNull final CrossfireServerConnection server, @NotNull final Object semaphoreRedraw, final boolean debugGui, @Nullable final Writer debugKeyboard, @Nullable final Writer debugScreen, @NotNull final Settings settings, @NotNull final OptionManager optionManager, @NotNull final MetaserverModel metaserverModel, @NotNull final Resolution resolution, @NotNull final GuiStateManager guiStateManager, @NotNull final ExperienceTable experienceTable, @NotNull final SkillSet skillSet, @NotNull final Stats stats, @NotNull final FacesManager facesManager, @NotNull final ItemSet itemSet, @NotNull final ItemView inventoryView, @NotNull final FloorView floorView) {
         super("");
         this.server = server;
         this.debugGui = debugGui;
