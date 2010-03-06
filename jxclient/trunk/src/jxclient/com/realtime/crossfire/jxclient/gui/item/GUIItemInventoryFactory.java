@@ -97,7 +97,7 @@ public class GUIItemInventoryFactory implements GUIItemItemFactory {
      */
     @Override
     @NotNull
-    public GUIElement newItemInventory(final int index) {
+    public GUIElement newItem(final int index) {
         return new GUIItemInventory(tooltipManager, elementListener, commandQueue, name+index, 0, 0, 1, 1, itemPainter, index, crossfireServerConnection, facesManager, floorView, inventoryView);
     }
 
@@ -106,7 +106,7 @@ public class GUIItemInventoryFactory implements GUIItemItemFactory {
      */
     @Override
     @NotNull
-    public GUIItemItem newTemplateItemInventory(final int cellHeight) {
+    public GUIItemItem newTemplateItem(final int cellHeight) {
         return new GUIItemInventory(tooltipManager, elementListener, commandQueue, name+"_template", 0, 0, cellHeight, cellHeight, itemPainter, -1, crossfireServerConnection, facesManager, floorView, inventoryView);
     }
 

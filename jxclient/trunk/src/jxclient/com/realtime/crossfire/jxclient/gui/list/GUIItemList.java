@@ -142,7 +142,7 @@ public class GUIItemList extends GUIList {
      * @param itemItemFactory the factory for creating item instances
      */
     public GUIItemList(@NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final CommandQueue commandQueue, @NotNull final String name, final int x, final int y, final int w, final int h, final int cellHeight, @NotNull final CrossfireServerConnection crossfireServerConnection, @NotNull final FloorView floorView, @NotNull final ItemView itemView, @Nullable final AbstractLabel currentItem, @NotNull final GUIItemItemFactory itemItemFactory) {
-        super(tooltipManager, elementListener, name, x, y, w, h, cellHeight, new ItemItemCellRenderer(itemItemFactory.newTemplateItemInventory(cellHeight)));
+        super(tooltipManager, elementListener, name, x, y, w, h, cellHeight, new ItemItemCellRenderer(itemItemFactory.newTemplateItem(cellHeight)));
         this.itemView = itemView;
         this.itemItemFactory = itemItemFactory;
         this.commandQueue = commandQueue;
@@ -173,7 +173,7 @@ public class GUIItemList extends GUIList {
             final int oldSize = resizeElements(newSize);
             if (oldSize < newSize) {
                 for (int i = oldSize; i < newSize; i++) {
-                    final GUIElement item = itemItemFactory.newItemInventory(i);
+                    final GUIElement item = itemItemFactory.newItem(i);
                     addElement(item);
                     item.setChangedListener(itemChangedListener);
                     assert item.isElementVisible();
