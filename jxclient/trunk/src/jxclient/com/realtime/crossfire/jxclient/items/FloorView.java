@@ -250,12 +250,4 @@ public class FloorView extends AbstractItemView {
         return currentFloor == 0 ? 0 : 1;
     }
 
-    /**
-     * {@inheritDoc}
-     */
-    @Override
-    protected void deliverEvents(@NotNull final Integer[] modifiedSlots) {
-        // ignore
-    }
-
 }

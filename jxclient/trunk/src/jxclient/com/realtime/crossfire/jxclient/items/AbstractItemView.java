@@ -24,6 +24,7 @@ package com.realtime.crossfire.jxclient.items;
 import com.realtime.crossfire.jxclient.util.IndexedEventListenerList;
 import java.util.Collection;
 import java.util.HashSet;
+import javax.swing.event.EventListenerList;
 import org.jetbrains.annotations.NotNull;
 
 /**
@@ -31,6 +32,12 @@ import org.jetbrains.annotations.NotNull;
  * @author Andreas Kirschbaum
  */
 public abstract class AbstractItemView implements ItemView {
+
+    /**
+     * The registered {@link LocationsListener}s to be notified about changes.
+     */
+    @NotNull
+    private final EventListenerList locationsListeners = new EventListenerList();
 
     /**
      * The registered {@link ItemListener}s to be notified about changes.
@@ -85,6 +92,22 @@ public abstract class AbstractItemView implements ItemView {
      * {@inheritDoc}
      */
     @Override
+    public void addLocationsListener(@NotNull final LocationsListener locationsListener) {
+        locationsListeners.add(LocationsListener.class, locationsListener);
+    }
+
+    /**
+     * {@inheritDoc}
+     */
+    @Override
+    public void removeLocationsListener(@NotNull final LocationsListener locationsListener) {
+        locationsListeners.remove(LocationsListener.class, locationsListener);
+    }
+
+    /**
+     * {@inheritDoc}
+     */
+    @Override
     public void addLocationListener(final int index, @NotNull final LocationListener locationListener) {
         locationListeners.add(index, LocationListener.class, locationListener);
     }
@@ -132,7 +155,9 @@ public abstract class AbstractItemView implements ItemView {
             modifiedSlots.clear();
         }
         if (tmpModifiedSlots.length > 0) {
-            deliverEvents(tmpModifiedSlots);
+            for (final LocationsListener locationsListener : locationsListeners.getListeners(LocationsListener.class)) {
+                locationsListener.locationsModified(tmpModifiedSlots);
+            }
             for (final int index : tmpModifiedSlots) {
                 for (final LocationListener locationListener : locationListeners.getListeners(index, LocationListener.class)) {
                     locationListener.locationChanged();
@@ -140,12 +165,6 @@ public abstract class AbstractItemView implements ItemView {
             }
         }
     }
-
-    /**
-     * Delivers events about changed slots.
-     * @param modifiedSlots the changed slots
-     */
-    protected abstract void deliverEvents(@NotNull final Integer[] modifiedSlots);
 
     /**
      * Delivers outstanding change events.

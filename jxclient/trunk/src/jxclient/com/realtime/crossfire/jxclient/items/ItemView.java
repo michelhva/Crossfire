@@ -45,6 +45,20 @@ public interface ItemView {
     CfItem getItem(int index);
 
     /**
+     * Adds a {@link LocationsListener} to be notified when any displayed item
+     * has changed.
+     * @param locationsListener the locations listener to add
+     */
+    void addLocationsListener(@NotNull LocationsListener locationsListener);
+
+    /**
+     * Removes a {@link LocationsListener} to be notified when any displayed
+     * item has changed.
+     * @param locationsListener the locations listener to remove
+     */
+    void removeLocationsListener(@NotNull LocationsListener locationsListener);
+
+    /**
      * Adds a {@link LocationListener} to be notified when the item displayed
      * in a floor slot has changed.
      * @param index the floor slot
