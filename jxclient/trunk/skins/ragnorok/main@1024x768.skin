@@ -2,7 +2,7 @@
 tooltip font_tooltip
 
 # Map Group
-map playfield 64 -32 -32 1088 832
+map playfield 64 0 0 WIDTH HEIGHT
 
 # Stat Group
 picture gauge_hp_back          10 10 80 20 gauge_frame 0.9
