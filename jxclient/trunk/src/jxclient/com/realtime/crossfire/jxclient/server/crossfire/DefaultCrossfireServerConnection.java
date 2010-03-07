@@ -2989,7 +2989,7 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
      * {@inheritDoc}
      */
     @Override
-    public void setMapSize(final int mapWidth, final int mapHeight) {
+    public void setPreferredMapSize(final int mapWidth, final int mapHeight) {
         validateMapSize(mapWidth, mapHeight);
         if (this.mapWidth == mapWidth && this.mapHeight == mapHeight) {
             return;

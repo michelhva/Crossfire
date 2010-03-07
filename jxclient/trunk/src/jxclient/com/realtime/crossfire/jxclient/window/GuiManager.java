@@ -313,7 +313,7 @@ public class GuiManager {
             final int mapWidth = skin.getMapWidth();
             assert skin != null;
             final int mapHeight = skin.getMapHeight();
-            server.setMapSize(mapWidth, mapHeight);
+            server.setPreferredMapSize(mapWidth, mapHeight);
             assert skin != null;
             server.setNumLookObjects(skin.getNumLookObjects());
             server.addCrossfireDrawextinfoListener(crossfireDrawextinfoListener);
