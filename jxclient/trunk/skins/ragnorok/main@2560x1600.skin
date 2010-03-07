@@ -2,10 +2,7 @@
 tooltip font_tooltip
 
 # Map Group
-map playfield 64 0 0 1600 1600
-
-# Empty space right of map
-picture background_black 1600 0 960 1600 black 1
+map playfield 64 0 0 WIDTH HEIGHT
 
 # Stat Group
 picture gauge_hp_back          10 10 80 20 gauge_frame 0.9
@@ -24,8 +21,8 @@ picture gauge_xp_back         370 10 80 20 gauge_xp_frame 0.9
 duptextgauge gauge_xp         373 13 74 14 gauge_xp1 gauge_xp2 gauge_xp_empty EXP_NEXT_LEVEL WE WE BLACK font_label Level:
 
 # Hpbar in map view
-picture hpbar_back            800-34 HEIGHT/2-44 68  7 hpbar_frame 0.9
-gauge hpbar                   800-33 HEIGHT/2-43 66  5 hpbar_full null hpbar_empty HP WE
+picture hpbar_back            WIDTH/2-34 HEIGHT/2-44 68  7 hpbar_frame 0.9
+gauge hpbar                   WIDTH/2-33 HEIGHT/2-43 66  5 hpbar_full null hpbar_empty HP WE
 picture spbar_back            WIDTH/2-34 HEIGHT/2-52 68  7 hpbar_frame 0.9
 gauge spbar                   WIDTH/2-33 HEIGHT/2-51 66  5 spbar_full null hpbar_empty SP WE
 picture grbar_back            WIDTH/2-34 HEIGHT/2-60 68  7 hpbar_frame 0.9
