@@ -2989,16 +2989,16 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
      * {@inheritDoc}
      */
     @Override
-    public void setPreferredMapSize(final int mapWidth, final int mapHeight) {
-        validateMapSize(mapWidth, mapHeight);
-        if (this.mapWidth == mapWidth && this.mapHeight == mapHeight) {
+    public void setPreferredMapSize(final int preferredMapWidth, final int preferredMapHeight) {
+        validateMapSize(preferredMapWidth, preferredMapHeight);
+        if (this.mapWidth == preferredMapWidth && this.mapHeight == preferredMapHeight) {
             return;
         }
 
-        this.mapWidth = mapWidth;
-        this.mapHeight = mapHeight;
+        this.mapWidth = preferredMapWidth;
+        this.mapHeight = preferredMapHeight;
         for (final MapSizeListener listener : mapSizeListeners) {
-            listener.mapSizeChanged(mapWidth, mapHeight);
+            listener.mapSizeChanged(preferredMapWidth, preferredMapHeight);
         }
     }
 

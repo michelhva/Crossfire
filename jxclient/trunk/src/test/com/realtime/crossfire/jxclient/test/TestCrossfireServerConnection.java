@@ -444,7 +444,7 @@ public class TestCrossfireServerConnection implements CrossfireServerConnection 
      * {@inheritDoc}
      */
     @Override
-    public void setPreferredMapSize(final int mapWidth, final int mapHeight) {
+    public void setPreferredMapSize(final int preferredMapWidth, final int preferredMapHeight) {
         Assert.fail();
     }
 

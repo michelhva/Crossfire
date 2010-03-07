@@ -333,12 +333,13 @@ public interface CrossfireServerConnection extends ServerConnection {
 
     /**
      * Sets the map size. Must not be called in connected state.
-     * @param mapWidth the map width in tiles; must be odd and between 3 and 63
-     * @param mapHeight the map height in tiles; must be odd and between 3 and
-     * 63
+     * @param preferredMapWidth the map width in tiles; must be odd and between
+     * 3 and 63
+     * @param preferredMapHeight the map height in tiles; must be odd and
+     * between 3 and 63
      * @throws IllegalArgumentException if the map size if invalid
      */
-    void setPreferredMapSize(int mapWidth, int mapHeight);
+    void setPreferredMapSize(int preferredMapWidth, int preferredMapHeight);
 
     /**
      * Sets the maximum number of objects in the ground view. Must not be called
