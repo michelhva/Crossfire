@@ -332,12 +332,9 @@ public interface CrossfireServerConnection extends ServerConnection {
     void sendVersion(int csval, int scval, @NotNull String vinfo);
 
     /**
-     * Sets the map size. Must not be called in connected state.
-     * @param preferredMapWidth the map width in tiles; must be odd and between
-     * 3 and 63
-     * @param preferredMapHeight the map height in tiles; must be odd and
-     * between 3 and 63
-     * @throws IllegalArgumentException if the map size if invalid
+     * Sets the preferred map size.
+     * @param preferredMapWidth the preferred map width in tiles; must be odd
+     * @param preferredMapHeight the preferred map height in tiles; must be odd
      */
     void setPreferredMapSize(int preferredMapWidth, int preferredMapHeight);
 
