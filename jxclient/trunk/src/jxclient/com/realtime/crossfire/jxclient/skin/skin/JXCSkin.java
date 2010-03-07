@@ -55,6 +55,20 @@ public interface JXCSkin extends Iterable<Gui> {
     Resolution getResolution();
 
     /**
+     * Returns the minimal resolution of this skin.
+     * @return the minimal resolution
+     */
+    @NotNull
+    Resolution getMinResolution();
+
+    /**
+     * Returns the maximal resolution of this skin.
+     * @return the maximal resolution
+     */
+    @NotNull
+    Resolution getMaxResolution();
+
+    /**
      * Returns the map width in tiles.
      * @return the map width in tiles
      */

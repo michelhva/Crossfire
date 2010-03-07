@@ -56,6 +56,18 @@ public class DefaultJXCSkin implements JXCSkin {
     private String skinName = "unknown";
 
     /**
+     * The minimal resolution.
+     */
+    @NotNull
+    private Resolution minResolution = new Resolution(true, 1, 1);
+
+    /**
+     * The maximal resolution.
+     */
+    @NotNull
+    private Resolution maxResolution = new Resolution(true, 1, 1);
+
+    /**
      * The selected resolution.
      */
     @NotNull
@@ -178,8 +190,10 @@ public class DefaultJXCSkin implements JXCSkin {
         return skinName;
     }
 
-    public void setSkinName(@NotNull final String skinName) {
+    public void setSkinName(@NotNull final String skinName, @NotNull final Resolution minResolution, @NotNull final Resolution maxResolution) {
         this.skinName = skinName;
+        this.minResolution = minResolution;
+        this.maxResolution = maxResolution;
     }
 
     /**
@@ -189,6 +203,24 @@ public class DefaultJXCSkin implements JXCSkin {
     @Override
     public Resolution getResolution() {
         return selectedResolution;
+    }
+
+    /**
+     * {@inheritDoc}
+     */
+    @NotNull
+    @Override
+    public Resolution getMinResolution() {
+        return minResolution;
+    }
+
+    /**
+     * {@inheritDoc}
+     */
+    @NotNull
+    @Override
+    public Resolution getMaxResolution() {
+        return maxResolution;
     }
 
     /**
@@ -428,11 +460,6 @@ public class DefaultJXCSkin implements JXCSkin {
      */
     public void insertGuiElement(@NotNull final GUIElement guiElement) throws JXCSkinException {
         guiElements.add(guiElement);
-    }
-
-    @NotNull
-    public Resolution getSelectedResolution() {
-        return selectedResolution;
     }
 
     public void addDialog(@NotNull final String dialogName) {
