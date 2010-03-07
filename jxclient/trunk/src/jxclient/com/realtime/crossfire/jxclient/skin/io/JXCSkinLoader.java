@@ -348,38 +348,7 @@ public class JXCSkinLoader {
     public JXCSkin load(@NotNull final JXCSkinSource skinSource, @NotNull final CrossfireServerConnection crossfireServerConnection, @NotNull final GuiStateManager guiStateManager, @NotNull final TooltipManager tooltipManager, @NotNull final JXCWindowRenderer windowRenderer, @NotNull final GUIElementListener elementListener, @NotNull final MetaserverModel metaserverModel, @NotNull final CommandQueue commandQueue, @NotNull final Resolution resolution, @NotNull final Shortcuts shortcuts, @NotNull final Commands commands, @NotNull final CurrentSpellManager currentSpellManager, @NotNull final CommandCallback commandCallback, @NotNull final Macros macros, @NotNull final GuiFactory guiFactory) throws JXCSkinException {
         imageParser = new ImageParser(skinSource);
         fontParser = new FontParser(skinSource);
-        final Resolution selectedResolution;
-        if (resolution.isExact()) {
-            if (!skinSource.containsResolution(resolution)) {
-                throw new JXCSkinException("resolution "+resolution+" is not supported by this skin");
-            }
-
-            selectedResolution = resolution;
-        } else {
-            if (skinSource.containsResolution(resolution)) {
-                selectedResolution = resolution;
-            } else {
-                Resolution selectedCandidate = null;
-                // select maximum <= requested
-                for (final Resolution candidate : skinSource) {
-                    if (candidate.getWidth() <= resolution.getWidth() && candidate.getHeight() <= resolution.getHeight()) {
-                        if (selectedCandidate == null || selectedCandidate.getArea() < candidate.getArea()) {
-                            selectedCandidate = candidate;
-                        }
-                    }
-                }
-                if (selectedCandidate == null) {
-                    // select minimum > requested
-                    for (final Resolution candidate : skinSource) {
-                        if (selectedCandidate == null || selectedCandidate.getArea() > candidate.getArea()) {
-                            selectedCandidate = candidate;
-                        }
-                    }
-                    assert selectedCandidate != null; // at least one resolution exists
-                }
-                selectedResolution = selectedCandidate;
-            }
-        }
+        final Resolution selectedResolution = resolution;
 
         final Image nextGroupFace;
         try {
@@ -446,6 +415,13 @@ public class JXCSkinLoader {
             }
         }
 
+        if (skin.getMinResolution().getWidth() > resolution.getWidth() || skin.getMinResolution().getHeight() > resolution.getHeight()) {
+            throw new JXCSkinException("resolution "+resolution+" is not supported by this skin");
+        }
+        if (resolution.getWidth() > skin.getMaxResolution().getWidth() || resolution.getHeight() > skin.getMaxResolution().getHeight()) {
+            throw new JXCSkinException("resolution "+resolution+" is not supported by this skin");
+        }
+
         return skin;
     }
 
@@ -471,7 +447,7 @@ public class JXCSkinLoader {
      * @throws JXCSkinException if the file cannot be loaded
      */
     private void load(@NotNull final JXCSkinSource skinSource, @NotNull final String dialogName, @NotNull final CrossfireServerConnection server, @NotNull final GuiStateManager guiStateManager, @NotNull final TooltipManager tooltipManager, @NotNull final JXCWindowRenderer windowRenderer, @NotNull final GUIElementListener elementListener, @NotNull final MetaserverModel metaserverModel, @NotNull final CommandQueue commandQueue, @Nullable final Gui gui, @NotNull final Shortcuts shortcuts, @NotNull final Commands commands, @NotNull final CurrentSpellManager currentSpellManager, @NotNull final CommandCallback commandCallback, @NotNull final Macros macros, @NotNull final Image nextGroupFace, @NotNull final Image prevGroupFace) throws JXCSkinException {
-        String resourceName = dialogName+"@"+skin.getSelectedResolution()+".skin";
+        String resourceName = dialogName+".skin";
 
         definedGUIElements.clear();
         try {
@@ -1885,16 +1861,21 @@ public class JXCSkinLoader {
      * @throws IOException if the command cannot be parsed
      */
     private void parseSkinName(@NotNull final String[] args) throws IOException {
-        if (args.length != 2) {
+        if (args.length != 4) {
             throw new IOException("syntax error");
         }
 
         final String newSkinName = args[1];
+        final Resolution minResolution = parseResolution(args[2]);
+        final Resolution maxResolution = parseResolution(args[3]);
         if (!newSkinName.matches("[-a-z_0-9]+")) {
             throw new IOException("invalid skin_name: "+newSkinName);
         }
+        if (minResolution.getWidth() > maxResolution.getWidth() || minResolution.getHeight() > maxResolution.getHeight()) {
+            throw new IOException("minimum resolution ("+minResolution+") must not exceed maximum resolution ("+maxResolution+")");
+        }
 
-        skin.setSkinName(newSkinName);
+        skin.setSkinName(newSkinName, minResolution, maxResolution);
     }
 
     /**
@@ -2006,6 +1987,21 @@ public class JXCSkinLoader {
         final GUIHTMLLabel tooltipLabel = new GUIHTMLLabel(tooltipManager, elementListener, "tooltip", 0, 0, 1, 1, null, font, Color.BLACK, Color.WHITE, "");
         tooltipLabel.setAutoResize(true);
         skin.setTooltipLabel(tooltipLabel);
+    }
+
+    /**
+     * Parses a resolution specification.
+     * @param text the resolution specification
+     * @return the resolution
+     * @throws IOException if the resolution specification cannot be parsed
+     */
+    @NotNull
+    private Resolution parseResolution(@NotNull final String text) throws IOException {
+        final Resolution resolution = Resolution.parse(true, text);
+        if (resolution == null) {
+            throw new IOException("invalid resolution: "+resolution);
+        }
+        return resolution;
     }
 
     /**

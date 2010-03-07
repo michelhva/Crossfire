@@ -22,16 +22,7 @@
 package com.realtime.crossfire.jxclient.skin.source;
 
 import com.realtime.crossfire.jxclient.skin.skin.JXCSkinException;
-import com.realtime.crossfire.jxclient.util.Resolution;
-import java.io.BufferedReader;
 import java.io.IOException;
-import java.io.InputStream;
-import java.io.InputStreamReader;
-import java.util.Collections;
-import java.util.HashSet;
-import java.util.Iterator;
-import java.util.Set;
-import org.jetbrains.annotations.NotNull;
 
 /**
  * Abstract base class for {@link JXCSkinSource} implementations.
@@ -40,68 +31,15 @@ import org.jetbrains.annotations.NotNull;
 public abstract class AbstractJXCSkinSource implements JXCSkinSource {
 
     /**
-     * Available resolutions for this skin.
-     */
-    @NotNull
-    private final Set<Resolution> resolutions = new HashSet<Resolution>();
-
-    /**
      * Checks that the skin exists and can be accessed.
      * @throws JXCSkinException if the skin does not exist or cannot be loaded
      */
     protected void checkAccess() throws JXCSkinException {
         try {
-            final InputStream is = getInputStream("resolutions");
-            try {
-                final InputStreamReader isr = new InputStreamReader(is, "UTF-8");
-                try {
-                    final BufferedReader br = new BufferedReader(isr);
-                    try {
-                        for (; ;) {
-                            final String line = br.readLine();
-                            if (line == null) {
-                                break;
-                            }
-
-                            final Resolution resolution = Resolution.parse(true, line);
-                            if (resolution == null) {
-                                throw new JXCSkinException(getURI("resolutions")+": invalid resolution '"+line+"' in resolutions file");
-                            }
-                            resolutions.add(resolution);
-                        }
-                    } finally {
-                        br.close();
-                    }
-                } finally {
-                    isr.close();
-                }
-            } finally {
-                is.close();
-            }
+            getInputStream("global.skin").close();
         } catch (final IOException ex) {
-            throw new JXCSkinException(getURI("resolutions")+": "+ex.getMessage());
+            throw new JXCSkinException(getURI("globak.skin")+": "+ex.getMessage());
         }
-
-        if (resolutions.isEmpty()) {
-            throw new JXCSkinException(getURI("resolutions")+": empty file");
-        }
-    }
-
-    /**
-     * {@inheritDoc}
-     */
-    @Override
-    public boolean containsResolution(@NotNull final Resolution resolution) {
-        return resolutions.contains(resolution);
-    }
-
-    /**
-     * {@inheritDoc}
-     */
-    @NotNull
-    @Override
-    public Iterator<Resolution> iterator() {
-        return Collections.unmodifiableSet(resolutions).iterator();
     }
 
 }

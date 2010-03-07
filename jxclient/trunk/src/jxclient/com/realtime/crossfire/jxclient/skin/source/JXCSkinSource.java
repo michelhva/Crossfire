@@ -22,7 +22,6 @@
 package com.realtime.crossfire.jxclient.skin.source;
 
 import com.realtime.crossfire.jxclient.skin.skin.JXCSkin;
-import com.realtime.crossfire.jxclient.util.Resolution;
 import java.io.IOException;
 import java.io.InputStream;
 import org.jetbrains.annotations.NotNull;
@@ -31,7 +30,7 @@ import org.jetbrains.annotations.NotNull;
  * Interface for providers of {@link JXCSkin} sources.
  * @author Andreas Kirschbaum
  */
-public interface JXCSkinSource extends Iterable<Resolution> {
+public interface JXCSkinSource {
 
     /**
      * Returns an {@link InputStream} for a resource name.
@@ -49,12 +48,5 @@ public interface JXCSkinSource extends Iterable<Resolution> {
      */
     @NotNull
     String getURI(@NotNull String name);
-
-    /**
-     * Returns whether this source defines a given resolution.
-     * @param resolution the resolution
-     * @return whether this source defines the resolution
-     */
-    boolean containsResolution(@NotNull Resolution resolution);
 
 }
