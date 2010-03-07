@@ -5,7 +5,7 @@ region darcap
 width 50
 height 50
 msg
-Modified: 2010-02-14 Nicolas Weeger
+Modified: 2010-03-07 Nicolas Weeger
 endmsg
 outdoor 1
 tile_path_1 world_116_101
@@ -8181,7 +8181,10 @@ y 30
 elevation 0
 end
 arch t_house2
-name town library
+name Darcap town library
+slaying /darcap/darcap/library_ground
+hp 18
+sp 9
 x 28
 y 30
 end
