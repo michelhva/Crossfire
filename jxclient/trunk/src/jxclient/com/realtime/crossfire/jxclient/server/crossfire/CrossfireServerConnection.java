@@ -338,7 +338,7 @@ public interface CrossfireServerConnection extends ServerConnection {
      * 63
      * @throws IllegalArgumentException if the map size if invalid
      */
-    void setMapSize(int mapWidth, int mapHeight);
+    void setPreferredMapSize(int mapWidth, int mapHeight);
 
     /**
      * Sets the maximum number of objects in the ground view. Must not be called
