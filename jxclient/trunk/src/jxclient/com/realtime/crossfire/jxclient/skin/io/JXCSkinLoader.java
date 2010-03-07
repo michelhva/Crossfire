@@ -87,7 +87,6 @@ import com.realtime.crossfire.jxclient.mapupdater.CfMapUpdater;
 import com.realtime.crossfire.jxclient.metaserver.MetaserverModel;
 import com.realtime.crossfire.jxclient.queue.CommandQueue;
 import com.realtime.crossfire.jxclient.server.crossfire.CrossfireServerConnection;
-import com.realtime.crossfire.jxclient.server.crossfire.DefaultCrossfireServerConnection;
 import com.realtime.crossfire.jxclient.server.crossfire.MessageTypes;
 import com.realtime.crossfire.jxclient.server.socket.UnknownCommandException;
 import com.realtime.crossfire.jxclient.settings.options.CheckBoxOption;
@@ -1686,16 +1685,7 @@ public class JXCSkinLoader {
         if (tileSize <= 0) {
             throw new IOException("invalid tile size "+tileSize);
         }
-        if (w%tileSize != 0) {
-            throw new IOException("map width "+w+" is not a multiple of the tile size "+tileSize);
-        }
-        if (h%tileSize != 0) {
-            throw new IOException("map height "+h+" is not a multiple of the tile size "+tileSize);
-        }
-        final int tmpW = w/tileSize;
-        final int tmpH = h/tileSize;
-        DefaultCrossfireServerConnection.validateMapSize(tmpW, tmpH);
-        skin.setMapSize(tmpW, tmpH);
+        skin.setMapSize((w+tileSize-1)/tileSize, (h+tileSize-1)/tileSize);
 
         final GUIElement element = new GUIMap(tooltipManager, elementListener, name, tileSize, x, y, w, h, server, facesManager, mapUpdater);
         insertGuiElement(element);

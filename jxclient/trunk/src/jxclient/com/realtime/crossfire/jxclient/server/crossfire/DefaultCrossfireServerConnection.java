@@ -53,6 +53,16 @@ import org.jetbrains.annotations.Nullable;
 public class DefaultCrossfireServerConnection extends DefaultServerConnection implements CrossfireServerConnection {
 
     /**
+     * The default map width when no "setup mapsize" command has been sent.
+     */
+    private static final int DEFAULT_MAP_WIDTH = 11;
+
+    /**
+     * The default map height when no "setup mapsize" command has been sent.
+     */
+    private static final int DEFAULT_MAP_HEIGHT = 11;
+
+    /**
      * Pattern to split a string by ":".
      */
     @NotNull
@@ -68,12 +78,34 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
     /**
      * The map width in tiles that is negotiated with the server.
      */
-    private int mapWidth = 17;
+    private int preferredMapWidth = 17;
 
     /**
      * The map height in tiles that is negotiated with the server.
      */
-    private int mapHeight = 13;
+    private int preferredMapHeight = 13;
+
+    /**
+     * The map width that is being negotiated with the server. Set to
+     * <code>0</code> when not negotiating.
+     */
+    private int pendingMapWidth = 0;
+
+    /**
+     * The map height that is being negotiated with the server. Set to
+     * <code>0</code> when not negotiating.
+     */
+    private int pendingMapHeight = 0;
+
+    /**
+     * The currently active map width.
+     */
+    private int currentMapWidth = DEFAULT_MAP_WIDTH;
+
+    /**
+     * The currently active map height.
+     */
+    private int currentMapHeight = DEFAULT_MAP_HEIGHT;
 
     /**
      * The number of ground view objects requested from the server.
@@ -757,9 +789,11 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
      * Called after the server connection has been established.
      */
     private void connected() {
-        for (final CrossfireUpdateMapListener listener : crossfireUpdateMapListeners) {
-            listener.newMap(mapWidth, mapHeight); // XXX: remove
-        }
+        pendingMapWidth = 0;
+        pendingMapHeight = 0;
+        setCurrentMapSize(DEFAULT_MAP_WIDTH, DEFAULT_MAP_HEIGHT);
+
+        fireNewMap();
 
         setClientSocketState(ClientSocketState.CONNECTING, ClientSocketState.VERSION);
         sendVersion(1023, 1027, "JXClient Java Client Pegasus 0.1");
@@ -1605,9 +1639,7 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
                 if (debugProtocol != null) {
                     debugProtocol.debugProtocolWrite("recv newmap");
                 }
-                for (final CrossfireUpdateMapListener listener : crossfireUpdateMapListeners) {
-                    listener.newMap(mapWidth, mapHeight);
-                }
+                fireNewMap();
                 notifyPacketWatcherListenersNodata(packet, start, args, end);
                 return;
 
@@ -1717,6 +1749,7 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
                 // XXX: hack to process "What is your name?" prompt even before addme_success is received
                 if (clientSocketState != ClientSocketState.CONNECTED) {
                     setClientSocketState(ClientSocketState.ADDME, ClientSocketState.CONNECTED);
+                    negotiateMapSize(preferredMapWidth, preferredMapHeight);
                 }
                 for (final CrossfireQueryListener listener : queryListeners) {
                     listener.commandQueryReceived(text, flags);
@@ -2247,6 +2280,7 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
     private void cmdAddmeSuccess() {
         if (clientSocketState != ClientSocketState.CONNECTED) {
             setClientSocketState(ClientSocketState.ADDME, ClientSocketState.CONNECTED);
+            negotiateMapSize(preferredMapWidth, preferredMapHeight);
         }
     }
 
@@ -2438,10 +2472,38 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
      */
     private void cmdVersion(final int csval, final int scval, @NotNull final String vinfo) {
         setClientSocketState(ClientSocketState.VERSION, ClientSocketState.SETUP);
-        sendSetup("want_pickup 1", "faceset 0", "sound 3", "sound2 3", "exp64 1", "map2cmd 1", "darkness 1", "newmapcmd 1", "facecache 1", "extendedTextInfos 1", "itemcmd 2", "spellmon 1", "tick 1", "mapsize "+mapWidth+"x"+mapHeight, "num_look_objects "+numLookObjects);
+        sendSetup("want_pickup 1", "faceset 0", "sound 3", "sound2 3", "exp64 1", "map2cmd 1", "darkness 1", "newmapcmd 1", "facecache 1", "extendedTextInfos 1", "itemcmd 2", "spellmon 1", "tick 1", "num_look_objects "+numLookObjects);
         for (final CrossfireStatsListener crossfireStatsListener : crossfireStatsListeners) {
             crossfireStatsListener.setSimpleWeaponSpeed(scval >= 1029);
         }
+    }
+
+    private void negotiateMapSize(final int mapWidth, final int mapHeight) {
+        if (debugProtocol != null) {
+            debugProtocol.debugProtocolWrite("negotiateMapSize: "+mapWidth+"x"+mapHeight);
+        }
+
+        if (clientSocketState == ClientSocketState.CONNECTING || clientSocketState == ClientSocketState.VERSION || clientSocketState == ClientSocketState.CONNECT_FAILED) {
+            if (debugProtocol != null) {
+                debugProtocol.debugProtocolWrite("negotiateMapSize: clientSocketState="+clientSocketState+", ignoring");
+            }
+            return;
+        }
+        if (pendingMapWidth != 0 || pendingMapHeight != 0) {
+            if (debugProtocol != null) {
+                debugProtocol.debugProtocolWrite("negotiateMapSize: already negotiating, ignoring");
+            }
+            return;
+        }
+        if (currentMapWidth == mapWidth && currentMapHeight == mapHeight) {
+            if (debugProtocol != null) {
+                debugProtocol.debugProtocolWrite("negotiateMapSize: same as current map size, ignoring");
+            }
+            return;
+        }
+        pendingMapWidth = mapWidth;
+        pendingMapHeight = mapHeight;
+        sendSetup("mapsize "+pendingMapWidth+"x"+pendingMapHeight);
     }
 
     /**
@@ -2614,8 +2676,60 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
                     throw new UnknownCommandException("the server is too old for this client since it does not support the itemcmd=2 setup option.");
                 }
             } else if (option.equals("mapsize")) {
-                if (!value.equals(mapWidth+"x"+mapHeight)) {
-                    throw new UnknownCommandException("the server is not suitable for this client since it does not support a map size of "+mapWidth+"x"+mapHeight+".");
+                final String[] tmp = value.split("x", 2);
+                if (tmp.length != 2) {
+                    throw new UnknownCommandException("the server returned 'setup mapsize "+value+"'.");
+                }
+                final int thisMapWidth;
+                final int thisMapHeight;
+                try {
+                    thisMapWidth = Integer.parseInt(tmp[0]);
+                    thisMapHeight = Integer.parseInt(tmp[1]);
+                } catch (final NumberFormatException ex) {
+                    throw new UnknownCommandException("the server returned 'setup mapsize "+value+"'.");
+                }
+                if (pendingMapWidth == 0 || pendingMapHeight == 0) {
+                    System.err.println("the server sent an unexpected 'setup mapsize "+value+"'.");
+                } else if (pendingMapWidth == thisMapWidth && pendingMapHeight == thisMapHeight) {
+                    pendingMapWidth = 0;
+                    pendingMapHeight = 0;
+                    setCurrentMapSize(thisMapWidth, thisMapHeight);
+                } else if (pendingMapWidth > thisMapWidth && pendingMapHeight > thisMapHeight) {
+                    pendingMapWidth = 0;
+                    pendingMapHeight = 0;
+                    negotiateMapSize(thisMapWidth, thisMapHeight);
+                } else if (pendingMapWidth > thisMapWidth) {
+                    final int tmpMapHeight = pendingMapHeight;
+                    pendingMapWidth = 0;
+                    pendingMapHeight = 0;
+                    negotiateMapSize(thisMapWidth, tmpMapHeight);
+                } else if (pendingMapHeight > thisMapHeight) {
+                    final int tmpMapWidth = pendingMapWidth;
+                    pendingMapWidth = 0;
+                    pendingMapHeight = 0;
+                    negotiateMapSize(tmpMapWidth, thisMapHeight);
+                } else if (pendingMapWidth == thisMapWidth) {
+                    final int tmpMapHeight = pendingMapHeight+2;
+                    pendingMapWidth = 0;
+                    pendingMapHeight = 0;
+                    negotiateMapSize(thisMapWidth, tmpMapHeight);
+                } else if (pendingMapHeight == thisMapHeight) {
+                    final int tmpMapWidth = pendingMapWidth+2;
+                    pendingMapWidth = 0;
+                    pendingMapHeight = 0;
+                    negotiateMapSize(tmpMapWidth, thisMapHeight);
+                } else if (pendingMapWidth <= pendingMapHeight) {
+                    final int tmpMapWidth = pendingMapWidth+2;
+                    final int tmpMapHeight = pendingMapHeight;
+                    pendingMapWidth = 0;
+                    pendingMapHeight = 0;
+                    negotiateMapSize(tmpMapWidth, tmpMapHeight);
+                } else {
+                    final int tmpMapWidth = pendingMapWidth;
+                    final int tmpMapHeight = pendingMapHeight+2;
+                    pendingMapWidth = 0;
+                    pendingMapHeight = 0;
+                    negotiateMapSize(tmpMapWidth, tmpMapHeight);
                 }
             } else if (option.equals("map2cmd")) {
                 if (!value.equals("1")) {
@@ -2646,11 +2760,13 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
             }
         }
 
-        setClientSocketState(ClientSocketState.SETUP, ClientSocketState.REQUESTINFO);
-        sendRequestinfo("image_info");
-        sendRequestinfo("skill_info");
-        sendRequestinfo("exp_table");
-        sendToggleextendedtext(MessageTypes.getAllTypes());
+        if (options.size() != 2 || !options.get(0).equals("mapsize")) {
+            setClientSocketState(ClientSocketState.SETUP, ClientSocketState.REQUESTINFO);
+            sendRequestinfo("image_info");
+            sendRequestinfo("skill_info");
+            sendRequestinfo("exp_table");
+            sendToggleextendedtext(MessageTypes.getAllTypes());
+        }
     }
 
     /**
@@ -2958,47 +3074,46 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
     }
 
     /**
-     * Validates a map size.
-     * @param mapWidth the map width in tiles; must be odd and between 3 and 63
-     * @param mapHeight the map height in tiles; must be odd and between 3 and
-     * 63
-     * @throws IllegalArgumentException if the map size if invalid
-     */
-    public static void validateMapSize(final int mapWidth, final int mapHeight) {
-        if (mapWidth%2 == 0) {
-            throw new IllegalArgumentException("map width is even");
-        }
-        if (mapHeight%2 == 0) {
-            throw new IllegalArgumentException("map height is even");
-        }
-        if (mapWidth < 3) {
-            throw new IllegalArgumentException("map width is less than 3");
-        }
-        if (mapWidth > 63) {
-            throw new IllegalArgumentException("map width is greater than 63");
-        }
-        if (mapHeight < 3) {
-            throw new IllegalArgumentException("map width is less than 3");
-        }
-        if (mapHeight > 63) {
-            throw new IllegalArgumentException("map width is greater than 63");
-        }
-    }
-
-    /**
      * {@inheritDoc}
      */
     @Override
     public void setPreferredMapSize(final int preferredMapWidth, final int preferredMapHeight) {
-        validateMapSize(preferredMapWidth, preferredMapHeight);
-        if (this.mapWidth == preferredMapWidth && this.mapHeight == preferredMapHeight) {
+        final int preferredMapWidth2 = Math.max(1, preferredMapWidth|1);
+        final int preferredMapHeight2 = Math.max(1, preferredMapHeight|1);
+        if (this.preferredMapWidth == preferredMapWidth2 && this.preferredMapHeight == preferredMapHeight2) {
             return;
         }
 
-        this.mapWidth = preferredMapWidth;
-        this.mapHeight = preferredMapHeight;
+        this.preferredMapWidth = preferredMapWidth2;
+        this.preferredMapHeight = preferredMapHeight2;
+
+        negotiateMapSize(this.preferredMapWidth, this.preferredMapHeight);
+    }
+
+    /**
+     * Sets the current map size as negotiated with the server.
+     * @param currentMapWidth the new map width
+     * @param currentMapHeight the new map hieght
+     */
+    private void setCurrentMapSize(final int currentMapWidth, final int currentMapHeight) {
+        if (this.currentMapWidth == currentMapWidth && this.currentMapHeight == currentMapHeight) {
+            return;
+        }
+
+        this.currentMapWidth = currentMapWidth;
+        this.currentMapHeight = currentMapHeight;
+        fireNewMap();
         for (final MapSizeListener listener : mapSizeListeners) {
-            listener.mapSizeChanged(preferredMapWidth, preferredMapHeight);
+            listener.mapSizeChanged(currentMapWidth, currentMapHeight);
+        }
+    }
+
+    /**
+     * Notifies all listeners that a "newmap" command has been received.
+     */
+    private void fireNewMap() {
+        for (final CrossfireUpdateMapListener listener : crossfireUpdateMapListeners) {
+            listener.newMap(currentMapWidth, currentMapHeight);
         }
     }
 
@@ -3018,7 +3133,7 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
      */
     @Override
     public int getMapWidth() {
-        return mapWidth;
+        return currentMapWidth;
     }
 
     /**
@@ -3026,7 +3141,7 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
      */
     @Override
     public int getMapHeight() {
-        return mapHeight;
+        return currentMapHeight;
     }
 
     /**
