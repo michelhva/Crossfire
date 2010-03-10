@@ -38,7 +38,6 @@ import com.realtime.crossfire.jxclient.server.crossfire.CrossfireServerConnectio
 import com.realtime.crossfire.jxclient.server.crossfire.MapSizeListener;
 import java.awt.Color;
 import java.awt.Graphics;
-import java.awt.Graphics2D;
 import java.awt.Transparency;
 import java.util.Set;
 import javax.swing.ImageIcon;
@@ -78,12 +77,12 @@ public class GUIMagicMap extends GUIElement {
     /**
      * The map width in tiles.
      */
-    private int mapWidth;
+    private int mapWidth = 0;
 
     /**
      * The map height in tiles.
      */
-    private int mapHeight;
+    private int mapHeight = 0;
 
     /**
      * The size of one tile.
@@ -173,47 +172,6 @@ public class GUIMagicMap extends GUIElement {
     };
 
     /**
-     * The {@link MapscrollListener} used to track player position changes into
-     * the magic map.
-     */
-    @NotNull
-    private final MapscrollListener mapscrollListener = new MapscrollListener() {
-        /** {@inheritDoc} */
-        @Override
-        public void mapScrolled(final int dx, final int dy) {
-            synchronized (bufferedImageSync) {
-                final Graphics2D g = createBufferGraphics();
-                try {
-                    final CfMap map = mapUpdater.getMap();
-                    final int dxPixels = dx*tileSize;
-                    final int dyPixels = dy*tileSize;
-                    if (Math.abs(dxPixels) >= getWidth() || Math.abs(dyPixels) >= getHeight()) {
-                        redrawTiles(g, map, 0, 0, getWidth()/tileSize, getHeight()/tileSize);
-                    } else {
-                        g.copyArea(dxPixels <= 0 ? 0 : dxPixels, dyPixels <= 0 ? 0 : dyPixels, dxPixels == 0 ? getWidth() : getWidth()-Math.abs(dxPixels), dyPixels == 0 ? getHeight() : getHeight()-Math.abs(dyPixels), -dxPixels, -dyPixels);
-                        g.setColor(Color.BLACK);
-                        if (dxPixels < 0) {
-                            redrawTiles(g, map, 0, 0, -dxPixels/tileSize, getHeight()/tileSize);
-                        } else if (dxPixels > 0) {
-                            redrawTiles(g, map, getWidth()/tileSize-dxPixels/tileSize, 0, getWidth()/tileSize, getHeight()/tileSize);
-                        }
-                        if (dyPixels < 0) {
-                            redrawTiles(g, map, 0, 0, getWidth()/tileSize, -dyPixels/tileSize);
-                        } else if (dyPixels > 0) {
-                            redrawTiles(g, map, 0, getHeight()/tileSize-dyPixels/tileSize, getWidth()/tileSize, getHeight()/tileSize);
-                        }
-                    }
-                    redrawSquare(g, map, (mapWidth-1)/2-dx, (mapHeight-1)/2-dy);
-                    markPlayer(g);
-                } finally {
-                    g.dispose();
-                }
-            }
-            setChanged();
-        }
-    };
-
-    /**
      * The {@link MapListener} registered to receive map updates.
      */
     @NotNull
@@ -265,28 +223,54 @@ public class GUIMagicMap extends GUIElement {
     };
 
     /**
-     * The {@link MapSizeListener} registered to receive changes of the map view
-     * size.
+     * The {@link MapscrollListener} registered to receive map_scroll commands.
+     */
+    @NotNull
+    private final MapscrollListener mapscrollListener = new MapscrollListener() {
+        /** {@inheritDoc} */
+        @Override
+        public void mapScrolled(final int dx, final int dy) {
+            synchronized (bufferedImageSync) {
+                final Graphics g = createBufferGraphics();
+                try {
+                    final CfMap map = mapUpdater.getMap();
+                    final int dxPixels = dx*tileSize;
+                    final int dyPixels = dy*tileSize;
+                    if (Math.abs(dxPixels) >= getWidth() || Math.abs(dyPixels) >= getHeight()) {
+                        redrawTiles(g, map, 0, 0, getWidth()/tileSize, getHeight()/tileSize);
+                    } else {
+                        g.copyArea(dxPixels <= 0 ? 0 : dxPixels, dyPixels <= 0 ? 0 : dyPixels, dxPixels == 0 ? getWidth() : getWidth()-Math.abs(dxPixels), dyPixels == 0 ? getHeight() : getHeight()-Math.abs(dyPixels), -dxPixels, -dyPixels);
+                        g.setColor(Color.BLACK);
+                        if (dxPixels < 0) {
+                            redrawTiles(g, map, 0, 0, -dxPixels/tileSize, getHeight()/tileSize);
+                        } else if (dxPixels > 0) {
+                            redrawTiles(g, map, getWidth()/tileSize-dxPixels/tileSize, 0, getWidth()/tileSize, getHeight()/tileSize);
+                        }
+                        if (dyPixels < 0) {
+                            redrawTiles(g, map, 0, 0, getWidth()/tileSize, -dyPixels/tileSize);
+                        } else if (dyPixels > 0) {
+                            redrawTiles(g, map, 0, getHeight()/tileSize-dyPixels/tileSize, getWidth()/tileSize, getHeight()/tileSize);
+                        }
+                    }
+                    redrawSquare(g, map, (mapWidth-1)/2-dx, (mapHeight-1)/2-dy);
+                    markPlayer(g);
+                } finally {
+                    g.dispose();
+                }
+            }
+            setChanged();
+        }
+    };
+
+    /**
+     * The {@link MapSizeListener} registered to detect map size changes.
      */
     @NotNull
     private final MapSizeListener mapSizeListener = new MapSizeListener() {
         /** {@inheritDoc} */
         @Override
         public void mapSizeChanged(final int mapWidth, final int mapHeight) {
-            GUIMagicMap.this.mapWidth = mapWidth;
-            GUIMagicMap.this.mapHeight = mapHeight;
-            offsetX = playerX-((mapWidth-1)/2)*tileSize;
-            offsetY = playerY-((mapHeight-1)/2)*tileSize;
-            synchronized (bufferedImageSync) {
-                final Graphics g = createBufferGraphics();
-                try {
-                    g.setColor(Color.BLACK);
-                    g.fillRect(0, 0, getWidth(), getHeight());
-                    redrawTiles(g, mapUpdater.getMap(), 0, 0, getWidth()/tileSize, getHeight()/tileSize);
-                } finally {
-                    g.dispose();
-                }
-            }
+            setMapSize(mapWidth, mapHeight);
         }
     };
 
@@ -328,12 +312,11 @@ public class GUIMagicMap extends GUIElement {
         playerY = h/2-tileSize/2;
 
         this.crossfireServerConnection.addMapSizeListener(mapSizeListener);
-        mapSizeListener.mapSizeChanged(crossfireServerConnection.getMapWidth(), crossfireServerConnection.getMapHeight());
-
         this.crossfireServerConnection.addCrossfireMagicmapListener(crossfireMagicmapListener);
+        this.mapUpdater.addCrossfireMapListener(mapListener);
         this.mapUpdater.addCrossfireNewmapListener(newmapListener);
         this.mapUpdater.addCrossfireMapscrollListener(mapscrollListener);
-        this.mapUpdater.addCrossfireMapListener(mapListener);
+        setMapSize(crossfireServerConnection.getMapWidth(), crossfireServerConnection.getMapHeight());
     }
 
     /**
@@ -448,6 +431,28 @@ public class GUIMagicMap extends GUIElement {
      */
     @Override
     protected void render(@NotNull final Graphics g) {
+    }
+
+    /**
+     * Sets the map size.
+     * @param mapWidth the map width in tiles
+     * @param mapHeight the map height in tiles
+     */
+    private void setMapSize(final int mapWidth, final int mapHeight) {
+        this.mapWidth = mapWidth;
+        this.mapHeight = mapHeight;
+        offsetX = playerX-((mapWidth-1)/2)*tileSize;
+        offsetY = playerY-((mapHeight-1)/2)*tileSize;
+        synchronized (bufferedImageSync) {
+            final Graphics g = createBufferGraphics();
+            try {
+                g.setColor(Color.BLACK);
+                g.fillRect(0, 0, getWidth(), getHeight());
+                redrawTiles(g, mapUpdater.getMap(), 0, 0, getWidth()/tileSize, getHeight()/tileSize);
+            } finally {
+                g.dispose();
+            }
+        }
     }
 
 }
