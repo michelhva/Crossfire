@@ -1647,7 +1647,7 @@ public class JXCSkinLoader {
         if (facesProvider == null) {
             throw new IOException("cannot create faces with size 4");
         }
-        final GUIElement element = new GUIMagicMap(tooltipManager, elementListener, name, x, y, w, h, server, mapUpdater, facesProvider);
+        final GUIElement element = new GUIMagicMap(tooltipManager, elementListener, name, x, y, w, h, mapUpdater, facesProvider, server);
         insertGuiElement(element);
     }
 
