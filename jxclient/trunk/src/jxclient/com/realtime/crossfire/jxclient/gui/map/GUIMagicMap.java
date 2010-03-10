@@ -100,14 +100,16 @@ public class GUIMagicMap extends GUIElement {
     private final int playerY;
 
     /**
-     * The x offset for the visible map area.
+     * The x-offset for drawing the left-most tile. Positive if the gui's area
+     * is larger than the map view; negative otherwise.
      */
-    private int offsetX;
+    private int offsetX = 0;
 
     /**
-     * The y offset for the visible map area.
+     * The y-offset for drawing the left-most tile. Positive if the gui's area
+     * is larger than the map view; negative otherwise.
      */
-    private int offsetY;
+    private int offsetY = 0;
 
     /**
      * The colors for displaying magic map data.
@@ -283,11 +285,11 @@ public class GUIMagicMap extends GUIElement {
      * @param y the y-coordinate for drawing this element to screen
      * @param w the width for drawing this element to screen
      * @param h the height for drawing this element to screen
-     * @param crossfireServerConnection the server connection to monitor
      * @param mapUpdater the map updater instance to use
      * @param facesProvider the faces provider for looking up faces
+     * @param crossfireServerConnection the server connection to monitor
      */
-    public GUIMagicMap(@NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final String name, final int x, final int y, final int w, final int h, @NotNull final CrossfireServerConnection crossfireServerConnection, @NotNull final CfMapUpdater mapUpdater, @NotNull final FacesProvider facesProvider) {
+    public GUIMagicMap(@NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final String name, final int x, final int y, final int w, final int h, @NotNull final CfMapUpdater mapUpdater, @NotNull final FacesProvider facesProvider, @NotNull final CrossfireServerConnection crossfireServerConnection) {
         super(tooltipManager, elementListener, name, x, y, w, h, Transparency.TRANSLUCENT);
         if (w <= 0 || h <= 0) {
             throw new IllegalArgumentException("area must be non-empty");
@@ -357,7 +359,7 @@ public class GUIMagicMap extends GUIElement {
      */
     private void cleanSquare(@NotNull final Graphics g, final int x, final int y) {
         g.setColor(Color.BLACK);
-        g.fillRect(x*tileSize+offsetX, y*tileSize+offsetY, tileSize, tileSize);
+        g.fillRect(offsetX+x*tileSize, offsetY+y*tileSize, tileSize, tileSize);
     }
 
     /**
@@ -374,12 +376,12 @@ public class GUIMagicMap extends GUIElement {
         }
         if (map.isFogOfWar(x, y) || x < 0 || y < 0 || x >= mapWidth || y >= mapHeight) {
             g.setColor(GUIMap.FOG_OF_WAR_COLOR);
-            g.fillRect(x*tileSize+offsetX, y*tileSize+offsetY, tileSize, tileSize);
+            g.fillRect(offsetX+x*tileSize, offsetY+y*tileSize, tileSize, tileSize);
         }
         final int darkness = map.getDarkness(x, y);
         if (darkness < 255) {
             g.setColor(DarknessColors.getDarknessColor(darkness));
-            g.fillRect(x*tileSize+offsetX, y*tileSize+offsetY, tileSize, tileSize);
+            g.fillRect(offsetX+x*tileSize, offsetY+y*tileSize, tileSize, tileSize);
         }
     }
 
@@ -392,8 +394,8 @@ public class GUIMagicMap extends GUIElement {
      * @param layer the layer to redraw
      */
     private void redrawSquare(@NotNull final Graphics g, @NotNull final CfMap map, final int x, final int y, final int layer) {
-        final int px = x*tileSize+offsetX;
-        final int py = y*tileSize+offsetY;
+        final int px = offsetX+x*tileSize;
+        final int py = offsetY+y*tileSize;
 
         final CfMapSquare headMapSquare = map.getHeadMapSquare(x, y, layer);
         if (headMapSquare != null) {

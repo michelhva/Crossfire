@@ -278,9 +278,9 @@ public class GUIMap extends GUIElement {
      * @param y the y-coordinate for drawing this element to screen
      * @param w the width for drawing this element to screen
      * @param h the height for drawing this element to screen
-     * @param mapUpdater the map updater instance
+     * @param mapUpdater the map updater instance to use
      * @param facesProvider the faces provider for looking up faces
-     * @param crossfireServerConnection the connection instance
+     * @param crossfireServerConnection the server connection to monitor
      */
     public GUIMap(@NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final String name, final int x, final int y, final int w, final int h, @NotNull final CfMapUpdater mapUpdater, @NotNull final FacesProvider facesProvider, @NotNull final CrossfireServerConnection crossfireServerConnection) {
         super(tooltipManager, elementListener, name, x, y, w, h, Transparency.OPAQUE);
@@ -341,16 +341,14 @@ public class GUIMap extends GUIElement {
      * Redraws one square if it has been changed. If it is unchanged ({@link
      * CfMapSquare#dirty} is unset), nothing is drawn.
      * @param g the graphics to draw into
-     * @param map the map to redraw
+     * @param map the map to draw
      * @param x the x-coordinate of the map tile to redraw
      * @param y the y-coordinate of the map tile to redraw
      */
     private void redrawSquare(@NotNull final Graphics g, @NotNull final CfMap map, final int x, final int y) {
         cleanSquare(g, x, y);
         final CfMapSquare mapSquare = map.getMapSquare(x, y);
-        final int px = offsetX+x*tileSize;
-        final int py = offsetY+y*tileSize;
-        redrawSquare(g, px, py, mapSquare);
+        redrawSquare(g, x, y, mapSquare);
         if (map.isFogOfWar(x, y)) {
             g.setColor(FOG_OF_WAR_COLOR);
             g.fillRect(offsetX+x*tileSize, offsetY+y*tileSize, tileSize, tileSize);
@@ -365,11 +363,13 @@ public class GUIMap extends GUIElement {
     /**
      * Redraws one layer of a square.
      * @param g the graphics to draw into
-     * @param px the x coordinate of the square to redraw
-     * @param py the y coordinate of the square to redraw
+     * @param x the x coordinate of the square to redraw
+     * @param y the y coordinate of the square to redraw
      * @param mapSquare the map square
      */
-    private void redrawSquare(@NotNull final Graphics g, final int px, final int py, @NotNull final CfMapSquare mapSquare) {
+    private void redrawSquare(@NotNull final Graphics g, final int x, final int y, @NotNull final CfMapSquare mapSquare) {
+        final int px = offsetX+x*tileSize;
+        final int py = offsetY+y*tileSize;
         final int mapSquareX = mapSquare.getX();
         final int mapSquareY = mapSquare.getY();
         for (int layer = 0; layer < CrossfireMap2Command.NUM_LAYERS; layer++) {
