@@ -37,9 +37,6 @@ import com.realtime.crossfire.jxclient.server.crossfire.CrossfireServerConnectio
 import com.realtime.crossfire.jxclient.server.crossfire.MapSizeListener;
 import java.awt.Color;
 import java.awt.Graphics;
-import java.awt.GraphicsConfiguration;
-import java.awt.GraphicsDevice;
-import java.awt.GraphicsEnvironment;
 import java.awt.Transparency;
 import java.awt.event.MouseEvent;
 import java.util.Set;
@@ -92,12 +89,6 @@ public class GUIMap extends GUIElement {
      * The map height in tiles.
      */
     private int mapHeight = 0;
-
-    /**
-     * The image used for empty tiles.
-     */
-    @NotNull
-    private final ImageIcon blackTile;
 
     /**
      * The size of one tile.
@@ -288,10 +279,6 @@ public class GUIMap extends GUIElement {
         this.facesProvider = facesProvider;
         this.crossfireServerConnection = crossfireServerConnection;
         tileSize = facesProvider.getSize();
-        final GraphicsEnvironment ge = GraphicsEnvironment.getLocalGraphicsEnvironment();
-        final GraphicsDevice gd = ge.getDefaultScreenDevice();
-        final GraphicsConfiguration gconf = gd.getDefaultConfiguration();
-        blackTile = new ImageIcon(gconf.createCompatibleImage(tileSize, tileSize, Transparency.OPAQUE));
         this.crossfireServerConnection.addMapSizeListener(mapSizeListener);
         this.mapUpdater.addCrossfireMapListener(mapListener);
         this.mapUpdater.addCrossfireNewmapListener(newmapListener);
@@ -334,7 +321,8 @@ public class GUIMap extends GUIElement {
      * @param y the y-coordinate of the square to clear
      */
     private void cleanSquare(@NotNull final Graphics g, final int x, final int y) {
-        g.drawImage(blackTile.getImage(), offsetX+x*tileSize, offsetY+y*tileSize, null);
+        g.setColor(Color.BLACK);
+        g.fillRect(offsetX+x*tileSize, offsetY+y*tileSize, tileSize, tileSize);
     }
 
     /**
