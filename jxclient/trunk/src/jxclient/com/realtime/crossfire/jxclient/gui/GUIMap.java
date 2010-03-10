@@ -22,7 +22,7 @@
 package com.realtime.crossfire.jxclient.gui;
 
 import com.realtime.crossfire.jxclient.faces.Face;
-import com.realtime.crossfire.jxclient.faces.FacesManager;
+import com.realtime.crossfire.jxclient.faces.FacesProvider;
 import com.realtime.crossfire.jxclient.gui.gui.GUIElement;
 import com.realtime.crossfire.jxclient.gui.gui.GUIElementListener;
 import com.realtime.crossfire.jxclient.gui.gui.TooltipManager;
@@ -42,7 +42,6 @@ import java.awt.GraphicsDevice;
 import java.awt.GraphicsEnvironment;
 import java.awt.Transparency;
 import java.awt.event.MouseEvent;
-import java.io.IOException;
 import java.util.Set;
 import javax.swing.ImageIcon;
 import org.jetbrains.annotations.NotNull;
@@ -79,10 +78,10 @@ public class GUIMap extends GUIElement {
     private final CrossfireServerConnection crossfireServerConnection;
 
     /**
-     * The instance for looking up faces.
+     * The {@link FacesProvider} for looking up faces.
      */
     @NotNull
-    private final FacesManager facesManager;
+    private final FacesProvider facesProvider;
 
     /**
      * The map updater instance.
@@ -105,11 +104,6 @@ public class GUIMap extends GUIElement {
      */
     @NotNull
     private final ImageIcon blackTile;
-
-    /**
-     * Whether double sized imaged are displayed.
-     */
-    private final boolean useBigImages;
 
     /**
      * The size of one tile.
@@ -292,31 +286,21 @@ public class GUIMap extends GUIElement {
      * Creates a new instance.
      * @param tooltipManager the tooltip manager to update
      * @param elementListener the element listener to notify
-     * @param tileSize the size of one tile in pixels
      * @param name the name of this element
      * @param x the x-coordinate for drawing this element to screen
      * @param y the y-coordinate for drawing this element to screen
      * @param w the width for drawing this element to screen
      * @param h the height for drawing this element to screen
      * @param crossfireServerConnection the connection instance
-     * @param facesManager the instance for looking up faces
+     * @param facesProvider the faces provider for looking up faces
      * @param mapUpdater the map updater instance
-     * @throws IOException tf an I/O error occurs
      */
-    public GUIMap(@NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final String name, final int tileSize, final int x, final int y, final int w, final int h, @NotNull final CrossfireServerConnection crossfireServerConnection, @NotNull final FacesManager facesManager, @NotNull final CfMapUpdater mapUpdater) throws IOException {
+    public GUIMap(@NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final String name, final int x, final int y, final int w, final int h, @NotNull final CrossfireServerConnection crossfireServerConnection, @NotNull final FacesProvider facesProvider, @NotNull final CfMapUpdater mapUpdater) {
         super(tooltipManager, elementListener, name, x, y, w, h, Transparency.OPAQUE);
         this.crossfireServerConnection = crossfireServerConnection;
-        this.facesManager = facesManager;
+        this.facesProvider = facesProvider;
         this.mapUpdater = mapUpdater;
-        if (tileSize == 32) {
-            useBigImages = false;
-        } else if (tileSize == 64) {
-            useBigImages = true;
-        } else {
-            throw new IOException("invalid tile size "+tileSize);
-        }
-
-        this.tileSize = tileSize;
+        tileSize = facesProvider.getSize();
         final GraphicsEnvironment ge = GraphicsEnvironment.getLocalGraphicsEnvironment();
         final GraphicsDevice gd = ge.getDefaultScreenDevice();
         final GraphicsConfiguration gconf = gd.getDefaultConfiguration();
@@ -431,7 +415,7 @@ public class GUIMap extends GUIElement {
      * @param offsetY the y-offset for shifting the original face
      */
     private void paintImage(@NotNull final Graphics g, @NotNull final Face face, final int px, final int py, final int offsetX, final int offsetY) {
-        final ImageIcon imageIcon = useBigImages ? facesManager.getScaledImageIcon(face.getFaceNum()) : facesManager.getOriginalImageIcon(face.getFaceNum());
+        final ImageIcon imageIcon = facesProvider.getImageIcon(face.getFaceNum());
         final int sx = imageIcon.getIconWidth()-offsetX;
         final int sy = imageIcon.getIconHeight()-offsetY;
         g.drawImage(imageIcon.getImage(), px, py, px+tileSize, py+tileSize, sx-tileSize, sy-tileSize, sx, sy, null);

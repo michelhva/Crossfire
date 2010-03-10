@@ -22,7 +22,7 @@
 package com.realtime.crossfire.jxclient.gui;
 
 import com.realtime.crossfire.jxclient.faces.Face;
-import com.realtime.crossfire.jxclient.faces.FacesManager;
+import com.realtime.crossfire.jxclient.faces.FacesProvider;
 import com.realtime.crossfire.jxclient.gui.gui.GUIElement;
 import com.realtime.crossfire.jxclient.gui.gui.GUIElementListener;
 import com.realtime.crossfire.jxclient.gui.gui.TooltipManager;
@@ -64,10 +64,10 @@ public class GUIMagicMap extends GUIElement {
     private final CfMapUpdater mapUpdater;
 
     /**
-     * The {@link FacesManager} instance for looking up faces.
+     * The {@link FacesProvider} for looking up faces.
      */
     @NotNull
-    private final FacesManager facesManager;
+    private final FacesProvider facesProvider;
 
     /**
      * The {@link CrossfireServerConnection} to monitor.
@@ -295,20 +295,20 @@ public class GUIMagicMap extends GUIElement {
      * @param tooltipManager the tooltip manager to update
      * @param elementListener the element listener to notify
      * @param name the name of this element
-     * @param tileSize the size of one tile in pixels
      * @param x the x-coordinate for drawing this element to screen
      * @param y the y-coordinate for drawing this element to screen
      * @param w the width for drawing this element to screen
      * @param h the height for drawing this element to screen
      * @param crossfireServerConnection the server connection to monitor
      * @param mapUpdater the map updater instance to use
-     * @param facesManager the faces manager instance to use
+     * @param facesProvider the faces provider for looking up faces
      */
-    public GUIMagicMap(@NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final String name, final int tileSize, final int x, final int y, final int w, final int h, @NotNull final CrossfireServerConnection crossfireServerConnection, @NotNull final CfMapUpdater mapUpdater, @NotNull final FacesManager facesManager) {
+    public GUIMagicMap(@NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final String name, final int x, final int y, final int w, final int h, @NotNull final CrossfireServerConnection crossfireServerConnection, @NotNull final CfMapUpdater mapUpdater, @NotNull final FacesProvider facesProvider) {
         super(tooltipManager, elementListener, name, x, y, w, h, Transparency.TRANSLUCENT);
         if (w <= 0 || h <= 0) {
             throw new IllegalArgumentException("area must be non-empty");
         }
+        tileSize = facesProvider.getSize();
         if (w%tileSize != 0) {
             throw new IllegalArgumentException("width is not a multiple of "+tileSize);
         }
@@ -322,9 +322,8 @@ public class GUIMagicMap extends GUIElement {
             throw new IllegalArgumentException("height is not an odd number of tiles");
         }
         this.mapUpdater = mapUpdater;
-        this.facesManager = facesManager;
+        this.facesProvider = facesProvider;
         this.crossfireServerConnection = crossfireServerConnection;
-        this.tileSize = tileSize;
         playerX = w/2-tileSize/2;
         playerY = h/2-tileSize/2;
 
@@ -417,7 +416,7 @@ public class GUIMagicMap extends GUIElement {
         if (headMapSquare != null) {
             final Face headFace = headMapSquare.getFace(layer);
             assert headFace != null; // getHeadMapSquare() would have been cleared in this case
-            final ImageIcon img = facesManager.getMagicMapImageIcon(headFace.getFaceNum());
+            final ImageIcon img = facesProvider.getImageIcon(headFace.getFaceNum());
             final int dx = headMapSquare.getX()-map.getMapSquare(x, y).getX();
             final int dy = headMapSquare.getY()-map.getMapSquare(x, y).getY();
             assert dx > 0 || dy > 0;
@@ -428,7 +427,7 @@ public class GUIMagicMap extends GUIElement {
 
         final Face face = map.getFace(x, y, layer);
         if (face != null) {
-            final ImageIcon img = facesManager.getMagicMapImageIcon(face.getFaceNum());
+            final ImageIcon img = facesProvider.getImageIcon(face.getFaceNum());
             final int sx = img.getIconWidth();
             final int sy = img.getIconHeight();
             g.drawImage(img.getImage(), px, py, px+tileSize, py+tileSize, sx-tileSize, sy-tileSize, sx, sy, null);
