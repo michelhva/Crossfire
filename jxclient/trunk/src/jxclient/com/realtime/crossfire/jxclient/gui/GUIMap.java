@@ -72,10 +72,10 @@ public class GUIMap extends GUIElement {
     private static final float MAX_DARKNESS_ALPHA = 0.7F;
 
     /**
-     * The connection instance.
+     * The {@link CfMapUpdater} instance to use.
      */
     @NotNull
-    private final CrossfireServerConnection crossfireServerConnection;
+    private final CfMapUpdater mapUpdater;
 
     /**
      * The {@link FacesProvider} for looking up faces.
@@ -84,10 +84,10 @@ public class GUIMap extends GUIElement {
     private final FacesProvider facesProvider;
 
     /**
-     * The map updater instance.
+     * The {@link CrossfireServerConnection} to monitor.
      */
     @NotNull
-    private final CfMapUpdater mapUpdater;
+    private final CrossfireServerConnection crossfireServerConnection;
 
     /**
      * The map width in tiles.
@@ -161,11 +161,11 @@ public class GUIMap extends GUIElement {
         /** {@inheritDoc} */
         @Override
         public void mapChanged(@NotNull final CfMap map, @NotNull final Set<CfMapSquare> changedSquares) {
+            final int x0 = map.getOffsetX();
+            final int y0 = map.getOffsetY();
             synchronized (bufferedImageSync) {
                 final Graphics g = createBufferGraphics();
                 try {
-                    final int x0 = map.getOffsetX();
-                    final int y0 = map.getOffsetY();
                     for (final CfMapSquare mapSquare : changedSquares) {
                         final int x = mapSquare.getX()+x0;
                         if (displayMinX <= x && x < displayMaxX) {
@@ -271,7 +271,7 @@ public class GUIMap extends GUIElement {
     };
 
     /**
-     * The listener to registered to detect map size changes.
+     * The {@link MapSizeListener} registered to detect map size changes.
      */
     @NotNull
     private final MapSizeListener mapSizeListener = new MapSizeListener() {
@@ -291,26 +291,24 @@ public class GUIMap extends GUIElement {
      * @param y the y-coordinate for drawing this element to screen
      * @param w the width for drawing this element to screen
      * @param h the height for drawing this element to screen
-     * @param crossfireServerConnection the connection instance
-     * @param facesProvider the faces provider for looking up faces
      * @param mapUpdater the map updater instance
+     * @param facesProvider the faces provider for looking up faces
+     * @param crossfireServerConnection the connection instance
      */
-    public GUIMap(@NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final String name, final int x, final int y, final int w, final int h, @NotNull final CrossfireServerConnection crossfireServerConnection, @NotNull final FacesProvider facesProvider, @NotNull final CfMapUpdater mapUpdater) {
+    public GUIMap(@NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final String name, final int x, final int y, final int w, final int h, @NotNull final CfMapUpdater mapUpdater, @NotNull final FacesProvider facesProvider, @NotNull final CrossfireServerConnection crossfireServerConnection) {
         super(tooltipManager, elementListener, name, x, y, w, h, Transparency.OPAQUE);
-        this.crossfireServerConnection = crossfireServerConnection;
-        this.facesProvider = facesProvider;
         this.mapUpdater = mapUpdater;
+        this.facesProvider = facesProvider;
+        this.crossfireServerConnection = crossfireServerConnection;
         tileSize = facesProvider.getSize();
         final GraphicsEnvironment ge = GraphicsEnvironment.getLocalGraphicsEnvironment();
         final GraphicsDevice gd = ge.getDefaultScreenDevice();
         final GraphicsConfiguration gconf = gd.getDefaultConfiguration();
         blackTile = new ImageIcon(gconf.createCompatibleImage(tileSize, tileSize, Transparency.OPAQUE));
-
+        this.crossfireServerConnection.addMapSizeListener(mapSizeListener);
         this.mapUpdater.addCrossfireMapListener(mapListener);
         this.mapUpdater.addCrossfireNewmapListener(newmapListener);
         this.mapUpdater.addCrossfireMapscrollListener(mapscrollListener);
-
-        this.crossfireServerConnection.addMapSizeListener(mapSizeListener);
         setMapSize(crossfireServerConnection.getMapWidth(), crossfireServerConnection.getMapHeight());
     }
 
@@ -459,8 +457,14 @@ public class GUIMap extends GUIElement {
     }
 
     /**
-     * Sets the map size. Calculates fields <code>displayMin/MaxX/Y</code> and
-     * <code>offsetX/Y</code>.
+     * {@inheritDoc}
+     */
+    @Override
+    protected void render(@NotNull final Graphics g) {
+    }
+
+    /**
+     * Sets the map size.
      * @param mapWidth the map width in tiles
      * @param mapHeight the map height in tiles
      */
@@ -500,13 +504,6 @@ public class GUIMap extends GUIElement {
                 g.dispose();
             }
         }
-    }
-
-    /**
-     * {@inheritDoc}
-     */
-    @Override
-    protected void render(@NotNull final Graphics g) {
     }
 
 }
