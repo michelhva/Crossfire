@@ -24,6 +24,8 @@ package com.realtime.crossfire.jxclient.skin.io;
 import com.realtime.crossfire.jxclient.commands.Commands;
 import com.realtime.crossfire.jxclient.commands.Macros;
 import com.realtime.crossfire.jxclient.faces.FacesManager;
+import com.realtime.crossfire.jxclient.faces.FacesProviderFactory;
+import com.realtime.crossfire.jxclient.faces.FacesProvider;
 import com.realtime.crossfire.jxclient.gui.GUIMagicMap;
 import com.realtime.crossfire.jxclient.gui.GUIMap;
 import com.realtime.crossfire.jxclient.gui.GUIPicture;
@@ -182,6 +184,13 @@ public class JXCSkinLoader {
     private final FacesManager facesManager;
 
     /**
+     * The {@link FacesProviderFactory} instance for creating faces provider
+     * instances.
+     */
+    @NotNull
+    private final FacesProviderFactory facesProviderFactory;
+
+    /**
      * The {@link Stats} instance to use.
      */
     @NotNull
@@ -316,6 +325,7 @@ public class JXCSkinLoader {
         this.floorView = floorView;
         this.spellsManager = spellsManager;
         this.facesManager = facesManager;
+        facesProviderFactory = new FacesProviderFactory(facesManager);
         this.stats = stats;
         this.mapUpdater = mapUpdater;
         this.defaultKeyBindings = defaultKeyBindings;
@@ -1633,7 +1643,11 @@ public class JXCSkinLoader {
         final int y = expressionParser.parseInt(args[3]);
         final int w = expressionParser.parseInt(args[4]);
         final int h = expressionParser.parseInt(args[5]);
-        final GUIElement element = new GUIMagicMap(tooltipManager, elementListener, name, x, y, w, h, server, mapUpdater, facesManager);
+        final FacesProvider facesProvider = facesProviderFactory.getFacesProvider(4);
+        if (facesProvider == null) {
+            throw new IOException("cannot create faces with size 4");
+        }
+        final GUIElement element = new GUIMagicMap(tooltipManager, elementListener, name, x, y, w, h, server, mapUpdater, facesProvider);
         insertGuiElement(element);
     }
 
@@ -1663,7 +1677,11 @@ public class JXCSkinLoader {
         }
         skin.setMapSize((w+tileSize-1)/tileSize, (h+tileSize-1)/tileSize);
 
-        final GUIElement element = new GUIMap(tooltipManager, elementListener, name, tileSize, x, y, w, h, server, facesManager, mapUpdater);
+        final FacesProvider facesProvider = facesProviderFactory.getFacesProvider(tileSize);
+        if (facesProvider == null) {
+            throw new IOException("cannot create faces with size "+tileSize);
+        }
+        final GUIElement element = new GUIMap(tooltipManager, elementListener, name, x, y, w, h, server, facesProvider, mapUpdater);
         insertGuiElement(element);
     }
 
