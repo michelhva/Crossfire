@@ -112,7 +112,7 @@ public class GUIMap extends GUIElement {
     private final boolean useBigImages;
 
     /**
-     * The size of one tile. Either <code>32</code> or <code>64</code>.
+     * The size of one tile.
      */
     private final int tileSize;
 
@@ -292,6 +292,7 @@ public class GUIMap extends GUIElement {
      * Creates a new instance.
      * @param tooltipManager the tooltip manager to update
      * @param elementListener the element listener to notify
+     * @param tileSize the size of one tile in pixels
      * @param name the name of this element
      * @param x the x-coordinate for drawing this element to screen
      * @param y the y-coordinate for drawing this element to screen
@@ -300,7 +301,6 @@ public class GUIMap extends GUIElement {
      * @param crossfireServerConnection the connection instance
      * @param facesManager the instance for looking up faces
      * @param mapUpdater the map updater instance
-     * @param tileSize the size of one tile in pixels
      * @throws IOException tf an I/O error occurs
      */
     public GUIMap(@NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final String name, final int tileSize, final int x, final int y, final int w, final int h, @NotNull final CrossfireServerConnection crossfireServerConnection, @NotNull final FacesManager facesManager, @NotNull final CfMapUpdater mapUpdater) throws IOException {
