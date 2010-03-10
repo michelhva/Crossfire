@@ -37,6 +37,12 @@ public class DarknessColors {
     private static final float MAX_DARKNESS_ALPHA = 0.7F;
 
     /**
+     * The color to use for overlaying fog-of-war tiles.
+     */
+    @NotNull
+    public static final Color FOG_OF_WAR_COLOR = new Color(0, 0, 0.5F, 0.5F);
+
+    /**
      * Cache to lookup darkness overlay colors. Maps darkness value to overlay
      * color. Not yet allocated entries are set to <code>null</code>.
      */

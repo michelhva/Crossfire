@@ -213,7 +213,7 @@ public class GUIMagicMap extends GUIElement {
                 try {
                     g.setColor(Color.BLACK);
                     g.fillRect(0, 0, getWidth(), getHeight());
-                    g.setColor(GUIMap.FOG_OF_WAR_COLOR);
+                    g.setColor(DarknessColors.FOG_OF_WAR_COLOR);
                     g.fillRect(0, 0, getWidth(), getHeight());
                     markPlayer(g);
                 } finally {
@@ -295,24 +295,11 @@ public class GUIMagicMap extends GUIElement {
             throw new IllegalArgumentException("area must be non-empty");
         }
         tileSize = facesProvider.getSize();
-        if (w%tileSize != 0) {
-            throw new IllegalArgumentException("width is not a multiple of "+tileSize);
-        }
-        if (h%tileSize != 0) {
-            throw new IllegalArgumentException("height is not a multiple of "+tileSize);
-        }
-        if ((w/tileSize)%2 != 1) {
-            throw new IllegalArgumentException("width is not an odd number of tiles");
-        }
-        if ((h/tileSize)%2 != 1) {
-            throw new IllegalArgumentException("height is not an odd number of tiles");
-        }
         this.mapUpdater = mapUpdater;
         this.facesProvider = facesProvider;
         this.crossfireServerConnection = crossfireServerConnection;
         playerX = w/2-tileSize/2;
         playerY = h/2-tileSize/2;
-
         this.crossfireServerConnection.addMapSizeListener(mapSizeListener);
         this.crossfireServerConnection.addCrossfireMagicmapListener(crossfireMagicmapListener);
         this.mapUpdater.addCrossfireMapListener(mapListener);
@@ -332,6 +319,16 @@ public class GUIMagicMap extends GUIElement {
         mapUpdater.removeCrossfireNewmapListener(newmapListener);
         mapUpdater.removeCrossfireMapscrollListener(mapscrollListener);
         mapUpdater.removeCrossfireMapListener(mapListener);
+    }
+
+    /**
+     * Redraws the complete map view.
+     * @param g the graphics to draw into
+     */
+    private void redrawAll(@NotNull final Graphics g) {
+        g.setColor(Color.BLACK);
+        g.fillRect(0, 0, getWidth(), getHeight());
+        redrawTiles(g, mapUpdater.getMap(), 0, 0, getWidth()/tileSize, getHeight()/tileSize);
     }
 
     /**
@@ -375,7 +372,7 @@ public class GUIMagicMap extends GUIElement {
             redrawSquare(g, map, x, y, layer);
         }
         if (map.isFogOfWar(x, y) || x < 0 || y < 0 || x >= mapWidth || y >= mapHeight) {
-            g.setColor(GUIMap.FOG_OF_WAR_COLOR);
+            g.setColor(DarknessColors.FOG_OF_WAR_COLOR);
             g.fillRect(offsetX+x*tileSize, offsetY+y*tileSize, tileSize, tileSize);
         }
         final int darkness = map.getDarkness(x, y);
@@ -448,9 +445,7 @@ public class GUIMagicMap extends GUIElement {
         synchronized (bufferedImageSync) {
             final Graphics g = createBufferGraphics();
             try {
-                g.setColor(Color.BLACK);
-                g.fillRect(0, 0, getWidth(), getHeight());
-                redrawTiles(g, mapUpdater.getMap(), 0, 0, getWidth()/tileSize, getHeight()/tileSize);
+                redrawAll(g);
             } finally {
                 g.dispose();
             }
