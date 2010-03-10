@@ -213,24 +213,24 @@ public class GUIMap extends GUIElement {
                 try {
                     g.copyArea(offsetX+(x+dx)*tileSize, offsetY+(y+dy)*tileSize, w*tileSize, h*tileSize, -dx*tileSize, -dy*tileSize);
 
-                    for (int yy = displayMinY; yy < Math.min(y, displayMaxY); yy++) {
+                    for (int yy = displayMinY; yy < Math.min(y, displayMaxY)+1; yy++) {
                         for (int xx = displayMinX; xx < displayMaxX; xx++) {
                             redrawSquare(g, mapUpdater.getMap(), xx, yy);
                         }
                     }
 
-                    for (int yy = Math.max(y+h, displayMinY); yy < displayMaxY; yy++) {
+                    for (int yy = Math.max(y+h, displayMinY)-1; yy < displayMaxY; yy++) {
                         for (int xx = displayMinX; xx < displayMaxX; xx++) {
                             redrawSquare(g, mapUpdater.getMap(), xx, yy);
                         }
                     }
 
                     for (int yy = Math.max(y, displayMinY); yy < Math.min(y+h, displayMaxY); yy++) {
-                        for (int xx = displayMinX; xx < Math.min(x, displayMaxX); xx++) {
+                        for (int xx = displayMinX; xx < Math.min(x, displayMaxX)+1; xx++) {
                             redrawSquare(g, mapUpdater.getMap(), xx, yy);
                         }
 
-                        for (int xx = Math.max(x+w, displayMinX); xx < displayMaxX; xx++) {
+                        for (int xx = Math.max(x+w, displayMinX)-1; xx < displayMaxX; xx++) {
                             redrawSquare(g, mapUpdater.getMap(), xx, yy);
                         }
                     }
