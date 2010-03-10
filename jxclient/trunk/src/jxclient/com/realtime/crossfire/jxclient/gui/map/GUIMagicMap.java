@@ -290,7 +290,7 @@ public class GUIMagicMap extends GUIElement {
      * @param crossfireServerConnection the server connection to monitor
      */
     public GUIMagicMap(@NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final String name, final int x, final int y, final int w, final int h, @NotNull final CfMapUpdater mapUpdater, @NotNull final FacesProvider facesProvider, @NotNull final CrossfireServerConnection crossfireServerConnection) {
-        super(tooltipManager, elementListener, name, x, y, w, h, Transparency.TRANSLUCENT);
+        super(tooltipManager, elementListener, name, x, y, w, h, Transparency.OPAQUE);
         if (w <= 0 || h <= 0) {
             throw new IllegalArgumentException("area must be non-empty");
         }
