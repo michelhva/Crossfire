@@ -21,8 +21,8 @@
 
 package com.realtime.crossfire.jxclient.faces;
 
-import org.jetbrains.annotations.NotNull;
 import javax.swing.ImageIcon;
+import org.jetbrains.annotations.NotNull;
 
 /**
  * A {@link FacesProvider} that returns faces scaled to 64x64 pixels.
