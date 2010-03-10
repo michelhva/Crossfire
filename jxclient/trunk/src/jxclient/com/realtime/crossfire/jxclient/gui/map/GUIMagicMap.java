@@ -378,7 +378,7 @@ public class GUIMagicMap extends GUIElement {
         }
         final int darkness = map.getDarkness(x, y);
         if (darkness < 255) {
-            g.setColor(GUIMap.getDarknessColor(darkness));
+            g.setColor(DarknessColors.getDarknessColor(darkness));
             g.fillRect(x*tileSize+offsetX, y*tileSize+offsetY, tileSize, tileSize);
         }
     }

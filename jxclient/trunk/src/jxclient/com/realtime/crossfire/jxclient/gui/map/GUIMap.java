@@ -66,12 +66,6 @@ public class GUIMap extends GUIElement {
     public static final Color FOG_OF_WAR_COLOR = new Color(0, 0, 0.5F, 0.5F);
 
     /**
-     * The minimum darkness alpha value; it is used for completely black tiles.
-     * The maximum is 0.0F for full bright tiles.
-     */
-    private static final float MAX_DARKNESS_ALPHA = 0.7F;
-
-    /**
      * The {@link CfMapUpdater} instance to use.
      */
     @NotNull
@@ -145,13 +139,6 @@ public class GUIMap extends GUIElement {
      * is larger than the map view; negative otherwise.
      */
     private int offsetY = 0;
-
-    /**
-     * Cache to lookup darkness overlay colors. Maps darkness value to overlay
-     * color. Not yet allocated entries are set to <code>null</code>.
-     */
-    @NotNull
-    private static final Color[] darknessColors = new Color[256];
 
     /**
      * The {@link MapListener} registered to receive map updates.
@@ -370,7 +357,7 @@ public class GUIMap extends GUIElement {
         }
         final int darkness = map.getDarkness(x, y);
         if (darkness < 255) {
-            g.setColor(getDarknessColor(darkness));
+            g.setColor(DarknessColors.getDarknessColor(darkness));
             g.fillRect(offsetX+x*tileSize, offsetY+y*tileSize, tileSize, tileSize);
         }
     }
@@ -440,20 +427,6 @@ public class GUIMap extends GUIElement {
         case MouseEvent.BUTTON3:
             break;
         }
-    }
-
-    /**
-     * Returns an overlay color for a darkness value.
-     * @param darkness the darkness value between 0 and 255
-     * @return the overlay color
-     */
-    public static synchronized Color getDarknessColor(final int darkness) {
-        if (darknessColors[darkness] == null) {
-            final float alpha = MAX_DARKNESS_ALPHA*(255-darkness)/255F;
-            darknessColors[darkness] = new Color(0, 0, 0, alpha);
-        }
-
-        return darknessColors[darkness];
     }
 
     /**
