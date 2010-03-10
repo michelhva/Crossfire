@@ -57,12 +57,6 @@ public class GUIMap extends GUIElement {
     private static final long serialVersionUID = 1;
 
     /**
-     * The color to use for overlaying fog-of-war tiles.
-     */
-    @NotNull
-    public static final Color FOG_OF_WAR_COLOR = new Color(0, 0, 0.5F, 0.5F);
-
-    /**
      * The {@link CfMapUpdater} instance to use.
      */
     @NotNull
@@ -275,10 +269,10 @@ public class GUIMap extends GUIElement {
      */
     public GUIMap(@NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final String name, final int x, final int y, final int w, final int h, @NotNull final CfMapUpdater mapUpdater, @NotNull final FacesProvider facesProvider, @NotNull final CrossfireServerConnection crossfireServerConnection) {
         super(tooltipManager, elementListener, name, x, y, w, h, Transparency.OPAQUE);
+        tileSize = facesProvider.getSize();
         this.mapUpdater = mapUpdater;
         this.facesProvider = facesProvider;
         this.crossfireServerConnection = crossfireServerConnection;
-        tileSize = facesProvider.getSize();
         this.crossfireServerConnection.addMapSizeListener(mapSizeListener);
         this.mapUpdater.addCrossfireMapListener(mapListener);
         this.mapUpdater.addCrossfireNewmapListener(newmapListener);
@@ -305,10 +299,21 @@ public class GUIMap extends GUIElement {
     private void redrawAll(@NotNull final Graphics g) {
         g.setColor(Color.BLACK);
         g.fillRect(0, 0, getWidth(), getHeight());
+        redrawTiles(g, mapUpdater.getMap(), displayMinX, displayMinY, displayMaxX, displayMaxY);
+    }
 
-        final CfMap map = mapUpdater.getMap();
-        for (int y = displayMinY; y < displayMaxY; y++) {
-            for (int x = displayMinX; x < displayMaxX; x++) {
+    /**
+     * Redraws a rectangular area of tiles.
+     * @param g the graphics to draw into
+     * @param map the map to draw
+     * @param x0 the left edge to redraw (inclusive)
+     * @param y0 the top edge to redraw (inclusive)
+     * @param x1 the right edge to redraw (exclusive)
+     * @param y1 the bottom edge to redraw (exclusive)
+     */
+    private void redrawTiles(@NotNull final Graphics g, @NotNull final CfMap map, final int x0, final int y0, final int x1, final int y1) {
+        for (int x = x0; x < x1; x++) {
+            for (int y = y0; y < y1; y++) {
                 redrawSquare(g, map, x, y);
             }
         }
@@ -337,8 +342,8 @@ public class GUIMap extends GUIElement {
         cleanSquare(g, x, y);
         final CfMapSquare mapSquare = map.getMapSquare(x, y);
         redrawSquare(g, x, y, mapSquare);
-        if (map.isFogOfWar(x, y)) {
-            g.setColor(FOG_OF_WAR_COLOR);
+        if (map.isFogOfWar(x, y) || x < 0 || y < 0 || x >= mapWidth || y >= mapHeight) {
+            g.setColor(DarknessColors.FOG_OF_WAR_COLOR);
             g.fillRect(offsetX+x*tileSize, offsetY+y*tileSize, tileSize, tileSize);
         }
         final int darkness = map.getDarkness(x, y);
