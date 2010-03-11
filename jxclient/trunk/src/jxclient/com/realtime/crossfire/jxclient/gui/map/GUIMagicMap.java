@@ -112,6 +112,30 @@ public class GUIMagicMap extends GUIElement {
     private int offsetY = 0;
 
     /**
+     * The tile x-coordinate where map drawing starts. May be positive if the
+     * map view is larger than the gui's area.
+     */
+    private int displayMinX = 0;
+
+    /**
+     * The tile x-coordinate where map drawing ends. May be less than {@link
+     * #mapWidth} if the map view is larger than the gui's area.
+     */
+    private int displayMaxX = 0;
+
+    /**
+     * The tile y-coordinate where map drawing starts. May be positive if the
+     * map view is larger than the gui's area.
+     */
+    private int displayMinY = 0;
+
+    /**
+     * The tile y-coordinate where map drawing ends. May be less than {@link
+     * #mapWidth} if the map view is larger than the gui's area.
+     */
+    private int displayMaxY = 0;
+
+    /**
      * The colors for displaying magic map data.
      */
     @NotNull
@@ -164,7 +188,7 @@ public class GUIMagicMap extends GUIElement {
                             datapos++;
                         }
                     }
-                    markPlayer(g);
+                    markPlayer(g, 0, 0);
                 } finally {
                     g.dispose();
                 }
@@ -188,10 +212,14 @@ public class GUIMagicMap extends GUIElement {
                 try {
                     for (final CfMapSquare mapSquare : changedSquares) {
                         final int x = mapSquare.getX()+x0;
-                        final int y = mapSquare.getY()+y0;
-                        redrawSquare(g, map, x, y);
+                        if (displayMinX <= x && x < displayMaxX) {
+                            final int y = mapSquare.getY()+y0;
+                            if (displayMinY <= y && y < displayMaxY) {
+                                redrawSquare(g, map, x, y);
+                            }
+                        }
                     }
-                    markPlayer(g);
+                    markPlayer(g, 0, 0);
                 } finally {
                     g.dispose();
                 }
@@ -215,7 +243,7 @@ public class GUIMagicMap extends GUIElement {
                     g.fillRect(0, 0, getWidth(), getHeight());
                     g.setColor(DarknessColors.FOG_OF_WAR_COLOR);
                     g.fillRect(0, 0, getWidth(), getHeight());
-                    markPlayer(g);
+                    markPlayer(g, 0, 0);
                 } finally {
                     g.dispose();
                 }
@@ -233,29 +261,56 @@ public class GUIMagicMap extends GUIElement {
         @Override
         public void mapScrolled(final int dx, final int dy) {
             synchronized (bufferedImageSync) {
+                if (Math.abs(dx) >= mapWidth || Math.abs(dy) >= mapHeight) {
+                    setChanged();
+                    return;
+                }
+
+                final int x;
+                final int w;
+                if (dx > 0) {
+                    x = 0;
+                    w = getWidth()-dx;
+                } else {
+                    x = -dx;
+                    w = getWidth()+dx;
+                }
+                final int y;
+                final int h;
+                if (dy > 0) {
+                    y = 0;
+                    h = getHeight()-dy;
+                } else {
+                    y = -dy;
+                    h = getHeight()+dy;
+                }
+
                 final Graphics g = createBufferGraphics();
                 try {
-                    final CfMap map = mapUpdater.getMap();
-                    final int dxPixels = dx*tileSize;
-                    final int dyPixels = dy*tileSize;
-                    if (Math.abs(dxPixels) >= getWidth() || Math.abs(dyPixels) >= getHeight()) {
-                        redrawTiles(g, map, 0, 0, getWidth()/tileSize, getHeight()/tileSize);
-                    } else {
-                        g.copyArea(dxPixels <= 0 ? 0 : dxPixels, dyPixels <= 0 ? 0 : dyPixels, dxPixels == 0 ? getWidth() : getWidth()-Math.abs(dxPixels), dyPixels == 0 ? getHeight() : getHeight()-Math.abs(dyPixels), -dxPixels, -dyPixels);
-                        g.setColor(Color.BLACK);
-                        if (dxPixels < 0) {
-                            redrawTiles(g, map, 0, 0, -dxPixels/tileSize, getHeight()/tileSize);
-                        } else if (dxPixels > 0) {
-                            redrawTiles(g, map, getWidth()/tileSize-dxPixels/tileSize, 0, getWidth()/tileSize, getHeight()/tileSize);
-                        }
-                        if (dyPixels < 0) {
-                            redrawTiles(g, map, 0, 0, getWidth()/tileSize, -dyPixels/tileSize);
-                        } else if (dyPixels > 0) {
-                            redrawTiles(g, map, 0, getHeight()/tileSize-dyPixels/tileSize, getWidth()/tileSize, getHeight()/tileSize);
+                    g.copyArea((x+dx)*tileSize, (y+dy)*tileSize, w*tileSize, h*tileSize, -dx*tileSize, -dy*tileSize);
+
+                    for (int yy = displayMinY; yy < Math.min(y, displayMaxY)+1; yy++) {
+                        for (int xx = displayMinX; xx < displayMaxX; xx++) {
+                            redrawSquare(g, mapUpdater.getMap(), xx, yy);
                         }
                     }
-                    redrawSquare(g, map, (mapWidth-1)/2-dx, (mapHeight-1)/2-dy);
-                    markPlayer(g);
+
+                    for (int yy = Math.max(y+h, displayMinY)-1; yy < displayMaxY; yy++) {
+                        for (int xx = displayMinX; xx < displayMaxX; xx++) {
+                            redrawSquare(g, mapUpdater.getMap(), xx, yy);
+                        }
+                    }
+
+                    for (int yy = Math.max(y, displayMinY); yy < Math.min(y+h, displayMaxY); yy++) {
+                        for (int xx = displayMinX; xx < Math.min(x, displayMaxX)+1; xx++) {
+                            redrawSquare(g, mapUpdater.getMap(), xx, yy);
+                        }
+
+                        for (int xx = Math.max(x+w, displayMinX)-1; xx < displayMaxX; xx++) {
+                            redrawSquare(g, mapUpdater.getMap(), xx, yy);
+                        }
+                    }
+                    markPlayer(g, dx, dy);
                 } finally {
                     g.dispose();
                 }
@@ -328,7 +383,7 @@ public class GUIMagicMap extends GUIElement {
     private void redrawAll(@NotNull final Graphics g) {
         g.setColor(Color.BLACK);
         g.fillRect(0, 0, getWidth(), getHeight());
-        redrawTiles(g, mapUpdater.getMap(), 0, 0, getWidth()/tileSize, getHeight()/tileSize);
+        redrawTiles(g, mapUpdater.getMap(), displayMinX, displayMinY, displayMaxX, displayMaxY);
     }
 
     /**
@@ -368,9 +423,8 @@ public class GUIMagicMap extends GUIElement {
      */
     private void redrawSquare(@NotNull final Graphics g, @NotNull final CfMap map, final int x, final int y) {
         cleanSquare(g, x, y);
-        for (int layer = 0; layer < CrossfireMap2Command.NUM_LAYERS; layer++) {
-            redrawSquare(g, map, x, y, layer);
-        }
+        final CfMapSquare mapSquare = map.getMapSquare(x, y);
+        redrawSquare(g, x, y, mapSquare);
         if (map.isFogOfWar(x, y) || x < 0 || y < 0 || x >= mapWidth || y >= mapHeight) {
             g.setColor(DarknessColors.FOG_OF_WAR_COLOR);
             g.fillRect(offsetX+x*tileSize, offsetY+y*tileSize, tileSize, tileSize);
@@ -385,42 +439,59 @@ public class GUIMagicMap extends GUIElement {
     /**
      * Redraws one layer of a square.
      * @param g the graphics to draw into
-     * @param map the map to draw
      * @param x the x coordinate of the square to redraw
      * @param y the y coordinate of the square to redraw
-     * @param layer the layer to redraw
+     * @param mapSquare the map square
      */
-    private void redrawSquare(@NotNull final Graphics g, @NotNull final CfMap map, final int x, final int y, final int layer) {
+    private void redrawSquare(@NotNull final Graphics g, final int x, final int y, @NotNull final CfMapSquare mapSquare) {
         final int px = offsetX+x*tileSize;
         final int py = offsetY+y*tileSize;
+        final int mapSquareX = mapSquare.getX();
+        final int mapSquareY = mapSquare.getY();
+        for (int layer = 0; layer < CrossfireMap2Command.NUM_LAYERS; layer++) {
+            final CfMapSquare headMapSquare = mapSquare.getHeadMapSquare(layer);
+            if (headMapSquare != null) {
+                final Face headFace = headMapSquare.getFace(layer);
+                assert headFace != null; // getHeadMapSquare() would have been cleared in this case
+                final int dx = headMapSquare.getX()-mapSquareX;
+                final int dy = headMapSquare.getY()-mapSquareY;
+                assert dx > 0 || dy > 0;
+                paintImage(g, headFace, px, py, tileSize*dx, tileSize*dy);
+            }
 
-        final CfMapSquare headMapSquare = map.getHeadMapSquare(x, y, layer);
-        if (headMapSquare != null) {
-            final Face headFace = headMapSquare.getFace(layer);
-            assert headFace != null; // getHeadMapSquare() would have been cleared in this case
-            final ImageIcon img = facesProvider.getImageIcon(headFace.getFaceNum());
-            final int dx = headMapSquare.getX()-map.getMapSquare(x, y).getX();
-            final int dy = headMapSquare.getY()-map.getMapSquare(x, y).getY();
-            assert dx > 0 || dy > 0;
-            final int sx = img.getIconWidth()-tileSize*(dx+1);
-            final int sy = img.getIconHeight()-tileSize*(dy+1);
-            g.drawImage(img.getImage(), px, py, px+tileSize, py+tileSize, sx, sy, sx+tileSize, sy+tileSize, null);
+            final Face face = mapSquare.getFace(layer);
+            if (face != null) {
+                paintImage(g, face, px, py, 0, 0);
+            }
         }
+    }
 
-        final Face face = map.getFace(x, y, layer);
-        if (face != null) {
-            final ImageIcon img = facesProvider.getImageIcon(face.getFaceNum());
-            final int sx = img.getIconWidth();
-            final int sy = img.getIconHeight();
-            g.drawImage(img.getImage(), px, py, px+tileSize, py+tileSize, sx-tileSize, sy-tileSize, sx, sy, null);
-        }
+    /**
+     * Paints a face into a tile.
+     * @param g the graphics to draw into
+     * @param face the face to draw
+     * @param px the x coordinate of the square to redraw
+     * @param py the y coordinate of the square to redraw
+     * @param offsetX the x-offset for shifting the original face
+     * @param offsetY the y-offset for shifting the original face
+     */
+    private void paintImage(@NotNull final Graphics g, @NotNull final Face face, final int px, final int py, final int offsetX, final int offsetY) {
+        final ImageIcon imageIcon = facesProvider.getImageIcon(face.getFaceNum());
+        final int sx = imageIcon.getIconWidth()-offsetX;
+        final int sy = imageIcon.getIconHeight()-offsetY;
+        g.drawImage(imageIcon.getImage(), px, py, px+tileSize, py+tileSize, sx-tileSize, sy-tileSize, sx, sy, null);
     }
 
     /**
      * Paints the player location.
      * @param g the graphics to paint to
+     * @param dx the x distance to map has just scrolled
+     * @param dy the y distance to map has just scrolled
      */
-    private void markPlayer(@NotNull final Graphics g) {
+    private void markPlayer(@NotNull final Graphics g, final int dx, final int dy) {
+        if (dx != 0 || dy != 0) {
+            redrawSquare(g, mapUpdater.getMap(), (mapWidth-1)/2-dx, (mapHeight-1)/2-dy);
+        }
         g.setColor(Color.RED);
         g.fillRect(playerX, playerY, tileSize, tileSize);
     }
@@ -442,6 +513,27 @@ public class GUIMagicMap extends GUIElement {
         this.mapHeight = mapHeight;
         offsetX = playerX-((mapWidth-1)/2)*tileSize;
         offsetY = playerY-((mapHeight-1)/2)*tileSize;
+
+        if (mapWidth*tileSize < getWidth()) {
+            displayMinX = 0;
+            displayMaxX = mapWidth;
+            offsetX = (getWidth()-mapWidth*tileSize)/2;
+        } else {
+            final int n = (getWidth()+tileSize-1)/(2*tileSize);
+            displayMinX = (mapWidth-(2*n+1))/2;
+            displayMaxX = displayMinX+(1+2*n);
+        }
+
+        if (mapHeight*tileSize < getHeight()) {
+            displayMinY = 0;
+            displayMaxY = mapHeight;
+            offsetY = (getHeight()-mapHeight*tileSize)/2;
+        } else {
+            final int n = (getHeight()+tileSize-1)/(2*tileSize);
+            displayMinY = (mapHeight-(2*n+1))/2;
+            displayMaxY = displayMinY+(1+2*n);
+        }
+
         synchronized (bufferedImageSync) {
             final Graphics g = createBufferGraphics();
             try {
