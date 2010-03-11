@@ -90,6 +90,28 @@ public class GUIMap extends GUIElement {
     private final int tileSize;
 
     /**
+     * The x offset of the tile representing the player.
+     */
+    private final int playerX;
+
+    /**
+     * The y offset of the tile representing the player.
+     */
+    private final int playerY;
+
+    /**
+     * The x-offset for drawing the left-most tile. Positive if the gui's area
+     * is larger than the map view; negative otherwise.
+     */
+    private int offsetX = 0;
+
+    /**
+     * The y-offset for drawing the left-most tile. Positive if the gui's area
+     * is larger than the map view; negative otherwise.
+     */
+    private int offsetY = 0;
+
+    /**
      * The tile x-coordinate where map drawing starts. May be positive if the
      * map view is larger than the gui's area.
      */
@@ -112,18 +134,6 @@ public class GUIMap extends GUIElement {
      * #mapWidth} if the map view is larger than the gui's area.
      */
     private int displayMaxY = 0;
-
-    /**
-     * The x-offset for drawing the left-most tile. Positive if the gui's area
-     * is larger than the map view; negative otherwise.
-     */
-    private int offsetX = 0;
-
-    /**
-     * The y-offset for drawing the left-most tile. Positive if the gui's area
-     * is larger than the map view; negative otherwise.
-     */
-    private int offsetY = 0;
 
     /**
      * The {@link MapListener} registered to receive map updates.
@@ -167,6 +177,8 @@ public class GUIMap extends GUIElement {
                 final Graphics g = createBufferGraphics();
                 try {
                     g.setColor(Color.BLACK);
+                    g.fillRect(0, 0, getWidth(), getHeight());
+                    g.setColor(DarknessColors.FOG_OF_WAR_COLOR);
                     g.fillRect(0, 0, getWidth(), getHeight());
                 } finally {
                     g.dispose();
@@ -269,10 +281,15 @@ public class GUIMap extends GUIElement {
      */
     public GUIMap(@NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final String name, final int x, final int y, final int w, final int h, @NotNull final CfMapUpdater mapUpdater, @NotNull final FacesProvider facesProvider, @NotNull final CrossfireServerConnection crossfireServerConnection) {
         super(tooltipManager, elementListener, name, x, y, w, h, Transparency.OPAQUE);
+        if (w <= 0 || h <= 0) {
+            throw new IllegalArgumentException("area must be non-empty");
+        }
         tileSize = facesProvider.getSize();
         this.mapUpdater = mapUpdater;
         this.facesProvider = facesProvider;
         this.crossfireServerConnection = crossfireServerConnection;
+        playerX = w/2-tileSize/2;
+        playerY = h/2-tileSize/2;
         this.crossfireServerConnection.addMapSizeListener(mapSizeListener);
         this.mapUpdater.addCrossfireMapListener(mapListener);
         this.mapUpdater.addCrossfireNewmapListener(newmapListener);
@@ -314,7 +331,7 @@ public class GUIMap extends GUIElement {
     private void redrawTiles(@NotNull final Graphics g, @NotNull final CfMap map, final int x0, final int y0, final int x1, final int y1) {
         for (int x = x0; x < x1; x++) {
             for (int y = y0; y < y1; y++) {
-                redrawSquare(g, map, x, y);
+                redrawSquare(g, map, x-offsetX/tileSize, y-offsetY/tileSize);
             }
         }
     }
@@ -331,8 +348,7 @@ public class GUIMap extends GUIElement {
     }
 
     /**
-     * Redraws one square if it has been changed. If it is unchanged ({@link
-     * CfMapSquare#dirty} is unset), nothing is drawn.
+     * Redraws one square.
      * @param g the graphics to draw into
      * @param map the map to draw
      * @param x the x-coordinate of the map tile to redraw
@@ -437,6 +453,8 @@ public class GUIMap extends GUIElement {
     private void setMapSize(final int mapWidth, final int mapHeight) {
         this.mapWidth = mapWidth;
         this.mapHeight = mapHeight;
+        offsetX = playerX-((mapWidth-1)/2)*tileSize;
+        offsetY = playerY-((mapHeight-1)/2)*tileSize;
 
         if (mapWidth*tileSize < getWidth()) {
             displayMinX = 0;
@@ -444,10 +462,8 @@ public class GUIMap extends GUIElement {
             offsetX = (getWidth()-mapWidth*tileSize)/2;
         } else {
             final int n = (getWidth()+tileSize-1)/(2*tileSize);
-            final int effectiveW = (1+2*n)*tileSize;
             displayMinX = (mapWidth-(2*n+1))/2;
             displayMaxX = displayMinX+(1+2*n);
-            offsetX = (getWidth()-effectiveW)/2;
         }
 
         if (mapHeight*tileSize < getHeight()) {
@@ -456,10 +472,8 @@ public class GUIMap extends GUIElement {
             offsetY = (getHeight()-mapHeight*tileSize)/2;
         } else {
             final int n = (getHeight()+tileSize-1)/(2*tileSize);
-            final int effectiveH = (1+2*n)*tileSize;
             displayMinY = (mapHeight-(2*n+1))/2;
             displayMaxY = displayMinY+(1+2*n);
-            offsetY = (getHeight()-effectiveH)/2;
         }
 
         synchronized (bufferedImageSync) {
