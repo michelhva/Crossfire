@@ -494,23 +494,27 @@ public abstract class AbstractGUIMap extends GUIElement {
         this.mapWidth = mapWidth;
         this.mapHeight = mapHeight;
 
-        final int nX = playerX/tileSize;
-        displayMinOffsetX = -playerX+nX*tileSize;
+        final int nX = MathUtils.divRoundUp(playerX, tileSize);
+        displayMinOffsetX = playerX-nX*tileSize;
         assert -tileSize < displayMinOffsetX && displayMinOffsetX <= 0;
         assert (playerX-displayMinOffsetX)%tileSize == 0;
-        displayMinX = (mapWidth-1)/2-(playerX-displayMinOffsetX)/tileSize;
+        displayMinX = (mapWidth-1)/2-nX;
         final int tilesX = MathUtils.divRoundUp(getWidth()-displayMinOffsetX, tileSize);
         displayMaxX = displayMinX+tilesX;
+        assert (displayMaxX-displayMinX)*tileSize >= getWidth();
+        assert (displayMaxX-displayMinX)*tileSize-getWidth() < 2*tileSize;
         displayMaxOffsetX = MathUtils.mod(-displayMinOffsetX-getWidth(), tileSize);
         offsetX = displayMinOffsetX-displayMinX*tileSize;
 
-        final int nY = playerY/tileSize;
-        displayMinOffsetY = -playerY+nY*tileSize;
+        final int nY = MathUtils.divRoundUp(playerY, tileSize);
+        displayMinOffsetY = playerY-nY*tileSize;
         assert -tileSize < displayMinOffsetY && displayMinOffsetY <= 0;
         assert (playerY-displayMinOffsetY)%tileSize == 0;
-        displayMinY = (mapHeight-1)/2-(playerY-displayMinOffsetY)/tileSize;
+        displayMinY = (mapHeight-1)/2-nY;
         final int tilesY = MathUtils.divRoundUp(getHeight()-displayMinOffsetY, tileSize);
         displayMaxY = displayMinY+tilesY;
+        assert (displayMaxY-displayMinY)*tileSize >= getHeight();
+        assert (displayMaxY-displayMinY)*tileSize-getHeight() < 2*tileSize;
         displayMaxOffsetY = MathUtils.mod(-displayMinOffsetY-getHeight(), tileSize);
         offsetY = displayMinOffsetY-displayMinY*tileSize;
 
