@@ -47,4 +47,29 @@ public class MathUtils {
         }
     }
 
+    /**
+     * Calculates the remainder of <code>a/b</code>.
+     * @param numerator the numerator
+     * @param denominator the denominator
+     * @return the quotient
+     */
+    public static int mod(final int numerator, final int denominator) {
+        final int result = numerator%denominator;
+        return result < 0 ? result+denominator : result;
+    }
+
+    /**
+     * Returns the quotient of two values, rounded up to the nearest integer.
+     * @param numerator the numerator
+     * @param denominator the denominator
+     * @return the quotient
+     */
+    public static int divRoundUp(final int numerator, final int denominator) {
+        if (numerator >= 0) {
+            return (numerator+denominator-1)/denominator;
+        } else {
+            return -((-numerator)/denominator);
+        }
+    }
+
 }
