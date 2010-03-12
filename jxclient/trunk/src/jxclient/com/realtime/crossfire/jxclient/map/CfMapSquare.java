@@ -129,6 +129,14 @@ public class CfMapSquare {
     }
 
     /**
+     * Returns whether this square is dirty.
+     * @return whether this square needs redraw
+     */
+    public boolean isDirty() {
+        return mapSquareListener.isSquareModified(this);
+    }
+
+    /**
      * Marks this square as 'fog-og-war'. The values will be still returned
      * until a new value will be set.
      */

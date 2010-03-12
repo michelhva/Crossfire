@@ -35,4 +35,11 @@ public interface CfMapSquareListener {
      */
     void squareModified(@NotNull CfMapSquare mapSquare);
 
+    /**
+     * Returns whether a map square has changed.
+     * @param mapSquare the map square to check
+     * @return whether the map square has changed
+     */
+    boolean isSquareModified(@NotNull CfMapSquare mapSquare);
+
 }

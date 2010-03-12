@@ -140,6 +140,12 @@ public class CfMapUpdater {
                 squares.add(mapSquare);
             }
         }
+
+        /** {@inheritDoc} */
+        @Override
+        public boolean isSquareModified(@NotNull final CfMapSquare mapSquare) {
+            return squares.contains(mapSquare);
+        }
     };
 
     /**
@@ -540,6 +546,7 @@ public class CfMapUpdater {
             for (final MapscrollListener mapscrollListener : mapscrollListeners) {
                 mapscrollListener.mapScrolled(dx, dy);
             }
+            processMapEnd(false);
         }
     }
 
