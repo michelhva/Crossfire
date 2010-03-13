@@ -2043,7 +2043,7 @@ public class JXCSkinLoader {
      * @throws IOException if the resolution specification cannot be parsed
      */
     @NotNull
-    private Resolution parseResolution(@NotNull final String text) throws IOException {
+    private static Resolution parseResolution(@NotNull final String text) throws IOException {
         final Resolution resolution = Resolution.parse(true, text);
         if (resolution == null) {
             throw new IOException("invalid resolution: "+resolution);
