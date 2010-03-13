@@ -21,6 +21,7 @@
 
 package com.realtime.crossfire.jxclient.skin.io;
 
+import com.realtime.crossfire.jxclient.skin.skin.Expression;
 import com.realtime.crossfire.jxclient.util.Resolution;
 import java.io.IOException;
 import java.util.regex.Matcher;
@@ -75,6 +76,18 @@ public class ExpressionParser {
      * @throws IOException if a parsing error occurs
      */
     public int parseInt(@NotNull final String str) throws IOException {
+        return parseExpression(str).evaluate(resolution.getWidth(), resolution.getHeight());
+    }
+
+    /**
+     * Parses an integer constant. Valid constants are "3", "3+4", and
+     * "1+2-3+4".
+     * @param str the integer constant string to parse
+     * @return the integer expression
+     * @throws IOException if a parsing error occurs
+     */
+    @NotNull
+    public static Expression parseExpression(@NotNull final String str) throws IOException {
         try {
             return parseIntegerConstant(str);
         } catch (final NumberFormatException ex) {
@@ -85,7 +98,7 @@ public class ExpressionParser {
         if (!matcher.matches()) {
             throw new IOException("invalid number: "+str);
         }
-        int value;
+        Expression value;
         try {
             value = parseIntegerConstant(matcher.group(1));
             for (; ;) {
@@ -95,20 +108,12 @@ public class ExpressionParser {
                 matcher = PATTERN_EXPR.matcher(rest);
                 if (!matcher.matches()) {
                     final int valueRest = Integer.parseInt(rest);
-                    if (negative) {
-                        value -= valueRest;
-                    } else {
-                        value += valueRest;
-                    }
+                    value = new Expression(value, false, new Expression(negative ? -valueRest : valueRest, 0, 0));
                     break;
                 }
 
-                final int valueRest = parseIntegerConstant(matcher.group(1));
-                if (negative) {
-                    value -= valueRest;
-                } else {
-                    value += valueRest;
-                }
+                final Expression valueRest = parseIntegerConstant(matcher.group(1));
+                value = new Expression(value, negative, valueRest);
             }
         } catch (final NumberFormatException ex) {
             throw new IOException("invalid number: "+str);
@@ -120,27 +125,28 @@ public class ExpressionParser {
     /**
      * Parses an integer constant string.
      * @param str the string
-     * @return the integer value
+     * @return the integer expression
      * @throws NumberFormatException if the string cannot be parsed
      */
-    private int parseIntegerConstant(@NotNull final String str) {
+    @NotNull
+    private static Expression parseIntegerConstant(@NotNull final String str) {
         try {
-            return Integer.parseInt(str);
+            return new Expression(Integer.parseInt(str), 0, 0);
         } catch (final NumberFormatException ex) {
             if (str.equals(WIDTH)) {
-                return resolution.getWidth();
+                return new Expression(0, 2, 0);
             }
 
             if (str.equals(HEIGHT)) {
-                return resolution.getHeight();
+                return new Expression(0, 0, 2);
             }
 
             if (str.equals(WIDTH+"/2")) {
-                return resolution.getWidth()/2;
+                return new Expression(0, 1, 0);
             }
 
             if (str.equals(HEIGHT+"/2")) {
-                return resolution.getHeight()/2;
+                return new Expression(0, 0, 1);
             }
 
             throw ex;
