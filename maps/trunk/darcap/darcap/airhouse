@@ -122,9 +122,20 @@ arch woodwall_2_1_2
 x 2
 y 1
 end
+arch light2
+x 2
+y 2
+end
 arch woodlarge
 x 2
 y 2
+end
+arch firewall_3
+x 2
+y 2
+speed_left 1
+arch spell_steambolt
+end
 end
 arch woodlarge
 x 2
@@ -134,9 +145,22 @@ arch swall_1_4
 x 2
 y 3
 end
+arch mover_5
+x 2
+y 4
+attacktype 1
+end
 arch woodlarge
 x 2
 y 4
+end
+arch altar_trigger
+slaying air para-elemental
+exp 1
+food 1
+x 2
+y 5
+accept_alive 1
 end
 arch woodlarge
 x 2
@@ -203,6 +227,11 @@ arch swall_2_1_2
 x 3
 y 3
 end
+arch mover_7
+x 3
+y 4
+attacktype 1
+end
 arch woodlarge
 x 3
 y 4
@@ -262,6 +291,11 @@ arch swall_1_3
 x 4
 y 3
 end
+arch mover_7
+x 4
+y 4
+attacktype 1
+end
 arch woodlarge
 x 4
 y 4
@@ -277,6 +311,10 @@ end
 arch woodlarge
 x 4
 y 6
+end
+arch light4
+x 4
+y 7
 end
 arch woodlarge
 x 4
@@ -305,13 +343,64 @@ arch woodwall_win2
 x 5
 y 1
 end
+arch detector
+slaying steambolt
+x 5
+y 2
+connected 1
+end
+arch creator
+x 5
+y 2
+connected 1
+lifesave 1
+arch air_elemental
+speed 0.0
+type 0
+move_type walk
+no_damage 1
+end
+end
+arch mover_5
+x 5
+y 2
+attacktype 1
+end
 arch woodlarge
 x 5
 y 2
 end
+arch mover_5
+x 5
+y 3
+attacktype 1
+end
 arch woodlarge
 x 5
 y 3
+end
+arch creator
+x 5
+y 4
+connected 2
+lifesave 1
+arch para_air
+move_type walk
+end
+end
+arch altar_trigger
+slaying air elemental
+exp 1
+food 1
+x 5
+y 4
+connected 2
+accept_alive 1
+end
+arch mover_7
+x 5
+y 4
+attacktype 1
 end
 arch woodlarge
 x 5
@@ -454,6 +543,10 @@ end
 arch woodlarge
 x 7
 y 3
+end
+arch light4
+x 7
+y 4
 end
 arch woodlarge
 x 7
