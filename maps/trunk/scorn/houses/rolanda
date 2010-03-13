@@ -8,7 +8,7 @@ enter_x 5
 enter_y 9
 msg
 Created:  2008-01-24 Nicolas Weeger
-Modified: 2008-09-28 Rick Tanner
+Modified: 2010-03-13 Nicolas Weeger
 endmsg
 end
 arch marble
@@ -112,6 +112,7 @@ x 1
 y 8
 end
 arch cauldron
+name witch's kettle
 x 1
 y 8
 container 0
@@ -321,18 +322,22 @@ y 3
 speed -0.05
 random_movement 1
 arch event_user
+name event_user
 title Python
 slaying /python/maps/witherspoon_manor/rolanda.py
 end
 arch event_timer
+name event_timer
 title Python
 slaying /python/maps/witherspoon_manor/rolanda.py
 end
 arch event_time
+name event_time
 title Python
 slaying /python/maps/witherspoon_manor/rolanda.py
 end
 arch event_say
+name event_say
 title Python
 slaying /python/maps/witherspoon_manor/rolanda.py
 end
