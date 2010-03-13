@@ -782,6 +782,7 @@ public class JXCSkinLoader {
      * @param commandQueue the command queue to use
      * @param server the server to use
      * @param commandCallback the command callback to use
+     * @param macros the macros instance to use
      * @throws IOException if the command cannot be parsed
      * @throws JXCSkinException if the command cannot be parsed
      */
