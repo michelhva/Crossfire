@@ -26,6 +26,7 @@ import com.realtime.crossfire.jxclient.commands.Macros;
 import com.realtime.crossfire.jxclient.faces.FacesManager;
 import com.realtime.crossfire.jxclient.faces.FacesProvider;
 import com.realtime.crossfire.jxclient.faces.FacesProviderFactory;
+import com.realtime.crossfire.jxclient.gui.GUIFill;
 import com.realtime.crossfire.jxclient.gui.GUIPicture;
 import com.realtime.crossfire.jxclient.gui.button.ButtonImages;
 import com.realtime.crossfire.jxclient.gui.button.GUIButton;
@@ -564,6 +565,8 @@ public class JXCSkinLoader {
                             parseDupTextGauge(args, tooltipManager, elementListener, lnr);
                         } else if (args[0].equals("event")) {
                             parseEvent(args, guiStateManager, server);
+                        } else if (gui != null && args[0].equals("fill")) {
+                            parseFill(args, tooltipManager, elementListener);
                         } else if (args[0].equals("font")) {
                             parseFont(args);
                         } else if (gui != null && args[0].equals("gauge")) {
@@ -1121,6 +1124,32 @@ public class JXCSkinLoader {
         } else {
             throw new IOException("undefined event type: "+type);
         }
+    }
+
+    /**
+     * Parses a "fill" command.
+     * @param args the command arguments
+     * @param tooltipManager the tooltip manager to update
+     * @param elementListener the element listener to notify
+     * @throws IOException if the command cannot be parsed
+     * @throws JXCSkinException if the command cannot be parsed
+     */
+    private void parseFill(@NotNull final String[] args, @NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener) throws IOException, JXCSkinException {
+        if (args.length != 8) {
+            throw new IOException("syntax error");
+        }
+
+        final String name = args[1];
+        final int x = expressionParser.parseInt(args[2]);
+        final int y = expressionParser.parseInt(args[3]);
+        final int w = expressionParser.parseInt(args[4]);
+        final int h = expressionParser.parseInt(args[5]);
+        final Color color = ParseUtils.parseColor(args[6]);
+        final float alpha = NumberParser.parseFloat(args[7]);
+        if (alpha < 0 || alpha > 1F) {
+            throw new IOException("invalid alpha value: "+alpha);
+        }
+        insertGuiElement(new GUIFill(tooltipManager, elementListener, name, x, y, w, h, color, alpha));
     }
 
     /**
