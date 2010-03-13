@@ -148,6 +148,10 @@ arch woodfloor
 x 2
 y 4
 end
+arch light4
+x 2
+y 5
+end
 arch woodfloor
 x 2
 y 5
@@ -262,13 +266,59 @@ arch woodwall_2_1_2
 x 4
 y 1
 end
+arch detector
+slaying wave
+x 4
+y 2
+connected 1
+end
+arch creator
+x 4
+y 2
+connected 1
+lifesave 1
+arch water_elemental
+end
+end
+arch mover_5
+x 4
+y 2
+attacktype 1
+end
 arch woodfloor
 x 4
 y 2
 end
+arch mover_5
+x 4
+y 3
+attacktype 1
+end
 arch woodfloor
 x 4
 y 3
+end
+arch altar_trigger
+slaying water elemental
+exp 1
+food 1
+x 4
+y 4
+connected 2
+accept_alive 1
+end
+arch creator
+x 4
+y 4
+connected 2
+lifesave 1
+arch para_water
+end
+end
+arch mover_3
+x 4
+y 4
+attacktype 1
 end
 arch woodfloor
 x 4
@@ -326,6 +376,11 @@ arch swall_1_4
 x 5
 y 3
 end
+arch mover_3
+x 5
+y 4
+attacktype 1
+end
 arch woodfloor
 x 5
 y 4
@@ -341,6 +396,10 @@ end
 arch woodfloor
 x 5
 y 6
+end
+arch light4
+x 5
+y 7
 end
 arch woodfloor
 x 5
@@ -380,6 +439,11 @@ end
 arch swall_2_1_2
 x 6
 y 3
+end
+arch mover_3
+x 6
+y 4
+attacktype 1
 end
 arch woodfloor
 x 6
@@ -428,9 +492,20 @@ arch woodwall_2_1_2
 x 7
 y 1
 end
+arch light2
+x 7
+y 2
+end
 arch woodfloor
 x 7
 y 2
+end
+arch firewall_7
+x 7
+y 2
+speed_left 0.7
+arch spell_wave
+end
 end
 arch woodfloor
 x 7
@@ -440,9 +515,22 @@ arch swall_1_3
 x 7
 y 3
 end
+arch mover_5
+x 7
+y 4
+attacktype 1
+end
 arch woodfloor
 x 7
 y 4
+end
+arch altar_trigger
+slaying water para-elemental
+exp 1
+food 1
+x 7
+y 5
+accept_alive 1
 end
 arch woodfloor
 x 7
