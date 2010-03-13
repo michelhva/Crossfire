@@ -140,6 +140,10 @@ sp 9
 x 2
 y 2
 end
+arch light4
+x 2
+y 3
+end
 arch woodfloor2
 x 2
 y 3
@@ -241,6 +245,14 @@ arch woodwall_win2
 x 4
 y 1
 end
+arch altar_trigger
+slaying earth para-elemental
+exp 1
+food 1
+x 4
+y 2
+accept_alive 1
+end
 arch woodfloor2
 x 4
 y 2
@@ -280,6 +292,10 @@ arch swall_2_2_2
 x 4
 y 6
 end
+arch light4
+x 4
+y 7
+end
 arch woodfloor2
 x 4
 y 7
@@ -310,6 +326,11 @@ end
 arch woodwall_2_1_2
 x 5
 y 1
+end
+arch mover_7
+x 5
+y 2
+attacktype 1
 end
 arch woodfloor2
 x 5
@@ -343,6 +364,13 @@ arch woodfloor2
 x 5
 y 7
 end
+arch firewall_3
+x 5
+y 7
+speed_left 0.5
+arch spell_cancellation
+end
+end
 arch woodfloor2
 x 5
 y 8
@@ -365,6 +393,11 @@ end
 arch woodwall_2_1_2
 x 6
 y 1
+end
+arch mover_7
+x 6
+y 2
+attacktype 1
 end
 arch woodfloor2
 x 6
@@ -429,25 +462,90 @@ arch woodwall_2_1_2
 x 7
 y 1
 end
+arch creator
+x 7
+y 2
+connected 2
+lifesave 1
+arch para_earth
+end
+end
+arch altar_trigger
+slaying earth elemental
+exp 1
+food 1
+x 7
+y 2
+connected 2
+accept_alive 1
+end
+arch mover_7
+x 7
+y 2
+attacktype 1
+end
 arch woodfloor2
 x 7
 y 2
+end
+arch mover_1
+x 7
+y 3
+attacktype 1
 end
 arch woodfloor2
 x 7
 y 3
 end
+arch mover_1
+x 7
+y 4
+attacktype 1
+end
 arch woodfloor2
 x 7
 y 4
+end
+arch light2
+x 7
+y 5
+end
+arch mover_1
+x 7
+y 5
+attacktype 1
 end
 arch woodfloor2
 x 7
 y 5
 end
+arch mover_1
+x 7
+y 6
+attacktype 1
+end
 arch woodfloor2
 x 7
 y 6
+end
+arch creator
+x 7
+y 7
+connected 1
+lifesave 1
+arch earth_elemental
+end
+end
+arch mover_1
+x 7
+y 7
+attacktype 1
+end
+arch detector
+slaying cancellation
+x 7
+y 7
+connected 1
 end
 arch woodfloor2
 x 7
