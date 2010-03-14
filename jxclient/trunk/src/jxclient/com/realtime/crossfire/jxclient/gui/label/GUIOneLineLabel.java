@@ -23,6 +23,7 @@ package com.realtime.crossfire.jxclient.gui.label;
 
 import com.realtime.crossfire.jxclient.gui.gui.GUIElementListener;
 import com.realtime.crossfire.jxclient.gui.gui.TooltipManager;
+import com.realtime.crossfire.jxclient.skin.skin.Extent;
 import java.awt.Color;
 import java.awt.Font;
 import java.awt.Graphics2D;
@@ -46,10 +47,7 @@ public class GUIOneLineLabel extends GUILabel {
      * @param tooltipManager the tooltip manager to update
      * @param elementListener the window renderer to notify
      * @param name The name of this element.
-     * @param x The x-coordinate for drawing this element to screen.
-     * @param y The y-coordinate for drawing this element to screen.
-     * @param w The width for drawing this element to screen.
-     * @param h The height for drawing this element to screen.
+     * @param extent the extent of this element
      * @param picture The background image; <code>null</code> for no
      * background.
      * @param font The font for rendering the label text.
@@ -58,8 +56,8 @@ public class GUIOneLineLabel extends GUILabel {
      * @param alignment The text alignment.
      * @param text The label text.
      */
-    public GUIOneLineLabel(@NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final String name, final int x, final int y, final int w, final int h, @Nullable final BufferedImage picture, @NotNull final Font font, @NotNull final Color color, @NotNull final Color backgroundColor, @NotNull final Alignment alignment, @NotNull final String text) {
-        super(tooltipManager, elementListener, name, x, y, w, h, picture, font, color, backgroundColor, alignment);
+    public GUIOneLineLabel(@NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final String name, @NotNull final Extent extent, @Nullable final BufferedImage picture, @NotNull final Font font, @NotNull final Color color, @NotNull final Color backgroundColor, @NotNull final Alignment alignment, @NotNull final String text) {
+        super(tooltipManager, elementListener, name, extent, picture, font, color, backgroundColor, alignment);
         setText(text);
     }
 

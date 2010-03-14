@@ -32,6 +32,7 @@ import com.realtime.crossfire.jxclient.metaserver.MetaserverEntry;
 import com.realtime.crossfire.jxclient.metaserver.MetaserverEntryListener;
 import com.realtime.crossfire.jxclient.metaserver.MetaserverListener;
 import com.realtime.crossfire.jxclient.metaserver.MetaserverModel;
+import com.realtime.crossfire.jxclient.skin.skin.Extent;
 import java.awt.Font;
 import java.awt.image.BufferedImage;
 import org.jetbrains.annotations.NotNull;
@@ -139,12 +140,7 @@ public class GUIMetaElementList extends GUIList {
      * @param tooltipManager the tooltip manager to update
      * @param elementListener the element listener to notify
      * @param name the name of this element
-     * @param x the x-coordinate for drawing this element to screen; it is
-     * relative to <code>gui</code>
-     * @param y the y-coordinate for drawing this element to screen; it is
-     * relative to <code>gui</code>
-     * @param w the width for drawing this element to screen
-     * @param h the height for drawing this element to screen
+     * @param extent the extent of this element
      * @param cellWidth the width of each cell
      * @param cellHeight the height of each cell
      * @param metaserverModel the metaserver model to track
@@ -156,8 +152,8 @@ public class GUIMetaElementList extends GUIList {
      * <code>null</code>
      * @param comment the comment field to update; may be <code>null</code>
      */
-    public GUIMetaElementList(@NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final String name, final int x, final int y, final int w, final int h, final int cellWidth, final int cellHeight, @NotNull final MetaserverModel metaserverModel, @Nullable final BufferedImage tcpImage, @NotNull final Font font, @NotNull final String format, @NotNull final String tooltip, @Nullable final GUIText hostname, @Nullable final AbstractLabel comment) {
-        super(tooltipManager, elementListener, name, x, y, w, h, cellWidth, cellHeight, new MetaElementCellRenderer(new GUIMetaElement(tooltipManager, elementListener, metaserverModel, name+"_template", w, cellHeight, tcpImage, font, 0, format, tooltip)));
+    public GUIMetaElementList(@NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final String name, @NotNull final Extent extent, final int cellWidth, final int cellHeight, @NotNull final MetaserverModel metaserverModel, @Nullable final BufferedImage tcpImage, @NotNull final Font font, @NotNull final String format, @NotNull final String tooltip, @Nullable final GUIText hostname, @Nullable final AbstractLabel comment) {
+        super(tooltipManager, elementListener, name, extent, cellWidth, cellHeight, new MetaElementCellRenderer(new GUIMetaElement(tooltipManager, elementListener, metaserverModel, name+"_template", extent.getW(), cellHeight, tcpImage, font, 0, format, tooltip)));
         this.metaserverModel = metaserverModel;
         this.tooltipManager = tooltipManager;
         this.elementListener = elementListener;

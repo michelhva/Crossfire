@@ -21,6 +21,7 @@
 
 package com.realtime.crossfire.jxclient.gui.gui;
 
+import com.realtime.crossfire.jxclient.skin.skin.Extent;
 import java.awt.event.MouseEvent;
 import org.jetbrains.annotations.NotNull;
 
@@ -40,16 +41,11 @@ public abstract class ActivatableGUIElement extends GUIElement {
      * @param tooltipManager the tooltip manager to update
      * @param elementListener the element listener to notify
      * @param name The name of this element.
-     * @param x The x-coordinate for drawing this element to screen; it is
-     * relative to <code>gui</code>.
-     * @param y The y-coordinate for drawing this element to screen; it is
-     * relative to <code>gui</code>.
-     * @param w The width for drawing this element to screen.
-     * @param h The height for drawing this element to screen.
+     * @param extent the extent of this element
      * @param transparency The transparency value for the backing buffer
      */
-    protected ActivatableGUIElement(@NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final String name, final int x, final int y, final int w, final int h, final int transparency) {
-        super(tooltipManager, elementListener, name, x, y, w, h, transparency);
+    protected ActivatableGUIElement(@NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final String name, @NotNull final Extent extent, final int transparency) {
+        super(tooltipManager, elementListener, name, extent, transparency);
     }
 
     /**

@@ -29,6 +29,7 @@ import com.realtime.crossfire.jxclient.gui.gui.JXCWindowRenderer;
 import com.realtime.crossfire.jxclient.gui.gui.TooltipManager;
 import com.realtime.crossfire.jxclient.gui.label.Alignment;
 import com.realtime.crossfire.jxclient.gui.label.GUIOneLineLabel;
+import com.realtime.crossfire.jxclient.skin.skin.Extent;
 import java.awt.Color;
 import java.awt.Font;
 import java.awt.image.BufferedImage;
@@ -249,19 +250,19 @@ public class DialogFactory {
 
         final int titleHeight = title.length() > 0 ? 18 : 0;
         final Collection<GUIElement> result = new ArrayList<GUIElement>();
-        result.add(new GUIPicture(tooltipManager, elementListener, name+"_nw", 0, 0, sizeW, sizeN, frameNW, alpha));
-        result.add(new GUIPicture(tooltipManager, elementListener, name+"_n", sizeW, 0, w-sizeW-sizeE, sizeN, frameN, alpha));
-        result.add(new GUIPicture(tooltipManager, elementListener, name+"_ne", w-sizeE, 0, sizeE, sizeN, frameNE, alpha));
-        result.add(new GUIPicture(tooltipManager, elementListener, name+"_w", 0, sizeN, sizeW, h-sizeN-sizeS, frameW, alpha));
-        result.add(new GUIPicture(tooltipManager, elementListener, name+"_c", sizeW, sizeN+titleHeight, w-sizeW-sizeE, h-sizeN-sizeS-titleHeight, frameC, alpha));
-        result.add(new GUIPicture(tooltipManager, elementListener, name+"_e", w-sizeE, sizeN, sizeE, h-sizeN-sizeS, frameE, alpha));
-        result.add(new GUIPicture(tooltipManager, elementListener, name+"_sw", 0, h-sizeS, sizeW, sizeS, frameSW, alpha));
-        result.add(new GUIPicture(tooltipManager, elementListener, name+"_s", sizeW, h-sizeS, w-sizeW-sizeE, sizeS, frameS, alpha));
-        result.add(new GUIPicture(tooltipManager, elementListener, name+"_se", w-sizeE, h-sizeS, sizeE, sizeS, frameSE, alpha));
+        result.add(new GUIPicture(tooltipManager, elementListener, name+"_nw", new Extent(0, 0, sizeW, sizeN), frameNW, alpha));
+        result.add(new GUIPicture(tooltipManager, elementListener, name+"_n", new Extent(sizeW, 0, w-sizeW-sizeE, sizeN), frameN, alpha));
+        result.add(new GUIPicture(tooltipManager, elementListener, name+"_ne", new Extent(w-sizeE, 0, sizeE, sizeN), frameNE, alpha));
+        result.add(new GUIPicture(tooltipManager, elementListener, name+"_w", new Extent(0, sizeN, sizeW, h-sizeN-sizeS), frameW, alpha));
+        result.add(new GUIPicture(tooltipManager, elementListener, name+"_c", new Extent(sizeW, sizeN+titleHeight, w-sizeW-sizeE, h-sizeN-sizeS-titleHeight), frameC, alpha));
+        result.add(new GUIPicture(tooltipManager, elementListener, name+"_e", new Extent(w-sizeE, sizeN, sizeE, h-sizeN-sizeS), frameE, alpha));
+        result.add(new GUIPicture(tooltipManager, elementListener, name+"_sw", new Extent(0, h-sizeS, sizeW, sizeS), frameSW, alpha));
+        result.add(new GUIPicture(tooltipManager, elementListener, name+"_s", new Extent(sizeW, h-sizeS, w-sizeW-sizeE, sizeS), frameS, alpha));
+        result.add(new GUIPicture(tooltipManager, elementListener, name+"_se", new Extent(w-sizeE, h-sizeS, sizeE, sizeS), frameSE, alpha));
         if (titleHeight > 0) {
-            result.add(new GUIDialogTitle(tooltipManager, windowRenderer, elementListener, name+"_t", sizeW, sizeN, w-sizeW-sizeE, titleHeight, frameC, alpha));
+            result.add(new GUIDialogTitle(tooltipManager, windowRenderer, elementListener, name+"_t", new Extent(sizeW, sizeN, w-sizeW-sizeE, titleHeight), frameC, alpha));
             if (!title.equals("_")) {
-                final GUIElement titleLabel = new GUIOneLineLabel(tooltipManager, elementListener, name+"_title", sizeW, sizeN, w-sizeW-sizeE, titleHeight, null, titleFont, titleColor, titleBackgroundColor, Alignment.LEFT, " "+title);
+                final GUIElement titleLabel = new GUIOneLineLabel(tooltipManager, elementListener, name+"_title", new Extent(sizeW, sizeN, w-sizeW-sizeE, titleHeight), null, titleFont, titleColor, titleBackgroundColor, Alignment.LEFT, " "+title);
                 result.add(titleLabel);
                 titleLabel.setIgnore();
             }

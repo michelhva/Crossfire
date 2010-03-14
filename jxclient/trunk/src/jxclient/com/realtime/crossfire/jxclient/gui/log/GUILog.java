@@ -26,6 +26,7 @@ import com.realtime.crossfire.jxclient.gui.gui.GUIElementListener;
 import com.realtime.crossfire.jxclient.gui.gui.TooltipManager;
 import com.realtime.crossfire.jxclient.gui.scrollable.GUIScrollable2;
 import com.realtime.crossfire.jxclient.gui.scrollable.ScrollableListener;
+import com.realtime.crossfire.jxclient.skin.skin.Extent;
 import java.awt.Color;
 import java.awt.Graphics;
 import java.awt.Graphics2D;
@@ -112,16 +113,13 @@ public abstract class GUILog extends GUIElement implements GUIScrollable2 {
      * @param tooltipManager the tooltip manager to update
      * @param elementListener the element listener to notify
      * @param name the name of this element
-     * @param x the x-coordinate for drawing this element to screen
-     * @param y the y-coordinate for drawing this element to screen
-     * @param w the width for drawing this element to screen
-     * @param h the height for drawing this element to screen
+     * @param extent the extent of this element
      * @param backgroundImage the background image; may be <code>null</code> if
      * unused
      * @param fonts the <code>Fonts</code> instance for looking up fonts
      */
-    protected GUILog(@NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final String name, final int x, final int y, final int w, final int h, @Nullable final Image backgroundImage, @NotNull final Fonts fonts) {
-        super(tooltipManager, elementListener, name, x, y, w, h, Transparency.TRANSLUCENT);
+    protected GUILog(@NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final String name, @NotNull final Extent extent, @Nullable final Image backgroundImage, @NotNull final Fonts fonts) {
+        super(tooltipManager, elementListener, name, extent, Transparency.TRANSLUCENT);
         this.backgroundImage = backgroundImage;
         this.fonts = fonts;
         final FontRenderContext context;
@@ -133,7 +131,7 @@ public abstract class GUILog extends GUIElement implements GUIScrollable2 {
                 g.dispose();
             }
         }
-        buffer = new Buffer(fonts, context, w);
+        buffer = new Buffer(fonts, context, extent.getW());
         renderStateManager = new RenderStateManager(renderStateListener, buffer);
     }
 

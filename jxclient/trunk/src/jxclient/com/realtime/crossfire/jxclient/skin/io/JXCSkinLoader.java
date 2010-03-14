@@ -107,6 +107,7 @@ import com.realtime.crossfire.jxclient.skin.factory.DialogFactory;
 import com.realtime.crossfire.jxclient.skin.factory.TextButtonFactory;
 import com.realtime.crossfire.jxclient.skin.skin.DefaultJXCSkin;
 import com.realtime.crossfire.jxclient.skin.skin.Dialogs;
+import com.realtime.crossfire.jxclient.skin.skin.Extent;
 import com.realtime.crossfire.jxclient.skin.skin.JXCSkin;
 import com.realtime.crossfire.jxclient.skin.skin.JXCSkinCache;
 import com.realtime.crossfire.jxclient.skin.skin.JXCSkinException;
@@ -714,10 +715,7 @@ public class JXCSkinLoader {
         }
 
         final String name = args[1];
-        final int x = expressionParser.parseInt(args[2]);
-        final int y = expressionParser.parseInt(args[3]);
-        final int w = expressionParser.parseInt(args[4]);
-        final int h = expressionParser.parseInt(args[5]);
+        final Extent extent = parseExtent(args, 2);
         final BufferedImage upImage = imageParser.getImage(args[6]);
         final BufferedImage downImage = imageParser.getImage(args[7]);
         final boolean autoRepeat = NumberParser.parseBoolean(args[8]);
@@ -741,7 +739,7 @@ public class JXCSkinLoader {
             textY = expressionParser.parseInt(args[13]);
             label = ParseUtils.parseText(args, 14, lnr);
         }
-        insertGuiElement(new GUIButton(tooltipManager, elementListener, name, x, y, w, h, upImage, downImage, label, font, color, textX, textY, autoRepeat, commandList));
+        insertGuiElement(new GUIButton(tooltipManager, elementListener, name, extent, upImage, downImage, label, font, color, textX, textY, autoRepeat, commandList));
     }
 
     /**
@@ -763,14 +761,11 @@ public class JXCSkinLoader {
         }
 
         final String name = args[1];
-        final int x = expressionParser.parseInt(args[2]);
-        final int y = expressionParser.parseInt(args[3]);
-        final int w = expressionParser.parseInt(args[4]);
-        final int h = expressionParser.parseInt(args[5]);
+        final Extent extent = parseExtent(args, 2);
         final CheckBoxOption option = ParseUtils.parseCheckBoxOption(args[6], optionManager);
         final String text = ParseUtils.parseText(args, 7, lnr);
         assert checkBoxFactory != null;
-        insertGuiElement(checkBoxFactory.newCheckBox(tooltipManager, elementListener, name, x, y, w, h, option, text));
+        insertGuiElement(checkBoxFactory.newCheckBox(tooltipManager, elementListener, name, extent, option, text));
     }
 
     /**
@@ -838,17 +833,14 @@ public class JXCSkinLoader {
         }
 
         final String name = args[1];
-        final int x = expressionParser.parseInt(args[2]);
-        final int y = expressionParser.parseInt(args[3]);
-        final int w = expressionParser.parseInt(args[4]);
-        final int h = expressionParser.parseInt(args[5]);
+        final Extent extent = parseExtent(args, 2);
         final BufferedImage activeImage = imageParser.getImage(args[6]);
         final BufferedImage inactiveImage = imageParser.getImage(args[7]);
         final Font font = definedFonts.lookup(args[8]);
         final Color inactiveColor = ParseUtils.parseColor(args[9]);
         final Color activeColor = ParseUtils.parseColor(args[10]);
         final int margin = expressionParser.parseInt(args[11]);
-        insertGuiElement(new GUICommandText(commandCallback, tooltipManager, elementListener, name, x, y, w, h, activeImage, inactiveImage, font, inactiveColor, activeColor, margin, "", commands, false));
+        insertGuiElement(new GUICommandText(commandCallback, tooltipManager, elementListener, name, extent, activeImage, inactiveImage, font, inactiveColor, activeColor, margin, "", commands, false));
     }
 
     /**
@@ -1017,10 +1009,7 @@ public class JXCSkinLoader {
         }
 
         final String name = args[1];
-        final int x = expressionParser.parseInt(args[2]);
-        final int y = expressionParser.parseInt(args[3]);
-        final int w = expressionParser.parseInt(args[4]);
-        final int h = expressionParser.parseInt(args[5]);
+        final Extent extent = parseExtent(args, 2);
         final BufferedImage positiveDivImage = imageParser.getImage(args[6]);
         final BufferedImage positiveModImage = imageParser.getImage(args[7]);
         final BufferedImage emptyImage = args[8].equals("null") ? null : imageParser.getImage(args[8]);
@@ -1028,7 +1017,7 @@ public class JXCSkinLoader {
         final Orientation orientationDiv = ParseUtils.parseOrientation(args[10]);
         final Orientation orientationMod = ParseUtils.parseOrientation(args[11]);
         final String tooltipPrefix = ParseUtils.parseText(args, 12, lnr);
-        final GUIDupGauge element = new GUIDupGauge(tooltipManager, elementListener, name, x, y, w, h, positiveDivImage, positiveModImage, emptyImage, orientationDiv, orientationMod, tooltipPrefix.length() > 0 ? tooltipPrefix : null);
+        final GUIDupGauge element = new GUIDupGauge(tooltipManager, elementListener, name, extent, positiveDivImage, positiveModImage, emptyImage, orientationDiv, orientationMod, tooltipPrefix.length() > 0 ? tooltipPrefix : null);
         insertGuiElement(element);
         gaugeUpdater.setGauge(element);
     }
@@ -1048,10 +1037,7 @@ public class JXCSkinLoader {
         }
 
         final String name = args[1];
-        final int x = expressionParser.parseInt(args[2]);
-        final int y = expressionParser.parseInt(args[3]);
-        final int w = expressionParser.parseInt(args[4]);
-        final int h = expressionParser.parseInt(args[5]);
+        final Extent extent = parseExtent(args, 2);
         final BufferedImage positiveDivImage = imageParser.getImage(args[6]);
         final BufferedImage positiveModImage = imageParser.getImage(args[7]);
         final BufferedImage emptyImage = imageParser.getImage(args[8]);
@@ -1061,7 +1047,7 @@ public class JXCSkinLoader {
         final Color color = ParseUtils.parseColor(args[12]);
         final Font font = definedFonts.lookup(args[13]);
         final String tooltipPrefix = ParseUtils.parseText(args, 14, lnr);
-        final GUIDupTextGauge element = new GUIDupTextGauge(tooltipManager, elementListener, name, x, y, w, h, positiveDivImage, positiveModImage, emptyImage, orientationDiv, orientationMod, tooltipPrefix.length() > 0 ? tooltipPrefix : null, color, font);
+        final GUIDupTextGauge element = new GUIDupTextGauge(tooltipManager, elementListener, name, extent, positiveDivImage, positiveModImage, emptyImage, orientationDiv, orientationMod, tooltipPrefix.length() > 0 ? tooltipPrefix : null, color, font);
         insertGuiElement(element);
         gaugeUpdater.setGauge(element);
     }
@@ -1141,16 +1127,13 @@ public class JXCSkinLoader {
         }
 
         final String name = args[1];
-        final int x = expressionParser.parseInt(args[2]);
-        final int y = expressionParser.parseInt(args[3]);
-        final int w = expressionParser.parseInt(args[4]);
-        final int h = expressionParser.parseInt(args[5]);
+        final Extent extent = parseExtent(args, 2);
         final Color color = ParseUtils.parseColor(args[6]);
         final float alpha = NumberParser.parseFloat(args[7]);
         if (alpha < 0 || alpha > 1F) {
             throw new IOException("invalid alpha value: "+alpha);
         }
-        insertGuiElement(new GUIFill(tooltipManager, elementListener, name, x, y, w, h, color, alpha));
+        insertGuiElement(new GUIFill(tooltipManager, elementListener, name, extent, color, alpha));
     }
 
     /**
@@ -1185,17 +1168,14 @@ public class JXCSkinLoader {
         }
 
         final String name = args[1];
-        final int x = expressionParser.parseInt(args[2]);
-        final int y = expressionParser.parseInt(args[3]);
-        final int w = expressionParser.parseInt(args[4]);
-        final int h = expressionParser.parseInt(args[5]);
+        final Extent extent = parseExtent(args, 2);
         final BufferedImage positiveImage = args[6].equals("null") ? null : imageParser.getImage(args[6]);
         final BufferedImage negativeImage = args[7].equals("null") ? null : imageParser.getImage(args[7]);
         final BufferedImage emptyImage = args[8].equals("null") ? null : imageParser.getImage(args[8]);
         final GaugeUpdater gaugeUpdater = newGaugeUpdater(args[9]);
         final Orientation orientation = ParseUtils.parseOrientation(args[10]);
         final String tooltipPrefix = ParseUtils.parseText(args, 11, lnr);
-        final GUIGauge element = new GUIGauge(tooltipManager, elementListener, name, x, y, w, h, positiveImage, negativeImage, emptyImage, orientation, tooltipPrefix.length() > 0 ? tooltipPrefix : null);
+        final GUIGauge element = new GUIGauge(tooltipManager, elementListener, name, extent, positiveImage, negativeImage, emptyImage, orientation, tooltipPrefix.length() > 0 ? tooltipPrefix : null);
         insertGuiElement(element);
         gaugeUpdater.setGauge(element);
     }
@@ -1239,10 +1219,7 @@ public class JXCSkinLoader {
         }
 
         final String name = args[1];
-        final int x = expressionParser.parseInt(args[2]);
-        final int y = expressionParser.parseInt(args[3]);
-        final int w = expressionParser.parseInt(args[4]);
-        final int h = expressionParser.parseInt(args[5]);
+        final Extent extent = parseExtent(args, 2);
         final int cellWidth = expressionParser.parseInt(args[6]);
         final int cellHeight = expressionParser.parseInt(args[7]);
         final AbstractLabel selectedItem = args[8].equals("null") ? null : guiElementParser.lookupLabelElement(args[8]);
@@ -1255,11 +1232,11 @@ public class JXCSkinLoader {
         } else {
             itemFactory = new GUIItemFloorFactory(tooltipManager, elementListener, commandQueue, name, itemPainter, server, facesManager, floorView, itemSet, nextGroupFace, prevGroupFace);
         }
-        final GUIElement element = new GUIItemList(tooltipManager, elementListener, commandQueue, name, x, y, w, h, cellWidth, cellHeight, server, inventoryList ? inventoryView : floorView, selectedItem, itemFactory);
+        final GUIElement element = new GUIItemList(tooltipManager, elementListener, commandQueue, name, extent, cellWidth, cellHeight, server, inventoryList ? inventoryView : floorView, selectedItem, itemFactory);
         insertGuiElement(element);
 
         if (!inventoryList) {
-            skin.setNumLookObjects(Math.max(h/cellHeight, 1)*Math.max(w/cellHeight, 1));
+            skin.setNumLookObjects(Math.max(extent.getH()/cellHeight, 1)*Math.max(extent.getW()/cellHeight, 1));
         }
     }
 
@@ -1284,10 +1261,7 @@ public class JXCSkinLoader {
 
         final String type = args[1];
         final String name = args[2];
-        final int x = expressionParser.parseInt(args[3]);
-        final int y = expressionParser.parseInt(args[4]);
-        final int w = expressionParser.parseInt(args[5]);
-        final int h = expressionParser.parseInt(args[6]);
+        final Extent extent = parseExtent(args, 3);
         final int index = expressionParser.parseInt(args[7]);
         final GUIElement element;
         if (type.equals("floor")) {
@@ -1299,8 +1273,8 @@ public class JXCSkinLoader {
                 throw new IOException("cannot use 'item floor' without 'def item' command");
             }
 
-            final ItemPainter itemPainter = defaultItemPainter.newItemPainter(w, h);
-            element = new GUIItemFloor(tooltipManager, elementListener, commandQueue, name, x, y, w, h, itemPainter, index, server, floorView, itemSet, facesManager, nextGroupFace, prevGroupFace);
+            final ItemPainter itemPainter = defaultItemPainter.newItemPainter(extent.getW(), extent.getH());
+            element = new GUIItemFloor(tooltipManager, elementListener, commandQueue, name, extent, itemPainter, index, server, floorView, itemSet, facesManager, nextGroupFace, prevGroupFace);
         } else if (type.equals("inventory")) {
             if (args.length != 8) {
                 throw new IOException("syntax error");
@@ -1310,8 +1284,8 @@ public class JXCSkinLoader {
                 throw new IOException("cannot use 'item floor' without 'def item' command");
             }
 
-            final ItemPainter itemPainter = defaultItemPainter.newItemPainter(w, h);
-            element = new GUIItemInventory(tooltipManager, elementListener, commandQueue, name, x, y, w, h, itemPainter, index, server, facesManager, floorView, inventoryView);
+            final ItemPainter itemPainter = defaultItemPainter.newItemPainter(extent.getW(), extent.getH());
+            element = new GUIItemInventory(tooltipManager, elementListener, commandQueue, name, extent, itemPainter, index, server, facesManager, floorView, inventoryView);
         } else if (type.equals("shortcut")) {
             if (args.length != 11) {
                 throw new IOException("syntax error");
@@ -1322,7 +1296,7 @@ public class JXCSkinLoader {
             final Color appliedColor = ParseUtils.parseColorNull(args[9]);
             final BufferedImage appliedImage = imageParser.getImage(appliedColor, args[9]);
             final Font font = definedFonts.lookup(args[10]);
-            element = new GUIItemShortcut(tooltipManager, elementListener, name, x, y, w, h, cursedColor, cursedImage, appliedColor, appliedImage, index, facesManager, shortcuts, font, currentSpellManager);
+            element = new GUIItemShortcut(tooltipManager, elementListener, name, extent, cursedColor, cursedImage, appliedColor, appliedImage, index, facesManager, shortcuts, font, currentSpellManager);
         } else if (type.equals("spelllist")) {
             if (args.length != 9) {
                 throw new IOException("syntax error");
@@ -1330,7 +1304,7 @@ public class JXCSkinLoader {
 
             final Color selectorColor = ParseUtils.parseColorNull(args[8]);
             final BufferedImage selectorImage = imageParser.getImage(selectorColor, args[8]);
-            element = new GUIItemSpelllist(tooltipManager, elementListener, commandQueue, name, x, y, w, h, selectorColor, selectorImage, index, facesManager, spellsManager, currentSpellManager);
+            element = new GUIItemSpelllist(tooltipManager, elementListener, commandQueue, name, extent, selectorColor, selectorImage, index, facesManager, spellsManager, currentSpellManager);
         } else {
             throw new IOException("undefined item type: "+type);
         }
@@ -1372,14 +1346,11 @@ public class JXCSkinLoader {
         }
 
         final String name = args[1];
-        final int x = expressionParser.parseInt(args[2]);
-        final int y = expressionParser.parseInt(args[3]);
-        final int w = expressionParser.parseInt(args[4]);
-        final int h = expressionParser.parseInt(args[5]);
+        final Extent extent = parseExtent(args, 2);
         final Font font = definedFonts.lookup(args[6]);
         final Color color = ParseUtils.parseColor(args[7]);
         final String text = ParseUtils.parseText(args, 8, lnr);
-        insertGuiElement(new GUIHTMLLabel(tooltipManager, elementListener, name, x, y, w, h, null, font, color, new Color(0, 0, 0, 0F), text));
+        insertGuiElement(new GUIHTMLLabel(tooltipManager, elementListener, name, extent, null, font, color, new Color(0, 0, 0, 0F), text));
     }
 
     /**
@@ -1397,14 +1368,11 @@ public class JXCSkinLoader {
         }
 
         final String name = args[1];
-        final int x = expressionParser.parseInt(args[2]);
-        final int y = expressionParser.parseInt(args[3]);
-        final int w = expressionParser.parseInt(args[4]);
-        final int h = expressionParser.parseInt(args[5]);
+        final Extent extent = parseExtent(args, 2);
         final Font font = definedFonts.lookup(args[6]);
         final Color color = ParseUtils.parseColor(args[7]);
         final String text = ParseUtils.parseText(args, 8, lnr);
-        insertGuiElement(new GUIMultiLineLabel(tooltipManager, elementListener, name, x, y, w, h, null, font, color, new Color(0, 0, 0, 0F), Alignment.LEFT, text));
+        insertGuiElement(new GUIMultiLineLabel(tooltipManager, elementListener, name, extent, null, font, color, new Color(0, 0, 0, 0F), Alignment.LEFT, text));
     }
 
     /**
@@ -1422,13 +1390,10 @@ public class JXCSkinLoader {
         }
 
         final String name = args[1];
-        final int x = expressionParser.parseInt(args[2]);
-        final int y = expressionParser.parseInt(args[3]);
-        final int w = expressionParser.parseInt(args[4]);
-        final int h = expressionParser.parseInt(args[5]);
+        final Extent extent = parseExtent(args, 2);
         final Font font = definedFonts.lookup(args[6]);
         final Color color = ParseUtils.parseColor(args[7]);
-        final GUIElement element = new GUILabelQuery(tooltipManager, elementListener, name, x, y, w, h, server, font, color, new Color(0, 0, 0, 0F));
+        final GUIElement element = new GUILabelQuery(tooltipManager, elementListener, name, extent, server, font, color, new Color(0, 0, 0, 0F));
         insertGuiElement(element);
     }
 
@@ -1447,13 +1412,10 @@ public class JXCSkinLoader {
         }
 
         final String name = args[1];
-        final int x = expressionParser.parseInt(args[2]);
-        final int y = expressionParser.parseInt(args[3]);
-        final int w = expressionParser.parseInt(args[4]);
-        final int h = expressionParser.parseInt(args[5]);
+        final Extent extent = parseExtent(args, 2);
         final Font font = definedFonts.lookup(args[6]);
         final Color color = ParseUtils.parseColor(args[7]);
-        final GUIElement element = new GUILabelMessage(tooltipManager, elementListener, name, x, y, w, h, server, font, color, new Color(0, 0, 0, 0F));
+        final GUIElement element = new GUILabelMessage(tooltipManager, elementListener, name, extent, server, font, color, new Color(0, 0, 0, 0F));
         insertGuiElement(element);
     }
 
@@ -1472,14 +1434,11 @@ public class JXCSkinLoader {
         }
 
         final String name = args[1];
-        final int x = expressionParser.parseInt(args[2]);
-        final int y = expressionParser.parseInt(args[3]);
-        final int w = expressionParser.parseInt(args[4]);
-        final int h = expressionParser.parseInt(args[5]);
+        final Extent extent = parseExtent(args, 2);
         final Font font = definedFonts.lookup(args[6]);
         final Color color = ParseUtils.parseColor(args[7]);
         final String text = ParseUtils.parseText(args, 8, lnr);
-        insertGuiElement(new GUIOneLineLabel(tooltipManager, elementListener, name, x, y, w, h, null, font, color, new Color(0, 0, 0, 0F), Alignment.LEFT, text));
+        insertGuiElement(new GUIOneLineLabel(tooltipManager, elementListener, name, extent, null, font, color, new Color(0, 0, 0, 0F), Alignment.LEFT, text));
     }
 
     /**
@@ -1496,15 +1455,12 @@ public class JXCSkinLoader {
         }
 
         final String name = args[1];
-        final int x = expressionParser.parseInt(args[2]);
-        final int y = expressionParser.parseInt(args[3]);
-        final int w = expressionParser.parseInt(args[4]);
-        final int h = expressionParser.parseInt(args[5]);
+        final Extent extent = parseExtent(args, 2);
         final Font font = definedFonts.lookup(args[6]);
         final Color color = ParseUtils.parseColor(args[7]);
         final int stat = ParseUtils.parseStat(args[8]);
         final Alignment alignment = NumberParser.parseEnum(Alignment.class, args[9], "text alignment");
-        final GUIElement element = new GUILabelStats(tooltipManager, elementListener, name, x, y, w, h, font, color, new Color(0, 0, 0, 0F), stat, alignment, stats);
+        final GUIElement element = new GUILabelStats(tooltipManager, elementListener, name, extent, font, color, new Color(0, 0, 0, 0F), stat, alignment, stats);
         insertGuiElement(element);
     }
 
@@ -1523,13 +1479,10 @@ public class JXCSkinLoader {
         }
 
         final String name = args[1];
-        final int x = expressionParser.parseInt(args[2]);
-        final int y = expressionParser.parseInt(args[3]);
-        final int w = expressionParser.parseInt(args[4]);
-        final int h = expressionParser.parseInt(args[5]);
+        final Extent extent = parseExtent(args, 2);
         final Font font = definedFonts.lookup(args[6]);
         final Type type = NumberParser.parseEnum(Type.class, args[7], "label type");
-        final GUIElement element = new GUISpellLabel(tooltipManager, elementListener, name, x, y, w, h, null, facesManager, font, type, currentSpellManager);
+        final GUIElement element = new GUISpellLabel(tooltipManager, elementListener, name, extent, null, facesManager, font, type, currentSpellManager);
         insertGuiElement(element);
     }
 
@@ -1547,10 +1500,7 @@ public class JXCSkinLoader {
         }
 
         final String name = args[1];
-        final int x = expressionParser.parseInt(args[2]);
-        final int y = expressionParser.parseInt(args[3]);
-        final int w = expressionParser.parseInt(args[4]);
-        final int h = expressionParser.parseInt(args[5]);
+        final Extent extent = parseExtent(args, 2);
         final BufferedImage emptyImage = imageParser.getImage(args[6]);
         final Font fontPrint = definedFonts.lookup(args[7]);
         final Font fontFixed = definedFonts.lookup(args[8]);
@@ -1558,7 +1508,7 @@ public class JXCSkinLoader {
         final Font fontArcane = definedFonts.lookup(args[10]);
         final Color defaultColor = ParseUtils.parseColor(args[11]);
         final Fonts fonts = new Fonts(fontPrint, fontFixed, fontFixedBold, fontArcane);
-        final GUIElement element = new GUILabelLog(tooltipManager, elementListener, name, x, y, w, h, emptyImage, fonts, defaultColor);
+        final GUIElement element = new GUILabelLog(tooltipManager, elementListener, name, extent, emptyImage, fonts, defaultColor);
         insertGuiElement(element);
     }
 
@@ -1577,10 +1527,7 @@ public class JXCSkinLoader {
         }
 
         final String name = args[1];
-        final int x = expressionParser.parseInt(args[2]);
-        final int y = expressionParser.parseInt(args[3]);
-        final int w = expressionParser.parseInt(args[4]);
-        final int h = expressionParser.parseInt(args[5]);
+        final Extent extent = parseExtent(args, 2);
         final BufferedImage emptyImage = imageParser.getImage(args[6]);
         final Font fontPrint = definedFonts.lookup(args[7]);
         final Font fontFixed = definedFonts.lookup(args[8]);
@@ -1588,7 +1535,7 @@ public class JXCSkinLoader {
         final Font fontArcane = definedFonts.lookup(args[10]);
         final Color defaultColor = ParseUtils.parseColor(args[11]);
         final Fonts fonts = new Fonts(fontPrint, fontFixed, fontFixedBold, fontArcane);
-        final GUIElement element = new GUIMessageLog(tooltipManager, elementListener, name, x, y, w, h, server, emptyImage, fonts, defaultColor);
+        final GUIElement element = new GUIMessageLog(tooltipManager, elementListener, name, extent, server, emptyImage, fonts, defaultColor);
         insertGuiElement(element);
     }
 
@@ -1670,15 +1617,12 @@ public class JXCSkinLoader {
         }
 
         final String name = args[1];
-        final int x = expressionParser.parseInt(args[2]);
-        final int y = expressionParser.parseInt(args[3]);
-        final int w = expressionParser.parseInt(args[4]);
-        final int h = expressionParser.parseInt(args[5]);
+        final Extent extent = parseExtent(args, 2);
         final FacesProvider facesProvider = facesProviderFactory.getFacesProvider(4);
         if (facesProvider == null) {
             throw new IOException("cannot create faces with size 4");
         }
-        final GUIElement element = new GUIMagicMap(tooltipManager, elementListener, name, x, y, w, h, mapUpdater, facesProvider, server);
+        final GUIElement element = new GUIMagicMap(tooltipManager, elementListener, name, extent, mapUpdater, facesProvider, server);
         insertGuiElement(element);
     }
 
@@ -1698,21 +1642,18 @@ public class JXCSkinLoader {
 
         final String name = args[1];
         final int tileSize = expressionParser.parseInt(args[2]);
-        final int x = expressionParser.parseInt(args[3]);
-        final int y = expressionParser.parseInt(args[4]);
-        final int w = expressionParser.parseInt(args[5]);
-        final int h = expressionParser.parseInt(args[6]);
+        final Extent extent = parseExtent(args, 3);
 
         if (tileSize <= 0) {
             throw new IOException("invalid tile size "+tileSize);
         }
-        skin.setMapSize((w+tileSize-1)/tileSize, (h+tileSize-1)/tileSize);
+        skin.setMapSize((extent.getW()+tileSize-1)/tileSize, (extent.getH()+tileSize-1)/tileSize);
 
         final FacesProvider facesProvider = facesProviderFactory.getFacesProvider(tileSize);
         if (facesProvider == null) {
             throw new IOException("cannot create faces with size "+tileSize);
         }
-        final GUIElement element = new GUIMap(tooltipManager, elementListener, name, x, y, w, h, mapUpdater, facesProvider, server);
+        final GUIElement element = new GUIMap(tooltipManager, elementListener, name, extent, mapUpdater, facesProvider, server);
         insertGuiElement(element);
     }
 
@@ -1731,10 +1672,7 @@ public class JXCSkinLoader {
         }
 
         final String name = args[1];
-        final int x = expressionParser.parseInt(args[2]);
-        final int y = expressionParser.parseInt(args[3]);
-        final int w = expressionParser.parseInt(args[4]);
-        final int h = expressionParser.parseInt(args[5]);
+        final Extent extent = parseExtent(args, 2);
         final int cellWidth = expressionParser.parseInt(args[6]);
         final int cellHeight = expressionParser.parseInt(args[7]);
         final BufferedImage tcpImage = args[8].equals("null") ? null : imageParser.getImage(args[8]);
@@ -1744,7 +1682,7 @@ public class JXCSkinLoader {
         final String format = args[12];
         final String tooltip = args[13];
 
-        final GUIElement list = new GUIMetaElementList(tooltipManager, elementListener, name, x, y, w, h, cellWidth, cellHeight, metaserverModel, tcpImage, font, format, tooltip, text, label);
+        final GUIElement list = new GUIMetaElementList(tooltipManager, elementListener, name, extent, cellWidth, cellHeight, metaserverModel, tcpImage, font, format, tooltip, text, label);
         insertGuiElement(list);
     }
 
@@ -1762,16 +1700,13 @@ public class JXCSkinLoader {
         }
 
         final String name = args[1];
-        final int x = expressionParser.parseInt(args[2]);
-        final int y = expressionParser.parseInt(args[3]);
-        final int w = expressionParser.parseInt(args[4]);
-        final int h = expressionParser.parseInt(args[5]);
+        final Extent extent = parseExtent(args, 2);
         final BufferedImage image = imageParser.getImage(args[6]);
         final float alpha = NumberParser.parseFloat(args[7]);
         if (alpha < 0 || alpha > 1F) {
             throw new IOException("invalid alpha value: "+alpha);
         }
-        insertGuiElement(new GUIPicture(tooltipManager, elementListener, name, x, y, w, h, image, alpha));
+        insertGuiElement(new GUIPicture(tooltipManager, elementListener, name, extent, image, alpha));
     }
 
     /**
@@ -1790,17 +1725,14 @@ public class JXCSkinLoader {
         }
 
         final String name = args[1];
-        final int x = expressionParser.parseInt(args[2]);
-        final int y = expressionParser.parseInt(args[3]);
-        final int w = expressionParser.parseInt(args[4]);
-        final int h = expressionParser.parseInt(args[5]);
+        final Extent extent = parseExtent(args, 2);
         final BufferedImage activeImage = imageParser.getImage(args[6]);
         final BufferedImage inactiveImage = imageParser.getImage(args[7]);
         final Font font = definedFonts.lookup(args[8]);
         final Color inactiveColor = ParseUtils.parseColor(args[9]);
         final Color activeColor = ParseUtils.parseColor(args[10]);
         final int margin = expressionParser.parseInt(args[11]);
-        insertGuiElement(new GUIQueryText(server, commandCallback, tooltipManager, elementListener, name, x, y, w, h, activeImage, inactiveImage, font, inactiveColor, activeColor, margin, "", false));
+        insertGuiElement(new GUIQueryText(server, commandCallback, tooltipManager, elementListener, name, extent, activeImage, inactiveImage, font, inactiveColor, activeColor, margin, "", false));
     }
 
     /**
@@ -1891,10 +1823,7 @@ public class JXCSkinLoader {
         }
 
         final String name = args[1];
-        final int x = expressionParser.parseInt(args[2]);
-        final int y = expressionParser.parseInt(args[3]);
-        final int w = expressionParser.parseInt(args[4]);
-        final int h = expressionParser.parseInt(args[5]);
+        final Extent extent = parseExtent(args, 2);
         final boolean proportionalSlider = NumberParser.parseBoolean(args[6]);
         final Object element = definedGUIElements.lookup(args[7]);
         final Color colorBackground = ParseUtils.parseColor(args[8]);
@@ -1902,7 +1831,7 @@ public class JXCSkinLoader {
         if (!(element instanceof GUIScrollable2)) {
             throw new IOException("'"+element+"' is not a scrollable element");
         }
-        insertGuiElement(new GUIScrollBar(tooltipManager, elementListener, name, x, y, w, h, proportionalSlider, (GUIScrollable2)element, colorBackground, colorForeground));
+        insertGuiElement(new GUIScrollBar(tooltipManager, elementListener, name, extent, proportionalSlider, (GUIScrollable2)element, colorBackground, colorForeground));
     }
 
     /**
@@ -1943,10 +1872,7 @@ public class JXCSkinLoader {
         }
 
         final String name = args[1];
-        final int x = expressionParser.parseInt(args[2]);
-        final int y = expressionParser.parseInt(args[3]);
-        final int w = expressionParser.parseInt(args[4]);
-        final int h = expressionParser.parseInt(args[5]);
+        final Extent extent = parseExtent(args, 2);
         final BufferedImage activeImage = imageParser.getImage(args[6]);
         final BufferedImage inactiveImage = imageParser.getImage(args[7]);
         final Font font = definedFonts.lookup(args[8]);
@@ -1955,7 +1881,7 @@ public class JXCSkinLoader {
         final int margin = expressionParser.parseInt(args[11]);
         final CommandList commandList = skin.getCommandList(args[12]);
         final boolean ignoreUpDown = NumberParser.parseBoolean(args[13]);
-        insertGuiElement(new GUITextField(commandCallback, tooltipManager, elementListener, name, x, y, w, h, activeImage, inactiveImage, font, inactiveColor, activeColor, margin, "", commandList, ignoreUpDown));
+        insertGuiElement(new GUITextField(commandCallback, tooltipManager, elementListener, name, extent, activeImage, inactiveImage, font, inactiveColor, activeColor, margin, "", commandList, ignoreUpDown));
     }
 
     /**
@@ -1977,15 +1903,12 @@ public class JXCSkinLoader {
         }
 
         final String name = args[1];
-        final int x = expressionParser.parseInt(args[2]);
-        final int y = expressionParser.parseInt(args[3]);
-        final int w = expressionParser.parseInt(args[4]);
-        final int h = expressionParser.parseInt(args[5]);
+        final Extent extent = parseExtent(args, 2);
         final boolean autoRepeat = NumberParser.parseBoolean(args[6]);
         final CommandList commandList = skin.getCommandList(args[7]);
         final String text = ParseUtils.parseText(args, 8, lnr);
         assert textButtonFactory != null;
-        insertGuiElement(textButtonFactory.newTextButton(tooltipManager, elementListener, name, x, y, w, h, text, autoRepeat, commandList));
+        insertGuiElement(textButtonFactory.newTextButton(tooltipManager, elementListener, name, extent, text, autoRepeat, commandList));
     }
 
     /**
@@ -2003,10 +1926,7 @@ public class JXCSkinLoader {
         }
 
         final String name = args[1];
-        final int x = expressionParser.parseInt(args[2]);
-        final int y = expressionParser.parseInt(args[3]);
-        final int w = expressionParser.parseInt(args[4]);
-        final int h = expressionParser.parseInt(args[5]);
+        final Extent extent = parseExtent(args, 2);
         final BufferedImage positiveImage = imageParser.getImage(args[6]);
         final BufferedImage negativeImage = args[7].equals("null") ? null : imageParser.getImage(args[7]);
         final BufferedImage emptyImage = imageParser.getImage(args[8]);
@@ -2015,7 +1935,7 @@ public class JXCSkinLoader {
         final Color color = ParseUtils.parseColor(args[11]);
         final Font font = definedFonts.lookup(args[12]);
         final String tooltipPrefix = ParseUtils.parseText(args, 13, lnr);
-        final GUITextGauge element = new GUITextGauge(tooltipManager, elementListener, name, x, y, w, h, positiveImage, negativeImage, emptyImage, orientation, tooltipPrefix.length() > 0 ? tooltipPrefix : null, color, font);
+        final GUITextGauge element = new GUITextGauge(tooltipManager, elementListener, name, extent, positiveImage, negativeImage, emptyImage, orientation, tooltipPrefix.length() > 0 ? tooltipPrefix : null, color, font);
         insertGuiElement(element);
         gaugeUpdater.setGauge(element);
     }
@@ -2034,7 +1954,7 @@ public class JXCSkinLoader {
         }
 
         final Font font = definedFonts.lookup(args[1]);
-        final GUIHTMLLabel tooltipLabel = new GUIHTMLLabel(tooltipManager, elementListener, "tooltip", 0, 0, 1, 1, null, font, Color.BLACK, Color.WHITE, "");
+        final GUIHTMLLabel tooltipLabel = new GUIHTMLLabel(tooltipManager, elementListener, "tooltip", new Extent(0, 0, 1, 1), null, font, Color.BLACK, Color.WHITE, "");
         tooltipLabel.setAutoResize(true);
         skin.setTooltipLabel(tooltipLabel);
     }
@@ -2098,6 +2018,21 @@ public class JXCSkinLoader {
         final GaugeUpdater gaugeUpdater = gaugeUpdaterParser.parseGaugeUpdater(name, experienceTable);
         skin.addGaugeUpdater(gaugeUpdater);
         return gaugeUpdater;
+    }
+
+    /**
+     * Creates an {@link Extent} from four parameters.
+     * @param args the parameters
+     * @param index the starting index into <code>args</code>
+     * @return the extent
+     * @throws IOException if the extent cannot be parsed
+     */
+    private Extent parseExtent(@NotNull final String[] args, final int index) throws IOException {
+        final int x = expressionParser.parseInt(args[index]);
+        final int y = expressionParser.parseInt(args[index+1]);
+        final int w = expressionParser.parseInt(args[index+2]);
+        final int h = expressionParser.parseInt(args[index+3]);
+        return new Extent(x, y, w, h);
     }
 
 }
