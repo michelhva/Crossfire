@@ -72,6 +72,16 @@ public class GUIItemList extends GUIList {
     private final CrossfireServerConnection crossfireServerConnection;
 
     /**
+     * The width of cells.
+     */
+    private final int cellWidth;
+
+    /**
+     * The height of cells.
+     */
+    private final int cellHeight;
+
+    /**
      * The {@link ItemView} to monitor.
      */
     @NotNull
@@ -121,8 +131,8 @@ public class GUIItemList extends GUIList {
      * @param commandQueue the command queue for sending commands to the server
      * @param name the name of this element
      * @param extent the extent of this element
-     * @param cellWidth the width of each cell
-     * @param cellHeight the height of each cell
+     * @param cellWidth the width of cells
+     * @param cellHeight the height of cells
      * @param crossfireServerConnection the crossfire server connection for
      * sending commands to the server
      * @param itemView the item view to monitor
@@ -132,6 +142,8 @@ public class GUIItemList extends GUIList {
      */
     public GUIItemList(@NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final CommandQueue commandQueue, @NotNull final String name, @NotNull final Extent extent, final int cellWidth, final int cellHeight, @NotNull final CrossfireServerConnection crossfireServerConnection, @NotNull final ItemView itemView, @Nullable final AbstractLabel currentItem, @NotNull final GUIItemItemFactory itemItemFactory) {
         super(tooltipManager, elementListener, name, extent, cellWidth, cellHeight, new ItemItemCellRenderer(itemItemFactory.newTemplateItem(cellHeight)));
+        this.cellWidth = cellWidth;
+        this.cellHeight = cellHeight;
         this.itemView = itemView;
         this.itemItemFactory = itemItemFactory;
         this.commandQueue = commandQueue;
@@ -335,6 +347,14 @@ public class GUIItemList extends GUIList {
     @Nullable
     public GUIItemItem getSelectedItem() {
         return (GUIItemItem)getSelectedObject();
+    }
+
+    /**
+     * Returns the preferred number of objects to display.
+     * @return the number of objects
+     */
+    public int getNumLookObjects() {
+        return Math.max(getWidth()/cellWidth, 1)*Math.max(getHeight()/cellHeight, 1);
     }
 
 }

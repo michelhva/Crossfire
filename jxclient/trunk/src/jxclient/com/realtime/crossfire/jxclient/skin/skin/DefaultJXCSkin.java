@@ -30,6 +30,7 @@ import com.realtime.crossfire.jxclient.gui.gui.JXCWindowRenderer;
 import com.realtime.crossfire.jxclient.gui.gui.TooltipManager;
 import com.realtime.crossfire.jxclient.gui.keybindings.KeyBindings;
 import com.realtime.crossfire.jxclient.gui.label.AbstractLabel;
+import com.realtime.crossfire.jxclient.gui.list.GUIItemList;
 import com.realtime.crossfire.jxclient.settings.options.Option;
 import com.realtime.crossfire.jxclient.settings.options.OptionException;
 import com.realtime.crossfire.jxclient.settings.options.OptionManager;
@@ -39,6 +40,7 @@ import java.util.ArrayList;
 import java.util.Collection;
 import java.util.HashSet;
 import java.util.Iterator;
+import java.util.List;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 
@@ -86,7 +88,7 @@ public class DefaultJXCSkin implements JXCSkin {
     /**
      * The maximum number of ground view objects.
      */
-    private int numLookObjects = DEFAULT_NUM_LOOK_OBJECTS;
+    private int numLookObjects = 0;
 
     /**
      * All "event init" commands in execution order.
@@ -141,6 +143,12 @@ public class DefaultJXCSkin implements JXCSkin {
      */
     @NotNull
     private final Collection<GaugeUpdater> gaugeUpdaters = new ArrayList<GaugeUpdater>();
+
+    /**
+     * The {@link GUIItemList}s that display floor items.
+     */
+    @NotNull
+    private final List<GUIItemList> floorLists = new ArrayList<GUIItemList>();
 
     /**
      * The tooltip label or <code>null</code>.
@@ -244,7 +252,19 @@ public class DefaultJXCSkin implements JXCSkin {
      */
     @Override
     public int getNumLookObjects() {
-        return numLookObjects;
+        if (numLookObjects != 0) {
+            return numLookObjects;
+        }
+
+        int minNumLookObjects = Integer.MAX_VALUE;
+        for (final GUIItemList floorList : floorLists) {
+            minNumLookObjects = Math.min(minNumLookObjects, floorList.getNumLookObjects());
+        }
+        if (minNumLookObjects < Integer.MAX_VALUE) {
+            return minNumLookObjects;
+        }
+
+        return DEFAULT_NUM_LOOK_OBJECTS;
     }
 
     /**
@@ -516,6 +536,16 @@ public class DefaultJXCSkin implements JXCSkin {
      */
     public void addSkinEvent(@NotNull final SkinEvent skinEvent) {
         skinEvents.add(skinEvent);
+    }
+
+    /**
+     * Adds a {@link GUIItemList} elements that displays floor items. These
+     * items are used to calculate the number of floor objects to request from
+     * the Crossfire server.
+     * @param floorList the floor list element
+     */
+    public void addFloorList(final GUIItemList floorList) {
+        floorLists.add(floorList);
     }
 
 }
