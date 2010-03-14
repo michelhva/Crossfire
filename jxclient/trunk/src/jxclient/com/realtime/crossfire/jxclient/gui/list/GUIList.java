@@ -125,7 +125,7 @@ public abstract class GUIList extends ActivatableGUIElement implements GUIScroll
         scrollPane.setMinimumSize(size);
         scrollPane.setMaximumSize(size);
         scrollPane.setSize(size);
-        scrollPane.setLocation(extent.getX(), extent.getY());
+        scrollPane.setLocation(extent.getConstantX(), extent.getConstantY());
         viewport.setSize(size);
         viewport.setOpaque(false);
         scrollPane.setBorder(new EmptyBorder(0, 0, 0, 0));

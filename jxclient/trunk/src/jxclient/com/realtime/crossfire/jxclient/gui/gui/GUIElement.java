@@ -145,7 +145,7 @@ public abstract class GUIElement extends JPanel {
         setMinimumSize(size);
         setMaximumSize(size);
         setSize(size);
-        setLocation(extent.getX(), extent.getY());
+        setLocation(extent.getConstantX(), extent.getConstantY());
         createBuffer();
     }
 

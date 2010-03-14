@@ -66,7 +66,7 @@ public class Extent {
      * Returns the x coordinate.
      * @return the x coordinate
      */
-    public int getX() {
+    public int getConstantX() {
         return x;
     }
 
@@ -74,7 +74,7 @@ public class Extent {
      * Returns the y coordinate.
      * @return the y coordinate
      */
-    public int getY() {
+    public int getConstantY() {
         return y;
     }
 
