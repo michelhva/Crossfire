@@ -297,8 +297,8 @@ public abstract class AbstractGUIMap extends GUIElement {
      */
     protected AbstractGUIMap(@NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final String name, @NotNull final Extent extent, @NotNull final CfMapUpdater mapUpdater, @NotNull final FacesProvider facesProvider, @NotNull final CrossfireServerConnection crossfireServerConnection) {
         super(tooltipManager, elementListener, name, extent, Transparency.OPAQUE);
-        final int w = extent.getW();
-        final int h = extent.getH();
+        final int w = extent.getConstantW();
+        final int h = extent.getConstantH();
         if (w <= 0 || h <= 0) {
             throw new IllegalArgumentException("area must be non-empty");
         }

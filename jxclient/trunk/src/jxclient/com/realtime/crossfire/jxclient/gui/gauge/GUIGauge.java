@@ -96,8 +96,8 @@ public class GUIGauge extends GUIElement implements GUIGaugeListener {
      */
     public GUIGauge(@NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final String name, @NotNull final Extent extent, @Nullable final BufferedImage fullImage, @Nullable final BufferedImage negativeImage, @Nullable final BufferedImage emptyImage, @NotNull final Orientation orientation, @Nullable final String tooltipPrefix) {
         super(tooltipManager, elementListener, name, extent, Transparency.TRANSLUCENT);
-        final int w = extent.getW();
-        final int h = extent.getH();
+        final int w = extent.getConstantW();
+        final int h = extent.getConstantH();
         checkSize(fullImage, "full", w, h);
         checkSize(negativeImage, "negative", w, h);
         checkSize(emptyImage, "empty", w, h);

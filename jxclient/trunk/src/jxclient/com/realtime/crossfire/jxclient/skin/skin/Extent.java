@@ -82,7 +82,7 @@ public class Extent {
      * Returns the width.
      * @return the width
      */
-    public int getW() {
+    public int getConstantW() {
         return w;
     }
 
@@ -90,7 +90,7 @@ public class Extent {
      * Returns the height.
      * @return the height
      */
-    public int getH() {
+    public int getConstantH() {
         return h;
     }
 

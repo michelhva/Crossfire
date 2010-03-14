@@ -112,7 +112,7 @@ public abstract class GUIList extends ActivatableGUIElement implements GUIScroll
      */
     protected GUIList(@NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final String name, @NotNull final Extent extent, final int cellWidth, final int cellHeight, @NotNull final ListCellRenderer listCellRenderer) {
         super(tooltipManager, elementListener, name, extent, Transparency.TRANSLUCENT);
-        final Dimension size = new Dimension(extent.getW(), extent.getH());
+        final Dimension size = new Dimension(extent.getConstantW(), extent.getConstantH());
 
         this.cellHeight = cellHeight;
 
