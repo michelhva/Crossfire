@@ -31,11 +31,13 @@ import com.realtime.crossfire.jxclient.gui.gui.TooltipManager;
 import com.realtime.crossfire.jxclient.gui.keybindings.KeyBindings;
 import com.realtime.crossfire.jxclient.gui.label.AbstractLabel;
 import com.realtime.crossfire.jxclient.gui.list.GUIItemList;
+import com.realtime.crossfire.jxclient.gui.map.GUIMap;
 import com.realtime.crossfire.jxclient.settings.options.Option;
 import com.realtime.crossfire.jxclient.settings.options.OptionException;
 import com.realtime.crossfire.jxclient.settings.options.OptionManager;
 import com.realtime.crossfire.jxclient.skin.events.SkinEvent;
 import com.realtime.crossfire.jxclient.util.Resolution;
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.HashSet;
@@ -544,8 +546,20 @@ public class DefaultJXCSkin implements JXCSkin {
      * the Crossfire server.
      * @param floorList the floor list element
      */
-    public void addFloorList(final GUIItemList floorList) {
+    public void addFloorList(@NotNull final GUIItemList floorList) {
         floorLists.add(floorList);
+    }
+
+    /**
+     *
+     * @param map
+     */
+    public void addMap(@NotNull final GUIMap map) {
+        if (tileSize <= 0) {
+            throw new IOException("invalid tile size "+tileSize);
+        }
+        skin.setMapSize((extent.getConstantW()+tileSize-1)/tileSize, (extent.getConstantH()+tileSize-1)/tileSize);
+
     }
 
 }
