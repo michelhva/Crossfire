@@ -46,6 +46,10 @@ import java.util.List;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 
+/**
+ * Default {@link JXCSkin} implementation.
+ * @author Andreas Kirschbaum
+ */
 public class DefaultJXCSkin implements JXCSkin {
 
     /**
@@ -191,11 +195,21 @@ public class DefaultJXCSkin implements JXCSkin {
         return skinName+"@"+selectedResolution;
     }
 
+    /**
+     * Returns the skin name.
+     * @return the skin name
+     */
     @NotNull
     public String getPlainSkinName() {
         return skinName;
     }
 
+    /**
+     * Sets the skin name.
+     * @param skinName the skin name
+     * @param minResolution the minimal supported resolution
+     * @param maxResolution the maximal supported resolution
+     */
     public void setSkinName(@NotNull final String skinName, @NotNull final Resolution minResolution, @NotNull final Resolution maxResolution) {
         this.skinName = skinName;
         this.minResolution = minResolution;
@@ -531,9 +545,9 @@ public class DefaultJXCSkin implements JXCSkin {
     }
 
     /**
-     * Adds a {@link GUIItemList} elements that displays floor items. These
-     * items are used to calculate the number of floor objects to request from
-     * the Crossfire server.
+     * Adds a {@link GUIItemList} element that displays floor items. These
+     * elements are used to calculate the number of floor objects to request
+     * from the Crossfire server.
      * @param floorList the floor list element
      */
     public void addFloorList(@NotNull final GUIItemList floorList) {
