@@ -38,6 +38,7 @@ import com.realtime.crossfire.jxclient.server.crossfire.MapSizeListener;
 import com.realtime.crossfire.jxclient.util.MathUtils;
 import java.awt.Color;
 import java.awt.Graphics;
+import java.awt.Graphics2D;
 import java.awt.Transparency;
 import java.util.Set;
 import javax.swing.ImageIcon;
@@ -482,7 +483,7 @@ public abstract class AbstractGUIMap extends GUIElement {
      * {@inheritDoc}
      */
     @Override
-    protected void render(@NotNull final Graphics g) {
+    protected void render(@NotNull final Graphics2D g) {
     }
 
     /**

@@ -28,7 +28,6 @@ import com.realtime.crossfire.jxclient.gui.gui.TooltipManager;
 import com.realtime.crossfire.jxclient.settings.CommandHistory;
 import java.awt.Color;
 import java.awt.Font;
-import java.awt.Graphics;
 import java.awt.Graphics2D;
 import java.awt.Image;
 import java.awt.Toolkit;
@@ -189,7 +188,7 @@ public abstract class GUIText extends ActivatableGUIElement implements KeyListen
      * {@inheritDoc}
      */
     @Override
-    protected void render(@NotNull final Graphics g) {
+    protected void render(@NotNull final Graphics2D g) {
         g.drawImage(isActive() ? activeImage : inactiveImage, 0, 0, null);
         g.setFont(font);
         final String tmp;

@@ -28,7 +28,6 @@ import com.realtime.crossfire.jxclient.settings.options.CheckBoxOption;
 import com.realtime.crossfire.jxclient.settings.options.OptionListener;
 import java.awt.Color;
 import java.awt.Font;
-import java.awt.Graphics;
 import java.awt.Graphics2D;
 import java.awt.Image;
 import java.awt.Transparency;
@@ -154,14 +153,13 @@ public class GUICheckBox extends ActivatableGUIElement {
      * {@inheritDoc}
      */
     @Override
-    protected void render(@NotNull final Graphics g) {
-        final Graphics2D g2 = (Graphics2D)g;
-        g2.setBackground(new Color(0, 0, 0, 0.0f));
+    protected void render(@NotNull final Graphics2D g) {
+        g.setBackground(new Color(0, 0, 0, 0.0f));
         g.clearRect(0, 0, getWidth(), getHeight());
         g.setFont(font);
         g.setColor(color);
         g.drawImage(option.isChecked() ? checkedImage : uncheckedImage, 0, 0, null);
-        final RectangularShape rect = font.getStringBounds(text, g2.getFontRenderContext());
+        final RectangularShape rect = font.getStringBounds(text, g.getFontRenderContext());
         final int y = (int)Math.round((getHeight()-rect.getMaxY()-rect.getMinY()))/2;
         g.drawString(text, checkedImage.getWidth()+4, y);
     }

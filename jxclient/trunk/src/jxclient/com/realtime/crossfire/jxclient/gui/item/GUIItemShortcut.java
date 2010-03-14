@@ -36,7 +36,6 @@ import com.realtime.crossfire.jxclient.spells.CurrentSpellManager;
 import com.realtime.crossfire.jxclient.spells.Spell;
 import java.awt.Color;
 import java.awt.Font;
-import java.awt.Graphics;
 import java.awt.Graphics2D;
 import java.awt.Image;
 import org.jetbrains.annotations.NotNull;
@@ -233,9 +232,8 @@ public class GUIItemShortcut extends GUIItem {
 
     /* {@inheritDoc} */
     @Override
-    protected void render(@NotNull final Graphics g) {
-        final Graphics2D g2 = (Graphics2D)g;
-        g2.setBackground(BACKGROUND_COLOR);
+    protected void render(@NotNull final Graphics2D g) {
+        g.setBackground(BACKGROUND_COLOR);
         g.clearRect(0, 0, getWidth(), getHeight());
 
         if (shortcut == null) {

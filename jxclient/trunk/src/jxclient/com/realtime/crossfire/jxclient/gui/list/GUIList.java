@@ -32,7 +32,6 @@ import java.awt.AlphaComposite;
 import java.awt.Color;
 import java.awt.Composite;
 import java.awt.Dimension;
-import java.awt.Graphics;
 import java.awt.Graphics2D;
 import java.awt.Transparency;
 import java.awt.event.MouseEvent;
@@ -142,7 +141,7 @@ public abstract class GUIList extends ActivatableGUIElement implements GUIScroll
         list.addListSelectionListener(listSelectionListener);
 
         synchronized (bufferedImageSync) {
-            final Graphics g = createBufferGraphics();
+            final Graphics2D g = createBufferGraphics();
             try {
                 render(g);
             } finally {
@@ -167,13 +166,12 @@ public abstract class GUIList extends ActivatableGUIElement implements GUIScroll
      * {@inheritDoc}
      */
     @Override
-    protected void render(@NotNull final Graphics g) {
-        final Graphics2D g2 = (Graphics2D)g;
-        final Composite composite = g2.getComposite();
-        g2.setComposite(AlphaComposite.Clear);
+    protected void render(@NotNull final Graphics2D g) {
+        final Composite composite = g.getComposite();
+        g.setComposite(AlphaComposite.Clear);
         g.setColor(new Color(0, 255, 0, 255));
         g.fillRect(0, 0, getWidth(), getHeight());
-        g2.setComposite(composite);
+        g.setComposite(composite);
 
         synchronized (getTreeLock()) {
             scrollPane.paint(g);

@@ -25,7 +25,6 @@ import com.realtime.crossfire.jxclient.gui.gui.GUIElement;
 import com.realtime.crossfire.jxclient.gui.gui.GUIElementListener;
 import com.realtime.crossfire.jxclient.gui.gui.TooltipManager;
 import java.awt.AlphaComposite;
-import java.awt.Graphics;
 import java.awt.Graphics2D;
 import java.awt.Transparency;
 import java.awt.image.BufferedImage;
@@ -82,7 +81,7 @@ public class GUIPicture extends GUIElement {
      * {@inheritDoc}
      */
     @Override
-    protected void render(@NotNull final Graphics g) {
+    protected void render(@NotNull final Graphics2D g) {
     }
 
 }

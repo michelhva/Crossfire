@@ -150,13 +150,12 @@ public abstract class GUILog extends GUIElement implements GUIScrollable2 {
      * {@inheritDoc}
      */
     @Override
-    protected void render(@NotNull final Graphics g) {
+    protected void render(@NotNull final Graphics2D g) {
         if (renderStateManager == null) {
             return;
         }
 
-        final Graphics2D g2 = (Graphics2D)g;
-        g2.setBackground(new Color(0, 0, 0, 0.0f));
+        g.setBackground(new Color(0, 0, 0, 0.0f));
         g.clearRect(0, 0, getWidth(), getHeight());
         if (backgroundImage != null) {
             g.drawImage(backgroundImage, 0, 0, null);
