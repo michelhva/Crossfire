@@ -23,7 +23,6 @@ package com.realtime.crossfire.jxclient.skin.skin;
 
 import com.realtime.crossfire.jxclient.gui.commands.CommandList;
 import com.realtime.crossfire.jxclient.gui.commands.CommandListType;
-import com.realtime.crossfire.jxclient.gui.gauge.GaugeUpdater;
 import com.realtime.crossfire.jxclient.gui.gui.GUIElement;
 import com.realtime.crossfire.jxclient.gui.gui.Gui;
 import com.realtime.crossfire.jxclient.gui.gui.JXCWindowRenderer;
@@ -133,12 +132,6 @@ public class DefaultJXCSkin implements JXCSkin {
      */
     @NotNull
     private final Collection<String> optionNames = new HashSet<String>();
-
-    /**
-     * The defined {@link GaugeUpdater}s.
-     */
-    @NotNull
-    private final Collection<GaugeUpdater> gaugeUpdaters = new ArrayList<GaugeUpdater>();
 
     /**
      * The {@link GUIItemList}s that display floor items.
@@ -526,14 +519,6 @@ public class DefaultJXCSkin implements JXCSkin {
 
     public void setTooltipLabel(@Nullable final AbstractLabel tooltipLabel) {
         this.tooltipLabel = tooltipLabel;
-    }
-
-    /**
-     * Adds a {@link GaugeUpdater} instance.
-     * @param gaugeUpdater the gauge updater to add
-     */
-    public void addGaugeUpdater(@NotNull final GaugeUpdater gaugeUpdater) {
-        gaugeUpdaters.add(gaugeUpdater);
     }
 
     /**
