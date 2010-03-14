@@ -2008,9 +2008,7 @@ public class JXCSkinLoader {
      */
     @NotNull
     private GaugeUpdater newGaugeUpdater(@NotNull final String name) throws IOException {
-        final GaugeUpdater gaugeUpdater = gaugeUpdaterParser.parseGaugeUpdater(name, experienceTable);
-        skin.addGaugeUpdater(gaugeUpdater);
-        return gaugeUpdater;
+        return gaugeUpdaterParser.parseGaugeUpdater(name, experienceTable);
     }
 
     /**
