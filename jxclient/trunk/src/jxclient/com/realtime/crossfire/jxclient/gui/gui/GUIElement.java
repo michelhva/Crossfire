@@ -34,10 +34,9 @@ import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 
 /**
+ * Abstract base class for GUI elements to be shown in {@link Gui}s.
  * @author Lauwenmark
  * @author Andreas Kirschbaum
- * @version 1.0
- * @since 1.0
  */
 public abstract class GUIElement extends JPanel {
 
@@ -61,16 +60,28 @@ public abstract class GUIElement extends JPanel {
     private GUIElementChangedListener changedListener = null;
 
     /**
-     * Object used to synchonize on {@link #bufferedImage} contents.
+     * Object used to synchronize on {@link #bufferedImage} contents.
      */
     @NotNull
     protected final Object bufferedImageSync = new Object();
 
+    /**
+     * The backbuffer image of this element. It is updated in {@link #render()}
+     * and {@link #render(Graphics)}. {@link #paintComponent(Graphics)} copies
+     * the contents to screen.
+     */
     @NotNull
     private BufferedImage bufferedImage;
 
+    /**
+     * Whether this element is visible.
+     */
     private boolean visible = true;
 
+    /**
+     * Whether this element is the default element. The default element is
+     * selected with the ENTER key.
+     */
     private boolean isDefault = false;
 
     /**
@@ -174,18 +185,34 @@ public abstract class GUIElement extends JPanel {
         return name;
     }
 
+    /**
+     * Returns the element's absolute screen coordinate.
+     * @return the element's absolute x coordinate
+     */
     public int getElementX() {
         return gui != null ? gui.getX()+getX() : getX();
     }
 
+    /**
+     * Returns the element's absolute screen coordinate.
+     * @return the element's absolute y coordinate
+     */
     public int getElementY() {
         return gui != null ? gui.getY()+getY() : getY();
     }
 
+    /**
+     * Returns whether this element is visible.
+     * @return whether this element is visible
+     */
     public boolean isElementVisible() {
         return visible;
     }
 
+    /**
+     * Sets whether this element is visible.
+     * @param visible whether this element is visible
+     */
     public void setElementVisible(final boolean visible) {
         if (this.visible != visible) {
             this.visible = visible;
@@ -197,10 +224,20 @@ public abstract class GUIElement extends JPanel {
         }
     }
 
+    /**
+     * Returns whether this element is the default element. The default element
+     * is selected with the ENTER key.
+     * @return whether this element is the default element
+     */
     public boolean isDefault() {
         return isDefault;
     }
 
+    /**
+     * Sets whether this element is the default element. The default element is
+     * selected with the ENTER key.
+     * @param isDefault whether this element is the default element
+     */
     public void setDefault(final boolean isDefault) {
         this.isDefault = isDefault;
     }
@@ -390,6 +427,9 @@ public abstract class GUIElement extends JPanel {
         }
     }
 
+    /**
+     * Allocates {@link #bufferedImage} with the element's current size.
+     */
     private void createBuffer() {
         final GraphicsEnvironment ge = GraphicsEnvironment.getLocalGraphicsEnvironment();
         final GraphicsDevice gd = ge.getDefaultScreenDevice();
