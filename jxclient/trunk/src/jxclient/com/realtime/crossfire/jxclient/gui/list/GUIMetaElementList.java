@@ -145,6 +145,7 @@ public class GUIMetaElementList extends GUIList {
      * relative to <code>gui</code>
      * @param w the width for drawing this element to screen
      * @param h the height for drawing this element to screen
+     * @param cellWidth the width of each cell
      * @param cellHeight the height of each cell
      * @param metaserverModel the metaserver model to track
      * @param tcpImage the tcp image for drawing list entries
@@ -155,8 +156,8 @@ public class GUIMetaElementList extends GUIList {
      * <code>null</code>
      * @param comment the comment field to update; may be <code>null</code>
      */
-    public GUIMetaElementList(@NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final String name, final int x, final int y, final int w, final int h, final int cellHeight, @NotNull final MetaserverModel metaserverModel, @Nullable final BufferedImage tcpImage, @NotNull final Font font, @NotNull final String format, @NotNull final String tooltip, @Nullable final GUIText hostname, @Nullable final AbstractLabel comment) {
-        super(tooltipManager, elementListener, name, x, y, w, h, cellHeight, new MetaElementCellRenderer(new GUIMetaElement(tooltipManager, elementListener, metaserverModel, name+"_template", w, cellHeight, tcpImage, font, 0, format, tooltip)));
+    public GUIMetaElementList(@NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final String name, final int x, final int y, final int w, final int h, final int cellWidth, final int cellHeight, @NotNull final MetaserverModel metaserverModel, @Nullable final BufferedImage tcpImage, @NotNull final Font font, @NotNull final String format, @NotNull final String tooltip, @Nullable final GUIText hostname, @Nullable final AbstractLabel comment) {
+        super(tooltipManager, elementListener, name, x, y, w, h, cellWidth, cellHeight, new MetaElementCellRenderer(new GUIMetaElement(tooltipManager, elementListener, metaserverModel, name+"_template", w, cellHeight, tcpImage, font, 0, format, tooltip)));
         this.metaserverModel = metaserverModel;
         this.tooltipManager = tooltipManager;
         this.elementListener = elementListener;

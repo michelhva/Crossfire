@@ -110,10 +110,11 @@ public abstract class GUIList extends ActivatableGUIElement implements GUIScroll
      * relative to <code>gui</code>
      * @param w the width for drawing this element to screen
      * @param h the height for drawing this element to screen
+     * @param cellWidth the width of each cell
      * @param cellHeight the height of each cell
      * @param listCellRenderer the renderer for the list
      */
-    protected GUIList(@NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final String name, final int x, final int y, final int w, final int h, final int cellHeight, @NotNull final ListCellRenderer listCellRenderer) {
+    protected GUIList(@NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final String name, final int x, final int y, final int w, final int h, final int cellWidth, final int cellHeight, @NotNull final ListCellRenderer listCellRenderer) {
         super(tooltipManager, elementListener, name, x, y, w, h, Transparency.TRANSLUCENT);
         final Dimension size = new Dimension(w, h);
 
@@ -134,6 +135,7 @@ public abstract class GUIList extends ActivatableGUIElement implements GUIScroll
         scrollPane.setBorder(new EmptyBorder(0, 0, 0, 0));
 
         list.setCellRenderer(listCellRenderer);
+        list.setFixedCellWidth(cellWidth);
         list.setFixedCellHeight(cellHeight);
         list.setOpaque(false);
         list.setSelectionMode(ListSelectionModel.SINGLE_SELECTION);
