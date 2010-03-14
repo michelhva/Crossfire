@@ -37,7 +37,7 @@ import com.realtime.crossfire.jxclient.settings.options.OptionException;
 import com.realtime.crossfire.jxclient.settings.options.OptionManager;
 import com.realtime.crossfire.jxclient.skin.events.SkinEvent;
 import com.realtime.crossfire.jxclient.util.Resolution;
-import java.io.IOException;
+import java.awt.Dimension;
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.HashSet;
@@ -76,16 +76,6 @@ public class DefaultJXCSkin implements JXCSkin {
      */
     @NotNull
     private final Resolution selectedResolution;
-
-    /**
-     * The map width in tiles; zero if unset.
-     */
-    private int mapWidth = 0;
-
-    /**
-     * The map height in tiles; zero if unset.
-     */
-    private int mapHeight = 0;
 
     /**
      * The maximum number of ground view objects.
@@ -151,6 +141,12 @@ public class DefaultJXCSkin implements JXCSkin {
      */
     @NotNull
     private final List<GUIItemList> floorLists = new ArrayList<GUIItemList>();
+
+    /**
+     * The {@link GUIMap}s that display maps.
+     */
+    @NotNull
+    private final List<GUIMap> maps = new ArrayList<GUIMap>();
 
     /**
      * The tooltip label or <code>null</code>.
@@ -236,17 +232,16 @@ public class DefaultJXCSkin implements JXCSkin {
     /**
      * {@inheritDoc}
      */
+    @NotNull
     @Override
-    public int getMapWidth() {
-        return mapWidth;
-    }
-
-    /**
-     * {@inheritDoc}
-     */
-    @Override
-    public int getMapHeight() {
-        return mapHeight;
+    public Dimension getMapSize() {
+        int width = 1;
+        int height = 1;
+        for (final GUIMap map : maps) {
+            width = Math.max(width, map.getMapWidth());
+            height = Math.max(height, map.getMapHeight());
+        }
+        return new Dimension(width, height);
     }
 
     /**
@@ -502,11 +497,6 @@ public class DefaultJXCSkin implements JXCSkin {
         initEvents.add(commandList);
     }
 
-    public void setMapSize(final int mapWidth, final int mapHeight) {
-        this.mapWidth = mapWidth;
-        this.mapHeight = mapHeight;
-    }
-
     public void setNumLookObjects(final int numLookObjects) {
         this.numLookObjects = numLookObjects;
     }
@@ -551,15 +541,13 @@ public class DefaultJXCSkin implements JXCSkin {
     }
 
     /**
-     *
-     * @param map
+     * Adds a {@link GUIMap} element that displays a map. These elements are
+     * used to calculate the size of the map view to request from the Crossfire
+     * server.
+     * @param map the map element
      */
     public void addMap(@NotNull final GUIMap map) {
-        if (tileSize <= 0) {
-            throw new IOException("invalid tile size "+tileSize);
-        }
-        skin.setMapSize((extent.getConstantW()+tileSize-1)/tileSize, (extent.getConstantH()+tileSize-1)/tileSize);
-
+        maps.add(map);
     }
 
 }

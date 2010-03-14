@@ -27,6 +27,7 @@ import com.realtime.crossfire.jxclient.gui.gui.JXCWindowRenderer;
 import com.realtime.crossfire.jxclient.gui.gui.TooltipManager;
 import com.realtime.crossfire.jxclient.gui.keybindings.KeyBindings;
 import com.realtime.crossfire.jxclient.util.Resolution;
+import java.awt.Dimension;
 import java.util.Iterator;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
@@ -69,16 +70,11 @@ public interface JXCSkin extends Iterable<Gui> {
     Resolution getMaxResolution();
 
     /**
-     * Returns the map width in tiles.
-     * @return the map width in tiles
+     * Returns the map size in squares.
+     * @return the map size
      */
-    int getMapWidth();
-
-    /**
-     * Returns the map height in tiles.
-     * @return the map height in tiles
-     */
-    int getMapHeight();
+    @NotNull
+    Dimension getMapSize();
 
     /**
      * The number of ground view objects to request from the server.
