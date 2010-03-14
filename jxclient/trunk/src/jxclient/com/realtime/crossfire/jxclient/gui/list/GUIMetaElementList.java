@@ -153,7 +153,7 @@ public class GUIMetaElementList extends GUIList {
      * @param comment the comment field to update; may be <code>null</code>
      */
     public GUIMetaElementList(@NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final String name, @NotNull final Extent extent, final int cellWidth, final int cellHeight, @NotNull final MetaserverModel metaserverModel, @Nullable final BufferedImage tcpImage, @NotNull final Font font, @NotNull final String format, @NotNull final String tooltip, @Nullable final GUIText hostname, @Nullable final AbstractLabel comment) {
-        super(tooltipManager, elementListener, name, extent, cellWidth, cellHeight, new MetaElementCellRenderer(new GUIMetaElement(tooltipManager, elementListener, metaserverModel, name+"_template", extent.getW(), cellHeight, tcpImage, font, 0, format, tooltip)));
+        super(tooltipManager, elementListener, name, extent, cellWidth, cellHeight, new MetaElementCellRenderer(new GUIMetaElement(tooltipManager, elementListener, metaserverModel, name+"_template", extent.getConstantW(), cellHeight, tcpImage, font, 0, format, tooltip)));
         this.metaserverModel = metaserverModel;
         this.tooltipManager = tooltipManager;
         this.elementListener = elementListener;

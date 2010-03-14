@@ -113,8 +113,8 @@ public class GUIDupGauge extends GUIElement implements GUIGaugeListener {
      */
     public GUIDupGauge(@NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final String name, @NotNull final Extent extent, @NotNull final BufferedImage fullImageDiv, @NotNull final BufferedImage fullImageMod, @Nullable final BufferedImage emptyImage, @NotNull final Orientation orientationDiv, @NotNull final Orientation orientationMod, @Nullable final String tooltipPrefix) {
         super(tooltipManager, elementListener, name, extent, Transparency.TRANSLUCENT);
-        final int w = extent.getW();
-        final int h = extent.getH();
+        final int w = extent.getConstantW();
+        final int h = extent.getConstantH();
         checkSize(fullImageDiv, "full-div", w, h/2);
         checkSize(fullImageMod, "full-mod", w, h/2);
         checkSize(emptyImage, "empty", w, h);

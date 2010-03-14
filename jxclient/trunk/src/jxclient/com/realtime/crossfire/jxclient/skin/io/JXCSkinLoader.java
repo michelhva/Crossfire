@@ -1236,7 +1236,7 @@ public class JXCSkinLoader {
         insertGuiElement(element);
 
         if (!inventoryList) {
-            skin.setNumLookObjects(Math.max(extent.getH()/cellHeight, 1)*Math.max(extent.getW()/cellHeight, 1));
+            skin.setNumLookObjects(Math.max(extent.getConstantH()/cellHeight, 1)*Math.max(extent.getConstantW()/cellHeight, 1));
         }
     }
 
@@ -1273,7 +1273,7 @@ public class JXCSkinLoader {
                 throw new IOException("cannot use 'item floor' without 'def item' command");
             }
 
-            final ItemPainter itemPainter = defaultItemPainter.newItemPainter(extent.getW(), extent.getH());
+            final ItemPainter itemPainter = defaultItemPainter.newItemPainter(extent.getConstantW(), extent.getConstantH());
             element = new GUIItemFloor(tooltipManager, elementListener, commandQueue, name, extent, itemPainter, index, server, floorView, itemSet, facesManager, nextGroupFace, prevGroupFace);
         } else if (type.equals("inventory")) {
             if (args.length != 8) {
@@ -1284,7 +1284,7 @@ public class JXCSkinLoader {
                 throw new IOException("cannot use 'item floor' without 'def item' command");
             }
 
-            final ItemPainter itemPainter = defaultItemPainter.newItemPainter(extent.getW(), extent.getH());
+            final ItemPainter itemPainter = defaultItemPainter.newItemPainter(extent.getConstantW(), extent.getConstantH());
             element = new GUIItemInventory(tooltipManager, elementListener, commandQueue, name, extent, itemPainter, index, server, facesManager, floorView, inventoryView);
         } else if (type.equals("shortcut")) {
             if (args.length != 11) {
@@ -1647,7 +1647,7 @@ public class JXCSkinLoader {
         if (tileSize <= 0) {
             throw new IOException("invalid tile size "+tileSize);
         }
-        skin.setMapSize((extent.getW()+tileSize-1)/tileSize, (extent.getH()+tileSize-1)/tileSize);
+        skin.setMapSize((extent.getConstantW()+tileSize-1)/tileSize, (extent.getConstantH()+tileSize-1)/tileSize);
 
         final FacesProvider facesProvider = facesProviderFactory.getFacesProvider(tileSize);
         if (facesProvider == null) {

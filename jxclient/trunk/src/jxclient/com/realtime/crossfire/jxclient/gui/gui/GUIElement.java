@@ -140,7 +140,7 @@ public abstract class GUIElement extends JPanel {
         this.name = name;
         this.transparency = transparency;
         setOpaque(true);
-        final Dimension size = new Dimension(extent.getW(), extent.getH());
+        final Dimension size = new Dimension(extent.getConstantW(), extent.getConstantH());
         setPreferredSize(size);
         setMinimumSize(size);
         setMaximumSize(size);

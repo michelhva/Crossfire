@@ -131,7 +131,7 @@ public abstract class GUILog extends GUIElement implements GUIScrollable2 {
                 g.dispose();
             }
         }
-        buffer = new Buffer(fonts, context, extent.getW());
+        buffer = new Buffer(fonts, context, extent.getConstantW());
         renderStateManager = new RenderStateManager(renderStateListener, buffer);
     }
 

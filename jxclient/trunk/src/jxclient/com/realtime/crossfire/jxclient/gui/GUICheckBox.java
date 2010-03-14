@@ -111,8 +111,8 @@ public class GUICheckBox extends ActivatableGUIElement {
      */
     public GUICheckBox(@NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final String name, @NotNull final Extent extent, @NotNull final BufferedImage checkedImage, @NotNull final BufferedImage uncheckedImage, @NotNull final Font font, @NotNull final Color color, @NotNull final CheckBoxOption option, @NotNull final String text) {
         super(tooltipManager, elementListener, name, extent, Transparency.TRANSLUCENT);
-        final int w = extent.getW();
-        final int h = extent.getH();
+        final int w = extent.getConstantW();
+        final int h = extent.getConstantH();
         if (checkedImage.getHeight() != h) {
             throw new IllegalArgumentException("'checked' height is "+checkedImage.getHeight()+" but checkbox height is "+h);
         }

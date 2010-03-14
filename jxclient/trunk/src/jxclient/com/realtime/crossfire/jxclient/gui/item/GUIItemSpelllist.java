@@ -165,8 +165,8 @@ public class GUIItemSpelllist extends GUIItem {
         setIndex(defaultIndex);
         this.spellsManager.addCrossfireSpellChangedListener(spellsManagerListener);
         this.facesManager.addFacesManagerListener(facesManagerListener);
-        w = extent.getW();
-        h = extent.getH();
+        w = extent.getConstantW();
+        h = extent.getConstantH();
     }
 
     /**

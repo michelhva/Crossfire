@@ -166,8 +166,8 @@ public class GUIItemShortcut extends GUIItem {
         this.index = index;
         this.currentSpellManager = currentSpellManager;
         this.shortcuts.addShortcutsListener(shortcutsListener);
-        w = extent.getW();
-        h = extent.getH();
+        w = extent.getConstantW();
+        h = extent.getConstantH();
         this.facesManager.addFacesManagerListener(facesManagerListener);
         updateTooltipText();
     }

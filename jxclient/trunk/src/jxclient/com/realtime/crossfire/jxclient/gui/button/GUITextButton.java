@@ -91,8 +91,8 @@ public class GUITextButton extends AbstractButton {
      */
     public GUITextButton(@NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final String name, @NotNull final Extent extent, @NotNull final ButtonImages up, @NotNull final ButtonImages down, @NotNull final String text, @NotNull final Font font, @NotNull final Color color, final boolean autoRepeat, @NotNull final CommandList commandList) {
         super(tooltipManager, elementListener, name, extent, Transparency.TRANSLUCENT, autoRepeat, commandList);
-        final int w = extent.getW();
-        final int h = extent.getH();
+        final int w = extent.getConstantW();
+        final int h = extent.getConstantH();
         if (up.getHeight() != h) {
             throw new IllegalArgumentException("'up' state is height "+up.getHeight()+" but button height is "+h);
         }
