@@ -1230,7 +1230,7 @@ public class JXCSkinLoader {
      * @throws JXCSkinException if the command cannot be parsed
      */
     private void parseList(@NotNull final String[] args, final boolean inventoryList, @NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final CommandQueue commandQueue, @NotNull final CrossfireServerConnection server, @NotNull final Image nextGroupFace, @NotNull final Image prevGroupFace) throws IOException, JXCSkinException {
-        if (args.length != 8) {
+        if (args.length != 9) {
             throw new IOException("syntax error");
         }
 
@@ -1243,8 +1243,9 @@ public class JXCSkinLoader {
         final int y = expressionParser.parseInt(args[3]);
         final int w = expressionParser.parseInt(args[4]);
         final int h = expressionParser.parseInt(args[5]);
-        final int cellHeight = expressionParser.parseInt(args[6]);
-        final AbstractLabel selectedItem = args[7].equals("null") ? null : guiElementParser.lookupLabelElement(args[7]);
+        final int cellWidth = expressionParser.parseInt(args[6]);
+        final int cellHeight = expressionParser.parseInt(args[7]);
+        final AbstractLabel selectedItem = args[8].equals("null") ? null : guiElementParser.lookupLabelElement(args[8]);
 
         assert defaultItemPainter != null;
         final ItemPainter itemPainter = defaultItemPainter.newItemPainter(cellHeight, cellHeight);
@@ -1254,7 +1255,7 @@ public class JXCSkinLoader {
         } else {
             itemFactory = new GUIItemFloorFactory(tooltipManager, elementListener, commandQueue, name, itemPainter, server, facesManager, floorView, itemSet, nextGroupFace, prevGroupFace);
         }
-        final GUIElement element = new GUIItemList(tooltipManager, elementListener, commandQueue, name, x, y, w, h, cellHeight, server, inventoryList ? inventoryView : floorView, selectedItem, itemFactory);
+        final GUIElement element = new GUIItemList(tooltipManager, elementListener, commandQueue, name, x, y, w, h, cellWidth, cellHeight, server, inventoryList ? inventoryView : floorView, selectedItem, itemFactory);
         insertGuiElement(element);
 
         if (!inventoryList) {
@@ -1725,7 +1726,7 @@ public class JXCSkinLoader {
      * @throws JXCSkinException if the command cannot be parsed
      */
     private void parseMetaList(@NotNull final String[] args, @NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final MetaserverModel metaserverModel) throws IOException, JXCSkinException {
-        if (args.length != 13) {
+        if (args.length != 14) {
             throw new IOException("syntax error");
         }
 
@@ -1734,15 +1735,16 @@ public class JXCSkinLoader {
         final int y = expressionParser.parseInt(args[3]);
         final int w = expressionParser.parseInt(args[4]);
         final int h = expressionParser.parseInt(args[5]);
-        final int cellHeight = expressionParser.parseInt(args[6]);
-        final BufferedImage tcpImage = args[7].equals("null") ? null : imageParser.getImage(args[7]);
-        final Font font = definedFonts.lookup(args[8]);
-        final GUIText text = args[9].equals("null") ? null : guiElementParser.lookupTextElement(args[9]);
-        final AbstractLabel label = args[10].equals("null") ? null : guiElementParser.lookupLabelElement(args[10]);
-        final String format = args[11];
-        final String tooltip = args[12];
+        final int cellWidth = expressionParser.parseInt(args[6]);
+        final int cellHeight = expressionParser.parseInt(args[7]);
+        final BufferedImage tcpImage = args[8].equals("null") ? null : imageParser.getImage(args[8]);
+        final Font font = definedFonts.lookup(args[9]);
+        final GUIText text = args[10].equals("null") ? null : guiElementParser.lookupTextElement(args[10]);
+        final AbstractLabel label = args[11].equals("null") ? null : guiElementParser.lookupLabelElement(args[11]);
+        final String format = args[12];
+        final String tooltip = args[13];
 
-        final GUIElement list = new GUIMetaElementList(tooltipManager, elementListener, name, x, y, w, h, cellHeight, metaserverModel, tcpImage, font, format, tooltip, text, label);
+        final GUIElement list = new GUIMetaElementList(tooltipManager, elementListener, name, x, y, w, h, cellWidth, cellHeight, metaserverModel, tcpImage, font, format, tooltip, text, label);
         insertGuiElement(list);
     }
 

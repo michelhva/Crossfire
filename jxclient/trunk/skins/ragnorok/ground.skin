@@ -2,7 +2,7 @@
 dialog border -5 HEIGHT-37 WIDTH+10 42 true
 dialog_hide START META LOGIN
 
-floor_list floor 5 5 WIDTH 32 32 null
+floor_list floor 5 5 WIDTH 32 32 32 null
 
 set_invisible border_nw
 set_invisible border_n
