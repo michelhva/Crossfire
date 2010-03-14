@@ -27,6 +27,7 @@ import com.realtime.crossfire.jxclient.gui.gui.TooltipManager;
 import com.realtime.crossfire.jxclient.mapupdater.CfMapUpdater;
 import com.realtime.crossfire.jxclient.server.crossfire.CrossfireServerConnection;
 import com.realtime.crossfire.jxclient.skin.skin.Extent;
+import com.realtime.crossfire.jxclient.util.MathUtils;
 import java.awt.Graphics;
 import java.awt.event.MouseEvent;
 import org.jetbrains.annotations.NotNull;
@@ -121,6 +122,22 @@ public class GUIMap extends AbstractGUIMap {
         super.setMapSize(mapWidth, mapHeight);
         this.mapWidth = mapWidth;
         this.mapHeight = mapHeight;
+    }
+
+    /**
+     * Returns the minimal map width in squares needed to fill the map area.
+     * @return the map width in squares
+     */
+    public int getMapWidth() {
+        return MathUtils.divRoundUp(getWidth(), tileSize);
+    }
+
+    /**
+     * Returns the minimal map height in squares needed to fill the map area.
+     * @return the map height in squares
+     */
+    public int getMapHeight() {
+        return MathUtils.divRoundUp(getHeight(), tileSize);
     }
 
 }

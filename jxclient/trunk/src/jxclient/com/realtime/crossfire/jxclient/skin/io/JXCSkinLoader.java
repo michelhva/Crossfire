@@ -416,10 +416,6 @@ public class JXCSkinLoader {
                 imageParser.clear();
             }
 
-            if (skin.getMapWidth() == 0 || skin.getMapHeight() == 0) {
-                throw new JXCSkinException("Missing map command");
-            }
-
             skinToDetach = null;
         } finally {
             if (skinToDetach != null) {
@@ -1644,17 +1640,14 @@ public class JXCSkinLoader {
         final int tileSize = expressionParser.parseInt(args[2]);
         final Extent extent = parseExtent(args, 3);
 
-        if (tileSize <= 0) {
-            throw new IOException("invalid tile size "+tileSize);
-        }
-        skin.setMapSize((extent.getConstantW()+tileSize-1)/tileSize, (extent.getConstantH()+tileSize-1)/tileSize);
-
         final FacesProvider facesProvider = facesProviderFactory.getFacesProvider(tileSize);
         if (facesProvider == null) {
             throw new IOException("cannot create faces with size "+tileSize);
         }
-        final GUIElement element = new GUIMap(tooltipManager, elementListener, name, extent, mapUpdater, facesProvider, server);
+        final GUIMap element = new GUIMap(tooltipManager, elementListener, name, extent, mapUpdater, facesProvider, server);
         insertGuiElement(element);
+
+        skin.addMap(element);
     }
 
     /**

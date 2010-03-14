@@ -50,6 +50,7 @@ import com.realtime.crossfire.jxclient.settings.Settings;
 import com.realtime.crossfire.jxclient.settings.options.OptionManager;
 import com.realtime.crossfire.jxclient.skin.skin.JXCSkin;
 import com.realtime.crossfire.jxclient.skin.skin.JXCSkinException;
+import java.awt.Dimension;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import javax.swing.Timer;
@@ -310,10 +311,8 @@ public class GuiManager {
 
             closeTransientDialogs();
             assert skin != null;
-            final int mapWidth = skin.getMapWidth();
-            assert skin != null;
-            final int mapHeight = skin.getMapHeight();
-            server.setPreferredMapSize(mapWidth, mapHeight);
+            final Dimension mapSize = skin.getMapSize();
+            server.setPreferredMapSize(mapSize.width, mapSize.height);
             assert skin != null;
             server.setNumLookObjects(skin.getNumLookObjects());
             server.addCrossfireDrawextinfoListener(crossfireDrawextinfoListener);
