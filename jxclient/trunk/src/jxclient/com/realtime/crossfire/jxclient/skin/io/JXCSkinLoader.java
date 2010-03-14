@@ -1232,11 +1232,11 @@ public class JXCSkinLoader {
         } else {
             itemFactory = new GUIItemFloorFactory(tooltipManager, elementListener, commandQueue, name, itemPainter, server, facesManager, floorView, itemSet, nextGroupFace, prevGroupFace);
         }
-        final GUIElement element = new GUIItemList(tooltipManager, elementListener, commandQueue, name, extent, cellWidth, cellHeight, server, inventoryList ? inventoryView : floorView, selectedItem, itemFactory);
+        final GUIItemList element = new GUIItemList(tooltipManager, elementListener, commandQueue, name, extent, cellWidth, cellHeight, server, inventoryList ? inventoryView : floorView, selectedItem, itemFactory);
         insertGuiElement(element);
 
         if (!inventoryList) {
-            skin.setNumLookObjects(Math.max(extent.getConstantH()/cellHeight, 1)*Math.max(extent.getConstantW()/cellHeight, 1));
+            skin.addFloorList(element);
         }
     }
 
