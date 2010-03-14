@@ -41,7 +41,6 @@ import java.util.ArrayList;
 import java.util.Collection;
 import java.util.HashSet;
 import java.util.Iterator;
-import java.util.List;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 
@@ -137,13 +136,13 @@ public class DefaultJXCSkin implements JXCSkin {
      * The {@link GUIItemList}s that display floor items.
      */
     @NotNull
-    private final List<GUIItemList> floorLists = new ArrayList<GUIItemList>();
+    private final Collection<GUIItemList> floorLists = new ArrayList<GUIItemList>();
 
     /**
      * The {@link GUIMap}s that display maps.
      */
     @NotNull
-    private final List<GUIMap> maps = new ArrayList<GUIMap>();
+    private final Collection<GUIMap> maps = new ArrayList<GUIMap>();
 
     /**
      * The tooltip label or <code>null</code>.
