@@ -26,7 +26,6 @@ import com.realtime.crossfire.jxclient.gui.gui.GUIElementListener;
 import com.realtime.crossfire.jxclient.gui.gui.TooltipManager;
 import java.awt.Color;
 import java.awt.Font;
-import java.awt.Graphics;
 import java.awt.Graphics2D;
 import java.awt.Transparency;
 import java.awt.geom.RectangularShape;
@@ -136,12 +135,11 @@ public class GUITextButton extends AbstractButton {
      * {@inheritDoc}
      */
     @Override
-    protected void render(@NotNull final Graphics g) {
+    protected void render(@NotNull final Graphics2D g) {
         g.setFont(font);
         g.setColor(color);
         (isActive() ? down : up).render(g, getWidth());
-        final Graphics2D g2 = (Graphics2D)g;
-        final RectangularShape rect = font.getStringBounds(text, g2.getFontRenderContext());
+        final RectangularShape rect = font.getStringBounds(text, g.getFontRenderContext());
         final int y = (int)Math.round((getHeight()-rect.getMaxY()-rect.getMinY()))/2;
         g.drawString(text, (int)Math.round((getWidth()-rect.getWidth())/2), y);
     }

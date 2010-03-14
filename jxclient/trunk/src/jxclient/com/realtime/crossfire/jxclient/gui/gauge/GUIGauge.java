@@ -25,7 +25,6 @@ import com.realtime.crossfire.jxclient.gui.gui.GUIElement;
 import com.realtime.crossfire.jxclient.gui.gui.GUIElementListener;
 import com.realtime.crossfire.jxclient.gui.gui.TooltipManager;
 import java.awt.Color;
-import java.awt.Graphics;
 import java.awt.Graphics2D;
 import java.awt.Image;
 import java.awt.Transparency;
@@ -151,9 +150,8 @@ public class GUIGauge extends GUIElement implements GUIGaugeListener {
      * {@inheritDoc}
      */
     @Override
-    protected void render(@NotNull final Graphics g) {
-        final Graphics2D g2 = (Graphics2D)g;
-        g2.setBackground(new Color(0, 0, 0, 0.0f));
+    protected void render(@NotNull final Graphics2D g) {
+        g.setBackground(new Color(0, 0, 0, 0.0f));
         g.clearRect(0, 0, getWidth(), getHeight());
         if (emptyImage != null) {
             g.drawImage(emptyImage, 0, 0, null);

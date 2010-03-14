@@ -24,7 +24,7 @@ package com.realtime.crossfire.jxclient.gui.gui;
 import com.realtime.crossfire.jxclient.gui.scrollable.GUIScrollable2;
 import com.realtime.crossfire.jxclient.gui.scrollable.ScrollableListener;
 import java.awt.Color;
-import java.awt.Graphics;
+import java.awt.Graphics2D;
 import java.awt.Transparency;
 import java.awt.event.MouseEvent;
 import org.jetbrains.annotations.NotNull;
@@ -256,7 +256,7 @@ public class GUIScrollBar extends ActivatableGUIElement implements ScrollableLis
      * {@inheritDoc}
      */
     @Override
-    protected void render(@NotNull final Graphics g) {
+    protected void render(@NotNull final Graphics2D g) {
         final int sh = getSliderHeightPixels();
         final int sy = getSliderPosPixels(sh);
         g.setColor(colorBackground);

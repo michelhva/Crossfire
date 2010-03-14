@@ -67,8 +67,8 @@ public abstract class GUIElement extends JPanel {
 
     /**
      * The backbuffer image of this element. It is updated in {@link #render()}
-     * and {@link #render(Graphics)}. {@link #paintComponent(Graphics)} copies
-     * the contents to screen.
+     * and {@link #render(Graphics2D)}. {@link #paintComponent(Graphics)}
+     * copies the contents to screen.
      */
     @NotNull
     private BufferedImage bufferedImage;
@@ -443,7 +443,7 @@ public abstract class GUIElement extends JPanel {
      */
     private void render() {
         synchronized (bufferedImageSync) {
-            final Graphics g = createBufferGraphics();
+            final Graphics2D g = createBufferGraphics();
             try {
                 render(g);
             } finally {
@@ -456,7 +456,7 @@ public abstract class GUIElement extends JPanel {
      * Paint the elements's contents into the passed graphics.
      * @param g The gaphics to paint to.
      */
-    protected abstract void render(@NotNull final Graphics g);
+    protected abstract void render(@NotNull final Graphics2D g);
 
     /**
      * {@inheritDoc}

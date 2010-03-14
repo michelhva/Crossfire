@@ -31,7 +31,6 @@ import com.realtime.crossfire.jxclient.items.CfItem;
 import com.realtime.crossfire.jxclient.items.CfItemListener;
 import com.realtime.crossfire.jxclient.server.crossfire.CrossfireServerConnection;
 import java.awt.Color;
-import java.awt.Graphics;
 import java.awt.Graphics2D;
 import java.awt.Image;
 import org.jetbrains.annotations.NotNull;
@@ -143,9 +142,8 @@ public abstract class GUIItemItem extends GUIItem {
      * {@inheritDoc}
      */
     @Override
-    protected void render(@NotNull final Graphics g) {
-        final Graphics2D g2 = (Graphics2D)g;
-        g2.setBackground(BACKGROUND_COLOR);
+    protected void render(@NotNull final Graphics2D g) {
+        g.setBackground(BACKGROUND_COLOR);
         g.clearRect(0, 0, getWidth(), getHeight());
 
         final CfItem tmpItem = item;
@@ -153,7 +151,7 @@ public abstract class GUIItemItem extends GUIItem {
             return;
         }
 
-        itemPainter.paint(g2, tmpItem, isSelected(), getFace(tmpItem));
+        itemPainter.paint(g, tmpItem, isSelected(), getFace(tmpItem));
     }
 
     /**

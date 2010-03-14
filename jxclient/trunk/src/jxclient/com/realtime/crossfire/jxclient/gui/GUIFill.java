@@ -25,7 +25,6 @@ import com.realtime.crossfire.jxclient.gui.gui.GUIElement;
 import com.realtime.crossfire.jxclient.gui.gui.GUIElementListener;
 import com.realtime.crossfire.jxclient.gui.gui.TooltipManager;
 import java.awt.Color;
-import java.awt.Graphics;
 import java.awt.Graphics2D;
 import java.awt.Transparency;
 import org.jetbrains.annotations.NotNull;
@@ -78,9 +77,8 @@ public class GUIFill extends GUIElement {
      * {@inheritDoc}
      */
     @Override
-    protected void render(@NotNull final Graphics g) {
-        final Graphics2D g2 = (Graphics2D)g;
-        g2.setBackground(color);
+    protected void render(@NotNull final Graphics2D g) {
+        g.setBackground(color);
         g.clearRect(0, 0, getWidth(), getHeight());
     }
 

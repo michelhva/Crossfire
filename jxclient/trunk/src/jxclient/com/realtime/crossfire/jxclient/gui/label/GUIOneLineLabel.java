@@ -25,7 +25,6 @@ import com.realtime.crossfire.jxclient.gui.gui.GUIElementListener;
 import com.realtime.crossfire.jxclient.gui.gui.TooltipManager;
 import java.awt.Color;
 import java.awt.Font;
-import java.awt.Graphics;
 import java.awt.Graphics2D;
 import java.awt.image.BufferedImage;
 import org.jetbrains.annotations.NotNull;
@@ -76,10 +75,9 @@ public class GUIOneLineLabel extends GUILabel {
      * {@inheritDoc}
      */
     @Override
-    protected void render(@NotNull final Graphics g) {
+    protected void render(@NotNull final Graphics2D g) {
         super.render(g);
-        final Graphics2D g2 = (Graphics2D)g;
-        drawLine(g2, 0, getHeight(), getText());
+        drawLine(g, 0, getHeight(), getText());
     }
 
 }

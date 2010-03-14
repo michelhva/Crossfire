@@ -25,7 +25,6 @@ import com.realtime.crossfire.jxclient.gui.gui.GUIElementListener;
 import com.realtime.crossfire.jxclient.gui.gui.TooltipManager;
 import java.awt.Color;
 import java.awt.Font;
-import java.awt.Graphics;
 import java.awt.Graphics2D;
 import java.awt.geom.RectangularShape;
 import java.awt.image.BufferedImage;
@@ -98,19 +97,18 @@ public class GUIDupTextGauge extends GUIDupGauge {
      * {@inheritDoc}
      */
     @Override
-    protected void render(@NotNull final Graphics g) {
+    protected void render(@NotNull final Graphics2D g) {
         super.render(g);
 
         if (font == null) {
             return;
         }
 
-        final Graphics2D g2 = (Graphics2D)g;
-        g2.setBackground(new Color(0, 0, 0, 0.0f));
+        g.setBackground(new Color(0, 0, 0, 0.0f));
         g.setColor(color);
         g.setFont(font);
         final String text = labelText;
-        final RectangularShape rect = font.getStringBounds(text, g2.getFontRenderContext());
+        final RectangularShape rect = font.getStringBounds(text, g.getFontRenderContext());
         g.drawString(text, (int)Math.round((getWidth()-rect.getWidth())/2), (int)Math.round((getHeight()-rect.getMaxY()-rect.getMinY()))/2);
     }
 

@@ -31,7 +31,6 @@ import com.realtime.crossfire.jxclient.metaserver.MetaserverEntryListener;
 import com.realtime.crossfire.jxclient.metaserver.MetaserverModel;
 import java.awt.Color;
 import java.awt.Font;
-import java.awt.Graphics;
 import java.awt.Graphics2D;
 import java.awt.Image;
 import java.awt.Transparency;
@@ -152,10 +151,9 @@ public class GUIMetaElement extends ActivatableGUIElement implements GUIScrollab
      * {@inheritDoc}
      */
     @Override
-    protected void render(@NotNull final Graphics g) {
+    protected void render(@NotNull final Graphics2D g) {
         final MetaserverEntry metaEntry = metaserverModel.getEntry(index);
-        final Graphics2D g2 = (Graphics2D)g;
-        g2.setBackground(new Color(0, 0, 0, 0.0f));
+        g.setBackground(new Color(0, 0, 0, 0.0f));
         g.clearRect(0, 0, getWidth(), getHeight());
         g.setFont(font);
         g.setColor(isActive() || selected ? Color.RED : Color.GRAY);
