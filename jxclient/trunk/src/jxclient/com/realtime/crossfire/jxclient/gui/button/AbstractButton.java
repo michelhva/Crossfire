@@ -25,6 +25,7 @@ import com.realtime.crossfire.jxclient.gui.commands.CommandList;
 import com.realtime.crossfire.jxclient.gui.gui.ActivatableGUIElement;
 import com.realtime.crossfire.jxclient.gui.gui.GUIElementListener;
 import com.realtime.crossfire.jxclient.gui.gui.TooltipManager;
+import com.realtime.crossfire.jxclient.skin.skin.Extent;
 import com.realtime.crossfire.jxclient.timeouts.TimeoutEvent;
 import com.realtime.crossfire.jxclient.timeouts.Timeouts;
 import java.awt.event.MouseEvent;
@@ -77,17 +78,14 @@ public abstract class AbstractButton extends ActivatableGUIElement {
      * @param tooltipManager the tooltip manager to update
      * @param elementListener the element listener to notify
      * @param name The name of this element.
-     * @param x The x-coordinate for drawing this element to screen.
-     * @param y The y-coordinate for drawing this element to screen.
-     * @param w The width for drawing this element to screen.
-     * @param h The height for drawing this element to screen.
+     * @param extent the extent of this element
      * @param transparency The transparency value for the backing buffer
      * @param autoRepeat Whether the button should autorepeat while being
      * pressed.
      * @param commandList The commands to execute when the button is elected.
      */
-    protected AbstractButton(@NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final String name, final int x, final int y, final int w, final int h, final int transparency, final boolean autoRepeat, @NotNull final CommandList commandList) {
-        super(tooltipManager, elementListener, name, x, y, w, h, transparency);
+    protected AbstractButton(@NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final String name, @NotNull final Extent extent, final int transparency, final boolean autoRepeat, @NotNull final CommandList commandList) {
+        super(tooltipManager, elementListener, name, extent, transparency);
         this.autoRepeat = autoRepeat;
         this.commandList = commandList;
     }

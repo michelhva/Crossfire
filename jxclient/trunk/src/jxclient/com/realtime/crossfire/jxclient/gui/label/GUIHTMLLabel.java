@@ -23,6 +23,7 @@ package com.realtime.crossfire.jxclient.gui.label;
 
 import com.realtime.crossfire.jxclient.gui.gui.GUIElementListener;
 import com.realtime.crossfire.jxclient.gui.gui.TooltipManager;
+import com.realtime.crossfire.jxclient.skin.skin.Extent;
 import java.awt.Color;
 import java.awt.Font;
 import java.awt.Graphics2D;
@@ -72,8 +73,12 @@ public class GUIHTMLLabel extends AbstractLabel {
      */
     private boolean autoResize = false;
 
-    public GUIHTMLLabel(@NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final String name, final int x, final int y, final int w, final int h, @Nullable final BufferedImage picture, @Nullable final Font font, @NotNull final Color color, @NotNull final Color backgroundColor, @NotNull final String text) {
-        super(tooltipManager, elementListener, name, x, y, w, h, picture, backgroundColor);
+    /**
+     * Creates a new instance.
+     * @param extent the extent of this element
+     */
+    public GUIHTMLLabel(@NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final String name, @NotNull final Extent extent, @Nullable final BufferedImage picture, @Nullable final Font font, @NotNull final Color color, @NotNull final Color backgroundColor, @NotNull final String text) {
+        super(tooltipManager, elementListener, name, extent, picture, backgroundColor);
         this.font = font;
         this.color = color;
         setText(text);

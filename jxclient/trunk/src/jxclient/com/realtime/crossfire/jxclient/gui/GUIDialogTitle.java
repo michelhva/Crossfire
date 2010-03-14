@@ -25,6 +25,7 @@ import com.realtime.crossfire.jxclient.gui.gui.GUIElementListener;
 import com.realtime.crossfire.jxclient.gui.gui.Gui;
 import com.realtime.crossfire.jxclient.gui.gui.JXCWindowRenderer;
 import com.realtime.crossfire.jxclient.gui.gui.TooltipManager;
+import com.realtime.crossfire.jxclient.skin.skin.Extent;
 import java.awt.Point;
 import java.awt.event.MouseEvent;
 import java.awt.image.BufferedImage;
@@ -61,17 +62,12 @@ public class GUIDialogTitle extends GUIPicture {
      * @param windowRenderer the window renderer this element belongs to
      * @param elementListener the element listener to notify
      * @param name The name of this element.
-     * @param x The x-coordinate for drawing this element to screen; it is
-     * relative to <code>gui</code>.
-     * @param y The y-coordinate for drawing this element to screen; it is
-     * relative to <code>gui</code>.
-     * @param w The width for drawing this element to screen.
-     * @param h The height for drawing this element to screen.
+     * @param extent the extent of this element
      * @param image The picture to paint.
      * @param alpha The transparency value.
      */
-    public GUIDialogTitle(@NotNull final TooltipManager tooltipManager, @NotNull final JXCWindowRenderer windowRenderer, @NotNull final GUIElementListener elementListener, @NotNull final String name, final int x, final int y, final int w, final int h, @NotNull final BufferedImage image, final float alpha) {
-        super(tooltipManager, elementListener, name, x, y, w, h, image, alpha);
+    public GUIDialogTitle(@NotNull final TooltipManager tooltipManager, @NotNull final JXCWindowRenderer windowRenderer, @NotNull final GUIElementListener elementListener, @NotNull final String name, @NotNull final Extent extent, @NotNull final BufferedImage image, final float alpha) {
+        super(tooltipManager, elementListener, name, extent, image, alpha);
         this.windowRenderer = windowRenderer;
     }
 

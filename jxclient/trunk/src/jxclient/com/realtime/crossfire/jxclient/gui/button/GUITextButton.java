@@ -24,6 +24,7 @@ package com.realtime.crossfire.jxclient.gui.button;
 import com.realtime.crossfire.jxclient.gui.commands.CommandList;
 import com.realtime.crossfire.jxclient.gui.gui.GUIElementListener;
 import com.realtime.crossfire.jxclient.gui.gui.TooltipManager;
+import com.realtime.crossfire.jxclient.skin.skin.Extent;
 import java.awt.Color;
 import java.awt.Font;
 import java.awt.Graphics2D;
@@ -78,12 +79,7 @@ public class GUITextButton extends AbstractButton {
      * @param tooltipManager the tooltip manager to update
      * @param elementListener the element listener to notify
      * @param name The name of this element.
-     * @param x The x-coordinate for drawing this element to screen; it is
-     * relative to <code>gui</code>.
-     * @param y The y-coordinate for drawing this element to screen; it is
-     * relative to <code>gui</code>.
-     * @param w The width for drawing this element to screen.
-     * @param h The height for drawing this element to screen.
+     * @param extent the extent of this element
      * @param up The images comprising the "up" button state.
      * @param down The images comprising the "down" button state.
      * @param text The button text.
@@ -93,8 +89,10 @@ public class GUITextButton extends AbstractButton {
      * pressed.
      * @param commandList The commands to execute when the button is selected.
      */
-    public GUITextButton(@NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final String name, final int x, final int y, final int w, final int h, @NotNull final ButtonImages up, @NotNull final ButtonImages down, @NotNull final String text, @NotNull final Font font, @NotNull final Color color, final boolean autoRepeat, @NotNull final CommandList commandList) {
-        super(tooltipManager, elementListener, name, x, y, w, h, Transparency.TRANSLUCENT, autoRepeat, commandList);
+    public GUITextButton(@NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final String name, @NotNull final Extent extent, @NotNull final ButtonImages up, @NotNull final ButtonImages down, @NotNull final String text, @NotNull final Font font, @NotNull final Color color, final boolean autoRepeat, @NotNull final CommandList commandList) {
+        super(tooltipManager, elementListener, name, extent, Transparency.TRANSLUCENT, autoRepeat, commandList);
+        final int w = extent.getW();
+        final int h = extent.getH();
         if (up.getHeight() != h) {
             throw new IllegalArgumentException("'up' state is height "+up.getHeight()+" but button height is "+h);
         }

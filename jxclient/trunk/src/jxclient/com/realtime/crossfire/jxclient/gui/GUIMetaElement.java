@@ -29,6 +29,7 @@ import com.realtime.crossfire.jxclient.metaserver.Metaserver;
 import com.realtime.crossfire.jxclient.metaserver.MetaserverEntry;
 import com.realtime.crossfire.jxclient.metaserver.MetaserverEntryListener;
 import com.realtime.crossfire.jxclient.metaserver.MetaserverModel;
+import com.realtime.crossfire.jxclient.skin.skin.Extent;
 import java.awt.Color;
 import java.awt.Font;
 import java.awt.Graphics2D;
@@ -125,7 +126,7 @@ public class GUIMetaElement extends ActivatableGUIElement implements GUIScrollab
      * @param tooltip the format used for displaying tooltips
      */
     public GUIMetaElement(@NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final MetaserverModel metaserverModel, @NotNull final String name, final int w, final int h, @Nullable final Image tcpImage, @NotNull final Font font, final int defaultIndex, @NotNull final String format, @NotNull final String tooltip) {
-        super(tooltipManager, elementListener, name, 0, 0, w, h, Transparency.TRANSLUCENT);
+        super(tooltipManager, elementListener, name, new Extent(0, 0, w, h), Transparency.TRANSLUCENT);
         this.metaserverModel = metaserverModel;
         this.tcpImage = tcpImage;
         this.font = font;

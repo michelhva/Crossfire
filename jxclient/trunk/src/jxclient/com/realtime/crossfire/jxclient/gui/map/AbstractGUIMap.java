@@ -35,6 +35,7 @@ import com.realtime.crossfire.jxclient.mapupdater.NewmapListener;
 import com.realtime.crossfire.jxclient.server.crossfire.CrossfireMap2Command;
 import com.realtime.crossfire.jxclient.server.crossfire.CrossfireServerConnection;
 import com.realtime.crossfire.jxclient.server.crossfire.MapSizeListener;
+import com.realtime.crossfire.jxclient.skin.skin.Extent;
 import com.realtime.crossfire.jxclient.util.MathUtils;
 import java.awt.Color;
 import java.awt.Graphics;
@@ -289,16 +290,15 @@ public abstract class AbstractGUIMap extends GUIElement {
      * @param tooltipManager the tooltip manager to update
      * @param elementListener the element listener to notify
      * @param name the name of this element
-     * @param x the x-coordinate for drawing this element to screen
-     * @param y the y-coordinate for drawing this element to screen
-     * @param w the width for drawing this element to screen
-     * @param h the height for drawing this element to screen
+     * @param extent the extent of this element
      * @param mapUpdater the map updater instance to use
      * @param facesProvider the faces provider for looking up faces
      * @param crossfireServerConnection the server connection to monitor
      */
-    protected AbstractGUIMap(@NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final String name, final int x, final int y, final int w, final int h, @NotNull final CfMapUpdater mapUpdater, @NotNull final FacesProvider facesProvider, @NotNull final CrossfireServerConnection crossfireServerConnection) {
-        super(tooltipManager, elementListener, name, x, y, w, h, Transparency.OPAQUE);
+    protected AbstractGUIMap(@NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final String name, @NotNull final Extent extent, @NotNull final CfMapUpdater mapUpdater, @NotNull final FacesProvider facesProvider, @NotNull final CrossfireServerConnection crossfireServerConnection) {
+        super(tooltipManager, elementListener, name, extent, Transparency.OPAQUE);
+        final int w = extent.getW();
+        final int h = extent.getH();
         if (w <= 0 || h <= 0) {
             throw new IllegalArgumentException("area must be non-empty");
         }

@@ -24,6 +24,7 @@ package com.realtime.crossfire.jxclient.gui.label;
 import com.realtime.crossfire.jxclient.faces.FacesManager;
 import com.realtime.crossfire.jxclient.gui.gui.GUIElementListener;
 import com.realtime.crossfire.jxclient.gui.gui.TooltipManager;
+import com.realtime.crossfire.jxclient.skin.skin.Extent;
 import com.realtime.crossfire.jxclient.spells.CurrentSpellManager;
 import com.realtime.crossfire.jxclient.spells.CurrentSpellManagerListener;
 import com.realtime.crossfire.jxclient.spells.Spell;
@@ -114,10 +115,7 @@ public class GUISpellLabel extends GUIHTMLLabel {
      * @param tooltipManager the tooltip manager to update
      * @param elementListener the element listener to notify
      * @param name The gui element name.
-     * @param x The x-coordinate to display at.
-     * @param y The y-coordinate to display at.
-     * @param w The width of the label.
-     * @param h The height of the label.
+     * @param extent the extent of this element
      * @param picture The background picture; may be <code>null</code>. It is
      * ignored for type <code>SPELL_ICON</code>.
      * @param facesManager the instance for looking up faces
@@ -125,8 +123,8 @@ public class GUISpellLabel extends GUIHTMLLabel {
      * @param type The display type.
      * @param currentSpellManager The current spell manager to track.
      */
-    public GUISpellLabel(@NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final String name, final int x, final int y, final int w, final int h, @Nullable final BufferedImage picture, @NotNull final FacesManager facesManager, @Nullable final Font font, @NotNull final Type type, @NotNull final CurrentSpellManager currentSpellManager) {
-        super(tooltipManager, elementListener, name, x, y, w, h, picture, font, Color.WHITE, new Color(0, 0, 0, 0F), "");
+    public GUISpellLabel(@NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final String name, @NotNull final Extent extent, @Nullable final BufferedImage picture, @NotNull final FacesManager facesManager, @Nullable final Font font, @NotNull final Type type, @NotNull final CurrentSpellManager currentSpellManager) {
+        super(tooltipManager, elementListener, name, extent, picture, font, Color.WHITE, new Color(0, 0, 0, 0F), "");
         this.facesManager = facesManager;
         this.type = type;
         this.currentSpellManager = currentSpellManager;

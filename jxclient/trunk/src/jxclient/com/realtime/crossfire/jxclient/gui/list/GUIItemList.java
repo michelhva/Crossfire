@@ -33,6 +33,7 @@ import com.realtime.crossfire.jxclient.items.ItemView;
 import com.realtime.crossfire.jxclient.items.LocationsListener;
 import com.realtime.crossfire.jxclient.queue.CommandQueue;
 import com.realtime.crossfire.jxclient.server.crossfire.CrossfireServerConnection;
+import com.realtime.crossfire.jxclient.skin.skin.Extent;
 import java.awt.event.InputEvent;
 import java.awt.event.MouseEvent;
 import javax.swing.JList;
@@ -119,12 +120,7 @@ public class GUIItemList extends GUIList {
      * @param elementListener the element listener to notify
      * @param commandQueue the command queue for sending commands to the server
      * @param name the name of this element
-     * @param x the x-coordinate for drawing this element to screen; it is
-     * relative to <code>gui</code>
-     * @param y the y-coordinate for drawing this element to screen; it is
-     * relative to <code>gui</code>
-     * @param w the width for drawing this element to screen
-     * @param h the height for drawing this element to screen
+     * @param extent the extent of this element
      * @param cellWidth the width of each cell
      * @param cellHeight the height of each cell
      * @param crossfireServerConnection the crossfire server connection for
@@ -134,8 +130,8 @@ public class GUIItemList extends GUIList {
      * selected item.
      * @param itemItemFactory the factory for creating item instances
      */
-    public GUIItemList(@NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final CommandQueue commandQueue, @NotNull final String name, final int x, final int y, final int w, final int h, final int cellWidth, final int cellHeight, @NotNull final CrossfireServerConnection crossfireServerConnection, @NotNull final ItemView itemView, @Nullable final AbstractLabel currentItem, @NotNull final GUIItemItemFactory itemItemFactory) {
-        super(tooltipManager, elementListener, name, x, y, w, h, cellWidth, cellHeight, new ItemItemCellRenderer(itemItemFactory.newTemplateItem(cellHeight)));
+    public GUIItemList(@NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final CommandQueue commandQueue, @NotNull final String name, @NotNull final Extent extent, final int cellWidth, final int cellHeight, @NotNull final CrossfireServerConnection crossfireServerConnection, @NotNull final ItemView itemView, @Nullable final AbstractLabel currentItem, @NotNull final GUIItemItemFactory itemItemFactory) {
+        super(tooltipManager, elementListener, name, extent, cellWidth, cellHeight, new ItemItemCellRenderer(itemItemFactory.newTemplateItem(cellHeight)));
         this.itemView = itemView;
         this.itemItemFactory = itemItemFactory;
         this.commandQueue = commandQueue;

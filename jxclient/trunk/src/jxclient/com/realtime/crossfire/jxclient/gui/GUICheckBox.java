@@ -26,6 +26,7 @@ import com.realtime.crossfire.jxclient.gui.gui.GUIElementListener;
 import com.realtime.crossfire.jxclient.gui.gui.TooltipManager;
 import com.realtime.crossfire.jxclient.settings.options.CheckBoxOption;
 import com.realtime.crossfire.jxclient.settings.options.OptionListener;
+import com.realtime.crossfire.jxclient.skin.skin.Extent;
 import java.awt.Color;
 import java.awt.Font;
 import java.awt.Graphics2D;
@@ -100,12 +101,7 @@ public class GUICheckBox extends ActivatableGUIElement {
      * @param tooltipManager the tooltip manager to update
      * @param elementListener the element listener to notify
      * @param name The name of this element.
-     * @param x The x-coordinate for drawing this element to screen; it is
-     * relative to <code>gui</code>.
-     * @param y The y-coordinate for drawing this element to screen; it is
-     * relative to <code>gui</code>.
-     * @param w The width for drawing this element to screen.
-     * @param h The height for drawing this element to screen.
+     * @param extent the extent of this element
      * @param checkedImage The image for the checked state.
      * @param uncheckedImage The image for the unchecked state.
      * @param font The font to use.
@@ -113,8 +109,10 @@ public class GUICheckBox extends ActivatableGUIElement {
      * @param option The option to display.
      * @param text The text to display.
      */
-    public GUICheckBox(@NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final String name, final int x, final int y, final int w, final int h, @NotNull final BufferedImage checkedImage, @NotNull final BufferedImage uncheckedImage, @NotNull final Font font, @NotNull final Color color, @NotNull final CheckBoxOption option, @NotNull final String text) {
-        super(tooltipManager, elementListener, name, x, y, w, h, Transparency.TRANSLUCENT);
+    public GUICheckBox(@NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final String name, @NotNull final Extent extent, @NotNull final BufferedImage checkedImage, @NotNull final BufferedImage uncheckedImage, @NotNull final Font font, @NotNull final Color color, @NotNull final CheckBoxOption option, @NotNull final String text) {
+        super(tooltipManager, elementListener, name, extent, Transparency.TRANSLUCENT);
+        final int w = extent.getW();
+        final int h = extent.getH();
         if (checkedImage.getHeight() != h) {
             throw new IllegalArgumentException("'checked' height is "+checkedImage.getHeight()+" but checkbox height is "+h);
         }

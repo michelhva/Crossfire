@@ -24,6 +24,7 @@ package com.realtime.crossfire.jxclient.gui;
 import com.realtime.crossfire.jxclient.gui.gui.GUIElement;
 import com.realtime.crossfire.jxclient.gui.gui.GUIElementListener;
 import com.realtime.crossfire.jxclient.gui.gui.TooltipManager;
+import com.realtime.crossfire.jxclient.skin.skin.Extent;
 import java.awt.AlphaComposite;
 import java.awt.Graphics2D;
 import java.awt.Transparency;
@@ -47,17 +48,12 @@ public class GUIPicture extends GUIElement {
      * @param tooltipManager the tooltip manager to update
      * @param elementListener the element listener to notify
      * @param name The name of this element.
-     * @param x The x-coordinate for drawing this element to screen; it is
-     * relative to <code>gui</code>.
-     * @param y The y-coordinate for drawing this element to screen; it is
-     * relative to <code>gui</code>.
-     * @param w The width for drawing this element to screen.
-     * @param h The height for drawing this element to screen.
+     * @param extent the extent of this element
      * @param image The picture to paint.
      * @param alpha The transparency value.
      */
-    public GUIPicture(@NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final String name, final int x, final int y, final int w, final int h, @NotNull final BufferedImage image, final float alpha) {
-        super(tooltipManager, elementListener, name, x, y, w, h, alpha < 1F ? Transparency.TRANSLUCENT : image.getTransparency());
+    public GUIPicture(@NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final String name, @NotNull final Extent extent, @NotNull final BufferedImage image, final float alpha) {
+        super(tooltipManager, elementListener, name, extent, alpha < 1F ? Transparency.TRANSLUCENT : image.getTransparency());
         synchronized (bufferedImageSync) {
             final Graphics2D g = createBufferGraphics();
             try {

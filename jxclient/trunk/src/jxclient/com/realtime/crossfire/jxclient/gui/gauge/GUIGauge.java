@@ -24,6 +24,7 @@ package com.realtime.crossfire.jxclient.gui.gauge;
 import com.realtime.crossfire.jxclient.gui.gui.GUIElement;
 import com.realtime.crossfire.jxclient.gui.gui.GUIElementListener;
 import com.realtime.crossfire.jxclient.gui.gui.TooltipManager;
+import com.realtime.crossfire.jxclient.skin.skin.Extent;
 import java.awt.Color;
 import java.awt.Graphics2D;
 import java.awt.Image;
@@ -83,12 +84,7 @@ public class GUIGauge extends GUIElement implements GUIGaugeListener {
      * @param tooltipManager the tooltip manager to update
      * @param elementListener the element listener to notify
      * @param name the name of this element
-     * @param x the x-coordinate for drawing this element to screen; it is
-     * relative to <code>gui</code>
-     * @param y the y-coordinate for drawing this element to screen; it is
-     * relative to <code>gui</code>
-     * @param w the width for drawing this element to screen
-     * @param h the height for drawing this element to screen
+     * @param extent the extent of this element
      * @param fullImage the image representing a full gauge
      * @param negativeImage the image representing a more-than-empty gauge; if
      * set to <code>null</code> the gauge remains in empty state
@@ -98,8 +94,10 @@ public class GUIGauge extends GUIElement implements GUIGaugeListener {
      * @param tooltipPrefix the prefix for displaying tooltips; if set to
      * <code>null</code> no tooltips are shown
      */
-    public GUIGauge(@NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final String name, final int x, final int y, final int w, final int h, @Nullable final BufferedImage fullImage, @Nullable final BufferedImage negativeImage, @Nullable final BufferedImage emptyImage, @NotNull final Orientation orientation, @Nullable final String tooltipPrefix) {
-        super(tooltipManager, elementListener, name, x, y, w, h, Transparency.TRANSLUCENT);
+    public GUIGauge(@NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final String name, @NotNull final Extent extent, @Nullable final BufferedImage fullImage, @Nullable final BufferedImage negativeImage, @Nullable final BufferedImage emptyImage, @NotNull final Orientation orientation, @Nullable final String tooltipPrefix) {
+        super(tooltipManager, elementListener, name, extent, Transparency.TRANSLUCENT);
+        final int w = extent.getW();
+        final int h = extent.getH();
         checkSize(fullImage, "full", w, h);
         checkSize(negativeImage, "negative", w, h);
         checkSize(emptyImage, "empty", w, h);

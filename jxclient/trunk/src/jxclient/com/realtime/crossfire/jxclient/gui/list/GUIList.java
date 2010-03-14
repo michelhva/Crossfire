@@ -27,6 +27,7 @@ import com.realtime.crossfire.jxclient.gui.gui.GUIElementListener;
 import com.realtime.crossfire.jxclient.gui.gui.TooltipManager;
 import com.realtime.crossfire.jxclient.gui.item.GUIItemItem;
 import com.realtime.crossfire.jxclient.gui.scrollable.GUIScrollable;
+import com.realtime.crossfire.jxclient.skin.skin.Extent;
 import java.awt.Adjustable;
 import java.awt.AlphaComposite;
 import java.awt.Color;
@@ -104,19 +105,14 @@ public abstract class GUIList extends ActivatableGUIElement implements GUIScroll
      * @param tooltipManager the tooltip manager to update
      * @param elementListener the element listener to notify
      * @param name the name of this element
-     * @param x the x-coordinate for drawing this element to screen; it is
-     * relative to <code>gui</code>
-     * @param y the y-coordinate for drawing this element to screen; it is
-     * relative to <code>gui</code>
-     * @param w the width for drawing this element to screen
-     * @param h the height for drawing this element to screen
+     * @param extent the extent of this element
      * @param cellWidth the width of each cell
      * @param cellHeight the height of each cell
      * @param listCellRenderer the renderer for the list
      */
-    protected GUIList(@NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final String name, final int x, final int y, final int w, final int h, final int cellWidth, final int cellHeight, @NotNull final ListCellRenderer listCellRenderer) {
-        super(tooltipManager, elementListener, name, x, y, w, h, Transparency.TRANSLUCENT);
-        final Dimension size = new Dimension(w, h);
+    protected GUIList(@NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final String name, @NotNull final Extent extent, final int cellWidth, final int cellHeight, @NotNull final ListCellRenderer listCellRenderer) {
+        super(tooltipManager, elementListener, name, extent, Transparency.TRANSLUCENT);
+        final Dimension size = new Dimension(extent.getW(), extent.getH());
 
         this.cellHeight = cellHeight;
 
@@ -129,7 +125,7 @@ public abstract class GUIList extends ActivatableGUIElement implements GUIScroll
         scrollPane.setMinimumSize(size);
         scrollPane.setMaximumSize(size);
         scrollPane.setSize(size);
-        scrollPane.setLocation(x, y);
+        scrollPane.setLocation(extent.getX(), extent.getY());
         viewport.setSize(size);
         viewport.setOpaque(false);
         scrollPane.setBorder(new EmptyBorder(0, 0, 0, 0));

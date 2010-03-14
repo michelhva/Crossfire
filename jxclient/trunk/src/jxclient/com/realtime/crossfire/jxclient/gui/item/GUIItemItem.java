@@ -30,6 +30,7 @@ import com.realtime.crossfire.jxclient.gui.gui.TooltipManager;
 import com.realtime.crossfire.jxclient.items.CfItem;
 import com.realtime.crossfire.jxclient.items.CfItemListener;
 import com.realtime.crossfire.jxclient.server.crossfire.CrossfireServerConnection;
+import com.realtime.crossfire.jxclient.skin.skin.Extent;
 import java.awt.Color;
 import java.awt.Graphics2D;
 import java.awt.Image;
@@ -110,18 +111,13 @@ public abstract class GUIItemItem extends GUIItem {
      * @param tooltipManager the tooltip manager to update
      * @param elementListener the element listener to notify
      * @param name the name of this element
-     * @param x the x-coordinate for drawing this element to screen; it is
-     * relative to <code>gui</code>
-     * @param y the y-coordinate for drawing this element to screen; it is
-     * relative to <code>gui</code>
-     * @param w the width for drawing this element to screen
-     * @param h the height for drawing this element to screen
+     * @param extent the extent of this element
      * @param crossfireServerConnection the connection instance
      * @param itemPainter the item painter for painting the icon
      * @param facesManager the faces manager instance to use
      */
-    protected GUIItemItem(@NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final String name, final int x, final int y, final int w, final int h, @NotNull final CrossfireServerConnection crossfireServerConnection, @NotNull final ItemPainter itemPainter, @NotNull final FacesManager facesManager) {
-        super(tooltipManager, elementListener, name, x, y, w, h);
+    protected GUIItemItem(@NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final String name, @NotNull final Extent extent, @NotNull final CrossfireServerConnection crossfireServerConnection, @NotNull final ItemPainter itemPainter, @NotNull final FacesManager facesManager) {
+        super(tooltipManager, elementListener, name, extent);
         this.itemPainter = itemPainter;
         this.crossfireServerConnection = crossfireServerConnection;
         this.facesManager = facesManager;

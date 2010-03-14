@@ -32,6 +32,7 @@ import com.realtime.crossfire.jxclient.shortcuts.ShortcutListener;
 import com.realtime.crossfire.jxclient.shortcuts.ShortcutSpell;
 import com.realtime.crossfire.jxclient.shortcuts.Shortcuts;
 import com.realtime.crossfire.jxclient.shortcuts.ShortcutsListener;
+import com.realtime.crossfire.jxclient.skin.skin.Extent;
 import com.realtime.crossfire.jxclient.spells.CurrentSpellManager;
 import com.realtime.crossfire.jxclient.spells.Spell;
 import java.awt.Color;
@@ -149,8 +150,12 @@ public class GUIItemShortcut extends GUIItem {
         }
     };
 
-    public GUIItemShortcut(@NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final String name, final int x, final int y, final int w, final int h, @Nullable final Color cursedColor, @Nullable final Image cursedImage, @Nullable final Color appliedColor, @Nullable final Image appliedImage, final int index, @NotNull final FacesManager facesManager, @NotNull final Shortcuts shortcuts, @NotNull final Font font, @NotNull final CurrentSpellManager currentSpellManager) {
-        super(tooltipManager, elementListener, name, x, y, w, h);
+    /**
+     * Creates a new instance.
+     * @param extent the extent of this element
+     */
+    public GUIItemShortcut(@NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final String name, @NotNull final Extent extent, @Nullable final Color cursedColor, @Nullable final Image cursedImage, @Nullable final Color appliedColor, @Nullable final Image appliedImage, final int index, @NotNull final FacesManager facesManager, @NotNull final Shortcuts shortcuts, @NotNull final Font font, @NotNull final CurrentSpellManager currentSpellManager) {
+        super(tooltipManager, elementListener, name, extent);
         this.shortcuts = shortcuts;
         this.facesManager = facesManager;
         this.cursedColor = cursedColor;
@@ -161,8 +166,8 @@ public class GUIItemShortcut extends GUIItem {
         this.index = index;
         this.currentSpellManager = currentSpellManager;
         this.shortcuts.addShortcutsListener(shortcutsListener);
-        this.w = w;
-        this.h = h;
+        w = extent.getW();
+        h = extent.getH();
         this.facesManager.addFacesManagerListener(facesManagerListener);
         updateTooltipText();
     }
