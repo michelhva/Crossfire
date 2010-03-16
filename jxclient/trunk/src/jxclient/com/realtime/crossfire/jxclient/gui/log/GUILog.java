@@ -122,6 +122,7 @@ public abstract class GUILog extends GUIElement implements GUIScrollable2 {
         super(tooltipManager, elementListener, name, extent, Transparency.TRANSLUCENT);
         this.backgroundImage = backgroundImage;
         this.fonts = fonts;
+        updateResolutionConstant();
         final FontRenderContext context;
         synchronized (bufferedImageSync) {
             final Graphics2D g = createBufferGraphics();
@@ -250,6 +251,15 @@ public abstract class GUILog extends GUIElement implements GUIScrollable2 {
     @NotNull
     public Buffer getBuffer() {
         return buffer;
+    }
+
+    /**
+     * {@inheritDoc}
+     */
+    @Override
+    public void updateResolution(final int screenWidth, final int screenHeight) {
+        super.updateResolution(screenWidth, screenHeight);
+        buffer.setRenderWidth(getWidth());
     }
 
 }

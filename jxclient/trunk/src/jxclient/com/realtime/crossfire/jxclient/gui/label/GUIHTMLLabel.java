@@ -146,6 +146,10 @@ public class GUIHTMLLabel extends AbstractLabel {
         }
 
         synchronized (bufferedImageSync) {
+            if (!hasBufferedImage()) {
+                return;
+            }
+
             final Graphics2D g = createBufferGraphics();
             try {
                 final FontRenderContext context = g.getFontRenderContext();
@@ -161,6 +165,15 @@ public class GUIHTMLLabel extends AbstractLabel {
                 g.dispose();
             }
         }
+    }
+
+    /**
+     * {@inheritDoc}
+     */
+    @Override
+    public void updateResolution(final int screenWidth, final int screenHeight) {
+        super.updateResolution(screenWidth, screenHeight);
+        autoResize();
     }
 
 }

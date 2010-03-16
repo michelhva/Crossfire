@@ -34,7 +34,7 @@ import org.jetbrains.annotations.NotNull;
  * A {@link ListCellRenderer} that renders {@link GUIMetaElement} instances.
  * @author Andreas Kirschbaum
  */
-public class ItemItemCellRenderer extends JPanel implements ListCellRenderer {
+public class ItemItemCellRenderer extends JPanel implements GUIListCellRenderer {
 
     /**
      * The serial version UID.
@@ -66,6 +66,14 @@ public class ItemItemCellRenderer extends JPanel implements ListCellRenderer {
         template.setIndexNoListeners(((GUIItemItem)value).getIndex());
         template.setSelected(isSelected);
         return this;
+    }
+
+    /**
+     * {@inheritDoc}
+     */
+    @Override
+    public void updateResolution(final int screenWidth, final int screenHeight) {
+        template.updateResolution(screenWidth, screenHeight);
     }
 
 }

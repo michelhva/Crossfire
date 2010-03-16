@@ -21,6 +21,7 @@
 
 package com.realtime.crossfire.jxclient.gui.gui;
 
+import com.realtime.crossfire.jxclient.skin.skin.Expression;
 import com.realtime.crossfire.jxclient.skin.skin.Extent;
 import java.awt.Dimension;
 import java.awt.Graphics;
@@ -71,7 +72,7 @@ public abstract class GUIElement extends JPanel {
      * and {@link #render(Graphics2D)}. {@link #paintComponent(Graphics)}
      * copies the contents to screen.
      */
-    @NotNull
+    @Nullable
     private BufferedImage bufferedImage;
 
     /**
@@ -89,6 +90,12 @@ public abstract class GUIElement extends JPanel {
      * Whether this gui element should be ignored for user interaction.
      */
     private boolean ignore = false;
+
+    /**
+     * The extent of this element.
+     */
+    @NotNull
+    private final Extent extent;
 
     /**
      * The transparency for {@link #bufferedImage}.
@@ -133,19 +140,15 @@ public abstract class GUIElement extends JPanel {
      * @param extent the extent of this element
      * @param transparency The transparency value for the backing buffer
      */
-    protected GUIElement(@NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final String name, @NotNull final Extent extent, final int transparency) {
+    protected GUIElement(@NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final String name, final Extent extent, final int transparency) {
         super(false);
         this.tooltipManager = tooltipManager;
         this.elementListener = elementListener;
         this.name = name;
+        this.extent = extent;
         this.transparency = transparency;
         setOpaque(true);
-        final Dimension size = new Dimension(extent.getConstantW(), extent.getConstantH());
-        setPreferredSize(size);
-        setMinimumSize(size);
-        setMaximumSize(size);
-        setSize(size);
-        setLocation(extent.getConstantX(), extent.getConstantY());
+        setSize(1, 1);
         createBuffer();
     }
 
@@ -401,6 +404,7 @@ public abstract class GUIElement extends JPanel {
      * @param y The new y-coordinate.
      */
     public void setElementLocation(final int x, final int y) {
+        extent.setLocation(new Expression(x, 0, 0), new Expression(y, 0, 0));
         if (getX() != x || getY() != y) {
             setLocation(x, y);
             setChanged();
@@ -413,6 +417,7 @@ public abstract class GUIElement extends JPanel {
      * @param h The new height.
      */
     protected void setElementSize(final int w, final int h) {
+        extent.setSize(new Expression(w, 0, 0), new Expression(h, 0, 0));
         if (getWidth() != w || getHeight() != h) {
             final Dimension size = new Dimension(w, h);
             setPreferredSize(size);
@@ -420,6 +425,7 @@ public abstract class GUIElement extends JPanel {
             setMaximumSize(size);
             setSize(size);
             createBuffer();
+            setChanged();
         }
     }
 
@@ -431,7 +437,6 @@ public abstract class GUIElement extends JPanel {
         final GraphicsDevice gd = ge.getDefaultScreenDevice();
         final GraphicsConfiguration gconf = gd.getDefaultConfiguration();
         bufferedImage = gconf.createCompatibleImage(getWidth(), getHeight(), transparency);
-        setChanged();
     }
 
     /**
@@ -459,6 +464,10 @@ public abstract class GUIElement extends JPanel {
      */
     @Override
     public void paintComponent(@NotNull final Graphics g) {
+        if (bufferedImage == null) {
+            throw new IllegalStateException();
+        }
+
         synchronized (bufferedImageSync) {
             if (changed) {
                 changed = false;
@@ -486,8 +495,60 @@ public abstract class GUIElement extends JPanel {
      */
     @NotNull
     protected Graphics2D createBufferGraphics() {
+        if (bufferedImage == null) {
+            throw new IllegalStateException();
+        }
+
         assert Thread.holdsLock(bufferedImageSync);
+        assert bufferedImage != null;
         return bufferedImage.createGraphics();
+    }
+
+    /**
+     * Returns whether the backbuffer for this element has been created.
+     * @return whether the backbuffer has been created
+     */
+    protected boolean hasBufferedImage() {
+        assert Thread.holdsLock(bufferedImageSync);
+        return bufferedImage != null;
+    }
+
+    /**
+     * Updates the location and size to a new screen resolution.
+     * @param screenWidth the new screen width
+     * @param screenHeight the new screen height
+     */
+    public void updateResolution(final int screenWidth, final int screenHeight) {
+        final int width = extent.getW(screenWidth, screenHeight);
+        final int height = extent.getH(screenWidth, screenHeight);
+        if (bufferedImage == null || width != getWidth() || height != getHeight()) {
+            final Dimension size = new Dimension(width, height);
+            setPreferredSize(size);
+            setMinimumSize(size);
+            setMaximumSize(size);
+            setSize(size);
+            createBuffer();
+            setChanged();
+        }
+
+        final int x = extent.getX(screenWidth, screenHeight);
+        final int y = extent.getY(screenWidth, screenHeight);
+        setLocation(x, y);
+    }
+
+    @Deprecated
+    protected void updateResolutionConstant() {
+        final int width = extent.getConstantW();
+        final int height = extent.getConstantH();
+        if (bufferedImage == null || width != getWidth() || height != getHeight()) {
+            final Dimension size = new Dimension(width, height);
+            setPreferredSize(size);
+            setMinimumSize(size);
+            setMaximumSize(size);
+            setSize(size);
+            createBuffer();
+            setChanged();
+        }
     }
 
 }

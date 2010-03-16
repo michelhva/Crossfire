@@ -201,4 +201,11 @@ public interface JXCSkin extends Iterable<Gui> {
      */
     void detach();
 
+    /**
+     * Updates the skin's gui elements to a screen size.
+     * @param screenWidth the new screen width
+     * @param screenHeight the new screen height
+     */
+    void setScreenSize(final int screenWidth, final int screenHeight);
+
 }

@@ -704,7 +704,6 @@ public class JXCWindow extends JFrame {
             }
         }
         guiManager.unsetSkin();
-        guiManager.setSkin(skin);
         optionManager.loadOptions();
         keyHandler.setKeyBindings(skin.getDefaultKeyBindings());
         if (!windowRenderer.setResolution(skin.getResolution(), fullScreen)) {
@@ -714,6 +713,7 @@ public class JXCWindow extends JFrame {
                 throw new AssertionError();
             }
         }
+        guiManager.setSkin(skin);
         DialogStateParser.load(skin, windowRenderer);
         guiManager.initRendering();
 

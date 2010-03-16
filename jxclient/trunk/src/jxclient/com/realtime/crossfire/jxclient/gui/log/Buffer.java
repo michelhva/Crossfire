@@ -67,7 +67,7 @@ public class Buffer {
     /**
      * The width to render.
      */
-    private final int renderWidth;
+    private int renderWidth;
 
     /**
      * The lines in display order.
@@ -114,6 +114,19 @@ public class Buffer {
         this.fonts = fonts;
         this.context = context;
         this.renderWidth = renderWidth;
+    }
+
+    /**
+     * Updates the width to render.
+     * @param renderWidth the width to render
+     */
+    public void setRenderWidth(final int renderWidth) {
+        if (this.renderWidth == renderWidth) {
+            return;
+        }
+
+        this.renderWidth = renderWidth;
+        // XXX: re-render existing contents
     }
 
     /**
