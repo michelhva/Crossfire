@@ -80,6 +80,18 @@ public class Expression {
     }
 
     /**
+     * Evaluates the expression into a constant.
+     * @return the constant
+     */
+    public int evaluateConstant() {
+        if (widthFactor != 0 || heightFactor != 0) {
+            throw new IllegalStateException();
+        }
+
+        return constant;
+    }
+
+    /**
      * Applies a factor to a value.
      * @param value the value
      * @param factor the factor

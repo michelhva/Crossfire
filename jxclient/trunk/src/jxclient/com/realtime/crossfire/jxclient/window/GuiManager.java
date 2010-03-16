@@ -820,6 +820,7 @@ public class GuiManager {
     public void setSkin(@NotNull final JXCSkin skin) {
         this.skin = skin;
         skin.attach(windowRenderer, tooltipManager);
+        skin.setScreenSize(windowRenderer.getWindowWidth(), windowRenderer.getWindowHeight());
         queryDialog = skin.getDialogQuery();
         keybindDialog = skin.getDialogKeyBind();
         dialogQuit = skin.getDialogQuit();

@@ -477,6 +477,20 @@ public class DefaultJXCSkin implements JXCSkin {
     }
 
     /**
+     * {@inheritDoc}
+     */
+    @Override
+    public void setScreenSize(final int screenWidth, final int screenHeight) {
+        for (final GUIElement guiElement : guiElements) {
+            guiElement.updateResolution(screenWidth, screenHeight);
+        }
+
+        if (tooltipLabel != null) {
+            tooltipLabel.updateResolution(screenWidth, screenHeight);
+        }
+    }
+
+    /**
      * Adds a new {@link GUIElement} to this skin.
      * @param guiElement the GUI element
      * @throws JXCSkinException if the name is not unique

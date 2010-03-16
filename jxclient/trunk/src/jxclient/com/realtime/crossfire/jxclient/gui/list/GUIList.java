@@ -40,7 +40,6 @@ import javax.swing.DefaultListModel;
 import javax.swing.JList;
 import javax.swing.JScrollPane;
 import javax.swing.JViewport;
-import javax.swing.ListCellRenderer;
 import javax.swing.ListSelectionModel;
 import javax.swing.ScrollPaneConstants;
 import javax.swing.border.EmptyBorder;
@@ -63,6 +62,12 @@ public abstract class GUIList extends ActivatableGUIElement implements GUIScroll
      * The height of a list cell in pixels.
      */
     private final int cellHeight;
+
+    /**
+     * The {@link GUIListCellRenderer} for the {@link #list}.
+     */
+    @NotNull
+    private final GUIListCellRenderer listCellRenderer;
 
     /**
      * The list model of {@link #list}.
@@ -110,23 +115,16 @@ public abstract class GUIList extends ActivatableGUIElement implements GUIScroll
      * @param cellHeight the height of each cell
      * @param listCellRenderer the renderer for the list
      */
-    protected GUIList(@NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final String name, @NotNull final Extent extent, final int cellWidth, final int cellHeight, @NotNull final ListCellRenderer listCellRenderer) {
+    protected GUIList(@NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final String name, @NotNull final Extent extent, final int cellWidth, final int cellHeight, @NotNull final GUIListCellRenderer listCellRenderer) {
         super(tooltipManager, elementListener, name, extent, Transparency.TRANSLUCENT);
-        final Dimension size = new Dimension(extent.getConstantW(), extent.getConstantH());
-
         this.cellHeight = cellHeight;
+        this.listCellRenderer = listCellRenderer;
 
         viewport.setView(list);
         scrollPane = new JScrollPane(null, ScrollPaneConstants.VERTICAL_SCROLLBAR_NEVER, ScrollPaneConstants.HORIZONTAL_SCROLLBAR_NEVER);
         scrollPane.setViewport(viewport);
         viewport.setScrollMode(JViewport.BLIT_SCROLL_MODE);
         scrollPane.setOpaque(false);
-        scrollPane.setPreferredSize(size);
-        scrollPane.setMinimumSize(size);
-        scrollPane.setMaximumSize(size);
-        scrollPane.setSize(size);
-        scrollPane.setLocation(extent.getConstantX(), extent.getConstantY());
-        viewport.setSize(size);
         viewport.setOpaque(false);
         scrollPane.setBorder(new EmptyBorder(0, 0, 0, 0));
 
@@ -135,17 +133,7 @@ public abstract class GUIList extends ActivatableGUIElement implements GUIScroll
         list.setFixedCellHeight(cellHeight);
         list.setOpaque(false);
         list.setSelectionMode(ListSelectionModel.SINGLE_SELECTION);
-        list.setSize(getWidth(), Integer.MAX_VALUE);
         list.addListSelectionListener(listSelectionListener);
-
-        synchronized (bufferedImageSync) {
-            final Graphics2D g = createBufferGraphics();
-            try {
-                render(g);
-            } finally {
-                g.dispose();
-            }
-        }
     }
 
     /**
@@ -517,6 +505,46 @@ public abstract class GUIList extends ActivatableGUIElement implements GUIScroll
         synchronized (getTreeLock()) {
             return list.getSelectedValue();
         }
+    }
+
+    /**
+     * {@inheritDoc}
+     */
+    @Override
+    public void updateResolution(final int screenWidth, final int screenHeight) {
+        super.updateResolution(screenWidth, screenHeight);
+        final Dimension size = new Dimension(getWidth(), getHeight());
+        scrollPane.setPreferredSize(size);
+        scrollPane.setMinimumSize(size);
+        scrollPane.setMaximumSize(size);
+        scrollPane.setSize(size);
+        viewport.setSize(size);
+        list.setSize(getWidth(), Integer.MAX_VALUE);
+
+        final int modelSize = model.getSize();
+        for (int i = 0; i < modelSize; i++) {
+            final GUIElement element = getElement(i);
+            element.updateResolution(screenWidth, screenHeight);
+        }
+
+        listCellRenderer.updateResolution(screenWidth, screenHeight);
+
+        synchronized (bufferedImageSync) {
+            final Graphics2D g = createBufferGraphics();
+            try {
+                render(g);
+            } finally {
+                g.dispose();
+            }
+        }
+    }
+
+    /**
+     * Returns the number of visible items.
+     * @return the number of visible items
+     */
+    public int getVisibleItems() {
+        return Math.max(getHeight()/cellHeight, 1)*Math.max(getWidth()/cellHeight, 1);
     }
 
 }

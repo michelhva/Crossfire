@@ -54,6 +54,7 @@ public class GUIPicture extends GUIElement {
      */
     public GUIPicture(@NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final String name, @NotNull final Extent extent, @NotNull final BufferedImage image, final float alpha) {
         super(tooltipManager, elementListener, name, extent, alpha < 1F ? Transparency.TRANSLUCENT : image.getTransparency());
+        updateResolutionConstant();
         synchronized (bufferedImageSync) {
             final Graphics2D g = createBufferGraphics();
             try {

@@ -92,12 +92,12 @@ public abstract class AbstractGUIMap extends GUIElement {
     /**
      * The x offset of the tile representing the player.
      */
-    private final int playerX;
+    private int playerX = 0;
 
     /**
      * The y offset of the tile representing the player.
      */
-    private final int playerY;
+    private int playerY = 0;
 
     /**
      * The x offset for drawing the square at coordinate 0 of the map.
@@ -297,17 +297,10 @@ public abstract class AbstractGUIMap extends GUIElement {
      */
     protected AbstractGUIMap(@NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final String name, @NotNull final Extent extent, @NotNull final CfMapUpdater mapUpdater, @NotNull final FacesProvider facesProvider, @NotNull final CrossfireServerConnection crossfireServerConnection) {
         super(tooltipManager, elementListener, name, extent, Transparency.OPAQUE);
-        final int w = extent.getConstantW();
-        final int h = extent.getConstantH();
-        if (w <= 0 || h <= 0) {
-            throw new IllegalArgumentException("area must be non-empty");
-        }
         tileSize = facesProvider.getSize();
         this.mapUpdater = mapUpdater;
         this.facesProvider = facesProvider;
         this.crossfireServerConnection = crossfireServerConnection;
-        playerX = w/2-tileSize/2;
-        playerY = h/2-tileSize/2;
         this.crossfireServerConnection.addMapSizeListener(mapSizeListener);
         this.mapUpdater.addCrossfireMapListener(mapListener);
         this.mapUpdater.addCrossfireNewmapListener(newmapListener);
@@ -520,11 +513,13 @@ public abstract class AbstractGUIMap extends GUIElement {
         offsetY = displayMinOffsetY-displayMinY*tileSize;
 
         synchronized (bufferedImageSync) {
-            final Graphics g = createBufferGraphics();
-            try {
-                redrawAll(g);
-            } finally {
-                g.dispose();
+            if (hasBufferedImage()) {
+                final Graphics g = createBufferGraphics();
+                try {
+                    redrawAll(g);
+                } finally {
+                    g.dispose();
+                }
             }
         }
     }
@@ -559,6 +554,17 @@ public abstract class AbstractGUIMap extends GUIElement {
      */
     public int getOffsetY() {
         return offsetY;
+    }
+
+    /**
+     * {@inheritDoc}
+     */
+    @Override
+    public void updateResolution(final int screenWidth, final int screenHeight) {
+        super.updateResolution(screenWidth, screenHeight);
+        playerX = getWidth()/2-tileSize/2;
+        playerY = getHeight()/2-tileSize/2;
+        setMapSize(mapWidth, mapHeight);
     }
 
 }

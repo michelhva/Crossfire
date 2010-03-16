@@ -107,6 +107,7 @@ import com.realtime.crossfire.jxclient.skin.factory.DialogFactory;
 import com.realtime.crossfire.jxclient.skin.factory.TextButtonFactory;
 import com.realtime.crossfire.jxclient.skin.skin.DefaultJXCSkin;
 import com.realtime.crossfire.jxclient.skin.skin.Dialogs;
+import com.realtime.crossfire.jxclient.skin.skin.Expression;
 import com.realtime.crossfire.jxclient.skin.skin.Extent;
 import com.realtime.crossfire.jxclient.skin.skin.JXCSkin;
 import com.realtime.crossfire.jxclient.skin.skin.JXCSkinCache;
@@ -2018,11 +2019,12 @@ public class JXCSkinLoader {
      * @return the extent
      * @throws IOException if the extent cannot be parsed
      */
-    private Extent parseExtent(@NotNull final String[] args, final int index) throws IOException {
-        final int x = expressionParser.parseInt(args[index]);
-        final int y = expressionParser.parseInt(args[index+1]);
-        final int w = expressionParser.parseInt(args[index+2]);
-        final int h = expressionParser.parseInt(args[index+3]);
+    @NotNull
+    private static Extent parseExtent(final String[] args, final int index) throws IOException {
+        final Expression x = ExpressionParser.parseExpression(args[index]);
+        final Expression y = ExpressionParser.parseExpression(args[index+1]);
+        final Expression w = ExpressionParser.parseExpression(args[index+2]);
+        final Expression h = ExpressionParser.parseExpression(args[index+3]);
         return new Extent(x, y, w, h);
     }
 
