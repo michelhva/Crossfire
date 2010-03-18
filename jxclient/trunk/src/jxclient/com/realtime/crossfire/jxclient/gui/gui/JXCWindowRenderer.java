@@ -55,18 +55,25 @@ import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 
 /**
+ * Renders a {@link Gui} instance into a {@link JFrame}.
  * @author Andreas Kirschbaum
  */
 public class JXCWindowRenderer {
 
+    /**
+     * The associated window.
+     */
     @NotNull
     private final JFrame frame;
 
+    /**
+     * The {@link MouseTracker} instance.
+     */
     @NotNull
     private final MouseListener mouseTracker;
 
     /**
-     * The semaphore used to synchronized map model updates and map view
+     * The semaphore used to synchronize map model updates and map view
      * redraws.
      */
     @NotNull
@@ -78,9 +85,15 @@ public class JXCWindowRenderer {
     @Nullable
     private final Writer debugScreen;
 
+    /**
+     * The used {@link GraphicsEnvironment}.
+     */
     @NotNull
     private final GraphicsEnvironment graphicsEnvironment;
 
+    /**
+     * The used {@link GraphicsDevice}.
+     */
     @NotNull
     private final GraphicsDevice graphicsDevice;
 
@@ -90,14 +103,24 @@ public class JXCWindowRenderer {
     @NotNull
     private final DisplayMode defaultDisplayMode;
 
+    /**
+     * The current {@link BufferStrategy}. Set to <code>null</code> until
+     * {@link #setResolution(Resolution, boolean)} has been called.
+     */
     @Nullable
     private BufferStrategy bufferStrategy = null;
 
     @Nullable
     private DisplayMode oldDisplayMode = null;
 
+    /**
+     * The width of the client area in pixels.
+     */
     private int windowWidth = 0;
 
+    /**
+     * The height of the client area in pixels.
+     */
     private int windowHeight = 0;
 
     /**
@@ -123,6 +146,9 @@ public class JXCWindowRenderer {
      */
     private boolean currentGuiChanged = false;
 
+    /**
+     * The currently displayed {@link Gui}.
+     */
     @NotNull
     private Gui currentGui;
 
@@ -398,9 +424,9 @@ public class JXCWindowRenderer {
             debugScreenWrite("setResolution: maximal window dimension="+maxDimension);
             if (resolution.getWidth() > maxDimension.width || resolution.getHeight() > maxDimension.height) {
                 /*
-                                frame.dispose();
-                                debugScreenWrite("setResolution: failure");
-                                return false;
+                frame.dispose();
+                debugScreenWrite("setResolution: failure");
+                return false;
                 */
                 debugScreenWrite("setResolution: window size exceeds maximum allowed size, ignoring");
             }
@@ -462,6 +488,9 @@ public class JXCWindowRenderer {
         return new Dimension(maxWidth, maxHeight);
     }
 
+    /**
+     * Ends rendering and reverts the display settings.
+     */
     public void endRendering() {
         final GraphicsEnvironment ge = GraphicsEnvironment.getLocalGraphicsEnvironment();
         final GraphicsDevice gd = ge.getDefaultScreenDevice();
@@ -474,6 +503,9 @@ public class JXCWindowRenderer {
         gd.setFullScreenWindow(null);
     }
 
+    /**
+     * Redraws the current gui.
+     */
     public void redrawGUI() {
         if (inhibitPaintMapUpdate || inhibitPaintIconified) {
             skippedPaint = true;
@@ -520,6 +552,10 @@ public class JXCWindowRenderer {
         }
     }
 
+    /**
+     * Sets a gui to display and clears the display.
+     * @param gui the gui to set
+     */
     public void clearGUI(@NotNull final Gui gui) {
         setCurrentGui(gui);
         for (int ig = 0; ig < 3; ig++) {
@@ -639,6 +675,10 @@ public class JXCWindowRenderer {
         };
     }
 
+    /**
+     * Sets the {@link Gui} to display.
+     * @param gui the gui to display
+     */
     public void setCurrentGui(@NotNull final Gui gui) {
         currentGui = gui;
         currentGuiChanged = true;
@@ -939,7 +979,7 @@ public class JXCWindowRenderer {
 
     /**
      * Returns the width of the client area.
-     * @return the width of the client area
+     * @return the width in pixels
      */
     public int getWindowWidth() {
         return windowWidth;
@@ -947,7 +987,7 @@ public class JXCWindowRenderer {
 
     /**
      * Returns the height of the client area.
-     * @return the height of the client area
+     * @return the height in pixels
      */
     public int getWindowHeight() {
         return windowHeight;
