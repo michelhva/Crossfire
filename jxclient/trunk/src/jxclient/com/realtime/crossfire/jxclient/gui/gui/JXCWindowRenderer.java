@@ -489,12 +489,7 @@ public class JXCWindowRenderer {
      * Ends rendering and reverts the display settings.
      */
     public void endRendering() {
-        final GraphicsEnvironment ge = GraphicsEnvironment.getLocalGraphicsEnvironment();
-        final GraphicsDevice gd = ge.getDefaultScreenDevice();
-        debugScreenWrite("setResolution: resetting screen resolution to "+defaultDisplayMode.getWidth()+"x"+defaultDisplayMode.getHeight());
-        gd.setDisplayMode(defaultDisplayMode);
-        debugScreenWrite("endRendering: leaving full-screen mode");
-        gd.setFullScreenWindow(null);
+        setResolution(new Resolution(true, defaultDisplayMode.getWidth(), defaultDisplayMode.getHeight()), false);
     }
 
     /**
