@@ -113,7 +113,8 @@ public class GUIDialogTitle extends GUIPicture {
      * @param e The destination point.
      */
     private void moveTo(@NotNull final MouseEvent e) {
-        if (offset == null) {
+        final Point tmpOffset = offset;
+        if (tmpOffset == null) {
             return;
         }
 
@@ -124,8 +125,8 @@ public class GUIDialogTitle extends GUIPicture {
         }
 
         final Point point = e.getLocationOnScreen();
-        final int newX = Math.max(Math.min(point.x+offset.x, windowRenderer.getWindowWidth()-gui.getWidth()), 0);
-        final int newY = Math.max(Math.min(point.y+offset.y, windowRenderer.getWindowHeight()-gui.getHeight()), 0);
+        final int newX = Math.max(Math.min(point.x+tmpOffset.x, windowRenderer.getWindowWidth()-gui.getWidth()), 0);
+        final int newY = Math.max(Math.min(point.y+tmpOffset.y, windowRenderer.getWindowHeight()-gui.getHeight()), 0);
         gui.setPosition(newX, newY);
     }
 
