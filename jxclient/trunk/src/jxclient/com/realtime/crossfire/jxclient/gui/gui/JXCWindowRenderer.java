@@ -383,7 +383,9 @@ public class JXCWindowRenderer {
             graphicsDevice.setFullScreenWindow(frame);
             isFullScreen = true;
 
-            if (!resolution.equalsDisplayMode(currentDisplayMode)) {
+            if (resolution.equalsDisplayMode(currentDisplayMode)) {
+                debugScreenWrite("setResolution: requested resolution matches screen resolution");
+            } else {
                 if (!graphicsDevice.isDisplayChangeSupported()) {
                     debugScreenWrite("setResolution: screen resolution change is not supported");
                     graphicsDevice.setFullScreenWindow(null);
@@ -406,8 +408,6 @@ public class JXCWindowRenderer {
                     debugScreenWrite("setResolution: failure");
                     return false;
                 }
-            } else {
-                debugScreenWrite("setResolution: requested resolution matches screen resolution");
             }
         } else {
             debugScreenWrite("setResolution: windowed mode requested");
