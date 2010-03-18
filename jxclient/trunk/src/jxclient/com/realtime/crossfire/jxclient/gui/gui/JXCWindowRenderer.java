@@ -110,9 +110,6 @@ public class JXCWindowRenderer {
     @Nullable
     private BufferStrategy bufferStrategy = null;
 
-    @Nullable
-    private DisplayMode oldDisplayMode = null;
-
     /**
      * The width of the client area in pixels.
      */
@@ -494,11 +491,8 @@ public class JXCWindowRenderer {
     public void endRendering() {
         final GraphicsEnvironment ge = GraphicsEnvironment.getLocalGraphicsEnvironment();
         final GraphicsDevice gd = ge.getDefaultScreenDevice();
-        if (oldDisplayMode != null) {
-            debugScreenWrite("setResolution: resetting screen resolution to "+oldDisplayMode.getWidth()+"x"+oldDisplayMode.getHeight());
-            gd.setDisplayMode(oldDisplayMode);
-            oldDisplayMode = null;
-        }
+        debugScreenWrite("setResolution: resetting screen resolution to "+defaultDisplayMode.getWidth()+"x"+defaultDisplayMode.getHeight());
+        gd.setDisplayMode(defaultDisplayMode);
         debugScreenWrite("endRendering: leaving full-screen mode");
         gd.setFullScreenWindow(null);
     }
