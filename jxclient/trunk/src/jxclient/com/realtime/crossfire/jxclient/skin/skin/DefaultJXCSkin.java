@@ -485,6 +485,10 @@ public class DefaultJXCSkin implements JXCSkin {
             guiElement.updateResolution(screenWidth, screenHeight);
         }
 
+        for (final Gui dialog : dialogs) {
+            dialog.updateResolution(screenWidth, screenHeight);
+        }
+
         if (tooltipLabel != null) {
             tooltipLabel.updateResolution(screenWidth, screenHeight);
         }

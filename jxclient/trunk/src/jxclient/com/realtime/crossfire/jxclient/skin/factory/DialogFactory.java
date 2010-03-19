@@ -29,6 +29,7 @@ import com.realtime.crossfire.jxclient.gui.gui.JXCWindowRenderer;
 import com.realtime.crossfire.jxclient.gui.gui.TooltipManager;
 import com.realtime.crossfire.jxclient.gui.label.Alignment;
 import com.realtime.crossfire.jxclient.gui.label.GUIOneLineLabel;
+import com.realtime.crossfire.jxclient.skin.skin.Expression;
 import com.realtime.crossfire.jxclient.skin.skin.Extent;
 import java.awt.Color;
 import java.awt.Font;
@@ -234,35 +235,28 @@ public class DialogFactory {
      * @return The gui elements comprising the new dialog.
      */
     @NotNull
-    public Iterable<GUIElement> newDialog(@NotNull final TooltipManager tooltipManager, @NotNull final JXCWindowRenderer windowRenderer, @NotNull final GUIElementListener elementListener, @NotNull final String name, final int w, final int h, @NotNull final String title) {
-        if (w <= sizeW+sizeE) {
-            throw new IllegalArgumentException("dialog height ("+w+") is smaller than heights of N and S ("+sizeW+"+"+sizeE+")");
-        }
-        if (h <= sizeN+sizeS) {
-            throw new IllegalArgumentException("dialog width ("+h+") is smaller than heights of W and E ("+sizeN+"+"+sizeS+")");
-        }
-        if (w > sizeW+contentWidth+sizeE) {
-            throw new IllegalArgumentException("dialog width ("+w+") is wider than W+C+E ("+sizeW+"+"+contentWidth+"+"+sizeE+")");
-        }
-        if (h > sizeN+contentHeight+sizeS) {
-            throw new IllegalArgumentException("dialog height ("+h+") is taller than N+C+S ("+sizeN+"+"+contentHeight+"+"+sizeS+")");
-        }
-
+    public Iterable<GUIElement> newDialog(@NotNull final TooltipManager tooltipManager, @NotNull final JXCWindowRenderer windowRenderer, @NotNull final GUIElementListener elementListener, @NotNull final String name, @NotNull final Expression w, @NotNull final Expression h, @NotNull final String title) {
         final int titleHeight = title.length() > 0 ? 18 : 0;
         final Collection<GUIElement> result = new ArrayList<GUIElement>();
+        final Expression zeroExpression = new Expression(0, 0, 0);
+        final Expression sizeNExpression = new Expression(sizeN, 0, 0);
+        final Expression sizeSExpression = new Expression(sizeS, 0, 0);
+        final Expression sizeWExpression = new Expression(sizeW, 0, 0);
+        final Expression sizeEExpression = new Expression(sizeE, 0, 0);
+        final Expression titleHeightExpression = new Expression(titleHeight, 0, 0);
         result.add(new GUIPicture(tooltipManager, elementListener, name+"_nw", new Extent(0, 0, sizeW, sizeN), frameNW, alpha));
-        result.add(new GUIPicture(tooltipManager, elementListener, name+"_n", new Extent(sizeW, 0, w-sizeW-sizeE, sizeN), frameN, alpha));
-        result.add(new GUIPicture(tooltipManager, elementListener, name+"_ne", new Extent(w-sizeE, 0, sizeE, sizeN), frameNE, alpha));
-        result.add(new GUIPicture(tooltipManager, elementListener, name+"_w", new Extent(0, sizeN, sizeW, h-sizeN-sizeS), frameW, alpha));
-        result.add(new GUIPicture(tooltipManager, elementListener, name+"_c", new Extent(sizeW, sizeN+titleHeight, w-sizeW-sizeE, h-sizeN-sizeS-titleHeight), frameC, alpha));
-        result.add(new GUIPicture(tooltipManager, elementListener, name+"_e", new Extent(w-sizeE, sizeN, sizeE, h-sizeN-sizeS), frameE, alpha));
-        result.add(new GUIPicture(tooltipManager, elementListener, name+"_sw", new Extent(0, h-sizeS, sizeW, sizeS), frameSW, alpha));
-        result.add(new GUIPicture(tooltipManager, elementListener, name+"_s", new Extent(sizeW, h-sizeS, w-sizeW-sizeE, sizeS), frameS, alpha));
-        result.add(new GUIPicture(tooltipManager, elementListener, name+"_se", new Extent(w-sizeE, h-sizeS, sizeE, sizeS), frameSE, alpha));
+        result.add(new GUIPicture(tooltipManager, elementListener, name+"_n", new Extent(sizeWExpression, zeroExpression, w.addConstant(-sizeW-sizeE), sizeNExpression), frameN, alpha));
+        result.add(new GUIPicture(tooltipManager, elementListener, name+"_ne", new Extent(w.addConstant(-sizeE), zeroExpression, sizeEExpression, sizeNExpression), frameNE, alpha));
+        result.add(new GUIPicture(tooltipManager, elementListener, name+"_w", new Extent(zeroExpression, sizeNExpression, sizeWExpression, h.addConstant(-sizeN-sizeS)), frameW, alpha));
+        result.add(new GUIPicture(tooltipManager, elementListener, name+"_c", new Extent(sizeWExpression, sizeNExpression.addConstant(titleHeight), w.addConstant(-sizeW-sizeE), h.addConstant(-sizeN-sizeS-titleHeight)), frameC, alpha));
+        result.add(new GUIPicture(tooltipManager, elementListener, name+"_e", new Extent(w.addConstant(-sizeE), sizeNExpression, sizeEExpression, h.addConstant(-sizeN-sizeS)), frameE, alpha));
+        result.add(new GUIPicture(tooltipManager, elementListener, name+"_sw", new Extent(zeroExpression, h.addConstant(-sizeS), sizeWExpression, sizeSExpression), frameSW, alpha));
+        result.add(new GUIPicture(tooltipManager, elementListener, name+"_s", new Extent(sizeWExpression, h.addConstant(-sizeS), w.addConstant(-sizeW-sizeE), sizeSExpression), frameS, alpha));
+        result.add(new GUIPicture(tooltipManager, elementListener, name+"_se", new Extent(w.addConstant(-sizeE), h.addConstant(-sizeS), sizeEExpression, sizeSExpression), frameSE, alpha));
         if (titleHeight > 0) {
-            result.add(new GUIDialogTitle(tooltipManager, windowRenderer, elementListener, name+"_t", new Extent(sizeW, sizeN, w-sizeW-sizeE, titleHeight), frameC, alpha));
+            result.add(new GUIDialogTitle(tooltipManager, windowRenderer, elementListener, name+"_t", new Extent(sizeWExpression, sizeNExpression, w.addConstant(-sizeW-sizeE), titleHeightExpression), frameC, alpha));
             if (!title.equals("_")) {
-                final GUIElement titleLabel = new GUIOneLineLabel(tooltipManager, elementListener, name+"_title", new Extent(sizeW, sizeN, w-sizeW-sizeE, titleHeight), null, titleFont, titleColor, titleBackgroundColor, Alignment.LEFT, " "+title);
+                final GUIElement titleLabel = new GUIOneLineLabel(tooltipManager, elementListener, name+"_title", new Extent(sizeWExpression, sizeNExpression, w.addConstant(-sizeW-sizeE), titleHeightExpression), null, titleFont, titleColor, titleBackgroundColor, Alignment.LEFT, " "+title);
                 result.add(titleLabel);
                 titleLabel.setIgnore();
             }

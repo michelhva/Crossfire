@@ -44,6 +44,17 @@ public class GUIPicture extends GUIElement {
     private static final long serialVersionUID = 1;
 
     /**
+     * The picture to paint.
+     */
+    @NotNull
+    private final BufferedImage image;
+
+    /**
+     * The transparency value.
+     */
+    private final float alpha;
+
+    /**
      * Create a new instance.
      * @param tooltipManager the tooltip manager to update
      * @param elementListener the element listener to notify
@@ -54,16 +65,8 @@ public class GUIPicture extends GUIElement {
      */
     public GUIPicture(@NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final String name, @NotNull final Extent extent, @NotNull final BufferedImage image, final float alpha) {
         super(tooltipManager, elementListener, name, extent, alpha < 1F ? Transparency.TRANSLUCENT : image.getTransparency());
-        updateResolutionConstant();
-        synchronized (bufferedImageSync) {
-            final Graphics2D g = createBufferGraphics();
-            try {
-                g.setComposite(AlphaComposite.getInstance(AlphaComposite.SRC_OVER, alpha));
-                g.drawImage(image, 0, 0, image.getWidth(), image.getHeight(), null);
-            } finally {
-                g.dispose();
-            }
-        }
+        this.image = image;
+        this.alpha = alpha;
     }
 
     /**
@@ -79,6 +82,23 @@ public class GUIPicture extends GUIElement {
      */
     @Override
     protected void render(@NotNull final Graphics2D g) {
+    }
+
+    /**
+     * {@inheritDoc}
+     */
+    @Override
+    public void updateResolution(final int screenWidth, final int screenHeight) {
+        super.updateResolution(screenWidth, screenHeight);
+        synchronized (bufferedImageSync) {
+            final Graphics2D g = createBufferGraphics();
+            try {
+                g.setComposite(AlphaComposite.getInstance(AlphaComposite.SRC_OVER, alpha));
+                g.drawImage(image, 0, 0, image.getWidth(), image.getHeight(), null);
+            } finally {
+                g.dispose();
+            }
+        }
     }
 
 }
