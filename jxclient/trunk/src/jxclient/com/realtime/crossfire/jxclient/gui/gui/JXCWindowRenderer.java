@@ -489,7 +489,9 @@ public class JXCWindowRenderer {
      * Ends rendering and reverts the display settings.
      */
     public void endRendering() {
-        setResolution(new Resolution(true, defaultDisplayMode.getWidth(), defaultDisplayMode.getHeight()), false);
+        if (isFullScreen) {
+            setResolution(new Resolution(true, defaultDisplayMode.getWidth(), defaultDisplayMode.getHeight()), false);
+        }
     }
 
     /**
