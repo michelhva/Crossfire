@@ -958,21 +958,17 @@ public class JXCSkinLoader {
         }
 
         final String name = args[1];
-        final int x = expressionParser.parseInt(args[2]);
-        final int y = expressionParser.parseInt(args[3]);
-        final int w = expressionParser.parseInt(args[4]);
-        final int h = expressionParser.parseInt(args[5]);
+        final Extent extent = parseExtent(args, 2);
         final boolean saveDialog = NumberParser.parseBoolean(args[6]);
         final String title = ParseUtils.parseText(args, 7, lnr);
         assert dialogFactory != null;
-        for (final GUIElement element : dialogFactory.newDialog(tooltipManager, windowRenderer, elementListener, name, w, h, title)) {
+        for (final GUIElement element : dialogFactory.newDialog(tooltipManager, windowRenderer, elementListener, name, extent.getWExpression(), extent.getHExpression(), title)) {
             insertGuiElement(element);
         }
         if (saveDialog) {
             gui.setName(dialogName);
         }
-        gui.setSize(w, h);
-        gui.setPosition(x, y);
+        gui.setExtent(extent);
     }
 
     /**

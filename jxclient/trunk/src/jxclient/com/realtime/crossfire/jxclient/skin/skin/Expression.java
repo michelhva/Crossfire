@@ -101,4 +101,14 @@ public class Expression {
         return (value*factor+1)/2;
     }
 
+    /**
+     * Returns this expression plus a constant value.
+     * @param value the constant value
+     * @return the new expression
+     */
+    @NotNull
+    public Expression addConstant(final int value) {
+        return new Expression(constant+value, widthFactor, heightFactor);
+    }
+
 }

@@ -28,6 +28,7 @@ import com.realtime.crossfire.jxclient.gui.commands.CommandCallback;
 import com.realtime.crossfire.jxclient.gui.keybindings.KeyBindings;
 import com.realtime.crossfire.jxclient.gui.textinput.GUIText;
 import com.realtime.crossfire.jxclient.gui.textinput.KeyListener;
+import com.realtime.crossfire.jxclient.skin.skin.Extent;
 import java.awt.Color;
 import java.awt.Component;
 import java.awt.Graphics;
@@ -125,6 +126,12 @@ public class Gui {
     private String name = null;
 
     /**
+     * The extent of this dialog, or <code>null</code>.
+     */
+    @Nullable
+    private Extent extent = null;
+
+    /**
      * Whether the state (position or size) has changed.
      */
     private boolean stateChanged = false;
@@ -155,6 +162,14 @@ public class Gui {
      */
     public void setName(@NotNull final String name) {
         this.name = name;
+    }
+
+    /**
+     * Sets the extent of this dialog.
+     * @param extent the extent
+     */
+    public void setExtent(@NotNull final Extent extent) {
+        this.extent = extent;
     }
 
     /**
@@ -712,6 +727,19 @@ public class Gui {
     @Override
     public String toString() {
         return (name == null ? "" : name)+"["+w+"x"+h+"]";
+    }
+
+    /**
+     * Updates the location and size to a new screen resolution.
+     * @param screenWidth the new screen width
+     * @param screenHeight the new screen height
+     */
+    public void updateResolution(final int screenWidth, final int screenHeight) {
+        final Extent tmpExtent = extent;
+        if (tmpExtent != null) {
+            setSize(tmpExtent.getW(screenWidth, screenHeight), tmpExtent.getH(screenWidth, screenHeight));
+            setPosition(tmpExtent.getX(screenWidth, screenHeight), tmpExtent.getY(screenWidth, screenHeight));
+        }
     }
 
 }

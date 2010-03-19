@@ -174,4 +174,22 @@ public class Extent {
         return h.evaluateConstant();
     }
 
+    /**
+     * Returns the width.
+     * @return the width
+     */
+    @NotNull
+    public Expression getWExpression() {
+        return w;
+    }
+
+    /**
+     * Returns the height.
+     * @return the height
+     */
+    @NotNull
+    public Expression getHExpression() {
+        return h;
+    }
+
 }
