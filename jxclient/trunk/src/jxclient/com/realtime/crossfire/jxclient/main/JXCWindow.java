@@ -687,7 +687,7 @@ public class JXCWindow extends JFrame {
              */
             @Override
             public void componentResized(final ComponentEvent e) {
-                windowRenderer.updateWindowSize();
+                windowRenderer.updateWindowSize(getWidth(), getHeight());
                 guiManager.updateWindowSize(new Dimension(windowRenderer.getWindowWidth(), windowRenderer.getWindowHeight()));
             }
 
@@ -746,13 +746,6 @@ public class JXCWindow extends JFrame {
         guiManager.unsetSkin();
         optionManager.loadOptions();
         keyHandler.setKeyBindings(skin.getDefaultKeyBindings());
-        if (!windowRenderer.setResolution(skin.getResolution(), fullScreen)) {
-            if (!windowRenderer.setResolution(skin.getResolution(), false)) {
-                System.err.println("cannot create window with resolution "+skin.getResolution());
-                System.exit(1);
-                throw new AssertionError();
-            }
-        }
 
         final Dimension minSize = skin.getMinResolution().asDimension();
         final Dimension maxSize = skin.getMaxResolution().asDimension();
@@ -763,6 +756,15 @@ public class JXCWindow extends JFrame {
         maxSize.height += insets.top+insets.bottom;
         setMinimumSize(minSize);
         setMaximumSize(maxSize);
+
+        if (!windowRenderer.setResolution(skin.getResolution(), fullScreen, minSize.equals(maxSize))) {
+            if (!windowRenderer.setResolution(skin.getResolution(), false, minSize.equals(maxSize))) {
+                System.err.println("cannot create window with resolution "+skin.getResolution());
+                System.exit(1);
+                throw new AssertionError();
+            }
+        }
+
         guiManager.setSkin(skin);
         guiManager.updateWindowSize(getSize());
 

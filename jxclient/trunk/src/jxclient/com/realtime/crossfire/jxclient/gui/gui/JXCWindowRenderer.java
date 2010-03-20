@@ -105,7 +105,7 @@ public class JXCWindowRenderer {
 
     /**
      * The current {@link BufferStrategy}. Set to <code>null</code> until
-     * {@link #setResolution(Resolution, boolean)} has been called.
+     * {@link #setResolution(Resolution, boolean, boolean)} has been called.
      */
     @Nullable
     private BufferStrategy bufferStrategy = null;
@@ -348,9 +348,10 @@ public class JXCWindowRenderer {
      * the window might be invisible.
      * @param resolution the resolution to switch to
      * @param fullScreen whether full-screen mode should be used
+     * @param fixedSize whether the window should have fixed size
      * @return whether the resolution has been changed
      */
-    public boolean setResolution(@NotNull final Resolution resolution, final boolean fullScreen) {
+    public boolean setResolution(@NotNull final Resolution resolution, final boolean fullScreen, final boolean fixedSize) {
         debugScreenWrite("setResolution: resolution="+resolution+", fullScreen="+fullScreen);
 
         final DisplayMode currentDisplayMode = graphicsDevice.getDisplayMode();
@@ -376,7 +377,7 @@ public class JXCWindowRenderer {
         if (fullScreen) {
             final Dimension dimension = new Dimension(resolution.getWidth(), resolution.getHeight());
             debugScreenWrite("setResolution: full-screen requested, dimension="+dimension);
-            frame.getRootPane().setPreferredSize(dimension);
+            frame.setPreferredSize(dimension);
             frame.setResizable(false);
             frame.setUndecorated(true);
 
@@ -422,8 +423,15 @@ public class JXCWindowRenderer {
         } else {
             debugScreenWrite("setResolution: windowed mode requested");
             frame.setUndecorated(false);
-            frame.setResizable(true);
-            frame.getRootPane().setPreferredSize(resolution.asDimension());
+            frame.setResizable(!fixedSize);
+            final Point centerPoint = graphicsEnvironment.getCenterPoint();
+            debugScreenWrite("setResolution: screen center point is "+centerPoint);
+            final Dimension dimension = resolution.asDimension();
+            final int x = centerPoint.x-dimension.width/2;
+            final int y = centerPoint.y-dimension.height/2;
+            if (!wasDisplayed) {
+                frame.setLocation(x, y); // try to minimize display movements
+            }
             frame.setVisible(true);
             final Insets frameInsets = frame.getInsets();
             debugScreenWrite("setResolution: frame insets="+frameInsets);
@@ -439,21 +447,18 @@ public class JXCWindowRenderer {
                 debugScreenWrite("setResolution: window size exceeds maximum allowed size, ignoring");
             }
 
-            final Dimension dimension = new Dimension(resolution.getWidth(), resolution.getHeight());
-            debugScreenWrite("setResolution: setting window size to "+dimension);
-            frame.getRootPane().setPreferredSize(dimension);
-            if (!wasDisplayed) {
+            if (wasDisplayed) {
+                debugScreenWrite("setResolution: resizing window to "+dimension);
+                frame.setPreferredSize(dimension);
+                frame.setSize(dimension);
+            } else {
                 wasDisplayed = true;
-                final Point centerPoint = graphicsEnvironment.getCenterPoint();
-                debugScreenWrite("setResolution: screen center point is "+centerPoint);
-                final Point point = new Point(centerPoint.x-dimension.width/2-frameInsets.left, centerPoint.y-dimension.height/2-frameInsets.top);
-                debugScreenWrite("setResolution: moving window to "+point);
-                frame.setLocation(point);
+                final int x2 = x-frameInsets.left;
+                final int y2 = y-frameInsets.top;
+                debugScreenWrite("setResolution: moving window to "+x2+"/"+y2+" "+dimension.width+"x"+dimension.height);
+                frame.setBounds(x2, y2, dimension.width, dimension.height);
             }
         }
-
-        debugScreenWrite("setResolution: packing frame");
-        frame.pack();
 
         debugScreenWrite("setResolution: creating buffer strategy");
         frame.createBufferStrategy(2);
@@ -465,12 +470,12 @@ public class JXCWindowRenderer {
         offsetY = insets.top;
         offsetW = insets.left+insets.right;
         offsetH = insets.top+insets.bottom;
-        debugScreenWrite("setResolution: offset="+offsetX+"x"+offsetY+" "+offsetW+"x"+offsetH);
+        debugScreenWrite("setResolution: offset="+offsetX+"x"+offsetY+" "+offsetW+"x"+offsetH+" "+insets);
 
         debugScreenWrite("setResolution: requesting focus");
         frame.requestFocusInWindow();
 
-        updateWindowSize();
+        updateWindowSize(resolution.getWidth()+offsetW, resolution.getHeight()+offsetH);
 
         debugScreenWrite("setResolution: success");
         return true;
@@ -478,11 +483,13 @@ public class JXCWindowRenderer {
 
     /**
      * Updates the window size for rendering from the main window size.
+     * @param windowWidth the window width including insets
+     * @param windowHeight the window height including insets
      */
-    public void updateWindowSize() {
-        windowWidth = frame.getWidth()-offsetW;
-        windowHeight = frame.getHeight()-offsetH;
-        debugScreenWrite("updateWindowSize: gui size="+windowWidth+"x"+windowHeight);
+    public void updateWindowSize(final int windowWidth, final int windowHeight) {
+        this.windowWidth = windowWidth-offsetW;
+        this.windowHeight = windowHeight-offsetH;
+        debugScreenWrite("updateWindowSize: gui size="+this.windowWidth+"x"+this.windowHeight);
     }
 
     /**
@@ -548,7 +555,7 @@ public class JXCWindowRenderer {
      */
     public void endRendering() {
         if (isFullScreen) {
-            setResolution(new Resolution(true, defaultDisplayMode.getWidth(), defaultDisplayMode.getHeight()), false);
+            setResolution(new Resolution(true, defaultDisplayMode.getWidth(), defaultDisplayMode.getHeight()), false, true);
         }
     }
 
