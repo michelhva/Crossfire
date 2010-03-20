@@ -108,8 +108,8 @@ public class GUILabelStats2 extends GUIOneLineLabel {
         /** {@inheritDoc} */
         @Override
         public void statChanged(final int statnr, final int value) {
-            if (statCurrent == statnr) {
-                updateStat(value);
+            if (statnr == statCurrent || statnr == statBase || statnr == statRace) {
+                updateStat();
             }
         }
 
@@ -181,14 +181,14 @@ public class GUILabelStats2 extends GUIOneLineLabel {
         this.stats = stats;
         this.stats.addCrossfireStatsListener(statsListener);
         color = colorNormal;
-        updateStat(stats.getStat(statCurrent));
+        updateStat();
     }
 
     /**
      * Updates the values to reflect the current stat value.
-     * @param currValue the current stat value
      */
-    private void updateStat(final int currValue) {
+    private void updateStat() {
+        final int currValue = stats.getStat(statCurrent);
         final int baseValue = stats.getStat(statBase);
         final int raceValue = stats.getStat(statRace);
         if (baseValue == 0 && raceValue == 0) {
@@ -199,20 +199,25 @@ public class GUILabelStats2 extends GUIOneLineLabel {
             return;
         }
 
+        final Color newColor;
         if (currValue < baseValue) {
-            color = colorDepleted;
+            newColor = colorDepleted;
         } else if (currValue == baseValue) {
             if (baseValue < raceValue) {
-                color = colorUpgradable;
+                newColor = colorUpgradable;
             } else {
-                color = GUILabelStats2.super.getTextColor();
+                newColor = GUILabelStats2.super.getTextColor();
             }
         } else {
             if (baseValue < raceValue) {
-                color = colorBoostedUpgradable;
+                newColor = colorBoostedUpgradable;
             } else {
-                color = colorBoosted;
+                newColor = colorBoosted;
             }
+        }
+        if (color != newColor) {
+            color = newColor;
+            setChanged();
         }
         setText(String.valueOf(currValue));
 
