@@ -74,12 +74,6 @@ public class DefaultJXCSkin implements JXCSkin {
     private Resolution maxResolution = new Resolution(true, 1, 1);
 
     /**
-     * The selected resolution.
-     */
-    @NotNull
-    private final Resolution selectedResolution;
-
-    /**
      * The current screen width.
      */
     private int currentScreenWidth = 0;
@@ -178,13 +172,11 @@ public class DefaultJXCSkin implements JXCSkin {
      * Creates a new instance.
      * @param defaultKeyBindings the default key bindings
      * @param optionManager the option manager to use
-     * @param selectedResolution the resolution to use
      * @param dialogs the dialogs to use
      */
-    public DefaultJXCSkin(@NotNull final KeyBindings defaultKeyBindings, @NotNull final OptionManager optionManager, @NotNull final Resolution selectedResolution, @NotNull final Dialogs dialogs) {
+    public DefaultJXCSkin(@NotNull final KeyBindings defaultKeyBindings, @NotNull final OptionManager optionManager, @NotNull final Dialogs dialogs) {
         this.defaultKeyBindings = defaultKeyBindings;
         this.optionManager = optionManager;
-        this.selectedResolution = selectedResolution;
         this.dialogs = dialogs;
     }
 
@@ -214,15 +206,6 @@ public class DefaultJXCSkin implements JXCSkin {
         this.skinName = skinName;
         this.minResolution = minResolution;
         this.maxResolution = maxResolution;
-    }
-
-    /**
-     * {@inheritDoc}
-     */
-    @NotNull
-    @Override
-    public Resolution getResolution() {
-        return selectedResolution;
     }
 
     /**
