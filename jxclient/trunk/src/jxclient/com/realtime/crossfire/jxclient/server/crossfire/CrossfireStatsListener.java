@@ -187,6 +187,76 @@ public interface CrossfireStatsListener {
     int CS_STAT_SPELL_DENY = 31;
 
     /**
+     * The race's maximum strength primary stat.
+     */
+    int CS_STAT_RACE_STR = 32;
+
+    /**
+     * The race's maximum intelligence primary stat.
+     */
+    int CS_STAT_RACE_INT = 33;
+
+    /**
+     * The race's maximum wisdom primary stat.
+     */
+    int CS_STAT_RACE_WIS = 34;
+
+    /**
+     * The race's maximum dexterity primary stat.
+     */
+    int CS_STAT_RACE_DEX = 35;
+
+    /**
+     * The race's maximum constitution primary stat.
+     */
+    int CS_STAT_RACE_CON = 36;
+
+    /**
+     * The race's maximum charisma primary stat.
+     */
+    int CS_STAT_RACE_CHA = 37;
+
+    /**
+     * The race's maximum power primary stat.
+     */
+    int CS_STAT_RACE_POW = 38;
+
+    /**
+     * The strength primary stat without boosts or depletions.
+     */
+    int CS_STAT_BASE_STR = 39;
+
+    /**
+     * The integer primary stat without boosts or depletions.
+     */
+    int CS_STAT_BASE_INT = 40;
+
+    /**
+     * The wisdom primary stat without boosts or depletions.
+     */
+    int CS_STAT_BASE_WIS = 41;
+
+    /**
+     * The dexterity primary stat without boosts or depletions.
+     */
+    int CS_STAT_BASE_DEX = 42;
+
+    /**
+     * The constitution primary stat without boosts or depletions.
+     */
+    int CS_STAT_BASE_CON = 43;
+
+    /**
+     * The charisma primary stat without boosts or depletions.
+     */
+    int CS_STAT_BASE_CHA = 44;
+
+    /**
+     * The power primary stat without boosts or depletions.
+     */
+    int CS_STAT_BASE_POW = 45;
+
+    /**
      * Beginning index of the resistances.
      */
     int CS_STAT_RESIST_START = 100;

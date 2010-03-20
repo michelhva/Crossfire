@@ -409,6 +409,10 @@ public class DefaultScriptProcess extends Thread implements ScriptProcess {
             commandSent("request weight "+stats.getStat(CrossfireStatsListener.CS_STAT_WEIGHT_LIM)+" "+itemSet.getPlayer().getWeight());
         } else if (parms.equals("stat stats")) {
             commandSent("request stat stats "+stats.getStat(CrossfireStatsListener.CS_STAT_STR)+" "+stats.getStat(CrossfireStatsListener.CS_STAT_CON)+" "+stats.getStat(CrossfireStatsListener.CS_STAT_DEX)+" "+stats.getStat(CrossfireStatsListener.CS_STAT_INT)+" "+stats.getStat(CrossfireStatsListener.CS_STAT_WIS)+" "+stats.getStat(CrossfireStatsListener.CS_STAT_POW)+" "+stats.getStat(CrossfireStatsListener.CS_STAT_CHA));
+        } else if (parms.equals("stat stats_race")) {
+            commandSent("request stat stats_race "+stats.getStat(CrossfireStatsListener.CS_STAT_RACE_STR)+" "+stats.getStat(CrossfireStatsListener.CS_STAT_RACE_CON)+" "+stats.getStat(CrossfireStatsListener.CS_STAT_RACE_DEX)+" "+stats.getStat(CrossfireStatsListener.CS_STAT_RACE_INT)+" "+stats.getStat(CrossfireStatsListener.CS_STAT_RACE_WIS)+" "+stats.getStat(CrossfireStatsListener.CS_STAT_RACE_POW)+" "+stats.getStat(CrossfireStatsListener.CS_STAT_RACE_CHA));
+        } else if (parms.equals("stat stats_base")) {
+            commandSent("request stat stats_base "+stats.getStat(CrossfireStatsListener.CS_STAT_BASE_STR)+" "+stats.getStat(CrossfireStatsListener.CS_STAT_BASE_CON)+" "+stats.getStat(CrossfireStatsListener.CS_STAT_BASE_DEX)+" "+stats.getStat(CrossfireStatsListener.CS_STAT_BASE_INT)+" "+stats.getStat(CrossfireStatsListener.CS_STAT_BASE_WIS)+" "+stats.getStat(CrossfireStatsListener.CS_STAT_BASE_POW)+" "+stats.getStat(CrossfireStatsListener.CS_STAT_BASE_CHA));
         } else if (parms.equals("stat cmbt")) {
             commandSent("request stat cmbt "+stats.getStat(CrossfireStatsListener.CS_STAT_WC)+" "+stats.getStat(CrossfireStatsListener.CS_STAT_AC)+" "+stats.getStat(CrossfireStatsListener.CS_STAT_DAM)+" "+stats.getStat(CrossfireStatsListener.CS_STAT_SPEED)+" "+stats.getStat(CrossfireStatsListener.CS_STAT_WEAP_SP));
         } else if (parms.equals("stat hp")) {

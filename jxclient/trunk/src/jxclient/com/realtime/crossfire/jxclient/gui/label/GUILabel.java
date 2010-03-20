@@ -112,7 +112,7 @@ public abstract class GUILabel extends AbstractLabel {
 
         g.setBackground(new Color(0, 0, 0, 0.0f));
         g.setFont(textFont);
-        g.setColor(textColor);
+        g.setColor(getTextColor());
         final RectangularShape rect = textFont.getStringBounds(text, g.getFontRenderContext());
         final int y = y0+(int)Math.round((h0-rect.getMaxY()-rect.getMinY()))/2;
         switch (textAlignment) {
@@ -139,6 +139,15 @@ public abstract class GUILabel extends AbstractLabel {
     @Nullable
     protected Font getTextFont() {
         return textFont;
+    }
+
+    /**
+     * Returns the text color.
+     * @return the text color
+     */
+    @NotNull
+    protected Color getTextColor() {
+        return textColor;
     }
 
 }

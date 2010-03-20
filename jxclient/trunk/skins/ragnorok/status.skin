@@ -20,13 +20,13 @@ label_text label_int    10 180  90  16 font_label BLACK Intelligence:
 label_text label_wis    10 200  90  16 font_label BLACK Wisdom:
 label_text label_pow    10 220  90  16 font_label BLACK Power:
 label_text label_cha    10 240  90  16 font_label BLACK Charisma:
-label_stat stat_str    100 120  40  16 font_label BLACK STR RIGHT
-label_stat stat_dex    100 140  40  16 font_label BLACK DEX RIGHT
-label_stat stat_con    100 160  40  16 font_label BLACK CON RIGHT
-label_stat stat_int    100 180  40  16 font_label BLACK INT RIGHT
-label_stat stat_wis    100 200  40  16 font_label BLACK WIS RIGHT
-label_stat stat_pow    100 220  40  16 font_label BLACK POW RIGHT
-label_stat stat_cha    100 240  40  16 font_label BLACK CHA RIGHT
+label_stat2 stat_str   100 120  40  16 font_label BLACK #FF8000 #FF0000 #C0C000 #FF00FF STR STR_BASE STR_RACE RIGHT
+label_stat2 stat_dex   100 140  40  16 font_label BLACK #FF8000 #FF0000 #C0C000 #FF00FF DEX DEX_BASE DEX_RACE RIGHT
+label_stat2 stat_con   100 160  40  16 font_label BLACK #FF8000 #FF0000 #C0C000 #FF00FF CON CON_BASE CON_RACE RIGHT
+label_stat2 stat_int   100 180  40  16 font_label BLACK #FF8000 #FF0000 #C0C000 #FF00FF INT INT_BASE INT_RACE RIGHT
+label_stat2 stat_wis   100 200  40  16 font_label BLACK #FF8000 #FF0000 #C0C000 #FF00FF WIS WIS_BASE WIS_RACE RIGHT
+label_stat2 stat_pow   100 220  40  16 font_label BLACK #FF8000 #FF0000 #C0C000 #FF00FF POW POW_BASE POW_RACE RIGHT
+label_stat2 stat_cha   100 240  40  16 font_label BLACK #FF8000 #FF0000 #C0C000 #FF00FF CHA CHA_BASE CHA_RACE RIGHT
 
 label_text label_hp    230  50  50  16 font_label BLACK HP:
 label_text label_sp    230  70  50  16 font_label BLACK Mana:
