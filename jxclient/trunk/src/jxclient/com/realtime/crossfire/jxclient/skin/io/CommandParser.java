@@ -87,12 +87,6 @@ public class CommandParser {
     private final FloorView floorView;
 
     /**
-     * The {@link ExpressionParser} instance to use.
-     */
-    @NotNull
-    private final ExpressionParser expressionParser;
-
-    /**
      * The defined GUI elements.
      */
     @NotNull
@@ -102,13 +96,11 @@ public class CommandParser {
      * Creates a new instance.
      * @param dialogs the dialogs instance to use
      * @param floorView the floor view to use
-     * @param expressionParser the expression parser instance to use
      * @param definedGUIElements the defined GUI elements
      */
-    public CommandParser(@NotNull final Dialogs dialogs, @NotNull final FloorView floorView, @NotNull final ExpressionParser expressionParser, @NotNull final JXCSkinCache<GUIElement> definedGUIElements) {
+    public CommandParser(@NotNull final Dialogs dialogs, @NotNull final FloorView floorView, @NotNull final JXCSkinCache<GUIElement> definedGUIElements) {
         this.dialogs = dialogs;
         this.floorView = floorView;
-        this.expressionParser = expressionParser;
         this.definedGUIElements = definedGUIElements;
     }
 
@@ -241,8 +233,8 @@ public class CommandParser {
                 throw new IOException("syntax error");
             }
 
-            final int diffLines = expressionParser.parseInt(args[argc]);
-            final int diffElements = expressionParser.parseInt(args[argc+1]);
+            final int diffLines = ExpressionParser.parseInt(args[argc]);
+            final int diffElements = ExpressionParser.parseInt(args[argc+1]);
             if (diffLines == 0 && diffElements == 0) {
                 throw new IOException("Invalid zero scroll distance");
             }
@@ -257,7 +249,7 @@ public class CommandParser {
                 throw new IOException("syntax error");
             }
 
-            final int distance = expressionParser.parseInt(args[argc]);
+            final int distance = ExpressionParser.parseInt(args[argc]);
             if (distance == 0) {
                 throw new IOException("Invalid zero scroll distance");
             }
@@ -272,7 +264,7 @@ public class CommandParser {
                 throw new IOException("syntax error");
             }
 
-            final int distance = expressionParser.parseInt(args[argc]);
+            final int distance = ExpressionParser.parseInt(args[argc]);
             if (distance == 0) {
                 throw new IOException("Invalid zero scroll distance");
             }

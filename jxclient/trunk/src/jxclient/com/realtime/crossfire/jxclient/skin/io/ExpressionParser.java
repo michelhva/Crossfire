@@ -22,7 +22,6 @@
 package com.realtime.crossfire.jxclient.skin.io;
 
 import com.realtime.crossfire.jxclient.skin.skin.Expression;
-import com.realtime.crossfire.jxclient.util.Resolution;
 import java.io.IOException;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
@@ -55,17 +54,9 @@ public class ExpressionParser {
     private static final Pattern PATTERN_EXPR = Pattern.compile("([0-9]+|"+WIDTH+"|"+HEIGHT+"|"+WIDTH+"/2|"+HEIGHT+"/2)([-+])(.+)");
 
     /**
-     * The current resolution for {@link #WIDTH} and {@link #HEIGHT} constants.
+     * Private constructor to prevent instantiation.
      */
-    @NotNull
-    private final Resolution resolution;
-
-    /**
-     * Creates a new instance.
-     * @param resolution the current resolution
-     */
-    public ExpressionParser(@NotNull final Resolution resolution) {
-        this.resolution = resolution;
+    private ExpressionParser() {
     }
 
     /**
@@ -75,8 +66,8 @@ public class ExpressionParser {
      * @return the integer value
      * @throws IOException if a parsing error occurs
      */
-    public int parseInt(@NotNull final String str) throws IOException {
-        return parseExpression(str).evaluate(resolution.getWidth(), resolution.getHeight());
+    public static int parseInt(@NotNull final String str) throws IOException {
+        return parseExpression(str).evaluateConstant();
     }
 
     /**

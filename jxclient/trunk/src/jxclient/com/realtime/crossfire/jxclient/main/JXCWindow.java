@@ -819,7 +819,15 @@ public class JXCWindow extends JFrame {
         final Commands commands = guiManager.getCommands();
         final GuiFactory guiFactory = new GuiFactory(debugGui ? mouseTracker : null, commands, guiManager.getCommandCallback(), macros);
         final CommandCallback commandCallback = guiManager.getCommandCallback();
-        return newSkin.load(skinSource, server, guiStateManager, guiManager.getTooltipManager(), windowRenderer, windowRenderer.getElementListener(), metaserverModel, commandQueue, resolution, shortcutsManager.getShortcuts(), commands, currentSpellManager, commandCallback, macros, guiFactory);
+        final JXCSkin skin = newSkin.load(skinSource, server, guiStateManager, guiManager.getTooltipManager(), windowRenderer, windowRenderer.getElementListener(), metaserverModel, commandQueue, shortcutsManager.getShortcuts(), commands, currentSpellManager, commandCallback, macros, guiFactory);
+        if (skin.getMinResolution().getWidth() > resolution.getWidth() || skin.getMinResolution().getHeight() > resolution.getHeight()) {
+            throw new JXCSkinException("resolution "+resolution+" is not supported by this skin");
+        }
+        if (resolution.getWidth() > skin.getMaxResolution().getWidth() || resolution.getHeight() > skin.getMaxResolution().getHeight()) {
+            throw new JXCSkinException("resolution "+resolution+" is not supported by this skin");
+        }
+
+        return skin;
     }
 
     /**
