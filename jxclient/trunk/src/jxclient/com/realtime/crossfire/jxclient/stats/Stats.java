@@ -143,6 +143,20 @@ public class Stats {
             case CS_STAT_POW:
             case CS_STAT_GRACE:
             case CS_STAT_MAXGRACE:
+            case CS_STAT_RACE_STR:
+            case CS_STAT_RACE_INT:
+            case CS_STAT_RACE_WIS:
+            case CS_STAT_RACE_DEX:
+            case CS_STAT_RACE_CON:
+            case CS_STAT_RACE_CHA:
+            case CS_STAT_RACE_POW:
+            case CS_STAT_BASE_STR:
+            case CS_STAT_BASE_INT:
+            case CS_STAT_BASE_WIS:
+            case CS_STAT_BASE_DEX:
+            case CS_STAT_BASE_CON:
+            case CS_STAT_BASE_CHA:
+            case CS_STAT_BASE_POW:
                 setStat(stat, param);
                 if (stat == CS_STAT_LEVEL) {
                     calcExperienceToNextLevel();

@@ -65,6 +65,7 @@ import com.realtime.crossfire.jxclient.gui.label.GUIHTMLLabel;
 import com.realtime.crossfire.jxclient.gui.label.GUILabelMessage;
 import com.realtime.crossfire.jxclient.gui.label.GUILabelQuery;
 import com.realtime.crossfire.jxclient.gui.label.GUILabelStats;
+import com.realtime.crossfire.jxclient.gui.label.GUILabelStats2;
 import com.realtime.crossfire.jxclient.gui.label.GUIMultiLineLabel;
 import com.realtime.crossfire.jxclient.gui.label.GUIOneLineLabel;
 import com.realtime.crossfire.jxclient.gui.label.GUISpellLabel;
@@ -575,6 +576,8 @@ public class JXCSkinLoader {
                             parseLabelText(args, tooltipManager, elementListener, lnr);
                         } else if (gui != null && args[0].equals("label_stat")) {
                             parseLabelStat(args, tooltipManager, elementListener);
+                        } else if (gui != null && args[0].equals("label_stat2")) {
+                            parseLabelStat2(args, tooltipManager, elementListener);
                         } else if (gui != null && args[0].equals("label_spell")) {
                             parseLabelSpell(args, tooltipManager, elementListener, currentSpellManager);
                         } else if (gui != null && args[0].equals("log_label")) {
@@ -1440,6 +1443,35 @@ public class JXCSkinLoader {
         final int stat = ParseUtils.parseStat(args[8]);
         final Alignment alignment = NumberParser.parseEnum(Alignment.class, args[9], "text alignment");
         final GUIElement element = new GUILabelStats(tooltipManager, elementListener, name, extent, font, color, new Color(0, 0, 0, 0F), stat, alignment, stats);
+        insertGuiElement(element);
+    }
+
+    /**
+     * Parses a "label_stat2" command.
+     * @param args the command arguments
+     * @param tooltipManager the tooltip manager to update
+     * @param elementListener the element listener to notify
+     * @throws IOException if the command cannot be parsed
+     * @throws JXCSkinException if the command cannot be parsed
+     */
+    private void parseLabelStat2(@NotNull final String[] args, @NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener) throws IOException, JXCSkinException {
+        if (args.length != 16) {
+            throw new IOException("syntax error");
+        }
+
+        final String name = args[1];
+        final Extent extent = parseExtent(args, 2);
+        final Font font = definedFonts.lookup(args[6]);
+        final Color colorNormal = ParseUtils.parseColor(args[7]);
+        final Color colorUpgradable = ParseUtils.parseColor(args[8]);
+        final Color colorDepleted = ParseUtils.parseColor(args[9]);
+        final Color colorBoosted = ParseUtils.parseColor(args[10]);
+        final Color colorBoostedUpgradable = ParseUtils.parseColor(args[11]);
+        final int statCurrent = ParseUtils.parseStat(args[12]);
+        final int statBase = ParseUtils.parseStat(args[13]);
+        final int statRace = ParseUtils.parseStat(args[14]);
+        final Alignment alignment = NumberParser.parseEnum(Alignment.class, args[15], "text alignment");
+        final GUIElement element = new GUILabelStats2(tooltipManager, elementListener, name, extent, font, colorNormal, colorUpgradable, colorDepleted, colorBoosted, colorBoostedUpgradable, new Color(0, 0, 0, 0F), statCurrent, statBase, statRace, alignment, stats);
         insertGuiElement(element);
     }
 

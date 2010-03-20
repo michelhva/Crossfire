@@ -2004,6 +2004,20 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
                         case CrossfireStatsListener.CS_STAT_GRACE:
                         case CrossfireStatsListener.CS_STAT_MAXGRACE:
                         case CrossfireStatsListener.CS_STAT_FLAGS:
+                        case CrossfireStatsListener.CS_STAT_RACE_STR:
+                        case CrossfireStatsListener.CS_STAT_RACE_INT:
+                        case CrossfireStatsListener.CS_STAT_RACE_WIS:
+                        case CrossfireStatsListener.CS_STAT_RACE_DEX:
+                        case CrossfireStatsListener.CS_STAT_RACE_CON:
+                        case CrossfireStatsListener.CS_STAT_RACE_CHA:
+                        case CrossfireStatsListener.CS_STAT_RACE_POW:
+                        case CrossfireStatsListener.CS_STAT_BASE_STR:
+                        case CrossfireStatsListener.CS_STAT_BASE_INT:
+                        case CrossfireStatsListener.CS_STAT_BASE_WIS:
+                        case CrossfireStatsListener.CS_STAT_BASE_DEX:
+                        case CrossfireStatsListener.CS_STAT_BASE_CON:
+                        case CrossfireStatsListener.CS_STAT_BASE_CHA:
+                        case CrossfireStatsListener.CS_STAT_BASE_POW:
                             final short int2Param = (short)(((packet[pos++]&0xFF)<<8)|(packet[pos++]&0xFF));
                             if (debugProtocol != null) {
                                 debugProtocol.debugProtocolWrite("recv stats stat="+stat+" int2="+int2Param+"="+(int2Param&0xFFFF));
@@ -2493,7 +2507,7 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
      */
     private void cmdVersion(final int csval, final int scval, @NotNull final String vinfo) {
         setClientSocketState(ClientSocketState.VERSION, ClientSocketState.SETUP);
-        sendSetup("want_pickup 1", "faceset 0", "sound 3", "sound2 3", "exp64 1", "map2cmd 1", "darkness 1", "newmapcmd 1", "facecache 1", "extendedTextInfos 1", "itemcmd 2", "spellmon 1", "tick 1");
+        sendSetup("want_pickup 1", "faceset 0", "sound 3", "sound2 3", "exp64 1", "map2cmd 1", "darkness 1", "newmapcmd 1", "facecache 1", "extendedTextInfos 1", "itemcmd 2", "spellmon 1", "tick 1", "extended_stats 1");
         for (final CrossfireStatsListener crossfireStatsListener : crossfireStatsListeners) {
             crossfireStatsListener.setSimpleWeaponSpeed(scval >= 1029);
         }
@@ -2823,6 +2837,8 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
             } else if (option.equals("faceset")) {
                 // ignore: we do not care about the face set
             } else if (option.equals("want_pickup")) {
+                // ignore: we do not care whether this option has been ignored
+            } else if (option.equals("extended_stats")) {
                 // ignore: we do not care whether this option has been ignored
             } else {
                 System.err.println("Warning: ignoring unknown setup option from server: "+option+"="+value);
