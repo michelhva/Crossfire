@@ -28,16 +28,6 @@ package com.realtime.crossfire.jxclient.server.crossfire;
 public class CrossfireMap2Command {
 
     /**
-     * The total number of map layers to display.
-     */
-    public static final int NUM_LAYERS = 10;
-
-    /**
-     * Offset for coordinate values in map2 command.
-     */
-    public static final int MAP2_COORD_OFFSET = 15;
-
-    /**
      * Private constructor to prevent instantiation.
      */
     private CrossfireMap2Command() {
