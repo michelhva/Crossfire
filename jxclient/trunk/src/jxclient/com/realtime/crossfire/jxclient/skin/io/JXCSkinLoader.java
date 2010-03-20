@@ -267,12 +267,6 @@ public class JXCSkinLoader {
     private ItemPainter defaultItemPainter = null;
 
     /**
-     * The {@link ExpressionParser} for parsing integer constant expressions.
-     */
-    @NotNull
-    private ExpressionParser expressionParser;
-
-    /**
      * The {@link CommandParser} for parsing commands.
      */
     @NotNull
@@ -347,7 +341,6 @@ public class JXCSkinLoader {
      * @param elementListener the element listener to notify
      * @param metaserverModel the metaserver mode to use
      * @param commandQueue the command queue to use
-     * @param resolution the preferred screen resolution
      * @param shortcuts the shortcuts to use
      * @param commands the commands instance to use
      * @param currentSpellManager the current spell manager to use
@@ -358,7 +351,7 @@ public class JXCSkinLoader {
      * @throws JXCSkinException if the skin cannot be loaded
      */
     @NotNull
-    public JXCSkin load(@NotNull final JXCSkinSource skinSource, @NotNull final CrossfireServerConnection crossfireServerConnection, @NotNull final GuiStateManager guiStateManager, @NotNull final TooltipManager tooltipManager, @NotNull final JXCWindowRenderer windowRenderer, @NotNull final GUIElementListener elementListener, @NotNull final MetaserverModel metaserverModel, @NotNull final CommandQueue commandQueue, @NotNull final Resolution resolution, @NotNull final Shortcuts shortcuts, @NotNull final Commands commands, @NotNull final CurrentSpellManager currentSpellManager, @NotNull final CommandCallback commandCallback, @NotNull final Macros macros, @NotNull final GuiFactory guiFactory) throws JXCSkinException {
+    public JXCSkin load(@NotNull final JXCSkinSource skinSource, @NotNull final CrossfireServerConnection crossfireServerConnection, @NotNull final GuiStateManager guiStateManager, @NotNull final TooltipManager tooltipManager, @NotNull final JXCWindowRenderer windowRenderer, @NotNull final GUIElementListener elementListener, @NotNull final MetaserverModel metaserverModel, @NotNull final CommandQueue commandQueue, @NotNull final Shortcuts shortcuts, @NotNull final Commands commands, @NotNull final CurrentSpellManager currentSpellManager, @NotNull final CommandCallback commandCallback, @NotNull final Macros macros, @NotNull final GuiFactory guiFactory) throws JXCSkinException {
         imageParser = new ImageParser(skinSource);
         fontParser = new FontParser(skinSource);
 
@@ -375,10 +368,9 @@ public class JXCSkinLoader {
             throw new JXCSkinException(ex.getMessage());
         }
 
-        expressionParser = new ExpressionParser(resolution);
         final Dialogs dialogs = new Dialogs(guiFactory);
         gaugeUpdaterParser = new GaugeUpdaterParser(stats, itemSet, skillSet);
-        commandParser = new CommandParser(dialogs, floorView, expressionParser, definedGUIElements);
+        commandParser = new CommandParser(dialogs, floorView, definedGUIElements);
         skin = new DefaultJXCSkin(defaultKeyBindings, optionManager, dialogs);
         @Nullable JXCSkin skinToDetach = skin;
         try {
@@ -421,13 +413,6 @@ public class JXCSkinLoader {
             if (skinToDetach != null) {
                 skinToDetach.detach();
             }
-        }
-
-        if (skin.getMinResolution().getWidth() > resolution.getWidth() || skin.getMinResolution().getHeight() > resolution.getHeight()) {
-            throw new JXCSkinException("resolution "+resolution+" is not supported by this skin");
-        }
-        if (resolution.getWidth() > skin.getMaxResolution().getWidth() || resolution.getHeight() > skin.getMaxResolution().getHeight()) {
-            throw new JXCSkinException("resolution "+resolution+" is not supported by this skin");
         }
 
         return skin;
@@ -733,8 +718,8 @@ public class JXCSkinLoader {
             assert args.length >= 14;
             font = definedFonts.lookup(args[10]);
             color = ParseUtils.parseColor(args[11]);
-            textX = expressionParser.parseInt(args[12]);
-            textY = expressionParser.parseInt(args[13]);
+            textX = ExpressionParser.parseInt(args[12]);
+            textY = ExpressionParser.parseInt(args[13]);
             label = ParseUtils.parseText(args, 14, lnr);
         }
         insertGuiElement(new GUIButton(tooltipManager, elementListener, name, extent, upImage, downImage, label, font, color, textX, textY, autoRepeat, commandList));
@@ -837,7 +822,7 @@ public class JXCSkinLoader {
         final Font font = definedFonts.lookup(args[8]);
         final Color inactiveColor = ParseUtils.parseColor(args[9]);
         final Color activeColor = ParseUtils.parseColor(args[10]);
-        final int margin = expressionParser.parseInt(args[11]);
+        final int margin = ExpressionParser.parseInt(args[11]);
         insertGuiElement(new GUICommandText(commandCallback, tooltipManager, elementListener, name, extent, activeImage, inactiveImage, font, inactiveColor, activeColor, margin, "", commands, false));
     }
 
@@ -1214,8 +1199,8 @@ public class JXCSkinLoader {
 
         final String name = args[1];
         final Extent extent = parseExtent(args, 2);
-        final int cellWidth = expressionParser.parseInt(args[6]);
-        final int cellHeight = expressionParser.parseInt(args[7]);
+        final int cellWidth = ExpressionParser.parseInt(args[6]);
+        final int cellHeight = ExpressionParser.parseInt(args[7]);
         final AbstractLabel selectedItem = args[8].equals("null") ? null : guiElementParser.lookupLabelElement(args[8]);
 
         assert defaultItemPainter != null;
@@ -1256,7 +1241,7 @@ public class JXCSkinLoader {
         final String type = args[1];
         final String name = args[2];
         final Extent extent = parseExtent(args, 3);
-        final int index = expressionParser.parseInt(args[7]);
+        final int index = ExpressionParser.parseInt(args[7]);
         final GUIElement element;
         if (type.equals("floor")) {
             if (args.length != 8) {
@@ -1545,7 +1530,7 @@ public class JXCSkinLoader {
         }
 
         final String name = args[1];
-        final int index = expressionParser.parseInt(args[2]);
+        final int index = ExpressionParser.parseInt(args[2]);
         final Color color = ParseUtils.parseColor(args[3]);
         final Object element = definedGUIElements.lookup(name);
         if (!(element instanceof GUIMessageLog)) {
@@ -1635,7 +1620,7 @@ public class JXCSkinLoader {
         }
 
         final String name = args[1];
-        final int tileSize = expressionParser.parseInt(args[2]);
+        final int tileSize = ExpressionParser.parseInt(args[2]);
         final Extent extent = parseExtent(args, 3);
 
         final FacesProvider facesProvider = facesProviderFactory.getFacesProvider(tileSize);
@@ -1664,8 +1649,8 @@ public class JXCSkinLoader {
 
         final String name = args[1];
         final Extent extent = parseExtent(args, 2);
-        final int cellWidth = expressionParser.parseInt(args[6]);
-        final int cellHeight = expressionParser.parseInt(args[7]);
+        final int cellWidth = ExpressionParser.parseInt(args[6]);
+        final int cellHeight = ExpressionParser.parseInt(args[7]);
         final BufferedImage tcpImage = args[8].equals("null") ? null : imageParser.getImage(args[8]);
         final Font font = definedFonts.lookup(args[9]);
         final GUIText text = args[10].equals("null") ? null : guiElementParser.lookupTextElement(args[10]);
@@ -1722,7 +1707,7 @@ public class JXCSkinLoader {
         final Font font = definedFonts.lookup(args[8]);
         final Color inactiveColor = ParseUtils.parseColor(args[9]);
         final Color activeColor = ParseUtils.parseColor(args[10]);
-        final int margin = expressionParser.parseInt(args[11]);
+        final int margin = ExpressionParser.parseInt(args[11]);
         insertGuiElement(new GUIQueryText(server, commandCallback, tooltipManager, elementListener, name, extent, activeImage, inactiveImage, font, inactiveColor, activeColor, margin, "", false));
     }
 
@@ -1811,7 +1796,7 @@ public class JXCSkinLoader {
             throw new IOException("syntax error");
         }
 
-        skin.setNumLookObjects(expressionParser.parseInt(args[1]));
+        skin.setNumLookObjects(ExpressionParser.parseInt(args[1]));
     }
 
     /**
@@ -1883,7 +1868,7 @@ public class JXCSkinLoader {
         final Font font = definedFonts.lookup(args[8]);
         final Color inactiveColor = ParseUtils.parseColor(args[9]);
         final Color activeColor = ParseUtils.parseColor(args[10]);
-        final int margin = expressionParser.parseInt(args[11]);
+        final int margin = ExpressionParser.parseInt(args[11]);
         final CommandList commandList = skin.getCommandList(args[12]);
         final boolean ignoreUpDown = NumberParser.parseBoolean(args[13]);
         insertGuiElement(new GUITextField(commandCallback, tooltipManager, elementListener, name, extent, activeImage, inactiveImage, font, inactiveColor, activeColor, margin, "", commandList, ignoreUpDown));
