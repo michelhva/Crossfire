@@ -361,7 +361,6 @@ public class JXCSkinLoader {
     public JXCSkin load(@NotNull final JXCSkinSource skinSource, @NotNull final CrossfireServerConnection crossfireServerConnection, @NotNull final GuiStateManager guiStateManager, @NotNull final TooltipManager tooltipManager, @NotNull final JXCWindowRenderer windowRenderer, @NotNull final GUIElementListener elementListener, @NotNull final MetaserverModel metaserverModel, @NotNull final CommandQueue commandQueue, @NotNull final Resolution resolution, @NotNull final Shortcuts shortcuts, @NotNull final Commands commands, @NotNull final CurrentSpellManager currentSpellManager, @NotNull final CommandCallback commandCallback, @NotNull final Macros macros, @NotNull final GuiFactory guiFactory) throws JXCSkinException {
         imageParser = new ImageParser(skinSource);
         fontParser = new FontParser(skinSource);
-        final Resolution selectedResolution = resolution;
 
         final Image nextGroupFace;
         try {
@@ -376,11 +375,11 @@ public class JXCSkinLoader {
             throw new JXCSkinException(ex.getMessage());
         }
 
-        expressionParser = new ExpressionParser(selectedResolution);
+        expressionParser = new ExpressionParser(resolution);
         final Dialogs dialogs = new Dialogs(guiFactory);
         gaugeUpdaterParser = new GaugeUpdaterParser(stats, itemSet, skillSet);
         commandParser = new CommandParser(dialogs, floorView, expressionParser, definedGUIElements);
-        skin = new DefaultJXCSkin(defaultKeyBindings, optionManager, selectedResolution, dialogs);
+        skin = new DefaultJXCSkin(defaultKeyBindings, optionManager, dialogs);
         @Nullable JXCSkin skinToDetach = skin;
         try {
             guiElementParser = new GuiElementParser(definedGUIElements);

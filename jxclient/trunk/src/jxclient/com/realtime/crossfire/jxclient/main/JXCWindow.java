@@ -757,9 +757,9 @@ public class JXCWindow extends JFrame {
         setMinimumSize(minSize);
         setMaximumSize(maxSize);
 
-        if (!windowRenderer.setResolution(skin.getResolution(), fullScreen, minSize.equals(maxSize))) {
-            if (!windowRenderer.setResolution(skin.getResolution(), false, minSize.equals(maxSize))) {
-                System.err.println("cannot create window with resolution "+skin.getResolution());
+        if (!windowRenderer.setResolution(resolution, fullScreen, minSize.equals(maxSize))) {
+            if (!windowRenderer.setResolution(resolution, false, minSize.equals(maxSize))) {
+                System.err.println("cannot create window with resolution "+resolution);
                 System.exit(1);
                 throw new AssertionError();
             }

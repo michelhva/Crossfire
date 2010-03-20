@@ -49,13 +49,6 @@ public interface JXCSkin extends Iterable<Gui> {
     String getSkinName();
 
     /**
-     * Returns the resolution of this skin.
-     * @return the resolution
-     */
-    @NotNull
-    Resolution getResolution();
-
-    /**
      * Returns the minimal resolution of this skin.
      * @return the minimal resolution
      */
