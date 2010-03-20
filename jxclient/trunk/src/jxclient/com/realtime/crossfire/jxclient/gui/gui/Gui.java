@@ -70,6 +70,12 @@ public class Gui {
     private final KeyBindings keyBindings;
 
     /**
+     * Whether this dialog is auto-sizing. Auto-sizing dialogs cannot be moved
+     * or resized manually.
+     */
+    private boolean autoSize = false;
+
+    /**
      * Whether this dialog is modal. Modal dialogs consume all key presses.
      */
     private boolean modal = false;
@@ -100,9 +106,10 @@ public class Gui {
     private boolean hasChangedElements = false;
 
     /**
-     * The x-offset for drawing gui elements inside this gui.
+     * The x-offset for drawing gui elements inside this gui. Set to
+     * <code>-1</code> if no initial position has been set.
      */
-    private int x = 0;
+    private int x = -1;
 
     /**
      * The y-offset for drawing gui elements inside this gui.
@@ -198,18 +205,38 @@ public class Gui {
      * @param y the y-coordinate
      */
     public void setPosition(final int x, final int y) {
-        if (w == 0 || h == 0) {
-            throw new IllegalStateException();
-        }
-
         if (this.x == x && this.y == y) {
             return;
+        }
+
+        if (w == 0 || h == 0) {
+            if (this.x >= 0 || x != 0 || y != 0) {
+                throw new IllegalStateException();
+            }
         }
 
         this.x = x;
         this.y = y;
         hasChangedElements = true;
         stateChanged = true;
+    }
+
+    /**
+     * Sets the auto-size state. Auto-size dialogs cannot be moved or resized
+     * manually.
+     * @param autoSize the new auto-size state
+     */
+    public void setAutoSize(final boolean autoSize) {
+        this.autoSize = autoSize;
+    }
+
+    /**
+     * Returns the auto-size state. Auto-size dialogs cannot be moved or
+     * resized manually.
+     * @return the auto-size state
+     */
+    public boolean isAutoSize() {
+        return autoSize;
     }
 
     /**
@@ -730,15 +757,21 @@ public class Gui {
     }
 
     /**
-     * Updates the location and size to a new screen resolution.
-     * @param screenWidth the new screen width
-     * @param screenHeight the new screen height
+     * Auto-resizes the dialog. Does nothing if this dialog is not auto-sizing.
+     * @param screenWidth the screen width
+     * @param screenHeight the screen height
      */
-    public void updateResolution(final int screenWidth, final int screenHeight) {
+    public void autoSize(final int screenWidth, final int screenHeight) {
+        if (!autoSize && x >= 0) {
+            return;
+        }
+
         final Extent tmpExtent = extent;
         if (tmpExtent != null) {
             setSize(tmpExtent.getW(screenWidth, screenHeight), tmpExtent.getH(screenWidth, screenHeight));
             setPosition(tmpExtent.getX(screenWidth, screenHeight), tmpExtent.getY(screenWidth, screenHeight));
+        } else if (x < 0) {
+            setPosition(0, 0);
         }
     }
 

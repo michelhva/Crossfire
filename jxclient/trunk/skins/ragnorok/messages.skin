@@ -1,4 +1,6 @@
 
+set_auto_size
+
 dialog border 4 HEIGHT-236 586 198 true
 dialog_hide START META LOGIN
 button button_close 564 6 16 16 close_up close_down false command_messages_close

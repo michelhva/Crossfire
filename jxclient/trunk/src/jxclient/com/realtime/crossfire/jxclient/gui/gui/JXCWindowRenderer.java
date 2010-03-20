@@ -190,6 +190,16 @@ public class JXCWindowRenderer {
     private int offsetY = 0;
 
     /**
+     * The x-difference between the visible window to the real window.
+     */
+    private int offsetW = 0;
+
+    /**
+     * The y-difference between the visible window and the real window.
+     */
+    private int offsetH = 0;
+
+    /**
      * Records whether full-screen mode is active.
      */
     private boolean isFullScreen = false;
@@ -412,7 +422,8 @@ public class JXCWindowRenderer {
         } else {
             debugScreenWrite("setResolution: windowed mode requested");
             frame.setUndecorated(false);
-            frame.setResizable(false);
+            frame.setResizable(true);
+            frame.getRootPane().setPreferredSize(resolution.asDimension());
             frame.setVisible(true);
             final Insets frameInsets = frame.getInsets();
             debugScreenWrite("setResolution: frame insets="+frameInsets);
@@ -452,17 +463,64 @@ public class JXCWindowRenderer {
         debugScreenWrite("setResolution: offset="+offsetX+"x"+offsetY);
         offsetX = insets.left;
         offsetY = insets.top;
-        debugScreenWrite("setResolution: offset="+offsetX+"x"+offsetY);
+        offsetW = insets.left+insets.right;
+        offsetH = insets.top+insets.bottom;
+        debugScreenWrite("setResolution: offset="+offsetX+"x"+offsetY+" "+offsetW+"x"+offsetH);
 
         debugScreenWrite("setResolution: requesting focus");
         frame.requestFocusInWindow();
 
-        windowWidth = resolution.getWidth();
-        windowHeight = resolution.getHeight();
-        debugScreenWrite("setResolution: gui size="+windowWidth+"x"+windowHeight);
+        updateWindowSize();
 
         debugScreenWrite("setResolution: success");
         return true;
+    }
+
+    /**
+     * Updates the window size for rendering from the main window size.
+     */
+    public void updateWindowSize() {
+        windowWidth = frame.getWidth()-offsetW;
+        windowHeight = frame.getHeight()-offsetH;
+        debugScreenWrite("updateWindowSize: gui size="+windowWidth+"x"+windowHeight);
+    }
+
+    /**
+     * Auto-resizes a dialog (or does nothing for non-auto-size dialogs). Then
+     * makes sure the dialog is fully visible.
+     * @param dialog the dialog to show
+     */
+    public void showDialogAuto(@NotNull final Gui dialog) {
+        dialog.autoSize(windowWidth, windowHeight);
+        showDialog(dialog);
+    }
+
+    /**
+     * Makes sure the dialog is fully visible.
+     * @param dialog the dialog to show
+     */
+    private void showDialog(@NotNull final Gui dialog) {
+        showDialog(dialog, dialog.getX(), dialog.getY());
+    }
+
+    /**
+     * Sets the position of a dialog but makes sure the dialog is fully
+     * visible.
+     * @param dialog the dialog to show
+     * @param x the dialog's x coordinate
+     * @param y the dialog's y coordinate
+     */
+    public void showDialog(@NotNull final Gui dialog, final int x, final int y) {
+        final int newX;
+        final int newY;
+        if (dialog.isAutoSize()) {
+            newX = x;
+            newY = y;
+        } else {
+            newX = Math.max(Math.min(x, windowWidth-dialog.getWidth()), 0);
+            newY = Math.max(Math.min(y, windowHeight-dialog.getHeight()), 0);
+        }
+        dialog.setPosition(newX, newY);
     }
 
     /**
@@ -816,6 +874,8 @@ public class JXCWindowRenderer {
         if (openDialogs.contains(dialog)) {
             return;
         }
+
+        showDialogAuto(dialog);
 
         final Point mouse = frame.getMousePosition(true);
         if (mouse == null) {

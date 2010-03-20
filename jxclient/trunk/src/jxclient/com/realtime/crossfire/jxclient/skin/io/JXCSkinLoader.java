@@ -613,6 +613,8 @@ public class JXCSkinLoader {
                             parseQueryText(args, server, commandCallback, tooltipManager, elementListener);
                         } else if (gui != null && args[0].equals("set_forced_active")) {
                             parseSetForcedActive(args, gui);
+                        } else if (gui != null && args[0].equals("set_auto_size")) {
+                            parseSetAutoSize(args, gui);
                         } else if (gui != null && args[0].equals("set_default")) {
                             parseSetDefault(args);
                         } else if (gui != null && args[0].equals("set_invisible")) {
@@ -1742,6 +1744,20 @@ public class JXCSkinLoader {
             throw new IOException("argument to set_forced_active must be an activatable gui element");
         }
         gui.setForcedActive((ActivatableGUIElement)forcedActive);
+    }
+
+    /**
+     * Parses a "set_auto_size" command.
+     * @param args the command arguments
+     * @param gui the gui to modify
+     * @throws IOException if the command cannot be parsed
+     */
+    private static void parseSetAutoSize(@NotNull final String[] args, @NotNull final Gui gui) throws IOException {
+        if (args.length != 1) {
+            throw new IOException("syntax error");
+        }
+
+        gui.setAutoSize(true);
     }
 
     /**

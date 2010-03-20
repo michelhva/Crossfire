@@ -119,15 +119,13 @@ public class GUIDialogTitle extends GUIPicture {
         }
 
         final Gui gui = getGui();
-        if (gui == null) {
+        if (gui == null || gui.isAutoSize()) {
             offset = null;
             return;
         }
 
         final Point point = e.getLocationOnScreen();
-        final int newX = Math.max(Math.min(point.x+tmpOffset.x, windowRenderer.getWindowWidth()-gui.getWidth()), 0);
-        final int newY = Math.max(Math.min(point.y+tmpOffset.y, windowRenderer.getWindowHeight()-gui.getHeight()), 0);
-        gui.setPosition(newX, newY);
+        windowRenderer.showDialog(gui, point.x+tmpOffset.x, point.y+tmpOffset.y);
     }
 
 }
