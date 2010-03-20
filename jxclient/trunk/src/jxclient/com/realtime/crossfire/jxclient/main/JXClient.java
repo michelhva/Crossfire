@@ -119,7 +119,7 @@ public class JXClient {
                             final InventoryView inventoryView = new InventoryView(itemSet, new InventoryComparator());
                             final FloorView floorView = new FloorView(itemSet);
                             new ItemsManager(server, facesManager, stats, skillSet, guiStateManager, itemSet);
-                            final JXCWindow window = new JXCWindow(terminateSync, server, semaphoreRedraw, options.isDebugGui(), debugKeyboardOutputStreamWriter, debugScreenOutputStreamWriter, options.getPrefs(), optionManager, metaserverModel, options.getResolution(), guiStateManager, experienceTable, skillSet, stats, facesManager, itemSet, inventoryView, floorView);
+                            final JXCWindow[] window = new JXCWindow[1];
                             new Metaserver(Filenames.getMetaserverCacheFile(), metaserverModel, guiStateManager);
                             final SoundManager soundManager = new SoundManager(guiStateManager);
                             try {
@@ -133,10 +133,11 @@ public class JXClient {
                                     /** {@inheritDoc} */
                                     @Override
                                     public void run() {
+                                        window[0] = new JXCWindow(terminateSync, server, semaphoreRedraw, options.isDebugGui(), debugKeyboardOutputStreamWriter, debugScreenOutputStreamWriter, options.getPrefs(), optionManager, metaserverModel, options.getResolution(), guiStateManager, experienceTable, skillSet, stats, facesManager, itemSet, inventoryView, floorView);
                                         new MusicWatcher(server, soundManager);
                                         new SoundWatcher(server, soundManager);
-                                        new StatsWatcher(stats, window.getWindowRenderer(), server, soundManager);
-                                        window.init(options.getSkin(), options.isFullScreen(), options.getServer());
+                                        new StatsWatcher(stats, window[0].getWindowRenderer(), server, soundManager);
+                                        window[0].init(options.getSkin(), options.isFullScreen(), options.getServer());
                                     }
                                 });
                                 terminateSync.wait();
@@ -145,7 +146,7 @@ public class JXClient {
                                 /** {@inheritDoc} */
                                 @Override
                                 public void run() {
-                                    window.term();
+                                    window[0].term();
                                     soundManager.shutdown();
                                 }
                             });
