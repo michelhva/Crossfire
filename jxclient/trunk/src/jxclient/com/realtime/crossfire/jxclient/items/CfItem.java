@@ -22,6 +22,7 @@
 package com.realtime.crossfire.jxclient.items;
 
 import com.realtime.crossfire.jxclient.faces.Face;
+import com.realtime.crossfire.jxclient.server.crossfire.messages.UpdItem;
 import javax.swing.event.EventListenerList;
 import org.jetbrains.annotations.NotNull;
 
@@ -147,46 +148,6 @@ public class CfItem {
      * The flags value for locked items.
      */
     public static final int F_LOCKED = 0x8000;
-
-    /**
-     * The update flags value for location updates.
-     */
-    public static final int UPD_LOCATION = 0x01;
-
-    /**
-     * The update flags value for flags updates.
-     */
-    public static final int UPD_FLAGS = 0x02;
-
-    /**
-     * The update flags value for weight updates.
-     */
-    public static final int UPD_WEIGHT = 0x04;
-
-    /**
-     * The update flags value for face updates.
-     */
-    public static final int UPD_FACE = 0x08;
-
-    /**
-     * The update flags value for name updates.
-     */
-    public static final int UPD_NAME = 0x10;
-
-    /**
-     * The update flags value for animation updates.
-     */
-    public static final int UPD_ANIM = 0x20;
-
-    /**
-     * The update flags value for animation speed updates.
-     */
-    public static final int UPD_ANIMSPEED = 0x40;
-
-    /**
-     * The update flags value for nrof updates.
-     */
-    public static final int UPD_NROF = 0x80;
 
     /**
      * The listeners to be notified.
@@ -451,25 +412,25 @@ public class CfItem {
      * @param nrof the new number of items
      */
     public void update(final int updateFlags, final int flags, final int weight, @NotNull final Face face, @NotNull final String name, @NotNull final String namePl, final int anim, final int animSpeed, final int nrof) {
-        if ((updateFlags&UPD_FLAGS) != 0) {
+        if ((updateFlags&UpdItem.UPD_FLAGS) != 0) {
             setFlags(flags);
         }
-        if ((updateFlags&UPD_WEIGHT) != 0) {
+        if ((updateFlags&UpdItem.UPD_WEIGHT) != 0) {
             setWeight(weight);
         }
-        if ((updateFlags&UPD_FACE) != 0) {
+        if ((updateFlags&UpdItem.UPD_FACE) != 0) {
             setFace(face);
         }
-        if ((updateFlags&UPD_NAME) != 0) {
+        if ((updateFlags&UpdItem.UPD_NAME) != 0) {
             setName(name, namePl);
         }
-        if ((updateFlags&UPD_ANIM) != 0) {
+        if ((updateFlags&UpdItem.UPD_ANIM) != 0) {
             setAnim(anim);
         }
-        if ((updateFlags&UPD_ANIMSPEED) != 0) {
+        if ((updateFlags&UpdItem.UPD_ANIMSPEED) != 0) {
             setAnimSpeed(animSpeed);
         }
-        if ((updateFlags&UPD_NROF) != 0) {
+        if ((updateFlags&UpdItem.UPD_NROF) != 0) {
             setNrOf(nrof);
         }
         fireModified();

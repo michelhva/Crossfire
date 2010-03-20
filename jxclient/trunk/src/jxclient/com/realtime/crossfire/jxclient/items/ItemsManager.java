@@ -27,6 +27,7 @@ import com.realtime.crossfire.jxclient.guistate.GuiStateManager;
 import com.realtime.crossfire.jxclient.server.crossfire.CrossfireServerConnection;
 import com.realtime.crossfire.jxclient.server.crossfire.CrossfireStatsListener;
 import com.realtime.crossfire.jxclient.server.crossfire.CrossfireUpdateItemListener;
+import com.realtime.crossfire.jxclient.server.crossfire.messages.UpdItem;
 import com.realtime.crossfire.jxclient.server.socket.ClientSocketState;
 import com.realtime.crossfire.jxclient.skills.SkillSet;
 import com.realtime.crossfire.jxclient.stats.Stats;
@@ -100,7 +101,7 @@ public class ItemsManager {
         @Override
         public void upditemReceived(final int flags, final int tag, final int valLocation, final int valFlags, final int valWeight, final int valFaceNum, @NotNull final String valName, @NotNull final String valNamePl, final int valAnim, final int valAnimSpeed, final int valNrof) {
             itemSet.updateItem(flags, tag, valLocation, valFlags, valWeight, facesManager.getFace(valFaceNum), valName, valNamePl, valAnim, valAnimSpeed, valNrof);
-            if ((flags&CfItem.UPD_WEIGHT) != 0) {
+            if ((flags&UpdItem.UPD_WEIGHT) != 0) {
                 final CfItem player = itemSet.getPlayer();
                 if (player != null && player.getTag() == tag) {
                     stats.setStat(CrossfireStatsListener.C_STAT_WEIGHT, valWeight);
