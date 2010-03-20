@@ -22,7 +22,7 @@
 package com.realtime.crossfire.jxclient.map;
 
 import com.realtime.crossfire.jxclient.faces.Face;
-import com.realtime.crossfire.jxclient.server.crossfire.CrossfireMap2Command;
+import com.realtime.crossfire.jxclient.server.crossfire.messages.Map2;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 
@@ -126,7 +126,7 @@ public class CfMap {
      */
     public void setDarkness(final int x, final int y, final int darkness) {
         if (expandTo(x, y).setDarkness(ox, oy, darkness)) {
-            for (int l = 0; l < CrossfireMap2Command.NUM_LAYERS; l++) {
+            for (int l = 0; l < Map2.NUM_LAYERS; l++) {
                 setFaceInternal(x, y, l, CfMapSquare.DEFAULT_FACE);
             }
         }
@@ -155,7 +155,7 @@ public class CfMap {
     public void setFace(final int x, final int y, final int layer, @Nullable final Face face) {
         if (expandTo(x, y).resetFogOfWar(ox, oy)) {
             setDarkness(x, y, CfMapSquare.DEFAULT_DARKNESS);
-            for (int l = 0; l < CrossfireMap2Command.NUM_LAYERS; l++) {
+            for (int l = 0; l < Map2.NUM_LAYERS; l++) {
                 setFaceInternal(x, y, l, l == layer ? face : CfMapSquare.DEFAULT_FACE);
             }
             dirty(x, y);
@@ -285,7 +285,7 @@ public class CfMap {
     public void clearSquare(final int x, final int y) {
         final CfMapPatch mapPatch = expandTo(x, y);
         mapPatch.clearSquare(ox, oy);
-        for (int layer = 0; layer < CrossfireMap2Command.NUM_LAYERS; layer++) {
+        for (int layer = 0; layer < Map2.NUM_LAYERS; layer++) {
             final Face face = mapPatch.getFace(ox, oy, layer);
             if (face != null) {
                 dirtyFace(x, y, layer, face);
