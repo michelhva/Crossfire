@@ -180,12 +180,12 @@ public class JXCWindowRenderer {
     private volatile boolean skippedPaint = false;
 
     /**
-     * The x-offset of of the visible window.
+     * The x-offset of the visible window.
      */
     private int offsetX = 0;
 
     /**
-     * The y-offset of of the visible window.
+     * The y-offset of the visible window.
      */
     private int offsetY = 0;
 
@@ -707,16 +707,16 @@ public class JXCWindowRenderer {
     }
 
     /**
-     * Return the x-offset of of the visible window.
-     * @return The x-offset of of the visible window.
+     * Return the x-offset of the visible window.
+     * @return The x-offset of the visible window.
      */
     public int getOffsetX() {
         return offsetX;
     }
 
     /**
-     * Return the y-offset of of the visible window.
-     * @return The y-offset of of the visible window.
+     * Return the y-offset of the visible window.
+     * @return The y-offset of the visible window.
      */
     public int getOffsetY() {
         return offsetY;
