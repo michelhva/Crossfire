@@ -314,7 +314,7 @@ public class GuiManager {
             final Dimension mapSize = skin.getMapSize();
             server.setPreferredMapSize(mapSize.width, mapSize.height);
             assert skin != null;
-            server.setNumLookObjects(skin.getNumLookObjects());
+            server.setPreferredNumLookObjects(skin.getNumLookObjects());
             server.addCrossfireDrawextinfoListener(crossfireDrawextinfoListener);
             windowRenderer.setGuiState(RendererGuiState.LOGIN);
             showGUIMain();
