@@ -2499,6 +2499,11 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
         }
     }
 
+    /**
+     * Requests a change of the map size from the server.
+     * @param mapWidth the map width to request
+     * @param mapHeight the map height to request
+     */
     private void negotiateMapSize(final int mapWidth, final int mapHeight) {
         if (debugProtocol != null) {
             debugProtocol.debugProtocolWrite("negotiateMapSize: "+mapWidth+"x"+mapHeight);
