@@ -22,13 +22,13 @@
 package com.realtime.crossfire.jxclient.map;
 
 import com.realtime.crossfire.jxclient.faces.Face;
-import com.realtime.crossfire.jxclient.server.crossfire.CrossfireMap2Command;
+import com.realtime.crossfire.jxclient.server.crossfire.messages.Map2;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 
 /**
  * Represents a square in a {@link CfMap}. A square comprises of {@link
- * CrossfireMap2Command#NUM_LAYERS} faces as well as a darkness value.
+ * Map2#NUM_LAYERS} faces as well as a darkness value.
  * <p/>
  * This class assumes that the "head" part of a face is the part the server did
  * sent. This is the bottom-right part for multi-square objects. Not that this
@@ -82,14 +82,14 @@ public class CfMapSquare {
      * The faces (of head-parts) of all layers as sent by the server.
      */
     @NotNull
-    private final Face[] faces = new Face[CrossfireMap2Command.NUM_LAYERS];
+    private final Face[] faces = new Face[Map2.NUM_LAYERS];
 
     /**
      * If this square contains a non-head part of a multi-square object this
      * points to the head square.
      */
     @NotNull
-    private final CfMapSquare[] heads = new CfMapSquare[CrossfireMap2Command.NUM_LAYERS];
+    private final CfMapSquare[] heads = new CfMapSquare[Map2.NUM_LAYERS];
 
     /**
      * Creates a new (empty) square.

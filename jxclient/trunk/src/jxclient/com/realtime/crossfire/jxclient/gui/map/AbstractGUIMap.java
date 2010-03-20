@@ -32,9 +32,9 @@ import com.realtime.crossfire.jxclient.mapupdater.CfMapUpdater;
 import com.realtime.crossfire.jxclient.mapupdater.MapListener;
 import com.realtime.crossfire.jxclient.mapupdater.MapscrollListener;
 import com.realtime.crossfire.jxclient.mapupdater.NewmapListener;
-import com.realtime.crossfire.jxclient.server.crossfire.CrossfireMap2Command;
 import com.realtime.crossfire.jxclient.server.crossfire.CrossfireServerConnection;
 import com.realtime.crossfire.jxclient.server.crossfire.MapSizeListener;
+import com.realtime.crossfire.jxclient.server.crossfire.messages.Map2;
 import com.realtime.crossfire.jxclient.skin.skin.Extent;
 import com.realtime.crossfire.jxclient.util.MathUtils;
 import java.awt.Color;
@@ -430,7 +430,7 @@ public abstract class AbstractGUIMap extends GUIElement {
         final int py = offsetY+y*tileSize;
         final int mapSquareX = mapSquare.getX();
         final int mapSquareY = mapSquare.getY();
-        for (int layer = 0; layer < CrossfireMap2Command.NUM_LAYERS; layer++) {
+        for (int layer = 0; layer < Map2.NUM_LAYERS; layer++) {
             final CfMapSquare headMapSquare = mapSquare.getHeadMapSquare(layer);
             if (headMapSquare != null) {
                 final Face headFace = headMapSquare.getFace(layer);

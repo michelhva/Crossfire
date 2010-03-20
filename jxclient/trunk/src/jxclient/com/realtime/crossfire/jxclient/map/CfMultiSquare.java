@@ -22,7 +22,7 @@
 package com.realtime.crossfire.jxclient.map;
 
 import com.realtime.crossfire.jxclient.faces.Face;
-import com.realtime.crossfire.jxclient.server.crossfire.CrossfireMap2Command;
+import com.realtime.crossfire.jxclient.server.crossfire.messages.Map2;
 import org.jetbrains.annotations.NotNull;
 
 /**
@@ -52,7 +52,7 @@ public class CfMultiSquare {
      * The face values.
      */
     @NotNull
-    private final Face[] faces = new Face[CrossfireMap2Command.NUM_LAYERS];
+    private final Face[] faces = new Face[Map2.NUM_LAYERS];
 
     /**
      * Creates a new instance.
@@ -70,7 +70,7 @@ public class CfMultiSquare {
      * Clears all faces from this square.
      */
     public void clear() {
-        for (int layer = 0; layer < CrossfireMap2Command.NUM_LAYERS; layer++) {
+        for (int layer = 0; layer < Map2.NUM_LAYERS; layer++) {
             if (faces[layer] != null) {
                 map.setFace(x, y, layer, null); // XXX: do not reset fog-of-war state
                 faces[layer] = null;

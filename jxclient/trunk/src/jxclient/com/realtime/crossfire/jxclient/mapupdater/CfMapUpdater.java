@@ -33,9 +33,9 @@ import com.realtime.crossfire.jxclient.map.CfMapAnimations;
 import com.realtime.crossfire.jxclient.map.CfMapSquare;
 import com.realtime.crossfire.jxclient.map.CfMapSquareListener;
 import com.realtime.crossfire.jxclient.map.Location;
-import com.realtime.crossfire.jxclient.server.crossfire.CrossfireMap2Command;
 import com.realtime.crossfire.jxclient.server.crossfire.CrossfireServerConnection;
 import com.realtime.crossfire.jxclient.server.crossfire.CrossfireUpdateMapListener;
+import com.realtime.crossfire.jxclient.server.crossfire.messages.Map2;
 import com.realtime.crossfire.jxclient.server.socket.ClientSocket;
 import com.realtime.crossfire.jxclient.server.socket.ClientSocketState;
 import java.util.ArrayList;
@@ -560,7 +560,7 @@ public class CfMapUpdater {
 
             for (int y = 0; y < height; y++) {
                 for (int x = 0; x < width; x++) {
-                    for (int layer = 0; layer < CrossfireMap2Command.NUM_LAYERS; layer++) {
+                    for (int layer = 0; layer < Map2.NUM_LAYERS; layer++) {
                         final Face face = map.getFace(x, y, layer);
                         if (face != null && face.getFaceNum() == faceNum) {
                             map.setFace(x, y, layer, face);
