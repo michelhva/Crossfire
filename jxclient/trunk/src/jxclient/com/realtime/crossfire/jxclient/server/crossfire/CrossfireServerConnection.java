@@ -341,10 +341,10 @@ public interface CrossfireServerConnection extends ServerConnection {
     /**
      * Sets the maximum number of objects in the ground view. Must not be called
      * in connected state.
-     * @param numLookObjects the number of objects
+     * @param preferredNumLookObjects the number of objects
      * @throws IllegalArgumentException if the number of objects is invalid
      */
-    void setNumLookObjects(int numLookObjects);
+    void setPreferredNumLookObjects(int preferredNumLookObjects);
 
     /**
      * Returns the map width in tiles.

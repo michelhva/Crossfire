@@ -3121,11 +3121,11 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
      * {@inheritDoc}
      */
     @Override
-    public void setNumLookObjects(final int numLookObjects) {
-        if (numLookObjects < 1) {
+    public void setPreferredNumLookObjects(final int preferredNumLookObjects) {
+        if (preferredNumLookObjects < 1) {
             throw new IllegalArgumentException("num_look_objects is not positive");
         }
-        this.numLookObjects = numLookObjects;
+        numLookObjects = preferredNumLookObjects;
     }
 
     /**

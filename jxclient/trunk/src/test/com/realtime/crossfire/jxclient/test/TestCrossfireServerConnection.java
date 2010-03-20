@@ -452,7 +452,7 @@ public class TestCrossfireServerConnection implements CrossfireServerConnection 
      * {@inheritDoc}
      */
     @Override
-    public void setNumLookObjects(final int numLookObjects) {
+    public void setPreferredNumLookObjects(final int preferredNumLookObjects) {
         Assert.fail();
     }
 
