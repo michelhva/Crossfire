@@ -22,6 +22,7 @@
 package com.realtime.crossfire.jxclient.items;
 
 import com.realtime.crossfire.jxclient.faces.Face;
+import com.realtime.crossfire.jxclient.server.crossfire.messages.UpdItem;
 import com.realtime.crossfire.jxclient.util.HashedEventListenerList;
 import java.util.Collection;
 import java.util.Collections;
@@ -363,15 +364,15 @@ public class ItemSet {
         synchronized (sync) {
             final CfItem item = getItemOrPlayer(tag);
             if (item == null) {
-                if (flags != CfItem.UPD_FACE) { // XXX: suppress frequent error message due to server bug
+                if (flags != UpdItem.UPD_FACE) { // XXX: suppress frequent error message due to server bug
                     System.err.println("updateItem: undefined item "+tag);
                 }
                 return;
             }
 
-            final boolean wasOpen = (flags&CfItem.UPD_FLAGS) != 0 && openContainerFloor == item.getTag() && item.isOpen();
+            final boolean wasOpen = (flags&UpdItem.UPD_FLAGS) != 0 && openContainerFloor == item.getTag() && item.isOpen();
             item.update(flags, valFlags, valWeight, valFace, valName, valNamePl, valAnim, valAnimSpeed, valNrof);
-            if ((flags&CfItem.UPD_LOCATION) != 0) {
+            if ((flags&UpdItem.UPD_LOCATION) != 0) {
                 removeItemByTag(item.getTag(), false);
                 item.setLocation(valLocation);
                 addItem(item, false);
@@ -380,7 +381,7 @@ public class ItemSet {
                     listener.itemMoved(item);
                 }
             }
-            if ((flags&~CfItem.UPD_LOCATION) != 0) {
+            if ((flags&~UpdItem.UPD_LOCATION) != 0) {
                 for (final ItemSetListener listener : itemSetListeners.getListeners(ItemSetListener.class)) {
                     listener.itemChanged(item);
                 }
@@ -388,7 +389,7 @@ public class ItemSet {
                     itemListener.itemChanged(tag);
                 }
             }
-            if ((flags&CfItem.UPD_FLAGS) != 0) {
+            if ((flags&UpdItem.UPD_FLAGS) != 0) {
                 if (item.isOpen()) {
                     setOpenContainer(item.getTag());
                 } else if (wasOpen) {

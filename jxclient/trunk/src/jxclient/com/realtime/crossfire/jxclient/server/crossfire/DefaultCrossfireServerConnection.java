@@ -21,7 +21,7 @@
 
 package com.realtime.crossfire.jxclient.server.crossfire;
 
-import com.realtime.crossfire.jxclient.items.CfItem;
+import com.realtime.crossfire.jxclient.server.crossfire.messages.UpdItem;
 import com.realtime.crossfire.jxclient.server.server.DefaultServerConnection;
 import com.realtime.crossfire.jxclient.server.server.ReceivedPacketListener;
 import com.realtime.crossfire.jxclient.server.socket.ClientSocketListener;
@@ -2125,13 +2125,13 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
                 {
                     final int flags = packet[pos++]&0xFF;
                     final int tag = ((packet[pos++]&0xFF)<<24)|((packet[pos++]&0xFF)<<16)|((packet[pos++]&0xFF)<<8)|(packet[pos++]&0xFF);
-                    final int valLocation = (flags&CfItem.UPD_LOCATION) == 0 ? 0 : ((packet[pos++]&0xFF)<<24)|((packet[pos++]&0xFF)<<16)|((packet[pos++]&0xFF)<<8)|(packet[pos++]&0xFF);
-                    final int valFlags = (flags&CfItem.UPD_FLAGS) == 0 ? 0 : ((packet[pos++]&0xFF)<<24)|((packet[pos++]&0xFF)<<16)|((packet[pos++]&0xFF)<<8)|(packet[pos++]&0xFF);
-                    final int valWeight = (flags&CfItem.UPD_WEIGHT) == 0 ? 0 : ((packet[pos++]&0xFF)<<24)|((packet[pos++]&0xFF)<<16)|((packet[pos++]&0xFF)<<8)|(packet[pos++]&0xFF);
-                    final int valFaceNum = (flags&CfItem.UPD_FACE) == 0 ? 0 : ((packet[pos++]&0xFF)<<24)|((packet[pos++]&0xFF)<<16)|((packet[pos++]&0xFF)<<8)|(packet[pos++]&0xFF);
+                    final int valLocation = (flags&UpdItem.UPD_LOCATION) == 0 ? 0 : ((packet[pos++]&0xFF)<<24)|((packet[pos++]&0xFF)<<16)|((packet[pos++]&0xFF)<<8)|(packet[pos++]&0xFF);
+                    final int valFlags = (flags&UpdItem.UPD_FLAGS) == 0 ? 0 : ((packet[pos++]&0xFF)<<24)|((packet[pos++]&0xFF)<<16)|((packet[pos++]&0xFF)<<8)|(packet[pos++]&0xFF);
+                    final int valWeight = (flags&UpdItem.UPD_WEIGHT) == 0 ? 0 : ((packet[pos++]&0xFF)<<24)|((packet[pos++]&0xFF)<<16)|((packet[pos++]&0xFF)<<8)|(packet[pos++]&0xFF);
+                    final int valFaceNum = (flags&UpdItem.UPD_FACE) == 0 ? 0 : ((packet[pos++]&0xFF)<<24)|((packet[pos++]&0xFF)<<16)|((packet[pos++]&0xFF)<<8)|(packet[pos++]&0xFF);
                     final String valName;
                     final String valNamePl;
-                    if ((flags&CfItem.UPD_NAME) == 0) {
+                    if ((flags&UpdItem.UPD_NAME) == 0) {
                         valName = "";
                         valNamePl = "";
                     } else {
@@ -2144,9 +2144,9 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
                         valNamePl = namePlIndex+1 < nameLength ? new String(packet, pos+namePlIndex+1, nameLength-(namePlIndex+1), UTF8) : valName;
                         pos += nameLength;
                     }
-                    final int valAnim = (flags&CfItem.UPD_ANIM) == 0 ? 0 : ((packet[pos++]&0xFF)<<8)|(packet[pos++]&0xFF);
-                    final int valAnimSpeed = (flags&CfItem.UPD_ANIMSPEED) == 0 ? 0 : packet[pos++]&0xFF;
-                    final int valNrof = (flags&CfItem.UPD_NROF) == 0 ? 0 : ((packet[pos++]&0xFF)<<24)|((packet[pos++]&0xFF)<<16)|((packet[pos++]&0xFF)<<8)|(packet[pos++]&0xFF);
+                    final int valAnim = (flags&UpdItem.UPD_ANIM) == 0 ? 0 : ((packet[pos++]&0xFF)<<8)|(packet[pos++]&0xFF);
+                    final int valAnimSpeed = (flags&UpdItem.UPD_ANIMSPEED) == 0 ? 0 : packet[pos++]&0xFF;
+                    final int valNrof = (flags&UpdItem.UPD_NROF) == 0 ? 0 : ((packet[pos++]&0xFF)<<24)|((packet[pos++]&0xFF)<<16)|((packet[pos++]&0xFF)<<8)|(packet[pos++]&0xFF);
                     if (pos != end) {
                         break;
                     }
