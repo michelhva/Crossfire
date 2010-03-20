@@ -310,11 +310,7 @@ public class GuiManager {
             }
 
             closeTransientDialogs();
-            assert skin != null;
-            final Dimension mapSize = skin.getMapSize();
-            server.setPreferredMapSize(mapSize.width, mapSize.height);
-            assert skin != null;
-            server.setPreferredNumLookObjects(skin.getNumLookObjects());
+            updateServerSettings();
             server.addCrossfireDrawextinfoListener(crossfireDrawextinfoListener);
             windowRenderer.setGuiState(RendererGuiState.LOGIN);
             showGUIMain();
@@ -820,7 +816,6 @@ public class GuiManager {
     public void setSkin(@NotNull final JXCSkin skin) {
         this.skin = skin;
         skin.attach(windowRenderer, tooltipManager);
-        skin.setScreenSize(windowRenderer.getWindowWidth(), windowRenderer.getWindowHeight());
         queryDialog = skin.getDialogQuery();
         keybindDialog = skin.getDialogKeyBind();
         dialogQuit = skin.getDialogQuit();
@@ -964,6 +959,28 @@ public class GuiManager {
     @NotNull
     public CommandCallback getCommandCallback() {
         return commandCallback;
+    }
+
+    /**
+     * Sets a new window size.
+     * @param size the new window size
+     */
+    public void updateWindowSize(@NotNull final Dimension size) {
+        if (skin != null) {
+            skin.setScreenSize(size.width, size.height);
+            updateServerSettings();
+        }
+    }
+
+    /**
+     * Updates server based settings to current screen size.
+     */
+    private void updateServerSettings() {
+        assert skin != null;
+        final Dimension mapSize = skin.getMapSize();
+        server.setPreferredMapSize(mapSize.width, mapSize.height);
+        assert skin != null;
+        server.setPreferredNumLookObjects(skin.getNumLookObjects());
     }
 
 }

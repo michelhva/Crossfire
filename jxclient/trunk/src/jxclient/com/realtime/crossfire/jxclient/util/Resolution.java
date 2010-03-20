@@ -22,6 +22,7 @@
 package com.realtime.crossfire.jxclient.util;
 
 import java.awt.DisplayMode;
+import java.awt.Dimension;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 
@@ -162,6 +163,15 @@ public class Resolution {
     @Override
     public String toString() {
         return width+"x"+height;
+    }
+
+    /**
+     * Returns the resolution as a {@link Dimension} instance.
+     * @return the dimension instance
+     */
+    @NotNull
+    public Dimension asDimension() {
+        return new Dimension(width, height);
     }
 
 }

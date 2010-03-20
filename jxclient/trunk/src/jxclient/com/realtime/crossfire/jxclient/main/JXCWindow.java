@@ -72,7 +72,11 @@ import com.realtime.crossfire.jxclient.window.JXCConnection;
 import com.realtime.crossfire.jxclient.window.KeyHandler;
 import com.realtime.crossfire.jxclient.window.KeyHandlerListener;
 import com.realtime.crossfire.jxclient.window.ShortcutsManager;
+import java.awt.Dimension;
 import java.awt.Graphics;
+import java.awt.Insets;
+import java.awt.event.ComponentEvent;
+import java.awt.event.ComponentListener;
 import java.awt.event.KeyEvent;
 import java.awt.event.KeyListener;
 import java.awt.event.WindowAdapter;
@@ -676,6 +680,42 @@ public class JXCWindow extends JFrame {
         setFocusTraversalKeysEnabled(false);
         addWindowFocusListener(windowFocusListener);
         addWindowListener(windowListener);
+        addComponentListener(new ComponentListener() {
+
+            /**
+             * {@inheritDoc}
+             */
+            @Override
+            public void componentResized(final ComponentEvent e) {
+                windowRenderer.updateWindowSize();
+                guiManager.updateWindowSize(new Dimension(windowRenderer.getWindowWidth(), windowRenderer.getWindowHeight()));
+            }
+
+            /**
+             * {@inheritDoc}
+             */
+            @Override
+            public void componentMoved(final ComponentEvent e) {
+                // ignore
+            }
+
+            /**
+             * {@inheritDoc}
+             */
+            @Override
+            public void componentShown(final ComponentEvent e) {
+                // ignore
+            }
+
+            /**
+             * {@inheritDoc}
+             */
+            @Override
+            public void componentHidden(final ComponentEvent e) {
+                // ignore
+            }
+
+        });
         connection = new JXCConnection(guiManager.getKeybindingsManager(), shortcutsManager, settings, this, characterPickup, server, guiStateManager);
         server.addClientSocketListener(clientSocketListener);
         server.addSentReplyListener(sentReplyListener);
@@ -713,7 +753,19 @@ public class JXCWindow extends JFrame {
                 throw new AssertionError();
             }
         }
+
+        final Dimension minSize = skin.getMinResolution().asDimension();
+        final Dimension maxSize = skin.getMaxResolution().asDimension();
+        final Insets insets = getInsets();
+        minSize.width += insets.left+insets.right;
+        minSize.height += insets.top+insets.bottom;
+        maxSize.width += insets.left+insets.right;
+        maxSize.height += insets.top+insets.bottom;
+        setMinimumSize(minSize);
+        setMaximumSize(maxSize);
         guiManager.setSkin(skin);
+        guiManager.updateWindowSize(getSize());
+
         DialogStateParser.load(skin, windowRenderer);
         guiManager.initRendering();
 

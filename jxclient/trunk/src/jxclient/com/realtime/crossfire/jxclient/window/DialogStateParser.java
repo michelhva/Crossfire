@@ -108,23 +108,25 @@ public class DialogStateParser {
                                 throw new IOException("no such dialog: "+tmp[1]);
                             }
 
-                            final int x, y, w, h;
-                            try {
-                                x = Integer.parseInt(tmp[2]);
-                                y = Integer.parseInt(tmp[3]);
-                                w = Integer.parseInt(tmp[4]);
-                                h = Integer.parseInt(tmp[5]);
-                            } catch (final NumberFormatException ex) {
-                                throw new IOException("syntax error: "+line);
-                            }
+                            if (!dialog.isAutoSize()) {
+                                final int x, y, w, h;
+                                try {
+                                    x = Integer.parseInt(tmp[2]);
+                                    y = Integer.parseInt(tmp[3]);
+                                    w = Integer.parseInt(tmp[4]);
+                                    h = Integer.parseInt(tmp[5]);
+                                } catch (final NumberFormatException ex) {
+                                    throw new IOException("syntax error: "+line);
+                                }
 
-                            try {
-                                dialog.setSize(w, h);
-                            } catch (final IllegalArgumentException ex) {
-                                throw new IOException("invalid dialog size for "+tmp[1]+": "+w+"x"+h);
-                            }
+                                try {
+                                    dialog.setSize(w, h);
+                                } catch (final IllegalArgumentException ex) {
+                                    throw new IOException("invalid dialog size for "+tmp[1]+": "+w+"x"+h);
+                                }
 
-                            dialog.setPosition(x, y);
+                                dialog.setPosition(x, y);
+                            }
 
                             if (open) {
                                 windowRenderer.openDialog(dialog, false);

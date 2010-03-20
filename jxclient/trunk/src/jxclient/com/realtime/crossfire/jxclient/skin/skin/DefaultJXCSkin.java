@@ -80,6 +80,16 @@ public class DefaultJXCSkin implements JXCSkin {
     private final Resolution selectedResolution;
 
     /**
+     * The current screen width.
+     */
+    private int currentScreenWidth = 0;
+
+    /**
+     * The current screen height.
+     */
+    private int currentScreenHeight = 0;
+
+    /**
      * The maximum number of ground view objects.
      */
     private int numLookObjects = 0;
@@ -194,6 +204,13 @@ public class DefaultJXCSkin implements JXCSkin {
      * @param maxResolution the maximal supported resolution
      */
     public void setSkinName(@NotNull final String skinName, @NotNull final Resolution minResolution, @NotNull final Resolution maxResolution) {
+        if (minResolution.getWidth() > maxResolution.getWidth()) {
+            throw new IllegalArgumentException("minimum width must not exceed maximum width");
+        }
+        if (minResolution.getHeight() > maxResolution.getHeight()) {
+            throw new IllegalArgumentException("minimum height must not exceed maximum height");
+        }
+
         this.skinName = skinName;
         this.minResolution = minResolution;
         this.maxResolution = maxResolution;
@@ -472,16 +489,26 @@ public class DefaultJXCSkin implements JXCSkin {
      */
     @Override
     public void setScreenSize(final int screenWidth, final int screenHeight) {
-        for (final GUIElement guiElement : guiElements) {
-            guiElement.updateResolution(screenWidth, screenHeight);
+        final int newScreenWidth = Math.max(minResolution.getWidth(), Math.min(maxResolution.getWidth(), screenWidth));
+        final int newScreenHeight = Math.max(minResolution.getHeight(), Math.min(maxResolution.getHeight(), screenHeight));
+        if (currentScreenWidth == newScreenWidth && currentScreenHeight == newScreenHeight) {
+            return;
         }
-
-        for (final Gui dialog : dialogs) {
-            dialog.updateResolution(screenWidth, screenHeight);
+        currentScreenWidth = newScreenWidth;
+        currentScreenHeight = newScreenHeight;
+        for (final GUIElement guiElement : guiElements) {
+            guiElement.updateResolution(newScreenWidth, newScreenHeight);
         }
 
         if (tooltipLabel != null) {
-            tooltipLabel.updateResolution(screenWidth, screenHeight);
+            tooltipLabel.updateResolution(newScreenWidth, newScreenHeight);
+        }
+
+        final JXCWindowRenderer tmpWindowRenderer = windowRenderer;
+        if (tmpWindowRenderer != null) {
+            for (final Gui dialog : dialogs) {
+                tmpWindowRenderer.showDialogAuto(dialog);
+            }
         }
     }
 
