@@ -184,15 +184,6 @@ public class DefaultJXCSkin implements JXCSkin {
     @NotNull
     @Override
     public String getSkinName() {
-        return skinName+"@"+selectedResolution;
-    }
-
-    /**
-     * Returns the skin name.
-     * @return the skin name
-     */
-    @NotNull
-    public String getPlainSkinName() {
         return skinName;
     }
 
