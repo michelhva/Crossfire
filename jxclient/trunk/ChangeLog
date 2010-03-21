@@ -1,5 +1,10 @@
 2010-03-21  Andreas Kirschbaum
 
+	* Disable all keybindings from inventory dialog.
+
+	Many players leave the inventory dialog opened while playing.
+	Therefore these keybindings interfere with normal game-play.
+
 	* Do not send obsolete "setup sound" option to server. Neither
 	trunk nor branch servers do support it anymore.
 
