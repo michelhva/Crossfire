@@ -21,6 +21,8 @@
 
 package com.realtime.crossfire.jxclient.settings.options;
 
+import org.jetbrains.annotations.NotNull;
+
 /**
  * The base class for all check box options. It manages the checked/unchecked
  * state and notifies listeners about changes.
@@ -29,9 +31,23 @@ package com.realtime.crossfire.jxclient.settings.options;
 public abstract class CheckBoxOption extends Option {
 
     /**
+     * The tooltip text to explain this option.
+     */
+    @NotNull
+    private final String tooltipText;
+
+    /**
      * The current state.
      */
     private boolean checked = false;
+
+    /**
+     * Creates a new instance.
+     * @param tooltipText the tooltip text to explain this option
+     */
+    protected CheckBoxOption(@NotNull final String tooltipText) {
+        this.tooltipText = tooltipText;
+    }
 
     /**
      * Return the current state.
@@ -82,5 +98,14 @@ public abstract class CheckBoxOption extends Option {
      * @return The default value.
      */
     public abstract boolean isDefaultChecked();
+
+    /**
+     * Returns the tooltip text to explain this option.
+     * @return the tooltip text
+     */
+    @NotNull
+    public String getTooltipText() {
+        return tooltipText;
+    }
 
 }

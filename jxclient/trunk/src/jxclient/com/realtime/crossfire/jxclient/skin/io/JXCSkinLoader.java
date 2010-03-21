@@ -848,7 +848,7 @@ public class JXCSkinLoader {
             final CommandList commandOn = skin.getCommandList(args[3]);
             final CommandList commandOff = skin.getCommandList(args[4]);
             final String documentation = ParseUtils.parseText(args, 5, lnr);
-            skin.addOption(optionName, documentation, new CommandCheckBoxOption(commandOn, commandOff));
+            skin.addOption(optionName, documentation, new CommandCheckBoxOption(commandOn, commandOff, documentation));
         } else if (args[1].equals("dialog")) {
             if (args.length != 7) {
                 throw new IOException("syntax error");
