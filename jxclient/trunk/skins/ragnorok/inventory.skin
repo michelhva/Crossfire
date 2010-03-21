@@ -43,15 +43,15 @@ label_stat label_weight_limit 105 30+136 45 16 font_label BLACK WEIGHT_LIMIT LEF
 #key code KP_RIGHT  0 exec command_inventory_next
 #key code PAGE_UP   0 exec command_inventory_pageup
 #key code PAGE_DOWN 0 exec command_inventory_pagedown
-key char 10        exec command_inventory_apply
-key char 13        exec command_inventory_apply
-key char 97        exec command_inventory_apply
-key char 100       exec command_inventory_drop
-key char 101       exec command_inventory_examine
-key char 108       exec command_inventory_lock
-key char 76        exec command_inventory_unlock
-key char 109       exec command_inventory_mark
-key char 117       exec command_inventory_unlock
+#key char 10        exec command_inventory_apply
+#key char 13        exec command_inventory_apply
+#key char 97        exec command_inventory_apply
+#key char 100       exec command_inventory_drop
+#key char 101       exec command_inventory_examine
+#key char 108       exec command_inventory_lock
+#key char 76        exec command_inventory_unlock
+#key char 109       exec command_inventory_mark
+#key char 117       exec command_inventory_unlock
 
 commandlist command_inventory_reset OR inv SCROLL_RESET
 event connect command_inventory_reset
