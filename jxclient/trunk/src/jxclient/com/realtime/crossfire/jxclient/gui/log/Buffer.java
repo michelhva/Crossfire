@@ -47,6 +47,11 @@ public class Buffer {
     public static final int MAX_LINES = 250;
 
     /**
+     * The minimal height of a line in pixels. Normally applies to empty lines.
+     */
+    private static final int MIN_LINE_HEIGHT = 8;
+
+    /**
      * The listeners to notify about changes.
      */
     @NotNull
@@ -299,7 +304,7 @@ public class Buffer {
         line.updateAttributes(beginIndex, i, height-minY, fonts, context);
         height += maxY-minY;
 
-        return Math.max(1, height);
+        return Math.max(MIN_LINE_HEIGHT, height);
     }
 
     /**
