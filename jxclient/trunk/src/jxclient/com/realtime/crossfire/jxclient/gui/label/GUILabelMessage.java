@@ -40,7 +40,7 @@ public class GUILabelMessage extends GUIMultiLineLabel {
     /**
      * The maximum line length in characters.
      */
-    private static final int MAX_LINE_LENGTH = 50;
+    private static final int MAX_LINE_LENGTH = 75;
 
     /**
      * The serial version UID.

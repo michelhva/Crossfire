@@ -222,7 +222,7 @@ public abstract class GUIText extends ActivatableGUIElement implements KeyListen
             return tmpText+" ";
         }
 
-        final String template = "********************";
+        final String template = "****************************************************************************************************************************************************************";
         final String hiddenText = template.substring(0, Math.min(tmpText.length(), template.length()));
         return hiddenText+" ";
     }

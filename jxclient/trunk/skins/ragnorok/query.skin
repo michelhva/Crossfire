@@ -1,10 +1,10 @@
 
-dialog border WIDTH/2-178 HEIGHT/2-229 10+336+10 260 false Query
+dialog border WIDTH/2-228 HEIGHT/2-349 10+496+10 380 false Query
 set_modal
 
-label_message message2 10 30              336 120 font_label BLACK
-label_query message    10 30+120+10       336  60 font_label BLACK
-query_text input       10 30+120+10+60+10 336  20 input_active input_inactive font_label GRAY BLACK 1
+label_message message2 10 30              496 240 font_label BLACK
+label_query message    10 30+240+10       496  60 font_label BLACK
+query_text input       10 30+240+10+60+10 496  20 input_active input_inactive font_label GRAY BLACK 1
 
 set_default input
 set_forced_active input
