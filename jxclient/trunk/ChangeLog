@@ -1,5 +1,8 @@
 2010-03-21  Andreas Kirschbaum
 
+	* Do not send obsolete "setup sound" option to server. Neither
+	trunk nor branch servers do support it anymore.
+
 	* Do not create main windows exceeding the screen size unless
 	overridden with command-line option -r.
 

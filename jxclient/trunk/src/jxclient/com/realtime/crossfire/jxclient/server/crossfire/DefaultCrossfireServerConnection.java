@@ -2507,7 +2507,7 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
      */
     private void cmdVersion(final int csval, final int scval, @NotNull final String vinfo) {
         setClientSocketState(ClientSocketState.VERSION, ClientSocketState.SETUP);
-        sendSetup("want_pickup 1", "faceset 0", "sound 3", "sound2 3", "exp64 1", "map2cmd 1", "darkness 1", "newmapcmd 1", "facecache 1", "extendedTextInfos 1", "itemcmd 2", "spellmon 1", "tick 1", "extended_stats 1");
+        sendSetup("want_pickup 1", "faceset 0", "sound2 3", "exp64 1", "map2cmd 1", "darkness 1", "newmapcmd 1", "facecache 1", "extendedTextInfos 1", "itemcmd 2", "spellmon 1", "tick 1", "extended_stats 1");
         for (final CrossfireStatsListener crossfireStatsListener : crossfireStatsListeners) {
             crossfireStatsListener.setSimpleWeaponSpeed(scval >= 1029);
         }
@@ -2723,8 +2723,6 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
                 if (!value.equals("1")) {
                     throw new UnknownCommandException("Error: the server is too old for this client since it does not support the spellmon=1 setup option.");
                 }
-            } else if (option.equals("sound")) {
-                // ignore: if the server sends sound info it is processed
             } else if (option.equals("sound2")) {
                 // ignore: if the server sends sound info it is processed
             } else if (option.equals("exp64")) {
