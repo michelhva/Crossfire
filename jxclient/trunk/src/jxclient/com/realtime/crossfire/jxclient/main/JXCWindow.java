@@ -748,7 +748,8 @@ public class JXCWindow extends JFrame {
         optionManager.loadOptions();
         keyHandler.setKeyBindings(skin.getDefaultKeyBindings());
 
-        final Dimension minSize = skin.getMinResolution().asDimension();
+        final Resolution minResolution = skin.getMinResolution();
+        final Dimension minSize = minResolution.asDimension();
         final Dimension maxSize = skin.getMaxResolution().asDimension();
         final Insets insets = getInsets();
         minSize.width += insets.left+insets.right;
@@ -759,7 +760,7 @@ public class JXCWindow extends JFrame {
         setMaximumSize(maxSize);
 
         if (!fullScreen || !windowRenderer.setFullScreenMode(resolution)) {
-            if (!windowRenderer.setWindowMode(resolution, minSize.equals(maxSize))) {
+            if (!windowRenderer.setWindowMode(resolution, minResolution, minSize.equals(maxSize))) {
                 System.err.println("cannot create window with resolution "+resolution);
                 System.exit(1);
                 throw new AssertionError();

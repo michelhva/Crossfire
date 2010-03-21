@@ -106,7 +106,7 @@ public class JXCWindowRenderer {
     /**
      * The current {@link BufferStrategy}. Set to <code>null</code> until
      * {@link #setFullScreenMode(Resolution)} or {@link
-     * #setWindowMode(Resolution, boolean)} has been called.
+     * #setWindowMode(Resolution, Resolution, boolean)} has been called.
      */
     @Nullable
     private BufferStrategy bufferStrategy = null;
@@ -426,10 +426,11 @@ public class JXCWindowRenderer {
      * the window might be invisible.
      * @param resolution the resolution to switch to, <code>null</code> for
      * default
+     * @param minResolution the minimal supported resolution
      * @param fixedSize whether the window should have fixed size
      * @return whether the resolution has been changed
      */
-    public boolean setWindowMode(@Nullable final Resolution resolution, final boolean fixedSize) {
+    public boolean setWindowMode(@Nullable final Resolution resolution, @NotNull final Resolution minResolution, final boolean fixedSize) {
         debugScreenWrite("setWindowMode: resolution="+(resolution == null ? "default" : resolution)+", fixedSize="+fixedSize);
 
         final DisplayMode currentDisplayMode = graphicsDevice.getDisplayMode();
@@ -467,12 +468,13 @@ public class JXCWindowRenderer {
         final Dimension maxDimension = getMaxWindowDimension(frameInsets);
         debugScreenWrite("setResolutionPre: maximal window dimension="+maxDimension);
         if (dimension.width > maxDimension.width || dimension.height > maxDimension.height) {
-            /*
-            frame.dispose();
-            debugScreenWrite("setResolutionPre: failure");
-            return false;
-            */
-            debugScreenWrite("setResolutionPre: window size exceeds maximum allowed size, ignoring");
+            if (resolution == null) {
+                dimension.width = Math.max(minResolution.getWidth()+frameInsets.left+frameInsets.right, maxDimension.width);
+                dimension.height = Math.max(minResolution.getHeight()+frameInsets.top+frameInsets.bottom, maxDimension.height);
+                debugScreenWrite("setResolutionPre: window size exceeds maximum allowed size, reducing window size to "+dimension.width+"x"+dimension.height);
+            } else {
+                debugScreenWrite("setResolutionPre: window size exceeds maximum allowed size, ignoring");
+            }
         }
 
         if (wasDisplayed) {
@@ -481,8 +483,8 @@ public class JXCWindowRenderer {
             frame.setSize(dimension);
         } else {
             wasDisplayed = true;
-            final int x2 = x-frameInsets.left;
-            final int y2 = y-frameInsets.top;
+            final int x2 = centerPoint.x-dimension.width/2-frameInsets.left;
+            final int y2 = centerPoint.y-dimension.height/2-frameInsets.top;
             debugScreenWrite("setResolutionPre: moving window to "+x2+"/"+y2+" "+dimension.width+"x"+dimension.height);
             frame.setBounds(x2, y2, dimension.width, dimension.height);
         }
@@ -612,7 +614,7 @@ public class JXCWindowRenderer {
      */
     public void endRendering() {
         if (isFullScreen) {
-            setWindowMode(new Resolution(true, defaultDisplayMode.getWidth(), defaultDisplayMode.getHeight()), false);
+            setWindowMode(null, new Resolution(true, 1, 1), false);
         }
     }
 
