@@ -1,3 +1,8 @@
+2010-03-21  Andreas Kirschbaum
+
+	* Do not create main windows exceeding the screen size unless
+	overridden with command-line option -r.
+
 2010-03-20  Andreas Kirschbaum
 
 	* Display boosted, depleted, and upgradable primary stat values in
