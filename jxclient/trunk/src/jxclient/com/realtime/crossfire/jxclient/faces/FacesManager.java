@@ -41,12 +41,6 @@ import org.jetbrains.annotations.Nullable;
 public class FacesManager {
 
     /**
-     * The resource name of the "unknown" face.
-     */
-    @NotNull
-    private static final String UNKNOWN_PNG = "resource/unknown.png";
-
-    /**
      * The {@link FaceCache} instance used to look up in-memory faces.
      */
     @NotNull
@@ -108,7 +102,7 @@ public class FacesManager {
         faceQueue.addFaceQueueListener(faceQueueListener);
 
         emptyFaceImages = FaceImagesUtils.newEmptyFaceImages();
-        unknownFaceImages = FaceImagesUtils.newFaceImages(ResourceUtils.loadImage(UNKNOWN_PNG));
+        unknownFaceImages = FaceImagesUtils.newFaceImages(ResourceUtils.loadImage(ResourceUtils.UNKNOWN_PNG));
     }
 
     /**
