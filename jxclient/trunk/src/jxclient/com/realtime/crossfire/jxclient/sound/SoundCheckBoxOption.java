@@ -41,6 +41,7 @@ public class SoundCheckBoxOption extends CheckBoxOption {
      * @param soundManager the sound manager instance to affect
      */
     public SoundCheckBoxOption(@NotNull final SoundManager soundManager) {
+        super("<html>Plays sound effects and background music if checked.");
         this.soundManager = soundManager;
     }
 

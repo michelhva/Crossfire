@@ -44,8 +44,10 @@ public class PickupOption extends CheckBoxOption {
      * Creates a new instance.
      * @param pickup the pickup instance for modifying the pickup mode
      * @param option the affected pickup mode
+     * @param tooltipText the tooltip text to explain this option
      */
-    public PickupOption(@NotNull final Pickup pickup, final long option) {
+    public PickupOption(@NotNull final Pickup pickup, final long option, @NotNull final String tooltipText) {
+        super(tooltipText);
         this.pickup = pickup;
         this.option = option;
     }

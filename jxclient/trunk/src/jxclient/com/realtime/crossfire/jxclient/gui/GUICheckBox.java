@@ -136,6 +136,7 @@ public class GUICheckBox extends ActivatableGUIElement {
         this.color = color;
         this.option = option;
         this.option.addOptionListener(optionListener);
+        setTooltipText(option.getTooltipText());
     }
 
     /**

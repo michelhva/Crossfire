@@ -47,8 +47,10 @@ public class CommandCheckBoxOption extends CheckBoxOption {
      * Create a new instance.
      * @param commandOn The command list to execute when checked.
      * @param commandOff The command list to execute when unchecked.
+     * @param tooltipText the tooltip text to explain this option
      */
-    public CommandCheckBoxOption(@NotNull final CommandList commandOn, @NotNull final CommandList commandOff) {
+    public CommandCheckBoxOption(@NotNull final CommandList commandOn, @NotNull final CommandList commandOff, @NotNull final String tooltipText) {
+        super(tooltipText);
         this.commandOn = commandOn;
         this.commandOff = commandOff;
     }
