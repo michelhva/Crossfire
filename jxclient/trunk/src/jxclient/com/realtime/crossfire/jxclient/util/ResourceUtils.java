@@ -52,6 +52,12 @@ public class ResourceUtils {
     public static final String PREV_GROUP_FACE = "prev_group.png";
 
     /**
+     * The resource name for the application icon.
+     */
+    @NotNull
+    public static final String APPLICATION_ICON = "application_icon.png";
+
+    /**
      * Private constructor to prevent instantiation.
      */
     private ResourceUtils() {
