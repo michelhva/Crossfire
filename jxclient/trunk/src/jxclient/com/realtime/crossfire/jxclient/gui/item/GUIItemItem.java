@@ -31,7 +31,6 @@ import com.realtime.crossfire.jxclient.items.CfItem;
 import com.realtime.crossfire.jxclient.items.CfItemListener;
 import com.realtime.crossfire.jxclient.server.crossfire.CrossfireServerConnection;
 import com.realtime.crossfire.jxclient.skin.skin.Extent;
-import java.awt.Color;
 import java.awt.Graphics2D;
 import java.awt.Image;
 import org.jetbrains.annotations.NotNull;
@@ -47,12 +46,6 @@ public abstract class GUIItemItem extends GUIItem {
      * The serial version UID.
      */
     private static final long serialVersionUID = 1;
-
-    /**
-     * The background color of this item.
-     */
-    @NotNull
-    private static final Color BACKGROUND_COLOR = new Color(0, 0, 0, 0.0f);
 
     /**
      * The connection instance.
@@ -139,7 +132,7 @@ public abstract class GUIItemItem extends GUIItem {
      */
     @Override
     protected void render(@NotNull final Graphics2D g) {
-        g.setBackground(BACKGROUND_COLOR);
+        g.setBackground(getBackground());
         g.clearRect(0, 0, getWidth(), getHeight());
 
         final CfItem tmpItem = item;
