@@ -58,8 +58,9 @@ public interface ClientSocketListener {
     /**
      * Called when the connection is being teared down.
      * @param reason the disconnect reason
+     * @param isError whether the disconnect is unexpected
      */
-    void disconnecting(@NotNull String reason);
+    void disconnecting(@NotNull String reason, boolean isError);
 
     /**
      * Called after the connection has been closed.

@@ -105,9 +105,9 @@ public class GuiStateManager {
 
         /** {@inheritDoc} */
         @Override
-        public void disconnecting(@NotNull final String reason) {
+        public void disconnecting(@NotNull final String reason, final boolean isError) {
             synchronized (sync) {
-                if (guiState == GuiState.CONNECTING) {
+                if (guiState == GuiState.CONNECTING || (isError && guiState == GuiState.CONNECTED)) {
                     changeGUI(GuiState.CONNECT_FAILED, reason);
                 }
             }
