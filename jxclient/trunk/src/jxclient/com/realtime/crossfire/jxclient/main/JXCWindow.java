@@ -66,6 +66,7 @@ import com.realtime.crossfire.jxclient.stats.ExperienceTable;
 import com.realtime.crossfire.jxclient.stats.PoisonWatcher;
 import com.realtime.crossfire.jxclient.stats.Stats;
 import com.realtime.crossfire.jxclient.util.Resolution;
+import com.realtime.crossfire.jxclient.util.ResourceUtils;
 import com.realtime.crossfire.jxclient.window.DialogStateParser;
 import com.realtime.crossfire.jxclient.window.GuiManager;
 import com.realtime.crossfire.jxclient.window.JXCConnection;
@@ -84,6 +85,7 @@ import java.awt.event.WindowEvent;
 import java.awt.event.WindowFocusListener;
 import java.awt.event.WindowListener;
 import java.io.File;
+import java.io.IOException;
 import java.io.Writer;
 import javax.swing.JFrame;
 import org.jetbrains.annotations.NotNull;
@@ -677,6 +679,11 @@ public class JXCWindow extends JFrame {
             characterPickup = new Pickup(commandQueue, optionManager);
         } catch (final OptionException ex) {
             throw new AssertionError();
+        }
+        try {
+            setIconImage(ResourceUtils.loadImage(ResourceUtils.APPLICATION_ICON).getImage());
+        } catch (final IOException ex) {
+            System.err.println("Cannot find application icon: "+ex.getMessage());
         }
         setFocusTraversalKeysEnabled(false);
         addWindowFocusListener(windowFocusListener);

@@ -51,6 +51,7 @@
     <target name="jar" depends="compile-jxclient,skin.prelude,skin.ragnorok">
         <jar destfile="jxclient.jar">
             <fileset dir="${build}/jxclient"/>
+            <fileset dir="." includes="resource/application_icon.png"/>
             <fileset dir="." includes="resource/next_group.png"/>
             <fileset dir="." includes="resource/prev_group.png"/>
             <fileset dir="." includes="resource/sounds/*.wav"/>
