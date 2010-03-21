@@ -105,7 +105,8 @@ public class JXCWindowRenderer {
 
     /**
      * The current {@link BufferStrategy}. Set to <code>null</code> until
-     * {@link #setResolution(Resolution, boolean, boolean)} has been called.
+     * {@link #setFullScreenMode(Resolution)} or {@link
+     * #setWindowMode(Resolution, boolean)} has been called.
      */
     @Nullable
     private BufferStrategy bufferStrategy = null;
@@ -347,138 +348,182 @@ public class JXCWindowRenderer {
      * Tries to switch to the given resolution. If resolution switching fails,
      * the window might be invisible.
      * @param resolution the resolution to switch to
-     * @param fullScreen whether full-screen mode should be used
-     * @param fixedSize whether the window should have fixed size
      * @return whether the resolution has been changed
      */
-    public boolean setResolution(@NotNull final Resolution resolution, final boolean fullScreen, final boolean fixedSize) {
-        debugScreenWrite("setResolution: resolution="+resolution+", fullScreen="+fullScreen);
+    public boolean setFullScreenMode(@NotNull final Resolution resolution) {
+        debugScreenWrite("setFullScreenMode: resolution="+resolution);
 
         final DisplayMode currentDisplayMode = graphicsDevice.getDisplayMode();
-        debugScreenWrite("setResolution: current display mode="+currentDisplayMode.getWidth()+"x"+currentDisplayMode.getHeight());
-        if (isFullScreen == fullScreen && resolution.getWidth() == windowWidth && resolution.getHeight() == windowHeight) {
-            debugScreenWrite("setResolution: no change needed");
-            debugScreenWrite("setResolution: success");
+        debugScreenWrite("setResolutionPre: current display mode="+currentDisplayMode.getWidth()+"x"+currentDisplayMode.getHeight());
+        if (isFullScreen && resolution.getWidth() == windowWidth && resolution.getHeight() == windowHeight) {
+            debugScreenWrite("setResolutionPre: no change needed");
+            debugScreenWrite("setResolutionPre: success");
             return true;
         }
 
+        if (!setResolutionPre()) {
+            return false;
+        }
+
+        final Dimension dimension = new Dimension(resolution.getWidth(), resolution.getHeight());
+        debugScreenWrite("setFullScreenMode: full-screen requested, dimension="+dimension);
+        frame.setPreferredSize(dimension);
+        frame.setResizable(false);
+        frame.setUndecorated(true);
+
+        // full-screen switch must happen before display mode change
+        if (!graphicsDevice.isFullScreenSupported()) {
+            debugScreenWrite("setFullScreenMode: full-screen mode is not supported");
+            graphicsDevice.setFullScreenWindow(null);
+            isFullScreen = false;
+            debugScreenWrite("setFullScreenMode: failure");
+            return false;
+        }
+
+        debugScreenWrite("setFullScreenMode: entering full-screen mode");
+        graphicsDevice.setFullScreenWindow(frame);
+        isFullScreen = true;
+
+        if (resolution.equalsDisplayMode(currentDisplayMode)) {
+            debugScreenWrite("setFullScreenMode: requested resolution matches screen resolution");
+        } else {
+            if (!graphicsDevice.isDisplayChangeSupported()) {
+                debugScreenWrite("setFullScreenMode: screen resolution change is not supported");
+                graphicsDevice.setFullScreenWindow(null);
+                isFullScreen = false;
+                debugScreenWrite("setFullScreenMode: failure");
+                return false;
+            }
+
+            final DisplayMode newDisplayMode = new DisplayMode(resolution.getWidth(), resolution.getHeight(), DisplayMode.BIT_DEPTH_MULTI, DisplayMode.REFRESH_RATE_UNKNOWN);
+            try {
+                debugScreenWrite("setFullScreenMode: setting screen resolution to "+newDisplayMode.getWidth()+"x"+newDisplayMode.getHeight());
+                graphicsDevice.setDisplayMode(newDisplayMode);
+            } catch (final IllegalArgumentException ex) {
+                debugScreenWrite("setFullScreenMode: setting screen resolution failed: "+ex.getMessage());
+                isFullScreen = false;
+                debugScreenWrite("setFullScreenMode: resetting screen resolution to "+defaultDisplayMode.getWidth()+"x"+defaultDisplayMode.getHeight());
+                graphicsDevice.setDisplayMode(defaultDisplayMode);
+                debugScreenWrite("setFullScreenMode: leaving full-screen mode");
+                graphicsDevice.setFullScreenWindow(null);
+                debugScreenWrite("setFullScreenMode: failure");
+                return false;
+            }
+        }
+
+        setResolutionPost(resolution);
+        return true;
+    }
+
+    /**
+     * Tries to switch to the given resolution. If resolution switching fails,
+     * the window might be invisible.
+     * @param resolution the resolution to switch to
+     * @param fixedSize whether the window should have fixed size
+     * @return whether the resolution has been changed
+     */
+    public boolean setWindowMode(@NotNull final Resolution resolution, final boolean fixedSize) {
+        debugScreenWrite("setWindowMode: resolution="+resolution+", fixedSize="+fixedSize);
+
+        final DisplayMode currentDisplayMode = graphicsDevice.getDisplayMode();
+        debugScreenWrite("setResolutionPre: current display mode="+currentDisplayMode.getWidth()+"x"+currentDisplayMode.getHeight());
+        if (!isFullScreen && resolution.getWidth() == windowWidth && resolution.getHeight() == windowHeight) {
+            debugScreenWrite("setResolutionPre: no change needed");
+            debugScreenWrite("setResolutionPre: success");
+            return true;
+        }
+
+        if (!setResolutionPre()) {
+            return false;
+        }
+
+        debugScreenWrite("setResolutionPre: windowed mode requested");
+        frame.setUndecorated(false);
+        frame.setResizable(!fixedSize);
+        final Point centerPoint = graphicsEnvironment.getCenterPoint();
+        debugScreenWrite("setResolutionPre: screen center point is "+centerPoint);
+        final Dimension dimension = resolution.asDimension();
+        final int x = centerPoint.x-dimension.width/2;
+        final int y = centerPoint.y-dimension.height/2;
+        if (!wasDisplayed) {
+            frame.setLocation(x, y); // try to minimize display movements
+        }
+        frame.setVisible(true);
+        final Insets frameInsets = frame.getInsets();
+        debugScreenWrite("setResolutionPre: frame insets="+frameInsets);
+
+        final Dimension maxDimension = getMaxWindowDimension(frameInsets);
+        debugScreenWrite("setResolutionPre: maximal window dimension="+maxDimension);
+        if (resolution.getWidth() > maxDimension.width || resolution.getHeight() > maxDimension.height) {
+            /*
+            frame.dispose();
+            debugScreenWrite("setResolutionPre: failure");
+            return false;
+            */
+            debugScreenWrite("setResolutionPre: window size exceeds maximum allowed size, ignoring");
+        }
+
+        if (wasDisplayed) {
+            debugScreenWrite("setResolutionPre: resizing window to "+dimension);
+            frame.setPreferredSize(dimension);
+            frame.setSize(dimension);
+        } else {
+            wasDisplayed = true;
+            final int x2 = x-frameInsets.left;
+            final int y2 = y-frameInsets.top;
+            debugScreenWrite("setResolutionPre: moving window to "+x2+"/"+y2+" "+dimension.width+"x"+dimension.height);
+            frame.setBounds(x2, y2, dimension.width, dimension.height);
+        }
+
+        setResolutionPost(resolution);
+        return true;
+    }
+
+    /**
+     * Tries to switch to the given resolution. If resolution switching fails,
+     * the window might be invisible.
+     * @return whether the resolution has been changed
+     */
+    private boolean setResolutionPre() {
         // disable full-screen since switching from full-screen to full-screen
         // does not work reliably
         if (isFullScreen) {
-            debugScreenWrite("setResolution: resetting screen resolution to "+defaultDisplayMode.getWidth()+"x"+defaultDisplayMode.getHeight());
+            debugScreenWrite("setResolutionPre: resetting screen resolution to "+defaultDisplayMode.getWidth()+"x"+defaultDisplayMode.getHeight());
             graphicsDevice.setDisplayMode(defaultDisplayMode);
         }
-        debugScreenWrite("setResolution: leaving full-screen mode");
+        debugScreenWrite("setResolutionPre: leaving full-screen mode");
         graphicsDevice.setFullScreenWindow(null);
         isFullScreen = false;
 
-        debugScreenWrite("setResolution: disposing frame");
+        debugScreenWrite("setResolutionPre: disposing frame");
         frame.dispose();
-        if (fullScreen) {
-            final Dimension dimension = new Dimension(resolution.getWidth(), resolution.getHeight());
-            debugScreenWrite("setResolution: full-screen requested, dimension="+dimension);
-            frame.setPreferredSize(dimension);
-            frame.setResizable(false);
-            frame.setUndecorated(true);
+        return true;
+    }
 
-            // full-screen switch must happen before display mode change
-            if (!graphicsDevice.isFullScreenSupported()) {
-                debugScreenWrite("setResolution: full-screen mode is not supported");
-                graphicsDevice.setFullScreenWindow(null);
-                isFullScreen = false;
-                debugScreenWrite("setResolution: failure");
-                return false;
-            }
-
-            debugScreenWrite("setResolution: entering full-screen mode");
-            graphicsDevice.setFullScreenWindow(frame);
-            isFullScreen = true;
-
-            if (resolution.equalsDisplayMode(currentDisplayMode)) {
-                debugScreenWrite("setResolution: requested resolution matches screen resolution");
-            } else {
-                if (!graphicsDevice.isDisplayChangeSupported()) {
-                    debugScreenWrite("setResolution: screen resolution change is not supported");
-                    graphicsDevice.setFullScreenWindow(null);
-                    isFullScreen = false;
-                    debugScreenWrite("setResolution: failure");
-                    return false;
-                }
-
-                final DisplayMode newDisplayMode = new DisplayMode(resolution.getWidth(), resolution.getHeight(), DisplayMode.BIT_DEPTH_MULTI, DisplayMode.REFRESH_RATE_UNKNOWN);
-                try {
-                    debugScreenWrite("setResolution: setting screen resolution to "+newDisplayMode.getWidth()+"x"+newDisplayMode.getHeight());
-                    graphicsDevice.setDisplayMode(newDisplayMode);
-                } catch (final IllegalArgumentException ex) {
-                    debugScreenWrite("setResolution: setting screen resolution failed: "+ex.getMessage());
-                    isFullScreen = false;
-                    debugScreenWrite("setResolution: resetting screen resolution to "+defaultDisplayMode.getWidth()+"x"+defaultDisplayMode.getHeight());
-                    graphicsDevice.setDisplayMode(defaultDisplayMode);
-                    debugScreenWrite("setResolution: leaving full-screen mode");
-                    graphicsDevice.setFullScreenWindow(null);
-                    debugScreenWrite("setResolution: failure");
-                    return false;
-                }
-            }
-        } else {
-            debugScreenWrite("setResolution: windowed mode requested");
-            frame.setUndecorated(false);
-            frame.setResizable(!fixedSize);
-            final Point centerPoint = graphicsEnvironment.getCenterPoint();
-            debugScreenWrite("setResolution: screen center point is "+centerPoint);
-            final Dimension dimension = resolution.asDimension();
-            final int x = centerPoint.x-dimension.width/2;
-            final int y = centerPoint.y-dimension.height/2;
-            if (!wasDisplayed) {
-                frame.setLocation(x, y); // try to minimize display movements
-            }
-            frame.setVisible(true);
-            final Insets frameInsets = frame.getInsets();
-            debugScreenWrite("setResolution: frame insets="+frameInsets);
-
-            final Dimension maxDimension = getMaxWindowDimension(frameInsets);
-            debugScreenWrite("setResolution: maximal window dimension="+maxDimension);
-            if (resolution.getWidth() > maxDimension.width || resolution.getHeight() > maxDimension.height) {
-                /*
-                frame.dispose();
-                debugScreenWrite("setResolution: failure");
-                return false;
-                */
-                debugScreenWrite("setResolution: window size exceeds maximum allowed size, ignoring");
-            }
-
-            if (wasDisplayed) {
-                debugScreenWrite("setResolution: resizing window to "+dimension);
-                frame.setPreferredSize(dimension);
-                frame.setSize(dimension);
-            } else {
-                wasDisplayed = true;
-                final int x2 = x-frameInsets.left;
-                final int y2 = y-frameInsets.top;
-                debugScreenWrite("setResolution: moving window to "+x2+"/"+y2+" "+dimension.width+"x"+dimension.height);
-                frame.setBounds(x2, y2, dimension.width, dimension.height);
-            }
-        }
-
-        debugScreenWrite("setResolution: creating buffer strategy");
+    /**
+     * Tries to switch to the given resolution. If resolution switching fails,
+     * the window might be invisible.
+     * @param resolution the resolution to switch to
+     */
+    private void setResolutionPost(@NotNull final Resolution resolution) {
+        debugScreenWrite("setResolutionPost: creating buffer strategy");
         frame.createBufferStrategy(2);
         bufferStrategy = frame.getBufferStrategy();
 
         final Insets insets = frame.getInsets();
-        debugScreenWrite("setResolution: offset="+offsetX+"x"+offsetY);
+        debugScreenWrite("setResolutionPost: offset="+offsetX+"x"+offsetY);
         offsetX = insets.left;
         offsetY = insets.top;
         offsetW = insets.left+insets.right;
         offsetH = insets.top+insets.bottom;
-        debugScreenWrite("setResolution: offset="+offsetX+"x"+offsetY+" "+offsetW+"x"+offsetH+" "+insets);
+        debugScreenWrite("setResolutionPost: offset="+offsetX+"x"+offsetY+" "+offsetW+"x"+offsetH+" "+insets);
 
-        debugScreenWrite("setResolution: requesting focus");
+        debugScreenWrite("setResolutionPost: requesting focus");
         frame.requestFocusInWindow();
 
         updateWindowSize(resolution.getWidth()+offsetW, resolution.getHeight()+offsetH);
 
-        debugScreenWrite("setResolution: success");
-        return true;
+        debugScreenWrite("setResolutionPost: success");
     }
 
     /**
@@ -555,7 +600,7 @@ public class JXCWindowRenderer {
      */
     public void endRendering() {
         if (isFullScreen) {
-            setResolution(new Resolution(true, defaultDisplayMode.getWidth(), defaultDisplayMode.getHeight()), false, true);
+            setWindowMode(new Resolution(true, defaultDisplayMode.getWidth(), defaultDisplayMode.getHeight()), false);
         }
     }
 
