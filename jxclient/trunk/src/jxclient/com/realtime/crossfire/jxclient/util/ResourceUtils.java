@@ -40,19 +40,19 @@ public class ResourceUtils {
 
     /**
      * Loads an image file.
-     * @param unknownPng the resource name to load
+     * @param name the resource name to load
      * @return the image
      * @throws IOException if the image cannot be loaded
      */
     @NotNull
-    public static ImageIcon loadImage(@NotNull final String unknownPng) throws IOException {
-        final URL url = ResourceUtils.class.getClassLoader().getResource(unknownPng);
+    public static ImageIcon loadImage(@NotNull final String name) throws IOException {
+        final URL url = ResourceUtils.class.getClassLoader().getResource(name);
         if (url == null) {
-            throw new IOException("cannot find "+unknownPng);
+            throw new IOException("cannot find "+name);
         }
         final ImageIcon imageIcon = new ImageIcon(url);
         if (imageIcon.getIconWidth() <= 0 || imageIcon.getIconHeight() <= 0) {
-            throw new IOException("cannot load "+unknownPng);
+            throw new IOException("cannot load "+name);
         }
         return imageIcon;
     }
