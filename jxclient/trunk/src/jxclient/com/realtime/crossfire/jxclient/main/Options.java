@@ -24,9 +24,6 @@ package com.realtime.crossfire.jxclient.main;
 import com.realtime.crossfire.jxclient.settings.Filenames;
 import com.realtime.crossfire.jxclient.settings.Settings;
 import com.realtime.crossfire.jxclient.util.Resolution;
-import java.awt.DisplayMode;
-import java.awt.GraphicsDevice;
-import java.awt.GraphicsEnvironment;
 import java.io.IOException;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
@@ -107,7 +104,7 @@ public class Options {
      */
     public void parse(@NotNull final String[] args) throws IOException {
         prefs = new Settings(Filenames.getSettingsFile());
-        resolution = getScreenResolution();
+        resolution = null;
         skin = "default";
 
         // fix changed default skin name
@@ -177,18 +174,6 @@ public class Options {
         if (skin.equals("default")) {
             skin = DEFAULT_SKIN;
         }
-    }
-
-    /**
-     * Returns the current screen's resolution.
-     * @return the screen's resolution.
-     */
-    @NotNull
-    private static Resolution getScreenResolution() {
-        final GraphicsEnvironment ge = GraphicsEnvironment.getLocalGraphicsEnvironment();
-        final GraphicsDevice gd = ge.getDefaultScreenDevice();
-        final DisplayMode displayMode = gd.getDisplayMode();
-        return new Resolution(true, displayMode.getWidth(), displayMode.getHeight());
     }
 
     /**

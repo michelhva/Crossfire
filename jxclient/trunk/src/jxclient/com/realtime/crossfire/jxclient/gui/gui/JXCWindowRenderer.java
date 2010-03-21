@@ -347,15 +347,16 @@ public class JXCWindowRenderer {
     /**
      * Tries to switch to the given resolution. If resolution switching fails,
      * the window might be invisible.
-     * @param resolution the resolution to switch to
+     * @param resolution the resolution to switch to; <code>null</code> to keep
+     * current resolution
      * @return whether the resolution has been changed
      */
-    public boolean setFullScreenMode(@NotNull final Resolution resolution) {
-        debugScreenWrite("setFullScreenMode: resolution="+resolution);
+    public boolean setFullScreenMode(@Nullable final Resolution resolution) {
+        debugScreenWrite("setFullScreenMode: resolution="+(resolution == null ? "default" : resolution));
 
         final DisplayMode currentDisplayMode = graphicsDevice.getDisplayMode();
         debugScreenWrite("setResolutionPre: current display mode="+currentDisplayMode.getWidth()+"x"+currentDisplayMode.getHeight());
-        if (isFullScreen && resolution.getWidth() == windowWidth && resolution.getHeight() == windowHeight) {
+        if (isFullScreen && bufferStrategy != null && (resolution == null || resolution.getWidth() == windowWidth && resolution.getHeight() == windowHeight)) {
             debugScreenWrite("setResolutionPre: no change needed");
             debugScreenWrite("setResolutionPre: success");
             return true;
@@ -365,7 +366,12 @@ public class JXCWindowRenderer {
             return false;
         }
 
-        final Dimension dimension = new Dimension(resolution.getWidth(), resolution.getHeight());
+        final Dimension dimension;
+        if (resolution == null) {
+            dimension = new Dimension(currentDisplayMode.getWidth(), currentDisplayMode.getHeight());
+        } else {
+            dimension = new Dimension(resolution.getWidth(), resolution.getHeight());
+        }
         debugScreenWrite("setFullScreenMode: full-screen requested, dimension="+dimension);
         frame.setPreferredSize(dimension);
         frame.setResizable(false);
@@ -384,7 +390,7 @@ public class JXCWindowRenderer {
         graphicsDevice.setFullScreenWindow(frame);
         isFullScreen = true;
 
-        if (resolution.equalsDisplayMode(currentDisplayMode)) {
+        if (resolution == null || resolution.equalsDisplayMode(currentDisplayMode)) {
             debugScreenWrite("setFullScreenMode: requested resolution matches screen resolution");
         } else {
             if (!graphicsDevice.isDisplayChangeSupported()) {
@@ -411,23 +417,24 @@ public class JXCWindowRenderer {
             }
         }
 
-        setResolutionPost(resolution);
+        setResolutionPost(dimension);
         return true;
     }
 
     /**
      * Tries to switch to the given resolution. If resolution switching fails,
      * the window might be invisible.
-     * @param resolution the resolution to switch to
+     * @param resolution the resolution to switch to, <code>null</code> for
+     * default
      * @param fixedSize whether the window should have fixed size
      * @return whether the resolution has been changed
      */
-    public boolean setWindowMode(@NotNull final Resolution resolution, final boolean fixedSize) {
-        debugScreenWrite("setWindowMode: resolution="+resolution+", fixedSize="+fixedSize);
+    public boolean setWindowMode(@Nullable final Resolution resolution, final boolean fixedSize) {
+        debugScreenWrite("setWindowMode: resolution="+(resolution == null ? "default" : resolution)+", fixedSize="+fixedSize);
 
         final DisplayMode currentDisplayMode = graphicsDevice.getDisplayMode();
         debugScreenWrite("setResolutionPre: current display mode="+currentDisplayMode.getWidth()+"x"+currentDisplayMode.getHeight());
-        if (!isFullScreen && resolution.getWidth() == windowWidth && resolution.getHeight() == windowHeight) {
+        if (!isFullScreen && bufferStrategy !=null && (resolution == null || resolution.getWidth() == windowWidth && resolution.getHeight() == windowHeight)) {
             debugScreenWrite("setResolutionPre: no change needed");
             debugScreenWrite("setResolutionPre: success");
             return true;
@@ -442,7 +449,12 @@ public class JXCWindowRenderer {
         frame.setResizable(!fixedSize);
         final Point centerPoint = graphicsEnvironment.getCenterPoint();
         debugScreenWrite("setResolutionPre: screen center point is "+centerPoint);
-        final Dimension dimension = resolution.asDimension();
+        final Dimension dimension;
+        if (resolution == null) {
+            dimension = new Dimension(currentDisplayMode.getWidth(), currentDisplayMode.getHeight());
+        } else {
+            dimension = resolution.asDimension();
+        }
         final int x = centerPoint.x-dimension.width/2;
         final int y = centerPoint.y-dimension.height/2;
         if (!wasDisplayed) {
@@ -454,7 +466,7 @@ public class JXCWindowRenderer {
 
         final Dimension maxDimension = getMaxWindowDimension(frameInsets);
         debugScreenWrite("setResolutionPre: maximal window dimension="+maxDimension);
-        if (resolution.getWidth() > maxDimension.width || resolution.getHeight() > maxDimension.height) {
+        if (dimension.width > maxDimension.width || dimension.height > maxDimension.height) {
             /*
             frame.dispose();
             debugScreenWrite("setResolutionPre: failure");
@@ -475,7 +487,7 @@ public class JXCWindowRenderer {
             frame.setBounds(x2, y2, dimension.width, dimension.height);
         }
 
-        setResolutionPost(resolution);
+        setResolutionPost(dimension);
         return true;
     }
 
@@ -503,9 +515,9 @@ public class JXCWindowRenderer {
     /**
      * Tries to switch to the given resolution. If resolution switching fails,
      * the window might be invisible.
-     * @param resolution the resolution to switch to
+     * @param dimension the window size to switch to
      */
-    private void setResolutionPost(@NotNull final Resolution resolution) {
+    private void setResolutionPost(@NotNull final Dimension dimension) {
         debugScreenWrite("setResolutionPost: creating buffer strategy");
         frame.createBufferStrategy(2);
         bufferStrategy = frame.getBufferStrategy();
@@ -521,7 +533,7 @@ public class JXCWindowRenderer {
         debugScreenWrite("setResolutionPost: requesting focus");
         frame.requestFocusInWindow();
 
-        updateWindowSize(resolution.getWidth()+offsetW, resolution.getHeight()+offsetH);
+        updateWindowSize(dimension.width+offsetW, dimension.height+offsetH);
 
         debugScreenWrite("setResolutionPost: success");
     }
