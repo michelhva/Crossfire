@@ -249,8 +249,9 @@ public class ItemPainter {
             g.setFont(font);
             g.setColor(nrofColor);
             g.setBackground(new Color(0, 0, 0, 0.0f));
-            renderText(g, h, 0, h/2, item.getTooltipText1());
-            renderText(g, h, h/2, h/2, item.getTooltipText2());
+            final int faceWidth = Math.max(0, face.getWidth(null));
+            renderText(g, faceWidth, 0, h/2, item.getTooltipText1());
+            renderText(g, faceWidth, h/2, h/2, item.getTooltipText2());
         }
     }
 
