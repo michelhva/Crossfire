@@ -87,6 +87,17 @@ public class ClientSocket {
     private boolean reconnect = true;
 
     /**
+     * Only vaid if {@link #reconnect} is set.
+     */
+    @NotNull
+    private String reconnectReason = "disconnect";
+
+    /**
+     * Only valid if {@link #reconnect} is set.
+     */
+    private boolean reconnectIsError = false;
+
+    /**
      * The host to connect to. Set to <code>null</code> for disconnect.
      */
     @Nullable
@@ -246,6 +257,8 @@ public class ClientSocket {
         synchronized (syncConnect) {
             if (this.host == null || this.port == 0 || !this.host.equals(host) || this.port != port) {
                 reconnect = true;
+                reconnectReason = "connect";
+                reconnectIsError = false;
                 this.host = host;
                 this.port = port;
                 selector.wakeup();
@@ -256,14 +269,17 @@ public class ClientSocket {
     /**
      * Terminates the connection. Does nothing if not connected.
      * @param reason the reason for the disconnect
+     * @param isError whether the disconnect is unexpected
      */
-    public void disconnect(@NotNull final String reason) {
+    public void disconnect(@NotNull final String reason, final boolean isError) {
         if (debugProtocol != null) {
-            debugProtocol.debugProtocolWrite("socket:disconnect: "+reason);
+            debugProtocol.debugProtocolWrite("socket:disconnect: "+reason+(isError ? " [unexpected]" : ""));
         }
         synchronized (syncConnect) {
             if (host != null || port != 0) {
                 reconnect = true;
+                reconnectReason = reason;
+                reconnectIsError = isError;
                 host = null;
                 port = 0;
                 selector.wakeup();
@@ -282,10 +298,10 @@ public class ClientSocket {
                     if (reconnect) {
                         reconnect = false;
                         if (host != null && port != 0) {
-                            processDisconnect("reconnect to "+host+":"+port);
+                            processDisconnect("reconnect to "+host+":"+port, false);
                             processConnect(host, port);
                         } else {
-                            processDisconnect("disconnect");
+                            processDisconnect(reconnectReason, reconnectIsError);
                         }
                     }
                 }
@@ -328,13 +344,20 @@ public class ClientSocket {
                     }
                 }
                 assert selectedKeys.isEmpty();
+            } catch (final EOFException ex) {
+                final String tmp = ex.getMessage();
+                final String message = tmp == null ? "EOF" : tmp;
+                if (debugProtocol != null) {
+                    debugProtocol.debugProtocolWrite("socket:exception "+message, ex);
+                }
+                processDisconnect(message, false);
             } catch (final IOException ex) {
                 final String tmp = ex.getMessage();
                 final String message = tmp == null ? "I/O error" : tmp;
                 if (debugProtocol != null) {
                     debugProtocol.debugProtocolWrite("socket:exception "+message, ex);
                 }
-                processDisconnect(message);
+                processDisconnect(message, true);
             }
         }
     }
@@ -392,10 +415,11 @@ public class ClientSocket {
     /**
      * Disconnects the socket. Does nothing if not currently connected.
      * @param reason the reason for disconnection
+     * @param isError whether the disconnect is unexpected
      */
-    private void processDisconnect(@NotNull final String reason) {
+    private void processDisconnect(@NotNull final String reason, final boolean isError) {
         if (debugProtocol != null) {
-            debugProtocol.debugProtocolWrite("socket:disconnecting: "+reason);
+            debugProtocol.debugProtocolWrite("socket:disconnecting: "+reason+(isError ? " [unexpected]" : ""));
         }
         final boolean notifyListeners;
         synchronized (syncOutput) {
@@ -404,7 +428,7 @@ public class ClientSocket {
         }
         if (notifyListeners) {
             for (final ClientSocketListener clientSocketListener : clientSocketListeners) {
-                clientSocketListener.disconnecting(reason);
+                clientSocketListener.disconnecting(reason, isError);
             }
         }
 
@@ -484,7 +508,7 @@ public class ClientSocket {
                     clientSocketListener.packetReceived(inputBuf, start, end);
                 }
             } catch (final UnknownCommandException ex) {
-                disconnect(ex.getMessage());
+                disconnect(ex.getMessage(), true);
                 break;
             }
         }

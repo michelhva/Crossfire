@@ -106,7 +106,7 @@ public abstract class DefaultServerConnection implements ServerConnection {
      */
     @Override
     public void disconnect(@NotNull final String reason) {
-        clientSocket.disconnect(reason);
+        clientSocket.disconnect(reason, false);
     }
 
 }
