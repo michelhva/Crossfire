@@ -146,18 +146,6 @@ import org.jetbrains.annotations.Nullable;
 public class JXCSkinLoader {
 
     /**
-     * The resource for "Click here for next group of items" buttons.
-     */
-    @NotNull
-    private static final String NEXT_GROUP_FACE = "resource/next_group.png";
-
-    /**
-     * The resource for "Click here for previous group of items" buttons.
-     */
-    @NotNull
-    private static final String PREV_GROUP_FACE = "resource/prev_group.png";
-
-    /**
      * The {@link ItemSet} instance to use.
      */
     @NotNull
@@ -358,13 +346,13 @@ public class JXCSkinLoader {
 
         final Image nextGroupFace;
         try {
-            nextGroupFace = ResourceUtils.loadImage(NEXT_GROUP_FACE).getImage();
+            nextGroupFace = ResourceUtils.loadImage(ResourceUtils.NEXT_GROUP_FACE).getImage();
         } catch (final IOException ex) {
             throw new JXCSkinException(ex.getMessage());
         }
         final Image prevGroupFace;
         try {
-            prevGroupFace = ResourceUtils.loadImage(PREV_GROUP_FACE).getImage();
+            prevGroupFace = ResourceUtils.loadImage(ResourceUtils.PREV_GROUP_FACE).getImage();
         } catch (final IOException ex) {
             throw new JXCSkinException(ex.getMessage());
         }
