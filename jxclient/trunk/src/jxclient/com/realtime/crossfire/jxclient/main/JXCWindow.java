@@ -241,9 +241,9 @@ public class JXCWindow extends JFrame {
     private final JXCConnection connection;
 
     /**
-     * The size of the client area.
+     * The size of the client area. Set to <code>null</code> for default.
      */
-    @NotNull
+    @Nullable
     private final Resolution resolution;
 
     /**
@@ -633,7 +633,8 @@ public class JXCWindow extends JFrame {
      * @param settings the settings instance to use
      * @param optionManager the option manager instance to use
      * @param metaserverModel the metaserver model to use
-     * @param resolution the size of the client area
+     * @param resolution the size of the client area, <code>null</code> for
+     * default
      * @param guiStateManager the gui state manager to use
      * @param experienceTable the experience table to use
      * @param skillSet the skill set to use
@@ -643,7 +644,7 @@ public class JXCWindow extends JFrame {
      * @param inventoryView the inventory item view to use
      * @param floorView the floor view to use
      */
-    public JXCWindow(@NotNull final Object terminateSync, @NotNull final CrossfireServerConnection server, @NotNull final Object semaphoreRedraw, final boolean debugGui, @Nullable final Writer debugKeyboard, @Nullable final Writer debugScreen, @NotNull final Settings settings, @NotNull final OptionManager optionManager, @NotNull final MetaserverModel metaserverModel, @NotNull final Resolution resolution, @NotNull final GuiStateManager guiStateManager, @NotNull final ExperienceTable experienceTable, @NotNull final SkillSet skillSet, @NotNull final Stats stats, @NotNull final FacesManager facesManager, @NotNull final ItemSet itemSet, @NotNull final ItemView inventoryView, @NotNull final FloorView floorView) {
+    public JXCWindow(@NotNull final Object terminateSync, @NotNull final CrossfireServerConnection server, @NotNull final Object semaphoreRedraw, final boolean debugGui, @Nullable final Writer debugKeyboard, @Nullable final Writer debugScreen, @NotNull final Settings settings, @NotNull final OptionManager optionManager, @NotNull final MetaserverModel metaserverModel, @Nullable final Resolution resolution, @NotNull final GuiStateManager guiStateManager, @NotNull final ExperienceTable experienceTable, @NotNull final SkillSet skillSet, @NotNull final Stats stats, @NotNull final FacesManager facesManager, @NotNull final ItemSet itemSet, @NotNull final ItemView inventoryView, @NotNull final FloorView floorView) {
         super("");
         this.server = server;
         this.debugGui = debugGui;
@@ -820,11 +821,13 @@ public class JXCWindow extends JFrame {
         final GuiFactory guiFactory = new GuiFactory(debugGui ? mouseTracker : null, commands, guiManager.getCommandCallback(), macros);
         final CommandCallback commandCallback = guiManager.getCommandCallback();
         final JXCSkin skin = newSkin.load(skinSource, server, guiStateManager, guiManager.getTooltipManager(), windowRenderer, windowRenderer.getElementListener(), metaserverModel, commandQueue, shortcutsManager.getShortcuts(), commands, currentSpellManager, commandCallback, macros, guiFactory);
-        if (skin.getMinResolution().getWidth() > resolution.getWidth() || skin.getMinResolution().getHeight() > resolution.getHeight()) {
-            throw new JXCSkinException("resolution "+resolution+" is not supported by this skin");
-        }
-        if (resolution.getWidth() > skin.getMaxResolution().getWidth() || resolution.getHeight() > skin.getMaxResolution().getHeight()) {
-            throw new JXCSkinException("resolution "+resolution+" is not supported by this skin");
+        if (resolution != null) {
+            if (skin.getMinResolution().getWidth() > resolution.getWidth() || skin.getMinResolution().getHeight() > resolution.getHeight()) {
+                throw new JXCSkinException("resolution "+resolution+" is not supported by this skin");
+            }
+            if (resolution.getWidth() > skin.getMaxResolution().getWidth() || resolution.getHeight() > skin.getMaxResolution().getHeight()) {
+                throw new JXCSkinException("resolution "+resolution+" is not supported by this skin");
+            }
         }
 
         return skin;
