@@ -148,21 +148,21 @@ public class TooltipManager {
             return;
         }
 
-        final String tooltipText = tmpActiveGuiElement.getTooltipText();
+        final TooltipText tooltipText = tmpActiveGuiElement.getTooltipText();
         if (tooltipText == null) {
             tmpTooltip.setElementVisible(false);
             return;
         }
 
         tmpTooltip.setElementVisible(true);
-        tmpTooltip.setText(tooltipText);
+        tmpTooltip.setText(tooltipText.getText());
 
-        final int preferredX = tmpActiveGuiElement.getElementX()+tmpActiveGuiElement.getWidth()/2-tmpTooltip.getWidth()/2;
+        final int preferredX = tooltipText.getX()+tooltipText.getW()/2-tmpTooltip.getWidth()/2;
         final int maxX = windowRenderer.getWindowWidth()-tmpTooltip.getWidth();
         final int tx = Math.max(0, Math.min(preferredX, maxX));
         final int ty;
-        final int elementY = tmpActiveGuiElement.getElementY();
-        final int preferredY = elementY+tmpActiveGuiElement.getHeight()+TOOLTIP_DISTANCE;
+        final int elementY = tooltipText.getY();
+        final int preferredY = elementY+tooltipText.getH()+TOOLTIP_DISTANCE;
         if (preferredY+tmpTooltip.getHeight() <= windowRenderer.getWindowHeight()) {
             ty = preferredY;
         } else {
