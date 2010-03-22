@@ -240,9 +240,9 @@ public class GUIItemList extends GUIList {
      * {@inheritDoc}
      */
     @Override
-    protected void updateTooltip(final int index) {
+    protected void updateTooltip(final int index, final int x, final int y, final int w, final int h) {
         final CfItem item = itemView.getItem(index);
-        setTooltipText(item == null ? null : item.getTooltipText());
+        setTooltipText(item == null ? null : item.getTooltipText(), x, y, w, h);
     }
 
     /**

@@ -130,7 +130,7 @@ public abstract class GUIElement extends JPanel {
      * <code>null</code> to show no tooltip.
      */
     @Nullable
-    private String tooltipText = null;
+    private TooltipText tooltipText = null;
 
     /**
      * Create a new instance.
@@ -375,16 +375,33 @@ public abstract class GUIElement extends JPanel {
      * tooltip for this element.
      */
     public void setTooltipText(@Nullable final String tooltipText) {
-        if (this.tooltipText == null) {
+        final Gui tmpGui = gui;
+        if (tmpGui != null) {
+            setTooltipText(tooltipText, tmpGui.getX()+getX(), tmpGui.getY()+getY(), getWidth(), getHeight());
+        }
+    }
+
+    /**
+     * Set the tooltip text to show when the mouse is inside this element.
+     * @param tooltipText The text to show, or <code>null</cod> to disable the
+     * tooltip for this element.
+     * @param x the x coordinate
+     * @param y the y coordinate
+     * @param w the w coordinate
+     * @param h the h coordinate
+     */
+    public void setTooltipText(@Nullable final String tooltipText, final int x, final int y, final int w, final int h) {
+        final TooltipText oldTooltipText = this.tooltipText;
+        if (oldTooltipText == null) {
             if (tooltipText == null) {
                 return;
             }
         } else {
-            if (tooltipText != null && tooltipText.equals(this.tooltipText)) {
+            if (tooltipText != null && tooltipText.equals(oldTooltipText.getText()) && x == oldTooltipText.getX() && y == oldTooltipText.getY() && w == oldTooltipText.getW() && h == oldTooltipText.getH()) {
                 return;
             }
         }
-        this.tooltipText = tooltipText;
+        this.tooltipText = tooltipText == null ? null : new TooltipText(tooltipText, x, y, w, h);
         tooltipManager.updateElement(this);
     }
 
@@ -394,7 +411,7 @@ public abstract class GUIElement extends JPanel {
      *         this element.
      */
     @Nullable
-    public String getTooltipText() {
+    public TooltipText getTooltipText() {
         return tooltipText;
     }
 

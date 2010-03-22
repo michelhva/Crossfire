@@ -25,6 +25,7 @@ import com.realtime.crossfire.jxclient.gui.gui.ActivatableGUIElement;
 import com.realtime.crossfire.jxclient.gui.gui.GUIElement;
 import com.realtime.crossfire.jxclient.gui.gui.GUIElementListener;
 import com.realtime.crossfire.jxclient.gui.gui.TooltipManager;
+import com.realtime.crossfire.jxclient.gui.gui.Gui;
 import com.realtime.crossfire.jxclient.gui.item.GUIItemItem;
 import com.realtime.crossfire.jxclient.gui.scrollable.GUIScrollable;
 import com.realtime.crossfire.jxclient.skin.skin.Extent;
@@ -34,6 +35,7 @@ import java.awt.Color;
 import java.awt.Composite;
 import java.awt.Dimension;
 import java.awt.Graphics2D;
+import java.awt.Rectangle;
 import java.awt.Transparency;
 import java.awt.event.MouseEvent;
 import javax.swing.DefaultListModel;
@@ -438,7 +440,25 @@ public abstract class GUIList extends ActivatableGUIElement implements GUIScroll
      */
     private void doTooltip(@NotNull final MouseEvent e) {
         synchronized (getTreeLock()) {
-            updateTooltip(list.getFirstVisibleIndex()+list.locationToIndex(e.getPoint()));
+            final int index = list.locationToIndex(e.getPoint());
+            if (index == -1) {
+                setTooltipText(null);
+                return;
+            }
+
+            final Rectangle rect = list.getCellBounds(index, index);
+            if (!rect.contains(e.getPoint())) {
+                setTooltipText(null);
+                return;
+            }
+
+            final Gui gui = getGui();
+            if (gui == null) {
+                setTooltipText(null);
+                return;
+            }
+
+            updateTooltip(list.getFirstVisibleIndex()+index, gui.getX()+getX()+rect.x, gui.getY()+getY()+rect.y, rect.width, rect.height);
         }
     }
 
@@ -480,8 +500,12 @@ public abstract class GUIList extends ActivatableGUIElement implements GUIScroll
     /**
      * Updates the tooltip text.
      * @param index the index to use
+     * @param x the x coordinate of the cell
+     * @param y the y coordinate of the cell
+     * @param w the width of the cell
+     * @param h the height of the cell
      */
-    protected abstract void updateTooltip(final int index);
+    protected abstract void updateTooltip(final int index, final int x, final int y, final int w, final int h);
 
     /**
      * Sets the layout orientation. See {@link JList#setLayoutOrientation(int)}
