@@ -72,4 +72,18 @@ public class MathUtils {
         }
     }
 
+    /**
+     * Returns the quotient of two values, rounded to the nearest integer.
+     * @param numerator the numerator
+     * @param denominator the denominator
+     * @return the quotient
+     */
+    public static int divRound(final int numerator, final int denominator) {
+        if (numerator >= 0) {
+            return (numerator+denominator/2)/denominator;
+        } else {
+            return -((-numerator-denominator/2+1)/denominator);
+        }
+    }
+
 }
