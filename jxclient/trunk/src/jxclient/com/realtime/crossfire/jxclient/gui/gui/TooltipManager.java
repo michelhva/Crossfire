@@ -157,12 +157,16 @@ public class TooltipManager {
         tmpTooltip.setElementVisible(true);
         tmpTooltip.setText(tooltipText);
 
-        final int tx = Math.max(0, Math.min(tmpActiveGuiElement.getElementX()+tmpActiveGuiElement.getWidth()/2-tmpTooltip.getWidth()/2, windowRenderer.getWindowWidth()-tmpTooltip.getWidth()));
+        final int preferredX = tmpActiveGuiElement.getElementX()+tmpActiveGuiElement.getWidth()/2-tmpTooltip.getWidth()/2;
+        final int maxX = windowRenderer.getWindowWidth()-tmpTooltip.getWidth();
+        final int tx = Math.max(0, Math.min(preferredX, maxX));
         final int ty;
-        if (tmpActiveGuiElement.getElementY()+tmpActiveGuiElement.getHeight()+TOOLTIP_DISTANCE+tmpTooltip.getHeight() <= windowRenderer.getWindowHeight()) {
-            ty = tmpActiveGuiElement.getElementY()+tmpActiveGuiElement.getHeight()+TOOLTIP_DISTANCE;
+        final int elementY = tmpActiveGuiElement.getElementY();
+        final int preferredY = elementY+tmpActiveGuiElement.getHeight()+TOOLTIP_DISTANCE;
+        if (preferredY+tmpTooltip.getHeight() <= windowRenderer.getWindowHeight()) {
+            ty = preferredY;
         } else {
-            ty = tmpActiveGuiElement.getElementY()-tmpTooltip.getHeight()-TOOLTIP_DISTANCE;
+            ty = elementY-tmpTooltip.getHeight()-TOOLTIP_DISTANCE;
         }
         tmpTooltip.setElementLocation(tx, ty);
     }
