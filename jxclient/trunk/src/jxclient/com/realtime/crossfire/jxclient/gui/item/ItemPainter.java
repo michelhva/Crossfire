@@ -40,6 +40,11 @@ import org.jetbrains.annotations.Nullable;
 public class ItemPainter {
 
     /**
+     * The indentation of the item's text from the icon.
+     */
+    private static final int TEXT_OFFSET = 3;
+
+    /**
      * The overlay image for cursed objects.
      */
     @Nullable
@@ -267,8 +272,8 @@ public class ItemPainter {
             g.setFont(font);
             g.setColor(nrofColor);
             g.setBackground(new Color(0, 0, 0, 0.0f));
-            renderText(g, h, 0, h/2, item.getTooltipText1());
-            renderText(g, h, h/2, h/2, item.getTooltipText2());
+            renderText(g, TEXT_OFFSET+h, 0, h/2, item.getTooltipText1());
+            renderText(g, TEXT_OFFSET+h, h/2, h/2, item.getTooltipText2());
         }
     }
 
