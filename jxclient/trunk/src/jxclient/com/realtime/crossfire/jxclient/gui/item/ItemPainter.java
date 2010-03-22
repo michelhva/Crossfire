@@ -22,6 +22,7 @@
 package com.realtime.crossfire.jxclient.gui.item;
 
 import com.realtime.crossfire.jxclient.items.CfItem;
+import com.realtime.crossfire.jxclient.util.MathUtils;
 import java.awt.Color;
 import java.awt.Font;
 import java.awt.Graphics;
@@ -230,7 +231,24 @@ public class ItemPainter {
         paintColor(g, lockedColor, item.isLocked());
         paintColor(g, selectorColor, selected);
         paintColor(g, unpaidColor, item.isUnpaid());
-        g.drawImage(face, 0, 0, null);
+        final int imageW = Math.max(0, face.getWidth(null));
+        final int imageH = Math.max(0, face.getHeight(null));
+        final int scaledW;
+        final int scaledH;
+        final int offsetX;
+        final int offsetY;
+        if (imageW > imageH) {
+            scaledW = h;
+            scaledH = MathUtils.divRound(imageH*h, imageW);
+            offsetX = 0;
+            offsetY = (h-scaledH)/2;
+        } else {
+            scaledW = MathUtils.divRound(imageW*h, imageH);
+            scaledH = h;
+            offsetX = (h-scaledW)/2;
+            offsetY = 0;
+        }
+        g.drawImage(face, offsetX, offsetY, scaledW, scaledH, null);
         paintImage(g, appliedImage, item.isApplied());
         paintImage(g, cursedImage, item.isCursed());
         paintImage(g, damnedImage, item.isDamned());
@@ -249,9 +267,8 @@ public class ItemPainter {
             g.setFont(font);
             g.setColor(nrofColor);
             g.setBackground(new Color(0, 0, 0, 0.0f));
-            final int faceWidth = Math.max(0, face.getWidth(null));
-            renderText(g, faceWidth, 0, h/2, item.getTooltipText1());
-            renderText(g, faceWidth, h/2, h/2, item.getTooltipText2());
+            renderText(g, h, 0, h/2, item.getTooltipText1());
+            renderText(g, h, h/2, h/2, item.getTooltipText2());
         }
     }
 
