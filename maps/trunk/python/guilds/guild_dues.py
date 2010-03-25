@@ -16,15 +16,7 @@
 #
 # author:Avion temitchell@sourceforge.net
 
-import Crossfire
-import CFGuilds
-import CFItemBroker
-import random
-import string
-import sys
-import CFBank
-import CFMail
-import CFLog
+import Crossfire,CFGuilds,CFItemBroker,random,string,sys,CFBank,CFMail,CFLog
 
 log = CFLog.CFLog()
 priceMailScroll = 5
