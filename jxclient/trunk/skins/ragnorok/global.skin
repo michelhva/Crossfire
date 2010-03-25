@@ -100,7 +100,7 @@ key char 106 use_skill jumping
 key char 109 -e maps -
 key char 115 use_skill find traps
 key char 112 use_skill praying
-key char 116 ready_skill throwing
+key char 116 pickup !inhibit
 key char 119 who
 key char 63 help
 key char 44 get

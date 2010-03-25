@@ -15,8 +15,8 @@ Key bindings
 Define or replace a key binding:      /bind mapinfo
 Define a per-character key binding: /bind -c cast burning hands
 Undefine a key binding:                    /unbind
-Pre-defined keybindings include: a=apply, d=disarm traps, e=examine, i=mapinfo, p=pray, s=search traps, t=throw, w=who, Fx=toggle dialogs, "=say
-                                                                                                                                                                                                                  ENTER=/chat
+Pre-defined keybindings include: a=apply, d=disarm traps, e=examine, i=mapinfo, p=pray, s=search traps, t=toggle pickup, w=who, Fx=toggle dialogs
+                                                                                                                                                                                                         "=say, ENTER=/chat
 Mouse bindings
 =============
 map window:
