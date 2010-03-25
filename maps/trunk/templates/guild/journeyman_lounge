@@ -8,7 +8,7 @@ enter_x 1
 enter_y 8
 msg
 Created:  2004-05-12
-Modified: 2009-12-12 perkins
+Modified: 2010-02-28 perkins
 endmsg
 end
 arch woodfloor
@@ -351,6 +351,8 @@ is_buildable 1
 end
 arch stair_down_2
 slaying master_lounge
+hp 1
+sp 8
 x 1
 y 10
 end
