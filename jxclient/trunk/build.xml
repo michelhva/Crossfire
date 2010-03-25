@@ -58,8 +58,8 @@
             <fileset dir="." includes="resource/spells/*.png"/>
             <fileset dir="." includes="resource/splashscreen.png"/>
             <fileset dir="." includes="resource/unknown.png"/>
-            <zipfileset src="jxcskin_prelude.jar"/>
-            <zipfileset src="jxcskin_ragnorok.jar"/>
+            <fileset dir="${build}/skin.ragnorok"/>
+            <fileset dir="${build}/skin.prelude"/>
             <manifest>
                 <attribute name="Main-Class" value="com.realtime.crossfire.jxclient.main.JXClient"/>
                 <attribute name="SplashScreen-Image" value="resource/splashscreen.png"/>
@@ -76,7 +76,6 @@
                 <include name="resolutions"/>
             </fileset>
         </copy>
-        <jar destfile="jxcskin_prelude.jar" basedir="${build}/skin.prelude"/>
     </target>
     <target name="skin.ragnorok">
         <delete dir="${build}/skin.ragnorok/com/realtime/crossfire/jxclient/skins/ragnorok"/>
@@ -88,13 +87,10 @@
                 <include name="resolutions"/>
             </fileset>
         </copy>
-        <jar destfile="jxcskin_ragnorok.jar" basedir="${build}/skin.ragnorok"/>
     </target>
     <target name="clean">
         <delete dir="${build}" failonerror="false"/>
         <delete file="jxclient.jar" failonerror="false"/>
-        <delete file="jxcskin_prelude.jar" failonerror="false"/>
-        <delete file="jxcskin_ragnorok.jar" failonerror="false"/>
         <delete dir="doc-html" failonerror="false"/>
     </target>
     <target name="all" depends="jar">
