@@ -329,7 +329,7 @@ public interface CrossfireStatsListener {
     /**
      * Resistance to turn undead.
      */
-    int CS_STAT_TURN_UNDEAD = 112;
+    int CS_STAT_RES_TURN_UNDEAD = 112;
 
     /**
      * Resistance to fear.

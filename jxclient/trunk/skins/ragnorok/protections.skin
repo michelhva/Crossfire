@@ -42,5 +42,5 @@ textgauge res_drain          460  31  74  14 gauge_gp gauge_gp_negative gauge_em
 textgauge res_deplete        460  51  74  14 gauge_gp gauge_gp_negative gauge_empty RES_DEPLETE WE BLACK font_label Depletion:
 textgauge res_death          460  71  74  14 gauge_gp gauge_gp_negative gauge_empty RES_DEATH WE BLACK font_label Death:
 textgauge res_ghosthit       460  91  74  14 gauge_gp gauge_gp_negative gauge_empty RES_GHOSTHIT WE BLACK font_label Ghosthit:
-textgauge res_turn_undead    460 111  74  14 gauge_gp gauge_gp_negative gauge_empty TURN_UNDEAD WE BLACK font_label Turn undead:
+textgauge res_turn_undead    460 111  74  14 gauge_gp gauge_gp_negative gauge_empty RES_TURN_UNDEAD WE BLACK font_label Turn undead:
 textgauge res_holy_word      460 131  74  14 gauge_gp gauge_gp_negative gauge_empty RES_HOLYWORD WE BLACK font_label Holy word:
