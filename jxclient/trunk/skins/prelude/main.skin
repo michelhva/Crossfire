@@ -336,7 +336,7 @@ gauge gr8 152+630  42+628 29 11 res_gauge_positive res_gauge_negative res_gauge_
 gauge gr9   0+630  63+628 29 11 res_gauge_positive res_gauge_negative res_gauge_empty RES_POISON WE Poison:
 gauge grA  76+630  63+628 29 11 res_gauge_positive res_gauge_negative res_gauge_empty RES_SLOW WE Slow:
 gauge grB 152+630  63+628 29 11 res_gauge_positive res_gauge_negative res_gauge_empty RES_PARA WE Paralyze:
-gauge grC   0+630  84+628 29 11 res_gauge_positive res_gauge_negative res_gauge_empty TURN_UNDEAD WE Turn Undead:
+gauge grC   0+630  84+628 29 11 res_gauge_positive res_gauge_negative res_gauge_empty RES_TURN_UNDEAD WE Turn Undead:
 gauge grD  76+630  84+628 29 11 res_gauge_positive res_gauge_negative res_gauge_empty RES_FEAR WE Fear:
 gauge grE 152+630  84+628 29 11 res_gauge_positive res_gauge_negative res_gauge_empty RES_DEPLETE WE Depletion:
 gauge grF   0+630 105+628 29 11 res_gauge_positive res_gauge_negative res_gauge_empty RES_DEATH WE Death:

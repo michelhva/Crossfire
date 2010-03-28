@@ -84,13 +84,13 @@ public class StatsParser {
         statTable.put("RES_PHYS", CrossfireStatsListener.CS_STAT_RES_PHYS);
         statTable.put("RES_POISON", CrossfireStatsListener.CS_STAT_RES_POISON);
         statTable.put("RES_SLOW", CrossfireStatsListener.CS_STAT_RES_SLOW);
+        statTable.put("RES_TURN_UNDEAD", CrossfireStatsListener.CS_STAT_RES_TURN_UNDEAD);
         statTable.put("SP", CrossfireStatsListener.CS_STAT_SP);
         statTable.put("SPEED", CrossfireStatsListener.CS_STAT_SPEED);
         statTable.put("STR", CrossfireStatsListener.CS_STAT_STR);
         statTable.put("STR_BASE", CrossfireStatsListener.CS_STAT_BASE_STR);
         statTable.put("STR_RACE", CrossfireStatsListener.CS_STAT_RACE_STR);
         statTable.put("TITLE", CrossfireStatsListener.CS_STAT_TITLE);
-        statTable.put("TURN_UNDEAD", CrossfireStatsListener.CS_STAT_TURN_UNDEAD);
         statTable.put("WC", CrossfireStatsListener.CS_STAT_WC);
         statTable.put("WEIGHT", CrossfireStatsListener.C_STAT_WEIGHT);
         statTable.put("WEIGHT_LIMIT", CrossfireStatsListener.CS_STAT_WEIGHT_LIM);
