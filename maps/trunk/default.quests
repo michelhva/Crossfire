@@ -24,24 +24,30 @@ description
 Spike, the weapon shop owner, has backaches, and needs a potion to endure his pains.
 end_description
 restart 1
-step 1
+step 10
 description
 You need to get a potion from the potion shop.
 end_description
 end_step
-step 2
+step 20
 description
 You need to get some smaprh roots from Bob's shop in the south of Darcap.
 end_description
 end_step
-step 3
+step 30
 description
 Bring back the smaprh roots to Molthir.
 end_description
 end_step
-step 4
+step 40
 description
 Bring back the potion to Spike.
+end_description
+end_step
+step 50
+finishes_quest
+description
+You have brought the potion back to Spike
 end_description
 end_step
 end_quest
