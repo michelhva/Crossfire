@@ -1500,14 +1500,14 @@ public class JXCSkinLoader {
 
         final String name = args[1];
         final Extent extent = parseExtent(args, 2);
-        final BufferedImage emptyImage = imageParser.getImage(args[6]);
+        final BufferedImage backgroundImage = imageParser.getImage(args[6]);
         final Font fontPrint = definedFonts.lookup(args[7]);
         final Font fontFixed = definedFonts.lookup(args[8]);
         final Font fontFixedBold = definedFonts.lookup(args[9]);
         final Font fontArcane = definedFonts.lookup(args[10]);
         final Color defaultColor = ParseUtils.parseColor(args[11]);
         final Fonts fonts = new Fonts(fontPrint, fontFixed, fontFixedBold, fontArcane);
-        final GUIElement element = new GUILabelLog(tooltipManager, elementListener, name, extent, emptyImage, fonts, defaultColor);
+        final GUIElement element = new GUILabelLog(tooltipManager, elementListener, name, extent, backgroundImage, fonts, defaultColor);
         insertGuiElement(element);
     }
 
