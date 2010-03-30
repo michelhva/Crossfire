@@ -179,7 +179,7 @@ public class GUIItemShortcut extends GUIItem {
         /** {@inheritDoc} */
         @Override
         public void faceUpdated(@NotNull final Face face) {
-            if (shortcut != null && shortcut instanceof ShortcutSpell && face.getFaceNum() == ((ShortcutSpell)shortcut).getSpell().getFaceNum()) {
+            if (shortcut != null && shortcut.displaysFace(face)) {
                 setChanged();
             }
         }

@@ -21,6 +21,7 @@
 
 package com.realtime.crossfire.jxclient.shortcuts;
 
+import com.realtime.crossfire.jxclient.faces.Face;
 import javax.swing.event.EventListenerList;
 import org.jetbrains.annotations.NotNull;
 
@@ -84,5 +85,12 @@ public abstract class Shortcut {
      * @param visitor the visitor to call
      */
     public abstract void visit(@NotNull final ShortcutVisitor visitor);
+
+    /**
+     * Returns whether this shortcut displays the given face.
+     * @param face the face to check for
+     * @return whether the face is displayed
+     */
+    public abstract boolean displaysFace(final Face face);
 
 }
