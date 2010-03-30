@@ -85,4 +85,12 @@ public class ShortcutCommand extends Shortcut {
         return command;
     }
 
+    /**
+     * {@inheritDoc}
+     */
+    @Override
+    public void visit(@NotNull final ShortcutVisitor visitor) {
+        visitor.visit(this);
+    }
+
 }
