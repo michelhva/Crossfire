@@ -74,10 +74,10 @@ public class GUIMetaElementList extends GUIList {
     private final String name;
 
     /**
-     * The tcp image for drawing list entries.
+     * The image for drawing list entries.
      */
     @Nullable
-    private final BufferedImage tcpImage;
+    private final BufferedImage image;
 
     /**
      * The font for drawing list entries.
@@ -144,7 +144,7 @@ public class GUIMetaElementList extends GUIList {
      * @param cellWidth the width of each cell
      * @param cellHeight the height of each cell
      * @param metaserverModel the metaserver model to track
-     * @param tcpImage the tcp image for drawing list entries
+     * @param image the image for drawing list entries
      * @param font the font for drawing list entries
      * @param format the format for drawing list entries
      * @param tooltip the tooltip format for drawing list entries
@@ -152,13 +152,13 @@ public class GUIMetaElementList extends GUIList {
      * <code>null</code>
      * @param comment the comment field to update; may be <code>null</code>
      */
-    public GUIMetaElementList(@NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final String name, @NotNull final Extent extent, final int cellWidth, final int cellHeight, @NotNull final MetaserverModel metaserverModel, @Nullable final BufferedImage tcpImage, @NotNull final Font font, @NotNull final String format, @NotNull final String tooltip, @Nullable final GUIText hostname, @Nullable final AbstractLabel comment) {
-        super(tooltipManager, elementListener, name, extent, cellWidth, cellHeight, new MetaElementCellRenderer(new GUIMetaElement(tooltipManager, elementListener, metaserverModel, name+"_template", extent.getConstantW(), cellHeight, tcpImage, font, 0, format, tooltip)));
+    public GUIMetaElementList(@NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final String name, @NotNull final Extent extent, final int cellWidth, final int cellHeight, @NotNull final MetaserverModel metaserverModel, @Nullable final BufferedImage image, @NotNull final Font font, @NotNull final String format, @NotNull final String tooltip, @Nullable final GUIText hostname, @Nullable final AbstractLabel comment) {
+        super(tooltipManager, elementListener, name, extent, cellWidth, cellHeight, new MetaElementCellRenderer(new GUIMetaElement(tooltipManager, elementListener, metaserverModel, name+"_template", extent.getConstantW(), cellHeight, image, font, 0, format, tooltip)));
         this.metaserverModel = metaserverModel;
         this.tooltipManager = tooltipManager;
         this.elementListener = elementListener;
         this.name = name;
-        this.tcpImage = tcpImage;
+        this.image = image;
         this.font = font;
         this.format = format;
         this.tooltip = tooltip;
@@ -189,7 +189,7 @@ public class GUIMetaElementList extends GUIList {
             final int oldSize = resizeElements(newSize);
             if (oldSize < newSize) {
                 for (int i = oldSize; i < newSize; i++) {
-                    final GUIElement metaElement = new GUIMetaElement(tooltipManager, elementListener, metaserverModel, name+i, 1, 1, tcpImage, font, i, format, tooltip);
+                    final GUIElement metaElement = new GUIMetaElement(tooltipManager, elementListener, metaserverModel, name+i, 1, 1, image, font, i, format, tooltip);
                     addElement(metaElement);
                     metaserverModel.addMetaserverEntryListener(i, metaserverEntryListener);
                 }

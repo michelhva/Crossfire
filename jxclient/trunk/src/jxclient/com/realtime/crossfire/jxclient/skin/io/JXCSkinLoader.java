@@ -1671,14 +1671,14 @@ public class JXCSkinLoader {
         final Extent extent = parseExtent(args, 2);
         final int cellWidth = ExpressionParser.parseInt(args[6]);
         final int cellHeight = ExpressionParser.parseInt(args[7]);
-        final BufferedImage tcpImage = args[8].equals("null") ? null : imageParser.getImage(args[8]);
+        final BufferedImage image = args[8].equals("null") ? null : imageParser.getImage(args[8]);
         final Font font = definedFonts.lookup(args[9]);
         final GUIText text = args[10].equals("null") ? null : guiElementParser.lookupTextElement(args[10]);
         final AbstractLabel label = args[11].equals("null") ? null : guiElementParser.lookupLabelElement(args[11]);
         final String format = args[12];
         final String tooltip = args[13];
 
-        final GUIElement list = new GUIMetaElementList(tooltipManager, elementListener, name, extent, cellWidth, cellHeight, metaserverModel, tcpImage, font, format, tooltip, text, label);
+        final GUIElement list = new GUIMetaElementList(tooltipManager, elementListener, name, extent, cellWidth, cellHeight, metaserverModel, image, font, format, tooltip, text, label);
         insertGuiElement(list);
     }
 

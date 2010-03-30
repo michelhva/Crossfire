@@ -62,7 +62,7 @@ public class GUIMetaElement extends ActivatableGUIElement implements GUIScrollab
      * to draw no image.
      */
     @Nullable
-    private final Image tcpImage;
+    private final Image image;
 
     /**
      * The font to use.
@@ -118,17 +118,17 @@ public class GUIMetaElement extends ActivatableGUIElement implements GUIScrollab
      * @param name the name of this element
      * @param w the width for drawing this element to screen
      * @param h the height for drawing this element to screen
-     * @param tcpImage an image to draw before the server description. May be
+     * @param image an image to draw before the server description. May be
      * <code>null</code> to draw no image
      * @param font the font to use
      * @param defaultIndex the initial metaserver index
      * @param format the format used to display metaserver instances
      * @param tooltip the format used for displaying tooltips
      */
-    public GUIMetaElement(@NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final MetaserverModel metaserverModel, @NotNull final String name, final int w, final int h, @Nullable final Image tcpImage, @NotNull final Font font, final int defaultIndex, @NotNull final String format, @NotNull final String tooltip) {
+    public GUIMetaElement(@NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final MetaserverModel metaserverModel, @NotNull final String name, final int w, final int h, @Nullable final Image image, @NotNull final Font font, final int defaultIndex, @NotNull final String format, @NotNull final String tooltip) {
         super(tooltipManager, elementListener, name, new Extent(0, 0, w, h), Transparency.TRANSLUCENT);
         this.metaserverModel = metaserverModel;
-        this.tcpImage = tcpImage;
+        this.image = image;
         this.font = font;
         this.defaultIndex = defaultIndex;
         index = defaultIndex;
@@ -158,10 +158,10 @@ public class GUIMetaElement extends ActivatableGUIElement implements GUIScrollab
         g.clearRect(0, 0, getWidth(), getHeight());
         g.setFont(font);
         g.setColor(isActive() || selected ? Color.RED : Color.GRAY);
-        if (tcpImage != null) {
-            g.drawImage(tcpImage, 0, 0, null);
+        if (image != null) {
+            g.drawImage(image, 0, 0, null);
         }
-        g.drawString(metaEntry == null ? "" : metaEntry.format(format), tcpImage != null ? tcpImage.getWidth(this) : 0, font.getSize()+1);
+        g.drawString(metaEntry == null ? "" : metaEntry.format(format), image != null ? image.getWidth(this) : 0, font.getSize()+1);
     }
 
     /**
