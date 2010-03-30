@@ -10,7 +10,7 @@ textbutton button_msg   40 5 76 18 false command_message_show_msg Important
 textbutton button_chat 119 5 43 18 false command_message_show_chat Chat
 
 # "all" tab
-log_message log_all 4 25 562 190-25-16-4 empty font_log_print font_log_fixed font_log_fixed_bold font_log_arcane BLACK
+log_message log_all 4 25 562 190-25-16-4 null font_log_print font_log_fixed font_log_fixed_bold font_log_arcane BLACK
 log_color log_all 1 #808080
 log_color log_all 4 #e07000
 log_color log_all 5 #6040c0
@@ -26,7 +26,7 @@ commandlist_add command_messages_up_all log_all SCROLL -1
 commandlist_add command_messages_down_all log_all SCROLL 1
 
 # "important" tab
-log_message log_msg 4 25 562 190-30-16-4 empty font_log_print font_log_fixed font_log_fixed_bold font_log_arcane BLACK
+log_message log_msg 4 25 562 190-30-16-4 null font_log_print font_log_fixed font_log_fixed_bold font_log_arcane BLACK
 log_color log_msg 1 #808080
 log_color log_msg 4 #e07000
 log_color log_msg 5 #6040c0
@@ -43,7 +43,7 @@ commandlist_add command_messages_up_msg log_msg SCROLL -1
 commandlist_add command_messages_down_msg log_msg SCROLL 1
 
 # "chat" tab
-log_message log_chat 4 25 562 190-30-16-4 empty font_log_print font_log_fixed font_log_fixed_bold font_log_arcane BLACK
+log_message log_chat 4 25 562 190-30-16-4 null font_log_print font_log_fixed font_log_fixed_bold font_log_arcane BLACK
 log_color log_chat 1 #808080
 log_color log_chat 4 #e07000
 log_color log_chat 5 #6040c0

@@ -21,7 +21,7 @@ label_stat stat_wis       729 280  25  16 font_label BLACK WIS RIGHT
 label_stat stat_pow       729 300  25  16 font_label BLACK POW RIGHT
 label_stat stat_cha       729 320  25  16 font_label BLACK CHA RIGHT
 
-log_message messages       20  55 646 295 empty font_log_print font_log_fixed font_log_fixed_bold font_log_arcane BLACK
+log_message messages       20  55 646 295 null font_log_print font_log_fixed font_log_fixed_bold font_log_arcane BLACK
 log_color messages 1 #000000
 log_color messages 4 #b78b00
 log_color messages 5 #8080ff
