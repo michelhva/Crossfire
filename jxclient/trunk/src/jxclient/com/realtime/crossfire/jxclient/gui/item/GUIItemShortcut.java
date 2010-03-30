@@ -30,6 +30,7 @@ import com.realtime.crossfire.jxclient.shortcuts.Shortcut;
 import com.realtime.crossfire.jxclient.shortcuts.ShortcutCommand;
 import com.realtime.crossfire.jxclient.shortcuts.ShortcutListener;
 import com.realtime.crossfire.jxclient.shortcuts.ShortcutSpell;
+import com.realtime.crossfire.jxclient.shortcuts.ShortcutVisitor;
 import com.realtime.crossfire.jxclient.shortcuts.Shortcuts;
 import com.realtime.crossfire.jxclient.shortcuts.ShortcutsListener;
 import com.realtime.crossfire.jxclient.skin.skin.Extent;
@@ -289,27 +290,34 @@ public class GUIItemShortcut extends GUIItem {
         g.setBackground(BACKGROUND_COLOR);
         g.clearRect(0, 0, getWidth(), getHeight());
 
-        if (shortcut == null) {
+        final Shortcut tmpShortcut = shortcut;
+        if (tmpShortcut == null) {
             return;
         }
 
-        if (shortcut instanceof ShortcutSpell) {
-            final ShortcutSpell shortcutSpell = (ShortcutSpell)shortcut;
-            final Color color = shortcutSpell.isCast() ? castColor : invokeColor;
-            if (color != null) {
-                g.setColor(color);
-                g.fillRect(0, 0, w, h);
+        final ShortcutVisitor visitor = new ShortcutVisitor() {
+            /** {@inheritDoc} */
+            @Override
+            public void visit(@NotNull final ShortcutCommand shortcutCommand) {
+                // XXX: todo
             }
-            g.drawImage(facesManager.getOriginalImageIcon(shortcutSpell.getSpell().getFaceNum()).getImage(), 0, 0, null);
-            final Image image = shortcutSpell.isCast() ? castImage : invokeImage;
-            if (image != null) {
-                g.drawImage(image, 0, 0, null);
+
+            /** {@inheritDoc} */
+            @Override
+            public void visit(@NotNull final ShortcutSpell shortcutSpell) {
+                final Color color = shortcutSpell.isCast() ? castColor : invokeColor;
+                if (color != null) {
+                    g.setColor(color);
+                    g.fillRect(0, 0, w, h);
+                }
+                g.drawImage(facesManager.getOriginalImageIcon(shortcutSpell.getSpell().getFaceNum()).getImage(), 0, 0, null);
+                final Image image = shortcutSpell.isCast() ? castImage : invokeImage;
+                if (image != null) {
+                    g.drawImage(image, 0, 0, null);
+                }
             }
-        } else if (shortcut instanceof ShortcutCommand) {
-            // XXX: todo
-        } else {
-            throw new AssertionError();
-        }
+        };
+        tmpShortcut.visit(visitor);
         g.setFont(font);
         g.setColor(Color.YELLOW);
         g.drawString("F"+(index+1), 1, 1+font.getSize()); // XXX: define in skin

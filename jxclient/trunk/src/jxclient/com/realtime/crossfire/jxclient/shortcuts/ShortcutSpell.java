@@ -145,4 +145,12 @@ public class ShortcutSpell extends Shortcut {
         return command+spell.getTooltipText();
     }
 
+    /**
+     * {@inheritDoc}
+     */
+    @Override
+    public void visit(@NotNull final ShortcutVisitor visitor) {
+        visitor.visit(this);
+    }
+
 }
