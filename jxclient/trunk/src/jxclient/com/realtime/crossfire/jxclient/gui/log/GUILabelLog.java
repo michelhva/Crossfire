@@ -27,6 +27,7 @@ import com.realtime.crossfire.jxclient.skin.skin.Extent;
 import java.awt.Color;
 import java.awt.Image;
 import org.jetbrains.annotations.NotNull;
+import org.jetbrains.annotations.Nullable;
 
 /**
  * A gui element implementing a static text field which may contain media tags.
@@ -63,7 +64,7 @@ public class GUILabelLog extends GUILog {
      * @param defaultColor the default color to use for text message not
      * specifying a color
      */
-    public GUILabelLog(@NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final String name, @NotNull final Extent extent, @NotNull final Image backgroundImage, @NotNull final Fonts fonts, @NotNull final Color defaultColor) {
+    public GUILabelLog(@NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final String name, @NotNull final Extent extent, @Nullable final Image backgroundImage, @NotNull final Fonts fonts, @NotNull final Color defaultColor) {
         super(tooltipManager, elementListener, name, extent, backgroundImage, fonts);
         this.defaultColor = defaultColor;
     }
