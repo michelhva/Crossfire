@@ -70,17 +70,29 @@ public class GUIItemShortcut extends GUIItem {
     @NotNull
     private final FacesManager facesManager;
 
+    /**
+     * The background color for shortcuts that /cast a spell.
+     */
     @Nullable
-    private final Color cursedColor;
+    private final Color castColor;
 
+    /**
+     * The overlay image for shortcuts that /cast a spell.
+     */
     @Nullable
-    private final Image cursedImage;
+    private final Image castImage;
 
+    /**
+     * The background color for shortcuts that /invoke a spell.
+     */
     @Nullable
-    private final Color appliedColor;
+    private final Color invokeColor;
 
+    /**
+     * The overlay image for shortcuts that /invoke a spell.
+     */
     @Nullable
-    private final Image appliedImage;
+    private final Image invokeImage;
 
     @NotNull
     private final Font font;
@@ -154,14 +166,14 @@ public class GUIItemShortcut extends GUIItem {
      * Creates a new instance.
      * @param extent the extent of this element
      */
-    public GUIItemShortcut(@NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final String name, @NotNull final Extent extent, @Nullable final Color cursedColor, @Nullable final Image cursedImage, @Nullable final Color appliedColor, @Nullable final Image appliedImage, final int index, @NotNull final FacesManager facesManager, @NotNull final Shortcuts shortcuts, @NotNull final Font font, @NotNull final CurrentSpellManager currentSpellManager) {
+    public GUIItemShortcut(@NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final String name, @NotNull final Extent extent, @Nullable final Color castColor, @Nullable final Image castImage, @Nullable final Color invokeColor, @Nullable final Image invokeImage, final int index, @NotNull final FacesManager facesManager, @NotNull final Shortcuts shortcuts, @NotNull final Font font, @NotNull final CurrentSpellManager currentSpellManager) {
         super(tooltipManager, elementListener, name, extent);
         this.shortcuts = shortcuts;
         this.facesManager = facesManager;
-        this.cursedColor = cursedColor;
-        this.cursedImage = cursedImage;
-        this.appliedColor = appliedColor;
-        this.appliedImage = appliedImage;
+        this.castColor = castColor;
+        this.castImage = castImage;
+        this.invokeColor = invokeColor;
+        this.invokeImage = invokeImage;
         this.font = font;
         this.index = index;
         this.currentSpellManager = currentSpellManager;
@@ -247,13 +259,13 @@ public class GUIItemShortcut extends GUIItem {
 
         if (shortcut instanceof ShortcutSpell) {
             final ShortcutSpell shortcutSpell = (ShortcutSpell)shortcut;
-            final Color color = shortcutSpell.isCast() ? cursedColor : appliedColor;
+            final Color color = shortcutSpell.isCast() ? castColor : invokeColor;
             if (color != null) {
                 g.setColor(color);
                 g.fillRect(0, 0, w, h);
             }
             g.drawImage(facesManager.getOriginalImageIcon(shortcutSpell.getSpell().getFaceNum()).getImage(), 0, 0, null);
-            final Image image = shortcutSpell.isCast() ? cursedImage : appliedImage;
+            final Image image = shortcutSpell.isCast() ? castImage : invokeImage;
             if (image != null) {
                 g.drawImage(image, 0, 0, null);
             }
