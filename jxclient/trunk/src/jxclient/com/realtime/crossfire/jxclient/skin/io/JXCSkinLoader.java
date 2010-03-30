@@ -1527,7 +1527,7 @@ public class JXCSkinLoader {
 
         final String name = args[1];
         final Extent extent = parseExtent(args, 2);
-        final BufferedImage backgroundImage = imageParser.getImage(args[6]);
+        final BufferedImage backgroundImage = args[6].equals("null") ? null : imageParser.getImage(args[6]);
         final Font fontPrint = definedFonts.lookup(args[7]);
         final Font fontFixed = definedFonts.lookup(args[8]);
         final Font fontFixedBold = definedFonts.lookup(args[9]);

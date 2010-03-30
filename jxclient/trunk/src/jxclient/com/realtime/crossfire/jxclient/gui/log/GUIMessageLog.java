@@ -28,6 +28,7 @@ import com.realtime.crossfire.jxclient.skin.skin.Extent;
 import java.awt.Color;
 import java.awt.Image;
 import org.jetbrains.annotations.NotNull;
+import org.jetbrains.annotations.Nullable;
 
 /**
  * A gui element implementing the message window.
@@ -59,7 +60,7 @@ public class GUIMessageLog extends GUILog {
      * @param defaultColor the default color to use for text message not
      * specifying a color
      */
-    public GUIMessageLog(@NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final String name, @NotNull final Extent extent, @NotNull final CrossfireServerConnection crossfireServerConnection, @NotNull final Image backgroundImage, @NotNull final Fonts fonts, @NotNull final Color defaultColor) {
+    public GUIMessageLog(@NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final String name, @NotNull final Extent extent, @NotNull final CrossfireServerConnection crossfireServerConnection, @Nullable final Image backgroundImage, @NotNull final Fonts fonts, @NotNull final Color defaultColor) {
         super(tooltipManager, elementListener, name, extent, backgroundImage, fonts);
         messageBufferUpdater = new MessageBufferUpdater(crossfireServerConnection, buffer, defaultColor);
     }
