@@ -42,6 +42,10 @@ import java.awt.Image;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 
+/**
+ * Displays a shortcut command.
+ * @author Andreas Kirschbaum
+ */
 public class GUIItemShortcut extends GUIItem {
 
     /**
@@ -61,6 +65,9 @@ public class GUIItemShortcut extends GUIItem {
     @NotNull
     private static final String DEFAULT_TOOLTIP_TEXT = "(empty)";
 
+    /**
+     * The {@link Shortcuts} instance for looking up {@link Shortcut}s.
+     */
     @NotNull
     private final Shortcuts shortcuts;
 
@@ -94,11 +101,20 @@ public class GUIItemShortcut extends GUIItem {
     @Nullable
     private final Image invokeImage;
 
+    /**
+     * The {@link Font} for displaying the key that activates the shortcut.
+     */
     @NotNull
     private final Font font;
 
+    /**
+     * The shortcut index.
+     */
     private final int index;
 
+    /**
+     * The {@link CurrentSpellManager} for tracking the active spell.
+     */
     @NotNull
     private final CurrentSpellManager currentSpellManager;
 
@@ -119,6 +135,9 @@ public class GUIItemShortcut extends GUIItem {
     @Nullable
     private Shortcut shortcut = null;
 
+    /**
+     * The {@link ShortcutsListener} attached to {@link #shortcuts}.
+     */
     @NotNull
     private final ShortcutsListener shortcutsListener = new ShortcutsListener() {
         /** {@inheritDoc} */
@@ -138,6 +157,9 @@ public class GUIItemShortcut extends GUIItem {
         }
     };
 
+    /**
+     * The {@link ShortcutListener} attached to {@link #shortcut}.
+     */
     @NotNull
     private final ShortcutListener shortcutListener = new ShortcutListener() {
         /** {@inheritDoc} */
@@ -164,7 +186,21 @@ public class GUIItemShortcut extends GUIItem {
 
     /**
      * Creates a new instance.
+     * @param tooltipManager the tooltip manager to update
+     * @param elementListener the element listener to notify
+     * @param name the name of this element
      * @param extent the extent of this element
+     * @param castColor the background color for shortcuts that /cast a spell
+     * @param castImage the overlay image for shortcuts that /cast a spell
+     * @param invokeColor the background color for shortcuts that /invoke a
+     * spell
+     * @param invokeImage the overlay image for shortcuts that /invoke a spell
+     * @param index the spell index
+     * @param facesManager the faces manager instance for looking up faces
+     * @param shortcuts the shortcuts instance for looking up shortcuts
+     * @param font the font for displaying the key that activates the shortcut
+     * @param currentSpellManager the current spell manager for tracking the
+     * active spell
      */
     public GUIItemShortcut(@NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final String name, @NotNull final Extent extent, @Nullable final Color castColor, @Nullable final Image castImage, @Nullable final Color invokeColor, @Nullable final Image invokeImage, final int index, @NotNull final FacesManager facesManager, @NotNull final Shortcuts shortcuts, @NotNull final Font font, @NotNull final CurrentSpellManager currentSpellManager) {
         super(tooltipManager, elementListener, name, extent);
