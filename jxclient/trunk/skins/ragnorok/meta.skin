@@ -1,7 +1,7 @@
 
 fill background_black 0 0 WIDTH HEIGHT BLACK 1
 picture background WIDTH/2-512 HEIGHT/2-384 1024 768 background_metaserver 1
-text metaurl WIDTH/2-130 HEIGHT/2+236 260 20 textarea_big_active textarea_big_inactive font_metaurl GRAY WHITE 2 command_metaconnect true
+text metaurl WIDTH/2-130 HEIGHT/2+236 260 20 textarea_big_active textarea_big_inactive font_metaurl WHITE GRAY 2 command_metaconnect true
 label_html metacomment WIDTH/2-300 HEIGHT/2+266 600 118 font_label WHITE
 meta_list metaselect WIDTH/2-242 HEIGHT/2-154 480 270 480 30 null font_metaurl metaurl metacomment "(%P) %H (%V) - %D" "%C<br><br>Players online: %P<br><br>Archetypes: %A<br>Maps: %M<br>Server: %E (%V)"
 
