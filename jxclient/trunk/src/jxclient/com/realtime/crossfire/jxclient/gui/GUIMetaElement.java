@@ -161,7 +161,7 @@ public class GUIMetaElement extends ActivatableGUIElement implements GUIScrollab
         if (tcpImage != null) {
             g.drawImage(tcpImage, 0, 0, null);
         }
-        g.drawString(metaEntry == null ? "" : metaEntry.format(format), tcpImage != null ? 16 : 0, font.getSize()+1);
+        g.drawString(metaEntry == null ? "" : metaEntry.format(format), tcpImage != null ? tcpImage.getWidth(this) : 0, font.getSize()+1);
     }
 
     /**
