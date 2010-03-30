@@ -1886,8 +1886,8 @@ public class JXCSkinLoader {
         final BufferedImage activeImage = imageParser.getImage(args[6]);
         final BufferedImage inactiveImage = imageParser.getImage(args[7]);
         final Font font = definedFonts.lookup(args[8]);
-        final Color inactiveColor = ParseUtils.parseColor(args[9]);
-        final Color activeColor = ParseUtils.parseColor(args[10]);
+        final Color activeColor = ParseUtils.parseColor(args[9]);
+        final Color inactiveColor = ParseUtils.parseColor(args[10]);
         final int margin = ExpressionParser.parseInt(args[11]);
         final CommandList commandList = skin.getCommandList(args[12]);
         final boolean ignoreUpDown = NumberParser.parseBoolean(args[13]);
