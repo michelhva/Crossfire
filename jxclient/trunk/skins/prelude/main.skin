@@ -47,7 +47,7 @@ label_stat label_stat_wis 737+113 3 26 19 font_types WHITE WIS CENTER
 label_stat label_stat_cha 822+113 3 26 19 font_types WHITE CHA CENTER
 
 picture magicmap_content 0+113 20+3 232 232 magicmap_content 0.9
-magicmap magicmap       18+113 38+3 196 196
+minimap magicmap        18+113 38+3 196 196
 set_invisible magicmap_content
 set_invisible magicmap
 commandlist command_magicmap_display AND

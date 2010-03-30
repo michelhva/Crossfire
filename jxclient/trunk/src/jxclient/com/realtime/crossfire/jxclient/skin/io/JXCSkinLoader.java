@@ -76,8 +76,8 @@ import com.realtime.crossfire.jxclient.gui.log.Fonts;
 import com.realtime.crossfire.jxclient.gui.log.GUILabelLog;
 import com.realtime.crossfire.jxclient.gui.log.GUIMessageLog;
 import com.realtime.crossfire.jxclient.gui.log.MessageBufferUpdater;
-import com.realtime.crossfire.jxclient.gui.map.GUIMagicMap;
 import com.realtime.crossfire.jxclient.gui.map.GUIMap;
+import com.realtime.crossfire.jxclient.gui.map.GUIMiniMap;
 import com.realtime.crossfire.jxclient.gui.scrollable.GUIScrollable2;
 import com.realtime.crossfire.jxclient.gui.textinput.GUICommandText;
 import com.realtime.crossfire.jxclient.gui.textinput.GUIQueryText;
@@ -576,8 +576,8 @@ public class JXCSkinLoader {
                             parseLogColor(args);
                         } else if (gui != null && args[0].equals("log_filter")) {
                             parseLogFilter(args);
-                        } else if (gui != null && args[0].equals("magicmap")) {
-                            parseMagicmap(args, tooltipManager, elementListener, server);
+                        } else if (gui != null && args[0].equals("minimap")) {
+                            parseMinimap(args, tooltipManager, elementListener, server);
                         } else if (gui != null && args[0].equals("map")) {
                             parseMap(args, tooltipManager, elementListener, server);
                         } else if (gui != null && args[0].equals("meta_list")) {
@@ -1602,7 +1602,7 @@ public class JXCSkinLoader {
     }
 
     /**
-     * Parses a "magicmap" command.
+     * Parses a "minimap" command.
      * @param args the command arguments
      * @param tooltipManager the tooltip manager to update
      * @param elementListener the element listener to notify
@@ -1610,7 +1610,7 @@ public class JXCSkinLoader {
      * @throws IOException if the command cannot be parsed
      * @throws JXCSkinException if the command cannot be parsed
      */
-    private void parseMagicmap(@NotNull final String[] args, @NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final CrossfireServerConnection server) throws IOException, JXCSkinException {
+    private void parseMinimap(@NotNull final String[] args, @NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final CrossfireServerConnection server) throws IOException, JXCSkinException {
         if (args.length != 6) {
             throw new IOException("syntax error");
         }
@@ -1621,7 +1621,7 @@ public class JXCSkinLoader {
         if (facesProvider == null) {
             throw new IOException("cannot create faces with size 4");
         }
-        final GUIElement element = new GUIMagicMap(tooltipManager, elementListener, name, extent, mapUpdater, facesProvider, server);
+        final GUIElement element = new GUIMiniMap(tooltipManager, elementListener, name, extent, mapUpdater, facesProvider, server);
         insertGuiElement(element);
     }
 
