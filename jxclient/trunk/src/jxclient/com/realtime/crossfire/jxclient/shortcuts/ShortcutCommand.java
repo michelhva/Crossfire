@@ -22,6 +22,7 @@
 package com.realtime.crossfire.jxclient.shortcuts;
 
 import com.realtime.crossfire.jxclient.queue.CommandQueue;
+import com.realtime.crossfire.jxclient.faces.Face;
 import org.jetbrains.annotations.NotNull;
 
 /**
@@ -91,6 +92,14 @@ public class ShortcutCommand extends Shortcut {
     @Override
     public void visit(@NotNull final ShortcutVisitor visitor) {
         visitor.visit(this);
+    }
+
+    /**
+     * {@inheritDoc}
+     */
+    @Override
+    public boolean displaysFace(final Face face) {
+        return false;
     }
 
 }
