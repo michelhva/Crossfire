@@ -21,10 +21,10 @@
 
 package com.realtime.crossfire.jxclient.shortcuts;
 
+import com.realtime.crossfire.jxclient.faces.Face;
 import com.realtime.crossfire.jxclient.queue.CommandQueue;
 import com.realtime.crossfire.jxclient.spells.Spell;
 import com.realtime.crossfire.jxclient.spells.SpellListener;
-import com.realtime.crossfire.jxclient.faces.Face;
 import org.jetbrains.annotations.NotNull;
 
 /**

@@ -21,8 +21,8 @@
 
 package com.realtime.crossfire.jxclient.shortcuts;
 
-import com.realtime.crossfire.jxclient.queue.CommandQueue;
 import com.realtime.crossfire.jxclient.faces.Face;
+import com.realtime.crossfire.jxclient.queue.CommandQueue;
 import org.jetbrains.annotations.NotNull;
 
 /**

@@ -21,8 +21,8 @@
 
 package com.realtime.crossfire.jxclient.util;
 
-import java.awt.DisplayMode;
 import java.awt.Dimension;
+import java.awt.DisplayMode;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 
