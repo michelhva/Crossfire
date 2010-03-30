@@ -33,12 +33,11 @@ import java.awt.Graphics;
 import org.jetbrains.annotations.NotNull;
 
 /**
- * Displays magic map results. Fallback for unknown tiles is the normal map
- * contents.
+ * Displays a small map view.
  * @author Lauwenmark
  * @author Andreas Kirschbaum
  */
-public class GUIMagicMap extends AbstractGUIMap {
+public class GUIMiniMap extends AbstractGUIMap {
 
     /**
      * The serial version UID.
@@ -144,7 +143,7 @@ public class GUIMagicMap extends AbstractGUIMap {
      * @param facesProvider the faces provider for looking up faces
      * @param crossfireServerConnection the server connection to monitor
      */
-    public GUIMagicMap(@NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final String name, @NotNull final Extent extent, @NotNull final CfMapUpdater mapUpdater, @NotNull final FacesProvider facesProvider, @NotNull final CrossfireServerConnection crossfireServerConnection) {
+    public GUIMiniMap(@NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final String name, @NotNull final Extent extent, @NotNull final CfMapUpdater mapUpdater, @NotNull final FacesProvider facesProvider, @NotNull final CrossfireServerConnection crossfireServerConnection) {
         super(tooltipManager, elementListener, name, extent, mapUpdater, facesProvider, crossfireServerConnection);
         this.mapUpdater = mapUpdater;
         tileSize = facesProvider.getSize();
