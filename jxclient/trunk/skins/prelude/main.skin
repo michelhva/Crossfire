@@ -2,7 +2,7 @@
 tooltip font_tooltip
 
 # Map Group
-map playfield 64 -32 -32 1024 768
+map playfield -32 -32 1024 768 64
 
 # LGauges Group (80, 574)
 picture sword_back     16+80  0+574 64 256 background_sword 0.9

@@ -1640,8 +1640,8 @@ public class JXCSkinLoader {
         }
 
         final String name = args[1];
-        final int tileSize = ExpressionParser.parseInt(args[2]);
-        final Extent extent = parseExtent(args, 3);
+        final Extent extent = parseExtent(args, 2);
+        final int tileSize = ExpressionParser.parseInt(args[6]);
 
         final FacesProvider facesProvider = facesProviderFactory.getFacesProvider(tileSize);
         if (facesProvider == null) {
