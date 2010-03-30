@@ -1261,12 +1261,12 @@ public class JXCSkinLoader {
                 throw new IOException("syntax error");
             }
 
-            final Color cursedColor = ParseUtils.parseColorNull(args[8]);
-            final BufferedImage cursedImage = imageParser.getImage(cursedColor, args[8]);
-            final Color appliedColor = ParseUtils.parseColorNull(args[9]);
-            final BufferedImage appliedImage = imageParser.getImage(appliedColor, args[9]);
+            final Color castColor = ParseUtils.parseColorNull(args[8]);
+            final BufferedImage castImage = imageParser.getImage(castColor, args[8]);
+            final Color invokeColor = ParseUtils.parseColorNull(args[9]);
+            final BufferedImage invokeImage = imageParser.getImage(invokeColor, args[9]);
             final Font font = definedFonts.lookup(args[10]);
-            element = new GUIItemShortcut(tooltipManager, elementListener, name, extent, cursedColor, cursedImage, appliedColor, appliedImage, index, facesManager, shortcuts, font, currentSpellManager);
+            element = new GUIItemShortcut(tooltipManager, elementListener, name, extent, castColor, castImage, invokeColor, invokeImage, index, facesManager, shortcuts, font, currentSpellManager);
         } else if (type.equals("spelllist")) {
             if (args.length != 9) {
                 throw new IOException("syntax error");
