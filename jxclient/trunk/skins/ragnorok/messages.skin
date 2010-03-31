@@ -59,7 +59,7 @@ button slider_chat_down 586-4-16 190-4-16-16 16 16 slider_down_up slider_down_do
 commandlist_add command_messages_up_chat log_chat SCROLL -1
 commandlist_add command_messages_down_chat log_chat SCROLL 1
 
-command_text command 4 190-4-16 578 24   command_active command_inactive font_label GRAY BLACK 1
+command_text command 4 190-4-16 578 24   command_active command_inactive font_label GRAY BLACK 1 true
 
 commandlist command_messages_reset AND
 commandlist_add command_messages_reset log_all SCROLL_RESET

@@ -113,10 +113,10 @@ public abstract class GUIText extends ActivatableGUIElement implements KeyListen
     private final FontRenderContext fontRenderContext;
 
     /**
-     * Whether UP and DOWN keys should be ignored. If unset, these keys cycle
+     * Whether UP and DOWN keys should be checked. If set, these keys cycle
      * through the history.
      */
-    private final boolean ignoreUpDown;
+    private final boolean enableHistory;
 
     /**
      * If set, hide input; else show input.
@@ -143,8 +143,9 @@ public abstract class GUIText extends ActivatableGUIElement implements KeyListen
     /**
      * Creates a new instance.
      * @param extent the extent of this element
+     * @param enableHistory if set, enable access to command history
      */
-    protected GUIText(@NotNull final CommandCallback commandCallback, @NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final String name, @NotNull final Extent extent, @NotNull final Image activeImage, @NotNull final Image inactiveImage, @NotNull final Font font, @NotNull final Color inactiveColor, @NotNull final Color activeColor, final int margin, @NotNull final String text, final boolean ignoreUpDown) {
+    protected GUIText(@NotNull final CommandCallback commandCallback, @NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final String name, @NotNull final Extent extent, @NotNull final Image activeImage, @NotNull final Image inactiveImage, @NotNull final Font font, @NotNull final Color inactiveColor, @NotNull final Color activeColor, final int margin, @NotNull final String text, final boolean enableHistory) {
         super(tooltipManager, elementListener, name, extent, Transparency.TRANSLUCENT);
         this.commandCallback = commandCallback;
         commandHistory = new CommandHistory(name);
@@ -155,7 +156,7 @@ public abstract class GUIText extends ActivatableGUIElement implements KeyListen
         this.activeColor = activeColor;
         this.margin = margin;
         this.text = new StringBuilder(text);
-        this.ignoreUpDown = ignoreUpDown;
+        this.enableHistory = enableHistory;
         updateResolutionConstant();
         synchronized (bufferedImageSync) {
             final Graphics2D g = createBufferGraphics();
@@ -297,7 +298,7 @@ public abstract class GUIText extends ActivatableGUIElement implements KeyListen
 
         case KeyEvent.VK_KP_UP:
         case KeyEvent.VK_UP:
-            if (!ignoreUpDown) {
+            if (!enableHistory) {
                 historyPrev();
                 return true;
             }
@@ -305,7 +306,7 @@ public abstract class GUIText extends ActivatableGUIElement implements KeyListen
 
         case KeyEvent.VK_KP_DOWN:
         case KeyEvent.VK_DOWN:
-            if (!ignoreUpDown) {
+            if (!enableHistory) {
                 historyNext();
                 return true;
             }
