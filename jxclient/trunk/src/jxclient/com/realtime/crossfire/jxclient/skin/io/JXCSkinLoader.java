@@ -802,7 +802,7 @@ public class JXCSkinLoader {
      * @throws JXCSkinException if the command cannot be parsed
      */
     private void parseCommandText(@NotNull final String[] args, @NotNull final CommandCallback commandCallback, @NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final Commands commands) throws IOException, JXCSkinException {
-        if (args.length != 12) {
+        if (args.length != 13) {
             throw new IOException("syntax error");
         }
 
@@ -814,7 +814,8 @@ public class JXCSkinLoader {
         final Color inactiveColor = ParseUtils.parseColor(args[9]);
         final Color activeColor = ParseUtils.parseColor(args[10]);
         final int margin = ExpressionParser.parseInt(args[11]);
-        insertGuiElement(new GUICommandText(commandCallback, tooltipManager, elementListener, name, extent, activeImage, inactiveImage, font, inactiveColor, activeColor, margin, "", commands, false));
+        final boolean enableHistory = NumberParser.parseBoolean(args[12]);
+        insertGuiElement(new GUICommandText(commandCallback, tooltipManager, elementListener, name, extent, activeImage, inactiveImage, font, inactiveColor, activeColor, margin, "", commands, enableHistory));
     }
 
     /**
@@ -1716,7 +1717,7 @@ public class JXCSkinLoader {
      * @throws JXCSkinException if the command cannot be parsed
      */
     private void parseQueryText(@NotNull final String[] args, @NotNull final CrossfireServerConnection server, @NotNull final CommandCallback commandCallback, @NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener) throws IOException, JXCSkinException {
-        if (args.length != 12) {
+        if (args.length != 13) {
             throw new IOException("syntax error");
         }
 
@@ -1728,7 +1729,8 @@ public class JXCSkinLoader {
         final Color inactiveColor = ParseUtils.parseColor(args[9]);
         final Color activeColor = ParseUtils.parseColor(args[10]);
         final int margin = ExpressionParser.parseInt(args[11]);
-        insertGuiElement(new GUIQueryText(server, commandCallback, tooltipManager, elementListener, name, extent, activeImage, inactiveImage, font, inactiveColor, activeColor, margin, "", false));
+        final boolean enableHistory = NumberParser.parseBoolean(args[12]);
+        insertGuiElement(new GUIQueryText(server, commandCallback, tooltipManager, elementListener, name, extent, activeImage, inactiveImage, font, inactiveColor, activeColor, margin, "", enableHistory));
     }
 
     /**
@@ -1890,8 +1892,8 @@ public class JXCSkinLoader {
         final Color inactiveColor = ParseUtils.parseColor(args[10]);
         final int margin = ExpressionParser.parseInt(args[11]);
         final CommandList commandList = skin.getCommandList(args[12]);
-        final boolean ignoreUpDown = NumberParser.parseBoolean(args[13]);
-        insertGuiElement(new GUITextField(commandCallback, tooltipManager, elementListener, name, extent, activeImage, inactiveImage, font, inactiveColor, activeColor, margin, "", commandList, ignoreUpDown));
+        final boolean enableHistory = NumberParser.parseBoolean(args[13]);
+        insertGuiElement(new GUITextField(commandCallback, tooltipManager, elementListener, name, extent, activeImage, inactiveImage, font, inactiveColor, activeColor, margin, "", commandList, enableHistory));
     }
 
     /**
