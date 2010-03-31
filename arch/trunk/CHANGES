@@ -1,5 +1,10 @@
 Changes for SVN top of tree:
 
+Add a new subtype for the magic mouths so that the client does not get invalid
+(zero) type codes.  The magic mouth is a sign, but a very unique sign, so a
+new sign subtype is added just for the magic mouth.
+Kevin Bulgrien 2010-03-30
+
 Modify pentagram and glyph msg/endmsg to indicate limitations and to add an
 example of use.
 Kevin Bulgrien 2009-08-08
