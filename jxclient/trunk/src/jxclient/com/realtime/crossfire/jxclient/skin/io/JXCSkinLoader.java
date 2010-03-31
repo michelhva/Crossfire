@@ -596,7 +596,7 @@ public class JXCSkinLoader {
                             parseSetInvisible(args);
                         } else if (gui != null && args[0].equals("set_modal")) {
                             parseSetModal(args, gui);
-                        } else if (gui != null && args[0].equals("set_num_look_objects")) {
+                        } else if (args[0].equals("set_num_look_objects")) {
                             parseSetNumLookObjects(args);
                         } else if (gui != null && args[0].equals("scrollbar")) {
                             parseScrollbar(args, tooltipManager, elementListener);
