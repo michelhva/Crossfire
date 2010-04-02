@@ -126,7 +126,7 @@ public class Options {
                     System.err.println("Invalid skin name: "+skin);
                     System.exit(1);
                 }
-            } else if (args[i].equals("-N")) {
+            } else if (args[i].equals("-N") || args[i].equals("-n") || args[i].equals("--no-full-screen")) {
                 fullScreen = false;
             } else if (args[i].equals("--opengl")) {
                 System.setProperty("sun.java2d.opengl", "True");
@@ -143,7 +143,9 @@ public class Options {
             } else {
                 System.out.println("");
                 System.out.println("Available options:");
-                System.out.println(" -N             : Disable full-screen mode.");
+                System.out.println(" --no-full-screen");
+//                System.out.println(" -N"); // not advertised as it is considered deprecated
+                System.out.println(" -n             : Disable full-screen mode.");
                 System.out.println(" --resolution <width>x<height>");
                 System.out.println(" -r <width>x<height>");
                 System.out.println("                : Resolution to use. [default is maximum not exceeding screen]");
