@@ -120,7 +120,7 @@ public class Options {
                     System.err.println("Invalid resolution: "+args[i]);
                     System.exit(1);
                 }
-            } else if (args[i].equals("-S") && i+1 < args.length) {
+            } else if ((args[i].equals("-S") || args[i].equals("-s") || args[i].equals("--skin")) && i+1 < args.length) {
                 skin = args[++i];
                 if (skin.indexOf('@') != -1) {
                     System.err.println("Invalid skin name: "+skin);
@@ -147,7 +147,9 @@ public class Options {
                 System.out.println(" --resolution <width>x<height>");
                 System.out.println(" -r <width>x<height>");
                 System.out.println("                : Resolution to use. [default is maximum not exceeding screen]");
-                System.out.println(" -S <skin>      : Skin name to use.");
+                System.out.println(" --skin <skin>");
+//                System.out.println(" -S <skin>"); // not advertised as it is considered deprecated
+                System.out.println(" -s <skin>      : Skin name to use.");
                 System.out.println(" --opengl       : Enable the OpenGL rendering pipeline.");
                 System.out.println(" --server <host>: Select a server to connect to; skips main and metaserver");
                 System.out.println("                  windows.");
