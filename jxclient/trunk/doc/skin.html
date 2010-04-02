@@ -995,9 +995,9 @@ Displays a spell known by the character.
 <li><code>GUI_META</code>: shows the server selection screen. Disconnects if connected.</li>
 <li><code>GUI_START</code>: shows the start screen. Disconnects if connected. Note: the start screen is currently disabled as it is not fully implemented. Therefore this command currently is identical to <code>GUI_META</code>.</li>
 <li><a name="comment_gui_execute_element"><code>GUI_EXECUTE_ELEMENT</code></a>: &lt;element&gt; must refer to an <a href="#item"><code>item</code></a> element. Executes the default action of the referenced item.</li>
-<li><a name="dialog_open"><code>DIALOG_OPEN &lt;dialog&gt;</code></a>: the argument must be the name of a dialog. Makes the dialog visible.</li>
-<li><a name="dialog_toggle"><code>DIALOG_TOGGLE &lt;dialog&gt;</code></a>: the argument must be the name of a dialog. Makes the dialog invisible.</li>
-<li><a name="dialog_close"><code>DIALOG_CLOSE &lt;dialog&gt;</code></a>: the argument must be the name of a dialog. Toggles the visibility of the dialog.</li>
+<li><a name="command_dialog_open"><code>DIALOG_OPEN &lt;dialog&gt;</code></a>: the argument must be the name of a dialog. Makes the dialog visible.</li>
+<li><a name="command_dialog_toggle"><code>DIALOG_TOGGLE &lt;dialog&gt;</code></a>: the argument must be the name of a dialog. Makes the dialog invisible.</li>
+<li><a name="command_dialog_close"><code>DIALOG_CLOSE &lt;dialog&gt;</code></a>: the argument must be the name of a dialog. Toggles the visibility of the dialog.</li>
 <li><code>GUI_EXECUTE_COMMAND &lt;command...&gt;</code>: sends a command to the Crossfire server. <a href="#macros">Macros</a> are supported.</li>
 <li><code>EXEC_SELECTION &lt;command&gt;</code>: &lt;element&gt; must refer to a <a href="#floor_list"><code>floor_list</code> or <code>inventory_list</code></a>. Executes a command on the list's selected item. Does nothing if no item is selected. Allowed commands:
   <ul>
