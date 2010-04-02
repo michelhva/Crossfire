@@ -33,7 +33,6 @@ import com.realtime.crossfire.jxclient.gui.gui.MouseTracker;
 import com.realtime.crossfire.jxclient.gui.gui.RendererGuiState;
 import com.realtime.crossfire.jxclient.gui.gui.TooltipManager;
 import com.realtime.crossfire.jxclient.gui.label.AbstractLabel;
-import com.realtime.crossfire.jxclient.gui.label.GUIOneLineLabel;
 import com.realtime.crossfire.jxclient.gui.list.GUIMetaElementList;
 import com.realtime.crossfire.jxclient.gui.log.GUILabelLog;
 import com.realtime.crossfire.jxclient.gui.textinput.GUIText;
@@ -210,7 +209,7 @@ public class GuiManager {
             switch (type) {
             case MessageTypes.MSG_TYPE_BOOK:
                 dialog = skin.getDialogBook(1);
-                final AbstractLabel title = dialog.getFirstElementEndingWith(GUIOneLineLabel.class, "_title");
+                final AbstractLabel title = dialog.getFirstElementEndingWith(AbstractLabel.class, "_title");
                 if (title != null) {
                     final String[] tmp = message.split("\n", 2);
                     title.setText(tmp[0]);
