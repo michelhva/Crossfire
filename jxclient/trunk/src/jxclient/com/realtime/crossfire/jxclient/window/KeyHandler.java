@@ -135,6 +135,47 @@ public class KeyHandler {
     }
 
     private void handleKeyPress(@NotNull final KeyEvent e) {
+        updateModifiers(e);
+
+        switch (e.getKeyCode()) {
+        case KeyEvent.VK_ALT:
+        case KeyEvent.VK_ALT_GRAPH:
+        case KeyEvent.VK_SHIFT:
+        case KeyEvent.VK_CONTROL:
+            debugKeyboardWrite("keyPressed: ignoring modifier key");
+            return;
+        }
+
+        if (e.getKeyCode() == KeyEvent.VK_ESCAPE) {
+            debugKeyboardWrite("keyPressed: ESC");
+            keyHandlerListener.escPressed();
+            return;
+        }
+
+        if (keybindingsManager.keyPressed(e.getKeyCode(), e.getModifiers())) {
+            debugKeyboardWrite("keyPressed: keybindingsManager consumed key");
+            return;
+        }
+
+        for (final Gui dialog : windowRenderer.getOpenDialogs()) {
+            if (!dialog.isHidden(windowRenderer.getGuiState())) {
+                if (dialog.handleKeyPress(e)) {
+                    debugKeyboardWrite("keyPressed: dialog "+dialog+" consumed key");
+                    return;
+                }
+                if (dialog.isModal()) {
+                    debugKeyboardWrite("keyPressed: dialog "+dialog+" is modal");
+                    return;
+                }
+                debugKeyboardWrite("keyPressed: dialog "+dialog+" didn't consume key");
+            }
+        }
+
+        if (windowRenderer.getCurrentGui().handleKeyPress(e)) {
+            debugKeyboardWrite("keyPressed: main gui "+windowRenderer.getCurrentGui()+" consumed key");
+            return;
+        }
+
         if (keybindingsManager.handleKeyPress(e)) {
             debugKeyboardWrite("keyPressed: keybindingsManager consumed key");
             return;
@@ -201,12 +242,70 @@ public class KeyHandler {
                 debugKeyboardWrite("keyPressed: ignoring key");
                 break;
             }
-        } else {
-            debugKeyboardWrite("keyPressed: ignoring key because modifiers != 0");
+            return;
         }
+
+        debugKeyboardWrite("keyPressed: ignoring key because modifiers != 0");
     }
 
-    private void handleKeyTyped(@NotNull final KeyEvent e) {
+    private void handleKeyRelease(@NotNull final KeyEvent e) {
+        updateModifiers(e);
+
+        switch (e.getKeyCode()) {
+        case KeyEvent.VK_ALT:
+        case KeyEvent.VK_ALT_GRAPH:
+        case KeyEvent.VK_SHIFT:
+        case KeyEvent.VK_CONTROL:
+            debugKeyboardWrite("keyReleased: ignoring modifier key");
+            return;
+        }
+
+        if (e.getKeyCode() == KeyEvent.VK_ESCAPE) {
+            debugKeyboardWrite("keyReleased: ignoring ESC");
+            return;
+        }
+
+        if (keybindingsManager.keyReleased()) {
+            debugKeyboardWrite("keyReleased: keybindingsManager consumed key");
+            keyHandlerListener.keyReleased();
+            return;
+        }
+
+        debugKeyboardWrite("keyReleased: ignoring key");
+    }
+
+    private void handleKeyType(@NotNull final KeyEvent e) {
+        if (e.getKeyChar() == 27) // ignore ESC key
+        {
+            debugKeyboardWrite("keyTyped: ignoring ESC");
+            return;
+        }
+
+        if (keybindingsManager.keyTyped(e.getKeyChar())) {
+            debugKeyboardWrite("keyTyped: keybindingsManager consumed key");
+            commandQueue.resetRepeatCount();
+            return;
+        }
+
+        for (final Gui dialog : windowRenderer.getOpenDialogs()) {
+            if (!dialog.isHidden(windowRenderer.getGuiState())) {
+                if (dialog.handleKeyTyped(e)) {
+                    debugKeyboardWrite("keyTyped: dialog "+dialog+" consumed key");
+                    return;
+                }
+                if (dialog.isModal()) {
+                    debugKeyboardWrite("keyTyped: dialog "+dialog+" is modal");
+                    return;
+                }
+                debugKeyboardWrite("keyTyped: dialog "+dialog+" didn't consume key");
+            }
+        }
+
+        if (windowRenderer.getCurrentGui().handleKeyTyped(e)) {
+            debugKeyboardWrite("keyTyped: main gui "+windowRenderer.getCurrentGui()+" consumed key");
+            return;
+        }
+
         if (keybindingsManager.handleKeyTyped(e)) {
             debugKeyboardWrite("keyTyped: keybindingsManager consumed key");
             return;
@@ -223,44 +322,7 @@ public class KeyHandler {
     public void keyPressed(@NotNull final KeyEvent e) {
         debugKeyboardWrite("pressed", e);
         try {
-            updateModifiers(e);
-            switch (e.getKeyCode()) {
-            case KeyEvent.VK_ALT:
-            case KeyEvent.VK_ALT_GRAPH:
-            case KeyEvent.VK_SHIFT:
-            case KeyEvent.VK_CONTROL:
-                debugKeyboardWrite("keyPressed: ignoring modifier key");
-                break;
-
-            default:
-                if (e.getKeyCode() == KeyEvent.VK_ESCAPE) {
-                    debugKeyboardWrite("keyPressed: ESC");
-                    keyHandlerListener.escPressed();
-                } else if (keybindingsManager.keyPressed(e.getKeyCode(), e.getModifiers())) {
-                    debugKeyboardWrite("keyPressed: keybindingsManager consumed key");
-                    // done
-                } else {
-                    for (final Gui dialog : windowRenderer.getOpenDialogs()) {
-                        if (!dialog.isHidden(windowRenderer.getGuiState())) {
-                            if (dialog.handleKeyPress(e)) {
-                                debugKeyboardWrite("keyPressed: dialog "+dialog+" consumed key");
-                                return;
-                            }
-                            if (dialog.isModal()) {
-                                debugKeyboardWrite("keyPressed: dialog "+dialog+" is modal");
-                                return;
-                            }
-                            debugKeyboardWrite("keyPressed: dialog "+dialog+" didn't consume key");
-                        }
-                    }
-                    if (windowRenderer.getCurrentGui().handleKeyPress(e)) {
-                        debugKeyboardWrite("keyPressed: main gui "+windowRenderer.getCurrentGui()+" consumed key");
-                        return;
-                    }
-                    handleKeyPress(e);
-                }
-                break;
-            }
+            handleKeyPress(e);
         } finally {
             debugKeyboardWrite("");
         }
@@ -269,27 +331,7 @@ public class KeyHandler {
     public void keyReleased(@NotNull final KeyEvent e) {
         debugKeyboardWrite("released", e);
         try {
-            updateModifiers(e);
-            switch (e.getKeyCode()) {
-            case KeyEvent.VK_ALT:
-            case KeyEvent.VK_ALT_GRAPH:
-            case KeyEvent.VK_SHIFT:
-            case KeyEvent.VK_CONTROL:
-                debugKeyboardWrite("keyReleased: ignoring modifier key");
-                break;
-
-            default:
-                if (e.getKeyCode() == KeyEvent.VK_ESCAPE) {
-                    debugKeyboardWrite("keyReleased: ignoring ESC");
-                    // ignore
-                } else if (keybindingsManager.keyReleased()) {
-                    debugKeyboardWrite("keyReleased: keybindingsManager consumed key");
-                    keyHandlerListener.keyReleased();
-                } else {
-                    debugKeyboardWrite("keyReleased: ignoring key");
-                }
-                break;
-            }
+            handleKeyRelease(e);
         } finally {
             debugKeyboardWrite("");
         }
@@ -298,35 +340,7 @@ public class KeyHandler {
     public void keyTyped(@NotNull final KeyEvent e) {
         debugKeyboardWrite("typed", e);
         try {
-            if (e.getKeyChar() == 27) // ignore ESC key
-            {
-                debugKeyboardWrite("keyTyped: ignoring ESC");
-                return;
-            }
-
-            if (keybindingsManager.keyTyped(e.getKeyChar())) {
-                debugKeyboardWrite("keyTyped: keybindingsManager consumed key");
-                commandQueue.resetRepeatCount();
-            } else {
-                for (final Gui dialog : windowRenderer.getOpenDialogs()) {
-                    if (!dialog.isHidden(windowRenderer.getGuiState())) {
-                        if (dialog.handleKeyTyped(e)) {
-                            debugKeyboardWrite("keyTyped: dialog "+dialog+" consumed key");
-                            return;
-                        }
-                        if (dialog.isModal()) {
-                            debugKeyboardWrite("keyTyped: dialog "+dialog+" is modal");
-                            return;
-                        }
-                        debugKeyboardWrite("keyTyped: dialog "+dialog+" didn't consume key");
-                    }
-                }
-                if (windowRenderer.getCurrentGui().handleKeyTyped(e)) {
-                    debugKeyboardWrite("keyTyped: main gui "+windowRenderer.getCurrentGui()+" consumed key");
-                    return;
-                }
-                handleKeyTyped(e);
-            }
+            handleKeyType(e);
         } finally {
             debugKeyboardWrite("");
         }
