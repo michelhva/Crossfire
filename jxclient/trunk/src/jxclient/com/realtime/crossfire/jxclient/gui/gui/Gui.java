@@ -35,8 +35,6 @@ import java.awt.Graphics;
 import java.awt.event.KeyEvent;
 import java.util.Collection;
 import java.util.EnumSet;
-import java.util.HashSet;
-import java.util.Set;
 import java.util.concurrent.CopyOnWriteArrayList;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
@@ -333,22 +331,6 @@ public class Gui {
             final ActivatableGUIElement activatableDefaultElement = (ActivatableGUIElement)defaultElement;
             activatableDefaultElement.setActive(true);
         }
-    }
-
-    /**
-     * Returnss all gui elements of this gui belonging to the given class.
-     * @param class_ the class to collect
-     * @return the gui elements
-     */
-    @NotNull
-    public <T extends GUIElement> Set<T> getElements(@NotNull final Class<T> class_) {
-        final Set<T> result = new HashSet<T>(16);
-        for (final Object element : visibleElements) {
-            if (class_.isAssignableFrom(element.getClass())) {
-                result.add(class_.cast(element));
-            }
-        }
-        return result;
     }
 
     /**
