@@ -431,7 +431,7 @@ public class Gui {
      * @param activeElement the gui element
      * @param active the new active state
      */
-    void setActiveElement(@NotNull final ActivatableGUIElement activeElement, final boolean active) {
+    public void setActiveElement(@NotNull final ActivatableGUIElement activeElement, final boolean active) {
         final ActivatableGUIElement previousActiveElement = this.activeElement;
         if (active) {
             if (forcedActive != null && forcedActive != activeElement) {
