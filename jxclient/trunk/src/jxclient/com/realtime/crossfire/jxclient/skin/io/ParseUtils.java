@@ -118,6 +118,9 @@ public class ParseUtils {
 
         final String colorName = name.substring(0, pos);
         final Color color = parseColorName(colorName);
+        if (color == null) {
+            return null;
+        }
         if (alpha == 255) {
             return color;
         }
