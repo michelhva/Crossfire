@@ -559,7 +559,7 @@ public class JXCSkinLoader {
                         } else if (gui != null && args[0].equals("label_query")) {
                             parseLabelQuery(args, tooltipManager, elementListener, server);
                         } else if (gui != null && args[0].equals("label_message")) {
-                            parseLabelMessage(args, tooltipManager, elementListener, server);
+                            parseLabelMessage(args, tooltipManager, elementListener, server, windowRenderer);
                         } else if (gui != null && args[0].equals("label_text")) {
                             parseLabelText(args, tooltipManager, elementListener, lnr);
                         } else if (gui != null && args[0].equals("label_stat")) {
@@ -1374,10 +1374,11 @@ public class JXCSkinLoader {
      * @param tooltipManager the tooltip manager to update
      * @param elementListener the element listener to notify
      * @param server the server instance to monitor
+     * @param windowRenderer the window renderer to create the element for
      * @throws IOException if the command cannot be parsed
      * @throws JXCSkinException if the command cannot be parsed
      */
-    private void parseLabelMessage(@NotNull final String[] args, @NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final CrossfireServerConnection server) throws IOException, JXCSkinException {
+    private void parseLabelMessage(@NotNull final String[] args, @NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final CrossfireServerConnection server, @NotNull final JXCWindowRenderer windowRenderer) throws IOException, JXCSkinException {
         if (args.length != 8) {
             throw new IOException("syntax error");
         }
@@ -1386,7 +1387,7 @@ public class JXCSkinLoader {
         final Extent extent = parseExtent(args, 2);
         final Font font = definedFonts.lookup(args[6]);
         final Color color = ParseUtils.parseColor(args[7]);
-        final GUIElement element = new GUILabelMessage(tooltipManager, elementListener, name, extent, server, font, color, new Color(0, 0, 0, 0F));
+        final GUIElement element = new GUILabelMessage(tooltipManager, elementListener, name, extent, server, windowRenderer, font, color, new Color(0, 0, 0, 0F));
         insertGuiElement(element);
     }
 
