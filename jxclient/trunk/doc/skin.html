@@ -180,7 +180,7 @@ adds the GUI element &quot;first&quot;, then all defined GUI elements except &qu
 <li>&lt;text...&gt; is the text to display.</li>
 </ul>
 
-<h3>commandlist: define executable commands</h3>
+<h3><a name="commandlist">commandlist: define executable commands</a></h3>
 
 <p>syntax:</p>
 <pre>
@@ -189,7 +189,7 @@ adds the GUI element &quot;first&quot;, then all defined GUI elements except &qu
     commandlist_add &lt;name&gt; &lt;element&gt; &lt;command&gt; &lt;args&gt;
 </pre>
 
-<p>Defines a named list of commands.</p>
+<p>Defines a named list of commands. Command lists are referenced by other GUI elements. The <code>/exec &lt;name&gt;</code> command executes a named command list.</p>
 
 <ul>
 <li>&lt;name&gt; is the name of the command list.</li>
@@ -1141,7 +1141,7 @@ Displays a spell known by the character.
     java -jar &lt;optional path&gt;jxclient.jar --skin rawhide --no-full-screen --resolution 1024x768
 </pre>
 
-<h3>Debugging the new skin</h3>
+<h3><a name="debug">Debugging the new skin</a></h3>
 
 <p>Add the command-line option <code>--debug-gui</code> to enable GUI related debug information:</p>
 <ul>
