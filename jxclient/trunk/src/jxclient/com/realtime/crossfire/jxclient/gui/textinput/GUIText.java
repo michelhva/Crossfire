@@ -298,7 +298,7 @@ public abstract class GUIText extends ActivatableGUIElement implements KeyListen
 
         case KeyEvent.VK_KP_UP:
         case KeyEvent.VK_UP:
-            if (!enableHistory) {
+            if (enableHistory) {
                 historyPrev();
                 return true;
             }
@@ -306,7 +306,7 @@ public abstract class GUIText extends ActivatableGUIElement implements KeyListen
 
         case KeyEvent.VK_KP_DOWN:
         case KeyEvent.VK_DOWN:
-            if (!enableHistory) {
+            if (enableHistory) {
                 historyNext();
                 return true;
             }
