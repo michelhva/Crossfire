@@ -157,6 +157,13 @@ public class Stats {
             case CS_STAT_BASE_CON:
             case CS_STAT_BASE_CHA:
             case CS_STAT_BASE_POW:
+            case CS_STAT_APPLIED_STR:
+            case CS_STAT_APPLIED_INT:
+            case CS_STAT_APPLIED_WIS:
+            case CS_STAT_APPLIED_DEX:
+            case CS_STAT_APPLIED_CON:
+            case CS_STAT_APPLIED_CHA:
+            case CS_STAT_APPLIED_POW:
                 setStat(stat, param);
                 if (stat == CS_STAT_LEVEL) {
                     calcExperienceToNextLevel();

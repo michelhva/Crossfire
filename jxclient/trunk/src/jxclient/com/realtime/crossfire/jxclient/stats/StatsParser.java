@@ -43,13 +43,16 @@ public class StatsParser {
         statTable.put("AC", CrossfireStatsListener.CS_STAT_AC);
         statTable.put("ARM", CrossfireStatsListener.CS_STAT_ARMOUR);
         statTable.put("CHA", CrossfireStatsListener.CS_STAT_CHA);
+        statTable.put("CHA_APPLIED", CrossfireStatsListener.CS_STAT_APPLIED_CHA);
         statTable.put("CHA_BASE", CrossfireStatsListener.CS_STAT_BASE_CHA);
         statTable.put("CHA_RACE", CrossfireStatsListener.CS_STAT_RACE_CHA);
         statTable.put("CON", CrossfireStatsListener.CS_STAT_CON);
+        statTable.put("CON_APPLIED", CrossfireStatsListener.CS_STAT_APPLIED_CON);
         statTable.put("CON_BASE", CrossfireStatsListener.CS_STAT_BASE_CON);
         statTable.put("CON_RACE", CrossfireStatsListener.CS_STAT_RACE_CON);
         statTable.put("DAM", CrossfireStatsListener.CS_STAT_DAM);
         statTable.put("DEX", CrossfireStatsListener.CS_STAT_DEX);
+        statTable.put("DEX_APPLIED", CrossfireStatsListener.CS_STAT_APPLIED_DEX);
         statTable.put("DEX_BASE", CrossfireStatsListener.CS_STAT_BASE_DEX);
         statTable.put("DEX_RACE", CrossfireStatsListener.CS_STAT_RACE_DEX);
         statTable.put("EXP", CrossfireStatsListener.CS_STAT_EXP64);
@@ -58,12 +61,14 @@ public class StatsParser {
         statTable.put("GRACE", CrossfireStatsListener.CS_STAT_GRACE);
         statTable.put("HP", CrossfireStatsListener.CS_STAT_HP);
         statTable.put("INT", CrossfireStatsListener.CS_STAT_INT);
+        statTable.put("INT_APPLIED", CrossfireStatsListener.CS_STAT_APPLIED_INT);
         statTable.put("INT_BASE", CrossfireStatsListener.CS_STAT_BASE_INT);
         statTable.put("INT_RACE", CrossfireStatsListener.CS_STAT_RACE_INT);
         statTable.put("LEVEL", CrossfireStatsListener.CS_STAT_LEVEL);
         statTable.put("LOWFOOD", CrossfireStatsListener.C_STAT_LOWFOOD);
         statTable.put("POISONED", CrossfireStatsListener.C_STAT_POISONED);
         statTable.put("POW", CrossfireStatsListener.CS_STAT_POW);
+        statTable.put("POW_APPLIED", CrossfireStatsListener.CS_STAT_APPLIED_POW);
         statTable.put("POW_BASE", CrossfireStatsListener.CS_STAT_BASE_POW);
         statTable.put("POW_RACE", CrossfireStatsListener.CS_STAT_RACE_POW);
         statTable.put("RANGE", CrossfireStatsListener.CS_STAT_RANGE);
@@ -88,6 +93,7 @@ public class StatsParser {
         statTable.put("SP", CrossfireStatsListener.CS_STAT_SP);
         statTable.put("SPEED", CrossfireStatsListener.CS_STAT_SPEED);
         statTable.put("STR", CrossfireStatsListener.CS_STAT_STR);
+        statTable.put("STR_APPLIED", CrossfireStatsListener.CS_STAT_APPLIED_STR);
         statTable.put("STR_BASE", CrossfireStatsListener.CS_STAT_BASE_STR);
         statTable.put("STR_RACE", CrossfireStatsListener.CS_STAT_RACE_STR);
         statTable.put("TITLE", CrossfireStatsListener.CS_STAT_TITLE);
@@ -95,6 +101,7 @@ public class StatsParser {
         statTable.put("WEIGHT", CrossfireStatsListener.C_STAT_WEIGHT);
         statTable.put("WEIGHT_LIMIT", CrossfireStatsListener.CS_STAT_WEIGHT_LIM);
         statTable.put("WIS", CrossfireStatsListener.CS_STAT_WIS);
+        statTable.put("WIS_APPLIED", CrossfireStatsListener.CS_STAT_APPLIED_WIS);
         statTable.put("WIS_BASE", CrossfireStatsListener.CS_STAT_BASE_WIS);
         statTable.put("WIS_RACE", CrossfireStatsListener.CS_STAT_RACE_WIS);
         statTable.put("WSPEED", CrossfireStatsListener.CS_STAT_WEAP_SP);
