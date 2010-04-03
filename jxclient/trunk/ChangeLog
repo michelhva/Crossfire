@@ -1,5 +1,8 @@
 2010-04-03  Andreas Kirschbaum
 
+	* Fix status dialog to correctly display
+	boosted/depleted/increased/decreased stats.
+
 	* Add support for CS_STAT_APPLIED_xyz stat values: parse protocol
 	messages; add scripting support; add support to skin definition
 	files.

@@ -1444,7 +1444,7 @@ public class JXCSkinLoader {
      * @throws JXCSkinException if the command cannot be parsed
      */
     private void parseLabelStat2(@NotNull final String[] args, @NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener) throws IOException, JXCSkinException {
-        if (args.length != 16) {
+        if (args.length != 17) {
             throw new IOException("syntax error");
         }
 
@@ -1459,8 +1459,9 @@ public class JXCSkinLoader {
         final int statCurrent = ParseUtils.parseStat(args[12]);
         final int statBase = ParseUtils.parseStat(args[13]);
         final int statRace = ParseUtils.parseStat(args[14]);
-        final Alignment alignment = NumberParser.parseEnum(Alignment.class, args[15], "text alignment");
-        final GUIElement element = new GUILabelStats2(tooltipManager, elementListener, name, extent, font, colorNormal, colorUpgradable, colorDepleted, colorBoosted, colorBoostedUpgradable, new Color(0, 0, 0, 0F), statCurrent, statBase, statRace, alignment, stats);
+        final int statApplied = ParseUtils.parseStat(args[15]);
+        final Alignment alignment = NumberParser.parseEnum(Alignment.class, args[16], "text alignment");
+        final GUIElement element = new GUILabelStats2(tooltipManager, elementListener, name, extent, font, colorNormal, colorUpgradable, colorDepleted, colorBoosted, colorBoostedUpgradable, new Color(0, 0, 0, 0F), statCurrent, statBase, statRace, statApplied, alignment, stats);
         insertGuiElement(element);
     }
 

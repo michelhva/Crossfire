@@ -83,6 +83,11 @@ public class GUILabelStats2 extends GUIOneLineLabel {
     private final int statRace;
 
     /**
+     * The stat change due to gear or skills.
+     */
+    private final int statApplied;
+
+    /**
      * The {@link Stats} instance to use.
      */
     @NotNull
@@ -108,7 +113,7 @@ public class GUILabelStats2 extends GUIOneLineLabel {
         /** {@inheritDoc} */
         @Override
         public void statChanged(final int statnr, final int value) {
-            if (statnr == statCurrent || statnr == statBase || statnr == statRace) {
+            if (statnr == statCurrent || statnr == statBase || statnr == statRace || statnr == statApplied) {
                 updateStat();
             }
         }
@@ -166,10 +171,11 @@ public class GUILabelStats2 extends GUIOneLineLabel {
      * @param statCurrent the current stat to display
      * @param statBase the base stat without applied boosts or depletions
      * @param statRace the race's maximum stat
+     * @param statApplied the stat change due to gear or skills
      * @param alignment the text alignment
      * @param stats the stats instance to use
      */
-    public GUILabelStats2(@NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final String name, @NotNull final Extent extent, @NotNull final Font font, @NotNull final Color colorNormal, @NotNull final Color colorUpgradable, @NotNull final Color colorDepleted, @NotNull final Color colorBoosted, @NotNull final Color colorBoostedUpgradable, @NotNull final Color backgroundColor, final int statCurrent, final int statBase, final int statRace, @NotNull final Alignment alignment, @NotNull final Stats stats) {
+    public GUILabelStats2(@NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final String name, @NotNull final Extent extent, @NotNull final Font font, @NotNull final Color colorNormal, @NotNull final Color colorUpgradable, @NotNull final Color colorDepleted, @NotNull final Color colorBoosted, @NotNull final Color colorBoostedUpgradable, @NotNull final Color backgroundColor, final int statCurrent, final int statBase, final int statRace, final int statApplied, @NotNull final Alignment alignment, @NotNull final Stats stats) {
         super(tooltipManager, elementListener, name, extent, null, font, colorNormal, backgroundColor, alignment, "");
         this.colorUpgradable = colorUpgradable;
         this.colorDepleted = colorDepleted;
@@ -178,6 +184,7 @@ public class GUILabelStats2 extends GUIOneLineLabel {
         this.statCurrent = statCurrent;
         this.statBase = statBase;
         this.statRace = statRace;
+        this.statApplied = statApplied;
         this.stats = stats;
         this.stats.addCrossfireStatsListener(statsListener);
         color = colorNormal;
@@ -188,9 +195,11 @@ public class GUILabelStats2 extends GUIOneLineLabel {
      * Updates the values to reflect the current stat value.
      */
     private void updateStat() {
-        final int currValue = stats.getStat(statCurrent);
         final int baseValue = stats.getStat(statBase);
         final int raceValue = stats.getStat(statRace);
+        final int appliedValue = stats.getStat(statApplied);
+        final int currValue = stats.getStat(statCurrent);
+        final int currValueWithoutGear = currValue-appliedValue;
         if (baseValue == 0 && raceValue == 0) {
             // no server support
             color = GUILabelStats2.super.getTextColor();
@@ -200,9 +209,9 @@ public class GUILabelStats2 extends GUIOneLineLabel {
         }
 
         final Color newColor;
-        if (currValue < baseValue) {
+        if (currValueWithoutGear < baseValue) {
             newColor = colorDepleted;
-        } else if (currValue == baseValue) {
+        } else if (currValueWithoutGear == baseValue) {
             if (baseValue < raceValue) {
                 newColor = colorUpgradable;
             } else {
@@ -223,12 +232,17 @@ public class GUILabelStats2 extends GUIOneLineLabel {
 
         final StringBuilder sb = new StringBuilder();
         sb.append("<html>Current: ").append(currValue);
-        if (currValue < baseValue) {
-            sb.append("<br>Depleted by ").append(baseValue-currValue).append(" from ").append(baseValue).append(".");
-        } else if (currValue > baseValue) {
-            sb.append("<br>Boosted by ").append(currValue-baseValue).append(" from ").append(baseValue).append(".");
+        if (currValueWithoutGear < baseValue) {
+            sb.append("<br>Depleted by ").append(baseValue-currValueWithoutGear).append(" from ").append(baseValue).append(".");
+        } else if (currValueWithoutGear > baseValue) {
+            sb.append("<br>Increased by ").append(currValueWithoutGear-baseValue).append(" from ").append(baseValue).append(".");
         }
-        if (currValue < raceValue) {
+        if (appliedValue > 0) {
+            sb.append("<br>Boosted by ").append(appliedValue).append(" by gear or skills.");
+        } else if (appliedValue < 0) {
+            sb.append("<br>Reduced by ").append(-appliedValue).append(" by gear or skills.");
+        }
+        if (baseValue < raceValue) {
             sb.append("<br>Upgradable to ").append(raceValue).append(" by drinking stat potions.");
         }
         setTooltipText(sb.toString());
