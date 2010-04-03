@@ -257,6 +257,41 @@ public interface CrossfireStatsListener {
     int CS_STAT_BASE_POW = 45;
 
     /**
+     * The strength primary stat changes due to gear or skills.
+     */
+    int CS_STAT_APPLIED_STR = 46;
+
+    /**
+     * The integer primary stat changes due to gear or skills.
+     */
+    int CS_STAT_APPLIED_INT = 47;
+
+    /**
+     * The wisdom primary stat changes due to gear or skills.
+     */
+    int CS_STAT_APPLIED_WIS = 48;
+
+    /**
+     * The dexterity primary stat changes due to gear or skills.
+     */
+    int CS_STAT_APPLIED_DEX = 49;
+
+    /**
+     * The constitution primary stat changes due to gear or skills.
+     */
+    int CS_STAT_APPLIED_CON = 50;
+
+    /**
+     * The charisma primary stat changes due to gear or skills.
+     */
+    int CS_STAT_APPLIED_CHA = 51;
+
+    /**
+     * The power primary stat changes due to gear or skills.
+     */
+    int CS_STAT_APPLIED_POW = 52;
+
+    /**
      * Beginning index of the resistances.
      */
     int CS_STAT_RESIST_START = 100;

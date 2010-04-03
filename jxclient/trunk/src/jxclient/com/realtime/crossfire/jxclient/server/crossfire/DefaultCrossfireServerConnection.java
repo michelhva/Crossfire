@@ -2018,6 +2018,13 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
                         case CrossfireStatsListener.CS_STAT_BASE_CON:
                         case CrossfireStatsListener.CS_STAT_BASE_CHA:
                         case CrossfireStatsListener.CS_STAT_BASE_POW:
+                        case CrossfireStatsListener.CS_STAT_APPLIED_STR:
+                        case CrossfireStatsListener.CS_STAT_APPLIED_INT:
+                        case CrossfireStatsListener.CS_STAT_APPLIED_WIS:
+                        case CrossfireStatsListener.CS_STAT_APPLIED_DEX:
+                        case CrossfireStatsListener.CS_STAT_APPLIED_CON:
+                        case CrossfireStatsListener.CS_STAT_APPLIED_CHA:
+                        case CrossfireStatsListener.CS_STAT_APPLIED_POW:
                             final short int2Param = (short)(((packet[pos++]&0xFF)<<8)|(packet[pos++]&0xFF));
                             if (debugProtocol != null) {
                                 debugProtocol.debugProtocolWrite("recv stats stat="+stat+" int2="+int2Param+"="+(int2Param&0xFFFF));

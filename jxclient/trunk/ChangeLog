@@ -1,5 +1,9 @@
 2010-04-03  Andreas Kirschbaum
 
+	* Add support for CS_STAT_APPLIED_xyz stat values: parse protocol
+	messages; add scripting support; add support to skin definition
+	files.
+
 	* Report "watch stats pow_race" and "watch stats pow_base" to
 	scripts.
 
