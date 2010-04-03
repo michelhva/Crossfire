@@ -68,6 +68,8 @@ public class StatUtils {
         statNames.put(CrossfireStatsListener.CS_STAT_ARMOUR, "armour");
         statNames.put(CrossfireStatsListener.CS_STAT_FOOD, "food");
         statNames.put(CrossfireStatsListener.CS_STAT_POW, "pow");
+        statNames.put(CrossfireStatsListener.CS_STAT_RACE_POW, "pow_race");
+        statNames.put(CrossfireStatsListener.CS_STAT_BASE_POW, "pow_base");
         statNames.put(CrossfireStatsListener.CS_STAT_GRACE, "grace");
         statNames.put(CrossfireStatsListener.CS_STAT_MAXGRACE, "maxgrace");
         statNames.put(CrossfireStatsListener.CS_STAT_FLAGS, "flags");
