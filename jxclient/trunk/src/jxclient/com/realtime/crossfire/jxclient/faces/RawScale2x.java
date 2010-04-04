@@ -106,15 +106,15 @@ public class RawScale2x {
      * @param y The y location in the source image of the pixel to process.
      */
     private void process(final int x, final int y) {
-        //        final int A = getSourcePixel(x-1, y-1);
+        //final int A = getSourcePixel(x-1, y-1);
         final int B = getSourcePixel(x, y-1);
-        //        final int C = getSourcePixel(x+1, y-1);
+        //final int C = getSourcePixel(x+1, y-1);
         final int D = getSourcePixel(x-1, y);
         final int E = getSourcePixel(x, y);
         final int F = getSourcePixel(x+1, y);
-        //        final int G = getSourcePixel(x-1, y+1);
+        //final int G = getSourcePixel(x-1, y+1);
         final int H = getSourcePixel(x, y+1);
-        //        final int I = getSourcePixel(x+1, y+1);
+        //final int I = getSourcePixel(x+1, y+1);
         int E0 = E;
         int E1 = E;
         int E2 = E;
