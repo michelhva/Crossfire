@@ -105,9 +105,8 @@ public class RenderState {
     /**
      * Some lines have been added to the buffer.
      * @param buffer The displayed buffer.
-     * @param lines The number of lines that have been added.
      */
-    public void linesAdded(@NotNull final Buffer buffer, final int lines) {
+    public void linesAdded(@NotNull final Buffer buffer) {
         synchronized (sync) {
             if (topOffset < 0) {
                 scrollToBottom(buffer);
@@ -123,9 +122,8 @@ public class RenderState {
     /**
      * Some lines have been replaced at the end of the buffer.
      * @param buffer The displayed buffer.
-     * @param lines The number of lines that have been replaced.
      */
-    public void linesReplaced(@NotNull final Buffer buffer, final int lines) {
+    public void linesReplaced(@NotNull final Buffer buffer) {
         synchronized (sync) {
             if (topOffset < 0) {
                 scrollToBottom(buffer);

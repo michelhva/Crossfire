@@ -73,14 +73,14 @@ public class RenderStateManager {
         /** {@inheritDoc} */
         @Override
         public void linesAdded(final int lines) {
-            renderState.linesAdded(buffer, lines);
+            renderState.linesAdded(buffer);
             fireChanges();
         }
 
         /** {@inheritDoc} */
         @Override
         public void linesReplaced(final int lines) {
-            renderState.linesReplaced(buffer, lines);
+            renderState.linesReplaced(buffer);
             fireChanges();
         }
 
