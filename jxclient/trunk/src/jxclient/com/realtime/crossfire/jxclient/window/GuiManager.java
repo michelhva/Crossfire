@@ -159,7 +159,7 @@ public class GuiManager {
      * The {@link JXCConnection} to use.
      */
     @NotNull
-    private JXCConnection connection;
+    private final JXCConnection connection;
 
     /**
      * The {@link CrossfireServerConnection} instance to monitor.
@@ -349,8 +349,9 @@ public class GuiManager {
      * @param commands the commands to use
      * @param guiFactory the gui factory for creating gui instances
      * @param keybindingsManager the keybindings manager to use
+     * @param connection the connection to use
      */
-    public GuiManager(@NotNull final GuiStateManager guiStateManager, @NotNull final Object semaphoreDrawing, @NotNull final Object terminateSync, @NotNull final TooltipManager tooltipManager, @NotNull final Settings settings, @NotNull final CrossfireServerConnection server, @NotNull final JXCWindowRenderer windowRenderer, @NotNull final Commands commands, @NotNull final GuiFactory guiFactory, @NotNull final KeybindingsManager keybindingsManager) {
+    public GuiManager(@NotNull final GuiStateManager guiStateManager, @NotNull final Object semaphoreDrawing, @NotNull final Object terminateSync, @NotNull final TooltipManager tooltipManager, @NotNull final Settings settings, @NotNull final CrossfireServerConnection server, @NotNull final JXCWindowRenderer windowRenderer, @NotNull final Commands commands, @NotNull final GuiFactory guiFactory, @NotNull final KeybindingsManager keybindingsManager, @NotNull final JXCConnection connection) {
         this.semaphoreDrawing = semaphoreDrawing;
         this.terminateSync = terminateSync;
         this.tooltipManager = tooltipManager;
@@ -360,6 +361,7 @@ public class GuiManager {
         this.commands = commands;
         this.guiFactory = guiFactory;
         this.keybindingsManager = keybindingsManager;
+        this.connection = connection;
         guiStateManager.addGuiStateListener(guiStateListener);
         windowRenderer.setCurrentGui(guiFactory.newGui());
         queryDialog = guiFactory.newGui();
@@ -781,11 +783,6 @@ public class GuiManager {
             DialogStateParser.save(skin, windowRenderer);
         }
         keybindingsManager.saveKeybindings();
-    }
-
-    @Deprecated
-    public void setConnection(@NotNull final JXCConnection connection) {
-        this.connection = connection;
     }
 
     /**
