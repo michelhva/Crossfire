@@ -939,8 +939,10 @@ public class JXCSkinLoader {
         final Extent extent = parseExtent(args, 2);
         final boolean saveDialog = NumberParser.parseBoolean(args[6]);
         final String title = ParseUtils.parseText(args, 7, lnr);
+        final Expression w = extent.getWExpression();
+        final Expression h = extent.getHExpression();
         assert dialogFactory != null;
-        for (final GUIElement element : dialogFactory.newDialog(tooltipManager, windowRenderer, elementListener, name, extent.getWExpression(), extent.getHExpression(), title)) {
+        for (final GUIElement element : dialogFactory.newDialog(tooltipManager, windowRenderer, elementListener, name, w, h, title)) {
             insertGuiElement(element);
         }
         if (saveDialog) {
@@ -1240,22 +1242,26 @@ public class JXCSkinLoader {
                 throw new IOException("syntax error");
             }
 
+            final int w = extent.getConstantW();
+            final int h = extent.getConstantH();
             if (defaultItemPainter == null) {
                 throw new IOException("cannot use 'item floor' without 'def item' command");
             }
 
-            final ItemPainter itemPainter = defaultItemPainter.newItemPainter(extent.getConstantW(), extent.getConstantH());
+            final ItemPainter itemPainter = defaultItemPainter.newItemPainter(w, h);
             element = new GUIItemFloor(tooltipManager, elementListener, commandQueue, name, extent, itemPainter, index, server, floorView, itemSet, facesManager, nextGroupFace, prevGroupFace);
         } else if (type.equals("inventory")) {
             if (args.length != 8) {
                 throw new IOException("syntax error");
             }
 
+            final int w = extent.getConstantW();
+            final int h = extent.getConstantH();
             if (defaultItemPainter == null) {
                 throw new IOException("cannot use 'item floor' without 'def item' command");
             }
 
-            final ItemPainter itemPainter = defaultItemPainter.newItemPainter(extent.getConstantW(), extent.getConstantH());
+            final ItemPainter itemPainter = defaultItemPainter.newItemPainter(w, h);
             element = new GUIItemInventory(tooltipManager, elementListener, commandQueue, name, extent, itemPainter, index, server, facesManager, floorView, inventoryView);
         } else if (type.equals("shortcut")) {
             if (args.length != 11) {
