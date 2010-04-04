@@ -250,7 +250,7 @@ public class RenderStateTest extends TestCase {
             public void linesAdded(final int lines) {
                 assert rs != null;
                 assert buffer != null;
-                rs.linesAdded(buffer, lines);
+                rs.linesAdded(buffer);
             }
 
             /** {@inheritDoc} */
@@ -258,7 +258,7 @@ public class RenderStateTest extends TestCase {
             public void linesReplaced(final int lines) {
                 assert rs != null;
                 assert buffer != null;
-                rs.linesReplaced(buffer, lines);
+                rs.linesReplaced(buffer);
             }
 
             /** {@inheritDoc} */
