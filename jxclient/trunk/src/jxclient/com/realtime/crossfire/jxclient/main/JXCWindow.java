@@ -669,7 +669,7 @@ public class JXCWindow extends JFrame {
         new ActiveSkillWatcher(stats, server);
         setDefaultCloseOperation(DO_NOTHING_ON_CLOSE);
         mouseTracker = new MouseTracker(debugGui);
-        windowRenderer = new JXCWindowRenderer(this, mouseTracker, semaphoreRedraw, server, debugScreen);
+        windowRenderer = new JXCWindowRenderer(mouseTracker, semaphoreRedraw, server, debugScreen);
         mouseTracker.init(windowRenderer);
         final ScriptManager scriptManager = new ScriptManager(commandQueue, server, stats, floorView, itemSet, spellsManager, mapUpdater, skillSet);
         guiManager = new GuiManager(guiStateManager, semaphoreDrawing, terminateSync, new TooltipManager(windowRenderer), settings, server, macros, windowRenderer, scriptManager, commandQueue, optionManager, debugGui ? mouseTracker : null);
@@ -766,8 +766,8 @@ public class JXCWindow extends JFrame {
         setMinimumSize(minSize);
         setMaximumSize(maxSize);
 
-        if (!fullScreen || !windowRenderer.setFullScreenMode(resolution)) {
-            if (!windowRenderer.setWindowMode(resolution, minResolution, minSize.equals(maxSize))) {
+        if (!fullScreen || !windowRenderer.setFullScreenMode(this, resolution)) {
+            if (!windowRenderer.setWindowMode(this, resolution, minResolution, minSize.equals(maxSize))) {
                 System.err.println("cannot create window with resolution "+resolution);
                 System.exit(1);
                 throw new AssertionError();
