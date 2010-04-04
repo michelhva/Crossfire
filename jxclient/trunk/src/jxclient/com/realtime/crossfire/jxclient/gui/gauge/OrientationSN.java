@@ -42,13 +42,7 @@ public class OrientationSN extends AbstractOrientation {
         final int height = getHeight();
         final int cur = getCur();
         final int min = getMin();
-        final int max = getMax();
-        final int h;
-        if (isNegativeImage()) {
-            h = calc(min-cur, max-min, height);
-        } else {
-            h = calc(cur-min, max-min, height);
-        }
+        final int h = calc(isNegativeImage() ? min-cur : cur-min, getMax()-min, height);
         setExtent(0, height-h, getWidth(), h);
     }
 
