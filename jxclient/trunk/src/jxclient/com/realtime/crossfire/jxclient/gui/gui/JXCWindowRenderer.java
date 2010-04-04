@@ -308,18 +308,6 @@ public class JXCWindowRenderer {
     };
 
     /**
-     * The {@link GUIElementListener} attached to all {@link GUIElement}s.
-     */
-    @NotNull
-    private final GUIElementListener elementListener = new GUIElementListener() {
-        /** {@inheritDoc} */
-        @Override
-        public void mouseClicked(@NotNull final Gui gui) {
-            raiseDialog(gui);
-        }
-    };
-
-    /**
      * Creates a new instance.
      * @param mouseTracker the mouse tracker instance
      * @param redrawSemaphore the semaphore used to synchronized map model
@@ -1050,12 +1038,6 @@ public class JXCWindowRenderer {
     private static Buffer getActiveMessageBuffer(@NotNull final Gui gui) {
         final GUILog buffer = gui.getFirstElement(GUIMessageLog.class);
         return buffer == null ? null : buffer.getBuffer();
-    }
-
-    @Deprecated
-    @NotNull
-    public GUIElementListener getElementListener() {
-        return elementListener;
     }
 
     /**
