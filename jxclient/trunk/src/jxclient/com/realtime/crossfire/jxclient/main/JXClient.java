@@ -57,7 +57,7 @@ import com.realtime.crossfire.jxclient.stats.ExperienceTable;
 import com.realtime.crossfire.jxclient.stats.PoisonWatcher;
 import com.realtime.crossfire.jxclient.stats.Stats;
 import com.realtime.crossfire.jxclient.util.DebugWriter;
-import com.realtime.crossfire.jxclient.window.ShortcutsManager;
+import com.realtime.crossfire.jxclient.window.ShortcutsLoader;
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.IOException;
@@ -153,14 +153,14 @@ public class JXClient {
                             final CommandQueue commandQueue = new CommandQueue(server, guiStateManager);
                             final ScriptManager scriptManager = new ScriptManager(commandQueue, server, stats, floorView, itemSet, spellsManager, mapUpdater, skillSet);
                             final Shortcuts shortcuts = new Shortcuts(commandQueue, spellsManager);
-                            final ShortcutsManager shortcutsManager = new ShortcutsManager(shortcuts);
+                            final ShortcutsLoader shortcutsLoader = new ShortcutsLoader(shortcuts);
 
                             synchronized (terminateSync) {
                                 SwingUtilities.invokeAndWait(new Runnable() {
                                     /** {@inheritDoc} */
                                     @Override
                                     public void run() {
-                                        window[0] = new JXCWindow(terminateSync, server, options.isDebugGui(), debugKeyboardOutputStreamWriter, options.getPrefs(), optionManager, metaserverModel, options.getResolution(), guiStateManager, experienceTable, skillSet, stats, facesManager, itemSet, inventoryView, floorView, mouseTracker, windowRenderer, options.getSkin(), options.isFullScreen(), options.getServer(), macros, mapUpdater, spellsManager, commandQueue, scriptManager, shortcutsManager, shortcuts);
+                                        window[0] = new JXCWindow(terminateSync, server, options.isDebugGui(), debugKeyboardOutputStreamWriter, options.getPrefs(), optionManager, metaserverModel, options.getResolution(), guiStateManager, experienceTable, skillSet, stats, facesManager, itemSet, inventoryView, floorView, mouseTracker, windowRenderer, options.getSkin(), options.isFullScreen(), options.getServer(), macros, mapUpdater, spellsManager, commandQueue, scriptManager, shortcutsLoader, shortcuts);
                                     }
                                 });
                                 terminateSync.wait();

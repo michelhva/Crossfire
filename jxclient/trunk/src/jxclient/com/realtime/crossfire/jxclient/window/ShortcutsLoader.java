@@ -41,7 +41,7 @@ import org.jetbrains.annotations.NotNull;
  * Manages shortcuts.
  * @author Andreas Kirschbaum
  */
-public class ShortcutsManager {
+public class ShortcutsLoader {
 
     /**
      * The shortcuts.
@@ -53,7 +53,7 @@ public class ShortcutsManager {
      * Creates a new instance.
      * @param shortcuts the shortcuts to manage
      */
-    public ShortcutsManager(@NotNull final Shortcuts shortcuts) {
+    public ShortcutsLoader(@NotNull final Shortcuts shortcuts) {
         this.shortcuts = shortcuts;
     }
 
