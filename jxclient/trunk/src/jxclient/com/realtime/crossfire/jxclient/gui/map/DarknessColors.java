@@ -61,6 +61,7 @@ public class DarknessColors {
      * @param darkness the darkness value between 0 and 255
      * @return the overlay color
      */
+    @NotNull
     public static Color getDarknessColor(final int darkness) {
         synchronized (darknessColors) {
             if (darknessColors[darkness] == null) {
