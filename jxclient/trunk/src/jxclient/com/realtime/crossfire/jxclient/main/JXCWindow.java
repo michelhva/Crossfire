@@ -197,6 +197,9 @@ public class JXCWindow extends JFrame {
     @NotNull
     private final MouseTracker mouseTracker;
 
+    /**
+     * The {@link JXCWindowRenderer} for this window.
+     */
     @NotNull
     private final JXCWindowRenderer windowRenderer;
 
@@ -628,13 +631,9 @@ public class JXCWindow extends JFrame {
      * @param terminateSync the object to be notified when the application
      * terminates
      * @param server the crossfire server connection to use
-     * @param semaphoreRedraw the semaphore used to synchronized map model
-     * updates and map view redraws
      * @param debugGui whether GUI elements should be highlighted
      * @param debugKeyboard if non-<code>null</code>, write all keyboard debug
      * to this writer
-     * @param debugScreen if non-<code>null</code>, write all screen debug to
-     * this writer
      * @param settings the settings instance to use
      * @param optionManager the option manager instance to use
      * @param metaserverModel the metaserver model to use
@@ -649,8 +648,9 @@ public class JXCWindow extends JFrame {
      * @param inventoryView the inventory item view to use
      * @param floorView the floor view to use
      * @param mouseTracker the mouse tracker to use
+     * @param windowRenderer the window renderer to use
      */
-    public JXCWindow(@NotNull final Object terminateSync, @NotNull final CrossfireServerConnection server, @NotNull final Object semaphoreRedraw, final boolean debugGui, @Nullable final Writer debugKeyboard, @Nullable final Writer debugScreen, @NotNull final Settings settings, @NotNull final OptionManager optionManager, @NotNull final MetaserverModel metaserverModel, @Nullable final Resolution resolution, @NotNull final GuiStateManager guiStateManager, @NotNull final ExperienceTable experienceTable, @NotNull final SkillSet skillSet, @NotNull final Stats stats, @NotNull final FacesManager facesManager, @NotNull final ItemSet itemSet, @NotNull final ItemView inventoryView, @NotNull final FloorView floorView, @NotNull final MouseTracker mouseTracker) {
+    public JXCWindow(@NotNull final Object terminateSync, @NotNull final CrossfireServerConnection server, final boolean debugGui, @Nullable final Writer debugKeyboard, @NotNull final Settings settings, @NotNull final OptionManager optionManager, @NotNull final MetaserverModel metaserverModel, @Nullable final Resolution resolution, @NotNull final GuiStateManager guiStateManager, @NotNull final ExperienceTable experienceTable, @NotNull final SkillSet skillSet, @NotNull final Stats stats, @NotNull final FacesManager facesManager, @NotNull final ItemSet itemSet, @NotNull final ItemView inventoryView, @NotNull final FloorView floorView, @NotNull final MouseTracker mouseTracker, @NotNull final JXCWindowRenderer windowRenderer) {
         super("");
         this.server = server;
         this.debugGui = debugGui;
@@ -666,6 +666,7 @@ public class JXCWindow extends JFrame {
         this.inventoryView = inventoryView;
         this.floorView = floorView;
         this.mouseTracker = mouseTracker;
+        this.windowRenderer = windowRenderer;
         macros = new Macros(server);
         mapUpdater = new CfMapUpdater(server, facesManager, guiStateManager);
         spellsManager = new SpellsManager(server, guiStateManager);
@@ -673,7 +674,6 @@ public class JXCWindow extends JFrame {
         new PoisonWatcher(stats, server);
         new ActiveSkillWatcher(stats, server);
         setDefaultCloseOperation(DO_NOTHING_ON_CLOSE);
-        windowRenderer = new JXCWindowRenderer(mouseTracker, semaphoreRedraw, server, debugScreen);
         mouseTracker.init(windowRenderer);
         final ScriptManager scriptManager = new ScriptManager(commandQueue, server, stats, floorView, itemSet, spellsManager, mapUpdater, skillSet);
         guiManager = new GuiManager(guiStateManager, semaphoreDrawing, terminateSync, new TooltipManager(windowRenderer), settings, server, macros, windowRenderer, scriptManager, commandQueue, optionManager, debugGui ? mouseTracker : null);
@@ -863,16 +863,6 @@ public class JXCWindow extends JFrame {
         synchronized (semaphoreConnected) {
             return connected;
         }
-    }
-
-    /**
-     * Returns the window renderer instance for this window.
-     * @return the window renderer
-     */
-    @Deprecated
-    @NotNull
-    public JXCWindowRenderer getWindowRenderer() {
-        return windowRenderer;
     }
 
 }
