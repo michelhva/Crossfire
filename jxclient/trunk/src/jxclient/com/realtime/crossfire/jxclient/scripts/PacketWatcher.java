@@ -245,7 +245,7 @@ public class PacketWatcher {
      * @return whether the command matches
      */
     private boolean matchesCommand(@NotNull final CharSequence command) {
-        return pattern.matcher(command).matches();
+        return pattern != null && pattern.matcher(command).matches();
     }
 
 }
