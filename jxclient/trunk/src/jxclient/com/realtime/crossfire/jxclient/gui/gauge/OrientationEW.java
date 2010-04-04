@@ -39,16 +39,17 @@ public class OrientationEW extends AbstractOrientation {
      */
     @Override
     protected void recalc() {
+        final int width = getWidth();
+        final int cur = getCur();
+        final int min = getMin();
+        final int max = getMax();
+        final int w;
         if (isNegativeImage()) {
             w = calc(min-cur, max-min, width);
-            h = height;
         } else {
             w = calc(cur-min, max-min, width);
         }
-        x = width-w;
-
-        y = 0;
-        h = height;
+        setExtent(width-w, 0, w, getHeight());
     }
 
 }

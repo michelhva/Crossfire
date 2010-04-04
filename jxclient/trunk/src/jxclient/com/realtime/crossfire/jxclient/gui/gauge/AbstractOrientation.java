@@ -30,49 +30,49 @@ public abstract class AbstractOrientation implements Orientation {
     /**
      * The total width of the image.
      */
-    protected int width = 0;
+    private int width = 0;
 
     /**
      * The total height of the image.
      */
-    protected int height = 0;
+    private int height = 0;
 
     /**
      * The current value.
      */
-    protected int cur = 0;
+    private int cur = 0;
 
     /**
      * The minimum value; the gauge is displayed as empty if <code>{@link #cur}
      * &gt;= min</code>.
      */
-    protected int min = 0;
+    private int min = 0;
 
     /**
      * The maximum value; the gauge is displayed as full if <code>{@link #cur}
      * &gt;= max</code>.
      */
-    protected int max = 0;
+    private int max = 0;
 
     /**
      * The x-coordinate of the highlighted part of the image.
      */
-    protected int x = 0;
+    private int x = 0;
 
     /**
      * The y-coordinate of the highlighted part of the image.
      */
-    protected int y = 0;
+    private int y = 0;
 
     /**
      * The width of the highlighted part of the image.
      */
-    protected int w = 0;
+    private int w = 0;
 
     /**
      * The height of the highlighted part of the image.
      */
-    protected int h = 0;
+    private int h = 0;
 
     /**
      * Whether the gauge can display negative images.
@@ -197,6 +197,60 @@ public abstract class AbstractOrientation implements Orientation {
         } else {
             return (size*val+max/2)/max;
         }
+    }
+
+    /**
+     * Returns the total width of the image.
+     * @return the width
+     */
+    public int getWidth() {
+        return width;
+    }
+
+    /**
+     * Returns the total height of the image.
+     * @return the height
+     */
+    public int getHeight() {
+        return height;
+    }
+
+    /**
+     * Returns the current value.
+     * @return the current value
+     */
+    public int getCur() {
+        return cur;
+    }
+
+    /**
+     * Returns the minimum value.
+     * @return the minimum value
+     */
+    public int getMin() {
+        return min;
+    }
+
+    /**
+     * Returns the maximum value.
+     * @return the maximum value
+     */
+    public int getMax() {
+        return max;
+    }
+
+    /**
+     * Sets the extent of the highlighted part of the image.
+     * @param x the x-coordinate
+     * @param y the y-coordinate
+     * @param w the width
+     * @param h the height
+     */
+    protected void setExtent(final int x, final int y, final int w, final int h) {
+        this.x = x;
+        this.y = y;
+        this.w = w;
+        this.h = h;
     }
 
 }
