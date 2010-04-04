@@ -784,12 +784,6 @@ public class GuiManager {
     }
 
     @Deprecated
-    @NotNull
-    public Commands getCommands() {
-        return commands;
-    }
-
-    @Deprecated
     public void setConnection(@NotNull final JXCConnection connection) {
         this.connection = connection;
     }
