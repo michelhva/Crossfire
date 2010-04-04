@@ -25,6 +25,9 @@ import com.realtime.crossfire.jxclient.commands.Commands;
 import com.realtime.crossfire.jxclient.commands.Macros;
 import com.realtime.crossfire.jxclient.faces.FacesManager;
 import com.realtime.crossfire.jxclient.gui.commands.CommandCallback;
+import com.realtime.crossfire.jxclient.gui.commands.CommandList;
+import com.realtime.crossfire.jxclient.gui.commands.NoSuchCommandException;
+import com.realtime.crossfire.jxclient.gui.gui.Gui;
 import com.realtime.crossfire.jxclient.gui.gui.GuiFactory;
 import com.realtime.crossfire.jxclient.gui.gui.JXCWindowRenderer;
 import com.realtime.crossfire.jxclient.gui.gui.MouseTracker;
@@ -70,6 +73,7 @@ import com.realtime.crossfire.jxclient.window.GuiManager;
 import com.realtime.crossfire.jxclient.window.JXCConnection;
 import com.realtime.crossfire.jxclient.window.KeyHandler;
 import com.realtime.crossfire.jxclient.window.KeyHandlerListener;
+import com.realtime.crossfire.jxclient.window.KeybindingsManager;
 import com.realtime.crossfire.jxclient.window.ShortcutsManager;
 import java.awt.Dimension;
 import java.awt.Graphics;
@@ -625,6 +629,67 @@ public class JXCWindow extends JFrame {
     };
 
     /**
+     * The {@link CommandCallback}.
+     */
+    @NotNull
+    private final CommandCallback commandCallback = new CommandCallback() {
+        /** {@inheritDoc} */
+        @Override
+        public void quitApplication() {
+            guiManager.terminate();
+        }
+
+        /** {@inheritDoc} */
+        @Override
+        public void openDialog(@NotNull final Gui dialog) {
+            guiManager.openDialog(dialog, false);
+        }
+
+        /** {@inheritDoc} */
+        @Override
+        public void toggleDialog(@NotNull final Gui dialog) {
+            guiManager.toggleDialog(dialog);
+        }
+
+        /** {@inheritDoc} */
+        @Override
+        public void closeDialog(@NotNull final Gui dialog) {
+            guiManager.closeDialog(dialog);
+        }
+
+        /** {@inheritDoc} */
+        @NotNull
+        @Override
+        public CommandList getCommandList(@NotNull final String args) throws NoSuchCommandException {
+            return guiManager.getCommandList(args);
+        }
+
+        /** {@inheritDoc} */
+        @Override
+        public void updatePlayerName(@NotNull final String playerName) {
+            guiManager.updatePlayerName(playerName);
+        }
+
+        /** {@inheritDoc} */
+        @Override
+        public void activateCommandInput(@NotNull final String newText) {
+            guiManager.activateCommandInput(newText);
+        }
+
+        /** {@inheritDoc} */
+        @Override
+        public boolean createKeyBinding(final boolean perCharacter, @NotNull final CommandList commandList) {
+            return guiManager.createKeyBinding(perCharacter, commandList);
+        }
+
+        /** {@inheritDoc} */
+        @Override
+        public boolean removeKeyBinding(final boolean perCharacter) {
+            return guiManager.removeKeyBinding(perCharacter);
+        }
+    };
+
+    /**
      * Creates a new instance.
      * @param terminateSync the object to be notified when the application
      * terminates
@@ -680,7 +745,10 @@ public class JXCWindow extends JFrame {
         this.commandQueue = commandQueue;
         this.shortcutsManager = shortcutsManager;
         setDefaultCloseOperation(DO_NOTHING_ON_CLOSE);
-        guiManager = new GuiManager(guiStateManager, semaphoreDrawing, terminateSync, new TooltipManager(), settings, server, macros, windowRenderer, scriptManager, commandQueue, optionManager, debugGui ? mouseTracker : null);
+        final Commands commands = new Commands(windowRenderer, commandQueue, server, scriptManager, optionManager, commandCallback, macros);
+        final GuiFactory guiFactory = new GuiFactory(debugGui ? mouseTracker : null, commands, commandCallback, macros);
+        final KeybindingsManager keybindingsManager = new KeybindingsManager(commands, commandCallback, macros);
+        guiManager = new GuiManager(guiStateManager, semaphoreDrawing, terminateSync, new TooltipManager(), settings, server, windowRenderer, commands, guiFactory, keybindingsManager);
         keyHandler = new KeyHandler(debugKeyboard, guiManager.getKeybindingsManager(), commandQueue, windowRenderer, keyHandlerListener);
         try {
             characterPickup = new Pickup(commandQueue, optionManager);
@@ -820,7 +888,7 @@ public class JXCWindow extends JFrame {
     private JXCSkin loadSkin(@NotNull final String skinName) throws JXCSkinException {
         // check for skin in directory
         final File dir = new File(skinName);
-        final KeyBindings defaultKeyBindings = new KeyBindings(null, guiManager.getCommands(), guiManager.getCommandCallback(), macros);
+        final KeyBindings defaultKeyBindings = new KeyBindings(null, guiManager.getCommands(), commandCallback, macros);
         final JXCSkinSource skinSource;
         if (dir.exists() && dir.isDirectory()) {
             skinSource = new JXCSkinDirSource(dir);
@@ -830,8 +898,7 @@ public class JXCWindow extends JFrame {
         }
         final JXCSkinLoader newSkin = new JXCSkinLoader(itemSet, inventoryView, floorView, spellsManager, facesManager, stats, mapUpdater, defaultKeyBindings, optionManager, experienceTable, skillSet);
         final Commands commands = guiManager.getCommands();
-        final GuiFactory guiFactory = new GuiFactory(debugGui ? mouseTracker : null, commands, guiManager.getCommandCallback(), macros);
-        final CommandCallback commandCallback = guiManager.getCommandCallback();
+        final GuiFactory guiFactory = new GuiFactory(debugGui ? mouseTracker : null, commands, commandCallback, macros);
         final JXCSkin skin = newSkin.load(skinSource, server, guiStateManager, guiManager.getTooltipManager(), windowRenderer, windowRenderer.getElementListener(), metaserverModel, commandQueue, shortcutsManager.getShortcuts(), commands, currentSpellManager, commandCallback, macros, guiFactory);
         if (resolution != null) {
             if (skin.getMinResolution().getWidth() > resolution.getWidth() || skin.getMinResolution().getHeight() > resolution.getHeight()) {

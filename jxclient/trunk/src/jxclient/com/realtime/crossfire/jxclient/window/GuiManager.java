@@ -22,14 +22,11 @@
 package com.realtime.crossfire.jxclient.window;
 
 import com.realtime.crossfire.jxclient.commands.Commands;
-import com.realtime.crossfire.jxclient.commands.Macros;
-import com.realtime.crossfire.jxclient.gui.commands.CommandCallback;
 import com.realtime.crossfire.jxclient.gui.commands.CommandList;
 import com.realtime.crossfire.jxclient.gui.commands.NoSuchCommandException;
 import com.realtime.crossfire.jxclient.gui.gui.Gui;
 import com.realtime.crossfire.jxclient.gui.gui.GuiFactory;
 import com.realtime.crossfire.jxclient.gui.gui.JXCWindowRenderer;
-import com.realtime.crossfire.jxclient.gui.gui.MouseTracker;
 import com.realtime.crossfire.jxclient.gui.gui.RendererGuiState;
 import com.realtime.crossfire.jxclient.gui.gui.TooltipManager;
 import com.realtime.crossfire.jxclient.gui.label.AbstractLabel;
@@ -38,15 +35,12 @@ import com.realtime.crossfire.jxclient.gui.log.GUILabelLog;
 import com.realtime.crossfire.jxclient.gui.textinput.GUIText;
 import com.realtime.crossfire.jxclient.guistate.GuiStateListener;
 import com.realtime.crossfire.jxclient.guistate.GuiStateManager;
-import com.realtime.crossfire.jxclient.queue.CommandQueue;
-import com.realtime.crossfire.jxclient.scripts.ScriptManager;
 import com.realtime.crossfire.jxclient.server.crossfire.CrossfireDrawextinfoListener;
 import com.realtime.crossfire.jxclient.server.crossfire.CrossfireQueryListener;
 import com.realtime.crossfire.jxclient.server.crossfire.CrossfireServerConnection;
 import com.realtime.crossfire.jxclient.server.crossfire.MessageTypes;
 import com.realtime.crossfire.jxclient.server.socket.ClientSocketState;
 import com.realtime.crossfire.jxclient.settings.Settings;
-import com.realtime.crossfire.jxclient.settings.options.OptionManager;
 import com.realtime.crossfire.jxclient.skin.skin.JXCSkin;
 import com.realtime.crossfire.jxclient.skin.skin.JXCSkinException;
 import java.awt.Dimension;
@@ -343,75 +337,6 @@ public class GuiManager {
     };
 
     /**
-     * The {@link CommandCallback}.
-     */
-    @NotNull
-    private final CommandCallback commandCallback = new CommandCallback() {
-        /** {@inheritDoc} */
-        @Override
-        public void quitApplication() {
-            terminate();
-        }
-
-        /** {@inheritDoc} */
-        @Override
-        public void openDialog(@NotNull final Gui dialog) {
-            GuiManager.this.openDialog(dialog, false);
-        }
-
-        /** {@inheritDoc} */
-        @Override
-        public void toggleDialog(@NotNull final Gui dialog) {
-            GuiManager.this.toggleDialog(dialog);
-        }
-
-        /** {@inheritDoc} */
-        @Override
-        public void closeDialog(@NotNull final Gui dialog) {
-            GuiManager.this.closeDialog(dialog);
-        }
-
-        /** {@inheritDoc} */
-        @NotNull
-        @Override
-        public CommandList getCommandList(@NotNull final String args) throws NoSuchCommandException {
-            if (skin == null) {
-                throw new IllegalStateException();
-            }
-
-            try {
-                return skin.getCommandList(args);
-            } catch (final JXCSkinException ex) {
-                throw new NoSuchCommandException(ex.getMessage());
-            }
-        }
-
-        /** {@inheritDoc} */
-        @Override
-        public void updatePlayerName(@NotNull final String playerName) {
-            GuiManager.this.updatePlayerName(playerName);
-        }
-
-        /** {@inheritDoc} */
-        @Override
-        public void activateCommandInput(@NotNull final String newText) {
-            GuiManager.this.activateCommandInput(newText);
-        }
-
-        /** {@inheritDoc} */
-        @Override
-        public boolean createKeyBinding(final boolean perCharacter, @NotNull final CommandList commandList) {
-            return GuiManager.this.createKeyBinding(perCharacter, commandList);
-        }
-
-        /** {@inheritDoc} */
-        @Override
-        public boolean removeKeyBinding(final boolean perCharacter) {
-            return GuiManager.this.removeKeyBinding(perCharacter);
-        }
-    };
-
-    /**
      * Creates a new instance.
      * @param guiStateManager the gui state manager to watch
      * @param semaphoreDrawing the semaphore to use for drawing operations
@@ -420,27 +345,25 @@ public class GuiManager {
      * @param tooltipManager the tooltip manager to update
      * @param settings the settings to use
      * @param server the crossfire server connection to monitor
-     * @param macros the macros instance to use
      * @param windowRenderer the window renderer to use
-     * @param scriptManager the script manager to use
-     * @param commandQueue the command queue to use
-     * @param optionManager the option manager to use
-     * @param mouseTracker the mouse tracker to use
+     * @param commands the commands to use
+     * @param guiFactory the gui factory for creating gui instances
+     * @param keybindingsManager the keybindings manager to use
      */
-    public GuiManager(@NotNull final GuiStateManager guiStateManager, @NotNull final Object semaphoreDrawing, @NotNull final Object terminateSync, @NotNull final TooltipManager tooltipManager, @NotNull final Settings settings, @NotNull final CrossfireServerConnection server, @NotNull final Macros macros, @NotNull final JXCWindowRenderer windowRenderer, @NotNull final ScriptManager scriptManager, @NotNull final CommandQueue commandQueue, @NotNull final OptionManager optionManager, @Nullable final MouseTracker mouseTracker) {
+    public GuiManager(@NotNull final GuiStateManager guiStateManager, @NotNull final Object semaphoreDrawing, @NotNull final Object terminateSync, @NotNull final TooltipManager tooltipManager, @NotNull final Settings settings, @NotNull final CrossfireServerConnection server, @NotNull final JXCWindowRenderer windowRenderer, @NotNull final Commands commands, @NotNull final GuiFactory guiFactory, @NotNull final KeybindingsManager keybindingsManager) {
         this.semaphoreDrawing = semaphoreDrawing;
         this.terminateSync = terminateSync;
         this.tooltipManager = tooltipManager;
         this.settings = settings;
         this.server = server;
         this.windowRenderer = windowRenderer;
+        this.commands = commands;
+        this.guiFactory = guiFactory;
+        this.keybindingsManager = keybindingsManager;
         guiStateManager.addGuiStateListener(guiStateListener);
-        commands = new Commands(windowRenderer, commandQueue, server, scriptManager, optionManager, commandCallback, macros);
-        guiFactory = new GuiFactory(mouseTracker, commands, commandCallback, macros);
         windowRenderer.setCurrentGui(guiFactory.newGui());
         queryDialog = guiFactory.newGui();
         keybindDialog = guiFactory.newGui();
-        keybindingsManager = new KeybindingsManager(commands, commandCallback, macros);
     }
 
     /**
@@ -557,7 +480,7 @@ public class GuiManager {
      * @param autoCloseOnDeactivate whether the dialog should auto-close when it
      * becomes inactive; ignored if the dialog is already open
      */
-    private void openDialog(@NotNull final Gui dialog, final boolean autoCloseOnDeactivate) {
+    public void openDialog(@NotNull final Gui dialog, final boolean autoCloseOnDeactivate) {
         windowRenderer.openDialog(dialog, autoCloseOnDeactivate);
         if (dialog == queryDialog) {
             dialog.setHideInput(false);
@@ -568,7 +491,7 @@ public class GuiManager {
      * Toggles a dialog.
      * @param dialog the dialog to toggle
      */
-    private void toggleDialog(@NotNull final Gui dialog) {
+    public void toggleDialog(@NotNull final Gui dialog) {
         if (windowRenderer.toggleDialog(dialog)) {
             if (dialog == queryDialog) {
                 dialog.setHideInput(false);
@@ -710,7 +633,7 @@ public class GuiManager {
      * Closes the given dialog. Does nothing if the dialog is not opened.
      * @param dialog the dialog to close
      */
-    private void closeDialog(@NotNull final Gui dialog) {
+    public void closeDialog(@NotNull final Gui dialog) {
         windowRenderer.closeDialog(dialog);
     }
 
@@ -719,7 +642,7 @@ public class GuiManager {
      * character name prompt.
      * @param playerName the player name
      */
-    private void updatePlayerName(@NotNull final String playerName) {
+    public void updatePlayerName(@NotNull final String playerName) {
         if (currentQueryDialogIsNamePrompt) {
             settings.putString("player_"+connection.getHostname(), playerName);
         }
@@ -786,7 +709,7 @@ public class GuiManager {
      * invisible guis are checked as well. If one is found, it is made visible.
      * @param newText the new command text if non-<code>null</code>
      */
-    private void activateCommandInput(@Nullable final String newText) {
+    public void activateCommandInput(@Nullable final String newText) {
         final GUIText textArea = activateCommandInput();
         if (textArea != null && newText != null && newText.length() > 0) {
             textArea.setText(newText);
@@ -932,7 +855,7 @@ public class GuiManager {
      * @param cmdlist the command list to execute on key press
      * @return whether the key bindings dialog should be opened
      */
-    private boolean createKeyBinding(final boolean perCharacter, @NotNull final CommandList cmdlist) {
+    public boolean createKeyBinding(final boolean perCharacter, @NotNull final CommandList cmdlist) {
         final boolean result = keybindingsManager.createKeyBinding(perCharacter, cmdlist);
         if (result) {
             openKeybindDialog();
@@ -946,18 +869,12 @@ public class GuiManager {
      * removed
      * @return whether the key bindings dialog should be opened
      */
-    private boolean removeKeyBinding(final boolean perCharacter) {
+    public boolean removeKeyBinding(final boolean perCharacter) {
         final boolean result = keybindingsManager.removeKeyBinding(perCharacter);
         if (result) {
             openKeybindDialog();
         }
         return result;
-    }
-
-    @Deprecated
-    @NotNull
-    public CommandCallback getCommandCallback() {
-        return commandCallback;
     }
 
     /**
@@ -981,6 +898,25 @@ public class GuiManager {
         server.setPreferredMapSize(mapSize.width, mapSize.height);
         assert skin != null;
         server.setPreferredNumLookObjects(skin.getNumLookObjects());
+    }
+
+    /**
+     * Returns a named command list.
+     * @param args the name of the command list
+     * @return the command list
+     * @throws NoSuchCommandException if the command list does not exist
+     */
+    @NotNull
+    public CommandList getCommandList(@NotNull final String args) throws NoSuchCommandException {
+        if (skin == null) {
+            throw new IllegalStateException();
+        }
+
+        try {
+            return skin.getCommandList(args);
+        } catch (final JXCSkinException ex) {
+            throw new NoSuchCommandException(ex.getMessage());
+        }
     }
 
 }
