@@ -497,6 +497,7 @@ public class Gui {
                 }
             } else if (activeElement instanceof AbstractButton) {
                 if (e.getKeyChar() == '\r' || e.getKeyChar() == '\n' || e.getKeyChar() == ' ') {
+                    assert activeElement != null;
                     ((AbstractButton)activeElement).execute();
                     return true;
                 }
