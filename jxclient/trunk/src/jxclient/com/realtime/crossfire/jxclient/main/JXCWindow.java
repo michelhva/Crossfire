@@ -27,6 +27,7 @@ import com.realtime.crossfire.jxclient.faces.FacesManager;
 import com.realtime.crossfire.jxclient.gui.commands.CommandCallback;
 import com.realtime.crossfire.jxclient.gui.commands.CommandList;
 import com.realtime.crossfire.jxclient.gui.commands.NoSuchCommandException;
+import com.realtime.crossfire.jxclient.gui.gui.GUIElementListener;
 import com.realtime.crossfire.jxclient.gui.gui.Gui;
 import com.realtime.crossfire.jxclient.gui.gui.GuiFactory;
 import com.realtime.crossfire.jxclient.gui.gui.JXCWindowRenderer;
@@ -898,7 +899,15 @@ public class JXCWindow extends JFrame {
         }
         final JXCSkinLoader newSkin = new JXCSkinLoader(itemSet, inventoryView, floorView, spellsManager, facesManager, stats, mapUpdater, defaultKeyBindings, optionManager, experienceTable, skillSet);
         final GuiFactory guiFactory = new GuiFactory(debugGui ? mouseTracker : null, commands, commandCallback, macros);
-        final JXCSkin skin = newSkin.load(skinSource, server, guiStateManager, tooltipManager, windowRenderer, windowRenderer.getElementListener(), metaserverModel, commandQueue, shortcuts, commands, currentSpellManager, commandCallback, macros, guiFactory);
+        final GUIElementListener elementListener = new GUIElementListener() {
+            /** {@inheritDoc} */
+            @Override
+            public void mouseClicked(@NotNull final Gui gui) {
+                windowRenderer.raiseDialog(gui);
+            }
+        };
+
+        final JXCSkin skin = newSkin.load(skinSource, server, guiStateManager, tooltipManager, windowRenderer, elementListener, metaserverModel, commandQueue, shortcuts, commands, currentSpellManager, commandCallback, macros, guiFactory);
         if (resolution != null) {
             if (skin.getMinResolution().getWidth() > resolution.getWidth() || skin.getMinResolution().getHeight() > resolution.getHeight()) {
                 throw new JXCSkinException("resolution "+resolution+" is not supported by this skin");
