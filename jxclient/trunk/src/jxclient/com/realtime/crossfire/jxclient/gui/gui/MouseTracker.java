@@ -62,6 +62,7 @@ public class MouseTracker implements MouseInputListener {
         this.debugGui = debugGui;
     }
 
+    @Deprecated
     public void init(@NotNull final JXCWindowRenderer windowRenderer) {
         this.windowRenderer = windowRenderer;
     }
