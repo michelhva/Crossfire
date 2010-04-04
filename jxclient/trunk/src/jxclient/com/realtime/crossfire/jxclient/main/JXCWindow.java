@@ -729,13 +729,13 @@ public class JXCWindow extends JFrame {
 
         });
         connection = new JXCConnection(guiManager.getKeybindingsManager(), shortcutsManager, settings, this, characterPickup, server, guiStateManager);
+    }
+
+    public void init(@NotNull final String skinName, final boolean fullScreen, @Nullable final String serverInfo) {
         server.addClientSocketListener(clientSocketListener);
         server.addSentReplyListener(sentReplyListener);
         guiManager.setConnection(connection);
         guiStateManager.addGuiStateListener(guiStateListener);
-    }
-
-    public void init(@NotNull final String skinName, final boolean fullScreen, @Nullable final String serverInfo) {
         addKeyListener(keyListener);
         JXCSkin skin;
         try {
