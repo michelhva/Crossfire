@@ -760,7 +760,7 @@ public class JXCWindow extends JFrame {
             System.err.println("Cannot find application icon: "+ex.getMessage());
         }
         connection = new JXCConnection(keybindingsManager, shortcutsManager, settings, this, characterPickup, server, guiStateManager);
-        guiManager = new GuiManager(guiStateManager, semaphoreDrawing, terminateSync, new TooltipManager(), settings, server, windowRenderer, commands, guiFactory, keybindingsManager, connection);
+        guiManager = new GuiManager(guiStateManager, semaphoreDrawing, terminateSync, new TooltipManager(), settings, server, windowRenderer, guiFactory, keybindingsManager, connection);
         setFocusTraversalKeysEnabled(false);
         addWindowFocusListener(windowFocusListener);
         addWindowListener(windowListener);
