@@ -1981,7 +1981,7 @@ public class JXCSkinLoader {
      */
     @NotNull
     private static Resolution parseResolution(@NotNull final String text) throws IOException {
-        final Resolution resolution = Resolution.parse(true, text);
+        final Resolution resolution = Resolution.parse(text);
         if (resolution == null) {
             throw new IOException("invalid resolution: "+resolution);
         }

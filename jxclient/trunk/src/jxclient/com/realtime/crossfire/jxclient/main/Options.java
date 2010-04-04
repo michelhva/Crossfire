@@ -115,7 +115,7 @@ public class Options {
         int i = 0;
         while (i < args.length) {
             if ((args[i].equals("-r") || args[i].equals("--resolution")) && i+1 < args.length) {
-                resolution = Resolution.parse(true, args[++i]);
+                resolution = Resolution.parse(args[++i]);
                 if (resolution == null) {
                     System.err.println("Invalid resolution: "+args[i]);
                     System.exit(1);

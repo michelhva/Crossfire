@@ -21,7 +21,6 @@
 
 package com.realtime.crossfire.jxclient.items;
 
-import javax.swing.event.EventListenerList;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 
@@ -46,12 +45,6 @@ public class FloorView extends AbstractItemView {
      * container is open.
      */
     private int currentFloor = 0;
-
-    /**
-     * The list of {@link CurrentFloorListener}s to be notified about changes.
-     */
-    @NotNull
-    private final EventListenerList currentFloorListeners = new EventListenerList();
 
     /**
      * The {@link ItemSetListener} for detecting opened or closed containers.
@@ -173,24 +166,6 @@ public class FloorView extends AbstractItemView {
     }
 
     /**
-     * Adds a {@link CurrentFloorListener} to be notified when the current
-     * floor location has changed.
-     * @param currentFloorListener the current floor listener to add
-     */
-    public void addCurrentFloorListener(@NotNull final CurrentFloorListener currentFloorListener) {
-        currentFloorListeners.add(CurrentFloorListener.class, currentFloorListener);
-    }
-
-    /**
-     * Removes a {@link CurrentFloorListener} to be notified when the current
-     * floor location has changed.
-     * @param currentFloorListener the current floor listener to remove
-     */
-    public void removeCurrentFloorListener(@NotNull final CurrentFloorListener currentFloorListener) {
-        currentFloorListeners.remove(CurrentFloorListener.class, currentFloorListener);
-    }
-
-    /**
      * Updates the currently opened container that's contents are shown in the
      * floor view.
      * @param currentFloor the current floor tag
@@ -206,10 +181,6 @@ public class FloorView extends AbstractItemView {
         itemSet.addInventoryListener(this.currentFloor, itemListener);
         final int nextLastIndex = getSize()-1;
         addModifiedRange(0, Math.max(prevLastIndex, nextLastIndex));
-
-        for (final CurrentFloorListener currentFloorListener : currentFloorListeners.getListeners(CurrentFloorListener.class)) {
-            currentFloorListener.currentFloorChanged(this.currentFloor);
-        }
     }
 
     /**

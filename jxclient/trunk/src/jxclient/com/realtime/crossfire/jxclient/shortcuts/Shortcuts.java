@@ -210,14 +210,6 @@ public class Shortcuts implements Iterable<Shortcut> {
     }
 
     /**
-     * Returns the number of shortcut slots.
-     * @return the number of shortcut slots
-     */
-    public int size() {
-        return shortcuts.size();
-    }
-
-    /**
      * Adds a {@link ShortcutsListener}.
      * @param listener the listener to add
      */
