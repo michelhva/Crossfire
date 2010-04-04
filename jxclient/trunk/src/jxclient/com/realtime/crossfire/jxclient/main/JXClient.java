@@ -57,7 +57,6 @@ import com.realtime.crossfire.jxclient.stats.ExperienceTable;
 import com.realtime.crossfire.jxclient.stats.PoisonWatcher;
 import com.realtime.crossfire.jxclient.stats.Stats;
 import com.realtime.crossfire.jxclient.util.DebugWriter;
-import com.realtime.crossfire.jxclient.window.ShortcutsLoader;
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.IOException;
@@ -130,7 +129,6 @@ public class JXClient {
                             final InventoryView inventoryView = new InventoryView(itemSet, new InventoryComparator());
                             final FloorView floorView = new FloorView(itemSet);
                             new ItemsManager(server, facesManager, stats, skillSet, guiStateManager, itemSet);
-                            final JXCWindow[] window = new JXCWindow[1];
                             new Metaserver(Filenames.getMetaserverCacheFile(), metaserverModel, guiStateManager);
                             final SoundManager soundManager = new SoundManager(guiStateManager);
                             try {
@@ -154,6 +152,7 @@ public class JXClient {
                             final ScriptManager scriptManager = new ScriptManager(commandQueue, server, stats, floorView, itemSet, spellsManager, mapUpdater, skillSet);
                             final Shortcuts shortcuts = new Shortcuts(commandQueue, spellsManager);
 
+                            final JXCWindow[] window = new JXCWindow[1];
                             synchronized (terminateSync) {
                                 SwingUtilities.invokeAndWait(new Runnable() {
                                     /** {@inheritDoc} */
