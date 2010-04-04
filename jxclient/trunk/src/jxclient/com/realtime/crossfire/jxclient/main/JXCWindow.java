@@ -807,7 +807,7 @@ public class JXCWindow extends JFrame {
         addKeyListener(keyListener);
         JXCSkin skin;
         try {
-            skin = loadSkin(skinName);
+            skin = loadSkin(skinName, commands);
         } catch (final JXCSkinException ex) {
             if (skinName.equals(Options.DEFAULT_SKIN)) {
                 System.err.println("cannot load skin "+skinName+": "+ex.getMessage());
@@ -816,7 +816,7 @@ public class JXCWindow extends JFrame {
 
             System.err.println("cannot load skin "+skinName+": "+ex.getMessage()+", trying default skin");
             try {
-                skin = loadSkin(Options.DEFAULT_SKIN);
+                skin = loadSkin(Options.DEFAULT_SKIN, commands);
             } catch (final JXCSkinException ex2) {
                 System.err.println("cannot load default skin "+Options.DEFAULT_SKIN+": "+ex2.getMessage());
                 System.exit(1);
@@ -881,14 +881,15 @@ public class JXCWindow extends JFrame {
     /**
      * Loads a skin file.
      * @param skinName the skin file name
+     * @param commands the commands to use
      * @return the loaded skin
      * @throws JXCSkinException if the skin file cannot be loaded
      */
     @NotNull
-    private JXCSkin loadSkin(@NotNull final String skinName) throws JXCSkinException {
+    private JXCSkin loadSkin(@NotNull final String skinName, @NotNull final Commands commands) throws JXCSkinException {
         // check for skin in directory
         final File dir = new File(skinName);
-        final KeyBindings defaultKeyBindings = new KeyBindings(null, guiManager.getCommands(), commandCallback, macros);
+        final KeyBindings defaultKeyBindings = new KeyBindings(null, commands, commandCallback, macros);
         final JXCSkinSource skinSource;
         if (dir.exists() && dir.isDirectory()) {
             skinSource = new JXCSkinDirSource(dir);
@@ -897,7 +898,6 @@ public class JXCWindow extends JFrame {
             skinSource = new JXCSkinClassSource("com/realtime/crossfire/jxclient/skins/"+skinName);
         }
         final JXCSkinLoader newSkin = new JXCSkinLoader(itemSet, inventoryView, floorView, spellsManager, facesManager, stats, mapUpdater, defaultKeyBindings, optionManager, experienceTable, skillSet);
-        final Commands commands = guiManager.getCommands();
         final GuiFactory guiFactory = new GuiFactory(debugGui ? mouseTracker : null, commands, commandCallback, macros);
         final JXCSkin skin = newSkin.load(skinSource, server, guiStateManager, guiManager.getTooltipManager(), windowRenderer, windowRenderer.getElementListener(), metaserverModel, commandQueue, shortcutsManager.getShortcuts(), commands, currentSpellManager, commandCallback, macros, guiFactory);
         if (resolution != null) {
