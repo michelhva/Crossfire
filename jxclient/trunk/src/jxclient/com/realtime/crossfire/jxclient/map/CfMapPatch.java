@@ -111,6 +111,7 @@ public class CfMapPatch {
      * @param layer the layer of the face
      * @return the face; dark (i.e. not yet set) faces return <code>null</code>
      */
+    @Nullable
     public Face getFace(final int x, final int y, final int layer) {
         return square[x][y].getFace(layer);
     }
