@@ -352,9 +352,7 @@ public class JXCWindowRenderer {
             return true;
         }
 
-        if (!setResolutionPre(frame)) {
-            return false;
-        }
+        setResolutionPre(frame);
 
         final Dimension dimension;
         if (resolution == null) {
@@ -433,9 +431,7 @@ public class JXCWindowRenderer {
             return true;
         }
 
-        if (!setResolutionPre(frame)) {
-            return false;
-        }
+        setResolutionPre(frame);
 
         debugScreenWrite("setResolutionPre: windowed mode requested");
         frame.setUndecorated(false);
@@ -490,9 +486,8 @@ public class JXCWindowRenderer {
      * Tries to switch to the given resolution. If resolution switching fails,
      * the window might be invisible.
      * @param frame the associated frame
-     * @return whether the resolution has been changed
      */
-    private boolean setResolutionPre(@NotNull final Window frame) {
+    private void setResolutionPre(@NotNull final Window frame) {
         // disable full-screen since switching from full-screen to full-screen
         // does not work reliably
         if (isFullScreen) {
@@ -505,7 +500,6 @@ public class JXCWindowRenderer {
 
         debugScreenWrite("setResolutionPre: disposing frame");
         frame.dispose();
-        return true;
     }
 
     /**
