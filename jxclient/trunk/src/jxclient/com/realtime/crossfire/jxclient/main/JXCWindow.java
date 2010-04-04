@@ -692,8 +692,6 @@ public class JXCWindow extends JFrame {
 
     /**
      * Creates a new instance.
-     * @param terminateSync the object to be notified when the application
-     * terminates
      * @param server the crossfire server connection to use
      * @param debugGui whether GUI elements should be highlighted
      * @param debugKeyboard if non-<code>null</code>, write all keyboard debug
@@ -723,7 +721,7 @@ public class JXCWindow extends JFrame {
      * @param scriptManager the script manager instance
      * @param shortcuts the shortcuts instance
      */
-    public JXCWindow(@NotNull final Object terminateSync, @NotNull final CrossfireServerConnection server, final boolean debugGui, @Nullable final Writer debugKeyboard, @NotNull final Settings settings, @NotNull final OptionManager optionManager, @NotNull final MetaserverModel metaserverModel, @Nullable final Resolution resolution, @NotNull final GuiStateManager guiStateManager, @NotNull final ExperienceTable experienceTable, @NotNull final SkillSet skillSet, @NotNull final Stats stats, @NotNull final FacesManager facesManager, @NotNull final ItemSet itemSet, @NotNull final ItemView inventoryView, @NotNull final FloorView floorView, @NotNull final MouseTracker mouseTracker, @NotNull final JXCWindowRenderer windowRenderer, @NotNull final String skinName, final boolean fullScreen, @Nullable final String serverInfo, @NotNull final Macros macros, @NotNull final CfMapUpdater mapUpdater, @NotNull final SpellsManager spellsManager, @NotNull final CommandQueue commandQueue, @NotNull final ScriptManager scriptManager, @NotNull final Shortcuts shortcuts) {
+    public JXCWindow(@NotNull final CrossfireServerConnection server, final boolean debugGui, @Nullable final Writer debugKeyboard, @NotNull final Settings settings, @NotNull final OptionManager optionManager, @NotNull final MetaserverModel metaserverModel, @Nullable final Resolution resolution, @NotNull final GuiStateManager guiStateManager, @NotNull final ExperienceTable experienceTable, @NotNull final SkillSet skillSet, @NotNull final Stats stats, @NotNull final FacesManager facesManager, @NotNull final ItemSet itemSet, @NotNull final ItemView inventoryView, @NotNull final FloorView floorView, @NotNull final MouseTracker mouseTracker, @NotNull final JXCWindowRenderer windowRenderer, @NotNull final String skinName, final boolean fullScreen, @Nullable final String serverInfo, @NotNull final Macros macros, @NotNull final CfMapUpdater mapUpdater, @NotNull final SpellsManager spellsManager, @NotNull final CommandQueue commandQueue, @NotNull final ScriptManager scriptManager, @NotNull final Shortcuts shortcuts) {
         super("");
         this.server = server;
         this.debugGui = debugGui;
@@ -760,7 +758,7 @@ public class JXCWindow extends JFrame {
             System.err.println("Cannot find application icon: "+ex.getMessage());
         }
         connection = new JXCConnection(keybindingsManager, shortcuts, settings, this, characterPickup, server, guiStateManager);
-        guiManager = new GuiManager(guiStateManager, semaphoreDrawing, terminateSync, tooltipManager, settings, server, windowRenderer, guiFactory, keybindingsManager, connection);
+        guiManager = new GuiManager(guiStateManager, semaphoreDrawing, tooltipManager, settings, server, windowRenderer, guiFactory, keybindingsManager, connection);
         setFocusTraversalKeysEnabled(false);
         addWindowFocusListener(windowFocusListener);
         addWindowListener(windowListener);
@@ -867,6 +865,14 @@ public class JXCWindow extends JFrame {
     public void term() {
         guiManager.term();
         optionManager.saveOptions();
+    }
+
+    /**
+     * Waits until the window has been disposed.
+     * @throws InterruptedException if the current thread has been interrupted
+     */
+    public void waitForTermination() throws InterruptedException {
+        guiManager.waitForTermination();
     }
 
     /**

@@ -112,7 +112,6 @@ public class JXClient {
                     final Writer debugScreenOutputStreamWriter = openDebugStream(options.getDebugScreenFilename());
                     try {
                         final OptionManager optionManager = new OptionManager(options.getPrefs());
-                        final Object terminateSync = new Object();
                         final MetaserverModel metaserverModel = new MetaserverModel();
                         final Object semaphoreRedraw = new Object();
                         final CrossfireServerConnection server = new DefaultCrossfireServerConnection(semaphoreRedraw, debugProtocolOutputStreamWriter == null ? null : new DebugWriter(debugProtocolOutputStreamWriter));
@@ -153,16 +152,14 @@ public class JXClient {
                             final Shortcuts shortcuts = new Shortcuts(commandQueue, spellsManager);
 
                             final JXCWindow[] window = new JXCWindow[1];
-                            synchronized (terminateSync) {
-                                SwingUtilities.invokeAndWait(new Runnable() {
-                                    /** {@inheritDoc} */
-                                    @Override
-                                    public void run() {
-                                        window[0] = new JXCWindow(terminateSync, server, options.isDebugGui(), debugKeyboardOutputStreamWriter, options.getPrefs(), optionManager, metaserverModel, options.getResolution(), guiStateManager, experienceTable, skillSet, stats, facesManager, itemSet, inventoryView, floorView, mouseTracker, windowRenderer, options.getSkin(), options.isFullScreen(), options.getServer(), macros, mapUpdater, spellsManager, commandQueue, scriptManager, shortcuts);
-                                    }
-                                });
-                                terminateSync.wait();
-                            }
+                            SwingUtilities.invokeAndWait(new Runnable() {
+                                /** {@inheritDoc} */
+                                @Override
+                                public void run() {
+                                    window[0] = new JXCWindow(server, options.isDebugGui(), debugKeyboardOutputStreamWriter, options.getPrefs(), optionManager, metaserverModel, options.getResolution(), guiStateManager, experienceTable, skillSet, stats, facesManager, itemSet, inventoryView, floorView, mouseTracker, windowRenderer, options.getSkin(), options.isFullScreen(), options.getServer(), macros, mapUpdater, spellsManager, commandQueue, scriptManager, shortcuts);
+                                }
+                            });
+                            window[0].waitForTermination();
                             SwingUtilities.invokeAndWait(new Runnable() {
                                 /** {@inheritDoc} */
                                 @Override
