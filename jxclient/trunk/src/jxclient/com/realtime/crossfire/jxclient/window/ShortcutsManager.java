@@ -21,10 +21,8 @@
 
 package com.realtime.crossfire.jxclient.window;
 
-import com.realtime.crossfire.jxclient.queue.CommandQueue;
 import com.realtime.crossfire.jxclient.settings.Filenames;
 import com.realtime.crossfire.jxclient.shortcuts.Shortcuts;
-import com.realtime.crossfire.jxclient.spells.SpellsManager;
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.IOException;
@@ -44,11 +42,10 @@ public class ShortcutsManager {
 
     /**
      * Creates a new instance.
-     * @param commandQueue the command queue to affect
-     * @param spellsManager the spells manager to use
+     * @param shortcuts the shortcuts to manage
      */
-    public ShortcutsManager(@NotNull final CommandQueue commandQueue, @NotNull final SpellsManager spellsManager) {
-        shortcuts = new Shortcuts(commandQueue, spellsManager);
+    public ShortcutsManager(@NotNull final Shortcuts shortcuts) {
+        this.shortcuts = shortcuts;
     }
 
     /**
