@@ -31,16 +31,18 @@ import java.util.Collection;
 import java.util.Collections;
 import java.util.Comparator;
 import java.util.HashMap;
+import java.util.Iterator;
 import java.util.List;
 import java.util.Map;
 import org.jetbrains.annotations.NotNull;
+import org.jetbrains.annotations.Nullable;
 
 /**
  * Manages all known spells.
  * @author Lauwenmark
  * @author Andreas Kirschbaum
  */
-public class SpellsManager {
+public class SpellsManager implements Iterable<Spell> {
 
     /**
      * All known spells.
@@ -157,11 +159,6 @@ public class SpellsManager {
         listeners.remove(listener);
     }
 
-    @NotNull
-    public List<Spell> getSpellList() {
-        return spells;
-    }
-
     private void initSpells() {
         for (int i = spells.size()-1; i >= 0; i--) {
             deleteSpellByIndex(i);
@@ -273,6 +270,32 @@ public class SpellsManager {
         spell.setUnknown(true);
         unknownSpells.put(spell.getName(), spell);
         return spell;
+    }
+
+    /**
+     * {@inheritDoc}
+     */
+    @Override
+    public Iterator<Spell> iterator() {
+        return Collections.unmodifiableList(spells).iterator();
+    }
+
+    /**
+     * Returns the number of known spells.
+     * @return the number of spoells
+     */
+    public int getSpells() {
+        return spells.size();
+    }
+
+    /**
+     * Returns a {@link Spell} instance by index.
+     * @param index the index
+     * @return the spell or <code>null</code> if the index is invalid
+     */
+    @Nullable
+    public Spell getSpell(final int index) {
+        return 0 <= index && index < spells.size() ? spells.get(index) : null;
     }
 
 }
