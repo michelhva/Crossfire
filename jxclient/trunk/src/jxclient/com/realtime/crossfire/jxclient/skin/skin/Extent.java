@@ -143,22 +143,6 @@ public class Extent {
     }
 
     /**
-     * Returns the x coordinate. The x coordinate must evaluate to a constant.
-     * @return the x coordinate
-     */
-    public int getConstantX() {
-        return x.evaluateConstant();
-    }
-
-    /**
-     * Returns the y coordinate. The y coordinate must evaluate to a constant.
-     * @return the y coordinate
-     */
-    public int getConstantY() {
-        return y.evaluateConstant();
-    }
-
-    /**
      * Returns the width. The width must evaluate to a constant.
      * @return the width
      */

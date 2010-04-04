@@ -35,12 +35,6 @@ import org.jetbrains.annotations.Nullable;
 public class Resolution {
 
     /**
-     * Whether the resolution is exact (<code>true</code>), or a choosing
-     * similar resolution if allowed (<code>false</code>).
-     */
-    private final boolean exact;
-
-    /**
      * The width in pixel.
      */
     private final int width;
@@ -52,13 +46,10 @@ public class Resolution {
 
     /**
      * Creates a new instance.
-     * @param exact whether the resolution is exact (<code>true</code>), or a
-     * choosing similar resolution if allowed (<code>false</code>)
      * @param width the width in pixels
      * @param height the height in pixels
      */
-    public Resolution(final boolean exact, final int width, final int height) {
-        this.exact = exact;
+    public Resolution(final int width, final int height) {
         this.width = width;
         this.height = height;
     }
@@ -67,13 +58,12 @@ public class Resolution {
      * Creates a new instance from string representation. The string
      * representation is of the format "1024x768"; it is the format returned
      * from {@link #toString()}.
-     * @param exact whether the resolution is exact
      * @param str the string representation
      * @return the <code>Resolution instance</code>, or <code>null</code> if the
      *         string representation is invalid
      */
     @Nullable
-    public static Resolution parse(final boolean exact, final String str) {
+    public static Resolution parse(@NotNull final String str) {
         final String[] tmp = str.split("x", -1);
         if (tmp.length != 2) {
             return null;
@@ -87,16 +77,7 @@ public class Resolution {
             return null;
         }
 
-        return new Resolution(exact, width, height);
-    }
-
-    /**
-     * Returns whether the resolution is exact (<code>true</code>), or a
-     * choosing similar resolution if allowed (<code>false</code>).
-     * @return whether the resolution is exact
-     */
-    public boolean isExact() {
-        return exact;
+        return new Resolution(width, height);
     }
 
     /**
@@ -113,14 +94,6 @@ public class Resolution {
      */
     public int getHeight() {
         return height;
-    }
-
-    /**
-     * Returns the area in pixels.
-     * @return the area
-     */
-    public int getArea() {
-        return width*height;
     }
 
     /**

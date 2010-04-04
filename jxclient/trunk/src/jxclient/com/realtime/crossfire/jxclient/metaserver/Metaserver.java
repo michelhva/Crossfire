@@ -42,11 +42,6 @@ import org.jetbrains.annotations.NotNull;
 public class Metaserver {
 
     /**
-     * The minimal interval (in seconds) between two metasever queries.
-     */
-    public static final long MIN_QUERY_INTERVAL = 30;
-
-    /**
      * The time (in seconds) to forget about old metaserver entries.
      */
     private static final long EXPIRE_INTERVAL = 60*60*24*2;

@@ -603,7 +603,7 @@ public class JXCWindowRenderer {
      */
     public void endRendering() {
         if (isFullScreen && frame != null) {
-            final Resolution minResolution = new Resolution(true, 1, 1);
+            final Resolution minResolution = new Resolution(1, 1);
             assert frame != null;
             setWindowMode(frame, null, minResolution, false);
             frame = null;

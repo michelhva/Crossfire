@@ -65,13 +65,13 @@ public class DefaultJXCSkin implements JXCSkin {
      * The minimal resolution.
      */
     @NotNull
-    private Resolution minResolution = new Resolution(true, 1, 1);
+    private Resolution minResolution = new Resolution(1, 1);
 
     /**
      * The maximal resolution.
      */
     @NotNull
-    private Resolution maxResolution = new Resolution(true, 1, 1);
+    private Resolution maxResolution = new Resolution(1, 1);
 
     /**
      * The current screen width.
