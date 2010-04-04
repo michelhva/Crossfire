@@ -254,11 +254,11 @@ public class CommandParser {
                 throw new IOException("Invalid zero scroll distance");
             }
 
-            if (!(element instanceof GUIList)) {
-                throw new IOException("'"+element+"' must be a list");
+            if (!(element instanceof GUIScrollable)) {
+                throw new IOException("'"+element+"' must be a scrollable");
             }
 
-            return new ScrollListCommand((GUIList)element, distance);
+            return new ScrollListCommand((GUIScrollable)element, distance);
         } else if (command.equals("SCROLL") || command.equals("SCROLL_NEVER")) {
             if (args.length != argc+1) {
                 throw new IOException("syntax error");

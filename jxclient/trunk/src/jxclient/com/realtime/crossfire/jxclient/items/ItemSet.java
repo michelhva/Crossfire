@@ -313,7 +313,7 @@ public class ItemSet {
      * @return the inventory items; the list cannot be modified
      */
     @NotNull
-    public List<CfItem> getPlayerInventory() {
+    public Iterable<CfItem> getPlayerInventory() {
         return player == null ? Collections.<CfItem>emptyList() : getInventoryByTag(player.getTag());
     }
 
