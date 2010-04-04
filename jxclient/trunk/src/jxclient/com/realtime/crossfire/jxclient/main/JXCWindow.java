@@ -191,6 +191,9 @@ public class JXCWindow extends JFrame {
     @NotNull
     private final CommandQueue commandQueue;
 
+    /**
+     * The {@link MouseTracker} for this window.
+     */
     @NotNull
     private final MouseTracker mouseTracker;
 
@@ -645,8 +648,9 @@ public class JXCWindow extends JFrame {
      * @param itemSet the item set to use
      * @param inventoryView the inventory item view to use
      * @param floorView the floor view to use
+     * @param mouseTracker the mouse tracker to use
      */
-    public JXCWindow(@NotNull final Object terminateSync, @NotNull final CrossfireServerConnection server, @NotNull final Object semaphoreRedraw, final boolean debugGui, @Nullable final Writer debugKeyboard, @Nullable final Writer debugScreen, @NotNull final Settings settings, @NotNull final OptionManager optionManager, @NotNull final MetaserverModel metaserverModel, @Nullable final Resolution resolution, @NotNull final GuiStateManager guiStateManager, @NotNull final ExperienceTable experienceTable, @NotNull final SkillSet skillSet, @NotNull final Stats stats, @NotNull final FacesManager facesManager, @NotNull final ItemSet itemSet, @NotNull final ItemView inventoryView, @NotNull final FloorView floorView) {
+    public JXCWindow(@NotNull final Object terminateSync, @NotNull final CrossfireServerConnection server, @NotNull final Object semaphoreRedraw, final boolean debugGui, @Nullable final Writer debugKeyboard, @Nullable final Writer debugScreen, @NotNull final Settings settings, @NotNull final OptionManager optionManager, @NotNull final MetaserverModel metaserverModel, @Nullable final Resolution resolution, @NotNull final GuiStateManager guiStateManager, @NotNull final ExperienceTable experienceTable, @NotNull final SkillSet skillSet, @NotNull final Stats stats, @NotNull final FacesManager facesManager, @NotNull final ItemSet itemSet, @NotNull final ItemView inventoryView, @NotNull final FloorView floorView, @NotNull final MouseTracker mouseTracker) {
         super("");
         this.server = server;
         this.debugGui = debugGui;
@@ -661,6 +665,7 @@ public class JXCWindow extends JFrame {
         this.itemSet = itemSet;
         this.inventoryView = inventoryView;
         this.floorView = floorView;
+        this.mouseTracker = mouseTracker;
         macros = new Macros(server);
         mapUpdater = new CfMapUpdater(server, facesManager, guiStateManager);
         spellsManager = new SpellsManager(server, guiStateManager);
@@ -668,7 +673,6 @@ public class JXCWindow extends JFrame {
         new PoisonWatcher(stats, server);
         new ActiveSkillWatcher(stats, server);
         setDefaultCloseOperation(DO_NOTHING_ON_CLOSE);
-        mouseTracker = new MouseTracker(debugGui);
         windowRenderer = new JXCWindowRenderer(mouseTracker, semaphoreRedraw, server, debugScreen);
         mouseTracker.init(windowRenderer);
         final ScriptManager scriptManager = new ScriptManager(commandQueue, server, stats, floorView, itemSet, spellsManager, mapUpdater, skillSet);

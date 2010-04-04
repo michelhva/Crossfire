@@ -25,6 +25,7 @@ import com.realtime.crossfire.jxclient.faces.FaceCache;
 import com.realtime.crossfire.jxclient.faces.FacesManager;
 import com.realtime.crossfire.jxclient.faces.FacesQueue;
 import com.realtime.crossfire.jxclient.faces.FileCache;
+import com.realtime.crossfire.jxclient.gui.gui.MouseTracker;
 import com.realtime.crossfire.jxclient.guistate.GuiStateManager;
 import com.realtime.crossfire.jxclient.items.FloorView;
 import com.realtime.crossfire.jxclient.items.InventoryComparator;
@@ -133,7 +134,8 @@ public class JXClient {
                                     /** {@inheritDoc} */
                                     @Override
                                     public void run() {
-                                        window[0] = new JXCWindow(terminateSync, server, semaphoreRedraw, options.isDebugGui(), debugKeyboardOutputStreamWriter, debugScreenOutputStreamWriter, options.getPrefs(), optionManager, metaserverModel, options.getResolution(), guiStateManager, experienceTable, skillSet, stats, facesManager, itemSet, inventoryView, floorView);
+                                        final MouseTracker mouseTracker = new MouseTracker(options.isDebugGui());
+                                        window[0] = new JXCWindow(terminateSync, server, semaphoreRedraw, options.isDebugGui(), debugKeyboardOutputStreamWriter, debugScreenOutputStreamWriter, options.getPrefs(), optionManager, metaserverModel, options.getResolution(), guiStateManager, experienceTable, skillSet, stats, facesManager, itemSet, inventoryView, floorView, mouseTracker);
                                         new MusicWatcher(server, soundManager);
                                         new SoundWatcher(server, soundManager);
                                         new StatsWatcher(stats, window[0].getWindowRenderer(), server, soundManager);
