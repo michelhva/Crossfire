@@ -340,12 +340,16 @@ public class CfMap {
         assert ox < CfMapPatch.SIZE;
         assert oy < CfMapPatch.SIZE;
 
+        assert patch != null;
+        assert patch[px] != null;
         final CfMapPatch mapPatch = patch[px][py];
         if (mapPatch != null) {
             return mapPatch;
         }
 
         patch[px][py] = new CfMapPatch(mapSquareListener, x-patchX-ox, y-patchY-oy);
+        assert patch != null;
+        assert patch[px] != null;
         return patch[px][py];
     }
 
