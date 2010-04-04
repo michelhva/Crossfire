@@ -61,9 +61,7 @@ import com.realtime.crossfire.jxclient.skin.source.JXCSkinDirSource;
 import com.realtime.crossfire.jxclient.skin.source.JXCSkinSource;
 import com.realtime.crossfire.jxclient.spells.CurrentSpellManager;
 import com.realtime.crossfire.jxclient.spells.SpellsManager;
-import com.realtime.crossfire.jxclient.stats.ActiveSkillWatcher;
 import com.realtime.crossfire.jxclient.stats.ExperienceTable;
-import com.realtime.crossfire.jxclient.stats.PoisonWatcher;
 import com.realtime.crossfire.jxclient.stats.Stats;
 import com.realtime.crossfire.jxclient.util.Resolution;
 import com.realtime.crossfire.jxclient.util.ResourceUtils;
@@ -652,8 +650,14 @@ public class JXCWindow extends JFrame {
      * @param skinName the skin to load
      * @param fullScreen whether full-screen mode should be enabled
      * @param serverInfo the server to connect to or <code>null</code>
+     * @param macros the macros instance
+     * @param mapUpdater the map updater instance
+     * @param spellsManager the spells manager instance
+     * @param commandQueue the command queue instance
+     * @param scriptManager the script manager instance
+     * @param shortcutsManager the shortcuts manager instance
      */
-    public JXCWindow(@NotNull final Object terminateSync, @NotNull final CrossfireServerConnection server, final boolean debugGui, @Nullable final Writer debugKeyboard, @NotNull final Settings settings, @NotNull final OptionManager optionManager, @NotNull final MetaserverModel metaserverModel, @Nullable final Resolution resolution, @NotNull final GuiStateManager guiStateManager, @NotNull final ExperienceTable experienceTable, @NotNull final SkillSet skillSet, @NotNull final Stats stats, @NotNull final FacesManager facesManager, @NotNull final ItemSet itemSet, @NotNull final ItemView inventoryView, @NotNull final FloorView floorView, @NotNull final MouseTracker mouseTracker, @NotNull final JXCWindowRenderer windowRenderer, @NotNull final String skinName, final boolean fullScreen, @Nullable final String serverInfo) {
+    public JXCWindow(@NotNull final Object terminateSync, @NotNull final CrossfireServerConnection server, final boolean debugGui, @Nullable final Writer debugKeyboard, @NotNull final Settings settings, @NotNull final OptionManager optionManager, @NotNull final MetaserverModel metaserverModel, @Nullable final Resolution resolution, @NotNull final GuiStateManager guiStateManager, @NotNull final ExperienceTable experienceTable, @NotNull final SkillSet skillSet, @NotNull final Stats stats, @NotNull final FacesManager facesManager, @NotNull final ItemSet itemSet, @NotNull final ItemView inventoryView, @NotNull final FloorView floorView, @NotNull final MouseTracker mouseTracker, @NotNull final JXCWindowRenderer windowRenderer, @NotNull final String skinName, final boolean fullScreen, @Nullable final String serverInfo, @NotNull final Macros macros, @NotNull final CfMapUpdater mapUpdater, @NotNull final SpellsManager spellsManager, @NotNull final CommandQueue commandQueue, @NotNull final ScriptManager scriptManager, @NotNull final ShortcutsManager shortcutsManager) {
         super("");
         this.server = server;
         this.debugGui = debugGui;
@@ -670,17 +674,13 @@ public class JXCWindow extends JFrame {
         this.floorView = floorView;
         this.mouseTracker = mouseTracker;
         this.windowRenderer = windowRenderer;
-        macros = new Macros(server);
-        mapUpdater = new CfMapUpdater(server, facesManager, guiStateManager);
-        spellsManager = new SpellsManager(server, guiStateManager);
-        commandQueue = new CommandQueue(server, guiStateManager);
-        new PoisonWatcher(stats, server);
-        new ActiveSkillWatcher(stats, server);
+        this.macros = macros;
+        this.mapUpdater = mapUpdater;
+        this.spellsManager = spellsManager;
+        this.commandQueue = commandQueue;
+        this.shortcutsManager = shortcutsManager;
         setDefaultCloseOperation(DO_NOTHING_ON_CLOSE);
-        mouseTracker.init(windowRenderer);
-        final ScriptManager scriptManager = new ScriptManager(commandQueue, server, stats, floorView, itemSet, spellsManager, mapUpdater, skillSet);
         guiManager = new GuiManager(guiStateManager, semaphoreDrawing, terminateSync, new TooltipManager(windowRenderer), settings, server, macros, windowRenderer, scriptManager, commandQueue, optionManager, debugGui ? mouseTracker : null);
-        shortcutsManager = new ShortcutsManager(commandQueue, spellsManager);
         keyHandler = new KeyHandler(debugKeyboard, guiManager.getKeybindingsManager(), commandQueue, windowRenderer, keyHandlerListener);
         try {
             characterPickup = new Pickup(commandQueue, optionManager);
