@@ -84,10 +84,4 @@ public class ShortcutsManager {
         }
     }
 
-    @Deprecated
-    @NotNull
-    public Shortcuts getShortcuts() {
-        return shortcuts;
-    }
-
 }
