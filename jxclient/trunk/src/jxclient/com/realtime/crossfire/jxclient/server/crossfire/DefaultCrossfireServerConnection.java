@@ -134,98 +134,98 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
      * The {@link CrossfireServerConnectionListener}s to notify.
      */
     @NotNull
-    private final Collection<CrossfireServerConnectionListener> crossfireServerConnectionListeners = new ArrayList<CrossfireServerConnectionListener>();
+    private final Collection<CrossfireServerConnectionListener> crossfireServerConnectionListeners = new CopyOnWriteArrayList<CrossfireServerConnectionListener>();
 
     /**
      * The {@link MapSizeListener}s to be notified.
      */
     @NotNull
-    private final Collection<MapSizeListener> mapSizeListeners = new ArrayList<MapSizeListener>();
+    private final Collection<MapSizeListener> mapSizeListeners = new CopyOnWriteArrayList<MapSizeListener>();
 
     /**
      * The {@link CrossfireDrawinfoListener}s to be notified.
      */
     @NotNull
-    private final Collection<CrossfireDrawinfoListener> drawinfoListeners = new ArrayList<CrossfireDrawinfoListener>();
+    private final Collection<CrossfireDrawinfoListener> drawinfoListeners = new CopyOnWriteArrayList<CrossfireDrawinfoListener>();
 
     /**
      * The {@link CrossfireDrawextinfoListener}s to be notified.
      */
     @NotNull
-    private final Collection<CrossfireDrawextinfoListener> drawextinfoListeners = new ArrayList<CrossfireDrawextinfoListener>();
+    private final Collection<CrossfireDrawextinfoListener> drawextinfoListeners = new CopyOnWriteArrayList<CrossfireDrawextinfoListener>();
 
     /**
      * The {@link CrossfireQueryListener}s to be notified.
      */
     @NotNull
-    private final Collection<CrossfireQueryListener> queryListeners = new ArrayList<CrossfireQueryListener>();
+    private final Collection<CrossfireQueryListener> queryListeners = new CopyOnWriteArrayList<CrossfireQueryListener>();
 
     /**
      * The {@link CrossfireMagicmapListener}s to be notified of received
      * magicmap commands.
      */
     @NotNull
-    private final Collection<CrossfireMagicmapListener> magicmapListeners = new ArrayList<CrossfireMagicmapListener>();
+    private final Collection<CrossfireMagicmapListener> magicmapListeners = new CopyOnWriteArrayList<CrossfireMagicmapListener>();
 
     /**
      * The {@link CrossfireUpdateFaceListener}s to be notified.
      */
     @NotNull
-    private final Collection<CrossfireUpdateFaceListener> crossfireUpdateFaceListeners = new ArrayList<CrossfireUpdateFaceListener>();
+    private final Collection<CrossfireUpdateFaceListener> crossfireUpdateFaceListeners = new CopyOnWriteArrayList<CrossfireUpdateFaceListener>();
 
     /**
      * The {@link CrossfireStatsListener}s to be notified.
      */
     @NotNull
-    private final Collection<CrossfireStatsListener> crossfireStatsListeners = new ArrayList<CrossfireStatsListener>();
+    private final Collection<CrossfireStatsListener> crossfireStatsListeners = new CopyOnWriteArrayList<CrossfireStatsListener>();
 
     /**
      * The {@link CrossfireUpdateItemListener}s to be notified.
      */
     @NotNull
-    private final Collection<CrossfireUpdateItemListener> crossfireUpdateItemListeners = new ArrayList<CrossfireUpdateItemListener>();
+    private final Collection<CrossfireUpdateItemListener> crossfireUpdateItemListeners = new CopyOnWriteArrayList<CrossfireUpdateItemListener>();
 
     /**
      * The {@link CrossfireUpdateMapListener}s to be notified.
      */
     @NotNull
-    private final Collection<CrossfireUpdateMapListener> crossfireUpdateMapListeners = new ArrayList<CrossfireUpdateMapListener>();
+    private final Collection<CrossfireUpdateMapListener> crossfireUpdateMapListeners = new CopyOnWriteArrayList<CrossfireUpdateMapListener>();
 
     /**
      * The {@link CrossfireTickListener}s to be notified.
      */
     @NotNull
-    private final Collection<CrossfireTickListener> crossfireTickListeners = new ArrayList<CrossfireTickListener>();
+    private final Collection<CrossfireTickListener> crossfireTickListeners = new CopyOnWriteArrayList<CrossfireTickListener>();
 
     /**
      * The {@link CrossfireSoundListener}s to be notified.
      */
     @NotNull
-    private final Collection<CrossfireSoundListener> crossfireSoundListeners = new ArrayList<CrossfireSoundListener>();
+    private final Collection<CrossfireSoundListener> crossfireSoundListeners = new CopyOnWriteArrayList<CrossfireSoundListener>();
 
     /**
      * The {@link CrossfireMusicListener}s to be notified.
      */
     @NotNull
-    private final Collection<CrossfireMusicListener> crossfireMusicListeners = new ArrayList<CrossfireMusicListener>();
+    private final Collection<CrossfireMusicListener> crossfireMusicListeners = new CopyOnWriteArrayList<CrossfireMusicListener>();
 
     /**
      * The {@link CrossfireComcListener}s to be notified.
      */
     @NotNull
-    private final Collection<CrossfireComcListener> crossfireComcListeners = new ArrayList<CrossfireComcListener>();
+    private final Collection<CrossfireComcListener> crossfireComcListeners = new CopyOnWriteArrayList<CrossfireComcListener>();
 
     /**
      * The {@link CrossfireFaceListener}s to be notified.
      */
     @NotNull
-    private final Collection<CrossfireFaceListener> crossfireFaceListeners = new ArrayList<CrossfireFaceListener>();
+    private final Collection<CrossfireFaceListener> crossfireFaceListeners = new CopyOnWriteArrayList<CrossfireFaceListener>();
 
     /**
      * The {@link CrossfireSpellListener}s to be notified.
      */
     @NotNull
-    private final Collection<CrossfireSpellListener> crossfireSpellListeners = new ArrayList<CrossfireSpellListener>();
+    private final Collection<CrossfireSpellListener> crossfireSpellListeners = new CopyOnWriteArrayList<CrossfireSpellListener>();
 
     /**
      * The {@link ReceivedPacketListener}s to be notified.
@@ -243,19 +243,19 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
      * The {@link CrossfireExpTableListener}s to be notified.
      */
     @NotNull
-    private final Collection<CrossfireExpTableListener> crossfireExpTableListeners = new ArrayList<CrossfireExpTableListener>();
+    private final Collection<CrossfireExpTableListener> crossfireExpTableListeners = new CopyOnWriteArrayList<CrossfireExpTableListener>();
 
     /**
      * The {@link CrossfireSkillInfoListener}s to be notified.
      */
     @NotNull
-    private final Collection<CrossfireSkillInfoListener> crossfireSkillInfoListeners = new ArrayList<CrossfireSkillInfoListener>();
+    private final Collection<CrossfireSkillInfoListener> crossfireSkillInfoListeners = new CopyOnWriteArrayList<CrossfireSkillInfoListener>();
 
     /**
      * The {@link CrossfirePickupListener}s to be notified.
      */
     @NotNull
-    private final Collection<CrossfirePickupListener> crossfirePickupListeners = new ArrayList<CrossfirePickupListener>();
+    private final Collection<CrossfirePickupListener> crossfirePickupListeners = new CopyOnWriteArrayList<CrossfirePickupListener>();
 
     /**
      * Buffer to build commands to send. It is shared between all sendXxx()
@@ -559,7 +559,7 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
      * {@inheritDoc}
      */
     @Override
-    public synchronized void addCrossfireServerConnectionListener(@NotNull final CrossfireServerConnectionListener listener) {
+    public void addCrossfireServerConnectionListener(@NotNull final CrossfireServerConnectionListener listener) {
         crossfireServerConnectionListeners.add(listener);
     }
 
@@ -567,7 +567,7 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
      * {@inheritDoc}
      */
     @Override
-    public synchronized void addMapSizeListener(@NotNull final MapSizeListener listener) {
+    public void addMapSizeListener(@NotNull final MapSizeListener listener) {
         mapSizeListeners.add(listener);
     }
 
@@ -575,7 +575,7 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
      * {@inheritDoc}
      */
     @Override
-    public synchronized void removeMapSizeListener(@NotNull final MapSizeListener listener) {
+    public void removeMapSizeListener(@NotNull final MapSizeListener listener) {
         mapSizeListeners.remove(listener);
     }
 
@@ -583,7 +583,7 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
      * {@inheritDoc}
      */
     @Override
-    public synchronized void addCrossfireDrawinfoListener(@NotNull final CrossfireDrawinfoListener listener) {
+    public void addCrossfireDrawinfoListener(@NotNull final CrossfireDrawinfoListener listener) {
         drawinfoListeners.add(listener);
     }
 
@@ -591,7 +591,7 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
      * {@inheritDoc}
      */
     @Override
-    public synchronized void removeCrossfireDrawinfoListener(@NotNull final CrossfireDrawinfoListener listener) {
+    public void removeCrossfireDrawinfoListener(@NotNull final CrossfireDrawinfoListener listener) {
         drawinfoListeners.remove(listener);
     }
 
@@ -599,7 +599,7 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
      * {@inheritDoc}
      */
     @Override
-    public synchronized void addCrossfireDrawextinfoListener(@NotNull final CrossfireDrawextinfoListener listener) {
+    public void addCrossfireDrawextinfoListener(@NotNull final CrossfireDrawextinfoListener listener) {
         drawextinfoListeners.add(listener);
     }
 
@@ -607,7 +607,7 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
      * {@inheritDoc}
      */
     @Override
-    public synchronized void removeCrossfireDrawextinfoListener(@NotNull final CrossfireDrawextinfoListener listener) {
+    public void removeCrossfireDrawextinfoListener(@NotNull final CrossfireDrawextinfoListener listener) {
         drawextinfoListeners.remove(listener);
     }
 
@@ -615,7 +615,7 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
      * {@inheritDoc}
      */
     @Override
-    public synchronized void addCrossfireQueryListener(@NotNull final CrossfireQueryListener listener) {
+    public void addCrossfireQueryListener(@NotNull final CrossfireQueryListener listener) {
         queryListeners.add(listener);
     }
 
@@ -623,7 +623,7 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
      * {@inheritDoc}
      */
     @Override
-    public synchronized void removeCrossfireQueryListener(@NotNull final CrossfireQueryListener listener) {
+    public void removeCrossfireQueryListener(@NotNull final CrossfireQueryListener listener) {
         queryListeners.remove(listener);
     }
 
