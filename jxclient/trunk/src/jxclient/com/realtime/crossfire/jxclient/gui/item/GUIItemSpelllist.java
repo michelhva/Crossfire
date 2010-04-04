@@ -36,8 +36,6 @@ import com.realtime.crossfire.jxclient.spells.SpellsManagerListener;
 import java.awt.Color;
 import java.awt.Graphics2D;
 import java.awt.Image;
-import java.util.Collection;
-import java.util.List;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 
@@ -190,8 +188,7 @@ public class GUIItemSpelllist extends GUIItem {
         if (distance < 0) {
             return index >= -distance;
         } else if (distance > 0) {
-            final Collection<Spell> list = spellsManager.getSpellList();
-            return index+distance < list.size();
+            return index+distance < spellsManager.getSpells();
         } else {
             return false;
         }
@@ -253,9 +250,7 @@ public class GUIItemSpelllist extends GUIItem {
     }
 
     private void setSpell() {
-        final List<Spell> list = spellsManager.getSpellList();
-        final Spell newSpell = 0 <= index && index < list.size() ? list.get(index) : null;
-
+        final Spell newSpell = spellsManager.getSpell(index);
         if (spell == newSpell) {
             return;
         }

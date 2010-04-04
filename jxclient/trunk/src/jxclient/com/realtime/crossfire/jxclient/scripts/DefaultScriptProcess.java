@@ -526,7 +526,7 @@ public class DefaultScriptProcess extends Thread implements ScriptProcess {
             }
             commandSent("request skills end");
         } else if (parms.equals("spells")) {
-            for (final Spell spell : spellsManager.getSpellList()) {
+            for (final Spell spell : spellsManager) {
                 commandSent("request spells "+spell.getTag()+" "+spell.getLevel()+" "+spell.getMana()+" "+spell.getGrace()+" "+spell.getSkill()+" "+spell.getPath()+" "+spell.getCastingTime()+" "+spell.getDamage()+" "+spell.getName());
             }
             commandSent("request spells end");
