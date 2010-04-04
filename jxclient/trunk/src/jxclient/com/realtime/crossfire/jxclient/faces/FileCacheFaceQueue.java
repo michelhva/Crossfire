@@ -148,7 +148,7 @@ public class FileCacheFaceQueue extends AbstractFaceQueue {
          * Creates a new instance.
          * @param face the face to load
          */
-        public LoadTask(@NotNull final Face face) {
+        private LoadTask(@NotNull final Face face) {
             this.face = face;
         }
 
@@ -212,7 +212,7 @@ public class FileCacheFaceQueue extends AbstractFaceQueue {
          * @param face the face to save
          * @param faceImages the images to save
          */
-        public SaveTask(@NotNull final Face face, @NotNull final FaceImages faceImages) {
+        private SaveTask(@NotNull final Face face, @NotNull final FaceImages faceImages) {
             this.face = face;
             this.faceImages = faceImages;
         }
