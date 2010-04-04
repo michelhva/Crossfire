@@ -680,7 +680,7 @@ public class JXCWindow extends JFrame {
         this.commandQueue = commandQueue;
         this.shortcutsManager = shortcutsManager;
         setDefaultCloseOperation(DO_NOTHING_ON_CLOSE);
-        guiManager = new GuiManager(guiStateManager, semaphoreDrawing, terminateSync, new TooltipManager(windowRenderer), settings, server, macros, windowRenderer, scriptManager, commandQueue, optionManager, debugGui ? mouseTracker : null);
+        guiManager = new GuiManager(guiStateManager, semaphoreDrawing, terminateSync, new TooltipManager(), settings, server, macros, windowRenderer, scriptManager, commandQueue, optionManager, debugGui ? mouseTracker : null);
         keyHandler = new KeyHandler(debugKeyboard, guiManager.getKeybindingsManager(), commandQueue, windowRenderer, keyHandlerListener);
         try {
             characterPickup = new Pickup(commandQueue, optionManager);

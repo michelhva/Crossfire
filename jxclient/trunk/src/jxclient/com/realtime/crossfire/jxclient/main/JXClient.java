@@ -140,6 +140,7 @@ public class JXClient {
 
                             final MouseTracker mouseTracker = new MouseTracker(options.isDebugGui());
                             final JXCWindowRenderer windowRenderer = new JXCWindowRenderer(mouseTracker, semaphoreRedraw, server, debugScreenOutputStreamWriter);
+                            mouseTracker.init(windowRenderer);
                             new MusicWatcher(server, soundManager);
                             new SoundWatcher(server, soundManager);
                             new StatsWatcher(stats, windowRenderer, server, soundManager);
@@ -149,7 +150,6 @@ public class JXClient {
                             final CfMapUpdater mapUpdater = new CfMapUpdater(server, facesManager, guiStateManager);
                             final SpellsManager spellsManager = new SpellsManager(server, guiStateManager);
                             final CommandQueue commandQueue = new CommandQueue(server, guiStateManager);
-                            mouseTracker.init(windowRenderer);
                             final ScriptManager scriptManager = new ScriptManager(commandQueue, server, stats, floorView, itemSet, spellsManager, mapUpdater, skillSet);
                             final ShortcutsManager shortcutsManager = new ShortcutsManager(commandQueue, spellsManager);
 
