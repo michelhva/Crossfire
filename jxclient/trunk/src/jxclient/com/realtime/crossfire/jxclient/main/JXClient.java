@@ -212,7 +212,7 @@ public class JXClient {
      * @return the output stream or <code>null</code>
      */
     @Nullable
-    public static Writer openDebugStream(@Nullable final String filename) {
+    private static Writer openDebugStream(@Nullable final String filename) {
         if (filename == null) {
             return null;
         }
