@@ -638,16 +638,6 @@ public class GuiManager {
     }
 
     /**
-     * Returns the tooltip manager for this window.
-     * @return the tooltip manager for this window
-     */
-    @Deprecated
-    @NotNull
-    public TooltipManager getTooltipManager() {
-        return tooltipManager;
-    }
-
-    /**
      * Activates the command input text field. If the skin defined more than one
      * input field, the first matching one is selected. <p>If neither the main
      * gui nor any visible dialog has an input text field, invisible guis are
