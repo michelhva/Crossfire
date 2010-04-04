@@ -649,8 +649,11 @@ public class JXCWindow extends JFrame {
      * @param floorView the floor view to use
      * @param mouseTracker the mouse tracker to use
      * @param windowRenderer the window renderer to use
+     * @param skinName the skin to load
+     * @param fullScreen whether full-screen mode should be enabled
+     * @param serverInfo the server to connect to or <code>null</code>
      */
-    public JXCWindow(@NotNull final Object terminateSync, @NotNull final CrossfireServerConnection server, final boolean debugGui, @Nullable final Writer debugKeyboard, @NotNull final Settings settings, @NotNull final OptionManager optionManager, @NotNull final MetaserverModel metaserverModel, @Nullable final Resolution resolution, @NotNull final GuiStateManager guiStateManager, @NotNull final ExperienceTable experienceTable, @NotNull final SkillSet skillSet, @NotNull final Stats stats, @NotNull final FacesManager facesManager, @NotNull final ItemSet itemSet, @NotNull final ItemView inventoryView, @NotNull final FloorView floorView, @NotNull final MouseTracker mouseTracker, @NotNull final JXCWindowRenderer windowRenderer) {
+    public JXCWindow(@NotNull final Object terminateSync, @NotNull final CrossfireServerConnection server, final boolean debugGui, @Nullable final Writer debugKeyboard, @NotNull final Settings settings, @NotNull final OptionManager optionManager, @NotNull final MetaserverModel metaserverModel, @Nullable final Resolution resolution, @NotNull final GuiStateManager guiStateManager, @NotNull final ExperienceTable experienceTable, @NotNull final SkillSet skillSet, @NotNull final Stats stats, @NotNull final FacesManager facesManager, @NotNull final ItemSet itemSet, @NotNull final ItemView inventoryView, @NotNull final FloorView floorView, @NotNull final MouseTracker mouseTracker, @NotNull final JXCWindowRenderer windowRenderer, @NotNull final String skinName, final boolean fullScreen, @Nullable final String serverInfo) {
         super("");
         this.server = server;
         this.debugGui = debugGui;
@@ -729,9 +732,6 @@ public class JXCWindow extends JFrame {
 
         });
         connection = new JXCConnection(guiManager.getKeybindingsManager(), shortcutsManager, settings, this, characterPickup, server, guiStateManager);
-    }
-
-    public void init(@NotNull final String skinName, final boolean fullScreen, @Nullable final String serverInfo) {
         server.addClientSocketListener(clientSocketListener);
         server.addSentReplyListener(sentReplyListener);
         guiManager.setConnection(connection);
