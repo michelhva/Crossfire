@@ -106,31 +106,31 @@ public class RawScale2x {
      * @param y The y location in the source image of the pixel to process.
      */
     private void process(final int x, final int y) {
-        //final int A = getSourcePixel(x-1, y-1);
-        final int B = getSourcePixel(x, y-1);
-        //final int C = getSourcePixel(x+1, y-1);
-        final int D = getSourcePixel(x-1, y);
-        final int E = getSourcePixel(x, y);
-        final int F = getSourcePixel(x+1, y);
-        //final int G = getSourcePixel(x-1, y+1);
-        final int H = getSourcePixel(x, y+1);
-        //final int I = getSourcePixel(x+1, y+1);
-        int E0 = E;
-        int E1 = E;
-        int E2 = E;
-        int E3 = E;
+        //final int a = getSourcePixel(x-1, y-1);
+        final int b = getSourcePixel(x, y-1);
+        //final int c = getSourcePixel(x+1, y-1);
+        final int d = getSourcePixel(x-1, y);
+        final int e = getSourcePixel(x, y);
+        final int f = getSourcePixel(x+1, y);
+        //final int g = getSourcePixel(x-1, y+1);
+        final int h = getSourcePixel(x, y+1);
+        //final int i = getSourcePixel(x+1, y+1);
+        int e0 = e;
+        int e1 = e;
+        int e2 = e;
+        int e3 = e;
 
-        if (different(B, H) && different(D, F)) {
-            E0 = different(D, B) ? E : D;
-            E1 = different(B, F) ? E : F;
-            E2 = different(D, H) ? E : D;
-            E3 = different(H, F) ? E : F;
+        if (different(b, h) && different(d, f)) {
+            e0 = different(d, b) ? e : d;
+            e1 = different(b, f) ? e : f;
+            e2 = different(d, h) ? e : d;
+            e3 = different(h, f) ? e : f;
         }
 
-        setDestPixel(x*2, y*2, E0);
-        setDestPixel((x*2)+1, y*2, E1);
-        setDestPixel((x*2), (y*2)+1, E2);
-        setDestPixel((x*2)+1, (y*2)+1, E3);
+        setDestPixel(x*2, y*2, e0);
+        setDestPixel((x*2)+1, y*2, e1);
+        setDestPixel((x*2), (y*2)+1, e2);
+        setDestPixel((x*2)+1, (y*2)+1, e3);
     }
 
     /**
