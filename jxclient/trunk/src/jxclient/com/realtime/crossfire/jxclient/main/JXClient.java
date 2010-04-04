@@ -153,14 +153,13 @@ public class JXClient {
                             final CommandQueue commandQueue = new CommandQueue(server, guiStateManager);
                             final ScriptManager scriptManager = new ScriptManager(commandQueue, server, stats, floorView, itemSet, spellsManager, mapUpdater, skillSet);
                             final Shortcuts shortcuts = new Shortcuts(commandQueue, spellsManager);
-                            final ShortcutsLoader shortcutsLoader = new ShortcutsLoader(shortcuts);
 
                             synchronized (terminateSync) {
                                 SwingUtilities.invokeAndWait(new Runnable() {
                                     /** {@inheritDoc} */
                                     @Override
                                     public void run() {
-                                        window[0] = new JXCWindow(terminateSync, server, options.isDebugGui(), debugKeyboardOutputStreamWriter, options.getPrefs(), optionManager, metaserverModel, options.getResolution(), guiStateManager, experienceTable, skillSet, stats, facesManager, itemSet, inventoryView, floorView, mouseTracker, windowRenderer, options.getSkin(), options.isFullScreen(), options.getServer(), macros, mapUpdater, spellsManager, commandQueue, scriptManager, shortcutsLoader, shortcuts);
+                                        window[0] = new JXCWindow(terminateSync, server, options.isDebugGui(), debugKeyboardOutputStreamWriter, options.getPrefs(), optionManager, metaserverModel, options.getResolution(), guiStateManager, experienceTable, skillSet, stats, facesManager, itemSet, inventoryView, floorView, mouseTracker, windowRenderer, options.getSkin(), options.isFullScreen(), options.getServer(), macros, mapUpdater, spellsManager, commandQueue, scriptManager, shortcuts);
                                     }
                                 });
                                 terminateSync.wait();

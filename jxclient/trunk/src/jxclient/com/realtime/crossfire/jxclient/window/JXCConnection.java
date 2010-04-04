@@ -28,6 +28,7 @@ import com.realtime.crossfire.jxclient.server.crossfire.CrossfireServerConnectio
 import com.realtime.crossfire.jxclient.server.socket.ClientSocketState;
 import com.realtime.crossfire.jxclient.settings.Settings;
 import com.realtime.crossfire.jxclient.settings.options.Pickup;
+import com.realtime.crossfire.jxclient.shortcuts.Shortcuts;
 import com.realtime.crossfire.jxclient.util.NumberParser;
 import java.awt.Frame;
 import org.jetbrains.annotations.NotNull;
@@ -53,10 +54,10 @@ public class JXCConnection {
     private final KeybindingsManager keybindingsManager;
 
     /**
-     * The {@link ShortcutsLoader} to update.
+     * The {@link Shortcuts} to update.
      */
     @NotNull
-    private final ShortcutsLoader shortcutsLoader;
+    private final Shortcuts shortcuts;
 
     /**
      * The settings instance to use.
@@ -165,16 +166,16 @@ public class JXCConnection {
     /**
      * Creates a new instance.
      * @param keybindingsManager the keybindings manager to update
-     * @param shortcutsLoader the shortcuts manager to update
+     * @param shortcuts the shortcuts to update
      * @param settings the settings instance to use
      * @param frame the frame instance for updating the title
      * @param characterPickup the character pickup instance to update
      * @param server the crossfire server connection instance used to connect
      * @param guiStateManager the gui state manager to watch
      */
-    public JXCConnection(@NotNull final KeybindingsManager keybindingsManager, @NotNull final ShortcutsLoader shortcutsLoader, @NotNull final Settings settings, @NotNull final Frame frame, @NotNull final Pickup characterPickup, @NotNull final CrossfireServerConnection server, @NotNull final GuiStateManager guiStateManager) {
+    public JXCConnection(@NotNull final KeybindingsManager keybindingsManager, @NotNull final Shortcuts shortcuts, @NotNull final Settings settings, @NotNull final Frame frame, @NotNull final Pickup characterPickup, @NotNull final CrossfireServerConnection server, @NotNull final GuiStateManager guiStateManager) {
         this.keybindingsManager = keybindingsManager;
-        this.shortcutsLoader = shortcutsLoader;
+        this.shortcuts = shortcuts;
         this.settings = settings;
         this.frame = frame;
         this.characterPickup = characterPickup;
@@ -211,7 +212,7 @@ public class JXCConnection {
         }
 
         keybindingsManager.unloadPerCharacterBindings();
-        shortcutsLoader.saveShortcuts();
+        ShortcutsLoader.saveShortcuts(shortcuts);
 
         if (hostname != null && this.character != null) {
             server.removeCrossfirePickupListener(crossfirePickupListener);
@@ -229,7 +230,7 @@ public class JXCConnection {
         if (hostname != null && character != null) {
             keybindingsManager.loadPerCharacterBindings(hostname, character);
             assert hostname != null;
-            shortcutsLoader.loadShortcuts(hostname, character);
+            ShortcutsLoader.loadShortcuts(shortcuts, hostname, character);
             characterPickup.setPickupMode(settings.getLong("pickup_"+hostname+"_"+character, Pickup.PU_NOTHING));
             server.addCrossfirePickupListener(crossfirePickupListener);
         }
