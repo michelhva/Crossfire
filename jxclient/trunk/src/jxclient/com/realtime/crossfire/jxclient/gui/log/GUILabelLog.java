@@ -82,6 +82,7 @@ public class GUILabelLog extends GUILog {
      * @param string the string to parse
      */
     public void updateText(@NotNull final CharSequence string) {
+        final Buffer buffer = getBuffer();
         buffer.clear();
         parser.parse(string, defaultColor, buffer);
         scrollTo(0);

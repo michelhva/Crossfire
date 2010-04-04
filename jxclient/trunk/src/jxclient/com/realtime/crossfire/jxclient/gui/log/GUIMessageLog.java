@@ -62,7 +62,7 @@ public class GUIMessageLog extends GUILog {
      */
     public GUIMessageLog(@NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final String name, @NotNull final Extent extent, @NotNull final CrossfireServerConnection crossfireServerConnection, @Nullable final Image backgroundImage, @NotNull final Fonts fonts, @NotNull final Color defaultColor) {
         super(tooltipManager, elementListener, name, extent, backgroundImage, fonts);
-        messageBufferUpdater = new MessageBufferUpdater(crossfireServerConnection, buffer, defaultColor);
+        messageBufferUpdater = new MessageBufferUpdater(crossfireServerConnection, getBuffer(), defaultColor);
     }
 
     /**

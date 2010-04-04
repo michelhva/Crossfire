@@ -66,7 +66,7 @@ public abstract class GUILog extends GUIElement implements GUIScrollable2 {
      * The {@link Buffer} containing all received text messages.
      */
     @NotNull
-    protected final Buffer buffer;
+    private final Buffer buffer;
 
     /**
      * The background image drawn below the text contents. Set to
