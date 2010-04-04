@@ -30,6 +30,7 @@ import com.realtime.crossfire.jxclient.util.Resolution;
 import java.awt.Color;
 import java.awt.Dimension;
 import java.awt.DisplayMode;
+import java.awt.Frame;
 import java.awt.Graphics;
 import java.awt.GraphicsConfiguration;
 import java.awt.GraphicsDevice;
@@ -38,6 +39,7 @@ import java.awt.Insets;
 import java.awt.Point;
 import java.awt.Rectangle;
 import java.awt.Toolkit;
+import java.awt.Window;
 import java.awt.event.MouseEvent;
 import java.awt.event.MouseListener;
 import java.awt.image.BufferStrategy;
@@ -50,21 +52,21 @@ import java.util.Date;
 import java.util.Iterator;
 import java.util.ListIterator;
 import java.util.concurrent.CopyOnWriteArrayList;
-import javax.swing.JFrame;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 
 /**
- * Renders a {@link Gui} instance into a {@link JFrame}.
+ * Renders a {@link Gui} instance into a {@link Frame}.
  * @author Andreas Kirschbaum
  */
 public class JXCWindowRenderer {
 
     /**
-     * The associated window.
+     * The associated {@link Frame}. Set to <code>null</code> while not
+     * visible.
      */
-    @NotNull
-    private final JFrame frame;
+    @Nullable
+    private Frame frame = null;
 
     /**
      * The {@link MouseTracker} instance.
@@ -105,8 +107,9 @@ public class JXCWindowRenderer {
 
     /**
      * The current {@link BufferStrategy}. Set to <code>null</code> until
-     * {@link #setFullScreenMode(Resolution)} or {@link
-     * #setWindowMode(Resolution, Resolution, boolean)} has been called.
+     * {@link #setFullScreenMode(Frame, Resolution)} or {@link
+     * #setWindowMode(Frame, Resolution, Resolution, boolean)} has been
+     * called.
      */
     @Nullable
     private BufferStrategy bufferStrategy = null;
@@ -318,7 +321,6 @@ public class JXCWindowRenderer {
 
     /**
      * Creates a new instance.
-     * @param frame the associated window
      * @param mouseTracker the mouse tracker instance
      * @param redrawSemaphore the semaphore used to synchronized map model
      * updates and map view redraws
@@ -326,8 +328,7 @@ public class JXCWindowRenderer {
      * @param debugScreen the writer to write screen debug to or
      * <code>null</code>
      */
-    public JXCWindowRenderer(@NotNull final JFrame frame, @NotNull final MouseListener mouseTracker, @NotNull final Object redrawSemaphore, @NotNull final CrossfireServerConnection crossfireServerConnection, @Nullable final Writer debugScreen) {
-        this.frame = frame;
+    public JXCWindowRenderer(@NotNull final MouseListener mouseTracker, @NotNull final Object redrawSemaphore, @NotNull final CrossfireServerConnection crossfireServerConnection, @Nullable final Writer debugScreen) {
         this.mouseTracker = mouseTracker;
         this.redrawSemaphore = redrawSemaphore;
         this.debugScreen = debugScreen;
@@ -347,22 +348,23 @@ public class JXCWindowRenderer {
     /**
      * Tries to switch to the given resolution. If resolution switching fails,
      * the window might be invisible.
+     * @param frame the associated frame
      * @param resolution the resolution to switch to; <code>null</code> to keep
      * current resolution
      * @return whether the resolution has been changed
      */
-    public boolean setFullScreenMode(@Nullable final Resolution resolution) {
+    public boolean setFullScreenMode(@NotNull final Frame frame, @Nullable final Resolution resolution) {
         debugScreenWrite("setFullScreenMode: resolution="+(resolution == null ? "default" : resolution));
 
         final DisplayMode currentDisplayMode = graphicsDevice.getDisplayMode();
         debugScreenWrite("setResolutionPre: current display mode="+currentDisplayMode.getWidth()+"x"+currentDisplayMode.getHeight());
-        if (isFullScreen && bufferStrategy != null && (resolution == null || resolution.getWidth() == windowWidth && resolution.getHeight() == windowHeight)) {
+        if (frame == this.frame && isFullScreen && bufferStrategy != null && (resolution == null || resolution.getWidth() == windowWidth && resolution.getHeight() == windowHeight)) {
             debugScreenWrite("setResolutionPre: no change needed");
             debugScreenWrite("setResolutionPre: success");
             return true;
         }
 
-        if (!setResolutionPre()) {
+        if (!setResolutionPre(frame)) {
             return false;
         }
 
@@ -417,31 +419,33 @@ public class JXCWindowRenderer {
             }
         }
 
-        setResolutionPost(dimension);
+        setResolutionPost(frame, dimension);
+        this.frame = frame;
         return true;
     }
 
     /**
      * Tries to switch to the given resolution. If resolution switching fails,
      * the window might be invisible.
+     * @param frame the associated frame
      * @param resolution the resolution to switch to, <code>null</code> for
      * default
      * @param minResolution the minimal supported resolution
      * @param fixedSize whether the window should have fixed size
      * @return whether the resolution has been changed
      */
-    public boolean setWindowMode(@Nullable final Resolution resolution, @NotNull final Resolution minResolution, final boolean fixedSize) {
+    public boolean setWindowMode(@NotNull final Frame frame, @Nullable final Resolution resolution, @NotNull final Resolution minResolution, final boolean fixedSize) {
         debugScreenWrite("setWindowMode: resolution="+(resolution == null ? "default" : resolution)+", fixedSize="+fixedSize);
 
         final DisplayMode currentDisplayMode = graphicsDevice.getDisplayMode();
         debugScreenWrite("setResolutionPre: current display mode="+currentDisplayMode.getWidth()+"x"+currentDisplayMode.getHeight());
-        if (!isFullScreen && bufferStrategy !=null && (resolution == null || resolution.getWidth() == windowWidth && resolution.getHeight() == windowHeight)) {
+        if (frame == this.frame && !isFullScreen && bufferStrategy !=null && (resolution == null || resolution.getWidth() == windowWidth && resolution.getHeight() == windowHeight)) {
             debugScreenWrite("setResolutionPre: no change needed");
             debugScreenWrite("setResolutionPre: success");
             return true;
         }
 
-        if (!setResolutionPre()) {
+        if (!setResolutionPre(frame)) {
             return false;
         }
 
@@ -489,16 +493,18 @@ public class JXCWindowRenderer {
             frame.setBounds(x2, y2, dimension.width, dimension.height);
         }
 
-        setResolutionPost(dimension);
+        setResolutionPost(frame, dimension);
+        this.frame = frame;
         return true;
     }
 
     /**
      * Tries to switch to the given resolution. If resolution switching fails,
      * the window might be invisible.
+     * @param frame the associated frame
      * @return whether the resolution has been changed
      */
-    private boolean setResolutionPre() {
+    private boolean setResolutionPre(@NotNull final Window frame) {
         // disable full-screen since switching from full-screen to full-screen
         // does not work reliably
         if (isFullScreen) {
@@ -517,9 +523,10 @@ public class JXCWindowRenderer {
     /**
      * Tries to switch to the given resolution. If resolution switching fails,
      * the window might be invisible.
+     * @param frame the associated frame
      * @param dimension the window size to switch to
      */
-    private void setResolutionPost(@NotNull final Dimension dimension) {
+    private void setResolutionPost(@NotNull final Window frame, @NotNull final Dimension dimension) {
         debugScreenWrite("setResolutionPost: creating buffer strategy");
         frame.createBufferStrategy(2);
         bufferStrategy = frame.getBufferStrategy();
@@ -613,8 +620,11 @@ public class JXCWindowRenderer {
      * Ends rendering and reverts the display settings.
      */
     public void endRendering() {
-        if (isFullScreen) {
-            setWindowMode(null, new Resolution(true, 1, 1), false);
+        if (isFullScreen && frame != null) {
+            final Resolution minResolution = new Resolution(true, 1, 1);
+            assert frame != null;
+            setWindowMode(frame, null, minResolution, false);
+            frame = null;
         }
     }
 
@@ -943,7 +953,7 @@ public class JXCWindowRenderer {
 
         showDialogAuto(dialog);
 
-        final Point mouse = frame.getMousePosition(true);
+        final Point mouse = frame == null ? null : frame.getMousePosition(true);
         if (mouse == null) {
             openDialogs.add(dialog);
         } else {
@@ -971,7 +981,7 @@ public class JXCWindowRenderer {
             return false;
         }
 
-        final Point mouse = frame.getMousePosition(true);
+        final Point mouse = frame == null ? null : frame.getMousePosition(true);
         if (mouse == null) {
             openDialogs.remove(dialog);
         } else {
