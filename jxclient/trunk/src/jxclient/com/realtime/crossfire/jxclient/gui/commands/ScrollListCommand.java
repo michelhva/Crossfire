@@ -21,11 +21,11 @@
 
 package com.realtime.crossfire.jxclient.gui.commands;
 
-import com.realtime.crossfire.jxclient.gui.list.GUIList;
+import com.realtime.crossfire.jxclient.gui.scrollable.GUIScrollable;
 import org.jetbrains.annotations.NotNull;
 
 /**
- * A {@link GUICommand} which scrolls a {@link GUIList} instance.
+ * A {@link GUICommand} which scrolls a {@link GUIScrollable} instance.
  * @author Andreas Kirschbaum
  */
 public class ScrollListCommand implements GUICommand {
@@ -34,7 +34,7 @@ public class ScrollListCommand implements GUICommand {
      * The list to scroll.
      */
     @NotNull
-    private final GUIList list;
+    private final GUIScrollable list;
 
     /**
      * The distance to scroll.
@@ -46,7 +46,7 @@ public class ScrollListCommand implements GUICommand {
      * @param list the list to scroll
      * @param distance the distance to scroll
      */
-    public ScrollListCommand(@NotNull final GUIList list, final int distance) {
+    public ScrollListCommand(@NotNull final GUIScrollable list, final int distance) {
         this.list = list;
         this.distance = distance;
     }
