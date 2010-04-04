@@ -24,15 +24,9 @@ package com.realtime.crossfire.jxclient.shortcuts;
 import com.realtime.crossfire.jxclient.queue.CommandQueue;
 import com.realtime.crossfire.jxclient.spells.Spell;
 import com.realtime.crossfire.jxclient.spells.SpellsManager;
-import java.io.BufferedReader;
-import java.io.BufferedWriter;
 import java.io.File;
-import java.io.FileInputStream;
-import java.io.FileOutputStream;
-import java.io.IOException;
-import java.io.InputStreamReader;
-import java.io.OutputStreamWriter;
 import java.util.ArrayList;
+import java.util.Iterator;
 import javax.swing.event.EventListenerList;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
@@ -41,7 +35,7 @@ import org.jetbrains.annotations.Nullable;
  * Manages a list of {@link Shortcut}s.
  * @author Andreas Kirschbaum
  */
-public class Shortcuts {
+public class Shortcuts implements Iterable<Shortcut> {
 
     /**
      * The shortcuts. Maps index to {@link Shortcut}. Unset entries are set to
@@ -91,112 +85,13 @@ public class Shortcuts {
     }
 
     /**
-     * Reads shortcut definitions from a file. Previously set shortcuts are
-     * overwritten.
-     * @param file the file to read
-     * @throws IOException if an I/O error occurs
+     * Clears all defined shortcuts.
      */
-    public void load(@NotNull final File file) throws IOException {
-        modified = false;
-
-        clearShortcuts();
-        try {
-            final FileInputStream fis = new FileInputStream(file);
-            try {
-                final InputStreamReader isr = new InputStreamReader(fis, "UTF-8");
-                try {
-                    final BufferedReader br = new BufferedReader(isr);
-                    try {
-                        int index = 0;
-                        for (; ;) {
-                            final String line = br.readLine();
-                            if (line == null) {
-                                break;
-                            }
-
-                            if (line.equals("empty")) {
-                                setShortcut(index, null);
-                                index++;
-                            } else if (line.startsWith("spell cast ")) {
-                                setSpellShortcut(index, line.substring(11).trim(), true);
-                                index++;
-                            } else if (line.startsWith("spell invoke ")) {
-                                setSpellShortcut(index, line.substring(13).trim(), false);
-                                index++;
-                            } else if (line.startsWith("command ")) {
-                                setCommandShortcut(index, line.substring(8).trim());
-                                index++;
-                            } else {
-                                System.err.println("shortcut: ignoring undefined entry '"+line+"'");
-                            }
-                        }
-                    } finally {
-                        br.close();
-                    }
-                } finally {
-                    isr.close();
-                }
-            } finally {
-                fis.close();
-            }
-        } catch (final IOException ex) {
-            clearShortcuts();
-            modified = false;
-            this.file = file;
-            throw ex;
-        }
-        modified = false;
-        this.file = file;
-    }
-
-    /**
-     * Writes the shortcut definitions to a file.
-     * @throws IOException if an I/O exception occurs
-     */
-    public void save() throws IOException {
-        if (!modified || file == null) {
+    public void clearShortcuts() {
+        if (shortcuts.isEmpty()) {
             return;
         }
 
-        final FileOutputStream fos = new FileOutputStream(file);
-        try {
-            final OutputStreamWriter osw = new OutputStreamWriter(fos);
-            try {
-                final BufferedWriter bw = new BufferedWriter(osw);
-                try {
-                    for (final Shortcut shortcut : shortcuts) {
-                        if (shortcut == null) {
-                            bw.write("empty\n");
-                        } else if (shortcut instanceof ShortcutSpell) {
-                            final ShortcutSpell shortcutSpell = (ShortcutSpell)shortcut;
-                            bw.write("spell ");
-                            bw.write(shortcutSpell.isCast() ? "cast " : "invoke ");
-                            bw.write(shortcutSpell.getSpell().getName());
-                            bw.write("\n");
-                        } else if (shortcut instanceof ShortcutCommand) {
-                            final ShortcutCommand shortcutCommand = (ShortcutCommand)shortcut;
-                            bw.write("command ");
-                            bw.write(shortcutCommand.getCommand());
-                            bw.write("\n");
-                        } else {
-                            throw new AssertionError();
-                        }
-                    }
-                } finally {
-                    bw.close();
-                }
-            } finally {
-                osw.close();
-            }
-        } finally {
-            fos.close();
-        }
-    }
-
-    /**
-     * Clears all defined shortcuts.
-     */
-    private void clearShortcuts() {
         for (int i = 0; i < shortcuts.size(); i++) {
             final Shortcut shortcut = shortcuts.get(i);
             if (shortcut != null) {
@@ -207,6 +102,7 @@ public class Shortcuts {
             }
         }
         shortcuts.clear();
+        modified = true;
     }
 
     /**
@@ -228,7 +124,7 @@ public class Shortcuts {
      * @param index the shortcut index
      * @param shortcut the shortcut to set or <code>null</code> to unset
      */
-    private void setShortcut(final int index, @Nullable final Shortcut shortcut) {
+    public void setShortcut(final int index, @Nullable final Shortcut shortcut) {
         while (shortcuts.size() <= index) {
             shortcuts.add(null);
         }
@@ -264,7 +160,7 @@ public class Shortcuts {
      * @param cast whether the spell should be cast (<code>true</code>) or
      * invoked (<code>false</code>)
      */
-    private void setSpellShortcut(final int index, @NotNull final String spellName, final boolean cast) {
+    public void setSpellShortcut(final int index, @NotNull final String spellName, final boolean cast) {
         final Spell spell = spellsManager.getSpell(spellName);
         setSpellShortcut(index, spell, cast);
     }
@@ -287,7 +183,7 @@ public class Shortcuts {
      * @param index the shortcut index
      * @param command the command to execute
      */
-    private void setCommandShortcut(final int index, @NotNull final String command) {
+    public void setCommandShortcut(final int index, @NotNull final String command) {
         if (command.length() <= 0) {
             System.err.println("shortcut: ignoring empty command");
             return;
@@ -338,12 +234,44 @@ public class Shortcuts {
     }
 
     /**
+     * Returns whether the shortcuts have been modified since creation or last
+     * call to {@link #resetModified()}.
+     * @return whether anything was modified
+     */
+    public boolean isModified() {
+        return modified;
+    }
+
+    /**
+     * Resets the modified state.
+     */
+    public void resetModified() {
+        modified = false;
+    }
+
+    /**
      * Returns the backing file.
      * @return the backing file or <code>null</code> if unknown
      */
     @Nullable
     public File getFile() {
         return file;
+    }
+
+    /**
+     * Sets the backing file.
+     * @param file the backing file or <code>null</code> if unknown
+     */
+    public void  setFile(@Nullable final File file) {
+        this.file = file;
+    }
+
+    /**
+     * {@inheritDoc}
+     */
+    @Override
+    public Iterator<Shortcut> iterator() {
+        return shortcuts.iterator();
     }
 
 }
