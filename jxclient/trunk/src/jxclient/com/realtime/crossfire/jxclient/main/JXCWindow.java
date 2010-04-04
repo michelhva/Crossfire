@@ -55,6 +55,7 @@ import com.realtime.crossfire.jxclient.settings.Settings;
 import com.realtime.crossfire.jxclient.settings.options.OptionException;
 import com.realtime.crossfire.jxclient.settings.options.OptionManager;
 import com.realtime.crossfire.jxclient.settings.options.Pickup;
+import com.realtime.crossfire.jxclient.shortcuts.Shortcuts;
 import com.realtime.crossfire.jxclient.skills.SkillSet;
 import com.realtime.crossfire.jxclient.skin.io.JXCSkinLoader;
 import com.realtime.crossfire.jxclient.skin.skin.JXCSkin;
@@ -219,12 +220,6 @@ public class JXCWindow extends JFrame {
      */
     @NotNull
     private final KeyHandler keyHandler;
-
-    /**
-     * The shortcuts manager for this window.
-     */
-    @NotNull
-    private final ShortcutsManager shortcutsManager;
 
     /**
      * The current pickup mode.
@@ -727,8 +722,9 @@ public class JXCWindow extends JFrame {
      * @param commandQueue the command queue instance
      * @param scriptManager the script manager instance
      * @param shortcutsManager the shortcuts manager instance
+     * @param shortcuts the shortcuts instance
      */
-    public JXCWindow(@NotNull final Object terminateSync, @NotNull final CrossfireServerConnection server, final boolean debugGui, @Nullable final Writer debugKeyboard, @NotNull final Settings settings, @NotNull final OptionManager optionManager, @NotNull final MetaserverModel metaserverModel, @Nullable final Resolution resolution, @NotNull final GuiStateManager guiStateManager, @NotNull final ExperienceTable experienceTable, @NotNull final SkillSet skillSet, @NotNull final Stats stats, @NotNull final FacesManager facesManager, @NotNull final ItemSet itemSet, @NotNull final ItemView inventoryView, @NotNull final FloorView floorView, @NotNull final MouseTracker mouseTracker, @NotNull final JXCWindowRenderer windowRenderer, @NotNull final String skinName, final boolean fullScreen, @Nullable final String serverInfo, @NotNull final Macros macros, @NotNull final CfMapUpdater mapUpdater, @NotNull final SpellsManager spellsManager, @NotNull final CommandQueue commandQueue, @NotNull final ScriptManager scriptManager, @NotNull final ShortcutsManager shortcutsManager) {
+    public JXCWindow(@NotNull final Object terminateSync, @NotNull final CrossfireServerConnection server, final boolean debugGui, @Nullable final Writer debugKeyboard, @NotNull final Settings settings, @NotNull final OptionManager optionManager, @NotNull final MetaserverModel metaserverModel, @Nullable final Resolution resolution, @NotNull final GuiStateManager guiStateManager, @NotNull final ExperienceTable experienceTable, @NotNull final SkillSet skillSet, @NotNull final Stats stats, @NotNull final FacesManager facesManager, @NotNull final ItemSet itemSet, @NotNull final ItemView inventoryView, @NotNull final FloorView floorView, @NotNull final MouseTracker mouseTracker, @NotNull final JXCWindowRenderer windowRenderer, @NotNull final String skinName, final boolean fullScreen, @Nullable final String serverInfo, @NotNull final Macros macros, @NotNull final CfMapUpdater mapUpdater, @NotNull final SpellsManager spellsManager, @NotNull final CommandQueue commandQueue, @NotNull final ScriptManager scriptManager, @NotNull final ShortcutsManager shortcutsManager, @NotNull final Shortcuts shortcuts) {
         super("");
         this.server = server;
         this.debugGui = debugGui;
@@ -749,7 +745,6 @@ public class JXCWindow extends JFrame {
         this.mapUpdater = mapUpdater;
         this.spellsManager = spellsManager;
         this.commandQueue = commandQueue;
-        this.shortcutsManager = shortcutsManager;
         setDefaultCloseOperation(DO_NOTHING_ON_CLOSE);
         final Commands commands = new Commands(windowRenderer, commandQueue, server, scriptManager, optionManager, commandCallback, macros);
         final GuiFactory guiFactory = new GuiFactory(debugGui ? mouseTracker : null, commands, commandCallback, macros);
@@ -812,7 +807,7 @@ public class JXCWindow extends JFrame {
         addKeyListener(keyListener);
         JXCSkin skin;
         try {
-            skin = loadSkin(skinName, commands);
+            skin = loadSkin(skinName, commands, shortcuts);
         } catch (final JXCSkinException ex) {
             if (skinName.equals(Options.DEFAULT_SKIN)) {
                 System.err.println("cannot load skin "+skinName+": "+ex.getMessage());
@@ -821,7 +816,7 @@ public class JXCWindow extends JFrame {
 
             System.err.println("cannot load skin "+skinName+": "+ex.getMessage()+", trying default skin");
             try {
-                skin = loadSkin(Options.DEFAULT_SKIN, commands);
+                skin = loadSkin(Options.DEFAULT_SKIN, commands, shortcuts);
             } catch (final JXCSkinException ex2) {
                 System.err.println("cannot load default skin "+Options.DEFAULT_SKIN+": "+ex2.getMessage());
                 System.exit(1);
@@ -887,11 +882,12 @@ public class JXCWindow extends JFrame {
      * Loads a skin file.
      * @param skinName the skin file name
      * @param commands the commands to use
+     * @param shortcuts the shortcuts to use
      * @return the loaded skin
      * @throws JXCSkinException if the skin file cannot be loaded
      */
     @NotNull
-    private JXCSkin loadSkin(@NotNull final String skinName, @NotNull final Commands commands) throws JXCSkinException {
+    private JXCSkin loadSkin(@NotNull final String skinName, @NotNull final Commands commands, @NotNull final Shortcuts shortcuts) throws JXCSkinException {
         // check for skin in directory
         final File dir = new File(skinName);
         final KeyBindings defaultKeyBindings = new KeyBindings(null, commands, commandCallback, macros);
@@ -904,7 +900,7 @@ public class JXCWindow extends JFrame {
         }
         final JXCSkinLoader newSkin = new JXCSkinLoader(itemSet, inventoryView, floorView, spellsManager, facesManager, stats, mapUpdater, defaultKeyBindings, optionManager, experienceTable, skillSet);
         final GuiFactory guiFactory = new GuiFactory(debugGui ? mouseTracker : null, commands, commandCallback, macros);
-        final JXCSkin skin = newSkin.load(skinSource, server, guiStateManager, tooltipManager, windowRenderer, windowRenderer.getElementListener(), metaserverModel, commandQueue, shortcutsManager.getShortcuts(), commands, currentSpellManager, commandCallback, macros, guiFactory);
+        final JXCSkin skin = newSkin.load(skinSource, server, guiStateManager, tooltipManager, windowRenderer, windowRenderer.getElementListener(), metaserverModel, commandQueue, shortcuts, commands, currentSpellManager, commandCallback, macros, guiFactory);
         if (resolution != null) {
             if (skin.getMinResolution().getWidth() > resolution.getWidth() || skin.getMinResolution().getHeight() > resolution.getHeight()) {
                 throw new JXCSkinException("resolution "+resolution+" is not supported by this skin");

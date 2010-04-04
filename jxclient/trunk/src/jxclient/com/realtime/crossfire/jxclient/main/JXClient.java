@@ -160,7 +160,7 @@ public class JXClient {
                                     /** {@inheritDoc} */
                                     @Override
                                     public void run() {
-                                        window[0] = new JXCWindow(terminateSync, server, options.isDebugGui(), debugKeyboardOutputStreamWriter, options.getPrefs(), optionManager, metaserverModel, options.getResolution(), guiStateManager, experienceTable, skillSet, stats, facesManager, itemSet, inventoryView, floorView, mouseTracker, windowRenderer, options.getSkin(), options.isFullScreen(), options.getServer(), macros, mapUpdater, spellsManager, commandQueue, scriptManager, shortcutsManager);
+                                        window[0] = new JXCWindow(terminateSync, server, options.isDebugGui(), debugKeyboardOutputStreamWriter, options.getPrefs(), optionManager, metaserverModel, options.getResolution(), guiStateManager, experienceTable, skillSet, stats, facesManager, itemSet, inventoryView, floorView, mouseTracker, windowRenderer, options.getSkin(), options.isFullScreen(), options.getServer(), macros, mapUpdater, spellsManager, commandQueue, scriptManager, shortcutsManager, shortcuts);
                                     }
                                 });
                                 terminateSync.wait();
