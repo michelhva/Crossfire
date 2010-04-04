@@ -591,8 +591,10 @@ public class GuiManager {
         }
     }
 
-    @Deprecated
-    public void init3() {
+    /**
+     * Finishes construction.
+     */
+    public void init() {
         timer.start();
     }
 

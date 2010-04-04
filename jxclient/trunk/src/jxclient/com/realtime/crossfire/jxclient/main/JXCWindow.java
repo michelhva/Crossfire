@@ -858,7 +858,7 @@ public class JXCWindow extends JFrame {
         }
         addMouseListener(mouseTracker);
         addMouseMotionListener(mouseTracker);
-        guiManager.init3();
+        guiManager.init();
     }
 
     /**
