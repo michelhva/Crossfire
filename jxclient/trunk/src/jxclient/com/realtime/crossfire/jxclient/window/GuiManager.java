@@ -839,12 +839,6 @@ public class GuiManager {
         }
     }
 
-    @Deprecated
-    @NotNull
-    public KeybindingsManager getKeybindingsManager() {
-        return keybindingsManager;
-    }
-
     /**
      * Adds a key binding.
      * @param perCharacter whether a per-character key binding should be added

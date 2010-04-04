@@ -749,7 +749,7 @@ public class JXCWindow extends JFrame {
         final GuiFactory guiFactory = new GuiFactory(debugGui ? mouseTracker : null, commands, commandCallback, macros);
         final KeybindingsManager keybindingsManager = new KeybindingsManager(commands, commandCallback, macros);
         guiManager = new GuiManager(guiStateManager, semaphoreDrawing, terminateSync, new TooltipManager(), settings, server, windowRenderer, commands, guiFactory, keybindingsManager);
-        keyHandler = new KeyHandler(debugKeyboard, guiManager.getKeybindingsManager(), commandQueue, windowRenderer, keyHandlerListener);
+        keyHandler = new KeyHandler(debugKeyboard, keybindingsManager, commandQueue, windowRenderer, keyHandlerListener);
         try {
             characterPickup = new Pickup(commandQueue, optionManager);
         } catch (final OptionException ex) {
@@ -799,7 +799,7 @@ public class JXCWindow extends JFrame {
             }
 
         });
-        connection = new JXCConnection(guiManager.getKeybindingsManager(), shortcutsManager, settings, this, characterPickup, server, guiStateManager);
+        connection = new JXCConnection(keybindingsManager, shortcutsManager, settings, this, characterPickup, server, guiStateManager);
         server.addClientSocketListener(clientSocketListener);
         server.addSentReplyListener(sentReplyListener);
         guiManager.setConnection(connection);
