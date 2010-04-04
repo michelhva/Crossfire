@@ -850,7 +850,7 @@ public class JXCWindow extends JFrame {
         guiManager.updateWindowSize(getSize());
 
         DialogStateParser.load(skin, windowRenderer);
-        guiManager.initRendering();
+        keybindingsManager.loadKeybindings();
 
         if (serverInfo != null) {
             guiStateManager.connect(serverInfo);

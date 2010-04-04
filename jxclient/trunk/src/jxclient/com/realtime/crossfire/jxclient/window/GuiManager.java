@@ -510,10 +510,6 @@ public class GuiManager {
         closeDialog(queryDialog);
     }
 
-    public void initRendering() {
-        keybindingsManager.loadKeybindings();
-    }
-
     /**
      * Opens a dialog by name.
      * @param name the dialog name
