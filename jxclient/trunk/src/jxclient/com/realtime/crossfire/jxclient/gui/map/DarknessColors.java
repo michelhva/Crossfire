@@ -61,13 +61,15 @@ public class DarknessColors {
      * @param darkness the darkness value between 0 and 255
      * @return the overlay color
      */
-    public static synchronized Color getDarknessColor(final int darkness) {
-        if (darknessColors[darkness] == null) {
-            final float alpha = MAX_DARKNESS_ALPHA*(255-darkness)/255F;
-            darknessColors[darkness] = new Color(0, 0, 0, alpha);
-        }
+    public static Color getDarknessColor(final int darkness) {
+        synchronized (darknessColors) {
+            if (darknessColors[darkness] == null) {
+                final float alpha = MAX_DARKNESS_ALPHA*(255-darkness)/255F;
+                darknessColors[darkness] = new Color(0, 0, 0, alpha);
+            }
 
-        return darknessColors[darkness];
+            return darknessColors[darkness];
+        }
     }
 
 }
