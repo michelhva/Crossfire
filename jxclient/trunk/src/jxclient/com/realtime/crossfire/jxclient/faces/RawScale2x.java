@@ -115,16 +115,20 @@ public class RawScale2x {
         //final int g = getSourcePixel(x-1, y+1);
         final int h = getSourcePixel(x, y+1);
         //final int i = getSourcePixel(x+1, y+1);
-        int e0 = e;
-        int e1 = e;
-        int e2 = e;
-        int e3 = e;
-
+        final int e0;
+        final int e1;
+        final int e2;
+        final int e3;
         if (different(b, h) && different(d, f)) {
             e0 = different(d, b) ? e : d;
             e1 = different(b, f) ? e : f;
             e2 = different(d, h) ? e : d;
             e3 = different(h, f) ? e : f;
+        } else {
+            e0 = e;
+            e1 = e;
+            e2 = e;
+            e3 = e;
         }
 
         setDestPixel(x*2, y*2, e0);
