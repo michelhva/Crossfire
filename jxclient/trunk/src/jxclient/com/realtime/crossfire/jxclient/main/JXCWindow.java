@@ -748,7 +748,6 @@ public class JXCWindow extends JFrame {
         final Commands commands = new Commands(windowRenderer, commandQueue, server, scriptManager, optionManager, commandCallback, macros);
         final GuiFactory guiFactory = new GuiFactory(debugGui ? mouseTracker : null, commands, commandCallback, macros);
         final KeybindingsManager keybindingsManager = new KeybindingsManager(commands, commandCallback, macros);
-        guiManager = new GuiManager(guiStateManager, semaphoreDrawing, terminateSync, new TooltipManager(), settings, server, windowRenderer, commands, guiFactory, keybindingsManager);
         keyHandler = new KeyHandler(debugKeyboard, keybindingsManager, commandQueue, windowRenderer, keyHandlerListener);
         try {
             characterPickup = new Pickup(commandQueue, optionManager);
@@ -760,6 +759,8 @@ public class JXCWindow extends JFrame {
         } catch (final IOException ex) {
             System.err.println("Cannot find application icon: "+ex.getMessage());
         }
+        connection = new JXCConnection(keybindingsManager, shortcutsManager, settings, this, characterPickup, server, guiStateManager);
+        guiManager = new GuiManager(guiStateManager, semaphoreDrawing, terminateSync, new TooltipManager(), settings, server, windowRenderer, commands, guiFactory, keybindingsManager, connection);
         setFocusTraversalKeysEnabled(false);
         addWindowFocusListener(windowFocusListener);
         addWindowListener(windowListener);
@@ -799,10 +800,8 @@ public class JXCWindow extends JFrame {
             }
 
         });
-        connection = new JXCConnection(keybindingsManager, shortcutsManager, settings, this, characterPickup, server, guiStateManager);
         server.addClientSocketListener(clientSocketListener);
         server.addSentReplyListener(sentReplyListener);
-        guiManager.setConnection(connection);
         guiStateManager.addGuiStateListener(guiStateListener);
         addKeyListener(keyListener);
         JXCSkin skin;
