@@ -44,25 +44,18 @@ import org.jetbrains.annotations.NotNull;
 public class ShortcutsLoader {
 
     /**
-     * The shortcuts.
+     * Private constructor to prevent instantiation.
      */
-    @NotNull
-    private final Shortcuts shortcuts;
-
-    /**
-     * Creates a new instance.
-     * @param shortcuts the shortcuts to manage
-     */
-    public ShortcutsLoader(@NotNull final Shortcuts shortcuts) {
-        this.shortcuts = shortcuts;
+    private ShortcutsLoader() {
     }
 
     /**
      * Load shortcut info from the backing file.
+     * @param shortcuts the shortcuts instance to update
      * @param hostname the current hostname
      * @param character the current character name
      */
-    public void loadShortcuts(@NotNull final CharSequence hostname, @NotNull final CharSequence character) {
+    public static void loadShortcuts(@NotNull final Shortcuts shortcuts, @NotNull final CharSequence hostname, @NotNull final CharSequence character) {
         final File file;
         try {
             file = Filenames.getShortcutsFile(hostname, character);
@@ -130,8 +123,9 @@ public class ShortcutsLoader {
 
     /**
      * Save all shortcut info to the backing file.
+     * @param shortcuts the shortcuts instance to save
      */
-    public void saveShortcuts() {
+    public static void saveShortcuts(@NotNull final Shortcuts shortcuts) {
         try {
             if (!shortcuts.isModified()) {
                 return;
