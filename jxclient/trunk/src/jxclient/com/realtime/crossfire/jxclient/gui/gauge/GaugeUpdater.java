@@ -72,13 +72,15 @@ public abstract class GaugeUpdater {
      */
     protected void setValues(final int curValue, final int minValue, final int maxValue) {
         if (gauge != null) {
+            final String curValueString = Integer.toString(curValue);
             final String tooltipText;
             if (minValue == 0) {
                 tooltipText = curValue+"/"+maxValue;
             } else {
-                tooltipText = Integer.toString(curValue);
+                tooltipText = curValueString;
             }
-            gauge.setValues(curValue, minValue, maxValue, Integer.toString(curValue), tooltipText);
+            assert gauge != null;
+            gauge.setValues(curValue, minValue, maxValue, curValueString, tooltipText);
         }
     }
 
