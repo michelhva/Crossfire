@@ -967,6 +967,7 @@ public class GuiManager {
     public void updateWindowSize(@NotNull final Dimension size) {
         if (skin != null) {
             skin.setScreenSize(size.width, size.height);
+            tooltipManager.setScreenSize(size.width, size.height);
             updateServerSettings();
         }
     }

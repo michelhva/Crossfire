@@ -38,10 +38,14 @@ public class TooltipManager {
     private static final int TOOLTIP_DISTANCE = 8;
 
     /**
-     * The {@link JXCWindowRenderer} to manage the tooltips of.
+     * The current window width.
      */
-    @NotNull
-    private final JXCWindowRenderer windowRenderer;
+    private int windowWidth = 0;
+
+    /**
+     * The current window height.
+     */
+    private int windowHeight = 0;
 
     /**
      * The tooltip label. Set to <code>null</code> if the skin does not use
@@ -64,11 +68,13 @@ public class TooltipManager {
     private final Object activeGuiElementSync = new Object();
 
     /**
-     * Creates a new instance.
-     * @param windowRenderer the window renderer to manager the tooltips of
+     * Updates the current window size.
+     * @param windowWidth the window width
+     * @param windowHeight the window height
      */
-    public TooltipManager(@NotNull final JXCWindowRenderer windowRenderer) {
-        this.windowRenderer = windowRenderer;
+    public void setScreenSize(final int windowWidth, final int windowHeight) {
+        this.windowWidth = windowWidth;
+        this.windowHeight = windowHeight;
     }
 
     /**
@@ -158,12 +164,12 @@ public class TooltipManager {
         tmpTooltip.setText(tooltipText.getText());
 
         final int preferredX = tooltipText.getX()+tooltipText.getW()/2-tmpTooltip.getWidth()/2;
-        final int maxX = windowRenderer.getWindowWidth()-tmpTooltip.getWidth();
+        final int maxX = windowWidth-tmpTooltip.getWidth();
         final int tx = Math.max(0, Math.min(preferredX, maxX));
         final int ty;
         final int elementY = tooltipText.getY();
         final int preferredY = elementY+tooltipText.getH()+TOOLTIP_DISTANCE;
-        if (preferredY+tmpTooltip.getHeight() <= windowRenderer.getWindowHeight()) {
+        if (preferredY+tmpTooltip.getHeight() <= windowHeight) {
             ty = preferredY;
         } else {
             ty = elementY-tmpTooltip.getHeight()-TOOLTIP_DISTANCE;
