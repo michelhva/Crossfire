@@ -137,9 +137,11 @@ public class TextSegment extends AbstractSegment {
     public void draw(@NotNull final Graphics g, final int y, @NotNull final Fonts fonts) {
         g.setColor(color);
         g.setFont(getFont(fonts));
-        g.drawString(text, x, y+this.y);
+        final int segmentX = getX();
+        final int segmentY = getY();
+        g.drawString(text, segmentX, y+segmentY);
         if (underline) {
-            g.drawLine(x, y+this.y+underlineOffset, x+width-1, y+this.y+underlineOffset);
+            g.drawLine(segmentX, y+segmentY+underlineOffset, segmentX+getWidth()-1, y+segmentY+underlineOffset);
         }
     }
 

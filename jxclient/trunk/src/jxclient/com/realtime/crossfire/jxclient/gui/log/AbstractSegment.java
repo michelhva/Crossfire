@@ -31,19 +31,19 @@ public abstract class AbstractSegment implements Segment {
      * The x-coordinate to display the segment. Set to <code>-1</code> if
      * unknown.
      */
-    protected int x = -1;
+    private int x = -1;
 
     /**
      * The y-coordinate to display the segment. Set to <code>-1</code> if
      * unknown.
      */
-    protected int y = -1;
+    private int y = -1;
 
     /**
      * The width of the segment if displayed. Set to <code>-1</code> if
      * unknown.
      */
-    protected int width = -1;
+    private int width = -1;
 
     /**
      * {@inheritDoc}
@@ -51,6 +51,14 @@ public abstract class AbstractSegment implements Segment {
     @Override
     public void setX(final int x) {
         this.x = x;
+    }
+
+    /**
+     * Returns the x-coordinate to display the segment.
+     * @return the x-coordinate
+     */
+    protected int getX() {
+        return x;
     }
 
     /**
@@ -62,11 +70,27 @@ public abstract class AbstractSegment implements Segment {
     }
 
     /**
+     * Returns the y-coordinate to display the segment.
+     * @return the y-coordinate
+     */
+    protected int getY() {
+        return y;
+    }
+
+    /**
      * {@inheritDoc}
      */
     @Override
     public void setWidth(final int width) {
         this.width = width;
+    }
+
+    /**
+     * Returns the width to display the segment.
+     * @return the width
+     */
+    protected int getWidth() {
+        return width;
     }
 
 }
