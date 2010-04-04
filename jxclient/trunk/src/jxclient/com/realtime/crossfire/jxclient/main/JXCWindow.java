@@ -111,6 +111,12 @@ public class JXCWindow extends JFrame {
     private static final long serialVersionUID = 1;
 
     /**
+     * The {@link TooltipManager} for this window.
+     */
+    @NotNull
+    private final TooltipManager tooltipManager = new TooltipManager();
+
+    /**
      * The {@link GuiManager} for controlling the main GUI state.
      */
     @NotNull
@@ -760,7 +766,7 @@ public class JXCWindow extends JFrame {
             System.err.println("Cannot find application icon: "+ex.getMessage());
         }
         connection = new JXCConnection(keybindingsManager, shortcutsManager, settings, this, characterPickup, server, guiStateManager);
-        guiManager = new GuiManager(guiStateManager, semaphoreDrawing, terminateSync, new TooltipManager(), settings, server, windowRenderer, guiFactory, keybindingsManager, connection);
+        guiManager = new GuiManager(guiStateManager, semaphoreDrawing, terminateSync, tooltipManager, settings, server, windowRenderer, guiFactory, keybindingsManager, connection);
         setFocusTraversalKeysEnabled(false);
         addWindowFocusListener(windowFocusListener);
         addWindowListener(windowListener);
@@ -898,7 +904,7 @@ public class JXCWindow extends JFrame {
         }
         final JXCSkinLoader newSkin = new JXCSkinLoader(itemSet, inventoryView, floorView, spellsManager, facesManager, stats, mapUpdater, defaultKeyBindings, optionManager, experienceTable, skillSet);
         final GuiFactory guiFactory = new GuiFactory(debugGui ? mouseTracker : null, commands, commandCallback, macros);
-        final JXCSkin skin = newSkin.load(skinSource, server, guiStateManager, guiManager.getTooltipManager(), windowRenderer, windowRenderer.getElementListener(), metaserverModel, commandQueue, shortcutsManager.getShortcuts(), commands, currentSpellManager, commandCallback, macros, guiFactory);
+        final JXCSkin skin = newSkin.load(skinSource, server, guiStateManager, tooltipManager, windowRenderer, windowRenderer.getElementListener(), metaserverModel, commandQueue, shortcutsManager.getShortcuts(), commands, currentSpellManager, commandCallback, macros, guiFactory);
         if (resolution != null) {
             if (skin.getMinResolution().getWidth() > resolution.getWidth() || skin.getMinResolution().getHeight() > resolution.getHeight()) {
                 throw new JXCSkinException("resolution "+resolution+" is not supported by this skin");
