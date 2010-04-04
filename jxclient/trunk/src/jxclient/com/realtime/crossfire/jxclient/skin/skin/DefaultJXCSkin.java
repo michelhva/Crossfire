@@ -498,9 +498,8 @@ public class DefaultJXCSkin implements JXCSkin {
     /**
      * Adds a new {@link GUIElement} to this skin.
      * @param guiElement the GUI element
-     * @throws JXCSkinException if the name is not unique
      */
-    public void insertGuiElement(@NotNull final GUIElement guiElement) throws JXCSkinException {
+    public void insertGuiElement(@NotNull final GUIElement guiElement) {
         guiElements.add(guiElement);
     }
 
