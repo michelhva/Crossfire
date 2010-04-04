@@ -268,7 +268,9 @@ public abstract class GUIElement extends JPanel {
      * @param e The mouse event relative to this element.
      */
     public void mouseClicked(@NotNull final MouseEvent e) {
-        elementListener.mouseClicked(gui);
+        if (gui != null) {
+            elementListener.mouseClicked(gui);
+        }
     }
 
     /**
