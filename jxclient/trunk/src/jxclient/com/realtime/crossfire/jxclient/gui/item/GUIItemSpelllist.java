@@ -245,6 +245,7 @@ public class GUIItemSpelllist extends GUIItem {
             g.setColor(selectorColor);
             g.fillRect(0, 0, w, h);
         }
+        assert spell != null;
         g.drawImage(facesManager.getOriginalImageIcon(spell.getFaceNum()).getImage(), 0, 0, null);
         if (isActive() && selectorImage != null) {
             g.drawImage(selectorImage, 0, 0, null);
