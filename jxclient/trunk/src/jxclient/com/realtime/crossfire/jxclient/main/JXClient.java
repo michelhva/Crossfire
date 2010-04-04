@@ -44,6 +44,7 @@ import com.realtime.crossfire.jxclient.server.crossfire.DefaultCrossfireServerCo
 import com.realtime.crossfire.jxclient.settings.Filenames;
 import com.realtime.crossfire.jxclient.settings.options.OptionException;
 import com.realtime.crossfire.jxclient.settings.options.OptionManager;
+import com.realtime.crossfire.jxclient.shortcuts.Shortcuts;
 import com.realtime.crossfire.jxclient.skills.SkillSet;
 import com.realtime.crossfire.jxclient.sound.MusicWatcher;
 import com.realtime.crossfire.jxclient.sound.SoundCheckBoxOption;
@@ -151,7 +152,8 @@ public class JXClient {
                             final SpellsManager spellsManager = new SpellsManager(server, guiStateManager);
                             final CommandQueue commandQueue = new CommandQueue(server, guiStateManager);
                             final ScriptManager scriptManager = new ScriptManager(commandQueue, server, stats, floorView, itemSet, spellsManager, mapUpdater, skillSet);
-                            final ShortcutsManager shortcutsManager = new ShortcutsManager(commandQueue, spellsManager);
+                            final Shortcuts shortcuts = new Shortcuts(commandQueue, spellsManager);
+                            final ShortcutsManager shortcutsManager = new ShortcutsManager(shortcuts);
 
                             synchronized (terminateSync) {
                                 SwingUtilities.invokeAndWait(new Runnable() {
