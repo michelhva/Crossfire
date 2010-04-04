@@ -136,7 +136,6 @@ public class GUICheckBox extends ActivatableGUIElement {
         this.color = color;
         this.option = option;
         this.option.addOptionListener(optionListener);
-        setTooltipText(option.getTooltipText());
     }
 
     /**
@@ -208,6 +207,15 @@ public class GUICheckBox extends ActivatableGUIElement {
         case MouseEvent.BUTTON3:
             break;
         }
+    }
+
+    /**
+     * {@inheritDoc}
+     */
+    @Override
+    public void updateResolution(final int screenWidth, final int screenHeight) {
+        super.updateResolution(screenWidth, screenHeight);
+        setTooltipText(option.getTooltipText());
     }
 
 }
