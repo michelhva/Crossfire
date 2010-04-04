@@ -428,6 +428,7 @@ public class Gui {
             if (previousActiveElement != null) {
                 previousActiveElement.activeChanged();
             }
+            assert this.activeElement != null;
             this.activeElement.activeChanged();
 
             guiAutoCloseListener = null;
@@ -437,6 +438,7 @@ public class Gui {
             }
 
             this.activeElement = null;
+            assert previousActiveElement != null;
             previousActiveElement.activeChanged();
 
             if (guiAutoCloseListener != null) {
@@ -565,6 +567,7 @@ public class Gui {
             return false;
         }
 
+        assert activeElement != null;
         activeElement.setActive(false);
         return true;
     }
