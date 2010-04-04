@@ -65,7 +65,7 @@ public class GuiManager {
      * The object to be notified when the application terminates.
      */
     @NotNull
-    private final Object terminateSync;
+    private final Object terminateSync = new Object();
 
     /**
      * The currently active skin. Set to <code>null</code> if no skin is set.
@@ -333,8 +333,6 @@ public class GuiManager {
      * Creates a new instance.
      * @param guiStateManager the gui state manager to watch
      * @param semaphoreDrawing the semaphore to use for drawing operations
-     * @param terminateSync the object to be notified when the application
-     * terminates
      * @param tooltipManager the tooltip manager to update
      * @param settings the settings to use
      * @param server the crossfire server connection to monitor
@@ -343,9 +341,8 @@ public class GuiManager {
      * @param keybindingsManager the keybindings manager to use
      * @param connection the connection to use
      */
-    public GuiManager(@NotNull final GuiStateManager guiStateManager, @NotNull final Object semaphoreDrawing, @NotNull final Object terminateSync, @NotNull final TooltipManager tooltipManager, @NotNull final Settings settings, @NotNull final CrossfireServerConnection server, @NotNull final JXCWindowRenderer windowRenderer, @NotNull final GuiFactory guiFactory, @NotNull final KeybindingsManager keybindingsManager, @NotNull final JXCConnection connection) {
+    public GuiManager(@NotNull final GuiStateManager guiStateManager, @NotNull final Object semaphoreDrawing, @NotNull final TooltipManager tooltipManager, @NotNull final Settings settings, @NotNull final CrossfireServerConnection server, @NotNull final JXCWindowRenderer windowRenderer, @NotNull final GuiFactory guiFactory, @NotNull final KeybindingsManager keybindingsManager, @NotNull final JXCConnection connection) {
         this.semaphoreDrawing = semaphoreDrawing;
-        this.terminateSync = terminateSync;
         this.tooltipManager = tooltipManager;
         this.settings = settings;
         this.server = server;
@@ -550,6 +547,15 @@ public class GuiManager {
         timer.stop();
         synchronized (terminateSync) {
             terminateSync.notifyAll();
+        }
+    }
+    /**
+     * Waits until the window has been disposed.
+     * @throws InterruptedException if the current thread has been interrupted
+     */
+    public void waitForTermination() throws InterruptedException {
+        synchronized (terminateSync) {
+            terminateSync.wait();
         }
     }
 
