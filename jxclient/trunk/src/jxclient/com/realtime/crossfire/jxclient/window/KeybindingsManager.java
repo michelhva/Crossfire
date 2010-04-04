@@ -158,6 +158,7 @@ public class KeybindingsManager {
         try {
             characterKeyBindings.loadKeyBindings();
         } catch (final IOException ex) {
+            assert characterKeyBindings != null;
             System.err.println("Cannot read keybindings file "+characterKeyBindings.getFile()+": "+ex.getMessage());
         }
     }
@@ -171,6 +172,7 @@ public class KeybindingsManager {
             try {
                 characterKeyBindings.saveKeyBindings();
             } catch (final IOException ex) {
+                assert characterKeyBindings != null;
                 System.err.println("Cannot write keybindings file "+characterKeyBindings.getFile()+": "+ex.getMessage());
             }
             characterKeyBindings = null;
