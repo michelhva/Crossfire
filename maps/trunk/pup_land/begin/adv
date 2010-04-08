@@ -8,7 +8,7 @@ enter_x 3
 enter_y 12
 msg
 Created:  1996-02-13
-Modified: 2008-10-09 Rick Tanner
+Modified: 2010-04-04 krb
 endmsg
 end
 arch marble
@@ -327,6 +327,9 @@ y 4
 end
 arch locked_door1
 slaying 9key3
+msg
+You need the House of Treasure Key #3 to open this door.
+endmsg
 x 3
 y 4
 end
@@ -344,6 +347,9 @@ y 6
 end
 arch locked_door1
 slaying 9key2
+msg
+You need the House of Treasure Key #2 to open this door.
+endmsg
 x 3
 y 6
 end
@@ -361,6 +367,9 @@ y 8
 end
 arch locked_door1
 slaying 9key1
+msg
+You need the House of Treasure Key #1 to open this door.
+endmsg
 x 3
 y 8
 end
