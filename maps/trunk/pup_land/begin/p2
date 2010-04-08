@@ -8,7 +8,7 @@ enter_x 5
 enter_y 16
 msg
 Created:  1996-02-13
-Modified: 2008-10-09 Rick Tanner
+Modified: 2010-04-04 krb
 endmsg
 end
 arch grass
@@ -627,8 +627,11 @@ x 5
 y 1
 end
 arch key2
-name key2
+name House of  Treasure Key #2
 slaying 9key2
+msg
+A key found in the Red Town practice maps.
+endmsg
 x 5
 y 1
 end
