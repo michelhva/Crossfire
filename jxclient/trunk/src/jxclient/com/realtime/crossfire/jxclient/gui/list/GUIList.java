@@ -447,7 +447,7 @@ public abstract class GUIList extends ActivatableGUIElement implements GUIScroll
             }
 
             final Rectangle rect = list.getCellBounds(index, index);
-            if (!rect.contains(e.getPoint())) {
+            if (rect == null || !rect.contains(e.getPoint())) {
                 setTooltipText(null);
                 return;
             }
