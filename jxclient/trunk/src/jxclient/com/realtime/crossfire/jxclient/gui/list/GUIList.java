@@ -48,6 +48,7 @@ import javax.swing.border.EmptyBorder;
 import javax.swing.event.ListSelectionEvent;
 import javax.swing.event.ListSelectionListener;
 import org.jetbrains.annotations.NotNull;
+import org.jetbrains.annotations.Nullable;
 
 /**
  * A {@link GUIElement} that displays a list of entries.
@@ -94,6 +95,19 @@ public abstract class GUIList extends ActivatableGUIElement implements GUIScroll
      */
     @NotNull
     private final JScrollPane scrollPane;
+
+    /**
+     * The index of the currently shown tooltip. Set to <code>-1</code> if no
+     * tooltip is shown.
+     */
+    private int tooltipIndex = -1;
+
+    /**
+     * The location of the tooltip. Set to <code>null</code> if no tooltip is
+     * shown.
+     */
+    @Nullable
+    private Rectangle tooltipRect = null;
 
     /**
      * The {@link ListSelectionListener} attached to {@link #list}.
@@ -442,23 +456,23 @@ public abstract class GUIList extends ActivatableGUIElement implements GUIScroll
         synchronized (getTreeLock()) {
             final int index = list.locationToIndex(e.getPoint());
             if (index == -1) {
-                setTooltipText(null);
+                tooltipIndex = -1;
+                tooltipRect = null;
+                updateTooltip();
                 return;
             }
 
             final Rectangle rect = list.getCellBounds(index, index);
             if (rect == null || !rect.contains(e.getPoint())) {
-                setTooltipText(null);
+                tooltipIndex = -1;
+                tooltipRect = null;
+                updateTooltip();
                 return;
             }
 
-            final Gui gui = getGui();
-            if (gui == null) {
-                setTooltipText(null);
-                return;
-            }
-
-            updateTooltip(list.getFirstVisibleIndex()+index, gui.getX()+getX()+rect.x, gui.getY()+getY()+rect.y, rect.width, rect.height);
+            tooltipIndex = list.getFirstVisibleIndex()+index;
+            tooltipRect = rect;
+            updateTooltip();
         }
     }
 
@@ -496,6 +510,38 @@ public abstract class GUIList extends ActivatableGUIElement implements GUIScroll
      * @param selectedIndex the selected list entry
      */
     protected abstract void selectionChanged(final int selectedIndex);
+
+    /**
+     * Updates the current tooltip text.
+     */
+    private void updateTooltip() {
+        if (tooltipIndex == -1) {
+            setTooltipText(null);
+        } else {
+            final Rectangle rect = tooltipRect;
+            if (rect == null) {
+                setTooltipText(null);
+            } else {
+                final Gui gui = getGui();
+                if (gui == null) {
+                    tooltipIndex = -1;
+                    tooltipRect = null;
+                    setTooltipText(null);
+                } else {
+                    updateTooltip(tooltipIndex, gui.getX()+getX()+rect.x, gui.getY()+getY()+rect.y, rect.width, rect.height);
+                }
+            }
+        }
+    }
+
+    /**
+     * {@inheritDoc}
+     */
+    @Override
+    public void setChanged() {
+        super.setChanged();
+        updateTooltip();
+    }
 
     /**
      * Updates the tooltip text.
