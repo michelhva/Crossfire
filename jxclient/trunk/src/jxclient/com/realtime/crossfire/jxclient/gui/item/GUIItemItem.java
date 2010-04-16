@@ -206,12 +206,7 @@ public abstract class GUIItemItem extends GUIItem {
      * Updates the tooltip text for the current {@link #item}.
      */
     protected void updateTooltipText() {
-        if (item == null) {
-            setTooltipText(null);
-            return;
-        }
-
-        setTooltipText(item.getTooltipText());
+        setTooltipText(item == null ? null : item.getTooltipText());
     }
 
     /**
