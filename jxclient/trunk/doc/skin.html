@@ -770,7 +770,7 @@ Displays a spell known by the character.
 
 <p>syntax:</p>
 <pre>
-    meta_list &lt;name&gt; &lt;x&gt; &lt;y&gt; &lt;w&gt; &lt;h&gt; &lt;cell-width&gt; &lt;cell-height&gt; &lt;picture&gt; &lt;font&gt; &lt;text&gt; &lt;label&gt; &lt;format&gt; &lt;tooltip&gt;
+    meta_list &lt;name&gt; &lt;x&gt; &lt;y&gt; &lt;w&gt; &lt;h&gt; &lt;cell-width&gt; &lt;cell-height&gt; &lt;picture&gt; &lt;font&gt; &lt;text&gt; &lt;label&gt; &lt;connect&gt; &lt;format&gt; &lt;tooltip&gt;
 </pre>
 
 <p>precondition: dialog</p>
@@ -784,6 +784,7 @@ Displays a spell known by the character.
 <li>&lt;picture&gt; is a picture to display in front of the server description. May be <code>null</code> if no picture should be shown.</li>
 <li>&lt;font&gt; is the font to use.</li>
 <li>&lt;text&gt; is a text input element for the server name. It is updated to reflect the current list selection. May be <code>null</code> to not update a text element.</li>
+<li>&lt;connect&gt; is a command list to execute on double-click. It should connect to the Crossfire server.
 <li>&lt;label&gt; is a label element that displays the description of the current list selection. May be <code>null</code> to not update a label element.</li>
 <li>&lt;format&gt; &lt;tooltip&gt; are format strings that display the current selection. &lt;format&gt; is used for the list element, &lt;tooltip&gt; for the tooltip text. The following placeholders are allowed; they insert information received from the metaserver.
 <ul>

@@ -141,7 +141,7 @@ public class GUIItemList extends GUIList {
      * @param itemItemFactory the factory for creating item instances
      */
     public GUIItemList(@NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final CommandQueue commandQueue, @NotNull final String name, @NotNull final Extent extent, final int cellWidth, final int cellHeight, @NotNull final CrossfireServerConnection crossfireServerConnection, @NotNull final ItemView itemView, @Nullable final AbstractLabel currentItem, @NotNull final GUIItemItemFactory itemItemFactory) {
-        super(tooltipManager, elementListener, name, extent, cellWidth, cellHeight, new ItemItemCellRenderer(itemItemFactory.newTemplateItem(cellHeight)));
+        super(tooltipManager, elementListener, name, extent, cellWidth, cellHeight, new ItemItemCellRenderer(itemItemFactory.newTemplateItem(cellHeight)), null);
         this.cellWidth = cellWidth;
         this.cellHeight = cellHeight;
         this.itemView = itemView;

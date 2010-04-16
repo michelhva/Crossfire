@@ -22,6 +22,7 @@
 package com.realtime.crossfire.jxclient.gui.list;
 
 import com.realtime.crossfire.jxclient.gui.GUIMetaElement;
+import com.realtime.crossfire.jxclient.gui.commands.CommandList;
 import com.realtime.crossfire.jxclient.gui.gui.GUIElement;
 import com.realtime.crossfire.jxclient.gui.gui.GUIElementListener;
 import com.realtime.crossfire.jxclient.gui.gui.TooltipManager;
@@ -151,9 +152,10 @@ public class GUIMetaElementList extends GUIList {
      * @param hostname the hostname input field to update; may be
      * <code>null</code>
      * @param comment the comment field to update; may be <code>null</code>
+     * @param connectCommandList the command list to connect to the server
      */
-    public GUIMetaElementList(@NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final String name, @NotNull final Extent extent, final int cellWidth, final int cellHeight, @NotNull final MetaserverModel metaserverModel, @Nullable final BufferedImage image, @NotNull final Font font, @NotNull final String format, @NotNull final String tooltip, @Nullable final GUIText hostname, @Nullable final AbstractLabel comment) {
-        super(tooltipManager, elementListener, name, extent, cellWidth, cellHeight, new MetaElementCellRenderer(new GUIMetaElement(tooltipManager, elementListener, metaserverModel, name+"_template", extent.getConstantW(), cellHeight, image, font, 0, format, tooltip)));
+    public GUIMetaElementList(@NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final String name, @NotNull final Extent extent, final int cellWidth, final int cellHeight, @NotNull final MetaserverModel metaserverModel, @Nullable final BufferedImage image, @NotNull final Font font, @NotNull final String format, @NotNull final String tooltip, @Nullable final GUIText hostname, @Nullable final AbstractLabel comment, @NotNull final CommandList connectCommandList) {
+        super(tooltipManager, elementListener, name, extent, cellWidth, cellHeight, new MetaElementCellRenderer(new GUIMetaElement(tooltipManager, elementListener, metaserverModel, name+"_template", extent.getConstantW(), cellHeight, image, font, 0, format, tooltip)), connectCommandList);
         this.metaserverModel = metaserverModel;
         this.tooltipManager = tooltipManager;
         this.elementListener = elementListener;

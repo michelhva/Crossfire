@@ -1672,7 +1672,7 @@ public class JXCSkinLoader {
      * @throws JXCSkinException if the command cannot be parsed
      */
     private void parseMetaList(@NotNull final String[] args, @NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final MetaserverModel metaserverModel) throws IOException, JXCSkinException {
-        if (args.length != 14) {
+        if (args.length != 15) {
             throw new IOException("syntax error");
         }
 
@@ -1684,10 +1684,11 @@ public class JXCSkinLoader {
         final Font font = definedFonts.lookup(args[9]);
         final GUIText text = args[10].equals("null") ? null : guiElementParser.lookupTextElement(args[10]);
         final AbstractLabel label = args[11].equals("null") ? null : guiElementParser.lookupLabelElement(args[11]);
-        final String format = args[12];
-        final String tooltip = args[13];
+        final CommandList connectCommandList = skin.getCommandList(args[12]);
+        final String format = args[13];
+        final String tooltip = args[14];
 
-        final GUIElement list = new GUIMetaElementList(tooltipManager, elementListener, name, extent, cellWidth, cellHeight, metaserverModel, image, font, format, tooltip, text, label);
+        final GUIElement list = new GUIMetaElementList(tooltipManager, elementListener, name, extent, cellWidth, cellHeight, metaserverModel, image, font, format, tooltip, text, label, connectCommandList);
         insertGuiElement(list);
     }
 

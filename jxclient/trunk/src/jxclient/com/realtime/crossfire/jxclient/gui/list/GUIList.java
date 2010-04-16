@@ -21,6 +21,7 @@
 
 package com.realtime.crossfire.jxclient.gui.list;
 
+import com.realtime.crossfire.jxclient.gui.commands.CommandList;
 import com.realtime.crossfire.jxclient.gui.gui.ActivatableGUIElement;
 import com.realtime.crossfire.jxclient.gui.gui.GUIElement;
 import com.realtime.crossfire.jxclient.gui.gui.GUIElementListener;
@@ -71,6 +72,13 @@ public abstract class GUIList extends ActivatableGUIElement implements GUIScroll
      */
     @NotNull
     private final GUIListCellRenderer listCellRenderer;
+
+    /**
+     * The {@link CommandList} to execute on double-clicks or <code>null</code>
+     * to ignore double-clicks.
+     */
+    @Nullable
+    private final CommandList doubleClickCommandList;
 
     /**
      * The list model of {@link #list}.
@@ -130,11 +138,14 @@ public abstract class GUIList extends ActivatableGUIElement implements GUIScroll
      * @param cellWidth the width of each cell
      * @param cellHeight the height of each cell
      * @param listCellRenderer the renderer for the list
+     * @param doubleClickCommandList the command list to execute on double-click or
+     * <code>null</code> to ignore double-clicks
      */
-    protected GUIList(@NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final String name, @NotNull final Extent extent, final int cellWidth, final int cellHeight, @NotNull final GUIListCellRenderer listCellRenderer) {
+    protected GUIList(@NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final String name, @NotNull final Extent extent, final int cellWidth, final int cellHeight, @NotNull final GUIListCellRenderer listCellRenderer, @Nullable final CommandList doubleClickCommandList) {
         super(tooltipManager, elementListener, name, extent, Transparency.TRANSLUCENT);
         this.cellHeight = cellHeight;
         this.listCellRenderer = listCellRenderer;
+        this.doubleClickCommandList = doubleClickCommandList;
 
         viewport.setView(list);
         scrollPane = new JScrollPane(null, ScrollPaneConstants.VERTICAL_SCROLLBAR_NEVER, ScrollPaneConstants.HORIZONTAL_SCROLLBAR_NEVER);
@@ -390,6 +401,9 @@ public abstract class GUIList extends ActivatableGUIElement implements GUIScroll
     @Override
     public void mouseClicked(@NotNull final MouseEvent e) {
         doSelect(e);
+        if (doubleClickCommandList != null && e.getClickCount() > 1) {
+            doubleClickCommandList.execute();
+        }
         super.mouseClicked(e);
     }
 
