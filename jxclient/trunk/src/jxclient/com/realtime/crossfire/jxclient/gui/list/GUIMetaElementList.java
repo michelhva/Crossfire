@@ -237,7 +237,7 @@ public class GUIMetaElementList extends GUIList {
     @Override
     protected void updateTooltip(final int index, final int x, final int y, final int w, final int h) {
         final MetaserverEntry metaEntry = metaserverModel.getEntry(index);
-        setTooltipText(metaEntry == null ? null : metaEntry.format(tooltip));
+        setTooltipText(metaEntry == null ? null : metaEntry.format(tooltip), x, y, w, h);
     }
 
     /**
