@@ -20,7 +20,7 @@ Con 8
 Pow 1
 can_cast_spell 1
 Wis 20
-attacktype 4098
+attacktype 3
 will_apply 15
 hp 75
 maxhp 75
