@@ -6,7 +6,6 @@ alive 1
 monster 1
 move_type walk
 no_pick 1
-type 120
 face gardengnome.111
 animation gardengnome
 ac 1
