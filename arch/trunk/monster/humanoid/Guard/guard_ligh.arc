@@ -11,7 +11,6 @@ Wis 5
 see_invisible 1
 no_pick 1
 resist_magic 30
-
 sp 10
 maxsp 10
 Pow 1

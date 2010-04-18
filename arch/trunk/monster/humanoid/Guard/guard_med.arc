@@ -11,7 +11,6 @@ Wis 10
 see_invisible 1
 no_pick 1
 resist_magic 30
-
 reflect_missile 1
 hp 120
 maxhp 120

@@ -12,7 +12,6 @@ Wis 15
 see_invisible 1
 no_pick 1
 resist_magic 100
-
 unaggressive 1
 reflect_missile 1
 reflect_spell 1
