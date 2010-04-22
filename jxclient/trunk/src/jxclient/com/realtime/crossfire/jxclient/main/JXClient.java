@@ -64,6 +64,8 @@ import java.io.OutputStreamWriter;
 import java.io.UnsupportedEncodingException;
 import java.io.Writer;
 import java.lang.reflect.InvocationTargetException;
+import java.util.MissingResourceException;
+import java.util.ResourceBundle;
 import javax.swing.SwingUtilities;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
@@ -84,7 +86,8 @@ public class JXClient {
      * @param args The command line arguments.
      */
     public static void main(@NotNull final String[] args) {
-        System.out.println("JXClient - Crossfire Java Client");
+        final String buildNumber = getBuildNumber();
+        System.out.println("JXClient " + buildNumber + " - Crossfire Java Client");
         System.out.println("(C)2005 by Lauwenmark.");
         System.out.println("This software is placed under the GPL License");
         final Options options = new Options();
@@ -95,15 +98,29 @@ public class JXClient {
             System.exit(1);
             throw new AssertionError();
         }
-        new JXClient(options);
+        new JXClient(options, buildNumber);
+    }
+
+    /**
+     * Returns the build number as a string.
+     * @return the build number
+     */
+    @NotNull
+    private static String getBuildNumber() {
+        try {
+            return ResourceBundle.getBundle("build").getString("build.number");
+        } catch (final MissingResourceException e) {
+            return "unknown";
+        }
     }
 
     /**
      * The constructor of the class. This is where the main window is created.
      * Initialization of a JXCWindow is the only task performed here.
      * @param options the options
+     * @param buildNumber the client's build number
      */
-    private JXClient(@NotNull final Options options) {
+    private JXClient(@NotNull final Options options, @NotNull final String buildNumber) {
         try {
             final Writer debugProtocolOutputStreamWriter = openDebugStream(options.getDebugProtocolFilename());
             try {
@@ -114,7 +131,7 @@ public class JXClient {
                         final OptionManager optionManager = new OptionManager(options.getPrefs());
                         final MetaserverModel metaserverModel = new MetaserverModel();
                         final Object semaphoreRedraw = new Object();
-                        final CrossfireServerConnection server = new DefaultCrossfireServerConnection(semaphoreRedraw, debugProtocolOutputStreamWriter == null ? null : new DebugWriter(debugProtocolOutputStreamWriter));
+                        final CrossfireServerConnection server = new DefaultCrossfireServerConnection(semaphoreRedraw, debugProtocolOutputStreamWriter == null ? null : new DebugWriter(debugProtocolOutputStreamWriter), "JXClient " + buildNumber);
                         server.start();
                         try {
                             final GuiStateManager guiStateManager = new GuiStateManager(server);

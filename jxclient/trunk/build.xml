@@ -25,6 +25,7 @@
     <property name="src.jxclient" value="src/jxclient"/>
     <property name="src.test" value="src/test"/>
     <property name="build" value="build"/>
+    <property name="build.properties.dir" value="${build}/properties"/>
     <target name="compile" depends="compile-jxclient,compile-test"/>
     <target name="compile-jxclient">
         <delete dir="${build}/jxclient"/>
@@ -48,7 +49,7 @@
             <compilerarg value="-Xlint:unchecked"/>
         </javac>
     </target>
-    <target name="jar" depends="compile-jxclient,skin.prelude,skin.ragnorok">
+    <target name="jar" depends="compile-jxclient,skin.prelude,skin.ragnorok,update-build-properties">
         <jar destfile="jxclient.jar">
             <fileset dir="${build}/jxclient"/>
             <fileset dir="." includes="resource/application_icon.png"/>
@@ -60,6 +61,7 @@
             <fileset dir="." includes="resource/unknown.png"/>
             <fileset dir="${build}/skin.ragnorok"/>
             <fileset dir="${build}/skin.prelude"/>
+            <fileset dir="${build.properties.dir}" includes="build.properties"/>
             <manifest>
                 <attribute name="Main-Class" value="com.realtime.crossfire.jxclient.main.JXClient"/>
                 <attribute name="SplashScreen-Image" value="resource/splashscreen.png"/>
@@ -117,5 +119,11 @@
                 <pathelement path="${src.jxclient}"/>
             </sourcepath>
         </javadoc>
+    </target>
+    <target name="update-build-properties" description="Updates build.properties.">
+        <exec executable="svnversion" logError="true" outputproperty="build.number" failifexecutionfails="false"/>
+        <property name="build.number" value="unknown"/>
+        <mkdir dir="${build.properties.dir}"/>
+        <echoproperties destfile="${build.properties.dir}/build.properties" prefix="build.number" failonerror="true"/>
     </target>
 </project>
