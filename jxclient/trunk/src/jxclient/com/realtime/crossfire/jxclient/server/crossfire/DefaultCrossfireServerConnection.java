@@ -485,6 +485,12 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
     private final Object redrawSemaphore;
 
     /**
+     * The version information to send when connecting to the server.
+     */
+    @NotNull
+    private final String version;
+
+    /**
      * The appender to write protocol commands to. May be <code>null</code> to
      * not write anything.
      */
@@ -545,11 +551,14 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
      * updates and map view redraws
      * @param debugProtocol tf non-<code>null</code>, write all protocol
      * commands to this writer
+     * @param version the version information to send to the server when
+     * connecting
      * @throws IOException if an internal error occurs
      */
-    public DefaultCrossfireServerConnection(@NotNull final Object redrawSemaphore, @Nullable final DebugWriter debugProtocol) throws IOException {
+    public DefaultCrossfireServerConnection(@NotNull final Object redrawSemaphore, @Nullable final DebugWriter debugProtocol, @NotNull final String version) throws IOException {
         super(debugProtocol);
         this.redrawSemaphore = redrawSemaphore;
+        this.version = version;
         byteBuffer.order(ByteOrder.BIG_ENDIAN);
         this.debugProtocol = debugProtocol;
         addClientSocketListener(clientSocketListener);
@@ -816,7 +825,7 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
         fireNewMap();
 
         setClientSocketState(ClientSocketState.CONNECTING, ClientSocketState.VERSION);
-        sendVersion(1023, 1027, "JXClient Java Client Pegasus 0.1");
+        sendVersion(1023, 1027, version);
     }
 
     /**
