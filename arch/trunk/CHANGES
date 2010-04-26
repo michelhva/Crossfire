@@ -1,7 +1,9 @@
 Changes for SVN top of tree:
 ==============================================================================
 
-
+Add NPC_Gift_Box, a no-drop container that can be put in NPCs inventory to
+hold items they should be able to give away, but not drop on being killed.
+Brendan Lally 2010-04-26
 
 ==============================================================================
 Changes for 1.50.0
