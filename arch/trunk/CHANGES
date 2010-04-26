@@ -1,5 +1,9 @@
 Changes for SVN top of tree:
 
+Change AC of doors to make them easier to hit.  Doors in general should not
+be difficult to hit.
+MSW 2010-04-25
+
 Add a new subtype for the magic mouths so that the client does not get invalid
 (zero) type codes.  The magic mouth is a sign, but a very unique sign, so a
 new sign subtype is added just for the magic mouth.
