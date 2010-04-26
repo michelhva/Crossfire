@@ -1,0 +1,1212 @@
+arch map
+name testmap
+difficulty 5
+width 20
+height 10
+msg
+Created:  2010-03-22 Cavesomething
+Modified: 2010-03-30 Cavesomething
+endmsg
+end
+arch graymarble
+end
+arch graymarble
+y 1
+end
+arch apple
+y 1
+end
+arch graymarble
+y 2
+end
+arch apple
+y 2
+end
+arch graymarble
+y 3
+end
+arch apple
+y 3
+end
+arch graymarble
+y 4
+end
+arch apple
+y 4
+end
+arch graymarble
+y 5
+end
+arch apple
+y 5
+end
+arch graymarble
+y 6
+end
+arch apple
+y 6
+end
+arch graymarble
+y 7
+end
+arch apple
+y 7
+end
+arch graymarble
+y 8
+end
+arch graymarble
+y 9
+end
+arch charwoman
+y 9
+type 0
+stand_still 1
+arch event_say
+name test/quest_handling/marker.msg
+title Python
+slaying /python/dialog/npc_dialog.py
+end
+arch NPCGift
+arch carton_box_1
+name markers1
+arch marker
+name tres
+end
+arch marker
+name dos
+end
+arch marker
+name uno
+end
+end
+end
+arch carton_box_1
+name markers2
+arch marker
+name zwei
+end
+arch marker
+name eins
+end
+end
+end
+arch check_floor
+hp 1
+x 1
+arch event_trigger
+name testquest2 10-20>25
+title Python
+slaying /python/quests/QuestAdvance.py
+end
+end
+arch graymarble
+x 1
+end
+arch check_floor
+hp 1
+x 1
+y 1
+arch event_trigger
+name testquest2 10-20>25
+title Python
+slaying /python/quests/QuestAdvance.py
+end
+end
+arch graymarble
+x 1
+y 1
+end
+arch check_floor
+hp 1
+x 1
+y 2
+arch event_trigger
+name testquest2 10-20>25
+title Python
+slaying /python/quests/QuestAdvance.py
+end
+end
+arch graymarble
+x 1
+y 2
+end
+arch check_floor
+hp 1
+x 1
+y 3
+arch event_trigger
+name testquest2 10-20>25
+title Python
+slaying /python/quests/QuestAdvance.py
+end
+end
+arch graymarble
+x 1
+y 3
+end
+arch check_floor
+hp 1
+x 1
+y 4
+arch event_trigger
+name testquest2 10-20>25
+title Python
+slaying /python/quests/QuestAdvance.py
+end
+end
+arch graymarble
+x 1
+y 4
+end
+arch check_floor
+hp 1
+x 1
+y 5
+arch event_trigger
+name testquest2 10-20>25
+title Python
+slaying /python/quests/QuestAdvance.py
+end
+end
+arch graymarble
+x 1
+y 5
+end
+arch check_floor
+hp 1
+x 1
+y 6
+arch event_trigger
+name testquest2 10-20>25
+title Python
+slaying /python/quests/QuestAdvance.py
+end
+end
+arch graymarble
+x 1
+y 6
+end
+arch graymarble
+x 1
+y 7
+end
+arch graymarble
+x 1
+y 8
+end
+arch graymarble
+x 1
+y 9
+end
+arch sign
+msg
+Talk to the cleaning woman to get sets of markers, either marker set 1 or marker set 2
+Marker set 1 has 3 markers in, marker set2 has 2 markers in, you should get all of them.
+
+Demonstrates:
+givecontents working for markers.
+endmsg
+x 1
+y 9
+end
+arch graymarble
+x 2
+end
+arch broadsword
+name testquesttarget
+name_pl testquesttargets
+x 2
+arch event_pickup
+name testquest 0>30 10>20
+title Python
+slaying python/quests/QuestAdvance.py
+end
+arch event_drop
+name testquest 40
+title Python
+slaying /python/quests/QuestEssentialUntil.py
+end
+end
+arch graymarble
+x 2
+y 1
+end
+arch graymarble
+x 2
+y 2
+end
+arch graymarble
+x 2
+y 3
+end
+arch fatman
+x 2
+y 3
+random_movement 0
+arch event_say
+name test/quest_handling/testquest.msg
+title Python
+slaying python/dialog/npc_dialog.py
+end
+end
+arch graymarble
+x 2
+y 4
+end
+arch graymarble
+x 2
+y 5
+end
+arch sign
+msg
+Walk past this point and the apple quest will update if you have already been given it.
+
+Demonstrates:
+Use of event_trigger to monitor player progress in a map.
+endmsg
+x 2
+y 5
+end
+arch graymarble
+x 2
+y 6
+end
+arch bwall_1_1
+x 2
+y 6
+end
+arch graymarble
+x 2
+y 7
+end
+arch bwall_1_1
+x 2
+y 7
+end
+arch graymarble
+x 2
+y 8
+end
+arch bwall_1_1
+x 2
+y 8
+end
+arch graymarble
+x 2
+y 9
+end
+arch bwall_1_1
+x 2
+y 9
+end
+arch graymarble
+x 3
+end
+arch sign
+msg
+Picking up this sword will advance testquest, if you have already started it, or start it at a different stage if you haven't.
+After having picked up this sword, you won't be able to drop it until you reach stage 40 of testquest (when it is taken from you anyway). If you then reset this map and pick up a new sword, it is treated as start equipment and disappears when you drop it.
+
+
+Demonstrates:
+The use of events bound to items to:
+   Interact with quest progress.
+   Prevent the loss or trading of quest items
+endmsg
+x 3
+end
+arch graymarble
+x 3
+y 1
+end
+arch graymarble
+x 3
+y 2
+end
+arch graymarble
+x 3
+y 3
+end
+arch sign
+msg
+This man runs the speech script testquest.msg,
+speak to him and he will ask you to bring him the sword (testquest step 1)
+speak to him again, and he will remind you.
+
+If you pick up the sword and then speak to him, he will take it off you and advance to step 4
+if you drop the sword first, he will ask you to hand it over.
+
+If you speak to him after completing the quest, he congratulates you.
+endmsg
+x 3
+y 3
+end
+arch graymarble
+x 3
+y 4
+end
+arch graymarble
+x 3
+y 5
+end
+arch graymarble
+x 3
+y 6
+end
+arch mdoor_closed_1
+x 3
+y 6
+connected 4
+end
+arch graymarble
+x 3
+y 7
+end
+arch graymarble
+x 3
+y 8
+end
+arch graymarble
+x 3
+y 9
+end
+arch graymarble
+x 4
+end
+arch graymarble
+x 4
+y 1
+end
+arch graymarble
+x 4
+y 2
+end
+arch graymarble
+x 4
+y 3
+end
+arch graymarble
+x 4
+y 4
+end
+arch graymarble
+x 4
+y 5
+end
+arch graymarble
+x 4
+y 6
+end
+arch bwall_1_1
+x 4
+y 6
+end
+arch graymarble
+x 4
+y 7
+end
+arch bwall_1_1
+x 4
+y 7
+end
+arch graymarble
+x 4
+y 8
+end
+arch bwall_1_1
+x 4
+y 8
+end
+arch graymarble
+x 4
+y 9
+end
+arch bwall_1_1
+x 4
+y 9
+end
+arch graymarble
+x 5
+end
+arch graymarble
+x 5
+y 1
+end
+arch graymarble
+x 5
+y 2
+end
+arch graymarble
+x 5
+y 3
+end
+arch graymarble
+x 5
+y 4
+end
+arch graymarble
+x 5
+y 5
+end
+arch sign
+msg
+The old man uses connectiontest.msg
+
+Speak to him before starting testquest, he will give 74 gold (as many times as you like)
+Speak to him when testquest is in progress, he will give a biccie (once)
+speak to him at step 4 he will open the door
+
+Demonstrates
+giveitem money
+giveitem item
+connected values
+endmsg
+x 5
+y 5
+end
+arch graymarble
+x 5
+y 6
+end
+arch guildmaster
+x 5
+y 6
+arch event_say
+name test/quest_handling/connectiontest.msg
+title Python
+slaying python/dialog/npc_dialog.py
+end
+arch waybread
+name biccie
+end
+end
+arch graymarble
+x 5
+y 7
+end
+arch graymarble
+x 5
+y 8
+end
+arch graymarble
+x 5
+y 9
+end
+arch graymarble
+x 6
+end
+arch graymarble
+x 6
+y 1
+end
+arch graymarble
+x 6
+y 2
+end
+arch graymarble
+x 6
+y 3
+end
+arch graymarble
+x 6
+y 4
+end
+arch graymarble
+x 6
+y 5
+end
+arch graymarble
+x 6
+y 6
+end
+arch graymarble
+x 6
+y 7
+end
+arch graymarble
+x 6
+y 8
+end
+arch graymarble
+x 6
+y 9
+end
+arch graymarble
+x 7
+end
+arch graymarble
+x 7
+y 1
+end
+arch graymarble
+x 7
+y 2
+end
+arch graymarble
+x 7
+y 3
+end
+arch graymarble
+x 7
+y 4
+end
+arch graymarble
+x 7
+y 5
+end
+arch graymarble
+x 7
+y 6
+end
+arch graymarble
+x 7
+y 7
+end
+arch graymarble
+x 7
+y 8
+end
+arch graymarble
+x 7
+y 9
+end
+arch pirate
+x 7
+y 9
+type 0
+unaggressive 1
+stand_still 1
+arch event_say
+name event_say
+title Python
+slaying python/testmodules.py
+end
+end
+arch graymarble
+x 8
+end
+arch graymarble
+x 8
+y 1
+end
+arch graymarble
+x 8
+y 2
+end
+arch fatwoman
+x 8
+y 2
+type 0
+randomitems jail
+stand_still 1
+arch event_say
+name test/quest_handling/friendly.msg
+title Python
+slaying python/dialog/npc_dialog.py
+end
+end
+arch graymarble
+x 8
+y 3
+end
+arch graymarble
+x 8
+y 4
+end
+arch graymarble
+x 8
+y 5
+end
+arch graymarble
+x 8
+y 6
+end
+arch graymarble
+x 8
+y 7
+end
+arch graymarble
+x 8
+y 8
+end
+arch graymarble
+x 8
+y 9
+end
+arch graymarble
+x 9
+end
+arch graymarble
+x 9
+y 1
+end
+arch graymarble
+x 9
+y 2
+end
+arch sign
+msg
+The large woman uses $you and $me to provide the names of her and the player.
+If you say 'strong' she will check whether you are at level 10 or not.
+if you say 'crash' she will give you royal guards for your inventory.
+if you speak to her multiple times, and have more than 100 silver, she will take 12
+
+Demonstrates:
+use of level check
+abuse of giveitem
+takeitem used on money
+endmsg
+x 9
+y 2
+end
+arch graymarble
+x 9
+y 3
+end
+arch graymarble
+x 9
+y 4
+end
+arch graymarble
+x 9
+y 5
+end
+arch graymarble
+x 9
+y 6
+end
+arch graymarble
+x 9
+y 7
+end
+arch graymarble
+x 9
+y 8
+end
+arch graymarble
+x 9
+y 9
+end
+arch graymarble
+x 10
+end
+arch graymarble
+x 10
+y 1
+end
+arch graymarble
+x 10
+y 2
+end
+arch graymarble
+x 10
+y 3
+end
+arch graymarble
+x 10
+y 4
+end
+arch graymarble
+x 10
+y 5
+end
+arch graymarble
+x 10
+y 6
+end
+arch graymarble
+x 10
+y 7
+end
+arch graymarble
+x 10
+y 8
+end
+arch graymarble
+x 10
+y 9
+end
+arch graymarble
+x 11
+end
+arch graymarble
+x 11
+y 1
+end
+arch graymarble
+x 11
+y 2
+end
+arch graymarble
+x 11
+y 3
+end
+arch graymarble
+x 11
+y 4
+end
+arch graymarble
+x 11
+y 5
+end
+arch graymarble
+x 11
+y 6
+end
+arch graymarble
+x 11
+y 7
+end
+arch graymarble
+x 11
+y 8
+end
+arch graymarble
+x 11
+y 9
+end
+arch graymarble
+x 12
+end
+arch graymarble
+x 12
+y 1
+end
+arch graymarble
+x 12
+y 2
+end
+arch graymarble
+x 12
+y 3
+end
+arch graymarble
+x 12
+y 4
+end
+arch graymarble
+x 12
+y 5
+end
+arch graymarble
+x 12
+y 6
+end
+arch graymarble
+x 12
+y 7
+end
+arch graymarble
+x 12
+y 8
+end
+arch graymarble
+x 12
+y 9
+end
+arch gnome
+hp 5
+maxhp 5
+dam 1
+wc 0
+x 12
+y 9
+type 0
+attacktype 0
+unaggressive 1
+can_use_armour 0
+can_use_weapon 0
+stand_still 1
+arch event_say
+name test/quest_handling/cantkillme.msg
+title Python
+slaying python/dialog/npc_dialog.py
+end
+arch NPCGift
+arch dice
+name Furry dice
+type 0
+end
+arch pouch
+arch random_talisman
+end
+arch ring
+nrof 10
+end
+arch amulet
+end
+end
+end
+end
+arch graymarble
+x 13
+end
+arch graymarble
+x 13
+y 1
+end
+arch graymarble
+x 13
+y 2
+end
+arch graymarble
+x 13
+y 3
+end
+arch graymarble
+x 13
+y 4
+end
+arch graymarble
+x 13
+y 5
+end
+arch graymarble
+x 13
+y 6
+end
+arch graymarble
+x 13
+y 7
+end
+arch graymarble
+x 13
+y 8
+end
+arch graymarble
+x 13
+y 9
+end
+arch sign
+msg
+The gnome can give you either the contents of a pouch, or a couple of dice upon being asked nicely.
+His items are in the NPC_Gift_Box, so do not drop if he is killed.
+Demonstrates:
+givecontents
+NPC_Gift_Box
+the current issue with treasure list generation.
+endmsg
+x 13
+y 9
+end
+arch graymarble
+x 14
+end
+arch graymarble
+x 14
+y 1
+end
+arch graymarble
+x 14
+y 2
+end
+arch graymarble
+x 14
+y 3
+end
+arch graymarble
+x 14
+y 4
+end
+arch graymarble
+x 14
+y 5
+end
+arch graymarble
+x 14
+y 6
+end
+arch graymarble
+x 14
+y 7
+end
+arch graymarble
+x 14
+y 8
+end
+arch graymarble
+x 14
+y 9
+end
+arch graymarble
+x 15
+end
+arch graymarble
+x 15
+y 1
+end
+arch graymarble
+x 15
+y 1
+end
+arch beggar
+x 15
+y 1
+type 0
+stand_still 1
+arch event_say
+name test/quest_handling/bothquests.msg
+title Python
+slaying python/dialog/npc_dialog.py
+end
+arch crown
+name crown of win
+name_pl crowns of win
+end
+end
+arch graymarble
+x 15
+y 2
+end
+arch graymarble
+x 15
+y 3
+end
+arch graymarble
+x 15
+y 4
+end
+arch graymarble
+x 15
+y 5
+end
+arch graymarble
+x 15
+y 6
+end
+arch sign
+msg
+The dwarf asks for apples, if you bring him 6, you get one reward, if you thanked, if you bring him all 7, then you get 2 gold as well.
+If before bringing the apples back to the dwarf, you speak to him again, you get a mcguffin, this is undroppable until the quest is
+completed, after which point it disappears when dropped.
+
+Demonstrates:
+Quests with multiple end states and differing rewards.
+NPCs giving undroppable items to players.
+endmsg
+x 15
+y 6
+end
+arch graymarble
+x 15
+y 7
+end
+arch graymarble
+x 15
+y 8
+end
+arch graymarble
+x 15
+y 9
+end
+arch graymarble
+x 16
+end
+arch graymarble
+x 16
+y 1
+end
+arch sign
+msg
+The beggar gives you the crown of win if both quests have been completed.
+
+demonstrates:
+stacking quest checks to combine rewards
+endmsg
+x 16
+y 1
+end
+arch graymarble
+x 16
+y 2
+end
+arch graymarble
+x 16
+y 3
+end
+arch graymarble
+x 16
+y 4
+end
+arch graymarble
+x 16
+y 5
+end
+arch graymarble
+x 16
+y 6
+end
+arch dwarf
+x 16
+y 6
+type 0
+stand_still 1
+arch coffee_empty
+name mcguffin
+name_pl mcguffins
+arch event_drop
+name testquest2 30
+title Python
+slaying /python/quests/QuestEssentialUntil.py
+end
+end
+arch event_say
+name test/quest_handling/apples.msg
+title Python
+slaying python/dialog/npc_dialog.py
+end
+end
+arch graymarble
+x 16
+y 7
+end
+arch graymarble
+x 16
+y 8
+end
+arch graymarble
+x 16
+y 9
+end
+arch graymarble
+x 17
+end
+arch graymarble
+x 17
+y 1
+end
+arch graymarble
+x 17
+y 2
+end
+arch graymarble
+x 17
+y 3
+end
+arch graymarble
+x 17
+y 4
+end
+arch graymarble
+x 17
+y 5
+end
+arch graymarble
+x 17
+y 6
+end
+arch graymarble
+x 17
+y 7
+end
+arch graymarble
+x 17
+y 8
+end
+arch graymarble
+x 17
+y 9
+end
+arch graymarble
+x 18
+end
+arch graymarble
+x 18
+y 1
+end
+arch graymarble
+x 18
+y 2
+end
+arch graymarble
+x 18
+y 3
+end
+arch graymarble
+x 18
+y 4
+end
+arch graymarble
+x 18
+y 5
+end
+arch graymarble
+x 18
+y 6
+end
+arch graymarble
+x 18
+y 7
+end
+arch graymarble
+x 18
+y 8
+end
+arch graymarble
+x 18
+y 9
+end
+arch graymarble
+x 19
+end
+arch graymarble
+x 19
+y 1
+end
+arch graymarble
+x 19
+y 2
+end
+arch graymarble
+x 19
+y 3
+end
+arch graymarble
+x 19
+y 4
+end
+arch graymarble
+x 19
+y 5
+end
+arch graymarble
+x 19
+y 6
+end
+arch graymarble
+x 19
+y 7
+end
+arch graymarble
+x 19
+y 8
+end
+arch sign
+msg
+Speaking to the farmer records the time. Speaking to him again within 10 minutes resets the time.
+Speaking to him more than 20 minutes later resets the time.
+Speaking to him between 10 and 20 minutes after speaking to him the first time gets you a biccie.
+Demonstrates:
+marktime
+age
+endmsg
+x 19
+y 8
+end
+arch graymarble
+x 19
+y 9
+end
+arch farmer
+x 19
+y 9
+arch event_say
+name test/quest_handling/timetest.msg
+title Python
+slaying python/dialog/npc_dialog.py
+end
+arch waybread
+name biccie
+end
+end
