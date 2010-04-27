@@ -3488,7 +3488,7 @@ friendly 1
 arch event_say
 name scorn/taverns/hintson.msg
 title Python
-slaying /python/misc/npc_dialog.py
+slaying /python/dialog/npc_dialog.py
 end
 end
 arch woodfloor

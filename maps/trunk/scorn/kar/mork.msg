@@ -3,18 +3,18 @@
   "rules": [
   {
   "match" : ["gork"],
-  "pre" : [["can_get_key","1"]],
-  "post" : [["mork_speak","gork"]],
+  "pre" : [["token", "can_get_key","1"]],
+  "post" : [["settoken", "mork_speak","gork"]],
   "msg" : ["You know Gork?  You friend of Gork?"]
   }, {
   "match" : ["yes","friend"],
-  "pre" : [["can_get_key","1"],["mork_speak","gork"]],
-  "post" : [["mork_speak","key"]],
+  "pre" : [["token", "can_get_key","1"],["token", "mork_speak","gork"]],
+  "post" : [["settoken", "mork_speak","key"]],
   "msg" : ["I bet Gork send you to get key.  Did he?"]
   }, {
   "match" : ["key","send","yes"],
-  "pre" : [["can_get_key","1"],["mork_speak","key"]],
-  "post" : [["mork_speak",""],["can_get_key","0"]],
+  "pre" : [["token", "can_get_key","1"],["token", "mork_speak","key"]],
+  "post" : [["settoken", "mork_speak",""],["settoken", "can_get_key","0"],["connection", "9"]],
   "msg" : ["Ok, I give you key.  Here, it in corner."],
   "connected" : 9
   }, {
