@@ -5,7 +5,7 @@ width 20
 height 10
 msg
 Created:  2010-03-22 Cavesomething
-Modified: 2010-03-30 Cavesomething
+Modified: 2010-04-27 Cavesomething
 endmsg
 end
 arch graymarble
@@ -1150,7 +1150,25 @@ end
 arch graymarble
 x 19
 end
+arch dancing_girl
+x 19
+type 0
+stand_still 1
+arch event_say
+name test/quest_handling/girlmain.msg
+title Python
+slaying /python/dialog/npc_dialog.py
+end
+end
 arch graymarble
+x 19
+y 1
+end
+arch sign
+msg
+This dancing girl uses rules from multiple files that include each other.
+say a number between 1 and 6, and you will get a response.
+endmsg
 x 19
 y 1
 end
