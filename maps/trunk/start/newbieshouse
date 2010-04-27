@@ -3287,7 +3287,7 @@ stand_still 1
 arch event_say
 name start/sigmund.msg
 title Python
-slaying /python/misc/npc_dialog.py
+slaying /python/dialog/npc_dialog.py
 end
 end
 arch dungeon_magic

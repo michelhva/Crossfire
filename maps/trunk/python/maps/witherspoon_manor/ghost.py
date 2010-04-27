@@ -98,36 +98,36 @@ def do_dialog():
 	# If you ever change this key, change the value in tomb.py too!
 	speech = Dialog(Crossfire.WhoIsActivator(), Crossfire.WhoAmI(), "witherspoon_ghost")
 
-	prer = [["witherspoon_ghost","0"]]
-	postr = [["witherspoon_ghost", "explain"]]
+	prer = [["token","witherspoon_ghost","0"]]
+	postr = [["settoken","witherspoon_ghost", "explain"]]
 	rmsg = ["I was killed by surprise, and ever since I'm stuck here.\n\n"
 	"If I could see my body, I could really understand I'm dead and I could rest in peace.\n\n"
 	"Could you find my body, please?"
 	]
 	speech.addRule(DialogRule(["help","yes","how"], prer, rmsg, postr),0)
 
-	prer = [["witherspoon_ghost","explain"]]
-	postr = [["witherspoon_ghost", "wait"]]
+	prer = [["token","witherspoon_ghost","explain"]]
+	postr = [["settoken","witherspoon_ghost", "wait"]]
 	rmsg = ["I was walking near a lake west of Scorn, so maybe my body is buried here."]
 	speech.addRule(DialogRule(["where","location"], prer, rmsg, postr),1)
 
-	prer = [["witherspoon_ghost","explain"]]
-	postr = [["witherspoon_ghost", "*"]]
+	prer = [["token","witherspoon_ghost","explain"]]
+	postr = [["settoken","witherspoon_ghost", "*"]]
 	rmsg = ["Please, go find my body...", "Please, I need my body to rest in peace..."]
 	speech.addRule(DialogRule(["*"], prer, rmsg, postr),2)
 
-	prer = [["witherspoon_ghost","wait"]]
-	postr = [["witherspoon_ghost", "*"]]
+	prer = [["token","witherspoon_ghost","wait"]]
+	postr = [["settoken","witherspoon_ghost", "*"]]
 	rmsg = ["Please, go find my body.\n\nIt should be near the lake west of Scorn...", "Did you find my body yet? No?\n\nThen please, go search for it, west of Scorn there is a lake..."]
 	speech.addRule(DialogRule(["*"], prer, rmsg, postr, check_body),3)
 
-	prer = [["witherspoon_ghost","wait"]]
-	postr = [["witherspoon_ghost", "0"]]
+	prer = [["token","witherspoon_ghost","wait"]]
+	postr = [["settoken","witherspoon_ghost", "0"]]
 	rmsg = ["Thanks, you found my body!"]
 	speech.addRule(DialogRule(["*"], prer, rmsg, postr, found_body),4)
 
-	prer = [["witherspoon_ghost","*"]]
-	postr = [["witherspoon_ghost", "*"]]
+	prer = [["token","witherspoon_ghost","*"]]
+	postr = [["settoken","witherspoon_ghost", "*"]]
 	rmsg = ["Please help me....", "Heeeeeeeelp...", "Pleaseeeee..."]
 	speech.addRule(DialogRule(["*"], prer, rmsg, postr, can_talk),5)
 
