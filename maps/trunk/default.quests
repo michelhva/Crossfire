@@ -488,3 +488,208 @@ I have reunited Eswald with Esmeralda, and his coffee is now of the highest qual
 end_description
 end_step
 end_quest
+
+quest scorn/ScornHero
+title The Hero of Scorn
+description
+Be pronounced Hero of Scorn
+end_description
+restart 0
+step 10
+description
+I have discovered that the king is the only one who can declare me a hero. I should try speaking to someone at his court, and seek to win favour there.
+end_description
+end_step
+step 40
+finishes_quest
+description
+I have found another way through the gate.
+end_description
+end_step
+step 50
+finishes_quest
+description
+I have been pronounced the 'Hero of Scorn'
+end_description
+end_step
+end_quest
+
+quest scorn/CityGate
+title Getting out of scorn
+description
+The main gates of the city of scorn are locked, and the guards won't let you past.
+end_description
+restart 0
+step 5
+description
+I need to find a way to be allowed through the gates of scorn.
+end_description
+end_step
+step 10
+description
+In order to be let past I need to get a port pass, find the password, or become the hero of scorn. Perhaps one of the guards can give me some advice on how to do these things.
+end_description
+end_step
+step 20
+finishes_quest
+description
+I have been permitted to pass through scorn city gate.
+end_description
+end_step
+end_quest
+
+quest scorn/PortGate
+title Down to the docks
+description
+There is a gate separating the main part of scorn from the docks. It is closed and the guards won't let you past.
+end_description
+restart 0
+step 5
+description
+I need to find a way to be permitted beyond the gate.
+end_description
+end_step
+step 10
+description
+To pass through the gates I need to get a port pass, find the password or become the hero of scorn. Perhaps one of the guards will tell me how I can do one of those things.
+end_description
+end_step
+step 20
+finishes_quest
+description
+I have been granted passage through scorn port gate.
+end_description
+end_step
+end_quest
+
+quest scorn/GatePass
+title Gate Pass
+description
+Acquire a gate pass to be allowed out of the main gate of scorn.
+end_description
+restart 0
+step 10
+description
+The guards told me that I could acquire a gate pass from the Office for Gate Passes, near the port gates. I should try asking there.
+end_description
+end_step
+step 20
+finishes_quest
+description
+I have purchased a gate pass to allow me out of the city.
+end_description
+end_step
+step 30
+finishes_quest
+description
+I have found a gate pass that should allow me access beyond the city gates.
+description
+end_step
+step 40
+finishes_quest
+description
+I have found another way through the city gates.
+end_description
+end_step
+end_quest
+
+quest scorn/PortPass
+title Port Pass
+description
+Acquire a port pass to be allowed into Scorn's docks.
+end_description
+restart 0
+step 10
+description
+The guards told me that I could acquire a port pass from the Office for Gate Passes. I should try asking there.
+end_description
+end_step
+step 20
+finishes_quest
+description
+I have purchased a port pass to allow me into Scorn docks
+end_description
+end_step
+step 30
+finishes_quest
+description
+I have found a port pass that should allow me access to Scorn Docks
+description
+end_step
+step 40
+finishes_quest
+description
+I have found another way through the gate that leads to Scorn Docks.
+end_description
+end_step
+end_quest
+
+quest scorn/GatePassword
+title Scorn Password
+description
+Discover the password that will permit passage through the gates in Scorn.
+end_description
+restart 0
+step 10
+description
+The guards have told me that there is a password, just not what it is, I should keep alert for any clues as to what it might be.
+end_description
+end_step
+step 20
+description
+I found some graffiti on the wall of goth's tavern, which claimed that the gate Password was "Chain"
+end_description
+end_step
+step 30
+finishes_quest
+description
+I have given the password, and been permitted through the gate.
+end_description
+end_step
+step 40
+finishes_quest
+description
+I have found another way through the gate.
+end_description
+end_step
+end_quest
+
+quest scorn/PassClerk
+title The Grumpy Office Clerk
+description
+The clerk at the office of passes is very grumpy, and not serving anyone.
+end_description
+restart 0
+step 10
+description
+I have spoken to the clerk at the office of passes, he was in a foul mood and not prepared to help me, maybe one of the guards nearby will know what is wrong with him.
+end_description
+end_step
+step 20
+description
+I have spoken to one of the guards, they suggested that the clerk, Milton, may have gone too long without getting any coffee.
+end_description
+end_step
+step 30
+description
+Milton asked me to get him some coffee from one of the coffee houses in town, he refuses to drink foreign coffee or anything not made by a proper coffee house.
+end_description
+end_step
+step 40
+description
+I brought Milton some coffee from a local cafe, which he promptly declared to be terrible. From the smell of it he may have a point.
+end_description
+end_step
+step 50
+finishes_quest
+description
+I brought Milton some coffee that met his exacting standards, and he will now sell me passes. He is still acting as though he is only doing this as a favour to me rather than as part of his job.
+end_description
+end_step
+step 60
+finishes_quest
+description
+Milton was delighted with the quality of the coffee I provided him with, he not only has agreed to sell me passes, but has offered me a discount.
+end_description
+end_step
+end_quest

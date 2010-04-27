@@ -5021,6 +5021,16 @@ arch woodfloor
 x 23
 y 21
 end
+arch check_floor
+hp 1
+x 23
+y 22
+arch event_trigger
+name scorn/GatePassword 0-10>20
+title Python
+slaying /python/dialog/QuestAdvance.py
+end
+end
 arch magic_mouth
 msg
 You see some graffiti on the wall.

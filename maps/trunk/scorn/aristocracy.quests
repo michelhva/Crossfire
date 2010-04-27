@@ -1,0 +1,26 @@
+
+quest scorn/ScornHero
+title The Hero of Scorn
+description
+Be pronounced Hero of Scorn
+end_description
+restart 0
+step 10
+description
+I have discovered that the king is the only one who can declare me a hero. I should try speaking to someone at his court, and seek to win favour there.
+end_description
+end_step
+step 40
+finishes_quest
+description
+I have found another way through the gate.
+end_description
+end_step
+step 50
+finishes_quest
+description
+I have been pronounced the 'Hero of Scorn'
+end_description
+end_step
+end_quest
+
