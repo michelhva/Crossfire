@@ -8,7 +8,7 @@ enter_x 2
 enter_y 1
 msg
 Created:  1994-10-19
-Modified: 2009-07-12 Andreas Kirschbaum
+Modified: 2010-03-30 Cavesomething
 endmsg
 end
 arch grass
@@ -2705,6 +2705,11 @@ x 18
 y 16
 value 800
 identified 1
+arch event_pickup
+name scorn/GatePass 0-10>30
+title Python
+slaying /python/dialog/QuestAdvance.py
+end
 end
 arch earthwall
 x 18
