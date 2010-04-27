@@ -8,7 +8,7 @@ enter_x 6
 enter_y 1
 msg
 Created:  1993-10-15
-Modified: 2008-11-15 Rick Tanner
+Modified: 2010-03-25 Cavesomething
 endmsg
 end
 arch dirtfloor
@@ -109,21 +109,9 @@ arch dirtfloor
 x 1
 y 1
 end
-arch key2
-name gorks key
-slaying mork
-x 1
-y 1
-end
 arch dirtfloor
 x 1
 y 2
-end
-arch gate_closed_1
-x 1
-y 2
-speed 0.500000
-connected 9
 end
 arch dirtfloor
 x 1
@@ -213,15 +201,7 @@ arch dirtfloor
 x 2
 y 1
 end
-arch timberwall_2_1_1
-x 2
-y 1
-end
 arch dirtfloor
-x 2
-y 2
-end
-arch timberwall_1_2
 x 2
 y 2
 end
@@ -540,43 +520,12 @@ arch timberwall_1_3
 x 5
 y 8
 end
-arch magic_ear
-msg
-@match key
-You hear a well-oiled door open.
-endmsg
-x 5
-y 9
-connected 9
-arch event_say
-title Python
-slaying /python/misc/doNothing.py
-end
-end
 arch dirtfloor
 x 5
 y 9
 end
 arch giant
 name Mork
-msg
-@match [Hh]ello
-Geesh, kill all my friends, that's not very nice.
-Where did you learn your manners?
-@match friends
-They were just my pals.
-@match pals
-I'm tired of talking to you, you racist...
-GO AWAY!
-@match [Gg]ork
-You know Gork?  You friend of Gork?
-@match [Yy]es
-I bet Gork send you to get key.  Did he?
-@match [Ss]end
-Ok, I give you key.  Here, it in corner.
-@match *
-Leave me alone... <grumble>
-endmsg
 hp 1250
 maxhp 1250
 exp 1
@@ -592,6 +541,18 @@ arch event_say
 name scorn/kar/mork.msg
 title Python
 slaying /python/dialog/npc_dialog.py
+end
+arch NPCGift
+arch key2
+name gorks key
+name_pl gorks keys
+slaying mork
+arch event_drop
+name scorn/GorksTreasure 50
+title Python
+slaying /python/dialog/QuestEssentialUntil.py
+end
+end
 end
 end
 arch dirtfloor
@@ -1196,8 +1157,10 @@ x 11
 y 8
 end
 arch madman
+name Mindy
 x 11
 y 8
+type 0
 end
 arch dirtfloor
 x 11
