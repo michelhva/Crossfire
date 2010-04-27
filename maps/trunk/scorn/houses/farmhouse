@@ -9,6 +9,7 @@ enter_x 11
 enter_y 9
 msg
 Created:  2003-05-03
+Modified: 2010-03-31 Cavesomething
 endmsg
 end
 arch grass
@@ -374,41 +375,41 @@ arch woodfloor2
 x 3
 y 6
 end
-arch check_inv
-slaying scornfarmbandithead
-x 3
-y 6
-connected 4
-end
-arch magic_mouth
-msg
-Farmer's wife says:
-Thanks for saving us from Guuh and his bandits!
-You may take whatever you wish from our treasure room.
-endmsg
-food 1
-x 3
-y 7
-connected 4
-move_on 0
-end
 arch woodfloor2
 x 3
 y 7
 end
 arch fatwoman
-name Farmer's wife
-msg
-@match *
-Guuh, the bandits' leader, has been troubling us for a long time.
-If you can kill him and bring his head here, I will give you a reward.
-endmsg
+name June the farmer's wife
 x 3
 y 7
+type 0
 monster 0
 friendly 1
 unaggressive 0
 stand_still 1
+arch NPCGift
+arch key2
+name Farmer's key
+name_pl Farmer's keys
+slaying scornfarmkey
+arch event_drop
+name scorn/TerrysFarm 60
+title Python
+slaying /python/dialog/QuestEssentialUntil.py
+end
+end
+end
+arch event_say
+name scorn/houses/terrys_wife.msg
+title Python
+slaying /python/dialog/npc_dialog.py
+end
+arch event_death
+name scorn/TerrysFarm 0-50>70
+title Python
+slaying /python/dialog/QuestAdvance.py
+end
 end
 arch woodfloor2
 x 3
@@ -486,21 +487,9 @@ arch woodfloor2
 x 4
 y 6
 end
-arch check_inv
-slaying scornfarmbandithead
-x 4
-y 6
-connected 4
-end
 arch woodfloor2
 x 4
 y 7
-end
-arch check_inv
-slaying scornfarmbandithead
-x 4
-y 7
-connected 4
 end
 arch woodfloor2
 x 4
@@ -603,13 +592,6 @@ x 5
 y 8
 end
 arch table_3
-x 5
-y 8
-end
-arch key2
-name Farmer's key
-name_pl Farmer's keys
-slaying scornfarmkey
 x 5
 y 8
 end
@@ -847,18 +829,6 @@ y 6
 arch carrot
 end
 end
-arch magic_mouth
-msg
-Terry the farmer says:
-Brave adventurer!
-A gang of bandits have broken into our storehouse.
-Please help us save our livestock!
-endmsg
-x 8
-y 7
-connected 7
-move_on 0
-end
 arch woodfloor2
 x 8
 y 7
@@ -876,6 +846,16 @@ monster 0
 friendly 1
 unaggressive 0
 stand_still 1
+arch event_say
+name scorn/houses/terry.msg
+title Python
+slaying /python/dialog/npc_dialog.py
+end
+arch event_death
+name scorn/TerrysFarm 0-50>70
+title Python
+slaying /python/dialog/QuestAdvance.py
+end
 end
 arch woodfloor2
 x 8
@@ -958,13 +938,6 @@ end
 arch woodfloor2
 x 9
 y 7
-end
-arch check_inv
-slaying scornfarmbandithead
-x 9
-y 7
-last_sp 0
-connected 7
 end
 arch woodfloor2
 x 9
@@ -1191,20 +1164,6 @@ end
 arch woodfloor2
 x 12
 y 2
-end
-arch slave
-name Farmer's servant
-msg
-@match *
-Be careful, the leader of the Bandits is dangerous.
-You should be at least level 5 to fight him.
-endmsg
-x 12
-y 2
-monster 0
-friendly 1
-unaggressive 0
-stand_still 1
 end
 arch woodfloor2
 x 12
@@ -2226,6 +2185,11 @@ msg
 Blood-stained troll head, still drooling from greed
 endmsg
 face head.111
+arch event_drop
+name scorn/TerrysFarm 60
+title Python
+slaying /python/dialog/QuestEssentialUntil.py
+end
 end
 arch big_club
 name Guuh's club
@@ -2240,6 +2204,11 @@ name_pl dead chickens
 end
 arch goldcoin
 nrof 50
+end
+arch event_death
+name scorn/TerrysFarm 30-40>50
+title Python
+slaying /python/dialog/QuestAdvance.py
 end
 end
 arch pstone_1
