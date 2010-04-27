@@ -28,18 +28,23 @@
   "msg" : ["Mork live in tower.  Mork big, Mork friend."]
   }, {
   "match" : ["share","treasure"],
+  "pre" : [["quest", "scorn/GorksTreasure","30"]],
+  "post" : [["settoken", "gork_speak","key"]],
+  "msg" : ["Mork gave you key to open treasure door? Oh well, Gork assume Gork's friend knows what he is doing."]
+  }, {
+  "match" : ["share","treasure"],
   "pre" : [["token", "gork_speak","treasure"]],
-  "post" : [["settoken","gork_speak","key"],["settoken","can_get_key","1"]],
+  "post" : [["settoken", "gork_speak","key"],["quest", "scorn/GorksTreasure","20"]],
   "msg" : ["Only Gork and Mork can open treasure door."]
   }, {
   "match" : ["crush","door","open","treasure"],
-  "pre" : [["token","gork_speak","hoard","key"]],
-  "post" : [["settoken","gork_speak","pulp"]],
+  "pre" : [["token", "gork_speak","hoard","key"]],
+  "post" : [["settoken", "gork_speak","pulp"]],
   "msg" : ["Gurrr... Gork beat you to pulp!"]
   }, {
   "match" : ["*"],
   "pre" : [],
-  "post": [["settoken","gork_speak","*"]],
+  "post": [["settoken", "gork_speak","*"]],
   "msg" : ["Gork kill you!"]
   }
 ]}

@@ -7,7 +7,7 @@ height 14
 enter_x 6
 enter_y 6
 msg
-Modified: 2008-12-21 Rick Tanner
+Modified: 2010-03-26 Cavesomething
 endmsg
 end
 arch cobblestones2
@@ -281,6 +281,15 @@ end
 arch dwall_1_2
 x 5
 y 7
+end
+arch check_floor
+x 5
+y 8
+arch event_trigger
+name scorn/GorksTreasure 40>50
+title Python
+slaying /python/dialog/QuestAdvance.py
+end
 end
 arch cobblestones2
 x 5
@@ -579,16 +588,7 @@ y 8
 end
 arch troll
 msg
-@match [Hh]ello
-Youse want Gork's hoards?  I crush you...
-@match [Gg]ork|[Hh]oard*
-Gork not like you...  I not as nice as Mork.
-@match [Mm]ork
-Mork be Gork's friend.  Mork live in tower.
-@match [Ff]riend
-Mork share Gork's treasure.
-@match [Tt]reasure
-Only Gork can open treasure door.
+
 endmsg
 x 9
 y 8
