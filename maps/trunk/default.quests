@@ -120,3 +120,29 @@ description
 end_description
 end_step
 end_quest
+
+quest scorn/smith/customarmour
+title Custom Armour
+restart 1
+step 10
+description
+I have placed an order with the smith in Scorn Armour Shop for a custom eyeshield. He promised it would be ready by this time tomorrow.
+end_description
+end_step
+step 20
+description
+I have placed an order with the smith in Scorn Armour Shop for a custom dragon shield. He promised it would be ready by this time tomorrow.
+end_description
+end_step
+step 30
+description
+I have placed an order with the smith in Scorn Armour Shop for a suit of bespoke dragon mail. He promised it would be ready by this time tomorrow.
+end_description
+end_step
+step 40
+finishes_quest
+description
+I have collected my new armour from the smith.
+end_description
+end_step
+end_quest
