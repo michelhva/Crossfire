@@ -3,7 +3,7 @@
   "rules": [
   {
   "match" : ["*"],
-  "pre" : [["age", "tenminutes", "0", "0", "0", "80", "0"]],
+  "pre" : [["age", "tenminutes", "0", "0", "0", "0", "20"]],
   "post": [["marktime", "tenminutes"]],
   "msg" : ["Oh no, you waited too long, and I got bored, let's try again shall we? Speak to me again in 10 minutes"]
   },{
