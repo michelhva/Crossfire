@@ -1,6 +1,12 @@
 Changes for SVN top of tree:
 ==============================================================================
 
+Change the names of dragon scales and dragon mail to be red dragon
+scales/mail, this makes the naming consistant with green/blue/orange/etc
+dragon stuff. The arch names are not changed, so existing items will inherit
+the name change smoothly unless they have set a custom name.
+Brendan Lally 2010-04-27
+
 Add NPC_Gift_Box, a no-drop container that can be put in NPCs inventory to
 hold items they should be able to give away, but not drop on being killed.
 Brendan Lally 2010-04-26
