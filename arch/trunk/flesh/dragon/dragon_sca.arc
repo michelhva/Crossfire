@@ -1,10 +1,10 @@
 Object dragon_scale
-name dragon scale
+name red dragon scale
 nrof 1
 type 73
 face dragon_sca.111
 weight 25000
-name_pl dragon scales
+name_pl red dragon scales
 client_type 627
 end
 Object blue_dragon_scale
