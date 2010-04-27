@@ -26,6 +26,9 @@
 
 include darcap/darcap.quests
 
+include scorn/scorn.quests
+
 include test/test.quests
 
-include scorn/scorn.quests
+include start/start.quests
+

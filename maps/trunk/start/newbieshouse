@@ -10,7 +10,7 @@ enter_x 9
 enter_y 4
 msg
 Created:  2003-07-31 Tchize
-Modified: 2008-12-02 Rick Tanner
+Modified: 2010-03-26 Cavesomething
 endmsg
 end
 arch dungeon_magic
@@ -3314,6 +3314,16 @@ arch wwall_1_2
 x 11
 y 9
 end
+arch check_floor
+hp 1
+x 11
+y 10
+arch event_trigger
+name tutorial/keys 0>10
+title Python
+slaying /python/dialog/QuestAdvance.py
+end
+end
 arch dungeon_magic
 x 11
 y 10
@@ -4297,6 +4307,11 @@ arch random_wealth
 end
 arch random_food
 end
+arch event_apply
+name tutorial/keys 40>50
+title Python
+slaying /python/dialog/QuestAdvance.py
+end
 end
 arch dungeon_magic
 x 14
@@ -4607,6 +4622,11 @@ Use this key to open the locked door in the training house.
 endmsg
 x 15
 y 5
+arch event_drop
+name tutorial/keys 50
+title Python
+slaying /python/dialog/QuestEssentialUntil.py
+end
 end
 arch dungeon_magic
 x 15
@@ -4930,6 +4950,16 @@ slaying open_door
 msg
 Use this key to open the locked door in the training house.
 endmsg
+arch event_drop
+name tutorial/keys 50
+title Python
+slaying /python/dialog/QuestEssentialUntil.py
+end
+arch event_pickup
+name tutorial/keys 30>40
+title Python
+slaying /python/dialog/QuestAdvance.py
+end
 end
 end
 arch dungeon_magic
@@ -4947,6 +4977,16 @@ end
 arch woodfloor2
 x 16
 y 5
+end
+arch check_floor
+hp 1
+x 16
+y 6
+arch event_trigger
+name tutorial/keys 20>30
+title Python
+slaying /python/dialog/QuestAdvance.py
+end
 end
 arch dungeon_magic
 x 16
@@ -4968,6 +5008,16 @@ end
 arch woodfloor2
 x 16
 y 7
+end
+arch check_floor
+hp 1
+x 16
+y 8
+arch event_trigger
+name tutorial/keys 10>20
+title Python
+slaying /python/dialog/QuestAdvance.py
+end
 end
 arch dungeon_magic
 x 16
