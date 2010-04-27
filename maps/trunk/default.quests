@@ -418,3 +418,73 @@ I have opened the final door, I should open the chest and claim my reward.
 end_description
 end_step
 end_quest
+
+quest scorn/CoffeeGoose
+title The Special Goose Chase
+description
+Return a goose called Esmerelda to its rightful owner.
+end_description
+restart 0
+step 10
+description
+I have just drunk what must be the worst cup of coffee I have ever tasted, I should complain to the manager.
+end_description
+end_step
+step 15
+description
+I provided a cup of Eswald's coffee to the clerk at the Office of Passes, who declared it to be the worst coffee he had ever tasted. it seems like something is wrong with Eswald's coffee.
+end_description
+end_step
+step 20
+description
+Eswald told me that the quality of his coffee has dropped dramatically since his goose, Esmeralda, went missing. He assures me that if I return her, that he will be able to brew his world-famous coffee to its customary quality once again.
+end_description
+end_step
+step 30
+description
+I spoke to Fran over at the Barking Mule, she told me that Mark had stolen a goose, I wonder if it is the goose that Eswald is looking for?
+end_description
+end_step
+step 40
+description
+I found Mark in Goth's Tavern, he admitted to stealing Esmeralda, and to hiding him in Amy's house.
+end_description
+end_step
+step 45
+description
+I spoke to Amy at her house, whilst I couldn't find the goose there, there was a locked door that I couldn't get past. Amy told me Mark had the key.
+end_description
+end_step
+step 47
+description
+I spoke to Mark at Goth's Tavern, he told me that the key to the back room of Amy's house was at Swabbie's house
+I should say 'mumblypeg' to chancy and he will fetch the key for me.
+end_description
+end_step
+step 50
+description
+I have recovered the key to the back door of Amy's house.
+end_description
+end_step
+step 60
+description
+I followed a sheep called Chancy who led me to a key, I wonder want it unlocks?
+end_description
+end_step
+step 70
+description
+I have used Mark's key to open the door in Amy's house, Esmeralda should be behind here somewhere.
+end_description
+end_step
+step 90
+description
+I have found Esmeralda
+end_description.
+end_step
+step 100
+finishes_quest
+description
+I have reunited Eswald with Esmeralda, and his coffee is now of the highest quality once more.
+end_description
+end_step
+end_quest

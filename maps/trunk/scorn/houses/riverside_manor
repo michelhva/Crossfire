@@ -1653,6 +1653,16 @@ face goose.131
 animation goose
 x 9
 y 19
+arch event_pickup
+name scorn/CoffeeGoose 20-80>90
+title Python
+slaying /python/dialog/QuestAdvance.py
+end
+arch event_drop
+name scorn/CoffeeGoose 100
+title Python
+slaying /python/dialog/QuestEssentialUntil.py
+end
 end
 arch grass
 x 9
@@ -1950,14 +1960,14 @@ arch woodfloor
 x 11
 y 19
 end
+arch table_3
+x 11
+y 19
+end
 arch key2
 name apartment key
 name_pl apartment keys
 slaying hovel_key
-x 11
-y 19
-end
-arch table_3
 x 11
 y 19
 end
@@ -2233,6 +2243,16 @@ end
 arch woodfloor
 x 13
 y 20
+end
+arch check_floor
+hp 1
+x 13
+y 21
+arch event_trigger
+name scorn/CoffeeGoose 50>70
+title Python
+slaying /python/dialog/QuestAdvance.py
+end
 end
 arch woodfloor
 x 13

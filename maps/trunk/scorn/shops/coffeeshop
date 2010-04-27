@@ -8,7 +8,7 @@ enter_x 4
 enter_y 8
 msg
 Created:  2003-04-27 Avion
-Modified: 2008-11-04 Rick Tanner
+Modified: 2010-03-27 Cavesomething
 endmsg
 end
 arch woodfloor2
@@ -415,6 +415,27 @@ endmsg
 x 5
 y 3
 stand_still 1
+arch NPCGift
+arch coffee
+name Eswald's superior coffee
+name_pl Eswald's superior coffees
+end
+arch coffee
+name Eswald's inferior coffee
+name_pl Eswald's inferior coffees
+food 1
+arch event_apply
+name scorn/CoffeeGoose 0>10
+title Python
+slaying /python/dialog/QuestAdvance.py
+end
+end
+end
+arch event_say
+name scorn/shops/eswald.msg
+title Python
+slaying /python/dialog/npc_dialog.py
+end
 end
 arch woodfloor2
 x 5
@@ -428,13 +449,6 @@ end
 arch woodfloor2
 x 5
 y 5
-end
-arch check_inv
-slaying EsmeraldaTheGoose
-x 5
-y 5
-last_heal 1
-connected 1
 end
 arch woodfloor2
 x 5
@@ -477,18 +491,6 @@ end
 arch woodfloor2
 x 6
 y 3
-end
-arch magic_mouth
-msg
-You found her!  Here is your pay.  Thanks.
-Esmeralda has the finest nose...er... beak for coffee in the kingdom.
-Oled will be so jealous of my coffee.
-endmsg
-food 1
-x 6
-y 4
-connected 1
-move_on 0
 end
 arch woodfloor2
 x 6
@@ -654,16 +656,8 @@ arch wwall_2_1_2
 x 8
 y 9
 end
-arch teleporter
-hp 6
-sp 5
+arch blocked
 x 9
-speed 0.0
-connected 1
-end
-arch goldcoin
-x 9
-nrof 500
 end
 arch blocked
 x 9

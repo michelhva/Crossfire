@@ -374,31 +374,17 @@ end
 arch woman
 name Fran
 msg
-@match mark
-That bum, all this time he had a girl on the side.
-Too bad he was coming into some coin too...
-Some deal with that bird of his.
-@match Oled
-He's ok to work for, but he's a pincher if you know what I mean.
-He's usually pretty mellow, but lately he seems a bit tense.
-@match pincher
-You try it an I'll deck you I says to him...
-@match bird|goose
-Ya I heard Mark stole a goose.
-@match who
-Your pretty nosey there fella.
-@match service|order
-Hey buddy just take a seat, I work two jobs you know.
-@match job
-Ya I work part time at Oled's Cafe too.
-@match *
-Hey kitchen is off limits!
-Keep it in your scabbard and take a seat there chum.
+
 endmsg
 x 3
 y 5
 randomitems jail
 stand_still 1
+arch event_say
+name scorn/taverns/fran.msg
+title Python
+slaying /python/dialog/npc_dialog.py
+end
 end
 arch woodfloor
 x 3
