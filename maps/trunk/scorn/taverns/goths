@@ -9,7 +9,7 @@ enter_x 18
 enter_y 32
 msg
 Created:  1993-10-15
-Modified: 2010-02-11 Nicolas Weeger
+Modified: 2010-03-31 Cavesomething
 endmsg
 maplore
 @quest Scorn Royalty Quest
@@ -2292,6 +2292,11 @@ endmsg
 x 9
 y 28
 friendly 1
+arch event_say
+name scorn/taverns/mark.msg
+title Python
+slaying /python/dialog/npc_dialog.py
+end
 end
 arch woodfloor
 x 9
