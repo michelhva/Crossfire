@@ -8,7 +8,7 @@ enter_x 11
 enter_y 1
 msg
 Created:  2003-04-27 Avion
-Modified: 2008-06-06 Arvid Norlander
+Modified: 2010-04-01 Cavesomething
 endmsg
 outdoor 1
 end
@@ -2798,20 +2798,17 @@ x 17
 y 20
 end
 arch woman
-msg
-@match staff|stick
-You'll know its his because he carved
-his name on it.
-@match father|ear|earhorn
-My father is a bit hard of hearing.
-He lost his earhorn too...
-@match *
-My father lost his walking stick,
-if you find it please bring it back to him.
-endmsg
+name Molly
 x 17
 y 20
+type 0
 randomitems jail
+stand_still 1
+arch event_say
+name scorn/houses/molly_malone.msg
+title Python
+slaying /python/misc/npc_dialog.py
+end
 end
 arch woodfloor
 x 17
@@ -3450,37 +3447,9 @@ arch woodfloor
 x 21
 y 18
 end
-arch check_inv
-slaying Gramp's walking stick
-x 21
-y 18
-last_heal 1
-connected 5
-end
-arch check_inv
-slaying Gramp's earhorn
-x 21
-y 18
-last_heal 1
-connected 6
-end
 arch woodfloor
 x 21
 y 19
-end
-arch check_inv
-slaying Gramp's walking stick
-x 21
-y 19
-last_heal 1
-connected 5
-end
-arch check_inv
-slaying Gramp's earhorn
-x 21
-y 19
-last_heal 1
-connected 6
 end
 arch woodfloor
 x 21
@@ -3666,33 +3635,16 @@ randomitems jail
 monster 0
 can_cast_spell 0
 stand_still 1
+arch NPCGift
+arch gem
+nrof 5
 end
-arch magic_mouth
-msg
-You found my staff, thanks.
-Heres a little something for you.
-Don't spend it all on sweets now.
-endmsg
-food 1
-x 22
-y 19
-connected 5
-move_on 0
 end
-arch magic_mouth
-msg
-My horn!  Thanks.
-Here's a little spending money for your trouble.
-Now I can hear again.
-....err drat now she'll be gabbin
-at me all day.  Maybe I better hide
-it again...
-endmsg
-food 1
-x 22
-y 19
-connected 6
-move_on 0
+arch event_say
+name scorn/houses/gramps_malone.msg
+title Python
+slaying /python/misc/npc_dialog.py
+end
 end
 arch woodfloor
 x 22
@@ -4077,32 +4029,6 @@ end
 arch blocked
 x 24
 y 21
-end
-arch teleporter
-hp 20
-sp 18
-x 24
-y 22
-speed 0.0
-connected 6
-end
-arch gem
-x 24
-y 22
-nrof 3
-end
-arch teleporter
-hp 20
-sp 18
-x 24
-y 23
-speed 0.0
-connected 5
-end
-arch gem
-x 24
-y 23
-nrof 2
 end
 arch teleporter
 hp 22

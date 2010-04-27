@@ -8,7 +8,7 @@ enter_x 22
 enter_y 14
 msg
 Created:  2003-04-27 Avion
-Modified: 2008-09-29 Rick Tanner
+Modified: 2010-03-31 Cavesomething
 endmsg
 end
 arch grass
@@ -198,6 +198,16 @@ Git yer paws offa it!
 endmsg
 type 21
 value 1
+arch event_pickup
+name scorn/Earhorn 20-30>50 0>10
+title Python
+slaying python/dialog/QuestAdvance.py
+end
+arch event_drop
+name scorn/Earhorn 60
+title Python
+slaying /python/dialog/QuestEssentialUntil.py
+end
 end
 end
 arch grass
