@@ -8,7 +8,7 @@ enter_x 4
 enter_y 8
 msg
 Created:  2003-04-27
-Modified: 2008-11-04 Rick Tanner
+Modified: 2010-03-27 Cavesomething
 endmsg
 end
 arch woodfloor
@@ -333,22 +333,21 @@ end
 arch fatman
 name Oled
 msg
-@match mark
-Who?  Never heard of him...
-@match amy
-Hey, whatever she told you is a lie ok.
-That lady Mark was talking to was a sick friend of mine.
-@match lady
-I think her name was something like
-Jann or Ann...works over at the 'Mule sometimes.
-@match eswald
-That skunk Eswald and his stupid goose
-Undercutting my prices.  One day...
-@match *
-Have a cup of coffee! Fresh coffee!
+
 endmsg
 x 5
 y 2
+arch NPCGift
+arch coffee
+name Oled's coffee
+name_pl Oled's coffees
+end
+end
+arch event_say
+name scorn/shops/oled.msg
+title Python
+slaying /python/dialog/npc_dialog.py
+end
 end
 arch woodfloor
 x 5

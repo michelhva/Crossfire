@@ -4043,4 +4043,9 @@ name Mark's key
 slaying marks_key
 x 24
 y 24
+arch event_pickup
+name scorn/CoffeeGoose 47>50 20-45>60
+title Python
+slaying /python/dialog/QuestAdvance.py
+end
 end
