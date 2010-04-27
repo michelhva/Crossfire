@@ -105,10 +105,6 @@ import os
 from CFDialog import DialogRule, Dialog
 import cjson
 
-def ruleConnected(character, rule):
-        m = character.Map
-        m.TriggerConnected(rule.connected, 1)
-
 npc = Crossfire.WhoAmI()
 event = Crossfire.WhatIsEvent()
 player = Crossfire.WhoIsActivator()
@@ -132,19 +128,10 @@ speech = Dialog(player, npc, location)
 index = 0;
 
 for jsonRule in parameters["rules"]:
-    if ("connected" in jsonRule):
-        rule = DialogRule(jsonRule["match"],
-                          jsonRule["pre"],
-                          jsonRule["msg"],
-                          jsonRule["post"],
-                          None,
-                          ruleConnected);
-        rule.connected = jsonRule["connected"]
-    else:
-        rule = DialogRule(jsonRule["match"],
-                          jsonRule["pre"],
-                          jsonRule["msg"],
-                          jsonRule["post"])
+    rule = DialogRule(jsonRule["match"],
+                      jsonRule["pre"],
+                      jsonRule["msg"],
+                      jsonRule["post"])
     speech.addRule(rule, index)
     index = index + 1
 
