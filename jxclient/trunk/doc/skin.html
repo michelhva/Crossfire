@@ -626,7 +626,7 @@ Displays a spell known by the character.
     label_message &lt;name&gt; &lt;x&gt; &lt;y&gt; &lt;w&gt; &lt;h&gt; &lt;font&gt; &lt;color&gt;
     label_text &lt;name&gt; &lt;x&gt; &lt;y&gt; &lt;w&gt; &lt;h&gt; &lt;font&gt; &lt;color&gt; &lt;text...&gt;
     label_stat &lt;name&gt; &lt;x&gt; &lt;y&gt; &lt;w&gt; &lt;h&gt; &lt;font&gt; &lt;color&gt; &lt;stat&gt; &lt;alignment&gt;
-    label_stat2 &lt;name&gt; &lt;x&gt; &lt;y&gt; &lt;w&gt; &lt;h&gt; &lt;font&gt; &lt;normal&gt; &lt;upgradable&gt; &lt;depleted&gt; &lt;boosted&gt; &lt;boosted+upgradable&gt; &lt;stat-curr&gt; &lt;stat-base&gt; &lt;stat-race&gt; &lt;stat-applied& &lt;alignment&gt;
+    label_stat2 &lt;name&gt; &lt;x&gt; &lt;y&gt; &lt;w&gt; &lt;h&gt; &lt;font&gt; &lt;normal&gt; &lt;upgradable&gt; &lt;depleted&gt; &lt;boosted&gt; &lt;boosted+upgradable&gt; &lt;stat-curr&gt; &lt;stat-base&gt; &lt;stat-race&gt; &lt;stat-applied&gt; &lt;alignment&gt;
     label_spell &lt;name&gt; &lt;x&gt; &lt;y&gt; &lt;w&gt; &lt;h&gt; &lt;font&gt; &lt;type&gt;
 </pre>
 
@@ -648,7 +648,7 @@ Displays a spell known by the character.
 <li>&lt;x&gt; &lt;y&gt; &lt;w&gt; &lt;h&gt; is the extent of the label. The location is relative to the dialog.</li>
 <li>&lt;font&gt; and &lt;color&gt; is the font and color of the text.</li>
 <li>&lt;text...&gt; is the text to display.</li>
-<li>&lt;stat&gt; &lt;stat-curr&gt; &lt;stat-base&gt; &lt;stat-race&gt; &&lt;stat-applied&gt; define the stat value to display.</li>
+<li>&lt;stat&gt; &lt;stat-curr&gt; &lt;stat-base&gt; &lt;stat-race&gt; &lt;stat-applied&gt; define the stat value to display.</li>
 <li>&lt;normal&gt; &lt;upgradable&gt; &lt;depleted&gt; &lt;boosted&gt; &lt;boosted+upgradable&gt; are the colors for different stat states.</li>
 <li>&lt;alignment&gt; is the text alignment: <code>LEFT</code>, <code>CENTER</code>, <code>RIGHT</code> for left justified/centered/right justified text.</li>
 <li>&lt;type&gt; selects the type of information to show:
@@ -784,7 +784,7 @@ Displays a spell known by the character.
 <li>&lt;picture&gt; is a picture to display in front of the server description. May be <code>null</code> if no picture should be shown.</li>
 <li>&lt;font&gt; is the font to use.</li>
 <li>&lt;text&gt; is a text input element for the server name. It is updated to reflect the current list selection. May be <code>null</code> to not update a text element.</li>
-<li>&lt;connect&gt; is a command list to execute on double-click. It should connect to the Crossfire server.
+<li>&lt;connect&gt; is a command list to execute on double-click. It should connect to the Crossfire server.</li>
 <li>&lt;label&gt; is a label element that displays the description of the current list selection. May be <code>null</code> to not update a label element.</li>
 <li>&lt;format&gt; &lt;tooltip&gt; are format strings that display the current selection. &lt;format&gt; is used for the list element, &lt;tooltip&gt; for the tooltip text. The following placeholders are allowed; they insert information received from the metaserver.
 <ul>
@@ -999,7 +999,7 @@ Displays a spell known by the character.
 <li><a name="command_dialog_open"><code>DIALOG_OPEN &lt;dialog&gt;</code></a>: the argument must be the name of a dialog. Makes the dialog visible.</li>
 <li><a name="command_dialog_toggle"><code>DIALOG_TOGGLE &lt;dialog&gt;</code></a>: the argument must be the name of a dialog. Makes the dialog invisible.</li>
 <li><a name="command_dialog_close"><code>DIALOG_CLOSE &lt;dialog&gt;</code></a>: the argument must be the name of a dialog. Toggles the visibility of the dialog.</li>
-<li><code>GUI_EXECUTE_COMMAND &lt;command...&gt;</code>: sends a command to the Crossfire server. <a href="#macros">Macros</a> are supported.</li>
+<li><a name="command_gui_execute_command"><code>GUI_EXECUTE_COMMAND &lt;command...&gt;</code></a>: sends a command to the Crossfire server. <a href="#macros">Macros</a> are supported.</li>
 <li><code>EXEC_SELECTION &lt;command&gt;</code>: &lt;element&gt; must refer to a <a href="#floor_list"><code>floor_list</code> or <code>inventory_list</code></a>. Executes a command on the list's selected item. Does nothing if no item is selected. Allowed commands:
   <ul>
   <li><code>APPLY</code>: applies the item.</li>
