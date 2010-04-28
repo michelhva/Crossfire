@@ -129,14 +129,14 @@ public class MouseTracker implements MouseInputListener {
         final GUIElement element = windowRenderer.findElement(e);
         final boolean isClicked = element != null && mouseElement == element;
         enterElement(element, e);
-        if (mouseElement != null) {
-            mouseElement.mouseReleased(e);
-        }
         if (isClicked) {
             // cannot use mouseElement here: it might be invalid if the
             // previous call to mouseReleased() did close the owner dialog
             assert element != null;
             element.mouseClicked(e);
+        }
+        if (mouseElement != null) {
+            mouseElement.mouseReleased(e);
         }
     }
 

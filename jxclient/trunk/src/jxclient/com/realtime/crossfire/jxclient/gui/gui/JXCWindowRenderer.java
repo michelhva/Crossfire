@@ -930,6 +930,7 @@ public class JXCWindowRenderer {
      */
     private void openDialogsAdd(@NotNull final Gui dialog) {
         if (openDialogs.contains(dialog)) {
+            raiseDialog(dialog);
             return;
         }
 
