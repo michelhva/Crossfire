@@ -193,7 +193,6 @@ public class JXCWindow extends JFrame {
         @Override
         public void playerReceived(final int tag, final int weight, final int faceNum, @NotNull final String name) {
             guiManager.playerReceived();
-            commandQueue.sendNcom(true, 1, "output-count 1"); // to make message merging work reliably
         }
 
         /**
