@@ -23,7 +23,6 @@ package com.realtime.crossfire.jxclient.main;
 
 import com.realtime.crossfire.jxclient.gui.gui.JXCWindowRenderer;
 import com.realtime.crossfire.jxclient.gui.gui.MouseTracker;
-import com.realtime.crossfire.jxclient.guistate.GuiState;
 import com.realtime.crossfire.jxclient.guistate.GuiStateListener;
 import com.realtime.crossfire.jxclient.guistate.GuiStateManager;
 import com.realtime.crossfire.jxclient.queue.CommandQueue;
@@ -41,7 +40,6 @@ import com.realtime.crossfire.jxclient.util.ResourceUtils;
 import com.realtime.crossfire.jxclient.window.DialogStateParser;
 import com.realtime.crossfire.jxclient.window.GuiManager;
 import com.realtime.crossfire.jxclient.window.KeyHandler;
-import com.realtime.crossfire.jxclient.window.KeyHandlerListener;
 import com.realtime.crossfire.jxclient.window.KeybindingsManager;
 import java.awt.Dimension;
 import java.awt.Graphics;
@@ -84,12 +82,6 @@ public class JXCWindow extends JFrame {
     private final GuiManager guiManager;
 
     /**
-     * The {@link GuiStateManager} instance.
-     */
-    @NotNull
-    private final GuiStateManager guiStateManager;
-
-    /**
      * The {@link CrossfireServerConnection} to use.
      */
     @NotNull
@@ -124,17 +116,6 @@ public class JXCWindow extends JFrame {
      */
     @NotNull
     private final OptionManager optionManager;
-
-    /**
-     * Whether a server connection is active.
-     */
-    private boolean connected = false;
-
-    /**
-     * The synchronization object for accesses to {@link #connected}.
-     */
-    @NotNull
-    private final Object semaphoreConnected = new Object();
 
     /**
      * The {@link WindowFocusListener} registered for this window. It resets the
@@ -214,7 +195,7 @@ public class JXCWindow extends JFrame {
         /** {@inheritDoc} */
         @Override
         public void connecting() {
-            setConnected(true);
+            defaultKeyHandler.setConnected(true);
         }
 
         /** {@inheritDoc} */
@@ -244,7 +225,7 @@ public class JXCWindow extends JFrame {
         /** {@inheritDoc} */
         @Override
         public void disconnected(@NotNull final String reason) {
-            setConnected(false);
+            defaultKeyHandler.setConnected(false);
         }
     };
 
@@ -313,38 +294,10 @@ public class JXCWindow extends JFrame {
     };
 
     /**
-     * The {@link KeyHandlerListener} attached to {@link #keyHandler}.
+     * The {@link DefaultKeyHandler} attached to {@link #keyHandler}.
      */
     @NotNull
-    private final KeyHandlerListener keyHandlerListener = new KeyHandlerListener() {
-        /** {@inheritDoc} */
-        @Override
-        public void escPressed() {
-            if (guiStateManager.getGuiState() == GuiState.CONNECT_FAILED) {
-                guiStateManager.disconnect();
-                return;
-            }
-
-            switch (guiManager.escPressed(isConnected())) {
-            case 0:
-                break;
-
-            case 1:
-                guiStateManager.disconnect();
-                break;
-
-            case 2:
-                guiManager.terminate();
-                break;
-            }
-        }
-
-        /** {@inheritDoc} */
-        @Override
-        public void keyReleased() {
-            guiManager.closeKeybindDialog();
-        }
-    };
+    private final DefaultKeyHandler defaultKeyHandler;
 
     /**
      * The {@link CrossfireQueryListener} attached to {@link #server}. It parses
@@ -446,13 +399,13 @@ public class JXCWindow extends JFrame {
         super("");
         this.server = server;
         this.optionManager = optionManager;
-        this.guiStateManager = guiStateManager;
         this.windowRenderer = windowRenderer;
         this.commandQueue = commandQueue;
         this.semaphoreDrawing = semaphoreDrawing;
         this.guiManager = guiManager;
+        defaultKeyHandler = new DefaultKeyHandler(guiManager, guiStateManager);
         setDefaultCloseOperation(DO_NOTHING_ON_CLOSE);
-        keyHandler = new KeyHandler(debugKeyboard, keybindingsManager, commandQueue, windowRenderer, keyHandlerListener);
+        keyHandler = new KeyHandler(debugKeyboard, keybindingsManager, commandQueue, windowRenderer, defaultKeyHandler);
         try {
             setIconImage(ResourceUtils.loadImage(ResourceUtils.APPLICATION_ICON).getImage());
         } catch (final IOException ex) {
@@ -584,26 +537,6 @@ public class JXCWindow extends JFrame {
     @Override
     public void paint(@NotNull final Graphics g) {
         windowRenderer.repaint();
-    }
-
-    /**
-     * Records whether a server connection is active.
-     * @param connected whether a server connection is active
-     */
-    private void setConnected(final boolean connected) {
-        synchronized (semaphoreConnected) {
-            this.connected = connected;
-        }
-    }
-
-    /**
-     * Returns whether a server connection is active.
-     * @return whether a server connection is active
-     */
-    private boolean isConnected() {
-        synchronized (semaphoreConnected) {
-            return connected;
-        }
     }
 
 }
