@@ -126,12 +126,6 @@ public class JXCWindow extends JFrame {
     private final OptionManager optionManager;
 
     /**
-     * The {@link KeybindingsManager} instance.
-     */
-    @NotNull
-    private final KeybindingsManager keybindingsManager;
-
-    /**
      * Whether a server connection is active.
      */
     private boolean connected = false;
@@ -457,7 +451,6 @@ public class JXCWindow extends JFrame {
         this.windowRenderer = windowRenderer;
         this.commandQueue = commandQueue;
         this.semaphoreDrawing = semaphoreDrawing;
-        this.keybindingsManager = keybindingsManager;
         this.guiManager = guiManager;
         setDefaultCloseOperation(DO_NOTHING_ON_CLOSE);
         keyHandler = new KeyHandler(debugKeyboard, keybindingsManager, commandQueue, windowRenderer, keyHandlerListener);
@@ -564,9 +557,7 @@ public class JXCWindow extends JFrame {
 
         guiManager.setSkin(skin);
         guiManager.updateWindowSize(getSize());
-
         DialogStateParser.load(skin, windowRenderer);
-        keybindingsManager.loadKeybindings();
 
         addMouseListener(mouseTracker);
         addMouseMotionListener(mouseTracker);
