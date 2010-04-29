@@ -131,6 +131,18 @@ public class SkinLoader {
     private final JXCSkinLoader skinLoader;
 
     /**
+     * The {@link Commands} instance.
+     */
+    @NotNull
+    private final Commands commands;
+
+    /**
+     * The {@link Shortcuts} instance.
+     */
+    @NotNull
+    private final Shortcuts shortcuts;
+
+    /**
      * Creates a new instance.
      * @param debugGui whether GUI elements should be highlighted
      * @param mouseTracker the mouse tracker to use
@@ -145,8 +157,10 @@ public class SkinLoader {
      * @param tooltipManager the tooltip manager to use
      * @param commandQueue the command queue to use
      * @param skinLoader the skin loader instance
+     * @param commands the commands to use
+     * @param shortcuts the shortcuts to use
      */
-    public SkinLoader(final boolean debugGui, @NotNull final MouseTracker mouseTracker, @NotNull final CommandCallback commandCallback, @NotNull final MetaserverModel metaserverModel, @Nullable final Resolution resolution, @NotNull final Macros macros, @NotNull final JXCWindowRenderer windowRenderer, @NotNull final CrossfireServerConnection server, @NotNull final GuiStateManager guiStateManager, @NotNull final TooltipManager tooltipManager, @NotNull final CommandQueue commandQueue, @NotNull final JXCSkinLoader skinLoader) {
+    public SkinLoader(final boolean debugGui, @NotNull final MouseTracker mouseTracker, @NotNull final CommandCallback commandCallback, @NotNull final MetaserverModel metaserverModel, @Nullable final Resolution resolution, @NotNull final Macros macros, @NotNull final JXCWindowRenderer windowRenderer, @NotNull final CrossfireServerConnection server, @NotNull final GuiStateManager guiStateManager, @NotNull final TooltipManager tooltipManager, @NotNull final CommandQueue commandQueue, @NotNull final JXCSkinLoader skinLoader, @NotNull final Commands commands, @NotNull final Shortcuts shortcuts) {
         this.debugGui = debugGui;
         this.mouseTracker = mouseTracker;
         this.commandCallback = commandCallback;
@@ -160,18 +174,18 @@ public class SkinLoader {
         this.commandQueue = commandQueue;
         this.skinLoader = skinLoader;
 
+        this.commands = commands;
+        this.shortcuts = shortcuts;
     }
 
     /**
      * Loads a skin file.
      * @param skinName the skin file name
-     * @param commands the commands to use
-     * @param shortcuts the shortcuts to use
      * @return the loaded skin
      * @throws JXCSkinException if the skin file cannot be loaded
      */
     @NotNull
-    public JXCSkin loadSkin(@NotNull final String skinName, @NotNull final Commands commands, @NotNull final Shortcuts shortcuts) throws JXCSkinException {
+    public JXCSkin loadSkin(@NotNull final String skinName) throws JXCSkinException {
         // check for skin in directory
         final File dir = new File(skinName);
         final JXCSkinSource skinSource;
