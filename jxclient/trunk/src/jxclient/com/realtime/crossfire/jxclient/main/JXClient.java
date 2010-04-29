@@ -33,6 +33,7 @@ import com.realtime.crossfire.jxclient.gui.gui.MouseTracker;
 import com.realtime.crossfire.jxclient.gui.gui.TooltipManager;
 import com.realtime.crossfire.jxclient.gui.keybindings.KeyBindings;
 import com.realtime.crossfire.jxclient.guistate.GuiState;
+import com.realtime.crossfire.jxclient.guistate.GuiStateListener;
 import com.realtime.crossfire.jxclient.guistate.GuiStateManager;
 import com.realtime.crossfire.jxclient.items.FloorView;
 import com.realtime.crossfire.jxclient.items.InventoryComparator;
@@ -46,6 +47,7 @@ import com.realtime.crossfire.jxclient.queue.CommandQueue;
 import com.realtime.crossfire.jxclient.scripts.ScriptManager;
 import com.realtime.crossfire.jxclient.server.crossfire.CrossfireServerConnection;
 import com.realtime.crossfire.jxclient.server.crossfire.DefaultCrossfireServerConnection;
+import com.realtime.crossfire.jxclient.server.socket.ClientSocketState;
 import com.realtime.crossfire.jxclient.settings.Filenames;
 import com.realtime.crossfire.jxclient.settings.Settings;
 import com.realtime.crossfire.jxclient.settings.options.OptionException;
@@ -203,7 +205,67 @@ public class JXClient {
                                     final KeyBindings defaultKeyBindings = new KeyBindings(null, commands, commandCallback, macros);
                                     final JXCSkinLoader jxcSkinLoader = new JXCSkinLoader(itemSet, inventoryView, floorView, spellsManager, facesManager, stats, mapUpdater, defaultKeyBindings, optionManager, experienceTable, skillSet);
                                     final SkinLoader skinLoader = new SkinLoader(options.isDebugGui(), mouseTracker, commandCallback, metaserverModel, options.getResolution(), macros, windowRenderer, server, guiStateManager, tooltipManager, commandQueue, jxcSkinLoader, commands, shortcuts);
-                                    window[0] = new JXCWindow(server, debugKeyboardOutputStreamWriter, optionManager, guiStateManager, facesManager, itemSet, windowRenderer, commandQueue, semaphoreDrawing, characterPickup, keybindingsManager, connection, guiManager);
+                                    final GuiStateListener guiStateListener = new GuiStateListener() {
+
+                                        /**
+                                         * {@inheritDoc}
+                                         */
+                                        @Override
+                                        public void start() {
+                                            // ignore
+                                        }
+
+                                        /**
+                                         * {@inheritDoc}
+                                         */
+                                        @Override
+                                        public void metaserver() {
+                                            // ignore
+                                        }
+
+                                        /**
+                                         * {@inheritDoc}
+                                         */
+                                        @Override
+                                        public void preConnecting(@NotNull final String serverInfo) {
+                                            // ignore
+                                        }
+
+                                        /**
+                                         * {@inheritDoc}
+                                         */
+                                        @Override
+                                        public void connecting(@NotNull final String serverInfo) {
+                                            facesManager.reset();
+                                        }
+
+                                        /**
+                                         * {@inheritDoc}
+                                         */
+                                        @Override
+                                        public void connecting(@NotNull final ClientSocketState clientSocketState) {
+                                            // ignore
+                                        }
+
+                                        /**
+                                         * {@inheritDoc}
+                                         */
+                                        @Override
+                                        public void connected() {
+                                            // ignore
+                                        }
+
+                                        /**
+                                         * {@inheritDoc}
+                                         */
+                                        @Override
+                                        public void connectFailed(@NotNull final String reason) {
+                                            // ignore
+                                        }
+
+                                    };
+                                    guiStateManager.addGuiStateListener(guiStateListener);
+                                    window[0] = new JXCWindow(server, debugKeyboardOutputStreamWriter, optionManager, guiStateManager, itemSet, windowRenderer, commandQueue, semaphoreDrawing, characterPickup, keybindingsManager, connection, guiManager);
                                     connection.init(window[0]);
                                     window[0].init(options.getResolution(), mouseTracker, options.getSkin(), options.isFullScreen(), skinLoader);
                                     final String serverInfo = options.getServer();
