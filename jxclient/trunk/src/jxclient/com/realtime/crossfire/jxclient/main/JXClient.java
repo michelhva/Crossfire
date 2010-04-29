@@ -266,6 +266,7 @@ public class JXClient {
                                     });
                                     new PlayerNameTracker(guiStateManager, connection, itemSet);
                                     new PickupTracker(guiStateManager, server, characterPickup);
+                                    new OutputCountTracker(guiStateManager, server, commandQueue);
                                     window[0] = new JXCWindow(server, debugKeyboardOutputStreamWriter, optionManager, guiStateManager, windowRenderer, commandQueue, semaphoreDrawing, keybindingsManager, guiManager);
                                     connection.init(window[0]);
                                     window[0].init(options.getResolution(), mouseTracker, options.getSkin(), options.isFullScreen(), skinLoader);
