@@ -32,6 +32,7 @@ import com.realtime.crossfire.jxclient.gui.gui.JXCWindowRenderer;
 import com.realtime.crossfire.jxclient.gui.gui.MouseTracker;
 import com.realtime.crossfire.jxclient.gui.gui.TooltipManager;
 import com.realtime.crossfire.jxclient.gui.keybindings.KeyBindings;
+import com.realtime.crossfire.jxclient.guistate.GuiState;
 import com.realtime.crossfire.jxclient.guistate.GuiStateManager;
 import com.realtime.crossfire.jxclient.items.FloorView;
 import com.realtime.crossfire.jxclient.items.InventoryComparator;
@@ -204,7 +205,14 @@ public class JXClient {
                                     final SkinLoader skinLoader = new SkinLoader(options.isDebugGui(), mouseTracker, commandCallback, metaserverModel, options.getResolution(), macros, windowRenderer, server, guiStateManager, tooltipManager, commandQueue, jxcSkinLoader, commands, shortcuts);
                                     window[0] = new JXCWindow(server, debugKeyboardOutputStreamWriter, optionManager, guiStateManager, facesManager, itemSet, windowRenderer, commandQueue, semaphoreDrawing, characterPickup, keybindingsManager, connection, guiManager);
                                     connection.init(window[0]);
-                                    window[0].init(options.getResolution(), mouseTracker, options.getSkin(), options.isFullScreen(), options.getServer(), skinLoader);
+                                    window[0].init(options.getResolution(), mouseTracker, options.getSkin(), options.isFullScreen(), skinLoader);
+                                    final String serverInfo = options.getServer();
+                                    if (serverInfo != null) {
+                                        guiStateManager.connect(serverInfo);
+                                    } else {
+                                        guiStateManager.changeGUI(JXCWindow.DISABLE_START_GUI ? GuiState.METASERVER : GuiState.START);
+                                    }
+                                    guiManager.init();
                                 }
                             });
                             window[0].waitForTermination();
