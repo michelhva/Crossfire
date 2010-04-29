@@ -69,6 +69,7 @@ import com.realtime.crossfire.jxclient.stats.Stats;
 import com.realtime.crossfire.jxclient.util.DebugWriter;
 import com.realtime.crossfire.jxclient.window.GuiManager;
 import com.realtime.crossfire.jxclient.window.JXCConnection;
+import com.realtime.crossfire.jxclient.window.KeyHandler;
 import com.realtime.crossfire.jxclient.window.KeybindingsManager;
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
@@ -267,7 +268,9 @@ public class JXClient {
                                     new PlayerNameTracker(guiStateManager, connection, itemSet);
                                     new PickupTracker(guiStateManager, server, characterPickup);
                                     new OutputCountTracker(guiStateManager, server, commandQueue);
-                                    window[0] = new JXCWindow(server, debugKeyboardOutputStreamWriter, optionManager, guiStateManager, windowRenderer, commandQueue, semaphoreDrawing, keybindingsManager, guiManager);
+                                    final DefaultKeyHandler defaultKeyHandler = new DefaultKeyHandler(guiManager, server, guiStateManager);
+                                    final KeyHandler keyHandler = new KeyHandler(debugKeyboardOutputStreamWriter, keybindingsManager, commandQueue, windowRenderer, defaultKeyHandler);
+                                    window[0] = new JXCWindow(server, optionManager, guiStateManager, windowRenderer, commandQueue, semaphoreDrawing, guiManager, keyHandler);
                                     connection.init(window[0]);
                                     window[0].init(options.getResolution(), mouseTracker, options.getSkin(), options.isFullScreen(), skinLoader);
                                     keybindingsManager.loadKeybindings();

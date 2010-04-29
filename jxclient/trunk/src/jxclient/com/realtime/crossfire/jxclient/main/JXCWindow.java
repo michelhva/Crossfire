@@ -39,7 +39,6 @@ import com.realtime.crossfire.jxclient.util.ResourceUtils;
 import com.realtime.crossfire.jxclient.window.DialogStateParser;
 import com.realtime.crossfire.jxclient.window.GuiManager;
 import com.realtime.crossfire.jxclient.window.KeyHandler;
-import com.realtime.crossfire.jxclient.window.KeybindingsManager;
 import java.awt.Dimension;
 import java.awt.Graphics;
 import java.awt.Insets;
@@ -52,7 +51,6 @@ import java.awt.event.WindowEvent;
 import java.awt.event.WindowFocusListener;
 import java.awt.event.WindowListener;
 import java.io.IOException;
-import java.io.Writer;
 import javax.swing.JFrame;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
@@ -335,17 +333,15 @@ public class JXCWindow extends JFrame {
     /**
      * Creates a new instance.
      * @param server the crossfire server connection to use
-     * @param debugKeyboard if non-<code>null</code>, write all keyboard debug
-     * to this writer
      * @param optionManager the option manager instance to use
      * @param guiStateManager the gui state manager to use
      * @param windowRenderer the window renderer to use
      * @param commandQueue the command queue instance
      * @param semaphoreDrawing the semaphore for drawing window contents
-     * @param keybindingsManager the keybindings manager instance
      * @param guiManager the gui manager instance
+     * @param keyHandler the key handler for keyboard input
      */
-    public JXCWindow(@NotNull final CrossfireServerConnection server, @Nullable final Writer debugKeyboard, @NotNull final OptionManager optionManager, @NotNull final GuiStateManager guiStateManager, @NotNull final JXCWindowRenderer windowRenderer, @NotNull final CommandQueue commandQueue, @NotNull final Object semaphoreDrawing, @NotNull final KeybindingsManager keybindingsManager, @NotNull final GuiManager guiManager) {
+    public JXCWindow(@NotNull final CrossfireServerConnection server, @NotNull final OptionManager optionManager, @NotNull final GuiStateManager guiStateManager, @NotNull final JXCWindowRenderer windowRenderer, @NotNull final CommandQueue commandQueue, @NotNull final Object semaphoreDrawing, @NotNull final GuiManager guiManager, @NotNull final KeyHandler keyHandler) {
         super("");
         this.server = server;
         this.optionManager = optionManager;
@@ -353,9 +349,8 @@ public class JXCWindow extends JFrame {
         this.commandQueue = commandQueue;
         this.semaphoreDrawing = semaphoreDrawing;
         this.guiManager = guiManager;
-        final DefaultKeyHandler defaultKeyHandler = new DefaultKeyHandler(guiManager, server, guiStateManager);
+        this.keyHandler = keyHandler;
         setDefaultCloseOperation(DO_NOTHING_ON_CLOSE);
-        keyHandler = new KeyHandler(debugKeyboard, keybindingsManager, commandQueue, windowRenderer, defaultKeyHandler);
         try {
             setIconImage(ResourceUtils.loadImage(ResourceUtils.APPLICATION_ICON).getImage());
         } catch (final IOException ex) {
