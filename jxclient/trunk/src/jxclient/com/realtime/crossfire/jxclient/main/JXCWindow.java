@@ -22,52 +22,27 @@
 package com.realtime.crossfire.jxclient.main;
 
 import com.realtime.crossfire.jxclient.commands.Commands;
-import com.realtime.crossfire.jxclient.commands.Macros;
 import com.realtime.crossfire.jxclient.faces.FacesManager;
-import com.realtime.crossfire.jxclient.gui.commands.CommandCallback;
-import com.realtime.crossfire.jxclient.gui.commands.CommandList;
-import com.realtime.crossfire.jxclient.gui.commands.NoSuchCommandException;
-import com.realtime.crossfire.jxclient.gui.gui.GUIElementListener;
-import com.realtime.crossfire.jxclient.gui.gui.Gui;
-import com.realtime.crossfire.jxclient.gui.gui.GuiFactory;
 import com.realtime.crossfire.jxclient.gui.gui.JXCWindowRenderer;
 import com.realtime.crossfire.jxclient.gui.gui.MouseTracker;
-import com.realtime.crossfire.jxclient.gui.gui.TooltipManager;
-import com.realtime.crossfire.jxclient.gui.keybindings.KeyBindings;
 import com.realtime.crossfire.jxclient.guistate.GuiState;
 import com.realtime.crossfire.jxclient.guistate.GuiStateListener;
 import com.realtime.crossfire.jxclient.guistate.GuiStateManager;
 import com.realtime.crossfire.jxclient.items.CfItem;
-import com.realtime.crossfire.jxclient.items.FloorView;
 import com.realtime.crossfire.jxclient.items.ItemSet;
 import com.realtime.crossfire.jxclient.items.ItemSetListener;
-import com.realtime.crossfire.jxclient.items.ItemView;
-import com.realtime.crossfire.jxclient.mapupdater.CfMapUpdater;
-import com.realtime.crossfire.jxclient.metaserver.MetaserverModel;
 import com.realtime.crossfire.jxclient.queue.CommandQueue;
-import com.realtime.crossfire.jxclient.scripts.ScriptManager;
 import com.realtime.crossfire.jxclient.server.crossfire.CrossfireQueryListener;
 import com.realtime.crossfire.jxclient.server.crossfire.CrossfireServerConnection;
 import com.realtime.crossfire.jxclient.server.crossfire.CrossfireUpdateItemListener;
 import com.realtime.crossfire.jxclient.server.crossfire.SentReplyListener;
 import com.realtime.crossfire.jxclient.server.socket.ClientSocketListener;
 import com.realtime.crossfire.jxclient.server.socket.ClientSocketState;
-import com.realtime.crossfire.jxclient.settings.Settings;
-import com.realtime.crossfire.jxclient.settings.options.OptionException;
 import com.realtime.crossfire.jxclient.settings.options.OptionManager;
 import com.realtime.crossfire.jxclient.settings.options.Pickup;
 import com.realtime.crossfire.jxclient.shortcuts.Shortcuts;
-import com.realtime.crossfire.jxclient.skills.SkillSet;
-import com.realtime.crossfire.jxclient.skin.io.JXCSkinLoader;
 import com.realtime.crossfire.jxclient.skin.skin.JXCSkin;
 import com.realtime.crossfire.jxclient.skin.skin.JXCSkinException;
-import com.realtime.crossfire.jxclient.skin.source.JXCSkinClassSource;
-import com.realtime.crossfire.jxclient.skin.source.JXCSkinDirSource;
-import com.realtime.crossfire.jxclient.skin.source.JXCSkinSource;
-import com.realtime.crossfire.jxclient.spells.CurrentSpellManager;
-import com.realtime.crossfire.jxclient.spells.SpellsManager;
-import com.realtime.crossfire.jxclient.stats.ExperienceTable;
-import com.realtime.crossfire.jxclient.stats.Stats;
 import com.realtime.crossfire.jxclient.util.Resolution;
 import com.realtime.crossfire.jxclient.util.ResourceUtils;
 import com.realtime.crossfire.jxclient.window.DialogStateParser;
@@ -87,7 +62,6 @@ import java.awt.event.WindowAdapter;
 import java.awt.event.WindowEvent;
 import java.awt.event.WindowFocusListener;
 import java.awt.event.WindowListener;
-import java.io.File;
 import java.io.IOException;
 import java.io.Writer;
 import javax.swing.JFrame;
@@ -112,12 +86,6 @@ public class JXCWindow extends JFrame {
     private static final long serialVersionUID = 1;
 
     /**
-     * The {@link TooltipManager} for this window.
-     */
-    @NotNull
-    private final TooltipManager tooltipManager = new TooltipManager();
-
-    /**
      * The {@link GuiManager} for controlling the main GUI state.
      */
     @NotNull
@@ -128,11 +96,6 @@ public class JXCWindow extends JFrame {
      */
     @NotNull
     private final GuiStateManager guiStateManager;
-
-    /**
-     * Whether GUI elements should be highlighted.
-     */
-    private final boolean debugGui;
 
     /**
      * The {@link FacesManager} instance.
@@ -147,48 +110,6 @@ public class JXCWindow extends JFrame {
     private final ItemSet itemSet;
 
     /**
-     * The inventory {@link ItemView} instance.
-     */
-    @NotNull
-    private final ItemView inventoryView;
-
-    /**
-     * The {@link FloorView} instance.
-     */
-    @NotNull
-    private final FloorView floorView;
-
-    /**
-     * The {@link SpellsManager} instance.
-     */
-    @NotNull
-    private final SpellsManager spellsManager;
-
-    /**
-     * The {@link Stats} instance.
-     */
-    @NotNull
-    private final Stats stats;
-
-    /**
-     * The {@link SkillSet} instance.
-     */
-    @NotNull
-    private final SkillSet skillSet;
-
-    /**
-     * The {@link CfMapUpdater} instance.
-     */
-    @NotNull
-    private final CfMapUpdater mapUpdater;
-
-    /**
-     * The global experience table.
-     */
-    @NotNull
-    private final ExperienceTable experienceTable;
-
-    /**
      * The {@link CrossfireServerConnection} to use.
      */
     @NotNull
@@ -201,19 +122,16 @@ public class JXCWindow extends JFrame {
     private final CommandQueue commandQueue;
 
     /**
-     * The {@link MouseTracker} for this window.
-     */
-    @NotNull
-    private final MouseTracker mouseTracker;
-
-    /**
      * The {@link JXCWindowRenderer} for this window.
      */
     @NotNull
     private final JXCWindowRenderer windowRenderer;
 
+    /**
+     * The semaphore for drawing the window contents.
+     */
     @NotNull
-    private final Object semaphoreDrawing = new Object();
+    private final Object semaphoreDrawing;
 
     /**
      * The {@link KeyHandler} for processing keyboard input.
@@ -222,7 +140,7 @@ public class JXCWindow extends JFrame {
     private final KeyHandler keyHandler;
 
     /**
-     * The current pickup mode.
+     * The current {@link Pickup} mode.
      */
     @NotNull
     private final Pickup characterPickup;
@@ -234,28 +152,16 @@ public class JXCWindow extends JFrame {
     private final OptionManager optionManager;
 
     /**
-     * The current spell manager instance for this window.
+     * The {@link KeybindingsManager} instance.
      */
     @NotNull
-    private final CurrentSpellManager currentSpellManager = new CurrentSpellManager();
+    private final KeybindingsManager keybindingsManager;
 
     /**
-     * The metaserver model instance for this window.
-     */
-    @NotNull
-    private final MetaserverModel metaserverModel;
-
-    /**
-     * The connection.
+     * The {@link JXCConnection}.
      */
     @NotNull
     private final JXCConnection connection;
-
-    /**
-     * The size of the client area. Set to <code>null</code> for default.
-     */
-    @Nullable
-    private final Resolution resolution;
 
     /**
      * Whether a server connection is active.
@@ -267,12 +173,6 @@ public class JXCWindow extends JFrame {
      */
     @NotNull
     private final Object semaphoreConnected = new Object();
-
-    /**
-     * The {@link Macros} instance.
-     */
-    @NotNull
-    private final Macros macros;
 
     /**
      * The {@link WindowFocusListener} registered for this window. It resets the
@@ -630,135 +530,43 @@ public class JXCWindow extends JFrame {
     };
 
     /**
-     * The {@link CommandCallback}.
-     */
-    @NotNull
-    private final CommandCallback commandCallback = new CommandCallback() {
-        /** {@inheritDoc} */
-        @Override
-        public void quitApplication() {
-            guiManager.terminate();
-        }
-
-        /** {@inheritDoc} */
-        @Override
-        public void openDialog(@NotNull final Gui dialog) {
-            guiManager.openDialog(dialog, false);
-        }
-
-        /** {@inheritDoc} */
-        @Override
-        public void toggleDialog(@NotNull final Gui dialog) {
-            guiManager.toggleDialog(dialog);
-        }
-
-        /** {@inheritDoc} */
-        @Override
-        public void closeDialog(@NotNull final Gui dialog) {
-            guiManager.closeDialog(dialog);
-        }
-
-        /** {@inheritDoc} */
-        @NotNull
-        @Override
-        public CommandList getCommandList(@NotNull final String args) throws NoSuchCommandException {
-            return guiManager.getCommandList(args);
-        }
-
-        /** {@inheritDoc} */
-        @Override
-        public void updatePlayerName(@NotNull final String playerName) {
-            guiManager.updatePlayerName(playerName);
-        }
-
-        /** {@inheritDoc} */
-        @Override
-        public void activateCommandInput(@NotNull final String newText) {
-            guiManager.activateCommandInput(newText);
-        }
-
-        /** {@inheritDoc} */
-        @Override
-        public boolean createKeyBinding(final boolean perCharacter, @NotNull final CommandList commandList) {
-            return guiManager.createKeyBinding(perCharacter, commandList);
-        }
-
-        /** {@inheritDoc} */
-        @Override
-        public boolean removeKeyBinding(final boolean perCharacter) {
-            return guiManager.removeKeyBinding(perCharacter);
-        }
-    };
-
-    /**
      * Creates a new instance.
      * @param server the crossfire server connection to use
-     * @param debugGui whether GUI elements should be highlighted
      * @param debugKeyboard if non-<code>null</code>, write all keyboard debug
      * to this writer
-     * @param settings the settings instance to use
      * @param optionManager the option manager instance to use
-     * @param metaserverModel the metaserver model to use
-     * @param resolution the size of the client area, <code>null</code> for
-     * default
      * @param guiStateManager the gui state manager to use
-     * @param experienceTable the experience table to use
-     * @param skillSet the skill set to use
-     * @param stats the stats to use
      * @param facesManager the faces manager to use
      * @param itemSet the item set to use
-     * @param inventoryView the inventory item view to use
-     * @param floorView the floor view to use
-     * @param mouseTracker the mouse tracker to use
      * @param windowRenderer the window renderer to use
-     * @param skinName the skin to load
-     * @param fullScreen whether full-screen mode should be enabled
-     * @param serverInfo the server to connect to or <code>null</code>
-     * @param macros the macros instance
-     * @param mapUpdater the map updater instance
-     * @param spellsManager the spells manager instance
      * @param commandQueue the command queue instance
-     * @param scriptManager the script manager instance
-     * @param shortcuts the shortcuts instance
+     * @param semaphoreDrawing the semaphore for drawing window contents
+     * @param characterPickup the current pickmap mode
+     * @param keybindingsManager the keybindings manager instance
+     * @param connection the connection instance
+     * @param guiManager the gui manager instance
      */
-    public JXCWindow(@NotNull final CrossfireServerConnection server, final boolean debugGui, @Nullable final Writer debugKeyboard, @NotNull final Settings settings, @NotNull final OptionManager optionManager, @NotNull final MetaserverModel metaserverModel, @Nullable final Resolution resolution, @NotNull final GuiStateManager guiStateManager, @NotNull final ExperienceTable experienceTable, @NotNull final SkillSet skillSet, @NotNull final Stats stats, @NotNull final FacesManager facesManager, @NotNull final ItemSet itemSet, @NotNull final ItemView inventoryView, @NotNull final FloorView floorView, @NotNull final MouseTracker mouseTracker, @NotNull final JXCWindowRenderer windowRenderer, @NotNull final String skinName, final boolean fullScreen, @Nullable final String serverInfo, @NotNull final Macros macros, @NotNull final CfMapUpdater mapUpdater, @NotNull final SpellsManager spellsManager, @NotNull final CommandQueue commandQueue, @NotNull final ScriptManager scriptManager, @NotNull final Shortcuts shortcuts) {
+    public JXCWindow(@NotNull final CrossfireServerConnection server, @Nullable final Writer debugKeyboard, @NotNull final OptionManager optionManager, @NotNull final GuiStateManager guiStateManager, @NotNull final FacesManager facesManager, @NotNull final ItemSet itemSet, @NotNull final JXCWindowRenderer windowRenderer, @NotNull final CommandQueue commandQueue, @NotNull final Object semaphoreDrawing, @NotNull final Pickup characterPickup, @NotNull final KeybindingsManager keybindingsManager, @NotNull final JXCConnection connection, @NotNull final GuiManager guiManager) {
         super("");
         this.server = server;
-        this.debugGui = debugGui;
         this.optionManager = optionManager;
-        this.metaserverModel = metaserverModel;
-        this.resolution = resolution;
         this.guiStateManager = guiStateManager;
-        this.experienceTable = experienceTable;
-        this.skillSet = skillSet;
-        this.stats = stats;
         this.facesManager = facesManager;
         this.itemSet = itemSet;
-        this.inventoryView = inventoryView;
-        this.floorView = floorView;
-        this.mouseTracker = mouseTracker;
         this.windowRenderer = windowRenderer;
-        this.macros = macros;
-        this.mapUpdater = mapUpdater;
-        this.spellsManager = spellsManager;
         this.commandQueue = commandQueue;
+        this.semaphoreDrawing = semaphoreDrawing;
+        this.characterPickup = characterPickup;
+        this.keybindingsManager = keybindingsManager;
+        this.connection = connection;
+        this.guiManager = guiManager;
         setDefaultCloseOperation(DO_NOTHING_ON_CLOSE);
-        final Commands commands = new Commands(windowRenderer, commandQueue, server, scriptManager, optionManager, commandCallback, macros);
-        final GuiFactory guiFactory = new GuiFactory(debugGui ? mouseTracker : null, commands, commandCallback, macros);
-        final KeybindingsManager keybindingsManager = new KeybindingsManager(commands, commandCallback, macros);
         keyHandler = new KeyHandler(debugKeyboard, keybindingsManager, commandQueue, windowRenderer, keyHandlerListener);
-        try {
-            characterPickup = new Pickup(commandQueue, optionManager);
-        } catch (final OptionException ex) {
-            throw new AssertionError();
-        }
         try {
             setIconImage(ResourceUtils.loadImage(ResourceUtils.APPLICATION_ICON).getImage());
         } catch (final IOException ex) {
             System.err.println("Cannot find application icon: "+ex.getMessage());
         }
-        connection = new JXCConnection(keybindingsManager, shortcuts, settings, this, characterPickup, server, guiStateManager);
-        guiManager = new GuiManager(guiStateManager, semaphoreDrawing, tooltipManager, settings, server, windowRenderer, guiFactory, keybindingsManager, connection);
         setFocusTraversalKeysEnabled(false);
         addWindowFocusListener(windowFocusListener);
         addWindowListener(windowListener);
@@ -802,9 +610,24 @@ public class JXCWindow extends JFrame {
         server.addSentReplyListener(sentReplyListener);
         guiStateManager.addGuiStateListener(guiStateListener);
         addKeyListener(keyListener);
+    }
+
+    /**
+     * Initializes the instance: loads and displays the skin.
+     * @param resolution the size of the client area, <code>null</code> for
+     * default
+     * @param mouseTracker the mouse tracker to use
+     * @param skinName the skin to load
+     * @param fullScreen whether full-screen mode should be enabled
+     * @param serverInfo the server to connect to or <code>null</code>
+     * @param shortcuts the shortcuts instance
+     * @param skinLoader the skin loader instance
+     * @param commands the commands instance
+     */
+    public void init(@Nullable final Resolution resolution, @NotNull final MouseTracker mouseTracker, @NotNull final String skinName, final boolean fullScreen, @Nullable final String serverInfo, @NotNull final Shortcuts shortcuts, @NotNull final SkinLoader skinLoader, @NotNull final Commands commands) {
         JXCSkin skin;
         try {
-            skin = loadSkin(skinName, commands, shortcuts);
+            skin = skinLoader.loadSkin(skinName, commands, shortcuts);
         } catch (final JXCSkinException ex) {
             if (skinName.equals(Options.DEFAULT_SKIN)) {
                 System.err.println("cannot load skin "+skinName+": "+ex.getMessage());
@@ -813,7 +636,7 @@ public class JXCWindow extends JFrame {
 
             System.err.println("cannot load skin "+skinName+": "+ex.getMessage()+", trying default skin");
             try {
-                skin = loadSkin(Options.DEFAULT_SKIN, commands, shortcuts);
+                skin = skinLoader.loadSkin(Options.DEFAULT_SKIN, commands, shortcuts);
             } catch (final JXCSkinException ex2) {
                 System.err.println("cannot load default skin "+Options.DEFAULT_SKIN+": "+ex2.getMessage());
                 System.exit(1);
@@ -881,49 +704,6 @@ public class JXCWindow extends JFrame {
     @Override
     public void paint(@NotNull final Graphics g) {
         windowRenderer.repaint();
-    }
-
-    /**
-     * Loads a skin file.
-     * @param skinName the skin file name
-     * @param commands the commands to use
-     * @param shortcuts the shortcuts to use
-     * @return the loaded skin
-     * @throws JXCSkinException if the skin file cannot be loaded
-     */
-    @NotNull
-    private JXCSkin loadSkin(@NotNull final String skinName, @NotNull final Commands commands, @NotNull final Shortcuts shortcuts) throws JXCSkinException {
-        // check for skin in directory
-        final File dir = new File(skinName);
-        final KeyBindings defaultKeyBindings = new KeyBindings(null, commands, commandCallback, macros);
-        final JXCSkinSource skinSource;
-        if (dir.exists() && dir.isDirectory()) {
-            skinSource = new JXCSkinDirSource(dir);
-        } else {
-            // fallback: built-in resource
-            skinSource = new JXCSkinClassSource("com/realtime/crossfire/jxclient/skins/"+skinName);
-        }
-        final JXCSkinLoader newSkin = new JXCSkinLoader(itemSet, inventoryView, floorView, spellsManager, facesManager, stats, mapUpdater, defaultKeyBindings, optionManager, experienceTable, skillSet);
-        final GuiFactory guiFactory = new GuiFactory(debugGui ? mouseTracker : null, commands, commandCallback, macros);
-        final GUIElementListener elementListener = new GUIElementListener() {
-            /** {@inheritDoc} */
-            @Override
-            public void mouseClicked(@NotNull final Gui gui) {
-                windowRenderer.raiseDialog(gui);
-            }
-        };
-
-        final JXCSkin skin = newSkin.load(skinSource, server, guiStateManager, tooltipManager, windowRenderer, elementListener, metaserverModel, commandQueue, shortcuts, commands, currentSpellManager, commandCallback, macros, guiFactory);
-        if (resolution != null) {
-            if (skin.getMinResolution().getWidth() > resolution.getWidth() || skin.getMinResolution().getHeight() > resolution.getHeight()) {
-                throw new JXCSkinException("resolution "+resolution+" is not supported by this skin");
-            }
-            if (resolution.getWidth() > skin.getMaxResolution().getWidth() || resolution.getHeight() > skin.getMaxResolution().getHeight()) {
-                throw new JXCSkinException("resolution "+resolution+" is not supported by this skin");
-            }
-        }
-
-        return skin;
     }
 
     /**

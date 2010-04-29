@@ -69,7 +69,7 @@ public class JXCConnection {
      * The {@link Frame} for updating the title.
      */
     @NotNull
-    private final Frame frame;
+    private Frame frame;
 
     /**
      * The {@link Pickup} instance to update.
@@ -168,19 +168,25 @@ public class JXCConnection {
      * @param keybindingsManager the keybindings manager to update
      * @param shortcuts the shortcuts to update
      * @param settings the settings instance to use
-     * @param frame the frame instance for updating the title
      * @param characterPickup the character pickup instance to update
      * @param server the crossfire server connection instance used to connect
      * @param guiStateManager the gui state manager to watch
      */
-    public JXCConnection(@NotNull final KeybindingsManager keybindingsManager, @NotNull final Shortcuts shortcuts, @NotNull final Settings settings, @NotNull final Frame frame, @NotNull final Pickup characterPickup, @NotNull final CrossfireServerConnection server, @NotNull final GuiStateManager guiStateManager) {
+    public JXCConnection(@NotNull final KeybindingsManager keybindingsManager, @NotNull final Shortcuts shortcuts, @NotNull final Settings settings, @NotNull final Pickup characterPickup, @NotNull final CrossfireServerConnection server, @NotNull final GuiStateManager guiStateManager) {
         this.keybindingsManager = keybindingsManager;
         this.shortcuts = shortcuts;
         this.settings = settings;
-        this.frame = frame;
         this.characterPickup = characterPickup;
         this.server = server;
         guiStateManager.addGuiStateListener(guiStateListener);
+    }
+
+    /**
+     * @param frame the frame instance for updating the title
+     */
+    @Deprecated
+    public void init(@NotNull final Frame frame) {
+        this.frame = frame;
         updateTitle();
     }
 
