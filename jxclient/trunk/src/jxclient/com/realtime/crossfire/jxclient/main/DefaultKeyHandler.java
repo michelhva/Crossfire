@@ -23,6 +23,8 @@ package com.realtime.crossfire.jxclient.main;
 
 import com.realtime.crossfire.jxclient.guistate.GuiState;
 import com.realtime.crossfire.jxclient.guistate.GuiStateManager;
+import com.realtime.crossfire.jxclient.server.server.ServerConnection;
+import com.realtime.crossfire.jxclient.server.socket.ClientSocketListener;
 import com.realtime.crossfire.jxclient.window.GuiManager;
 import com.realtime.crossfire.jxclient.window.KeyHandlerListener;
 import org.jetbrains.annotations.NotNull;
@@ -30,7 +32,7 @@ import org.jetbrains.annotations.NotNull;
 /**
  * A {@link KeyHandlerListener} which updates the state of a {@link
  * GuiManager}.
- * @author Andreas Kirschbaum 
+ * @author Andreas Kirschbaum
  */
 public class DefaultKeyHandler implements KeyHandlerListener {
 
@@ -58,13 +60,58 @@ public class DefaultKeyHandler implements KeyHandlerListener {
     private boolean connected = false;
 
     /**
+     * The {@link ClientSocketListener} used to detect connection state
+     * changes.
+     */
+    @NotNull
+    private final ClientSocketListener clientSocketListener = new ClientSocketListener() {
+        /** {@inheritDoc} */
+        @Override
+        public void connecting() {
+            setConnected(true);
+        }
+
+        /** {@inheritDoc} */
+        @Override
+        public void connected() {
+            // ignore
+        }
+
+        /** {@inheritDoc} */
+        @Override
+        public void packetReceived(@NotNull final byte[] buf, final int start, final int end) {
+            // ignore
+        }
+
+        /** {@inheritDoc} */
+        @Override
+        public void packetSent(@NotNull final byte[] buf, final int len) {
+            // ignore
+        }
+
+        /** {@inheritDoc} */
+        @Override
+        public void disconnecting(@NotNull final String reason, final boolean isError) {
+            // ignore
+        }
+
+        /** {@inheritDoc} */
+        @Override
+        public void disconnected(@NotNull final String reason) {
+            setConnected(false);
+        }
+    };
+
+    /**
      * Creates a new instance.
      * @param guiManager the gui manager instance
+     * @param server the server connection to track
      * @param guiStateManager the gui state manager instance
      */
-    public DefaultKeyHandler(@NotNull final GuiManager guiManager, @NotNull final GuiStateManager guiStateManager) {
+    public DefaultKeyHandler(@NotNull final GuiManager guiManager, @NotNull final ServerConnection server, @NotNull final GuiStateManager guiStateManager) {
         this.guiManager = guiManager;
         this.guiStateManager = guiStateManager;
+        server.addClientSocketListener(clientSocketListener);
     }
 
     /**
@@ -103,7 +150,7 @@ public class DefaultKeyHandler implements KeyHandlerListener {
      * Records whether a server connection is active.
      * @param connected whether a server connection is active
      */
-    public void setConnected(final boolean connected) {
+    private void setConnected(final boolean connected) {
         synchronized (semaphoreConnected) {
             this.connected = connected;
         }
@@ -113,7 +160,7 @@ public class DefaultKeyHandler implements KeyHandlerListener {
      * Returns whether a server connection is active.
      * @return whether a server connection is active
      */
-    public boolean isConnected() {
+    private boolean isConnected() {
         synchronized (semaphoreConnected) {
             return connected;
         }
