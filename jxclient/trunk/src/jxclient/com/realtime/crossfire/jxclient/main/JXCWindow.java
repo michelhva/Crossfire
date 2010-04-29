@@ -250,12 +250,6 @@ public class JXCWindow extends JFrame {
     };
 
     /**
-     * The {@link DefaultKeyHandler} attached to {@link #keyHandler}.
-     */
-    @NotNull
-    private final DefaultKeyHandler defaultKeyHandler;
-
-    /**
      * The {@link CrossfireQueryListener} attached to {@link #server}. It parses
      * query messages to open/close dialogs.
      */
@@ -359,7 +353,7 @@ public class JXCWindow extends JFrame {
         this.commandQueue = commandQueue;
         this.semaphoreDrawing = semaphoreDrawing;
         this.guiManager = guiManager;
-        defaultKeyHandler = new DefaultKeyHandler(guiManager, server, guiStateManager);
+        final DefaultKeyHandler defaultKeyHandler = new DefaultKeyHandler(guiManager, server, guiStateManager);
         setDefaultCloseOperation(DO_NOTHING_ON_CLOSE);
         keyHandler = new KeyHandler(debugKeyboard, keybindingsManager, commandQueue, windowRenderer, defaultKeyHandler);
         try {
