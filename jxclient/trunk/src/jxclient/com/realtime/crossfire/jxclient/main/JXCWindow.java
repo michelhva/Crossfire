@@ -76,7 +76,7 @@ public class JXCWindow extends JFrame {
     /**
      * TODO: Remove when more options are implemented in the start screen gui.
      */
-    private static final boolean DISABLE_START_GUI = true;
+    public static final boolean DISABLE_START_GUI = true;
 
     /**
      * The serial version UID.
@@ -617,10 +617,9 @@ public class JXCWindow extends JFrame {
      * @param mouseTracker the mouse tracker to use
      * @param skinName the skin to load
      * @param fullScreen whether full-screen mode should be enabled
-     * @param serverInfo the server to connect to or <code>null</code>
      * @param skinLoader the skin loader instance
      */
-    public void init(@Nullable final Resolution resolution, @NotNull final MouseTracker mouseTracker, @NotNull final String skinName, final boolean fullScreen, @Nullable final String serverInfo, @NotNull final SkinLoader skinLoader) {
+    public void init(@Nullable final Resolution resolution, @NotNull final MouseTracker mouseTracker, @NotNull final String skinName, final boolean fullScreen, @NotNull final SkinLoader skinLoader) {
         JXCSkin skin;
         try {
             skin = skinLoader.loadSkin(skinName);
@@ -668,14 +667,8 @@ public class JXCWindow extends JFrame {
         DialogStateParser.load(skin, windowRenderer);
         keybindingsManager.loadKeybindings();
 
-        if (serverInfo != null) {
-            guiStateManager.connect(serverInfo);
-        } else {
-            guiStateManager.changeGUI(DISABLE_START_GUI ? GuiState.METASERVER : GuiState.START);
-        }
         addMouseListener(mouseTracker);
         addMouseMotionListener(mouseTracker);
-        guiManager.init();
     }
 
     /**
