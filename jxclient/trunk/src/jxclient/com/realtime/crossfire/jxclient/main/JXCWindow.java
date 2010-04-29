@@ -21,7 +21,6 @@
 
 package com.realtime.crossfire.jxclient.main;
 
-import com.realtime.crossfire.jxclient.faces.FacesManager;
 import com.realtime.crossfire.jxclient.gui.gui.JXCWindowRenderer;
 import com.realtime.crossfire.jxclient.gui.gui.MouseTracker;
 import com.realtime.crossfire.jxclient.guistate.GuiState;
@@ -94,12 +93,6 @@ public class JXCWindow extends JFrame {
      */
     @NotNull
     private final GuiStateManager guiStateManager;
-
-    /**
-     * The {@link FacesManager} instance.
-     */
-    @NotNull
-    private final FacesManager facesManager;
 
     /**
      * The {@link ItemSet} instance.
@@ -489,7 +482,6 @@ public class JXCWindow extends JFrame {
         /** {@inheritDoc} */
         @Override
         public void connecting(@NotNull final String serverInfo) {
-            facesManager.reset();
             itemSet.addItemSetListener(itemSetListener);
             server.addCrossfireQueryListener(crossfireQueryListener);
             server.addCrossfireUpdateItemListener(crossfireUpdateItemListener);
@@ -534,7 +526,6 @@ public class JXCWindow extends JFrame {
      * to this writer
      * @param optionManager the option manager instance to use
      * @param guiStateManager the gui state manager to use
-     * @param facesManager the faces manager to use
      * @param itemSet the item set to use
      * @param windowRenderer the window renderer to use
      * @param commandQueue the command queue instance
@@ -544,12 +535,11 @@ public class JXCWindow extends JFrame {
      * @param connection the connection instance
      * @param guiManager the gui manager instance
      */
-    public JXCWindow(@NotNull final CrossfireServerConnection server, @Nullable final Writer debugKeyboard, @NotNull final OptionManager optionManager, @NotNull final GuiStateManager guiStateManager, @NotNull final FacesManager facesManager, @NotNull final ItemSet itemSet, @NotNull final JXCWindowRenderer windowRenderer, @NotNull final CommandQueue commandQueue, @NotNull final Object semaphoreDrawing, @NotNull final Pickup characterPickup, @NotNull final KeybindingsManager keybindingsManager, @NotNull final JXCConnection connection, @NotNull final GuiManager guiManager) {
+    public JXCWindow(@NotNull final CrossfireServerConnection server, @Nullable final Writer debugKeyboard, @NotNull final OptionManager optionManager, @NotNull final GuiStateManager guiStateManager, @NotNull final ItemSet itemSet, @NotNull final JXCWindowRenderer windowRenderer, @NotNull final CommandQueue commandQueue, @NotNull final Object semaphoreDrawing, @NotNull final Pickup characterPickup, @NotNull final KeybindingsManager keybindingsManager, @NotNull final JXCConnection connection, @NotNull final GuiManager guiManager) {
         super("");
         this.server = server;
         this.optionManager = optionManager;
         this.guiStateManager = guiStateManager;
-        this.facesManager = facesManager;
         this.itemSet = itemSet;
         this.windowRenderer = windowRenderer;
         this.commandQueue = commandQueue;
