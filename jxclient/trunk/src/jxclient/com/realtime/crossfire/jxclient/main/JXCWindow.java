@@ -26,9 +26,6 @@ import com.realtime.crossfire.jxclient.gui.gui.MouseTracker;
 import com.realtime.crossfire.jxclient.guistate.GuiState;
 import com.realtime.crossfire.jxclient.guistate.GuiStateListener;
 import com.realtime.crossfire.jxclient.guistate.GuiStateManager;
-import com.realtime.crossfire.jxclient.items.CfItem;
-import com.realtime.crossfire.jxclient.items.ItemSet;
-import com.realtime.crossfire.jxclient.items.ItemSetListener;
 import com.realtime.crossfire.jxclient.queue.CommandQueue;
 import com.realtime.crossfire.jxclient.server.crossfire.CrossfireQueryListener;
 import com.realtime.crossfire.jxclient.server.crossfire.CrossfireServerConnection;
@@ -93,12 +90,6 @@ public class JXCWindow extends JFrame {
      */
     @NotNull
     private final GuiStateManager guiStateManager;
-
-    /**
-     * The {@link ItemSet} instance.
-     */
-    @NotNull
-    private final ItemSet itemSet;
 
     /**
      * The {@link CrossfireServerConnection} to use.
@@ -231,62 +222,6 @@ public class JXCWindow extends JFrame {
          */
         @Override
         public void upditemReceived(final int flags, final int tag, final int valLocation, final int valFlags, final int valWeight, final int valFaceNum, @NotNull final String valName, @NotNull final String valNamePl, final int valAnim, final int valAnimSpeed, final int valNrof) {
-            // ignore
-        }
-
-    };
-
-    /**
-     * The listener to detect a changed player name.
-     */
-    @NotNull
-    private final ItemSetListener itemSetListener = new ItemSetListener() {
-
-        /**
-         * {@inheritDoc}
-         */
-        @Override
-        public void itemAdded(@NotNull final CfItem item) {
-            // ignore
-        }
-
-        /**
-         * {@inheritDoc}
-         */
-        @Override
-        public void itemMoved(@NotNull final CfItem item) {
-            // ignore
-        }
-
-        /**
-         * {@inheritDoc}
-         */
-        @Override
-        public void itemChanged(@NotNull final CfItem item) {
-            // ignore
-        }
-
-        /**
-         * {@inheritDoc}
-         */
-        @Override
-        public void itemRemoved(@NotNull final CfItem item) {
-            // ignore
-        }
-
-        /**
-         * {@inheritDoc}
-         */
-        @Override
-        public void playerChanged(@Nullable final CfItem player) {
-            connection.setCharacter(player == null ? null : player.getName());
-        }
-
-        /**
-         * {@inheritDoc}
-         */
-        @Override
-        public void openContainerChanged(final int tag) {
             // ignore
         }
 
@@ -457,7 +392,6 @@ public class JXCWindow extends JFrame {
         /** {@inheritDoc} */
         @Override
         public void start() {
-            itemSet.removeItemSetListener(itemSetListener);
             server.removeCrossfireQueryListener(crossfireQueryListener);
             server.removeCrossfireUpdateItemListener(crossfireUpdateItemListener);
             if (DISABLE_START_GUI) {
@@ -468,7 +402,6 @@ public class JXCWindow extends JFrame {
         /** {@inheritDoc} */
         @Override
         public void metaserver() {
-            itemSet.removeItemSetListener(itemSetListener);
             server.removeCrossfireQueryListener(crossfireQueryListener);
             server.removeCrossfireUpdateItemListener(crossfireUpdateItemListener);
         }
@@ -482,7 +415,6 @@ public class JXCWindow extends JFrame {
         /** {@inheritDoc} */
         @Override
         public void connecting(@NotNull final String serverInfo) {
-            itemSet.addItemSetListener(itemSetListener);
             server.addCrossfireQueryListener(crossfireQueryListener);
             server.addCrossfireUpdateItemListener(crossfireUpdateItemListener);
         }
@@ -526,7 +458,6 @@ public class JXCWindow extends JFrame {
      * to this writer
      * @param optionManager the option manager instance to use
      * @param guiStateManager the gui state manager to use
-     * @param itemSet the item set to use
      * @param windowRenderer the window renderer to use
      * @param commandQueue the command queue instance
      * @param semaphoreDrawing the semaphore for drawing window contents
@@ -535,12 +466,11 @@ public class JXCWindow extends JFrame {
      * @param connection the connection instance
      * @param guiManager the gui manager instance
      */
-    public JXCWindow(@NotNull final CrossfireServerConnection server, @Nullable final Writer debugKeyboard, @NotNull final OptionManager optionManager, @NotNull final GuiStateManager guiStateManager, @NotNull final ItemSet itemSet, @NotNull final JXCWindowRenderer windowRenderer, @NotNull final CommandQueue commandQueue, @NotNull final Object semaphoreDrawing, @NotNull final Pickup characterPickup, @NotNull final KeybindingsManager keybindingsManager, @NotNull final JXCConnection connection, @NotNull final GuiManager guiManager) {
+    public JXCWindow(@NotNull final CrossfireServerConnection server, @Nullable final Writer debugKeyboard, @NotNull final OptionManager optionManager, @NotNull final GuiStateManager guiStateManager, @NotNull final JXCWindowRenderer windowRenderer, @NotNull final CommandQueue commandQueue, @NotNull final Object semaphoreDrawing, @NotNull final Pickup characterPickup, @NotNull final KeybindingsManager keybindingsManager, @NotNull final JXCConnection connection, @NotNull final GuiManager guiManager) {
         super("");
         this.server = server;
         this.optionManager = optionManager;
         this.guiStateManager = guiStateManager;
-        this.itemSet = itemSet;
         this.windowRenderer = windowRenderer;
         this.commandQueue = commandQueue;
         this.semaphoreDrawing = semaphoreDrawing;
