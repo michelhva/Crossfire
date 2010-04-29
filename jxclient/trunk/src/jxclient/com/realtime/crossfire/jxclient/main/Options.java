@@ -212,7 +212,7 @@ public class Options {
      * Returns the {@link Settings} for restoring/saving settings.
      * @return the settings
      */
-    @Nullable
+    @NotNull
     public Settings getPrefs() {
         return prefs;
     }

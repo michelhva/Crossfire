@@ -21,13 +21,16 @@
 
 package com.realtime.crossfire.jxclient.main;
 
+import com.realtime.crossfire.jxclient.commands.Commands;
 import com.realtime.crossfire.jxclient.commands.Macros;
 import com.realtime.crossfire.jxclient.faces.FaceCache;
 import com.realtime.crossfire.jxclient.faces.FacesManager;
 import com.realtime.crossfire.jxclient.faces.FacesQueue;
 import com.realtime.crossfire.jxclient.faces.FileCache;
+import com.realtime.crossfire.jxclient.gui.gui.GuiFactory;
 import com.realtime.crossfire.jxclient.gui.gui.JXCWindowRenderer;
 import com.realtime.crossfire.jxclient.gui.gui.MouseTracker;
+import com.realtime.crossfire.jxclient.gui.gui.TooltipManager;
 import com.realtime.crossfire.jxclient.guistate.GuiStateManager;
 import com.realtime.crossfire.jxclient.items.FloorView;
 import com.realtime.crossfire.jxclient.items.InventoryComparator;
@@ -42,8 +45,10 @@ import com.realtime.crossfire.jxclient.scripts.ScriptManager;
 import com.realtime.crossfire.jxclient.server.crossfire.CrossfireServerConnection;
 import com.realtime.crossfire.jxclient.server.crossfire.DefaultCrossfireServerConnection;
 import com.realtime.crossfire.jxclient.settings.Filenames;
+import com.realtime.crossfire.jxclient.settings.Settings;
 import com.realtime.crossfire.jxclient.settings.options.OptionException;
 import com.realtime.crossfire.jxclient.settings.options.OptionManager;
+import com.realtime.crossfire.jxclient.settings.options.Pickup;
 import com.realtime.crossfire.jxclient.shortcuts.Shortcuts;
 import com.realtime.crossfire.jxclient.skills.SkillSet;
 import com.realtime.crossfire.jxclient.sound.MusicWatcher;
@@ -57,6 +62,9 @@ import com.realtime.crossfire.jxclient.stats.ExperienceTable;
 import com.realtime.crossfire.jxclient.stats.PoisonWatcher;
 import com.realtime.crossfire.jxclient.stats.Stats;
 import com.realtime.crossfire.jxclient.util.DebugWriter;
+import com.realtime.crossfire.jxclient.window.GuiManager;
+import com.realtime.crossfire.jxclient.window.JXCConnection;
+import com.realtime.crossfire.jxclient.window.KeybindingsManager;
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.IOException;
@@ -173,7 +181,26 @@ public class JXClient {
                                 /** {@inheritDoc} */
                                 @Override
                                 public void run() {
-                                    window[0] = new JXCWindow(server, options.isDebugGui(), debugKeyboardOutputStreamWriter, options.getPrefs(), optionManager, metaserverModel, options.getResolution(), guiStateManager, experienceTable, skillSet, stats, facesManager, itemSet, inventoryView, floorView, mouseTracker, windowRenderer, options.getSkin(), options.isFullScreen(), options.getServer(), macros, mapUpdater, spellsManager, commandQueue, scriptManager, shortcuts);
+                                    final Object semaphoreDrawing = new Object();
+                                    final TooltipManager tooltipManager = new TooltipManager();
+                                    final Pickup characterPickup;
+                                    try {
+                                        characterPickup = new Pickup(commandQueue, optionManager);
+                                    } catch (final OptionException ex) {
+                                        throw new AssertionError();
+                                    }
+                                    final GuiManagerCommandCallback commandCallback = new GuiManagerCommandCallback();
+                                    final Commands commands = new Commands(windowRenderer, commandQueue, server, scriptManager, optionManager, commandCallback, macros);
+                                    final KeybindingsManager keybindingsManager = new KeybindingsManager(commands, commandCallback, macros);
+                                    final Settings settings = options.getPrefs();
+                                    final JXCConnection connection = new JXCConnection(keybindingsManager, shortcuts, settings, characterPickup, server, guiStateManager);
+                                    final GuiFactory guiFactory = new GuiFactory(options.isDebugGui() ? mouseTracker : null, commands, commandCallback, macros);
+                                    final GuiManager guiManager = new GuiManager(guiStateManager, semaphoreDrawing, tooltipManager, settings, server, windowRenderer, guiFactory, keybindingsManager, connection);
+                                    commandCallback.init(guiManager);
+                                    final SkinLoader skinLoader = new SkinLoader(options.isDebugGui(), experienceTable, skillSet, stats, inventoryView, floorView, mapUpdater, spellsManager, mouseTracker, commandCallback, metaserverModel, options.getResolution(), macros, itemSet, facesManager, optionManager, windowRenderer, server, guiStateManager, tooltipManager, commandQueue);
+                                    window[0] = new JXCWindow(server, debugKeyboardOutputStreamWriter, optionManager, guiStateManager, facesManager, itemSet, windowRenderer, commandQueue, semaphoreDrawing, characterPickup, keybindingsManager, connection, guiManager);
+                                    connection.init(window[0]);
+                                    window[0].init(options.getResolution(), mouseTracker, options.getSkin(), options.isFullScreen(), options.getServer(), shortcuts, skinLoader, commands);
                                 }
                             });
                             window[0].waitForTermination();
