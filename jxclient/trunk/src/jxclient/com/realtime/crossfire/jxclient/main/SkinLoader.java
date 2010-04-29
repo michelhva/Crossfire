@@ -173,7 +173,6 @@ public class SkinLoader {
         this.tooltipManager = tooltipManager;
         this.commandQueue = commandQueue;
         this.skinLoader = skinLoader;
-
         this.commands = commands;
         this.shortcuts = shortcuts;
     }
