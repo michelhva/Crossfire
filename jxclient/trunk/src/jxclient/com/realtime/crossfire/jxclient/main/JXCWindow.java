@@ -41,7 +41,6 @@ import com.realtime.crossfire.jxclient.util.Resolution;
 import com.realtime.crossfire.jxclient.util.ResourceUtils;
 import com.realtime.crossfire.jxclient.window.DialogStateParser;
 import com.realtime.crossfire.jxclient.window.GuiManager;
-import com.realtime.crossfire.jxclient.window.JXCConnection;
 import com.realtime.crossfire.jxclient.window.KeyHandler;
 import com.realtime.crossfire.jxclient.window.KeyHandlerListener;
 import com.realtime.crossfire.jxclient.window.KeybindingsManager;
@@ -138,12 +137,6 @@ public class JXCWindow extends JFrame {
      */
     @NotNull
     private final KeybindingsManager keybindingsManager;
-
-    /**
-     * The {@link JXCConnection}.
-     */
-    @NotNull
-    private final JXCConnection connection;
 
     /**
      * Whether a server connection is active.
@@ -463,10 +456,9 @@ public class JXCWindow extends JFrame {
      * @param semaphoreDrawing the semaphore for drawing window contents
      * @param characterPickup the current pickmap mode
      * @param keybindingsManager the keybindings manager instance
-     * @param connection the connection instance
      * @param guiManager the gui manager instance
      */
-    public JXCWindow(@NotNull final CrossfireServerConnection server, @Nullable final Writer debugKeyboard, @NotNull final OptionManager optionManager, @NotNull final GuiStateManager guiStateManager, @NotNull final JXCWindowRenderer windowRenderer, @NotNull final CommandQueue commandQueue, @NotNull final Object semaphoreDrawing, @NotNull final Pickup characterPickup, @NotNull final KeybindingsManager keybindingsManager, @NotNull final JXCConnection connection, @NotNull final GuiManager guiManager) {
+    public JXCWindow(@NotNull final CrossfireServerConnection server, @Nullable final Writer debugKeyboard, @NotNull final OptionManager optionManager, @NotNull final GuiStateManager guiStateManager, @NotNull final JXCWindowRenderer windowRenderer, @NotNull final CommandQueue commandQueue, @NotNull final Object semaphoreDrawing, @NotNull final Pickup characterPickup, @NotNull final KeybindingsManager keybindingsManager, @NotNull final GuiManager guiManager) {
         super("");
         this.server = server;
         this.optionManager = optionManager;
@@ -476,7 +468,6 @@ public class JXCWindow extends JFrame {
         this.semaphoreDrawing = semaphoreDrawing;
         this.characterPickup = characterPickup;
         this.keybindingsManager = keybindingsManager;
-        this.connection = connection;
         this.guiManager = guiManager;
         setDefaultCloseOperation(DO_NOTHING_ON_CLOSE);
         keyHandler = new KeyHandler(debugKeyboard, keybindingsManager, commandQueue, windowRenderer, keyHandlerListener);
