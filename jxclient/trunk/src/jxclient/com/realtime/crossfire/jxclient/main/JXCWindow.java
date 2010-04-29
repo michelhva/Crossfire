@@ -409,7 +409,7 @@ public class JXCWindow extends JFrame {
         /** {@inheritDoc} */
         @Override
         public void preConnecting(@NotNull final String serverInfo) {
-            connection.setHost(serverInfo);
+            // ignore
         }
 
         /** {@inheritDoc} */
