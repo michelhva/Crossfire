@@ -30,7 +30,6 @@ import com.realtime.crossfire.jxclient.server.crossfire.CrossfireQueryListener;
 import com.realtime.crossfire.jxclient.server.crossfire.CrossfireServerConnection;
 import com.realtime.crossfire.jxclient.server.crossfire.CrossfireUpdateItemListener;
 import com.realtime.crossfire.jxclient.server.crossfire.SentReplyListener;
-import com.realtime.crossfire.jxclient.server.socket.ClientSocketListener;
 import com.realtime.crossfire.jxclient.server.socket.ClientSocketState;
 import com.realtime.crossfire.jxclient.settings.options.OptionManager;
 import com.realtime.crossfire.jxclient.skin.skin.JXCSkin;
@@ -184,49 +183,6 @@ public class JXCWindow extends JFrame {
             // ignore
         }
 
-    };
-
-    /**
-     * The {@link ClientSocketListener} used to detect connection state
-     * changes.
-     */
-    @NotNull
-    private final ClientSocketListener clientSocketListener = new ClientSocketListener() {
-        /** {@inheritDoc} */
-        @Override
-        public void connecting() {
-            defaultKeyHandler.setConnected(true);
-        }
-
-        /** {@inheritDoc} */
-        @Override
-        public void connected() {
-            // ignore
-        }
-
-        /** {@inheritDoc} */
-        @Override
-        public void packetReceived(@NotNull final byte[] buf, final int start, final int end) {
-            // ignore
-        }
-
-        /** {@inheritDoc} */
-        @Override
-        public void packetSent(@NotNull final byte[] buf, final int len) {
-            // ignore
-        }
-
-        /** {@inheritDoc} */
-        @Override
-        public void disconnecting(@NotNull final String reason, final boolean isError) {
-            // ignore
-        }
-
-        /** {@inheritDoc} */
-        @Override
-        public void disconnected(@NotNull final String reason) {
-            defaultKeyHandler.setConnected(false);
-        }
     };
 
     /**
@@ -403,7 +359,7 @@ public class JXCWindow extends JFrame {
         this.commandQueue = commandQueue;
         this.semaphoreDrawing = semaphoreDrawing;
         this.guiManager = guiManager;
-        defaultKeyHandler = new DefaultKeyHandler(guiManager, guiStateManager);
+        defaultKeyHandler = new DefaultKeyHandler(guiManager, server, guiStateManager);
         setDefaultCloseOperation(DO_NOTHING_ON_CLOSE);
         keyHandler = new KeyHandler(debugKeyboard, keybindingsManager, commandQueue, windowRenderer, defaultKeyHandler);
         try {
@@ -450,7 +406,6 @@ public class JXCWindow extends JFrame {
             }
 
         });
-        server.addClientSocketListener(clientSocketListener);
         server.addSentReplyListener(sentReplyListener);
         guiStateManager.addGuiStateListener(guiStateListener);
         addKeyListener(keyListener);
