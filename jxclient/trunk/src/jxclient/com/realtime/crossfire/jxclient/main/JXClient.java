@@ -205,7 +205,7 @@ public class JXClient {
                                     final KeyBindings defaultKeyBindings = new KeyBindings(null, commands, commandCallback, macros);
                                     final JXCSkinLoader jxcSkinLoader = new JXCSkinLoader(itemSet, inventoryView, floorView, spellsManager, facesManager, stats, mapUpdater, defaultKeyBindings, optionManager, experienceTable, skillSet);
                                     final SkinLoader skinLoader = new SkinLoader(options.isDebugGui(), mouseTracker, commandCallback, metaserverModel, options.getResolution(), macros, windowRenderer, server, guiStateManager, tooltipManager, commandQueue, jxcSkinLoader, commands, shortcuts);
-                                    final GuiStateListener guiStateListener = new GuiStateListener() {
+                                    guiStateManager.addGuiStateListener(new GuiStateListener() {
 
                                         /**
                                          * {@inheritDoc}
@@ -263,8 +263,7 @@ public class JXClient {
                                             // ignore
                                         }
 
-                                    };
-                                    guiStateManager.addGuiStateListener(guiStateListener);
+                                    });
                                     window[0] = new JXCWindow(server, debugKeyboardOutputStreamWriter, optionManager, guiStateManager, itemSet, windowRenderer, commandQueue, semaphoreDrawing, characterPickup, keybindingsManager, connection, guiManager);
                                     connection.init(window[0]);
                                     window[0].init(options.getResolution(), mouseTracker, options.getSkin(), options.isFullScreen(), skinLoader);
