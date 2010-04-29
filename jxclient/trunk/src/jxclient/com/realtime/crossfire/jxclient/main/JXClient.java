@@ -200,11 +200,11 @@ public class JXClient {
                                     final GuiManager guiManager = new GuiManager(guiStateManager, semaphoreDrawing, tooltipManager, settings, server, windowRenderer, guiFactory, keybindingsManager, connection);
                                     commandCallback.init(guiManager);
                                     final KeyBindings defaultKeyBindings = new KeyBindings(null, commands, commandCallback, macros);
-                                    final JXCSkinLoader newSkin = new JXCSkinLoader(itemSet, inventoryView, floorView, spellsManager, facesManager, stats, mapUpdater, defaultKeyBindings, optionManager, experienceTable, skillSet);
-                                    final SkinLoader skinLoader = new SkinLoader(options.isDebugGui(), mouseTracker, commandCallback, metaserverModel, options.getResolution(), macros, windowRenderer, server, guiStateManager, tooltipManager, commandQueue, newSkin);
+                                    final JXCSkinLoader jxcSkinLoader = new JXCSkinLoader(itemSet, inventoryView, floorView, spellsManager, facesManager, stats, mapUpdater, defaultKeyBindings, optionManager, experienceTable, skillSet);
+                                    final SkinLoader skinLoader = new SkinLoader(options.isDebugGui(), mouseTracker, commandCallback, metaserverModel, options.getResolution(), macros, windowRenderer, server, guiStateManager, tooltipManager, commandQueue, jxcSkinLoader, commands, shortcuts);
                                     window[0] = new JXCWindow(server, debugKeyboardOutputStreamWriter, optionManager, guiStateManager, facesManager, itemSet, windowRenderer, commandQueue, semaphoreDrawing, characterPickup, keybindingsManager, connection, guiManager);
                                     connection.init(window[0]);
-                                    window[0].init(options.getResolution(), mouseTracker, options.getSkin(), options.isFullScreen(), options.getServer(), shortcuts, skinLoader, commands);
+                                    window[0].init(options.getResolution(), mouseTracker, options.getSkin(), options.isFullScreen(), options.getServer(), skinLoader);
                                 }
                             });
                             window[0].waitForTermination();

@@ -21,7 +21,6 @@
 
 package com.realtime.crossfire.jxclient.main;
 
-import com.realtime.crossfire.jxclient.commands.Commands;
 import com.realtime.crossfire.jxclient.faces.FacesManager;
 import com.realtime.crossfire.jxclient.gui.gui.JXCWindowRenderer;
 import com.realtime.crossfire.jxclient.gui.gui.MouseTracker;
@@ -40,7 +39,6 @@ import com.realtime.crossfire.jxclient.server.socket.ClientSocketListener;
 import com.realtime.crossfire.jxclient.server.socket.ClientSocketState;
 import com.realtime.crossfire.jxclient.settings.options.OptionManager;
 import com.realtime.crossfire.jxclient.settings.options.Pickup;
-import com.realtime.crossfire.jxclient.shortcuts.Shortcuts;
 import com.realtime.crossfire.jxclient.skin.skin.JXCSkin;
 import com.realtime.crossfire.jxclient.skin.skin.JXCSkinException;
 import com.realtime.crossfire.jxclient.util.Resolution;
@@ -620,14 +618,12 @@ public class JXCWindow extends JFrame {
      * @param skinName the skin to load
      * @param fullScreen whether full-screen mode should be enabled
      * @param serverInfo the server to connect to or <code>null</code>
-     * @param shortcuts the shortcuts instance
      * @param skinLoader the skin loader instance
-     * @param commands the commands instance
      */
-    public void init(@Nullable final Resolution resolution, @NotNull final MouseTracker mouseTracker, @NotNull final String skinName, final boolean fullScreen, @Nullable final String serverInfo, @NotNull final Shortcuts shortcuts, @NotNull final SkinLoader skinLoader, @NotNull final Commands commands) {
+    public void init(@Nullable final Resolution resolution, @NotNull final MouseTracker mouseTracker, @NotNull final String skinName, final boolean fullScreen, @Nullable final String serverInfo, @NotNull final SkinLoader skinLoader) {
         JXCSkin skin;
         try {
-            skin = skinLoader.loadSkin(skinName, commands, shortcuts);
+            skin = skinLoader.loadSkin(skinName);
         } catch (final JXCSkinException ex) {
             if (skinName.equals(Options.DEFAULT_SKIN)) {
                 System.err.println("cannot load skin "+skinName+": "+ex.getMessage());
@@ -636,7 +632,7 @@ public class JXCWindow extends JFrame {
 
             System.err.println("cannot load skin "+skinName+": "+ex.getMessage()+", trying default skin");
             try {
-                skin = skinLoader.loadSkin(Options.DEFAULT_SKIN, commands, shortcuts);
+                skin = skinLoader.loadSkin(Options.DEFAULT_SKIN);
             } catch (final JXCSkinException ex2) {
                 System.err.println("cannot load default skin "+Options.DEFAULT_SKIN+": "+ex2.getMessage());
                 System.exit(1);
