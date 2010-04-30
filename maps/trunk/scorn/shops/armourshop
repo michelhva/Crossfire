@@ -180,7 +180,7 @@ y 10
 arch event_say
 name scorn/shops/smith.msg
 title Python
-slaying /python/misc/npc_dialog.py
+slaying /python/dialog/npc_dialog.py
 end
 arch NPCGift
 arch eyeshield
