@@ -201,12 +201,12 @@ value 1
 arch event_pickup
 name scorn/Earhorn 20-30>50 0>10
 title Python
-slaying python/dialog/QuestAdvance.py
+slaying python/quests/QuestAdvance.py
 end
 arch event_drop
 name scorn/Earhorn 60
 title Python
-slaying /python/dialog/QuestEssentialUntil.py
+slaying /python/quests/QuestEssentialUntil.py
 end
 end
 end

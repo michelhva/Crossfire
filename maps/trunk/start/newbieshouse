@@ -3321,7 +3321,7 @@ y 10
 arch event_trigger
 name tutorial/keys 0>10
 title Python
-slaying /python/dialog/QuestAdvance.py
+slaying /python/quests/QuestAdvance.py
 end
 end
 arch dungeon_magic
@@ -4310,7 +4310,7 @@ end
 arch event_apply
 name tutorial/keys 40>50
 title Python
-slaying /python/dialog/QuestAdvance.py
+slaying /python/quests/QuestAdvance.py
 end
 end
 arch dungeon_magic
@@ -4625,7 +4625,7 @@ y 5
 arch event_drop
 name tutorial/keys 50
 title Python
-slaying /python/dialog/QuestEssentialUntil.py
+slaying /python/quests/QuestEssentialUntil.py
 end
 end
 arch dungeon_magic
@@ -4953,12 +4953,12 @@ endmsg
 arch event_drop
 name tutorial/keys 50
 title Python
-slaying /python/dialog/QuestEssentialUntil.py
+slaying /python/quests/QuestEssentialUntil.py
 end
 arch event_pickup
 name tutorial/keys 30>40
 title Python
-slaying /python/dialog/QuestAdvance.py
+slaying /python/quests/QuestAdvance.py
 end
 end
 end
@@ -4985,7 +4985,7 @@ y 6
 arch event_trigger
 name tutorial/keys 20>30
 title Python
-slaying /python/dialog/QuestAdvance.py
+slaying /python/quests/QuestAdvance.py
 end
 end
 arch dungeon_magic
@@ -5016,7 +5016,7 @@ y 8
 arch event_trigger
 name tutorial/keys 10>20
 title Python
-slaying /python/dialog/QuestAdvance.py
+slaying /python/quests/QuestAdvance.py
 end
 end
 arch dungeon_magic
