@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 # npc_dialog.py - Dialog helper class
 #
 # Copyright (C) 2007 David Delbecq
@@ -41,7 +42,7 @@
 
 import Crossfire
 import os
-from CFDialog import DialogRule, Dialog
+from CFDialog import DialogRule, Dialog, IncludeRule
 import cjson
 
 location = "defaultdialognamespace"
@@ -66,10 +67,21 @@ def parseJSON(filename):
             location = params["location"]
         for jsonRule in params["rules"]:
             if "include" in jsonRule:
+                shouldinclude = 0
+                if "pre" in jsonRule:
+                    incldialog = Dialog(player, npc, location)
+                    inclrule = IncludeRule(jsonRule["pre"])
+                    # There will only ever be one 'pre' block for an include
+                    shouldinclude = incldialog.matchConditions(inclrule)
+                else:
+                    shouldinclude =1
                 newfiles = jsonRule["include"]
-                # this isn't a 'real' rule, so we don't include it, but we do 
-                # include the results of parsing it.
-                parameters.extend(parseJSON(newfiles))
+                if shouldinclude == 1:
+                    # this isn't a 'real' rule, so we don't include it, but we do 
+                    # include the results of parsing it.
+                    parameters.extend(parseJSON(newfiles))
+                else:
+                    Crossfire.Log(Crossfire.LogDebug, "Ignoring NPC dialog from %s, conditions not met" % newfiles)
             else:
                 parameters.append(jsonRule)
     return parameters

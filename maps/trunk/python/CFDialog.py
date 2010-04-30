@@ -163,6 +163,17 @@ class DialogRule:
     def getRequires(self):
         return self.__requirements
 
+# This is a subclass of the generic dialog rule that we use for determining whether to 
+# 'include' additional rules.
+class IncludeRule(DialogRule):
+    def __init__(self, presemaphores):
+        self.__presems = presemaphores
+        
+    # I could get round doing this by creating a third class to inherit both this and
+    # DialogRule from, but this is the easier approach
+    def getPreconditions(self):
+        return self.__presems
+
 class Dialog:
     # A character is the source that supplies keywords that drive the dialog.
     # The speaker is the NPC that responds to the keywords. A location is an
