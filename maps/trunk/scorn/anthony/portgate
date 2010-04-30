@@ -836,7 +836,7 @@ y 9
 arch event_trigger
 name scorn/PortGate 0-10>20
 title Python
-slaying /python/dialog/QuestAdvance.py
+slaying /python/quests/QuestAdvance.py
 end
 end
 arch check_floor
@@ -846,7 +846,7 @@ y 9
 arch event_trigger
 name scorn/PortPass 0-10>40
 title Python
-slaying /python/dialog/QuestAdvance.py
+slaying /python/quests/QuestAdvance.py
 end
 end
 arch check_floor
@@ -856,7 +856,7 @@ y 9
 arch event_trigger
 name scorn/ScornHero 0-10>40
 title Python
-slaying /python/dialog/QuestAdvance.py
+slaying /python/quests/QuestAdvance.py
 end
 end
 arch check_floor
@@ -866,7 +866,7 @@ y 9
 arch event_trigger
 name scorn/GatePassword 0-20>40
 title Python
-slaying /python/dialog/QuestAdvance.py
+slaying /python/quests/QuestAdvance.py
 end
 end
 arch dungeon_floor
@@ -974,7 +974,7 @@ y 9
 arch event_trigger
 name scorn/PortGate 0-10>20
 title Python
-slaying /python/dialog/QuestAdvance.py
+slaying /python/quests/QuestAdvance.py
 end
 end
 arch check_floor
@@ -984,7 +984,7 @@ y 9
 arch event_trigger
 name scorn/PortPass 0-10>40
 title Python
-slaying /python/dialog/QuestAdvance.py
+slaying /python/quests/QuestAdvance.py
 end
 end
 arch check_floor
@@ -994,7 +994,7 @@ y 9
 arch event_trigger
 name scorn/ScornHero 0-10>40
 title Python
-slaying /python/dialog/QuestAdvance.py
+slaying /python/quests/QuestAdvance.py
 end
 end
 arch check_floor
@@ -1004,7 +1004,7 @@ y 9
 arch event_trigger
 name scorn/GatePassword 0-20>40
 title Python
-slaying /python/dialog/QuestAdvance.py
+slaying /python/quests/QuestAdvance.py
 end
 end
 arch dungeon_floor
@@ -1112,7 +1112,7 @@ y 9
 arch event_trigger
 name scorn/PortGate 0-10>20
 title Python
-slaying /python/dialog/QuestAdvance.py
+slaying /python/quests/QuestAdvance.py
 end
 end
 arch check_floor
@@ -1122,7 +1122,7 @@ y 9
 arch event_trigger
 name scorn/PortPass 0-10>40
 title Python
-slaying /python/dialog/QuestAdvance.py
+slaying /python/quests/QuestAdvance.py
 end
 end
 arch check_floor
@@ -1132,7 +1132,7 @@ y 9
 arch event_trigger
 name scorn/ScornHero 0-10>40
 title Python
-slaying /python/dialog/QuestAdvance.py
+slaying /python/quests/QuestAdvance.py
 end
 end
 arch check_floor
@@ -1142,7 +1142,7 @@ y 9
 arch event_trigger
 name scorn/GatePassword 0-20>40
 title Python
-slaying /python/dialog/QuestAdvance.py
+slaying /python/quests/QuestAdvance.py
 end
 end
 arch dungeon_floor
@@ -1288,7 +1288,7 @@ y 9
 arch event_trigger
 name scorn/PortGate 0-10>20
 title Python
-slaying /python/dialog/QuestAdvance.py
+slaying /python/quests/QuestAdvance.py
 end
 end
 arch check_floor
@@ -1298,7 +1298,7 @@ y 9
 arch event_trigger
 name scorn/PortPass 0-10>40
 title Python
-slaying /python/dialog/QuestAdvance.py
+slaying /python/quests/QuestAdvance.py
 end
 end
 arch check_floor
@@ -1308,7 +1308,7 @@ y 9
 arch event_trigger
 name scorn/ScornHero 0-10>40
 title Python
-slaying /python/dialog/QuestAdvance.py
+slaying /python/quests/QuestAdvance.py
 end
 end
 arch check_floor
@@ -1318,7 +1318,7 @@ y 9
 arch event_trigger
 name scorn/GatePassword 0-20>40
 title Python
-slaying /python/dialog/QuestAdvance.py
+slaying /python/quests/QuestAdvance.py
 end
 end
 arch dungeon_floor

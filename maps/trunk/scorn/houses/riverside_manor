@@ -516,12 +516,12 @@ type 21
 arch event_pickup
 name scorn/WalkingStick 0>10 20-40>50
 title Python
-slaying /python/dialog/QuestAdvance.py
+slaying /python/quests/QuestAdvance.py
 end
 arch event_drop
 name scorn/WalkingStick 60
 title Python
-slaying /python/dialog/QuestEssentialUntil.py
+slaying /python/quests/QuestEssentialUntil.py
 end
 end
 arch table_3
@@ -1656,12 +1656,12 @@ y 19
 arch event_pickup
 name scorn/CoffeeGoose 20-80>90
 title Python
-slaying /python/dialog/QuestAdvance.py
+slaying /python/quests/QuestAdvance.py
 end
 arch event_drop
 name scorn/CoffeeGoose 100
 title Python
-slaying /python/dialog/QuestEssentialUntil.py
+slaying /python/quests/QuestEssentialUntil.py
 end
 end
 arch grass
@@ -2251,7 +2251,7 @@ y 21
 arch event_trigger
 name scorn/CoffeeGoose 50>70
 title Python
-slaying /python/dialog/QuestAdvance.py
+slaying /python/quests/QuestAdvance.py
 end
 end
 arch woodfloor

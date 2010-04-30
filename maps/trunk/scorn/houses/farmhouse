@@ -396,7 +396,7 @@ slaying scornfarmkey
 arch event_drop
 name scorn/TerrysFarm 60
 title Python
-slaying /python/dialog/QuestEssentialUntil.py
+slaying /python/quests/QuestEssentialUntil.py
 end
 end
 end
@@ -408,7 +408,7 @@ end
 arch event_death
 name scorn/TerrysFarm 0-50>70
 title Python
-slaying /python/dialog/QuestAdvance.py
+slaying /python/quests/QuestAdvance.py
 end
 end
 arch woodfloor2
@@ -854,7 +854,7 @@ end
 arch event_death
 name scorn/TerrysFarm 0-50>70
 title Python
-slaying /python/dialog/QuestAdvance.py
+slaying /python/quests/QuestAdvance.py
 end
 end
 arch woodfloor2
@@ -2188,7 +2188,7 @@ face head.111
 arch event_drop
 name scorn/TerrysFarm 60
 title Python
-slaying /python/dialog/QuestEssentialUntil.py
+slaying /python/quests/QuestEssentialUntil.py
 end
 end
 arch big_club
@@ -2208,7 +2208,7 @@ end
 arch event_death
 name scorn/TerrysFarm 30-40>50
 title Python
-slaying /python/dialog/QuestAdvance.py
+slaying /python/quests/QuestAdvance.py
 end
 end
 arch pstone_1
