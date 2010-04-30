@@ -5,7 +5,7 @@ width 20
 height 10
 msg
 Created:  2010-03-22 Cavesomething
-Modified: 2010-04-27 Cavesomething
+Modified: 2010-04-30 Cavesomething
 endmsg
 end
 arch graymarble
@@ -1167,7 +1167,13 @@ end
 arch sign
 msg
 This dancing girl uses rules from multiple files that include each other.
-say a number between 1 and 6, and you will get a response.
+say a number between 1 and 5, and you will get a response.
+If you say either 6 or 7, then she will only understand you if you have
+said something other than 1-5 previously
+
+Demonstrates:
+Dialogs 'include'ing files
+Conditional including
 endmsg
 x 19
 y 1
