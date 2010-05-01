@@ -54,6 +54,11 @@ public enum ClientSocketState {
     ADDME,
 
     /**
+     * The client is connected, and account information is being exchanged.
+     */
+    ACCOUNTINFO,
+
+    /**
      * Connection is fully established.
      */
     CONNECTED,

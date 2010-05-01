@@ -21,6 +21,7 @@
 
 package com.realtime.crossfire.jxclient.main;
 
+import com.realtime.crossfire.jxclient.account.CharacterModel;
 import com.realtime.crossfire.jxclient.commands.Commands;
 import com.realtime.crossfire.jxclient.commands.Macros;
 import com.realtime.crossfire.jxclient.faces.FaceCache;
@@ -142,6 +143,7 @@ public class JXClient {
                     try {
                         final OptionManager optionManager = new OptionManager(options.getPrefs());
                         final MetaserverModel metaserverModel = new MetaserverModel();
+                        final CharacterModel characterModel = new CharacterModel();
                         final Object semaphoreRedraw = new Object();
                         final CrossfireServerConnection server = new DefaultCrossfireServerConnection(semaphoreRedraw, debugProtocolOutputStreamWriter == null ? null : new DebugWriter(debugProtocolOutputStreamWriter), "JXClient " + buildNumber);
                         server.start();
@@ -200,17 +202,17 @@ public class JXClient {
                                     final JXCConnection connection = new JXCConnection(keybindingsManager, shortcuts, settings, characterPickup, server, guiStateManager);
                                     final GuiFactory guiFactory = new GuiFactory(options.isDebugGui() ? mouseTracker : null, commands, commandCallback, macros);
                                     final GuiManager guiManager = new GuiManager(guiStateManager, semaphoreDrawing, tooltipManager, settings, server, windowRenderer, guiFactory, keybindingsManager, connection);
-                                    commandCallback.init(guiManager);
+                                    commandCallback.init(guiManager, server);
                                     final KeyBindings defaultKeyBindings = new KeyBindings(null, commands, commandCallback, macros);
                                     final JXCSkinLoader jxcSkinLoader = new JXCSkinLoader(itemSet, inventoryView, floorView, spellsManager, facesManager, stats, mapUpdater, defaultKeyBindings, optionManager, experienceTable, skillSet);
-                                    final SkinLoader skinLoader = new SkinLoader(options.isDebugGui(), mouseTracker, commandCallback, metaserverModel, options.getResolution(), macros, windowRenderer, server, guiStateManager, tooltipManager, commandQueue, jxcSkinLoader, commands, shortcuts);
+                                    final SkinLoader skinLoader = new SkinLoader(options.isDebugGui(), mouseTracker, commandCallback, metaserverModel, options.getResolution(), macros, windowRenderer, server, guiStateManager, tooltipManager, commandQueue, jxcSkinLoader, commands, shortcuts, characterModel);
                                     new FacesTracker(guiStateManager, facesManager);
                                     new PlayerNameTracker(guiStateManager, connection, itemSet);
                                     new PickupTracker(guiStateManager, server, characterPickup);
                                     new OutputCountTracker(guiStateManager, server, commandQueue);
                                     final DefaultKeyHandler defaultKeyHandler = new DefaultKeyHandler(guiManager, server, guiStateManager);
                                     final KeyHandler keyHandler = new KeyHandler(debugKeyboardOutputStreamWriter, keybindingsManager, commandQueue, windowRenderer, defaultKeyHandler);
-                                    window[0] = new JXCWindow(server, optionManager, guiStateManager, windowRenderer, commandQueue, semaphoreDrawing, guiManager, keyHandler);
+                                    window[0] = new JXCWindow(server, optionManager, guiStateManager, windowRenderer, commandQueue, semaphoreDrawing, guiManager, keyHandler, characterModel);
                                     connection.init(window[0]);
                                     window[0].init(options.getResolution(), mouseTracker, options.getSkin(), options.isFullScreen(), skinLoader);
                                     keybindingsManager.loadKeybindings();

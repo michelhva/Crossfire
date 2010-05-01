@@ -258,6 +258,18 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
     private final Collection<CrossfirePickupListener> crossfirePickupListeners = new CopyOnWriteArrayList<CrossfirePickupListener>();
 
     /**
+     * The {@link CrossfireAccountListener}s to be notified.
+     */
+    @NotNull
+    private final Collection<CrossfireAccountListener> crossfireAccountListeners = new CopyOnWriteArrayList<CrossfireAccountListener>();
+
+    /**
+     * The {@link CrossfireFailureListener}s to be notified.
+     */
+    @NotNull
+    private final Collection<CrossfireFailureListener> crossfireFailureListeners = new CopyOnWriteArrayList<CrossfireFailureListener>();
+
+    /**
      * Buffer to build commands to send. It is shared between all sendXxx()
      * functions. It is used to synchronize these functions.
      */
@@ -274,6 +286,102 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
      * The packet id for the next "ncom" command to send.
      */
     private int packet = 1;
+
+    /**
+     * The command prefix for the "accountlogin" command.
+     */
+    private static final byte[] accountLoginPrefix = {
+      'a',
+      'c',
+      'c',
+      'o',
+      'u',
+      'n',
+      't',
+      'l',
+      'o',
+      'g',
+      'i',
+      'n',
+      ' ',
+    };
+
+    /**
+     * The command prefix for the "accountplay" command.
+     */
+    private static final byte[] accountPlayPrefix = {
+        'a',
+        'c',
+        'c',
+        'o',
+        'u',
+        'n',
+        't',
+        'p',
+        'l',
+        'a',
+        'y',
+        ' ',
+    };
+
+    /**
+     * The command prefix for the "accountaddplayer" command.
+     */
+    private static byte[] accountAddPlayerPrefix = {
+      'a',
+      'c',
+      'c',
+      'o',
+      'u',
+      'n',
+      't',
+      'a',
+      'd',
+      'd',
+      'p',
+      'l',
+      'a',
+      'y',
+      'e',
+      'r',
+      ' ',
+    };
+
+    /**
+     * The command prefix for the "accountnew" command.
+     */
+    private static byte[] accountNewPrefix = {
+      'a',
+      'c',
+      'c',
+      'o',
+      'u',
+      'n',
+      't',
+      'n',
+      'e',
+      'w',
+      ' ',
+    };
+
+    /**
+     * The command prefix for the "createplayer" command.
+     */
+    private static byte[] createPlayerPrefix = {
+      'c',
+      'r',
+      'e',
+      'a',
+      't',
+      'e',
+      'p',
+      'l',
+      'a',
+      'y',
+      'e',
+      'r',
+      ' ',
+    };
 
     /**
      * The command prefix for the "addme" command.
@@ -546,6 +654,11 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
     };
 
     /**
+     * The login method version supported by the server we're connected to.
+     */
+    private int loginMethod = 0;
+
+    /**
      * Creates a new instance.
      * @param redrawSemaphore the semaphore used to synchronized map model
      * updates and map view redraws
@@ -752,6 +865,22 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
      * {@inheritDoc}
      */
     @Override
+    public void addCrossfireAccountListener(@NotNull final CrossfireAccountListener listener) {
+        crossfireAccountListeners.add(listener);
+    }
+
+    /**
+     * {@inheritDoc}
+     */
+    @Override
+    public void removeCrossfireAccountListener(@NotNull final CrossfireAccountListener listener) {
+        crossfireAccountListeners.remove(listener);
+    }
+
+    /**
+     * {@inheritDoc}
+     */
+    @Override
     public void removePacketWatcherListener(@NotNull final ReceivedPacketListener listener) {
         receivedPacketListeners.remove(listener);
     }
@@ -840,6 +969,53 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
             switch (packet[pos++]) {
             case 'a':
                 switch (packet[pos++]) {
+                case 'c':
+                  //accountplayers
+                    if (packet[pos++] != 'c') {
+                        break;
+                    }
+                    if (packet[pos++] != 'o') {
+                        break;
+                    }
+                    if (packet[pos++] != 'u') {
+                        break;
+                    }
+                    if (packet[pos++] != 'n') {
+                        break;
+                    }
+                    if (packet[pos++] != 't') {
+                        break;
+                    }
+                    if (packet[pos++] != 'p') {
+                        break;
+                    }
+                    if (packet[pos++] != 'l') {
+                        break;
+                    }
+                    if (packet[pos++] != 'a') {
+                        break;
+                    }
+                    if (packet[pos++] != 'y') {
+                        break;
+                    }
+                    if (packet[pos++] != 'e') {
+                        break;
+                    }
+                    if (packet[pos++] != 'r') {
+                        break;
+                    }
+                    if (packet[pos++] != 's') {
+                        break;
+                    }
+                    if (packet[pos++] != ' ') {
+                        break;
+                    }
+                    args = pos;
+                    processAccountPlayers(packet, pos, end);
+                    notifyPacketWatcherListenersMixed(packet, start, args, end);
+
+                    return;
+
                 case 'd':
                     if (packet[pos++] != 'd') {
                         break;
@@ -1336,33 +1512,67 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
                 if (packet[pos++] != 'a') {
                     break;
                 }
-                if (packet[pos++] != 'c') {
-                    break;
+                switch(packet[pos++]) {
+                    case 'c':
+                        if (packet[pos++] != 'e') {
+                            break;
+                        }
+                        if (packet[pos++] != '2') {
+                            break;
+                        }
+                        if (packet[pos++] != ' ') {
+                            break;
+                        }
+                        args = pos;
+                        {
+                            final int faceNum = ((packet[pos++]&0xFF)<<8)|(packet[pos++]&0xFF);
+                            final int faceSetNum = packet[pos++]&0xFF;
+                            final int faceChecksum = ((packet[pos++]&0xFF)<<24)|((packet[pos++]&0xFF)<<16)|((packet[pos++]&0xFF)<<8)|(packet[pos++]&0xFF);
+                            final String faceName = new String(packet, pos, end-pos, UTF8).intern();
+                            if (debugProtocol != null) {
+                                debugProtocol.debugProtocolWrite("recv face2 num="+faceNum+" set="+faceSetNum+" checksum="+faceChecksum+" name="+faceName);
+                            }
+                            for (final CrossfireFaceListener crossfireFaceListener : crossfireFaceListeners) {
+                                crossfireFaceListener.faceReceived(faceNum, faceSetNum, faceChecksum, faceName);
+                            }
+                        }
+                        notifyPacketWatcherListenersMixed(packet, start, args, end);
+                        return;
+
+                    case 'i':
+                        if (packet[pos++] != 'l') {
+                            break;
+                        }
+                        if (packet[pos++] != 'u') {
+                            break;
+                        }
+                        if (packet[pos++] != 'r') {
+                            break;
+                        }
+                        if (packet[pos++] != 'e') {
+                            break;
+                        }
+                        if (packet[pos++] != ' ') {
+                            break;
+                        }
+
+                        args = pos;
+                        final String full = new String(packet, pos, end-pos, UTF8);
+                        String command, message;
+                        int idx = full.indexOf(' ');
+                        if (idx == -1) {
+                          command = full;
+                          message = "";
+                        } else {
+                          command = full.substring(0, idx - 1);
+                          message = full.substring(idx + 1);
+                        }
+
+                        for (CrossfireFailureListener crossfireFailureListener : crossfireFailureListeners) {
+                            crossfireFailureListener.failure(command, message);
+                        }
+                        return;
                 }
-                if (packet[pos++] != 'e') {
-                    break;
-                }
-                if (packet[pos++] != '2') {
-                    break;
-                }
-                if (packet[pos++] != ' ') {
-                    break;
-                }
-                args = pos;
-            {
-                final int faceNum = ((packet[pos++]&0xFF)<<8)|(packet[pos++]&0xFF);
-                final int faceSetNum = packet[pos++]&0xFF;
-                final int faceChecksum = ((packet[pos++]&0xFF)<<24)|((packet[pos++]&0xFF)<<16)|((packet[pos++]&0xFF)<<8)|(packet[pos++]&0xFF);
-                final String faceName = new String(packet, pos, end-pos, UTF8).intern();
-                if (debugProtocol != null) {
-                    debugProtocol.debugProtocolWrite("recv face2 num="+faceNum+" set="+faceSetNum+" checksum="+faceChecksum+" name="+faceName);
-                }
-                for (final CrossfireFaceListener crossfireFaceListener : crossfireFaceListeners) {
-                    crossfireFaceListener.faceReceived(faceNum, faceSetNum, faceChecksum, faceName);
-                }
-            }
-            notifyPacketWatcherListenersMixed(packet, start, args, end);
-            return;
 
             case 'g':
                 if (packet[pos++] != 'o') {
@@ -2330,7 +2540,15 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
      */
     private void cmdAddmeSuccess() {
         if (clientSocketState != ClientSocketState.CONNECTED) {
-            setClientSocketState(ClientSocketState.ADDME, ClientSocketState.CONNECTED);
+            if (clientSocketState == ClientSocketState.ADDME) {
+                /* servers without account support */
+                setClientSocketState(ClientSocketState.ADDME, ClientSocketState.CONNECTED);
+            } else if (clientSocketState == ClientSocketState.ACCOUNTINFO) {
+                for (CrossfireAccountListener crossfireAccountListener : crossfireAccountListeners) {
+                    crossfireAccountListener.startPlaying();
+                }
+                setClientSocketState(ClientSocketState.ACCOUNTINFO, ClientSocketState.CONNECTED);
+            }
             negotiateMapSize(preferredMapWidth, preferredMapHeight);
         }
     }
@@ -2523,7 +2741,7 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
      */
     private void cmdVersion(final int csval, final int scval, @NotNull final String vinfo) {
         setClientSocketState(ClientSocketState.VERSION, ClientSocketState.SETUP);
-        sendSetup("want_pickup 1", "faceset 0", "sound2 3", "exp64 1", "map2cmd 1", "darkness 1", "newmapcmd 1", "facecache 1", "extendedTextInfos 1", "itemcmd 2", "spellmon 1", "tick 1", "extended_stats 1");
+        sendSetup("want_pickup 1", "faceset 0", "sound2 3", "exp64 1", "map2cmd 1", "darkness 1", "newmapcmd 1", "facecache 1", "extendedTextInfos 1", "itemcmd 2", "spellmon 1", "tick 1", "extended_stats 1", "loginmethod 1");
         for (final CrossfireStatsListener crossfireStatsListener : crossfireStatsListeners) {
             crossfireStatsListener.setSimpleWeaponSpeed(scval >= 1029);
         }
@@ -2722,8 +2940,140 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
             crossfireExpTableListener.expTableReceived(expTable);
         }
 
-        setClientSocketState(ClientSocketState.REQUESTINFO, ClientSocketState.ADDME);
-        sendAddme();
+        if (loginMethod == 0) {
+          setClientSocketState(ClientSocketState.REQUESTINFO, ClientSocketState.ADDME);
+          sendAddme();
+        } else {
+          setClientSocketState(ClientSocketState.REQUESTINFO, ClientSocketState.ACCOUNTINFO);
+          for (final CrossfireAccountListener crossfireAccountListener : crossfireAccountListeners) {
+            crossfireAccountListener.manageAccount();
+          }
+          if (debugProtocol != null) {
+              debugProtocol.debugProtocolWrite("called " + crossfireAccountListeners.size() + " account listeners");
+          }
+          //sendAccountLogin("Kaori", "P");
+        }
+    }
+
+    /**
+     * Processes a 'accountplayers' server command.
+     * @param packet data to process.
+     * @param startPos first byte to process.
+     * @param endPos end of the data.
+     * @throws UnknownCommandException if the packet is invalid.
+     */
+    private void processAccountPlayers(@NotNull final byte[] packet, final int startPos, final int endPos) throws UnknownCommandException {
+      int pos = startPos;
+      if (debugProtocol != null) {
+        debugProtocol.debugProtocolWrite("processAccountPlayers");
+      }
+
+        for (final CrossfireAccountListener crossfireAccountListener : crossfireAccountListeners) {
+            crossfireAccountListener.startAccountList();
+        }
+
+      /* number of characters */
+      int count = packet[pos++]&0xFF;
+      if (debugProtocol != null) {
+        debugProtocol.debugProtocolWrite("listing " + count + " characters");
+      }
+      while (count > 0) {
+
+        String name = "";
+        String cclass = "";
+        String race = "";
+        String face = "";
+        String party = "";
+        String map = "";
+        short level = 0;
+        short faceNumber = 0;
+
+        while (pos < endPos) {
+          int len = packet[pos++]&0xFF;
+          if (debugProtocol != null) {
+            debugProtocol.debugProtocolWrite("length = " + len);
+          }
+
+          if (len == 0) {
+            /* got all information on a character */
+            if (debugProtocol != null) {
+              debugProtocol.debugProtocolWrite("got character " + name + " (" + race + ")");
+            }
+            count--;
+
+            for (final CrossfireAccountListener crossfireAccountListener : crossfireAccountListeners) {
+                crossfireAccountListener.addAccount(name, cclass, race, face, party, map, level, faceNumber);
+            }
+            break;
+          }
+
+          final int type = packet[pos++]&0xFF;
+
+          /*
+           * #define ACL_NAME        1
+  #define ACL_CLASS       2
+  #define ACL_RACE        3
+  #define ACL_LEVEL       4
+  #define ACL_FACE        5
+  #define ACL_PARTY       6
+  #define ACL_MAP         7
+  #define ACL_FACE_NUM    8
+
+           */
+
+          switch(type) {
+            case 1:
+              name = new String(packet, pos, len - 1, UTF8);
+              if (debugProtocol != null) {
+                debugProtocol.debugProtocolWrite(name);
+              }
+              break;
+            case 2:
+              cclass = new String(packet, pos, len - 1, UTF8);
+              if (debugProtocol != null) {
+                debugProtocol.debugProtocolWrite(cclass);
+              }
+            case 3:
+              race = new String(packet, pos, len - 1, UTF8);
+              if (debugProtocol != null) {
+                debugProtocol.debugProtocolWrite(race);
+              }
+              break;
+            case 4:
+              level = (short)(packet[pos]<<8 | packet[pos+1]);
+              break;
+            case 5:
+              face = new String(packet, pos, len - 1, UTF8);
+              break;
+            case 6:
+              party = new String(packet, pos, len - 1, UTF8);
+              break;
+            case 7:
+              map = new String(packet, pos, len - 1, UTF8);
+              break;
+            case 8:
+              faceNumber = (short)(packet[pos]<<8 | packet[pos+1]);
+              break;
+            default:
+              /** ignore those values we don't understand */
+              if (debugProtocol != null) {
+                debugProtocol.debugProtocolWrite("ignored character type " + type);
+              }
+          }
+
+          pos += len - 1;
+        }
+      }
+      if (pos != endPos) {
+          throw new UnknownCommandException("invalid accountplayers reply, pos = " + pos + " instead of " + endPos);
+      }
+
+        for (final CrossfireAccountListener crossfireAccountListener : crossfireAccountListeners) {
+            crossfireAccountListener.endAccountList();
+        }
+
+      //sendAddme();
+      return;
     }
 
     /**
@@ -2854,6 +3204,19 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
                 // ignore: we do not care whether this option has been ignored
             } else if (option.equals("extended_stats")) {
                 // ignore: we do not care whether this option has been ignored
+            } else if (option.equals("loginmethod")) {
+              if (value.equals("FALSE")) {
+                this.loginMethod = 0;
+                continue;
+              }
+
+              final int method;
+              try {
+                method = Integer.parseInt(value);
+              } catch (final NumberFormatException ex) {
+                throw new UnknownCommandException("the server returned 'setup loginmethod " + value + "'.");
+              }
+              this.loginMethod = method;
             } else {
                 System.err.println("Warning: ignoring unknown setup option from server: "+option+"="+value);
             }
@@ -2888,6 +3251,25 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
         }
     }
 
+    /**
+     * {@inheritDoc}
+     */
+    @Override
+    public void sendAccountLogin(@NotNull String login, @NotNull String password) {
+      if (debugProtocol != null) {
+        debugProtocol.debugProtocolWrite("send accountlogin " + login);
+      }
+      synchronized (writeBuffer) {
+          byteBuffer.clear();
+          byteBuffer.put(accountLoginPrefix);
+          byteBuffer.put((byte)login.length());
+          byteBuffer.put(login.getBytes(UTF8));
+          byteBuffer.put((byte)password.length());
+          byteBuffer.put(password.getBytes(UTF8));
+          writePacket(writeBuffer, byteBuffer.position());
+      }
+
+    }
     /**
      * {@inheritDoc}
      */
@@ -3447,5 +3829,77 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
             crossfireServerConnectionListener.clientSocketStateChanged(nextState);
         }
     }
+
+    public void sendAccountPlay(String name) {
+      if (debugProtocol != null) {
+        debugProtocol.debugProtocolWrite("send accountplay " + name);
+      }
+      synchronized (writeBuffer) {
+          byteBuffer.clear();
+          byteBuffer.put(accountPlayPrefix);
+          byteBuffer.put(name.getBytes(UTF8));
+          writePacket(writeBuffer, byteBuffer.position());
+      }
+    }
+
+  public void sendAccountLink(int force, String login, String password) {
+      if (debugProtocol != null) {
+        debugProtocol.debugProtocolWrite("send accountaddplayer " + login);
+      }
+      synchronized (writeBuffer) {
+          byteBuffer.clear();
+          byteBuffer.put(accountAddPlayerPrefix);
+          byteBuffer.put((byte)force);
+          byteBuffer.put((byte)login.length());
+          byteBuffer.put(login.getBytes(UTF8));
+          byteBuffer.put((byte)password.length());
+          byteBuffer.put(password.getBytes(UTF8));
+          writePacket(writeBuffer, byteBuffer.position());
+      }
+  }
+
+  public void sendAccountCreate(String login, String password) {
+      if (debugProtocol != null) {
+        debugProtocol.debugProtocolWrite("send accountnew " + login);
+      }
+      synchronized (writeBuffer) {
+          byteBuffer.clear();
+          byteBuffer.put(accountNewPrefix);
+          byteBuffer.put((byte)login.length());
+          byteBuffer.put(login.getBytes(UTF8));
+          byteBuffer.put((byte)password.length());
+          byteBuffer.put(password.getBytes(UTF8));
+          writePacket(writeBuffer, byteBuffer.position());
+      }
+  }
+
+  public void sendAccountCharacterCreate(String login, String password) {
+      if (debugProtocol != null) {
+        debugProtocol.debugProtocolWrite("send createplayer " + login);
+      }
+      synchronized (writeBuffer) {
+          byteBuffer.clear();
+          byteBuffer.put(createPlayerPrefix);
+          byteBuffer.put((byte)login.length());
+          byteBuffer.put(login.getBytes(UTF8));
+          byteBuffer.put((byte)password.length());
+          byteBuffer.put(password.getBytes(UTF8));
+          writePacket(writeBuffer, byteBuffer.position());
+      }
+  }
+
+  /**
+   * {@inheritDoc}
+   */
+  public void addCrossfireFailureListener(CrossfireFailureListener listener) {
+    crossfireFailureListeners.add(listener);
+  }
+
+  /**
+   * {@inheritDoc}
+   */
+  public void removeCrossfireFailureListener(CrossfireFailureListener listener) {
+    crossfireFailureListeners.remove(listener);
+  }
 
 }

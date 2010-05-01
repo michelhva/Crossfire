@@ -29,6 +29,7 @@ import com.realtime.crossfire.jxclient.gui.gui.JXCWindowRenderer;
 import com.realtime.crossfire.jxclient.gui.gui.RendererGuiState;
 import com.realtime.crossfire.jxclient.gui.gui.TooltipManager;
 import com.realtime.crossfire.jxclient.gui.label.AbstractLabel;
+import com.realtime.crossfire.jxclient.gui.label.GUIHTMLLabel;
 import com.realtime.crossfire.jxclient.gui.list.GUIMetaElementList;
 import com.realtime.crossfire.jxclient.gui.log.GUILabelLog;
 import com.realtime.crossfire.jxclient.gui.textinput.GUIText;
@@ -367,6 +368,40 @@ public class GuiManager {
     }
 
     /**
+     * Display the main account dialog, to let the player login or create a new account.
+     */
+    public void manageAccount() {
+      if (dialogConnect != null)
+        closeDialog(dialogConnect);
+      windowRenderer.setGuiState(RendererGuiState.ACCOUNT);
+      hideAccountWindows();
+      openDialogByName("account_main");
+    }
+
+    /**
+     * Displays the window with the characters for an account.
+     */
+    public void showCharacters() {
+        if (windowRenderer.getGuiState() != RendererGuiState.ACCOUNT) {
+            windowRenderer.setGuiState(RendererGuiState.ACCOUNT);
+        }
+        hideAccountWindows();
+        openDialogByName("account_characters");
+    }
+
+    /**
+     * Hide all account-related windows.
+     */
+    public void hideAccountWindows() {
+        closeDialogByName("account_login");
+        closeDialogByName("account_create");
+        closeDialogByName("account_characters");
+        closeDialogByName("account_main");
+        closeDialogByName("account_link");
+        closeDialogByName("account_character_new");
+    }
+
+    /**
      * Operns the "quit" dialog. Does nothing if the dialog is open.
      * @return whether the dialog has been opened
      */
@@ -514,6 +549,7 @@ public class GuiManager {
         try {
             dialog = skin.getDialog(name);
         } catch (final JXCSkinException ex) {
+          //System.err.println(ex.getLocalizedMessage());
             return false;
         }
 
@@ -799,6 +835,10 @@ public class GuiManager {
 
             case REQUESTINFO:
                 message = "Requesting information...";
+                break;
+
+              case ACCOUNTINFO:
+                message = "Starting account session...";
                 break;
 
             case ADDME:

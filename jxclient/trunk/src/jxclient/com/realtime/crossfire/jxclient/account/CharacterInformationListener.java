@@ -15,28 +15,18 @@
  * along with JXClient; if not, write to the Free Software
  * Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
  *
- * Copyright (C) 2005-2008 Yann Chachkoff.
- * Copyright (C) 2006-2010 Andreas Kirschbaum.
+ * Copyright (C) 2010 Nicolas Weeger.
  */
 
-package com.realtime.crossfire.jxclient.gui.gui;
+package com.realtime.crossfire.jxclient.account;
 
 /**
- * All gui states of {@link JXCWindowRenderer}.
- * @author Andreas Kirschbaum
+ * Callback when a {@link CharacterInformation} is changed.
+ * @author Nicolas Weeger
  */
-public enum RendererGuiState {
-
-    START,
-
-    META,
-
-    LOGIN,
-
-    NEWCHAR,
-
-    ACCOUNT,
-
-    PLAYING
-
+public interface CharacterInformationListener {
+    /**
+     * The item changed.
+     */
+    void informationChanged();
 }

@@ -234,11 +234,68 @@ public interface CrossfireServerConnection extends ServerConnection {
     void removeSentReplyListener(@NotNull SentReplyListener listener);
 
     /**
+     * Adds a listener to be notified about account events.
+     * @param listener the listener to add.
+     */
+    void addCrossfireAccountListener(@NotNull final CrossfireAccountListener listener);
+
+    /**
+     * Removes a listener to be notified about account events.
+     * @param listener the listener to remove.
+     */
+    void removeCrossfireAccountListener(@NotNull final CrossfireAccountListener listener);
+
+    /**
+     * Adds a listener to be notified of failure messages.
+     * @param listener listener to add.
+     */
+    void addCrossfireFailureListener(@NotNull final CrossfireFailureListener listener);
+    /**
+     * Removes a listener to be notified of failure messages.
+     * @param listener listener to be removed.
+     */
+    void removeCrossfireFailureListener(@NotNull final CrossfireFailureListener listener);
+    /**
      * Pretends that a drawinfo message has been received.
      * @param message the message
      * @param color the color
      */
     void drawInfo(@NotNull String message, int color);
+
+    /**
+     * Ask for an account login.
+     * @param login account login.
+     * @param password account password.
+     */
+    void sendAccountLogin(@NotNull String login, @NotNull String password);
+
+    /**
+     * Send a request to play a character from an account.
+     * @param name character's name to play.
+     */
+    void sendAccountPlay(@NotNull String name);
+
+    /**
+     * Send a request to add an existing character to an account.
+     * @param force 0 to allow failure, 1 to force in certain situations.
+     * @param login character's login.
+     * @param password character's password.
+     */
+    void sendAccountLink(int force, @NotNull String login, @NotNull String password);
+
+    /**
+     * Sends a request to create a new account.
+     * @param login account login.
+     * @param password account password.
+     */
+    void sendAccountCreate(@NotNull String login, @NotNull String password);
+
+    /**
+     * Sends a request to create a new character associated to the account.
+     * @param login character's name.
+     * @param password character's password.
+     */
+    void sendAccountCharacterCreate(@NotNull String login, @NotNull String password);
 
     /**
      * Sends an "addme" command to the server.

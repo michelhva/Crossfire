@@ -21,11 +21,18 @@
 
 package com.realtime.crossfire.jxclient.main;
 
+import com.realtime.crossfire.jxclient.account.CharacterInformation;
+import com.realtime.crossfire.jxclient.account.CharacterModel;
+import com.realtime.crossfire.jxclient.gui.commands.CommandCallback;
+import com.realtime.crossfire.jxclient.gui.commands.CommandList;
+import com.realtime.crossfire.jxclient.gui.commands.NoSuchCommandException;
+import com.realtime.crossfire.jxclient.gui.gui.Gui;
 import com.realtime.crossfire.jxclient.gui.gui.JXCWindowRenderer;
 import com.realtime.crossfire.jxclient.gui.gui.MouseTracker;
 import com.realtime.crossfire.jxclient.guistate.GuiStateListener;
 import com.realtime.crossfire.jxclient.guistate.GuiStateManager;
 import com.realtime.crossfire.jxclient.queue.CommandQueue;
+import com.realtime.crossfire.jxclient.server.crossfire.CrossfireAccountListener;
 import com.realtime.crossfire.jxclient.server.crossfire.CrossfireQueryListener;
 import com.realtime.crossfire.jxclient.server.crossfire.CrossfireServerConnection;
 import com.realtime.crossfire.jxclient.server.crossfire.CrossfireUpdateItemListener;
@@ -113,6 +120,9 @@ public class JXCWindow extends JFrame {
      */
     @NotNull
     private final OptionManager optionManager;
+
+    @NotNull
+    private final CharacterModel characterModel;
 
     /**
      * The {@link WindowFocusListener} registered for this window. It resets the
@@ -330,6 +340,34 @@ public class JXCWindow extends JFrame {
         }
     };
 
+    @NotNull
+    private final CrossfireAccountListener accountListener = new CrossfireAccountListener() {
+      /** {@inheritDoc} */
+      public void manageAccount() {
+        guiManager.manageAccount();
+      }
+
+      public void addAccount(String name, String characterClass, String race, String face, String party, String map, short level, short faceNumber) {
+          CharacterInformation information = new CharacterInformation();
+          information.setName(name);
+          information.setRace(race);
+        characterModel.add(information);
+      }
+
+        public void startAccountList() {
+            characterModel.begin();
+        }
+
+        public void endAccountList() {
+            characterModel.commit();
+            guiManager.showCharacters();
+        }
+
+        public void startPlaying() {
+            guiManager.hideAccountWindows();
+        }
+    };
+
     /**
      * Creates a new instance.
      * @param server the crossfire server connection to use
@@ -341,7 +379,7 @@ public class JXCWindow extends JFrame {
      * @param guiManager the gui manager instance
      * @param keyHandler the key handler for keyboard input
      */
-    public JXCWindow(@NotNull final CrossfireServerConnection server, @NotNull final OptionManager optionManager, @NotNull final GuiStateManager guiStateManager, @NotNull final JXCWindowRenderer windowRenderer, @NotNull final CommandQueue commandQueue, @NotNull final Object semaphoreDrawing, @NotNull final GuiManager guiManager, @NotNull final KeyHandler keyHandler) {
+    public JXCWindow(@NotNull final CrossfireServerConnection server, @NotNull final OptionManager optionManager, @NotNull final GuiStateManager guiStateManager, @NotNull final JXCWindowRenderer windowRenderer, @NotNull final CommandQueue commandQueue, @NotNull final Object semaphoreDrawing, @NotNull final GuiManager guiManager, @NotNull final KeyHandler keyHandler, @NotNull final CharacterModel characterModel) {
         super("");
         this.server = server;
         this.optionManager = optionManager;
@@ -350,6 +388,7 @@ public class JXCWindow extends JFrame {
         this.semaphoreDrawing = semaphoreDrawing;
         this.guiManager = guiManager;
         this.keyHandler = keyHandler;
+        this.characterModel = characterModel;
         setDefaultCloseOperation(DO_NOTHING_ON_CLOSE);
         try {
             setIconImage(ResourceUtils.loadImage(ResourceUtils.APPLICATION_ICON).getImage());
@@ -396,6 +435,7 @@ public class JXCWindow extends JFrame {
 
         });
         server.addSentReplyListener(sentReplyListener);
+        server.addCrossfireAccountListener(accountListener);
         guiStateManager.addGuiStateListener(guiStateListener);
         addKeyListener(keyListener);
     }
@@ -482,5 +522,5 @@ public class JXCWindow extends JFrame {
     public void paint(@NotNull final Graphics g) {
         windowRenderer.repaint();
     }
-
+    
 }
