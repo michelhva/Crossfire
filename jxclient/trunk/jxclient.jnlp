@@ -33,7 +33,6 @@
     <resources>
         <j2se version="1.5+"/>
         <jar href="http://www.ailesse.be/jxclient/jxclient.jar"/>
-        <jar href="http://www.ailesse.be/jxclient/jxcskin_prelude.jar"/>
         <jar href="http://www.ailesse.be/jxclient/javapng-2.0-rc3.jar"/>
     </resources>
     <application-desc main-class="com.realtime.crossfire.jxclient.main.JXClient">
