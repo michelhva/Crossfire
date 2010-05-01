@@ -163,7 +163,7 @@ public class Options {
                 System.out.println(" --debug-screen <log-file>");
                 System.out.println("                : Log messages related to screen resolution.");
                 System.out.println("");
-                System.out.println("Available skins: default, prelude, ragnorok.");
+                System.out.println("Available skins: default, ragnorok.");
                 System.exit(1);
             }
             i++;
