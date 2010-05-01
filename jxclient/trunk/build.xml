@@ -49,7 +49,7 @@
             <compilerarg value="-Xlint:unchecked"/>
         </javac>
     </target>
-    <target name="jar" depends="compile-jxclient,skin.prelude,skin.ragnorok,update-build-properties">
+    <target name="jar" depends="compile-jxclient,copy-skins,update-build-properties">
         <jar destfile="jxclient.jar">
             <fileset dir="${build}/jxclient"/>
             <fileset dir="." includes="resource/application_icon.png"/>
@@ -59,8 +59,7 @@
             <fileset dir="." includes="resource/spells/*.png"/>
             <fileset dir="." includes="resource/splashscreen.png"/>
             <fileset dir="." includes="resource/unknown.png"/>
-            <fileset dir="${build}/skin.ragnorok"/>
-            <fileset dir="${build}/skin.prelude"/>
+            <fileset dir="${build}/skins"/>
             <fileset dir="${build.properties.dir}" includes="build.properties"/>
             <manifest>
                 <attribute name="Main-Class" value="com.realtime.crossfire.jxclient.main.JXClient"/>
@@ -68,26 +67,10 @@
             </manifest>
         </jar>
     </target>
-    <target name="skin.prelude">
-        <delete dir="${build}/skin.prelude/com/realtime/crossfire/jxclient/skins/prelude"/>
-        <copy todir="${build}/skin.prelude/com/realtime/crossfire/jxclient/skins/prelude">
-            <fileset dir="skins/prelude">
-                <include name="*.skin"/>
-                <include name="fonts/**"/>
-                <include name="pictures/**"/>
-                <include name="resolutions"/>
-            </fileset>
-        </copy>
-    </target>
-    <target name="skin.ragnorok">
-        <delete dir="${build}/skin.ragnorok/com/realtime/crossfire/jxclient/skins/ragnorok"/>
-        <copy todir="${build}/skin.ragnorok/com/realtime/crossfire/jxclient/skins/ragnorok">
-            <fileset dir="skins/ragnorok">
-                <include name="*.skin"/>
-                <include name="fonts/**"/>
-                <include name="pictures/**"/>
-                <include name="resolutions"/>
-            </fileset>
+    <target name="copy-skins">
+        <delete dir="${build}/skins"/>
+        <copy todir="${build}/skins/com/realtime/crossfire/jxclient/skins">
+            <fileset dir="skins"/>
         </copy>
     </target>
     <target name="clean">
