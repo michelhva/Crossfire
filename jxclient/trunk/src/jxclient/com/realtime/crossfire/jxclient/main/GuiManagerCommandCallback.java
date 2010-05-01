@@ -25,6 +25,7 @@ import com.realtime.crossfire.jxclient.gui.commands.CommandCallback;
 import com.realtime.crossfire.jxclient.gui.commands.CommandList;
 import com.realtime.crossfire.jxclient.gui.commands.NoSuchCommandException;
 import com.realtime.crossfire.jxclient.gui.gui.Gui;
+import com.realtime.crossfire.jxclient.server.crossfire.CrossfireServerConnection;
 import com.realtime.crossfire.jxclient.window.GuiManager;
 import org.jetbrains.annotations.NotNull;
 
@@ -40,13 +41,19 @@ public class GuiManagerCommandCallback implements CommandCallback {
     @NotNull
     private GuiManager guiManager;
 
+    @NotNull
+    private CrossfireServerConnection server;
+
+    private String lastAccountPassword = null;
+
     /**
      * Creates a new instance.
      * @param guiManager the gui manager to forward to
      */
     @Deprecated
-    public void init(@NotNull final GuiManager guiManager) {
+    public void init(@NotNull final GuiManager guiManager, @NotNull final CrossfireServerConnection server) {
         this.guiManager = guiManager;
+        this.server = server;
     }
 
     /**
@@ -122,4 +129,25 @@ public class GuiManagerCommandCallback implements CommandCallback {
         return guiManager.removeKeyBinding(perCharacter);
     }
 
+    public void accountLogin(String login, String password) {
+        server.sendAccountLogin(login, password);
+        lastAccountPassword = password;
+    }
+
+    public void accountCreate(String login, String password) {
+        server.sendAccountCreate(login, password);
+        lastAccountPassword = password;
+    }
+
+    public void accountPlayCharacter(String name) {
+        server.sendAccountPlay(name);
+    }
+
+    public void accountLink(int force, @NotNull String login, @NotNull String password) {
+        server.sendAccountLink(force, login, password);
+    }
+
+    public void accountCreateCharacter(String login) {
+        server.sendAccountCharacterCreate(login, lastAccountPassword);
+    }
 }

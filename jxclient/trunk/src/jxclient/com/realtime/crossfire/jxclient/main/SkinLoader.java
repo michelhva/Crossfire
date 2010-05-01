@@ -21,6 +21,7 @@
 
 package com.realtime.crossfire.jxclient.main;
 
+import com.realtime.crossfire.jxclient.account.CharacterModel;
 import com.realtime.crossfire.jxclient.commands.Commands;
 import com.realtime.crossfire.jxclient.commands.Macros;
 import com.realtime.crossfire.jxclient.gui.commands.CommandCallback;
@@ -75,6 +76,9 @@ public class SkinLoader {
      */
     @NotNull
     private final MetaserverModel metaserverModel;
+
+    @NotNull
+    private final CharacterModel characterModel;
 
     /**
      * The current spell manager instance for this window.
@@ -160,7 +164,7 @@ public class SkinLoader {
      * @param commands the commands to use
      * @param shortcuts the shortcuts to use
      */
-    public SkinLoader(final boolean debugGui, @NotNull final MouseTracker mouseTracker, @NotNull final CommandCallback commandCallback, @NotNull final MetaserverModel metaserverModel, @Nullable final Resolution resolution, @NotNull final Macros macros, @NotNull final JXCWindowRenderer windowRenderer, @NotNull final CrossfireServerConnection server, @NotNull final GuiStateManager guiStateManager, @NotNull final TooltipManager tooltipManager, @NotNull final CommandQueue commandQueue, @NotNull final JXCSkinLoader skinLoader, @NotNull final Commands commands, @NotNull final Shortcuts shortcuts) {
+    public SkinLoader(final boolean debugGui, @NotNull final MouseTracker mouseTracker, @NotNull final CommandCallback commandCallback, @NotNull final MetaserverModel metaserverModel, @Nullable final Resolution resolution, @NotNull final Macros macros, @NotNull final JXCWindowRenderer windowRenderer, @NotNull final CrossfireServerConnection server, @NotNull final GuiStateManager guiStateManager, @NotNull final TooltipManager tooltipManager, @NotNull final CommandQueue commandQueue, @NotNull final JXCSkinLoader skinLoader, @NotNull final Commands commands, @NotNull final Shortcuts shortcuts, @NotNull final CharacterModel characterModel) {
         this.debugGui = debugGui;
         this.mouseTracker = mouseTracker;
         this.commandCallback = commandCallback;
@@ -175,6 +179,7 @@ public class SkinLoader {
         this.skinLoader = skinLoader;
         this.commands = commands;
         this.shortcuts = shortcuts;
+        this.characterModel = characterModel;
     }
 
     /**
@@ -203,7 +208,7 @@ public class SkinLoader {
             }
         };
 
-        final JXCSkin skin = skinLoader.load(skinSource, server, guiStateManager, tooltipManager, windowRenderer, elementListener, metaserverModel, commandQueue, shortcuts, commands, currentSpellManager, commandCallback, macros, guiFactory);
+        final JXCSkin skin = skinLoader.load(skinSource, server, guiStateManager, tooltipManager, windowRenderer, elementListener, metaserverModel, characterModel, commandQueue, shortcuts, commands, currentSpellManager, commandCallback, macros, guiFactory);
         if (resolution != null) {
             if (skin.getMinResolution().getWidth() > resolution.getWidth() || skin.getMinResolution().getHeight() > resolution.getHeight()) {
                 throw new JXCSkinException("resolution "+resolution+" is not supported by this skin");

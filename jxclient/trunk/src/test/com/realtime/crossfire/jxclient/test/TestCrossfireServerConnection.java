@@ -21,6 +21,7 @@
 
 package com.realtime.crossfire.jxclient.test;
 
+import com.realtime.crossfire.jxclient.server.crossfire.CrossfireAccountListener;
 import com.realtime.crossfire.jxclient.server.crossfire.CrossfireComcListener;
 import com.realtime.crossfire.jxclient.server.crossfire.CrossfireDrawextinfoListener;
 import com.realtime.crossfire.jxclient.server.crossfire.CrossfireDrawinfoListener;
@@ -503,6 +504,30 @@ public class TestCrossfireServerConnection implements CrossfireServerConnection 
      */
     @Override
     public void disconnect(@NotNull final String reason) {
+        Assert.fail();
+    }
+
+    /**
+     * {@inheritDoc}
+     */
+    @Override
+    public void addCrossfireAccountListener(CrossfireAccountListener listener) {
+        Assert.fail();
+    }
+
+    /**
+     * {@inheritDoc}
+     */
+    @Override
+    public void removeCrossfireAccountListener(CrossfireAccountListener listener) {
+        Assert.fail();
+    }
+
+    /**
+     * {@inheritDoc}
+     */
+    @Override
+    public void sendAccountLogin(String login, String password) {
         Assert.fail();
     }
 

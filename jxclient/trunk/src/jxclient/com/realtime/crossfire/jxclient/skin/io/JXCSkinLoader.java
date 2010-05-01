@@ -21,6 +21,7 @@
 
 package com.realtime.crossfire.jxclient.skin.io;
 
+import com.realtime.crossfire.jxclient.account.CharacterModel;
 import com.realtime.crossfire.jxclient.commands.Commands;
 import com.realtime.crossfire.jxclient.commands.Macros;
 import com.realtime.crossfire.jxclient.faces.FacesManager;
@@ -62,6 +63,7 @@ import com.realtime.crossfire.jxclient.gui.keybindings.KeyBindings;
 import com.realtime.crossfire.jxclient.gui.label.AbstractLabel;
 import com.realtime.crossfire.jxclient.gui.label.Alignment;
 import com.realtime.crossfire.jxclient.gui.label.GUIHTMLLabel;
+import com.realtime.crossfire.jxclient.gui.label.GUILabelFailure;
 import com.realtime.crossfire.jxclient.gui.label.GUILabelMessage;
 import com.realtime.crossfire.jxclient.gui.label.GUILabelQuery;
 import com.realtime.crossfire.jxclient.gui.label.GUILabelStats;
@@ -70,6 +72,7 @@ import com.realtime.crossfire.jxclient.gui.label.GUIMultiLineLabel;
 import com.realtime.crossfire.jxclient.gui.label.GUIOneLineLabel;
 import com.realtime.crossfire.jxclient.gui.label.GUISpellLabel;
 import com.realtime.crossfire.jxclient.gui.label.Type;
+import com.realtime.crossfire.jxclient.gui.list.GUICharacterList;
 import com.realtime.crossfire.jxclient.gui.list.GUIItemList;
 import com.realtime.crossfire.jxclient.gui.list.GUIMetaElementList;
 import com.realtime.crossfire.jxclient.gui.log.Fonts;
@@ -340,7 +343,7 @@ public class JXCSkinLoader {
      * @throws JXCSkinException if the skin cannot be loaded
      */
     @NotNull
-    public JXCSkin load(@NotNull final JXCSkinSource skinSource, @NotNull final CrossfireServerConnection crossfireServerConnection, @NotNull final GuiStateManager guiStateManager, @NotNull final TooltipManager tooltipManager, @NotNull final JXCWindowRenderer windowRenderer, @NotNull final GUIElementListener elementListener, @NotNull final MetaserverModel metaserverModel, @NotNull final CommandQueue commandQueue, @NotNull final Shortcuts shortcuts, @NotNull final Commands commands, @NotNull final CurrentSpellManager currentSpellManager, @NotNull final CommandCallback commandCallback, @NotNull final Macros macros, @NotNull final GuiFactory guiFactory) throws JXCSkinException {
+    public JXCSkin load(@NotNull final JXCSkinSource skinSource, @NotNull final CrossfireServerConnection crossfireServerConnection, @NotNull final GuiStateManager guiStateManager, @NotNull final TooltipManager tooltipManager, @NotNull final JXCWindowRenderer windowRenderer, @NotNull final GUIElementListener elementListener, @NotNull final MetaserverModel metaserverModel, @NotNull final CharacterModel characterModel, @NotNull final CommandQueue commandQueue, @NotNull final Shortcuts shortcuts, @NotNull final Commands commands, @NotNull final CurrentSpellManager currentSpellManager, @NotNull final CommandCallback commandCallback, @NotNull final Macros macros, @NotNull final GuiFactory guiFactory) throws JXCSkinException {
         imageParser = new ImageParser(skinSource);
         fontParser = new FontParser(skinSource);
 
@@ -374,19 +377,21 @@ public class JXCSkinLoader {
             skin.addDialog("disconnect");
             skin.addDialog("connect");
             skin.addDialog("start");
+            skin.addDialog("account_main");
+            skin.addDialog("account_characters");
             definedFonts.clear();
             textButtonFactory = null;
             dialogFactory = null;
             checkBoxFactory = null;
             try {
-                load(skinSource, "global", crossfireServerConnection, guiStateManager, tooltipManager, windowRenderer, elementListener, metaserverModel, commandQueue, null, shortcuts, commands, currentSpellManager, commandCallback, macros, nextGroupFace, prevGroupFace);
+                load(skinSource, "global", crossfireServerConnection, guiStateManager, tooltipManager, windowRenderer, elementListener, metaserverModel, characterModel, commandQueue, null, shortcuts, commands, currentSpellManager, commandCallback, macros, nextGroupFace, prevGroupFace);
                 for (; ;) {
                     final String name = skin.getDialogToLoad();
                     if (name == null) {
                         break;
                     }
                     final Gui gui = skin.getDialog(name);
-                    load(skinSource, name, crossfireServerConnection, guiStateManager, tooltipManager, windowRenderer, elementListener, metaserverModel, commandQueue, gui, shortcuts, commands, currentSpellManager, commandCallback, macros, nextGroupFace, prevGroupFace);
+                    load(skinSource, name, crossfireServerConnection, guiStateManager, tooltipManager, windowRenderer, elementListener, metaserverModel, characterModel, commandQueue, gui, shortcuts, commands, currentSpellManager, commandCallback, macros, nextGroupFace, prevGroupFace);
                     gui.setStateChanged(false);
                 }
             } finally {
@@ -428,7 +433,7 @@ public class JXCSkinLoader {
      * @param prevGroupFace the image for "prev group of items"
      * @throws JXCSkinException if the file cannot be loaded
      */
-    private void load(@NotNull final JXCSkinSource skinSource, @NotNull final String dialogName, @NotNull final CrossfireServerConnection server, @NotNull final GuiStateManager guiStateManager, @NotNull final TooltipManager tooltipManager, @NotNull final JXCWindowRenderer windowRenderer, @NotNull final GUIElementListener elementListener, @NotNull final MetaserverModel metaserverModel, @NotNull final CommandQueue commandQueue, @Nullable final Gui gui, @NotNull final Shortcuts shortcuts, @NotNull final Commands commands, @NotNull final CurrentSpellManager currentSpellManager, @NotNull final CommandCallback commandCallback, @NotNull final Macros macros, @NotNull final Image nextGroupFace, @NotNull final Image prevGroupFace) throws JXCSkinException {
+    private void load(@NotNull final JXCSkinSource skinSource, @NotNull final String dialogName, @NotNull final CrossfireServerConnection server, @NotNull final GuiStateManager guiStateManager, @NotNull final TooltipManager tooltipManager, @NotNull final JXCWindowRenderer windowRenderer, @NotNull final GUIElementListener elementListener, @NotNull final MetaserverModel metaserverModel, @NotNull final CharacterModel characterModel, @NotNull final CommandQueue commandQueue, @Nullable final Gui gui, @NotNull final Shortcuts shortcuts, @NotNull final Commands commands, @NotNull final CurrentSpellManager currentSpellManager, @NotNull final CommandCallback commandCallback, @NotNull final Macros macros, @NotNull final Image nextGroupFace, @NotNull final Image prevGroupFace) throws JXCSkinException {
         String resourceName = dialogName+".skin";
 
         definedGUIElements.clear();
@@ -441,7 +446,7 @@ public class JXCSkinLoader {
                 inputStream = skinSource.getInputStream(resourceName);
             }
             try {
-                load(skinSource, dialogName, resourceName, inputStream, server, guiStateManager, tooltipManager, windowRenderer, elementListener, metaserverModel, commandQueue, gui, shortcuts, commands, currentSpellManager, commandCallback, macros, nextGroupFace, prevGroupFace);
+                load(skinSource, dialogName, resourceName, inputStream, server, guiStateManager, tooltipManager, windowRenderer, elementListener, metaserverModel, characterModel, commandQueue, gui, shortcuts, commands, currentSpellManager, commandCallback, macros, nextGroupFace, prevGroupFace);
             } finally {
                 inputStream.close();
             }
@@ -478,7 +483,7 @@ public class JXCSkinLoader {
      * @param prevGroupFace the image for "prev group of items"
      * @throws JXCSkinException if the file cannot be loaded
      */
-    private void load(@NotNull final JXCSkinSource skinSource, @NotNull final String dialogName, @NotNull final String resourceName, @NotNull final InputStream inputStream, @NotNull final CrossfireServerConnection server, @NotNull final GuiStateManager guiStateManager, @NotNull final TooltipManager tooltipManager, @NotNull final JXCWindowRenderer windowRenderer, @NotNull final GUIElementListener elementListener, @NotNull final MetaserverModel metaserverModel, @NotNull final CommandQueue commandQueue, @Nullable final Gui gui, @NotNull final Shortcuts shortcuts, @NotNull final Commands commands, @NotNull final CurrentSpellManager currentSpellManager, @NotNull final CommandCallback commandCallback, @NotNull final Macros macros, @NotNull final Image nextGroupFace, @NotNull final Image prevGroupFace) throws JXCSkinException {
+    private void load(@NotNull final JXCSkinSource skinSource, @NotNull final String dialogName, @NotNull final String resourceName, @NotNull final InputStream inputStream, @NotNull final CrossfireServerConnection server, @NotNull final GuiStateManager guiStateManager, @NotNull final TooltipManager tooltipManager, @NotNull final JXCWindowRenderer windowRenderer, @NotNull final GUIElementListener elementListener, @NotNull final MetaserverModel metaserverModel, @NotNull final CharacterModel characterModel, @NotNull final CommandQueue commandQueue, @Nullable final Gui gui, @NotNull final Shortcuts shortcuts, @NotNull final Commands commands, @NotNull final CurrentSpellManager currentSpellManager, @NotNull final CommandCallback commandCallback, @NotNull final Macros macros, @NotNull final Image nextGroupFace, @NotNull final Image prevGroupFace) throws JXCSkinException {
         final List<GUIElement> addedElements = new ArrayList<GUIElement>();
         boolean addedElementsContainsWildcard = false;
 
@@ -558,6 +563,8 @@ public class JXCSkinLoader {
                             parseLabelMulti(args, tooltipManager, elementListener, lnr);
                         } else if (gui != null && args[0].equals("label_query")) {
                             parseLabelQuery(args, tooltipManager, elementListener, server);
+                        } else if (gui != null && args[0].equals("label_failure")) {
+                            parseLabelFailure(args, tooltipManager, elementListener, server, windowRenderer);
                         } else if (gui != null && args[0].equals("label_message")) {
                             parseLabelMessage(args, tooltipManager, elementListener, server, windowRenderer);
                         } else if (gui != null && args[0].equals("label_text")) {
@@ -610,6 +617,10 @@ public class JXCSkinLoader {
                             parseTextGauge(args, tooltipManager, elementListener, lnr);
                         } else if (args[0].equals("tooltip")) {
                             parseTooltip(args, tooltipManager, elementListener);
+                        } else if (args[0].equals("character_list")) {
+                            parseCharacterList(args, tooltipManager, elementListener, characterModel);
+                        } else if (args[0].equals("hide_input")) {
+                            parseHideInput(args);
                         } else {
                             throw new IOException("unknown keyword '"+args[0]+"'");
                         }
@@ -1398,6 +1409,29 @@ public class JXCSkinLoader {
     }
 
     /**
+     * Parses a "label_failure" command.
+     * @param args the command arguments
+     * @param tooltipManager the tooltip manager to update
+     * @param elementListener the element listener to notify
+     * @param server the server instance to monitor
+     * @param windowRenderer the window renderer to create the element for
+     * @throws IOException if the command cannot be parsed
+     * @throws JXCSkinException if the command cannot be parsed
+     */
+    private void parseLabelFailure(@NotNull final String[] args, @NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final CrossfireServerConnection server, @NotNull final JXCWindowRenderer windowRenderer) throws IOException, JXCSkinException {
+        if (args.length != 8) {
+            throw new IOException("syntax error");
+        }
+
+        final String name = args[1];
+        final Extent extent = parseExtent(args, 2);
+        final Font font = definedFonts.lookup(args[6]);
+        final Color color = ParseUtils.parseColor(args[7]);
+        final GUIElement element = new GUILabelFailure(tooltipManager, elementListener, name, extent, server, windowRenderer, font, color, new Color(0, 0, 0, 0F));
+        insertGuiElement(element);
+    }
+
+    /**
      * Parses a "label_text" command.
      * @param args the command arguments
      * @param tooltipManager the tooltip manager to update
@@ -1804,6 +1838,24 @@ public class JXCSkinLoader {
     }
 
     /**
+     * Parses a "hide_input" command.
+     * @param args the command arguments
+     * @throws IOException if the command cannot be parsed
+     * @throws JXCSkinException if the command cannot be parsed
+     */
+    private void parseHideInput(@NotNull final String[] args) throws IOException, JXCSkinException {
+        if (args.length != 2) {
+            throw new IOException("syntax error");
+        }
+
+        GUIText element = (GUIText)definedGUIElements.lookup(args[1]);
+        if (element == null) {
+            throw new JXCSkinException("can't use hide_input on a non text field " + args[1]);
+        }
+        element.setHideInput(true);
+    }
+
+    /**
      * Parses a "set_modal" command.
      * @param args the command arguments
      * @param gui the gui to modify
@@ -1993,6 +2045,36 @@ public class JXCSkinLoader {
             throw new IOException("invalid resolution: "+resolution);
         }
         return resolution;
+    }
+
+    /**
+     * Parses a "character_list" command.
+     * @param args the command arguments
+     * @param tooltipManager the tooltip manager to update
+     * @param elementListener the element listener to notify
+     * @param metaserverModel the metaserver model to use
+     * @throws IOException if the command cannot be parsed
+     * @throws JXCSkinException if the command cannot be parsed
+     */
+    private void parseCharacterList(@NotNull final String[] args, @NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final CharacterModel characterModel) throws IOException, JXCSkinException {
+        if (args.length != 11) {
+            throw new IOException("syntax error in character_list");
+        }
+
+        final String name = args[1];
+        final Extent extent = parseExtent(args, 2);
+        final int cellWidth = ExpressionParser.parseInt(args[6]);
+        final int cellHeight = ExpressionParser.parseInt(args[7]);
+        final BufferedImage image = args[8].equals("null") ? null : imageParser.getImage(args[8]);
+        final Font font = definedFonts.lookup(args[9]);
+        /*final GUIText text = args[10].equals("null") ? null : guiElementParser.lookupTextElement(args[10]);
+        final AbstractLabel label = args[11].equals("null") ? null : guiElementParser.lookupLabelElement(args[11]);
+        final CommandList connectCommandList = skin.getCommandList(args[12]);
+        final String format = args[13];*/
+        final String tooltip = args[10];
+
+        final GUIElement list = new GUICharacterList(tooltipManager, elementListener, name, extent, cellWidth, cellHeight, image, font, tooltip, characterModel);
+        insertGuiElement(list);
     }
 
     /**

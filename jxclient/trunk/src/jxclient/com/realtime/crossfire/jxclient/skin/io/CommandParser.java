@@ -23,6 +23,11 @@ package com.realtime.crossfire.jxclient.skin.io;
 
 import com.realtime.crossfire.jxclient.commands.Commands;
 import com.realtime.crossfire.jxclient.commands.Macros;
+import com.realtime.crossfire.jxclient.gui.commands.AccountCreateCharacterCommand;
+import com.realtime.crossfire.jxclient.gui.commands.AccountCreateCommand;
+import com.realtime.crossfire.jxclient.gui.commands.AccountLinkCharacterCommand;
+import com.realtime.crossfire.jxclient.gui.commands.AccountLoginCommand;
+import com.realtime.crossfire.jxclient.gui.commands.AccountPlayCharacterCommand;
 import com.realtime.crossfire.jxclient.gui.commands.CommandCallback;
 import com.realtime.crossfire.jxclient.gui.commands.CommandType;
 import com.realtime.crossfire.jxclient.gui.commands.ConnectCommand;
@@ -299,6 +304,16 @@ public class CommandParser {
             }
 
             return new ScrollNextCommand((ActivatableGUIElement)nextElement, (ActivatableGUIElement)element);
+        } else if (command.equals("ACCOUNT_LOGIN")) {
+            return new AccountLoginCommand(commandCallback, element);
+        } else if (command.equals("ACCOUNT_CREATE")) {
+            return new AccountCreateCommand(commandCallback, element);
+        } else if (command.equals("ACCOUNT_PLAY")) {
+            return new AccountPlayCharacterCommand(commandCallback, element);
+        } else if (command.equals("ACCOUNT_LINK")) {
+            return new AccountLinkCharacterCommand(commandCallback, element);
+        } else if (command.equals("ACCOUNT_CREATE_CHARACTER")) {
+            return new AccountCreateCharacterCommand(commandCallback, element);
         } else {
             throw new JXCSkinException("unknown command '"+command+"'");
         }

@@ -42,6 +42,8 @@
 <li><code>keybind.skin</code>: the key binding and unbinding dialogs.</li>
 <li><code>quit.skin</code>: a dialog shown when the client is about to exit. It is opened if the user presses ESC while not connected to a Crossfire server or tries to close the main window.</li>
 <li><code>disconnect.skin</code>: a dialog shown when the client is about to disconnect from a Crossfire server. It is opened if the user presses ESC while connected to a Crossfire server.</li>
+<li><code>account_main.skin</code>: a dialog shown when the client connected to a server handling the new login method. It should let the user login to or create an account.</li>
+<li><code>account_characters</code>: a dialog shown to display the list of characters for an account.</li>
 </ul>
 <p>If these skin files reference other dialogs using the <a href="#command_dialog_open"><code>DIALOG_OPEN</code></a>, <a href="#command_dialog_toggle"><code>DIALOG_TOGGLE</code></a>, or <a href="#command_dialog_close"><code>DIALOG_CLOSE</code></a> commands, more <code>.skin</code> files may be needed.</p>
 
@@ -346,6 +348,7 @@ adds the GUI element &quot;first&quot;, then all defined GUI elements except &qu
 <li><code>META</code>: the server selection screen.</li>
 <li><code>LOGIN</code>: active while a login is in progress. Starts when a Crossfire server is to be connected and ends after a character has been logged in or <code>NEWCHAR</code> becomes active.</li>
 <li><code>NEWCHAR</code>: active while a new character is created. Ends after the character has been created.</li>
+<li><code>ACCOUNT</code>: active when the user manages his account, adding or creating characters. Ends when the user asks to play a character.</li>
 <li><code>PLAYING</code>: active while connected to a Crossfire server and a character is logged in. Stays active during the &quot;Do you want to play again?&quot; dialog after applying a bed to reality.</li>
 </ul></li>
 </ul>
@@ -512,6 +515,17 @@ adds the GUI element &quot;first&quot;, then all defined GUI elements except &qu
 <li>&lt;selected-item-name&gt; the name of a label to display information about the selected item. Can be set to <code>null</code> if no information should be displayed.</li>
 </ul>
 
+<h3>hide_input: instrucs a text field to display entered text as <code>*</code></h3>
+
+<p>syntax:</p>
+<pre>
+    hide_input &lt;element&gt;
+</pre>
+
+<p>precondition: dialog</p>
+
+<p>The &lt;element&gt; must be a text element.</p>
+
 <h3><a name="item">item: display items</a></h3>
 
 <p>syntax:</p>
@@ -623,6 +637,7 @@ Displays a spell known by the character.
     label_html &lt;name&gt; &lt;x&gt; &lt;y&gt; &lt;w&gt; &lt;h&gt; &lt;font&gt; &lt;color&gt; &lt;text...&gt;
     label_multi &lt;name&gt; &lt;x&gt; &lt;y&gt; &lt;w&gt; &lt;h&gt; &lt;font&gt; &lt;color&gt; &lt;text...&gt;
     label_query &lt;name&gt; &lt;x&gt; &lt;y&gt; &lt;w&gt; &lt;h&gt; &lt;font&gt; &lt;color&gt;
+    label_failure &lt;name&gt; &lt;x&gt; &lt;y&gt; &lt;w&gt; &lt;h&gt; &lt;font&gt; &lt;color&gt;
     label_message &lt;name&gt; &lt;x&gt; &lt;y&gt; &lt;w&gt; &lt;h&gt; &lt;font&gt; &lt;color&gt;
     label_text &lt;name&gt; &lt;x&gt; &lt;y&gt; &lt;w&gt; &lt;h&gt; &lt;font&gt; &lt;color&gt; &lt;text...&gt;
     label_stat &lt;name&gt; &lt;x&gt; &lt;y&gt; &lt;w&gt; &lt;h&gt; &lt;font&gt; &lt;color&gt; &lt;stat&gt; &lt;alignment&gt;
@@ -637,6 +652,7 @@ Displays a spell known by the character.
 <li><code>label_html</code> displays a text that may include HTML tags.</li>
 <li><code>label_multi</code> displays the text as multiple lines; lines are separated by newline characters.</li>
 <li><code>label_query</code> displays the last received &quot;query&quot; string.</li>
+<li><code>label_failure</code> displays received &quot;failure&quot; messages.</li>
 <li><code>label_message</code> displays received &quot;drawinfo&quot; and &quot;drawextinfo&quot; messages. Newly received messages are ignored while the dialog containing the label is shown.</li>
 <li><code>label_text</code> display a static string.</li>
 <li><code>label_stat</code> and <code>label_stat2</code> display a stat value. <code>label_stat2</code> changes the text color depending on the stat's state.</li>
@@ -802,6 +818,26 @@ Displays a spell known by the character.
 <li><code>%T</code> inserts the server's uptime in seconds.</li>
 <li><code>%V</code> inserts the server's version.</li>
 </ul></li>
+</ul>
+
+<h3><a name="character_list">character_list: display characters list for an account</a></h3>
+
+<p>syntax:</p>
+<pre>
+    character_list &lt;name&gt; &lt;x&gt; &lt;y&gt; &lt;w&gt; &lt;h&gt; &lt;cell-width&gt; &lt;cell-height&gt; &lt;picture&gt; &lt;font&gt; &lt;text&gt;
+</pre>
+
+<p>precondition: dialog</p>
+
+<p>Defines a GUI element that displays available characters for an account.</p>
+
+<ul>
+<li>&lt;name&gt; is the name of the list.</li>
+<li>&lt;x&gt; &lt;y&gt; &lt;w&gt; &lt;h&gt; is the extent of the list. The location is relative to the dialog.</li>
+<li>&lt;cell-width&gt; &lt;cell-height&gt; is the size of each cell displaying a Crossfire server.</li>
+<li>&lt;picture&gt; is a picture to display in front of the server description. May be <code>null</code> if no picture should be shown.</li>
+<li>&lt;font&gt; is the font to use.</li>
+<li>&lt;text&gt; is a text displayed.</li>
 </ul>
 
 <h3><a name="picture">picture: display pictures</a></h3>
@@ -1013,6 +1049,11 @@ Displays a spell known by the character.
 <li><code>SCROLL &lt;distance&gt;</code>, <code>SCROLL_NEVER &lt;distance&gt;</code>: Scrolls the &lt;element&gt; by the given number of elements. Negative values scroll up, positive values scroll down. Scrolling by zero does nothing. <code>SCROLL_NEVER</code> is identical to <code>SCROLL</code> except that the command always reports &quot;command cannot execute&quot;.</li>
 <li><code>SCROLL_RESET</code>: Resets the &lt;element&gt;'s scroll index to its default value.</li>
 <li><code>SCROLLNEXT &lt;next&gt;</code>: Moves the focus from &lt;element&gt; to &lt;next&gt; if &lt;element&gt; has the focus. Does nothing if &lt;element&gt; is not the active GUI element.</li>
+<li><code>ACCOUNT_LOGIN</code>: Tries to login to an account.</li>
+<li><code>ACCOUNT_CREATE</code>: Tries to create an account.</li>
+<li><code>ACCOUNT_LINK</code>: Tries to link an existing character to the current account.</li>
+<li><code>ACCOUNT_PLAY</code>: Starts playing with the specified character.</li>
+<li><code>ACCOUNT_CREATE_CHARACTER</code>: Tries to create a new character.</li>
 </ul>
 
 <h3><a name="stats">Stats</a></h3>

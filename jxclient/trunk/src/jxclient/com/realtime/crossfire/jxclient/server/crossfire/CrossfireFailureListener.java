@@ -15,28 +15,25 @@
  * along with JXClient; if not, write to the Free Software
  * Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
  *
- * Copyright (C) 2005-2008 Yann Chachkoff.
- * Copyright (C) 2006-2010 Andreas Kirschbaum.
+ * Copyright (C) 2010 Nicolas Weeger.
  */
 
-package com.realtime.crossfire.jxclient.gui.gui;
+package com.realtime.crossfire.jxclient.server.crossfire;
+
+import org.jetbrains.annotations.NotNull;
 
 /**
- * All gui states of {@link JXCWindowRenderer}.
- * @author Andreas Kirschbaum
+ * Interface for listeners interested in the "failure" messages received from the
+ * Crossfire server.
+ * @author Nicolas Weeger
  */
-public enum RendererGuiState {
-
-    START,
-
-    META,
-
-    LOGIN,
-
-    NEWCHAR,
-
-    ACCOUNT,
-
-    PLAYING
-
+public interface CrossfireFailureListener {
+    /**
+     * Command failure received.
+     * @param command command which generated the failure, only the command itself
+     * without any parameter.
+     * @param arguments human-readable message, though the format depends on the
+     * command and the context.
+     */
+    void failure(@NotNull String command, @NotNull String arguments);
 }
