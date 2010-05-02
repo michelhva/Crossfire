@@ -2556,30 +2556,23 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
             }
         } catch (final ArrayIndexOutOfBoundsException ex) {
             if (debugProtocol != null) {
-                debugProtocol.debugProtocolWrite("ArrayIndexOutOfBoundsException while command parsing: "+ex, ex);
+                debugProtocol.debugProtocolWrite("ArrayIndexOutOfBoundsException while command parsing: "+ex+"\n"+HexCodec.hexDump(packet, start, end-start), ex);
             }
         } catch (final StringIndexOutOfBoundsException ex) {
             if (debugProtocol != null) {
-                debugProtocol.debugProtocolWrite("StringIndexOutOfBoundsException while command parsing: "+ex, ex);
+                debugProtocol.debugProtocolWrite("StringIndexOutOfBoundsException while command parsing: "+ex+"\n"+HexCodec.hexDump(packet, start, end-start), ex);
             }
         } catch (final UnknownCommandException ex) {
-            ex.setDetails(packet, start, end);
+            if (debugProtocol != null) {
+                debugProtocol.debugProtocolWrite("UnknownCommandException while command parsing: "+ex+"\n"+HexCodec.hexDump(packet, start, end-start), ex);
+            }
             throw ex;
         }
 
-        if (debugProtocol != null) {
-            final StringBuilder sb = new StringBuilder("recv invalid ");
-            for (int i = start; i < end; i++) {
-                if (i > start) {
-                    sb.append(' ');
-                }
-
-                HexCodec.hexEncode2(sb, packet[i]&0xFF);
-            }
-            debugProtocol.debugProtocolWrite(sb.toString());
-        }
-
         final String command = extractCommand(packet, start, end);
+        if (debugProtocol != null) {
+            debugProtocol.debugProtocolWrite("recv invalid command: "+command+"\n"+HexCodec.hexDump(packet, start, end-start));
+        }
         throw new UnknownCommandException("Cannot parse command: "+command);
     }
 

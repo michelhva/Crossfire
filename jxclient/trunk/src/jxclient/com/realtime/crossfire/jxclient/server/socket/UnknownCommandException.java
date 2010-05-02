@@ -21,7 +21,6 @@
 
 package com.realtime.crossfire.jxclient.server.socket;
 
-import com.realtime.crossfire.jxclient.util.HexCodec;
 import org.jetbrains.annotations.NotNull;
 
 /**
@@ -39,36 +38,11 @@ public class UnknownCommandException extends Exception {
     private static final long serialVersionUID = 1;
 
     /**
-     * Details about the unparsable command.
-     */
-    @NotNull
-    private String details = "";
-
-    /**
      * Creates a new exception with the given text message as a parameter.
      * @param str the message to assign to this exception
      */
     public UnknownCommandException(@NotNull final String str) {
         super(str);
-    }
-
-    /**
-     * Returns details about the unparsable command.
-     * @return the details
-     */
-    @NotNull
-    public String getDetails() {
-        return details;
-    }
-
-    /**
-     * Set the detail information.
-     * @param data contains the raw data bytes of the command
-     * @param start the starting index into <code>data</code>
-     * @param end the end index into <code>data</code>
-     */
-    public void setDetails(@NotNull final byte[] data, final int start, final int end) {
-        details = HexCodec.hexDump(data, start, end-start);
     }
 
 }
