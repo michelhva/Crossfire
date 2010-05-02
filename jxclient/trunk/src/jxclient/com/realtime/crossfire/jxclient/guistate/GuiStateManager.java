@@ -25,6 +25,7 @@ import com.realtime.crossfire.jxclient.server.crossfire.CrossfireServerConnectio
 import com.realtime.crossfire.jxclient.server.crossfire.CrossfireServerConnectionListener;
 import com.realtime.crossfire.jxclient.server.socket.ClientSocketListener;
 import com.realtime.crossfire.jxclient.server.socket.ClientSocketState;
+import java.nio.ByteBuffer;
 import java.util.ArrayList;
 import java.util.Collection;
 import org.jetbrains.annotations.NotNull;
@@ -93,7 +94,7 @@ public class GuiStateManager {
 
         /** {@inheritDoc} */
         @Override
-        public void packetReceived(@NotNull final byte[] buf, final int start, final int end) {
+        public void packetReceived(@NotNull final ByteBuffer packet) {
             // ignore
         }
 

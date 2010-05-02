@@ -27,6 +27,7 @@ import com.realtime.crossfire.jxclient.server.server.ServerConnection;
 import com.realtime.crossfire.jxclient.server.socket.ClientSocketListener;
 import com.realtime.crossfire.jxclient.window.GuiManager;
 import com.realtime.crossfire.jxclient.window.KeyHandlerListener;
+import java.nio.ByteBuffer;
 import org.jetbrains.annotations.NotNull;
 
 /**
@@ -79,7 +80,7 @@ public class DefaultKeyHandler implements KeyHandlerListener {
 
         /** {@inheritDoc} */
         @Override
-        public void packetReceived(@NotNull final byte[] buf, final int start, final int end) {
+        public void packetReceived(@NotNull final ByteBuffer packet) {
             // ignore
         }
 

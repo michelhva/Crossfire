@@ -23,7 +23,7 @@ package com.realtime.crossfire.jxclient.faces;
 
 import com.realtime.crossfire.jxclient.server.crossfire.CrossfireServerConnection;
 import com.realtime.crossfire.jxclient.server.crossfire.CrossfireUpdateFaceListener;
-import java.util.Arrays;
+import java.nio.ByteBuffer;
 import java.util.HashMap;
 import java.util.LinkedList;
 import java.util.List;
@@ -87,8 +87,8 @@ public class AskfaceFaceQueue extends AbstractFaceQueue {
     private final CrossfireUpdateFaceListener crossfireUpdateFaceListener = new CrossfireUpdateFaceListener() {
         /** {@inheritDoc} */
         @Override
-        public void updateFace(final int faceNum, final int faceSetNum, @NotNull final byte[] packet, final int pos, final int len) {
-            faceReceived(faceNum, faceSetNum, packet, pos, len);
+        public void updateFace(final int faceNum, final int faceSetNum, @NotNull final ByteBuffer packet) {
+            faceReceived(faceNum, faceSetNum, packet);
         }
     };
 
@@ -163,10 +163,8 @@ public class AskfaceFaceQueue extends AbstractFaceQueue {
      * @param faceNum the face ID
      * @param faceSetNum the face set
      * @param packet the face data
-     * @param pos the starting position into <code>packet</code>
-     * @param len the length in bytes
      */
-    private void faceReceived(final int faceNum, final int faceSetNum, @NotNull final byte[] packet, final int pos, final int len) {
+    private void faceReceived(final int faceNum, final int faceSetNum, @NotNull final ByteBuffer packet) {
         final Integer faceObject = faceNum;
         synchronized (sync) {
             final Face face = pendingAskfaces.remove(faceObject);
@@ -180,7 +178,9 @@ public class AskfaceFaceQueue extends AbstractFaceQueue {
                     assert false;
                 }
 
-                processFaceData(face, Arrays.copyOfRange(packet, pos, pos+len));
+                final byte[] data = new byte[packet.remaining()];
+                packet.get(data);
+                processFaceData(face, data);
             }
             sendAskface();
         }

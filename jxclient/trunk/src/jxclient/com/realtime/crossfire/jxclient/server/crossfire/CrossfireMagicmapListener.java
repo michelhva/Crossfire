@@ -21,6 +21,7 @@
 
 package com.realtime.crossfire.jxclient.server.crossfire;
 
+import java.nio.ByteBuffer;
 import org.jetbrains.annotations.NotNull;
 
 /**
@@ -52,8 +53,7 @@ public interface CrossfireMagicmapListener {
      * @param px the x-coordinate of the player
      * @param py the y-coordinate of the player
      * @param data the data describing tiles
-     * @param pos the index of the first valid byte in <code>data</code>
      */
-    void commandMagicmapReceived(int width, int height, int px, int py, @NotNull byte[] data, int pos);
+    void commandMagicmapReceived(int width, int height, int px, int py, @NotNull ByteBuffer data);
 
 }

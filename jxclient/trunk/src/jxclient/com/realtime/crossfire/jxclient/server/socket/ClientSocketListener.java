@@ -21,6 +21,7 @@
 
 package com.realtime.crossfire.jxclient.server.socket;
 
+import java.nio.ByteBuffer;
 import org.jetbrains.annotations.NotNull;
 
 /**
@@ -41,12 +42,10 @@ public interface ClientSocketListener {
 
     /**
      * Called whenever a packet is received from the Crossfire server.
-     * @param buf the packet contents; must not be modified by client code
-     * @param start the start index of the packet in <code>buf</code>
-     * @param end the end index of the packet in <code>buf</code>
+     * @param packet the packet contents
      * @throws UnknownCommandException if the packet cannot be processed
      */
-    void packetReceived(@NotNull byte[] buf, int start, int end) throws UnknownCommandException;
+    void packetReceived(@NotNull ByteBuffer packet) throws UnknownCommandException;
 
     /**
      * Called whenever a packet has been sent to the Crossfire server.

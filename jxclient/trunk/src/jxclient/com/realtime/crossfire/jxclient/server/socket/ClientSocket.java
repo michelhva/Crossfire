@@ -29,6 +29,7 @@ import java.net.SocketAddress;
 import java.net.SocketException;
 import java.nio.BufferOverflowException;
 import java.nio.ByteBuffer;
+import java.nio.ByteOrder;
 import java.nio.channels.SelectableChannel;
 import java.nio.channels.SelectionKey;
 import java.nio.channels.Selector;
@@ -520,9 +521,11 @@ public class ClientSocket {
             final int end = start+inputLen;
             inputBuffer.position(start+inputLen);
             inputLen = -1;
+            final ByteBuffer packet = ByteBuffer.wrap(inputBuf, start, end-start);
+            packet.order(ByteOrder.BIG_ENDIAN);
             try {
                 for (final ClientSocketListener clientSocketListener : clientSocketListeners) {
-                    clientSocketListener.packetReceived(inputBuf, start, end);
+                    clientSocketListener.packetReceived(packet);
                 }
             } catch (final UnknownCommandException ex) {
                 disconnect(ex.getMessage(), true);
