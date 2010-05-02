@@ -43,6 +43,7 @@ import com.realtime.crossfire.jxclient.server.crossfire.CrossfireUpdateItemListe
 import com.realtime.crossfire.jxclient.server.crossfire.CrossfireUpdateMapListener;
 import com.realtime.crossfire.jxclient.server.crossfire.MapSizeListener;
 import com.realtime.crossfire.jxclient.server.crossfire.SentReplyListener;
+import com.realtime.crossfire.jxclient.server.crossfire.CrossfireFailureListener;
 import com.realtime.crossfire.jxclient.server.server.ReceivedPacketListener;
 import com.realtime.crossfire.jxclient.server.socket.ClientSocketListener;
 import org.jetbrains.annotations.NotNull;
@@ -527,7 +528,55 @@ public class TestCrossfireServerConnection implements CrossfireServerConnection 
      * {@inheritDoc}
      */
     @Override
+    public void addCrossfireFailureListener(@NotNull final CrossfireFailureListener listener) {
+        Assert.fail();
+    }
+
+    /**
+     * {@inheritDoc}
+     */
+    @Override
+    public void removeCrossfireFailureListener(@NotNull final CrossfireFailureListener listener) {
+        Assert.fail();
+    }
+
+    /**
+     * {@inheritDoc}
+     */
+    @Override
     public void sendAccountLogin(String login, String password) {
+        Assert.fail();
+    }
+
+    /**
+     * {@inheritDoc}
+     */
+    @Override
+    public void sendAccountPlay(@NotNull final String name) {
+        Assert.fail();
+    }
+
+    /**
+     * {@inheritDoc}
+     */
+    @Override
+    public void sendAccountLink(final int force, @NotNull final String login, @NotNull final String password) {
+        Assert.fail();
+    }
+
+    /**
+     * {@inheritDoc}
+     */
+    @Override
+    public void sendAccountCreate(@NotNull final String login, @NotNull final String password) {
+        Assert.fail();
+    }
+
+    /**
+     * {@inheritDoc}
+     */
+    @Override
+    public void sendAccountCharacterCreate(@NotNull final String login, @NotNull final String password) {
         Assert.fail();
     }
 
