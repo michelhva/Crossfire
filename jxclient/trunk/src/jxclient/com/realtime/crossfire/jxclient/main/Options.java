@@ -144,13 +144,13 @@ public class Options {
                 System.out.println("");
                 System.out.println("Available options:");
                 System.out.println(" --no-full-screen");
-//                System.out.println(" -N"); // not advertised as it is considered deprecated
+                //System.out.println(" -N"); // not advertised as it is considered deprecated
                 System.out.println(" -n             : Disable full-screen mode.");
                 System.out.println(" --resolution <width>x<height>");
                 System.out.println(" -r <width>x<height>");
                 System.out.println("                : Resolution to use. [default is maximum not exceeding screen]");
                 System.out.println(" --skin <skin>");
-//                System.out.println(" -S <skin>"); // not advertised as it is considered deprecated
+                //System.out.println(" -S <skin>"); // not advertised as it is considered deprecated
                 System.out.println(" -s <skin>      : Skin name to use.");
                 System.out.println(" --opengl       : Enable the OpenGL rendering pipeline.");
                 System.out.println(" --server <host>: Select a server to connect to; skips main and metaserver");

@@ -110,8 +110,8 @@ public class GUIItemList extends GUIList {
     };
 
     /**
-     * The {@link GUIElementChangedListener} attached to all {@link
-     * GUIItemItem} instances in the list.
+     * The {@link GUIElementChangedListener} attached to all {@link GUIItemItem}
+     * instances in the list.
      */
     @NotNull
     private final GUIElementChangedListener itemChangedListener = new GUIElementChangedListener() {

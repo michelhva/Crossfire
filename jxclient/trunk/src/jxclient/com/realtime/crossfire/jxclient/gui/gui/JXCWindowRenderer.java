@@ -106,10 +106,9 @@ public class JXCWindowRenderer {
     private final DisplayMode defaultDisplayMode;
 
     /**
-     * The current {@link BufferStrategy}. Set to <code>null</code> until
-     * {@link #setFullScreenMode(Frame, Resolution)} or {@link
-     * #setWindowMode(Frame, Resolution, Resolution, boolean)} has been
-     * called.
+     * The current {@link BufferStrategy}. Set to <code>null</code> until {@link
+     * #setFullScreenMode(Frame, Resolution)} or {@link #setWindowMode(Frame,
+     * Resolution, Resolution, boolean)} has been called.
      */
     @Nullable
     private BufferStrategy bufferStrategy = null;
@@ -425,7 +424,7 @@ public class JXCWindowRenderer {
 
         final DisplayMode currentDisplayMode = graphicsDevice.getDisplayMode();
         debugScreenWrite("setResolutionPre: current display mode="+currentDisplayMode.getWidth()+"x"+currentDisplayMode.getHeight());
-        if (frame == this.frame && !isFullScreen && bufferStrategy !=null && (resolution == null || resolution.getWidth() == windowWidth && resolution.getHeight() == windowHeight)) {
+        if (frame == this.frame && !isFullScreen && bufferStrategy != null && (resolution == null || resolution.getWidth() == windowWidth && resolution.getHeight() == windowHeight)) {
             debugScreenWrite("setResolutionPre: no change needed");
             debugScreenWrite("setResolutionPre: success");
             return true;

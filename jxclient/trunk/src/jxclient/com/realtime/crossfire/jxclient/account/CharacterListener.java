@@ -25,8 +25,10 @@ package com.realtime.crossfire.jxclient.account;
  * @author Nicolas Weeger
  */
 public interface CharacterListener {
+
     /**
      * Items were added or removed.
      */
     void numberOfItemsChanged();
+
 }

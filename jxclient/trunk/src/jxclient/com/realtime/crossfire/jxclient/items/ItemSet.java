@@ -119,8 +119,8 @@ public class ItemSet {
     }
 
     /**
-     * Returns a list of items in a given location. The returned list may not
-     * be modified by the caller.
+     * Returns a list of items in a given location. The returned list may not be
+     * modified by the caller.
      * @param location the location
      * @return the list of items
      */
@@ -150,7 +150,7 @@ public class ItemSet {
      * @param notifyListeners whether listeners should be notified about the
      * removal
      * @return the index where the item has been removed from or
-     * <code>-1</code>
+     *         <code>-1</code>
      */
     private int removeItemByTag(final int tag, final boolean notifyListeners) {
         synchronized (sync) {
@@ -444,7 +444,7 @@ public class ItemSet {
      * @param tag the item's tag
      * @param index the index of the inventory item to return
      * @return the inventory item or <code>null</code> if the index does not
-     * exist
+     *         exist
      */
     @Nullable
     public CfItem getInventoryItem(final int tag, final int index) {

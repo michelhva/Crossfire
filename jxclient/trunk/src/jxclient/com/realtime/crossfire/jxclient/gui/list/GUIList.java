@@ -138,8 +138,8 @@ public abstract class GUIList extends ActivatableGUIElement implements GUIScroll
      * @param cellWidth the width of each cell
      * @param cellHeight the height of each cell
      * @param listCellRenderer the renderer for the list
-     * @param doubleClickCommandList the command list to execute on double-click or
-     * <code>null</code> to ignore double-clicks
+     * @param doubleClickCommandList the command list to execute on double-click
+     * or <code>null</code> to ignore double-clicks
      */
     protected GUIList(@NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final String name, @NotNull final Extent extent, final int cellWidth, final int cellHeight, @NotNull final GUIListCellRenderer listCellRenderer, @Nullable final CommandList doubleClickCommandList) {
         super(tooltipManager, elementListener, name, extent, Transparency.TRANSLUCENT);

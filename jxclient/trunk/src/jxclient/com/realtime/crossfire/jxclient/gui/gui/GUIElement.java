@@ -69,8 +69,8 @@ public abstract class GUIElement extends JComponent {
 
     /**
      * The backbuffer image of this element. It is updated in {@link #render()}
-     * and {@link #render(Graphics2D)}. {@link #paintComponent(Graphics)}
-     * copies the contents to screen.
+     * and {@link #render(Graphics2D)}. {@link #paintComponent(Graphics)} copies
+     * the contents to screen.
      */
     @Nullable
     private BufferedImage bufferedImage;

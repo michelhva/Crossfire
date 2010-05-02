@@ -100,7 +100,7 @@ public class JXClient {
      */
     public static void main(@NotNull final String[] args) {
         final String buildNumber = getBuildNumber();
-        System.out.println("JXClient " + buildNumber + " - Crossfire Java Client");
+        System.out.println("JXClient "+buildNumber+" - Crossfire Java Client");
         System.out.println("(C)2005 by Lauwenmark.");
         System.out.println("This software is placed under the GPL License");
         final Options options = new Options();
@@ -145,7 +145,7 @@ public class JXClient {
                         final MetaserverModel metaserverModel = new MetaserverModel();
                         final CharacterModel characterModel = new CharacterModel();
                         final Object semaphoreRedraw = new Object();
-                        final CrossfireServerConnection server = new DefaultCrossfireServerConnection(semaphoreRedraw, debugProtocolOutputStreamWriter == null ? null : new DebugWriter(debugProtocolOutputStreamWriter), "JXClient " + buildNumber);
+                        final CrossfireServerConnection server = new DefaultCrossfireServerConnection(semaphoreRedraw, debugProtocolOutputStreamWriter == null ? null : new DebugWriter(debugProtocolOutputStreamWriter), "JXClient "+buildNumber);
                         server.start();
                         try {
                             final GuiStateManager guiStateManager = new GuiStateManager(server);

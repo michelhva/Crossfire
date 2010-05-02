@@ -44,14 +44,14 @@ public class AccountPlayCharacterCommand implements GUICommand {
     @NotNull
     private final GUIElement element;
 
-     /**
-      * Creates a new instance.
-      * @param commandCallback what to inform of the request.
-      * @param button element to find the Gui for the other fields.
-      */
+    /**
+     * Creates a new instance.
+     * @param commandCallback what to inform of the request.
+     * @param button element to find the Gui for the other fields.
+     */
     public AccountPlayCharacterCommand(@NotNull final CommandCallback commandCallback, @NotNull final GUIElement button) {
         this.commandCallback = commandCallback;
-         element = button;
+        element = button;
     }
 
     /**

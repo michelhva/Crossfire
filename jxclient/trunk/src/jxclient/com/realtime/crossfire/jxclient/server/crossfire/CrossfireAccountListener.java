@@ -27,38 +27,38 @@ import org.jetbrains.annotations.NotNull;
  * received from the Crossfire server.
  * @author Nicolas Weeger
  */
-public interface CrossfireAccountListener
-{
-  /**
-   * Client should display the account management dialog.
-   */
-  void manageAccount();
+public interface CrossfireAccountListener {
 
-  /**
-   * Starting to receive information for the list of characters in an account.
-   */
-  void startAccountList();
+    /**
+     * Client should display the account management dialog.
+     */
+    void manageAccount();
 
-  /**
-   * Information about a character in an account was received.
-   * @param name character name.
-   * @param characterClass character's class.
-   * @param race character's race.
-   * @param face character's face name.
-   * @param party last party the character was in.
-   * @param map where the player was in when she logged out.
-   * @param level last character level.
-   * @param faceNumber identifier of the face.
-   */
-  void addAccount(@NotNull String name, @NotNull String characterClass, @NotNull String race, @NotNull String face, @NotNull String party, @NotNull String map, int level, int faceNumber);
+    /**
+     * Starting to receive information for the list of characters in an account.
+     */
+    void startAccountList();
 
-  /**
-   * End of character information for an account.
-   */
-  void endAccountList();
+    /**
+     * Information about a character in an account was received.
+     * @param name character name.
+     * @param characterClass character's class.
+     * @param race character's race.
+     * @param face character's face name.
+     * @param party last party the character was in.
+     * @param map where the player was in when she logged out.
+     * @param level last character level.
+     * @param faceNumber identifier of the face.
+     */
+    void addAccount(@NotNull String name, @NotNull String characterClass, @NotNull String race, @NotNull String face, @NotNull String party, @NotNull String map, int level, int faceNumber);
 
-  /**
-   * The client should switch to playing mode.
-   */
-  void startPlaying();
+    /**
+     * End of character information for an account.
+     */
+    void endAccountList();
+
+    /**
+     * The client should switch to playing mode.
+     */
+    void startPlaying();
 }

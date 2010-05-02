@@ -60,6 +60,7 @@ public class GUILabelMessage extends GUIMultiLineLabel {
      */
     @NotNull
     private final JXCWindowRenderer windowRenderer;
+
     /**
      * The {@link CrossfireDrawinfoListener} registered to receive drawinfo
      * messages.

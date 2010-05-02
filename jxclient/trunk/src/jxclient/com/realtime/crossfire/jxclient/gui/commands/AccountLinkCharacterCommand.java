@@ -43,14 +43,14 @@ public class AccountLinkCharacterCommand implements GUICommand {
     @NotNull
     private final GUIElement element;
 
-     /**
-      * Creates a new instance.
-      * @param commandCallback what to inform of the request.
-      * @param button element to find the Gui for the other fields.
-      */
+    /**
+     * Creates a new instance.
+     * @param commandCallback what to inform of the request.
+     * @param button element to find the Gui for the other fields.
+     */
     public AccountLinkCharacterCommand(@NotNull final CommandCallback commandCallback, @NotNull final GUIElement button) {
         this.commandCallback = commandCallback;
-         element = button;
+        element = button;
     }
 
     /**
@@ -74,7 +74,7 @@ public class AccountLinkCharacterCommand implements GUICommand {
         final GUIText l = gui.getFirstElement(GUIText.class, "character_login");
         final GUIText p = gui.getFirstElement(GUIText.class, "character_password");
 
-        if ((l == null) || (p==null)) {
+        if ((l == null) || (p == null)) {
             return;
         }
 

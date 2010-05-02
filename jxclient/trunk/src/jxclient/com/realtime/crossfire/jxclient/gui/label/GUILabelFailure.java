@@ -47,7 +47,8 @@ public class GUILabelFailure extends GUIMultiLineLabel {
     private final CrossfireServerConnection crossfireServerConnection;
 
     /**
-     * The {@link CrossfireFailureListener} registered to receive failure messages.
+     * The {@link CrossfireFailureListener} registered to receive failure
+     * messages.
      */
     @NotNull
     private final CrossfireFailureListener crossfireFailureListener = new CrossfireFailureListener() {

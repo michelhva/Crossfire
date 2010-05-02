@@ -368,15 +368,16 @@ public class GuiManager {
     }
 
     /**
-     * Display the main account dialog, to let the player login or create a new account.
+     * Display the main account dialog, to let the player login or create a new
+     * account.
      */
     public void manageAccount() {
-      if (dialogConnect != null) {
-        closeDialog(dialogConnect);
-      }
-      windowRenderer.setGuiState(RendererGuiState.ACCOUNT);
-      hideAccountWindows();
-      openDialogByName("account_main");
+        if (dialogConnect != null) {
+            closeDialog(dialogConnect);
+        }
+        windowRenderer.setGuiState(RendererGuiState.ACCOUNT);
+        hideAccountWindows();
+        openDialogByName("account_main");
     }
 
     /**
@@ -550,7 +551,7 @@ public class GuiManager {
         try {
             dialog = skin.getDialog(name);
         } catch (final JXCSkinException ex) {
-          //System.err.println(ex.getLocalizedMessage());
+            //System.err.println(ex.getLocalizedMessage());
             return false;
         }
 
@@ -587,6 +588,7 @@ public class GuiManager {
             terminateSync.notifyAll();
         }
     }
+
     /**
      * Waits until the window has been disposed.
      * @throws InterruptedException if the current thread has been interrupted
@@ -840,7 +842,7 @@ public class GuiManager {
                 message = "Requesting information...";
                 break;
 
-              case ACCOUNTINFO:
+            case ACCOUNTINFO:
                 message = "Starting account session...";
                 break;
 

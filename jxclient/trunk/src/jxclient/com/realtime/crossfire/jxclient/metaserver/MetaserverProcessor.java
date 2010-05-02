@@ -62,8 +62,8 @@ public class MetaserverProcessor {
 
     /**
      * Counter used by the query {@link #runnable}. If positive, the value will
-     * be decremented once per second; when it reaches zero, it is reset back
-     * to {@link #UPDATE_INTERVAL} and a metaserver query is executed.
+     * be decremented once per second; when it reaches zero, it is reset back to
+     * {@link #UPDATE_INTERVAL} and a metaserver query is executed.
      * <p/>
      * When set to zero, updating is disabled.
      */

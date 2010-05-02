@@ -25,8 +25,8 @@ import java.util.Comparator;
 import org.jetbrains.annotations.NotNull;
 
 /**
- * A {@link Comparator} that compares {@link CfItem} instances in inventory
- * view order.
+ * A {@link Comparator} that compares {@link CfItem} instances in inventory view
+ * order.
  * @author Andreas Kirschbaum
  */
 public class InventoryComparator implements Comparator<CfItem> {
