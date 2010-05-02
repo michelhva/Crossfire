@@ -65,8 +65,6 @@ public class AccountCreateCommand implements GUICommand {
      */
     @Override
     public void execute() {
-        final String login, password, confirm;
-
         final Gui gui = element.getGui();
         if (gui == null) {
             return;
@@ -80,9 +78,9 @@ public class AccountCreateCommand implements GUICommand {
             return;
         }
 
-        login = l.getText();
-        password = p.getText();
-        confirm = c.getText();
+        final String login = l.getText();
+        final String password = p.getText();
+        final String confirm = c.getText();
 
         if (login.isEmpty()) {
             final GUILabelFailure error = gui.getFirstElement(GUILabelFailure.class, "account_create_error");
