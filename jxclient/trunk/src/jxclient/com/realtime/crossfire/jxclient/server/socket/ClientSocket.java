@@ -327,13 +327,7 @@ public class ClientSocket {
                     }
                 }
 
-                synchronized (syncOutput) {
-                    if (outputBuffer.position() > 0) {
-                        setInterestOps(SelectionKey.OP_WRITE);
-                    } else {
-                        unsetInterestOps(SelectionKey.OP_WRITE);
-                    }
-                }
+                updateWriteInterestOps();
 
                 selector.select();
                 final Collection<SelectionKey> selectedKeys = selector.selectedKeys();
@@ -578,33 +572,22 @@ public class ClientSocket {
     }
 
     /**
-     * Removes interest ops to {@link #interestOps} and updates {@link
-     * #selectionKey}.
-     * @param interestOps the interest ops to remove
+     * Updates {@link #interestOps}'s {@link SelectionKey#OP_WRITE OP_WRITE}
+     * according to whether {@link #outputBuffer} has pending data.
      */
-    private void unsetInterestOps(final int interestOps) {
-        assert Thread.holdsLock(syncOutput);
-        if ((this.interestOps&interestOps) == 0) {
-            return;
+    private void updateWriteInterestOps() {
+        synchronized (syncOutput) {
+            final int newInterestOps;
+            if (outputBuffer.position() > 0) {
+                newInterestOps = interestOps|SelectionKey.OP_WRITE;
+            } else {
+                newInterestOps = interestOps&~SelectionKey.OP_WRITE;
+            }
+            if (interestOps != newInterestOps) {
+                interestOps = newInterestOps;
+                updateInterestOps();
+            }
         }
-
-        this.interestOps &= ~interestOps;
-        updateInterestOps();
-    }
-
-    /**
-     * Adds interest ops to {@link #interestOps} and updates {@link
-     * #selectionKey}.
-     * @param interestOps the interest ops to add
-     */
-    private void setInterestOps(final int interestOps) {
-        assert Thread.holdsLock(syncOutput);
-        if ((this.interestOps&interestOps) == interestOps) {
-            return;
-        }
-
-        this.interestOps |= interestOps;
-        updateInterestOps();
     }
 
     /**
