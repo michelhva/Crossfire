@@ -54,10 +54,18 @@ public class AccountPlayCharacterCommand implements GUICommand {
         this.element = button;
     }
 
+    /**
+     * {@inheritDoc}
+     */
+    @Override
     public boolean canExecute() {
         return true;
     }
 
+    /**
+     * {@inheritDoc}
+     */
+    @Override
     public void execute() {
         final Gui gui = this.element.getGui();
         if (gui == null) {

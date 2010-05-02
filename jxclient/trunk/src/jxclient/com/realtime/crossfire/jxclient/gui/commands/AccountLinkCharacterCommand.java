@@ -51,10 +51,19 @@ public class AccountLinkCharacterCommand implements GUICommand {
         this.commandCallback = commandCallback;
         this.element = button;
     }
+
+    /**
+     * {@inheritDoc}
+     */
+    @Override
     public boolean canExecute() {
         return true;
     }
 
+    /**
+     * {@inheritDoc}
+     */
+    @Override
     public void execute() {
         String login, password;
 

@@ -114,9 +114,15 @@ public class GUICharacterList extends GUIList {
         super(tooltipManager, elementListener, name, extent, cellWidth, cellHeight, new CharacterCellRenderer(new GUICharacter(tooltipManager, elementListener, name + "_template", 50, 20, image, font, cellWidth, "", tooltip, characterModel)), null);
         this.characterModel = characterModel;
         this.characterModel.addMetaserverListener(new CharacterListener() {
+
+            /**
+             * {@inheritDoc}
+             */
+            @Override
             public void numberOfItemsChanged() {
                 rebuildList();
             }
+
         });
         this.tooltip = tooltip;
         this.tooltipManager = tooltipManager;
@@ -133,12 +139,12 @@ public class GUICharacterList extends GUIList {
 
     @Override
     protected void updateTooltip(int index, int x, int y, int w, int h) {
-        
+
     }
 
     @Override
     protected void activeChanged() {
-        
+
     }
 
     /**

@@ -52,10 +52,18 @@ public class AccountCreateCommand implements GUICommand {
         this.element = button;
     }
 
+    /**
+     * {@inheritDoc}
+     */
+    @Override
     public boolean canExecute() {
         return true;
     }
 
+    /**
+     * {@inheritDoc}
+     */
+    @Override
     public void execute() {
         String login, password, confirm;
 

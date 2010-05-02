@@ -71,6 +71,10 @@ public class CharacterInformation implements Comparable<CharacterInformation> {
         this.level = level;
     }
 
+    /**
+     * {@inheritDoc}
+     */
+    @Override
     public int compareTo(CharacterInformation t) {
         return name.compareTo(t.getName());
     }

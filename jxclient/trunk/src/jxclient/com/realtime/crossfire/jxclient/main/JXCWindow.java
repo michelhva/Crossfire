@@ -338,11 +338,19 @@ public class JXCWindow extends JFrame {
 
     @NotNull
     private final CrossfireAccountListener accountListener = new CrossfireAccountListener() {
-      /** {@inheritDoc} */
+
+      /**
+       * {@inheritDoc}
+       */
+      @Override
       public void manageAccount() {
         guiManager.manageAccount();
       }
 
+      /**
+       * {@inheritDoc}
+       */
+      @Override
       public void addAccount(String name, String characterClass, String race, String face, String party, String map, short level, short faceNumber) {
           CharacterInformation information = new CharacterInformation();
           information.setName(name);
@@ -350,18 +358,31 @@ public class JXCWindow extends JFrame {
         characterModel.add(information);
       }
 
+        /**
+         * {@inheritDoc}
+         */
+        @Override
         public void startAccountList() {
             characterModel.begin();
         }
 
+        /**
+         * {@inheritDoc}
+         */
+        @Override
         public void endAccountList() {
             characterModel.commit();
             guiManager.showCharacters();
         }
 
+        /**
+         * {@inheritDoc}
+         */
+        @Override
         public void startPlaying() {
             guiManager.hideAccountWindows();
         }
+
     };
 
     /**

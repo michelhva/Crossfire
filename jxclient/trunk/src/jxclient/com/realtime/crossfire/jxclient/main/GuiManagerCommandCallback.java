@@ -129,25 +129,46 @@ public class GuiManagerCommandCallback implements CommandCallback {
         return guiManager.removeKeyBinding(perCharacter);
     }
 
+    /**
+     * {@inheritDoc}
+     */
+    @Override
     public void accountLogin(String login, String password) {
         server.sendAccountLogin(login, password);
         lastAccountPassword = password;
     }
 
+    /**
+     * {@inheritDoc}
+     */
+    @Override
     public void accountCreate(String login, String password) {
         server.sendAccountCreate(login, password);
         lastAccountPassword = password;
     }
 
+    /**
+     * {@inheritDoc}
+     */
+    @Override
     public void accountPlayCharacter(String name) {
         server.sendAccountPlay(name);
     }
 
+    /**
+     * {@inheritDoc}
+     */
+    @Override
     public void accountLink(int force, @NotNull String login, @NotNull String password) {
         server.sendAccountLink(force, login, password);
     }
 
+    /**
+     * {@inheritDoc}
+     */
+    @Override
     public void accountCreateCharacter(String login) {
         server.sendAccountCharacterCreate(login, lastAccountPassword);
     }
+
 }
