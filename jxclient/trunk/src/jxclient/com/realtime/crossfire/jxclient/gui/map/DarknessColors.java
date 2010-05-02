@@ -21,6 +21,7 @@
 
 package com.realtime.crossfire.jxclient.gui.map;
 
+import com.realtime.crossfire.jxclient.map.CfMapSquare;
 import java.awt.Color;
 import org.jetbrains.annotations.NotNull;
 
@@ -64,7 +65,7 @@ public class DarknessColors {
     public static Color getDarknessColor(final int darkness) {
         synchronized (darknessColors) {
             if (darknessColors[darkness] == null) {
-                final float alpha = MAX_DARKNESS_ALPHA*(255-darkness)/255F;
+                final float alpha = MAX_DARKNESS_ALPHA*(CfMapSquare.DARKNESS_FULL_BRIGHT-darkness)/(float)CfMapSquare.DARKNESS_FULL_BRIGHT;
                 darknessColors[darkness] = new Color(0, 0, 0, alpha);
             }
 

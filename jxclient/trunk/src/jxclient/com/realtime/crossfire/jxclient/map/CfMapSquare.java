@@ -44,6 +44,11 @@ public class CfMapSquare {
     public static final int DEFAULT_DARKNESS = 255;
 
     /**
+     * The darkness value for a full bright square.
+     */
+    public static final int DARKNESS_FULL_BRIGHT = 255;
+
+    /**
      * The default face value for newly creates squares.
      */
     @Nullable
@@ -74,7 +79,7 @@ public class CfMapSquare {
 
     /**
      * The darkness value of the square in the range [0..255]. 0=dark, 255=full
-     * bright
+     * bright={@link #DARKNESS_FULL_BRIGHT}.
      */
     private int darkness = DEFAULT_DARKNESS;
 
