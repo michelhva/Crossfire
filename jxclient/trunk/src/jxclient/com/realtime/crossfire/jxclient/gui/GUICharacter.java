@@ -45,7 +45,7 @@ public class GUICharacter extends ActivatableGUIElement implements GUIScrollable
     /**
      * Character model to display items from.
      */
-    private CharacterModel characterModel;
+    private final CharacterModel characterModel;
 
     /**
      * Index of the item to display in {@link characterModel}.
@@ -91,7 +91,7 @@ public class GUICharacter extends ActivatableGUIElement implements GUIScrollable
      * @param tooltip the format used for displaying tooltips
      * @param characterModel the character model to monitor
      */
-    public GUICharacter(@NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final String name, final int w, final int h, @Nullable final Image image, @NotNull final Font font, final int defaultIndex, @NotNull final String format, @NotNull final String tooltip, CharacterModel characterModel) {
+    public GUICharacter(@NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final String name, final int w, final int h, @Nullable final Image image, @NotNull final Font font, final int defaultIndex, @NotNull final String format, @NotNull final String tooltip, final CharacterModel characterModel) {
         super(tooltipManager, elementListener, name, new Extent(0, 0, w, h), Transparency.TRANSLUCENT);
         this.characterModel = characterModel;
         this.font = font;
@@ -126,7 +126,7 @@ public class GUICharacter extends ActivatableGUIElement implements GUIScrollable
      * {@inheritDoc}
      */
     @Override
-    public boolean canScroll(int distance) {
+    public boolean canScroll(final int distance) {
         throw new UnsupportedOperationException("Not supported yet.");
     }
 
@@ -134,7 +134,7 @@ public class GUICharacter extends ActivatableGUIElement implements GUIScrollable
      * {@inheritDoc}
      */
     @Override
-    public void scroll(int distance) {
+    public void scroll(final int distance) {
         throw new UnsupportedOperationException("Not supported yet.");
     }
 

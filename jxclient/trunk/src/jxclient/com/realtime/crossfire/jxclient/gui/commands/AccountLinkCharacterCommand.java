@@ -65,15 +65,15 @@ public class AccountLinkCharacterCommand implements GUICommand {
      */
     @Override
     public void execute() {
-        String login, password;
+        final String login, password;
 
         final Gui gui = this.element.getGui();
         if (gui == null) {
             return;
         }
 
-        GUIText l = gui.getFirstElement(GUIText.class, "character_login");
-        GUIText p = gui.getFirstElement(GUIText.class, "character_password");
+        final GUIText l = gui.getFirstElement(GUIText.class, "character_login");
+        final GUIText p = gui.getFirstElement(GUIText.class, "character_password");
 
         if ((l == null) || (p==null)) {
             return;

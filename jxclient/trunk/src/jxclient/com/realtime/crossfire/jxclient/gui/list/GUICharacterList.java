@@ -43,7 +43,7 @@ public class GUICharacterList extends GUIList {
     /**
      * The model to display characters from.
      */
-    private CharacterModel characterModel;
+    private final CharacterModel characterModel;
 
     /**
      * The {@link TooltipManager} to update.
@@ -133,12 +133,12 @@ public class GUICharacterList extends GUIList {
     }
 
     @Override
-    protected void selectionChanged(int selectedIndex) {
+    protected void selectionChanged(final int selectedIndex) {
         this.selectedIndex = selectedIndex;
     }
 
     @Override
-    protected void updateTooltip(int index, int x, int y, int w, int h) {
+    protected void updateTooltip(final int index, final int x, final int y, final int w, final int h) {
 
     }
 

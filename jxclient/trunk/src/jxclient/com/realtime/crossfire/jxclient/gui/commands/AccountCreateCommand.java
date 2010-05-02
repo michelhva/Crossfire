@@ -65,16 +65,16 @@ public class AccountCreateCommand implements GUICommand {
      */
     @Override
     public void execute() {
-        String login, password, confirm;
+        final String login, password, confirm;
 
         final Gui gui = this.element.getGui();
         if (gui == null) {
             return;
         }
 
-        GUIText l = gui.getFirstElement(GUIText.class, "account_login");
-        GUIText p = gui.getFirstElement(GUIText.class, "account_password");
-        GUIText c = gui.getFirstElement(GUIText.class, "account_password_confirm");
+        final GUIText l = gui.getFirstElement(GUIText.class, "account_login");
+        final GUIText p = gui.getFirstElement(GUIText.class, "account_password");
+        final GUIText c = gui.getFirstElement(GUIText.class, "account_password_confirm");
 
         if ((l == null) || (p==null) || (c==null)) {
             return;
@@ -85,18 +85,18 @@ public class AccountCreateCommand implements GUICommand {
         confirm = c.getText();
 
         if (login.isEmpty()) {
-            GUILabelFailure error = gui.getFirstElement(GUILabelFailure.class, "account_create_error");
+            final GUILabelFailure error = gui.getFirstElement(GUILabelFailure.class, "account_create_error");
             error.setText("Can't have an empty login!");
             return;
         }
 
         if (password.isEmpty()) {
-            GUILabelFailure error = gui.getFirstElement(GUILabelFailure.class, "account_create_error");
+            final GUILabelFailure error = gui.getFirstElement(GUILabelFailure.class, "account_create_error");
             error.setText("Can't have an empty password!");
             return;
         }
         if (!confirm.equals(password)) {
-            GUILabelFailure error = gui.getFirstElement(GUILabelFailure.class, "account_create_error");
+            final GUILabelFailure error = gui.getFirstElement(GUILabelFailure.class, "account_create_error");
             error.setText("Passwords don't match!");
             return;
         }
