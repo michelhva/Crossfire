@@ -3148,6 +3148,7 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
               if (debugProtocol != null) {
                 debugProtocol.debugProtocolWrite("recv accountplayers class="+cclass);
               }
+              break;
             case ACL_RACE:
               race = new String(packet, pos, len - 1, UTF8);
               if (debugProtocol != null) {
@@ -3189,6 +3190,7 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
               if (debugProtocol != null) {
                 debugProtocol.debugProtocolWrite("recv accountplayers unknown="+type);
               }
+              break;
           }
 
           pos += len - 1;
