@@ -417,9 +417,8 @@ public class JXCWindowRenderer {
      * default
      * @param minResolution the minimal supported resolution
      * @param fixedSize whether the window should have fixed size
-     * @return whether the resolution has been changed
      */
-    public boolean setWindowMode(@NotNull final Frame frame, @Nullable final Resolution resolution, @NotNull final Resolution minResolution, final boolean fixedSize) {
+    public void setWindowMode(@NotNull final Frame frame, @Nullable final Resolution resolution, @NotNull final Resolution minResolution, final boolean fixedSize) {
         debugScreenWrite("setWindowMode: resolution="+(resolution == null ? "default" : resolution)+", fixedSize="+fixedSize);
 
         final DisplayMode currentDisplayMode = graphicsDevice.getDisplayMode();
@@ -427,7 +426,7 @@ public class JXCWindowRenderer {
         if (frame == this.frame && !isFullScreen && bufferStrategy != null && (resolution == null || resolution.getWidth() == windowWidth && resolution.getHeight() == windowHeight)) {
             debugScreenWrite("setResolutionPre: no change needed");
             debugScreenWrite("setResolutionPre: success");
-            return true;
+            return;
         }
 
         setResolutionPre(frame);
@@ -478,7 +477,6 @@ public class JXCWindowRenderer {
 
         setResolutionPost(frame, dimension);
         this.frame = frame;
-        return true;
     }
 
     /**
