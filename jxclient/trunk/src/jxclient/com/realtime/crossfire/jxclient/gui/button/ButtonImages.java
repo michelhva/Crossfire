@@ -31,7 +31,7 @@ import org.jetbrains.annotations.NotNull;
  */
 public class ButtonImages {
 
-    public static final int OFFSET = 3;
+    private static final int OFFSET = 3;
 
     /**
      * The left border of the button.
