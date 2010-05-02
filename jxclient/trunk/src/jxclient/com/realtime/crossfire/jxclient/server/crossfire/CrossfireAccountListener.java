@@ -50,7 +50,7 @@ public interface CrossfireAccountListener
    * @param level last character level.
    * @param faceNumber identifier of the face.
    */
-  void addAccount(@NotNull String name, @NotNull String characterClass, @NotNull String race, @NotNull String face, @NotNull String party, @NotNull String map, short level, short faceNumber);
+  void addAccount(@NotNull String name, @NotNull String characterClass, @NotNull String race, @NotNull String face, @NotNull String party, @NotNull String map, int level, int faceNumber);
 
   /**
    * End of character information for an account.
