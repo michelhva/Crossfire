@@ -294,50 +294,10 @@ public class ClientSocket {
     private void process() {
         while (!thread.isInterrupted()) {
             try {
-                synchronized (syncConnect) {
-                    if (reconnect) {
-                        reconnect = false;
-                        if (host != null && port != 0) {
-                            processDisconnect("reconnect to "+host+":"+port, false);
-                            processConnect(host, port);
-                        } else {
-                            processDisconnect(reconnectReason, reconnectIsError);
-                        }
-                    }
-                }
-
-                final boolean notifyConnected;
-                synchronized (syncOutput) {
-                    if (isConnected || socketChannel == null) {
-                        notifyConnected = false;
-                    } else {
-                        isConnected = socketChannel.finishConnect();
-                        if (isConnected) {
-                            interestOps = SelectionKey.OP_READ;
-                            updateInterestOps();
-                            notifyConnected = true;
-                        } else {
-                            notifyConnected = false;
-                        }
-                    }
-                }
-                if (notifyConnected) {
-                    for (final ClientSocketListener clientSocketListener : clientSocketListeners) {
-                        clientSocketListener.connected();
-                    }
-                }
-
+                doReconnect();
+                doConnect();
                 updateWriteInterestOps();
-
-                selector.select();
-                final Collection<SelectionKey> selectedKeys = selector.selectedKeys();
-                if (selectedKeys.remove(selectionKey)) {
-                    if (isConnected) {
-                        processRead();
-                        processWrite();
-                    }
-                }
-                assert selectedKeys.isEmpty();
+                doTransceive();
             } catch (final EOFException ex) {
                 final String tmp = ex.getMessage();
                 final String message = tmp == null ? "EOF" : tmp;
@@ -354,6 +314,68 @@ public class ClientSocket {
                 processDisconnect(message, true);
             }
         }
+    }
+
+    /**
+     * Processes pending connect requests.
+     * @throws IOException if an I/O error occurs
+     */
+    private void doConnect() throws IOException {
+        final boolean notifyConnected;
+        synchronized (syncOutput) {
+            if (isConnected || socketChannel == null) {
+                notifyConnected = false;
+            } else {
+                isConnected = socketChannel.finishConnect();
+                if (isConnected) {
+                    interestOps = SelectionKey.OP_READ;
+                    updateInterestOps();
+                    notifyConnected = true;
+                } else {
+                    notifyConnected = false;
+                }
+            }
+        }
+        if (notifyConnected) {
+            for (final ClientSocketListener clientSocketListener : clientSocketListeners) {
+                clientSocketListener.connected();
+            }
+        }
+    }
+
+    /**
+     * Processes pending re- or disconnect requests.
+     * @throws IOException if an I/O error occurs
+     */
+    private void doReconnect() throws IOException {
+        synchronized (syncConnect) {
+            if (reconnect) {
+                reconnect = false;
+                if (host != null && port != 0) {
+                    processDisconnect("reconnect to "+host+":"+port, false);
+                    assert host != null;
+                    processConnect(host, port);
+                } else {
+                    processDisconnect(reconnectReason, reconnectIsError);
+                }
+            }
+        }
+    }
+
+    /**
+     * Processes pending data to receive of transmit.
+     * @throws IOException if an I/O error occurs
+     */
+    private void doTransceive() throws IOException {
+        selector.select();
+        final Collection<SelectionKey> selectedKeys = selector.selectedKeys();
+        if (selectedKeys.remove(selectionKey)) {
+            if (isConnected) {
+                processRead();
+                processWrite();
+            }
+        }
+        assert selectedKeys.isEmpty();
     }
 
     /**
