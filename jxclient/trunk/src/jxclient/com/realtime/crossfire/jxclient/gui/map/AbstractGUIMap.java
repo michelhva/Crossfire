@@ -235,33 +235,17 @@ public abstract class AbstractGUIMap extends GUIElement {
                         final CfMap map = mapUpdater.getMap();
                         if (dx > 0) {
                             final int ww = (displayMaxOffsetX == 0 ? 0 : 1)+dx;
-                            for (int yy = displayMinY; yy < displayMaxY; yy++) {
-                                for (int xx = displayMaxX-ww; xx < displayMaxX; xx++) {
-                                    redrawSquareUnlessDirty(g, map, xx, yy);
-                                }
-                            }
+                            redrawTilesUnlessDirty(g, map, displayMaxX-ww, displayMinY, displayMaxX, displayMaxY);
                         } else if (dx < 0) {
                             final int ww = (displayMinOffsetX == 0 ? 0 : 1)-dx;
-                            for (int yy = displayMinY; yy < displayMaxY; yy++) {
-                                for (int xx = displayMinX; xx < displayMinX+ww; xx++) {
-                                    redrawSquareUnlessDirty(g, map, xx, yy);
-                                }
-                            }
+                            redrawTilesUnlessDirty(g, map, displayMinX, displayMinY, displayMinX+ww, displayMaxY);
                         }
                         if (dy > 0) {
                             final int hh = (displayMaxOffsetY == 0 ? 0 : 1)+dy;
-                            for (int xx = displayMinX; xx < displayMaxX; xx++) {
-                                for (int yy = displayMaxY-hh; yy < displayMaxY; yy++) {
-                                    redrawSquareUnlessDirty(g, map, xx, yy);
-                                }
-                            }
+                            redrawTilesUnlessDirty(g, map, displayMinX, displayMaxY-hh, displayMaxX, displayMaxY);
                         } else if (dy < 0) {
                             final int hh = (displayMinOffsetY == 0 ? 0 : 1)-dy;
-                            for (int yy = displayMinY; yy < displayMinY+hh; yy++) {
-                                for (int xx = displayMinX; xx < displayMaxX; xx++) {
-                                    redrawSquareUnlessDirty(g, map, xx, yy);
-                                }
-                            }
+                            redrawTilesUnlessDirty(g, map, displayMinX, displayMinY, displayMaxX, displayMinY+hh);
                         }
                         markPlayer(g, dx, dy);
                     }
@@ -333,7 +317,7 @@ public abstract class AbstractGUIMap extends GUIElement {
      * @param g the graphics to draw into
      */
     private void redrawAllUnlessDirty(@NotNull final Graphics g) {
-        redrawTilesUnlessDirty(g, mapUpdater.getMap(), displayMinX, displayMinY, displayMaxX, displayMaxY);
+        redrawTilesUnlessDirty(g, mapUpdater.getMap(), displayMinX-offsetX/tileSize, displayMinY-offsetY/tileSize, displayMaxX-offsetX/tileSize, displayMaxY-offsetY/tileSize);
     }
 
     /**
@@ -365,7 +349,7 @@ public abstract class AbstractGUIMap extends GUIElement {
     private void redrawTilesUnlessDirty(@NotNull final Graphics g, @NotNull final CfMap map, final int x0, final int y0, final int x1, final int y1) {
         for (int x = x0; x < x1; x++) {
             for (int y = y0; y < y1; y++) {
-                redrawSquareUnlessDirty(g, map, x-offsetX/tileSize, y-offsetY/tileSize);
+                redrawSquareUnlessDirty(g, map, x, y);
             }
         }
     }
