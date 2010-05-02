@@ -2600,115 +2600,7 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
 
                 switch (coordType) {
                 case Map2.TYPE_COORDINATE:
-                    for (; ;) {
-                        final int lenType = packet[pos++]&0xFF;
-                        if (lenType == 0xFF) {
-                            break;
-                        }
-
-                        final int len = (lenType>>5)&7;
-                        final int type = lenType&31;
-                        switch (type) {
-                        case Map2.COORD_CLEAR_SPACE:
-                            if (len != 0) {
-                                throw new UnknownCommandException("map2 command contains clear command with length "+len);
-                            }
-                            if (debugProtocol != null) {
-                                debugProtocol.debugProtocolWrite("recv map2 "+x+"/"+y+" clear");
-                            }
-                            for (final CrossfireUpdateMapListener listener : crossfireUpdateMapListeners) {
-                                listener.mapClear(x, y);
-                            }
-                            break;
-
-                        case Map2.COORD_DARKNESS:
-                            if (len != 1) {
-                                throw new UnknownCommandException("map2 command contains darkness command with length "+len);
-                            }
-                            final int darkness = packet[pos++]&0xFF;
-                            if (debugProtocol != null) {
-                                debugProtocol.debugProtocolWrite("recv map2 "+x+"/"+y+" darkness="+darkness);
-                            }
-                            for (final CrossfireUpdateMapListener listener : crossfireUpdateMapListeners) {
-                                listener.mapDarkness(x, y, darkness);
-                            }
-                            break;
-
-                        case Map2.COORD_LAYER0:
-                        case Map2.COORD_LAYER1:
-                        case Map2.COORD_LAYER2:
-                        case Map2.COORD_LAYER3:
-                        case Map2.COORD_LAYER4:
-                        case Map2.COORD_LAYER5:
-                        case Map2.COORD_LAYER6:
-                        case Map2.COORD_LAYER7:
-                        case Map2.COORD_LAYER8:
-                        case Map2.COORD_LAYER9:
-                            if (len < 2) {
-                                throw new UnknownCommandException("map2 command contains image command with length "+len);
-                            }
-                            final int face = ((packet[pos++]&0xFF)<<8)|(packet[pos++]&0xFF);
-                            if ((face&Map2.FACE_ANIMATION) == 0) {
-                                if (debugProtocol != null) {
-                                    debugProtocol.debugProtocolWrite("recv map2 "+x+"/"+y+"/"+(type-Map2.COORD_LAYER0)+" face="+face);
-                                }
-                                for (final CrossfireUpdateMapListener listener : crossfireUpdateMapListeners) {
-                                    listener.mapFace(x, y, type-Map2.COORD_LAYER0, face);
-                                }
-                            } else {
-                                if (debugProtocol != null) {
-                                    debugProtocol.debugProtocolWrite("recv map2 "+x+"/"+y+"/"+(type-Map2.COORD_LAYER0)+" anim="+(face&Map2.ANIM_MASK)+" type="+((face>>Map2.ANIM_TYPE_SHIFT)&Map2.ANIM_TYPE_MASK));
-                                }
-                                for (final CrossfireUpdateMapListener listener : crossfireUpdateMapListeners) {
-                                    listener.mapAnimation(x, y, type-Map2.COORD_LAYER0, face&Map2.ANIM_MASK, (face>>Map2.ANIM_TYPE_SHIFT)&Map2.ANIM_TYPE_MASK);
-                                }
-                            }
-                            if (len == 3) {
-                                if (face == 0) {
-                                    throw new UnknownCommandException("map2 command contains smoothing or animation information for empty face");
-                                }
-
-                                if ((face&Map2.FACE_ANIMATION) == 0) {
-                                    final int smooth = packet[pos++]&0xFF;
-                                    if (debugProtocol != null) {
-                                        debugProtocol.debugProtocolWrite("recv map2 "+x+"/"+y+"/"+(type-Map2.COORD_LAYER0)+" smooth="+smooth);
-                                    }
-                                    // XXX: update smoothing information
-                                } else {
-                                    final int animSpeed = packet[pos++]&0xFF;
-                                    if (debugProtocol != null) {
-                                        debugProtocol.debugProtocolWrite("recv map2 "+x+"/"+y+"/"+(type-Map2.COORD_LAYER0)+" anim_speed="+animSpeed);
-                                    }
-                                    for (final CrossfireUpdateMapListener listener : crossfireUpdateMapListeners) {
-                                        listener.mapAnimationSpeed(x, y, type-Map2.COORD_LAYER0, animSpeed);
-                                    }
-                                }
-                            } else if (len == 4) {
-                                if (face == 0) {
-                                    throw new UnknownCommandException("map2 command contains smoothing or animation information for empty face");
-                                }
-
-                                final int animSpeed = packet[pos++]&0xFF;
-                                if (debugProtocol != null) {
-                                    debugProtocol.debugProtocolWrite("recv map2 "+x+"/"+y+"/"+(type-Map2.COORD_LAYER0)+" anim_speed="+animSpeed);
-                                }
-                                for (final CrossfireUpdateMapListener listener : crossfireUpdateMapListeners) {
-                                    listener.mapAnimationSpeed(x, y, type-Map2.COORD_LAYER0, animSpeed);
-                                }
-
-                                final int smooth = packet[pos++]&0xFF;
-                                if (debugProtocol != null) {
-                                    debugProtocol.debugProtocolWrite("recv map2 "+x+"/"+y+"/"+(type-Map2.COORD_LAYER0)+" smooth="+smooth);
-                                }
-                                // XXX: update smoothing information
-                            } else if (len != 2) {
-                                if (debugProtocol != null) {
-                                    debugProtocol.debugProtocolWrite("recv map2 "+x+"/"+y+"/"+(type-Map2.COORD_LAYER0)+" <invalid>");
-                                }
-                                throw new UnknownCommandException("map2 command contains image command with length "+len);
-                            }
-                        }
-                    }
+                    pos = cmdMap2Coordinate(packet, pos, x, y);
                     break;
 
                 case Map2.TYPE_SCROLL:
@@ -2737,6 +2629,128 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
                 listener.mapEnd();
             }
         }
+    }
+
+    /**
+     * Processes the payload data for a map2 coordinate command.
+     * @param packet the packet contents
+     * @param pos the start of the coordinate command
+     * @param x the x-coordinate of the currently processed square
+     * @param y the y-coordinate of the currently processed square
+     * @return the end index of the coordinate command
+     * @throws UnknownCommandException if the command cannot be parsed
+     */
+    private int cmdMap2Coordinate(@NotNull final byte[] packet, int pos, final int x, final int y) throws UnknownCommandException {
+        for (; ;) {
+            final int lenType = packet[pos++]&0xFF;
+            if (lenType == 0xFF) {
+                break;
+            }
+
+            final int len = (lenType>>5)&7;
+            final int type = lenType&31;
+            switch (type) {
+            case Map2.COORD_CLEAR_SPACE:
+                if (len != 0) {
+                    throw new UnknownCommandException("map2 command contains clear command with length "+len);
+                }
+                if (debugProtocol != null) {
+                    debugProtocol.debugProtocolWrite("recv map2 "+x+"/"+y+" clear");
+                }
+                for (final CrossfireUpdateMapListener listener : crossfireUpdateMapListeners) {
+                    listener.mapClear(x, y);
+                }
+                break;
+
+            case Map2.COORD_DARKNESS:
+                if (len != 1) {
+                    throw new UnknownCommandException("map2 command contains darkness command with length "+len);
+                }
+                final int darkness = packet[pos++]&0xFF;
+                if (debugProtocol != null) {
+                    debugProtocol.debugProtocolWrite("recv map2 "+x+"/"+y+" darkness="+darkness);
+                }
+                for (final CrossfireUpdateMapListener listener : crossfireUpdateMapListeners) {
+                    listener.mapDarkness(x, y, darkness);
+                }
+                break;
+
+            case Map2.COORD_LAYER0:
+            case Map2.COORD_LAYER1:
+            case Map2.COORD_LAYER2:
+            case Map2.COORD_LAYER3:
+            case Map2.COORD_LAYER4:
+            case Map2.COORD_LAYER5:
+            case Map2.COORD_LAYER6:
+            case Map2.COORD_LAYER7:
+            case Map2.COORD_LAYER8:
+            case Map2.COORD_LAYER9:
+                if (len < 2) {
+                    throw new UnknownCommandException("map2 command contains image command with length "+len);
+                }
+                final int face = ((packet[pos++]&0xFF)<<8)|(packet[pos++]&0xFF);
+                if ((face&Map2.FACE_ANIMATION) == 0) {
+                    if (debugProtocol != null) {
+                        debugProtocol.debugProtocolWrite("recv map2 "+x+"/"+y+"/"+(type-Map2.COORD_LAYER0)+" face="+face);
+                    }
+                    for (final CrossfireUpdateMapListener listener : crossfireUpdateMapListeners) {
+                        listener.mapFace(x, y, type-Map2.COORD_LAYER0, face);
+                    }
+                } else {
+                    if (debugProtocol != null) {
+                        debugProtocol.debugProtocolWrite("recv map2 "+x+"/"+y+"/"+(type-Map2.COORD_LAYER0)+" anim="+(face&Map2.ANIM_MASK)+" type="+((face>>Map2.ANIM_TYPE_SHIFT)&Map2.ANIM_TYPE_MASK));
+                    }
+                    for (final CrossfireUpdateMapListener listener : crossfireUpdateMapListeners) {
+                        listener.mapAnimation(x, y, type-Map2.COORD_LAYER0, face&Map2.ANIM_MASK, (face>>Map2.ANIM_TYPE_SHIFT)&Map2.ANIM_TYPE_MASK);
+                    }
+                }
+                if (len == 3) {
+                    if (face == 0) {
+                        throw new UnknownCommandException("map2 command contains smoothing or animation information for empty face");
+                    }
+
+                    if ((face&Map2.FACE_ANIMATION) == 0) {
+                        final int smooth = packet[pos++]&0xFF;
+                        if (debugProtocol != null) {
+                            debugProtocol.debugProtocolWrite("recv map2 "+x+"/"+y+"/"+(type-Map2.COORD_LAYER0)+" smooth="+smooth);
+                        }
+                        // XXX: update smoothing information
+                    } else {
+                        final int animSpeed = packet[pos++]&0xFF;
+                        if (debugProtocol != null) {
+                            debugProtocol.debugProtocolWrite("recv map2 "+x+"/"+y+"/"+(type-Map2.COORD_LAYER0)+" anim_speed="+animSpeed);
+                        }
+                        for (final CrossfireUpdateMapListener listener : crossfireUpdateMapListeners) {
+                            listener.mapAnimationSpeed(x, y, type-Map2.COORD_LAYER0, animSpeed);
+                        }
+                    }
+                } else if (len == 4) {
+                    if (face == 0) {
+                        throw new UnknownCommandException("map2 command contains smoothing or animation information for empty face");
+                    }
+
+                    final int animSpeed = packet[pos++]&0xFF;
+                    if (debugProtocol != null) {
+                        debugProtocol.debugProtocolWrite("recv map2 "+x+"/"+y+"/"+(type-Map2.COORD_LAYER0)+" anim_speed="+animSpeed);
+                    }
+                    for (final CrossfireUpdateMapListener listener : crossfireUpdateMapListeners) {
+                        listener.mapAnimationSpeed(x, y, type-Map2.COORD_LAYER0, animSpeed);
+                    }
+
+                    final int smooth = packet[pos++]&0xFF;
+                    if (debugProtocol != null) {
+                        debugProtocol.debugProtocolWrite("recv map2 "+x+"/"+y+"/"+(type-Map2.COORD_LAYER0)+" smooth="+smooth);
+                    }
+                    // XXX: update smoothing information
+                } else if (len != 2) {
+                    if (debugProtocol != null) {
+                        debugProtocol.debugProtocolWrite("recv map2 "+x+"/"+y+"/"+(type-Map2.COORD_LAYER0)+" <invalid>");
+                    }
+                    throw new UnknownCommandException("map2 command contains image command with length "+len);
+                }
+            }
+        }
+        return pos;
     }
 
     /**
