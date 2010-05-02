@@ -54,7 +54,7 @@ import org.jetbrains.annotations.Nullable;
  * @author Lauwenmark
  * @author Andreas Kirschbaum
  */
-public class DefaultScriptProcess extends Thread implements ScriptProcess {
+public class DefaultScriptProcess implements Runnable, ScriptProcess {
 
     /**
      * The script ID identifying this script instance.
