@@ -34,7 +34,7 @@ import org.jetbrains.annotations.NotNull;
  * A thread that plays a music file over and over until terminated.
  * @author Andreas Kirschbaum
  */
-public class Processor extends Thread {
+public class Processor implements Runnable {
 
     /**
      * The minimum factor for fading in/out effects.
@@ -77,18 +77,9 @@ public class Processor extends Thread {
      * Stop playing music. The music is faded out rather than cut off.
      * @param fadeOut Whether tp fade out the music (<code>true</code>) or to
      * cut it off (<code>false</code>).
-     * @param join Whether to wait for thread termination.
      */
-    public void terminate(final boolean fadeOut, final boolean join) {
+    public void terminate(final boolean fadeOut) {
         state = fadeOut ? 2 : 4;
-
-        if (join) {
-            try {
-                join();
-            } catch (final InterruptedException ex) {
-                throw new AssertionError();
-            }
-        }
     }
 
     /**
@@ -124,7 +115,7 @@ public class Processor extends Thread {
                     sourceDataLine.start();
                     try {
                         final byte[] buf = new byte[8192];
-                        while (state < 3 && !isInterrupted()) {
+                        while (state < 3 && !Thread.currentThread().isInterrupted()) {
                             int len = audioInputStream.read(buf, 0, buf.length);
                             if (len == -1) {
                                 final AudioInputStream newAudioInputStream = AudioSystem.getAudioInputStream(AudioFileLoader.getInputStream(null, name));

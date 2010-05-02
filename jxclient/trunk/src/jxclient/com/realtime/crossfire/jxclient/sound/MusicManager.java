@@ -38,6 +38,13 @@ public class MusicManager {
     private Processor processor = null;
 
     /**
+     * The {@link Thread} executing {@link #processor}. Set to
+     * <code>null</code> if none is executing.
+     */
+    @Nullable
+    private Thread thread = null;
+
+    /**
      * Whether background music is enabled. (User setting)
      */
     private boolean enabled = false;
@@ -100,13 +107,14 @@ public class MusicManager {
      */
     private void restart() {
         if (processor != null) {
-            processor.terminate(enabled, false);
+            processor.terminate(enabled);
             processor = null;
         }
 
         if (enabled && !muted && name != null) {
             processor = new Processor(name);
-            processor.start();
+            thread = new Thread(processor);
+            thread.start();
         }
     }
 
@@ -115,8 +123,16 @@ public class MusicManager {
      */
     public void shutdown() {
         if (processor != null) {
-            processor.terminate(false, true);
+            processor.terminate(false);
             processor = null;
+        }
+        if (thread != null) {
+            try {
+                thread.join();
+            } catch (final InterruptedException ex) {
+                throw new AssertionError();
+            }
+            thread = null;
         }
     }
 
