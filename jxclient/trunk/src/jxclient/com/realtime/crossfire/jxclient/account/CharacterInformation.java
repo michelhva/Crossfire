@@ -75,7 +75,7 @@ public class CharacterInformation implements Comparable<CharacterInformation> {
      * {@inheritDoc}
      */
     @Override
-    public int compareTo(final CharacterInformation t) {
-        return name.compareTo(t.getName());
+    public int compareTo(final CharacterInformation o) {
+        return name.compareTo(o.getName());
     }
 }
