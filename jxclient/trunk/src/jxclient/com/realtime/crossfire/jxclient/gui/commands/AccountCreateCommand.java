@@ -22,6 +22,7 @@ package com.realtime.crossfire.jxclient.gui.commands;
 
 import com.realtime.crossfire.jxclient.gui.gui.GUIElement;
 import com.realtime.crossfire.jxclient.gui.gui.Gui;
+import com.realtime.crossfire.jxclient.gui.label.AbstractLabel;
 import com.realtime.crossfire.jxclient.gui.label.GUILabelFailure;
 import com.realtime.crossfire.jxclient.gui.textinput.GUIText;
 import org.jetbrains.annotations.NotNull;
@@ -85,7 +86,7 @@ public class AccountCreateCommand implements GUICommand {
         final String confirm = c.getText();
 
         if (login.isEmpty()) {
-            final GUILabelFailure error = gui.getFirstElement(GUILabelFailure.class, "account_create_error");
+            final AbstractLabel error = gui.getFirstElement(GUILabelFailure.class, "account_create_error");
             if (error != null) {
                 error.setText("Can't have an empty login!");
             }
@@ -93,14 +94,14 @@ public class AccountCreateCommand implements GUICommand {
         }
 
         if (password.isEmpty()) {
-            final GUILabelFailure error = gui.getFirstElement(GUILabelFailure.class, "account_create_error");
+            final AbstractLabel error = gui.getFirstElement(GUILabelFailure.class, "account_create_error");
             if (error != null) {
                 error.setText("Can't have an empty password!");
             }
             return;
         }
         if (!confirm.equals(password)) {
-            final GUILabelFailure error = gui.getFirstElement(GUILabelFailure.class, "account_create_error");
+            final AbstractLabel error = gui.getFirstElement(GUILabelFailure.class, "account_create_error");
             if (error != null) {
                 error.setText("Passwords don't match!");
             }
