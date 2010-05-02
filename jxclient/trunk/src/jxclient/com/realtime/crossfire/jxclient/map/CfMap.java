@@ -435,6 +435,7 @@ public class CfMap {
 
                 final int newPw = size(newMinPx, maxPx);
                 final int newPh = size(minPy, maxPy);
+                assert patch != null;
                 final int oldPw = patch.length;
                 final int oldPh = patch[0].length;
 
@@ -443,16 +444,9 @@ public class CfMap {
                 assert newPw == oldPw+diffPw;
                 assert newPh == oldPh;
 
-                final CfMapPatch[][] newPatch = new CfMapPatch[newPw][newPh];
-                for (int y = 0; y < oldPh; y++) {
-                    for (int x = 0; x < oldPw; x++) {
-                        newPatch[x+diffPw][y] = patch[x][y];
-                    }
-                }
-
                 minX = newMinX;
                 minPx = newMinPx;
-                patch = newPatch;
+                patch = copyPatches(newPw, newPh, diffPw, 0, oldPw, oldPh);
             }
         } else if (dx > 0) {
             final int newMaxX = maxX+dx;
@@ -469,6 +463,7 @@ public class CfMap {
 
                 final int newPw = size(minPx, newMaxPx);
                 final int newPh = size(minPy, maxPy);
+                assert patch != null;
                 final int oldPw = patch.length;
                 final int oldPh = patch[0].length;
 
@@ -477,16 +472,9 @@ public class CfMap {
                 assert newPw == oldPw+diffPw;
                 assert newPh == oldPh;
 
-                final CfMapPatch[][] newPatch = new CfMapPatch[newPw][newPh];
-                for (int y = 0; y < oldPh; y++) {
-                    for (int x = 0; x < oldPw; x++) {
-                        newPatch[x][y] = patch[x][y];
-                    }
-                }
-
                 maxX = newMaxX;
                 maxPx = newMaxPx;
-                patch = newPatch;
+                patch = copyPatches(newPw, newPh, 0, 0, oldPw, oldPh);
             }
         }
 
@@ -505,6 +493,7 @@ public class CfMap {
 
                 final int newPw = size(minPx, maxPx);
                 final int newPh = size(newMinPy, maxPy);
+                assert patch != null;
                 final int oldPw = patch.length;
                 final int oldPh = patch[0].length;
 
@@ -513,16 +502,9 @@ public class CfMap {
                 assert newPh == oldPh+diffPh;
                 assert newPw == oldPw;
 
-                final CfMapPatch[][] newPatch = new CfMapPatch[newPw][newPh];
-                for (int y = 0; y < oldPh; y++) {
-                    for (int x = 0; x < oldPw; x++) {
-                        newPatch[x][y+diffPh] = patch[x][y];
-                    }
-                }
-
                 minY = newMinY;
                 minPy = newMinPy;
-                patch = newPatch;
+                patch = copyPatches(newPw, newPh, 0, diffPh, oldPw, oldPh);
             }
         } else if (dy > 0) {
             final int newMaxY = maxY+dy;
@@ -539,6 +521,7 @@ public class CfMap {
 
                 final int newPw = size(minPx, maxPx);
                 final int newPh = size(minPy, newMaxPy);
+                assert patch != null;
                 final int oldPw = patch.length;
                 final int oldPh = patch[0].length;
 
@@ -547,16 +530,9 @@ public class CfMap {
                 assert newPh == oldPh+diffPh;
                 assert newPw == oldPw;
 
-                final CfMapPatch[][] newPatch = new CfMapPatch[newPw][newPh];
-                for (int y = 0; y < oldPh; y++) {
-                    for (int x = 0; x < oldPw; x++) {
-                        newPatch[x][y] = patch[x][y];
-                    }
-                }
-
                 maxY = newMaxY;
                 maxPy = newMaxPy;
-                patch = newPatch;
+                patch = copyPatches(newPw, newPh, 0, 0, oldPw, oldPh);
             }
         }
     }
@@ -599,6 +575,28 @@ public class CfMap {
      */
     public int getOffsetY() {
         return patchY;
+    }
+
+    /**
+     * Returns a copy of a rectangular area of {@link #patch}.
+     * @param newWidth the width of the new area
+     * @param newHeight the height of the new area
+     * @param offsetX the x-offset into the new area
+     * @param offsetY the y-offset into the new area
+     * @param height the height of the area to copy
+     * @param width the width of the area to copy
+     * @return the copy
+     */
+    @NotNull
+    private CfMapPatch[][] copyPatches(final int newWidth, final int newHeight, final int offsetX, final int offsetY, final int height, final int width) {
+        assert patch != null;
+        final CfMapPatch[][] newPatch = new CfMapPatch[newWidth][newHeight];
+        for (int y = 0; y < width; y++) {
+            for (int x = 0; x < height; x++) {
+                newPatch[offsetX+x][offsetY+y] = patch[x][y];
+            }
+        }
+        return newPatch;
     }
 
 }
