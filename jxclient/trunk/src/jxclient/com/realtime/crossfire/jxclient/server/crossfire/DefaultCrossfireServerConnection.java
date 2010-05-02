@@ -1558,7 +1558,8 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
 
                         args = pos;
                         final String full = new String(packet, pos, end-pos, UTF8);
-                        final String command, message;
+                        final String command;
+                        final String message;
                         final int idx = full.indexOf(' ');
                         if (idx == -1) {
                           command = full;

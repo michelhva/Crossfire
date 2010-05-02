@@ -109,7 +109,10 @@ public class DialogStateParser {
                             }
 
                             if (!dialog.isAutoSize()) {
-                                final int x, y, w, h;
+                                final int x;
+                                final int y;
+                                final int w;
+                                final int h;
                                 try {
                                     x = Integer.parseInt(tmp[2]);
                                     y = Integer.parseInt(tmp[3]);
