@@ -48,7 +48,7 @@ public class GUICharacter extends ActivatableGUIElement implements GUIScrollable
     private final CharacterModel characterModel;
 
     /**
-     * Index of the item to display in {@link characterModel}.
+     * Index of the item to display in {@link #characterModel}.
      */
     private int index;
 

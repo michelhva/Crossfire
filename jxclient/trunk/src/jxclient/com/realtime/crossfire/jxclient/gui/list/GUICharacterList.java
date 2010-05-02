@@ -84,8 +84,9 @@ public class GUICharacterList extends GUIList {
     private int selectedIndex;
 
     /**
-     * The {@link MetaserverEntryListener} attached to all tracked metaserver
-     * entries. It detects changed contents and updates the list accordingly.
+     * The {@link CharacterInformationListener} attached to all tracked
+     * character models. It detects changed contents and updates the list
+     * accordingly.
      */
     @NotNull
     private final CharacterInformationListener characterInformationListener = new CharacterInformationListener() {
@@ -98,8 +99,7 @@ public class GUICharacterList extends GUIList {
 
     /**
      * Creates a new instance.
-     *
-     *      * @param tooltipManager the tooltip manager to update
+     * @param tooltipManager the tooltip manager to update
      * @param elementListener the element listener to notify
      * @param name the name of this element
      * @param extent the extent of this element
