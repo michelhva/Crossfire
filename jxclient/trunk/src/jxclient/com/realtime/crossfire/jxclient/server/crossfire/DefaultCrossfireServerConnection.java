@@ -1006,6 +1006,10 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
      * Processes a received packet. This function does not avoid index out of
      * bounds accesses to the array <code>packet</code>; instead, a
      * <code>try...catch</code> clause is used to detect invalid packets.
+     * @param packet the packet's payload
+     * @param start the starting index into <code>packet</code>
+     * @param end the ending index into <code>packet</code>
+     * @throws UnknownCommandException if the packet cannot be parsed
      */
     private void processPacket(@NotNull final byte[] packet, final int start, final int end) throws UnknownCommandException {
         try {

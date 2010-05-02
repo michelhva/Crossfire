@@ -63,6 +63,9 @@ public abstract class AbstractButton extends ActivatableGUIElement {
     @NotNull
     private final CommandList commandList;
 
+    /**
+     * The {@link TimeoutEvent} for generating autorepeat events.
+     */
     @NotNull
     private final TimeoutEvent timeoutEvent = new TimeoutEvent() {
         /** {@inheritDoc} */

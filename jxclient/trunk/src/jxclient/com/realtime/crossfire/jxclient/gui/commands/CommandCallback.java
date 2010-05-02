@@ -103,30 +103,30 @@ public interface CommandCallback {
     void accountLogin(@NotNull String login, @NotNull String password);
 
     /**
-     * Create an account.
-     * @param login
-     * @param password
+     * Creates an account.
+     * @param login the account's name
+     * @param password the account's password
      */
     void accountCreate(@NotNull String login, @NotNull String password);
 
     /**
-     * Play a character from the current account.
-     * @param name
+     * Plays a character from the current account.
+     * @param name the character's name
      */
     void accountPlayCharacter(@NotNull String name);
 
     /**
-     * Link a character to the current account.
-     * @param force
-     * @param login
-     * @param password
+     * Links a character to the current account.
+     * @param force 0 to allow failure, 1 to force in certain situations
+     * @param login the character's name
+     * @param password the character's password
      */
     void accountLink(int force, @NotNull String login, @NotNull String password);
 
     /**
-     * Create a character. The password should be the last from {@link
+     * Creates a character. The password should be the last from {@link
      * #accountLogin} or {@link #accountCreate}.
-     * @param login
+     * @param login the character's name
      */
     void accountCreateCharacter(@NotNull String login);
 }

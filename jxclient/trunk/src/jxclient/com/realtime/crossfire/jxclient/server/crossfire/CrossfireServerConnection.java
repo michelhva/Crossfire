@@ -265,37 +265,37 @@ public interface CrossfireServerConnection extends ServerConnection {
     void drawInfo(@NotNull String message, int color);
 
     /**
-     * Ask for an account login.
-     * @param login account login.
-     * @param password account password.
+     * Asks for an account login.
+     * @param login the account login
+     * @param password the account password
      */
     void sendAccountLogin(@NotNull String login, @NotNull String password);
 
     /**
-     * Send a request to play a character from an account.
-     * @param name character's name to play.
+     * Sends a request to play a character from an account.
+     * @param name the character's name to play
      */
     void sendAccountPlay(@NotNull String name);
 
     /**
-     * Send a request to add an existing character to an account.
-     * @param force 0 to allow failure, 1 to force in certain situations.
-     * @param login character's login.
-     * @param password character's password.
+     * Sends a request to add an existing character to an account.
+     * @param force 0 to allow failure, 1 to force in certain situations
+     * @param login the character's login
+     * @param password the character's password
      */
     void sendAccountLink(int force, @NotNull String login, @NotNull String password);
 
     /**
      * Sends a request to create a new account.
-     * @param login account login.
-     * @param password account password.
+     * @param login the account login
+     * @param password the account password
      */
     void sendAccountCreate(@NotNull String login, @NotNull String password);
 
     /**
      * Sends a request to create a new character associated to the account.
-     * @param login character's name.
-     * @param password character's password.
+     * @param login the character's name
+     * @param password the character's password
      */
     void sendAccountCharacterCreate(@NotNull String login, @NotNull String password);
 

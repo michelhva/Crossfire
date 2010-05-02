@@ -24,14 +24,17 @@ package com.realtime.crossfire.jxclient.spells;
 import org.jetbrains.annotations.Nullable;
 
 /**
- * A SpellListener is warned each time the currently selected spell has
- * changed.
+ * Interface for listeners interested in {@link CurrentSpellManager} related
+ * events.
  * @author Lauwenmark
- * @version 1.0
- * @since 1.0
  */
 public interface CurrentSpellManagerListener {
 
+    /**
+     * The selected spell has changed.
+     * @param spell the newly selected spell or <code>null</code> if none is
+     * selected
+     */
     void spellChanged(@Nullable Spell spell);
 
 }

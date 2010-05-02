@@ -25,6 +25,7 @@ import org.jetbrains.annotations.NotNull;
 
 /**
  * Interface for listeners interested in "replyinfo exp_table" responses.
+ * @author Andreas Kirschbaum
  */
 public interface CrossfireExpTableListener {
 

@@ -48,6 +48,12 @@ public class FaceImages {
     @NotNull
     private final ImageIcon magicMapImageIcon;
 
+    /**
+     * Creates a new instance.
+     * @param originalImageIcon the image icon as sent by the Crossfire server
+     * @param scaledImageIcon the image icon scaled for the map view
+     * @param magicMapImageIcon the image icon scaled for the magic map view
+     */
     public FaceImages(@NotNull final ImageIcon originalImageIcon, @NotNull final ImageIcon scaledImageIcon, @NotNull final ImageIcon magicMapImageIcon) {
         this.originalImageIcon = originalImageIcon;
         this.scaledImageIcon = scaledImageIcon;

@@ -24,9 +24,9 @@ package com.realtime.crossfire.jxclient.server.crossfire;
 import org.jetbrains.annotations.NotNull;
 
 /**
+ * Interface for listeners interested in magicmap messages recevied from the
+ * Crossfire server.
  * @author Lauwenmark
- * @version 1.0
- * @since 1.0
  */
 public interface CrossfireMagicmapListener {
 
