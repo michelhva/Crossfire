@@ -1848,7 +1848,7 @@ public class JXCSkinLoader {
             throw new IOException("syntax error");
         }
 
-        GUIText element = (GUIText)definedGUIElements.lookup(args[1]);
+        final GUIText element = (GUIText)definedGUIElements.lookup(args[1]);
         if (element == null) {
             throw new JXCSkinException("can't use hide_input on a non text field " + args[1]);
         }

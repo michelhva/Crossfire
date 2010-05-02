@@ -133,7 +133,7 @@ public class GuiManagerCommandCallback implements CommandCallback {
      * {@inheritDoc}
      */
     @Override
-    public void accountLogin(String login, String password) {
+    public void accountLogin(final String login, final String password) {
         server.sendAccountLogin(login, password);
         lastAccountPassword = password;
     }
@@ -142,7 +142,7 @@ public class GuiManagerCommandCallback implements CommandCallback {
      * {@inheritDoc}
      */
     @Override
-    public void accountCreate(String login, String password) {
+    public void accountCreate(final String login, final String password) {
         server.sendAccountCreate(login, password);
         lastAccountPassword = password;
     }
@@ -151,7 +151,7 @@ public class GuiManagerCommandCallback implements CommandCallback {
      * {@inheritDoc}
      */
     @Override
-    public void accountPlayCharacter(String name) {
+    public void accountPlayCharacter(final String name) {
         server.sendAccountPlay(name);
     }
 
@@ -159,7 +159,7 @@ public class GuiManagerCommandCallback implements CommandCallback {
      * {@inheritDoc}
      */
     @Override
-    public void accountLink(int force, @NotNull String login, @NotNull String password) {
+    public void accountLink(final int force, @NotNull final String login, @NotNull final String password) {
         server.sendAccountLink(force, login, password);
     }
 
@@ -167,7 +167,7 @@ public class GuiManagerCommandCallback implements CommandCallback {
      * {@inheritDoc}
      */
     @Override
-    public void accountCreateCharacter(String login) {
+    public void accountCreateCharacter(final String login) {
         server.sendAccountCharacterCreate(login, lastAccountPassword);
     }
 

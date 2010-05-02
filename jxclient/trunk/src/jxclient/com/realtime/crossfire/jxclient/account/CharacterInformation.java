@@ -39,7 +39,7 @@ public class CharacterInformation implements Comparable<CharacterInformation> {
     /**
      * @param name the name to set
      */
-    public void setName(String name) {
+    public void setName(final String name) {
         this.name = name;
     }
 
@@ -53,7 +53,7 @@ public class CharacterInformation implements Comparable<CharacterInformation> {
     /**
      * @param race the race to set
      */
-    public void setRace(String race) {
+    public void setRace(final String race) {
         this.race = race;
     }
 
@@ -67,7 +67,7 @@ public class CharacterInformation implements Comparable<CharacterInformation> {
     /**
      * @param level the level to set
      */
-    public void setLevel(int level) {
+    public void setLevel(final int level) {
         this.level = level;
     }
 
@@ -75,7 +75,7 @@ public class CharacterInformation implements Comparable<CharacterInformation> {
      * {@inheritDoc}
      */
     @Override
-    public int compareTo(CharacterInformation t) {
+    public int compareTo(final CharacterInformation t) {
         return name.compareTo(t.getName());
     }
 }

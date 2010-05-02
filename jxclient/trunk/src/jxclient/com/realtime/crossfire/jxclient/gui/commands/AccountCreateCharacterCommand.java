@@ -65,14 +65,14 @@ public class AccountCreateCharacterCommand implements GUICommand {
      */
     @Override
     public void execute() {
-        String login;
+        final String login;
 
         final Gui gui = this.element.getGui();
         if (gui == null) {
             return;
         }
 
-        GUIText l = gui.getFirstElement(GUIText.class, "character_login");
+        final GUIText l = gui.getFirstElement(GUIText.class, "character_login");
 
         if ((l == null)) {
             return;

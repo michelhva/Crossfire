@@ -351,8 +351,8 @@ public class JXCWindow extends JFrame {
        * {@inheritDoc}
        */
       @Override
-      public void addAccount(String name, String characterClass, String race, String face, String party, String map, short level, short faceNumber) {
-          CharacterInformation information = new CharacterInformation();
+      public void addAccount(final String name, final String characterClass, final String race, final String face, final String party, final String map, final short level, final short faceNumber) {
+          final CharacterInformation information = new CharacterInformation();
           information.setName(name);
           information.setRace(race);
         characterModel.add(information);

@@ -327,7 +327,7 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
     /**
      * The command prefix for the "accountaddplayer" command.
      */
-    private static byte[] accountAddPlayerPrefix = {
+    private static final byte[] accountAddPlayerPrefix = {
       'a',
       'c',
       'c',
@@ -350,7 +350,7 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
     /**
      * The command prefix for the "accountnew" command.
      */
-    private static byte[] accountNewPrefix = {
+    private static final byte[] accountNewPrefix = {
       'a',
       'c',
       'c',
@@ -367,7 +367,7 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
     /**
      * The command prefix for the "createplayer" command.
      */
-    private static byte[] createPlayerPrefix = {
+    private static final byte[] createPlayerPrefix = {
       'c',
       'r',
       'e',
@@ -1558,8 +1558,8 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
 
                         args = pos;
                         final String full = new String(packet, pos, end-pos, UTF8);
-                        String command, message;
-                        int idx = full.indexOf(' ');
+                        final String command, message;
+                        final int idx = full.indexOf(' ');
                         if (idx == -1) {
                           command = full;
                           message = "";
@@ -1568,7 +1568,7 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
                           message = full.substring(idx + 1);
                         }
 
-                        for (CrossfireFailureListener crossfireFailureListener : crossfireFailureListeners) {
+                        for (final CrossfireFailureListener crossfireFailureListener : crossfireFailureListeners) {
                             crossfireFailureListener.failure(command, message);
                         }
                         return;
@@ -2544,7 +2544,7 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
                 /* servers without account support */
                 setClientSocketState(ClientSocketState.ADDME, ClientSocketState.CONNECTED);
             } else if (clientSocketState == ClientSocketState.ACCOUNTINFO) {
-                for (CrossfireAccountListener crossfireAccountListener : crossfireAccountListeners) {
+                for (final CrossfireAccountListener crossfireAccountListener : crossfireAccountListeners) {
                     crossfireAccountListener.startPlaying();
                 }
                 setClientSocketState(ClientSocketState.ACCOUNTINFO, ClientSocketState.CONNECTED);
@@ -2989,7 +2989,7 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
         short faceNumber = 0;
 
         while (pos < endPos) {
-          int len = packet[pos++]&0xFF;
+          final int len = packet[pos++]&0xFF;
           if (debugProtocol != null) {
             debugProtocol.debugProtocolWrite("length = " + len);
           }
@@ -3255,7 +3255,7 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
      * {@inheritDoc}
      */
     @Override
-    public void sendAccountLogin(@NotNull String login, @NotNull String password) {
+    public void sendAccountLogin(@NotNull final String login, @NotNull final String password) {
       if (debugProtocol != null) {
         debugProtocol.debugProtocolWrite("send accountlogin " + login);
       }
@@ -3834,7 +3834,7 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
      * {@inheritDoc}
      */
     @Override
-    public void sendAccountPlay(String name) {
+    public void sendAccountPlay(final String name) {
       if (debugProtocol != null) {
         debugProtocol.debugProtocolWrite("send accountplay " + name);
       }
@@ -3850,7 +3850,7 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
    * {@inheritDoc}
    */
   @Override
-  public void sendAccountLink(int force, String login, String password) {
+  public void sendAccountLink(final int force, final String login, final String password) {
       if (debugProtocol != null) {
         debugProtocol.debugProtocolWrite("send accountaddplayer " + login);
       }
@@ -3870,7 +3870,7 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
    * {@inheritDoc}
    */
   @Override
-  public void sendAccountCreate(String login, String password) {
+  public void sendAccountCreate(final String login, final String password) {
       if (debugProtocol != null) {
         debugProtocol.debugProtocolWrite("send accountnew " + login);
       }
@@ -3889,7 +3889,7 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
    * {@inheritDoc}
    */
   @Override
-  public void sendAccountCharacterCreate(String login, String password) {
+  public void sendAccountCharacterCreate(final String login, final String password) {
       if (debugProtocol != null) {
         debugProtocol.debugProtocolWrite("send createplayer " + login);
       }
@@ -3908,7 +3908,7 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
    * {@inheritDoc}
    */
   @Override
-  public void addCrossfireFailureListener(CrossfireFailureListener listener) {
+  public void addCrossfireFailureListener(final CrossfireFailureListener listener) {
     crossfireFailureListeners.add(listener);
   }
 
@@ -3916,7 +3916,7 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
    * {@inheritDoc}
    */
   @Override
-  public void removeCrossfireFailureListener(CrossfireFailureListener listener) {
+  public void removeCrossfireFailureListener(final CrossfireFailureListener listener) {
     crossfireFailureListeners.remove(listener);
   }
 

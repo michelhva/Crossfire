@@ -72,13 +72,13 @@ public class AccountPlayCharacterCommand implements GUICommand {
             return;
         }
 
-        GUICharacterList p = gui.getFirstElement(GUICharacterList.class, "characters");
+        final GUICharacterList p = gui.getFirstElement(GUICharacterList.class, "characters");
 
         if ((p == null)) {
             return;
         }
 
-        CharacterInformation current = p.getCurrentCharacter();
+        final CharacterInformation current = p.getCurrentCharacter();
         if (current == null) {
             return;
         }

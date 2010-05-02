@@ -36,7 +36,7 @@ public class CharacterCellRenderer extends JPanel implements GUIListCellRenderer
     /**
      * Template to use to display items.
      */
-    private GUICharacter template;
+    private final GUICharacter template;
 
     /**
      * Creates a new instance.
@@ -53,7 +53,7 @@ public class CharacterCellRenderer extends JPanel implements GUIListCellRenderer
      * {@inheritDoc}
      */
     @Override
-    public void updateResolution(int screenWidth, int screenHeight) {
+    public void updateResolution(final int screenWidth, final int screenHeight) {
         template.updateResolution(screenWidth, screenHeight);
     }
 
@@ -61,7 +61,7 @@ public class CharacterCellRenderer extends JPanel implements GUIListCellRenderer
      * {@inheritDoc}
      */
     @Override
-    public Component getListCellRendererComponent(JList jlist, Object value, int i, boolean isSelected, boolean hasFocus) {
+    public Component getListCellRendererComponent(final JList jlist, final Object value, final int i, final boolean isSelected, final boolean hasFocus) {
         template.setIndex(((GUICharacter)value).getIndex());
         template.setSelected(isSelected);
         return this;
