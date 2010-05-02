@@ -501,11 +501,7 @@ public class JXCWindow extends JFrame {
         setMaximumSize(maxSize);
 
         if (!fullScreen || !windowRenderer.setFullScreenMode(this, resolution)) {
-            if (!windowRenderer.setWindowMode(this, resolution, minResolution, minSize.equals(maxSize))) {
-                System.err.println("cannot create window with resolution "+resolution);
-                System.exit(1);
-                throw new AssertionError();
-            }
+            windowRenderer.setWindowMode(this, resolution, minResolution, minSize.equals(maxSize));
         }
 
         guiManager.setSkin(skin);
