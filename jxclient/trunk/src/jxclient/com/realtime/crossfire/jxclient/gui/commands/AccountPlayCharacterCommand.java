@@ -51,7 +51,7 @@ public class AccountPlayCharacterCommand implements GUICommand {
       */
     public AccountPlayCharacterCommand(@NotNull final CommandCallback commandCallback, @NotNull final GUIElement button) {
         this.commandCallback = commandCallback;
-        this.element = button;
+         element = button;
     }
 
     /**
@@ -67,7 +67,7 @@ public class AccountPlayCharacterCommand implements GUICommand {
      */
     @Override
     public void execute() {
-        final Gui gui = this.element.getGui();
+        final Gui gui = element.getGui();
         if (gui == null) {
             return;
         }
