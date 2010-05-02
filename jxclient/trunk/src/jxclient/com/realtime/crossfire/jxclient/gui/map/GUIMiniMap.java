@@ -30,6 +30,7 @@ import com.realtime.crossfire.jxclient.server.crossfire.CrossfireServerConnectio
 import com.realtime.crossfire.jxclient.skin.skin.Extent;
 import java.awt.Color;
 import java.awt.Graphics;
+import java.nio.ByteBuffer;
 import org.jetbrains.annotations.NotNull;
 
 /**
@@ -106,8 +107,7 @@ public class GUIMiniMap extends AbstractGUIMap {
     private final CrossfireMagicmapListener crossfireMagicmapListener = new CrossfireMagicmapListener() {
         /** {@inheritDoc} */
         @Override
-        public void commandMagicmapReceived(final int width, final int height, final int px, final int py, @NotNull final byte[] data, final int pos) {
-            int datapos = pos;
+        public void commandMagicmapReceived(final int width, final int height, final int px, final int py, @NotNull final ByteBuffer data) {
             synchronized (bufferedImageSync) {
                 final Graphics g = createBufferGraphics();
                 try {
@@ -115,13 +115,13 @@ public class GUIMiniMap extends AbstractGUIMap {
                     final int offsetY = getPlayerY()-py*tileSize;
                     for (int y = 0; y < height; y++) {
                         for (int x = 0; x < width; x++) {
-                            if (data[datapos] != 0) {
-                                g.setColor(tileColors[data[datapos]&FACE_COLOR_MASK]);
+                            final byte ch = data.get();
+                            if (ch != 0) {
+                                g.setColor(tileColors[ch&FACE_COLOR_MASK]);
                                 final int sx = offsetX+x*tileSize;
                                 final int sy = offsetY+y*tileSize;
                                 g.fillRect(sx, sy, tileSize, tileSize);
                             }
-                            datapos++;
                         }
                     }
                     markPlayer(g, 0, 0);

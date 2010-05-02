@@ -23,6 +23,7 @@ package com.realtime.crossfire.jxclient.scripts;
 
 import com.realtime.crossfire.jxclient.server.crossfire.CrossfireServerConnection;
 import com.realtime.crossfire.jxclient.server.server.ReceivedPacketListener;
+import java.nio.ByteBuffer;
 import java.util.Collection;
 import java.util.HashSet;
 import java.util.regex.Pattern;
@@ -77,21 +78,23 @@ public class PacketWatcher {
 
         /** {@inheritDoc} */
         @Override
-        public void processAscii(@NotNull final String command, @NotNull final byte[] packet, final int start, final int end) {
+        public void processAscii(@NotNull final String command, @NotNull final ByteBuffer packet) {
             if (matchesCommand(command)) {
-                scriptProcess.commandSent("watch "+command+" "+new String(packet, start, end-start));
+                final byte[] data = new byte[packet.remaining()];
+                packet.get(data);
+                scriptProcess.commandSent("watch "+command+" "+new String(data)); // XXX: uses default encoding
             }
         }
 
         /** {@inheritDoc} */
         @Override
-        public void processShortArray(@NotNull final String command, @NotNull final byte[] packet, final int start, final int end) {
+        public void processShortArray(@NotNull final String command, @NotNull final ByteBuffer packet) {
             if (matchesCommand(command)) {
                 final StringBuilder sb = new StringBuilder("watch ");
                 sb.append(command);
-                for (int i = 0; i < 100 && start+2*i+1 < end; i++) {
+                for (int i = 0; i < 100 && packet.remaining() >= 2; i++) {
                     sb.append(' ');
-                    sb.append(getShort(packet, start+2*i));
+                    sb.append(getShort(packet));
                 }
                 scriptProcess.commandSent(sb.toString());
             }
@@ -99,13 +102,13 @@ public class PacketWatcher {
 
         /** {@inheritDoc} */
         @Override
-        public void processIntArray(@NotNull final String command, @NotNull final byte[] packet, final int start, final int end) {
+        public void processIntArray(@NotNull final String command, @NotNull final ByteBuffer packet) {
             if (matchesCommand(command)) {
                 final StringBuilder sb = new StringBuilder("watch ");
                 sb.append(command);
-                for (int i = start; i+3 < end; i += 4) {
+                while (packet.remaining() >= 4) {
                     sb.append(' ');
-                    sb.append(getInt(packet, i));
+                    sb.append(getInt(packet));
                 }
                 scriptProcess.commandSent(sb.toString());
             }
@@ -113,20 +116,20 @@ public class PacketWatcher {
 
         /** {@inheritDoc} */
         @Override
-        public void processShortInt(@NotNull final String command, @NotNull final byte[] packet, final int start, final int end) {
-            if (end-start == 6 && matchesCommand(command)) {
-                scriptProcess.commandSent("watch "+command+" "+getShort(packet, start)+" "+getInt(packet, start+2));
+        public void processShortInt(@NotNull final String command, @NotNull final ByteBuffer packet) {
+            if (packet.remaining() == 6 && matchesCommand(command)) {
+                scriptProcess.commandSent("watch "+command+" "+getShort(packet)+" "+getInt(packet));
             }
         }
 
         /** {@inheritDoc} */
         @Override
-        public void processMixed(@NotNull final String command, @NotNull final byte[] packet, final int start, final int end) {
+        public void processMixed(@NotNull final String command, @NotNull final ByteBuffer packet) {
             if (matchesCommand(command)) {
                 final StringBuilder sb = new StringBuilder("watch ");
                 sb.append(command);
                 sb.append(' ');
-                sb.append(end-start);
+                sb.append(packet.remaining());
             }
         }
 
@@ -148,28 +151,26 @@ public class PacketWatcher {
 
         /** {@inheritDoc} */
         @Override
-        public void processNodata(@NotNull final String command, @NotNull final byte[] packet, final int start, final int end) {
-            processMixed(command, packet, start, end);
+        public void processNodata(@NotNull final String command, @NotNull final ByteBuffer packet) {
+            processMixed(command, packet);
         }
 
         /**
          * Extracts a two-byte integer value from a <code>byte</code> array.
          * @param packet the <code>byte</code> array
-         * @param offset the start start offset of the integer value
          * @return the integer value
          */
-        private int getShort(@NotNull final byte[] packet, final int offset) {
-            return packet[offset]*0x100+packet[offset+1];
+        private int getShort(@NotNull final ByteBuffer packet) {
+            return packet.getShort()&0xFFFF;
         }
 
         /**
          * Extracts a four-byte integer value from a <code>byte</code> array.
          * @param packet the <code>byte</code> array
-         * @param offset the start start offset of the integer value
          * @return the integer value
          */
-        private int getInt(@NotNull final byte[] packet, final int offset) {
-            return packet[offset]*0x1000000+packet[offset+1]*0x10000+packet[offset+2]*0x100+packet[offset+3];
+        private int getInt(@NotNull final ByteBuffer packet) {
+            return packet.getInt();
         }
     };
 

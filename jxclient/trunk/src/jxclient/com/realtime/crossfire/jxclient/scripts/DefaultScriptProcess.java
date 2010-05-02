@@ -44,6 +44,7 @@ import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.io.OutputStreamWriter;
 import java.io.UnsupportedEncodingException;
+import java.nio.ByteBuffer;
 import java.util.ArrayList;
 import java.util.Collection;
 import org.jetbrains.annotations.NotNull;
@@ -175,7 +176,7 @@ public class DefaultScriptProcess implements Runnable, ScriptProcess {
 
         /** {@inheritDoc} */
         @Override
-        public void packetReceived(@NotNull final byte[] buf, final int start, final int end) {
+        public void packetReceived(@NotNull final ByteBuffer packet) {
             // ignore
         }
 
