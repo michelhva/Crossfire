@@ -187,12 +187,13 @@ public class GuiManager {
     private final CrossfireDrawextinfoListener crossfireDrawextinfoListener = new CrossfireDrawextinfoListener() {
         /** {@inheritDoc} */
         @Override
-        public void commandDrawextinfoReceived(final int color, final int type, final int subtype, @NotNull String message) {
+        public void commandDrawextinfoReceived(final int color, final int type, final int subtype, @NotNull final String message) {
             if (skin == null) {
                 throw new IllegalStateException();
             }
 
             @Nullable final Gui dialog;
+            String effectiveMessage = message;
             switch (type) {
             case MessageTypes.MSG_TYPE_BOOK:
                 dialog = skin.getDialogBook(1);
@@ -200,7 +201,7 @@ public class GuiManager {
                 if (title != null) {
                     final String[] tmp = message.split("\n", 2);
                     title.setText(tmp[0]);
-                    message = tmp.length >= 2 ? tmp[1] : "";
+                    effectiveMessage = tmp.length >= 2 ? tmp[1] : "";
                 }
                 break;
 
@@ -246,11 +247,11 @@ public class GuiManager {
 
             final AbstractLabel label = dialog.getFirstElementNotEndingWith(AbstractLabel.class, "_title");
             if (label != null) {
-                label.setText(message);
+                label.setText(effectiveMessage);
             } else {
                 final GUILabelLog log = dialog.getFirstElement(GUILabelLog.class);
                 if (log != null) {
-                    log.updateText(message);
+                    log.updateText(effectiveMessage);
                 }
             }
             windowRenderer.openDialog(dialog, false);
