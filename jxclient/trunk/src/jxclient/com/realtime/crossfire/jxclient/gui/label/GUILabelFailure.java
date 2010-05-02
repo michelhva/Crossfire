@@ -37,6 +37,11 @@ import org.jetbrains.annotations.NotNull;
 public class GUILabelFailure extends GUIMultiLineLabel {
 
     /**
+     * The serial version UID.
+     */
+    private static final long serialVersionUID = 1;
+
+    /**
      * The {@link CrossfireServerConnection} to monitor.
      */
     @NotNull
