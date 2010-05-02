@@ -738,4 +738,25 @@ public class DefaultScriptProcess extends Thread implements ScriptProcess {
         }
     }
 
+    /**
+     * {@inheritDoc}
+     */
+    @Override
+    public int hashCode() {
+        return scriptId;
+    }
+
+    /**
+     * {@inheritDoc}
+     */
+    @Override
+    public boolean equals(@Nullable final Object obj) {
+        if (obj == null || !(obj instanceof ScriptProcess)) {
+            return false;
+        }
+
+        final ScriptProcess scriptProcess = (ScriptProcess)obj;
+        return scriptProcess.getScriptId() == scriptId;
+    }
+
 }

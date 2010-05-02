@@ -20,6 +20,8 @@
 
 package com.realtime.crossfire.jxclient.account;
 
+import org.jetbrains.annotations.Nullable;
+
 /**
  * Information for one character for an account.
  * @author Nicolas Weeger
@@ -78,4 +80,26 @@ public class CharacterInformation implements Comparable<CharacterInformation> {
     public int compareTo(final CharacterInformation o) {
         return name.compareTo(o.getName());
     }
+
+    /**
+     * {@inheritDoc}
+     */
+    @Override
+    public int hashCode() {
+        return name.hashCode();
+    }
+
+    /**
+     * {@inheritDoc}
+     */
+    @Override
+    public boolean equals(@Nullable final Object obj) {
+        if (obj == null || !(obj instanceof CharacterInformation)) {
+            return false;
+        }
+
+        final CharacterInformation characterInformation = (CharacterInformation)obj;
+        return characterInformation.getName().equals(name);
+    }
+
 }
