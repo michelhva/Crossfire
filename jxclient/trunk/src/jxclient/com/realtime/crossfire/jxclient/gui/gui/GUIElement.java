@@ -31,7 +31,7 @@ import java.awt.GraphicsDevice;
 import java.awt.GraphicsEnvironment;
 import java.awt.event.MouseEvent;
 import java.awt.image.BufferedImage;
-import javax.swing.JPanel;
+import javax.swing.JComponent;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 
@@ -40,7 +40,7 @@ import org.jetbrains.annotations.Nullable;
  * @author Lauwenmark
  * @author Andreas Kirschbaum
  */
-public abstract class GUIElement extends JPanel {
+public abstract class GUIElement extends JComponent {
 
     /**
      * The serial version UID.
@@ -141,7 +141,7 @@ public abstract class GUIElement extends JPanel {
      * @param transparency The transparency value for the backing buffer
      */
     protected GUIElement(@NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final String name, final Extent extent, final int transparency) {
-        super(false);
+        setDoubleBuffered(false);
         this.tooltipManager = tooltipManager;
         this.elementListener = elementListener;
         this.name = name;
