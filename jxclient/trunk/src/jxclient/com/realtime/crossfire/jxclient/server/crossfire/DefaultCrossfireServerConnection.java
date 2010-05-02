@@ -1610,7 +1610,7 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
                           command = full;
                           message = "";
                         } else {
-                          command = full.substring(0, idx - 1);
+                          command = full.substring(0, idx);
                           message = full.substring(idx + 1);
                         }
                         if (debugProtocol != null) {
