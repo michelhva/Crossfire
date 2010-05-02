@@ -2676,13 +2676,14 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
     /**
      * Processes the payload data for a map2 coordinate command.
      * @param packet the packet contents
-     * @param pos the start of the coordinate command
+     * @param startPos the start of the coordinate command
      * @param x the x-coordinate of the currently processed square
      * @param y the y-coordinate of the currently processed square
      * @return the end index of the coordinate command
      * @throws UnknownCommandException if the command cannot be parsed
      */
-    private int cmdMap2Coordinate(@NotNull final byte[] packet, int pos, final int x, final int y) throws UnknownCommandException {
+    private int cmdMap2Coordinate(@NotNull final byte[] packet, final int startPos, final int x, final int y) throws UnknownCommandException {
+        int pos = startPos;
         for (; ;) {
             final int lenType = packet[pos++]&0xFF;
             if (lenType == 0xFF) {
