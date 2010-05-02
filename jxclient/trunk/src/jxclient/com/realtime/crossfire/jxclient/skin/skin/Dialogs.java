@@ -64,14 +64,6 @@ public class Dialogs implements Iterable<Gui> {
     }
 
     /**
-     * Forgets about all dialogs.
-     */
-    public void clear() {
-        dialogs.clear();
-        dialogsToLoad.clear();
-    }
-
-    /**
      * Returns a dialog instance by dialog name.
      * @param name the dialog name
      * @return the dialog instance
