@@ -2689,19 +2689,20 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
                     throw new UnknownCommandException("map2 command contains image command with length "+len);
                 }
                 final int face = ((packet[pos++]&0xFF)<<8)|(packet[pos++]&0xFF);
+                final int layer = type-Map2.COORD_LAYER0;
                 if ((face&Map2.FACE_ANIMATION) == 0) {
                     if (debugProtocol != null) {
-                        debugProtocol.debugProtocolWrite("recv map2 "+x+"/"+y+"/"+(type-Map2.COORD_LAYER0)+" face="+face);
+                        debugProtocol.debugProtocolWrite("recv map2 "+x+"/"+y+"/"+layer+" face="+face);
                     }
                     for (final CrossfireUpdateMapListener listener : crossfireUpdateMapListeners) {
-                        listener.mapFace(x, y, type-Map2.COORD_LAYER0, face);
+                        listener.mapFace(x, y, layer, face);
                     }
                 } else {
                     if (debugProtocol != null) {
-                        debugProtocol.debugProtocolWrite("recv map2 "+x+"/"+y+"/"+(type-Map2.COORD_LAYER0)+" anim="+(face&Map2.ANIM_MASK)+" type="+((face>>Map2.ANIM_TYPE_SHIFT)&Map2.ANIM_TYPE_MASK));
+                        debugProtocol.debugProtocolWrite("recv map2 "+x+"/"+y+"/"+layer+" anim="+(face&Map2.ANIM_MASK)+" type="+((face>>Map2.ANIM_TYPE_SHIFT)&Map2.ANIM_TYPE_MASK));
                     }
                     for (final CrossfireUpdateMapListener listener : crossfireUpdateMapListeners) {
-                        listener.mapAnimation(x, y, type-Map2.COORD_LAYER0, face&Map2.ANIM_MASK, (face>>Map2.ANIM_TYPE_SHIFT)&Map2.ANIM_TYPE_MASK);
+                        listener.mapAnimation(x, y, layer, face&Map2.ANIM_MASK, (face>>Map2.ANIM_TYPE_SHIFT)&Map2.ANIM_TYPE_MASK);
                     }
                 }
                 if (len == 3) {
@@ -2712,16 +2713,16 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
                     if ((face&Map2.FACE_ANIMATION) == 0) {
                         final int smooth = packet[pos++]&0xFF;
                         if (debugProtocol != null) {
-                            debugProtocol.debugProtocolWrite("recv map2 "+x+"/"+y+"/"+(type-Map2.COORD_LAYER0)+" smooth="+smooth);
+                            debugProtocol.debugProtocolWrite("recv map2 "+x+"/"+y+"/"+layer+" smooth="+smooth);
                         }
                         // XXX: update smoothing information
                     } else {
                         final int animSpeed = packet[pos++]&0xFF;
                         if (debugProtocol != null) {
-                            debugProtocol.debugProtocolWrite("recv map2 "+x+"/"+y+"/"+(type-Map2.COORD_LAYER0)+" anim_speed="+animSpeed);
+                            debugProtocol.debugProtocolWrite("recv map2 "+x+"/"+y+"/"+layer+" anim_speed="+animSpeed);
                         }
                         for (final CrossfireUpdateMapListener listener : crossfireUpdateMapListeners) {
-                            listener.mapAnimationSpeed(x, y, type-Map2.COORD_LAYER0, animSpeed);
+                            listener.mapAnimationSpeed(x, y, layer, animSpeed);
                         }
                     }
                 } else if (len == 4) {
@@ -2731,20 +2732,20 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
 
                     final int animSpeed = packet[pos++]&0xFF;
                     if (debugProtocol != null) {
-                        debugProtocol.debugProtocolWrite("recv map2 "+x+"/"+y+"/"+(type-Map2.COORD_LAYER0)+" anim_speed="+animSpeed);
+                        debugProtocol.debugProtocolWrite("recv map2 "+x+"/"+y+"/"+layer+" anim_speed="+animSpeed);
                     }
                     for (final CrossfireUpdateMapListener listener : crossfireUpdateMapListeners) {
-                        listener.mapAnimationSpeed(x, y, type-Map2.COORD_LAYER0, animSpeed);
+                        listener.mapAnimationSpeed(x, y, layer, animSpeed);
                     }
 
                     final int smooth = packet[pos++]&0xFF;
                     if (debugProtocol != null) {
-                        debugProtocol.debugProtocolWrite("recv map2 "+x+"/"+y+"/"+(type-Map2.COORD_LAYER0)+" smooth="+smooth);
+                        debugProtocol.debugProtocolWrite("recv map2 "+x+"/"+y+"/"+layer+" smooth="+smooth);
                     }
                     // XXX: update smoothing information
                 } else if (len != 2) {
                     if (debugProtocol != null) {
-                        debugProtocol.debugProtocolWrite("recv map2 "+x+"/"+y+"/"+(type-Map2.COORD_LAYER0)+" <invalid>");
+                        debugProtocol.debugProtocolWrite("recv map2 "+x+"/"+y+"/"+layer+" <invalid>");
                     }
                     throw new UnknownCommandException("map2 command contains image command with length "+len);
                 }
