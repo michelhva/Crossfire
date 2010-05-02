@@ -84,18 +84,24 @@ public class AccountCreateCommand implements GUICommand {
 
         if (login.isEmpty()) {
             final GUILabelFailure error = gui.getFirstElement(GUILabelFailure.class, "account_create_error");
-            error.setText("Can't have an empty login!");
+            if (error != null) {
+                error.setText("Can't have an empty login!");
+            }
             return;
         }
 
         if (password.isEmpty()) {
             final GUILabelFailure error = gui.getFirstElement(GUILabelFailure.class, "account_create_error");
-            error.setText("Can't have an empty password!");
+            if (error != null) {
+                error.setText("Can't have an empty password!");
+            }
             return;
         }
         if (!confirm.equals(password)) {
             final GUILabelFailure error = gui.getFirstElement(GUILabelFailure.class, "account_create_error");
-            error.setText("Passwords don't match!");
+            if (error != null) {
+                error.setText("Passwords don't match!");
+            }
             return;
         }
 
