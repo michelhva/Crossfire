@@ -1601,7 +1601,6 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
                             break;
                         }
 
-                        args = pos;
                         final String full = new String(packet, pos, end-pos, UTF8);
                         final String command;
                         final String message;
