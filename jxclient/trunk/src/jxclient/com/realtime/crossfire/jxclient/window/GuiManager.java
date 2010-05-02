@@ -371,8 +371,9 @@ public class GuiManager {
      * Display the main account dialog, to let the player login or create a new account.
      */
     public void manageAccount() {
-      if (dialogConnect != null)
+      if (dialogConnect != null) {
         closeDialog(dialogConnect);
+      }
       windowRenderer.setGuiState(RendererGuiState.ACCOUNT);
       hideAccountWindows();
       openDialogByName("account_main");

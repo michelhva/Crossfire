@@ -79,8 +79,9 @@ public class AccountPlayCharacterCommand implements GUICommand {
         }
 
         CharacterInformation current = p.getCurrentCharacter();
-        if (current == null)
+        if (current == null) {
             return;
+        }
 
         commandCallback.accountPlayCharacter(current.getName());
     }
