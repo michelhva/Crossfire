@@ -95,7 +95,7 @@ public class GUICharacter extends ActivatableGUIElement implements GUIScrollable
         super(tooltipManager, elementListener, name, new Extent(0, 0, w, h), Transparency.TRANSLUCENT);
         this.characterModel = characterModel;
         this.font = font;
-        this.index = defaultIndex;
+        index = defaultIndex;
     }
 
     /**

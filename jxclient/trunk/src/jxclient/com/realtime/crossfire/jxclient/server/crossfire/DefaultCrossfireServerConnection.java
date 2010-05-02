@@ -3206,7 +3206,7 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
                 // ignore: we do not care whether this option has been ignored
             } else if (option.equals("loginmethod")) {
               if (value.equals("FALSE")) {
-                this.loginMethod = 0;
+                  loginMethod = 0;
                 continue;
               }
 
@@ -3216,7 +3216,7 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
               } catch (final NumberFormatException ex) {
                 throw new UnknownCommandException("the server returned 'setup loginmethod " + value + "'.");
               }
-              this.loginMethod = method;
+                loginMethod = method;
             } else {
                 System.err.println("Warning: ignoring unknown setup option from server: "+option+"="+value);
             }

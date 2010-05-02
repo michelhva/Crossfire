@@ -49,7 +49,7 @@ public class AccountCreateCommand implements GUICommand {
       */
     public AccountCreateCommand(@NotNull final CommandCallback commandCallback, @NotNull final GUIElement button) {
         this.commandCallback = commandCallback;
-        this.element = button;
+         element = button;
     }
 
     /**
@@ -67,7 +67,7 @@ public class AccountCreateCommand implements GUICommand {
     public void execute() {
         final String login, password, confirm;
 
-        final Gui gui = this.element.getGui();
+        final Gui gui = element.getGui();
         if (gui == null) {
             return;
         }
@@ -101,6 +101,6 @@ public class AccountCreateCommand implements GUICommand {
             return;
         }
 
-        this.commandCallback.accountCreate(login, password);
+        commandCallback.accountCreate(login, password);
     }
 }
