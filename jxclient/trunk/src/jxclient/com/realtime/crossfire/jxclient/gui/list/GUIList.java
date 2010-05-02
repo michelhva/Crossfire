@@ -623,12 +623,4 @@ public abstract class GUIList extends ActivatableGUIElement implements GUIScroll
         }
     }
 
-    /**
-     * Returns the number of visible items.
-     * @return the number of visible items
-     */
-    public int getVisibleItems() {
-        return Math.max(getHeight()/cellHeight, 1)*Math.max(getWidth()/cellHeight, 1);
-    }
-
 }
