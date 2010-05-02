@@ -87,6 +87,7 @@ public class MetaserverProcessor {
                 while (!Thread.currentThread().isInterrupted()) {
                     boolean executeProcess = false;
                     synchronized (sync) {
+                        //noinspection UnconditionalWait,WaitWithoutCorrespondingNotify
                         sync.wait(1000);
                         if (counter > 0) {
                             counter--;

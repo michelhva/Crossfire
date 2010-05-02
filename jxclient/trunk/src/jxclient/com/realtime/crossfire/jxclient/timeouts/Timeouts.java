@@ -68,6 +68,7 @@ public class Timeouts {
                             if (tmp == null) {
                                 events.wait();
                             } else {
+                                //noinspection CallToNativeMethodWhileLocked
                                 events.wait(tmp.getTimeout()-System.currentTimeMillis());
                             }
                         } catch (final InterruptedException ex) {
@@ -76,6 +77,7 @@ public class Timeouts {
                     }
 
                     event = events.peek();
+                    //noinspection CallToNativeMethodWhileLocked
                     execute = event != null && event.getTimeout() <= System.currentTimeMillis();
                     if (execute) {
                         events.poll();
