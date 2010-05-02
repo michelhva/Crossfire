@@ -65,8 +65,6 @@ public class AccountLoginCommand implements GUICommand {
      */
     @Override
     public void execute() {
-        final String login, password;
-
         final Gui gui = element.getGui();
         if (gui == null) {
             return;
@@ -79,8 +77,8 @@ public class AccountLoginCommand implements GUICommand {
             return;
         }
 
-        login = l.getText();
-        password = p.getText();
+        final String login = l.getText();
+        final String password = p.getText();
 
         commandCallback.accountLogin(login, password);
     }

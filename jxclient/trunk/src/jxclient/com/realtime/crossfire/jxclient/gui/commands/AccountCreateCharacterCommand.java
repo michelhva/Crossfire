@@ -65,8 +65,6 @@ public class AccountCreateCharacterCommand implements GUICommand {
      */
     @Override
     public void execute() {
-        final String login;
-
         final Gui gui = element.getGui();
         if (gui == null) {
             return;
@@ -78,7 +76,7 @@ public class AccountCreateCharacterCommand implements GUICommand {
             return;
         }
 
-        login = l.getText();
+        final String login = l.getText();
 
         commandCallback.accountCreateCharacter(login);
     }
