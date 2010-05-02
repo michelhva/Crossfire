@@ -2853,7 +2853,7 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
      * @param layer the layer to update
      * @throws UnknownCommandException if the command cannot be parsed
      */
-    private void cmdMap2CoordinateLayer4(@NotNull final byte[] packet, final int x, final int y, final int layer, int pos, final int face) throws UnknownCommandException {
+    private void cmdMap2CoordinateLayer4(@NotNull final byte[] packet, final int x, final int y, final int layer, final int pos, final int face) throws UnknownCommandException {
         if (face == 0) {
             throw new UnknownCommandException("map2 command contains smoothing or animation information for empty face");
         }
