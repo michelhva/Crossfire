@@ -27,6 +27,7 @@ import com.realtime.crossfire.jxclient.server.crossfire.CrossfireDrawextinfoList
 import com.realtime.crossfire.jxclient.server.crossfire.CrossfireDrawinfoListener;
 import com.realtime.crossfire.jxclient.server.crossfire.CrossfireExpTableListener;
 import com.realtime.crossfire.jxclient.server.crossfire.CrossfireFaceListener;
+import com.realtime.crossfire.jxclient.server.crossfire.CrossfireFailureListener;
 import com.realtime.crossfire.jxclient.server.crossfire.CrossfireMagicmapListener;
 import com.realtime.crossfire.jxclient.server.crossfire.CrossfireMusicListener;
 import com.realtime.crossfire.jxclient.server.crossfire.CrossfirePickupListener;
@@ -43,7 +44,6 @@ import com.realtime.crossfire.jxclient.server.crossfire.CrossfireUpdateItemListe
 import com.realtime.crossfire.jxclient.server.crossfire.CrossfireUpdateMapListener;
 import com.realtime.crossfire.jxclient.server.crossfire.MapSizeListener;
 import com.realtime.crossfire.jxclient.server.crossfire.SentReplyListener;
-import com.realtime.crossfire.jxclient.server.crossfire.CrossfireFailureListener;
 import com.realtime.crossfire.jxclient.server.server.ReceivedPacketListener;
 import com.realtime.crossfire.jxclient.server.socket.ClientSocketListener;
 import org.jetbrains.annotations.NotNull;
