@@ -388,6 +388,7 @@ public class ClientSocket {
                 try {
                     isConnected = socketChannel.connect(socketAddress);
                 } catch (final UnresolvedAddressException ex) {
+                    //noinspection ObjectToString
                     throw new IOException("Cannot resolve address: "+socketAddress, ex);
                 } catch (final IllegalArgumentException ex) {
                     throw new IOException(ex.getMessage(), ex);
