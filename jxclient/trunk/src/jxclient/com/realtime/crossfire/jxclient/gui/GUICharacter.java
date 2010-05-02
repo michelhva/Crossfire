@@ -43,6 +43,11 @@ import org.jetbrains.annotations.Nullable;
 public class GUICharacter extends ActivatableGUIElement implements GUIScrollable {
 
     /**
+     * The serial version UID.
+     */
+    private static final long serialVersionUID = 1;
+
+    /**
      * Character model to display items from.
      */
     private final CharacterModel characterModel;

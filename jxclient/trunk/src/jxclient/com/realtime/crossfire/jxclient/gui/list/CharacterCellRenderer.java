@@ -34,6 +34,11 @@ import org.jetbrains.annotations.NotNull;
 public class CharacterCellRenderer extends JPanel implements GUIListCellRenderer {
 
     /**
+     * The serial version UID.
+     */
+    private static final long serialVersionUID = 1;
+
+    /**
      * Template to use to display items.
      */
     private final GUICharacter template;

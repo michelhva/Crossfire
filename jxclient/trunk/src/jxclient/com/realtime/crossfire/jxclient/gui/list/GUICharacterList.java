@@ -41,6 +41,11 @@ import org.jetbrains.annotations.Nullable;
 public class GUICharacterList extends GUIList {
 
     /**
+     * The serial version UID.
+     */
+    private static final long serialVersionUID = 1;
+
+    /**
      * The model to display characters from.
      */
     @NotNull
