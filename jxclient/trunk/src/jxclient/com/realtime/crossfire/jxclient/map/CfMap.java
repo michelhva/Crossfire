@@ -431,9 +431,7 @@ public class CfMap {
             } else {
                 // need to add (diffPw) patches to the left
 
-                if (diffPw <= 0) {
-                    throw new AssertionError();
-                }
+                assert diffPw > 0;
 
                 final int newPw = size(newMinPx, maxPx);
                 final int newPh = size(minPy, maxPy);
@@ -441,15 +439,9 @@ public class CfMap {
                 final int oldPh = patch[0].length;
 
                 // new width must be more than old size
-                if (newPw <= oldPw) {
-                    throw new AssertionError();
-                }
-                if (newPw != oldPw+diffPw) {
-                    throw new AssertionError();
-                }
-                if (newPh != oldPh) {
-                    throw new AssertionError();
-                }
+                assert newPw > oldPw;
+                assert newPw == oldPw+diffPw;
+                assert newPh == oldPh;
 
                 final CfMapPatch[][] newPatch = new CfMapPatch[newPw][newPh];
                 for (int y = 0; y < oldPh; y++) {
@@ -473,9 +465,7 @@ public class CfMap {
             } else {
                 // need to add (diffPw) patches to the right
 
-                if (diffPw <= 0) {
-                    throw new AssertionError();
-                }
+                assert diffPw > 0;
 
                 final int newPw = size(minPx, newMaxPx);
                 final int newPh = size(minPy, maxPy);
@@ -483,15 +473,9 @@ public class CfMap {
                 final int oldPh = patch[0].length;
 
                 // new width must be more than old size
-                if (newPw <= oldPw) {
-                    throw new AssertionError();
-                }
-                if (newPw != oldPw+diffPw) {
-                    throw new AssertionError();
-                }
-                if (newPh != oldPh) {
-                    throw new AssertionError();
-                }
+                assert newPw > oldPw;
+                assert newPw == oldPw+diffPw;
+                assert newPh == oldPh;
 
                 final CfMapPatch[][] newPatch = new CfMapPatch[newPw][newPh];
                 for (int y = 0; y < oldPh; y++) {
@@ -517,9 +501,7 @@ public class CfMap {
             } else {
                 // need to add (diffPh) patches to the top
 
-                if (diffPh <= 0) {
-                    throw new AssertionError();
-                }
+                assert diffPh > 0;
 
                 final int newPw = size(minPx, maxPx);
                 final int newPh = size(newMinPy, maxPy);
@@ -527,15 +509,9 @@ public class CfMap {
                 final int oldPh = patch[0].length;
 
                 // new height must be more than old size
-                if (newPh <= oldPh) {
-                    throw new AssertionError();
-                }
-                if (newPh != oldPh+diffPh) {
-                    throw new AssertionError();
-                }
-                if (newPw != oldPw) {
-                    throw new AssertionError();
-                }
+                assert newPh > oldPh;
+                assert newPh == oldPh+diffPh;
+                assert newPw == oldPw;
 
                 final CfMapPatch[][] newPatch = new CfMapPatch[newPw][newPh];
                 for (int y = 0; y < oldPh; y++) {
@@ -559,9 +535,7 @@ public class CfMap {
             } else {
                 // need to add (diffPh) patches to the bottom
 
-                if (diffPh <= 0) {
-                    throw new AssertionError();
-                }
+                assert diffPh > 0;
 
                 final int newPw = size(minPx, maxPx);
                 final int newPh = size(minPy, newMaxPy);
@@ -569,15 +543,9 @@ public class CfMap {
                 final int oldPh = patch[0].length;
 
                 // new height must be more than old size
-                if (newPh <= oldPh) {
-                    throw new AssertionError();
-                }
-                if (newPh != oldPh+diffPh) {
-                    throw new AssertionError();
-                }
-                if (newPw != oldPw) {
-                    throw new AssertionError();
-                }
+                assert newPh > oldPh;
+                assert newPh == oldPh+diffPh;
+                assert newPw == oldPw;
 
                 final CfMapPatch[][] newPatch = new CfMapPatch[newPw][newPh];
                 for (int y = 0; y < oldPh; y++) {
