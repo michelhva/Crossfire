@@ -44,7 +44,7 @@ public class Metaserver {
     /**
      * The time (in seconds) to forget about old metaserver entries.
      */
-    private static final long EXPIRE_INTERVAL = 60*60*24*2;
+    private static final long EXPIRE_INTERVAL = 60L*60*24*2;
 
     /**
      * The metaserver URL.
