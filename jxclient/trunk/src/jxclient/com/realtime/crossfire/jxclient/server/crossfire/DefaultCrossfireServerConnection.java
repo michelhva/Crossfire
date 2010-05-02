@@ -3115,8 +3115,8 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
         String face = "";
         String party = "";
         String map = "";
-        short level = 0;
-        short faceNumber = 0;
+        int level = 0;
+        int faceNumber = 0;
 
         while (pos < endPos) {
           final int len = packet[pos++]&0xFF;
@@ -3156,7 +3156,7 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
               }
               break;
             case ACL_LEVEL:
-              level = (short)(packet[pos]<<8 | packet[pos+1]);
+              level = (packet[pos]&0xFF)<<8 | (packet[pos+1]&0xFF);
               if (debugProtocol != null) {
                 debugProtocol.debugProtocolWrite("recv accountplayers level="+level);
               }
@@ -3180,7 +3180,7 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
               }
               break;
             case ACL_FACE_NUM:
-              faceNumber = (short)(packet[pos]<<8 | packet[pos+1]);
+              faceNumber = (packet[pos]&0xFF)<<8 | (packet[pos+1]&0xFF);
               if (debugProtocol != null) {
                 debugProtocol.debugProtocolWrite("recv accountplayers face="+faceNumber);
               }
