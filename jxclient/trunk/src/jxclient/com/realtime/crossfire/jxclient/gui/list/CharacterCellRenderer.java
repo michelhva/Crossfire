@@ -20,11 +20,11 @@
 
 package com.realtime.crossfire.jxclient.gui.list;
 
+import com.realtime.crossfire.jxclient.gui.GUICharacter;
+import java.awt.BorderLayout;
 import java.awt.Component;
 import javax.swing.JList;
 import javax.swing.JPanel;
-import com.realtime.crossfire.jxclient.gui.GUICharacter;
-import java.awt.BorderLayout;
 import org.jetbrains.annotations.NotNull;
 
 /**
