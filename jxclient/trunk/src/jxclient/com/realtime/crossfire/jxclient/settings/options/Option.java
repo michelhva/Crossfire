@@ -37,7 +37,7 @@ public abstract class Option {
     private final EventListenerList listeners = new EventListenerList();
 
     /**
-     * Notify all listeners that the state has changed.
+     * Notifies all listeners that the state has changed.
      */
     protected void fireStateChangedEvent() {
         for (final OptionListener listener : listeners.getListeners(OptionListener.class)) {
@@ -46,8 +46,8 @@ public abstract class Option {
     }
 
     /**
-     * Add a listener for state changes.
-     * @param listener The listener to add.
+     * Adds a listener for state changes.
+     * @param listener the listener to add
      */
     public void addOptionListener(@NotNull final OptionListener listener) {
         listeners.add(OptionListener.class, listener);
@@ -62,9 +62,9 @@ public abstract class Option {
     }
 
     /**
-     * Whether the option should not be saved. This function can be overridden
-     * for options that are otherwise saved, or for options that should not be
-     * saved at all.
+     * Returns whether the option should not be saved. This function can be
+     * overridden for options that are otherwise saved, or for options that
+     * should not be saved at all.
      * @return whether the option value should not be saved
      */
     public boolean inhibitSave() {

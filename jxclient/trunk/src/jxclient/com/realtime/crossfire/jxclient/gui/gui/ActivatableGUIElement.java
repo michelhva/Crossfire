@@ -37,7 +37,7 @@ public abstract class ActivatableGUIElement extends GUIElement {
     private static final long serialVersionUID = 1;
 
     /**
-     * Create a new instance.
+     * Creates a new instance.
      * @param tooltipManager the tooltip manager to update
      * @param elementListener the element listener to notify
      * @param name The name of this element.
@@ -57,8 +57,8 @@ public abstract class ActivatableGUIElement extends GUIElement {
     }
 
     /**
-     * Set the active state.
-     * @param active The new active state.
+     * Sets the active state.
+     * @param active the active state
      */
     public void setActive(final boolean active) {
         final Gui gui = getGui();
@@ -72,7 +72,10 @@ public abstract class ActivatableGUIElement extends GUIElement {
      */
     protected abstract void activeChanged();
 
-    /* {@inheritDoc} */
+    /**
+     * Returns whether this element is active.
+     * @return whether this element is active
+     */
     public boolean isActive() {
         final Gui gui = getGui();
         return gui != null && gui.getActiveElement() == this;

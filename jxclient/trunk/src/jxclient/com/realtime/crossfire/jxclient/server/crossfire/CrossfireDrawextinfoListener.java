@@ -24,12 +24,19 @@ package com.realtime.crossfire.jxclient.server.crossfire;
 import org.jetbrains.annotations.NotNull;
 
 /**
+ * Interface for listeners interested in drawextinfo messages received from the
+ * Crossfire server.
  * @author Lauwenmark
- * @version 1.0
- * @since 1.0
  */
 public interface CrossfireDrawextinfoListener {
 
+    /**
+     * A drawextinfo message has been received.
+     * @param color the message color
+     * @param type the message type
+     * @param subtype the message subtype
+     * @param message the message
+     */
     void commandDrawextinfoReceived(int color, int type, int subtype, @NotNull String message);
 
 }

@@ -29,15 +29,25 @@ import org.jetbrains.annotations.Nullable;
  */
 public class CharacterInformation implements Comparable<CharacterInformation> {
 
+    /**
+     * The character's name.
+     */
     @Nullable
     private String name;
 
+    /**
+     * The character's race.
+     */
     @Nullable
     private String race;
 
+    /**
+     * The character's level.
+     */
     private int level;
 
     /**
+     * Returns the character's name.
      * @return the name
      */
     @Nullable
@@ -46,6 +56,7 @@ public class CharacterInformation implements Comparable<CharacterInformation> {
     }
 
     /**
+     * Sets the character's name.
      * @param name the name to set
      */
     public void setName(@NotNull final String name) {
@@ -53,6 +64,7 @@ public class CharacterInformation implements Comparable<CharacterInformation> {
     }
 
     /**
+     * Returns the character's race.
      * @return the race
      */
     @Nullable
@@ -61,6 +73,7 @@ public class CharacterInformation implements Comparable<CharacterInformation> {
     }
 
     /**
+     * Sets the character's race.
      * @param race the race to set
      */
     public void setRace(@NotNull final String race) {
@@ -68,6 +81,7 @@ public class CharacterInformation implements Comparable<CharacterInformation> {
     }
 
     /**
+     * Returns the character's level.
      * @return the level
      */
     public int getLevel() {
@@ -75,6 +89,7 @@ public class CharacterInformation implements Comparable<CharacterInformation> {
     }
 
     /**
+     * Sets the character's level.
      * @param level the level to set
      */
     public void setLevel(final int level) {

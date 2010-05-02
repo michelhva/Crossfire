@@ -24,7 +24,8 @@ package com.realtime.crossfire.jxclient.server.crossfire;
 import org.jetbrains.annotations.NotNull;
 
 /**
- * Interface for listeners interested in "stats" commands.
+ * Interface for listeners interested in stats messages received from the
+ * Crossfire server.
  * @author Andreas Kirschbaum
  */
 public interface CrossfireStatsListener {
@@ -180,10 +181,19 @@ public interface CrossfireStatsListener {
      */
     int CS_STAT_EXP64 = 28;
 
+    /**
+     * Attuned spell paths of a spell.
+     */
     int CS_STAT_SPELL_ATTUNE = 29;
 
+    /**
+     * Repelled spell paths of a spell.
+     */
     int CS_STAT_SPELL_REPEL = 30;
 
+    /**
+     * Denied spell paths of a spell.
+     */
     int CS_STAT_SPELL_DENY = 31;
 
     /**

@@ -26,7 +26,9 @@ import java.awt.Image;
 import org.jetbrains.annotations.NotNull;
 
 /**
- * A set of images to form a button image.
+ * A set of images to form a button image. The button image consists of a left,
+ * a middle, and a right part. Left and right parts have fixed size, the middle
+ * part is clipped to the button's width.
  * @author Andreas Kirschbaum
  */
 public class ButtonImages {
@@ -56,6 +58,12 @@ public class ButtonImages {
      */
     private final int height;
 
+    /**
+     * Creates a new instance.
+     * @param imageLeft the left image
+     * @param imageMiddle the middle image
+     * @param imageRight the right image
+     */
     public ButtonImages(@NotNull final Image imageLeft, @NotNull final Image imageMiddle, @NotNull final Image imageRight) {
         if (imageLeft.getHeight(null) != imageMiddle.getHeight(null)) {
             throw new IllegalArgumentException("left image height is "+imageLeft.getHeight(null)+" but middle image height is "+imageMiddle.getHeight(null));
@@ -71,7 +79,7 @@ public class ButtonImages {
     }
 
     /**
-     * Return the button height.
+     * Returns the button's height.
      * @return the height
      */
     public int getHeight() {
@@ -79,17 +87,17 @@ public class ButtonImages {
     }
 
     /**
-     * Return the minimal possible button width.
-     * @return the minimal button width
+     * Returns the minimal possible button's width.
+     * @return the minimal button's width
      */
     public int getMinimumWidth() {
         return imageLeft.getWidth(null)+2*OFFSET+imageRight.getWidth(null);
     }
 
     /**
-     * Draw the button.
-     * @param g The graphics to paint into.
-     * @param w The button width.
+     * Draws the button.
+     * @param g the graphics to paint into
+     * @param w the button width
      */
     public void render(@NotNull final Graphics g, final int w) {
         g.drawImage(imageLeft, 0, 0, null);

@@ -42,15 +42,23 @@ public class GuiManagerCommandCallback implements CommandCallback {
     @NotNull
     private GuiManager guiManager;
 
+    /**
+     * The {@link CrossfireServerConnection} for sending commands.
+     */
     @NotNull
     private CrossfireServerConnection server;
 
+    /**
+     * The last sent account or character password. Set to <code>null</code> if
+     * if no password has been sent yet.
+     */
     @Nullable
     private String lastAccountPassword = null;
 
     /**
      * Creates a new instance.
      * @param guiManager the gui manager to forward to
+     * @param server the crossfire server connection for sending commands
      */
     @Deprecated
     public void init(@NotNull final GuiManager guiManager, @NotNull final CrossfireServerConnection server) {

@@ -503,28 +503,57 @@ public class DefaultJXCSkin implements JXCSkin {
         guiElements.add(guiElement);
     }
 
+    /**
+     * Defines a new dialog.
+     * @param dialogName the dialog's name
+     */
     public void addDialog(@NotNull final String dialogName) {
         dialogs.addDialog(dialogName);
     }
 
+    /**
+     * Returns one dialog pending loading. Each dialog is returned only once.
+     * @return a dialog pending loading or <code>null</code>
+     */
     @Nullable
     public String getDialogToLoad() {
         return dialogs.getDialogToLoad();
     }
 
+    /**
+     * Defines a new command list.
+     * @param commandListName the command list's name
+     * @param commandListType the command list's type
+     * @throws JXCSkinException if the command list cannot be created
+     */
     public void addCommandList(@NotNull final String commandListName, @NotNull final CommandListType commandListType) throws JXCSkinException {
         final CommandList commandList = new CommandList(commandListType);
         definedCommandLists.insert(commandListName, commandList);
     }
 
+    /**
+     * Adds a command list to be executed on "init" events.
+     * @param commandList the command list
+     */
     public void addInitEvent(@NotNull final CommandList commandList) {
         initEvents.add(commandList);
     }
 
+    /**
+     * Sets the maximum number of ground view objects.
+     * @param numLookObjects the number of objects
+     */
     public void setNumLookObjects(final int numLookObjects) {
         this.numLookObjects = numLookObjects;
     }
 
+    /**
+     * Add a new option.
+     * @param optionName the option name to add
+     * @param documentation the documentation string for the settings
+     * @param commandCheckBoxOption the option instance to forward to
+     * @throws JXCSkinException if the option cannot be created
+     */
     public void addOption(@NotNull final String optionName, @NotNull final String documentation, @NotNull final Option commandCheckBoxOption) throws JXCSkinException {
         try {
             optionManager.addOption(optionName, documentation, commandCheckBoxOption);
@@ -534,6 +563,10 @@ public class DefaultJXCSkin implements JXCSkin {
         optionNames.add(optionName);
     }
 
+    /**
+     * Sets the {@link AbstractLabel} that is used to display tooltips.
+     * @param tooltipLabel the label or <code>null</code> to disable tooltips
+     */
     public void setTooltipLabel(@Nullable final AbstractLabel tooltipLabel) {
         this.tooltipLabel = tooltipLabel;
     }

@@ -24,38 +24,82 @@ package com.realtime.crossfire.jxclient.server.crossfire;
 import org.jetbrains.annotations.NotNull;
 
 /**
+ * Interface for listeners interested in drawinfo messages received from the
+ * Crossfire server.
  * @author Lauwenmark
- * @version 1.0
- * @since 1.0
  */
 public interface CrossfireDrawinfoListener {
 
+    /**
+     * A message color.
+     */
     int NDI_BLACK = 0;
 
+    /**
+     * A message color.
+     */
     int NDI_WHITE = 1;
 
+    /**
+     * A message color.
+     */
     int NDI_NAVY = 2;
 
+    /**
+     * A message color.
+     */
     int NDI_RED = 3;
 
+    /**
+     * A message color.
+     */
     int NDI_ORANGE = 4;
 
+    /**
+     * A message color.
+     */
     int NDI_BLUE = 5;
 
+    /**
+     * A message color.
+     */
     int NDI_DK_ORANGE = 6;
 
+    /**
+     * A message color.
+     */
     int NDI_GREEN = 7;
 
+    /**
+     * A message color.
+     */
     int NDI_LT_GREEN = 8;
 
+    /**
+     * A message color.
+     */
     int NDI_GREY = 9;
 
+    /**
+     * A message color.
+     */
     int NDI_BROWN = 10;
 
+    /**
+     * A message color.
+     */
     int NDI_GOLD = 11;
 
+    /**
+     * A message color.
+     */
     int NDI_TAN = 12;
 
+    /**
+     * A drawinfo message has been received.
+     * @param text the message text
+     * @param type the message type
+     */
     void commandDrawinfoReceived(@NotNull String text, int type);
 
 }

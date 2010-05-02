@@ -25,12 +25,18 @@ import com.realtime.crossfire.jxclient.faces.Face;
 import org.jetbrains.annotations.NotNull;
 
 /**
+ * A {@link CfItem} that represents a character.
  * @author Lauwenmark
- * @version 1.0
- * @since 1.0
  */
 public class CfPlayer extends CfItem {
 
+    /**
+     * Creates a new instance.
+     * @param tag the character's item tag
+     * @param weight the character's weight
+     * @param face the character's face
+     * @param name the character's name
+     */
     public CfPlayer(final int tag, final int weight, @NotNull final Face face, @NotNull final String name) {
         super(0, tag, 0, weight, face, name, name, 0, 0, 1, -1);
     }

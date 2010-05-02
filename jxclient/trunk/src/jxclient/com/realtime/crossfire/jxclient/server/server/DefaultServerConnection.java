@@ -33,11 +33,12 @@ import org.jetbrains.annotations.Nullable;
  * network-related work. It either decodes commands sent by the server itself,
  * or delegates their processing to other classes, like Map or Faces.
  * @author Lauwenmark
- * @version 1.0
- * @since 1.0
  */
 public abstract class DefaultServerConnection implements ServerConnection {
 
+    /**
+     * The {@link ClientSocket} instance used to connect to Crossfire servers.
+     */
     @NotNull
     private final ClientSocket clientSocket;
 

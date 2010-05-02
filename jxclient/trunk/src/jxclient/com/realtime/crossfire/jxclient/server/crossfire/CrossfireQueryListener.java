@@ -24,9 +24,9 @@ package com.realtime.crossfire.jxclient.server.crossfire;
 import org.jetbrains.annotations.NotNull;
 
 /**
+ * Interface for listeners interested in query messages received from the
+ * Crossfire server.
  * @author Lauwenmark
- * @version 1.0
- * @since 1.0
  */
 public interface CrossfireQueryListener {
 
@@ -45,6 +45,11 @@ public interface CrossfireQueryListener {
      */
     int HIDEINPUT = 4;
 
+    /**
+     * A query message has been received.
+     * @param prompt the query's prompt
+     * @param queryType the query type
+     */
     void commandQueryReceived(@NotNull String prompt, int queryType);
 
 }

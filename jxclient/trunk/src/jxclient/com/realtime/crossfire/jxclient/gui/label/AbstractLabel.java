@@ -47,11 +47,14 @@ public abstract class AbstractLabel extends GUIElement {
     private static final long serialVersionUID = 1;
 
     /**
-     * The label contents.
+     * The label text.
      */
     @NotNull
     private String text = "";
 
+    /**
+     * The background image. It takes precedence over {@link #backgroundColor}.
+     */
     @Nullable
     private ImageIcon backgroundImage;
 
@@ -64,11 +67,17 @@ public abstract class AbstractLabel extends GUIElement {
 
     /**
      * Creates a new instance.
+     * @param tooltipManager the tooltip manager to update
+     * @param elementListener the element listener to notify
+     * @param name the name of this element
      * @param extent the extent of this element
+     * @param backgroundPicture the optional background picture
+     * @param backgroundColor the background color; ignored if background
+     * picture is set
      */
-    protected AbstractLabel(@NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final String name, @NotNull final Extent extent, @Nullable final BufferedImage picture, @NotNull final Color backgroundColor) {
+    protected AbstractLabel(@NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final String name, @NotNull final Extent extent, @Nullable final BufferedImage backgroundPicture, @NotNull final Color backgroundColor) {
         super(tooltipManager, elementListener, name, extent, Transparency.TRANSLUCENT);
-        backgroundImage = picture == null ? null : new ImageIcon(picture);
+        backgroundImage = backgroundPicture == null ? null : new ImageIcon(backgroundPicture);
         this.backgroundColor = backgroundColor;
     }
 
@@ -80,6 +89,10 @@ public abstract class AbstractLabel extends GUIElement {
         super.dispose();
     }
 
+    /**
+     * The label text.
+     * @param text the text
+     */
     public void setText(@NotNull final String text) {
         if (!this.text.equals(text)) {
             this.text = text;
@@ -93,8 +106,8 @@ public abstract class AbstractLabel extends GUIElement {
     protected abstract void textChanged();
 
     /**
-     * Return the label text.
-     * @return The label text.
+     * Returns the label text.
+     * @return the label text
      */
     @NotNull
     protected String getText() {
@@ -115,8 +128,9 @@ public abstract class AbstractLabel extends GUIElement {
     }
 
     /**
-     * Set the background image.
-     * @param backgroundImage The new background image.
+     * Sets the background image. If both background color and background image
+     * are set, the color is ignored.
+     * @param backgroundImage the background image
      */
     protected void setBackgroundImage(@Nullable final ImageIcon backgroundImage) {
         this.backgroundImage = backgroundImage;
