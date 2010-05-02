@@ -43,6 +43,7 @@ public class GUICharacterList extends GUIList {
     /**
      * The model to display characters from.
      */
+    @NotNull
     private final CharacterModel characterModel;
 
     /**
@@ -173,6 +174,7 @@ public class GUICharacterList extends GUIList {
      * Get the currently selected character in the list.
      * @return null if invalid index, else the character information.
      */
+    @Nullable
     public CharacterInformation getCurrentCharacter() {
         return characterModel.getEntry(selectedIndex);
     }

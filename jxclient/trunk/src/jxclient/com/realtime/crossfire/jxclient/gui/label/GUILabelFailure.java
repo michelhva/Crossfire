@@ -52,7 +52,7 @@ public class GUILabelFailure extends GUIMultiLineLabel {
          * {@inheritDoc}
          */
         @Override
-        public void failure(final String command, final String arguments) {
+        public void failure(@NotNull final String command, @NotNull final String arguments) {
             setText(arguments);
         }
 

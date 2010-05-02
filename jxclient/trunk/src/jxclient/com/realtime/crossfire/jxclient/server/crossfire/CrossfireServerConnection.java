@@ -237,24 +237,24 @@ public interface CrossfireServerConnection extends ServerConnection {
      * Adds a listener to be notified about account events.
      * @param listener the listener to add.
      */
-    void addCrossfireAccountListener(@NotNull final CrossfireAccountListener listener);
+    void addCrossfireAccountListener(@NotNull CrossfireAccountListener listener);
 
     /**
      * Removes a listener to be notified about account events.
      * @param listener the listener to remove.
      */
-    void removeCrossfireAccountListener(@NotNull final CrossfireAccountListener listener);
+    void removeCrossfireAccountListener(@NotNull CrossfireAccountListener listener);
 
     /**
      * Adds a listener to be notified of failure messages.
      * @param listener listener to add.
      */
-    void addCrossfireFailureListener(@NotNull final CrossfireFailureListener listener);
+    void addCrossfireFailureListener(@NotNull CrossfireFailureListener listener);
     /**
      * Removes a listener to be notified of failure messages.
      * @param listener listener to be removed.
      */
-    void removeCrossfireFailureListener(@NotNull final CrossfireFailureListener listener);
+    void removeCrossfireFailureListener(@NotNull CrossfireFailureListener listener);
     /**
      * Pretends that a drawinfo message has been received.
      * @param message the message

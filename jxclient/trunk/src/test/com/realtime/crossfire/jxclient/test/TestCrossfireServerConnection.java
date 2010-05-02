@@ -512,7 +512,7 @@ public class TestCrossfireServerConnection implements CrossfireServerConnection 
      * {@inheritDoc}
      */
     @Override
-    public void addCrossfireAccountListener(CrossfireAccountListener listener) {
+    public void addCrossfireAccountListener(@NotNull final CrossfireAccountListener listener) {
         Assert.fail();
     }
 
@@ -520,7 +520,7 @@ public class TestCrossfireServerConnection implements CrossfireServerConnection 
      * {@inheritDoc}
      */
     @Override
-    public void removeCrossfireAccountListener(CrossfireAccountListener listener) {
+    public void removeCrossfireAccountListener(@NotNull final CrossfireAccountListener listener) {
         Assert.fail();
     }
 
@@ -544,7 +544,7 @@ public class TestCrossfireServerConnection implements CrossfireServerConnection 
      * {@inheritDoc}
      */
     @Override
-    public void sendAccountLogin(String login, String password) {
+    public void sendAccountLogin(@NotNull final String login, @NotNull final String password) {
         Assert.fail();
     }
 

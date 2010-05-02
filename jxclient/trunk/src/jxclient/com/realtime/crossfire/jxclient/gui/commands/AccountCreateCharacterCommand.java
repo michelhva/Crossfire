@@ -40,6 +40,7 @@ public class AccountCreateCharacterCommand implements GUICommand {
     /**
      * The {@link GUIElement} to find the Gui containing the fields.
      */
+    @NotNull
     private final GUIElement element;
 
     /**
