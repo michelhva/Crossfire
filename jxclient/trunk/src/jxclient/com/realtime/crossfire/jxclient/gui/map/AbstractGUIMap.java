@@ -372,7 +372,7 @@ public abstract class AbstractGUIMap extends GUIElement {
             g.fillRect(offsetX+x*tileSize, offsetY+y*tileSize, tileSize, tileSize);
         }
         final int darkness = map.getDarkness(x, y);
-        if (darkness < 255) {
+        if (darkness < CfMapSquare.DARKNESS_FULL_BRIGHT) {
             g.setColor(DarknessColors.getDarknessColor(darkness));
             g.fillRect(offsetX+x*tileSize, offsetY+y*tileSize, tileSize, tileSize);
         }
