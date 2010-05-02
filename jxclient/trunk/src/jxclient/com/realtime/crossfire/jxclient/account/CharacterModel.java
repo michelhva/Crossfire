@@ -118,11 +118,11 @@ public class CharacterModel {
 
     /**
      * Adds an entry.
-     * @param CharacterInformation the entry to add
+     * @param characterInformation the entry to add
      */
-    public void add(@NotNull final CharacterInformation CharacterInformation) {
+    public void add(@NotNull final CharacterInformation characterInformation) {
         synchronized (sync) {
-            charactersPending.add(CharacterInformation);
+            charactersPending.add(characterInformation);
         }
     }
 
@@ -148,8 +148,8 @@ public class CharacterModel {
         }
         charactersPending.clear();
 
-        for (final CharacterListener CharacterListener : characterListeners) {
-            CharacterListener.numberOfItemsChanged();
+        for (final CharacterListener characterListener : characterListeners) {
+            characterListener.numberOfItemsChanged();
         }
 
         for (int i = 0, imax = Math.max(oldMetalistSize, newMetalistSize); i < imax; i++) {
