@@ -3079,7 +3079,6 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
         }
 
       //sendAddme();
-      return;
     }
 
     /**
