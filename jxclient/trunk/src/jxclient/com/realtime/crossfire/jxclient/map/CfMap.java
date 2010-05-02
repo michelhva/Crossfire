@@ -391,6 +391,7 @@ public class CfMap {
             minPy = (y-patchY)>>CfMapPatch.SIZE_LOG;
             maxPy = minPy;
             patch = new CfMapPatch[1][1];
+            //noinspection AssignmentToNull
             patch[0][0] = null;
         } else {
             if (x < minX) {

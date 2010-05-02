@@ -73,6 +73,7 @@ public class CfMultiSquare {
         for (int layer = 0; layer < Map2.NUM_LAYERS; layer++) {
             if (faces[layer] != null) {
                 map.setFace(x, y, layer, null); // XXX: do not reset fog-of-war state
+                //noinspection AssignmentToNull
                 faces[layer] = null;
             }
         }
