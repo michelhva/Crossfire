@@ -3830,6 +3830,10 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
         }
     }
 
+    /**
+     * {@inheritDoc}
+     */
+    @Override
     public void sendAccountPlay(String name) {
       if (debugProtocol != null) {
         debugProtocol.debugProtocolWrite("send accountplay " + name);
@@ -3842,6 +3846,10 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
       }
     }
 
+  /**
+   * {@inheritDoc}
+   */
+  @Override
   public void sendAccountLink(int force, String login, String password) {
       if (debugProtocol != null) {
         debugProtocol.debugProtocolWrite("send accountaddplayer " + login);
@@ -3858,6 +3866,10 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
       }
   }
 
+  /**
+   * {@inheritDoc}
+   */
+  @Override
   public void sendAccountCreate(String login, String password) {
       if (debugProtocol != null) {
         debugProtocol.debugProtocolWrite("send accountnew " + login);
@@ -3873,6 +3885,10 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
       }
   }
 
+  /**
+   * {@inheritDoc}
+   */
+  @Override
   public void sendAccountCharacterCreate(String login, String password) {
       if (debugProtocol != null) {
         debugProtocol.debugProtocolWrite("send createplayer " + login);
@@ -3891,6 +3907,7 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
   /**
    * {@inheritDoc}
    */
+  @Override
   public void addCrossfireFailureListener(CrossfireFailureListener listener) {
     crossfireFailureListeners.add(listener);
   }
@@ -3898,6 +3915,7 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
   /**
    * {@inheritDoc}
    */
+  @Override
   public void removeCrossfireFailureListener(CrossfireFailureListener listener) {
     crossfireFailureListeners.remove(listener);
   }

@@ -122,14 +122,26 @@ public class GUICharacter extends ActivatableGUIElement implements GUIScrollable
         g.drawString(character == null ? "" : character.getName(), 0, font.getSize()+1);
     }
 
+    /**
+     * {@inheritDoc}
+     */
+    @Override
     public boolean canScroll(int distance) {
         throw new UnsupportedOperationException("Not supported yet.");
     }
 
+    /**
+     * {@inheritDoc}
+     */
+    @Override
     public void scroll(int distance) {
         throw new UnsupportedOperationException("Not supported yet.");
     }
 
+    /**
+     * {@inheritDoc}
+     */
+    @Override
     public void resetScroll() {
         throw new UnsupportedOperationException("Not supported yet.");
     }
