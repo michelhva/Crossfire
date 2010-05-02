@@ -52,12 +52,12 @@ public class Timeouts {
      * The thread that delivers timeout events.
      */
     @NotNull
-    private static final Thread deliverPendingTimeouts = new Thread() {
+    private static final Runnable deliverPendingTimeouts = new Runnable() {
         /** {@inheritDoc} */
         @Override
         public void run() {
             boolean doWait = true;
-            while (!isInterrupted()) {
+            while (!Thread.currentThread().isInterrupted()) {
                 final Event event;
                 final boolean execute;
                 synchronized (events) {
@@ -91,7 +91,7 @@ public class Timeouts {
     };
 
     static {
-        deliverPendingTimeouts.start();
+        new Thread(deliverPendingTimeouts).start();
     }
 
     /**
