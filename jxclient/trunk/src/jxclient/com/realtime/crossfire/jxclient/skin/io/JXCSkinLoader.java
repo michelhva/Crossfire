@@ -2052,7 +2052,7 @@ public class JXCSkinLoader {
      * @param args the command arguments
      * @param tooltipManager the tooltip manager to update
      * @param elementListener the element listener to notify
-     * @param metaserverModel the metaserver model to use
+     * @param characterModel the character model to use
      * @throws IOException if the command cannot be parsed
      * @throws JXCSkinException if the command cannot be parsed
      */

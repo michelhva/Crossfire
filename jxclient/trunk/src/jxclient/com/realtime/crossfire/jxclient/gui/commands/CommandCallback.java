@@ -120,8 +120,8 @@ public interface CommandCallback {
      */
     void accountLink(int force, @NotNull String login, @NotNull String password);
     /**
-     * Create a character. The password should be the last from {@link accountLogin}
-     * or {@link accountCreate}.
+     * Create a character. The password should be the last from {@link
+     * #accountLogin} or {@link #accountCreate}.
      * @param login
      */
     void accountCreateCharacter(@NotNull String login);
