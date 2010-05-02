@@ -20,6 +20,8 @@
 
 package com.realtime.crossfire.jxclient.server.crossfire;
 
+import org.jetbrains.annotations.NotNull;
+
 /**
  * Interface for listeners interested in account information related messages
  * received from the Crossfire server.
@@ -48,7 +50,7 @@ public interface CrossfireAccountListener
    * @param level last character level.
    * @param faceNumber identifier of the face.
    */
-  void addAccount(String name, String characterClass, String race, String face, String party, String map, short level, short faceNumber);
+  void addAccount(@NotNull String name, @NotNull String characterClass, @NotNull String race, @NotNull String face, @NotNull String party, @NotNull String map, short level, short faceNumber);
 
   /**
    * End of character information for an account.

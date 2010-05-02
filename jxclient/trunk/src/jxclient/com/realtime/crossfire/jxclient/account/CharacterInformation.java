@@ -20,6 +20,7 @@
 
 package com.realtime.crossfire.jxclient.account;
 
+import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 
 /**
@@ -27,13 +28,19 @@ import org.jetbrains.annotations.Nullable;
  * @author Nicolas Weeger
  */
 public class CharacterInformation implements Comparable<CharacterInformation> {
+
+    @Nullable
     private String name;
+
+    @Nullable
     private String race;
+
     private int level;
 
     /**
      * @return the name
      */
+    @Nullable
     public String getName() {
         return name;
     }
@@ -41,13 +48,14 @@ public class CharacterInformation implements Comparable<CharacterInformation> {
     /**
      * @param name the name to set
      */
-    public void setName(final String name) {
+    public void setName(@NotNull final String name) {
         this.name = name;
     }
 
     /**
      * @return the race
      */
+    @Nullable
     public String getRace() {
         return race;
     }
@@ -55,7 +63,7 @@ public class CharacterInformation implements Comparable<CharacterInformation> {
     /**
      * @param race the race to set
      */
-    public void setRace(final String race) {
+    public void setRace(@NotNull final String race) {
         this.race = race;
     }
 
@@ -77,7 +85,7 @@ public class CharacterInformation implements Comparable<CharacterInformation> {
      * {@inheritDoc}
      */
     @Override
-    public int compareTo(final CharacterInformation o) {
+    public int compareTo(@NotNull final CharacterInformation o) {
         return name.compareTo(o.getName());
     }
 

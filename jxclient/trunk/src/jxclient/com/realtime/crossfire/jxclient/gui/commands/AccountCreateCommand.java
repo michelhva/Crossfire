@@ -40,6 +40,7 @@ public class AccountCreateCommand implements GUICommand {
     /**
      * The {@link GUIElement} to find information for account creation.
      */
+    @NotNull
     private final GUIElement element;
 
      /**

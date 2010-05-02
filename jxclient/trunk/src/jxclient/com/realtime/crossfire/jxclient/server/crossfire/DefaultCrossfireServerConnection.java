@@ -290,6 +290,7 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
     /**
      * The command prefix for the "accountlogin" command.
      */
+    @NotNull
     private static final byte[] accountLoginPrefix = {
       'a',
       'c',
@@ -309,6 +310,7 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
     /**
      * The command prefix for the "accountplay" command.
      */
+    @NotNull
     private static final byte[] accountPlayPrefix = {
         'a',
         'c',
@@ -327,6 +329,7 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
     /**
      * The command prefix for the "accountaddplayer" command.
      */
+    @NotNull
     private static final byte[] accountAddPlayerPrefix = {
       'a',
       'c',
@@ -350,6 +353,7 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
     /**
      * The command prefix for the "accountnew" command.
      */
+    @NotNull
     private static final byte[] accountNewPrefix = {
       'a',
       'c',
@@ -367,6 +371,7 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
     /**
      * The command prefix for the "createplayer" command.
      */
+    @NotNull
     private static final byte[] createPlayerPrefix = {
       'c',
       'r',
@@ -3835,7 +3840,7 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
      * {@inheritDoc}
      */
     @Override
-    public void sendAccountPlay(final String name) {
+    public void sendAccountPlay(@NotNull final String name) {
       if (debugProtocol != null) {
         debugProtocol.debugProtocolWrite("send accountplay " + name);
       }
@@ -3851,7 +3856,7 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
    * {@inheritDoc}
    */
   @Override
-  public void sendAccountLink(final int force, final String login, final String password) {
+  public void sendAccountLink(final int force, @NotNull final String login, @NotNull final String password) {
       if (debugProtocol != null) {
         debugProtocol.debugProtocolWrite("send accountaddplayer " + login);
       }
@@ -3871,7 +3876,7 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
    * {@inheritDoc}
    */
   @Override
-  public void sendAccountCreate(final String login, final String password) {
+  public void sendAccountCreate(@NotNull final String login, @NotNull final String password) {
       if (debugProtocol != null) {
         debugProtocol.debugProtocolWrite("send accountnew " + login);
       }
@@ -3890,7 +3895,7 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
    * {@inheritDoc}
    */
   @Override
-  public void sendAccountCharacterCreate(final String login, final String password) {
+  public void sendAccountCharacterCreate(@NotNull final String login, @NotNull final String password) {
       if (debugProtocol != null) {
         debugProtocol.debugProtocolWrite("send createplayer " + login);
       }
@@ -3909,7 +3914,7 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
    * {@inheritDoc}
    */
   @Override
-  public void addCrossfireFailureListener(final CrossfireFailureListener listener) {
+  public void addCrossfireFailureListener(@NotNull final CrossfireFailureListener listener) {
     crossfireFailureListeners.add(listener);
   }
 
@@ -3917,7 +3922,7 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
    * {@inheritDoc}
    */
   @Override
-  public void removeCrossfireFailureListener(final CrossfireFailureListener listener) {
+  public void removeCrossfireFailureListener(@NotNull final CrossfireFailureListener listener) {
     crossfireFailureListeners.remove(listener);
   }
 

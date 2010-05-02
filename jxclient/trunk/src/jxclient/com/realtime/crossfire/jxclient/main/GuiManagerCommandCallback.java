@@ -28,6 +28,7 @@ import com.realtime.crossfire.jxclient.gui.gui.Gui;
 import com.realtime.crossfire.jxclient.server.crossfire.CrossfireServerConnection;
 import com.realtime.crossfire.jxclient.window.GuiManager;
 import org.jetbrains.annotations.NotNull;
+import org.jetbrains.annotations.Nullable;
 
 /**
  * A {@link CommandCallback} that delegates to a {@link GuiManager}.
@@ -44,6 +45,7 @@ public class GuiManagerCommandCallback implements CommandCallback {
     @NotNull
     private CrossfireServerConnection server;
 
+    @Nullable
     private String lastAccountPassword = null;
 
     /**
@@ -133,7 +135,7 @@ public class GuiManagerCommandCallback implements CommandCallback {
      * {@inheritDoc}
      */
     @Override
-    public void accountLogin(final String login, final String password) {
+    public void accountLogin(@NotNull final String login, @NotNull final String password) {
         server.sendAccountLogin(login, password);
         lastAccountPassword = password;
     }
@@ -142,7 +144,7 @@ public class GuiManagerCommandCallback implements CommandCallback {
      * {@inheritDoc}
      */
     @Override
-    public void accountCreate(final String login, final String password) {
+    public void accountCreate(@NotNull final String login, @NotNull final String password) {
         server.sendAccountCreate(login, password);
         lastAccountPassword = password;
     }
@@ -151,7 +153,7 @@ public class GuiManagerCommandCallback implements CommandCallback {
      * {@inheritDoc}
      */
     @Override
-    public void accountPlayCharacter(final String name) {
+    public void accountPlayCharacter(@NotNull final String name) {
         server.sendAccountPlay(name);
     }
 
@@ -167,7 +169,7 @@ public class GuiManagerCommandCallback implements CommandCallback {
      * {@inheritDoc}
      */
     @Override
-    public void accountCreateCharacter(final String login) {
+    public void accountCreateCharacter(@NotNull final String login) {
         server.sendAccountCharacterCreate(login, lastAccountPassword);
     }
 
