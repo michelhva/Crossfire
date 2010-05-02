@@ -83,6 +83,46 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
     private static final Charset UTF8 = Charset.forName("UTF-8");
 
     /**
+     * Parameter type in the "accountplayers" command.
+     */
+    private static final int ACL_NAME = 1;
+
+    /**
+     * Parameter type in the "accountplayers" command.
+     */
+    private static final int ACL_CLASS = 2;
+
+    /**
+     * Parameter type in the "accountplayers" command.
+     */
+    private static final int ACL_RACE = 3;
+
+    /**
+     * Parameter type in the "accountplayers" command.
+     */
+    private static final int ACL_LEVEL = 4;
+
+    /**
+     * Parameter type in the "accountplayers" command.
+     */
+    private static final int ACL_FACE = 5;
+
+    /**
+     * Parameter type in the "accountplayers" command.
+     */
+    private static final int ACL_PARTY = 6;
+
+    /**
+     * Parameter type in the "accountplayers" command.
+     */
+    private static final int ACL_MAP = 7;
+
+    /**
+     * Parameter type in the "accountplayers" command.
+     */
+    private static final int ACL_FACE_NUM = 8;
+
+    /**
      * The map width in tiles that is negotiated with the server.
      */
     private int preferredMapWidth = 17;
@@ -3106,49 +3146,37 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
 
           final int type = packet[pos++]&0xFF;
 
-          /*
-           * #define ACL_NAME        1
-  #define ACL_CLASS       2
-  #define ACL_RACE        3
-  #define ACL_LEVEL       4
-  #define ACL_FACE        5
-  #define ACL_PARTY       6
-  #define ACL_MAP         7
-  #define ACL_FACE_NUM    8
-
-           */
-
           switch(type) {
-            case 1:
+            case ACL_NAME:
               name = new String(packet, pos, len - 1, UTF8);
               if (debugProtocol != null) {
                 debugProtocol.debugProtocolWrite(name);
               }
               break;
-            case 2:
+            case ACL_CLASS:
               cclass = new String(packet, pos, len - 1, UTF8);
               if (debugProtocol != null) {
                 debugProtocol.debugProtocolWrite(cclass);
               }
-            case 3:
+            case ACL_RACE:
               race = new String(packet, pos, len - 1, UTF8);
               if (debugProtocol != null) {
                 debugProtocol.debugProtocolWrite(race);
               }
               break;
-            case 4:
+            case ACL_LEVEL:
               level = (short)(packet[pos]<<8 | packet[pos+1]);
               break;
-            case 5:
+            case ACL_FACE:
               face = new String(packet, pos, len - 1, UTF8);
               break;
-            case 6:
+            case ACL_PARTY:
               party = new String(packet, pos, len - 1, UTF8);
               break;
-            case 7:
+            case ACL_MAP:
               map = new String(packet, pos, len - 1, UTF8);
               break;
-            case 8:
+            case ACL_FACE_NUM:
               faceNumber = (short)(packet[pos]<<8 | packet[pos+1]);
               break;
             default:
