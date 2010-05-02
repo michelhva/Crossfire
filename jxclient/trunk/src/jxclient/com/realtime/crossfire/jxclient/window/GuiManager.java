@@ -583,6 +583,7 @@ public class GuiManager {
     public void terminate() {
         timer.stop();
         synchronized (terminateSync) {
+            //noinspection NakedNotify
             terminateSync.notifyAll();
         }
     }
@@ -592,6 +593,7 @@ public class GuiManager {
      */
     public void waitForTermination() throws InterruptedException {
         synchronized (terminateSync) {
+            //noinspection UnconditionalWait,WaitNotInLoop
             terminateSync.wait();
         }
     }
