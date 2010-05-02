@@ -453,10 +453,6 @@ public class CfMap {
 
                 final CfMapPatch[][] newPatch = new CfMapPatch[newPw][newPh];
                 for (int y = 0; y < oldPh; y++) {
-                    for (int x = 0; x < diffPw; x++) {
-                        newPatch[x][y] = null;
-                    }
-
                     for (int x = 0; x < oldPw; x++) {
                         newPatch[x+diffPw][y] = patch[x][y];
                     }
@@ -502,10 +498,6 @@ public class CfMap {
                     for (int x = 0; x < oldPw; x++) {
                         newPatch[x][y] = patch[x][y];
                     }
-
-                    for (int x = 0; x < diffPw; x++) {
-                        newPatch[x+oldPw][y] = null;
-                    }
                 }
 
                 maxX = newMaxX;
@@ -546,11 +538,6 @@ public class CfMap {
                 }
 
                 final CfMapPatch[][] newPatch = new CfMapPatch[newPw][newPh];
-                for (int y = 0; y < diffPh; y++) {
-                    for (int x = 0; x < oldPw; x++) {
-                        newPatch[x][y] = null;
-                    }
-                }
                 for (int y = 0; y < oldPh; y++) {
                     for (int x = 0; x < oldPw; x++) {
                         newPatch[x][y+diffPh] = patch[x][y];
@@ -596,11 +583,6 @@ public class CfMap {
                 for (int y = 0; y < oldPh; y++) {
                     for (int x = 0; x < oldPw; x++) {
                         newPatch[x][y] = patch[x][y];
-                    }
-                }
-                for (int y = 0; y < diffPh; y++) {
-                    for (int x = 0; x < oldPw; x++) {
-                        newPatch[x][y+oldPh] = null;
                     }
                 }
 
