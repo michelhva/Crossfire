@@ -305,14 +305,34 @@ public class CommandParser {
 
             return new ScrollNextCommand((ActivatableGUIElement)nextElement, (ActivatableGUIElement)element);
         } else if (command.equals("ACCOUNT_LOGIN")) {
+            if (args.length != argc) {
+                throw new IOException("syntax error");
+            }
+
             return new AccountLoginCommand(commandCallback, element);
         } else if (command.equals("ACCOUNT_CREATE")) {
+            if (args.length != argc) {
+                throw new IOException("syntax error");
+            }
+
             return new AccountCreateCommand(commandCallback, element);
         } else if (command.equals("ACCOUNT_PLAY")) {
+            if (args.length != argc) {
+                throw new IOException("syntax error");
+            }
+
             return new AccountPlayCharacterCommand(commandCallback, element);
         } else if (command.equals("ACCOUNT_LINK")) {
+            if (args.length != argc) {
+                throw new IOException("syntax error");
+            }
+
             return new AccountLinkCharacterCommand(commandCallback, element);
         } else if (command.equals("ACCOUNT_CREATE_CHARACTER")) {
+            if (args.length != argc) {
+                throw new IOException("syntax error");
+            }
+
             return new AccountCreateCharacterCommand(commandCallback, element);
         } else {
             throw new JXCSkinException("unknown command '"+command+"'");
