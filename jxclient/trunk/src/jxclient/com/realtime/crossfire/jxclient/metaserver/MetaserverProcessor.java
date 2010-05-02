@@ -56,14 +56,14 @@ public class MetaserverProcessor {
     private final Object sync = new Object();
 
     /**
-     * Whether the query {@link #thread} has been started.
+     * Whether the query {@link #runnable} has been started.
      */
     private boolean running = false;
 
     /**
-     * Counter used by the query {@link #thread}. If positive, the value will be
-     * decremented once per second; when it reaches zero, it is reset back to
-     * {@link #UPDATE_INTERVAL} and a metaserver query is executed.
+     * Counter used by the query {@link #runnable}. If positive, the value will
+     * be decremented once per second; when it reaches zero, it is reset back
+     * to {@link #UPDATE_INTERVAL} and a metaserver query is executed.
      * <p/>
      * When set to zero, updating is disabled.
      */
@@ -79,12 +79,12 @@ public class MetaserverProcessor {
      * The query {@link Thread}.
      */
     @NotNull
-    private final Thread thread = new Thread() {
+    private final Runnable runnable = new Runnable() {
         /** {@inheritDoc} */
         @Override
         public void run() {
             try {
-                while (!isInterrupted()) {
+                while (!Thread.currentThread().isInterrupted()) {
                     boolean executeProcess = false;
                     synchronized (sync) {
                         sync.wait(1000);
@@ -126,7 +126,7 @@ public class MetaserverProcessor {
         synchronized (sync) {
             if (!running) {
                 running = true;
-                thread.start();
+                new Thread(runnable).start();
             }
             counter = 1;
         }
