@@ -24,8 +24,8 @@ package com.realtime.crossfire.jxclient.util;
 import org.jetbrains.annotations.NotNull;
 
 /**
- * Maintains a bidirectional mapping from a set of integers to the same range
- * of integers.
+ * Maintains a bidirectional mapping from a set of integers to the same range of
+ * integers.
  * @author Andreas Kirschbaum
  */
 public class DoubleMapping {

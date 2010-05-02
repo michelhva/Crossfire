@@ -117,7 +117,7 @@ public class GUICharacterList extends GUIList {
      * @param characterModel what to list characters of
      */
     public GUICharacterList(@NotNull final TooltipManager tooltipManager, @NotNull final GUIElementListener elementListener, @NotNull final String name, @NotNull final Extent extent, final int cellWidth, final int cellHeight, @Nullable final BufferedImage image, @NotNull final Font font, @NotNull final String tooltip, @NotNull final CharacterModel characterModel) {
-        super(tooltipManager, elementListener, name, extent, cellWidth, cellHeight, new CharacterCellRenderer(new GUICharacter(tooltipManager, elementListener, name + "_template", 50, 20, image, font, cellWidth, "", tooltip, characterModel)), null);
+        super(tooltipManager, elementListener, name, extent, cellWidth, cellHeight, new CharacterCellRenderer(new GUICharacter(tooltipManager, elementListener, name+"_template", 50, 20, image, font, cellWidth, "", tooltip, characterModel)), null);
         this.characterModel = characterModel;
         this.characterModel.addMetaserverListener(new CharacterListener() {
 

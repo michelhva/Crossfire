@@ -254,7 +254,7 @@ public class Shortcuts implements Iterable<Shortcut> {
      * Sets the backing file.
      * @param file the backing file or <code>null</code> if unknown
      */
-    public void  setFile(@Nullable final File file) {
+    public void setFile(@Nullable final File file) {
         this.file = file;
     }
 

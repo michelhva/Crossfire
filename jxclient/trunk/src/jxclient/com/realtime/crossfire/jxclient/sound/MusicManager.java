@@ -38,8 +38,8 @@ public class MusicManager {
     private Processor processor = null;
 
     /**
-     * The {@link Thread} executing {@link #processor}. Set to
-     * <code>null</code> if none is executing.
+     * The {@link Thread} executing {@link #processor}. Set to <code>null</code>
+     * if none is executing.
      */
     @Nullable
     private Thread thread = null;

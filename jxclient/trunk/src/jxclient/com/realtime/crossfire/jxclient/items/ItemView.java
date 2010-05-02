@@ -59,8 +59,8 @@ public interface ItemView {
     void removeLocationsListener(@NotNull LocationsListener locationsListener);
 
     /**
-     * Adds a {@link LocationListener} to be notified when the item displayed
-     * in a floor slot has changed.
+     * Adds a {@link LocationListener} to be notified when the item displayed in
+     * a floor slot has changed.
      * @param index the floor slot
      * @param locationListener the location listener to add
      */

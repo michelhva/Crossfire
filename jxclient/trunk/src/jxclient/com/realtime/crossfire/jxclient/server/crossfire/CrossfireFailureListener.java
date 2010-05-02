@@ -23,15 +23,16 @@ package com.realtime.crossfire.jxclient.server.crossfire;
 import org.jetbrains.annotations.NotNull;
 
 /**
- * Interface for listeners interested in the "failure" messages received from the
- * Crossfire server.
+ * Interface for listeners interested in the "failure" messages received from
+ * the Crossfire server.
  * @author Nicolas Weeger
  */
 public interface CrossfireFailureListener {
+
     /**
      * Command failure received.
-     * @param command command which generated the failure, only the command itself
-     * without any parameter.
+     * @param command command which generated the failure, only the command
+     * itself without any parameter.
      * @param arguments human-readable message, though the format depends on the
      * command and the context.
      */

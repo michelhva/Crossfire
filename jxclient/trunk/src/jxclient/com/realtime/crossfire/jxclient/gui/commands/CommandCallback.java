@@ -101,17 +101,20 @@ public interface CommandCallback {
      * @param password password
      */
     void accountLogin(@NotNull String login, @NotNull String password);
+
     /**
      * Create an account.
      * @param login
      * @param password
      */
     void accountCreate(@NotNull String login, @NotNull String password);
+
     /**
      * Play a character from the current account.
      * @param name
      */
     void accountPlayCharacter(@NotNull String name);
+
     /**
      * Link a character to the current account.
      * @param force
@@ -119,6 +122,7 @@ public interface CommandCallback {
      * @param password
      */
     void accountLink(int force, @NotNull String login, @NotNull String password);
+
     /**
      * Create a character. The password should be the last from {@link
      * #accountLogin} or {@link #accountCreate}.

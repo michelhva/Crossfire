@@ -32,7 +32,6 @@ import org.jetbrains.annotations.NotNull;
  */
 public class ResourceUtils {
 
-
     /**
      * The resource name of the "unknown" face.
      */

@@ -332,19 +332,19 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
      */
     @NotNull
     private static final byte[] accountLoginPrefix = {
-      'a',
-      'c',
-      'c',
-      'o',
-      'u',
-      'n',
-      't',
-      'l',
-      'o',
-      'g',
-      'i',
-      'n',
-      ' ',
+        'a',
+        'c',
+        'c',
+        'o',
+        'u',
+        'n',
+        't',
+        'l',
+        'o',
+        'g',
+        'i',
+        'n',
+        ' ',
     };
 
     /**
@@ -371,23 +371,23 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
      */
     @NotNull
     private static final byte[] accountAddPlayerPrefix = {
-      'a',
-      'c',
-      'c',
-      'o',
-      'u',
-      'n',
-      't',
-      'a',
-      'd',
-      'd',
-      'p',
-      'l',
-      'a',
-      'y',
-      'e',
-      'r',
-      ' ',
+        'a',
+        'c',
+        'c',
+        'o',
+        'u',
+        'n',
+        't',
+        'a',
+        'd',
+        'd',
+        'p',
+        'l',
+        'a',
+        'y',
+        'e',
+        'r',
+        ' ',
     };
 
     /**
@@ -395,17 +395,17 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
      */
     @NotNull
     private static final byte[] accountNewPrefix = {
-      'a',
-      'c',
-      'c',
-      'o',
-      'u',
-      'n',
-      't',
-      'n',
-      'e',
-      'w',
-      ' ',
+        'a',
+        'c',
+        'c',
+        'o',
+        'u',
+        'n',
+        't',
+        'n',
+        'e',
+        'w',
+        ' ',
     };
 
     /**
@@ -413,19 +413,19 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
      */
     @NotNull
     private static final byte[] createPlayerPrefix = {
-      'c',
-      'r',
-      'e',
-      'a',
-      't',
-      'e',
-      'p',
-      'l',
-      'a',
-      'y',
-      'e',
-      'r',
-      ' ',
+        'c',
+        'r',
+        'e',
+        'a',
+        't',
+        'e',
+        'p',
+        'l',
+        'a',
+        'y',
+        'e',
+        'r',
+        ' ',
     };
 
     /**
@@ -1015,7 +1015,7 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
             case 'a':
                 switch (packet[pos++]) {
                 case 'c':
-                  //accountplayers
+                    //accountplayers
                     if (packet[pos++] != 'c') {
                         break;
                     }
@@ -1557,69 +1557,69 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
                 if (packet[pos++] != 'a') {
                     break;
                 }
-                switch(packet[pos++]) {
-                    case 'c':
-                        if (packet[pos++] != 'e') {
-                            break;
-                        }
-                        if (packet[pos++] != '2') {
-                            break;
-                        }
-                        if (packet[pos++] != ' ') {
-                            break;
-                        }
-                        args = pos;
-                        {
-                            final int faceNum = ((packet[pos++]&0xFF)<<8)|(packet[pos++]&0xFF);
-                            final int faceSetNum = packet[pos++]&0xFF;
-                            final int faceChecksum = ((packet[pos++]&0xFF)<<24)|((packet[pos++]&0xFF)<<16)|((packet[pos++]&0xFF)<<8)|(packet[pos++]&0xFF);
-                            final String faceName = new String(packet, pos, end-pos, UTF8).intern();
-                            if (debugProtocol != null) {
-                                debugProtocol.debugProtocolWrite("recv face2 num="+faceNum+" set="+faceSetNum+" checksum="+faceChecksum+" name="+faceName);
-                            }
-                            for (final CrossfireFaceListener crossfireFaceListener : crossfireFaceListeners) {
-                                crossfireFaceListener.faceReceived(faceNum, faceSetNum, faceChecksum, faceName);
-                            }
-                        }
-                        notifyPacketWatcherListenersMixed(packet, start, args, end);
-                        return;
+                switch (packet[pos++]) {
+                case 'c':
+                    if (packet[pos++] != 'e') {
+                        break;
+                    }
+                    if (packet[pos++] != '2') {
+                        break;
+                    }
+                    if (packet[pos++] != ' ') {
+                        break;
+                    }
+                    args = pos;
+                {
+                    final int faceNum = ((packet[pos++]&0xFF)<<8)|(packet[pos++]&0xFF);
+                    final int faceSetNum = packet[pos++]&0xFF;
+                    final int faceChecksum = ((packet[pos++]&0xFF)<<24)|((packet[pos++]&0xFF)<<16)|((packet[pos++]&0xFF)<<8)|(packet[pos++]&0xFF);
+                    final String faceName = new String(packet, pos, end-pos, UTF8).intern();
+                    if (debugProtocol != null) {
+                        debugProtocol.debugProtocolWrite("recv face2 num="+faceNum+" set="+faceSetNum+" checksum="+faceChecksum+" name="+faceName);
+                    }
+                    for (final CrossfireFaceListener crossfireFaceListener : crossfireFaceListeners) {
+                        crossfireFaceListener.faceReceived(faceNum, faceSetNum, faceChecksum, faceName);
+                    }
+                }
+                notifyPacketWatcherListenersMixed(packet, start, args, end);
+                return;
 
-                    case 'i':
-                        if (packet[pos++] != 'l') {
-                            break;
-                        }
-                        if (packet[pos++] != 'u') {
-                            break;
-                        }
-                        if (packet[pos++] != 'r') {
-                            break;
-                        }
-                        if (packet[pos++] != 'e') {
-                            break;
-                        }
-                        if (packet[pos++] != ' ') {
-                            break;
-                        }
+                case 'i':
+                    if (packet[pos++] != 'l') {
+                        break;
+                    }
+                    if (packet[pos++] != 'u') {
+                        break;
+                    }
+                    if (packet[pos++] != 'r') {
+                        break;
+                    }
+                    if (packet[pos++] != 'e') {
+                        break;
+                    }
+                    if (packet[pos++] != ' ') {
+                        break;
+                    }
 
-                        final String full = new String(packet, pos, end-pos, UTF8);
-                        final String command;
-                        final String message;
-                        final int idx = full.indexOf(' ');
-                        if (idx == -1) {
-                          command = full;
-                          message = "";
-                        } else {
-                          command = full.substring(0, idx);
-                          message = full.substring(idx + 1);
-                        }
-                        if (debugProtocol != null) {
-                            debugProtocol.debugProtocolWrite("recv failure command="+command+" message="+message);
-                        }
+                    final String full = new String(packet, pos, end-pos, UTF8);
+                    final String command;
+                    final String message;
+                    final int idx = full.indexOf(' ');
+                    if (idx == -1) {
+                        command = full;
+                        message = "";
+                    } else {
+                        command = full.substring(0, idx);
+                        message = full.substring(idx+1);
+                    }
+                    if (debugProtocol != null) {
+                        debugProtocol.debugProtocolWrite("recv failure command="+command+" message="+message);
+                    }
 
-                        for (final CrossfireFailureListener crossfireFailureListener : crossfireFailureListeners) {
-                            crossfireFailureListener.failure(command, message);
-                        }
-                        return;
+                    for (final CrossfireFailureListener crossfireFailureListener : crossfireFailureListeners) {
+                        crossfireFailureListener.failure(command, message);
+                    }
+                    return;
                 }
 
             case 'g':
@@ -3080,13 +3080,13 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
         }
 
         if (loginMethod == 0) {
-          setClientSocketState(ClientSocketState.REQUESTINFO, ClientSocketState.ADDME);
-          sendAddme();
+            setClientSocketState(ClientSocketState.REQUESTINFO, ClientSocketState.ADDME);
+            sendAddme();
         } else {
-          setClientSocketState(ClientSocketState.REQUESTINFO, ClientSocketState.ACCOUNTINFO);
-          for (final CrossfireAccountListener crossfireAccountListener : crossfireAccountListeners) {
-            crossfireAccountListener.manageAccount();
-          }
+            setClientSocketState(ClientSocketState.REQUESTINFO, ClientSocketState.ACCOUNTINFO);
+            for (final CrossfireAccountListener crossfireAccountListener : crossfireAccountListeners) {
+                crossfireAccountListener.manageAccount();
+            }
         }
     }
 
@@ -3098,112 +3098,112 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
      * @throws UnknownCommandException if the packet is invalid.
      */
     private void processAccountPlayers(@NotNull final byte[] packet, final int startPos, final int endPos) throws UnknownCommandException {
-      int pos = startPos;
+        int pos = startPos;
 
         for (final CrossfireAccountListener crossfireAccountListener : crossfireAccountListeners) {
             crossfireAccountListener.startAccountList();
         }
 
-      /* number of characters */
-      int count = packet[pos++]&0xFF;
-      while (count > 0) {
+        /* number of characters */
+        int count = packet[pos++]&0xFF;
+        while (count > 0) {
 
-        String name = "";
-        String cclass = "";
-        String race = "";
-        String face = "";
-        String party = "";
-        String map = "";
-        int level = 0;
-        int faceNumber = 0;
+            String name = "";
+            String cclass = "";
+            String race = "";
+            String face = "";
+            String party = "";
+            String map = "";
+            int level = 0;
+            int faceNumber = 0;
 
-        while (pos < endPos) {
-          final int len = packet[pos++]&0xFF;
+            while (pos < endPos) {
+                final int len = packet[pos++]&0xFF;
 
-          if (len == 0) {
-            if (debugProtocol != null) {
-              debugProtocol.debugProtocolWrite("recv accountplayers entry");
+                if (len == 0) {
+                    if (debugProtocol != null) {
+                        debugProtocol.debugProtocolWrite("recv accountplayers entry");
+                    }
+                    /* got all information on a character */
+                    count--;
+
+                    for (final CrossfireAccountListener crossfireAccountListener : crossfireAccountListeners) {
+                        crossfireAccountListener.addAccount(name, cclass, race, face, party, map, level, faceNumber);
+                    }
+                    break;
+                }
+
+                final int type = packet[pos++]&0xFF;
+
+                switch (type) {
+                case ACL_NAME:
+                    name = new String(packet, pos, len-1, UTF8);
+                    if (debugProtocol != null) {
+                        debugProtocol.debugProtocolWrite("recv accountplayers name="+name);
+                    }
+                    break;
+                case ACL_CLASS:
+                    cclass = new String(packet, pos, len-1, UTF8);
+                    if (debugProtocol != null) {
+                        debugProtocol.debugProtocolWrite("recv accountplayers class="+cclass);
+                    }
+                    break;
+                case ACL_RACE:
+                    race = new String(packet, pos, len-1, UTF8);
+                    if (debugProtocol != null) {
+                        debugProtocol.debugProtocolWrite("recv accountplayers race="+race);
+                    }
+                    break;
+                case ACL_LEVEL:
+                    level = (packet[pos]&0xFF)<<8|(packet[pos+1]&0xFF);
+                    if (debugProtocol != null) {
+                        debugProtocol.debugProtocolWrite("recv accountplayers level="+level);
+                    }
+                    break;
+                case ACL_FACE:
+                    face = new String(packet, pos, len-1, UTF8);
+                    if (debugProtocol != null) {
+                        debugProtocol.debugProtocolWrite("recv accountplayers face="+face);
+                    }
+                    break;
+                case ACL_PARTY:
+                    party = new String(packet, pos, len-1, UTF8);
+                    if (debugProtocol != null) {
+                        debugProtocol.debugProtocolWrite("recv accountplayers party="+party);
+                    }
+                    break;
+                case ACL_MAP:
+                    map = new String(packet, pos, len-1, UTF8);
+                    if (debugProtocol != null) {
+                        debugProtocol.debugProtocolWrite("recv accountplayers map="+map);
+                    }
+                    break;
+                case ACL_FACE_NUM:
+                    faceNumber = (packet[pos]&0xFF)<<8|(packet[pos+1]&0xFF);
+                    if (debugProtocol != null) {
+                        debugProtocol.debugProtocolWrite("recv accountplayers face="+faceNumber);
+                    }
+                    break;
+                default:
+                    // ignore those values we don't understand
+                    if (debugProtocol != null) {
+                        debugProtocol.debugProtocolWrite("recv accountplayers unknown="+type);
+                    }
+                    break;
+                }
+
+                pos += len-1;
             }
-            /* got all information on a character */
-            count--;
-
-            for (final CrossfireAccountListener crossfireAccountListener : crossfireAccountListeners) {
-                crossfireAccountListener.addAccount(name, cclass, race, face, party, map, level, faceNumber);
-            }
-            break;
-          }
-
-          final int type = packet[pos++]&0xFF;
-
-          switch(type) {
-            case ACL_NAME:
-              name = new String(packet, pos, len - 1, UTF8);
-              if (debugProtocol != null) {
-                debugProtocol.debugProtocolWrite("recv accountplayers name="+name);
-              }
-              break;
-            case ACL_CLASS:
-              cclass = new String(packet, pos, len - 1, UTF8);
-              if (debugProtocol != null) {
-                debugProtocol.debugProtocolWrite("recv accountplayers class="+cclass);
-              }
-              break;
-            case ACL_RACE:
-              race = new String(packet, pos, len - 1, UTF8);
-              if (debugProtocol != null) {
-                debugProtocol.debugProtocolWrite("recv accountplayers race="+race);
-              }
-              break;
-            case ACL_LEVEL:
-              level = (packet[pos]&0xFF)<<8 | (packet[pos+1]&0xFF);
-              if (debugProtocol != null) {
-                debugProtocol.debugProtocolWrite("recv accountplayers level="+level);
-              }
-              break;
-            case ACL_FACE:
-              face = new String(packet, pos, len - 1, UTF8);
-              if (debugProtocol != null) {
-                debugProtocol.debugProtocolWrite("recv accountplayers face="+face);
-              }
-              break;
-            case ACL_PARTY:
-              party = new String(packet, pos, len - 1, UTF8);
-              if (debugProtocol != null) {
-                debugProtocol.debugProtocolWrite("recv accountplayers party="+party);
-              }
-              break;
-            case ACL_MAP:
-              map = new String(packet, pos, len - 1, UTF8);
-              if (debugProtocol != null) {
-                debugProtocol.debugProtocolWrite("recv accountplayers map="+map);
-              }
-              break;
-            case ACL_FACE_NUM:
-              faceNumber = (packet[pos]&0xFF)<<8 | (packet[pos+1]&0xFF);
-              if (debugProtocol != null) {
-                debugProtocol.debugProtocolWrite("recv accountplayers face="+faceNumber);
-              }
-              break;
-            default:
-              // ignore those values we don't understand
-              if (debugProtocol != null) {
-                debugProtocol.debugProtocolWrite("recv accountplayers unknown="+type);
-              }
-              break;
-          }
-
-          pos += len - 1;
         }
-      }
-      if (pos != endPos) {
-          throw new UnknownCommandException("invalid accountplayers reply, pos = " + pos + " instead of " + endPos);
-      }
+        if (pos != endPos) {
+            throw new UnknownCommandException("invalid accountplayers reply, pos = "+pos+" instead of "+endPos);
+        }
 
         for (final CrossfireAccountListener crossfireAccountListener : crossfireAccountListeners) {
             crossfireAccountListener.endAccountList();
         }
 
-      //sendAddme();
+        //sendAddme();
     }
 
     /**
@@ -3322,7 +3322,8 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
                         System.err.println("the server sent an unexpected 'setup num_look_objects "+value+"'.");
                     } else {
                         if (pendingNumLookObjects != thisNumLookObjects) {
-                            System.err.println("Warning: the server didn't accept the num_look_objects setup option: requested "+pendingNumLookObjects+", returned "+thisNumLookObjects+".");                            System.err.println("Expect issues with the ground view display.");
+                            System.err.println("Warning: the server didn't accept the num_look_objects setup option: requested "+pendingNumLookObjects+", returned "+thisNumLookObjects+".");
+                            System.err.println("Expect issues with the ground view display.");
                         }
                         pendingNumLookObjects = 0;
                         setCurrentNumLookObjects(thisNumLookObjects);
@@ -3335,17 +3336,17 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
             } else if (option.equals("extended_stats")) {
                 // ignore: we do not care whether this option has been ignored
             } else if (option.equals("loginmethod")) {
-              if (value.equals("FALSE")) {
-                  loginMethod = 0;
-                continue;
-              }
+                if (value.equals("FALSE")) {
+                    loginMethod = 0;
+                    continue;
+                }
 
-              final int method;
-              try {
-                method = Integer.parseInt(value);
-              } catch (final NumberFormatException ex) {
-                throw new UnknownCommandException("the server returned 'setup loginmethod " + value + "'.");
-              }
+                final int method;
+                try {
+                    method = Integer.parseInt(value);
+                } catch (final NumberFormatException ex) {
+                    throw new UnknownCommandException("the server returned 'setup loginmethod "+value+"'.");
+                }
                 loginMethod = method;
             } else {
                 System.err.println("Warning: ignoring unknown setup option from server: "+option+"="+value);
@@ -3386,20 +3387,21 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
      */
     @Override
     public void sendAccountLogin(@NotNull final String login, @NotNull final String password) {
-      if (debugProtocol != null) {
-        debugProtocol.debugProtocolWrite("send accountlogin " + login);
-      }
-      synchronized (writeBuffer) {
-          byteBuffer.clear();
-          byteBuffer.put(accountLoginPrefix);
-          byteBuffer.put((byte)login.length());
-          byteBuffer.put(login.getBytes(UTF8));
-          byteBuffer.put((byte)password.length());
-          byteBuffer.put(password.getBytes(UTF8));
-          writePacket(writeBuffer, byteBuffer.position());
-      }
+        if (debugProtocol != null) {
+            debugProtocol.debugProtocolWrite("send accountlogin "+login);
+        }
+        synchronized (writeBuffer) {
+            byteBuffer.clear();
+            byteBuffer.put(accountLoginPrefix);
+            byteBuffer.put((byte)login.length());
+            byteBuffer.put(login.getBytes(UTF8));
+            byteBuffer.put((byte)password.length());
+            byteBuffer.put(password.getBytes(UTF8));
+            writePacket(writeBuffer, byteBuffer.position());
+        }
 
     }
+
     /**
      * {@inheritDoc}
      */
@@ -3730,9 +3732,9 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
 
         final int prevNumLookObjects = currentNumLookObjects;
         this.currentNumLookObjects = currentNumLookObjects;
-//        for (final NumLookObjectsListener listener : numLookObjectsListeners) {
-//            listener.numLookObjectsChanged(currentNumLookObjects);
-//        }
+        //        for (final NumLookObjectsListener listener : numLookObjectsListeners) {
+        //            listener.numLookObjectsChanged(currentNumLookObjects);
+        //        }
     }
 
     /**
@@ -3965,89 +3967,89 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
      */
     @Override
     public void sendAccountPlay(@NotNull final String name) {
-      if (debugProtocol != null) {
-        debugProtocol.debugProtocolWrite("send accountplay " + name);
-      }
-      synchronized (writeBuffer) {
-          byteBuffer.clear();
-          byteBuffer.put(accountPlayPrefix);
-          byteBuffer.put(name.getBytes(UTF8));
-          writePacket(writeBuffer, byteBuffer.position());
-      }
+        if (debugProtocol != null) {
+            debugProtocol.debugProtocolWrite("send accountplay "+name);
+        }
+        synchronized (writeBuffer) {
+            byteBuffer.clear();
+            byteBuffer.put(accountPlayPrefix);
+            byteBuffer.put(name.getBytes(UTF8));
+            writePacket(writeBuffer, byteBuffer.position());
+        }
     }
 
-  /**
-   * {@inheritDoc}
-   */
-  @Override
-  public void sendAccountLink(final int force, @NotNull final String login, @NotNull final String password) {
-      if (debugProtocol != null) {
-        debugProtocol.debugProtocolWrite("send accountaddplayer " + login);
-      }
-      synchronized (writeBuffer) {
-          byteBuffer.clear();
-          byteBuffer.put(accountAddPlayerPrefix);
-          byteBuffer.put((byte)force);
-          byteBuffer.put((byte)login.length());
-          byteBuffer.put(login.getBytes(UTF8));
-          byteBuffer.put((byte)password.length());
-          byteBuffer.put(password.getBytes(UTF8));
-          writePacket(writeBuffer, byteBuffer.position());
-      }
-  }
+    /**
+     * {@inheritDoc}
+     */
+    @Override
+    public void sendAccountLink(final int force, @NotNull final String login, @NotNull final String password) {
+        if (debugProtocol != null) {
+            debugProtocol.debugProtocolWrite("send accountaddplayer "+login);
+        }
+        synchronized (writeBuffer) {
+            byteBuffer.clear();
+            byteBuffer.put(accountAddPlayerPrefix);
+            byteBuffer.put((byte)force);
+            byteBuffer.put((byte)login.length());
+            byteBuffer.put(login.getBytes(UTF8));
+            byteBuffer.put((byte)password.length());
+            byteBuffer.put(password.getBytes(UTF8));
+            writePacket(writeBuffer, byteBuffer.position());
+        }
+    }
 
-  /**
-   * {@inheritDoc}
-   */
-  @Override
-  public void sendAccountCreate(@NotNull final String login, @NotNull final String password) {
-      if (debugProtocol != null) {
-        debugProtocol.debugProtocolWrite("send accountnew " + login);
-      }
-      synchronized (writeBuffer) {
-          byteBuffer.clear();
-          byteBuffer.put(accountNewPrefix);
-          byteBuffer.put((byte)login.length());
-          byteBuffer.put(login.getBytes(UTF8));
-          byteBuffer.put((byte)password.length());
-          byteBuffer.put(password.getBytes(UTF8));
-          writePacket(writeBuffer, byteBuffer.position());
-      }
-  }
+    /**
+     * {@inheritDoc}
+     */
+    @Override
+    public void sendAccountCreate(@NotNull final String login, @NotNull final String password) {
+        if (debugProtocol != null) {
+            debugProtocol.debugProtocolWrite("send accountnew "+login);
+        }
+        synchronized (writeBuffer) {
+            byteBuffer.clear();
+            byteBuffer.put(accountNewPrefix);
+            byteBuffer.put((byte)login.length());
+            byteBuffer.put(login.getBytes(UTF8));
+            byteBuffer.put((byte)password.length());
+            byteBuffer.put(password.getBytes(UTF8));
+            writePacket(writeBuffer, byteBuffer.position());
+        }
+    }
 
-  /**
-   * {@inheritDoc}
-   */
-  @Override
-  public void sendAccountCharacterCreate(@NotNull final String login, @NotNull final String password) {
-      if (debugProtocol != null) {
-        debugProtocol.debugProtocolWrite("send createplayer " + login);
-      }
-      synchronized (writeBuffer) {
-          byteBuffer.clear();
-          byteBuffer.put(createPlayerPrefix);
-          byteBuffer.put((byte)login.length());
-          byteBuffer.put(login.getBytes(UTF8));
-          byteBuffer.put((byte)password.length());
-          byteBuffer.put(password.getBytes(UTF8));
-          writePacket(writeBuffer, byteBuffer.position());
-      }
-  }
+    /**
+     * {@inheritDoc}
+     */
+    @Override
+    public void sendAccountCharacterCreate(@NotNull final String login, @NotNull final String password) {
+        if (debugProtocol != null) {
+            debugProtocol.debugProtocolWrite("send createplayer "+login);
+        }
+        synchronized (writeBuffer) {
+            byteBuffer.clear();
+            byteBuffer.put(createPlayerPrefix);
+            byteBuffer.put((byte)login.length());
+            byteBuffer.put(login.getBytes(UTF8));
+            byteBuffer.put((byte)password.length());
+            byteBuffer.put(password.getBytes(UTF8));
+            writePacket(writeBuffer, byteBuffer.position());
+        }
+    }
 
-  /**
-   * {@inheritDoc}
-   */
-  @Override
-  public void addCrossfireFailureListener(@NotNull final CrossfireFailureListener listener) {
-    crossfireFailureListeners.add(listener);
-  }
+    /**
+     * {@inheritDoc}
+     */
+    @Override
+    public void addCrossfireFailureListener(@NotNull final CrossfireFailureListener listener) {
+        crossfireFailureListeners.add(listener);
+    }
 
-  /**
-   * {@inheritDoc}
-   */
-  @Override
-  public void removeCrossfireFailureListener(@NotNull final CrossfireFailureListener listener) {
-    crossfireFailureListeners.remove(listener);
-  }
+    /**
+     * {@inheritDoc}
+     */
+    @Override
+    public void removeCrossfireFailureListener(@NotNull final CrossfireFailureListener listener) {
+        crossfireFailureListeners.remove(listener);
+    }
 
 }

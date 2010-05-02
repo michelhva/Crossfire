@@ -31,6 +31,7 @@ import org.jetbrains.annotations.NotNull;
  * @author Nicolas Weeger
  */
 public class AccountCreateCommand implements GUICommand {
+
     /**
      * The {@link CommandCallback} to use.
      */
@@ -43,14 +44,14 @@ public class AccountCreateCommand implements GUICommand {
     @NotNull
     private final GUIElement element;
 
-     /**
-      * Creates a new instance.
-      * @param commandCallback what to inform of the request.
-      * @param button element to find the Gui for the other fields.
-      */
+    /**
+     * Creates a new instance.
+     * @param commandCallback what to inform of the request.
+     * @param button element to find the Gui for the other fields.
+     */
     public AccountCreateCommand(@NotNull final CommandCallback commandCallback, @NotNull final GUIElement button) {
         this.commandCallback = commandCallback;
-         element = button;
+        element = button;
     }
 
     /**
@@ -75,7 +76,7 @@ public class AccountCreateCommand implements GUICommand {
         final GUIText p = gui.getFirstElement(GUIText.class, "account_password");
         final GUIText c = gui.getFirstElement(GUIText.class, "account_password_confirm");
 
-        if ((l == null) || (p==null) || (c==null)) {
+        if ((l == null) || (p == null) || (c == null)) {
             return;
         }
 
@@ -108,4 +109,5 @@ public class AccountCreateCommand implements GUICommand {
 
         commandCallback.accountCreate(login, password);
     }
+
 }

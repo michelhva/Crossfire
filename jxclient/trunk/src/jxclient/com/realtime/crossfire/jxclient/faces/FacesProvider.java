@@ -37,8 +37,8 @@ public interface FacesProvider {
     int getSize();
 
     /**
-     * Returns the face for a face ID. This function returns immediately even
-     * if the face is not loaded. A not loaded face will be updated as soon as
+     * Returns the face for a face ID. This function returns immediately even if
+     * the face is not loaded. A not loaded face will be updated as soon as
      * loading has finished.
      * @param faceNum the face ID
      * @return the face, or the "unknown" face if the face is not loaded

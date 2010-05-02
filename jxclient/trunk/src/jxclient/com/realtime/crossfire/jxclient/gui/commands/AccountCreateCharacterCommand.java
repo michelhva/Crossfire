@@ -46,7 +46,8 @@ public class AccountCreateCharacterCommand implements GUICommand {
     /**
      * Creates a new instance.
      * @param commandCallback what to inform of various changes.
-     * @param button item to link to to find the Gui from which to get information.
+     * @param button item to link to to find the Gui from which to get
+     * information.
      */
     public AccountCreateCharacterCommand(@NotNull final CommandCallback commandCallback, @NotNull final GUIElement button) {
         this.commandCallback = commandCallback;

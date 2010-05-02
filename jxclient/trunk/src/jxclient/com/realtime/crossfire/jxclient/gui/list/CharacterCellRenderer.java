@@ -45,7 +45,8 @@ public class CharacterCellRenderer extends JPanel implements GUIListCellRenderer
 
     /**
      * Creates a new instance.
-     * @param template {@link GUICharacter} that will be the displaying template.
+     * @param template {@link GUICharacter} that will be the displaying
+     * template.
      */
     public CharacterCellRenderer(@NotNull final GUICharacter template) {
         super(new BorderLayout());

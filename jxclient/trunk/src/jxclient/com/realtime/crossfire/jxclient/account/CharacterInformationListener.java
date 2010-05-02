@@ -25,8 +25,10 @@ package com.realtime.crossfire.jxclient.account;
  * @author Nicolas Weeger
  */
 public interface CharacterInformationListener {
+
     /**
      * The item changed.
      */
     void informationChanged();
+
 }

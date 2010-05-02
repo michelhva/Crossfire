@@ -250,11 +250,13 @@ public interface CrossfireServerConnection extends ServerConnection {
      * @param listener listener to add.
      */
     void addCrossfireFailureListener(@NotNull CrossfireFailureListener listener);
+
     /**
      * Removes a listener to be notified of failure messages.
      * @param listener listener to be removed.
      */
     void removeCrossfireFailureListener(@NotNull CrossfireFailureListener listener);
+
     /**
      * Pretends that a drawinfo message has been received.
      * @param message the message

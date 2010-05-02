@@ -229,8 +229,8 @@ public class Gui {
     }
 
     /**
-     * Returns the auto-size state. Auto-size dialogs cannot be moved or
-     * resized manually.
+     * Returns the auto-size state. Auto-size dialogs cannot be moved or resized
+     * manually.
      * @return the auto-size state
      */
     public boolean isAutoSize() {

@@ -28,8 +28,8 @@ import com.realtime.crossfire.jxclient.server.socket.ClientSocketState;
 import org.jetbrains.annotations.NotNull;
 
 /**
- * Tracks a {@link GuiStateManager} and resets known faces whenever a new
- * server connection has been established.
+ * Tracks a {@link GuiStateManager} and resets known faces whenever a new server
+ * connection has been established.
  * @author Andreas Kirschbaum
  */
 public class FacesTracker {

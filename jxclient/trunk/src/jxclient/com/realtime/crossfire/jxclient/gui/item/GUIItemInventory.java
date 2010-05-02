@@ -99,8 +99,8 @@ public class GUIItemInventory extends GUIItemItem {
     private boolean selected = false;
 
     /**
-     * The {@link ItemListener} used to detect items added to or removed
-     * from this inventory slot.
+     * The {@link ItemListener} used to detect items added to or removed from
+     * this inventory slot.
      */
     @NotNull
     private final LocationListener locationListener = new LocationListener() {

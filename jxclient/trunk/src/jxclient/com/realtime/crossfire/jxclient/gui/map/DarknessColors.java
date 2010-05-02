@@ -52,8 +52,7 @@ public class DarknessColors {
     /**
      * Private constructor to prevent instantiation.
      */
-    private DarknessColors()
-    {
+    private DarknessColors() {
     }
 
     /**
