@@ -40,7 +40,11 @@ import com.realtime.crossfire.jxclient.util.MathUtils;
 import java.awt.Color;
 import java.awt.Graphics;
 import java.awt.Graphics2D;
+import java.awt.Image;
 import java.awt.Transparency;
+import java.awt.image.BufferedImage;
+import java.util.HashMap;
+import java.util.Map;
 import java.util.Set;
 import javax.swing.ImageIcon;
 import org.jetbrains.annotations.NotNull;
@@ -156,6 +160,13 @@ public abstract class AbstractGUIMap extends GUIElement {
      * <code>0<=displayMaxOffsetY<{@link #tileSize}</code>.
      */
     private int displayMaxOffsetY = 0;
+
+    /**
+     * Maps {@link Color} to an image filled with this color with a size of one
+     * square.
+     */
+    @NotNull
+    private final Map<Color, Image> images = new HashMap<Color, Image>();
 
     /**
      * The {@link MapListener} registered to receive map updates.
@@ -334,17 +345,6 @@ public abstract class AbstractGUIMap extends GUIElement {
     }
 
     /**
-     * Redraws one square completely black.
-     * @param g the graphics to draw into
-     * @param x the x-coordinate of the square to clear
-     * @param y the y-coordinate of the square to clear
-     */
-    private void cleanSquare(@NotNull final Graphics g, final int x, final int y) {
-        g.setColor(Color.BLACK);
-        g.fillRect(offsetX+x*tileSize, offsetY+y*tileSize, tileSize, tileSize);
-    }
-
-    /**
      * Redraws one square if it is not dirty. This function is called for tiles
      * that need to be repainted due to scrolling. Skipping dirty squares
      * prevents multiple repainting.
@@ -368,16 +368,14 @@ public abstract class AbstractGUIMap extends GUIElement {
      * @param y the y-coordinate of the map tile to redraw
      */
     protected void redrawSquare(@NotNull final Graphics g, @NotNull final CfMapSquare mapSquare, final int x, final int y) {
-        cleanSquare(g, x, y);
+        paintColoredSquare(g, Color.BLACK, offsetX+x*tileSize, offsetY+y*tileSize);
         redrawSquare(g, x, y, mapSquare);
         if (x < 0 || y < 0 || x >= mapWidth || y >= mapHeight || mapSquare.isFogOfWar()) {
-            g.setColor(DarknessColors.FOG_OF_WAR_COLOR);
-            g.fillRect(offsetX+x*tileSize, offsetY+y*tileSize, tileSize, tileSize);
+            paintColoredSquare(g, DarknessColors.FOG_OF_WAR_COLOR, offsetX+x*tileSize, offsetY+y*tileSize);
         }
         final int darkness = mapSquare.getDarkness();
         if (darkness < CfMapSquare.DARKNESS_FULL_BRIGHT) {
-            g.setColor(DarknessColors.getDarknessColor(darkness));
-            g.fillRect(offsetX+x*tileSize, offsetY+y*tileSize, tileSize, tileSize);
+            paintColoredSquare(g, DarknessColors.getDarknessColor(darkness), offsetX+x*tileSize, offsetY+y*tileSize);
         }
     }
 
@@ -563,6 +561,30 @@ public abstract class AbstractGUIMap extends GUIElement {
             }
             markPlayer(g, dx, dy);
         }
+    }
+
+    /**
+     * Fills a square with one {@link Color}.
+     * @param g the graphics to paint into
+     * @param color the color
+     * @param x the x-coordinate
+     * @param y the y-coordinate
+     */
+    private void paintColoredSquare(@NotNull final Graphics g, @NotNull final Color color, final int x, final int y) {
+        Image image = images.get(color);
+        if (image == null) {
+            final BufferedImage bufferedImage = new BufferedImage(tileSize, tileSize, color.getTransparency() == Transparency.OPAQUE ? BufferedImage.TYPE_INT_RGB : BufferedImage.TYPE_INT_ARGB);
+            final Graphics g2 = bufferedImage.createGraphics();
+            try {
+                g2.setColor(color);
+                g2.fillRect(0, 0, tileSize, tileSize);
+            } finally {
+                g2.dispose();
+            }
+            image = bufferedImage;
+            images.put(color, image);
+        }
+        g.drawImage(image, x, y, tileSize, tileSize, null);
     }
 
 }
