@@ -307,8 +307,8 @@ public class GUIItemShortcut extends GUIItem {
             public void visit(@NotNull final ShortcutSpell shortcutSpell) {
                 final Color color = shortcutSpell.isCast() ? castColor : invokeColor;
                 if (color != null) {
-                    g.setColor(color);
-                    g.fillRect(0, 0, w, h);
+                    g.setBackground(color);
+                    g.clearRect(0, 0, w, h);
                 }
                 g.drawImage(facesManager.getOriginalImageIcon(shortcutSpell.getSpell().getFaceNum()).getImage(), 0, 0, null);
                 final Image image = shortcutSpell.isCast() ? castImage : invokeImage;
