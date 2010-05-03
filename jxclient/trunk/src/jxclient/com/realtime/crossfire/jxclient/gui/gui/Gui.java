@@ -284,11 +284,13 @@ public class Gui {
             }
 
             final long t1 = System.currentTimeMillis();
+            g.setColor(Color.black);
+            g.fillRect(12, 36, 200, 36);
             g.setColor(Color.YELLOW);
             if (mouseElement != null) {
-                g.drawString(mouseElement.getName(), 16, 16);
+                g.drawString(mouseElement.getName(), 16, 48);
             }
-            g.drawString((t1-t0)+"ms", 16, 32);
+            g.drawString((t1-t0)+"ms", 16, 64);
         } else {
             hasChangedElements = false;
             for (final GUIElement element : visibleElements) {
