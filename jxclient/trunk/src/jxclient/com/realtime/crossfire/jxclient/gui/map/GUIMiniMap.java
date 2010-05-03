@@ -166,7 +166,9 @@ public class GUIMiniMap extends AbstractGUIMap {
     @Override
     protected void markPlayer(@NotNull final Graphics g, final int dx, final int dy) {
         if (dx != 0 || dy != 0) {
-            redrawSquare(g, mapUpdater.getMap(), playerOffsetX-dx, playerOffsetY-dy);
+            final int mapSquareX = playerOffsetX-dx;
+            final int mapSquareY = playerOffsetY-dy;
+            redrawSquare(g, mapUpdater.getMap().getMapSquare(mapSquareX, mapSquareY), mapSquareX, mapSquareY);
         }
         g.setColor(Color.RED);
         g.fillRect(getPlayerX(), getPlayerY(), tileSize, tileSize);
