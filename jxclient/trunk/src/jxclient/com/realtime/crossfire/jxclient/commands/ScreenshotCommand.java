@@ -25,7 +25,7 @@ import com.realtime.crossfire.jxclient.gui.gui.JXCWindowRenderer;
 import com.realtime.crossfire.jxclient.server.crossfire.CrossfireServerConnection;
 import com.realtime.crossfire.jxclient.settings.Filenames;
 import java.awt.Color;
-import java.awt.Graphics;
+import java.awt.Graphics2D;
 import java.awt.image.BufferedImage;
 import java.io.File;
 import java.io.IOException;
@@ -94,10 +94,10 @@ public class ScreenshotCommand extends AbstractCommand {
         }
 
         final BufferedImage image = new BufferedImage(windowRenderer.getWindowWidth(), windowRenderer.getWindowHeight(), BufferedImage.TYPE_INT_RGB);
-        final Graphics grfx = image.createGraphics();
+        final Graphics2D grfx = image.createGraphics();
         try {
-            grfx.setColor(Color.black);
-            grfx.fillRect(0, 0, windowRenderer.getWindowWidth(), windowRenderer.getWindowHeight());
+            grfx.setBackground(Color.black);
+            grfx.clearRect(0, 0, windowRenderer.getWindowWidth(), windowRenderer.getWindowHeight());
             windowRenderer.redraw(grfx);
         } finally {
             grfx.dispose();

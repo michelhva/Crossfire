@@ -32,6 +32,7 @@ import java.awt.Dimension;
 import java.awt.DisplayMode;
 import java.awt.Frame;
 import java.awt.Graphics;
+import java.awt.Graphics2D;
 import java.awt.GraphicsConfiguration;
 import java.awt.GraphicsDevice;
 import java.awt.GraphicsEnvironment;
@@ -625,7 +626,7 @@ public class JXCWindowRenderer {
         do {
             do {
                 assert bufferStrategy != null;
-                final Graphics g = bufferStrategy.getDrawGraphics();
+                final Graphics2D g = (Graphics2D)bufferStrategy.getDrawGraphics();
                 try {
                     g.translate(offsetX, offsetY);
                     assert bufferStrategy != null;
@@ -648,7 +649,7 @@ public class JXCWindowRenderer {
      * Paints the view into the given graphics instance.
      * @param g the graphics instance to paint to
      */
-    public void redraw(@NotNull final Graphics g) {
+    public void redraw(@NotNull final Graphics2D g) {
         synchronized (redrawSemaphore) {
             redrawGUIBasic(g);
             redrawGUIDialog(g);
@@ -664,7 +665,7 @@ public class JXCWindowRenderer {
         setCurrentGui(gui);
         for (int ig = 0; ig < 3; ig++) {
             assert bufferStrategy != null;
-            final Graphics g = bufferStrategy.getDrawGraphics();
+            final Graphics2D g = (Graphics2D)bufferStrategy.getDrawGraphics();
             g.translate(offsetX, offsetY);
             redrawBlack(g);
             g.dispose();
@@ -673,12 +674,12 @@ public class JXCWindowRenderer {
         }
     }
 
-    private void redrawGUIBasic(@NotNull final Graphics g) {
+    private void redrawGUIBasic(@NotNull final Graphics2D g) {
         currentGuiChanged = false;
         currentGui.redraw(g);
     }
 
-    private void redrawGUIDialog(@NotNull final Graphics g) {
+    private void redrawGUIDialog(@NotNull final Graphics2D g) {
         openDialogsChanged = false;
         for (final Gui dialog : openDialogs) {
             if (!dialog.isHidden(rendererGuiState)) {
@@ -698,9 +699,9 @@ public class JXCWindowRenderer {
         }
     }
 
-    private void redrawBlack(@NotNull final Graphics g) {
-        g.setColor(Color.BLACK);
-        g.fillRect(0, 0, currentGui.getWidth(), currentGui.getHeight());
+    private void redrawBlack(@NotNull final Graphics2D g) {
+        g.setBackground(Color.BLACK);
+        g.clearRect(0, 0, currentGui.getWidth(), currentGui.getHeight());
     }
 
     /**

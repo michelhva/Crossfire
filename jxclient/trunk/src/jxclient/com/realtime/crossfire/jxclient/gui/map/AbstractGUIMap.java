@@ -40,11 +40,7 @@ import com.realtime.crossfire.jxclient.util.MathUtils;
 import java.awt.Color;
 import java.awt.Graphics;
 import java.awt.Graphics2D;
-import java.awt.Image;
 import java.awt.Transparency;
-import java.awt.image.BufferedImage;
-import java.util.HashMap;
-import java.util.Map;
 import java.util.Set;
 import javax.swing.ImageIcon;
 import org.jetbrains.annotations.NotNull;
@@ -162,13 +158,6 @@ public abstract class AbstractGUIMap extends GUIElement {
     private int displayMaxOffsetY = 0;
 
     /**
-     * Maps {@link Color} to an image filled with this color with a size of one
-     * square.
-     */
-    @NotNull
-    private final Map<Color, Image> images = new HashMap<Color, Image>();
-
-    /**
      * The {@link MapListener} registered to receive map updates.
      */
     @NotNull
@@ -179,7 +168,7 @@ public abstract class AbstractGUIMap extends GUIElement {
             final int x0 = map.getOffsetX();
             final int y0 = map.getOffsetY();
             synchronized (bufferedImageSync) {
-                final Graphics g = createBufferGraphics();
+                final Graphics2D g = createBufferGraphics();
                 try {
                     for (final CfMapSquare mapSquare : changedSquares) {
                         final int x = mapSquare.getX()+x0;
@@ -232,7 +221,7 @@ public abstract class AbstractGUIMap extends GUIElement {
         @Override
         public void mapScrolled(final int dx, final int dy) {
             synchronized (bufferedImageSync) {
-                final Graphics g = createBufferGraphics();
+                final Graphics2D g = createBufferGraphics();
                 try {
                     updateScrolledMap(g, dx, dy);
                 } finally {
@@ -294,7 +283,7 @@ public abstract class AbstractGUIMap extends GUIElement {
      * Redraws the complete map view.
      * @param g the graphics to draw into
      */
-    private void redrawAll(@NotNull final Graphics g) {
+    private void redrawAll(@NotNull final Graphics2D g) {
         redrawTiles(g, mapUpdater.getMap(), displayMinX, displayMinY, displayMaxX, displayMaxY);
     }
 
@@ -303,7 +292,7 @@ public abstract class AbstractGUIMap extends GUIElement {
      * @param g the graphics to draw into
      * @param map the map
      */
-    private void redrawAllUnlessDirty(@NotNull final Graphics g, @NotNull final CfMap map) {
+    private void redrawAllUnlessDirty(@NotNull final Graphics2D g, @NotNull final CfMap map) {
         redrawTilesUnlessDirty(g, map, displayMinX-offsetX/tileSize, displayMinY-offsetY/tileSize, displayMaxX-offsetX/tileSize, displayMaxY-offsetY/tileSize);
     }
 
@@ -316,7 +305,7 @@ public abstract class AbstractGUIMap extends GUIElement {
      * @param x1 the right edge to redraw (exclusive)
      * @param y1 the bottom edge to redraw (exclusive)
      */
-    private void redrawTiles(@NotNull final Graphics g, @NotNull final CfMap map, final int x0, final int y0, final int x1, final int y1) {
+    private void redrawTiles(@NotNull final Graphics2D g, @NotNull final CfMap map, final int x0, final int y0, final int x1, final int y1) {
         for (int x = x0; x < x1; x++) {
             for (int y = y0; y < y1; y++) {
                 final int mapSquareX = x-offsetX/tileSize;
@@ -336,7 +325,7 @@ public abstract class AbstractGUIMap extends GUIElement {
      * @param x1 the right edge to redraw (exclusive)
      * @param y1 the bottom edge to redraw (exclusive)
      */
-    private void redrawTilesUnlessDirty(@NotNull final Graphics g, @NotNull final CfMap map, final int x0, final int y0, final int x1, final int y1) {
+    private void redrawTilesUnlessDirty(@NotNull final Graphics2D g, @NotNull final CfMap map, final int x0, final int y0, final int x1, final int y1) {
         for (int x = x0; x < x1; x++) {
             for (int y = y0; y < y1; y++) {
                 redrawSquareUnlessDirty(g, map, x, y);
@@ -353,7 +342,7 @@ public abstract class AbstractGUIMap extends GUIElement {
      * @param x the x-coordinate of the square to clear
      * @param y the y-coordinate of the square to clear
      */
-    protected void redrawSquareUnlessDirty(@NotNull final Graphics g, @NotNull final CfMap map, final int x, final int y) {
+    protected void redrawSquareUnlessDirty(@NotNull final Graphics2D g, @NotNull final CfMap map, final int x, final int y) {
         final CfMapSquare mapSquare = map.getMapSquare(x, y);
         if (!mapSquare.isDirty()) {
             redrawSquare(g, mapSquare, x, y);
@@ -367,15 +356,18 @@ public abstract class AbstractGUIMap extends GUIElement {
      * @param x the x-coordinate of the map tile to redraw
      * @param y the y-coordinate of the map tile to redraw
      */
-    protected void redrawSquare(@NotNull final Graphics g, @NotNull final CfMapSquare mapSquare, final int x, final int y) {
-        paintColoredSquare(g, Color.BLACK, offsetX+x*tileSize, offsetY+y*tileSize);
+    protected void redrawSquare(@NotNull final Graphics2D g, @NotNull final CfMapSquare mapSquare, final int x, final int y) {
+        g.setBackground(Color.BLACK);
+        g.clearRect(offsetX+x*tileSize, offsetY+y*tileSize, tileSize, tileSize);
         redrawSquare(g, x, y, mapSquare);
         if (x < 0 || y < 0 || x >= mapWidth || y >= mapHeight || mapSquare.isFogOfWar()) {
-            paintColoredSquare(g, DarknessColors.FOG_OF_WAR_COLOR, offsetX+x*tileSize, offsetY+y*tileSize);
+            g.setBackground(DarknessColors.FOG_OF_WAR_COLOR);
+            g.clearRect(offsetX+x*tileSize, offsetY+y*tileSize, tileSize, tileSize);
         }
         final int darkness = mapSquare.getDarkness();
         if (darkness < CfMapSquare.DARKNESS_FULL_BRIGHT) {
-            paintColoredSquare(g, DarknessColors.getDarknessColor(darkness), offsetX+x*tileSize, offsetY+y*tileSize);
+            g.setBackground(DarknessColors.getDarknessColor(darkness));
+            g.clearRect(offsetX+x*tileSize, offsetY+y*tileSize, tileSize, tileSize);
         }
     }
 
@@ -431,7 +423,7 @@ public abstract class AbstractGUIMap extends GUIElement {
      * @param dx the x distance to map has just scrolled
      * @param dy the y distance to map has just scrolled
      */
-    protected abstract void markPlayer(@NotNull final Graphics g, final int dx, final int dy);
+    protected abstract void markPlayer(@NotNull final Graphics2D g, final int dx, final int dy);
 
     /**
      * {@inheritDoc}
@@ -475,7 +467,7 @@ public abstract class AbstractGUIMap extends GUIElement {
 
         synchronized (bufferedImageSync) {
             if (hasBufferedImage()) {
-                final Graphics g = createBufferGraphics();
+                final Graphics2D g = createBufferGraphics();
                 try {
                     redrawAll(g);
                 } finally {
@@ -534,7 +526,7 @@ public abstract class AbstractGUIMap extends GUIElement {
      * @param dx the x-distance
      * @param dy the y-distance
      */
-    private void updateScrolledMap(@NotNull final Graphics g, final int dx, final int dy) {
+    private void updateScrolledMap(@NotNull final Graphics2D g, final int dx, final int dy) {
         final CfMap map = mapUpdater.getMap();
         if (Math.abs(dx)*tileSize >= getWidth() || Math.abs(dy)*tileSize >= getHeight()) {
             redrawAllUnlessDirty(g, map);
@@ -561,30 +553,6 @@ public abstract class AbstractGUIMap extends GUIElement {
             }
             markPlayer(g, dx, dy);
         }
-    }
-
-    /**
-     * Fills a square with one {@link Color}.
-     * @param g the graphics to paint into
-     * @param color the color
-     * @param x the x-coordinate
-     * @param y the y-coordinate
-     */
-    private void paintColoredSquare(@NotNull final Graphics g, @NotNull final Color color, final int x, final int y) {
-        Image image = images.get(color);
-        if (image == null) {
-            final BufferedImage bufferedImage = new BufferedImage(tileSize, tileSize, color.getTransparency() == Transparency.OPAQUE ? BufferedImage.TYPE_INT_RGB : BufferedImage.TYPE_INT_ARGB);
-            final Graphics g2 = bufferedImage.createGraphics();
-            try {
-                g2.setColor(color);
-                g2.fillRect(0, 0, tileSize, tileSize);
-            } finally {
-                g2.dispose();
-            }
-            image = bufferedImage;
-            images.put(color, image);
-        }
-        g.drawImage(image, x, y, tileSize, tileSize, null);
     }
 
 }
