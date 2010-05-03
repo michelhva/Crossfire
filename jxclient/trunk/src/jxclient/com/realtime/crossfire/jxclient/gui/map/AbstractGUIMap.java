@@ -175,7 +175,7 @@ public abstract class AbstractGUIMap extends GUIElement {
                         if (displayMinX <= x && x < displayMaxX) {
                             final int y = mapSquare.getY()+y0;
                             if (displayMinY <= y && y < displayMaxY) {
-                                redrawSquare(g, map, x, y);
+                                redrawSquare(g, mapSquare, x, y);
                             }
                         }
                     }
@@ -308,7 +308,10 @@ public abstract class AbstractGUIMap extends GUIElement {
     private void redrawTiles(@NotNull final Graphics g, @NotNull final CfMap map, final int x0, final int y0, final int x1, final int y1) {
         for (int x = x0; x < x1; x++) {
             for (int y = y0; y < y1; y++) {
-                redrawSquare(g, map, x-offsetX/tileSize, y-offsetY/tileSize);
+                final int mapSquareX = x-offsetX/tileSize;
+                final int mapSquareY = y-offsetY/tileSize;
+                final CfMapSquare mapSquare = map.getMapSquare(mapSquareX, mapSquareY);
+                redrawSquare(g, mapSquare, mapSquareX, mapSquareY);
             }
         }
     }
@@ -351,27 +354,27 @@ public abstract class AbstractGUIMap extends GUIElement {
      * @param y the y-coordinate of the square to clear
      */
     protected void redrawSquareUnlessDirty(@NotNull final Graphics g, @NotNull final CfMap map, final int x, final int y) {
-        if (!map.getMapSquare(x, y).isDirty()) {
-            redrawSquare(g, map, x, y);
+        final CfMapSquare mapSquare = map.getMapSquare(x, y);
+        if (!mapSquare.isDirty()) {
+            redrawSquare(g, mapSquare, x, y);
         }
     }
 
     /**
      * Redraws one square.
      * @param g the graphics to draw into
-     * @param map the map to draw
+     * @param mapSquare the map square to draw
      * @param x the x-coordinate of the map tile to redraw
      * @param y the y-coordinate of the map tile to redraw
      */
-    protected void redrawSquare(@NotNull final Graphics g, @NotNull final CfMap map, final int x, final int y) {
+    protected void redrawSquare(@NotNull final Graphics g, @NotNull final CfMapSquare mapSquare, final int x, final int y) {
         cleanSquare(g, x, y);
-        final CfMapSquare mapSquare = map.getMapSquare(x, y);
         redrawSquare(g, x, y, mapSquare);
-        if (map.isFogOfWar(x, y) || x < 0 || y < 0 || x >= mapWidth || y >= mapHeight) {
+        if (x < 0 || y < 0 || x >= mapWidth || y >= mapHeight || mapSquare.isFogOfWar()) {
             g.setColor(DarknessColors.FOG_OF_WAR_COLOR);
             g.fillRect(offsetX+x*tileSize, offsetY+y*tileSize, tileSize, tileSize);
         }
-        final int darkness = map.getDarkness(x, y);
+        final int darkness = mapSquare.getDarkness();
         if (darkness < CfMapSquare.DARKNESS_FULL_BRIGHT) {
             g.setColor(DarknessColors.getDarknessColor(darkness));
             g.fillRect(offsetX+x*tileSize, offsetY+y*tileSize, tileSize, tileSize);
