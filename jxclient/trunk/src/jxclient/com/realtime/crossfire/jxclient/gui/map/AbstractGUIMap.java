@@ -208,12 +208,12 @@ public abstract class AbstractGUIMap extends GUIElement {
         @Override
         public void commandNewmapReceived() {
             synchronized (bufferedImageSync) {
-                final Graphics g = createBufferGraphics();
+                final Graphics2D g = createBufferGraphics();
                 try {
-                    g.setColor(Color.BLACK);
-                    g.fillRect(0, 0, getWidth(), getHeight());
-                    g.setColor(DarknessColors.FOG_OF_WAR_COLOR);
-                    g.fillRect(0, 0, getWidth(), getHeight());
+                    g.setBackground(Color.BLACK);
+                    g.clearRect(0, 0, getWidth(), getHeight());
+                    g.setBackground(DarknessColors.FOG_OF_WAR_COLOR);
+                    g.clearRect(0, 0, getWidth(), getHeight());
                     markPlayer(g, 0, 0);
                 } finally {
                     g.dispose();
