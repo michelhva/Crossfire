@@ -6,6 +6,17 @@
 # ["age", "agetoken", "years", "months", "days", "hours", "minutes"]
 # To deliver a True verdict, the agetoken must correspond to a date 
 # that is was at least as long ago as the duration specified in the options.
+## DIALOGCHECK
+## MINARGS 6
+## MAXARGS 6
+## .*
+## \d
+## \d
+## \d
+## \d
+## \d
+## ENDDIALOGCHECK
+
 
 class checkfailed(Exception):
     pass

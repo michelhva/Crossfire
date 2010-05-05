@@ -8,6 +8,13 @@
 # inventory or in their NPC_Gift_Box if they have one.
 # items are matched by item name, not arch name.
 
+## DIALOGCHECK
+## MINARGS 1
+## MAXARGS 2
+## .*
+## \d
+## ENDDIALOGCHECK
+
 contents=False
 # commongive.py does all of the heavy lifting here.
 exec(open(os.path.join(Crossfire.DataDirectory(), Crossfire.MapDirectory(), 'python/dialog/commongive.py')).read())

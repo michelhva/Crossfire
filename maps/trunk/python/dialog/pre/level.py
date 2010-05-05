@@ -4,6 +4,11 @@
 # The following code runs when a dialog has a pre rule of 'level'
 # The syntax is ["level", "levelrequired"]
 # To deliver a True verdict, the player must be at or above level levelrequired
+## DIALOGCHECK
+## MINARGS 1
+## MAXARGS 1
+## \d
+## ENDDIALOGCHECK
 
 targetlevel = int(args[0])
 if len(args) == 1:

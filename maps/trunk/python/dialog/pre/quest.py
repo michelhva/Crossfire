@@ -4,14 +4,38 @@
 # The following code runs when a dialog has a pre rule of 'quest'
 # The syntax is ["quest", "questname", "queststage"]
 # All arguments are required, questname must be a quest that is 
-# defined by one of the .quests files queststage must be a step 
-# number in that quest
-# To deliver a True verdict, the player must be at or past queststage on questname
+# defined by one of the .quests files. 
+# Queststage can be in one of the following forms:
+# 1) A number - eg "20" - The player must be at or past step 20 on questname
+# 2) = A number - eg "=20" - The player must be at exactly step 20 on questname
+# 3) = A range of numbers - eg "10-30" - The player must be betwen steps 10 and 30 on questname
+# To deliver a True verdict, the player must be at the right stage in the quest.
+## DIALOGCHECK
+## MINARGS 2
+## MAXARGS 2
+## .*
+## (=|)\d+(|-\d+)
+## ENDDIALOGCHECK
+
 
 questname = args[0]
 stage = args[1]
 if stage == "complete":
     # todo: implement this
     pass
-if character.QuestGetState(questname) < int(stage):
+if stage.find("-") == -1:
+    if stage[1] == "=":
+        startstep = int(stage[1:])
+        endstep = startstep        
+    else:
+        startstep = int(stage)
+        endstep = -1
+else:
+    startstep = int(condition.split("-")[0])
+    endstep= int(condition.split("-")[1])
+
+currentstep = character.QuestGetState(questname)
+if currentstep < startstep:
+    verdict = False
+if endstep > -1 and currentstep > endstep:
     verdict = False

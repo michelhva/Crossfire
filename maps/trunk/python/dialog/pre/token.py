@@ -7,6 +7,12 @@
 # To deliver a True verdict, the token tokenname must be set to one of the 
 # 'possiblevalue' arguments. This will normally have been done 
 # with a previous use of settoken
+## DIALOGCHECK
+## MINARGS 2
+## MAXARGS 0
+## .*
+## .*
+## ENDDIALOGCHECK
 
 status = self.getStatus(args[0])
 for value in args[1:]:

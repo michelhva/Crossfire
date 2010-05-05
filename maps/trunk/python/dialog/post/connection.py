@@ -5,5 +5,10 @@
 # The syntax is ["connection", "numberofconnection"]
 # Triggers the numbered connection on the local map in the same way as 
 # if button with that connection value had been pressed.
+## DIALOGCHECK
+## MINARGS 1
+## MAXARGS 1
+## \d+
+## ENDDIALOGCHECK
 
 speaker.Map.TriggerConnected(int(condition[1]), 1, speaker)
