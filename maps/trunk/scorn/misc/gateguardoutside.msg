@@ -12,7 +12,7 @@
   "post" : [["quest", "scorn/GatePassword", "30"], ["connection", "22"]],
   "msg" : ["Well, you know the password, so you must be ok.\nPass Friend..."]
   }, {
-  "include" : ["scorn/misc/gateguardcommon.msg"]
+  "include" : ["gateguardcommon.msg"]
   }
 ]}
 
