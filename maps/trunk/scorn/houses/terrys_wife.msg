@@ -44,12 +44,12 @@
   },{
   "match" : ["no"],
   "pre" : [["token", "highlevel", "yes"]],
-  "post": [["token", "highlevel", "0"]],
+  "post": [["settoken", "highlevel", "0"]],
   "msg" : ["I understand mighty adventurer, someone as powerful as you will have more important things to worry about than the fate of some poor farmers. Oh woe are we."]
   },{
   "match" : ["no"],
   "pre" : [["token", "highlevel", "maybe"]],
-  "post": [["token", "highlevel", "0"]],
+  "post": [["settoken", "highlevel", "0"]],
   "msg" : ["A wise choice adventurer, if we let someone in to fight Guuh, we must know that he will be victorious otherwise Guuh may win and then escape to cause more havoc."]
   },{
   "match" : ["strong", "help", "bandit", "guuh"],

@@ -13,32 +13,32 @@
   "msg" : ["Ya say yer sick?  That's a darn shame!\nI get a touch of the wind myself sometimes..."]
   },{
   "match" : ["yes"],
-  "pre" : [["quest", "scorn/Earhorn", "10"], ["settoken", "askfor", "horn"], ["item", "Gramp's earhorn"]],
+  "pre" : [["quest", "scorn/Earhorn", "10"], ["token", "askfor", "horn"], ["item", "Gramp's earhorn"]],
   "post": [["settoken", "askfor", "0"], ["takeitem", "Gramp's earhorn"], ["giveitem", "diamond", "3"], ["quest", "scorn/Earhorn", "60"]],
   "msg" : ["My horn!  Thanks.\n Here's a little spending money for your trouble.\n Now I can hear again.\n....err drat now she'll be gabbin at me all day.  Maybe I better hide it again..."]
   },{
   "match" : ["yes"],
-  "pre" : [["quest", "scorn/Earhorn", "10"], ["settoken", "askfor", "horn"]],
+  "pre" : [["quest", "scorn/Earhorn", "10"], ["token", "askfor", "horn"]],
   "post": [["settoken", "askfor", "0"]],
   "msg" : ["Well, where is it? I can't stand around here all day listening to you making excuses.\n Can't do much listening at all til you get me that horn."]
   },{
   "match" : ["no"],
-  "pre" : [["quest", "scorn/Earhorn", "10"], ["settoken", "askfor", "horn"]],
+  "pre" : [["quest", "scorn/Earhorn", "10"], ["token", "askfor", "horn"]],
   "post": [["settoken", "askfor", "0"]],
   "msg" : ["Go? Go where? I ain't going anywhere 'til you get me that horn."]
   },{
   "match" : ["yes"],
-  "pre" : [["quest", "scorn/WalkingStick", "10"], ["settoken", "askfor", "stick"], ["item", "Gramp's walking stick"]],
+  "pre" : [["quest", "scorn/WalkingStick", "10"], ["token", "askfor", "stick"], ["item", "Gramp's walking stick"]],
   "post": [["settoken", "askfor", "0"], ["takeitem", "Gramp's walking stick"], ["giveitem", "diamond", "2"], ["quest", "scorn/WalkingStick", "60"]],
   "msg" : ["You found my staff, thanks.\nHeres a little something for you.\nDon't spend it all on sweets now."]
   },{
   "match" : ["yes"],
-  "pre" : [["quest", "scorn/WalkingStick", "10"], ["settoken", "askfor", "stick"]],
+  "pre" : [["quest", "scorn/WalkingStick", "10"], ["token", "askfor", "stick"]],
   "post": [["settoken", "askfor", "0"]],
   "msg" : ["Well, where is it? I can't stand around here all day waiting for you to get your act together.\n 'course if you don't get me my stick back, I may not have a lot of choice."]
   },{
   "match" : ["no"],
-  "pre" : [["quest", "scorn/WalkingStick", "10"], ["settoken", "askfor", "stick"]],
+  "pre" : [["quest", "scorn/WalkingStick", "10"], ["token", "askfor", "stick"]],
   "post": [["settoken", "askfor", "0"]],
   "msg" : ["Well, you'd better go look for it then hadn't you? I be standing round here waiting for you to get moving\nTsk, kids these days!"]
   },{
