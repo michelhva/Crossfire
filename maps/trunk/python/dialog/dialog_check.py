@@ -2,6 +2,11 @@
 # dialog_check.py
 # This script is *not* intended to be used by the crossfire plugin, it is 
 # designed to verify the correctness of a dialog script -independantly of the crossfire server.
+# Typically you will want to run this script against a single file, the one that you specify in 
+# the event_say, but if you want to check all of the .msg files in the map distribution, then
+# you can run something like:
+# for i in $(grep -h name.*msg ../../ -r | cut -d " " -f 2 | sort | uniq); do echo $i && python dialog_check.py "../../"$i; done
+# from maps/python/dialog
 
 import cjson
 import sys
