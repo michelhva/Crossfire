@@ -43,12 +43,12 @@
   "msg" : ["That skunk Eswald and his stupid goose Undercutting my prices.  One day..."]
   },{
   "match" : ["no"],
-  "pre" : [["settoken", "offercoffee", "yes"]],
+  "pre" : [["token", "offercoffee", "yes"]],
   "post" : [["settoken", "offercoffee", "0"]],
   "msg" : ["No problem friend, come back later if you change your mind."]
   },{
   "match" : ["yes", "like", "cup"],
-  "pre" : [["settoken", "offercoffee", "yes"], ["item", "money", "3"]],
+  "pre" : [["token", "offercoffee", "yes"], ["item", "money", "3"]],
   "post" : [["giveitem", "Oled's coffee"], ["settoken", "offercoffee", "0"], ["takeitem", "money", "3"]],
   "msg" : ["Here you go, "]
   },{
