@@ -14,7 +14,7 @@
   "msg" : ["Hello stranger. would you like to buy some coffee?"]
   },{
   "match" : ["yes", "like"],
-  "pre" : [["settoken", "offercoffee", "yes"], ["item", "money", "2"], ["quest", "scorn/CoffeeGoose", "100"]],
+  "pre" : [["token", "offercoffee", "yes"], ["item", "money", "2"], ["quest", "scorn/CoffeeGoose", "100"]],
   "post" : [["giveitem", "Eswald's superior coffee"], ["settoken", "offercoffee", "0"], ["takeitem", "money", "2"]],
   "msg" : ["Here you go, a cup of the best coffee you'll ever drink."]
   },{
@@ -79,12 +79,12 @@
   "msg" : ["Yes, Yes, I know, my coffee is terrible, I'm truely very sorry, it just hasn't been the same since I lost my goose. \n\n You wouldn't be interested in finding her for me would you?"]
   },{
   "match" : ["no"],
-  "pre" : [["settoken", "offercoffee", "yes"]],
+  "pre" : [["token", "offercoffee", "yes"]],
   "post" : [["settoken", "offercoffee", "0"], ["settoken", "badcoffee", "yes" ]],
   "msg" : ["I'm not surprised, no one else does either nowadays"]
   },{
   "match" : ["yes", "like"],
-  "pre" : [["settoken", "offercoffee", "yes"], ["item", "money", "2"]],
+  "pre" : [["token", "offercoffee", "yes"], ["item", "money", "2"]],
   "post" : [["giveitem", "Eswald's inferior coffee"], ["settoken", "offercoffee", "0"], ["settoken", "badcoffee", "yes" ],["takeitem", "money", "2"]],
   "msg" : ["Here you go, I apologise for the quality"]
   },{
