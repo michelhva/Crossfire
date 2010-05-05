@@ -18,13 +18,13 @@
   "msg" : ["Witherspoon owns all these slum..er 'condos'."]
   },{
   "match" : ["gramps", "malone", "staff", "stick"],
-  "pre" : ["quest", "scorn/WalkingStick", "40"],
+  "pre" : [["quest", "scorn/WalkingStick", "40"]],
   "post": [],
-  "msg" : ["Ya ol Gramps Malone is right duffer.\nPlays a good game of orc knuckles.\nI think he left his walking stick here last time he came round.\nThink it's un
+  "msg" : ["Ya ol Gramps Malone is right duffer.\nPlays a good game of orc knuckles.\nI think he left his walking stick here last time he came round.\nThink it's under the table..."]
   },{
   "match" : ["gramps", "malone", "staff", "stick"],
-  "pre" : ["quest", "scorn/WalkingStick", "10"],
-  "post": ["quest", "scorn/WalkingStick", "40"],
+  "pre" : [["quest", "scorn/WalkingStick", "10"]],
+  "post": [["quest", "scorn/WalkingStick", "40"]],
   "msg" : ["Ya ol Gramps Malone is right duffer.\nPlays a good game of orc knuckles.\nI think he left his walking stick here last time he came round.\nThink it's under the table..."]
   },{
   "match" : ["gramps", "malone", "staff", "stick"],
