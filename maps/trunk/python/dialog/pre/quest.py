@@ -24,7 +24,7 @@ if stage == "complete":
     # todo: implement this
     pass
 if stage.find("-") == -1:
-    if stage[1] == "=":
+    if stage[0] == "=":
         startstep = int(stage[1:])
         endstep = startstep        
     else:
