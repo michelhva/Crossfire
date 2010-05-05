@@ -6,6 +6,13 @@
 # All arguments are required, questname must be a quest that is 
 # defined by one of the .quests files queststage must be a step 
 # number in that quest
+## DIALOGCHECK
+## MINARGS 2
+## MAXARGS 2
+## .*
+## \d+
+## ENDDIALOGCHECK
+
 questname = args[0]
 stage = args[1]
 if character.QuestGetState(questname) == 0:

@@ -5,5 +5,11 @@
 # The syntax is ["settoken", "tokenname", "valuetosetto"]
 # this can then be checked by a token condition that looks for the 
 # value of the token
+## DIALOGCHECK
+## MINARGS 2
+## MAXARGS 2
+## .*
+## .*
+## ENDDIALOGCHECK
 
 self.setStatus(args[0],args[1])

@@ -6,6 +6,12 @@
 # this can then be checked by an age condition that looks for the age 
 # of "nameofmarker"
 
+## DIALOGCHECK
+## MINARGS 1
+## MAXARGS 1
+## .*
+## ENDDIALOGCHECK
+
 markername = args[0]
 timestamp = map(str, (Crossfire.GetTime())[:5])
 self.setStatus(markername, "-".join(timestamp))

@@ -9,6 +9,12 @@
 # This should normally be determined by doing an "item" check in the
 # pre-block of the rule
 # items are matched by item name, not arch name.
+## DIALOGCHECK
+## MINARGS 1
+## MAXARGS 2
+## .*
+## \d+
+## ENDDIALOGCHECK
 
 itemname = args[0]
 if len(args) == 2:

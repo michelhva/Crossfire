@@ -10,6 +10,14 @@
 # is against the total value of coin held, in silver. In this 
 # case the value of the coin must exceed numberrequired silver, 
 # in any denominations
+#
+## DIALOGCHECK
+## MINARGS 1
+## MAXARGS 2
+## .*
+## \d+
+## ENDDIALOGCHECK
+
 itemname = args[0]
 if len(args) == 2:
     quantity = args[1]

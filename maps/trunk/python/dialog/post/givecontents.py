@@ -10,6 +10,12 @@
 # to the player 
 # containers are matched by item name, not arch name.
 
+## DIALOGCHECK
+## MINARGS 1
+## MAXARGS 1
+## .*
+## ENDDIALOGCHECK
+
 contents=True
 # commongive.py does all of the heavy lifting here.
 exec(open(os.path.join(Crossfire.DataDirectory(), Crossfire.MapDirectory(), 'python/dialog/commongive.py')).read())
