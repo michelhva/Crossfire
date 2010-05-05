@@ -47,13 +47,16 @@ import cjson
 
 location = "defaultdialognamespace"
 
-def parseJSON(filename):
+def parseJSON(filename, relpath):
     global location
     parameters = []
     for filenm in filename:
-        filepath = os.path.join(Crossfire.DataDirectory(),
-                            Crossfire.MapDirectory(),
-                            filenm)
+        if filenm[0] == "/":
+            filepath = os.path.join(Crossfire.DataDirectory(),
+                            Crossfire.MapDirectory(), filenm[1:])
+        else:
+            filepath = os.path.join(Crossfire.DataDirectory(),
+                            Crossfire.MapDirectory(), relpath, filenm)
         try:
             f = open(filepath,'rb')
         except:
@@ -79,7 +82,7 @@ def parseJSON(filename):
                 if shouldinclude == 1:
                     # this isn't a 'real' rule, so we don't include it, but we do 
                     # include the results of parsing it.
-                    parameters.extend(parseJSON(newfiles))
+                    parameters.extend(parseJSON(newfiles, os.path.dirname(filepath)))
                 else:
                     Crossfire.Log(Crossfire.LogDebug, "Ignoring NPC dialog from %s, conditions not met" % newfiles)
             else:
@@ -91,7 +94,7 @@ npc = Crossfire.WhoAmI()
 player = Crossfire.WhoIsActivator()
 if (Crossfire.ScriptParameters() != None):
     filename = Crossfire.ScriptParameters()
-    dialogs = parseJSON([filename])
+    dialogs = parseJSON([filename], '')
 speech = Dialog(player, npc, location)
 index = 0;
 
