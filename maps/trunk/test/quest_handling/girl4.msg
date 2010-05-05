@@ -6,6 +6,6 @@
   "post" : [],
   "msg" : ["You said 4."]
   },{
-  "include" : ["test/quest_handling/girl5.msg"]
+  "include" : ["girl5.msg"]
   }    
 ]}

@@ -7,11 +7,11 @@
   "post" : [],
   "msg" : ["You said 1."]
   },{
-  "include" : ["test/quest_handling/girl2.msg"]
+  "include" : ["/test/quest_handling/girl2.msg"]
   },{
-  "include" : ["test/quest_handling/girl3.msg", "test/quest_handling/girl4.msg"]
+  "include" : ["girl3.msg", "girl4.msg"]
   },{
-  "include" : ["test/quest_handling/girl7.msg", "test/quest_handling/girl6.msg"],
+  "include" : ["/test/quest_handling/girl7.msg", "girl6.msg"],
   "pre" : [["token", "can count high", "1"]]
   },{
   "match" : ["*"],
