@@ -1537,18 +1537,21 @@ public class DefaultCrossfireServerConnection extends DefaultServerConnection im
                         break;
                     }
                     args = packet.position();
-                    do {
+                    for (;;) {
                         final int startPos = packet.position();
                         while (packet.hasRemaining() && packet.get(packet.position()) != ' ') {
                             packet.get();
                         }
                         final String type = newString(packet, startPos, packet.position()-startPos);
-                        packet.get();
                         if (debugProtocol != null) {
                             debugProtocol.debugProtocolWrite("recv ExtendedTextSet "+type);
                         }
                         // XXX: ExtendedTextSet command not implemented
-                    } while (packet.hasRemaining());
+                        if (!packet.hasRemaining()) {
+                            break;
+                        }
+                        packet.get();
+                    }
                     notifyPacketWatcherListenersNodata(packet, args);
                     return;
                 }
