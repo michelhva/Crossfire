@@ -4,7 +4,7 @@
   {
   "match" : ["hi","hello"],
   "pre" : [],
-  "post" : [["settoken", "gork_speak","hoard"]],
+  "post" : [["settoken", "gork_speak","hoard"],["quest", "scorn/GorksTreasure","20"]],
   "msg" : ["Youse want Gork's hoards?  I crush you..."]
   }, {
   "match" : ["gork","hoard","yes","want"],
@@ -28,13 +28,13 @@
   "msg" : ["Mork live in tower.  Mork big, Mork friend."]
   }, {
   "match" : ["share","treasure"],
-  "pre" : [["quest", "scorn/GorksTreasure","30"]],
+  "pre" : [["quest", "scorn/GorksTreasure","40"]],
   "post" : [["settoken", "gork_speak","key"]],
   "msg" : ["Mork gave you key to open treasure door? Oh well, Gork assume Gork's friend knows what he is doing."]
   }, {
   "match" : ["share","treasure"],
   "pre" : [["token", "gork_speak","treasure"]],
-  "post" : [["settoken", "gork_speak","key"],["quest", "scorn/GorksTreasure","20"]],
+  "post" : [["settoken", "gork_speak","key"],["quest", "scorn/GorksTreasure","30"]],
   "msg" : ["Only Gork and Mork can open treasure door."]
   }, {
   "match" : ["crush","door","open","treasure"],
