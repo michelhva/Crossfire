@@ -14,10 +14,12 @@
 ## .*
 ## ENDDIALOGCHECK
 
+verdict = False
 status = self.getStatus(args[0])
 for value in args[1:]:
     if (status == value) or (value == "*"):
-        pass
-    else:
-        verdict = False
+        verdict = True
         break
+    else:
+        pass
+
