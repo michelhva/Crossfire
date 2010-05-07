@@ -3,23 +3,23 @@
   "rules": [
   {
   "match" : ["gork"],
-  "pre" : [["quest", "scorn/GorksTreasure", "20"]],
+  "pre" : [["quest", "scorn/GorksTreasure", "30"]],
   "post" : [["settoken", "mork_speak","gork"]],
   "msg" : ["You know Gork?  You friend of Gork?"]
   }, {
   "match" : ["yes","friend"],
-  "pre" : [["quest", "scorn/GorksTreasure", "20"],["token", "mork_speak","gork"]],
+  "pre" : [["quest", "scorn/GorksTreasure", "30"],["token", "mork_speak","gork"]],
   "post" : [["settoken", "mork_speak","key"]],
   "msg" : ["I bet Gork send you to get key.  Did he?"]
   }, {
   "match" : ["key","send","yes"],
-  "pre" : [["quest", "scorn/GorksTreasure", "30"], ["token", "mork_speak", "key"]],
+  "pre" : [["quest", "scorn/GorksTreasure", "40"]],
   "post" : [],
   "msg" : ["I gave you key. Now you go."]
   },{
   "match" : ["key","send","yes"],
-  "pre" : [["quest", "scorn/GorksTreasure", "20"],["token", "mork_speak","key"]],
-  "post" : [["settoken", "mork_speak","0"],["quest", "scorn/GorksTreasure", "30"], ["giveitem", "gorks key"]],
+  "pre" : [["quest", "scorn/GorksTreasure", "30"],["token", "mork_speak","key"]],
+  "post" : [["settoken", "mork_speak","0"],["quest", "scorn/GorksTreasure", "40"], ["giveitem", "gorks key"]],
   "msg" : ["Ok, I give you key.  Here you go."]
   }, {
   "match" : ["hello","hi"],
