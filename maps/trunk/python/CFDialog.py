@@ -69,6 +69,14 @@
 #   be found in dialog/post/*.py Each file describes how to use the effect in
 #   question.
 #
+# - Replies are what the player will be informed of possible replies.
+#   Each should be an array in the form [word, text, type], with
+#   'word' the actual word the player should say, 'text' the text the player
+#   will actually say if she says the word, 'type' an optional integer
+#   to specify if the text is a regular sentence (0), a reply (1) or a question
+#   to ask (2).
+#
+#
 # Once the rules are all defined, assemble them into a dialog.  Each dialog
 # involves somebody who triggers it, somebody who answers, and also a unique
 # name so it cannot be confused with other dialogs.  Typically, the "one who
@@ -200,6 +208,12 @@ class Dialog:
     # some variable substitution is done on the message here, $me and $you 
     # are replaced by the names of the npc and the player respectively
     def speak(self, msg):
+        key = self.uniqueKey()
+        replies = None
+        if Crossfire.GetPrivateDictionary().has_key(key):
+          replies = Crossfire.GetPrivateDictionary()[key]
+          Crossfire.GetPrivateDictionary()[key] = None
+
         for rule in self.__rules:
             if self.isAnswer(msg, rule.getKeyword()) == 1:
                 if self.matchConditions(rule) == 1:
@@ -210,12 +224,28 @@ class Dialog:
                     Crossfire.NPCSay(self.__speaker, message);
                     if rule.getRequires() == None:
                         if rule.getSuggests() != None:
-                            self.__speaker.Say(rule.getSuggests())
+                            for reply in rule.getSuggests():
+                                Crossfire.AddReply(reply[0], reply[1])
+                            Crossfire.GetPrivateDictionary()[key] = rule.getSuggests()
                     else:
                         self.__speaker.Say(rule.getRequires())
                     self.setConditions(rule)
+
+                    # change the player's text if found
+                    if replies != None:
+                        for reply in replies:
+                            if reply[0] == msg:
+                                type = Crossfire.ReplyType.SAY
+                                if len(reply) > 2:
+                                    type = reply[2]
+                                Crossfire.SetPlayerMessage(reply[1], type)
+                                break
+
                     return 0
         return 1
+
+    def uniqueKey(self):
+      return self.__location + '_' + self.__character.QueryName()
 
     # Determine if the message sent to an NPC matches a string in the keyword
     # list. The match check is case-insensitive, and succeeds if a keyword
