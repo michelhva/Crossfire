@@ -19,7 +19,7 @@
   },{
   "match" : ["key","send","yes"],
   "pre" : [["quest", "scorn/GorksTreasure", "30"],["token", "mork_speak","key"]],
-  "post" : [["settoken", "mork_speak","0"],["quest", "scorn/GorksTreasure", "40"], ["giveitem", "gorks key"]],
+  "post" : [["settoken", "mork_speak","0"],["quest", "scorn/GorksTreasure", "40"], ["giveitem", "gorks key"], ["connection", "9"]],
   "msg" : ["Ok, I give you key.  Here you go."]
   }, {
   "match" : ["hello","hi"],
