@@ -207,7 +207,7 @@ class Dialog:
                     message = message.replace('$me', self.__speaker.QueryName())
                     message = message.replace('$you', self.__character.QueryName())
 
-                    self.__speaker.Say(message)
+                    Crossfire.NPCSay(self.__speaker, message);
                     if rule.getRequires() == None:
                         if rule.getSuggests() != None:
                             self.__speaker.Say(rule.getSuggests())
