@@ -98,11 +98,15 @@ if (Crossfire.ScriptParameters() != None):
 speech = Dialog(player, npc, location)
 index = 0;
 
-for jsonRule in dialogs:        
+for jsonRule in dialogs:
+    replies = None
+    if jsonRule.has_key('replies'):
+        replies = jsonRule['replies']
     rule = DialogRule(jsonRule["match"],
                       jsonRule["pre"],
                       jsonRule["msg"],
-                      jsonRule["post"])
+                      jsonRule["post"],
+                      replies)
     speech.addRule(rule, index)
     index = index + 1
 
