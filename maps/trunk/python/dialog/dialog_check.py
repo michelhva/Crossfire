@@ -121,9 +121,7 @@ def checkdialoguefile(msgfile, location):
 
             elif action == "match":
                 match+=1
-            elif action == "requires":
-                pass
-            elif action == "suggests":
+            elif action == "replies":
                 pass
             elif action == "comment":
                 pass
