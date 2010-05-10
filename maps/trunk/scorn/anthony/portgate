@@ -8,7 +8,7 @@ enter_x 8
 enter_y 11
 msg
 Created:  1998-12-28 Anthony Thyssen (anthony@cit.gu.edu.au)
-Modified: 2010-03-30 Cavesomething
+Modified: 2010-05-09 Kevin Bulgrien
 endmsg
 outdoor 1
 end
@@ -214,6 +214,8 @@ end
 arch woodfloor
 x 2
 y 9
+type 0
+smoothlevel 0
 end
 arch grass
 x 2
@@ -291,7 +293,7 @@ arch woodfloor
 x 3
 y 5
 end
-arch mine17
+arch mine2
 x 3
 y 5
 end
@@ -302,10 +304,8 @@ end
 arch woodfloor
 x 3
 y 6
-end
-arch mine7
-x 3
-y 6
+type 0
+smoothlevel 0
 end
 arch dungeon_magic
 x 3
@@ -314,29 +314,20 @@ end
 arch woodfloor
 x 3
 y 7
-end
-arch card
-name Gate Pass
-slaying gate_pass
-msg
-The holder of this card is allowed free
-access into and out of the City of Scorn
-to the rest of the continent without
-further charges and penalties. The City
-of Scorn reserves the right to revoke
-said access at any time of its choosing
-without recompense or liability.
-endmsg
-x 3
-y 7
-value 800
-identified 1
+type 0
+smoothlevel 0
 end
 arch dungeon_magic
 x 3
 y 8
 end
 arch woodfloor
+x 3
+y 8
+type 0
+smoothlevel 0
+end
+arch barrel
 x 3
 y 8
 end
@@ -419,23 +410,6 @@ arch woodfloor
 x 4
 y 6
 end
-arch card
-name Port Pass
-slaying port_pass
-msg
-This is a merchants pass allowing payed
-access between the City of Scorn and the
-Port of Scorn, for the purposes of trade
-and commerce. Animal or plants entering
-the city of scorn must be quarantined in
-the Quarantine Warehouse in the port
-area.
-endmsg
-x 4
-y 6
-value 2500
-identified 1
-end
 arch dungeon_magic
 x 4
 y 7
@@ -449,6 +423,14 @@ x 4
 y 8
 end
 arch woodfloor
+x 4
+y 8
+end
+arch sign
+name Office for Gate Passes
+msg
+Office for Gate Passes
+endmsg
 x 4
 y 8
 end
@@ -518,7 +500,7 @@ arch woodfloor
 x 5
 y 5
 end
-arch mine17
+arch mine2
 x 5
 y 5
 end
@@ -530,24 +512,29 @@ arch woodfloor
 x 5
 y 6
 end
-arch mine4
-x 5
-y 6
-end
-arch dungeon_magic
-x 5
-y 7
-end
-arch woodfloor
-x 5
-y 7
-end
-arch sign
-name Office for Gate Passes
+arch card
+name Port Pass
+slaying port_pass
 msg
-Office for Gate Passes
+This is a merchants pass allowing paid
+access between the City of Scorn and the
+Port of Scorn, for the purposes of trade
+and commerce. Animal or plants entering
+the city of scorn must be quarantined in
+the Quarantine Warehouse in the port
+area.
 endmsg
 x 5
+y 6
+value 2500
+identified 1
+end
+arch dungeon_magic
+x 5
+y 7
+end
+arch woodfloor
+x 5
 y 7
 end
 arch dungeon_magic
@@ -557,6 +544,23 @@ end
 arch woodfloor
 x 5
 y 8
+end
+arch card
+name Gate Pass
+slaying gate_pass
+msg
+The holder of this card is allowed free
+access into and out of the City of Scorn
+to the rest of the continent without
+further charges and penalties. The City
+of Scorn reserves the right to revoke
+said access at any time of its choosing
+without recompense or liability.
+endmsg
+x 5
+y 8
+value 800
+identified 1
 end
 arch dungeon_magic
 x 5
@@ -653,7 +657,7 @@ arch woodfloor
 x 6
 y 6
 end
-arch mine17
+arch mine11
 x 6
 y 6
 end
