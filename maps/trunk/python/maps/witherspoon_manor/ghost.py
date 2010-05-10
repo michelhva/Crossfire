@@ -53,7 +53,7 @@ def found_body(player, rule):
 	if body:
 		#all fine!
 		body.Remove()
-		start_disappearing(ghost, player)
+		start_disappear(ghost, player)
 		return 1
 
 	#oh oh, bad, ghost is getting angry!
@@ -119,17 +119,23 @@ def do_dialog():
 	prer = [["token","witherspoon_ghost","wait"]]
 	postr = [["settoken","witherspoon_ghost", "*"]]
 	rmsg = ["Please, go find my body.\n\nIt should be near the lake west of Scorn...", "Did you find my body yet? No?\n\nThen please, go search for it, west of Scorn there is a lake..."]
-	speech.addRule(DialogRule(["*"], prer, rmsg, postr, check_body),3)
+	rule = DialogRule(["*"], prer, rmsg, postr)
+	rule.setPreFunction(check_body)
+	speech.addRule(rule,3)
 
 	prer = [["token","witherspoon_ghost","wait"]]
 	postr = [["settoken","witherspoon_ghost", "0"]]
 	rmsg = ["Thanks, you found my body!"]
-	speech.addRule(DialogRule(["*"], prer, rmsg, postr, found_body),4)
+	rule = DialogRule(["*"], prer, rmsg, postr)
+	rule.setPreFunction(found_body)
+	speech.addRule(rule,4)
 
 	prer = [["token","witherspoon_ghost","*"]]
 	postr = [["settoken","witherspoon_ghost", "*"]]
 	rmsg = ["Please help me....", "Heeeeeeeelp...", "Pleaseeeee..."]
-	speech.addRule(DialogRule(["*"], prer, rmsg, postr, can_talk),5)
+	rule = DialogRule(["*"], prer, rmsg, postr)
+	rule.setPreFunction(can_talk)
+	speech.addRule(rule,5)
 
 	speech.speak(Crossfire.WhatIsMessage())
 
