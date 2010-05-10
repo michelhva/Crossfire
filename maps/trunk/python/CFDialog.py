@@ -126,13 +126,12 @@ import os
 import CFItemBroker
 
 class DialogRule:
-    def __init__(self, keywords, presemaphores, messages, postsemaphores, suggested_response = None, required_response = None):
+    def __init__(self, keywords, presemaphores, messages, postsemaphores, suggested_response = None):
         self.__keywords = keywords
         self.__presems = presemaphores
         self.__messages = messages
         self.__postsems = postsemaphores
         self.__suggestions = suggested_response
-        self.__requirements = required_response
 
     # The keyword is a string.  Multiple keywords may be defined in the string
     # by delimiting them with vertical bar (|) characters.  "*" is a special
@@ -165,11 +164,6 @@ class DialogRule:
     # This is when a message is sent.
     def getSuggests(self):
         return self.__suggestions
-
-    # Return the required responses to this rule, this is like a suggestion, 
-    # except that no other response will make sense in context (eg, a yes/no question)
-    def getRequires(self):
-        return self.__requirements
 
 # This is a subclass of the generic dialog rule that we use for determining whether to 
 # 'include' additional rules.
@@ -222,13 +216,10 @@ class Dialog:
                     message = message.replace('$you', self.__character.QueryName())
 
                     Crossfire.NPCSay(self.__speaker, message);
-                    if rule.getRequires() == None:
-                        if rule.getSuggests() != None:
-                            for reply in rule.getSuggests():
-                                Crossfire.AddReply(reply[0], reply[1])
-                            Crossfire.GetPrivateDictionary()[key] = rule.getSuggests()
-                    else:
-                        self.__speaker.Say(rule.getRequires())
+                    if rule.getSuggests() != None:
+                        for reply in rule.getSuggests():
+                            Crossfire.AddReply(reply[0], reply[1])
+                        Crossfire.GetPrivateDictionary()[key] = rule.getSuggests()
                     self.setConditions(rule)
 
                     # change the player's text if found
