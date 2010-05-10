@@ -149,8 +149,11 @@ def checkdialoguefile(msgfile, location):
         for extrapath in extrafiles:
             newfiles, newrules, newwarnings, newerrors = checkdialoguefile(extrapath, location)
             print "checked ", newrules, "rules from file", extrapath, "Found ", newerrors, " errors and ", newwarnings,"warnings"
+            warnings +=newwarnings
+            rulenumber+=newrules
+            errors+=newerrors
         extrafiles = []
-    return (1+newfiles, rulenumber+newrules, warnings+newwarnings, errors+newerrors)
+    return (1+newfiles, rulenumber, warnings, errors)
 
 if len(sys.argv) < 2:
     print "usage: python dialog_check.py path/to/dialogfile.msg"
