@@ -132,6 +132,7 @@ class DialogRule:
         self.__messages = messages
         self.__postsems = postsemaphores
         self.__suggestions = suggested_response
+        self.__prefunction = None
 
     # The keyword is a string.  Multiple keywords may be defined in the string
     # by delimiting them with vertical bar (|) characters.  "*" is a special
@@ -164,6 +165,14 @@ class DialogRule:
     # This is when a message is sent.
     def getSuggests(self):
         return self.__suggestions
+
+    # Return a possible pre function, that will be called to ensure the rule matches.
+    def getPreFunction(self):
+        return self.__prefunction
+
+    # Define a prefunction that will be called to match the rule.
+    def setPreFunction(self, function):
+        self.__prefunction = function
 
 # This is a subclass of the generic dialog rule that we use for determining whether to 
 # 'include' additional rules.
@@ -269,6 +278,10 @@ class Dialog:
                     return 0
             else:
                 Crossfire.Log(Crossfire.LogError, "CFDialog: Pre Block called with unknown action %s." % action)
+                return 0
+
+        if rule.getPreFunction() != None:
+            if rule.getPreFunction()(self.__character, rule) != True:
                 return 0
         return 1
 
