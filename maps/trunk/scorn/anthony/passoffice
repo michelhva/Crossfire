@@ -8,7 +8,7 @@ enter_x 5
 enter_y 8
 msg
 Created:  1998-12-28 Anthony Thyssen (anthony@cit.gu.edu.au)
-Modified: 2010-03-30 Cavesomething
+Modified: 2010-05-10 Kevin Bulgrien
 endmsg
 end
 arch woodfloor
@@ -145,6 +145,10 @@ no_magic 1
 damned 1
 end
 arch woodfloor
+x 1
+y 1
+end
+arch anchor
 x 1
 y 1
 end
@@ -665,6 +669,8 @@ end
 arch longtable_1_1
 x 7
 y 1
+type 0
+move_block all
 end
 arch woodfloor
 x 7
@@ -673,6 +679,8 @@ end
 arch longtable_2_1_1
 x 7
 y 2
+type 0
+move_block all
 end
 arch dungeon_magic
 x 7
@@ -685,6 +693,8 @@ end
 arch longtable_2_1_1
 x 7
 y 3
+type 0
+move_block all
 end
 arch dungeon_magic
 x 7
