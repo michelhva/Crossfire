@@ -5,12 +5,14 @@
   "match" : ["gork"],
   "pre" : [["quest", "scorn/GorksTreasure", "30"]],
   "post" : [["settoken", "mork_speak","gork"]],
-  "msg" : ["You know Gork?  You friend of Gork?"]
+  "msg" : ["You know Gork?  You friend of Gork?"],
+  "replies" : [["yes", "oh yes, Gork and I are great friends"], ["no", "Nope, Gork is no friend of mine"]]
   }, {
   "match" : ["yes","friend"],
   "pre" : [["quest", "scorn/GorksTreasure", "30"],["token", "mork_speak","gork"]],
   "post" : [["settoken", "mork_speak","key"]],
-  "msg" : ["I bet Gork send you to get key.  Did he?"]
+  "msg" : ["I bet Gork send you to get key.  Did he?"],
+  "replies" : [["yes", "why, er yes, Gork wanted me to get the key and clean ou.. up, his treasure room"], ["no", "no, Gork didn't say anything about getting a key"]]
   }, {
   "match" : ["key","send","yes"],
   "pre" : [["quest", "scorn/GorksTreasure", "40"]],
@@ -25,12 +27,14 @@
   "match" : ["hello","hi"],
   "pre" : [],
   "post" : [],
-  "msg" : ["Geesh, kill all my friends, that's not very nice.\nWhere did you learn your manners?"]
+  "msg" : ["Geesh, kill all my friends, that's not very nice.\nWhere did you learn your manners?"],
+  "replies" : [["friends", "You were friends with those creatures?"]]
   }, {
   "match" : ["friends"],
   "pre" : [],
   "post" : [],
-  "msg" : ["They were just my pals."]
+  "msg" : ["They were just my pals."],
+  "replies" : [["pals", "I'm sorry I killed your pals"]]
   }, {
   "match" : ["pals"],
   "pre" : [],
