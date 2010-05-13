@@ -8,7 +8,7 @@ enter_x 12
 enter_y 17
 msg
 Created:  1999-01-24 Raphaël Quinet (raphael@gimp.org)
-Modified: 2008-09-29 Rick Tanner
+Modified: 2010-05-13 Cavesomething
 endmsg
 end
 arch grass_only
@@ -1410,16 +1410,13 @@ y 6
 end
 arch crone
 name Servant of Gaea
-msg
-@match force
-If you cannot feel it, worship!  Enjoy the life that wells within Her children, and the power she bestows them to oppose all that is unnatural!
-@match gaea|mother
-We are the children of Gaea.  Kneel down and pray to your Mother.  Feel Her force under your feet.
-@match *
-I am celebrating Gaea, our Mother.
-endmsg
 x 13
 y 6
+arch event_say
+name scorn/temples/servantofgaea.msg
+title Python
+slaying /python/dialog/npc_dialog.py
+end
 end
 arch pstone_1
 x 13
