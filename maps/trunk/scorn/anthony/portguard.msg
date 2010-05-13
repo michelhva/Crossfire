@@ -15,7 +15,8 @@
   "match" : ["clerk", "Milton", "office", "mood"],
   "pre" : [["quest", "scorn/PassClerk", "10"]],
   "post" : [["quest", "scorn/PassClerk", "20"]],
-  "msg" : ["Oh, you spoke to Milton then, he can be a bit intemperate at times, particularly when he hasn't had his coffee."]
+  "msg" : ["Oh, you spoke to Milton then, he can be a bit intemperate at times, particularly when he hasn't had his coffee."],
+  "replies" : [["coffee", "Does he drink a lot of coffee then?"]]
   },{
   "match" : ["clerk", "Milton", "office"],
   "pre" : [],
@@ -60,36 +61,42 @@
   "match" : ["hero"],
   "pre" : [["quest", "scorn/PortGate", "5"], ["quest", "scorn/ScornHero", "10"]],
   "post" : [],
-  "msg" : ["Only the king can grant `Hero' status."]
+  "msg" : ["Only the king can grant `Hero' status."],
+  "replies" : [["king", "Where is the King?"]]
   },{
   "match" : ["hero"],
   "pre" : [["quest", "scorn/PortGate", "5"]],
   "post" : [["quest", "scorn/ScornHero", "10"]],
-  "msg" : ["Only the king can grant `Hero' status."]
+  "msg" : ["Only the king can grant `Hero' status."],
+  "replies" : [["king", "Where is the King?"]]
   },{
   "match" : ["port", "pass"],
   "pre" : [["quest", "scorn/PortGate", "5"],["quest", "scorn/PortPass", "10"]],
   "post" : [],
-  "msg" : ["The Office of Gate Passes is just beyond the sign to the left, speak to the clerk and he'll help you, maybe."]
+  "msg" : ["The Office of Gate Passes is just beyond the sign to the left, speak to the clerk and he'll help you, maybe."],
+  "replies" : [["clerk", "Who is the Clerk?"]]
   },{
   "match" : ["port", "pass"],
   "pre" : [["quest", "scorn/PortGate", "5"]],
   "post" : [["quest", "scorn/PortPass", "10"]],
   "msg" : ["See the Office of Gate Passes over to the left."]
   },{
-  "match" : ["who", "pass", "people"],
+  "match" : ["who", "enter", "people"],
   "pre" : [["quest", "scorn/PortGate", "5"]],
   "post" : [["quest", "scorn/PortGate", "10"]],
-  "msg" : ["Yes you can only pass if you:\n* Have a merchants ``Port Pass''\n* Are a known ``Hero of Scorn''\n* or know todays password."]
+  "msg" : ["Yes you can only pass if you:\n* Have a merchant's ``Port Pass''\n* Are a known ``Hero of Scorn''\n* or know todays password."],
+  "replies" : [["pass", "Where can I get a 'Port Pass' from?"], ["hero", "How can I become a ``Hero of Scorn''?"], ["password", "What is the password?"]]
   },{
   "match" : ["*"],
   "pre" : [["quest", "scorn/PortGate", "5"]],
   "post" : [],
-  "msg" : ["Only certain people may pass."]
+  "msg" : ["Only certain people may enter the port."],
+  "replies" : [["people", "Who is permitted to enter?"]]
   },{
   "match" : ["*"],
   "pre" : [],
   "post" : [["quest", "scorn/PortGate", "5"]],
-  "msg" : ["Only certain people may pass."]
+  "msg" : ["Only certain people may enter the port."],
+  "replies" : [["people", "Who is permitted to enter?"]]
   }
 ]}
