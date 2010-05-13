@@ -10,7 +10,7 @@ enter_x 9
 enter_y 15
 msg
 Created:  1996-04-28 b.t. (thomas@astro.psu.edu)
-Modified: 2009-07-14 Andreas Kirschbaum
+Modified: 2010-05-13 Nicolas Weeger
 endmsg
 end
 arch grass
@@ -1477,6 +1477,7 @@ end
 arch cobblestones2
 x 8
 y 17
+move_block all
 end
 arch grass
 x 9
@@ -1654,26 +1655,21 @@ arch woodfloor
 x 9
 y 15
 end
-arch invis_exit
+arch woodfloor
+x 9
+y 16
+end
+arch look_door_exit_1
 slaying /world/world_105_115
 hp 12
 sp 35
 x 9
 y 16
 end
-arch woodfloor
-x 9
-y 16
-end
-arch door_look_1
-x 9
-y 16
-move_block 0
-blocksview 1
-end
 arch cobblestones2
 x 9
 y 17
+move_block all
 end
 arch grass
 x 10
@@ -1852,26 +1848,21 @@ arch woodfloor
 x 10
 y 15
 end
-arch invis_exit
+arch woodfloor
+x 10
+y 16
+end
+arch look_door_exit_1
 slaying /world/world_105_115
 hp 12
 sp 35
 x 10
 y 16
 end
-arch woodfloor
-x 10
-y 16
-end
-arch door_look_1
-x 10
-y 16
-move_block 0
-blocksview 1
-end
 arch cobblestones2
 x 10
 y 17
+move_block all
 end
 arch brush
 x 11
@@ -2043,6 +2034,7 @@ end
 arch cobblestones2
 x 11
 y 17
+move_block all
 end
 arch grass
 x 12
