@@ -34,7 +34,8 @@
   "match" : ["who", "pass", "people"],
   "pre" : [["quest", "scorn/CityGate", "5"]],
   "post" : [["quest", "scorn/CityGate", "10"]],
-  "msg" : ["Only those who are\n * Citizens of Scorn with a Password\n* Have a merchants ``Gate Pass''\n* Or knighted ``Hero'' by the king.\nmay pass through these gates."]
+  "msg" : ["Only those who are:\n * Citizens of Scorn with a Password\n* Have a merchants ``Gate Pass''\n* Or knighted ``Hero'' by the king.\nmay pass through these gates."],
+  "replies" : [["pass", "Where can I get a 'Gate Pass' from?"], ["hero", "How can I become a ``Hero of Scorn''?"], ["password", "What is the password?"]]
   },{
   "match" : ["open", "gate"],
   "pre" : [["quest", "scorn/CityGate", "5"]],
@@ -44,7 +45,8 @@
   "match" : ["open", "gate"],
   "pre" : [],
   "post" : [["quest", "scorn/CityGate", "5"]],
-  "msg" : ["The gate opens only for certain people."]
+  "msg" : ["The gate opens only for certain people."],
+  "replies" : [["people", "For whom is the gate opened?"]]
   },{
   "match" : ["secret", "wall", "door"],
   "pre" : [],
@@ -59,6 +61,7 @@
   "match" : ["*"],
   "pre" : [],
   "post" : [],
-  "msg" : ["Good to see a friend!\n Have you seen any monsters lately?"]
+  "msg" : ["Good to see a friend!\n Have you seen any monsters lately?"],
+  "replies" : [["monsters", "Why are you having problems with monsters?"]]
   }
 ]}
