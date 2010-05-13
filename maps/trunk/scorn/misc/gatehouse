@@ -8,7 +8,7 @@ enter_x 1
 enter_y 7
 msg
 Created:  1993-10-15
-Modified: 2010-03-30 Cavesomething
+Modified: 2010-05-05 Cavesomething
 endmsg
 outdoor 1
 end
@@ -182,10 +182,14 @@ y 5
 connected 13
 end
 arch check_floor
-slaying hero_of_scorn
+hp 1
 x 2
 y 5
-connected 14
+arch event_trigger
+name scorn/Aristocracy 10-100 14
+title Python
+slaying python/quests/QuestTriggerConnect.py
+end
 end
 arch cobblestones2
 x 2
@@ -198,10 +202,14 @@ y 6
 connected 13
 end
 arch check_floor
-slaying hero_of_scorn
+hp 1
 x 2
 y 6
-connected 14
+arch event_trigger
+name scorn/Aristocracy 10-100 14
+title Python
+slaying python/quests/QuestTriggerConnect.py
+end
 end
 arch cobblestones2
 x 2
@@ -214,10 +222,14 @@ y 7
 connected 13
 end
 arch check_floor
-slaying hero_of_scorn
+hp 1
 x 2
 y 7
-connected 14
+arch event_trigger
+name scorn/Aristocracy 10-100 14
+title Python
+slaying python/quests/QuestTriggerConnect.py
+end
 end
 arch cobblestones2
 x 2
@@ -230,10 +242,14 @@ y 8
 connected 13
 end
 arch check_floor
-slaying hero_of_scorn
+hp 1
 x 2
 y 8
-connected 14
+arch event_trigger
+name scorn/Aristocracy 10-100 14
+title Python
+slaying python/quests/QuestTriggerConnect.py
+end
 end
 arch flagstone
 x 2
@@ -2224,10 +2240,14 @@ y 5
 connected 23
 end
 arch check_floor
-slaying hero_of_scorn
+hp 1
 x 20
 y 5
-connected 24
+arch event_trigger
+name scorn/Aristocracy 10-100 24
+title Python
+slaying python/quests/QuestTriggerConnect.py
+end
 end
 arch cobblestones2
 x 20
@@ -2240,10 +2260,14 @@ y 6
 connected 23
 end
 arch check_floor
-slaying hero_of_scorn
+hp 1
 x 20
 y 6
-connected 24
+arch event_trigger
+name scorn/Aristocracy 10-100 24
+title Python
+slaying python/quests/QuestTriggerConnect.py
+end
 end
 arch cobblestones2
 x 20
@@ -2256,10 +2280,14 @@ y 7
 connected 23
 end
 arch check_floor
-slaying hero_of_scorn
+hp 1
 x 20
 y 7
-connected 24
+arch event_trigger
+name scorn/Aristocracy 10-100 24
+title Python
+slaying python/quests/QuestTriggerConnect.py
+end
 end
 arch cobblestones2
 x 20
@@ -2272,10 +2300,14 @@ y 8
 connected 23
 end
 arch check_floor
-slaying hero_of_scorn
+hp 1
 x 20
 y 8
-connected 24
+arch event_trigger
+name scorn/Aristocracy 10-100 24
+title Python
+slaying python/quests/QuestTriggerConnect.py
+end
 end
 arch cobblestones
 x 20
