@@ -8,7 +8,7 @@ enter_x 2
 enter_y 2
 msg
 Created:  2000-06-05
-Modified: 2008-12-22 Rick Tanner
+Modified: 2010-05-05 Cavesomething
 endmsg
 maplore
 @quest Scorn Royalty Quest
@@ -1608,9 +1608,20 @@ x 8
 y 27
 end
 arch mushroom_3
-slaying bunion
+name blue mushroom
+name_pl blue mushrooms
 x 8
 y 27
+arch event_drop
+name scorn/BlueMushroom 50
+title Python
+slaying /python/quests/QuestEssentialUntil.py
+end
+arch event_pickup
+name scorn/BlueMushroom 30>40
+title Python
+slaying /python/quests/QuestAdvance.py
+end
 end
 arch sea
 x 8

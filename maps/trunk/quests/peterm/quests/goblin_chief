@@ -8,7 +8,7 @@ enter_x 14
 enter_y 9
 msg
 Created:  2000-06-05
-Modified: 2008-09-22 Rick Tanner
+Modified: 2010-05-05 Cavesomething
 endmsg
 maplore
 @quest Scorn Royalty Quest
@@ -1602,6 +1602,21 @@ arch goblin_head
 name Head of the Goblin Chief
 slaying Head of the Goblin Chief
 material 0
+arch event_pickup
+name scorn/GoblinKing 30>40
+title Python
+slaying /python/quests/QuestAdvance.py
+end
+arch event_drop
+name scorn/GoblinKing 50
+title Python
+slaying /python/quests/QuestEssentialUntil.py
+end
+end
+arch event_death
+name scorn/GoblinKing 20>30
+title Python
+slaying /python/quests/QuestAdvance.py
 end
 end
 arch pstone_4

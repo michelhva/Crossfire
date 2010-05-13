@@ -7,7 +7,7 @@ height 35
 enter_x 35
 enter_y 33
 msg
-Modified: 2008-12-22 Rick Tanner
+Modified: 2010-05-05 Cavesomething
 endmsg
 maplore
 @quest Scorn Royalty Quest
@@ -3788,6 +3788,21 @@ carrying 12300
 arch crown
 name Meganthropopulos' Crown
 material 0
+arch event_pickup
+name scorn/TitanCrown 60>70
+title Python
+slaying /python/quests/QuestAdvance.py
+end
+arch event_drop
+name scorn/TitanCrown 80
+title Python
+slaying /python/quests/QuestEssentialUntil.py
+end
+end
+arch event_death
+name scorn/TitanCrown 50>60
+title Python
+slaying /python/quests/QuestAdvance.py
 end
 end
 arch woodfloor2

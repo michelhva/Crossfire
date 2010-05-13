@@ -8,7 +8,7 @@ enter_x 1
 enter_y 2
 msg
 Created:  2000-06-07
-Modified: 2009-07-12 Andreas Kirschbaum
+Modified: 2010-05-05 Cavesomething
 endmsg
 maplore
 @quest Scorn Royalty Quest
@@ -3743,6 +3743,21 @@ carrying 25
 arch dragon_wing
 name Slithselest's wing
 material 0
+arch event_drop
+name scorn/WyvernWing 50
+title Python
+slaying /python/quests/QuestEssentialUntil.py
+end
+arch event_pickup
+name scorn/WyvernWing 30>40
+title Python
+slaying /python/quests/QuestAdvance.py
+end
+end
+arch event_death
+name scorn/WyvernWing 20>30
+title Python
+slaying /python/quests/QuestAdvance.py
 end
 end
 arch medium_stones

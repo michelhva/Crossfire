@@ -8,7 +8,7 @@ enter_x 6
 enter_y 1
 msg
 Created:  2000-02-12
-Modified: 2010-02-11 Nicolas Weeger
+Modified: 2010-05-04 Cavesomething
 endmsg
 maplore
 @quest Scorn Royalty Quest
@@ -443,6 +443,11 @@ endmsg
 x 5
 y 5
 unaggressive 1
+arch event_say
+name quests/peterm/quests/titanguard.msg
+title Python
+slaying /python/dialog/npc_dialog.py
+end
 end
 arch dungeon_floor
 x 5
@@ -538,13 +543,6 @@ arch dungeon_floor
 x 6
 y 4
 end
-arch magic_mouth
-msg
-Hmm, these guards look thirsty.
-endmsg
-x 6
-y 5
-end
 arch dungeon_floor
 x 6
 y 5
@@ -553,11 +551,15 @@ arch dungeon_floor
 x 6
 y 6
 end
-arch altar
-slaying booze
+arch check_floor
+hp 1
 x 6
 y 6
-connected 1
+arch event_trigger
+name scorn/TitanCrown 30-90 1
+title Python
+slaying python/quests/QuestTriggerConnect.py
+end
 end
 arch dungeon_floor
 x 6
@@ -687,6 +689,16 @@ end
 arch dungeon_floor
 x 7
 y 6
+end
+arch check_floor
+hp 1
+x 7
+y 6
+arch event_trigger
+name scorn/TitanCrown 30-90 1
+title Python
+slaying python/quests/QuestTriggerConnect.py
+end
 end
 arch dungeon_floor
 x 7
