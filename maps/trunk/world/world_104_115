@@ -11650,7 +11650,7 @@ arch store_magic
 name Scorn Magic Shop
 slaying /scorn/shops/magicshop
 hp 14
-sp 14
+sp 15
 x 41
 y 31
 end
@@ -11737,7 +11737,7 @@ arch small_temple2
 name Temple to Lythander
 slaying /scorn/misc/templelyth
 hp 7
-sp 15
+sp 14
 x 41
 y 39
 end
@@ -12488,7 +12488,7 @@ end
 arch guild
 name West Scorn Trademarket
 slaying /mlab/mlabscrntrd1
-hp 1
+hp 0
 sp 10
 x 43
 y 34
@@ -12855,7 +12855,7 @@ arch store_weapons
 name Weapon Shop
 slaying /scorn/shops/weaponshop
 hp 2
-sp 14
+sp 15
 x 44
 y 31
 end
@@ -13277,7 +13277,7 @@ arch house_2
 name Mike Miller's house
 slaying /scorn/houses/house3.1st
 hp 6
-sp 8
+sp 9
 x 45
 y 34
 end
@@ -14840,7 +14840,7 @@ arch barrack_up
 name Food Shop Warehouse
 slaying /scorn/shops/foodshop
 hp 2
-sp 14
+sp 15
 x 49
 y 31
 end
@@ -14872,7 +14872,7 @@ arch shrine
 name Mosely's Magic Books
 slaying /scorn/shops/BasicSpells
 hp 2
-sp 2
+sp 1
 x 49
 y 34
 end
