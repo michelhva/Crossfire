@@ -9,7 +9,7 @@ enter_x 1
 enter_y 1
 msg
 Created:  2002-02-31
-Modified: 2008-10-30 Rick Tanner
+Modified: 2010-05-05 Cavesomething
 endmsg
 outdoor 1
 tile_path_1 world_106_114
@@ -2361,6 +2361,11 @@ endmsg
 x 9
 y 18
 is_floor 0
+arch event_apply
+name scorn/OgreKing 10>20
+title Python
+slaying /python/quests/QuestAdvance.py
+end
 end
 arch hills
 x 9

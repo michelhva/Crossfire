@@ -3,7 +3,7 @@ name world_105_118
 width 50
 height 50
 msg
-Modified: 2007-12-24 tchize
+Modified: 2010-05-05 Cavesomething
 endmsg
 outdoor 1
 tile_path_1 world_105_117
@@ -7150,6 +7150,11 @@ endmsg
 x 28
 y 3
 is_floor 0
+arch event_apply
+name scorn/WyvernWing 10>20
+title Python
+slaying /python/quests/QuestAdvance.py
+end
 end
 arch steppe
 x 28

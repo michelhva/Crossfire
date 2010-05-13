@@ -3,7 +3,7 @@ name world_111_117
 width 50
 height 50
 msg
-Modified: 2007-12-24 tchize
+Modified: 2010-05-05 Cavesomething
 endmsg
 outdoor 1
 tile_path_1 world_111_116
@@ -12390,6 +12390,7 @@ y 42
 elevation 9882
 end
 arch mountain_cave2
+name eyrie
 slaying /!
 msg
 floorstyle stones2
@@ -12404,6 +12405,11 @@ endmsg
 x 39
 y 42
 is_floor 0
+arch event_apply
+name scorn/DragonWhisker 10-40>50
+title Python
+slaying /python/quests/QuestAdvance.py
+end
 end
 arch mountain2
 x 39
