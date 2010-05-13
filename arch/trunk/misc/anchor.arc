@@ -1,12 +1,11 @@
-Object anchor
+Object anchor_1
 can_roll 1
 client_type 8002
 face anchor.111
 material 18
 move_block walk swim boat
-move_type 1
-name Anchor
-name_pl Anchors
+name anchor
+name_pl anchors
 no_pick 1
 weight 500000
 end
