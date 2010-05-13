@@ -9,7 +9,7 @@ enter_x 10
 enter_y 15
 msg
 Created:  1993-10-15
-Modified: 2008-09-28 Rick Tanner
+Modified: 2010-05-05 Cavesomething
 endmsg
 maplore
 @quest Scorn Royalty Quest
@@ -524,6 +524,11 @@ final_map /scorn/peterm/undead_quest
 endmsg
 x 4
 y 14
+arch event_apply
+name scorn/Animator 10>20
+title Python
+slaying /python/quests/QuestAdvance.py
+end
 end
 arch tree
 x 4
