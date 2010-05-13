@@ -9,7 +9,7 @@ enter_x 33
 enter_y 33
 msg
 Created:  2000-06-08
-Modified: 2008-09-17 Rick Tanner
+Modified: 2010-05-05 Cavesomething
 endmsg
 maplore
 @quest Scorn Royalty Quest
@@ -4426,6 +4426,16 @@ arch key2
 name broken gateway
 slaying broken gateway
 face penta.111
+arch event_pickup
+name scorn/DemonPit 30>40
+title Python
+slaying /python/quests/QuestAdvance.py
+end
+arch event_drop
+name scorn/DemonPit 50
+title Python
+slaying /python/quests/QuestEssentialUntil.py
+end
 end
 end
 arch medium_stones
