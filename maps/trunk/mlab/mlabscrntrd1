@@ -4,7 +4,6 @@ reset_timeout 1
 difficulty 1
 region scorn
 shopitems food:0;*:-95
-shopgreed 1.00000
 shopmin 1
 shopmax 500
 shoprace human
@@ -14,7 +13,7 @@ enter_x 1
 enter_y 10
 msg
 Created:  2004-08-03 Mikeeusa
-Modified: 2008-10-26 Rick Tanner
+Modified: 2010-05-13 Nicolas Weeger
 endmsg
 end
 arch dungeon_magic
@@ -107,34 +106,26 @@ end
 arch dungeon_magic
 y 10
 end
-arch invis_exit
+arch flagstone
+y 10
+end
+arch oakdoor_1
 slaying /world/world_104_115
 hp 43
 sp 35
 y 10
-end
-arch flagstone
-y 10
-end
-arch door_1
-y 10
-move_block 0
 end
 arch dungeon_magic
 y 11
 end
-arch invis_exit
+arch flagstone
+y 11
+end
+arch oakdoor_1
 slaying /world/world_104_115
 hp 43
 sp 35
 y 11
-end
-arch flagstone
-y 11
-end
-arch door_1
-y 11
-move_block 0
 end
 arch dungeon_magic
 y 12
