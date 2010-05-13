@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-# CFQuestStartAdvance - A generic script to trigger quest progress
+# QuestAdvance.py - A generic script to trigger quest progress
 #
 # Copyright (C) 2010 The Crossfire Development Team
 #
