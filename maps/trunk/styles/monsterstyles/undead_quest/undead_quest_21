@@ -4,6 +4,7 @@ width 6
 height 30
 msg
 Created:  1998-02-26
+Modified: 2010-05-05 Cavesomething
 endmsg
 end
 arch nightmare
@@ -110,6 +111,21 @@ dam 25
 attacktype 69633
 value 100000
 magic 7
+arch event_drop
+name scorn/LordSpectre 60
+title Python
+slaying /python/quests/QuestEssentialUntil.py
+end
+arch event_pickup
+name scorn/LordSpectre 30-40>50
+title Python
+slaying /python/quests/QuestAdvance.py
+end
+end
+arch event_death
+name scorn/LordSpectre 30>40
+title Python
+slaying /python/quests/QuestAdvance.py
 end
 end
 arch demilich
