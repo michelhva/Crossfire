@@ -8,7 +8,7 @@ enter_x 5
 enter_y 8
 msg
 Created:  1998-12-28 Anthony Thyssen (anthony@cit.gu.edu.au)
-Modified: 2010-05-10 Kevin Bulgrien
+Modified: 2010-05-12 Kevin Bulgrien
 endmsg
 end
 arch woodfloor
@@ -152,10 +152,6 @@ arch anchor
 x 1
 y 1
 end
-arch dungeon_magic
-x 1
-y 2
-end
 arch woodfloor
 x 1
 y 2
@@ -167,10 +163,6 @@ end
 arch woodfloor
 x 1
 y 4
-end
-arch woodfloor
-x 1
-y 5
 end
 arch woodfloor
 x 1
@@ -422,14 +414,6 @@ y 3
 end
 arch woodfloor
 x 4
-y 3
-end
-arch woodfloor
-x 4
-y 4
-end
-arch woodfloor
-x 4
 y 4
 end
 arch woodfloor
@@ -582,9 +566,9 @@ arch woodfloor
 x 6
 y 1
 end
-arch dungeon_magic
+arch shipswheel
 x 6
-y 2
+y 1
 end
 arch woodfloor
 x 6
@@ -662,6 +646,10 @@ x 7
 no_magic 1
 damned 1
 end
+arch dungeon_magic
+x 7
+y 1
+end
 arch woodfloor
 x 7
 y 1
@@ -671,6 +659,10 @@ x 7
 y 1
 type 0
 move_block all
+end
+arch dungeon_magic
+x 7
+y 2
 end
 arch woodfloor
 x 7
