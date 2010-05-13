@@ -9,7 +9,7 @@ enter_x 1
 enter_y 1
 msg
 Created:  2001-02-16
-Modified: 2009-06-22 Kevin Bulgrien
+Modified: 2010-05-13 Nicolas Weeger
 endmsg
 outdoor 1
 tile_path_1 world_104_114
@@ -13373,12 +13373,6 @@ arch grass
 x 45
 y 43
 end
-arch marker
-slaying hello
-x 45
-y 43
-speed_left -1.100000
-end
 arch dungeon_magic
 x 45
 y 44
@@ -13428,19 +13422,6 @@ end
 arch grass
 x 45
 y 48
-end
-arch detector
-slaying hello
-hp 1
-x 45
-y 48
-speed_left -0.600000
-resist_electricity 30
-resist_cold 30
-resist_acid 30
-resist_drain 30
-invisible 1
-connected 216
 end
 arch dungeon_magic
 x 45
