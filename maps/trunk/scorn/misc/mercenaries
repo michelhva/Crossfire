@@ -8,7 +8,7 @@ enter_x 15
 enter_y 11
 msg
 Created:  1997-04-16
-Modified: 2008-12-14 Rick Tanner
+Modified: 2010-05-13 Nicolas Weeger
 endmsg
 end
 arch cobblestones2
@@ -735,21 +735,16 @@ arch cobblestones2
 x 6
 y 14
 end
-arch invis_exit
+arch cobblestones2
+x 6
+y 15
+end
+arch look_door_exit_1
 slaying /world/world_104_115
 hp 46
 sp 37
 x 6
 y 15
-end
-arch cobblestones2
-x 6
-y 15
-end
-arch door_look_1
-x 6
-y 15
-move_block 0
 end
 arch cobblestones2
 x 7

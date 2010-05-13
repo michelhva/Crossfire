@@ -4,7 +4,7 @@ fixed_resettime 1
 difficulty 1
 region scorn
 shopitems flesh:70
-shopgreed 2.00000
+shopgreed 2,00000
 shopmax 2000
 width 16
 height 16
@@ -12,7 +12,7 @@ enter_x 7
 enter_y 15
 msg
 Created:  2002-02-28
-Modified: 2008-12-02 Rick Tanner
+Modified: 2010-05-13 Nicolas Weeger
 endmsg
 end
 arch flagstone
@@ -905,8 +905,8 @@ y 15
 end
 arch oakdoor_2
 slaying /world/world_105_115
-hp 15
-sp 36
+hp 16
+sp 35
 x 7
 y 15
 end
