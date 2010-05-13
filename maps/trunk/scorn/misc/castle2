@@ -8,7 +8,7 @@ enter_x 10
 enter_y 13
 msg
 Created:  1997-04-27
-Modified: 2010-05-06 Cavesomething
+Modified: 2010-05-13 Nicolas Weeger
 endmsg
 end
 arch grass
@@ -1574,23 +1574,14 @@ y 5
 end
 arch mage
 name the king
-Con 126
-hp 32767
 x 11
 y 5
 level 120
 type 0
-resist_physical 99
-resist_magic 100
-resist_fire 100
-resist_electricity 100
-resist_cold 100
-resist_acid 100
-resist_weaponmagic 100
-resist_godpower 99
 move_type walk
 monster 1
 unaggressive 1
+no_damage 1
 arch NPCGift
 arch carton_box_1
 name Prince Reward
