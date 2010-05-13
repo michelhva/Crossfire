@@ -8,7 +8,7 @@ enter_x 2
 enter_y 2
 msg
 Created:  1994-08-19 peterm (peterm@soda.csua.berkeley.edu)
-Modified: 2008-12-22 Rick Tanner
+Modified: 2010-05-05 Cavesomething
 endmsg
 maplore
 @quest Scorn Royalty Quest
@@ -3359,6 +3359,16 @@ reflect_missile 1
 reflect_spell 1
 xrays 1
 lifesave 1
+arch event_pickup
+name scorn/DragonWhisker 50>60
+title Python
+slaying /python/quests/QuestAdvance.py
+end
+arch event_drop
+name scorn/DragonWhisker 70
+title Python
+slaying /python/quests/QuestEssentialUntil.py
+end
 end
 arch pstone_2
 x 14

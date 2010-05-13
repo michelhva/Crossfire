@@ -8,7 +8,7 @@ enter_x 6
 enter_y 6
 msg
 Created:  2000-06-17
-Modified: 2008-12-22 Rick Tanner
+Modified: 2010-05-05 Cavesomething
 endmsg
 maplore
 @quest Scorn Royalty Quest
@@ -4080,10 +4080,25 @@ end
 arch head
 name Head of the Ogre Chief
 material 0
+arch event_pickup
+name scorn/OgreKing 30>40
+title Python
+slaying /python/quests/QuestAdvance.py
+end
+arch event_drop
+name scorn/OgreKing 50
+title Python
+slaying /python/quests/QuestEssentialUntil.py
+end
 end
 arch skill_throwing
 end
 arch small_shield
+end
+arch event_death
+name scorn/OgreKing 20>30
+title Python
+slaying /python/quests/QuestAdvance.py
 end
 end
 arch large_stones
