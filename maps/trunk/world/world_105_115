@@ -9,7 +9,7 @@ enter_x 1
 enter_y 1
 msg
 Created:  2001-02-16
-Modified: 2009-12-05 Nicolas Weeger
+Modified: 2010-05-06 Cavesomething
 endmsg
 outdoor 1
 tile_path_1 world_105_114
@@ -12846,6 +12846,11 @@ endmsg
 x 33
 y 15
 elevation 10852
+arch event_apply
+name scorn/GoblinKing 10>20
+title Python
+slaying /python/quests/QuestAdvance.py
+end
 end
 arch mountain
 x 33

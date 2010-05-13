@@ -3,7 +3,7 @@ name world_102_115
 width 50
 height 50
 msg
-Modified: 2007-12-24 tchize
+Modified: 2010-05-05 Cavesomething
 endmsg
 outdoor 1
 tile_path_1 world_102_114
@@ -298,6 +298,11 @@ difficulty_increase 0.5
 endmsg
 x 1
 y 14
+arch event_apply
+name scorn/BlueMushroom 10>30
+title Python
+slaying /python/quests/QuestAdvance.py
+end
 end
 arch swamp
 x 1

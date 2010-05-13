@@ -3,7 +3,7 @@ name world_125_124
 width 50
 height 50
 msg
-Modified: 2007-12-24 tchize
+Modified: 2010-05-05 Cavesomething
 endmsg
 outdoor 1
 tile_path_1 world_125_123
@@ -1235,6 +1235,11 @@ hp 6
 x 4
 y 42
 move_block 0
+arch event_apply
+name scorn/TitanCrown 10-20>30
+title Python
+slaying /python/quests/QuestAdvance.py
+end
 end
 arch grass_only
 x 4
