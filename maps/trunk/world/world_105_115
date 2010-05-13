@@ -212,7 +212,7 @@ arch guild
 name Scorn Sale Shop
 slaying /scorn/shops/scorn.sale1
 hp 10
-sp 16
+sp 18
 y 31
 end
 arch dungeon_magic
@@ -1157,6 +1157,7 @@ arch small_temple
 name Temple of the Devourers
 slaying /scorn/misc/templedevour
 hp 13
+sp 1
 x 2
 y 39
 end
@@ -2886,7 +2887,7 @@ arch store_general
 name Scorn Gem Shop
 slaying /scorn/shops/gemshop
 hp 2
-sp 14
+sp 15
 x 6
 y 31
 end
