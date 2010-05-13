@@ -16,7 +16,7 @@
   "match" : ["yes", "king", "curse"],
   "pre" : [["quest", "scorn/LordSpectre", "=10"]],
   "post" : [],
-  "msg" : ["The King has been cursed. At midnight on the Dark Day last year, A Lord Spectre forged a foul attachment to The King, to his very soul. This spectre has been drawing forth a portion of his strength in order to empower a mighty weapon.\n\n A binding such as this can be undone, but only if the King gains possession of this object.\n\n You will need to go and find the Lord Spectre and destroy him, and return the weapon to the King."]
+  "msg" : ["The King has been cursed. At midnight on the Dark Day last year, A Lord Spectre forged a foul attachment to The King, to his very soul. This spectre has been drawing forth a portion of his strength in order to empower a mighty weapon.\n\n A binding such as this can be undone, but only if the King gains possession of this object.\n\n You will need to go and find the Lord Spectre and destroy him, and return the weapon to the King."],
   "replies" : [["spectre", "Where may I find this foul spectre?"]]
   },{
   "match" : ["spectre"],
@@ -33,7 +33,7 @@
   "match" : ["*"],
   "pre" : [],
   "post" : [],
-  "msg" : ["I am celebrating Gaea, our Mother."]
-  "replies" : [["Gaea", "Gaea is your mother?"]
+  "msg" : ["I am celebrating Gaea, our Mother."],
+  "replies" : [["Gaea", "Gaea is your mother?"]]
   }
 ]}
