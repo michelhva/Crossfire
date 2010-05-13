@@ -6,7 +6,7 @@ enter_x 4
 enter_y 8
 msg
 Created:  2009-12-05 Nicolas Weeger
-Modified: 2009-12-05 Nicolas Weeger
+Modified: 2010-05-13 Nicolas Weeger
 endmsg
 end
 arch woodfloor
@@ -276,21 +276,16 @@ arch woodfloor
 x 4
 y 8
 end
-arch invis_exit
+arch woodfloor
+x 4
+y 9
+end
+arch oakdoor_2
 slaying /world/world_105_115
 hp 13
 sp 29
 x 4
 y 9
-end
-arch woodfloor
-x 4
-y 9
-end
-arch door_2
-x 4
-y 9
-move_block 0
 end
 arch woodfloor
 x 5
