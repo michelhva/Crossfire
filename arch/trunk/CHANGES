@@ -1,6 +1,11 @@
 Changes for SVN top of tree:
 ==============================================================================
 
+Move dev/wip/manhole to connect/Hole as it is tested and ready to use.  The
+test patch is removed as it is out of date, and the README is moved to the
+Hole directory as documentation.
+Kevin Bulgrien 2010-05-13
+
 Add a ships wheel based on a heavily modified down-scale of an image found at
 dreadnoughtproject.org.  Permission obtained for use of the image as a model
 to produce this free image.  Other use of the original image is not free.
