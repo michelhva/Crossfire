@@ -14,6 +14,9 @@
 import Crossfire
 import random
 import CFMove
+from CFDialog import DialogRule, Dialog
+
+quest_name = "wolfsburg/Lursendis"
 
 key_status = 'cook_status'
 st_getting = 'getting'		# moving to recipient to get the ingredients
@@ -47,7 +50,7 @@ def check_ingredients():
 #			whoami.Say('got container %s'%obj.Name)
 			inv = obj.Inventory
 			while inv != None:
-				if inv.Slaying == 'bunion' and inv.ArchName == 'mushroom_3':
+				if inv.Name == 'blue mushroom' and inv.ArchName == 'mushroom_3':
 					mushroom = inv
 				elif inv.ArchName == 'chicken_egg' and inv.NamePl == 'Combat Chicken eggs':
 					eggs = inv
@@ -100,6 +103,12 @@ def end_cooking(success):
 		omelet.NamePl = 'Farnass\'s Special Caramels'
 		omelet.Slaying = 'Farnass\'s Special Caramel'
 		omelet.Quantity = 1
+
+        # quest advancer
+        event = omelet.CreateObject("event_pickup")
+        event.Name = "wolfsburg/Lursendis 40>70"
+        event.Title = "Python"
+        event.Slaying = "/python/quests/QuestAdvance.py"
 
 def close_boiler():
 	'''Just tell the cook to check next time.'''
@@ -171,11 +180,113 @@ def move_cook():
 		check_ingredients()
 		return
 
+def cook_talk():
+    speech = Dialog(Crossfire.WhoIsActivator(), Crossfire.WhoAmI(), "scorn/Farnass")
+
+    idx = 1
+
+    match = ["eggs"]
+    pre = [["quest", quest_name, "=40"]]
+    msg = ["My friend Sentrio lives somewhere in Lake Country, but I don't remember where exactly, sorry...\n\nI do know eggs from his chicken are the only ones worth my cooking skill!"]
+    post = []
+    replies = [
+        ["mushroom", "Where can I find the mushroom?", 2],
+        ["cook", "But how can you cook without arms?", 2]]
+    speech.addRule(DialogRule(match, pre, msg, post, replies),idx)
+    idx = idx + 1
+
+    match = ["mushroom"]
+    pre = [["quest", quest_name, "=40"]]
+    msg = ["It's a blue one, I think it grows in a marsh in the west. I've heard it can be used for medicine, too."]
+    post = []
+    replies = [
+        ["eggs", "Where can I find the eggs?", 2],
+        ["cook", "But how can you cook without arms?", 2]]
+    speech.addRule(DialogRule(match, pre, msg, post, replies),idx)
+    idx = idx + 1
+
+    match = ["cook"]
+    pre = [["quest", quest_name, "=40"]]
+    msg = ["You wonder how I cook without arms? Heh, rookie, that's what makes the difference between a cooker and me, Farnass! I told you already: I'm simply wonderful."]
+    post = []
+    replies = [
+        ["eggs", "Where can I find the eggs?", 2],
+        ["mushroom", "Where can I find the mushroom?", 2]]
+    speech.addRule(DialogRule(match, pre, msg, post, replies),idx)
+    idx = idx + 1
+
+    match = ["*"]
+    pre = [["quest", quest_name, "=40"]]
+    msg = ["If you really want this caramel, then bring me the ingredients, please."]
+    post = []
+    replies = [
+        ["mushroom", "Where can I find the mushroom?", 2],
+        ["eggs", "Where can I find the eggs?", 2],
+        ["cook", "But how can you cook without arms?", 2]]
+    speech.addRule(DialogRule(match, pre, msg, post, replies),idx)
+    idx = idx + 1
+
+    match = ["ingredients"]
+    pre = [["quest", quest_name, "=10"], ["token", "dialog", "4"]]
+    msg = ["You need the following:\n- 4 eggs from my friend Sentrio's chicken\n- a blue mushroom\n\nAs you can see, I've lost my both arms during the last war against the Gnolls, so would you be kind enough to put whatever you found during your travel to make the recipe in the frypan, please?"]
+    post = [["settoken", "dialog", "0"], ["quest", quest_name, "40"]]
+    replies = [
+        ["mushroom", "Where can I find the mushroom?", 2],
+        ["eggs", "What kind of eggs?", 2],
+        ["cook", "But how can you cook without arms?", 2]]
+    speech.addRule(DialogRule(match, pre, msg, post, replies),idx)
+    idx = idx + 1
+
+    match = ["caramel"]
+    pre = [["quest", quest_name, "=10"], ["token", "dialog", "3"]]
+    msg = ["Ha, if my great friend wants a caramel, then I can only oblige!"]
+    post = [["settoken", "dialog", "4"]]
+    replies = [["ingredients", "So what would the ingredients be?", 2]]
+    speech.addRule(DialogRule(match, pre, msg, post, replies),idx)
+    idx = idx + 1
+
+    match = ["yes"]
+    pre = [["quest", quest_name, "=10"], ["token", "dialog", "2"]]
+    msg = ["How obviously from him!\n\nSo, what will he want to eat, this time?"]
+    post = [["settoken", "dialog", "3"]]
+    replies = [["caramel", "A caramel.", 1]]
+    speech.addRule(DialogRule(match, pre, msg, post, replies),idx)
+    idx = idx + 1
+
+    match = ["lursendis"]
+    pre = [["quest", quest_name, "=10"], ["token", "dialog", "1"]]
+    msg = ["Oh, this good friend! I should go see him someday... Let me guess, he wants to eat something, he?"]
+    post = [["settoken", "dialog", "2"]]
+    replies = [["yes", "Well, yes.", 1]]
+    speech.addRule(DialogRule(match, pre, msg, post, replies),idx)
+    idx = idx + 1
+
+    match = ["*"]
+    pre = [["quest", quest_name, "=10"]]
+    msg = ["Please don't disturb me, I'm trying a really hard recipe."]
+    post = [["settoken", "dialog", "1"]]
+    replies = [["lursendis", "Your friend Lursendis sent me here."]]
+    speech.addRule(DialogRule(match, pre, msg, post, replies),idx)
+    idx = idx + 1
+
+    match = ["*"]
+    pre = []
+    msg = ["Please don't disturb me, I'm trying a really hard recipe."]
+    post = []
+    replies = []
+    speech.addRule(DialogRule(match, pre, msg, post, replies),idx)
+    idx = idx + 1
+
+    speech.speak(Crossfire.WhatIsMessage())
+    Crossfire.SetReturnValue(1)
+
 whoami = Crossfire.WhoAmI()
 if Crossfire.WhatIsEvent().Subtype == Crossfire.EventType.SAY:
 	if whoami.ReadKey(key_cooking_step) != '':
-		whoami.Say('Keep quiet, this recipe requires concentration!')
+		Crossfire.NPCSay(whoami, 'Keep quiet, this recipe requires concentration!')
 		Crossfire.SetReturnValue(1)
+	else:
+		cook_talk()
 elif Crossfire.WhatIsEvent().Subtype == Crossfire.EventType.TIME:
 	move_cook()
 elif Crossfire.WhatIsEvent().Subtype == Crossfire.EventType.CLOSE:
