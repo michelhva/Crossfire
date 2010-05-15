@@ -128,11 +128,11 @@ def talk_gourmet():
         speech.addRule(DialogRule(["*"], prer, rmsg, postr, replies),idx)
         idx = idx + 1
     else:
-        prer = [["quest", quest_name, "0"], ["token", "dialog", "2"]]
+        prer = [["quest", quest_name, "0"], ["token", "dialog", "3"]]
         postr = [["settoken", "asked", "1"], ["settoken", "dialog", "0"]]
         rmsg = ["Would you really be as kind as that?"]
         replies = [["yes", "If you really need one caramel, yes, sure."], ["no", "Well, no, I was just joking."]]
-        speech.addRule(DialogRule(["farnass"], prer, rmsg, postr, replies),idx)
+        speech.addRule(DialogRule(["bring"], prer, rmsg, postr, replies),idx)
         idx = idx + 1
 
         prer = [["quest", quest_name, "0"], ["token", "dialog", "2"]]
