@@ -13,6 +13,9 @@
 import Crossfire
 import CFMove
 import random
+from CFDialog import DialogRule, Dialog
+
+quest_name = "wolfsburg/Lursendis"
 
 key_status = 'gourmet_status'
 st_getting = 'getting'
@@ -32,7 +35,7 @@ def check_plate():
 	while obj != None:
 		if obj.NamePl == 'Farnass\'s Special Caramels' and obj.Slaying == 'Farnass\'s Special Caramel':
 			if whoami.ReadKey(key_status) == st_getting:
-				whoami.Map.Print('%s grabs %s and starts eating with an obvious pleasure.'%(whoami.Name, obj.Name))
+				whoami.Map.Print('%s grabs a %s and starts eating with an obvious pleasure.'%(whoami.Name, obj.Name))
 				obj.Quantity = obj.Quantity - 1
 				whoami.WriteKey(key_status, st_eating, 1)
 				whoami.WriteKey(key_eating_step, str(random.randint(5, 10)), 1)
@@ -77,6 +80,9 @@ def move_gourmet():
 			whoami.Say('Now that\'s what I call a caramel! Thank you very much!')
 			whoami.Say('Here, take this as a token of my gratitude.')
 			create_book()
+			for pl in Crossfire.GetPlayers():
+			    if pl.Map == whoami.Map and pl.QuestGetState(quest_name) == 70:
+			        pl.QuestSetState(quest_name, 100)
 			return
 		whoami.WriteKey(key_eating_step, str(step), 1)
 		Crossfire.SetReturnValue(1)
@@ -84,5 +90,77 @@ def move_gourmet():
 
 	check_plate()
 
+def talk_gourmet():
+    pl = Crossfire.WhoIsActivator()
+    speech = Dialog(Crossfire.WhoIsActivator(), Crossfire.WhoAmI(), quest_name)
+    completed = pl.QuestWasCompleted(quest_name)
+
+    idx = 1
+
+    prer = [["quest",quest_name, "10"]]
+    rmsg = ["So, do you have a caramel made by Farnass? If so, please put it on the plate, I'm so hungry!"]
+    postr = []
+    speech.addRule(DialogRule(["*"], prer, rmsg, postr),idx)
+    idx = idx + 1
+
+    prer = [["quest",quest_name, "0"], ["token", "asked", "1"]]
+    postr = [["settoken", "asked", "0"]]
+    rmsg = ["Ha well, too bad... If you ever change your mind, please tell me!"]
+    speech.addRule(DialogRule(["no"], prer, rmsg, postr),idx)
+    idx = idx + 1
+
+    if completed:
+        next = "40"
+    else:
+        next = "10"
+
+    prer = [["quest",quest_name, "0"], ["token", "asked", "1"]]
+    postr = [["settoken", "asked", "0"], ["quest", quest_name, next]]
+    rmsg = ["Thank you very much!"]
+    speech.addRule(DialogRule(["yes"], prer, rmsg, postr),idx)
+    idx = idx + 1
+
+    if completed:
+        prer = [["quest",quest_name, "0"]]
+        postr = [["settoken", "asked", "1"]]
+        rmsg = ["Hum, I'm still hungry, I could use another caramel from Farnass... Could you get me another one, please?"]
+        replies = [["yes", "Sure"], ["no", "Sorry, I'm really busy now, I don't have time..."]]
+        speech.addRule(DialogRule(["*"], prer, rmsg, postr, replies),idx)
+        idx = idx + 1
+    else:
+        prer = [["quest", quest_name, "0"], ["token", "dialog", "2"]]
+        postr = [["settoken", "asked", "1"], ["settoken", "dialog", "0"]]
+        rmsg = ["Would you really be as kind as that?"]
+        replies = [["yes", "If you really need one caramel, yes, sure."], ["no", "Well, no, I was just joking."]]
+        speech.addRule(DialogRule(["farnass"], prer, rmsg, postr, replies),idx)
+        idx = idx + 1
+
+        prer = [["quest", quest_name, "0"], ["token", "dialog", "2"]]
+        postr = [["settoken", "dialog", "3"]]
+        rmsg = ["Farnass 'The Recipe Spellcrafter'. Good friend, haven't seen him in 15 years...\nI think he lived in Scorn, or some island around."]
+        replies = [["bring", "Should I get you one of his caramels, then?", 2]]
+        speech.addRule(DialogRule(["farnass"], prer, rmsg, postr, replies),idx)
+        idx = idx + 1
+
+        prer = [["quest", quest_name, "0"], ["token", "dialog", "1"]]
+        postr = [["settoken", "dialog", "2"]]
+        rmsg = ["Yes, but I would only eat a caramel made by my friend Farnass."]
+        replies = [["farnass", "Who is Farnass?", 2]]
+        speech.addRule(DialogRule(["caramel"], prer, rmsg, postr, replies),idx)
+        idx = idx + 1
+
+        prer = [["quest", quest_name, "0"]]
+        postr = [["settoken", "dialog", "1"]]
+        rmsg = ["I'm hungry, I could use a caramel."]
+        replies = [["caramel", "A caramel, really?", 2]]
+        speech.addRule(DialogRule(["*"], prer, rmsg, postr, replies),idx)
+        idx = idx + 1
+
+    speech.speak(Crossfire.WhatIsMessage())
+    Crossfire.SetReturnValue(1)
+
 whoami = Crossfire.WhoAmI()
-move_gourmet()
+if Crossfire.WhatIsEvent().Subtype == Crossfire.EventType.TIME:
+    move_gourmet()
+elif Crossfire.WhatIsEvent().Subtype == Crossfire.EventType.SAY:
+    talk_gourmet()
