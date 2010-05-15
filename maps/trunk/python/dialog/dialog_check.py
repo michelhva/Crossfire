@@ -13,6 +13,9 @@ import sys
 import os
 import re
 
+# There is an upper limit on the maximum message length the server can cope with, exceeding it throws out a warning.
+MAX_MSG_LENGTH = 2048
+
 def checkactionfile(filename, condition):
     args = condition[1:]
     checkstatus = 0
@@ -109,6 +112,12 @@ def checkdialoguefile(msgfile, location):
                         errors+=1
                     
             elif action == "msg":
+                for line in jsonRule["msg"]:
+                    if len(line) > MAX_MSG_LENGTH:
+                        # We won't print out the entire line, because it's very 
+                        # very long, but we'll print the first 70 characters in order to help identify it
+                        print "WARNING: A Dialog Line for rule", rulenumber, "is too long. (", len(line), "characters, maximum is", MAX_MSG_LENGTH, ") \nLine begins:", line[:70]
+                        warnings+=1
                 msg+=1
             elif action == "post":
                 post+=1
