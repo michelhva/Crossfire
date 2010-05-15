@@ -25,9 +25,7 @@
   "match" : ["yes", "service", "Scorn"],
   "pre" : [],
   "post" : [["quest", "scorn/DemonPit", "10"]],
-  "msg" : ["His Majesty, the King of Scorn, is concerned with the recent influx of demons in the ruins of the town north of
-Scorn.\nReports have it that the demons are issuing from a filthy pit in the ground.\n Go and investigate, and eliminate the
-threat if possible.\n Return with a token of your victory."]
+  "msg" : ["His Majesty, the King of Scorn, is concerned with the recent influx of demons in the ruins of the town north of Scorn.\nReports have it that the demons are issuing from a filthy pit in the ground.\n Go and investigate, and eliminate the threat if possible.\n Return with a token of your victory."]
   },{
   "match" : ["*"],
   "pre" : [],

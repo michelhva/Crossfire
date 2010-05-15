@@ -15,7 +15,7 @@
   "match" : ["*"],
   "pre" : [["quest", "scorn/DragonWhisker", "10"]],
   "post" : [["settoken", "question", "helpdragon"]],
-  "msg" : ["May I be of assistance, My Lord $you?"]
+  "msg" : ["May I be of assistance, My Lord $you?"],
   "replies" : [["yes", "Yes, you may, tell me of the Dragonlords"], ["no", "No, I need no assistance from you"]]
   },{
   "match" : ["*"],
