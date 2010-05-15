@@ -58,7 +58,7 @@
                 "Don't know the name, but ya can't misss her.",
                 "Jussst try not to embarrasss her more than she already is."]
    },
-   { "match" : ["ask","him"]
+   { "match" : ["ask","him"],
      "pre"   : [],
      "post"  : [],
      "msg"   : ["I think his name is Eric, or sssomething like that.",
@@ -152,8 +152,7 @@
    { "match" : ["amenity","privilege","room"],
      "pre"   : [],
      "post"  : [],
-     "msg"   : ["Their highnesssesss reward adventurers that complete quessstsss for them with prizes and titles
-They also reward men of title with sumptuous board as an ongoing token of their appreciation."]
+     "msg"   : ["Their highnesssesss reward adventurers that complete quessstsss for them with prizes and titles. They also reward men of title with sumptuous board as an ongoing token of their appreciation."]
    },
    { "match" : ["stock"],
      "pre"   : [],

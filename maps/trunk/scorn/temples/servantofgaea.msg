@@ -1,5 +1,5 @@
 {
-  "location": "scorn/gaea"
+  "location": "scorn/gaea",
   "rules": [
   {
   "match" : ["force"],
