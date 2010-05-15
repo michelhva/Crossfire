@@ -267,13 +267,15 @@ class Dialog:
         speaker = self.__speaker
         verdict = True
         for condition in rule.getPreconditions():
-            Crossfire.Log(Crossfire.LogDebug, "CFDialog: Trying to test %s." % condition)
             action = condition[0]
             args = condition[1:]
             path = os.path.join(Crossfire.DataDirectory(), Crossfire.MapDirectory(), 'python/dialog/pre/', action + '.py')
             if os.path.isfile(path):
-                Crossfire.Log(Crossfire.LogDebug, "CFDialog: performing test %s." % action)
-                exec(open(path).read())
+                try:
+                    exec(open(path).read())
+                except:
+                    Crossfire.Log(Crossfire.LogError, "CFDialog: Failed to evaluate condition %s." % condition)
+                    verdict = False
                 if verdict == False:
                     return 0
             else:
@@ -298,8 +300,10 @@ class Dialog:
             args = condition[1:]
             path = os.path.join(Crossfire.DataDirectory(), Crossfire.MapDirectory(), 'python/dialog/post/', action + '.py')
             if os.path.isfile(path):
-                Crossfire.Log(Crossfire.LogDebug, "CFDialog: implementing action %s." % action)
-                exec(open(path).read())
+                try:
+                    exec(open(path).read())
+                except:
+                    Crossfire.Log(Crossfire.LogError, "CFDialog: Failed to set post-condition %s." % condition)
             else:
                 Crossfire.Log(Crossfire.LogError, "CFDialog: Post Block called with unknown action %s." % action)
 
