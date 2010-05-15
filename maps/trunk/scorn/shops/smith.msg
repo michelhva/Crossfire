@@ -2,7 +2,7 @@
   "location" : "scorn/smith",
   "rules": [
   {
-  "comment": "This file handles the giving of the finished items to the player"
+  "comment": "This file handles the giving of the finished items to the player",
   "include" : ["smith_finished.msg"],
   "pre" : [["age", "orderplaced", "0", "0", "1", "0", "0"]]
   },
@@ -160,7 +160,7 @@
   "pre" : [["token", "orderstatus", "chooseshield"]],
   "post": [],
   "msg" : ["I'm sorry, I don't understand what you are asking for, are you after an eyeshield, a dragon shield or would you like something else entirely?"]
-  }
+  },
 
 
 

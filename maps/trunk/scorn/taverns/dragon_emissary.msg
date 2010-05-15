@@ -14,7 +14,7 @@
   "match" : ["emerald", "bribe", "tell"],
   "pre" : [["quest", "scorn/DragonWhisker", "30"]],
   "post" : [["settoken", "question", "emeralds"]],
-  "msg" : ["Have you got my emeralds?"]
+  "msg" : ["Have you got my emeralds?"],
   "replies" : [["yes", "Here are your emeralds"], ["no", "I am still looking for the emeralds you desire"]]
   },{ 
   "match" : ["bribe", "persuade"],
@@ -35,7 +35,7 @@
   "match" : ["dragonlord", "master"],
   "pre"   : [],
   "post"  : [],
-  "msg"   : ["My masters, the Dragonlords, are most puissant.  Few mortals may hope to overcome them in combat, for they wield such magics as would snuff the life of a mortal in seconds.\n No mortal can deal blows, arcane or otherwise, quickly enough to destroy the Lords, before they themselves are destroyed.\n The only way a mortal could destroy one of the Dragonlords is by some clever device, for none may face one in straight combat to the death and live.\n To even challenge a Dragonlord to combat, you would have to pass all their draconic guards.\n The last of these are Ancient Dragons, found deep in the Dragonlord's home; their teeth are spears, their claws are swords, and their breath is death!"]
+  "msg"   : ["My masters, the Dragonlords, are most puissant.  Few mortals may hope to overcome them in combat, for they wield such magics as would snuff the life of a mortal in seconds.\n No mortal can deal blows, arcane or otherwise, quickly enough to destroy the Lords, before they themselves are destroyed.\n The only way a mortal could destroy one of the Dragonlords is by some clever device, for none may face one in straight combat to the death and live.\n To even challenge a Dragonlord to combat, you would have to pass all their draconic guards.\n The last of these are Ancient Dragons, found deep in the Dragonlord's home; their teeth are spears, their claws are swords, and their breath is death!"],
   "replies" : [["home", "Where do the Dragonlords dwell?"]]
   },{ 
   "match" : ["demand"],
@@ -46,7 +46,7 @@
   "match" : ["hi", "hello", "job"],
   "pre"   : [],
   "post"  : [],
-  "msg"   : ["I am the Emissary of the Dragonlords to the City of Scorn.  I have come to present the Demands of my masters.  However, your King is less than cooperative.  I should tell my masters that the city is ripe for conquer."]
+  "msg"   : ["I am the Emissary of the Dragonlords to the City of Scorn.  I have come to present the Demands of my masters.  However, your King is less than cooperative.  I should tell my masters that the city is ripe for conquer."],
   "replies" : [["demands", "What are the demands of the Dragon Lords?"], ["dragonlords", "Who are the Dragonlords?"]]
   },{ 
   "match" : ["name"],
