@@ -31,8 +31,8 @@ if stage.find("-") == -1:
         startstep = int(stage)
         endstep = -1
 else:
-    startstep = int(condition.split("-")[0])
-    endstep= int(condition.split("-")[1])
+    startstep = int(stage.split("-")[0])
+    endstep= int(stage.split("-")[1])
 
 currentstep = character.QuestGetState(questname)
 if currentstep < startstep:
