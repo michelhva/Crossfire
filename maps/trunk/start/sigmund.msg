@@ -39,7 +39,7 @@
   "pre" : [["token", "proposal","pathExplain"]],
   "post" : [],
   "msg" : ["What is your character class? Are you a caster? Are you more of a priest? A bowyer? A fighter!",
-           "I sense you are a fighter or a priest! What is your class?"
+           "I sense you are a fighter or a priest! What is your class?",
            "That's not helping! Caster, priest, fighter, using range weapons? What is your profession?",
            "There is not much choice you can make at the start of the game.  Either you embraced a caster or priest path, or you embraced ranged weapons, or you engaged in the use of melee weapons",
            "Did I tell you already I once killed a kobold?"]
@@ -145,8 +145,7 @@
   "match": ["apply","use","item"],
   "pre" : [["token", "dialog","started"]],
   "post": [["settoken", "proposal","apply"]],
-  "msg" : ["You need to learn how to use items if you want to interact with the
-Crossfire world. Want to learn how to do that?"]
+  "msg" : ["You need to learn how to use items if you want to interact with the Crossfire world. Want to learn how to do that?"]
   }, {
   "match": ["heal","wound"],
   "pre" : [["token", "dialog","started"]],
@@ -162,7 +161,7 @@ Crossfire world. Want to learn how to do that?"]
   }, {
   
   
-  "comment" : "******  Various non threaded dialogs / basic proposals *****"
+  "comment" : "******  Various non threaded dialogs / basic proposals *****",
   "match" : ["spell","cast"],
   "pre" : [["token", "dialog","started"]],
   "post": [["settoken", "proposal",""]],
