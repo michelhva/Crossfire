@@ -1,6 +1,10 @@
 Changes for SVN top of tree:
 ==============================================================================
 
+Add faces for pickup, drop, apply, say and death events, so that they are 
+more easily identifiable in gridarta
+Brendan Lally 2010-05-15
+
 Move dev/wip/manhole to connect/Hole as it is tested and ready to use.  The
 test patch is removed as it is out of date, and the README is moved to the
 Hole directory as documentation.
