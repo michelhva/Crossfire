@@ -71,7 +71,9 @@ end_quest
 quest scorn/Animator
 title Outbreak of Undead
 description
-There is an outbreak of undead in the so-called 'Undead Church' in Scorn.  An Animator may be at work, setting the dead walking.\n\n Return with a token proving that the Animator has been destroyed.
+There is an outbreak of undead in the so-called 'Undead Church' in Scorn.
+An Animator may be at work, setting the dead walking.
+Return with a token proving that the Animator has been destroyed.
 end_description
 restart 0
 step 10
