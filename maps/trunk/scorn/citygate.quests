@@ -177,3 +177,37 @@ Milton was delighted with the quality of the coffee I provided him with, he not 
 end_description
 end_step
 end_quest
+
+quest scorn/OrcDress
+title Alfalfa's Attire
+description
+Alfalfa was arrested for streaking, and wants some clothes.
+end_description
+restart 0
+step 10
+description
+I have spoken with Alfalfa in scorn jail, she was arrested for streaking and now the guards won't give her any clothes. She asked me to fetch something for her to wear from her house. Fran at the Barking Mule keeps a spare key for her house.
+end_description
+end_step
+step 20
+description
+I spoke to Fran, and she gave me a key to Alfalfa's house.
+end_description
+end_step
+step 30
+description
+I have found one of Alfalfa's dresses, I should bring it back to her.
+end_description
+end_step
+step 40
+description
+Alfalfa was very grateful to me for returning her dress, she told me of a secret hiding place under the floor of her basement where she keeps her valuables, she asked me to help myself.
+end_description
+end_step
+step 50
+finishes_quest
+description
+I found Alfalfa's secret hiding place.
+end_description
+end_step
+end_quest
