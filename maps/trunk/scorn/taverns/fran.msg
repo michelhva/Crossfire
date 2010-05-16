@@ -47,6 +47,11 @@
   "post": [],
   "msg" : ["Ya I work part time at Oled's Cafe too."]
   },{
+  "match" : ["alfalfa"],
+  "pre" : [["quest", "scorn/OrcDress", "=10"]],
+  "post": [["giveitem", "Alfalfa's Front Door Key"],["quest", "scorn/OrcDress", "20"]]
+  "msg" : ["Alfalfa sent you to get the key to her house? Ok then, here you go."]
+  },{
   "match" : ["*"],
   "pre" : [],
   "post": [],
