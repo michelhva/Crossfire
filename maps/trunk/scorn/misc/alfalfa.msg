@@ -67,7 +67,7 @@
   "pre" : [["quest", "scorn/OrcDress", "40"]],
   "post" : [],
   "msg" : ["Thank you for getting clothes for me $you"]
-  }{
+  },{
   "match" : ["*"],
   "pre" : [["quest", "scorn/OrcDress", "10-30"]],
   "post" : [],
