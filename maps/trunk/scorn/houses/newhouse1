@@ -1,5 +1,5 @@
 arch map
-name Alfalfa's House
+name Eric's House
 difficulty 5
 region scorn
 width 20
@@ -8,14 +8,14 @@ enter_x 2
 enter_y 1
 msg
 Created:  1994-10-19
-Modified: 2010-03-30 Cavesomething
+Modified: 2010-05-14 Cavesomething
 endmsg
 end
 arch grass
 end
 arch exit
 slaying /world/world_105_116
-hp 6
+hp 7
 sp 5
 speed_left -0.500000
 end
@@ -133,8 +133,8 @@ end
 arch sign_e
 name Mailbox
 msg
-Alfalfa's Place
-32 River Road
+Eric's Place
+31 River Road
 endmsg
 x 1
 end
@@ -2668,6 +2668,10 @@ end
 arch chest
 x 18
 y 13
+arch sorcerer_book
+arch spell_marking_rune
+end
+end
 end
 arch dirtfloor
 x 18
@@ -2688,28 +2692,6 @@ end
 arch dirtfloor
 x 18
 y 16
-end
-arch card
-name Gate Pass
-slaying gate_pass
-msg
-The holder of this card is allowed free
-access into and out of the City of Scorn
-to the rest of the continent without
-further charges and penalties. The City
-of Scorn reserves the right to revoke
-said access at any time of its choosing
-without recompense or liability.
-endmsg
-x 18
-y 16
-value 800
-identified 1
-arch event_pickup
-name scorn/GatePass 0-10>30
-title Python
-slaying /python/quests/QuestAdvance.py
-end
 end
 arch earthwall
 x 18
