@@ -8,7 +8,7 @@ height 50
 enter_x 1
 enter_y 1
 msg
-Modified: 2010-05-13 Nicolas Weeger
+Modified: 2010-05-16 Cavesomething
 endmsg
 outdoor 1
 tile_path_1 world_105_115
@@ -2021,9 +2021,9 @@ elevation 11843
 end
 arch house_2
 name Alfalfa's House
-slaying /scorn/houses/newhouse1
-hp 2
-sp 1
+slaying /scorn/houses/alfalfa_ground
+hp 10
+sp 19
 x 6
 y 5
 end
@@ -2370,6 +2370,14 @@ arch grass
 x 7
 y 5
 elevation 11649
+end
+arch house_2
+name Eric's House
+slaying /scorn/houses/newhouse1
+hp 2
+sp 1
+x 7
+y 5
 end
 arch dungeon_magic
 x 7
