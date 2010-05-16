@@ -8,7 +8,7 @@ enter_x 2
 enter_y 1
 msg
 Created:  1994-10-19
-Modified: 2010-05-14 Cavesomething
+Modified: 2010-05-16 Cavesomething
 endmsg
 end
 arch grass
@@ -2669,6 +2669,7 @@ arch chest
 x 18
 y 13
 arch sorcerer_book
+randomitems none
 arch spell_marking_rune
 end
 end
