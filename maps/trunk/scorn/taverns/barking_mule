@@ -8,7 +8,7 @@ enter_x 22
 enter_y 14
 msg
 Created:  2003-04-27 Avion
-Modified: 2010-05-13 Nicolas Weeger
+Modified: 2010-05-14 Cavesomething
 endmsg
 end
 arch grass
@@ -384,6 +384,13 @@ arch event_say
 name scorn/taverns/fran.msg
 title Python
 slaying /python/dialog/npc_dialog.py
+end
+arch NPCGift
+arch white_key
+name Alfalfa's Front Door Key
+name_pl Alfalfa's Front Door Keys
+slaying alfalfakey
+end
 end
 end
 arch woodfloor
