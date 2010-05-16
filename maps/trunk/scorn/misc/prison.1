@@ -8,7 +8,7 @@ enter_x 9
 enter_y 23
 msg
 Created:  1998-12-26 Anthony Thyssen (anthony@cit.gu.edu.au)
-Modified: 2008-12-16 Rick Tanner
+Modified: 2010-05-15 Cavesomething
 endmsg
 end
 arch cobblestones2
@@ -1016,6 +1016,17 @@ arch swall_2_1_1
 x 6
 y 9
 end
+arch magic_mouth
+msg
+The guard shakes his halberd at you..
+Watch it will you! I can't see with you
+standing there.
+endmsg
+x 6
+y 10
+connected 69
+move_on 0
+end
 arch flagstone
 x 6
 y 10
@@ -1023,6 +1034,37 @@ end
 arch bwall_1_3
 x 6
 y 10
+end
+arch magic_mouth
+msg
+The prison guard shouts at you..
+Move it will you, you are blocking my
+view
+endmsg
+x 6
+y 10
+connected 67
+move_on 0
+end
+arch magic_mouth
+msg
+The prison guard gets angry and yells..
+Will you get out of the way
+endmsg
+x 6
+y 10
+connected 68
+move_on 0
+end
+arch magic_mouth
+msg
+The prison guard mutters morosely
+What do you want?
+endmsg
+x 6
+y 10
+connected 70
+move_on 0
 end
 arch flagstone
 x 6
@@ -1196,25 +1238,13 @@ y 10
 end
 arch guard
 name goggle eyed guard
-msg
-@match post|game|won
-This post has become the most sought
-after post amongst the guards. It
-has the best view in the prison!
-@match clothes
-Give her clothes, and spoil the view!
-Not likely.
-@match watch|view
-Yes can't you see the great looking
-lass across the corridor. Such long
-legs and so big too.
-@match *
-I won this post from the other guards
-in a game. Now go away and let me watch
-the great view.
-endmsg
 x 7
 y 10
+arch event_say
+name scorn/misc/goggleguard.msg
+title Python
+slaying /python/dialog/npc_dialog.py
+end
 end
 arch cobblestones
 x 7
@@ -1359,26 +1389,49 @@ arch cobblestones
 x 8
 y 9
 end
-arch magic_mouth
-msg
-The prison guard shouts at you..
-Move it will you, you are blocking my
-view
-endmsg
+arch check_floor
+hp 1
 x 8
 y 10
+arch event_trigger
+name scorn/OrcDress 0-30 67
+title Python
+slaying python/quests/QuestTriggerConnect.py
+end
+end
+arch check_floor
+hp 1
+x 8
+y 10
+arch event_trigger
+name scorn/OrcDress 40-50 70
+title Python
+slaying python/quests/QuestTriggerConnect.py
+end
 end
 arch cobblestones
 x 8
 y 10
 end
-arch magic_mouth
-msg
-The prison guard gets angry and yells..
-Will you get out of the way
-endmsg
+arch check_floor
+hp 1
 x 8
 y 11
+arch event_trigger
+name scorn/OrcDress 0-30 68
+title Python
+slaying python/quests/QuestTriggerConnect.py
+end
+end
+arch check_floor
+hp 1
+x 8
+y 11
+arch event_trigger
+name scorn/OrcDress 40-50 70
+title Python
+slaying python/quests/QuestTriggerConnect.py
+end
 end
 arch cobblestones
 x 8
@@ -1507,14 +1560,15 @@ arch cobblestones
 x 9
 y 10
 end
-arch magic_mouth
-msg
-The guard shakes his halberd at you..
-Watch it will you! I can't see with you
-standing there.
-endmsg
+arch check_floor
+hp 1
 x 9
 y 11
+arch event_trigger
+name scorn/OrcDress 0-30 69
+title Python
+slaying python/quests/QuestTriggerConnect.py
+end
 end
 arch cobblestones
 x 9
@@ -2291,36 +2345,22 @@ end
 arch mabu
 name naked woman
 msg
-@match yes|clothes|dress
-Oh thank you. Please give them to me.
-@match no
-Oh you are just as mean as the prison
-guards.
-@match guard|guards
-They won't give me any clothes either.
-And I hear the post across the
-corridor has become a most prized job
-by the guards!
-@match streaking|arrested|naked
-I had to run from my home in the middle
-of the night, as band of orc's crashed
-though the bedroom door!
-@match home|where|address|name
-I'm Alfalfa, and I live, or used to
-live at, Number 32, River Road.
-Oh please get rid of those horrible
-Orc's and I'll give you a Merchants
-Gate Pass.
-@match gate|pass|merchant
-Just go to the farthest corner from the
-door and dig into the wall and you will
-find it.
-@match *
-I was arrested for streaking.
-Do you have any spare clothes?
+
 endmsg
 x 14
 y 11
+arch event_say
+name scorn/misc/alfalfa.msg
+title Python
+slaying /python/dialog/npc_dialog.py
+end
+arch pouch
+name alfalfaprize
+arch marker
+slaying alfalfastashaccess
+food 0
+end
+end
 end
 arch flagstone
 x 14
