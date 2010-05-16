@@ -4,7 +4,7 @@ region portjoseph
 width 50
 height 50
 msg
-Modified: 2008-10-23 Rick Tanner
+Modified: 2009-04-29 Kevin Bulgrien
 endmsg
 outdoor 1
 tile_path_1 world_101_113
@@ -3740,18 +3740,15 @@ arch pirate
 name Percival
 msg
 @match hello|hi|howdy
-Goodday to-ya.  Want a ride out to
-Goblin island?  (Simply press `A')
+Goodday to-ya.  Want a ride out to Goblin island?  (Simply press `A')
 @match portia
-Portia is a good woman.  You don't
-bother her now.
+Portia is a good woman.  You don't bother her now.
 @match bill|moogly
 Eh, I sailed with Moogly Bill.
-@match grave
-Yes, I buried Moogly Bill, but
-he built his own tomb.  Never
-seen the treasure maps but ye
-might have better luck. . .
+@match buried|grave
+Yes, I buried Moogly Bill, but he built his own tomb.
+@match map
+Never seen the treasure maps but ye might have better luck. . .
 endmsg
 x 15
 y 46
@@ -4027,13 +4024,9 @@ end
 arch magic_ear
 msg
 @match violet
-The percival says `Ah so Portia sent ye. . .'
-The king's navy is attacking the fort!
-The grave is under the shadow of the
-wall to the north.  This is as far as
-I dare take ye.  Return with the name
-of the island where he buried his
-treasure . . .
+Percival says `Ah so Portia sent ye. . .'
+The king's navy is attacking the fort!  This is as far as I dare take ye.
+The grave is under the shadow of the wall to the north.  Return with the name of the island where he buried his treasure . . .
 endmsg
 x 16
 y 46
