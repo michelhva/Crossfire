@@ -10,7 +10,7 @@
   "match" : ["clothes"],
   "pre" : [],
   "post" : [],
-  "msg" : ["Give her clothes, and spoil the view! Not likely."]
+  "msg" : ["Give her clothes, and spoil the view! Not likely."],
   "replies" : [["view", "What view is that?"]]
   },{
   "match" : ["post"],
