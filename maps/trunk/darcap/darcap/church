@@ -8,10 +8,12 @@ enter_x 17
 enter_y 1
 msg
 Created:  1999-01-15 Cater/Wade (john_cater@yahoo.com)
-Modified: 2010-01-09 Nicolas Weeger
+Modified: 2010-05-16 Nicolas Weeger
 endmsg
 end
 arch dungeon_floor
+end
+arch event_selling
 end
 arch dungeon_floor
 y 1
@@ -3124,6 +3126,7 @@ arch chalice
 x 16
 y 20
 arch event_selling
+name event_selling
 title cf_darcap
 slaying darcap_church_chalice
 end
@@ -3145,6 +3148,7 @@ arch chalice
 x 16
 y 22
 arch event_selling
+name event_selling
 title cf_darcap
 slaying darcap_church_chalice
 end
@@ -3633,6 +3637,7 @@ arch chalice
 x 18
 y 20
 arch event_selling
+name event_selling
 title cf_darcap
 slaying darcap_church_chalice
 end
@@ -3654,6 +3659,9 @@ arch chalice
 x 18
 y 22
 arch event_selling
+name event_selling
+title cf_darcap
+slaying darcap_church_chalice
 end
 end
 arch woodfloor
