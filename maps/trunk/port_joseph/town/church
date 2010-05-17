@@ -8,7 +8,7 @@ enter_x 3
 enter_y 14
 msg
 Created:  1994-05-20 larry langley (langley@fermat.dartmouth.edu)
-Modified: 2008-09-21 Rick Tanner
+Modified: 2009-04-29 Kevin Bulgrien
 endmsg
 end
 arch cobblestones
@@ -436,6 +436,25 @@ end
 arch cobblestones
 x 4
 y 1
+end
+arch bookshelf2
+x 4
+y 1
+arch quarto
+name Liturgical Manual
+name_pl Liturgical Manuals
+title of Gabriel
+msg
+The book is largely unused, judging by the number of pristine pages, but one near the back stands out as it appears smudged and stained through frequent use.
+...
+With th.s .o.., n..r.sh th. b.d. fo. ser..ce,
+Wit. t.i. .o..., v..d ..y m.n. .f a.. d...y. c.re.
+...
+endmsg
+level 3
+weight 500
+no_pick 1
+end
 end
 arch cobblestones
 x 4
@@ -1024,7 +1043,7 @@ y 2
 end
 arch altar
 msg
-You hear a distant grating soun
+You hear a distant grating sound.
 endmsg
 food 1
 x 10
@@ -1190,7 +1209,7 @@ end
 arch altar
 slaying booze
 msg
-You hear a distant grating soun
+You hear a distant grating sound.
 endmsg
 food 1
 x 12
