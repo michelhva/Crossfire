@@ -25,7 +25,7 @@
   "match" : ["yes", "service", "Scorn"],
   "pre" : [],
   "post" : [["quest", "scorn/GoblinKing", "10"]],
-  "msg" : ["His Majesty, the King of Scorn, has announced that whomsoever returns with the Head of the Goblin Chief shall be awarded a Knighthood.\n \n These goblins, who are said to live in the to the north east of scorn mountains, have been making a nuisance of themselves to the North East of Scorn.  Go and make them regret their disorderly conduct."]
+  "msg" : ["His Majesty, the King of Scorn, has announced that whomsoever returns with the Head of the Goblin Chief shall be awarded a Knighthood.\n\nThese goblins, who are said to live in the to the north east of Scorn mountains, have been making a nuisance of themselves to the North East of Scorn.  Go and make them regret their disorderly conduct."]
   },{
   "match" : ["*"],
   "pre" : [],
