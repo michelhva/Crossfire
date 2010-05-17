@@ -178,12 +178,7 @@ class DialogRule:
 # 'include' additional rules.
 class IncludeRule(DialogRule):
     def __init__(self, presemaphores):
-        self.__presems = presemaphores
-        
-    # I could get round doing this by creating a third class to inherit both this and
-    # DialogRule from, but this is the easier approach
-    def getPreconditions(self):
-        return self.__presems
+        DialogRule.__init__(self, None, presemaphores, None, None, None )
 
 class Dialog:
     # A character is the source that supplies keywords that drive the dialog.
