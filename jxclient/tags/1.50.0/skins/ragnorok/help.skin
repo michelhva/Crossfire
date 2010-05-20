@@ -1,0 +1,43 @@
+
+dialog border WIDTH/2-482 HEIGHT/2-320 956+8 602+8 false Help
+dialog_hide START META LOGIN
+button button_close 4+956-18 6 16 16 close_up close_down false command_help_close
+
+label_multi help_text 8 27 956-8 576 font_label DARK_GRAY <<EOF
+Common commands
+===============
+Use direction keys to walk; CTRL + direction to run. Bumping into monsters attacks them. Bumping into other players pushes them away.
+Generally prefer running as it is faster and attacking monsters is more effective.
+/cast lists known spells; /cast <name of spell> readies a spell; SHIFT + direction casts it.
+/chat sends a message to all players, /say sends to players on same map, /tell sends to one player, /shout=/chat but reserved for emergencies.
+
+Key bindings
+===========
+Define or replace a key binding:      /bind mapinfo
+Define a per-character key binding: /bind -c cast burning hands
+Undefine a key binding:                    /unbind
+Pre-defined keybindings include: a=apply, d=disarm traps, e=examine, i=mapinfo, p=pray, s=search traps, t=toggle pickup, w=who, Fx=toggle dialogs
+                                                                                                                                                                                                         "=say, ENTER=/chat
+Mouse bindings
+=============
+map window:
+   left button: examine spot; briefly displays the items or player on clicked spot
+ground and inventory view:
+   left button: examine item; displays a detailed object description
+   middle button: apply item; action depends on item, typically eat/drink/wear/wield/etc.
+   right button: drop item; the item is dropped to the ground or picked up from the ground; in shops: drop=sell immediately; pick up=buy at shop mat
+   SHIFT + left button: lock/unlock item in inventory; protects items from accidental drops
+   SHIFT + middle button: mark item in inventory; some commands operate on or prefer marked items
+
+Miscellaneous
+===========
+Create screenshot: /screenshot
+Disconnect from server or quit the client: ESC
+Show help: /help
+
+More information
+=============
+http://crossfire.real-time.com/             Crossfire - The Multiplayer Adventure Game
+http://crossfire.real-time.com/bugs     Report bugs or suggest features
+http://invidious.meflin.net/jxclient.jar   Download of daily build; includes latest features but may be instable
+EOF

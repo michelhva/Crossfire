@@ -1,0 +1,1180 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 FINAL//EN">
+<html>
+<head>
+<title>How to skin JXClient &mdash; a butcher's guide</title>
+</head>
+<body>
+<h1>How to skin JXClient &mdash; a butcher's guide</h1>
+
+<h2>Overview</h2>
+
+<p>This file specifies the file format of JXClient's skin files. Skin files define the graphical user interface of JXClient.</p>
+
+<p>The skin to use can be specified with the <code>--skin</code> command-line option:</p>
+<pre>
+    java -jar jxclient.jar --skin ragnorok
+</pre>
+<p>selects the &quot;ragnorok&quot; skin. Currently only two skins are built into <code>jxclient.jar</code>: &quot;ragnorok&quot; and &quot;default;gt;. &quot;default&quot; is used if no <code>--skin</code> option is given; it maps to &quot;ragnorok&quot;.</p>
+
+<p>The option <code>--skin</code> accepts either a built-in skin name or the name of a directory containing the skin definition. The latter alternative is useful when creating new skins: no need to recompile the client, just restart it. See <a href="#create_skins">the section about creating new skins</a>.</p>
+
+<h3>Structure</h3>
+
+<p>Skin definition is split into multiple files which are stored in a common directory:</p>
+<ul>
+<li>A global file defining common things like global key bindings or common layout information such as fonts. This is a simple text file; it's contents are explained below.</li>
+<li>Multiple files that define the layout of different screens (like server selection or playing) as well as dialogs (like skills, options, help, quit). These are simple text files using the same format as the global file.</li>
+<li>Resource files:
+<ul>
+<li>fonts: all displayed text is rendered using these fonts. No external fonts are referenced. Fonts use the <code>.ttf</code> file format and are stored in the <code>fonts</code> subdirectory.</li>
+<li>pictures: all displayed images (that is not retrieved from a Crossfire server) use these pictures. Pictures are encoded using the <code>.png</code> file format and are stored in the <code>pictures</code> subdirectory. GUI elements using <code>&lt;picture&gt;</code> access the file <code>pictures/&lt;picture&gt;.png</code>.</li>
+</ul></li>
+</ul>
+
+<p>The global file is <code>global.skin</code>; it is always loaded. Other skin files are <code>*.skin</code>; the following files are always loaded and therefore must be defined by all skins:</p>
+<ul>
+<li><code>start.skin</code>: the client's start screen. This screen currently is not fully implemented and therefore disabled; instead <code>meta.skin</code> is shown. It's purpose is to select between &quot;create a new character&quot; and &quot;continue playing&quot;.</li>
+<li><code>meta.skin</code>: the server selection screen. It is shown while not connected to a Crossfire server. This screen allows to select a Crossfire server to play on, or to quit the client.</li>
+<li><code>main.skin</code>: this screen is shown while connected to a Crossfire server. It displays the map view and optionally other information.</li>
+<li><code>connect.skin</code>: a status dialog shown while connecting to a Crossfire server or after an unexpected disconnect from the Server.</li>
+<li><code>query.skin</code>: a dialog for processing Crossfire &quot;query&quot; messages. Examples include: login, change party password, the "play again?" prompt after entering a bed of reality.</li>
+<li><code>book.skin</code>: a dialog for displaying books read by the character.</li>
+<li><code>keybind.skin</code>: the key binding and unbinding dialogs.</li>
+<li><code>quit.skin</code>: a dialog shown when the client is about to exit. It is opened if the user presses ESC while not connected to a Crossfire server or tries to close the main window.</li>
+<li><code>disconnect.skin</code>: a dialog shown when the client is about to disconnect from a Crossfire server. It is opened if the user presses ESC while connected to a Crossfire server.</li>
+</ul>
+<p>If these skin files reference other dialogs using the <a href="#command_dialog_open"><code>DIALOG_OPEN</code></a>, <a href="#command_dialog_toggle"><code>DIALOG_TOGGLE</code></a>, or <a href="#command_dialog_close"><code>DIALOG_CLOSE</code></a> commands, more <code>.skin</code> files may be needed.</p>
+
+<p>Empty lines and lines starting with '#' are ignored within <code>.skin</code> files.</p>
+
+<h3>Concepts</h3>
+
+<h4>Dialogs</h4>
+
+<p>A dialog consists of a set of GUI elements. Dialogs are used for:</p>
+<ul>
+<li>screens (start, meta, main): the dialog occupies the whole display area. Exactly one such dialog is active at any time.</li>
+<li>&quot;real&quot; dialogs: popup dialogs shown on top of the &quot;screen&quot;. Any number of real dialogs may be active concurrently.</li>
+<li>modal dialogs: similar to real dialogs but all user input not processed by the modal dialog is discarded. No other non-modal dialog or the screen can be accessed until the modal dialog has been closed. At most one modal dialog can be active at any time.</li>
+</ul>
+
+<p>Some dialogs are accessed by client code by name. These elements must have fixed names:</p>
+<ul>
+<li><code>messages.skin</code> is opened when creating a new character in order to display the messages sent by the Crossfire server.</li>
+<li><code>quit.skin</code> is opened if the user presses ESC in unconnected state.</li>
+<li><code>disconnect.skin</code> is opened if the user presses ESC in connected state.</li>
+<li><code>keybind.skin</code> is opened if the user executes the <code>/bind</code> command.</li>
+<li><code>book.skin</code> is opened when the character reads a <code>BOOK</code> object.</li>
+<li><code>query.skin</code> is opened whenever a &quot;query&quot; message is received from the Crossfire server.</li>
+<li><code>newchar.skin</code> is opened (and <code>messages.skin</code> and <code>status.skin</code> are closed) when a new character is created. If this dialog does not exist, <code>messages.skin</code> and <code>status.skin</code> are opened instead.</li>
+</ul>
+
+<h4>GUI Elements</h4>
+
+<p>A GUI element can be drawn on the screen. Some GUI elements allow user input (for example, <a href="#textbutton">buttons</a>); others ignore user input (for example, <a href="#picture">pictures</a>).</p>
+
+<p>A GUI element may be visible or invisible. Only visible GUI elements are painted and may receive user input. The visibility can be changed executing the <a href="#command_toggle">TOGGLE command</a>.</p>
+
+<p>Each GUI element has a name. The name must be unique within a dialog. The names are invisible to the user; they are used for referencing GUI elements within <code>.skin</code> files. For example: the skin command</p>
+<pre>
+    set_invisible magicmap
+</pre>
+<p>hides the GUI element &quot;magicmap&quot;.</p>
+
+<p>Some GUI elements are accessed by client code. These elements must have fixed names or fixed positions:</p>
+<ul>
+<li>Input field for Crossfire commands: this GUI element must be named &quot;command&quot;. Search order is: screen, visible dialogs, invisible dialogs. If no element is found, <code>/bind -e</code> will do nothing.</li>
+<li>In <code>book.skin</code>, the first label with name &quot;*_title&quot; displays a book's title. The book's contents are displayed in the first <a href="#label"><code>label_*</code></a> or <a href="#log_label"><code>log_label</code></a> element not having a name like &quot;*_title&quot;. The title element is optional; if the message label does not exist, the book's contents are not shown.</li>
+<li>In <code>query.skin</code>, the first <a href="#text"><code>text</code>, <code>command_text</code>, or <code>query_text</code></a> is updated with the last used character name if the prompt is &quot;What is your name?&quot;.</li>
+<li>In <code>query.skin</code>, the first <a href="#text"><code>text</code>, <code>command_text</code>, or <code>query_text</code></a> updated for password/non-password input.</li>
+<li>In <code>meta.skin</code>, the first <a href="#meta_list"><code>meta_list</code></a> element is updated with the last used server name.</li>
+<li>In <code>connect.skin</code>, the first <a href="#label"><code>label_*</code></a> element is updated with the current connection state.</li>
+<li>The <code>/clear</code> command clears the contents of the first <a href="#log_message"><code>log_message</code></a> element. The search includes all open dialogs and the current screen.</li>
+</ul>
+
+<h4><a name="command_lists">Command Lists</a></h4>
+
+<p>A command list is a list of one or more commands. Commands are skin-internal commands, not commands sent to a Crossfire server. Section <a href="#command_types">command types</a> defines possible commands.</p>
+
+<h2>Commands</h2>
+
+<p>Commands start with one or two keywords and optionally have arguments. Keywords and arguments are separated by spaces or TABs. Arguments may be quoted with <code>&quot;</code> or <code>'</code> characters to allow embedded spaces or TABs.</p>
+
+<p>Some commands do not require quoting but combine multiple arguments into a single argument. These arguments are marked with a trailing <code>&quot;...&quot;</code>, for example <code>&lt;text...&gt;</code>. These arguments support mult-line strings using following syntax:</p>
+<pre>
+    label_multi [...] &lt;&lt;EOF
+    first line
+    second line
+    etc.
+    EOF
+</pre>
+
+<h3>add: add GUI element to dialog</h3>
+
+<p>syntax:</p>
+<pre>
+    add &lt;name&gt;
+</pre>
+
+<p>precondition: dialog</p>
+
+<p>Adds the GUI element &lt;name&gt; to the dialog.</p>
+
+<p>Using this command is optional: all GUI elements defined but not explicitly added are added implicitly after the last line of the dialog definition file just as if a <code>add *</code> command was present. Explicitly adding GUI elements allows to control the drawing order of GUI elements regardless of declaration order.</p>
+
+<ul>
+<li>&lt;name&gt; is the name of a defined GUI element to add. Elements cannot be added more than once. The special name <code>*</code> adds all elements no explicitly added elsewhere. This can be used to force elements to be added last:
+<pre>
+    add first
+    add *
+    add last
+</pre>
+adds the GUI element &quot;first&quot;, then all defined GUI elements except &quot;first&quot; and &quot;last&quot;, then adds &quot;last&quot;. This ensures that &quot;first&quot; is drawn below all other GUI elements and that &quot;last&quot; is drawn on top of all other GUI elements.</li>
+</ul>
+
+<h3>button: execute command on activation</h3>
+
+<p>syntax:</p>
+<pre>
+    button &lt;name&gt; &lt;x&gt; &lt;y&gt; &lt;w&gt; &lt;h&gt; &lt;up&gt; &lt;down&gt; &lt;auto-repeat&gt; &lt;command-list&gt;
+    button &lt;name&gt; &lt;x&gt; &lt;y&gt; &lt;w&gt; &lt;h&gt; &lt;up&gt; &lt;down&gt; &lt;auto-repeat&gt; &lt;command-list&gt; &lt;font&gt; &lt;color&gt; &lt;label-x&gt; &lt;label-y&gt; &lt;text...&gt;
+</pre>
+
+<p>precondition: dialog</p>
+
+<p>Defines a button element which executes the command-list &lt;command-list&gt; when activated. Activation is by mouse-click, the <a href="#command_gui_execute_element">GUI_EXECUTE_ELEMENT</a> command, or by pressing <code>ENTER</code> or <code>SPACE</code> in dialogs defining a <a href="#set_default">default element</a>.</p>
+
+<ul>
+<li>&lt;name&gt; is the name of the button.</li>
+<li>&lt;x&gt; &lt;y&gt; &lt;w&gt; &lt;h&gt; is the extent of the button. The location is relative to the dialog.</li>
+<li>&lt;up&gt; &lt;down&gt; are the pictures shown in the &quot;up&quot; (normal, inactive) and &quot;down&quot; (armed) state.</li>
+<li>&lt;auto-repeat&gt; specifies whether the button auto-repeats while the mouse button is hold down (<code>true</code>) or whether it activates only once for every button press (<code>false</code>).</li>
+<li>&lt;command-list&gt; is the command-list to execute.</li>
+</ul>
+
+<p>The remaining arguments specify the text displayed in the command button. If omitted, only the &lt;up&gt; or &lt;down&gt; pictures are shown.</p>
+<ul>
+<li>&lt;font&gt; is the font for the text.</li>
+<li>&lt;color&gt; is the text color.</li>
+<li>&lt;label-x&gt; &lt;label-y&gt; is the top left coordinate of the text relative to &lt;x&gt; &lt;y&gt;.</li>
+<li>&lt;text...&gt; is the text to show.</li>
+</ul>
+
+<h3><a name="checkbox">checkbox: toggle option</a></h3>
+
+<p>syntax:</p>
+<pre>
+    checkbox &lt;name&gt; &lt;x&gt; &lt;y&gt; &lt;w&gt; &lt;h&gt; &lt;option&gt; &lt;text...&gt;
+</pre>
+
+<p>precondition: dialog, <a href="#def_checkbox"><code>def checkbox</code></a></p>
+
+<p>Defines a checkbox element which displays the state of a configuration option which can be selected or unselected.</p>
+
+<p>Options can be defined with <a href="#def_checkbox_option"><code>def checkbox_option</code></a>. The <a href="#options">section about predefined options</a> defines the options built into JXClient.</p>
+
+<ul>
+<li>&lt;name&gt; is the name of the checkbox.</li>
+<li>&lt;x&gt; &lt;y&gt; &lt;w&gt; &lt;h&gt; is the extent of the checkbox. The location is relative to the dialog.</li>
+<li>&lt;option&gt; is the name of the option to affect.</li>
+<li>&lt;text...&gt; is the text to display.</li>
+</ul>
+
+<h3><a name="commandlist">commandlist: define executable commands</a></h3>
+
+<p>syntax:</p>
+<pre>
+    commandlist &lt;name&gt; &lt;type&gt;
+    commandlist &lt;name&gt; &lt;type&gt; &lt;element&gt; &lt;command&gt; &lt;args&gt;
+    commandlist_add &lt;name&gt; &lt;element&gt; &lt;command&gt; &lt;args&gt;
+</pre>
+
+<p>Defines a named list of commands. Command lists are referenced by other GUI elements. The <code>/exec &lt;name&gt;</code> command executes a named command list.</p>
+
+<ul>
+<li>&lt;name&gt; is the name of the command list.</li>
+<li>&lt;type&gt; specifies how multiple sub-commands are executed: <code>AND</code> executes the commands only if all sub-commands can execute; <code>OR</code> executes if any sub-command can execute. For command lists containing only a single sub-command the type does not matter. <code>AND</code> type commands list are useful for scrolling lists of elements: the list can scroll only if all elements can scroll. <code>OR</code> type command lists are useful when resetting unrelated elements: each element should be reset individually regardless whether any other element cannot be reset for some reason.</li>
+</ul>
+
+<p>If the following arguments are present in <code>commandlist</code>, a sub-command is created and added to the list. It is equivalent to a separate <code>commandlist_add</code> statement.</p>
+
+<ul>
+<li>&lt;element&gt; is the GUI element to operate on. May be <code>null</code> if the sub-command does not operate on GUI elements.</li>
+<li>&lt;command&gt; is the command to execute. See <a href="#command_types">command types</a> for a list of possible command types.</li>
+<li>&lt;args&gt; are the arguments for &lt;command&gt;.</li>
+</ul>
+
+<h3><a name="text">text, command_text, query_text: text input fields</a></h3>
+
+<p>syntax:</p>
+<pre>
+    text &lt;name&gt; &lt;x&gt; &lt;y&gt; &lt;w&gt; &lt;h&gt; &lt;active-pic&gt; &lt;inactive-pic&gt; &lt;font&gt; &lt;active-color&gt; &lt;inactive-color&gt; &lt;margin&gt; &lt;command-list&gt; &lt;enable-history&gt;
+    command_text &lt;name&gt; &lt;x&gt; &lt;y&gt; &lt;w&gt; &lt;h&gt; &lt;active-pic&gt; &lt;inactive-pic&gt; &lt;font&gt; &lt;active-color&gt; &lt;inactive-color&gt; &lt;margin&gt; &lt;enable-history&gt;
+    query_text &lt;name&gt; &lt;x&gt; &lt;y&gt; &lt;w&gt; &lt;h&gt; &lt;active-pic&gt; &lt;inactive-pic&gt; &lt;font&gt; &lt;active-color&gt; &lt;inactive-color&gt; &lt;margin&gt; &lt;enable-history&gt;
+</pre>
+
+<p>precondition: dialog</p>
+
+<p>Defines a text input field. <code>text</code> executes a fixed command-list, <code>command_text</code> sends the entered text as an &quot;ncom&quot; command to the Crossfire server, <code>query_text</code> sends the entered text as a &quot;reply&quot; response to the Crossfire server.</p>
+
+<ul>
+<li>&lt;name&gt; is the name of the text field.</li>
+<li>&lt;x&gt; &lt;y&gt; &lt;w&gt; &lt;h&gt; is the extent of the text field. The location is relative to the dialog.</li>
+<li>&lt;active-pic&gt; &lt;inactive-pic&gt; define the background images of the input field. &lt;active-pic&gt; is used while the input field has the focus, &lt;inactive-pic&gt; otherwise. The picture size should match &lt;w&gt;x&lt;h&gt;.</li>
+<li>&lt;font&gt; is the font used to render the text.</li>
+<li>&lt;active-color&gt; &lt;inactive-color&gt; define the text color. &lt;active-color&gt; is used while the input field has the focus, &lt;inactive-color&gt; otherwise.</li>
+<li>&lt;margin&gt; specifies the number of pixels to indent the text from the left border.</li>
+<li>&lt;command-list&gt; is the command list to execute. The entered text is ignored.</li>
+<li>&lt;enable-history&gt; specifies whether access to the command history should be provided: <code>true</code> enabled <code>Page Up</code> and <code>Page Down</code> keys for history recall. For now each input field maintains a separate history which is not retained across client restarts.</li>
+</ul>
+
+<h3>def: define template information</h3>
+
+<p>syntax:</p>
+<pre>
+    def &lt;type&gt; &lt;args&gt;
+</pre>
+
+<p>The <code>def</code> command defines template information for use in other commands.</p>
+
+<h4><a name="def_checkbox">def checkbox: define layout of checkboxes</a></h4>
+
+<p>syntax:</p>
+<pre>
+    def checkbox &lt;checked-pic&gt; &lt;unchecked-pic&gt; &lt;font&gt; &lt;color&gt;
+</pre>
+
+<p>Defines layout information for rendering checkboxes.</p>
+
+<ul>
+<li>&lt;checked-pic&gt; &lt;unchecked-pic&gt; are the pictures for checked/unchecked checkboxes. The image is rendered left of the text.</li>
+<li>&lt;font&gt; &lt;color&gt; define the color and font for rendering the text following the pictures.</li>
+</ul>
+
+<h4><a name="def_checkbox_option">def checkbox_option: define options</a></h4>
+
+<p>syntax:</p>
+<pre>
+    def checkbox_option &lt;option-name&gt; &lt;command-on&gt; &lt;command-off&gt; &lt;description...&gt;
+</pre>
+
+<p>Defines a new option. The &lt;option-name&gt; must be globally unique and must be different from <a href="#options">predefined options</a>.</p>
+
+<ul>
+<li>&lt;option-name&gt; is the name of the option.</li>
+<li>&lt;command-on&gt; &lt;command-off&gt; are the command-lists that are executed when the option has been checked or unchecked.</li>
+<li>&lt;description...&gt; describes the option. It is displayed in tooltips.</li>
+</ul>
+
+<h4>def dialog: define layout of dialogs</h4>
+
+<p>syntax:</p>
+<pre>
+    def dialog &lt;frame&gt; &lt;font&gt; &lt;color&gt; &lt;background-color&gt; &lt;alpha&gt;
+</pre>
+
+<p>Defines layout information for rendering dialogs.</p>
+
+<ul>
+<li>&lt;frame&gt; is the base name for pictures for rendering the dialog's border. The border consists of 8 pictures: &lt;frame&gt;_nw, &lt;frame&gt;_n, &lt;frame&gt;_ne, &lt;frame&gt;_w, &lt;frame&gt;_e, &lt;frame&gt;_sw, &lt;frame&gt;_s, &lt;frame&gt;_se. The dialog's background is &lt;frame&gt;_c. The n/s/w/e/c pictures are clipped to the dialog's current width/height.</li>
+<li>&lt;font&gt; &lt;color&gt; define the font and color for rendering the dialog's title.</li>
+<li>&lt;background-color&gt; is the background color of the dialog's title.</li>
+<li>&lt;alpha&gt; is the transparency of the dialog between 0 and 1. 0=fully transparent; 1=fully opaque.</li>
+</ul>
+
+<h4><a name="def_name">def item: define layout for items</a></h4>
+
+<p>syntax:</p>
+<pre>
+    def item &lt;cursed&gt; &lt;damned&gt; &lt;magic&gt; &lt;blessed&gt; &lt;applied&gt; &lt;selector&gt; &lt;locked&gt; &lt;applied&gt; &lt;font&gt; &lt;color&gt;
+</pre>
+
+<p>Defines layout for rendering items. Typically used in ground or inventory views.</p>
+
+<ul>
+<li>&lt;cursed&gt; &lt;damned&gt; &lt;magic&gt; &lt;blessed&gt; &lt;applied&gt; &lt;selector&gt; &lt;locked&gt; &lt;applied&gt; define how to render items having these properties. Items having more than one property concurrently overlay the effects. Each definition is either a color specification or a picture name. Colors are used as background colors and are rendered before the item's picture is drawn. Pictures are rendered after the item's picture.</li>
+<li>&lt;font&gt; &lt;color&gt; define the font and color for showing the number of items in a pile (&quot;nrof&quot;) or to display the item's name and properties.</li>
+</ul>
+
+<h4><a name="def_textbutton">def textbutton: define layout for text buttons</a></h4>
+
+<p>syntax:</p>
+<pre>
+    def textbutton &lt;up-pic&gt; &lt;down-pic&gt; &lt;font&gt; &lt;color&gt;
+</pre>
+
+<p>Defines layout for rendering <a href="#textbutton">text buttons</a>.</p>
+
+<ul>
+<li>&lt;up-pic&gt; &lt;down-pic&gt; are the background pictures shown in inactive or active state.</li>
+<li>&lt;font&gt; &lt;color&gt; define the font and color for the text label.</li>
+</ul>
+
+<h3>dialog: group GUI elements</h3>
+
+<p>syntax:</p>
+<pre>
+    dialog &lt;name&gt; &lt;x&gt; &lt;y&gt; &lt;w&gt; &lt;h&gt; &lt;save&gt; &lt;title...&gt;
+</pre>
+
+<p>precondition: dialog, <a href="#def_dialog"><code>def dialog</code></a></p>
+
+<p>Defines a group of GUI elements forming a dialog or screen.</p>
+
+<ul>
+<li>&lt;name&gt; is the base name for constructing names for GUI elements comprising the dialog: &lt;name&gt;_nw, &lt;name&gt;_n, &lt;name&gt;_ne, &lt;name&gt;_w, &lt;name&gt;_e, &lt;name&gt;_sw, &lt;name&gt;_s, &lt;name&gt;_se are the dialog's borders; &lt;name&gt;_c is the dialog's background. If the dialog has a title, &lt;name&gt;_t is the dialog's title which allows moving the dialog and &lt;name&gt;_title is the text label displaying the title.</li>
+<li>&lt;x&gt; &lt;y&gt; &lt;w&gt; &lt;h&gt; is the extent of the text field. &lt;x&gt; and &lt;y&gt; specify the initial location; these may change later if the dialog is movable.</li>
+<li>&lt;save&gt; specifies whether the dialog's current location is retained across restarts. <code>true</code>=retain locations, <code>false</code>=do not retain locations.</li>
+<li>&lt;title...&gt; the dialog's title. If omitted, no title bar is created and the dialog is not movable by the user. If &quot;_&quot; (a single underscore character) is used, no element &quot;&lt;name&gt;_title&quot; is created.</li>
+</ul>
+
+<h3>dialog_hide: hide dialogs depending on state</h3>
+
+<p>syntax:</p>
+<pre>
+    dialog_hide &lt;state...&gt;
+</pre>
+
+<p>precondition: dialog</p>
+
+<p>Hides this dialog in the given states.</p>
+
+<ul>
+<li>&lt;state...&gt; specifies the states that never show this dialog. Possible states are:
+<ul>
+<li><code>START</code>: the starting screen; not yet implemented.</li>
+<li><code>META</code>: the server selection screen.</li>
+<li><code>LOGIN</code>: active while a login is in progress. Starts when a Crossfire server is to be connected and ends after a character has been logged in or <code>NEWCHAR</code> becomes active.</li>
+<li><code>NEWCHAR</code>: active while a new character is created. Ends after the character has been created.</li>
+<li><code>PLAYING</code>: active while connected to a Crossfire server and a character is logged in. Stays active during the &quot;Do you want to play again?&quot; dialog after applying a bed to reality.</li>
+</ul></li>
+</ul>
+
+<h3>dupgauge, duptextgauge, gauge, textgauge: graphically display a stat value</h3>
+
+<p>syntax:</p>
+<pre>
+    gauge &lt;name&gt; &lt;x&gt; &lt;y&gt; &lt;w&gt; &lt;h&gt; &lt;pos-pic&gt; &lt;neg-pic&gt; &lt;empty-pic&gt; &lt;type&gt; &lt;orientation&gt; &lt;tooltip...&gt;
+    textgauge &lt;name&gt; &lt;x&gt; &lt;y&gt; &lt;w&gt; &lt;h&gt; &lt;pos-pic&gt; &lt;neg-pic&gt; &lt;empty-pic&gt; &lt;type&gt; &lt;orientation&gt; &lt;color&gt; &lt;font&gt; &lt;tooltip&gt;
+    dupgauge &lt;name&gt; &lt;x&gt; &lt;y&gt; &lt;w&gt; &lt;h&gt; &lt;pos-div-pic&gt; &lt;pos-mod-pic&gt; &lt;empty-pic&gt; &lt;type&gt; &lt;div-orientation&gt; &lt;mod-orientation&gt; &lt;tooltip...&gt;
+    duptextgauge &lt;name&gt; &lt;x&gt; &lt;y&gt; &lt;w&gt; &lt;h&gt; &lt;pos-div-pic&gt; &lt;pos-mod-pic&gt; &lt;empty-pic&gt; &lt;type&gt; &lt;div-orientation&gt; &lt;mod-orientation&gt; &lt;color&gt; &lt;font&gt; &lt;tooltip...&gt;
+</pre>
+
+<p>precondition: dialog</p>
+
+<p>Defines a GUI element that graphically displays a stat value.</p>
+
+<ul>
+<li><code>gauge</code> displays a picture whose size grows proportional to the stat's value.</li>
+<li><code>dupgauge</code> extends <code>gauge</code> in that two pictures are shown: one that grows in 10% steps of the stat value and one that grows in 1% steps of the stat value (and is reset each time it reaches full size).</li>
+<li><code>textgauge</code> and <code>duptextgauge</code> extend <code>gauge</code> and <code>dupgauge</code> by displaying the stat's value as text on top of the gauge.</li>
+</ul>
+
+<ul>
+<li>&lt;name&gt; is the name of the gauge</li>
+<li>&lt;x&gt; &lt;y&gt; &lt;w&gt; &lt;h&gt; is the extent of the gauge. The location is relative to the dialog.</li>
+<li>&lt;pos-pic&gt; &lt;neg-pic&gt; &lt;empty-pic&gt; are the pictures to show: an empty gauge shows &lt;empty-pic&gt;, a full gauge (stat is at 100%) shows &lt;pos-pic&gt;, and a fully depleted gauge (stat is at -100%) shows &lt;neg-pic&gt;. For values between -100% and 100% parts of &lt;empty-pic&gt; and either &lt;pos-pic&gt; or &lt;neg-pic&gt; are shown.</li>
+<li>&lt;pos-div-pic&gt; is the picture used for the 10% step picture; it corresponds to &lt;pos-pic&gt;. <code>dupgauge</code>s and <code>duptextgauge</code>s cannot display negative stat values, therefore no &lt;neg-div-pic&gt; exists.</li>
+<li>&lt;pos-mod-pic&gt; is the picture used for the 1% step picture; it corresponds to &lt;pos-pic&gt;. <code>dupgauge</code>s and <code>duptextgauge</code>s cannot display negative stat values, therefore no &lt;neg-mod-pic&gt; exists.</li>
+<li>&lt;type&gt; is the type of stat the gauge displays:
+<ul>
+<li><code>SKILL_&lt;name of skill&gt;</code>: displays the experience of the named skill. If the skill name contains a space character, an underscore (&quot;_&quot;) can be used instead.</li>
+<li><code>ACTIVE_SKILL &lt;name of skill&gt;</code>: displays a full gauge if the named skill is the active skill or an empty gauge otherwise.</li>
+<li>a stat name: displays the named stat; see <a href="#stats">stats</a></li>
+</ul></li>
+<li>&lt;orientation&gt; &lt;div-orientation&gt; &lt;mod-orientation&gt; define the gauge's orientation:
+<ul>
+<li><code>EW</code>: the gauge fills from east to west.</li>
+<li><code>NS</code>: the gauge fills from north to south.</li>
+<li><code>SN</code>: the gauge fills from south to north.</li>
+<li><code>WE</code>: the gauge fills from west to east.</li>
+</ul></li>
+<li>&lt;color&gt; &lt;font&gt; specify the color and font for the overlay text.</li>
+<li>&lt;tooltip...&gt; is included as a prefix in the tooltip text.</li>
+</ul>
+
+<h3><a name="event">event: execute actions for events</a></h3>
+
+<p>syntax:</p>
+<pre>
+    event &lt;type&gt; &lt;args&gt;
+</pre>
+
+<p>Defines an action to be executed if an event occurs.</p>
+
+<ul>
+<li>&lt;type&gt; the event type.</li>
+<li>&lt;args&gt; arguments depending on event type.</li>
+</ul>
+
+<h4>Ordering of init/connect/login events</h4>
+
+<p>The ordering of some events is: <code>init</code> (<code>connect</code> (<code>login</code> <code>logout</code>)* <code>disconnect</code>)*. This means:</p>
+<ul>
+<li><code>init</code> is delivered after the client starts. It is not delivered more than once.</li>
+<li>Afterwards the client may connect to a Crossfire server. At that time <code>connect</code> is delivered once.</li>
+<li>After the connection did break, <code>disconnect</code> is delivered once. This event is generated, no matter why the connection did break. And it is delivered before any other <code>connect</code> event is delivered.</li>
+<li>While the Crossfire connection is active, any number (including none) of <code>login</code> and <code>logout</code> events may be generated. The <code>logout</code> event is generated if (and only if) a <code>login</code> event has been generated before. Also, if the connection breaks while a character is logged in, a <code>logout</code> event is delivered before the <code>disconnect</code> event is delivered.</li>
+</ul>
+
+<h4>event connect: connection to Crossfire server</h4>
+
+<p>syntax:</p>
+<pre>
+    event connect &lt;command-list&gt;
+</pre>
+
+<p>Executes &lt;command-list&gt; after a connection to a Crossfire server has been established.</p>
+
+<h4>event init: one-time initialization</h4>
+
+<p>syntax:</p>
+<pre>
+    event init &lt;command-list&gt;
+</pre>
+
+<p>Executes &lt;command-list&gt; once after the skin has been loaded.</p>
+
+<h4>event magicmap: magicmap message has been received</h4>
+
+<p>syntax:</p>
+<pre>
+    event magicmap &lt;command-list&gt;
+</pre>
+
+<p>Executes &lt;command-list&gt; after a <code>magicmap</code> message has been received from the Crossfire server.</p>
+
+<h4>event mapscroll: map view has scrolled</h4>
+
+<p>syntax:</p>
+<pre>
+    event mapscroll &lt;command-list&gt;
+</pre>
+
+<p>Executes &lt;command-list&gt; whenever the map view has scrolled.</p>
+
+<h4>event skill: skill has been learned or forgotten</h4>
+
+<p>syntax:</p>
+<pre>
+    event skill add &lt;command-list&gt;
+    event skill del &lt;command-list&gt;
+</pre>
+
+<p>Executes &lt;command-list&gt; after the character has learned a new skill or after he has forgotten a skill.</p>
+
+<p>After login, <code>event skill add</code> events are delivered for all skills known by the character. Just before logout, <code>event skill del</code> events are delivered for all skills known by the character.</p>
+
+<h3>font: define named font</h3>
+
+<p>syntax:</p>
+<pre>
+    font &lt;name&gt; &lt;font&gt; &lt;size&gt;
+</pre>
+
+<p>Declares a font to be used in GUI elements.</p>
+
+<ul>
+<li>&lt;name&gt; the font name to be declared. This name is used in GUI element definitions.</li>
+<li>&lt;font&gt; the name of the font. It refers to the file <code>fonts/&lt;font&gt;.ttf</code> in the skin directory.</li>
+<li>&lt;size&gt; the size of the font in points.</li>
+</ul>
+
+<h3>ignore: ignore GUI element for mouse interaction</h3>
+
+<p>syntax:</p>
+<pre>
+    ignore &lt;name&gt;
+</pre>
+
+<p>precondition: dialog</p>
+
+<p>Ignores the named GUI element for mouse interaction. The GUI element is painted but otherwise ignored.</p>
+
+<h3><a name="floor_list">floor_list, inventory_list: display list of items</a></h3>
+
+<p>syntax:</p>
+<pre>
+    floor_list &lt;name&gt; &lt;x&gt; &lt;y&gt; &lt;w&gt; &lt;h&gt; &lt;cell-size&gt; &lt;selected-item-name&gt;
+    inventory_list &lt;name&gt; &lt;x&gt; &lt;y&gt; &lt;w&gt; &lt;h&gt; &lt;cell-size&gt; &lt;selected-item-name&gt;
+</pre>
+
+<p>precondition: dialog, <a href="#def_item"><code>def item</code></a></p>
+
+<p>Defines a list box showing items on the floor or in the character's inventory. The items are rendered using the options defined by a preceding <code>def item</code> command.</p>
+
+<p>Note: if both <a href="#set_num_look_objects"><code>set_num_look_objects</code></a> and <code>floor_list</code> are used, <code>set_num_look_objects</code> takes precedence. Otherwise the number of items shown in the floor list is requested from the server; the value is re-negotiated if needed.</p>
+
+<ul>
+<li>&lt;name&gt; is the name of the list box.</li>
+<li>&lt;x&gt; &lt;y&gt; &lt;w&gt; &lt;h&gt; is the extent of the list box. The location is relative to the dialog.</li>
+<li>&lt;cell-size&gt; is the size in pixels for rendering items. This value is typically 32; other values are allowed but might not be useful as icons will not be not scaled.</li>
+<li>&lt;selected-item-name&gt; the name of a label to display information about the selected item. Can be set to <code>null</code> if no information should be displayed.</li>
+</ul>
+
+<h3><a name="item">item: display items</a></h3>
+
+<p>syntax:</p>
+<pre>
+    item &lt;type&gt; &lt;name&gt; &lt;x&gt; &lt;y&gt; &lt;w&gt; &lt;h&gt; &lt;index&gt; &lt;args&gt;
+</pre>
+
+<p>precondition: dialog</p>
+
+<p>Displays a single item.</p>
+
+<ul>
+<li>&lt;type&gt; the item type.</li>
+<li>&lt;name&gt; is the name of the GUI element.</li>
+<li>&lt;x&gt; &lt;y&gt; &lt;w&gt; &lt;h&gt; is the extent of the GUI element. The location is relative to the dialog.</li>
+<li>&lt;index&gt; is the item's index. The meaning depends on &lt;type&gt;. The left-most index is <code>0</code>.</li>
+<li>&lt;args&gt; are arguments depending on &lt;type&gt;.</li>
+</ul>
+
+<h4>item floor: display items on the floor</h4>
+
+<p>syntax:</p>
+<pre>
+    item floor &lt;name&gt; &lt;x&gt; &lt;y&gt; &lt;w&gt; &lt;h&gt; &lt;index&gt;
+</pre>
+
+<p>precondition: <a href="#def_item"><code>def item</code></a></p>
+
+<ul>
+<li>&lt;index&gt; is the floor index.</li>
+</ul>
+
+<h4>item inventory: display items in the character's inventory</h4>
+
+<p>syntax:</p>
+<pre>
+    item inventory &lt;name&gt; &lt;x&gt; &lt;y&gt; &lt;w&gt; &lt;h&gt; &lt;index&gt;
+</pre>
+
+<p>precondition: <a href="#def_item"><code>def item</code></a></p>
+
+<ul>
+<li>&lt;index&gt; is the inventory index.</li>
+</ul>
+
+<h4>item shortcut: display shortcut commands</h4>
+
+<p>syntax:</p>
+<pre>
+    item shortcut &lt;name&gt; &lt;x&gt; &lt;y&gt; &lt;w&gt; &lt;h&gt; &lt;index&gt; &lt;cast&gt; &lt;invoke&gt; &lt;font&gt;
+</pre>
+
+Displays a shortcut command. Shortcut commands can be activated by pressing <code>Fx</code> function keys.
+
+<ul>
+<li>&lt;index&gt; is the key index: 0=F1, 1=F2, etc.</li>
+<li>&lt;cast&gt; and &lt;invoke&gt; define the background color or overlay picture for shortcuts that <code>/cast</code> or <code>/invoke</code> a spell.</li>
+<li>&lt;font&gt; is the font for showing the key that activates the shortcut.</li>
+</ul>
+
+<h4>item spelllist: display spells known to the character</h4>
+
+<p>syntax:</p>
+<pre>
+    item spelllist &lt;name&gt; &lt;x&gt; &lt;y&gt; &lt;w&gt; &lt;h&gt; &lt;index&gt; &lt;selected&gt;
+</pre>
+
+Displays a spell known by the character.
+
+<ul>
+<li>&lt;index&gt; is the spell index.</li>
+<li>&lt;selected&gt; is the background color or overlay picture for the selected spell.</li>
+</ul>
+
+<h3><a name="key">key: define default key bindings</a></h3>
+
+<p>syntax:</p>
+<pre>
+    key char &lt;code&gt; &lt;command-list&gt;
+    key code &lt;code&gt; &lt;modifiers&gt; &lt;command-list&gt;
+</pre>
+
+<p>Defines default key bindings. default key bindings can be defined in <code>global.skin</code> or within dialog <code>.skin</code> files. Definitions within dialogs are active only while the dialog is shown; global key bindings are always active.</p>
+
+<p>Lookup of key bindings uses the following ordering. Further steps are not checked after a match was found. the following steps are executed for either <code>code</code> or <code>har</code> key bindings, depending on the key being pressed.</p>
+<ul>
+<li>The <code>ESC</code> key is processed. This key is managed exclusively by client code; it cannot be overridden with key bindings or skins.</li>
+<li>If the <code>keybind.skin</code> dialog is active, it consumes the key.</li>
+<li>Per-dialog key bindings for all open dialogs; top-most dialog is checked first, bottom-most dialog is checked last. <a href="#set_modal">Modal dialogs</a> terminate further steps.</li>
+<li>Per-dialog key bindings for the active screen.</li>
+<li>User-defined per-character key bindings defined with <code>/bind -c</code>.</li>
+<li>User-defined global key bindings defined with <code>/bind</code>.</li>
+<li>Global (per-skin) default key bindings.</li>
+<li>For number keys (<code>0</code>...<code>9</code>) the prefix count for Crossfire commands is updated.</li>
+<li>Keys not yet matched are silently discarded.</li>
+</ul>
+<p>Note that some keys produce both <code>char</code> and <code>code</code> events. These keys are checked twice and thus may execute two command-lists.</p>
+
+<ul>
+<li>&lt;code&gt; is the key code; for <code>key char</code> this is the ASCII code, for <code>key code</code> it is either a constant <code>VK_xyz</code> defined in <a href="http://java.sun.com/javase/6/docs/api/java/awt/event/KeyEvent.html">KeyEvent</a> or the constant's value as a number. Using a number for <code>key code</code> is discouraged.</li>
+<li>&lt;modifiers&gt; are the key modifiers as bit flags: SHIFT=1, CTRL=2, META=4, ALT=8.</li>
+<li>&lt;command-list&gt; is the command list to execute.</li>
+</ul>
+
+<h3><a name="label">label_*: display text label</a></h3>
+
+<p>syntax:</p>
+<pre>
+    label_html &lt;name&gt; &lt;x&gt; &lt;y&gt; &lt;w&gt; &lt;h&gt; &lt;font&gt; &lt;color&gt; &lt;text...&gt;
+    label_multi &lt;name&gt; &lt;x&gt; &lt;y&gt; &lt;w&gt; &lt;h&gt; &lt;font&gt; &lt;color&gt; &lt;text...&gt;
+    label_query &lt;name&gt; &lt;x&gt; &lt;y&gt; &lt;w&gt; &lt;h&gt; &lt;font&gt; &lt;color&gt;
+    label_message &lt;name&gt; &lt;x&gt; &lt;y&gt; &lt;w&gt; &lt;h&gt; &lt;font&gt; &lt;color&gt;
+    label_text &lt;name&gt; &lt;x&gt; &lt;y&gt; &lt;w&gt; &lt;h&gt; &lt;font&gt; &lt;color&gt; &lt;text...&gt;
+    label_stat &lt;name&gt; &lt;x&gt; &lt;y&gt; &lt;w&gt; &lt;h&gt; &lt;font&gt; &lt;color&gt; &lt;stat&gt; &lt;alignment&gt;
+    label_stat2 &lt;name&gt; &lt;x&gt; &lt;y&gt; &lt;w&gt; &lt;h&gt; &lt;font&gt; &lt;normal&gt; &lt;upgradable&gt; &lt;depleted&gt; &lt;boosted&gt; &lt;boosted+upgradable&gt; &lt;stat-curr&gt; &lt;stat-base&gt; &lt;stat-race&gt; &lt;stat-applied&gt; &lt;alignment&gt;
+    label_spell &lt;name&gt; &lt;x&gt; &lt;y&gt; &lt;w&gt; &lt;h&gt; &lt;font&gt; &lt;type&gt;
+</pre>
+
+<p>precondition: dialog</p>
+
+<p>Defines a GUI element that displays a text label.</p>
+<ul>
+<li><code>label_html</code> displays a text that may include HTML tags.</li>
+<li><code>label_multi</code> displays the text as multiple lines; lines are separated by newline characters.</li>
+<li><code>label_query</code> displays the last received &quot;query&quot; string.</li>
+<li><code>label_message</code> displays received &quot;drawinfo&quot; and &quot;drawextinfo&quot; messages. Newly received messages are ignored while the dialog containing the label is shown.</li>
+<li><code>label_text</code> display a static string.</li>
+<li><code>label_stat</code> and <code>label_stat2</code> display a stat value. <code>label_stat2</code> changes the text color depending on the stat's state.</li>
+<li><code>label_spell</code> displays information about the readied spell.</li>
+</ul>
+
+<ul>
+<li>&lt;name&gt; is the name of the label.</li>
+<li>&lt;x&gt; &lt;y&gt; &lt;w&gt; &lt;h&gt; is the extent of the label. The location is relative to the dialog.</li>
+<li>&lt;font&gt; and &lt;color&gt; is the font and color of the text.</li>
+<li>&lt;text...&gt; is the text to display.</li>
+<li>&lt;stat&gt; &lt;stat-curr&gt; &lt;stat-base&gt; &lt;stat-race&gt; &lt;stat-applied&gt; define the stat value to display.</li>
+<li>&lt;normal&gt; &lt;upgradable&gt; &lt;depleted&gt; &lt;boosted&gt; &lt;boosted+upgradable&gt; are the colors for different stat states.</li>
+<li>&lt;alignment&gt; is the text alignment: <code>LEFT</code>, <code>CENTER</code>, <code>RIGHT</code> for left justified/centered/right justified text.</li>
+<li>&lt;type&gt; selects the type of information to show:
+<ul>
+<li><code>SPELL_NAME</code>: the spell's name.</li>
+<li><code>SPELL_ICON</code>: the spell's picture.</li>
+<li><code>SPELL_COST</code>: the spell's cost (mana and/or grace).</li>
+<li><code>SPELL_LEVEL</code>: the spell's level.</li>
+<li><code>SPELL_DESCRIPTION</code>: the spell's description.</li>
+</ul></li>
+</ul>
+
+<h3><a name="log_label">log_label: display last received message</a></h3>
+
+<p>syntax:</p>
+<pre>
+    log_label &lt;name&gt; &lt;x&gt; &lt;y&gt; &lt;w&gt; &lt;h&gt; &lt;background-pic&gt; &lt;font-print&gt; &lt;font-fixed&gt; &lt;font-fixed+bold&gt; &lt;font-arcane&gt; &lt;default-color&gt;
+</pre>
+
+<p>precondition: dialog</p>
+
+<p>Defines a GUI element that displays the last received &quot;drawinfo&quot; or &quot;drawextinfo&quot; message.</p>
+
+<ul>
+<li>&lt;name&gt; is the name of the label.</li>
+<li>&lt;x&gt; &lt;y&gt; &lt;w&gt; &lt;h&gt; is the extent of the label. The location is relative to the dialog.</li>
+<li>&lt;background-pic&gt; defines a background image which is drawn below the text. May be set to <code>null</code> when not used.</li>
+<li>&lt;font-*&gt; defines the fonts for rendering the text.</li>
+<li>&lt;default-color&gt; is the default color if the text does not include an explicit color specification.</li>
+</ul>
+
+<h3><a name="log_message">log_message: display messages</a></h3>
+
+<p>syntax:</p>
+<pre>
+    log_message &lt;name&gt; &lt;x&gt; &lt;y&gt; &lt;w&gt; &lt;h&gt; &lt;background-pic&gt; &lt;font-print&gt; &lt;font-fixed&gt; &lt;font-fixed+bold&gt; &lt;font-arcane&gt; &lt;default-color&gt;
+</pre>
+
+<p>precondition: dialog</p>
+
+<p>Defines a GUI element that displays received &quot;drawinfo&quot; or &quot;drawextinfo&quot; messages.</p>
+
+<ul>
+<li>&lt;name&gt; is the name of the message box.</li>
+<li>&lt;x&gt; &lt;y&gt; &lt;w&gt; &lt;h&gt; is the extent of the message box. The location is relative to the dialog.</li>
+<li>&lt;background-pic&gt; defines a background image which is drawn below the text. May be set to <code>null</code> when not used.</li>
+<li>&lt;font-*&gt; defines the fonts for rendering the text.</li>
+<li>&lt;default-color&gt; is the default color if the text does not include an explicit color specification.</li>
+</ul>
+
+<h3>log_color: change color of log_message</h3>
+
+<p>syntax:</p>
+<pre>
+    log_color &lt;name&gt; &lt;index&gt; &lt;color&gt;
+</pre>
+
+<p>precondition: dialog</p>
+
+<p>Changes a color of a <a href="#log_message"><code>log_message</code></a> element.</p>
+
+<ul>
+<li>&lt;name&gt; the name of the <a href="#log_message"><code>log_message</code></a> element to affect.</li>
+<li>&lt;index&gt; the color index to update. Must be between 0 and 12. The number correspond to the constants <code>NDI_xyz</code> defined in <a href="http://crossfire.svn.sourceforge.net/viewvc/crossfire/server/trunk/include/shared/newclient.h">the Crossfire server</a>.</li>
+<li>&lt;color&gt; the color specification.</li>
+</ul>
+
+<h3>log_filter: filter contents of log_message</h3>
+
+<p>syntax:</p>
+<pre>
+    log_filter &lt;name&gt; &lt;which&gt; &lt;type...&gt;
+</pre>
+
+<p>precondition: dialog</p>
+
+<p>Specifies the message types to display in a <a href="#log_message"><code>log_message</code></a> element.</p>
+
+<ul>
+<li>&lt;name&gt; the name of the <a href="#log_message"><code>log_message</code></a> element to affect.</li>
+<li>&lt;which&gt; is either <code>only</code> to show only the given message types or <code>not</code> to show all but the given message types.</li>
+<li>&lt;type...&gt; the message types to show or not to show: <code>BOOK</code>, <code>CARD</code>, <code>PAPER</code>, <code>SIGN</code>, <code>MONUMENT</code>, <code>DIALOG</code>, <code>MOTD</code>, <code>ADMIN</code>, <code>SHOP</code>, <code>COMMAND</code>, <code>ATTRIBUTE</code>, <code>SKILL</code>, <code>APPLY</code>, <code>ATTACK</code>, <code>COMMUNICATION</code>, <code>SPELL</code>, <code>ITEM</code>, <code>MISC</code>, <code>VICTIM</code>, <code>QUERY</code>. These constants correspond to the constants <code>MSG_TYPE_xyz</code> defined in <a href="http://crossfire.svn.sourceforge.net/viewvc/crossfire/server/trunk/include/shared/newclient.h">the Crossfire server</a>.</li>
+</ul>
+
+<h3>minimap: display map overview</h3>
+
+<p>syntax:</p>
+<pre>
+    minimap &lt;name&gt; &lt;x&gt; &lt;y&gt; &lt;w&gt; &lt;h&gt;
+</pre>
+
+<p>precondition: dialog</p>
+
+<p>Defines a GUI element that displays a small map view. The map view may contain magicmap information.</p>
+
+<ul>
+<li>&lt;name&gt; is the name of the map view.</li>
+<li>&lt;x&gt; &lt;y&gt; &lt;w&gt; &lt;h&gt; is the extent of the map view. The location is relative to the dialog.</li>
+</ul>
+
+<h3>map: display map view</h3>
+
+<p>syntax:</p>
+<pre>
+    map &lt;name&gt; &lt;x&gt; &lt;y&gt; &lt;w&gt; &lt;h&gt; &lt;size&gt;
+</pre>
+
+<p>precondition: dialog</p>
+
+<p>Defines a GUI element that displays a map view.</p>
+
+<ul>
+<li>&lt;name&gt; is the name of the map view.</li>
+<li>&lt;x&gt; &lt;y&gt; &lt;w&gt; &lt;h&gt; is the extent of the map view. The location is relative to the dialog.</li>
+<li>&lt;size&gt; is the square size in pixels. For now <code>4</code>, <code>32</code>, or <code>64</code> are supported.</li>
+</ul>
+
+<h3><a name="meta_list">meta_list: display Crossfire server list</a></h3>
+
+<p>syntax:</p>
+<pre>
+    meta_list &lt;name&gt; &lt;x&gt; &lt;y&gt; &lt;w&gt; &lt;h&gt; &lt;cell-width&gt; &lt;cell-height&gt; &lt;picture&gt; &lt;font&gt; &lt;text&gt; &lt;label&gt; &lt;connect&gt; &lt;format&gt; &lt;tooltip&gt;
+</pre>
+
+<p>precondition: dialog</p>
+
+<p>Defines a GUI element that displays available Crossfire servers.</p>
+
+<ul>
+<li>&lt;name&gt; is the name of the list.</li>
+<li>&lt;x&gt; &lt;y&gt; &lt;w&gt; &lt;h&gt; is the extent of the list. The location is relative to the dialog.</li>
+<li>&lt;cell-width&gt; &lt;cell-height&gt; is the size of each cell displaying a Crossfire server.</li>
+<li>&lt;picture&gt; is a picture to display in front of the server description. May be <code>null</code> if no picture should be shown.</li>
+<li>&lt;font&gt; is the font to use.</li>
+<li>&lt;text&gt; is a text input element for the server name. It is updated to reflect the current list selection. May be <code>null</code> to not update a text element.</li>
+<li>&lt;connect&gt; is a command list to execute on double-click. It should connect to the Crossfire server.</li>
+<li>&lt;label&gt; is a label element that displays the description of the current list selection. May be <code>null</code> to not update a label element.</li>
+<li>&lt;format&gt; &lt;tooltip&gt; are format strings that display the current selection. &lt;format&gt; is used for the list element, &lt;tooltip&gt; for the tooltip text. The following placeholders are allowed; they insert information received from the metaserver.
+<ul>
+<li><code>%%</code> inserts a % character.</li>
+<li><code>%A</code> inserts the arch base.</li>
+<li><code>%C</code> inserts the comment field.</li>
+<li><code>%D</code> inserts the comment filed without HTML tags.</li>
+<li><code>%E</code> inserts the code base.</li>
+<li><code>%H</code> inserts the hostname.</li>
+<li><code>%I</code> inserts the bytes received by the server.</li>
+<li><code>%M</code> inserts the map base.</li>
+<li><code>%O</code> inserts the bytes sent by the server.</li>
+<li><code>%P</code> inserts the number of players online.</li>
+<li><code>%U</code> inserts the time since the last update in seconds.</li>
+<li><code>%T</code> inserts the server's uptime in seconds.</li>
+<li><code>%V</code> inserts the server's version.</li>
+</ul></li>
+</ul>
+
+<h3><a name="picture">picture: display pictures</a></h3>
+
+<p>syntax:</p>
+<pre>
+    picture &lt;name&gt; &lt;x&gt; &lt;y&gt; &lt;w&gt; &lt;h&gt; &lt;picture&gt; &lt;alpha&gt;
+</pre>
+
+<p>precondition: dialog</p>
+
+<p>Defines a GUI element that displays a static picture.</p>
+
+<ul>
+<li>&lt;name&gt; is the name of the picture.</li>
+<li>&lt;x&gt; &lt;y&gt; &lt;w&gt; &lt;h&gt; is the extent of the picture. The location is relative to the dialog.</li>
+<li>&lt;picture&gt; the base file name of the picture.</li>
+<li>&lt;alpha&gt; the transparency of the picture between 0 and 1. 0=completely transparent (not useful as nothing is shown); 1=completely opaque.</li>
+</ul>
+
+<h3>set_forced_active: force GUI elements to be active</h3>
+
+<p>syntax:</p>
+<pre>
+    set_force_active &lt;name&gt;
+</pre>
+
+<p>precondition: dialog</p>
+
+<p>Defines a GUI element to be always active. It prevents other GUI elements from getting the keyboard focus.</p>
+
+<ul>
+<li>&lt;name&gt; the name of the GUI element to make active.</li>
+</ul>
+
+<h3>set_auto_size: update dialog size after window resizes</h3>
+
+<p>syntax:</p>
+<pre>
+    set_auto_size
+</pre>
+
+<p>precondition: dialog</p>
+
+<p>Recalculates the dialog's extent (location and size) whenever the main window's size changes. Auto-sizing dialogs cannot be moved manually.</p>
+
+<h3><a name="set_default">set_default: define default GUI elements</a></h3>
+
+<p>syntax:</p>
+<pre>
+    set_default &lt;name&gt;
+</pre>
+
+<p>precondition: dialog</p>
+
+<p>Marks a GUI element as the default element. The default element is activated by pressing <code>ENTER</code> or <code>SPACE</code> unless these keys are overridden by a key binding.</p>
+
+<ul>
+<li>&lt;name&gt; the name of the default GUI element.</li>
+</ul>
+
+<h3>set_invisible: hide GUI elements</h3>
+
+<p>syntax:</p>
+<pre>
+    set_invisible &lt;name&gt;
+</pre>
+
+<p>precondition: dialog</p>
+
+<p>Hides a GUI element by default: the GUI element is hidden when the skin is loaded. It can be made visible by executing <a href="#command_show"><code>SHOW</code></a> or <a href="#command_toggle"><code>TOGGLE</code></a> command lists.</p>
+
+<ul>
+<li>&lt;name&gt; the name of the default GUI element.</li>
+</ul>
+
+<h3><a name="set_modal">set_modal: make dialogs modal</a></h3>
+
+<p>syntax:</p>
+<pre>
+    set_modal
+</pre>
+
+<p>precondition: dialog</p>
+
+<p>Makes this dialog modal.</p>
+
+<h3><a name="set_num_look_objects">set_num_look_objects: request floor size from server</a></h3>
+
+<p>syntax:</p>
+<pre>
+    set_num_look_objects &lt;n&gt;
+</pre>
+
+<p>Requests a floor size from the Crossfire server. Overrides implicit definition by <a href="#floor_list"><code>floor_list</code></a>.</p>
+
+<ul>
+<li>&lt;n&gt; the number of floor objects to request.</li>
+</ul>
+
+<h3>scrollbar: display scrollbars controlling other GUI elements</h3>
+
+<p>syntax:</p>
+<pre>
+    scrollbar &lt;name&gt; &lt;x&gt; &lt;y&gt; &lt;w&gt; &lt;h&gt; &lt;proportional-slider&gt; &lt;element&gt; &lt;foreground&gt; &lt;background&gt;
+</pre>
+
+<p>precondition: dialog</p>
+
+<p>Defines a GUI element that displays a scrollbar.</p>
+
+<ul>
+<li>&lt;name&gt; is the name of the scrollbar.</li>
+<li>&lt;x&gt; &lt;y&gt; &lt;w&gt; &lt;h&gt; is the extent of the scrollbar. The location is relative to the dialog.</li>
+<li>&lt;proportional-slider&gt; specifies the slider's size: <code>true</code> makes the slider's size reflect the size of the visible area of &lt;element&gt;. <code>false</code> displays a square slider.</li>
+<li>&lt;element&gt; the element that the slider affects. It must be an element defined by <a href="#log_message"><code>log_message</code></a> or <a href="#log_label"><code>log_label</code></a>.</li>
+<li>&lt;foreground&gt; &lt;background&gt; are the scrollbar's colors: &lt;foreground&gt; is the color of the slider, &lt;background&gt; is the background (non-slider) area.</li>
+</ul>
+
+<h3>skin_name: define general skin-related information</h3>
+
+<p>syntax:</p>
+<pre>
+    skin_name &lt;name&gt; &lt;min-resolution&gt; &lt;max-resolution&gt;
+</pre>
+
+<p>Sets general skin-related information.</p>
+
+<ul>
+<li>&lt;name&gt; is the name of the skin. This name is used for constructing file names. It should consist only of lower-case letters and digits.</li>
+<li>&lt;min-resolution&gt; is the minimal supported resolution. In windowed mode this is the minimal window size.</li>
+<li>&lt;max-resolution&gt; is the maximal supported resolution. In windowed mode this is the maximal window size. Note: the maximum window size currently cannot be enforced by the client; therefore this value currently is not very useful.</li>
+</ul>
+
+<h3><a name="textbutton">textbutton: display buttons with a text labels</a></h3>
+
+<p>syntax:</p>
+<pre>
+    textbutton &lt;name&gt; &lt;x&gt; &lt;y&gt; &lt;w&gt; &lt;h&gt; &lt;auto-repeat&gt; &lt;command-list&gt; &lt;text...&gt;
+</pre>
+
+<p>precondition: dialog, <a href="#def_textbutton"><code>def textbutton</code></a></p>
+
+<p>Defines a GUI element that displays a button showing a text label.</p>
+
+<ul>
+<li>&lt;name&gt; is the name of the button.</li>
+<li>&lt;x&gt; &lt;y&gt; &lt;w&gt; &lt;h&gt; is the extent of the button. The location is relative to the dialog.</li>
+<li>&lt;auto-repeat&gt; specifies whether the button should keep executing its action as long as the mouse is pressed (<code>true</code>) or fire once (<code>false</code>) per click.</li>
+<li>&lt;command-list&gt; is the command that is executed when the button is activated.</li>
+<li>&lt;text..&gt; is the text displayed on the label.</li>
+</ul>
+
+<h3>tooltip: add tooltip labels</h3>
+
+<p>syntax:</p>
+<pre>
+    tooltip &lt;font&gt;
+</pre>
+
+<p>Adds a tooltip label to the skin. If this command is not used, no tooltips are shown.</p>
+
+<ul>
+<li>&lt;font&gt; the font for displaying tooltips.</li>
+</ul>
+
+<h2>Misc</h2>
+
+<h3><a name="macros">Macros</a></h3>
+
+<p>Macros are placeholders within commands sent to the Crossfire server. The macros are replaced when the command is sent to the server.</p>
+
+<p>Macros are supported in key bindings (<code>/bind</code> command) and within arguments of the <a href="#command_gui_execute_command"><code>GUI_EXECUTE_COMMAND</code></a> command.</p>
+
+<p>The following macros are supported:</p>
+<ul>
+<li><code>&lt;&lt;to_reply&gt;&gt;</code>: the name of the last character that sent us a <code>/tell</code> command. Using a key binding like <code>/bind -e tell &lt;&lt;to_reply&gt;&gt;</code> is preferrable to <code>/bind -e reply</code> as it explicitly includes the destination character name. Using <code>/reply</code> the message may be sent to an unwanted character if someone talks to you at the wrong time, i.e., just before you finish typing and submit the command.</li>
+</ul>
+
+<h3><a name="command_types">Command Types</a></h3>
+
+<p>Command types are the types of commands allowed in <a href="#command_lists">command lists</a>.</p>
+
+<ul>
+<li><a name="command_show"><code>SHOW</code></a>: makes &lt;element&gt; visible.</li>
+<li><code>HIDE</code>: makes &lt;element&gt; invisible.</li>
+<li><a name="command_toggle"><code>TOGGLE</code></a>: toggles the visibility of &lt;element&gt;.</li>
+<li><code>PRINT</code>: does nothing (as it is not implemented).</li>
+<li><code>QUIT</code>: Shows the quit dialog to terminate the client.</li>
+<li><code>CONNECT</code>: connects to a Crossfire server. &lt;element&gt; must reference an input field which specifies the hostname of the server to connect to. If used in connected state, disconnects first.</li>
+<li><code>DISCONNECT</code>: disconnects from the Crossfire server. Does nothing if not connected.</li>
+<li><code>GUI_META</code>: shows the server selection screen. Disconnects if connected.</li>
+<li><code>GUI_START</code>: shows the start screen. Disconnects if connected. Note: the start screen is currently disabled as it is not fully implemented. Therefore this command currently is identical to <code>GUI_META</code>.</li>
+<li><a name="comment_gui_execute_element"><code>GUI_EXECUTE_ELEMENT</code></a>: &lt;element&gt; must refer to an <a href="#item"><code>item</code></a> element. Executes the default action of the referenced item.</li>
+<li><a name="command_dialog_open"><code>DIALOG_OPEN &lt;dialog&gt;</code></a>: the argument must be the name of a dialog. Makes the dialog visible.</li>
+<li><a name="command_dialog_toggle"><code>DIALOG_TOGGLE &lt;dialog&gt;</code></a>: the argument must be the name of a dialog. Makes the dialog invisible.</li>
+<li><a name="command_dialog_close"><code>DIALOG_CLOSE &lt;dialog&gt;</code></a>: the argument must be the name of a dialog. Toggles the visibility of the dialog.</li>
+<li><a name="command_gui_execute_command"><code>GUI_EXECUTE_COMMAND &lt;command...&gt;</code></a>: sends a command to the Crossfire server. <a href="#macros">Macros</a> are supported.</li>
+<li><code>EXEC_SELECTION &lt;command&gt;</code>: &lt;element&gt; must refer to a <a href="#floor_list"><code>floor_list</code> or <code>inventory_list</code></a>. Executes a command on the list's selected item. Does nothing if no item is selected. Allowed commands:
+  <ul>
+  <li><code>APPLY</code>: applies the item.</li>
+  <li><code>DROP</code>: drops the item.</li>
+  <li><code>EXAMINE</code>: examines the item.</li>
+  <li><code>LOCK</code>, <code>UNLOCK</code>, <code>LOCK_TOGGLE</code>: set, unsets, or toggles the lock state of the item.</li>
+  <li><code>MARK</code>: marks the item.</li>
+  </ul></li>
+<li><code>MOVE_SELECTION &lt;lines&gt; &lt;element&gt;</code>: &lt;element&gt; must refer to a <a href="#floor_list"><code>floor_list</code> or <code>inventory_list</code></a>. Moves the list's selection by the given number of lines and elements; negative values scroll left/up, positive values scroll right/down. For example: <code>MOVE_SELECTION -1 0</code> moves the selection up one line; <code>MOVE_SELECTION 1 1</code> moves the selection diagonally down-right one line and column; <code>MOVE_SELECTION 0 3</code> moves the selection three elements to the right.</li>
+<li><code>SCROLL_DIST &lt;distance&gt;</code>: &lt;element&gt; must refer to a <a href="#meta_list"><code>meta_list</code></a>, <a href="#floor_list"><code>floor_list</code>, or <code>inventory_list</code></a>. Scrolls the list by the given number of elements. Negative values scroll up, positive values scroll down. Scrolling by zero does nothing.</li>
+<li><code>SCROLL &lt;distance&gt;</code>, <code>SCROLL_NEVER &lt;distance&gt;</code>: Scrolls the &lt;element&gt; by the given number of elements. Negative values scroll up, positive values scroll down. Scrolling by zero does nothing. <code>SCROLL_NEVER</code> is identical to <code>SCROLL</code> except that the command always reports &quot;command cannot execute&quot;.</li>
+<li><code>SCROLL_RESET</code>: Resets the &lt;element&gt;'s scroll index to its default value.</li>
+<li><code>SCROLLNEXT &lt;next&gt;</code>: Moves the focus from &lt;element&gt; to &lt;next&gt; if &lt;element&gt; has the focus. Does nothing if &lt;element&gt; is not the active GUI element.</li>
+</ul>
+
+<h3><a name="stats">Stats</a></h3>
+
+<p>The following names for displaying stat values are supported:</p>
+<ul>
+<li><code>AC</code>: the AC value.</li>
+<li><code>ARM</code>: the ARM value.</li>
+<li><code>CHA</code>: the charisma.</li>
+<li><code>CHA_APPLIED</code>: the charisma resulting from applied gear or skills.</li>
+<li><code>CHA_BASE</code>: the base charisma.</li>
+<li><code>CHA_RACE</code>: the charisma limit.</li>
+<li><code>CON</code>: the constitution.</li>
+<li><code>CON_APPLIED</code>: the constitution resulting from applied gear or skills.</li>
+<li><code>CON_BASE</code>: the base constitution.</li>
+<li><code>CON_RACE</code>: the constitution limit.</li>
+<li><code>DAM</code>: the DAM value.</li>
+<li><code>DEX</code>: the dexterity.</li>
+<li><code>DEX_APPLIED</code>: the dexterity resulting from applied gear or skills.</li>
+<li><code>DEX_BASE</code>: the base dexterity.</li>
+<li><code>DEX_RACE</code>: the dexterity limit.</li>
+<li><code>EXP</code>: the overall experience.</li>
+<li><code>EXP_NEXT_LEVEL</code>: the overall experience needed to reach the next level.</li>
+<li><code>FOOD</code>: the food level.</li>
+<li><code>GRACE</code>: the grace value.</li>
+<li><code>HP</code>: the hit points.</li>
+<li><code>INT</code>: the intelligence.</li>
+<li><code>INT_APPLIED</code>: the intelligence resulting from applied gear or skills.</li>
+<li><code>INT_BASE</code>: the base intelligence.</li>
+<li><code>INT_RACE</code>: the intelligence limit.</li>
+<li><code>LEVEL</code>: the overall level.</li>
+<li><code>LOWFOOD</code>: whether the character is low on food. 0=not low on food, 1=low on food.</li>
+<li><code>POISONED</code>: whether the character is poisoned. 0=not poisoned, 1=poisoned.</li>
+<li><code>POW</code>: the power.</li>
+<li><code>POW_APLIED</code>: the power resulting from applied gear or skills.</li>
+<li><code>POW_BASE</code>: the base power.</li>
+<li><code>POW_RACE</code>: the power limit.</li>
+<li><code>RANGE</code>: the ranged skill.</li>
+<li><code>RES_ACID</code>: the acid resistance.</li>
+<li><code>RES_BLIND</code>: the blindness resistance.</li>
+<li><code>RES_COLD</code>: the cold resistance.</li>
+<li><code>RES_CONF</code>: the confusion resistance.</li>
+<li><code>RES_DEATH</code>: the death resistance.</li>
+<li><code>RES_DEPLETE</code>: the depletion resistance.</li>
+<li><code>RES_DRAIN</code>: the drain resistance.</li>
+<li><code>RES_ELEC</code>: the electricity resistance.</li>
+<li><code>RES_FEAR</code>: the fear resistance.</li>
+<li><code>RES_FIRE</code>: the fire resistance.</li>
+<li><code>RES_GHOSTHIT</code>: the ghosthit resistance.</li>
+<li><code>RES_HOLYWORD</code>: the holy word resistance.</li>
+<li><code>RES_MAG</code>: the magic resistance.</li>
+<li><code>RES_PARA</code>: the paralyze resistance.</li>
+<li><code>RES_PHYS</code>: the physical resistance.</li>
+<li><code>RES_POISON</code>: the poison resistance.</li>
+<li><code>RES_SLOW</code>: the slowness resistance.</li>
+<li><code>RES_TURN_UNDEAD</code>: the turn undead resistance.</li>
+<li><code>SP</code>: the spell points.</li>
+<li><code>SPEED</code>: the overall speed.</li>
+<li><code>STR</code>: the strength.</li>
+<li><code>STR_APPLIED</code>: the strength resulting from applied gear or skills.</li>
+<li><code>STR_BASE</code>: the base strength.</li>
+<li><code>STR_RACE</code>: the strength limit.</li>
+<li><code>TITLE</code>: the character's title.</li>
+<li><code>WC</code>: the WC value.</li>
+<li><code>WEIGHT</code>: the characters total weight.</li>
+<li><code>WEIGHT_LIMIT</code>: the character's weight limit.</li>
+<li><code>WIS</code>: the wisdom.</li>
+<li><code>WIS_APPLIED</code>: the wisdom resulting from applied gear or skills.</li>
+<li><code>WIS_BASE</code>: the base wisdom.</li>
+<li><code>WIS_RACE</code>: the wisdom limit.</li>
+<li><code>WSPEED</code>: the weapon speed.</li>
+</ul>
+<p>Most constants correspond to the constants <code>CS_STAT_xyz</code> defined in <a href="http://crossfire.svn.sourceforge.net/viewvc/crossfire/server/trunk/include/shared/newclient.h">the Crossfire server</a>.</p>
+
+<h3><a name="options">Options</a></h3>
+
+<p>Options are boolean valued settings. Options can be presented to the user with the <a href="#checkbox"><code>checkbox</code></a> command.</p>
+
+<p>Skins can define options with the <a href="#def_checkbox_option"><code>def checkbox_option</code></a>. The following options are predefined:</p>
+<ul>
+<li><code>sound_enabled</code>: enables sound effects and background music.</li>
+<li><code>pickup_*</code>: enables options of the <code>/pickup</code> Crossfire command; the setting is persistent per character.
+<ul>
+<li><code>pickup_food</code></li>
+<li><code>pickup_drink</code></li>
+<li><code>pickup_valuables</code></li>
+<li><code>pickup_bow</code></li>
+<li><code>pickup_arrow</code></li>
+<li><code>pickup_helmet</code></li>
+<li><code>pickup_shield</code></li>
+<li><code>pickup_armour</code></li>
+<li><code>pickup_boots</code></li>
+<li><code>pickup_gloves</code></li>
+<li><code>pickup_cloak</code></li>
+<li><code>pickup_key</code></li>
+<li><code>pickup_missileweapon</code></li>
+<li><code>pickup_allweapon</code></li>
+<li><code>pickup_magical</code></li>
+<li><code>pickup_potion</code></li>
+<li><code>pickup_spellbook</code></li>
+<li><code>pickup_skillscroll</code></li>
+<li><code>pickup_readables</code></li>
+<li><code>pickup_magic_device</code></li>
+<li><code>pickup_not_cursed</code></li>
+<li><code>pickup_jewels</code></li>
+<li><code>pickup_flesh</code></li>
+<li><code>pickup_inhibit</code></li>
+<li><code>pickup_stop</code></li>
+</ul></li>
+</ul>
+<p>These constants correspond to the constants <code>PU_xyz</code> defined in <a href="http://crossfire.svn.sourceforge.net/viewvc/crossfire/server/trunk/include/define.h">the Crossfire server</a>.</p>
+
+<h3>Colors</h3>
+
+<p>Colors can be specified as:</p>
+<ul>
+<li>A named color: <code>BLACK</code>, <code>DARK_GRAY</code>, <code>GRAY</code>, <code>WHITE</code></li>
+<li>A numerical color: <code>#&lt;RR&gt;&lt;GG&gt;&lt;BB&gt;</code> where &lt;RR&gt;/&lt;GG&gt;/&lt;BB&gt; is the red/green/blue component in hexadecimal notation. For example, red is <code>#FF0000</code> and yellow is <code>#FFFF00</code>.</li>
+</ul>
+<p>Optionally a transparency specification may be appended: <code>BLACK/0.5</code> for half-transparent BLACK or <code>#FF0000/0.9</code> for slightly transparent red.</p>
+
+<h2><a name="create_skins">How to start hacking</a></h2>
+
+<h3>Create new skin</h3>
+
+<p>To create a new skin called &quot;rawhide&quot;, copy the default skin into the directory <code>rawhide</code>:</p>
+<pre>
+    svn export https://crossfire.svn.sourceforge.net/svnroot/crossfire/jxclient/trunk/skins/ragnorok rawhide
+</pre>
+
+<p>Modify the files <code>rawhide/*</code>. At least change</p>
+<pre>
+    skin_name ragnorok ...
+</pre>
+<p>to</p>
+<pre>
+    skin_name rawhide ...
+</pre>
+<p>in <code>rawhide/global.skin</code>.</p>
+
+<p>Restart JXClient using the new skin:</p>
+<pre>
+    java -jar &lt;optional path&gt;jxclient.jar --skin rawhide
+</pre>
+
+<p>Optionally disable full-screen mode and force a small window size:</p>
+<pre>
+    java -jar &lt;optional path&gt;jxclient.jar --skin rawhide --no-full-screen --resolution 1024x768
+</pre>
+
+<h3><a name="debug">Debugging the new skin</a></h3>
+
+<p>Add the command-line option <code>--debug-gui</code> to enable GUI related debug information:</p>
+<ul>
+<li>The GUI element that contains the mouse will be highlighted and its name will be printed into the top left corner of the screen.</li>
+<li>The time needed for repainting the screen will be printed into the top left corder of the screen.</li>
+</ul>
+<p>Note: this option also works for built-in skins.</p>
+
+<p>Add the command-line option <code>--debug-keyboard keys.log</code> to write debug information about pressed keys into <code>keys.log</code>. This information may help to define <a href="#key">key bindings</a>. &quot;pressed&quot; keys are matched by <code>key code</code> key bindings, &quot;typed&quot; keys are matched by <code>key char</code> key bindings.</p>
+
+<p>For debugging <a href="#log_color">log_color</a> definitions, the command <code>/debug_colors</code> may be useful. It prints text using all possible colors.</p>
+
+</body>
+</html>
