@@ -1,0 +1,636 @@
+
+tooltip font_tooltip
+
+# Map Group
+map playfield -32 -32 1024 768 64
+
+# LGauges Group (80, 574)
+picture sword_back     16+80  0+574 64 256 background_sword 0.9
+picture gauge_hp_back   0+80 14+574 19 144 life_gauge_empty 0.9
+picture gauge_fp_back  75+80 15+574 21 143 food_gauge_empty 0.9
+gauge   gauge_hp        0+80 14+574 19 144 life_gauge_full null life_gauge_empty HP SN HP:
+gauge   gauge_fp       75+80 15+574 21 143 food_gauge_full null food_gauge_empty FOOD SN Food:
+label_stat label_hp     4+72 3+732 32  32 font_types WHITE HP CENTER
+label_stat label_fp    80+72 3+732 32  32 font_types WHITE FOOD CENTER
+
+# RGauges Group (820, 552)
+picture staff_back    40+820  0+552 64 256 background_staff 0.9
+picture gauge_gp_back  0+820 30+552 50 150 grace_gauge_empty 0.9
+picture gauge_sp_back 80+820 30+552 50 150 magic_gauge_empty 0.9
+gauge gauge_gp         0+820 30+552 50 150 grace_gauge_full null grace_gauge_empty GRACE SN Grace:
+gauge gauge_sp        80+820 30+552 50 150 magic_gauge_full null magic_gauge_empty SP SN Mana:
+label_stat label_gp  768+72   3+732 32  32 font_types WHITE GRACE CENTER
+label_stat label_sp  844+72   3+732 32  32 font_types WHITE SP CENTER
+
+# Map View Gauges
+picture hpbar_back 478 340 68 7 hpbar_frame 0.9
+gauge hpbar        479 341 66 5 hpbar_full null hpbar_empty HP WE
+picture spbar_back 478 332 68 7 hpbar_frame 0.9
+gauge spbar        479 333 66 5 spbar_full null hpbar_empty SP WE
+picture grbar_back 478 324 68 7 hpbar_frame 0.9
+gauge grbar        479 325 66 5 grbar_full null hpbar_empty GRACE WE
+gauge lowfood      499 286 25 45 lowfood null null LOWFOOD WE
+gauge poisoned     501 299 20 30 poisoned null null POISONED WE
+
+# UpperPane (207, 27)
+picture title_back          0+227  0+27 610 56 title 0.9
+label_stat label_title     12+227 24+27 584 24 font_default_large WHITE TITLE LEFT
+
+# UpperBar (113, 0)
+picture up_back             0+113 0 813 29 background_up 0.9
+label_stat label_stat_str 312+113 3 26 19 font_types WHITE STR CENTER
+label_stat label_stat_dex 397+113 3 26 19 font_types WHITE DEX CENTER
+label_stat label_stat_con 482+113 3 26 19 font_types WHITE CON CENTER
+label_stat label_stat_int 567+113 3 26 19 font_types WHITE INT CENTER
+label_stat label_stat_pow 652+113 3 26 19 font_types WHITE POW CENTER
+label_stat label_stat_wis 737+113 3 26 19 font_types WHITE WIS CENTER
+label_stat label_stat_cha 822+113 3 26 19 font_types WHITE CHA CENTER
+
+picture magicmap_content 0+113 20+3 232 232 magicmap_content 0.9
+minimap magicmap        18+113 38+3 196 196
+set_invisible magicmap_content
+set_invisible magicmap
+commandlist command_magicmap_display AND
+commandlist_add command_magicmap_display magicmap_content SHOW
+commandlist_add command_magicmap_display magicmap SHOW
+commandlist command_magicmap_undisplay AND
+commandlist_add command_magicmap_undisplay magicmap_content HIDE
+commandlist_add command_magicmap_undisplay magicmap HIDE
+event magicmap command_magicmap_display
+
+button btn_magicmap_hide 0+63 0+3 232 20 magicmap_extended_inactive magicmap_extended_active false command_magicmap_undisplay
+button btn_magicmap_show 0+63 0+3 232 20 magicmap_shrinked_inactive magicmap_shrinked_active false command_magicmap_display
+
+commandlist command_menu_display AND
+
+button btn_menu 260+63 0+3 50 20 button_menu_inactive button_menu_active false command_menu_display
+
+set_invisible btn_magicmap_hide
+commandlist_add command_magicmap_undisplay btn_magicmap_show SHOW
+commandlist_add command_magicmap_undisplay btn_magicmap_hide HIDE
+commandlist_add command_magicmap_display btn_magicmap_show HIDE
+commandlist_add command_magicmap_display btn_magicmap_hide SHOW
+
+# LeftBar (0, 0)
+picture left_back_top    0  0 113 87 background_left_top 0.9
+picture left_back_bottom 0 87  29 681 background_left_bottom 0.9
+
+# RightBar (926, 0)
+picture right_back_top     0+926   0 98 103 background_right_top 0.9
+#picture right_back_bottom 68+926 103 30 665 background_right_bottom 0.9
+
+# LInventory (26, 171)
+picture shortcuts_left_back 0+26 171 45 597 shortcuts_left 0.9
+item shortcut shortcut0 0+5+26   0+34+171 32 32  0 spell_cast spell_invoke font_default_small
+item shortcut shortcut1 0+5+26  46+34+171 32 32  1 spell_cast spell_invoke font_default_small
+item shortcut shortcut2 0+5+26  92+34+171 32 32  2 spell_cast spell_invoke font_default_small
+item shortcut shortcut3 0+5+26 138+34+171 32 32  3 spell_cast spell_invoke font_default_small
+item shortcut shortcut4 0+5+26 184+34+171 32 32  4 spell_cast spell_invoke font_default_small
+item shortcut shortcut5 0+5+26 230+34+171 32 32  5 spell_cast spell_invoke font_default_small
+item shortcut shortcut6 0+5+26 276+34+171 32 32  6 spell_cast spell_invoke font_default_small
+item shortcut shortcut7 0+5+26 322+34+171 32 32  7 spell_cast spell_invoke font_default_small
+item shortcut shortcut8 0+5+26 368+34+171 32 32  8 spell_cast spell_invoke font_default_small
+item shortcut shortcut9 0+5+26 414+34+171 32 32  9 spell_cast spell_invoke font_default_small
+item shortcut shortcutA 0+5+26 460+34+171 32 32 10 spell_cast spell_invoke font_default_small
+item shortcut shortcutB 0+5+26 506+34+171 32 32 11 spell_cast spell_invoke font_default_small
+commandlist_add command_shortcut0 shortcut0 GUI_EXECUTE_ELEMENT
+commandlist_add command_shortcut1 shortcut1 GUI_EXECUTE_ELEMENT
+commandlist_add command_shortcut2 shortcut2 GUI_EXECUTE_ELEMENT
+commandlist_add command_shortcut3 shortcut3 GUI_EXECUTE_ELEMENT
+commandlist_add command_shortcut4 shortcut4 GUI_EXECUTE_ELEMENT
+commandlist_add command_shortcut5 shortcut5 GUI_EXECUTE_ELEMENT
+commandlist_add command_shortcut6 shortcut6 GUI_EXECUTE_ELEMENT
+commandlist_add command_shortcut7 shortcut7 GUI_EXECUTE_ELEMENT
+commandlist_add command_shortcut8 shortcut8 GUI_EXECUTE_ELEMENT
+commandlist_add command_shortcut9 shortcut9 GUI_EXECUTE_ELEMENT
+commandlist_add command_shortcutA shortcutA GUI_EXECUTE_ELEMENT
+commandlist_add command_shortcutB shortcutB GUI_EXECUTE_ELEMENT
+
+# RInventory (973, 53)
+picture inv_right_back 8+973 0+53 43 715 inventory 0.9
+item inventory rinv0 0+973+14   0+53+9 32 32  0
+item inventory rinv1 0+973+14  35+53+9 32 32  1
+item inventory rinv2 0+973+14  70+53+9 32 32  2
+item inventory rinv3 0+973+14 105+53+9 32 32  3
+item inventory rinv4 0+973+14 140+53+9 32 32  4
+item inventory rinv5 0+973+14 175+53+9 32 32  5
+item inventory rinv6 0+973+14 210+53+9 32 32  6
+item inventory rinv7 0+973+14 245+53+9 32 32  7
+item inventory rinv8 0+973+14 280+53+9 32 32  8
+item inventory rinv9 0+973+14 315+53+9 32 32  9
+item inventory rinvA 0+973+14 350+53+9 32 32 10
+item inventory rinvB 0+973+14 385+53+9 32 32 11
+item inventory rinvC 0+973+14 420+53+9 32 32 12
+item inventory rinvD 0+973+14 455+53+9 32 32 13
+item inventory rinvE 0+973+14 490+53+9 32 32 14
+item inventory rinvF 0+973+14 525+53+9 32 32 15
+item inventory rinvG 0+973+14 560+53+9 32 32 16
+item inventory rinvH 0+973+14 595+53+9 32 32 17
+item inventory rinvI 0+973+14 630+53+9 32 32 18
+item inventory rinvJ 0+973+14 665+53+9 32 32 19
+
+item spelllist rsp0 0+973+14   0+53+9 32 32  0 #F7FBA6/0.6
+item spelllist rsp1 0+973+14  35+53+9 32 32  1 #F7FBA6/0.6
+item spelllist rsp2 0+973+14  70+53+9 32 32  2 #F7FBA6/0.6
+item spelllist rsp3 0+973+14 105+53+9 32 32  3 #F7FBA6/0.6
+item spelllist rsp4 0+973+14 140+53+9 32 32  4 #F7FBA6/0.6
+item spelllist rsp5 0+973+14 175+53+9 32 32  5 #F7FBA6/0.6
+item spelllist rsp6 0+973+14 210+53+9 32 32  6 #F7FBA6/0.6
+item spelllist rsp7 0+973+14 245+53+9 32 32  7 #F7FBA6/0.6
+item spelllist rsp8 0+973+14 280+53+9 32 32  8 #F7FBA6/0.6
+item spelllist rsp9 0+973+14 315+53+9 32 32  9 #F7FBA6/0.6
+item spelllist rspA 0+973+14 350+53+9 32 32 10 #F7FBA6/0.6
+item spelllist rspB 0+973+14 385+53+9 32 32 11 #F7FBA6/0.6
+item spelllist rspC 0+973+14 420+53+9 32 32 12 #F7FBA6/0.6
+item spelllist rspD 0+973+14 455+53+9 32 32 13 #F7FBA6/0.6
+item spelllist rspE 0+973+14 490+53+9 32 32 14 #F7FBA6/0.6
+item spelllist rspF 0+973+14 525+53+9 32 32 15 #F7FBA6/0.6
+item spelllist rspG 0+973+14 560+53+9 32 32 16 #F7FBA6/0.6
+item spelllist rspH 0+973+14 595+53+9 32 32 17 #F7FBA6/0.6
+item spelllist rspI 0+973+14 630+53+9 32 32 18 #F7FBA6/0.6
+item spelllist rspJ 0+973+14 665+53+9 32 32 19 #F7FBA6/0.6
+
+commandlist rinv_up AND
+commandlist_add rinv_up rinv0 SCROLL -1
+commandlist_add rinv_up rinv1 SCROLL -1
+commandlist_add rinv_up rinv2 SCROLL -1
+commandlist_add rinv_up rinv3 SCROLL -1
+commandlist_add rinv_up rinv4 SCROLL -1
+commandlist_add rinv_up rinv5 SCROLL -1
+commandlist_add rinv_up rinv6 SCROLL -1
+commandlist_add rinv_up rinv7 SCROLL -1
+commandlist_add rinv_up rinv8 SCROLL -1
+commandlist_add rinv_up rinv9 SCROLL -1
+commandlist_add rinv_up rinvA SCROLL -1
+commandlist_add rinv_up rinvB SCROLL -1
+commandlist_add rinv_up rinvC SCROLL -1
+commandlist_add rinv_up rinvD SCROLL -1
+commandlist_add rinv_up rinvE SCROLL -1
+commandlist_add rinv_up rinvF SCROLL -1
+commandlist_add rinv_up rinvG SCROLL -1
+commandlist_add rinv_up rinvH SCROLL -1
+commandlist_add rinv_up rinvI SCROLL -1
+commandlist_add rinv_up rinvJ SCROLL -1
+
+commandlist rinv_down AND
+commandlist_add rinv_down rinv0 SCROLL 1
+commandlist_add rinv_down rinv1 SCROLL 1
+commandlist_add rinv_down rinv2 SCROLL 1
+commandlist_add rinv_down rinv3 SCROLL 1
+commandlist_add rinv_down rinv4 SCROLL 1
+commandlist_add rinv_down rinv5 SCROLL 1
+commandlist_add rinv_down rinv6 SCROLL 1
+commandlist_add rinv_down rinv7 SCROLL 1
+commandlist_add rinv_down rinv8 SCROLL 1
+commandlist_add rinv_down rinv9 SCROLL 1
+commandlist_add rinv_down rinvA SCROLL 1
+commandlist_add rinv_down rinvB SCROLL 1
+commandlist_add rinv_down rinvC SCROLL 1
+commandlist_add rinv_down rinvD SCROLL 1
+commandlist_add rinv_down rinvE SCROLL 1
+commandlist_add rinv_down rinvF SCROLL 1
+commandlist_add rinv_down rinvG SCROLL 1
+commandlist_add rinv_down rinvH SCROLL 1
+commandlist_add rinv_down rinvI SCROLL 1
+commandlist_add rinv_down rinvJ SCROLL 1
+
+commandlist rsp_up AND
+commandlist_add rsp_up rsp0 SCROLL -1
+commandlist_add rsp_up rsp1 SCROLL -1
+commandlist_add rsp_up rsp2 SCROLL -1
+commandlist_add rsp_up rsp3 SCROLL -1
+commandlist_add rsp_up rsp4 SCROLL -1
+commandlist_add rsp_up rsp5 SCROLL -1
+commandlist_add rsp_up rsp6 SCROLL -1
+commandlist_add rsp_up rsp7 SCROLL -1
+commandlist_add rsp_up rsp8 SCROLL -1
+commandlist_add rsp_up rsp9 SCROLL -1
+commandlist_add rsp_up rspA SCROLL -1
+commandlist_add rsp_up rspB SCROLL -1
+commandlist_add rsp_up rspC SCROLL -1
+commandlist_add rsp_up rspD SCROLL -1
+commandlist_add rsp_up rspE SCROLL -1
+commandlist_add rsp_up rspF SCROLL -1
+commandlist_add rsp_up rspG SCROLL -1
+commandlist_add rsp_up rspH SCROLL -1
+commandlist_add rsp_up rspI SCROLL -1
+commandlist_add rsp_up rspJ SCROLL -1
+
+commandlist rsp_down AND
+commandlist_add rsp_down rsp0 SCROLL 1
+commandlist_add rsp_down rsp1 SCROLL 1
+commandlist_add rsp_down rsp2 SCROLL 1
+commandlist_add rsp_down rsp3 SCROLL 1
+commandlist_add rsp_down rsp4 SCROLL 1
+commandlist_add rsp_down rsp5 SCROLL 1
+commandlist_add rsp_down rsp6 SCROLL 1
+commandlist_add rsp_down rsp7 SCROLL 1
+commandlist_add rsp_down rsp8 SCROLL 1
+commandlist_add rsp_down rsp9 SCROLL 1
+commandlist_add rsp_down rspA SCROLL 1
+commandlist_add rsp_down rspB SCROLL 1
+commandlist_add rsp_down rspC SCROLL 1
+commandlist_add rsp_down rspD SCROLL 1
+commandlist_add rsp_down rspE SCROLL 1
+commandlist_add rsp_down rspF SCROLL 1
+commandlist_add rsp_down rspG SCROLL 1
+commandlist_add rsp_down rspH SCROLL 1
+commandlist_add rsp_down rspI SCROLL 1
+commandlist_add rsp_down rspJ SCROLL 1
+
+button btn_rinv_up 0+973 13+53 10 31 inv_scrollup_inactive inv_scrollup_pushed true rinv_up
+button btn_rinv_down 0+973 656+53 10 31 inv_scrolldown_inactive inv_scrolldown_pushed true rinv_down
+
+button btn_rsp_up 0+973 13+53 10 31 inv_scrollup_inactive inv_scrollup_pushed true rsp_up
+button btn_rsp_down 0+973 656+53 10 31 inv_scrolldown_inactive inv_scrolldown_pushed true rsp_down
+
+set_invisible btn_rsp_up
+set_invisible btn_rsp_down
+set_invisible rsp0
+set_invisible rsp1
+set_invisible rsp2
+set_invisible rsp3
+set_invisible rsp4
+set_invisible rsp5
+set_invisible rsp6
+set_invisible rsp7
+set_invisible rsp8
+set_invisible rsp9
+set_invisible rspA
+set_invisible rspB
+set_invisible rspC
+set_invisible rspD
+set_invisible rspE
+set_invisible rspF
+set_invisible rspG
+set_invisible rspH
+set_invisible rspI
+set_invisible rspJ
+
+# SecondaryStats (319, 621)
+label_stat label_sstat_level   0+309  4+621 110 20 font_stats14 WHITE LEVEL LEFT
+label_stat label_sstat_exp     0+309 27+621 110 20 font_stats14 WHITE EXP LEFT
+label_stat label_sstat_range   0+309 49+621 110 20 font_stats14 WHITE RANGE LEFT
+label_stat label_sstat_wc    200+309  4+621  56 20 font_stats14 WHITE WC RIGHT
+label_stat label_sstat_ac    200+309 27+621  56 20 font_stats14 WHITE AC RIGHT
+label_stat label_sstat_dam   200+309 49+621  56 20 font_stats14 WHITE DAM RIGHT
+label_stat label_sstat_speed 200+309 71+621  56 20 font_stats14 WHITE SPEED RIGHT
+
+# Panel (199, 551)
+picture panel_back_dragon_left    0+199 24+551  90  53 background_panel_dragon_left 0.9
+picture panel_back_dragon_right 543+199  0+551  62  64 background_panel_dragon_right 0.9
+picture panel_back_bottom         0+199 64+551 626 153 background_panel_bottom 0.9
+picture panel_spells 392+199 74+551 224 123 spell_panel 0.9
+label_spell label_panel_spells_icon 400+199 85+551 100 20 font_stats14 SPELL_ICON
+label_spell label_panel_spells_name 450+199 85+551 100 20 font_stats14 SPELL_NAME
+label_spell label_panel_spells_description 450+199 105+551 100 20 font_stats14 SPELL_DESCRIPTION
+
+set_invisible panel_spells
+set_invisible label_panel_spells_icon
+set_invisible label_panel_spells_name
+set_invisible label_panel_spells_description
+
+set_num_look_objects 11
+item floor floor0 0+199+9     0+551+165 32 32  0
+item floor floor1 0+199+9+34  0+551+165 32 32  1
+item floor floor2 0+199+9+68  0+551+165 32 32  2
+item floor floor3 0+199+9+102 0+551+165 32 32  3
+item floor floor4 0+199+9+136 0+551+165 32 32  4
+item floor floor5 0+199+9+170 0+551+165 32 32  5
+item floor floor6 0+199+9+204 0+551+165 32 32  6
+item floor floor7 0+199+9+238 0+551+165 32 32  7
+item floor floor8 0+199+9+272 0+551+165 32 32  8
+item floor floor9 0+199+9+306 0+551+165 32 32  9
+item floor floorA 0+199+9+340 0+551+165 32 32 10
+
+# Resistances (630, 628)
+picture gr0_back   0+630   0+628 29 11 res_gauge_empty 0.9
+picture gr1_back  76+630   0+628 29 11 res_gauge_empty 0.9
+picture gr2_back 152+630   0+628 29 11 res_gauge_empty 0.9
+picture gr3_back   0+630  21+628 29 11 res_gauge_empty 0.9
+picture gr4_back  76+630  21+628 29 11 res_gauge_empty 0.9
+picture gr5_back 152+630  21+628 29 11 res_gauge_empty 0.9
+picture gr6_back   0+630  42+628 29 11 res_gauge_empty 0.9
+picture gr7_back  76+630  42+628 29 11 res_gauge_empty 0.9
+picture gr8_back 152+630  42+628 29 11 res_gauge_empty 0.9
+picture gr9_back   0+630  63+628 29 11 res_gauge_empty 0.9
+picture grA_back  76+630  63+628 29 11 res_gauge_empty 0.9
+picture grB_back 152+630  63+628 29 11 res_gauge_empty 0.9
+picture grC_back   0+630  84+628 29 11 res_gauge_empty 0.9
+picture grD_back  76+630  84+628 29 11 res_gauge_empty 0.9
+picture grE_back 152+630  84+628 29 11 res_gauge_empty 0.9
+picture grF_back   0+630 105+628 29 11 res_gauge_empty 0.9
+picture grG_back  76+630 105+628 29 11 res_gauge_empty 0.9
+picture grH_back 152+630 105+628 29 11 res_gauge_empty 0.9
+
+
+gauge gr0   0+630   0+628 29 11 res_gauge_positive res_gauge_negative res_gauge_empty RES_PHYS WE Phyical:
+gauge gr1  76+630   0+628 29 11 res_gauge_positive res_gauge_negative res_gauge_empty RES_MAG WE Magic:
+gauge gr2 152+630   0+628 29 11 res_gauge_positive res_gauge_negative res_gauge_empty RES_FIRE WE Fire:
+gauge gr3   0+630  21+628 29 11 res_gauge_positive res_gauge_negative res_gauge_empty RES_ELEC WE Electricity:
+gauge gr4  76+630  21+628 29 11 res_gauge_positive res_gauge_negative res_gauge_empty RES_COLD WE Cold:
+gauge gr5 152+630  21+628 29 11 res_gauge_positive res_gauge_negative res_gauge_empty RES_CONF WE Confusion:
+gauge gr6   0+630  42+628 29 11 res_gauge_positive res_gauge_negative res_gauge_empty RES_ACID WE Acid:
+gauge gr7  76+630  42+628 29 11 res_gauge_positive res_gauge_negative res_gauge_empty RES_DRAIN WE Drain:
+gauge gr8 152+630  42+628 29 11 res_gauge_positive res_gauge_negative res_gauge_empty RES_GHOSTHIT WE Ghosthit:
+gauge gr9   0+630  63+628 29 11 res_gauge_positive res_gauge_negative res_gauge_empty RES_POISON WE Poison:
+gauge grA  76+630  63+628 29 11 res_gauge_positive res_gauge_negative res_gauge_empty RES_SLOW WE Slow:
+gauge grB 152+630  63+628 29 11 res_gauge_positive res_gauge_negative res_gauge_empty RES_PARA WE Paralyze:
+gauge grC   0+630  84+628 29 11 res_gauge_positive res_gauge_negative res_gauge_empty RES_TURN_UNDEAD WE Turn Undead:
+gauge grD  76+630  84+628 29 11 res_gauge_positive res_gauge_negative res_gauge_empty RES_FEAR WE Fear:
+gauge grE 152+630  84+628 29 11 res_gauge_positive res_gauge_negative res_gauge_empty RES_DEPLETE WE Depletion:
+gauge grF   0+630 105+628 29 11 res_gauge_positive res_gauge_negative res_gauge_empty RES_DEATH WE Death:
+gauge grG  76+630 105+628 29 11 res_gauge_positive res_gauge_negative res_gauge_empty RES_HOLYWORD WE Holy Word:
+gauge grH 152+630 105+628 29 11 res_gauge_positive res_gauge_negative res_gauge_empty RES_BLIND WE Blind:
+
+# LowerBar (72, 732)
+picture lower_bar 0+72 0+732 880 36 lower_bar 0.9
+command_text command 127+66 20+732 512+46 16 command_active command_active font_cmdline11 GRAY WHITE 8 true
+
+commandlist rsp_display AND
+commandlist_add rsp_display rinv0 HIDE
+commandlist_add rsp_display rinv1 HIDE
+commandlist_add rsp_display rinv2 HIDE
+commandlist_add rsp_display rinv3 HIDE
+commandlist_add rsp_display rinv4 HIDE
+commandlist_add rsp_display rinv5 HIDE
+commandlist_add rsp_display rinv6 HIDE
+commandlist_add rsp_display rinv7 HIDE
+commandlist_add rsp_display rinv8 HIDE
+commandlist_add rsp_display rinv9 HIDE
+commandlist_add rsp_display rinvA HIDE
+commandlist_add rsp_display rinvB HIDE
+commandlist_add rsp_display rinvC HIDE
+commandlist_add rsp_display rinvD HIDE
+commandlist_add rsp_display rinvE HIDE
+commandlist_add rsp_display rinvF HIDE
+commandlist_add rsp_display rinvG HIDE
+commandlist_add rsp_display rinvH HIDE
+commandlist_add rsp_display rinvI HIDE
+commandlist_add rsp_display rinvJ HIDE
+commandlist_add rsp_display rsp0 SHOW
+commandlist_add rsp_display rsp1 SHOW
+commandlist_add rsp_display rsp2 SHOW
+commandlist_add rsp_display rsp3 SHOW
+commandlist_add rsp_display rsp4 SHOW
+commandlist_add rsp_display rsp5 SHOW
+commandlist_add rsp_display rsp6 SHOW
+commandlist_add rsp_display rsp7 SHOW
+commandlist_add rsp_display rsp8 SHOW
+commandlist_add rsp_display rsp9 SHOW
+commandlist_add rsp_display rspA SHOW
+commandlist_add rsp_display rspB SHOW
+commandlist_add rsp_display rspC SHOW
+commandlist_add rsp_display rspD SHOW
+commandlist_add rsp_display rspE SHOW
+commandlist_add rsp_display rspF SHOW
+commandlist_add rsp_display rspG SHOW
+commandlist_add rsp_display rspH SHOW
+commandlist_add rsp_display rspI SHOW
+commandlist_add rsp_display rspJ SHOW
+commandlist_add rsp_display btn_rsp_up SHOW
+commandlist_add rsp_display btn_rsp_down SHOW
+commandlist_add rsp_display btn_rinv_up HIDE
+commandlist_add rsp_display btn_rinv_down HIDE
+commandlist_add rsp_display panel_spells SHOW
+commandlist_add rsp_display label_panel_spells_icon SHOW
+commandlist_add rsp_display label_panel_spells_name SHOW
+commandlist_add rsp_display label_panel_spells_description SHOW
+commandlist_add rsp_display gr0 HIDE
+commandlist_add rsp_display gr1 HIDE
+commandlist_add rsp_display gr2 HIDE
+commandlist_add rsp_display gr3 HIDE
+commandlist_add rsp_display gr4 HIDE
+commandlist_add rsp_display gr5 HIDE
+commandlist_add rsp_display gr6 HIDE
+commandlist_add rsp_display gr7 HIDE
+commandlist_add rsp_display gr8 HIDE
+commandlist_add rsp_display gr9 HIDE
+commandlist_add rsp_display grA HIDE
+commandlist_add rsp_display grB HIDE
+commandlist_add rsp_display grC HIDE
+commandlist_add rsp_display grD HIDE
+commandlist_add rsp_display grE HIDE
+commandlist_add rsp_display grF HIDE
+commandlist_add rsp_display grG HIDE
+commandlist_add rsp_display grH HIDE
+commandlist_add rsp_display gr0_back HIDE
+commandlist_add rsp_display gr1_back HIDE
+commandlist_add rsp_display gr2_back HIDE
+commandlist_add rsp_display gr3_back HIDE
+commandlist_add rsp_display gr4_back HIDE
+commandlist_add rsp_display gr5_back HIDE
+commandlist_add rsp_display gr6_back HIDE
+commandlist_add rsp_display gr7_back HIDE
+commandlist_add rsp_display gr8_back HIDE
+commandlist_add rsp_display gr9_back HIDE
+commandlist_add rsp_display grA_back HIDE
+commandlist_add rsp_display grB_back HIDE
+commandlist_add rsp_display grC_back HIDE
+commandlist_add rsp_display grD_back HIDE
+commandlist_add rsp_display grE_back HIDE
+commandlist_add rsp_display grF_back HIDE
+commandlist_add rsp_display grG_back HIDE
+commandlist_add rsp_display grH_back HIDE
+
+commandlist rsp_undisplay AND
+commandlist_add rsp_undisplay rsp0 HIDE
+commandlist_add rsp_undisplay rsp1 HIDE
+commandlist_add rsp_undisplay rsp2 HIDE
+commandlist_add rsp_undisplay rsp3 HIDE
+commandlist_add rsp_undisplay rsp4 HIDE
+commandlist_add rsp_undisplay rsp5 HIDE
+commandlist_add rsp_undisplay rsp6 HIDE
+commandlist_add rsp_undisplay rsp7 HIDE
+commandlist_add rsp_undisplay rsp8 HIDE
+commandlist_add rsp_undisplay rsp9 HIDE
+commandlist_add rsp_undisplay rspA HIDE
+commandlist_add rsp_undisplay rspB HIDE
+commandlist_add rsp_undisplay rspC HIDE
+commandlist_add rsp_undisplay rspD HIDE
+commandlist_add rsp_undisplay rspE HIDE
+commandlist_add rsp_undisplay rspF HIDE
+commandlist_add rsp_undisplay rspG HIDE
+commandlist_add rsp_undisplay rspH HIDE
+commandlist_add rsp_undisplay rspI HIDE
+commandlist_add rsp_undisplay rspJ HIDE
+commandlist_add rsp_undisplay rinv0 SHOW
+commandlist_add rsp_undisplay rinv1 SHOW
+commandlist_add rsp_undisplay rinv2 SHOW
+commandlist_add rsp_undisplay rinv3 SHOW
+commandlist_add rsp_undisplay rinv4 SHOW
+commandlist_add rsp_undisplay rinv5 SHOW
+commandlist_add rsp_undisplay rinv6 SHOW
+commandlist_add rsp_undisplay rinv7 SHOW
+commandlist_add rsp_undisplay rinv8 SHOW
+commandlist_add rsp_undisplay rinv9 SHOW
+commandlist_add rsp_undisplay rinvA SHOW
+commandlist_add rsp_undisplay rinvB SHOW
+commandlist_add rsp_undisplay rinvC SHOW
+commandlist_add rsp_undisplay rinvD SHOW
+commandlist_add rsp_undisplay rinvE SHOW
+commandlist_add rsp_undisplay rinvF SHOW
+commandlist_add rsp_undisplay rinvG SHOW
+commandlist_add rsp_undisplay rinvH SHOW
+commandlist_add rsp_undisplay rinvI SHOW
+commandlist_add rsp_undisplay rinvJ SHOW
+commandlist_add rsp_undisplay btn_rsp_up HIDE
+commandlist_add rsp_undisplay btn_rsp_down HIDE
+commandlist_add rsp_undisplay btn_rinv_up SHOW
+commandlist_add rsp_undisplay btn_rinv_down SHOW
+commandlist_add rsp_undisplay panel_spells HIDE
+commandlist_add rsp_undisplay label_panel_spells_icon HIDE
+commandlist_add rsp_undisplay label_panel_spells_name HIDE
+commandlist_add rsp_undisplay label_panel_spells_description HIDE
+commandlist_add rsp_undisplay gr0 SHOW
+commandlist_add rsp_undisplay gr1 SHOW
+commandlist_add rsp_undisplay gr2 SHOW
+commandlist_add rsp_undisplay gr3 SHOW
+commandlist_add rsp_undisplay gr4 SHOW
+commandlist_add rsp_undisplay gr5 SHOW
+commandlist_add rsp_undisplay gr6 SHOW
+commandlist_add rsp_undisplay gr7 SHOW
+commandlist_add rsp_undisplay gr8 SHOW
+commandlist_add rsp_undisplay gr9 SHOW
+commandlist_add rsp_undisplay grA SHOW
+commandlist_add rsp_undisplay grB SHOW
+commandlist_add rsp_undisplay grC SHOW
+commandlist_add rsp_undisplay grD SHOW
+commandlist_add rsp_undisplay grE SHOW
+commandlist_add rsp_undisplay grF SHOW
+commandlist_add rsp_undisplay grG SHOW
+commandlist_add rsp_undisplay grH SHOW
+commandlist_add rsp_undisplay gr0_back SHOW
+commandlist_add rsp_undisplay gr1_back SHOW
+commandlist_add rsp_undisplay gr2_back SHOW
+commandlist_add rsp_undisplay gr3_back SHOW
+commandlist_add rsp_undisplay gr4_back SHOW
+commandlist_add rsp_undisplay gr5_back SHOW
+commandlist_add rsp_undisplay gr6_back SHOW
+commandlist_add rsp_undisplay gr7_back SHOW
+commandlist_add rsp_undisplay gr8_back SHOW
+commandlist_add rsp_undisplay gr9_back SHOW
+commandlist_add rsp_undisplay grA_back SHOW
+commandlist_add rsp_undisplay grB_back SHOW
+commandlist_add rsp_undisplay grC_back SHOW
+commandlist_add rsp_undisplay grD_back SHOW
+commandlist_add rsp_undisplay grE_back SHOW
+commandlist_add rsp_undisplay grF_back SHOW
+commandlist_add rsp_undisplay grG_back SHOW
+commandlist_add rsp_undisplay grH_back SHOW
+
+button btn_rsp_display 690+72 22+732 25 14 button_chat_inactive button_chat_active false rsp_display
+button btn_rsp_undisplay 690+72 22+732 25 14 button_chat_pushed button_chat_active false rsp_undisplay
+set_invisible btn_rsp_undisplay
+commandlist_add rsp_undisplay btn_rsp_undisplay HIDE
+commandlist_add rsp_undisplay btn_rsp_display SHOW
+commandlist_add rsp_display btn_rsp_display HIDE
+commandlist_add rsp_display btn_rsp_undisplay SHOW
+
+button btn_stats 720+72 22+732 25 14 button_stat_inactive button_stat_active false command_menu_display
+
+# TextPaneUp (679, 100)
+picture log_upper_back 0+679 0+100 272 204 log1_background 0.9
+picture log_upper_back2 288+679 175+100 14 10 log1_background2 0.9
+log_message log_upper 10+679 3+100 250 198 null font_log_print font_log_fixed font_log_fixed_bold font_log_arcane WHITE
+log_color log_upper 0 WHITE
+commandlist command_log_upper_up AND log_upper SCROLL -1
+commandlist command_log_upper_down AND log_upper SCROLL 1
+
+button log_upper_up 0+679 0+100 10 31 inv_scrollup_inactive inv_scrollup_inactive true command_log_upper_up
+scrollbar log_upper_scroll 0+679 0+100+31 10 180-31 false log_upper #303030 #c0c0c0
+button log_upper_down 0+679 180+100 10 31 inv_scrolldown_inactive inv_scrolldown_inactive true command_log_upper_down
+
+commandlist command_log_open AND
+commandlist command_log_close AND
+button log_open 270+681 160+100 16 40 log1_shrinked_inactive log1_shrinked_pushed false command_log_open
+button log_close 270+681 160+100 16 40 log1_expanded_inactive log1_expanded_pushed false command_log_close
+commandlist_add command_log_open log_upper_back SHOW
+commandlist_add command_log_open log_upper SHOW
+commandlist_add command_log_open log_upper_up SHOW
+commandlist_add command_log_open log_upper_down SHOW
+commandlist_add command_log_open log_open HIDE
+commandlist_add command_log_open log_close SHOW
+commandlist_add command_log_close log_upper_back HIDE
+commandlist_add command_log_close log_upper HIDE
+commandlist_add command_log_close log_upper_up HIDE
+commandlist_add command_log_close log_upper_down HIDE
+commandlist_add command_log_close log_open SHOW
+commandlist_add command_log_close log_close HIDE
+set_invisible log_open
+
+add panel_back_dragon_left
+add panel_back_dragon_right
+add label_hp
+add label_fp
+add label_sp
+add label_gp
+add label_sstat_level
+add label_sstat_exp
+add label_sstat_wc
+add label_sstat_ac
+add label_sstat_dam
+add label_sstat_speed
+add label_sstat_range
+add btn_magicmap_hide
+add btn_magicmap_show
+
+ignore panel_back_dragon_left
+ignore panel_back_dragon_right
+ignore lower_bar
+ignore sword_back
+ignore staff_back
+ignore right_back_top
+ignore left_back_top
+ignore log_upper_back
+ignore log_upper_back2
+ignore title_back
+
+commandlist command_inventory_reset OR
+commandlist_add command_inventory_reset rinv0 SCROLL_RESET
+commandlist_add command_inventory_reset rinv1 SCROLL_RESET
+commandlist_add command_inventory_reset rinv2 SCROLL_RESET
+commandlist_add command_inventory_reset rinv3 SCROLL_RESET
+commandlist_add command_inventory_reset rinv4 SCROLL_RESET
+commandlist_add command_inventory_reset rinv5 SCROLL_RESET
+commandlist_add command_inventory_reset rinv6 SCROLL_RESET
+commandlist_add command_inventory_reset rinv7 SCROLL_RESET
+commandlist_add command_inventory_reset rinv8 SCROLL_RESET
+commandlist_add command_inventory_reset rinv9 SCROLL_RESET
+commandlist_add command_inventory_reset rinvA SCROLL_RESET
+commandlist_add command_inventory_reset rinvB SCROLL_RESET
+commandlist_add command_inventory_reset rinvC SCROLL_RESET
+commandlist_add command_inventory_reset rinvD SCROLL_RESET
+commandlist_add command_inventory_reset rinvE SCROLL_RESET
+commandlist_add command_inventory_reset rinvF SCROLL_RESET
+commandlist_add command_inventory_reset rinvG SCROLL_RESET
+commandlist_add command_inventory_reset rinvH SCROLL_RESET
+commandlist_add command_inventory_reset rinvI SCROLL_RESET
+commandlist_add command_inventory_reset rinvJ SCROLL_RESET
+event connect command_inventory_reset
+
+commandlist command_spells_reset OR
+commandlist_add command_spells_reset rsp0 SCROLL_RESET
+commandlist_add command_spells_reset rsp1 SCROLL_RESET
+commandlist_add command_spells_reset rsp2 SCROLL_RESET
+commandlist_add command_spells_reset rsp3 SCROLL_RESET
+commandlist_add command_spells_reset rsp4 SCROLL_RESET
+commandlist_add command_spells_reset rsp5 SCROLL_RESET
+commandlist_add command_spells_reset rsp6 SCROLL_RESET
+commandlist_add command_spells_reset rsp7 SCROLL_RESET
+commandlist_add command_spells_reset rsp8 SCROLL_RESET
+commandlist_add command_spells_reset rsp9 SCROLL_RESET
+commandlist_add command_spells_reset rspA SCROLL_RESET
+commandlist_add command_spells_reset rspB SCROLL_RESET
+commandlist_add command_spells_reset rspC SCROLL_RESET
+commandlist_add command_spells_reset rspD SCROLL_RESET
+commandlist_add command_spells_reset rspE SCROLL_RESET
+commandlist_add command_spells_reset rspF SCROLL_RESET
+commandlist_add command_spells_reset rspG SCROLL_RESET
+commandlist_add command_spells_reset rspH SCROLL_RESET
+commandlist_add command_spells_reset rspI SCROLL_RESET
+commandlist_add command_spells_reset rspJ SCROLL_RESET
+event connect command_spells_reset
+
+commandlist command_messages_reset OR log_upper SCROLL_RESET
+event connect command_messages_reset
