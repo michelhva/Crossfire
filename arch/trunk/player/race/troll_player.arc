@@ -4,6 +4,12 @@ race troll
 randomitems troll_player_items
 face troll_p.151
 msg
+Skills: None
+Resistances: Fire -30, Cold +30
+Attunements: Repelled fire
+Special: Fast HP regeneration, slow SP regeneration
+
+Description:
 Trolls are usually nasty creatures: scions of Gnarg. They have amazing strength and hardiness, but they're a bit clumsy, very stupid, impious, and bad at handling and obtaining magic. They heal with amazing rapidity and can see in the dark. Because of the above attributes, they're great in any fight. Well, they're great until someone waves torches at them: fire presents great peril to trolls.
 Most trolls are destroyed on sight by civilized people: but a few have proved deserving of tolerance and are permitted to enter cities.
 endmsg

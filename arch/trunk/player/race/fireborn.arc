@@ -4,10 +4,17 @@ race fire_elemental
 randomitems fireborn_player_items
 face fireborn.111
 msg
+Skills: Levivation, Flame Touch, Praying, Pyromancy
+Resistances: Cold -30, Ghosthit -50, Immunity to Poison and Fire
+Attunements: Attune Fire
+Special: Can not use weapons & armor, can wear 4 rings, glowing aura, fast SP regeneration
+
+Description:
 Legends say that fireborn are sparks struck off the anvil of creation, with life and spirit, and eventually mind. Those who research magic think that they are relatives of some kind to will o' the wisps. An observer seeing one for the first time would see a strangely intelligent vortex of flame somehow carrying items without burning them.
 Their insubstantial nature makes them both very weak and very quick. Their minds are agile, and they are able to commune well with the gods. However, their area of excellence is magic. They spellcast more powerfully than any other race, and mana flows into them readily. They can even cast cold spells with devastating effectiveness. They all know a basic fire spell.
 They have the ability to levitate at will, and they can touch to burn. As they gain more power, they are increasingly difficult to hit with weapons. However, they cannot use weapons or armour, and thereby miss out on many benefits (including powerful magical enchantments) those items may bring.
 Fire does not harm them, nor poison. Cold, spiritual drain, and physical drain present great peril to them.
+By their fiery nature, they glow like a bonfire.  This removes the need for them to carry a torch into dark dungeons, but at the same time can attract unfriendly monsters.
 endmsg
 animation fireborn_player
 is_animated 1

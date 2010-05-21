@@ -4,6 +4,12 @@ race human
 randomitems human_player_items
 face human.151
 msg
+Skills: Starts with random skill scroll
+Resistances: None
+Attunements: None
+Special: None
+
+Description:
 Humans are the generalists of the races. They are fit for any trade, and usually pick up a skill from their parents in addition to what they've learned as apprentices in their craft.
 endmsg
 animation human_player

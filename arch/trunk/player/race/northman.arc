@@ -4,6 +4,12 @@ race human
 randomitems northman_player_items
 face viking.151
 msg
+Skills: None
+Resistances: Cold +30
+Attunements: Repelled Fire
+Special: Starts with horned helmet.
+
+Description:
 Northmen are simply humans who have been shaped by their harsh environment. They are stronger, quicker, and hardier than most humans, but also stupid and impious. Most races also consider them a bit unattractive. They have some resistance to cold, but the few of them who take up magic find it difficult to master fire spells.
 endmsg
 animation northman_player
