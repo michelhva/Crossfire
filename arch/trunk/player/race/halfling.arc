@@ -4,6 +4,12 @@ race halfling
 randomitems halfling_player_items
 face halfling.151
 msg
+Skills: Stealing, Hiding
+Resistances: Drain +30
+Attunements: None
+Special: Lucky
+
+Description:
 Halflings are another sub-race of humankind, like the Northman. They are much smaller and shorter than humans, so they are weaker, but they are far quicker and hardier. They're quite unreligious, but many take up magic.
 Their small size lets them hide more effectively, and for some reason chance seems to favor them with good luck. They are also surprisingly resistant to loss of lifeforce.
 endmsg

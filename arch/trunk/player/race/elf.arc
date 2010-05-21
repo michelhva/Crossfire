@@ -4,6 +4,12 @@ name elf
 randomitems elf_player_items
 face elf.151
 msg
+Skills: Bowyer, Woodsman, Missile Weapons
+Resistances: None
+Attunements: None
+Special: Slow HP regeneration, fast SP regeneration, low food consumption, start with bow & arrows, See in dark
+
+Description:
 An Elf is a child of Faerie, a scion of Lythander. Being of Faerie, they heal more slowly than other races, but mana flows into them more quickly. They also need far less food than other races.
 Every elf is taught the use of a bow, but their long lives allow them to take up any trade. They are weaker and less hardy than humans, but quicker of body and mind, and generally make more powerful spellcasters. However, they have a notoriously offhanded attitude toward their religious devotions and make poor priests.
 As a race, Elves possess a preternatural beauty and eyes that see in the dark.
