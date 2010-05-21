@@ -1,6 +1,13 @@
 Changes for SVN top of tree:
 ==============================================================================
 
+Update several archetypes which had type of CLASS (37) but were not in
+fact class archetypes and instead more often used as NPC or monsters.
+Remove type so they default to monsters and give them some real stats.
+Also fixes bug in that requestinfo class_list would return these bogus
+entries.
+MSW 2010-05-20
+
 Update player race descriptions to explicitly state skills, resistances
 and other special ability - makes it easier to see what one gets without
 needing to read full description.

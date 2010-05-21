@@ -4,7 +4,8 @@ randomitems halfling
 face halfling.111
 animation halfling_p
 is_animated 0
-type 37
+hp 50
+maxhp 50
 level 1
 ac 10
 wc 21
@@ -17,10 +18,10 @@ weight 40000
 food 500
 speed 0.5
 attacktype 1
-Str -4
-Dex 3
-Con 4
-Wis -3
+Str 6
+Dex 13
+Con 14
+Wis 7
 body_range 1
 body_arm 2
 body_torso 1
