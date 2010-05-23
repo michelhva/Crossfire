@@ -3,7 +3,7 @@ name world_101_116
 width 50
 height 50
 msg
-Modified: 2007-12-24 tchize
+Modified: 2010-05-23 Kevin Bulgrien
 endmsg
 outdoor 1
 tile_path_1 world_101_115
@@ -18,27 +18,27 @@ arch sea
 y 1
 elevation -2035
 end
-arch sea
+arch shallow_sea
 y 2
 elevation -2042
 end
-arch sea
+arch shallow_sea
 y 3
 elevation -2058
 end
-arch sea
+arch shallow_sea
 y 4
 elevation -2085
 end
-arch sea
+arch shallow_sea
 y 5
 elevation -2122
 end
-arch sea
+arch shallow_sea
 y 6
 elevation -2170
 end
-arch sea
+arch shallow_sea
 y 7
 elevation -2225
 end
@@ -214,37 +214,37 @@ arch sea
 x 1
 elevation -1715
 end
-arch sea
+arch shallow_sea
 x 1
 y 1
 elevation -1698
 end
-arch sea
+arch shallow_sea
 x 1
 y 2
 elevation -1689
 end
-arch sea
+arch shallow_sea
 x 1
 y 3
 elevation -1694
 end
-arch sea
+arch shallow_sea
 x 1
 y 4
 elevation -1717
 end
-arch sea
+arch shallow_sea
 x 1
 y 5
 elevation -1757
 end
-arch sea
+arch shallow_sea
 x 1
 y 6
 elevation -1813
 end
-arch sea
+arch shallow_sea
 x 1
 y 7
 elevation -1879
@@ -463,42 +463,42 @@ arch sea
 x 2
 elevation -1372
 end
-arch sea
+arch shallow_sea
 x 2
 y 1
 elevation -1327
 end
-arch sea
+arch shallow_sea
 x 2
 y 2
 elevation -1296
 end
-arch sea
+arch shallow_sea
 x 2
 y 3
 elevation -1288
 end
-arch sea
+arch shallow_sea
 x 2
 y 4
 elevation -1308
 end
-arch sea
+arch shallow_sea
 x 2
 y 5
 elevation -1354
 end
-arch sea
+arch shallow_sea
 x 2
 y 6
 elevation -1421
 end
-arch sea
+arch shallow_sea
 x 2
 y 7
 elevation -1503
 end
-arch sea
+arch shallow_sea
 x 2
 y 8
 elevation -1593
@@ -708,46 +708,46 @@ x 2
 y 49
 elevation 318
 end
-arch sea
+arch shallow_sea
 x 3
 elevation -1010
 end
-arch sea
+arch shallow_sea
 x 3
 y 1
 elevation -922
 end
-arch sea
+arch shallow_sea
 x 3
 y 2
 elevation -857
 end
-arch sea
+arch shallow_sea
 x 3
 y 3
 elevation -833
 end
-arch sea
+arch shallow_sea
 x 3
 y 4
 elevation -854
 end
-arch sea
+arch shallow_sea
 x 3
 y 5
 elevation -912
 end
-arch sea
+arch shallow_sea
 x 3
 y 6
 elevation -997
 end
-arch sea
+arch shallow_sea
 x 3
 y 7
 elevation -1102
 end
-arch sea
+arch shallow_sea
 x 3
 y 8
 elevation -1216
@@ -957,46 +957,46 @@ x 3
 y 49
 elevation 615
 end
-arch sea
+arch shallow_sea
 x 4
 elevation -638
 end
-arch sea
+arch shallow_sea
 x 4
 y 1
 elevation -477
 end
-arch sea
+arch shallow_sea
 x 4
 y 2
 elevation -353
 end
-arch sea
+arch shallow_sea
 x 4
 y 3
 elevation -320
 end
-arch sea
+arch shallow_sea
 x 4
 y 4
 elevation -354
 end
-arch sea
+arch shallow_sea
 x 4
 y 5
 elevation -429
 end
-arch sea
+arch shallow_sea
 x 4
 y 6
 elevation -540
 end
-arch sea
+arch shallow_sea
 x 4
 y 7
 elevation -675
 end
-arch sea
+arch shallow_sea
 x 4
 y 8
 elevation -830
@@ -1206,7 +1206,7 @@ x 4
 y 49
 elevation 540
 end
-arch sea
+arch shallow_sea
 x 5
 elevation -313
 end
@@ -1240,17 +1240,17 @@ x 5
 y 6
 elevation 9
 end
-arch sea
+arch shallow_sea
 x 5
 y 7
 elevation -263
 end
-arch sea
+arch shallow_sea
 x 5
 y 8
 elevation -442
 end
-arch sea
+arch shallow_sea
 x 5
 y 9
 elevation -614
@@ -1455,7 +1455,7 @@ x 5
 y 49
 elevation 136
 end
-arch sea
+arch shallow_sea
 x 6
 elevation -115
 end
@@ -1499,17 +1499,17 @@ x 6
 y 8
 elevation -81
 end
-arch sea
+arch shallow_sea
 x 6
 y 9
 elevation -278
 end
-arch sea
+arch shallow_sea
 x 6
 y 10
 elevation -447
 end
-arch sea
+arch shallow_sea
 x 6
 y 11
 elevation -567
@@ -1753,27 +1753,27 @@ x 7
 y 9
 elevation -1
 end
-arch sea
+arch shallow_sea
 x 7
 y 10
 elevation -171
 end
-arch sea
+arch shallow_sea
 x 7
 y 11
 elevation -299
 end
-arch sea
+arch shallow_sea
 x 7
 y 12
 elevation -365
 end
-arch sea
+arch shallow_sea
 x 7
 y 13
 elevation -404
 end
-arch sea
+arch shallow_sea
 x 7
 y 14
 elevation -427
@@ -2012,27 +2012,27 @@ x 8
 y 11
 elevation -71
 end
-arch sea
+arch shallow_sea
 x 8
 y 12
 elevation -102
 end
-arch sea
+arch shallow_sea
 x 8
 y 13
 elevation -106
 end
-arch sea
+arch shallow_sea
 x 8
 y 14
 elevation -116
 end
-arch sea
+arch shallow_sea
 x 8
 y 15
 elevation -130
 end
-arch sea
+arch shallow_sea
 x 8
 y 16
 elevation -107
