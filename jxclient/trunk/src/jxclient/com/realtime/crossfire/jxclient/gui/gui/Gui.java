@@ -31,7 +31,7 @@ import com.realtime.crossfire.jxclient.gui.textinput.KeyListener;
 import com.realtime.crossfire.jxclient.skin.skin.Extent;
 import java.awt.Color;
 import java.awt.Component;
-import java.awt.Graphics2D;
+import java.awt.Graphics;
 import java.awt.event.KeyEvent;
 import java.util.Collection;
 import java.util.EnumSet;
@@ -271,7 +271,7 @@ public class Gui {
      * Repaints the gui and clear the changed flags of all repainted elements.
      * @param g the <code>Graphics</code> to paint into
      */
-    public void redraw(@NotNull final Graphics2D g) {
+    public void redraw(@NotNull final Graphics g) {
         if (mouseTracker != null) {
             final Component mouseElement = mouseTracker.getMouseElement();
             final long t0 = System.currentTimeMillis();
@@ -284,8 +284,8 @@ public class Gui {
             }
 
             final long t1 = System.currentTimeMillis();
-            g.setBackground(Color.black);
-            g.clearRect(12, 36, 200, 36);
+            g.setColor(Color.black);
+            g.fillRect(12, 36, 200, 36);
             g.setColor(Color.YELLOW);
             if (mouseElement != null) {
                 g.drawString(mouseElement.getName(), 16, 48);

@@ -29,7 +29,7 @@ import com.realtime.crossfire.jxclient.server.crossfire.CrossfireMagicmapListene
 import com.realtime.crossfire.jxclient.server.crossfire.CrossfireServerConnection;
 import com.realtime.crossfire.jxclient.skin.skin.Extent;
 import java.awt.Color;
-import java.awt.Graphics2D;
+import java.awt.Graphics;
 import java.nio.ByteBuffer;
 import org.jetbrains.annotations.NotNull;
 
@@ -109,7 +109,7 @@ public class GUIMiniMap extends AbstractGUIMap {
         @Override
         public void commandMagicmapReceived(final int width, final int height, final int px, final int py, @NotNull final ByteBuffer data) {
             synchronized (bufferedImageSync) {
-                final Graphics2D g = createBufferGraphics();
+                final Graphics g = createBufferGraphics();
                 try {
                     final int offsetX = getPlayerX()-px*tileSize;
                     final int offsetY = getPlayerY()-py*tileSize;
@@ -117,8 +117,10 @@ public class GUIMiniMap extends AbstractGUIMap {
                         for (int x = 0; x < width; x++) {
                             final byte ch = data.get();
                             if (ch != 0) {
-                                g.setBackground(tileColors[ch&FACE_COLOR_MASK]);
-                                g.clearRect(offsetX+x*tileSize, offsetY+y*tileSize, tileSize, tileSize);
+                                g.setColor(tileColors[ch&FACE_COLOR_MASK]);
+                                final int sx = offsetX+x*tileSize;
+                                final int sy = offsetY+y*tileSize;
+                                g.fillRect(sx, sy, tileSize, tileSize);
                             }
                         }
                     }
@@ -162,14 +164,14 @@ public class GUIMiniMap extends AbstractGUIMap {
      * {@inheritDoc}
      */
     @Override
-    protected void markPlayer(@NotNull final Graphics2D g, final int dx, final int dy) {
+    protected void markPlayer(@NotNull final Graphics g, final int dx, final int dy) {
         if (dx != 0 || dy != 0) {
             final int mapSquareX = playerOffsetX-dx;
             final int mapSquareY = playerOffsetY-dy;
             redrawSquare(g, mapUpdater.getMap().getMapSquare(mapSquareX, mapSquareY), mapSquareX, mapSquareY);
         }
-        g.setBackground(Color.RED);
-        g.clearRect(getPlayerX(), getPlayerY(), tileSize, tileSize);
+        g.setColor(Color.RED);
+        g.fillRect(getPlayerX(), getPlayerY(), tileSize, tileSize);
     }
 
     /**

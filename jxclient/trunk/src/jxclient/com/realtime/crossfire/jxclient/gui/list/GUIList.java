@@ -68,12 +68,6 @@ public abstract class GUIList extends ActivatableGUIElement implements GUIScroll
     private final int cellHeight;
 
     /**
-     * The background color for this list.
-     */
-    @NotNull
-    private final Color backgroundColor = new Color(0, 0, 0, 0);
-
-    /**
      * The {@link GUIListCellRenderer} for the {@link #list}.
      */
     @NotNull
@@ -188,8 +182,8 @@ public abstract class GUIList extends ActivatableGUIElement implements GUIScroll
     protected void render(@NotNull final Graphics2D g) {
         final Composite composite = g.getComposite();
         g.setComposite(AlphaComposite.Clear);
-        g.setBackground(backgroundColor);
-        g.clearRect(0, 0, getWidth(), getHeight());
+        g.setColor(new Color(0, 255, 0, 255));
+        g.fillRect(0, 0, getWidth(), getHeight());
         g.setComposite(composite);
 
         synchronized (getTreeLock()) {

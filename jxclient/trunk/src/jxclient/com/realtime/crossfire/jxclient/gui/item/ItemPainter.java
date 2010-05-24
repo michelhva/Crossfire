@@ -283,10 +283,10 @@ public class ItemPainter {
      * @param color the color to use
      * @param isActive whether painting should be done at all
      */
-    private void paintColor(@NotNull final Graphics2D g, @Nullable final Color color, final boolean isActive) {
+    private void paintColor(@NotNull final Graphics g, @Nullable final Color color, final boolean isActive) {
         if (isActive && color != null) {
-            g.setBackground(color);
-            g.clearRect(0, 0, w, h);
+            g.setColor(color);
+            g.fillRect(0, 0, w, h);
         }
     }
 
