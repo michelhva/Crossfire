@@ -25,7 +25,6 @@ Object reeking_urine
 name reeking puddle of urine
 type 72
 face residue.111
-animation incontinence
 is_used_up 1
 speed 0.0002
 food 1
