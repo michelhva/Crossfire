@@ -1,8 +1,67 @@
+quest scorn/Aristocracy
+title The Scorn Nobility
+description
+Rise through the ranks of the scorn nobility to gain favour in the king's court
+end_description
+step 5
+description
+I have spoken to the magistrate who offered a means for me to obtain station in court
+end_description
+end_step
+step 10
+description
+I have been dubbed a Knight of Scorn
+end_description
+end_step
+step 20
+description
+I have been appointed a Baronet of Scorn
+end_description
+end_step
+step 30
+description
+I have been appointed a Baron of Scorn
+end_description
+end_step
+step 40
+description
+I have been appointed a Earl of Scorn
+end_description
+end_step
+step 50
+description
+I have been appointed a Marquis of Scorn
+end_description
+end_step
+step 60
+description
+I have been appointed a Count of Scorn
+end_description
+end_step
+step 70
+description
+I have been appointed a Duke of Scorn
+end_description
+end_step
+step 80
+description
+I have been appointed a Arch Duke of Scorn
+end_description
+end_step
+step 90
+finishes_quest
+description
+I have been named Prince of Scorn
+end_description
+end_step
+end_quest
+
 quest scorn/GoblinKing
 title The Head of the Goblin Chief
 description
 Some goblins, who are said to live in mountains, have been making a nuisance of themselves to the North East of Scorn.  Go and make them regret their disorderly conduct.
 end_description
+parent scorn/Aristocracy
 step 10
 description
 I have been asked to find the Goblin Chief, and return with his head.
@@ -38,6 +97,7 @@ Ogres have been stealing sheep from the hills east of the city.
 They are reported to live in a hole north of the road to Navar.
 Go and kill the Ogre Chief and return with his head.
 end_description
+parent scorn/Aristocracy
 step 10
 description
 I have been asked to find the Ogre Chief, and return with his head.
@@ -73,6 +133,7 @@ There is an outbreak of undead in the so-called 'Undead Church' in Scorn.
 An Animator may be at work, setting the dead walking.
 Return with a token proving that the Animator has been destroyed.
 end_description
+parent scorn/Aristocracy
 step 10
 description
 I have been asked to find the Animator, and return with a token of his destruction.
@@ -107,6 +168,7 @@ description
 The King of Scorn, is suffering from bunions, and believes that a certain rare blue mushroom will provide a cure. 
 This mushroom grows only in marshy areas located at the far west of the continent, same level as Scorn city.
 end_description
+parent scorn/Aristocracy
 step 10
 description
 I have been asked to find a blue mushroom, and return it to the King's court.
@@ -136,6 +198,7 @@ description
 The King of Scorn wishes to dine upon the wing of his enemy, Slithselest, the self-styled Lord of Wyverns.
 Slithselest has his eyrie (it is said) in the high mountains south of the road to Brest.
 end_description
+parent scorn/Aristocracy
 step 10
 description
 I have been asked to find the Slithselest the Wyvern, and return with one of his wings
@@ -171,6 +234,7 @@ There has been a recent influx of demons in the ruins of the town north of Scorn
 Reports have it that the demons are issuing from a filthy pit in the ground.
 Go and investigate; eliminate the threat if possible.
 end_description
+parent scorn/Aristocracy
 step 10
 description
 I have been asked to investigate the presence of demons in the ruins of Euthville.
@@ -199,6 +263,7 @@ title DragonLord Diplomacy
 description
 Recover a powerful weapon which will challenge the might of the Dragonlords, and allow the King of Scorn to sue for peace.
 end_description
+parent scorn/Aristocracy
 step 10
 description
 His Majesty, the King of Scorn, has asked me to recover a powerful weapon which is being guarded by the Dragonlords. He suggested that I speak to his magistrate to learn where I might find the Dragonlords.
@@ -242,6 +307,7 @@ title The Great Pretender
 description
 A rogue titan has declared himself 'the Rightful King of Scorn' and denounced the current monarch as an usurper.
 end_description
+parent scorn/Aristocracy
 step 10
 description
 His Majesty, the King of Scorn, has asked me to capture the crown of the pretender. He suggested that I speak to his magistrate to learn where he might be hiding.
@@ -290,6 +356,7 @@ title The King's Curse
 description
 The King of Scorn has been afflicted by a mystical curse which has been draining his strength.
 end_description
+parent scorn/Aristocracy
 step 10
 description
 The King has asked me to find a way to break the curse that is upon him. I should speak to the priestess at the temple of gaea, she claims to know the cause.
@@ -319,59 +386,6 @@ step 60
 finishes_quest
 description
 I have returned the enchanted sword to the King and ended the curse.
-end_description
-end_step
-end_quest
-
-quest scorn/Aristocracy
-title The Scorn Nobility
-description
-Rise through the ranks of the scorn nobility to gain favour in the king's court
-end_description
-step 10
-description
-I have been dubbed a Knight of Scorn
-end_description
-end_step
-step 20
-description
-I have been appointed a Baronet of Scorn
-end_description
-end_step
-step 30
-description
-I have been appointed a Baron of Scorn
-end_description
-end_step
-step 40
-description
-I have been appointed a Earl of Scorn
-end_description
-end_step
-step 50
-description
-I have been appointed a Marquis of Scorn
-end_description
-end_step
-step 60
-description
-I have been appointed a Count of Scorn
-end_description
-end_step
-step 70
-description
-I have been appointed a Duke of Scorn
-end_description
-end_step
-step 80
-description
-I have been appointed a Arch Duke of Scorn
-end_description
-end_step
-step 90
-finishes_quest
-description
-I have been named Prince of Scorn
 end_description
 end_step
 end_quest
