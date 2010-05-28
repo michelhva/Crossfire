@@ -101,6 +101,9 @@
             <sourcepath>
                 <pathelement path="${src.jxclient}"/>
             </sourcepath>
+            <classpath>
+                <pathelement location="lib/annotations.jar"/>
+            </classpath>
         </javadoc>
     </target>
     <target name="update-build-properties" description="Updates build.properties.">
