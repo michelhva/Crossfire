@@ -48,7 +48,7 @@ public class RenderStateTest extends TestCase {
     /**
      * Assumed height of log window.
      */
-    private static final int HEIGHT = 100;
+    private static final int HEIGHT = 104;
 
     @Nullable
     private RenderState rs = null;
@@ -84,7 +84,7 @@ public class RenderStateTest extends TestCase {
             assert buffer != null;
             parser.parse("xxx"+i, null, buffer);
         }
-        checkState(97, 4);
+        checkState(101, 0);
 
         // scroll to valid positions
         assert buffer != null;
@@ -118,11 +118,13 @@ public class RenderStateTest extends TestCase {
         assert rs != null;
         assert buffer != null;
         rs.scrollTo(buffer, 111*Buffer.MIN_LINE_HEIGHT);
-        checkState(97, 4);
+        checkState(101, 0);
     }
 
     public void test2() {
         final Parser parser = new Parser();
+
+        assertEquals(0, HEIGHT%Buffer.MIN_LINE_HEIGHT);
 
         checkState(0, 0);
         assert buffer != null;
@@ -133,7 +135,7 @@ public class RenderStateTest extends TestCase {
         checkState(0, 0);
 
         // add lines to completely fill visible area
-        for (int i = 2; i < HEIGHT; i++) {
+        for (int i = 2; i < HEIGHT/Buffer.MIN_LINE_HEIGHT; i++) {
             assert buffer != null;
             parser.parse("xxx3"+i, null, buffer);
         }
@@ -152,7 +154,7 @@ public class RenderStateTest extends TestCase {
         // scroll up one line
         assert rs != null;
         assert buffer != null;
-        rs.scrollTo(buffer, 1);
+        rs.scrollTo(buffer, Buffer.MIN_LINE_HEIGHT);
         checkState(1, 0);
 
         // add one more line ==> buffer sticks at scroll position
@@ -163,7 +165,7 @@ public class RenderStateTest extends TestCase {
         // scroll back to bottom
         assert rs != null;
         assert buffer != null;
-        rs.scrollTo(buffer, 3);
+        rs.scrollTo(buffer, 3*Buffer.MIN_LINE_HEIGHT);
         checkState(3, 0);
 
         // add one more line ==> buffer sticks at bottom
@@ -172,25 +174,25 @@ public class RenderStateTest extends TestCase {
         checkState(4, 0);
 
         // completely fill buffer
-        for (int i = HEIGHT+4; i < Buffer.MAX_LINES; i++) {
+        for (int i = HEIGHT/Buffer.MIN_LINE_HEIGHT+4; i < Buffer.MAX_LINES; i++) {
             assert buffer != null;
             parser.parse("xxx8"+i, null, buffer);
         }
-        checkState(Buffer.MAX_LINES-HEIGHT, 0);
+        checkState(Buffer.MAX_LINES-HEIGHT/Buffer.MIN_LINE_HEIGHT, 0);
 
         // add one more line ==> buffer sticks at bottom
         assert buffer != null;
         parser.parse("xxx9", null, buffer);
-        checkState(Buffer.MAX_LINES-HEIGHT, 0);
+        checkState(Buffer.MAX_LINES-HEIGHT/Buffer.MIN_LINE_HEIGHT, 0);
 
         // scroll one line up
         assert rs != null;
         assert buffer != null;
-        rs.scrollTo(buffer, Buffer.MAX_LINES-HEIGHT-1);
-        checkState(Buffer.MAX_LINES-HEIGHT-1, 0);
+        rs.scrollTo(buffer, Buffer.MAX_LINES*Buffer.MIN_LINE_HEIGHT-HEIGHT-Buffer.MIN_LINE_HEIGHT);
+        checkState(Buffer.MAX_LINES-HEIGHT/Buffer.MIN_LINE_HEIGHT-1, 0);
 
         // fill more lines ==> scroll position sticks
-        for (int i = 0; i < Buffer.MAX_LINES-HEIGHT-2; i++) {
+        for (int i = 0; i < Buffer.MAX_LINES-HEIGHT/Buffer.MIN_LINE_HEIGHT-2; i++) {
             assert buffer != null;
             parser.parse("xxx0"+i, null, buffer);
         }
