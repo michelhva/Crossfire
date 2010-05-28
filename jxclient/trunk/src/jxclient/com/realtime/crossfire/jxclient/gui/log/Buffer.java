@@ -49,7 +49,7 @@ public class Buffer {
     /**
      * The minimal height of a line in pixels. Normally applies to empty lines.
      */
-    private static final int MIN_LINE_HEIGHT = 8;
+    public static final int MIN_LINE_HEIGHT = 8;
 
     /**
      * The listeners to notify about changes.
