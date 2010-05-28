@@ -108,6 +108,10 @@ public class Parser {
      * @param buffer the buffer to update
      */
     public void parse(@NotNull final CharSequence text, @Nullable final Color defaultColor, @NotNull final Buffer buffer) {
+        if (text.length() == 0) {
+            return;
+        }
+
         resetAttributes(defaultColor);
         for (final String line : END_OF_LINE_PATTERN.split(text, -1)) {
             parseLine(line, defaultColor, buffer);
