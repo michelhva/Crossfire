@@ -87,7 +87,7 @@ public class ParserTest extends TestCase {
      */
     public void testEmpty() {
         parser.parse("", null, buffer);
-        checkResult(""+"buffer:\n");
+        checkResult(""+"buffer:\n"+"line:\n");
     }
 
     /**
