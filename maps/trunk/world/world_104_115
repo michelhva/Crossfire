@@ -9,7 +9,7 @@ enter_x 1
 enter_y 1
 msg
 Created:  2001-02-16
-Modified: 2010-05-13 Nicolas Weeger
+Modified: 2010-05-29 Kevin Bulgrien
 endmsg
 outdoor 1
 tile_path_1 world_104_114
@@ -2664,7 +2664,7 @@ y 49
 end
 arch shallow_sea
 x 10
-elevation -15
+elevation -25
 end
 arch shallow_sea
 x 10
@@ -2927,14 +2927,14 @@ x 10
 y 49
 elevation 2449
 end
-arch shallow_sea
+arch sea
 x 11
-elevation -12
+elevation -52
 end
 arch shallow_sea
 x 11
 y 1
-elevation -11
+elevation -32
 end
 arch shallow_sea
 x 11
@@ -3186,14 +3186,14 @@ x 11
 y 49
 elevation 4337
 end
-arch shallow_sea
+arch sea
 x 12
-elevation -10
+elevation -60
 end
 arch shallow_sea
 x 12
 y 1
-elevation -11
+elevation -31
 end
 arch shallow_sea
 x 12
@@ -3455,19 +3455,19 @@ x 12
 y 49
 elevation 5559
 end
-arch shallow_sea
+arch sea
 x 13
-elevation -8
+elevation -98
 end
-arch shallow_sea
+arch sea
 x 13
 y 1
-elevation -10
+elevation -70
 end
 arch shallow_sea
 x 13
 y 2
-elevation -17
+elevation -37
 end
 arch shallow_sea
 x 13
@@ -3724,19 +3724,19 @@ x 13
 y 49
 elevation 5070
 end
-arch brush
+arch sea
 x 14
-elevation 14
+elevation -94
 end
-arch shallow_sea
+arch sea
 x 14
 y 1
-elevation -9
+elevation -99
 end
-arch shallow_sea
+arch sea
 x 14
 y 2
-elevation -24
+elevation -84
 end
 arch shallow_sea
 x 14
@@ -3997,24 +3997,24 @@ x 14
 y 49
 elevation 6916
 end
-arch brush
+arch sea
 x 15
-elevation 320
+elevation -65
 end
-arch shallow_sea
+arch sea
 x 15
 y 1
-elevation -4
+elevation -94
 end
-arch shallow_sea
+arch sea
 x 15
 y 2
-elevation -33
+elevation -93
 end
-arch shallow_sea
+arch sea
 x 15
 y 3
-elevation -58
+elevation -98
 end
 arch shallow_sea
 x 15
@@ -4266,24 +4266,24 @@ x 15
 y 49
 elevation 5661
 end
-arch brush
-x 16
-elevation 232
-end
 arch shallow_sea
+x 16
+elevation -42
+end
+arch sea
 x 16
 y 1
-elevation -8
+elevation -58
 end
-arch shallow_sea
+arch sea
 x 16
 y 2
-elevation -44
+elevation -94
 end
-arch shallow_sea
+arch sea
 x 16
 y 3
-elevation -77
+elevation -110
 end
 arch sea
 x 16
@@ -4535,21 +4535,21 @@ x 16
 y 49
 elevation 6299
 end
-arch brush
+arch shallow_sea
 x 17
-elevation 13
+elevation -33
 end
 arch shallow_sea
 x 17
 y 1
-elevation -9
+elevation -49
 end
-arch shallow_sea
+arch sea
 x 17
 y 2
-elevation -63
+elevation -83
 end
-arch shallow_sea
+arch sea
 x 17
 y 3
 elevation -98
@@ -4794,14 +4794,14 @@ elevation 8096
 end
 arch shallow_sea
 x 18
-elevation -3
+elevation -23
 end
 arch shallow_sea
 x 18
 y 1
 elevation -47
 end
-arch shallow_sea
+arch sea
 x 18
 y 2
 elevation -87
@@ -5049,7 +5049,7 @@ arch shallow_sea
 x 19
 elevation -29
 end
-arch shallow_sea
+arch sea
 x 19
 y 1
 elevation -79
@@ -5304,7 +5304,7 @@ elevation 10291
 end
 arch shallow_sea
 x 20
-elevation -71
+elevation -31
 end
 arch sea
 x 20
