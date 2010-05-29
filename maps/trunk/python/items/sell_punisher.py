@@ -1,4 +1,3 @@
-import random
 # -*- coding: utf-8 -*-
 # sell_punisher.py - Punish players for selling items
 #
@@ -31,6 +30,7 @@ import random
 # If no key is defined, trying to sell is punished in the whole world.
 
 import Crossfire
+import random
 
 def sell_is_restricted():
     map = Crossfire.WhoAmI().ReadKey("punish_sell_in")
