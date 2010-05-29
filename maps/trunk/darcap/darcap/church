@@ -8,7 +8,7 @@ enter_x 17
 enter_y 1
 msg
 Created:  1999-01-15 Cater/Wade (john_cater@yahoo.com)
-Modified: 2010-05-16 Nicolas Weeger
+Modified: 2010-05-29 Nicolas Weeger
 endmsg
 end
 arch dungeon_floor
@@ -3123,10 +3123,11 @@ end
 arch chalice
 x 16
 y 20
+punish_sell_in /darcap/darcap
 arch event_selling
 name event_selling
-title cf_darcap
-slaying darcap_church_chalice
+title Python
+slaying /python/items/sell_punisher.py
 end
 end
 arch woodfloor
@@ -3145,10 +3146,11 @@ end
 arch chalice
 x 16
 y 22
+punish_sell_in /darcap/darcap
 arch event_selling
 name event_selling
-title cf_darcap
-slaying darcap_church_chalice
+title Python
+slaying /python/items/sell_punisher.py
 end
 end
 arch woodfloor
@@ -3634,10 +3636,11 @@ end
 arch chalice
 x 18
 y 20
+punish_sell_in /darcap/darcap
 arch event_selling
 name event_selling
-title cf_darcap
-slaying darcap_church_chalice
+title Python
+slaying /python/items/sell_punisher.py
 end
 end
 arch woodfloor
@@ -3656,10 +3659,11 @@ end
 arch chalice
 x 18
 y 22
+punish_sell_in /darcap/darcap
 arch event_selling
 name event_selling
-title cf_darcap
-slaying darcap_church_chalice
+title Python
+slaying /python/items/sell_punisher.py
 end
 end
 arch woodfloor
