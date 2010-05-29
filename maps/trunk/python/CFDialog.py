@@ -232,7 +232,7 @@ class Dialog:
                             if reply[0] == msg:
                                 type = Crossfire.ReplyType.SAY
                                 if len(reply) > 2:
-                                    type = reply[2]
+                                    type = int(reply[2])
                                 Crossfire.SetPlayerMessage(reply[1], type)
                                 break
 
