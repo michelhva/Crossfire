@@ -44,6 +44,7 @@ import Crossfire
 import os
 from CFDialog import DialogRule, Dialog, IncludeRule
 import cjson
+import random
 
 location = "defaultdialognamespace"
 
@@ -111,4 +112,6 @@ for jsonRule in dialogs:
     index = index + 1
 
 if speech.speak(Crossfire.WhatIsMessage()) == 0:
+    # block the NPC for some time
+    Crossfire.WhoAmI().WriteKey('talked_to', random.randint(3, 8), 1);
     Crossfire.SetReturnValue(1)
