@@ -8,7 +8,7 @@ enter_x 1
 enter_y 7
 msg
 Created:  1993-10-15
-Modified: 2010-05-05 Cavesomething
+Modified: 2010-05-30 Cavesomething
 endmsg
 outdoor 1
 end
@@ -427,36 +427,6 @@ title Python
 slaying /python/quests/QuestAdvance.py
 end
 end
-arch check_floor
-hp 1
-x 4
-y 5
-arch event_trigger
-name scorn/PortPass 0-10>40
-title Python
-slaying /python/quests/QuestAdvance.py
-end
-end
-arch check_floor
-hp 1
-x 4
-y 5
-arch event_trigger
-name scorn/ScornHero 0-10>40
-title Python
-slaying /python/quests/QuestAdvance.py
-end
-end
-arch check_floor
-hp 1
-x 4
-y 5
-arch event_trigger
-name scorn/GatePassword 0-20>40
-title Python
-slaying /python/quests/QuestAdvance.py
-end
-end
 arch cobblestones2
 x 4
 y 5
@@ -471,36 +441,6 @@ title Python
 slaying /python/quests/QuestAdvance.py
 end
 end
-arch check_floor
-hp 1
-x 4
-y 6
-arch event_trigger
-name scorn/PortPass 0-10>40
-title Python
-slaying /python/quests/QuestAdvance.py
-end
-end
-arch check_floor
-hp 1
-x 4
-y 6
-arch event_trigger
-name scorn/ScornHero 0-10>40
-title Python
-slaying /python/quests/QuestAdvance.py
-end
-end
-arch check_floor
-hp 1
-x 4
-y 6
-arch event_trigger
-name scorn/GatePassword 0-20>40
-title Python
-slaying /python/quests/QuestAdvance.py
-end
-end
 arch cobblestones2
 x 4
 y 6
@@ -511,36 +451,6 @@ x 4
 y 7
 arch event_trigger
 name scorn/CityGate 0-10>20
-title Python
-slaying /python/quests/QuestAdvance.py
-end
-end
-arch check_floor
-hp 1
-x 4
-y 7
-arch event_trigger
-name scorn/PortPass 0-10>40
-title Python
-slaying /python/quests/QuestAdvance.py
-end
-end
-arch check_floor
-hp 1
-x 4
-y 7
-arch event_trigger
-name scorn/ScornHero 0-10>40
-title Python
-slaying /python/quests/QuestAdvance.py
-end
-end
-arch check_floor
-hp 1
-x 4
-y 7
-arch event_trigger
-name scorn/GatePassword 0-20>40
 title Python
 slaying /python/quests/QuestAdvance.py
 end
