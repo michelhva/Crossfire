@@ -7,52 +7,82 @@ step 5
 description
 I have spoken to the magistrate who offered a means for me to obtain station in court
 end_description
+setwhen
+scorn/GoblinKing 10
+end_setwhen
 end_step
 step 10
 description
 I have been dubbed a Knight of Scorn
 end_description
+setwhen
+scorn/GoblinKing finished
+end_setwhen
 end_step
 step 20
 description
 I have been appointed a Baronet of Scorn
 end_description
+setwhen
+scorn/OgreKing finished
+end_setwhen
 end_step
 step 30
 description
 I have been appointed a Baron of Scorn
 end_description
+setwhen
+scorn/Animator finished
+end_setwhen
 end_step
 step 40
 description
 I have been appointed a Earl of Scorn
 end_description
+setwhen
+scorn/BlueMushroom finished
+end_setwhen
 end_step
 step 50
 description
 I have been appointed a Marquis of Scorn
 end_description
+setwhen
+scorn/WyvernWing finished
+end_setwhen
 end_step
 step 60
 description
 I have been appointed a Count of Scorn
 end_description
+setwhen
+scorn/DemonPit finished
+end_setwhen
 end_step
 step 70
 description
 I have been appointed a Duke of Scorn
 end_description
+setwhen
+scorn/DragonWhisker finished
+end_setwhen
 end_step
 step 80
 description
 I have been appointed a Arch Duke of Scorn
 end_description
+setwhen
+scorn/TitanCrown finished
+end_setwhen
 end_step
 step 90
 finishes_quest
 description
 I have been named Prince of Scorn
 end_description
+setwhen
+scorn/LordSpectre finished
+end_setwhen
 end_step
 end_quest
 
@@ -405,12 +435,20 @@ finishes_quest
 description
 I have found another way through the gate.
 end_description
+setwhen
+scorn/PortGate finished
+scorn/CityGate finished
+scorn/ScornHero <=10
+end_setwhen
 end_step
 step 50
 finishes_quest
 description
 I have been pronounced the 'Hero of Scorn'
 end_description
+setwhen
+scorn/GoblinKing finished
+end_setwhen
 end_step
 end_quest
 

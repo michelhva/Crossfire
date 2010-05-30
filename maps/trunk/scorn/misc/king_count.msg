@@ -3,7 +3,7 @@
   {
   "match" : ["dragon", "whisker", "lords", "weapon", "yes"],
   "pre" : [["quest", "scorn/DragonWhisker", "10"], ["item", "Ruggilli's Whisker"], ["token", "question", "whisker"]],
-  "post" : [["takeitem", "Ruggilli's Whisker"], ["quest", "scorn/DragonWhisker", "70"], ["quest", "scorn/Aristocracy", "70"], ["givecontents", "Duke Reward"], ["settoken", "question", "0"]],
+  "post" : [["takeitem", "Ruggilli's Whisker"], ["quest", "scorn/DragonWhisker", "70"], ["givecontents", "Duke Reward"], ["settoken", "question", "0"]],
   "msg" : ["Congratulations on completing your quest.  Kneel and receive your accolade.....\n You are now a Duke!\n Also, please take this fine sword as a reward. May it serve you well, the NEXT time you run into dragons."]
   },{
   "match" : ["dragon", "whisker", "lords", "weapon", "yes"],

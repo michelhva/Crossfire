@@ -3,7 +3,7 @@
   {
   "match" : ["titan", "crown", "pretender", "meganthropopulos", "yes"],
   "pre" : [["quest", "scorn/TitanCrown", "10"], ["item", "Meganthropopulos' Crown"], ["token", "question", "crown"]],
-  "post" : [["takeitem", "Meganthropopulos' Crown"], ["quest", "scorn/TitanCrown", "70"], ["quest", "scorn/Aristocracy", "80"], ["givecontents", "Archduke Reward"], ["settoken", "question", "0"]],
+  "post" : [["takeitem", "Meganthropopulos' Crown"], ["quest", "scorn/TitanCrown", "70"], ["givecontents", "Archduke Reward"], ["settoken", "question", "0"]],
   "msg" : ["Congratulations on completing your quest.  Kneel and receive your accolade.....\n You are now an Archduke! \n Also, please take this fine shield as a reward. May it serve you well!"]
   },{
   "match" : ["titan", "crown", "pretender", "meganthropopulos", "yes"],

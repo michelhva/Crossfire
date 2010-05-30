@@ -3,7 +3,7 @@
   {
   "match" : ["head", "ogre", "chief", "yes"],
   "pre" : [["quest", "scorn/OgreKing", "10"], ["item", "Head of the Ogre Chief"], ["token", "question", "ogre"]],
-  "post" : [["takeitem", "Head of the Ogre Chief"], ["quest", "scorn/OgreKing", "50"], ["quest", "scorn/Aristocracy", "20"], ["givecontents", "Baronet Reward"], ["settoken", "question", "0"]],
+  "post" : [["takeitem", "Head of the Ogre Chief"], ["quest", "scorn/OgreKing", "50"], ["givecontents", "Baronet Reward"], ["settoken", "question", "0"]],
   "msg" : ["Congratulations on completing your quest.  Kneel and receive your accolade.....\n You are now a Baronet!\n Also, please take this girdle as a reward. May it serve you well!"]
   },{
   "match" : ["head", "ogre", "chief", "yes"],

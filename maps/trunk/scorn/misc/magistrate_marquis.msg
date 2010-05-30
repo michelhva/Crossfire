@@ -3,7 +3,7 @@
   {
   "match" : ["wing", "wyvern", "snack", "slithselest", "yes"],
   "pre" : [["quest", "scorn/WyvernWing", "10"], ["item", "Slithselest's wing"], ["token", "question", "wing"]],
-  "post" : [["takeitem", "Slithselest's wing"], ["quest", "scorn/WyvernWing", "50"], ["quest", "scorn/Aristocracy", "50"], ["givecontents", "Earl Reward"], ["settoken", "question", "0"]],
+  "post" : [["takeitem", "Slithselest's wing"], ["quest", "scorn/WyvernWing", "50"], ["givecontents", "Earl Reward"], ["settoken", "question", "0"]],
   "msg" : ["Congratulations on completing your quest.\nKneel and receive your accolade.....\nYou are now an Earl!\n Also, please take this fine shield as a reward. May it serve you well!"]
   },{
   "match" : ["wing", "wyvern", "snack", "slithselest", "yes"],
