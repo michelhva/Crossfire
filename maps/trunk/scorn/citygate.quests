@@ -48,6 +48,7 @@ end_quest
 
 quest scorn/GatePass
 title Gate Pass
+parent scorn/CityGate
 description
 Acquire a gate pass to be allowed out of the main gate of scorn.
 end_description
@@ -74,11 +75,16 @@ finishes_quest
 description
 I have found another way through the city gates.
 end_description
+setwhen
+scorn/CityGate finished
+scorn/GatePass <=10
+end_setwhen
 end_step
 end_quest
 
 quest scorn/PortPass
 title Port Pass
+parent scorn/PortGate
 description
 Acquire a port pass to be allowed into Scorn's docks.
 end_description
@@ -105,6 +111,10 @@ finishes_quest
 description
 I have found another way through the gate that leads to Scorn Docks.
 end_description
+setwhen
+scorn/PortGate finished
+scorn/PortPass <=10
+end_setwhen
 end_step
 end_quest
 
@@ -133,8 +143,13 @@ end_step
 step 40
 finishes_quest
 description
-I have found another way through the gate.
+I have found another way through the gates.
 end_description
+setwhen
+scorn/PortGate finished
+scorn/CityGate finished
+scorn/GatePassword <=20
+end_setwhen
 end_step
 end_quest
 
