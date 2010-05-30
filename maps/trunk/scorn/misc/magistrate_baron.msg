@@ -3,7 +3,7 @@
   {
   "match" : ["mushroom", "cure", "blue", "yes"],
   "pre" : [["quest", "scorn/BlueMushroom", "10"], ["item", "blue mushroom"], ["token", "question", "mushroom"]],
-  "post" : [["takeitem", "blue mushroom"], ["quest", "scorn/BlueMushroom", "50"], ["quest", "scorn/Aristocracy", "40"], ["givecontents", "Marquis Reward"], ["settoken", "question", "0"]],
+  "post" : [["takeitem", "blue mushroom"], ["quest", "scorn/BlueMushroom", "50"], ["givecontents", "Marquis Reward"], ["settoken", "question", "0"]],
   "msg" : ["Congratulations on completing your quest.  Kneel and receive your accolade.....\n You are now a Marquis!\n Also, please take this fine potion as a reward. May it serve you well!"]
   },{
   "match" : ["mushroom", "cure", "blue", "yes"],

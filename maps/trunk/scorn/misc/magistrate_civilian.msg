@@ -3,7 +3,7 @@
   {
   "match" : ["head", "goblin", "chief", "yes"],
   "pre" : [["quest", "scorn/GoblinKing", "10"], ["item", "Head of the Goblin Chief"], ["token", "question", "goblin"]],
-  "post" : [["takeitem", "Head of the Goblin Chief"], ["quest", "scorn/GoblinKing", "50"], ["quest", "scorn/Aristocracy", "10"], ["givecontents", "Knight Reward"], ["settoken", "question", "0"], ["quest", "scorn/ScornHero", "50"]],
+  "post" : [["takeitem", "Head of the Goblin Chief"], ["quest", "scorn/GoblinKing", "50"], ["givecontents", "Knight Reward"], ["settoken", "question", "0"]],
   "msg" : ["Congratulations on completing your quest.  Kneel and receive your accolade.....\n You are now sir $you, Knight of Scorn, with all the privileges pertaining thereto."]
   },{
   "match" : ["head", "goblin", "chief", "yes"],

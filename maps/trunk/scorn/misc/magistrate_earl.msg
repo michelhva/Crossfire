@@ -3,7 +3,7 @@
   {
   "match" : ["demon", "euthville", "portal", "broken", "threat", "yes"],
   "pre" : [["quest", "scorn/DemonPit", "10"], ["item", "broken gateway"], ["token", "question", "demon"]],
-  "post" : [["takeitem", "broken gateway"], ["quest", "scorn/DemonPit", "50"], ["quest", "scorn/Aristocracy", "60"], ["givecontents", "Count Reward"], ["settoken", "question", "0"]],
+  "post" : [["takeitem", "broken gateway"], ["quest", "scorn/DemonPit", "50"], ["givecontents", "Count Reward"], ["settoken", "question", "0"]],
   "msg" : ["Congratulations on completing your quest.  Kneel and receive your accolade.....\n You are now a Count!\n Also, please take this fine sword as a reward. May it serve you well!"]
   },{
   "match" : ["demon", "euthville", "portal", "broken", "threat", "yes"],

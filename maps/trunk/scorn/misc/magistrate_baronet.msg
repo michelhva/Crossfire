@@ -3,7 +3,7 @@
   {
   "match" : ["ring", "animator", "token", "yes"],
   "pre" : [["quest", "scorn/Animator", "10"], ["item", "Animator's Ring"], ["token", "question", "animator"]],
-  "post" : [["takeitem", "Animator's Ring"], ["quest", "scorn/Animator", "50"], ["quest", "scorn/Aristocracy", "30"], ["givecontents", "Baron Reward"], ["settoken", "question", "0"]],
+  "post" : [["takeitem", "Animator's Ring"], ["quest", "scorn/Animator", "50"], ["givecontents", "Baron Reward"], ["settoken", "question", "0"]],
   "msg" : ["Congratulations on completing your quest.  Kneel and receive your accolade.....\n You are now a Baron! \n Also, please take this fine longbow as a reward. May it serve you well!"]
   },{
   "match" : ["ring", "animator", "token", "yes"],
