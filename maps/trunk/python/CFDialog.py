@@ -297,8 +297,8 @@ class Dialog:
             if os.path.isfile(path):
                 try:
                     exec(open(path).read())
-                except:
-                    Crossfire.Log(Crossfire.LogError, "CFDialog: Failed to set post-condition %s." % condition)
+                except Exception as error:
+                    Crossfire.Log(Crossfire.LogError, "CFDialog: Failed to set post-condition %s:%s." %(condition, error))
             else:
                 Crossfire.Log(Crossfire.LogError, "CFDialog: Post Block called with unknown action %s." % action)
 
@@ -344,3 +344,46 @@ class Dialog:
                 finished = finished + ";"
             finished = finished + key + ":" + value
         self.__character.WriteKey("dialog_" + self.__location, finished, 1)
+
+    # Search the NPC for a particular flag, and if it exists, return
+    # its value.  Flag names are combined with the unique dialog "location"
+    # identifier and the player's name, and are therefore are not required
+    # to be unique.  This also prevents flags from conflicting with other
+    # non-dialog-related contents in the NPC.
+    def getNPCStatus(self, key):
+        npc_status=self.__speaker.ReadKey("dialog_"+self.__location + "_" + self.__character.Name);
+        if npc_status == "":
+            return "0"
+        pairs=npc_status.split(";")
+        for i in pairs:
+            subpair=i.split(":")
+            if subpair[0] == key:
+                return subpair[1]
+        return "0"
+
+    # Store a flag in the NPC and set it to the specified value.  Flag
+    # names are combined with the unique dialog "location" identifier
+    # and the player's name, and are therefore are not required to be unique.
+    # This also prevents flags from conflicting with other non-dialog-related
+    # contents in the player file.
+    def setNPCStatus(self, key, value):
+        if value == "*":
+            return
+        ishere = 0
+        finished = ""
+        npc_status = self.__speaker.ReadKey("dialog_"+self.__location + "_" + self.__character.Name);
+        if npc_status != "":
+            pairs = npc_status.split(";")
+            for i in pairs:
+                subpair = i.split(":")
+                if subpair[0] == key:
+                    subpair[1] = value
+                    ishere = 1
+                if finished != "":
+                    finished = finished+";"
+                finished = finished + subpair[0] + ":" + subpair[1]
+        if ishere == 0:
+            if finished != "":
+                finished = finished + ";"
+            finished = finished + key + ":" + value
+        self.__speaker.WriteKey("dialog_" + self.__location + "_" + self.__character.Name, finished, 1)
