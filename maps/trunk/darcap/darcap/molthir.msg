@@ -3,26 +3,26 @@
   "rules": [
   {
   "match" : ["yes"],
-  "pre" : [["quest", "darcap/Spike", "20-30"], ["item", "smaprh roots", "5"]],
-  "post" : [["quest", "darcap/Spike", "40"], ["takeitem", "smaprh root", "5"], ["givecontents", "pouch"]],
+  "pre" : [["quest", "darcap/Spike", "20-30"], ["item", "smaprh roots", "5"], ["npctoken", "asked_roots", "yes"]],
+  "post" : [["quest", "darcap/Spike", "40"], ["takeitem", "smaprh root", "5"], ["givecontents", "pouch"], ["setnpctoken", "asked_roots", "no"]],
   "msg" : ["Great! Now I can make my potion.\n\nHere, give that to Spike, that should help him."],
   "replies" : []
   },{
   "match" : ["yes"],
-  "pre" : [["quest", "darcap/Spike", "20-30"]],
-  "post" : [],
+  "pre" : [["quest", "darcap/Spike", "20-30"], ["npctoken", "asked_roots", "yes"]],
+  "post" : [["setnpctoken", "asked_roots", "no"]],
   "msg" : ["Well, where are there, then?"],
   "replies" : []
   },{
   "match" : ["no"],
-  "pre" : [["quest", "darcap/Spike", "20-30"]],
-  "post" : [],
+  "pre" : [["quest", "darcap/Spike", "20-30"], ["npctoken", "asked_roots", "yes"]],
+  "post" : [["setnpctoken", "asked_roots", "no"]],
   "msg" : ["Well, please go to Bob's place to get them..."],
   "replies" : []
   },{
   "match" : ["*"],
   "pre" : [["quest", "darcap/Spike", "20-30"]],
-  "post" : [],
+  "post" : [["setnpctoken", "asked_roots", "yes"]],
   "msg" : ["So, did you get those roots?"],
   "replies" : [["yes", "Yes, I got them from Bob.", "1"], ["no", "No, not yet", "1"]]
   },{
