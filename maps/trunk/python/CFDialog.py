@@ -206,6 +206,10 @@ class Dialog:
     # some variable substitution is done on the message here, $me and $you 
     # are replaced by the names of the npc and the player respectively
     def speak(self, msg):
+        # query the animation system in case the NPC is playing an animation
+        if self.__speaker.Event(self.__speaker, self.__speaker, "", 1):
+            return 0
+
         key = self.uniqueKey()
         replies = None
         if Crossfire.GetPrivateDictionary().has_key(key):
