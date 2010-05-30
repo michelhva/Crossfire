@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 # basic quest-related tests
 
 import Crossfire
