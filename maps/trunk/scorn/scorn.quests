@@ -4,6 +4,7 @@ include aristocracy.quests
 include citygate.quests
 include kar/gork.quests
 
+
 quest scorn/smith/customarmour
 title Custom Armour
 restart 1
@@ -35,7 +36,6 @@ title The Special Goose Chase
 description
 Return a goose called Esmerelda to its rightful owner.
 end_description
-restart 0
 step 10
 description
 I have just drunk what must be the worst cup of coffee I have ever tasted, I should complain to the manager.
@@ -48,7 +48,7 @@ end_description
 end_step
 step 20
 description
-Eswald told me that the quality of his coffee has dropped dramatically since his goose, Esmeralda, went missing. He assures me that if I return her, that he will be able to brew his world-famous coffee to its customary quality once again.
+Eswald told me that the quality of his coffee has dropped dramatically since his goose, Esmeralda, went missing. He assures me that if I return her, he will be able to brew his world-famous coffee to its customary quality once again.
 end_description
 end_step
 step 30
@@ -68,8 +68,8 @@ end_description
 end_step
 step 47
 description
-I spoke to Mark at Goth's Tavern, he told me that the key to the back room of Amy's house was at Swabbie's house
-I should say 'mumblypeg' to chancy and he will fetch the key for me.
+I spoke to Mark at Goth's Tavern, he told me that the key to the back room of Amy's house was at Swabbie's house.
+I should say 'mumblypeg' to Chancy and he will fetch the key for me.
 end_description
 end_step
 step 50
@@ -79,7 +79,7 @@ end_description
 end_step
 step 60
 description
-I followed a sheep called Chancy who led me to a key, I wonder want it unlocks?
+I followed a sheep called Chancy who led me to a key, I wonder what it unlocks?
 end_description
 end_step
 step 70
@@ -89,7 +89,7 @@ end_description
 end_step
 step 90
 description
-I have found Esmeralda
+I have found Esmeralda.
 end_description
 end_step
 step 100
@@ -99,3 +99,4 @@ I have reunited Eswald with Esmeralda, and his coffee is now of the highest qual
 end_description
 end_step
 end_quest
+
