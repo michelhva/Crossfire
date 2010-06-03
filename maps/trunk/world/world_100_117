@@ -2,23 +2,26 @@ arch map
 name world_100_117
 width 50
 height 50
+msg
+Modified: 2010-06-01 Kevin Bulgrien
+endmsg
 outdoor 1
 tile_path_1 world_100_116
 tile_path_2 world_101_117
 tile_path_3 world_100_118
 end
-arch deep_sea
 elevation -22738
+arch sea
 end
-arch deep_sea
+arch sea
 y 1
 elevation -11701
 end
-arch deep_sea
+arch sea
 y 2
 elevation -10390
 end
-arch deep_sea
+arch sea
 y 3
 elevation -16030
 end
@@ -26,19 +29,19 @@ arch sea
 y 4
 elevation -3401
 end
-arch deep_sea
+arch sea
 y 5
 elevation -5312
 end
-arch deep_sea
+arch sea
 y 6
 elevation -5818
 end
-arch deep_sea
+arch sea
 y 7
 elevation -9620
 end
-arch deep_sea
+arch sea
 y 8
 elevation -14922
 end
@@ -122,11 +125,11 @@ arch deep_sea
 y 28
 elevation -8704
 end
-arch sea
+arch deep_sea
 y 29
 elevation -3806
 end
-arch sea
+arch deep_sea
 y 30
 elevation -4326
 end
@@ -134,7 +137,7 @@ arch deep_sea
 y 31
 elevation -7042
 end
-arch sea
+arch deep_sea
 y 32
 elevation -4527
 end
@@ -206,21 +209,21 @@ arch deep_sea
 y 49
 elevation -15379
 end
-arch deep_sea
+arch sea
 x 1
 elevation -8813
 end
-arch deep_sea
+arch sea
 x 1
 y 1
 elevation -6080
 end
-arch deep_sea
+arch sea
 x 1
 y 2
 elevation -7481
 end
-arch deep_sea
+arch sea
 x 1
 y 3
 elevation -11718
@@ -230,22 +233,22 @@ x 1
 y 4
 elevation -3301
 end
-arch deep_sea
+arch sea
 x 1
 y 5
 elevation -5976
 end
-arch deep_sea
+arch sea
 x 1
 y 6
 elevation -5837
 end
-arch deep_sea
+arch sea
 x 1
 y 7
 elevation -7364
 end
-arch deep_sea
+arch sea
 x 1
 y 8
 elevation -22570
@@ -295,12 +298,12 @@ x 1
 y 17
 elevation -6694
 end
-arch sea
+arch deep_sea
 x 1
 y 18
 elevation -3710
 end
-arch sea
+arch deep_sea
 x 1
 y 19
 elevation -3813
@@ -350,12 +353,12 @@ x 1
 y 28
 elevation -8480
 end
-arch sea
+arch deep_sea
 x 1
 y 29
 elevation -4421
 end
-arch sea
+arch deep_sea
 x 1
 y 30
 elevation -3899
@@ -455,46 +458,46 @@ x 1
 y 49
 elevation -15150
 end
-arch deep_sea
+arch sea
 x 2
 elevation -8838
 end
-arch deep_sea
+arch sea
 x 2
 y 1
 elevation -8333
 end
-arch deep_sea
+arch sea
 x 2
 y 2
 elevation -8532
 end
-arch deep_sea
+arch sea
 x 2
 y 3
 elevation -8147
 end
-arch deep_sea
+arch sea
 x 2
 y 4
 elevation -7878
 end
-arch deep_sea
+arch sea
 x 2
 y 5
 elevation -7398
 end
-arch deep_sea
+arch sea
 x 2
 y 6
 elevation -8545
 end
-arch deep_sea
+arch sea
 x 2
 y 7
 elevation -11528
 end
-arch deep_sea
+arch sea
 x 2
 y 8
 elevation -13911
@@ -704,46 +707,46 @@ x 2
 y 49
 elevation -17351
 end
-arch deep_sea
+arch sea
 x 3
 elevation -9147
 end
-arch deep_sea
+arch sea
 x 3
 y 1
 elevation -8918
 end
-arch deep_sea
+arch sea
 x 3
 y 2
 elevation -8782
 end
-arch deep_sea
+arch sea
 x 3
 y 3
 elevation -8723
 end
-arch deep_sea
+arch sea
 x 3
 y 4
 elevation -8684
 end
-arch deep_sea
+arch sea
 x 3
 y 5
 elevation -8991
 end
-arch deep_sea
+arch sea
 x 3
 y 6
 elevation -9894
 end
-arch deep_sea
+arch sea
 x 3
 y 7
 elevation -11289
 end
-arch deep_sea
+arch sea
 x 3
 y 8
 elevation -12735
@@ -953,46 +956,46 @@ x 3
 y 49
 elevation -17093
 end
-arch deep_sea
+arch sea
 x 4
 elevation -9307
 end
-arch deep_sea
+arch sea
 x 4
 y 1
 elevation -9206
 end
-arch deep_sea
+arch sea
 x 4
 y 2
 elevation -9165
 end
-arch deep_sea
+arch sea
 x 4
 y 3
 elevation -9198
 end
-arch deep_sea
+arch sea
 x 4
 y 4
 elevation -9361
 end
-arch deep_sea
+arch sea
 x 4
 y 5
 elevation -9740
 end
-arch deep_sea
+arch sea
 x 4
 y 6
 elevation -10389
 end
-arch deep_sea
+arch sea
 x 4
 y 7
 elevation -11232
 end
-arch deep_sea
+arch sea
 x 4
 y 8
 elevation -12041
@@ -1202,41 +1205,41 @@ x 4
 y 49
 elevation -16698
 end
-arch deep_sea
+arch sea
 x 5
 elevation -9411
 end
-arch deep_sea
+arch sea
 x 5
 y 1
 elevation -9405
 end
-arch deep_sea
+arch sea
 x 5
 y 2
 elevation -9449
 end
-arch deep_sea
+arch sea
 x 5
 y 3
 elevation -9564
 end
-arch deep_sea
+arch sea
 x 5
 y 4
 elevation -9781
 end
-arch deep_sea
+arch sea
 x 5
 y 5
 elevation -10130
 end
-arch deep_sea
+arch sea
 x 5
 y 6
 elevation -10607
 end
-arch deep_sea
+arch sea
 x 5
 y 7
 elevation -11155
@@ -1451,41 +1454,41 @@ x 5
 y 49
 elevation -16247
 end
-arch deep_sea
+arch sea
 x 6
 elevation -9456
 end
-arch deep_sea
+arch sea
 x 6
 y 1
 elevation -9526
 end
-arch deep_sea
+arch sea
 x 6
 y 2
 elevation -9636
 end
-arch deep_sea
+arch sea
 x 6
 y 3
 elevation -9798
 end
-arch deep_sea
+arch sea
 x 6
 y 4
 elevation -10028
 end
-arch deep_sea
+arch sea
 x 6
 y 5
 elevation -10332
 end
-arch deep_sea
+arch sea
 x 6
 y 6
 elevation -10697
 end
-arch deep_sea
+arch sea
 x 6
 y 7
 elevation -11083
@@ -1700,41 +1703,41 @@ x 6
 y 49
 elevation -15800
 end
-arch deep_sea
+arch sea
 x 7
 elevation -9444
 end
-arch deep_sea
+arch sea
 x 7
 y 1
 elevation -9576
 end
-arch deep_sea
+arch sea
 x 7
 y 2
 elevation -9734
 end
-arch deep_sea
+arch sea
 x 7
 y 3
 elevation -9925
 end
-arch deep_sea
+arch sea
 x 7
 y 4
 elevation -10155
 end
-arch deep_sea
+arch sea
 x 7
 y 5
 elevation -10424
 end
-arch deep_sea
+arch sea
 x 7
 y 6
 elevation -10717
 end
-arch deep_sea
+arch sea
 x 7
 y 7
 elevation -11009
@@ -1949,41 +1952,41 @@ x 7
 y 49
 elevation -15372
 end
-arch deep_sea
+arch sea
 x 8
 elevation -9384
 end
-arch deep_sea
+arch sea
 x 8
 y 1
 elevation -9564
 end
-arch deep_sea
+arch sea
 x 8
 y 2
 elevation -9757
 end
-arch deep_sea
+arch sea
 x 8
 y 3
 elevation -9967
 end
-arch deep_sea
+arch sea
 x 8
 y 4
 elevation -10197
 end
-arch deep_sea
+arch sea
 x 8
 y 5
 elevation -10441
 end
-arch deep_sea
+arch sea
 x 8
 y 6
 elevation -10691
 end
-arch deep_sea
+arch sea
 x 8
 y 7
 elevation -10928
@@ -2198,41 +2201,41 @@ x 8
 y 49
 elevation -14966
 end
-arch deep_sea
+arch sea
 x 9
 elevation -9283
 end
-arch deep_sea
+arch sea
 x 9
 y 1
 elevation -9500
 end
-arch deep_sea
+arch sea
 x 9
 y 2
 elevation -9720
 end
-arch deep_sea
+arch sea
 x 9
 y 3
 elevation -9944
 end
-arch deep_sea
+arch sea
 x 9
 y 4
 elevation -10174
 end
-arch deep_sea
+arch sea
 x 9
 y 5
 elevation -10404
 end
-arch deep_sea
+arch sea
 x 9
 y 6
 elevation -10627
 end
-arch deep_sea
+arch sea
 x 9
 y 7
 elevation -10834
@@ -2447,41 +2450,41 @@ x 9
 y 49
 elevation -14577
 end
-arch deep_sea
+arch sea
 x 10
 elevation -9149
 end
-arch deep_sea
+arch sea
 x 10
 y 1
 elevation -9393
 end
-arch deep_sea
+arch sea
 x 10
 y 2
 elevation -9633
 end
-arch deep_sea
+arch sea
 x 10
 y 3
 elevation -9869
 end
-arch deep_sea
+arch sea
 x 10
 y 4
 elevation -10100
 end
-arch deep_sea
+arch sea
 x 10
 y 5
 elevation -10323
 end
-arch deep_sea
+arch sea
 x 10
 y 6
 elevation -10532
 end
-arch deep_sea
+arch sea
 x 10
 y 7
 elevation -10722
@@ -2696,36 +2699,36 @@ x 10
 y 49
 elevation -14202
 end
-arch deep_sea
+arch sea
 x 11
 elevation -8987
 end
-arch deep_sea
+arch sea
 x 11
 y 1
 elevation -9252
 end
-arch deep_sea
+arch sea
 x 11
 y 2
 elevation -9506
 end
-arch deep_sea
+arch sea
 x 11
 y 3
 elevation -9751
 end
-arch deep_sea
+arch sea
 x 11
 y 4
 elevation -9985
 end
-arch deep_sea
+arch sea
 x 11
 y 5
 elevation -10205
 end
-arch deep_sea
+arch sea
 x 11
 y 6
 elevation -10409
@@ -2945,36 +2948,36 @@ x 11
 y 49
 elevation -13834
 end
-arch deep_sea
+arch sea
 x 12
 elevation -8804
 end
-arch deep_sea
+arch sea
 x 12
 y 1
 elevation -9082
 end
-arch deep_sea
+arch sea
 x 12
 y 2
 elevation -9348
 end
-arch deep_sea
+arch sea
 x 12
 y 3
 elevation -9600
 end
-arch deep_sea
+arch sea
 x 12
 y 4
 elevation -9837
 end
-arch deep_sea
+arch sea
 x 12
 y 5
 elevation -10058
 end
-arch deep_sea
+arch sea
 x 12
 y 6
 elevation -10260
@@ -3194,36 +3197,36 @@ x 12
 y 49
 elevation -13469
 end
-arch deep_sea
+arch sea
 x 13
 elevation -8603
 end
-arch deep_sea
+arch sea
 x 13
 y 1
 elevation -8891
 end
-arch deep_sea
+arch sea
 x 13
 y 2
 elevation -9164
 end
-arch deep_sea
+arch sea
 x 13
 y 3
 elevation -9422
 end
-arch deep_sea
+arch sea
 x 13
 y 4
 elevation -9663
 end
-arch deep_sea
+arch sea
 x 13
 y 5
 elevation -9885
 end
-arch deep_sea
+arch sea
 x 13
 y 6
 elevation -10088
@@ -3443,36 +3446,36 @@ x 13
 y 49
 elevation -13104
 end
-arch deep_sea
+arch sea
 x 14
 elevation -8390
 end
-arch deep_sea
+arch sea
 x 14
 y 1
 elevation -8683
 end
-arch deep_sea
+arch sea
 x 14
 y 2
 elevation -8962
 end
-arch deep_sea
+arch sea
 x 14
 y 3
 elevation -9223
 end
-arch deep_sea
+arch sea
 x 14
 y 4
 elevation -9467
 end
-arch deep_sea
+arch sea
 x 14
 y 5
 elevation -9692
 end
-arch deep_sea
+arch sea
 x 14
 y 6
 elevation -9897
@@ -3692,36 +3695,36 @@ x 14
 y 49
 elevation -12733
 end
-arch deep_sea
+arch sea
 x 15
 elevation -8168
 end
-arch deep_sea
+arch sea
 x 15
 y 1
 elevation -8464
 end
-arch deep_sea
+arch sea
 x 15
 y 2
 elevation -8745
 end
-arch deep_sea
+arch sea
 x 15
 y 3
 elevation -9009
 end
-arch deep_sea
+arch sea
 x 15
 y 4
 elevation -9255
 end
-arch deep_sea
+arch sea
 x 15
 y 5
 elevation -9482
 end
-arch deep_sea
+arch sea
 x 15
 y 6
 elevation -9690
@@ -3941,36 +3944,36 @@ x 15
 y 49
 elevation -12354
 end
-arch deep_sea
+arch sea
 x 16
 elevation -7942
 end
-arch deep_sea
+arch sea
 x 16
 y 1
 elevation -8238
 end
-arch deep_sea
+arch sea
 x 16
 y 2
 elevation -8519
 end
-arch deep_sea
+arch sea
 x 16
 y 3
 elevation -8783
 end
-arch deep_sea
+arch sea
 x 16
 y 4
 elevation -9030
 end
-arch deep_sea
+arch sea
 x 16
 y 5
 elevation -9260
 end
-arch deep_sea
+arch sea
 x 16
 y 6
 elevation -9471
@@ -4190,31 +4193,31 @@ x 16
 y 49
 elevation -11964
 end
-arch deep_sea
+arch sea
 x 17
 elevation -7715
 end
-arch deep_sea
+arch sea
 x 17
 y 1
 elevation -8008
 end
-arch deep_sea
+arch sea
 x 17
 y 2
 elevation -8287
 end
-arch deep_sea
+arch sea
 x 17
 y 3
 elevation -8551
 end
-arch deep_sea
+arch sea
 x 17
 y 4
 elevation -8799
 end
-arch deep_sea
+arch sea
 x 17
 y 5
 elevation -9030
@@ -4439,31 +4442,31 @@ x 17
 y 49
 elevation -11561
 end
-arch deep_sea
+arch sea
 x 18
 elevation -7490
 end
-arch deep_sea
+arch sea
 x 18
 y 1
 elevation -7778
 end
-arch deep_sea
+arch sea
 x 18
 y 2
 elevation -8054
 end
-arch deep_sea
+arch sea
 x 18
 y 3
 elevation -8316
 end
-arch deep_sea
+arch sea
 x 18
 y 4
 elevation -8563
 end
-arch deep_sea
+arch sea
 x 18
 y 5
 elevation -8795
@@ -4688,31 +4691,31 @@ x 18
 y 49
 elevation -11144
 end
-arch deep_sea
+arch sea
 x 19
 elevation -7269
 end
-arch deep_sea
+arch sea
 x 19
 y 1
 elevation -7551
 end
-arch deep_sea
+arch sea
 x 19
 y 2
 elevation -7823
 end
-arch deep_sea
+arch sea
 x 19
 y 3
 elevation -8081
 end
-arch deep_sea
+arch sea
 x 19
 y 4
 elevation -8327
 end
-arch deep_sea
+arch sea
 x 19
 y 5
 elevation -8559
@@ -4937,31 +4940,31 @@ x 19
 y 49
 elevation -10711
 end
-arch deep_sea
+arch sea
 x 20
 elevation -7054
 end
-arch deep_sea
+arch sea
 x 20
 y 1
 elevation -7330
 end
-arch deep_sea
+arch sea
 x 20
 y 2
 elevation -7595
 end
-arch deep_sea
+arch sea
 x 20
 y 3
 elevation -7850
 end
-arch deep_sea
+arch sea
 x 20
 y 4
 elevation -8093
 end
-arch deep_sea
+arch sea
 x 20
 y 5
 elevation -8325
@@ -5186,31 +5189,31 @@ x 20
 y 49
 elevation -10261
 end
-arch deep_sea
+arch sea
 x 21
 elevation -6847
 end
-arch deep_sea
+arch sea
 x 21
 y 1
 elevation -7115
 end
-arch deep_sea
+arch sea
 x 21
 y 2
 elevation -7374
 end
-arch deep_sea
+arch sea
 x 21
 y 3
 elevation -7624
 end
-arch deep_sea
+arch sea
 x 21
 y 4
 elevation -7864
 end
-arch deep_sea
+arch sea
 x 21
 y 5
 elevation -8094
@@ -5435,31 +5438,31 @@ x 21
 y 49
 elevation -9793
 end
-arch deep_sea
+arch sea
 x 22
 elevation -6648
 end
-arch deep_sea
+arch sea
 x 22
 y 1
 elevation -6907
 end
-arch deep_sea
+arch sea
 x 22
 y 2
 elevation -7159
 end
-arch deep_sea
+arch sea
 x 22
 y 3
 elevation -7404
 end
-arch deep_sea
+arch sea
 x 22
 y 4
 elevation -7640
 end
-arch deep_sea
+arch sea
 x 22
 y 5
 elevation -7868
@@ -5684,31 +5687,31 @@ x 22
 y 49
 elevation -9309
 end
-arch deep_sea
+arch sea
 x 23
 elevation -6458
 end
-arch deep_sea
+arch sea
 x 23
 y 1
 elevation -6708
 end
-arch deep_sea
+arch sea
 x 23
 y 2
 elevation -6952
 end
-arch deep_sea
+arch sea
 x 23
 y 3
 elevation -7191
 end
-arch deep_sea
+arch sea
 x 23
 y 4
 elevation -7423
 end
-arch deep_sea
+arch sea
 x 23
 y 5
 elevation -7649
@@ -5933,36 +5936,36 @@ x 23
 y 49
 elevation -8809
 end
-arch deep_sea
+arch sea
 x 24
 elevation -6276
 end
-arch deep_sea
+arch sea
 x 24
 y 1
 elevation -6516
 end
-arch deep_sea
+arch sea
 x 24
 y 2
 elevation -6753
 end
-arch deep_sea
+arch sea
 x 24
 y 3
 elevation -6985
 end
-arch deep_sea
+arch sea
 x 24
 y 4
 elevation -7213
 end
-arch deep_sea
+arch sea
 x 24
 y 5
 elevation -7436
 end
-arch deep_sea
+arch sea
 x 24
 y 6
 elevation -7656
@@ -6182,36 +6185,36 @@ x 24
 y 49
 elevation -8297
 end
-arch deep_sea
+arch sea
 x 25
 elevation -6101
 end
-arch deep_sea
+arch sea
 x 25
 y 1
 elevation -6332
 end
-arch deep_sea
+arch sea
 x 25
 y 2
 elevation -6561
 end
-arch deep_sea
+arch sea
 x 25
 y 3
 elevation -6787
 end
-arch deep_sea
+arch sea
 x 25
 y 4
 elevation -7009
 end
-arch deep_sea
+arch sea
 x 25
 y 5
 elevation -7230
 end
-arch deep_sea
+arch sea
 x 25
 y 6
 elevation -7449
@@ -6431,36 +6434,36 @@ x 25
 y 49
 elevation -7778
 end
-arch deep_sea
+arch sea
 x 26
 elevation -5933
 end
-arch deep_sea
+arch sea
 x 26
 y 1
 elevation -6155
 end
-arch deep_sea
+arch sea
 x 26
 y 2
 elevation -6376
 end
-arch deep_sea
+arch sea
 x 26
 y 3
 elevation -6595
 end
-arch deep_sea
+arch sea
 x 26
 y 4
 elevation -6813
 end
-arch deep_sea
+arch sea
 x 26
 y 5
 elevation -7030
 end
-arch deep_sea
+arch sea
 x 26
 y 6
 elevation -7248
@@ -6680,36 +6683,36 @@ x 26
 y 49
 elevation -7258
 end
-arch deep_sea
+arch sea
 x 27
 elevation -5770
 end
-arch deep_sea
+arch sea
 x 27
 y 1
 elevation -5983
 end
-arch deep_sea
+arch sea
 x 27
 y 2
 elevation -6195
 end
-arch deep_sea
+arch sea
 x 27
 y 3
 elevation -6408
 end
-arch deep_sea
+arch sea
 x 27
 y 4
 elevation -6622
 end
-arch deep_sea
+arch sea
 x 27
 y 5
 elevation -6836
 end
-arch deep_sea
+arch sea
 x 27
 y 6
 elevation -7053
@@ -6929,36 +6932,36 @@ x 27
 y 49
 elevation -6746
 end
-arch deep_sea
+arch sea
 x 28
 elevation -5611
 end
-arch deep_sea
+arch sea
 x 28
 y 1
 elevation -5814
 end
-arch deep_sea
+arch sea
 x 28
 y 2
 elevation -6019
 end
-arch deep_sea
+arch sea
 x 28
 y 3
 elevation -6226
 end
-arch deep_sea
+arch sea
 x 28
 y 4
 elevation -6436
 end
-arch deep_sea
+arch sea
 x 28
 y 5
 elevation -6648
 end
-arch deep_sea
+arch sea
 x 28
 y 6
 elevation -6863
@@ -7178,36 +7181,36 @@ x 28
 y 49
 elevation -6254
 end
-arch deep_sea
+arch sea
 x 29
 elevation -5454
 end
-arch deep_sea
+arch sea
 x 29
 y 1
 elevation -5649
 end
-arch deep_sea
+arch sea
 x 29
 y 2
 elevation -5847
 end
-arch deep_sea
+arch sea
 x 29
 y 3
 elevation -6048
 end
-arch deep_sea
+arch sea
 x 29
 y 4
 elevation -6254
 end
-arch deep_sea
+arch sea
 x 29
 y 5
 elevation -6463
 end
-arch deep_sea
+arch sea
 x 29
 y 6
 elevation -6678
@@ -7427,36 +7430,36 @@ x 29
 y 49
 elevation -5791
 end
-arch deep_sea
+arch sea
 x 30
 elevation -5297
 end
-arch deep_sea
+arch sea
 x 30
 y 1
 elevation -5484
 end
-arch deep_sea
+arch sea
 x 30
 y 2
 elevation -5676
 end
-arch deep_sea
+arch sea
 x 30
 y 3
 elevation -5872
 end
-arch deep_sea
+arch sea
 x 30
 y 4
 elevation -6074
 end
-arch deep_sea
+arch sea
 x 30
 y 5
 elevation -6282
 end
-arch deep_sea
+arch sea
 x 30
 y 6
 elevation -6496
@@ -7676,41 +7679,41 @@ x 30
 y 49
 elevation -5366
 end
-arch deep_sea
+arch sea
 x 31
 elevation -5140
 end
-arch deep_sea
+arch sea
 x 31
 y 1
 elevation -5320
 end
-arch deep_sea
+arch sea
 x 31
 y 2
 elevation -5505
 end
-arch deep_sea
+arch sea
 x 31
 y 3
 elevation -5698
 end
-arch deep_sea
+arch sea
 x 31
 y 4
 elevation -5897
 end
-arch deep_sea
+arch sea
 x 31
 y 5
 elevation -6103
 end
-arch deep_sea
+arch sea
 x 31
 y 6
 elevation -6317
 end
-arch deep_sea
+arch sea
 x 31
 y 7
 elevation -6539
@@ -7929,37 +7932,37 @@ arch sea
 x 32
 elevation -4981
 end
-arch deep_sea
+arch sea
 x 32
 y 1
 elevation -5154
 end
-arch deep_sea
+arch sea
 x 32
 y 2
 elevation -5334
 end
-arch deep_sea
+arch sea
 x 32
 y 3
 elevation -5523
 end
-arch deep_sea
+arch sea
 x 32
 y 4
 elevation -5720
 end
-arch deep_sea
+arch sea
 x 32
 y 5
 elevation -5925
 end
-arch deep_sea
+arch sea
 x 32
 y 6
 elevation -6140
 end
-arch deep_sea
+arch sea
 x 32
 y 7
 elevation -6363
@@ -8183,32 +8186,32 @@ x 33
 y 1
 elevation -4985
 end
-arch deep_sea
+arch sea
 x 33
 y 2
 elevation -5161
 end
-arch deep_sea
+arch sea
 x 33
 y 3
 elevation -5347
 end
-arch deep_sea
+arch sea
 x 33
 y 4
 elevation -5542
 end
-arch deep_sea
+arch sea
 x 33
 y 5
 elevation -5748
 end
-arch deep_sea
+arch sea
 x 33
 y 6
 elevation -5963
 end
-arch deep_sea
+arch sea
 x 33
 y 7
 elevation -6189
@@ -8437,27 +8440,27 @@ x 34
 y 2
 elevation -4984
 end
-arch deep_sea
+arch sea
 x 34
 y 3
 elevation -5168
 end
-arch deep_sea
+arch sea
 x 34
 y 4
 elevation -5364
 end
-arch deep_sea
+arch sea
 x 34
 y 5
 elevation -5570
 end
-arch deep_sea
+arch sea
 x 34
 y 6
 elevation -5787
 end
-arch deep_sea
+arch sea
 x 34
 y 7
 elevation -6015
@@ -8691,22 +8694,22 @@ x 35
 y 3
 elevation -4986
 end
-arch deep_sea
+arch sea
 x 35
 y 4
 elevation -5182
 end
-arch deep_sea
+arch sea
 x 35
 y 5
 elevation -5390
 end
-arch deep_sea
+arch sea
 x 35
 y 6
 elevation -5609
 end
-arch deep_sea
+arch sea
 x 35
 y 7
 elevation -5841
@@ -8945,17 +8948,17 @@ x 36
 y 4
 elevation -4996
 end
-arch deep_sea
+arch sea
 x 36
 y 5
 elevation -5207
 end
-arch deep_sea
+arch sea
 x 36
 y 6
 elevation -5430
 end
-arch deep_sea
+arch sea
 x 36
 y 7
 elevation -5666
@@ -9194,22 +9197,22 @@ x 37
 y 4
 elevation -4806
 end
-arch deep_sea
+arch sea
 x 37
 y 5
 elevation -5020
 end
-arch deep_sea
+arch sea
 x 37
 y 6
 elevation -5249
 end
-arch deep_sea
+arch sea
 x 37
 y 7
 elevation -5489
 end
-arch deep_sea
+arch sea
 x 37
 y 8
 elevation -5742
@@ -9448,17 +9451,17 @@ x 38
 y 5
 elevation -4829
 end
-arch deep_sea
+arch sea
 x 38
 y 6
 elevation -5063
 end
-arch deep_sea
+arch sea
 x 38
 y 7
 elevation -5310
 end
-arch deep_sea
+arch sea
 x 38
 y 8
 elevation -5568
@@ -9702,12 +9705,12 @@ x 39
 y 6
 elevation -4873
 end
-arch deep_sea
+arch sea
 x 39
 y 7
 elevation -5127
 end
-arch deep_sea
+arch sea
 x 39
 y 8
 elevation -5393
@@ -9956,7 +9959,7 @@ x 40
 y 7
 elevation -4940
 end
-arch deep_sea
+arch sea
 x 40
 y 8
 elevation -5214
@@ -10205,7 +10208,7 @@ x 41
 y 7
 elevation -4747
 end
-arch deep_sea
+arch sea
 x 41
 y 8
 elevation -5032
@@ -10459,7 +10462,7 @@ x 42
 y 8
 elevation -4846
 end
-arch deep_sea
+arch sea
 x 42
 y 9
 elevation -5148
