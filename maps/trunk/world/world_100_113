@@ -3,7 +3,7 @@ name world_100_113
 width 50
 height 50
 msg
-Modified: 2010-05-30 Kevin Bulgrien
+Modified: 2010-06-01 Kevin Bulgrien
 endmsg
 outdoor 1
 tile_path_1 world_100_112
@@ -29,7 +29,7 @@ arch deep_sea
 y 4
 elevation -11193
 end
-arch sea
+arch deep_sea
 y 5
 elevation -2914
 end
@@ -37,7 +37,7 @@ arch deep_sea
 y 6
 elevation -5308
 end
-arch sea
+arch deep_sea
 y 7
 elevation -3673
 end
@@ -65,15 +65,15 @@ arch deep_sea
 y 13
 elevation -6215
 end
-arch sea
+arch deep_sea
 y 14
 elevation -3686
 end
-arch sea
+arch deep_sea
 y 15
 elevation -2000
 end
-arch sea
+arch deep_sea
 y 16
 elevation -2000
 end
@@ -85,7 +85,7 @@ arch sea
 y 18
 elevation -4520
 end
-arch deep_sea
+arch sea
 y 19
 elevation -7880
 end
@@ -117,7 +117,7 @@ arch sea
 y 26
 elevation -2847
 end
-arch deep_sea
+arch sea
 y 27
 elevation -5387
 end
@@ -165,11 +165,11 @@ arch sea
 y 38
 elevation -3840
 end
-arch deep_sea
+arch sea
 y 39
 elevation -6317
 end
-arch deep_sea
+arch sea
 y 40
 elevation -5128
 end
@@ -243,7 +243,7 @@ x 1
 y 6
 elevation -5208
 end
-arch sea
+arch deep_sea
 x 1
 y 7
 elevation -3573
@@ -278,17 +278,17 @@ x 1
 y 13
 elevation -5273
 end
-arch sea
+arch deep_sea
 x 1
 y 14
 elevation -2743
 end
-arch sea
+arch deep_sea
 x 1
 y 15
 elevation -1900
 end
-arch sea
+arch deep_sea
 x 1
 y 16
 elevation -1900
@@ -303,7 +303,7 @@ x 1
 y 18
 elevation -4420
 end
-arch deep_sea
+arch sea
 x 1
 y 19
 elevation -7780
@@ -343,7 +343,7 @@ x 1
 y 26
 elevation -3593
 end
-arch deep_sea
+arch sea
 x 1
 y 27
 elevation -6131
@@ -423,7 +423,7 @@ x 1
 y 42
 elevation -2748
 end
-arch deep_sea
+arch sea
 x 1
 y 43
 elevation -5515
@@ -527,17 +527,17 @@ x 2
 y 13
 elevation -5290
 end
-arch sea
+arch deep_sea
 x 2
 y 14
 elevation -4088
 end
-arch sea
+arch deep_sea
 x 2
 y 15
 elevation -3246
 end
-arch sea
+arch deep_sea
 x 2
 y 16
 elevation -2962
@@ -776,12 +776,12 @@ x 3
 y 13
 elevation -5579
 end
-arch sea
+arch deep_sea
 x 3
 y 14
 elevation -4640
 end
-arch sea
+arch deep_sea
 x 3
 y 15
 elevation -4008
@@ -1025,12 +1025,12 @@ x 4
 y 13
 elevation -5573
 end
-arch sea
+arch deep_sea
 x 4
 y 14
 elevation -4919
 end
-arch sea
+arch deep_sea
 x 4
 y 15
 elevation -4408
@@ -1279,7 +1279,7 @@ x 5
 y 14
 elevation -5018
 end
-arch sea
+arch deep_sea
 x 5
 y 15
 elevation -4596
@@ -1772,7 +1772,7 @@ x 7
 y 13
 elevation -5313
 end
-arch sea
+arch deep_sea
 x 7
 y 14
 elevation -4973
@@ -3441,7 +3441,7 @@ x 13
 y 48
 elevation -21
 end
-arch shallow_sea
+arch sea
 x 13
 y 49
 elevation -21
@@ -3684,7 +3684,7 @@ x 14
 y 47
 elevation -21
 end
-arch shallow_sea
+arch sea
 x 14
 y 48
 elevation -21
