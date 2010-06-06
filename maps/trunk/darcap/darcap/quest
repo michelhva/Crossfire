@@ -8,7 +8,7 @@ enter_x 17
 enter_y 7
 msg
 Created:  1998-12-21
-Modified: 2008-09-14 Rick Tanner
+Modified: 2010-06-06 Nicolas Weeger
 endmsg
 end
 arch dungeon_magic
@@ -936,10 +936,6 @@ arch flagstone
 x 6
 y 2
 end
-arch dungeon_magic
-x 6
-y 2
-end
 arch dirtfloor
 x 6
 y 2
@@ -952,7 +948,11 @@ arch button_handle
 name handle earth
 x 6
 y 2
-connected 2
+arch event_apply
+name darcap/Elemental-Earth 10>20
+title Python
+slaying /python/quests/QuestAdvance.py
+end
 end
 arch flagstone
 x 6
@@ -1092,7 +1092,11 @@ arch button_handle
 name handle air
 x 6
 y 13
-connected 3
+arch event_apply
+name darcap/Elemental-Air 10>20
+title Python
+slaying /python/quests/QuestAdvance.py
+end
 end
 arch flagstone
 x 6
@@ -1206,6 +1210,24 @@ end
 arch dungeon_magic
 x 7
 y 7
+end
+arch sign
+msg
+To claim those rewards, you need to complete four quests:
+- Air
+- Fire
+- Earth
+- Water
+
+Good luck!
+endmsg
+x 7
+y 7
+arch event_apply
+name darcap/Elemental 0>10
+title Python
+slaying /python/quests/QuestAdvance.py
+end
 end
 arch flagstone
 x 7
@@ -1819,36 +1841,45 @@ arch dungeon_magic
 x 11
 y 2
 end
-arch grate_closed_1
+arch button_handle
 x 11
 y 2
+arch event_apply
+name darcap/Elemental 20 1
+title Python
+slaying /python/quests/QuestTriggerConnect.py
+end
+end
+arch flagstone
+x 11
+y 3
+end
+arch dungeon_magic
+x 11
+y 3
+end
+arch grate_closed_1
+x 11
+y 3
 connected 1
 end
 arch flagstone
 x 11
-y 3
+y 4
 end
 arch dungeon_magic
 x 11
-y 3
+y 4
 end
-arch grate_closed_1
+arch button_handle
 x 11
-y 3
+y 4
 connected 2
+arch event_apply
+name darcap/Elemental 20>30
+title Python
+slaying /python/quests/QuestAdvance.py
 end
-arch flagstone
-x 11
-y 4
-end
-arch dungeon_magic
-x 11
-y 4
-end
-arch grate_closed_1
-x 11
-y 4
-connected 3
 end
 arch flagstone
 x 11
@@ -1861,7 +1892,7 @@ end
 arch grate_closed_1
 x 11
 y 5
-connected 4
+connected 2
 end
 arch flagstone
 x 11
@@ -1895,57 +1926,72 @@ arch dungeon_magic
 x 11
 y 9
 end
-arch flagstone
+arch button_handle
+name emergency exit (inside)
 x 11
-y 10
-end
-arch dungeon_magic
-x 11
-y 10
-end
-arch grate_closed_1
-x 11
-y 10
-connected 4
-end
-arch flagstone
-x 11
-y 11
-end
-arch dungeon_magic
-x 11
-y 11
-end
-arch grate_closed_1
-x 11
-y 11
-connected 3
-end
-arch flagstone
-x 11
-y 12
-end
-arch dungeon_magic
-x 11
-y 12
-end
-arch grate_closed_1
-x 11
-y 12
+y 9
 connected 2
 end
 arch flagstone
 x 11
+y 10
+end
+arch dungeon_magic
+x 11
+y 10
+end
+arch grate_closed_1
+x 11
+y 10
+connected 2
+end
+arch flagstone
+x 11
+y 11
+end
+arch dungeon_magic
+x 11
+y 11
+end
+arch button_handle
+x 11
+y 11
+connected 2
+arch event_apply
+name darcap/Elemental 20>30
+title Python
+slaying /python/quests/QuestAdvance.py
+end
+end
+arch flagstone
+x 11
+y 12
+end
+arch dungeon_magic
+x 11
+y 12
+end
+arch grate_closed_1
+x 11
+y 12
+connected 1
+end
+arch flagstone
+x 11
 y 13
 end
 arch dungeon_magic
 x 11
 y 13
 end
-arch grate_closed_1
+arch button_handle
 x 11
 y 13
-connected 1
+arch event_apply
+name darcap/Elemental 20 1
+title Python
+slaying /python/quests/QuestTriggerConnect.py
+end
 end
 arch flagstone
 x 11
@@ -1992,57 +2038,53 @@ arch dungeon_magic
 x 12
 y 2
 end
+arch flagstone
+x 12
+y 3
+end
+arch dungeon_magic
+x 12
+y 3
+end
 arch grate_closed_1
 x 12
-y 2
+y 3
 connected 1
 end
 arch flagstone
 x 12
-y 3
+y 4
 end
 arch dungeon_magic
 x 12
-y 3
+y 4
+end
+arch flagstone
+x 12
+y 5
+end
+arch dungeon_magic
+x 12
+y 5
 end
 arch grate_closed_1
 x 12
-y 3
+y 5
 connected 2
 end
 arch flagstone
 x 12
-y 4
-end
-arch dungeon_magic
-x 12
-y 4
-end
-arch grate_closed_1
-x 12
-y 4
-connected 3
-end
-arch flagstone
-x 12
-y 5
-end
-arch dungeon_magic
-x 12
-y 5
-end
-arch grate_closed_1
-x 12
-y 5
-connected 4
-end
-arch flagstone
-x 12
 y 6
 end
 arch dungeon_magic
 x 12
 y 6
+end
+arch button_handle
+name emergency exit (outside)
+x 12
+y 6
+connected 1
 end
 arch flagstone
 x 12
@@ -2079,46 +2121,36 @@ end
 arch grate_closed_1
 x 12
 y 10
-connected 4
-end
-arch flagstone
-x 12
-y 11
-end
-arch dungeon_magic
-x 12
-y 11
-end
-arch grate_closed_1
-x 12
-y 11
-connected 3
-end
-arch flagstone
-x 12
-y 12
-end
-arch dungeon_magic
-x 12
-y 12
-end
-arch grate_closed_1
-x 12
-y 12
 connected 2
 end
 arch flagstone
 x 12
+y 11
+end
+arch dungeon_magic
+x 12
+y 11
+end
+arch flagstone
+x 12
+y 12
+end
+arch dungeon_magic
+x 12
+y 12
+end
+arch grate_closed_1
+x 12
+y 12
+connected 1
+end
+arch flagstone
+x 12
 y 13
 end
 arch dungeon_magic
 x 12
 y 13
-end
-arch grate_closed_1
-x 12
-y 13
-connected 1
 end
 arch flagstone
 x 12
@@ -2842,10 +2874,6 @@ arch flagstone
 x 17
 y 2
 end
-arch dungeon_magic
-x 17
-y 2
-end
 arch dirtfloor
 x 17
 y 2
@@ -2869,7 +2897,11 @@ arch button_handle
 name handle water
 x 17
 y 2
-connected 1
+arch event_apply
+name darcap/Elemental-Water 10>20
+title Python
+slaying /python/quests/QuestAdvance.py
+end
 end
 arch flagstone
 x 17
@@ -2884,10 +2916,6 @@ x 17
 y 3
 end
 arch flagstone
-x 17
-y 4
-end
-arch dungeon_magic
 x 17
 y 4
 end
@@ -2998,10 +3026,6 @@ x 17
 y 12
 end
 arch flagstone
-x 17
-y 13
-end
-arch dungeon_magic
 x 17
 y 13
 end
@@ -3017,7 +3041,11 @@ arch button_handle
 name handle fire
 x 17
 y 13
-connected 4
+arch event_apply
+name darcap/Elemental-Fire 10>20
+title Python
+slaying /python/quests/QuestAdvance.py
+end
 end
 arch flagstone
 x 17
