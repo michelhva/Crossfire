@@ -1,5 +1,5 @@
 arch map
-name Mad Mage's Tower, Entrance
+name Lighthouse, Entrance
 difficulty 3
 region scorn
 width 16
@@ -8,7 +8,7 @@ enter_x 7
 enter_y 13
 msg
 Created:  1993-10-15
-Modified: 2008-10-25 Rick Tanner
+Modified: 2010-06-06 Nicolas Weeger
 endmsg
 end
 arch grass
@@ -360,7 +360,7 @@ x 3
 y 9
 end
 arch stair_up
-slaying tower.mad1
+slaying lighthouse.1
 hp 1
 sp 13
 x 3
@@ -469,7 +469,7 @@ x 4
 y 9
 end
 arch stair_up
-slaying tower.mad1
+slaying lighthouse.1
 hp 1
 sp 14
 x 4
@@ -800,8 +800,8 @@ y 13
 end
 arch exit
 slaying /world/world_105_115
-hp 9
-sp 44
+hp 14
+sp 24
 x 7
 y 14
 end
@@ -886,8 +886,8 @@ y 13
 end
 arch exit
 slaying /world/world_105_115
-hp 9
-sp 44
+hp 14
+sp 24
 x 8
 y 14
 end
