@@ -8,7 +8,7 @@ enter_x 19
 enter_y 31
 msg
 Created:  1993-10-15 dtabb (dtabb@ecst.csuchico.edu)
-Modified: 2008-09-14 Rick Tanner
+Modified: 2010-06-06 Nicolas Weeger
 endmsg
 end
 arch dirtfloor
@@ -4528,6 +4528,11 @@ hp 18
 sp 14
 x 21
 y 5
+arch event_apply
+name darcap/Elemental 0>10
+title Python
+slaying /python/quests/QuestAdvance.py
+end
 end
 arch dirtfloor
 x 21

@@ -8,7 +8,7 @@ enter_x 1
 enter_y 15
 msg
 Created:  1998-02-22
-Modified: 2008-09-14 Rick Tanner
+Modified: 2010-06-06 Nicolas Weeger
 endmsg
 end
 arch stonefloor2
@@ -2065,6 +2065,11 @@ hp 6
 sp 14
 x 11
 y 20
+arch event_apply
+name darcap/Elemental 0>10
+title Python
+slaying /python/quests/QuestAdvance.py
+end
 end
 arch stonefloor2
 x 11
