@@ -301,8 +301,8 @@ class Dialog:
             if os.path.isfile(path):
                 try:
                     exec(open(path).read())
-                except Exception as error:
-                    Crossfire.Log(Crossfire.LogError, "CFDialog: Failed to set post-condition %s:%s." %(condition, error))
+                except:
+                    Crossfire.Log(Crossfire.LogError, "CFDialog: Failed to set post-condition %s." %condition)
             else:
                 Crossfire.Log(Crossfire.LogError, "CFDialog: Post Block called with unknown action %s." % action)
 
