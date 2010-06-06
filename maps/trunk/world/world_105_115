@@ -9,7 +9,7 @@ enter_x 1
 enter_y 1
 msg
 Created:  2001-02-16
-Modified: 2010-05-13 Nicolas Weeger
+Modified: 2010-06-06 Nicolas Weeger
 endmsg
 outdoor 1
 tile_path_1 world_105_114
@@ -6346,6 +6346,9 @@ elevation -2256
 end
 arch tower_a
 name Lighthouse
+slaying ../scorn/towers/lighthouse.0
+hp 7
+sp 13
 x 14
 y 23
 glow_radius 4
