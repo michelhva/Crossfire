@@ -27,31 +27,31 @@ import shelve
 import Crossfire
 
 class CFDataBase:
-	bankdb = {}
+    bankdb = {}
 
-	def __init__(self, bankfile):
-		self.bankdb_file = os.path.join(Crossfire.LocalDirectory(), bankfile)
-		self.bankdb = shelve.open(self.bankdb_file, writeback=True)
+    def __init__(self, bankfile):
+        self.bankdb_file = os.path.join(Crossfire.LocalDirectory(), bankfile)
+        self.bankdb = shelve.open(self.bankdb_file, writeback=True)
 
-	def store(self, name, value):
-		
-		self.bankdb[name]=value
-		
-		self.bankdb.sync()
+    def store(self, name, value):
+        
+        self.bankdb[name]=value
+        
+        self.bankdb.sync()
 
-		return 1
+        return 1
 
-	def get(self,name):
-		if name in self.bankdb:
-				return self.bankdb[name]
-		else:
-				return 0
+    def get(self,name):
+        if name in self.bankdb:
+                return self.bankdb[name]
+        else:
+                return 0
 
-	def remove_record(self,name):
-		if name in self.bankdb:
-			del self.bankdb[name]
-			Crossfire.Log(Crossfire.LogDebug, "%s CFDataBase record removed." %name)
-			self.bankdb.sync()
-			return 1
-		else:
-			return 0
+    def remove_record(self,name):
+        if name in self.bankdb:
+            del self.bankdb[name]
+            Crossfire.Log(Crossfire.LogDebug, "%s CFDataBase record removed." %name)
+            self.bankdb.sync()
+            return 1
+        else:
+            return 0
