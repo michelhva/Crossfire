@@ -8,7 +8,7 @@ enter_x 11
 enter_y 20
 msg
 Created:  1997-04-27
-Modified: 2010-05-04 Cavesomething
+Modified: 2010-06-07 Cavesomething
 endmsg
 maplore
 @quest Lursendis
@@ -1691,6 +1691,15 @@ title Python
 slaying python/quests/QuestTriggerConnect.py
 end
 end
+arch check_floor
+hp 1
+x 11
+y 15
+arch event_trigger
+title Python
+slaying python/maps/scorn/castle_write.py
+end
+end
 arch cobblestones2
 x 11
 y 16
@@ -1937,6 +1946,15 @@ title Python
 slaying python/quests/QuestTriggerConnect.py
 end
 end
+arch check_floor
+hp 1
+x 12
+y 15
+arch event_trigger
+title Python
+slaying python/maps/scorn/castle_write.py
+end
+end
 arch cobblestones2
 x 12
 y 16
@@ -2106,6 +2124,13 @@ end
 arch cobblestones2
 x 13
 y 14
+end
+arch sage
+name castle scribe
+x 13
+y 14
+type 0
+stand_still 1
 end
 arch magic_mouth
 msg
