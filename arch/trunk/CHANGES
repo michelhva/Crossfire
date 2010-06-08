@@ -1,6 +1,19 @@
 Changes for SVN top of tree:
 ==============================================================================
 
+Major update of Naming.doc to improve description of existing content and add
+information on how to name related Objects in the .arc file.  Add a new naming
+convention that offers a standard way of naming diagonal items like walls and
+roads.  The diagonal naming merges well with the legacy naming and uses a
+similar hex/bit-based notation and avoids use of compass points like NE, SW,
+etc. in the file name (that do not merge for arches with many connecting
+points).  Add a note suggesting that the "river" naming be deprecated in favor
+of the new "extended" wall naming scheme as it is more flexible than the
+original river notation.  Because the notation is based on the existing wall
+format, it is also conceivable that an "auto-router" for diagonals could be
+developed in the future.
+Kevin Bulgrien 2010-06-07
+
 Update several archetypes which had type of CLASS (37) but were not in
 fact class archetypes and instead more often used as NPC or monsters.
 Remove type so they default to monsters and give them some real stats.
