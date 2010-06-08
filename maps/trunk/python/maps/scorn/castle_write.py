@@ -29,7 +29,7 @@ lastrecord = nobledata.get_record(player.Name)
 Crossfire.Log(Crossfire.LogDebug, "castle_write: previous record %s, new record %s." % (lastrecord, currentrecord))
 if lastrecord == 0:
     lastrecord =  { '#' : player.Name, 'rank' : -10, 'title' : 'The Default' }
-if currentrecord['rank'] > 0 and currentrecord['rank'] == int(lastrecord['rank']) and currentrecord['title'] == lastrecord['title']:
+if (currentrecord['rank'] == 0) or (currentrecord['rank'] == int(lastrecord['rank']) and currentrecord['title'] == lastrecord['title']):
     Crossfire.Log(Crossfire.LogDebug, "castle_write, no update needed for player %s." % player.Name)
 else:
     Crossfire.Log(Crossfire.LogDebug, "castle_write, updating player %s, old state %s, new state %d" %(player.Name, lastrecord['rank'], currentstep))
