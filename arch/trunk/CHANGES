@@ -1,6 +1,12 @@
 Changes for SVN top of tree:
 ==============================================================================
 
+Upgrade the dirtroad arch set to include a basic set of diagonals that allow
+the zig-zag diagonal roads to be converted to a more realistic looking road.
+Additional diagonal tiles are able to be added, but these offer a significant
+enough improvement to stand on their own.
+Kevin Bulgrien 2010-06-07
+
 Major update of Naming.doc to improve description of existing content and add
 information on how to name related Objects in the .arc file.  Add a new naming
 convention that offers a standard way of naming diagonal items like walls and
