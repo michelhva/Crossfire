@@ -78,3 +78,73 @@ name dirtroad
 face dirtroad_F.111
 no_pick 1
 end
+Object dirtroad_2_05_1
+name dirtroad
+face dirtroad_05.111
+no_pick 1
+end
+Object dirtroad_2_05_2
+name dirtroad
+face dirtroad_05.211
+no_pick 1
+end
+Object dirtroad_2_05_3
+name dirtroad
+face dirtroad_05.311
+no_pick 1
+end
+Object dirtroad_2_0A1
+name dirtroad
+face dirtroad_0A.111
+no_pick 1
+end
+Object dirtroad_2_0A2
+name dirtroad
+face dirtroad_0A.211
+no_pick 1
+end
+Object dirtroad_2_0A3
+name dirtroad
+face dirtroad_0A.311
+no_pick 1
+end
+Object dirtroad_2_141
+name dirtroad
+face dirtroad_14.111
+no_pick 1
+end
+Object dirtroad_2_181
+name dirtroad
+face dirtroad_18.111
+no_pick 1
+end
+Object dirtroad_2_211
+name dirtroad
+face dirtroad_21.111
+no_pick 1
+end
+Object dirtroad_2_281
+name dirtroad
+face dirtroad_28.111
+no_pick 1
+end
+Object dirtroad_2_411
+name dirtroad
+face dirtroad_41.111
+no_pick 1
+end
+Object dirtroad_2_421
+name dirtroad
+face dirtroad_42.111
+no_pick 1
+end
+Object dirtroad_2_821
+name dirtroad
+face dirtroad_82.111
+no_pick 1
+end
+Object dirtroad_2_841
+name dirtroad
+face dirtroad_84.111
+no_pick 1
+end
