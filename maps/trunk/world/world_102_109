@@ -4,7 +4,7 @@ difficulty 1
 width 50
 height 50
 msg
-Modified: 2007-12-24 tchize
+Modified: 2010-06-08 Kevin Bulgrien
 endmsg
 outdoor 1
 tile_path_1 world_102_108
@@ -11838,16 +11838,12 @@ x 46
 y 44
 elevation 4505
 end
-arch dirtroad_2_2_2
-x 46
-y 44
-end
 arch steppe
 x 46
 y 45
 elevation 4622
 end
-arch dirtroad_2_2_4
+arch dirtroad_2_1_2
 x 46
 y 45
 end
@@ -12098,7 +12094,7 @@ x 47
 y 44
 elevation 4023
 end
-arch dirtroad_1_3
+arch dirtroad_2_0A3
 x 47
 y 44
 end
@@ -12106,6 +12102,10 @@ arch steppe
 x 47
 y 45
 elevation 4483
+end
+arch dirtroad_2_821
+x 47
+y 45
 end
 arch mountain
 x 47
@@ -12354,7 +12354,7 @@ x 48
 y 44
 elevation 4932
 end
-arch dirtroad_1_3
+arch dirtroad_2_281
 x 48
 y 44
 end
@@ -12362,6 +12362,10 @@ arch steppe
 x 48
 y 45
 elevation 4564
+end
+arch dirtroad_2_0A2
+x 48
+y 45
 end
 arch steppe
 x 48
