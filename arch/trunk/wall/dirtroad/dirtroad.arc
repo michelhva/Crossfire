@@ -78,17 +78,17 @@ name dirtroad
 face dirtroad_F.111
 no_pick 1
 end
-Object dirtroad_2_05_1
+Object dirtroad_2_051
 name dirtroad
 face dirtroad_05.111
 no_pick 1
 end
-Object dirtroad_2_05_2
+Object dirtroad_2_052
 name dirtroad
 face dirtroad_05.211
 no_pick 1
 end
-Object dirtroad_2_05_3
+Object dirtroad_2_053
 name dirtroad
 face dirtroad_05.311
 no_pick 1
