@@ -3,7 +3,7 @@ name world_106_110
 width 50
 height 50
 msg
-Modified: 2007-12-24 tchize
+Modified: 2010-06-08 Kevin Bulgrien
 endmsg
 outdoor 1
 tile_path_1 world_106_109
@@ -62,9 +62,15 @@ arch steppe
 y 12
 elevation 4008
 end
+arch dirtroad_2_0A3
+y 12
+end
 arch steppe
 y 13
 elevation 3710
+end
+arch dirtroad_2_821
+y 13
 end
 arch hills_rocky
 y 14
@@ -281,15 +287,27 @@ x 1
 y 11
 elevation 4123
 end
+arch dirtroad_2_0A3
+x 1
+y 11
+end
 arch steppe
 x 1
 y 12
 elevation 4073
 end
+arch dirtroad_2_0A1
+x 1
+y 12
+end
 arch steppe
 x 1
 y 13
 elevation 3805
+end
+arch dirtroad_2_0A2
+x 1
+y 13
 end
 arch steppe
 x 1
@@ -545,15 +563,27 @@ x 2
 y 10
 elevation 3660
 end
+arch dirtroad_2_0A3
+x 2
+y 10
+end
 arch steppe
 x 2
 y 11
 elevation 3855
 end
+arch dirtroad_2_0A1
+x 2
+y 11
+end
 arch steppe
 x 2
 y 12
 elevation 3596
+end
+arch dirtroad_2_0A2
+x 2
+y 12
 end
 arch steppe
 x 2
@@ -810,10 +840,18 @@ x 3
 y 10
 elevation 3327
 end
+arch dirtroad_2_281
+x 3
+y 10
+end
 arch hills
 x 3
 y 11
 elevation 3663
+end
+arch dirtroad_2_0A2
+x 3
+y 11
 end
 arch steppe
 x 3
@@ -1066,10 +1104,18 @@ x 4
 y 9
 elevation 2904
 end
+arch dirtroad_2_0A3
+x 4
+y 9
+end
 arch steppe
 x 4
 y 10
 elevation 3286
+end
+arch dirtroad_2_821
+x 4
+y 10
 end
 arch steppe
 x 4
@@ -1314,15 +1360,27 @@ arch tree5
 x 5
 y 8
 end
+arch dirtroad_2_0A3
+x 5
+y 8
+end
 arch jungle_1
 x 5
 y 9
 elevation 2463
 end
+arch dirtroad_2_0A1
+x 5
+y 9
+end
 arch steppe
 x 5
 y 10
 elevation 3356
+end
+arch dirtroad_2_0A2
+x 5
+y 10
 end
 arch hills
 x 5
@@ -1571,10 +1629,18 @@ x 6
 y 8
 elevation 3999
 end
+arch dirtroad_2_281
+x 6
+y 8
+end
 arch hills
 x 6
 y 9
 elevation 3975
+end
+arch dirtroad_2_0A2
+x 6
+y 9
 end
 arch steppe
 x 6
@@ -1831,10 +1897,18 @@ x 7
 y 7
 elevation 4766
 end
+arch dirtroad_2_0A3
+x 7
+y 7
+end
 arch steppe
 x 7
 y 8
 elevation 4889
+end
+arch dirtroad_2_821
+x 7
+y 8
 end
 arch hills
 x 7
@@ -2080,10 +2154,18 @@ x 8
 y 7
 elevation 4670
 end
+arch dirtroad_2_281
+x 8
+y 7
+end
 arch mountain
 x 8
 y 8
 elevation 5345
+end
+arch dirtroad_2_0A2
+x 8
+y 8
 end
 arch mountain
 x 8
@@ -2328,6 +2410,10 @@ arch steppe
 x 9
 y 7
 elevation 4215
+end
+arch dirtroad_2_1_2
+x 9
+y 7
 end
 arch mountain
 x 9
@@ -2585,6 +2671,10 @@ arch steppe
 x 10
 y 7
 elevation 4621
+end
+arch dirtroad_2_1_2
+x 10
+y 7
 end
 arch mountain
 x 10
@@ -2850,10 +2940,18 @@ x 11
 y 6
 elevation 3334
 end
+arch dirtroad_2_0A3
+x 11
+y 6
+end
 arch steppe
 x 11
 y 7
 elevation 4167
+end
+arch dirtroad_2_821
+x 11
+y 7
 end
 arch hills_rocky
 x 11
@@ -3118,12 +3216,16 @@ x 12
 y 5
 elevation 1607
 end
+arch dirtroad_2_0A3
+x 12
+y 5
+end
 arch grass_only
 x 12
 y 6
 elevation 2290
 end
-arch tree5
+arch dirtroad_2_0A1
 x 12
 y 6
 end
@@ -3131,6 +3233,10 @@ arch hills
 x 12
 y 7
 elevation 3416
+end
+arch dirtroad_2_0A2
+x 12
+y 7
 end
 arch hills_rocky
 x 12
@@ -3422,12 +3528,16 @@ arch tree5
 x 13
 y 4
 end
+arch dirtroad_2_0A3
+x 13
+y 4
+end
 arch grass_only
 x 13
 y 5
 elevation 2464
 end
-arch tree5
+arch dirtroad_2_0A1
 x 13
 y 5
 end
@@ -3435,6 +3545,10 @@ arch woods_3
 x 13
 y 6
 elevation 2648
+end
+arch dirtroad_2_0A2
+x 13
+y 6
 end
 arch grass_only
 x 13
@@ -3734,15 +3848,27 @@ x 14
 y 3
 elevation 3715
 end
+arch dirtroad_2_0A3
+x 14
+y 3
+end
 arch steppe
 x 14
 y 4
 elevation 3317
 end
+arch dirtroad_2_0A1
+x 14
+y 4
+end
 arch hills_rocky
 x 14
 y 5
 elevation 3118
+end
+arch dirtroad_2_0A2
+x 14
+y 5
 end
 arch grass_only
 x 14
@@ -4042,15 +4168,27 @@ x 15
 y 2
 elevation 3310
 end
+arch dirtroad_2_0A3
+x 15
+y 2
+end
 arch woods_3
 x 15
 y 3
 elevation 2747
 end
+arch dirtroad_2_0A1
+x 15
+y 3
+end
 arch hills_rocky
 x 15
 y 4
 elevation 3585
+end
+arch dirtroad_2_0A2
+x 15
+y 4
 end
 arch hills
 x 15
@@ -4337,20 +4475,35 @@ arch woods_3
 x 16
 elevation 1547
 end
+arch dirtroad_2_421
+x 16
+end
 arch hills_rocky
 x 16
 y 1
 elevation 2199
+end
+arch dirtroad_1_2
+x 16
+y 1
 end
 arch hills_rocky
 x 16
 y 2
 elevation 1726
 end
+arch dirtroad_2_181
+x 16
+y 2
+end
 arch hills_rocky
 x 16
 y 3
 elevation 3557
+end
+arch dirtroad_2_0A2
+x 16
+y 3
 end
 arch hills_rocky
 x 16
@@ -4613,6 +4766,9 @@ end
 arch woods_3
 x 17
 elevation 2056
+end
+arch dirtroad_2_0A2
+x 17
 end
 arch hills_rocky
 x 17
@@ -4878,6 +5034,9 @@ end
 arch hills_rocky
 x 18
 elevation 2480
+end
+arch dirtroad_2_0A2
+x 18
 end
 arch hills_rocky
 x 18
