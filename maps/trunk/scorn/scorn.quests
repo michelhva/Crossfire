@@ -100,3 +100,31 @@ end_description
 end_step
 end_quest
 
+quest scorn/Kelthior
+title Gaining access to the top of the Mad Mage's tower
+description
+I want to be able to talk to the Mad Mage.
+end_description
+step 10
+description
+To gain access to the first floor, I must know the formulae of the water of the wise, and then talk to Igor.
+end_description
+end_step
+step 20
+description
+I gained access to the first floor, where some more challenges await me.
+end_description
+end_step
+step 30
+description
+I have gained access to the second floor.
+end_description
+end_step
+step 40
+finishes_quest
+description
+I have gained access to the top of the Mad Mage's tower.
+end_description
+end_step
+end_quest
+
