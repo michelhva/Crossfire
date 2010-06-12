@@ -5,7 +5,7 @@ width 16
 height 16
 msg
 Created:  2010-06-06 Nicolas Weeger
-Modified: 2010-06-06 Nicolas Weeger
+Modified: 2010-06-12 Nicolas Weeger
 endmsg
 outdoor 1
 end
@@ -386,6 +386,28 @@ end
 arch marble
 x 5
 y 8
+end
+arch card
+name Gate Pass
+slaying gate_pass
+msg
+The holder of this card is allowed free
+access into and out of the City of Scorn
+to the rest of the continent without
+further charges and penalties. The City
+of Scorn reserves the right to revoke
+said access at any time of its choosing
+without recompense or liability.
+endmsg
+x 5
+y 8
+value 800
+identified 1
+arch event_pickup
+name scorn/GatePass 0-10>30
+title Python
+slaying /python/quests/QuestAdvance.py
+end
 end
 arch marble
 x 5
