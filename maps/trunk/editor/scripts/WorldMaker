@@ -88,9 +88,7 @@ void checkDaList() {
 
     HashSet mapList = new HashSet();
     boolean firstRun = false;
-    print("...");
     long headerSize = ("P6\n"+DestWidth+" "+DestHeight+"\n255\n").getBytes().length;
-    print("...");
     if (new File(Location + PictureDirectory + WorldPicture + ".ppm").exists()) {
         runCommand("cp " + Location + PictureDirectory + WorldPicture + ".ppm /tmp/tmp.ppm");
     } else {
@@ -104,7 +102,6 @@ void checkDaList() {
         fos.close();
         firstRun = true;
     }
-    print("gogogo");
     long toSkip = ("P6\n"+TileWidth+" "+TileHeight+"\n255\n").getBytes().length;
     RandomAccessFile raf = new RandomAccessFile(new File("/tmp/tmp.ppm"),"rw");
     FileChannel fc  = raf.getChannel();
