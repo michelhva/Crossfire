@@ -92,7 +92,7 @@ while (it.hasNext()) {
     && !name.endsWith(".quests")
     && !name.endsWith(".animation")
     && !name.equals("pshop_copier")
-    && !name.equals("pshop_changelog")
+    && !name.equals("pshops_changelog")
     && !name.equals(".emergency")
     && !name.equals("ChangeLog")
     && !name.equals("COPYING")
