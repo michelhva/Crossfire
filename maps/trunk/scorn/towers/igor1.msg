@@ -17,7 +17,7 @@
   "match" : ["*"],
   "pre" : [["npctoken", "step", "2"]],
   "post" : [["setnpctoken", "step", "1"]],
-  "msg" : ["Sorry, but that's not that...\n\nDo you want to try again?"],
+  "msg" : ["Sorry, but that's not correct...\n\nDo you want to try again?"],
   "replies" : [["yes", "Yes, sorry, I mistook the name.", "1"], ["no", "No, my head is full of holes, I forgot the name...", "1"]]
   },{
   "match" : ["yes"],
