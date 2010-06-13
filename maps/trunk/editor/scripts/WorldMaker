@@ -35,8 +35,9 @@ boolean updateMap(File mapFile, File pictureFile) {
         return false;
     }
     print("converting " + mapFile + " to " + pictureFile + ".");
-    map = mapManager.openMapFile(mapFile, false);
-    if (map == null) {
+    try {
+        map = mapManager.openMapFile(mapFile, false);
+    } catch (IOException ex) {
         return false;
     }
     try {
