@@ -1,6 +1,22 @@
 Changes for SVN top of tree:
 ==============================================================================
 
+Move various road/path/bridge arches from the wall and construct folders into
+a new road folder to make them easier to locate by folder name when working
+in gridarta.  Road items in the river and planes foldersare unmoved as they
+are stylistically tied very hard to the arches in those locations.  Affected:
+  construct/s_bridge*          --> road/s_bridge/*
+  construct/bridge/footbridge  --> road/footbridge
+  construct/bridge/stonebridge --> road/stonebridge
+  construct/town/a_bridge*     --> road/a_bridge
+  wall/paved                   --> road/paved
+  wall/yellow                  --> road/yellow
+  wall/footpath                --> road/footpath
+  wall/dirtroad                --> road/dirtroad
+  wall/gwall/bridge*           --> road/bridgemoati
+  wall/gwall/d*                --> road/drawbridge 
+Kevin Bulgrien 2010-06-15
+
 Add giant_leader and giant_chief arches created by Jesse F. Hughes
 Brendan Lally 2010-06-11
 
