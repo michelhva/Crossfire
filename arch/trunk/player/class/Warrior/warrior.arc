@@ -13,4 +13,9 @@ Con 1
 Int -2
 Wis -1
 Pow -1
+msg
+As a Warrior you've been trained in the art of combat with weapons and in archery.
+Because of your training, you're stronger, more agile, and hardier than you would be otherwise.
+Your education, however, has not included studies in the magical arts or religious devotion, and, in general, lacks breadth.
+endmsg
 end

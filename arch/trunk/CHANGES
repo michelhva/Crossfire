@@ -1,6 +1,11 @@
 Changes for SVN top of tree:
 ==============================================================================
 
+Copy descriptions (msg/endmsg) from HallOfSelection map to class archetypes.
+Comment out some class archetypes that are currently unused - may get
+re-used with class rebalancing.
+MSW 2010-06-17
+
 Move various road/path/bridge arches from the wall and construct folders into
 a new road folder to make them easier to locate by folder name when working
 in gridarta.  Road items in the river and planes foldersare unmoved as they
