@@ -8,7 +8,7 @@ enter_x 7
 enter_y 5
 msg
 Created:  2000-10-12
-Modified: 2008-10-20 Rick Tanner
+Modified: 2010-06-17 master
 endmsg
 end
 arch blocked
@@ -391,10 +391,11 @@ face shop_empty.111
 x 1
 y 22
 end
-arch wizard
+arch wizard_class
 face wizard.151
 x 1
 y 22
+direction 3
 end
 arch flagstone
 name floor
