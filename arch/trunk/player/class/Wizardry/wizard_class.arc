@@ -14,4 +14,9 @@ Wis 0
 Int 3
 Pow 3
 Cha 0
+msg
+You're the generalist of the spellcasters.  You've emphasized the use of magic and studied all its areas equally.
+You've learned something about the gods and religious devotion as well.
+To a much lesser extent, you've studied weaponry, but you've not had much physical training:  you're mostly sedentary, and so you're not nearly so strong and healthy as you could be.
+endmsg
 end

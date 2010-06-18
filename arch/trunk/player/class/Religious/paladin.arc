@@ -14,6 +14,11 @@ Int -2
 Wis 2
 Pow 1
 Cha 1
+msg
+You are a militant priest, with an emphasis on 'priest'.
+You've been taught archery and the use of weapons, but great care has been taken that you're doctrinally correct.  Now you've been sent out in the world to convert the unrighteous and destroy the enemies of the faith.  Your churchmembers have been charged a pretty penny to equip you for the job!
+All other areas of your education have been neglected.  Perhaps aware of your deficiency, your superiors have given you some measure of protection from magic.
+endmsg
 end
 Object paladin_holy_symbol
 name Paladin's holy symbol
