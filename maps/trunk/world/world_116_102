@@ -5,7 +5,7 @@ region darcap
 width 50
 height 50
 msg
-Modified: 2010-03-13 Nicolas Weeger
+Modified: 2010-06-19 Nicolas Weeger
 endmsg
 outdoor 1
 tile_path_1 world_116_101
@@ -2838,6 +2838,14 @@ x 10
 y 47
 elevation 245
 end
+arch barn2
+name Grape farm
+slaying ../darcap/darcap/grape_farm
+hp 7
+sp 13
+x 10
+y 47
+end
 arch brush
 x 10
 y 48
@@ -3096,6 +3104,10 @@ arch brush
 x 11
 y 49
 elevation 30
+end
+arch dirtroad_2_051
+x 11
+y 49
 end
 arch hills_rocky
 x 12
@@ -8292,6 +8304,10 @@ y 44
 elevation 0
 end
 arch house_1
+name Scartis's Fine Wine
+slaying /darcap/darcap/scartis
+hp 7
+sp 14
 x 28
 y 44
 end
