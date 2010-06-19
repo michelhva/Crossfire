@@ -7,7 +7,7 @@ height 50
 enter_x 38
 enter_y 2
 msg
-Modified: 2008-09-13 Rick Tanner
+Modified: 2010-06-19 Nicolas Weeger
 endmsg
 end
 arch blocked
@@ -17817,6 +17817,25 @@ end
 arch gnoll
 x 56
 y 37
+arch scythe1
+name Talok's scythe
+material 0
+drop_if_quest darcap/Cameron-wine 30
+arch event_drop
+name darcap/Cameron-wine 50
+title Python
+slaying /python/quests/QuestEssentialUntil.py
+end
+arch event_pickup
+name darcap/Cameron-wine 30>40
+title Python
+slaying /python/quests/QuestAdvance.py
+end
+end
+arch event_death
+title Python
+slaying /python/quests/QuestConditionalDrop.py
+end
 end
 arch pstone_2
 x 56

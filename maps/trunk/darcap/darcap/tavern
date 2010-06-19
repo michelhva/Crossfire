@@ -521,6 +521,15 @@ end
 arch NPCGift
 arch wine
 end
+arch pouch
+name wine-reward
+arch emerald
+nrof 2
+end
+arch pearl
+nrof 5
+end
+end
 end
 end
 arch magic_banned
