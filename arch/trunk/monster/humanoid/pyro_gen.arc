@@ -1,6 +1,5 @@
 Object pyro_gen
 race human
-type 140
 name a bottleful of bombers
 other_arch pyromaniac
 generator 1
