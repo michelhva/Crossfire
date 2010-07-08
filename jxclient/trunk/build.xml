@@ -90,7 +90,8 @@
                 <pathelement location="${build}/test"/>
                 <pathelement location="jxclient.jar"/>
             </classpath>
-            <formatter type="brief"/>
+            <formatter type="plain"/>
+            <formatter type="xml"/>
             <batchtest fork="yes" todir="${build}/reports">
                 <fileset dir="${src.test}" includes="**/*Test.java"/>
             </batchtest>
