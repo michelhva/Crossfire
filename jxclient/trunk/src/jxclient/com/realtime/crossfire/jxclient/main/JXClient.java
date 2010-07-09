@@ -24,6 +24,7 @@ package com.realtime.crossfire.jxclient.main;
 import com.realtime.crossfire.jxclient.account.CharacterModel;
 import com.realtime.crossfire.jxclient.commands.Commands;
 import com.realtime.crossfire.jxclient.commands.Macros;
+import com.realtime.crossfire.jxclient.faces.DefaultFacesManager;
 import com.realtime.crossfire.jxclient.faces.FaceCache;
 import com.realtime.crossfire.jxclient.faces.FacesManager;
 import com.realtime.crossfire.jxclient.faces.FacesQueue;
@@ -154,7 +155,7 @@ public class JXClient {
                             final Stats stats = new Stats(server, experienceTable, skillSet, guiStateManager);
                             final FaceCache faceCache = new FaceCache(server);
                             final FacesQueue facesQueue = new FacesQueue(server, new FileCache(Filenames.getOriginalImageCacheDir()), new FileCache(Filenames.getScaledImageCacheDir()), new FileCache(Filenames.getMagicMapImageCacheDir()));
-                            final FacesManager facesManager = new FacesManager(faceCache, facesQueue);
+                            final FacesManager facesManager = new DefaultFacesManager(faceCache, facesQueue);
                             final ItemSet itemSet = new ItemSet();
                             final InventoryView inventoryView = new InventoryView(itemSet, new InventoryComparator());
                             final FloorView floorView = new FloorView(itemSet);
