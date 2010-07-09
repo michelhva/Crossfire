@@ -71,6 +71,10 @@ public class RenderStateTest extends TestCase {
     }
 
     public void test1() {
+        if (GraphicsEnvironment.isHeadless()) {
+            return;
+        }
+
         final Rec rec = new Rec();
         final Parser parser = new Parser();
 
@@ -101,6 +105,10 @@ public class RenderStateTest extends TestCase {
     }
 
     public void test2() {
+        if (GraphicsEnvironment.isHeadless()) {
+            return;
+        }
+
         final Rec rec = new Rec();
         final Parser parser = new Parser();
 
