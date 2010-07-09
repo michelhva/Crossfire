@@ -37,7 +37,6 @@ import junit.framework.TestCase;
 import junit.framework.TestSuite;
 import junit.textui.TestRunner;
 import org.jetbrains.annotations.NotNull;
-import org.jetbrains.annotations.Nullable;
 
 /**
  * Regression tests for class {@link RenderState}.
@@ -49,12 +48,6 @@ public class RenderStateTest extends TestCase {
      * Assumed height of log window.
      */
     private static final int HEIGHT = 104;
-
-    @Nullable
-    private RenderState rs = null;
-
-    @Nullable
-    private Buffer buffer = null;
 
     /**
      * Create a new instance.
@@ -78,202 +71,216 @@ public class RenderStateTest extends TestCase {
     }
 
     public void test1() {
+        final Rec rec = new Rec();
         final Parser parser = new Parser();
 
         for (int i = 0; i < HEIGHT+10; i++) {
-            assert buffer != null;
-            parser.parse("xxx"+i, null, buffer);
+            parser.parse("xxx"+i, null, rec.buffer);
         }
-        checkState(101, 0);
+        rec.checkState(101, 0);
 
         // scroll to valid positions
-        assert buffer != null;
-        assert rs != null;
-        rs.scrollTo(buffer, 0);
-        checkState(0, 0);
-        assert buffer != null;
-        assert rs != null;
-        rs.scrollTo(buffer, 5*Buffer.MIN_LINE_HEIGHT+3);
-        checkState(5, 3);
-        assert rs != null;
-        assert buffer != null;
-        rs.scrollTo(buffer, 10*Buffer.MIN_LINE_HEIGHT);
-        checkState(10, 0);
+        rec.scrollTo(0);
+        rec.checkState(0, 0);
+        rec.scrollTo(5*Buffer.MIN_LINE_HEIGHT+3);
+        rec.checkState(5, 3);
+        rec.scrollTo(10*Buffer.MIN_LINE_HEIGHT);
+        rec.checkState(10, 0);
 
         // scroll to invalid positions
-        assert rs != null;
-        assert buffer != null;
-        rs.scrollTo(buffer, -1);
-        checkState(0, 0);
-        assert rs != null;
-        assert buffer != null;
-        rs.scrollTo(buffer, -10);
-        checkState(0, 0);
+        rec.scrollTo(-1);
+        rec.checkState(0, 0);
+        rec.scrollTo(-10);
+        rec.checkState(0, 0);
 
         // scroll to invalid positions
-        assert rs != null;
-        assert buffer != null;
-        rs.scrollTo(buffer, 97*Buffer.MIN_LINE_HEIGHT-1);
-        checkState(96, Buffer.MIN_LINE_HEIGHT-1);
-        assert rs != null;
-        assert buffer != null;
-        rs.scrollTo(buffer, 111*Buffer.MIN_LINE_HEIGHT);
-        checkState(101, 0);
+        rec.scrollTo(97*Buffer.MIN_LINE_HEIGHT-1);
+        rec.checkState(96, Buffer.MIN_LINE_HEIGHT-1);
+        rec.scrollTo(111*Buffer.MIN_LINE_HEIGHT);
+        rec.checkState(101, 0);
     }
 
     public void test2() {
+        final Rec rec = new Rec();
         final Parser parser = new Parser();
 
         assertEquals(0, HEIGHT%Buffer.MIN_LINE_HEIGHT);
 
-        checkState(0, 0);
-        assert buffer != null;
-        parser.parse("xxx1", null, buffer);
-        checkState(0, 0);
-        assert buffer != null;
-        parser.parse("xxx2", null, buffer);
-        checkState(0, 0);
+        rec.checkState(0, 0);
+        parser.parse("xxx1", null, rec.buffer);
+        rec.checkState(0, 0);
+        parser.parse("xxx2", null, rec.buffer);
+        rec.checkState(0, 0);
 
         // add lines to completely fill visible area
         for (int i = 2; i < HEIGHT/Buffer.MIN_LINE_HEIGHT; i++) {
-            assert buffer != null;
-            parser.parse("xxx3"+i, null, buffer);
+            parser.parse("xxx3"+i, null, rec.buffer);
         }
-        checkState(0, 0);
+        rec.checkState(0, 0);
 
         // add one more line ==> buffer sticks at bottom
-        assert buffer != null;
-        parser.parse("xxx4", null, buffer);
-        checkState(1, 0);
+        parser.parse("xxx4", null, rec.buffer);
+        rec.checkState(1, 0);
 
         // add one more line ==> buffer sticks at bottom
-        assert buffer != null;
-        parser.parse("xxx5", null, buffer);
-        checkState(2, 0);
+        parser.parse("xxx5", null, rec.buffer);
+        rec.checkState(2, 0);
 
         // scroll up one line
-        assert rs != null;
-        assert buffer != null;
-        rs.scrollTo(buffer, Buffer.MIN_LINE_HEIGHT);
-        checkState(1, 0);
+        rec.scrollTo(Buffer.MIN_LINE_HEIGHT);
+        rec.checkState(1, 0);
 
         // add one more line ==> buffer sticks at scroll position
-        assert buffer != null;
-        parser.parse("xxx6", null, buffer);
-        checkState(1, 0);
+        parser.parse("xxx6", null, rec.buffer);
+        rec.checkState(1, 0);
 
         // scroll back to bottom
-        assert rs != null;
-        assert buffer != null;
-        rs.scrollTo(buffer, 3*Buffer.MIN_LINE_HEIGHT);
-        checkState(3, 0);
+        rec.scrollTo(3*Buffer.MIN_LINE_HEIGHT);
+        rec.checkState(3, 0);
 
         // add one more line ==> buffer sticks at bottom
-        assert buffer != null;
-        parser.parse("xxx7", null, buffer);
-        checkState(4, 0);
+        parser.parse("xxx7", null, rec.buffer);
+        rec.checkState(4, 0);
 
         // completely fill buffer
         for (int i = HEIGHT/Buffer.MIN_LINE_HEIGHT+4; i < Buffer.MAX_LINES; i++) {
-            assert buffer != null;
-            parser.parse("xxx8"+i, null, buffer);
+            parser.parse("xxx8"+i, null, rec.buffer);
         }
-        checkState(Buffer.MAX_LINES-HEIGHT/Buffer.MIN_LINE_HEIGHT, 0);
+        rec.checkState(Buffer.MAX_LINES-HEIGHT/Buffer.MIN_LINE_HEIGHT, 0);
 
         // add one more line ==> buffer sticks at bottom
-        assert buffer != null;
-        parser.parse("xxx9", null, buffer);
-        checkState(Buffer.MAX_LINES-HEIGHT/Buffer.MIN_LINE_HEIGHT, 0);
+        parser.parse("xxx9", null, rec.buffer);
+        rec.checkState(Buffer.MAX_LINES-HEIGHT/Buffer.MIN_LINE_HEIGHT, 0);
 
         // scroll one line up
-        assert rs != null;
-        assert buffer != null;
-        rs.scrollTo(buffer, Buffer.MAX_LINES*Buffer.MIN_LINE_HEIGHT-HEIGHT-Buffer.MIN_LINE_HEIGHT);
-        checkState(Buffer.MAX_LINES-HEIGHT/Buffer.MIN_LINE_HEIGHT-1, 0);
+        rec.scrollTo(Buffer.MAX_LINES*Buffer.MIN_LINE_HEIGHT-HEIGHT-Buffer.MIN_LINE_HEIGHT);
+        rec.checkState(Buffer.MAX_LINES-HEIGHT/Buffer.MIN_LINE_HEIGHT-1, 0);
 
         // fill more lines ==> scroll position sticks
         for (int i = 0; i < Buffer.MAX_LINES-HEIGHT/Buffer.MIN_LINE_HEIGHT-2; i++) {
-            assert buffer != null;
-            parser.parse("xxx0"+i, null, buffer);
+            parser.parse("xxx0"+i, null, rec.buffer);
         }
-        checkState(1, 0);
-        assert buffer != null;
-        parser.parse("xxx1", null, buffer);
-        checkState(0, 0);
+        rec.checkState(1, 0);
+        parser.parse("xxx1", null, rec.buffer);
+        rec.checkState(0, 0);
 
         // add one more line ==> scroll position hits top
-        assert buffer != null;
-        parser.parse("xxx2", null, buffer);
-        checkState(0, 0);
-    }
-
-    private void checkState(final int expectedTopIndex, final int expectedTopOffset) {
-        final int expectedScrollPos = expectedTopIndex*Buffer.MIN_LINE_HEIGHT+expectedTopOffset;
-        assert rs != null;
-        final int topIndex = rs.getTopIndex();
-        assert rs != null;
-        final int topOffset = rs.getTopOffset();
-        assert rs != null;
-        final int scrollPos = rs.getScrollPos();
-        assertEquals(formatState(expectedTopIndex, expectedTopOffset, expectedScrollPos), formatState(topIndex, topOffset, scrollPos));
-    }
-
-    @NotNull
-    private String formatState(final int topIndex, final int topOffset, final int scrollPos) {
-        assert buffer != null;
-        return "top="+topIndex+"/"+topOffset+" pos="+scrollPos+"/"+buffer.getTotalHeight();
+        parser.parse("xxx2", null, rec.buffer);
+        rec.checkState(0, 0);
     }
 
     /**
-     * {@inheritDoc}
+     * Encapsulates the state.
      */
-    @Override
-    public void setUp() throws FontFormatException, IOException {
-        final GraphicsEnvironment ge = GraphicsEnvironment.getLocalGraphicsEnvironment();
-        final GraphicsDevice gd = ge.getDefaultScreenDevice();
-        final GraphicsConfiguration gconf = gd.getDefaultConfiguration();
-        final BufferedImage image = gconf.createCompatibleImage(1, 1, Transparency.TRANSLUCENT);
-        final Graphics2D g = image.createGraphics();
-        final Font font;
-        final FileInputStream fis = new FileInputStream("skins/ragnorok/fonts/regular.ttf");
-        try {
-            font = Font.createFont(Font.TRUETYPE_FONT, fis);
-        } finally {
-            fis.close();
+    private static class Rec {
+
+        /**
+         * The tested {@link RenderState} instance.
+         */
+        @NotNull
+        private final RenderState rs;
+
+        /**
+         * The tested {@link Buffer} instance.
+         */
+        @NotNull
+        private final Buffer buffer;
+
+        /**
+         * Creates a new instance.
+         */
+        private Rec() {
+            final GraphicsEnvironment ge = GraphicsEnvironment.getLocalGraphicsEnvironment();
+            final GraphicsDevice gd = ge.getDefaultScreenDevice();
+            final GraphicsConfiguration gconf = gd.getDefaultConfiguration();
+            final BufferedImage image = gconf.createCompatibleImage(1, 1, Transparency.TRANSLUCENT);
+            final Graphics2D g = image.createGraphics();
+            final Font font;
+            try {
+                final FileInputStream fis = new FileInputStream("skins/ragnorok/fonts/regular.ttf");
+                try {
+                    try {
+                        font = Font.createFont(Font.TRUETYPE_FONT, fis);
+                    } catch (final FontFormatException ex) {
+                        fail();
+                        throw new AssertionError(ex);
+                    }
+                } finally {
+                    fis.close();
+                }
+            } catch (final IOException ex) {
+                fail();
+                throw new AssertionError(ex);
+            }
+            buffer = new Buffer(new Fonts(font, font, font, font), g.getFontRenderContext(), 100);
+            g.dispose();
+            rs = new RenderState();
+            assert buffer != null;
+            rs.setHeight(buffer, HEIGHT);
+
+            final BufferListener bufferListener = new BufferListener() {
+                /** {@inheritDoc} */
+                @Override
+                public void linesAdded(final int lines) {
+                    assert rs != null;
+                    assert buffer != null;
+                    rs.linesAdded(buffer);
+                }
+
+                /** {@inheritDoc} */
+                @Override
+                public void linesReplaced(final int lines) {
+                    assert rs != null;
+                    assert buffer != null;
+                    rs.linesReplaced(buffer);
+                }
+
+                /** {@inheritDoc} */
+                @Override
+                public void linesRemoved(@NotNull final List<Line> lines) {
+                    assert rs != null;
+                    assert buffer != null;
+                    rs.linesRemoved(buffer, lines);
+                }
+            };
+            assert buffer != null;
+            buffer.addBufferListener(bufferListener);
         }
-        buffer = new Buffer(new Fonts(font, font, font, font), g.getFontRenderContext(), 100);
-        g.dispose();
-        rs = new RenderState();
-        assert buffer != null;
-        rs.setHeight(buffer, HEIGHT);
 
-        final BufferListener bufferListener = new BufferListener() {
-            /** {@inheritDoc} */
-            @Override
-            public void linesAdded(final int lines) {
-                assert rs != null;
-                assert buffer != null;
-                rs.linesAdded(buffer);
-            }
+        /**
+         * Calls {@link RenderState#scrollTo(Buffer, int)}.
+         * @param y the second argument to pass
+         */
+        public void scrollTo(final int y) {
+            rs.scrollTo(buffer, y);
+        }
 
-            /** {@inheritDoc} */
-            @Override
-            public void linesReplaced(final int lines) {
-                assert rs != null;
-                assert buffer != null;
-                rs.linesReplaced(buffer);
-            }
+        /**
+         * Checks that the {@link RenderState} instance contains expected
+         * values.
+         * @param expectedTopIndex the expected top index value
+         * @param expectedTopOffset the expected top offset value
+         */
+        public void checkState(final int expectedTopIndex, final int expectedTopOffset) {
+            final int expectedScrollPos = expectedTopIndex*Buffer.MIN_LINE_HEIGHT+expectedTopOffset;
+            final int topIndex = rs.getTopIndex();
+            final int topOffset = rs.getTopOffset();
+            final int scrollPos = rs.getScrollPos();
+            assertEquals(formatState(expectedTopIndex, expectedTopOffset, expectedScrollPos), formatState(topIndex, topOffset, scrollPos));
+        }
 
-            /** {@inheritDoc} */
-            @Override
-            public void linesRemoved(@NotNull final List<Line> lines) {
-                assert rs != null;
-                assert buffer != null;
-                rs.linesRemoved(buffer, lines);
-            }
-        };
-        assert buffer != null;
-        buffer.addBufferListener(bufferListener);
+        /**
+         * Returns a text representation of the state.
+         * @param topIndex the top index value
+         * @param topOffset the top offset value
+         * @param scrollPos the scroll pos value
+         * @return the text representation
+         */
+        @NotNull
+        public String formatState(final int topIndex, final int topOffset, final int scrollPos) {
+            return "top="+topIndex+"/"+topOffset+" pos="+scrollPos+"/"+buffer.getTotalHeight();
+        }
+
     }
 
 }
