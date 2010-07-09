@@ -73,6 +73,10 @@ public class ParserTest extends TestCase {
      * Checks that an empty string does not add anything.
      */
     public void testEmpty() {
+        if (GraphicsEnvironment.isHeadless()) {
+            return;
+        }
+
         final Rec rec = new Rec();
         rec.parser.parse("", null, rec.buffer);
         rec.checkResult(""+"buffer:\n"+"line:\n");
@@ -82,6 +86,10 @@ public class ParserTest extends TestCase {
      * Checks that unknown attributes are ignored.
      */
     public void testAttributesIgnore() {
+        if (GraphicsEnvironment.isHeadless()) {
+            return;
+        }
+
         final Rec rec = new Rec();
         rec.parser.parse("a[a]b[]c[[]d[]]e", null, rec.buffer);
         rec.checkResult(""+"buffer:\n"+"line:\n"+"segment:abc[]d]e\n");
@@ -91,6 +99,10 @@ public class ParserTest extends TestCase {
      * Checks that attributes are correctly parsed.
      */
     public void testAttributes1() {
+        if (GraphicsEnvironment.isHeadless()) {
+            return;
+        }
+
         final Rec rec = new Rec();
         rec.parser.parse("a b c", null, rec.buffer);
         rec.parser.parse("[b]a b c", null, rec.buffer);
@@ -109,6 +121,10 @@ public class ParserTest extends TestCase {
      * Checks that attributes are correctly parsed.
      */
     public void testAttributes2() {
+        if (GraphicsEnvironment.isHeadless()) {
+            return;
+        }
+
         final Rec rec = new Rec();
         rec.parser.parse("a[b]b[i]c[ul]d[/b]e[/i]f[/ul]g", null, rec.buffer);
         rec.parser.parse("Hello [b] all [b]crossfire[/b] members [/b]", null, rec.buffer);
@@ -119,6 +135,10 @@ public class ParserTest extends TestCase {
      * Checks that font attributes are correctly parsed.
      */
     public void testAttributesFont1() {
+        if (GraphicsEnvironment.isHeadless()) {
+            return;
+        }
+
         final Rec rec = new Rec();
         rec.parser.parse("[b]a[fixed]b[arcane]c[hand]d[strange]e[print]f", null, rec.buffer);
         rec.checkResult(""+"buffer:\n"+"line:\n"+"segment:(bold)a\n"+"segment:(bold)(fixed)b\n"+"segment:(bold)(arcane)c\n"+"segment:(bold)(hand)d\n"+"segment:(bold)(strange)e\n"+"segment:(bold)f\n");
@@ -129,6 +149,10 @@ public class ParserTest extends TestCase {
      * undefined/does not end [fixed] block.
      */
     public void testAttributesFont2() {
+        if (GraphicsEnvironment.isHeadless()) {
+            return;
+        }
+
         final Rec rec = new Rec();
         rec.parser.parse("a[fixed]b[/fixed]c", null, rec.buffer);
         rec.checkResult(""+"buffer:\n"+"line:\n"+"segment:a\n"+"segment:(fixed)bc\n");
@@ -138,6 +162,10 @@ public class ParserTest extends TestCase {
      * Checks that color attributes are correctly parsed.
      */
     public void testAttributesColor() {
+        if (GraphicsEnvironment.isHeadless()) {
+            return;
+        }
+
         final Rec rec = new Rec();
         rec.parser.parse("[b]a[color=red]b[color=blue]c[color=green]d[/color]e", null, rec.buffer);
         rec.checkResult(""+"buffer:\n"+"line:\n"+"segment:(bold)a\n"+"segment:(bold)(red)b\n"+"segment:(bold)(blue)c\n"+"segment:(bold)(green)d\n"+"segment:(bold)e\n");
@@ -147,6 +175,10 @@ public class ParserTest extends TestCase {
      * Checks that attributes are reset for each message.
      */
     public void testAttributesReset() {
+        if (GraphicsEnvironment.isHeadless()) {
+            return;
+        }
+
         final Rec rec = new Rec();
         rec.parser.parse("[b][i][ul][hand][color=red]first", null, rec.buffer);
         rec.parser.parse("second", null, rec.buffer);
@@ -157,6 +189,10 @@ public class ParserTest extends TestCase {
      * Checks that multi-line messages are correctly parsed.
      */
     public void testMultiLine() {
+        if (GraphicsEnvironment.isHeadless()) {
+            return;
+        }
+
         final Rec rec = new Rec();
         rec.parser.parse("first\n[b]second\nth[/b]ird[i]\nfourth", null, rec.buffer);
         rec.checkResult(""+"buffer:\n"+"line:\n"+"segment:first\n"+"line:\n"+"segment:(bold)second\n"+"line:\n"+"segment:(bold)th\n"+"segment:ird\n"+"line:\n"+"segment:(italic)fourth\n");
@@ -166,6 +202,10 @@ public class ParserTest extends TestCase {
      * Checks that an un-closed tag is dopped.
      */
     public void testDropUnClosedTag() {
+        if (GraphicsEnvironment.isHeadless()) {
+            return;
+        }
+
         final Rec rec = new Rec();
         rec.parser.parse("abc[fixed", null, rec.buffer);
         rec.checkResult(""+"buffer:\n"+"line:\n"+"segment:abc\n");
